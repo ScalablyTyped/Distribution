@@ -1,6 +1,6 @@
 package typings.develarSchemaUtils.validationErrorMod
 
-import typings.develarSchemaUtils.ErrorObjectchildrenArrayE
+import typings.develarSchemaUtils.anon.ErrorObjectchildrenArrayE
 import typings.jsonSchema.mod.JSONSchema4
 import typings.std.Error
 import scala.scalajs.js
@@ -60,15 +60,20 @@ trait ValidationError extends Error {
     * @returns {string}
     */
   def getSchemaPartText(): String = js.native
-  def getSchemaPartText(schemaPart: JSONSchema4 | typings.jsonSchema.mod.JSONSchema6 | typings.jsonSchema.mod.JSONSchema7): String = js.native
-  def getSchemaPartText(
-    schemaPart: JSONSchema4 | typings.jsonSchema.mod.JSONSchema6 | typings.jsonSchema.mod.JSONSchema7,
-    additionalPath: Boolean | js.Array[String]
-  ): String = js.native
-  def getSchemaPartText(
-    schemaPart: JSONSchema4 | typings.jsonSchema.mod.JSONSchema6 | typings.jsonSchema.mod.JSONSchema7,
-    additionalPath: Boolean | js.Array[String],
-    needDot: Boolean
-  ): String = js.native
+  def getSchemaPartText(schemaPart: JSONSchema4): String = js.native
+  def getSchemaPartText(schemaPart: JSONSchema4, additionalPath: js.Array[String]): String = js.native
+  def getSchemaPartText(schemaPart: JSONSchema4, additionalPath: js.Array[String], needDot: Boolean): String = js.native
+  def getSchemaPartText(schemaPart: JSONSchema4, additionalPath: Boolean): String = js.native
+  def getSchemaPartText(schemaPart: JSONSchema4, additionalPath: Boolean, needDot: Boolean): String = js.native
+  def getSchemaPartText(schemaPart: typings.jsonSchema.mod.JSONSchema6): String = js.native
+  def getSchemaPartText(schemaPart: typings.jsonSchema.mod.JSONSchema6, additionalPath: js.Array[String]): String = js.native
+  def getSchemaPartText(schemaPart: typings.jsonSchema.mod.JSONSchema6, additionalPath: js.Array[String], needDot: Boolean): String = js.native
+  def getSchemaPartText(schemaPart: typings.jsonSchema.mod.JSONSchema6, additionalPath: Boolean): String = js.native
+  def getSchemaPartText(schemaPart: typings.jsonSchema.mod.JSONSchema6, additionalPath: Boolean, needDot: Boolean): String = js.native
+  def getSchemaPartText(schemaPart: typings.jsonSchema.mod.JSONSchema7): String = js.native
+  def getSchemaPartText(schemaPart: typings.jsonSchema.mod.JSONSchema7, additionalPath: js.Array[String]): String = js.native
+  def getSchemaPartText(schemaPart: typings.jsonSchema.mod.JSONSchema7, additionalPath: js.Array[String], needDot: Boolean): String = js.native
+  def getSchemaPartText(schemaPart: typings.jsonSchema.mod.JSONSchema7, additionalPath: Boolean): String = js.native
+  def getSchemaPartText(schemaPart: typings.jsonSchema.mod.JSONSchema7, additionalPath: Boolean, needDot: Boolean): String = js.native
 }
 

@@ -5,15 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BMap.DrivingRoute")
 @js.native
-class DrivingRoute protected () extends js.Object {
-  def this(location: String) = this()
-  def this(location: Map) = this()
-  def this(location: Point) = this()
-  def this(location: String, opts: DrivingRouteOptions) = this()
-  def this(location: Map, opts: DrivingRouteOptions) = this()
-  def this(location: Point, opts: DrivingRouteOptions) = this()
+trait DrivingRoute extends js.Object {
   def clearResults(): Unit = js.native
   def disableAutoViewport(): Unit = js.native
   def enableAutoViewport(): Unit = js.native

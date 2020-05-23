@@ -28,21 +28,21 @@ object Uploads {
   @scala.inline
   def apply(
     items: js.Array[Upload] = null,
-    itemsPerPage: Int | Double = null,
+    itemsPerPage: js.UndefOr[Double] = js.undefined,
     kind: String = null,
     nextLink: String = null,
     previousLink: String = null,
-    startIndex: Int | Double = null,
-    totalResults: Int | Double = null
+    startIndex: js.UndefOr[Double] = js.undefined,
+    totalResults: js.UndefOr[Double] = js.undefined
   ): Uploads = {
     val __obj = js.Dynamic.literal()
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (itemsPerPage != null) __obj.updateDynamic("itemsPerPage")(itemsPerPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemsPerPage)) __obj.updateDynamic("itemsPerPage")(itemsPerPage.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (nextLink != null) __obj.updateDynamic("nextLink")(nextLink.asInstanceOf[js.Any])
     if (previousLink != null) __obj.updateDynamic("previousLink")(previousLink.asInstanceOf[js.Any])
-    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
-    if (totalResults != null) __obj.updateDynamic("totalResults")(totalResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalResults)) __obj.updateDynamic("totalResults")(totalResults.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Uploads]
   }
 }

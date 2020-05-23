@@ -18,9 +18,9 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(enable: Int | Double = null, kinetics: IKinetics = null): Options = {
+  def apply(enable: js.UndefOr[BitMask] = js.undefined, kinetics: IKinetics = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (enable != null) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.get.asInstanceOf[js.Any])
     if (kinetics != null) __obj.updateDynamic("kinetics")(kinetics.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

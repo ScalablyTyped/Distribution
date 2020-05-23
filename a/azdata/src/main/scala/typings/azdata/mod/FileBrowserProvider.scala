@@ -26,10 +26,10 @@ object FileBrowserProvider {
     registerOnFilePathsValidated: js.Function1[/* response */ FileBrowserValidatedParams, _] => Unit,
     registerOnFolderNodeExpanded: js.Function1[/* response */ FileBrowserExpandedParams, _] => Unit,
     validateFilePaths: (String, String, js.Array[String]) => Thenable[Boolean],
-    handle: Int | Double = null
+    handle: js.UndefOr[Double] = js.undefined
   ): FileBrowserProvider = {
     val __obj = js.Dynamic.literal(closeFileBrowser = js.Any.fromFunction1(closeFileBrowser), expandFolderNode = js.Any.fromFunction2(expandFolderNode), openFileBrowser = js.Any.fromFunction4(openFileBrowser), providerId = providerId.asInstanceOf[js.Any], registerOnFileBrowserOpened = js.Any.fromFunction1(registerOnFileBrowserOpened), registerOnFilePathsValidated = js.Any.fromFunction1(registerOnFilePathsValidated), registerOnFolderNodeExpanded = js.Any.fromFunction1(registerOnFolderNodeExpanded), validateFilePaths = js.Any.fromFunction3(validateFilePaths))
-    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
+    if (!js.isUndefined(handle)) __obj.updateDynamic("handle")(handle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileBrowserProvider]
   }
 }

@@ -35,18 +35,18 @@ trait DescribeFpgaImagesRequest extends js.Object {
 object DescribeFpgaImagesRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     Filters: FilterList = null,
     FpgaImageIds: FpgaImageIdList = null,
-    MaxResults: Int | scala.Double = null,
+    MaxResults: js.UndefOr[DescribeFpgaImagesMaxResults] = js.undefined,
     NextToken: NextToken = null,
     Owners: OwnerStringList = null
   ): DescribeFpgaImagesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
     if (FpgaImageIds != null) __obj.updateDynamic("FpgaImageIds")(FpgaImageIds.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (Owners != null) __obj.updateDynamic("Owners")(Owners.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeFpgaImagesRequest]

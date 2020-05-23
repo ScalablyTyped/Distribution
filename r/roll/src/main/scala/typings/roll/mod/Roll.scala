@@ -1,6 +1,6 @@
 package typings.roll.mod
 
-import typings.roll.AnonQuantity
+import typings.roll.anon.Quantity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait Roll extends js.Object {
     * Parse a string into a roll object
     * @throws InvalidInputError
     */
-  def parse(input: String): AnonQuantity = js.native
+  def parse(input: String): Quantity = js.native
   /**
     * Roll based on a string or roll object
     */

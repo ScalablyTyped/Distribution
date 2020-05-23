@@ -1,12 +1,12 @@
 package typings.vanillaSwipe.calculateMovingPositionMod
 
-import typings.vanillaSwipe.AnonClientX
+import typings.vanillaSwipe.anon.ClientX
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait E extends js.Object {
-  var changedTouches: js.UndefOr[js.Array[AnonClientX]] = js.undefined
+  var changedTouches: js.UndefOr[js.Array[ClientX]] = js.undefined
   var clientX: Double
   var clientY: Double
   var preventDefault: js.UndefOr[js.Function] = js.undefined
@@ -17,7 +17,7 @@ object E {
   def apply(
     clientX: Double,
     clientY: Double,
-    changedTouches: js.Array[AnonClientX] = null,
+    changedTouches: js.Array[ClientX] = null,
     preventDefault: js.Function = null
   ): E = {
     val __obj = js.Dynamic.literal(clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any])

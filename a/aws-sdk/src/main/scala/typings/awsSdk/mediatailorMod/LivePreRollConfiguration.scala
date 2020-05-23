@@ -18,10 +18,10 @@ trait LivePreRollConfiguration extends js.Object {
 
 object LivePreRollConfiguration {
   @scala.inline
-  def apply(AdDecisionServerUrl: string = null, MaxDurationSeconds: Int | Double = null): LivePreRollConfiguration = {
+  def apply(AdDecisionServerUrl: string = null, MaxDurationSeconds: js.UndefOr[integer] = js.undefined): LivePreRollConfiguration = {
     val __obj = js.Dynamic.literal()
     if (AdDecisionServerUrl != null) __obj.updateDynamic("AdDecisionServerUrl")(AdDecisionServerUrl.asInstanceOf[js.Any])
-    if (MaxDurationSeconds != null) __obj.updateDynamic("MaxDurationSeconds")(MaxDurationSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxDurationSeconds)) __obj.updateDynamic("MaxDurationSeconds")(MaxDurationSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LivePreRollConfiguration]
   }
 }

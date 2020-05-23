@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 object cartesianProduct extends js.Object {
   def apply(a: js.Array[_]*): ICartesianProductGenerator[js.Array[_]] = js.native
   /**
-  	 * Generates the cartesian product of the arrays. All arguments must be arrays with more than one element.
-  	 */
+    * Generates the cartesian product of the arrays. All arguments must be arrays with more than one element.
+    */
   def apply[T1](a1: js.Array[T1]): ICartesianProductGenerator[js.Array[T1]] = js.native
   def apply[T1, T2](a1: js.Array[T1], a2: js.Array[T2]): ICartesianProductGenerator[js.Tuple2[T1, T2]] = js.native
   def apply[T1, T2, T3](a1: js.Array[T1], a2: js.Array[T2], a3: js.Array[T3]): ICartesianProductGenerator[js.Tuple3[T1, T2, T3]] = js.native

@@ -52,7 +52,7 @@ object DisplayData {
   def apply(
     boolValue: js.UndefOr[Boolean] = js.undefined,
     durationValue: String = null,
-    floatValue: Int | Double = null,
+    floatValue: js.UndefOr[Double] = js.undefined,
     int64Value: String = null,
     javaClassValue: String = null,
     key: String = null,
@@ -64,9 +64,9 @@ object DisplayData {
     url: String = null
   ): DisplayData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue.get.asInstanceOf[js.Any])
     if (durationValue != null) __obj.updateDynamic("durationValue")(durationValue.asInstanceOf[js.Any])
-    if (floatValue != null) __obj.updateDynamic("floatValue")(floatValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(floatValue)) __obj.updateDynamic("floatValue")(floatValue.get.asInstanceOf[js.Any])
     if (int64Value != null) __obj.updateDynamic("int64Value")(int64Value.asInstanceOf[js.Any])
     if (javaClassValue != null) __obj.updateDynamic("javaClassValue")(javaClassValue.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

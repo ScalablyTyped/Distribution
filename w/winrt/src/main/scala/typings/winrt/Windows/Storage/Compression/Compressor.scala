@@ -8,21 +8,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Storage.Compression.Compressor")
-@js.native
-class Compressor protected () extends ICompressor {
-  def this(underlyingStream: IOutputStream) = this()
-  def this(underlyingStream: IOutputStream, algorithm: CompressAlgorithm, blockSize: Double) = this()
-  /* CompleteClass */
-  override def close(): Unit = js.native
-  /* CompleteClass */
-  override def detachStream(): IOutputStream = js.native
-  def dispose(): Unit = js.native
-  /* CompleteClass */
-  override def finishAsync(): IAsyncOperation[Boolean] = js.native
-  /* CompleteClass */
-  override def flushAsync(): IAsyncOperation[Boolean] = js.native
-  /* CompleteClass */
-  override def writeAsync(buffer: IBuffer): IAsyncOperationWithProgress[Double, Double] = js.native
+trait Compressor extends ICompressor {
+  def dispose(): Unit
+}
+
+object Compressor {
+  @scala.inline
+  def apply(
+    close: () => Unit,
+    detachStream: () => IOutputStream,
+    dispose: () => Unit,
+    finishAsync: () => IAsyncOperation[Boolean],
+    flushAsync: () => IAsyncOperation[Boolean],
+    writeAsync: IBuffer => IAsyncOperationWithProgress[Double, Double]
+  ): Compressor = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), detachStream = js.Any.fromFunction0(detachStream), dispose = js.Any.fromFunction0(dispose), finishAsync = js.Any.fromFunction0(finishAsync), flushAsync = js.Any.fromFunction0(flushAsync), writeAsync = js.Any.fromFunction1(writeAsync))
+    __obj.asInstanceOf[Compressor]
+  }
 }
 

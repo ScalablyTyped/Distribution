@@ -27,7 +27,7 @@ object IBreadcrumbProps {
     current: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     href: String = null,
-    icon: IconName | MaybeElement = null,
+    icon: js.UndefOr[Null | IconName | MaybeElement] = js.undefined,
     intent: Intent = null,
     onClick: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
     target: String = null,
@@ -35,10 +35,10 @@ object IBreadcrumbProps {
   ): IBreadcrumbProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(current)) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(current)) __obj.updateDynamic("current")(current.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])

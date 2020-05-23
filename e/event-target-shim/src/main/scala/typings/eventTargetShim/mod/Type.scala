@@ -10,7 +10,7 @@ trait Type[T /* <: String */] extends js.Object {
 
 object Type {
   @scala.inline
-  def apply[T /* <: String */](`type`: T): Type[T] = {
+  def apply[T](`type`: T): Type[T] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Type[T]]

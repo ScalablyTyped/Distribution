@@ -2,11 +2,11 @@ package typings.fancybox
 
 import typings.fancybox.fancyboxStrings.x
 import typings.fancybox.fancyboxStrings.y
-import typings.jquery.JQuery_.Event
-import typings.jquery.JQuery_.ScrollEvent
-import typings.jquery.JQuery_.TouchEndEvent
-import typings.jquery.JQuery_.TouchMoveEvent
-import typings.jquery.JQuery_.TouchStartEvent
+import typings.jquery.JQuery.Event
+import typings.jquery.JQuery.ScrollEvent
+import typings.jquery.JQuery.TouchEndEvent
+import typings.jquery.JQuery.TouchMoveEvent
+import typings.jquery.JQuery.TouchStartEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

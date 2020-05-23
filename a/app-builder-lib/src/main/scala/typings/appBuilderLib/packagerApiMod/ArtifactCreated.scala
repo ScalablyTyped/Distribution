@@ -24,20 +24,18 @@ object ArtifactCreated {
     file: String,
     packager: PlatformPackager[_],
     arch: Arch = null,
-    fileContent: Buffer = null,
+    fileContent: js.UndefOr[Null | Buffer] = js.undefined,
     isWriteUpdateInfo: js.UndefOr[Boolean] = js.undefined,
-    publishConfig: PublishConfiguration = null,
-    safeArtifactName: String = null,
+    publishConfig: js.UndefOr[Null | PublishConfiguration] = js.undefined,
+    safeArtifactName: js.UndefOr[Null | String] = js.undefined,
     target: Target = null,
     updateInfo: js.Any = null
   ): ArtifactCreated = {
-    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], packager = packager.asInstanceOf[js.Any])
-    if (arch != null) __obj.updateDynamic("arch")(arch.asInstanceOf[js.Any])
-    if (fileContent != null) __obj.updateDynamic("fileContent")(fileContent.asInstanceOf[js.Any])
-    if (!js.isUndefined(isWriteUpdateInfo)) __obj.updateDynamic("isWriteUpdateInfo")(isWriteUpdateInfo.asInstanceOf[js.Any])
-    if (publishConfig != null) __obj.updateDynamic("publishConfig")(publishConfig.asInstanceOf[js.Any])
-    if (safeArtifactName != null) __obj.updateDynamic("safeArtifactName")(safeArtifactName.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], packager = packager.asInstanceOf[js.Any], arch = arch.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    if (!js.isUndefined(fileContent)) __obj.updateDynamic("fileContent")(fileContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(isWriteUpdateInfo)) __obj.updateDynamic("isWriteUpdateInfo")(isWriteUpdateInfo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(publishConfig)) __obj.updateDynamic("publishConfig")(publishConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(safeArtifactName)) __obj.updateDynamic("safeArtifactName")(safeArtifactName.asInstanceOf[js.Any])
     if (updateInfo != null) __obj.updateDynamic("updateInfo")(updateInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtifactCreated]
   }

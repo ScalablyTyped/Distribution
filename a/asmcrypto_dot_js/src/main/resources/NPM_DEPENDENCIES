@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "asmcrypto.js" : "2.3.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "asmcrypto.js" : "2.3.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

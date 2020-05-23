@@ -62,22 +62,22 @@ trait EarlyStoppingCallbackArgs extends js.Object {
 object EarlyStoppingCallbackArgs {
   @scala.inline
   def apply(
-    baseline: Int | Double = null,
-    minDelta: Int | Double = null,
+    baseline: js.UndefOr[Double] = js.undefined,
+    minDelta: js.UndefOr[Double] = js.undefined,
     mode: auto | min | max = null,
     monitor: String = null,
-    patience: Int | Double = null,
+    patience: js.UndefOr[Double] = js.undefined,
     restoreBestWeights: js.UndefOr[Boolean] = js.undefined,
-    verbose: Int | Double = null
+    verbose: js.UndefOr[Double] = js.undefined
   ): EarlyStoppingCallbackArgs = {
     val __obj = js.Dynamic.literal()
-    if (baseline != null) __obj.updateDynamic("baseline")(baseline.asInstanceOf[js.Any])
-    if (minDelta != null) __obj.updateDynamic("minDelta")(minDelta.asInstanceOf[js.Any])
+    if (!js.isUndefined(baseline)) __obj.updateDynamic("baseline")(baseline.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minDelta)) __obj.updateDynamic("minDelta")(minDelta.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (monitor != null) __obj.updateDynamic("monitor")(monitor.asInstanceOf[js.Any])
-    if (patience != null) __obj.updateDynamic("patience")(patience.asInstanceOf[js.Any])
-    if (!js.isUndefined(restoreBestWeights)) __obj.updateDynamic("restoreBestWeights")(restoreBestWeights.asInstanceOf[js.Any])
-    if (verbose != null) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
+    if (!js.isUndefined(patience)) __obj.updateDynamic("patience")(patience.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(restoreBestWeights)) __obj.updateDynamic("restoreBestWeights")(restoreBestWeights.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EarlyStoppingCallbackArgs]
   }
 }

@@ -40,7 +40,7 @@ object HostOffering {
   @scala.inline
   def apply(
     CurrencyCode: CurrencyCodeValues = null,
-    Duration: Int | scala.Double = null,
+    Duration: js.UndefOr[Integer] = js.undefined,
     HourlyPrice: String = null,
     InstanceFamily: String = null,
     OfferingId: String = null,
@@ -49,7 +49,7 @@ object HostOffering {
   ): HostOffering = {
     val __obj = js.Dynamic.literal()
     if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode.asInstanceOf[js.Any])
-    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration.get.asInstanceOf[js.Any])
     if (HourlyPrice != null) __obj.updateDynamic("HourlyPrice")(HourlyPrice.asInstanceOf[js.Any])
     if (InstanceFamily != null) __obj.updateDynamic("InstanceFamily")(InstanceFamily.asInstanceOf[js.Any])
     if (OfferingId != null) __obj.updateDynamic("OfferingId")(OfferingId.asInstanceOf[js.Any])

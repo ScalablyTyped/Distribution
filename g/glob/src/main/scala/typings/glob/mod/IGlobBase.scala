@@ -1,7 +1,7 @@
 package typings.glob.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.glob.AnonIsDirectory
+import typings.glob.anon.IsDirectory
 import typings.glob.globBooleans.`false`
 import typings.glob.globStrings.DIR
 import typings.glob.globStrings.FILE
@@ -17,7 +17,7 @@ trait IGlobBase extends js.Object {
   var minimatch: IMinimatch
   var options: IOptions
   var realpathCache: StringDictionary[String]
-  var statCache: StringDictionary[js.UndefOr[`false` | AnonIsDirectory]]
+  var statCache: StringDictionary[js.UndefOr[`false` | IsDirectory]]
   var symlinks: StringDictionary[js.UndefOr[Boolean]]
 }
 
@@ -30,7 +30,7 @@ object IGlobBase {
     minimatch: IMinimatch,
     options: IOptions,
     realpathCache: StringDictionary[String],
-    statCache: StringDictionary[js.UndefOr[`false` | AnonIsDirectory]],
+    statCache: StringDictionary[js.UndefOr[`false` | IsDirectory]],
     symlinks: StringDictionary[js.UndefOr[Boolean]]
   ): IGlobBase = {
     val __obj = js.Dynamic.literal(aborted = aborted.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], found = found.asInstanceOf[js.Any], minimatch = minimatch.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], realpathCache = realpathCache.asInstanceOf[js.Any], statCache = statCache.asInstanceOf[js.Any], symlinks = symlinks.asInstanceOf[js.Any])

@@ -38,14 +38,14 @@ object ModifyNetworkInterfaceAttributeRequest {
     NetworkInterfaceId: NetworkInterfaceId,
     Attachment: NetworkInterfaceAttachmentChanges = null,
     Description: AttributeValue = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     Groups: SecurityGroupIdStringList = null,
     SourceDestCheck: AttributeBooleanValue = null
   ): ModifyNetworkInterfaceAttributeRequest = {
     val __obj = js.Dynamic.literal(NetworkInterfaceId = NetworkInterfaceId.asInstanceOf[js.Any])
     if (Attachment != null) __obj.updateDynamic("Attachment")(Attachment.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (Groups != null) __obj.updateDynamic("Groups")(Groups.asInstanceOf[js.Any])
     if (SourceDestCheck != null) __obj.updateDynamic("SourceDestCheck")(SourceDestCheck.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyNetworkInterfaceAttributeRequest]

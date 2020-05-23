@@ -88,7 +88,7 @@ object ImageBuilder {
     Description: String = null,
     DisplayName: String = null,
     DomainJoinInfo: DomainJoinInfo = null,
-    EnableDefaultInternetAccess: js.UndefOr[scala.Boolean] = js.undefined,
+    EnableDefaultInternetAccess: js.UndefOr[BooleanObject] = js.undefined,
     IamRoleArn: Arn = null,
     ImageArn: Arn = null,
     ImageBuilderErrors: ResourceErrors = null,
@@ -107,7 +107,7 @@ object ImageBuilder {
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
     if (DomainJoinInfo != null) __obj.updateDynamic("DomainJoinInfo")(DomainJoinInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableDefaultInternetAccess)) __obj.updateDynamic("EnableDefaultInternetAccess")(EnableDefaultInternetAccess.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableDefaultInternetAccess)) __obj.updateDynamic("EnableDefaultInternetAccess")(EnableDefaultInternetAccess.get.asInstanceOf[js.Any])
     if (IamRoleArn != null) __obj.updateDynamic("IamRoleArn")(IamRoleArn.asInstanceOf[js.Any])
     if (ImageArn != null) __obj.updateDynamic("ImageArn")(ImageArn.asInstanceOf[js.Any])
     if (ImageBuilderErrors != null) __obj.updateDynamic("ImageBuilderErrors")(ImageBuilderErrors.asInstanceOf[js.Any])

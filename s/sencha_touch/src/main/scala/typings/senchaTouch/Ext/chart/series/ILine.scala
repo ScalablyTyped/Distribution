@@ -12,46 +12,46 @@ trait ILine extends ICartesian {
   /** [Config Option] (Boolean) */
   var fill: js.UndefOr[Boolean] = js.undefined
   /** [Method] Returns the value of aggregator
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getAggregator: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of fill
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getFill: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of selectionTolerance
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getSelectionTolerance: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of smooth
-  		* @returns Boolean/Number
-  		*/
+    * @returns Boolean/Number
+    */
   var getSmooth: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of step
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getStep: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Config Option] (Number) */
   var selectionTolerance: js.UndefOr[Double] = js.undefined
   /** [Method] Sets the value of aggregator
-  		* @param aggregator Object The new value.
-  		*/
+    * @param aggregator Object The new value.
+    */
   var setAggregator: js.UndefOr[js.Function1[/* aggregator */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of fill
-  		* @param fill Boolean The new value.
-  		*/
+    * @param fill Boolean The new value.
+    */
   var setFill: js.UndefOr[js.Function1[/* fill */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of selectionTolerance
-  		* @param selectionTolerance Number The new value.
-  		*/
+    * @param selectionTolerance Number The new value.
+    */
   var setSelectionTolerance: js.UndefOr[js.Function1[/* selectionTolerance */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of smooth
-  		* @param smooth Boolean/Number The new value.
-  		*/
+    * @param smooth Boolean/Number The new value.
+    */
   var setSmooth: js.UndefOr[js.Function1[/* smooth */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of step
-  		* @param step Boolean The new value.
-  		*/
+    * @param step Boolean The new value.
+    */
   var setStep: js.UndefOr[js.Function1[/* step */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Config Option] (Boolean/Number) */
   var smooth: js.UndefOr[js.Any] = js.undefined
@@ -127,7 +127,7 @@ object ILine {
     itemInstancing: js.Any = null,
     label: js.Any = null,
     labelField: js.Any = null,
-    labelOverflowPadding: Int | Double = null,
+    labelOverflowPadding: js.UndefOr[Double] = js.undefined,
     listeners: js.Any = null,
     marker: js.Any = null,
     markerSubStyle: js.Any = null,
@@ -147,7 +147,7 @@ object ILine {
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     renderer: js.Any = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
-    selectionTolerance: Int | Double = null,
+    selectionTolerance: js.UndefOr[Double] = js.undefined,
     self: IClass = null,
     seriesType: String = null,
     setAggregator: /* aggregator */ js.UndefOr[js.Any] => Unit = null,
@@ -223,7 +223,7 @@ object ILine {
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.get.asInstanceOf[js.Any])
     if (fireAction != null) __obj.updateDynamic("fireAction")(js.Any.fromFunction4(fireAction))
     if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
     if (getAggregator != null) __obj.updateDynamic("getAggregator")(js.Any.fromFunction0(getAggregator))
@@ -269,7 +269,7 @@ object ILine {
     if (itemInstancing != null) __obj.updateDynamic("itemInstancing")(itemInstancing.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelField != null) __obj.updateDynamic("labelField")(labelField.asInstanceOf[js.Any])
-    if (labelOverflowPadding != null) __obj.updateDynamic("labelOverflowPadding")(labelOverflowPadding.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelOverflowPadding)) __obj.updateDynamic("labelOverflowPadding")(labelOverflowPadding.get.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
     if (markerSubStyle != null) __obj.updateDynamic("markerSubStyle")(markerSubStyle.asInstanceOf[js.Any])
@@ -289,7 +289,7 @@ object ILine {
     if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(js.Any.fromFunction4(removeManagedListener))
     if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
     if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction1(resumeEvents))
-    if (selectionTolerance != null) __obj.updateDynamic("selectionTolerance")(selectionTolerance.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectionTolerance)) __obj.updateDynamic("selectionTolerance")(selectionTolerance.get.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (seriesType != null) __obj.updateDynamic("seriesType")(seriesType.asInstanceOf[js.Any])
     if (setAggregator != null) __obj.updateDynamic("setAggregator")(js.Any.fromFunction1(setAggregator))
@@ -324,11 +324,11 @@ object ILine {
     if (setXField != null) __obj.updateDynamic("setXField")(js.Any.fromFunction1(setXField))
     if (setYAxis != null) __obj.updateDynamic("setYAxis")(js.Any.fromFunction1(setYAxis))
     if (setYField != null) __obj.updateDynamic("setYField")(js.Any.fromFunction1(setYField))
-    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (smooth != null) __obj.updateDynamic("smooth")(smooth.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
     if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (subStyle != null) __obj.updateDynamic("subStyle")(subStyle.asInstanceOf[js.Any])

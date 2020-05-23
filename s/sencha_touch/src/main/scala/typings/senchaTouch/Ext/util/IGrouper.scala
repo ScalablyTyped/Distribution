@@ -8,22 +8,22 @@ import scala.scalajs.js.annotation._
 
 trait IGrouper extends ISorter {
   /** [Method] Returns the value of groupFn
-  		* @returns Function
-  		*/
+    * @returns Function
+    */
   var getGroupFn: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of sortProperty
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getSortProperty: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (Function) */
   var groupFn: js.UndefOr[js.Any] = js.undefined
   /** [Method] Sets the value of groupFn
-  		* @param groupFn Function The new value.
-  		*/
+    * @param groupFn Function The new value.
+    */
   var setGroupFn: js.UndefOr[js.Function1[/* groupFn */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of sortProperty
-  		* @param sortProperty String The new value.
-  		*/
+    * @param sortProperty String The new value.
+    */
   var setSortProperty: js.UndefOr[js.Function1[/* sortProperty */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (String) */
   var sortProperty: js.UndefOr[String] = js.undefined
@@ -111,7 +111,7 @@ object IGrouper {
     if (setSortProperty != null) __obj.updateDynamic("setSortProperty")(js.Any.fromFunction1(setSortProperty))
     if (setSorterFn != null) __obj.updateDynamic("setSorterFn")(js.Any.fromFunction1(setSorterFn))
     if (setTransform != null) __obj.updateDynamic("setTransform")(js.Any.fromFunction1(setTransform))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (sortProperty != null) __obj.updateDynamic("sortProperty")(sortProperty.asInstanceOf[js.Any])
     if (sorterFn != null) __obj.updateDynamic("sorterFn")(sorterFn.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])

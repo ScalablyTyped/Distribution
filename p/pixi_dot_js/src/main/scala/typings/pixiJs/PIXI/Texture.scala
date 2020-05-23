@@ -1,11 +1,6 @@
 package typings.pixiJs.PIXI
 
 import typings.pixiJs.PIXI.utils.EventEmitter
-import typings.std.Float32Array
-import typings.std.HTMLCanvasElement
-import typings.std.HTMLImageElement
-import typings.std.HTMLVideoElement
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,22 +35,8 @@ import scala.scalajs.js.annotation._
   * @extends PIXI.utils.EventEmitter
   * @memberof PIXI
   */
-@JSGlobal("PIXI.Texture")
 @js.native
-class Texture protected () extends EventEmitter {
-  def this(baseTexture: BaseTexture) = this()
-  def this(baseTexture: BaseTexture, frame: Rectangle) = this()
-  def this(baseTexture: BaseTexture, frame: Rectangle, orig: Rectangle) = this()
-  def this(baseTexture: BaseTexture, frame: Rectangle, orig: Rectangle, trim: Rectangle) = this()
-  def this(baseTexture: BaseTexture, frame: Rectangle, orig: Rectangle, trim: Rectangle, rotate: Double) = this()
-  def this(
-    baseTexture: BaseTexture,
-    frame: Rectangle,
-    orig: Rectangle,
-    trim: Rectangle,
-    rotate: Double,
-    anchor: Point
-  ) = this()
+trait Texture extends EventEmitter {
   /**
     * This is the area of the BaseTexture image to actually copy to the Canvas / WebGL when rendering,
     * irrespective of the actual frame size or placement (which can be influenced by trimmed texture atlases)
@@ -214,101 +195,5 @@ class Texture protected () extends EventEmitter {
     * Call it after changing the frame
     */
   def updateUvs(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("PIXI.Texture")
-@js.native
-object Texture extends js.Object {
-  /**
-    * An empty texture, used often to not have to create multiple empty textures.
-    * Can not be destroyed.
-    *
-    * @static
-    * @constant
-    * @member {PIXI.Texture}
-    */
-  var EMPTY: Texture = js.native
-  /**
-    * A white texture of 16x16 size, used for graphics and other things
-    * Can not be destroyed.
-    *
-    * @static
-    * @constant
-    * @member {PIXI.Texture}
-    */
-  var WHITE: Texture = js.native
-  /**
-    * Adds a Texture to the global TextureCache. This cache is shared across the whole PIXI object.
-    *
-    * @static
-    * @param {PIXI.Texture} texture - The Texture to add to the cache.
-    * @param {string} id - The id that the Texture will be stored against.
-    */
-  def addToCache(texture: Texture, id: String): Unit = js.native
-  /**
-    * Helper function that creates a new Texture based on the source you provide.
-    * The source can be - frame id, image url, video url, canvas element, video element, base texture
-    *
-    * @static
-    * @param {string|HTMLImageElement|HTMLCanvasElement|HTMLVideoElement|PIXI.BaseTexture} source
-    *        Source to create texture from
-    * @param {object} [options] See {@link PIXI.BaseTexture}'s constructor for options.
-    * @param {boolean} [strict] Enforce strict-mode, see {@link PIXI.settings.STRICT_TEXTURE_CACHE}.
-    * @return {PIXI.Texture} The newly created texture
-    */
-  def from(source: String): Texture = js.native
-  def from(source: String, options: js.Any): Texture = js.native
-  def from(source: String, options: js.Any, strict: Boolean): Texture = js.native
-  def from(source: BaseTexture): Texture = js.native
-  def from(source: BaseTexture, options: js.Any): Texture = js.native
-  def from(source: BaseTexture, options: js.Any, strict: Boolean): Texture = js.native
-  def from(source: HTMLCanvasElement): Texture = js.native
-  def from(source: HTMLCanvasElement, options: js.Any): Texture = js.native
-  def from(source: HTMLCanvasElement, options: js.Any, strict: Boolean): Texture = js.native
-  def from(source: HTMLImageElement): Texture = js.native
-  def from(source: HTMLImageElement, options: js.Any): Texture = js.native
-  def from(source: HTMLImageElement, options: js.Any, strict: Boolean): Texture = js.native
-  def from(source: HTMLVideoElement): Texture = js.native
-  def from(source: HTMLVideoElement, options: js.Any): Texture = js.native
-  def from(source: HTMLVideoElement, options: js.Any, strict: Boolean): Texture = js.native
-  /**
-    * Create a new Texture with a BufferResource from a Float32Array.
-    * RGBA values are floats from 0 to 1.
-    * @static
-    * @param {Float32Array|Uint8Array} buffer The optional array to use, if no data
-    *        is provided, a new Float32Array is created.
-    * @param {number} width - Width of the resource
-    * @param {number} height - Height of the resource
-    * @param {object} [options] See {@link PIXI.BaseTexture}'s constructor for options.
-    * @return {PIXI.Texture} The resulting new BaseTexture
-    */
-  def fromBuffer(buffer: Float32Array, width: Double, height: Double): Texture = js.native
-  def fromBuffer(buffer: Float32Array, width: Double, height: Double, options: js.Any): Texture = js.native
-  def fromBuffer(buffer: Uint8Array, width: Double, height: Double): Texture = js.native
-  def fromBuffer(buffer: Uint8Array, width: Double, height: Double, options: js.Any): Texture = js.native
-  def fromLoader(source: HTMLCanvasElement, imageUrl: String): Texture = js.native
-  def fromLoader(source: HTMLCanvasElement, imageUrl: String, name: String): Texture = js.native
-  /**
-    * Create a texture from a source and add to the cache.
-    *
-    * @static
-    * @param {HTMLImageElement|HTMLCanvasElement} source - The input source.
-    * @param {String} imageUrl - File name of texture, for cache and resolving resolution.
-    * @param {String} [name] - Human readable name for the texture cache. If no name is
-    *        specified, only `imageUrl` will be used as the cache ID.
-    * @return {PIXI.Texture} Output texture
-    */
-  def fromLoader(source: HTMLImageElement, imageUrl: String): Texture = js.native
-  def fromLoader(source: HTMLImageElement, imageUrl: String, name: String): Texture = js.native
-  /**
-    * Remove a Texture from the global TextureCache.
-    *
-    * @static
-    * @param {string|PIXI.Texture} texture - id of a Texture to be removed, or a Texture instance itself
-    * @return {PIXI.Texture|null} The Texture that was removed
-    */
-  def removeFromCache(texture: String): Texture | Null = js.native
-  def removeFromCache(texture: Texture): Texture | Null = js.native
 }
 

@@ -1,5 +1,6 @@
 package typings.cheapRuler
 
+import typings.cheapRuler.anon.Index
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +22,7 @@ object mod extends js.Object {
     def lineSlice(start: Point, stop: Point, line: Line): Line = js.native
     def lineSliceAlong(start: Double, stop: Double, line: Line): Line = js.native
     def offset(p: Point, dx: Double, dy: Double): Point = js.native
-    def pointOnLine(line: Line, p: Point): AnonIndex = js.native
+    def pointOnLine(line: Line, p: Point): Index = js.native
   }
   
   def apply(lat: Double): CheapRuler = js.native

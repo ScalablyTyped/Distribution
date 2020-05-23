@@ -60,14 +60,14 @@ object BaseConfig {
     val __obj = js.Dynamic.literal()
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (dataSources != null) __obj.updateDynamic("dataSources")(js.Any.fromFunction0(dataSources))
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (executor != null) __obj.updateDynamic("executor")(js.Any.fromFunction1(executor))
     if (fieldResolver != null) __obj.updateDynamic("fieldResolver")(js.Any.fromFunction4(fieldResolver))
     if (formatError != null) __obj.updateDynamic("formatError")(js.Any.fromFunction1(formatError))
     if (formatResponse != null) __obj.updateDynamic("formatResponse")(js.Any.fromFunction2(formatResponse))
     if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     if (rootValue != null) __obj.updateDynamic("rootValue")(rootValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(tracing)) __obj.updateDynamic("tracing")(tracing.asInstanceOf[js.Any])
+    if (!js.isUndefined(tracing)) __obj.updateDynamic("tracing")(tracing.get.asInstanceOf[js.Any])
     if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseConfig]
   }

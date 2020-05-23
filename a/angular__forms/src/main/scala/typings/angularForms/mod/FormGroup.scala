@@ -1,7 +1,7 @@
 package typings.angularForms.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularForms.AnonEmitEvent
+import typings.angularForms.anon.EmitEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -129,7 +129,7 @@ class FormGroup protected () extends AbstractControl {
     * updateValueAndValidity} method.
     */
   def patchValue(value: StringDictionary[js.Any]): Unit = js.native
-  def patchValue(value: StringDictionary[js.Any], options: AnonEmitEvent): Unit = js.native
+  def patchValue(value: StringDictionary[js.Any], options: EmitEvent): Unit = js.native
   /**
     * Registers a control with the group's list of controls.
     *
@@ -146,7 +146,7 @@ class FormGroup protected () extends AbstractControl {
     * @param name The control name to remove from the collection
     */
   def removeControl(name: String): Unit = js.native
-  def reset(value: js.Any, options: AnonEmitEvent): Unit = js.native
+  def reset(value: js.Any, options: EmitEvent): Unit = js.native
   /**
     * Replace an existing control.
     *
@@ -190,6 +190,6 @@ class FormGroup protected () extends AbstractControl {
     * When false, no events are emitted.
     */
   def setValue(value: StringDictionary[js.Any]): Unit = js.native
-  def setValue(value: StringDictionary[js.Any], options: AnonEmitEvent): Unit = js.native
+  def setValue(value: StringDictionary[js.Any], options: EmitEvent): Unit = js.native
 }
 

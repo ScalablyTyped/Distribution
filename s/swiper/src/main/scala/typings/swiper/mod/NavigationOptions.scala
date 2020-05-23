@@ -51,7 +51,7 @@ object NavigationOptions {
     val __obj = js.Dynamic.literal()
     if (disabledClass != null) __obj.updateDynamic("disabledClass")(disabledClass.asInstanceOf[js.Any])
     if (hiddenClass != null) __obj.updateDynamic("hiddenClass")(hiddenClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideOnClick)) __obj.updateDynamic("hideOnClick")(hideOnClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideOnClick)) __obj.updateDynamic("hideOnClick")(hideOnClick.get.asInstanceOf[js.Any])
     if (nextEl != null) __obj.updateDynamic("nextEl")(nextEl.asInstanceOf[js.Any])
     if (prevEl != null) __obj.updateDynamic("prevEl")(prevEl.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationOptions]

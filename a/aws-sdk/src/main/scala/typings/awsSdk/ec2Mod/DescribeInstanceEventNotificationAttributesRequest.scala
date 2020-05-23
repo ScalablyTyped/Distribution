@@ -14,9 +14,9 @@ trait DescribeInstanceEventNotificationAttributesRequest extends js.Object {
 
 object DescribeInstanceEventNotificationAttributesRequest {
   @scala.inline
-  def apply(DryRun: js.UndefOr[scala.Boolean] = js.undefined): DescribeInstanceEventNotificationAttributesRequest = {
+  def apply(DryRun: js.UndefOr[Boolean] = js.undefined): DescribeInstanceEventNotificationAttributesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeInstanceEventNotificationAttributesRequest]
   }
 }

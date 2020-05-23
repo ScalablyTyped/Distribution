@@ -33,9 +33,9 @@ object ExamStatus {
     if (examType != null) __obj.updateDynamic("examType")(examType.asInstanceOf[js.Any])
     if (expiration != null) __obj.updateDynamic("expiration")(expiration.asInstanceOf[js.Any])
     if (lastPassed != null) __obj.updateDynamic("lastPassed")(lastPassed.asInstanceOf[js.Any])
-    if (!js.isUndefined(passed)) __obj.updateDynamic("passed")(passed.asInstanceOf[js.Any])
+    if (!js.isUndefined(passed)) __obj.updateDynamic("passed")(passed.get.asInstanceOf[js.Any])
     if (taken != null) __obj.updateDynamic("taken")(taken.asInstanceOf[js.Any])
-    if (!js.isUndefined(warning)) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
+    if (!js.isUndefined(warning)) __obj.updateDynamic("warning")(warning.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExamStatus]
   }
 }

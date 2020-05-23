@@ -15,7 +15,7 @@ trait ListCommandInvocationsRequest extends js.Object {
     */
   var Details: js.UndefOr[Boolean] = js.native
   /**
-    * (Optional) One or more filters. Use a filter to return a more specific list of results. Note that the DocumentName filter is not supported for ListCommandInvocations.
+    * (Optional) One or more filters. Use a filter to return a more specific list of results.
     */
   var Filters: js.UndefOr[CommandFilterList] = js.native
   /**
@@ -36,18 +36,18 @@ object ListCommandInvocationsRequest {
   @scala.inline
   def apply(
     CommandId: CommandId = null,
-    Details: js.UndefOr[scala.Boolean] = js.undefined,
+    Details: js.UndefOr[Boolean] = js.undefined,
     Filters: CommandFilterList = null,
     InstanceId: InstanceId = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[CommandMaxResults] = js.undefined,
     NextToken: NextToken = null
   ): ListCommandInvocationsRequest = {
     val __obj = js.Dynamic.literal()
     if (CommandId != null) __obj.updateDynamic("CommandId")(CommandId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Details)) __obj.updateDynamic("Details")(Details.asInstanceOf[js.Any])
+    if (!js.isUndefined(Details)) __obj.updateDynamic("Details")(Details.get.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
     if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCommandInvocationsRequest]
   }

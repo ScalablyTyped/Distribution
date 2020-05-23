@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait CardTextProps
   extends Props
      with /**
-  * Additional properties passed to component root.
+  * Additional properties for component root element.
   */
 /* key */ StringDictionary[js.Any] {
   /**
@@ -29,7 +29,7 @@ object CardTextProps {
   @scala.inline
   def apply(
     StringDictionary: /**
-    * Additional properties passed to component root.
+    * Additional properties for component root element.
     */
   /* key */ StringDictionary[js.Any] = null,
     children: ReactNode = null,

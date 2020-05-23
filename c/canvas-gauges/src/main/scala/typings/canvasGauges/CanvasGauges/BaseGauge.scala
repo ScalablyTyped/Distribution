@@ -16,15 +16,12 @@ import typings.canvasGauges.canvasGaugesStrings.beforeValueBox
 import typings.canvasGauges.canvasGaugesStrings.destroy
 import typings.canvasGauges.canvasGaugesStrings.init
 import typings.canvasGauges.canvasGaugesStrings.render
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CanvasGauges.BaseGauge")
 @js.native
-abstract class BaseGauge protected () extends js.Object {
-  def this(options: GenericOptions) = this()
+trait BaseGauge extends js.Object {
   var animation: Animation = js.native
   var canvas: SmartCanvas = js.native
   var options: GenericOptions = js.native
@@ -65,15 +62,5 @@ abstract class BaseGauge protected () extends js.Object {
   @JSName("on")
   def on_render(event: render, listeners: js.Function0[Unit]): Unit = js.native
   def update(options: GenericOptions): BaseGauge = js.native
-}
-
-/* static members */
-@JSGlobal("CanvasGauges.BaseGauge")
-@js.native
-object BaseGauge extends js.Object {
-  val version: Double = js.native
-  def ensureValue(value: Double): Double = js.native
-  def fromElement(element: HTMLElement): js.Any = js.native
-  def initialize(`type`: String, options: GenericOptions): js.Any = js.native
 }
 

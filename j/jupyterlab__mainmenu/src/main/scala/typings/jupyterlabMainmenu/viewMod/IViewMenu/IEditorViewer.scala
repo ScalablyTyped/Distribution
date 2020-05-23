@@ -40,7 +40,7 @@ trait IEditorViewer[T /* <: Widget */] extends IMenuExtender[T] {
 
 object IEditorViewer {
   @scala.inline
-  def apply[T /* <: Widget */](
+  def apply[T](
     tracker: IWidgetTracker[T],
     isEnabled: T => Boolean = null,
     lineNumbersToggled: /* widget */ T => Boolean = null,

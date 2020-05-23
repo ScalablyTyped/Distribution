@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the discovered services list is updated
-		 */
+  * Fired when the discovered services list is updated
+  */
 trait BonjourBrowserUpdatedservicesEvent extends BonjourBrowserBaseEvent {
   /**
-  			 * An array of BonjourService objects corresponding to currently available services.  If you cache this value, including using it as table data, be aware that it could become out of date at any time due to the asynchronous nature of Bonjour service discovery.
-  			 */
+    * An array of BonjourService objects corresponding to currently available services.  If you cache this value, including using it as table data, be aware that it could become out of date at any time due to the asynchronous nature of Bonjour service discovery.
+    */
   var services: js.Array[BonjourService]
 }
 

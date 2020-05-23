@@ -1,6 +1,7 @@
 package typings.backboneLayoutmanager.mod
 
 import typings.backbone.mod.Model
+import typings.backbone.mod.ModelSetOptions
 import typings.backbone.mod.View
 import typings.jquery.JQueryPromise
 import scala.scalajs.js
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("backbone", "Layout")
 @js.native
-class Layout[TModel /* <: Model */] () extends View[TModel] {
+class Layout[TModel /* <: Model[_, ModelSetOptions] */] () extends View[TModel] {
   def this(options: LayoutOptions[TModel]) = this()
   var template: String = js.native
   def afterRender(): Unit = js.native
@@ -48,6 +49,6 @@ object Layout extends js.Object {
   def cleanViews(views: js.Any): Unit = js.native
   def configure(options: LayoutManagerOptions): Unit = js.native
   def setupView(views: js.Any): Unit = js.native
-  def setupView(views: js.Any, options: LayoutOptions[Model]): Unit = js.native
+  def setupView(views: js.Any, options: LayoutOptions[Model[_, ModelSetOptions]]): Unit = js.native
 }
 

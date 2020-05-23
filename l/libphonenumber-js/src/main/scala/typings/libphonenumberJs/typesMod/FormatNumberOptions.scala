@@ -24,9 +24,9 @@ object FormatNumberOptions {
     val __obj = js.Dynamic.literal()
     if (formatExtension != null) __obj.updateDynamic("formatExtension")(js.Any.fromFunction3(formatExtension))
     if (fromCountry != null) __obj.updateDynamic("fromCountry")(fromCountry.asInstanceOf[js.Any])
-    if (!js.isUndefined(humanReadable)) __obj.updateDynamic("humanReadable")(humanReadable.asInstanceOf[js.Any])
-    if (!js.isUndefined(nationalPrefix)) __obj.updateDynamic("nationalPrefix")(nationalPrefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(v2)) __obj.updateDynamic("v2")(v2.asInstanceOf[js.Any])
+    if (!js.isUndefined(humanReadable)) __obj.updateDynamic("humanReadable")(humanReadable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nationalPrefix)) __obj.updateDynamic("nationalPrefix")(nationalPrefix.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(v2)) __obj.updateDynamic("v2")(v2.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatNumberOptions]
   }
 }

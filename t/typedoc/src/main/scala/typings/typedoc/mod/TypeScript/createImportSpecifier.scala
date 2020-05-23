@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("typedoc", "TypeScript.createImportSpecifier")
 @js.native
 object createImportSpecifier extends js.Object {
-  def apply(propertyName: js.UndefOr[scala.Nothing], name: Identifier): ImportSpecifier = js.native
-  def apply(propertyName: Identifier, name: Identifier): ImportSpecifier = js.native
+  def apply(propertyName: js.UndefOr[Identifier], name: Identifier): ImportSpecifier = js.native
 }
 

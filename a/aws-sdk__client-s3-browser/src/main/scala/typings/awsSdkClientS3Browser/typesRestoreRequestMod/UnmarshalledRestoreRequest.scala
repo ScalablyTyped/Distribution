@@ -32,7 +32,7 @@ trait UnmarshalledRestoreRequest extends RestoreRequest {
 object UnmarshalledRestoreRequest {
   @scala.inline
   def apply(
-    Days: Int | Double = null,
+    Days: js.UndefOr[Double] = js.undefined,
     Description: String = null,
     GlacierJobParameters: UnmarshalledGlacierJobParameters = null,
     OutputLocation: UnmarshalledOutputLocation = null,
@@ -41,7 +41,7 @@ object UnmarshalledRestoreRequest {
     Type: SELECT | String = null
   ): UnmarshalledRestoreRequest = {
     val __obj = js.Dynamic.literal()
-    if (Days != null) __obj.updateDynamic("Days")(Days.asInstanceOf[js.Any])
+    if (!js.isUndefined(Days)) __obj.updateDynamic("Days")(Days.get.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (GlacierJobParameters != null) __obj.updateDynamic("GlacierJobParameters")(GlacierJobParameters.asInstanceOf[js.Any])
     if (OutputLocation != null) __obj.updateDynamic("OutputLocation")(OutputLocation.asInstanceOf[js.Any])

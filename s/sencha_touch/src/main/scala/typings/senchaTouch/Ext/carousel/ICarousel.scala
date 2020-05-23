@@ -9,86 +9,86 @@ trait ICarousel extends IContainer {
   /** [Config Option] (String) */
   var direction: js.UndefOr[String] = js.undefined
   /** [Method] Returns the index of the currently active card
-  		* @returns Number The index of the currently active card.
-  		*/
+    * @returns Number The index of the currently active card.
+    */
   var getActiveIndex: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of animation
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getAnimation: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of bufferSize
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getBufferSize: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of direction
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getDirection: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of directionLock
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getDirectionLock: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of indicator
-  		* @returns any
-  		*/
+    * @returns any
+    */
   var getIndicator: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of itemConfig
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getItemConfig: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of itemLength
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getItemLength: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Config Option] (Boolean) */
   var indicator: js.UndefOr[Boolean] = js.undefined
   /** [Method] Returns true when direction is horizontal
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var isHorizontal: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns true when direction is vertical
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var isVertical: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Switches to the next card
-  		* @returns Ext.carousel.Carousel this
-  		*/
+    * @returns Ext.carousel.Carousel this
+    */
   var next: js.UndefOr[js.Function0[this.type]] = js.undefined
   /** [Method] Switches to the previous card
-  		* @returns Ext.carousel.Carousel this
-  		*/
+    * @returns Ext.carousel.Carousel this
+    */
   var prev: js.UndefOr[js.Function0[this.type]] = js.undefined
   /** [Method] Switches to the previous card
-  		* @returns Ext.carousel.Carousel this
-  		*/
+    * @returns Ext.carousel.Carousel this
+    */
   var previous: js.UndefOr[js.Function0[this.type]] = js.undefined
   /** [Method] Sets the value of animation
-  		* @param animation Object The new value.
-  		*/
+    * @param animation Object The new value.
+    */
   var setAnimation: js.UndefOr[js.Function1[/* animation */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of bufferSize
-  		* @param bufferSize Number The new value.
-  		*/
+    * @param bufferSize Number The new value.
+    */
   var setBufferSize: js.UndefOr[js.Function1[/* bufferSize */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of direction
-  		* @param direction String The new value.
-  		*/
+    * @param direction String The new value.
+    */
   var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of directionLock
-  		* @param directionLock Boolean The new value.
-  		*/
+    * @param directionLock Boolean The new value.
+    */
   var setDirectionLock: js.UndefOr[js.Function1[/* directionLock */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of indicator
-  		* @param indicator Boolean The new value.
-  		*/
+    * @param indicator Boolean The new value.
+    */
   var setIndicator: js.UndefOr[js.Function1[/* indicator */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of itemConfig
-  		* @param itemConfig Object The new value.
-  		*/
+    * @param itemConfig Object The new value.
+    */
   var setItemConfig: js.UndefOr[js.Function1[/* itemConfig */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of itemLength
-  		* @param itemLength Object The new value.
-  		*/
+    * @param itemLength Object The new value.
+    */
   var setItemLength: js.UndefOr[js.Function1[/* itemLength */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -130,7 +130,7 @@ object ICarousel {
     if (getIndicator != null) __obj.updateDynamic("getIndicator")(js.Any.fromFunction0(getIndicator))
     if (getItemConfig != null) __obj.updateDynamic("getItemConfig")(js.Any.fromFunction0(getItemConfig))
     if (getItemLength != null) __obj.updateDynamic("getItemLength")(js.Any.fromFunction0(getItemLength))
-    if (!js.isUndefined(indicator)) __obj.updateDynamic("indicator")(indicator.asInstanceOf[js.Any])
+    if (!js.isUndefined(indicator)) __obj.updateDynamic("indicator")(indicator.get.asInstanceOf[js.Any])
     if (isHorizontal != null) __obj.updateDynamic("isHorizontal")(js.Any.fromFunction0(isHorizontal))
     if (isVertical != null) __obj.updateDynamic("isVertical")(js.Any.fromFunction0(isVertical))
     if (next != null) __obj.updateDynamic("next")(js.Any.fromFunction0(next))

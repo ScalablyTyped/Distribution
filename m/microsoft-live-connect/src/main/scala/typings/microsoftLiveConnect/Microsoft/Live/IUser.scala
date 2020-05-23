@@ -1,8 +1,8 @@
 package typings.microsoftLiveConnect.Microsoft.Live
 
-import typings.microsoftLiveConnect.AnonAccount
-import typings.microsoftLiveConnect.AnonMobile
-import typings.microsoftLiveConnect.AnonPersonal
+import typings.microsoftLiveConnect.anon.Account
+import typings.microsoftLiveConnect.anon.Mobile
+import typings.microsoftLiveConnect.anon.Personal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait IUser extends js.Object {
   /**
     * The user's postal addresses.
     */
-  var addresses: AnonPersonal
+  var addresses: Personal
   /**
     * The day of the user's birth date, or null if no birth date is
     * specified.
@@ -34,7 +34,7 @@ trait IUser extends js.Object {
   /**
     * The user's email addresses.
     */
-  var emails: AnonAccount
+  var emails: Account
   /**
     * The user's first name.
     */
@@ -66,7 +66,7 @@ trait IUser extends js.Object {
   /**
     * The user's phone numbers.
     */
-  var phones: AnonMobile
+  var phones: Mobile
   /**
     * The time, in ISO 8601 format, at which the user last updated the
     * object.
@@ -81,11 +81,11 @@ trait IUser extends js.Object {
 object IUser {
   @scala.inline
   def apply(
-    addresses: AnonPersonal,
+    addresses: Personal,
     birth_day: Double,
     birth_month: Double,
     birth_year: Double,
-    emails: AnonAccount,
+    emails: Account,
     first_name: String,
     gender: String,
     id: String,
@@ -93,7 +93,7 @@ object IUser {
     link: String,
     locale: String,
     name: String,
-    phones: AnonMobile,
+    phones: Mobile,
     updated_time: String,
     work: js.Array[IWorkInfo]
   ): IUser = {

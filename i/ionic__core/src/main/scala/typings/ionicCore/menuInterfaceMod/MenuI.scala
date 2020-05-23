@@ -1,6 +1,6 @@
 package typings.ionicCore.menuInterfaceMod
 
-import typings.ionicCore.componentsMod._Global_.HTMLIonMenuElement
+import typings.ionicCore.componentsMod.global.HTMLIonMenuElement
 import typings.ionicCore.mod.Side
 import typings.std.HTMLElement
 import scala.scalajs.js

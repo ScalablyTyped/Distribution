@@ -29,14 +29,14 @@ object Evaluation {
   def apply(
     approvalRulesNotSatisfied: ApprovalRulesNotSatisfiedList = null,
     approvalRulesSatisfied: ApprovalRulesSatisfiedList = null,
-    approved: js.UndefOr[Boolean] = js.undefined,
-    overridden: js.UndefOr[Boolean] = js.undefined
+    approved: js.UndefOr[Approved] = js.undefined,
+    overridden: js.UndefOr[Overridden] = js.undefined
   ): Evaluation = {
     val __obj = js.Dynamic.literal()
     if (approvalRulesNotSatisfied != null) __obj.updateDynamic("approvalRulesNotSatisfied")(approvalRulesNotSatisfied.asInstanceOf[js.Any])
     if (approvalRulesSatisfied != null) __obj.updateDynamic("approvalRulesSatisfied")(approvalRulesSatisfied.asInstanceOf[js.Any])
-    if (!js.isUndefined(approved)) __obj.updateDynamic("approved")(approved.asInstanceOf[js.Any])
-    if (!js.isUndefined(overridden)) __obj.updateDynamic("overridden")(overridden.asInstanceOf[js.Any])
+    if (!js.isUndefined(approved)) __obj.updateDynamic("approved")(approved.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overridden)) __obj.updateDynamic("overridden")(overridden.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Evaluation]
   }
 }

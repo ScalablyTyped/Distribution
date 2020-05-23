@@ -1,6 +1,6 @@
 package typings.gapiClientAdmin.gapi.client.admin
 
-import typings.gapiClientAdmin.AnonCode
+import typings.gapiClientAdmin.anon.Code
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait UsageReports extends js.Object {
   /** Various application parameter records. */
   var usageReports: js.UndefOr[js.Array[UsageReport]] = js.undefined
   /** Warnings if any. */
-  var warnings: js.UndefOr[js.Array[AnonCode]] = js.undefined
+  var warnings: js.UndefOr[js.Array[Code]] = js.undefined
 }
 
 object UsageReports {
@@ -25,7 +25,7 @@ object UsageReports {
     kind: String = null,
     nextPageToken: String = null,
     usageReports: js.Array[UsageReport] = null,
-    warnings: js.Array[AnonCode] = null
+    warnings: js.Array[Code] = null
   ): UsageReports = {
     val __obj = js.Dynamic.literal()
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])

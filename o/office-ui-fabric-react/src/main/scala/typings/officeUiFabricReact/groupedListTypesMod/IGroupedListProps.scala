@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.groupedListTypesMod
 
-import typings.officeUiFabricReact.AnonCallback
+import typings.officeUiFabricReact.anon.Callback
 import typings.officeUiFabricReact.dragdropInterfacesMod.IDragDropEvents
 import typings.officeUiFabricReact.dragdropInterfacesMod.IDragDropHelper
 import typings.officeUiFabricReact.groupedListBaseMod.GroupedListBase
@@ -34,7 +34,7 @@ trait IGroupedListProps extends ClassAttributes[GroupedListBase] {
   /** helper to manage drag/drop across item and groups */
   var dragDropHelper: js.UndefOr[IDragDropHelper] = js.native
   /** Event names and corresponding callbacks that will be registered to groups and rendered elements */
-  var eventsToRegister: js.UndefOr[js.Array[AnonCallback]] = js.native
+  var eventsToRegister: js.UndefOr[js.Array[Callback]] = js.native
   /**
     * Optional function to override default group height calculation used by list virtualization.
     */

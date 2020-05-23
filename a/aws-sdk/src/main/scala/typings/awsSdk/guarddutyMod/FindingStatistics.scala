@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FindingStatistics extends js.Object {
   /**
-    * Represents a map of severity to count statistic for a set of findings
+    * Represents a map of severity to count statistics for a set of findings.
     */
   var CountBySeverity: js.UndefOr[typings.awsSdk.guarddutyMod.CountBySeverity] = js.native
 }

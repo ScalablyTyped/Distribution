@@ -26,20 +26,20 @@ object IGridOptions {
   def apply(
     borderVisible: js.UndefOr[Boolean] = js.undefined,
     fillStyle: String = null,
-    lineWidth: Int | Double = null,
-    millisPerLine: Int | Double = null,
+    lineWidth: js.UndefOr[Double] = js.undefined,
+    millisPerLine: js.UndefOr[Double] = js.undefined,
     sharpLines: js.UndefOr[Boolean] = js.undefined,
     strokeStyle: String = null,
-    verticalSections: Int | Double = null
+    verticalSections: js.UndefOr[Double] = js.undefined
   ): IGridOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(borderVisible)) __obj.updateDynamic("borderVisible")(borderVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderVisible)) __obj.updateDynamic("borderVisible")(borderVisible.get.asInstanceOf[js.Any])
     if (fillStyle != null) __obj.updateDynamic("fillStyle")(fillStyle.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (millisPerLine != null) __obj.updateDynamic("millisPerLine")(millisPerLine.asInstanceOf[js.Any])
-    if (!js.isUndefined(sharpLines)) __obj.updateDynamic("sharpLines")(sharpLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(millisPerLine)) __obj.updateDynamic("millisPerLine")(millisPerLine.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sharpLines)) __obj.updateDynamic("sharpLines")(sharpLines.get.asInstanceOf[js.Any])
     if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle.asInstanceOf[js.Any])
-    if (verticalSections != null) __obj.updateDynamic("verticalSections")(verticalSections.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalSections)) __obj.updateDynamic("verticalSections")(verticalSections.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridOptions]
   }
 }

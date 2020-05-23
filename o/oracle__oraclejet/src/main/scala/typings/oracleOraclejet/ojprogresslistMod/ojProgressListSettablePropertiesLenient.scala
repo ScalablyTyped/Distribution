@@ -14,7 +14,7 @@ trait ojProgressListSettablePropertiesLenient
 
 object ojProgressListSettablePropertiesLenient {
   @scala.inline
-  def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null, data: DataProvider[_, _] = null): ojProgressListSettablePropertiesLenient = {
+  def apply(StringDictionary: /* name */ StringDictionary[js.Any] = null, data: DataProvider[_, _] = null): ojProgressListSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])

@@ -24,12 +24,12 @@ object MaxCountRule {
   @scala.inline
   def apply(
     Enabled: BoxedBoolean,
-    DeleteSourceFromS3: js.UndefOr[Boolean] = js.undefined,
-    MaxCount: Int | Double = null
+    DeleteSourceFromS3: js.UndefOr[BoxedBoolean] = js.undefined,
+    MaxCount: js.UndefOr[BoxedInt] = js.undefined
   ): MaxCountRule = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeleteSourceFromS3)) __obj.updateDynamic("DeleteSourceFromS3")(DeleteSourceFromS3.asInstanceOf[js.Any])
-    if (MaxCount != null) __obj.updateDynamic("MaxCount")(MaxCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeleteSourceFromS3)) __obj.updateDynamic("DeleteSourceFromS3")(DeleteSourceFromS3.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxCount)) __obj.updateDynamic("MaxCount")(MaxCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaxCountRule]
   }
 }

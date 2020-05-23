@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.httpsMod.ServerOptions
 import typings.webpack.mod.Compiler_
 import typings.webpack.mod.Options.Stats
-import typings.webpackChain.AnonErrors
+import typings.webpackChain.anon.Errors
 import typings.webpackChain.webpackChainStrings.error
 import typings.webpackChain.webpackChainStrings.info
 import typings.webpackChain.webpackChainStrings.none
@@ -58,7 +58,7 @@ class DevServer ()
   def openPage(value: String): this.type = js.native
   def openPage(value: js.Array[String]): this.type = js.native
   def overlay(value: Boolean): this.type = js.native
-  def overlay(value: AnonErrors): this.type = js.native
+  def overlay(value: Errors): this.type = js.native
   def pfx(value: String): this.type = js.native
   def pfxPassphrase(value: String): this.type = js.native
   def port(value: Double): this.type = js.native

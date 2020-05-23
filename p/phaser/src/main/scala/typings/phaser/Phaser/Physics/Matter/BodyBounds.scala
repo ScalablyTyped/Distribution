@@ -20,9 +20,8 @@ import scala.scalajs.js.annotation._
   * 
   * See also the `MatterPhysics.alignBody` method.
   */
-@JSGlobal("Phaser.Physics.Matter.BodyBounds")
 @js.native
-class BodyBounds () extends js.Object {
+trait BodyBounds extends js.Object {
   /**
     * A Vector2 that stores the temporary bounds center value during calculations by methods in this class.
     */

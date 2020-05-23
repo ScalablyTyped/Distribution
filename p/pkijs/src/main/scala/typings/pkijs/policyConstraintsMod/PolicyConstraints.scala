@@ -18,12 +18,12 @@ object PolicyConstraints {
     fromSchema: js.Any => Unit,
     toJSON: () => js.Any,
     toSchema: () => js.Any,
-    inhibitPolicyMapping: Int | Double = null,
-    requireExplicitPolicy: Int | Double = null
+    inhibitPolicyMapping: js.UndefOr[Double] = js.undefined,
+    requireExplicitPolicy: js.UndefOr[Double] = js.undefined
   ): PolicyConstraints = {
     val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
-    if (inhibitPolicyMapping != null) __obj.updateDynamic("inhibitPolicyMapping")(inhibitPolicyMapping.asInstanceOf[js.Any])
-    if (requireExplicitPolicy != null) __obj.updateDynamic("requireExplicitPolicy")(requireExplicitPolicy.asInstanceOf[js.Any])
+    if (!js.isUndefined(inhibitPolicyMapping)) __obj.updateDynamic("inhibitPolicyMapping")(inhibitPolicyMapping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireExplicitPolicy)) __obj.updateDynamic("requireExplicitPolicy")(requireExplicitPolicy.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolicyConstraints]
   }
 }

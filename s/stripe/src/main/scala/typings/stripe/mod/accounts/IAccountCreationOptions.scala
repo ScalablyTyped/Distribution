@@ -1,9 +1,9 @@
 package typings.stripe.mod.accounts
 
-import typings.stripe.AnonAccountholdername
-import typings.stripe.AnonBranding
-import typings.stripe.AnonDate
-import typings.stripe.AnonMcc
+import typings.stripe.anon.Accountholdername
+import typings.stripe.anon.Branding
+import typings.stripe.anon.Date
+import typings.stripe.anon.Mcc
 import typings.stripe.mod.IOptionsMetadata
 import typings.stripe.stripeStrings.company
 import typings.stripe.stripeStrings.custom
@@ -34,21 +34,21 @@ object IAccountCreationOptions {
   def apply(
     `type`: custom,
     account_token: String = null,
-    business_profile: AnonMcc = null,
+    business_profile: Mcc = null,
     business_type: individual | company = null,
     company: ICompanyCreateUpdateOptions = null,
     country: String = null,
     default_currency: String = null,
     email: String = null,
     expand: js.Array[String] = null,
-    external_account: AnonAccountholdername = null,
+    external_account: Accountholdername = null,
     include: js.Array[String] = null,
     individual: IIndividualCreateUpdateOptions = null,
     metadata: IOptionsMetadata = null,
     product_description: String = null,
     requested_capabilities: js.Array[String] = null,
-    settings: AnonBranding = null,
-    tos_acceptance: AnonDate = null
+    settings: Branding = null,
+    tos_acceptance: Date = null
   ): IAccountCreationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

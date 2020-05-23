@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.peoplePickerMod
 
-import typings.officeUiFabricReact.AnonCreateGenericItem
+import typings.officeUiFabricReact.anon.CreateGenericItem
 import typings.officeUiFabricReact.basePickerMod.BasePicker
 import typings.officeUiFabricReact.personaTypesMod.IPersonaProps
 import scala.scalajs.js
@@ -16,6 +16,6 @@ class NormalPeoplePickerBase () extends BasePicker[IPersonaProps, IPeoplePickerP
 @js.native
 object NormalPeoplePickerBase extends js.Object {
   /** Default props for NormalPeoplePicker. */
-  var defaultProps: AnonCreateGenericItem = js.native
+  var defaultProps: CreateGenericItem = js.native
 }
 

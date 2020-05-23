@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * A command to reset the selected text's formatting to default.
   */
-@JSGlobal("ClearFormattingCommand")
-@js.native
-class ClearFormattingCommand () extends CommandWithSimpleStateBase {
+trait ClearFormattingCommand extends CommandWithSimpleStateBase {
   /**
     * Executes the ClearFormattingCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
+}
+
+object ClearFormattingCommand {
+  @scala.inline
+  def apply(execute: () => Boolean, getState: () => SimpleCommandState): ClearFormattingCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
+    __obj.asInstanceOf[ClearFormattingCommand]
+  }
 }
 

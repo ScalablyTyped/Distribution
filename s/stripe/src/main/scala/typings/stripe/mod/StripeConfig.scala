@@ -18,22 +18,22 @@ trait StripeConfig extends js.Object {
 object StripeConfig {
   @scala.inline
   def apply(
-    apiVersion: String = null,
+    apiVersion: js.UndefOr[Null | String] = js.undefined,
     host: String = null,
-    httpAgent: Agent = null,
-    maxNetworkRetries: Int | Double = null,
-    port: Int | Double = null,
+    httpAgent: js.UndefOr[Null | Agent] = js.undefined,
+    maxNetworkRetries: js.UndefOr[Double] = js.undefined,
+    port: js.UndefOr[Double] = js.undefined,
     telemetry: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): StripeConfig = {
     val __obj = js.Dynamic.literal()
-    if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(apiVersion)) __obj.updateDynamic("apiVersion")(apiVersion.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (httpAgent != null) __obj.updateDynamic("httpAgent")(httpAgent.asInstanceOf[js.Any])
-    if (maxNetworkRetries != null) __obj.updateDynamic("maxNetworkRetries")(maxNetworkRetries.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(telemetry)) __obj.updateDynamic("telemetry")(telemetry.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(httpAgent)) __obj.updateDynamic("httpAgent")(httpAgent.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxNetworkRetries)) __obj.updateDynamic("maxNetworkRetries")(maxNetworkRetries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(telemetry)) __obj.updateDynamic("telemetry")(telemetry.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StripeConfig]
   }
 }

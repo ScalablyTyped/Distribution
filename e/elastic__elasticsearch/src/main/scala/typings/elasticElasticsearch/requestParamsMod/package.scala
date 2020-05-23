@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object requestParamsMod {
+  type AutoscalingGetAutoscalingDecision = typings.elasticElasticsearch.requestParamsMod.Generic
   type CcrStats = typings.elasticElasticsearch.requestParamsMod.Generic
   type ClusterRemoteInfo = typings.elasticElasticsearch.requestParamsMod.Generic
   type EnrichStats = typings.elasticElasticsearch.requestParamsMod.Generic

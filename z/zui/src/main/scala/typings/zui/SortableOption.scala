@@ -34,7 +34,7 @@ object SortableOption {
     if (finish != null) __obj.updateDynamic("finish")(js.Any.fromFunction1(finish))
     if (mouseButton != null) __obj.updateDynamic("mouseButton")(mouseButton.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(js.Any.fromFunction1(order))
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.get.asInstanceOf[js.Any])
     if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     if (sortingClass != null) __obj.updateDynamic("sortingClass")(sortingClass.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))

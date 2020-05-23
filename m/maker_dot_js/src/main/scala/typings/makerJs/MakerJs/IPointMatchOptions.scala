@@ -16,9 +16,9 @@ trait IPointMatchOptions extends js.Object {
 
 object IPointMatchOptions {
   @scala.inline
-  def apply(pointMatchingDistance: Int | Double = null): IPointMatchOptions = {
+  def apply(pointMatchingDistance: js.UndefOr[Double] = js.undefined): IPointMatchOptions = {
     val __obj = js.Dynamic.literal()
-    if (pointMatchingDistance != null) __obj.updateDynamic("pointMatchingDistance")(pointMatchingDistance.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointMatchingDistance)) __obj.updateDynamic("pointMatchingDistance")(pointMatchingDistance.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPointMatchOptions]
   }
 }

@@ -15,7 +15,7 @@ trait EndSessionParameters
 object EndSessionParameters {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     id_token_hint: TokenSet | String = null,
     post_logout_redirect_uri: String = null,
     state: String = null

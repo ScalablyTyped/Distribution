@@ -1,5 +1,6 @@
 package typings.isGeneratorFn
 
+import typings.isGeneratorFn.anon.Call
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ object mod extends js.Object {
   // declare function isGeneratorFn(value: unknown): value is GeneratorFunction;
   // export = isGeneratorFn;
   @JSName("default")
-  var default_Original: AnonCall = js.native
+  var default_Original: Call = js.native
   /**
   	Check if something is a generator function.
   	@example

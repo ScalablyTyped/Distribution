@@ -18,10 +18,13 @@ trait IAnnouncedStyles extends js.Object {
 
 object IAnnouncedStyles {
   @scala.inline
-  def apply(root: IStyle = null, screenReaderText: IStyle = null): IAnnouncedStyles = {
+  def apply(
+    root: js.UndefOr[Null | IStyle] = js.undefined,
+    screenReaderText: js.UndefOr[Null | IStyle] = js.undefined
+  ): IAnnouncedStyles = {
     val __obj = js.Dynamic.literal()
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (screenReaderText != null) __obj.updateDynamic("screenReaderText")(screenReaderText.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(screenReaderText)) __obj.updateDynamic("screenReaderText")(screenReaderText.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAnnouncedStyles]
   }
 }

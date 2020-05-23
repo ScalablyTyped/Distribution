@@ -7,19 +7,30 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a delete account operation. */
-@JSGlobal("Windows.Security.Authentication.Web.Provider.WebAccountProviderDeleteAccountOperation")
-@js.native
-abstract class WebAccountProviderDeleteAccountOperation () extends js.Object {
+trait WebAccountProviderDeleteAccountOperation extends js.Object {
   /** Gets the kind of web account provider operation. */
-  var kind: WebAccountProviderOperationKind = js.native
+  var kind: WebAccountProviderOperationKind
   /** Gets the web account to delete. */
-  var webAccount: WebAccount = js.native
+  var webAccount: WebAccount
   /** Informs the activating app that the operation completed successfully. */
-  def reportCompleted(): Unit = js.native
+  def reportCompleted(): Unit
   /**
     * Informs the activating app that the operation encountered an error.
     * @param value The type of error encountered.
     */
-  def reportError(value: WebProviderError): Unit = js.native
+  def reportError(value: WebProviderError): Unit
+}
+
+object WebAccountProviderDeleteAccountOperation {
+  @scala.inline
+  def apply(
+    kind: WebAccountProviderOperationKind,
+    reportCompleted: () => Unit,
+    reportError: WebProviderError => Unit,
+    webAccount: WebAccount
+  ): WebAccountProviderDeleteAccountOperation = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], reportCompleted = js.Any.fromFunction0(reportCompleted), reportError = js.Any.fromFunction1(reportError), webAccount = webAccount.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebAccountProviderDeleteAccountOperation]
+  }
 }
 

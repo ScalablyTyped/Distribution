@@ -8,10 +8,17 @@ import scala.scalajs.js.annotation._
   * AuthError
   * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Sync.AuthError.html }
   */
-@JSGlobal("Realm.Sync.AuthError")
-@js.native
-class AuthError () extends js.Object {
-  val code: Double = js.native
-  val `type`: String = js.native
+trait AuthError extends js.Object {
+  val code: Double
+  val `type`: String
+}
+
+object AuthError {
+  @scala.inline
+  def apply(code: Double, `type`: String): AuthError = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AuthError]
+  }
 }
 

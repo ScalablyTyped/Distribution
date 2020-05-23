@@ -1,22 +1,11 @@
 package typings.typescriptServices.TypeScript.Services.Formatting
 
-import typings.typescriptServices.FormattingOptions
-import typings.typescriptServices.TypeScript.SourceUnitSyntax
-import typings.typescriptServices.TypeScript.TextSpan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.Services.Formatting.MultipleTokenIndenter")
 @js.native
-class MultipleTokenIndenter protected () extends IndentationTrackingWalker {
-  def this(
-    textSpan: TextSpan,
-    sourceUnit: SourceUnitSyntax,
-    snapshot: ITextSnapshot,
-    indentFirstToken: Boolean,
-    options: FormattingOptions
-  ) = this()
+trait MultipleTokenIndenter extends IndentationTrackingWalker {
   var _edits: js.Any = js.native
   def edits(): js.Array[TextEditInfo] = js.native
   def recordEdit(position: Double, length: Double, replaceWith: String): Unit = js.native

@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.AccessProperty")
 @js.native
-class AccessProperty protected () extends js.Object {
+trait AccessProperty extends js.Object {
   @JSName("Access._AccessProperty_typekey")
   var AccessDot_AccessProperty_typekey: AccessProperty = js.native
   val Application: typings.activexAccess.Access.Application = js.native

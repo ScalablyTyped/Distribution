@@ -14,9 +14,9 @@ trait StartVpcEndpointServicePrivateDnsVerificationResult extends js.Object {
 
 object StartVpcEndpointServicePrivateDnsVerificationResult {
   @scala.inline
-  def apply(ReturnValue: js.UndefOr[scala.Boolean] = js.undefined): StartVpcEndpointServicePrivateDnsVerificationResult = {
+  def apply(ReturnValue: js.UndefOr[Boolean] = js.undefined): StartVpcEndpointServicePrivateDnsVerificationResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ReturnValue)) __obj.updateDynamic("ReturnValue")(ReturnValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReturnValue)) __obj.updateDynamic("ReturnValue")(ReturnValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartVpcEndpointServicePrivateDnsVerificationResult]
   }
 }

@@ -32,9 +32,6 @@ import scala.scalajs.js.annotation._
 
 object tensorflowTfjsLayersStrings {
   @js.native
-  sealed trait `1Dot7Dot2` extends js.Object
-  
-  @js.native
   sealed trait Activation
     extends CoreLayerClassName
        with KerasClassName
@@ -553,9 +550,6 @@ object tensorflowTfjsLayersStrings {
   sealed trait linear extends ActivationIdentifier
   
   @js.native
-  sealed trait logSoftmax extends js.Object
-  
-  @js.native
   sealed trait logcosh extends js.Object
   
   @js.native
@@ -687,8 +681,6 @@ object tensorflowTfjsLayersStrings {
   @js.native
   sealed trait zeros_ extends _InitializerIdentifier
   
-  @scala.inline
-  def `1Dot7Dot2`: `1Dot7Dot2` = "1.7.2".asInstanceOf[`1Dot7Dot2`]
   @scala.inline
   def Activation: Activation = "Activation".asInstanceOf[Activation]
   @scala.inline
@@ -925,8 +917,6 @@ object tensorflowTfjsLayersStrings {
   def leCunUniform: leCunUniform = "leCunUniform".asInstanceOf[leCunUniform]
   @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
-  @scala.inline
-  def logSoftmax: logSoftmax = "logSoftmax".asInstanceOf[logSoftmax]
   @scala.inline
   def logcosh: logcosh = "logcosh".asInstanceOf[logcosh]
   @scala.inline

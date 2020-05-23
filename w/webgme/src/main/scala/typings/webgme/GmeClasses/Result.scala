@@ -2,12 +2,12 @@ package typings.webgme.GmeClasses
 
 import typings.std.Date
 import typings.std.Error
-import typings.webgme.AnonFinishTime
 import typings.webgme.GmeCommon.ArtifactHash
 import typings.webgme.GmeCommon.ErrorStr
 import typings.webgme.GmeCommon.ISO8601
 import typings.webgme.GmeCommon.Message
 import typings.webgme.GmeCommon.MetadataHash
+import typings.webgme.anon.FinishTime
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -70,7 +70,7 @@ trait Result extends js.Object {
   /**
     * Serializes this object to a JSON representation.
     */
-  def serialize(): AnonFinishTime = js.native
+  def serialize(): FinishTime = js.native
   def setError(error: Error): Unit = js.native
   /**
     * Sets the error string if any error occured during execution.

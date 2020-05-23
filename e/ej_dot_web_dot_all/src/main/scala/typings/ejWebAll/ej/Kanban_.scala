@@ -1,22 +1,15 @@
 package typings.ejWebAll.ej
 
-import typings.ejWebAll.JQuery
 import typings.ejWebAll.ej.Kanban.KanbanEdit
 import typings.ejWebAll.ej.Kanban.KanbanFilter
 import typings.ejWebAll.ej.Kanban.KanbanSelection
 import typings.ejWebAll.ej.Kanban.KanbanSwimlane
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.Kanban")
 @js.native
-class Kanban_ protected () extends Widget_ {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.Kanban.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.Kanban.Model) = this()
+trait Kanban_ extends Widget_ {
   var KanbanEdit: KanbanEdit = js.native
   var KanbanFilter: KanbanFilter = js.native
   var KanbanSelection: KanbanSelection = js.native

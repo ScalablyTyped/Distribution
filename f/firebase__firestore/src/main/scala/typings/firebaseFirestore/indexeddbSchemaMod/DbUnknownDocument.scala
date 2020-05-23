@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/indexeddb_schema", "DbUnknownDocument")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbUnknownDocument")
 @js.native
 class DbUnknownDocument protected () extends js.Object {
   def this(path: js.Array[String], version: DbTimestamp) = this()

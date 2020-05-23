@@ -1,7 +1,7 @@
 package typings.saslPlain.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.saslPlain.TypeofPlainMechanism
+import typings.saslPlain.anon.TypeofPlainMechanism
 import typings.saslPlain.saslPlainBooleans.`true`
 import typings.saslPlain.saslPlainStrings.PLAIN
 import scala.scalajs.js

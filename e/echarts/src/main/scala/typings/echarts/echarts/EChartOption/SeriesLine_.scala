@@ -1,14 +1,14 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.AnonAnimationDelayUpdate
-import typings.echarts.AnonAnimationDuration
-import typings.echarts.AnonAnimationThreshold
-import typings.echarts.AnonBorderRadius
-import typings.echarts.AnonColorOpacity
-import typings.echarts.AnonDictunknownPropertyBorderColor
-import typings.echarts.AnonExtraCssText
-import typings.echarts.AnonLabelAnonBorderRadius
-import typings.echarts.AnonShadowBlur
+import typings.echarts.anon.AnimationDelayUpdate
+import typings.echarts.anon.AnimationDuration
+import typings.echarts.anon.AnimationThreshold
+import typings.echarts.anon.BorderRadius
+import typings.echarts.anon.ColorOpacity
+import typings.echarts.anon.DictunknownPropertyBorderColor
+import typings.echarts.anon.ExtraCssText
+import typings.echarts.anon.LabelBorderRadius
+import typings.echarts.anon.ShadowBlur
 import typings.echarts.echarts.EChartOption.SeriesLine.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -144,7 +144,7 @@ trait SeriesLine_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-line.areaStyle
     */
-  var areaStyle: js.UndefOr[AnonColorOpacity] = js.undefined
+  var areaStyle: js.UndefOr[ColorOpacity] = js.undefined
   /**
     * Whether to clip the overflowing part, which defaults to clip.
     *
@@ -398,7 +398,7 @@ trait SeriesLine_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-line.emphasis
     */
-  var emphasis: js.UndefOr[AnonLabelAnonBorderRadius] = js.undefined
+  var emphasis: js.UndefOr[LabelBorderRadius] = js.undefined
   /**
     * Define what is encoded to for each dimension of `data`.
     * For example:
@@ -460,7 +460,7 @@ trait SeriesLine_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-line.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonDictunknownPropertyBorderColor] = js.undefined
+  var itemStyle: js.UndefOr[DictunknownPropertyBorderColor] = js.undefined
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -472,7 +472,7 @@ trait SeriesLine_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-line.label
     */
-  var label: js.UndefOr[AnonBorderRadius] = js.undefined
+  var label: js.UndefOr[BorderRadius] = js.undefined
   /**
     * Whether to enable highlighting chart when
     * [legend](https://echarts.apache.org/en/option.html#legend)
@@ -490,7 +490,7 @@ trait SeriesLine_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-line.lineStyle
     */
-  var lineStyle: js.UndefOr[AnonShadowBlur] = js.undefined
+  var lineStyle: js.UndefOr[ShadowBlur] = js.undefined
   /**
     * Used to mark an area in chart.
     * For example, mark a time interval.
@@ -498,21 +498,21 @@ trait SeriesLine_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-line.markArea
     */
-  var markArea: js.UndefOr[AnonAnimationDelayUpdate] = js.undefined
+  var markArea: js.UndefOr[AnimationDelayUpdate] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-line.markLine
     */
-  var markLine: js.UndefOr[AnonAnimationThreshold] = js.undefined
+  var markLine: js.UndefOr[AnimationThreshold] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-line.markPoint
     */
-  var markPoint: js.UndefOr[AnonAnimationDuration] = js.undefined
+  var markPoint: js.UndefOr[AnimationDuration] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -811,7 +811,7 @@ trait SeriesLine_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-line.tooltip
     */
-  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
   /**
     * @default
     * "line"
@@ -881,8 +881,8 @@ object SeriesLine_ {
     animationDurationUpdate: js.Function | Double = null,
     animationEasing: String = null,
     animationEasingUpdate: String = null,
-    animationThreshold: Int | Double = null,
-    areaStyle: AnonColorOpacity = null,
+    animationThreshold: js.UndefOr[Double] = js.undefined,
+    areaStyle: ColorOpacity = null,
     clipOverflow: js.UndefOr[Boolean] = js.undefined,
     connectNulls: js.UndefOr[Boolean] = js.undefined,
     coordinateSystem: String = null,
@@ -890,21 +890,21 @@ object SeriesLine_ {
     data: js.Array[
       (js.Array[Unit | String | Double | DataObject]) | DataObject | Double | String | Unit
     ] = null,
-    datasetIndex: Int | Double = null,
+    datasetIndex: js.UndefOr[Double] = js.undefined,
     dimensions: js.Array[_] = null,
-    emphasis: AnonLabelAnonBorderRadius = null,
+    emphasis: LabelBorderRadius = null,
     encode: js.Object = null,
     hoverAnimation: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
-    itemStyle: AnonDictunknownPropertyBorderColor = null,
-    label: AnonBorderRadius = null,
+    itemStyle: DictunknownPropertyBorderColor = null,
+    label: BorderRadius = null,
     legendHoverLink: js.UndefOr[Boolean] = js.undefined,
-    lineStyle: AnonShadowBlur = null,
-    markArea: AnonAnimationDelayUpdate = null,
-    markLine: AnonAnimationThreshold = null,
-    markPoint: AnonAnimationDuration = null,
+    lineStyle: ShadowBlur = null,
+    markArea: AnimationDelayUpdate = null,
+    markLine: AnimationThreshold = null,
+    markPoint: AnimationDuration = null,
     name: String = null,
-    polarIndex: Int | Double = null,
+    polarIndex: js.UndefOr[Double] = js.undefined,
     sampling: String = null,
     seriesLayoutBy: String = null,
     showAllSymbol: js.UndefOr[Boolean] = js.undefined,
@@ -917,65 +917,65 @@ object SeriesLine_ {
     symbol: String = null,
     symbolKeepAspect: js.UndefOr[Boolean] = js.undefined,
     symbolOffset: js.Array[_] = null,
-    symbolRotate: Int | Double = null,
+    symbolRotate: js.UndefOr[Double] = js.undefined,
     symbolSize: js.Array[_] | js.Function | Double = null,
-    tooltip: AnonExtraCssText = null,
+    tooltip: ExtraCssText = null,
     `type`: String = null,
-    xAxisIndex: Int | Double = null,
-    yAxisIndex: Int | Double = null,
-    z: Int | Double = null,
-    zlevel: Int | Double = null
+    xAxisIndex: js.UndefOr[Double] = js.undefined,
+    yAxisIndex: js.UndefOr[Double] = js.undefined,
+    z: js.UndefOr[Double] = js.undefined,
+    zlevel: js.UndefOr[Double] = js.undefined
   ): SeriesLine_ = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
     if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
     if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
     if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
     if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate.asInstanceOf[js.Any])
-    if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationThreshold)) __obj.updateDynamic("animationThreshold")(animationThreshold.get.asInstanceOf[js.Any])
     if (areaStyle != null) __obj.updateDynamic("areaStyle")(areaStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(clipOverflow)) __obj.updateDynamic("clipOverflow")(clipOverflow.asInstanceOf[js.Any])
-    if (!js.isUndefined(connectNulls)) __obj.updateDynamic("connectNulls")(connectNulls.asInstanceOf[js.Any])
+    if (!js.isUndefined(clipOverflow)) __obj.updateDynamic("clipOverflow")(clipOverflow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectNulls)) __obj.updateDynamic("connectNulls")(connectNulls.get.asInstanceOf[js.Any])
     if (coordinateSystem != null) __obj.updateDynamic("coordinateSystem")(coordinateSystem.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (datasetIndex != null) __obj.updateDynamic("datasetIndex")(datasetIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(datasetIndex)) __obj.updateDynamic("datasetIndex")(datasetIndex.get.asInstanceOf[js.Any])
     if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
     if (encode != null) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverAnimation)) __obj.updateDynamic("hoverAnimation")(hoverAnimation.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverAnimation)) __obj.updateDynamic("hoverAnimation")(hoverAnimation.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(legendHoverLink)) __obj.updateDynamic("legendHoverLink")(legendHoverLink.asInstanceOf[js.Any])
+    if (!js.isUndefined(legendHoverLink)) __obj.updateDynamic("legendHoverLink")(legendHoverLink.get.asInstanceOf[js.Any])
     if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
     if (markArea != null) __obj.updateDynamic("markArea")(markArea.asInstanceOf[js.Any])
     if (markLine != null) __obj.updateDynamic("markLine")(markLine.asInstanceOf[js.Any])
     if (markPoint != null) __obj.updateDynamic("markPoint")(markPoint.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (polarIndex != null) __obj.updateDynamic("polarIndex")(polarIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(polarIndex)) __obj.updateDynamic("polarIndex")(polarIndex.get.asInstanceOf[js.Any])
     if (sampling != null) __obj.updateDynamic("sampling")(sampling.asInstanceOf[js.Any])
     if (seriesLayoutBy != null) __obj.updateDynamic("seriesLayoutBy")(seriesLayoutBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAllSymbol)) __obj.updateDynamic("showAllSymbol")(showAllSymbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSymbol)) __obj.updateDynamic("showSymbol")(showSymbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAllSymbol)) __obj.updateDynamic("showAllSymbol")(showAllSymbol.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSymbol)) __obj.updateDynamic("showSymbol")(showSymbol.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     if (smooth != null) __obj.updateDynamic("smooth")(smooth.asInstanceOf[js.Any])
     if (smoothMonotone != null) __obj.updateDynamic("smoothMonotone")(smoothMonotone.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbolKeepAspect)) __obj.updateDynamic("symbolKeepAspect")(symbolKeepAspect.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolKeepAspect)) __obj.updateDynamic("symbolKeepAspect")(symbolKeepAspect.get.asInstanceOf[js.Any])
     if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset.asInstanceOf[js.Any])
-    if (symbolRotate != null) __obj.updateDynamic("symbolRotate")(symbolRotate.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolRotate)) __obj.updateDynamic("symbolRotate")(symbolRotate.get.asInstanceOf[js.Any])
     if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (xAxisIndex != null) __obj.updateDynamic("xAxisIndex")(xAxisIndex.asInstanceOf[js.Any])
-    if (yAxisIndex != null) __obj.updateDynamic("yAxisIndex")(yAxisIndex.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
-    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(xAxisIndex)) __obj.updateDynamic("xAxisIndex")(xAxisIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yAxisIndex)) __obj.updateDynamic("yAxisIndex")(yAxisIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zlevel)) __obj.updateDynamic("zlevel")(zlevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesLine_]
   }
 }

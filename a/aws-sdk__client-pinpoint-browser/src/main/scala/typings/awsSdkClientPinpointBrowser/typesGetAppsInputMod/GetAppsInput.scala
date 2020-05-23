@@ -40,14 +40,14 @@ object GetAppsInput {
   def apply(
     $abortSignal: AbortSignal = null,
     $httpOptions: BrowserHttpOptions = null,
-    $maxRetries: Int | Double = null,
+    $maxRetries: js.UndefOr[Double] = js.undefined,
     PageSize: String = null,
     Token: String = null
   ): GetAppsInput = {
     val __obj = js.Dynamic.literal()
     if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
     if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
-    if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined($maxRetries)) __obj.updateDynamic("$maxRetries")($maxRetries.get.asInstanceOf[js.Any])
     if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
     if (Token != null) __obj.updateDynamic("Token")(Token.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAppsInput]

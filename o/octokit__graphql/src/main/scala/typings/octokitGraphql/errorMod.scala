@@ -1,7 +1,7 @@
 package typings.octokitGraphql
 
-import typings.octokitGraphql.typesMod.EndpointOptions
-import typings.octokitGraphql.typesMod.GraphQlQueryResponse
+import typings.octokitGraphql.anon.Data
+import typings.octokitGraphql.typesMod.GraphQlEndpointOptions
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object errorMod extends js.Object {
   @js.native
-  class GraphqlError[T /* <: GraphQlQueryResponse */] protected () extends Error {
-    def this(request: EndpointOptions, response: AnonData) = this()
+  class GraphqlError[ResponseData] protected () extends Error {
+    def this(request: GraphQlEndpointOptions, response: Data[ResponseData]) = this()
     /* CompleteClass */
     override var message: String = js.native
     /* CompleteClass */
     override var name: String = js.native
-    var request: EndpointOptions = js.native
+    var request: GraphQlEndpointOptions = js.native
   }
   
 }

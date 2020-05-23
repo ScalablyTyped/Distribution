@@ -14,9 +14,9 @@ trait SigninOptions extends js.Object {
     */
   var app_package_name: js.UndefOr[String] = js.undefined
   /**
-    * 	Fetch users' basic profile information when they sign in.
-    * 	Adds 'profile', 'email' and 'openid' to the requested scopes.
-    * 	True if unspecified.
+    *     Fetch users' basic profile information when they sign in.
+    *     Adds 'profile', 'email' and 'openid' to the requested scopes.
+    *     True if unspecified.
     */
   var fetch_basic_profile: js.UndefOr[Boolean] = js.undefined
   /**
@@ -63,7 +63,7 @@ object SigninOptions {
   ): SigninOptions = {
     val __obj = js.Dynamic.literal()
     if (app_package_name != null) __obj.updateDynamic("app_package_name")(app_package_name.asInstanceOf[js.Any])
-    if (!js.isUndefined(fetch_basic_profile)) __obj.updateDynamic("fetch_basic_profile")(fetch_basic_profile.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetch_basic_profile)) __obj.updateDynamic("fetch_basic_profile")(fetch_basic_profile.get.asInstanceOf[js.Any])
     if (login_hint != null) __obj.updateDynamic("login_hint")(login_hint.asInstanceOf[js.Any])
     if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
     if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])

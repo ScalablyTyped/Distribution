@@ -11,10 +11,10 @@ trait RequestAllConfig extends js.Object {
 
 object RequestAllConfig {
   @scala.inline
-  def apply(concurrency: Int | Double = null, delay: Int | Double = null): RequestAllConfig = {
+  def apply(concurrency: js.UndefOr[Double] = js.undefined, delay: js.UndefOr[Double] = js.undefined): RequestAllConfig = {
     val __obj = js.Dynamic.literal()
-    if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(concurrency)) __obj.updateDynamic("concurrency")(concurrency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestAllConfig]
   }
 }

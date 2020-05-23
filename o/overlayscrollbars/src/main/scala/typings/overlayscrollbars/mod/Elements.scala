@@ -1,6 +1,6 @@
 package typings.overlayscrollbars.mod
 
-import typings.overlayscrollbars.AnonHandle
+import typings.overlayscrollbars.anon.Handle
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,8 +11,8 @@ trait Elements extends js.Object {
   var host: HTMLElement
   var padding: HTMLElement
   var scrollbarCorner: HTMLElement
-  var scrollbarHorizontal: AnonHandle
-  var scrollbarVertical: AnonHandle
+  var scrollbarHorizontal: Handle
+  var scrollbarVertical: Handle
   var target: HTMLElement
   var viewport: HTMLElement
 }
@@ -24,8 +24,8 @@ object Elements {
     host: HTMLElement,
     padding: HTMLElement,
     scrollbarCorner: HTMLElement,
-    scrollbarHorizontal: AnonHandle,
-    scrollbarVertical: AnonHandle,
+    scrollbarHorizontal: Handle,
+    scrollbarVertical: Handle,
     target: HTMLElement,
     viewport: HTMLElement
   ): Elements = {

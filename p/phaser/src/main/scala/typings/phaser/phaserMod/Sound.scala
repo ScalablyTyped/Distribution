@@ -25,12 +25,7 @@ object Sound extends js.Object {
   }
   
   /**
-    * The sound manager is responsible for playing back audio via Web Audio API or HTML Audio tag as fallback.
-    * The audio file type and the encoding of those files are extremely important.
-    * 
-    * Not all browsers can play all audio formats.
-    * 
-    * There is a good guide to what's supported [here](https://developer.mozilla.org/en-US/Apps/Fundamentals/Audio_and_video_delivery/Cross-browser_audio_basics#Audio_Codec_Support).
+    * Base class for other Sound Manager classes.
     */
   @js.native
   class BaseSoundManager protected ()
@@ -93,16 +88,16 @@ object Sound extends js.Object {
   }
   
   /**
-    * No audio implementation of the sound manager. It is used if audio has been
+    * No-audio implementation of the Sound Manager. It is used if audio has been
     * disabled in the game config or the device doesn't support any audio.
     * 
-    * It represents a graceful degradation of sound manager logic that provides
+    * It represents a graceful degradation of Sound Manager logic that provides
     * minimal functionality and prevents Phaser projects that use audio from
     * breaking on devices that don't support any audio playback technologies.
     */
   @js.native
   class NoAudioSoundManager protected ()
-    extends typings.phaser.Phaser.Sound.NoAudioSoundManager {
+    extends typings.phaser.Phaser.Sound.BaseSoundManager {
     /**
       * 
       * @param game Reference to the current game instance.
@@ -127,7 +122,11 @@ object Sound extends js.Object {
   }
   
   /**
-    * Web Audio API implementation of the sound manager.
+    * Web Audio API implementation of the Sound Manager.
+    * 
+    * Not all browsers can play all audio formats.
+    * 
+    * There is a good guide to what's supported: [Cross-browser audio basics: Audio codec support](https://developer.mozilla.org/en-US/Apps/Fundamentals/Audio_and_video_delivery/Cross-browser_audio_basics#Audio_Codec_Support).
     */
   @js.native
   class WebAudioSoundManager protected ()

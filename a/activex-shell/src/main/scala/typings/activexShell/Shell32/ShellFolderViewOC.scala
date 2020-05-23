@@ -14,12 +14,19 @@ import scala.scalajs.js.annotation._
   * **ShellFolderViewOC** object by calling **SetFolderView**. Then, when an **EnumDone** or **SelectionChanged** event is fired, the **ShellFolderViewOC** object
   * forwards the event to its own handler for processing.
   */
-@JSGlobal("Shell32.ShellFolderViewOC")
-@js.native
-class ShellFolderViewOC protected () extends js.Object {
+trait ShellFolderViewOC extends js.Object {
   @JSName("Shell32.ShellFolderViewOC_typekey")
-  var Shell32DotShellFolderViewOC_typekey: ShellFolderViewOC = js.native
+  var Shell32DotShellFolderViewOC_typekey: ShellFolderViewOC
   /** Set the ShellFolderView object to monitor events of. */
-  def SetFolderView(pdisp: ShellFolderView): Unit = js.native
+  def SetFolderView(pdisp: ShellFolderView): Unit
+}
+
+object ShellFolderViewOC {
+  @scala.inline
+  def apply(SetFolderView: ShellFolderView => Unit, Shell32DotShellFolderViewOC_typekey: ShellFolderViewOC): ShellFolderViewOC = {
+    val __obj = js.Dynamic.literal(SetFolderView = js.Any.fromFunction1(SetFolderView))
+    __obj.updateDynamic("Shell32.ShellFolderViewOC_typekey")(Shell32DotShellFolderViewOC_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ShellFolderViewOC]
+  }
 }
 

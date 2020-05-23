@@ -53,6 +53,12 @@ package object dataexchangeMod {
   */
   type Origin = typings.awsSdk.dataexchangeMod._Origin | java.lang.String
   /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.awsColonkms
+    - typings.awsSdk.awsSdkStrings.AES256
+    - java.lang.String
+  */
+  type ServerSideEncryptionTypes = typings.awsSdk.dataexchangeMod._ServerSideEncryptionTypes | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.WAITING
     - typings.awsSdk.awsSdkStrings.IN_PROGRESS
     - typings.awsSdk.awsSdkStrings.ERROR

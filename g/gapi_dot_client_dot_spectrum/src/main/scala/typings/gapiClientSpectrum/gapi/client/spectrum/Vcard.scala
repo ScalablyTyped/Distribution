@@ -12,7 +12,8 @@ trait Vcard extends js.Object {
   /** The full name of the contact person. For example: John A. Smith. */
   var fn: js.UndefOr[String] = js.undefined
   /** The organization associated with the registering entity. */
-  var org: js.UndefOr[VcardTypedText] = js.undefined
+  @JSName("org")
+  var org_ : js.UndefOr[VcardTypedText] = js.undefined
   /** A telephone number that can be used to call the contact. */
   var tel: js.UndefOr[VcardTelephone] = js.undefined
 }
@@ -23,14 +24,14 @@ object Vcard {
     adr: VcardAddress = null,
     email: VcardTypedText = null,
     fn: String = null,
-    org: VcardTypedText = null,
+    org_ : VcardTypedText = null,
     tel: VcardTelephone = null
   ): Vcard = {
     val __obj = js.Dynamic.literal()
     if (adr != null) __obj.updateDynamic("adr")(adr.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
     if (fn != null) __obj.updateDynamic("fn")(fn.asInstanceOf[js.Any])
-    if (org != null) __obj.updateDynamic("org")(org.asInstanceOf[js.Any])
+    if (org_ != null) __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     if (tel != null) __obj.updateDynamic("tel")(tel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Vcard]
   }

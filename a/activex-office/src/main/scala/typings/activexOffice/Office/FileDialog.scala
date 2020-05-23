@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.FileDialog")
 @js.native
-class FileDialog protected () extends js.Object {
+trait FileDialog extends js.Object {
   var AllowMultiSelect: Boolean = js.native
   val Application: js.Any = js.native
   var ButtonName: String = js.native

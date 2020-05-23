@@ -4,19 +4,35 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AlignmentPattern")
-@js.native
-class AlignmentPattern protected () extends js.Object {
-  def this(posX: Double, posY: Double, estimatedModuleSize: Double) = this()
-  val Count: Double = js.native
-  val EstimatedModuleSize: Double = js.native
-  val X: Double = js.native
-  val Y: Double = js.native
-  var count: Double = js.native
-  var estimatedModuleSize: Double = js.native
-  var x: Double = js.native
-  var y: Double = js.native
-  def aboutEquals(moduleSize: Double, i: Double, j: Double): Boolean = js.native
-  def incrementCount(): Unit = js.native
+trait AlignmentPattern extends js.Object {
+  val Count: Double
+  val EstimatedModuleSize: Double
+  val X: Double
+  val Y: Double
+  var count: Double
+  var estimatedModuleSize: Double
+  var x: Double
+  var y: Double
+  def aboutEquals(moduleSize: Double, i: Double, j: Double): Boolean
+  def incrementCount(): Unit
+}
+
+object AlignmentPattern {
+  @scala.inline
+  def apply(
+    Count: Double,
+    EstimatedModuleSize: Double,
+    X: Double,
+    Y: Double,
+    aboutEquals: (Double, Double, Double) => Boolean,
+    count: Double,
+    estimatedModuleSize: Double,
+    incrementCount: () => Unit,
+    x: Double,
+    y: Double
+  ): AlignmentPattern = {
+    val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], EstimatedModuleSize = EstimatedModuleSize.asInstanceOf[js.Any], X = X.asInstanceOf[js.Any], Y = Y.asInstanceOf[js.Any], aboutEquals = js.Any.fromFunction3(aboutEquals), count = count.asInstanceOf[js.Any], estimatedModuleSize = estimatedModuleSize.asInstanceOf[js.Any], incrementCount = js.Any.fromFunction0(incrementCount), x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AlignmentPattern]
+  }
 }
 

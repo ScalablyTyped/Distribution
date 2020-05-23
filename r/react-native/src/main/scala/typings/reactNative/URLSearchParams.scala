@@ -1,7 +1,6 @@
 package typings.reactNative
 
 import typings.std.IterableIterator
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,13 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Based on definitions of lib.dom and  lib.dom.iteralbe
   */
-@JSGlobal("URLSearchParams")
 @js.native
-class URLSearchParams () extends js.Object {
-  def this(init: String) = this()
-  def this(init: js.Array[js.Array[String]]) = this()
-  def this(init: URLSearchParams) = this()
-  def this(init: Record[String, String]) = this()
+trait URLSearchParams extends js.Object {
   @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[js.Tuple2[String, String]]] = js.native
   def append(name: String, value: String): Unit = js.native

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "tough-cookie-file-store"
-version := "1.2-dt-20200331Z-907f05"
-scalaVersion := "2.13.1"
+version := "2.0-dt-20200515Z-d83c74"
+scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.8-9b2470",
-  "org.scalablytyped" %%% "tough-cookie" % "4.0-dt-20200331Z-cf9c87")
+  "org.scalablytyped" %%% "std" % "3.9-18cbeb",
+  "org.scalablytyped" %%% "tough-cookie" % "4.0-dt-20200515Z-ec5ef6")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

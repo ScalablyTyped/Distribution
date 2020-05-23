@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.ShapeFontData
 import typings.officeJs.Excel.Interfaces.ShapeFontLoadOptions
 import typings.officeJs.Excel.Interfaces.ShapeFontUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.Dash
 import typings.officeJs.officeJsStrings.DashHeavy
 import typings.officeJs.officeJsStrings.DashLong
@@ -32,9 +32,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
-@JSGlobal("Excel.ShapeFont")
 @js.native
-class ShapeFont () extends ClientObject {
+trait ShapeFont extends ClientObject {
   /**
     *
     * Represents the bold status of font. Returns null the TextRange includes both bold and non-bold text fragments.
@@ -44,7 +43,7 @@ class ShapeFont () extends ClientObject {
   var bold: Boolean = js.native
   /**
     *
-    * The HTML color code representation of the text color (e.g. "#FF0000" represents red). Returns null if the TextRange includes text fragments with different colors.
+    * HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns null if the TextRange includes text fragments with different colors.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -61,14 +60,14 @@ class ShapeFont () extends ClientObject {
   var italic: Boolean = js.native
   /**
     *
-    * Represents font name (e.g. "Calibri"). If the text is Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
+    * Represents font name (e.g., "Calibri"). If the text is Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
     *
     * [Api set: ExcelApi 1.9]
     */
   var name: String = js.native
   /**
     *
-    * Represents font size in points (e.g. 11). Returns null if the TextRange includes text fragments with different font sizes.
+    * Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different font sizes.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -87,7 +86,7 @@ class ShapeFont () extends ClientObject {
     */
   def load(): ShapeFont = js.native
   def load(options: ShapeFontLoadOptions): ShapeFont = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ShapeFont = js.native
+  def load(propertyNamesAndPaths: Expand): ShapeFont = js.native
   def load(propertyNames: String): ShapeFont = js.native
   def load(propertyNames: js.Array[String]): ShapeFont = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.

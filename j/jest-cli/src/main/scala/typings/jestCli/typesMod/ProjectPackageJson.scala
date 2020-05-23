@@ -1,6 +1,6 @@
 package typings.jestCli.typesMod
 
-import typings.jestCli.PartialInitialOptions
+import typings.jestCli.anon.PartialInitialOptions
 import typings.jestCli.jestCliStrings.commonjs
 import typings.jestCli.jestCliStrings.module
 import typings.std.Record

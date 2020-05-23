@@ -4,16 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.base.ObjectPool")
 @js.native
-class ObjectPool protected () extends Object {
-  /**
-    * Creates an ObjectPool instance based on the given oObjectClass.&lt;br/&gt;If there is a free pooled
-    * instance, returns that one, otherwise creates a new one.&lt;br/&gt;In order to be maintained by the
-    * ObjectPool, oObjectClass must implementmethods described in the class description.
-    * @param oObjectClass constructor for the class of objects that this pool should manage
-    */
-  def this(oObjectClass: js.Any) = this()
+trait ObjectPool extends Object {
   /**
     * Borrows a free object from the pool. Any arguments to this methodare forwarded to the init method of
     * the borrowed object.

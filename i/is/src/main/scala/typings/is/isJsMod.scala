@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("is_js", JSImport.Namespace)
 @js.native
-object isJsMod extends TopLevel[Is_]
+object isJsMod extends TopLevel[Is]
 

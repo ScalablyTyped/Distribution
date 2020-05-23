@@ -72,32 +72,32 @@ trait SequenceDiagramConfig extends js.Object {
 object SequenceDiagramConfig {
   @scala.inline
   def apply(
-    actorMargin: Int | Double = null,
-    bottomMarginAdj: Int | Double = null,
-    boxMargin: Int | Double = null,
-    boxTextMargin: Int | Double = null,
-    diagramMarginX: Int | Double = null,
-    diagramMarginY: Int | Double = null,
-    height: Int | Double = null,
-    messageMargin: Int | Double = null,
+    actorMargin: js.UndefOr[Double] = js.undefined,
+    bottomMarginAdj: js.UndefOr[Double] = js.undefined,
+    boxMargin: js.UndefOr[Double] = js.undefined,
+    boxTextMargin: js.UndefOr[Double] = js.undefined,
+    diagramMarginX: js.UndefOr[Double] = js.undefined,
+    diagramMarginY: js.UndefOr[Double] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
+    messageMargin: js.UndefOr[Double] = js.undefined,
     mirrorActors: js.UndefOr[Boolean] = js.undefined,
-    noteMargin: Int | Double = null,
+    noteMargin: js.UndefOr[Double] = js.undefined,
     useMaxWidth: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): SequenceDiagramConfig = {
     val __obj = js.Dynamic.literal()
-    if (actorMargin != null) __obj.updateDynamic("actorMargin")(actorMargin.asInstanceOf[js.Any])
-    if (bottomMarginAdj != null) __obj.updateDynamic("bottomMarginAdj")(bottomMarginAdj.asInstanceOf[js.Any])
-    if (boxMargin != null) __obj.updateDynamic("boxMargin")(boxMargin.asInstanceOf[js.Any])
-    if (boxTextMargin != null) __obj.updateDynamic("boxTextMargin")(boxTextMargin.asInstanceOf[js.Any])
-    if (diagramMarginX != null) __obj.updateDynamic("diagramMarginX")(diagramMarginX.asInstanceOf[js.Any])
-    if (diagramMarginY != null) __obj.updateDynamic("diagramMarginY")(diagramMarginY.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (messageMargin != null) __obj.updateDynamic("messageMargin")(messageMargin.asInstanceOf[js.Any])
-    if (!js.isUndefined(mirrorActors)) __obj.updateDynamic("mirrorActors")(mirrorActors.asInstanceOf[js.Any])
-    if (noteMargin != null) __obj.updateDynamic("noteMargin")(noteMargin.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMaxWidth)) __obj.updateDynamic("useMaxWidth")(useMaxWidth.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(actorMargin)) __obj.updateDynamic("actorMargin")(actorMargin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bottomMarginAdj)) __obj.updateDynamic("bottomMarginAdj")(bottomMarginAdj.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(boxMargin)) __obj.updateDynamic("boxMargin")(boxMargin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(boxTextMargin)) __obj.updateDynamic("boxTextMargin")(boxTextMargin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(diagramMarginX)) __obj.updateDynamic("diagramMarginX")(diagramMarginX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(diagramMarginY)) __obj.updateDynamic("diagramMarginY")(diagramMarginY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(messageMargin)) __obj.updateDynamic("messageMargin")(messageMargin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mirrorActors)) __obj.updateDynamic("mirrorActors")(mirrorActors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noteMargin)) __obj.updateDynamic("noteMargin")(noteMargin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useMaxWidth)) __obj.updateDynamic("useMaxWidth")(useMaxWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SequenceDiagramConfig]
   }
 }

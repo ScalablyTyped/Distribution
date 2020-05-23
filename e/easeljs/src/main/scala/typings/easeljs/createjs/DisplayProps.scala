@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("createjs.DisplayProps")
 @js.native
-class DisplayProps () extends js.Object {
-  def this(visible: Double) = this()
-  def this(visible: Double, alpha: Double) = this()
-  def this(visible: Double, alpha: Double, shadow: Double) = this()
-  def this(visible: Double, alpha: Double, shadow: Double, compositeOperation: Double) = this()
-  def this(visible: Double, alpha: Double, shadow: Double, compositeOperation: Double, matrix: Double) = this()
+trait DisplayProps extends js.Object {
   // properties
   var alpha: Double = js.native
   var compositeOperation: String = js.native

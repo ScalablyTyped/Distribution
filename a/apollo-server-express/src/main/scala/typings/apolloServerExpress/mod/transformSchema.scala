@@ -1,7 +1,7 @@
 package typings.apolloServerExpress.mod
 
 import typings.graphql.mod.GraphQLSchema
-import typings.graphqlTools.GraphQLSchematransformsAr
+import typings.graphqlTools.anon.GraphQLSchematransformsAr
 import typings.graphqlTools.interfacesMod.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`

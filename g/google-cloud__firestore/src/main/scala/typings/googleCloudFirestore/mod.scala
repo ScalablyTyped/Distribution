@@ -31,11 +31,28 @@ object mod extends js.Object {
       * @param fieldNames A list of field names.
       */
     def this(fieldNames: String*) = this()
+    /**
+      * Returns true if this `FieldPath` is equal to the provided one.
+      *
+      * @param other The `FieldPath` to compare against.
+      * @return true if this `FieldPath` is equal to the provided one.
+      */
+    /* CompleteClass */
+    override def isEqual(other: typings.googleCloudFirestore.FirebaseFirestore.FieldPath): Boolean = js.native
   }
   
   @js.native
   class FieldValue protected ()
-    extends typings.googleCloudFirestore.FirebaseFirestore.FieldValue
+    extends typings.googleCloudFirestore.FirebaseFirestore.FieldValue {
+    /**
+      * Returns true if this `FieldValue` is equal to the provided one.
+      *
+      * @param other The `FieldValue` to compare against.
+      * @return true if this `FieldValue` is equal to the provided one.
+      */
+    /* CompleteClass */
+    override def isEqual(other: typings.googleCloudFirestore.FirebaseFirestore.FieldValue): Boolean = js.native
+  }
   
   @js.native
   /**
@@ -57,6 +74,18 @@ object mod extends js.Object {
       * @param longitude The longitude as number between -180 and 180.
       */
     def this(latitude: Double, longitude: Double) = this()
+    /* CompleteClass */
+    override val latitude: Double = js.native
+    /* CompleteClass */
+    override val longitude: Double = js.native
+    /**
+      * Returns true if this `GeoPoint` is equal to the provided one.
+      *
+      * @param other The `GeoPoint` to compare against.
+      * @return true if this `GeoPoint` is equal to the provided one.
+      */
+    /* CompleteClass */
+    override def isEqual(other: typings.googleCloudFirestore.FirebaseFirestore.GeoPoint): Boolean = js.native
   }
   
   @js.native
@@ -86,6 +115,39 @@ object mod extends js.Object {
       * 0 to 999,999,999 inclusive.
       */
     def this(seconds: Double, nanoseconds: Double) = this()
+    /** The non-negative fractions of a second at nanosecond resolution. */
+    /* CompleteClass */
+    override val nanoseconds: Double = js.native
+    /**
+      * The number of seconds of UTC time since Unix epoch 1970-01-01T00:00:00Z.
+      */
+    /* CompleteClass */
+    override val seconds: Double = js.native
+    /**
+      * Returns true if this `Timestamp` is equal to the provided one.
+      *
+      * @param other The `Timestamp` to compare against.
+      * @return 'true' if this `Timestamp` is equal to the provided one.
+      */
+    /* CompleteClass */
+    override def isEqual(other: typings.googleCloudFirestore.FirebaseFirestore.Timestamp): Boolean = js.native
+    /**
+      * Returns a new `Date` corresponding to this timestamp. This may lose
+      * precision.
+      *
+      * @return JavaScript `Date` object representing the same point in time as
+      * this `Timestamp`, with millisecond precision.
+      */
+    /* CompleteClass */
+    override def toDate(): Date = js.native
+    /**
+      * Returns the number of milliseconds since Unix epoch 1970-01-01T00:00:00Z.
+      *
+      * @return The point in time corresponding to this timestamp, represented as
+      * the number of milliseconds since Unix epoch 1970-01-01T00:00:00Z.
+      */
+    /* CompleteClass */
+    override def toMillis(): Double = js.native
   }
   
   @js.native
@@ -98,7 +160,21 @@ object mod extends js.Object {
   
   @js.native
   class WriteResult protected ()
-    extends typings.googleCloudFirestore.FirebaseFirestore.WriteResult
+    extends typings.googleCloudFirestore.FirebaseFirestore.WriteResult {
+    /**
+      * The write time as set by the Firestore servers.
+      */
+    /* CompleteClass */
+    override val writeTime: typings.googleCloudFirestore.FirebaseFirestore.Timestamp = js.native
+    /**
+      * Returns true if this `WriteResult` is equal to the provided one.
+      *
+      * @param other The `WriteResult` to compare against.
+      * @return true if this `WriteResult` is equal to the provided one.
+      */
+    /* CompleteClass */
+    override def isEqual(other: typings.googleCloudFirestore.FirebaseFirestore.WriteResult): Boolean = js.native
+  }
   
   val v1beta1: js.Any = js.native
   def setLogFunction(): Unit = js.native

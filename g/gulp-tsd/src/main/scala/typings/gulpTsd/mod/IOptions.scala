@@ -22,7 +22,7 @@ object IOptions {
     val __obj = js.Dynamic.literal()
     if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (!js.isUndefined(latest)) __obj.updateDynamic("latest")(latest.asInstanceOf[js.Any])
+    if (!js.isUndefined(latest)) __obj.updateDynamic("latest")(latest.get.asInstanceOf[js.Any])
     if (opts != null) __obj.updateDynamic("opts")(opts.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }

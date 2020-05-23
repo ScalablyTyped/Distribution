@@ -24,12 +24,12 @@ object DescribeConformancePackStatusRequest {
   @scala.inline
   def apply(
     ConformancePackNames: ConformancePackNamesList = null,
-    Limit: Int | Double = null,
+    Limit: js.UndefOr[PageSizeLimit] = js.undefined,
     NextToken: NextToken = null
   ): DescribeConformancePackStatusRequest = {
     val __obj = js.Dynamic.literal()
     if (ConformancePackNames != null) __obj.updateDynamic("ConformancePackNames")(ConformancePackNames.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeConformancePackStatusRequest]
   }

@@ -25,22 +25,22 @@ trait PlusNativeObjAnimationOptions extends js.Object {
   /**
     * 动画类型
     * 可取值：
-    * 	"pop-in" - 从右侧平移入栈动画效果（副窗口从右侧向左平移滑出显示，主窗口从当前屏幕区域向左侧平移滑出被遮盖），如果仅传入一个View控件对象则自动降级为slide-in-right动画；
-    * 	"pop-out" - 从右侧平移出栈动画效果（副窗口从当前屏幕区域向右侧平移出可视区域，主窗口从左侧向右平移滑出显示），如果仅出入一个View控件对象则自动降级为slide-out-right动画；
-    * 	"slide-in-right" - 从右侧横向滑动效果（主窗口从当前屏幕右侧外向内横向滑动显示）；
-    * 	"slide-out-right - 横向向右侧滑出屏幕动画（主窗口从屏幕中横向向右侧滑动到屏幕外）。
+    *     "pop-in" - 从右侧平移入栈动画效果（副窗口从右侧向左平移滑出显示，主窗口从当前屏幕区域向左侧平移滑出被遮盖），如果仅传入一个View控件对象则自动降级为slide-in-right动画；
+    *     "pop-out" - 从右侧平移出栈动画效果（副窗口从当前屏幕区域向右侧平移出可视区域，主窗口从左侧向右平移滑出显示），如果仅出入一个View控件对象则自动降级为slide-out-right动画；
+    *     "slide-in-right" - 从右侧横向滑动效果（主窗口从当前屏幕右侧外向内横向滑动显示）；
+    *     "slide-out-right - 横向向右侧滑出屏幕动画（主窗口从屏幕中横向向右侧滑动到屏幕外）。
     * - pop-in: 
-    * 	从右侧平移入栈动画效果（副窗口从右侧向左平移滑出显示，主窗口从当前屏幕区域向左侧平移滑出被遮盖）。
-    * 								
+    *     从右侧平移入栈动画效果（副窗口从右侧向左平移滑出显示，主窗口从当前屏幕区域向左侧平移滑出被遮盖）。
+    *                                 
     * - pop-out: 
-    * 	从右侧平移出栈动画效果（副窗口从当前屏幕区域向右侧平移出可视区域，主窗口从左侧向右平移滑出显示）。
-    * 								
+    *     从右侧平移出栈动画效果（副窗口从当前屏幕区域向右侧平移出可视区域，主窗口从左侧向右平移滑出显示）。
+    *                                 
     * - slide-in-right: 
-    * 	从右侧横向滑动效果（主窗口从当前屏幕右侧外向内横向滑动显示）。
-    * 								
+    *     从右侧横向滑动效果（主窗口从当前屏幕右侧外向内横向滑动显示）。
+    *                                 
     * - slide-out-right: 
-    * 	横向向右侧滑出屏幕动画（主窗口从屏幕中横向向右侧滑动到屏幕外）。
-    * 								
+    *     横向向右侧滑出屏幕动画（主窗口从屏幕中横向向右侧滑动到屏幕外）。
+    *                                 
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -50,11 +50,11 @@ trait PlusNativeObjAnimationOptions extends js.Object {
 object PlusNativeObjAnimationOptions {
   @scala.inline
   def apply(
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     `type`: `pop-in` | `pop-out` | `slide-in-right` | `slide-out-right` = null
   ): PlusNativeObjAnimationOptions = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeObjAnimationOptions]
   }

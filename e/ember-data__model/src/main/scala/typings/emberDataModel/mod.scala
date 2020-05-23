@@ -4,7 +4,7 @@ import typings.ember.mod.Ember.Array
 import typings.ember.mod.Ember.NativeArray
 import typings.ember.mod.default.ComputedProperty
 import typings.ember.mod.default.Map
-import typings.emberData.TypeofModel
+import typings.emberData.anon.TypeofModel
 import typings.emberData.mod.AttributeMeta
 import typings.emberData.mod.DS.Async
 import typings.emberData.mod.DS.AttrOptions

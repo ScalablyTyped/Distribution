@@ -1,6 +1,6 @@
 package typings.sjcl.mod
 
-import typings.sjcl.AnonC192
+import typings.sjcl.anon.C192
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait SjclEllipticCurveCryptography extends js.Object {
   var basicKey: SjclECCBasic = js.native
   var curve: SjclEllipticalCurveStatic = js.native
-  var curves: AnonC192 = js.native
+  var curves: C192 = js.native
   var ecdsa: SjclECDSA = js.native
   var elGamal: SjclElGamal = js.native
   var point: SjclEllipticalPointStatic = js.native

@@ -1,6 +1,6 @@
 package typings.reactWebcam.mod
 
-import typings.reactWebcam.AnonAudio
+import typings.reactWebcam.anon.Audio
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class default protected () extends Webcam {
 @JSImport("react-webcam", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonAudio = js.native
+  var defaultProps: Audio = js.native
 }
 

@@ -1,5 +1,6 @@
 package typings.typedoc
 
+import typings.typedoc.anon.PickStringLiteralTypetype
 import typings.typedoc.modelsMod.StringLiteralType
 import typings.typedoc.serializationComponentsMod.TypeSerializerComponent
 import scala.scalajs.js

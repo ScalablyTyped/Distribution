@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object seq extends js.Object {
   /**
-  	 * accepts a variable number of parsers that it expects to find in order, yielding an array of the results.
-  	 */
+    * accepts a variable number of parsers that it expects to find in order, yielding an array of the results.
+    */
   def apply[T](p1: Parser[T]): Parser[js.Array[T]] = js.native
   def apply[T /* <: js.Array[_] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param parsers because its type T is not an array type */ parsers: T

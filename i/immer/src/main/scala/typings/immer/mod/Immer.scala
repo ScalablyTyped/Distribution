@@ -1,6 +1,6 @@
 package typings.immer.mod
 
-import typings.immer.AnonAutoFreeze
+import typings.immer.anon.AutoFreeze
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("immer", "Immer")
 @js.native
 class Immer protected () extends js.Object {
-  def this(config: AnonAutoFreeze) = this()
+  def this(config: AutoFreeze) = this()
   /**
     * When true, `produce` will freeze the copies it creates.
     */

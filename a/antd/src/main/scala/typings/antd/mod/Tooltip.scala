@@ -1,24 +1,19 @@
 package typings.antd.mod
 
-import typings.antd.Anon1
-import typings.antd.AnonArrowPointAtCenter
-import typings.antd.tooltipMod.TooltipProps
-import typings.antd.tooltipMod.default
+import org.scalablytyped.runtime.TopLevel
+import typings.antd.tooltipMod.TooltipPropsWithOverlay
+import typings.antd.tooltipMod.TooltipPropsWithTitle
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.RefAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("antd", "Tooltip")
 @js.native
-class Tooltip protected () extends default {
-  def this(props: TooltipProps) = this()
-}
-
-/* static members */
-@JSImport("antd", "Tooltip")
-@js.native
-object Tooltip extends js.Object {
-  var defaultProps: AnonArrowPointAtCenter = js.native
-  def getDerivedStateFromProps(nextProps: TooltipProps): Anon1 | Null = js.native
-}
+object Tooltip extends TopLevel[
+      ForwardRefExoticComponent[
+        (TooltipPropsWithOverlay with RefAttributes[_]) | (TooltipPropsWithTitle with RefAttributes[_])
+      ]
+    ]
 

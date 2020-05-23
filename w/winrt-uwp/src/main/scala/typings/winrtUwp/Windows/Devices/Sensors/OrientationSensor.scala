@@ -10,9 +10,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents an orientation sensor. */
-@JSGlobal("Windows.Devices.Sensors.OrientationSensor")
 @js.native
-abstract class OrientationSensor () extends js.Object {
+trait OrientationSensor extends js.Object {
   /** Gets the device identifier. */
   var deviceId: String = js.native
   /** Gets the minimum report interval supported by the sensor. */
@@ -45,21 +44,5 @@ abstract class OrientationSensor () extends js.Object {
     `type`: readingchanged,
     listener: TypedEventHandler[OrientationSensor, OrientationSensorReadingChangedEventArgs]
   ): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Devices.Sensors.OrientationSensor")
-@js.native
-object OrientationSensor extends js.Object {
-  /**
-    * Gets the default orientation sensor.
-    * @return The default orientation sensor or null if no orientation sensors are found.
-    */
-  def getDefault(): OrientationSensor = js.native
-  /**
-    * Gets the default orientation sensor.
-    * @return The default orientation sensor or null if no orientation sensors are found.
-    */
-  def getDefaultForRelativeReadings(): OrientationSensor = js.native
 }
 

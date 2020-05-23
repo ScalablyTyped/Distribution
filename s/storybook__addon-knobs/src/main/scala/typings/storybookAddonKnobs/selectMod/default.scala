@@ -3,8 +3,8 @@ package typings.storybookAddonKnobs.selectMod
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
-import typings.storybookAddonKnobs.PartialSelectTypePropsSel
-import typings.storybookAddonKnobs.WeakValidationMapSelectTy
+import typings.storybookAddonKnobs.anon.PartialSelectTypePropsSel
+import typings.storybookAddonKnobs.anon.WeakValidationMapSelectTy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

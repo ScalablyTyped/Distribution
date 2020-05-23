@@ -11,9 +11,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.CanvasShapes")
 @js.native
-class CanvasShapes protected () extends js.Object {
+trait CanvasShapes extends js.Object {
   val Application: js.Any = js.native
   val Background: Shape = js.native
   val Count: Double = js.native

@@ -23,11 +23,8 @@ import scala.scalajs.js.annotation._
   * @class
   * @memberof PIXI
   */
-@JSGlobal("PIXI.Geometry")
 @js.native
-class Geometry () extends js.Object {
-  def this(buffers: js.Array[Buffer]) = this()
-  def this(buffers: js.Array[Buffer], attributes: js.Any) = this()
+trait Geometry extends js.Object {
   /**
     * A map of renderer IDs to webgl VAOs
     *
@@ -115,19 +112,5 @@ class Geometry () extends js.Object {
     * @return {PIXI.Geometry} returns self, useful for chaining.
     */
   def interleave(): Geometry = js.native
-}
-
-/* static members */
-@JSGlobal("PIXI.Geometry")
-@js.native
-object Geometry extends js.Object {
-  /**
-    * merges an array of geometries into a new single one
-    * geometry attribute styles must match for this operation to work
-    *
-    * @param {PIXI.Geometry[]} geometries array of geometries to merge
-    * @returns {PIXI.Geometry} shiny new geometry!
-    */
-  def merge(geometries: js.Array[Geometry]): Geometry = js.native
 }
 

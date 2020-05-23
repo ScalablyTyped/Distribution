@@ -52,25 +52,25 @@ object StartJobRunRequest {
   @scala.inline
   def apply(
     JobName: NameString,
-    AllocatedCapacity: Int | Double = null,
+    AllocatedCapacity: js.UndefOr[IntegerValue] = js.undefined,
     Arguments: GenericMap = null,
     JobRunId: IdString = null,
-    MaxCapacity: Int | Double = null,
+    MaxCapacity: js.UndefOr[NullableDouble] = js.undefined,
     NotificationProperty: NotificationProperty = null,
-    NumberOfWorkers: Int | Double = null,
+    NumberOfWorkers: js.UndefOr[NullableInteger] = js.undefined,
     SecurityConfiguration: NameString = null,
-    Timeout: Int | Double = null,
+    Timeout: js.UndefOr[Timeout] = js.undefined,
     WorkerType: WorkerType = null
   ): StartJobRunRequest = {
     val __obj = js.Dynamic.literal(JobName = JobName.asInstanceOf[js.Any])
-    if (AllocatedCapacity != null) __obj.updateDynamic("AllocatedCapacity")(AllocatedCapacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllocatedCapacity)) __obj.updateDynamic("AllocatedCapacity")(AllocatedCapacity.get.asInstanceOf[js.Any])
     if (Arguments != null) __obj.updateDynamic("Arguments")(Arguments.asInstanceOf[js.Any])
     if (JobRunId != null) __obj.updateDynamic("JobRunId")(JobRunId.asInstanceOf[js.Any])
-    if (MaxCapacity != null) __obj.updateDynamic("MaxCapacity")(MaxCapacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxCapacity)) __obj.updateDynamic("MaxCapacity")(MaxCapacity.get.asInstanceOf[js.Any])
     if (NotificationProperty != null) __obj.updateDynamic("NotificationProperty")(NotificationProperty.asInstanceOf[js.Any])
-    if (NumberOfWorkers != null) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfWorkers)) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers.get.asInstanceOf[js.Any])
     if (SecurityConfiguration != null) __obj.updateDynamic("SecurityConfiguration")(SecurityConfiguration.asInstanceOf[js.Any])
-    if (Timeout != null) __obj.updateDynamic("Timeout")(Timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(Timeout)) __obj.updateDynamic("Timeout")(Timeout.get.asInstanceOf[js.Any])
     if (WorkerType != null) __obj.updateDynamic("WorkerType")(WorkerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartJobRunRequest]
   }

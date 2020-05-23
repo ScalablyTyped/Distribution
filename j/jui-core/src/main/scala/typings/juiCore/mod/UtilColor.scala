@@ -8,17 +8,17 @@ trait UtilColor extends js.Object {
   /**
     * convert hsv to rgb
     *
-    * 		color.HSVtoRGB(0,0,1) === #FFFFF === { r : 255, g : 0, b : 0 }
+    *         color.HSVtoRGB(0,0,1) === #FFFFF === { r : 255, g : 0, b : 0 }
     *
     * @param H  hue color number  (min : 0, max : 360)
     * @param S  Saturation number  (min : 0, max : 1)
-    * @param V  Value number 		(min : 0, max : 1 )
+    * @param V  Value number         (min : 0, max : 1 )
     */
   def HSVtoRGB(H: Double, S: Double, V: Double): js.Any
   /**
     * convert rgb to hsv
     *
-    * 		color.RGBtoHSV(0, 0, 255) === { h : 240, s : 1, v : 1 } === '#FFFF00'
+    *         color.RGBtoHSV(0, 0, 255) === { h : 240, s : 1, v : 1 } === '#FFFF00'
     *
     * @param R  red color value
     * @param G  green color value
@@ -59,7 +59,7 @@ trait UtilColor extends js.Object {
   /**
     * create color map
     *
-    * 		var colorList = color.map(['#352a87', '#0f5cdd', '#00b5a6', '#ffc337', '#fdff00'], count)
+    *         var colorList = color.map(['#352a87', '#0f5cdd', '#00b5a6', '#ffc337', '#fdff00'], count)
     *
     * @param count  a divide number
     * @returns converted color list
@@ -68,9 +68,9 @@ trait UtilColor extends js.Object {
   /**
     * parse string to rgb color
     *
-    * 		color.rgb("#FF0000") === { r : 255, g : 0, b : 0 }
+    *         color.rgb("#FF0000") === { r : 255, g : 0, b : 0 }
     *
-    * 		color.rgb("rgb(255, 0, 0)") == { r : 255, g : 0, b : }
+    *         color.rgb("rgb(255, 0, 0)") == { r : 255, g : 0, b : }
     *
     * @param str color string
     * @returns  rgb object
@@ -79,13 +79,13 @@ trait UtilColor extends js.Object {
   /**
     * get color scale
     *
-    * 		var c = color.scale().domain('#FF0000', '#00FF00');
+    *         var c = color.scale().domain('#FF0000', '#00FF00');
     *
-    * 		// get middle color
-    * 		c(0.5)   ==  #808000
+    *         // get middle color
+    *         c(0.5)   ==  #808000
     *
-    * 		// get middle color list
-    * 		c.ticks(20);  // return array ,    [startColor, ......, endColor ]
+    *         // get middle color list
+    *         c.ticks(20);  // return array ,    [startColor, ......, endColor ]
     *
     * @returns scale function
     */

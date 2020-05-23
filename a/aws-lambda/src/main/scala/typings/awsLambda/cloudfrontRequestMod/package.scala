@@ -11,7 +11,7 @@ package object cloudfrontRequestMod {
     typings.awsLambda.cloudfrontRequestMod.CloudFrontRequestResult
   ]
   /* Rewritten from type alias, can be one of: 
-    - `js.undefined`
+    - js.UndefOr[scala.Nothing]
     - scala.Null
     - typings.awsLambda.cloudfrontMod.CloudFrontResultResponse
     - typings.awsLambda.cloudfrontMod.CloudFrontRequest

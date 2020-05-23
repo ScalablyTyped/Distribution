@@ -15,10 +15,13 @@ trait LoopAnimationConfig extends js.Object {
 
 object LoopAnimationConfig {
   @scala.inline
-  def apply(iterations: Int | Double = null, resetBeforeIteration: js.UndefOr[Boolean] = js.undefined): LoopAnimationConfig = {
+  def apply(
+    iterations: js.UndefOr[Double] = js.undefined,
+    resetBeforeIteration: js.UndefOr[Boolean] = js.undefined
+  ): LoopAnimationConfig = {
     val __obj = js.Dynamic.literal()
-    if (iterations != null) __obj.updateDynamic("iterations")(iterations.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetBeforeIteration)) __obj.updateDynamic("resetBeforeIteration")(resetBeforeIteration.asInstanceOf[js.Any])
+    if (!js.isUndefined(iterations)) __obj.updateDynamic("iterations")(iterations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetBeforeIteration)) __obj.updateDynamic("resetBeforeIteration")(resetBeforeIteration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoopAnimationConfig]
   }
 }

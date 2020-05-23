@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Background
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object AlarmAccessStatus extends js.Object {
   /** The user has not responded to a permission request for the app to set alarms. */
   @js.native
   sealed trait unspecified extends AlarmAccessStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AlarmAccessStatus with Double] = js.native
-  /* 1 */ @js.native
-  object allowedWithWakeupCapability extends TopLevel[allowedWithWakeupCapability with Double]
-  
-  /* 2 */ @js.native
-  object allowedWithoutWakeupCapability extends TopLevel[allowedWithoutWakeupCapability with Double]
-  
-  /* 3 */ @js.native
-  object denied extends TopLevel[denied with Double]
-  
-  /* 0 */ @js.native
-  object unspecified extends TopLevel[unspecified with Double]
   
 }
 

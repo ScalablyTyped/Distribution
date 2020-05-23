@@ -91,7 +91,7 @@ object Host {
     HostRecovery: HostRecovery = null,
     HostReservationId: String = null,
     Instances: HostInstanceList = null,
-    MemberOfServiceLinkedResourceGroup: js.UndefOr[scala.Boolean] = js.undefined,
+    MemberOfServiceLinkedResourceGroup: js.UndefOr[Boolean] = js.undefined,
     OwnerId: String = null,
     ReleaseTime: DateTime = null,
     State: AllocationState = null,
@@ -110,7 +110,7 @@ object Host {
     if (HostRecovery != null) __obj.updateDynamic("HostRecovery")(HostRecovery.asInstanceOf[js.Any])
     if (HostReservationId != null) __obj.updateDynamic("HostReservationId")(HostReservationId.asInstanceOf[js.Any])
     if (Instances != null) __obj.updateDynamic("Instances")(Instances.asInstanceOf[js.Any])
-    if (!js.isUndefined(MemberOfServiceLinkedResourceGroup)) __obj.updateDynamic("MemberOfServiceLinkedResourceGroup")(MemberOfServiceLinkedResourceGroup.asInstanceOf[js.Any])
+    if (!js.isUndefined(MemberOfServiceLinkedResourceGroup)) __obj.updateDynamic("MemberOfServiceLinkedResourceGroup")(MemberOfServiceLinkedResourceGroup.get.asInstanceOf[js.Any])
     if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
     if (ReleaseTime != null) __obj.updateDynamic("ReleaseTime")(ReleaseTime.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])

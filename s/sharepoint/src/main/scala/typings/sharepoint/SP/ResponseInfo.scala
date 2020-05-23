@@ -27,7 +27,7 @@ object ResponseInfo {
     contentType: String = null,
     headers: StringDictionary[String] = null,
     state: js.Any = null,
-    statusCode: Int | Double = null,
+    statusCode: js.UndefOr[Double] = js.undefined,
     statusText: String = null
   ): ResponseInfo = {
     val __obj = js.Dynamic.literal(responseAvailable = responseAvailable.asInstanceOf[js.Any])
@@ -36,7 +36,7 @@ object ResponseInfo {
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusCode)) __obj.updateDynamic("statusCode")(statusCode.get.asInstanceOf[js.Any])
     if (statusText != null) __obj.updateDynamic("statusText")(statusText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseInfo]
   }

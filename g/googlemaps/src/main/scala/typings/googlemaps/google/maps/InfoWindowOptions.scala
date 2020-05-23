@@ -52,18 +52,18 @@ object InfoWindowOptions {
   def apply(
     content: String | Node = null,
     disableAutoPan: js.UndefOr[Boolean] = js.undefined,
-    maxWidth: Int | Double = null,
+    maxWidth: js.UndefOr[Double] = js.undefined,
     pixelOffset: Size = null,
     position: LatLng | LatLngLiteral = null,
-    zIndex: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined
   ): InfoWindowOptions = {
     val __obj = js.Dynamic.literal()
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableAutoPan)) __obj.updateDynamic("disableAutoPan")(disableAutoPan.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableAutoPan)) __obj.updateDynamic("disableAutoPan")(disableAutoPan.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
     if (pixelOffset != null) __obj.updateDynamic("pixelOffset")(pixelOffset.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InfoWindowOptions]
   }
 }

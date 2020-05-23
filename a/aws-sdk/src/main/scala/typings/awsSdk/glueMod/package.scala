@@ -80,6 +80,7 @@ package object glueMod {
     - typings.awsSdk.awsSdkStrings.SKIP_CUSTOM_JDBC_CERT_VALIDATION
     - typings.awsSdk.awsSdkStrings.CUSTOM_JDBC_CERT_STRING
     - typings.awsSdk.awsSdkStrings.CONNECTION_URL
+    - typings.awsSdk.awsSdkStrings.KAFKA_BOOTSTRAP_SERVERS
     - java.lang.String
   */
   type ConnectionPropertyKey = typings.awsSdk.glueMod._ConnectionPropertyKey | java.lang.String
@@ -87,14 +88,16 @@ package object glueMod {
     - typings.awsSdk.awsSdkStrings.JDBC
     - typings.awsSdk.awsSdkStrings.SFTP
     - typings.awsSdk.awsSdkStrings.MONGODB
+    - typings.awsSdk.awsSdkStrings.KAFKA
     - java.lang.String
   */
   type ConnectionType = typings.awsSdk.glueMod._ConnectionType | java.lang.String
   type CrawlList = js.Array[typings.awsSdk.glueMod.Crawl]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.RUNNING
-    - typings.awsSdk.awsSdkStrings.SUCCEEDED
+    - typings.awsSdk.awsSdkStrings.CANCELLING
     - typings.awsSdk.awsSdkStrings.CANCELLED
+    - typings.awsSdk.awsSdkStrings.SUCCEEDED
     - typings.awsSdk.awsSdkStrings.FAILED
     - java.lang.String
   */
@@ -443,6 +446,8 @@ package object glueMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.RUNNING
     - typings.awsSdk.awsSdkStrings.COMPLETED
+    - typings.awsSdk.awsSdkStrings.STOPPING
+    - typings.awsSdk.awsSdkStrings.STOPPED
     - java.lang.String
   */
   type WorkflowRunStatus = typings.awsSdk.glueMod._WorkflowRunStatus | java.lang.String

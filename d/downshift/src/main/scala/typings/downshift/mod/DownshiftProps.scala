@@ -76,21 +76,21 @@ object DownshiftProps {
   @scala.inline
   def apply[Item](
     children: /* options */ ControllerStateAndHelpers[Item] => ReactNode = null,
-    defaultHighlightedIndex: Int | Double = null,
+    defaultHighlightedIndex: js.UndefOr[Null | Double] = js.undefined,
     defaultIsOpen: js.UndefOr[Boolean] = js.undefined,
     environment: Environment = null,
     getA11yStatusMessage: /* options */ A11yStatusMessageOptions[Item] => String = null,
     getItemId: /* index */ js.UndefOr[Double] => String = null,
-    highlightedIndex: Int | Double = null,
+    highlightedIndex: js.UndefOr[Null | Double] = js.undefined,
     id: String = null,
-    initialHighlightedIndex: Int | Double = null,
+    initialHighlightedIndex: js.UndefOr[Null | Double] = js.undefined,
     initialInputValue: String = null,
     initialIsOpen: js.UndefOr[Boolean] = js.undefined,
     initialSelectedItem: Item = null,
     inputId: String = null,
-    inputValue: String = null,
+    inputValue: js.UndefOr[Null | String] = js.undefined,
     isOpen: js.UndefOr[Boolean] = js.undefined,
-    itemCount: Int | Double = null,
+    itemCount: js.UndefOr[Double] = js.undefined,
     itemToString: /* item */ Item | Null => String = null,
     labelId: String = null,
     menuId: String = null,
@@ -101,28 +101,28 @@ object DownshiftProps {
     onStateChange: (/* options */ StateChangeOptions[Item], /* stateAndHelpers */ ControllerStateAndHelpers[Item]) => Unit = null,
     onUserAction: (/* options */ StateChangeOptions[Item], /* stateAndHelpers */ ControllerStateAndHelpers[Item]) => Unit = null,
     scrollIntoView: (/* node */ HTMLElement, /* menuNode */ HTMLElement) => Unit = null,
-    selectedItem: Item = null,
+    selectedItem: js.UndefOr[Null | Item] = js.undefined,
     selectedItemChanged: (/* prevItem */ Item, /* item */ Item) => Boolean = null,
     stateReducer: (/* state */ DownshiftState[Item], /* changes */ StateChangeOptions[Item]) => Partial[StateChangeOptions[Item]] = null,
     suppressRefError: js.UndefOr[Boolean] = js.undefined
   ): DownshiftProps[Item] = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
-    if (defaultHighlightedIndex != null) __obj.updateDynamic("defaultHighlightedIndex")(defaultHighlightedIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultIsOpen)) __obj.updateDynamic("defaultIsOpen")(defaultIsOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultHighlightedIndex)) __obj.updateDynamic("defaultHighlightedIndex")(defaultHighlightedIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultIsOpen)) __obj.updateDynamic("defaultIsOpen")(defaultIsOpen.get.asInstanceOf[js.Any])
     if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
     if (getA11yStatusMessage != null) __obj.updateDynamic("getA11yStatusMessage")(js.Any.fromFunction1(getA11yStatusMessage))
     if (getItemId != null) __obj.updateDynamic("getItemId")(js.Any.fromFunction1(getItemId))
-    if (highlightedIndex != null) __obj.updateDynamic("highlightedIndex")(highlightedIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightedIndex)) __obj.updateDynamic("highlightedIndex")(highlightedIndex.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (initialHighlightedIndex != null) __obj.updateDynamic("initialHighlightedIndex")(initialHighlightedIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialHighlightedIndex)) __obj.updateDynamic("initialHighlightedIndex")(initialHighlightedIndex.asInstanceOf[js.Any])
     if (initialInputValue != null) __obj.updateDynamic("initialInputValue")(initialInputValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(initialIsOpen)) __obj.updateDynamic("initialIsOpen")(initialIsOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialIsOpen)) __obj.updateDynamic("initialIsOpen")(initialIsOpen.get.asInstanceOf[js.Any])
     if (initialSelectedItem != null) __obj.updateDynamic("initialSelectedItem")(initialSelectedItem.asInstanceOf[js.Any])
     if (inputId != null) __obj.updateDynamic("inputId")(inputId.asInstanceOf[js.Any])
-    if (inputValue != null) __obj.updateDynamic("inputValue")(inputValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.asInstanceOf[js.Any])
-    if (itemCount != null) __obj.updateDynamic("itemCount")(itemCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputValue)) __obj.updateDynamic("inputValue")(inputValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemCount)) __obj.updateDynamic("itemCount")(itemCount.get.asInstanceOf[js.Any])
     if (itemToString != null) __obj.updateDynamic("itemToString")(js.Any.fromFunction1(itemToString))
     if (labelId != null) __obj.updateDynamic("labelId")(labelId.asInstanceOf[js.Any])
     if (menuId != null) __obj.updateDynamic("menuId")(menuId.asInstanceOf[js.Any])
@@ -133,10 +133,10 @@ object DownshiftProps {
     if (onStateChange != null) __obj.updateDynamic("onStateChange")(js.Any.fromFunction2(onStateChange))
     if (onUserAction != null) __obj.updateDynamic("onUserAction")(js.Any.fromFunction2(onUserAction))
     if (scrollIntoView != null) __obj.updateDynamic("scrollIntoView")(js.Any.fromFunction2(scrollIntoView))
-    if (selectedItem != null) __obj.updateDynamic("selectedItem")(selectedItem.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedItem)) __obj.updateDynamic("selectedItem")(selectedItem.asInstanceOf[js.Any])
     if (selectedItemChanged != null) __obj.updateDynamic("selectedItemChanged")(js.Any.fromFunction2(selectedItemChanged))
     if (stateReducer != null) __obj.updateDynamic("stateReducer")(js.Any.fromFunction2(stateReducer))
-    if (!js.isUndefined(suppressRefError)) __obj.updateDynamic("suppressRefError")(suppressRefError.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressRefError)) __obj.updateDynamic("suppressRefError")(suppressRefError.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownshiftProps[Item]]
   }
 }

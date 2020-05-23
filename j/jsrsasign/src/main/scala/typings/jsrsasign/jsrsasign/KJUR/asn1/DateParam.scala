@@ -14,7 +14,7 @@ object DateParam {
   @scala.inline
   def apply(date: Date, withMillis: js.UndefOr[Boolean] = js.undefined): DateParam = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
-    if (!js.isUndefined(withMillis)) __obj.updateDynamic("withMillis")(withMillis.asInstanceOf[js.Any])
+    if (!js.isUndefined(withMillis)) __obj.updateDynamic("withMillis")(withMillis.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateParam]
   }
 }

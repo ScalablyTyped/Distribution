@@ -48,7 +48,7 @@ object Command {
     relative: js.UndefOr[Boolean] = js.undefined
   ): Command = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any])
-    if (!js.isUndefined(relative)) __obj.updateDynamic("relative")(relative.asInstanceOf[js.Any])
+    if (!js.isUndefined(relative)) __obj.updateDynamic("relative")(relative.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Command]
   }
 }

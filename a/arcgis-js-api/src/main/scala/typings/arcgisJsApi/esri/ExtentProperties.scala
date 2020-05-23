@@ -78,28 +78,28 @@ object ExtentProperties {
   def apply(
     hasM: js.UndefOr[Boolean] = js.undefined,
     hasZ: js.UndefOr[Boolean] = js.undefined,
-    mmax: Int | Double = null,
-    mmin: Int | Double = null,
+    mmax: js.UndefOr[Double] = js.undefined,
+    mmin: js.UndefOr[Double] = js.undefined,
     spatialReference: SpatialReferenceProperties = null,
-    xmax: Int | Double = null,
-    xmin: Int | Double = null,
-    ymax: Int | Double = null,
-    ymin: Int | Double = null,
-    zmax: Int | Double = null,
-    zmin: Int | Double = null
+    xmax: js.UndefOr[Double] = js.undefined,
+    xmin: js.UndefOr[Double] = js.undefined,
+    ymax: js.UndefOr[Double] = js.undefined,
+    ymin: js.UndefOr[Double] = js.undefined,
+    zmax: js.UndefOr[Double] = js.undefined,
+    zmin: js.UndefOr[Double] = js.undefined
   ): ExtentProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ.asInstanceOf[js.Any])
-    if (mmax != null) __obj.updateDynamic("mmax")(mmax.asInstanceOf[js.Any])
-    if (mmin != null) __obj.updateDynamic("mmin")(mmin.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mmax)) __obj.updateDynamic("mmax")(mmax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mmin)) __obj.updateDynamic("mmin")(mmin.get.asInstanceOf[js.Any])
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
-    if (xmax != null) __obj.updateDynamic("xmax")(xmax.asInstanceOf[js.Any])
-    if (xmin != null) __obj.updateDynamic("xmin")(xmin.asInstanceOf[js.Any])
-    if (ymax != null) __obj.updateDynamic("ymax")(ymax.asInstanceOf[js.Any])
-    if (ymin != null) __obj.updateDynamic("ymin")(ymin.asInstanceOf[js.Any])
-    if (zmax != null) __obj.updateDynamic("zmax")(zmax.asInstanceOf[js.Any])
-    if (zmin != null) __obj.updateDynamic("zmin")(zmin.asInstanceOf[js.Any])
+    if (!js.isUndefined(xmax)) __obj.updateDynamic("xmax")(xmax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xmin)) __obj.updateDynamic("xmin")(xmin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ymax)) __obj.updateDynamic("ymax")(ymax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ymin)) __obj.updateDynamic("ymin")(ymin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zmax)) __obj.updateDynamic("zmax")(zmax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zmin)) __obj.updateDynamic("zmin")(zmin.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtentProperties]
   }
 }

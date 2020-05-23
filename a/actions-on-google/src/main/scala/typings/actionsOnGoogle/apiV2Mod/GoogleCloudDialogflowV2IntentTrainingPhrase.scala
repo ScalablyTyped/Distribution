@@ -16,13 +16,13 @@ object GoogleCloudDialogflowV2IntentTrainingPhrase {
   def apply(
     name: String = null,
     parts: js.Array[GoogleCloudDialogflowV2IntentTrainingPhrasePart] = null,
-    timesAddedCount: Int | Double = null,
+    timesAddedCount: js.UndefOr[Double] = js.undefined,
     `type`: GoogleCloudDialogflowV2IntentTrainingPhraseType = null
   ): GoogleCloudDialogflowV2IntentTrainingPhrase = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (parts != null) __obj.updateDynamic("parts")(parts.asInstanceOf[js.Any])
-    if (timesAddedCount != null) __obj.updateDynamic("timesAddedCount")(timesAddedCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(timesAddedCount)) __obj.updateDynamic("timesAddedCount")(timesAddedCount.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudDialogflowV2IntentTrainingPhrase]
   }

@@ -73,8 +73,8 @@ object ListObjectsV2Output {
     Delimiter: String = null,
     EncodingType: url | String = null,
     IsTruncated: js.UndefOr[Boolean] = js.undefined,
-    KeyCount: Int | Double = null,
-    MaxKeys: Int | Double = null,
+    KeyCount: js.UndefOr[Double] = js.undefined,
+    MaxKeys: js.UndefOr[Double] = js.undefined,
     Name: String = null,
     NextContinuationToken: String = null,
     Prefix: String = null,
@@ -86,9 +86,9 @@ object ListObjectsV2Output {
     if (ContinuationToken != null) __obj.updateDynamic("ContinuationToken")(ContinuationToken.asInstanceOf[js.Any])
     if (Delimiter != null) __obj.updateDynamic("Delimiter")(Delimiter.asInstanceOf[js.Any])
     if (EncodingType != null) __obj.updateDynamic("EncodingType")(EncodingType.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.asInstanceOf[js.Any])
-    if (KeyCount != null) __obj.updateDynamic("KeyCount")(KeyCount.asInstanceOf[js.Any])
-    if (MaxKeys != null) __obj.updateDynamic("MaxKeys")(MaxKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(KeyCount)) __obj.updateDynamic("KeyCount")(KeyCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxKeys)) __obj.updateDynamic("MaxKeys")(MaxKeys.get.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (NextContinuationToken != null) __obj.updateDynamic("NextContinuationToken")(NextContinuationToken.asInstanceOf[js.Any])
     if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])

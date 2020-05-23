@@ -1,6 +1,7 @@
 package typings.node
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.node.anon.Actual
 import typings.node.nodeStrings.ERR_ASSERTION
 import typings.std.Error
 import typings.std.RegExp
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   @js.native
   class AssertionError () extends Error {
-    def this(options: AnonActual) = this()
+    def this(options: Actual) = this()
     var actual: js.Any = js.native
     var code: ERR_ASSERTION = js.native
     var expected: js.Any = js.native
@@ -25,10 +26,11 @@ object mod extends js.Object {
     var operator: java.lang.String = js.native
   }
   
-  val strict: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof internal */ js.Any = js.native
+  val strict: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof assert */ js.Any = js.native
   def apply(value: js.Any): Unit = js.native
   def apply(value: js.Any, message: java.lang.String): Unit = js.native
   def apply(value: js.Any, message: Error): Unit = js.native
+  /** @deprecated since v9.9.0 - use deepStrictEqual() instead. */
   def deepEqual(actual: js.Any, expected: js.Any): Unit = js.native
   def deepEqual(actual: js.Any, expected: js.Any, message: java.lang.String): Unit = js.native
   def deepEqual(actual: js.Any, expected: js.Any, message: Error): Unit = js.native
@@ -65,6 +67,7 @@ object mod extends js.Object {
   def doesNotThrow(block: js.Function0[_], error: RegExp, message: Error): Unit = js.native
   def doesNotThrow(block: js.Function0[_], message: java.lang.String): Unit = js.native
   def doesNotThrow(block: js.Function0[_], message: Error): Unit = js.native
+  /** @deprecated since v9.9.0 - use strictEqual() instead. */
   def equal(actual: js.Any, expected: js.Any): Unit = js.native
   def equal(actual: js.Any, expected: js.Any, message: java.lang.String): Unit = js.native
   def equal(actual: js.Any, expected: js.Any, message: Error): Unit = js.native
@@ -95,12 +98,14 @@ object mod extends js.Object {
   def `match`(value: java.lang.String, regExp: RegExp): Unit = js.native
   def `match`(value: java.lang.String, regExp: RegExp, message: java.lang.String): Unit = js.native
   def `match`(value: java.lang.String, regExp: RegExp, message: Error): Unit = js.native
+  /** @deprecated since v9.9.0 - use notDeepStrictEqual() instead. */
   def notDeepEqual(actual: js.Any, expected: js.Any): Unit = js.native
   def notDeepEqual(actual: js.Any, expected: js.Any, message: java.lang.String): Unit = js.native
   def notDeepEqual(actual: js.Any, expected: js.Any, message: Error): Unit = js.native
   def notDeepStrictEqual(actual: js.Any, expected: js.Any): Unit = js.native
   def notDeepStrictEqual(actual: js.Any, expected: js.Any, message: java.lang.String): Unit = js.native
   def notDeepStrictEqual(actual: js.Any, expected: js.Any, message: Error): Unit = js.native
+  /** @deprecated since v9.9.0 - use notStrictEqual() instead. */
   def notEqual(actual: js.Any, expected: js.Any): Unit = js.native
   def notEqual(actual: js.Any, expected: js.Any, message: java.lang.String): Unit = js.native
   def notEqual(actual: js.Any, expected: js.Any, message: Error): Unit = js.native

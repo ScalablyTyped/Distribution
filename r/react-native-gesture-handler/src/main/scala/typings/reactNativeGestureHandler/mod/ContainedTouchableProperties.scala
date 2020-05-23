@@ -12,9 +12,9 @@ trait ContainedTouchableProperties extends js.Object {
 
 object ContainedTouchableProperties {
   @scala.inline
-  def apply(containerStyle: StyleProp[ViewStyle] = null): ContainedTouchableProperties = {
+  def apply(containerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined): ContainedTouchableProperties = {
     val __obj = js.Dynamic.literal()
-    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(containerStyle)) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainedTouchableProperties]
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ant-design__icons-react-native
 
-Typings are for version 2.0.0
+Typings are for version 2.2.1
 
 ## Library description:
 <h1 align="center"> Ant Design Icons for React Native </h1>

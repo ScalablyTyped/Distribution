@@ -1,6 +1,5 @@
 package typings.bingmaps.Microsoft.Maps
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object PixelReference extends js.Object {
   /** The pixel is defined in viewport coordinates, relative to the center of the map, where the center of the map is (0, 0). */
   @js.native
   sealed trait viewport extends PixelReference
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PixelReference with Double] = js.native
-  /* 0 */ @js.native
-  object control extends TopLevel[control with Double]
-  
-  /* 1 */ @js.native
-  object page extends TopLevel[page with Double]
-  
-  /* 2 */ @js.native
-  object viewport extends TopLevel[viewport with Double]
   
 }
 

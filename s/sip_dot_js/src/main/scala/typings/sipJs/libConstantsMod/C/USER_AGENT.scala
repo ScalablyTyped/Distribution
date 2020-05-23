@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("sip.js/lib/Constants", "C.USER_AGENT")
 @js.native
-object USER_AGENT extends TopLevel[String]
+object USER_AGENT
+  extends TopLevel[/* "0.15.11" */ String]
 

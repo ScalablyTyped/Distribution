@@ -24,8 +24,8 @@ object ListItemProps {
     val __obj = js.Dynamic.literal()
     if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
     if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(threeLine)) __obj.updateDynamic("threeLine")(threeLine.asInstanceOf[js.Any])
-    if (!js.isUndefined(twoLine)) __obj.updateDynamic("twoLine")(twoLine.asInstanceOf[js.Any])
+    if (!js.isUndefined(threeLine)) __obj.updateDynamic("threeLine")(threeLine.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(twoLine)) __obj.updateDynamic("twoLine")(twoLine.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListItemProps]
   }
 }

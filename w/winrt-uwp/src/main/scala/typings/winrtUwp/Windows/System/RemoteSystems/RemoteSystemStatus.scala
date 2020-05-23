@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.System.RemoteSystems
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object RemoteSystemStatus extends js.Object {
   /** The availability of the remote system is unknown. */
   @js.native
   sealed trait unknown extends RemoteSystemStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RemoteSystemStatus with Double] = js.native
-  /* 2 */ @js.native
-  object available extends TopLevel[available with Double]
-  
-  /* 1 */ @js.native
-  object discoveringAvailability extends TopLevel[discoveringAvailability with Double]
-  
-  /* 0 */ @js.native
-  object unavailable extends TopLevel[unavailable with Double]
-  
-  /* 3 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
   
 }
 

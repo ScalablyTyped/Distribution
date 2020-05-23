@@ -11,10 +11,10 @@ trait MessagingSubscribeOptions extends js.Object {
 
 object MessagingSubscribeOptions {
   @scala.inline
-  def apply(qos: MessagingQOS = null, timeout: Int | Double = null): MessagingSubscribeOptions = {
+  def apply(qos: MessagingQOS = null, timeout: js.UndefOr[Double] = js.undefined): MessagingSubscribeOptions = {
     val __obj = js.Dynamic.literal()
     if (qos != null) __obj.updateDynamic("qos")(qos.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessagingSubscribeOptions]
   }
 }

@@ -31,7 +31,7 @@ object LocationRepositoryStoryResponseLocation {
     address: String = null,
     city: String = null,
     external_source: String = null,
-    facebook_places_id: Int | Double = null,
+    facebook_places_id: js.UndefOr[Double] = js.undefined,
     location_dict: LocationRepositoryStoryResponseLocationDict = null,
     profile_pic_url: String = null,
     profile_pic_username: String = null,
@@ -41,7 +41,7 @@ object LocationRepositoryStoryResponseLocation {
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
     if (external_source != null) __obj.updateDynamic("external_source")(external_source.asInstanceOf[js.Any])
-    if (facebook_places_id != null) __obj.updateDynamic("facebook_places_id")(facebook_places_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(facebook_places_id)) __obj.updateDynamic("facebook_places_id")(facebook_places_id.get.asInstanceOf[js.Any])
     if (location_dict != null) __obj.updateDynamic("location_dict")(location_dict.asInstanceOf[js.Any])
     if (profile_pic_url != null) __obj.updateDynamic("profile_pic_url")(profile_pic_url.asInstanceOf[js.Any])
     if (profile_pic_username != null) __obj.updateDynamic("profile_pic_username")(profile_pic_username.asInstanceOf[js.Any])

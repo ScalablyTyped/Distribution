@@ -18,9 +18,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** The primary object used by text input controls to communicate with the text input server. */
-@JSGlobal("Windows.UI.Text.Core.CoreTextEditContext")
 @js.native
-abstract class CoreTextEditContext () extends js.Object {
+trait CoreTextEditContext extends js.Object {
   /** Gets or sets a value that indicates whether the input pane should be shown automatically when focus enters your text input control. The default value is Automatic, indicating that the input pane will be shown automatically. A value of Manual indicates that your app will be responsible for showing and hiding the input pane using InputPane.TryShow and TryHide . */
   var inputPaneDisplayPolicy: CoreTextInputPaneDisplayPolicy = js.native
   /** Gets or sets a value that indicates the input scope of the text input control. */

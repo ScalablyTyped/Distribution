@@ -72,7 +72,7 @@ object DirectionsViewModelProperties {
   def apply(
     goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Unit = null,
     impedanceAttribute: String = null,
-    maxStops: Int | Double = null,
+    maxStops: js.UndefOr[Double] = js.undefined,
     routeParameters: RouteParametersProperties = null,
     routeServiceUrl: String = null,
     routeSymbol: SimpleLineSymbolProperties = null,
@@ -84,7 +84,7 @@ object DirectionsViewModelProperties {
     val __obj = js.Dynamic.literal()
     if (goToOverride != null) __obj.updateDynamic("goToOverride")(js.Any.fromFunction2(goToOverride))
     if (impedanceAttribute != null) __obj.updateDynamic("impedanceAttribute")(impedanceAttribute.asInstanceOf[js.Any])
-    if (maxStops != null) __obj.updateDynamic("maxStops")(maxStops.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxStops)) __obj.updateDynamic("maxStops")(maxStops.get.asInstanceOf[js.Any])
     if (routeParameters != null) __obj.updateDynamic("routeParameters")(routeParameters.asInstanceOf[js.Any])
     if (routeServiceUrl != null) __obj.updateDynamic("routeServiceUrl")(routeServiceUrl.asInstanceOf[js.Any])
     if (routeSymbol != null) __obj.updateDynamic("routeSymbol")(routeSymbol.asInstanceOf[js.Any])

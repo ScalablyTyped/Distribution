@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.ConditionalDataBarNegativeFormatData
 import typings.officeJs.Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions
 import typings.officeJs.Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,12 +16,11 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.6]
   */
-@JSGlobal("Excel.ConditionalDataBarNegativeFormat")
 @js.native
-class ConditionalDataBarNegativeFormat () extends ClientObject {
+trait ConditionalDataBarNegativeFormat extends ClientObject {
   /**
     *
-    * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+    * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     "Empty String" if no border is present or set.
     *
     * [Api set: ExcelApi 1.6]
@@ -32,21 +31,21 @@ class ConditionalDataBarNegativeFormat () extends ClientObject {
   var context_ConditionalDataBarNegativeFormat: RequestContext = js.native
   /**
     *
-    * HTML color code representing the fill color, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+    * HTML color code representing the fill color, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     *
     * [Api set: ExcelApi 1.6]
     */
   var fillColor: String = js.native
   /**
     *
-    * Boolean representation of whether or not the negative DataBar has the same border color as the positive DataBar.
+    * Specifies if the negative DataBar has the same border color as the positive DataBar.
     *
     * [Api set: ExcelApi 1.6]
     */
   var matchPositiveBorderColor: Boolean = js.native
   /**
     *
-    * Boolean representation of whether or not the negative DataBar has the same fill color as the positive DataBar.
+    * Specifies if the negative DataBar has the same fill color as the positive DataBar.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -58,7 +57,7 @@ class ConditionalDataBarNegativeFormat () extends ClientObject {
     */
   def load(): ConditionalDataBarNegativeFormat = js.native
   def load(options: ConditionalDataBarNegativeFormatLoadOptions): ConditionalDataBarNegativeFormat = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ConditionalDataBarNegativeFormat = js.native
+  def load(propertyNamesAndPaths: Expand): ConditionalDataBarNegativeFormat = js.native
   def load(propertyNames: String): ConditionalDataBarNegativeFormat = js.native
   def load(propertyNames: js.Array[String]): ConditionalDataBarNegativeFormat = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

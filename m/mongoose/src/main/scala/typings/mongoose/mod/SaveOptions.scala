@@ -20,7 +20,7 @@ object SaveOptions {
     val __obj = js.Dynamic.literal()
     if (safe != null) __obj.updateDynamic("safe")(safe.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateBeforeSave)) __obj.updateDynamic("validateBeforeSave")(validateBeforeSave.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateBeforeSave)) __obj.updateDynamic("validateBeforeSave")(validateBeforeSave.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveOptions]
   }
 }

@@ -20,16 +20,16 @@ object Options {
     dkLen: Double,
     p: Double,
     r: Double,
-    N: Int | Double = null,
+    N: js.UndefOr[Double] = js.undefined,
     encoding: String = null,
-    interruptStep: Int | Double = null,
-    logN: Int | Double = null
+    interruptStep: js.UndefOr[Double] = js.undefined,
+    logN: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal(dkLen = dkLen.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
-    if (N != null) __obj.updateDynamic("N")(N.asInstanceOf[js.Any])
+    if (!js.isUndefined(N)) __obj.updateDynamic("N")(N.get.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (interruptStep != null) __obj.updateDynamic("interruptStep")(interruptStep.asInstanceOf[js.Any])
-    if (logN != null) __obj.updateDynamic("logN")(logN.asInstanceOf[js.Any])
+    if (!js.isUndefined(interruptStep)) __obj.updateDynamic("interruptStep")(interruptStep.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(logN)) __obj.updateDynamic("logN")(logN.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -155,17 +155,17 @@ trait TextSymbolProperties extends SymbolProperties {
 object TextSymbolProperties {
   @scala.inline
   def apply(
-    angle: Int | Double = null,
+    angle: js.UndefOr[Double] = js.undefined,
     backgroundColor: Color_ | js.Array[Double] | String = null,
     borderLineColor: Color_ | js.Array[Double] | String = null,
-    borderLineSize: Int | Double = null,
+    borderLineSize: js.UndefOr[Double] = js.undefined,
     color: Color_ | js.Array[Double] | String = null,
     font: FontProperties = null,
     haloColor: Color_ | js.Array[Double] | String = null,
     haloSize: Double | String = null,
     horizontalAlignment: left | right | center | justify = null,
     kerning: js.UndefOr[Boolean] = js.undefined,
-    lineHeight: Int | Double = null,
+    lineHeight: js.UndefOr[Double] = js.undefined,
     lineWidth: Double | String = null,
     rotated: js.UndefOr[Boolean] = js.undefined,
     text: String = null,
@@ -174,19 +174,19 @@ object TextSymbolProperties {
     yoffset: Double | String = null
   ): TextSymbolProperties = {
     val __obj = js.Dynamic.literal()
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (borderLineColor != null) __obj.updateDynamic("borderLineColor")(borderLineColor.asInstanceOf[js.Any])
-    if (borderLineSize != null) __obj.updateDynamic("borderLineSize")(borderLineSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderLineSize)) __obj.updateDynamic("borderLineSize")(borderLineSize.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (haloColor != null) __obj.updateDynamic("haloColor")(haloColor.asInstanceOf[js.Any])
     if (haloSize != null) __obj.updateDynamic("haloSize")(haloSize.asInstanceOf[js.Any])
     if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(kerning)) __obj.updateDynamic("kerning")(kerning.asInstanceOf[js.Any])
-    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(kerning)) __obj.updateDynamic("kerning")(kerning.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineHeight)) __obj.updateDynamic("lineHeight")(lineHeight.get.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotated)) __obj.updateDynamic("rotated")(rotated.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotated)) __obj.updateDynamic("rotated")(rotated.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
     if (xoffset != null) __obj.updateDynamic("xoffset")(xoffset.asInstanceOf[js.Any])

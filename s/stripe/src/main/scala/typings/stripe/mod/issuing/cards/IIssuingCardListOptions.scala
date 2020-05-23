@@ -69,10 +69,10 @@ object IIssuingCardListOptions {
     cardholder: String = null,
     created: String | ICreated = null,
     ending_before: String = null,
-    exp_month: Int | Double = null,
-    exp_year: Int | Double = null,
+    exp_month: js.UndefOr[Double] = js.undefined,
+    exp_year: js.UndefOr[Double] = js.undefined,
     last4: String = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     name: String = null,
     source: String = null,
     starting_after: String = null,
@@ -83,10 +83,10 @@ object IIssuingCardListOptions {
     if (cardholder != null) __obj.updateDynamic("cardholder")(cardholder.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (ending_before != null) __obj.updateDynamic("ending_before")(ending_before.asInstanceOf[js.Any])
-    if (exp_month != null) __obj.updateDynamic("exp_month")(exp_month.asInstanceOf[js.Any])
-    if (exp_year != null) __obj.updateDynamic("exp_year")(exp_year.asInstanceOf[js.Any])
+    if (!js.isUndefined(exp_month)) __obj.updateDynamic("exp_month")(exp_month.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exp_year)) __obj.updateDynamic("exp_year")(exp_year.get.asInstanceOf[js.Any])
     if (last4 != null) __obj.updateDynamic("last4")(last4.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (starting_after != null) __obj.updateDynamic("starting_after")(starting_after.asInstanceOf[js.Any])

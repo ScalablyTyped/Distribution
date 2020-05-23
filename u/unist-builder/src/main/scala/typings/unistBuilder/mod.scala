@@ -1,6 +1,9 @@
 package typings.unistBuilder
 
 import typings.unist.mod.Node
+import typings.unistBuilder.anon.Children
+import typings.unistBuilder.anon.Type
+import typings.unistBuilder.anon.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,21 +19,21 @@ object mod extends js.Object {
     *
     * @param type type of node
     */
-  def apply[T /* <: String */](`type`: T): AnonType[T] = js.native
+  def apply[T /* <: String */](`type`: T): Type[T] = js.native
   /**
     * Creates a node, with type and value
     *
     * @param type type of node
     * @param value  value property of node
     */
-  def apply[T /* <: String */](`type`: T, value: String): AnonValue[T] = js.native
+  def apply[T /* <: String */](`type`: T, value: String): Value[T] = js.native
   /**
     * Creates a node, with type and children
     *
     * @param type type of node
     * @param children child nodes of the current node
     */
-  def apply[T /* <: String */, C /* <: js.Array[Node] */](`type`: T, children: C): AnonChildren[T, C] = js.native
+  def apply[T /* <: String */, C /* <: js.Array[Node] */](`type`: T, children: C): Children[T, C] = js.native
   /**
     * Creates a node, with type, props, and value
     *
@@ -38,7 +41,7 @@ object mod extends js.Object {
     * @param props additional properties for node
     * @param value value property of node
     */
-  def apply[T /* <: String */, P /* <: js.Object */](`type`: T, props: P, value: String): AnonValue[T] with P = js.native
+  def apply[T /* <: String */, P /* <: js.Object */](`type`: T, props: P, value: String): Value[T] with P = js.native
   /**
     * Creates a node, with type, props, and children
     *
@@ -46,6 +49,6 @@ object mod extends js.Object {
     * @param props additional properties for node
     * @param children child nodes of the current node
     */
-  def apply[T /* <: String */, P /* <: js.Object */, C /* <: js.Array[Node] */](`type`: T, props: P, children: C): (AnonChildren[T, C]) with P = js.native
+  def apply[T /* <: String */, P /* <: js.Object */, C /* <: js.Array[Node] */](`type`: T, props: P, children: C): (Children[T, C]) with P = js.native
 }
 

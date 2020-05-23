@@ -34,24 +34,24 @@ trait ClickEventArgs extends js.Object {
 object ClickEventArgs {
   @scala.inline
   def apply(
-    actualObject: Int | Double = null,
+    actualObject: js.UndefOr[Double] = js.undefined,
     cancel: js.UndefOr[Boolean] = js.undefined,
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     diagramId: String = null,
     element: js.Any = null,
     event: js.Any = null,
-    offsetX: Int | Double = null,
-    offsetY: Int | Double = null
+    offsetX: js.UndefOr[Double] = js.undefined,
+    offsetY: js.UndefOr[Double] = js.undefined
   ): ClickEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (actualObject != null) __obj.updateDynamic("actualObject")(actualObject.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(actualObject)) __obj.updateDynamic("actualObject")(actualObject.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX.asInstanceOf[js.Any])
-    if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetX)) __obj.updateDynamic("offsetX")(offsetX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetY)) __obj.updateDynamic("offsetY")(offsetY.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClickEventArgs]
   }
 }

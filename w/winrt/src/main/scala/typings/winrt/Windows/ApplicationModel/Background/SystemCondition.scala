@@ -4,11 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.Background.SystemCondition")
-@js.native
-class SystemCondition protected () extends ISystemCondition {
-  def this(conditionType: SystemConditionType) = this()
-  /* CompleteClass */
-  override var conditionType: SystemConditionType = js.native
+trait SystemCondition extends ISystemCondition
+
+object SystemCondition {
+  @scala.inline
+  def apply(conditionType: SystemConditionType): SystemCondition = {
+    val __obj = js.Dynamic.literal(conditionType = conditionType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SystemCondition]
+  }
 }
 

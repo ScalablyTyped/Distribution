@@ -7,9 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides methods for reading messages from the message store. */
-@JSGlobal("Windows.ApplicationModel.Chat.ChatMessageReader")
 @js.native
-abstract class ChatMessageReader () extends js.Object {
+trait ChatMessageReader extends js.Object {
   /**
     * Returns a batch list of chat messages from the message store.
     * @return An asynchronous operation that returns a list of chat messages upon successful completion.

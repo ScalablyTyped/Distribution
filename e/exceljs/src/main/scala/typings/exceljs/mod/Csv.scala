@@ -1,7 +1,7 @@
 package typings.exceljs.mod
 
-import typings.exceljs.PartialCsvReadOptions
-import typings.exceljs.PartialCsvWriteOptions
+import typings.exceljs.anon.PartialCsvReadOptions
+import typings.exceljs.anon.PartialCsvWriteOptions
 import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Stream
 import scala.scalajs.js

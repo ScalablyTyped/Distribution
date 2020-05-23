@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Store
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object ProductType extends js.Object {
   /** The product type is unknown. */
   @js.native
   sealed trait unknown extends ProductType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ProductType with Double] = js.native
-  /* 2 */ @js.native
-  object consumable extends TopLevel[consumable with Double]
-  
-  /* 1 */ @js.native
-  object durable extends TopLevel[durable with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
   
 }
 

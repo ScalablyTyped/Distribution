@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -164,8 +163,4 @@ trait Geoprocessor extends Task {
   def waitForJobCompletion(jobId: String): js.Promise[JobInfo] = js.native
   def waitForJobCompletion(jobId: String, options: GeoprocessorWaitForJobCompletionOptions): js.Promise[JobInfo] = js.native
 }
-
-@JSGlobal("__esri.Geoprocessor")
-@js.native
-object Geoprocessor extends TopLevel[GeoprocessorConstructor]
 

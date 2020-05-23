@@ -12,26 +12,26 @@ sealed trait FileType extends js.Object
 @js.native
 object FileType extends js.Object {
   /**
-  		 * A directory.
-  		 */
+    * A directory.
+    */
   @js.native
   sealed trait Directory extends FileType
   
   /**
-  		 * A regular file.
-  		 */
+    * A regular file.
+    */
   @js.native
   sealed trait File extends FileType
   
   /**
-  		 * A symbolic link to a file.
-  		 */
+    * A symbolic link to a file.
+    */
   @js.native
   sealed trait SymbolicLink extends FileType
   
   /**
-  		 * The file type is unknown.
-  		 */
+    * The file type is unknown.
+    */
   @js.native
   sealed trait Unknown extends FileType
   

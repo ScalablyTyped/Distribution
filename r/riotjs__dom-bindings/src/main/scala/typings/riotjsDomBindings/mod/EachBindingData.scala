@@ -19,19 +19,19 @@ object EachBindingData {
   def apply(
     itemName: String,
     template: TemplateChunk[_, _],
-    condition: /* scope */ js.Any => _ = null,
+    condition: js.UndefOr[Null | (/* scope */ js.Any => _)] = js.undefined,
     evaluate: /* scope */ js.Any => _ = null,
-    getKey: /* scope */ js.Any => _ = null,
-    indexName: Int | Double = null,
+    getKey: js.UndefOr[Null | (/* scope */ js.Any => _)] = js.undefined,
+    indexName: js.UndefOr[Double] = js.undefined,
     redundantAttribute: String = null,
     selector: String = null,
     `type`: BindingType = null
   ): EachBindingData = {
     val __obj = js.Dynamic.literal(itemName = itemName.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
-    if (condition != null) __obj.updateDynamic("condition")(js.Any.fromFunction1(condition))
+    if (!js.isUndefined(condition)) __obj.updateDynamic("condition")(if (condition != null) js.Any.fromFunction1(condition.asInstanceOf[/* scope */ js.Any => _]) else null)
     if (evaluate != null) __obj.updateDynamic("evaluate")(js.Any.fromFunction1(evaluate))
-    if (getKey != null) __obj.updateDynamic("getKey")(js.Any.fromFunction1(getKey))
-    if (indexName != null) __obj.updateDynamic("indexName")(indexName.asInstanceOf[js.Any])
+    if (!js.isUndefined(getKey)) __obj.updateDynamic("getKey")(if (getKey != null) js.Any.fromFunction1(getKey.asInstanceOf[/* scope */ js.Any => _]) else null)
+    if (!js.isUndefined(indexName)) __obj.updateDynamic("indexName")(indexName.get.asInstanceOf[js.Any])
     if (redundantAttribute != null) __obj.updateDynamic("redundantAttribute")(redundantAttribute.asInstanceOf[js.Any])
     if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

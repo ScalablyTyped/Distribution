@@ -53,7 +53,7 @@ object AutoScalingGroupRecommendation {
     currentConfiguration: AutoScalingGroupConfiguration = null,
     finding: Finding = null,
     lastRefreshTimestamp: LastRefreshTimestamp = null,
-    lookBackPeriodInDays: Int | Double = null,
+    lookBackPeriodInDays: js.UndefOr[LookBackPeriodInDays] = js.undefined,
     recommendationOptions: AutoScalingGroupRecommendationOptions = null,
     utilizationMetrics: UtilizationMetrics = null
   ): AutoScalingGroupRecommendation = {
@@ -64,7 +64,7 @@ object AutoScalingGroupRecommendation {
     if (currentConfiguration != null) __obj.updateDynamic("currentConfiguration")(currentConfiguration.asInstanceOf[js.Any])
     if (finding != null) __obj.updateDynamic("finding")(finding.asInstanceOf[js.Any])
     if (lastRefreshTimestamp != null) __obj.updateDynamic("lastRefreshTimestamp")(lastRefreshTimestamp.asInstanceOf[js.Any])
-    if (lookBackPeriodInDays != null) __obj.updateDynamic("lookBackPeriodInDays")(lookBackPeriodInDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(lookBackPeriodInDays)) __obj.updateDynamic("lookBackPeriodInDays")(lookBackPeriodInDays.get.asInstanceOf[js.Any])
     if (recommendationOptions != null) __obj.updateDynamic("recommendationOptions")(recommendationOptions.asInstanceOf[js.Any])
     if (utilizationMetrics != null) __obj.updateDynamic("utilizationMetrics")(utilizationMetrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoScalingGroupRecommendation]

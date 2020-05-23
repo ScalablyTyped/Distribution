@@ -30,12 +30,12 @@ object AuthenticationExtensionsClientInputs {
     val __obj = js.Dynamic.literal()
     if (appid != null) __obj.updateDynamic("appid")(appid.asInstanceOf[js.Any])
     if (authnSel != null) __obj.updateDynamic("authnSel")(authnSel.asInstanceOf[js.Any])
-    if (!js.isUndefined(exts)) __obj.updateDynamic("exts")(exts.asInstanceOf[js.Any])
-    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(exts)) __obj.updateDynamic("exts")(exts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.get.asInstanceOf[js.Any])
     if (txAuthGeneric != null) __obj.updateDynamic("txAuthGeneric")(txAuthGeneric.asInstanceOf[js.Any])
     if (txAuthSimple != null) __obj.updateDynamic("txAuthSimple")(txAuthSimple.asInstanceOf[js.Any])
-    if (!js.isUndefined(uvi)) __obj.updateDynamic("uvi")(uvi.asInstanceOf[js.Any])
-    if (!js.isUndefined(uvm)) __obj.updateDynamic("uvm")(uvm.asInstanceOf[js.Any])
+    if (!js.isUndefined(uvi)) __obj.updateDynamic("uvi")(uvi.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(uvm)) __obj.updateDynamic("uvm")(uvm.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticationExtensionsClientInputs]
   }
 }

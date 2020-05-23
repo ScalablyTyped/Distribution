@@ -27,7 +27,7 @@ trait Namespace[Value /* <: js.UndefOr[String] */]
 
 object Namespace {
   @scala.inline
-  def apply[Value /* <: js.UndefOr[String] */](
+  def apply[Value](
     appendToPropertyAndEscape: (String, js.Any, String) => Unit,
     clone: StringDictionary[js.Any] => Node,
     isAtPosition: (Double, Double) => js.UndefOr[Boolean],

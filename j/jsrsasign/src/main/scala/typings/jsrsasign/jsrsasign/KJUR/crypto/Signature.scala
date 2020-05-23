@@ -1,10 +1,7 @@
 package typings.jsrsasign.jsrsasign.KJUR.crypto
 
-import typings.jsrsasign.AnonAlgString
 import typings.jsrsasign.jsrsasign.ECCPrivateKey
 import typings.jsrsasign.jsrsasign.RSAKey
-import typings.jsrsasign.jsrsasignStrings.SIGN
-import typings.jsrsasign.jsrsasignStrings.VERIFY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -73,10 +70,8 @@ import scala.scalajs.js.annotation._
   * sig.updateString('aaa');
   * var isValid = sig.verify(sigValueHex);
   */
-@JSGlobal("jsrsasign.KJUR.crypto.Signature")
 @js.native
-class Signature () extends js.Object {
-  def this(params: AnonAlgString) = this()
+trait Signature extends js.Object {
   /**
     * Initialize this object for signing or verifying depends on key
     * @param key specifying public or private key as plain/encrypted PKCS#5/8 PEM file, certificate PEM or `RSAKey`, `KJUR.crypto.DSA` or `KJUR.crypto.ECDSA` object
@@ -168,13 +163,5 @@ class Signature () extends js.Object {
     * var isValid = sig.verify('1fbcefdca4823a7(snip)')
     */
   def verify(hSigVal: String): Boolean = js.native
-}
-
-/* static members */
-@JSGlobal("jsrsasign.KJUR.crypto.Signature")
-@js.native
-object Signature extends js.Object {
-  /** Current state of this signature object whether 'SIGN', 'VERIFY' or null */
-  val state: SIGN | VERIFY | Null = js.native
 }
 

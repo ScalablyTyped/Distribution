@@ -4,14 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NodesReloadSecureSettings extends Generic {
+trait NodesReloadSecureSettings[T] extends Generic {
+  var body: js.UndefOr[T] = js.undefined
   var node_id: js.UndefOr[String | js.Array[String]] = js.undefined
   var timeout: js.UndefOr[String] = js.undefined
 }
 
 object NodesReloadSecureSettings {
   @scala.inline
-  def apply(
+  def apply[T](
+    body: T = null,
     error_trace: js.UndefOr[Boolean] = js.undefined,
     filter_path: String | js.Array[String] = null,
     human: js.UndefOr[Boolean] = js.undefined,
@@ -21,18 +23,19 @@ object NodesReloadSecureSettings {
     pretty: js.UndefOr[Boolean] = js.undefined,
     source: String = null,
     timeout: String = null
-  ): NodesReloadSecureSettings = {
+  ): NodesReloadSecureSettings[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.get.asInstanceOf[js.Any])
     if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.asInstanceOf[js.Any])
+    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.get.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (node_id != null) __obj.updateDynamic("node_id")(node_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])
+    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    __obj.asInstanceOf[NodesReloadSecureSettings]
+    __obj.asInstanceOf[NodesReloadSecureSettings[T]]
   }
 }
 

@@ -11,11 +11,15 @@ trait ScrollToOptions extends ScrollOptions {
 
 object ScrollToOptions {
   @scala.inline
-  def apply(behavior: ScrollBehavior = null, left: Int | Double = null, top: Int | Double = null): ScrollToOptions = {
+  def apply(
+    behavior: ScrollBehavior = null,
+    left: js.UndefOr[Double] = js.undefined,
+    top: js.UndefOr[Double] = js.undefined
+  ): ScrollToOptions = {
     val __obj = js.Dynamic.literal()
     if (behavior != null) __obj.updateDynamic("behavior")(behavior.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollToOptions]
   }
 }

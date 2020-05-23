@@ -12,9 +12,9 @@ trait IConsensusNotifyPeerDisconnected extends js.Object {
 
 object IConsensusNotifyPeerDisconnected {
   @scala.inline
-  def apply(peerId: Uint8Array = null): IConsensusNotifyPeerDisconnected = {
+  def apply(peerId: js.UndefOr[Null | Uint8Array] = js.undefined): IConsensusNotifyPeerDisconnected = {
     val __obj = js.Dynamic.literal()
-    if (peerId != null) __obj.updateDynamic("peerId")(peerId.asInstanceOf[js.Any])
+    if (!js.isUndefined(peerId)) __obj.updateDynamic("peerId")(peerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConsensusNotifyPeerDisconnected]
   }
 }

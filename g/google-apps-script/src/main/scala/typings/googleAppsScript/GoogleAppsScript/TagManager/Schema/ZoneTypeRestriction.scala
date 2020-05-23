@@ -13,7 +13,7 @@ object ZoneTypeRestriction {
   @scala.inline
   def apply(enable: js.UndefOr[Boolean] = js.undefined, whitelistedTypeId: js.Array[String] = null): ZoneTypeRestriction = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.get.asInstanceOf[js.Any])
     if (whitelistedTypeId != null) __obj.updateDynamic("whitelistedTypeId")(whitelistedTypeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoneTypeRestriction]
   }

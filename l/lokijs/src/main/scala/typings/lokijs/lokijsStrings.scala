@@ -33,9 +33,6 @@ object lokijsStrings {
   sealed trait $lte extends js.Object
   
   @js.native
-  sealed trait AnonExact extends js.Object
-  
-  @js.native
   sealed trait BROWSER extends js.Object
   
   @js.native
@@ -43,6 +40,9 @@ object lokijsStrings {
   
   @js.native
   sealed trait Collection extends js.Object
+  
+  @js.native
+  sealed trait Exact extends js.Object
   
   @js.native
   sealed trait NA extends js.Object
@@ -171,13 +171,13 @@ object lokijsStrings {
   @scala.inline
   def $lte: $lte = "$lte".asInstanceOf[$lte]
   @scala.inline
-  def AnonExact: AnonExact = "AnonExact".asInstanceOf[AnonExact]
-  @scala.inline
   def BROWSER: BROWSER = "BROWSER".asInstanceOf[BROWSER]
   @scala.inline
   def CORDOVA: CORDOVA = "CORDOVA".asInstanceOf[CORDOVA]
   @scala.inline
   def Collection: Collection = "Collection".asInstanceOf[Collection]
+  @scala.inline
+  def Exact: Exact = "Exact".asInstanceOf[Exact]
   @scala.inline
   def NA: NA = "NA".asInstanceOf[NA]
   @scala.inline

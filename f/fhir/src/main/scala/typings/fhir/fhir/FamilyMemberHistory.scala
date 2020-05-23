@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Information about patient's relatives, relevant for patient
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait FamilyMemberHistory extends DomainResource {
   /**
     * Contains extended information for property 'ageString'.
@@ -245,12 +245,12 @@ object FamilyMemberHistory {
     if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (deceasedAge != null) __obj.updateDynamic("deceasedAge")(deceasedAge.asInstanceOf[js.Any])
-    if (!js.isUndefined(deceasedBoolean)) __obj.updateDynamic("deceasedBoolean")(deceasedBoolean.asInstanceOf[js.Any])
+    if (!js.isUndefined(deceasedBoolean)) __obj.updateDynamic("deceasedBoolean")(deceasedBoolean.get.asInstanceOf[js.Any])
     if (deceasedDate != null) __obj.updateDynamic("deceasedDate")(deceasedDate.asInstanceOf[js.Any])
     if (deceasedRange != null) __obj.updateDynamic("deceasedRange")(deceasedRange.asInstanceOf[js.Any])
     if (deceasedString != null) __obj.updateDynamic("deceasedString")(deceasedString.asInstanceOf[js.Any])
     if (definition != null) __obj.updateDynamic("definition")(definition.asInstanceOf[js.Any])
-    if (!js.isUndefined(estimatedAge)) __obj.updateDynamic("estimatedAge")(estimatedAge.asInstanceOf[js.Any])
+    if (!js.isUndefined(estimatedAge)) __obj.updateDynamic("estimatedAge")(estimatedAge.get.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (gender != null) __obj.updateDynamic("gender")(gender.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
@@ -260,7 +260,7 @@ object FamilyMemberHistory {
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(notDone)) __obj.updateDynamic("notDone")(notDone.asInstanceOf[js.Any])
+    if (!js.isUndefined(notDone)) __obj.updateDynamic("notDone")(notDone.get.asInstanceOf[js.Any])
     if (notDoneReason != null) __obj.updateDynamic("notDoneReason")(notDoneReason.asInstanceOf[js.Any])
     if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
     if (reasonCode != null) __obj.updateDynamic("reasonCode")(reasonCode.asInstanceOf[js.Any])

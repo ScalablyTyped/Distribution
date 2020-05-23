@@ -1,6 +1,5 @@
 package typings.ckeditor.CKEDITOR.fileTools
 
-import typings.ckeditor.CKEDITOR.editor
 import typings.ckeditor.CKEDITOR.event
 import typings.std.Blob
 import typings.std.FileReader
@@ -9,13 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CKEDITOR.fileTools.fileLoader")
 @js.native
-class fileLoader protected () extends event {
-  def this(editor: editor, fileOrData: String) = this()
-  def this(editor: editor, fileOrData: Blob) = this()
-  def this(editor: editor, fileOrData: String, fileName: String) = this()
-  def this(editor: editor, fileOrData: Blob, fileName: String) = this()
+trait fileLoader extends event {
   val data: String = js.native
   val file: Blob = js.native
   val fileName: String = js.native

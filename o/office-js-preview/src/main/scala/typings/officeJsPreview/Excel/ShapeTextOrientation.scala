@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,29 +36,6 @@ object ShapeTextOrientation extends js.Object {
   
   @js.native
   sealed trait wordArtVerticalRTL extends ShapeTextOrientation
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ShapeTextOrientation with String] = js.native
-  /* "EastAsianVertical" */ @js.native
-  object eastAsianVertical extends TopLevel[eastAsianVertical with String]
-  
-  /* "Horizontal" */ @js.native
-  object horizontal extends TopLevel[horizontal with String]
-  
-  /* "MongolianVertical" */ @js.native
-  object mongolianVertical extends TopLevel[mongolianVertical with String]
-  
-  /* "Vertical" */ @js.native
-  object vertical extends TopLevel[vertical with String]
-  
-  /* "Vertical270" */ @js.native
-  object vertical270 extends TopLevel[vertical270 with String]
-  
-  /* "WordArtVertical" */ @js.native
-  object wordArtVertical extends TopLevel[wordArtVertical with String]
-  
-  /* "WordArtVerticalRTL" */ @js.native
-  object wordArtVerticalRTL extends TopLevel[wordArtVerticalRTL with String]
   
 }
 

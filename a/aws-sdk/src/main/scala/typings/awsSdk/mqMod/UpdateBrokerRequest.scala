@@ -40,7 +40,7 @@ object UpdateBrokerRequest {
   @scala.inline
   def apply(
     BrokerId: string,
-    AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined,
+    AutoMinorVersionUpgrade: js.UndefOr[boolean] = js.undefined,
     Configuration: ConfigurationId = null,
     EngineVersion: string = null,
     HostInstanceType: string = null,
@@ -48,7 +48,7 @@ object UpdateBrokerRequest {
     SecurityGroups: listOfString = null
   ): UpdateBrokerRequest = {
     val __obj = js.Dynamic.literal(BrokerId = BrokerId.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade.get.asInstanceOf[js.Any])
     if (Configuration != null) __obj.updateDynamic("Configuration")(Configuration.asInstanceOf[js.Any])
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
     if (HostInstanceType != null) __obj.updateDynamic("HostInstanceType")(HostInstanceType.asInstanceOf[js.Any])

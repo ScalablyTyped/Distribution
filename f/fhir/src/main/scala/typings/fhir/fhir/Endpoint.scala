@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * The technical details of an endpoint that can be used for electronic services
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait Endpoint extends DomainResource {
   /**
     * Contains extended information for property 'address'.

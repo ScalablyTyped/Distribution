@@ -4,12 +4,6 @@ import typings.officeUiFabricReact.interfacesMod.IColor
 import typings.officeUiFabricReact.interfacesMod.IHSL
 import typings.officeUiFabricReact.interfacesMod.IHSV
 import typings.officeUiFabricReact.interfacesMod.IRGB
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`100`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`1`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`255`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`359`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`3`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`6`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.a
 import typings.officeUiFabricReact.officeUiFabricReactStrings.b
 import typings.officeUiFabricReact.officeUiFabricReactStrings.g
@@ -23,16 +17,16 @@ import scala.scalajs.js.annotation._
 @js.native
 object colorsMod extends js.Object {
   val HEX_REGEX: RegExp = js.native
-  val MAX_COLOR_ALPHA: `100` = js.native
-  val MAX_COLOR_HUE: `359` = js.native
-  val MAX_COLOR_RGB: `255` = js.native
-  val MAX_COLOR_RGBA: `255` = js.native
-  val MAX_COLOR_SATURATION: `100` = js.native
-  val MAX_COLOR_VALUE: `100` = js.native
-  val MAX_HEX_LENGTH: `6` = js.native
-  val MAX_RGBA_LENGTH: `3` = js.native
-  val MIN_HEX_LENGTH: `3` = js.native
-  val MIN_RGBA_LENGTH: `1` = js.native
+  val MAX_COLOR_ALPHA: /* 100 */ Double = js.native
+  val MAX_COLOR_HUE: /* 359 */ Double = js.native
+  val MAX_COLOR_RGB: /* 255 */ Double = js.native
+  val MAX_COLOR_RGBA: /* 255 */ Double = js.native
+  val MAX_COLOR_SATURATION: /* 100 */ Double = js.native
+  val MAX_COLOR_VALUE: /* 100 */ Double = js.native
+  val MAX_HEX_LENGTH: /* 6 */ Double = js.native
+  val MAX_RGBA_LENGTH: /* 3 */ Double = js.native
+  val MIN_HEX_LENGTH: /* 3 */ Double = js.native
+  val MIN_RGBA_LENGTH: /* 1 */ Double = js.native
   val RGBA_REGEX: RegExp = js.native
   def clamp(value: Double, max: Double): Double = js.native
   def clamp(value: Double, max: Double, min: Double): Double = js.native

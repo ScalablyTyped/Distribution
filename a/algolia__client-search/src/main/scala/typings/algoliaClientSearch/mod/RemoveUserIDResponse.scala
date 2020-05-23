@@ -8,7 +8,7 @@ trait RemoveUserIDResponse extends js.Object {
   /**
     * When the given `userID` got removed.
     */
-  val deletedAt: String
+  var deletedAt: String
 }
 
 object RemoveUserIDResponse {

@@ -1,6 +1,6 @@
 package typings.materialUiCore.transitionsMod
 
-import typings.materialUiCore.Partialdurationnumberstri
+import typings.materialUiCore.anon.Partialdurationnumberstri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

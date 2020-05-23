@@ -21,10 +21,10 @@ object Configuration {
   @scala.inline
   def apply(
     apiKey: String = null,
-    batchSizeLimit: Int | Double = null,
-    eventSizeLimit: Int | Double = null,
+    batchSizeLimit: js.UndefOr[Double] = js.undefined,
+    eventSizeLimit: js.UndefOr[Double] = js.undefined,
     level: String = null,
-    maxBatchingTime: Int | Double = null,
+    maxBatchingTime: js.UndefOr[Double] = js.undefined,
     name: String = null,
     onError: /* e */ Error => Unit = null,
     reemitErrorEvents: js.UndefOr[Boolean] = js.undefined,
@@ -32,13 +32,13 @@ object Configuration {
   ): Configuration = {
     val __obj = js.Dynamic.literal()
     if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey.asInstanceOf[js.Any])
-    if (batchSizeLimit != null) __obj.updateDynamic("batchSizeLimit")(batchSizeLimit.asInstanceOf[js.Any])
-    if (eventSizeLimit != null) __obj.updateDynamic("eventSizeLimit")(eventSizeLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchSizeLimit)) __obj.updateDynamic("batchSizeLimit")(batchSizeLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(eventSizeLimit)) __obj.updateDynamic("eventSizeLimit")(eventSizeLimit.get.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (maxBatchingTime != null) __obj.updateDynamic("maxBatchingTime")(maxBatchingTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxBatchingTime)) __obj.updateDynamic("maxBatchingTime")(maxBatchingTime.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
-    if (!js.isUndefined(reemitErrorEvents)) __obj.updateDynamic("reemitErrorEvents")(reemitErrorEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(reemitErrorEvents)) __obj.updateDynamic("reemitErrorEvents")(reemitErrorEvents.get.asInstanceOf[js.Any])
     if (serverUrl != null) __obj.updateDynamic("serverUrl")(serverUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }

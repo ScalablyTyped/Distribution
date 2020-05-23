@@ -47,15 +47,15 @@ object WorksheetViewSplit {
     activePane: topLeft | topRight | bottomLeft | bottomRight = null,
     style: pageBreakPreview | pageLayout = null,
     topLeftCell: String = null,
-    xSplit: Int | Double = null,
-    ySplit: Int | Double = null
+    xSplit: js.UndefOr[Double] = js.undefined,
+    ySplit: js.UndefOr[Double] = js.undefined
   ): WorksheetViewSplit = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     if (activePane != null) __obj.updateDynamic("activePane")(activePane.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (topLeftCell != null) __obj.updateDynamic("topLeftCell")(topLeftCell.asInstanceOf[js.Any])
-    if (xSplit != null) __obj.updateDynamic("xSplit")(xSplit.asInstanceOf[js.Any])
-    if (ySplit != null) __obj.updateDynamic("ySplit")(ySplit.asInstanceOf[js.Any])
+    if (!js.isUndefined(xSplit)) __obj.updateDynamic("xSplit")(xSplit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ySplit)) __obj.updateDynamic("ySplit")(ySplit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorksheetViewSplit]
   }
 }

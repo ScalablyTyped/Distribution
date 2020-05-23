@@ -1,7 +1,7 @@
 package typings.pagerJackrabbit.mod
 
 import typings.node.NodeJS.EventEmitter
-import typings.pagerJackrabbit.AnonAmqp
+import typings.pagerJackrabbit.anon.Amqp
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ trait JackRabbit extends EventEmitter {
   def fanout(): Exchange = js.native
   def fanout(name: String): Exchange = js.native
   def fanout(name: String, options: ExchangeOptions): Exchange = js.native
-  def getInternals(): AnonAmqp = js.native
+  def getInternals(): Amqp = js.native
   def topic(): Exchange = js.native
   def topic(name: String): Exchange = js.native
   def topic(name: String, options: ExchangeOptions): Exchange = js.native

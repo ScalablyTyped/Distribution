@@ -1,9 +1,9 @@
 package typings.oracleOraclejet.ojradiosetMod
 
-import typings.oracleOraclejet.AnonConverterHint
-import typings.oracleOraclejet.AnonDefinition
-import typings.oracleOraclejet.AnonInstruction
-import typings.oracleOraclejet.AnonRequired
+import typings.oracleOraclejet.anon.ConverterHint
+import typings.oracleOraclejet.anon.Definition
+import typings.oracleOraclejet.anon.Instruction
+import typings.oracleOraclejet.anon.Required
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojeditablevalueMod.editableValueSettableProperties
 import typings.oracleOraclejet.ojmessagingMod.^
@@ -26,33 +26,30 @@ trait ojRadiosetSettableProperties[K, D]
   var optionsKeys: js.UndefOr[OptionsKeys] = js.undefined
   var required: Boolean
   @JSName("translations")
-  var translations_ojRadiosetSettableProperties: AnonRequired
+  var translations_ojRadiosetSettableProperties: Required
 }
 
 object ojRadiosetSettableProperties {
   @scala.inline
   def apply[K, D](
     disabled: Boolean,
-    displayOptions: AnonConverterHint,
-    help: AnonInstruction,
-    helpHints: AnonDefinition,
+    displayOptions: ConverterHint,
+    help: Instruction,
+    helpHints: Definition,
     labelHint: String,
     messagesCustom: js.Array[^],
     required: Boolean,
-    translations: AnonRequired,
+    translations: Required,
     valid: valid | pending | invalidHidden | invalidShown,
     value: js.Any,
     describedBy: String = null,
     labelledBy: String = null,
-    optionRenderer: /* param0 */ OptionContext[D] => Element = null,
+    optionRenderer: js.UndefOr[Null | (/* param0 */ OptionContext[D] => Element)] = js.undefined,
     options: DataProvider[K, D] = null,
     optionsKeys: OptionsKeys = null
   ): ojRadiosetSettableProperties[K, D] = {
-    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy.asInstanceOf[js.Any])
-    if (labelledBy != null) __obj.updateDynamic("labelledBy")(labelledBy.asInstanceOf[js.Any])
-    if (optionRenderer != null) __obj.updateDynamic("optionRenderer")(js.Any.fromFunction1(optionRenderer))
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], describedBy = describedBy.asInstanceOf[js.Any], labelledBy = labelledBy.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
+    if (!js.isUndefined(optionRenderer)) __obj.updateDynamic("optionRenderer")(if (optionRenderer != null) js.Any.fromFunction1(optionRenderer.asInstanceOf[/* param0 */ OptionContext[D] => Element]) else null)
     if (optionsKeys != null) __obj.updateDynamic("optionsKeys")(optionsKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojRadiosetSettableProperties[K, D]]
   }

@@ -1,6 +1,5 @@
 package typings.tableau.tableau
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,20 +25,6 @@ object FilterUpdateType extends js.Object {
   /** Replaces the current filter values with new ones specified in the call */
   @js.native
   sealed trait REPLACE extends FilterUpdateType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[FilterUpdateType with String] = js.native
-  /* "add" */ @js.native
-  object ADD extends TopLevel[ADD with String]
-  
-  /* "all" */ @js.native
-  object ALL extends TopLevel[ALL with String]
-  
-  /* "remove" */ @js.native
-  object REMOVE extends TopLevel[REMOVE with String]
-  
-  /* "replace" */ @js.native
-  object REPLACE extends TopLevel[REPLACE with String]
   
 }
 

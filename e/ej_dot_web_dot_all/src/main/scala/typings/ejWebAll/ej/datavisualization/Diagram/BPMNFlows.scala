@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.Diagram
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object BPMNFlows extends js.Object {
   //Used to specify the Sequence flow in a BPMN Process
   @js.native
   sealed trait Sequence extends BPMNFlows
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BPMNFlows with Double] = js.native
-  /* 1 */ @js.native
-  object Association extends TopLevel[Association with Double]
-  
-  /* 2 */ @js.native
-  object Message extends TopLevel[Message with Double]
-  
-  /* 0 */ @js.native
-  object Sequence extends TopLevel[Sequence with Double]
   
 }
 

@@ -1,5 +1,6 @@
 package typings.cordovaPluginCanvascamera
 
+import typings.cordovaPluginCanvascamera.anon.Width
 import typings.cordovaPluginCanvascamera.cordovaPluginCanvascameraStrings.data
 import typings.cordovaPluginCanvascamera.cordovaPluginCanvascameraStrings.file
 import typings.cordovaPluginCanvascamera.cordovaPluginCanvascameraStrings.landscape
@@ -11,9 +12,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Renderer")
 @js.native
-class Renderer protected () extends js.Object {
+trait Renderer extends js.Object {
   var available: Boolean = js.native
   var buffer: js.Array[_] = js.native
   var context: CanvasRenderingContext2D = js.native
@@ -22,7 +22,7 @@ class Renderer protected () extends js.Object {
   var image: HTMLImageElement = js.native
   var orientation: portrait | landscape = js.native
   var parent: CanvasCamera = js.native
-  var size: AnonHeight = js.native
+  var size: Width = js.native
   var `type`: file | data = js.native
   @JSName("bufferize")
   def bufferize_data(data: js.Any, `type`: data): Renderer = js.native
@@ -49,7 +49,7 @@ class Renderer protected () extends js.Object {
   def run(): Renderer = js.native
   def setOnAfterDraw(onAfterDraw: js.Function1[/* frame */ js.UndefOr[Frame], Unit]): Renderer = js.native
   def setOnBeforeDraw(onBeforeDraw: js.Function1[/* frame */ js.UndefOr[Frame], Unit]): Renderer = js.native
-  def setSize(size: AnonHeight): Renderer = js.native
-  def setSize(size: AnonHeight, auto: Boolean): Renderer = js.native
+  def setSize(size: Width): Renderer = js.native
+  def setSize(size: Width, auto: Boolean): Renderer = js.native
 }
 

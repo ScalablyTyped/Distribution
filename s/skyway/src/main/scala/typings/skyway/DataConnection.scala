@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DataConnection")
 @js.native
-class DataConnection () extends js.Object {
+trait DataConnection extends js.Object {
   var metadata: js.Any = js.native
   var open: Boolean = js.native
   var peer: String = js.native

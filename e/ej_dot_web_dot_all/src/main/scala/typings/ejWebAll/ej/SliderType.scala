@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,17 +18,6 @@ object SliderType extends js.Object {
   
   @js.native
   sealed trait Range extends SliderType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SliderType with Double] = js.native
-  /* 0 */ @js.native
-  object Default extends TopLevel[Default with Double]
-  
-  /* 1 */ @js.native
-  object MinRange extends TopLevel[MinRange with Double]
-  
-  /* 2 */ @js.native
-  object Range extends TopLevel[Range with Double]
   
 }
 

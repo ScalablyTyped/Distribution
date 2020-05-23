@@ -15,7 +15,7 @@ object MenuItem {
   @scala.inline
   def apply(selectable: Boolean, text: String, visible: Boolean, active: js.UndefOr[Boolean] = js.undefined): MenuItem = {
     val __obj = js.Dynamic.literal(selectable = selectable.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuItem]
   }
 }

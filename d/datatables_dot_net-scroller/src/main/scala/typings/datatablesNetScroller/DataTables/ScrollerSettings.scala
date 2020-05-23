@@ -40,20 +40,20 @@ trait ScrollerSettings extends js.Object {
 object ScrollerSettings {
   @scala.inline
   def apply(
-    boundaryScale: Int | Double = null,
-    displayBuffer: Int | Double = null,
+    boundaryScale: js.UndefOr[Double] = js.undefined,
+    displayBuffer: js.UndefOr[Double] = js.undefined,
     loadingIndicator: js.UndefOr[Boolean] = js.undefined,
     rowHeight: Double | String = null,
-    serverWait: Int | Double = null,
+    serverWait: js.UndefOr[Double] = js.undefined,
     trace: js.UndefOr[Boolean] = js.undefined
   ): ScrollerSettings = {
     val __obj = js.Dynamic.literal()
-    if (boundaryScale != null) __obj.updateDynamic("boundaryScale")(boundaryScale.asInstanceOf[js.Any])
-    if (displayBuffer != null) __obj.updateDynamic("displayBuffer")(displayBuffer.asInstanceOf[js.Any])
-    if (!js.isUndefined(loadingIndicator)) __obj.updateDynamic("loadingIndicator")(loadingIndicator.asInstanceOf[js.Any])
+    if (!js.isUndefined(boundaryScale)) __obj.updateDynamic("boundaryScale")(boundaryScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayBuffer)) __obj.updateDynamic("displayBuffer")(displayBuffer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loadingIndicator)) __obj.updateDynamic("loadingIndicator")(loadingIndicator.get.asInstanceOf[js.Any])
     if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
-    if (serverWait != null) __obj.updateDynamic("serverWait")(serverWait.asInstanceOf[js.Any])
-    if (!js.isUndefined(trace)) __obj.updateDynamic("trace")(trace.asInstanceOf[js.Any])
+    if (!js.isUndefined(serverWait)) __obj.updateDynamic("serverWait")(serverWait.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trace)) __obj.updateDynamic("trace")(trace.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollerSettings]
   }
 }

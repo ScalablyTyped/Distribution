@@ -1,6 +1,6 @@
 package typings.emojiMart.sharedPropsMod
 
-import typings.emojiMart.RecordCategoryNamestring
+import typings.emojiMart.anon.RecordCategoryNamestring
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

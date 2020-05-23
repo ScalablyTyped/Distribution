@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +23,27 @@ trait Touch extends js.Object {
   val touchType: TouchType
 }
 
-@JSGlobal("Touch")
-@js.native
-object Touch extends Instantiable1[/* touchInitDict */ TouchInit, Touch]
+object Touch {
+  @scala.inline
+  def apply(
+    altitudeAngle: Double,
+    azimuthAngle: Double,
+    clientX: Double,
+    clientY: Double,
+    force: Double,
+    identifier: Double,
+    pageX: Double,
+    pageY: Double,
+    radiusX: Double,
+    radiusY: Double,
+    rotationAngle: Double,
+    screenX: Double,
+    screenY: Double,
+    target: EventTarget,
+    touchType: TouchType
+  ): Touch = {
+    val __obj = js.Dynamic.literal(altitudeAngle = altitudeAngle.asInstanceOf[js.Any], azimuthAngle = azimuthAngle.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], radiusX = radiusX.asInstanceOf[js.Any], radiusY = radiusY.asInstanceOf[js.Any], rotationAngle = rotationAngle.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], touchType = touchType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Touch]
+  }
+}
 

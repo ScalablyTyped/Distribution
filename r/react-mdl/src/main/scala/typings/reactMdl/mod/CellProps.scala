@@ -36,12 +36,12 @@ object CellProps {
     hideDesktop: js.UndefOr[Boolean] = js.undefined,
     hidePhone: js.UndefOr[Boolean] = js.undefined,
     hideTablet: js.UndefOr[Boolean] = js.undefined,
-    offset: Int | Double = null,
-    offsetDesktop: Int | Double = null,
-    offsetPhone: Int | Double = null,
-    offsetTablet: Int | Double = null,
-    phone: Int | Double = null,
-    tablet: Int | Double = null
+    offset: js.UndefOr[Double] = js.undefined,
+    offsetDesktop: js.UndefOr[Double] = js.undefined,
+    offsetPhone: js.UndefOr[Double] = js.undefined,
+    offsetTablet: js.UndefOr[Double] = js.undefined,
+    phone: js.UndefOr[Double] = js.undefined,
+    tablet: js.UndefOr[Double] = js.undefined
   ): CellProps = {
     val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any])
     if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
@@ -49,15 +49,15 @@ object CellProps {
     if (CustomRenderedComponent != null) js.Dynamic.global.Object.assign(__obj, CustomRenderedComponent)
     if (ShadowedComponent != null) js.Dynamic.global.Object.assign(__obj, ShadowedComponent)
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideDesktop)) __obj.updateDynamic("hideDesktop")(hideDesktop.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidePhone)) __obj.updateDynamic("hidePhone")(hidePhone.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideTablet)) __obj.updateDynamic("hideTablet")(hideTablet.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (offsetDesktop != null) __obj.updateDynamic("offsetDesktop")(offsetDesktop.asInstanceOf[js.Any])
-    if (offsetPhone != null) __obj.updateDynamic("offsetPhone")(offsetPhone.asInstanceOf[js.Any])
-    if (offsetTablet != null) __obj.updateDynamic("offsetTablet")(offsetTablet.asInstanceOf[js.Any])
-    if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
-    if (tablet != null) __obj.updateDynamic("tablet")(tablet.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideDesktop)) __obj.updateDynamic("hideDesktop")(hideDesktop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidePhone)) __obj.updateDynamic("hidePhone")(hidePhone.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideTablet)) __obj.updateDynamic("hideTablet")(hideTablet.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetDesktop)) __obj.updateDynamic("offsetDesktop")(offsetDesktop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetPhone)) __obj.updateDynamic("offsetPhone")(offsetPhone.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetTablet)) __obj.updateDynamic("offsetTablet")(offsetTablet.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(phone)) __obj.updateDynamic("phone")(phone.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tablet)) __obj.updateDynamic("tablet")(tablet.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellProps]
   }
 }

@@ -60,28 +60,28 @@ object ScrollSettings {
   def apply(
     allowVirtualScrolling: js.UndefOr[Boolean] = js.undefined,
     autoHide: js.UndefOr[Boolean] = js.undefined,
-    buttonSize: Int | Double = null,
+    buttonSize: js.UndefOr[Double] = js.undefined,
     enableTouchScroll: js.UndefOr[Boolean] = js.undefined,
     enableVirtualization: js.UndefOr[Boolean] = js.undefined,
-    frozenColumns: Int | Double = null,
-    frozenRows: Int | Double = null,
+    frozenColumns: js.UndefOr[Double] = js.undefined,
+    frozenRows: js.UndefOr[Double] = js.undefined,
     height: String | Double = null,
-    scrollOneStepBy: Int | Double = null,
-    scrollerSize: Int | Double = null,
+    scrollOneStepBy: js.UndefOr[Double] = js.undefined,
+    scrollerSize: js.UndefOr[Double] = js.undefined,
     virtualScrollMode: VirtualScrollMode | String = null,
     width: String | Double = null
   ): ScrollSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowVirtualScrolling)) __obj.updateDynamic("allowVirtualScrolling")(allowVirtualScrolling.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide.asInstanceOf[js.Any])
-    if (buttonSize != null) __obj.updateDynamic("buttonSize")(buttonSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTouchScroll)) __obj.updateDynamic("enableTouchScroll")(enableTouchScroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableVirtualization)) __obj.updateDynamic("enableVirtualization")(enableVirtualization.asInstanceOf[js.Any])
-    if (frozenColumns != null) __obj.updateDynamic("frozenColumns")(frozenColumns.asInstanceOf[js.Any])
-    if (frozenRows != null) __obj.updateDynamic("frozenRows")(frozenRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowVirtualScrolling)) __obj.updateDynamic("allowVirtualScrolling")(allowVirtualScrolling.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(buttonSize)) __obj.updateDynamic("buttonSize")(buttonSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTouchScroll)) __obj.updateDynamic("enableTouchScroll")(enableTouchScroll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableVirtualization)) __obj.updateDynamic("enableVirtualization")(enableVirtualization.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(frozenColumns)) __obj.updateDynamic("frozenColumns")(frozenColumns.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(frozenRows)) __obj.updateDynamic("frozenRows")(frozenRows.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (scrollOneStepBy != null) __obj.updateDynamic("scrollOneStepBy")(scrollOneStepBy.asInstanceOf[js.Any])
-    if (scrollerSize != null) __obj.updateDynamic("scrollerSize")(scrollerSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollOneStepBy)) __obj.updateDynamic("scrollOneStepBy")(scrollOneStepBy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollerSize)) __obj.updateDynamic("scrollerSize")(scrollerSize.get.asInstanceOf[js.Any])
     if (virtualScrollMode != null) __obj.updateDynamic("virtualScrollMode")(virtualScrollMode.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollSettings]

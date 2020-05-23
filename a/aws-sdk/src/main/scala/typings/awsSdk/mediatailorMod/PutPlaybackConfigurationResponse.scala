@@ -78,7 +78,7 @@ object PutPlaybackConfigurationResponse {
     HlsConfiguration: HlsConfiguration = null,
     LivePreRollConfiguration: LivePreRollConfiguration = null,
     Name: string = null,
-    PersonalizationThresholdSeconds: Int | Double = null,
+    PersonalizationThresholdSeconds: js.UndefOr[integerMin1] = js.undefined,
     PlaybackConfigurationArn: string = null,
     PlaybackEndpointPrefix: string = null,
     SessionInitializationEndpointPrefix: string = null,
@@ -95,7 +95,7 @@ object PutPlaybackConfigurationResponse {
     if (HlsConfiguration != null) __obj.updateDynamic("HlsConfiguration")(HlsConfiguration.asInstanceOf[js.Any])
     if (LivePreRollConfiguration != null) __obj.updateDynamic("LivePreRollConfiguration")(LivePreRollConfiguration.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (PersonalizationThresholdSeconds != null) __obj.updateDynamic("PersonalizationThresholdSeconds")(PersonalizationThresholdSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(PersonalizationThresholdSeconds)) __obj.updateDynamic("PersonalizationThresholdSeconds")(PersonalizationThresholdSeconds.get.asInstanceOf[js.Any])
     if (PlaybackConfigurationArn != null) __obj.updateDynamic("PlaybackConfigurationArn")(PlaybackConfigurationArn.asInstanceOf[js.Any])
     if (PlaybackEndpointPrefix != null) __obj.updateDynamic("PlaybackEndpointPrefix")(PlaybackEndpointPrefix.asInstanceOf[js.Any])
     if (SessionInitializationEndpointPrefix != null) __obj.updateDynamic("SessionInitializationEndpointPrefix")(SessionInitializationEndpointPrefix.asInstanceOf[js.Any])

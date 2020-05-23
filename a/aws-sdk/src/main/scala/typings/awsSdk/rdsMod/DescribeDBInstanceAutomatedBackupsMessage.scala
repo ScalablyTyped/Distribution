@@ -35,14 +35,14 @@ object DescribeDBInstanceAutomatedBackupsMessage {
     DbiResourceId: String = null,
     Filters: FilterList = null,
     Marker: String = null,
-    MaxRecords: Int | scala.Double = null
+    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
   ): DescribeDBInstanceAutomatedBackupsMessage = {
     val __obj = js.Dynamic.literal()
     if (DBInstanceIdentifier != null) __obj.updateDynamic("DBInstanceIdentifier")(DBInstanceIdentifier.asInstanceOf[js.Any])
     if (DbiResourceId != null) __obj.updateDynamic("DbiResourceId")(DbiResourceId.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDBInstanceAutomatedBackupsMessage]
   }
 }

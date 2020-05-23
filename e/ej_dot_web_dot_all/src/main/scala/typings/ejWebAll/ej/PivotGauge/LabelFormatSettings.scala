@@ -24,13 +24,13 @@ trait LabelFormatSettings extends js.Object {
 object LabelFormatSettings {
   @scala.inline
   def apply(
-    decimalPlaces: Int | Double = null,
+    decimalPlaces: js.UndefOr[Double] = js.undefined,
     numberFormat: NumberFormat | String = null,
     prefixText: String = null,
     suffixText: String = null
   ): LabelFormatSettings = {
     val __obj = js.Dynamic.literal()
-    if (decimalPlaces != null) __obj.updateDynamic("decimalPlaces")(decimalPlaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(decimalPlaces)) __obj.updateDynamic("decimalPlaces")(decimalPlaces.get.asInstanceOf[js.Any])
     if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
     if (prefixText != null) __obj.updateDynamic("prefixText")(prefixText.asInstanceOf[js.Any])
     if (suffixText != null) __obj.updateDynamic("suffixText")(suffixText.asInstanceOf[js.Any])

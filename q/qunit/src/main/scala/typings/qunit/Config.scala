@@ -1,5 +1,6 @@
 package typings.qunit
 
+import typings.qunit.anon.Id
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,7 +25,7 @@ trait Config extends js.Object {
   var seed: String
   var testId: js.Array[String]
   var testTimeout: Double
-  var urlConfig: js.Array[AnonId]
+  var urlConfig: js.Array[Id]
 }
 
 object Config {
@@ -48,7 +49,7 @@ object Config {
     seed: String,
     testId: js.Array[String],
     testTimeout: Double,
-    urlConfig: js.Array[AnonId]
+    urlConfig: js.Array[Id]
   ): Config = {
     val __obj = js.Dynamic.literal(altertitle = altertitle.asInstanceOf[js.Any], autostart = autostart.asInstanceOf[js.Any], collapse = collapse.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], fixture = fixture.asInstanceOf[js.Any], hidepassed = hidepassed.asInstanceOf[js.Any], maxDepth = maxDepth.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any], moduleId = moduleId.asInstanceOf[js.Any], noglobals = noglobals.asInstanceOf[js.Any], notrycatch = notrycatch.asInstanceOf[js.Any], reorder = reorder.asInstanceOf[js.Any], requireExpects = requireExpects.asInstanceOf[js.Any], scrolltop = scrolltop.asInstanceOf[js.Any], seed = seed.asInstanceOf[js.Any], testId = testId.asInstanceOf[js.Any], testTimeout = testTimeout.asInstanceOf[js.Any], urlConfig = urlConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]

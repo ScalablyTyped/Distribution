@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.mesh
 import typings.arcgisJsApi.esri.geometry.Geometry
 import scala.scalajs.js
@@ -114,8 +113,4 @@ trait Mesh
     */
   def vertexAttributesChanged(): Unit = js.native
 }
-
-@JSGlobal("__esri.Mesh")
-@js.native
-object Mesh extends TopLevel[MeshConstructor]
 

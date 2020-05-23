@@ -1,6 +1,6 @@
 package typings.optimizeCssAssetsWebpackPlugin.mod
 
-import typings.optimizeCssAssetsWebpackPlugin.AnonProcess
+import typings.optimizeCssAssetsWebpackPlugin.anon.Process
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,7 +29,7 @@ trait Options extends js.Object {
     *
     * @default cssnano
     */
-  var cssProcessor: js.UndefOr[AnonProcess] = js.undefined
+  var cssProcessor: js.UndefOr[Process] = js.undefined
   /**
     * The options passed to the `cssProcessor`.
     *
@@ -49,13 +49,13 @@ object Options {
   def apply(
     assetNameRegExp: RegExp = null,
     canPrint: js.UndefOr[Boolean] = js.undefined,
-    cssProcessor: AnonProcess = null,
+    cssProcessor: Process = null,
     cssProcessorOptions: js.Object = null,
     cssProcessorPluginOptions: js.Object = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (assetNameRegExp != null) __obj.updateDynamic("assetNameRegExp")(assetNameRegExp.asInstanceOf[js.Any])
-    if (!js.isUndefined(canPrint)) __obj.updateDynamic("canPrint")(canPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(canPrint)) __obj.updateDynamic("canPrint")(canPrint.get.asInstanceOf[js.Any])
     if (cssProcessor != null) __obj.updateDynamic("cssProcessor")(cssProcessor.asInstanceOf[js.Any])
     if (cssProcessorOptions != null) __obj.updateDynamic("cssProcessorOptions")(cssProcessorOptions.asInstanceOf[js.Any])
     if (cssProcessorPluginOptions != null) __obj.updateDynamic("cssProcessorPluginOptions")(cssProcessorPluginOptions.asInstanceOf[js.Any])

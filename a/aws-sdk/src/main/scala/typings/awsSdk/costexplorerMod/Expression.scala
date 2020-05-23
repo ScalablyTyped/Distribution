@@ -11,7 +11,7 @@ trait Expression extends js.Object {
     */
   var And: js.UndefOr[Expressions] = js.native
   /**
-    *   Cost Category is in public beta for AWS Billing and Cost Management and is subject to change. Your use of Cost Categories is subject to the Beta Service Participation terms of the AWS Service Terms (Section 1.10).   The specific CostCategory used for Expression.
+    * The filter based on CostCategory values.
     */
   var CostCategories: js.UndefOr[CostCategoryValues] = js.native
   /**

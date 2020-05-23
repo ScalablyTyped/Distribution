@@ -1,6 +1,5 @@
 package typings.qtip2.QTip2
 
-import typings.qtip2.AnonText
 import typings.qtip2.JQuery
 import typings.qtip2.qtip2Strings.api
 import typings.qtip2.qtip2Strings.blur
@@ -63,7 +62,7 @@ import typings.qtip2.qtip2Strings.styleDotwidget
 import typings.qtip2.qtip2Strings.styleDotwidth
 import typings.qtip2.qtip2Strings.suppress
 import typings.qtip2.qtip2Strings.toggle
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -78,16 +77,16 @@ trait Plugin extends js.Object {
   def apply(methodName: String, p1: js.Any, p2: js.Any, p3: js.Any): js.Any = js.native
   def apply(methodName: api): Api = js.native
   def apply(methodName: blur): JQuery = js.native
-  def apply(methodName: blur, event: Event_): JQuery = js.native
+  def apply(methodName: blur, event: Event): JQuery = js.native
   def apply(methodName: destroy): JQuery = js.native
   def apply(methodName: destroy, immediate: Boolean): JQuery = js.native
   def apply(methodName: disable): JQuery = js.native
   def apply(methodName: disable, state: Boolean): JQuery = js.native
   def apply(methodName: enable): JQuery = js.native
   def apply(methodName: focus): JQuery = js.native
-  def apply(methodName: focus, event: Event_): JQuery = js.native
+  def apply(methodName: focus, event: Event): JQuery = js.native
   def apply(methodName: hide): JQuery = js.native
-  def apply(methodName: hide, event: Event_): JQuery = js.native
+  def apply(methodName: hide, event: Event): JQuery = js.native
   def apply(methodName: option, properties: QTipOptions): Api = js.native
   def apply(methodName: option, propertyName: content): Content = js.native
   def apply(methodName: option, propertyName: contentDotattr): String = js.native
@@ -99,8 +98,8 @@ trait Plugin extends js.Object {
   def apply(methodName: option, propertyName: contentDottext): Text = js.native
   def apply(methodName: option, propertyName: contentDottext, value: Text): Api = js.native
   def apply(methodName: option, propertyName: contentDottitle): Title = js.native
-  def apply(methodName: option, propertyName: contentDottitle, value: AnonText): Api = js.native
   def apply(methodName: option, propertyName: contentDottitle, value: Title): Api = js.native
+  def apply(methodName: option, propertyName: contentDottitle, value: typings.qtip2.anon.Text): Api = js.native
   def apply(methodName: option, propertyName: content, value: Content): Api = js.native
   def apply(methodName: option, propertyName: content, value: Text): Api = js.native
   def apply(methodName: option, propertyName: events): Events = js.native
@@ -225,13 +224,13 @@ trait Plugin extends js.Object {
   def apply(methodName: option, propertyName: suppress): Boolean = js.native
   def apply(methodName: option, propertyName: suppress, value: Boolean): Api = js.native
   def apply(methodName: reposition): JQuery = js.native
-  def apply(methodName: reposition, event: Event_): JQuery = js.native
-  def apply(methodName: reposition, event: Event_, effect: Boolean): JQuery = js.native
+  def apply(methodName: reposition, event: Event): JQuery = js.native
+  def apply(methodName: reposition, event: Event, effect: Boolean): JQuery = js.native
   def apply(methodName: show): JQuery = js.native
-  def apply(methodName: show, event: Event_): JQuery = js.native
+  def apply(methodName: show, event: Event): JQuery = js.native
   def apply(methodName: toggle): JQuery = js.native
   def apply(methodName: toggle, state: Boolean): JQuery = js.native
-  def apply(methodName: toggle, state: Boolean, event: Event_): JQuery = js.native
+  def apply(methodName: toggle, state: Boolean, event: Event): JQuery = js.native
   def apply(options: QTipOptions): JQuery = js.native
 }
 

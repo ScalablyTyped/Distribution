@@ -12,10 +12,14 @@ trait PingOption extends js.Object {
 
 object PingOption {
   @scala.inline
-  def apply(pin: Double | String, freq: Int | Double = null, pulse: Int | Double = null): PingOption = {
+  def apply(
+    pin: Double | String,
+    freq: js.UndefOr[Double] = js.undefined,
+    pulse: js.UndefOr[Double] = js.undefined
+  ): PingOption = {
     val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
-    if (freq != null) __obj.updateDynamic("freq")(freq.asInstanceOf[js.Any])
-    if (pulse != null) __obj.updateDynamic("pulse")(pulse.asInstanceOf[js.Any])
+    if (!js.isUndefined(freq)) __obj.updateDynamic("freq")(freq.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pulse)) __obj.updateDynamic("pulse")(pulse.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PingOption]
   }
 }

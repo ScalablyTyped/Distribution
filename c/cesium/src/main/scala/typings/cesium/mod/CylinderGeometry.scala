@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonBottomRadius
+import typings.cesium.anon.BottomRadius
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "CylinderGeometry")
 @js.native
 class CylinderGeometry protected () extends Packable {
-  def this(options: AnonBottomRadius) = this()
+  def this(options: BottomRadius) = this()
 }
 
 /* static members */

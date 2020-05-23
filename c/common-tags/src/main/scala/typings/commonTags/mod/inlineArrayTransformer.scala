@@ -1,7 +1,7 @@
 package typings.commonTags.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.commonTags.AnonConjunction
+import typings.commonTags.anon.Conjunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object inlineArrayTransformer extends js.Object {
   def apply(): TemplateTransformer[StringDictionary[_]] = js.native
-  def apply(opts: AnonConjunction): TemplateTransformer[StringDictionary[_]] = js.native
+  def apply(opts: Conjunction): TemplateTransformer[StringDictionary[_]] = js.native
 }
 

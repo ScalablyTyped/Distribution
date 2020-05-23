@@ -5,10 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides data for a user changed event. */
-@JSGlobal("Windows.System.UserChangedEventArgs")
-@js.native
-abstract class UserChangedEventArgs () extends js.Object {
+trait UserChangedEventArgs extends js.Object {
   /** Gets the user. */
-  var user: User = js.native
+  var user: User
+}
+
+object UserChangedEventArgs {
+  @scala.inline
+  def apply(user: User): UserChangedEventArgs = {
+    val __obj = js.Dynamic.literal(user = user.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UserChangedEventArgs]
+  }
 }
 

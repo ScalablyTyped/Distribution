@@ -23,7 +23,7 @@ object Config {
     certFilePath: String = null,
     followAllRedirects: js.UndefOr[Boolean] = js.undefined,
     host: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     ssl: js.UndefOr[Boolean] = js.undefined,
     sslRejectUnAuthorized: js.UndefOr[Boolean] = js.undefined,
     vaultAppName: String = null,
@@ -32,11 +32,11 @@ object Config {
     val __obj = js.Dynamic.literal()
     if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion.asInstanceOf[js.Any])
     if (certFilePath != null) __obj.updateDynamic("certFilePath")(certFilePath.asInstanceOf[js.Any])
-    if (!js.isUndefined(followAllRedirects)) __obj.updateDynamic("followAllRedirects")(followAllRedirects.asInstanceOf[js.Any])
+    if (!js.isUndefined(followAllRedirects)) __obj.updateDynamic("followAllRedirects")(followAllRedirects.get.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
-    if (!js.isUndefined(sslRejectUnAuthorized)) __obj.updateDynamic("sslRejectUnAuthorized")(sslRejectUnAuthorized.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sslRejectUnAuthorized)) __obj.updateDynamic("sslRejectUnAuthorized")(sslRejectUnAuthorized.get.asInstanceOf[js.Any])
     if (vaultAppName != null) __obj.updateDynamic("vaultAppName")(vaultAppName.asInstanceOf[js.Any])
     if (vaultLoginUrl != null) __obj.updateDynamic("vaultLoginUrl")(vaultLoginUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]

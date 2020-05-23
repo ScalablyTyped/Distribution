@@ -47,13 +47,13 @@ trait CellProps[RecordType /* <: DefaultRecordType */] extends js.Object {
 
 object CellProps {
   @scala.inline
-  def apply[RecordType /* <: DefaultRecordType */](
+  def apply[RecordType](
     additionalProps: HTMLAttributes[HTMLElement] = null,
     align: AlignType = null,
     appendNode: ReactNode = null,
     children: ReactNode = null,
     className: String = null,
-    colSpan: Int | Double = null,
+    colSpan: js.UndefOr[Double] = js.undefined,
     component: CustomizeComponent = null,
     dataIndex: DataIndex = null,
     ellipsis: js.UndefOr[Boolean] = js.undefined,
@@ -61,13 +61,13 @@ object CellProps {
     firstFixRight: js.UndefOr[Boolean] = js.undefined,
     fixLeft: Double | `false` = null,
     fixRight: Double | `false` = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     lastFixLeft: js.UndefOr[Boolean] = js.undefined,
     lastFixRight: js.UndefOr[Boolean] = js.undefined,
     prefixCls: String = null,
     record: RecordType = null,
     render: (/* value */ js.Any, /* record */ RecordType, /* index */ Double) => ReactNode | RenderedCell[RecordType] = null,
-    rowSpan: Int | Double = null
+    rowSpan: js.UndefOr[Double] = js.undefined
   ): CellProps[RecordType] = {
     val __obj = js.Dynamic.literal()
     if (additionalProps != null) __obj.updateDynamic("additionalProps")(additionalProps.asInstanceOf[js.Any])
@@ -75,21 +75,21 @@ object CellProps {
     if (appendNode != null) __obj.updateDynamic("appendNode")(appendNode.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
+    if (!js.isUndefined(colSpan)) __obj.updateDynamic("colSpan")(colSpan.get.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (dataIndex != null) __obj.updateDynamic("dataIndex")(dataIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(ellipsis)) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
-    if (!js.isUndefined(firstFixLeft)) __obj.updateDynamic("firstFixLeft")(firstFixLeft.asInstanceOf[js.Any])
-    if (!js.isUndefined(firstFixRight)) __obj.updateDynamic("firstFixRight")(firstFixRight.asInstanceOf[js.Any])
+    if (!js.isUndefined(ellipsis)) __obj.updateDynamic("ellipsis")(ellipsis.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstFixLeft)) __obj.updateDynamic("firstFixLeft")(firstFixLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstFixRight)) __obj.updateDynamic("firstFixRight")(firstFixRight.get.asInstanceOf[js.Any])
     if (fixLeft != null) __obj.updateDynamic("fixLeft")(fixLeft.asInstanceOf[js.Any])
     if (fixRight != null) __obj.updateDynamic("fixRight")(fixRight.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(lastFixLeft)) __obj.updateDynamic("lastFixLeft")(lastFixLeft.asInstanceOf[js.Any])
-    if (!js.isUndefined(lastFixRight)) __obj.updateDynamic("lastFixRight")(lastFixRight.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastFixLeft)) __obj.updateDynamic("lastFixLeft")(lastFixLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastFixRight)) __obj.updateDynamic("lastFixRight")(lastFixRight.get.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (record != null) __obj.updateDynamic("record")(record.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction3(render))
-    if (rowSpan != null) __obj.updateDynamic("rowSpan")(rowSpan.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowSpan)) __obj.updateDynamic("rowSpan")(rowSpan.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellProps[RecordType]]
   }
 }

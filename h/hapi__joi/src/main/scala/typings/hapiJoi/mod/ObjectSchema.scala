@@ -86,6 +86,10 @@ trait ObjectSchema[TSchema] extends AnySchema {
     */
   def ref(): this.type = js.native
   /**
+    * Requires the object to be a `RegExp` object.
+    */
+  def regex(): this.type = js.native
+  /**
     * Renames a key to another name (deletes the renamed key).
     */
   def rename(from: String, to: String): this.type = js.native

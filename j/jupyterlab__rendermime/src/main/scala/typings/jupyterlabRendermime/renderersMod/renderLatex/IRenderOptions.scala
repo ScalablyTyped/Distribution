@@ -36,8 +36,7 @@ object IRenderOptions {
     source: String,
     latexTypesetter: ILatexTypesetter = null
   ): IRenderOptions = {
-    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], shouldTypeset = shouldTypeset.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-    if (latexTypesetter != null) __obj.updateDynamic("latexTypesetter")(latexTypesetter.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], shouldTypeset = shouldTypeset.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], latexTypesetter = latexTypesetter.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRenderOptions]
   }
 }

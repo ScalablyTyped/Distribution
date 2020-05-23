@@ -47,26 +47,26 @@ trait UpdateAccountPasswordPolicyRequest extends js.Object {
 object UpdateAccountPasswordPolicyRequest {
   @scala.inline
   def apply(
-    AllowUsersToChangePassword: js.UndefOr[Boolean] = js.undefined,
-    HardExpiry: js.UndefOr[Boolean] = js.undefined,
-    MaxPasswordAge: Int | Double = null,
-    MinimumPasswordLength: Int | Double = null,
-    PasswordReusePrevention: Int | Double = null,
-    RequireLowercaseCharacters: js.UndefOr[Boolean] = js.undefined,
-    RequireNumbers: js.UndefOr[Boolean] = js.undefined,
-    RequireSymbols: js.UndefOr[Boolean] = js.undefined,
-    RequireUppercaseCharacters: js.UndefOr[Boolean] = js.undefined
+    AllowUsersToChangePassword: js.UndefOr[booleanType] = js.undefined,
+    HardExpiry: js.UndefOr[booleanObjectType] = js.undefined,
+    MaxPasswordAge: js.UndefOr[maxPasswordAgeType] = js.undefined,
+    MinimumPasswordLength: js.UndefOr[minimumPasswordLengthType] = js.undefined,
+    PasswordReusePrevention: js.UndefOr[passwordReusePreventionType] = js.undefined,
+    RequireLowercaseCharacters: js.UndefOr[booleanType] = js.undefined,
+    RequireNumbers: js.UndefOr[booleanType] = js.undefined,
+    RequireSymbols: js.UndefOr[booleanType] = js.undefined,
+    RequireUppercaseCharacters: js.UndefOr[booleanType] = js.undefined
   ): UpdateAccountPasswordPolicyRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllowUsersToChangePassword)) __obj.updateDynamic("AllowUsersToChangePassword")(AllowUsersToChangePassword.asInstanceOf[js.Any])
-    if (!js.isUndefined(HardExpiry)) __obj.updateDynamic("HardExpiry")(HardExpiry.asInstanceOf[js.Any])
-    if (MaxPasswordAge != null) __obj.updateDynamic("MaxPasswordAge")(MaxPasswordAge.asInstanceOf[js.Any])
-    if (MinimumPasswordLength != null) __obj.updateDynamic("MinimumPasswordLength")(MinimumPasswordLength.asInstanceOf[js.Any])
-    if (PasswordReusePrevention != null) __obj.updateDynamic("PasswordReusePrevention")(PasswordReusePrevention.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequireLowercaseCharacters)) __obj.updateDynamic("RequireLowercaseCharacters")(RequireLowercaseCharacters.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequireNumbers)) __obj.updateDynamic("RequireNumbers")(RequireNumbers.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequireSymbols)) __obj.updateDynamic("RequireSymbols")(RequireSymbols.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequireUppercaseCharacters)) __obj.updateDynamic("RequireUppercaseCharacters")(RequireUppercaseCharacters.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllowUsersToChangePassword)) __obj.updateDynamic("AllowUsersToChangePassword")(AllowUsersToChangePassword.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(HardExpiry)) __obj.updateDynamic("HardExpiry")(HardExpiry.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxPasswordAge)) __obj.updateDynamic("MaxPasswordAge")(MaxPasswordAge.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinimumPasswordLength)) __obj.updateDynamic("MinimumPasswordLength")(MinimumPasswordLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(PasswordReusePrevention)) __obj.updateDynamic("PasswordReusePrevention")(PasswordReusePrevention.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RequireLowercaseCharacters)) __obj.updateDynamic("RequireLowercaseCharacters")(RequireLowercaseCharacters.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RequireNumbers)) __obj.updateDynamic("RequireNumbers")(RequireNumbers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RequireSymbols)) __obj.updateDynamic("RequireSymbols")(RequireSymbols.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RequireUppercaseCharacters)) __obj.updateDynamic("RequireUppercaseCharacters")(RequireUppercaseCharacters.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAccountPasswordPolicyRequest]
   }
 }

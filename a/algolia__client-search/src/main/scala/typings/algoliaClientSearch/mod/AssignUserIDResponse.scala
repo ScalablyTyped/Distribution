@@ -8,7 +8,7 @@ trait AssignUserIDResponse extends js.Object {
   /**
     * Date of creation of the userId.
     */
-  val createdAt: String
+  var createdAt: String
 }
 
 object AssignUserIDResponse {

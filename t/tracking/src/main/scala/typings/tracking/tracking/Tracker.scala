@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Base class for specific tracker types.
   */
-@JSGlobal("tracking.Tracker")
 @js.native
-abstract class Tracker () extends EventEmitter {
+trait Tracker extends EventEmitter {
   /**
     * Tracks the pixels on the array. This method is called for each video
     * frame in order to emit `track` event.

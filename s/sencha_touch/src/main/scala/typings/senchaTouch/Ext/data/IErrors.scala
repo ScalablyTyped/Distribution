@@ -10,18 +10,18 @@ import scala.scalajs.js.annotation._
 
 trait IErrors extends ICollection {
   /** [Method] Adds an item to the collection
-  		* @returns Object The item added.
-  		*/
+    * @returns Object The item added.
+    */
   @JSName("add")
   var add_IErrors: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns all of the errors for the given field
-  		* @param fieldName String The field to get errors for.
-  		* @returns Object[] All errors for the given field.
-  		*/
+    * @param fieldName String The field to get errors for.
+    * @returns Object[] All errors for the given field.
+    */
   var getByField: js.UndefOr[js.Function1[/* fieldName */ js.UndefOr[String], Array]] = js.undefined
   /** [Method] Returns true if there are no errors in the collection
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var isValid: js.UndefOr[js.Function0[Boolean]] = js.undefined
 }
 
@@ -99,7 +99,7 @@ object IErrors {
     items: Array = null,
     keys: Array = null,
     last: () => _ = null,
-    length: Int | Double = null,
+    length: js.UndefOr[Double] = js.undefined,
     map: js.Any = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
@@ -148,15 +148,15 @@ object IErrors {
     if (currentSortFn != null) __obj.updateDynamic("currentSortFn")(currentSortFn.asInstanceOf[js.Any])
     if (defaultSortDirection != null) __obj.updateDynamic("defaultSortDirection")(defaultSortDirection.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (!js.isUndefined(dirtyFilterFn)) __obj.updateDynamic("dirtyFilterFn")(dirtyFilterFn.asInstanceOf[js.Any])
-    if (!js.isUndefined(dirtySortFn)) __obj.updateDynamic("dirtySortFn")(dirtySortFn.asInstanceOf[js.Any])
+    if (!js.isUndefined(dirtyFilterFn)) __obj.updateDynamic("dirtyFilterFn")(dirtyFilterFn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dirtySortFn)) __obj.updateDynamic("dirtySortFn")(dirtySortFn.get.asInstanceOf[js.Any])
     if (each != null) __obj.updateDynamic("each")(js.Any.fromFunction2(each))
     if (eachKey != null) __obj.updateDynamic("eachKey")(js.Any.fromFunction2(eachKey))
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (filterBy != null) __obj.updateDynamic("filterBy")(js.Any.fromFunction2(filterBy))
     if (filterRoot != null) __obj.updateDynamic("filterRoot")(filterRoot.asInstanceOf[js.Any])
-    if (!js.isUndefined(filtered)) __obj.updateDynamic("filtered")(filtered.asInstanceOf[js.Any])
+    if (!js.isUndefined(filtered)) __obj.updateDynamic("filtered")(filtered.get.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     if (findBy != null) __obj.updateDynamic("findBy")(js.Any.fromFunction2(findBy))
     if (findIndexBy != null) __obj.updateDynamic("findIndexBy")(js.Any.fromFunction3(findIndexBy))
@@ -193,7 +193,7 @@ object IErrors {
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
     if (last != null) __obj.updateDynamic("last")(js.Any.fromFunction0(last))
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
@@ -213,10 +213,10 @@ object IErrors {
     if (setFilters != null) __obj.updateDynamic("setFilters")(js.Any.fromFunction1(setFilters))
     if (setSortRoot != null) __obj.updateDynamic("setSortRoot")(js.Any.fromFunction1(setSortRoot))
     if (setSorters != null) __obj.updateDynamic("setSorters")(js.Any.fromFunction1(setSorters))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction2(sort))
     if (sortRoot != null) __obj.updateDynamic("sortRoot")(sortRoot.asInstanceOf[js.Any])
-    if (!js.isUndefined(sorted)) __obj.updateDynamic("sorted")(sorted.asInstanceOf[js.Any])
+    if (!js.isUndefined(sorted)) __obj.updateDynamic("sorted")(sorted.get.asInstanceOf[js.Any])
     if (sorters != null) __obj.updateDynamic("sorters")(sorters.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])

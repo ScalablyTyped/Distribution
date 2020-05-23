@@ -3,7 +3,7 @@ package typings.bootstrapMultiselect
 import typings.bootstrapMultiselect.bootstrapMultiselectStrings.both
 import typings.bootstrapMultiselect.bootstrapMultiselectStrings.text
 import typings.bootstrapMultiselect.bootstrapMultiselectStrings.value
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.HTMLOptionElement
 import typings.std.HTMLOptionsCollection
@@ -175,22 +175,22 @@ trait MultiSelectOptions extends js.Object {
     * A callback called after the dropdown has been closed.
     * The onDropdownHidden option is not available when using Twitter Bootstrap 2.3.
     */
-  var onDropdownHidden: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
+  var onDropdownHidden: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   /**
     * A callback called when the dropdown is closed.
     * The onDropdownHide option is not available when using Twitter Bootstrap 2.3.
     */
-  var onDropdownHide: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
+  var onDropdownHide: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   /**
     * A callback called when the dropdown is shown.
     * The onDropdownShow option is not available when using Twitter Bootstrap 2.3.
     */
-  var onDropdownShow: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
+  var onDropdownShow: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   /**
     * A callback called after the dropdown has been shown.
     * The onDropdownShown option is not available when using Twitter Bootstrap 2.3.
     */
-  var onDropdownShown: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
+  var onDropdownShown: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   /**
     * A function which is triggered when the multiselect is finished initializing.
     */
@@ -269,16 +269,16 @@ object MultiSelectOptions {
     filterPlaceholder: String = null,
     includeSelectAllOption: js.UndefOr[Boolean] = js.undefined,
     inheritClass: js.UndefOr[Boolean] = js.undefined,
-    maxHeight: Int | Double = null,
+    maxHeight: js.UndefOr[Double] = js.undefined,
     nSelectedText: String = null,
     nonSelectedText: String = null,
-    numberDisplayed: Int | Double = null,
+    numberDisplayed: js.UndefOr[Double] = js.undefined,
     onChange: (/* option */ JQuery, /* checked */ Boolean) => Unit = null,
     onDeselectAll: () => Unit = null,
-    onDropdownHidden: /* event */ Event_ => Unit = null,
-    onDropdownHide: /* event */ Event_ => Unit = null,
-    onDropdownShow: /* event */ Event_ => Unit = null,
-    onDropdownShown: /* event */ Event_ => Unit = null,
+    onDropdownHidden: /* event */ Event => Unit = null,
+    onDropdownHide: /* event */ Event => Unit = null,
+    onDropdownShow: /* event */ Event => Unit = null,
+    onDropdownShown: /* event */ Event => Unit = null,
     onInitialized: (/* select */ HTMLSelectElement, /* container */ HTMLElement) => Unit = null,
     onSelectAll: () => Unit = null,
     optionClass: /* element */ HTMLElement => String = null,
@@ -300,24 +300,24 @@ object MultiSelectOptions {
     if (buttonWidth != null) __obj.updateDynamic("buttonWidth")(buttonWidth.asInstanceOf[js.Any])
     if (checkboxName != null) __obj.updateDynamic("checkboxName")(checkboxName.asInstanceOf[js.Any])
     if (delimiterText != null) __obj.updateDynamic("delimiterText")(delimiterText.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableIfEmpty)) __obj.updateDynamic("disableIfEmpty")(disableIfEmpty.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableIfEmpty)) __obj.updateDynamic("disableIfEmpty")(disableIfEmpty.get.asInstanceOf[js.Any])
     if (disabledText != null) __obj.updateDynamic("disabledText")(disabledText.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropRight)) __obj.updateDynamic("dropRight")(dropRight.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropUp)) __obj.updateDynamic("dropUp")(dropUp.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCaseInsensitiveFiltering)) __obj.updateDynamic("enableCaseInsensitiveFiltering")(enableCaseInsensitiveFiltering.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableClickableOptGroups)) __obj.updateDynamic("enableClickableOptGroups")(enableClickableOptGroups.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCollapsibleOptGroups)) __obj.updateDynamic("enableCollapsibleOptGroups")(enableCollapsibleOptGroups.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableFiltering)) __obj.updateDynamic("enableFiltering")(enableFiltering.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableFullValueFiltering)) __obj.updateDynamic("enableFullValueFiltering")(enableFullValueFiltering.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableHTML)) __obj.updateDynamic("enableHTML")(enableHTML.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropRight)) __obj.updateDynamic("dropRight")(dropRight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropUp)) __obj.updateDynamic("dropUp")(dropUp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCaseInsensitiveFiltering)) __obj.updateDynamic("enableCaseInsensitiveFiltering")(enableCaseInsensitiveFiltering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableClickableOptGroups)) __obj.updateDynamic("enableClickableOptGroups")(enableClickableOptGroups.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCollapsibleOptGroups)) __obj.updateDynamic("enableCollapsibleOptGroups")(enableCollapsibleOptGroups.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableFiltering)) __obj.updateDynamic("enableFiltering")(enableFiltering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableFullValueFiltering)) __obj.updateDynamic("enableFullValueFiltering")(enableFullValueFiltering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableHTML)) __obj.updateDynamic("enableHTML")(enableHTML.get.asInstanceOf[js.Any])
     if (filterBehavior != null) __obj.updateDynamic("filterBehavior")(filterBehavior.asInstanceOf[js.Any])
     if (filterPlaceholder != null) __obj.updateDynamic("filterPlaceholder")(filterPlaceholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeSelectAllOption)) __obj.updateDynamic("includeSelectAllOption")(includeSelectAllOption.asInstanceOf[js.Any])
-    if (!js.isUndefined(inheritClass)) __obj.updateDynamic("inheritClass")(inheritClass.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeSelectAllOption)) __obj.updateDynamic("includeSelectAllOption")(includeSelectAllOption.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inheritClass)) __obj.updateDynamic("inheritClass")(inheritClass.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
     if (nSelectedText != null) __obj.updateDynamic("nSelectedText")(nSelectedText.asInstanceOf[js.Any])
     if (nonSelectedText != null) __obj.updateDynamic("nonSelectedText")(nonSelectedText.asInstanceOf[js.Any])
-    if (numberDisplayed != null) __obj.updateDynamic("numberDisplayed")(numberDisplayed.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberDisplayed)) __obj.updateDynamic("numberDisplayed")(numberDisplayed.get.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onDeselectAll != null) __obj.updateDynamic("onDeselectAll")(js.Any.fromFunction0(onDeselectAll))
     if (onDropdownHidden != null) __obj.updateDynamic("onDropdownHidden")(js.Any.fromFunction1(onDropdownHidden))
@@ -328,9 +328,9 @@ object MultiSelectOptions {
     if (onSelectAll != null) __obj.updateDynamic("onSelectAll")(js.Any.fromFunction0(onSelectAll))
     if (optionClass != null) __obj.updateDynamic("optionClass")(js.Any.fromFunction1(optionClass))
     if (optionLabel != null) __obj.updateDynamic("optionLabel")(js.Any.fromFunction1(optionLabel))
-    if (!js.isUndefined(selectAllJustVisible)) __obj.updateDynamic("selectAllJustVisible")(selectAllJustVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectAllJustVisible)) __obj.updateDynamic("selectAllJustVisible")(selectAllJustVisible.get.asInstanceOf[js.Any])
     if (selectAllName != null) __obj.updateDynamic("selectAllName")(selectAllName.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectAllNumber)) __obj.updateDynamic("selectAllNumber")(selectAllNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectAllNumber)) __obj.updateDynamic("selectAllNumber")(selectAllNumber.get.asInstanceOf[js.Any])
     if (selectAllText != null) __obj.updateDynamic("selectAllText")(selectAllText.asInstanceOf[js.Any])
     if (selectAllValue != null) __obj.updateDynamic("selectAllValue")(selectAllValue.asInstanceOf[js.Any])
     if (selectedClass != null) __obj.updateDynamic("selectedClass")(selectedClass.asInstanceOf[js.Any])

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.DOMDragEvent")
 @js.native
-class DOMDragEvent protected () extends js.Object {
+trait DOMDragEvent extends js.Object {
   @JSName("MSHTML.DOMDragEvent_typekey")
   var MSHTMLDotDOMDragEvent_typekey: DOMDragEvent = js.native
   val altKey: Boolean = js.native

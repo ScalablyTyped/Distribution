@@ -1,7 +1,7 @@
 package typings.reactJsonPretty.mod
 
-import typings.reactJsonPretty.AnonData
-import typings.reactJsonPretty.AnonJson
+import typings.reactJsonPretty.anon.Data
+import typings.reactJsonPretty.anon.Json
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ class ^ () extends JSONPretty
 @JSImport("react-json-pretty", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var defaultProps: AnonJson = js.native
-  var propTypes: AnonData = js.native
+  var defaultProps: Json = js.native
+  var propTypes: Data = js.native
 }
 

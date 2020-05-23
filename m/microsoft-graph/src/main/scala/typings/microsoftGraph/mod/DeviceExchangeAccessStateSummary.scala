@@ -20,18 +20,18 @@ trait DeviceExchangeAccessStateSummary extends js.Object {
 object DeviceExchangeAccessStateSummary {
   @scala.inline
   def apply(
-    allowedDeviceCount: Int | Double = null,
-    blockedDeviceCount: Int | Double = null,
-    quarantinedDeviceCount: Int | Double = null,
-    unavailableDeviceCount: Int | Double = null,
-    unknownDeviceCount: Int | Double = null
+    allowedDeviceCount: js.UndefOr[Double] = js.undefined,
+    blockedDeviceCount: js.UndefOr[Double] = js.undefined,
+    quarantinedDeviceCount: js.UndefOr[Double] = js.undefined,
+    unavailableDeviceCount: js.UndefOr[Double] = js.undefined,
+    unknownDeviceCount: js.UndefOr[Double] = js.undefined
   ): DeviceExchangeAccessStateSummary = {
     val __obj = js.Dynamic.literal()
-    if (allowedDeviceCount != null) __obj.updateDynamic("allowedDeviceCount")(allowedDeviceCount.asInstanceOf[js.Any])
-    if (blockedDeviceCount != null) __obj.updateDynamic("blockedDeviceCount")(blockedDeviceCount.asInstanceOf[js.Any])
-    if (quarantinedDeviceCount != null) __obj.updateDynamic("quarantinedDeviceCount")(quarantinedDeviceCount.asInstanceOf[js.Any])
-    if (unavailableDeviceCount != null) __obj.updateDynamic("unavailableDeviceCount")(unavailableDeviceCount.asInstanceOf[js.Any])
-    if (unknownDeviceCount != null) __obj.updateDynamic("unknownDeviceCount")(unknownDeviceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowedDeviceCount)) __obj.updateDynamic("allowedDeviceCount")(allowedDeviceCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockedDeviceCount)) __obj.updateDynamic("blockedDeviceCount")(blockedDeviceCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quarantinedDeviceCount)) __obj.updateDynamic("quarantinedDeviceCount")(quarantinedDeviceCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unavailableDeviceCount)) __obj.updateDynamic("unavailableDeviceCount")(unavailableDeviceCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unknownDeviceCount)) __obj.updateDynamic("unknownDeviceCount")(unknownDeviceCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceExchangeAccessStateSummary]
   }
 }

@@ -15,7 +15,7 @@ object TagGroupModifierProps {
   @scala.inline
   def apply(gapless: js.UndefOr[Boolean] = js.undefined, size: medium | large = null): TagGroupModifierProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(gapless)) __obj.updateDynamic("gapless")(gapless.asInstanceOf[js.Any])
+    if (!js.isUndefined(gapless)) __obj.updateDynamic("gapless")(gapless.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagGroupModifierProps]
   }

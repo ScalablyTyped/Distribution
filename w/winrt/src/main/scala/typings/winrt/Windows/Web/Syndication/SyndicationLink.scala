@@ -7,38 +7,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Web.Syndication.SyndicationLink")
-@js.native
-class SyndicationLink () extends ISyndicationLink {
-  def this(uri: Uri) = this()
-  def this(uri: Uri, relationship: String, title: String, mediaType: String, length: Double) = this()
-  /* CompleteClass */
-  override var attributeExtensions: IVector[SyndicationAttribute] = js.native
-  /* CompleteClass */
-  override var baseUri: Uri = js.native
-  /* CompleteClass */
-  override var elementExtensions: IVector[ISyndicationNode] = js.native
-  /* CompleteClass */
-  override var language: String = js.native
-  /* CompleteClass */
-  override var length: Double = js.native
-  /* CompleteClass */
-  override var mediaType: String = js.native
-  /* CompleteClass */
-  override var nodeName: String = js.native
-  /* CompleteClass */
-  override var nodeNamespace: String = js.native
-  /* CompleteClass */
-  override var nodeValue: String = js.native
-  /* CompleteClass */
-  override var relationship: String = js.native
-  /* CompleteClass */
-  override var resourceLanguage: String = js.native
-  /* CompleteClass */
-  override var title: String = js.native
-  /* CompleteClass */
-  override var uri: Uri = js.native
-  /* CompleteClass */
-  override def getXmlDocument(format: SyndicationFormat): XmlDocument = js.native
+trait SyndicationLink extends ISyndicationLink
+
+object SyndicationLink {
+  @scala.inline
+  def apply(
+    attributeExtensions: IVector[SyndicationAttribute],
+    baseUri: Uri,
+    elementExtensions: IVector[ISyndicationNode],
+    getXmlDocument: SyndicationFormat => XmlDocument,
+    language: String,
+    length: Double,
+    mediaType: String,
+    nodeName: String,
+    nodeNamespace: String,
+    nodeValue: String,
+    relationship: String,
+    resourceLanguage: String,
+    title: String,
+    uri: Uri
+  ): SyndicationLink = {
+    val __obj = js.Dynamic.literal(attributeExtensions = attributeExtensions.asInstanceOf[js.Any], baseUri = baseUri.asInstanceOf[js.Any], elementExtensions = elementExtensions.asInstanceOf[js.Any], getXmlDocument = js.Any.fromFunction1(getXmlDocument), language = language.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], nodeNamespace = nodeNamespace.asInstanceOf[js.Any], nodeValue = nodeValue.asInstanceOf[js.Any], relationship = relationship.asInstanceOf[js.Any], resourceLanguage = resourceLanguage.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SyndicationLink]
+  }
 }
 

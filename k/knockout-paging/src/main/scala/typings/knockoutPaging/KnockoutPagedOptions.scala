@@ -12,11 +12,15 @@ trait KnockoutPagedOptions extends js.Object {
 
 object KnockoutPagedOptions {
   @scala.inline
-  def apply(pageGenerator: String = null, pageNumber: Int | Double = null, pageSize: Int | Double = null): KnockoutPagedOptions = {
+  def apply(
+    pageGenerator: String = null,
+    pageNumber: js.UndefOr[Double] = js.undefined,
+    pageSize: js.UndefOr[Double] = js.undefined
+  ): KnockoutPagedOptions = {
     val __obj = js.Dynamic.literal()
     if (pageGenerator != null) __obj.updateDynamic("pageGenerator")(pageGenerator.asInstanceOf[js.Any])
-    if (pageNumber != null) __obj.updateDynamic("pageNumber")(pageNumber.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageNumber)) __obj.updateDynamic("pageNumber")(pageNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutPagedOptions]
   }
 }

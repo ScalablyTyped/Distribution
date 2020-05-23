@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.AnonRadiusFunction
+import typings.babylonjs.anon.RadiusFunction
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -37,7 +37,7 @@ object TubeBuilder extends js.Object {
     * @see https://doc.babylonjs.com/how_to/parametric_shapes
     * @see https://doc.babylonjs.com/how_to/set_shapes#tube
     */
-  def CreateTube(name: String, options: AnonRadiusFunction): typings.babylonjs.meshMod.Mesh = js.native
-  def CreateTube(name: String, options: AnonRadiusFunction, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = js.native
+  def CreateTube(name: String, options: RadiusFunction): typings.babylonjs.meshMod.Mesh = js.native
+  def CreateTube(name: String, options: RadiusFunction, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = js.native
 }
 

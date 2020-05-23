@@ -10,23 +10,23 @@ trait IAction extends IColumn {
   /** [Config Option] (String) */
   var altText: js.UndefOr[String] = js.undefined
   /** [Method] Cascades down the component container heirarchy from this component passed in the first call  calling the specified
-  		* @param fn Object
-  		* @param scope Object
-  		* @returns Ext.Container this
-  		*/
+    * @param fn Object
+    * @param scope Object
+    * @returns Ext.Container this
+    */
   @JSName("cascade")
   var cascade_IAction: js.UndefOr[
     js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], IContainer]
   ] = js.undefined
   /** [Method] Renderer closure iterates through items creating an element for each and tagging with an identifying class name x ac
-  		* @param v Object
-  		* @param meta Object
-  		* @param record Object
-  		* @param rowIdx Object
-  		* @param colIdx Object
-  		* @param store Object
-  		* @param view Object
-  		*/
+    * @param v Object
+    * @param meta Object
+    * @param record Object
+    * @param rowIdx Object
+    * @param colIdx Object
+    * @param store Object
+    * @param view Object
+    */
   @JSName("defaultRenderer")
   var defaultRenderer_IAction: js.UndefOr[
     js.Function7[
@@ -41,16 +41,16 @@ trait IAction extends IColumn {
     ]
   ] = js.undefined
   /** [Method] Disables this ActionColumn s action at the specified index
-  		* @param index Number/Ext.grid.column.Action
-  		* @param silent Boolean
-  		*/
+    * @param index Number/Ext.grid.column.Action
+    * @param silent Boolean
+    */
   var disableAction: js.UndefOr[
     js.Function2[/* index */ js.UndefOr[js.Any], /* silent */ js.UndefOr[Boolean], Unit]
   ] = js.undefined
   /** [Method] Enables this ActionColumn s action at the specified index
-  		* @param index Number/Ext.grid.column.Action
-  		* @param silent Boolean
-  		*/
+    * @param index Number/Ext.grid.column.Action
+    * @param silent Boolean
+    */
   var enableAction: js.UndefOr[
     js.Function2[/* index */ js.UndefOr[js.Any], /* silent */ js.UndefOr[Boolean], Unit]
   ] = js.undefined
@@ -107,7 +107,7 @@ object IAction {
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (iconCls != null) __obj.updateDynamic("iconCls")(iconCls.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopSelection)) __obj.updateDynamic("stopSelection")(stopSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopSelection)) __obj.updateDynamic("stopSelection")(stopSelection.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAction]
   }
 }

@@ -1,7 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Instantiable3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,13 +22,11 @@ trait ImageData
   val width: Double
 }
 
-@JSGlobal("ImageData")
-@js.native
-object ImageData
-  extends Instantiable2[
-      (/* width */ Double) | (/* array */ Uint8ClampedArray), 
-      /* width */ Double, 
-      ImageData
-    ]
-     with Instantiable3[/* array */ Uint8ClampedArray, /* width */ Double, /* height */ Double, ImageData]
+object ImageData {
+  @scala.inline
+  def apply(data: Uint8ClampedArray, height: Double, width: Double): ImageData = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ImageData]
+  }
+}
 

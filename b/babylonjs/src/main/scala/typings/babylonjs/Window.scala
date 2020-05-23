@@ -1,14 +1,17 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.Instantiable1
+import typings.babylonjs.anon.Instantiable
 import typings.babylonjs.babylonjsStrings.vrdisplayconnected
 import typings.babylonjs.babylonjsStrings.vrdisplaydisconnected
 import typings.babylonjs.babylonjsStrings.vrdisplaypresentchange
 import typings.std.AudioContext
-import typings.std.Event_
+import typings.std.Event
 import typings.std.Float32ArrayConstructor
 import typings.std.FrameRequestCallback
 import typings.std.IDBFactory
 import typings.std.Uint8ArrayConstructor
+import typings.std.global.URL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,27 +31,27 @@ trait Window extends js.Object {
   var VRFrameData: js.Any = js.native
   var WebGLRenderingContext: typings.babylonjs.WebGLRenderingContext = js.native
   var mozIndexedDB: IDBFactory = js.native
-  var mozURL: AnonInstantiable = js.native
+  var mozURL: Instantiable with (Instantiable1[/* url */ String, URL]) = js.native
   var msIndexedDB: IDBFactory = js.native
-  var msURL: AnonInstantiable = js.native
-  var onvrdisplayconnected: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
-  var onvrdisplaydisconnected: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
-  var onvrdisplaypresentchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
+  var msURL: Instantiable with (Instantiable1[/* url */ String, URL]) = js.native
+  var onvrdisplayconnected: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onvrdisplaydisconnected: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onvrdisplaypresentchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var webkitAudioContext: AudioContext = js.native
   var webkitIndexedDB: IDBFactory = js.native
-  var webkitURL: AnonInstantiable = js.native
+  var webkitURL: Instantiable with (Instantiable1[/* url */ String, URL]) = js.native
   @JSName("addEventListener")
-  def addEventListener_vrdisplayconnected(`type`: vrdisplayconnected, listener: js.Function1[/* ev */ Event_, _]): Unit = js.native
+  def addEventListener_vrdisplayconnected(`type`: vrdisplayconnected, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_vrdisplayconnected(`type`: vrdisplayconnected, listener: js.Function1[/* ev */ Event_, _], useCapture: Boolean): Unit = js.native
+  def addEventListener_vrdisplayconnected(`type`: vrdisplayconnected, listener: js.Function1[/* ev */ Event, _], useCapture: Boolean): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_vrdisplaydisconnected(`type`: vrdisplaydisconnected, listener: js.Function1[/* ev */ Event_, _]): Unit = js.native
+  def addEventListener_vrdisplaydisconnected(`type`: vrdisplaydisconnected, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_vrdisplaydisconnected(`type`: vrdisplaydisconnected, listener: js.Function1[/* ev */ Event_, _], useCapture: Boolean): Unit = js.native
+  def addEventListener_vrdisplaydisconnected(`type`: vrdisplaydisconnected, listener: js.Function1[/* ev */ Event, _], useCapture: Boolean): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_vrdisplaypresentchange(`type`: vrdisplaypresentchange, listener: js.Function1[/* ev */ Event_, _]): Unit = js.native
+  def addEventListener_vrdisplaypresentchange(`type`: vrdisplaypresentchange, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_vrdisplaypresentchange(`type`: vrdisplaypresentchange, listener: js.Function1[/* ev */ Event_, _], useCapture: Boolean): Unit = js.native
+  def addEventListener_vrdisplaypresentchange(`type`: vrdisplaypresentchange, listener: js.Function1[/* ev */ Event, _], useCapture: Boolean): Unit = js.native
   def mozRequestAnimationFrame(callback: FrameRequestCallback): Double = js.native
   def oRequestAnimationFrame(callback: FrameRequestCallback): Double = js.native
   def setImmediate(handler: js.Function1[/* repeated */ js.Any, Unit]): Double = js.native

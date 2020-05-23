@@ -1,12 +1,12 @@
 package typings.jestWatcher.baseWatchPluginMod
 
 import typings.jestTypes.configMod.GlobalConfig
-import typings.jestWatcher.AnonStdin
+import typings.jestWatcher.anon.Stdin
 import typings.jestWatcher.typesMod.JestHookSubscriber
 import typings.jestWatcher.typesMod.UpdateConfigCallback
 import typings.jestWatcher.typesMod.UsageData
-import typings.node.processMod._Global_.NodeJS.ReadStream
-import typings.node.processMod._Global_.NodeJS.WriteStream
+import typings.node.processMod.global.NodeJS.ReadStream
+import typings.node.processMod.global.NodeJS.WriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSImport("jest-watcher/build/BaseWatchPlugin", JSImport.Default)
 @js.native
 class default protected () extends BaseWatchPlugin {
-  def this(hasStdinStdout: AnonStdin) = this()
+  def this(hasStdinStdout: Stdin) = this()
   /* CompleteClass */
   override var _stdin: ReadStream = js.native
   /* CompleteClass */

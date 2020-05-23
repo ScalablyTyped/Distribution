@@ -1,6 +1,7 @@
 package typings.sipJs
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.sipJs.anon.Error
 import typings.sipJs.bodyMod.Body
 import typings.sipJs.logMod.LoggerFactory
 import typings.sipJs.loggerMod.Logger
@@ -17,15 +18,14 @@ object messagesMod extends js.Object {
   @js.native
   class DigestAuthentication protected ()
     extends typings.sipJs.digestAuthenticationMod.DigestAuthentication {
-    def this(loggerFactory: LoggerFactory) = this()
-    def this(loggerFactory: LoggerFactory, username: String) = this()
-    def this(loggerFactory: LoggerFactory, username: js.UndefOr[scala.Nothing], password: String) = this()
     /**
       * Constructor.
       * @param loggerFactory - LoggerFactory.
       * @param username - Username.
       * @param password - Password.
       */
+    def this(loggerFactory: LoggerFactory) = this()
+    def this(loggerFactory: LoggerFactory, username: String) = this()
     def this(loggerFactory: LoggerFactory, username: String, password: String) = this()
   }
   
@@ -114,7 +114,7 @@ object messagesMod extends js.Object {
   
   def constructOutgoingResponse(message: typings.sipJs.incomingRequestMessageMod.IncomingRequestMessage, options: ResponseOptions): OutgoingResponse = js.native
   def fromBodyLegacy(bodyLegacy: String): Body = js.native
-  def fromBodyLegacy(bodyLegacy: AnonBody): Body = js.native
+  def fromBodyLegacy(bodyLegacy: typings.sipJs.anon.Body): Body = js.native
   def getBody(message: Body): js.UndefOr[Body] = js.native
   def getBody(message: typings.sipJs.incomingRequestMessageMod.IncomingRequestMessage): js.UndefOr[Body] = js.native
   def getBody(message: typings.sipJs.incomingResponseMessageMod.IncomingResponseMessage): js.UndefOr[Body] = js.native
@@ -122,20 +122,20 @@ object messagesMod extends js.Object {
   def isBody(body: js.Any): /* is sip.js.sip.js/lib/core/messages/body.Body */ Boolean = js.native
   @js.native
   object C extends js.Object {
-    val ACK: typings.sipJs.sipJsStrings.ACK = js.native
-    val BYE: typings.sipJs.sipJsStrings.BYE = js.native
-    val CANCEL: typings.sipJs.sipJsStrings.CANCEL = js.native
-    val INFO: typings.sipJs.sipJsStrings.INFO = js.native
-    val INVITE: typings.sipJs.sipJsStrings.INVITE = js.native
-    val MESSAGE: typings.sipJs.sipJsStrings.MESSAGE = js.native
-    val NOTIFY: typings.sipJs.sipJsStrings.NOTIFY = js.native
-    val OPTIONS: typings.sipJs.sipJsStrings.OPTIONS = js.native
-    val PRACK: typings.sipJs.sipJsStrings.PRACK = js.native
-    val PUBLISH: typings.sipJs.sipJsStrings.PUBLISH = js.native
-    val REFER: typings.sipJs.sipJsStrings.REFER = js.native
-    val REGISTER: typings.sipJs.sipJsStrings.REGISTER = js.native
-    val SUBSCRIBE: typings.sipJs.sipJsStrings.SUBSCRIBE = js.native
-    val UPDATE: typings.sipJs.sipJsStrings.UPDATE = js.native
+    val ACK: /* "ACK" */ String = js.native
+    val BYE: /* "BYE" */ String = js.native
+    val CANCEL: /* "CANCEL" */ String = js.native
+    val INFO: /* "INFO" */ String = js.native
+    val INVITE: /* "INVITE" */ String = js.native
+    val MESSAGE: /* "MESSAGE" */ String = js.native
+    val NOTIFY: /* "NOTIFY" */ String = js.native
+    val OPTIONS: /* "OPTIONS" */ String = js.native
+    val PRACK: /* "PRACK" */ String = js.native
+    val PUBLISH: /* "PUBLISH" */ String = js.native
+    val REFER: /* "REFER" */ String = js.native
+    val REGISTER: /* "REGISTER" */ String = js.native
+    val SUBSCRIBE: /* "SUBSCRIBE" */ String = js.native
+    val UPDATE: /* "UPDATE" */ String = js.native
   }
   
   @js.native
@@ -176,13 +176,13 @@ object messagesMod extends js.Object {
       data: js.Any,
       headerStart: Double,
       headerEnd: Double
-    ): Boolean | AnonError = js.native
+    ): Boolean | Error = js.native
     def parseHeader(
       message: typings.sipJs.incomingResponseMessageMod.IncomingResponseMessage,
       data: js.Any,
       headerStart: Double,
       headerEnd: Double
-    ): Boolean | AnonError = js.native
+    ): Boolean | Error = js.native
     def parseMessage(data: String, logger: Logger): js.UndefOr[
         typings.sipJs.incomingRequestMessageMod.IncomingRequestMessage | typings.sipJs.incomingResponseMessageMod.IncomingResponseMessage
       ] = js.native

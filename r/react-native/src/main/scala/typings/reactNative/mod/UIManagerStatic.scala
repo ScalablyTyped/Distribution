@@ -1,8 +1,8 @@
 package typings.reactNative.mod
 
 import typings.react.mod.ReactElement
-import typings.reactNative.AnonCommands
-import typings.reactNative.AnonFormat
+import typings.reactNative.anon.Commands
+import typings.reactNative.anon.Format
 import typings.reactNative.reactNativeStrings.window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +21,7 @@ trait UIManagerStatic extends js.Object {
   def dispatchViewManagerCommand(reactTag: Double, commandID: Double, commandArgs: js.Array[_]): Unit = js.native
   def dispatchViewManagerCommand(reactTag: Null, commandID: Double): Unit = js.native
   def dispatchViewManagerCommand(reactTag: Null, commandID: Double, commandArgs: js.Array[_]): Unit = js.native
-  def getViewManagerConfig(name: String): AnonCommands = js.native
+  def getViewManagerConfig(name: String): Commands = js.native
   /**
     * Determines the location on screen, width, and height of the given view and
     * returns the values via an async callback. If successful, the callback will
@@ -124,12 +124,12 @@ trait UIManagerStatic extends js.Object {
     */
   def takeSnapshot(): js.Promise[String] = js.native
   def takeSnapshot(view: Double): js.Promise[String] = js.native
-  def takeSnapshot(view: Double, options: AnonFormat): js.Promise[String] = js.native
+  def takeSnapshot(view: Double, options: Format): js.Promise[String] = js.native
   def takeSnapshot(view: ReactElement): js.Promise[String] = js.native
-  def takeSnapshot(view: ReactElement, options: AnonFormat): js.Promise[String] = js.native
+  def takeSnapshot(view: ReactElement, options: Format): js.Promise[String] = js.native
   @JSName("takeSnapshot")
   def takeSnapshot_window(view: window): js.Promise[String] = js.native
   @JSName("takeSnapshot")
-  def takeSnapshot_window(view: window, options: AnonFormat): js.Promise[String] = js.native
+  def takeSnapshot_window(view: window, options: Format): js.Promise[String] = js.native
 }
 

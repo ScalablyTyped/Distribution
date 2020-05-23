@@ -44,7 +44,7 @@ object NumberFormatOptions {
   @scala.inline
   def apply(
     decimalSymbol: String = null,
-    fractionDigits: Int | Double = null,
+    fractionDigits: js.UndefOr[Double] = js.undefined,
     groupingSymbol: String = null,
     negativeColor: String = null,
     negativeParens: js.UndefOr[Boolean] = js.undefined,
@@ -54,10 +54,10 @@ object NumberFormatOptions {
   ): NumberFormatOptions = {
     val __obj = js.Dynamic.literal()
     if (decimalSymbol != null) __obj.updateDynamic("decimalSymbol")(decimalSymbol.asInstanceOf[js.Any])
-    if (fractionDigits != null) __obj.updateDynamic("fractionDigits")(fractionDigits.asInstanceOf[js.Any])
+    if (!js.isUndefined(fractionDigits)) __obj.updateDynamic("fractionDigits")(fractionDigits.get.asInstanceOf[js.Any])
     if (groupingSymbol != null) __obj.updateDynamic("groupingSymbol")(groupingSymbol.asInstanceOf[js.Any])
     if (negativeColor != null) __obj.updateDynamic("negativeColor")(negativeColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(negativeParens)) __obj.updateDynamic("negativeParens")(negativeParens.asInstanceOf[js.Any])
+    if (!js.isUndefined(negativeParens)) __obj.updateDynamic("negativeParens")(negativeParens.get.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])

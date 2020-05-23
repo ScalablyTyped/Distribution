@@ -18,12 +18,12 @@ object select {
     default: js.Any,
     items: js.Array[(js.Tuple2[String, String]) | js.Array[String]],
     multiple: js.UndefOr[Boolean] = js.undefined,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     validate: () => Boolean = null
   ): select = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction0(validate))
     __obj.asInstanceOf[select]
   }

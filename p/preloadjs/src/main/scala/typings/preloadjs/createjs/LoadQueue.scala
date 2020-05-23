@@ -4,13 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("createjs.LoadQueue")
 @js.native
-class LoadQueue () extends AbstractLoader {
-  def this(preferXHR: Boolean) = this()
-  def this(preferXHR: Boolean, basePath: String) = this()
-  def this(preferXHR: Boolean, basePath: String, crossOrigin: String) = this()
-  def this(preferXHR: Boolean, basePath: String, crossOrigin: Boolean) = this()
+trait LoadQueue extends AbstractLoader {
   // properties
   var maintainScriptOrder: Boolean = js.native
   var next: LoadQueue = js.native

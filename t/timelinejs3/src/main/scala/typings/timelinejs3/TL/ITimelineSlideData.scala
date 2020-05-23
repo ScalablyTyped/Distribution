@@ -1,6 +1,6 @@
 package typings.timelinejs3.TL
 
-import typings.timelinejs3.AnonColor
+import typings.timelinejs3.anon.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait ITimelineSlideData extends js.Object {
     * url: the fully-qualified URL pointing to an image which will be used as the background
     * color: a CSS color, in hexadecimal (e.g. #0f9bd1) or a valid CSS color keyword.
     */
-  var background: js.UndefOr[AnonColor] = js.undefined
+  var background: js.UndefOr[Color] = js.undefined
   /*
     * A string which will be used when Timeline displays the date for this. If used, override's display_date
     * values set on the start or end date for this event, which is useful if you want to control how the two
@@ -54,7 +54,7 @@ object ITimelineSlideData {
   @scala.inline
   def apply(
     autolink: js.UndefOr[Boolean] = js.undefined,
-    background: AnonColor = null,
+    background: Color = null,
     display_date: String = null,
     end_date: ITimelineDate = null,
     group: String = null,
@@ -64,7 +64,7 @@ object ITimelineSlideData {
     unique_id: String = null
   ): ITimelineSlideData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autolink)) __obj.updateDynamic("autolink")(autolink.asInstanceOf[js.Any])
+    if (!js.isUndefined(autolink)) __obj.updateDynamic("autolink")(autolink.get.asInstanceOf[js.Any])
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (display_date != null) __obj.updateDynamic("display_date")(display_date.asInstanceOf[js.Any])
     if (end_date != null) __obj.updateDynamic("end_date")(end_date.asInstanceOf[js.Any])

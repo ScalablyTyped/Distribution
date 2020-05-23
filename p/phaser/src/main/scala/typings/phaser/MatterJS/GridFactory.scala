@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MatterJS.GridFactory")
 @js.native
-class GridFactory () extends js.Object {
+trait GridFactory extends js.Object {
   /**
     * Clears the grid.
     * @method clear

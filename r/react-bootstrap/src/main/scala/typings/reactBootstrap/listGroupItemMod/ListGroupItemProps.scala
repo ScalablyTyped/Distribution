@@ -39,7 +39,7 @@ object ListGroupItemProps {
     if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle.asInstanceOf[js.Any])
     if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey.asInstanceOf[js.Any])
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (!js.isUndefined(listItem)) __obj.updateDynamic("listItem")(listItem.asInstanceOf[js.Any])
+    if (!js.isUndefined(listItem)) __obj.updateDynamic("listItem")(listItem.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGroupItemProps]
   }
 }

@@ -27,11 +27,11 @@ trait SizeStopProperties extends js.Object {
 
 object SizeStopProperties {
   @scala.inline
-  def apply(label: String = null, size: Double | String = null, value: Int | Double = null): SizeStopProperties = {
+  def apply(label: String = null, size: Double | String = null, value: js.UndefOr[Double] = js.undefined): SizeStopProperties = {
     val __obj = js.Dynamic.literal()
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeStopProperties]
   }
 }

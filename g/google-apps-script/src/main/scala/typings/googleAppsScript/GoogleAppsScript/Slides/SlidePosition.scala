@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Slides
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,20 +24,6 @@ object SlidePosition extends js.Object {
   
   @js.native
   sealed trait PREVIOUS_SLIDE extends SlidePosition
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SlidePosition with Double] = js.native
-  /* 2 */ @js.native
-  object FIRST_SLIDE extends TopLevel[FIRST_SLIDE with Double]
-  
-  /* 3 */ @js.native
-  object LAST_SLIDE extends TopLevel[LAST_SLIDE with Double]
-  
-  /* 0 */ @js.native
-  object NEXT_SLIDE extends TopLevel[NEXT_SLIDE with Double]
-  
-  /* 1 */ @js.native
-  object PREVIOUS_SLIDE extends TopLevel[PREVIOUS_SLIDE with Double]
   
 }
 

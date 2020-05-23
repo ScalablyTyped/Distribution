@@ -17,16 +17,16 @@ object StateChangeOptions {
   @scala.inline
   def apply[Item](
     `type`: StateChangeTypes,
-    highlightedIndex: Int | Double = null,
+    highlightedIndex: js.UndefOr[Double] = js.undefined,
     inputValue: String = null,
     isOpen: js.UndefOr[Boolean] = js.undefined,
     selectedItem: Item = null
   ): StateChangeOptions[Item] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (highlightedIndex != null) __obj.updateDynamic("highlightedIndex")(highlightedIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightedIndex)) __obj.updateDynamic("highlightedIndex")(highlightedIndex.get.asInstanceOf[js.Any])
     if (inputValue != null) __obj.updateDynamic("inputValue")(inputValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.get.asInstanceOf[js.Any])
     if (selectedItem != null) __obj.updateDynamic("selectedItem")(selectedItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateChangeOptions[Item]]
   }

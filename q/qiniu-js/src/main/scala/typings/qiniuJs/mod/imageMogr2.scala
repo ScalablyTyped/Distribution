@@ -1,6 +1,6 @@
 package typings.qiniuJs.mod
 
-import typings.qiniuJs.PartialImageMogr2Options
+import typings.qiniuJs.anon.PartialImageMogr2Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object showOptionMenu extends js.Object {
   /**
-  	 * 显示右上角菜单接口
-  	 */
+    * 显示右上角菜单接口
+    */
   def apply(): Unit = js.native
 }
 

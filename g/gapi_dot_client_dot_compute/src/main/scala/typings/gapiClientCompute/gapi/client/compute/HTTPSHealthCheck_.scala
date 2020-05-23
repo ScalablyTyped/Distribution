@@ -24,14 +24,14 @@ object HTTPSHealthCheck_ {
   @scala.inline
   def apply(
     host: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     portName: String = null,
     proxyHeader: String = null,
     requestPath: String = null
   ): HTTPSHealthCheck_ = {
     val __obj = js.Dynamic.literal()
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (portName != null) __obj.updateDynamic("portName")(portName.asInstanceOf[js.Any])
     if (proxyHeader != null) __obj.updateDynamic("proxyHeader")(proxyHeader.asInstanceOf[js.Any])
     if (requestPath != null) __obj.updateDynamic("requestPath")(requestPath.asInstanceOf[js.Any])

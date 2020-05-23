@@ -31,11 +31,15 @@ trait ListItemData extends js.Object {
 
 object ListItemData {
   @scala.inline
-  def apply(level: Int | Double = null, listString: String = null, siblingIndex: Int | Double = null): ListItemData = {
+  def apply(
+    level: js.UndefOr[Double] = js.undefined,
+    listString: String = null,
+    siblingIndex: js.UndefOr[Double] = js.undefined
+  ): ListItemData = {
     val __obj = js.Dynamic.literal()
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
     if (listString != null) __obj.updateDynamic("listString")(listString.asInstanceOf[js.Any])
-    if (siblingIndex != null) __obj.updateDynamic("siblingIndex")(siblingIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(siblingIndex)) __obj.updateDynamic("siblingIndex")(siblingIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListItemData]
   }
 }

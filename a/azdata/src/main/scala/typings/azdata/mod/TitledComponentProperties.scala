@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait TitledComponentProperties extends js.Object {
   /**
-  		 * The title for the component. This title will show when hovered over
-  		 */
+    * The title for the component. This title will show when hovered over
+    */
   var title: js.UndefOr[String] = js.undefined
 }
 

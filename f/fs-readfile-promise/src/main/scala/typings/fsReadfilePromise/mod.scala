@@ -1,5 +1,6 @@
 package typings.fsReadfilePromise
 
+import typings.fsReadfilePromise.anon.Encoding
 import typings.node.Buffer
 import typings.node.fsMod.PathLike
 import scala.scalajs.js
@@ -23,7 +24,7 @@ object mod extends js.Object {
     * If a flag is not provided, it defaults to `'r'`.
     */
   def apply(path: PathType, options: OptionsType): js.Promise[String] = js.native
-  type OptionsType = AnonEncoding | String
+  type OptionsType = Encoding | String
   type PathType = PathLike | Double
 }
 

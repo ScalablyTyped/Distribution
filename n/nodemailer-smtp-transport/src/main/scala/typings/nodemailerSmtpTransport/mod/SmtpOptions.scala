@@ -1,7 +1,7 @@
 package typings.nodemailerSmtpTransport.mod
 
 import typings.node.tlsMod.ConnectionOptions
-import typings.nodemailerSmtpTransport.AnonMaxConnections
+import typings.nodemailerSmtpTransport.anon.MaxConnections
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -58,7 +58,7 @@ trait SmtpOptions extends js.Object {
   /**
     * see Pooled SMTP for details about connection pooling
     */
-  var pool: js.UndefOr[AnonMaxConnections] = js.undefined
+  var pool: js.UndefOr[MaxConnections] = js.undefined
   /**
     * is the port to connect to (defaults to 25 or 465)
     */
@@ -124,45 +124,45 @@ object SmtpOptions {
   def apply(
     auth: AuthOptions = null,
     authMethod: String = null,
-    connectionTimeout: Int | Double = null,
+    connectionTimeout: js.UndefOr[Double] = js.undefined,
     debug: js.UndefOr[Boolean] = js.undefined,
     disableFileAccess: js.UndefOr[Boolean] = js.undefined,
     disableUrlAccess: js.UndefOr[Boolean] = js.undefined,
-    greetingTimeout: Int | Double = null,
+    greetingTimeout: js.UndefOr[Double] = js.undefined,
     host: String = null,
     ignoreTLS: js.UndefOr[Boolean] = js.undefined,
     localAddress: String = null,
     logger: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
-    pool: AnonMaxConnections = null,
-    port: Int | Double = null,
+    pool: MaxConnections = null,
+    port: js.UndefOr[Double] = js.undefined,
     proxy: String = null,
     requireTLS: js.UndefOr[Boolean] = js.undefined,
     secure: js.UndefOr[Boolean] = js.undefined,
     service: String = null,
-    socketTimeout: Int | Double = null,
+    socketTimeout: js.UndefOr[Double] = js.undefined,
     tls: ConnectionOptions = null
   ): SmtpOptions = {
     val __obj = js.Dynamic.literal()
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (authMethod != null) __obj.updateDynamic("authMethod")(authMethod.asInstanceOf[js.Any])
-    if (connectionTimeout != null) __obj.updateDynamic("connectionTimeout")(connectionTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableFileAccess)) __obj.updateDynamic("disableFileAccess")(disableFileAccess.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableUrlAccess)) __obj.updateDynamic("disableUrlAccess")(disableUrlAccess.asInstanceOf[js.Any])
-    if (greetingTimeout != null) __obj.updateDynamic("greetingTimeout")(greetingTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectionTimeout)) __obj.updateDynamic("connectionTimeout")(connectionTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableFileAccess)) __obj.updateDynamic("disableFileAccess")(disableFileAccess.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableUrlAccess)) __obj.updateDynamic("disableUrlAccess")(disableUrlAccess.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(greetingTimeout)) __obj.updateDynamic("greetingTimeout")(greetingTimeout.get.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreTLS)) __obj.updateDynamic("ignoreTLS")(ignoreTLS.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreTLS)) __obj.updateDynamic("ignoreTLS")(ignoreTLS.get.asInstanceOf[js.Any])
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(logger)) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
+    if (!js.isUndefined(logger)) __obj.updateDynamic("logger")(logger.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (pool != null) __obj.updateDynamic("pool")(pool.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireTLS)) __obj.updateDynamic("requireTLS")(requireTLS.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireTLS)) __obj.updateDynamic("requireTLS")(requireTLS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.get.asInstanceOf[js.Any])
     if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
-    if (socketTimeout != null) __obj.updateDynamic("socketTimeout")(socketTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(socketTimeout)) __obj.updateDynamic("socketTimeout")(socketTimeout.get.asInstanceOf[js.Any])
     if (tls != null) __obj.updateDynamic("tls")(tls.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmtpOptions]
   }

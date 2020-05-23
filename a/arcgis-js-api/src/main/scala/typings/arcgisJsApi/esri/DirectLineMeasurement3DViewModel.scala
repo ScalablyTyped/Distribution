@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`nautical-miles`
 import typings.arcgisJsApi.arcgisJsApiStrings.`us-feet`
 import typings.arcgisJsApi.arcgisJsApiStrings.disabled
@@ -80,8 +79,4 @@ trait DirectLineMeasurement3DViewModel extends Accessor {
     */
   def newMeasurement(): Unit = js.native
 }
-
-@JSGlobal("__esri.DirectLineMeasurement3DViewModel")
-@js.native
-object DirectLineMeasurement3DViewModel extends TopLevel[DirectLineMeasurement3DViewModelConstructor]
 

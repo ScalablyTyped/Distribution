@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Pkcs11Js.PKCS11")
 @js.native
-class PKCS11 () extends js.Object {
+trait PKCS11 extends js.Object {
   /**
     * Library path
     */

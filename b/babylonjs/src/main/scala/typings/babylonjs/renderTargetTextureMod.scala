@@ -1,6 +1,9 @@
 package typings.babylonjs
 
 import typings.babylonjs.abstractMeshMod.AbstractMesh
+import typings.babylonjs.anon.Height
+import typings.babylonjs.anon.Ratio
+import typings.babylonjs.anon.Width
 import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.engineMod.Engine
 import typings.babylonjs.internalTextureMod.InternalTexture
@@ -60,7 +63,7 @@ object renderTargetTextureMod extends js.Object {
     ) = this()
     def this(
       name: String,
-      size: AnonHeight,
+      size: Height,
       scene: Nullable[Scene],
       generateMipMaps: js.UndefOr[Boolean],
       doNotChangeAspectRatio: js.UndefOr[Boolean],
@@ -75,7 +78,7 @@ object renderTargetTextureMod extends js.Object {
     ) = this()
     def this(
       name: String,
-      size: AnonRatio,
+      size: Ratio,
       scene: Nullable[Scene],
       generateMipMaps: js.UndefOr[Boolean],
       doNotChangeAspectRatio: js.UndefOr[Boolean],
@@ -97,7 +100,7 @@ object renderTargetTextureMod extends js.Object {
     /** @hidden */
     var _generateMipMaps: Boolean = js.native
     var _hookArray: js.Any = js.native
-    var _initialSizeParameter: Double | AnonWidth | AnonRatio = js.native
+    var _initialSizeParameter: Double | Width | Ratio = js.native
     var _onAfterRenderObserver: js.Any = js.native
     var _onAfterUnbindObserver: js.Any = js.native
     var _onBeforeRenderObserver: js.Any = js.native
@@ -112,7 +115,7 @@ object renderTargetTextureMod extends js.Object {
     var _renderingManager: RenderingManager = js.native
     var _resizeObserver: js.Any = js.native
     var _samples: Double = js.native
-    var _size: Double | AnonHeight = js.native
+    var _size: Double | Height = js.native
     var _sizeRatio: Nullable[Double] = js.native
     var _textureMatrix: Matrix = js.native
     /** @hidden */
@@ -355,8 +358,8 @@ object renderTargetTextureMod extends js.Object {
       *   - or an object containing a ratio { ratio: number }
       */
     def resize(size: Double): Unit = js.native
-    def resize(size: AnonRatio): Unit = js.native
-    def resize(size: AnonWidth): Unit = js.native
+    def resize(size: Ratio): Unit = js.native
+    def resize(size: Width): Unit = js.native
     /**
       * Define the number of samples to use in case of MSAA.
       * It defaults to one meaning no MSAA has been enabled.

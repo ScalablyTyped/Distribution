@@ -25,12 +25,12 @@ object SearchProvisionedProductsOutput {
   def apply(
     NextPageToken: PageToken = null,
     ProvisionedProducts: ProvisionedProductAttributes = null,
-    TotalResultsCount: Int | Double = null
+    TotalResultsCount: js.UndefOr[TotalResultsCount] = js.undefined
   ): SearchProvisionedProductsOutput = {
     val __obj = js.Dynamic.literal()
     if (NextPageToken != null) __obj.updateDynamic("NextPageToken")(NextPageToken.asInstanceOf[js.Any])
     if (ProvisionedProducts != null) __obj.updateDynamic("ProvisionedProducts")(ProvisionedProducts.asInstanceOf[js.Any])
-    if (TotalResultsCount != null) __obj.updateDynamic("TotalResultsCount")(TotalResultsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalResultsCount)) __obj.updateDynamic("TotalResultsCount")(TotalResultsCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchProvisionedProductsOutput]
   }
 }

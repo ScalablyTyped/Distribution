@@ -1,14 +1,14 @@
 package typings.activedirectory2.mod
 
-import typings.activedirectory2.AnonEnabled
-import typings.activedirectory2.AnonGroup
 import typings.activedirectory2.activedirectory2Numbers.`1000`
+import typings.activedirectory2.anon.Enabled
+import typings.activedirectory2.anon.Group
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ADProperties extends js.Object {
-  var attributes: js.UndefOr[AnonGroup] = js.undefined
+  var attributes: js.UndefOr[Group] = js.undefined
   var baseDN: String
   var entryParser: js.UndefOr[
     js.Function3[
@@ -20,7 +20,7 @@ trait ADProperties extends js.Object {
   ] = js.undefined
   var pageSize: js.UndefOr[`1000`] = js.undefined
   var password: String
-  var referrals: js.UndefOr[AnonEnabled] = js.undefined
+  var referrals: js.UndefOr[Enabled] = js.undefined
   var url: String
   var username: String
 }
@@ -32,10 +32,10 @@ object ADProperties {
     password: String,
     url: String,
     username: String,
-    attributes: AnonGroup = null,
+    attributes: Group = null,
     entryParser: (/* entry */ js.Object, /* raw */ String, /* cb */ js.Function1[/* entry */ js.Object, Unit]) => Unit = null,
     pageSize: `1000` = null,
-    referrals: AnonEnabled = null
+    referrals: Enabled = null
   ): ADProperties = {
     val __obj = js.Dynamic.literal(baseDN = baseDN.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])

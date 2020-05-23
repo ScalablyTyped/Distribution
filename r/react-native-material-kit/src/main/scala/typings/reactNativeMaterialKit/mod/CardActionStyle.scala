@@ -19,14 +19,14 @@ object CardActionStyle {
   def apply(
     borderStyle: solid | dotted | dashed = null,
     borderTopColor: String = null,
-    borderTopWidth: Int | Double = null,
-    padding: Int | Double = null
+    borderTopWidth: js.UndefOr[Double] = js.undefined,
+    padding: js.UndefOr[Double] = js.undefined
   ): CardActionStyle = {
     val __obj = js.Dynamic.literal()
     if (borderStyle != null) __obj.updateDynamic("borderStyle")(borderStyle.asInstanceOf[js.Any])
     if (borderTopColor != null) __obj.updateDynamic("borderTopColor")(borderTopColor.asInstanceOf[js.Any])
-    if (borderTopWidth != null) __obj.updateDynamic("borderTopWidth")(borderTopWidth.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderTopWidth)) __obj.updateDynamic("borderTopWidth")(borderTopWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardActionStyle]
   }
 }

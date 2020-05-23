@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 trait IDateColumn
   extends typings.extjs.Ext.grid.column.IColumn {
   /** [Method] When defined this will take precedence over the renderer config
-  		* @param value Object
-  		*/
+    * @param value Object
+    */
   @JSName("defaultRenderer")
   var defaultRenderer_IDateColumn: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (String) */

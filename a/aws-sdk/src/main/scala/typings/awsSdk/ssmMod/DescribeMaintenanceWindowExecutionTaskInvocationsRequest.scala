@@ -34,12 +34,12 @@ object DescribeMaintenanceWindowExecutionTaskInvocationsRequest {
     TaskId: MaintenanceWindowExecutionTaskId,
     WindowExecutionId: MaintenanceWindowExecutionId,
     Filters: MaintenanceWindowFilterList = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaintenanceWindowMaxResults] = js.undefined,
     NextToken: NextToken = null
   ): DescribeMaintenanceWindowExecutionTaskInvocationsRequest = {
     val __obj = js.Dynamic.literal(TaskId = TaskId.asInstanceOf[js.Any], WindowExecutionId = WindowExecutionId.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeMaintenanceWindowExecutionTaskInvocationsRequest]
   }

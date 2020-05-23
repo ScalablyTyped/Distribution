@@ -20,9 +20,9 @@ package object utilUtilMod {
   ]
   /* Rewritten from type alias, can be one of: 
     - typings.typescript.mod.ImportDeclaration
-    - typings.tsutils.ImportEqualsDeclarationmo
-    - typings.tsutils.ExportDeclarationmoduleSp
-    - typings.tsutils.CallExpressionexpressionT
+    - typings.tsutils.anon.ImportEqualsDeclarationmo
+    - typings.tsutils.anon.ExportDeclarationmoduleSp
+    - typings.tsutils.anon.CallExpressionexpressionT
     - typings.typescript.mod.ImportTypeNode
   */
   type ImportLike = typings.tsutils.utilUtilMod._ImportLike | typings.typescript.mod.ImportDeclaration | typings.typescript.mod.ImportTypeNode

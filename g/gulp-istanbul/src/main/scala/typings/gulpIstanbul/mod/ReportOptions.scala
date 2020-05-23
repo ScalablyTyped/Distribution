@@ -1,6 +1,6 @@
 package typings.gulpIstanbul.mod
 
-import typings.gulpIstanbul.AnonDir
+import typings.gulpIstanbul.anon.Dir
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ReportOptions extends js.Object {
   var coverageVariable: js.UndefOr[String] = js.undefined
   var dir: js.UndefOr[String] = js.undefined
-  var reportOpts: js.UndefOr[AnonDir] = js.undefined
+  var reportOpts: js.UndefOr[Dir] = js.undefined
   var reporters: js.UndefOr[js.Array[String]] = js.undefined
 }
 
@@ -17,7 +17,7 @@ object ReportOptions {
   def apply(
     coverageVariable: String = null,
     dir: String = null,
-    reportOpts: AnonDir = null,
+    reportOpts: Dir = null,
     reporters: js.Array[String] = null
   ): ReportOptions = {
     val __obj = js.Dynamic.literal()

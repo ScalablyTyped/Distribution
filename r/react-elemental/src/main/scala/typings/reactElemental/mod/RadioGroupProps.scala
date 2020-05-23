@@ -1,6 +1,6 @@
 package typings.reactElemental.mod
 
-import typings.react.AnonHtml
+import typings.react.anon.Html
 import typings.react.mod.AnimationEventHandler
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
@@ -19,7 +19,7 @@ import typings.react.mod.TouchEventHandler
 import typings.react.mod.TransitionEventHandler
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEventHandler
-import typings.reactElemental.AnonDisabled
+import typings.reactElemental.anon.Disabled
 import typings.reactElemental.reactElementalStrings.`additions text`
 import typings.reactElemental.reactElementalStrings.`inline`
 import typings.reactElemental.reactElementalStrings.additions
@@ -271,7 +271,7 @@ trait RadioGroupProps extends js.Object {
   var color: js.UndefOr[String] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   var contextMenu: js.UndefOr[String] = js.native
-  var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.native
+  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
   var datatype: js.UndefOr[String] = js.native
   // React-specific Attributes
   var defaultChecked: js.UndefOr[Boolean] = js.native
@@ -394,7 +394,7 @@ trait RadioGroupProps extends js.Object {
   var onWaiting: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
   // Wheel Events
   var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.native
-  val options: js.UndefOr[js.Array[AnonDisabled]] = js.native
+  val options: js.UndefOr[js.Array[Disabled]] = js.native
   var placeholder: js.UndefOr[String] = js.native
   var prefix: js.UndefOr[String] = js.native
   var property: js.UndefOr[String] = js.native

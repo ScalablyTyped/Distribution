@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Option Item Metadata
-		 */
+  * Option Item Metadata
+  */
 trait OptionMetadata extends js.Object {
   var Color: String
   var Label: String

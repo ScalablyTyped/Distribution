@@ -33,18 +33,18 @@ object Options {
   @scala.inline
   def apply(
     `type`: GeometryType,
-    clickTolerance: Int | Double = null,
+    clickTolerance: js.UndefOr[Double] = js.undefined,
     condition: Condition = null,
-    dragVertexDelay: Int | Double = null,
+    dragVertexDelay: js.UndefOr[Double] = js.undefined,
     features: typings.ol.collectionMod.default[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]] = null,
     finishCondition: Condition = null,
     freehand: js.UndefOr[Boolean] = js.undefined,
     freehandCondition: Condition = null,
     geometryFunction: (/* p0 */ SketchCoordType, /* p1 */ js.UndefOr[typings.ol.simpleGeometryMod.default], /* p2 */ js.UndefOr[typings.ol.projectionMod.default]) => typings.ol.simpleGeometryMod.default = null,
     geometryName: String = null,
-    maxPoints: Int | Double = null,
-    minPoints: Int | Double = null,
-    snapTolerance: Int | Double = null,
+    maxPoints: js.UndefOr[Double] = js.undefined,
+    minPoints: js.UndefOr[Double] = js.undefined,
+    snapTolerance: js.UndefOr[Double] = js.undefined,
     source: typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default] = null,
     stopClick: js.UndefOr[Boolean] = js.undefined,
     style: StyleLike = null,
@@ -52,22 +52,22 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (clickTolerance != null) __obj.updateDynamic("clickTolerance")(clickTolerance.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickTolerance)) __obj.updateDynamic("clickTolerance")(clickTolerance.get.asInstanceOf[js.Any])
     if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
-    if (dragVertexDelay != null) __obj.updateDynamic("dragVertexDelay")(dragVertexDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragVertexDelay)) __obj.updateDynamic("dragVertexDelay")(dragVertexDelay.get.asInstanceOf[js.Any])
     if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
     if (finishCondition != null) __obj.updateDynamic("finishCondition")(finishCondition.asInstanceOf[js.Any])
-    if (!js.isUndefined(freehand)) __obj.updateDynamic("freehand")(freehand.asInstanceOf[js.Any])
+    if (!js.isUndefined(freehand)) __obj.updateDynamic("freehand")(freehand.get.asInstanceOf[js.Any])
     if (freehandCondition != null) __obj.updateDynamic("freehandCondition")(freehandCondition.asInstanceOf[js.Any])
     if (geometryFunction != null) __obj.updateDynamic("geometryFunction")(js.Any.fromFunction3(geometryFunction))
     if (geometryName != null) __obj.updateDynamic("geometryName")(geometryName.asInstanceOf[js.Any])
-    if (maxPoints != null) __obj.updateDynamic("maxPoints")(maxPoints.asInstanceOf[js.Any])
-    if (minPoints != null) __obj.updateDynamic("minPoints")(minPoints.asInstanceOf[js.Any])
-    if (snapTolerance != null) __obj.updateDynamic("snapTolerance")(snapTolerance.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPoints)) __obj.updateDynamic("maxPoints")(maxPoints.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minPoints)) __obj.updateDynamic("minPoints")(minPoints.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapTolerance)) __obj.updateDynamic("snapTolerance")(snapTolerance.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopClick)) __obj.updateDynamic("stopClick")(stopClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopClick)) __obj.updateDynamic("stopClick")(stopClick.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

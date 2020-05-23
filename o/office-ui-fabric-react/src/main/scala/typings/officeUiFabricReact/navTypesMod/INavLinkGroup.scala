@@ -63,7 +63,7 @@ object INavLinkGroup {
     val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any])
     if (automationId != null) __obj.updateDynamic("automationId")(automationId.asInstanceOf[js.Any])
     if (collapseAriaLabel != null) __obj.updateDynamic("collapseAriaLabel")(collapseAriaLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapseByDefault)) __obj.updateDynamic("collapseByDefault")(collapseByDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapseByDefault)) __obj.updateDynamic("collapseByDefault")(collapseByDefault.get.asInstanceOf[js.Any])
     if (expandAriaLabel != null) __obj.updateDynamic("expandAriaLabel")(expandAriaLabel.asInstanceOf[js.Any])
     if (groupData != null) __obj.updateDynamic("groupData")(groupData.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

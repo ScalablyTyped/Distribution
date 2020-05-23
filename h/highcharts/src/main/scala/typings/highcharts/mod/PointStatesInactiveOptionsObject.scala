@@ -17,10 +17,10 @@ trait PointStatesInactiveOptionsObject extends js.Object {
 
 object PointStatesInactiveOptionsObject {
   @scala.inline
-  def apply(animation: Boolean | AnimationOptionsObject = null, opacity: Int | Double = null): PointStatesInactiveOptionsObject = {
+  def apply(animation: Boolean | AnimationOptionsObject = null, opacity: js.UndefOr[Double] = js.undefined): PointStatesInactiveOptionsObject = {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointStatesInactiveOptionsObject]
   }
 }

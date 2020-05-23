@@ -19,8 +19,8 @@ trait IScroller extends IObservable {
   /** [Config Option] (String) */
   var beforeScrollerCls: js.UndefOr[String] = js.undefined
   /** [Method] Returns the current scroll position of the innerCt element
-  		* @returns Number The current scroll position
-  		*/
+    * @returns Number The current scroll position
+    */
   var getScrollPosition: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Config Option] (Number) */
   var scrollDuration: js.UndefOr[Double] = js.undefined
@@ -29,9 +29,9 @@ trait IScroller extends IObservable {
   /** [Config Option] (Number) */
   var scrollRepeatInterval: js.UndefOr[Double] = js.undefined
   /** [Method] Scrolls to the given component
-  		* @param item String/Number/Ext.Component The item to scroll to. Can be a numerical index, component id or a reference to the component itself.
-  		* @param animate Boolean True to animate the scrolling
-  		*/
+    * @param item String/Number/Ext.Component The item to scroll to. Can be a numerical index, component id or a reference to the component itself.
+    * @param animate Boolean True to animate the scrolling
+    */
   var scrollToItem: js.UndefOr[
     js.Function2[/* item */ js.UndefOr[js.Any], /* animate */ js.UndefOr[Boolean], Unit]
   ] = js.undefined
@@ -82,9 +82,9 @@ object IScroller {
     requires: Array = null,
     resumeEvent: /* repeated */ js.Any => Unit = null,
     resumeEvents: () => Unit = null,
-    scrollDuration: Int | Double = null,
-    scrollIncrement: Int | Double = null,
-    scrollRepeatInterval: Int | Double = null,
+    scrollDuration: js.UndefOr[Double] = js.undefined,
+    scrollIncrement: js.UndefOr[Double] = js.undefined,
+    scrollRepeatInterval: js.UndefOr[Double] = js.undefined,
     scrollToItem: (/* item */ js.UndefOr[js.Any], /* animate */ js.UndefOr[Boolean]) => Unit = null,
     scrollerCls: String = null,
     self: IClass = null,
@@ -94,7 +94,7 @@ object IScroller {
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
     un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null,
-    wheelIncrement: Int | Double = null
+    wheelIncrement: js.UndefOr[Double] = js.undefined
   ): IScroller = {
     val __obj = js.Dynamic.literal()
     if (addEvents != null) __obj.updateDynamic("addEvents")(js.Any.fromFunction1(addEvents))
@@ -104,7 +104,7 @@ object IScroller {
     if (afterScrollerCls != null) __obj.updateDynamic("afterScrollerCls")(afterScrollerCls.asInstanceOf[js.Any])
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(animateScroll)) __obj.updateDynamic("animateScroll")(animateScroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(animateScroll)) __obj.updateDynamic("animateScroll")(animateScroll.get.asInstanceOf[js.Any])
     if (beforeCtCls != null) __obj.updateDynamic("beforeCtCls")(beforeCtCls.asInstanceOf[js.Any])
     if (beforeScrollerCls != null) __obj.updateDynamic("beforeScrollerCls")(beforeScrollerCls.asInstanceOf[js.Any])
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
@@ -123,7 +123,7 @@ object IScroller {
     if (hasListeners != null) __obj.updateDynamic("hasListeners")(hasListeners.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
@@ -135,19 +135,19 @@ object IScroller {
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (resumeEvent != null) __obj.updateDynamic("resumeEvent")(js.Any.fromFunction1(resumeEvent))
     if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction0(resumeEvents))
-    if (scrollDuration != null) __obj.updateDynamic("scrollDuration")(scrollDuration.asInstanceOf[js.Any])
-    if (scrollIncrement != null) __obj.updateDynamic("scrollIncrement")(scrollIncrement.asInstanceOf[js.Any])
-    if (scrollRepeatInterval != null) __obj.updateDynamic("scrollRepeatInterval")(scrollRepeatInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollDuration)) __obj.updateDynamic("scrollDuration")(scrollDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollIncrement)) __obj.updateDynamic("scrollIncrement")(scrollIncrement.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollRepeatInterval)) __obj.updateDynamic("scrollRepeatInterval")(scrollRepeatInterval.get.asInstanceOf[js.Any])
     if (scrollToItem != null) __obj.updateDynamic("scrollToItem")(js.Any.fromFunction2(scrollToItem))
     if (scrollerCls != null) __obj.updateDynamic("scrollerCls")(scrollerCls.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction1(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction3(un))
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
-    if (wheelIncrement != null) __obj.updateDynamic("wheelIncrement")(wheelIncrement.asInstanceOf[js.Any])
+    if (!js.isUndefined(wheelIncrement)) __obj.updateDynamic("wheelIncrement")(wheelIncrement.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IScroller]
   }
 }

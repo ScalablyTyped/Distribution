@@ -47,7 +47,7 @@ trait RDSInstanceDetails extends js.Object {
 object RDSInstanceDetails {
   @scala.inline
   def apply(
-    CurrentGeneration: js.UndefOr[Boolean] = js.undefined,
+    CurrentGeneration: js.UndefOr[GenericBoolean] = js.undefined,
     DatabaseEdition: GenericString = null,
     DatabaseEngine: GenericString = null,
     DeploymentOption: GenericString = null,
@@ -55,10 +55,10 @@ object RDSInstanceDetails {
     InstanceType: GenericString = null,
     LicenseModel: GenericString = null,
     Region: GenericString = null,
-    SizeFlexEligible: js.UndefOr[Boolean] = js.undefined
+    SizeFlexEligible: js.UndefOr[GenericBoolean] = js.undefined
   ): RDSInstanceDetails = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CurrentGeneration)) __obj.updateDynamic("CurrentGeneration")(CurrentGeneration.asInstanceOf[js.Any])
+    if (!js.isUndefined(CurrentGeneration)) __obj.updateDynamic("CurrentGeneration")(CurrentGeneration.get.asInstanceOf[js.Any])
     if (DatabaseEdition != null) __obj.updateDynamic("DatabaseEdition")(DatabaseEdition.asInstanceOf[js.Any])
     if (DatabaseEngine != null) __obj.updateDynamic("DatabaseEngine")(DatabaseEngine.asInstanceOf[js.Any])
     if (DeploymentOption != null) __obj.updateDynamic("DeploymentOption")(DeploymentOption.asInstanceOf[js.Any])
@@ -66,7 +66,7 @@ object RDSInstanceDetails {
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
     if (LicenseModel != null) __obj.updateDynamic("LicenseModel")(LicenseModel.asInstanceOf[js.Any])
     if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
-    if (!js.isUndefined(SizeFlexEligible)) __obj.updateDynamic("SizeFlexEligible")(SizeFlexEligible.asInstanceOf[js.Any])
+    if (!js.isUndefined(SizeFlexEligible)) __obj.updateDynamic("SizeFlexEligible")(SizeFlexEligible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RDSInstanceDetails]
   }
 }

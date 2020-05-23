@@ -5,19 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.m.UploadCollection")
 @js.native
-class UploadCollection protected () extends Control {
-  /**
-    * Constructor for a new UploadCollection.Accepts an object literal <code>mSettings</code> that defines
-    * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
-    * sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the settings
-    * object.
-    * @param sId id for the new control, generated automatically if no id is given
-    * @param mSettings initial settings for the new control
-    */
-  def this(sId: String) = this()
-  def this(sId: String, mSettings: js.Any) = this()
+trait UploadCollection extends Control {
   /**
     * Adds some headerParameter to the aggregation <code>headerParameters</code>.
     * @param oHeaderParameter the headerParameter to add; if empty, nothing is inserted
@@ -426,12 +415,12 @@ class UploadCollection protected () extends Control {
     * instead.</li><li><code>status</code> of type <code>string</code>Status Code of the completed upload
     * event. This parameter is deprecated since version 1.28.0., use parameter files
     * instead.</li><li><code>files</code> of type <code>object[]</code>A list of uploaded files. Each
-    * entry contains the following members.fileName	: The name of a file to be uploaded.response	:
+    * entry contains the following members.fileName    : The name of a file to be uploaded.response    :
     * Response message which comes from the server. On the server side, this response has to be put within
     * the 'body' tags of the response document of the iFrame. It can consist of a return code and an
     * optional message. This does not work in cross-domain scenarios.responseRaw : HTTP-Response which
     * comes from the server. This property is not supported by Internet Explorer Versions lower than
-    * 9.status	: Status of the XHR request. This property is not supported by Internet Explorer 9 and
+    * 9.status    : Status of the XHR request. This property is not supported by Internet Explorer 9 and
     * lower.headers : HTTP-Response-Headers which come from the server. Provided as a JSON-map, i.e. each
     * header-field is reflected by a property in the header-object, with the property value reflecting the
     * header-field's content. This property is not supported by Internet Explorer 9 and lower.Since

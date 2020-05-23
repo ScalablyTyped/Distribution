@@ -25,16 +25,16 @@ object FunctionDefinition {
     handler: String,
     name: String,
     environment: StringDictionary[String] = null,
-    memorySize: Int | Double = null,
+    memorySize: js.UndefOr[Double] = js.undefined,
     runtime: String = null,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): FunctionDefinition = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], handler = handler.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
     if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (memorySize != null) __obj.updateDynamic("memorySize")(memorySize.asInstanceOf[js.Any])
+    if (!js.isUndefined(memorySize)) __obj.updateDynamic("memorySize")(memorySize.get.asInstanceOf[js.Any])
     if (runtime != null) __obj.updateDynamic("runtime")(runtime.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionDefinition]
   }
 }

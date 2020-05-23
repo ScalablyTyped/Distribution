@@ -71,7 +71,7 @@ object Variant {
     id: String = null,
     info: Record[String, js.Array[_]] = null,
     names: js.Array[String] = null,
-    quality: Int | Double = null,
+    quality: js.UndefOr[Double] = js.undefined,
     referenceBases: String = null,
     referenceName: String = null,
     start: String = null,
@@ -86,7 +86,7 @@ object Variant {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
     if (names != null) __obj.updateDynamic("names")(names.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
     if (referenceBases != null) __obj.updateDynamic("referenceBases")(referenceBases.asInstanceOf[js.Any])
     if (referenceName != null) __obj.updateDynamic("referenceName")(referenceName.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])

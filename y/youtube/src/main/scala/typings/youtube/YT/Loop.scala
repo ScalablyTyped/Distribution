@@ -14,13 +14,13 @@ trait Loop extends js.Object
 
 object Loop {
   /**
-  		 * Video or playlist will be played over and over again.
-  		 */
+    * Video or playlist will be played over and over again.
+    */
   @scala.inline
   def Loop: `1` = 1.asInstanceOf[`1`]
   /**
-  		 * Video or playlist will be played only once.
-  		 */
+    * Video or playlist will be played only once.
+    */
   @scala.inline
   def SinglePlay: `0` = 0.asInstanceOf[`0`]
 }

@@ -86,8 +86,8 @@ object VpcEndpoint {
     NetworkInterfaceIds: ValueStringList = null,
     OwnerId: String = null,
     PolicyDocument: String = null,
-    PrivateDnsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    RequesterManaged: js.UndefOr[scala.Boolean] = js.undefined,
+    PrivateDnsEnabled: js.UndefOr[Boolean] = js.undefined,
+    RequesterManaged: js.UndefOr[Boolean] = js.undefined,
     RouteTableIds: ValueStringList = null,
     ServiceName: String = null,
     State: State = null,
@@ -105,8 +105,8 @@ object VpcEndpoint {
     if (NetworkInterfaceIds != null) __obj.updateDynamic("NetworkInterfaceIds")(NetworkInterfaceIds.asInstanceOf[js.Any])
     if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
     if (PolicyDocument != null) __obj.updateDynamic("PolicyDocument")(PolicyDocument.asInstanceOf[js.Any])
-    if (!js.isUndefined(PrivateDnsEnabled)) __obj.updateDynamic("PrivateDnsEnabled")(PrivateDnsEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequesterManaged)) __obj.updateDynamic("RequesterManaged")(RequesterManaged.asInstanceOf[js.Any])
+    if (!js.isUndefined(PrivateDnsEnabled)) __obj.updateDynamic("PrivateDnsEnabled")(PrivateDnsEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RequesterManaged)) __obj.updateDynamic("RequesterManaged")(RequesterManaged.get.asInstanceOf[js.Any])
     if (RouteTableIds != null) __obj.updateDynamic("RouteTableIds")(RouteTableIds.asInstanceOf[js.Any])
     if (ServiceName != null) __obj.updateDynamic("ServiceName")(ServiceName.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])

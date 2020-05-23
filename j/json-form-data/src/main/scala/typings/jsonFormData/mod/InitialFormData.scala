@@ -1,6 +1,6 @@
 package typings.jsonFormData.mod
 
-import typings.jsonFormData.FnCall
+import typings.jsonFormData.anon.FnCall
 import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`

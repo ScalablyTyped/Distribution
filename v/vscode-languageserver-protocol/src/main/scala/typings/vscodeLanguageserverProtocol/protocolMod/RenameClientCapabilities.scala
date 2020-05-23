@@ -25,8 +25,8 @@ object RenameClientCapabilities {
     prepareSupport: js.UndefOr[Boolean] = js.undefined
   ): RenameClientCapabilities = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration.asInstanceOf[js.Any])
-    if (!js.isUndefined(prepareSupport)) __obj.updateDynamic("prepareSupport")(prepareSupport.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(prepareSupport)) __obj.updateDynamic("prepareSupport")(prepareSupport.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenameClientCapabilities]
   }
 }

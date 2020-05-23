@@ -41,22 +41,22 @@ trait SoundConfig extends js.Object {
 object SoundConfig {
   @scala.inline
   def apply(
-    delay: Int | Double = null,
-    detune: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
+    detune: js.UndefOr[Double] = js.undefined,
     loop: js.UndefOr[Boolean] = js.undefined,
     mute: js.UndefOr[Boolean] = js.undefined,
-    rate: Int | Double = null,
-    seek: Int | Double = null,
-    volume: Int | Double = null
+    rate: js.UndefOr[Double] = js.undefined,
+    seek: js.UndefOr[Double] = js.undefined,
+    volume: js.UndefOr[Double] = js.undefined
   ): SoundConfig = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (detune != null) __obj.updateDynamic("detune")(detune.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (!js.isUndefined(mute)) __obj.updateDynamic("mute")(mute.asInstanceOf[js.Any])
-    if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
-    if (seek != null) __obj.updateDynamic("seek")(seek.asInstanceOf[js.Any])
-    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(detune)) __obj.updateDynamic("detune")(detune.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mute)) __obj.updateDynamic("mute")(mute.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rate)) __obj.updateDynamic("rate")(rate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(seek)) __obj.updateDynamic("seek")(seek.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(volume)) __obj.updateDynamic("volume")(volume.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SoundConfig]
   }
 }

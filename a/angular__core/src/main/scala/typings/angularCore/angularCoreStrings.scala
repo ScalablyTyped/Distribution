@@ -10,18 +10,6 @@ import scala.scalajs.js.annotation._
 
 object angularCoreStrings {
   @js.native
-  sealed trait `@angularSlashcommon` extends js.Object
-  
-  @js.native
-  sealed trait `@angularSlashplatform-browser` extends js.Object
-  
-  @js.native
-  sealed trait AnonChangeDetection extends js.Object
-  
-  @js.native
-  sealed trait AnonContentQueries extends js.Object
-  
-  @js.native
   sealed trait AnyDuringRendererMigration extends HelperFunction
   
   @js.native
@@ -34,7 +22,10 @@ object angularCoreStrings {
   sealed trait `Brand for PlayerFactory that nothing will match` extends js.Object
   
   @js.native
-  sealed trait DOCUMENT extends js.Object
+  sealed trait ChangeDetection extends js.Object
+  
+  @js.native
+  sealed trait ContentQueries extends js.Object
   
   @js.native
   sealed trait HTML extends ɵBypassType
@@ -56,9 +47,6 @@ object angularCoreStrings {
   
   @js.native
   sealed trait URL extends ɵBypassType
-  
-  @js.native
-  sealed trait USD extends js.Object
   
   @js.native
   sealed trait __ngRendererAnimateHelper extends HelperFunction
@@ -91,9 +79,6 @@ object angularCoreStrings {
   sealed trait __ngRendererSplitNamespaceHelper extends HelperFunction
   
   @js.native
-  sealed trait _empty extends js.Object
-  
-  @js.native
   sealed trait any extends js.Object
   
   @js.native
@@ -109,13 +94,10 @@ object angularCoreStrings {
   sealed trait component extends js.Object
   
   @js.native
-  sealed trait document_ extends GlobalTargetName
+  sealed trait document extends GlobalTargetName
   
   @js.native
   sealed trait element extends js.Object
-  
-  @js.native
-  sealed trait `en-US` extends js.Object
   
   @js.native
   sealed trait escapedText extends PropertyNameWithText
@@ -148,14 +130,6 @@ object angularCoreStrings {
   sealed trait ɵDirectiveDef extends js.Object
   
   @scala.inline
-  def `@angularSlashcommon`: `@angularSlashcommon` = "@angular/common".asInstanceOf[`@angularSlashcommon`]
-  @scala.inline
-  def `@angularSlashplatform-browser`: `@angularSlashplatform-browser` = "@angular/platform-browser".asInstanceOf[`@angularSlashplatform-browser`]
-  @scala.inline
-  def AnonChangeDetection: AnonChangeDetection = "AnonChangeDetection".asInstanceOf[AnonChangeDetection]
-  @scala.inline
-  def AnonContentQueries: AnonContentQueries = "AnonContentQueries".asInstanceOf[AnonContentQueries]
-  @scala.inline
   def AnyDuringRendererMigration: AnyDuringRendererMigration = "AnyDuringRendererMigration".asInstanceOf[AnyDuringRendererMigration]
   @scala.inline
   def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
@@ -164,7 +138,9 @@ object angularCoreStrings {
   @scala.inline
   def `Brand for PlayerFactory that nothing will match`: `Brand for PlayerFactory that nothing will match` = ("Brand for PlayerFactory that nothing will match").asInstanceOf[`Brand for PlayerFactory that nothing will match`]
   @scala.inline
-  def DOCUMENT: DOCUMENT = "DOCUMENT".asInstanceOf[DOCUMENT]
+  def ChangeDetection: ChangeDetection = "ChangeDetection".asInstanceOf[ChangeDetection]
+  @scala.inline
+  def ContentQueries: ContentQueries = "ContentQueries".asInstanceOf[ContentQueries]
   @scala.inline
   def HTML: HTML = "HTML".asInstanceOf[HTML]
   @scala.inline
@@ -179,8 +155,6 @@ object angularCoreStrings {
   def TStylingRange: TStylingRange = "TStylingRange".asInstanceOf[TStylingRange]
   @scala.inline
   def URL: URL = "URL".asInstanceOf[URL]
-  @scala.inline
-  def USD: USD = "USD".asInstanceOf[USD]
   @scala.inline
   def __ngRendererAnimateHelper: __ngRendererAnimateHelper = "__ngRendererAnimateHelper".asInstanceOf[__ngRendererAnimateHelper]
   @scala.inline
@@ -202,8 +176,6 @@ object angularCoreStrings {
   @scala.inline
   def __ngRendererSplitNamespaceHelper: __ngRendererSplitNamespaceHelper = "__ngRendererSplitNamespaceHelper".asInstanceOf[__ngRendererSplitNamespaceHelper]
   @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
-  @scala.inline
   def any: any = "any".asInstanceOf[any]
   @scala.inline
   def `array-map`: `array-map` = "array-map".asInstanceOf[`array-map`]
@@ -214,11 +186,9 @@ object angularCoreStrings {
   @scala.inline
   def component: component = "component".asInstanceOf[component]
   @scala.inline
-  def document_ : document_ = "document".asInstanceOf[document_]
+  def document: document = "document".asInstanceOf[document]
   @scala.inline
   def element: element = "element".asInstanceOf[element]
-  @scala.inline
-  def `en-US`: `en-US` = "en-US".asInstanceOf[`en-US`]
   @scala.inline
   def escapedText: escapedText = "escapedText".asInstanceOf[escapedText]
   @scala.inline

@@ -1,6 +1,6 @@
 package typings.cleanCss.mod
 
-import typings.cleanCss.AnonEfficiency
+import typings.cleanCss.anon.Efficiency
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ trait Output extends js.Object {
   /**
     * Contains statistics on the minify process
     */
-  var stats: AnonEfficiency
+  var stats: Efficiency
   /**
     * Optimized output CSS as a string
     */
@@ -36,7 +36,7 @@ object Output {
   def apply(
     errors: js.Array[String],
     sourceMap: String,
-    stats: AnonEfficiency,
+    stats: Efficiency,
     styles: String,
     warnings: js.Array[String]
   ): Output = {

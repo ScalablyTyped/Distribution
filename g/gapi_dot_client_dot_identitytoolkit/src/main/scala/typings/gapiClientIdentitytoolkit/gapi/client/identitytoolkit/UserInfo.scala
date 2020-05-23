@@ -1,6 +1,6 @@
 package typings.gapiClientIdentitytoolkit.gapi.client.identitytoolkit
 
-import typings.gapiClientIdentitytoolkit.AnonEmail
+import typings.gapiClientIdentitytoolkit.anon.Email
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +33,7 @@ trait UserInfo extends js.Object {
   /** The URL of the user profile photo. */
   var photoUrl: js.UndefOr[String] = js.undefined
   /** The IDP of the user. */
-  var providerUserInfo: js.UndefOr[js.Array[AnonEmail]] = js.undefined
+  var providerUserInfo: js.UndefOr[js.Array[Email]] = js.undefined
   /** The user's plain text password. */
   var rawPassword: js.UndefOr[String] = js.undefined
   /** The user's password salt. */
@@ -59,28 +59,28 @@ object UserInfo {
     lastLoginAt: String = null,
     localId: String = null,
     passwordHash: String = null,
-    passwordUpdatedAt: Int | Double = null,
+    passwordUpdatedAt: js.UndefOr[Double] = js.undefined,
     phoneNumber: String = null,
     photoUrl: String = null,
-    providerUserInfo: js.Array[AnonEmail] = null,
+    providerUserInfo: js.Array[Email] = null,
     rawPassword: String = null,
     salt: String = null,
     screenName: String = null,
     validSince: String = null,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): UserInfo = {
     val __obj = js.Dynamic.literal()
     if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
     if (customAttributes != null) __obj.updateDynamic("customAttributes")(customAttributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(customAuth)) __obj.updateDynamic("customAuth")(customAuth.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(customAuth)) __obj.updateDynamic("customAuth")(customAuth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (!js.isUndefined(emailVerified)) __obj.updateDynamic("emailVerified")(emailVerified.asInstanceOf[js.Any])
+    if (!js.isUndefined(emailVerified)) __obj.updateDynamic("emailVerified")(emailVerified.get.asInstanceOf[js.Any])
     if (lastLoginAt != null) __obj.updateDynamic("lastLoginAt")(lastLoginAt.asInstanceOf[js.Any])
     if (localId != null) __obj.updateDynamic("localId")(localId.asInstanceOf[js.Any])
     if (passwordHash != null) __obj.updateDynamic("passwordHash")(passwordHash.asInstanceOf[js.Any])
-    if (passwordUpdatedAt != null) __obj.updateDynamic("passwordUpdatedAt")(passwordUpdatedAt.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordUpdatedAt)) __obj.updateDynamic("passwordUpdatedAt")(passwordUpdatedAt.get.asInstanceOf[js.Any])
     if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
     if (photoUrl != null) __obj.updateDynamic("photoUrl")(photoUrl.asInstanceOf[js.Any])
     if (providerUserInfo != null) __obj.updateDynamic("providerUserInfo")(providerUserInfo.asInstanceOf[js.Any])
@@ -88,7 +88,7 @@ object UserInfo {
     if (salt != null) __obj.updateDynamic("salt")(salt.asInstanceOf[js.Any])
     if (screenName != null) __obj.updateDynamic("screenName")(screenName.asInstanceOf[js.Any])
     if (validSince != null) __obj.updateDynamic("validSince")(validSince.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserInfo]
   }
 }

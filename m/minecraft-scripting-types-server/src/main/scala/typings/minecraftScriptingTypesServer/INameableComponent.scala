@@ -1,5 +1,6 @@
 package typings.minecraftScriptingTypesServer
 
+import typings.minecraftScriptingTypesServer.anon.Namefilter
 import typings.minecraftScriptingTypesShared.MinecraftTrigger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,7 +31,7 @@ trait INameableComponent extends js.Object {
   /**
     * Describes the special names for this entity and the events to call when the entity acquires those names
     */
-  var name_actions: js.Array[AnonNamefilter]
+  var name_actions: js.Array[Namefilter]
 }
 
 object INameableComponent {
@@ -40,7 +41,7 @@ object INameableComponent {
     alwaysShow: Boolean,
     default_trigger: MinecraftTrigger | String,
     name: String,
-    name_actions: js.Array[AnonNamefilter]
+    name_actions: js.Array[Namefilter]
   ): INameableComponent = {
     val __obj = js.Dynamic.literal(allowNameTagRenaming = allowNameTagRenaming.asInstanceOf[js.Any], alwaysShow = alwaysShow.asInstanceOf[js.Any], default_trigger = default_trigger.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], name_actions = name_actions.asInstanceOf[js.Any])
     __obj.asInstanceOf[INameableComponent]

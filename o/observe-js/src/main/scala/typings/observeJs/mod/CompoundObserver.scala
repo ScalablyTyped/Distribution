@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 @JSImport("observe-js", "CompoundObserver")
 @js.native
 /**
-		 * Constructor
-		 */
+  * Constructor
+  */
 class CompoundObserver () extends CompoundObserverInstance
 
 @JSImport("observe-js", "CompoundObserver")

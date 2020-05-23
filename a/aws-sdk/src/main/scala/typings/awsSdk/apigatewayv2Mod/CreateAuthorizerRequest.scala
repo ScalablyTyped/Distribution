@@ -53,14 +53,14 @@ object CreateAuthorizerRequest {
     IdentitySource: IdentitySourceList,
     Name: StringWithLengthBetween1And128,
     AuthorizerCredentialsArn: Arn = null,
-    AuthorizerResultTtlInSeconds: Int | Double = null,
+    AuthorizerResultTtlInSeconds: js.UndefOr[IntegerWithLengthBetween0And3600] = js.undefined,
     AuthorizerUri: UriWithLengthBetween1And2048 = null,
     IdentityValidationExpression: StringWithLengthBetween0And1024 = null,
     JwtConfiguration: JWTConfiguration = null
   ): CreateAuthorizerRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], AuthorizerType = AuthorizerType.asInstanceOf[js.Any], IdentitySource = IdentitySource.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     if (AuthorizerCredentialsArn != null) __obj.updateDynamic("AuthorizerCredentialsArn")(AuthorizerCredentialsArn.asInstanceOf[js.Any])
-    if (AuthorizerResultTtlInSeconds != null) __obj.updateDynamic("AuthorizerResultTtlInSeconds")(AuthorizerResultTtlInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(AuthorizerResultTtlInSeconds)) __obj.updateDynamic("AuthorizerResultTtlInSeconds")(AuthorizerResultTtlInSeconds.get.asInstanceOf[js.Any])
     if (AuthorizerUri != null) __obj.updateDynamic("AuthorizerUri")(AuthorizerUri.asInstanceOf[js.Any])
     if (IdentityValidationExpression != null) __obj.updateDynamic("IdentityValidationExpression")(IdentityValidationExpression.asInstanceOf[js.Any])
     if (JwtConfiguration != null) __obj.updateDynamic("JwtConfiguration")(JwtConfiguration.asInstanceOf[js.Any])

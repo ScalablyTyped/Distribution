@@ -57,33 +57,33 @@ object IInfoboxOptions {
   @scala.inline
   def apply(
     actions: js.Array[IInfoboxActions] = null,
-    closeDelayTime: Int | Double = null,
+    closeDelayTime: js.UndefOr[Double] = js.undefined,
     description: String = null,
     htmlContent: String = null,
     location: Location = null,
-    maxHeight: Int | Double = null,
-    maxWidth: Int | Double = null,
+    maxHeight: js.UndefOr[Double] = js.undefined,
+    maxWidth: js.UndefOr[Double] = js.undefined,
     offset: Point = null,
     showCloseButton: js.UndefOr[Boolean] = js.undefined,
     showPointer: js.UndefOr[Boolean] = js.undefined,
     title: String = null,
     visible: js.UndefOr[Boolean] = js.undefined,
-    zIndex: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined
   ): IInfoboxOptions = {
     val __obj = js.Dynamic.literal()
     if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
-    if (closeDelayTime != null) __obj.updateDynamic("closeDelayTime")(closeDelayTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeDelayTime)) __obj.updateDynamic("closeDelayTime")(closeDelayTime.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (htmlContent != null) __obj.updateDynamic("htmlContent")(htmlContent.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPointer)) __obj.updateDynamic("showPointer")(showPointer.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPointer)) __obj.updateDynamic("showPointer")(showPointer.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInfoboxOptions]
   }
 }

@@ -1,5 +1,6 @@
 package typings.antDesignReactNative
 
+import typings.antDesignReactNative.anon.ChildrenArray
 import typings.antDesignReactNative.pickerTypesMod.PickerProps
 import typings.react.mod.Component
 import scala.scalajs.js
@@ -24,7 +25,7 @@ object pickerPickerMod extends js.Object {
   @js.native
   object default extends js.Object {
     var Item: js.Any = js.native
-    var defaultProps: AnonChildrenArray = js.native
+    var defaultProps: ChildrenArray = js.native
   }
   
 }

@@ -11,7 +11,7 @@ object Events extends js.Object {
     * EventEmitter is a Scene Systems plugin compatible version of eventemitter3.
     */
   @js.native
-  class EventEmitter () extends js.Object {
+  trait EventEmitter extends js.Object {
     /**
       * Add a listener for a given event.
       * @param event The event name.

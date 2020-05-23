@@ -97,14 +97,13 @@ object Range extends js.Object {
     * It will first compare ranges on the endPosition and then on the startPosition
     */
   def compareRangesUsingEnds(a: IRange, b: IRange): Double = js.native
-  def compareRangesUsingStarts(): Double = js.native
-  def compareRangesUsingStarts(a: js.UndefOr[scala.Nothing], b: IRange): Double = js.native
-  def compareRangesUsingStarts(a: Null, b: IRange): Double = js.native
-  def compareRangesUsingStarts(a: IRange): Double = js.native
   /**
     * A function that compares ranges, useful for sorting ranges
     * It will first compare ranges on the startPosition and then on the endPosition
     */
+  def compareRangesUsingStarts(): Double = js.native
+  def compareRangesUsingStarts(a: Null, b: IRange): Double = js.native
+  def compareRangesUsingStarts(a: IRange): Double = js.native
   def compareRangesUsingStarts(a: IRange, b: IRange): Double = js.native
   /**
     * Test if `position` is in `range`. If the position is at the edges, will return true.

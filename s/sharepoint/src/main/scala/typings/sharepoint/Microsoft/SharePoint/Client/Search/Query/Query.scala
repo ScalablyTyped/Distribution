@@ -8,9 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**Contains information common to all types of search queries.*/
-@JSGlobal("Microsoft.SharePoint.Client.Search.Query.Query")
 @js.native
-class Query () extends ClientObject {
+trait Query extends ClientObject {
   def getQuerySuggestionsWithResults(
     iNumberOfQuerySuggestions: Double,
     iNumberOfResultSuggestions: Double,

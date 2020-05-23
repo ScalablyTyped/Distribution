@@ -5,13 +5,12 @@ import typings.puppeteer.mod.Base64ScreenShotOptions
 import typings.puppeteer.mod.Browser
 import typings.puppeteer.mod.DirectNavigationOptions
 import typings.puppeteer.mod.Page
-import typings.storybookAddonStoryshotsPuppeteer.AnonContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ImageSnapshotConfig extends CommonConfig {
-  def afterScreenshot(options: AnonContext): Unit
+  def afterScreenshot(options: typings.storybookAddonStoryshotsPuppeteer.anon.Context): Unit
   def beforeScreenshot(page: Page, options: Options): Unit
   def getMatchOptions(options: Options): MatchImageSnapshotOptions
   def getScreenshotOptions(options: Options): Base64ScreenShotOptions
@@ -20,7 +19,7 @@ trait ImageSnapshotConfig extends CommonConfig {
 object ImageSnapshotConfig {
   @scala.inline
   def apply(
-    afterScreenshot: AnonContext => Unit,
+    afterScreenshot: typings.storybookAddonStoryshotsPuppeteer.anon.Context => Unit,
     beforeScreenshot: (Page, Options) => Unit,
     chromeExecutablePath: String,
     customizePage: Page => js.Promise[Unit],

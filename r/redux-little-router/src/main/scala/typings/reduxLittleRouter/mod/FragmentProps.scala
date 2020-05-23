@@ -30,7 +30,7 @@ object FragmentProps {
     withConditions: /* location */ Location => Boolean = null
   ): FragmentProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(forNoMatch)) __obj.updateDynamic("forNoMatch")(forNoMatch.asInstanceOf[js.Any])
+    if (!js.isUndefined(forNoMatch)) __obj.updateDynamic("forNoMatch")(forNoMatch.get.asInstanceOf[js.Any])
     if (forRoute != null) __obj.updateDynamic("forRoute")(forRoute.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (matchRoute != null) __obj.updateDynamic("matchRoute")(matchRoute.asInstanceOf[js.Any])

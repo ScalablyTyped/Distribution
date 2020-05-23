@@ -12,9 +12,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents info about a smart card reader. */
-@JSGlobal("Windows.Devices.SmartCards.SmartCardReader")
 @js.native
-abstract class SmartCardReader () extends js.Object {
+trait SmartCardReader extends js.Object {
   /** Gets the smart card reader's device ID. */
   var deviceId: String = js.native
   /** Gets the smart card reader's type. */
@@ -51,28 +50,5 @@ abstract class SmartCardReader () extends js.Object {
   def removeEventListener_cardadded(`type`: cardadded, listener: TypedEventHandler[SmartCardReader, CardAddedEventArgs]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_cardremoved(`type`: cardremoved, listener: TypedEventHandler[SmartCardReader, CardRemovedEventArgs]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Devices.SmartCards.SmartCardReader")
-@js.native
-object SmartCardReader extends js.Object {
-  /**
-    * Returns a smart card reader that matches the specified device ID.
-    * @param deviceId The smart card reader's device ID.
-    * @return The matching smart card reader.
-    */
-  def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[SmartCardReader] = js.native
-  /**
-    * Returns an Advanced Query Syntax (AQS) string representing all smart card readers connected to the device. This string is passed to the FindAllAsync method to enumerate the given set of smart card readers.
-    * @return The Advanced Query Syntax (AQS) string representing all smart card readers connected to the device.
-    */
-  def getDeviceSelector(): String = js.native
-  /**
-    * Returns an Advanced Query Syntax (AQS) string representing a set of a specific type of smart card readers connected to the device. This string is passed to the FindAllAsync method to enumerate the given set of smart card readers.
-    * @param kind One of the enumeration values, representing a specific smart card reader type.
-    * @return The Advanced Query Syntax (AQS) string representing a set of the specified type of smart card readers connected to the device.
-    */
-  def getDeviceSelector(kind: SmartCardReaderKind): String = js.native
 }
 

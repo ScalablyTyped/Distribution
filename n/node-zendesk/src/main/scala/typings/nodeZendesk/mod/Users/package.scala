@@ -8,8 +8,8 @@ package object Users {
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - js.Array[typings.nodeZendesk.mod.ZendeskID]
-    - typings.nodeZendesk.AnonIds
-    - typings.nodeZendesk.AnonExternalids
+    - typings.nodeZendesk.anon.Ids
+    - typings.nodeZendesk.anon.Externalids
   */
   type UpdateIdPayload = typings.nodeZendesk.mod.Users._UpdateIdPayload | js.Array[typings.nodeZendesk.mod.ZendeskID] | java.lang.String
 }

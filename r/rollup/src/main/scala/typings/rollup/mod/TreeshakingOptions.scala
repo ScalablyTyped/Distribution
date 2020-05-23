@@ -25,12 +25,12 @@ object TreeshakingOptions {
     unknownGlobalSideEffects: js.UndefOr[Boolean] = js.undefined
   ): TreeshakingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(annotations)) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
+    if (!js.isUndefined(annotations)) __obj.updateDynamic("annotations")(annotations.get.asInstanceOf[js.Any])
     if (moduleSideEffects != null) __obj.updateDynamic("moduleSideEffects")(moduleSideEffects.asInstanceOf[js.Any])
-    if (!js.isUndefined(propertyReadSideEffects)) __obj.updateDynamic("propertyReadSideEffects")(propertyReadSideEffects.asInstanceOf[js.Any])
+    if (!js.isUndefined(propertyReadSideEffects)) __obj.updateDynamic("propertyReadSideEffects")(propertyReadSideEffects.get.asInstanceOf[js.Any])
     if (pureExternalModules != null) __obj.updateDynamic("pureExternalModules")(pureExternalModules.asInstanceOf[js.Any])
-    if (!js.isUndefined(tryCatchDeoptimization)) __obj.updateDynamic("tryCatchDeoptimization")(tryCatchDeoptimization.asInstanceOf[js.Any])
-    if (!js.isUndefined(unknownGlobalSideEffects)) __obj.updateDynamic("unknownGlobalSideEffects")(unknownGlobalSideEffects.asInstanceOf[js.Any])
+    if (!js.isUndefined(tryCatchDeoptimization)) __obj.updateDynamic("tryCatchDeoptimization")(tryCatchDeoptimization.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unknownGlobalSideEffects)) __obj.updateDynamic("unknownGlobalSideEffects")(unknownGlobalSideEffects.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeshakingOptions]
   }
 }

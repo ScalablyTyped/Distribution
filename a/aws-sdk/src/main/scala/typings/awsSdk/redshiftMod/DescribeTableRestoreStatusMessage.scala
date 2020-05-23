@@ -29,13 +29,13 @@ object DescribeTableRestoreStatusMessage {
   def apply(
     ClusterIdentifier: String = null,
     Marker: String = null,
-    MaxRecords: Int | scala.Double = null,
+    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
     TableRestoreRequestId: String = null
   ): DescribeTableRestoreStatusMessage = {
     val __obj = js.Dynamic.literal()
     if (ClusterIdentifier != null) __obj.updateDynamic("ClusterIdentifier")(ClusterIdentifier.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     if (TableRestoreRequestId != null) __obj.updateDynamic("TableRestoreRequestId")(TableRestoreRequestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTableRestoreStatusMessage]
   }

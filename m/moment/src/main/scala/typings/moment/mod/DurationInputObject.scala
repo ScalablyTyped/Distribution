@@ -7,47 +7,47 @@ import scala.scalajs.js.annotation._
 trait DurationInputObject
   extends MomentInputObject
      with _DurationInputArg1 {
-  var Q: js.UndefOr[Double] = js.undefined
-  var quarter: js.UndefOr[Double] = js.undefined
-  var quarters: js.UndefOr[Double] = js.undefined
-  var w: js.UndefOr[Double] = js.undefined
-  var week: js.UndefOr[Double] = js.undefined
-  var weeks: js.UndefOr[Double] = js.undefined
+  var Q: js.UndefOr[numberlike] = js.undefined
+  var quarter: js.UndefOr[numberlike] = js.undefined
+  var quarters: js.UndefOr[numberlike] = js.undefined
+  var w: js.UndefOr[numberlike] = js.undefined
+  var week: js.UndefOr[numberlike] = js.undefined
+  var weeks: js.UndefOr[numberlike] = js.undefined
 }
 
 object DurationInputObject {
   @scala.inline
   def apply(
-    D: Int | Double = null,
-    M: Int | Double = null,
-    Q: Int | Double = null,
-    d: Int | Double = null,
-    date: Int | Double = null,
-    dates: Int | Double = null,
-    day: Int | Double = null,
-    days: Int | Double = null,
-    h: Int | Double = null,
-    hour: Int | Double = null,
-    hours: Int | Double = null,
-    m: Int | Double = null,
-    millisecond: Int | Double = null,
-    milliseconds: Int | Double = null,
-    minute: Int | Double = null,
-    minutes: Int | Double = null,
-    month: Int | Double = null,
-    months: Int | Double = null,
-    ms: Int | Double = null,
-    quarter: Int | Double = null,
-    quarters: Int | Double = null,
-    s: Int | Double = null,
-    second: Int | Double = null,
-    seconds: Int | Double = null,
-    w: Int | Double = null,
-    week: Int | Double = null,
-    weeks: Int | Double = null,
-    y: Int | Double = null,
-    year: Int | Double = null,
-    years: Int | Double = null
+    D: numberlike = null,
+    M: numberlike = null,
+    Q: numberlike = null,
+    d: numberlike = null,
+    date: numberlike = null,
+    dates: numberlike = null,
+    day: numberlike = null,
+    days: numberlike = null,
+    h: numberlike = null,
+    hour: numberlike = null,
+    hours: numberlike = null,
+    m: numberlike = null,
+    millisecond: numberlike = null,
+    milliseconds: numberlike = null,
+    minute: numberlike = null,
+    minutes: numberlike = null,
+    month: numberlike = null,
+    months: numberlike = null,
+    ms: numberlike = null,
+    quarter: numberlike = null,
+    quarters: numberlike = null,
+    s: numberlike = null,
+    second: numberlike = null,
+    seconds: numberlike = null,
+    w: numberlike = null,
+    week: numberlike = null,
+    weeks: numberlike = null,
+    y: numberlike = null,
+    year: numberlike = null,
+    years: numberlike = null
   ): DurationInputObject = {
     val __obj = js.Dynamic.literal()
     if (D != null) __obj.updateDynamic("D")(D.asInstanceOf[js.Any])

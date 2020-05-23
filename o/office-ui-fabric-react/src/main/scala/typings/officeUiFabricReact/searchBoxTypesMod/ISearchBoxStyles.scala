@@ -16,18 +16,18 @@ trait ISearchBoxStyles extends js.Object {
 object ISearchBoxStyles {
   @scala.inline
   def apply(
-    clearButton: IStyle = null,
-    field: IStyle = null,
-    icon: IStyle = null,
-    iconContainer: IStyle = null,
-    root: IStyle = null
+    clearButton: js.UndefOr[Null | IStyle] = js.undefined,
+    field: js.UndefOr[Null | IStyle] = js.undefined,
+    icon: js.UndefOr[Null | IStyle] = js.undefined,
+    iconContainer: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined
   ): ISearchBoxStyles = {
     val __obj = js.Dynamic.literal()
-    if (clearButton != null) __obj.updateDynamic("clearButton")(clearButton.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (iconContainer != null) __obj.updateDynamic("iconContainer")(iconContainer.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearButton)) __obj.updateDynamic("clearButton")(clearButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(field)) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(iconContainer)) __obj.updateDynamic("iconContainer")(iconContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISearchBoxStyles]
   }
 }

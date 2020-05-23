@@ -1,7 +1,7 @@
 package typings.antDesignReactNative.mod
 
-import typings.antDesignReactNative.AnonAntLocale
-import typings.antDesignReactNative.AnonMinuteStep
+import typings.antDesignReactNative.anon.AntLocale
+import typings.antDesignReactNative.anon.MinuteStep
 import typings.antDesignReactNative.datePickerViewMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ class DatePickerView () extends default
 @JSImport("@ant-design/react-native", "DatePickerView")
 @js.native
 object DatePickerView extends js.Object {
-  var contextTypes: AnonAntLocale = js.native
-  var defaultProps: AnonMinuteStep = js.native
+  var contextTypes: AntLocale = js.native
+  var defaultProps: MinuteStep = js.native
 }
 

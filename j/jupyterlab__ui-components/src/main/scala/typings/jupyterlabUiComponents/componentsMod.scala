@@ -1,7 +1,5 @@
 package typings.jupyterlabUiComponents
 
-import typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.`jp-DefaultStyle`
-import typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.`jp-HTMLSelect`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +11,7 @@ object componentsMod extends js.Object {
   class HTMLSelect ()
     extends typings.jupyterlabUiComponents.htmlselectMod.HTMLSelect
   
-  val DEFAULT_STYLE_CLASS: `jp-DefaultStyle` = js.native
-  val HTML_SELECT_CLASS: `jp-HTMLSelect` = js.native
+  val DEFAULT_STYLE_CLASS: /* "jp-DefaultStyle" */ String = js.native
+  val HTML_SELECT_CLASS: /* "jp-HTMLSelect" */ String = js.native
 }
 

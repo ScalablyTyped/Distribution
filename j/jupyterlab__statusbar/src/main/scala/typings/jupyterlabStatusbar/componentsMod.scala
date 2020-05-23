@@ -4,7 +4,7 @@ import typings.jupyterlabStatusbar.groupMod.GroupItem.IProps
 import typings.jupyterlabStatusbar.hoverMod.Popup.IOptions
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactElement
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLSpanElement
 import scala.scalajs.js

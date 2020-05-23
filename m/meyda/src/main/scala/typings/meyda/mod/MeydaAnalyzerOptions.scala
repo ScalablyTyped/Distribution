@@ -1,6 +1,6 @@
 package typings.meyda.mod
 
-import typings.meyda.PartialMeydaFeaturesObjec
+import typings.meyda.anon.PartialMeydaFeaturesObjec
 import typings.std.AudioContext
 import typings.std.AudioNode
 import scala.scalajs.js
@@ -26,15 +26,15 @@ object MeydaAnalyzerOptions {
     source: AudioNode,
     callback: /* features */ PartialMeydaFeaturesObjec => Unit = null,
     featureExtractors: MeydaAudioFeature | js.Array[MeydaAudioFeature] = null,
-    hopSize: Int | Double = null,
-    numberOfMFCCCoefficients: Int | Double = null,
+    hopSize: js.UndefOr[Double] = js.undefined,
+    numberOfMFCCCoefficients: js.UndefOr[Double] = js.undefined,
     windowingFunction: MeydaWindowingFunction = null
   ): MeydaAnalyzerOptions = {
     val __obj = js.Dynamic.literal(audioContext = audioContext.asInstanceOf[js.Any], bufferSize = bufferSize.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
     if (featureExtractors != null) __obj.updateDynamic("featureExtractors")(featureExtractors.asInstanceOf[js.Any])
-    if (hopSize != null) __obj.updateDynamic("hopSize")(hopSize.asInstanceOf[js.Any])
-    if (numberOfMFCCCoefficients != null) __obj.updateDynamic("numberOfMFCCCoefficients")(numberOfMFCCCoefficients.asInstanceOf[js.Any])
+    if (!js.isUndefined(hopSize)) __obj.updateDynamic("hopSize")(hopSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfMFCCCoefficients)) __obj.updateDynamic("numberOfMFCCCoefficients")(numberOfMFCCCoefficients.get.asInstanceOf[js.Any])
     if (windowingFunction != null) __obj.updateDynamic("windowingFunction")(windowingFunction.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeydaAnalyzerOptions]
   }

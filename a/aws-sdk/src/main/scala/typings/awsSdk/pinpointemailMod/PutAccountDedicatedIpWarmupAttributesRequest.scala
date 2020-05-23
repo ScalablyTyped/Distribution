@@ -14,9 +14,9 @@ trait PutAccountDedicatedIpWarmupAttributesRequest extends js.Object {
 
 object PutAccountDedicatedIpWarmupAttributesRequest {
   @scala.inline
-  def apply(AutoWarmupEnabled: js.UndefOr[Boolean] = js.undefined): PutAccountDedicatedIpWarmupAttributesRequest = {
+  def apply(AutoWarmupEnabled: js.UndefOr[Enabled] = js.undefined): PutAccountDedicatedIpWarmupAttributesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AutoWarmupEnabled)) __obj.updateDynamic("AutoWarmupEnabled")(AutoWarmupEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoWarmupEnabled)) __obj.updateDynamic("AutoWarmupEnabled")(AutoWarmupEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutAccountDedicatedIpWarmupAttributesRequest]
   }
 }

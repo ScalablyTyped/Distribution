@@ -15,15 +15,15 @@ object PdfOptions {
   @scala.inline
   def apply(
     antialias: js.UndefOr[Boolean] = js.undefined,
-    cores: Int | Double = null,
+    cores: js.UndefOr[Double] = js.undefined,
     save: String = null,
-    scale: Int | Double = null
+    scale: js.UndefOr[Double] = js.undefined
   ): PdfOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(antialias)) __obj.updateDynamic("antialias")(antialias.asInstanceOf[js.Any])
-    if (cores != null) __obj.updateDynamic("cores")(cores.asInstanceOf[js.Any])
+    if (!js.isUndefined(antialias)) __obj.updateDynamic("antialias")(antialias.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cores)) __obj.updateDynamic("cores")(cores.get.asInstanceOf[js.Any])
     if (save != null) __obj.updateDynamic("save")(save.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PdfOptions]
   }
 }

@@ -1,8 +1,8 @@
 package typings.multerS3.mod
 
-import typings.expressServeStaticCore.mod._Global_.Express.Request
+import typings.expressServeStaticCore.mod.global.Express.Request
 import typings.multer.mod.StorageEngine
-import typings.multer.mod._Global_.Express.Multer.File
+import typings.multer.mod.global.Express.Multer.File
 import typings.node.NodeJS.ReadableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation._
   */
 trait AttachmentStream extends AttachmentCommon {
   /**
-  	 * A Buffer that contains the attachment contents.
-  	 */
+    * A Buffer that contains the attachment contents.
+    */
   @JSName("content")
   var content_AttachmentStream: Stream
   /**
-  	 * Method must be called once you have processed the attachment.
-  	 */
+    * Method must be called once you have processed the attachment.
+    */
   def release(): Unit
 }
 
@@ -43,7 +43,7 @@ object AttachmentStream {
     if (cid != null) __obj.updateDynamic("cid")(cid.asInstanceOf[js.Any])
     if (contentId != null) __obj.updateDynamic("contentId")(contentId.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (!js.isUndefined(related)) __obj.updateDynamic("related")(related.asInstanceOf[js.Any])
+    if (!js.isUndefined(related)) __obj.updateDynamic("related")(related.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentStream]
   }
 }

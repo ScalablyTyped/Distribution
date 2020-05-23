@@ -1,6 +1,6 @@
 package typings.googlepay.google.payments.api
 
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +25,12 @@ trait ButtonOptions extends js.Object {
     * callback](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#The_event_listener_callback)
     * to call when a click event is delivered to the `<button>` target.
     */
-  def onClick(event: Event_): Unit
+  def onClick(event: Event): Unit
 }
 
 object ButtonOptions {
   @scala.inline
-  def apply(onClick: Event_ => Unit, buttonColor: ButtonColor = null, buttonType: ButtonType = null): ButtonOptions = {
+  def apply(onClick: Event => Unit, buttonColor: ButtonColor = null, buttonType: ButtonType = null): ButtonOptions = {
     val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick))
     if (buttonColor != null) __obj.updateDynamic("buttonColor")(buttonColor.asInstanceOf[js.Any])
     if (buttonType != null) __obj.updateDynamic("buttonType")(buttonType.asInstanceOf[js.Any])

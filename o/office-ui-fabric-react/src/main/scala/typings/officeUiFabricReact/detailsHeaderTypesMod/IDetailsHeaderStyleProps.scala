@@ -41,12 +41,12 @@ object IDetailsHeaderStyleProps {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     if (cellStyleProps != null) __obj.updateDynamic("cellStyleProps")(cellStyleProps.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAllCollapsed)) __obj.updateDynamic("isAllCollapsed")(isAllCollapsed.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAllSelected)) __obj.updateDynamic("isAllSelected")(isAllSelected.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCheckboxHidden)) __obj.updateDynamic("isCheckboxHidden")(isCheckboxHidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResizingColumn)) __obj.updateDynamic("isResizingColumn")(isResizingColumn.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSelectAllHidden)) __obj.updateDynamic("isSelectAllHidden")(isSelectAllHidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSizing)) __obj.updateDynamic("isSizing")(isSizing.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAllCollapsed)) __obj.updateDynamic("isAllCollapsed")(isAllCollapsed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAllSelected)) __obj.updateDynamic("isAllSelected")(isAllSelected.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCheckboxHidden)) __obj.updateDynamic("isCheckboxHidden")(isCheckboxHidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResizingColumn)) __obj.updateDynamic("isResizingColumn")(isResizingColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSelectAllHidden)) __obj.updateDynamic("isSelectAllHidden")(isSelectAllHidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSizing)) __obj.updateDynamic("isSizing")(isSizing.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetailsHeaderStyleProps]
   }
 }

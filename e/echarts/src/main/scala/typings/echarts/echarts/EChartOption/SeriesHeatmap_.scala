@@ -1,12 +1,12 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.AnonAnimationDurationUpdate
-import typings.echarts.AnonAnimationEasing
-import typings.echarts.AnonAnimationEasingUpdate
-import typings.echarts.AnonBorderType
-import typings.echarts.AnonDistance
-import typings.echarts.AnonExtraCssText
-import typings.echarts.AnonItemStyleAnonBorderTypeLabelAnonDistance
+import typings.echarts.anon.AnimationDurationUpdate
+import typings.echarts.anon.AnimationEasing
+import typings.echarts.anon.AnimationEasingUpdate
+import typings.echarts.anon.BorderType
+import typings.echarts.anon.Distance
+import typings.echarts.anon.ExtraCssText
+import typings.echarts.anon.ItemStyleBorderTypeLabelDistance
 import typings.echarts.echarts.EChartOption.SeriesHeatmap.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -228,7 +228,7 @@ trait SeriesHeatmap_ extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-heatmap.emphasis
     */
-  var emphasis: js.UndefOr[AnonItemStyleAnonBorderTypeLabelAnonDistance] = js.undefined
+  var emphasis: js.UndefOr[ItemStyleBorderTypeLabelDistance] = js.undefined
   /**
     * Index of
     * [geographic coordinate](https://echarts.apache.org/en/option.html#geo)
@@ -256,7 +256,7 @@ trait SeriesHeatmap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-heatmap.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderType] = js.undefined
+  var itemStyle: js.UndefOr[BorderType] = js.undefined
   /**
     * Work for
     * [coordinateSystem](https://echarts.apache.org/en/option.html#series-heatmap.coordinateSystem)
@@ -265,7 +265,7 @@ trait SeriesHeatmap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-heatmap.label
     */
-  var label: js.UndefOr[AnonDistance] = js.undefined
+  var label: js.UndefOr[Distance] = js.undefined
   /**
     * Used to mark an area in chart.
     * For example, mark a time interval.
@@ -273,21 +273,21 @@ trait SeriesHeatmap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-heatmap.markArea
     */
-  var markArea: js.UndefOr[AnonAnimationEasingUpdate] = js.undefined
+  var markArea: js.UndefOr[AnimationEasingUpdate] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-heatmap.markLine
     */
-  var markLine: js.UndefOr[AnonAnimationEasing] = js.undefined
+  var markLine: js.UndefOr[AnimationEasing] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-heatmap.markPoint
     */
-  var markPoint: js.UndefOr[AnonAnimationDurationUpdate] = js.undefined
+  var markPoint: js.UndefOr[AnimationDurationUpdate] = js.undefined
   /**
     * Maximum opacity. It is valid with
     * [coordinateSystem](https://echarts.apache.org/en/option.html#series-heatmap.coordinateSystem)
@@ -334,7 +334,7 @@ trait SeriesHeatmap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-heatmap.tooltip
     */
-  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
   /**
     * @default
     * "heatmap"
@@ -397,54 +397,54 @@ trait SeriesHeatmap_ extends js.Object {
 object SeriesHeatmap_ {
   @scala.inline
   def apply(
-    blurSize: Int | Double = null,
-    calendarIndex: Int | Double = null,
+    blurSize: js.UndefOr[Double] = js.undefined,
+    calendarIndex: js.UndefOr[Double] = js.undefined,
     coordinateSystem: String = null,
     data: js.Array[
       (js.Array[Unit | Double | String | DataObject]) | DataObject | Double | String | Unit
     ] = null,
-    emphasis: AnonItemStyleAnonBorderTypeLabelAnonDistance = null,
-    geoIndex: Int | Double = null,
+    emphasis: ItemStyleBorderTypeLabelDistance = null,
+    geoIndex: js.UndefOr[Double] = js.undefined,
     id: String = null,
-    itemStyle: AnonBorderType = null,
-    label: AnonDistance = null,
-    markArea: AnonAnimationEasingUpdate = null,
-    markLine: AnonAnimationEasing = null,
-    markPoint: AnonAnimationDurationUpdate = null,
-    maxOpacity: Int | Double = null,
-    minOpacity: Int | Double = null,
+    itemStyle: BorderType = null,
+    label: Distance = null,
+    markArea: AnimationEasingUpdate = null,
+    markLine: AnimationEasing = null,
+    markPoint: AnimationDurationUpdate = null,
+    maxOpacity: js.UndefOr[Double] = js.undefined,
+    minOpacity: js.UndefOr[Double] = js.undefined,
     name: String = null,
     silent: js.UndefOr[Boolean] = js.undefined,
-    tooltip: AnonExtraCssText = null,
+    tooltip: ExtraCssText = null,
     `type`: String = null,
-    xAxisIndex: Int | Double = null,
-    yAxisIndex: Int | Double = null,
-    z: Int | Double = null,
-    zlevel: Int | Double = null
+    xAxisIndex: js.UndefOr[Double] = js.undefined,
+    yAxisIndex: js.UndefOr[Double] = js.undefined,
+    z: js.UndefOr[Double] = js.undefined,
+    zlevel: js.UndefOr[Double] = js.undefined
   ): SeriesHeatmap_ = {
     val __obj = js.Dynamic.literal()
-    if (blurSize != null) __obj.updateDynamic("blurSize")(blurSize.asInstanceOf[js.Any])
-    if (calendarIndex != null) __obj.updateDynamic("calendarIndex")(calendarIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(blurSize)) __obj.updateDynamic("blurSize")(blurSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(calendarIndex)) __obj.updateDynamic("calendarIndex")(calendarIndex.get.asInstanceOf[js.Any])
     if (coordinateSystem != null) __obj.updateDynamic("coordinateSystem")(coordinateSystem.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
-    if (geoIndex != null) __obj.updateDynamic("geoIndex")(geoIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(geoIndex)) __obj.updateDynamic("geoIndex")(geoIndex.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (markArea != null) __obj.updateDynamic("markArea")(markArea.asInstanceOf[js.Any])
     if (markLine != null) __obj.updateDynamic("markLine")(markLine.asInstanceOf[js.Any])
     if (markPoint != null) __obj.updateDynamic("markPoint")(markPoint.asInstanceOf[js.Any])
-    if (maxOpacity != null) __obj.updateDynamic("maxOpacity")(maxOpacity.asInstanceOf[js.Any])
-    if (minOpacity != null) __obj.updateDynamic("minOpacity")(minOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxOpacity)) __obj.updateDynamic("maxOpacity")(maxOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minOpacity)) __obj.updateDynamic("minOpacity")(minOpacity.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (xAxisIndex != null) __obj.updateDynamic("xAxisIndex")(xAxisIndex.asInstanceOf[js.Any])
-    if (yAxisIndex != null) __obj.updateDynamic("yAxisIndex")(yAxisIndex.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
-    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(xAxisIndex)) __obj.updateDynamic("xAxisIndex")(xAxisIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yAxisIndex)) __obj.updateDynamic("yAxisIndex")(yAxisIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zlevel)) __obj.updateDynamic("zlevel")(zlevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesHeatmap_]
   }
 }

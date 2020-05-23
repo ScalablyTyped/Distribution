@@ -1,6 +1,5 @@
 package typings.devextreme.mod.default.viz
 
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,27 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class piePointObject ()
   extends typings.devextreme.mod.DevExpress.viz.piePointObject {
-  /** @name basePointObject.data */
-  /* CompleteClass */
-  override var data: js.Any = js.native
-  /** @name basePointObject.fullState */
-  /* CompleteClass */
-  override var fullState: Double = js.native
-  /** @name basePointObject.originalArgument */
-  /* CompleteClass */
-  override var originalArgument: String | Double | Date = js.native
-  /** @name basePointObject.originalValue */
-  /* CompleteClass */
-  override var originalValue: String | Double | Date = js.native
-  /** @name piePointObject.percent */
-  /* CompleteClass */
-  override var percent: String | Double | Date = js.native
-  /** @name basePointObject.series */
-  /* CompleteClass */
-  override var series: js.Any = js.native
-  /** @name basePointObject.tag */
-  /* CompleteClass */
-  override var tag: js.Any = js.native
   /** @name basePointObject.clearHover() */
   /* CompleteClass */
   override def clearHover(): Unit = js.native

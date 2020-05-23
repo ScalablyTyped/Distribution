@@ -14,13 +14,13 @@ trait IvLoadPolicy extends js.Object
 
 object IvLoadPolicy {
   /**
-  		 * Video annotations will not be shown.
-  		 */
+    * Video annotations will not be shown.
+    */
   @scala.inline
   def Hide: `3` = 3.asInstanceOf[`3`]
   /**
-  		 * Video annotations will be shown.
-  		 */
+    * Video annotations will be shown.
+    */
   @scala.inline
   def Show: `1` = 1.asInstanceOf[`1`]
 }

@@ -88,13 +88,13 @@ object DBClusterSnapshot {
     EngineVersion: String = null,
     KmsKeyId: String = null,
     MasterUsername: String = null,
-    PercentProgress: Int | Double = null,
-    Port: Int | Double = null,
+    PercentProgress: js.UndefOr[Integer] = js.undefined,
+    Port: js.UndefOr[Integer] = js.undefined,
     SnapshotCreateTime: TStamp = null,
     SnapshotType: String = null,
     SourceDBClusterSnapshotArn: String = null,
     Status: String = null,
-    StorageEncrypted: js.UndefOr[scala.Boolean] = js.undefined,
+    StorageEncrypted: js.UndefOr[Boolean] = js.undefined,
     VpcId: String = null
   ): DBClusterSnapshot = {
     val __obj = js.Dynamic.literal()
@@ -107,13 +107,13 @@ object DBClusterSnapshot {
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
     if (MasterUsername != null) __obj.updateDynamic("MasterUsername")(MasterUsername.asInstanceOf[js.Any])
-    if (PercentProgress != null) __obj.updateDynamic("PercentProgress")(PercentProgress.asInstanceOf[js.Any])
-    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
+    if (!js.isUndefined(PercentProgress)) __obj.updateDynamic("PercentProgress")(PercentProgress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
     if (SnapshotCreateTime != null) __obj.updateDynamic("SnapshotCreateTime")(SnapshotCreateTime.asInstanceOf[js.Any])
     if (SnapshotType != null) __obj.updateDynamic("SnapshotType")(SnapshotType.asInstanceOf[js.Any])
     if (SourceDBClusterSnapshotArn != null) __obj.updateDynamic("SourceDBClusterSnapshotArn")(SourceDBClusterSnapshotArn.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (!js.isUndefined(StorageEncrypted)) __obj.updateDynamic("StorageEncrypted")(StorageEncrypted.asInstanceOf[js.Any])
+    if (!js.isUndefined(StorageEncrypted)) __obj.updateDynamic("StorageEncrypted")(StorageEncrypted.get.asInstanceOf[js.Any])
     if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBClusterSnapshot]
   }

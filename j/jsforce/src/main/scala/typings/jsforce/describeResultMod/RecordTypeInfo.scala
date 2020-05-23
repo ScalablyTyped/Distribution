@@ -24,10 +24,10 @@ object RecordTypeInfo {
     name: String,
     recordTypeId: String,
     urls: Record[String, String],
-    developerName: maybe[String] = null
+    developerName: js.UndefOr[Null | maybe[String]] = js.undefined
   ): RecordTypeInfo = {
     val __obj = js.Dynamic.literal(available = available.asInstanceOf[js.Any], defaultRecordTypeMapping = defaultRecordTypeMapping.asInstanceOf[js.Any], master = master.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], recordTypeId = recordTypeId.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any])
-    if (developerName != null) __obj.updateDynamic("developerName")(developerName.asInstanceOf[js.Any])
+    if (!js.isUndefined(developerName)) __obj.updateDynamic("developerName")(developerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordTypeInfo]
   }
 }

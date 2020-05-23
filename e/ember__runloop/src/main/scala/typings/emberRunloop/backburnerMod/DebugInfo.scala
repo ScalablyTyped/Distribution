@@ -18,10 +18,10 @@ object DebugInfo {
     counters: js.Object,
     instanceStack: js.Array[DeferredActionQueues],
     timers: js.Array[QueueItem],
-    autorun: Error = null
+    autorun: js.UndefOr[Null | Error] = js.undefined
   ): DebugInfo = {
     val __obj = js.Dynamic.literal(counters = counters.asInstanceOf[js.Any], instanceStack = instanceStack.asInstanceOf[js.Any], timers = timers.asInstanceOf[js.Any])
-    if (autorun != null) __obj.updateDynamic("autorun")(autorun.asInstanceOf[js.Any])
+    if (!js.isUndefined(autorun)) __obj.updateDynamic("autorun")(autorun.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebugInfo]
   }
 }

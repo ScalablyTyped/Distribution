@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/indexeddb_schema", "DbCollectionParent")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbCollectionParent")
 @js.native
 class DbCollectionParent protected () extends js.Object {
   def this(
@@ -31,7 +31,7 @@ class DbCollectionParent protected () extends js.Object {
 }
 
 /* static members */
-@JSImport("@firebase/firestore/dist/lib/src/local/indexeddb_schema", "DbCollectionParent")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbCollectionParent")
 @js.native
 object DbCollectionParent extends js.Object {
   /** Keys are automatically assigned via the collectionId, parent properties. */

@@ -53,16 +53,16 @@ object LegInfo {
     aircraft: String = null,
     arrivalTime: String = null,
     changePlane: js.UndefOr[Boolean] = js.undefined,
-    connectionDuration: Int | Double = null,
+    connectionDuration: js.UndefOr[Double] = js.undefined,
     departureTime: String = null,
     destination: String = null,
     destinationTerminal: String = null,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     id: String = null,
     kind: String = null,
     meal: String = null,
-    mileage: Int | Double = null,
-    onTimePerformance: Int | Double = null,
+    mileage: js.UndefOr[Double] = js.undefined,
+    onTimePerformance: js.UndefOr[Double] = js.undefined,
     operatingDisclosure: String = null,
     origin: String = null,
     originTerminal: String = null,
@@ -71,21 +71,21 @@ object LegInfo {
     val __obj = js.Dynamic.literal()
     if (aircraft != null) __obj.updateDynamic("aircraft")(aircraft.asInstanceOf[js.Any])
     if (arrivalTime != null) __obj.updateDynamic("arrivalTime")(arrivalTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(changePlane)) __obj.updateDynamic("changePlane")(changePlane.asInstanceOf[js.Any])
-    if (connectionDuration != null) __obj.updateDynamic("connectionDuration")(connectionDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(changePlane)) __obj.updateDynamic("changePlane")(changePlane.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectionDuration)) __obj.updateDynamic("connectionDuration")(connectionDuration.get.asInstanceOf[js.Any])
     if (departureTime != null) __obj.updateDynamic("departureTime")(departureTime.asInstanceOf[js.Any])
     if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
     if (destinationTerminal != null) __obj.updateDynamic("destinationTerminal")(destinationTerminal.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (meal != null) __obj.updateDynamic("meal")(meal.asInstanceOf[js.Any])
-    if (mileage != null) __obj.updateDynamic("mileage")(mileage.asInstanceOf[js.Any])
-    if (onTimePerformance != null) __obj.updateDynamic("onTimePerformance")(onTimePerformance.asInstanceOf[js.Any])
+    if (!js.isUndefined(mileage)) __obj.updateDynamic("mileage")(mileage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(onTimePerformance)) __obj.updateDynamic("onTimePerformance")(onTimePerformance.get.asInstanceOf[js.Any])
     if (operatingDisclosure != null) __obj.updateDynamic("operatingDisclosure")(operatingDisclosure.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     if (originTerminal != null) __obj.updateDynamic("originTerminal")(originTerminal.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegInfo]
   }
 }

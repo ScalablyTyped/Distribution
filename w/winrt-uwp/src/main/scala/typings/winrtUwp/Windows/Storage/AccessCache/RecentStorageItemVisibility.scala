@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Storage.AccessCache
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object RecentStorageItemVisibility extends js.Object {
   /** The storage item is visible in the MRU list for the app only. */
   @js.native
   sealed trait appOnly extends RecentStorageItemVisibility
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RecentStorageItemVisibility with Double] = js.native
-  /* 1 */ @js.native
-  object appAndSystem extends TopLevel[appAndSystem with Double]
-  
-  /* 0 */ @js.native
-  object appOnly extends TopLevel[appOnly with Double]
   
 }
 

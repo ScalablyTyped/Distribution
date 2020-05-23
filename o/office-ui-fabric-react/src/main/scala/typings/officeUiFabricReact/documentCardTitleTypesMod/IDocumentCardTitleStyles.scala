@@ -11,9 +11,9 @@ trait IDocumentCardTitleStyles extends js.Object {
 
 object IDocumentCardTitleStyles {
   @scala.inline
-  def apply(root: IStyle = null): IDocumentCardTitleStyles = {
+  def apply(root: js.UndefOr[Null | IStyle] = js.undefined): IDocumentCardTitleStyles = {
     val __obj = js.Dynamic.literal()
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDocumentCardTitleStyles]
   }
 }

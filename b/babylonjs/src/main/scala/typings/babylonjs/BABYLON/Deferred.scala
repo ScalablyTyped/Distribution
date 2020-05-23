@@ -4,25 +4,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.Deferred")
-@js.native
-/**
-  * Constructor for this deferred object.
-  */
-class Deferred[T] () extends js.Object {
-  var _reject: js.Any = js.native
-  var _resolve: js.Any = js.native
+trait Deferred[T] extends js.Object {
+  var _reject: js.Any
+  var _resolve: js.Any
   /**
     * The promise associated with this deferred object.
     */
-  val promise: js.Promise[T] = js.native
+  val promise: js.Promise[T]
   /**
     * The reject method of the promise associated with this deferred object.
     */
-  def reject: js.Function1[/* reason */ js.UndefOr[js.Any], Unit] = js.native
+  def reject: js.Function1[/* reason */ js.UndefOr[js.Any], Unit]
   /**
     * The resolve method of the promise associated with this deferred object.
     */
-  def resolve: js.Function1[/* value */ js.UndefOr[T | js.Thenable[T]], Unit] = js.native
+  def resolve: js.Function1[/* value */ js.UndefOr[T | js.Thenable[T]], Unit]
+}
+
+object Deferred {
+  @scala.inline
+  def apply[T](
+    _reject: js.Any,
+    _resolve: js.Any,
+    promise: js.Promise[T],
+    reject: () => js.Function1[/* reason */ js.UndefOr[js.Any], Unit],
+    resolve: () => js.Function1[/* value */ js.UndefOr[T | js.Thenable[T]], Unit]
+  ): Deferred[T] = {
+    val __obj = js.Dynamic.literal(_reject = _reject.asInstanceOf[js.Any], _resolve = _resolve.asInstanceOf[js.Any], promise = promise.asInstanceOf[js.Any], reject = js.Any.fromFunction0(reject), resolve = js.Any.fromFunction0(resolve))
+    __obj.asInstanceOf[Deferred[T]]
+  }
 }
 

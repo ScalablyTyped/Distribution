@@ -1,5 +1,6 @@
 package typings.unimodulesCore
 
+import typings.unimodulesCore.anon.CurrentVersion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object deprecateMod extends js.Object {
   def default(library: String, deprecatedAPI: String): Unit = js.native
-  def default(library: String, deprecatedAPI: String, options: AnonCurrentVersion): Unit = js.native
+  def default(library: String, deprecatedAPI: String, options: CurrentVersion): Unit = js.native
 }
 

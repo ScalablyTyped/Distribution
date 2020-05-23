@@ -1,6 +1,6 @@
 package typings.jpm.FFAddonSDK
 
-import typings.jpm.AnonContentScriptOptions
+import typings.jpm.anon.ContentScriptOptions
 import typings.jpm.jpmStrings.activate
 import typings.jpm.jpmStrings.close
 import typings.jpm.jpmStrings.complete
@@ -27,7 +27,7 @@ trait Tab extends js.Object {
   var url: String = js.native
   var window: BrowserWindow = js.native
   def activate(): Unit = js.native
-  def attach(options: AnonContentScriptOptions): ContentWorker = js.native
+  def attach(options: ContentScriptOptions): ContentWorker = js.native
   def close(): Unit = js.native
   def close(afterClose: js.Function0[_]): Unit = js.native
   def getThumbnail(): String = js.native

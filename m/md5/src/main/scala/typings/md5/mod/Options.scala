@@ -19,8 +19,8 @@ object Options {
     encoding: binary | String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(asBytes)) __obj.updateDynamic("asBytes")(asBytes.asInstanceOf[js.Any])
-    if (!js.isUndefined(asString)) __obj.updateDynamic("asString")(asString.asInstanceOf[js.Any])
+    if (!js.isUndefined(asBytes)) __obj.updateDynamic("asBytes")(asBytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(asString)) __obj.updateDynamic("asString")(asString.get.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

@@ -1,7 +1,7 @@
 package typings.stormReactDiagrams.pathFindingMod
 
-import typings.stormReactDiagrams.AnonEnd
-import typings.stormReactDiagrams.AnonX
+import typings.stormReactDiagrams.anon.End
+import typings.stormReactDiagrams.anon.X
 import typings.stormReactDiagrams.mod.DiagramEngine
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,15 +14,15 @@ trait PathFinding extends js.Object {
     * Taking as argument a fully unblocked walking matrix, this method
     * finds a direct path from point A to B.
     */
-  def calculateDirectPath(from: AnonX, to: AnonX): js.Array[js.Array[Double]]
+  def calculateDirectPath(from: X, to: X): js.Array[js.Array[Double]]
   /**
     * Puts everything together: merges the paths from/to the centre of the ports,
     * with the path calculated around other elements.
     */
   def calculateDynamicPath(
     routingMatrix: js.Array[js.Array[Double]],
-    start: AnonX,
-    end: AnonX,
+    start: X,
+    end: X,
     pathToStart: js.Array[js.Array[Double]],
     pathToEnd: js.Array[js.Array[Double]]
   ): js.Any
@@ -31,15 +31,15 @@ trait PathFinding extends js.Object {
     * determine the first walkable point found in the matrix that includes
     * blocked paths.
     */
-  def calculateLinkStartEndCoords(matrix: js.Array[js.Array[Double]], path: js.Array[js.Array[Double]]): AnonEnd
+  def calculateLinkStartEndCoords(matrix: js.Array[js.Array[Double]], path: js.Array[js.Array[Double]]): End
 }
 
 object PathFinding {
   @scala.inline
   def apply(
-    calculateDirectPath: (AnonX, AnonX) => js.Array[js.Array[Double]],
-    calculateDynamicPath: (js.Array[js.Array[Double]], AnonX, AnonX, js.Array[js.Array[Double]], js.Array[js.Array[Double]]) => js.Any,
-    calculateLinkStartEndCoords: (js.Array[js.Array[Double]], js.Array[js.Array[Double]]) => AnonEnd,
+    calculateDirectPath: (X, X) => js.Array[js.Array[Double]],
+    calculateDynamicPath: (js.Array[js.Array[Double]], X, X, js.Array[js.Array[Double]], js.Array[js.Array[Double]]) => js.Any,
+    calculateLinkStartEndCoords: (js.Array[js.Array[Double]], js.Array[js.Array[Double]]) => End,
     diagramEngine: DiagramEngine,
     instance: js.Any
   ): PathFinding = {

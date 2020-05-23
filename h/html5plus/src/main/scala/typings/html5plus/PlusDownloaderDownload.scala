@@ -49,7 +49,7 @@ trait PlusDownloaderDownload extends js.Object {
   /**
     * 下载任务文件的总大小
     * 整数类型，单位为字节（byte），下载任务开始传输数据时更新，在此之前其值为0。
-    * 	此值是从HTTP请求头中获取，如果服务器未返回则此值始终为0。
+    *     此值是从HTTP请求头中获取，如果服务器未返回则此值始终为0。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */
@@ -64,7 +64,7 @@ trait PlusDownloaderDownload extends js.Object {
   /**
     * 取消下载任务
     * 如果任务未完成，则终止下载，并从任务列表中删除。
-    * 	如下载未完成，将删除已下载的临时文件，如果下载已完成，将不删除已下载的文件。
+    *     如下载未完成，将删除已下载的临时文件，如果下载已完成，将不删除已下载的文件。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */
@@ -93,7 +93,7 @@ trait PlusDownloaderDownload extends js.Object {
   /**
     * 获取下载请求指定的HTTP响应头部的值
     * 其参数是要返回的HTTP响应头部的名称，可以使用任何大小写来制定这个头部名字，和响应头部的比较是不区分大小写的。
-    * 	如果没有接收到这个头部或者下载请求未完成则为空字符串；如果接收到多个有指定名称的头部，这个头部的值被连接起来并返回，使用逗号和空格分隔开各个头部的值。
+    *     如果没有接收到这个头部或者下载请求未完成则为空字符串；如果接收到多个有指定名称的头部，这个头部的值被连接起来并返回，使用逗号和空格分隔开各个头部的值。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */
@@ -102,7 +102,7 @@ trait PlusDownloaderDownload extends js.Object {
   /**
     * 暂停下载任务
     * 暂停下载任务，如果任务已经处于初始状态或暂停状态则无任何响应。
-    * 	通常在任务已开始后暂停任务。
+    *     通常在任务已开始后暂停任务。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */
@@ -117,7 +117,7 @@ trait PlusDownloaderDownload extends js.Object {
   /**
     * 设置下载请求的HTTP头数据
     * Http的Header应该包含在通过后续start()调用而发起的请求中，此方法必需在调用start()之前设置才能生效。
-    * 	如果带有指定名称的头部已经被指定了，这个头部的新值就是：之前指定的值，加上逗号、以及这个调用指定的值（形成一个数组）。
+    *     如果带有指定名称的头部已经被指定了，这个头部的新值就是：之前指定的值，加上逗号、以及这个调用指定的值（形成一个数组）。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */
@@ -127,7 +127,7 @@ trait PlusDownloaderDownload extends js.Object {
   /**
     * 开始下载任务
     * 开始下载任务，如果任务已经处于开始状态则无任何响应。
-    * 	在创建任务或任务下载失败后调用可重新开始下载。
+    *     在创建任务或任务下载失败后调用可重新开始下载。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */

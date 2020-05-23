@@ -29,7 +29,7 @@ object IColumnConfig {
   ): IColumnConfig = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (cast != null) __obj.updateDynamic("cast")(cast.asInstanceOf[js.Any])
-    if (!js.isUndefined(cnd)) __obj.updateDynamic("cnd")(cnd.asInstanceOf[js.Any])
+    if (!js.isUndefined(cnd)) __obj.updateDynamic("cnd")(cnd.get.asInstanceOf[js.Any])
     if (`def` != null) __obj.updateDynamic("def")(`def`.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
     if (mod != null) __obj.updateDynamic("mod")(mod.asInstanceOf[js.Any])

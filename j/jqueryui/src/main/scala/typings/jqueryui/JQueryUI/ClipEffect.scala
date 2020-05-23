@@ -10,9 +10,9 @@ trait ClipEffect extends js.Object {
 
 object ClipEffect {
   @scala.inline
-  def apply(direction: Int | Double = null): ClipEffect = {
+  def apply(direction: js.UndefOr[Double] = js.undefined): ClipEffect = {
     val __obj = js.Dynamic.literal()
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (!js.isUndefined(direction)) __obj.updateDynamic("direction")(direction.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClipEffect]
   }
 }

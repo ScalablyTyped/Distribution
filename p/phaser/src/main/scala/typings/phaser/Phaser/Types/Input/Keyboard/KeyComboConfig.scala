@@ -27,15 +27,15 @@ object KeyComboConfig {
   @scala.inline
   def apply(
     deleteOnMatch: js.UndefOr[Boolean] = js.undefined,
-    maxKeyDelay: Int | Double = null,
+    maxKeyDelay: js.UndefOr[Double] = js.undefined,
     resetOnMatch: js.UndefOr[Boolean] = js.undefined,
     resetOnWrongKey: js.UndefOr[Boolean] = js.undefined
   ): KeyComboConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deleteOnMatch)) __obj.updateDynamic("deleteOnMatch")(deleteOnMatch.asInstanceOf[js.Any])
-    if (maxKeyDelay != null) __obj.updateDynamic("maxKeyDelay")(maxKeyDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetOnMatch)) __obj.updateDynamic("resetOnMatch")(resetOnMatch.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetOnWrongKey)) __obj.updateDynamic("resetOnWrongKey")(resetOnWrongKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleteOnMatch)) __obj.updateDynamic("deleteOnMatch")(deleteOnMatch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxKeyDelay)) __obj.updateDynamic("maxKeyDelay")(maxKeyDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetOnMatch)) __obj.updateDynamic("resetOnMatch")(resetOnMatch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetOnWrongKey)) __obj.updateDynamic("resetOnWrongKey")(resetOnWrongKey.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyComboConfig]
   }
 }

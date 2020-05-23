@@ -43,7 +43,7 @@ object ListenToOptions {
   ): ListenToOptions = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
     __obj.updateDynamic("then")(js.Any.fromFunction1(`then`))
-    if (!js.isUndefined(asArray)) __obj.updateDynamic("asArray")(asArray.asInstanceOf[js.Any])
+    if (!js.isUndefined(asArray)) __obj.updateDynamic("asArray")(asArray.get.asInstanceOf[js.Any])
     if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction1(onFailure))
     if (queries != null) __obj.updateDynamic("queries")(queries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenToOptions]

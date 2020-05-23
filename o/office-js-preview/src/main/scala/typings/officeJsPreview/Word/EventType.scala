@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Word
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -72,29 +71,6 @@ object EventType extends js.Object {
     */
   @js.native
   sealed trait contentControlSelectionChanged extends EventType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[EventType with String] = js.native
-  /* "AnnotationAdded" */ @js.native
-  object annotationAdded extends TopLevel[annotationAdded with String]
-  
-  /* "AnnotationChanged" */ @js.native
-  object annotationChanged extends TopLevel[annotationChanged with String]
-  
-  /* "AnnotationDeleted" */ @js.native
-  object annotationDeleted extends TopLevel[annotationDeleted with String]
-  
-  /* "ContentControlAdded" */ @js.native
-  object contentControlAdded extends TopLevel[contentControlAdded with String]
-  
-  /* "ContentControlDataChanged" */ @js.native
-  object contentControlDataChanged extends TopLevel[contentControlDataChanged with String]
-  
-  /* "ContentControlDeleted" */ @js.native
-  object contentControlDeleted extends TopLevel[contentControlDeleted with String]
-  
-  /* "ContentControlSelectionChanged" */ @js.native
-  object contentControlSelectionChanged extends TopLevel[contentControlSelectionChanged with String]
   
 }
 

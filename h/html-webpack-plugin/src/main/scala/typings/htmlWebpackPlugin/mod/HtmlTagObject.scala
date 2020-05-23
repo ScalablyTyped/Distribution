@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 
 trait HtmlTagObject extends js.Object {
   /**
-  	 * Attributes of the html tag
-  	 * E.g. `{'disabled': true, 'value': 'demo'}`
-  	 */
+    * Attributes of the html tag
+    * E.g. `{'disabled': true, 'value': 'demo'}`
+    */
   var attributes: StringDictionary[String | Boolean]
   /**
-  	 * Inner HTML The
-  	 */
+    * Inner HTML The
+    */
   var innerHTML: js.UndefOr[String] = js.undefined
   /**
-  	 * The tag name e.g. `'div'`
-  	 */
+    * The tag name e.g. `'div'`
+    */
   var tagName: String
   /**
-  	 * Wether this html must not contain innerHTML
-  	 * @see https://www.w3.org/TR/html5/syntax.html#void-elements
-  	 */
+    * Wether this html must not contain innerHTML
+    * @see https://www.w3.org/TR/html5/syntax.html#void-elements
+    */
   var voidTag: Boolean
 }
 

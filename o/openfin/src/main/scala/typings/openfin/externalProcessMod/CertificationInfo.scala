@@ -26,7 +26,7 @@ object CertificationInfo {
     if (serial != null) __obj.updateDynamic("serial")(serial.asInstanceOf[js.Any])
     if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     if (thumbprint != null) __obj.updateDynamic("thumbprint")(thumbprint.asInstanceOf[js.Any])
-    if (!js.isUndefined(trusted)) __obj.updateDynamic("trusted")(trusted.asInstanceOf[js.Any])
+    if (!js.isUndefined(trusted)) __obj.updateDynamic("trusted")(trusted.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificationInfo]
   }
 }

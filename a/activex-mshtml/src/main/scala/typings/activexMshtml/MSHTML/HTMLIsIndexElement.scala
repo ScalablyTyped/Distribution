@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLIsIndexElement")
 @js.native
-class HTMLIsIndexElement protected () extends js.Object {
+trait HTMLIsIndexElement extends js.Object {
   @JSName("MSHTML.HTMLIsIndexElement_typekey")
   var MSHTMLDotHTMLIsIndexElement_typekey: HTMLIsIndexElement = js.native
   var accessKey: String = js.native

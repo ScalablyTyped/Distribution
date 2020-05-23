@@ -25,9 +25,9 @@ trait DateRangeProps
 object DateRangeProps {
   @scala.inline
   def apply(
-    calendars: Int | Double = null,
+    calendars: js.UndefOr[Double] = js.undefined,
     endDate: Moment = null,
-    firstDayOfWeek: Int | Double = null,
+    firstDayOfWeek: js.UndefOr[Double] = js.undefined,
     format: String = null,
     lang: LanguageType = null,
     linkedCalendars: js.UndefOr[Boolean] = js.undefined,
@@ -43,22 +43,22 @@ object DateRangeProps {
     twoStepChange: js.UndefOr[Boolean] = js.undefined
   ): DateRangeProps = {
     val __obj = js.Dynamic.literal()
-    if (calendars != null) __obj.updateDynamic("calendars")(calendars.asInstanceOf[js.Any])
+    if (!js.isUndefined(calendars)) __obj.updateDynamic("calendars")(calendars.get.asInstanceOf[js.Any])
     if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
-    if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstDayOfWeek)) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (!js.isUndefined(linkedCalendars)) __obj.updateDynamic("linkedCalendars")(linkedCalendars.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkedCalendars)) __obj.updateDynamic("linkedCalendars")(linkedCalendars.get.asInstanceOf[js.Any])
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onInit != null) __obj.updateDynamic("onInit")(js.Any.fromFunction1(onInit))
-    if (!js.isUndefined(rangedCalendars)) __obj.updateDynamic("rangedCalendars")(rangedCalendars.asInstanceOf[js.Any])
+    if (!js.isUndefined(rangedCalendars)) __obj.updateDynamic("rangedCalendars")(rangedCalendars.get.asInstanceOf[js.Any])
     if (ranges != null) __obj.updateDynamic("ranges")(ranges.asInstanceOf[js.Any])
     if (specialDays != null) __obj.updateDynamic("specialDays")(specialDays.asInstanceOf[js.Any])
     if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(twoStepChange)) __obj.updateDynamic("twoStepChange")(twoStepChange.asInstanceOf[js.Any])
+    if (!js.isUndefined(twoStepChange)) __obj.updateDynamic("twoStepChange")(twoStepChange.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateRangeProps]
   }
 }

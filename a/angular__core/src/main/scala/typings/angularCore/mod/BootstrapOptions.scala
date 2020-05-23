@@ -50,7 +50,7 @@ object BootstrapOptions {
   ): BootstrapOptions = {
     val __obj = js.Dynamic.literal()
     if (ngZone != null) __obj.updateDynamic("ngZone")(ngZone.asInstanceOf[js.Any])
-    if (!js.isUndefined(ngZoneEventCoalescing)) __obj.updateDynamic("ngZoneEventCoalescing")(ngZoneEventCoalescing.asInstanceOf[js.Any])
+    if (!js.isUndefined(ngZoneEventCoalescing)) __obj.updateDynamic("ngZoneEventCoalescing")(ngZoneEventCoalescing.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapOptions]
   }
 }

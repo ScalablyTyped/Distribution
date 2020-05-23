@@ -1,6 +1,6 @@
 package typings.jupyterlabServices.messagesMod
 
-import typings.jupyterlabServices.AnonAllowstdin
+import typings.jupyterlabServices.anon.Allowstdin
 import typings.jupyterlabServices.jupyterlabServicesStrings.execute_request
 import typings.jupyterlabServices.jupyterlabServicesStrings.shell
 import typings.luminoCoreutils.jsonMod.JSONObject
@@ -14,14 +14,14 @@ trait IExecuteRequestMsg
   extends IShellMessage[execute_request]
      with _Message {
   @JSName("content")
-  var content_IExecuteRequestMsg: AnonAllowstdin
+  var content_IExecuteRequestMsg: Allowstdin
 }
 
 object IExecuteRequestMsg {
   @scala.inline
   def apply(
     channel: shell,
-    content: AnonAllowstdin,
+    content: Allowstdin,
     header: IHeader[execute_request],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,

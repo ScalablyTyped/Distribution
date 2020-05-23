@@ -1,10 +1,10 @@
 package typings.openfin.mod.fin
 
-import typings.openfin.AnonDownloadedBytes
-import typings.openfin.AnonPath
-import typings.openfin.AnonResult
-import typings.openfin.AnonToken
-import typings.openfin.AnonUuid
+import typings.openfin.anon.DownloadedBytes
+import typings.openfin.anon.Path
+import typings.openfin.anon.Result
+import typings.openfin.anon.Token
+import typings.openfin.anon.UuidString
 import typings.openfin.openfinStrings.debug
 import typings.openfin.openfinStrings.error
 import typings.openfin.openfinStrings.info
@@ -69,16 +69,16 @@ trait OpenFinSystem extends js.Object {
     * Downloads the given application asset
     */
   def downloadAsset(assetObj: AppAssetInfo): Unit = js.native
-  def downloadAsset(assetObj: AppAssetInfo, progressListener: js.Function1[/* progress */ AnonDownloadedBytes, Unit]): Unit = js.native
+  def downloadAsset(assetObj: AppAssetInfo, progressListener: js.Function1[/* progress */ DownloadedBytes, Unit]): Unit = js.native
   def downloadAsset(
     assetObj: AppAssetInfo,
-    progressListener: js.Function1[/* progress */ AnonDownloadedBytes, Unit],
-    callback: js.Function1[/* successObj */ AnonPath, Unit]
+    progressListener: js.Function1[/* progress */ DownloadedBytes, Unit],
+    callback: js.Function1[/* successObj */ Path, Unit]
   ): Unit = js.native
   def downloadAsset(
     assetObj: AppAssetInfo,
-    progressListener: js.Function1[/* progress */ AnonDownloadedBytes, Unit],
-    callback: js.Function1[/* successObj */ AnonPath, Unit],
+    progressListener: js.Function1[/* progress */ DownloadedBytes, Unit],
+    callback: js.Function1[/* successObj */ Path, Unit],
     errorCallback: js.Function2[/* reason */ String, /* errorObj */ NetworkErrorInfo, Unit]
   ): Unit = js.native
   /**
@@ -357,10 +357,10 @@ trait OpenFinSystem extends js.Object {
     * Runs an executable or batch file.
     */
   def launchExternalProcess(options: ExternalProcessRequestType): Unit = js.native
-  def launchExternalProcess(options: ExternalProcessRequestType, callback: js.Function1[/* payload */ AnonUuid, Unit]): Unit = js.native
+  def launchExternalProcess(options: ExternalProcessRequestType, callback: js.Function1[/* payload */ UuidString, Unit]): Unit = js.native
   def launchExternalProcess(
     options: ExternalProcessRequestType,
-    callback: js.Function1[/* payload */ AnonUuid, Unit],
+    callback: js.Function1[/* payload */ UuidString, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
   /**
@@ -414,10 +414,10 @@ trait OpenFinSystem extends js.Object {
     * Monitors a running process.
     */
   def monitorExternalProcess(options: ExternalProcessInfo): Unit = js.native
-  def monitorExternalProcess(options: ExternalProcessInfo, callback: js.Function1[/* payload */ AnonUuid, Unit]): Unit = js.native
+  def monitorExternalProcess(options: ExternalProcessInfo, callback: js.Function1[/* payload */ UuidString, Unit]): Unit = js.native
   def monitorExternalProcess(
     options: ExternalProcessInfo,
-    callback: js.Function1[/* payload */ AnonUuid, Unit],
+    callback: js.Function1[/* payload */ UuidString, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
   /**
@@ -447,10 +447,10 @@ trait OpenFinSystem extends js.Object {
     * This function call will register a unique id and produce a token. The token can be used to broker an external connection.
     */
   def registerExternalConnection(uuid: String): Unit = js.native
-  def registerExternalConnection(uuid: String, callback: js.Function1[/* detail */ AnonToken, Unit]): Unit = js.native
+  def registerExternalConnection(uuid: String, callback: js.Function1[/* detail */ Token, Unit]): Unit = js.native
   def registerExternalConnection(
     uuid: String,
-    callback: js.Function1[/* detail */ AnonToken, Unit],
+    callback: js.Function1[/* detail */ Token, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
   /**
@@ -531,13 +531,13 @@ trait OpenFinSystem extends js.Object {
     processUuid: String,
     timeout: Double,
     killTree: Boolean,
-    callback: js.Function1[/* info */ AnonResult, Unit]
+    callback: js.Function1[/* info */ Result, Unit]
   ): Unit = js.native
   def terminateExternalProcess(
     processUuid: String,
     timeout: Double,
     killTree: Boolean,
-    callback: js.Function1[/* info */ AnonResult, Unit],
+    callback: js.Function1[/* info */ Result, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
   /**

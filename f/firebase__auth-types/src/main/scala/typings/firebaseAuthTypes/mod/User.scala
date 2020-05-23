@@ -1,6 +1,6 @@
 package typings.firebaseAuthTypes.mod
 
-import typings.firebaseAuthTypes.AnonDisplayName
+import typings.firebaseAuthTypes.anon.DisplayName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,7 +37,7 @@ trait User extends UserInfo {
   def updateEmail(newEmail: String): js.Promise[Unit] = js.native
   def updatePassword(newPassword: String): js.Promise[Unit] = js.native
   def updatePhoneNumber(phoneCredential: AuthCredential): js.Promise[Unit] = js.native
-  def updateProfile(profile: AnonDisplayName): js.Promise[Unit] = js.native
+  def updateProfile(profile: DisplayName): js.Promise[Unit] = js.native
   def verifyBeforeUpdateEmail(newEmail: String): js.Promise[Unit] = js.native
   def verifyBeforeUpdateEmail(newEmail: String, actionCodeSettings: ActionCodeSettings): js.Promise[Unit] = js.native
 }

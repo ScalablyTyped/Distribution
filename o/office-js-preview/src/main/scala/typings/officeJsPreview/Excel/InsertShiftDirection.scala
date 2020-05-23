@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object InsertShiftDirection extends js.Object {
   
   @js.native
   sealed trait right extends InsertShiftDirection
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[InsertShiftDirection with String] = js.native
-  /* "Down" */ @js.native
-  object down extends TopLevel[down with String]
-  
-  /* "Right" */ @js.native
-  object right extends TopLevel[right with String]
   
 }
 

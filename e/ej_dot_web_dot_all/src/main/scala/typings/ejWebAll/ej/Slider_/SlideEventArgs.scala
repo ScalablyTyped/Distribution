@@ -31,17 +31,17 @@ object SlideEventArgs {
     cancel: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     model: Model = null,
-    sliderIndex: Int | Double = null,
+    sliderIndex: js.UndefOr[Double] = js.undefined,
     `type`: String = null,
-    value: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined
   ): SlideEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (sliderIndex != null) __obj.updateDynamic("sliderIndex")(sliderIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(sliderIndex)) __obj.updateDynamic("sliderIndex")(sliderIndex.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlideEventArgs]
   }
 }

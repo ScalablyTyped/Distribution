@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 trait IAuto extends IComponent {
   /** [Method] Called to perform the calculations for this layout
-  		* @param ownerContext Object
-  		*/
+    * @param ownerContext Object
+    */
   @JSName("calculate")
   var calculate_IAuto: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Boolean) */
@@ -77,7 +77,7 @@ object IAuto {
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (configureItem != null) __obj.updateDynamic("configureItem")(js.Any.fromFunction1(configureItem))
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (!js.isUndefined(done)) __obj.updateDynamic("done")(done.asInstanceOf[js.Any])
+    if (!js.isUndefined(done)) __obj.updateDynamic("done")(done.get.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (finalizeLayout != null) __obj.updateDynamic("finalizeLayout")(js.Any.fromFunction1(finalizeLayout))
     if (finishedLayout != null) __obj.updateDynamic("finishedLayout")(js.Any.fromFunction1(finishedLayout))
@@ -89,7 +89,7 @@ object IAuto {
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (initLayout != null) __obj.updateDynamic("initLayout")(js.Any.fromFunction0(initLayout))
-    if (!js.isUndefined(isLayout)) __obj.updateDynamic("isLayout")(isLayout.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLayout)) __obj.updateDynamic("isLayout")(isLayout.get.asInstanceOf[js.Any])
     if (isValidParent != null) __obj.updateDynamic("isValidParent")(js.Any.fromFunction3(isValidParent))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (notifyOwner != null) __obj.updateDynamic("notifyOwner")(js.Any.fromFunction1(notifyOwner))
@@ -97,9 +97,9 @@ object IAuto {
     if (renderItems != null) __obj.updateDynamic("renderItems")(js.Any.fromFunction2(renderItems))
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(setHeightInDom)) __obj.updateDynamic("setHeightInDom")(setHeightInDom.asInstanceOf[js.Any])
-    if (!js.isUndefined(setWidthInDom)) __obj.updateDynamic("setWidthInDom")(setWidthInDom.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(setHeightInDom)) __obj.updateDynamic("setHeightInDom")(setHeightInDom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setWidthInDom)) __obj.updateDynamic("setWidthInDom")(setWidthInDom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAuto]

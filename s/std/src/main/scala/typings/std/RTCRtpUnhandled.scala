@@ -12,11 +12,15 @@ trait RTCRtpUnhandled extends js.Object {
 
 object RTCRtpUnhandled {
   @scala.inline
-  def apply(muxId: java.lang.String = null, payloadType: Int | Double = null, ssrc: Int | Double = null): RTCRtpUnhandled = {
+  def apply(
+    muxId: java.lang.String = null,
+    payloadType: js.UndefOr[Double] = js.undefined,
+    ssrc: js.UndefOr[Double] = js.undefined
+  ): RTCRtpUnhandled = {
     val __obj = js.Dynamic.literal()
     if (muxId != null) __obj.updateDynamic("muxId")(muxId.asInstanceOf[js.Any])
-    if (payloadType != null) __obj.updateDynamic("payloadType")(payloadType.asInstanceOf[js.Any])
-    if (ssrc != null) __obj.updateDynamic("ssrc")(ssrc.asInstanceOf[js.Any])
+    if (!js.isUndefined(payloadType)) __obj.updateDynamic("payloadType")(payloadType.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssrc)) __obj.updateDynamic("ssrc")(ssrc.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpUnhandled]
   }
 }

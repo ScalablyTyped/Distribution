@@ -1,6 +1,6 @@
 package typings.nano.mod
 
-import typings.nano.AnonFields
+import typings.nano.anon.Fields
 import typings.nano.nanoStrings.json
 import typings.nano.nanoStrings.text
 import scala.scalajs.js
@@ -12,7 +12,7 @@ trait CreateIndexRequest extends js.Object {
   // Name of the design document in which the index will be created.
   var ddoc: js.UndefOr[String] = js.undefined
   // JSON object describing the index to create
-  var index: AnonFields
+  var index: Fields
   // Name of the index. If no name is provided, a name will be generated automatically.
   var name: js.UndefOr[String] = js.undefined
   // This field sets whether the created index will be a partitioned or global index.
@@ -24,7 +24,7 @@ trait CreateIndexRequest extends js.Object {
 object CreateIndexRequest {
   @scala.inline
   def apply(
-    index: AnonFields,
+    index: Fields,
     ddoc: String = null,
     name: String = null,
     partitioned: js.UndefOr[Boolean] = js.undefined,
@@ -33,7 +33,7 @@ object CreateIndexRequest {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     if (ddoc != null) __obj.updateDynamic("ddoc")(ddoc.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(partitioned)) __obj.updateDynamic("partitioned")(partitioned.asInstanceOf[js.Any])
+    if (!js.isUndefined(partitioned)) __obj.updateDynamic("partitioned")(partitioned.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateIndexRequest]
   }

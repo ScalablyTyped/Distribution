@@ -1,6 +1,6 @@
 package typings.actionsOnGoogle.dialogflowConvMod
 
-import typings.actionsOnGoogle.ProtoAnystringJsonObject
+import typings.actionsOnGoogle.anon.ProtoAnystringJsonObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -12,7 +12,6 @@ object GRPCCallResult {
   @scala.inline
   def apply(cancel: () => Unit): GRPCCallResult = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel))
-  
     __obj.asInstanceOf[GRPCCallResult]
   }
 }

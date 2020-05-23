@@ -1,6 +1,6 @@
 package typings.jsonSchemaMergeAllof.mod
 
-import typings.jsonSchemaMergeAllof.AnonDefaultResolver
+import typings.jsonSchemaMergeAllof.anon.DefaultResolver
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -48,17 +48,17 @@ trait Options_[Schema /* <: JSONSchema */] extends js.Object {
     *   schemas
     * - **options** the options mergeAllOf was called with
     */
-  var resolvers: js.UndefOr[Partial[Resolvers[Schema]] with AnonDefaultResolver[Schema]] = js.undefined
+  var resolvers: js.UndefOr[Partial[Resolvers[Schema]] with DefaultResolver[Schema]] = js.undefined
 }
 
 object Options_ {
   @scala.inline
-  def apply[Schema /* <: JSONSchema */](
+  def apply[Schema](
     ignoreAdditionalProperties: js.UndefOr[Boolean] = js.undefined,
-    resolvers: Partial[Resolvers[Schema]] with AnonDefaultResolver[Schema] = null
+    resolvers: Partial[Resolvers[Schema]] with DefaultResolver[Schema] = null
   ): Options_[Schema] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreAdditionalProperties)) __obj.updateDynamic("ignoreAdditionalProperties")(ignoreAdditionalProperties.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreAdditionalProperties)) __obj.updateDynamic("ignoreAdditionalProperties")(ignoreAdditionalProperties.get.asInstanceOf[js.Any])
     if (resolvers != null) __obj.updateDynamic("resolvers")(resolvers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options_[Schema]]
   }

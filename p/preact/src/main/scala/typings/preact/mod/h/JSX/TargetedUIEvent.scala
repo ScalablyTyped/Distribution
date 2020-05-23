@@ -1,7 +1,7 @@
 package typings.preact.mod.h.JSX
 
 import typings.std.EventTarget
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,7 +37,7 @@ trait TargetedUIEvent[Target /* <: EventTarget */] extends js.Object {
   var target: js.UndefOr[EventTarget] = js.native
   var timeStamp: Double = js.native
   var `type`: String = js.native
-  var view: js.UndefOr[Window_] = js.native
+  var view: js.UndefOr[Window] = js.native
   var which: Double = js.native
   def composedPath(): js.Array[EventTarget] = js.native
   def initEvent(`type`: String): Unit = js.native

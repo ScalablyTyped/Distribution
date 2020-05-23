@@ -3,13 +3,14 @@ package typings.mongoose.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.mongodb.mod.MongoError
-import typings.mongoose.AnonAutoIndexId
-import typings.mongoose.AnonDictother
-import typings.mongoose.AnonJ
-import typings.mongoose.AnonLength
+import typings.mongoose.anon.AutoIndexId
+import typings.mongoose.anon.Dictother
+import typings.mongoose.anon.J
+import typings.mongoose.anon.Length
 import typings.mongoose.mongooseStrings._id
 import typings.mongoose.mongooseStrings.`throw`
 import typings.mongoose.mongooseStrings.aggregate
+import typings.mongoose.mongooseStrings.autoCreate
 import typings.mongoose.mongooseStrings.autoIndex
 import typings.mongoose.mongooseStrings.bufferCommands
 import typings.mongoose.mongooseStrings.capped
@@ -36,6 +37,7 @@ import typings.mongoose.mongooseStrings.shardKey
 import typings.mongoose.mongooseStrings.skipVersioning
 import typings.mongoose.mongooseStrings.storeSubdocValidationError
 import typings.mongoose.mongooseStrings.strict
+import typings.mongoose.mongooseStrings.strictQuery
 import typings.mongoose.mongooseStrings.timestamps
 import typings.mongoose.mongooseStrings.toJSON
 import typings.mongoose.mongooseStrings.toObject
@@ -97,7 +99,7 @@ trait Schema[T] extends EventEmitter {
     *   expires option into seconds for the expireAfterSeconds in the above link.
     */
   def index(fields: js.Any): this.type = js.native
-  def index(fields: js.Any, options: AnonDictother): this.type = js.native
+  def index(fields: js.Any, options: Dictother): this.type = js.native
   /** Compiles indexes from fields and schema-level indexes */
   def indexes(): js.Array[_] = js.native
   /**
@@ -328,6 +330,10 @@ trait Schema[T] extends EventEmitter {
   def requiredPaths(): js.Array[String] = js.native
   def requiredPaths(invalidate: Boolean): js.Array[String] = js.native
   def set(key: strict, value: `throw`): this.type = js.native
+  @JSName("set")
+  def set_autoCreate(key: autoCreate): Boolean = js.native
+  @JSName("set")
+  def set_autoCreate(key: autoCreate, value: Boolean): this.type = js.native
   /**
     * Sets/gets a schema option.
     * @param key option name
@@ -342,13 +348,13 @@ trait Schema[T] extends EventEmitter {
   @JSName("set")
   def set_bufferCommands(key: bufferCommands, value: Boolean): this.type = js.native
   @JSName("set")
-  def set_capped(key: capped): Boolean | Double | AnonAutoIndexId = js.native
+  def set_capped(key: capped): Boolean | Double | AutoIndexId = js.native
   @JSName("set")
   def set_capped(key: capped, value: Boolean): this.type = js.native
   @JSName("set")
   def set_capped(key: capped, value: Double): this.type = js.native
   @JSName("set")
-  def set_capped(key: capped, value: AnonAutoIndexId): this.type = js.native
+  def set_capped(key: capped, value: AutoIndexId): this.type = js.native
   @JSName("set")
   def set_collation(key: collation): CollationOptions = js.native
   @JSName("set")
@@ -386,11 +392,11 @@ trait Schema[T] extends EventEmitter {
   @JSName("set")
   def set_read(key: read, value: String): this.type = js.native
   @JSName("set")
-  def set_safe(key: safe): Boolean | AnonJ = js.native
+  def set_safe(key: safe): Boolean | J = js.native
   @JSName("set")
   def set_safe(key: safe, value: Boolean): this.type = js.native
   @JSName("set")
-  def set_safe(key: safe, value: AnonJ): this.type = js.native
+  def set_safe(key: safe, value: J): this.type = js.native
   @JSName("set")
   def set_selectPopulatedPaths(key: selectPopulatedPaths): Boolean = js.native
   @JSName("set")
@@ -411,6 +417,10 @@ trait Schema[T] extends EventEmitter {
   def set_strict(key: strict): Boolean | `throw` = js.native
   @JSName("set")
   def set_strict(key: strict, value: Boolean): this.type = js.native
+  @JSName("set")
+  def set_strictQuery(key: strictQuery): Boolean = js.native
+  @JSName("set")
+  def set_strictQuery(key: strictQuery, value: Boolean): this.type = js.native
   @JSName("set")
   def set_timestamps(key: timestamps): Boolean | SchemaTimestampsConfig = js.native
   @JSName("set")
@@ -482,7 +492,7 @@ object Schema extends js.Object {
         * Check if the given value satisfies a required validator. The given value
         * must be not null nor undefined, and have a non-zero length.
         */
-      def checkRequired[T /* <: AnonLength */](value: T): scala.Boolean = js.native
+      def checkRequired[T /* <: Length */](value: T): scala.Boolean = js.native
     }
     
     /*

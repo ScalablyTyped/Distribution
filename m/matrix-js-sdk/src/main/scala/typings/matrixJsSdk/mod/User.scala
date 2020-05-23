@@ -1,6 +1,6 @@
 package typings.matrixJsSdk.mod
 
-import typings.matrixJsSdk.AnonPresence
+import typings.matrixJsSdk.anon.Presence
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ class User protected () extends js.Object {
                        // The info object supplied in the constructor.
   var displayName: String = js.native
                       // Whether we should consider lastActiveAgo to be an approximation and that the user should be seen as active 'now'
-  var events: AnonPresence = js.native
+  var events: Presence = js.native
                        // The ID of the user.
   var info: js.Object = js.native
                        // The presence status message if known.

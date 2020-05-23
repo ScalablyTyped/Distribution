@@ -1,6 +1,5 @@
 package typings.openui5.sap.m
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,38 +42,6 @@ object ScreenSize extends js.Object {
   
   @js.native
   sealed trait XXSmall extends ScreenSize
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ScreenSize with Double] = js.native
-  /* 0 */ @js.native
-  object Desktop extends TopLevel[Desktop with Double]
-  
-  /* 1 */ @js.native
-  object Large extends TopLevel[Large with Double]
-  
-  /* 2 */ @js.native
-  object Medium extends TopLevel[Medium with Double]
-  
-  /* 3 */ @js.native
-  object Phone extends TopLevel[Phone with Double]
-  
-  /* 4 */ @js.native
-  object Small extends TopLevel[Small with Double]
-  
-  /* 5 */ @js.native
-  object Tablet extends TopLevel[Tablet with Double]
-  
-  /* 6 */ @js.native
-  object XLarge extends TopLevel[XLarge with Double]
-  
-  /* 7 */ @js.native
-  object XSmall extends TopLevel[XSmall with Double]
-  
-  /* 8 */ @js.native
-  object XXLarge extends TopLevel[XXLarge with Double]
-  
-  /* 9 */ @js.native
-  object XXSmall extends TopLevel[XXSmall with Double]
   
 }
 

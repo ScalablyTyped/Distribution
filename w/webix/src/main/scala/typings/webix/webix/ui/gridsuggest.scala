@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.gridsuggest")
 @js.native
-class gridsuggest () extends baseview {
+trait gridsuggest extends baseview {
   @JSName("$enterKey")
   var $enterKey_Original: WebixCallback = js.native
   @JSName("$scope")

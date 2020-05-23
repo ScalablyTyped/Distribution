@@ -21,24 +21,24 @@ object ClientConfig {
   @scala.inline
   def apply(
     baseUrl: String,
-    asyncResponseTimeout: Int | Double = null,
+    asyncResponseTimeout: js.UndefOr[Double] = js.undefined,
     autoPoll: js.UndefOr[Boolean] = js.undefined,
     interceptors: Interceptor | js.Array[Interceptor] = null,
-    interval: Int | Double = null,
-    lockDuration: Int | Double = null,
-    maxParallelExecutions: Int | Double = null,
-    maxTasks: Int | Double = null,
+    interval: js.UndefOr[Double] = js.undefined,
+    lockDuration: js.UndefOr[Double] = js.undefined,
+    maxParallelExecutions: js.UndefOr[Double] = js.undefined,
+    maxTasks: js.UndefOr[Double] = js.undefined,
     use: Middleware | js.Array[Middleware] = null,
     workerId: String = null
   ): ClientConfig = {
     val __obj = js.Dynamic.literal(baseUrl = baseUrl.asInstanceOf[js.Any])
-    if (asyncResponseTimeout != null) __obj.updateDynamic("asyncResponseTimeout")(asyncResponseTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPoll)) __obj.updateDynamic("autoPoll")(autoPoll.asInstanceOf[js.Any])
+    if (!js.isUndefined(asyncResponseTimeout)) __obj.updateDynamic("asyncResponseTimeout")(asyncResponseTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPoll)) __obj.updateDynamic("autoPoll")(autoPoll.get.asInstanceOf[js.Any])
     if (interceptors != null) __obj.updateDynamic("interceptors")(interceptors.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (lockDuration != null) __obj.updateDynamic("lockDuration")(lockDuration.asInstanceOf[js.Any])
-    if (maxParallelExecutions != null) __obj.updateDynamic("maxParallelExecutions")(maxParallelExecutions.asInstanceOf[js.Any])
-    if (maxTasks != null) __obj.updateDynamic("maxTasks")(maxTasks.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockDuration)) __obj.updateDynamic("lockDuration")(lockDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxParallelExecutions)) __obj.updateDynamic("maxParallelExecutions")(maxParallelExecutions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTasks)) __obj.updateDynamic("maxTasks")(maxTasks.get.asInstanceOf[js.Any])
     if (use != null) __obj.updateDynamic("use")(use.asInstanceOf[js.Any])
     if (workerId != null) __obj.updateDynamic("workerId")(workerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientConfig]

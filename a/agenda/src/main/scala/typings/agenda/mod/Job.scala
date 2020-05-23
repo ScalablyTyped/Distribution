@@ -1,7 +1,7 @@
 package typings.agenda.mod
 
-import typings.agenda.AnonInsertOnly
-import typings.agenda.AnonSkipImmediate
+import typings.agenda.anon.InsertOnly
+import typings.agenda.anon.SkipImmediate
 import typings.std.Date
 import typings.std.Error
 import scala.scalajs.js
@@ -66,9 +66,9 @@ trait Job[T /* <: JobAttributesData */] extends js.Object {
     * Setting skipImmediate as true will skip the immediate run. The first run will occur only in configured interval.
     */
   def repeatEvery(interval: String): this.type = js.native
-  def repeatEvery(interval: String, options: AnonSkipImmediate): this.type = js.native
+  def repeatEvery(interval: String, options: SkipImmediate): this.type = js.native
   def repeatEvery(interval: Double): this.type = js.native
-  def repeatEvery(interval: Double, options: AnonSkipImmediate): this.type = js.native
+  def repeatEvery(interval: Double, options: SkipImmediate): this.type = js.native
   /**
     * Runs the given job and calls callback(err, job) upon completion. Normally you never need to call this manually
     */
@@ -94,6 +94,6 @@ trait Job[T /* <: JobAttributesData */] extends js.Object {
     * @param opts
     */
   def unique(value: js.Any): this.type = js.native
-  def unique(value: js.Any, opts: AnonInsertOnly): this.type = js.native
+  def unique(value: js.Any, opts: InsertOnly): this.type = js.native
 }
 

@@ -15,7 +15,7 @@ trait RelationMapping[M /* <: Model */] extends js.Object {
 
 object RelationMapping {
   @scala.inline
-  def apply[M /* <: Model */](
+  def apply[M](
     join: RelationJoin,
     modelClass: ModelClassSpecifier,
     relation: RelationType,

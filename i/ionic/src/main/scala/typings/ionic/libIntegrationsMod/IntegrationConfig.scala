@@ -1,6 +1,6 @@
 package typings.ionic.libIntegrationsMod
 
-import typings.ionic.PartialReadonlyProjectInt
+import typings.ionic.anon.PartialReadonlyProjectInt
 import typings.ionic.definitionsMod.ProjectIntegration
 import typings.ionicCliFramework.mod.BaseConfig
 import scala.scalajs.js

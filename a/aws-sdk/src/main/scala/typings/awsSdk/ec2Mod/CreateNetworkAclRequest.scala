@@ -18,9 +18,9 @@ trait CreateNetworkAclRequest extends js.Object {
 
 object CreateNetworkAclRequest {
   @scala.inline
-  def apply(VpcId: VpcId, DryRun: js.UndefOr[scala.Boolean] = js.undefined): CreateNetworkAclRequest = {
+  def apply(VpcId: VpcId, DryRun: js.UndefOr[Boolean] = js.undefined): CreateNetworkAclRequest = {
     val __obj = js.Dynamic.literal(VpcId = VpcId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateNetworkAclRequest]
   }
 }

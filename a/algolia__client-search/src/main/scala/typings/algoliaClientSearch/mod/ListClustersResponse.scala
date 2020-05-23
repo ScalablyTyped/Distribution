@@ -8,7 +8,7 @@ trait ListClustersResponse extends js.Object {
   /**
     * List of clusters.
     */
-  val clusters: js.Array[Cluster]
+  var clusters: js.Array[Cluster]
 }
 
 object ListClustersResponse {

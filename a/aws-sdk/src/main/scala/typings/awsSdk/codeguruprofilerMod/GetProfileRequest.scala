@@ -38,14 +38,14 @@ object GetProfileRequest {
     profilingGroupName: ProfilingGroupName,
     accept: String = null,
     endTime: Timestamp = null,
-    maxDepth: Int | Double = null,
+    maxDepth: js.UndefOr[MaxDepth] = js.undefined,
     period: Period = null,
     startTime: Timestamp = null
   ): GetProfileRequest = {
     val __obj = js.Dynamic.literal(profilingGroupName = profilingGroupName.asInstanceOf[js.Any])
     if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (maxDepth != null) __obj.updateDynamic("maxDepth")(maxDepth.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDepth)) __obj.updateDynamic("maxDepth")(maxDepth.get.asInstanceOf[js.Any])
     if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetProfileRequest]

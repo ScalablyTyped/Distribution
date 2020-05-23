@@ -26,14 +26,14 @@ object ContentPanelDescriptor {
     appName: String = null,
     hideTitleBar: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
-    orderHint: Int | Double = null
+    orderHint: js.UndefOr[Double] = js.undefined
   ): ContentPanelDescriptor = {
     val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any], iconUrl = iconUrl.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     if (appIconUrl != null) __obj.updateDynamic("appIconUrl")(appIconUrl.asInstanceOf[js.Any])
     if (appName != null) __obj.updateDynamic("appName")(appName.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideTitleBar)) __obj.updateDynamic("hideTitleBar")(hideTitleBar.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideTitleBar)) __obj.updateDynamic("hideTitleBar")(hideTitleBar.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (orderHint != null) __obj.updateDynamic("orderHint")(orderHint.asInstanceOf[js.Any])
+    if (!js.isUndefined(orderHint)) __obj.updateDynamic("orderHint")(orderHint.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentPanelDescriptor]
   }
 }

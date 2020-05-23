@@ -1,6 +1,7 @@
 
 # Scala.js typings for oclazyload
 
+Typings are for version 1.0.2
 
 ## Library description:
 Load modules on demand (lazy load) with angularJS

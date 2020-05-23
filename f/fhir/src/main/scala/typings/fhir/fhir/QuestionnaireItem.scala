@@ -217,15 +217,15 @@ object QuestionnaireItem {
     initialCoding: Coding = null,
     initialDate: date = null,
     initialDateTime: dateTime = null,
-    initialDecimal: Int | Double = null,
-    initialInteger: Int | Double = null,
+    initialDecimal: js.UndefOr[decimal] = js.undefined,
+    initialInteger: js.UndefOr[integer] = js.undefined,
     initialQuantity: Quantity = null,
     initialReference: Reference = null,
     initialString: String = null,
     initialTime: time = null,
     initialUri: uri = null,
     item: js.Array[QuestionnaireItem] = null,
-    maxLength: Int | Double = null,
+    maxLength: js.UndefOr[integer] = js.undefined,
     modifierExtension: js.Array[Extension] = null,
     option: js.Array[QuestionnaireItemOption] = null,
     options: Reference = null,
@@ -263,26 +263,26 @@ object QuestionnaireItem {
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (initialAttachment != null) __obj.updateDynamic("initialAttachment")(initialAttachment.asInstanceOf[js.Any])
-    if (!js.isUndefined(initialBoolean)) __obj.updateDynamic("initialBoolean")(initialBoolean.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialBoolean)) __obj.updateDynamic("initialBoolean")(initialBoolean.get.asInstanceOf[js.Any])
     if (initialCoding != null) __obj.updateDynamic("initialCoding")(initialCoding.asInstanceOf[js.Any])
     if (initialDate != null) __obj.updateDynamic("initialDate")(initialDate.asInstanceOf[js.Any])
     if (initialDateTime != null) __obj.updateDynamic("initialDateTime")(initialDateTime.asInstanceOf[js.Any])
-    if (initialDecimal != null) __obj.updateDynamic("initialDecimal")(initialDecimal.asInstanceOf[js.Any])
-    if (initialInteger != null) __obj.updateDynamic("initialInteger")(initialInteger.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialDecimal)) __obj.updateDynamic("initialDecimal")(initialDecimal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialInteger)) __obj.updateDynamic("initialInteger")(initialInteger.get.asInstanceOf[js.Any])
     if (initialQuantity != null) __obj.updateDynamic("initialQuantity")(initialQuantity.asInstanceOf[js.Any])
     if (initialReference != null) __obj.updateDynamic("initialReference")(initialReference.asInstanceOf[js.Any])
     if (initialString != null) __obj.updateDynamic("initialString")(initialString.asInstanceOf[js.Any])
     if (initialTime != null) __obj.updateDynamic("initialTime")(initialTime.asInstanceOf[js.Any])
     if (initialUri != null) __obj.updateDynamic("initialUri")(initialUri.asInstanceOf[js.Any])
     if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     if (option != null) __obj.updateDynamic("option")(option.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(repeats)) __obj.updateDynamic("repeats")(repeats.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeats)) __obj.updateDynamic("repeats")(repeats.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuestionnaireItem]
   }

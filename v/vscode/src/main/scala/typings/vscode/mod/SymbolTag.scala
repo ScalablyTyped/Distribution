@@ -12,8 +12,8 @@ sealed trait SymbolTag extends js.Object
 @js.native
 object SymbolTag extends js.Object {
   /**
-  		 * Render a symbol as obsolete, usually using a strike-out.
-  		 */
+    * Render a symbol as obsolete, usually using a strike-out.
+    */
   @js.native
   sealed trait Deprecated extends SymbolTag
   

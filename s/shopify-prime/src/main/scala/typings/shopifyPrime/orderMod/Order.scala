@@ -1,7 +1,7 @@
 package typings.shopifyPrime.orderMod
 
-import typings.shopifyPrime.AnonName
 import typings.shopifyPrime.addressMod.Address
+import typings.shopifyPrime.anon.Name
 import typings.shopifyPrime.baseMod.ShopifyObject
 import typings.shopifyPrime.clientDetailsMod.ClientDetails
 import typings.shopifyPrime.customerMod.Customer
@@ -41,7 +41,7 @@ trait Order extends ShopifyObject {
   var line_items: js.UndefOr[js.Array[LineItem]] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var note: js.UndefOr[String] = js.undefined
-  var note_attributes: js.UndefOr[AnonName] = js.undefined
+  var note_attributes: js.UndefOr[Name] = js.undefined
   var number: js.UndefOr[Double] = js.undefined
   var order_number: js.UndefOr[Double] = js.undefined
   var payment_details: js.UndefOr[PaymentDetails] = js.undefined
@@ -87,14 +87,14 @@ object Order {
     financial_status: FinancialStatus = null,
     fulfillment_status: fulfilled | partial | String = null,
     fulfillments: js.Array[Fulfillment] = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     landing_site: String = null,
     line_items: js.Array[LineItem] = null,
     name: String = null,
     note: String = null,
-    note_attributes: AnonName = null,
-    number: Int | Double = null,
-    order_number: Int | Double = null,
+    note_attributes: Name = null,
+    number: js.UndefOr[Double] = js.undefined,
+    order_number: js.UndefOr[Double] = js.undefined,
     payment_details: PaymentDetails = null,
     processed_at: String = null,
     processing_method: String = null,
@@ -103,24 +103,24 @@ object Order {
     shipping_address: Address = null,
     shipping_lines: js.Array[ShippingLine] = null,
     source_name: String = null,
-    subtotal_price: Int | Double = null,
+    subtotal_price: js.UndefOr[Double] = js.undefined,
     tags: String = null,
     tax_lines: js.Array[TaxLine] = null,
     taxes_included: js.UndefOr[Boolean] = js.undefined,
     token: String = null,
-    total_discounts: Int | Double = null,
-    total_line_items_price: Int | Double = null,
-    total_price: Int | Double = null,
-    total_price_usd: Int | Double = null,
-    total_tax: Int | Double = null,
-    total_weight: Int | Double = null,
+    total_discounts: js.UndefOr[Double] = js.undefined,
+    total_line_items_price: js.UndefOr[Double] = js.undefined,
+    total_price: js.UndefOr[Double] = js.undefined,
+    total_price_usd: js.UndefOr[Double] = js.undefined,
+    total_tax: js.UndefOr[Double] = js.undefined,
+    total_weight: js.UndefOr[Double] = js.undefined,
     updated_at: String = null
   ): Order = {
     val __obj = js.Dynamic.literal()
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
     if (billing_address != null) __obj.updateDynamic("billing_address")(billing_address.asInstanceOf[js.Any])
     if (browser_ip != null) __obj.updateDynamic("browser_ip")(browser_ip.asInstanceOf[js.Any])
-    if (!js.isUndefined(buyer_accepts_marketing)) __obj.updateDynamic("buyer_accepts_marketing")(buyer_accepts_marketing.asInstanceOf[js.Any])
+    if (!js.isUndefined(buyer_accepts_marketing)) __obj.updateDynamic("buyer_accepts_marketing")(buyer_accepts_marketing.get.asInstanceOf[js.Any])
     if (cancel_reason != null) __obj.updateDynamic("cancel_reason")(cancel_reason.asInstanceOf[js.Any])
     if (cancelled_at != null) __obj.updateDynamic("cancelled_at")(cancelled_at.asInstanceOf[js.Any])
     if (cart_token != null) __obj.updateDynamic("cart_token")(cart_token.asInstanceOf[js.Any])
@@ -135,14 +135,14 @@ object Order {
     if (financial_status != null) __obj.updateDynamic("financial_status")(financial_status.asInstanceOf[js.Any])
     if (fulfillment_status != null) __obj.updateDynamic("fulfillment_status")(fulfillment_status.asInstanceOf[js.Any])
     if (fulfillments != null) __obj.updateDynamic("fulfillments")(fulfillments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (landing_site != null) __obj.updateDynamic("landing_site")(landing_site.asInstanceOf[js.Any])
     if (line_items != null) __obj.updateDynamic("line_items")(line_items.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
     if (note_attributes != null) __obj.updateDynamic("note_attributes")(note_attributes.asInstanceOf[js.Any])
-    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
-    if (order_number != null) __obj.updateDynamic("order_number")(order_number.asInstanceOf[js.Any])
+    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(order_number)) __obj.updateDynamic("order_number")(order_number.get.asInstanceOf[js.Any])
     if (payment_details != null) __obj.updateDynamic("payment_details")(payment_details.asInstanceOf[js.Any])
     if (processed_at != null) __obj.updateDynamic("processed_at")(processed_at.asInstanceOf[js.Any])
     if (processing_method != null) __obj.updateDynamic("processing_method")(processing_method.asInstanceOf[js.Any])
@@ -151,17 +151,17 @@ object Order {
     if (shipping_address != null) __obj.updateDynamic("shipping_address")(shipping_address.asInstanceOf[js.Any])
     if (shipping_lines != null) __obj.updateDynamic("shipping_lines")(shipping_lines.asInstanceOf[js.Any])
     if (source_name != null) __obj.updateDynamic("source_name")(source_name.asInstanceOf[js.Any])
-    if (subtotal_price != null) __obj.updateDynamic("subtotal_price")(subtotal_price.asInstanceOf[js.Any])
+    if (!js.isUndefined(subtotal_price)) __obj.updateDynamic("subtotal_price")(subtotal_price.get.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (tax_lines != null) __obj.updateDynamic("tax_lines")(tax_lines.asInstanceOf[js.Any])
-    if (!js.isUndefined(taxes_included)) __obj.updateDynamic("taxes_included")(taxes_included.asInstanceOf[js.Any])
+    if (!js.isUndefined(taxes_included)) __obj.updateDynamic("taxes_included")(taxes_included.get.asInstanceOf[js.Any])
     if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
-    if (total_discounts != null) __obj.updateDynamic("total_discounts")(total_discounts.asInstanceOf[js.Any])
-    if (total_line_items_price != null) __obj.updateDynamic("total_line_items_price")(total_line_items_price.asInstanceOf[js.Any])
-    if (total_price != null) __obj.updateDynamic("total_price")(total_price.asInstanceOf[js.Any])
-    if (total_price_usd != null) __obj.updateDynamic("total_price_usd")(total_price_usd.asInstanceOf[js.Any])
-    if (total_tax != null) __obj.updateDynamic("total_tax")(total_tax.asInstanceOf[js.Any])
-    if (total_weight != null) __obj.updateDynamic("total_weight")(total_weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(total_discounts)) __obj.updateDynamic("total_discounts")(total_discounts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(total_line_items_price)) __obj.updateDynamic("total_line_items_price")(total_line_items_price.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(total_price)) __obj.updateDynamic("total_price")(total_price.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(total_price_usd)) __obj.updateDynamic("total_price_usd")(total_price_usd.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(total_tax)) __obj.updateDynamic("total_tax")(total_tax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(total_weight)) __obj.updateDynamic("total_weight")(total_weight.get.asInstanceOf[js.Any])
     if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[Order]
   }

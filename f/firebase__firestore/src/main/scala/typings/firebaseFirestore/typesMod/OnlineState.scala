@@ -18,14 +18,14 @@ object OnlineState {
     * Higher-level components should operate in offline mode.
     */
   @scala.inline
-  def Offline: typings.firebaseFirestore.firebaseFirestoreStrings.Offline = this.cast("Offline")
+  def Offline: typings.firebaseFirestore.firebaseFirestoreStrings.Offline = "Offline".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.Offline]
   /**
     * The client is connected and the connections are healthy. This state is
     * reached after a successful connection and there has been at least one
     * successful message received from the backends.
     */
   @scala.inline
-  def Online: typings.firebaseFirestore.firebaseFirestoreStrings.Online = this.cast("Online")
+  def Online: typings.firebaseFirestore.firebaseFirestoreStrings.Online = "Online".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.Online]
   /**
     * The Firestore client is in an unknown online state. This means the client
     * is either not actively trying to establish a connection or it is currently
@@ -33,8 +33,6 @@ object OnlineState {
     * Higher-level components should not operate in offline mode.
     */
   @scala.inline
-  def Unknown: typings.firebaseFirestore.firebaseFirestoreStrings.Unknown = this.cast("Unknown")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Unknown: typings.firebaseFirestore.firebaseFirestoreStrings.Unknown = "Unknown".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.Unknown]
 }
 

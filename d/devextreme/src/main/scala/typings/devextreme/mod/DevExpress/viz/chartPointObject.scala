@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 trait chartPointObject extends basePointObject {
   /** @name chartPointObject.aggregationInfo */
-  var aggregationInfo: chartPointAggregationInfoObject
+  var aggregationInfo: js.UndefOr[chartPointAggregationInfoObject] = js.undefined
   /** @name chartPointObject.originalCloseValue */
-  var originalCloseValue: Double | String
+  var originalCloseValue: js.UndefOr[Double | String] = js.undefined
   /** @name chartPointObject.originalHighValue */
-  var originalHighValue: Double | String
+  var originalHighValue: js.UndefOr[Double | String] = js.undefined
   /** @name chartPointObject.originalLowValue */
-  var originalLowValue: Double | String
+  var originalLowValue: js.UndefOr[Double | String] = js.undefined
   /** @name chartPointObject.originalMinValue */
-  var originalMinValue: String | Double | Date
+  var originalMinValue: js.UndefOr[String | Double | Date] = js.undefined
   /** @name chartPointObject.originalOpenValue */
-  var originalOpenValue: Double | String
+  var originalOpenValue: js.UndefOr[Double | String] = js.undefined
   /** @name chartPointObject.size */
-  var size: Double | String
+  var size: js.UndefOr[Double | String] = js.undefined
   /** @name chartPointObject.getBoundingRect() */
   def getBoundingRect(): js.Any
 }
@@ -27,11 +27,8 @@ trait chartPointObject extends basePointObject {
 object chartPointObject {
   @scala.inline
   def apply(
-    aggregationInfo: chartPointAggregationInfoObject,
     clearHover: () => Unit,
     clearSelection: () => Unit,
-    data: js.Any,
-    fullState: Double,
     getBoundingRect: () => js.Any,
     getColor: () => String,
     getLabel: () => baseLabelObject with js.Array[baseLabelObject],
@@ -39,20 +36,36 @@ object chartPointObject {
     hover: () => Unit,
     isHovered: () => Boolean,
     isSelected: () => Boolean,
-    originalArgument: String | Double | Date,
-    originalCloseValue: Double | String,
-    originalHighValue: Double | String,
-    originalLowValue: Double | String,
-    originalMinValue: String | Double | Date,
-    originalOpenValue: Double | String,
-    originalValue: String | Double | Date,
     select: () => Unit,
-    series: js.Any,
     showTooltip: () => Unit,
-    size: Double | String,
-    tag: js.Any
+    aggregationInfo: chartPointAggregationInfoObject = null,
+    data: js.Any = null,
+    fullState: js.UndefOr[Double] = js.undefined,
+    originalArgument: String | Double | Date = null,
+    originalCloseValue: Double | String = null,
+    originalHighValue: Double | String = null,
+    originalLowValue: Double | String = null,
+    originalMinValue: String | Double | Date = null,
+    originalOpenValue: Double | String = null,
+    originalValue: String | Double | Date = null,
+    series: js.Any = null,
+    size: Double | String = null,
+    tag: js.Any = null
   ): chartPointObject = {
-    val __obj = js.Dynamic.literal(aggregationInfo = aggregationInfo.asInstanceOf[js.Any], clearHover = js.Any.fromFunction0(clearHover), clearSelection = js.Any.fromFunction0(clearSelection), data = data.asInstanceOf[js.Any], fullState = fullState.asInstanceOf[js.Any], getBoundingRect = js.Any.fromFunction0(getBoundingRect), getColor = js.Any.fromFunction0(getColor), getLabel = js.Any.fromFunction0(getLabel), hideTooltip = js.Any.fromFunction0(hideTooltip), hover = js.Any.fromFunction0(hover), isHovered = js.Any.fromFunction0(isHovered), isSelected = js.Any.fromFunction0(isSelected), originalArgument = originalArgument.asInstanceOf[js.Any], originalCloseValue = originalCloseValue.asInstanceOf[js.Any], originalHighValue = originalHighValue.asInstanceOf[js.Any], originalLowValue = originalLowValue.asInstanceOf[js.Any], originalMinValue = originalMinValue.asInstanceOf[js.Any], originalOpenValue = originalOpenValue.asInstanceOf[js.Any], originalValue = originalValue.asInstanceOf[js.Any], select = js.Any.fromFunction0(select), series = series.asInstanceOf[js.Any], showTooltip = js.Any.fromFunction0(showTooltip), size = size.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clearHover = js.Any.fromFunction0(clearHover), clearSelection = js.Any.fromFunction0(clearSelection), getBoundingRect = js.Any.fromFunction0(getBoundingRect), getColor = js.Any.fromFunction0(getColor), getLabel = js.Any.fromFunction0(getLabel), hideTooltip = js.Any.fromFunction0(hideTooltip), hover = js.Any.fromFunction0(hover), isHovered = js.Any.fromFunction0(isHovered), isSelected = js.Any.fromFunction0(isSelected), select = js.Any.fromFunction0(select), showTooltip = js.Any.fromFunction0(showTooltip))
+    if (aggregationInfo != null) __obj.updateDynamic("aggregationInfo")(aggregationInfo.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullState)) __obj.updateDynamic("fullState")(fullState.get.asInstanceOf[js.Any])
+    if (originalArgument != null) __obj.updateDynamic("originalArgument")(originalArgument.asInstanceOf[js.Any])
+    if (originalCloseValue != null) __obj.updateDynamic("originalCloseValue")(originalCloseValue.asInstanceOf[js.Any])
+    if (originalHighValue != null) __obj.updateDynamic("originalHighValue")(originalHighValue.asInstanceOf[js.Any])
+    if (originalLowValue != null) __obj.updateDynamic("originalLowValue")(originalLowValue.asInstanceOf[js.Any])
+    if (originalMinValue != null) __obj.updateDynamic("originalMinValue")(originalMinValue.asInstanceOf[js.Any])
+    if (originalOpenValue != null) __obj.updateDynamic("originalOpenValue")(originalOpenValue.asInstanceOf[js.Any])
+    if (originalValue != null) __obj.updateDynamic("originalValue")(originalValue.asInstanceOf[js.Any])
+    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[chartPointObject]
   }
 }

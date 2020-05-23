@@ -23,20 +23,20 @@ object QueryOptions {
     forceFetch: js.UndefOr[Boolean] = js.undefined,
     fragments: js.Array[js.Array[FragmentDefinition] | FragmentDefinition] = null,
     noFetch: js.UndefOr[Boolean] = js.undefined,
-    pollInterval: Int | Double = null,
+    pollInterval: js.UndefOr[Double] = js.undefined,
     returnPartialData: js.UndefOr[Boolean] = js.undefined,
     skip: js.UndefOr[Boolean] = js.undefined,
     ssr: js.UndefOr[Boolean] = js.undefined,
     variables: StringDictionary[js.Any] = null
   ): QueryOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(forceFetch)) __obj.updateDynamic("forceFetch")(forceFetch.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceFetch)) __obj.updateDynamic("forceFetch")(forceFetch.get.asInstanceOf[js.Any])
     if (fragments != null) __obj.updateDynamic("fragments")(fragments.asInstanceOf[js.Any])
-    if (!js.isUndefined(noFetch)) __obj.updateDynamic("noFetch")(noFetch.asInstanceOf[js.Any])
-    if (pollInterval != null) __obj.updateDynamic("pollInterval")(pollInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnPartialData)) __obj.updateDynamic("returnPartialData")(returnPartialData.asInstanceOf[js.Any])
-    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
-    if (!js.isUndefined(ssr)) __obj.updateDynamic("ssr")(ssr.asInstanceOf[js.Any])
+    if (!js.isUndefined(noFetch)) __obj.updateDynamic("noFetch")(noFetch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pollInterval)) __obj.updateDynamic("pollInterval")(pollInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnPartialData)) __obj.updateDynamic("returnPartialData")(returnPartialData.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssr)) __obj.updateDynamic("ssr")(ssr.get.asInstanceOf[js.Any])
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOptions]
   }

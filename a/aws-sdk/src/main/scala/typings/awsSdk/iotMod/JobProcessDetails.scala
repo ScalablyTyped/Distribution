@@ -47,25 +47,25 @@ trait JobProcessDetails extends js.Object {
 object JobProcessDetails {
   @scala.inline
   def apply(
-    numberOfCanceledThings: Int | Double = null,
-    numberOfFailedThings: Int | Double = null,
-    numberOfInProgressThings: Int | Double = null,
-    numberOfQueuedThings: Int | Double = null,
-    numberOfRejectedThings: Int | Double = null,
-    numberOfRemovedThings: Int | Double = null,
-    numberOfSucceededThings: Int | Double = null,
-    numberOfTimedOutThings: Int | Double = null,
+    numberOfCanceledThings: js.UndefOr[CanceledThings] = js.undefined,
+    numberOfFailedThings: js.UndefOr[FailedThings] = js.undefined,
+    numberOfInProgressThings: js.UndefOr[InProgressThings] = js.undefined,
+    numberOfQueuedThings: js.UndefOr[QueuedThings] = js.undefined,
+    numberOfRejectedThings: js.UndefOr[RejectedThings] = js.undefined,
+    numberOfRemovedThings: js.UndefOr[RemovedThings] = js.undefined,
+    numberOfSucceededThings: js.UndefOr[SucceededThings] = js.undefined,
+    numberOfTimedOutThings: js.UndefOr[TimedOutThings] = js.undefined,
     processingTargets: ProcessingTargetNameList = null
   ): JobProcessDetails = {
     val __obj = js.Dynamic.literal()
-    if (numberOfCanceledThings != null) __obj.updateDynamic("numberOfCanceledThings")(numberOfCanceledThings.asInstanceOf[js.Any])
-    if (numberOfFailedThings != null) __obj.updateDynamic("numberOfFailedThings")(numberOfFailedThings.asInstanceOf[js.Any])
-    if (numberOfInProgressThings != null) __obj.updateDynamic("numberOfInProgressThings")(numberOfInProgressThings.asInstanceOf[js.Any])
-    if (numberOfQueuedThings != null) __obj.updateDynamic("numberOfQueuedThings")(numberOfQueuedThings.asInstanceOf[js.Any])
-    if (numberOfRejectedThings != null) __obj.updateDynamic("numberOfRejectedThings")(numberOfRejectedThings.asInstanceOf[js.Any])
-    if (numberOfRemovedThings != null) __obj.updateDynamic("numberOfRemovedThings")(numberOfRemovedThings.asInstanceOf[js.Any])
-    if (numberOfSucceededThings != null) __obj.updateDynamic("numberOfSucceededThings")(numberOfSucceededThings.asInstanceOf[js.Any])
-    if (numberOfTimedOutThings != null) __obj.updateDynamic("numberOfTimedOutThings")(numberOfTimedOutThings.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfCanceledThings)) __obj.updateDynamic("numberOfCanceledThings")(numberOfCanceledThings.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfFailedThings)) __obj.updateDynamic("numberOfFailedThings")(numberOfFailedThings.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfInProgressThings)) __obj.updateDynamic("numberOfInProgressThings")(numberOfInProgressThings.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfQueuedThings)) __obj.updateDynamic("numberOfQueuedThings")(numberOfQueuedThings.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfRejectedThings)) __obj.updateDynamic("numberOfRejectedThings")(numberOfRejectedThings.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfRemovedThings)) __obj.updateDynamic("numberOfRemovedThings")(numberOfRemovedThings.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfSucceededThings)) __obj.updateDynamic("numberOfSucceededThings")(numberOfSucceededThings.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfTimedOutThings)) __obj.updateDynamic("numberOfTimedOutThings")(numberOfTimedOutThings.get.asInstanceOf[js.Any])
     if (processingTargets != null) __obj.updateDynamic("processingTargets")(processingTargets.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobProcessDetails]
   }

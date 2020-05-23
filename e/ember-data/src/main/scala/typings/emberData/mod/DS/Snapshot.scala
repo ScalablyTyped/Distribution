@@ -1,9 +1,9 @@
 package typings.emberData.mod.DS
 
 import org.scalablytyped.runtime.TopLevel
-import typings.emberData.Anon0
-import typings.emberData.AnonId
-import typings.emberData.AnonIds
+import typings.emberData.anon.Id
+import typings.emberData.anon.Ids
+import typings.emberData.anon.`0`
 import typings.emberData.mod.AttributeMeta
 import typings.emberData.mod.AttributesFor
 import typings.emberData.mod.ModelKeys
@@ -62,7 +62,7 @@ class Snapshot[K /* <: /* keyof ember-data.ember-data/types/registries/model.Mod
   ] = js.native
   def belongsTo[L /* <: RelationshipsFor[
     /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
-  ] */](keyName: L, options: AnonId): js.UndefOr[String | Null] = js.native
+  ] */](keyName: L, options: Id): js.UndefOr[String | Null] = js.native
   /**
     * Returns all changed attributes and their old and new values.
     */
@@ -101,14 +101,14 @@ class Snapshot[K /* <: /* keyof ember-data.ember-data/types/registries/model.Mod
   ] = js.native
   def hasMany[L /* <: RelationshipsFor[
     /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
-  ] */](keyName: L, options: Anon0): js.UndefOr[js.Array[String]] = js.native
-  def hasMany[L /* <: RelationshipsFor[
-    /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
-  ] */](keyName: L, options: AnonIds): js.UndefOr[
+  ] */](keyName: L, options: Ids): js.UndefOr[
     js.Array[
       Snapshot[/* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String]
     ]
   ] = js.native
+  def hasMany[L /* <: RelationshipsFor[
+    /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
+  ] */](keyName: L, options: `0`): js.UndefOr[js.Array[String]] = js.native
   /**
     * Serializes the snapshot using the serializer for the model.
     */

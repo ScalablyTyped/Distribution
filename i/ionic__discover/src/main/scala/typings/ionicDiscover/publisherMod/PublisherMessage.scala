@@ -27,10 +27,10 @@ object PublisherMessage {
     path: String,
     port: Double,
     t: Double,
-    commPort: Int | Double = null
+    commPort: js.UndefOr[Double] = js.undefined
   ): PublisherMessage = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nspace = nspace.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
-    if (commPort != null) __obj.updateDynamic("commPort")(commPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(commPort)) __obj.updateDynamic("commPort")(commPort.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublisherMessage]
   }
 }

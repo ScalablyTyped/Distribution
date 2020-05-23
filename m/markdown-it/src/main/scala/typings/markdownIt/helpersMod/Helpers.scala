@@ -11,7 +11,7 @@ trait Helpers extends js.Object {
   var parseLinkDestination_Original: js.Function3[/* str */ String, /* pos */ Double, /* max */ Double, ParseResult] = js.native
   @JSName("parseLinkLabel")
   var parseLinkLabel_Original: js.Function3[
-    /* state */ typings.markdownIt.stateCoreMod.^, 
+    /* state */ typings.markdownIt.stateInlineMod.^, 
     /* start */ Double, 
     /* disableNested */ js.UndefOr[Boolean], 
     Double
@@ -19,8 +19,8 @@ trait Helpers extends js.Object {
   @JSName("parseLinkTitle")
   var parseLinkTitle_Original: js.Function3[/* str */ String, /* pos */ Double, /* max */ Double, ParseResult] = js.native
   def parseLinkDestination(str: String, pos: Double, max: Double): ParseResult = js.native
-  def parseLinkLabel(state: typings.markdownIt.stateCoreMod.^, start: Double): Double = js.native
-  def parseLinkLabel(state: typings.markdownIt.stateCoreMod.^, start: Double, disableNested: Boolean): Double = js.native
+  def parseLinkLabel(state: typings.markdownIt.stateInlineMod.^, start: Double): Double = js.native
+  def parseLinkLabel(state: typings.markdownIt.stateInlineMod.^, start: Double, disableNested: Boolean): Double = js.native
   def parseLinkTitle(str: String, pos: Double, max: Double): ParseResult = js.native
 }
 

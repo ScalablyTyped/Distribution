@@ -16,14 +16,14 @@ object AnswerCallbackQueryOptions {
   @scala.inline
   def apply(
     callback_query_id: String,
-    cache_time: Int | Double = null,
+    cache_time: js.UndefOr[Double] = js.undefined,
     show_alert: js.UndefOr[Boolean] = js.undefined,
     text: String = null,
     url: String = null
   ): AnswerCallbackQueryOptions = {
     val __obj = js.Dynamic.literal(callback_query_id = callback_query_id.asInstanceOf[js.Any])
-    if (cache_time != null) __obj.updateDynamic("cache_time")(cache_time.asInstanceOf[js.Any])
-    if (!js.isUndefined(show_alert)) __obj.updateDynamic("show_alert")(show_alert.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache_time)) __obj.updateDynamic("cache_time")(cache_time.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(show_alert)) __obj.updateDynamic("show_alert")(show_alert.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnswerCallbackQueryOptions]

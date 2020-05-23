@@ -20,23 +20,23 @@ object MagellanOptions {
   @scala.inline
   def apply(
     active_class: String = null,
-    destination_threshold: Int | Double = null,
-    duration: Int | Double = null,
+    destination_threshold: js.UndefOr[Double] = js.undefined,
+    duration: js.UndefOr[Double] = js.undefined,
     easing: String = null,
-    fixed_top: Int | Double = null,
+    fixed_top: js.UndefOr[Double] = js.undefined,
     offset_by_height: js.UndefOr[Boolean] = js.undefined,
-    threshold: Int | Double = null,
-    throttle_delay: Int | Double = null
+    threshold: js.UndefOr[Double] = js.undefined,
+    throttle_delay: js.UndefOr[Double] = js.undefined
   ): MagellanOptions = {
     val __obj = js.Dynamic.literal()
     if (active_class != null) __obj.updateDynamic("active_class")(active_class.asInstanceOf[js.Any])
-    if (destination_threshold != null) __obj.updateDynamic("destination_threshold")(destination_threshold.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(destination_threshold)) __obj.updateDynamic("destination_threshold")(destination_threshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (fixed_top != null) __obj.updateDynamic("fixed_top")(fixed_top.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset_by_height)) __obj.updateDynamic("offset_by_height")(offset_by_height.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
-    if (throttle_delay != null) __obj.updateDynamic("throttle_delay")(throttle_delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixed_top)) __obj.updateDynamic("fixed_top")(fixed_top.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset_by_height)) __obj.updateDynamic("offset_by_height")(offset_by_height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(throttle_delay)) __obj.updateDynamic("throttle_delay")(throttle_delay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MagellanOptions]
   }
 }

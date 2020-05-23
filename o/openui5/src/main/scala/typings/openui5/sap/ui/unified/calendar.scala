@@ -10,17 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object calendar extends js.Object {
   @js.native
-  class DatesRow protected () extends Month {
-    /**
-      * Constructor for a new calendar/DatesRow.Accepts an object literal <code>mSettings</code> that
-      * defines initialproperty values, aggregated and associated objects as well as event handlers.See
-      * {@link sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the
-      * settings object.
-      * @param sId id for the new control, generated automatically if no id is given
-      * @param mSettings initial settings for the new control
-      */
-    def this(sId: String) = this()
-    def this(sId: String, mSettings: js.Any) = this()
+  trait DatesRow extends Month {
     /**
       * Gets current value of property <code>days</code>.number of days displayedDefault value is
       * <code>7</code>.
@@ -72,17 +62,7 @@ object calendar extends js.Object {
   }
   
   @js.native
-  class Header protected () extends Control {
-    /**
-      * Constructor for a new Header.Accepts an object literal <code>mSettings</code> that defines
-      * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
-      * sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the settings
-      * object.
-      * @param sId ID for the new control, generated automatically if no ID is given
-      * @param mSettings Initial settings for the new control
-      */
-    def this(sId: String) = this()
-    def this(sId: String, mSettings: js.Any) = this()
+  trait Header extends Control {
     /**
       * Attaches event handler <code>fnFunction</code> to the <code>pressButton0</code> event of this
       * <code>sap.ui.unified.calendar.Header</code>.When called, the context of the event handler (its
@@ -445,17 +425,7 @@ object calendar extends js.Object {
   }
   
   @js.native
-  class Month protected () extends Control {
-    /**
-      * Constructor for a new calendar/Month.Accepts an object literal <code>mSettings</code> that defines
-      * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
-      * sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the settings
-      * object.
-      * @param sId id for the new control, generated automatically if no id is given
-      * @param mSettings initial settings for the new control
-      */
-    def this(sId: String) = this()
-    def this(sId: String, mSettings: js.Any) = this()
+  trait Month extends Control {
     /**
       * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
       * @param vAriaLabelledBy the ariaLabelledBy to add; if empty, nothing is inserted
@@ -861,17 +831,7 @@ object calendar extends js.Object {
   }
   
   @js.native
-  class MonthPicker protected () extends Control {
-    /**
-      * Constructor for a new MonthPicker.Accepts an object literal <code>mSettings</code> that defines
-      * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
-      * sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the settings
-      * object.
-      * @param sId id for the new control, generated automatically if no id is given
-      * @param mSettings initial settings for the new control
-      */
-    def this(sId: String) = this()
-    def this(sId: String, mSettings: js.Any) = this()
+  trait MonthPicker extends Control {
     /**
       * Attaches event handler <code>fnFunction</code> to the <code>pageChange</code> event of this
       * <code>sap.ui.unified.calendar.MonthPicker</code>.When called, the context of the event handler (its
@@ -1019,18 +979,7 @@ object calendar extends js.Object {
   }
   
   @js.native
-  class MonthsRow protected () extends Control {
-    /**
-      * Constructor for a new <code>MonthsRow</code>.It shows a calendar with month granularity<b>Note:</b>
-      * This is used inside the CalendarMonthInterval, not for standalone usage.Accepts an object literal
-      * <code>mSettings</code> that defines initialproperty values, aggregated and associated objects as
-      * well as event handlers.See {@link sap.ui.base.ManagedObject#constructor} for a general description
-      * of the syntax of the settings object.
-      * @param sId ID for the new control, generated automatically if no ID is given
-      * @param mSettings Initial settings for the new control
-      */
-    def this(sId: String) = this()
-    def this(sId: String, mSettings: js.Any) = this()
+  trait MonthsRow extends Control {
     /**
       * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
       * @param vAriaLabelledBy the ariaLabelledBy to add; if empty, nothing is inserted
@@ -1340,18 +1289,7 @@ object calendar extends js.Object {
   }
   
   @js.native
-  class TimesRow protected () extends Control {
-    /**
-      * Constructor for a new <code>TimesRow</code>.It shows a calendar with time granularity (normally
-      * hours)<b>Note:</b> This is used inside the CalendarTimeInterval, not for standalone usage.Accepts an
-      * object literal <code>mSettings</code> that defines initialproperty values, aggregated and associated
-      * objects as well as event handlers.See {@link sap.ui.base.ManagedObject#constructor} for a general
-      * description of the syntax of the settings object.
-      * @param sId ID for the new control, generated automatically if no ID is given
-      * @param mSettings Initial settings for the new control
-      */
-    def this(sId: String) = this()
-    def this(sId: String, mSettings: js.Any) = this()
+  trait TimesRow extends Control {
     /**
       * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
       * @param vAriaLabelledBy the ariaLabelledBy to add; if empty, nothing is inserted
@@ -1677,17 +1615,7 @@ object calendar extends js.Object {
   }
   
   @js.native
-  class YearPicker protected () extends Control {
-    /**
-      * Constructor for a new YearPicker.Accepts an object literal <code>mSettings</code> that defines
-      * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
-      * sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the settings
-      * object.
-      * @param sId id for the new control, generated automatically if no id is given
-      * @param mSettings initial settings for the new control
-      */
-    def this(sId: String) = this()
-    def this(sId: String, mSettings: js.Any) = this()
+  trait YearPicker extends Control {
     /**
       * Attaches event handler <code>fnFunction</code> to the <code>pageChange</code> event of this
       * <code>sap.ui.unified.calendar.YearPicker</code>.When called, the context of the event handler (its

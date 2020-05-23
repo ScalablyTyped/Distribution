@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -101,44 +100,6 @@ object NumberFormatCategory extends js.Object {
     */
   @js.native
   sealed trait time extends NumberFormatCategory
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[NumberFormatCategory with String] = js.native
-  /* "Accounting" */ @js.native
-  object accounting extends TopLevel[accounting with String]
-  
-  /* "Currency" */ @js.native
-  object currency extends TopLevel[currency with String]
-  
-  /* "Custom" */ @js.native
-  object custom extends TopLevel[custom with String]
-  
-  /* "Date" */ @js.native
-  object date extends TopLevel[date with String]
-  
-  /* "Fraction" */ @js.native
-  object fraction extends TopLevel[fraction with String]
-  
-  /* "General" */ @js.native
-  object general extends TopLevel[general with String]
-  
-  /* "Number" */ @js.native
-  object number extends TopLevel[number with String]
-  
-  /* "Percentage" */ @js.native
-  object percentage extends TopLevel[percentage with String]
-  
-  /* "Scientific" */ @js.native
-  object scientific extends TopLevel[scientific with String]
-  
-  /* "Special" */ @js.native
-  object special extends TopLevel[special with String]
-  
-  /* "Text" */ @js.native
-  object text extends TopLevel[text with String]
-  
-  /* "Time" */ @js.native
-  object time extends TopLevel[time with String]
   
 }
 

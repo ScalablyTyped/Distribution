@@ -25,9 +25,9 @@ object SearchOptionsTerm {
     maxSize: String = null,
     maxage: String = null,
     minSize: String = null,
-    n: Int | Double = null,
+    n: js.UndefOr[Double] = js.undefined,
     order: js.UndefOr[Boolean] = js.undefined,
-    page: Int | Double = null,
+    page: js.UndefOr[Double] = js.undefined,
     s: String = null,
     sizeType: b | k | m | g = null,
     sort: SortType = null,
@@ -43,9 +43,9 @@ object SearchOptionsTerm {
     if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
     if (maxage != null) __obj.updateDynamic("maxage")(maxage.asInstanceOf[js.Any])
     if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
-    if (n != null) __obj.updateDynamic("n")(n.asInstanceOf[js.Any])
-    if (!js.isUndefined(order)) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (!js.isUndefined(n)) __obj.updateDynamic("n")(n.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(order)) __obj.updateDynamic("order")(order.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
     if (s != null) __obj.updateDynamic("s")(s.asInstanceOf[js.Any])
     if (sizeType != null) __obj.updateDynamic("sizeType")(sizeType.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])

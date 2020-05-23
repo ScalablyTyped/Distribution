@@ -1,7 +1,7 @@
 
 # Scala.js typings for webpack-notifier
 
-Typings are for version 1.5
+Typings are for version 1.8
 
 ## Library description:
 webpack + node-notifier = build status system notifications

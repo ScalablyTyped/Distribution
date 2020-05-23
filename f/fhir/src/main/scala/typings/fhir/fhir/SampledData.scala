@@ -78,11 +78,11 @@ object SampledData {
     _period: Element = null,
     _upperLimit: Element = null,
     extension: js.Array[Extension] = null,
-    factor: Int | Double = null,
+    factor: js.UndefOr[decimal] = js.undefined,
     fhir_comments: js.Array[String] = null,
     id: String = null,
-    lowerLimit: Int | Double = null,
-    upperLimit: Int | Double = null
+    lowerLimit: js.UndefOr[decimal] = js.undefined,
+    upperLimit: js.UndefOr[decimal] = js.undefined
   ): SampledData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], period = period.asInstanceOf[js.Any])
     if (_data != null) __obj.updateDynamic("_data")(_data.asInstanceOf[js.Any])
@@ -94,11 +94,11 @@ object SampledData {
     if (_period != null) __obj.updateDynamic("_period")(_period.asInstanceOf[js.Any])
     if (_upperLimit != null) __obj.updateDynamic("_upperLimit")(_upperLimit.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (factor != null) __obj.updateDynamic("factor")(factor.asInstanceOf[js.Any])
+    if (!js.isUndefined(factor)) __obj.updateDynamic("factor")(factor.get.asInstanceOf[js.Any])
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lowerLimit != null) __obj.updateDynamic("lowerLimit")(lowerLimit.asInstanceOf[js.Any])
-    if (upperLimit != null) __obj.updateDynamic("upperLimit")(upperLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(lowerLimit)) __obj.updateDynamic("lowerLimit")(lowerLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(upperLimit)) __obj.updateDynamic("upperLimit")(upperLimit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SampledData]
   }
 }

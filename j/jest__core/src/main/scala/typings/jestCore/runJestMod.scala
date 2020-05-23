@@ -1,5 +1,6 @@
 package typings.jestCore
 
+import typings.jestCore.anon.ChangedFilesPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object runJestMod extends js.Object {
   def default(
-    hasContextsGlobalConfigOutputStreamTestWatcherJestHooksStartRunChangedFilesPromiseOnCompleteFailedTestsCacheFilter: AnonChangedFilesPromise
-  ): js.Promise[Unit] = js.native
+    hasContextsGlobalConfigOutputStreamTestWatcherJestHooksStartRunChangedFilesPromiseOnCompleteFailedTestsCacheFilter: ChangedFilesPromise
+  ): js.Promise[Unit | Null] = js.native
 }
 

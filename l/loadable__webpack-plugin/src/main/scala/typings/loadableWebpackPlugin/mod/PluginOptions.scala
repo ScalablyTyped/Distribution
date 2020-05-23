@@ -1,6 +1,6 @@
 package typings.loadableWebpackPlugin.mod
 
-import typings.loadableWebpackPlugin.AnonFilename
+import typings.loadableWebpackPlugin.anon.Filename
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait PluginOptions extends js.Object {
     *
     * @default false
     */
-  var writeToDisk: js.UndefOr[Boolean | AnonFilename] = js.undefined
+  var writeToDisk: js.UndefOr[Boolean | Filename] = js.undefined
 }
 
 object PluginOptions {
@@ -29,11 +29,11 @@ object PluginOptions {
   def apply(
     filename: String = null,
     outputAsset: js.UndefOr[Boolean] = js.undefined,
-    writeToDisk: Boolean | AnonFilename = null
+    writeToDisk: Boolean | Filename = null
   ): PluginOptions = {
     val __obj = js.Dynamic.literal()
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (!js.isUndefined(outputAsset)) __obj.updateDynamic("outputAsset")(outputAsset.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputAsset)) __obj.updateDynamic("outputAsset")(outputAsset.get.asInstanceOf[js.Any])
     if (writeToDisk != null) __obj.updateDynamic("writeToDisk")(writeToDisk.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginOptions]
   }

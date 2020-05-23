@@ -1,6 +1,6 @@
 package typings.vis.mod
 
-import typings.vis.AnonBackground
+import typings.vis.anon.Background
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 trait Color extends js.Object {
   var background: js.UndefOr[String] = js.undefined
   var border: js.UndefOr[String] = js.undefined
-  var highlight: js.UndefOr[String | AnonBackground] = js.undefined
-  var hover: js.UndefOr[String | AnonBackground] = js.undefined
+  var highlight: js.UndefOr[String | Background] = js.undefined
+  var hover: js.UndefOr[String | Background] = js.undefined
 }
 
 object Color {
@@ -17,8 +17,8 @@ object Color {
   def apply(
     background: String = null,
     border: String = null,
-    highlight: String | AnonBackground = null,
-    hover: String | AnonBackground = null
+    highlight: String | Background = null,
+    hover: String | Background = null
   ): Color = {
     val __obj = js.Dynamic.literal()
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])

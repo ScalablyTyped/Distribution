@@ -33,16 +33,3 @@ trait Camera extends js.Object {
   ): Unit = js.native
 }
 
-@JSGlobal("Camera")
-@js.native
-object Camera extends js.Object {
-  // Camera constants, defined in Camera plugin
-  var DestinationType: AnonDATAURL = js.native
-  var Direction: AnonBACK = js.native
-  var EncodingType: AnonJPEG = js.native
-  var MediaType: AnonALLMEDIA = js.native
-  var PictureSourceType: AnonCAMERA = js.native
-  // Used only on iOS
-  var PopoverArrowDirection: AnonARROWANY = js.native
-}
-

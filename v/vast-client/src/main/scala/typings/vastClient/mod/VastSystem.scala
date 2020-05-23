@@ -12,8 +12,7 @@ trait VastSystem extends js.Object {
 object VastSystem {
   @scala.inline
   def apply(value: String, version: String = null): VastSystem = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[VastSystem]
   }
 }

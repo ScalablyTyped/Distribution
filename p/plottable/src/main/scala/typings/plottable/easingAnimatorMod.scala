@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("plottable/build/src/animators/easingAnimator", JSImport.Namespace)
 @js.native
 object easingAnimatorMod extends js.Object {
-  /* Rewritten from type alias, can be one of: 
+  /* keyof plottable.anon.Back */ /* Rewritten from type alias, can be one of: 
     - typings.plottable.plottableStrings.circle
     - typings.plottable.plottableStrings.linear
     - typings.plottable.plottableStrings.quad

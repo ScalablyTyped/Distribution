@@ -32,16 +32,16 @@ object ListServerNeighborsRequest {
   @scala.inline
   def apply(
     configurationId: ConfigurationId,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[Integer] = js.undefined,
     neighborConfigurationIds: ConfigurationIdList = null,
     nextToken: String = null,
-    portInformationNeeded: js.UndefOr[scala.Boolean] = js.undefined
+    portInformationNeeded: js.UndefOr[Boolean] = js.undefined
   ): ListServerNeighborsRequest = {
     val __obj = js.Dynamic.literal(configurationId = configurationId.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (neighborConfigurationIds != null) __obj.updateDynamic("neighborConfigurationIds")(neighborConfigurationIds.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(portInformationNeeded)) __obj.updateDynamic("portInformationNeeded")(portInformationNeeded.asInstanceOf[js.Any])
+    if (!js.isUndefined(portInformationNeeded)) __obj.updateDynamic("portInformationNeeded")(portInformationNeeded.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListServerNeighborsRequest]
   }
 }

@@ -17,12 +17,12 @@ object GridDataBindingEvent {
     preventDefault: js.Function,
     sender: Grid,
     action: String = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     items: js.Any = null
   ): GridDataBindingEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridDataBindingEvent]
   }

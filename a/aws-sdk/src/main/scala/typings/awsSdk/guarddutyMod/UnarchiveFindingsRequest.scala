@@ -11,7 +11,7 @@ trait UnarchiveFindingsRequest extends js.Object {
     */
   var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
   /**
-    * IDs of the findings to unarchive.
+    * The IDs of the findings to unarchive.
     */
   var FindingIds: typings.awsSdk.guarddutyMod.FindingIds = js.native
 }

@@ -15,12 +15,12 @@ object InsertDocInfo {
   def apply(
     fields: js.Array[String] = null,
     ifNotExists: js.UndefOr[Boolean] = js.undefined,
-    ttl: Int | Double = null
+    ttl: js.UndefOr[Double] = js.undefined
   ): InsertDocInfo = {
     val __obj = js.Dynamic.literal()
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(ifNotExists)) __obj.updateDynamic("ifNotExists")(ifNotExists.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ifNotExists)) __obj.updateDynamic("ifNotExists")(ifNotExists.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsertDocInfo]
   }
 }

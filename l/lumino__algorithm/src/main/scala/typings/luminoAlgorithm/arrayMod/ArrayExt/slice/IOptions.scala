@@ -38,11 +38,15 @@ trait IOptions extends js.Object {
 
 object IOptions {
   @scala.inline
-  def apply(start: Int | Double = null, step: Int | Double = null, stop: Int | Double = null): IOptions = {
+  def apply(
+    start: js.UndefOr[Double] = js.undefined,
+    step: js.UndefOr[Double] = js.undefined,
+    stop: js.UndefOr[Double] = js.undefined
+  ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (stop != null) __obj.updateDynamic("stop")(stop.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stop)) __obj.updateDynamic("stop")(stop.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

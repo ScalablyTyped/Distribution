@@ -26,9 +26,9 @@ trait IRegisterOptions extends js.Object {
 
 object IRegisterOptions {
   @scala.inline
-  def apply(command: String, pattern: RegExp, rank: Int | Double = null): IRegisterOptions = {
+  def apply(command: String, pattern: RegExp, rank: js.UndefOr[Double] = js.undefined): IRegisterOptions = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
-    if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
+    if (!js.isUndefined(rank)) __obj.updateDynamic("rank")(rank.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRegisterOptions]
   }
 }

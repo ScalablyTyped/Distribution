@@ -1,15 +1,14 @@
 package typings.i18nJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.i18nJs.AnonMessage
-import typings.i18nJs.AnonScope
+import typings.i18nJs.anon.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TranslateOptions extends InterpolateOptions {
   var defaultValue: js.UndefOr[String] = js.undefined
-  var defaults: js.UndefOr[js.Array[AnonMessage | AnonScope]] = js.undefined
+  var defaults: js.UndefOr[js.Array[Message | typings.i18nJs.anon.Scope]] = js.undefined
   var message: js.UndefOr[String] = js.undefined
   var scope: js.UndefOr[Scope] = js.undefined
 }
@@ -19,7 +18,7 @@ object TranslateOptions {
   def apply(
     StringDictionary: StringDictionary[js.Any] = null,
     defaultValue: String = null,
-    defaults: js.Array[AnonMessage | AnonScope] = null,
+    defaults: js.Array[Message | typings.i18nJs.anon.Scope] = null,
     message: String = null,
     scope: Scope = null
   ): TranslateOptions = {

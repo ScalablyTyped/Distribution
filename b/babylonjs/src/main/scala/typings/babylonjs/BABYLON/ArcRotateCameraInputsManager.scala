@@ -7,14 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Interface representing an arc rotate camera inputs manager
   */
-@JSGlobal("BABYLON.ArcRotateCameraInputsManager")
 @js.native
-class ArcRotateCameraInputsManager protected () extends CameraInputsManager[ArcRotateCamera] {
-  /**
-    * Instantiates a new ArcRotateCameraInputsManager.
-    * @param camera Defines the camera the inputs belong to
-    */
-  def this(camera: ArcRotateCamera) = this()
+trait ArcRotateCameraInputsManager extends CameraInputsManager[ArcRotateCamera] {
   /**
     * Adds gamepad input support to the ArcRotateCamera InputManager.
     * @returns the camera inputs manager

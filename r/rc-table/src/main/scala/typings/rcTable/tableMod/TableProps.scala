@@ -1,7 +1,7 @@
 package typings.rcTable.tableMod
 
-import typings.rcTable.AnonBody
-import typings.rcTable.AnonX
+import typings.rcTable.anon.Body
+import typings.rcTable.anon.X
 import typings.rcTable.interfaceMod.ColumnType
 import typings.rcTable.interfaceMod.ColumnsType
 import typings.rcTable.interfaceMod.ExpandableConfig
@@ -47,13 +47,13 @@ trait TableProps[RecordType] extends LegacyExpandableProps[RecordType] {
     *
     * !!! DO NOT USE IN PRODUCTION ENVIRONMENT !!!
     */
-  var internalRefs: js.UndefOr[AnonBody] = js.undefined
+  var internalRefs: js.UndefOr[Body] = js.undefined
   var onHeaderRow: js.UndefOr[GetComponentProps[js.Array[ColumnType[RecordType]]]] = js.undefined
   var onRow: js.UndefOr[GetComponentProps[RecordType]] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   var rowClassName: js.UndefOr[String | RowClassName[RecordType]] = js.undefined
   var rowKey: js.UndefOr[String | GetRowKey[RecordType]] = js.undefined
-  var scroll: js.UndefOr[AnonX] = js.undefined
+  var scroll: js.UndefOr[X] = js.undefined
   var showHeader: js.UndefOr[Boolean] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var summary: js.UndefOr[js.Function1[/* data */ js.Array[RecordType], ReactNode]] = js.undefined
@@ -81,7 +81,7 @@ object TableProps {
     direction: ltr | rtl = null,
     emptyText: ReactNode | js.Function0[ReactNode] = null,
     expandIcon: /* props */ RenderExpandIconProps[RecordType] => ReactNode = null,
-    expandIconColumnIndex: Int | Double = null,
+    expandIconColumnIndex: js.UndefOr[Double] = js.undefined,
     expandRowByClick: js.UndefOr[Boolean] = js.undefined,
     expandable: ExpandableConfig[RecordType] = null,
     expandedRowClassName: (RecordType, /* index */ Double, /* indent */ Double) => String = null,
@@ -89,9 +89,9 @@ object TableProps {
     expandedRowRender: (RecordType, /* index */ Double, /* indent */ Double, /* expanded */ Boolean) => ReactNode = null,
     footer: /* data */ js.Array[RecordType] => ReactNode = null,
     id: String = null,
-    indentSize: Int | Double = null,
+    indentSize: js.UndefOr[Double] = js.undefined,
     internalHooks: String = null,
-    internalRefs: AnonBody = null,
+    internalRefs: Body = null,
     onExpand: (/* expanded */ Boolean, RecordType) => Unit = null,
     onExpandedRowsChange: /* expandedKeys */ js.Array[Key] => Unit = null,
     onHeaderRow: (js.Array[ColumnType[RecordType]], /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement] = null,
@@ -99,7 +99,7 @@ object TableProps {
     prefixCls: String = null,
     rowClassName: String | RowClassName[RecordType] = null,
     rowKey: String | GetRowKey[RecordType] = null,
-    scroll: AnonX = null,
+    scroll: X = null,
     showHeader: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
     summary: /* data */ js.Array[RecordType] => ReactNode = null,
@@ -114,20 +114,20 @@ object TableProps {
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultExpandAllRows)) __obj.updateDynamic("defaultExpandAllRows")(defaultExpandAllRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultExpandAllRows)) __obj.updateDynamic("defaultExpandAllRows")(defaultExpandAllRows.get.asInstanceOf[js.Any])
     if (defaultExpandedRowKeys != null) __obj.updateDynamic("defaultExpandedRowKeys")(defaultExpandedRowKeys.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (emptyText != null) __obj.updateDynamic("emptyText")(emptyText.asInstanceOf[js.Any])
     if (expandIcon != null) __obj.updateDynamic("expandIcon")(js.Any.fromFunction1(expandIcon))
-    if (expandIconColumnIndex != null) __obj.updateDynamic("expandIconColumnIndex")(expandIconColumnIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandRowByClick)) __obj.updateDynamic("expandRowByClick")(expandRowByClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandIconColumnIndex)) __obj.updateDynamic("expandIconColumnIndex")(expandIconColumnIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandRowByClick)) __obj.updateDynamic("expandRowByClick")(expandRowByClick.get.asInstanceOf[js.Any])
     if (expandable != null) __obj.updateDynamic("expandable")(expandable.asInstanceOf[js.Any])
     if (expandedRowClassName != null) __obj.updateDynamic("expandedRowClassName")(js.Any.fromFunction3(expandedRowClassName))
     if (expandedRowKeys != null) __obj.updateDynamic("expandedRowKeys")(expandedRowKeys.asInstanceOf[js.Any])
     if (expandedRowRender != null) __obj.updateDynamic("expandedRowRender")(js.Any.fromFunction4(expandedRowRender))
     if (footer != null) __obj.updateDynamic("footer")(js.Any.fromFunction1(footer))
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (indentSize != null) __obj.updateDynamic("indentSize")(indentSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(indentSize)) __obj.updateDynamic("indentSize")(indentSize.get.asInstanceOf[js.Any])
     if (internalHooks != null) __obj.updateDynamic("internalHooks")(internalHooks.asInstanceOf[js.Any])
     if (internalRefs != null) __obj.updateDynamic("internalRefs")(internalRefs.asInstanceOf[js.Any])
     if (onExpand != null) __obj.updateDynamic("onExpand")(js.Any.fromFunction2(onExpand))
@@ -138,7 +138,7 @@ object TableProps {
     if (rowClassName != null) __obj.updateDynamic("rowClassName")(rowClassName.asInstanceOf[js.Any])
     if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey.asInstanceOf[js.Any])
     if (scroll != null) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (summary != null) __obj.updateDynamic("summary")(js.Any.fromFunction1(summary))
     if (tableLayout != null) __obj.updateDynamic("tableLayout")(tableLayout.asInstanceOf[js.Any])

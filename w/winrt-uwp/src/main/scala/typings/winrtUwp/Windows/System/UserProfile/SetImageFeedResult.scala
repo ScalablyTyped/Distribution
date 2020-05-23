@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.System.UserProfile
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object SetImageFeedResult extends js.Object {
   /** The operation was canceled by the user. */
   @js.native
   sealed trait userCanceled extends SetImageFeedResult
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SetImageFeedResult with Double] = js.native
-  /* 1 */ @js.native
-  object changeDisabled extends TopLevel[changeDisabled with Double]
-  
-  /* 0 */ @js.native
-  object success extends TopLevel[success with Double]
-  
-  /* 2 */ @js.native
-  object userCanceled extends TopLevel[userCanceled with Double]
   
 }
 

@@ -20,16 +20,16 @@ object RebuildOptions {
   @scala.inline
   def apply(
     frameworkInfo: DesktopFrameworkInfo,
-    additionalArgs: js.Array[String] = null,
+    additionalArgs: js.UndefOr[Null | js.Array[String]] = js.undefined,
     arch: String = null,
     buildFromSource: js.UndefOr[Boolean] = js.undefined,
     platform: Platform = null,
     productionDeps: Lazy[js.Array[NodeModuleDirInfo]] = null
   ): RebuildOptions = {
     val __obj = js.Dynamic.literal(frameworkInfo = frameworkInfo.asInstanceOf[js.Any])
-    if (additionalArgs != null) __obj.updateDynamic("additionalArgs")(additionalArgs.asInstanceOf[js.Any])
+    if (!js.isUndefined(additionalArgs)) __obj.updateDynamic("additionalArgs")(additionalArgs.asInstanceOf[js.Any])
     if (arch != null) __obj.updateDynamic("arch")(arch.asInstanceOf[js.Any])
-    if (!js.isUndefined(buildFromSource)) __obj.updateDynamic("buildFromSource")(buildFromSource.asInstanceOf[js.Any])
+    if (!js.isUndefined(buildFromSource)) __obj.updateDynamic("buildFromSource")(buildFromSource.get.asInstanceOf[js.Any])
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
     if (productionDeps != null) __obj.updateDynamic("productionDeps")(productionDeps.asInstanceOf[js.Any])
     __obj.asInstanceOf[RebuildOptions]

@@ -5,22 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintHolePunchOptionDetails")
-@js.native
-class PrintHolePunchOptionDetails () extends IPrintItemListOptionDetails {
-  /* CompleteClass */
-  override var errorText: String = js.native
-  /* CompleteClass */
-  override var items: IVectorView[_] = js.native
-  /* CompleteClass */
-  override var optionId: String = js.native
-  /* CompleteClass */
-  override var optionType: PrintOptionType = js.native
-  /* CompleteClass */
-  override var state: PrintOptionStates = js.native
-  /* CompleteClass */
-  override var value: js.Any = js.native
-  /* CompleteClass */
-  override def trySetValue(value: js.Any): Boolean = js.native
+trait PrintHolePunchOptionDetails extends IPrintItemListOptionDetails
+
+object PrintHolePunchOptionDetails {
+  @scala.inline
+  def apply(
+    errorText: String,
+    items: IVectorView[_],
+    optionId: String,
+    optionType: PrintOptionType,
+    state: PrintOptionStates,
+    trySetValue: js.Any => Boolean,
+    value: js.Any
+  ): PrintHolePunchOptionDetails = {
+    val __obj = js.Dynamic.literal(errorText = errorText.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], optionId = optionId.asInstanceOf[js.Any], optionType = optionType.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], trySetValue = js.Any.fromFunction1(trySetValue), value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PrintHolePunchOptionDetails]
+  }
 }
 

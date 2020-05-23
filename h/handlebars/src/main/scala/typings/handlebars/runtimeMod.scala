@@ -5,7 +5,8 @@ import typings.handlebars.Handlebars.HelperDeclareSpec
 import typings.handlebars.Handlebars.HelperDelegate
 import typings.handlebars.Handlebars.ParseOptions
 import typings.handlebars.Handlebars.ResolvePartialOptions
-import typings.handlebars.Handlebars.Template_
+import typings.handlebars.Handlebars.Template
+import typings.handlebars.anon.TypeofHandlebars
 import typings.handlebars.hbs.AST.Node
 import typings.handlebars.hbs.AST.Program
 import scala.scalajs.js
@@ -20,12 +21,24 @@ object runtimeMod extends js.Object {
     extends typings.handlebars.Handlebars.Exception {
     def this(message: String) = this()
     def this(message: String, node: Node) = this()
+    /* CompleteClass */
+    override var description: String = js.native
+    /* CompleteClass */
+    override var fileName: String = js.native
+    /* CompleteClass */
+    override var message: String = js.native
+    /* CompleteClass */
+    override var name: String = js.native
+    /* CompleteClass */
+    override var number: Double = js.native
   }
   
   @js.native
   class SafeString protected ()
     extends typings.handlebars.Handlebars.SafeString {
     def this(str: String) = this()
+    /* CompleteClass */
+    override def toHTML(): String = js.native
   }
   
   @js.native
@@ -53,7 +66,7 @@ object runtimeMod extends js.Object {
   def registerDecorator(name: String, fn: js.Function): Unit = js.native
   def registerHelper(name: String, fn: HelperDelegate): Unit = js.native
   def registerHelper(name: HelperDeclareSpec): Unit = js.native
-  def registerPartial(name: String, fn: Template_[_]): Unit = js.native
+  def registerPartial(name: String, fn: Template[_]): Unit = js.native
   def registerPartial(spec: StringDictionary[HandlebarsTemplateDelegate[_]]): Unit = js.native
   def template[T](precompilation: TemplateSpecification): HandlebarsTemplateDelegate[T] = js.native
   def unregisterDecorator(name: String): Unit = js.native
@@ -78,8 +91,11 @@ object runtimeMod extends js.Object {
   
   @js.native
   object VM extends js.Object {
-    def resolvePartial[T](partial: js.UndefOr[scala.Nothing], context: js.Any, options: ResolvePartialOptions): HandlebarsTemplateDelegate[T] = js.native
-    def resolvePartial[T](partial: HandlebarsTemplateDelegate[T], context: js.Any, options: ResolvePartialOptions): HandlebarsTemplateDelegate[T] = js.native
+    def resolvePartial[T](
+      partial: js.UndefOr[HandlebarsTemplateDelegate[T]],
+      context: js.Any,
+      options: ResolvePartialOptions
+    ): HandlebarsTemplateDelegate[T] = js.native
   }
   
   @js.native

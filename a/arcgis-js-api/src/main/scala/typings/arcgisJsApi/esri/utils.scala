@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +27,14 @@ trait utils extends js.Object {
   def getDeviationValues(standardDeviation: Double, average: Double, count: Double): js.Array[Double]
 }
 
-@JSGlobal("__esri.utils")
-@js.native
-object utils extends TopLevel[utils]
+object utils {
+  @scala.inline
+  def apply(
+    formatDateLabel: Double => String,
+    getDeviationValues: (Double, Double, Double) => js.Array[Double]
+  ): utils = {
+    val __obj = js.Dynamic.literal(formatDateLabel = js.Any.fromFunction1(formatDateLabel), getDeviationValues = js.Any.fromFunction3(getDeviationValues))
+    __obj.asInstanceOf[utils]
+  }
+}
 

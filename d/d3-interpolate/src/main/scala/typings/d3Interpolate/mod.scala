@@ -1,6 +1,8 @@
 package typings.d3Interpolate
 
 import typings.d3Color.mod.ColorCommonInstance
+import typings.d3Interpolate.anon.ToString
+import typings.d3Interpolate.anon.ValueOf
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -42,11 +44,11 @@ object mod extends js.Object {
   def interpolate(a: js.Any): js.Function1[/* t */ Double, Null] = js.native
   def interpolate(a: js.Any, b: Boolean): js.Function1[/* t */ Double, Boolean] = js.native
   def interpolate(a: Double, b: Double): js.Function1[/* t */ Double, Double] = js.native
-  def interpolate(a: Double, b: AnonValueOf): js.Function1[/* t */ Double, Double] = js.native
+  def interpolate(a: Double, b: ValueOf): js.Function1[/* t */ Double, Double] = js.native
   def interpolate(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
-  def interpolate(a: AnonToString, b: String): js.Function1[/* t */ Double, String] = js.native
-  def interpolate(a: AnonValueOf, b: Double): js.Function1[/* t */ Double, Double] = js.native
-  def interpolate(a: AnonValueOf, b: AnonValueOf): js.Function1[/* t */ Double, Double] = js.native
+  def interpolate(a: ToString, b: String): js.Function1[/* t */ Double, String] = js.native
+  def interpolate(a: ValueOf, b: Double): js.Function1[/* t */ Double, Double] = js.native
+  def interpolate(a: ValueOf, b: ValueOf): js.Function1[/* t */ Double, Double] = js.native
   def interpolate(a: Date, b: Date): js.Function1[/* t */ Double, Date] = js.native
   def interpolate[U /* <: js.Object */](a: js.Any, b: U): js.Function1[/* t */ Double, U] = js.native
   def interpolate[U /* <: js.Array[_] */](a: js.Array[_], b: U): js.Function1[/* t */ Double, U] = js.native
@@ -77,20 +79,20 @@ object mod extends js.Object {
   def interpolateLab(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = js.native
   def interpolateLab(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
   def interpolateNumber(a: Double, b: Double): js.Function1[/* t */ Double, Double] = js.native
-  def interpolateNumber(a: Double, b: AnonValueOf): js.Function1[/* t */ Double, Double] = js.native
-  def interpolateNumber(a: AnonValueOf, b: Double): js.Function1[/* t */ Double, Double] = js.native
-  def interpolateNumber(a: AnonValueOf, b: AnonValueOf): js.Function1[/* t */ Double, Double] = js.native
+  def interpolateNumber(a: Double, b: ValueOf): js.Function1[/* t */ Double, Double] = js.native
+  def interpolateNumber(a: ValueOf, b: Double): js.Function1[/* t */ Double, Double] = js.native
+  def interpolateNumber(a: ValueOf, b: ValueOf): js.Function1[/* t */ Double, Double] = js.native
   def interpolateObject[U /* <: js.Object */](a: js.Any, b: U): js.Function1[/* t */ Double, U] = js.native
   def interpolateRgbBasis(colors: js.Array[String | ColorCommonInstance]): js.Function1[/* t */ Double, String] = js.native
   def interpolateRgbBasisClosed(colors: js.Array[String | ColorCommonInstance]): js.Function1[/* t */ Double, String] = js.native
   def interpolateRound(a: Double, b: Double): js.Function1[/* t */ Double, Double] = js.native
-  def interpolateRound(a: Double, b: AnonValueOf): js.Function1[/* t */ Double, Double] = js.native
-  def interpolateRound(a: AnonValueOf, b: Double): js.Function1[/* t */ Double, Double] = js.native
-  def interpolateRound(a: AnonValueOf, b: AnonValueOf): js.Function1[/* t */ Double, Double] = js.native
+  def interpolateRound(a: Double, b: ValueOf): js.Function1[/* t */ Double, Double] = js.native
+  def interpolateRound(a: ValueOf, b: Double): js.Function1[/* t */ Double, Double] = js.native
+  def interpolateRound(a: ValueOf, b: ValueOf): js.Function1[/* t */ Double, Double] = js.native
   def interpolateString(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
-  def interpolateString(a: String, b: AnonToString): js.Function1[/* t */ Double, String] = js.native
-  def interpolateString(a: AnonToString, b: String): js.Function1[/* t */ Double, String] = js.native
-  def interpolateString(a: AnonToString, b: AnonToString): js.Function1[/* t */ Double, String] = js.native
+  def interpolateString(a: String, b: ToString): js.Function1[/* t */ Double, String] = js.native
+  def interpolateString(a: ToString, b: String): js.Function1[/* t */ Double, String] = js.native
+  def interpolateString(a: ToString, b: ToString): js.Function1[/* t */ Double, String] = js.native
   def interpolateTransformCss(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
   def interpolateTransformSvg(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
   def interpolateZoom(a: ZoomView, b: ZoomView): ZoomInterpolator = js.native

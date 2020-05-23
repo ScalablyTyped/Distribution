@@ -48,13 +48,13 @@ object ExportInfo {
     exportStatus: ExportStatus,
     statusMessage: ExportStatusMessage,
     configurationsDownloadUrl: ConfigurationsDownloadUrl = null,
-    isTruncated: js.UndefOr[scala.Boolean] = js.undefined,
+    isTruncated: js.UndefOr[Boolean] = js.undefined,
     requestedEndTime: TimeStamp = null,
     requestedStartTime: TimeStamp = null
   ): ExportInfo = {
     val __obj = js.Dynamic.literal(exportId = exportId.asInstanceOf[js.Any], exportRequestTime = exportRequestTime.asInstanceOf[js.Any], exportStatus = exportStatus.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any])
     if (configurationsDownloadUrl != null) __obj.updateDynamic("configurationsDownloadUrl")(configurationsDownloadUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTruncated)) __obj.updateDynamic("isTruncated")(isTruncated.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTruncated)) __obj.updateDynamic("isTruncated")(isTruncated.get.asInstanceOf[js.Any])
     if (requestedEndTime != null) __obj.updateDynamic("requestedEndTime")(requestedEndTime.asInstanceOf[js.Any])
     if (requestedStartTime != null) __obj.updateDynamic("requestedStartTime")(requestedStartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportInfo]

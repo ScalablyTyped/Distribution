@@ -7,25 +7,5 @@ import scala.scalajs.js.annotation._
 /**
   * Lists values used to specify how a Range Filter dashboard item should be resized when being exported.
   */
-@JSGlobal("RangeFilterExportSizeMode")
-@js.native
-class RangeFilterExportSizeMode () extends js.Object
-
-/* static members */
-@JSGlobal("RangeFilterExportSizeMode")
-@js.native
-object RangeFilterExportSizeMode extends js.Object {
-  /**
-    * A Range Filter dashboard item is exported in a size identical to that shown on the dashboard.
-    */
-  val None: String = js.native
-  /**
-    * A Range Filter dashboard item is stretched or shrunk to fit the page to which it is exported.
-    */
-  val Stretch: String = js.native
-  /**
-    * A Range Filter dashboard item is resized proportionally to best fit the printed page.
-    */
-  val Zoom: String = js.native
-}
+trait RangeFilterExportSizeMode extends js.Object
 

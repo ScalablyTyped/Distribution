@@ -16,8 +16,8 @@ object ExecutionPlanOptions {
     displayEstimatedQueryPlan: js.UndefOr[Boolean] = js.undefined
   ): ExecutionPlanOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(displayActualQueryPlan)) __obj.updateDynamic("displayActualQueryPlan")(displayActualQueryPlan.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayEstimatedQueryPlan)) __obj.updateDynamic("displayEstimatedQueryPlan")(displayEstimatedQueryPlan.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayActualQueryPlan)) __obj.updateDynamic("displayActualQueryPlan")(displayActualQueryPlan.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayEstimatedQueryPlan)) __obj.updateDynamic("displayEstimatedQueryPlan")(displayEstimatedQueryPlan.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutionPlanOptions]
   }
 }

@@ -11,70 +11,70 @@ import scala.scalajs.js.annotation._
   */
 trait ForwardGeocodeResponse extends ErrorResponse {
   /**
-  	 * Estimated accuracy of the geocoding, in meters.
-  	 */
+    * Estimated accuracy of the geocoding, in meters.
+    */
   var accuracy: js.UndefOr[Double] = js.undefined
   /**
-  	 * Full address.
-  	 */
+    * Full address.
+    */
   var address: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * City name.
-  	 */
+    * City name.
+    */
   var city: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Country name.
-  	 */
+    * Country name.
+    */
   var country: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Country code.
-  	 */
+    * Country code.
+    */
   var countryCode: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Country code. Same as `countryCode`.
-  	 */
+    * Country code. Same as `countryCode`.
+    */
   var country_code: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Display address. Identical to `address`.
-  	 */
+    * Display address. Identical to `address`.
+    */
   var displayAddress: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Latitude of the geocoded address.
-  	 */
+    * Latitude of the geocoded address.
+    */
   var latitude: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Longitude of the geocoded address.
-  	 */
+    * Longitude of the geocoded address.
+    */
   var longitude: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Postal code.
-  	 */
+    * Postal code.
+    */
   var postalCode: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * First line of region.
-  	 */
+    * First line of region.
+    */
   var region1: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Not used.
-  	 */
+    * Not used.
+    */
   var region2: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Street name, without street address.
-  	 */
+    * Street name, without street address.
+    */
   var street: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Street name.
-  	 */
+    * Street name.
+    */
   var street1: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object ForwardGeocodeResponse {
   @scala.inline
   def apply(
-    accuracy: Int | Double = null,
+    accuracy: js.UndefOr[Double] = js.undefined,
     address: java.lang.String = null,
     city: java.lang.String = null,
-    code: Int | Double = null,
+    code: js.UndefOr[Double] = js.undefined,
     country: java.lang.String = null,
     countryCode: java.lang.String = null,
     country_code: java.lang.String = null,
@@ -90,10 +90,10 @@ object ForwardGeocodeResponse {
     success: js.UndefOr[Boolean] = js.undefined
   ): ForwardGeocodeResponse = {
     val __obj = js.Dynamic.literal()
-    if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy.asInstanceOf[js.Any])
+    if (!js.isUndefined(accuracy)) __obj.updateDynamic("accuracy")(accuracy.get.asInstanceOf[js.Any])
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (!js.isUndefined(code)) __obj.updateDynamic("code")(code.get.asInstanceOf[js.Any])
     if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
     if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode.asInstanceOf[js.Any])
     if (country_code != null) __obj.updateDynamic("country_code")(country_code.asInstanceOf[js.Any])
@@ -106,7 +106,7 @@ object ForwardGeocodeResponse {
     if (region2 != null) __obj.updateDynamic("region2")(region2.asInstanceOf[js.Any])
     if (street != null) __obj.updateDynamic("street")(street.asInstanceOf[js.Any])
     if (street1 != null) __obj.updateDynamic("street1")(street1.asInstanceOf[js.Any])
-    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForwardGeocodeResponse]
   }
 }

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Sms
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object SmsGeographicalScope extends js.Object {
   /** Scope is the entire Public Land Mobile Network (PLMN). */
   @js.native
   sealed trait plmn extends SmsGeographicalScope
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SmsGeographicalScope with Double] = js.native
-  /* 4 */ @js.native
-  object cell extends TopLevel[cell with Double]
-  
-  /* 1 */ @js.native
-  object cellWithImmediateDisplay extends TopLevel[cellWithImmediateDisplay with Double]
-  
-  /* 2 */ @js.native
-  object locationArea extends TopLevel[locationArea with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 3 */ @js.native
-  object plmn extends TopLevel[plmn with Double]
   
 }
 

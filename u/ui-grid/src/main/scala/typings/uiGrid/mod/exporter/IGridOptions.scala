@@ -218,7 +218,7 @@ object IGridOptions {
     exporterHeaderFilterUseName: js.UndefOr[Boolean] = js.undefined,
     exporterMenuCsv: js.UndefOr[Boolean] = js.undefined,
     exporterMenuExcel: js.UndefOr[Boolean] = js.undefined,
-    exporterMenuItemOrder: Int | Double = null,
+    exporterMenuItemOrder: js.UndefOr[Double] = js.undefined,
     exporterMenuLabel: String = null,
     exporterMenuPdf: js.UndefOr[Boolean] = js.undefined,
     exporterOlderExcelCompatibility: js.UndefOr[Boolean] = js.undefined,
@@ -227,7 +227,7 @@ object IGridOptions {
     exporterPdfFilename: String = null,
     exporterPdfFooter: String | js.Any | (js.Function2[/* currentPage */ Double, /* pageCount */ Double, String]) = null,
     exporterPdfHeader: String | js.Any | (js.Function2[/* currentPage */ Double, /* pageCount */ Double, String]) = null,
-    exporterPdfMaxGridWidth: Int | Double = null,
+    exporterPdfMaxGridWidth: js.UndefOr[Double] = js.undefined,
     exporterPdfOrientation: String = null,
     exporterPdfPageSize: String = null,
     exporterPdfTableHeaderStyle: js.Any = null,
@@ -243,26 +243,26 @@ object IGridOptions {
     if (exporterCsvFilename != null) __obj.updateDynamic("exporterCsvFilename")(exporterCsvFilename.asInstanceOf[js.Any])
     if (exporterFieldCallback != null) __obj.updateDynamic("exporterFieldCallback")(js.Any.fromFunction4(exporterFieldCallback))
     if (exporterHeaderFilter != null) __obj.updateDynamic("exporterHeaderFilter")(js.Any.fromFunction1(exporterHeaderFilter))
-    if (!js.isUndefined(exporterHeaderFilterUseName)) __obj.updateDynamic("exporterHeaderFilterUseName")(exporterHeaderFilterUseName.asInstanceOf[js.Any])
-    if (!js.isUndefined(exporterMenuCsv)) __obj.updateDynamic("exporterMenuCsv")(exporterMenuCsv.asInstanceOf[js.Any])
-    if (!js.isUndefined(exporterMenuExcel)) __obj.updateDynamic("exporterMenuExcel")(exporterMenuExcel.asInstanceOf[js.Any])
-    if (exporterMenuItemOrder != null) __obj.updateDynamic("exporterMenuItemOrder")(exporterMenuItemOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(exporterHeaderFilterUseName)) __obj.updateDynamic("exporterHeaderFilterUseName")(exporterHeaderFilterUseName.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exporterMenuCsv)) __obj.updateDynamic("exporterMenuCsv")(exporterMenuCsv.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exporterMenuExcel)) __obj.updateDynamic("exporterMenuExcel")(exporterMenuExcel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exporterMenuItemOrder)) __obj.updateDynamic("exporterMenuItemOrder")(exporterMenuItemOrder.get.asInstanceOf[js.Any])
     if (exporterMenuLabel != null) __obj.updateDynamic("exporterMenuLabel")(exporterMenuLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(exporterMenuPdf)) __obj.updateDynamic("exporterMenuPdf")(exporterMenuPdf.asInstanceOf[js.Any])
-    if (!js.isUndefined(exporterOlderExcelCompatibility)) __obj.updateDynamic("exporterOlderExcelCompatibility")(exporterOlderExcelCompatibility.asInstanceOf[js.Any])
+    if (!js.isUndefined(exporterMenuPdf)) __obj.updateDynamic("exporterMenuPdf")(exporterMenuPdf.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exporterOlderExcelCompatibility)) __obj.updateDynamic("exporterOlderExcelCompatibility")(exporterOlderExcelCompatibility.get.asInstanceOf[js.Any])
     if (exporterPdfCustomFormatter != null) __obj.updateDynamic("exporterPdfCustomFormatter")(js.Any.fromFunction1(exporterPdfCustomFormatter))
     if (exporterPdfDefaultStyle != null) __obj.updateDynamic("exporterPdfDefaultStyle")(exporterPdfDefaultStyle.asInstanceOf[js.Any])
     if (exporterPdfFilename != null) __obj.updateDynamic("exporterPdfFilename")(exporterPdfFilename.asInstanceOf[js.Any])
     if (exporterPdfFooter != null) __obj.updateDynamic("exporterPdfFooter")(exporterPdfFooter.asInstanceOf[js.Any])
     if (exporterPdfHeader != null) __obj.updateDynamic("exporterPdfHeader")(exporterPdfHeader.asInstanceOf[js.Any])
-    if (exporterPdfMaxGridWidth != null) __obj.updateDynamic("exporterPdfMaxGridWidth")(exporterPdfMaxGridWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(exporterPdfMaxGridWidth)) __obj.updateDynamic("exporterPdfMaxGridWidth")(exporterPdfMaxGridWidth.get.asInstanceOf[js.Any])
     if (exporterPdfOrientation != null) __obj.updateDynamic("exporterPdfOrientation")(exporterPdfOrientation.asInstanceOf[js.Any])
     if (exporterPdfPageSize != null) __obj.updateDynamic("exporterPdfPageSize")(exporterPdfPageSize.asInstanceOf[js.Any])
     if (exporterPdfTableHeaderStyle != null) __obj.updateDynamic("exporterPdfTableHeaderStyle")(exporterPdfTableHeaderStyle.asInstanceOf[js.Any])
     if (exporterPdfTableLayout != null) __obj.updateDynamic("exporterPdfTableLayout")(exporterPdfTableLayout.asInstanceOf[js.Any])
     if (exporterPdfTableStyle != null) __obj.updateDynamic("exporterPdfTableStyle")(exporterPdfTableStyle.asInstanceOf[js.Any])
     if (exporterSuppressColumns != null) __obj.updateDynamic("exporterSuppressColumns")(exporterSuppressColumns.asInstanceOf[js.Any])
-    if (!js.isUndefined(exporterSuppressMenu)) __obj.updateDynamic("exporterSuppressMenu")(exporterSuppressMenu.asInstanceOf[js.Any])
+    if (!js.isUndefined(exporterSuppressMenu)) __obj.updateDynamic("exporterSuppressMenu")(exporterSuppressMenu.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridOptions[TEntity]]
   }
 }

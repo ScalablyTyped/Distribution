@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.libStyleMod
 
-import typings.antDesignReactNative.AnonThemeStyles
+import typings.antDesignReactNative.anon.ThemeStyles
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,6 +17,6 @@ class WithTheme[T, S] ()
 @JSImport("@ant-design/react-native/lib/style", "WithTheme")
 @js.native
 object WithTheme extends js.Object {
-  var defaultProps: AnonThemeStyles = js.native
+  var defaultProps: ThemeStyles = js.native
 }
 

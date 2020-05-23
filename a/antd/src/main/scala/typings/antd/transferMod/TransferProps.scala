@@ -1,12 +1,12 @@
 package typings.antd.transferMod
 
-import typings.antd.PartialTransferLocale
+import typings.antd.anon.PartialTransferLocale
 import typings.antd.renderListBodyMod.TransferListBodyProps
 import typings.antd.transferListMod.TransferListProps
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLUListElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,7 +32,7 @@ trait TransferProps extends js.Object {
   var onScroll: js.UndefOr[
     js.Function2[
       /* direction */ TransferDirection, 
-      /* e */ SyntheticEvent[HTMLUListElement, Event_], 
+      /* e */ SyntheticEvent[HTMLUListElement, Event], 
       Unit
     ]
   ] = js.undefined
@@ -70,7 +70,7 @@ object TransferProps {
     footer: /* props */ TransferListProps => ReactNode = null,
     locale: PartialTransferLocale = null,
     onChange: (/* targetKeys */ js.Array[String], /* direction */ String, /* moveKeys */ js.Array[String]) => Unit = null,
-    onScroll: (/* direction */ TransferDirection, /* e */ SyntheticEvent[HTMLUListElement, Event_]) => Unit = null,
+    onScroll: (/* direction */ TransferDirection, /* e */ SyntheticEvent[HTMLUListElement, Event]) => Unit = null,
     onSearch: (/* direction */ TransferDirection, /* value */ String) => Unit = null,
     onSelectChange: (/* sourceSelectedKeys */ js.Array[String], /* targetSelectedKeys */ js.Array[String]) => Unit = null,
     operationStyle: CSSProperties = null,
@@ -89,7 +89,7 @@ object TransferProps {
     val __obj = js.Dynamic.literal(dataSource = dataSource.asInstanceOf[js.Any], listStyle = listStyle.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (filterOption != null) __obj.updateDynamic("filterOption")(js.Any.fromFunction2(filterOption))
     if (footer != null) __obj.updateDynamic("footer")(js.Any.fromFunction1(footer))
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
@@ -104,8 +104,8 @@ object TransferProps {
     if (rowKey != null) __obj.updateDynamic("rowKey")(js.Any.fromFunction1(rowKey))
     if (selectAllLabels != null) __obj.updateDynamic("selectAllLabels")(selectAllLabels.asInstanceOf[js.Any])
     if (selectedKeys != null) __obj.updateDynamic("selectedKeys")(selectedKeys.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSearch)) __obj.updateDynamic("showSearch")(showSearch.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSelectAll)) __obj.updateDynamic("showSelectAll")(showSelectAll.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSearch)) __obj.updateDynamic("showSearch")(showSearch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSelectAll)) __obj.updateDynamic("showSelectAll")(showSelectAll.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (targetKeys != null) __obj.updateDynamic("targetKeys")(targetKeys.asInstanceOf[js.Any])
     if (titles != null) __obj.updateDynamic("titles")(titles.asInstanceOf[js.Any])

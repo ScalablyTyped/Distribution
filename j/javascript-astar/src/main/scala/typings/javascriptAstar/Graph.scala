@@ -4,11 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Graph")
-@js.native
-class Graph protected () extends js.Object {
-  def this(grid: js.Array[js.Array[Double]]) = this()
-  def this(grid: js.Array[js.Array[Double]], options: AnonDiagonal) = this()
-  var grid: js.Array[js.Array[GridNode]] = js.native
+trait Graph extends js.Object {
+  var grid: js.Array[js.Array[GridNode]]
+}
+
+object Graph {
+  @scala.inline
+  def apply(grid: js.Array[js.Array[GridNode]]): Graph = {
+    val __obj = js.Dynamic.literal(grid = grid.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Graph]
+  }
 }
 

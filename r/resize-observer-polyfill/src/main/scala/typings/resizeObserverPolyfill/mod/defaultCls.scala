@@ -1,6 +1,6 @@
 package typings.resizeObserverPolyfill.mod
 
-import typings.resizeObserverPolyfill.mod._Global_.ResizeObserverCallback
+import typings.resizeObserverPolyfill.mod.global.ResizeObserverCallback
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

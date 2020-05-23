@@ -24,7 +24,7 @@ object MUIDataTableResize {
     val __obj = js.Dynamic.literal()
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowSelected)) __obj.updateDynamic("rowSelected")(rowSelected.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowSelected)) __obj.updateDynamic("rowSelected")(rowSelected.get.asInstanceOf[js.Any])
     if (setResizeable != null) __obj.updateDynamic("setResizeable")(js.Any.fromFunction1(setResizeable))
     if (updateDividers != null) __obj.updateDynamic("updateDividers")(js.Any.fromFunction1(updateDividers))
     __obj.asInstanceOf[MUIDataTableResize]

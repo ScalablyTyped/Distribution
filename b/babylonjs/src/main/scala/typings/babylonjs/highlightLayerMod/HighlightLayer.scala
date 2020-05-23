@@ -1,6 +1,6 @@
 package typings.babylonjs.highlightLayerMod
 
-import typings.babylonjs.PartialIHighlightLayerOpt
+import typings.babylonjs.anon.PartialIHighlightLayerOpt
 import typings.babylonjs.effectLayerMod.EffectLayer
 import typings.babylonjs.mathColorMod.Color3
 import typings.babylonjs.mathColorMod.Color4

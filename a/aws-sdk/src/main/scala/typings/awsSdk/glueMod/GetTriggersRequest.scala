@@ -24,12 +24,12 @@ object GetTriggersRequest {
   @scala.inline
   def apply(
     DependentJobName: NameString = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[PageSize] = js.undefined,
     NextToken: GenericString = null
   ): GetTriggersRequest = {
     val __obj = js.Dynamic.literal()
     if (DependentJobName != null) __obj.updateDynamic("DependentJobName")(DependentJobName.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTriggersRequest]
   }

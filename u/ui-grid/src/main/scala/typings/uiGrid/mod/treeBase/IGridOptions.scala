@@ -63,17 +63,17 @@ object IGridOptions {
     showTreeExpandNoChildren: js.UndefOr[Boolean] = js.undefined,
     showTreeRowHeader: js.UndefOr[Boolean] = js.undefined,
     treeCustomAggregations: StringDictionary[IGridTreeBaseCustomAggregation[TEntity]] = null,
-    treeIndent: Int | Double = null,
+    treeIndent: js.UndefOr[Double] = js.undefined,
     treeRowHeaderAlwaysVisible: js.UndefOr[Boolean] = js.undefined,
-    treeRowHeaderBaseWidth: Int | Double = null
+    treeRowHeaderBaseWidth: js.UndefOr[Double] = js.undefined
   ): IGridOptions[TEntity] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(showTreeExpandNoChildren)) __obj.updateDynamic("showTreeExpandNoChildren")(showTreeExpandNoChildren.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTreeRowHeader)) __obj.updateDynamic("showTreeRowHeader")(showTreeRowHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTreeExpandNoChildren)) __obj.updateDynamic("showTreeExpandNoChildren")(showTreeExpandNoChildren.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTreeRowHeader)) __obj.updateDynamic("showTreeRowHeader")(showTreeRowHeader.get.asInstanceOf[js.Any])
     if (treeCustomAggregations != null) __obj.updateDynamic("treeCustomAggregations")(treeCustomAggregations.asInstanceOf[js.Any])
-    if (treeIndent != null) __obj.updateDynamic("treeIndent")(treeIndent.asInstanceOf[js.Any])
-    if (!js.isUndefined(treeRowHeaderAlwaysVisible)) __obj.updateDynamic("treeRowHeaderAlwaysVisible")(treeRowHeaderAlwaysVisible.asInstanceOf[js.Any])
-    if (treeRowHeaderBaseWidth != null) __obj.updateDynamic("treeRowHeaderBaseWidth")(treeRowHeaderBaseWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(treeIndent)) __obj.updateDynamic("treeIndent")(treeIndent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(treeRowHeaderAlwaysVisible)) __obj.updateDynamic("treeRowHeaderAlwaysVisible")(treeRowHeaderAlwaysVisible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(treeRowHeaderBaseWidth)) __obj.updateDynamic("treeRowHeaderBaseWidth")(treeRowHeaderBaseWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridOptions[TEntity]]
   }
 }

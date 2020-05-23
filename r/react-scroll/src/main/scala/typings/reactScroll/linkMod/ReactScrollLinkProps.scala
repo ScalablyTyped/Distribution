@@ -29,12 +29,12 @@ object ReactScrollLinkProps {
     absolute: js.UndefOr[Boolean] = js.undefined,
     activeClass: String = null,
     containerId: String = null,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     duration: Double | String = null,
     hashSpy: js.UndefOr[Boolean] = js.undefined,
     ignoreCancelEvents: js.UndefOr[Boolean] = js.undefined,
     isDynamic: js.UndefOr[Boolean] = js.undefined,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     onClick: () => Unit = null,
     onSetActive: /* to */ String => Unit = null,
     onSetInactive: () => Unit = null,
@@ -42,20 +42,20 @@ object ReactScrollLinkProps {
     spy: js.UndefOr[Boolean] = js.undefined
   ): ReactScrollLinkProps = {
     val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
-    if (!js.isUndefined(absolute)) __obj.updateDynamic("absolute")(absolute.asInstanceOf[js.Any])
+    if (!js.isUndefined(absolute)) __obj.updateDynamic("absolute")(absolute.get.asInstanceOf[js.Any])
     if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass.asInstanceOf[js.Any])
     if (containerId != null) __obj.updateDynamic("containerId")(containerId.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(hashSpy)) __obj.updateDynamic("hashSpy")(hashSpy.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreCancelEvents)) __obj.updateDynamic("ignoreCancelEvents")(ignoreCancelEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDynamic)) __obj.updateDynamic("isDynamic")(isDynamic.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(hashSpy)) __obj.updateDynamic("hashSpy")(hashSpy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCancelEvents)) __obj.updateDynamic("ignoreCancelEvents")(ignoreCancelEvents.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDynamic)) __obj.updateDynamic("isDynamic")(isDynamic.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction0(onClick))
     if (onSetActive != null) __obj.updateDynamic("onSetActive")(js.Any.fromFunction1(onSetActive))
     if (onSetInactive != null) __obj.updateDynamic("onSetInactive")(js.Any.fromFunction0(onSetInactive))
     if (smooth != null) __obj.updateDynamic("smooth")(smooth.asInstanceOf[js.Any])
-    if (!js.isUndefined(spy)) __obj.updateDynamic("spy")(spy.asInstanceOf[js.Any])
+    if (!js.isUndefined(spy)) __obj.updateDynamic("spy")(spy.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactScrollLinkProps]
   }
 }

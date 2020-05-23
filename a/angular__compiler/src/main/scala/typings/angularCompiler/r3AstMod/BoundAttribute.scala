@@ -55,26 +55,6 @@ class BoundAttribute protected () extends Node {
     value: AST,
     unit: String,
     sourceSpan: ParseSourceSpan,
-    valueSpan: js.UndefOr[scala.Nothing],
-    i18n: Message
-  ) = this()
-  def this(
-    name: String,
-    `type`: BindingType,
-    securityContext: SecurityContext,
-    value: AST,
-    unit: String,
-    sourceSpan: ParseSourceSpan,
-    valueSpan: js.UndefOr[scala.Nothing],
-    i18n: typings.angularCompiler.i18nAstMod.Node
-  ) = this()
-  def this(
-    name: String,
-    `type`: BindingType,
-    securityContext: SecurityContext,
-    value: AST,
-    unit: String,
-    sourceSpan: ParseSourceSpan,
     valueSpan: ParseSourceSpan,
     i18n: Message
   ) = this()
@@ -86,26 +66,6 @@ class BoundAttribute protected () extends Node {
     unit: String,
     sourceSpan: ParseSourceSpan,
     valueSpan: ParseSourceSpan,
-    i18n: typings.angularCompiler.i18nAstMod.Node
-  ) = this()
-  def this(
-    name: String,
-    `type`: BindingType,
-    securityContext: SecurityContext,
-    value: AST,
-    unit: Null,
-    sourceSpan: ParseSourceSpan,
-    valueSpan: js.UndefOr[scala.Nothing],
-    i18n: Message
-  ) = this()
-  def this(
-    name: String,
-    `type`: BindingType,
-    securityContext: SecurityContext,
-    value: AST,
-    unit: Null,
-    sourceSpan: ParseSourceSpan,
-    valueSpan: js.UndefOr[scala.Nothing],
     i18n: typings.angularCompiler.i18nAstMod.Node
   ) = this()
   def this(

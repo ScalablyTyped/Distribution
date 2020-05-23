@@ -1,6 +1,6 @@
 package typings.reactMdl.mod
 
-import typings.react.AnonHtml
+import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
@@ -20,7 +20,7 @@ import typings.react.mod.TouchEvent
 import typings.react.mod.TransitionEvent
 import typings.react.mod.UIEvent
 import typings.react.mod.WheelEvent
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -64,16 +64,16 @@ object SliderProps {
     children: ReactNode = null,
     classID: String = null,
     className: String = null,
-    colSpan: Int | Double = null,
+    colSpan: js.UndefOr[Double] = js.undefined,
     color: String = null,
-    cols: Int | Double = null,
+    cols: js.UndefOr[Double] = js.undefined,
     content: String = null,
     contentEditable: js.UndefOr[Boolean] = js.undefined,
     contextMenu: String = null,
     controls: js.UndefOr[Boolean] = js.undefined,
     coords: String = null,
     crossOrigin: String = null,
-    dangerouslySetInnerHTML: AnonHtml = null,
+    dangerouslySetInnerHTML: Html = null,
     datatype: String = null,
     dateTime: String = null,
     default: js.UndefOr[Boolean] = js.undefined,
@@ -95,7 +95,7 @@ object SliderProps {
     headers: String = null,
     height: Double | String = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
-    high: Int | Double = null,
+    high: js.UndefOr[Double] = js.undefined,
     href: String = null,
     hrefLang: String = null,
     htmlFor: String = null,
@@ -116,28 +116,28 @@ object SliderProps {
     lang: String = null,
     list: String = null,
     loop: js.UndefOr[Boolean] = js.undefined,
-    low: Int | Double = null,
+    low: js.UndefOr[Double] = js.undefined,
     manifest: String = null,
-    marginHeight: Int | Double = null,
-    marginWidth: Int | Double = null,
-    maxLength: Int | Double = null,
+    marginHeight: js.UndefOr[Double] = js.undefined,
+    marginWidth: js.UndefOr[Double] = js.undefined,
+    maxLength: js.UndefOr[Double] = js.undefined,
     media: String = null,
     mediaGroup: String = null,
     method: String = null,
-    minLength: Int | Double = null,
+    minLength: js.UndefOr[Double] = js.undefined,
     multiple: js.UndefOr[Boolean] = js.undefined,
     muted: js.UndefOr[Boolean] = js.undefined,
     noValidate: js.UndefOr[Boolean] = js.undefined,
     nonce: String = null,
-    onAbort: SyntheticEvent[Slider, Event_] => Unit = null,
+    onAbort: SyntheticEvent[Slider, Event] => Unit = null,
     onAnimationEnd: AnimationEvent[Slider] => Unit = null,
     onAnimationIteration: AnimationEvent[Slider] => Unit = null,
     onAnimationStart: AnimationEvent[Slider] => Unit = null,
     onAuxClick: MouseEvent[Slider, NativeMouseEvent] => Unit = null,
     onBeforeInput: FormEvent[Slider] => Unit = null,
     onBlur: FocusEvent[Slider] => Unit = null,
-    onCanPlay: SyntheticEvent[Slider, Event_] => Unit = null,
-    onCanPlayThrough: SyntheticEvent[Slider, Event_] => Unit = null,
+    onCanPlay: SyntheticEvent[Slider, Event] => Unit = null,
+    onCanPlayThrough: SyntheticEvent[Slider, Event] => Unit = null,
     onChange: FormEvent[Slider] => Unit = null,
     onClick: MouseEvent[Slider, NativeMouseEvent] => Unit = null,
     onCompositionEnd: CompositionEvent[Slider] => Unit = null,
@@ -155,21 +155,21 @@ object SliderProps {
     onDragOver: DragEvent[Slider] => Unit = null,
     onDragStart: DragEvent[Slider] => Unit = null,
     onDrop: DragEvent[Slider] => Unit = null,
-    onDurationChange: SyntheticEvent[Slider, Event_] => Unit = null,
-    onEmptied: SyntheticEvent[Slider, Event_] => Unit = null,
-    onEncrypted: SyntheticEvent[Slider, Event_] => Unit = null,
-    onEnded: SyntheticEvent[Slider, Event_] => Unit = null,
-    onError: SyntheticEvent[Slider, Event_] => Unit = null,
+    onDurationChange: SyntheticEvent[Slider, Event] => Unit = null,
+    onEmptied: SyntheticEvent[Slider, Event] => Unit = null,
+    onEncrypted: SyntheticEvent[Slider, Event] => Unit = null,
+    onEnded: SyntheticEvent[Slider, Event] => Unit = null,
+    onError: SyntheticEvent[Slider, Event] => Unit = null,
     onFocus: FocusEvent[Slider] => Unit = null,
     onInput: FormEvent[Slider] => Unit = null,
     onInvalid: FormEvent[Slider] => Unit = null,
     onKeyDown: KeyboardEvent[Slider] => Unit = null,
     onKeyPress: KeyboardEvent[Slider] => Unit = null,
     onKeyUp: KeyboardEvent[Slider] => Unit = null,
-    onLoad: SyntheticEvent[Slider, Event_] => Unit = null,
-    onLoadStart: SyntheticEvent[Slider, Event_] => Unit = null,
-    onLoadedData: SyntheticEvent[Slider, Event_] => Unit = null,
-    onLoadedMetadata: SyntheticEvent[Slider, Event_] => Unit = null,
+    onLoad: SyntheticEvent[Slider, Event] => Unit = null,
+    onLoadStart: SyntheticEvent[Slider, Event] => Unit = null,
+    onLoadedData: SyntheticEvent[Slider, Event] => Unit = null,
+    onLoadedMetadata: SyntheticEvent[Slider, Event] => Unit = null,
     onMouseDown: MouseEvent[Slider, NativeMouseEvent] => Unit = null,
     onMouseEnter: MouseEvent[Slider, NativeMouseEvent] => Unit = null,
     onMouseLeave: MouseEvent[Slider, NativeMouseEvent] => Unit = null,
@@ -178,9 +178,9 @@ object SliderProps {
     onMouseOver: MouseEvent[Slider, NativeMouseEvent] => Unit = null,
     onMouseUp: MouseEvent[Slider, NativeMouseEvent] => Unit = null,
     onPaste: ClipboardEvent[Slider] => Unit = null,
-    onPause: SyntheticEvent[Slider, Event_] => Unit = null,
-    onPlay: SyntheticEvent[Slider, Event_] => Unit = null,
-    onPlaying: SyntheticEvent[Slider, Event_] => Unit = null,
+    onPause: SyntheticEvent[Slider, Event] => Unit = null,
+    onPlay: SyntheticEvent[Slider, Event] => Unit = null,
+    onPlaying: SyntheticEvent[Slider, Event] => Unit = null,
     onPointerCancel: PointerEvent[Slider] => Unit = null,
     onPointerDown: PointerEvent[Slider] => Unit = null,
     onPointerEnter: PointerEvent[Slider] => Unit = null,
@@ -189,27 +189,27 @@ object SliderProps {
     onPointerOut: PointerEvent[Slider] => Unit = null,
     onPointerOver: PointerEvent[Slider] => Unit = null,
     onPointerUp: PointerEvent[Slider] => Unit = null,
-    onProgress: SyntheticEvent[Slider, Event_] => Unit = null,
-    onRateChange: SyntheticEvent[Slider, Event_] => Unit = null,
+    onProgress: SyntheticEvent[Slider, Event] => Unit = null,
+    onRateChange: SyntheticEvent[Slider, Event] => Unit = null,
     onReset: FormEvent[Slider] => Unit = null,
     onScroll: UIEvent[Slider, NativeUIEvent] => Unit = null,
-    onSeeked: SyntheticEvent[Slider, Event_] => Unit = null,
-    onSeeking: SyntheticEvent[Slider, Event_] => Unit = null,
-    onSelect: SyntheticEvent[Slider, Event_] => Unit = null,
-    onStalled: SyntheticEvent[Slider, Event_] => Unit = null,
+    onSeeked: SyntheticEvent[Slider, Event] => Unit = null,
+    onSeeking: SyntheticEvent[Slider, Event] => Unit = null,
+    onSelect: SyntheticEvent[Slider, Event] => Unit = null,
+    onStalled: SyntheticEvent[Slider, Event] => Unit = null,
     onSubmit: FormEvent[Slider] => Unit = null,
-    onSuspend: SyntheticEvent[Slider, Event_] => Unit = null,
-    onTimeUpdate: SyntheticEvent[Slider, Event_] => Unit = null,
+    onSuspend: SyntheticEvent[Slider, Event] => Unit = null,
+    onTimeUpdate: SyntheticEvent[Slider, Event] => Unit = null,
     onTouchCancel: TouchEvent[Slider] => Unit = null,
     onTouchEnd: TouchEvent[Slider] => Unit = null,
     onTouchMove: TouchEvent[Slider] => Unit = null,
     onTouchStart: TouchEvent[Slider] => Unit = null,
     onTransitionEnd: TransitionEvent[Slider] => Unit = null,
-    onVolumeChange: SyntheticEvent[Slider, Event_] => Unit = null,
-    onWaiting: SyntheticEvent[Slider, Event_] => Unit = null,
+    onVolumeChange: SyntheticEvent[Slider, Event] => Unit = null,
+    onWaiting: SyntheticEvent[Slider, Event] => Unit = null,
     onWheel: WheelEvent[Slider] => Unit = null,
     open: js.UndefOr[Boolean] = js.undefined,
-    optimum: Int | Double = null,
+    optimum: js.UndefOr[Double] = js.undefined,
     pattern: String = null,
     placeholder: String = null,
     poster: String = null,
@@ -221,10 +221,10 @@ object SliderProps {
     rel: String = null,
     required: js.UndefOr[Boolean] = js.undefined,
     resource: String = null,
-    results: Int | Double = null,
+    results: js.UndefOr[Double] = js.undefined,
     reversed: js.UndefOr[Boolean] = js.undefined,
     role: String = null,
-    rowSpan: Int | Double = null,
+    rowSpan: js.UndefOr[Double] = js.undefined,
     sandbox: String = null,
     scope: String = null,
     scoped: js.UndefOr[Boolean] = js.undefined,
@@ -234,23 +234,23 @@ object SliderProps {
     selected: js.UndefOr[Boolean] = js.undefined,
     shape: String = null,
     sizes: String = null,
-    span: Int | Double = null,
+    span: js.UndefOr[Double] = js.undefined,
     spellCheck: js.UndefOr[Boolean] = js.undefined,
     src: String = null,
     srcDoc: String = null,
     srcLang: String = null,
     srcSet: String = null,
-    start: Int | Double = null,
+    start: js.UndefOr[Double] = js.undefined,
     step: Double | String = null,
     style: CSSProperties = null,
     summary: String = null,
-    tabIndex: Int | Double = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
     target: String = null,
     `type`: String = null,
     typeof: String = null,
     unselectable: js.UndefOr[Boolean] = js.undefined,
     useMap: String = null,
-    value: Int | Double = null,
+    value: js.UndefOr[Double] = js.undefined,
     vocab: String = null,
     width: Double | String = null,
     wmode: String = null,
@@ -262,57 +262,57 @@ object SliderProps {
     if (acceptCharset != null) __obj.updateDynamic("acceptCharset")(acceptCharset.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFullScreen)) __obj.updateDynamic("allowFullScreen")(allowFullScreen.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowTransparency)) __obj.updateDynamic("allowTransparency")(allowTransparency.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFullScreen)) __obj.updateDynamic("allowFullScreen")(allowFullScreen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowTransparency)) __obj.updateDynamic("allowTransparency")(allowTransparency.get.asInstanceOf[js.Any])
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
     if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
     if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
     if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay.get.asInstanceOf[js.Any])
     if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
-    if (!js.isUndefined(capture)) __obj.updateDynamic("capture")(capture.asInstanceOf[js.Any])
+    if (!js.isUndefined(capture)) __obj.updateDynamic("capture")(capture.get.asInstanceOf[js.Any])
     if (cellPadding != null) __obj.updateDynamic("cellPadding")(cellPadding.asInstanceOf[js.Any])
     if (cellSpacing != null) __obj.updateDynamic("cellSpacing")(cellSpacing.asInstanceOf[js.Any])
     if (challenge != null) __obj.updateDynamic("challenge")(challenge.asInstanceOf[js.Any])
     if (charSet != null) __obj.updateDynamic("charSet")(charSet.asInstanceOf[js.Any])
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (classID != null) __obj.updateDynamic("classID")(classID.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
+    if (!js.isUndefined(colSpan)) __obj.updateDynamic("colSpan")(colSpan.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
+    if (!js.isUndefined(cols)) __obj.updateDynamic("cols")(cols.get.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.get.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
+    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.get.asInstanceOf[js.Any])
     if (coords != null) __obj.updateDynamic("coords")(coords.asInstanceOf[js.Any])
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
     if (dateTime != null) __obj.updateDynamic("dateTime")(dateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.get.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.asInstanceOf[js.Any])
+    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.get.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (download != null) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
     if (encType != null) __obj.updateDynamic("encType")(encType.asInstanceOf[js.Any])
     if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
     if (formAction != null) __obj.updateDynamic("formAction")(formAction.asInstanceOf[js.Any])
     if (formEncType != null) __obj.updateDynamic("formEncType")(formEncType.asInstanceOf[js.Any])
     if (formMethod != null) __obj.updateDynamic("formMethod")(formMethod.asInstanceOf[js.Any])
-    if (!js.isUndefined(formNoValidate)) __obj.updateDynamic("formNoValidate")(formNoValidate.asInstanceOf[js.Any])
+    if (!js.isUndefined(formNoValidate)) __obj.updateDynamic("formNoValidate")(formNoValidate.get.asInstanceOf[js.Any])
     if (formTarget != null) __obj.updateDynamic("formTarget")(formTarget.asInstanceOf[js.Any])
     if (frameBorder != null) __obj.updateDynamic("frameBorder")(frameBorder.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (high != null) __obj.updateDynamic("high")(high.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(high)) __obj.updateDynamic("high")(high.get.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (hrefLang != null) __obj.updateDynamic("hrefLang")(hrefLang.asInstanceOf[js.Any])
     if (htmlFor != null) __obj.updateDynamic("htmlFor")(htmlFor.asInstanceOf[js.Any])
@@ -325,26 +325,26 @@ object SliderProps {
     if (itemID != null) __obj.updateDynamic("itemID")(itemID.asInstanceOf[js.Any])
     if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp.asInstanceOf[js.Any])
     if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.get.asInstanceOf[js.Any])
     if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
     if (keyParams != null) __obj.updateDynamic("keyParams")(keyParams.asInstanceOf[js.Any])
     if (keyType != null) __obj.updateDynamic("keyType")(keyType.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (low != null) __obj.updateDynamic("low")(low.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(low)) __obj.updateDynamic("low")(low.get.asInstanceOf[js.Any])
     if (manifest != null) __obj.updateDynamic("manifest")(manifest.asInstanceOf[js.Any])
-    if (marginHeight != null) __obj.updateDynamic("marginHeight")(marginHeight.asInstanceOf[js.Any])
-    if (marginWidth != null) __obj.updateDynamic("marginWidth")(marginWidth.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginHeight)) __obj.updateDynamic("marginHeight")(marginHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginWidth)) __obj.updateDynamic("marginWidth")(marginWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
     if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
     if (mediaGroup != null) __obj.updateDynamic("mediaGroup")(mediaGroup.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
-    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.asInstanceOf[js.Any])
-    if (!js.isUndefined(noValidate)) __obj.updateDynamic("noValidate")(noValidate.asInstanceOf[js.Any])
+    if (!js.isUndefined(minLength)) __obj.updateDynamic("minLength")(minLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noValidate)) __obj.updateDynamic("noValidate")(noValidate.get.asInstanceOf[js.Any])
     if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
     if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1(onAbort))
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
@@ -425,8 +425,8 @@ object SliderProps {
     if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(js.Any.fromFunction1(onVolumeChange))
     if (onWaiting != null) __obj.updateDynamic("onWaiting")(js.Any.fromFunction1(onWaiting))
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
-    if (optimum != null) __obj.updateDynamic("optimum")(optimum.asInstanceOf[js.Any])
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimum)) __obj.updateDynamic("optimum")(optimum.get.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (poster != null) __obj.updateDynamic("poster")(poster.asInstanceOf[js.Any])
@@ -434,40 +434,40 @@ object SliderProps {
     if (preload != null) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     if (radioGroup != null) __obj.updateDynamic("radioGroup")(radioGroup.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     if (rel != null) __obj.updateDynamic("rel")(rel.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
-    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.asInstanceOf[js.Any])
+    if (!js.isUndefined(results)) __obj.updateDynamic("results")(results.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.get.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (rowSpan != null) __obj.updateDynamic("rowSpan")(rowSpan.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowSpan)) __obj.updateDynamic("rowSpan")(rowSpan.get.asInstanceOf[js.Any])
     if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (!js.isUndefined(scoped)) __obj.updateDynamic("scoped")(scoped.asInstanceOf[js.Any])
+    if (!js.isUndefined(scoped)) __obj.updateDynamic("scoped")(scoped.get.asInstanceOf[js.Any])
     if (scrolling != null) __obj.updateDynamic("scrolling")(scrolling.asInstanceOf[js.Any])
-    if (!js.isUndefined(seamless)) __obj.updateDynamic("seamless")(seamless.asInstanceOf[js.Any])
+    if (!js.isUndefined(seamless)) __obj.updateDynamic("seamless")(seamless.get.asInstanceOf[js.Any])
     if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
-    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(span)) __obj.updateDynamic("span")(span.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.get.asInstanceOf[js.Any])
     if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     if (srcDoc != null) __obj.updateDynamic("srcDoc")(srcDoc.asInstanceOf[js.Any])
     if (srcLang != null) __obj.updateDynamic("srcLang")(srcLang.asInstanceOf[js.Any])
     if (srcSet != null) __obj.updateDynamic("srcSet")(srcSet.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
-    if (!js.isUndefined(unselectable)) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
+    if (!js.isUndefined(unselectable)) __obj.updateDynamic("unselectable")(unselectable.get.asInstanceOf[js.Any])
     if (useMap != null) __obj.updateDynamic("useMap")(useMap.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (wmode != null) __obj.updateDynamic("wmode")(wmode.asInstanceOf[js.Any])

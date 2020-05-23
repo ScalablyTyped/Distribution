@@ -6,20 +6,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Storage.ApplicationDataContainer")
-@js.native
-class ApplicationDataContainer () extends IApplicationDataContainer {
-  /* CompleteClass */
-  override var containers: IMapView[String, ApplicationDataContainer] = js.native
-  /* CompleteClass */
-  override var locality: ApplicationDataLocality = js.native
-  /* CompleteClass */
-  override var name: String = js.native
-  /* CompleteClass */
-  override var values: IPropertySet = js.native
-  /* CompleteClass */
-  override def createContainer(name: String, disposition: ApplicationDataCreateDisposition): ApplicationDataContainer = js.native
-  /* CompleteClass */
-  override def deleteContainer(name: String): Unit = js.native
+trait ApplicationDataContainer extends IApplicationDataContainer
+
+object ApplicationDataContainer {
+  @scala.inline
+  def apply(
+    containers: IMapView[String, ApplicationDataContainer],
+    createContainer: (String, ApplicationDataCreateDisposition) => ApplicationDataContainer,
+    deleteContainer: String => Unit,
+    locality: ApplicationDataLocality,
+    name: String,
+    values: IPropertySet
+  ): ApplicationDataContainer = {
+    val __obj = js.Dynamic.literal(containers = containers.asInstanceOf[js.Any], createContainer = js.Any.fromFunction2(createContainer), deleteContainer = js.Any.fromFunction1(deleteContainer), locality = locality.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ApplicationDataContainer]
+  }
 }
 

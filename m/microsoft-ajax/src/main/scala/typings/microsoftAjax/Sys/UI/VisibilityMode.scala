@@ -1,6 +1,5 @@
 package typings.microsoftAjax.Sys.UI
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,14 +25,6 @@ object VisibilityMode extends js.Object {
     */
   @js.native
   sealed trait hide extends VisibilityMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VisibilityMode with Double] = js.native
-  /* 1 */ @js.native
-  object collapse extends TopLevel[collapse with Double]
-  
-  /* 0 */ @js.native
-  object hide extends TopLevel[hide with Double]
   
 }
 

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/core/listen_sequence", "ListenSequence")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/core/listen_sequence", "ListenSequence")
 @js.native
 class ListenSequence protected () extends js.Object {
   def this(previousValue: ListenSequenceNumber) = this()
@@ -17,7 +17,7 @@ class ListenSequence protected () extends js.Object {
 }
 
 /* static members */
-@JSImport("@firebase/firestore/dist/lib/src/core/listen_sequence", "ListenSequence")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/core/listen_sequence", "ListenSequence")
 @js.native
 object ListenSequence extends js.Object {
   val INVALID: ListenSequenceNumber = js.native

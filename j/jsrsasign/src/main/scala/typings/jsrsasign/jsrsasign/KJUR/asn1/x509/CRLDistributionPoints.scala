@@ -1,6 +1,5 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
-import typings.jsrsasign.AnonUri
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,12 +35,30 @@ import scala.scalajs.js.annotation._
   *      aACompromise            (8) }
   * ```
   */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.CRLDistributionPoints")
-@js.native
-class CRLDistributionPoints () extends Extension {
-  def this(params: AnonUri) = this()
-  def getExtnValueHex(): String = js.native
-  def setByDPArray(dpArray: js.Array[ASN1Object]): Unit = js.native
-  def setByOneURI(uri: String): Unit = js.native
+trait CRLDistributionPoints extends Extension {
+  def getExtnValueHex(): String
+  def setByDPArray(dpArray: js.Array[ASN1Object]): Unit
+  def setByOneURI(uri: String): Unit
+}
+
+object CRLDistributionPoints {
+  @scala.inline
+  def apply(
+    getEncodedHex: () => String,
+    getExtnValueHex: () => String,
+    getFreshValueHex: () => String,
+    getLengthHexFromValue: () => String,
+    getValueHex: () => String,
+    hL: String,
+    hT: String,
+    hTLV: String,
+    hV: String,
+    isModified: String,
+    setByDPArray: js.Array[ASN1Object] => Unit,
+    setByOneURI: String => Unit
+  ): CRLDistributionPoints = {
+    val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex), getExtnValueHex = js.Any.fromFunction0(getExtnValueHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setByDPArray = js.Any.fromFunction1(setByDPArray), setByOneURI = js.Any.fromFunction1(setByOneURI))
+    __obj.asInstanceOf[CRLDistributionPoints]
+  }
 }
 

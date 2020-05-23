@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 
 trait ICordova extends IAbstract {
   /** [Method] Track an pageview in your application
-  		* @param page Object
-  		*/
+    * @param page Object
+    */
   @JSName("trackPageview")
   var trackPageview_ICordova: js.UndefOr[js.Function1[/* page */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
@@ -58,7 +58,7 @@ object ICordova {
     if (registerAccount != null) __obj.updateDynamic("registerAccount")(js.Any.fromFunction1(registerAccount))
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setAccountID != null) __obj.updateDynamic("setAccountID")(js.Any.fromFunction1(setAccountID))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (trackEvent != null) __obj.updateDynamic("trackEvent")(js.Any.fromFunction1(trackEvent))
     if (trackPageview != null) __obj.updateDynamic("trackPageview")(js.Any.fromFunction1(trackPageview))

@@ -22,14 +22,14 @@ trait PaceEventLagOptions extends js.Object {
 object PaceEventLagOptions {
   @scala.inline
   def apply(
-    lagThreshold: Int | Double = null,
-    minSamples: Int | Double = null,
-    sampleCount: Int | Double = null
+    lagThreshold: js.UndefOr[Double] = js.undefined,
+    minSamples: js.UndefOr[Double] = js.undefined,
+    sampleCount: js.UndefOr[Double] = js.undefined
   ): PaceEventLagOptions = {
     val __obj = js.Dynamic.literal()
-    if (lagThreshold != null) __obj.updateDynamic("lagThreshold")(lagThreshold.asInstanceOf[js.Any])
-    if (minSamples != null) __obj.updateDynamic("minSamples")(minSamples.asInstanceOf[js.Any])
-    if (sampleCount != null) __obj.updateDynamic("sampleCount")(sampleCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(lagThreshold)) __obj.updateDynamic("lagThreshold")(lagThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSamples)) __obj.updateDynamic("minSamples")(minSamples.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampleCount)) __obj.updateDynamic("sampleCount")(sampleCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaceEventLagOptions]
   }
 }

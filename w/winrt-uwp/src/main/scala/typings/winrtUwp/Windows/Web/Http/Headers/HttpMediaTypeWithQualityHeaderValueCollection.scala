@@ -1,18 +1,17 @@
 package typings.winrtUwp.Windows.Web.Http.Headers
 
 import typings.std.Array
-import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsHttpMediaTypeWithQualityHeaderValue
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import typings.winrtUwp.anon.Index
+import typings.winrtUwp.anon.ItemsHttpMediaTypeWithQualityHeaderValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the value of the Accept HTTP header on an HTTP request. */
-@JSGlobal("Windows.Web.Http.Headers.HttpMediaTypeWithQualityHeaderValueCollection")
 @js.native
-abstract class HttpMediaTypeWithQualityHeaderValueCollection () extends Array[HttpMediaTypeWithQualityHeaderValue] {
+trait HttpMediaTypeWithQualityHeaderValueCollection extends Array[HttpMediaTypeWithQualityHeaderValue] {
   /** Gets the number of HttpMediaTypeWithQualityHeaderValue objects in the collection. */
   var size: Double = js.native
   /**
@@ -37,13 +36,13 @@ abstract class HttpMediaTypeWithQualityHeaderValueCollection () extends Array[Ht
     * Retrieves the HttpMediaTypeWithQualityHeaderValue items that start at the specified index in the collection.
     * @param startIndex The zero-based index of the start of the HttpMediaTypeWithQualityHeaderValue items in the HttpMediaTypeWithQualityHeaderValueCollection .
     */
-  def getMany(startIndex: Double): AnonItemsHttpMediaTypeWithQualityHeaderValue = js.native
+  def getMany(startIndex: Double): ItemsHttpMediaTypeWithQualityHeaderValue = js.native
   /**
     * Returns an immutable view of the HttpMediaTypeWithQualityHeaderValueCollection .
     * @return The view of the HttpMediaTypeWithQualityHeaderValueCollection .
     */
   def getView(): IVectorView[HttpMediaTypeWithQualityHeaderValue] = js.native
-  def indexOf(value: HttpMediaTypeWithQualityHeaderValue, extra: js.Any*): AnonIndex = js.native
+  def indexOf(value: HttpMediaTypeWithQualityHeaderValue, extra: js.Any*): Index = js.native
   /**
     * Determines the index of a specific item in the collection.
     * @param item The object to locate in the collection.

@@ -7,34 +7,31 @@ import scala.scalajs.js.annotation._
 
 trait IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCube
   extends /**
-	 * Option for IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCube
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   /**
-  	 * A caption for the cube.
-  	 */
+    * A caption for the cube.
+    */
   var caption: js.UndefOr[String] = js.undefined
   /**
-  	 * An array of dimension metadata objects.
-  	 */
+    * An array of dimension metadata objects.
+    */
   var dimensions: js.UndefOr[js.Array[IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimension]] = js.undefined
   /**
-  	 * An object providing information about the measures' root node.
-  	 */
+    * An object providing information about the measures' root node.
+    */
   var measuresDimension: js.UndefOr[IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimension] = js.undefined
   /**
-  	 * Optional="false" A unique name for the cube.
-  	 */
+    * Optional="false" A unique name for the cube.
+    */
   var name: js.UndefOr[String] = js.undefined
 }
 
 object IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCube {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCube
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     caption: String = null,
     dimensions: js.Array[IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimension] = null,
     measuresDimension: IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimension = null,

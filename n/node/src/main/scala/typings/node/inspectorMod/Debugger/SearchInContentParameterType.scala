@@ -33,8 +33,8 @@ object SearchInContentParameterType {
     isRegex: js.UndefOr[Boolean] = js.undefined
   ): SearchInContentParameterType = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], scriptId = scriptId.asInstanceOf[js.Any])
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRegex)) __obj.updateDynamic("isRegex")(isRegex.asInstanceOf[js.Any])
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRegex)) __obj.updateDynamic("isRegex")(isRegex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchInContentParameterType]
   }
 }

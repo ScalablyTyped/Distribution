@@ -1,6 +1,6 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.AnonEndValue
+import typings.devextreme.anon.EndValue
 import typings.devextreme.devextremeStrings.Bright
 import typings.devextreme.devextremeStrings.Carmine
 import typings.devextreme.devextremeStrings.Default
@@ -37,21 +37,21 @@ trait BaseGaugeRangeContainer extends js.Object {
   /** @name BaseGauge.Options.rangeContainer.paletteExtensionMode */
   var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.undefined
   /** @name BaseGauge.Options.rangeContainer.ranges */
-  var ranges: js.UndefOr[js.Array[AnonEndValue]] = js.undefined
+  var ranges: js.UndefOr[js.Array[EndValue]] = js.undefined
 }
 
 object BaseGaugeRangeContainer {
   @scala.inline
   def apply(
     backgroundColor: String = null,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     palette: js.Array[String] | Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office = null,
     paletteExtensionMode: alternate | blend | extrapolate = null,
-    ranges: js.Array[AnonEndValue] = null
+    ranges: js.Array[EndValue] = null
   ): BaseGaugeRangeContainer = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
     if (paletteExtensionMode != null) __obj.updateDynamic("paletteExtensionMode")(paletteExtensionMode.asInstanceOf[js.Any])
     if (ranges != null) __obj.updateDynamic("ranges")(ranges.asInstanceOf[js.Any])

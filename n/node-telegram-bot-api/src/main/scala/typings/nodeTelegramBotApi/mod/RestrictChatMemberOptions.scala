@@ -19,14 +19,14 @@ object RestrictChatMemberOptions {
     can_send_media_messages: js.UndefOr[Boolean] = js.undefined,
     can_send_messages: js.UndefOr[Boolean] = js.undefined,
     can_send_other_messages: js.UndefOr[Boolean] = js.undefined,
-    until_date: Int | Double = null
+    until_date: js.UndefOr[Double] = js.undefined
   ): RestrictChatMemberOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(can_add_web_page_previews)) __obj.updateDynamic("can_add_web_page_previews")(can_add_web_page_previews.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_send_media_messages)) __obj.updateDynamic("can_send_media_messages")(can_send_media_messages.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_send_messages)) __obj.updateDynamic("can_send_messages")(can_send_messages.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_send_other_messages)) __obj.updateDynamic("can_send_other_messages")(can_send_other_messages.asInstanceOf[js.Any])
-    if (until_date != null) __obj.updateDynamic("until_date")(until_date.asInstanceOf[js.Any])
+    if (!js.isUndefined(can_add_web_page_previews)) __obj.updateDynamic("can_add_web_page_previews")(can_add_web_page_previews.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(can_send_media_messages)) __obj.updateDynamic("can_send_media_messages")(can_send_media_messages.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(can_send_messages)) __obj.updateDynamic("can_send_messages")(can_send_messages.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(can_send_other_messages)) __obj.updateDynamic("can_send_other_messages")(can_send_other_messages.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(until_date)) __obj.updateDynamic("until_date")(until_date.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestrictChatMemberOptions]
   }
 }

@@ -35,7 +35,7 @@ object TemplateChunk {
     dom: HTMLElement = null,
     el: HTMLElement = null,
     fragment: DocumentFragment = null,
-    html: String = null,
+    html: js.UndefOr[Null | String] = js.undefined,
     isTemplateTag: js.UndefOr[Boolean] = js.undefined
   ): TemplateChunk[Scope, ParentScope] = {
     val __obj = js.Dynamic.literal(createDOM = js.Any.fromFunction1(createDOM), mount = js.Any.fromFunction4(mount), unmount = js.Any.fromFunction3(unmount), update = js.Any.fromFunction2(update))
@@ -45,8 +45,8 @@ object TemplateChunk {
     if (dom != null) __obj.updateDynamic("dom")(dom.asInstanceOf[js.Any])
     if (el != null) __obj.updateDynamic("el")(el.asInstanceOf[js.Any])
     if (fragment != null) __obj.updateDynamic("fragment")(fragment.asInstanceOf[js.Any])
-    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTemplateTag)) __obj.updateDynamic("isTemplateTag")(isTemplateTag.asInstanceOf[js.Any])
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTemplateTag)) __obj.updateDynamic("isTemplateTag")(isTemplateTag.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateChunk[Scope, ParentScope]]
   }
 }

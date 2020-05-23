@@ -2,7 +2,7 @@ package typings.blueprintjsSelect.queryListMod
 
 import typings.blueprintjsSelect.listItemsPropsMod.IListItemsProps
 import typings.react.mod.KeyboardEventHandler
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

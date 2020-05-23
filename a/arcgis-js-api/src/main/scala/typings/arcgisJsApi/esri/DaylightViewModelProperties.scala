@@ -73,21 +73,21 @@ object DaylightViewModelProperties {
     currentSeason: spring | summer | fall | winter = null,
     dayPlaying: js.UndefOr[Boolean] = js.undefined,
     localDate: DateProperties = null,
-    playSpeedMultiplier: Int | Double = null,
-    timeSliderPosition: Int | Double = null,
-    utcOffset: Int | Double = null,
+    playSpeedMultiplier: js.UndefOr[Double] = js.undefined,
+    timeSliderPosition: js.UndefOr[Double] = js.undefined,
+    utcOffset: js.UndefOr[Double] = js.undefined,
     view: SceneViewProperties = null,
     yearPlaying: js.UndefOr[Boolean] = js.undefined
   ): DaylightViewModelProperties = {
     val __obj = js.Dynamic.literal()
     if (currentSeason != null) __obj.updateDynamic("currentSeason")(currentSeason.asInstanceOf[js.Any])
-    if (!js.isUndefined(dayPlaying)) __obj.updateDynamic("dayPlaying")(dayPlaying.asInstanceOf[js.Any])
+    if (!js.isUndefined(dayPlaying)) __obj.updateDynamic("dayPlaying")(dayPlaying.get.asInstanceOf[js.Any])
     if (localDate != null) __obj.updateDynamic("localDate")(localDate.asInstanceOf[js.Any])
-    if (playSpeedMultiplier != null) __obj.updateDynamic("playSpeedMultiplier")(playSpeedMultiplier.asInstanceOf[js.Any])
-    if (timeSliderPosition != null) __obj.updateDynamic("timeSliderPosition")(timeSliderPosition.asInstanceOf[js.Any])
-    if (utcOffset != null) __obj.updateDynamic("utcOffset")(utcOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(playSpeedMultiplier)) __obj.updateDynamic("playSpeedMultiplier")(playSpeedMultiplier.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeSliderPosition)) __obj.updateDynamic("timeSliderPosition")(timeSliderPosition.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(utcOffset)) __obj.updateDynamic("utcOffset")(utcOffset.get.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (!js.isUndefined(yearPlaying)) __obj.updateDynamic("yearPlaying")(yearPlaying.asInstanceOf[js.Any])
+    if (!js.isUndefined(yearPlaying)) __obj.updateDynamic("yearPlaying")(yearPlaying.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DaylightViewModelProperties]
   }
 }

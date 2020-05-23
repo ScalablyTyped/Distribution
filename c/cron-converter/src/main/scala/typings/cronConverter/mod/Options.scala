@@ -36,9 +36,9 @@ object Options {
     timezone: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(outputHashes)) __obj.updateDynamic("outputHashes")(outputHashes.asInstanceOf[js.Any])
-    if (!js.isUndefined(outputMonthNames)) __obj.updateDynamic("outputMonthNames")(outputMonthNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(outputWeekdayNames)) __obj.updateDynamic("outputWeekdayNames")(outputWeekdayNames.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputHashes)) __obj.updateDynamic("outputHashes")(outputHashes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputMonthNames)) __obj.updateDynamic("outputMonthNames")(outputMonthNames.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputWeekdayNames)) __obj.updateDynamic("outputWeekdayNames")(outputWeekdayNames.get.asInstanceOf[js.Any])
     if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

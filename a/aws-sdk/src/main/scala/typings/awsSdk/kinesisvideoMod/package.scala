@@ -12,6 +12,7 @@ package object kinesisvideoMod {
     - typings.awsSdk.awsSdkStrings.GET_MEDIA_FOR_FRAGMENT_LIST
     - typings.awsSdk.awsSdkStrings.GET_HLS_STREAMING_SESSION_URL
     - typings.awsSdk.awsSdkStrings.GET_DASH_STREAMING_SESSION_URL
+    - typings.awsSdk.awsSdkStrings.GET_CLIP
     - java.lang.String
   */
   type APIName = typings.awsSdk.kinesisvideoMod._APIName | java.lang.String

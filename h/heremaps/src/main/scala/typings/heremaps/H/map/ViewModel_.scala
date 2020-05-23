@@ -10,9 +10,8 @@ import scala.scalajs.js.annotation._
   * This class represents a view of the map. It consists of a virtual camera and a look-at point both of which have a position in geo-space and orientation angles. The view model allows to
   * change the values of these objects in order to move or rotate the map or zoom in and out.
   */
-@JSGlobal("H.map.ViewModel")
 @js.native
-class ViewModel_ ()
+trait ViewModel_
   extends EventTarget
      with IControl {
   def addOnDisposeCallback(callback: js.Function0[Unit], opt_scope: js.Object): Unit = js.native

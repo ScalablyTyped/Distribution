@@ -35,7 +35,7 @@ object Query {
     if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
     if (first != null) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
     if (last != null) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Query]
   }
 }

@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fridaGum.CpuContext because Already inherited */ trait ArmCpuContext extends PortableCpuContext {
   var lr: NativePointer
   var r0: NativePointer

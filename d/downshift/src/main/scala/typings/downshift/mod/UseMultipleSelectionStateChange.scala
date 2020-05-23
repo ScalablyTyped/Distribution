@@ -15,12 +15,12 @@ object UseMultipleSelectionStateChange {
   @scala.inline
   def apply[Item](
     `type`: UseMultipleSelectionStateChangeTypes,
-    activeIndex: Int | Double = null,
+    activeIndex: js.UndefOr[Double] = js.undefined,
     selectedItems: js.Array[Item] = null
   ): UseMultipleSelectionStateChange[Item] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeIndex)) __obj.updateDynamic("activeIndex")(activeIndex.get.asInstanceOf[js.Any])
     if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseMultipleSelectionStateChange[Item]]
   }

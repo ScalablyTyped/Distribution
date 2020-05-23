@@ -11,28 +11,28 @@ trait IProgressable extends IBase {
   /** [Config Option] (Boolean) */
   var dynamic: js.UndefOr[Boolean] = js.undefined
   /** [Method] Returns the value of dynamic
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getDynamic: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of maxProgressInput
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMaxProgressInput: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of maxProgressOutput
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMaxProgressOutput: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of minProgressInput
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMinProgressInput: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of minProgressOutput
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMinProgressOutput: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of state
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getState: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (Number) */
   var maxProgressInput: js.UndefOr[Double] = js.undefined
@@ -43,28 +43,28 @@ trait IProgressable extends IBase {
   /** [Config Option] (Number) */
   var minProgressOutput: js.UndefOr[Double] = js.undefined
   /** [Method] Sets the value of dynamic
-  		* @param dynamic Boolean The new value.
-  		*/
+    * @param dynamic Boolean The new value.
+    */
   var setDynamic: js.UndefOr[js.Function1[/* dynamic */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of maxProgressInput
-  		* @param maxProgressInput Number The new value.
-  		*/
+    * @param maxProgressInput Number The new value.
+    */
   var setMaxProgressInput: js.UndefOr[js.Function1[/* maxProgressInput */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of maxProgressOutput
-  		* @param maxProgressOutput Number The new value.
-  		*/
+    * @param maxProgressOutput Number The new value.
+    */
   var setMaxProgressOutput: js.UndefOr[js.Function1[/* maxProgressOutput */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of minProgressInput
-  		* @param minProgressInput Number The new value.
-  		*/
+    * @param minProgressInput Number The new value.
+    */
   var setMinProgressInput: js.UndefOr[js.Function1[/* minProgressInput */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of minProgressOutput
-  		* @param minProgressOutput Number The new value.
-  		*/
+    * @param minProgressOutput Number The new value.
+    */
   var setMinProgressOutput: js.UndefOr[js.Function1[/* minProgressOutput */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of state
-  		* @param state String The new value.
-  		*/
+    * @param state String The new value.
+    */
   var setState: js.UndefOr[js.Function1[/* state */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (String) */
   var state: js.UndefOr[String] = js.undefined
@@ -91,10 +91,10 @@ object IProgressable {
     getState: () => String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    maxProgressInput: Int | Double = null,
-    maxProgressOutput: Int | Double = null,
-    minProgressInput: Int | Double = null,
-    minProgressOutput: Int | Double = null,
+    maxProgressInput: js.UndefOr[Double] = js.undefined,
+    maxProgressOutput: js.UndefOr[Double] = js.undefined,
+    minProgressInput: js.UndefOr[Double] = js.undefined,
+    minProgressOutput: js.UndefOr[Double] = js.undefined,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
     self: IClass = null,
@@ -117,7 +117,7 @@ object IProgressable {
     if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (!js.isUndefined(dynamic)) __obj.updateDynamic("dynamic")(dynamic.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamic)) __obj.updateDynamic("dynamic")(dynamic.get.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (getDynamic != null) __obj.updateDynamic("getDynamic")(js.Any.fromFunction0(getDynamic))
     if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
@@ -128,10 +128,10 @@ object IProgressable {
     if (getState != null) __obj.updateDynamic("getState")(js.Any.fromFunction0(getState))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (maxProgressInput != null) __obj.updateDynamic("maxProgressInput")(maxProgressInput.asInstanceOf[js.Any])
-    if (maxProgressOutput != null) __obj.updateDynamic("maxProgressOutput")(maxProgressOutput.asInstanceOf[js.Any])
-    if (minProgressInput != null) __obj.updateDynamic("minProgressInput")(minProgressInput.asInstanceOf[js.Any])
-    if (minProgressOutput != null) __obj.updateDynamic("minProgressOutput")(minProgressOutput.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxProgressInput)) __obj.updateDynamic("maxProgressInput")(maxProgressInput.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxProgressOutput)) __obj.updateDynamic("maxProgressOutput")(maxProgressOutput.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minProgressInput)) __obj.updateDynamic("minProgressInput")(minProgressInput.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minProgressOutput)) __obj.updateDynamic("minProgressOutput")(minProgressOutput.get.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
@@ -141,7 +141,7 @@ object IProgressable {
     if (setMinProgressInput != null) __obj.updateDynamic("setMinProgressInput")(js.Any.fromFunction1(setMinProgressInput))
     if (setMinProgressOutput != null) __obj.updateDynamic("setMinProgressOutput")(js.Any.fromFunction1(setMinProgressOutput))
     if (setState != null) __obj.updateDynamic("setState")(js.Any.fromFunction1(setState))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])

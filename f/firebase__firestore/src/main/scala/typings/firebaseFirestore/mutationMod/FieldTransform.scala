@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/model/mutation", "FieldTransform")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/model/mutation", "FieldTransform")
 @js.native
 class FieldTransform protected () extends js.Object {
   def this(field: FieldPath, transform: TransformOperation) = this()

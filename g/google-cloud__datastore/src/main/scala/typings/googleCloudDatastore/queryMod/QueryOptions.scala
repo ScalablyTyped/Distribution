@@ -13,10 +13,10 @@ trait QueryOptions extends js.Object {
 
 object QueryOptions {
   @scala.inline
-  def apply(consistency: strong | eventual = null, maxApiCalls: Int | Double = null): QueryOptions = {
+  def apply(consistency: strong | eventual = null, maxApiCalls: js.UndefOr[Double] = js.undefined): QueryOptions = {
     val __obj = js.Dynamic.literal()
     if (consistency != null) __obj.updateDynamic("consistency")(consistency.asInstanceOf[js.Any])
-    if (maxApiCalls != null) __obj.updateDynamic("maxApiCalls")(maxApiCalls.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxApiCalls)) __obj.updateDynamic("maxApiCalls")(maxApiCalls.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOptions]
   }
 }

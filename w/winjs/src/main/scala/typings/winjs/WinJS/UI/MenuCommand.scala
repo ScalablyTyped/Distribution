@@ -8,18 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a command to be displayed in a Menu object.
   **/
-@JSGlobal("WinJS.UI.MenuCommand")
 @js.native
-//#region Constructors
-/**
-  * Creates a new MenuCommand object.
-  * @constructor
-  * @param element The DOM element that will host the control.
-  * @param options The set of properties and values to apply to the new MenuCommand.
-  **/
-class MenuCommand () extends js.Object {
-  def this(element: HTMLElement) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+trait MenuCommand extends js.Object {
   //#endregion Methods
   //#region Properties
   /**
@@ -84,15 +74,5 @@ class MenuCommand () extends js.Object {
     **/
   def removeEventListener(`type`: String, listener: js.Function): Unit = js.native
   def removeEventListener(`type`: String, listener: js.Function, useCapture: Boolean): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("WinJS.UI.MenuCommand")
-@js.native
-object MenuCommand extends js.Object {
-  /**
-    * Indicates that the object is compatibile with declarative processing.
-    **/
-  var supportedForProcessing: Boolean = js.native
 }
 

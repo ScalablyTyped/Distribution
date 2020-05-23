@@ -1,7 +1,7 @@
 package typings.reactLazylog.lineContentMod
 
 import typings.react.mod.Component
-import typings.reactLazylog.PartialLineContentProps
+import typings.reactLazylog.anon.PartialLineContentProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

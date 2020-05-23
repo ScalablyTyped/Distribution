@@ -14,11 +14,15 @@ trait MediaBodyProps extends ClassAttributes[MediaBody] {
 
 object MediaBodyProps {
   @scala.inline
-  def apply(componentClass: ReactType[_] = null, key: Key = null, ref: LegacyRef[MediaBody] = null): MediaBodyProps = {
+  def apply(
+    componentClass: ReactType[_] = null,
+    key: Key = null,
+    ref: js.UndefOr[Null | LegacyRef[MediaBody]] = js.undefined
+  ): MediaBodyProps = {
     val __obj = js.Dynamic.literal()
     if (componentClass != null) __obj.updateDynamic("componentClass")(componentClass.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaBodyProps]
   }
 }

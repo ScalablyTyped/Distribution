@@ -18,7 +18,7 @@ object VerticalLineToCommand {
   @scala.inline
   def apply(code: v_ | V, command: `vertical lineto`, y: Double, relative: js.UndefOr[Boolean] = js.undefined): VerticalLineToCommand = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    if (!js.isUndefined(relative)) __obj.updateDynamic("relative")(relative.asInstanceOf[js.Any])
+    if (!js.isUndefined(relative)) __obj.updateDynamic("relative")(relative.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerticalLineToCommand]
   }
 }

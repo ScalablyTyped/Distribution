@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.PushNotificationSubscriber")
 @js.native
-class PushNotificationSubscriber () extends ClientObject {
+trait PushNotificationSubscriber extends ClientObject {
   def get_customArgs(): String = js.native
   def get_deviceAppInstanceId(): Guid = js.native
   def get_lastModifiedTimeStamp(): Date = js.native

@@ -21,22 +21,22 @@ object InitOptions {
   def apply(
     dir: String = null,
     encoding: BufferEncoding = null,
-    expiredInterval: Int | Double = null,
+    expiredInterval: js.UndefOr[Milliseconds] = js.undefined,
     forgiveParseErrors: js.UndefOr[Boolean] = js.undefined,
     logging: js.UndefOr[Boolean] = js.undefined,
     parse: /* str */ String => _ = null,
     stringify: /* data */ js.Any => String = null,
-    ttl: Int | Double = null
+    ttl: js.UndefOr[Milliseconds] = js.undefined
   ): InitOptions = {
     val __obj = js.Dynamic.literal()
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (expiredInterval != null) __obj.updateDynamic("expiredInterval")(expiredInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(forgiveParseErrors)) __obj.updateDynamic("forgiveParseErrors")(forgiveParseErrors.asInstanceOf[js.Any])
-    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
+    if (!js.isUndefined(expiredInterval)) __obj.updateDynamic("expiredInterval")(expiredInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forgiveParseErrors)) __obj.updateDynamic("forgiveParseErrors")(forgiveParseErrors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging.get.asInstanceOf[js.Any])
     if (parse != null) __obj.updateDynamic("parse")(js.Any.fromFunction1(parse))
     if (stringify != null) __obj.updateDynamic("stringify")(js.Any.fromFunction1(stringify))
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitOptions]
   }
 }

@@ -18,9 +18,9 @@ trait ResolverRuleTargetIp extends js.Object {
 
 object ResolverRuleTargetIp {
   @scala.inline
-  def apply(ip: String, port: Int | Double = null): ResolverRuleTargetIp = {
+  def apply(ip: String, port: js.UndefOr[Double] = js.undefined): ResolverRuleTargetIp = {
     val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolverRuleTargetIp]
   }
 }

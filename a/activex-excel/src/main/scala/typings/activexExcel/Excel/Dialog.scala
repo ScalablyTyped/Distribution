@@ -4,14 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.Dialog")
-@js.native
-class Dialog protected () extends js.Object {
-  val Application: typings.activexExcel.Excel.Application = js.native
-  val Creator: XlCreator = js.native
+trait Dialog extends js.Object {
+  val Application: typings.activexExcel.Excel.Application
+  val Creator: XlCreator
   @JSName("Excel.Dialog_typekey")
-  var ExcelDotDialog_typekey: Dialog = js.native
-  val Parent: js.Any = js.native
+  var ExcelDotDialog_typekey: Dialog
+  val Parent: js.Any
   def Show(
     Arg1: js.UndefOr[js.Any],
     Arg2: js.UndefOr[js.Any],
@@ -43,6 +41,15 @@ class Dialog protected () extends js.Object {
     Arg28: js.UndefOr[js.Any],
     Arg29: js.UndefOr[js.Any],
     Arg30: js.UndefOr[js.Any]
-  ): Boolean = js.native
+  ): Boolean
+}
+
+object Dialog {
+  @scala.inline
+  def apply(Application: Application, Creator: XlCreator, ExcelDotDialog_typekey: Dialog, Parent: js.Any): Dialog = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
+    __obj.updateDynamic("Excel.Dialog_typekey")(ExcelDotDialog_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Dialog]
+  }
 }
 

@@ -6,36 +6,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandDeviceInformation")
-@js.native
-class MobileBroadbandDeviceInformation () extends IMobileBroadbandDeviceInformation {
-  /* CompleteClass */
-  override var cellularClass: CellularClass = js.native
-  /* CompleteClass */
-  override var currentRadioState: MobileBroadbandRadioState = js.native
-  /* CompleteClass */
-  override var customDataClass: String = js.native
-  /* CompleteClass */
-  override var dataClasses: DataClasses = js.native
-  /* CompleteClass */
-  override var deviceId: String = js.native
-  /* CompleteClass */
-  override var deviceType: MobileBroadbandDeviceType = js.native
-  /* CompleteClass */
-  override var firmwareInformation: String = js.native
-  /* CompleteClass */
-  override var manufacturer: String = js.native
-  /* CompleteClass */
-  override var mobileEquipmentId: String = js.native
-  /* CompleteClass */
-  override var model: String = js.native
-  /* CompleteClass */
-  override var networkDeviceStatus: NetworkDeviceStatus = js.native
-  /* CompleteClass */
-  override var simIccId: String = js.native
-  /* CompleteClass */
-  override var subscriberId: String = js.native
-  /* CompleteClass */
-  override var telephoneNumbers: IVectorView[String] = js.native
+trait MobileBroadbandDeviceInformation extends IMobileBroadbandDeviceInformation
+
+object MobileBroadbandDeviceInformation {
+  @scala.inline
+  def apply(
+    cellularClass: CellularClass,
+    currentRadioState: MobileBroadbandRadioState,
+    customDataClass: String,
+    dataClasses: DataClasses,
+    deviceId: String,
+    deviceType: MobileBroadbandDeviceType,
+    firmwareInformation: String,
+    manufacturer: String,
+    mobileEquipmentId: String,
+    model: String,
+    networkDeviceStatus: NetworkDeviceStatus,
+    simIccId: String,
+    subscriberId: String,
+    telephoneNumbers: IVectorView[String]
+  ): MobileBroadbandDeviceInformation = {
+    val __obj = js.Dynamic.literal(cellularClass = cellularClass.asInstanceOf[js.Any], currentRadioState = currentRadioState.asInstanceOf[js.Any], customDataClass = customDataClass.asInstanceOf[js.Any], dataClasses = dataClasses.asInstanceOf[js.Any], deviceId = deviceId.asInstanceOf[js.Any], deviceType = deviceType.asInstanceOf[js.Any], firmwareInformation = firmwareInformation.asInstanceOf[js.Any], manufacturer = manufacturer.asInstanceOf[js.Any], mobileEquipmentId = mobileEquipmentId.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], networkDeviceStatus = networkDeviceStatus.asInstanceOf[js.Any], simIccId = simIccId.asInstanceOf[js.Any], subscriberId = subscriberId.asInstanceOf[js.Any], telephoneNumbers = telephoneNumbers.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MobileBroadbandDeviceInformation]
+  }
 }
 

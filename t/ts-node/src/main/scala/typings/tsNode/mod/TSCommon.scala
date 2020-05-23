@@ -1,12 +1,12 @@
 package typings.tsNode.mod
 
-import typings.tsNode.FnCall
-import typings.tsNode.FnCallDiagNewLineIndent
-import typings.tsNode.FnCallHostDocumentRegistrySyntaxOnly
-import typings.tsNode.FnCallProgramSourceFileCancellationToken
-import typings.tsNode.FnCallSearchPathFileExistsConfigName
-import typings.tsNode.TypeofScriptSnapshot
-import typings.typescript.AnonConfig
+import typings.tsNode.anon.FnCall
+import typings.tsNode.anon.FnCallDiagNewLineIndent
+import typings.tsNode.anon.FnCallHostDocumentRegistrySyntaxOnly
+import typings.tsNode.anon.FnCallProgramSourceFileCancellationToken
+import typings.tsNode.anon.FnCallSearchPathFileExistsConfigName
+import typings.tsNode.anon.TypeofScriptSnapshot
+import typings.typescript.anon.Config
 import typings.typescript.mod.CancellationToken
 import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.Diagnostic
@@ -70,7 +70,7 @@ trait TSCommon extends js.Object {
   var readConfigFile_Original: js.Function2[
     /* fileName */ String, 
     /* readFile */ js.Function1[/* path */ String, js.UndefOr[String]], 
-    AnonConfig
+    Config
   ] = js.native
   var sys: System = js.native
   @JSName("transpileModule")
@@ -83,12 +83,8 @@ trait TSCommon extends js.Object {
   def displayPartsToString(displayParts: js.Array[SymbolDisplayPart]): String = js.native
   def findConfigFile(searchPath: String, fileExists: js.Function1[/* fileName */ String, Boolean]): js.UndefOr[String] = js.native
   def findConfigFile(searchPath: String, fileExists: js.Function1[/* fileName */ String, Boolean], configName: String): js.UndefOr[String] = js.native
-  def flattenDiagnosticMessageText(diag: js.UndefOr[scala.Nothing], newLine: String): String = js.native
-  def flattenDiagnosticMessageText(diag: js.UndefOr[scala.Nothing], newLine: String, indent: Double): String = js.native
-  def flattenDiagnosticMessageText(diag: String, newLine: String): String = js.native
-  def flattenDiagnosticMessageText(diag: String, newLine: String, indent: Double): String = js.native
-  def flattenDiagnosticMessageText(diag: DiagnosticMessageChain, newLine: String): String = js.native
-  def flattenDiagnosticMessageText(diag: DiagnosticMessageChain, newLine: String, indent: Double): String = js.native
+  def flattenDiagnosticMessageText(diag: js.UndefOr[DiagnosticMessageChain | String], newLine: String): String = js.native
+  def flattenDiagnosticMessageText(diag: js.UndefOr[DiagnosticMessageChain | String], newLine: String, indent: Double): String = js.native
   def formatDiagnostics(diagnostics: js.Array[Diagnostic], host: FormatDiagnosticsHost): String = js.native
   def formatDiagnosticsWithColorAndContext(diagnostics: js.Array[Diagnostic], host: FormatDiagnosticsHost): String = js.native
   def getDefaultLibFilePath(options: CompilerOptions): String = js.native
@@ -106,7 +102,7 @@ trait TSCommon extends js.Object {
     extendedConfigCache: js.UndefOr[Map[ExtendedConfigCacheEntry]],
     existingWatchOptions: js.UndefOr[WatchOptions]
   ): ParsedCommandLine = js.native
-  def readConfigFile(fileName: String, readFile: js.Function1[/* path */ String, js.UndefOr[String]]): AnonConfig = js.native
+  def readConfigFile(fileName: String, readFile: js.Function1[/* path */ String, js.UndefOr[String]]): Config = js.native
   def transpileModule(input: String, transpileOptions: TranspileOptions): TranspileOutput = js.native
 }
 

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait INxAttrDimInfo extends js.Object {
   /**
     * Cardinality of the attribute expression.
-    * 	Integer
+    *     Integer
     */
   var qCardinal: Double
   /**
@@ -31,7 +31,7 @@ trait INxAttrDimInfo extends js.Object {
   var qLocked: Boolean
   /**
     * Number of rows.
-    * 	Size
+    *     Size
     */
   var qSize: Double
 }

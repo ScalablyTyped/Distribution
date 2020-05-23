@@ -11,8 +11,8 @@ trait IElementContainer extends IBase {
   /** [Method] Adds each argument passed to this method to the childEls array  */
   var addChildEls: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Removes items in the childEls array based on the return value of a supplied test function
-  		* @param testFn Function The test function.
-  		*/
+    * @param testFn Function The test function.
+    */
   var removeChildEls: js.UndefOr[js.Function1[/* testFn */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -54,7 +54,7 @@ object IElementContainer {
     if (removeChildEls != null) __obj.updateDynamic("removeChildEls")(js.Any.fromFunction1(removeChildEls))
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IElementContainer]

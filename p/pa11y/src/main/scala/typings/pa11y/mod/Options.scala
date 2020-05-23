@@ -59,11 +59,11 @@ object Options {
     runners: js.Array[String] = null,
     screenCapture: String = null,
     standard: AccessibilityStandard = null,
-    threshold: Int | Double = null,
-    timeout: Int | Double = null,
+    threshold: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined,
     userAgent: String = null,
     viewport: Viewport = null,
-    wait: Int | Double = null
+    wait: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
@@ -72,9 +72,9 @@ object Options {
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (hideElements != null) __obj.updateDynamic("hideElements")(hideElements.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUrl)) __obj.updateDynamic("ignoreUrl")(ignoreUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeNotices)) __obj.updateDynamic("includeNotices")(includeNotices.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeWarnings)) __obj.updateDynamic("includeWarnings")(includeWarnings.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUrl)) __obj.updateDynamic("ignoreUrl")(ignoreUrl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeNotices)) __obj.updateDynamic("includeNotices")(includeNotices.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeWarnings)) __obj.updateDynamic("includeWarnings")(includeWarnings.get.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
@@ -86,11 +86,11 @@ object Options {
     if (runners != null) __obj.updateDynamic("runners")(runners.asInstanceOf[js.Any])
     if (screenCapture != null) __obj.updateDynamic("screenCapture")(screenCapture.asInstanceOf[js.Any])
     if (standard != null) __obj.updateDynamic("standard")(standard.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
     if (viewport != null) __obj.updateDynamic("viewport")(viewport.asInstanceOf[js.Any])
-    if (wait != null) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
+    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.braftEditor.braftEditorStrings.separator
-  - typings.braftEditor.AnonClassName
-  - typings.braftEditor.AnonArrowActive
-  - typings.braftEditor.AnonDisabled
-  - typings.braftEditor.AnonComponent
+  - typings.braftEditor.anon.ClassName
+  - typings.braftEditor.anon.ArrowActive
+  - typings.braftEditor.anon.Disabled
+  - typings.braftEditor.anon.Component
 */
 trait ExtendControlType extends ControlType
 

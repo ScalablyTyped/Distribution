@@ -20,15 +20,15 @@ object Config {
     help: js.UndefOr[Boolean] = js.undefined,
     highlightDelay: String = null,
     logDir: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     seleniumAddress: String = null
   ): Config = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fork)) __obj.updateDynamic("fork")(fork.asInstanceOf[js.Any])
-    if (!js.isUndefined(help)) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
+    if (!js.isUndefined(fork)) __obj.updateDynamic("fork")(fork.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(help)) __obj.updateDynamic("help")(help.get.asInstanceOf[js.Any])
     if (highlightDelay != null) __obj.updateDynamic("highlightDelay")(highlightDelay.asInstanceOf[js.Any])
     if (logDir != null) __obj.updateDynamic("logDir")(logDir.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (seleniumAddress != null) __obj.updateDynamic("seleniumAddress")(seleniumAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }

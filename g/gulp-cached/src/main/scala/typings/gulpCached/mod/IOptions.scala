@@ -16,7 +16,7 @@ object IOptions {
   @scala.inline
   def apply(optimizeMemory: js.UndefOr[Boolean] = js.undefined): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(optimizeMemory)) __obj.updateDynamic("optimizeMemory")(optimizeMemory.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimizeMemory)) __obj.updateDynamic("optimizeMemory")(optimizeMemory.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.SpeechRecognition
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object SpeechRecognitionConfidence extends js.Object {
   /** The spoken phrase was not matched to any phrase in any active grammar. */
   @js.native
   sealed trait rejected extends SpeechRecognitionConfidence
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SpeechRecognitionConfidence with Double] = js.native
-  /* 0 */ @js.native
-  object high extends TopLevel[high with Double]
-  
-  /* 2 */ @js.native
-  object low extends TopLevel[low with Double]
-  
-  /* 1 */ @js.native
-  object medium extends TopLevel[medium with Double]
-  
-  /* 3 */ @js.native
-  object rejected extends TopLevel[rejected with Double]
   
 }
 

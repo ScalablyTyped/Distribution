@@ -23,12 +23,12 @@ trait InferenceDeviceInfo extends js.Object {
 object InferenceDeviceInfo {
   @scala.inline
   def apply(
-    Count: Int | scala.Double = null,
+    Count: js.UndefOr[InferenceDeviceCount] = js.undefined,
     Manufacturer: InferenceDeviceManufacturerName = null,
     Name: InferenceDeviceName = null
   ): InferenceDeviceInfo = {
     val __obj = js.Dynamic.literal()
-    if (Count != null) __obj.updateDynamic("Count")(Count.asInstanceOf[js.Any])
+    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count.get.asInstanceOf[js.Any])
     if (Manufacturer != null) __obj.updateDynamic("Manufacturer")(Manufacturer.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[InferenceDeviceInfo]

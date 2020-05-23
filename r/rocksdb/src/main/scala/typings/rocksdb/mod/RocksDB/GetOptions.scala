@@ -13,8 +13,8 @@ object GetOptions {
   @scala.inline
   def apply(asBuffer: js.UndefOr[Boolean] = js.undefined, fillCache: js.UndefOr[Boolean] = js.undefined): GetOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(asBuffer)) __obj.updateDynamic("asBuffer")(asBuffer.asInstanceOf[js.Any])
-    if (!js.isUndefined(fillCache)) __obj.updateDynamic("fillCache")(fillCache.asInstanceOf[js.Any])
+    if (!js.isUndefined(asBuffer)) __obj.updateDynamic("asBuffer")(asBuffer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fillCache)) __obj.updateDynamic("fillCache")(fillCache.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOptions]
   }
 }

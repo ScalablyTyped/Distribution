@@ -16,10 +16,10 @@ package object Handlebars {
     /* options */ js.UndefOr[typings.handlebars.Handlebars.HelperOptions], 
     js.Any
   ]
+  type Template[T] = typings.handlebars.Handlebars.TemplateDelegate[T] | java.lang.String
   type TemplateDelegate[T] = js.Function2[
     /* context */ T, 
     /* options */ js.UndefOr[typings.handlebars.Handlebars.RuntimeOptions], 
     java.lang.String
   ]
-  type Template_[T] = typings.handlebars.Handlebars.TemplateDelegate[T] | java.lang.String
 }

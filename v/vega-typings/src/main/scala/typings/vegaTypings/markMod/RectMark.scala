@@ -22,6 +22,7 @@ object RectMark {
   @scala.inline
   def apply(
     `type`: rect,
+    aria: js.UndefOr[Boolean] = js.undefined,
     clip: Clip = null,
     description: String = null,
     encode: Encode[RectEncodeEntry] = null,
@@ -34,10 +35,11 @@ object RectMark {
     sort: Compare = null,
     style: String | js.Array[String] = null,
     transform: js.Array[Transforms] = null,
-    zindex: Int | Double = null
+    zindex: js.UndefOr[Double] = js.undefined
   ): RectMark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(aria)) __obj.updateDynamic("aria")(aria.get.asInstanceOf[js.Any])
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (encode != null) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
@@ -50,7 +52,7 @@ object RectMark {
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (zindex != null) __obj.updateDynamic("zindex")(zindex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zindex)) __obj.updateDynamic("zindex")(zindex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RectMark]
   }
 }

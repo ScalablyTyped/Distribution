@@ -18,21 +18,21 @@ trait ConfigOptions extends js.Object {
 object ConfigOptions {
   @scala.inline
   def apply(
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     getContainer: () => HTMLElement = null,
-    maxCount: Int | Double = null,
+    maxCount: js.UndefOr[Double] = js.undefined,
     prefixCls: String = null,
     rtl: js.UndefOr[Boolean] = js.undefined,
-    top: Int | Double = null,
+    top: js.UndefOr[Double] = js.undefined,
     transitionName: String = null
   ): ConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (getContainer != null) __obj.updateDynamic("getContainer")(js.Any.fromFunction0(getContainer))
-    if (maxCount != null) __obj.updateDynamic("maxCount")(maxCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxCount)) __obj.updateDynamic("maxCount")(maxCount.get.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
     if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]
   }

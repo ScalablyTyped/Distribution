@@ -28,7 +28,7 @@ trait CertificateAuthority extends js.Object {
 object CertificateAuthority {
   @scala.inline
   def apply(
-    certificate: Int | Double = null,
+    certificate: js.UndefOr[Double] = js.undefined,
     certificateRevocationListUrl: String = null,
     deltaCertificateRevocationListUrl: String = null,
     isRootAuthority: js.UndefOr[Boolean] = js.undefined,
@@ -36,10 +36,10 @@ object CertificateAuthority {
     issuerSki: String = null
   ): CertificateAuthority = {
     val __obj = js.Dynamic.literal()
-    if (certificate != null) __obj.updateDynamic("certificate")(certificate.asInstanceOf[js.Any])
+    if (!js.isUndefined(certificate)) __obj.updateDynamic("certificate")(certificate.get.asInstanceOf[js.Any])
     if (certificateRevocationListUrl != null) __obj.updateDynamic("certificateRevocationListUrl")(certificateRevocationListUrl.asInstanceOf[js.Any])
     if (deltaCertificateRevocationListUrl != null) __obj.updateDynamic("deltaCertificateRevocationListUrl")(deltaCertificateRevocationListUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRootAuthority)) __obj.updateDynamic("isRootAuthority")(isRootAuthority.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRootAuthority)) __obj.updateDynamic("isRootAuthority")(isRootAuthority.get.asInstanceOf[js.Any])
     if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
     if (issuerSki != null) __obj.updateDynamic("issuerSki")(issuerSki.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateAuthority]

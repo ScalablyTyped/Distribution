@@ -40,20 +40,20 @@ object ModifyVpcEndpointServiceConfigurationRequest {
   @scala.inline
   def apply(
     ServiceId: VpcEndpointServiceId,
-    AcceptanceRequired: js.UndefOr[scala.Boolean] = js.undefined,
+    AcceptanceRequired: js.UndefOr[Boolean] = js.undefined,
     AddNetworkLoadBalancerArns: ValueStringList = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     PrivateDnsName: String = null,
     RemoveNetworkLoadBalancerArns: ValueStringList = null,
-    RemovePrivateDnsName: js.UndefOr[scala.Boolean] = js.undefined
+    RemovePrivateDnsName: js.UndefOr[Boolean] = js.undefined
   ): ModifyVpcEndpointServiceConfigurationRequest = {
     val __obj = js.Dynamic.literal(ServiceId = ServiceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(AcceptanceRequired)) __obj.updateDynamic("AcceptanceRequired")(AcceptanceRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(AcceptanceRequired)) __obj.updateDynamic("AcceptanceRequired")(AcceptanceRequired.get.asInstanceOf[js.Any])
     if (AddNetworkLoadBalancerArns != null) __obj.updateDynamic("AddNetworkLoadBalancerArns")(AddNetworkLoadBalancerArns.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (PrivateDnsName != null) __obj.updateDynamic("PrivateDnsName")(PrivateDnsName.asInstanceOf[js.Any])
     if (RemoveNetworkLoadBalancerArns != null) __obj.updateDynamic("RemoveNetworkLoadBalancerArns")(RemoveNetworkLoadBalancerArns.asInstanceOf[js.Any])
-    if (!js.isUndefined(RemovePrivateDnsName)) __obj.updateDynamic("RemovePrivateDnsName")(RemovePrivateDnsName.asInstanceOf[js.Any])
+    if (!js.isUndefined(RemovePrivateDnsName)) __obj.updateDynamic("RemovePrivateDnsName")(RemovePrivateDnsName.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyVpcEndpointServiceConfigurationRequest]
   }
 }

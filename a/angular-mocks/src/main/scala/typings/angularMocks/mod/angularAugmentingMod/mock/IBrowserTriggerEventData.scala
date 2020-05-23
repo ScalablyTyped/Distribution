@@ -77,28 +77,28 @@ object IBrowserTriggerEventData {
   def apply(
     bubbles: js.UndefOr[Boolean] = js.undefined,
     cancelable: js.UndefOr[Boolean] = js.undefined,
-    charcode: Int | Double = null,
+    charcode: js.UndefOr[Double] = js.undefined,
     data: String = null,
-    elapsedTime: Int | Double = null,
-    keycode: Int | Double = null,
+    elapsedTime: js.UndefOr[Double] = js.undefined,
+    keycode: js.UndefOr[Double] = js.undefined,
     keys: js.Array[ctrl | alt | shift | meta] = null,
     relatedTarget: Node = null,
-    which: Int | Double = null,
-    x: Int | Double = null,
-    y: Int | Double = null
+    which: js.UndefOr[Double] = js.undefined,
+    x: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined
   ): IBrowserTriggerEventData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (charcode != null) __obj.updateDynamic("charcode")(charcode.asInstanceOf[js.Any])
+    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(charcode)) __obj.updateDynamic("charcode")(charcode.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (elapsedTime != null) __obj.updateDynamic("elapsedTime")(elapsedTime.asInstanceOf[js.Any])
-    if (keycode != null) __obj.updateDynamic("keycode")(keycode.asInstanceOf[js.Any])
+    if (!js.isUndefined(elapsedTime)) __obj.updateDynamic("elapsedTime")(elapsedTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keycode)) __obj.updateDynamic("keycode")(keycode.get.asInstanceOf[js.Any])
     if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
     if (relatedTarget != null) __obj.updateDynamic("relatedTarget")(relatedTarget.asInstanceOf[js.Any])
-    if (which != null) __obj.updateDynamic("which")(which.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(which)) __obj.updateDynamic("which")(which.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBrowserTriggerEventData]
   }
 }

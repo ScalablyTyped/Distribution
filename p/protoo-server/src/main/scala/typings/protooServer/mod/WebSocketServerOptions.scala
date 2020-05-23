@@ -27,34 +27,34 @@ object WebSocketServerOptions {
   def apply(
     assembleFragments: js.UndefOr[Boolean] = js.undefined,
     autoAcceptConnections: js.UndefOr[Boolean] = js.undefined,
-    closeTimeout: Int | Double = null,
+    closeTimeout: js.UndefOr[Double] = js.undefined,
     disableNagleAlgorithm: js.UndefOr[Boolean] = js.undefined,
     dropConnectionOnKeepaliveTimeout: js.UndefOr[Boolean] = js.undefined,
     fragmentOutgoingMessages: js.UndefOr[Boolean] = js.undefined,
-    fragmentationThreshold: Int | Double = null,
+    fragmentationThreshold: js.UndefOr[Double] = js.undefined,
     ignoreXForwardedFor: js.UndefOr[Boolean] = js.undefined,
     keepalive: js.UndefOr[Boolean] = js.undefined,
-    keepaliveGracePeriod: Int | Double = null,
-    keepaliveInterval: Int | Double = null,
-    maxReceivedFrameSize: Int | Double = null,
-    maxReceivedMessageSize: Int | Double = null,
+    keepaliveGracePeriod: js.UndefOr[Double] = js.undefined,
+    keepaliveInterval: js.UndefOr[Double] = js.undefined,
+    maxReceivedFrameSize: js.UndefOr[Double] = js.undefined,
+    maxReceivedMessageSize: js.UndefOr[Double] = js.undefined,
     useNativeKeepalive: js.UndefOr[Boolean] = js.undefined
   ): WebSocketServerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(assembleFragments)) __obj.updateDynamic("assembleFragments")(assembleFragments.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoAcceptConnections)) __obj.updateDynamic("autoAcceptConnections")(autoAcceptConnections.asInstanceOf[js.Any])
-    if (closeTimeout != null) __obj.updateDynamic("closeTimeout")(closeTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableNagleAlgorithm)) __obj.updateDynamic("disableNagleAlgorithm")(disableNagleAlgorithm.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropConnectionOnKeepaliveTimeout)) __obj.updateDynamic("dropConnectionOnKeepaliveTimeout")(dropConnectionOnKeepaliveTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(fragmentOutgoingMessages)) __obj.updateDynamic("fragmentOutgoingMessages")(fragmentOutgoingMessages.asInstanceOf[js.Any])
-    if (fragmentationThreshold != null) __obj.updateDynamic("fragmentationThreshold")(fragmentationThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreXForwardedFor)) __obj.updateDynamic("ignoreXForwardedFor")(ignoreXForwardedFor.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepalive)) __obj.updateDynamic("keepalive")(keepalive.asInstanceOf[js.Any])
-    if (keepaliveGracePeriod != null) __obj.updateDynamic("keepaliveGracePeriod")(keepaliveGracePeriod.asInstanceOf[js.Any])
-    if (keepaliveInterval != null) __obj.updateDynamic("keepaliveInterval")(keepaliveInterval.asInstanceOf[js.Any])
-    if (maxReceivedFrameSize != null) __obj.updateDynamic("maxReceivedFrameSize")(maxReceivedFrameSize.asInstanceOf[js.Any])
-    if (maxReceivedMessageSize != null) __obj.updateDynamic("maxReceivedMessageSize")(maxReceivedMessageSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNativeKeepalive)) __obj.updateDynamic("useNativeKeepalive")(useNativeKeepalive.asInstanceOf[js.Any])
+    if (!js.isUndefined(assembleFragments)) __obj.updateDynamic("assembleFragments")(assembleFragments.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoAcceptConnections)) __obj.updateDynamic("autoAcceptConnections")(autoAcceptConnections.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeTimeout)) __obj.updateDynamic("closeTimeout")(closeTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableNagleAlgorithm)) __obj.updateDynamic("disableNagleAlgorithm")(disableNagleAlgorithm.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropConnectionOnKeepaliveTimeout)) __obj.updateDynamic("dropConnectionOnKeepaliveTimeout")(dropConnectionOnKeepaliveTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fragmentOutgoingMessages)) __obj.updateDynamic("fragmentOutgoingMessages")(fragmentOutgoingMessages.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fragmentationThreshold)) __obj.updateDynamic("fragmentationThreshold")(fragmentationThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreXForwardedFor)) __obj.updateDynamic("ignoreXForwardedFor")(ignoreXForwardedFor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepalive)) __obj.updateDynamic("keepalive")(keepalive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepaliveGracePeriod)) __obj.updateDynamic("keepaliveGracePeriod")(keepaliveGracePeriod.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepaliveInterval)) __obj.updateDynamic("keepaliveInterval")(keepaliveInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxReceivedFrameSize)) __obj.updateDynamic("maxReceivedFrameSize")(maxReceivedFrameSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxReceivedMessageSize)) __obj.updateDynamic("maxReceivedMessageSize")(maxReceivedMessageSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNativeKeepalive)) __obj.updateDynamic("useNativeKeepalive")(useNativeKeepalive.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebSocketServerOptions]
   }
 }

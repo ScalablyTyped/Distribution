@@ -18,9 +18,9 @@ trait BucketLifecycleRuleNoncurrentVersionTransition extends js.Object {
 
 object BucketLifecycleRuleNoncurrentVersionTransition {
   @scala.inline
-  def apply(storageClass: String, days: Int | Double = null): BucketLifecycleRuleNoncurrentVersionTransition = {
+  def apply(storageClass: String, days: js.UndefOr[Double] = js.undefined): BucketLifecycleRuleNoncurrentVersionTransition = {
     val __obj = js.Dynamic.literal(storageClass = storageClass.asInstanceOf[js.Any])
-    if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
+    if (!js.isUndefined(days)) __obj.updateDynamic("days")(days.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketLifecycleRuleNoncurrentVersionTransition]
   }
 }

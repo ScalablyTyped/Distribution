@@ -59,7 +59,7 @@ trait PlusRuntime extends js.Object {
   /**
     * 第三方程序调用时传递给程序的参数
     * 第三方程序传递过来的参数，字符串格式类型数据。
-    * 	不是由第三方程序调用启动，则返回空字符串。
+    *     不是由第三方程序调用启动，则返回空字符串。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
     */
@@ -67,7 +67,7 @@ trait PlusRuntime extends js.Object {
   /**
     * 应用的市场推广渠道标识
     * "qihoo:browser"标识360浏览器流应用，"qihoo:appstore "表示360手机助手流应用，"dcloud:streamapps"表示DCloud流应用基座。
-    * 	注意：仅流应用环境中可用（如果没有特殊配置默认返回运行环境的包名），非流应用环境中返回空字符串。
+    *     注意：仅流应用环境中可用（如果没有特殊配置默认返回运行环境的包名），非流应用环境中返回空字符串。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
     */
@@ -82,7 +82,7 @@ trait PlusRuntime extends js.Object {
   /**
     * 获取当前应用首页加载的时间
     * 应用加载首页面的总时间，从开始加载首页面到首页面加载完成，单位为ms。
-    * 	注意，应用首页为网络地址则包括网络传输时间。
+    *     注意，应用首页为网络地址则包括网络传输时间。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
     */
@@ -90,37 +90,37 @@ trait PlusRuntime extends js.Object {
   /**
     * 应用启动来源
     * 5+ APP启动类型，可取以下值：
-    * 	"default"：默认启动方式，通常表示应用列表启动（360手助中搜索启动）；
-    * 	"scheme"：通过urlscheme方式触发启动；
-    * 	"push"：通过点击系统通知方式触发启动；
-    * 	"stream"：通过流应用api（plus.stream.open）启动；
-    * 	"shortcut"：通过快捷方式启动，iOS平台表示通过3D Touch快捷方式，Android平台表示通过桌面快捷方式启动；
-    * 	"barcode"：通过二维码扫描启动；
-    * 	"myapp"：通过流应用"我的"应用列表或历史列表中触发启动；
-    * 	"favorite"：通过流应用的"收藏"应用列表启动；
-    * 	"browser"：通过流应用的内置浏览器导流启动的流应用（地址栏输入url启动应用、点击wap页面链接启动应用）；
-    * 	"engines"：通过流应用的浏览器界面作为搜索引擎启动；
-    * 	"search"：通过流应用的应用搜索启动应用（如iOS平台的T9键盘搜索）；
-    * 	"speech"：通过流应用的语音识别启动应用；
-    * 	"miniProgram"：通过微信小程序启动应用。
+    *     "default"：默认启动方式，通常表示应用列表启动（360手助中搜索启动）；
+    *     "scheme"：通过urlscheme方式触发启动；
+    *     "push"：通过点击系统通知方式触发启动；
+    *     "stream"：通过流应用api（plus.stream.open）启动；
+    *     "shortcut"：通过快捷方式启动，iOS平台表示通过3D Touch快捷方式，Android平台表示通过桌面快捷方式启动；
+    *     "barcode"：通过二维码扫描启动；
+    *     "myapp"：通过流应用"我的"应用列表或历史列表中触发启动；
+    *     "favorite"：通过流应用的"收藏"应用列表启动；
+    *     "browser"：通过流应用的内置浏览器导流启动的流应用（地址栏输入url启动应用、点击wap页面链接启动应用）；
+    *     "engines"：通过流应用的浏览器界面作为搜索引擎启动；
+    *     "search"：通过流应用的应用搜索启动应用（如iOS平台的T9键盘搜索）；
+    *     "speech"：通过流应用的语音识别启动应用；
+    *     "miniProgram"：通过微信小程序启动应用。
     * - default: 
-    * 	默认启动方式，通常表示从系统桌面图标启动
-    * 						
+    *     默认启动方式，通常表示从系统桌面图标启动
+    *                         
     * - scheme: 
-    * 	通过urlscheme方式触发启动
-    * 						
+    *     通过urlscheme方式触发启动
+    *                         
     * - push: 
-    * 	通过点击系统通知方式触发启动
-    * 						
+    *     通过点击系统通知方式触发启动
+    *                         
     * - stream: 
-    * 	通过流应用api（plus.stream.open）启动
-    * 						
+    *     通过流应用api（plus.stream.open）启动
+    *                         
     * - shortcut: 
-    * 	iOS平台表示通过3D Touch快捷方式，Android平台表示通过桌面快捷方式启动
-    * 						
+    *     iOS平台表示通过3D Touch快捷方式，Android平台表示通过桌面快捷方式启动
+    *                         
     * - barcode: 
-    * 	通过二维码扫描启动
-    * 						
+    *     通过二维码扫描启动
+    *                         
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
     */
@@ -128,32 +128,32 @@ trait PlusRuntime extends js.Object {
   /**
     * 应用安装来源
     * 5+应用安装来源，可取以下值：
-    * 	"default"：默认安装来源，apk/ipa安装包内置安装；
-    * 	"stream"：通过流应用api（plus.stream.open）安装，仅流应用环境下支持；
-    * 	"push"：通过点击系统通知方式触发安装，仅流应用环境下支持；
-    * 	"scheme"：通过urlscheme方式触发安装，仅流应用环境下支持；
-    * 	"barcode"：通过二维码扫描触发安装，仅流应用环境下支持；
-    * 	"silent"：通过后台静默方式安装，仅流应用环境下支持；
-    * 	"speech"：通过语音识别方式触发安装，仅流应用环境下支持；
-    * 	"favorite"：通过收藏界面启动触发安装，仅流应用环境下支持。
+    *     "default"：默认安装来源，apk/ipa安装包内置安装；
+    *     "stream"：通过流应用api（plus.stream.open）安装，仅流应用环境下支持；
+    *     "push"：通过点击系统通知方式触发安装，仅流应用环境下支持；
+    *     "scheme"：通过urlscheme方式触发安装，仅流应用环境下支持；
+    *     "barcode"：通过二维码扫描触发安装，仅流应用环境下支持；
+    *     "silent"：通过后台静默方式安装，仅流应用环境下支持；
+    *     "speech"：通过语音识别方式触发安装，仅流应用环境下支持；
+    *     "favorite"：通过收藏界面启动触发安装，仅流应用环境下支持。
     * - default: 
-    * 	默认安装来源，apk/ipa安装包内置安装
-    * 						
+    *     默认安装来源，apk/ipa安装包内置安装
+    *                         
     * - stream: 
-    * 	通过流应用api（plus.stream.open）安装
-    * 						
+    *     通过流应用api（plus.stream.open）安装
+    *                         
     * - push: 
-    * 	通过点击系统通知方式触发安装
-    * 						
+    *     通过点击系统通知方式触发安装
+    *                         
     * - scheme: 
-    * 	通过urlscheme方式触发安装
-    * 						
+    *     通过urlscheme方式触发安装
+    *                         
     * - barcode: 
-    * 	通过二维码扫描触发安装
-    * 						
+    *     通过二维码扫描触发安装
+    *                         
     * - silent: 
-    * 	通过后台静默方式安装
-    * 						
+    *     通过后台静默方式安装
+    *                         
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
     */
@@ -190,10 +190,10 @@ trait PlusRuntime extends js.Object {
   /**
     * 安装应用
     * 支持以下类型安装包：
-    * 	1. 应用资源安装包（wgt），扩展名为'.wgt'；
-    * 	2. 应用资源差量升级包（wgtu），扩展名为'.wgtu'；
-    * 	3. 系统程序安装包（apk），要求使用当前平台支持的安装包格式。
-    * 	注意：仅支持本地地址，调用此方法前需把安装包从网络地址或其他位置放置到运行时环境可以访问的本地目录。
+    *     1. 应用资源安装包（wgt），扩展名为'.wgt'；
+    *     2. 应用资源差量升级包（wgtu），扩展名为'.wgtu'；
+    *     3. 系统程序安装包（apk），要求使用当前平台支持的安装包格式。
+    *     注意：仅支持本地地址，调用此方法前需把安装包从网络地址或其他位置放置到运行时环境可以访问的本地目录。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
     */
@@ -222,8 +222,8 @@ trait PlusRuntime extends js.Object {
   /**
     * 判断是否自定义应用启动页面加载地址
     * 通过URL Scheme启动时，可以在?后面添加__launch_path参数自定义应用启动首页加载的页面地址，
-    * 	如“streamapp://m3w.cn/s/HelloH5?__launch_path=http%3a%2f%2fm.weibo.cn%2fu%2f3196963860”；
-    * 	在流SDK集成时也可以通过launch_path参数（原生调用Intent）设置。
+    *     如“streamapp://m3w.cn/s/HelloH5?__launch_path=http%3a%2f%2fm.weibo.cn%2fu%2f3196963860”；
+    *     在流SDK集成时也可以通过launch_path参数（原生调用Intent）设置。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
     */
@@ -268,9 +268,9 @@ trait PlusRuntime extends js.Object {
   /**
     * 处理直达页面链接参数
     * 通过URL Scheme启动时，可以在?后面添加__direct_page参数自定义直达页面地址，
-    * 	如“streamapp://m3w.cn/s/HelloH5?__direct_page=http%3a%2f%2fm.weibo.cn%2fu%2f3196963860”；
-    * 	在流应用SDK集成时也可以通过direct_page参数（原生调用Intent）设置。
-    * 	注意：仅第一次调用此API时返回直达页面链接地址，再次调用将返回空字符串；如果应用重新被带直达页面链接参数的URL Scheme启动/激活时，可再次调用此方法获取。
+    *     如“streamapp://m3w.cn/s/HelloH5?__direct_page=http%3a%2f%2fm.weibo.cn%2fu%2f3196963860”；
+    *     在流应用SDK集成时也可以通过direct_page参数（原生调用Intent）设置。
+    *     注意：仅第一次调用此API时返回直达页面链接地址，再次调用将返回空字符串；如果应用重新被带直达页面链接参数的URL Scheme启动/激活时，可再次调用此方法获取。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
     */

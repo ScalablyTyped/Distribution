@@ -1,7 +1,7 @@
 package typings.jsrsasign.mod.KJUR.asn1
 
-import typings.jsrsasign.AnonCsrinfo
-import typings.jsrsasign.AnonExt
+import typings.jsrsasign.anon.Csrinfo
+import typings.jsrsasign.anon.Ext
 import typings.jsrsasign.jsrsasign.KJUR.asn1.csr.PEMInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -57,7 +57,71 @@ object csr extends js.Object {
   @js.native
   class CertificationRequest ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.csr.CertificationRequest {
-    def this(params: AnonCsrinfo) = this()
+    def this(params: Csrinfo) = this()
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    override var hL: String = js.native
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    override var hT: String = js.native
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    override var hTLV: String = js.native
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    override var hV: String = js.native
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    override var isModified: String = js.native
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    /**
+      * get PEM formatted certificate signing request (CSR/PKCS#10)
+      * @return PEM formatted string of CSR/PKCS#10
+      * @description
+      * This method is to a get CSR PEM string after signed.
+      *
+      * @example
+      * csr = new KJUR.asn1.csr.CertificationRequest({'csrinfo': csri});
+      * csr.sign();
+      * pem =  csr.getPEMString();
+      * // pem will be following:
+      * // -----BEGIN CERTIFICATE REQUEST-----
+      * // MII ...snip...
+      * // -----END CERTIFICATE REQUEST-----
+      */
+    /* CompleteClass */
+    override def getPEMString(): String = js.native
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    /**
+      * sign CertificationRequest and set signature value internally
+      * @description
+      * This method self-signs CertificateRequestInfo with a subject's
+      * private key and set signature value internally.
+      *
+      * @example
+      * csr = new KJUR.asn1.csr.CertificationRequest({'csrinfo': csri});
+      * csr.sign("SHA256withRSA", prvKeyObj);
+      */
+    /* CompleteClass */
+    override def sign(sigAlgName: String, prvKeyObj: js.Any): Unit = js.native
   }
   
   /**
@@ -80,7 +144,43 @@ object csr extends js.Object {
     */
   @js.native
   class CertificationRequestInfo ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.csr.CertificationRequestInfo
+    extends typings.jsrsasign.jsrsasign.KJUR.asn1.csr.CertificationRequestInfo {
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    override var hL: String = js.native
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    override var hT: String = js.native
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    override var hTLV: String = js.native
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    override var hV: String = js.native
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    override var isModified: String = js.native
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+  }
   
   /**
     * Certification Request (CSR/PKCS#10) utilities class
@@ -164,7 +264,7 @@ object csr extends js.Object {
       * });
       */
     def newCSRPEM(): String = js.native
-    def newCSRPEM(param: AnonExt): String = js.native
+    def newCSRPEM(param: Ext): String = js.native
   }
   
 }

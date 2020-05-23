@@ -18,9 +18,9 @@ trait DescribeAvailabilityOptionsRequest extends js.Object {
 
 object DescribeAvailabilityOptionsRequest {
   @scala.inline
-  def apply(DomainName: DomainName, Deployed: js.UndefOr[scala.Boolean] = js.undefined): DescribeAvailabilityOptionsRequest = {
+  def apply(DomainName: DomainName, Deployed: js.UndefOr[Boolean] = js.undefined): DescribeAvailabilityOptionsRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
-    if (!js.isUndefined(Deployed)) __obj.updateDynamic("Deployed")(Deployed.asInstanceOf[js.Any])
+    if (!js.isUndefined(Deployed)) __obj.updateDynamic("Deployed")(Deployed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAvailabilityOptionsRequest]
   }
 }

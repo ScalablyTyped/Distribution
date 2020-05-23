@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.Pane")
 @js.native
-class Pane protected () extends js.Object {
+trait Pane extends js.Object {
   val Application: typings.activexWord.Word.Application = js.native
   var BrowseToWindow: Boolean = js.native
   val BrowseWidth: Double = js.native

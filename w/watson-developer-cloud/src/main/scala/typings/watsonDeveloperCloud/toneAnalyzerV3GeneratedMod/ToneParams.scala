@@ -46,8 +46,8 @@ object ToneParams {
     if (content_language != null) __obj.updateDynamic("content_language")(content_language.asInstanceOf[js.Any])
     if (content_type != null) __obj.updateDynamic("content_type")(content_type.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
-    if (!js.isUndefined(sentences)) __obj.updateDynamic("sentences")(sentences.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sentences)) __obj.updateDynamic("sentences")(sentences.get.asInstanceOf[js.Any])
     if (tones != null) __obj.updateDynamic("tones")(tones.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToneParams]
   }

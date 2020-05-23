@@ -1,11 +1,5 @@
 package typings.bitcoinjsLib.transactionMod
 
-import typings.bitcoinjsLib.bitcoinjsLibNumbers._4294967295
-import typings.bitcoinjsLib.bitcoinjsLibNumbers.`0`
-import typings.bitcoinjsLib.bitcoinjsLibNumbers.`128`
-import typings.bitcoinjsLib.bitcoinjsLibNumbers.`1`
-import typings.bitcoinjsLib.bitcoinjsLibNumbers.`2`
-import typings.bitcoinjsLib.bitcoinjsLibNumbers.`3`
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -54,13 +48,13 @@ class Transaction () extends js.Object {
 @JSImport("bitcoinjs-lib/types/transaction", "Transaction")
 @js.native
 object Transaction extends js.Object {
-  val ADVANCED_TRANSACTION_FLAG: `1` = js.native
-  val ADVANCED_TRANSACTION_MARKER: `0` = js.native
-  val DEFAULT_SEQUENCE: _4294967295 = js.native
-  val SIGHASH_ALL: `1` = js.native
-  val SIGHASH_ANYONECANPAY: `128` = js.native
-  val SIGHASH_NONE: `2` = js.native
-  val SIGHASH_SINGLE: `3` = js.native
+  val ADVANCED_TRANSACTION_FLAG: /* 1 */ Double = js.native
+  val ADVANCED_TRANSACTION_MARKER: /* 0 */ Double = js.native
+  val DEFAULT_SEQUENCE: /* 4294967295.0 */ Double = js.native
+  val SIGHASH_ALL: /* 1 */ Double = js.native
+  val SIGHASH_ANYONECANPAY: /* 128 */ Double = js.native
+  val SIGHASH_NONE: /* 2 */ Double = js.native
+  val SIGHASH_SINGLE: /* 3 */ Double = js.native
   def fromBuffer(buffer: Buffer): Transaction = js.native
   def fromBuffer(buffer: Buffer, _NO_STRICT: Boolean): Transaction = js.native
   def fromHex(hex: String): Transaction = js.native

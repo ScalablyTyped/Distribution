@@ -4,16 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.NodeMaterialConnectionPoint")
 @js.native
-class NodeMaterialConnectionPoint protected () extends js.Object {
-  /**
-    * Creates a new connection point
-    * @param name defines the connection point name
-    * @param ownerBlock defines the block hosting this connection point
-    * @param direction defines the direction of the connection point
-    */
-  def this(name: String, ownerBlock: NodeMaterialBlock, direction: NodeMaterialConnectionPointDirection) = this()
+trait NodeMaterialConnectionPoint extends js.Object {
   var _associatedVariableName: js.Any = js.native
   /** @hidden */
   var _connectedPoint: Nullable[NodeMaterialConnectionPoint] = js.native

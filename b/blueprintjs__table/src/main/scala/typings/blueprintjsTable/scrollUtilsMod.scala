@@ -1,5 +1,6 @@
 package typings.blueprintjsTable
 
+import typings.blueprintjsTable.anon.ScrollLeft
 import typings.blueprintjsTable.blueprintjsTableStrings.horizontal
 import typings.blueprintjsTable.blueprintjsTableStrings.vertical
 import typings.blueprintjsTable.esmRegionsMod.IRegion
@@ -17,7 +18,7 @@ object scrollUtilsMod extends js.Object {
     currScrollTop: Double,
     getLeftOffset: js.Function1[/* columnIndex */ Double, Double],
     getTopOffset: js.Function1[/* rowIndex */ Double, Double]
-  ): AnonScrollLeft = js.native
+  ): ScrollLeft = js.native
   def getScrollPositionForRegion(
     region: IRegion,
     currScrollLeft: Double,
@@ -25,7 +26,7 @@ object scrollUtilsMod extends js.Object {
     getLeftOffset: js.Function1[/* columnIndex */ Double, Double],
     getTopOffset: js.Function1[/* rowIndex */ Double, Double],
     numFrozenRows: Double
-  ): AnonScrollLeft = js.native
+  ): ScrollLeft = js.native
   def getScrollPositionForRegion(
     region: IRegion,
     currScrollLeft: Double,
@@ -34,7 +35,7 @@ object scrollUtilsMod extends js.Object {
     getTopOffset: js.Function1[/* rowIndex */ Double, Double],
     numFrozenRows: Double,
     numFrozenColumns: Double
-  ): AnonScrollLeft = js.native
+  ): ScrollLeft = js.native
   @JSName("measureScrollBarThickness")
   def measureScrollBarThickness_horizontal(element: HTMLElement, direction: horizontal): Double = js.native
   @JSName("measureScrollBarThickness")

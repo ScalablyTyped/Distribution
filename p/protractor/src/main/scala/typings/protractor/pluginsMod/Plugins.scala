@@ -1,7 +1,7 @@
 package typings.protractor.pluginsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.protractor.AnonFailedCount
+import typings.protractor.anon.FailedCount
 import typings.protractor.configMod.Config
 import typings.q.mod.Promise
 import scala.scalajs.js
@@ -29,7 +29,7 @@ class Plugins protected () extends js.Object {
     *
     * @return {Object} The results object
     */
-  def getResults(): AnonFailedCount = js.native
+  def getResults(): FailedCount = js.native
   def onPageLoad(args: js.Any*): js.Promise[js.Array[_]] = js.native
   def onPageStable(args: js.Any*): js.Promise[js.Array[_]] = js.native
   def onPrepare(args: js.Any*): Promise[js.Array[_]] = js.native

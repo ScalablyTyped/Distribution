@@ -18,8 +18,8 @@ object InstructionsContext {
     label: String = null
   ): InstructionsContext = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isMulti)) __obj.updateDynamic("isMulti")(isMulti.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSearchable)) __obj.updateDynamic("isSearchable")(isSearchable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMulti)) __obj.updateDynamic("isMulti")(isMulti.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSearchable)) __obj.updateDynamic("isSearchable")(isSearchable.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstructionsContext]
   }

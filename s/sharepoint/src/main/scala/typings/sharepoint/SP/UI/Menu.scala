@@ -5,9 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.UI.Menu")
-@js.native
-class Menu () extends js.Object {
+trait Menu extends js.Object {
   def addMenuItem(
     text: String,
     actionScriptText: String,
@@ -16,8 +14,8 @@ class Menu () extends js.Object {
     sequenceNumber: Double,
     description: String,
     id: String
-  ): HTMLElement = js.native
-  def addSeparator(): Unit = js.native
+  ): HTMLElement
+  def addSeparator(): Unit
   def addSubMenu(
     text: String,
     imageSourceUrl: String,
@@ -25,9 +23,9 @@ class Menu () extends js.Object {
     sequenceNumber: Double,
     description: String,
     id: String
-  ): Menu = js.native
-  def hideIcons(): Unit = js.native
-  def show(relativeElement: HTMLElement, forceRefresh: Boolean, flipTopLevelMenu: Boolean, yOffset: Double): Unit = js.native
+  ): Menu
+  def hideIcons(): Unit
+  def show(relativeElement: HTMLElement, forceRefresh: Boolean, flipTopLevelMenu: Boolean, yOffset: Double): Unit
   def showFilterMenu(
     relativeElement: HTMLElement,
     forceRefresh: Boolean,
@@ -35,14 +33,23 @@ class Menu () extends js.Object {
     yOffset: Double,
     fShowClose: Boolean,
     fShowCheckBoxes: Boolean
-  ): Unit = js.native
-  def showIcons(): Unit = js.native
+  ): Unit
+  def showIcons(): Unit
 }
 
-/* static members */
-@JSGlobal("SP.UI.Menu")
-@js.native
-object Menu extends js.Object {
-  def create(id: String): Menu = js.native
+object Menu {
+  @scala.inline
+  def apply(
+    addMenuItem: (String, String, String, String, Double, String, String) => HTMLElement,
+    addSeparator: () => Unit,
+    addSubMenu: (String, String, String, Double, String, String) => Menu,
+    hideIcons: () => Unit,
+    show: (HTMLElement, Boolean, Boolean, Double) => Unit,
+    showFilterMenu: (HTMLElement, Boolean, Boolean, Double, Boolean, Boolean) => Unit,
+    showIcons: () => Unit
+  ): Menu = {
+    val __obj = js.Dynamic.literal(addMenuItem = js.Any.fromFunction7(addMenuItem), addSeparator = js.Any.fromFunction0(addSeparator), addSubMenu = js.Any.fromFunction6(addSubMenu), hideIcons = js.Any.fromFunction0(hideIcons), show = js.Any.fromFunction4(show), showFilterMenu = js.Any.fromFunction6(showFilterMenu), showIcons = js.Any.fromFunction0(showIcons))
+    __obj.asInstanceOf[Menu]
+  }
 }
 

@@ -32,7 +32,7 @@ object Task {
     leaseTimestamp: String = null,
     payloadBase64: String = null,
     queueName: String = null,
-    retry_count: Int | Double = null,
+    retry_count: js.UndefOr[Double] = js.undefined,
     tag: String = null
   ): Task = {
     val __obj = js.Dynamic.literal()
@@ -42,7 +42,7 @@ object Task {
     if (leaseTimestamp != null) __obj.updateDynamic("leaseTimestamp")(leaseTimestamp.asInstanceOf[js.Any])
     if (payloadBase64 != null) __obj.updateDynamic("payloadBase64")(payloadBase64.asInstanceOf[js.Any])
     if (queueName != null) __obj.updateDynamic("queueName")(queueName.asInstanceOf[js.Any])
-    if (retry_count != null) __obj.updateDynamic("retry_count")(retry_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(retry_count)) __obj.updateDynamic("retry_count")(retry_count.get.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[Task]
   }

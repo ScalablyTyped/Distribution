@@ -22,11 +22,11 @@ object CreateLogoutRequestUrlOptions {
     sign_get_request: js.UndefOr[Boolean] = js.undefined
   ): CreateLogoutRequestUrlOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allow_unencrypted_assertion)) __obj.updateDynamic("allow_unencrypted_assertion")(allow_unencrypted_assertion.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow_unencrypted_assertion)) __obj.updateDynamic("allow_unencrypted_assertion")(allow_unencrypted_assertion.get.asInstanceOf[js.Any])
     if (name_id != null) __obj.updateDynamic("name_id")(name_id.asInstanceOf[js.Any])
     if (relay_state != null) __obj.updateDynamic("relay_state")(relay_state.asInstanceOf[js.Any])
     if (session_index != null) __obj.updateDynamic("session_index")(session_index.asInstanceOf[js.Any])
-    if (!js.isUndefined(sign_get_request)) __obj.updateDynamic("sign_get_request")(sign_get_request.asInstanceOf[js.Any])
+    if (!js.isUndefined(sign_get_request)) __obj.updateDynamic("sign_get_request")(sign_get_request.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLogoutRequestUrlOptions]
   }
 }

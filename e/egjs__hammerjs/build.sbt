@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "egjs__hammerjs"
-version := "2.0.17-d991bf"
-scalaVersion := "2.13.1"
+version := "2.0.17-8a00cd"
+scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "hammerjs" % "2.0.8-dt-20200225Z-c0f865",
-  "org.scalablytyped" %%% "std" % "3.8-9b2470")
+  "org.scalablytyped" %%% "hammerjs" % "2.0.8-dt-20200515Z-313455",
+  "org.scalablytyped" %%% "std" % "3.9-18cbeb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

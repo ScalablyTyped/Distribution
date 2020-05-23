@@ -4,7 +4,5 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CUI.Scaling")
-@js.native
-class Scaling () extends js.Object
+trait Scaling extends js.Object
 

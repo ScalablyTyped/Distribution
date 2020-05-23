@@ -12,9 +12,9 @@ trait IGetOperationRequest extends js.Object {
 
 object IGetOperationRequest {
   @scala.inline
-  def apply(name: String = null): IGetOperationRequest = {
+  def apply(name: js.UndefOr[Null | String] = js.undefined): IGetOperationRequest = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGetOperationRequest]
   }
 }

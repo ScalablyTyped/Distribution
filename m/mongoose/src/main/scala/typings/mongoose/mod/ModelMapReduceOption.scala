@@ -1,6 +1,6 @@
 package typings.mongoose.mod
 
-import typings.mongoose.AnonInline
+import typings.mongoose.anon.Inline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait ModelMapReduceOption[T, Key, Val] extends js.Object {
   var limit: js.UndefOr[Double] = js.undefined
   var map: js.Function | String
   /** sets the output target for the map reduce job. default: {inline: 1} */
-  var out: js.UndefOr[AnonInline] = js.undefined
+  var out: js.UndefOr[Inline] = js.undefined
   /** query filter object. */
   var query: js.UndefOr[js.Any] = js.undefined
   var readPreference: js.UndefOr[String] = js.undefined
@@ -38,8 +38,8 @@ object ModelMapReduceOption {
     finalize: (/* key */ Key, /* val */ Val) => Val = null,
     jsMode: js.UndefOr[Boolean] = js.undefined,
     keeptemp: js.UndefOr[Boolean] = js.undefined,
-    limit: Int | Double = null,
-    out: AnonInline = null,
+    limit: js.UndefOr[Double] = js.undefined,
+    out: Inline = null,
     query: js.Any = null,
     readPreference: String = null,
     scope: js.Any = null,
@@ -48,15 +48,15 @@ object ModelMapReduceOption {
   ): ModelMapReduceOption[T, Key, Val] = {
     val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any], reduce = js.Any.fromFunction2(reduce))
     if (finalize != null) __obj.updateDynamic("finalize")(js.Any.fromFunction2(finalize))
-    if (!js.isUndefined(jsMode)) __obj.updateDynamic("jsMode")(jsMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(keeptemp)) __obj.updateDynamic("keeptemp")(keeptemp.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(jsMode)) __obj.updateDynamic("jsMode")(jsMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keeptemp)) __obj.updateDynamic("keeptemp")(keeptemp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (out != null) __obj.updateDynamic("out")(out.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelMapReduceOption[T, Key, Val]]
   }
 }

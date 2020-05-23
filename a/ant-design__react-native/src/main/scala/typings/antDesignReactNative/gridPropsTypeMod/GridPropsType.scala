@@ -30,8 +30,8 @@ object GridPropsType {
   ): GridPropsType = {
     val __obj = js.Dynamic.literal(carouselMaxRow = carouselMaxRow.asInstanceOf[js.Any], columnNum = columnNum.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasLine)) __obj.updateDynamic("hasLine")(hasLine.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCarousel)) __obj.updateDynamic("isCarousel")(isCarousel.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasLine)) __obj.updateDynamic("hasLine")(hasLine.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCarousel)) __obj.updateDynamic("isCarousel")(isCarousel.get.asInstanceOf[js.Any])
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction2(onPress))
     if (renderItem != null) __obj.updateDynamic("renderItem")(js.Any.fromFunction2(renderItem))
     __obj.asInstanceOf[GridPropsType]

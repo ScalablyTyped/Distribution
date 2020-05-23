@@ -4,7 +4,7 @@ import typings.react.mod.ReactNode
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeTabView.AnonColor
+import typings.reactNativeTabView.anon.Color
 import typings.reactNativeTabView.typesMod.Event
 import typings.reactNativeTabView.typesMod.Layout
 import typings.reactNativeTabView.typesMod.NavigationState
@@ -31,8 +31,8 @@ trait Props[T /* <: Route */] extends js.Object {
   var pressColor: js.UndefOr[String] = js.undefined
   var pressOpacity: js.UndefOr[Double] = js.undefined
   var renderBadge: js.UndefOr[js.Function1[/* scene */ Scene[T], ReactNode]] = js.undefined
-  var renderIcon: js.UndefOr[js.Function1[/* scene */ Scene[T] with AnonColor, ReactNode]] = js.undefined
-  var renderLabel: js.UndefOr[js.Function1[/* scene */ Scene[T] with AnonColor, ReactNode]] = js.undefined
+  var renderIcon: js.UndefOr[js.Function1[/* scene */ Scene[T] with Color, ReactNode]] = js.undefined
+  var renderLabel: js.UndefOr[js.Function1[/* scene */ Scene[T] with Color, ReactNode]] = js.undefined
   var scrollEnabled: js.UndefOr[Boolean] = js.undefined
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   var tabStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
@@ -46,7 +46,7 @@ trait Props[T /* <: Route */] extends js.Object {
 
 object Props {
   @scala.inline
-  def apply[T /* <: Route */](
+  def apply[T](
     getAccessibilityLabel: Scene[T] => js.UndefOr[String],
     getAccessible: Scene[T] => js.UndefOr[Boolean],
     getLabelText: Scene[T] => js.UndefOr[String],
@@ -58,40 +58,40 @@ object Props {
     renderIndicator: typings.reactNativeTabView.tabBarIndicatorMod.Props[T] => ReactNode,
     activeColor: String = null,
     bounces: js.UndefOr[Boolean] = js.undefined,
-    contentContainerStyle: StyleProp[ViewStyle] = null,
+    contentContainerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     inactiveColor: String = null,
-    indicatorContainerStyle: StyleProp[ViewStyle] = null,
-    indicatorStyle: StyleProp[ViewStyle] = null,
-    labelStyle: StyleProp[TextStyle] = null,
+    indicatorContainerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    indicatorStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    labelStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
     onTabLongPress: /* scene */ Scene[T] => Unit = null,
     onTabPress: /* scene */ Scene[T] with Event => Unit = null,
     pressColor: String = null,
-    pressOpacity: Int | Double = null,
+    pressOpacity: js.UndefOr[Double] = js.undefined,
     renderBadge: /* scene */ Scene[T] => ReactNode = null,
-    renderIcon: /* scene */ Scene[T] with AnonColor => ReactNode = null,
-    renderLabel: /* scene */ Scene[T] with AnonColor => ReactNode = null,
+    renderIcon: /* scene */ Scene[T] with Color => ReactNode = null,
+    renderLabel: /* scene */ Scene[T] with Color => ReactNode = null,
     scrollEnabled: js.UndefOr[Boolean] = js.undefined,
-    style: StyleProp[ViewStyle] = null,
-    tabStyle: StyleProp[ViewStyle] = null
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    tabStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined
   ): Props[T] = {
     val __obj = js.Dynamic.literal(getAccessibilityLabel = js.Any.fromFunction1(getAccessibilityLabel), getAccessible = js.Any.fromFunction1(getAccessible), getLabelText = js.Any.fromFunction1(getLabelText), getTestID = js.Any.fromFunction1(getTestID), jumpTo = js.Any.fromFunction1(jumpTo), layout = layout.asInstanceOf[js.Any], navigationState = navigationState.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], renderIndicator = js.Any.fromFunction1(renderIndicator))
     if (activeColor != null) __obj.updateDynamic("activeColor")(activeColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(bounces)) __obj.updateDynamic("bounces")(bounces.asInstanceOf[js.Any])
-    if (contentContainerStyle != null) __obj.updateDynamic("contentContainerStyle")(contentContainerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(bounces)) __obj.updateDynamic("bounces")(bounces.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentContainerStyle)) __obj.updateDynamic("contentContainerStyle")(contentContainerStyle.asInstanceOf[js.Any])
     if (inactiveColor != null) __obj.updateDynamic("inactiveColor")(inactiveColor.asInstanceOf[js.Any])
-    if (indicatorContainerStyle != null) __obj.updateDynamic("indicatorContainerStyle")(indicatorContainerStyle.asInstanceOf[js.Any])
-    if (indicatorStyle != null) __obj.updateDynamic("indicatorStyle")(indicatorStyle.asInstanceOf[js.Any])
-    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(indicatorContainerStyle)) __obj.updateDynamic("indicatorContainerStyle")(indicatorContainerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(indicatorStyle)) __obj.updateDynamic("indicatorStyle")(indicatorStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelStyle)) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
     if (onTabLongPress != null) __obj.updateDynamic("onTabLongPress")(js.Any.fromFunction1(onTabLongPress))
     if (onTabPress != null) __obj.updateDynamic("onTabPress")(js.Any.fromFunction1(onTabPress))
     if (pressColor != null) __obj.updateDynamic("pressColor")(pressColor.asInstanceOf[js.Any])
-    if (pressOpacity != null) __obj.updateDynamic("pressOpacity")(pressOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(pressOpacity)) __obj.updateDynamic("pressOpacity")(pressOpacity.get.asInstanceOf[js.Any])
     if (renderBadge != null) __obj.updateDynamic("renderBadge")(js.Any.fromFunction1(renderBadge))
     if (renderIcon != null) __obj.updateDynamic("renderIcon")(js.Any.fromFunction1(renderIcon))
     if (renderLabel != null) __obj.updateDynamic("renderLabel")(js.Any.fromFunction1(renderLabel))
-    if (!js.isUndefined(scrollEnabled)) __obj.updateDynamic("scrollEnabled")(scrollEnabled.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tabStyle != null) __obj.updateDynamic("tabStyle")(tabStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollEnabled)) __obj.updateDynamic("scrollEnabled")(scrollEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabStyle)) __obj.updateDynamic("tabStyle")(tabStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props[T]]
   }
 }

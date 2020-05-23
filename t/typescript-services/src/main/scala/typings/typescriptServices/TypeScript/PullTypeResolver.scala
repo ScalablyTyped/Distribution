@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.PullTypeResolver")
 @js.native
-class PullTypeResolver protected () extends js.Object {
-  def this(compilationSettings: ImmutableCompilationSettings, semanticInfoChain: SemanticInfoChain) = this()
+trait PullTypeResolver extends js.Object {
   var _cachedAnyTypeArgs: js.Any = js.native
   var _cachedArrayInterfaceType: js.Any = js.native
   var _cachedBooleanInterfaceType: js.Any = js.native
@@ -1016,18 +1014,5 @@ class PullTypeResolver protected () extends js.Object {
   /* private */ def widenArrayType(`type`: js.Any, ast: js.Any, context: js.Any): js.Any = js.native
   /* private */ def widenObjectLiteralType(`type`: js.Any, ast: js.Any, context: js.Any): js.Any = js.native
   def widenType(`type`: PullTypeSymbol, ast: AST, context: PullTypeResolutionContext): PullTypeSymbol = js.native
-}
-
-/* static members */
-@JSGlobal("TypeScript.PullTypeResolver")
-@js.native
-object PullTypeResolver extends js.Object {
-  var globalTypeCheckPhase: Double = js.native
-  def hasSetAccessorParameterTypeAnnotation(setAccessor: SetAccessor): Boolean = js.native
-  def typeCheck(
-    compilationSettings: ImmutableCompilationSettings,
-    semanticInfoChain: SemanticInfoChain,
-    document: Document
-  ): Unit = js.native
 }
 

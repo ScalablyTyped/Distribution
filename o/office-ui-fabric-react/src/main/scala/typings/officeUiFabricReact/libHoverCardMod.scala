@@ -1,5 +1,7 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.anon.CardDismissDelay
+import typings.officeUiFabricReact.anon.CompactCardHeight
 import typings.officeUiFabricReact.expandingCardTypesMod.IExpandingCardProps
 import typings.officeUiFabricReact.hoverCardTypesMod.IHoverCardProps
 import typings.officeUiFabricReact.officeUiFabricReactNumbers.`0`
@@ -111,7 +113,7 @@ object libHoverCardMod extends js.Object {
   /* static members */
   @js.native
   object ExpandingCardBase extends js.Object {
-    var defaultProps: AnonCompactCardHeight = js.native
+    var defaultProps: CompactCardHeight = js.native
   }
   
   @js.native
@@ -125,7 +127,7 @@ object libHoverCardMod extends js.Object {
   /* static members */
   @js.native
   object HoverCardBase extends js.Object {
-    var defaultProps: AnonCardDismissDelay = js.native
+    var defaultProps: CardDismissDelay = js.native
   }
   
   @js.native

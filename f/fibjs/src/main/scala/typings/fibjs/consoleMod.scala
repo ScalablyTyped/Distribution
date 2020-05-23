@@ -1,45 +1,35 @@
 package typings.fibjs
 
-import typings.fibjs.fibjsNumbers.`0`
-import typings.fibjs.fibjsNumbers.`10`
-import typings.fibjs.fibjsNumbers.`1`
-import typings.fibjs.fibjsNumbers.`2`
-import typings.fibjs.fibjsNumbers.`3`
-import typings.fibjs.fibjsNumbers.`4`
-import typings.fibjs.fibjsNumbers.`5`
-import typings.fibjs.fibjsNumbers.`6`
-import typings.fibjs.fibjsNumbers.`7`
-import typings.fibjs.fibjsNumbers.`9`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** module Or Internal Object */
 /**
-	* @brief 控制台访问对象
-	* @detail 全局对象。可用于提示信息，警告和错误记录。通过启动配置文件，可将日志定位到不同的设备，以便于跟踪。日志支持格式化输出，例如：,```JavaScript,console.log("%d + %d = %d", 100, 200, 100 + 200);,```,可以使用的格式化参数如下：,- %s - 字符串,- %d - 数字，包括整数和数字,- %j - 以 JSON 格式输出对象,- %% - 输出字符 '%' 本身
-	*/
+  * @brief 控制台访问对象
+  * @detail 全局对象。可用于提示信息，警告和错误记录。通过启动配置文件，可将日志定位到不同的设备，以便于跟踪。日志支持格式化输出，例如：,```JavaScript,console.log("%d + %d = %d", 100, 200, 100 + 200);,```,可以使用的格式化参数如下：,- %s - 字符串,- %d - 数字，包括整数和数字,- %j - 以 JSON 格式输出对象,- %% - 输出字符 '%' 本身
+  */
 @JSImport("console", JSImport.Namespace)
 @js.native
 object consoleMod extends js.Object {
   @JSName("ALERT")
-  val ALERT_ : `1` = js.native
+  val ALERT_ : /* 1 */ Double = js.native
   @JSName("CRIT")
-  val CRIT_ : `2` = js.native
+  val CRIT_ : /* 2 */ Double = js.native
   @JSName("DEBUG")
-  val DEBUG_ : `7` = js.native
+  val DEBUG_ : /* 7 */ Double = js.native
   @JSName("ERROR")
-  val ERROR_ : `3` = js.native
-  val FATAL: `0` = js.native
+  val ERROR_ : /* 3 */ Double = js.native
+  val FATAL: /* 0 */ Double = js.native
   @JSName("INFO")
-  val INFO_ : `6` = js.native
+  val INFO_ : /* 6 */ Double = js.native
   @JSName("NOTICE")
-  val NOTICE_ : `5` = js.native
-  val NOTSET: `10` = js.native
+  val NOTICE_ : /* 5 */ Double = js.native
+  val NOTSET: /* 10 */ Double = js.native
   @JSName("PRINT")
-  val PRINT_ : `9` = js.native
+  val PRINT_ : /* 9 */ Double = js.native
   @JSName("WARN")
-  val WARN_ : `4` = js.native
+  val WARN_ : /* 4 */ Double = js.native
   val height: Double = js.native
   val loglevel: Double = js.native
   val width: Double = js.native

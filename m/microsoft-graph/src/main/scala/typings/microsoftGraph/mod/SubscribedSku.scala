@@ -26,7 +26,7 @@ object SubscribedSku {
   def apply(
     appliesTo: String = null,
     capabilityStatus: String = null,
-    consumedUnits: Int | Double = null,
+    consumedUnits: js.UndefOr[Double] = js.undefined,
     id: String = null,
     prepaidUnits: LicenseUnitsDetail = null,
     servicePlans: js.Array[ServicePlanInfo] = null,
@@ -36,7 +36,7 @@ object SubscribedSku {
     val __obj = js.Dynamic.literal()
     if (appliesTo != null) __obj.updateDynamic("appliesTo")(appliesTo.asInstanceOf[js.Any])
     if (capabilityStatus != null) __obj.updateDynamic("capabilityStatus")(capabilityStatus.asInstanceOf[js.Any])
-    if (consumedUnits != null) __obj.updateDynamic("consumedUnits")(consumedUnits.asInstanceOf[js.Any])
+    if (!js.isUndefined(consumedUnits)) __obj.updateDynamic("consumedUnits")(consumedUnits.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (prepaidUnits != null) __obj.updateDynamic("prepaidUnits")(prepaidUnits.asInstanceOf[js.Any])
     if (servicePlans != null) __obj.updateDynamic("servicePlans")(servicePlans.asInstanceOf[js.Any])

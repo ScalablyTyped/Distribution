@@ -16,7 +16,7 @@ object Serie {
   def apply(
     data: js.Array[Datum],
     id: String | Double,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null
   ): Serie = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

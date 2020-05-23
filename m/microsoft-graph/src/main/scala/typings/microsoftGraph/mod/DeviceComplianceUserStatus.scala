@@ -23,7 +23,7 @@ trait DeviceComplianceUserStatus extends Entity {
 object DeviceComplianceUserStatus {
   @scala.inline
   def apply(
-    devicesCount: Int | Double = null,
+    devicesCount: js.UndefOr[Double] = js.undefined,
     id: String = null,
     lastReportedDateTime: String = null,
     status: ComplianceStatus = null,
@@ -31,7 +31,7 @@ object DeviceComplianceUserStatus {
     userPrincipalName: String = null
   ): DeviceComplianceUserStatus = {
     val __obj = js.Dynamic.literal()
-    if (devicesCount != null) __obj.updateDynamic("devicesCount")(devicesCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(devicesCount)) __obj.updateDynamic("devicesCount")(devicesCount.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (lastReportedDateTime != null) __obj.updateDynamic("lastReportedDateTime")(lastReportedDateTime.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])

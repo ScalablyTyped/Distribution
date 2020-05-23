@@ -8,7 +8,7 @@ import typings.pdfmake.interfacesMod.CustomTableLayout
 import typings.pdfmake.interfacesMod.TDocumentDefinitions
 import typings.pdfmake.interfacesMod.TFontDictionary
 import typings.std.Blob
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,10 +37,10 @@ object pdfmakeMod extends js.Object {
      // minimal version 0.1.41
     def open(): Unit = js.native
     def open(options: BufferOptions): Unit = js.native
-    def open(options: BufferOptions, win: Window_): Unit = js.native
+    def open(options: BufferOptions, win: Window): Unit = js.native
     def print(): Unit = js.native
     def print(options: BufferOptions): Unit = js.native
-    def print(options: BufferOptions, win: Window_): Unit = js.native
+    def print(options: BufferOptions, win: Window): Unit = js.native
   }
   
   var fonts: TFontDictionary = js.native

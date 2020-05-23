@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,11 @@ trait ScopedCredentialInfo extends js.Object {
   val publicKey: CryptoKey
 }
 
-@JSGlobal("ScopedCredentialInfo")
-@js.native
-object ScopedCredentialInfo extends Instantiable0[ScopedCredentialInfo]
+object ScopedCredentialInfo {
+  @scala.inline
+  def apply(credential: ScopedCredential, publicKey: CryptoKey): ScopedCredentialInfo = {
+    val __obj = js.Dynamic.literal(credential = credential.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScopedCredentialInfo]
+  }
+}
 

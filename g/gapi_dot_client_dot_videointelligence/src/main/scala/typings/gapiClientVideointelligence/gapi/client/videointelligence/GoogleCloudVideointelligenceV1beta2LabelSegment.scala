@@ -13,9 +13,12 @@ trait GoogleCloudVideointelligenceV1beta2LabelSegment extends js.Object {
 
 object GoogleCloudVideointelligenceV1beta2LabelSegment {
   @scala.inline
-  def apply(confidence: Int | Double = null, segment: GoogleCloudVideointelligenceV1beta2VideoSegment = null): GoogleCloudVideointelligenceV1beta2LabelSegment = {
+  def apply(
+    confidence: js.UndefOr[Double] = js.undefined,
+    segment: GoogleCloudVideointelligenceV1beta2VideoSegment = null
+  ): GoogleCloudVideointelligenceV1beta2LabelSegment = {
     val __obj = js.Dynamic.literal()
-    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
     if (segment != null) __obj.updateDynamic("segment")(segment.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta2LabelSegment]
   }

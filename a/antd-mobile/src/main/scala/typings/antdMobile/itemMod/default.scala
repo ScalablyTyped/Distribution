@@ -1,6 +1,6 @@
 package typings.antdMobile.itemMod
 
-import typings.antdMobile.AnonDisabled
+import typings.antdMobile.anon.Disabled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ class default () extends Item
 @JSImport("antd-mobile/lib/popover/Item", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonDisabled = js.native
+  var defaultProps: Disabled = js.native
   var myName: String = js.native
 }
 

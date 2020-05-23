@@ -31,17 +31,17 @@ object RemoteDevConfig {
     hostname: String = null,
     name: String = null,
     onlyActions: js.UndefOr[Boolean] = js.undefined,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     remote: js.UndefOr[Boolean] = js.undefined
   ): RemoteDevConfig = {
     val __obj = js.Dynamic.literal()
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.get.asInstanceOf[js.Any])
     if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyActions)) __obj.updateDynamic("onlyActions")(onlyActions.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(remote)) __obj.updateDynamic("remote")(remote.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyActions)) __obj.updateDynamic("onlyActions")(onlyActions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(remote)) __obj.updateDynamic("remote")(remote.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteDevConfig]
   }
 }

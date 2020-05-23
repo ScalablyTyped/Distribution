@@ -1,6 +1,6 @@
 package typings.numbro.mod.numbro
 
-import typings.numbro.AnonBillion
+import typings.numbro.anon.Billion
 import typings.numbro.numbroStrings.billion
 import typings.numbro.numbroStrings.binary
 import typings.numbro.numbroStrings.byte
@@ -25,7 +25,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Format extends js.Object {
-  var abbreviations: js.UndefOr[AnonBillion] = js.undefined
+  var abbreviations: js.UndefOr[Billion] = js.undefined
   var average: js.UndefOr[Boolean] = js.undefined
   var base: js.UndefOr[decimal | binary | general] = js.undefined
   var characteristic: js.UndefOr[Double] = js.undefined
@@ -52,16 +52,16 @@ trait Format extends js.Object {
 object Format {
   @scala.inline
   def apply(
-    abbreviations: AnonBillion = null,
+    abbreviations: Billion = null,
     average: js.UndefOr[Boolean] = js.undefined,
     base: decimal | binary | general = null,
-    characteristic: Int | Double = null,
+    characteristic: js.UndefOr[Double] = js.undefined,
     currencyPosition: prefix | infix | postfix = null,
     currencySymbol: string = null,
     exponential: js.UndefOr[Boolean] = js.undefined,
     forceAverage: trillion | billion | million | thousand = null,
     forceSign: js.UndefOr[Boolean] = js.undefined,
-    mantissa: Int | Double = null,
+    mantissa: js.UndefOr[Double] = js.undefined,
     negative: sign | parenthesis = null,
     optionalCharacteristic: js.UndefOr[Boolean] = js.undefined,
     optionalMantissa: js.UndefOr[Boolean] = js.undefined,
@@ -72,32 +72,32 @@ object Format {
     spaceSeparated: js.UndefOr[Boolean] = js.undefined,
     spaceSeparatedCurrency: js.UndefOr[Boolean] = js.undefined,
     thousandSeparated: js.UndefOr[Boolean] = js.undefined,
-    totalLength: Int | Double = null,
+    totalLength: js.UndefOr[Double] = js.undefined,
     trimMantissa: js.UndefOr[Boolean] = js.undefined
   ): Format = {
     val __obj = js.Dynamic.literal()
     if (abbreviations != null) __obj.updateDynamic("abbreviations")(abbreviations.asInstanceOf[js.Any])
-    if (!js.isUndefined(average)) __obj.updateDynamic("average")(average.asInstanceOf[js.Any])
+    if (!js.isUndefined(average)) __obj.updateDynamic("average")(average.get.asInstanceOf[js.Any])
     if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (characteristic != null) __obj.updateDynamic("characteristic")(characteristic.asInstanceOf[js.Any])
+    if (!js.isUndefined(characteristic)) __obj.updateDynamic("characteristic")(characteristic.get.asInstanceOf[js.Any])
     if (currencyPosition != null) __obj.updateDynamic("currencyPosition")(currencyPosition.asInstanceOf[js.Any])
     if (currencySymbol != null) __obj.updateDynamic("currencySymbol")(currencySymbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(exponential)) __obj.updateDynamic("exponential")(exponential.asInstanceOf[js.Any])
+    if (!js.isUndefined(exponential)) __obj.updateDynamic("exponential")(exponential.get.asInstanceOf[js.Any])
     if (forceAverage != null) __obj.updateDynamic("forceAverage")(forceAverage.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceSign)) __obj.updateDynamic("forceSign")(forceSign.asInstanceOf[js.Any])
-    if (mantissa != null) __obj.updateDynamic("mantissa")(mantissa.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceSign)) __obj.updateDynamic("forceSign")(forceSign.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mantissa)) __obj.updateDynamic("mantissa")(mantissa.get.asInstanceOf[js.Any])
     if (negative != null) __obj.updateDynamic("negative")(negative.asInstanceOf[js.Any])
-    if (!js.isUndefined(optionalCharacteristic)) __obj.updateDynamic("optionalCharacteristic")(optionalCharacteristic.asInstanceOf[js.Any])
-    if (!js.isUndefined(optionalMantissa)) __obj.updateDynamic("optionalMantissa")(optionalMantissa.asInstanceOf[js.Any])
+    if (!js.isUndefined(optionalCharacteristic)) __obj.updateDynamic("optionalCharacteristic")(optionalCharacteristic.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(optionalMantissa)) __obj.updateDynamic("optionalMantissa")(optionalMantissa.get.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     if (postfix != null) __obj.updateDynamic("postfix")(postfix.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(prefixSymbol)) __obj.updateDynamic("prefixSymbol")(prefixSymbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(spaceSeparated)) __obj.updateDynamic("spaceSeparated")(spaceSeparated.asInstanceOf[js.Any])
-    if (!js.isUndefined(spaceSeparatedCurrency)) __obj.updateDynamic("spaceSeparatedCurrency")(spaceSeparatedCurrency.asInstanceOf[js.Any])
-    if (!js.isUndefined(thousandSeparated)) __obj.updateDynamic("thousandSeparated")(thousandSeparated.asInstanceOf[js.Any])
-    if (totalLength != null) __obj.updateDynamic("totalLength")(totalLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(trimMantissa)) __obj.updateDynamic("trimMantissa")(trimMantissa.asInstanceOf[js.Any])
+    if (!js.isUndefined(prefixSymbol)) __obj.updateDynamic("prefixSymbol")(prefixSymbol.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spaceSeparated)) __obj.updateDynamic("spaceSeparated")(spaceSeparated.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spaceSeparatedCurrency)) __obj.updateDynamic("spaceSeparatedCurrency")(spaceSeparatedCurrency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(thousandSeparated)) __obj.updateDynamic("thousandSeparated")(thousandSeparated.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalLength)) __obj.updateDynamic("totalLength")(totalLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trimMantissa)) __obj.updateDynamic("trimMantissa")(trimMantissa.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Format]
   }
 }

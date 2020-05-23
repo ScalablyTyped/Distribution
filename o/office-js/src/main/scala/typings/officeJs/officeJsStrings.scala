@@ -2460,6 +2460,9 @@ object officeJsStrings {
   sealed trait Product extends js.Object
   
   @js.native
+  sealed trait Prompt extends js.Object
+  
+  @js.native
   sealed trait PyramidBarClustered extends js.Object
   
   @js.native
@@ -2631,6 +2634,9 @@ object officeJsStrings {
   sealed trait SameDataValidation extends js.Object
   
   @js.native
+  sealed trait Save extends js.Object
+  
+  @js.native
   sealed trait SbChar extends js.Object
   
   @js.native
@@ -2695,6 +2701,9 @@ object officeJsStrings {
   
   @js.native
   sealed trait SingleAccountant extends js.Object
+  
+  @js.native
+  sealed trait SkipSave extends js.Object
   
   @js.native
   sealed trait SlantDashDot extends js.Object
@@ -3174,6 +3183,9 @@ object officeJsStrings {
   sealed trait UNKNOWN extends js.Object
   
   @js.native
+  sealed trait Unhidden extends js.Object
+  
+  @js.native
   sealed trait UniqueValues extends js.Object
   
   @js.native
@@ -3322,6 +3334,9 @@ object officeJsStrings {
   
   @js.native
   sealed trait WorksheetFormatChanged extends js.Object
+  
+  @js.native
+  sealed trait WorksheetRowHiddenChanged extends js.Object
   
   @js.native
   sealed trait WorksheetRowSorted extends js.Object
@@ -5038,6 +5053,8 @@ object officeJsStrings {
   @scala.inline
   def Product: Product = "Product".asInstanceOf[Product]
   @scala.inline
+  def Prompt: Prompt = "Prompt".asInstanceOf[Prompt]
+  @scala.inline
   def PyramidBarClustered: PyramidBarClustered = "PyramidBarClustered".asInstanceOf[PyramidBarClustered]
   @scala.inline
   def PyramidBarStacked: PyramidBarStacked = "PyramidBarStacked".asInstanceOf[PyramidBarStacked]
@@ -5152,6 +5169,8 @@ object officeJsStrings {
   @scala.inline
   def SameDataValidation: SameDataValidation = "SameDataValidation".asInstanceOf[SameDataValidation]
   @scala.inline
+  def Save: Save = "Save".asInstanceOf[Save]
+  @scala.inline
   def SbChar: SbChar = "SbChar".asInstanceOf[SbChar]
   @scala.inline
   def ScaleFromBottomRight: ScaleFromBottomRight = "ScaleFromBottomRight".asInstanceOf[ScaleFromBottomRight]
@@ -5195,6 +5214,8 @@ object officeJsStrings {
   def Single: Single = "Single".asInstanceOf[Single]
   @scala.inline
   def SingleAccountant: SingleAccountant = "SingleAccountant".asInstanceOf[SingleAccountant]
+  @scala.inline
+  def SkipSave: SkipSave = "SkipSave".asInstanceOf[SkipSave]
   @scala.inline
   def SlantDashDot: SlantDashDot = "SlantDashDot".asInstanceOf[SlantDashDot]
   @scala.inline
@@ -5514,6 +5535,8 @@ object officeJsStrings {
   @scala.inline
   def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
   @scala.inline
+  def Unhidden: Unhidden = "Unhidden".asInstanceOf[Unhidden]
+  @scala.inline
   def UniqueValues: UniqueValues = "UniqueValues".asInstanceOf[UniqueValues]
   @scala.inline
   def Unknown_ : Unknown_ = "Unknown".asInstanceOf[Unknown_]
@@ -5613,6 +5636,8 @@ object officeJsStrings {
   def WorksheetDeleted: WorksheetDeleted = "WorksheetDeleted".asInstanceOf[WorksheetDeleted]
   @scala.inline
   def WorksheetFormatChanged: WorksheetFormatChanged = "WorksheetFormatChanged".asInstanceOf[WorksheetFormatChanged]
+  @scala.inline
+  def WorksheetRowHiddenChanged: WorksheetRowHiddenChanged = "WorksheetRowHiddenChanged".asInstanceOf[WorksheetRowHiddenChanged]
   @scala.inline
   def WorksheetRowSorted: WorksheetRowSorted = "WorksheetRowSorted".asInstanceOf[WorksheetRowSorted]
   @scala.inline

@@ -33,13 +33,13 @@ object ListPullRequestsInput {
   def apply(
     repositoryName: RepositoryName,
     authorArn: Arn = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[MaxResults] = js.undefined,
     nextToken: NextToken = null,
     pullRequestStatus: PullRequestStatusEnum = null
   ): ListPullRequestsInput = {
     val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any])
     if (authorArn != null) __obj.updateDynamic("authorArn")(authorArn.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (pullRequestStatus != null) __obj.updateDynamic("pullRequestStatus")(pullRequestStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPullRequestsInput]

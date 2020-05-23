@@ -18,7 +18,7 @@ trait AlexaObject[T /* <: Request */] extends Handler_[T] {
 
 object AlexaObject {
   @scala.inline
-  def apply[T /* <: Request */](
+  def apply[T](
     _callback: js.Any,
     _context: js.Any,
     _event: js.Any,

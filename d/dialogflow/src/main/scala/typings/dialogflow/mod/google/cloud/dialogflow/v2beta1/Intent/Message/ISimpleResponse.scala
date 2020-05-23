@@ -16,11 +16,15 @@ trait ISimpleResponse extends js.Object {
 
 object ISimpleResponse {
   @scala.inline
-  def apply(displayText: String = null, ssml: String = null, textToSpeech: String = null): ISimpleResponse = {
+  def apply(
+    displayText: js.UndefOr[Null | String] = js.undefined,
+    ssml: js.UndefOr[Null | String] = js.undefined,
+    textToSpeech: js.UndefOr[Null | String] = js.undefined
+  ): ISimpleResponse = {
     val __obj = js.Dynamic.literal()
-    if (displayText != null) __obj.updateDynamic("displayText")(displayText.asInstanceOf[js.Any])
-    if (ssml != null) __obj.updateDynamic("ssml")(ssml.asInstanceOf[js.Any])
-    if (textToSpeech != null) __obj.updateDynamic("textToSpeech")(textToSpeech.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayText)) __obj.updateDynamic("displayText")(displayText.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssml)) __obj.updateDynamic("ssml")(ssml.asInstanceOf[js.Any])
+    if (!js.isUndefined(textToSpeech)) __obj.updateDynamic("textToSpeech")(textToSpeech.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISimpleResponse]
   }
 }

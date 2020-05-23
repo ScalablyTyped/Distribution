@@ -2,8 +2,8 @@ package typings.reactNativeNavigation.touchablePreviewMod
 
 import typings.react.mod.Component
 import typings.reactNative.mod.GestureResponderEvent
-import typings.reactNativeNavigation.Anon0
-import typings.reactNativeNavigation.AnonChildren
+import typings.reactNativeNavigation.anon.Children
+import typings.reactNativeNavigation.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,8 +26,8 @@ class TouchablePreview ()
 @JSImport("react-native-navigation/lib/dist/adapters/TouchablePreview", "TouchablePreview")
 @js.native
 object TouchablePreview extends js.Object {
-  var defaultProps: Anon0 = js.native
+  var defaultProps: `0` = js.native
   var peeking: Boolean = js.native
-  var propTypes: AnonChildren = js.native
+  var propTypes: Children = js.native
 }
 

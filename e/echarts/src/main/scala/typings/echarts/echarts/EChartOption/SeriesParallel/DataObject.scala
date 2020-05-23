@@ -1,6 +1,6 @@
 package typings.echarts.echarts.EChartOption.SeriesParallel
 
-import typings.echarts.AnonLineStyleAnonShadowBlur
+import typings.echarts.anon.LineStyleShadowBlur
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +28,7 @@ trait DataObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-parallel.data.emphasis
     */
-  var emphasis: js.UndefOr[AnonLineStyleAnonShadowBlur] = js.undefined
+  var emphasis: js.UndefOr[LineStyleShadowBlur] = js.undefined
   /**
     * Line style.
     *
@@ -125,31 +125,31 @@ object DataObject {
   @scala.inline
   def apply(
     color: String = null,
-    emphasis: AnonLineStyleAnonShadowBlur = null,
+    emphasis: LineStyleShadowBlur = null,
     lineStyle: js.Object = null,
     name: String = null,
-    opacity: Int | Double = null,
-    shadowBlur: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
+    shadowBlur: js.UndefOr[Double] = js.undefined,
     shadowColor: String = null,
-    shadowOffsetX: Int | Double = null,
-    shadowOffsetY: Int | Double = null,
+    shadowOffsetX: js.UndefOr[Double] = js.undefined,
+    shadowOffsetY: js.UndefOr[Double] = js.undefined,
     `type`: String = null,
     value: js.Array[_] = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): DataObject = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
     if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (shadowBlur != null) __obj.updateDynamic("shadowBlur")(shadowBlur.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadowBlur)) __obj.updateDynamic("shadowBlur")(shadowBlur.get.asInstanceOf[js.Any])
     if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor.asInstanceOf[js.Any])
-    if (shadowOffsetX != null) __obj.updateDynamic("shadowOffsetX")(shadowOffsetX.asInstanceOf[js.Any])
-    if (shadowOffsetY != null) __obj.updateDynamic("shadowOffsetY")(shadowOffsetY.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadowOffsetX)) __obj.updateDynamic("shadowOffsetX")(shadowOffsetX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadowOffsetY)) __obj.updateDynamic("shadowOffsetY")(shadowOffsetY.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataObject]
   }
 }

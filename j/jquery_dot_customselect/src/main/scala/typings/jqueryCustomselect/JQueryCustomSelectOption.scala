@@ -19,8 +19,8 @@ object JQueryCustomSelectOption {
   ): JQueryCustomSelectOption = {
     val __obj = js.Dynamic.literal()
     if (customClass != null) __obj.updateDynamic("customClass")(customClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(mapClass)) __obj.updateDynamic("mapClass")(mapClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(mapStyle)) __obj.updateDynamic("mapStyle")(mapStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(mapClass)) __obj.updateDynamic("mapClass")(mapClass.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mapStyle)) __obj.updateDynamic("mapStyle")(mapStyle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryCustomSelectOption]
   }
 }

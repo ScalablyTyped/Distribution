@@ -1,6 +1,6 @@
 package typings.gulpTypescript.projectMod
 
-import typings.gulpTypescript.Typeofts
+import typings.gulpTypescript.anon.Typeofts
 import typings.gulpTypescript.compilerMod.ICompiler
 import typings.gulpTypescript.inputMod.FileCache
 import typings.gulpTypescript.outputMod.Output

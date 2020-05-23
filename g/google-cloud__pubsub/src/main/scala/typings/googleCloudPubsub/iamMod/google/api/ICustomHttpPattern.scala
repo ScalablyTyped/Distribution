@@ -14,10 +14,10 @@ trait ICustomHttpPattern extends js.Object {
 
 object ICustomHttpPattern {
   @scala.inline
-  def apply(kind: String = null, path: String = null): ICustomHttpPattern = {
+  def apply(kind: js.UndefOr[Null | String] = js.undefined, path: js.UndefOr[Null | String] = js.undefined): ICustomHttpPattern = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (!js.isUndefined(kind)) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (!js.isUndefined(path)) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomHttpPattern]
   }
 }

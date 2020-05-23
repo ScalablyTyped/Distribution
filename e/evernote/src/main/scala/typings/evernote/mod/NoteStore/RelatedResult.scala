@@ -1,6 +1,6 @@
 package typings.evernote.mod.NoteStore
 
-import typings.evernote.AnonCacheExpires
+import typings.evernote.anon.CacheExpires
 import typings.evernote.mod.Types.Note
 import typings.evernote.mod.Types.Notebook
 import typings.evernote.mod.Types.NotebookDescriptor
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSImport("evernote", "NoteStore.RelatedResult")
 @js.native
 class RelatedResult () extends js.Object {
-  def this(args: AnonCacheExpires) = this()
+  def this(args: CacheExpires) = this()
   var cacheExpires: js.UndefOr[Double] = js.native
   var cacheKey: js.UndefOr[String] = js.native
   var containingNotebooks: js.UndefOr[js.Array[NotebookDescriptor]] = js.native

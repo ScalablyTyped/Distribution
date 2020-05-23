@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object openProductSpecificView extends js.Object {
   /**
-  	 * 跳转微信商品页接口
-  	 */
+    * 跳转微信商品页接口
+    */
   def apply(params: IopenProductSpecificView): Unit = js.native
 }
 

@@ -1,6 +1,7 @@
 package typings.jqueryGridster
 
-import typings.std.Event_
+import typings.jqueryGridster.anon.Helper
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,9 +13,9 @@ trait GridsterResizable extends js.Object {
   var handle_class: js.UndefOr[String] = js.undefined
   var max_size: js.UndefOr[js.Array[Double]] = js.undefined
   var min_size: js.UndefOr[js.Array[Double]] = js.undefined
-  var resize: js.UndefOr[js.Function3[/* event */ Event_, /* ui */ GridsterUi, /* $el */ JQuery, Unit]] = js.undefined
-  var start: js.UndefOr[js.Function3[/* event */ Event_, /* ui */ AnonHelper, /* $el */ JQuery, Unit]] = js.undefined
-  var stop: js.UndefOr[js.Function3[/* event */ Event_, /* ui */ AnonHelper, /* $el */ JQuery, Unit]] = js.undefined
+  var resize: js.UndefOr[js.Function3[/* event */ Event, /* ui */ GridsterUi, /* $el */ JQuery, Unit]] = js.undefined
+  var start: js.UndefOr[js.Function3[/* event */ Event, /* ui */ Helper, /* $el */ JQuery, Unit]] = js.undefined
+  var stop: js.UndefOr[js.Function3[/* event */ Event, /* ui */ Helper, /* $el */ JQuery, Unit]] = js.undefined
 }
 
 object GridsterResizable {
@@ -26,13 +27,13 @@ object GridsterResizable {
     handle_class: String = null,
     max_size: js.Array[Double] = null,
     min_size: js.Array[Double] = null,
-    resize: (/* event */ Event_, /* ui */ GridsterUi, /* $el */ JQuery) => Unit = null,
-    start: (/* event */ Event_, /* ui */ AnonHelper, /* $el */ JQuery) => Unit = null,
-    stop: (/* event */ Event_, /* ui */ AnonHelper, /* $el */ JQuery) => Unit = null
+    resize: (/* event */ Event, /* ui */ GridsterUi, /* $el */ JQuery) => Unit = null,
+    start: (/* event */ Event, /* ui */ Helper, /* $el */ JQuery) => Unit = null,
+    stop: (/* event */ Event, /* ui */ Helper, /* $el */ JQuery) => Unit = null
   ): GridsterResizable = {
     val __obj = js.Dynamic.literal()
     if (axes != null) __obj.updateDynamic("axes")(axes.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (handle_append_to != null) __obj.updateDynamic("handle_append_to")(handle_append_to.asInstanceOf[js.Any])
     if (handle_class != null) __obj.updateDynamic("handle_class")(handle_class.asInstanceOf[js.Any])
     if (max_size != null) __obj.updateDynamic("max_size")(max_size.asInstanceOf[js.Any])

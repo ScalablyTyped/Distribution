@@ -1,5 +1,7 @@
 package typings.twitchExt
 
+import typings.twitchExt.anon.PartialTwitchExtContext
+import typings.twitchExt.anon.X
 import typings.twitchExt.twitchExtBooleans.`false`
 import typings.twitchExt.twitchExtBooleans.`true`
 import typings.twitchExt.twitchExtStrings.arePlayerControlsVisible
@@ -31,111 +33,111 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TwitchExt extends js.Object {
   /**
-  	 * @see https://dev.twitch.tv/docs/extensions/reference/#twitch-extension-actions
-  	 */
+    * @see https://dev.twitch.tv/docs/extensions/reference/#twitch-extension-actions
+    */
   var actions: TwitchExtActions = js.native
   /**
-  	 * @see https://dev.twitch.tv/docs/extensions/bits/#javascript-helper
-  	 */
+    * @see https://dev.twitch.tv/docs/extensions/bits/#javascript-helper
+    */
   var bits: TwitchExtBits = js.native
   /**
-  	 * @see https://dev.twitch.tv/docs/extensions/reference/#helper-configuration
-  	 */
+    * @see https://dev.twitch.tv/docs/extensions/reference/#helper-configuration
+    */
   var configuration: TwitchExtConfiguration = js.native
   /**
-  	 * This encodes the environment. For external users, this is always production.
-  	 */
+    * This encodes the environment. For external users, this is always production.
+    */
   var environment: production = js.native
   /**
-  	 * @see https://dev.twitch.tv/docs/extensions/reference/#twitch-extension-feature-flags
-  	 */
+    * @see https://dev.twitch.tv/docs/extensions/reference/#twitch-extension-feature-flags
+    */
   var features: TwitchExtFeatures = js.native
   /**
-  	 * Helper methods for the Twitch Extension rig.
-  	 * @see https://github.com/twitchdev/developer-rig
-  	 */
+    * Helper methods for the Twitch Extension rig.
+    * @see https://github.com/twitchdev/developer-rig
+    */
   var rig: TwitchExtRig = js.native
   /**
-  	 * This encodes the Helper version in 1.1.1 (semantic versioning) format.
-  	 */
+    * This encodes the Helper version in 1.1.1 (semantic versioning) format.
+    */
   var version: String = js.native
   /**
-  	 * This function binds the callback to listen to the target topic.
-  	 *
-  	 * @param target Target topic. Often this is "broadcast" but it might be "whisper-<userId>".
-  	 * @param callback These fields correspond to the values in the send() message, except the message is always a string.
-  	 * @see https://dev.twitch.tv/docs/extensions/reference/#listen
-  	 */
+    * This function binds the callback to listen to the target topic.
+    *
+    * @param target Target topic. Often this is "broadcast" but it might be "whisper-<userId>".
+    * @param callback These fields correspond to the values in the send() message, except the message is always a string.
+    * @see https://dev.twitch.tv/docs/extensions/reference/#listen
+    */
   def listen(
     target: String,
     callback: js.Function3[/* target */ String, /* contentType */ String, /* message */ String, Unit]
   ): Unit = js.native
   /**
-  	 * This function binds the callback to the initial values and changes to the authorization data.
-  	 *
-  	 * @param authCallback This callback is fired each time the JWT is refreshed.
-  	 * @see https://dev.twitch.tv/docs/extensions/reference/#onauthorized
-  	 */
+    * This function binds the callback to the initial values and changes to the authorization data.
+    *
+    * @param authCallback This callback is fired each time the JWT is refreshed.
+    * @see https://dev.twitch.tv/docs/extensions/reference/#onauthorized
+    */
   def onAuthorized(authCallback: js.Function1[/* auth */ TwitchExtAuthorized, Unit]): Unit = js.native
   /**
-  	 * This function binds the callback to the initial values and changes to the context.
-  	 *
-  	 * @param contextCallback This callback is fired when the context of an extension is fired.
-  	 * @see https://dev.twitch.tv/docs/extensions/reference/#oncontext
-  	 */
+    * This function binds the callback to the initial values and changes to the context.
+    *
+    * @param contextCallback This callback is fired when the context of an extension is fired.
+    * @see https://dev.twitch.tv/docs/extensions/reference/#oncontext
+    */
   def onContext(
     contextCallback: js.Function2[
       /* context */ PartialTwitchExtContext, 
       /* changed */ js.Array[
-        isPaused | bufferSize | isTheatreMode | isMuted | isFullScreen | hlsLatencyBroadcaster | volume | videoResolution | displayResolution | playbackMode | mode | arePlayerControlsVisible | bitrate | game | language | theme
+        /* keyof twitch-ext.anon.PartialTwitchExtContext */ isPaused | bufferSize | isTheatreMode | isMuted | isFullScreen | hlsLatencyBroadcaster | volume | videoResolution | displayResolution | playbackMode | mode | arePlayerControlsVisible | bitrate | game | language | theme
       ], 
       Unit
     ]
   ): Unit = js.native
   /**
-  	 * This function binds the callback to any internal error.
-  	 *
-  	 * @param errorCallback This callback is fired if any errors are generated by the extension helper.
-  	 * @see https://dev.twitch.tv/docs/extensions/reference/#onerror
-  	 */
+    * This function binds the callback to any internal error.
+    *
+    * @param errorCallback This callback is fired if any errors are generated by the extension helper.
+    * @see https://dev.twitch.tv/docs/extensions/reference/#onerror
+    */
   def onError(errorCallback: js.Function1[/* errorValue */ js.Any, Unit]): Unit = js.native
   /**
-  	 * This function registers a callback that gets called whenever an extension changes position in the player. This
-  	 * occurs only for video-component extensions. This also is triggered as the extension loads.
-  	 *
-  	 * @param callback This callback is called whenever an extension changes position in the player.
-  	 * @see https://dev.twitch.tv/docs/extensions/reference/#onpositionchanged
-  	 */
-  def onPositionChanged(callback: js.Function1[/* position */ AnonX, Unit]): Unit = js.native
+    * This function registers a callback that gets called whenever an extension changes position in the player. This
+    * occurs only for video-component extensions. This also is triggered as the extension loads.
+    *
+    * @param callback This callback is called whenever an extension changes position in the player.
+    * @see https://dev.twitch.tv/docs/extensions/reference/#onpositionchanged
+    */
+  def onPositionChanged(callback: js.Function1[/* position */ X, Unit]): Unit = js.native
   /**
-  	 * This function registers a callback that gets called whenever an extension is hidden/re-shown. (This occurs only
-  	 * for mobile or component extensions.) When an extension is not visible in the mobile app, it does not receive
-  	 * onContext updates and must perform only minimal work in the background.
-  	 *
-  	 * @param callback This callback is called whenever an extension is hidden/re-shown.
-  	 * @see https://dev.twitch.tv/docs/extensions/reference/#onvisibilitychanged
-  	 */
+    * This function registers a callback that gets called whenever an extension is hidden/re-shown. (This occurs only
+    * for mobile or component extensions.) When an extension is not visible in the mobile app, it does not receive
+    * onContext updates and must perform only minimal work in the background.
+    *
+    * @param callback This callback is called whenever an extension is hidden/re-shown.
+    * @see https://dev.twitch.tv/docs/extensions/reference/#onvisibilitychanged
+    */
   @JSName("onVisibilityChanged")
   def onVisibilityChanged_false(callback: js.Function1[`false`, Unit]): Unit = js.native
   @JSName("onVisibilityChanged")
   def onVisibilityChanged_true(callback: js.Function2[`true`, /* context */ PartialTwitchExtContext, Unit]): Unit = js.native
   def send(target: String, contentType: String, message: String): Unit = js.native
   /**
-  	 * This function can be called by the front end to send directly to PubSub.
-  	 *
-  	 * @param target Target topic. Often this is "broadcast" but it might be "whisper-<userId>".
-  	 * @param contentType type of the serialized message; for example, "application/json".
-  	 * @param message Either an object that will be automatically serialized as JSON or a string.
-  	 * @see https://dev.twitch.tv/docs/extensions/reference/#send
-  	 */
+    * This function can be called by the front end to send directly to PubSub.
+    *
+    * @param target Target topic. Often this is "broadcast" but it might be "whisper-<userId>".
+    * @param contentType type of the serialized message; for example, "application/json".
+    * @param message Either an object that will be automatically serialized as JSON or a string.
+    * @see https://dev.twitch.tv/docs/extensions/reference/#send
+    */
   def send(target: String, contentType: String, message: js.Object): Unit = js.native
   /**
-  	 * This function unbinds the listen callback from the target.
-  	 *
-  	 * @param target Target topic. Often this is "broadcast" but it might be "whisper-<userId>".
-  	 * @param callback These fields correspond to the values in the send() message, except the message is always a string.
-  	 * @see https://dev.twitch.tv/docs/extensions/reference/#unlisten
-  	 */
+    * This function unbinds the listen callback from the target.
+    *
+    * @param target Target topic. Often this is "broadcast" but it might be "whisper-<userId>".
+    * @param callback These fields correspond to the values in the send() message, except the message is always a string.
+    * @see https://dev.twitch.tv/docs/extensions/reference/#unlisten
+    */
   def unlisten(
     target: String,
     callback: js.Function3[/* target */ String, /* contentType */ String, /* message */ String, Unit]

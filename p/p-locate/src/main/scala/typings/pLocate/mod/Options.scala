@@ -20,10 +20,10 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(concurrency: Int | Double = null, preserveOrder: js.UndefOr[Boolean] = js.undefined): Options = {
+  def apply(concurrency: js.UndefOr[Double] = js.undefined, preserveOrder: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveOrder)) __obj.updateDynamic("preserveOrder")(preserveOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(concurrency)) __obj.updateDynamic("concurrency")(concurrency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveOrder)) __obj.updateDynamic("preserveOrder")(preserveOrder.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

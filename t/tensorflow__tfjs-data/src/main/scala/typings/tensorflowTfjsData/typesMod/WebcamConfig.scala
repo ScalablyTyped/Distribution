@@ -46,15 +46,15 @@ object WebcamConfig {
     centerCrop: js.UndefOr[Boolean] = js.undefined,
     deviceId: String = null,
     facingMode: user | environment = null,
-    resizeHeight: Int | Double = null,
-    resizeWidth: Int | Double = null
+    resizeHeight: js.UndefOr[Double] = js.undefined,
+    resizeWidth: js.UndefOr[Double] = js.undefined
   ): WebcamConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(centerCrop)) __obj.updateDynamic("centerCrop")(centerCrop.asInstanceOf[js.Any])
+    if (!js.isUndefined(centerCrop)) __obj.updateDynamic("centerCrop")(centerCrop.get.asInstanceOf[js.Any])
     if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
     if (facingMode != null) __obj.updateDynamic("facingMode")(facingMode.asInstanceOf[js.Any])
-    if (resizeHeight != null) __obj.updateDynamic("resizeHeight")(resizeHeight.asInstanceOf[js.Any])
-    if (resizeWidth != null) __obj.updateDynamic("resizeWidth")(resizeWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizeHeight)) __obj.updateDynamic("resizeHeight")(resizeHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizeWidth)) __obj.updateDynamic("resizeWidth")(resizeWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebcamConfig]
   }
 }

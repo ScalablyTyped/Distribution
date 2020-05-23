@@ -13,12 +13,10 @@ trait ServerTimestampBehavior extends js.Object
 
 object ServerTimestampBehavior {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def estimate: typings.firebaseFirestore.firebaseFirestoreStrings.estimate = "estimate".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.estimate]
   @scala.inline
-  def estimate: typings.firebaseFirestore.firebaseFirestoreStrings.estimate = this.cast("estimate")
+  def none: typings.firebaseFirestore.firebaseFirestoreStrings.none = "none".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.none]
   @scala.inline
-  def none: typings.firebaseFirestore.firebaseFirestoreStrings.none = this.cast("none")
-  @scala.inline
-  def previous: typings.firebaseFirestore.firebaseFirestoreStrings.previous = this.cast("previous")
+  def previous: typings.firebaseFirestore.firebaseFirestoreStrings.previous = "previous".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.previous]
 }
 

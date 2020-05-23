@@ -12,21 +12,21 @@ sealed trait TaskPanelKind extends js.Object
 @js.native
 object TaskPanelKind extends js.Object {
   /**
-  		 * Uses a dedicated panel for this tasks. The panel is not
-  		 * shared with other tasks.
-  		 */
+    * Uses a dedicated panel for this tasks. The panel is not
+    * shared with other tasks.
+    */
   @js.native
   sealed trait Dedicated extends TaskPanelKind
   
   /**
-  		 * Creates a new panel whenever this task is executed.
-  		 */
+    * Creates a new panel whenever this task is executed.
+    */
   @js.native
   sealed trait New extends TaskPanelKind
   
   /**
-  		 * Shares a panel with other tasks. This is the default.
-  		 */
+    * Shares a panel with other tasks. This is the default.
+    */
   @js.native
   sealed trait Shared extends TaskPanelKind
   

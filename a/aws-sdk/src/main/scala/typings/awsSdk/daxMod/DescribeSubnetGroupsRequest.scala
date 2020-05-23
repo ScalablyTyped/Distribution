@@ -23,12 +23,12 @@ trait DescribeSubnetGroupsRequest extends js.Object {
 object DescribeSubnetGroupsRequest {
   @scala.inline
   def apply(
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[IntegerOptional] = js.undefined,
     NextToken: String = null,
     SubnetGroupNames: SubnetGroupNameList = null
   ): DescribeSubnetGroupsRequest = {
     val __obj = js.Dynamic.literal()
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (SubnetGroupNames != null) __obj.updateDynamic("SubnetGroupNames")(SubnetGroupNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSubnetGroupsRequest]

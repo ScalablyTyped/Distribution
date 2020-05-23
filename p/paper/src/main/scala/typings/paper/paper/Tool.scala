@@ -15,9 +15,8 @@ import scala.scalajs.js.annotation._
   * {@link #onMouseUp}) or a keyboard handler function ({@link #onKeyDown},
   * {@link #onKeyUp}).
   */
-@JSGlobal("paper.Tool")
 @js.native
-class Tool () extends js.Object {
+trait Tool extends js.Object {
   var fixedDistance: Double = js.native
   /** 
     * The maximum distance the mouse has to drag before firing the onMouseDrag

@@ -1,5 +1,6 @@
 package typings.awsSdkS3RequestPresigner
 
+import typings.awsSdkS3RequestPresigner.anon.PartialBySignatureV4InitS
 import typings.awsSdkTypes.signatureMod.RequestPresigner
 import typings.std.Exclude
 import typings.std.Partial

@@ -1,6 +1,6 @@
 package typings.aceDiff.mod
 
-import typings.aceDiff.AnonLeft
+import typings.aceDiff.anon.Left
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ class ^ protected () extends AceDiff {
   /* CompleteClass */
   override def diff(): Unit = js.native
   /* CompleteClass */
-  override def getEditors(): AnonLeft = js.native
+  override def getEditors(): Left = js.native
   /* CompleteClass */
   override def getNumDiffs(): Double = js.native
   /* CompleteClass */

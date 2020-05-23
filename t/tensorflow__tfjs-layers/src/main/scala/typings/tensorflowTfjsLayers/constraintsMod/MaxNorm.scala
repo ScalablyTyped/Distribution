@@ -19,6 +19,6 @@ class MaxNorm protected () extends Constraint {
 @js.native
 object MaxNorm extends js.Object {
   /** @nocollapse */
-  val className: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MaxNorm = js.native
+  val className: /* "MaxNorm" */ String = js.native
 }
 

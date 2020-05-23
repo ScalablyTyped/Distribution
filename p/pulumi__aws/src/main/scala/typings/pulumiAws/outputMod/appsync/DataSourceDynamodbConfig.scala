@@ -24,7 +24,7 @@ object DataSourceDynamodbConfig {
   @scala.inline
   def apply(region: String, tableName: String, useCallerCredentials: js.UndefOr[Boolean] = js.undefined): DataSourceDynamodbConfig = {
     val __obj = js.Dynamic.literal(region = region.asInstanceOf[js.Any], tableName = tableName.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCallerCredentials)) __obj.updateDynamic("useCallerCredentials")(useCallerCredentials.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCallerCredentials)) __obj.updateDynamic("useCallerCredentials")(useCallerCredentials.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceDynamodbConfig]
   }
 }

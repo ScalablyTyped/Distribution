@@ -10,9 +10,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.Validation")
 @js.native
-class Validation protected () extends js.Object {
+trait Validation extends js.Object {
   val AlertStyle: Double = js.native
   val Application: typings.activexExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native

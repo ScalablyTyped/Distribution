@@ -14,11 +14,11 @@ trait ManagedAppPolicyDeploymentSummaryPerApp extends js.Object {
 object ManagedAppPolicyDeploymentSummaryPerApp {
   @scala.inline
   def apply(
-    configurationAppliedUserCount: Int | Double = null,
+    configurationAppliedUserCount: js.UndefOr[Double] = js.undefined,
     mobileAppIdentifier: MobileAppIdentifier = null
   ): ManagedAppPolicyDeploymentSummaryPerApp = {
     val __obj = js.Dynamic.literal()
-    if (configurationAppliedUserCount != null) __obj.updateDynamic("configurationAppliedUserCount")(configurationAppliedUserCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(configurationAppliedUserCount)) __obj.updateDynamic("configurationAppliedUserCount")(configurationAppliedUserCount.get.asInstanceOf[js.Any])
     if (mobileAppIdentifier != null) __obj.updateDynamic("mobileAppIdentifier")(mobileAppIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedAppPolicyDeploymentSummaryPerApp]
   }

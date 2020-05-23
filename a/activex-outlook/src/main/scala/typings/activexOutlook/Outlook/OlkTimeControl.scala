@@ -8,30 +8,59 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Outlook.OlkTimeControl")
-@js.native
-class OlkTimeControl protected () extends js.Object {
-  var AutoSize: Boolean = js.native
-  var AutoWordSelect: Boolean = js.native
-  var BackColor: OLE_COLOR = js.native
-  var BackStyle: OlBackStyle = js.native
-  var Enabled: Boolean = js.native
-  var EnterFieldBehavior: OlEnterFieldBehavior = js.native
-  val Font: StdFont = js.native
-  var ForeColor: OLE_COLOR = js.native
-  var HideSelection: Boolean = js.native
-  var IntervalTime: VarDate = js.native
-  var Locked: Boolean = js.native
-  var MouseIcon: StdPicture = js.native
-  var MousePointer: OlMousePointer = js.native
+trait OlkTimeControl extends js.Object {
+  var AutoSize: Boolean
+  var AutoWordSelect: Boolean
+  var BackColor: OLE_COLOR
+  var BackStyle: OlBackStyle
+  var Enabled: Boolean
+  var EnterFieldBehavior: OlEnterFieldBehavior
+  val Font: StdFont
+  var ForeColor: OLE_COLOR
+  var HideSelection: Boolean
+  var IntervalTime: VarDate
+  var Locked: Boolean
+  var MouseIcon: StdPicture
+  var MousePointer: OlMousePointer
   @JSName("Outlook.OlkTimeControl_typekey")
-  var OutlookDotOlkTimeControl_typekey: OlkTimeControl = js.native
-  var ReferenceTime: VarDate = js.native
-  var Style: OlTimeStyle = js.native
-  var Text: String = js.native
-  var TextAlign: OlTextAlign = js.native
-  var Time: VarDate = js.native
-  var Value: js.Any = js.native
-  def DropDown(): Unit = js.native
+  var OutlookDotOlkTimeControl_typekey: OlkTimeControl
+  var ReferenceTime: VarDate
+  var Style: OlTimeStyle
+  var Text: String
+  var TextAlign: OlTextAlign
+  var Time: VarDate
+  var Value: js.Any
+  def DropDown(): Unit
+}
+
+object OlkTimeControl {
+  @scala.inline
+  def apply(
+    AutoSize: Boolean,
+    AutoWordSelect: Boolean,
+    BackColor: OLE_COLOR,
+    BackStyle: OlBackStyle,
+    DropDown: () => Unit,
+    Enabled: Boolean,
+    EnterFieldBehavior: OlEnterFieldBehavior,
+    Font: StdFont,
+    ForeColor: OLE_COLOR,
+    HideSelection: Boolean,
+    IntervalTime: VarDate,
+    Locked: Boolean,
+    MouseIcon: StdPicture,
+    MousePointer: OlMousePointer,
+    OutlookDotOlkTimeControl_typekey: OlkTimeControl,
+    ReferenceTime: VarDate,
+    Style: OlTimeStyle,
+    Text: String,
+    TextAlign: OlTextAlign,
+    Time: VarDate,
+    Value: js.Any
+  ): OlkTimeControl = {
+    val __obj = js.Dynamic.literal(AutoSize = AutoSize.asInstanceOf[js.Any], AutoWordSelect = AutoWordSelect.asInstanceOf[js.Any], BackColor = BackColor.asInstanceOf[js.Any], BackStyle = BackStyle.asInstanceOf[js.Any], DropDown = js.Any.fromFunction0(DropDown), Enabled = Enabled.asInstanceOf[js.Any], EnterFieldBehavior = EnterFieldBehavior.asInstanceOf[js.Any], Font = Font.asInstanceOf[js.Any], ForeColor = ForeColor.asInstanceOf[js.Any], HideSelection = HideSelection.asInstanceOf[js.Any], IntervalTime = IntervalTime.asInstanceOf[js.Any], Locked = Locked.asInstanceOf[js.Any], MouseIcon = MouseIcon.asInstanceOf[js.Any], MousePointer = MousePointer.asInstanceOf[js.Any], ReferenceTime = ReferenceTime.asInstanceOf[js.Any], Style = Style.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any], TextAlign = TextAlign.asInstanceOf[js.Any], Time = Time.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook.OlkTimeControl_typekey")(OutlookDotOlkTimeControl_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OlkTimeControl]
+  }
 }
 

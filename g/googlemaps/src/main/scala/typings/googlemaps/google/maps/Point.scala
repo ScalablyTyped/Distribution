@@ -4,16 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.maps.Point")
-@js.native
-class Point protected () extends js.Object {
-  /** A point on a two-dimensional plane. */
-  def this(x: Double, y: Double) = this()
+trait Point extends js.Object {
   /** The X coordinate */
-  var x: Double = js.native
+  var x: Double
   /** The Y coordinate */
-  var y: Double = js.native
+  var y: Double
   /** Compares two Points */
-  def equals(other: Point): Boolean = js.native
+  def equals(other: Point): Boolean
+}
+
+object Point {
+  @scala.inline
+  def apply(equals: Point => Boolean, x: Double, y: Double): Point = {
+    val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals), x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Point]
+  }
 }
 

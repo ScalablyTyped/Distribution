@@ -32,7 +32,6 @@ object IFieldFilterOpEnum {
     values: () => js.Array[FieldFilterOp]
   ): IFieldFilterOpEnum = {
     val __obj = js.Dynamic.literal(ARRAY_CONTAINS = ARRAY_CONTAINS.asInstanceOf[js.Any], ARRAY_CONTAINS_ANY = ARRAY_CONTAINS_ANY.asInstanceOf[js.Any], EQUAL = EQUAL.asInstanceOf[js.Any], GREATER_THAN = GREATER_THAN.asInstanceOf[js.Any], GREATER_THAN_OR_EQUAL = GREATER_THAN_OR_EQUAL.asInstanceOf[js.Any], IN = IN.asInstanceOf[js.Any], LESS_THAN = LESS_THAN.asInstanceOf[js.Any], LESS_THAN_OR_EQUAL = LESS_THAN_OR_EQUAL.asInstanceOf[js.Any], OPERATOR_UNSPECIFIED = OPERATOR_UNSPECIFIED.asInstanceOf[js.Any], values = js.Any.fromFunction0(values))
-  
     __obj.asInstanceOf[IFieldFilterOpEnum]
   }
 }

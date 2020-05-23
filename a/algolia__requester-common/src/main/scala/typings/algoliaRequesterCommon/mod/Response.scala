@@ -8,15 +8,15 @@ trait Response extends js.Object {
   /**
     * The raw response from the server.
     */
-  val content: String
+  var content: String
   /**
     * If the request timeouted.
     */
-  val isTimedOut: Boolean
+  var isTimedOut: Boolean
   /**
     * The http status code.
     */
-  val status: Double
+  var status: Double
 }
 
 object Response {

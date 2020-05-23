@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.reactHotkeys.mod._KeySequence because Already inherited */ trait ExtendedKeyMapOptions extends KeyMapOptions {
   var description: js.UndefOr[String] = js.undefined
   var group: js.UndefOr[String] = js.undefined

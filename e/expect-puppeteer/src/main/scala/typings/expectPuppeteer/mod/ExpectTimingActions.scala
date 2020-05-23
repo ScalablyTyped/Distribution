@@ -24,11 +24,15 @@ trait ExpectTimingActions extends js.Object {
 
 object ExpectTimingActions {
   @scala.inline
-  def apply(delay: Int | Double = null, polling: ExpectPolling = null, timeout: Int | Double = null): ExpectTimingActions = {
+  def apply(
+    delay: js.UndefOr[Double] = js.undefined,
+    polling: ExpectPolling = null,
+    timeout: js.UndefOr[Double] = js.undefined
+  ): ExpectTimingActions = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (polling != null) __obj.updateDynamic("polling")(polling.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpectTimingActions]
   }
 }

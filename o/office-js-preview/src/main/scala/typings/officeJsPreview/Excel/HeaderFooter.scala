@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.HeaderFooterData
 import typings.officeJsPreview.Excel.Interfaces.HeaderFooterLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.HeaderFooterUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,21 +13,20 @@ import scala.scalajs.js.annotation._
 /**
   * [Api set: ExcelApi 1.9]
   */
-@JSGlobal("Excel.HeaderFooter")
 @js.native
-class HeaderFooter () extends ClientObject {
+trait HeaderFooter extends ClientObject {
   /**
     *
-    * Gets or sets the center footer of the worksheet.
-    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+    * The center footer of the worksheet.
+    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
     * [Api set: ExcelApi 1.9]
     */
   var centerFooter: String = js.native
   /**
     *
-    * Gets or sets the center header of the worksheet.
-    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+    * The center header of the worksheet.
+    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -37,32 +36,32 @@ class HeaderFooter () extends ClientObject {
   var context_HeaderFooter: RequestContext = js.native
   /**
     *
-    * Gets or sets the left footer of the worksheet.
-    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+    * The left footer of the worksheet.
+    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
     * [Api set: ExcelApi 1.9]
     */
   var leftFooter: String = js.native
   /**
     *
-    * Gets or sets the left header of the worksheet.
-    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+    * The left header of the worksheet.
+    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
     * [Api set: ExcelApi 1.9]
     */
   var leftHeader: String = js.native
   /**
     *
-    * Gets or sets the right footer of the worksheet.
-    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+    * The right footer of the worksheet.
+    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
     * [Api set: ExcelApi 1.9]
     */
   var rightFooter: String = js.native
   /**
     *
-    * Gets or sets the right header of the worksheet.
-    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+    * The right header of the worksheet.
+    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -74,7 +73,7 @@ class HeaderFooter () extends ClientObject {
     */
   def load(): HeaderFooter = js.native
   def load(options: HeaderFooterLoadOptions): HeaderFooter = js.native
-  def load(propertyNamesAndPaths: AnonExpand): HeaderFooter = js.native
+  def load(propertyNamesAndPaths: Expand): HeaderFooter = js.native
   def load(propertyNames: String): HeaderFooter = js.native
   def load(propertyNames: js.Array[String]): HeaderFooter = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

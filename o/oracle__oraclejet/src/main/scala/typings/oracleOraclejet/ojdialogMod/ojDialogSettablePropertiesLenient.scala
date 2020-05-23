@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojdialogMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.AnonLabelCloseIcon
+import typings.oracleOraclejet.anon.LabelCloseIcon
 import typings.oracleOraclejet.ojdialogMod.ojDialog.Position
 import typings.oracleOraclejet.oracleOraclejetStrings.`title-bar`
 import typings.oracleOraclejet.oracleOraclejetStrings.escape
@@ -27,13 +27,13 @@ trait ojDialogSettablePropertiesLenient
   var position: js.UndefOr[Position] = js.undefined
   var resizeBehavior: js.UndefOr[resizable | none] = js.undefined
   var role: js.UndefOr[String] = js.undefined
-  var translations: js.UndefOr[AnonLabelCloseIcon] = js.undefined
+  var translations: js.UndefOr[LabelCloseIcon] = js.undefined
 }
 
 object ojDialogSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     cancelBehavior: icon | escape | none = null,
     dialogTitle: String = null,
     dragAffordance: `title-bar` | none = null,
@@ -42,7 +42,7 @@ object ojDialogSettablePropertiesLenient {
     position: Position = null,
     resizeBehavior: resizable | none = null,
     role: String = null,
-    translations: AnonLabelCloseIcon = null
+    translations: LabelCloseIcon = null
   ): ojDialogSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

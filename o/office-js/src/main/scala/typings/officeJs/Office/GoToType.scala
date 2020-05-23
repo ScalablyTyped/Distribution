@@ -1,6 +1,5 @@
 package typings.officeJs.Office
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,22 +45,6 @@ object GoToType extends js.Object {
     */
   @js.native
   sealed trait Slide extends GoToType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[GoToType with Double] = js.native
-  /* 0 */ @js.native
-  object Binding
-    extends TopLevel[typings.officeJs.Office.GoToType.Binding with Double]
-  
-  /* 3 */ @js.native
-  object Index
-    extends TopLevel[typings.officeJs.Office.GoToType.Index with Double]
-  
-  /* 1 */ @js.native
-  object NamedItem extends TopLevel[NamedItem with Double]
-  
-  /* 2 */ @js.native
-  object Slide extends TopLevel[Slide with Double]
   
 }
 

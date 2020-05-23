@@ -1,6 +1,6 @@
 package typings.when.mod
 
-import typings.when.When.Promise_
+import typings.when.When.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,20 +23,20 @@ object unfold extends js.Object {
   def apply[T, U](
     unspool: js.Function1[
       /* seed */ U, 
-      (js.Tuple2[T | Promise_[T], U | Promise_[U]]) | (Promise_[js.Tuple2[T | Promise_[T], U | Promise_[U]]])
+      (js.Tuple2[T | Promise[T], U | Promise[U]]) | (Promise[js.Tuple2[T | Promise[T], U | Promise[U]]])
     ],
-    predicate: js.Function1[/* value */ U, Boolean | Promise_[Boolean]],
-    handler: js.Function1[/* value */ T, Promise_[_] | Unit],
+    predicate: js.Function1[/* value */ U, Boolean | Promise[Boolean]],
+    handler: js.Function1[/* value */ T, Promise[_] | Unit],
     seed: U
-  ): Promise_[Unit] = js.native
+  ): Promise[Unit] = js.native
   def apply[T, U](
     unspool: js.Function1[
       /* seed */ U, 
-      (js.Tuple2[T | Promise_[T], U | Promise_[U]]) | (Promise_[js.Tuple2[T | Promise_[T], U | Promise_[U]]])
+      (js.Tuple2[T | Promise[T], U | Promise[U]]) | (Promise[js.Tuple2[T | Promise[T], U | Promise[U]]])
     ],
-    predicate: js.Function1[/* value */ U, Boolean | Promise_[Boolean]],
-    handler: js.Function1[/* value */ T, Promise_[_] | Unit],
-    seed: Promise_[U]
-  ): Promise_[Unit] = js.native
+    predicate: js.Function1[/* value */ U, Boolean | Promise[Boolean]],
+    handler: js.Function1[/* value */ T, Promise[_] | Unit],
+    seed: Promise[U]
+  ): Promise[Unit] = js.native
 }
 

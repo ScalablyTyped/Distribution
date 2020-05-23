@@ -34,7 +34,7 @@ trait VNodeData
 object VNodeData {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     args: js.Array[_] = null,
     attachData: AttachData = null,
     attrs: Attrs = null,

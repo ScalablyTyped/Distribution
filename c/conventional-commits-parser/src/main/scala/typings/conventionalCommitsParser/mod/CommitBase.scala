@@ -65,19 +65,14 @@ object CommitBase {
     header: Field = null,
     merge: Field = null,
     revert: Revert = null,
-    scope: Field = null,
-    subject: Field = null,
-    `type`: Field = null
+    scope: js.UndefOr[Null | Field] = js.undefined,
+    subject: js.UndefOr[Null | Field] = js.undefined,
+    `type`: js.UndefOr[Null | Field] = js.undefined
   ): CommitBase = {
-    val __obj = js.Dynamic.literal(mentions = mentions.asInstanceOf[js.Any], notes = notes.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (merge != null) __obj.updateDynamic("merge")(merge.asInstanceOf[js.Any])
-    if (revert != null) __obj.updateDynamic("revert")(revert.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(mentions = mentions.asInstanceOf[js.Any], notes = notes.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], merge = merge.asInstanceOf[js.Any], revert = revert.asInstanceOf[js.Any])
+    if (!js.isUndefined(scope)) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommitBase]
   }
 }

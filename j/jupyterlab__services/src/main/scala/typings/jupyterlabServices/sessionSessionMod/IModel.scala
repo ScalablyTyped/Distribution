@@ -24,9 +24,8 @@ object IModel {
     `type`: String,
     kernel: typings.jupyterlabServices.kernelRestapiMod.IModel = null
   ): IModel = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], kernel = kernel.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (kernel != null) __obj.updateDynamic("kernel")(kernel.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModel]
   }
 }

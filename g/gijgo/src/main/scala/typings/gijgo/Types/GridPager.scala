@@ -16,13 +16,13 @@ object GridPager {
   @scala.inline
   def apply(
     leftControls: js.Array[_] = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     rightControls: js.Array[_] = null,
     sizes: js.Array[Double] = null
   ): GridPager = {
     val __obj = js.Dynamic.literal()
     if (leftControls != null) __obj.updateDynamic("leftControls")(leftControls.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (rightControls != null) __obj.updateDynamic("rightControls")(rightControls.asInstanceOf[js.Any])
     if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridPager]

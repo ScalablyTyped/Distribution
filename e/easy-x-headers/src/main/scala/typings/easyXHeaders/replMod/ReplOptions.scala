@@ -33,13 +33,13 @@ object ReplOptions {
   ): ReplOptions = {
     val __obj = js.Dynamic.literal()
     if (eval != null) __obj.updateDynamic("eval")(eval.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined.get.asInstanceOf[js.Any])
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
-    if (!js.isUndefined(terminal)) __obj.updateDynamic("terminal")(terminal.asInstanceOf[js.Any])
-    if (!js.isUndefined(useColors)) __obj.updateDynamic("useColors")(useColors.asInstanceOf[js.Any])
-    if (!js.isUndefined(useGlobal)) __obj.updateDynamic("useGlobal")(useGlobal.asInstanceOf[js.Any])
+    if (!js.isUndefined(terminal)) __obj.updateDynamic("terminal")(terminal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useColors)) __obj.updateDynamic("useColors")(useColors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useGlobal)) __obj.updateDynamic("useGlobal")(useGlobal.get.asInstanceOf[js.Any])
     if (writer != null) __obj.updateDynamic("writer")(writer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplOptions]
   }

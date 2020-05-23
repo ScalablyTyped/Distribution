@@ -25,7 +25,7 @@ object Auth0OAuth2FlowOptions {
     authorizationUrl: String = null,
     clientId: String = null,
     redirectHost: String = null,
-    redirectPort: Int | Double = null,
+    redirectPort: js.UndefOr[Double] = js.undefined,
     tokenUrl: String = null
   ): Auth0OAuth2FlowOptions = {
     val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any])
@@ -33,7 +33,7 @@ object Auth0OAuth2FlowOptions {
     if (authorizationUrl != null) __obj.updateDynamic("authorizationUrl")(authorizationUrl.asInstanceOf[js.Any])
     if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
     if (redirectHost != null) __obj.updateDynamic("redirectHost")(redirectHost.asInstanceOf[js.Any])
-    if (redirectPort != null) __obj.updateDynamic("redirectPort")(redirectPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(redirectPort)) __obj.updateDynamic("redirectPort")(redirectPort.get.asInstanceOf[js.Any])
     if (tokenUrl != null) __obj.updateDynamic("tokenUrl")(tokenUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Auth0OAuth2FlowOptions]
   }

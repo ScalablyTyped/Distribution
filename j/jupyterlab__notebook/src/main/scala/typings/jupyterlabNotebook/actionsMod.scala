@@ -2,6 +2,7 @@ package typings.jupyterlabNotebook
 
 import typings.jupyterlabApputils.sessioncontextMod.ISessionContext
 import typings.jupyterlabNbformat.mod.CellType
+import typings.jupyterlabNotebook.anon.Cell
 import typings.jupyterlabNotebook.jupyterlabNotebookStrings.above
 import typings.jupyterlabNotebook.jupyterlabNotebookStrings.below
 import typings.jupyterlabNotebook.jupyterlabNotebookStrings.replace
@@ -109,7 +110,7 @@ object actionsMod extends js.Object {
     /**
       * A signal that emits whenever a cell is run.
       */
-    def executed: ISignal[_, AnonCell] = js.native
+    def executed: ISignal[_, Cell] = js.native
     /**
       * Extend the selection to the cell above.
       *

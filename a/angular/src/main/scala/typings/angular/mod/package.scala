@@ -129,7 +129,7 @@ package object mod {
     /* method */ java.lang.String, 
     /* url */ java.lang.String, 
     /* post */ js.UndefOr[js.Any], 
-    /* callback */ js.UndefOr[typings.angular.mod._Global_.Function], 
+    /* callback */ js.UndefOr[typings.angular.mod.global.Function], 
     /* headers */ js.UndefOr[js.Any], 
     /* timeout */ js.UndefOr[scala.Double], 
     /* withCredentials */ js.UndefOr[scala.Boolean], 
@@ -219,5 +219,5 @@ package object mod {
     * see https://docs.angularjs.org/api/ng/service/$xhrFactory
     */
   type IXhrFactory[T] = js.Function2[/* method */ java.lang.String, /* url */ java.lang.String, T]
-  type Injectable[T /* <: typings.angular.mod._Global_.Function */] = T | (js.Array[java.lang.String | T])
+  type Injectable[T /* <: typings.angular.mod.global.Function */] = T | (js.Array[java.lang.String | T])
 }

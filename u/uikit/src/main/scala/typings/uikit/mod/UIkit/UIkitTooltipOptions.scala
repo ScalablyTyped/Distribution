@@ -19,8 +19,8 @@ object UIkitTooltipOptions {
   def apply(
     animation: String = null,
     cls: String = null,
-    delay: Int | Double = null,
-    duration: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
+    duration: js.UndefOr[Double] = js.undefined,
     offset: Double | Boolean = null,
     pos: String = null,
     title: String = null
@@ -28,8 +28,8 @@ object UIkitTooltipOptions {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (cls != null) __obj.updateDynamic("cls")(cls.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (pos != null) __obj.updateDynamic("pos")(pos.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

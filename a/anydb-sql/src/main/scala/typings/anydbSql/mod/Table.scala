@@ -1,6 +1,6 @@
 package typings.anydbSql.mod
 
-import typings.anydbSql.AnonEmit
+import typings.anydbSql.anon.Emit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait Table[T]
      with Queryable[T] {
   var _name: String = js.native
   var columns: js.Array[Column[_]] = js.native
-  var eventEmitter: AnonEmit = js.native
+  var eventEmitter: Emit = js.native
   var sql: SQL = js.native
   def alter(): AlterQuery[T] = js.native
   def as(name: String): Table[T] = js.native

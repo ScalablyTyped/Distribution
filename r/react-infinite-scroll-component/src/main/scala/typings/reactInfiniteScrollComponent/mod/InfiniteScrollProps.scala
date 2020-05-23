@@ -99,13 +99,13 @@ object InfiniteScrollProps {
     className: String = null,
     endMessage: ReactNode = null,
     hasChildren: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
-    initialScrollY: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
+    initialScrollY: js.UndefOr[Double] = js.undefined,
     loader: ReactNode = null,
     onScroll: () => Unit = null,
     pullDownToRefresh: js.UndefOr[Boolean] = js.undefined,
     pullDownToRefreshContent: ReactNode = null,
-    pullDownToRefreshThreshold: Int | Double = null,
+    pullDownToRefreshThreshold: js.UndefOr[Double] = js.undefined,
     refreshFunction: () => Unit = null,
     releaseToRefreshContent: ReactNode = null,
     scrollThreshold: Double | String = null,
@@ -116,14 +116,14 @@ object InfiniteScrollProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (endMessage != null) __obj.updateDynamic("endMessage")(endMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasChildren)) __obj.updateDynamic("hasChildren")(hasChildren.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (initialScrollY != null) __obj.updateDynamic("initialScrollY")(initialScrollY.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasChildren)) __obj.updateDynamic("hasChildren")(hasChildren.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialScrollY)) __obj.updateDynamic("initialScrollY")(initialScrollY.get.asInstanceOf[js.Any])
     if (loader != null) __obj.updateDynamic("loader")(loader.asInstanceOf[js.Any])
     if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction0(onScroll))
-    if (!js.isUndefined(pullDownToRefresh)) __obj.updateDynamic("pullDownToRefresh")(pullDownToRefresh.asInstanceOf[js.Any])
+    if (!js.isUndefined(pullDownToRefresh)) __obj.updateDynamic("pullDownToRefresh")(pullDownToRefresh.get.asInstanceOf[js.Any])
     if (pullDownToRefreshContent != null) __obj.updateDynamic("pullDownToRefreshContent")(pullDownToRefreshContent.asInstanceOf[js.Any])
-    if (pullDownToRefreshThreshold != null) __obj.updateDynamic("pullDownToRefreshThreshold")(pullDownToRefreshThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(pullDownToRefreshThreshold)) __obj.updateDynamic("pullDownToRefreshThreshold")(pullDownToRefreshThreshold.get.asInstanceOf[js.Any])
     if (refreshFunction != null) __obj.updateDynamic("refreshFunction")(js.Any.fromFunction0(refreshFunction))
     if (releaseToRefreshContent != null) __obj.updateDynamic("releaseToRefreshContent")(releaseToRefreshContent.asInstanceOf[js.Any])
     if (scrollThreshold != null) __obj.updateDynamic("scrollThreshold")(scrollThreshold.asInstanceOf[js.Any])

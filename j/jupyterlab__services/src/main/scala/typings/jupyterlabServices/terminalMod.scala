@@ -1,6 +1,5 @@
 package typings.jupyterlabServices
 
-import typings.jupyterlabServices.jupyterlabServicesStrings.apiSlashterminals
 import typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings
 import typings.jupyterlabServices.terminalManagerMod.TerminalManager.IOptions
 import typings.jupyterlabServices.terminalRestapiMod.IModel
@@ -27,7 +26,7 @@ object terminalMod extends js.Object {
   
   @js.native
   object TerminalAPI extends js.Object {
-    val TERMINAL_SERVICE_URL: apiSlashterminals = js.native
+    val TERMINAL_SERVICE_URL: /* "api/terminals" */ String = js.native
     def isAvailable(): Boolean = js.native
     def listRunning(): js.Promise[js.Array[IModel]] = js.native
     def listRunning(settings: ISettings): js.Promise[js.Array[IModel]] = js.native

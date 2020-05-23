@@ -18,11 +18,11 @@ trait WebEntity extends js.Object {
 
 object WebEntity {
   @scala.inline
-  def apply(description: String = null, entityId: String = null, score: Int | Double = null): WebEntity = {
+  def apply(description: String = null, entityId: String = null, score: js.UndefOr[Double] = js.undefined): WebEntity = {
     val __obj = js.Dynamic.literal()
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (entityId != null) __obj.updateDynamic("entityId")(entityId.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebEntity]
   }
 }

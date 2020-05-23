@@ -1,11 +1,11 @@
 package typings.officeUiFabricReact.coachmarkBaseMod
 
-import typings.officeUiFabricReact.PartialICoachmarkProps
+import typings.officeUiFabricReact.anon.PartialICoachmarkProps
 import typings.officeUiFabricReact.coachmarkTypesMod.ICoachmark
 import typings.officeUiFabricReact.coachmarkTypesMod.ICoachmarkProps
 import typings.react.mod.Component
 import typings.react.mod.KeyboardEvent
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import scala.scalajs.js
@@ -62,7 +62,7 @@ class CoachmarkBase protected ()
   @JSName("dismiss")
   def dismiss_MCoachmarkBase(ev: typings.react.mod.MouseEvent[HTMLElement, MouseEvent]): Unit = js.native
   @JSName("dismiss")
-  def dismiss_MCoachmarkBase(ev: Event_): Unit = js.native
+  def dismiss_MCoachmarkBase(ev: Event): Unit = js.native
   @JSName("shouldComponentUpdate")
   def shouldComponentUpdate_MCoachmarkBase(newProps: ICoachmarkProps, newState: ICoachmarkState): Boolean = js.native
 }

@@ -82,8 +82,8 @@ object ComputeResource {
     subnets: StringList,
     `type`: CRType,
     allocationStrategy: CRAllocationStrategy = null,
-    bidPercentage: Int | Double = null,
-    desiredvCpus: Int | Double = null,
+    bidPercentage: js.UndefOr[Integer] = js.undefined,
+    desiredvCpus: js.UndefOr[Integer] = js.undefined,
     ec2KeyPair: String = null,
     imageId: String = null,
     launchTemplate: LaunchTemplateSpecification = null,
@@ -95,8 +95,8 @@ object ComputeResource {
     val __obj = js.Dynamic.literal(instanceRole = instanceRole.asInstanceOf[js.Any], instanceTypes = instanceTypes.asInstanceOf[js.Any], maxvCpus = maxvCpus.asInstanceOf[js.Any], minvCpus = minvCpus.asInstanceOf[js.Any], subnets = subnets.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (allocationStrategy != null) __obj.updateDynamic("allocationStrategy")(allocationStrategy.asInstanceOf[js.Any])
-    if (bidPercentage != null) __obj.updateDynamic("bidPercentage")(bidPercentage.asInstanceOf[js.Any])
-    if (desiredvCpus != null) __obj.updateDynamic("desiredvCpus")(desiredvCpus.asInstanceOf[js.Any])
+    if (!js.isUndefined(bidPercentage)) __obj.updateDynamic("bidPercentage")(bidPercentage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(desiredvCpus)) __obj.updateDynamic("desiredvCpus")(desiredvCpus.get.asInstanceOf[js.Any])
     if (ec2KeyPair != null) __obj.updateDynamic("ec2KeyPair")(ec2KeyPair.asInstanceOf[js.Any])
     if (imageId != null) __obj.updateDynamic("imageId")(imageId.asInstanceOf[js.Any])
     if (launchTemplate != null) __obj.updateDynamic("launchTemplate")(launchTemplate.asInstanceOf[js.Any])

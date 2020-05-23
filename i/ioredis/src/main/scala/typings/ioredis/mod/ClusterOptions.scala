@@ -31,31 +31,31 @@ object ClusterOptions {
     enableOfflineQueue: js.UndefOr[Boolean] = js.undefined,
     enableReadyCheck: js.UndefOr[Boolean] = js.undefined,
     lazyConnect: js.UndefOr[Boolean] = js.undefined,
-    maxRedirections: Int | Double = null,
+    maxRedirections: js.UndefOr[Double] = js.undefined,
     natMap: NatMap = null,
     redisOptions: RedisOptions = null,
-    retryDelayOnClusterDown: Int | Double = null,
-    retryDelayOnFailover: Int | Double = null,
-    retryDelayOnTryAgain: Int | Double = null,
+    retryDelayOnClusterDown: js.UndefOr[Double] = js.undefined,
+    retryDelayOnFailover: js.UndefOr[Double] = js.undefined,
+    retryDelayOnTryAgain: js.UndefOr[Double] = js.undefined,
     scaleReads: String = null,
-    slotsRefreshInterval: Int | Double = null,
-    slotsRefreshTimeout: Int | Double = null
+    slotsRefreshInterval: js.UndefOr[Double] = js.undefined,
+    slotsRefreshTimeout: js.UndefOr[Double] = js.undefined
   ): ClusterOptions = {
     val __obj = js.Dynamic.literal()
     if (clusterRetryStrategy != null) __obj.updateDynamic("clusterRetryStrategy")(js.Any.fromFunction2(clusterRetryStrategy))
     if (dnsLookup != null) __obj.updateDynamic("dnsLookup")(js.Any.fromFunction2(dnsLookup))
-    if (!js.isUndefined(enableOfflineQueue)) __obj.updateDynamic("enableOfflineQueue")(enableOfflineQueue.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableReadyCheck)) __obj.updateDynamic("enableReadyCheck")(enableReadyCheck.asInstanceOf[js.Any])
-    if (!js.isUndefined(lazyConnect)) __obj.updateDynamic("lazyConnect")(lazyConnect.asInstanceOf[js.Any])
-    if (maxRedirections != null) __obj.updateDynamic("maxRedirections")(maxRedirections.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableOfflineQueue)) __obj.updateDynamic("enableOfflineQueue")(enableOfflineQueue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableReadyCheck)) __obj.updateDynamic("enableReadyCheck")(enableReadyCheck.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lazyConnect)) __obj.updateDynamic("lazyConnect")(lazyConnect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRedirections)) __obj.updateDynamic("maxRedirections")(maxRedirections.get.asInstanceOf[js.Any])
     if (natMap != null) __obj.updateDynamic("natMap")(natMap.asInstanceOf[js.Any])
     if (redisOptions != null) __obj.updateDynamic("redisOptions")(redisOptions.asInstanceOf[js.Any])
-    if (retryDelayOnClusterDown != null) __obj.updateDynamic("retryDelayOnClusterDown")(retryDelayOnClusterDown.asInstanceOf[js.Any])
-    if (retryDelayOnFailover != null) __obj.updateDynamic("retryDelayOnFailover")(retryDelayOnFailover.asInstanceOf[js.Any])
-    if (retryDelayOnTryAgain != null) __obj.updateDynamic("retryDelayOnTryAgain")(retryDelayOnTryAgain.asInstanceOf[js.Any])
+    if (!js.isUndefined(retryDelayOnClusterDown)) __obj.updateDynamic("retryDelayOnClusterDown")(retryDelayOnClusterDown.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retryDelayOnFailover)) __obj.updateDynamic("retryDelayOnFailover")(retryDelayOnFailover.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retryDelayOnTryAgain)) __obj.updateDynamic("retryDelayOnTryAgain")(retryDelayOnTryAgain.get.asInstanceOf[js.Any])
     if (scaleReads != null) __obj.updateDynamic("scaleReads")(scaleReads.asInstanceOf[js.Any])
-    if (slotsRefreshInterval != null) __obj.updateDynamic("slotsRefreshInterval")(slotsRefreshInterval.asInstanceOf[js.Any])
-    if (slotsRefreshTimeout != null) __obj.updateDynamic("slotsRefreshTimeout")(slotsRefreshTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(slotsRefreshInterval)) __obj.updateDynamic("slotsRefreshInterval")(slotsRefreshInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(slotsRefreshTimeout)) __obj.updateDynamic("slotsRefreshTimeout")(slotsRefreshTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterOptions]
   }
 }

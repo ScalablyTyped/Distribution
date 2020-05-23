@@ -16,8 +16,7 @@ trait TabData
 object TabData {
   @scala.inline
   def apply(
-    StringDictionary: /** for user's custom extends */
-  /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     key: String = null,
     title: ReactNode = null
   ): TabData = {

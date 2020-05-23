@@ -20,7 +20,7 @@ object IonItemSliding {
   @scala.inline
   def apply(disabled: js.UndefOr[Boolean] = js.undefined, onIonDrag: /* event */ CustomEvent[_] => Unit = null): IonItemSliding = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (onIonDrag != null) __obj.updateDynamic("onIonDrag")(js.Any.fromFunction1(onIonDrag))
     __obj.asInstanceOf[IonItemSliding]
   }

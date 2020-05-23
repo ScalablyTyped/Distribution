@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.extjs.Ext.IClass because Already inherited
 - typings.extjs.Ext.IBase because Already inherited
 - typings.extjs.Ext.util.ISortable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined defaultSortDirection, sortRoot, sorters, isSortable, generateComparator, getFirstSorter, initSortable, sort */ trait IAbstractStore extends IObservable {
@@ -31,53 +31,53 @@ import scala.scalajs.js.annotation._
   /** [Method] Returns a comparator function which compares two items and returns 1 0 or 1 depending on the currently defined set  */
   var generateComparator: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Gets the first sorter from the sorters collection excluding any groupers that may be in place
-  		* @returns Ext.util.Sorter The sorter, null if none exist
-  		*/
+    * @returns Ext.util.Sorter The sorter, null if none exist
+    */
   var getFirstSorter: js.UndefOr[js.Function0[ISorter]] = js.undefined
   /** [Method] Gets all records added or updated since the last commit
-  		* @returns Ext.data.Model[] The added and updated Model instances
-  		*/
+    * @returns Ext.data.Model[] The added and updated Model instances
+    */
   var getModifiedRecords: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns all Model instances that are either currently a phantom e g
-  		* @returns Ext.data.Model[] The Model instances
-  		*/
+    * @returns Ext.data.Model[] The Model instances
+    */
   var getNewRecords: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the proxy currently attached to this proxy instance
-  		* @returns Ext.data.proxy.Proxy The Proxy instance
-  		*/
+    * @returns Ext.data.proxy.Proxy The Proxy instance
+    */
   var getProxy: js.UndefOr[js.Function0[typings.extjs.Ext.data.proxy.IProxy]] = js.undefined
   /** [Method] Returns any records that have been removed from the store but not yet destroyed on the proxy
-  		* @returns Ext.data.Model[] The removed Model instances
-  		*/
+    * @returns Ext.data.Model[] The removed Model instances
+    */
   var getRemovedRecords: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns all Model instances that have been updated in the Store but not yet synchronized with the Proxy
-  		* @returns Ext.data.Model[] The updated Model instances
-  		*/
+    * @returns Ext.data.Model[] The updated Model instances
+    */
   var getUpdatedRecords: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Performs initialization of this mixin  */
   var initSortable: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Property] (Boolean) */
   var isDestroyed: js.UndefOr[Boolean] = js.undefined
   /** [Method] Returns true if the Store is currently performing a load operation
-  		* @returns Boolean True if the Store is currently loading
-  		*/
+    * @returns Boolean True if the Store is currently loading
+    */
   var isLoading: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Property] (Boolean) */
   var isSortable: js.UndefOr[Boolean] = js.undefined
   /** [Property] (Boolean) */
   var isStore: js.UndefOr[Boolean] = js.undefined
   /** [Method] Loads the Store using its configured proxy
-  		* @param options Object config object. This is passed into the Operation object that is created and then sent to the proxy's Ext.data.proxy.Proxy.read function
-  		* @returns void this
-  		*/
+    * @param options Object config object. This is passed into the Operation object that is created and then sent to the proxy's Ext.data.proxy.Proxy.read function
+    * @returns void this
+    */
   var load: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (String) */
   var model: js.UndefOr[String] = js.undefined
   /** [Config Option] (String/Ext.data.proxy.Proxy/Object) */
   var proxy: js.UndefOr[js.Any] = js.undefined
   /** [Method] Reloads the store using the last options passed to the load method
-  		* @param options Object A config object which contains options which may override the options passed to the previous load call.
-  		*/
+    * @param options Object A config object which contains options which may override the options passed to the previous load call.
+    */
   var reload: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Boolean) */
   var remoteFilter: js.UndefOr[Boolean] = js.undefined
@@ -92,17 +92,17 @@ import scala.scalajs.js.annotation._
   /** [Method] Saves all pending changes via the configured proxy  */
   var save: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Sets the Store s Proxy by string config object or Proxy instance
-  		* @param proxy String/Object/Ext.data.proxy.Proxy The new Proxy, which can be either a type string, a configuration object or an Ext.data.proxy.Proxy instance
-  		* @returns Ext.data.proxy.Proxy The attached Proxy object
-  		*/
+    * @param proxy String/Object/Ext.data.proxy.Proxy The new Proxy, which can be either a type string, a configuration object or an Ext.data.proxy.Proxy instance
+    * @returns Ext.data.proxy.Proxy The attached Proxy object
+    */
   var setProxy: js.UndefOr[
     js.Function1[/* proxy */ js.UndefOr[js.Any], typings.extjs.Ext.data.proxy.IProxy]
   ] = js.undefined
   /** [Method] Sorts the data in the Store by one or more of its properties
-  		* @param sorters String/Ext.util.Sorter[] Either a string name of one of the fields in this Store's configured Model, or an array of sorter configurations.
-  		* @param direction String The overall direction to sort the data by.
-  		* @returns Ext.util.Sorter[]
-  		*/
+    * @param sorters String/Ext.util.Sorter[] Either a string name of one of the fields in this Store's configured Model, or an array of sorter configurations.
+    * @param direction String The overall direction to sort the data by.
+    * @returns Ext.util.Sorter[]
+    */
   var sort: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[String], Array]] = js.undefined
   /** [Config Option] (Boolean) */
   var sortOnLoad: js.UndefOr[Boolean] = js.undefined
@@ -117,9 +117,9 @@ import scala.scalajs.js.annotation._
   /** [Method] Suspends automatically syncing the Store with its Proxy  */
   var suspendAutoSync: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Synchronizes the store with its proxy
-  		* @param options Object Object containing one or more properties supported by the sync method (these get passed along to the underlying proxy's batch method):
-  		* @returns Ext.data.Store this
-  		*/
+    * @param options Object Object containing one or more properties supported by the sync method (these get passed along to the underlying proxy's batch method):
+    * @returns Ext.data.Store this
+    */
   var sync: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], IStore]] = js.undefined
 }
 
@@ -212,7 +212,7 @@ object IAbstractStore {
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
     if (autoLoad != null) __obj.updateDynamic("autoLoad")(autoLoad.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoSync)) __obj.updateDynamic("autoSync")(autoSync.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoSync)) __obj.updateDynamic("autoSync")(autoSync.get.asInstanceOf[js.Any])
     if (batchUpdateMode != null) __obj.updateDynamic("batchUpdateMode")(batchUpdateMode.asInstanceOf[js.Any])
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
     if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
@@ -225,7 +225,7 @@ object IAbstractStore {
     if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(filterOnLoad)) __obj.updateDynamic("filterOnLoad")(filterOnLoad.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterOnLoad)) __obj.updateDynamic("filterOnLoad")(filterOnLoad.get.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
     if (fireEventArgs != null) __obj.updateDynamic("fireEventArgs")(js.Any.fromFunction2(fireEventArgs))
@@ -242,11 +242,11 @@ object IAbstractStore {
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (initSortable != null) __obj.updateDynamic("initSortable")(js.Any.fromFunction0(initSortable))
-    if (!js.isUndefined(isDestroyed)) __obj.updateDynamic("isDestroyed")(isDestroyed.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDestroyed)) __obj.updateDynamic("isDestroyed")(isDestroyed.get.asInstanceOf[js.Any])
     if (isLoading != null) __obj.updateDynamic("isLoading")(js.Any.fromFunction0(isLoading))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSortable)) __obj.updateDynamic("isSortable")(isSortable.asInstanceOf[js.Any])
-    if (!js.isUndefined(isStore)) __obj.updateDynamic("isStore")(isStore.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSortable)) __obj.updateDynamic("isSortable")(isSortable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isStore)) __obj.updateDynamic("isStore")(isStore.get.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
@@ -257,8 +257,8 @@ object IAbstractStore {
     if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction3(relayEvents))
     if (reload != null) __obj.updateDynamic("reload")(js.Any.fromFunction1(reload))
-    if (!js.isUndefined(remoteFilter)) __obj.updateDynamic("remoteFilter")(remoteFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(remoteSort)) __obj.updateDynamic("remoteSort")(remoteSort.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteFilter)) __obj.updateDynamic("remoteFilter")(remoteFilter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteSort)) __obj.updateDynamic("remoteSort")(remoteSort.get.asInstanceOf[js.Any])
     if (removeAll != null) __obj.updateDynamic("removeAll")(js.Any.fromFunction0(removeAll))
     if (removeListener != null) __obj.updateDynamic("removeListener")(js.Any.fromFunction3(removeListener))
     if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(js.Any.fromFunction4(removeManagedListener))
@@ -270,12 +270,12 @@ object IAbstractStore {
     if (save != null) __obj.updateDynamic("save")(js.Any.fromFunction0(save))
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setProxy != null) __obj.updateDynamic("setProxy")(js.Any.fromFunction1(setProxy))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction2(sort))
-    if (!js.isUndefined(sortOnLoad)) __obj.updateDynamic("sortOnLoad")(sortOnLoad.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortOnLoad)) __obj.updateDynamic("sortOnLoad")(sortOnLoad.get.asInstanceOf[js.Any])
     if (sortRoot != null) __obj.updateDynamic("sortRoot")(sortRoot.asInstanceOf[js.Any])
     if (sorters != null) __obj.updateDynamic("sorters")(sorters.asInstanceOf[js.Any])
-    if (!js.isUndefined(statefulFilters)) __obj.updateDynamic("statefulFilters")(statefulFilters.asInstanceOf[js.Any])
+    if (!js.isUndefined(statefulFilters)) __obj.updateDynamic("statefulFilters")(statefulFilters.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (storeId != null) __obj.updateDynamic("storeId")(storeId.asInstanceOf[js.Any])
     if (suspendAutoSync != null) __obj.updateDynamic("suspendAutoSync")(js.Any.fromFunction0(suspendAutoSync))

@@ -24,7 +24,7 @@ object ProviderProps {
     store: Store[_, AnyAction] = null
   ): ProviderProps = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
-    if (!js.isUndefined(immutable)) __obj.updateDynamic("immutable")(immutable.asInstanceOf[js.Any])
+    if (!js.isUndefined(immutable)) __obj.updateDynamic("immutable")(immutable.get.asInstanceOf[js.Any])
     if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderProps]
   }

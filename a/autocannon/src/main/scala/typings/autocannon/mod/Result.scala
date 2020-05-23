@@ -1,6 +1,6 @@
 package typings.autocannon.mod
 
-import typings.autocannon.Histogramsentnumber
+import typings.autocannon.anon.Histogramsentnumber
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

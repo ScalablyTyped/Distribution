@@ -1,6 +1,5 @@
 package typings.dwt
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,23 +29,6 @@ object EnumDWTShowMode extends js.Object {
   /** Minimize the window */
   @js.native
   sealed trait SW_MIN extends EnumDWTShowMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EnumDWTShowMode with Double] = js.native
-  /* 0 */ @js.native
-  object SW_ACTIVE extends TopLevel[SW_ACTIVE with Double]
-  
-  /* 3 */ @js.native
-  object SW_CLOSE extends TopLevel[SW_CLOSE with Double]
-  
-  /* 4 */ @js.native
-  object SW_IFLIVE extends TopLevel[SW_IFLIVE with Double]
-  
-  /* 1 */ @js.native
-  object SW_MAX extends TopLevel[SW_MAX with Double]
-  
-  /* 2 */ @js.native
-  object SW_MIN extends TopLevel[SW_MIN with Double]
   
 }
 

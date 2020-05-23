@@ -22,10 +22,14 @@ trait DetectModerationLabelsRequest extends js.Object {
 
 object DetectModerationLabelsRequest {
   @scala.inline
-  def apply(Image: Image, HumanLoopConfig: HumanLoopConfig = null, MinConfidence: Int | Double = null): DetectModerationLabelsRequest = {
+  def apply(
+    Image: Image,
+    HumanLoopConfig: HumanLoopConfig = null,
+    MinConfidence: js.UndefOr[Percent] = js.undefined
+  ): DetectModerationLabelsRequest = {
     val __obj = js.Dynamic.literal(Image = Image.asInstanceOf[js.Any])
     if (HumanLoopConfig != null) __obj.updateDynamic("HumanLoopConfig")(HumanLoopConfig.asInstanceOf[js.Any])
-    if (MinConfidence != null) __obj.updateDynamic("MinConfidence")(MinConfidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinConfidence)) __obj.updateDynamic("MinConfidence")(MinConfidence.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectModerationLabelsRequest]
   }
 }

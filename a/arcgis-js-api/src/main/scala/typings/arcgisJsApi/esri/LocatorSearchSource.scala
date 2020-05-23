@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -60,8 +59,4 @@ trait LocatorSearchSource extends SearchSource {
     */
   var singleLineFieldName: String = js.native
 }
-
-@JSGlobal("__esri.LocatorSearchSource")
-@js.native
-object LocatorSearchSource extends TopLevel[LocatorSearchSourceConstructor]
 

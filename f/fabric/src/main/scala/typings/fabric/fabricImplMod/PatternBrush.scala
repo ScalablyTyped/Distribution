@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class PatternBrush () extends PencilBrush {
   /**
-  	 * Creates "pattern" instance property
-  	 */
+    * Creates "pattern" instance property
+    */
   def getPattern(): js.Any = js.native
   def getPatternSrc(): HTMLCanvasElement = js.native
   def getPatternSrcFunction(): String = js.native

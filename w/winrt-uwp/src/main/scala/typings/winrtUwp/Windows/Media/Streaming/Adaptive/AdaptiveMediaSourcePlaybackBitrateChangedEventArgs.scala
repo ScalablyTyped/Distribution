@@ -5,14 +5,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides data for the PlaybackBitrateChanged event. */
-@JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSourcePlaybackBitrateChangedEventArgs")
-@js.native
-abstract class AdaptiveMediaSourcePlaybackBitrateChangedEventArgs () extends js.Object {
+trait AdaptiveMediaSourcePlaybackBitrateChangedEventArgs extends js.Object {
   /** Gets a value indicating whether the media source contains only audio data. */
-  var audioOnly: Boolean = js.native
+  var audioOnly: Boolean
   /** Gets the new playback bitrate. */
-  var newValue: Double = js.native
+  var newValue: Double
   /** Gets the old playback bitrate. */
-  var oldValue: Double = js.native
+  var oldValue: Double
+}
+
+object AdaptiveMediaSourcePlaybackBitrateChangedEventArgs {
+  @scala.inline
+  def apply(audioOnly: Boolean, newValue: Double, oldValue: Double): AdaptiveMediaSourcePlaybackBitrateChangedEventArgs = {
+    val __obj = js.Dynamic.literal(audioOnly = audioOnly.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AdaptiveMediaSourcePlaybackBitrateChangedEventArgs]
+  }
 }
 

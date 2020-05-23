@@ -1,10 +1,10 @@
 package typings.babylonjs.legacyMod
 
-import typings.babylonjs.AnonCapture
-import typings.babylonjs.AnonCaptureConstraint
 import typings.babylonjs.HTMLCanvasElement
 import typings.babylonjs.ImageBitmap
 import typings.babylonjs.WebGLRenderingContext
+import typings.babylonjs.anon.Capture
+import typings.babylonjs.anon.CaptureConstraint
 import typings.babylonjs.fileRequestMod.IFileRequest
 import typings.babylonjs.internalTextureLoaderMod.IInternalTextureLoader
 import typings.babylonjs.iofflineproviderMod.IOfflineProvider
@@ -59,7 +59,7 @@ object ThinEngine extends js.Object {
     */
   var CollisionsEpsilon: Double = js.native
   /** Use this array to turn off some WebGL2 features on known buggy browsers version */
-  var ExceptionList: js.Array[AnonCapture | AnonCaptureConstraint] = js.native
+  var ExceptionList: js.Array[Capture | CaptureConstraint] = js.native
   /** @hidden */
   var _TextureLoaders: js.Array[IInternalTextureLoader] = js.native
   var _isSupported: js.Any = js.native

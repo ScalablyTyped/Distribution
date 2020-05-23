@@ -44,7 +44,7 @@ object DomainEntry {
   ): DomainEntry = {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAlias)) __obj.updateDynamic("isAlias")(isAlias.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAlias)) __obj.updateDynamic("isAlias")(isAlias.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])

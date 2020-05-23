@@ -28,44 +28,44 @@ trait DurationObjectUnits extends js.Object {
 object DurationObjectUnits {
   @scala.inline
   def apply(
-    day: Int | Double = null,
-    days: Int | Double = null,
-    hour: Int | Double = null,
-    hours: Int | Double = null,
-    millisecond: Int | Double = null,
-    milliseconds: Int | Double = null,
-    minute: Int | Double = null,
-    minutes: Int | Double = null,
-    month: Int | Double = null,
-    months: Int | Double = null,
-    quarter: Int | Double = null,
-    quarters: Int | Double = null,
-    second: Int | Double = null,
-    seconds: Int | Double = null,
-    week: Int | Double = null,
-    weeks: Int | Double = null,
-    year: Int | Double = null,
-    years: Int | Double = null
+    day: js.UndefOr[Double] = js.undefined,
+    days: js.UndefOr[Double] = js.undefined,
+    hour: js.UndefOr[Double] = js.undefined,
+    hours: js.UndefOr[Double] = js.undefined,
+    millisecond: js.UndefOr[Double] = js.undefined,
+    milliseconds: js.UndefOr[Double] = js.undefined,
+    minute: js.UndefOr[Double] = js.undefined,
+    minutes: js.UndefOr[Double] = js.undefined,
+    month: js.UndefOr[Double] = js.undefined,
+    months: js.UndefOr[Double] = js.undefined,
+    quarter: js.UndefOr[Double] = js.undefined,
+    quarters: js.UndefOr[Double] = js.undefined,
+    second: js.UndefOr[Double] = js.undefined,
+    seconds: js.UndefOr[Double] = js.undefined,
+    week: js.UndefOr[Double] = js.undefined,
+    weeks: js.UndefOr[Double] = js.undefined,
+    year: js.UndefOr[Double] = js.undefined,
+    years: js.UndefOr[Double] = js.undefined
   ): DurationObjectUnits = {
     val __obj = js.Dynamic.literal()
-    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
-    if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
-    if (hour != null) __obj.updateDynamic("hour")(hour.asInstanceOf[js.Any])
-    if (hours != null) __obj.updateDynamic("hours")(hours.asInstanceOf[js.Any])
-    if (millisecond != null) __obj.updateDynamic("millisecond")(millisecond.asInstanceOf[js.Any])
-    if (milliseconds != null) __obj.updateDynamic("milliseconds")(milliseconds.asInstanceOf[js.Any])
-    if (minute != null) __obj.updateDynamic("minute")(minute.asInstanceOf[js.Any])
-    if (minutes != null) __obj.updateDynamic("minutes")(minutes.asInstanceOf[js.Any])
-    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
-    if (months != null) __obj.updateDynamic("months")(months.asInstanceOf[js.Any])
-    if (quarter != null) __obj.updateDynamic("quarter")(quarter.asInstanceOf[js.Any])
-    if (quarters != null) __obj.updateDynamic("quarters")(quarters.asInstanceOf[js.Any])
-    if (second != null) __obj.updateDynamic("second")(second.asInstanceOf[js.Any])
-    if (seconds != null) __obj.updateDynamic("seconds")(seconds.asInstanceOf[js.Any])
-    if (week != null) __obj.updateDynamic("week")(week.asInstanceOf[js.Any])
-    if (weeks != null) __obj.updateDynamic("weeks")(weeks.asInstanceOf[js.Any])
-    if (year != null) __obj.updateDynamic("year")(year.asInstanceOf[js.Any])
-    if (years != null) __obj.updateDynamic("years")(years.asInstanceOf[js.Any])
+    if (!js.isUndefined(day)) __obj.updateDynamic("day")(day.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(days)) __obj.updateDynamic("days")(days.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hour)) __obj.updateDynamic("hour")(hour.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hours)) __obj.updateDynamic("hours")(hours.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(millisecond)) __obj.updateDynamic("millisecond")(millisecond.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(milliseconds)) __obj.updateDynamic("milliseconds")(milliseconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minute)) __obj.updateDynamic("minute")(minute.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minutes)) __obj.updateDynamic("minutes")(minutes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(month)) __obj.updateDynamic("month")(month.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(months)) __obj.updateDynamic("months")(months.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quarter)) __obj.updateDynamic("quarter")(quarter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quarters)) __obj.updateDynamic("quarters")(quarters.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(second)) __obj.updateDynamic("second")(second.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(seconds)) __obj.updateDynamic("seconds")(seconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(week)) __obj.updateDynamic("week")(week.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(weeks)) __obj.updateDynamic("weeks")(weeks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(year)) __obj.updateDynamic("year")(year.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(years)) __obj.updateDynamic("years")(years.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DurationObjectUnits]
   }
 }

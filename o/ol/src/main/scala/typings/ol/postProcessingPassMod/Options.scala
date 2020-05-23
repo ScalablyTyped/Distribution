@@ -20,13 +20,13 @@ object Options {
   def apply(
     webGlContext: WebGLRenderingContext,
     fragmentShader: String = null,
-    scaleRatio: Int | Double = null,
+    scaleRatio: js.UndefOr[Double] = js.undefined,
     uniforms: StringDictionary[UniformValue] = null,
     vertexShader: String = null
   ): Options = {
     val __obj = js.Dynamic.literal(webGlContext = webGlContext.asInstanceOf[js.Any])
     if (fragmentShader != null) __obj.updateDynamic("fragmentShader")(fragmentShader.asInstanceOf[js.Any])
-    if (scaleRatio != null) __obj.updateDynamic("scaleRatio")(scaleRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleRatio)) __obj.updateDynamic("scaleRatio")(scaleRatio.get.asInstanceOf[js.Any])
     if (uniforms != null) __obj.updateDynamic("uniforms")(uniforms.asInstanceOf[js.Any])
     if (vertexShader != null) __obj.updateDynamic("vertexShader")(vertexShader.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

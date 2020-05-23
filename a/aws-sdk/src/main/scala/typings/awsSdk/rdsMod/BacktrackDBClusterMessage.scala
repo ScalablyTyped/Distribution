@@ -29,12 +29,12 @@ object BacktrackDBClusterMessage {
   def apply(
     BacktrackTo: TStamp,
     DBClusterIdentifier: String,
-    Force: js.UndefOr[scala.Boolean] = js.undefined,
-    UseEarliestTimeOnPointInTimeUnavailable: js.UndefOr[scala.Boolean] = js.undefined
+    Force: js.UndefOr[BooleanOptional] = js.undefined,
+    UseEarliestTimeOnPointInTimeUnavailable: js.UndefOr[BooleanOptional] = js.undefined
   ): BacktrackDBClusterMessage = {
     val __obj = js.Dynamic.literal(BacktrackTo = BacktrackTo.asInstanceOf[js.Any], DBClusterIdentifier = DBClusterIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(Force)) __obj.updateDynamic("Force")(Force.asInstanceOf[js.Any])
-    if (!js.isUndefined(UseEarliestTimeOnPointInTimeUnavailable)) __obj.updateDynamic("UseEarliestTimeOnPointInTimeUnavailable")(UseEarliestTimeOnPointInTimeUnavailable.asInstanceOf[js.Any])
+    if (!js.isUndefined(Force)) __obj.updateDynamic("Force")(Force.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(UseEarliestTimeOnPointInTimeUnavailable)) __obj.updateDynamic("UseEarliestTimeOnPointInTimeUnavailable")(UseEarliestTimeOnPointInTimeUnavailable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BacktrackDBClusterMessage]
   }
 }

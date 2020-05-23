@@ -1,8 +1,6 @@
 package typings.streamMock
 
-import typings.node.BufferEncoding
 import typings.node.streamMod.WritableOptions
-import typings.std.Error
 import typings.streamMock.iwritablemockMod.IWritableMock
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,11 +15,6 @@ object writableMockMod extends js.Object {
     @JSName("data")
     var data_WritableMock: js.Array[_] = js.native
     var objectMode: Boolean = js.native
-    def _write(
-      chunk: js.Any,
-      encoding: BufferEncoding,
-      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
-    ): Unit = js.native
   }
   
   @js.native

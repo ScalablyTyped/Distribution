@@ -13,10 +13,10 @@ trait HoldConfig extends js.Object {
 
 object HoldConfig {
   @scala.inline
-  def apply(holdFor: Int | Double = null, updateEvery: Int | Double = null): HoldConfig = {
+  def apply(holdFor: js.UndefOr[Double] = js.undefined, updateEvery: js.UndefOr[Double] = js.undefined): HoldConfig = {
     val __obj = js.Dynamic.literal()
-    if (holdFor != null) __obj.updateDynamic("holdFor")(holdFor.asInstanceOf[js.Any])
-    if (updateEvery != null) __obj.updateDynamic("updateEvery")(updateEvery.asInstanceOf[js.Any])
+    if (!js.isUndefined(holdFor)) __obj.updateDynamic("holdFor")(holdFor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateEvery)) __obj.updateDynamic("updateEvery")(updateEvery.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HoldConfig]
   }
 }

@@ -17,7 +17,13 @@ object emojiMartStrings {
   sealed trait apple extends EmojiSet
   
   @js.native
+  sealed trait auto extends js.Object
+  
+  @js.native
   sealed trait custom extends CategoryName
+  
+  @js.native
+  sealed trait dark extends js.Object
   
   @js.native
   sealed trait emojione extends EmojiSet
@@ -33,6 +39,9 @@ object emojiMartStrings {
   
   @js.native
   sealed trait google extends EmojiSet
+  
+  @js.native
+  sealed trait light extends js.Object
   
   @js.native
   sealed trait messenger extends EmojiSet
@@ -68,7 +77,11 @@ object emojiMartStrings {
   @scala.inline
   def apple: apple = "apple".asInstanceOf[apple]
   @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def custom: custom = "custom".asInstanceOf[custom]
+  @scala.inline
+  def dark: dark = "dark".asInstanceOf[dark]
   @scala.inline
   def emojione: emojione = "emojione".asInstanceOf[emojione]
   @scala.inline
@@ -79,6 +92,8 @@ object emojiMartStrings {
   def foods: foods = "foods".asInstanceOf[foods]
   @scala.inline
   def google: google = "google".asInstanceOf[google]
+  @scala.inline
+  def light: light = "light".asInstanceOf[light]
   @scala.inline
   def messenger: messenger = "messenger".asInstanceOf[messenger]
   @scala.inline

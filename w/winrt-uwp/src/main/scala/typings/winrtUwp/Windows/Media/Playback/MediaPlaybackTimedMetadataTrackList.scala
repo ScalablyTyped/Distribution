@@ -1,22 +1,21 @@
 package typings.winrtUwp.Windows.Media.Playback
 
 import typings.std.Array
-import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsTimedMetadataTrack
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.Foundation.TypedEventHandler
 import typings.winrtUwp.Windows.Media.Core.TimedMetadataTrack
 import typings.winrtUwp.Windows.WinRTEvent
+import typings.winrtUwp.anon.Index
+import typings.winrtUwp.anon.ItemsTimedMetadataTrack
 import typings.winrtUwp.winrtUwpStrings.presentationmodechanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a read-only list of timed metadata tracks. */
-@JSGlobal("Windows.Media.Playback.MediaPlaybackTimedMetadataTrackList")
 @js.native
-abstract class MediaPlaybackTimedMetadataTrackList () extends Array[TimedMetadataTrack] {
+trait MediaPlaybackTimedMetadataTrackList extends Array[TimedMetadataTrack] {
   /** Occurs when the presentation mode of the MediaPlaybackTimedMetadataTrackList changes. */
   @JSName("onpresentationmodechanged")
   var onpresentationmodechanged_Original: TypedEventHandler[MediaPlaybackTimedMetadataTrackList, TimedMetadataPresentationModeChangedEventArgs] = js.native
@@ -43,14 +42,14 @@ abstract class MediaPlaybackTimedMetadataTrackList () extends Array[TimedMetadat
     * Retrieves the timed metadata tracks that start at the specified index in the list.
     * @param startIndex The zero-based index of the start of the timed metadata tracks in the list.
     */
-  def getMany(startIndex: Double): AnonItemsTimedMetadataTrack = js.native
+  def getMany(startIndex: Double): ItemsTimedMetadataTrack = js.native
   /**
     * Gets the presentation mode of the timed metadata track with the specified index.
     * @param index The index of the timed metadata track for which the presentation mode is queried.
     * @return The presentation mode.
     */
   def getPresentationMode(index: Double): TimedMetadataTrackPresentationMode = js.native
-  def indexOf(value: TimedMetadataTrack, extra: js.Any*): AnonIndex = js.native
+  def indexOf(value: TimedMetadataTrack, extra: js.Any*): Index = js.native
   /* hack */
   @JSName("indexOf")
   def indexOf_Double(searchElement: TimedMetadataTrack): Double = js.native

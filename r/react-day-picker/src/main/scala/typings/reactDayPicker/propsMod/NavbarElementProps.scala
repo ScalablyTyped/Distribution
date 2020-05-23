@@ -1,6 +1,6 @@
 package typings.reactDayPicker.propsMod
 
-import typings.reactDayPicker.AnonNextMonth
+import typings.reactDayPicker.anon.NextMonth
 import typings.reactDayPicker.classNamesMod.ClassNames
 import typings.reactDayPicker.localeUtilsMod.LocaleUtils
 import typings.std.Date
@@ -13,7 +13,7 @@ trait NavbarElementProps extends js.Object {
   var className: String = js.native
   var classNames: ClassNames = js.native
   var dir: js.UndefOr[String] = js.native
-  var labels: AnonNextMonth = js.native
+  var labels: NextMonth = js.native
   var locale: String = js.native
   var localeUtils: LocaleUtils = js.native
   var month: Date = js.native

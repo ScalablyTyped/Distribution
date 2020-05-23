@@ -12,11 +12,15 @@ trait NewmanRunStat extends js.Object {
 
 object NewmanRunStat {
   @scala.inline
-  def apply(failed: Int | Double = null, pending: Int | Double = null, total: Int | Double = null): NewmanRunStat = {
+  def apply(
+    failed: js.UndefOr[Double] = js.undefined,
+    pending: js.UndefOr[Double] = js.undefined,
+    total: js.UndefOr[Double] = js.undefined
+  ): NewmanRunStat = {
     val __obj = js.Dynamic.literal()
-    if (failed != null) __obj.updateDynamic("failed")(failed.asInstanceOf[js.Any])
-    if (pending != null) __obj.updateDynamic("pending")(pending.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    if (!js.isUndefined(failed)) __obj.updateDynamic("failed")(failed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pending)) __obj.updateDynamic("pending")(pending.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewmanRunStat]
   }
 }

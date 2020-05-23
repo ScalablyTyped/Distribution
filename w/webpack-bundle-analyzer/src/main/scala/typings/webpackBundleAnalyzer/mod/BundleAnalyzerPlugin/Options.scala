@@ -91,26 +91,26 @@ object Options {
     analyzerMode: server | static | disabled = null,
     analyzerPort: Double | auto = null,
     defaultSizes: parsed | stat | gzip = null,
-    excludeAssets: ExcludeAssetsPattern | js.Array[ExcludeAssetsPattern] = null,
+    excludeAssets: js.UndefOr[Null | ExcludeAssetsPattern | js.Array[ExcludeAssetsPattern]] = js.undefined,
     generateStatsFile: js.UndefOr[Boolean] = js.undefined,
     logLevel: info | warn | error | silent = null,
     openAnalyzer: js.UndefOr[Boolean] = js.undefined,
     reportFilename: String = null,
     statsFilename: String = null,
-    statsOptions: ToJsonOptionsObject = null
+    statsOptions: js.UndefOr[Null | ToJsonOptionsObject] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (analyzerHost != null) __obj.updateDynamic("analyzerHost")(analyzerHost.asInstanceOf[js.Any])
     if (analyzerMode != null) __obj.updateDynamic("analyzerMode")(analyzerMode.asInstanceOf[js.Any])
     if (analyzerPort != null) __obj.updateDynamic("analyzerPort")(analyzerPort.asInstanceOf[js.Any])
     if (defaultSizes != null) __obj.updateDynamic("defaultSizes")(defaultSizes.asInstanceOf[js.Any])
-    if (excludeAssets != null) __obj.updateDynamic("excludeAssets")(excludeAssets.asInstanceOf[js.Any])
-    if (!js.isUndefined(generateStatsFile)) __obj.updateDynamic("generateStatsFile")(generateStatsFile.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludeAssets)) __obj.updateDynamic("excludeAssets")(excludeAssets.asInstanceOf[js.Any])
+    if (!js.isUndefined(generateStatsFile)) __obj.updateDynamic("generateStatsFile")(generateStatsFile.get.asInstanceOf[js.Any])
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(openAnalyzer)) __obj.updateDynamic("openAnalyzer")(openAnalyzer.asInstanceOf[js.Any])
+    if (!js.isUndefined(openAnalyzer)) __obj.updateDynamic("openAnalyzer")(openAnalyzer.get.asInstanceOf[js.Any])
     if (reportFilename != null) __obj.updateDynamic("reportFilename")(reportFilename.asInstanceOf[js.Any])
     if (statsFilename != null) __obj.updateDynamic("statsFilename")(statsFilename.asInstanceOf[js.Any])
-    if (statsOptions != null) __obj.updateDynamic("statsOptions")(statsOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(statsOptions)) __obj.updateDynamic("statsOptions")(statsOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

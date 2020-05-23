@@ -13,7 +13,7 @@ trait AssignmentSubmission extends js.Object {
     *
     * Some attachment metadata is only populated if the requesting user has
     * permission to access it. Identifier and alternate_link fields are always
-    * available, but others (e.g. title) may not be.
+    * available, but others (for example, title) may not be.
     */
   var attachments: js.UndefOr[js.Array[Attachment]] = js.undefined
 }

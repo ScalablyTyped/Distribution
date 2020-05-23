@@ -19,8 +19,12 @@ import scala.scalajs.js.annotation._
 trait ChildProcess extends EventEmitter {
   val channel: js.UndefOr[Pipe | Null] = js.native
   val connected: Boolean = js.native
+  val exitCode: Double | Null = js.native
   val killed: Boolean = js.native
   val pid: Double = js.native
+  val signalCode: Double | Null = js.native
+  val spawnargs: js.Array[String] = js.native
+  val spawnfile: String = js.native
   var stderr: Readable | Null = js.native
   var stdin: Writable | Null = js.native
   val stdio: js.Tuple5[

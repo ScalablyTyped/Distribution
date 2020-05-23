@@ -4,6 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Syntax feature options.
+  * An error will be thrown if you use `only` more than once
+  */
 /* Rewritten from type alias, can be one of: 
   - typings.styleSearch.styleSearchStrings.skip
   - typings.styleSearch.styleSearchStrings.check

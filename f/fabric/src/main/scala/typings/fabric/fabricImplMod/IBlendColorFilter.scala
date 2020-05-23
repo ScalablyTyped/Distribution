@@ -11,9 +11,9 @@ trait IBlendColorFilter extends IBaseFilter {
   var color: js.UndefOr[String] = js.native
   var mode: js.UndefOr[String] = js.native
   /**
-  	 * Applies filter to canvas element
-  	 * @param canvasEl Canvas element to apply filter to
-  	 */
+    * Applies filter to canvas element
+    * @param canvasEl Canvas element to apply filter to
+    */
   def applyTo(canvasEl: HTMLCanvasElement): Unit = js.native
 }
 

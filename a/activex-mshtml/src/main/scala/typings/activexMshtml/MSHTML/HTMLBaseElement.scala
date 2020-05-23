@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLBaseElement")
 @js.native
-class HTMLBaseElement protected () extends js.Object {
+trait HTMLBaseElement extends js.Object {
   @JSName("MSHTML.HTMLBaseElement_typekey")
   var MSHTMLDotHTMLBaseElement_typekey: HTMLBaseElement = js.native
   var accessKey: String = js.native

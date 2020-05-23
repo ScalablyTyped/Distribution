@@ -51,28 +51,28 @@ trait FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigura
 object FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe {
   @scala.inline
   def apply(
-    blockSizeBytes: Int | Double = null,
+    blockSizeBytes: js.UndefOr[Double] = js.undefined,
     bloomFilterColumns: js.Array[String] = null,
-    bloomFilterFalsePositiveProbability: Int | Double = null,
+    bloomFilterFalsePositiveProbability: js.UndefOr[Double] = js.undefined,
     compression: String = null,
-    dictionaryKeyThreshold: Int | Double = null,
+    dictionaryKeyThreshold: js.UndefOr[Double] = js.undefined,
     enablePadding: js.UndefOr[Boolean] = js.undefined,
     formatVersion: String = null,
-    paddingTolerance: Int | Double = null,
-    rowIndexStride: Int | Double = null,
-    stripeSizeBytes: Int | Double = null
+    paddingTolerance: js.UndefOr[Double] = js.undefined,
+    rowIndexStride: js.UndefOr[Double] = js.undefined,
+    stripeSizeBytes: js.UndefOr[Double] = js.undefined
   ): FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe = {
     val __obj = js.Dynamic.literal()
-    if (blockSizeBytes != null) __obj.updateDynamic("blockSizeBytes")(blockSizeBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockSizeBytes)) __obj.updateDynamic("blockSizeBytes")(blockSizeBytes.get.asInstanceOf[js.Any])
     if (bloomFilterColumns != null) __obj.updateDynamic("bloomFilterColumns")(bloomFilterColumns.asInstanceOf[js.Any])
-    if (bloomFilterFalsePositiveProbability != null) __obj.updateDynamic("bloomFilterFalsePositiveProbability")(bloomFilterFalsePositiveProbability.asInstanceOf[js.Any])
+    if (!js.isUndefined(bloomFilterFalsePositiveProbability)) __obj.updateDynamic("bloomFilterFalsePositiveProbability")(bloomFilterFalsePositiveProbability.get.asInstanceOf[js.Any])
     if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
-    if (dictionaryKeyThreshold != null) __obj.updateDynamic("dictionaryKeyThreshold")(dictionaryKeyThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePadding)) __obj.updateDynamic("enablePadding")(enablePadding.asInstanceOf[js.Any])
+    if (!js.isUndefined(dictionaryKeyThreshold)) __obj.updateDynamic("dictionaryKeyThreshold")(dictionaryKeyThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePadding)) __obj.updateDynamic("enablePadding")(enablePadding.get.asInstanceOf[js.Any])
     if (formatVersion != null) __obj.updateDynamic("formatVersion")(formatVersion.asInstanceOf[js.Any])
-    if (paddingTolerance != null) __obj.updateDynamic("paddingTolerance")(paddingTolerance.asInstanceOf[js.Any])
-    if (rowIndexStride != null) __obj.updateDynamic("rowIndexStride")(rowIndexStride.asInstanceOf[js.Any])
-    if (stripeSizeBytes != null) __obj.updateDynamic("stripeSizeBytes")(stripeSizeBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingTolerance)) __obj.updateDynamic("paddingTolerance")(paddingTolerance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowIndexStride)) __obj.updateDynamic("rowIndexStride")(rowIndexStride.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripeSizeBytes)) __obj.updateDynamic("stripeSizeBytes")(stripeSizeBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe]
   }
 }

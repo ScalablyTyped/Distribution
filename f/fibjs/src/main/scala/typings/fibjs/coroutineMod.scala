@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 /** module Or Internal Object */
 /**
-	* @brief 并发控制模块
-	* @detail 引用方法：,```JavaScript,var coroutine = require('coroutine');,```
-	*/
+  * @brief 并发控制模块
+  * @detail 引用方法：,```JavaScript,var coroutine = require('coroutine');,```
+  */
 @JSImport("coroutine", JSImport.Namespace)
 @js.native
 object coroutineMod extends js.Object {

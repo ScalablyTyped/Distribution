@@ -30,7 +30,7 @@ object IAbideOptions {
     if (formErrorSelector != null) __obj.updateDynamic("formErrorSelector")(formErrorSelector.asInstanceOf[js.Any])
     if (inputErrorClass != null) __obj.updateDynamic("inputErrorClass")(inputErrorClass.asInstanceOf[js.Any])
     if (labelErrorClass != null) __obj.updateDynamic("labelErrorClass")(labelErrorClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(liveValidate)) __obj.updateDynamic("liveValidate")(liveValidate.asInstanceOf[js.Any])
+    if (!js.isUndefined(liveValidate)) __obj.updateDynamic("liveValidate")(liveValidate.get.asInstanceOf[js.Any])
     if (validateOn != null) __obj.updateDynamic("validateOn")(validateOn.asInstanceOf[js.Any])
     if (validators != null) __obj.updateDynamic("validators")(validators.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAbideOptions]

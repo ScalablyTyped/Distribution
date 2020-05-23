@@ -1,6 +1,5 @@
 package typings.pixiJs.PIXI
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,14 +34,6 @@ object GC_MODES extends js.Object {
   
   @js.native
   sealed trait MANUAL extends GC_MODES
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[GC_MODES with Double] = js.native
-  /* 0 */ @js.native
-  object AUTO extends TopLevel[AUTO with Double]
-  
-  /* 1 */ @js.native
-  object MANUAL extends TopLevel[MANUAL with Double]
   
 }
 

@@ -17,16 +17,16 @@ object Options {
   def apply(
     classesToPreserve: js.Array[String] = null,
     debug: js.UndefOr[Boolean] = js.undefined,
-    maxElemsToParse: Int | Double = null,
-    nbTopCandidates: Int | Double = null,
-    wordThreshold: Int | Double = null
+    maxElemsToParse: js.UndefOr[Double] = js.undefined,
+    nbTopCandidates: js.UndefOr[Double] = js.undefined,
+    wordThreshold: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (classesToPreserve != null) __obj.updateDynamic("classesToPreserve")(classesToPreserve.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (maxElemsToParse != null) __obj.updateDynamic("maxElemsToParse")(maxElemsToParse.asInstanceOf[js.Any])
-    if (nbTopCandidates != null) __obj.updateDynamic("nbTopCandidates")(nbTopCandidates.asInstanceOf[js.Any])
-    if (wordThreshold != null) __obj.updateDynamic("wordThreshold")(wordThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxElemsToParse)) __obj.updateDynamic("maxElemsToParse")(maxElemsToParse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nbTopCandidates)) __obj.updateDynamic("nbTopCandidates")(nbTopCandidates.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wordThreshold)) __obj.updateDynamic("wordThreshold")(wordThreshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

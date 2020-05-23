@@ -18,7 +18,7 @@ object IHeaderState {
   @scala.inline
   def apply(hasValidSelection: js.UndefOr[Boolean] = js.undefined): IHeaderState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasValidSelection)) __obj.updateDynamic("hasValidSelection")(hasValidSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasValidSelection)) __obj.updateDynamic("hasValidSelection")(hasValidSelection.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHeaderState]
   }
 }

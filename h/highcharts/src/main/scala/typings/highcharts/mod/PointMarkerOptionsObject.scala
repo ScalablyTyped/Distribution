@@ -48,7 +48,7 @@ trait PointMarkerOptionsObject extends js.Object {
     * (Highcharts, Highstock) The color of the point marker's outline. When
     * `undefined`, the series' or point's color is used.
     */
-  var lineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var lineColor: js.UndefOr[String | ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highstock) The width of the point marker's outline.
     */
@@ -89,31 +89,31 @@ object PointMarkerOptionsObject {
     animation: Boolean | AnimationOptionsObject = null,
     color: ColorString | GradientColorObject | PatternObject = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
-    enabledThreshold: Int | Double = null,
+    enabledThreshold: js.UndefOr[Double] = js.undefined,
     fillColor: ColorString | GradientColorObject | PatternObject = null,
-    fillOpacity: Int | Double = null,
-    height: Int | Double = null,
-    lineColor: ColorString | GradientColorObject | PatternObject = null,
-    lineWidth: Int | Double = null,
-    radius: Int | Double = null,
+    fillOpacity: js.UndefOr[Double] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
+    lineColor: String | ColorString | GradientColorObject | PatternObject = null,
+    lineWidth: js.UndefOr[Double] = js.undefined,
+    radius: js.UndefOr[Double] = js.undefined,
     states: PointStatesOptionsObject = null,
     symbol: String | SymbolKeyValue = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): PointMarkerOptionsObject = {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (enabledThreshold != null) __obj.updateDynamic("enabledThreshold")(enabledThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabledThreshold)) __obj.updateDynamic("enabledThreshold")(enabledThreshold.get.asInstanceOf[js.Any])
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(fillOpacity)) __obj.updateDynamic("fillOpacity")(fillOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     if (states != null) __obj.updateDynamic("states")(states.asInstanceOf[js.Any])
     if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointMarkerOptionsObject]
   }
 }

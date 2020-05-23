@@ -4,29 +4,57 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.IMsoPlotArea")
-@js.native
-class IMsoPlotArea protected () extends js.Object {
-  val Application: js.Any = js.native
-  val Border: IMsoBorder = js.native
-  val Creator: Double = js.native
-  val Fill: ChartFillFormat = js.native
-  val Format: IMsoChartFormat = js.native
-  var Height: Double = js.native
-  var InsideHeight: Double = js.native
-  var InsideLeft: Double = js.native
-  var InsideTop: Double = js.native
-  var InsideWidth: Double = js.native
-  val Interior: IMsoInterior = js.native
-  var Left: Double = js.native
-  val Name: String = js.native
+trait IMsoPlotArea extends js.Object {
+  val Application: js.Any
+  val Border: IMsoBorder
+  val Creator: Double
+  val Fill: ChartFillFormat
+  val Format: IMsoChartFormat
+  var Height: Double
+  var InsideHeight: Double
+  var InsideLeft: Double
+  var InsideTop: Double
+  var InsideWidth: Double
+  val Interior: IMsoInterior
+  var Left: Double
+  val Name: String
   @JSName("Office.IMsoPlotArea_typekey")
-  var OfficeDotIMsoPlotArea_typekey: IMsoPlotArea = js.native
-  val Parent: js.Any = js.native
-  var Position: XlChartElementPosition = js.native
-  var Top: Double = js.native
-  var Width: Double = js.native
-  def ClearFormats(): js.Any = js.native
-  def Select(): js.Any = js.native
+  var OfficeDotIMsoPlotArea_typekey: IMsoPlotArea
+  val Parent: js.Any
+  var Position: XlChartElementPosition
+  var Top: Double
+  var Width: Double
+  def ClearFormats(): js.Any
+  def Select(): js.Any
+}
+
+object IMsoPlotArea {
+  @scala.inline
+  def apply(
+    Application: js.Any,
+    Border: IMsoBorder,
+    ClearFormats: () => js.Any,
+    Creator: Double,
+    Fill: ChartFillFormat,
+    Format: IMsoChartFormat,
+    Height: Double,
+    InsideHeight: Double,
+    InsideLeft: Double,
+    InsideTop: Double,
+    InsideWidth: Double,
+    Interior: IMsoInterior,
+    Left: Double,
+    Name: String,
+    OfficeDotIMsoPlotArea_typekey: IMsoPlotArea,
+    Parent: js.Any,
+    Position: XlChartElementPosition,
+    Select: () => js.Any,
+    Top: Double,
+    Width: Double
+  ): IMsoPlotArea = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Border = Border.asInstanceOf[js.Any], ClearFormats = js.Any.fromFunction0(ClearFormats), Creator = Creator.asInstanceOf[js.Any], Fill = Fill.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any], Height = Height.asInstanceOf[js.Any], InsideHeight = InsideHeight.asInstanceOf[js.Any], InsideLeft = InsideLeft.asInstanceOf[js.Any], InsideTop = InsideTop.asInstanceOf[js.Any], InsideWidth = InsideWidth.asInstanceOf[js.Any], Interior = Interior.asInstanceOf[js.Any], Left = Left.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Position = Position.asInstanceOf[js.Any], Select = js.Any.fromFunction0(Select), Top = Top.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any])
+    __obj.updateDynamic("Office.IMsoPlotArea_typekey")(OfficeDotIMsoPlotArea_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IMsoPlotArea]
+  }
 }
 

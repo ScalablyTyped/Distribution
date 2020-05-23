@@ -22,10 +22,10 @@ object DimensionFilter {
     operator: String = null
   ): DimensionFilter = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.asInstanceOf[js.Any])
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.get.asInstanceOf[js.Any])
     if (dimensionName != null) __obj.updateDynamic("dimensionName")(dimensionName.asInstanceOf[js.Any])
     if (expressions != null) __obj.updateDynamic("expressions")(expressions.asInstanceOf[js.Any])
-    if (!js.isUndefined(not)) __obj.updateDynamic("not")(not.asInstanceOf[js.Any])
+    if (!js.isUndefined(not)) __obj.updateDynamic("not")(not.get.asInstanceOf[js.Any])
     if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
     __obj.asInstanceOf[DimensionFilter]
   }

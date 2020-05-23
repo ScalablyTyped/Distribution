@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +15,20 @@ trait VTTRegion extends js.Object {
   var width: Double
 }
 
-@JSGlobal("VTTRegion")
-@js.native
-object VTTRegion extends Instantiable0[VTTRegion]
+object VTTRegion {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    lines: Double,
+    regionAnchorX: Double,
+    regionAnchorY: Double,
+    scroll: ScrollSetting,
+    viewportAnchorX: Double,
+    viewportAnchorY: Double,
+    width: Double
+  ): VTTRegion = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], regionAnchorX = regionAnchorX.asInstanceOf[js.Any], regionAnchorY = regionAnchorY.asInstanceOf[js.Any], scroll = scroll.asInstanceOf[js.Any], viewportAnchorX = viewportAnchorX.asInstanceOf[js.Any], viewportAnchorY = viewportAnchorY.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VTTRegion]
+  }
+}
 

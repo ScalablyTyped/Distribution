@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait dxTreeMapNode extends js.Object {
   /** @name dxTreeMapNode.data */
-  var data: js.Any = js.native
+  var data: js.UndefOr[js.Any] = js.native
   /** @name dxTreeMapNode.index */
-  var index: Double = js.native
+  var index: js.UndefOr[Double] = js.native
   /** @name dxTreeMapNode.level */
-  var level: Double = js.native
+  var level: js.UndefOr[Double] = js.native
   /** @name dxTreeMapNode.customize(options) */
   def customize(options: js.Any): Unit = js.native
   /** @name dxTreeMapNode.drillDown() */

@@ -39,8 +39,8 @@ object TwitterLoginProps {
     children: ReactNode = null,
     credentials: omit | `same-origin` | include = null,
     customHeaders: HeadersInit = null,
-    dialogHeight: Int | Double = null,
-    dialogWidth: Int | Double = null,
+    dialogHeight: js.UndefOr[Double] = js.undefined,
+    dialogWidth: js.UndefOr[Double] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     forceLogin: js.UndefOr[Boolean] = js.undefined,
     showIcon: js.UndefOr[Boolean] = js.undefined,
@@ -52,11 +52,11 @@ object TwitterLoginProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
     if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
-    if (dialogHeight != null) __obj.updateDynamic("dialogHeight")(dialogHeight.asInstanceOf[js.Any])
-    if (dialogWidth != null) __obj.updateDynamic("dialogWidth")(dialogWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceLogin)) __obj.updateDynamic("forceLogin")(forceLogin.asInstanceOf[js.Any])
-    if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon.asInstanceOf[js.Any])
+    if (!js.isUndefined(dialogHeight)) __obj.updateDynamic("dialogHeight")(dialogHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dialogWidth)) __obj.updateDynamic("dialogWidth")(dialogWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceLogin)) __obj.updateDynamic("forceLogin")(forceLogin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])

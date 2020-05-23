@@ -18,10 +18,10 @@ trait UsagePlanThrottleSettings extends js.Object {
 
 object UsagePlanThrottleSettings {
   @scala.inline
-  def apply(burstLimit: Int | Double = null, rateLimit: Int | Double = null): UsagePlanThrottleSettings = {
+  def apply(burstLimit: js.UndefOr[Double] = js.undefined, rateLimit: js.UndefOr[Double] = js.undefined): UsagePlanThrottleSettings = {
     val __obj = js.Dynamic.literal()
-    if (burstLimit != null) __obj.updateDynamic("burstLimit")(burstLimit.asInstanceOf[js.Any])
-    if (rateLimit != null) __obj.updateDynamic("rateLimit")(rateLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(burstLimit)) __obj.updateDynamic("burstLimit")(burstLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rateLimit)) __obj.updateDynamic("rateLimit")(rateLimit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsagePlanThrottleSettings]
   }
 }

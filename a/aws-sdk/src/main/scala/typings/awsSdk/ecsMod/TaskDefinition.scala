@@ -101,7 +101,7 @@ object TaskDefinition {
     proxyConfiguration: ProxyConfiguration = null,
     requiresAttributes: RequiresAttributes = null,
     requiresCompatibilities: CompatibilityList = null,
-    revision: Int | scala.Double = null,
+    revision: js.UndefOr[Integer] = js.undefined,
     status: TaskDefinitionStatus = null,
     taskDefinitionArn: String = null,
     taskRoleArn: String = null,
@@ -122,7 +122,7 @@ object TaskDefinition {
     if (proxyConfiguration != null) __obj.updateDynamic("proxyConfiguration")(proxyConfiguration.asInstanceOf[js.Any])
     if (requiresAttributes != null) __obj.updateDynamic("requiresAttributes")(requiresAttributes.asInstanceOf[js.Any])
     if (requiresCompatibilities != null) __obj.updateDynamic("requiresCompatibilities")(requiresCompatibilities.asInstanceOf[js.Any])
-    if (revision != null) __obj.updateDynamic("revision")(revision.asInstanceOf[js.Any])
+    if (!js.isUndefined(revision)) __obj.updateDynamic("revision")(revision.get.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (taskDefinitionArn != null) __obj.updateDynamic("taskDefinitionArn")(taskDefinitionArn.asInstanceOf[js.Any])
     if (taskRoleArn != null) __obj.updateDynamic("taskRoleArn")(taskRoleArn.asInstanceOf[js.Any])

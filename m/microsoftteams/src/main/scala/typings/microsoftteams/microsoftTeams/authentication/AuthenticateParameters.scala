@@ -32,15 +32,15 @@ object AuthenticateParameters {
   def apply(
     url: String,
     failureCallback: /* reason */ js.UndefOr[String] => Unit = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     successCallback: /* result */ js.UndefOr[String] => Unit = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): AuthenticateParameters = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (failureCallback != null) __obj.updateDynamic("failureCallback")(js.Any.fromFunction1(failureCallback))
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (successCallback != null) __obj.updateDynamic("successCallback")(js.Any.fromFunction1(successCallback))
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticateParameters]
   }
 }

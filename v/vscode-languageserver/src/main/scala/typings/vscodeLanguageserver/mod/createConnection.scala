@@ -26,32 +26,32 @@ object createConnection extends js.Object {
     strategy: typings.vscodeJsonrpc.mod.ConnectionStrategy
   ): IConnection = js.native
   def apply(strategy: typings.vscodeJsonrpc.mod.ConnectionStrategy): IConnection = js.native
-  def apply[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace](factories: Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace]): Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] = js.native
-  def apply[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace](
-    factories: Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace],
+  def apply[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages](factories: Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages]): Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages] = js.native
+  def apply[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages](
+    factories: Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages],
     inputStream: ReadableStream,
     outputStream: WritableStream
-  ): Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] = js.native
-  def apply[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace](
-    factories: Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace],
+  ): Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages] = js.native
+  def apply[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages](
+    factories: Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages],
     inputStream: ReadableStream,
     outputStream: WritableStream,
     strategy: typings.vscodeJsonrpc.mod.ConnectionStrategy
-  ): Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] = js.native
-  def apply[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace](
-    factories: Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace],
+  ): Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages] = js.native
+  def apply[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages](
+    factories: Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages],
     reader: typings.vscodeJsonrpc.messageReaderMod.MessageReader,
     writer: typings.vscodeJsonrpc.messageWriterMod.MessageWriter
-  ): Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] = js.native
-  def apply[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace](
-    factories: Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace],
+  ): Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages] = js.native
+  def apply[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages](
+    factories: Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages],
     reader: typings.vscodeJsonrpc.messageReaderMod.MessageReader,
     writer: typings.vscodeJsonrpc.messageWriterMod.MessageWriter,
     strategy: typings.vscodeJsonrpc.mod.ConnectionStrategy
-  ): Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] = js.native
-  def apply[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace](
-    factories: Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace],
+  ): Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages] = js.native
+  def apply[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages](
+    factories: Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages],
     strategy: typings.vscodeJsonrpc.mod.ConnectionStrategy
-  ): Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] = js.native
+  ): Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages] = js.native
 }
 

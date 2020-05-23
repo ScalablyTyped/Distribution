@@ -11,10 +11,10 @@ trait AnnotationsTunnelTypeLineOptions extends js.Object {
 
 object AnnotationsTunnelTypeLineOptions {
   @scala.inline
-  def apply(fill: String = null, strokeWidth: Int | Double = null): AnnotationsTunnelTypeLineOptions = {
+  def apply(fill: String = null, strokeWidth: js.UndefOr[Double] = js.undefined): AnnotationsTunnelTypeLineOptions = {
     val __obj = js.Dynamic.literal()
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(strokeWidth)) __obj.updateDynamic("strokeWidth")(strokeWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsTunnelTypeLineOptions]
   }
 }

@@ -1,6 +1,6 @@
 package typings.pulumiAws.sqsMixinsMod
 
-import typings.pulumiAws.AnonApproximateFirstReceiveTimestamp
+import typings.pulumiAws.anon.ApproximateFirstReceiveTimestamp
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait QueueRecord extends js.Object {
-  var attributes: AnonApproximateFirstReceiveTimestamp = js.native
+  var attributes: ApproximateFirstReceiveTimestamp = js.native
   var awsRegion: String = js.native
   var body: String = js.native
   var eventSource: String = js.native
@@ -22,7 +22,7 @@ trait QueueRecord extends js.Object {
 object QueueRecord {
   @scala.inline
   def apply(
-    attributes: AnonApproximateFirstReceiveTimestamp,
+    attributes: ApproximateFirstReceiveTimestamp,
     awsRegion: String,
     body: String,
     eventSource: String,

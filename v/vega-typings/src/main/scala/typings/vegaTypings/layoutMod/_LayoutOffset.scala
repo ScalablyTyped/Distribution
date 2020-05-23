@@ -14,7 +14,7 @@ object _LayoutOffset {
     __obj.asInstanceOf[_LayoutOffset]
   }
   @scala.inline
-  def AnonColumnFooter(
+  def ColumnFooter(
     columnFooter: Double | SignalRef = null,
     columnHeader: Double | SignalRef = null,
     columnTitle: Double | SignalRef = null,

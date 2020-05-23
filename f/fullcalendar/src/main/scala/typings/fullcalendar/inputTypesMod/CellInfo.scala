@@ -1,6 +1,6 @@
 package typings.fullcalendar.inputTypesMod
 
-import typings.fullcalendar.jqueryHooksMod._Global_.JQuery
+import typings.fullcalendar.jqueryHooksMod.global.JQuery
 import typings.moment.mod.Moment
 import scala.scalajs.js
 import scala.scalajs.js.`|`

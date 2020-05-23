@@ -7,33 +7,30 @@ import scala.scalajs.js.annotation._
 
 trait IgMapCrosshairPoint
   extends /**
-	 * Option for IgMapCrosshairPoint
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   /**
-  	 * The x coordinate.
-  	 */
+    * The x coordinate.
+    */
   var x: js.UndefOr[Double] = js.undefined
   /**
-  	 * The y coordinate.
-  	 */
+    * The y coordinate.
+    */
   var y: js.UndefOr[Double] = js.undefined
 }
 
 object IgMapCrosshairPoint {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for IgMapCrosshairPoint
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    x: Int | Double = null,
-    y: Int | Double = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    x: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined
   ): IgMapCrosshairPoint = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgMapCrosshairPoint]
   }
 }

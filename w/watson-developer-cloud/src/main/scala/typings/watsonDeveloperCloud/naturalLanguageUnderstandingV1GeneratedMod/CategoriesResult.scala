@@ -14,10 +14,10 @@ trait CategoriesResult extends js.Object {
 
 object CategoriesResult {
   @scala.inline
-  def apply(label: String = null, score: Int | Double = null): CategoriesResult = {
+  def apply(label: String = null, score: js.UndefOr[Double] = js.undefined): CategoriesResult = {
     val __obj = js.Dynamic.literal()
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CategoriesResult]
   }
 }

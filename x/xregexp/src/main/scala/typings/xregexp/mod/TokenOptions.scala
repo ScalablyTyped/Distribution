@@ -53,7 +53,7 @@ object TokenOptions {
     if (flag != null) __obj.updateDynamic("flag")(flag.asInstanceOf[js.Any])
     if (leadChar != null) __obj.updateDynamic("leadChar")(leadChar.asInstanceOf[js.Any])
     if (optionalFlags != null) __obj.updateDynamic("optionalFlags")(optionalFlags.asInstanceOf[js.Any])
-    if (!js.isUndefined(reparse)) __obj.updateDynamic("reparse")(reparse.asInstanceOf[js.Any])
+    if (!js.isUndefined(reparse)) __obj.updateDynamic("reparse")(reparse.get.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenOptions]
   }

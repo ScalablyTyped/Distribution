@@ -469,7 +469,7 @@ object Model {
     columnSelected: /* e */ ColumnSelectedEventArgs => Unit = null,
     columnSelecting: /* e */ ColumnSelectingEventArgs => Unit = null,
     columns: js.Array[Column] = null,
-    commonWidth: Int | Double = null,
+    commonWidth: js.UndefOr[Double] = js.undefined,
     contextClick: /* e */ ContextClickEventArgs => Unit = null,
     contextMenuSettings: ContextMenuSettings = null,
     contextOpen: /* e */ ContextOpenEventArgs => Unit = null,
@@ -507,7 +507,7 @@ object Model {
     locale: String = null,
     mergeCellInfo: /* e */ MergeCellInfoEventArgs => Unit = null,
     mergeHeaderCellInfo: /* e */ MergeHeaderCellInfoEventArgs => Unit = null,
-    minWidth: Int | Double = null,
+    minWidth: js.UndefOr[Double] = js.undefined,
     pageSettings: PageSettings = null,
     query: js.Any = null,
     queryCellInfo: /* e */ QueryCellInfoEventArgs => Unit = null,
@@ -532,7 +532,7 @@ object Model {
     scrollSettings: ScrollSettings = null,
     searchSettings: SearchSettings = null,
     selectedRecords: js.Array[_] = null,
-    selectedRowIndex: Int | Double = null,
+    selectedRowIndex: js.UndefOr[Double] = js.undefined,
     selectedRowIndices: js.Array[_] = null,
     selectionSettings: SelectionSettings = null,
     selectionType: SelectionType | String = null,
@@ -551,22 +551,22 @@ object Model {
     if (actionBegin != null) __obj.updateDynamic("actionBegin")(js.Any.fromFunction1(actionBegin))
     if (actionComplete != null) __obj.updateDynamic("actionComplete")(js.Any.fromFunction1(actionComplete))
     if (actionFailure != null) __obj.updateDynamic("actionFailure")(js.Any.fromFunction1(actionFailure))
-    if (!js.isUndefined(allowCellMerging)) __obj.updateDynamic("allowCellMerging")(allowCellMerging.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowGrouping)) __obj.updateDynamic("allowGrouping")(allowGrouping.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowMultiSorting)) __obj.updateDynamic("allowMultiSorting")(allowMultiSorting.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowMultipleExporting)) __obj.updateDynamic("allowMultipleExporting")(allowMultipleExporting.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowPaging)) __obj.updateDynamic("allowPaging")(allowPaging.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowReordering)) __obj.updateDynamic("allowReordering")(allowReordering.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowResizeToFit)) __obj.updateDynamic("allowResizeToFit")(allowResizeToFit.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowResizing)) __obj.updateDynamic("allowResizing")(allowResizing.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowRowDragAndDrop)) __obj.updateDynamic("allowRowDragAndDrop")(allowRowDragAndDrop.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowScrolling)) __obj.updateDynamic("allowScrolling")(allowScrolling.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSearching)) __obj.updateDynamic("allowSearching")(allowSearching.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSelection)) __obj.updateDynamic("allowSelection")(allowSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowTextWrap)) __obj.updateDynamic("allowTextWrap")(allowTextWrap.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCellMerging)) __obj.updateDynamic("allowCellMerging")(allowCellMerging.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowGrouping)) __obj.updateDynamic("allowGrouping")(allowGrouping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowMultiSorting)) __obj.updateDynamic("allowMultiSorting")(allowMultiSorting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowMultipleExporting)) __obj.updateDynamic("allowMultipleExporting")(allowMultipleExporting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowPaging)) __obj.updateDynamic("allowPaging")(allowPaging.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowReordering)) __obj.updateDynamic("allowReordering")(allowReordering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowResizeToFit)) __obj.updateDynamic("allowResizeToFit")(allowResizeToFit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowResizing)) __obj.updateDynamic("allowResizing")(allowResizing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowRowDragAndDrop)) __obj.updateDynamic("allowRowDragAndDrop")(allowRowDragAndDrop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowScrolling)) __obj.updateDynamic("allowScrolling")(allowScrolling.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSearching)) __obj.updateDynamic("allowSearching")(allowSearching.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSelection)) __obj.updateDynamic("allowSelection")(allowSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowTextWrap)) __obj.updateDynamic("allowTextWrap")(allowTextWrap.get.asInstanceOf[js.Any])
     if (batchAdd != null) __obj.updateDynamic("batchAdd")(js.Any.fromFunction1(batchAdd))
     if (batchDelete != null) __obj.updateDynamic("batchDelete")(js.Any.fromFunction1(batchDelete))
     if (beforeBatchAdd != null) __obj.updateDynamic("beforeBatchAdd")(js.Any.fromFunction1(beforeBatchAdd))
@@ -591,7 +591,7 @@ object Model {
     if (columnSelected != null) __obj.updateDynamic("columnSelected")(js.Any.fromFunction1(columnSelected))
     if (columnSelecting != null) __obj.updateDynamic("columnSelecting")(js.Any.fromFunction1(columnSelecting))
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (commonWidth != null) __obj.updateDynamic("commonWidth")(commonWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(commonWidth)) __obj.updateDynamic("commonWidth")(commonWidth.get.asInstanceOf[js.Any])
     if (contextClick != null) __obj.updateDynamic("contextClick")(js.Any.fromFunction1(contextClick))
     if (contextMenuSettings != null) __obj.updateDynamic("contextMenuSettings")(contextMenuSettings.asInstanceOf[js.Any])
     if (contextOpen != null) __obj.updateDynamic("contextOpen")(js.Any.fromFunction1(contextOpen))
@@ -605,15 +605,15 @@ object Model {
     if (detailsExpand != null) __obj.updateDynamic("detailsExpand")(js.Any.fromFunction1(detailsExpand))
     if (detailsTemplate != null) __obj.updateDynamic("detailsTemplate")(detailsTemplate.asInstanceOf[js.Any])
     if (editSettings != null) __obj.updateDynamic("editSettings")(editSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAltRow)) __obj.updateDynamic("enableAltRow")(enableAltRow.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAutoSaveOnSelectionChange)) __obj.updateDynamic("enableAutoSaveOnSelectionChange")(enableAutoSaveOnSelectionChange.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableHeaderHover)) __obj.updateDynamic("enableHeaderHover")(enableHeaderHover.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableResponsiveRow)) __obj.updateDynamic("enableResponsiveRow")(enableResponsiveRow.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRowHover)) __obj.updateDynamic("enableRowHover")(enableRowHover.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableToolbarItems)) __obj.updateDynamic("enableToolbarItems")(enableToolbarItems.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTouch)) __obj.updateDynamic("enableTouch")(enableTouch.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAltRow)) __obj.updateDynamic("enableAltRow")(enableAltRow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAutoSaveOnSelectionChange)) __obj.updateDynamic("enableAutoSaveOnSelectionChange")(enableAutoSaveOnSelectionChange.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableHeaderHover)) __obj.updateDynamic("enableHeaderHover")(enableHeaderHover.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableResponsiveRow)) __obj.updateDynamic("enableResponsiveRow")(enableResponsiveRow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRowHover)) __obj.updateDynamic("enableRowHover")(enableRowHover.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableToolbarItems)) __obj.updateDynamic("enableToolbarItems")(enableToolbarItems.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTouch)) __obj.updateDynamic("enableTouch")(enableTouch.get.asInstanceOf[js.Any])
     if (endAdd != null) __obj.updateDynamic("endAdd")(js.Any.fromFunction1(endAdd))
     if (endDelete != null) __obj.updateDynamic("endDelete")(js.Any.fromFunction1(endDelete))
     if (endEdit != null) __obj.updateDynamic("endEdit")(js.Any.fromFunction1(endEdit))
@@ -623,13 +623,13 @@ object Model {
     if (filterSettings != null) __obj.updateDynamic("filterSettings")(filterSettings.asInstanceOf[js.Any])
     if (gridLines != null) __obj.updateDynamic("gridLines")(gridLines.asInstanceOf[js.Any])
     if (groupSettings != null) __obj.updateDynamic("groupSettings")(groupSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.get.asInstanceOf[js.Any])
     if (keySettings != null) __obj.updateDynamic("keySettings")(keySettings.asInstanceOf[js.Any])
     if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (mergeCellInfo != null) __obj.updateDynamic("mergeCellInfo")(js.Any.fromFunction1(mergeCellInfo))
     if (mergeHeaderCellInfo != null) __obj.updateDynamic("mergeHeaderCellInfo")(js.Any.fromFunction1(mergeHeaderCellInfo))
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
     if (pageSettings != null) __obj.updateDynamic("pageSettings")(pageSettings.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (queryCellInfo != null) __obj.updateDynamic("queryCellInfo")(js.Any.fromFunction1(queryCellInfo))
@@ -654,13 +654,13 @@ object Model {
     if (scrollSettings != null) __obj.updateDynamic("scrollSettings")(scrollSettings.asInstanceOf[js.Any])
     if (searchSettings != null) __obj.updateDynamic("searchSettings")(searchSettings.asInstanceOf[js.Any])
     if (selectedRecords != null) __obj.updateDynamic("selectedRecords")(selectedRecords.asInstanceOf[js.Any])
-    if (selectedRowIndex != null) __obj.updateDynamic("selectedRowIndex")(selectedRowIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedRowIndex)) __obj.updateDynamic("selectedRowIndex")(selectedRowIndex.get.asInstanceOf[js.Any])
     if (selectedRowIndices != null) __obj.updateDynamic("selectedRowIndices")(selectedRowIndices.asInstanceOf[js.Any])
     if (selectionSettings != null) __obj.updateDynamic("selectionSettings")(selectionSettings.asInstanceOf[js.Any])
     if (selectionType != null) __obj.updateDynamic("selectionType")(selectionType.asInstanceOf[js.Any])
-    if (!js.isUndefined(showColumnChooser)) __obj.updateDynamic("showColumnChooser")(showColumnChooser.asInstanceOf[js.Any])
-    if (!js.isUndefined(showStackedHeader)) __obj.updateDynamic("showStackedHeader")(showStackedHeader.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSummary)) __obj.updateDynamic("showSummary")(showSummary.asInstanceOf[js.Any])
+    if (!js.isUndefined(showColumnChooser)) __obj.updateDynamic("showColumnChooser")(showColumnChooser.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showStackedHeader)) __obj.updateDynamic("showStackedHeader")(showStackedHeader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSummary)) __obj.updateDynamic("showSummary")(showSummary.get.asInstanceOf[js.Any])
     if (sortSettings != null) __obj.updateDynamic("sortSettings")(sortSettings.asInstanceOf[js.Any])
     if (stackedHeaderRows != null) __obj.updateDynamic("stackedHeaderRows")(stackedHeaderRows.asInstanceOf[js.Any])
     if (summaryRows != null) __obj.updateDynamic("summaryRows")(summaryRows.asInstanceOf[js.Any])

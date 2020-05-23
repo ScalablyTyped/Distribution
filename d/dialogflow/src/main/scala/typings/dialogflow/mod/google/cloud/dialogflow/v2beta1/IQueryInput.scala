@@ -16,11 +16,15 @@ trait IQueryInput extends js.Object {
 
 object IQueryInput {
   @scala.inline
-  def apply(audioConfig: IInputAudioConfig = null, event: IEventInput = null, text: ITextInput = null): IQueryInput = {
+  def apply(
+    audioConfig: js.UndefOr[Null | IInputAudioConfig] = js.undefined,
+    event: js.UndefOr[Null | IEventInput] = js.undefined,
+    text: js.UndefOr[Null | ITextInput] = js.undefined
+  ): IQueryInput = {
     val __obj = js.Dynamic.literal()
-    if (audioConfig != null) __obj.updateDynamic("audioConfig")(audioConfig.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (!js.isUndefined(audioConfig)) __obj.updateDynamic("audioConfig")(audioConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(event)) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IQueryInput]
   }
 }

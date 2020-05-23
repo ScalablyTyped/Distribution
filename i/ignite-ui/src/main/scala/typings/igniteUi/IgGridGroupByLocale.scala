@@ -7,113 +7,110 @@ import scala.scalajs.js.annotation._
 
 trait IgGridGroupByLocale
   extends /**
-	 * Option for IgGridGroupByLocale
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   /**
-  	 * Specifies the collapse groups button tooltip.
-  	 *
-  	 */
+    * Specifies the collapse groups button tooltip.
+    *
+    */
   var collapseTooltip: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies the group by area text.
-  	 *
-  	 */
+    * Specifies the group by area text.
+    *
+    */
   var emptyGroupByAreaContent: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies the text for the hyperlink which opens the GroupBy Dialog.
-  	 *
-  	 */
+    * Specifies the text for the hyperlink which opens the GroupBy Dialog.
+    *
+    */
   var emptyGroupByAreaContentSelectColumns: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies the caption for the hyperlink which opens the GroupBy Dialog.
-  	 *
-  	 */
+    * Specifies the caption for the hyperlink which opens the GroupBy Dialog.
+    *
+    */
   var emptyGroupByAreaContentSelectColumnsCaption: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies the expand groups button tooltip.
-  	 *
-  	 */
+    * Specifies the expand groups button tooltip.
+    *
+    */
   var expandTooltip: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies text of button which apply changes in modal dialog.
-  	 *
-  	 */
+    * Specifies text of button which apply changes in modal dialog.
+    *
+    */
   var modalDialogButtonApplyText: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies text of button which cancel changes in modal dialog.
-  	 *
-  	 */
+    * Specifies text of button which cancel changes in modal dialog.
+    *
+    */
   var modalDialogButtonCancelText: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies caption for each descending sorted column in GroupBy Dialog.
-  	 *
-  	 */
+    * Specifies caption for each descending sorted column in GroupBy Dialog.
+    *
+    */
   var modalDialogCaptionButtonAsc: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies caption for each descending sorted column in GroupBy Dialog.
-  	 *
-  	 */
+    * Specifies caption for each descending sorted column in GroupBy Dialog.
+    *
+    */
   var modalDialogCaptionButtonDesc: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies caption for ungroup button in GroupBy Dialog.
-  	 *
-  	 */
+    * Specifies caption for ungroup button in GroupBy Dialog.
+    *
+    */
   var modalDialogCaptionButtonUngroup: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies caption text for the GroupBy Dialog.
-  	 *
-  	 */
+    * Specifies caption text for the GroupBy Dialog.
+    *
+    */
   var modalDialogCaptionText: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies label for "Clear all" button in the GroupBy Dialog.
-  	 *
-  	 */
+    * Specifies label for "Clear all" button in the GroupBy Dialog.
+    *
+    */
   var modalDialogClearAllButtonLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies caption of layouts dropdown button in the GroupBy Dialog.
-  	 *
-  	 */
+    * Specifies caption of layouts dropdown button in the GroupBy Dialog.
+    *
+    */
   var modalDialogDropDownButtonCaption: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies label for layouts dropdown in the GroupBy Dialog.
-  	 *
-  	 */
+    * Specifies label for layouts dropdown in the GroupBy Dialog.
+    *
+    */
   var modalDialogDropDownLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies text for group button in GroupBy Dialog.
-  	 *
-  	 */
+    * Specifies text for group button in GroupBy Dialog.
+    *
+    */
   var modalDialogGroupByButtonText: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies name of the root layout which is shown for the layouts in the modal dialog tree.
-  	 *
-  	 */
+    * Specifies name of the root layout which is shown for the layouts in the modal dialog tree.
+    *
+    */
   var modalDialogRootLevelHierarchicalGrid: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies the remove group button tooltip.
-  	 *
-  	 */
+    * Specifies the remove group button tooltip.
+    *
+    */
   var removeButtonTooltip: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies the summary icon title.
-  	 *
-  	 */
+    * Specifies the summary icon title.
+    *
+    */
   var summaryIconTitle: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies the summary row title.
-  	 *
-  	 */
+    * Specifies the summary row title.
+    *
+    */
   var summaryRowTitle: js.UndefOr[String] = js.undefined
 }
 
 object IgGridGroupByLocale {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for IgGridGroupByLocale
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     collapseTooltip: String = null,
     emptyGroupByAreaContent: String = null,
     emptyGroupByAreaContentSelectColumns: String = null,

@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A point on the data axis.
   */
-@JSGlobal("ASPxClientDashboardItemDataAxisPoint")
 @js.native
-class ASPxClientDashboardItemDataAxisPoint () extends js.Object {
+trait ASPxClientDashboardItemDataAxisPoint extends js.Object {
   /**
     * Gets the name of the axis to which the current axis point belongs.
     */

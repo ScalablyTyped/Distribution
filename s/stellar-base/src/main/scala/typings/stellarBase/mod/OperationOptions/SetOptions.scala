@@ -20,7 +20,7 @@ trait SetOptions[T /* <: SignerOptions */] extends BaseOptions {
 
 object SetOptions {
   @scala.inline
-  def apply[T /* <: SignerOptions */](
+  def apply[T](
     clearFlags: AuthFlag = null,
     highThreshold: Double | String = null,
     homeDomain: String = null,

@@ -1,6 +1,6 @@
 package typings.xmltojson.mod
 
-import typings.std.Document_
+import typings.std.Document
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("xmltojson", "parseXml")
 @js.native
 object parseXml extends js.Object {
-  def apply(oXMLParent: Document_, opt: Options): js.Object = js.native
+  def apply(oXMLParent: Document, opt: Options): js.Object = js.native
 }
 

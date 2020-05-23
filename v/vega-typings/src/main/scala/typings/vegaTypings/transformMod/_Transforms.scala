@@ -621,7 +621,7 @@ object _Transforms {
   ): _Transforms = {
     val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any], expr = expr.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(initonly)) __obj.updateDynamic("initonly")(initonly.asInstanceOf[js.Any])
+    if (!js.isUndefined(initonly)) __obj.updateDynamic("initonly")(initonly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Transforms]
   }
   @scala.inline
@@ -771,7 +771,7 @@ object _Transforms {
   @scala.inline
   def IsocontourTransform(
     `type`: isocontour,
-    as: String | SignalRef = null,
+    as: js.UndefOr[Null | String | SignalRef] = js.undefined,
     field: String | TransformField = null,
     levels: Double | SignalRef = null,
     nice: Boolean | SignalRef = null,
@@ -784,7 +784,7 @@ object _Transforms {
   ): _Transforms = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
+    if (!js.isUndefined(as)) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (levels != null) __obj.updateDynamic("levels")(levels.asInstanceOf[js.Any])
     if (nice != null) __obj.updateDynamic("nice")(nice.asInstanceOf[js.Any])
@@ -805,7 +805,7 @@ object _Transforms {
     avoidBaseMark: Boolean | SignalRef = null,
     avoidMarks: js.Array[String] = null,
     lineAnchor: begin | end | SignalRef = null,
-    markIndex: Int | Double = null,
+    markIndex: js.UndefOr[Double] = js.undefined,
     offset: js.Array[Double] | Double | SignalRef = null,
     padding: Double | SignalRef = null,
     sort: Compare = null
@@ -817,7 +817,7 @@ object _Transforms {
     if (avoidBaseMark != null) __obj.updateDynamic("avoidBaseMark")(avoidBaseMark.asInstanceOf[js.Any])
     if (avoidMarks != null) __obj.updateDynamic("avoidMarks")(avoidMarks.asInstanceOf[js.Any])
     if (lineAnchor != null) __obj.updateDynamic("lineAnchor")(lineAnchor.asInstanceOf[js.Any])
-    if (markIndex != null) __obj.updateDynamic("markIndex")(markIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(markIndex)) __obj.updateDynamic("markIndex")(markIndex.get.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])

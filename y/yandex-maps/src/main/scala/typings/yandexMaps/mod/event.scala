@@ -1,6 +1,6 @@
 package typings.yandexMaps.mod
 
-import typings.yandexMaps.AnonContext
+import typings.yandexMaps.anon.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object event extends js.Object {
   @js.native
   class Manager () extends IEventManager {
-    def this(params: AnonContext) = this()
+    def this(params: Context) = this()
     def createEventobject(`type`: String, event: js.Object, target: js.Object): Event_ = js.native
     def once(types: String, callback: js.Function1[/* event */ IEvent, _]): this.type = js.native
     def once(types: String, callback: js.Function1[/* event */ IEvent, _], context: js.Object): this.type = js.native

@@ -1,7 +1,8 @@
 package typings.materializeCss.mod
 
+import typings.materializeCss.M.ChipsOptions
 import typings.materializeCss.MElements
-import typings.materializeCss.PartialChipsOptions
+import typings.materializeCss.anon.PartialChipsOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +11,23 @@ import scala.scalajs.js.annotation._
 @JSImport("materialize-css", "Chips")
 @js.native
 class Chips ()
-  extends typings.materializeCss.M.Chips
+  extends typings.materializeCss.M.Chips {
+  /**
+    * The DOM element the plugin was initialized with
+    */
+  /* CompleteClass */
+  override var el: Element = js.native
+  /**
+    * The options the instance was initialized with
+    */
+  /* CompleteClass */
+  override var options: ChipsOptions = js.native
+  /**
+    * Destroy plugin instance and teardown
+    */
+  /* CompleteClass */
+  override def destroy(): Unit = js.native
+}
 
 /* static members */
 @JSImport("materialize-css", "Chips")

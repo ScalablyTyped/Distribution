@@ -13,6 +13,7 @@ package object ej {
   type CheckBox = typings.ejWebAll.ej.CheckBox_
   type ColorPicker = typings.ejWebAll.ej.ColorPicker_
   type ComboBox = typings.ejWebAll.ej.ComboBox_
+  type CurrencyTextbox = typings.ejWebAll.ej.Editor
   type DatePicker = typings.ejWebAll.ej.DatePicker_
   type DateRangePicker = typings.ejWebAll.ej.DateRangePicker_
   type DateTimePicker = typings.ejWebAll.ej.DateTimePicker_
@@ -33,8 +34,10 @@ package object ej {
   type MaskEdit = typings.ejWebAll.ej.MaskEdit_
   type Menu = typings.ejWebAll.ej.Menu_
   type NavigationDrawer = typings.ejWebAll.ej.NavigationDrawer_
+  type NumericTextbox = typings.ejWebAll.ej.Editor
   type Pager = typings.ejWebAll.ej.Pager_
   type PdfViewer = typings.ejWebAll.ej.PdfViewer_
+  type PercentageTextbox = typings.ejWebAll.ej.Editor
   type PivotChart = typings.ejWebAll.ej.PivotChart_
   type PivotClient = typings.ejWebAll.ej.PivotClient_
   type PivotGauge = typings.ejWebAll.ej.PivotGauge_
@@ -42,7 +45,7 @@ package object ej {
   type PivotPager = typings.ejWebAll.ej.PivotPager_
   type PivotSchemaDesigner = typings.ejWebAll.ej.PivotSchemaDesigner_
   type PivotTreeMap = typings.ejWebAll.ej.PivotTreeMap_
-  type Print_ = typings.ejWebAll.ej.Print__
+  type Print = typings.ejWebAll.ej.Print_
   type ProgressBar = typings.ejWebAll.ej.ProgressBar_
   type RTE = typings.ejWebAll.ej.RTE_
   type RadialMenu = typings.ejWebAll.ej.RadialMenu_

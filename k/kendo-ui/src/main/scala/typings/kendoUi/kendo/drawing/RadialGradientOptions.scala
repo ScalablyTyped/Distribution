@@ -17,13 +17,13 @@ object RadialGradientOptions {
   def apply(
     center: js.Any | Point = null,
     name: String = null,
-    radius: Int | Double = null,
+    radius: js.UndefOr[Double] = js.undefined,
     stops: js.Any = null
   ): RadialGradientOptions = {
     val __obj = js.Dynamic.literal()
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     if (stops != null) __obj.updateDynamic("stops")(stops.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadialGradientOptions]
   }

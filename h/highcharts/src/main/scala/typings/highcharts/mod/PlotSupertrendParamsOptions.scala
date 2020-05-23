@@ -19,10 +19,10 @@ trait PlotSupertrendParamsOptions extends js.Object {
 
 object PlotSupertrendParamsOptions {
   @scala.inline
-  def apply(multiplier: Int | Double = null, period: Int | Double = null): PlotSupertrendParamsOptions = {
+  def apply(multiplier: js.UndefOr[Double] = js.undefined, period: js.UndefOr[Double] = js.undefined): PlotSupertrendParamsOptions = {
     val __obj = js.Dynamic.literal()
-    if (multiplier != null) __obj.updateDynamic("multiplier")(multiplier.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiplier)) __obj.updateDynamic("multiplier")(multiplier.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(period)) __obj.updateDynamic("period")(period.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotSupertrendParamsOptions]
   }
 }

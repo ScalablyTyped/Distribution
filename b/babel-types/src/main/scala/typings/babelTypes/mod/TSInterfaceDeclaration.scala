@@ -22,37 +22,9 @@ trait TSInterfaceDeclaration
 object TSInterfaceDeclaration extends js.Object {
   def apply(
     id: Identifier_,
-    typeParameters: js.UndefOr[scala.Nothing],
-    extends_ : js.UndefOr[scala.Nothing],
+    typeParameters: js.UndefOr[Null | TypeParameterDeclaration_],
+    extends_ : js.UndefOr[js.Array[TSExpressionWithTypeArguments] | Null],
     body: TSInterfaceBody
   ): TSInterfaceDeclaration = js.native
-  def apply(
-    id: Identifier_,
-    typeParameters: js.UndefOr[scala.Nothing],
-    extends_ : js.Array[TSExpressionWithTypeArguments],
-    body: TSInterfaceBody
-  ): TSInterfaceDeclaration = js.native
-  def apply(id: Identifier_, typeParameters: js.UndefOr[scala.Nothing], extends_ : Null, body: TSInterfaceBody): TSInterfaceDeclaration = js.native
-  def apply(id: Identifier_, typeParameters: Null, extends_ : js.UndefOr[scala.Nothing], body: TSInterfaceBody): TSInterfaceDeclaration = js.native
-  def apply(
-    id: Identifier_,
-    typeParameters: Null,
-    extends_ : js.Array[TSExpressionWithTypeArguments],
-    body: TSInterfaceBody
-  ): TSInterfaceDeclaration = js.native
-  def apply(id: Identifier_, typeParameters: Null, extends_ : Null, body: TSInterfaceBody): TSInterfaceDeclaration = js.native
-  def apply(
-    id: Identifier_,
-    typeParameters: TypeParameterDeclaration_,
-    extends_ : js.UndefOr[scala.Nothing],
-    body: TSInterfaceBody
-  ): TSInterfaceDeclaration = js.native
-  def apply(
-    id: Identifier_,
-    typeParameters: TypeParameterDeclaration_,
-    extends_ : js.Array[TSExpressionWithTypeArguments],
-    body: TSInterfaceBody
-  ): TSInterfaceDeclaration = js.native
-  def apply(id: Identifier_, typeParameters: TypeParameterDeclaration_, extends_ : Null, body: TSInterfaceBody): TSInterfaceDeclaration = js.native
 }
 

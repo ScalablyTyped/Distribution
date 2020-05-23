@@ -6,12 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a set of input and output VideoEncodingProperties for a video stream */
-@JSGlobal("Windows.Media.Capture.VideoStreamConfiguration")
-@js.native
-abstract class VideoStreamConfiguration () extends js.Object {
+trait VideoStreamConfiguration extends js.Object {
   /** Gets a VideoEncodingProperties object representing an video stream input configuration. */
-  var inputProperties: VideoEncodingProperties = js.native
+  var inputProperties: VideoEncodingProperties
   /** Gets a VideoEncodingProperties object representing an video stream output configuration. */
-  var outputProperties: VideoEncodingProperties = js.native
+  var outputProperties: VideoEncodingProperties
+}
+
+object VideoStreamConfiguration {
+  @scala.inline
+  def apply(inputProperties: VideoEncodingProperties, outputProperties: VideoEncodingProperties): VideoStreamConfiguration = {
+    val __obj = js.Dynamic.literal(inputProperties = inputProperties.asInstanceOf[js.Any], outputProperties = outputProperties.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VideoStreamConfiguration]
+  }
 }
 

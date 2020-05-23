@@ -10,72 +10,72 @@ import scala.scalajs.js.annotation._
 
 trait IBuffered extends IEvented {
   /** [Method] Returns the value of bufferedCollection
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getBufferedCollection: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of leadingBufferZone
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getLeadingBufferZone: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Determines the page from a record index
-  		* @param index Number The record index
-  		* @returns Number The page the record belongs to
-  		*/
+    * @param index Number The record index
+    * @returns Number The page the record belongs to
+    */
   var getPageFromRecordIndex: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Double]] = js.undefined
   /** [Method] Returns the value of purgePageCount
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getPurgePageCount: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of store
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getStore: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of trailingBufferZone
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getTrailingBufferZone: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of viewSize
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getViewSize: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Config Option] (Number) */
   var leadingBufferZone: js.UndefOr[Double] = js.undefined
   /** [Method] Prefetches data into the store using its configured proxy
-  		* @param options Object config object, passed into the Ext.data.Operation object before loading. See load
-  		*/
+    * @param options Object config object, passed into the Ext.data.Operation object before loading. See load
+    */
   var prefetch: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Prefetches a page of data
-  		* @param page Number The page to prefetch
-  		* @param options Object config object, passed into the Ext.data.Operation object before loading. See load
-  		*/
+    * @param page Number The page to prefetch
+    * @param options Object config object, passed into the Ext.data.Operation object before loading. See load
+    */
   var prefetchPage: js.UndefOr[
     js.Function2[/* page */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Config Option] (Number) */
   var purgePageCount: js.UndefOr[Double] = js.undefined
   /** [Method] Sets the value of bufferedCollection
-  		* @param bufferedCollection Object The new value.
-  		*/
+    * @param bufferedCollection Object The new value.
+    */
   var setBufferedCollection: js.UndefOr[js.Function1[/* bufferedCollection */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of leadingBufferZone
-  		* @param leadingBufferZone Number The new value.
-  		*/
+    * @param leadingBufferZone Number The new value.
+    */
   var setLeadingBufferZone: js.UndefOr[js.Function1[/* leadingBufferZone */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of purgePageCount
-  		* @param purgePageCount Number The new value.
-  		*/
+    * @param purgePageCount Number The new value.
+    */
   var setPurgePageCount: js.UndefOr[js.Function1[/* purgePageCount */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of store
-  		* @param store Object The new value.
-  		*/
+    * @param store Object The new value.
+    */
   var setStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of trailingBufferZone
-  		* @param trailingBufferZone Number The new value.
-  		*/
+    * @param trailingBufferZone Number The new value.
+    */
   var setTrailingBufferZone: js.UndefOr[js.Function1[/* trailingBufferZone */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of viewSize
-  		* @param viewSize Number The new value.
-  		*/
+    * @param viewSize Number The new value.
+    */
   var setViewSize: js.UndefOr[js.Function1[/* viewSize */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Config Option] (Number) */
   var trailingBufferZone: js.UndefOr[Double] = js.undefined
@@ -116,7 +116,7 @@ object IBuffered {
     hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    leadingBufferZone: Int | Double = null,
+    leadingBufferZone: js.UndefOr[Double] = js.undefined,
     listeners: js.Any = null,
     mixins: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
@@ -127,7 +127,7 @@ object IBuffered {
     platformConfig: js.Any = null,
     prefetch: /* options */ js.UndefOr[js.Any] => Unit = null,
     prefetchPage: (/* page */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    purgePageCount: Int | Double = null,
+    purgePageCount: js.UndefOr[Double] = js.undefined,
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
@@ -146,7 +146,7 @@ object IBuffered {
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     suspendEvents: () => Unit = null,
-    trailingBufferZone: Int | Double = null,
+    trailingBufferZone: js.UndefOr[Double] = js.undefined,
     un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
@@ -185,7 +185,7 @@ object IBuffered {
     if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (leadingBufferZone != null) __obj.updateDynamic("leadingBufferZone")(leadingBufferZone.asInstanceOf[js.Any])
+    if (!js.isUndefined(leadingBufferZone)) __obj.updateDynamic("leadingBufferZone")(leadingBufferZone.get.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
@@ -196,7 +196,7 @@ object IBuffered {
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (prefetch != null) __obj.updateDynamic("prefetch")(js.Any.fromFunction1(prefetch))
     if (prefetchPage != null) __obj.updateDynamic("prefetchPage")(js.Any.fromFunction2(prefetchPage))
-    if (purgePageCount != null) __obj.updateDynamic("purgePageCount")(purgePageCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(purgePageCount)) __obj.updateDynamic("purgePageCount")(purgePageCount.get.asInstanceOf[js.Any])
     if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction2(relayEvents))
     if (removeAfterListener != null) __obj.updateDynamic("removeAfterListener")(js.Any.fromFunction4(removeAfterListener))
     if (removeBeforeListener != null) __obj.updateDynamic("removeBeforeListener")(js.Any.fromFunction4(removeBeforeListener))
@@ -212,10 +212,10 @@ object IBuffered {
     if (setStore != null) __obj.updateDynamic("setStore")(js.Any.fromFunction1(setStore))
     if (setTrailingBufferZone != null) __obj.updateDynamic("setTrailingBufferZone")(js.Any.fromFunction1(setTrailingBufferZone))
     if (setViewSize != null) __obj.updateDynamic("setViewSize")(js.Any.fromFunction1(setViewSize))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
-    if (trailingBufferZone != null) __obj.updateDynamic("trailingBufferZone")(trailingBufferZone.asInstanceOf[js.Any])
+    if (!js.isUndefined(trailingBufferZone)) __obj.updateDynamic("trailingBufferZone")(trailingBufferZone.get.asInstanceOf[js.Any])
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
     if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
     if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))

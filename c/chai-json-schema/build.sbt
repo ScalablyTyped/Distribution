@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "chai-json-schema"
-version := "1.4-dt-20190808Z-d7d976"
-scalaVersion := "2.13.1"
+version := "1.4-dt-20200515Z-cf89d5"
+scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.8-9b2470",
-  "org.scalablytyped" %%% "tv4" % "1.2.5-dt-20200225Z-14fab2")
+  "org.scalablytyped" %%% "std" % "3.9-18cbeb",
+  "org.scalablytyped" %%% "tv4" % "1.2.5-dt-20200515Z-80610e")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

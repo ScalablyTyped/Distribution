@@ -19,7 +19,7 @@ object SeriesDragSettings {
   @scala.inline
   def apply(enable: js.UndefOr[Boolean] = js.undefined, `type`: String = null): SeriesDragSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesDragSettings]
   }

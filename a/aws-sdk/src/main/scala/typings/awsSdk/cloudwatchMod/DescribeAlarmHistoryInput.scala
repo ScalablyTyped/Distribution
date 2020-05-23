@@ -47,7 +47,7 @@ object DescribeAlarmHistoryInput {
     AlarmTypes: AlarmTypes = null,
     EndDate: Timestamp = null,
     HistoryItemType: HistoryItemType = null,
-    MaxRecords: Int | Double = null,
+    MaxRecords: js.UndefOr[MaxRecords] = js.undefined,
     NextToken: NextToken = null,
     ScanBy: ScanBy = null,
     StartDate: Timestamp = null
@@ -57,7 +57,7 @@ object DescribeAlarmHistoryInput {
     if (AlarmTypes != null) __obj.updateDynamic("AlarmTypes")(AlarmTypes.asInstanceOf[js.Any])
     if (EndDate != null) __obj.updateDynamic("EndDate")(EndDate.asInstanceOf[js.Any])
     if (HistoryItemType != null) __obj.updateDynamic("HistoryItemType")(HistoryItemType.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (ScanBy != null) __obj.updateDynamic("ScanBy")(ScanBy.asInstanceOf[js.Any])
     if (StartDate != null) __obj.updateDynamic("StartDate")(StartDate.asInstanceOf[js.Any])

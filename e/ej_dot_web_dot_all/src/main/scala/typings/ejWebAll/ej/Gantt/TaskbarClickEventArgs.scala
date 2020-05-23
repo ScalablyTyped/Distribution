@@ -29,7 +29,7 @@ object TaskbarClickEventArgs {
   @scala.inline
   def apply(
     data: js.Any = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     model: js.Any = null,
     target: js.Any = null,
     taskbarElement: js.Any = null,
@@ -37,7 +37,7 @@ object TaskbarClickEventArgs {
   ): TaskbarClickEventArgs = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (taskbarElement != null) __obj.updateDynamic("taskbarElement")(taskbarElement.asInstanceOf[js.Any])

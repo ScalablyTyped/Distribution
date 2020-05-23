@@ -1,6 +1,6 @@
 package typings.ionicCliFramework.definitionsMod
 
-import typings.ionicCliFramework.AnonValue
+import typings.ionicCliFramework.anon.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait CommandMetadataOption extends Metadata {
   var aliases: js.UndefOr[js.Array[String]] = js.undefined
   var default: js.UndefOr[String | Boolean] = js.undefined
-  var spec: js.UndefOr[AnonValue] = js.undefined
+  var spec: js.UndefOr[Value] = js.undefined
   var `type`: js.UndefOr[CommandOptionType] = js.undefined
 }
 
@@ -22,7 +22,7 @@ object CommandMetadataOption {
     description: String = null,
     footnotes: js.Array[Footnote] = null,
     groups: js.Array[String] = null,
-    spec: AnonValue = null,
+    spec: Value = null,
     `type`: CommandOptionType = null
   ): CommandMetadataOption = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])

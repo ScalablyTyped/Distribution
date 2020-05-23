@@ -36,18 +36,18 @@ object ItemsSegmentSettings {
   def apply(
     color: String = null,
     gradient: js.Any = null,
-    length: Int | Double = null,
-    opacity: Int | Double = null,
-    spacing: Int | Double = null,
-    width: Int | Double = null
+    length: js.UndefOr[Double] = js.undefined,
+    opacity: js.UndefOr[Double] = js.undefined,
+    spacing: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): ItemsSegmentSettings = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (gradient != null) __obj.updateDynamic("gradient")(gradient.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spacing)) __obj.updateDynamic("spacing")(spacing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsSegmentSettings]
   }
 }

@@ -55,12 +55,12 @@ object VerifyOptions {
   ): VerifyOptions = {
     val __obj = js.Dynamic.literal()
     if (abuse_at_token != null) __obj.updateDynamic("abuse_at_token")(abuse_at_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(abuse_at_verify)) __obj.updateDynamic("abuse_at_verify")(abuse_at_verify.asInstanceOf[js.Any])
-    if (!js.isUndefined(cname_verify)) __obj.updateDynamic("cname_verify")(cname_verify.asInstanceOf[js.Any])
-    if (!js.isUndefined(dkim_verify)) __obj.updateDynamic("dkim_verify")(dkim_verify.asInstanceOf[js.Any])
+    if (!js.isUndefined(abuse_at_verify)) __obj.updateDynamic("abuse_at_verify")(abuse_at_verify.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cname_verify)) __obj.updateDynamic("cname_verify")(cname_verify.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dkim_verify)) __obj.updateDynamic("dkim_verify")(dkim_verify.get.asInstanceOf[js.Any])
     if (postmaster_at_token != null) __obj.updateDynamic("postmaster_at_token")(postmaster_at_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(postmaster_at_verify)) __obj.updateDynamic("postmaster_at_verify")(postmaster_at_verify.asInstanceOf[js.Any])
-    if (!js.isUndefined(spf_verify)) __obj.updateDynamic("spf_verify")(spf_verify.asInstanceOf[js.Any])
+    if (!js.isUndefined(postmaster_at_verify)) __obj.updateDynamic("postmaster_at_verify")(postmaster_at_verify.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spf_verify)) __obj.updateDynamic("spf_verify")(spf_verify.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerifyOptions]
   }
 }

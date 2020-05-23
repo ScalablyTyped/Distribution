@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation._
 
 trait ResourceProviderMetadata extends js.Object {
   /**
-  		 * Display name of the provider
-  		 */
+    * Display name of the provider
+    */
   var displayName: String
   /**
-  		 * The identifier of the provider
-  		 */
+    * The identifier of the provider
+    */
   var id: String
   /**
-  		 * Optional settings that identify an instantiation of a provider
-  		 */
+    * Optional settings that identify an instantiation of a provider
+    */
   var settings: js.UndefOr[js.Object] = js.undefined
 }
 

@@ -22,7 +22,7 @@ object IPickerView {
   @scala.inline
   def apply(
     cascade: js.UndefOr[Boolean] = js.undefined,
-    cols: Int | Double = null,
+    cols: js.UndefOr[Double] = js.undefined,
     data: js.Array[js.Array[PickerData] | PickerData] = null,
     indicatorStyle: js.Any = null,
     itemStyle: js.Any = null,
@@ -33,8 +33,8 @@ object IPickerView {
     value: js.Array[_] = null
   ): IPickerView = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cascade)) __obj.updateDynamic("cascade")(cascade.asInstanceOf[js.Any])
-    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
+    if (!js.isUndefined(cascade)) __obj.updateDynamic("cascade")(cascade.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cols)) __obj.updateDynamic("cols")(cols.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (indicatorStyle != null) __obj.updateDynamic("indicatorStyle")(indicatorStyle.asInstanceOf[js.Any])
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])

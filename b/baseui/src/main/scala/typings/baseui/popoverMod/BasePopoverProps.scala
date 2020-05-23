@@ -49,15 +49,15 @@ object BasePopoverProps {
   @scala.inline
   def apply(
     accessibilityType: none | menu | tooltip = null,
-    animateOutTime: Int | Double = null,
+    animateOutTime: js.UndefOr[Double] = js.undefined,
     autoFocus: js.UndefOr[Boolean] = js.undefined,
     `data-baseweb`: String = null,
     focusLock: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     ignoreBoundary: js.UndefOr[Boolean] = js.undefined,
     mountNode: HTMLElement = null,
-    onMouseEnterDelay: Int | Double = null,
-    onMouseLeaveDelay: Int | Double = null,
+    onMouseEnterDelay: js.UndefOr[Double] = js.undefined,
+    onMouseLeaveDelay: js.UndefOr[Double] = js.undefined,
     overrides: Overrides = null,
     placement: topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top = null,
     popperOptions: js.Any = null,
@@ -68,21 +68,21 @@ object BasePopoverProps {
   ): BasePopoverProps = {
     val __obj = js.Dynamic.literal()
     if (accessibilityType != null) __obj.updateDynamic("accessibilityType")(accessibilityType.asInstanceOf[js.Any])
-    if (animateOutTime != null) __obj.updateDynamic("animateOutTime")(animateOutTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(animateOutTime)) __obj.updateDynamic("animateOutTime")(animateOutTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
     if (`data-baseweb` != null) __obj.updateDynamic("data-baseweb")(`data-baseweb`.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusLock)) __obj.updateDynamic("focusLock")(focusLock.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusLock)) __obj.updateDynamic("focusLock")(focusLock.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreBoundary)) __obj.updateDynamic("ignoreBoundary")(ignoreBoundary.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreBoundary)) __obj.updateDynamic("ignoreBoundary")(ignoreBoundary.get.asInstanceOf[js.Any])
     if (mountNode != null) __obj.updateDynamic("mountNode")(mountNode.asInstanceOf[js.Any])
-    if (onMouseEnterDelay != null) __obj.updateDynamic("onMouseEnterDelay")(onMouseEnterDelay.asInstanceOf[js.Any])
-    if (onMouseLeaveDelay != null) __obj.updateDynamic("onMouseLeaveDelay")(onMouseLeaveDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(onMouseEnterDelay)) __obj.updateDynamic("onMouseEnterDelay")(onMouseEnterDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(onMouseLeaveDelay)) __obj.updateDynamic("onMouseLeaveDelay")(onMouseLeaveDelay.get.asInstanceOf[js.Any])
     if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (popperOptions != null) __obj.updateDynamic("popperOptions")(popperOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderAll)) __obj.updateDynamic("renderAll")(renderAll.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnFocus)) __obj.updateDynamic("returnFocus")(returnFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(showArrow)) __obj.updateDynamic("showArrow")(showArrow.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderAll)) __obj.updateDynamic("renderAll")(renderAll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnFocus)) __obj.updateDynamic("returnFocus")(returnFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showArrow)) __obj.updateDynamic("showArrow")(showArrow.get.asInstanceOf[js.Any])
     if (triggerType != null) __obj.updateDynamic("triggerType")(triggerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasePopoverProps]
   }

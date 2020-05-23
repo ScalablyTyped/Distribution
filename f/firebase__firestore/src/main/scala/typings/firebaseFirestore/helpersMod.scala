@@ -1,7 +1,6 @@
 package typings.firebaseFirestore
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.firebaseFirestore.firebaseFirestoreStrings.`test-db2`
 import typings.firebaseFirestoreTypes.mod.CollectionReference
 import typings.firebaseFirestoreTypes.mod.DocumentData
 import typings.firebaseFirestoreTypes.mod.DocumentReference
@@ -13,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/test/integration/util/helpers", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/test/integration/util/helpers", JSImport.Namespace)
 @js.native
 object helpersMod extends js.Object {
   @js.native
@@ -27,7 +26,7 @@ object helpersMod extends js.Object {
     def skip(message: String, testSuite: js.Function1[/* persistence */ Boolean, Unit]): Unit = js.native
   }
   
-  val ALT_PROJECT_ID: `test-db2` = js.native
+  val ALT_PROJECT_ID: /* "test-db2" */ String = js.native
   val DEFAULT_PROJECT_ID: js.Any = js.native
   val DEFAULT_SETTINGS: Settings = js.native
   val USE_EMULATOR: Boolean = js.native

@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation._
 trait ShapeLineFormatData extends js.Object {
   /**
     *
-    * Represents the line color in HTML color format, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+    * Represents the line color in HTML color format, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -57,7 +57,7 @@ trait ShapeLineFormatData extends js.Object {
   var transparency: js.UndefOr[Double] = js.undefined
   /**
     *
-    * Represents whether or not the line formatting of a shape element is visible. Returns null when the shape has inconsistent visibilities.
+    * Specifies if the line formatting of a shape element is visible. Returns null when the shape has inconsistent visibilities.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -77,17 +77,17 @@ object ShapeLineFormatData {
     color: String = null,
     dashStyle: ShapeLineDashStyle | Dash | DashDot | DashDotDot | LongDash | LongDashDot | RoundDot | Solid | SquareDot | LongDashDotDot | SystemDash | SystemDot | SystemDashDot = null,
     style: ShapeLineStyle | Single | ThickBetweenThin | ThickThin | ThinThick | ThinThin = null,
-    transparency: Int | Double = null,
+    transparency: js.UndefOr[Double] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
-    weight: Int | Double = null
+    weight: js.UndefOr[Double] = js.undefined
   ): ShapeLineFormatData = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (transparency != null) __obj.updateDynamic("transparency")(transparency.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(transparency)) __obj.updateDynamic("transparency")(transparency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeLineFormatData]
   }
 }

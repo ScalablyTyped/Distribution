@@ -57,20 +57,20 @@ trait PlusOrientationRotation extends js.Object {
 object PlusOrientationRotation {
   @scala.inline
   def apply(
-    alpha: Int | Double = null,
-    beta: Int | Double = null,
-    gamma: Int | Double = null,
-    headingAccuracy: Int | Double = null,
-    magneticHeading: Int | Double = null,
-    trueHeading: Int | Double = null
+    alpha: js.UndefOr[Double] = js.undefined,
+    beta: js.UndefOr[Double] = js.undefined,
+    gamma: js.UndefOr[Double] = js.undefined,
+    headingAccuracy: js.UndefOr[Double] = js.undefined,
+    magneticHeading: js.UndefOr[Double] = js.undefined,
+    trueHeading: js.UndefOr[Double] = js.undefined
   ): PlusOrientationRotation = {
     val __obj = js.Dynamic.literal()
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    if (beta != null) __obj.updateDynamic("beta")(beta.asInstanceOf[js.Any])
-    if (gamma != null) __obj.updateDynamic("gamma")(gamma.asInstanceOf[js.Any])
-    if (headingAccuracy != null) __obj.updateDynamic("headingAccuracy")(headingAccuracy.asInstanceOf[js.Any])
-    if (magneticHeading != null) __obj.updateDynamic("magneticHeading")(magneticHeading.asInstanceOf[js.Any])
-    if (trueHeading != null) __obj.updateDynamic("trueHeading")(trueHeading.asInstanceOf[js.Any])
+    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(beta)) __obj.updateDynamic("beta")(beta.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gamma)) __obj.updateDynamic("gamma")(gamma.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(headingAccuracy)) __obj.updateDynamic("headingAccuracy")(headingAccuracy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(magneticHeading)) __obj.updateDynamic("magneticHeading")(magneticHeading.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trueHeading)) __obj.updateDynamic("trueHeading")(trueHeading.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusOrientationRotation]
   }
 }

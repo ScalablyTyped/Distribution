@@ -15,7 +15,7 @@ object TestableOptions {
   @scala.inline
   def apply(skipTest: js.UndefOr[Boolean] = js.undefined): TestableOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(skipTest)) __obj.updateDynamic("skipTest")(skipTest.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipTest)) __obj.updateDynamic("skipTest")(skipTest.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestableOptions]
   }
 }

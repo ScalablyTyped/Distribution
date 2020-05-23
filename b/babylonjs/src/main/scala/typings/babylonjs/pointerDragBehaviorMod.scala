@@ -1,6 +1,9 @@
 package typings.babylonjs
 
 import typings.babylonjs.abstractMeshMod.AbstractMesh
+import typings.babylonjs.anon.DragAxis
+import typings.babylonjs.anon.DragDistance
+import typings.babylonjs.anon.DragPlanePoint
 import typings.babylonjs.behaviorMod.Behavior
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.observableMod.Observable
@@ -18,7 +21,7 @@ object pointerDragBehaviorMod extends js.Object {
     * @param options The drag axis or normal of the plane that will be dragged across. If no options are specified the drag plane will always face the ray's origin (eg. camera)
     */
   class PointerDragBehavior () extends Behavior[AbstractMesh] {
-    def this(options: AnonDragAxis) = this()
+    def this(options: DragAxis) = this()
     var _alternatePickedPoint: js.Any = js.native
     var _attachedElement: js.Any = js.native
     var _beforeRenderObserver: js.Any = js.native
@@ -92,7 +95,7 @@ object pointerDragBehaviorMod extends js.Object {
     /**
       *  Fires each time a drag ends (eg. mouse release after drag)
       */
-    var onDragEndObservable: Observable[AnonDragPlanePoint] = js.native
+    var onDragEndObservable: Observable[DragPlanePoint] = js.native
     /**
       *  Fires each time the attached mesh is dragged with the pointer
       *  * delta between last drag position and current drag position in world space
@@ -100,11 +103,11 @@ object pointerDragBehaviorMod extends js.Object {
       *  * dragPlaneNormal normal of the current drag plane used during the drag
       *  * dragPlanePoint in world space where the drag intersects the drag plane
       */
-    var onDragObservable: Observable[AnonDragDistance] = js.native
+    var onDragObservable: Observable[DragDistance] = js.native
     /**
       *  Fires each time a drag begins (eg. mouse down on mesh)
       */
-    var onDragStartObservable: Observable[AnonDragPlanePoint] = js.native
+    var onDragStartObservable: Observable[DragPlanePoint] = js.native
     /**
       * If pointer events should start and release the drag (Default: true)
       */
@@ -142,11 +145,11 @@ object pointerDragBehaviorMod extends js.Object {
     /**
       * Gets the options used by the behavior
       */
-    def options: AnonDragAxis = js.native
+    def options: DragAxis = js.native
     /**
       * Sets the options used by the behavior
       */
-    def options(options: AnonDragAxis): js.Any = js.native
+    def options(options: DragAxis): js.Any = js.native
     /**
       * Force relase the drag action by code.
       */

@@ -30,9 +30,9 @@ object GraphQLOptions {
     val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (formatError != null) __obj.updateDynamic("formatError")(js.Any.fromFunction1(formatError))
-    if (!js.isUndefined(graphiql)) __obj.updateDynamic("graphiql")(graphiql.asInstanceOf[js.Any])
+    if (!js.isUndefined(graphiql)) __obj.updateDynamic("graphiql")(graphiql.get.asInstanceOf[js.Any])
     if (graphql != null) __obj.updateDynamic("graphql")(graphql.asInstanceOf[js.Any])
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])
+    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.get.asInstanceOf[js.Any])
     if (rootValue != null) __obj.updateDynamic("rootValue")(rootValue.asInstanceOf[js.Any])
     if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLOptions]

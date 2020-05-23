@@ -1,5 +1,6 @@
 package typings.angularCompiler
 
+import typings.angularCompiler.anon.Directive
 import typings.angularCompiler.astMod.AST
 import typings.angularCompiler.r3AstMod.BoundAttribute
 import typings.angularCompiler.r3AstMod.BoundEvent
@@ -30,7 +31,7 @@ object t2BinderMod extends js.Object {
       bindings: Map[BoundAttribute | BoundEvent | TextAttribute, DirectiveT | Element | Template],
       references: Map[
             BoundAttribute | BoundEvent | Reference | TextAttribute, 
-            AnonDirective[DirectiveT] | Element | Template
+            Directive[DirectiveT] | Element | Template
           ],
       exprTargets: Map[AST, Reference | Variable],
       symbols: Map[Reference | Variable, Template],

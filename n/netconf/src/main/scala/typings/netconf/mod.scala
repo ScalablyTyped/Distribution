@@ -1,5 +1,8 @@
 package typings.netconf
 
+import typings.netconf.anon.Action
+import typings.netconf.anon.Host
+import typings.netconf.anon.Hostname
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +15,7 @@ object mod extends js.Object {
     /**
       * Creates a new Client object by passing in the connection parameters. Both password and private key authentication methods are supported
       */
-    def this(params: AnonHost) = this()
+    def this(params: Host) = this()
     /**
       * Closes the session
       */
@@ -29,12 +32,12 @@ object mod extends js.Object {
     /**
       * Collects some useful information from several RPC calls and presents the results back
       */
-    def facts(callback: js.Function2[/* err */ js.Any, /* facts */ AnonHostname, Unit]): Unit = js.native
+    def facts(callback: js.Function2[/* err */ js.Any, /* facts */ Hostname, Unit]): Unit = js.native
     /**
       * Loads configuration data into candidate-config using NETCONF. Default options are equivalent to "load merge" and would expect configuration data in JunOS curly-brace format
       */
     def load(args: String, callback: js.Function2[/* err */ js.Any, /* reply */ js.Any, Unit]): Unit = js.native
-    def load(args: AnonAction, callback: js.Function2[/* err */ js.Any, /* reply */ js.Any, Unit]): Unit = js.native
+    def load(args: Action, callback: js.Function2[/* err */ js.Any, /* reply */ js.Any, Unit]): Unit = js.native
     /**
       * Opens a session
       */

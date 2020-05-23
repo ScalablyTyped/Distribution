@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object PlayReadyHardwareDRMFeatures extends js.Object {
   /** Indicates the hardware supports High Efficiency Video Coding (HEVC)/H.265 codec. */
   @js.native
   sealed trait hevc extends PlayReadyHardwareDRMFeatures
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PlayReadyHardwareDRMFeatures with Double] = js.native
-  /* 0 */ @js.native
-  object hardwareDRM extends TopLevel[hardwareDRM with Double]
-  
-  /* 1 */ @js.native
-  object hevc extends TopLevel[hevc with Double]
   
 }
 

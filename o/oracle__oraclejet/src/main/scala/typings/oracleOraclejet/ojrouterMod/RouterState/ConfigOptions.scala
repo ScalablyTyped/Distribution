@@ -31,7 +31,7 @@ object ConfigOptions {
     if (canExit != null) __obj.updateDynamic("canExit")(js.Any.fromFunction0(canExit))
     if (enter != null) __obj.updateDynamic("enter")(js.Any.fromFunction0(enter))
     if (exit != null) __obj.updateDynamic("exit")(js.Any.fromFunction0(exit))
-    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]

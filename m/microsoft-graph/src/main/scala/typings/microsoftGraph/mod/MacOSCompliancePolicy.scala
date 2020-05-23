@@ -64,11 +64,11 @@ object MacOSCompliancePolicy {
     osMaximumVersion: String = null,
     osMinimumVersion: String = null,
     passwordBlockSimple: js.UndefOr[Boolean] = js.undefined,
-    passwordExpirationDays: Int | Double = null,
-    passwordMinimumCharacterSetCount: Int | Double = null,
-    passwordMinimumLength: Int | Double = null,
-    passwordMinutesOfInactivityBeforeLock: Int | Double = null,
-    passwordPreviousPasswordBlockCount: Int | Double = null,
+    passwordExpirationDays: js.UndefOr[Double] = js.undefined,
+    passwordMinimumCharacterSetCount: js.UndefOr[Double] = js.undefined,
+    passwordMinimumLength: js.UndefOr[Double] = js.undefined,
+    passwordMinutesOfInactivityBeforeLock: js.UndefOr[Double] = js.undefined,
+    passwordPreviousPasswordBlockCount: js.UndefOr[Double] = js.undefined,
     passwordRequired: js.UndefOr[Boolean] = js.undefined,
     passwordRequiredType: RequiredPasswordType = null,
     scheduledActionsForRule: js.Array[DeviceComplianceScheduledActionForRule] = null,
@@ -76,7 +76,7 @@ object MacOSCompliancePolicy {
     systemIntegrityProtectionEnabled: js.UndefOr[Boolean] = js.undefined,
     userStatusOverview: DeviceComplianceUserOverview = null,
     userStatuses: js.Array[DeviceComplianceUserStatus] = null,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): MacOSCompliancePolicy = {
     val __obj = js.Dynamic.literal()
     if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
@@ -85,30 +85,30 @@ object MacOSCompliancePolicy {
     if (deviceSettingStateSummaries != null) __obj.updateDynamic("deviceSettingStateSummaries")(deviceSettingStateSummaries.asInstanceOf[js.Any])
     if (deviceStatusOverview != null) __obj.updateDynamic("deviceStatusOverview")(deviceStatusOverview.asInstanceOf[js.Any])
     if (deviceStatuses != null) __obj.updateDynamic("deviceStatuses")(deviceStatuses.asInstanceOf[js.Any])
-    if (!js.isUndefined(deviceThreatProtectionEnabled)) __obj.updateDynamic("deviceThreatProtectionEnabled")(deviceThreatProtectionEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(deviceThreatProtectionEnabled)) __obj.updateDynamic("deviceThreatProtectionEnabled")(deviceThreatProtectionEnabled.get.asInstanceOf[js.Any])
     if (deviceThreatProtectionRequiredSecurityLevel != null) __obj.updateDynamic("deviceThreatProtectionRequiredSecurityLevel")(deviceThreatProtectionRequiredSecurityLevel.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(firewallBlockAllIncoming)) __obj.updateDynamic("firewallBlockAllIncoming")(firewallBlockAllIncoming.asInstanceOf[js.Any])
-    if (!js.isUndefined(firewallEnableStealthMode)) __obj.updateDynamic("firewallEnableStealthMode")(firewallEnableStealthMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(firewallEnabled)) __obj.updateDynamic("firewallEnabled")(firewallEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(firewallBlockAllIncoming)) __obj.updateDynamic("firewallBlockAllIncoming")(firewallBlockAllIncoming.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(firewallEnableStealthMode)) __obj.updateDynamic("firewallEnableStealthMode")(firewallEnableStealthMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(firewallEnabled)) __obj.updateDynamic("firewallEnabled")(firewallEnabled.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
     if (osMaximumVersion != null) __obj.updateDynamic("osMaximumVersion")(osMaximumVersion.asInstanceOf[js.Any])
     if (osMinimumVersion != null) __obj.updateDynamic("osMinimumVersion")(osMinimumVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(passwordBlockSimple)) __obj.updateDynamic("passwordBlockSimple")(passwordBlockSimple.asInstanceOf[js.Any])
-    if (passwordExpirationDays != null) __obj.updateDynamic("passwordExpirationDays")(passwordExpirationDays.asInstanceOf[js.Any])
-    if (passwordMinimumCharacterSetCount != null) __obj.updateDynamic("passwordMinimumCharacterSetCount")(passwordMinimumCharacterSetCount.asInstanceOf[js.Any])
-    if (passwordMinimumLength != null) __obj.updateDynamic("passwordMinimumLength")(passwordMinimumLength.asInstanceOf[js.Any])
-    if (passwordMinutesOfInactivityBeforeLock != null) __obj.updateDynamic("passwordMinutesOfInactivityBeforeLock")(passwordMinutesOfInactivityBeforeLock.asInstanceOf[js.Any])
-    if (passwordPreviousPasswordBlockCount != null) __obj.updateDynamic("passwordPreviousPasswordBlockCount")(passwordPreviousPasswordBlockCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(passwordRequired)) __obj.updateDynamic("passwordRequired")(passwordRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordBlockSimple)) __obj.updateDynamic("passwordBlockSimple")(passwordBlockSimple.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordExpirationDays)) __obj.updateDynamic("passwordExpirationDays")(passwordExpirationDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordMinimumCharacterSetCount)) __obj.updateDynamic("passwordMinimumCharacterSetCount")(passwordMinimumCharacterSetCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordMinimumLength)) __obj.updateDynamic("passwordMinimumLength")(passwordMinimumLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordMinutesOfInactivityBeforeLock)) __obj.updateDynamic("passwordMinutesOfInactivityBeforeLock")(passwordMinutesOfInactivityBeforeLock.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordPreviousPasswordBlockCount)) __obj.updateDynamic("passwordPreviousPasswordBlockCount")(passwordPreviousPasswordBlockCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordRequired)) __obj.updateDynamic("passwordRequired")(passwordRequired.get.asInstanceOf[js.Any])
     if (passwordRequiredType != null) __obj.updateDynamic("passwordRequiredType")(passwordRequiredType.asInstanceOf[js.Any])
     if (scheduledActionsForRule != null) __obj.updateDynamic("scheduledActionsForRule")(scheduledActionsForRule.asInstanceOf[js.Any])
-    if (!js.isUndefined(storageRequireEncryption)) __obj.updateDynamic("storageRequireEncryption")(storageRequireEncryption.asInstanceOf[js.Any])
-    if (!js.isUndefined(systemIntegrityProtectionEnabled)) __obj.updateDynamic("systemIntegrityProtectionEnabled")(systemIntegrityProtectionEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(storageRequireEncryption)) __obj.updateDynamic("storageRequireEncryption")(storageRequireEncryption.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(systemIntegrityProtectionEnabled)) __obj.updateDynamic("systemIntegrityProtectionEnabled")(systemIntegrityProtectionEnabled.get.asInstanceOf[js.Any])
     if (userStatusOverview != null) __obj.updateDynamic("userStatusOverview")(userStatusOverview.asInstanceOf[js.Any])
     if (userStatuses != null) __obj.updateDynamic("userStatuses")(userStatuses.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MacOSCompliancePolicy]
   }
 }

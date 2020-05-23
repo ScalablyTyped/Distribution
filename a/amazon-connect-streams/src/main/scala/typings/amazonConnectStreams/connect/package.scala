@@ -12,7 +12,7 @@ package object connect {
     * @param agent An Agent object containing information about the currently
     * signed-in agent.
     */
-  type AgentCallback = js.Function1[/* agent */ typings.amazonConnectStreams.connect.Agent_, scala.Unit]
+  type AgentCallback = js.Function1[/* agent */ typings.amazonConnectStreams.connect.Agent, scala.Unit]
   type AttributeDictionary = org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type CONNECTION_ACTIVE_STATES = org.scalablytyped.runtime.StringDictionary[scala.Double]
   /**
@@ -21,7 +21,7 @@ package object connect {
     *
     * @param agent A Contact object containing information about the current contact.
     */
-  type ContactCallback = js.Function1[/* contact */ typings.amazonConnectStreams.connect.Contact_, scala.Unit]
+  type ContactCallback = js.Function1[/* contact */ typings.amazonConnectStreams.connect.Contact, scala.Unit]
   /**
     *
     * A callback to receive agent details

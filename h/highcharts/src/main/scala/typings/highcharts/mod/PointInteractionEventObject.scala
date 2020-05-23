@@ -1,12 +1,12 @@
 package typings.highcharts.mod
 
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait PointInteractionEventObject extends Event_ {
+trait PointInteractionEventObject extends Event {
   var accumulate: Boolean = js.native
 }
 

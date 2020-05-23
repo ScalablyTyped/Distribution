@@ -5,20 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Networking.Connectivity.NetworkAdapter")
-@js.native
-class NetworkAdapter () extends INetworkAdapter {
-  /* CompleteClass */
-  override var ianaInterfaceType: Double = js.native
-  /* CompleteClass */
-  override var inboundMaxBitsPerSecond: Double = js.native
-  /* CompleteClass */
-  override var networkAdapterId: String = js.native
-  /* CompleteClass */
-  override var networkItem: NetworkItem = js.native
-  /* CompleteClass */
-  override var outboundMaxBitsPerSecond: Double = js.native
-  /* CompleteClass */
-  override def getConnectedProfileAsync(): IAsyncOperation[ConnectionProfile] = js.native
+trait NetworkAdapter extends INetworkAdapter
+
+object NetworkAdapter {
+  @scala.inline
+  def apply(
+    getConnectedProfileAsync: () => IAsyncOperation[ConnectionProfile],
+    ianaInterfaceType: Double,
+    inboundMaxBitsPerSecond: Double,
+    networkAdapterId: String,
+    networkItem: NetworkItem,
+    outboundMaxBitsPerSecond: Double
+  ): NetworkAdapter = {
+    val __obj = js.Dynamic.literal(getConnectedProfileAsync = js.Any.fromFunction0(getConnectedProfileAsync), ianaInterfaceType = ianaInterfaceType.asInstanceOf[js.Any], inboundMaxBitsPerSecond = inboundMaxBitsPerSecond.asInstanceOf[js.Any], networkAdapterId = networkAdapterId.asInstanceOf[js.Any], networkItem = networkItem.asInstanceOf[js.Any], outboundMaxBitsPerSecond = outboundMaxBitsPerSecond.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NetworkAdapter]
+  }
 }
 

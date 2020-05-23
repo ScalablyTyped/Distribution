@@ -14,10 +14,13 @@ trait IConsensusStateGetResponse extends js.Object {
 
 object IConsensusStateGetResponse {
   @scala.inline
-  def apply(entries: js.Array[IConsensusStateEntry] = null, status: Status = null): IConsensusStateGetResponse = {
+  def apply(
+    entries: js.UndefOr[Null | js.Array[IConsensusStateEntry]] = js.undefined,
+    status: js.UndefOr[Null | Status] = js.undefined
+  ): IConsensusStateGetResponse = {
     val __obj = js.Dynamic.literal()
-    if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(entries)) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConsensusStateGetResponse]
   }
 }

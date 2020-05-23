@@ -16,82 +16,82 @@ trait IAbstractChart extends IComponent {
   /** [Config Option] (Object) */
   var background: js.UndefOr[js.Any] = js.undefined
   /** [Method] Changes the data store bound to this chart and refreshes it
-  		* @param store Ext.data.Store The store to bind to this chart.
-  		*/
+    * @param store Ext.data.Store The store to bind to this chart.
+    */
   var bindStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[IStore], Unit]] = js.undefined
   /** [Method] Cancel a scheduled layout  */
   var cancelLayout: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (Boolean/Array) */
   var colors: js.UndefOr[js.Any] = js.undefined
   /** [Method] Flattens the given chart surfaces into a single image
-  		* @param surfaces Array A list of chart's surfaces to flatten.
-  		* @param format String If set to 'image', the method will return an Image object. Otherwise, the dataURL  of the flattened image will be returned.
-  		* @returns String|Image An Image DOM element containing the flattened image or its dataURL.
-  		*/
+    * @param surfaces Array A list of chart's surfaces to flatten.
+    * @param format String If set to 'image', the method will return an Image object. Otherwise, the dataURL  of the flattened image will be returned.
+    * @returns String|Image An Image DOM element containing the flattened image or its dataURL.
+    */
   var flatten: js.UndefOr[
     js.Function2[/* surfaces */ js.UndefOr[Array], /* format */ js.UndefOr[String], _]
   ] = js.undefined
   /** [Method] Returns the value of axes
-  		* @returns Ext.chart.axis.Axis/Array/Object
-  		*/
+    * @returns Ext.chart.axis.Axis/Array/Object
+    */
   var getAxes: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of colors
-  		* @returns Boolean/Array
-  		*/
+    * @returns Boolean/Array
+    */
   var getColors: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of highlightItem
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getHighlightItem: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of innerPadding
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getInnerPadding: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of insetPadding
-  		* @returns Object|Number
-  		*/
+    * @returns Object|Number
+    */
   var getInsetPadding: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of interactions
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   var getInteractions: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Given an x y point relative to the chart find and return the first series item that matches that point
-  		* @param x Number
-  		* @param y Number
-  		* @returns Object An object with series and item properties, or false if no item found.
-  		*/
+    * @param x Number
+    * @param y Number
+    * @returns Object An object with series and item properties, or false if no item found.
+    */
   var getItemForPoint: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], _]] = js.undefined
   /** [Method] Given an x y point relative to the chart find and return all series items that match that point
-  		* @param x Number
-  		* @param y Number
-  		* @returns Array An array of objects with series and item properties.
-  		*/
+    * @param x Number
+    * @param y Number
+    * @returns Array An array of objects with series and item properties.
+    */
   var getItemsForPoint: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Array]] = js.undefined
   /** [Method] Returns the value of legend
-  		* @returns Ext.chart.Legend/Object
-  		*/
+    * @returns Ext.chart.Legend/Object
+    */
   var getLegend: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Return the legend store that contains all the legend information
-  		* @returns Ext.data.Store
-  		*/
+    * @returns Ext.data.Store
+    */
   var getLegendStore: js.UndefOr[js.Function0[IStore]] = js.undefined
   /** [Method] Returns the value of series
-  		* @returns Ext.chart.series.Series/Array
-  		*/
+    * @returns Ext.chart.series.Series/Array
+    */
   var getSeries: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of shadow
-  		* @returns Boolean/Object
-  		*/
+    * @returns Boolean/Object
+    */
   var getShadow: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of store
-  		* @returns Ext.data.Store
-  		*/
+    * @returns Ext.data.Store
+    */
   var getStore: js.UndefOr[js.Function0[IStore]] = js.undefined
   /** [Method] Get a surface by the given id or create one if it doesn t exist
-  		* @param name Object
-  		* @param type Object
-  		* @returns Ext.draw.Surface
-  		*/
+    * @param name Object
+    * @param type Object
+    * @returns Ext.draw.Surface
+    */
   @JSName("getSurface")
   var getSurface_IAbstractChart: js.UndefOr[
     js.Function2[/* name */ js.UndefOr[js.Any], /* type */ js.UndefOr[js.Any], ISurface]
@@ -115,48 +115,48 @@ trait IAbstractChart extends IComponent {
   /** [Config Option] (Ext.chart.series.Series/Array) */
   var series: js.UndefOr[js.Any] = js.undefined
   /** [Method] Sets the value of animate
-  		* @param animate Boolean/Object The new value.
-  		*/
+    * @param animate Boolean/Object The new value.
+    */
   var setAnimate: js.UndefOr[js.Function1[/* animate */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of axes
-  		* @param axes Ext.chart.axis.Axis/Array/Object The new value.
-  		*/
+    * @param axes Ext.chart.axis.Axis/Array/Object The new value.
+    */
   var setAxes: js.UndefOr[js.Function1[/* axes */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of colors
-  		* @param colors Boolean/Array The new value.
-  		*/
+    * @param colors Boolean/Array The new value.
+    */
   var setColors: js.UndefOr[js.Function1[/* colors */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of highlightItem
-  		* @param highlightItem Object The new value.
-  		*/
+    * @param highlightItem Object The new value.
+    */
   var setHighlightItem: js.UndefOr[js.Function1[/* highlightItem */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of innerPadding
-  		* @param innerPadding Object The new value.
-  		*/
+    * @param innerPadding Object The new value.
+    */
   var setInnerPadding: js.UndefOr[js.Function1[/* innerPadding */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of insetPadding
-  		* @param insetPadding Object|Number The new value.
-  		*/
+    * @param insetPadding Object|Number The new value.
+    */
   var setInsetPadding: js.UndefOr[js.Function1[/* insetPadding */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of interactions
-  		* @param interactions Array The new value.
-  		*/
+    * @param interactions Array The new value.
+    */
   var setInteractions: js.UndefOr[js.Function1[/* interactions */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Sets the value of legend
-  		* @param legend Ext.chart.Legend/Object The new value.
-  		*/
+    * @param legend Ext.chart.Legend/Object The new value.
+    */
   var setLegend: js.UndefOr[js.Function1[/* legend */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of series
-  		* @param series Ext.chart.series.Series/Array The new value.
-  		*/
+    * @param series Ext.chart.series.Series/Array The new value.
+    */
   var setSeries: js.UndefOr[js.Function1[/* series */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of shadow
-  		* @param shadow Boolean/Object The new value.
-  		*/
+    * @param shadow Boolean/Object The new value.
+    */
   var setShadow: js.UndefOr[js.Function1[/* shadow */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of store
-  		* @param store Ext.data.Store The new value.
-  		*/
+    * @param store Ext.data.Store The new value.
+    */
   var setStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[IStore], Unit]] = js.undefined
   /** [Config Option] (Boolean/Object) */
   var shadow: js.UndefOr[js.Any] = js.undefined

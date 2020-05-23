@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 package object kinesisvideoarchivedmediaMod {
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.kinesisvideoarchivedmediaMod.ClientApiVersions
   /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.PRODUCER_TIMESTAMP
+    - typings.awsSdk.awsSdkStrings.SERVER_TIMESTAMP
+    - java.lang.String
+  */
+  type ClipFragmentSelectorType = typings.awsSdk.kinesisvideoarchivedmediaMod._ClipFragmentSelectorType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.FRAGMENTED_MP4
     - typings.awsSdk.awsSdkStrings.MPEG_TS
     - java.lang.String
@@ -77,11 +83,11 @@ package object kinesisvideoarchivedmediaMod {
   type HLSPlaybackMode = typings.awsSdk.kinesisvideoarchivedmediaMod._HLSPlaybackMode | java.lang.String
   type HLSStreamingSessionURL = java.lang.String
   type Long = scala.Double
+  type NextToken = java.lang.String
   type PageLimit = scala.Double
   type Payload = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.kinesisvideoarchivedmediaMod.Blob | java.lang.String | typings.node.streamMod.Readable
   type ResourceARN = java.lang.String
   type StreamName = java.lang.String
-  type String = java.lang.String
   type Timestamp = typings.std.Date
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`2017-09-30`

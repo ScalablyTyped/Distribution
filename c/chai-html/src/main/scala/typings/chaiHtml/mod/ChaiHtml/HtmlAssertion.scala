@@ -1,6 +1,6 @@
 package typings.chaiHtml.mod.ChaiHtml
 
-import typings.chaiHtml.mod._Global_.Chai.Assertion
+import typings.chaiHtml.mod.global.Chai.Assertion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object editor extends js.Object {
   @js.native
-  class Toolbar () extends Widget {
+  trait Toolbar extends Widget {
     var window: Window = js.native
   }
   

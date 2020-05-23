@@ -18,10 +18,13 @@ trait DeleteApplicationReferenceDataSourceResponse extends js.Object {
 
 object DeleteApplicationReferenceDataSourceResponse {
   @scala.inline
-  def apply(ApplicationARN: ResourceARN = null, ApplicationVersionId: Int | Double = null): DeleteApplicationReferenceDataSourceResponse = {
+  def apply(
+    ApplicationARN: ResourceARN = null,
+    ApplicationVersionId: js.UndefOr[ApplicationVersionId] = js.undefined
+  ): DeleteApplicationReferenceDataSourceResponse = {
     val __obj = js.Dynamic.literal()
     if (ApplicationARN != null) __obj.updateDynamic("ApplicationARN")(ApplicationARN.asInstanceOf[js.Any])
-    if (ApplicationVersionId != null) __obj.updateDynamic("ApplicationVersionId")(ApplicationVersionId.asInstanceOf[js.Any])
+    if (!js.isUndefined(ApplicationVersionId)) __obj.updateDynamic("ApplicationVersionId")(ApplicationVersionId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteApplicationReferenceDataSourceResponse]
   }
 }

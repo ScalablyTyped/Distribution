@@ -1,6 +1,6 @@
 package typings.storybookUi
 
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.storybookUi.mod.ListItemIconProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`

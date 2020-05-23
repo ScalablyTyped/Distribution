@@ -93,17 +93,17 @@ object AwsRdsDbInstanceDetails {
     DBInstanceClass: NonEmptyString = null,
     DBInstanceIdentifier: NonEmptyString = null,
     DBName: NonEmptyString = null,
-    DbInstancePort: Int | scala.Double = null,
+    DbInstancePort: js.UndefOr[Integer] = js.undefined,
     DbiResourceId: NonEmptyString = null,
-    DeletionProtection: js.UndefOr[scala.Boolean] = js.undefined,
+    DeletionProtection: js.UndefOr[Boolean] = js.undefined,
     Endpoint: AwsRdsDbInstanceEndpoint = null,
     Engine: NonEmptyString = null,
     EngineVersion: NonEmptyString = null,
-    IAMDatabaseAuthenticationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined,
     InstanceCreateTime: NonEmptyString = null,
     KmsKeyId: NonEmptyString = null,
-    PubliclyAccessible: js.UndefOr[scala.Boolean] = js.undefined,
-    StorageEncrypted: js.UndefOr[scala.Boolean] = js.undefined,
+    PubliclyAccessible: js.UndefOr[Boolean] = js.undefined,
+    StorageEncrypted: js.UndefOr[Boolean] = js.undefined,
     TdeCredentialArn: NonEmptyString = null,
     VpcSecurityGroups: AwsRdsDbInstanceVpcSecurityGroups = null
   ): AwsRdsDbInstanceDetails = {
@@ -114,17 +114,17 @@ object AwsRdsDbInstanceDetails {
     if (DBInstanceClass != null) __obj.updateDynamic("DBInstanceClass")(DBInstanceClass.asInstanceOf[js.Any])
     if (DBInstanceIdentifier != null) __obj.updateDynamic("DBInstanceIdentifier")(DBInstanceIdentifier.asInstanceOf[js.Any])
     if (DBName != null) __obj.updateDynamic("DBName")(DBName.asInstanceOf[js.Any])
-    if (DbInstancePort != null) __obj.updateDynamic("DbInstancePort")(DbInstancePort.asInstanceOf[js.Any])
+    if (!js.isUndefined(DbInstancePort)) __obj.updateDynamic("DbInstancePort")(DbInstancePort.get.asInstanceOf[js.Any])
     if (DbiResourceId != null) __obj.updateDynamic("DbiResourceId")(DbiResourceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection.get.asInstanceOf[js.Any])
     if (Endpoint != null) __obj.updateDynamic("Endpoint")(Endpoint.asInstanceOf[js.Any])
     if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(IAMDatabaseAuthenticationEnabled)) __obj.updateDynamic("IAMDatabaseAuthenticationEnabled")(IAMDatabaseAuthenticationEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(IAMDatabaseAuthenticationEnabled)) __obj.updateDynamic("IAMDatabaseAuthenticationEnabled")(IAMDatabaseAuthenticationEnabled.get.asInstanceOf[js.Any])
     if (InstanceCreateTime != null) __obj.updateDynamic("InstanceCreateTime")(InstanceCreateTime.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (!js.isUndefined(PubliclyAccessible)) __obj.updateDynamic("PubliclyAccessible")(PubliclyAccessible.asInstanceOf[js.Any])
-    if (!js.isUndefined(StorageEncrypted)) __obj.updateDynamic("StorageEncrypted")(StorageEncrypted.asInstanceOf[js.Any])
+    if (!js.isUndefined(PubliclyAccessible)) __obj.updateDynamic("PubliclyAccessible")(PubliclyAccessible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(StorageEncrypted)) __obj.updateDynamic("StorageEncrypted")(StorageEncrypted.get.asInstanceOf[js.Any])
     if (TdeCredentialArn != null) __obj.updateDynamic("TdeCredentialArn")(TdeCredentialArn.asInstanceOf[js.Any])
     if (VpcSecurityGroups != null) __obj.updateDynamic("VpcSecurityGroups")(VpcSecurityGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsRdsDbInstanceDetails]

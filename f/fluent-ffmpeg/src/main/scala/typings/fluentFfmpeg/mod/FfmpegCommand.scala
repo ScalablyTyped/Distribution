@@ -1,6 +1,6 @@
 package typings.fluentFfmpeg.mod
 
-import typings.fluentFfmpeg.AnonEnd
+import typings.fluentFfmpeg.anon.End
 import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.PassThrough
 import typings.node.streamMod.Readable
@@ -34,9 +34,9 @@ class FfmpegCommand () extends EventEmitter {
   def addOptions(options: js.Array[String]): FfmpegCommand = js.native
   // options/output
   def addOutput(target: String): FfmpegCommand = js.native
-  def addOutput(target: String, pipeopts: AnonEnd): FfmpegCommand = js.native
+  def addOutput(target: String, pipeopts: End): FfmpegCommand = js.native
   def addOutput(target: Writable): FfmpegCommand = js.native
-  def addOutput(target: Writable, pipeopts: AnonEnd): FfmpegCommand = js.native
+  def addOutput(target: Writable, pipeopts: End): FfmpegCommand = js.native
   def addOutputOption(options: String*): FfmpegCommand = js.native
   def addOutputOption(options: js.Array[String]): FfmpegCommand = js.native
   def addOutputOptions(options: String*): FfmpegCommand = js.native
@@ -87,13 +87,13 @@ class FfmpegCommand () extends EventEmitter {
   def complexFilter(spec: FilterSpecification, map: String): FfmpegCommand = js.native
   def complexFilter(spec: FilterSpecification, map: js.Array[String]): FfmpegCommand = js.native
   def concat(target: String): FfmpegCommand = js.native
-  def concat(target: String, options: AnonEnd): FfmpegCommand = js.native
+  def concat(target: String, options: End): FfmpegCommand = js.native
   def concat(target: Writable): FfmpegCommand = js.native
-  def concat(target: Writable, options: AnonEnd): FfmpegCommand = js.native
+  def concat(target: Writable, options: End): FfmpegCommand = js.native
   def concatenate(target: String): FfmpegCommand = js.native
-  def concatenate(target: String, options: AnonEnd): FfmpegCommand = js.native
+  def concatenate(target: String, options: End): FfmpegCommand = js.native
   def concatenate(target: Writable): FfmpegCommand = js.native
-  def concatenate(target: Writable, options: AnonEnd): FfmpegCommand = js.native
+  def concatenate(target: Writable, options: End): FfmpegCommand = js.native
   def duration(duration: String): FfmpegCommand = js.native
   def duration(duration: Double): FfmpegCommand = js.native
   // ffprobe
@@ -149,17 +149,17 @@ class FfmpegCommand () extends EventEmitter {
   def mergeAdd(source: String): FfmpegCommand = js.native
   def mergeAdd(source: Readable): FfmpegCommand = js.native
   def mergeToFile(target: String): FfmpegCommand = js.native
-  def mergeToFile(target: String, options: AnonEnd): FfmpegCommand = js.native
+  def mergeToFile(target: String, options: End): FfmpegCommand = js.native
   def mergeToFile(target: Writable): FfmpegCommand = js.native
-  def mergeToFile(target: Writable, options: AnonEnd): FfmpegCommand = js.native
+  def mergeToFile(target: Writable, options: End): FfmpegCommand = js.native
   def native(): FfmpegCommand = js.native
   def nativeFramerate(): FfmpegCommand = js.native
   def noAudio(): FfmpegCommand = js.native
   def noVideo(): FfmpegCommand = js.native
   def output(target: String): FfmpegCommand = js.native
-  def output(target: String, pipeopts: AnonEnd): FfmpegCommand = js.native
+  def output(target: String, pipeopts: End): FfmpegCommand = js.native
   def output(target: Writable): FfmpegCommand = js.native
-  def output(target: Writable, pipeopts: AnonEnd): FfmpegCommand = js.native
+  def output(target: Writable, pipeopts: End): FfmpegCommand = js.native
   def outputFPS(fps: Double): FfmpegCommand = js.native
   def outputFormat(format: String): FfmpegCommand = js.native
   def outputFps(fps: Double): FfmpegCommand = js.native
@@ -169,7 +169,7 @@ class FfmpegCommand () extends EventEmitter {
   def outputOptions(options: js.Array[String]): FfmpegCommand = js.native
   def pipe(): Writable | PassThrough = js.native
   def pipe(stream: Writable): Writable | PassThrough = js.native
-  def pipe(stream: Writable, options: AnonEnd): Writable | PassThrough = js.native
+  def pipe(stream: Writable, options: End): Writable | PassThrough = js.native
   def pnreset(proset: String): FfmpegCommand = js.native
   def pnreset(proset: GetPreset): FfmpegCommand = js.native
   def preset(format: String): FfmpegCommand = js.native
@@ -208,7 +208,7 @@ class FfmpegCommand () extends EventEmitter {
   def setStartTime(seek: Double): FfmpegCommand = js.native
   def size(size: String): FfmpegCommand = js.native
   def stream(stream: Writable): Writable = js.native
-  def stream(stream: Writable, options: AnonEnd): Writable = js.native
+  def stream(stream: Writable, options: End): Writable = js.native
   def takeFrames(frames: Double): FfmpegCommand = js.native
   def takeScreenshots(config: Double): FfmpegCommand = js.native
   def takeScreenshots(config: Double, folder: String): FfmpegCommand = js.native
@@ -305,6 +305,6 @@ class FfmpegCommand () extends EventEmitter {
   def withVideoFilters(filters: String): FfmpegCommand = js.native
   def withVideoFilters(filters: js.Array[AudioVideoFilter | String]): FfmpegCommand = js.native
   def writeToStream(stream: Writable): Writable = js.native
-  def writeToStream(stream: Writable, options: AnonEnd): Writable = js.native
+  def writeToStream(stream: Writable, options: End): Writable = js.native
 }
 

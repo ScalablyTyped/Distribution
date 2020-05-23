@@ -11,8 +11,8 @@ trait INavigation extends IBase {
   /** [Method] Restores the zoom to the original value  */
   var restoreZoom: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Zooms the chart to the specified selection range
-  		* @param zoomConfig Object
-  		*/
+    * @param zoomConfig Object
+    */
   var setZoom: js.UndefOr[js.Function1[/* zoomConfig */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -54,7 +54,7 @@ object INavigation {
     if (restoreZoom != null) __obj.updateDynamic("restoreZoom")(js.Any.fromFunction0(restoreZoom))
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setZoom != null) __obj.updateDynamic("setZoom")(js.Any.fromFunction1(setZoom))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[INavigation]

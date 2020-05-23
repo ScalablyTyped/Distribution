@@ -28,13 +28,13 @@ object ListFleetsInput {
   @scala.inline
   def apply(
     BuildId: BuildIdOrArn = null,
-    Limit: Int | scala.Double = null,
+    Limit: js.UndefOr[PositiveInteger] = js.undefined,
     NextToken: NonZeroAndMaxString = null,
     ScriptId: ScriptIdOrArn = null
   ): ListFleetsInput = {
     val __obj = js.Dynamic.literal()
     if (BuildId != null) __obj.updateDynamic("BuildId")(BuildId.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (ScriptId != null) __obj.updateDynamic("ScriptId")(ScriptId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListFleetsInput]

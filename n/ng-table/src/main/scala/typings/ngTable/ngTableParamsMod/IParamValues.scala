@@ -33,17 +33,17 @@ trait IParamValues[T] extends js.Object {
 object IParamValues {
   @scala.inline
   def apply[T](
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     filter: IFilterValues = null,
     group: String | Grouping[T] = null,
-    page: Int | Double = null,
+    page: js.UndefOr[Double] = js.undefined,
     sorting: ISortingValues = null
   ): IParamValues[T] = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
     if (sorting != null) __obj.updateDynamic("sorting")(sorting.asInstanceOf[js.Any])
     __obj.asInstanceOf[IParamValues[T]]
   }

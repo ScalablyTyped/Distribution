@@ -1,7 +1,7 @@
 package typings.reactPlayer.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.reactPlayer.AnonLoaded
+import typings.reactPlayer.anon.Loaded
 import typings.std.MediaStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,7 +35,7 @@ trait ReactPlayerProps
   ] = js.undefined
   var onPause: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onPlay: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onProgress: js.UndefOr[js.Function1[/* state */ AnonLoaded, Unit]] = js.undefined
+  var onProgress: js.UndefOr[js.Function1[/* state */ Loaded, Unit]] = js.undefined
   var onReady: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onSeek: js.UndefOr[js.Function1[/* seconds */ Double, Unit]] = js.undefined
   var onStart: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -58,7 +58,7 @@ trait ReactPlayerProps
 object ReactPlayerProps {
   @scala.inline
   def apply(
-    StringDictionary: /* otherProps */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     config: Config = null,
     controls: js.UndefOr[Boolean] = js.undefined,
     dailymotionConfig: DailyMotionConfig = null,
@@ -77,20 +77,20 @@ object ReactPlayerProps {
     onError: (/* error */ js.Any, /* data */ js.UndefOr[js.Any], /* hlsInstance */ js.UndefOr[js.Any], /* hlsGlobal */ js.UndefOr[js.Any]) => Unit = null,
     onPause: () => Unit = null,
     onPlay: () => Unit = null,
-    onProgress: /* state */ AnonLoaded => Unit = null,
+    onProgress: /* state */ Loaded => Unit = null,
     onReady: () => Unit = null,
     onSeek: /* seconds */ Double => Unit = null,
     onStart: () => Unit = null,
     pip: js.UndefOr[Boolean] = js.undefined,
-    playbackRate: Int | Double = null,
+    playbackRate: js.UndefOr[Double] = js.undefined,
     playing: js.UndefOr[Boolean] = js.undefined,
     playsinline: js.UndefOr[Boolean] = js.undefined,
-    progressInterval: Int | Double = null,
+    progressInterval: js.UndefOr[Double] = js.undefined,
     soundcloudConfig: SoundCloudConfig = null,
     style: js.Object = null,
     url: String | (js.Array[SourceProps | String]) | MediaStream = null,
     vimeoConfig: VimeoConfig = null,
-    volume: Int | Double = null,
+    volume: js.UndefOr[Double] = js.undefined,
     width: String | Double = null,
     wistiaConfig: WistiaConfig = null,
     wrapper: js.Any = null,
@@ -99,14 +99,14 @@ object ReactPlayerProps {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
+    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.get.asInstanceOf[js.Any])
     if (dailymotionConfig != null) __obj.updateDynamic("dailymotionConfig")(dailymotionConfig.asInstanceOf[js.Any])
     if (facebookConfig != null) __obj.updateDynamic("facebookConfig")(facebookConfig.asInstanceOf[js.Any])
     if (fileConfig != null) __obj.updateDynamic("fileConfig")(fileConfig.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (light != null) __obj.updateDynamic("light")(light.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.get.asInstanceOf[js.Any])
     if (onBuffer != null) __obj.updateDynamic("onBuffer")(js.Any.fromFunction0(onBuffer))
     if (onBufferEnd != null) __obj.updateDynamic("onBufferEnd")(js.Any.fromFunction0(onBufferEnd))
     if (onDisablePIP != null) __obj.updateDynamic("onDisablePIP")(js.Any.fromFunction0(onDisablePIP))
@@ -120,16 +120,16 @@ object ReactPlayerProps {
     if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction0(onReady))
     if (onSeek != null) __obj.updateDynamic("onSeek")(js.Any.fromFunction1(onSeek))
     if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction0(onStart))
-    if (!js.isUndefined(pip)) __obj.updateDynamic("pip")(pip.asInstanceOf[js.Any])
-    if (playbackRate != null) __obj.updateDynamic("playbackRate")(playbackRate.asInstanceOf[js.Any])
-    if (!js.isUndefined(playing)) __obj.updateDynamic("playing")(playing.asInstanceOf[js.Any])
-    if (!js.isUndefined(playsinline)) __obj.updateDynamic("playsinline")(playsinline.asInstanceOf[js.Any])
-    if (progressInterval != null) __obj.updateDynamic("progressInterval")(progressInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(pip)) __obj.updateDynamic("pip")(pip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(playbackRate)) __obj.updateDynamic("playbackRate")(playbackRate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(playing)) __obj.updateDynamic("playing")(playing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(playsinline)) __obj.updateDynamic("playsinline")(playsinline.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressInterval)) __obj.updateDynamic("progressInterval")(progressInterval.get.asInstanceOf[js.Any])
     if (soundcloudConfig != null) __obj.updateDynamic("soundcloudConfig")(soundcloudConfig.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (vimeoConfig != null) __obj.updateDynamic("vimeoConfig")(vimeoConfig.asInstanceOf[js.Any])
-    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
+    if (!js.isUndefined(volume)) __obj.updateDynamic("volume")(volume.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (wistiaConfig != null) __obj.updateDynamic("wistiaConfig")(wistiaConfig.asInstanceOf[js.Any])
     if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper.asInstanceOf[js.Any])

@@ -15,8 +15,9 @@ object ^ extends js.Object {
   var Frame: typings.openfin.frameFrameMod.default = js.native
   var GlobalHotkey: typings.openfin.apiGlobalHotkeyMod.default = js.native
   var InterApplicationBus: typings.openfin.interappbusMod.default = js.native
+  var Layout: typings.openfin.layoutMod.default = js.native
   var Notification: typings.openfin.notificationMod.default = js.native
-  var Platform: typings.openfin.platformMod.default = js.native
+  var Platform: typings.openfin.platformPlatformMod.default = js.native
   var System: typings.openfin.systemSystemMod.default = js.native
   var View: typings.openfin.viewViewMod.default = js.native
   var Window: typings.openfin.windowWindowMod.default = js.native

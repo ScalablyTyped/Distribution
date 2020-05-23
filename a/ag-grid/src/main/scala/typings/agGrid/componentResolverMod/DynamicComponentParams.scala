@@ -31,7 +31,7 @@ object DynamicComponentParams {
     column: Column = null,
     data: js.Any = null,
     node: RowNode = null,
-    rowIndex: Int | Double = null
+    rowIndex: js.UndefOr[Double] = js.undefined
   ): DynamicComponentParams = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any])
     if ($scope != null) __obj.updateDynamic("$scope")($scope.asInstanceOf[js.Any])
@@ -39,7 +39,7 @@ object DynamicComponentParams {
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
-    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamicComponentParams]
   }
 }

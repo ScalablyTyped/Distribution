@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "elastic-apm-node" : "3.5.0"
+      "elastic-apm-node" : "3.6.1"
     }
   ],
   "test-dependencies" : [
     {
-      "elastic-apm-node" : "3.5.0"
+      "elastic-apm-node" : "3.6.1"
     }
   ],
   "compile-devDependencies" : [

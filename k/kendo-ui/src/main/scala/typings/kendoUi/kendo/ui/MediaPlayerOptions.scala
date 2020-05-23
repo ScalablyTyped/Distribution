@@ -40,25 +40,25 @@ object MediaPlayerOptions {
     play: /* e */ MediaPlayerEvent => Unit = null,
     ready: /* e */ MediaPlayerEvent => Unit = null,
     timeChange: /* e */ MediaPlayerEvent => Unit = null,
-    volume: Int | Double = null,
+    volume: js.UndefOr[Double] = js.undefined,
     volumeChange: /* e */ MediaPlayerEvent => Unit = null
   ): MediaPlayerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoRepeat)) __obj.updateDynamic("autoRepeat")(autoRepeat.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoRepeat)) __obj.updateDynamic("autoRepeat")(autoRepeat.get.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(js.Any.fromFunction1(end))
-    if (!js.isUndefined(forwardSeek)) __obj.updateDynamic("forwardSeek")(forwardSeek.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullScreen)) __obj.updateDynamic("fullScreen")(fullScreen.asInstanceOf[js.Any])
+    if (!js.isUndefined(forwardSeek)) __obj.updateDynamic("forwardSeek")(forwardSeek.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullScreen)) __obj.updateDynamic("fullScreen")(fullScreen.get.asInstanceOf[js.Any])
     if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (!js.isUndefined(mute)) __obj.updateDynamic("mute")(mute.asInstanceOf[js.Any])
+    if (!js.isUndefined(mute)) __obj.updateDynamic("mute")(mute.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigatable)) __obj.updateDynamic("navigatable")(navigatable.asInstanceOf[js.Any])
+    if (!js.isUndefined(navigatable)) __obj.updateDynamic("navigatable")(navigatable.get.asInstanceOf[js.Any])
     if (pause != null) __obj.updateDynamic("pause")(js.Any.fromFunction1(pause))
     if (play != null) __obj.updateDynamic("play")(js.Any.fromFunction1(play))
     if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
     if (timeChange != null) __obj.updateDynamic("timeChange")(js.Any.fromFunction1(timeChange))
-    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
+    if (!js.isUndefined(volume)) __obj.updateDynamic("volume")(volume.get.asInstanceOf[js.Any])
     if (volumeChange != null) __obj.updateDynamic("volumeChange")(js.Any.fromFunction1(volumeChange))
     __obj.asInstanceOf[MediaPlayerOptions]
   }

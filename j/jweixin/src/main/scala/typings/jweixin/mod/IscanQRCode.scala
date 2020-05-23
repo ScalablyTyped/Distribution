@@ -1,6 +1,6 @@
 package typings.jweixin.mod
 
-import typings.jweixin.AnonResultStr
+import typings.jweixin.anon.ResultStr
 import typings.jweixin.jweixinNumbers.`0`
 import typings.jweixin.jweixinNumbers.`1`
 import scala.scalajs.js
@@ -14,7 +14,7 @@ trait IscanQRCode extends BaseParams {
    // 可以指定扫二维码还是一维码，默认二者都有
   // 当needResult 为 1 时，扫码返回的结果
   @JSName("success")
-  def success_MIscanQRCode(res: AnonResultStr): Unit
+  def success_MIscanQRCode(res: ResultStr): Unit
 }
 
 object IscanQRCode {
@@ -22,7 +22,7 @@ object IscanQRCode {
   def apply(
     needResult: `0` | `1`,
     scanType: js.Array[scanType],
-    success: AnonResultStr => Unit,
+    success: ResultStr => Unit,
     complete: /* repeated */ js.Any => Unit = null,
     fail: /* repeated */ js.Any => Unit = null
   ): IscanQRCode = {

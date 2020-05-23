@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation._
 
 trait DecorationOptions extends js.Object {
   /**
-  		 * A message that should be rendered when hovering over the decoration.
-  		 */
+    * A message that should be rendered when hovering over the decoration.
+    */
   var hoverMessage: js.UndefOr[MarkedString | js.Array[MarkedString]] = js.undefined
   /**
-  		 * Range to which this decoration is applied. The range must not be empty.
-  		 */
+    * Range to which this decoration is applied. The range must not be empty.
+    */
   var range: Range
   /**
-  		 * Render options applied to the current decoration. For performance reasons, keep the
-  		 * number of decoration specific options small, and use decoration types wherever possible.
-  		 */
+    * Render options applied to the current decoration. For performance reasons, keep the
+    * number of decoration specific options small, and use decoration types wherever possible.
+    */
   var renderOptions: js.UndefOr[DecorationInstanceRenderOptions] = js.undefined
 }
 

@@ -1,6 +1,6 @@
 package typings.babylonjs.sceneComponentMod
 
-import typings.babylonjs.AnonAction
+import typings.babylonjs.anon.Action
 import typings.std.Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   * Hide ctor from the rest of the world.
   * @param items The items to add.
   */
-class Stage[T /* <: js.Function */] protected () extends Array[AnonAction[T]] {
+class Stage[T /* <: js.Function */] protected () extends Array[Action[T]] {
   /**
     * Clears all the steps from the stage.
     */

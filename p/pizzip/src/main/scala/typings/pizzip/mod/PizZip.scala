@@ -2,11 +2,11 @@ package typings.pizzip.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
-import typings.pizzip.GenerateOptionstypearrayb
-import typings.pizzip.GenerateOptionstypeblob
-import typings.pizzip.GenerateOptionstypenodebu
-import typings.pizzip.GenerateOptionstypestring
-import typings.pizzip.GenerateOptionstypeuint8a
+import typings.pizzip.anon.GenerateOptionstypearrayb
+import typings.pizzip.anon.GenerateOptionstypeblob
+import typings.pizzip.anon.GenerateOptionstypenodebu
+import typings.pizzip.anon.GenerateOptionstypestring
+import typings.pizzip.anon.GenerateOptionstypeuint8a
 import typings.std.ArrayBuffer
 import typings.std.Blob
 import typings.std.RegExp

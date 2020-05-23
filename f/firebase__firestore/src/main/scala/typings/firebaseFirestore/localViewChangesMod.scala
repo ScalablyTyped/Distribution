@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/local_view_changes", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/local_view_changes", JSImport.Namespace)
 @js.native
 object localViewChangesMod extends js.Object {
   @js.native

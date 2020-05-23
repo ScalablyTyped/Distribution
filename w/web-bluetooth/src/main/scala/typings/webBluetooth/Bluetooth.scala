@@ -1,7 +1,7 @@
 package typings.webBluetooth
 
+import typings.std.Event
 import typings.std.EventTarget
-import typings.std.Event_
 import typings.webBluetooth.webBluetoothStrings.availabilitychanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,15 +15,15 @@ trait Bluetooth
      with ServiceEventHandlers {
   val referringDevice: js.UndefOr[BluetoothDevice] = js.native
   @JSName("addEventListener")
-  def addEventListener_availabilitychanged(`type`: availabilitychanged, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
+  def addEventListener_availabilitychanged(`type`: availabilitychanged, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_availabilitychanged(
     `type`: availabilitychanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     useCapture: Boolean
   ): Unit = js.native
   def getAvailability(): js.Promise[Boolean] = js.native
-  def onavailabilitychanged(ev: Event_): js.Any = js.native
+  def onavailabilitychanged(ev: Event): js.Any = js.native
   def requestDevice(): js.Promise[BluetoothDevice] = js.native
   def requestDevice(options: RequestDeviceOptions): js.Promise[BluetoothDevice] = js.native
 }

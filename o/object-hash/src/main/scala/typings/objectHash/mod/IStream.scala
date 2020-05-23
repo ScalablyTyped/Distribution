@@ -9,7 +9,7 @@ trait IStream extends js.Object {
   var update: js.UndefOr[
     js.Function3[
       /* chunk */ js.Any, 
-      /* encoding */ String, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BufferEncoding */ /* encoding */ js.Any, 
       /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
       Unit
     ]
@@ -17,7 +17,7 @@ trait IStream extends js.Object {
   var write: js.UndefOr[
     js.Function3[
       /* chunk */ js.Any, 
-      /* encoding */ String, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BufferEncoding */ /* encoding */ js.Any, 
       /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
       Unit
     ]
@@ -27,8 +27,8 @@ trait IStream extends js.Object {
 object IStream {
   @scala.inline
   def apply(
-    update: (/* chunk */ js.Any, /* encoding */ String, /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit]) => Unit = null,
-    write: (/* chunk */ js.Any, /* encoding */ String, /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit]) => Unit = null
+    update: (/* chunk */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BufferEncoding */ /* encoding */ js.Any, /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit]) => Unit = null,
+    write: (/* chunk */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BufferEncoding */ /* encoding */ js.Any, /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit]) => Unit = null
   ): IStream = {
     val __obj = js.Dynamic.literal()
     if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction3(update))

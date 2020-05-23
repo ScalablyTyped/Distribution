@@ -28,10 +28,13 @@ trait PlusMapsMapType extends js.Object {
 
 object PlusMapsMapType {
   @scala.inline
-  def apply(MAPTYPE_NORMAL: Int | Double = null, MAPTYPE_SATELLITE: Int | Double = null): PlusMapsMapType = {
+  def apply(
+    MAPTYPE_NORMAL: js.UndefOr[Double] = js.undefined,
+    MAPTYPE_SATELLITE: js.UndefOr[Double] = js.undefined
+  ): PlusMapsMapType = {
     val __obj = js.Dynamic.literal()
-    if (MAPTYPE_NORMAL != null) __obj.updateDynamic("MAPTYPE_NORMAL")(MAPTYPE_NORMAL.asInstanceOf[js.Any])
-    if (MAPTYPE_SATELLITE != null) __obj.updateDynamic("MAPTYPE_SATELLITE")(MAPTYPE_SATELLITE.asInstanceOf[js.Any])
+    if (!js.isUndefined(MAPTYPE_NORMAL)) __obj.updateDynamic("MAPTYPE_NORMAL")(MAPTYPE_NORMAL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MAPTYPE_SATELLITE)) __obj.updateDynamic("MAPTYPE_SATELLITE")(MAPTYPE_SATELLITE.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusMapsMapType]
   }
 }

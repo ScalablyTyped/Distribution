@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +21,6 @@ sealed trait LabelFilterCondition extends js.Object
 object LabelFilterCondition extends js.Object {
   /**
     * Label begins with substring criterion.
-    
     Required Criteria: {`substring`}.
     Optional Criteria: {`exclusive`}.
     *
@@ -32,7 +30,6 @@ object LabelFilterCondition extends js.Object {
   
   /**
     * Between `lowerBound` and `upperBound` criteria.
-    
     Required Criteria: {`lowerBound`, `upperBound`}.
     Optional Criteria: {`exclusive`}.
     *
@@ -42,7 +39,6 @@ object LabelFilterCondition extends js.Object {
   
   /**
     * Label contains substring criterion.
-    
     Required Criteria: {`substring`}.
     Optional Criteria: {`exclusive`}.
     *
@@ -52,7 +48,6 @@ object LabelFilterCondition extends js.Object {
   
   /**
     * Label ends with substring criterion.
-    
     Required Criteria: {`substring`}.
     Optional Criteria: {`exclusive`}.
     *
@@ -62,7 +57,6 @@ object LabelFilterCondition extends js.Object {
   
   /**
     * Equals comparator criterion.
-    
     Required Criteria: {`comparator`}.
     Optional Criteria: {`exclusive`}.
     *
@@ -72,7 +66,6 @@ object LabelFilterCondition extends js.Object {
   
   /**
     * Greater than comparator criterion.
-    
     Required Criteria: {`comparator`}.
     *
     */
@@ -81,7 +74,6 @@ object LabelFilterCondition extends js.Object {
   
   /**
     * Greater than or equal to comparator criterion.
-    
     Required Criteria: {`comparator`}.
     *
     */
@@ -90,7 +82,6 @@ object LabelFilterCondition extends js.Object {
   
   /**
     * Less than comparator criterion.
-    
     Required Criteria: {`comparator`}.
     *
     */
@@ -99,7 +90,6 @@ object LabelFilterCondition extends js.Object {
   
   /**
     * Less than or equal to comparator criterion.
-    
     Required Criteria: {`comparator`}.
     *
     */
@@ -112,37 +102,6 @@ object LabelFilterCondition extends js.Object {
     */
   @js.native
   sealed trait unknown extends LabelFilterCondition
-  
-  /* "Equals" */ @JSName("equals")
-  val equals_ : equals with String = js.native
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[LabelFilterCondition with String] = js.native
-  /* "BeginsWith" */ @js.native
-  object beginsWith extends TopLevel[beginsWith with String]
-  
-  /* "Between" */ @js.native
-  object between extends TopLevel[between with String]
-  
-  /* "Contains" */ @js.native
-  object contains extends TopLevel[contains with String]
-  
-  /* "EndsWith" */ @js.native
-  object endsWith extends TopLevel[endsWith with String]
-  
-  /* "GreaterThan" */ @js.native
-  object greaterThan extends TopLevel[greaterThan with String]
-  
-  /* "GreaterThanOrEqualTo" */ @js.native
-  object greaterThanOrEqualTo extends TopLevel[greaterThanOrEqualTo with String]
-  
-  /* "LessThan" */ @js.native
-  object lessThan extends TopLevel[lessThan with String]
-  
-  /* "LessThanOrEqualTo" */ @js.native
-  object lessThanOrEqualTo extends TopLevel[lessThanOrEqualTo with String]
-  
-  /* "Unknown" */ @js.native
-  object unknown extends TopLevel[unknown with String]
   
 }
 

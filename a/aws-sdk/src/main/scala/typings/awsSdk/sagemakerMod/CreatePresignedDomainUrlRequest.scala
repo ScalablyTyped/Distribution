@@ -25,10 +25,10 @@ object CreatePresignedDomainUrlRequest {
   def apply(
     DomainId: DomainId,
     UserProfileName: UserProfileName,
-    SessionExpirationDurationInSeconds: Int | Double = null
+    SessionExpirationDurationInSeconds: js.UndefOr[SessionExpirationDurationInSeconds] = js.undefined
   ): CreatePresignedDomainUrlRequest = {
     val __obj = js.Dynamic.literal(DomainId = DomainId.asInstanceOf[js.Any], UserProfileName = UserProfileName.asInstanceOf[js.Any])
-    if (SessionExpirationDurationInSeconds != null) __obj.updateDynamic("SessionExpirationDurationInSeconds")(SessionExpirationDurationInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(SessionExpirationDurationInSeconds)) __obj.updateDynamic("SessionExpirationDurationInSeconds")(SessionExpirationDurationInSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePresignedDomainUrlRequest]
   }
 }

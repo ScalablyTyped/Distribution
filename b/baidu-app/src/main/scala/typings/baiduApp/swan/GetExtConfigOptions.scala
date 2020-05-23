@@ -1,6 +1,6 @@
 package typings.baiduApp.swan
 
-import typings.baiduApp.errMsgstringExtConfig
+import typings.baiduApp.anon.errMsgstringExtConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

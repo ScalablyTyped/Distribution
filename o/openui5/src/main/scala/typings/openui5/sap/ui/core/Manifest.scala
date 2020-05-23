@@ -6,16 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.core.Manifest")
 @js.native
-class Manifest protected () extends Object {
-  /**
-    * Creates and initializes a manifest wrapper which provides API access tothe content of the manifest.
-    * @param oManifest the manifest object
-    * @param mOptions (optional) the configuration options
-    */
-  def this(oManifest: js.Any) = this()
-  def this(oManifest: js.Any, mOptions: js.Any) = this()
+trait Manifest extends Object {
   /**
     * Returns the Component name which is defined in the manifest as<code>sap.ui5/componentName</code> or
     * <code>sap.app/id</code>

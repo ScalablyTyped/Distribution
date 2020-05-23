@@ -15,7 +15,7 @@ trait RestoreRequest extends js.Object {
     */
   var Description: js.UndefOr[typings.awsSdk.s3Mod.Description] = js.native
   /**
-    * Glacier related parameters pertaining to this job. Do not use with restores that specify OutputLocation.
+    * S3 Glacier related parameters pertaining to this job. Do not use with restores that specify OutputLocation.
     */
   var GlacierJobParameters: js.UndefOr[typings.awsSdk.s3Mod.GlacierJobParameters] = js.native
   /**
@@ -27,7 +27,7 @@ trait RestoreRequest extends js.Object {
     */
   var SelectParameters: js.UndefOr[typings.awsSdk.s3Mod.SelectParameters] = js.native
   /**
-    * Glacier retrieval tier at which the restore will be processed.
+    * S3 Glacier retrieval tier at which the restore will be processed.
     */
   var Tier: js.UndefOr[typings.awsSdk.s3Mod.Tier] = js.native
   /**
@@ -39,7 +39,7 @@ trait RestoreRequest extends js.Object {
 object RestoreRequest {
   @scala.inline
   def apply(
-    Days: Int | Double = null,
+    Days: js.UndefOr[Days] = js.undefined,
     Description: Description = null,
     GlacierJobParameters: GlacierJobParameters = null,
     OutputLocation: OutputLocation = null,
@@ -48,7 +48,7 @@ object RestoreRequest {
     Type: RestoreRequestType = null
   ): RestoreRequest = {
     val __obj = js.Dynamic.literal()
-    if (Days != null) __obj.updateDynamic("Days")(Days.asInstanceOf[js.Any])
+    if (!js.isUndefined(Days)) __obj.updateDynamic("Days")(Days.get.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (GlacierJobParameters != null) __obj.updateDynamic("GlacierJobParameters")(GlacierJobParameters.asInstanceOf[js.Any])
     if (OutputLocation != null) __obj.updateDynamic("OutputLocation")(OutputLocation.asInstanceOf[js.Any])

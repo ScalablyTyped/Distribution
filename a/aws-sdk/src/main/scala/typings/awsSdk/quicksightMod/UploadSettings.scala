@@ -31,17 +31,17 @@ trait UploadSettings extends js.Object {
 object UploadSettings {
   @scala.inline
   def apply(
-    ContainsHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    ContainsHeader: js.UndefOr[Boolean] = js.undefined,
     Delimiter: Delimiter = null,
     Format: FileFormat = null,
-    StartFromRow: Int | scala.Double = null,
+    StartFromRow: js.UndefOr[PositiveInteger] = js.undefined,
     TextQualifier: TextQualifier = null
   ): UploadSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ContainsHeader)) __obj.updateDynamic("ContainsHeader")(ContainsHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(ContainsHeader)) __obj.updateDynamic("ContainsHeader")(ContainsHeader.get.asInstanceOf[js.Any])
     if (Delimiter != null) __obj.updateDynamic("Delimiter")(Delimiter.asInstanceOf[js.Any])
     if (Format != null) __obj.updateDynamic("Format")(Format.asInstanceOf[js.Any])
-    if (StartFromRow != null) __obj.updateDynamic("StartFromRow")(StartFromRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(StartFromRow)) __obj.updateDynamic("StartFromRow")(StartFromRow.get.asInstanceOf[js.Any])
     if (TextQualifier != null) __obj.updateDynamic("TextQualifier")(TextQualifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadSettings]
   }

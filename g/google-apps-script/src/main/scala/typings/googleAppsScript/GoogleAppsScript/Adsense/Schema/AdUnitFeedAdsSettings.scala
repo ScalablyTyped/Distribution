@@ -15,14 +15,14 @@ object AdUnitFeedAdsSettings {
   @scala.inline
   def apply(
     adPosition: String = null,
-    frequency: Int | Double = null,
-    minimumWordCount: Int | Double = null,
+    frequency: js.UndefOr[Double] = js.undefined,
+    minimumWordCount: js.UndefOr[Double] = js.undefined,
     `type`: String = null
   ): AdUnitFeedAdsSettings = {
     val __obj = js.Dynamic.literal()
     if (adPosition != null) __obj.updateDynamic("adPosition")(adPosition.asInstanceOf[js.Any])
-    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
-    if (minimumWordCount != null) __obj.updateDynamic("minimumWordCount")(minimumWordCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(frequency)) __obj.updateDynamic("frequency")(frequency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumWordCount)) __obj.updateDynamic("minimumWordCount")(minimumWordCount.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdUnitFeedAdsSettings]
   }

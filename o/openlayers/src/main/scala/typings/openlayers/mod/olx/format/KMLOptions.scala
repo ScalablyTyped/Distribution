@@ -22,9 +22,9 @@ object KMLOptions {
   ): KMLOptions = {
     val __obj = js.Dynamic.literal()
     if (defaultStyle != null) __obj.updateDynamic("defaultStyle")(defaultStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(extractStyles)) __obj.updateDynamic("extractStyles")(extractStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPointNames)) __obj.updateDynamic("showPointNames")(showPointNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(writeStyles)) __obj.updateDynamic("writeStyles")(writeStyles.asInstanceOf[js.Any])
+    if (!js.isUndefined(extractStyles)) __obj.updateDynamic("extractStyles")(extractStyles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPointNames)) __obj.updateDynamic("showPointNames")(showPointNames.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(writeStyles)) __obj.updateDynamic("writeStyles")(writeStyles.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[KMLOptions]
   }
 }

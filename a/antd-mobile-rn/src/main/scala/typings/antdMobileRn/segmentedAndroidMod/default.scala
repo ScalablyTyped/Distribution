@@ -1,6 +1,6 @@
 package typings.antdMobileRn.segmentedAndroidMod
 
-import typings.antdMobileRn.AnonOnChange
+import typings.antdMobileRn.anon.OnChange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class default protected () extends SegmentedControl {
 @JSImport("antd-mobile-rn/lib/segmented-control/segmented.android", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonOnChange = js.native
+  var defaultProps: OnChange = js.native
 }
 

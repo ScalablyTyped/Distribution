@@ -12,7 +12,7 @@ object MenuSeparator {
   @scala.inline
   def apply(separator: js.UndefOr[Boolean] = js.undefined): MenuSeparator = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(separator)) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
+    if (!js.isUndefined(separator)) __obj.updateDynamic("separator")(separator.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuSeparator]
   }
 }

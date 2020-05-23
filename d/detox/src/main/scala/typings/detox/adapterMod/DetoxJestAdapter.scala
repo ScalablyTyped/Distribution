@@ -1,11 +1,12 @@
 package typings.detox.adapterMod
 
-import typings.detox.mod._Global_.Detox_.Detox
+import typings.detox.mod.global.Detox_.CircusTestEventListenerBase
+import typings.detox.mod.global.Detox_.Detox
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DetoxJestAdapter extends js.Object {
+trait DetoxJestAdapter extends CircusTestEventListenerBase {
   var detox: Detox
   def afterAll(): js.Promise[Unit]
   def beforeEach(): js.Promise[Unit]
@@ -20,10 +21,11 @@ object DetoxJestAdapter {
     afterAll: () => js.Promise[Unit],
     beforeEach: () => js.Promise[Unit],
     detox: Detox,
+    handleTestEvent: (js.Any, js.Any) => js.Promise[Unit],
     specDone: () => Unit,
     specStarted: () => Unit
   ): DetoxJestAdapter = {
-    val __obj = js.Dynamic.literal(afterAll = js.Any.fromFunction0(afterAll), beforeEach = js.Any.fromFunction0(beforeEach), detox = detox.asInstanceOf[js.Any], specDone = js.Any.fromFunction0(specDone), specStarted = js.Any.fromFunction0(specStarted))
+    val __obj = js.Dynamic.literal(afterAll = js.Any.fromFunction0(afterAll), beforeEach = js.Any.fromFunction0(beforeEach), detox = detox.asInstanceOf[js.Any], handleTestEvent = js.Any.fromFunction2(handleTestEvent), specDone = js.Any.fromFunction0(specDone), specStarted = js.Any.fromFunction0(specStarted))
     __obj.asInstanceOf[DetoxJestAdapter]
   }
 }

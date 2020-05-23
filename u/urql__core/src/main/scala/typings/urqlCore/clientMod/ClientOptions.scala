@@ -1,7 +1,7 @@
 package typings.urqlCore.clientMod
 
 import typings.std.RequestInit
-import typings.urqlCore.FnCall
+import typings.urqlCore.anon.FnCall
 import typings.urqlCore.typesMod.Exchange
 import typings.urqlCore.typesMod.RequestPolicy
 import scala.scalajs.js
@@ -43,10 +43,10 @@ object ClientOptions {
     if (exchanges != null) __obj.updateDynamic("exchanges")(exchanges.asInstanceOf[js.Any])
     if (fetch != null) __obj.updateDynamic("fetch")(fetch.asInstanceOf[js.Any])
     if (fetchOptions != null) __obj.updateDynamic("fetchOptions")(fetchOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(maskTypename)) __obj.updateDynamic("maskTypename")(maskTypename.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferGetMethod)) __obj.updateDynamic("preferGetMethod")(preferGetMethod.asInstanceOf[js.Any])
+    if (!js.isUndefined(maskTypename)) __obj.updateDynamic("maskTypename")(maskTypename.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferGetMethod)) __obj.updateDynamic("preferGetMethod")(preferGetMethod.get.asInstanceOf[js.Any])
     if (requestPolicy != null) __obj.updateDynamic("requestPolicy")(requestPolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(suspense)) __obj.updateDynamic("suspense")(suspense.asInstanceOf[js.Any])
+    if (!js.isUndefined(suspense)) __obj.updateDynamic("suspense")(suspense.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
 }

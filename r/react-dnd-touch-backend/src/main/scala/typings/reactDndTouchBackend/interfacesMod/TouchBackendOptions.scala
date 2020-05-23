@@ -21,9 +21,9 @@ trait TouchBackendOptions extends js.Object {
 object TouchBackendOptions {
   @scala.inline
   def apply(
-    delay: Int | Double = null,
-    delayMouseStart: Int | Double = null,
-    delayTouchStart: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
+    delayMouseStart: js.UndefOr[Double] = js.undefined,
+    delayTouchStart: js.UndefOr[Double] = js.undefined,
     enableHoverOutsideTarget: js.UndefOr[Boolean] = js.undefined,
     enableKeyboardEvents: js.UndefOr[Boolean] = js.undefined,
     enableMouseEvents: js.UndefOr[Boolean] = js.undefined,
@@ -31,20 +31,20 @@ object TouchBackendOptions {
     getDropTargetElementsAtPoint: js.Function = null,
     ignoreContextMenu: js.UndefOr[Boolean] = js.undefined,
     scrollAngleRanges: js.Array[AngleRange] = null,
-    touchSlop: Int | Double = null
+    touchSlop: js.UndefOr[Double] = js.undefined
   ): TouchBackendOptions = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (delayMouseStart != null) __obj.updateDynamic("delayMouseStart")(delayMouseStart.asInstanceOf[js.Any])
-    if (delayTouchStart != null) __obj.updateDynamic("delayTouchStart")(delayTouchStart.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableHoverOutsideTarget)) __obj.updateDynamic("enableHoverOutsideTarget")(enableHoverOutsideTarget.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableKeyboardEvents)) __obj.updateDynamic("enableKeyboardEvents")(enableKeyboardEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableMouseEvents)) __obj.updateDynamic("enableMouseEvents")(enableMouseEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTouchEvents)) __obj.updateDynamic("enableTouchEvents")(enableTouchEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayMouseStart)) __obj.updateDynamic("delayMouseStart")(delayMouseStart.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayTouchStart)) __obj.updateDynamic("delayTouchStart")(delayTouchStart.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableHoverOutsideTarget)) __obj.updateDynamic("enableHoverOutsideTarget")(enableHoverOutsideTarget.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableKeyboardEvents)) __obj.updateDynamic("enableKeyboardEvents")(enableKeyboardEvents.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableMouseEvents)) __obj.updateDynamic("enableMouseEvents")(enableMouseEvents.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTouchEvents)) __obj.updateDynamic("enableTouchEvents")(enableTouchEvents.get.asInstanceOf[js.Any])
     if (getDropTargetElementsAtPoint != null) __obj.updateDynamic("getDropTargetElementsAtPoint")(getDropTargetElementsAtPoint.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreContextMenu)) __obj.updateDynamic("ignoreContextMenu")(ignoreContextMenu.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreContextMenu)) __obj.updateDynamic("ignoreContextMenu")(ignoreContextMenu.get.asInstanceOf[js.Any])
     if (scrollAngleRanges != null) __obj.updateDynamic("scrollAngleRanges")(scrollAngleRanges.asInstanceOf[js.Any])
-    if (touchSlop != null) __obj.updateDynamic("touchSlop")(touchSlop.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchSlop)) __obj.updateDynamic("touchSlop")(touchSlop.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchBackendOptions]
   }
 }

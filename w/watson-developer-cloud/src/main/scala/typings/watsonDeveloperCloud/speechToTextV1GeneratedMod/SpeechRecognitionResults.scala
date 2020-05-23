@@ -19,13 +19,13 @@ trait SpeechRecognitionResults extends js.Object {
 object SpeechRecognitionResults {
   @scala.inline
   def apply(
-    result_index: Int | Double = null,
+    result_index: js.UndefOr[Double] = js.undefined,
     results: js.Array[SpeechRecognitionResult] = null,
     speaker_labels: js.Array[SpeakerLabelsResult] = null,
     warnings: js.Array[String] = null
   ): SpeechRecognitionResults = {
     val __obj = js.Dynamic.literal()
-    if (result_index != null) __obj.updateDynamic("result_index")(result_index.asInstanceOf[js.Any])
+    if (!js.isUndefined(result_index)) __obj.updateDynamic("result_index")(result_index.get.asInstanceOf[js.Any])
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     if (speaker_labels != null) __obj.updateDynamic("speaker_labels")(speaker_labels.asInstanceOf[js.Any])
     if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])

@@ -32,7 +32,7 @@ object PGStoreOptions {
     pruneSessionInterval: `false` | Double = null,
     schemaName: String = null,
     tableName: String = null,
-    ttl: Int | Double = null
+    ttl: js.UndefOr[Double] = js.undefined
   ): PGStoreOptions = {
     val __obj = js.Dynamic.literal()
     if (conObject != null) __obj.updateDynamic("conObject")(conObject.asInstanceOf[js.Any])
@@ -43,7 +43,7 @@ object PGStoreOptions {
     if (pruneSessionInterval != null) __obj.updateDynamic("pruneSessionInterval")(pruneSessionInterval.asInstanceOf[js.Any])
     if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName.asInstanceOf[js.Any])
     if (tableName != null) __obj.updateDynamic("tableName")(tableName.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PGStoreOptions]
   }
 }

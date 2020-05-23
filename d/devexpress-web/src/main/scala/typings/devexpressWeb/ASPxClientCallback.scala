@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a client-side equivalent of the ASPxCallback control.
   */
-@JSGlobal("ASPxClientCallback")
 @js.native
-class ASPxClientCallback () extends ASPxClientControl {
+trait ASPxClientCallback extends ASPxClientControl {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -39,16 +38,5 @@ class ASPxClientCallback () extends ASPxClientControl {
     * @param parameter A string value that represents any information that needs to be sent to the server-side ASPxCallback.Callback event.
     */
   def SendCallback(parameter: String): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("ASPxClientCallback")
-@js.native
-object ASPxClientCallback extends js.Object {
-  /**
-    * Converts the specified object to the ASPxClientCallback type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): ASPxClientCallback = js.native
 }
 

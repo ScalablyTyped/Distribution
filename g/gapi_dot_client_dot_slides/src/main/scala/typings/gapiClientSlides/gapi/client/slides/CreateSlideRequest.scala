@@ -50,13 +50,13 @@ trait CreateSlideRequest extends js.Object {
 object CreateSlideRequest {
   @scala.inline
   def apply(
-    insertionIndex: Int | Double = null,
+    insertionIndex: js.UndefOr[Double] = js.undefined,
     objectId: String = null,
     placeholderIdMappings: js.Array[LayoutPlaceholderIdMapping] = null,
     slideLayoutReference: LayoutReference = null
   ): CreateSlideRequest = {
     val __obj = js.Dynamic.literal()
-    if (insertionIndex != null) __obj.updateDynamic("insertionIndex")(insertionIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(insertionIndex)) __obj.updateDynamic("insertionIndex")(insertionIndex.get.asInstanceOf[js.Any])
     if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
     if (placeholderIdMappings != null) __obj.updateDynamic("placeholderIdMappings")(placeholderIdMappings.asInstanceOf[js.Any])
     if (slideLayoutReference != null) __obj.updateDynamic("slideLayoutReference")(slideLayoutReference.asInstanceOf[js.Any])

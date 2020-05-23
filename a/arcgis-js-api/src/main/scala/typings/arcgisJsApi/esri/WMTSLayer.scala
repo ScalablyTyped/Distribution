@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.KVP
 import typings.arcgisJsApi.arcgisJsApiStrings.RESTful
 import typings.arcgisJsApi.arcgisJsApiStrings.wmts
@@ -76,8 +75,4 @@ trait WMTSLayer
     */
   def findSublayerById(id: String): WMTSSublayer = js.native
 }
-
-@JSGlobal("__esri.WMTSLayer")
-@js.native
-object WMTSLayer extends TopLevel[WMTSLayerConstructor]
 

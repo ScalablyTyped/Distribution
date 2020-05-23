@@ -5,16 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferContentPart")
-@js.native
-class BackgroundTransferContentPart () extends IBackgroundTransferContentPart {
-  def this(name: String) = this()
-  def this(name: String, fileName: String) = this()
-  /* CompleteClass */
-  override def setFile(value: IStorageFile): Unit = js.native
-  /* CompleteClass */
-  override def setHeader(headerName: String, headerValue: String): Unit = js.native
-  /* CompleteClass */
-  override def setText(value: String): Unit = js.native
+trait BackgroundTransferContentPart extends IBackgroundTransferContentPart
+
+object BackgroundTransferContentPart {
+  @scala.inline
+  def apply(setFile: IStorageFile => Unit, setHeader: (String, String) => Unit, setText: String => Unit): BackgroundTransferContentPart = {
+    val __obj = js.Dynamic.literal(setFile = js.Any.fromFunction1(setFile), setHeader = js.Any.fromFunction2(setHeader), setText = js.Any.fromFunction1(setText))
+    __obj.asInstanceOf[BackgroundTransferContentPart]
+  }
 }
 

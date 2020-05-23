@@ -30,11 +30,11 @@ object UpdateTableRequest {
     DatabaseName: NameString,
     TableInput: TableInput,
     CatalogId: CatalogIdString = null,
-    SkipArchive: js.UndefOr[scala.Boolean] = js.undefined
+    SkipArchive: js.UndefOr[BooleanNullable] = js.undefined
   ): UpdateTableRequest = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName.asInstanceOf[js.Any], TableInput = TableInput.asInstanceOf[js.Any])
     if (CatalogId != null) __obj.updateDynamic("CatalogId")(CatalogId.asInstanceOf[js.Any])
-    if (!js.isUndefined(SkipArchive)) __obj.updateDynamic("SkipArchive")(SkipArchive.asInstanceOf[js.Any])
+    if (!js.isUndefined(SkipArchive)) __obj.updateDynamic("SkipArchive")(SkipArchive.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTableRequest]
   }
 }

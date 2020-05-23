@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-vault
 
-Typings are for version 0.9
+Typings are for version 0.9.15
 
 ## Library description:
 Javascript client for HashiCorp's Vault
@@ -10,9 +10,9 @@ Javascript client for HashiCorp's Vault
 | ------------------ | :-------------: |
 | Full name          | node-vault |
 | Keywords           | vault, hashicorp, secrets, manage, client |
-| # releases         | 16 |
-| # dependents       | 28 |
-| # downloads        | 666431 |
+| # releases         | 14 |
+| # dependents       | 33 |
+| # downloads        | 1126089 |
 | # stars            | 3 |
 
 ## Links
@@ -24,7 +24,7 @@ Javascript client for HashiCorp's Vault
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

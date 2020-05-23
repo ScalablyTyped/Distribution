@@ -21,12 +21,10 @@ object UserDevice {
     name: String,
     `type`: String,
     id: String = null,
-    volume_percent: Int | Double = null
+    volume_percent: Double = null.asInstanceOf[Double]
   ): UserDevice = {
-    val __obj = js.Dynamic.literal(is_active = is_active.asInstanceOf[js.Any], is_restricted = is_restricted.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(is_active = is_active.asInstanceOf[js.Any], is_restricted = is_restricted.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], volume_percent = volume_percent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (volume_percent != null) __obj.updateDynamic("volume_percent")(volume_percent.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserDevice]
   }
 }

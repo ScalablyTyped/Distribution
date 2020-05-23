@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait PagerRenderingEventUIParam extends js.Object {
   /**
-  	 * Gets a reference to grid's data source.
-  	 */
+    * Gets a reference to grid's data source.
+    */
   var dataSource: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Gets reference to GridPaging.
-  	 */
+    * Gets reference to GridPaging.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 

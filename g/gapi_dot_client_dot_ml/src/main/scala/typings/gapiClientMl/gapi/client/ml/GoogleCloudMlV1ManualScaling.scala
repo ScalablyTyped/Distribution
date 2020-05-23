@@ -16,9 +16,9 @@ trait GoogleCloudMlV1ManualScaling extends js.Object {
 
 object GoogleCloudMlV1ManualScaling {
   @scala.inline
-  def apply(nodes: Int | Double = null): GoogleCloudMlV1ManualScaling = {
+  def apply(nodes: js.UndefOr[Double] = js.undefined): GoogleCloudMlV1ManualScaling = {
     val __obj = js.Dynamic.literal()
-    if (nodes != null) __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodes)) __obj.updateDynamic("nodes")(nodes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudMlV1ManualScaling]
   }
 }

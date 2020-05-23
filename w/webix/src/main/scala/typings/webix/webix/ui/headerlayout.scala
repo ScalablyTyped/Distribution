@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.headerlayout")
 @js.native
-class headerlayout () extends baseview {
+trait headerlayout extends baseview {
   @JSName("config")
   var config_headerlayout: headerlayoutConfig = js.native
   def addView(view: js.Any): String | Double = js.native

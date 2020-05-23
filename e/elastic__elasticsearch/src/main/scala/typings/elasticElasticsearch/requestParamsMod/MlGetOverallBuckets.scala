@@ -30,28 +30,28 @@ object MlGetOverallBuckets {
     human: js.UndefOr[Boolean] = js.undefined,
     ignore: Double | js.Array[Double] = null,
     method: String = null,
-    overall_score: Int | Double = null,
+    overall_score: js.UndefOr[Double] = js.undefined,
     pretty: js.UndefOr[Boolean] = js.undefined,
     source: String = null,
     start: String = null,
-    top_n: Int | Double = null
+    top_n: js.UndefOr[Double] = js.undefined
   ): MlGetOverallBuckets[T] = {
     val __obj = js.Dynamic.literal(job_id = job_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(allow_no_jobs)) __obj.updateDynamic("allow_no_jobs")(allow_no_jobs.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow_no_jobs)) __obj.updateDynamic("allow_no_jobs")(allow_no_jobs.get.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (bucket_span != null) __obj.updateDynamic("bucket_span")(bucket_span.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclude_interim)) __obj.updateDynamic("exclude_interim")(exclude_interim.asInstanceOf[js.Any])
+    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exclude_interim)) __obj.updateDynamic("exclude_interim")(exclude_interim.get.asInstanceOf[js.Any])
     if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.asInstanceOf[js.Any])
+    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.get.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (overall_score != null) __obj.updateDynamic("overall_score")(overall_score.asInstanceOf[js.Any])
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])
+    if (!js.isUndefined(overall_score)) __obj.updateDynamic("overall_score")(overall_score.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (top_n != null) __obj.updateDynamic("top_n")(top_n.asInstanceOf[js.Any])
+    if (!js.isUndefined(top_n)) __obj.updateDynamic("top_n")(top_n.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MlGetOverallBuckets[T]]
   }
 }

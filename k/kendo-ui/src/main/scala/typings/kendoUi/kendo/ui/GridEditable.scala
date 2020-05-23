@@ -34,10 +34,10 @@ object GridEditable {
     if (confirmDelete != null) __obj.updateDynamic("confirmDelete")(confirmDelete.asInstanceOf[js.Any])
     if (confirmation != null) __obj.updateDynamic("confirmation")(confirmation.asInstanceOf[js.Any])
     if (createAt != null) __obj.updateDynamic("createAt")(createAt.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroy)) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroy)) __obj.updateDynamic("destroy")(destroy.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
+    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update.get.asInstanceOf[js.Any])
     if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridEditable]
   }

@@ -45,22 +45,22 @@ object LaunchTemplateVersion {
   def apply(
     CreateTime: DateTime = null,
     CreatedBy: String = null,
-    DefaultVersion: js.UndefOr[scala.Boolean] = js.undefined,
+    DefaultVersion: js.UndefOr[Boolean] = js.undefined,
     LaunchTemplateData: ResponseLaunchTemplateData = null,
     LaunchTemplateId: String = null,
     LaunchTemplateName: LaunchTemplateName = null,
     VersionDescription: VersionDescription = null,
-    VersionNumber: Int | scala.Double = null
+    VersionNumber: js.UndefOr[Long] = js.undefined
   ): LaunchTemplateVersion = {
     val __obj = js.Dynamic.literal()
     if (CreateTime != null) __obj.updateDynamic("CreateTime")(CreateTime.asInstanceOf[js.Any])
     if (CreatedBy != null) __obj.updateDynamic("CreatedBy")(CreatedBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(DefaultVersion)) __obj.updateDynamic("DefaultVersion")(DefaultVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(DefaultVersion)) __obj.updateDynamic("DefaultVersion")(DefaultVersion.get.asInstanceOf[js.Any])
     if (LaunchTemplateData != null) __obj.updateDynamic("LaunchTemplateData")(LaunchTemplateData.asInstanceOf[js.Any])
     if (LaunchTemplateId != null) __obj.updateDynamic("LaunchTemplateId")(LaunchTemplateId.asInstanceOf[js.Any])
     if (LaunchTemplateName != null) __obj.updateDynamic("LaunchTemplateName")(LaunchTemplateName.asInstanceOf[js.Any])
     if (VersionDescription != null) __obj.updateDynamic("VersionDescription")(VersionDescription.asInstanceOf[js.Any])
-    if (VersionNumber != null) __obj.updateDynamic("VersionNumber")(VersionNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(VersionNumber)) __obj.updateDynamic("VersionNumber")(VersionNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchTemplateVersion]
   }
 }

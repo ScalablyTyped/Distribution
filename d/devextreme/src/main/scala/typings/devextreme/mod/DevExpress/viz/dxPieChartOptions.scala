@@ -1,19 +1,19 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.AnonCancelComponentData
-import typings.devextreme.AnonComponentTElementDxElement
-import typings.devextreme.AnonComponentTElementDxElementModelAny
-import typings.devextreme.AnonDuration
-import typings.devextreme.AnonElement
-import typings.devextreme.AnonElementModelTarget
-import typings.devextreme.AnonElementTarget
-import typings.devextreme.AnonFormatModel
-import typings.devextreme.AnonModel
-import typings.devextreme.AnonModelTarget
-import typings.devextreme.AnonName
-import typings.devextreme.AnonNameField
-import typings.devextreme.AnonPoints
-import typings.devextreme.AnonTargetAny
+import typings.devextreme.anon.CancelComponentData
+import typings.devextreme.anon.ComponentTElementDxElement
+import typings.devextreme.anon.ComponentTElementDxElementModelAny
+import typings.devextreme.anon.Duration
+import typings.devextreme.anon.Element
+import typings.devextreme.anon.ElementModelTarget
+import typings.devextreme.anon.ElementTarget
+import typings.devextreme.anon.FormatModel
+import typings.devextreme.anon.Model
+import typings.devextreme.anon.ModelTarget
+import typings.devextreme.anon.Name
+import typings.devextreme.anon.NameField
+import typings.devextreme.anon.Points
+import typings.devextreme.anon.TargetAny
 import typings.devextreme.devextremeStrings.Bright
 import typings.devextreme.devextremeStrings.Carmine
 import typings.devextreme.devextremeStrings.Default
@@ -60,7 +60,7 @@ import typings.devextreme.devextremeStrings.single_
 import typings.devextreme.mod.DevExpress.core.template
 import typings.devextreme.mod.DevExpress.data.DataSource
 import typings.devextreme.mod.DevExpress.data.DataSourceOptions
-import typings.devextreme.mod._Global_.JQuery
+import typings.devextreme.mod.global.JQuery
 import typings.std.SVGElement
 import typings.std.SVGGElement
 import scala.scalajs.js
@@ -87,13 +87,13 @@ trait dxPieChartOptions extends BaseChartOptions[dxPieChart] {
   /** @name dxPieChart.Options.minDiameter */
   var minDiameter: js.UndefOr[Double] = js.undefined
   /** @name dxPieChart.Options.onLegendClick */
-  var onLegendClick: js.UndefOr[(js.Function1[/* e */ AnonPoints, _]) | String] = js.undefined
+  var onLegendClick: js.UndefOr[(js.Function1[/* e */ Points, _]) | String] = js.undefined
   /** @name dxPieChart.Options.resolveLabelOverlapping */
   var resolveLabelOverlapping: js.UndefOr[hide | none | shift] = js.undefined
   /** @name dxPieChart.Options.segmentsDirection */
   var segmentsDirection: js.UndefOr[anticlockwise | clockwise] = js.undefined
   /** @name dxPieChart.Options.seriesTemplate */
-  var seriesTemplate: js.UndefOr[AnonNameField] = js.undefined
+  var seriesTemplate: js.UndefOr[NameField] = js.undefined
   /** @name dxPieChart.Options.series */
   @JSName("series")
   var series_dxPieChartOptions: js.UndefOr[PieChartSeries | js.Array[PieChartSeries]] = js.undefined
@@ -109,38 +109,38 @@ object dxPieChartOptions {
   @scala.inline
   def apply(
     adaptiveLayout: dxPieChartAdaptiveLayout = null,
-    animation: AnonDuration | Boolean = null,
+    animation: Duration | Boolean = null,
     bindingOptions: js.Any = null,
     centerTemplate: template | (js.Function2[/* component */ dxPieChart, /* element */ SVGGElement, String | SVGElement | JQuery]) = null,
     commonSeriesSettings: js.Any = null,
     customizeLabel: /* pointInfo */ js.Any => dxChartSeriesTypesCommonSeriesLabel = null,
     customizePoint: /* pointInfo */ js.Any => dxChartSeriesTypesCommonSeriesPoint = null,
     dataSource: js.Array[_] | DataSource | DataSourceOptions | String = null,
-    diameter: Int | Double = null,
+    diameter: js.UndefOr[Double] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     elementAttr: js.Any = null,
     export: BaseWidgetExport = null,
     height: Double | String | (js.Function0[Double | String]) = null,
-    innerRadius: Int | Double = null,
+    innerRadius: js.UndefOr[Double] = js.undefined,
     legend: dxPieChartLegend = null,
     loadingIndicator: BaseWidgetLoadingIndicator = null,
     margin: BaseWidgetMargin = null,
-    minDiameter: Int | Double = null,
-    onDisposing: /* e */ AnonModel[dxPieChart] => _ = null,
-    onDone: /* e */ AnonComponentTElementDxElement[dxPieChart] => _ = null,
-    onDrawn: /* e */ AnonComponentTElementDxElementModelAny[dxPieChart] => _ = null,
-    onExported: /* e */ AnonComponentTElementDxElementModelAny[dxPieChart] => _ = null,
-    onExporting: /* e */ AnonFormatModel[dxPieChart] => _ = null,
-    onFileSaving: /* e */ AnonCancelComponentData[dxPieChart] => _ = null,
-    onIncidentOccurred: /* e */ AnonTargetAny[dxPieChart] => _ = null,
-    onInitialized: /* e */ AnonElement[dxPieChart] => _ = null,
-    onLegendClick: (js.Function1[/* e */ AnonPoints, _]) | String = null,
-    onOptionChanged: /* e */ AnonName[dxPieChart] => _ = null,
-    onPointClick: (js.Function1[/* e */ AnonModelTarget[dxPieChart], _]) | String = null,
-    onPointHoverChanged: /* e */ AnonElementTarget => _ = null,
-    onPointSelectionChanged: /* e */ AnonElementTarget => _ = null,
-    onTooltipHidden: /* e */ AnonElementModelTarget[dxPieChart] => _ = null,
-    onTooltipShown: /* e */ AnonElementModelTarget[dxPieChart] => _ = null,
+    minDiameter: js.UndefOr[Double] = js.undefined,
+    onDisposing: /* e */ Model[dxPieChart] => _ = null,
+    onDone: /* e */ ComponentTElementDxElement[dxPieChart] => _ = null,
+    onDrawn: /* e */ ComponentTElementDxElementModelAny[dxPieChart] => _ = null,
+    onExported: /* e */ ComponentTElementDxElementModelAny[dxPieChart] => _ = null,
+    onExporting: /* e */ FormatModel[dxPieChart] => _ = null,
+    onFileSaving: /* e */ CancelComponentData[dxPieChart] => _ = null,
+    onIncidentOccurred: /* e */ TargetAny[dxPieChart] => _ = null,
+    onInitialized: /* e */ Element[dxPieChart] => _ = null,
+    onLegendClick: (js.Function1[/* e */ Points, _]) | String = null,
+    onOptionChanged: /* e */ Name[dxPieChart] => _ = null,
+    onPointClick: (js.Function1[/* e */ ModelTarget[dxPieChart], _]) | String = null,
+    onPointHoverChanged: /* e */ ElementTarget => _ = null,
+    onPointSelectionChanged: /* e */ ElementTarget => _ = null,
+    onTooltipHidden: /* e */ ElementModelTarget[dxPieChart] => _ = null,
+    onTooltipShown: /* e */ ElementModelTarget[dxPieChart] => _ = null,
     palette: js.Array[String] | Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office = null,
     paletteExtensionMode: alternate | blend | extrapolate = null,
     pathModified: js.UndefOr[Boolean] = js.undefined,
@@ -150,10 +150,10 @@ object dxPieChartOptions {
     rtlEnabled: js.UndefOr[Boolean] = js.undefined,
     segmentsDirection: anticlockwise | clockwise = null,
     series: PieChartSeries | js.Array[PieChartSeries] = null,
-    seriesTemplate: AnonNameField = null,
+    seriesTemplate: NameField = null,
     size: BaseWidgetSize = null,
     sizeGroup: String = null,
-    startAngle: Int | Double = null,
+    startAngle: js.UndefOr[Double] = js.undefined,
     theme: genericDotdark | genericDotlight | genericDotcontrast | ios7Dotdefault | genericDotcarmine | genericDotdarkmoon | genericDotdarkviolet | genericDotgreenmist | genericDotsoftblue | materialDotblueDotlight | materialDotlimeDotlight | materialDotorangeDotlight | materialDotpurpleDotlight | materialDottealDotlight = null,
     title: BaseWidgetTitle | String = null,
     tooltip: BaseChartTooltip = null,
@@ -169,16 +169,16 @@ object dxPieChartOptions {
     if (customizeLabel != null) __obj.updateDynamic("customizeLabel")(js.Any.fromFunction1(customizeLabel))
     if (customizePoint != null) __obj.updateDynamic("customizePoint")(js.Any.fromFunction1(customizePoint))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (diameter != null) __obj.updateDynamic("diameter")(diameter.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(diameter)) __obj.updateDynamic("diameter")(diameter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
     if (export != null) __obj.updateDynamic("export")(export.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (innerRadius != null) __obj.updateDynamic("innerRadius")(innerRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(innerRadius)) __obj.updateDynamic("innerRadius")(innerRadius.get.asInstanceOf[js.Any])
     if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
     if (loadingIndicator != null) __obj.updateDynamic("loadingIndicator")(loadingIndicator.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (minDiameter != null) __obj.updateDynamic("minDiameter")(minDiameter.asInstanceOf[js.Any])
+    if (!js.isUndefined(minDiameter)) __obj.updateDynamic("minDiameter")(minDiameter.get.asInstanceOf[js.Any])
     if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1(onDisposing))
     if (onDone != null) __obj.updateDynamic("onDone")(js.Any.fromFunction1(onDone))
     if (onDrawn != null) __obj.updateDynamic("onDrawn")(js.Any.fromFunction1(onDrawn))
@@ -196,17 +196,17 @@ object dxPieChartOptions {
     if (onTooltipShown != null) __obj.updateDynamic("onTooltipShown")(js.Any.fromFunction1(onTooltipShown))
     if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
     if (paletteExtensionMode != null) __obj.updateDynamic("paletteExtensionMode")(paletteExtensionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(pathModified)) __obj.updateDynamic("pathModified")(pathModified.asInstanceOf[js.Any])
+    if (!js.isUndefined(pathModified)) __obj.updateDynamic("pathModified")(pathModified.get.asInstanceOf[js.Any])
     if (pointSelectionMode != null) __obj.updateDynamic("pointSelectionMode")(pointSelectionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(redrawOnResize)) __obj.updateDynamic("redrawOnResize")(redrawOnResize.asInstanceOf[js.Any])
+    if (!js.isUndefined(redrawOnResize)) __obj.updateDynamic("redrawOnResize")(redrawOnResize.get.asInstanceOf[js.Any])
     if (resolveLabelOverlapping != null) __obj.updateDynamic("resolveLabelOverlapping")(resolveLabelOverlapping.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
     if (segmentsDirection != null) __obj.updateDynamic("segmentsDirection")(segmentsDirection.asInstanceOf[js.Any])
     if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     if (seriesTemplate != null) __obj.updateDynamic("seriesTemplate")(seriesTemplate.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (sizeGroup != null) __obj.updateDynamic("sizeGroup")(sizeGroup.asInstanceOf[js.Any])
-    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(startAngle)) __obj.updateDynamic("startAngle")(startAngle.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])

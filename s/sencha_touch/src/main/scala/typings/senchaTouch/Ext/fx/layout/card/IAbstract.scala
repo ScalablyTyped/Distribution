@@ -10,36 +10,36 @@ import scala.scalajs.js.annotation._
 
 trait IAbstract extends IEvented {
   /** [Method] Returns the value of direction
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getDirection: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of duration
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getDuration: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of layout
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getLayout: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of reverse
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getReverse: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Sets the value of direction
-  		* @param direction String The new value.
-  		*/
+    * @param direction String The new value.
+    */
   var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of duration
-  		* @param duration Object The new value.
-  		*/
+    * @param duration Object The new value.
+    */
   var setDuration: js.UndefOr[js.Function1[/* duration */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of layout
-  		* @param layout Object The new value.
-  		*/
+    * @param layout Object The new value.
+    */
   var setLayout: js.UndefOr[js.Function1[/* layout */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of reverse
-  		* @param reverse Object The new value.
-  		*/
+    * @param reverse Object The new value.
+    */
   var setReverse: js.UndefOr[js.Function1[/* reverse */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -155,7 +155,7 @@ object IAbstract {
     if (setLayout != null) __obj.updateDynamic("setLayout")(js.Any.fromFunction1(setLayout))
     if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
     if (setReverse != null) __obj.updateDynamic("setReverse")(js.Any.fromFunction1(setReverse))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))

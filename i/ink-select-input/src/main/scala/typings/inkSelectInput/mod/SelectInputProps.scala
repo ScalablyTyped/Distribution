@@ -17,22 +17,22 @@ trait SelectInputProps[T /* <: ItemOfSelectInput */] extends js.Object {
 
 object SelectInputProps {
   @scala.inline
-  def apply[T /* <: ItemOfSelectInput */](
+  def apply[T](
     focus: js.UndefOr[Boolean] = js.undefined,
     indicatorComponent: Component[js.Object, js.Object, _] = null,
-    initialIndex: Int | Double = null,
+    initialIndex: js.UndefOr[Double] = js.undefined,
     itemComponent: Component[js.Object, js.Object, _] = null,
     items: js.Array[T] = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     onSelect: /* item */ T => Unit = null
   ): SelectInputProps[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
+    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.get.asInstanceOf[js.Any])
     if (indicatorComponent != null) __obj.updateDynamic("indicatorComponent")(indicatorComponent.asInstanceOf[js.Any])
-    if (initialIndex != null) __obj.updateDynamic("initialIndex")(initialIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialIndex)) __obj.updateDynamic("initialIndex")(initialIndex.get.asInstanceOf[js.Any])
     if (itemComponent != null) __obj.updateDynamic("itemComponent")(itemComponent.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
     __obj.asInstanceOf[SelectInputProps[T]]
   }

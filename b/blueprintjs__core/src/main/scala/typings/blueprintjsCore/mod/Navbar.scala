@@ -1,8 +1,8 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.TypeofNavbarDivider
-import typings.blueprintjsCore.TypeofNavbarGroup
-import typings.blueprintjsCore.TypeofNavbarHeading
+import typings.blueprintjsCore.anon.TypeofNavbarDivider
+import typings.blueprintjsCore.anon.TypeofNavbarGroup
+import typings.blueprintjsCore.anon.TypeofNavbarHeading
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

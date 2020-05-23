@@ -29,12 +29,12 @@ object DescribeTestCasesInput {
   def apply(
     reportArn: String,
     filter: TestCaseFilter = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[PageSize] = js.undefined,
     nextToken: String = null
   ): DescribeTestCasesInput = {
     val __obj = js.Dynamic.literal(reportArn = reportArn.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTestCasesInput]
   }

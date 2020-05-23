@@ -12,14 +12,14 @@ sealed trait StatusBarAlignment extends js.Object
 @js.native
 object StatusBarAlignment extends js.Object {
   /**
-  		 * Aligned to the left side.
-  		 */
+    * Aligned to the left side.
+    */
   @js.native
   sealed trait Left extends StatusBarAlignment
   
   /**
-  		 * Aligned to the right side.
-  		 */
+    * Aligned to the right side.
+    */
   @js.native
   sealed trait Right extends StatusBarAlignment
   

@@ -1,7 +1,6 @@
 package typings.baseui.phoneInputMod
 
-import typings.baseui.AnonCountrySelectDropdown
-import typings.baseui.ReadonlyArrayReactNode
+import typings.baseui.anon.ReadonlyArrayReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +10,7 @@ trait CountrySelectDropdownProps extends js.Object {
   var country: js.UndefOr[Country] = js.undefined
   var mapIsoToLabel: js.UndefOr[js.Function1[/* iso */ String, String]] = js.undefined
   var maxDropdownHeight: js.UndefOr[String] = js.undefined
-  var overrides: js.UndefOr[AnonCountrySelectDropdown] = js.undefined
+  var overrides: js.UndefOr[typings.baseui.anon.CountrySelectDropdown] = js.undefined
 }
 
 object CountrySelectDropdownProps {
@@ -21,7 +20,7 @@ object CountrySelectDropdownProps {
     country: Country = null,
     mapIsoToLabel: /* iso */ String => String = null,
     maxDropdownHeight: String = null,
-    overrides: AnonCountrySelectDropdown = null
+    overrides: typings.baseui.anon.CountrySelectDropdown = null
   ): CountrySelectDropdownProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

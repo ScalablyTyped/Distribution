@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation._
 
 package object remoteLoggingMod {
   type LogData = java.lang.String | typings.expo.remoteLoggingMod.LogErrorData
-  type TransportErrorListener = js.Function1[/* event */ typings.expo.AnonResponse, scala.Unit]
+  type TransportErrorListener = js.Function1[/* event */ typings.expo.anon.Response, scala.Unit]
 }

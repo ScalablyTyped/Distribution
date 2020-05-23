@@ -22,9 +22,13 @@ trait ListThingsInBillingGroupRequest extends js.Object {
 
 object ListThingsInBillingGroupRequest {
   @scala.inline
-  def apply(billingGroupName: BillingGroupName, maxResults: Int | Double = null, nextToken: NextToken = null): ListThingsInBillingGroupRequest = {
+  def apply(
+    billingGroupName: BillingGroupName,
+    maxResults: js.UndefOr[RegistryMaxResults] = js.undefined,
+    nextToken: NextToken = null
+  ): ListThingsInBillingGroupRequest = {
     val __obj = js.Dynamic.literal(billingGroupName = billingGroupName.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListThingsInBillingGroupRequest]
   }

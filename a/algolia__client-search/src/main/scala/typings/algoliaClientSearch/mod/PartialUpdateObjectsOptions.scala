@@ -15,7 +15,7 @@ object PartialUpdateObjectsOptions {
   @scala.inline
   def apply(createIfNotExists: js.UndefOr[Boolean] = js.undefined): PartialUpdateObjectsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(createIfNotExists)) __obj.updateDynamic("createIfNotExists")(createIfNotExists.asInstanceOf[js.Any])
+    if (!js.isUndefined(createIfNotExists)) __obj.updateDynamic("createIfNotExists")(createIfNotExists.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialUpdateObjectsOptions]
   }
 }

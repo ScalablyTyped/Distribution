@@ -19,17 +19,23 @@ package object typesMod {
     - typings.popmotionPose.popmotionPoseStrings.y
   */
   type Draggable = typings.popmotionPose.typesMod._Draggable | scala.Boolean
-  type Pose = typings.poseCore.typesMod.Pose[typings.popmotion.mod.Action_, typings.popmotionPose.typesMod.TransitionDefinition]
-  type PoseMap = typings.poseCore.typesMod.PoseMap[typings.popmotion.mod.Action_, typings.popmotionPose.typesMod.TransitionDefinition]
+  type Pose = typings.poseCore.typesMod.Pose[
+    typings.popmotion.mod.Action_[typings.popmotion.actionTypesMod.ColdSubscription], 
+    typings.popmotionPose.typesMod.TransitionDefinition
+  ]
+  type PoseMap = typings.poseCore.typesMod.PoseMap[
+    typings.popmotion.mod.Action_[typings.popmotion.actionTypesMod.ColdSubscription], 
+    typings.popmotionPose.typesMod.TransitionDefinition
+  ]
   type PoserState = typings.poseCore.typesMod.PoserState[
     typings.popmotionPose.typesMod.Value, 
-    typings.popmotion.mod.Action_, 
-    typings.popmotion.typesMod.ColdSubscription, 
+    typings.popmotion.mod.Action_[typings.popmotion.actionTypesMod.ColdSubscription], 
+    typings.popmotion.actionTypesMod.ColdSubscription, 
     typings.popmotionPose.typesMod.DomPopmotionPoser
   ]
   type Transformer = js.Function1[/* v */ js.Any, js.Any]
   type Transition = js.Function1[
     /* props */ typings.popmotionPose.typesMod.ResolverProps, 
-    typings.popmotion.mod.Action_ | typings.popmotionPose.popmotionPoseBooleans.`false`
+    typings.popmotion.mod.Action_[typings.popmotion.actionTypesMod.ColdSubscription] | typings.popmotionPose.popmotionPoseBooleans.`false`
   ]
 }

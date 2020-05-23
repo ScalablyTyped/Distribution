@@ -13,9 +13,9 @@ trait MoveProperties extends js.Object {
 
 object MoveProperties {
   @scala.inline
-  def apply(index: Double, windowId: Int | Double = null): MoveProperties = {
+  def apply(index: Double, windowId: js.UndefOr[Double] = js.undefined): MoveProperties = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
-    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowId)) __obj.updateDynamic("windowId")(windowId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MoveProperties]
   }
 }

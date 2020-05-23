@@ -2,7 +2,7 @@ package typings.nodeFetch.mod
 
 import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
-import typings.nodeFetch.AnonSize
+import typings.nodeFetch.anon.Size
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Body () extends js.Object {
   def this(body: js.Any) = this()
-  def this(body: js.Any, opts: AnonSize) = this()
+  def this(body: js.Any, opts: Size) = this()
   var body: ReadableStream = js.native
   var bodyUsed: Boolean = js.native
   var size: Double = js.native

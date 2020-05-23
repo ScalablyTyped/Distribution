@@ -4,18 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.ParameterSyntax")
 @js.native
-class ParameterSyntax protected () extends SyntaxNode {
-  def this(
-    dotDotDotToken: ISyntaxToken,
-    modifiers: ISyntaxList,
-    identifier: ISyntaxToken,
-    questionToken: ISyntaxToken,
-    typeAnnotation: TypeAnnotationSyntax,
-    equalsValueClause: EqualsValueClauseSyntax,
-    parsedInStrictMode: Boolean
-  ) = this()
+trait ParameterSyntax extends SyntaxNode {
   var dotDotDotToken: ISyntaxToken = js.native
   var equalsValueClause: EqualsValueClauseSyntax = js.native
   var identifier: ISyntaxToken = js.native
@@ -37,13 +27,5 @@ class ParameterSyntax protected () extends SyntaxNode {
   def withModifiers(modifiers: ISyntaxList): ParameterSyntax = js.native
   def withQuestionToken(questionToken: ISyntaxToken): ParameterSyntax = js.native
   def withTypeAnnotation(typeAnnotation: TypeAnnotationSyntax): ParameterSyntax = js.native
-}
-
-/* static members */
-@JSGlobal("TypeScript.ParameterSyntax")
-@js.native
-object ParameterSyntax extends js.Object {
-  def create(identifier: ISyntaxToken): ParameterSyntax = js.native
-  def create1(identifier: ISyntaxToken): ParameterSyntax = js.native
 }
 

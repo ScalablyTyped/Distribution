@@ -27,11 +27,11 @@ trait CreateNFSFileShareInput extends js.Object {
     */
   var GuessMIMETypeEnabled: js.UndefOr[Boolean] = js.native
   /**
-    * True to use Amazon S3 server side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional.
+    * True to use Amazon S3 server-side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional.
     */
   var KMSEncrypted: js.UndefOr[Boolean] = js.native
   /**
-    * The Amazon Resource Name (ARN) AWS KMS key used for Amazon S3 server side encryption. This value can only be set when KMSEncrypted is true. Optional.
+    * The Amazon Resource Name (ARN) AWS KMS key used for Amazon S3 server-side encryption. This value can only be set when KMSEncrypted is true. Optional.
     */
   var KMSKey: js.UndefOr[typings.awsSdk.storagegatewayMod.KMSKey] = js.native
   /**
@@ -77,26 +77,26 @@ object CreateNFSFileShareInput {
     Role: Role,
     ClientList: FileShareClientList = null,
     DefaultStorageClass: StorageClass = null,
-    GuessMIMETypeEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    KMSEncrypted: js.UndefOr[scala.Boolean] = js.undefined,
+    GuessMIMETypeEnabled: js.UndefOr[Boolean] = js.undefined,
+    KMSEncrypted: js.UndefOr[Boolean] = js.undefined,
     KMSKey: KMSKey = null,
     NFSFileShareDefaults: NFSFileShareDefaults = null,
     ObjectACL: ObjectACL = null,
-    ReadOnly: js.UndefOr[scala.Boolean] = js.undefined,
-    RequesterPays: js.UndefOr[scala.Boolean] = js.undefined,
+    ReadOnly: js.UndefOr[Boolean] = js.undefined,
+    RequesterPays: js.UndefOr[Boolean] = js.undefined,
     Squash: Squash = null,
     Tags: Tags = null
   ): CreateNFSFileShareInput = {
     val __obj = js.Dynamic.literal(ClientToken = ClientToken.asInstanceOf[js.Any], GatewayARN = GatewayARN.asInstanceOf[js.Any], LocationARN = LocationARN.asInstanceOf[js.Any], Role = Role.asInstanceOf[js.Any])
     if (ClientList != null) __obj.updateDynamic("ClientList")(ClientList.asInstanceOf[js.Any])
     if (DefaultStorageClass != null) __obj.updateDynamic("DefaultStorageClass")(DefaultStorageClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(GuessMIMETypeEnabled)) __obj.updateDynamic("GuessMIMETypeEnabled")(GuessMIMETypeEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(KMSEncrypted)) __obj.updateDynamic("KMSEncrypted")(KMSEncrypted.asInstanceOf[js.Any])
+    if (!js.isUndefined(GuessMIMETypeEnabled)) __obj.updateDynamic("GuessMIMETypeEnabled")(GuessMIMETypeEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(KMSEncrypted)) __obj.updateDynamic("KMSEncrypted")(KMSEncrypted.get.asInstanceOf[js.Any])
     if (KMSKey != null) __obj.updateDynamic("KMSKey")(KMSKey.asInstanceOf[js.Any])
     if (NFSFileShareDefaults != null) __obj.updateDynamic("NFSFileShareDefaults")(NFSFileShareDefaults.asInstanceOf[js.Any])
     if (ObjectACL != null) __obj.updateDynamic("ObjectACL")(ObjectACL.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReadOnly)) __obj.updateDynamic("ReadOnly")(ReadOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequesterPays)) __obj.updateDynamic("RequesterPays")(RequesterPays.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReadOnly)) __obj.updateDynamic("ReadOnly")(ReadOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RequesterPays)) __obj.updateDynamic("RequesterPays")(RequesterPays.get.asInstanceOf[js.Any])
     if (Squash != null) __obj.updateDynamic("Squash")(Squash.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateNFSFileShareInput]

@@ -13,15 +13,15 @@ trait UseRowSelectOptions[D /* <: js.Object */] extends js.Object {
 
 object UseRowSelectOptions {
   @scala.inline
-  def apply[D /* <: js.Object */](
+  def apply[D](
     autoResetSelectedRows: js.UndefOr[Boolean] = js.undefined,
     manualRowSelectedKey: IdType[D] = null,
     selectSubRows: js.UndefOr[Boolean] = js.undefined
   ): UseRowSelectOptions[D] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoResetSelectedRows)) __obj.updateDynamic("autoResetSelectedRows")(autoResetSelectedRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoResetSelectedRows)) __obj.updateDynamic("autoResetSelectedRows")(autoResetSelectedRows.get.asInstanceOf[js.Any])
     if (manualRowSelectedKey != null) __obj.updateDynamic("manualRowSelectedKey")(manualRowSelectedKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectSubRows)) __obj.updateDynamic("selectSubRows")(selectSubRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectSubRows)) __obj.updateDynamic("selectSubRows")(selectSubRows.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseRowSelectOptions[D]]
   }
 }

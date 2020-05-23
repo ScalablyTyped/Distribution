@@ -1,5 +1,6 @@
 package typings.expressValidator
 
+import typings.expressValidator.anon.DryRun
 import typings.expressValidator.baseMod.Request
 import typings.expressValidator.contextMod.Context
 import scala.scalajs.js
@@ -12,7 +13,7 @@ object contextRunnerMod extends js.Object {
   @js.native
   trait ContextRunner extends js.Object {
     def run(req: Request): js.Promise[Context] = js.native
-    def run(req: Request, options: AnonSaveContext): js.Promise[Context] = js.native
+    def run(req: Request, options: DryRun): js.Promise[Context] = js.native
   }
   
 }

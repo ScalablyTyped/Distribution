@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.toolbar")
 @js.native
-class toolbar () extends baseview {
+trait toolbar extends baseview {
   @JSName("config")
   var config_toolbar: toolbarConfig = js.native
   def addView(view: js.Any): String | Double = js.native

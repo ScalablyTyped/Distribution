@@ -69,29 +69,29 @@ object CreateReplicationInstanceMessage {
   def apply(
     ReplicationInstanceClass: String,
     ReplicationInstanceIdentifier: String,
-    AllocatedStorage: Int | Double = null,
-    AutoMinorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
+    AllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined,
+    AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined,
     AvailabilityZone: String = null,
     DnsNameServers: String = null,
     EngineVersion: String = null,
     KmsKeyId: String = null,
-    MultiAZ: js.UndefOr[scala.Boolean] = js.undefined,
+    MultiAZ: js.UndefOr[BooleanOptional] = js.undefined,
     PreferredMaintenanceWindow: String = null,
-    PubliclyAccessible: js.UndefOr[scala.Boolean] = js.undefined,
+    PubliclyAccessible: js.UndefOr[BooleanOptional] = js.undefined,
     ReplicationSubnetGroupIdentifier: String = null,
     Tags: TagList = null,
     VpcSecurityGroupIds: VpcSecurityGroupIdList = null
   ): CreateReplicationInstanceMessage = {
     val __obj = js.Dynamic.literal(ReplicationInstanceClass = ReplicationInstanceClass.asInstanceOf[js.Any], ReplicationInstanceIdentifier = ReplicationInstanceIdentifier.asInstanceOf[js.Any])
-    if (AllocatedStorage != null) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllocatedStorage)) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade.get.asInstanceOf[js.Any])
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
     if (DnsNameServers != null) __obj.updateDynamic("DnsNameServers")(DnsNameServers.asInstanceOf[js.Any])
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (!js.isUndefined(MultiAZ)) __obj.updateDynamic("MultiAZ")(MultiAZ.asInstanceOf[js.Any])
+    if (!js.isUndefined(MultiAZ)) __obj.updateDynamic("MultiAZ")(MultiAZ.get.asInstanceOf[js.Any])
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow.asInstanceOf[js.Any])
-    if (!js.isUndefined(PubliclyAccessible)) __obj.updateDynamic("PubliclyAccessible")(PubliclyAccessible.asInstanceOf[js.Any])
+    if (!js.isUndefined(PubliclyAccessible)) __obj.updateDynamic("PubliclyAccessible")(PubliclyAccessible.get.asInstanceOf[js.Any])
     if (ReplicationSubnetGroupIdentifier != null) __obj.updateDynamic("ReplicationSubnetGroupIdentifier")(ReplicationSubnetGroupIdentifier.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     if (VpcSecurityGroupIds != null) __obj.updateDynamic("VpcSecurityGroupIds")(VpcSecurityGroupIds.asInstanceOf[js.Any])

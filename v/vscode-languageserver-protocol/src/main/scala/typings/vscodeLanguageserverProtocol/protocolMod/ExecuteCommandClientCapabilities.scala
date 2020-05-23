@@ -15,7 +15,7 @@ object ExecuteCommandClientCapabilities {
   @scala.inline
   def apply(dynamicRegistration: js.UndefOr[Boolean] = js.undefined): ExecuteCommandClientCapabilities = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteCommandClientCapabilities]
   }
 }

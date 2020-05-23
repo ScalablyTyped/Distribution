@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("dayjs/plugin/customParseFormat", JSImport.Namespace)
 @js.native
-object customParseFormatMod extends TopLevel[PluginFunc]
+object customParseFormatMod
+  extends TopLevel[PluginFunc[js.Any]]
 

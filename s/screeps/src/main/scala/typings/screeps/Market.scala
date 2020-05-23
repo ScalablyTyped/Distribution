@@ -1,6 +1,7 @@
 package typings.screeps
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.screeps.anon.Price
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -62,7 +63,7 @@ trait Market extends js.Object {
     *
     * An order expires in 30 days after its creation, and the remaining market fee is returned.
     */
-  def createOrder(params: AnonPrice): ScreepsReturnCode = js.native
+  def createOrder(params: Price): ScreepsReturnCode = js.native
   /**
     * Execute a trade deal from your Terminal to another player's Terminal using the specified buy/sell order.
     *

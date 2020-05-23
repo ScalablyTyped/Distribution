@@ -12,59 +12,59 @@ trait MDXProviderComponents extends /**
   */
 /* key */ StringDictionary[ReactNode] {
   /**
-    * Link	<https://mdxjs.com> or [MDX](https://mdxjs.com)
+    * Link    <https://mdxjs.com> or [MDX](https://mdxjs.com)
     */
   var a: js.UndefOr[ComponentType[_]] = js.undefined
   /**
-    * Blockquote	>
+    * Blockquote    >
     */
   var blockquote: js.UndefOr[ComponentType[_]] = js.undefined
   /**
-    * Code	`\code```
+    * Code    `\code```
     */
   var code: js.UndefOr[ComponentType[_]] = js.undefined
   /**
-    * Delete	~~strikethrough~~
+    * Delete    ~~strikethrough~~
     */
   var delete: js.UndefOr[ComponentType[_]] = js.undefined
   /**
-    * Emphasis	_emphasis_
+    * Emphasis    _emphasis_
     */
   var em: js.UndefOr[ComponentType[_]] = js.undefined
   /**
-    * Heading 1	#
+    * Heading 1    #
     */
   var h1: js.UndefOr[ComponentType[_]] = js.undefined
   /**
-    * Heading 2	##
+    * Heading 2    ##
     */
   var h2: js.UndefOr[ComponentType[_]] = js.undefined
   /**
-    * Heading 3	###
+    * Heading 3    ###
     */
   var h3: js.UndefOr[ComponentType[_]] = js.undefined
   /**
-    * Heading 4	####
+    * Heading 4    ####
     */
   var h4: js.UndefOr[ComponentType[_]] = js.undefined
   /**
-    * Heading 5	#####
+    * Heading 5    #####
     */
   var h5: js.UndefOr[ComponentType[_]] = js.undefined
   /**
-    * Heading 6	######
+    * Heading 6    ######
     */
   var h6: js.UndefOr[ComponentType[_]] = js.undefined
   /**
-    * Break	---
+    * Break    ---
     */
   var hr: js.UndefOr[ComponentType[_]] = js.undefined
   /**
-    * Image	![alt](https://mdx-logo.now.sh)
+    * Image    ![alt](https://mdx-logo.now.sh)
     */
   var img: js.UndefOr[ComponentType[_]] = js.undefined
   /**
-    * InlineCode	`inlineCode`
+    * InlineCode    `inlineCode`
     */
   var inlineCode: js.UndefOr[ComponentType[_]] = js.undefined
   /**
@@ -72,7 +72,7 @@ trait MDXProviderComponents extends /**
     */
   var li: js.UndefOr[ComponentType[_]] = js.undefined
   /**
-    * Ordered list	1.
+    * Ordered list    1.
     */
   var ol: js.UndefOr[ComponentType[_]] = js.undefined
   /**
@@ -84,7 +84,7 @@ trait MDXProviderComponents extends /**
     */
   var pre: js.UndefOr[ComponentType[_]] = js.undefined
   /**
-    * Strong	**strong**
+    * Strong    **strong**
     */
   var strong: js.UndefOr[ComponentType[_]] = js.undefined
   /**
@@ -97,7 +97,7 @@ trait MDXProviderComponents extends /**
     */
   var th: js.UndefOr[ComponentType[_]] = js.undefined
   /**
-    * Thematic break	***
+    * Thematic break    ***
     */
   var thematicBreak: js.UndefOr[ComponentType[_]] = js.undefined
   /**
@@ -105,7 +105,7 @@ trait MDXProviderComponents extends /**
     */
   var tr: js.UndefOr[ComponentType[_]] = js.undefined
   /**
-    * List	-
+    * List    -
     */
   var ul: js.UndefOr[ComponentType[_]] = js.undefined
   /**

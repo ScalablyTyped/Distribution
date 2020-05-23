@@ -13,8 +13,8 @@ object KeyboardOptions {
   @scala.inline
   def apply(enabled: js.UndefOr[Boolean] = js.undefined, onlyInViewport: js.UndefOr[Boolean] = js.undefined): KeyboardOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyInViewport)) __obj.updateDynamic("onlyInViewport")(onlyInViewport.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyInViewport)) __obj.updateDynamic("onlyInViewport")(onlyInViewport.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardOptions]
   }
 }

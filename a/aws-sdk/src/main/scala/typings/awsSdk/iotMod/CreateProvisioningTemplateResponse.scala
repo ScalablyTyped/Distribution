@@ -23,12 +23,12 @@ trait CreateProvisioningTemplateResponse extends js.Object {
 object CreateProvisioningTemplateResponse {
   @scala.inline
   def apply(
-    defaultVersionId: Int | Double = null,
+    defaultVersionId: js.UndefOr[TemplateVersionId] = js.undefined,
     templateArn: TemplateArn = null,
     templateName: TemplateName = null
   ): CreateProvisioningTemplateResponse = {
     val __obj = js.Dynamic.literal()
-    if (defaultVersionId != null) __obj.updateDynamic("defaultVersionId")(defaultVersionId.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultVersionId)) __obj.updateDynamic("defaultVersionId")(defaultVersionId.get.asInstanceOf[js.Any])
     if (templateArn != null) __obj.updateDynamic("templateArn")(templateArn.asInstanceOf[js.Any])
     if (templateName != null) __obj.updateDynamic("templateName")(templateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateProvisioningTemplateResponse]

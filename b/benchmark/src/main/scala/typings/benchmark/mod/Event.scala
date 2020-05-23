@@ -13,7 +13,7 @@ class Event protected () extends js.Object {
   var cancelled: Boolean = js.native
   var currentTarget: js.Object = js.native
   var result: js.Any = js.native
-  var target: js.Object = js.native
+  var target: Target = js.native
   var timeStamp: Double = js.native
   var `type`: String = js.native
 }

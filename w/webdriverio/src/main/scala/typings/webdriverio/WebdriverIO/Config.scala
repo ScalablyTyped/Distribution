@@ -7,8 +7,8 @@ import typings.webdriver.HTTPRequestOptions
 import typings.webdriver.HTTPResponse
 import typings.webdriver.WebDriver.DesiredCapabilities
 import typings.webdriver.WebDriver.WebDriverLogTypes
-import typings.webdriverio.AnonDuration
-import typings.webdriverio.AnonSpecFiltering
+import typings.webdriverio.anon.Duration
+import typings.webdriverio.anon.SpecFiltering
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,7 +48,7 @@ trait Config extends js.Object {
     js.Function5[
       /* test */ js.Any, 
       /* context */ js.Any, 
-      /* result */ AnonDuration, 
+      /* result */ Duration, 
       /* stepData */ js.UndefOr[js.Any], 
       /* world */ js.UndefOr[js.Any], 
       Unit
@@ -72,9 +72,7 @@ trait Config extends js.Object {
     ])
   ] = js.undefined
   var afterSuite: js.UndefOr[js.Function1[/* suite */ Suite, Unit]] = js.undefined
-  var afterTest: js.UndefOr[
-    js.Function3[/* test */ Test, /* context */ js.Any, /* result */ AnonDuration, Unit]
-  ] = js.undefined
+  var afterTest: js.UndefOr[js.Function3[/* test */ Test, /* context */ js.Any, /* result */ Duration, Unit]] = js.undefined
   var bail: js.UndefOr[Double] = js.undefined
   var baseUrl: js.UndefOr[String] = js.undefined
   var before: js.UndefOr[
@@ -118,7 +116,7 @@ trait Config extends js.Object {
   var connectionRetryTimeout: js.UndefOr[Double] = js.undefined
   var exclude: js.UndefOr[js.Array[String]] = js.undefined
   var execArgv: js.UndefOr[js.Array[String]] = js.undefined
-  var featureFlags: js.UndefOr[AnonSpecFiltering] = js.undefined
+  var featureFlags: js.UndefOr[SpecFiltering] = js.undefined
   var framework: js.UndefOr[String] = js.undefined
   var headers: js.UndefOr[StringDictionary[String]] = js.undefined
   var hostname: js.UndefOr[String] = js.undefined
@@ -196,15 +194,15 @@ object Config {
       ]
     ]) = null,
     afterCommand: (/* commandName */ String, /* args */ js.Array[_], /* result */ js.Any, /* error */ js.UndefOr[Error]) => Unit = null,
-    afterHook: (/* test */ js.Any, /* context */ js.Any, /* result */ AnonDuration, /* stepData */ js.UndefOr[js.Any], /* world */ js.UndefOr[js.Any]) => Unit = null,
+    afterHook: (/* test */ js.Any, /* context */ js.Any, /* result */ Duration, /* stepData */ js.UndefOr[js.Any], /* world */ js.UndefOr[js.Any]) => Unit = null,
     afterSession: (js.Function3[Config, /* capabilities */ DesiredCapabilities, /* specs */ js.Array[String], Unit]) | (js.Array[
       js.UndefOr[
         js.Function3[Config, /* capabilities */ DesiredCapabilities, /* specs */ js.Array[String], Unit]
       ]
     ]) = null,
     afterSuite: /* suite */ Suite => Unit = null,
-    afterTest: (/* test */ Test, /* context */ js.Any, /* result */ AnonDuration) => Unit = null,
-    bail: Int | Double = null,
+    afterTest: (/* test */ Test, /* context */ js.Any, /* result */ Duration) => Unit = null,
+    bail: js.UndefOr[Double] = js.undefined,
     baseUrl: String = null,
     before: (js.Function2[/* capabilities */ DesiredCapabilities, /* specs */ js.Array[String], Unit]) | (js.Array[
       js.UndefOr[
@@ -221,11 +219,11 @@ object Config {
     beforeSuite: /* suite */ Suite => Unit = null,
     beforeTest: (/* test */ Test, /* context */ js.Any) => Unit = null,
     capabilities: js.Array[DesiredCapabilities] | MultiRemoteCapabilities = null,
-    connectionRetryCount: Int | Double = null,
-    connectionRetryTimeout: Int | Double = null,
+    connectionRetryCount: js.UndefOr[Double] = js.undefined,
+    connectionRetryTimeout: js.UndefOr[Double] = js.undefined,
     exclude: js.Array[String] = null,
     execArgv: js.Array[String] = null,
-    featureFlags: AnonSpecFiltering = null,
+    featureFlags: SpecFiltering = null,
     framework: String = null,
     headers: StringDictionary[String] = null,
     hostname: String = null,
@@ -233,8 +231,8 @@ object Config {
     key: String = null,
     logLevel: WebDriverLogTypes = null,
     logOutput: String | WritableStream = null,
-    maxInstances: Int | Double = null,
-    maxInstancesPerCapability: Int | Double = null,
+    maxInstances: js.UndefOr[Double] = js.undefined,
+    maxInstancesPerCapability: js.UndefOr[Double] = js.undefined,
     mochaOpts: js.Object = null,
     onComplete: (js.Function4[
       /* exitCode */ Double, 
@@ -259,21 +257,21 @@ object Config {
     onReload: (/* oldSessionId */ String, /* newSessionId */ String) => Unit = null,
     outputDir: String = null,
     path: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     protocol: String = null,
     queryParams: StringDictionary[String] = null,
     reporters: js.Array[String | js.Object] = null,
     runner: String = null,
     services: js.Array[String | js.Object] = null,
-    specFileRetries: Int | Double = null,
-    specFileRetryAttempts: Int | Double = null,
+    specFileRetries: js.UndefOr[Double] = js.undefined,
+    specFileRetryAttempts: js.UndefOr[Double] = js.undefined,
     specs: js.Array[String] = null,
     suites: js.Object = null,
     transformRequest: /* requestOptions */ HTTPRequestOptions => HTTPRequestOptions = null,
     transformResponse: (/* response */ HTTPResponse, /* requestOptions */ HTTPRequestOptions) => HTTPResponse = null,
     user: String = null,
-    waitforInterval: Int | Double = null,
-    waitforTimeout: Int | Double = null
+    waitforInterval: js.UndefOr[Double] = js.undefined,
+    waitforTimeout: js.UndefOr[Double] = js.undefined
   ): Config = {
     val __obj = js.Dynamic.literal()
     if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
@@ -282,7 +280,7 @@ object Config {
     if (afterSession != null) __obj.updateDynamic("afterSession")(afterSession.asInstanceOf[js.Any])
     if (afterSuite != null) __obj.updateDynamic("afterSuite")(js.Any.fromFunction1(afterSuite))
     if (afterTest != null) __obj.updateDynamic("afterTest")(js.Any.fromFunction3(afterTest))
-    if (bail != null) __obj.updateDynamic("bail")(bail.asInstanceOf[js.Any])
+    if (!js.isUndefined(bail)) __obj.updateDynamic("bail")(bail.get.asInstanceOf[js.Any])
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
     if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
     if (beforeCommand != null) __obj.updateDynamic("beforeCommand")(js.Any.fromFunction2(beforeCommand))
@@ -291,8 +289,8 @@ object Config {
     if (beforeSuite != null) __obj.updateDynamic("beforeSuite")(js.Any.fromFunction1(beforeSuite))
     if (beforeTest != null) __obj.updateDynamic("beforeTest")(js.Any.fromFunction2(beforeTest))
     if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities.asInstanceOf[js.Any])
-    if (connectionRetryCount != null) __obj.updateDynamic("connectionRetryCount")(connectionRetryCount.asInstanceOf[js.Any])
-    if (connectionRetryTimeout != null) __obj.updateDynamic("connectionRetryTimeout")(connectionRetryTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectionRetryCount)) __obj.updateDynamic("connectionRetryCount")(connectionRetryCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectionRetryTimeout)) __obj.updateDynamic("connectionRetryTimeout")(connectionRetryTimeout.get.asInstanceOf[js.Any])
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
     if (execArgv != null) __obj.updateDynamic("execArgv")(execArgv.asInstanceOf[js.Any])
     if (featureFlags != null) __obj.updateDynamic("featureFlags")(featureFlags.asInstanceOf[js.Any])
@@ -303,29 +301,29 @@ object Config {
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
     if (logOutput != null) __obj.updateDynamic("logOutput")(logOutput.asInstanceOf[js.Any])
-    if (maxInstances != null) __obj.updateDynamic("maxInstances")(maxInstances.asInstanceOf[js.Any])
-    if (maxInstancesPerCapability != null) __obj.updateDynamic("maxInstancesPerCapability")(maxInstancesPerCapability.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxInstances)) __obj.updateDynamic("maxInstances")(maxInstances.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxInstancesPerCapability)) __obj.updateDynamic("maxInstancesPerCapability")(maxInstancesPerCapability.get.asInstanceOf[js.Any])
     if (mochaOpts != null) __obj.updateDynamic("mochaOpts")(mochaOpts.asInstanceOf[js.Any])
     if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete.asInstanceOf[js.Any])
     if (onPrepare != null) __obj.updateDynamic("onPrepare")(onPrepare.asInstanceOf[js.Any])
     if (onReload != null) __obj.updateDynamic("onReload")(js.Any.fromFunction2(onReload))
     if (outputDir != null) __obj.updateDynamic("outputDir")(outputDir.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
     if (reporters != null) __obj.updateDynamic("reporters")(reporters.asInstanceOf[js.Any])
     if (runner != null) __obj.updateDynamic("runner")(runner.asInstanceOf[js.Any])
     if (services != null) __obj.updateDynamic("services")(services.asInstanceOf[js.Any])
-    if (specFileRetries != null) __obj.updateDynamic("specFileRetries")(specFileRetries.asInstanceOf[js.Any])
-    if (specFileRetryAttempts != null) __obj.updateDynamic("specFileRetryAttempts")(specFileRetryAttempts.asInstanceOf[js.Any])
+    if (!js.isUndefined(specFileRetries)) __obj.updateDynamic("specFileRetries")(specFileRetries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(specFileRetryAttempts)) __obj.updateDynamic("specFileRetryAttempts")(specFileRetryAttempts.get.asInstanceOf[js.Any])
     if (specs != null) __obj.updateDynamic("specs")(specs.asInstanceOf[js.Any])
     if (suites != null) __obj.updateDynamic("suites")(suites.asInstanceOf[js.Any])
     if (transformRequest != null) __obj.updateDynamic("transformRequest")(js.Any.fromFunction1(transformRequest))
     if (transformResponse != null) __obj.updateDynamic("transformResponse")(js.Any.fromFunction2(transformResponse))
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
-    if (waitforInterval != null) __obj.updateDynamic("waitforInterval")(waitforInterval.asInstanceOf[js.Any])
-    if (waitforTimeout != null) __obj.updateDynamic("waitforTimeout")(waitforTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitforInterval)) __obj.updateDynamic("waitforInterval")(waitforInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitforTimeout)) __obj.updateDynamic("waitforTimeout")(waitforTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

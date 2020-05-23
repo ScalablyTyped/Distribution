@@ -58,13 +58,9 @@ object ExponentFileSystemModule {
     stopObserving: () => Unit = null,
     writeAsStringAsync: /* repeated */ js.Any => js.Promise[js.Any] = null
   ): ExponentFileSystemModule = {
-    val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction1(addListener), name = name.asInstanceOf[js.Any], removeListeners = js.Any.fromFunction1(removeListeners))
-    if (bundleDirectory != null) __obj.updateDynamic("bundleDirectory")(bundleDirectory.asInstanceOf[js.Any])
-    if (bundledAssets != null) __obj.updateDynamic("bundledAssets")(bundledAssets.asInstanceOf[js.Any])
-    if (cacheDirectory != null) __obj.updateDynamic("cacheDirectory")(cacheDirectory.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction1(addListener), name = name.asInstanceOf[js.Any], removeListeners = js.Any.fromFunction1(removeListeners), bundleDirectory = bundleDirectory.asInstanceOf[js.Any], bundledAssets = bundledAssets.asInstanceOf[js.Any], cacheDirectory = cacheDirectory.asInstanceOf[js.Any], documentDirectory = documentDirectory.asInstanceOf[js.Any])
     if (copyAsync != null) __obj.updateDynamic("copyAsync")(js.Any.fromFunction1(copyAsync))
     if (deleteAsync != null) __obj.updateDynamic("deleteAsync")(js.Any.fromFunction1(deleteAsync))
-    if (documentDirectory != null) __obj.updateDynamic("documentDirectory")(documentDirectory.asInstanceOf[js.Any])
     if (downloadAsync != null) __obj.updateDynamic("downloadAsync")(js.Any.fromFunction1(downloadAsync))
     if (downloadResumablePauseAsync != null) __obj.updateDynamic("downloadResumablePauseAsync")(js.Any.fromFunction1(downloadResumablePauseAsync))
     if (downloadResumableStartAsync != null) __obj.updateDynamic("downloadResumableStartAsync")(js.Any.fromFunction1(downloadResumableStartAsync))

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.SortField")
 @js.native
-class SortField protected () extends js.Object {
+trait SortField extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
   var CustomOrder: js.Any = js.native

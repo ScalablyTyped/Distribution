@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,14 +15,6 @@ object Type extends js.Object {
   
   @js.native
   sealed trait Slide extends Type
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Type with Double] = js.native
-  /* 0 */ @js.native
-  object Overlay extends TopLevel[Overlay with Double]
-  
-  /* 1 */ @js.native
-  object Slide extends TopLevel[Slide with Double]
   
 }
 

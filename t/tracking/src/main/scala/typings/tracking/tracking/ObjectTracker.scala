@@ -7,15 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Object tracker utility.
   */
-@JSGlobal("tracking.ObjectTracker")
 @js.native
-/**
-  * Create a new Object Tracker.
-  * @param classifiers Optional object classifiers to track.
-  */
-class ObjectTracker () extends Tracker {
-  def this(classifiers: String) = this()
-  def this(classifiers: js.Array[String]) = this()
+trait ObjectTracker extends Tracker {
   /** Gets the tracker HAAR classifiers. */
   def getClassifiers(): js.Array[Double] = js.native
   /** Gets the edges density value. */

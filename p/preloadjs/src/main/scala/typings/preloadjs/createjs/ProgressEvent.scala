@@ -4,14 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("createjs.ProgressEvent")
-@js.native
-class ProgressEvent protected () extends js.Object {
-  def this(loaded: Double) = this()
-  def this(loaded: Double, total: Double) = this()
+trait ProgressEvent extends js.Object {
   // properties
-  var loaded: Double = js.native
-  var progress: Double = js.native
-  var total: Double = js.native
+  var loaded: Double
+  var progress: Double
+  var total: Double
+}
+
+object ProgressEvent {
+  @scala.inline
+  def apply(loaded: Double, progress: Double, total: Double): ProgressEvent = {
+    val __obj = js.Dynamic.literal(loaded = loaded.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ProgressEvent]
+  }
 }
 

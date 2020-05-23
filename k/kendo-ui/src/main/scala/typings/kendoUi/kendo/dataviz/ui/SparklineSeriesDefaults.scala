@@ -27,12 +27,12 @@ object SparklineSeriesDefaults {
     bar: js.Any = null,
     border: SparklineSeriesDefaultsBorder = null,
     column: js.Any = null,
-    gap: Int | Double = null,
+    gap: js.UndefOr[Double] = js.undefined,
     labels: SparklineSeriesDefaultsLabels = null,
     line: js.Any = null,
     overlay: js.Any = null,
     pie: js.Any = null,
-    spacing: Int | Double = null,
+    spacing: js.UndefOr[Double] = js.undefined,
     stack: Boolean | SparklineSeriesDefaultsStack = null,
     tooltip: SparklineSeriesDefaultsTooltip = null,
     `type`: String = null
@@ -42,12 +42,12 @@ object SparklineSeriesDefaults {
     if (bar != null) __obj.updateDynamic("bar")(bar.asInstanceOf[js.Any])
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
+    if (!js.isUndefined(gap)) __obj.updateDynamic("gap")(gap.get.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
     if (pie != null) __obj.updateDynamic("pie")(pie.asInstanceOf[js.Any])
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(spacing)) __obj.updateDynamic("spacing")(spacing.get.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

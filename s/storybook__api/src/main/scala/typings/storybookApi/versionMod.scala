@@ -1,6 +1,5 @@
 package typings.storybookApi
 
-import typings.storybookApi.storybookApiStrings.`5Dot3Dot18`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@storybook/api/dist/version", JSImport.Namespace)
 @js.native
 object versionMod extends js.Object {
-  val version: `5Dot3Dot18` = js.native
+  val version: /* "5.3.18" */ String = js.native
 }
 

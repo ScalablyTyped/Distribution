@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.Spreadsheet
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,23 +29,6 @@ object AutoFillOptions extends js.Object {
   ///Specifies the FlashFill property in AutoFillOptions.
   @js.native
   sealed trait FlashFill extends AutoFillOptions
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AutoFillOptions with Double] = js.native
-  /* 0 */ @js.native
-  object CopyCells extends TopLevel[CopyCells with Double]
-  
-  /* 2 */ @js.native
-  object FillFormattingOnly extends TopLevel[FillFormattingOnly with Double]
-  
-  /* 1 */ @js.native
-  object FillSeries extends TopLevel[FillSeries with Double]
-  
-  /* 3 */ @js.native
-  object FillWithoutFormatting extends TopLevel[FillWithoutFormatting with Double]
-  
-  /* 4 */ @js.native
-  object FlashFill extends TopLevel[FlashFill with Double]
   
 }
 

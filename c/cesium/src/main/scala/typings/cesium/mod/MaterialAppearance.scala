@@ -1,7 +1,7 @@
 package typings.cesium.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.AnonFaceForward
+import typings.cesium.anon.FaceForward
 import typings.cesium.mod.MaterialAppearance.MaterialSupport
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "MaterialAppearance")
 @js.native
 class MaterialAppearance () extends Appearance {
-  def this(options: AnonFaceForward) = this()
+  def this(options: FaceForward) = this()
   val faceForward: Boolean = js.native
   val flat: Boolean = js.native
   val materialSupport: MaterialSupport = js.native

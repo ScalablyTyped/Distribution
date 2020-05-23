@@ -28,10 +28,10 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (branch != null) __obj.updateDynamic("branch")(branch.asInstanceOf[js.Any])
     if (cacheDir != null) __obj.updateDynamic("cacheDir")(cacheDir.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (!js.isUndefined(push)) __obj.updateDynamic("push")(push.asInstanceOf[js.Any])
+    if (!js.isUndefined(push)) __obj.updateDynamic("push")(push.get.asInstanceOf[js.Any])
     if (remoteUrl != null) __obj.updateDynamic("remoteUrl")(remoteUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

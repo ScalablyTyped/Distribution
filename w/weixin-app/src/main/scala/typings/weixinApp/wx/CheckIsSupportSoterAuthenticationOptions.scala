@@ -1,6 +1,6 @@
 package typings.weixinApp.wx
 
-import typings.weixinApp.AnonSupportMode
+import typings.weixinApp.anon.SupportMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait CheckIsSupportSoterAuthenticationOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")
-  var success_CheckIsSupportSoterAuthenticationOptions: js.UndefOr[js.Function1[/* res */ AnonSupportMode, Unit]] = js.undefined
+  var success_CheckIsSupportSoterAuthenticationOptions: js.UndefOr[js.Function1[/* res */ SupportMode, Unit]] = js.undefined
 }
 
 object CheckIsSupportSoterAuthenticationOptions {
@@ -16,7 +16,7 @@ object CheckIsSupportSoterAuthenticationOptions {
   def apply(
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
-    success: /* res */ AnonSupportMode => Unit = null
+    success: /* res */ SupportMode => Unit = null
   ): CheckIsSupportSoterAuthenticationOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))

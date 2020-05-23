@@ -15,14 +15,16 @@ trait CopyDirOptions extends js.Object {
 object CopyDirOptions {
   @scala.inline
   def apply(
-    filter: (/* file */ String, /* stat */ Stats) => Boolean = null,
-    isUseHardLink: /* file */ String => Boolean = null,
-    transformer: /* file */ String => (js.Promise[Null | String | Buffer | CopyFileTransformer]) | Null | String | Buffer | CopyFileTransformer = null
+    filter: js.UndefOr[Null | ((/* file */ String, /* stat */ Stats) => Boolean)] = js.undefined,
+    isUseHardLink: js.UndefOr[Null | (/* file */ String => Boolean)] = js.undefined,
+    transformer: js.UndefOr[
+      Null | (/* file */ String => (js.Promise[Null | String | Buffer | CopyFileTransformer]) | Null | String | Buffer | CopyFileTransformer)
+    ] = js.undefined
   ): CopyDirOptions = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction2(filter))
-    if (isUseHardLink != null) __obj.updateDynamic("isUseHardLink")(js.Any.fromFunction1(isUseHardLink))
-    if (transformer != null) __obj.updateDynamic("transformer")(js.Any.fromFunction1(transformer))
+    if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(if (filter != null) js.Any.fromFunction2(filter.asInstanceOf[(/* file */ String, /* stat */ Stats) => Boolean]) else null)
+    if (!js.isUndefined(isUseHardLink)) __obj.updateDynamic("isUseHardLink")(if (isUseHardLink != null) js.Any.fromFunction1(isUseHardLink.asInstanceOf[/* file */ String => Boolean]) else null)
+    if (!js.isUndefined(transformer)) __obj.updateDynamic("transformer")(if (transformer != null) js.Any.fromFunction1(transformer.asInstanceOf[/* file */ String => (js.Promise[Null | String | Buffer | CopyFileTransformer]) | Null | String | Buffer | CopyFileTransformer]) else null)
     __obj.asInstanceOf[CopyDirOptions]
   }
 }

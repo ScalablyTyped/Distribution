@@ -24,21 +24,21 @@ trait FileEncryptionInfo extends js.Object {
 object FileEncryptionInfo {
   @scala.inline
   def apply(
-    encryptionKey: Int | Double = null,
-    fileDigest: Int | Double = null,
+    encryptionKey: js.UndefOr[Double] = js.undefined,
+    fileDigest: js.UndefOr[Double] = js.undefined,
     fileDigestAlgorithm: String = null,
-    initializationVector: Int | Double = null,
-    mac: Int | Double = null,
-    macKey: Int | Double = null,
+    initializationVector: js.UndefOr[Double] = js.undefined,
+    mac: js.UndefOr[Double] = js.undefined,
+    macKey: js.UndefOr[Double] = js.undefined,
     profileIdentifier: String = null
   ): FileEncryptionInfo = {
     val __obj = js.Dynamic.literal()
-    if (encryptionKey != null) __obj.updateDynamic("encryptionKey")(encryptionKey.asInstanceOf[js.Any])
-    if (fileDigest != null) __obj.updateDynamic("fileDigest")(fileDigest.asInstanceOf[js.Any])
+    if (!js.isUndefined(encryptionKey)) __obj.updateDynamic("encryptionKey")(encryptionKey.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fileDigest)) __obj.updateDynamic("fileDigest")(fileDigest.get.asInstanceOf[js.Any])
     if (fileDigestAlgorithm != null) __obj.updateDynamic("fileDigestAlgorithm")(fileDigestAlgorithm.asInstanceOf[js.Any])
-    if (initializationVector != null) __obj.updateDynamic("initializationVector")(initializationVector.asInstanceOf[js.Any])
-    if (mac != null) __obj.updateDynamic("mac")(mac.asInstanceOf[js.Any])
-    if (macKey != null) __obj.updateDynamic("macKey")(macKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(initializationVector)) __obj.updateDynamic("initializationVector")(initializationVector.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mac)) __obj.updateDynamic("mac")(mac.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(macKey)) __obj.updateDynamic("macKey")(macKey.get.asInstanceOf[js.Any])
     if (profileIdentifier != null) __obj.updateDynamic("profileIdentifier")(profileIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileEncryptionInfo]
   }

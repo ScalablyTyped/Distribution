@@ -40,18 +40,18 @@ trait HistogramViewModelProperties extends js.Object {
 object HistogramViewModelProperties {
   @scala.inline
   def apply(
-    average: Int | Double = null,
+    average: js.UndefOr[Double] = js.undefined,
     bins: js.Array[Bin] = null,
     labelFormatFunction: (/* value */ Double, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => String = null,
-    max: Int | Double = null,
-    min: Int | Double = null
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined
   ): HistogramViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (average != null) __obj.updateDynamic("average")(average.asInstanceOf[js.Any])
+    if (!js.isUndefined(average)) __obj.updateDynamic("average")(average.get.asInstanceOf[js.Any])
     if (bins != null) __obj.updateDynamic("bins")(bins.asInstanceOf[js.Any])
     if (labelFormatFunction != null) __obj.updateDynamic("labelFormatFunction")(js.Any.fromFunction3(labelFormatFunction))
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistogramViewModelProperties]
   }
 }

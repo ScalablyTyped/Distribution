@@ -12,9 +12,9 @@ trait IConsensusPeerInfo extends js.Object {
 
 object IConsensusPeerInfo {
   @scala.inline
-  def apply(peerId: Uint8Array = null): IConsensusPeerInfo = {
+  def apply(peerId: js.UndefOr[Null | Uint8Array] = js.undefined): IConsensusPeerInfo = {
     val __obj = js.Dynamic.literal()
-    if (peerId != null) __obj.updateDynamic("peerId")(peerId.asInstanceOf[js.Any])
+    if (!js.isUndefined(peerId)) __obj.updateDynamic("peerId")(peerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConsensusPeerInfo]
   }
 }

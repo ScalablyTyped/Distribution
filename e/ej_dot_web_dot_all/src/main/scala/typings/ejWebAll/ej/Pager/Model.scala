@@ -99,7 +99,7 @@ object Model {
     click: /* e */ ClickEventArgs => Unit = null,
     create: /* e */ CreateEventArgs => Unit = null,
     cssClass: String = null,
-    currentPage: Int | Double = null,
+    currentPage: js.UndefOr[Double] = js.undefined,
     customText: String = null,
     destroy: /* e */ DestroyEventArgs => Unit = null,
     enableExternalMessage: js.UndefOr[Boolean] = js.undefined,
@@ -109,40 +109,40 @@ object Model {
     externalMessage: String = null,
     isResponsive: js.UndefOr[Boolean] = js.undefined,
     locale: String = null,
-    pageCount: Int | Double = null,
-    pageSize: Int | Double = null,
+    pageCount: js.UndefOr[Double] = js.undefined,
+    pageSize: js.UndefOr[Double] = js.undefined,
     pageSizeList: js.Array[_] = null,
     pageSizeMessage: String = null,
     pageSizeSelected: /* e */ PageSizeSelectedEventArgs => Unit = null,
     showPageInfo: js.UndefOr[Boolean] = js.undefined,
     template: String = null,
-    totalPages: Int | Double = null,
-    totalRecordsCount: Int | Double = null
+    totalPages: js.UndefOr[Double] = js.undefined,
+    totalRecordsCount: js.UndefOr[Double] = js.undefined
   ): Model = {
     val __obj = js.Dynamic.literal()
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentPage)) __obj.updateDynamic("currentPage")(currentPage.get.asInstanceOf[js.Any])
     if (customText != null) __obj.updateDynamic("customText")(customText.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
-    if (!js.isUndefined(enableExternalMessage)) __obj.updateDynamic("enableExternalMessage")(enableExternalMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableQueryString)) __obj.updateDynamic("enableQueryString")(enableQueryString.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableExternalMessage)) __obj.updateDynamic("enableExternalMessage")(enableExternalMessage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableQueryString)) __obj.updateDynamic("enableQueryString")(enableQueryString.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (externalMessage != null) __obj.updateDynamic("externalMessage")(externalMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.get.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (pageCount != null) __obj.updateDynamic("pageCount")(pageCount.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageCount)) __obj.updateDynamic("pageCount")(pageCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (pageSizeList != null) __obj.updateDynamic("pageSizeList")(pageSizeList.asInstanceOf[js.Any])
     if (pageSizeMessage != null) __obj.updateDynamic("pageSizeMessage")(pageSizeMessage.asInstanceOf[js.Any])
     if (pageSizeSelected != null) __obj.updateDynamic("pageSizeSelected")(js.Any.fromFunction1(pageSizeSelected))
-    if (!js.isUndefined(showPageInfo)) __obj.updateDynamic("showPageInfo")(showPageInfo.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPageInfo)) __obj.updateDynamic("showPageInfo")(showPageInfo.get.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (totalPages != null) __obj.updateDynamic("totalPages")(totalPages.asInstanceOf[js.Any])
-    if (totalRecordsCount != null) __obj.updateDynamic("totalRecordsCount")(totalRecordsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalPages)) __obj.updateDynamic("totalPages")(totalPages.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalRecordsCount)) __obj.updateDynamic("totalRecordsCount")(totalRecordsCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
 }

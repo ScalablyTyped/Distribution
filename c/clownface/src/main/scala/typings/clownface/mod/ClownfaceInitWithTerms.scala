@@ -19,7 +19,7 @@ trait ClownfaceInitWithTerms[T /* <: Term | js.Array[Term] */, D /* <: DatasetCo
 
 object ClownfaceInitWithTerms {
   @scala.inline
-  def apply[T /* <: Term | js.Array[Term] */, D /* <: DatasetCore[Quad, Quad] */](term: T, _context: js.Array[Context[D, Term]] = null, dataset: D = null, graph: QuadGraph = null): ClownfaceInitWithTerms[T, D] = {
+  def apply[T, D](term: T, _context: js.Array[Context[D, Term]] = null, dataset: D = null, graph: QuadGraph = null): ClownfaceInitWithTerms[T, D] = {
     val __obj = js.Dynamic.literal(term = term.asInstanceOf[js.Any])
     if (_context != null) __obj.updateDynamic("_context")(_context.asInstanceOf[js.Any])
     if (dataset != null) __obj.updateDynamic("dataset")(dataset.asInstanceOf[js.Any])

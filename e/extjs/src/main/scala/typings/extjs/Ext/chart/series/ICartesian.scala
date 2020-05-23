@@ -12,10 +12,10 @@ trait ICartesian extends ISeries {
   /** [Config Option] (String/String[]) */
   var axis: js.UndefOr[js.Any] = js.undefined
   /** [Method] Iterates over a given record s values for each of this series s yFields executing a given function for each value
-  		* @param record Ext.data.Model
-  		* @param fn Function
-  		* @param scope Object
-  		*/
+    * @param record Ext.data.Model
+    * @param fn Function
+    * @param scope Object
+    */
   var eachYValue: js.UndefOr[
     js.Function3[
       /* record */ js.UndefOr[IModel], 
@@ -25,20 +25,20 @@ trait ICartesian extends ISeries {
     ]
   ] = js.undefined
   /** [Method] Calculate the min and max values for this series s xField
-  		* @returns Array [min, max]
-  		*/
+    * @returns Array [min, max]
+    */
   var getMinMaxXValues: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Calculate the min and max values for this series s yField s
-  		* @returns Array [min, max]
-  		*/
+    * @returns Array [min, max]
+    */
   var getMinMaxYValues: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns an array of functions each of which returns the value of the yField corresponding to function s index in the
-  		* @returns Array array of accessor functions
-  		*/
+    * @returns Array array of accessor functions
+    */
   var getYValueAccessors: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the number of yField values taking into account fields combined via legend drag drop
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getYValueCount: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Config Option] (String) */
   var xField: js.UndefOr[String] = js.undefined
@@ -154,7 +154,7 @@ object ICartesian {
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (isExcluded != null) __obj.updateDynamic("isExcluded")(js.Any.fromFunction1(isExcluded))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
@@ -174,8 +174,8 @@ object ICartesian {
     if (setTitle != null) __obj.updateDynamic("setTitle")(js.Any.fromFunction2(setTitle))
     if (shadowAttributes != null) __obj.updateDynamic("shadowAttributes")(shadowAttributes.asInstanceOf[js.Any])
     if (showAll != null) __obj.updateDynamic("showAll")(js.Any.fromFunction0(showAll))
-    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction1(suspendEvents))

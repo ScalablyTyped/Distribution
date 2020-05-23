@@ -29,13 +29,13 @@ object Auth0LockAuthOptions {
   ): Auth0LockAuthOptions = {
     val __obj = js.Dynamic.literal()
     if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoParseHash)) __obj.updateDynamic("autoParseHash")(autoParseHash.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoParseHash)) __obj.updateDynamic("autoParseHash")(autoParseHash.get.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (!js.isUndefined(redirect)) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
+    if (!js.isUndefined(redirect)) __obj.updateDynamic("redirect")(redirect.get.asInstanceOf[js.Any])
     if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl.asInstanceOf[js.Any])
     if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode.asInstanceOf[js.Any])
     if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
-    if (!js.isUndefined(sso)) __obj.updateDynamic("sso")(sso.asInstanceOf[js.Any])
+    if (!js.isUndefined(sso)) __obj.updateDynamic("sso")(sso.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Auth0LockAuthOptions]
   }
 }

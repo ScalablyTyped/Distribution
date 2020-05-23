@@ -1,5 +1,6 @@
 package typings.jose
 
+import typings.jose.mod.Curves
 import typings.jose.mod.ECCurve
 import typings.jose.mod.JWTProfiles
 import typings.jose.mod.OKPCurve
@@ -62,31 +63,45 @@ object joseStrings {
   sealed trait ERR_JWT_MALFORMED extends js.Object
   
   @js.native
-  sealed trait Ed25519 extends OKPCurve
+  sealed trait Ed25519
+    extends Curves
+       with OKPCurve
   
   @js.native
-  sealed trait Ed448 extends OKPCurve
+  sealed trait Ed448
+    extends Curves
+       with OKPCurve
   
   @js.native
   sealed trait OKP extends keyType
   
   @js.native
-  sealed trait `P-256` extends ECCurve
+  sealed trait `P-256`
+    extends Curves
+       with ECCurve
   
   @js.native
-  sealed trait `P-384` extends ECCurve
+  sealed trait `P-384`
+    extends Curves
+       with ECCurve
   
   @js.native
-  sealed trait `P-521` extends ECCurve
+  sealed trait `P-521`
+    extends Curves
+       with ECCurve
   
   @js.native
   sealed trait RSA extends keyType
   
   @js.native
-  sealed trait X25519 extends OKPCurve
+  sealed trait X25519
+    extends Curves
+       with OKPCurve
   
   @js.native
-  sealed trait X448 extends OKPCurve
+  sealed trait X448
+    extends Curves
+       with OKPCurve
   
   @js.native
   sealed trait atPlussignJWT extends JWTProfiles
@@ -102,6 +117,9 @@ object joseStrings {
   
   @js.native
   sealed trait deriveKey extends keyOperation
+  
+  @js.native
+  sealed trait embedded extends js.Object
   
   @js.native
   sealed trait enc extends use
@@ -147,7 +165,9 @@ object joseStrings {
        with keyObjectTypes
   
   @js.native
-  sealed trait secp256k1 extends ECCurve
+  sealed trait secp256k1
+    extends Curves
+       with ECCurve
   
   @js.native
   sealed trait secret extends keyObjectTypes
@@ -233,6 +253,8 @@ object joseStrings {
   def decrypt: decrypt = "decrypt".asInstanceOf[decrypt]
   @scala.inline
   def deriveKey: deriveKey = "deriveKey".asInstanceOf[deriveKey]
+  @scala.inline
+  def embedded: embedded = "embedded".asInstanceOf[embedded]
   @scala.inline
   def enc: enc = "enc".asInstanceOf[enc]
   @scala.inline

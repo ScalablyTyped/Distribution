@@ -68,17 +68,17 @@ object IInspectorOptions {
     showInspector: js.UndefOr[Boolean] = js.undefined
   ): IInspectorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(embedMode)) __obj.updateDynamic("embedMode")(embedMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableClose)) __obj.updateDynamic("enableClose")(enableClose.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePopup)) __obj.updateDynamic("enablePopup")(enablePopup.asInstanceOf[js.Any])
+    if (!js.isUndefined(embedMode)) __obj.updateDynamic("embedMode")(embedMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableClose)) __obj.updateDynamic("enableClose")(enableClose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePopup)) __obj.updateDynamic("enablePopup")(enablePopup.get.asInstanceOf[js.Any])
     if (explorerExtensibility != null) __obj.updateDynamic("explorerExtensibility")(explorerExtensibility.asInstanceOf[js.Any])
     if (globalRoot != null) __obj.updateDynamic("globalRoot")(globalRoot.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleResize)) __obj.updateDynamic("handleResize")(handleResize.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleResize)) __obj.updateDynamic("handleResize")(handleResize.get.asInstanceOf[js.Any])
     if (initialTab != null) __obj.updateDynamic("initialTab")(initialTab.asInstanceOf[js.Any])
     if (inspectorURL != null) __obj.updateDynamic("inspectorURL")(inspectorURL.asInstanceOf[js.Any])
-    if (!js.isUndefined(overlay)) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
-    if (!js.isUndefined(showExplorer)) __obj.updateDynamic("showExplorer")(showExplorer.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInspector)) __obj.updateDynamic("showInspector")(showInspector.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlay)) __obj.updateDynamic("overlay")(overlay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showExplorer)) __obj.updateDynamic("showExplorer")(showExplorer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInspector)) __obj.updateDynamic("showInspector")(showInspector.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInspectorOptions]
   }
 }

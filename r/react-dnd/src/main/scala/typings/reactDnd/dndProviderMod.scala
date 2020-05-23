@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object dndProviderMod extends js.Object {
   /* Rewritten from type alias, can be one of: 
-    - typings.reactDnd.AnonManager
-    - typings.reactDnd.AnonBackend[BackendContext, BackendOptions]
+    - typings.reactDnd.anon.Manager
+    - typings.reactDnd.anon.Backend[BackendContext, BackendOptions]
   */
   trait DndProviderProps[BackendContext, BackendOptions] extends js.Object
   

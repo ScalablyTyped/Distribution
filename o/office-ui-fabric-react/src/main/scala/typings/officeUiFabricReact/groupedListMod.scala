@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.anon.Compact
 import typings.officeUiFabricReact.groupFooterTypesMod.IGroupFooterProps
 import typings.officeUiFabricReact.groupHeaderTypesMod.IGroupHeaderProps
 import typings.officeUiFabricReact.groupShowAllTypesMod.IGroupShowAllProps
@@ -44,7 +45,7 @@ object groupedListMod extends js.Object {
   /* static members */
   @js.native
   object GroupedListBase extends js.Object {
-    var defaultProps: AnonCompact = js.native
+    var defaultProps: Compact = js.native
   }
   
 }

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object of extends js.Object {
   /**
-  	 * This is an alias for Parsimmon.succeed(result).
-  	 */
+    * This is an alias for Parsimmon.succeed(result).
+    */
   def apply[U](result: U): Parser[U] = js.native
 }
 

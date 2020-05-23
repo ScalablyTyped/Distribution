@@ -18,12 +18,17 @@ trait PortalProps
 
 object PortalProps {
   @scala.inline
-  def apply(children: ReactNode = null, key: Key = null, node: Element = null, ref: LegacyRef[js.Any] = null): PortalProps = {
+  def apply(
+    children: ReactNode = null,
+    key: Key = null,
+    node: js.UndefOr[Null | Element] = js.undefined,
+    ref: js.UndefOr[Null | LegacyRef[js.Any]] = js.undefined
+  ): PortalProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(node)) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortalProps]
   }
 }

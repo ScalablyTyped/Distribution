@@ -5,12 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Outlook.OlkInfoBar")
-@js.native
-class OlkInfoBar protected () extends js.Object {
-  var MouseIcon: StdPicture = js.native
-  var MousePointer: OlMousePointer = js.native
+trait OlkInfoBar extends js.Object {
+  var MouseIcon: StdPicture
+  var MousePointer: OlMousePointer
   @JSName("Outlook.OlkInfoBar_typekey")
-  var OutlookDotOlkInfoBar_typekey: OlkInfoBar = js.native
+  var OutlookDotOlkInfoBar_typekey: OlkInfoBar
+}
+
+object OlkInfoBar {
+  @scala.inline
+  def apply(MouseIcon: StdPicture, MousePointer: OlMousePointer, OutlookDotOlkInfoBar_typekey: OlkInfoBar): OlkInfoBar = {
+    val __obj = js.Dynamic.literal(MouseIcon = MouseIcon.asInstanceOf[js.Any], MousePointer = MousePointer.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook.OlkInfoBar_typekey")(OutlookDotOlkInfoBar_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OlkInfoBar]
+  }
 }
 

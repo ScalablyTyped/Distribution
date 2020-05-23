@@ -4,18 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.Xbox360Pad")
 @js.native
-class Xbox360Pad protected () extends Gamepad {
-  /**
-    * Creates a new XBox360 gamepad object
-    * @param id defines the id of this gamepad
-    * @param index defines its index
-    * @param gamepad defines the internal HTML gamepad object
-    * @param xboxOne defines if it is a XBox One gamepad
-    */
-  def this(id: String, index: Double, gamepad: js.Any) = this()
-  def this(id: String, index: Double, gamepad: js.Any, xboxOne: Boolean) = this()
+trait Xbox360Pad extends Gamepad {
   var _buttonA: js.Any = js.native
   var _buttonB: js.Any = js.native
   var _buttonBack: js.Any = js.native

@@ -23,7 +23,7 @@ object AzureTableStoreOptions {
     errorLogger: /* message */ String => Unit = null,
     logger: /* message */ String => Unit = null,
     overrideCron: String = null,
-    sessionTimeOut: Int | Double = null,
+    sessionTimeOut: js.UndefOr[Double] = js.undefined,
     storageAccount: String = null,
     table: String = null
   ): AzureTableStoreOptions = {
@@ -32,7 +32,7 @@ object AzureTableStoreOptions {
     if (errorLogger != null) __obj.updateDynamic("errorLogger")(js.Any.fromFunction1(errorLogger))
     if (logger != null) __obj.updateDynamic("logger")(js.Any.fromFunction1(logger))
     if (overrideCron != null) __obj.updateDynamic("overrideCron")(overrideCron.asInstanceOf[js.Any])
-    if (sessionTimeOut != null) __obj.updateDynamic("sessionTimeOut")(sessionTimeOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(sessionTimeOut)) __obj.updateDynamic("sessionTimeOut")(sessionTimeOut.get.asInstanceOf[js.Any])
     if (storageAccount != null) __obj.updateDynamic("storageAccount")(storageAccount.asInstanceOf[js.Any])
     if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     __obj.asInstanceOf[AzureTableStoreOptions]

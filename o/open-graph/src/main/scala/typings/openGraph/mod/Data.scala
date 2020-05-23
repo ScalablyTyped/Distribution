@@ -1,7 +1,7 @@
 package typings.openGraph.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.openGraph.AnonAlternate
+import typings.openGraph.anon.Alternate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ trait Data
   /** An image URL which should represent your object within the graph. */
   var image: js.UndefOr[String | js.Array[String] | ImageVideoMetadata] = js.undefined
   /** The locale these tags are marked up in. Of the format `language_TERRITORY`. Default is `en_US`. */
-  var locale: js.UndefOr[String | js.Array[String] | AnonAlternate] = js.undefined
+  var locale: js.UndefOr[String | js.Array[String] | Alternate] = js.undefined
   /** If your object is part of a larger web site, the name which should be displayed for the overall site. e.g., "IMDb". */
   var site_name: js.UndefOr[String | js.Array[String]] = js.undefined
   /** The title of your object as it should appear within the graph, e.g., "The Rock". */
@@ -42,7 +42,7 @@ object Data {
     description: String | js.Array[String] = null,
     determiner: String | js.Array[String] = null,
     image: String | js.Array[String] | ImageVideoMetadata = null,
-    locale: String | js.Array[String] | AnonAlternate = null,
+    locale: String | js.Array[String] | Alternate = null,
     site_name: String | js.Array[String] = null,
     `type`: String | js.Array[String] = null,
     url: String | js.Array[String] = null,

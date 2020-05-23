@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * The entire property bag interface available to control via Context Object
-	 */
+  * The entire property bag interface available to control via Context Object
+  */
 trait Context[TInputs] extends js.Object {
   var client: Client
   var device: Device

@@ -27,7 +27,7 @@ trait PlusPushClientInfo extends js.Object {
   /**
     * 推送服务令牌（设备唯一标识），用于标识推送信息接收者身份
     * 第三方推送服务器管理的设备唯一标识，在iOS平台此值通常与token不同；在其它平台此值通常与token值一致。
-    * 	此值与设备及应用都相关，即不同的apk/ipa安装到同一台设备上的值都不相同。
+    *     此值与设备及应用都相关，即不同的apk/ipa安装到同一台设备上的值都不相同。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/push.html](http://www.html5plus.org/doc/zh_cn/push.html)
     */

@@ -4,19 +4,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("chrome.cast.media.LoadRequest")
-@js.native
-class LoadRequest protected () extends js.Object {
-  /**
-    * @param {!chrome.cast.media.MediaInfo} mediaInfo
-    * @constructor
-    * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.LoadRequest
-    */
-  def this(mediaInfo: MediaInfo) = this()
-  var activeTrackIds: js.Array[Double] = js.native
-  var autoplay: Boolean = js.native
-  var currentTime: Double = js.native
-  var customData: js.Object = js.native
-  var media: MediaInfo = js.native
+trait LoadRequest extends js.Object {
+  var activeTrackIds: js.Array[Double]
+  var autoplay: Boolean
+  var currentTime: Double
+  var customData: js.Object
+  var media: MediaInfo
+}
+
+object LoadRequest {
+  @scala.inline
+  def apply(
+    activeTrackIds: js.Array[Double],
+    autoplay: Boolean,
+    currentTime: Double,
+    customData: js.Object,
+    media: MediaInfo
+  ): LoadRequest = {
+    val __obj = js.Dynamic.literal(activeTrackIds = activeTrackIds.asInstanceOf[js.Any], autoplay = autoplay.asInstanceOf[js.Any], currentTime = currentTime.asInstanceOf[js.Any], customData = customData.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LoadRequest]
+  }
 }
 

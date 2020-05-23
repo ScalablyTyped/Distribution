@@ -28,13 +28,13 @@ object RoleCredentials {
   @scala.inline
   def apply(
     accessKeyId: AccessKeyType = null,
-    expiration: Int | Double = null,
+    expiration: js.UndefOr[ExpirationTimestampType] = js.undefined,
     secretAccessKey: SecretAccessKeyType = null,
     sessionToken: SessionTokenType = null
   ): RoleCredentials = {
     val __obj = js.Dynamic.literal()
     if (accessKeyId != null) __obj.updateDynamic("accessKeyId")(accessKeyId.asInstanceOf[js.Any])
-    if (expiration != null) __obj.updateDynamic("expiration")(expiration.asInstanceOf[js.Any])
+    if (!js.isUndefined(expiration)) __obj.updateDynamic("expiration")(expiration.get.asInstanceOf[js.Any])
     if (secretAccessKey != null) __obj.updateDynamic("secretAccessKey")(secretAccessKey.asInstanceOf[js.Any])
     if (sessionToken != null) __obj.updateDynamic("sessionToken")(sessionToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoleCredentials]

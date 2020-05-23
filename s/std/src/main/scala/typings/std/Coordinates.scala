@@ -21,16 +21,12 @@ object Coordinates {
     accuracy: Double,
     latitude: Double,
     longitude: Double,
-    altitude: Int | Double = null,
-    altitudeAccuracy: Int | Double = null,
-    heading: Int | Double = null,
-    speed: Int | Double = null
+    altitude: Double = null.asInstanceOf[Double],
+    altitudeAccuracy: Double = null.asInstanceOf[Double],
+    heading: Double = null.asInstanceOf[Double],
+    speed: Double = null.asInstanceOf[Double]
   ): Coordinates = {
-    val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
-    if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
-    if (altitudeAccuracy != null) __obj.updateDynamic("altitudeAccuracy")(altitudeAccuracy.asInstanceOf[js.Any])
-    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], altitude = altitude.asInstanceOf[js.Any], altitudeAccuracy = altitudeAccuracy.asInstanceOf[js.Any], heading = heading.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Coordinates]
   }
 }

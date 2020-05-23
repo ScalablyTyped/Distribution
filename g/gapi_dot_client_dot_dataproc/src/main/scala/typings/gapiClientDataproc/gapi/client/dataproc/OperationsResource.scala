@@ -1,8 +1,8 @@
 package typings.gapiClientDataproc.gapi.client.dataproc
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientDataproc.AnonFilter
-import typings.gapiClientDataproc.AnonKey
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientDataproc.anon.Filter
+import typings.gapiClientDataproc.anon.Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,17 +14,17 @@ trait OperationsResource extends js.Object {
     * whether the cancellation succeeded or whether the operation completed despite cancellation. On successful cancellation, the operation is not deleted;
     * instead, it becomes an operation with an Operation.error value with a google.rpc.Status.code of 1, corresponding to Code.CANCELLED.
     */
-  def cancel(request: AnonKey): Request_[js.Object]
+  def cancel(request: Key): Request[js.Object]
   /**
     * Deletes a long-running operation. This method indicates that the client is no longer interested in the operation result. It does not cancel the
     * operation. If the server doesn't support this method, it returns google.rpc.Code.UNIMPLEMENTED.
     */
-  def delete(request: AnonKey): Request_[js.Object]
+  def delete(request: Key): Request[js.Object]
   /**
     * Gets the latest state of a long-running operation. Clients can use this method to poll the operation result at intervals as recommended by the API
     * service.
     */
-  def get(request: AnonKey): Request_[Operation]
+  def get(request: Key): Request[Operation]
   /**
     * Lists operations that match the specified filter in the request. If the server doesn't support this method, it returns UNIMPLEMENTED.NOTE: the name
     * binding allows API services to override the binding to use different resource name schemes, such as users/&#42;/operations. To override the binding, API
@@ -32,16 +32,16 @@ trait OperationsResource extends js.Object {
     * includes the operations collection id, however overriding users must ensure the name binding is the parent resource, without the operations collection
     * id.
     */
-  def list(request: AnonFilter): Request_[ListOperationsResponse]
+  def list(request: Filter): Request[ListOperationsResponse]
 }
 
 object OperationsResource {
   @scala.inline
   def apply(
-    cancel: AnonKey => Request_[js.Object],
-    delete: AnonKey => Request_[js.Object],
-    get: AnonKey => Request_[Operation],
-    list: AnonFilter => Request_[ListOperationsResponse]
+    cancel: Key => Request[js.Object],
+    delete: Key => Request[js.Object],
+    get: Key => Request[Operation],
+    list: Filter => Request[ListOperationsResponse]
   ): OperationsResource = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
     __obj.asInstanceOf[OperationsResource]

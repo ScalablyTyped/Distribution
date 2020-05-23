@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ImportSshPublicKeyResponse extends js.Object {
   /**
-    * A system-assigned unique identifier for an SFTP server.
+    * A system-assigned unique identifier for a file transfer protocol-enabled server.
     */
   var ServerId: typings.awsSdk.transferMod.ServerId = js.native
   /**
-    * This identifier is the name given to a public key by the system that was imported.
+    * The name given to a public key by the system that was imported.
     */
   var SshPublicKeyId: typings.awsSdk.transferMod.SshPublicKeyId = js.native
   /**

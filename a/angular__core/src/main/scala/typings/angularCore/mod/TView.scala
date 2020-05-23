@@ -151,6 +151,11 @@ trait TView extends js.Object {
     */
   val id: Double
   /**
+    * Indicates that there was an error before we managed to complete the first create pass of the
+    * view. This means that the view is likely corrupted and we should try to recover it.
+    */
+  var incompleteFirstPass: Boolean
+  /**
     * Pointer to the host `TNode` (not part of this TView).
     *
     * If this is a `TViewNode` for an `LViewNode`, this is an embedded view of a container.
@@ -254,6 +259,7 @@ object TView {
     firstCreatePass: Boolean,
     firstUpdatePass: Boolean,
     id: Double,
+    incompleteFirstPass: Boolean,
     staticContentQueries: Boolean,
     staticViewQueries: Boolean,
     `type`: TViewType,
@@ -278,28 +284,8 @@ object TView {
     viewHooks: HookData = null,
     viewQuery: (/* rf */ ɵRenderFlags, js.Object) => Unit = null
   ): TView = {
-    val __obj = js.Dynamic.literal(bindingStartIndex = bindingStartIndex.asInstanceOf[js.Any], blueprint = blueprint.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], expandoStartIndex = expandoStartIndex.asInstanceOf[js.Any], firstCreatePass = firstCreatePass.asInstanceOf[js.Any], firstUpdatePass = firstUpdatePass.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], staticContentQueries = staticContentQueries.asInstanceOf[js.Any], staticViewQueries = staticViewQueries.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bindingStartIndex = bindingStartIndex.asInstanceOf[js.Any], blueprint = blueprint.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], expandoStartIndex = expandoStartIndex.asInstanceOf[js.Any], firstCreatePass = firstCreatePass.asInstanceOf[js.Any], firstUpdatePass = firstUpdatePass.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], incompleteFirstPass = incompleteFirstPass.asInstanceOf[js.Any], staticContentQueries = staticContentQueries.asInstanceOf[js.Any], staticViewQueries = staticViewQueries.asInstanceOf[js.Any], cleanup = cleanup.asInstanceOf[js.Any], components = components.asInstanceOf[js.Any], consts = consts.asInstanceOf[js.Any], contentCheckHooks = contentCheckHooks.asInstanceOf[js.Any], contentHooks = contentHooks.asInstanceOf[js.Any], contentQueries = contentQueries.asInstanceOf[js.Any], destroyHooks = destroyHooks.asInstanceOf[js.Any], directiveRegistry = directiveRegistry.asInstanceOf[js.Any], expandoInstructions = expandoInstructions.asInstanceOf[js.Any], firstChild = firstChild.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], pipeRegistry = pipeRegistry.asInstanceOf[js.Any], preOrderCheckHooks = preOrderCheckHooks.asInstanceOf[js.Any], preOrderHooks = preOrderHooks.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], schemas = schemas.asInstanceOf[js.Any], template = js.Any.fromFunction2(template), viewCheckHooks = viewCheckHooks.asInstanceOf[js.Any], viewHooks = viewHooks.asInstanceOf[js.Any], viewQuery = js.Any.fromFunction2(viewQuery))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (cleanup != null) __obj.updateDynamic("cleanup")(cleanup.asInstanceOf[js.Any])
-    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
-    if (consts != null) __obj.updateDynamic("consts")(consts.asInstanceOf[js.Any])
-    if (contentCheckHooks != null) __obj.updateDynamic("contentCheckHooks")(contentCheckHooks.asInstanceOf[js.Any])
-    if (contentHooks != null) __obj.updateDynamic("contentHooks")(contentHooks.asInstanceOf[js.Any])
-    if (contentQueries != null) __obj.updateDynamic("contentQueries")(contentQueries.asInstanceOf[js.Any])
-    if (destroyHooks != null) __obj.updateDynamic("destroyHooks")(destroyHooks.asInstanceOf[js.Any])
-    if (directiveRegistry != null) __obj.updateDynamic("directiveRegistry")(directiveRegistry.asInstanceOf[js.Any])
-    if (expandoInstructions != null) __obj.updateDynamic("expandoInstructions")(expandoInstructions.asInstanceOf[js.Any])
-    if (firstChild != null) __obj.updateDynamic("firstChild")(firstChild.asInstanceOf[js.Any])
-    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
-    if (pipeRegistry != null) __obj.updateDynamic("pipeRegistry")(pipeRegistry.asInstanceOf[js.Any])
-    if (preOrderCheckHooks != null) __obj.updateDynamic("preOrderCheckHooks")(preOrderCheckHooks.asInstanceOf[js.Any])
-    if (preOrderHooks != null) __obj.updateDynamic("preOrderHooks")(preOrderHooks.asInstanceOf[js.Any])
-    if (queries != null) __obj.updateDynamic("queries")(queries.asInstanceOf[js.Any])
-    if (schemas != null) __obj.updateDynamic("schemas")(schemas.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(js.Any.fromFunction2(template))
-    if (viewCheckHooks != null) __obj.updateDynamic("viewCheckHooks")(viewCheckHooks.asInstanceOf[js.Any])
-    if (viewHooks != null) __obj.updateDynamic("viewHooks")(viewHooks.asInstanceOf[js.Any])
-    if (viewQuery != null) __obj.updateDynamic("viewQuery")(js.Any.fromFunction2(viewQuery))
     __obj.asInstanceOf[TView]
   }
 }

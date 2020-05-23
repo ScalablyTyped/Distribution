@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.csv
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -295,8 +294,4 @@ trait CSVLayer
   def queryObjectIds(query: QueryProperties, options: CSVLayerQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: Query, options: CSVLayerQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
 }
-
-@JSGlobal("__esri.CSVLayer")
-@js.native
-object CSVLayer extends TopLevel[CSVLayerConstructor]
 

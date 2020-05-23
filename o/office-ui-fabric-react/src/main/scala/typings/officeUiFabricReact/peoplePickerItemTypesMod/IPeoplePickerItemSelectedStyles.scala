@@ -20,14 +20,14 @@ object IPeoplePickerItemSelectedStyles {
   @scala.inline
   def apply(
     subComponentStyles: IPeoplePickerItemSelectedSubComponentStyles,
-    itemContent: IStyle = null,
-    removeButton: IStyle = null,
-    root: IStyle = null
+    itemContent: js.UndefOr[Null | IStyle] = js.undefined,
+    removeButton: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined
   ): IPeoplePickerItemSelectedStyles = {
     val __obj = js.Dynamic.literal(subComponentStyles = subComponentStyles.asInstanceOf[js.Any])
-    if (itemContent != null) __obj.updateDynamic("itemContent")(itemContent.asInstanceOf[js.Any])
-    if (removeButton != null) __obj.updateDynamic("removeButton")(removeButton.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemContent)) __obj.updateDynamic("itemContent")(itemContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeButton)) __obj.updateDynamic("removeButton")(removeButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPeoplePickerItemSelectedStyles]
   }
 }

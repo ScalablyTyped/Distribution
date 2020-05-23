@@ -1,6 +1,6 @@
 package typings.svgJs.mod
 
-import typings.svgJs.AnonX1
+import typings.svgJs.anon.X1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +14,6 @@ trait PointArray extends Array {
   def size(): this.type = js.native
   def size(width: Double): this.type = js.native
   def size(width: Double, height: Double): this.type = js.native
-  def toLine(): AnonX1 = js.native
+  def toLine(): X1 = js.native
 }
 

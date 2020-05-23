@@ -48,7 +48,7 @@ object Image {
     `type`: String,
     views: Double,
     width: Double,
-    account_id: Int | Double = null,
+    account_id: js.UndefOr[Double] = js.undefined,
     account_url: String = null,
     deletehash: String = null,
     gifv: String = null,
@@ -61,14 +61,14 @@ object Image {
   ): Image = {
     val __obj = js.Dynamic.literal(animated = animated.asInstanceOf[js.Any], bandwidth = bandwidth.asInstanceOf[js.Any], datetime = datetime.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], favorite = favorite.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], views = views.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (account_id != null) __obj.updateDynamic("account_id")(account_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(account_id)) __obj.updateDynamic("account_id")(account_id.get.asInstanceOf[js.Any])
     if (account_url != null) __obj.updateDynamic("account_url")(account_url.asInstanceOf[js.Any])
     if (deletehash != null) __obj.updateDynamic("deletehash")(deletehash.asInstanceOf[js.Any])
     if (gifv != null) __obj.updateDynamic("gifv")(gifv.asInstanceOf[js.Any])
-    if (!js.isUndefined(looping)) __obj.updateDynamic("looping")(looping.asInstanceOf[js.Any])
+    if (!js.isUndefined(looping)) __obj.updateDynamic("looping")(looping.get.asInstanceOf[js.Any])
     if (mp4 != null) __obj.updateDynamic("mp4")(mp4.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(nsfw)) __obj.updateDynamic("nsfw")(nsfw.asInstanceOf[js.Any])
+    if (!js.isUndefined(nsfw)) __obj.updateDynamic("nsfw")(nsfw.get.asInstanceOf[js.Any])
     if (vote != null) __obj.updateDynamic("vote")(vote.asInstanceOf[js.Any])
     if (webm != null) __obj.updateDynamic("webm")(webm.asInstanceOf[js.Any])
     __obj.asInstanceOf[Image]

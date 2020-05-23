@@ -29,13 +29,13 @@ object ClusterCoreInstanceGroup {
     instanceType: String,
     autoscalingPolicy: String = null,
     bidPrice: String = null,
-    instanceCount: Int | Double = null,
+    instanceCount: js.UndefOr[Double] = js.undefined,
     name: String = null
   ): ClusterCoreInstanceGroup = {
     val __obj = js.Dynamic.literal(ebsConfigs = ebsConfigs.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], instanceType = instanceType.asInstanceOf[js.Any])
     if (autoscalingPolicy != null) __obj.updateDynamic("autoscalingPolicy")(autoscalingPolicy.asInstanceOf[js.Any])
     if (bidPrice != null) __obj.updateDynamic("bidPrice")(bidPrice.asInstanceOf[js.Any])
-    if (instanceCount != null) __obj.updateDynamic("instanceCount")(instanceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(instanceCount)) __obj.updateDynamic("instanceCount")(instanceCount.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterCoreInstanceGroup]
   }

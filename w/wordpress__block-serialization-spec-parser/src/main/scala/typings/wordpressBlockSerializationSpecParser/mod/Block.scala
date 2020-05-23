@@ -22,8 +22,7 @@ object Block {
     innerHTML: String,
     blockName: String = null
   ): Block = {
-    val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], innerBlocks = innerBlocks.asInstanceOf[js.Any], innerContent = innerContent.asInstanceOf[js.Any], innerHTML = innerHTML.asInstanceOf[js.Any])
-    if (blockName != null) __obj.updateDynamic("blockName")(blockName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], innerBlocks = innerBlocks.asInstanceOf[js.Any], innerContent = innerContent.asInstanceOf[js.Any], innerHTML = innerHTML.asInstanceOf[js.Any], blockName = blockName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Block]
   }
 }

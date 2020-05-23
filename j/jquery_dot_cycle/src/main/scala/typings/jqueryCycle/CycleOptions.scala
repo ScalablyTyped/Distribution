@@ -177,7 +177,7 @@ object CycleOptions {
     animOut: js.Any = null,
     aspect: js.UndefOr[Boolean] = js.undefined,
     autostop: js.UndefOr[Boolean] = js.undefined,
-    autostopCount: Int | Double = null,
+    autostopCount: js.UndefOr[Double] = js.undefined,
     backwards: js.UndefOr[Boolean] = js.undefined,
     before: (/* currSlideElement */ Element, /* nextSlideElement */ Element, /* options */ CycleOptions, /* forwardFlag */ Boolean) => Unit = null,
     center: js.UndefOr[Boolean] = js.undefined,
@@ -188,7 +188,7 @@ object CycleOptions {
     continuous: js.UndefOr[Boolean] = js.undefined,
     cssAfter: js.Any = null,
     cssBefore: js.Any = null,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     easeIn: String = null,
     easeOut: String = null,
     easing: String = null,
@@ -214,7 +214,7 @@ object CycleOptions {
     random: js.UndefOr[Boolean] = js.undefined,
     randomizeEffects: js.UndefOr[Boolean] = js.undefined,
     requeueOnImageNotLoaded: js.UndefOr[Boolean] = js.undefined,
-    requeueTimeout: Int | Double = null,
+    requeueTimeout: js.UndefOr[Double] = js.undefined,
     rev: js.UndefOr[Boolean] = js.undefined,
     shuffle: js.Any = null,
     skipInitializationCallbacks: js.UndefOr[Boolean] = js.undefined,
@@ -223,9 +223,9 @@ object CycleOptions {
     speed: js.Any = null,
     speedIn: js.Any = null,
     speedOut: js.Any = null,
-    startingSlide: Int | Double = null,
+    startingSlide: js.UndefOr[Double] = js.undefined,
     sync: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     timeoutFn: (/* currSlideElement */ Element, /* nextSlideElement */ Element, /* options */ CycleOptions, /* forwardFlag */ Boolean) => Unit = null,
     updateActivePagerLink: (/* pager */ js.Any, /* currSlide */ Double, /* clsName */ String) => Unit = null,
     width: js.Any = null
@@ -233,60 +233,60 @@ object CycleOptions {
     val __obj = js.Dynamic.literal()
     if (activePagerClass != null) __obj.updateDynamic("activePagerClass")(activePagerClass.asInstanceOf[js.Any])
     if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction4(after))
-    if (!js.isUndefined(allowPagerClickBubble)) __obj.updateDynamic("allowPagerClickBubble")(allowPagerClickBubble.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowPagerClickBubble)) __obj.updateDynamic("allowPagerClickBubble")(allowPagerClickBubble.get.asInstanceOf[js.Any])
     if (animIn != null) __obj.updateDynamic("animIn")(animIn.asInstanceOf[js.Any])
     if (animOut != null) __obj.updateDynamic("animOut")(animOut.asInstanceOf[js.Any])
-    if (!js.isUndefined(aspect)) __obj.updateDynamic("aspect")(aspect.asInstanceOf[js.Any])
-    if (!js.isUndefined(autostop)) __obj.updateDynamic("autostop")(autostop.asInstanceOf[js.Any])
-    if (autostopCount != null) __obj.updateDynamic("autostopCount")(autostopCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(backwards)) __obj.updateDynamic("backwards")(backwards.asInstanceOf[js.Any])
+    if (!js.isUndefined(aspect)) __obj.updateDynamic("aspect")(aspect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autostop)) __obj.updateDynamic("autostop")(autostop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autostopCount)) __obj.updateDynamic("autostopCount")(autostopCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(backwards)) __obj.updateDynamic("backwards")(backwards.get.asInstanceOf[js.Any])
     if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction4(before))
-    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (!js.isUndefined(cleartype)) __obj.updateDynamic("cleartype")(cleartype.asInstanceOf[js.Any])
-    if (!js.isUndefined(cleartypeNoBg)) __obj.updateDynamic("cleartypeNoBg")(cleartypeNoBg.asInstanceOf[js.Any])
-    if (!js.isUndefined(containerResize)) __obj.updateDynamic("containerResize")(containerResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(containerResizeHeight)) __obj.updateDynamic("containerResizeHeight")(containerResizeHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(continuous)) __obj.updateDynamic("continuous")(continuous.asInstanceOf[js.Any])
+    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cleartype)) __obj.updateDynamic("cleartype")(cleartype.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cleartypeNoBg)) __obj.updateDynamic("cleartypeNoBg")(cleartypeNoBg.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(containerResize)) __obj.updateDynamic("containerResize")(containerResize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(containerResizeHeight)) __obj.updateDynamic("containerResizeHeight")(containerResizeHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(continuous)) __obj.updateDynamic("continuous")(continuous.get.asInstanceOf[js.Any])
     if (cssAfter != null) __obj.updateDynamic("cssAfter")(cssAfter.asInstanceOf[js.Any])
     if (cssBefore != null) __obj.updateDynamic("cssBefore")(cssBefore.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (easeIn != null) __obj.updateDynamic("easeIn")(easeIn.asInstanceOf[js.Any])
     if (easeOut != null) __obj.updateDynamic("easeOut")(easeOut.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(js.Any.fromFunction1(end))
-    if (!js.isUndefined(fastOnEvent)) __obj.updateDynamic("fastOnEvent")(fastOnEvent.asInstanceOf[js.Any])
-    if (!js.isUndefined(fit)) __obj.updateDynamic("fit")(fit.asInstanceOf[js.Any])
+    if (!js.isUndefined(fastOnEvent)) __obj.updateDynamic("fastOnEvent")(fastOnEvent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fit)) __obj.updateDynamic("fit")(fit.get.asInstanceOf[js.Any])
     if (fx != null) __obj.updateDynamic("fx")(fx.asInstanceOf[js.Any])
     if (fxFn != null) __obj.updateDynamic("fxFn")(js.Any.fromFunction5(fxFn))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(manualTrump)) __obj.updateDynamic("manualTrump")(manualTrump.asInstanceOf[js.Any])
+    if (!js.isUndefined(manualTrump)) __obj.updateDynamic("manualTrump")(manualTrump.get.asInstanceOf[js.Any])
     if (metaAttr != null) __obj.updateDynamic("metaAttr")(metaAttr.asInstanceOf[js.Any])
     if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
-    if (!js.isUndefined(nowrap)) __obj.updateDynamic("nowrap")(nowrap.asInstanceOf[js.Any])
+    if (!js.isUndefined(nowrap)) __obj.updateDynamic("nowrap")(nowrap.get.asInstanceOf[js.Any])
     if (onPagerEvent != null) __obj.updateDynamic("onPagerEvent")(js.Any.fromFunction2(onPagerEvent))
     if (onPrevNextEvent != null) __obj.updateDynamic("onPrevNextEvent")(js.Any.fromFunction3(onPrevNextEvent))
     if (pager != null) __obj.updateDynamic("pager")(pager.asInstanceOf[js.Any])
     if (pagerAnchorBuilder != null) __obj.updateDynamic("pagerAnchorBuilder")(js.Any.fromFunction2(pagerAnchorBuilder))
     if (pagerEvent != null) __obj.updateDynamic("pagerEvent")(pagerEvent.asInstanceOf[js.Any])
-    if (!js.isUndefined(pause)) __obj.updateDynamic("pause")(pause.asInstanceOf[js.Any])
-    if (!js.isUndefined(pauseOnPagerHover)) __obj.updateDynamic("pauseOnPagerHover")(pauseOnPagerHover.asInstanceOf[js.Any])
+    if (!js.isUndefined(pause)) __obj.updateDynamic("pause")(pause.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pauseOnPagerHover)) __obj.updateDynamic("pauseOnPagerHover")(pauseOnPagerHover.get.asInstanceOf[js.Any])
     if (prev != null) __obj.updateDynamic("prev")(prev.asInstanceOf[js.Any])
     if (prevNextEvent != null) __obj.updateDynamic("prevNextEvent")(prevNextEvent.asInstanceOf[js.Any])
-    if (!js.isUndefined(random)) __obj.updateDynamic("random")(random.asInstanceOf[js.Any])
-    if (!js.isUndefined(randomizeEffects)) __obj.updateDynamic("randomizeEffects")(randomizeEffects.asInstanceOf[js.Any])
-    if (!js.isUndefined(requeueOnImageNotLoaded)) __obj.updateDynamic("requeueOnImageNotLoaded")(requeueOnImageNotLoaded.asInstanceOf[js.Any])
-    if (requeueTimeout != null) __obj.updateDynamic("requeueTimeout")(requeueTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(rev)) __obj.updateDynamic("rev")(rev.asInstanceOf[js.Any])
+    if (!js.isUndefined(random)) __obj.updateDynamic("random")(random.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(randomizeEffects)) __obj.updateDynamic("randomizeEffects")(randomizeEffects.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requeueOnImageNotLoaded)) __obj.updateDynamic("requeueOnImageNotLoaded")(requeueOnImageNotLoaded.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requeueTimeout)) __obj.updateDynamic("requeueTimeout")(requeueTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rev)) __obj.updateDynamic("rev")(rev.get.asInstanceOf[js.Any])
     if (shuffle != null) __obj.updateDynamic("shuffle")(shuffle.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipInitializationCallbacks)) __obj.updateDynamic("skipInitializationCallbacks")(skipInitializationCallbacks.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipInitializationCallbacks)) __obj.updateDynamic("skipInitializationCallbacks")(skipInitializationCallbacks.get.asInstanceOf[js.Any])
     if (slideExpr != null) __obj.updateDynamic("slideExpr")(slideExpr.asInstanceOf[js.Any])
-    if (!js.isUndefined(slideResize)) __obj.updateDynamic("slideResize")(slideResize.asInstanceOf[js.Any])
+    if (!js.isUndefined(slideResize)) __obj.updateDynamic("slideResize")(slideResize.get.asInstanceOf[js.Any])
     if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
     if (speedIn != null) __obj.updateDynamic("speedIn")(speedIn.asInstanceOf[js.Any])
     if (speedOut != null) __obj.updateDynamic("speedOut")(speedOut.asInstanceOf[js.Any])
-    if (startingSlide != null) __obj.updateDynamic("startingSlide")(startingSlide.asInstanceOf[js.Any])
-    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(startingSlide)) __obj.updateDynamic("startingSlide")(startingSlide.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (timeoutFn != null) __obj.updateDynamic("timeoutFn")(js.Any.fromFunction4(timeoutFn))
     if (updateActivePagerLink != null) __obj.updateDynamic("updateActivePagerLink")(js.Any.fromFunction3(updateActivePagerLink))
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

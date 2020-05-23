@@ -25,20 +25,20 @@ trait IMessageOptions extends js.Object {
 object IMessageOptions {
   @scala.inline
   def apply(
-    DotgoogleDotapiDotresource: IResourceDescriptor = null,
-    deprecated: js.UndefOr[Boolean] = js.undefined,
-    mapEntry: js.UndefOr[Boolean] = js.undefined,
-    messageSetWireFormat: js.UndefOr[Boolean] = js.undefined,
-    noStandardDescriptorAccessor: js.UndefOr[Boolean] = js.undefined,
-    uninterpretedOption: js.Array[IUninterpretedOption] = null
+    DotgoogleDotapiDotresource: js.UndefOr[Null | IResourceDescriptor] = js.undefined,
+    deprecated: js.UndefOr[Null | Boolean] = js.undefined,
+    mapEntry: js.UndefOr[Null | Boolean] = js.undefined,
+    messageSetWireFormat: js.UndefOr[Null | Boolean] = js.undefined,
+    noStandardDescriptorAccessor: js.UndefOr[Null | Boolean] = js.undefined,
+    uninterpretedOption: js.UndefOr[Null | js.Array[IUninterpretedOption]] = js.undefined
   ): IMessageOptions = {
     val __obj = js.Dynamic.literal()
-    if (DotgoogleDotapiDotresource != null) __obj.updateDynamic(".google.api.resource")(DotgoogleDotapiDotresource.asInstanceOf[js.Any])
+    if (!js.isUndefined(DotgoogleDotapiDotresource)) __obj.updateDynamic(".google.api.resource")(DotgoogleDotapiDotresource.asInstanceOf[js.Any])
     if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
     if (!js.isUndefined(mapEntry)) __obj.updateDynamic("mapEntry")(mapEntry.asInstanceOf[js.Any])
     if (!js.isUndefined(messageSetWireFormat)) __obj.updateDynamic("messageSetWireFormat")(messageSetWireFormat.asInstanceOf[js.Any])
     if (!js.isUndefined(noStandardDescriptorAccessor)) __obj.updateDynamic("noStandardDescriptorAccessor")(noStandardDescriptorAccessor.asInstanceOf[js.Any])
-    if (uninterpretedOption != null) __obj.updateDynamic("uninterpretedOption")(uninterpretedOption.asInstanceOf[js.Any])
+    if (!js.isUndefined(uninterpretedOption)) __obj.updateDynamic("uninterpretedOption")(uninterpretedOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMessageOptions]
   }
 }

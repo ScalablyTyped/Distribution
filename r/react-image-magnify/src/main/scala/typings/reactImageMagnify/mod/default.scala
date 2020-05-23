@@ -1,7 +1,7 @@
 package typings.reactImageMagnify.mod
 
 import typings.react.mod.ReactElement
-import typings.reactImageMagnify.ReactImageMagnifyPropsRea
+import typings.reactImageMagnify.anon.ReactImageMagnifyPropsRea
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -14,13 +14,13 @@ object IDblClickZoomOptions {
   @scala.inline
   def apply(
     centering: js.UndefOr[Boolean] = js.undefined,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     useMapMargin: js.UndefOr[Boolean] = js.undefined
   ): IDblClickZoomOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(centering)) __obj.updateDynamic("centering")(centering.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMapMargin)) __obj.updateDynamic("useMapMargin")(useMapMargin.asInstanceOf[js.Any])
+    if (!js.isUndefined(centering)) __obj.updateDynamic("centering")(centering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useMapMargin)) __obj.updateDynamic("useMapMargin")(useMapMargin.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDblClickZoomOptions]
   }
 }

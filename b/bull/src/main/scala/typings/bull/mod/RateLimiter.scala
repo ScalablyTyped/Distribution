@@ -17,7 +17,7 @@ object RateLimiter {
   @scala.inline
   def apply(duration: Double, max: Double, bounceBack: js.UndefOr[Boolean] = js.undefined): RateLimiter = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any])
-    if (!js.isUndefined(bounceBack)) __obj.updateDynamic("bounceBack")(bounceBack.asInstanceOf[js.Any])
+    if (!js.isUndefined(bounceBack)) __obj.updateDynamic("bounceBack")(bounceBack.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RateLimiter]
   }
 }

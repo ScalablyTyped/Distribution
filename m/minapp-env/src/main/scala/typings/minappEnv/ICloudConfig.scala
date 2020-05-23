@@ -14,7 +14,7 @@ object ICloudConfig {
   def apply(env: java.lang.String = null, traceUser: js.UndefOr[scala.Boolean] = js.undefined): ICloudConfig = {
     val __obj = js.Dynamic.literal()
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (!js.isUndefined(traceUser)) __obj.updateDynamic("traceUser")(traceUser.asInstanceOf[js.Any])
+    if (!js.isUndefined(traceUser)) __obj.updateDynamic("traceUser")(traceUser.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICloudConfig]
   }
 }

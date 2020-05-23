@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.XMLChildNodeSuggestion")
 @js.native
-class XMLChildNodeSuggestion protected () extends js.Object {
+trait XMLChildNodeSuggestion extends js.Object {
   val Application: typings.activexWord.Word.Application = js.native
   val BaseName: String = js.native
   val Creator: Double = js.native

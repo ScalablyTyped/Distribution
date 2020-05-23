@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ClassNameSettings {
-  type Param = (typings.semanticUiRating.PickImplactive | typings.semanticUiRating.PickImplhover | typings.semanticUiRating.PickImplloading) with typings.semanticUiRating.PartialPickImplkeyofImplActive
+  type Param = (typings.semanticUiRating.anon.PickImplactive | typings.semanticUiRating.anon.PickImplhover | typings.semanticUiRating.anon.PickImplloading) with typings.semanticUiRating.anon.PartialPickImplkeyofImplActive
 }

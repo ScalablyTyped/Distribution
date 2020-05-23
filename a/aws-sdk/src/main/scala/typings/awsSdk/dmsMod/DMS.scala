@@ -1,9 +1,9 @@
 package typings.awsSdk.dmsMod
 
-import typings.awsSdk.DescribeConnectionsMessag
-import typings.awsSdk.DescribeEndpointsMessagew
-import typings.awsSdk.DescribeReplicationInstan
-import typings.awsSdk.DescribeReplicationTasksM
+import typings.awsSdk.anon.DescribeConnectionsMessag
+import typings.awsSdk.anon.DescribeEndpointsMessagew
+import typings.awsSdk.anon.DescribeReplicationInstan
+import typings.awsSdk.anon.DescribeReplicationTasksM
 import typings.awsSdk.awsSdkStrings.endpointDeleted
 import typings.awsSdk.awsSdkStrings.replicationInstanceAvailable
 import typings.awsSdk.awsSdkStrings.replicationInstanceDeleted

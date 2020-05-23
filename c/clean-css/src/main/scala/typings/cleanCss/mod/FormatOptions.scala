@@ -1,7 +1,7 @@
 package typings.cleanCss.mod
 
-import typings.cleanCss.AnonAfterAtRule
-import typings.cleanCss.AnonAroundSelectorRelation
+import typings.cleanCss.anon.AfterAtRule
+import typings.cleanCss.anon.AroundSelectorRelation
 import typings.cleanCss.cleanCssBooleans.`false`
 import typings.cleanCss.cleanCssStrings.space
 import typings.cleanCss.cleanCssStrings.tab
@@ -21,7 +21,7 @@ trait FormatOptions extends js.Object {
   /**
     *  Controls where to insert breaks
     */
-  var breaks: js.UndefOr[AnonAfterAtRule] = js.undefined
+  var breaks: js.UndefOr[AfterAtRule] = js.undefined
   /**
     * Controls number of characters to indent with; defaults to `0`
     */
@@ -33,7 +33,7 @@ trait FormatOptions extends js.Object {
   /**
     * Controls where to insert spaces
     */
-  var spaces: js.UndefOr[AnonAroundSelectorRelation] = js.undefined
+  var spaces: js.UndefOr[AroundSelectorRelation] = js.undefined
   /**
     * Controls maximum line length; defaults to `false`
     */
@@ -44,16 +44,16 @@ object FormatOptions {
   @scala.inline
   def apply(
     breakWith: String = null,
-    breaks: AnonAfterAtRule = null,
-    indentBy: Int | Double = null,
+    breaks: AfterAtRule = null,
+    indentBy: js.UndefOr[Double] = js.undefined,
     indentWith: space | tab = null,
-    spaces: AnonAroundSelectorRelation = null,
+    spaces: AroundSelectorRelation = null,
     wrapAt: `false` | Double = null
   ): FormatOptions = {
     val __obj = js.Dynamic.literal()
     if (breakWith != null) __obj.updateDynamic("breakWith")(breakWith.asInstanceOf[js.Any])
     if (breaks != null) __obj.updateDynamic("breaks")(breaks.asInstanceOf[js.Any])
-    if (indentBy != null) __obj.updateDynamic("indentBy")(indentBy.asInstanceOf[js.Any])
+    if (!js.isUndefined(indentBy)) __obj.updateDynamic("indentBy")(indentBy.get.asInstanceOf[js.Any])
     if (indentWith != null) __obj.updateDynamic("indentWith")(indentWith.asInstanceOf[js.Any])
     if (spaces != null) __obj.updateDynamic("spaces")(spaces.asInstanceOf[js.Any])
     if (wrapAt != null) __obj.updateDynamic("wrapAt")(wrapAt.asInstanceOf[js.Any])

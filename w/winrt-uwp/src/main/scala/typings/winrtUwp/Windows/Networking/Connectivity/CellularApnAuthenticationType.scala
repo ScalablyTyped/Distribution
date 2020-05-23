@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.Connectivity
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object CellularApnAuthenticationType extends js.Object {
   /** Password authentication. */
   @js.native
   sealed trait pap extends CellularApnAuthenticationType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CellularApnAuthenticationType with Double] = js.native
-  /* 2 */ @js.native
-  object chap extends TopLevel[chap with Double]
-  
-  /* 3 */ @js.native
-  object mschapv2 extends TopLevel[mschapv2 with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object pap extends TopLevel[pap with Double]
   
 }
 

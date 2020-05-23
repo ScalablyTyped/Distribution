@@ -12,9 +12,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides members you can use to access and manage Windows Store-related data for the current app. For example, you can use members of this class to get Windows Store listing and license info for the current app, purchase the current app or products that are offered by the app, or download and install package updates for the app. */
-@JSGlobal("Windows.Services.Store.StoreContext")
 @js.native
-abstract class StoreContext () extends js.Object {
+trait StoreContext extends js.Object {
   /** Raised when the status of the app's license changes (for example, the trial period has expired or the user has purchased the full version of the app). */
   @JSName("onofflinelicenseschanged")
   var onofflinelicenseschanged_Original: TypedEventHandler[StoreContext, js.Object] = js.native
@@ -144,22 +143,5 @@ abstract class StoreContext () extends js.Object {
     * @return An asynchronous operation that, on successful completion, returns a StorePurchaseResult object that provides status and error info about the purchase.
     */
   def requestPurchaseAsync(storeId: String, storePurchaseProperties: StorePurchaseProperties): IPromiseWithIAsyncOperation[StorePurchaseResult] = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Services.Store.StoreContext")
-@js.native
-object StoreContext extends js.Object {
-  /**
-    * Gets a StoreContext object that can be used to access and manage Windows Store-related data for the current user in the context of the current app.
-    * @return An object that you can use to access and manage Windows Store-related data for the current user.
-    */
-  def getDefault(): StoreContext = js.native
-  /**
-    * Gets a StoreContext object that can be used to access and manage Windows Store-related data for the specified user in the context of the current app.
-    * @param user An object that identifies the user whose Windows Store-related data you want to access and manage.
-    * @return An object that you can use to access and manage Windows Store-related data for the specified user.
-    */
-  def getForUser(user: User): StoreContext = js.native
 }
 

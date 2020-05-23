@@ -11,10 +11,10 @@ trait IGetMapOptions extends js.Object {
 
 object IGetMapOptions {
   @scala.inline
-  def apply(id: String = null, timeout: Int | Double = null): IGetMapOptions = {
+  def apply(id: String = null, timeout: js.UndefOr[Double] = js.undefined): IGetMapOptions = {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGetMapOptions]
   }
 }

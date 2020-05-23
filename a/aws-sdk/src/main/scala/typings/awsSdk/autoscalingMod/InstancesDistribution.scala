@@ -36,18 +36,18 @@ object InstancesDistribution {
   @scala.inline
   def apply(
     OnDemandAllocationStrategy: XmlString = null,
-    OnDemandBaseCapacity: Int | Double = null,
-    OnDemandPercentageAboveBaseCapacity: Int | Double = null,
+    OnDemandBaseCapacity: js.UndefOr[OnDemandBaseCapacity] = js.undefined,
+    OnDemandPercentageAboveBaseCapacity: js.UndefOr[OnDemandPercentageAboveBaseCapacity] = js.undefined,
     SpotAllocationStrategy: XmlString = null,
-    SpotInstancePools: Int | Double = null,
+    SpotInstancePools: js.UndefOr[SpotInstancePools] = js.undefined,
     SpotMaxPrice: MixedInstanceSpotPrice = null
   ): InstancesDistribution = {
     val __obj = js.Dynamic.literal()
     if (OnDemandAllocationStrategy != null) __obj.updateDynamic("OnDemandAllocationStrategy")(OnDemandAllocationStrategy.asInstanceOf[js.Any])
-    if (OnDemandBaseCapacity != null) __obj.updateDynamic("OnDemandBaseCapacity")(OnDemandBaseCapacity.asInstanceOf[js.Any])
-    if (OnDemandPercentageAboveBaseCapacity != null) __obj.updateDynamic("OnDemandPercentageAboveBaseCapacity")(OnDemandPercentageAboveBaseCapacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(OnDemandBaseCapacity)) __obj.updateDynamic("OnDemandBaseCapacity")(OnDemandBaseCapacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(OnDemandPercentageAboveBaseCapacity)) __obj.updateDynamic("OnDemandPercentageAboveBaseCapacity")(OnDemandPercentageAboveBaseCapacity.get.asInstanceOf[js.Any])
     if (SpotAllocationStrategy != null) __obj.updateDynamic("SpotAllocationStrategy")(SpotAllocationStrategy.asInstanceOf[js.Any])
-    if (SpotInstancePools != null) __obj.updateDynamic("SpotInstancePools")(SpotInstancePools.asInstanceOf[js.Any])
+    if (!js.isUndefined(SpotInstancePools)) __obj.updateDynamic("SpotInstancePools")(SpotInstancePools.get.asInstanceOf[js.Any])
     if (SpotMaxPrice != null) __obj.updateDynamic("SpotMaxPrice")(SpotMaxPrice.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstancesDistribution]
   }

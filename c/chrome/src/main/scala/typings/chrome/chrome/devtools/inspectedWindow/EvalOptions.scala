@@ -23,7 +23,7 @@ object EvalOptions {
     val __obj = js.Dynamic.literal()
     if (contextSecurityOrigin != null) __obj.updateDynamic("contextSecurityOrigin")(contextSecurityOrigin.asInstanceOf[js.Any])
     if (frameURL != null) __obj.updateDynamic("frameURL")(frameURL.asInstanceOf[js.Any])
-    if (!js.isUndefined(useContentScriptContext)) __obj.updateDynamic("useContentScriptContext")(useContentScriptContext.asInstanceOf[js.Any])
+    if (!js.isUndefined(useContentScriptContext)) __obj.updateDynamic("useContentScriptContext")(useContentScriptContext.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EvalOptions]
   }
 }

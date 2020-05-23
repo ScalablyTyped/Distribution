@@ -24,12 +24,12 @@ object VerifyResponse {
   @scala.inline
   def apply(
     KeyId: KeyIdType = null,
-    SignatureValid: js.UndefOr[Boolean] = js.undefined,
+    SignatureValid: js.UndefOr[BooleanType] = js.undefined,
     SigningAlgorithm: SigningAlgorithmSpec = null
   ): VerifyResponse = {
     val __obj = js.Dynamic.literal()
     if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId.asInstanceOf[js.Any])
-    if (!js.isUndefined(SignatureValid)) __obj.updateDynamic("SignatureValid")(SignatureValid.asInstanceOf[js.Any])
+    if (!js.isUndefined(SignatureValid)) __obj.updateDynamic("SignatureValid")(SignatureValid.get.asInstanceOf[js.Any])
     if (SigningAlgorithm != null) __obj.updateDynamic("SigningAlgorithm")(SigningAlgorithm.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerifyResponse]
   }

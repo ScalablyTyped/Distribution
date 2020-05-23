@@ -19,11 +19,11 @@ class Shadow ()
 @js.native
 object Shadow extends js.Object {
   /**
-  	 * Regex matching shadow offsetX, offsetY and blur (ex: "2px 2px 10px rgba(0,0,0,0.2)", "rgb(0,255,0) 2px 2px")
-  	 * @static
-  	 * @field
-  	 * @memberOf fabric.Shadow
-  	 */
+    * Regex matching shadow offsetX, offsetY and blur (ex: "2px 2px 10px rgba(0,0,0,0.2)", "rgb(0,255,0) 2px 2px")
+    * @static
+    * @field
+    * @memberOf fabric.Shadow
+    */
   var reOffsetsAndBlur: RegExp = js.native
 }
 

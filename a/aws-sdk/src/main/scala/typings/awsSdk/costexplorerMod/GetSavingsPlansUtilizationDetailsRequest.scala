@@ -29,12 +29,12 @@ object GetSavingsPlansUtilizationDetailsRequest {
   def apply(
     TimePeriod: DateInterval,
     Filter: Expression = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: NextPageToken = null
   ): GetSavingsPlansUtilizationDetailsRequest = {
     val __obj = js.Dynamic.literal(TimePeriod = TimePeriod.asInstanceOf[js.Any])
     if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSavingsPlansUtilizationDetailsRequest]
   }

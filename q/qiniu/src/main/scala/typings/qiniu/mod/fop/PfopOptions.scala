@@ -19,7 +19,7 @@ object PfopOptions {
   @scala.inline
   def apply(force: js.UndefOr[Boolean] = js.undefined, notifyURL: String = null): PfopOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
     if (notifyURL != null) __obj.updateDynamic("notifyURL")(notifyURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[PfopOptions]
   }

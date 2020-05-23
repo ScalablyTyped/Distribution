@@ -8,11 +8,11 @@ trait PartialUpdateObjectResponse extends js.Object {
   /**
     * The object id updated.
     */
-  val objectID: String
+  var objectID: String
   /**
     * The operation task id. May be used to perform a wait task.
     */
-  val taskID: Double
+  var taskID: Double
 }
 
 object PartialUpdateObjectResponse {

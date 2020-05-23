@@ -14,8 +14,7 @@ trait MenuState extends js.Object {
 object MenuState {
   @scala.inline
   def apply(maxHeight: Double, placement: bottom | top = null): MenuState = {
-    val __obj = js.Dynamic.literal(maxHeight = maxHeight.asInstanceOf[js.Any])
-    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(maxHeight = maxHeight.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuState]
   }
 }

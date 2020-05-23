@@ -1,6 +1,7 @@
 package typings.apolloReactHooks
 
 import typings.apolloReactCommon.typesMod.MutationResult
+import typings.apolloReactHooks.anon.Context
 import typings.apolloReactHooks.operationDataMod.OperationData
 import typings.apolloReactHooks.typesMod.MutationTuple
 import scala.scalajs.js
@@ -13,7 +14,7 @@ object mutationDataMod extends js.Object {
   @js.native
   class MutationData[TData, TVariables] protected ()
     extends OperationData[js.Any] {
-    def this(hasOptionsContextResultSetResult: AnonContext[TData, TVariables]) = this()
+    def this(hasOptionsContextResultSetResult: Context[TData, TVariables]) = this()
     var generateNewMutationId: js.Any = js.native
     var isMostRecentMutation: js.Any = js.native
     var mostRecentMutationId: js.Any = js.native

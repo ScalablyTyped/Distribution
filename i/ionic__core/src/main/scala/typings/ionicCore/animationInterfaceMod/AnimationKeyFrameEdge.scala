@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation._
 
 object AnimationKeyFrameEdge {
   @scala.inline
-  def apply(offset: Int | Double = null): AnimationKeyFrameEdge = {
+  def apply(offset: js.UndefOr[Double] = js.undefined): AnimationKeyFrameEdge = {
     val __obj = js.Dynamic.literal()
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationKeyFrameEdge]
   }
 }

@@ -25,11 +25,11 @@ object ListTagsForDeliveryStreamInput {
   def apply(
     DeliveryStreamName: DeliveryStreamName,
     ExclusiveStartTagKey: TagKey = null,
-    Limit: Int | Double = null
+    Limit: js.UndefOr[ListTagsForDeliveryStreamInputLimit] = js.undefined
   ): ListTagsForDeliveryStreamInput = {
     val __obj = js.Dynamic.literal(DeliveryStreamName = DeliveryStreamName.asInstanceOf[js.Any])
     if (ExclusiveStartTagKey != null) __obj.updateDynamic("ExclusiveStartTagKey")(ExclusiveStartTagKey.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagsForDeliveryStreamInput]
   }
 }

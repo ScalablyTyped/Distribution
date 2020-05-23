@@ -60,9 +60,9 @@ object UpdateServiceRequest {
     capacityProviderStrategy: CapacityProviderStrategy = null,
     cluster: String = null,
     deploymentConfiguration: DeploymentConfiguration = null,
-    desiredCount: Int | scala.Double = null,
-    forceNewDeployment: js.UndefOr[scala.Boolean] = js.undefined,
-    healthCheckGracePeriodSeconds: Int | scala.Double = null,
+    desiredCount: js.UndefOr[BoxedInteger] = js.undefined,
+    forceNewDeployment: js.UndefOr[Boolean] = js.undefined,
+    healthCheckGracePeriodSeconds: js.UndefOr[BoxedInteger] = js.undefined,
     networkConfiguration: NetworkConfiguration = null,
     placementConstraints: PlacementConstraints = null,
     placementStrategy: PlacementStrategies = null,
@@ -73,9 +73,9 @@ object UpdateServiceRequest {
     if (capacityProviderStrategy != null) __obj.updateDynamic("capacityProviderStrategy")(capacityProviderStrategy.asInstanceOf[js.Any])
     if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
     if (deploymentConfiguration != null) __obj.updateDynamic("deploymentConfiguration")(deploymentConfiguration.asInstanceOf[js.Any])
-    if (desiredCount != null) __obj.updateDynamic("desiredCount")(desiredCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceNewDeployment)) __obj.updateDynamic("forceNewDeployment")(forceNewDeployment.asInstanceOf[js.Any])
-    if (healthCheckGracePeriodSeconds != null) __obj.updateDynamic("healthCheckGracePeriodSeconds")(healthCheckGracePeriodSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(desiredCount)) __obj.updateDynamic("desiredCount")(desiredCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceNewDeployment)) __obj.updateDynamic("forceNewDeployment")(forceNewDeployment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(healthCheckGracePeriodSeconds)) __obj.updateDynamic("healthCheckGracePeriodSeconds")(healthCheckGracePeriodSeconds.get.asInstanceOf[js.Any])
     if (networkConfiguration != null) __obj.updateDynamic("networkConfiguration")(networkConfiguration.asInstanceOf[js.Any])
     if (placementConstraints != null) __obj.updateDynamic("placementConstraints")(placementConstraints.asInstanceOf[js.Any])
     if (placementStrategy != null) __obj.updateDynamic("placementStrategy")(placementStrategy.asInstanceOf[js.Any])

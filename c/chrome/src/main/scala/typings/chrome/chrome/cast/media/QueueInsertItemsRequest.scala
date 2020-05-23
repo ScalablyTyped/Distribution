@@ -4,17 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("chrome.cast.media.QueueInsertItemsRequest")
-@js.native
-class QueueInsertItemsRequest protected () extends js.Object {
-  /**
-    * @param {!Array<chrome.cast.media.QueueItem>}
-    * @constructor
-    * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.QueueInsertItemsRequest
-    */
-  def this(itemsToInsert: js.Array[QueueItem]) = this()
-  var customData: js.Object = js.native
-  var insertBefore: Double = js.native
-  var items: js.Array[QueueItem] = js.native
+trait QueueInsertItemsRequest extends js.Object {
+  var customData: js.Object
+  var insertBefore: Double
+  var items: js.Array[QueueItem]
+}
+
+object QueueInsertItemsRequest {
+  @scala.inline
+  def apply(customData: js.Object, insertBefore: Double, items: js.Array[QueueItem]): QueueInsertItemsRequest = {
+    val __obj = js.Dynamic.literal(customData = customData.asInstanceOf[js.Any], insertBefore = insertBefore.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
+    __obj.asInstanceOf[QueueInsertItemsRequest]
+  }
 }
 

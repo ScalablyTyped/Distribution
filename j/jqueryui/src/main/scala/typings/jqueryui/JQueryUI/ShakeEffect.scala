@@ -12,11 +12,15 @@ trait ShakeEffect extends js.Object {
 
 object ShakeEffect {
   @scala.inline
-  def apply(direction: String = null, distance: Int | Double = null, times: Int | Double = null): ShakeEffect = {
+  def apply(
+    direction: String = null,
+    distance: js.UndefOr[Double] = js.undefined,
+    times: js.UndefOr[Double] = js.undefined
+  ): ShakeEffect = {
     val __obj = js.Dynamic.literal()
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (times != null) __obj.updateDynamic("times")(times.asInstanceOf[js.Any])
+    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(times)) __obj.updateDynamic("times")(times.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShakeEffect]
   }
 }

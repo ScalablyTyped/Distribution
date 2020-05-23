@@ -30,10 +30,10 @@ object AnalyticsConfigurationType {
     ApplicationId: HexStringType,
     ExternalId: StringType,
     RoleArn: ArnType,
-    UserDataShared: js.UndefOr[Boolean] = js.undefined
+    UserDataShared: js.UndefOr[BooleanType] = js.undefined
   ): AnalyticsConfigurationType = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], ExternalId = ExternalId.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(UserDataShared)) __obj.updateDynamic("UserDataShared")(UserDataShared.asInstanceOf[js.Any])
+    if (!js.isUndefined(UserDataShared)) __obj.updateDynamic("UserDataShared")(UserDataShared.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsConfigurationType]
   }
 }

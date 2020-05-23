@@ -1,6 +1,6 @@
 package typings.rethinkdb
 
-import typings.rethinkdb.rethinkdbMod.waitFor
+import typings.rethinkdb.mod.waitFor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

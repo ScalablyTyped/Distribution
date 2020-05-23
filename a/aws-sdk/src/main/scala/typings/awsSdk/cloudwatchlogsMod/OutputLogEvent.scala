@@ -22,11 +22,15 @@ trait OutputLogEvent extends js.Object {
 
 object OutputLogEvent {
   @scala.inline
-  def apply(ingestionTime: Int | Double = null, message: EventMessage = null, timestamp: Int | Double = null): OutputLogEvent = {
+  def apply(
+    ingestionTime: js.UndefOr[Timestamp] = js.undefined,
+    message: EventMessage = null,
+    timestamp: js.UndefOr[Timestamp] = js.undefined
+  ): OutputLogEvent = {
     val __obj = js.Dynamic.literal()
-    if (ingestionTime != null) __obj.updateDynamic("ingestionTime")(ingestionTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(ingestionTime)) __obj.updateDynamic("ingestionTime")(ingestionTime.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputLogEvent]
   }
 }

@@ -22,10 +22,14 @@ trait ListFunctionEventInvokeConfigsRequest extends js.Object {
 
 object ListFunctionEventInvokeConfigsRequest {
   @scala.inline
-  def apply(FunctionName: FunctionName, Marker: String = null, MaxItems: Int | Double = null): ListFunctionEventInvokeConfigsRequest = {
+  def apply(
+    FunctionName: FunctionName,
+    Marker: String = null,
+    MaxItems: js.UndefOr[MaxFunctionEventInvokeConfigListItems] = js.undefined
+  ): ListFunctionEventInvokeConfigsRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListFunctionEventInvokeConfigsRequest]
   }
 }

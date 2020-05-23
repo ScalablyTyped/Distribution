@@ -6,12 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** A Wi-FI Direct connection request received by a WiFiDirectConnectionListener . */
-@JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectConnectionRequest")
-@js.native
-abstract class WiFiDirectConnectionRequest () extends js.Object {
+trait WiFiDirectConnectionRequest extends js.Object {
   /** Gets device information for the endpoint making the Wi-Fi Direct connection request. */
-  var deviceInformation: DeviceInformation = js.native
+  var deviceInformation: DeviceInformation
   /** Closes the WiFiDirectConnectionRequest object. */
-  def close(): Unit = js.native
+  def close(): Unit
+}
+
+object WiFiDirectConnectionRequest {
+  @scala.inline
+  def apply(close: () => Unit, deviceInformation: DeviceInformation): WiFiDirectConnectionRequest = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), deviceInformation = deviceInformation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WiFiDirectConnectionRequest]
+  }
 }
 

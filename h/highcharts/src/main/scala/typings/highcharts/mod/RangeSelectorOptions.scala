@@ -133,14 +133,14 @@ object RangeSelectorOptions {
   def apply(
     allButtonsEnabled: js.UndefOr[Boolean] = js.undefined,
     buttonPosition: RangeSelectorButtonPositionOptions = null,
-    buttonSpacing: Int | Double = null,
+    buttonSpacing: js.UndefOr[Double] = js.undefined,
     buttonTheme: SVGAttributes = null,
     buttons: js.Array[RangeSelectorButtonsOptions] = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     floating: js.UndefOr[Boolean] = js.undefined,
     inputBoxBorderColor: ColorString = null,
-    inputBoxHeight: Int | Double = null,
-    inputBoxWidth: Int | Double = null,
+    inputBoxHeight: js.UndefOr[Double] = js.undefined,
+    inputBoxWidth: js.UndefOr[Double] = js.undefined,
     inputDateFormat: String = null,
     inputDateParser: /* value */ String => Double = null,
     inputEditDateFormat: String = null,
@@ -148,33 +148,33 @@ object RangeSelectorOptions {
     inputPosition: RangeSelectorInputPositionOptions = null,
     inputStyle: CSSObject = null,
     labelStyle: CSSObject = null,
-    selected: Int | Double = null,
+    selected: js.UndefOr[Double] = js.undefined,
     verticalAlign: VerticalAlignValue = null,
-    x: Int | Double = null,
-    y: Int | Double = null
+    x: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined
   ): RangeSelectorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allButtonsEnabled)) __obj.updateDynamic("allButtonsEnabled")(allButtonsEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(allButtonsEnabled)) __obj.updateDynamic("allButtonsEnabled")(allButtonsEnabled.get.asInstanceOf[js.Any])
     if (buttonPosition != null) __obj.updateDynamic("buttonPosition")(buttonPosition.asInstanceOf[js.Any])
-    if (buttonSpacing != null) __obj.updateDynamic("buttonSpacing")(buttonSpacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(buttonSpacing)) __obj.updateDynamic("buttonSpacing")(buttonSpacing.get.asInstanceOf[js.Any])
     if (buttonTheme != null) __obj.updateDynamic("buttonTheme")(buttonTheme.asInstanceOf[js.Any])
     if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating.get.asInstanceOf[js.Any])
     if (inputBoxBorderColor != null) __obj.updateDynamic("inputBoxBorderColor")(inputBoxBorderColor.asInstanceOf[js.Any])
-    if (inputBoxHeight != null) __obj.updateDynamic("inputBoxHeight")(inputBoxHeight.asInstanceOf[js.Any])
-    if (inputBoxWidth != null) __obj.updateDynamic("inputBoxWidth")(inputBoxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputBoxHeight)) __obj.updateDynamic("inputBoxHeight")(inputBoxHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputBoxWidth)) __obj.updateDynamic("inputBoxWidth")(inputBoxWidth.get.asInstanceOf[js.Any])
     if (inputDateFormat != null) __obj.updateDynamic("inputDateFormat")(inputDateFormat.asInstanceOf[js.Any])
     if (inputDateParser != null) __obj.updateDynamic("inputDateParser")(js.Any.fromFunction1(inputDateParser))
     if (inputEditDateFormat != null) __obj.updateDynamic("inputEditDateFormat")(inputEditDateFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(inputEnabled)) __obj.updateDynamic("inputEnabled")(inputEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputEnabled)) __obj.updateDynamic("inputEnabled")(inputEnabled.get.asInstanceOf[js.Any])
     if (inputPosition != null) __obj.updateDynamic("inputPosition")(inputPosition.asInstanceOf[js.Any])
     if (inputStyle != null) __obj.updateDynamic("inputStyle")(inputStyle.asInstanceOf[js.Any])
     if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
-    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
     if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeSelectorOptions]
   }
 }

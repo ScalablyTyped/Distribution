@@ -2,7 +2,7 @@ package typings.stellarSdk.horizonApiMod.Horizon
 
 import org.scalablytyped.runtime.TopLevel
 import typings.stellarBase.mod.AssetType
-import typings.stellarSdk.AnonAssetcode
+import typings.stellarSdk.anon.Assetcode
 import typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.pathPayment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ trait PathPaymentOperationResponse
   var asset_issuer: js.UndefOr[String] = js.undefined
   var asset_type: AssetType
   var from: String
-  var path: js.Array[AnonAssetcode]
+  var path: js.Array[Assetcode]
   var source_amount: String
   var source_asset_code: js.UndefOr[String] = js.undefined
   var source_asset_issuer: js.UndefOr[String] = js.undefined
@@ -39,7 +39,7 @@ object PathPaymentOperationResponse {
     from: String,
     id: String,
     paging_token: String,
-    path: js.Array[AnonAssetcode],
+    path: js.Array[Assetcode],
     source_account: String,
     source_amount: String,
     source_asset_type: AssetType,

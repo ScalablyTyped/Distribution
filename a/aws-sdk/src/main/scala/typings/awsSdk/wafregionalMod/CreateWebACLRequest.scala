@@ -22,6 +22,9 @@ trait CreateWebACLRequest extends js.Object {
     * A friendly name or description of the WebACL. You can't change Name after you create the WebACL.
     */
   var Name: ResourceName = js.native
+  /**
+    * 
+    */
   var Tags: js.UndefOr[TagList] = js.native
 }
 

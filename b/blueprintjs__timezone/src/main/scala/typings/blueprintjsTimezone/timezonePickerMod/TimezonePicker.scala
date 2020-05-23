@@ -1,8 +1,8 @@
 package typings.blueprintjsTimezone.timezonePickerMod
 
 import typings.blueprintjsCore.mod.AbstractPureComponent2
-import typings.blueprintjsTimezone.IPopoverPropschildrenReac
-import typings.blueprintjsTimezone.PartialITimezonePickerPro
+import typings.blueprintjsTimezone.anon.IPopoverPropschildrenReac
+import typings.blueprintjsTimezone.anon.PartialITimezonePickerPro
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

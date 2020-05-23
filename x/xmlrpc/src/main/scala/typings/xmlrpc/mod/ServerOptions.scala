@@ -12,11 +12,11 @@ trait ServerOptions extends js.Object {
 
 object ServerOptions {
   @scala.inline
-  def apply(host: String = null, path: String = null, port: Int | Double = null): ServerOptions = {
+  def apply(host: String = null, path: String = null, port: js.UndefOr[Double] = js.undefined): ServerOptions = {
     val __obj = js.Dynamic.literal()
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerOptions]
   }
 }

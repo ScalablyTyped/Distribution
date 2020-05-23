@@ -14,7 +14,7 @@ trait BaseBlockParams extends LocalBaseBlockParams {
 object BaseBlockParams {
   @scala.inline
   def apply(
-    blockLength: Int | Double = null,
+    blockLength: js.UndefOr[Double] = js.undefined,
     error: String = null,
     name: String = null,
     optional: js.UndefOr[scala.Boolean] = js.undefined,
@@ -23,10 +23,10 @@ object BaseBlockParams {
     warnings: js.Array[String] = null
   ): BaseBlockParams = {
     val __obj = js.Dynamic.literal()
-    if (blockLength != null) __obj.updateDynamic("blockLength")(blockLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockLength)) __obj.updateDynamic("blockLength")(blockLength.get.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.get.asInstanceOf[js.Any])
     if (primitiveSchema != null) __obj.updateDynamic("primitiveSchema")(primitiveSchema.asInstanceOf[js.Any])
     if (valueBeforeDecode != null) __obj.updateDynamic("valueBeforeDecode")(valueBeforeDecode.asInstanceOf[js.Any])
     if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])

@@ -3,10 +3,10 @@ package typings.storybookClientApi.storyStoreMod
 import typings.eventemitter3.mod.^
 import typings.lodash.mod.Cancelable
 import typings.storybookChannels.mod.Channel
-import typings.storybookClientApi.AnonApplyDecorators
-import typings.storybookClientApi.AnonKind
-import typings.storybookClientApi.AnonParameters
-import typings.storybookClientApi.AnonStories
+import typings.storybookClientApi.anon.ApplyDecorators
+import typings.storybookClientApi.anon.Kind
+import typings.storybookClientApi.anon.Parameters
+import typings.storybookClientApi.anon.Stories
 import typings.storybookClientApi.typesMod.AddStoryArgs
 import typings.storybookClientApi.typesMod.ErrorLike
 import typings.storybookClientApi.typesMod.LegacyData
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait StoryStore
-  extends ^[String | js.Symbol] {
+  extends ^[String | js.Symbol, js.Any] {
   var _channel: Channel = js.native
   var _data: StoreData = js.native
   var _error: js.UndefOr[ErrorLike] = js.native
@@ -28,12 +28,12 @@ trait StoryStore
   var _revision: Double = js.native
   var _selection: Selection = js.native
   var pushToManager: js.Function0[Unit] with Cancelable = js.native
-  def addLegacyStory(hasKindNameStoryFnParameters: AnonKind): Unit = js.native
-  def addStory(hasIdKindNameStoryFnParameters: AddStoryArgs, hasGetDecoratorsApplyDecorators: AnonApplyDecorators): Unit = js.native
+  def addLegacyStory(hasKindNameStoryFnParameters: Kind): Unit = js.native
+  def addStory(hasIdKindNameStoryFnParameters: AddStoryArgs, hasGetDecoratorsApplyDecorators: ApplyDecorators): Unit = js.native
   def clean(): Unit = js.native
   def cleanHooks(id: String): Unit = js.native
   def cleanHooksForKind(kind: String): Unit = js.native
-  def dumpStoryBook(): js.Array[AnonStories] = js.native
+  def dumpStoryBook(): js.Array[Stories] = js.native
   def extract(): js.Object = js.native
   def extract(options: StoryOptions): js.Object = js.native
   def fromId(id: String): StoreItem = js.native
@@ -45,7 +45,7 @@ trait StoryStore
   def getStoriesForKind(kind: String): js.Array[StoreItem] = js.native
   def getStoriesForManager(): js.Object = js.native
   def getStory(kind: String, name: String): js.Any = js.native
-  def getStoryAndParameters(kind: String, name: String): AnonParameters = js.native
+  def getStoryAndParameters(kind: String, name: String): Parameters = js.native
   def getStoryFileName(kind: String): String = js.native
   def getStoryKinds(): js.Array[String] = js.native
   def getStoryWithContext(kind: String, name: String): js.Any = js.native
@@ -57,8 +57,7 @@ trait StoryStore
   def remove(id: String): Unit = js.native
   def removeStoryKind(kind: String): Unit = js.native
   def setChannel(channel: Channel): Unit = js.native
-  def setSelection(data: js.UndefOr[scala.Nothing], error: ErrorLike): Unit = js.native
-  def setSelection(data: Selection, error: ErrorLike): Unit = js.native
+  def setSelection(data: js.UndefOr[Selection], error: ErrorLike): Unit = js.native
   def size(): Double = js.native
 }
 

@@ -43,9 +43,9 @@ object PluginOptions {
   ): PluginOptions = {
     val __obj = js.Dynamic.literal()
     if (chunkFilename != null) __obj.updateDynamic("chunkFilename")(chunkFilename.asInstanceOf[js.Any])
-    if (!js.isUndefined(esModule)) __obj.updateDynamic("esModule")(esModule.asInstanceOf[js.Any])
+    if (!js.isUndefined(esModule)) __obj.updateDynamic("esModule")(esModule.get.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreOrder)) __obj.updateDynamic("ignoreOrder")(ignoreOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreOrder)) __obj.updateDynamic("ignoreOrder")(ignoreOrder.get.asInstanceOf[js.Any])
     if (moduleFilename != null) __obj.updateDynamic("moduleFilename")(js.Any.fromFunction1(moduleFilename))
     __obj.asInstanceOf[PluginOptions]
   }

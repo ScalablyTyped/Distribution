@@ -177,29 +177,29 @@ object Model {
     drillDownClick: /* e */ DrillDownClickEventArgs => Unit = null,
     drillDownReset: /* e */ DrillDownResetEventArgs => Unit = null,
     enableAnimation: js.UndefOr[Boolean] = js.undefined,
-    endAngle: Int | Double = null,
+    endAngle: js.UndefOr[Double] = js.undefined,
     highlightSettings: HighlightSettings = null,
-    innerRadius: Int | Double = null,
+    innerRadius: js.UndefOr[Double] = js.undefined,
     isResponsive: js.UndefOr[Boolean] = js.undefined,
     legend: Legend = null,
     levels: js.Array[Level] = null,
     load: /* e */ LoadEventArgs => Unit = null,
     loaded: /* e */ LoadedEventArgs => Unit = null,
     margin: Margin = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     palette: String = null,
     parentNode: String = null,
     pointRegionClick: /* e */ PointRegionClickEventArgs => Unit = null,
     pointRegionMouseMove: /* e */ PointRegionMouseMoveEventArgs => Unit = null,
     points: Points = null,
     preRender: /* e */ PreRenderEventArgs => Unit = null,
-    radius: Int | Double = null,
+    radius: js.UndefOr[Double] = js.undefined,
     rightClick: /* e */ RightClickEventArgs => Unit = null,
     segmentBorder: SegmentBorder = null,
     segmentRendering: /* e */ SegmentRenderingEventArgs => Unit = null,
     selectionSettings: SelectionSettings = null,
     size: Size = null,
-    startAngle: Int | Double = null,
+    startAngle: js.UndefOr[Double] = js.undefined,
     theme: SunburstTheme | String = null,
     title: Title = null,
     titleRendering: /* e */ TitleRenderingEventArgs => Unit = null,
@@ -223,37 +223,37 @@ object Model {
     if (drillDownBack != null) __obj.updateDynamic("drillDownBack")(js.Any.fromFunction1(drillDownBack))
     if (drillDownClick != null) __obj.updateDynamic("drillDownClick")(js.Any.fromFunction1(drillDownClick))
     if (drillDownReset != null) __obj.updateDynamic("drillDownReset")(js.Any.fromFunction1(drillDownReset))
-    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.asInstanceOf[js.Any])
-    if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(endAngle)) __obj.updateDynamic("endAngle")(endAngle.get.asInstanceOf[js.Any])
     if (highlightSettings != null) __obj.updateDynamic("highlightSettings")(highlightSettings.asInstanceOf[js.Any])
-    if (innerRadius != null) __obj.updateDynamic("innerRadius")(innerRadius.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(innerRadius)) __obj.updateDynamic("innerRadius")(innerRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.get.asInstanceOf[js.Any])
     if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
     if (levels != null) __obj.updateDynamic("levels")(levels.asInstanceOf[js.Any])
     if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
     if (loaded != null) __obj.updateDynamic("loaded")(js.Any.fromFunction1(loaded))
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
     if (parentNode != null) __obj.updateDynamic("parentNode")(parentNode.asInstanceOf[js.Any])
     if (pointRegionClick != null) __obj.updateDynamic("pointRegionClick")(js.Any.fromFunction1(pointRegionClick))
     if (pointRegionMouseMove != null) __obj.updateDynamic("pointRegionMouseMove")(js.Any.fromFunction1(pointRegionMouseMove))
     if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
     if (preRender != null) __obj.updateDynamic("preRender")(js.Any.fromFunction1(preRender))
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     if (rightClick != null) __obj.updateDynamic("rightClick")(js.Any.fromFunction1(rightClick))
     if (segmentBorder != null) __obj.updateDynamic("segmentBorder")(segmentBorder.asInstanceOf[js.Any])
     if (segmentRendering != null) __obj.updateDynamic("segmentRendering")(js.Any.fromFunction1(segmentRendering))
     if (selectionSettings != null) __obj.updateDynamic("selectionSettings")(selectionSettings.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(startAngle)) __obj.updateDynamic("startAngle")(startAngle.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (titleRendering != null) __obj.updateDynamic("titleRendering")(js.Any.fromFunction1(titleRendering))
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (tooltipInitialize != null) __obj.updateDynamic("tooltipInitialize")(js.Any.fromFunction1(tooltipInitialize))
     if (valueMemberPath != null) __obj.updateDynamic("valueMemberPath")(valueMemberPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     if (xName != null) __obj.updateDynamic("xName")(xName.asInstanceOf[js.Any])
     if (yName != null) __obj.updateDynamic("yName")(yName.asInstanceOf[js.Any])
     if (zoomSettings != null) __obj.updateDynamic("zoomSettings")(zoomSettings.asInstanceOf[js.Any])

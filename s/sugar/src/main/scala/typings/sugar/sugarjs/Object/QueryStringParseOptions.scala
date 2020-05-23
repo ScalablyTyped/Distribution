@@ -20,8 +20,8 @@ object QueryStringParseOptions {
     transform: (/* key */ String, /* val */ T, /* obj */ js.Object) => U = null
   ): QueryStringParseOptions[T, U] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(auto)) __obj.updateDynamic("auto")(auto.asInstanceOf[js.Any])
-    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep.asInstanceOf[js.Any])
+    if (!js.isUndefined(auto)) __obj.updateDynamic("auto")(auto.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep.get.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction3(transform))
     __obj.asInstanceOf[QueryStringParseOptions[T, U]]

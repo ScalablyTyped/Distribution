@@ -56,7 +56,7 @@ object ProjectEnvironment {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (certificate != null) __obj.updateDynamic("certificate")(certificate.asInstanceOf[js.Any])
     if (imagePullCredentialsType != null) __obj.updateDynamic("imagePullCredentialsType")(imagePullCredentialsType.asInstanceOf[js.Any])
-    if (!js.isUndefined(privilegedMode)) __obj.updateDynamic("privilegedMode")(privilegedMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(privilegedMode)) __obj.updateDynamic("privilegedMode")(privilegedMode.get.asInstanceOf[js.Any])
     if (registryCredential != null) __obj.updateDynamic("registryCredential")(registryCredential.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectEnvironment]
   }

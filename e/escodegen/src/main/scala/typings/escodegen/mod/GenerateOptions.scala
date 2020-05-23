@@ -73,8 +73,8 @@ object GenerateOptions {
     verbatim: String = null
   ): GenerateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(comment)) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (!js.isUndefined(directive)) __obj.updateDynamic("directive")(directive.asInstanceOf[js.Any])
+    if (!js.isUndefined(comment)) __obj.updateDynamic("comment")(comment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(directive)) __obj.updateDynamic("directive")(directive.get.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (moz != null) __obj.updateDynamic("moz")(moz.asInstanceOf[js.Any])
@@ -83,7 +83,7 @@ object GenerateOptions {
     if (sourceContent != null) __obj.updateDynamic("sourceContent")(sourceContent.asInstanceOf[js.Any])
     if (sourceMap != null) __obj.updateDynamic("sourceMap")(sourceMap.asInstanceOf[js.Any])
     if (sourceMapRoot != null) __obj.updateDynamic("sourceMapRoot")(sourceMapRoot.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceMapWithCode)) __obj.updateDynamic("sourceMapWithCode")(sourceMapWithCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceMapWithCode)) __obj.updateDynamic("sourceMapWithCode")(sourceMapWithCode.get.asInstanceOf[js.Any])
     if (verbatim != null) __obj.updateDynamic("verbatim")(verbatim.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateOptions]
   }

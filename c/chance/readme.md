@@ -1,7 +1,7 @@
 
 # Scala.js typings for chance
 
-Typings are for version 1.0
+Typings are for version 1.1
 
 ## Library description:
 Chance - Utility library to generate anything random

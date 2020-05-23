@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Audio
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object AudioGraphUnrecoverableError extends js.Object {
   /** An unknown failure occurred during creation of the audio graph. */
   @js.native
   sealed trait unknownFailure extends AudioGraphUnrecoverableError
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AudioGraphUnrecoverableError with Double] = js.native
-  /* 1 */ @js.native
-  object audioDeviceLost extends TopLevel[audioDeviceLost with Double]
-  
-  /* 2 */ @js.native
-  object audioSessionDisconnected extends TopLevel[audioSessionDisconnected with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 3 */ @js.native
-  object unknownFailure extends TopLevel[unknownFailure with Double]
   
 }
 

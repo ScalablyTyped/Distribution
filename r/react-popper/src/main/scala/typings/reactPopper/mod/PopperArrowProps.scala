@@ -14,8 +14,7 @@ trait PopperArrowProps extends js.Object {
 object PopperArrowProps {
   @scala.inline
   def apply(style: CSSProperties, ref: Ref[_] = null): PopperArrowProps = {
-    val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopperArrowProps]
   }
 }

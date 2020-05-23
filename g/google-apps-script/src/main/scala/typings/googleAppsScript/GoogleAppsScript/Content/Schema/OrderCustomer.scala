@@ -21,7 +21,7 @@ object OrderCustomer {
   ): OrderCustomer = {
     val __obj = js.Dynamic.literal()
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (!js.isUndefined(explicitMarketingPreference)) __obj.updateDynamic("explicitMarketingPreference")(explicitMarketingPreference.asInstanceOf[js.Any])
+    if (!js.isUndefined(explicitMarketingPreference)) __obj.updateDynamic("explicitMarketingPreference")(explicitMarketingPreference.get.asInstanceOf[js.Any])
     if (fullName != null) __obj.updateDynamic("fullName")(fullName.asInstanceOf[js.Any])
     if (marketingRightsInfo != null) __obj.updateDynamic("marketingRightsInfo")(marketingRightsInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderCustomer]

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,7 +43,16 @@ trait colorRamps extends js.Object {
   def names(): js.Array[String]
 }
 
-@JSGlobal("__esri.colorRamps")
-@js.native
-object colorRamps extends TopLevel[colorRamps]
+object colorRamps {
+  @scala.inline
+  def apply(
+    all: () => js.Array[colorRampsColorRamp],
+    byName: String => colorRampsColorRamp,
+    byTag: colorRampsByTagParams => js.Array[colorRampsColorRamp],
+    names: () => js.Array[String]
+  ): colorRamps = {
+    val __obj = js.Dynamic.literal(all = js.Any.fromFunction0(all), byName = js.Any.fromFunction1(byName), byTag = js.Any.fromFunction1(byTag), names = js.Any.fromFunction0(names))
+    __obj.asInstanceOf[colorRamps]
+  }
+}
 

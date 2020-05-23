@@ -6,60 +6,60 @@ import scala.scalajs.js.annotation._
 
 trait SchedulerSizes extends js.Object {
   /**
-  	* the height of day cells in the month view
-  	*/
+    * the height of day cells in the month view
+    */
   var bar_height: Double
   /**
-  	* the width of the event text input	140	day
-  	*/
+    * the width of the event text input    140    day
+    */
   var editor_width: Double
   /**
-  	* increases the length of the lightbox
-  	*/
+    * increases the length of the lightbox
+    */
   var lightbox_additional_height: Double
   /**
-  	* the width of the date column in the Map view
-  	*/
+    * the width of the date column in the Map view
+    */
   var map_date_width: Double
   /**
-  	* the width of the description column in the Map view
-  	*/
+    * the width of the description column in the Map view
+    */
   var map_description_width: Double
   /**
-  	* the left margin of the main scheduler area
-  	*/
+    * the left margin of the main scheduler area
+    */
   var margin_left: Double
   /**
-  	* the bottom margin of the main scheduler area
-  	*/
+    * the bottom margin of the main scheduler area
+    */
   var margin_top: Double
   /**
-  	* the width of the selection menu
-  	*/
+    * the width of the selection menu
+    */
   var menu_width: Double
   /**
-  	* the minimal height of the event box
-  	*/
+    * the minimal height of the event box
+    */
   var min_event_height: Double
   /**
-  	* the top offset of an event in a cell in the month view
-  	*/
+    * the top offset of an event in a cell in the month view
+    */
   var month_scale_height: Double
   /**
-  	* the height of the navigation bar
-  	*/
+    * the height of the navigation bar
+    */
   var nav_height: Double
   /**
-  	* the height of the X-Axis
-  	*/
+    * the height of the X-Axis
+    */
   var scale_height: Double
   /**
-  	* the width of the Y-Axis
-  	*/
+    * the width of the Y-Axis
+    */
   var scale_width: Double
   /**
-  	* the width of the scrollbar area
-  	*/
+    * the width of the scrollbar area
+    */
   var scroll_width: Double
 }
 

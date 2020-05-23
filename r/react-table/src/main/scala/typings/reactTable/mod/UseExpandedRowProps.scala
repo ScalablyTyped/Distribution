@@ -1,6 +1,6 @@
 package typings.reactTable.mod
 
-import typings.reactTable.PartialTableExpandedToggl
+import typings.reactTable.anon.PartialTableExpandedToggl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

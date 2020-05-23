@@ -35,10 +35,10 @@ object HeaderOptions {
     dlg: String = null,
     ext: String = null,
     hash: String = null,
-    localtimeOffsetMsec: Int | Double = null,
+    localtimeOffsetMsec: js.UndefOr[Double] = js.undefined,
     nonce: String = null,
     payload: String = null,
-    timestamp: Int | Double = null
+    timestamp: js.UndefOr[Double] = js.undefined
   ): HeaderOptions = {
     val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any])
     if (app != null) __obj.updateDynamic("app")(app.asInstanceOf[js.Any])
@@ -46,10 +46,10 @@ object HeaderOptions {
     if (dlg != null) __obj.updateDynamic("dlg")(dlg.asInstanceOf[js.Any])
     if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
     if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    if (localtimeOffsetMsec != null) __obj.updateDynamic("localtimeOffsetMsec")(localtimeOffsetMsec.asInstanceOf[js.Any])
+    if (!js.isUndefined(localtimeOffsetMsec)) __obj.updateDynamic("localtimeOffsetMsec")(localtimeOffsetMsec.get.asInstanceOf[js.Any])
     if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderOptions]
   }
 }

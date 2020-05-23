@@ -107,14 +107,8 @@ import scala.scalajs.js.annotation._
   * great way to achieve a desktop-game like experience from the browser, but it does require a modern browser
   * to handle it. Some mobile browsers also support this.
   */
-@JSGlobal("Phaser.Scale.ScaleManager")
 @js.native
-class ScaleManager protected () extends EventEmitter {
-  /**
-    * 
-    * @param game A reference to the Phaser.Game instance.
-    */
-  def this(game: Game) = this()
+trait ScaleManager extends EventEmitter {
   /**
     * Internal flag set when the game zoom factor is modified.
     */

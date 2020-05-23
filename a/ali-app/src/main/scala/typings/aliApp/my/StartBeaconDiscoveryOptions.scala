@@ -10,8 +10,8 @@ trait StartBeaconDiscoveryOptions
   @JSName("success")
   var success_StartBeaconDiscoveryOptions: js.UndefOr[js.Function1[/* res */ ErrMsgResponse, Unit]] = js.undefined
   /**
-  		 * iBeacon设备广播的 uuids
-  		 */
+    * iBeacon设备广播的 uuids
+    */
   var uuids: js.Array[String]
 }
 

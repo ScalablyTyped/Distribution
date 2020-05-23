@@ -1,6 +1,5 @@
 package typings.screeps
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +18,27 @@ trait StructureKeeperLair
   var ticksToSpawn: js.UndefOr[Double] = js.undefined
 }
 
-@JSGlobal("StructureKeeperLair")
-@js.native
-object StructureKeeperLair extends TopLevel[StructureKeeperLairConstructor]
+object StructureKeeperLair {
+  @scala.inline
+  def apply(
+    destroy: () => ScreepsReturnCode,
+    effects: js.Array[RoomObjectEffect],
+    hits: Double,
+    hitsMax: Double,
+    id: Id[StructureKeeperLair],
+    isActive: () => Boolean,
+    my: Boolean,
+    notifyWhenAttacked: Boolean => ScreepsReturnCode,
+    pos: RoomPosition,
+    room: Room,
+    structureType: STRUCTURE_KEEPER_LAIR,
+    owner: Owner = null,
+    ticksToSpawn: js.UndefOr[Double] = js.undefined
+  ): StructureKeeperLair = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), effects = effects.asInstanceOf[js.Any], hits = hits.asInstanceOf[js.Any], hitsMax = hitsMax.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isActive = js.Any.fromFunction0(isActive), my = my.asInstanceOf[js.Any], notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), pos = pos.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], structureType = structureType.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (!js.isUndefined(ticksToSpawn)) __obj.updateDynamic("ticksToSpawn")(ticksToSpawn.get.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StructureKeeperLair]
+  }
+}
 

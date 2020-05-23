@@ -25,19 +25,19 @@ object signature extends js.Object {
     def armor(): ReadableStream[String] = js.native
   }
   
-  def read(input: ReadableStream[Uint8Array]): Signature = js.native
+  def read(input: ReadableStream[Uint8Array]): js.Promise[Signature] = js.native
   /**
     * reads an OpenPGP signature as byte array and returns a signature object
     * @param input binary signature
     * @returns new signature object
     */
-  def read(input: Uint8Array): Signature = js.native
+  def read(input: Uint8Array): js.Promise[Signature] = js.native
   /**
     * reads an OpenPGP armored signature and returns a signature object
     * @param armoredText text to be parsed
     * @returns new signature object
     */
-  def readArmored(armoredText: String): Signature = js.native
-  def readArmored(armoredText: ReadableStream[String]): Signature = js.native
+  def readArmored(armoredText: String): js.Promise[Signature] = js.native
+  def readArmored(armoredText: ReadableStream[String]): js.Promise[Signature] = js.native
 }
 

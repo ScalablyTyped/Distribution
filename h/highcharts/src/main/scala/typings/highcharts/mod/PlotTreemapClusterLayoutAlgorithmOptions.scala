@@ -86,15 +86,15 @@ object PlotTreemapClusterLayoutAlgorithmOptions {
   def apply(
     distance: Double | String = null,
     gridSize: Double | String = null,
-    iterations: Int | Double = null,
-    kmeansThreshold: Int | Double = null,
+    iterations: js.UndefOr[Double] = js.undefined,
+    kmeansThreshold: js.UndefOr[Double] = js.undefined,
     `type`: String | js.Function = null
   ): PlotTreemapClusterLayoutAlgorithmOptions = {
     val __obj = js.Dynamic.literal()
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
     if (gridSize != null) __obj.updateDynamic("gridSize")(gridSize.asInstanceOf[js.Any])
-    if (iterations != null) __obj.updateDynamic("iterations")(iterations.asInstanceOf[js.Any])
-    if (kmeansThreshold != null) __obj.updateDynamic("kmeansThreshold")(kmeansThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(iterations)) __obj.updateDynamic("iterations")(iterations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(kmeansThreshold)) __obj.updateDynamic("kmeansThreshold")(kmeansThreshold.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotTreemapClusterLayoutAlgorithmOptions]
   }

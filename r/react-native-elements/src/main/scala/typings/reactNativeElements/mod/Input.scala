@@ -1,7 +1,7 @@
 package typings.reactNativeElements.mod
 
 import typings.react.mod.Component
-import typings.reactNativeElements.PartialTextInputProps
+import typings.reactNativeElements.anon.PartialTextInputProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

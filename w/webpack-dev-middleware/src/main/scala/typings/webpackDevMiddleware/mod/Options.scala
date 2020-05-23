@@ -83,8 +83,10 @@ object Options {
     logTime: js.UndefOr[Boolean] = js.undefined,
     logger: Logger = null,
     methods: js.Array[String] = null,
-    mimeTypes: MimeTypeMap | OverrideMimeTypeMap = null,
-    reporter: (/* middlewareOptions */ Options, /* reporterOptions */ ReporterOptions) => Unit = null,
+    mimeTypes: js.UndefOr[Null | MimeTypeMap | OverrideMimeTypeMap] = js.undefined,
+    reporter: js.UndefOr[
+      Null | ((/* middlewareOptions */ Options, /* reporterOptions */ ReporterOptions) => Unit)
+    ] = js.undefined,
     serverSideRender: js.UndefOr[Boolean] = js.undefined,
     stats: Stats = null,
     watchOptions: WatchOptions = null,
@@ -95,14 +97,14 @@ object Options {
     if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.get.asInstanceOf[js.Any])
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(logTime)) __obj.updateDynamic("logTime")(logTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(logTime)) __obj.updateDynamic("logTime")(logTime.get.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
-    if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes.asInstanceOf[js.Any])
-    if (reporter != null) __obj.updateDynamic("reporter")(js.Any.fromFunction2(reporter))
-    if (!js.isUndefined(serverSideRender)) __obj.updateDynamic("serverSideRender")(serverSideRender.asInstanceOf[js.Any])
+    if (!js.isUndefined(mimeTypes)) __obj.updateDynamic("mimeTypes")(mimeTypes.asInstanceOf[js.Any])
+    if (!js.isUndefined(reporter)) __obj.updateDynamic("reporter")(if (reporter != null) js.Any.fromFunction2(reporter.asInstanceOf[(/* middlewareOptions */ Options, /* reporterOptions */ ReporterOptions) => Unit]) else null)
+    if (!js.isUndefined(serverSideRender)) __obj.updateDynamic("serverSideRender")(serverSideRender.get.asInstanceOf[js.Any])
     if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
     if (watchOptions != null) __obj.updateDynamic("watchOptions")(watchOptions.asInstanceOf[js.Any])
     if (writeToDisk != null) __obj.updateDynamic("writeToDisk")(writeToDisk.asInstanceOf[js.Any])

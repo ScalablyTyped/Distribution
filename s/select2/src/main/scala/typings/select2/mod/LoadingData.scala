@@ -13,15 +13,8 @@ trait LoadingData extends js.Object {
 
 object LoadingData {
   @scala.inline
-  def apply(
-    loading: Boolean,
-    text: String,
-    element: js.UndefOr[scala.Nothing] = js.undefined,
-    id: js.UndefOr[scala.Nothing] = js.undefined
-  ): LoadingData = {
+  def apply(loading: Boolean, text: String): LoadingData = {
     val __obj = js.Dynamic.literal(loading = loading.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-    if (!js.isUndefined(element)) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadingData]
   }
 }

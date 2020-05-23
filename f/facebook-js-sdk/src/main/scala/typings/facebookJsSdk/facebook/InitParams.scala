@@ -28,13 +28,13 @@ object InitParams {
     xfbml: js.UndefOr[Boolean] = js.undefined
   ): InitParams = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoLogAppEvents)) __obj.updateDynamic("autoLogAppEvents")(autoLogAppEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(cookie)) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
-    if (!js.isUndefined(frictionlessRequests)) __obj.updateDynamic("frictionlessRequests")(frictionlessRequests.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideFlashCallback)) __obj.updateDynamic("hideFlashCallback")(hideFlashCallback.asInstanceOf[js.Any])
-    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoLogAppEvents)) __obj.updateDynamic("autoLogAppEvents")(autoLogAppEvents.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cookie)) __obj.updateDynamic("cookie")(cookie.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(frictionlessRequests)) __obj.updateDynamic("frictionlessRequests")(frictionlessRequests.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideFlashCallback)) __obj.updateDynamic("hideFlashCallback")(hideFlashCallback.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (!js.isUndefined(xfbml)) __obj.updateDynamic("xfbml")(xfbml.asInstanceOf[js.Any])
+    if (!js.isUndefined(xfbml)) __obj.updateDynamic("xfbml")(xfbml.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitParams]
   }
 }

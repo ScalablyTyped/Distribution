@@ -26,18 +26,18 @@ object Options {
   @scala.inline
   def apply(
     categoryFilter: js.Array[String] = null,
-    pixelRatio: Int | Double = null,
+    pixelRatio: js.UndefOr[Double] = js.undefined,
     scheme: String = null,
-    tileCacheSize: Int | Double = null,
-    tileSize: Int | Double = null,
+    tileCacheSize: js.UndefOr[Double] = js.undefined,
+    tileSize: js.UndefOr[Double] = js.undefined,
     tileType: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (categoryFilter != null) __obj.updateDynamic("categoryFilter")(categoryFilter.asInstanceOf[js.Any])
-    if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(pixelRatio)) __obj.updateDynamic("pixelRatio")(pixelRatio.get.asInstanceOf[js.Any])
     if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
-    if (tileCacheSize != null) __obj.updateDynamic("tileCacheSize")(tileCacheSize.asInstanceOf[js.Any])
-    if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(tileCacheSize)) __obj.updateDynamic("tileCacheSize")(tileCacheSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tileSize)) __obj.updateDynamic("tileSize")(tileSize.get.asInstanceOf[js.Any])
     if (tileType != null) __obj.updateDynamic("tileType")(tileType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

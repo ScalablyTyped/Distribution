@@ -22,11 +22,15 @@ trait TOTPVerifyOpt extends TOTPGenOpt {
 
 object TOTPVerifyOpt {
   @scala.inline
-  def apply(_t: Int | Double = null, time: Int | Double = null, window: Int | Double = null): TOTPVerifyOpt = {
+  def apply(
+    _t: js.UndefOr[Double] = js.undefined,
+    time: js.UndefOr[Double] = js.undefined,
+    window: js.UndefOr[Double] = js.undefined
+  ): TOTPVerifyOpt = {
     val __obj = js.Dynamic.literal()
-    if (_t != null) __obj.updateDynamic("_t")(_t.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
-    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
+    if (!js.isUndefined(_t)) __obj.updateDynamic("_t")(_t.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(time)) __obj.updateDynamic("time")(time.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(window)) __obj.updateDynamic("window")(window.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TOTPVerifyOpt]
   }
 }

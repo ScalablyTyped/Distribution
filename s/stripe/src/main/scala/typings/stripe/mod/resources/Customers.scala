@@ -1,6 +1,6 @@
 package typings.stripe.mod.resources
 
-import typings.stripe.AnonCard
+import typings.stripe.anon.Card
 import typings.stripe.mod.HeaderOptions
 import typings.stripe.mod.IDataOptions
 import typings.stripe.mod.IDeleteConfirmation
@@ -114,7 +114,7 @@ class Customers () extends StripeResource {
     data: ICustomerBalanceTransactionCreationOptions,
     response: IResponseFn[ICustomerBalanceTransaction]
   ): js.Promise[ICustomerBalanceTransaction] = js.native
-  def createCard(customerId: String, data: AnonCard): js.Promise[ICard] = js.native
+  def createCard(customerId: String, data: Card): js.Promise[ICard] = js.native
   /**
     * When you create a new credit card, you must specify a customer or recipient to create it on. If the card's owner has no default card,
     * then the new card will become the default. However, if the owner already has a default then it will not change. To change the default,
@@ -126,9 +126,9 @@ class Customers () extends StripeResource {
     *
     * @deprecated
     */
-  def createCard(customerId: String, data: AnonCard, options: HeaderOptions): js.Promise[ICard] = js.native
-  def createCard(customerId: String, data: AnonCard, options: HeaderOptions, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
-  def createCard(customerId: String, data: AnonCard, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
+  def createCard(customerId: String, data: Card, options: HeaderOptions): js.Promise[ICard] = js.native
+  def createCard(customerId: String, data: Card, options: HeaderOptions, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
+  def createCard(customerId: String, data: Card, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
   def createSource(customerId: String, data: ICustomerBankAccountSourceCreationOptions): js.Promise[IBankAccount] = js.native
   /**
     * When adding a bank account to a customer, the parameter name is source. When

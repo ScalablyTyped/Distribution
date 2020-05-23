@@ -18,10 +18,14 @@ trait CollectdPayloadError extends js.Object {
 
 object CollectdPayloadError {
   @scala.inline
-  def apply(error: Status = null, index: Int | Double = null, valueErrors: js.Array[CollectdValueError] = null): CollectdPayloadError = {
+  def apply(
+    error: Status = null,
+    index: js.UndefOr[Double] = js.undefined,
+    valueErrors: js.Array[CollectdValueError] = null
+  ): CollectdPayloadError = {
     val __obj = js.Dynamic.literal()
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (valueErrors != null) __obj.updateDynamic("valueErrors")(valueErrors.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectdPayloadError]
   }

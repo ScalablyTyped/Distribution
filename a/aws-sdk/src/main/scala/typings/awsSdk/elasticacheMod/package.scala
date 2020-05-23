@@ -163,6 +163,9 @@ package object elasticacheMod {
     - typings.awsSdk.awsSdkStrings.stopping__
     - typings.awsSdk.awsSdkStrings.stopped__
     - typings.awsSdk.awsSdkStrings.complete__
+    - typings.awsSdk.awsSdkStrings.scheduling_
+    - typings.awsSdk.awsSdkStrings.scheduled__
+    - typings.awsSdk.awsSdkStrings.`not-applicable`
     - java.lang.String
   */
   type UpdateActionStatus = typings.awsSdk.elasticacheMod._UpdateActionStatus | java.lang.String

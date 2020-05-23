@@ -24,7 +24,7 @@ object PreviewReportEventArgs {
     reportViewer: js.Any = null
   ): PreviewReportEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancelDataInputDialog)) __obj.updateDynamic("cancelDataInputDialog")(cancelDataInputDialog.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelDataInputDialog)) __obj.updateDynamic("cancelDataInputDialog")(cancelDataInputDialog.get.asInstanceOf[js.Any])
     if (dataSets != null) __obj.updateDynamic("dataSets")(dataSets.asInstanceOf[js.Any])
     if (reportViewer != null) __obj.updateDynamic("reportViewer")(reportViewer.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreviewReportEventArgs]

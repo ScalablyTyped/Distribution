@@ -1,6 +1,5 @@
 package typings.tableau.tableau
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,20 +25,6 @@ object FilterType extends js.Object {
   /** Relative date filters are used to filter a date/time domain to a range of values relative to a fixed point in time. */
   @js.native
   sealed trait RELATIVE_DATE extends FilterType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[FilterType with String] = js.native
-  /* "categorical" */ @js.native
-  object CATEGORICAL extends TopLevel[CATEGORICAL with String]
-  
-  /* "hierarchical" */ @js.native
-  object HIERARCHICAL extends TopLevel[HIERARCHICAL with String]
-  
-  /* "quantitative" */ @js.native
-  object QUANTITATIVE extends TopLevel[QUANTITATIVE with String]
-  
-  /* "relativedate" */ @js.native
-  object RELATIVE_DATE extends TopLevel[RELATIVE_DATE with String]
   
 }
 

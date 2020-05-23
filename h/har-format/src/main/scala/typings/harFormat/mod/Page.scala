@@ -187,163 +187,163 @@ object Page {
     pageTimings: PageTiming,
     startedDateTime: String,
     title: String,
-    _SpeedIndex: Int | Double = null,
-    _TTFB: Int | Double = null,
-    _URL: String = null,
-    _adult_site: Int | Double = null,
-    _aft: Int | Double = null,
-    _base_page_cdn: String = null,
-    _base_page_redirects: Int | Double = null,
-    _base_page_ttfb: Int | Double = null,
-    _browser_main_memory_kb: Int | Double = null,
-    _browser_name: String = null,
-    _browser_other_private_memory_kb: Int | Double = null,
-    _browser_process_count: Int | Double = null,
-    _browser_version: String = null,
-    _browser_working_set_kb: Int | Double = null,
-    _bytesIn: Int | Double = null,
-    _bytesInDoc: Int | Double = null,
-    _bytesOut: Int | Double = null,
-    _bytesOutDoc: Int | Double = null,
-    _cached: Int | Double = null,
-    _certificate_bytes: Int | Double = null,
-    _connections: Int | Double = null,
-    _date: Int | Double = null,
-    _docCPUms: Int | Double = null,
-    _docCPUpct: Int | Double = null,
-    _docTime: Int | Double = null,
-    _domContentLoadedEventEnd: Int | Double = null,
-    _domContentLoadedEventStart: Int | Double = null,
-    _domElements: Int | Double = null,
-    _domInteractive: Int | Double = null,
-    _domLoading: Int | Double = null,
-    _domTime: Int | Double = null,
-    _effectiveBps: Int | Double = null,
-    _effectiveBpsDoc: Int | Double = null,
-    _eventName: String = null,
-    _firstPaint: Int | Double = null,
-    _fixed_viewport: Int | Double = null,
-    _fullyLoaded: Int | Double = null,
-    _fullyLoadedCPUms: Int | Double = null,
-    _fullyLoadedCPUpct: Int | Double = null,
-    _gzip_savings: Int | Double = null,
-    _gzip_total: Int | Double = null,
-    _image_savings: Int | Double = null,
-    _image_total: Int | Double = null,
-    _isResponsive: Int | Double = null,
-    _lastVisualChange: Int | Double = null,
-    _loadEventEnd: Int | Double = null,
-    _loadEventStart: Int | Double = null,
-    _loadTime: Int | Double = null,
-    _minify_savings: Int | Double = null,
-    _minify_total: Int | Double = null,
-    _optimization_checked: Int | Double = null,
-    _pageSpeedVersion: String = null,
-    _render: Int | Double = null,
-    _requests: Int | Double = null,
-    _requestsDoc: Int | Double = null,
-    _requestsFull: Int | Double = null,
-    _responses_200: Int | Double = null,
-    _responses_404: Int | Double = null,
-    _responses_other: Int | Double = null,
-    _result: Int | Double = null,
-    _run: Int | Double = null,
-    _score_cache: Int | Double = null,
-    _score_cdn: Int | Double = null,
-    _score_combine: Int | Double = null,
-    _score_compress: Int | Double = null,
-    _score_cookies: Int | Double = null,
-    _score_etags: Int | Double = null,
-    _score_gzip: Int | Double = null,
-    `_score_keep-alive`: Int | Double = null,
-    _score_minify: Int | Double = null,
-    _score_progressive_jpeg: Int | Double = null,
-    _server_count: Int | Double = null,
-    _server_rtt: Int | Double = null,
-    _step: Int | Double = null,
-    _title: String = null,
-    _titleTime: Int | Double = null,
-    _visualComplete: Int | Double = null,
+    _SpeedIndex: js.UndefOr[Null | Double] = js.undefined,
+    _TTFB: js.UndefOr[Null | Double] = js.undefined,
+    _URL: js.UndefOr[Null | String] = js.undefined,
+    _adult_site: js.UndefOr[Null | Double] = js.undefined,
+    _aft: js.UndefOr[Null | Double] = js.undefined,
+    _base_page_cdn: js.UndefOr[Null | String] = js.undefined,
+    _base_page_redirects: js.UndefOr[Null | Double] = js.undefined,
+    _base_page_ttfb: js.UndefOr[Null | Double] = js.undefined,
+    _browser_main_memory_kb: js.UndefOr[Null | Double] = js.undefined,
+    _browser_name: js.UndefOr[Null | String] = js.undefined,
+    _browser_other_private_memory_kb: js.UndefOr[Null | Double] = js.undefined,
+    _browser_process_count: js.UndefOr[Null | Double] = js.undefined,
+    _browser_version: js.UndefOr[Null | String] = js.undefined,
+    _browser_working_set_kb: js.UndefOr[Null | Double] = js.undefined,
+    _bytesIn: js.UndefOr[Null | Double] = js.undefined,
+    _bytesInDoc: js.UndefOr[Null | Double] = js.undefined,
+    _bytesOut: js.UndefOr[Null | Double] = js.undefined,
+    _bytesOutDoc: js.UndefOr[Null | Double] = js.undefined,
+    _cached: js.UndefOr[Null | Double] = js.undefined,
+    _certificate_bytes: js.UndefOr[Null | Double] = js.undefined,
+    _connections: js.UndefOr[Null | Double] = js.undefined,
+    _date: js.UndefOr[Null | Double] = js.undefined,
+    _docCPUms: js.UndefOr[Null | Double] = js.undefined,
+    _docCPUpct: js.UndefOr[Null | Double] = js.undefined,
+    _docTime: js.UndefOr[Null | Double] = js.undefined,
+    _domContentLoadedEventEnd: js.UndefOr[Null | Double] = js.undefined,
+    _domContentLoadedEventStart: js.UndefOr[Null | Double] = js.undefined,
+    _domElements: js.UndefOr[Null | Double] = js.undefined,
+    _domInteractive: js.UndefOr[Null | Double] = js.undefined,
+    _domLoading: js.UndefOr[Null | Double] = js.undefined,
+    _domTime: js.UndefOr[Null | Double] = js.undefined,
+    _effectiveBps: js.UndefOr[Null | Double] = js.undefined,
+    _effectiveBpsDoc: js.UndefOr[Null | Double] = js.undefined,
+    _eventName: js.UndefOr[Null | String] = js.undefined,
+    _firstPaint: js.UndefOr[Null | Double] = js.undefined,
+    _fixed_viewport: js.UndefOr[Null | Double] = js.undefined,
+    _fullyLoaded: js.UndefOr[Null | Double] = js.undefined,
+    _fullyLoadedCPUms: js.UndefOr[Null | Double] = js.undefined,
+    _fullyLoadedCPUpct: js.UndefOr[Null | Double] = js.undefined,
+    _gzip_savings: js.UndefOr[Null | Double] = js.undefined,
+    _gzip_total: js.UndefOr[Null | Double] = js.undefined,
+    _image_savings: js.UndefOr[Null | Double] = js.undefined,
+    _image_total: js.UndefOr[Null | Double] = js.undefined,
+    _isResponsive: js.UndefOr[Null | Double] = js.undefined,
+    _lastVisualChange: js.UndefOr[Null | Double] = js.undefined,
+    _loadEventEnd: js.UndefOr[Null | Double] = js.undefined,
+    _loadEventStart: js.UndefOr[Null | Double] = js.undefined,
+    _loadTime: js.UndefOr[Null | Double] = js.undefined,
+    _minify_savings: js.UndefOr[Null | Double] = js.undefined,
+    _minify_total: js.UndefOr[Null | Double] = js.undefined,
+    _optimization_checked: js.UndefOr[Null | Double] = js.undefined,
+    _pageSpeedVersion: js.UndefOr[Null | String] = js.undefined,
+    _render: js.UndefOr[Null | Double] = js.undefined,
+    _requests: js.UndefOr[Null | Double] = js.undefined,
+    _requestsDoc: js.UndefOr[Null | Double] = js.undefined,
+    _requestsFull: js.UndefOr[Null | Double] = js.undefined,
+    _responses_200: js.UndefOr[Null | Double] = js.undefined,
+    _responses_404: js.UndefOr[Null | Double] = js.undefined,
+    _responses_other: js.UndefOr[Null | Double] = js.undefined,
+    _result: js.UndefOr[Null | Double] = js.undefined,
+    _run: js.UndefOr[Null | Double] = js.undefined,
+    _score_cache: js.UndefOr[Null | Double] = js.undefined,
+    _score_cdn: js.UndefOr[Null | Double] = js.undefined,
+    _score_combine: js.UndefOr[Null | Double] = js.undefined,
+    _score_compress: js.UndefOr[Null | Double] = js.undefined,
+    _score_cookies: js.UndefOr[Null | Double] = js.undefined,
+    _score_etags: js.UndefOr[Null | Double] = js.undefined,
+    _score_gzip: js.UndefOr[Null | Double] = js.undefined,
+    `_score_keep-alive`: js.UndefOr[Null | Double] = js.undefined,
+    _score_minify: js.UndefOr[Null | Double] = js.undefined,
+    _score_progressive_jpeg: js.UndefOr[Null | Double] = js.undefined,
+    _server_count: js.UndefOr[Null | Double] = js.undefined,
+    _server_rtt: js.UndefOr[Null | Double] = js.undefined,
+    _step: js.UndefOr[Null | Double] = js.undefined,
+    _title: js.UndefOr[Null | String] = js.undefined,
+    _titleTime: js.UndefOr[Null | Double] = js.undefined,
+    _visualComplete: js.UndefOr[Null | Double] = js.undefined,
     comment: String = null
   ): Page = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], pageTimings = pageTimings.asInstanceOf[js.Any], startedDateTime = startedDateTime.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    if (_SpeedIndex != null) __obj.updateDynamic("_SpeedIndex")(_SpeedIndex.asInstanceOf[js.Any])
-    if (_TTFB != null) __obj.updateDynamic("_TTFB")(_TTFB.asInstanceOf[js.Any])
-    if (_URL != null) __obj.updateDynamic("_URL")(_URL.asInstanceOf[js.Any])
-    if (_adult_site != null) __obj.updateDynamic("_adult_site")(_adult_site.asInstanceOf[js.Any])
-    if (_aft != null) __obj.updateDynamic("_aft")(_aft.asInstanceOf[js.Any])
-    if (_base_page_cdn != null) __obj.updateDynamic("_base_page_cdn")(_base_page_cdn.asInstanceOf[js.Any])
-    if (_base_page_redirects != null) __obj.updateDynamic("_base_page_redirects")(_base_page_redirects.asInstanceOf[js.Any])
-    if (_base_page_ttfb != null) __obj.updateDynamic("_base_page_ttfb")(_base_page_ttfb.asInstanceOf[js.Any])
-    if (_browser_main_memory_kb != null) __obj.updateDynamic("_browser_main_memory_kb")(_browser_main_memory_kb.asInstanceOf[js.Any])
-    if (_browser_name != null) __obj.updateDynamic("_browser_name")(_browser_name.asInstanceOf[js.Any])
-    if (_browser_other_private_memory_kb != null) __obj.updateDynamic("_browser_other_private_memory_kb")(_browser_other_private_memory_kb.asInstanceOf[js.Any])
-    if (_browser_process_count != null) __obj.updateDynamic("_browser_process_count")(_browser_process_count.asInstanceOf[js.Any])
-    if (_browser_version != null) __obj.updateDynamic("_browser_version")(_browser_version.asInstanceOf[js.Any])
-    if (_browser_working_set_kb != null) __obj.updateDynamic("_browser_working_set_kb")(_browser_working_set_kb.asInstanceOf[js.Any])
-    if (_bytesIn != null) __obj.updateDynamic("_bytesIn")(_bytesIn.asInstanceOf[js.Any])
-    if (_bytesInDoc != null) __obj.updateDynamic("_bytesInDoc")(_bytesInDoc.asInstanceOf[js.Any])
-    if (_bytesOut != null) __obj.updateDynamic("_bytesOut")(_bytesOut.asInstanceOf[js.Any])
-    if (_bytesOutDoc != null) __obj.updateDynamic("_bytesOutDoc")(_bytesOutDoc.asInstanceOf[js.Any])
-    if (_cached != null) __obj.updateDynamic("_cached")(_cached.asInstanceOf[js.Any])
-    if (_certificate_bytes != null) __obj.updateDynamic("_certificate_bytes")(_certificate_bytes.asInstanceOf[js.Any])
-    if (_connections != null) __obj.updateDynamic("_connections")(_connections.asInstanceOf[js.Any])
-    if (_date != null) __obj.updateDynamic("_date")(_date.asInstanceOf[js.Any])
-    if (_docCPUms != null) __obj.updateDynamic("_docCPUms")(_docCPUms.asInstanceOf[js.Any])
-    if (_docCPUpct != null) __obj.updateDynamic("_docCPUpct")(_docCPUpct.asInstanceOf[js.Any])
-    if (_docTime != null) __obj.updateDynamic("_docTime")(_docTime.asInstanceOf[js.Any])
-    if (_domContentLoadedEventEnd != null) __obj.updateDynamic("_domContentLoadedEventEnd")(_domContentLoadedEventEnd.asInstanceOf[js.Any])
-    if (_domContentLoadedEventStart != null) __obj.updateDynamic("_domContentLoadedEventStart")(_domContentLoadedEventStart.asInstanceOf[js.Any])
-    if (_domElements != null) __obj.updateDynamic("_domElements")(_domElements.asInstanceOf[js.Any])
-    if (_domInteractive != null) __obj.updateDynamic("_domInteractive")(_domInteractive.asInstanceOf[js.Any])
-    if (_domLoading != null) __obj.updateDynamic("_domLoading")(_domLoading.asInstanceOf[js.Any])
-    if (_domTime != null) __obj.updateDynamic("_domTime")(_domTime.asInstanceOf[js.Any])
-    if (_effectiveBps != null) __obj.updateDynamic("_effectiveBps")(_effectiveBps.asInstanceOf[js.Any])
-    if (_effectiveBpsDoc != null) __obj.updateDynamic("_effectiveBpsDoc")(_effectiveBpsDoc.asInstanceOf[js.Any])
-    if (_eventName != null) __obj.updateDynamic("_eventName")(_eventName.asInstanceOf[js.Any])
-    if (_firstPaint != null) __obj.updateDynamic("_firstPaint")(_firstPaint.asInstanceOf[js.Any])
-    if (_fixed_viewport != null) __obj.updateDynamic("_fixed_viewport")(_fixed_viewport.asInstanceOf[js.Any])
-    if (_fullyLoaded != null) __obj.updateDynamic("_fullyLoaded")(_fullyLoaded.asInstanceOf[js.Any])
-    if (_fullyLoadedCPUms != null) __obj.updateDynamic("_fullyLoadedCPUms")(_fullyLoadedCPUms.asInstanceOf[js.Any])
-    if (_fullyLoadedCPUpct != null) __obj.updateDynamic("_fullyLoadedCPUpct")(_fullyLoadedCPUpct.asInstanceOf[js.Any])
-    if (_gzip_savings != null) __obj.updateDynamic("_gzip_savings")(_gzip_savings.asInstanceOf[js.Any])
-    if (_gzip_total != null) __obj.updateDynamic("_gzip_total")(_gzip_total.asInstanceOf[js.Any])
-    if (_image_savings != null) __obj.updateDynamic("_image_savings")(_image_savings.asInstanceOf[js.Any])
-    if (_image_total != null) __obj.updateDynamic("_image_total")(_image_total.asInstanceOf[js.Any])
-    if (_isResponsive != null) __obj.updateDynamic("_isResponsive")(_isResponsive.asInstanceOf[js.Any])
-    if (_lastVisualChange != null) __obj.updateDynamic("_lastVisualChange")(_lastVisualChange.asInstanceOf[js.Any])
-    if (_loadEventEnd != null) __obj.updateDynamic("_loadEventEnd")(_loadEventEnd.asInstanceOf[js.Any])
-    if (_loadEventStart != null) __obj.updateDynamic("_loadEventStart")(_loadEventStart.asInstanceOf[js.Any])
-    if (_loadTime != null) __obj.updateDynamic("_loadTime")(_loadTime.asInstanceOf[js.Any])
-    if (_minify_savings != null) __obj.updateDynamic("_minify_savings")(_minify_savings.asInstanceOf[js.Any])
-    if (_minify_total != null) __obj.updateDynamic("_minify_total")(_minify_total.asInstanceOf[js.Any])
-    if (_optimization_checked != null) __obj.updateDynamic("_optimization_checked")(_optimization_checked.asInstanceOf[js.Any])
-    if (_pageSpeedVersion != null) __obj.updateDynamic("_pageSpeedVersion")(_pageSpeedVersion.asInstanceOf[js.Any])
-    if (_render != null) __obj.updateDynamic("_render")(_render.asInstanceOf[js.Any])
-    if (_requests != null) __obj.updateDynamic("_requests")(_requests.asInstanceOf[js.Any])
-    if (_requestsDoc != null) __obj.updateDynamic("_requestsDoc")(_requestsDoc.asInstanceOf[js.Any])
-    if (_requestsFull != null) __obj.updateDynamic("_requestsFull")(_requestsFull.asInstanceOf[js.Any])
-    if (_responses_200 != null) __obj.updateDynamic("_responses_200")(_responses_200.asInstanceOf[js.Any])
-    if (_responses_404 != null) __obj.updateDynamic("_responses_404")(_responses_404.asInstanceOf[js.Any])
-    if (_responses_other != null) __obj.updateDynamic("_responses_other")(_responses_other.asInstanceOf[js.Any])
-    if (_result != null) __obj.updateDynamic("_result")(_result.asInstanceOf[js.Any])
-    if (_run != null) __obj.updateDynamic("_run")(_run.asInstanceOf[js.Any])
-    if (_score_cache != null) __obj.updateDynamic("_score_cache")(_score_cache.asInstanceOf[js.Any])
-    if (_score_cdn != null) __obj.updateDynamic("_score_cdn")(_score_cdn.asInstanceOf[js.Any])
-    if (_score_combine != null) __obj.updateDynamic("_score_combine")(_score_combine.asInstanceOf[js.Any])
-    if (_score_compress != null) __obj.updateDynamic("_score_compress")(_score_compress.asInstanceOf[js.Any])
-    if (_score_cookies != null) __obj.updateDynamic("_score_cookies")(_score_cookies.asInstanceOf[js.Any])
-    if (_score_etags != null) __obj.updateDynamic("_score_etags")(_score_etags.asInstanceOf[js.Any])
-    if (_score_gzip != null) __obj.updateDynamic("_score_gzip")(_score_gzip.asInstanceOf[js.Any])
-    if (`_score_keep-alive` != null) __obj.updateDynamic("_score_keep-alive")(`_score_keep-alive`.asInstanceOf[js.Any])
-    if (_score_minify != null) __obj.updateDynamic("_score_minify")(_score_minify.asInstanceOf[js.Any])
-    if (_score_progressive_jpeg != null) __obj.updateDynamic("_score_progressive_jpeg")(_score_progressive_jpeg.asInstanceOf[js.Any])
-    if (_server_count != null) __obj.updateDynamic("_server_count")(_server_count.asInstanceOf[js.Any])
-    if (_server_rtt != null) __obj.updateDynamic("_server_rtt")(_server_rtt.asInstanceOf[js.Any])
-    if (_step != null) __obj.updateDynamic("_step")(_step.asInstanceOf[js.Any])
-    if (_title != null) __obj.updateDynamic("_title")(_title.asInstanceOf[js.Any])
-    if (_titleTime != null) __obj.updateDynamic("_titleTime")(_titleTime.asInstanceOf[js.Any])
-    if (_visualComplete != null) __obj.updateDynamic("_visualComplete")(_visualComplete.asInstanceOf[js.Any])
+    if (!js.isUndefined(_SpeedIndex)) __obj.updateDynamic("_SpeedIndex")(_SpeedIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(_TTFB)) __obj.updateDynamic("_TTFB")(_TTFB.asInstanceOf[js.Any])
+    if (!js.isUndefined(_URL)) __obj.updateDynamic("_URL")(_URL.asInstanceOf[js.Any])
+    if (!js.isUndefined(_adult_site)) __obj.updateDynamic("_adult_site")(_adult_site.asInstanceOf[js.Any])
+    if (!js.isUndefined(_aft)) __obj.updateDynamic("_aft")(_aft.asInstanceOf[js.Any])
+    if (!js.isUndefined(_base_page_cdn)) __obj.updateDynamic("_base_page_cdn")(_base_page_cdn.asInstanceOf[js.Any])
+    if (!js.isUndefined(_base_page_redirects)) __obj.updateDynamic("_base_page_redirects")(_base_page_redirects.asInstanceOf[js.Any])
+    if (!js.isUndefined(_base_page_ttfb)) __obj.updateDynamic("_base_page_ttfb")(_base_page_ttfb.asInstanceOf[js.Any])
+    if (!js.isUndefined(_browser_main_memory_kb)) __obj.updateDynamic("_browser_main_memory_kb")(_browser_main_memory_kb.asInstanceOf[js.Any])
+    if (!js.isUndefined(_browser_name)) __obj.updateDynamic("_browser_name")(_browser_name.asInstanceOf[js.Any])
+    if (!js.isUndefined(_browser_other_private_memory_kb)) __obj.updateDynamic("_browser_other_private_memory_kb")(_browser_other_private_memory_kb.asInstanceOf[js.Any])
+    if (!js.isUndefined(_browser_process_count)) __obj.updateDynamic("_browser_process_count")(_browser_process_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(_browser_version)) __obj.updateDynamic("_browser_version")(_browser_version.asInstanceOf[js.Any])
+    if (!js.isUndefined(_browser_working_set_kb)) __obj.updateDynamic("_browser_working_set_kb")(_browser_working_set_kb.asInstanceOf[js.Any])
+    if (!js.isUndefined(_bytesIn)) __obj.updateDynamic("_bytesIn")(_bytesIn.asInstanceOf[js.Any])
+    if (!js.isUndefined(_bytesInDoc)) __obj.updateDynamic("_bytesInDoc")(_bytesInDoc.asInstanceOf[js.Any])
+    if (!js.isUndefined(_bytesOut)) __obj.updateDynamic("_bytesOut")(_bytesOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(_bytesOutDoc)) __obj.updateDynamic("_bytesOutDoc")(_bytesOutDoc.asInstanceOf[js.Any])
+    if (!js.isUndefined(_cached)) __obj.updateDynamic("_cached")(_cached.asInstanceOf[js.Any])
+    if (!js.isUndefined(_certificate_bytes)) __obj.updateDynamic("_certificate_bytes")(_certificate_bytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(_connections)) __obj.updateDynamic("_connections")(_connections.asInstanceOf[js.Any])
+    if (!js.isUndefined(_date)) __obj.updateDynamic("_date")(_date.asInstanceOf[js.Any])
+    if (!js.isUndefined(_docCPUms)) __obj.updateDynamic("_docCPUms")(_docCPUms.asInstanceOf[js.Any])
+    if (!js.isUndefined(_docCPUpct)) __obj.updateDynamic("_docCPUpct")(_docCPUpct.asInstanceOf[js.Any])
+    if (!js.isUndefined(_docTime)) __obj.updateDynamic("_docTime")(_docTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(_domContentLoadedEventEnd)) __obj.updateDynamic("_domContentLoadedEventEnd")(_domContentLoadedEventEnd.asInstanceOf[js.Any])
+    if (!js.isUndefined(_domContentLoadedEventStart)) __obj.updateDynamic("_domContentLoadedEventStart")(_domContentLoadedEventStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(_domElements)) __obj.updateDynamic("_domElements")(_domElements.asInstanceOf[js.Any])
+    if (!js.isUndefined(_domInteractive)) __obj.updateDynamic("_domInteractive")(_domInteractive.asInstanceOf[js.Any])
+    if (!js.isUndefined(_domLoading)) __obj.updateDynamic("_domLoading")(_domLoading.asInstanceOf[js.Any])
+    if (!js.isUndefined(_domTime)) __obj.updateDynamic("_domTime")(_domTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(_effectiveBps)) __obj.updateDynamic("_effectiveBps")(_effectiveBps.asInstanceOf[js.Any])
+    if (!js.isUndefined(_effectiveBpsDoc)) __obj.updateDynamic("_effectiveBpsDoc")(_effectiveBpsDoc.asInstanceOf[js.Any])
+    if (!js.isUndefined(_eventName)) __obj.updateDynamic("_eventName")(_eventName.asInstanceOf[js.Any])
+    if (!js.isUndefined(_firstPaint)) __obj.updateDynamic("_firstPaint")(_firstPaint.asInstanceOf[js.Any])
+    if (!js.isUndefined(_fixed_viewport)) __obj.updateDynamic("_fixed_viewport")(_fixed_viewport.asInstanceOf[js.Any])
+    if (!js.isUndefined(_fullyLoaded)) __obj.updateDynamic("_fullyLoaded")(_fullyLoaded.asInstanceOf[js.Any])
+    if (!js.isUndefined(_fullyLoadedCPUms)) __obj.updateDynamic("_fullyLoadedCPUms")(_fullyLoadedCPUms.asInstanceOf[js.Any])
+    if (!js.isUndefined(_fullyLoadedCPUpct)) __obj.updateDynamic("_fullyLoadedCPUpct")(_fullyLoadedCPUpct.asInstanceOf[js.Any])
+    if (!js.isUndefined(_gzip_savings)) __obj.updateDynamic("_gzip_savings")(_gzip_savings.asInstanceOf[js.Any])
+    if (!js.isUndefined(_gzip_total)) __obj.updateDynamic("_gzip_total")(_gzip_total.asInstanceOf[js.Any])
+    if (!js.isUndefined(_image_savings)) __obj.updateDynamic("_image_savings")(_image_savings.asInstanceOf[js.Any])
+    if (!js.isUndefined(_image_total)) __obj.updateDynamic("_image_total")(_image_total.asInstanceOf[js.Any])
+    if (!js.isUndefined(_isResponsive)) __obj.updateDynamic("_isResponsive")(_isResponsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(_lastVisualChange)) __obj.updateDynamic("_lastVisualChange")(_lastVisualChange.asInstanceOf[js.Any])
+    if (!js.isUndefined(_loadEventEnd)) __obj.updateDynamic("_loadEventEnd")(_loadEventEnd.asInstanceOf[js.Any])
+    if (!js.isUndefined(_loadEventStart)) __obj.updateDynamic("_loadEventStart")(_loadEventStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(_loadTime)) __obj.updateDynamic("_loadTime")(_loadTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(_minify_savings)) __obj.updateDynamic("_minify_savings")(_minify_savings.asInstanceOf[js.Any])
+    if (!js.isUndefined(_minify_total)) __obj.updateDynamic("_minify_total")(_minify_total.asInstanceOf[js.Any])
+    if (!js.isUndefined(_optimization_checked)) __obj.updateDynamic("_optimization_checked")(_optimization_checked.asInstanceOf[js.Any])
+    if (!js.isUndefined(_pageSpeedVersion)) __obj.updateDynamic("_pageSpeedVersion")(_pageSpeedVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(_render)) __obj.updateDynamic("_render")(_render.asInstanceOf[js.Any])
+    if (!js.isUndefined(_requests)) __obj.updateDynamic("_requests")(_requests.asInstanceOf[js.Any])
+    if (!js.isUndefined(_requestsDoc)) __obj.updateDynamic("_requestsDoc")(_requestsDoc.asInstanceOf[js.Any])
+    if (!js.isUndefined(_requestsFull)) __obj.updateDynamic("_requestsFull")(_requestsFull.asInstanceOf[js.Any])
+    if (!js.isUndefined(_responses_200)) __obj.updateDynamic("_responses_200")(_responses_200.asInstanceOf[js.Any])
+    if (!js.isUndefined(_responses_404)) __obj.updateDynamic("_responses_404")(_responses_404.asInstanceOf[js.Any])
+    if (!js.isUndefined(_responses_other)) __obj.updateDynamic("_responses_other")(_responses_other.asInstanceOf[js.Any])
+    if (!js.isUndefined(_result)) __obj.updateDynamic("_result")(_result.asInstanceOf[js.Any])
+    if (!js.isUndefined(_run)) __obj.updateDynamic("_run")(_run.asInstanceOf[js.Any])
+    if (!js.isUndefined(_score_cache)) __obj.updateDynamic("_score_cache")(_score_cache.asInstanceOf[js.Any])
+    if (!js.isUndefined(_score_cdn)) __obj.updateDynamic("_score_cdn")(_score_cdn.asInstanceOf[js.Any])
+    if (!js.isUndefined(_score_combine)) __obj.updateDynamic("_score_combine")(_score_combine.asInstanceOf[js.Any])
+    if (!js.isUndefined(_score_compress)) __obj.updateDynamic("_score_compress")(_score_compress.asInstanceOf[js.Any])
+    if (!js.isUndefined(_score_cookies)) __obj.updateDynamic("_score_cookies")(_score_cookies.asInstanceOf[js.Any])
+    if (!js.isUndefined(_score_etags)) __obj.updateDynamic("_score_etags")(_score_etags.asInstanceOf[js.Any])
+    if (!js.isUndefined(_score_gzip)) __obj.updateDynamic("_score_gzip")(_score_gzip.asInstanceOf[js.Any])
+    if (!js.isUndefined(`_score_keep-alive`)) __obj.updateDynamic("_score_keep-alive")(`_score_keep-alive`.asInstanceOf[js.Any])
+    if (!js.isUndefined(_score_minify)) __obj.updateDynamic("_score_minify")(_score_minify.asInstanceOf[js.Any])
+    if (!js.isUndefined(_score_progressive_jpeg)) __obj.updateDynamic("_score_progressive_jpeg")(_score_progressive_jpeg.asInstanceOf[js.Any])
+    if (!js.isUndefined(_server_count)) __obj.updateDynamic("_server_count")(_server_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(_server_rtt)) __obj.updateDynamic("_server_rtt")(_server_rtt.asInstanceOf[js.Any])
+    if (!js.isUndefined(_step)) __obj.updateDynamic("_step")(_step.asInstanceOf[js.Any])
+    if (!js.isUndefined(_title)) __obj.updateDynamic("_title")(_title.asInstanceOf[js.Any])
+    if (!js.isUndefined(_titleTime)) __obj.updateDynamic("_titleTime")(_titleTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(_visualComplete)) __obj.updateDynamic("_visualComplete")(_visualComplete.asInstanceOf[js.Any])
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     __obj.asInstanceOf[Page]
   }

@@ -39,12 +39,12 @@ object ChannelSpecification {
     SupportedContentTypes: ContentTypes,
     SupportedInputModes: InputModes,
     Description: EntityDescription = null,
-    IsRequired: js.UndefOr[scala.Boolean] = js.undefined,
+    IsRequired: js.UndefOr[Boolean] = js.undefined,
     SupportedCompressionTypes: CompressionTypes = null
   ): ChannelSpecification = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], SupportedContentTypes = SupportedContentTypes.asInstanceOf[js.Any], SupportedInputModes = SupportedInputModes.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsRequired)) __obj.updateDynamic("IsRequired")(IsRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsRequired)) __obj.updateDynamic("IsRequired")(IsRequired.get.asInstanceOf[js.Any])
     if (SupportedCompressionTypes != null) __obj.updateDynamic("SupportedCompressionTypes")(SupportedCompressionTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelSpecification]
   }

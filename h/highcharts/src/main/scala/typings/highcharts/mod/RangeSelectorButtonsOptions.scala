@@ -47,22 +47,22 @@ trait RangeSelectorButtonsOptions extends js.Object {
 object RangeSelectorButtonsOptions {
   @scala.inline
   def apply(
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     dataGrouping: DataGroupingOptionsObject = null,
     events: RangeSelectorButtonsEventsOptions = null,
-    offsetMax: Int | Double = null,
-    offsetMin: Int | Double = null,
+    offsetMax: js.UndefOr[Double] = js.undefined,
+    offsetMin: js.UndefOr[Double] = js.undefined,
     preserveDataGrouping: js.UndefOr[Boolean] = js.undefined,
     text: String = null,
     `type`: RangeSelectorButtonTypeValue = null
   ): RangeSelectorButtonsOptions = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (offsetMax != null) __obj.updateDynamic("offsetMax")(offsetMax.asInstanceOf[js.Any])
-    if (offsetMin != null) __obj.updateDynamic("offsetMin")(offsetMin.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveDataGrouping)) __obj.updateDynamic("preserveDataGrouping")(preserveDataGrouping.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetMax)) __obj.updateDynamic("offsetMax")(offsetMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetMin)) __obj.updateDynamic("offsetMin")(offsetMin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveDataGrouping)) __obj.updateDynamic("preserveDataGrouping")(preserveDataGrouping.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeSelectorButtonsOptions]

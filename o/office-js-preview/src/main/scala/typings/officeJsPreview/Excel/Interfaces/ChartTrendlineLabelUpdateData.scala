@@ -17,14 +17,14 @@ import scala.scalajs.js.annotation._
 trait ChartTrendlineLabelUpdateData extends js.Object {
   /**
     *
-    * Boolean value representing if trendline label automatically generates appropriate text based on context.
+    * Specifies if trendline label automatically generate appropriate text based on context.
     *
     * [Api set: ExcelApi 1.8]
     */
   var autoText: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the format of chart trendline label.
+    * The format of chart trendline label.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -53,7 +53,7 @@ trait ChartTrendlineLabelUpdateData extends js.Object {
   var left: js.UndefOr[Double] = js.undefined
   /**
     *
-    * Boolean value representing if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
+    * Specifies if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -103,25 +103,25 @@ object ChartTrendlineLabelUpdateData {
     format: ChartTrendlineLabelFormatUpdateData = null,
     formula: String = null,
     horizontalAlignment: ChartTextHorizontalAlignment | Center | Left | Right | Justify | Distributed = null,
-    left: Int | Double = null,
+    left: js.UndefOr[Double] = js.undefined,
     linkNumberFormat: js.UndefOr[Boolean] = js.undefined,
     numberFormat: String = null,
     text: String = null,
-    textOrientation: Int | Double = null,
-    top: Int | Double = null,
+    textOrientation: js.UndefOr[Double] = js.undefined,
+    top: js.UndefOr[Double] = js.undefined,
     verticalAlignment: ChartTextVerticalAlignment | Center | Bottom | Top | Justify | Distributed = null
   ): ChartTrendlineLabelUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoText)) __obj.updateDynamic("autoText")(autoText.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoText)) __obj.updateDynamic("autoText")(autoText.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
     if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (!js.isUndefined(linkNumberFormat)) __obj.updateDynamic("linkNumberFormat")(linkNumberFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkNumberFormat)) __obj.updateDynamic("linkNumberFormat")(linkNumberFormat.get.asInstanceOf[js.Any])
     if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (textOrientation != null) __obj.updateDynamic("textOrientation")(textOrientation.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (!js.isUndefined(textOrientation)) __obj.updateDynamic("textOrientation")(textOrientation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
     if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartTrendlineLabelUpdateData]
   }

@@ -31,18 +31,18 @@ trait RedshiftInstanceDetails extends js.Object {
 object RedshiftInstanceDetails {
   @scala.inline
   def apply(
-    CurrentGeneration: js.UndefOr[Boolean] = js.undefined,
+    CurrentGeneration: js.UndefOr[GenericBoolean] = js.undefined,
     Family: GenericString = null,
     NodeType: GenericString = null,
     Region: GenericString = null,
-    SizeFlexEligible: js.UndefOr[Boolean] = js.undefined
+    SizeFlexEligible: js.UndefOr[GenericBoolean] = js.undefined
   ): RedshiftInstanceDetails = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CurrentGeneration)) __obj.updateDynamic("CurrentGeneration")(CurrentGeneration.asInstanceOf[js.Any])
+    if (!js.isUndefined(CurrentGeneration)) __obj.updateDynamic("CurrentGeneration")(CurrentGeneration.get.asInstanceOf[js.Any])
     if (Family != null) __obj.updateDynamic("Family")(Family.asInstanceOf[js.Any])
     if (NodeType != null) __obj.updateDynamic("NodeType")(NodeType.asInstanceOf[js.Any])
     if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
-    if (!js.isUndefined(SizeFlexEligible)) __obj.updateDynamic("SizeFlexEligible")(SizeFlexEligible.asInstanceOf[js.Any])
+    if (!js.isUndefined(SizeFlexEligible)) __obj.updateDynamic("SizeFlexEligible")(SizeFlexEligible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedshiftInstanceDetails]
   }
 }

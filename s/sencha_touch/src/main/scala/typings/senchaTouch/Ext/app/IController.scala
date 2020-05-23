@@ -15,49 +15,49 @@ trait IController extends IObservable {
   /** [Config Option] (Object) */
   var control: js.UndefOr[js.Any] = js.undefined
   /** [Method] Returns the value of application
-  		* @returns Ext.app.Application
-  		*/
+    * @returns Ext.app.Application
+    */
   var getApplication: js.UndefOr[js.Function0[IApplication]] = js.undefined
   /** [Method] Returns the value of before
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getBefore: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of control
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getControl: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns a reference to another Controller
-  		* @param controllerName String
-  		* @param profile String
-  		* @returns Object
-  		*/
+    * @param controllerName String
+    * @param profile String
+    * @returns Object
+    */
   var getController: js.UndefOr[
     js.Function2[/* controllerName */ js.UndefOr[String], /* profile */ js.UndefOr[String], _]
   ] = js.undefined
   /** [Method] Returns a reference to a Model
-  		* @param modelName String
-  		* @returns Object
-  		*/
+    * @param modelName String
+    * @returns Object
+    */
   var getModel: js.UndefOr[js.Function1[/* modelName */ js.UndefOr[String], _]] = js.undefined
   /** [Method] Returns the value of models
-  		* @returns String[]
-  		*/
+    * @returns String[]
+    */
   var getModels: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the value of refs
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getRefs: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of routes
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getRoutes: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of stores
-  		* @returns String[]
-  		*/
+    * @returns String[]
+    */
   var getStores: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the value of views
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   var getViews: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Config Option] (Function) */
   var init: js.UndefOr[js.Any] = js.undefined
@@ -66,17 +66,17 @@ trait IController extends IObservable {
   /** [Config Option] (String[]) */
   var models: js.UndefOr[Array] = js.undefined
   /** [Method] Convenient way to redirect to a new url
-  		* @param place Object
-  		* @returns Object
-  		*/
+    * @param place Object
+    * @returns Object
+    */
   var redirectTo: js.UndefOr[js.Function1[/* place */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Config Option] (Object) */
   var refs: js.UndefOr[js.Any] = js.undefined
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
-  		* @param object Object The Observable whose events this object is to relay.
-  		* @param events String/Array/Object Array of event names to relay.
-  		* @returns Ext.mixin.Observable this
-  		*/
+    * @param object Object The Observable whose events this object is to relay.
+    * @param events String/Array/Object Array of event names to relay.
+    * @returns Ext.mixin.Observable this
+    */
   @JSName("relayEvents")
   var relayEvents_IController: js.UndefOr[
     js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
@@ -84,36 +84,36 @@ trait IController extends IObservable {
   /** [Config Option] (Object) */
   var routes: js.UndefOr[js.Any] = js.undefined
   /** [Method] Sets the value of application
-  		* @param application Ext.app.Application The new value.
-  		*/
+    * @param application Ext.app.Application The new value.
+    */
   var setApplication: js.UndefOr[js.Function1[/* application */ js.UndefOr[IApplication], Unit]] = js.undefined
   /** [Method] Sets the value of before
-  		* @param before Object The new value.
-  		*/
+    * @param before Object The new value.
+    */
   var setBefore: js.UndefOr[js.Function1[/* before */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of control
-  		* @param control Object The new value.
-  		*/
+    * @param control Object The new value.
+    */
   var setControl: js.UndefOr[js.Function1[/* control */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of models
-  		* @param models String[] The new value.
-  		*/
+    * @param models String[] The new value.
+    */
   var setModels: js.UndefOr[js.Function1[/* models */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Sets the value of refs
-  		* @param refs Object The new value.
-  		*/
+    * @param refs Object The new value.
+    */
   var setRefs: js.UndefOr[js.Function1[/* refs */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of routes
-  		* @param routes Object The new value.
-  		*/
+    * @param routes Object The new value.
+    */
   var setRoutes: js.UndefOr[js.Function1[/* routes */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of stores
-  		* @param stores String[] The new value.
-  		*/
+    * @param stores String[] The new value.
+    */
   var setStores: js.UndefOr[js.Function1[/* stores */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Sets the value of views
-  		* @param views Array The new value.
-  		*/
+    * @param views Array The new value.
+    */
   var setViews: js.UndefOr[js.Function1[/* views */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Config Option] (String[]) */
   var stores: js.UndefOr[Array] = js.undefined
@@ -273,7 +273,7 @@ object IController {
     if (setRoutes != null) __obj.updateDynamic("setRoutes")(js.Any.fromFunction1(setRoutes))
     if (setStores != null) __obj.updateDynamic("setStores")(js.Any.fromFunction1(setStores))
     if (setViews != null) __obj.updateDynamic("setViews")(js.Any.fromFunction1(setViews))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (stores != null) __obj.updateDynamic("stores")(stores.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))

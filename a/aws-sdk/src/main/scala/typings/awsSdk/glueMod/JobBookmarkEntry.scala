@@ -39,22 +39,22 @@ trait JobBookmarkEntry extends js.Object {
 object JobBookmarkEntry {
   @scala.inline
   def apply(
-    Attempt: Int | Double = null,
+    Attempt: js.UndefOr[IntegerValue] = js.undefined,
     JobBookmark: JsonValue = null,
     JobName: JobName = null,
     PreviousRunId: RunId = null,
-    Run: Int | Double = null,
+    Run: js.UndefOr[IntegerValue] = js.undefined,
     RunId: RunId = null,
-    Version: Int | Double = null
+    Version: js.UndefOr[IntegerValue] = js.undefined
   ): JobBookmarkEntry = {
     val __obj = js.Dynamic.literal()
-    if (Attempt != null) __obj.updateDynamic("Attempt")(Attempt.asInstanceOf[js.Any])
+    if (!js.isUndefined(Attempt)) __obj.updateDynamic("Attempt")(Attempt.get.asInstanceOf[js.Any])
     if (JobBookmark != null) __obj.updateDynamic("JobBookmark")(JobBookmark.asInstanceOf[js.Any])
     if (JobName != null) __obj.updateDynamic("JobName")(JobName.asInstanceOf[js.Any])
     if (PreviousRunId != null) __obj.updateDynamic("PreviousRunId")(PreviousRunId.asInstanceOf[js.Any])
-    if (Run != null) __obj.updateDynamic("Run")(Run.asInstanceOf[js.Any])
+    if (!js.isUndefined(Run)) __obj.updateDynamic("Run")(Run.get.asInstanceOf[js.Any])
     if (RunId != null) __obj.updateDynamic("RunId")(RunId.asInstanceOf[js.Any])
-    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
+    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobBookmarkEntry]
   }
 }

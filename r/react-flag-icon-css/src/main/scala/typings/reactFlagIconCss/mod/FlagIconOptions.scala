@@ -36,7 +36,7 @@ object FlagIconOptions {
     val __obj = js.Dynamic.literal()
     if (customCodes != null) __obj.updateDynamic("customCodes")(customCodes.asInstanceOf[js.Any])
     if (themeStyles != null) __obj.updateDynamic("themeStyles")(themeStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCssModules)) __obj.updateDynamic("useCssModules")(useCssModules.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCssModules)) __obj.updateDynamic("useCssModules")(useCssModules.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlagIconOptions]
   }
 }

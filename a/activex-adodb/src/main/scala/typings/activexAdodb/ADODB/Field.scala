@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ADODB.Field")
 @js.native
-class Field protected () extends js.Object {
+trait Field extends js.Object {
   @JSName("ADODB.Field_typekey")
   var ADODBDotField_typekey: Field = js.native
   val ActualSize: Double = js.native

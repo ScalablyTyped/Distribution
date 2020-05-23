@@ -11,9 +11,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.DefaultWebOptions")
 @js.native
-class DefaultWebOptions protected () extends js.Object {
+trait DefaultWebOptions extends js.Object {
   var AllowPNG: MsoTriState = js.native
   var AlwaysSaveInDefaultEncoding: MsoTriState = js.native
   var CheckIfOfficeIsHTMLEditor: MsoTriState = js.native

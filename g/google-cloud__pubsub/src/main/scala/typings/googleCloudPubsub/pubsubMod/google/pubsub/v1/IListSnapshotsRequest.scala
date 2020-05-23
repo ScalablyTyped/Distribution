@@ -16,11 +16,15 @@ trait IListSnapshotsRequest extends js.Object {
 
 object IListSnapshotsRequest {
   @scala.inline
-  def apply(pageSize: Int | Double = null, pageToken: String = null, project: String = null): IListSnapshotsRequest = {
+  def apply(
+    pageSize: js.UndefOr[Null | Double] = js.undefined,
+    pageToken: js.UndefOr[Null | String] = js.undefined,
+    project: js.UndefOr[Null | String] = js.undefined
+  ): IListSnapshotsRequest = {
     val __obj = js.Dynamic.literal()
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageToken)) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(project)) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListSnapshotsRequest]
   }
 }

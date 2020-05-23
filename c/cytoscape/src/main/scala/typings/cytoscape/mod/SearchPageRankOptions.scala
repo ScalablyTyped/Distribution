@@ -23,14 +23,14 @@ trait SearchPageRankOptions extends js.Object {
 object SearchPageRankOptions {
   @scala.inline
   def apply(
-    dampingFactor: Int | Double = null,
-    iterations: Int | Double = null,
-    precision: Int | Double = null
+    dampingFactor: js.UndefOr[Double] = js.undefined,
+    iterations: js.UndefOr[Double] = js.undefined,
+    precision: js.UndefOr[Double] = js.undefined
   ): SearchPageRankOptions = {
     val __obj = js.Dynamic.literal()
-    if (dampingFactor != null) __obj.updateDynamic("dampingFactor")(dampingFactor.asInstanceOf[js.Any])
-    if (iterations != null) __obj.updateDynamic("iterations")(iterations.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    if (!js.isUndefined(dampingFactor)) __obj.updateDynamic("dampingFactor")(dampingFactor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(iterations)) __obj.updateDynamic("iterations")(iterations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchPageRankOptions]
   }
 }

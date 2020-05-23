@@ -5,25 +5,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * Fired when the accelerometer changes.
-	 */
+  * Fired when the accelerometer changes.
+  */
 trait AccelerometerUpdateEvent extends AccelerometerBaseEvent {
   /**
-  		 * Reference timestamp since the previous change. This is not a valid timestamp and should
-  		 * simply be used to determine the number of milliseconds between events.
-  		 */
+    * Reference timestamp since the previous change. This is not a valid timestamp and should
+    * simply be used to determine the number of milliseconds between events.
+    */
   var timestamp: Double
   /**
-  		 * Current `x` axis of the device.
-  		 */
+    * Current `x` axis of the device.
+    */
   var x: Double
   /**
-  		 * Current `y` axis of the device.
-  		 */
+    * Current `y` axis of the device.
+    */
   var y: Double
   /**
-  		 * Current `z` axis of the device.
-  		 */
+    * Current `z` axis of the device.
+    */
   var z: Double
 }
 

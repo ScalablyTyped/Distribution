@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
   */
 trait ReadyStatePayload extends js.Object {
   /**
-  	 * The state for which `onreadystatechange` was invoked. Set to one of `Titanium.Network.HTTPClient` ready-state constants
-  	 */
+    * The state for which `onreadystatechange` was invoked. Set to one of `Titanium.Network.HTTPClient` ready-state constants
+    */
   var readyState: js.UndefOr[Double] = js.undefined
 }
 
 object ReadyStatePayload {
   @scala.inline
-  def apply(readyState: Int | Double = null): ReadyStatePayload = {
+  def apply(readyState: js.UndefOr[Double] = js.undefined): ReadyStatePayload = {
     val __obj = js.Dynamic.literal()
-    if (readyState != null) __obj.updateDynamic("readyState")(readyState.asInstanceOf[js.Any])
+    if (!js.isUndefined(readyState)) __obj.updateDynamic("readyState")(readyState.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadyStatePayload]
   }
 }

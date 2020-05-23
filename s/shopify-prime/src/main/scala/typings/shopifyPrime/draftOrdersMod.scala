@@ -1,5 +1,6 @@
 package typings.shopifyPrime
 
+import typings.shopifyPrime.anon.PartialDraftOrder
 import typings.shopifyPrime.draftOrderMod.DraftOrder
 import typings.shopifyPrime.infrastructureMod.BaseService
 import typings.shopifyPrime.optionsBaseMod.ListOptions

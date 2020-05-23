@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.polyline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -64,8 +63,4 @@ trait DirectionsFeatureSet extends FeatureSet {
     */
   var totalTime: Double = js.native
 }
-
-@JSGlobal("__esri.DirectionsFeatureSet")
-@js.native
-object DirectionsFeatureSet extends TopLevel[DirectionsFeatureSetConstructor]
 

@@ -6,24 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * An expression used to represent a filter condition.
-			 */
+  * An expression used to represent a filter condition.
+  */
 trait ConditionExpression extends js.Object {
   /**
-  				 * The name of the data-set column to apply the filter on.
-  				 */
+    * The name of the data-set column to apply the filter on.
+    */
   var attributeName: String
   /**
-  				 * The value evaluated by the condition
-  				 */
+    * The value evaluated by the condition
+    */
   var conditionOperator: ConditionOperator
   /**
-  				 * Entity alias name so filtering can be used on linked entities.
-  				 */
+    * Entity alias name so filtering can be used on linked entities.
+    */
   var entityAliasName: js.UndefOr[String] = js.undefined
   /**
-  				 * The value evaluated by the condition.
-  				 */
+    * The value evaluated by the condition.
+    */
   var value: String | js.Array[String]
 }
 

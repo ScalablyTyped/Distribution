@@ -38,9 +38,9 @@ object IStateOptions {
     reload: Boolean | String | IState = null
   ): IStateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit.asInstanceOf[js.Any])
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit.get.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (!js.isUndefined(notify)) __obj.updateDynamic("notify")(notify.asInstanceOf[js.Any])
+    if (!js.isUndefined(notify)) __obj.updateDynamic("notify")(notify.get.asInstanceOf[js.Any])
     if (relative != null) __obj.updateDynamic("relative")(relative.asInstanceOf[js.Any])
     if (reload != null) __obj.updateDynamic("reload")(reload.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStateOptions]

@@ -21,21 +21,21 @@ object Options {
   def apply(
     bar: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
-    minWidth: Int | Double = null,
+    minWidth: js.UndefOr[Double] = js.undefined,
     render: /* p0 */ typings.ol.mapEventMod.default => Unit = null,
-    steps: Int | Double = null,
+    steps: js.UndefOr[Double] = js.undefined,
     target: HTMLElement | String = null,
     text: js.UndefOr[Boolean] = js.undefined,
     units: Units | String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bar)) __obj.updateDynamic("bar")(bar.asInstanceOf[js.Any])
+    if (!js.isUndefined(bar)) __obj.updateDynamic("bar")(bar.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
-    if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
+    if (!js.isUndefined(steps)) __obj.updateDynamic("steps")(steps.get.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.get.asInstanceOf[js.Any])
     if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

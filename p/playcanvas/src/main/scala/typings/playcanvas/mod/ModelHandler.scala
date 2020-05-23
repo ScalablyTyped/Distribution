@@ -5,12 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @class
-  * @name pc.ModelHandler
-  * @implements {pc.ResourceHandler}
-  * @classdesc Resource handler used for loading {@link pc.Model} resources.
-  * @param {pc.GraphicsDevice} device - The graphics device that will be rendering.
-  * @param {pc.StandardMaterial} defaultMaterial - The shared default material that is used in any place that a material is not specified.
+  * Resource handler used for loading {@link pc.Model} resources.
+  * @param device - The graphics device that will be rendering.
+  * @param defaultMaterial - The shared default material that is used in any place that a material is not specified.
   */
 @JSImport("playcanvas", "ModelHandler")
 @js.native

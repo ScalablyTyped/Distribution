@@ -73,7 +73,7 @@ object CreateNodegroupRequest {
     subnets: StringList,
     amiType: AMITypes = null,
     clientRequestToken: String = null,
-    diskSize: Int | Double = null,
+    diskSize: js.UndefOr[BoxedInteger] = js.undefined,
     instanceTypes: StringList = null,
     labels: labelsMap = null,
     releaseVersion: String = null,
@@ -85,7 +85,7 @@ object CreateNodegroupRequest {
     val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any], nodeRole = nodeRole.asInstanceOf[js.Any], nodegroupName = nodegroupName.asInstanceOf[js.Any], subnets = subnets.asInstanceOf[js.Any])
     if (amiType != null) __obj.updateDynamic("amiType")(amiType.asInstanceOf[js.Any])
     if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken.asInstanceOf[js.Any])
-    if (diskSize != null) __obj.updateDynamic("diskSize")(diskSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(diskSize)) __obj.updateDynamic("diskSize")(diskSize.get.asInstanceOf[js.Any])
     if (instanceTypes != null) __obj.updateDynamic("instanceTypes")(instanceTypes.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (releaseVersion != null) __obj.updateDynamic("releaseVersion")(releaseVersion.asInstanceOf[js.Any])

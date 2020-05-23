@@ -1,6 +1,6 @@
 package typings.awsSdk.elbMod
 
-import typings.awsSdk.DescribeEndPointStateInpu
+import typings.awsSdk.anon.DescribeEndPointStateInpu
 import typings.awsSdk.awsSdkStrings.anyInstanceInService
 import typings.awsSdk.awsSdkStrings.instanceDeregistered
 import typings.awsSdk.awsSdkStrings.instanceInService

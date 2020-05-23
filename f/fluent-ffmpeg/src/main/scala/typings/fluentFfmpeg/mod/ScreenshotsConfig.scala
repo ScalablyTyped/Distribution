@@ -17,7 +17,7 @@ trait ScreenshotsConfig extends js.Object {
 object ScreenshotsConfig {
   @scala.inline
   def apply(
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     fastSeek: js.UndefOr[Boolean] = js.undefined,
     filename: String = null,
     folder: String = null,
@@ -26,8 +26,8 @@ object ScreenshotsConfig {
     timestamps: js.Array[Double | String] = null
   ): ScreenshotsConfig = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (!js.isUndefined(fastSeek)) __obj.updateDynamic("fastSeek")(fastSeek.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fastSeek)) __obj.updateDynamic("fastSeek")(fastSeek.get.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (folder != null) __obj.updateDynamic("folder")(folder.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

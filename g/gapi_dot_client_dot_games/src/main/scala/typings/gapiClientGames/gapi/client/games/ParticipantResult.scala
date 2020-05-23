@@ -32,13 +32,13 @@ object ParticipantResult {
   def apply(
     kind: String = null,
     participantId: String = null,
-    placing: Int | Double = null,
+    placing: js.UndefOr[Double] = js.undefined,
     result: String = null
   ): ParticipantResult = {
     val __obj = js.Dynamic.literal()
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (participantId != null) __obj.updateDynamic("participantId")(participantId.asInstanceOf[js.Any])
-    if (placing != null) __obj.updateDynamic("placing")(placing.asInstanceOf[js.Any])
+    if (!js.isUndefined(placing)) __obj.updateDynamic("placing")(placing.get.asInstanceOf[js.Any])
     if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParticipantResult]
   }

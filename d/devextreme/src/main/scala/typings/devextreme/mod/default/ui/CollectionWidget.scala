@@ -1,7 +1,7 @@
 package typings.devextreme.mod.default.ui
 
 import typings.devextreme.mod.DevExpress.ui.CollectionWidgetOptions
-import typings.devextreme.mod._Global_.JQuery
+import typings.devextreme.mod.global.JQuery
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

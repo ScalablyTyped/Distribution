@@ -1,9 +1,5 @@
 package typings.cordovaPluginContacts
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Instantiable3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,17 +14,18 @@ trait ContactFindOptions extends js.Object {
   var multiple: js.UndefOr[Boolean] = js.undefined
 }
 
-@JSGlobal("ContactFindOptions")
-@js.native
-object ContactFindOptions
-  extends /** Constructor for ContactFindOptions object */
-Instantiable0[ContactFindOptions]
-     with Instantiable1[/* filter */ String, ContactFindOptions]
-     with Instantiable2[/* filter */ String, /* multiple */ Boolean, ContactFindOptions]
-     with Instantiable3[
-      /* filter */ String, 
-      /* multiple */ Boolean, 
-      /* desiredFields */ js.Array[ContactFieldType], 
-      ContactFindOptions
-    ]
+object ContactFindOptions {
+  @scala.inline
+  def apply(
+    desiredFields: js.Array[ContactFieldType] = null,
+    filter: String = null,
+    multiple: js.UndefOr[Boolean] = js.undefined
+  ): ContactFindOptions = {
+    val __obj = js.Dynamic.literal()
+    if (desiredFields != null) __obj.updateDynamic("desiredFields")(desiredFields.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ContactFindOptions]
+  }
+}
 

@@ -12,7 +12,7 @@ trait JSFL
 
 object JSFL {
   @scala.inline
-  def apply(init: /* repeated */ js.Any => Unit, StringDictionary: /* index */ StringDictionary[js.Any] = null): JSFL = {
+  def apply(init: /* repeated */ js.Any => Unit, StringDictionary: /* name */ StringDictionary[js.Any] = null): JSFL = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction1(init))
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[JSFL]

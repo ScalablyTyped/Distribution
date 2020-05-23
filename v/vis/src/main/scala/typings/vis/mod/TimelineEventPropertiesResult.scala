@@ -1,7 +1,7 @@
 package typings.vis.mod
 
 import typings.std.Date
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait TimelineEventPropertiesResult extends js.Object {
   /**
     * The original click event.
     */
-  var event: Event_
+  var event: Event
   /**
     *  The id of the clicked group
     */
@@ -52,20 +52,20 @@ trait TimelineEventPropertiesResult extends js.Object {
 object TimelineEventPropertiesResult {
   @scala.inline
   def apply(
-    event: Event_,
+    event: Event,
     pageX: Double,
     pageY: Double,
     snappedTime: Date,
     time: Date,
     x: Double,
     y: Double,
-    group: Int | Double = null,
-    item: IdType = null,
+    group: js.UndefOr[Null | Double] = js.undefined,
+    item: js.UndefOr[Null | IdType] = js.undefined,
     what: TimelineEventPropertiesResultWhatType = null
   ): TimelineEventPropertiesResult = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], snappedTime = snappedTime.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (!js.isUndefined(item)) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
     if (what != null) __obj.updateDynamic("what")(what.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineEventPropertiesResult]
   }

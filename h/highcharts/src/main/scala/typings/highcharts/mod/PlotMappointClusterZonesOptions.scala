@@ -29,15 +29,15 @@ object PlotMappointClusterZonesOptions {
   @scala.inline
   def apply(
     className: String = null,
-    from: Int | Double = null,
+    from: js.UndefOr[Double] = js.undefined,
     marker: PointMarkerOptionsObject = null,
-    to: Int | Double = null
+    to: js.UndefOr[Double] = js.undefined
   ): PlotMappointClusterZonesOptions = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.get.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (!js.isUndefined(to)) __obj.updateDynamic("to")(to.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotMappointClusterZonesOptions]
   }
 }

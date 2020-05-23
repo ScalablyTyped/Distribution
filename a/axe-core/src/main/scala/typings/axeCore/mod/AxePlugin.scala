@@ -1,13 +1,13 @@
 package typings.axeCore.mod
 
-import typings.axeCore.AnonCallback
+import typings.axeCore.anon.Callback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AxePlugin extends js.Object {
   var cleanup: js.UndefOr[js.Function1[/* callback */ js.Function, Unit]] = js.undefined
-  var commands: js.Array[AnonCallback]
+  var commands: js.Array[Callback]
   var id: String
   def run(args: js.Any*): js.Any
 }
@@ -15,7 +15,7 @@ trait AxePlugin extends js.Object {
 object AxePlugin {
   @scala.inline
   def apply(
-    commands: js.Array[AnonCallback],
+    commands: js.Array[Callback],
     id: String,
     run: /* repeated */ js.Any => js.Any,
     cleanup: /* callback */ js.Function => Unit = null

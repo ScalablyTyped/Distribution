@@ -23,13 +23,13 @@ object IconProps {
     `type`: String,
     color: String = null,
     size: xxs | xs | sm | md | lg | Double = null,
-    style: StyleProp[ViewStyle] = null
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined
   ): IconProps = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconProps]
   }
 }

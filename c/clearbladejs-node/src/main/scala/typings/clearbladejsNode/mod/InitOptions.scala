@@ -26,12 +26,12 @@ object InitOptions {
     systemKey: String,
     systemSecret: String,
     URI: String = null,
-    callTimeout: Int | Double = null,
+    callTimeout: js.UndefOr[Double] = js.undefined,
     callback: (/* error */ Boolean, /* response */ Resp) => Unit = null,
     defaultQoS: MessagingQOS = null,
     email: String = null,
     logging: js.UndefOr[Boolean] = js.undefined,
-    messagingPort: Int | Double = null,
+    messagingPort: js.UndefOr[Double] = js.undefined,
     messagingURI: String = null,
     password: String = null,
     registerUser: js.UndefOr[Boolean] = js.undefined,
@@ -39,15 +39,15 @@ object InitOptions {
   ): InitOptions = {
     val __obj = js.Dynamic.literal(systemKey = systemKey.asInstanceOf[js.Any], systemSecret = systemSecret.asInstanceOf[js.Any])
     if (URI != null) __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    if (callTimeout != null) __obj.updateDynamic("callTimeout")(callTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(callTimeout)) __obj.updateDynamic("callTimeout")(callTimeout.get.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
     if (defaultQoS != null) __obj.updateDynamic("defaultQoS")(defaultQoS.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (messagingPort != null) __obj.updateDynamic("messagingPort")(messagingPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(messagingPort)) __obj.updateDynamic("messagingPort")(messagingPort.get.asInstanceOf[js.Any])
     if (messagingURI != null) __obj.updateDynamic("messagingURI")(messagingURI.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (!js.isUndefined(registerUser)) __obj.updateDynamic("registerUser")(registerUser.asInstanceOf[js.Any])
+    if (!js.isUndefined(registerUser)) __obj.updateDynamic("registerUser")(registerUser.get.asInstanceOf[js.Any])
     if (useUser != null) __obj.updateDynamic("useUser")(useUser.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitOptions]
   }

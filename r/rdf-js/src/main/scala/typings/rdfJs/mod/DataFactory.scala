@@ -64,19 +64,5 @@ trait DataFactory[OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */] extends j
     `object`: /* import warning: importer.ImportType#apply Failed type conversion: InQuad['object'] */ js.Any,
     graph: /* import warning: importer.ImportType#apply Failed type conversion: InQuad['graph'] */ js.Any
   ): OutQuad = js.native
-  /**
-    * @param subject   The triple subject term.
-    * @param predicate The triple predicate term.
-    * @param object    The triple object term.
-    * @return A new instance of Quad with `Quad.graph` set to DefaultGraph.
-    * @see Quad
-    * @see Triple
-    * @see DefaultGraph
-    */
-  def triple(
-    subject: /* import warning: importer.ImportType#apply Failed type conversion: InQuad['subject'] */ js.Any,
-    predicate: /* import warning: importer.ImportType#apply Failed type conversion: InQuad['predicate'] */ js.Any,
-    `object`: /* import warning: importer.ImportType#apply Failed type conversion: InQuad['object'] */ js.Any
-  ): InQuad = js.native
 }
 

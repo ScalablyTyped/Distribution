@@ -169,12 +169,12 @@ trait Backup extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeCopyJobOutput, Unit]
   ): Request[DescribeCopyJobOutput, AWSError] = js.native
   /**
-    * Returns information about a saved resource, including the last time it was backed-up, its Amazon Resource Name (ARN), and the AWS service type of the saved resource.
+    * Returns information about a saved resource, including the last time it was backed up, its Amazon Resource Name (ARN), and the AWS service type of the saved resource.
     */
   def describeProtectedResource(): Request[DescribeProtectedResourceOutput, AWSError] = js.native
   def describeProtectedResource(callback: js.Function2[/* err */ AWSError, /* data */ DescribeProtectedResourceOutput, Unit]): Request[DescribeProtectedResourceOutput, AWSError] = js.native
   /**
-    * Returns information about a saved resource, including the last time it was backed-up, its Amazon Resource Name (ARN), and the AWS service type of the saved resource.
+    * Returns information about a saved resource, including the last time it was backed up, its Amazon Resource Name (ARN), and the AWS service type of the saved resource.
     */
   def describeProtectedResource(params: DescribeProtectedResourceInput): Request[DescribeProtectedResourceOutput, AWSError] = js.native
   def describeProtectedResource(
@@ -194,6 +194,19 @@ trait Backup extends Service {
     params: DescribeRecoveryPointInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeRecoveryPointOutput, Unit]
   ): Request[DescribeRecoveryPointOutput, AWSError] = js.native
+  /**
+    * Returns the current service opt-in settings for the region. If the service has a value set to true, AWS Backup will attempt to protect that service's resources in this region, when included in an on-demand backup or scheduled backup plan. If the value is set to false for a service, AWS Backup will not attempt to protect that service's resources in this region.
+    */
+  def describeRegionSettings(): Request[DescribeRegionSettingsOutput, AWSError] = js.native
+  def describeRegionSettings(callback: js.Function2[/* err */ AWSError, /* data */ DescribeRegionSettingsOutput, Unit]): Request[DescribeRegionSettingsOutput, AWSError] = js.native
+  /**
+    * Returns the current service opt-in settings for the region. If the service has a value set to true, AWS Backup will attempt to protect that service's resources in this region, when included in an on-demand backup or scheduled backup plan. If the value is set to false for a service, AWS Backup will not attempt to protect that service's resources in this region.
+    */
+  def describeRegionSettings(params: DescribeRegionSettingsInput): Request[DescribeRegionSettingsOutput, AWSError] = js.native
+  def describeRegionSettings(
+    params: DescribeRegionSettingsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeRegionSettingsOutput, Unit]
+  ): Request[DescribeRegionSettingsOutput, AWSError] = js.native
   /**
     * Returns metadata associated with a restore job that is specified by a job ID.
     */
@@ -460,12 +473,12 @@ trait Backup extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListRestoreJobsOutput, Unit]
   ): Request[ListRestoreJobsOutput, AWSError] = js.native
   /**
-    * Returns a list of key-value pairs assigned to a target recovery point, backup plan, or backup vault.
+    * Returns a list of key-value pairs assigned to a target recovery point, backup plan, or backup vault.   ListTags are currently only supported with Amazon EFS backups. 
     */
   def listTags(): Request[ListTagsOutput, AWSError] = js.native
   def listTags(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsOutput, Unit]): Request[ListTagsOutput, AWSError] = js.native
   /**
-    * Returns a list of key-value pairs assigned to a target recovery point, backup plan, or backup vault.
+    * Returns a list of key-value pairs assigned to a target recovery point, backup plan, or backup vault.   ListTags are currently only supported with Amazon EFS backups. 
     */
   def listTags(params: ListTagsInput): Request[ListTagsOutput, AWSError] = js.native
   def listTags(params: ListTagsInput, callback: js.Function2[/* err */ AWSError, /* data */ ListTagsOutput, Unit]): Request[ListTagsOutput, AWSError] = js.native
@@ -590,5 +603,18 @@ trait Backup extends Service {
     params: UpdateRecoveryPointLifecycleInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateRecoveryPointLifecycleOutput, Unit]
   ): Request[UpdateRecoveryPointLifecycleOutput, AWSError] = js.native
+  /**
+    * Updates the current service opt-in settings for the region. If the service has a value set to true, AWS Backup will attempt to protect that service's resources in this region, when included in an on-demand backup or scheduled backup plan. If the value is set to false for a service, AWS Backup will not attempt to protect that service's resources in this region.
+    */
+  def updateRegionSettings(): Request[js.Object, AWSError] = js.native
+  def updateRegionSettings(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Updates the current service opt-in settings for the region. If the service has a value set to true, AWS Backup will attempt to protect that service's resources in this region, when included in an on-demand backup or scheduled backup plan. If the value is set to false for a service, AWS Backup will not attempt to protect that service's resources in this region.
+    */
+  def updateRegionSettings(params: UpdateRegionSettingsInput): Request[js.Object, AWSError] = js.native
+  def updateRegionSettings(
+    params: UpdateRegionSettingsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
 }
 

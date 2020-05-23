@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ConditionalRangeFillData extends js.Object {
   /**
     *
-    * HTML color code representing the color of the fill, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+    * HTML color code representing the color of the fill, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     *
     * [Api set: ExcelApi 1.6]
     */

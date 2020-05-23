@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +20,13 @@ trait predominantCategories extends js.Object {
   def predominantCategories(params: predominantCategoriesPredominantCategoriesParams): js.Promise[PredominantCategoriesResult]
 }
 
-@JSGlobal("__esri.predominantCategories")
-@js.native
-object predominantCategories extends TopLevel[predominantCategories]
+object predominantCategories {
+  @scala.inline
+  def apply(
+    predominantCategories: predominantCategoriesPredominantCategoriesParams => js.Promise[PredominantCategoriesResult]
+  ): predominantCategories = {
+    val __obj = js.Dynamic.literal(predominantCategories = js.Any.fromFunction1(predominantCategories))
+    __obj.asInstanceOf[predominantCategories]
+  }
+}
 

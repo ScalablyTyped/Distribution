@@ -10,9 +10,9 @@ Typings are for version 2.0.3
 | ------------------ | :-------------: |
 | Full name          | fs-promise |
 | Keywords           | promise, fs, file, file system |
-| # releases         | 2 |
-| # dependents       | 560 |
-| # downloads        | 8101424 |
+| # releases         | 0 |
+| # dependents       | 564 |
+| # downloads        | 6726271 |
 | # stars            | 27 |
 
 ## Links

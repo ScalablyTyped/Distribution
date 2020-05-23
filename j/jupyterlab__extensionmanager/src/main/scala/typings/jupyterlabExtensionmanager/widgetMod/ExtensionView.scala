@@ -6,7 +6,7 @@ import typings.jupyterlabExtensionmanager.modelMod.IEntry
 import typings.jupyterlabExtensionmanager.modelMod.ListModel
 import typings.jupyterlabServices.mod.ServiceManager
 import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.ISettings
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,7 +32,7 @@ class ExtensionView protected () extends VDomRenderer[ListModel] {
     * called in response to events on the command palette's DOM node.
     * It should not be called directly by user code.
     */
-  def handleEvent(event: Event_): Unit = js.native
+  def handleEvent(event: Event): Unit = js.native
   /**
     * The search input node.
     */

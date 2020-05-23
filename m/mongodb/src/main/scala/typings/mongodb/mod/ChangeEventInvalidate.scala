@@ -14,7 +14,7 @@ trait ChangeEventInvalidate[TSchema /* <: StringDictionary[js.Any] */] extends C
 
 object ChangeEventInvalidate {
   @scala.inline
-  def apply[TSchema /* <: StringDictionary[js.Any] */](_id: ResumeToken, clusterTime: typings.bson.mod.Timestamp, operationType: invalidate): ChangeEventInvalidate[TSchema] = {
+  def apply[TSchema](_id: ResumeToken, clusterTime: typings.bson.mod.Timestamp, operationType: invalidate): ChangeEventInvalidate[TSchema] = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeEventInvalidate[TSchema]]
   }

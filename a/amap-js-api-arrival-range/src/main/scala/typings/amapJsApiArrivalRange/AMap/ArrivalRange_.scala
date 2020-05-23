@@ -12,9 +12,8 @@ import scala.scalajs.js.annotation._
 /**
   * 公交到达圈展示
   */
-@JSGlobal("AMap.ArrivalRange")
 @js.native
-class ArrivalRange_ () extends EventEmitter {
+trait ArrivalRange_ extends EventEmitter {
   /**
     * 计算某个时间段内用户通过公交出行可到达的距离范围
     * @param origin 起始点

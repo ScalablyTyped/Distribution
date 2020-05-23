@@ -24,11 +24,15 @@ trait LineStyle extends js.Object {
 
 object LineStyle {
   @scala.inline
-  def apply(alpha: Int | Double = null, color: Int | Double = null, width: Int | Double = null): LineStyle = {
+  def apply(
+    alpha: js.UndefOr[Double] = js.undefined,
+    color: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
+  ): LineStyle = {
     val __obj = js.Dynamic.literal()
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineStyle]
   }
 }

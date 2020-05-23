@@ -12,20 +12,20 @@ sealed trait DocumentHighlightKind extends js.Object
 @js.native
 object DocumentHighlightKind extends js.Object {
   /**
-  		 * Read-access of a symbol, like reading a variable.
-  		 */
+    * Read-access of a symbol, like reading a variable.
+    */
   @js.native
   sealed trait Read extends DocumentHighlightKind
   
   /**
-  		 * A textual occurrence.
-  		 */
+    * A textual occurrence.
+    */
   @js.native
   sealed trait Text extends DocumentHighlightKind
   
   /**
-  		 * Write-access of a symbol, like writing to a variable.
-  		 */
+    * Write-access of a symbol, like writing to a variable.
+    */
   @js.native
   sealed trait Write extends DocumentHighlightKind
   

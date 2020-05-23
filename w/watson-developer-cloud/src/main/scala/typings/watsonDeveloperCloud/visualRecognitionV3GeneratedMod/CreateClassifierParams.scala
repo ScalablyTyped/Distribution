@@ -36,7 +36,7 @@ object CreateClassifierParams {
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (negative_examples != null) __obj.updateDynamic("negative_examples")(negative_examples.asInstanceOf[js.Any])
     if (negative_examples_filename != null) __obj.updateDynamic("negative_examples_filename")(negative_examples_filename.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateClassifierParams]
   }
 }

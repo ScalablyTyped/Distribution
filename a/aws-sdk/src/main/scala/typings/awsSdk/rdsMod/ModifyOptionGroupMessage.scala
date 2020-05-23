@@ -28,12 +28,12 @@ object ModifyOptionGroupMessage {
   @scala.inline
   def apply(
     OptionGroupName: String,
-    ApplyImmediately: js.UndefOr[scala.Boolean] = js.undefined,
+    ApplyImmediately: js.UndefOr[Boolean] = js.undefined,
     OptionsToInclude: OptionConfigurationList = null,
     OptionsToRemove: OptionNamesList = null
   ): ModifyOptionGroupMessage = {
     val __obj = js.Dynamic.literal(OptionGroupName = OptionGroupName.asInstanceOf[js.Any])
-    if (!js.isUndefined(ApplyImmediately)) __obj.updateDynamic("ApplyImmediately")(ApplyImmediately.asInstanceOf[js.Any])
+    if (!js.isUndefined(ApplyImmediately)) __obj.updateDynamic("ApplyImmediately")(ApplyImmediately.get.asInstanceOf[js.Any])
     if (OptionsToInclude != null) __obj.updateDynamic("OptionsToInclude")(OptionsToInclude.asInstanceOf[js.Any])
     if (OptionsToRemove != null) __obj.updateDynamic("OptionsToRemove")(OptionsToRemove.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyOptionGroupMessage]

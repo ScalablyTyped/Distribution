@@ -32,12 +32,12 @@ object IShortcutsProps {
     onShortcutClick: (IDateRangeShortcut, Double) => Unit,
     shortcuts: js.Array[IDateRangeShortcut] | `true`,
     timePrecision: TimePrecision,
-    selectedShortcutIndex: Int | Double = null,
+    selectedShortcutIndex: js.UndefOr[Double] = js.undefined,
     useSingleDateShortcuts: js.UndefOr[Boolean] = js.undefined
   ): IShortcutsProps = {
     val __obj = js.Dynamic.literal(allowSingleDayRange = allowSingleDayRange.asInstanceOf[js.Any], maxDate = maxDate.asInstanceOf[js.Any], minDate = minDate.asInstanceOf[js.Any], onShortcutClick = js.Any.fromFunction2(onShortcutClick), shortcuts = shortcuts.asInstanceOf[js.Any], timePrecision = timePrecision.asInstanceOf[js.Any])
-    if (selectedShortcutIndex != null) __obj.updateDynamic("selectedShortcutIndex")(selectedShortcutIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSingleDateShortcuts)) __obj.updateDynamic("useSingleDateShortcuts")(useSingleDateShortcuts.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedShortcutIndex)) __obj.updateDynamic("selectedShortcutIndex")(selectedShortcutIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSingleDateShortcuts)) __obj.updateDynamic("useSingleDateShortcuts")(useSingleDateShortcuts.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShortcutsProps]
   }
 }

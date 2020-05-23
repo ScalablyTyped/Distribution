@@ -1,6 +1,5 @@
 package typings.materialUi.MaterialUI.Styles
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +19,23 @@ trait Typography extends js.Object {
   var textMinBlack: String
 }
 
-@JSGlobal("__MaterialUI.Styles.Typography")
-@js.native
-object Typography extends TopLevel[Typography]
+object Typography {
+  @scala.inline
+  def apply(
+    fontStyleButtonFontSize: Double,
+    fontWeightLight: Double,
+    fontWeightMedium: Double,
+    fontWeightNormal: Double,
+    textDarkBlack: String,
+    textDarkWhite: String,
+    textFullBlack: String,
+    textFullWhite: String,
+    textLightBlack: String,
+    textLightWhite: String,
+    textMinBlack: String
+  ): Typography = {
+    val __obj = js.Dynamic.literal(fontStyleButtonFontSize = fontStyleButtonFontSize.asInstanceOf[js.Any], fontWeightLight = fontWeightLight.asInstanceOf[js.Any], fontWeightMedium = fontWeightMedium.asInstanceOf[js.Any], fontWeightNormal = fontWeightNormal.asInstanceOf[js.Any], textDarkBlack = textDarkBlack.asInstanceOf[js.Any], textDarkWhite = textDarkWhite.asInstanceOf[js.Any], textFullBlack = textFullBlack.asInstanceOf[js.Any], textFullWhite = textFullWhite.asInstanceOf[js.Any], textLightBlack = textLightBlack.asInstanceOf[js.Any], textLightWhite = textLightWhite.asInstanceOf[js.Any], textMinBlack = textMinBlack.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Typography]
+  }
+}
 

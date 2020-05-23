@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object GroupControlTogglePosition extends js.Object {
   
   @js.native
   sealed trait BEFORE extends GroupControlTogglePosition
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[GroupControlTogglePosition with Double] = js.native
-  /* 1 */ @js.native
-  object AFTER extends TopLevel[AFTER with Double]
-  
-  /* 0 */ @js.native
-  object BEFORE extends TopLevel[BEFORE with Double]
   
 }
 

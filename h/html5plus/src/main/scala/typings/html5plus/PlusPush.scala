@@ -59,7 +59,7 @@ trait PlusPush extends js.Object {
   /**
     * 获取所有推送消息
     * 获取客户端接收到的所有推送消息。
-    * 	仅包括在系统消息中心显示的推送消息，不包括调用setAutoNotification(false)方法设置不显示推送消息后接收到的消息。
+    *     仅包括在系统消息中心显示的推送消息，不包括调用setAutoNotification(false)方法设置不显示推送消息后接收到的消息。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/push.html](http://www.html5plus.org/doc/zh_cn/push.html)
     */
@@ -82,7 +82,7 @@ trait PlusPush extends js.Object {
   /**
     * 设置程序是否将消息显示在系统消息中心
     * 默认情况下程序在接收到推送消息后将会在系统消息中心显示，通过此方法可关闭默认行为，接收到推送消息后不在系统消息中心显示，通过addEventListener方法的“receive”事件监听处理接收到的消息。
-    * 	在这种模式下可通过createMessage方法创建在系统消息中心显示的消息。
+    *     在这种模式下可通过createMessage方法创建在系统消息中心显示的消息。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/push.html](http://www.html5plus.org/doc/zh_cn/push.html)
     */

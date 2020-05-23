@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.cascaderPopupMod
 
-import typings.antDesignReactNative.AnonPickerValueChangeProp
+import typings.antDesignReactNative.anon.PickerValueChangeProp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends PopupCascader
 @JSImport("@ant-design/react-native/lib/picker/cascader/Popup", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonPickerValueChangeProp = js.native
+  var defaultProps: PickerValueChangeProp = js.native
 }
 

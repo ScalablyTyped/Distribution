@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * The interface describing a room
-	 */
+  * The interface describing a room
+  */
 trait Room extends js.Object {
   var length: Double
   var sockets: StringDictionary[Boolean]

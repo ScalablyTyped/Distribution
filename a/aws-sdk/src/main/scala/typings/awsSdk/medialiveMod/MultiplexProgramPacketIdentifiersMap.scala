@@ -26,32 +26,32 @@ object MultiplexProgramPacketIdentifiersMap {
   def apply(
     AudioPids: listOfInteger = null,
     DvbSubPids: listOfInteger = null,
-    DvbTeletextPid: Int | Double = null,
-    EtvPlatformPid: Int | Double = null,
-    EtvSignalPid: Int | Double = null,
+    DvbTeletextPid: js.UndefOr[integer] = js.undefined,
+    EtvPlatformPid: js.UndefOr[integer] = js.undefined,
+    EtvSignalPid: js.UndefOr[integer] = js.undefined,
     KlvDataPids: listOfInteger = null,
-    PcrPid: Int | Double = null,
-    PmtPid: Int | Double = null,
-    PrivateMetadataPid: Int | Double = null,
+    PcrPid: js.UndefOr[integer] = js.undefined,
+    PmtPid: js.UndefOr[integer] = js.undefined,
+    PrivateMetadataPid: js.UndefOr[integer] = js.undefined,
     Scte27Pids: listOfInteger = null,
-    Scte35Pid: Int | Double = null,
-    TimedMetadataPid: Int | Double = null,
-    VideoPid: Int | Double = null
+    Scte35Pid: js.UndefOr[integer] = js.undefined,
+    TimedMetadataPid: js.UndefOr[integer] = js.undefined,
+    VideoPid: js.UndefOr[integer] = js.undefined
   ): MultiplexProgramPacketIdentifiersMap = {
     val __obj = js.Dynamic.literal()
     if (AudioPids != null) __obj.updateDynamic("AudioPids")(AudioPids.asInstanceOf[js.Any])
     if (DvbSubPids != null) __obj.updateDynamic("DvbSubPids")(DvbSubPids.asInstanceOf[js.Any])
-    if (DvbTeletextPid != null) __obj.updateDynamic("DvbTeletextPid")(DvbTeletextPid.asInstanceOf[js.Any])
-    if (EtvPlatformPid != null) __obj.updateDynamic("EtvPlatformPid")(EtvPlatformPid.asInstanceOf[js.Any])
-    if (EtvSignalPid != null) __obj.updateDynamic("EtvSignalPid")(EtvSignalPid.asInstanceOf[js.Any])
+    if (!js.isUndefined(DvbTeletextPid)) __obj.updateDynamic("DvbTeletextPid")(DvbTeletextPid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EtvPlatformPid)) __obj.updateDynamic("EtvPlatformPid")(EtvPlatformPid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EtvSignalPid)) __obj.updateDynamic("EtvSignalPid")(EtvSignalPid.get.asInstanceOf[js.Any])
     if (KlvDataPids != null) __obj.updateDynamic("KlvDataPids")(KlvDataPids.asInstanceOf[js.Any])
-    if (PcrPid != null) __obj.updateDynamic("PcrPid")(PcrPid.asInstanceOf[js.Any])
-    if (PmtPid != null) __obj.updateDynamic("PmtPid")(PmtPid.asInstanceOf[js.Any])
-    if (PrivateMetadataPid != null) __obj.updateDynamic("PrivateMetadataPid")(PrivateMetadataPid.asInstanceOf[js.Any])
+    if (!js.isUndefined(PcrPid)) __obj.updateDynamic("PcrPid")(PcrPid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(PmtPid)) __obj.updateDynamic("PmtPid")(PmtPid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(PrivateMetadataPid)) __obj.updateDynamic("PrivateMetadataPid")(PrivateMetadataPid.get.asInstanceOf[js.Any])
     if (Scte27Pids != null) __obj.updateDynamic("Scte27Pids")(Scte27Pids.asInstanceOf[js.Any])
-    if (Scte35Pid != null) __obj.updateDynamic("Scte35Pid")(Scte35Pid.asInstanceOf[js.Any])
-    if (TimedMetadataPid != null) __obj.updateDynamic("TimedMetadataPid")(TimedMetadataPid.asInstanceOf[js.Any])
-    if (VideoPid != null) __obj.updateDynamic("VideoPid")(VideoPid.asInstanceOf[js.Any])
+    if (!js.isUndefined(Scte35Pid)) __obj.updateDynamic("Scte35Pid")(Scte35Pid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TimedMetadataPid)) __obj.updateDynamic("TimedMetadataPid")(TimedMetadataPid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(VideoPid)) __obj.updateDynamic("VideoPid")(VideoPid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiplexProgramPacketIdentifiersMap]
   }
 }

@@ -1,8 +1,8 @@
 package typings.reactYoutube.mod
 
-import typings.reactYoutube.AnonData
-import typings.reactYoutube.AnonDataTarget
-import typings.reactYoutube.AnonTarget
+import typings.reactYoutube.anon.Data
+import typings.reactYoutube.anon.DataTarget
+import typings.reactYoutube.anon.Target
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,14 +11,14 @@ trait YouTubeProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var containerClassName: js.UndefOr[String] = js.undefined
   var id: js.UndefOr[String] = js.undefined
-  var onEnd: js.UndefOr[js.Function1[/* event */ AnonData, Unit]] = js.undefined
-  var onError: js.UndefOr[js.Function1[/* event */ AnonData, Unit]] = js.undefined
-  var onPause: js.UndefOr[js.Function1[/* event */ AnonData, Unit]] = js.undefined
-  var onPlay: js.UndefOr[js.Function1[/* event */ AnonData, Unit]] = js.undefined
-  var onPlaybackQualityChange: js.UndefOr[js.Function1[/* event */ AnonDataTarget, Unit]] = js.undefined
-  var onPlaybackRateChange: js.UndefOr[js.Function1[/* event */ AnonData, Unit]] = js.undefined
-  var onReady: js.UndefOr[js.Function1[/* event */ AnonTarget, Unit]] = js.undefined
-  var onStateChange: js.UndefOr[js.Function1[/* event */ AnonData, Unit]] = js.undefined
+  var onEnd: js.UndefOr[js.Function1[/* event */ Data, Unit]] = js.undefined
+  var onError: js.UndefOr[js.Function1[/* event */ Data, Unit]] = js.undefined
+  var onPause: js.UndefOr[js.Function1[/* event */ Data, Unit]] = js.undefined
+  var onPlay: js.UndefOr[js.Function1[/* event */ Data, Unit]] = js.undefined
+  var onPlaybackQualityChange: js.UndefOr[js.Function1[/* event */ DataTarget, Unit]] = js.undefined
+  var onPlaybackRateChange: js.UndefOr[js.Function1[/* event */ Data, Unit]] = js.undefined
+  var onReady: js.UndefOr[js.Function1[/* event */ Target, Unit]] = js.undefined
+  var onStateChange: js.UndefOr[js.Function1[/* event */ Data, Unit]] = js.undefined
   var opts: js.UndefOr[Options] = js.undefined
   var videoId: js.UndefOr[String] = js.undefined
 }
@@ -29,14 +29,14 @@ object YouTubeProps {
     className: String = null,
     containerClassName: String = null,
     id: String = null,
-    onEnd: /* event */ AnonData => Unit = null,
-    onError: /* event */ AnonData => Unit = null,
-    onPause: /* event */ AnonData => Unit = null,
-    onPlay: /* event */ AnonData => Unit = null,
-    onPlaybackQualityChange: /* event */ AnonDataTarget => Unit = null,
-    onPlaybackRateChange: /* event */ AnonData => Unit = null,
-    onReady: /* event */ AnonTarget => Unit = null,
-    onStateChange: /* event */ AnonData => Unit = null,
+    onEnd: /* event */ Data => Unit = null,
+    onError: /* event */ Data => Unit = null,
+    onPause: /* event */ Data => Unit = null,
+    onPlay: /* event */ Data => Unit = null,
+    onPlaybackQualityChange: /* event */ DataTarget => Unit = null,
+    onPlaybackRateChange: /* event */ Data => Unit = null,
+    onReady: /* event */ Target => Unit = null,
+    onStateChange: /* event */ Data => Unit = null,
     opts: Options = null,
     videoId: String = null
   ): YouTubeProps = {

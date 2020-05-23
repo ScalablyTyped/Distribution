@@ -15,13 +15,13 @@ object textInput {
   @scala.inline
   def apply(
     default: String = null,
-    maxLength: Int | Double = null,
+    maxLength: js.UndefOr[Double] = js.undefined,
     size: String = null,
     validate: () => Boolean = null
   ): textInput = {
     val __obj = js.Dynamic.literal()
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction0(validate))
     __obj.asInstanceOf[textInput]

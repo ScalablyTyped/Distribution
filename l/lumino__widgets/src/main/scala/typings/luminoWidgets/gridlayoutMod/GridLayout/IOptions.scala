@@ -39,18 +39,18 @@ trait IOptions
 object IOptions {
   @scala.inline
   def apply(
-    columnCount: Int | Double = null,
-    columnSpacing: Int | Double = null,
+    columnCount: js.UndefOr[Double] = js.undefined,
+    columnSpacing: js.UndefOr[Double] = js.undefined,
     fitPolicy: FitPolicy = null,
-    rowCount: Int | Double = null,
-    rowSpacing: Int | Double = null
+    rowCount: js.UndefOr[Double] = js.undefined,
+    rowSpacing: js.UndefOr[Double] = js.undefined
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (columnCount != null) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
-    if (columnSpacing != null) __obj.updateDynamic("columnSpacing")(columnSpacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnCount)) __obj.updateDynamic("columnCount")(columnCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnSpacing)) __obj.updateDynamic("columnSpacing")(columnSpacing.get.asInstanceOf[js.Any])
     if (fitPolicy != null) __obj.updateDynamic("fitPolicy")(fitPolicy.asInstanceOf[js.Any])
-    if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
-    if (rowSpacing != null) __obj.updateDynamic("rowSpacing")(rowSpacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowSpacing)) __obj.updateDynamic("rowSpacing")(rowSpacing.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

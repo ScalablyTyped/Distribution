@@ -1,13 +1,13 @@
 package typings.awsLambda.cloudfrontMod
 
-import typings.awsLambda.AnonAction
+import typings.awsLambda.anon.Action
 import typings.awsLambda.cloudfrontRequestMod._CloudFrontRequestResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CloudFrontRequest extends _CloudFrontRequestResult {
-  var body: js.UndefOr[AnonAction] = js.undefined
+  var body: js.UndefOr[Action] = js.undefined
   val clientIp: String
   var headers: CloudFrontHeaders
   val method: String
@@ -24,7 +24,7 @@ object CloudFrontRequest {
     method: String,
     querystring: String,
     uri: String,
-    body: AnonAction = null,
+    body: Action = null,
     origin: CloudFrontOrigin = null
   ): CloudFrontRequest = {
     val __obj = js.Dynamic.literal(clientIp = clientIp.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], querystring = querystring.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])

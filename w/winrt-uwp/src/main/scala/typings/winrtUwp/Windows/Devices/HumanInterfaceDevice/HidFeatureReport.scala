@@ -6,38 +6,51 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a feature report. */
-@JSGlobal("Windows.Devices.HumanInterfaceDevice.HidFeatureReport")
-@js.native
-abstract class HidFeatureReport () extends js.Object {
+trait HidFeatureReport extends js.Object {
   /** Retrieves, or sets, the data associated with a given feature report. */
-  var data: IBuffer = js.native
+  var data: IBuffer
   /** Retrieves the identifier associated with a given feature report. */
-  var id: Double = js.native
+  var id: Double
   /**
     * Retrieves the Boolean control associated with the usagePage and usageIdparameter and found in the given feature report.
     * @param usagePage The usage page of the top-level collection for the given HID device.
     * @param usageId The usage identifier of the top-level collection for the given HID device.
     * @return A HidBooleanControl object.
     */
-  def getBooleanControl(usagePage: Double, usageId: Double): HidBooleanControl = js.native
+  def getBooleanControl(usagePage: Double, usageId: Double): HidBooleanControl
   /**
     * Retrieves the Boolean control described by the controlDescription parameter and found in the given feature report.
     * @param controlDescription A HidBooleanControlDescription object.
     * @return A HidBooleanControl object.
     */
-  def getBooleanControlByDescription(controlDescription: HidBooleanControlDescription): HidBooleanControl = js.native
+  def getBooleanControlByDescription(controlDescription: HidBooleanControlDescription): HidBooleanControl
   /**
     * Retrieves the numeric control associated with the usagePage and usageId parameters and found in the given feature report.
     * @param usagePage The usage page of the top-level collection for the given HID device.
     * @param usageId The usage identifier of the top-level collection for the given HID device.
     * @return A HidNumericControl object.
     */
-  def getNumericControl(usagePage: Double, usageId: Double): HidNumericControl = js.native
+  def getNumericControl(usagePage: Double, usageId: Double): HidNumericControl
   /**
     * Retrieves the numeric control described by the controlDescription parameter and found in the given feature report.
     * @param controlDescription A HidNumericControlDescription object.
     * @return A HidNumericControl object.
     */
-  def getNumericControlByDescription(controlDescription: HidNumericControlDescription): HidNumericControl = js.native
+  def getNumericControlByDescription(controlDescription: HidNumericControlDescription): HidNumericControl
+}
+
+object HidFeatureReport {
+  @scala.inline
+  def apply(
+    data: IBuffer,
+    getBooleanControl: (Double, Double) => HidBooleanControl,
+    getBooleanControlByDescription: HidBooleanControlDescription => HidBooleanControl,
+    getNumericControl: (Double, Double) => HidNumericControl,
+    getNumericControlByDescription: HidNumericControlDescription => HidNumericControl,
+    id: Double
+  ): HidFeatureReport = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], getBooleanControl = js.Any.fromFunction2(getBooleanControl), getBooleanControlByDescription = js.Any.fromFunction1(getBooleanControlByDescription), getNumericControl = js.Any.fromFunction2(getNumericControl), getNumericControlByDescription = js.Any.fromFunction1(getNumericControlByDescription), id = id.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HidFeatureReport]
+  }
 }
 

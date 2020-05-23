@@ -31,15 +31,15 @@ object CommonHTMLOutputProcessor {
   @scala.inline
   def apply(
     linebreaks: LineBreaks = null,
-    minScaleAdjust: Int | Double = null,
+    minScaleAdjust: js.UndefOr[Double] = js.undefined,
     mtextFontInherit: js.UndefOr[Boolean] = js.undefined,
-    scale: Int | Double = null
+    scale: js.UndefOr[Double] = js.undefined
   ): CommonHTMLOutputProcessor = {
     val __obj = js.Dynamic.literal()
     if (linebreaks != null) __obj.updateDynamic("linebreaks")(linebreaks.asInstanceOf[js.Any])
-    if (minScaleAdjust != null) __obj.updateDynamic("minScaleAdjust")(minScaleAdjust.asInstanceOf[js.Any])
-    if (!js.isUndefined(mtextFontInherit)) __obj.updateDynamic("mtextFontInherit")(mtextFontInherit.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(minScaleAdjust)) __obj.updateDynamic("minScaleAdjust")(minScaleAdjust.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mtextFontInherit)) __obj.updateDynamic("mtextFontInherit")(mtextFontInherit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonHTMLOutputProcessor]
   }
 }

@@ -74,22 +74,14 @@ object NodeDef {
     references: StringDictionary[ɵQueryValueType],
     element: ElementDef = null,
     ngContent: NgContentDef = null,
-    ngContentIndex: Int | Double = null,
+    ngContentIndex: Double = null.asInstanceOf[Double],
     parent: NodeDef = null,
     provider: ProviderDef = null,
     query: QueryDef = null,
     renderParent: NodeDef = null,
     text: TextDef = null
   ): NodeDef = {
-    val __obj = js.Dynamic.literal(bindingFlags = bindingFlags.asInstanceOf[js.Any], bindingIndex = bindingIndex.asInstanceOf[js.Any], bindings = bindings.asInstanceOf[js.Any], checkIndex = checkIndex.asInstanceOf[js.Any], childCount = childCount.asInstanceOf[js.Any], childFlags = childFlags.asInstanceOf[js.Any], childMatchedQueries = childMatchedQueries.asInstanceOf[js.Any], directChildFlags = directChildFlags.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], matchedQueries = matchedQueries.asInstanceOf[js.Any], matchedQueryIds = matchedQueryIds.asInstanceOf[js.Any], nodeIndex = nodeIndex.asInstanceOf[js.Any], outputIndex = outputIndex.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any])
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (ngContent != null) __obj.updateDynamic("ngContent")(ngContent.asInstanceOf[js.Any])
-    if (ngContentIndex != null) __obj.updateDynamic("ngContentIndex")(ngContentIndex.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (renderParent != null) __obj.updateDynamic("renderParent")(renderParent.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bindingFlags = bindingFlags.asInstanceOf[js.Any], bindingIndex = bindingIndex.asInstanceOf[js.Any], bindings = bindings.asInstanceOf[js.Any], checkIndex = checkIndex.asInstanceOf[js.Any], childCount = childCount.asInstanceOf[js.Any], childFlags = childFlags.asInstanceOf[js.Any], childMatchedQueries = childMatchedQueries.asInstanceOf[js.Any], directChildFlags = directChildFlags.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], matchedQueries = matchedQueries.asInstanceOf[js.Any], matchedQueryIds = matchedQueryIds.asInstanceOf[js.Any], nodeIndex = nodeIndex.asInstanceOf[js.Any], outputIndex = outputIndex.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], ngContent = ngContent.asInstanceOf[js.Any], ngContentIndex = ngContentIndex.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], renderParent = renderParent.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeDef]
   }
 }

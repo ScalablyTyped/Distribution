@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Security.Credentials
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object KeyCredentialAttestationStatus extends js.Object {
   /** The operation encountered an unknown error. */
   @js.native
   sealed trait unknownError extends KeyCredentialAttestationStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[KeyCredentialAttestationStatus with Double] = js.native
-  /* 2 */ @js.native
-  object notSupported extends TopLevel[notSupported with Double]
-  
-  /* 0 */ @js.native
-  object success extends TopLevel[success with Double]
-  
-  /* 3 */ @js.native
-  object temporaryFailure extends TopLevel[temporaryFailure with Double]
-  
-  /* 1 */ @js.native
-  object unknownError extends TopLevel[unknownError with Double]
   
 }
 

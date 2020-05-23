@@ -6,9 +6,9 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import typings.reactNavigation.mod.NavigationParams
 import typings.reactNavigation.mod.NavigationRoute
-import typings.reactNavigationStack.AnonStyle
-import typings.reactNavigationStack.AnonTintColor
-import typings.reactNavigationStack.AnonTintColorString
+import typings.reactNavigationStack.anon.Style
+import typings.reactNavigationStack.anon.TintColor
+import typings.reactNavigationStack.anon.TintColorString
 import typings.reactNavigationStack.reactNavigationStackStrings.center
 import typings.reactNavigationStack.reactNavigationStackStrings.left
 import typings.reactNavigationStack.vendorTypesMod.Layout
@@ -32,7 +32,7 @@ trait Props extends js.Object {
     * It receives the `tintColor` in in the options object as an argument. object.
     * Defaults to Image component with a the default back icon image for the platform (a chevron on iOS and an arrow on Android).
     */
-  var headerBackImage: js.UndefOr[js.Function1[/* props */ AnonTintColorString, ReactNode]] = js.native
+  var headerBackImage: js.UndefOr[js.Function1[/* props */ TintColorString, ReactNode]] = js.native
   /**
     * Title string used by the back button on iOS, or `null` to disable label. Defaults to the previous scene's `headerTitle`.
     */
@@ -51,7 +51,7 @@ trait Props extends js.Object {
     * This is useful for using backgrounds such as an image or a gradient.
     * You can use this with `headerTransparent` to render a blur view, for example, to create a translucent header.
     */
-  var headerBackground: js.UndefOr[js.Function1[/* props */ AnonStyle, ReactNode]] = js.native
+  var headerBackground: js.UndefOr[js.Function1[/* props */ Style, ReactNode]] = js.native
   /**
     * Function which returns a React Element to display on the left side of the header.
     * It receives a number of arguments when rendered (`onPress`, `label`, `labelStyle` and more.
@@ -68,7 +68,7 @@ trait Props extends js.Object {
   /**
     * Function which returns a React Element to display on the right side of the header.
     */
-  var headerRight: js.UndefOr[js.Function1[/* props */ AnonTintColor, ReactNode]] = js.native
+  var headerRight: js.UndefOr[js.Function1[/* props */ TintColor, ReactNode]] = js.native
   /**
     * Style object for the container of the `headerRight` component, for example to add padding.
     */
@@ -114,7 +114,7 @@ trait Props extends js.Object {
     * Style object for the title component.
     */
   var headerTitleStyle: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<react-native.react-native.Animated.AnimatedComponent<react-native.react-native.Text>>['style'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<react-native.react-native.Animated.AnimatedComponent<new (): react-native.react-native.Text>>['style'] */ js.Any
   ] = js.native
   /**
     * Defaults to `false`. If `true`, the header will not have a background unless you explicitly provide it with `headerBackground`.

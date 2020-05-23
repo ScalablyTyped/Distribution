@@ -13,7 +13,7 @@ trait WeakMap[K /* <: js.Object */, V] extends js.Object {
 
 object WeakMap {
   @scala.inline
-  def apply[K /* <: js.Object */, V](delete: K => Boolean, get: K => js.UndefOr[V], has: K => Boolean, set: (K, V) => WeakMap[K, V]): WeakMap[K, V] = {
+  def apply[K, V](delete: K => Boolean, get: K => js.UndefOr[V], has: K => Boolean, set: (K, V) => WeakMap[K, V]): WeakMap[K, V] = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), set = js.Any.fromFunction2(set))
     __obj.asInstanceOf[WeakMap[K, V]]
   }

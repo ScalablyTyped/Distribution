@@ -12,7 +12,7 @@ object PublicOptions {
   @scala.inline
   def apply(public: js.UndefOr[Boolean] = js.undefined): PublicOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(public)) __obj.updateDynamic("public")(public.asInstanceOf[js.Any])
+    if (!js.isUndefined(public)) __obj.updateDynamic("public")(public.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicOptions]
   }
 }

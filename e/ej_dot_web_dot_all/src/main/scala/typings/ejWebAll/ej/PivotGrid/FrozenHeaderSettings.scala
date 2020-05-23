@@ -29,13 +29,13 @@ object FrozenHeaderSettings {
     enableFrozenColumnHeaders: js.UndefOr[Boolean] = js.undefined,
     enableFrozenHeaders: js.UndefOr[Boolean] = js.undefined,
     enableFrozenRowHeaders: js.UndefOr[Boolean] = js.undefined,
-    scrollerSize: Int | Double = null
+    scrollerSize: js.UndefOr[Double] = js.undefined
   ): FrozenHeaderSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableFrozenColumnHeaders)) __obj.updateDynamic("enableFrozenColumnHeaders")(enableFrozenColumnHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableFrozenHeaders)) __obj.updateDynamic("enableFrozenHeaders")(enableFrozenHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableFrozenRowHeaders)) __obj.updateDynamic("enableFrozenRowHeaders")(enableFrozenRowHeaders.asInstanceOf[js.Any])
-    if (scrollerSize != null) __obj.updateDynamic("scrollerSize")(scrollerSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableFrozenColumnHeaders)) __obj.updateDynamic("enableFrozenColumnHeaders")(enableFrozenColumnHeaders.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableFrozenHeaders)) __obj.updateDynamic("enableFrozenHeaders")(enableFrozenHeaders.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableFrozenRowHeaders)) __obj.updateDynamic("enableFrozenRowHeaders")(enableFrozenRowHeaders.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollerSize)) __obj.updateDynamic("scrollerSize")(scrollerSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrozenHeaderSettings]
   }
 }

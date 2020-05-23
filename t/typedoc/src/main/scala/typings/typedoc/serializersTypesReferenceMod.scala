@@ -1,5 +1,6 @@
 package typings.typedoc
 
+import typings.typedoc.anon.PickReferenceTypetypePart
 import typings.typedoc.modelsMod.ReferenceType
 import typings.typedoc.serializationComponentsMod.TypeSerializerComponent
 import scala.scalajs.js

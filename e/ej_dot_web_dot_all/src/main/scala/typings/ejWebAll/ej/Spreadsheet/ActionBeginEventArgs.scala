@@ -42,25 +42,25 @@ object ActionBeginEventArgs {
   def apply(
     afterFormat: js.Any = null,
     beforeFormat: js.Any = null,
-    colSelected: Int | Double = null,
+    colSelected: js.UndefOr[Double] = js.undefined,
     columnName: String = null,
-    gotoIdx: Int | Double = null,
+    gotoIdx: js.UndefOr[Double] = js.undefined,
     newSheet: js.UndefOr[Boolean] = js.undefined,
     range: js.Array[_] = null,
     reqType: String = null,
-    sheetIdx: Int | Double = null,
+    sheetIdx: js.UndefOr[Double] = js.undefined,
     sortDirection: String = null
   ): ActionBeginEventArgs = {
     val __obj = js.Dynamic.literal()
     if (afterFormat != null) __obj.updateDynamic("afterFormat")(afterFormat.asInstanceOf[js.Any])
     if (beforeFormat != null) __obj.updateDynamic("beforeFormat")(beforeFormat.asInstanceOf[js.Any])
-    if (colSelected != null) __obj.updateDynamic("colSelected")(colSelected.asInstanceOf[js.Any])
+    if (!js.isUndefined(colSelected)) __obj.updateDynamic("colSelected")(colSelected.get.asInstanceOf[js.Any])
     if (columnName != null) __obj.updateDynamic("columnName")(columnName.asInstanceOf[js.Any])
-    if (gotoIdx != null) __obj.updateDynamic("gotoIdx")(gotoIdx.asInstanceOf[js.Any])
-    if (!js.isUndefined(newSheet)) __obj.updateDynamic("newSheet")(newSheet.asInstanceOf[js.Any])
+    if (!js.isUndefined(gotoIdx)) __obj.updateDynamic("gotoIdx")(gotoIdx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(newSheet)) __obj.updateDynamic("newSheet")(newSheet.get.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (reqType != null) __obj.updateDynamic("reqType")(reqType.asInstanceOf[js.Any])
-    if (sheetIdx != null) __obj.updateDynamic("sheetIdx")(sheetIdx.asInstanceOf[js.Any])
+    if (!js.isUndefined(sheetIdx)) __obj.updateDynamic("sheetIdx")(sheetIdx.get.asInstanceOf[js.Any])
     if (sortDirection != null) __obj.updateDynamic("sortDirection")(sortDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionBeginEventArgs]
   }

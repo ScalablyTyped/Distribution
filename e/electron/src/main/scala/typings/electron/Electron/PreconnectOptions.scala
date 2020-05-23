@@ -17,9 +17,9 @@ trait PreconnectOptions extends js.Object {
 
 object PreconnectOptions {
   @scala.inline
-  def apply(url: String, numSockets: Int | Double = null): PreconnectOptions = {
+  def apply(url: String, numSockets: js.UndefOr[Double] = js.undefined): PreconnectOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (numSockets != null) __obj.updateDynamic("numSockets")(numSockets.asInstanceOf[js.Any])
+    if (!js.isUndefined(numSockets)) __obj.updateDynamic("numSockets")(numSockets.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreconnectOptions]
   }
 }

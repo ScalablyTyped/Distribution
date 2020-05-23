@@ -14,6 +14,7 @@ import typings.std.AlgorithmIdentifier
 import typings.std.ArrayBuffer
 import typings.std.BufferSource
 import typings.std.CryptoKey
+import typings.std.CryptoKeyPair
 import typings.std.DhImportKeyParams
 import typings.std.EcKeyImportParams
 import typings.std.EcdsaParams
@@ -67,6 +68,7 @@ object cryptoEngineMod extends js.Object {
     def decrypt(algorithm: AesCtrParams, key: CryptoKey, data: BufferSource): js.Thenable[ArrayBuffer] = js.native
     def decrypt(algorithm: AesGcmParams, key: CryptoKey, data: BufferSource): js.Thenable[ArrayBuffer] = js.native
     def decrypt(algorithm: RsaOaepParams, key: CryptoKey, data: BufferSource): js.Thenable[ArrayBuffer] = js.native
+    def deriveBits(algorithm: String, baseKey: CryptoKey, length: Double): js.Thenable[ArrayBuffer] = js.native
     def digest(algorithm: AlgorithmIdentifier, data: BufferSource): js.Thenable[ArrayBuffer] = js.native
     def encrypt(algorithm: String, key: CryptoKey, data: BufferSource): js.Thenable[ArrayBuffer] = js.native
     def encrypt(algorithm: AesCbcParams, key: CryptoKey, data: BufferSource): js.Thenable[ArrayBuffer] = js.native
@@ -83,6 +85,7 @@ object cryptoEngineMod extends js.Object {
     def exportKey_raw(format: raw, key: CryptoKey): js.Thenable[ArrayBuffer] = js.native
     @JSName("exportKey")
     def exportKey_spki(format: spki, key: CryptoKey): js.Thenable[ArrayBuffer] = js.native
+    def generateKey(algorithm: String, extractable: Boolean, keyUsages: js.Array[String]): js.Thenable[CryptoKeyPair | CryptoKey] = js.native
     def importKey(
       format: String,
       keyData: BufferSource,

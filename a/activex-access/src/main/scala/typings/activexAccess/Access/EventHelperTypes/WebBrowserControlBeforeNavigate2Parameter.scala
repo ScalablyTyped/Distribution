@@ -25,8 +25,7 @@ object WebBrowserControlBeforeNavigate2Parameter {
     pDisp: js.Any,
     TargetFrameName: String = null
   ): WebBrowserControlBeforeNavigate2Parameter = {
-    val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Headers = Headers.asInstanceOf[js.Any], PostData = PostData.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], pDisp = pDisp.asInstanceOf[js.Any])
-    if (TargetFrameName != null) __obj.updateDynamic("TargetFrameName")(TargetFrameName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Headers = Headers.asInstanceOf[js.Any], PostData = PostData.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], pDisp = pDisp.asInstanceOf[js.Any], TargetFrameName = TargetFrameName.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebBrowserControlBeforeNavigate2Parameter]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UnprocessedAccount extends js.Object {
   /**
-    * AWS Account ID.
+    * The AWS account ID.
     */
   var AccountId: typings.awsSdk.guarddutyMod.AccountId = js.native
   /**

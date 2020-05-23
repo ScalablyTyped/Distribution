@@ -83,16 +83,16 @@ object DiagramOptions {
     template: String | js.Function = null,
     theme: String = null,
     toolBarClick: /* e */ DiagramToolBarClickEvent => Unit = null,
-    zoom: Int | Double = null,
+    zoom: js.UndefOr[Double] = js.undefined,
     zoomEnd: /* e */ DiagramZoomEndEvent => Unit = null,
-    zoomMax: Int | Double = null,
-    zoomMin: Int | Double = null,
-    zoomRate: Int | Double = null,
+    zoomMax: js.UndefOr[Double] = js.undefined,
+    zoomMin: js.UndefOr[Double] = js.undefined,
+    zoomRate: js.UndefOr[Double] = js.undefined,
     zoomStart: /* e */ DiagramZoomStartEvent => Unit = null
   ): DiagramOptions = {
     val __obj = js.Dynamic.literal()
     if (add != null) __obj.updateDynamic("add")(js.Any.fromFunction1(add))
-    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.get.asInstanceOf[js.Any])
     if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction1(cancel))
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
@@ -124,11 +124,11 @@ object DiagramOptions {
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (toolBarClick != null) __obj.updateDynamic("toolBarClick")(js.Any.fromFunction1(toolBarClick))
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     if (zoomEnd != null) __obj.updateDynamic("zoomEnd")(js.Any.fromFunction1(zoomEnd))
-    if (zoomMax != null) __obj.updateDynamic("zoomMax")(zoomMax.asInstanceOf[js.Any])
-    if (zoomMin != null) __obj.updateDynamic("zoomMin")(zoomMin.asInstanceOf[js.Any])
-    if (zoomRate != null) __obj.updateDynamic("zoomRate")(zoomRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomMax)) __obj.updateDynamic("zoomMax")(zoomMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomMin)) __obj.updateDynamic("zoomMin")(zoomMin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomRate)) __obj.updateDynamic("zoomRate")(zoomRate.get.asInstanceOf[js.Any])
     if (zoomStart != null) __obj.updateDynamic("zoomStart")(js.Any.fromFunction1(zoomStart))
     __obj.asInstanceOf[DiagramOptions]
   }

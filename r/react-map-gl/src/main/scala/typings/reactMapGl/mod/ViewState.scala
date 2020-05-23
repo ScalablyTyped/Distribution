@@ -19,14 +19,14 @@ object ViewState {
     latitude: Double,
     longitude: Double,
     zoom: Double,
-    altitude: Int | Double = null,
-    bearing: Int | Double = null,
-    pitch: Int | Double = null
+    altitude: js.UndefOr[Double] = js.undefined,
+    bearing: js.UndefOr[Double] = js.undefined,
+    pitch: js.UndefOr[Double] = js.undefined
   ): ViewState = {
     val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
-    if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
-    if (bearing != null) __obj.updateDynamic("bearing")(bearing.asInstanceOf[js.Any])
-    if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
+    if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bearing)) __obj.updateDynamic("bearing")(bearing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pitch)) __obj.updateDynamic("pitch")(pitch.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewState]
   }
 }

@@ -27,8 +27,8 @@ object ISuggestionsStyleProps {
   ): ISuggestionsStyleProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceResolveButtonSelected)) __obj.updateDynamic("forceResolveButtonSelected")(forceResolveButtonSelected.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchForMoreButtonSelected)) __obj.updateDynamic("searchForMoreButtonSelected")(searchForMoreButtonSelected.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceResolveButtonSelected)) __obj.updateDynamic("forceResolveButtonSelected")(forceResolveButtonSelected.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(searchForMoreButtonSelected)) __obj.updateDynamic("searchForMoreButtonSelected")(searchForMoreButtonSelected.get.asInstanceOf[js.Any])
     if (suggestionsClassName != null) __obj.updateDynamic("suggestionsClassName")(suggestionsClassName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISuggestionsStyleProps]
   }

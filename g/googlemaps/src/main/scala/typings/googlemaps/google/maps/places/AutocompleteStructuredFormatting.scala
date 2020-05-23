@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// TODO: rename to StructuredFormatting https://developers.google.com/maps/documentation/javascript/reference/places-autocomplete-service#StructuredFormatting
 trait AutocompleteStructuredFormatting extends js.Object {
   var main_text: String
   var main_text_matched_substrings: js.Array[PredictionSubstring]

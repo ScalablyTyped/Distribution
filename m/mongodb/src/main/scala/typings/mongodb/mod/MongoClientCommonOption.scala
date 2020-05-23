@@ -18,8 +18,8 @@ object MongoClientCommonOption {
     returnNonCachedInstance: js.UndefOr[Boolean] = js.undefined
   ): MongoClientCommonOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(noListener)) __obj.updateDynamic("noListener")(noListener.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnNonCachedInstance)) __obj.updateDynamic("returnNonCachedInstance")(returnNonCachedInstance.asInstanceOf[js.Any])
+    if (!js.isUndefined(noListener)) __obj.updateDynamic("noListener")(noListener.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnNonCachedInstance)) __obj.updateDynamic("returnNonCachedInstance")(returnNonCachedInstance.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MongoClientCommonOption]
   }
 }

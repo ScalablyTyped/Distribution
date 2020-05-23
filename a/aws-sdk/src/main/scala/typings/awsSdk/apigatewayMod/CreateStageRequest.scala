@@ -58,23 +58,23 @@ object CreateStageRequest {
     deploymentId: String,
     restApiId: String,
     stageName: String,
-    cacheClusterEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    cacheClusterEnabled: js.UndefOr[Boolean] = js.undefined,
     cacheClusterSize: CacheClusterSize = null,
     canarySettings: CanarySettings = null,
     description: String = null,
     documentationVersion: String = null,
     tags: MapOfStringToString = null,
-    tracingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    tracingEnabled: js.UndefOr[Boolean] = js.undefined,
     variables: MapOfStringToString = null
   ): CreateStageRequest = {
     val __obj = js.Dynamic.literal(deploymentId = deploymentId.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any], stageName = stageName.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheClusterEnabled)) __obj.updateDynamic("cacheClusterEnabled")(cacheClusterEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheClusterEnabled)) __obj.updateDynamic("cacheClusterEnabled")(cacheClusterEnabled.get.asInstanceOf[js.Any])
     if (cacheClusterSize != null) __obj.updateDynamic("cacheClusterSize")(cacheClusterSize.asInstanceOf[js.Any])
     if (canarySettings != null) __obj.updateDynamic("canarySettings")(canarySettings.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (documentationVersion != null) __obj.updateDynamic("documentationVersion")(documentationVersion.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(tracingEnabled)) __obj.updateDynamic("tracingEnabled")(tracingEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(tracingEnabled)) __obj.updateDynamic("tracingEnabled")(tracingEnabled.get.asInstanceOf[js.Any])
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateStageRequest]
   }

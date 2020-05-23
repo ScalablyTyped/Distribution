@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.textFieldBaseMod
 
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ object ITextFieldState {
     uncontrolledValue: String = null
   ): ITextFieldState = {
     val __obj = js.Dynamic.literal(errorMessage = errorMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFocused)) __obj.updateDynamic("isFocused")(isFocused.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFocused)) __obj.updateDynamic("isFocused")(isFocused.get.asInstanceOf[js.Any])
     if (uncontrolledValue != null) __obj.updateDynamic("uncontrolledValue")(uncontrolledValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITextFieldState]
   }

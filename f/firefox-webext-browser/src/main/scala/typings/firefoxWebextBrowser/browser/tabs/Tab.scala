@@ -95,47 +95,47 @@ object Tab {
     cookieStoreId: String = null,
     discarded: js.UndefOr[Boolean] = js.undefined,
     favIconUrl: String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     hidden: js.UndefOr[Boolean] = js.undefined,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     isArticle: js.UndefOr[Boolean] = js.undefined,
     isInReaderMode: js.UndefOr[Boolean] = js.undefined,
-    lastAccessed: Int | Double = null,
+    lastAccessed: js.UndefOr[Double] = js.undefined,
     mutedInfo: MutedInfo = null,
-    openerTabId: Int | Double = null,
+    openerTabId: js.UndefOr[Double] = js.undefined,
     selected: js.UndefOr[Boolean] = js.undefined,
     sessionId: String = null,
     sharingState: SharingState = null,
     status: String = null,
-    successorTabId: Int | Double = null,
+    successorTabId: js.UndefOr[Double] = js.undefined,
     title: String = null,
     url: String = null,
-    width: Int | Double = null,
-    windowId: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined,
+    windowId: js.UndefOr[Double] = js.undefined
   ): Tab = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], highlighted = highlighted.asInstanceOf[js.Any], incognito = incognito.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], pinned = pinned.asInstanceOf[js.Any])
-    if (!js.isUndefined(attention)) __obj.updateDynamic("attention")(attention.asInstanceOf[js.Any])
-    if (!js.isUndefined(audible)) __obj.updateDynamic("audible")(audible.asInstanceOf[js.Any])
+    if (!js.isUndefined(attention)) __obj.updateDynamic("attention")(attention.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(audible)) __obj.updateDynamic("audible")(audible.get.asInstanceOf[js.Any])
     if (cookieStoreId != null) __obj.updateDynamic("cookieStoreId")(cookieStoreId.asInstanceOf[js.Any])
-    if (!js.isUndefined(discarded)) __obj.updateDynamic("discarded")(discarded.asInstanceOf[js.Any])
+    if (!js.isUndefined(discarded)) __obj.updateDynamic("discarded")(discarded.get.asInstanceOf[js.Any])
     if (favIconUrl != null) __obj.updateDynamic("favIconUrl")(favIconUrl.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isArticle)) __obj.updateDynamic("isArticle")(isArticle.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInReaderMode)) __obj.updateDynamic("isInReaderMode")(isInReaderMode.asInstanceOf[js.Any])
-    if (lastAccessed != null) __obj.updateDynamic("lastAccessed")(lastAccessed.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isArticle)) __obj.updateDynamic("isArticle")(isArticle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInReaderMode)) __obj.updateDynamic("isInReaderMode")(isInReaderMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastAccessed)) __obj.updateDynamic("lastAccessed")(lastAccessed.get.asInstanceOf[js.Any])
     if (mutedInfo != null) __obj.updateDynamic("mutedInfo")(mutedInfo.asInstanceOf[js.Any])
-    if (openerTabId != null) __obj.updateDynamic("openerTabId")(openerTabId.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (!js.isUndefined(openerTabId)) __obj.updateDynamic("openerTabId")(openerTabId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
     if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId.asInstanceOf[js.Any])
     if (sharingState != null) __obj.updateDynamic("sharingState")(sharingState.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (successorTabId != null) __obj.updateDynamic("successorTabId")(successorTabId.asInstanceOf[js.Any])
+    if (!js.isUndefined(successorTabId)) __obj.updateDynamic("successorTabId")(successorTabId.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowId)) __obj.updateDynamic("windowId")(windowId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tab]
   }
 }

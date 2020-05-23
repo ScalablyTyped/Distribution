@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapCheckBox")
 @js.native
-class BootstrapCheckBox () extends BootstrapClientEdit {
+trait BootstrapCheckBox extends BootstrapClientEdit {
   def getCheckState(): String = js.native
   def getChecked(): Boolean = js.native
   def getText(): String = js.native

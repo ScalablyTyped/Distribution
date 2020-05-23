@@ -1,8 +1,8 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.AnonExtraCssText
-import typings.echarts.AnonLineStyleAnonShadowBlur
-import typings.echarts.AnonShadowBlur
+import typings.echarts.anon.ExtraCssText
+import typings.echarts.anon.LineStyleShadowBlur
+import typings.echarts.anon.ShadowBlur
 import typings.echarts.echarts.EChartOption.SeriesParallel.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -267,7 +267,7 @@ trait SeriesParallel_ extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-parallel.emphasis
     */
-  var emphasis: js.UndefOr[AnonLineStyleAnonShadowBlur] = js.undefined
+  var emphasis: js.UndefOr[LineStyleShadowBlur] = js.undefined
   /**
     * Component ID, not specified by default.
     * If specified, it can be used to refer the component in option
@@ -293,7 +293,7 @@ trait SeriesParallel_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-parallel.lineStyle
     */
-  var lineStyle: js.UndefOr[AnonShadowBlur] = js.undefined
+  var lineStyle: js.UndefOr[ShadowBlur] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -389,7 +389,7 @@ trait SeriesParallel_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-parallel.tooltip
     */
-  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
   /**
     * @default
     * "parallel"
@@ -434,7 +434,7 @@ trait SeriesParallel_ extends js.Object {
 object SeriesParallel_ {
   @scala.inline
   def apply(
-    activeOpacity: Int | Double = null,
+    activeOpacity: js.UndefOr[Double] = js.undefined,
     animation: js.UndefOr[Boolean] = js.undefined,
     animationDelay: js.Function | Double = null,
     animationDelayUpdate: js.Function | Double = null,
@@ -442,54 +442,54 @@ object SeriesParallel_ {
     animationDurationUpdate: js.Function | Double = null,
     animationEasing: String = null,
     animationEasingUpdate: String = null,
-    animationThreshold: Int | Double = null,
+    animationThreshold: js.UndefOr[Double] = js.undefined,
     coordinateSystem: String = null,
     data: js.Array[(js.Array[Double | String | DataObject]) | DataObject | Double | String] = null,
-    emphasis: AnonLineStyleAnonShadowBlur = null,
+    emphasis: LineStyleShadowBlur = null,
     id: String = null,
-    inactiveOpacity: Int | Double = null,
-    lineStyle: AnonShadowBlur = null,
+    inactiveOpacity: js.UndefOr[Double] = js.undefined,
+    lineStyle: ShadowBlur = null,
     name: String = null,
-    parallelIndex: Int | Double = null,
-    progressive: Int | Double = null,
+    parallelIndex: js.UndefOr[Double] = js.undefined,
+    progressive: js.UndefOr[Double] = js.undefined,
     progressiveChunkMode: String = null,
-    progressiveThreshold: Int | Double = null,
+    progressiveThreshold: js.UndefOr[Double] = js.undefined,
     realtime: js.UndefOr[Boolean] = js.undefined,
     silent: js.UndefOr[Boolean] = js.undefined,
     smooth: Boolean | Double = null,
-    tooltip: AnonExtraCssText = null,
+    tooltip: ExtraCssText = null,
     `type`: String = null,
-    z: Int | Double = null,
-    zlevel: Int | Double = null
+    z: js.UndefOr[Double] = js.undefined,
+    zlevel: js.UndefOr[Double] = js.undefined
   ): SeriesParallel_ = {
     val __obj = js.Dynamic.literal()
-    if (activeOpacity != null) __obj.updateDynamic("activeOpacity")(activeOpacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeOpacity)) __obj.updateDynamic("activeOpacity")(activeOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
     if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
     if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
     if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
     if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate.asInstanceOf[js.Any])
-    if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationThreshold)) __obj.updateDynamic("animationThreshold")(animationThreshold.get.asInstanceOf[js.Any])
     if (coordinateSystem != null) __obj.updateDynamic("coordinateSystem")(coordinateSystem.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inactiveOpacity != null) __obj.updateDynamic("inactiveOpacity")(inactiveOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(inactiveOpacity)) __obj.updateDynamic("inactiveOpacity")(inactiveOpacity.get.asInstanceOf[js.Any])
     if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parallelIndex != null) __obj.updateDynamic("parallelIndex")(parallelIndex.asInstanceOf[js.Any])
-    if (progressive != null) __obj.updateDynamic("progressive")(progressive.asInstanceOf[js.Any])
+    if (!js.isUndefined(parallelIndex)) __obj.updateDynamic("parallelIndex")(parallelIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressive)) __obj.updateDynamic("progressive")(progressive.get.asInstanceOf[js.Any])
     if (progressiveChunkMode != null) __obj.updateDynamic("progressiveChunkMode")(progressiveChunkMode.asInstanceOf[js.Any])
-    if (progressiveThreshold != null) __obj.updateDynamic("progressiveThreshold")(progressiveThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(realtime)) __obj.updateDynamic("realtime")(realtime.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressiveThreshold)) __obj.updateDynamic("progressiveThreshold")(progressiveThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(realtime)) __obj.updateDynamic("realtime")(realtime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     if (smooth != null) __obj.updateDynamic("smooth")(smooth.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
-    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zlevel)) __obj.updateDynamic("zlevel")(zlevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesParallel_]
   }
 }

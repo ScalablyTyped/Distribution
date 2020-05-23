@@ -5,16 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @class
-  * @name pc.RaycastResult
-  * @classdesc Object holding the result of a successful raycast hit.
-  * @description Create a new RaycastResult.
-  * @param {pc.Entity} entity - The entity that was hit.
-  * @param {pc.Vec3} point - The point at which the ray hit the entity in world space.
-  * @param {pc.Vec3} normal - The normal vector of the surface where the ray hit in world space.
-  * @property {pc.Entity} entity The entity that was hit.
-  * @property {pc.Vec3} point The point at which the ray hit the entity in world space.
-  * @property {pc.Vec3} normal The normal vector of the surface where the ray hit in world space.
+  * Create a new RaycastResult.
+  * @property entity - The entity that was hit.
+  * @property point - The point at which the ray hit the entity in world space.
+  * @property normal - The normal vector of the surface where the ray hit in world space.
+  * @param entity - The entity that was hit.
+  * @param point - The point at which the ray hit the entity in world space.
+  * @param normal - The normal vector of the surface where the ray hit in world space.
   */
 @JSImport("playcanvas", "RaycastResult")
 @js.native
@@ -25,5 +22,20 @@ class RaycastResult protected ()
     point: typings.playcanvas.pc.Vec3,
     normal: typings.playcanvas.pc.Vec3
   ) = this()
+  /**
+    * The entity that was hit.
+    */
+  /* CompleteClass */
+  override var entity: typings.playcanvas.pc.Entity = js.native
+  /**
+    * The normal vector of the surface where the ray hit in world space.
+    */
+  /* CompleteClass */
+  override var normal: typings.playcanvas.pc.Vec3 = js.native
+  /**
+    * The point at which the ray hit the entity in world space.
+    */
+  /* CompleteClass */
+  override var point: typings.playcanvas.pc.Vec3 = js.native
 }
 

@@ -16,13 +16,13 @@ object LineOptions {
   def apply(
     color: String | js.Array[Double] = null,
     dash: js.Array[Double] = null,
-    lineWidth: Int | Double = null,
+    lineWidth: js.UndefOr[Double] = js.undefined,
     stroke: String | js.Array[Double] = null
   ): LineOptions = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (dash != null) __obj.updateDynamic("dash")(dash.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineOptions]
   }

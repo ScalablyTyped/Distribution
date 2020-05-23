@@ -38,8 +38,8 @@ object EventsRequestObject {
     date: StringRequest = null,
     end: StringRequest = null,
     key: StringRequest = null,
-    limit_number: Int | Double = null,
-    limit_start: Int | Double = null,
+    limit_number: js.UndefOr[Double] = js.undefined,
+    limit_start: js.UndefOr[Double] = js.undefined,
     loc_address1: StringRequest = null,
     loc_address2: StringRequest = null,
     loc_city: StringRequest = null,
@@ -63,8 +63,8 @@ object EventsRequestObject {
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (limit_number != null) __obj.updateDynamic("limit_number")(limit_number.asInstanceOf[js.Any])
-    if (limit_start != null) __obj.updateDynamic("limit_start")(limit_start.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit_number)) __obj.updateDynamic("limit_number")(limit_number.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit_start)) __obj.updateDynamic("limit_start")(limit_start.get.asInstanceOf[js.Any])
     if (loc_address1 != null) __obj.updateDynamic("loc_address1")(loc_address1.asInstanceOf[js.Any])
     if (loc_address2 != null) __obj.updateDynamic("loc_address2")(loc_address2.asInstanceOf[js.Any])
     if (loc_city != null) __obj.updateDynamic("loc_city")(loc_city.asInstanceOf[js.Any])
@@ -76,7 +76,7 @@ object EventsRequestObject {
     if (program != null) __obj.updateDynamic("program")(program.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (season != null) __obj.updateDynamic("season")(season.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.asInstanceOf[js.Any])
+    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.get.asInstanceOf[js.Any])
     if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])

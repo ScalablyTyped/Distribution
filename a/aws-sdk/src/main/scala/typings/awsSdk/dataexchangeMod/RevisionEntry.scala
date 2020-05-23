@@ -49,12 +49,12 @@ object RevisionEntry {
     Id: Id,
     UpdatedAt: Timestamp,
     Comment: stringMin0Max16384 = null,
-    Finalized: js.UndefOr[Boolean] = js.undefined,
+    Finalized: js.UndefOr[boolean] = js.undefined,
     SourceId: Id = null
   ): RevisionEntry = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], CreatedAt = CreatedAt.asInstanceOf[js.Any], DataSetId = DataSetId.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], UpdatedAt = UpdatedAt.asInstanceOf[js.Any])
     if (Comment != null) __obj.updateDynamic("Comment")(Comment.asInstanceOf[js.Any])
-    if (!js.isUndefined(Finalized)) __obj.updateDynamic("Finalized")(Finalized.asInstanceOf[js.Any])
+    if (!js.isUndefined(Finalized)) __obj.updateDynamic("Finalized")(Finalized.get.asInstanceOf[js.Any])
     if (SourceId != null) __obj.updateDynamic("SourceId")(SourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevisionEntry]
   }

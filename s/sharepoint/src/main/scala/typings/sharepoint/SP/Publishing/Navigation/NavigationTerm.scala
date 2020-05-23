@@ -1,18 +1,15 @@
 package typings.sharepoint.SP.Publishing.Navigation
 
-import typings.sharepoint.SP.ClientContext
 import typings.sharepoint.SP.Publishing.CustomizableString
 import typings.sharepoint.SP.StringResult
 import typings.sharepoint.SP.Taxonomy.TaxonomySession
 import typings.sharepoint.SP.Taxonomy.Term
-import typings.sharepoint.SP.Web
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Publishing.Navigation.NavigationTerm")
 @js.native
-class NavigationTerm () extends NavigationTermSetItem {
+trait NavigationTerm extends NavigationTermSetItem {
   def deleteObject(): Unit = js.native
   def getAllParentTerms(): NavigationTermCollection = js.native
   def getAsEditable(taxonomySession: TaxonomySession): NavigationTerm = js.native
@@ -44,13 +41,5 @@ class NavigationTerm () extends NavigationTermSetItem {
   def set_excludeFromGlobalNavigation(value: Boolean): Boolean = js.native
   def set_hoverText(value: String): String = js.native
   def set_simpleLinkUrl(value: String): String = js.native
-}
-
-/* static members */
-@JSGlobal("SP.Publishing.Navigation.NavigationTerm")
-@js.native
-object NavigationTerm extends js.Object {
-  def getAsResolvedByView(context: ClientContext, term: Term, view: NavigationTermSetView): NavigationTerm = js.native
-  def getAsResolvedByWeb(context: ClientContext, term: Term, web: Web, siteMapProviderName: String): NavigationTerm = js.native
 }
 

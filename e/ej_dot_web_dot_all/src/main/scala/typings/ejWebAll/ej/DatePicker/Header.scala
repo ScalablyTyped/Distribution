@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.DatePicker
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object Header extends js.Object {
   ///sets  the short format of day name (like Sun) in header in DatePicker
   @js.native
   sealed trait Short extends Header
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Header with Double] = js.native
-  /* 2 */ @js.native
-  object Min extends TopLevel[Min with Double]
-  
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 1 */ @js.native
-  object Short extends TopLevel[Short with Double]
   
 }
 

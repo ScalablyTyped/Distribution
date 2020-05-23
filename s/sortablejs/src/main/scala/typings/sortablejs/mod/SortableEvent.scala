@@ -1,15 +1,15 @@
 package typings.sortablejs.mod
 
-import typings.sortablejs.AnonIndex
+import typings.sortablejs.anon.Index
 import typings.sortablejs.sortablejsStrings.clone
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait SortableEvent extends Event_ {
+trait SortableEvent extends Event {
   @JSName("clone")
   var clone_FSortableEvent: HTMLElement = js.native
   /**
@@ -35,7 +35,7 @@ trait SortableEvent extends Event_ {
     *
     * If MultiDrag is not used to sort, this array will be empty.
     */
-  var newIndicies: js.Array[AnonIndex] = js.native
+  var newIndicies: js.Array[Index] = js.native
   /**
     * Old index within parent, only counting draggable elements
     */
@@ -51,7 +51,7 @@ trait SortableEvent extends Event_ {
     *
     * If MultiDrag is not used to sort, this array will be empty.
     */
-  var oldIndicies: js.Array[AnonIndex] = js.native
+  var oldIndicies: js.Array[Index] = js.native
   /**
     * Pull mode if dragging into another sortable
     */

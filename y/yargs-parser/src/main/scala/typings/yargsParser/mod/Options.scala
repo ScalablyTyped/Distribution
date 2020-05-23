@@ -1,8 +1,8 @@
 package typings.yargsParser.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.yargsParser.AnonBoolean
-import typings.yargsParser.PartialConfiguration
+import typings.yargsParser.anon.Boolean
+import typings.yargsParser.anon.PartialConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait Options extends js.Object {
     * Indicate that keys should be parsed as an array and coerced to booleans / numbers:
     * { array: [ { key: 'foo', boolean: true }, {key: 'bar', number: true} ] }`.
     */
-  var array: js.UndefOr[js.Array[AnonBoolean | String]] = js.undefined
+  var array: js.UndefOr[js.Array[Boolean | String]] = js.undefined
   /** Arguments should be parsed as booleans: `{ boolean: ['x', 'y'] }`. */
   var boolean: js.UndefOr[js.Array[String]] = js.undefined
   /**
@@ -24,7 +24,7 @@ trait Options extends js.Object {
     */
   var coerce: js.UndefOr[StringDictionary[js.Function1[/* arg */ js.Any, _]]] = js.undefined
   /** Indicate a key that represents a path to a configuration file (this file will be loaded and parsed). */
-  var config: js.UndefOr[String | js.Array[String] | StringDictionary[Boolean]] = js.undefined
+  var config: js.UndefOr[String | js.Array[String] | StringDictionary[scala.Boolean]] = js.undefined
   /** Provide configuration options to the yargs-parser. */
   var configuration: js.UndefOr[PartialConfiguration] = js.undefined
   /** Indicate a key that should be used as a counter, e.g., `-vvv = {v: 3}`. */
@@ -47,10 +47,10 @@ object Options {
   @scala.inline
   def apply(
     alias: StringDictionary[String | js.Array[String]] = null,
-    array: js.Array[AnonBoolean | String] = null,
+    array: js.Array[Boolean | String] = null,
     boolean: js.Array[String] = null,
     coerce: StringDictionary[js.Function1[/* arg */ js.Any, _]] = null,
-    config: String | js.Array[String] | StringDictionary[Boolean] = null,
+    config: String | js.Array[String] | StringDictionary[scala.Boolean] = null,
     configuration: PartialConfiguration = null,
     count: js.Array[String] = null,
     default: StringDictionary[js.Any] = null,

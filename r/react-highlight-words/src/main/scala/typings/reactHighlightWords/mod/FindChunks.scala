@@ -22,8 +22,8 @@ object FindChunks {
     sanitize: /* text */ String => String = null
   ): FindChunks = {
     val __obj = js.Dynamic.literal(searchWords = searchWords.asInstanceOf[js.Any], textToHighlight = textToHighlight.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoEscape)) __obj.updateDynamic("autoEscape")(autoEscape.asInstanceOf[js.Any])
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoEscape)) __obj.updateDynamic("autoEscape")(autoEscape.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.get.asInstanceOf[js.Any])
     if (sanitize != null) __obj.updateDynamic("sanitize")(js.Any.fromFunction1(sanitize))
     __obj.asInstanceOf[FindChunks]
   }

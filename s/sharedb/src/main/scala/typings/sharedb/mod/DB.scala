@@ -102,14 +102,7 @@ abstract class DB () extends js.Object {
   def query(
     collection: String,
     query: js.Any,
-    fields: js.UndefOr[scala.Nothing],
-    options: js.Any,
-    callback: DBQueryCallback
-  ): Unit = js.native
-  def query(
-    collection: String,
-    query: js.Any,
-    fields: ProjectionFields,
+    fields: js.UndefOr[ProjectionFields],
     options: js.Any,
     callback: DBQueryCallback
   ): Unit = js.native

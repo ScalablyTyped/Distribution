@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-image-snapshot
 
-Typings are for version 2.12
+Typings are for version 3.1
 
 ## Library description:
 Jest matcher for image comparisons. Most commonly used for visual regression testing.

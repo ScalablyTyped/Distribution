@@ -8,7 +8,7 @@ trait GetLogsResponse extends js.Object {
   /**
     * The list of logs.
     */
-  val logs: js.Array[Log]
+  var logs: js.Array[Log]
 }
 
 object GetLogsResponse {

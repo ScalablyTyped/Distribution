@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.HTMLProjectItem")
 @js.native
-class HTMLProjectItem protected () extends js.Object {
+trait HTMLProjectItem extends js.Object {
   val Application: js.Any = js.native
   val Creator: Double = js.native
   val IsOpen: Boolean = js.native

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Store
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object ProductPurchaseStatus extends js.Object {
   /** The transaction succeeded and the user has been notified. */
   @js.native
   sealed trait succeeded extends ProductPurchaseStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ProductPurchaseStatus with Double] = js.native
-  /* 1 */ @js.native
-  object alreadyPurchased extends TopLevel[alreadyPurchased with Double]
-  
-  /* 2 */ @js.native
-  object notFulfilled extends TopLevel[notFulfilled with Double]
-  
-  /* 3 */ @js.native
-  object notPurchased extends TopLevel[notPurchased with Double]
-  
-  /* 0 */ @js.native
-  object succeeded extends TopLevel[succeeded with Double]
   
 }
 

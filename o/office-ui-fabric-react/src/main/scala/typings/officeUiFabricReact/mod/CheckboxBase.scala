@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact.mod
 
-import typings.officeUiFabricReact.ReadonlyICheckboxProps
-import typings.officeUiFabricReact.ReadonlyICheckboxState
+import typings.officeUiFabricReact.anon.ReadonlyICheckboxProps
+import typings.officeUiFabricReact.anon.ReadonlyICheckboxState
 import typings.officeUiFabricReact.checkboxBaseMod.ICheckboxState
 import typings.officeUiFabricReact.checkboxTypesMod.ICheckboxProps
 import scala.scalajs.js

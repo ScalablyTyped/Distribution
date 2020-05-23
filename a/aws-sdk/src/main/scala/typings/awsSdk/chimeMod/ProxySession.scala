@@ -66,7 +66,7 @@ object ProxySession {
     Capabilities: CapabilityList = null,
     CreatedTimestamp: Iso8601Timestamp = null,
     EndedTimestamp: Iso8601Timestamp = null,
-    ExpiryMinutes: Int | Double = null,
+    ExpiryMinutes: js.UndefOr[PositiveInteger] = js.undefined,
     GeoMatchLevel: GeoMatchLevel = null,
     GeoMatchParams: GeoMatchParams = null,
     Name: String128 = null,
@@ -81,7 +81,7 @@ object ProxySession {
     if (Capabilities != null) __obj.updateDynamic("Capabilities")(Capabilities.asInstanceOf[js.Any])
     if (CreatedTimestamp != null) __obj.updateDynamic("CreatedTimestamp")(CreatedTimestamp.asInstanceOf[js.Any])
     if (EndedTimestamp != null) __obj.updateDynamic("EndedTimestamp")(EndedTimestamp.asInstanceOf[js.Any])
-    if (ExpiryMinutes != null) __obj.updateDynamic("ExpiryMinutes")(ExpiryMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(ExpiryMinutes)) __obj.updateDynamic("ExpiryMinutes")(ExpiryMinutes.get.asInstanceOf[js.Any])
     if (GeoMatchLevel != null) __obj.updateDynamic("GeoMatchLevel")(GeoMatchLevel.asInstanceOf[js.Any])
     if (GeoMatchParams != null) __obj.updateDynamic("GeoMatchParams")(GeoMatchParams.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])

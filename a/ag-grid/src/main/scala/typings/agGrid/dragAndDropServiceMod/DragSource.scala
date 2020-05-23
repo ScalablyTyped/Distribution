@@ -34,14 +34,14 @@ object DragSource {
     eElement: HTMLElement,
     `type`: DragSourceType,
     dragSourceDropTarget: DropTarget = null,
-    dragStartPixels: Int | Double = null,
+    dragStartPixels: js.UndefOr[Double] = js.undefined,
     dragStarted: () => Unit = null,
     dragStopped: () => Unit = null
   ): DragSource = {
     val __obj = js.Dynamic.literal(dragItemCallback = js.Any.fromFunction0(dragItemCallback), dragItemName = dragItemName.asInstanceOf[js.Any], eElement = eElement.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (dragSourceDropTarget != null) __obj.updateDynamic("dragSourceDropTarget")(dragSourceDropTarget.asInstanceOf[js.Any])
-    if (dragStartPixels != null) __obj.updateDynamic("dragStartPixels")(dragStartPixels.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragStartPixels)) __obj.updateDynamic("dragStartPixels")(dragStartPixels.get.asInstanceOf[js.Any])
     if (dragStarted != null) __obj.updateDynamic("dragStarted")(js.Any.fromFunction0(dragStarted))
     if (dragStopped != null) __obj.updateDynamic("dragStopped")(js.Any.fromFunction0(dragStopped))
     __obj.asInstanceOf[DragSource]

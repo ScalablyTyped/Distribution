@@ -18,10 +18,10 @@ trait TtsEvent extends js.Object {
 
 object TtsEvent {
   @scala.inline
-  def apply(`type`: String, charIndex: Int | Double = null, errorMessage: String = null): TtsEvent = {
+  def apply(`type`: String, charIndex: js.UndefOr[Double] = js.undefined, errorMessage: String = null): TtsEvent = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (charIndex != null) __obj.updateDynamic("charIndex")(charIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(charIndex)) __obj.updateDynamic("charIndex")(charIndex.get.asInstanceOf[js.Any])
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[TtsEvent]
   }

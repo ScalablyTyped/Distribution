@@ -25,10 +25,10 @@ object DeleteLocalGatewayRouteRequest {
   def apply(
     DestinationCidrBlock: String,
     LocalGatewayRouteTableId: LocalGatewayRoutetableId,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined
   ): DeleteLocalGatewayRouteRequest = {
     val __obj = js.Dynamic.literal(DestinationCidrBlock = DestinationCidrBlock.asInstanceOf[js.Any], LocalGatewayRouteTableId = LocalGatewayRouteTableId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLocalGatewayRouteRequest]
   }
 }

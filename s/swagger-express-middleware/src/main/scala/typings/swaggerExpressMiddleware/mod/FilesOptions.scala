@@ -20,7 +20,7 @@ object FilesOptions {
     val __obj = js.Dynamic.literal()
     if (apiPath != null) __obj.updateDynamic("apiPath")(apiPath.asInstanceOf[js.Any])
     if (rawFilesPath != null) __obj.updateDynamic("rawFilesPath")(rawFilesPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(useBasePath)) __obj.updateDynamic("useBasePath")(useBasePath.asInstanceOf[js.Any])
+    if (!js.isUndefined(useBasePath)) __obj.updateDynamic("useBasePath")(useBasePath.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilesOptions]
   }
 }

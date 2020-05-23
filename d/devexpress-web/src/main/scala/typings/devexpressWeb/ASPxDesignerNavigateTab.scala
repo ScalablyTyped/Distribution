@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ASPxDesignerNavigateTab")
 @js.native
-class ASPxDesignerNavigateTab () extends js.Object {
+trait ASPxDesignerNavigateTab extends js.Object {
   @JSName("displayName")
   var displayName_Original: KnockoutComputed[String] = js.native
   @JSName("isModified")

@@ -60,11 +60,11 @@ object SamplingRuleUpdate {
   @scala.inline
   def apply(
     Attributes: AttributeMap = null,
-    FixedRate: Int | scala.Double = null,
+    FixedRate: js.UndefOr[NullableDouble] = js.undefined,
     HTTPMethod: HTTPMethod = null,
     Host: Host = null,
-    Priority: Int | scala.Double = null,
-    ReservoirSize: Int | scala.Double = null,
+    Priority: js.UndefOr[NullableInteger] = js.undefined,
+    ReservoirSize: js.UndefOr[NullableInteger] = js.undefined,
     ResourceARN: ResourceARN = null,
     RuleARN: String = null,
     RuleName: RuleName = null,
@@ -74,11 +74,11 @@ object SamplingRuleUpdate {
   ): SamplingRuleUpdate = {
     val __obj = js.Dynamic.literal()
     if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
-    if (FixedRate != null) __obj.updateDynamic("FixedRate")(FixedRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(FixedRate)) __obj.updateDynamic("FixedRate")(FixedRate.get.asInstanceOf[js.Any])
     if (HTTPMethod != null) __obj.updateDynamic("HTTPMethod")(HTTPMethod.asInstanceOf[js.Any])
     if (Host != null) __obj.updateDynamic("Host")(Host.asInstanceOf[js.Any])
-    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
-    if (ReservoirSize != null) __obj.updateDynamic("ReservoirSize")(ReservoirSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReservoirSize)) __obj.updateDynamic("ReservoirSize")(ReservoirSize.get.asInstanceOf[js.Any])
     if (ResourceARN != null) __obj.updateDynamic("ResourceARN")(ResourceARN.asInstanceOf[js.Any])
     if (RuleARN != null) __obj.updateDynamic("RuleARN")(RuleARN.asInstanceOf[js.Any])
     if (RuleName != null) __obj.updateDynamic("RuleName")(RuleName.asInstanceOf[js.Any])

@@ -1,6 +1,7 @@
 package typings.angularCompiler
 
 import typings.angularCompiler.abstractEmitterMod.OutputEmitter
+import typings.angularCompiler.anon.Context
 import typings.angularCompiler.outputAstMod.Expression
 import typings.angularCompiler.outputAstMod.ExternalReference
 import typings.angularCompiler.outputAstMod.Statement
@@ -14,16 +15,16 @@ import scala.scalajs.js.annotation._
 object tsEmitterMod extends js.Object {
   @js.native
   class TypeScriptEmitter () extends OutputEmitter {
-    def emitStatementsAndContext(genFilePath: String, stmts: js.Array[Statement]): AnonContext = js.native
-    def emitStatementsAndContext(genFilePath: String, stmts: js.Array[Statement], preamble: String): AnonContext = js.native
-    def emitStatementsAndContext(genFilePath: String, stmts: js.Array[Statement], preamble: String, emitSourceMaps: Boolean): AnonContext = js.native
+    def emitStatementsAndContext(genFilePath: String, stmts: js.Array[Statement]): Context = js.native
+    def emitStatementsAndContext(genFilePath: String, stmts: js.Array[Statement], preamble: String): Context = js.native
+    def emitStatementsAndContext(genFilePath: String, stmts: js.Array[Statement], preamble: String, emitSourceMaps: Boolean): Context = js.native
     def emitStatementsAndContext(
       genFilePath: String,
       stmts: js.Array[Statement],
       preamble: String,
       emitSourceMaps: Boolean,
       referenceFilter: ReferenceFilter
-    ): AnonContext = js.native
+    ): Context = js.native
     def emitStatementsAndContext(
       genFilePath: String,
       stmts: js.Array[Statement],
@@ -31,7 +32,7 @@ object tsEmitterMod extends js.Object {
       emitSourceMaps: Boolean,
       referenceFilter: ReferenceFilter,
       importFilter: ReferenceFilter
-    ): AnonContext = js.native
+    ): Context = js.native
   }
   
   def debugOutputAstAsTypeScript(ast: js.Array[_]): String = js.native

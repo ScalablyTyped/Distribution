@@ -1,7 +1,6 @@
 package typings.heremaps.H.map.provider
 
 import typings.heremaps.H.map.Object
-import typings.heremaps.H.map.provider.TileProvider.Options
 import typings.heremaps.H.util.ICache
 import typings.heremaps.H.util.ICancelable
 import typings.heremaps.H.util.Job.Priority
@@ -16,14 +15,8 @@ import scala.scalajs.js.annotation._
   * RemoteTileProvider is an abstract class which should be used by classes implementing data provision on a tile basis. Every child class needs to implement 'requestInternal'
   * (to request remote tile) and 'getCache' (to provide configured cache object were tiled data is being cached)
   */
-@JSGlobal("H.map.provider.RemoteTileProvider")
 @js.native
-class RemoteTileProvider protected () extends TileProvider {
-  /**
-    * Constructor
-    * @param options {H.map.provider.TileProvider.Options} - The options to instantiate this TileProvider
-    */
-  def this(options: Options) = this()
+trait RemoteTileProvider extends TileProvider {
   /**
     * This method returns cache which should be used to store tiles
     * @returns {H.util.ICache} - cache

@@ -35,7 +35,7 @@ trait UpdateDeploymentResponse extends js.Object {
 object UpdateDeploymentResponse {
   @scala.inline
   def apply(
-    AutoDeployed: js.UndefOr[Boolean] = js.undefined,
+    AutoDeployed: js.UndefOr[boolean] = js.undefined,
     CreatedDate: timestampIso8601 = null,
     DeploymentId: Id = null,
     DeploymentStatus: DeploymentStatus = null,
@@ -43,7 +43,7 @@ object UpdateDeploymentResponse {
     Description: StringWithLengthBetween0And1024 = null
   ): UpdateDeploymentResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AutoDeployed)) __obj.updateDynamic("AutoDeployed")(AutoDeployed.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoDeployed)) __obj.updateDynamic("AutoDeployed")(AutoDeployed.get.asInstanceOf[js.Any])
     if (CreatedDate != null) __obj.updateDynamic("CreatedDate")(CreatedDate.asInstanceOf[js.Any])
     if (DeploymentId != null) __obj.updateDynamic("DeploymentId")(DeploymentId.asInstanceOf[js.Any])
     if (DeploymentStatus != null) __obj.updateDynamic("DeploymentStatus")(DeploymentStatus.asInstanceOf[js.Any])

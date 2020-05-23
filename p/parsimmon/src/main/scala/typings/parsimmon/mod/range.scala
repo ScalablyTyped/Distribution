@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object range extends js.Object {
   /**
-  	 * Parsers a single character in from begin to end, inclusive.
-  	 */
+    * Parsers a single character in from begin to end, inclusive.
+    */
   def apply(begin: String, end: String): Parser[String] = js.native
 }
 

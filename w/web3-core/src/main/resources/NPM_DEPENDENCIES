@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "web3-core" : "1.2.6"
+      "web3-core" : "1.2.8"
     }
   ],
   "test-dependencies" : [
     {
-      "web3-core" : "1.2.6"
+      "web3-core" : "1.2.8"
     }
   ],
   "compile-devDependencies" : [

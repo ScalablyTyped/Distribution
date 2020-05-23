@@ -17,6 +17,23 @@ trait YAxisStackLabelsOptions extends js.Object {
     */
   var allowOverlap: js.UndefOr[Boolean] = js.undefined
   /**
+    * (Highcharts) The background color or gradient for the stack label.
+    */
+  var backgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  /**
+    * (Highcharts) The border color for the stack label. Defaults to
+    * `undefined`.
+    */
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  /**
+    * (Highcharts) The border radius in pixels for the stack label.
+    */
+  var borderRadius: js.UndefOr[Double] = js.undefined
+  /**
+    * (Highcharts) The border width in pixels for the stack label.
+    */
+  var borderWidth: js.UndefOr[Double] = js.undefined
+  /**
     * (Highcharts) Whether to hide stack labels that are outside the plot area.
     * By default, the stack label is moved inside the plot area according to
     * the overflow option.
@@ -94,34 +111,42 @@ object YAxisStackLabelsOptions {
   def apply(
     align: AlignValue = null,
     allowOverlap: js.UndefOr[Boolean] = js.undefined,
+    backgroundColor: ColorString | GradientColorObject | PatternObject = null,
+    borderColor: ColorString | GradientColorObject | PatternObject = null,
+    borderRadius: js.UndefOr[Double] = js.undefined,
+    borderWidth: js.UndefOr[Double] = js.undefined,
     crop: js.UndefOr[Boolean] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
     format: String = null,
     formatter: FormatterCallbackFunction[StackItemObject] = null,
     overflow: DataLabelsOverflowValue = null,
-    rotation: Int | Double = null,
+    rotation: js.UndefOr[Double] = js.undefined,
     style: CSSObject = null,
     textAlign: AlignValue = null,
     useHTML: js.UndefOr[Boolean] = js.undefined,
     verticalAlign: VerticalAlignValue = null,
-    x: Int | Double = null,
-    y: Int | Double = null
+    x: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined
   ): YAxisStackLabelsOptions = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowOverlap)) __obj.updateDynamic("allowOverlap")(allowOverlap.asInstanceOf[js.Any])
-    if (!js.isUndefined(crop)) __obj.updateDynamic("crop")(crop.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowOverlap)) __obj.updateDynamic("allowOverlap")(allowOverlap.get.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderRadius)) __obj.updateDynamic("borderRadius")(borderRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(crop)) __obj.updateDynamic("crop")(crop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
     if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHTML)) __obj.updateDynamic("useHTML")(useHTML.asInstanceOf[js.Any])
+    if (!js.isUndefined(useHTML)) __obj.updateDynamic("useHTML")(useHTML.get.asInstanceOf[js.Any])
     if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[YAxisStackLabelsOptions]
   }
 }

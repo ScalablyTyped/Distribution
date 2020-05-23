@@ -27,7 +27,7 @@ object WindowsInformationProtectionApp {
     publisherName: String = null
   ): WindowsInformationProtectionApp = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(denied)) __obj.updateDynamic("denied")(denied.asInstanceOf[js.Any])
+    if (!js.isUndefined(denied)) __obj.updateDynamic("denied")(denied.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (productName != null) __obj.updateDynamic("productName")(productName.asInstanceOf[js.Any])

@@ -14,16 +14,16 @@ trait TransitionDefinitionCommonProps extends js.Object {
 object TransitionDefinitionCommonProps {
   @scala.inline
   def apply(
-    delay: Int | Double = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
     round: js.UndefOr[Boolean] = js.undefined
   ): TransitionDefinitionCommonProps = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitionDefinitionCommonProps]
   }
 }

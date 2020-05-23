@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.Parameter")
 @js.native
-class Parameter protected () extends js.Object {
+trait Parameter extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
   var DataType: XlParameterDataType = js.native

@@ -43,8 +43,8 @@ object SafariViewOptions {
   ): SafariViewOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (barTintColor != null) __obj.updateDynamic("barTintColor")(barTintColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(fromBottom)) __obj.updateDynamic("fromBottom")(fromBottom.asInstanceOf[js.Any])
-    if (!js.isUndefined(readerMode)) __obj.updateDynamic("readerMode")(readerMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(fromBottom)) __obj.updateDynamic("fromBottom")(fromBottom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(readerMode)) __obj.updateDynamic("readerMode")(readerMode.get.asInstanceOf[js.Any])
     if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[SafariViewOptions]
   }

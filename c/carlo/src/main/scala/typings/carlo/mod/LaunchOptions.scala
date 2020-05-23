@@ -48,28 +48,28 @@ object LaunchOptions {
     bgcolor: String = null,
     channel: js.Array[Channel] = null,
     executablePath: String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     icon: Buffer | String = null,
-    left: Int | Double = null,
+    left: js.UndefOr[Double] = js.undefined,
     paramsForReuse: js.Any = null,
     title: String = null,
-    top: Int | Double = null,
+    top: js.UndefOr[Double] = js.undefined,
     userDataDir: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): LaunchOptions = {
     val __obj = js.Dynamic.literal()
     if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     if (bgcolor != null) __obj.updateDynamic("bgcolor")(bgcolor.asInstanceOf[js.Any])
     if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
     if (executablePath != null) __obj.updateDynamic("executablePath")(executablePath.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.get.asInstanceOf[js.Any])
     if (paramsForReuse != null) __obj.updateDynamic("paramsForReuse")(paramsForReuse.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
     if (userDataDir != null) __obj.updateDynamic("userDataDir")(userDataDir.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchOptions]
   }
 }

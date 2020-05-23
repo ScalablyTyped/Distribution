@@ -72,7 +72,7 @@ object DocumentVersionMetadata {
     ModifiedTimestamp: TimestampType = null,
     Name: ResourceNameType = null,
     Signature: HashType = null,
-    Size: Int | Double = null,
+    Size: js.UndefOr[SizeType] = js.undefined,
     Source: DocumentSourceUrlMap = null,
     Status: DocumentStatusType = null,
     Thumbnail: DocumentThumbnailUrlMap = null
@@ -87,7 +87,7 @@ object DocumentVersionMetadata {
     if (ModifiedTimestamp != null) __obj.updateDynamic("ModifiedTimestamp")(ModifiedTimestamp.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (Signature != null) __obj.updateDynamic("Signature")(Signature.asInstanceOf[js.Any])
-    if (Size != null) __obj.updateDynamic("Size")(Size.asInstanceOf[js.Any])
+    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size.get.asInstanceOf[js.Any])
     if (Source != null) __obj.updateDynamic("Source")(Source.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (Thumbnail != null) __obj.updateDynamic("Thumbnail")(Thumbnail.asInstanceOf[js.Any])

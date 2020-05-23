@@ -3,8 +3,8 @@ package typings.objection.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.knex.mod.ColumnInfo
 import typings.knex.mod.JoinClause
-import typings.objection.AnonAs
-import typings.objection.TypeofModel
+import typings.objection.anon.As
+import typings.objection.anon.TypeofModel
 import typings.std.Promise
 import typings.std.RegExp
 import scala.scalajs.js
@@ -553,12 +553,12 @@ class QueryBuilder[M /* <: Model */, R] () extends Promise[R] {
   def count(aliasToColumnDict: StringDictionary[String | js.Array[String]]): this.type = js.native
   def count(columns: ColumnRef*): this.type = js.native
   def count(column: ColumnRef): this.type = js.native
-  def count(column: ColumnRef, options: AnonAs): this.type = js.native
+  def count(column: ColumnRef, options: As): this.type = js.native
   def countDistinct(): this.type = js.native
   def countDistinct(aliasToColumnDict: StringDictionary[String | js.Array[String]]): this.type = js.native
   def countDistinct(columns: ColumnRef*): this.type = js.native
   def countDistinct(column: ColumnRef): this.type = js.native
-  def countDistinct(column: ColumnRef, options: AnonAs): this.type = js.native
+  def countDistinct(column: ColumnRef, options: As): this.type = js.native
   def crossJoin(raw: Raw_): this.type = js.native
   def crossJoin(table: TableRef, cb: CallbackVoid[JoinClause]): this.type = js.native
   def crossJoin(table: TableRef, leftCol: ColumnRef, op: Operator, rightCol: ColumnRef): this.type = js.native

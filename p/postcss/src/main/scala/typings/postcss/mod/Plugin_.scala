@@ -1,6 +1,6 @@
 package typings.postcss.mod
 
-import typings.postcss.AnonToString
+import typings.postcss.anon.ToString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,8 +12,8 @@ trait Plugin_[T] extends Transformer {
   def apply(opts: T): Transformer = js.native
   def process(css: String): LazyResult = js.native
   def process(css: String, opts: js.Any): LazyResult = js.native
-  def process(css: AnonToString): LazyResult = js.native
-  def process(css: AnonToString, opts: js.Any): LazyResult = js.native
+  def process(css: ToString): LazyResult = js.native
+  def process(css: ToString, opts: js.Any): LazyResult = js.native
   def process(css: Result): LazyResult = js.native
   def process(css: Result, opts: js.Any): LazyResult = js.native
 }

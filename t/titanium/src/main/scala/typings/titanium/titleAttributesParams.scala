@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
   */
 trait titleAttributesParams extends js.Object {
   /**
-  	 * Color of the window title, as a color name or hex triplet.
-  	 */
+    * Color of the window title, as a color name or hex triplet.
+    */
   var color: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Font to use for the window title.
-  	 */
+    * Font to use for the window title.
+    */
   var font: js.UndefOr[Font] = js.undefined
   /**
-  	 * Shadow color and offset for the window title.
-  	 */
+    * Shadow color and offset for the window title.
+    */
   var shadow: js.UndefOr[shadowDict] = js.undefined
 }
 

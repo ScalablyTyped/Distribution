@@ -46,16 +46,16 @@ object WorkspaceRequest {
     BundleId: BundleId,
     DirectoryId: DirectoryId,
     UserName: UserName,
-    RootVolumeEncryptionEnabled: js.UndefOr[Boolean] = js.undefined,
+    RootVolumeEncryptionEnabled: js.UndefOr[BooleanObject] = js.undefined,
     Tags: TagList = null,
-    UserVolumeEncryptionEnabled: js.UndefOr[Boolean] = js.undefined,
+    UserVolumeEncryptionEnabled: js.UndefOr[BooleanObject] = js.undefined,
     VolumeEncryptionKey: VolumeEncryptionKey = null,
     WorkspaceProperties: WorkspaceProperties = null
   ): WorkspaceRequest = {
     val __obj = js.Dynamic.literal(BundleId = BundleId.asInstanceOf[js.Any], DirectoryId = DirectoryId.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
-    if (!js.isUndefined(RootVolumeEncryptionEnabled)) __obj.updateDynamic("RootVolumeEncryptionEnabled")(RootVolumeEncryptionEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(RootVolumeEncryptionEnabled)) __obj.updateDynamic("RootVolumeEncryptionEnabled")(RootVolumeEncryptionEnabled.get.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(UserVolumeEncryptionEnabled)) __obj.updateDynamic("UserVolumeEncryptionEnabled")(UserVolumeEncryptionEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(UserVolumeEncryptionEnabled)) __obj.updateDynamic("UserVolumeEncryptionEnabled")(UserVolumeEncryptionEnabled.get.asInstanceOf[js.Any])
     if (VolumeEncryptionKey != null) __obj.updateDynamic("VolumeEncryptionKey")(VolumeEncryptionKey.asInstanceOf[js.Any])
     if (WorkspaceProperties != null) __obj.updateDynamic("WorkspaceProperties")(WorkspaceProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceRequest]

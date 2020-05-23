@@ -1,6 +1,6 @@
 package typings.comDarktalkerCordovaScreenshot
 
-import typings.comDarktalkerCordovaScreenshot.com.darktalker.cordova.screenshot.Plugin
+import typings.comDarktalkerCordovaScreenshot.com_.darktalker.cordova.screenshot.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

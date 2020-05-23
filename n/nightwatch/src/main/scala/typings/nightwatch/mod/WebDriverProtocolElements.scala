@@ -1,6 +1,6 @@
 package typings.nightwatch.mod
 
-import typings.nightwatch.AnonELEMENT
+import typings.nightwatch.anon.ELEMENT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +35,7 @@ trait WebDriverProtocolElements extends js.Object {
   def element(
     using: LocateStrategy,
     value: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[AnonELEMENT], Unit]
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENT], Unit]
   ): this.type = js.native
   /**
     * Get the element on the page that currently has focus. The element will be returned as a [Web Element](https://www.w3.org/TR/webdriver1/#dfn-web-elements) JSON object.
@@ -51,7 +51,7 @@ trait WebDriverProtocolElements extends js.Object {
     */
   def elementActive(): this.type = js.native
   def elementActive(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[AnonELEMENT], Unit]
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENT], Unit]
   ): this.type = js.native
   /**
     * Search for an element on the page, starting from the identified element. The located element will be returned as a Web Element JSON object.
@@ -78,7 +78,7 @@ trait WebDriverProtocolElements extends js.Object {
     id: String,
     using: LocateStrategy,
     value: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[AnonELEMENT], Unit]
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENT], Unit]
   ): this.type = js.native
   /**
     * Search for multiple elements on the page, starting from the identified element. The located element will be returned as a web element JSON objects.
@@ -104,7 +104,7 @@ trait WebDriverProtocolElements extends js.Object {
     value: String,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[js.Array[AnonELEMENT]], 
+      /* result */ NightwatchCallbackResult[js.Array[ELEMENT]], 
       Unit
     ]
   ): this.type = js.native
@@ -171,7 +171,7 @@ trait WebDriverProtocolElements extends js.Object {
     value: String,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[js.Array[AnonELEMENT]], 
+      /* result */ NightwatchCallbackResult[js.Array[ELEMENT]], 
       Unit
     ]
   ): this.type = js.native

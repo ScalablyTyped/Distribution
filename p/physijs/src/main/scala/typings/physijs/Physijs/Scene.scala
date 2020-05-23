@@ -1,23 +1,21 @@
 package typings.physijs.Physijs
 
-import typings.physijs.AnonTarget
+import typings.physijs.anon.Target
 import typings.three.mod.Object3D
 import typings.three.mod.Vector3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Physijs.Scene")
 @js.native
-class Scene ()
+trait Scene
   extends typings.three.mod.Scene {
-  def this(param: SceneParameters) = this()
   def add(`object`: Object3D): this.type = js.native
   def addConstraint(constraint: Constraint): Unit = js.native
   def addConstraint(constraint: Constraint, show_marker: Boolean): Unit = js.native
   def dispatchEvent(event_name: String): Unit = js.native
   // (extends from Object3D)
-  def dispatchEvent(event: AnonTarget): Unit = js.native
+  def dispatchEvent(event: Target): Unit = js.native
   def execute(cmd: String, params: js.Any): Unit = js.native
   def onSimulationResume(): Unit = js.native
   def remove(`object`: Object3D): this.type = js.native

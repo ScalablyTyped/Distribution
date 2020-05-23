@@ -1,5 +1,6 @@
 package typings.graphqlQueryComplexity
 
+import typings.graphqlQueryComplexity.anon.DefaultComplexity
 import typings.graphqlQueryComplexity.queryComplexityMod.ComplexityEstimator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +15,6 @@ object estimatorsMod extends js.Object {
   def fieldExtensionsEstimator(): ComplexityEstimator = js.native
   def legacyEstimator(): ComplexityEstimator = js.native
   def simpleEstimator(): ComplexityEstimator = js.native
-  def simpleEstimator(options: AnonDefaultComplexity): ComplexityEstimator = js.native
+  def simpleEstimator(options: DefaultComplexity): ComplexityEstimator = js.native
 }
 

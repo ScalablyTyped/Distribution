@@ -1,5 +1,6 @@
 package typings.reactNativeNavigation
 
+import typings.reactNativeNavigation.anon.Modals
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +26,7 @@ object nativeCommandsSenderMod extends js.Object {
     def popToRoot(commandId: String, componentId: String, options: js.Object): js.Promise[_] = js.native
     def push(commandId: String, onComponentId: String, layout: js.Object): js.Promise[_] = js.native
     def setDefaultOptions(options: js.Object): Unit = js.native
-    def setRoot(commandId: String, layout: AnonModals): js.Promise[_] = js.native
+    def setRoot(commandId: String, layout: Modals): js.Promise[_] = js.native
     def setStackRoot(commandId: String, onComponentId: String, layout: js.Object): js.Promise[_] = js.native
     def showModal(commandId: String, layout: js.Object): js.Promise[_] = js.native
     def showOverlay(commandId: String, layout: js.Object): js.Promise[_] = js.native

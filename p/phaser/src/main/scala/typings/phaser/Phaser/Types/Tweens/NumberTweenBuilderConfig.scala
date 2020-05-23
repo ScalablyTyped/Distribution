@@ -13,7 +13,7 @@ trait NumberTweenBuilderConfig extends js.Object {
   /**
     * The time the tween will wait before the onComplete event is dispatched once it has completed, in ms.
     */
-  var completeDelay: js.UndefOr[Double | js.Function | js.Object | js.Array[_]] = js.undefined
+  var completeDelay: js.UndefOr[String | Double | js.Function | js.Object | js.Array[_]] = js.undefined
   /**
     * The number of milliseconds to delay before the tween will start.
     */
@@ -41,15 +41,15 @@ trait NumberTweenBuilderConfig extends js.Object {
   /**
     * The number of times the tween will repeat. (A value of 1 means the tween will play twice, as it repeated once.) The first loop starts after every property tween has completed once.
     */
-  var loop: js.UndefOr[Double | js.Function | js.Object | js.Array[_]] = js.undefined
+  var loop: js.UndefOr[String | Double | js.Function | js.Object | js.Array[_]] = js.undefined
   /**
     * The time the tween will pause before starting either a yoyo or returning to the start for a repeat.
     */
-  var loopDelay: js.UndefOr[Double | js.Function | js.Object | js.Array[_]] = js.undefined
+  var loopDelay: js.UndefOr[String | Double | js.Function | js.Object | js.Array[_]] = js.undefined
   /**
     * Used when the Tween is part of a Timeline.
     */
-  var offset: js.UndefOr[Double | js.Function | js.Object | js.Array[_]] = js.undefined
+  var offset: js.UndefOr[String | Double | js.Function | js.Object | js.Array[_]] = js.undefined
   /**
     * A function to call when the tween completes.
     */
@@ -152,16 +152,16 @@ object NumberTweenBuilderConfig {
   @scala.inline
   def apply(
     callbackScope: js.Any = null,
-    completeDelay: Double | js.Function | js.Object | js.Array[_] = null,
-    delay: Int | Double = null,
-    duration: Int | Double = null,
+    completeDelay: String | Double | js.Function | js.Object | js.Array[_] = null,
+    delay: js.UndefOr[Double] = js.undefined,
+    duration: js.UndefOr[Double] = js.undefined,
     ease: String | js.Function = null,
     easeParams: js.Array[_] = null,
-    from: Int | Double = null,
-    hold: Int | Double = null,
-    loop: Double | js.Function | js.Object | js.Array[_] = null,
-    loopDelay: Double | js.Function | js.Object | js.Array[_] = null,
-    offset: Double | js.Function | js.Object | js.Array[_] = null,
+    from: js.UndefOr[Double] = js.undefined,
+    hold: js.UndefOr[Double] = js.undefined,
+    loop: String | Double | js.Function | js.Object | js.Array[_] = null,
+    loopDelay: String | Double | js.Function | js.Object | js.Array[_] = null,
+    offset: String | Double | js.Function | js.Object | js.Array[_] = null,
     onComplete: (/* tween */ Tween, /* targets */ js.Array[js.Any], /* repeated */ js.Any) => Unit = null,
     onCompleteParams: js.Array[_] = null,
     onCompleteScope: js.Any = null,
@@ -181,21 +181,21 @@ object NumberTweenBuilderConfig {
     onYoyoParams: js.Array[_] = null,
     onYoyoScope: js.Any = null,
     paused: js.UndefOr[Boolean] = js.undefined,
-    repeat: Int | Double = null,
-    repeatDelay: Int | Double = null,
-    to: Int | Double = null,
+    repeat: js.UndefOr[Double] = js.undefined,
+    repeatDelay: js.UndefOr[Double] = js.undefined,
+    to: js.UndefOr[Double] = js.undefined,
     useFrames: js.UndefOr[Boolean] = js.undefined,
     yoyo: js.UndefOr[Boolean] = js.undefined
   ): NumberTweenBuilderConfig = {
     val __obj = js.Dynamic.literal()
     if (callbackScope != null) __obj.updateDynamic("callbackScope")(callbackScope.asInstanceOf[js.Any])
     if (completeDelay != null) __obj.updateDynamic("completeDelay")(completeDelay.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (ease != null) __obj.updateDynamic("ease")(ease.asInstanceOf[js.Any])
     if (easeParams != null) __obj.updateDynamic("easeParams")(easeParams.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (hold != null) __obj.updateDynamic("hold")(hold.asInstanceOf[js.Any])
+    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hold)) __obj.updateDynamic("hold")(hold.get.asInstanceOf[js.Any])
     if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
     if (loopDelay != null) __obj.updateDynamic("loopDelay")(loopDelay.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
@@ -217,12 +217,12 @@ object NumberTweenBuilderConfig {
     if (onYoyo != null) __obj.updateDynamic("onYoyo")(js.Any.fromFunction3(onYoyo))
     if (onYoyoParams != null) __obj.updateDynamic("onYoyoParams")(onYoyoParams.asInstanceOf[js.Any])
     if (onYoyoScope != null) __obj.updateDynamic("onYoyoScope")(onYoyoScope.asInstanceOf[js.Any])
-    if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused.asInstanceOf[js.Any])
-    if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
-    if (repeatDelay != null) __obj.updateDynamic("repeatDelay")(repeatDelay.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
-    if (!js.isUndefined(useFrames)) __obj.updateDynamic("useFrames")(useFrames.asInstanceOf[js.Any])
-    if (!js.isUndefined(yoyo)) __obj.updateDynamic("yoyo")(yoyo.asInstanceOf[js.Any])
+    if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeat)) __obj.updateDynamic("repeat")(repeat.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeatDelay)) __obj.updateDynamic("repeatDelay")(repeatDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(to)) __obj.updateDynamic("to")(to.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useFrames)) __obj.updateDynamic("useFrames")(useFrames.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yoyo)) __obj.updateDynamic("yoyo")(yoyo.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberTweenBuilderConfig]
   }
 }

@@ -55,9 +55,9 @@ object TapeArchive {
     TapeARN: TapeARN = null,
     TapeBarcode: TapeBarcode = null,
     TapeCreatedDate: Time = null,
-    TapeSizeInBytes: Int | Double = null,
+    TapeSizeInBytes: js.UndefOr[TapeSize] = js.undefined,
     TapeStatus: TapeArchiveStatus = null,
-    TapeUsedInBytes: Int | Double = null
+    TapeUsedInBytes: js.UndefOr[TapeUsage] = js.undefined
   ): TapeArchive = {
     val __obj = js.Dynamic.literal()
     if (CompletionTime != null) __obj.updateDynamic("CompletionTime")(CompletionTime.asInstanceOf[js.Any])
@@ -67,9 +67,9 @@ object TapeArchive {
     if (TapeARN != null) __obj.updateDynamic("TapeARN")(TapeARN.asInstanceOf[js.Any])
     if (TapeBarcode != null) __obj.updateDynamic("TapeBarcode")(TapeBarcode.asInstanceOf[js.Any])
     if (TapeCreatedDate != null) __obj.updateDynamic("TapeCreatedDate")(TapeCreatedDate.asInstanceOf[js.Any])
-    if (TapeSizeInBytes != null) __obj.updateDynamic("TapeSizeInBytes")(TapeSizeInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(TapeSizeInBytes)) __obj.updateDynamic("TapeSizeInBytes")(TapeSizeInBytes.get.asInstanceOf[js.Any])
     if (TapeStatus != null) __obj.updateDynamic("TapeStatus")(TapeStatus.asInstanceOf[js.Any])
-    if (TapeUsedInBytes != null) __obj.updateDynamic("TapeUsedInBytes")(TapeUsedInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(TapeUsedInBytes)) __obj.updateDynamic("TapeUsedInBytes")(TapeUsedInBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TapeArchive]
   }
 }

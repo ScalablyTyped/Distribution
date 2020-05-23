@@ -1,8 +1,8 @@
 package typings.babylonjs.effectLayerMod
 
-import typings.babylonjs.AnonColor
-import typings.babylonjs.PartialIEffectLayerOption
 import typings.babylonjs.abstractMeshMod.AbstractMesh
+import typings.babylonjs.anon.Color
+import typings.babylonjs.anon.PartialIEffectLayerOption
 import typings.babylonjs.baseTextureMod.BaseTexture
 import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.effectMod.Effect
@@ -38,7 +38,7 @@ abstract class EffectLayer protected () extends js.Object {
   var _disposeTextureAndPostProcesses: js.Any = js.native
   var _effectLayerMapGenerationEffect: js.Any = js.native
   var _effectLayerOptions: js.Any = js.native
-  var _emissiveTextureAndColor: AnonColor = js.native
+  var _emissiveTextureAndColor: Color = js.native
   var _engine: Engine = js.native
   /**
     * Generates the index buffer of the full screen quad blending to the main canvas.

@@ -14,10 +14,10 @@ trait IButton extends js.Object {
 
 object IButton {
   @scala.inline
-  def apply(postback: String = null, text: String = null): IButton = {
+  def apply(postback: js.UndefOr[Null | String] = js.undefined, text: js.UndefOr[Null | String] = js.undefined): IButton = {
     val __obj = js.Dynamic.literal()
-    if (postback != null) __obj.updateDynamic("postback")(postback.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (!js.isUndefined(postback)) __obj.updateDynamic("postback")(postback.asInstanceOf[js.Any])
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IButton]
   }
 }

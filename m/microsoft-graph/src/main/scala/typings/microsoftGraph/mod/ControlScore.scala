@@ -21,13 +21,13 @@ object ControlScore {
     controlCategory: String = null,
     controlName: String = null,
     description: String = null,
-    score: Int | Double = null
+    score: js.UndefOr[Double] = js.undefined
   ): ControlScore = {
     val __obj = js.Dynamic.literal()
     if (controlCategory != null) __obj.updateDynamic("controlCategory")(controlCategory.asInstanceOf[js.Any])
     if (controlName != null) __obj.updateDynamic("controlName")(controlName.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ControlScore]
   }
 }

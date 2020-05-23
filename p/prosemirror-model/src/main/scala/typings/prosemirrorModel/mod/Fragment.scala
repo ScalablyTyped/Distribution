@@ -1,7 +1,7 @@
 package typings.prosemirrorModel.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.prosemirrorModel.AnonA
+import typings.prosemirrorModel.anon.A
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -63,7 +63,7 @@ class Fragment[S /* <: Schema[_, _] */] () extends js.Object {
     * same. Since this position will not be the same in both nodes, an
     * object with two separate positions is returned.
     */
-  def findDiffEnd(other: ProsemirrorNode[S]): js.UndefOr[AnonA | Null] = js.native
+  def findDiffEnd(other: ProsemirrorNode[S]): js.UndefOr[A | Null] = js.native
   /**
     * Find the first position at which this fragment and another
     * fragment differ, or `null` if they are the same.

@@ -7,73 +7,70 @@ import scala.scalajs.js.annotation._
 
 trait IgGridHidingLocale
   extends /**
-	 * Option for IgGridHidingLocale
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   /**
-  	 * Specifies the text of the button which applies changes in the modal dialog.
-  	 *
-  	 */
+    * Specifies the text of the button which applies changes in the modal dialog.
+    *
+    */
   var columnChooserButtonApplyText: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies the text of the button which cancels changes in the modal dialog.
-  	 *
-  	 */
+    * Specifies the text of the button which cancels changes in the modal dialog.
+    *
+    */
   var columnChooserButtonCancelText: js.UndefOr[String] = js.undefined
   /**
-  	 * The caption of the column chooser dialog.
-  	 *
-  	 */
+    * The caption of the column chooser dialog.
+    *
+    */
   var columnChooserCaptionLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * The close button tooltip of the column chooser dialog.
-  	 *
-  	 */
+    * The close button tooltip of the column chooser dialog.
+    *
+    */
   var columnChooserCloseButtonTooltip: js.UndefOr[String] = js.undefined
   /**
-  	 * The text used in the drop down tools menu(Feature Chooser) to launch the column chooser dialog.
-  	 *
-  	 */
+    * The text used in the drop down tools menu(Feature Chooser) to launch the column chooser dialog.
+    *
+    */
   var columnChooserDisplayText: js.UndefOr[String] = js.undefined
   /**
-  	 * The text used in the column chooser to hide column.
-  	 *
-  	 */
+    * The text used in the column chooser to hide column.
+    *
+    */
   var columnChooserHideText: js.UndefOr[String] = js.undefined
   /**
-  	 * Text label for reset button.
-  	 *
-  	 */
+    * Text label for reset button.
+    *
+    */
   var columnChooserResetButtonLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * The text used in the column chooser to show column.
-  	 *
-  	 */
+    * The text used in the column chooser to show column.
+    *
+    */
   var columnChooserShowText: js.UndefOr[String] = js.undefined
   /**
-  	 * The text used in the drop down tools menu(Feature Chooser) to hide a column.
-  	 *
-  	 */
+    * The text used in the drop down tools menu(Feature Chooser) to hide a column.
+    *
+    */
   var columnHideText: js.UndefOr[String] = js.undefined
   /**
-  	 * The text displayed in the tooltip of the hidden column indicator.
-  	 *
-  	 */
+    * The text displayed in the tooltip of the hidden column indicator.
+    *
+    */
   var hiddenColumnIndicatorTooltipText: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies the hiding column icon tooltip.
-  	 *
-  	 */
+    * Specifies the hiding column icon tooltip.
+    *
+    */
   var hideColumnIconTooltip: js.UndefOr[String] = js.undefined
 }
 
 object IgGridHidingLocale {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for IgGridHidingLocale
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     columnChooserButtonApplyText: String = null,
     columnChooserButtonCancelText: String = null,
     columnChooserCaptionLabel: String = null,

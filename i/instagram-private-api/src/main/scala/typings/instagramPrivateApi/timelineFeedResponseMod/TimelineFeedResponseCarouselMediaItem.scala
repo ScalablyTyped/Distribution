@@ -41,7 +41,7 @@ object TimelineFeedResponseCarouselMediaItem {
     original_width: Double,
     pk: String,
     ad_action: String = null,
-    ad_link_type: Int | Double = null,
+    ad_link_type: js.UndefOr[Double] = js.undefined,
     ad_metadata: js.Array[TimelineFeedResponseAdMetadataItem] = null,
     android_links: js.Array[TimelineFeedResponseAndroidLinksItem] = null,
     dominant_color: String = null,
@@ -54,18 +54,17 @@ object TimelineFeedResponseCarouselMediaItem {
     overlay_subtitle: String = null,
     overlay_text: String = null,
     overlay_title: String = null,
-    usertags: TimelineFeedResponseUsertags = null,
-    video_subtitles_uri: js.UndefOr[scala.Nothing] = js.undefined
+    usertags: TimelineFeedResponseUsertags = null
   ): TimelineFeedResponseCarouselMediaItem = {
     val __obj = js.Dynamic.literal(carousel_parent_id = carousel_parent_id.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image_versions2 = image_versions2.asInstanceOf[js.Any], media_type = media_type.asInstanceOf[js.Any], original_height = original_height.asInstanceOf[js.Any], original_width = original_width.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any])
     if (ad_action != null) __obj.updateDynamic("ad_action")(ad_action.asInstanceOf[js.Any])
-    if (ad_link_type != null) __obj.updateDynamic("ad_link_type")(ad_link_type.asInstanceOf[js.Any])
+    if (!js.isUndefined(ad_link_type)) __obj.updateDynamic("ad_link_type")(ad_link_type.get.asInstanceOf[js.Any])
     if (ad_metadata != null) __obj.updateDynamic("ad_metadata")(ad_metadata.asInstanceOf[js.Any])
     if (android_links != null) __obj.updateDynamic("android_links")(android_links.asInstanceOf[js.Any])
     if (dominant_color != null) __obj.updateDynamic("dominant_color")(dominant_color.asInstanceOf[js.Any])
-    if (!js.isUndefined(force_overlay)) __obj.updateDynamic("force_overlay")(force_overlay.asInstanceOf[js.Any])
+    if (!js.isUndefined(force_overlay)) __obj.updateDynamic("force_overlay")(force_overlay.get.asInstanceOf[js.Any])
     if (headline != null) __obj.updateDynamic("headline")(headline.asInstanceOf[js.Any])
-    if (!js.isUndefined(hide_nux_text)) __obj.updateDynamic("hide_nux_text")(hide_nux_text.asInstanceOf[js.Any])
+    if (!js.isUndefined(hide_nux_text)) __obj.updateDynamic("hide_nux_text")(hide_nux_text.get.asInstanceOf[js.Any])
     if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
     if (link_hint_text != null) __obj.updateDynamic("link_hint_text")(link_hint_text.asInstanceOf[js.Any])
     if (link_text != null) __obj.updateDynamic("link_text")(link_text.asInstanceOf[js.Any])
@@ -73,7 +72,6 @@ object TimelineFeedResponseCarouselMediaItem {
     if (overlay_text != null) __obj.updateDynamic("overlay_text")(overlay_text.asInstanceOf[js.Any])
     if (overlay_title != null) __obj.updateDynamic("overlay_title")(overlay_title.asInstanceOf[js.Any])
     if (usertags != null) __obj.updateDynamic("usertags")(usertags.asInstanceOf[js.Any])
-    if (!js.isUndefined(video_subtitles_uri)) __obj.updateDynamic("video_subtitles_uri")(video_subtitles_uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineFeedResponseCarouselMediaItem]
   }
 }

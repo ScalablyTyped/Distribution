@@ -15,7 +15,7 @@ object Event {
   @scala.inline
   def apply(
     `type`: String,
-    StringDictionary: /* attachment */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     target: js.Any = null
   ): Event = {
     val __obj = js.Dynamic.literal()

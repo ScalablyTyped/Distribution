@@ -13,9 +13,9 @@ trait AverageComparativeScore extends js.Object {
 
 object AverageComparativeScore {
   @scala.inline
-  def apply(averageScore: Int | Double = null, basis: String = null): AverageComparativeScore = {
+  def apply(averageScore: js.UndefOr[Double] = js.undefined, basis: String = null): AverageComparativeScore = {
     val __obj = js.Dynamic.literal()
-    if (averageScore != null) __obj.updateDynamic("averageScore")(averageScore.asInstanceOf[js.Any])
+    if (!js.isUndefined(averageScore)) __obj.updateDynamic("averageScore")(averageScore.get.asInstanceOf[js.Any])
     if (basis != null) __obj.updateDynamic("basis")(basis.asInstanceOf[js.Any])
     __obj.asInstanceOf[AverageComparativeScore]
   }

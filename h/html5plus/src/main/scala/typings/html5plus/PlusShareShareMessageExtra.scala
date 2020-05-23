@@ -14,10 +14,10 @@ trait PlusShareShareMessageExtra extends js.Object {
   /**
     * 微信分享场景，仅微信分享平台有效
     * 可取值：
-    * 	"WXSceneSession"分享到微信的“我的好友”；
-    * 	"WXSceneTimeline"分享到微信的“朋友圈”中；
-    * 	"WXSceneFavorite"分享到微信的“我的收藏”中。
-    * 	默认值为"WXSceneSession"。
+    *     "WXSceneSession"分享到微信的“我的好友”；
+    *     "WXSceneTimeline"分享到微信的“朋友圈”中；
+    *     "WXSceneFavorite"分享到微信的“我的收藏”中。
+    *     默认值为"WXSceneSession"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */

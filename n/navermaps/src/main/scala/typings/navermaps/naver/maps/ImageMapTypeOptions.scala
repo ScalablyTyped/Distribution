@@ -36,10 +36,10 @@ object ImageMapTypeOptions {
     vendor: String = null
   ): ImageMapTypeOptions = {
     val __obj = js.Dynamic.literal(maxZoom = maxZoom.asInstanceOf[js.Any], minZoom = minZoom.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any])
-    if (!js.isUndefined(darktheme)) __obj.updateDynamic("darktheme")(darktheme.asInstanceOf[js.Any])
+    if (!js.isUndefined(darktheme)) __obj.updateDynamic("darktheme")(darktheme.get.asInstanceOf[js.Any])
     if (getTileUrl != null) __obj.updateDynamic("getTileUrl")(js.Any.fromFunction0(getTileUrl))
     if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
-    if (!js.isUndefined(repeatX)) __obj.updateDynamic("repeatX")(repeatX.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeatX)) __obj.updateDynamic("repeatX")(repeatX.get.asInstanceOf[js.Any])
     if (tileSet != null) __obj.updateDynamic("tileSet")(tileSet.asInstanceOf[js.Any])
     if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
     if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])

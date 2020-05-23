@@ -4,13 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.Services.Formatting.Rule")
-@js.native
-class Rule protected () extends js.Object {
-  def this(Descriptor: RuleDescriptor, Operation: RuleOperation) = this()
-  def this(Descriptor: RuleDescriptor, Operation: RuleOperation, Flag: RuleFlags) = this()
-  var Descriptor: RuleDescriptor = js.native
-  var Flag: RuleFlags = js.native
-  var Operation: RuleOperation = js.native
+trait Rule extends js.Object {
+  var Descriptor: RuleDescriptor
+  var Flag: RuleFlags
+  var Operation: RuleOperation
+}
+
+object Rule {
+  @scala.inline
+  def apply(Descriptor: RuleDescriptor, Flag: RuleFlags, Operation: RuleOperation): Rule = {
+    val __obj = js.Dynamic.literal(Descriptor = Descriptor.asInstanceOf[js.Any], Flag = Flag.asInstanceOf[js.Any], Operation = Operation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Rule]
+  }
 }
 

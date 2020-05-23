@@ -53,8 +53,8 @@ object SpreadsheetOptions {
     change: /* e */ SpreadsheetChangeEvent => Unit = null,
     changeFormat: /* e */ SpreadsheetChangeFormatEvent => Unit = null,
     changing: /* e */ SpreadsheetChangingEvent => Unit = null,
-    columnWidth: Int | Double = null,
-    columns: Int | Double = null,
+    columnWidth: js.UndefOr[Double] = js.undefined,
+    columns: js.UndefOr[Double] = js.undefined,
     copy: /* e */ SpreadsheetCopyEvent => Unit = null,
     cut: /* e */ SpreadsheetCutEvent => Unit = null,
     dataBinding: /* e */ SpreadsheetDataBindingEvent => Unit = null,
@@ -65,8 +65,8 @@ object SpreadsheetOptions {
     excel: SpreadsheetExcel = null,
     excelExport: /* e */ SpreadsheetExcelExportEvent => Unit = null,
     excelImport: /* e */ SpreadsheetExcelImportEvent => Unit = null,
-    headerHeight: Int | Double = null,
-    headerWidth: Int | Double = null,
+    headerHeight: js.UndefOr[Double] = js.undefined,
+    headerWidth: js.UndefOr[Double] = js.undefined,
     hideColumn: /* e */ SpreadsheetHideColumnEvent => Unit = null,
     hideRow: /* e */ SpreadsheetHideRowEvent => Unit = null,
     insertColumn: /* e */ SpreadsheetInsertColumnEvent => Unit = null,
@@ -79,8 +79,8 @@ object SpreadsheetOptions {
     removeSheet: /* e */ SpreadsheetRemoveSheetEvent => Unit = null,
     renameSheet: /* e */ SpreadsheetRenameSheetEvent => Unit = null,
     render: /* e */ SpreadsheetRenderEvent => Unit = null,
-    rowHeight: Int | Double = null,
-    rows: Int | Double = null,
+    rowHeight: js.UndefOr[Double] = js.undefined,
+    rows: js.UndefOr[Double] = js.undefined,
     select: /* e */ SpreadsheetSelectEvent => Unit = null,
     selectSheet: /* e */ SpreadsheetSelectSheetEvent => Unit = null,
     sheets: js.Array[SpreadsheetSheet] = null,
@@ -94,8 +94,8 @@ object SpreadsheetOptions {
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (changeFormat != null) __obj.updateDynamic("changeFormat")(js.Any.fromFunction1(changeFormat))
     if (changing != null) __obj.updateDynamic("changing")(js.Any.fromFunction1(changing))
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnWidth)) __obj.updateDynamic("columnWidth")(columnWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns.get.asInstanceOf[js.Any])
     if (copy != null) __obj.updateDynamic("copy")(js.Any.fromFunction1(copy))
     if (cut != null) __obj.updateDynamic("cut")(js.Any.fromFunction1(cut))
     if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction1(dataBinding))
@@ -106,8 +106,8 @@ object SpreadsheetOptions {
     if (excel != null) __obj.updateDynamic("excel")(excel.asInstanceOf[js.Any])
     if (excelExport != null) __obj.updateDynamic("excelExport")(js.Any.fromFunction1(excelExport))
     if (excelImport != null) __obj.updateDynamic("excelImport")(js.Any.fromFunction1(excelImport))
-    if (headerHeight != null) __obj.updateDynamic("headerHeight")(headerHeight.asInstanceOf[js.Any])
-    if (headerWidth != null) __obj.updateDynamic("headerWidth")(headerWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerHeight)) __obj.updateDynamic("headerHeight")(headerHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerWidth)) __obj.updateDynamic("headerWidth")(headerWidth.get.asInstanceOf[js.Any])
     if (hideColumn != null) __obj.updateDynamic("hideColumn")(js.Any.fromFunction1(hideColumn))
     if (hideRow != null) __obj.updateDynamic("hideRow")(js.Any.fromFunction1(hideRow))
     if (insertColumn != null) __obj.updateDynamic("insertColumn")(js.Any.fromFunction1(insertColumn))
@@ -120,12 +120,12 @@ object SpreadsheetOptions {
     if (removeSheet != null) __obj.updateDynamic("removeSheet")(js.Any.fromFunction1(removeSheet))
     if (renameSheet != null) __obj.updateDynamic("renameSheet")(js.Any.fromFunction1(renameSheet))
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
-    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowHeight)) __obj.updateDynamic("rowHeight")(rowHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
     if (selectSheet != null) __obj.updateDynamic("selectSheet")(js.Any.fromFunction1(selectSheet))
     if (sheets != null) __obj.updateDynamic("sheets")(sheets.asInstanceOf[js.Any])
-    if (!js.isUndefined(sheetsbar)) __obj.updateDynamic("sheetsbar")(sheetsbar.asInstanceOf[js.Any])
+    if (!js.isUndefined(sheetsbar)) __obj.updateDynamic("sheetsbar")(sheetsbar.get.asInstanceOf[js.Any])
     if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
     if (unhideColumn != null) __obj.updateDynamic("unhideColumn")(js.Any.fromFunction1(unhideColumn))
     if (unhideRow != null) __obj.updateDynamic("unhideRow")(js.Any.fromFunction1(unhideRow))

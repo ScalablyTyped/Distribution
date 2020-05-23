@@ -34,6 +34,16 @@ class Consumer () extends js.Object {
     */
   def close(): js.Promise[Null] = js.native
   /**
+    * Negatively acknowledges a message to the Pulsar broker by message object.
+    * @param message Message to acknowledge.
+    */
+  def negativeAcknowledge(message: Message): Unit = js.native
+  /**
+    * Negatively acknowledges a message to the Pulsar broker by message ID object.
+    * @param messageId Message ID to acknowledge.
+    */
+  def negativeAcknowledgeId(messageId: MessageId): Unit = js.native
+  /**
     * Receives a single message from the topic with optional specific timeout in milliseconds.
     * @param timeout Wait timeout in milliseconds.
     */

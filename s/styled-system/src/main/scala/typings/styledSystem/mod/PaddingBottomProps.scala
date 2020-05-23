@@ -22,19 +22,23 @@ trait PaddingBottomProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends 
 
 object PaddingBottomProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](
-    paddingBottom: ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
-      ThemeType
-    ] = null,
-    pb: ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
-      ThemeType
-    ] = null
+  def apply[ThemeType](
+    paddingBottom: js.UndefOr[
+      Null | (ResponsiveValue[
+        ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
+        ThemeType
+      ])
+    ] = js.undefined,
+    pb: js.UndefOr[
+      Null | (ResponsiveValue[
+        ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
+        ThemeType
+      ])
+    ] = js.undefined
   ): PaddingBottomProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
-    if (paddingBottom != null) __obj.updateDynamic("paddingBottom")(paddingBottom.asInstanceOf[js.Any])
-    if (pb != null) __obj.updateDynamic("pb")(pb.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingBottom)) __obj.updateDynamic("paddingBottom")(paddingBottom.asInstanceOf[js.Any])
+    if (!js.isUndefined(pb)) __obj.updateDynamic("pb")(pb.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaddingBottomProps[ThemeType]]
   }
 }

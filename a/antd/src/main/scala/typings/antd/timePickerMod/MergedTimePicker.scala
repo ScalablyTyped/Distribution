@@ -1,7 +1,7 @@
 package typings.antd.timePickerMod
 
-import typings.antd.PartialTimePickerPropsRef
-import typings.antd.WeakValidationMapTimePick
+import typings.antd.anon.PartialTimePickerPropsRef
+import typings.antd.anon.WeakValidationMapTimePick
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactElement
 import typings.react.mod.RefAttributes

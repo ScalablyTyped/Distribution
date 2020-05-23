@@ -1,6 +1,5 @@
 package typings.dwt
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,20 +28,6 @@ object EnumDWTCapFeederAlignment extends js.Object {
   /** The alignment is to the right. */
   @js.native
   sealed trait TWFA_RIGHT extends EnumDWTCapFeederAlignment
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EnumDWTCapFeederAlignment with Double] = js.native
-  /* 2 */ @js.native
-  object TWFA_CENTER extends TopLevel[TWFA_CENTER with Double]
-  
-  /* 1 */ @js.native
-  object TWFA_LEFT extends TopLevel[TWFA_LEFT with Double]
-  
-  /* 0 */ @js.native
-  object TWFA_NONE extends TopLevel[TWFA_NONE with Double]
-  
-  /* 3 */ @js.native
-  object TWFA_RIGHT extends TopLevel[TWFA_RIGHT with Double]
   
 }
 

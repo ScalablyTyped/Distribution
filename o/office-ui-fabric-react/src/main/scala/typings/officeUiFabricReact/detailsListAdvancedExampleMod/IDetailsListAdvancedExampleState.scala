@@ -45,7 +45,7 @@ object IDetailsListAdvancedExampleState {
     checkboxVisibility: CheckboxVisibility = null,
     constrainMode: ConstrainMode = null,
     contextualMenuProps: IContextualMenuProps = null,
-    groupItemLimit: Int | Double = null,
+    groupItemLimit: js.UndefOr[Double] = js.undefined,
     groups: js.Array[IGroup] = null,
     isHeaderVisible: js.UndefOr[Boolean] = js.undefined,
     isLazyLoaded: js.UndefOr[Boolean] = js.undefined,
@@ -56,15 +56,15 @@ object IDetailsListAdvancedExampleState {
   ): IDetailsListAdvancedExampleState = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], selectionCount = selectionCount.asInstanceOf[js.Any])
     if (announcedMessage != null) __obj.updateDynamic("announcedMessage")(announcedMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(canResizeColumns)) __obj.updateDynamic("canResizeColumns")(canResizeColumns.asInstanceOf[js.Any])
+    if (!js.isUndefined(canResizeColumns)) __obj.updateDynamic("canResizeColumns")(canResizeColumns.get.asInstanceOf[js.Any])
     if (checkboxVisibility != null) __obj.updateDynamic("checkboxVisibility")(checkboxVisibility.asInstanceOf[js.Any])
     if (constrainMode != null) __obj.updateDynamic("constrainMode")(constrainMode.asInstanceOf[js.Any])
     if (contextualMenuProps != null) __obj.updateDynamic("contextualMenuProps")(contextualMenuProps.asInstanceOf[js.Any])
-    if (groupItemLimit != null) __obj.updateDynamic("groupItemLimit")(groupItemLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupItemLimit)) __obj.updateDynamic("groupItemLimit")(groupItemLimit.get.asInstanceOf[js.Any])
     if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHeaderVisible)) __obj.updateDynamic("isHeaderVisible")(isHeaderVisible.asInstanceOf[js.Any])
-    if (!js.isUndefined(isLazyLoaded)) __obj.updateDynamic("isLazyLoaded")(isLazyLoaded.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSortedDescending)) __obj.updateDynamic("isSortedDescending")(isSortedDescending.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHeaderVisible)) __obj.updateDynamic("isHeaderVisible")(isHeaderVisible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLazyLoaded)) __obj.updateDynamic("isLazyLoaded")(isLazyLoaded.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSortedDescending)) __obj.updateDynamic("isSortedDescending")(isSortedDescending.get.asInstanceOf[js.Any])
     if (layoutMode != null) __obj.updateDynamic("layoutMode")(layoutMode.asInstanceOf[js.Any])
     if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
     if (sortedColumnKey != null) __obj.updateDynamic("sortedColumnKey")(sortedColumnKey.asInstanceOf[js.Any])

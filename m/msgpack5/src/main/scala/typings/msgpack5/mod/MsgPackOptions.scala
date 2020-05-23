@@ -16,8 +16,8 @@ object MsgPackOptions {
     forceFloat64: js.UndefOr[Boolean] = js.undefined
   ): MsgPackOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(compatibilityMode)) __obj.updateDynamic("compatibilityMode")(compatibilityMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceFloat64)) __obj.updateDynamic("forceFloat64")(forceFloat64.asInstanceOf[js.Any])
+    if (!js.isUndefined(compatibilityMode)) __obj.updateDynamic("compatibilityMode")(compatibilityMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceFloat64)) __obj.updateDynamic("forceFloat64")(forceFloat64.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MsgPackOptions]
   }
 }

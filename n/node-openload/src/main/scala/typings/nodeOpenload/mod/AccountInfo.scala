@@ -1,6 +1,6 @@
 package typings.nodeOpenload.mod
 
-import typings.nodeOpenload.AnonLeft
+import typings.nodeOpenload.anon.Left
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait AccountInfo extends js.Object {
   var signup_at: String
   var storage_left: Double
   var storage_used: String
-  var traffic: AnonLeft
+  var traffic: Left
 }
 
 object AccountInfo {
@@ -27,7 +27,7 @@ object AccountInfo {
     signup_at: String,
     storage_left: Double,
     storage_used: String,
-    traffic: AnonLeft
+    traffic: Left
   ): AccountInfo = {
     val __obj = js.Dynamic.literal(balance = balance.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], extid = extid.asInstanceOf[js.Any], signup_at = signup_at.asInstanceOf[js.Any], storage_left = storage_left.asInstanceOf[js.Any], storage_used = storage_used.asInstanceOf[js.Any], traffic = traffic.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountInfo]

@@ -13,10 +13,10 @@ trait NumberSettings extends js.Object {
 
 object NumberSettings {
   @scala.inline
-  def apply(decimal: String = null, precision: Int | Double = null, thousand: String = null): NumberSettings = {
+  def apply(decimal: String = null, precision: js.UndefOr[Double] = js.undefined, thousand: String = null): NumberSettings = {
     val __obj = js.Dynamic.literal()
     if (decimal != null) __obj.updateDynamic("decimal")(decimal.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
     if (thousand != null) __obj.updateDynamic("thousand")(thousand.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberSettings]
   }

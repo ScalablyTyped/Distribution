@@ -10,7 +10,7 @@ package object typesMod {
     typings.std.Map[java.lang.String, typings.jestHasteMap.typesMod.DuplicatesSet]
   ]
   type DuplicatesSet = typings.std.Map[java.lang.String, /* type */ scala.Double]
-  type EventsQueue = js.Array[typings.jestHasteMap.AnonFilePath]
+  type EventsQueue = js.Array[typings.jestHasteMap.anon.FilePath]
   type FileData = typings.std.Map[typings.jestTypes.configMod.Path, typings.jestHasteMap.typesMod.FileMetaData]
   type FileMetaData = js.Tuple6[
     java.lang.String, 

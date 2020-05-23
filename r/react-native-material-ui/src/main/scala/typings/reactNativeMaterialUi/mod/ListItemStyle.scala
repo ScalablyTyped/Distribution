@@ -24,36 +24,36 @@ trait ListItemStyle extends js.Object {
 object ListItemStyle {
   @scala.inline
   def apply(
-    LeftElement: TextStyle = null,
-    centerElementContainer: ViewStyle = null,
-    container: ViewStyle = null,
-    content: ViewStyle = null,
-    contentViewContainer: ViewStyle = null,
-    firstLine: TextStyle = null,
-    leftElementContainer: ViewStyle = null,
-    primaryText: TextStyle = null,
-    primaryTextContainer: ViewStyle = null,
-    rightElement: TextStyle = null,
-    rightElementContainer: ViewStyle = null,
-    secondaryText: TextStyle = null,
-    tertiaryText: TextStyle = null,
-    textViewContainer: ViewStyle = null
+    LeftElement: js.UndefOr[Null | TextStyle] = js.undefined,
+    centerElementContainer: js.UndefOr[Null | ViewStyle] = js.undefined,
+    container: js.UndefOr[Null | ViewStyle] = js.undefined,
+    content: js.UndefOr[Null | ViewStyle] = js.undefined,
+    contentViewContainer: js.UndefOr[Null | ViewStyle] = js.undefined,
+    firstLine: js.UndefOr[Null | TextStyle] = js.undefined,
+    leftElementContainer: js.UndefOr[Null | ViewStyle] = js.undefined,
+    primaryText: js.UndefOr[Null | TextStyle] = js.undefined,
+    primaryTextContainer: js.UndefOr[Null | ViewStyle] = js.undefined,
+    rightElement: js.UndefOr[Null | TextStyle] = js.undefined,
+    rightElementContainer: js.UndefOr[Null | ViewStyle] = js.undefined,
+    secondaryText: js.UndefOr[Null | TextStyle] = js.undefined,
+    tertiaryText: js.UndefOr[Null | TextStyle] = js.undefined,
+    textViewContainer: js.UndefOr[Null | ViewStyle] = js.undefined
   ): ListItemStyle = {
     val __obj = js.Dynamic.literal()
-    if (LeftElement != null) __obj.updateDynamic("LeftElement")(LeftElement.asInstanceOf[js.Any])
-    if (centerElementContainer != null) __obj.updateDynamic("centerElementContainer")(centerElementContainer.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (contentViewContainer != null) __obj.updateDynamic("contentViewContainer")(contentViewContainer.asInstanceOf[js.Any])
-    if (firstLine != null) __obj.updateDynamic("firstLine")(firstLine.asInstanceOf[js.Any])
-    if (leftElementContainer != null) __obj.updateDynamic("leftElementContainer")(leftElementContainer.asInstanceOf[js.Any])
-    if (primaryText != null) __obj.updateDynamic("primaryText")(primaryText.asInstanceOf[js.Any])
-    if (primaryTextContainer != null) __obj.updateDynamic("primaryTextContainer")(primaryTextContainer.asInstanceOf[js.Any])
-    if (rightElement != null) __obj.updateDynamic("rightElement")(rightElement.asInstanceOf[js.Any])
-    if (rightElementContainer != null) __obj.updateDynamic("rightElementContainer")(rightElementContainer.asInstanceOf[js.Any])
-    if (secondaryText != null) __obj.updateDynamic("secondaryText")(secondaryText.asInstanceOf[js.Any])
-    if (tertiaryText != null) __obj.updateDynamic("tertiaryText")(tertiaryText.asInstanceOf[js.Any])
-    if (textViewContainer != null) __obj.updateDynamic("textViewContainer")(textViewContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(LeftElement)) __obj.updateDynamic("LeftElement")(LeftElement.asInstanceOf[js.Any])
+    if (!js.isUndefined(centerElementContainer)) __obj.updateDynamic("centerElementContainer")(centerElementContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(container)) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(content)) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentViewContainer)) __obj.updateDynamic("contentViewContainer")(contentViewContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstLine)) __obj.updateDynamic("firstLine")(firstLine.asInstanceOf[js.Any])
+    if (!js.isUndefined(leftElementContainer)) __obj.updateDynamic("leftElementContainer")(leftElementContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(primaryText)) __obj.updateDynamic("primaryText")(primaryText.asInstanceOf[js.Any])
+    if (!js.isUndefined(primaryTextContainer)) __obj.updateDynamic("primaryTextContainer")(primaryTextContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightElement)) __obj.updateDynamic("rightElement")(rightElement.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightElementContainer)) __obj.updateDynamic("rightElementContainer")(rightElementContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(secondaryText)) __obj.updateDynamic("secondaryText")(secondaryText.asInstanceOf[js.Any])
+    if (!js.isUndefined(tertiaryText)) __obj.updateDynamic("tertiaryText")(tertiaryText.asInstanceOf[js.Any])
+    if (!js.isUndefined(textViewContainer)) __obj.updateDynamic("textViewContainer")(textViewContainer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListItemStyle]
   }
 }

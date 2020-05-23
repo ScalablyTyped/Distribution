@@ -1,6 +1,6 @@
 package typings.stripe.mod.subscriptionItems
 
-import typings.stripe.AnonUsagegte
+import typings.stripe.anon.Usagegte
 import typings.stripe.mod.IMetadata
 import typings.stripe.mod.IResourceObject
 import typings.stripe.mod.plans.IPlan
@@ -17,7 +17,7 @@ trait ISubscriptionItem extends IResourceObject {
   /**
     * Define thresholds at which an invoice will be sent, and the related subscription advanced to a new billing period.
     */
-  var billing_thresholds: Null | AnonUsagegte
+  var billing_thresholds: Null | Usagegte
   /**
     * Time at which the object was created. Measured in seconds since the Unix epoch.
     */
@@ -55,13 +55,12 @@ object ISubscriptionItem {
     `object`: subscription_item,
     plan: IPlan,
     subscription: String,
-    billing_thresholds: AnonUsagegte = null,
-    quantity: Int | Double = null
+    billing_thresholds: Usagegte = null,
+    quantity: js.UndefOr[Double] = js.undefined
   ): ISubscriptionItem = {
-    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], plan = plan.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], plan = plan.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any], billing_thresholds = billing_thresholds.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (billing_thresholds != null) __obj.updateDynamic("billing_thresholds")(billing_thresholds.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISubscriptionItem]
   }
 }

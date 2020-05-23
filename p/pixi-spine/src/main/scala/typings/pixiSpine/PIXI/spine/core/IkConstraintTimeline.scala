@@ -4,12 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PIXI.spine.core.IkConstraintTimeline")
-@js.native
-class IkConstraintTimeline protected () extends CurveTimeline {
-  def this(frameCount: Double) = this()
-  var frames: ArrayLike[Double] = js.native
-  var ikConstraintIndex: Double = js.native
+trait IkConstraintTimeline extends CurveTimeline {
+  var frames: ArrayLike[Double]
+  var ikConstraintIndex: Double
   def setFrame(
     frameIndex: Double,
     time: Double,
@@ -18,24 +15,27 @@ class IkConstraintTimeline protected () extends CurveTimeline {
     bendDirection: Double,
     compress: Boolean,
     stretch: Boolean
-  ): Unit = js.native
+  ): Unit
 }
 
-/* static members */
-@JSGlobal("PIXI.spine.core.IkConstraintTimeline")
-@js.native
-object IkConstraintTimeline extends js.Object {
-  var BEND_DIRECTION: Double = js.native
-  var COMPRESS: Double = js.native
-  var ENTRIES: Double = js.native
-  var MIX: Double = js.native
-  var PREV_BEND_DIRECTION: Double = js.native
-  var PREV_COMPRESS: Double = js.native
-  var PREV_MIX: Double = js.native
-  var PREV_SOFTNESS: Double = js.native
-  var PREV_STRETCH: Double = js.native
-  var PREV_TIME: Double = js.native
-  var SOFTNESS: Double = js.native
-  var STRETCH: Double = js.native
+object IkConstraintTimeline {
+  @scala.inline
+  def apply(
+    apply: (Skeleton, Double, Double, js.Array[Event], Double, MixBlend, MixDirection) => Unit,
+    curves: js.Any,
+    frames: ArrayLike[Double],
+    getCurvePercent: (Double, Double) => Double,
+    getCurveType: Double => Double,
+    getFrameCount: () => Double,
+    getPropertyId: () => Double,
+    ikConstraintIndex: Double,
+    setCurve: (Double, Double, Double, Double, Double) => Unit,
+    setFrame: (Double, Double, Double, Double, Double, Boolean, Boolean) => Unit,
+    setLinear: Double => Unit,
+    setStepped: Double => Unit
+  ): IkConstraintTimeline = {
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction7(apply), curves = curves.asInstanceOf[js.Any], frames = frames.asInstanceOf[js.Any], getCurvePercent = js.Any.fromFunction2(getCurvePercent), getCurveType = js.Any.fromFunction1(getCurveType), getFrameCount = js.Any.fromFunction0(getFrameCount), getPropertyId = js.Any.fromFunction0(getPropertyId), ikConstraintIndex = ikConstraintIndex.asInstanceOf[js.Any], setCurve = js.Any.fromFunction5(setCurve), setFrame = js.Any.fromFunction7(setFrame), setLinear = js.Any.fromFunction1(setLinear), setStepped = js.Any.fromFunction1(setStepped))
+    __obj.asInstanceOf[IkConstraintTimeline]
+  }
 }
 

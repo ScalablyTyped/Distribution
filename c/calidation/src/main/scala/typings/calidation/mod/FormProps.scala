@@ -45,7 +45,7 @@ import typings.calidation.calidationStrings.tree
 import typings.calidation.calidationStrings.url
 import typings.calidation.calidationStrings.vertical
 import typings.calidation.calidationStrings.yes
-import typings.react.AnonHtml
+import typings.react.anon.Html
 import typings.react.mod.AnimationEventHandler
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
@@ -135,7 +135,7 @@ trait FormProps extends js.Object {
   var color: js.UndefOr[String] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   var contextMenu: js.UndefOr[String] = js.native
-  var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.native
+  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
   var datatype: js.UndefOr[String] = js.native
   var defaultChecked: js.UndefOr[Boolean] = js.native
   var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.native

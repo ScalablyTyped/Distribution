@@ -1,6 +1,6 @@
 package typings.swag.mod
 
-import typings.swag.TypeofHandlebars
+import typings.swag.anon.TypeofHandlebars
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

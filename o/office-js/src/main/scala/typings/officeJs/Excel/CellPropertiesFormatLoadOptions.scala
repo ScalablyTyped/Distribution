@@ -130,20 +130,20 @@ object CellPropertiesFormatLoadOptions {
     wrapText: js.UndefOr[Boolean] = js.undefined
   ): CellPropertiesFormatLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoIndent)) __obj.updateDynamic("autoIndent")(autoIndent.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoIndent)) __obj.updateDynamic("autoIndent")(autoIndent.get.asInstanceOf[js.Any])
     if (borders != null) __obj.updateDynamic("borders")(borders.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontalAlignment)) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(indentLevel)) __obj.updateDynamic("indentLevel")(indentLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(protection)) __obj.updateDynamic("protection")(protection.asInstanceOf[js.Any])
-    if (!js.isUndefined(readingOrder)) __obj.updateDynamic("readingOrder")(readingOrder.asInstanceOf[js.Any])
-    if (!js.isUndefined(shrinkToFit)) __obj.updateDynamic("shrinkToFit")(shrinkToFit.asInstanceOf[js.Any])
-    if (!js.isUndefined(textOrientation)) __obj.updateDynamic("textOrientation")(textOrientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(useStandardHeight)) __obj.updateDynamic("useStandardHeight")(useStandardHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(useStandardWidth)) __obj.updateDynamic("useStandardWidth")(useStandardWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(verticalAlignment)) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapText)) __obj.updateDynamic("wrapText")(wrapText.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalAlignment)) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(indentLevel)) __obj.updateDynamic("indentLevel")(indentLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(protection)) __obj.updateDynamic("protection")(protection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(readingOrder)) __obj.updateDynamic("readingOrder")(readingOrder.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shrinkToFit)) __obj.updateDynamic("shrinkToFit")(shrinkToFit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(textOrientation)) __obj.updateDynamic("textOrientation")(textOrientation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useStandardHeight)) __obj.updateDynamic("useStandardHeight")(useStandardHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useStandardWidth)) __obj.updateDynamic("useStandardWidth")(useStandardWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalAlignment)) __obj.updateDynamic("verticalAlignment")(verticalAlignment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapText)) __obj.updateDynamic("wrapText")(wrapText.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellPropertiesFormatLoadOptions]
   }
 }

@@ -37,7 +37,7 @@ object JiraApiOptions {
     protocol: String = null,
     request: js.Any = null,
     strictSSL: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     username: String = null,
     webhookVersion: String = null
   ): JiraApiOptions = {
@@ -52,8 +52,8 @@ object JiraApiOptions {
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictSSL)) __obj.updateDynamic("strictSSL")(strictSSL.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictSSL)) __obj.updateDynamic("strictSSL")(strictSSL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     if (webhookVersion != null) __obj.updateDynamic("webhookVersion")(webhookVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[JiraApiOptions]

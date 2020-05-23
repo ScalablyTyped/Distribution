@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 /**
   * 输入框样式
   * 用于定义输入框的显示样式，如字体大小，提示内容等信息。
-  * 	输入文本内容在指定区域水平居左，垂直居中显示。
+  *     输入文本内容在指定区域水平居左，垂直居中显示。
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
   */
@@ -28,7 +28,7 @@ trait PlusNativeObjInputStyles extends js.Object {
   /**
     * 输入框边框圆角半径
     * 可取值：圆角半径像素值，数字加"px"格式字符串，如"6px"。
-    * 	默认值为"0px"（边框无圆角）。
+    *     默认值为"0px"（边框无圆角）。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -43,7 +43,7 @@ trait PlusNativeObjInputStyles extends js.Object {
   /**
     * 输入框的字体大小
     * 可取值：字体高度像素值，数字加"px"格式字符串，如"12px"。 
-    * 	默认值为"16px"。
+    *     默认值为"16px"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -79,13 +79,13 @@ trait PlusNativeObjInputStyles extends js.Object {
   /**
     * 输入框类型
     * 可取值：
-    * 		"email" - 邮箱地址输入框；
-    * 		"number" - 数字输入框；
-    * 		"search" - 搜索文本输入框；
-    * 		"tel" - 电话号码输入框；
-    * 		"text" - 普通文本输入框；
-    * 		"url" - URL地址输入框。
-    * 	默认为text（即普通文本输入框）。
+    *         "email" - 邮箱地址输入框；
+    *         "number" - 数字输入框；
+    *         "search" - 搜索文本输入框；
+    *         "tel" - 电话号码输入框；
+    *         "text" - 普通文本输入框；
+    *         "url" - URL地址输入框。
+    *     默认为text（即普通文本输入框）。
     * - email: 邮箱地址输入框
     * - number: 数字输入框
     * - search: 搜索文本输入框

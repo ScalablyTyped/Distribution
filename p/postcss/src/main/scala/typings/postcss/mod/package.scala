@@ -8,7 +8,7 @@ package object mod {
   /* Rewritten from type alias, can be one of: 
     - typings.postcss.mod.Plugin_[js.Any]
     - typings.postcss.mod.Transformer
-    - typings.postcss.AnonPostcss
+    - typings.postcss.anon.Postcss
     - typings.postcss.mod.Processor
   */
   type AcceptedPlugin = typings.postcss.mod._AcceptedPlugin | typings.postcss.mod.Plugin_[js.Any]
@@ -22,10 +22,10 @@ package object mod {
   type JsonRoot = typings.postcss.mod.JsonContainer
   type Parser = js.Function2[
     /* css */ typings.postcss.mod.ParserInput, 
-    /* opts */ js.UndefOr[typings.postcss.PickProcessOptionsmapfrom], 
+    /* opts */ js.UndefOr[typings.postcss.anon.PickProcessOptionsmapfrom], 
     typings.postcss.mod.Root_
   ]
-  type ParserInput = java.lang.String | typings.postcss.AnonToString
+  type ParserInput = java.lang.String | typings.postcss.anon.ToString
   type PluginInitializer[T] = js.Function1[/* pluginOptions */ js.UndefOr[T], typings.postcss.mod.Transformer]
   type RootNewProps = typings.postcss.mod.ContainerNewProps
   type Stringifier = js.Function2[

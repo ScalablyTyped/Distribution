@@ -27,7 +27,7 @@ trait GetDomainDetailResponse extends js.Object {
     */
   var AutoRenew: js.UndefOr[Boolean] = js.native
   /**
-    * The date when the domain was created as found in the response to a WHOIS query. The date and time is in Coordinated Universal time (UTC).
+    * The date when the domain was created as found in the response to a WHOIS query. The date and time is in Unix time format and Coordinated Universal time (UTC).
     */
   var CreationDate: js.UndefOr[Timestamp] = js.native
   /**
@@ -39,7 +39,7 @@ trait GetDomainDetailResponse extends js.Object {
     */
   var DomainName: typings.awsSdk.route53domainsMod.DomainName = js.native
   /**
-    * The date when the registration for the domain is set to expire. The date and time is in Coordinated Universal time (UTC).
+    * The date when the registration for the domain is set to expire. The date and time is in Unix time format and Coordinated Universal time (UTC).
     */
   var ExpirationDate: js.UndefOr[Timestamp] = js.native
   /**
@@ -67,7 +67,7 @@ trait GetDomainDetailResponse extends js.Object {
     */
   var RegistryDomainId: js.UndefOr[typings.awsSdk.route53domainsMod.RegistryDomainId] = js.native
   /**
-    * Reseller of the domain. Domains registered or transferred using Amazon Route 53 domains will have "Amazon" as the reseller. 
+    * Reseller of the domain. Domains registered or transferred using Route 53 domains will have "Amazon" as the reseller. 
     */
   var Reseller: js.UndefOr[typings.awsSdk.route53domainsMod.Reseller] = js.native
   /**
@@ -83,7 +83,7 @@ trait GetDomainDetailResponse extends js.Object {
     */
   var TechPrivacy: js.UndefOr[Boolean] = js.native
   /**
-    * The last updated date of the domain as found in the response to a WHOIS query. The date and time is in Coordinated Universal time (UTC).
+    * The last updated date of the domain as found in the response to a WHOIS query. The date and time is in Unix time format and Coordinated Universal time (UTC).
     */
   var UpdatedDate: js.UndefOr[Timestamp] = js.native
   /**
@@ -102,36 +102,36 @@ object GetDomainDetailResponse {
     TechContact: ContactDetail,
     AbuseContactEmail: Email = null,
     AbuseContactPhone: ContactNumber = null,
-    AdminPrivacy: js.UndefOr[scala.Boolean] = js.undefined,
-    AutoRenew: js.UndefOr[scala.Boolean] = js.undefined,
+    AdminPrivacy: js.UndefOr[Boolean] = js.undefined,
+    AutoRenew: js.UndefOr[Boolean] = js.undefined,
     CreationDate: Timestamp = null,
     DnsSec: DNSSec = null,
     ExpirationDate: Timestamp = null,
-    RegistrantPrivacy: js.UndefOr[scala.Boolean] = js.undefined,
+    RegistrantPrivacy: js.UndefOr[Boolean] = js.undefined,
     RegistrarName: RegistrarName = null,
     RegistrarUrl: RegistrarUrl = null,
     RegistryDomainId: RegistryDomainId = null,
     Reseller: Reseller = null,
     StatusList: DomainStatusList = null,
-    TechPrivacy: js.UndefOr[scala.Boolean] = js.undefined,
+    TechPrivacy: js.UndefOr[Boolean] = js.undefined,
     UpdatedDate: Timestamp = null,
     WhoIsServer: RegistrarWhoIsServer = null
   ): GetDomainDetailResponse = {
     val __obj = js.Dynamic.literal(AdminContact = AdminContact.asInstanceOf[js.Any], DomainName = DomainName.asInstanceOf[js.Any], Nameservers = Nameservers.asInstanceOf[js.Any], RegistrantContact = RegistrantContact.asInstanceOf[js.Any], TechContact = TechContact.asInstanceOf[js.Any])
     if (AbuseContactEmail != null) __obj.updateDynamic("AbuseContactEmail")(AbuseContactEmail.asInstanceOf[js.Any])
     if (AbuseContactPhone != null) __obj.updateDynamic("AbuseContactPhone")(AbuseContactPhone.asInstanceOf[js.Any])
-    if (!js.isUndefined(AdminPrivacy)) __obj.updateDynamic("AdminPrivacy")(AdminPrivacy.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoRenew)) __obj.updateDynamic("AutoRenew")(AutoRenew.asInstanceOf[js.Any])
+    if (!js.isUndefined(AdminPrivacy)) __obj.updateDynamic("AdminPrivacy")(AdminPrivacy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoRenew)) __obj.updateDynamic("AutoRenew")(AutoRenew.get.asInstanceOf[js.Any])
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
     if (DnsSec != null) __obj.updateDynamic("DnsSec")(DnsSec.asInstanceOf[js.Any])
     if (ExpirationDate != null) __obj.updateDynamic("ExpirationDate")(ExpirationDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(RegistrantPrivacy)) __obj.updateDynamic("RegistrantPrivacy")(RegistrantPrivacy.asInstanceOf[js.Any])
+    if (!js.isUndefined(RegistrantPrivacy)) __obj.updateDynamic("RegistrantPrivacy")(RegistrantPrivacy.get.asInstanceOf[js.Any])
     if (RegistrarName != null) __obj.updateDynamic("RegistrarName")(RegistrarName.asInstanceOf[js.Any])
     if (RegistrarUrl != null) __obj.updateDynamic("RegistrarUrl")(RegistrarUrl.asInstanceOf[js.Any])
     if (RegistryDomainId != null) __obj.updateDynamic("RegistryDomainId")(RegistryDomainId.asInstanceOf[js.Any])
     if (Reseller != null) __obj.updateDynamic("Reseller")(Reseller.asInstanceOf[js.Any])
     if (StatusList != null) __obj.updateDynamic("StatusList")(StatusList.asInstanceOf[js.Any])
-    if (!js.isUndefined(TechPrivacy)) __obj.updateDynamic("TechPrivacy")(TechPrivacy.asInstanceOf[js.Any])
+    if (!js.isUndefined(TechPrivacy)) __obj.updateDynamic("TechPrivacy")(TechPrivacy.get.asInstanceOf[js.Any])
     if (UpdatedDate != null) __obj.updateDynamic("UpdatedDate")(UpdatedDate.asInstanceOf[js.Any])
     if (WhoIsServer != null) __obj.updateDynamic("WhoIsServer")(WhoIsServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDomainDetailResponse]

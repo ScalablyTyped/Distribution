@@ -20,7 +20,7 @@ package object mod {
   type Source = /**
     * Path to file
     */
-  org.scalablytyped.runtime.StringDictionary[typings.cleanCss.AnonSourceMap]
+  org.scalablytyped.runtime.StringDictionary[typings.cleanCss.anon.SourceMap]
   /**
     * Union of all types acceptable as input for the minify function
     */

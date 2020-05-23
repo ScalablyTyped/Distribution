@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when an item is deleted during editing mode.
-		 */
+  * Fired when an item is deleted during editing mode.
+  */
 trait DashboardItemDeleteEvent extends DashboardItemBaseEvent {
   /**
-  			 * Item that was deleted.
-  			 */
+    * Item that was deleted.
+    */
   var item: DashboardItem
 }
 

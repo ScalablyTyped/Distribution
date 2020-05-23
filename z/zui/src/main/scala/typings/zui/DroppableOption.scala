@@ -30,15 +30,15 @@ object DroppableOption {
     before: /* e */ js.UndefOr[DroppableEvent] => Boolean = null,
     beforeDrop: /* e */ DroppableEvent => Boolean = null,
     container: String = null,
-    deviation: Int | Double = null,
+    deviation: js.UndefOr[Double] = js.undefined,
     drag: /* e */ DroppableEvent => Unit = null,
     drop: /* e */ DroppableEvent => Unit = null,
     finish: /* e */ DroppableEvent => Unit = null,
     flex: js.UndefOr[Boolean] = js.undefined,
     handle: String = null,
     selector: String = null,
-    sensorOffsetX: Int | Double = null,
-    sensorOffsetY: Int | Double = null,
+    sensorOffsetX: js.UndefOr[Double] = js.undefined,
+    sensorOffsetY: js.UndefOr[Double] = js.undefined,
     start: /* e */ js.UndefOr[DroppableEvent] => Unit = null
   ): DroppableOption = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
@@ -46,15 +46,15 @@ object DroppableOption {
     if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction1(before))
     if (beforeDrop != null) __obj.updateDynamic("beforeDrop")(js.Any.fromFunction1(beforeDrop))
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (deviation != null) __obj.updateDynamic("deviation")(deviation.asInstanceOf[js.Any])
+    if (!js.isUndefined(deviation)) __obj.updateDynamic("deviation")(deviation.get.asInstanceOf[js.Any])
     if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction1(drag))
     if (drop != null) __obj.updateDynamic("drop")(js.Any.fromFunction1(drop))
     if (finish != null) __obj.updateDynamic("finish")(js.Any.fromFunction1(finish))
-    if (!js.isUndefined(flex)) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
+    if (!js.isUndefined(flex)) __obj.updateDynamic("flex")(flex.get.asInstanceOf[js.Any])
     if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
     if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (sensorOffsetX != null) __obj.updateDynamic("sensorOffsetX")(sensorOffsetX.asInstanceOf[js.Any])
-    if (sensorOffsetY != null) __obj.updateDynamic("sensorOffsetY")(sensorOffsetY.asInstanceOf[js.Any])
+    if (!js.isUndefined(sensorOffsetX)) __obj.updateDynamic("sensorOffsetX")(sensorOffsetX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sensorOffsetY)) __obj.updateDynamic("sensorOffsetY")(sensorOffsetY.get.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
     __obj.asInstanceOf[DroppableOption]
   }

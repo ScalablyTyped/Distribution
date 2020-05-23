@@ -37,13 +37,13 @@ object RegisterWorkspaceDirectoryRequest {
   def apply(
     DirectoryId: DirectoryId,
     EnableWorkDocs: BooleanObject,
-    EnableSelfService: js.UndefOr[Boolean] = js.undefined,
+    EnableSelfService: js.UndefOr[BooleanObject] = js.undefined,
     SubnetIds: SubnetIds = null,
     Tags: TagList = null,
     Tenancy: Tenancy = null
   ): RegisterWorkspaceDirectoryRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any], EnableWorkDocs = EnableWorkDocs.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableSelfService)) __obj.updateDynamic("EnableSelfService")(EnableSelfService.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableSelfService)) __obj.updateDynamic("EnableSelfService")(EnableSelfService.get.asInstanceOf[js.Any])
     if (SubnetIds != null) __obj.updateDynamic("SubnetIds")(SubnetIds.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     if (Tenancy != null) __obj.updateDynamic("Tenancy")(Tenancy.asInstanceOf[js.Any])

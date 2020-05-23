@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Outlook.MailItem")
 @js.native
-class MailItem protected () extends js.Object {
+trait MailItem extends js.Object {
   val Actions: typings.activexOutlook.Outlook.Actions = js.native
   var AlternateRecipientAllowed: Boolean = js.native
   val Application: typings.activexOutlook.Outlook.Application = js.native

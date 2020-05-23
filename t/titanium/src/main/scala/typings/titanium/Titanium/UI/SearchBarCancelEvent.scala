@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the cancel button is pressed.
-		 */
+  * Fired when the cancel button is pressed.
+  */
 trait SearchBarCancelEvent extends SearchBarBaseEvent {
   /**
-  			 * Value of the search bar.
-  			 */
+    * Value of the search bar.
+    */
   var value: String
 }
 

@@ -24,7 +24,7 @@ object InlineQueryResultAudio {
     id: String,
     title: String,
     `type`: audio,
-    audio_duration: Int | Double = null,
+    audio_duration: js.UndefOr[Double] = js.undefined,
     caption: String = null,
     input_message_content: InputMessageContent = null,
     performer: String = null,
@@ -32,7 +32,7 @@ object InlineQueryResultAudio {
   ): InlineQueryResultAudio = {
     val __obj = js.Dynamic.literal(audio_url = audio_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (audio_duration != null) __obj.updateDynamic("audio_duration")(audio_duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(audio_duration)) __obj.updateDynamic("audio_duration")(audio_duration.get.asInstanceOf[js.Any])
     if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
     if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content.asInstanceOf[js.Any])
     if (performer != null) __obj.updateDynamic("performer")(performer.asInstanceOf[js.Any])

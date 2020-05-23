@@ -1,6 +1,5 @@
 package typings.pixiJs.PIXI
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,23 +39,6 @@ object SHAPES extends js.Object {
   
   @js.native
   sealed trait RREC extends SHAPES
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SHAPES with Double] = js.native
-  /* 2 */ @js.native
-  object CIRC extends TopLevel[CIRC with Double]
-  
-  /* 3 */ @js.native
-  object ELIP extends TopLevel[ELIP with Double]
-  
-  /* 0 */ @js.native
-  object POLY extends TopLevel[POLY with Double]
-  
-  /* 1 */ @js.native
-  object RECT extends TopLevel[RECT with Double]
-  
-  /* 4 */ @js.native
-  object RREC extends TopLevel[RREC with Double]
   
 }
 

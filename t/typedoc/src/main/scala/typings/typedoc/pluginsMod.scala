@@ -73,8 +73,7 @@ object pluginsMod extends js.Object {
     var isHidden: js.Any = js.native
     def removeReflection(project: ProjectReflection, reflection: typings.typedoc.reflectionsMod.Reflection): Unit = js.native
     def removeReflections(project: ProjectReflection, reflections: js.Array[typings.typedoc.reflectionsMod.Reflection]): Unit = js.native
-    def removeTags(comment: js.UndefOr[scala.Nothing], tagName: String): Unit = js.native
-    def removeTags(comment: Comment, tagName: String): Unit = js.native
+    def removeTags(comment: js.UndefOr[Comment], tagName: String): Unit = js.native
   }
   
   /* static members */

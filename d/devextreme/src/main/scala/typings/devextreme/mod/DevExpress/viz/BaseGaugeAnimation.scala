@@ -19,14 +19,14 @@ trait BaseGaugeAnimation extends js.Object {
 object BaseGaugeAnimation {
   @scala.inline
   def apply(
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     easing: easeOutCubic | linear = null,
     enabled: js.UndefOr[Boolean] = js.undefined
   ): BaseGaugeAnimation = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseGaugeAnimation]
   }
 }

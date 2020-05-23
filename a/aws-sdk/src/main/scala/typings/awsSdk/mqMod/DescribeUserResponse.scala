@@ -32,14 +32,14 @@ object DescribeUserResponse {
   @scala.inline
   def apply(
     BrokerId: string = null,
-    ConsoleAccess: js.UndefOr[Boolean] = js.undefined,
+    ConsoleAccess: js.UndefOr[boolean] = js.undefined,
     Groups: listOfString = null,
     Pending: UserPendingChanges = null,
     Username: string = null
   ): DescribeUserResponse = {
     val __obj = js.Dynamic.literal()
     if (BrokerId != null) __obj.updateDynamic("BrokerId")(BrokerId.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConsoleAccess)) __obj.updateDynamic("ConsoleAccess")(ConsoleAccess.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConsoleAccess)) __obj.updateDynamic("ConsoleAccess")(ConsoleAccess.get.asInstanceOf[js.Any])
     if (Groups != null) __obj.updateDynamic("Groups")(Groups.asInstanceOf[js.Any])
     if (Pending != null) __obj.updateDynamic("Pending")(Pending.asInstanceOf[js.Any])
     if (Username != null) __obj.updateDynamic("Username")(Username.asInstanceOf[js.Any])

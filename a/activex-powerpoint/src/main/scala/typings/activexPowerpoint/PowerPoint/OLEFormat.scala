@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.OLEFormat")
 @js.native
-class OLEFormat protected () extends js.Object {
+trait OLEFormat extends js.Object {
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   var FollowColors: PpFollowColors = js.native
   val Object: js.Any = js.native

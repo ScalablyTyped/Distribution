@@ -1,6 +1,6 @@
 package typings.jsplumb.mod
 
-import typings.jsplumb.AnonBorderStyle
+import typings.jsplumb.anon.BorderStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ trait LabelOverlayOptions extends OverlayOptions {
   var cssClass: js.UndefOr[String] = js.undefined
   var label: String
    // 0.5
-  var labelStyle: js.UndefOr[AnonBorderStyle] = js.undefined
+  var labelStyle: js.UndefOr[BorderStyle] = js.undefined
   var location: js.UndefOr[Double] = js.undefined
 }
 
@@ -18,13 +18,13 @@ object LabelOverlayOptions {
   def apply(
     label: String,
     cssClass: String = null,
-    labelStyle: AnonBorderStyle = null,
-    location: Int | Double = null
+    labelStyle: BorderStyle = null,
+    location: js.UndefOr[Double] = js.undefined
   ): LabelOverlayOptions = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (!js.isUndefined(location)) __obj.updateDynamic("location")(location.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelOverlayOptions]
   }
 }

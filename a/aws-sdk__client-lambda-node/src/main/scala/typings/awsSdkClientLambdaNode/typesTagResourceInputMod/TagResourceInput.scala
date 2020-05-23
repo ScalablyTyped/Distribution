@@ -44,12 +44,12 @@ object TagResourceInput {
     Tags: StringDictionary[String] | (Iterable[js.Tuple2[String, String]]),
     $abortSignal: AbortSignal = null,
     $httpOptions: NodeHttpOptions = null,
-    $maxRetries: Int | Double = null
+    $maxRetries: js.UndefOr[Double] = js.undefined
   ): TagResourceInput = {
     val __obj = js.Dynamic.literal(Resource = Resource.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
     if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
     if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
-    if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined($maxRetries)) __obj.updateDynamic("$maxRetries")($maxRetries.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagResourceInput]
   }
 }

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Sensors
 
-import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.Foundation.TypedEventHandler
 import typings.winrtUwp.Windows.WinRTEvent
@@ -10,9 +9,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides an interface for a proximity sensor to determine whether or not an object is detected. */
-@JSGlobal("Windows.Devices.Sensors.ProximitySensor")
 @js.native
-abstract class ProximitySensor () extends js.Object {
+trait ProximitySensor extends js.Object {
   /** Gets the device identifier. */
   var deviceId: String = js.native
   /** The largest distance where the proximity sensor can detect an object. */
@@ -46,28 +44,5 @@ abstract class ProximitySensor () extends js.Object {
     `type`: readingchanged,
     listener: TypedEventHandler[ProximitySensor, ProximitySensorReadingChangedEventArgs]
   ): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Devices.Sensors.ProximitySensor")
-@js.native
-object ProximitySensor extends js.Object {
-  /**
-    * Obtains the proximity sensor from its identifier.
-    * @param sensorId The sensor identifier.
-    * @return Returns the ProximitySensor object from its identifier.
-    */
-  def fromId(sensorId: String): ProximitySensor = js.native
-  /**
-    * Gets the device selector.
-    * @return Returns the device selector. If no device selector is available, this method returns null.
-    */
-  def getDeviceSelector(): String = js.native
-  /**
-    * Gets readings from the trigger details in background task.
-    * @param triggerDetails The trigger details received from the background task.
-    * @return The collection of proximity data retrieved from the trigger details.
-    */
-  def getReadingsFromTriggerDetails(triggerDetails: SensorDataThresholdTriggerDetails): IVectorView[ProximitySensorReading] = js.native
 }
 

@@ -15,9 +15,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a store that contains appointments. */
-@JSGlobal("Windows.ApplicationModel.Appointments.AppointmentStore")
 @js.native
-abstract class AppointmentStore () extends js.Object {
+trait AppointmentStore extends js.Object {
   /** Returns the AppointmentStoreChangeTracker associated with the appointment store. */
   var changeTracker: AppointmentStoreChangeTracker = js.native
   /** Occurs when the AppointmentStore changes. */

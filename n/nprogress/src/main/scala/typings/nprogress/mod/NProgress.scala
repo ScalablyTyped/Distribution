@@ -1,6 +1,6 @@
 package typings.nprogress.mod
 
-import typings.nprogress.PartialNProgressOptions
+import typings.nprogress.anon.PartialNProgressOptions
 import typings.nprogress.nprogressStrings.margin
 import typings.nprogress.nprogressStrings.translate
 import typings.nprogress.nprogressStrings.translate3d

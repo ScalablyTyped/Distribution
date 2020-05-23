@@ -22,11 +22,11 @@ object RecorderOptions {
     use_separator: js.UndefOr[Boolean] = js.undefined
   ): RecorderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dont_print)) __obj.updateDynamic("dont_print")(dont_print.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable_reqheaders_recording)) __obj.updateDynamic("enable_reqheaders_recording")(enable_reqheaders_recording.asInstanceOf[js.Any])
+    if (!js.isUndefined(dont_print)) __obj.updateDynamic("dont_print")(dont_print.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable_reqheaders_recording)) __obj.updateDynamic("enable_reqheaders_recording")(enable_reqheaders_recording.get.asInstanceOf[js.Any])
     if (logging != null) __obj.updateDynamic("logging")(js.Any.fromFunction1(logging))
-    if (!js.isUndefined(output_objects)) __obj.updateDynamic("output_objects")(output_objects.asInstanceOf[js.Any])
-    if (!js.isUndefined(use_separator)) __obj.updateDynamic("use_separator")(use_separator.asInstanceOf[js.Any])
+    if (!js.isUndefined(output_objects)) __obj.updateDynamic("output_objects")(output_objects.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(use_separator)) __obj.updateDynamic("use_separator")(use_separator.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecorderOptions]
   }
 }

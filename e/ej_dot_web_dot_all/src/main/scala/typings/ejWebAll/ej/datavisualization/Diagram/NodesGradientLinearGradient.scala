@@ -36,18 +36,18 @@ object NodesGradientLinearGradient {
   def apply(
     stops: js.Array[_] = null,
     `type`: String = null,
-    x1: Int | Double = null,
-    x2: Int | Double = null,
-    y1: Int | Double = null,
-    y2: Int | Double = null
+    x1: js.UndefOr[Double] = js.undefined,
+    x2: js.UndefOr[Double] = js.undefined,
+    y1: js.UndefOr[Double] = js.undefined,
+    y2: js.UndefOr[Double] = js.undefined
   ): NodesGradientLinearGradient = {
     val __obj = js.Dynamic.literal()
     if (stops != null) __obj.updateDynamic("stops")(stops.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (x1 != null) __obj.updateDynamic("x1")(x1.asInstanceOf[js.Any])
-    if (x2 != null) __obj.updateDynamic("x2")(x2.asInstanceOf[js.Any])
-    if (y1 != null) __obj.updateDynamic("y1")(y1.asInstanceOf[js.Any])
-    if (y2 != null) __obj.updateDynamic("y2")(y2.asInstanceOf[js.Any])
+    if (!js.isUndefined(x1)) __obj.updateDynamic("x1")(x1.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(x2)) __obj.updateDynamic("x2")(x2.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y1)) __obj.updateDynamic("y1")(y1.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y2)) __obj.updateDynamic("y2")(y2.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodesGradientLinearGradient]
   }
 }

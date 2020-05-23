@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/test/unit/local/test_remote_document_change_buffer", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/test/unit/local/test_remote_document_change_buffer", JSImport.Namespace)
 @js.native
 object testRemoteDocumentChangeBufferMod extends js.Object {
   @js.native

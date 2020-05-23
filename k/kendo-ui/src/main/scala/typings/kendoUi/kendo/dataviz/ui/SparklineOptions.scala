@@ -61,7 +61,7 @@ object SparklineOptions {
     plotAreaClick: /* e */ SparklinePlotAreaClickEvent => Unit = null,
     plotAreaHover: /* e */ SparklinePlotAreaHoverEvent => Unit = null,
     plotAreaLeave: /* e */ SparklinePlotAreaLeaveEvent => Unit = null,
-    pointWidth: Int | Double = null,
+    pointWidth: js.UndefOr[Double] = js.undefined,
     renderAs: String = null,
     series: js.Array[SparklineSeriesItem] = null,
     seriesClick: /* e */ SparklineSeriesClickEvent => Unit = null,
@@ -80,7 +80,7 @@ object SparklineOptions {
     zoomStart: /* e */ SparklineZoomStartEvent => Unit = null
   ): SparklineOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.get.asInstanceOf[js.Any])
     if (axisDefaults != null) __obj.updateDynamic("axisDefaults")(axisDefaults.asInstanceOf[js.Any])
     if (axisLabelClick != null) __obj.updateDynamic("axisLabelClick")(js.Any.fromFunction1(axisLabelClick))
     if (categoryAxis != null) __obj.updateDynamic("categoryAxis")(categoryAxis.asInstanceOf[js.Any])
@@ -97,7 +97,7 @@ object SparklineOptions {
     if (plotAreaClick != null) __obj.updateDynamic("plotAreaClick")(js.Any.fromFunction1(plotAreaClick))
     if (plotAreaHover != null) __obj.updateDynamic("plotAreaHover")(js.Any.fromFunction1(plotAreaHover))
     if (plotAreaLeave != null) __obj.updateDynamic("plotAreaLeave")(js.Any.fromFunction1(plotAreaLeave))
-    if (pointWidth != null) __obj.updateDynamic("pointWidth")(pointWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointWidth)) __obj.updateDynamic("pointWidth")(pointWidth.get.asInstanceOf[js.Any])
     if (renderAs != null) __obj.updateDynamic("renderAs")(renderAs.asInstanceOf[js.Any])
     if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     if (seriesClick != null) __obj.updateDynamic("seriesClick")(js.Any.fromFunction1(seriesClick))
@@ -108,7 +108,7 @@ object SparklineOptions {
     if (seriesOver != null) __obj.updateDynamic("seriesOver")(js.Any.fromFunction1(seriesOver))
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (!js.isUndefined(transitions)) __obj.updateDynamic("transitions")(transitions.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitions)) __obj.updateDynamic("transitions")(transitions.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (valueAxis != null) __obj.updateDynamic("valueAxis")(valueAxis.asInstanceOf[js.Any])
     if (zoom != null) __obj.updateDynamic("zoom")(js.Any.fromFunction1(zoom))

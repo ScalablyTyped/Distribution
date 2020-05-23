@@ -1,6 +1,6 @@
 package typings.notifyjs.mod
 
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ class ^ protected () extends Notify {
   /* CompleteClass */
   override def destroy(): Unit = js.native
   /* CompleteClass */
-  override def handleEvent(e: Event_): Unit = js.native
+  override def handleEvent(e: Event): Unit = js.native
   /* CompleteClass */
   override def onClickNotification(): Unit = js.native
   /* CompleteClass */
@@ -29,7 +29,7 @@ class ^ protected () extends Notify {
   /* CompleteClass */
   override def onErrorNotification(): Unit = js.native
   /* CompleteClass */
-  override def onShowNotification(e: Event_): Unit = js.native
+  override def onShowNotification(e: Event): Unit = js.native
   /**
     * Show the notification.
     */

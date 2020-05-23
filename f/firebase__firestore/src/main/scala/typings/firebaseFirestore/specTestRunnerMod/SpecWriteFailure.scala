@@ -21,7 +21,7 @@ object SpecWriteFailure {
   @scala.inline
   def apply(error: SpecError, keepInQueue: js.UndefOr[Boolean] = js.undefined): SpecWriteFailure = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepInQueue)) __obj.updateDynamic("keepInQueue")(keepInQueue.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepInQueue)) __obj.updateDynamic("keepInQueue")(keepInQueue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpecWriteFailure]
   }
 }

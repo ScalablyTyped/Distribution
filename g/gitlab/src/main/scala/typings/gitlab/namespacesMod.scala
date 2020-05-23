@@ -1,5 +1,6 @@
 package typings.gitlab
 
+import typings.gitlab.anon.searchstringSudo
 import typings.gitlab.infrastructureMod.BaseService
 import typings.gitlab.requestHelperMod.GetResponse
 import typings.gitlab.requestHelperMod.PaginatedRequestOptions

@@ -27,26 +27,26 @@ object Configuration {
   @scala.inline
   def apply(
     adapter: `cordova-sqlite`,
-    androidDatabaseImplementation: Int | Double = null,
+    androidDatabaseImplementation: js.UndefOr[Double] = js.undefined,
     auto_compaction: js.UndefOr[Boolean] = js.undefined,
     deterministic_revs: js.UndefOr[Boolean] = js.undefined,
     iosDatabaseLocation: String = null,
     location: String = null,
     name: String = null,
     prefix: String = null,
-    revs_limit: Int | Double = null,
-    size: Int | Double = null
+    revs_limit: js.UndefOr[Double] = js.undefined,
+    size: js.UndefOr[Double] = js.undefined
   ): Configuration = {
     val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any])
-    if (androidDatabaseImplementation != null) __obj.updateDynamic("androidDatabaseImplementation")(androidDatabaseImplementation.asInstanceOf[js.Any])
-    if (!js.isUndefined(auto_compaction)) __obj.updateDynamic("auto_compaction")(auto_compaction.asInstanceOf[js.Any])
-    if (!js.isUndefined(deterministic_revs)) __obj.updateDynamic("deterministic_revs")(deterministic_revs.asInstanceOf[js.Any])
+    if (!js.isUndefined(androidDatabaseImplementation)) __obj.updateDynamic("androidDatabaseImplementation")(androidDatabaseImplementation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(auto_compaction)) __obj.updateDynamic("auto_compaction")(auto_compaction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deterministic_revs)) __obj.updateDynamic("deterministic_revs")(deterministic_revs.get.asInstanceOf[js.Any])
     if (iosDatabaseLocation != null) __obj.updateDynamic("iosDatabaseLocation")(iosDatabaseLocation.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (revs_limit != null) __obj.updateDynamic("revs_limit")(revs_limit.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(revs_limit)) __obj.updateDynamic("revs_limit")(revs_limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }
 }

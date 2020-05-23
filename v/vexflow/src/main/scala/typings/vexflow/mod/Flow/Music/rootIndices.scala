@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("vexflow", "Flow.Music.root_indices")
 @js.native
-object rootIndices extends /* root */ StringDictionary[Double]
+object rootIndices extends /* interval */ StringDictionary[Double]
 

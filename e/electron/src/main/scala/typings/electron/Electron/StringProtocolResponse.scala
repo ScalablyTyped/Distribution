@@ -23,9 +23,8 @@ trait StringProtocolResponse extends js.Object {
 object StringProtocolResponse {
   @scala.inline
   def apply(charset: String = null, data: String = null, mimeType: String = null): StringProtocolResponse = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringProtocolResponse]
   }

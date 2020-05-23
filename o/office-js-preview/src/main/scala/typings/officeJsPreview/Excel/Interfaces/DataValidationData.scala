@@ -29,7 +29,7 @@ trait DataValidationData extends js.Object {
   var errorAlert: js.UndefOr[DataValidationErrorAlert] = js.undefined
   /**
     *
-    * Ignore blanks: no data validation will be performed on blank cells, it defaults to true.
+    * Specifies if data validation will be performed on blank cells, it defaults to true.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -80,11 +80,11 @@ object DataValidationData {
   ): DataValidationData = {
     val __obj = js.Dynamic.literal()
     if (errorAlert != null) __obj.updateDynamic("errorAlert")(errorAlert.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreBlanks)) __obj.updateDynamic("ignoreBlanks")(ignoreBlanks.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreBlanks)) __obj.updateDynamic("ignoreBlanks")(ignoreBlanks.get.asInstanceOf[js.Any])
     if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
     if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
+    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataValidationData]
   }
 }

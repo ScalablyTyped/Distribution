@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("fabric", "fabric.Triangle")
 @js.native
 /**
-	 * Constructor
-	 * @param [options] Options object
-	 */
+  * Constructor
+  * @param [options] Options object
+  */
 class Triangle ()
   extends typings.fabric.fabricImplMod.Triangle {
   def this(options: ITriangleOptions) = this()
@@ -21,9 +21,9 @@ class Triangle ()
 @js.native
 object Triangle extends js.Object {
   /**
-  	 * Returns Triangle instance from an object representation
-  	 * @param object Object to create an instance from
-  	 */
+    * Returns Triangle instance from an object representation
+    * @param object Object to create an instance from
+    */
   def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.Triangle = js.native
 }
 

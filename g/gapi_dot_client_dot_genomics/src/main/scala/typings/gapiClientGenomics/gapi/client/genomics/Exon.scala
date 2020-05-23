@@ -37,10 +37,10 @@ trait Exon extends js.Object {
 
 object Exon {
   @scala.inline
-  def apply(end: String = null, frame: Int | Double = null, start: String = null): Exon = {
+  def apply(end: String = null, frame: js.UndefOr[Double] = js.undefined, start: String = null): Exon = {
     val __obj = js.Dynamic.literal()
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (frame != null) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
+    if (!js.isUndefined(frame)) __obj.updateDynamic("frame")(frame.get.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Exon]
   }

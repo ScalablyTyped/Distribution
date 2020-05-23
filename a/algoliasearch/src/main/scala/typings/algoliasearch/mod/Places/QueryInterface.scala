@@ -68,20 +68,20 @@ object QueryInterface {
   def apply(
     aroundLatLng: String = null,
     aroundLatLngViaIP: String = null,
-    aroundRadius: Int | Double = null,
+    aroundRadius: js.UndefOr[Double] = js.undefined,
     countries: String = null,
     getRankingInfo: js.UndefOr[Boolean] = js.undefined,
-    hitsPerPage: Int | Double = null,
+    hitsPerPage: js.UndefOr[Double] = js.undefined,
     query: String = null,
     `type`: city | country | address | busStop | trainStation | townhall | airport = null
   ): QueryInterface = {
     val __obj = js.Dynamic.literal()
     if (aroundLatLng != null) __obj.updateDynamic("aroundLatLng")(aroundLatLng.asInstanceOf[js.Any])
     if (aroundLatLngViaIP != null) __obj.updateDynamic("aroundLatLngViaIP")(aroundLatLngViaIP.asInstanceOf[js.Any])
-    if (aroundRadius != null) __obj.updateDynamic("aroundRadius")(aroundRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(aroundRadius)) __obj.updateDynamic("aroundRadius")(aroundRadius.get.asInstanceOf[js.Any])
     if (countries != null) __obj.updateDynamic("countries")(countries.asInstanceOf[js.Any])
-    if (!js.isUndefined(getRankingInfo)) __obj.updateDynamic("getRankingInfo")(getRankingInfo.asInstanceOf[js.Any])
-    if (hitsPerPage != null) __obj.updateDynamic("hitsPerPage")(hitsPerPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(getRankingInfo)) __obj.updateDynamic("getRankingInfo")(getRankingInfo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hitsPerPage)) __obj.updateDynamic("hitsPerPage")(hitsPerPage.get.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryInterface]

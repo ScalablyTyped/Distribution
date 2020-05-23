@@ -160,15 +160,13 @@ object boneMod extends js.Object {
       */
     def getAbsolutePositionFromLocal(position: Vector3): Vector3 = js.native
     def getAbsolutePositionFromLocal(position: Vector3, mesh: Nullable[AbstractMesh]): Vector3 = js.native
-    def getAbsolutePositionFromLocalToRef(position: Vector3, mesh: js.UndefOr[scala.Nothing], result: Vector3): Unit = js.native
-    def getAbsolutePositionFromLocalToRef(position: Vector3, mesh: Null, result: Vector3): Unit = js.native
     /**
       * Get the world position of a point that is in the local space of the bone and copy it to the result param
       * @param position The local position
       * @param mesh The mesh that this bone is attached to
       * @param result The vector3 that the world position should be copied to
       */
-    def getAbsolutePositionFromLocalToRef(position: Vector3, mesh: AbstractMesh, result: Vector3): Unit = js.native
+    def getAbsolutePositionFromLocalToRef(position: Vector3, mesh: js.UndefOr[AbstractMesh | Null], result: Vector3): Unit = js.native
     /**
       * Copy the absolute position of the bone (world space) to the result param
       * @param mesh The mesh that this bone is attached to
@@ -193,15 +191,13 @@ object boneMod extends js.Object {
       */
     def getDirection(localAxis: Vector3): Vector3 = js.native
     def getDirection(localAxis: Vector3, mesh: Nullable[AbstractMesh]): Vector3 = js.native
-    def getDirectionToRef(localAxis: Vector3, mesh: js.UndefOr[scala.Nothing], result: Vector3): Unit = js.native
-    def getDirectionToRef(localAxis: Vector3, mesh: Null, result: Vector3): Unit = js.native
     /**
       * Copy the world direction to a vector3 from an axis that is in the local space of the bone
       * @param localAxis The local direction that is used to compute the world direction
       * @param mesh The mesh that this bone is attached to
       * @param result The vector3 that the world direction will be copied to
       */
-    def getDirectionToRef(localAxis: Vector3, mesh: AbstractMesh, result: Vector3): Unit = js.native
+    def getDirectionToRef(localAxis: Vector3, mesh: js.UndefOr[AbstractMesh | Null], result: Vector3): Unit = js.native
     /**
       * Gets the node index in matrix array generated for rendering
       * @returns the node index
@@ -226,15 +222,13 @@ object boneMod extends js.Object {
       */
     def getLocalPositionFromAbsolute(position: Vector3): Vector3 = js.native
     def getLocalPositionFromAbsolute(position: Vector3, mesh: Nullable[AbstractMesh]): Vector3 = js.native
-    def getLocalPositionFromAbsoluteToRef(position: Vector3, mesh: js.UndefOr[scala.Nothing], result: Vector3): Unit = js.native
-    def getLocalPositionFromAbsoluteToRef(position: Vector3, mesh: Null, result: Vector3): Unit = js.native
     /**
       * Get the local position of a point that is in world space and copy it to the result param
       * @param position The world position
       * @param mesh The mesh that this bone is attached to
       * @param result The vector3 that the local position should be copied to
       */
-    def getLocalPositionFromAbsoluteToRef(position: Vector3, mesh: AbstractMesh, result: Vector3): Unit = js.native
+    def getLocalPositionFromAbsoluteToRef(position: Vector3, mesh: js.UndefOr[AbstractMesh | Null], result: Vector3): Unit = js.native
     /**
       * Gets parent bone
       * @returns a bone or null if the bone is the root of the bone hierarchy
@@ -249,14 +243,13 @@ object boneMod extends js.Object {
     def getPosition(): Vector3 = js.native
     def getPosition(space: Space): Vector3 = js.native
     def getPosition(space: Space, mesh: Nullable[AbstractMesh]): Vector3 = js.native
-    def getPositionToRef(space: js.UndefOr[scala.Nothing], mesh: Nullable[AbstractMesh], result: Vector3): Unit = js.native
     /**
       * Copy the position of the bone to a vector3 in local or world space
       * @param space The space that the returned position is in
       * @param mesh The mesh that this bone is attached to. This is only used in world space
       * @param result The vector3 to copy the position to
       */
-    def getPositionToRef(space: Space, mesh: Nullable[AbstractMesh], result: Vector3): Unit = js.native
+    def getPositionToRef(space: js.UndefOr[Space], mesh: Nullable[AbstractMesh], result: Vector3): Unit = js.native
     /**
       * Gets the rest pose matrix
       * @returns a matrix
@@ -271,22 +264,20 @@ object boneMod extends js.Object {
     def getRotation(): Vector3 = js.native
     def getRotation(space: Space): Vector3 = js.native
     def getRotation(space: Space, mesh: Nullable[AbstractMesh]): Vector3 = js.native
-    def getRotationMatrix(space: js.UndefOr[scala.Nothing], mesh: AbstractMesh): Matrix = js.native
     /**
       * Get the rotation matrix of the bone in local or world space
       * @param space The space that the rotation should be in
       * @param mesh The mesh that this bone is attached to.  This is only used in world space
       * @returns The rotation matrix
       */
-    def getRotationMatrix(space: Space, mesh: AbstractMesh): Matrix = js.native
-    def getRotationMatrixToRef(space: js.UndefOr[scala.Nothing], mesh: AbstractMesh, result: Matrix): Unit = js.native
+    def getRotationMatrix(space: js.UndefOr[Space], mesh: AbstractMesh): Matrix = js.native
     /**
       * Copy the rotation matrix of the bone to a matrix.  The rotation can be in either local or world space
       * @param space The space that the rotation should be in
       * @param mesh The mesh that this bone is attached to.  This is only used in world space
       * @param result The quaternion that the rotation should be copied to
       */
-    def getRotationMatrixToRef(space: Space, mesh: AbstractMesh, result: Matrix): Unit = js.native
+    def getRotationMatrixToRef(space: js.UndefOr[Space], mesh: AbstractMesh, result: Matrix): Unit = js.native
     /**
       * Get the quaternion rotation of the bone in either local or world space
       * @param space The space that the rotation should be in
@@ -296,30 +287,20 @@ object boneMod extends js.Object {
     def getRotationQuaternion(): Quaternion = js.native
     def getRotationQuaternion(space: Space): Quaternion = js.native
     def getRotationQuaternion(space: Space, mesh: Nullable[AbstractMesh]): Quaternion = js.native
-    def getRotationQuaternionToRef(space: js.UndefOr[scala.Nothing], mesh: js.UndefOr[scala.Nothing], result: Quaternion): Unit = js.native
-    def getRotationQuaternionToRef(space: js.UndefOr[scala.Nothing], mesh: Null, result: Quaternion): Unit = js.native
-    def getRotationQuaternionToRef(space: js.UndefOr[scala.Nothing], mesh: AbstractMesh, result: Quaternion): Unit = js.native
-    def getRotationQuaternionToRef(space: Space, mesh: js.UndefOr[scala.Nothing], result: Quaternion): Unit = js.native
-    def getRotationQuaternionToRef(space: Space, mesh: Null, result: Quaternion): Unit = js.native
     /**
       * Copy the quaternion rotation of the bone to a quaternion.  The rotation can be in either local or world space
       * @param space The space that the rotation should be in
       * @param mesh The mesh that this bone is attached to.  This is only used in world space
       * @param result The quaternion that the rotation should be copied to
       */
-    def getRotationQuaternionToRef(space: Space, mesh: AbstractMesh, result: Quaternion): Unit = js.native
-    def getRotationToRef(space: js.UndefOr[scala.Nothing], mesh: js.UndefOr[scala.Nothing], result: Vector3): Unit = js.native
-    def getRotationToRef(space: js.UndefOr[scala.Nothing], mesh: Null, result: Vector3): Unit = js.native
-    def getRotationToRef(space: js.UndefOr[scala.Nothing], mesh: AbstractMesh, result: Vector3): Unit = js.native
-    def getRotationToRef(space: Space, mesh: js.UndefOr[scala.Nothing], result: Vector3): Unit = js.native
-    def getRotationToRef(space: Space, mesh: Null, result: Vector3): Unit = js.native
+    def getRotationQuaternionToRef(space: js.UndefOr[Space], mesh: js.UndefOr[AbstractMesh | Null], result: Quaternion): Unit = js.native
     /**
       * Copy the euler rotation of the bone to a vector3.  The rotation can be in either local or world space
       * @param space The space that the rotation should be in
       * @param mesh The mesh that this bone is attached to.  This is only used in world space
       * @param result The vector3 that the rotation should be copied to
       */
-    def getRotationToRef(space: Space, mesh: AbstractMesh, result: Vector3): Unit = js.native
+    def getRotationToRef(space: js.UndefOr[Space], mesh: js.UndefOr[AbstractMesh | Null], result: Vector3): Unit = js.native
     /**
       * Gets the current scaling in local space
       * @returns the current scaling vector

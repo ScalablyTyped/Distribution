@@ -32,7 +32,7 @@ object IFormOptionsAPI {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (fieldTransform != null) __obj.updateDynamic("fieldTransform")(fieldTransform.asInstanceOf[js.Any])
     if (formState != null) __obj.updateDynamic("formState")(formState.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeChromeAutoComplete)) __obj.updateDynamic("removeChromeAutoComplete")(removeChromeAutoComplete.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeChromeAutoComplete)) __obj.updateDynamic("removeChromeAutoComplete")(removeChromeAutoComplete.get.asInstanceOf[js.Any])
     if (resetModel != null) __obj.updateDynamic("resetModel")(resetModel.asInstanceOf[js.Any])
     if (templateManipulators != null) __obj.updateDynamic("templateManipulators")(templateManipulators.asInstanceOf[js.Any])
     if (updateInitialValue != null) __obj.updateDynamic("updateInitialValue")(updateInitialValue.asInstanceOf[js.Any])

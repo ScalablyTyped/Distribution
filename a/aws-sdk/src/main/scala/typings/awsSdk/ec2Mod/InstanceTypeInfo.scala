@@ -99,20 +99,20 @@ trait InstanceTypeInfo extends js.Object {
 object InstanceTypeInfo {
   @scala.inline
   def apply(
-    AutoRecoverySupported: js.UndefOr[scala.Boolean] = js.undefined,
-    BareMetal: js.UndefOr[scala.Boolean] = js.undefined,
-    BurstablePerformanceSupported: js.UndefOr[scala.Boolean] = js.undefined,
-    CurrentGeneration: js.UndefOr[scala.Boolean] = js.undefined,
-    DedicatedHostsSupported: js.UndefOr[scala.Boolean] = js.undefined,
+    AutoRecoverySupported: js.UndefOr[AutoRecoveryFlag] = js.undefined,
+    BareMetal: js.UndefOr[BareMetalFlag] = js.undefined,
+    BurstablePerformanceSupported: js.UndefOr[BurstablePerformanceFlag] = js.undefined,
+    CurrentGeneration: js.UndefOr[CurrentGenerationFlag] = js.undefined,
+    DedicatedHostsSupported: js.UndefOr[DedicatedHostFlag] = js.undefined,
     EbsInfo: EbsInfo = null,
     FpgaInfo: FpgaInfo = null,
-    FreeTierEligible: js.UndefOr[scala.Boolean] = js.undefined,
+    FreeTierEligible: js.UndefOr[FreeTierEligibleFlag] = js.undefined,
     GpuInfo: GpuInfo = null,
-    HibernationSupported: js.UndefOr[scala.Boolean] = js.undefined,
+    HibernationSupported: js.UndefOr[HibernationFlag] = js.undefined,
     Hypervisor: InstanceTypeHypervisor = null,
     InferenceAcceleratorInfo: InferenceAcceleratorInfo = null,
     InstanceStorageInfo: InstanceStorageInfo = null,
-    InstanceStorageSupported: js.UndefOr[scala.Boolean] = js.undefined,
+    InstanceStorageSupported: js.UndefOr[InstanceStorageFlag] = js.undefined,
     InstanceType: InstanceType = null,
     MemoryInfo: MemoryInfo = null,
     NetworkInfo: NetworkInfo = null,
@@ -123,20 +123,20 @@ object InstanceTypeInfo {
     VCpuInfo: VCpuInfo = null
   ): InstanceTypeInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AutoRecoverySupported)) __obj.updateDynamic("AutoRecoverySupported")(AutoRecoverySupported.asInstanceOf[js.Any])
-    if (!js.isUndefined(BareMetal)) __obj.updateDynamic("BareMetal")(BareMetal.asInstanceOf[js.Any])
-    if (!js.isUndefined(BurstablePerformanceSupported)) __obj.updateDynamic("BurstablePerformanceSupported")(BurstablePerformanceSupported.asInstanceOf[js.Any])
-    if (!js.isUndefined(CurrentGeneration)) __obj.updateDynamic("CurrentGeneration")(CurrentGeneration.asInstanceOf[js.Any])
-    if (!js.isUndefined(DedicatedHostsSupported)) __obj.updateDynamic("DedicatedHostsSupported")(DedicatedHostsSupported.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoRecoverySupported)) __obj.updateDynamic("AutoRecoverySupported")(AutoRecoverySupported.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(BareMetal)) __obj.updateDynamic("BareMetal")(BareMetal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(BurstablePerformanceSupported)) __obj.updateDynamic("BurstablePerformanceSupported")(BurstablePerformanceSupported.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(CurrentGeneration)) __obj.updateDynamic("CurrentGeneration")(CurrentGeneration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DedicatedHostsSupported)) __obj.updateDynamic("DedicatedHostsSupported")(DedicatedHostsSupported.get.asInstanceOf[js.Any])
     if (EbsInfo != null) __obj.updateDynamic("EbsInfo")(EbsInfo.asInstanceOf[js.Any])
     if (FpgaInfo != null) __obj.updateDynamic("FpgaInfo")(FpgaInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(FreeTierEligible)) __obj.updateDynamic("FreeTierEligible")(FreeTierEligible.asInstanceOf[js.Any])
+    if (!js.isUndefined(FreeTierEligible)) __obj.updateDynamic("FreeTierEligible")(FreeTierEligible.get.asInstanceOf[js.Any])
     if (GpuInfo != null) __obj.updateDynamic("GpuInfo")(GpuInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(HibernationSupported)) __obj.updateDynamic("HibernationSupported")(HibernationSupported.asInstanceOf[js.Any])
+    if (!js.isUndefined(HibernationSupported)) __obj.updateDynamic("HibernationSupported")(HibernationSupported.get.asInstanceOf[js.Any])
     if (Hypervisor != null) __obj.updateDynamic("Hypervisor")(Hypervisor.asInstanceOf[js.Any])
     if (InferenceAcceleratorInfo != null) __obj.updateDynamic("InferenceAcceleratorInfo")(InferenceAcceleratorInfo.asInstanceOf[js.Any])
     if (InstanceStorageInfo != null) __obj.updateDynamic("InstanceStorageInfo")(InstanceStorageInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstanceStorageSupported)) __obj.updateDynamic("InstanceStorageSupported")(InstanceStorageSupported.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstanceStorageSupported)) __obj.updateDynamic("InstanceStorageSupported")(InstanceStorageSupported.get.asInstanceOf[js.Any])
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
     if (MemoryInfo != null) __obj.updateDynamic("MemoryInfo")(MemoryInfo.asInstanceOf[js.Any])
     if (NetworkInfo != null) __obj.updateDynamic("NetworkInfo")(NetworkInfo.asInstanceOf[js.Any])

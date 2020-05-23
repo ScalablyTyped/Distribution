@@ -8,11 +8,16 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientWebDocumentViewer.ParametersSubmitted and ASPxClientReportDesigner.PreviewParametersSubmitted events.
   */
-@JSGlobal("ASPxClientParametersSubmittedEventArgs")
-@js.native
-class ASPxClientParametersSubmittedEventArgs protected () extends ASPxClientEventArgs {
-  def this(parameters: StringDictionary[js.Any]) = this()
-  var Parameters: StringDictionary[js.Any] = js.native
-  var ParametersViewModel: js.Any = js.native
+trait ASPxClientParametersSubmittedEventArgs extends ASPxClientEventArgs {
+  var Parameters: StringDictionary[js.Any]
+  var ParametersViewModel: js.Any
+}
+
+object ASPxClientParametersSubmittedEventArgs {
+  @scala.inline
+  def apply(Parameters: StringDictionary[js.Any], ParametersViewModel: js.Any): ASPxClientParametersSubmittedEventArgs = {
+    val __obj = js.Dynamic.literal(Parameters = Parameters.asInstanceOf[js.Any], ParametersViewModel = ParametersViewModel.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientParametersSubmittedEventArgs]
+  }
 }
 

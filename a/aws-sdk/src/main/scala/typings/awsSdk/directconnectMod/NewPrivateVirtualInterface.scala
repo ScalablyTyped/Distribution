@@ -63,7 +63,7 @@ object NewPrivateVirtualInterface {
     authKey: BGPAuthKey = null,
     customerAddress: CustomerAddress = null,
     directConnectGatewayId: DirectConnectGatewayId = null,
-    mtu: Int | Double = null,
+    mtu: js.UndefOr[MTU] = js.undefined,
     tags: TagList = null,
     virtualGatewayId: VirtualGatewayId = null
   ): NewPrivateVirtualInterface = {
@@ -73,7 +73,7 @@ object NewPrivateVirtualInterface {
     if (authKey != null) __obj.updateDynamic("authKey")(authKey.asInstanceOf[js.Any])
     if (customerAddress != null) __obj.updateDynamic("customerAddress")(customerAddress.asInstanceOf[js.Any])
     if (directConnectGatewayId != null) __obj.updateDynamic("directConnectGatewayId")(directConnectGatewayId.asInstanceOf[js.Any])
-    if (mtu != null) __obj.updateDynamic("mtu")(mtu.asInstanceOf[js.Any])
+    if (!js.isUndefined(mtu)) __obj.updateDynamic("mtu")(mtu.get.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (virtualGatewayId != null) __obj.updateDynamic("virtualGatewayId")(virtualGatewayId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewPrivateVirtualInterface]

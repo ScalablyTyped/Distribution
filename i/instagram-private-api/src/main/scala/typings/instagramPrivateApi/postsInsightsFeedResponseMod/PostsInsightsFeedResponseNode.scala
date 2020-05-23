@@ -27,38 +27,36 @@ object PostsInsightsFeedResponseNode {
   @scala.inline
   def apply(
     __typename: String,
-    comment_count: Int | Double = null,
-    creation_time: Int | Double = null,
-    engagement: Int | Double = null,
+    comment_count: js.UndefOr[Double] = js.undefined,
+    creation_time: js.UndefOr[Double] = js.undefined,
+    engagement: js.UndefOr[Double] = js.undefined,
     id: String = null,
     image: PostsInsightsFeedResponseImage = null,
     inline_insights_node: PostsInsightsFeedResponseInlineInsightsNode = null,
     instagram_media_id: String = null,
     instagram_media_type: String = null,
-    like_count: Int | Double = null,
+    like_count: js.UndefOr[Double] = js.undefined,
     name: String = null,
-    save_count: Int | Double = null,
-    shopping_outbound_click_count: Int | Double = null,
-    shopping_product_click_count: Int | Double = null,
-    value: Int | Double = null,
-    video_view_count: js.UndefOr[scala.Nothing] = js.undefined
+    save_count: js.UndefOr[Double] = js.undefined,
+    shopping_outbound_click_count: js.UndefOr[Double] = js.undefined,
+    shopping_product_click_count: js.UndefOr[Double] = js.undefined,
+    value: js.UndefOr[Double] = js.undefined
   ): PostsInsightsFeedResponseNode = {
     val __obj = js.Dynamic.literal(__typename = __typename.asInstanceOf[js.Any])
-    if (comment_count != null) __obj.updateDynamic("comment_count")(comment_count.asInstanceOf[js.Any])
-    if (creation_time != null) __obj.updateDynamic("creation_time")(creation_time.asInstanceOf[js.Any])
-    if (engagement != null) __obj.updateDynamic("engagement")(engagement.asInstanceOf[js.Any])
+    if (!js.isUndefined(comment_count)) __obj.updateDynamic("comment_count")(comment_count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(creation_time)) __obj.updateDynamic("creation_time")(creation_time.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(engagement)) __obj.updateDynamic("engagement")(engagement.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (inline_insights_node != null) __obj.updateDynamic("inline_insights_node")(inline_insights_node.asInstanceOf[js.Any])
     if (instagram_media_id != null) __obj.updateDynamic("instagram_media_id")(instagram_media_id.asInstanceOf[js.Any])
     if (instagram_media_type != null) __obj.updateDynamic("instagram_media_type")(instagram_media_type.asInstanceOf[js.Any])
-    if (like_count != null) __obj.updateDynamic("like_count")(like_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(like_count)) __obj.updateDynamic("like_count")(like_count.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (save_count != null) __obj.updateDynamic("save_count")(save_count.asInstanceOf[js.Any])
-    if (shopping_outbound_click_count != null) __obj.updateDynamic("shopping_outbound_click_count")(shopping_outbound_click_count.asInstanceOf[js.Any])
-    if (shopping_product_click_count != null) __obj.updateDynamic("shopping_product_click_count")(shopping_product_click_count.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(video_view_count)) __obj.updateDynamic("video_view_count")(video_view_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(save_count)) __obj.updateDynamic("save_count")(save_count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shopping_outbound_click_count)) __obj.updateDynamic("shopping_outbound_click_count")(shopping_outbound_click_count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shopping_product_click_count)) __obj.updateDynamic("shopping_product_click_count")(shopping_product_click_count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostsInsightsFeedResponseNode]
   }
 }

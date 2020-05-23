@@ -51,12 +51,12 @@ object DropdownMenuProps {
     usePopper: js.UndefOr[Boolean] = js.undefined
   ): DropdownMenuProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-    if (!js.isUndefined(alignEnd)) __obj.updateDynamic("alignEnd")(alignEnd.asInstanceOf[js.Any])
-    if (!js.isUndefined(flip)) __obj.updateDynamic("flip")(flip.asInstanceOf[js.Any])
+    if (!js.isUndefined(alignEnd)) __obj.updateDynamic("alignEnd")(alignEnd.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flip)) __obj.updateDynamic("flip")(flip.get.asInstanceOf[js.Any])
     if (popperConfig != null) __obj.updateDynamic("popperConfig")(popperConfig.asInstanceOf[js.Any])
     if (rootCloseEvent != null) __obj.updateDynamic("rootCloseEvent")(rootCloseEvent.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePopper)) __obj.updateDynamic("usePopper")(usePopper.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePopper)) __obj.updateDynamic("usePopper")(usePopper.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropdownMenuProps]
   }
 }

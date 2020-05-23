@@ -55,30 +55,30 @@ trait CostTypes extends js.Object {
 object CostTypes {
   @scala.inline
   def apply(
-    IncludeCredit: js.UndefOr[Boolean] = js.undefined,
-    IncludeDiscount: js.UndefOr[Boolean] = js.undefined,
-    IncludeOtherSubscription: js.UndefOr[Boolean] = js.undefined,
-    IncludeRecurring: js.UndefOr[Boolean] = js.undefined,
-    IncludeRefund: js.UndefOr[Boolean] = js.undefined,
-    IncludeSubscription: js.UndefOr[Boolean] = js.undefined,
-    IncludeSupport: js.UndefOr[Boolean] = js.undefined,
-    IncludeTax: js.UndefOr[Boolean] = js.undefined,
-    IncludeUpfront: js.UndefOr[Boolean] = js.undefined,
-    UseAmortized: js.UndefOr[Boolean] = js.undefined,
-    UseBlended: js.UndefOr[Boolean] = js.undefined
+    IncludeCredit: js.UndefOr[NullableBoolean] = js.undefined,
+    IncludeDiscount: js.UndefOr[NullableBoolean] = js.undefined,
+    IncludeOtherSubscription: js.UndefOr[NullableBoolean] = js.undefined,
+    IncludeRecurring: js.UndefOr[NullableBoolean] = js.undefined,
+    IncludeRefund: js.UndefOr[NullableBoolean] = js.undefined,
+    IncludeSubscription: js.UndefOr[NullableBoolean] = js.undefined,
+    IncludeSupport: js.UndefOr[NullableBoolean] = js.undefined,
+    IncludeTax: js.UndefOr[NullableBoolean] = js.undefined,
+    IncludeUpfront: js.UndefOr[NullableBoolean] = js.undefined,
+    UseAmortized: js.UndefOr[NullableBoolean] = js.undefined,
+    UseBlended: js.UndefOr[NullableBoolean] = js.undefined
   ): CostTypes = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(IncludeCredit)) __obj.updateDynamic("IncludeCredit")(IncludeCredit.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeDiscount)) __obj.updateDynamic("IncludeDiscount")(IncludeDiscount.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeOtherSubscription)) __obj.updateDynamic("IncludeOtherSubscription")(IncludeOtherSubscription.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeRecurring)) __obj.updateDynamic("IncludeRecurring")(IncludeRecurring.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeRefund)) __obj.updateDynamic("IncludeRefund")(IncludeRefund.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeSubscription)) __obj.updateDynamic("IncludeSubscription")(IncludeSubscription.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeSupport)) __obj.updateDynamic("IncludeSupport")(IncludeSupport.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeTax)) __obj.updateDynamic("IncludeTax")(IncludeTax.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeUpfront)) __obj.updateDynamic("IncludeUpfront")(IncludeUpfront.asInstanceOf[js.Any])
-    if (!js.isUndefined(UseAmortized)) __obj.updateDynamic("UseAmortized")(UseAmortized.asInstanceOf[js.Any])
-    if (!js.isUndefined(UseBlended)) __obj.updateDynamic("UseBlended")(UseBlended.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeCredit)) __obj.updateDynamic("IncludeCredit")(IncludeCredit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeDiscount)) __obj.updateDynamic("IncludeDiscount")(IncludeDiscount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeOtherSubscription)) __obj.updateDynamic("IncludeOtherSubscription")(IncludeOtherSubscription.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeRecurring)) __obj.updateDynamic("IncludeRecurring")(IncludeRecurring.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeRefund)) __obj.updateDynamic("IncludeRefund")(IncludeRefund.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeSubscription)) __obj.updateDynamic("IncludeSubscription")(IncludeSubscription.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeSupport)) __obj.updateDynamic("IncludeSupport")(IncludeSupport.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeTax)) __obj.updateDynamic("IncludeTax")(IncludeTax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeUpfront)) __obj.updateDynamic("IncludeUpfront")(IncludeUpfront.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(UseAmortized)) __obj.updateDynamic("UseAmortized")(UseAmortized.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(UseBlended)) __obj.updateDynamic("UseBlended")(UseBlended.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CostTypes]
   }
 }

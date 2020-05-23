@@ -45,10 +45,7 @@ object StateInfo {
   @scala.inline
   def apply(
     key: String,
-    StringDictionary: /**
-    * Gets the additional state attributes
-    */
-  /* extras */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     defaultTypes: js.Any = null,
     defaults: js.Any = null,
     route: String | js.Array[String] = null,
@@ -63,7 +60,7 @@ object StateInfo {
     if (route != null) __obj.updateDynamic("route")(route.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (trackCrumbTrail != null) __obj.updateDynamic("trackCrumbTrail")(trackCrumbTrail.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackTypes)) __obj.updateDynamic("trackTypes")(trackTypes.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackTypes)) __obj.updateDynamic("trackTypes")(trackTypes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateInfo]
   }
 }

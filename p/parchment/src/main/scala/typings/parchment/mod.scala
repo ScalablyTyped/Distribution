@@ -1,5 +1,14 @@
 package typings.parchment
 
+import typings.parchment.anon.Class
+import typings.parchment.anon.TypeofBlockBlot
+import typings.parchment.anon.TypeofContainerBlot
+import typings.parchment.anon.TypeofEmbedBlot
+import typings.parchment.anon.TypeofFormatBlot
+import typings.parchment.anon.TypeofInlineBlot
+import typings.parchment.anon.TypeofLeafBlot
+import typings.parchment.anon.TypeofScrollBlot
+import typings.parchment.anon.TypeofTextBlot
 import typings.parchment.blotMod.Blot
 import typings.parchment.registryMod.BlotConstructor
 import typings.parchment.registryMod.Scope
@@ -13,7 +22,7 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   @js.native
   object default extends js.Object {
-    var Attributor: AnonClass = js.native
+    var Attributor: Class = js.native
     var Block: TypeofBlockBlot = js.native
     var Container: TypeofContainerBlot = js.native
     var Embed: TypeofEmbedBlot = js.native

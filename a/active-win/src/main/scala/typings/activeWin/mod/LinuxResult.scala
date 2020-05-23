@@ -1,7 +1,7 @@
 package typings.activeWin.mod
 
-import typings.activeWin.AnonHeight
 import typings.activeWin.activeWinStrings.linux
+import typings.activeWin.anon.Height
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,14 +14,7 @@ trait LinuxResult
 
 object LinuxResult {
   @scala.inline
-  def apply(
-    bounds: AnonHeight,
-    id: Double,
-    memoryUsage: Double,
-    owner: BaseOwner,
-    platform: linux,
-    title: String
-  ): LinuxResult = {
+  def apply(bounds: Height, id: Double, memoryUsage: Double, owner: BaseOwner, platform: linux, title: String): LinuxResult = {
     val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], memoryUsage = memoryUsage.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinuxResult]
   }

@@ -21,11 +21,11 @@ object ListResponse {
     next_id: String,
     payments: js.Array[Payment_],
     create_time: String = null,
-    total_count: Int | Double = null
+    total_count: js.UndefOr[Double] = js.undefined
   ): ListResponse = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], httpStatusCode = httpStatusCode.asInstanceOf[js.Any], next_id = next_id.asInstanceOf[js.Any], payments = payments.asInstanceOf[js.Any])
     if (create_time != null) __obj.updateDynamic("create_time")(create_time.asInstanceOf[js.Any])
-    if (total_count != null) __obj.updateDynamic("total_count")(total_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(total_count)) __obj.updateDynamic("total_count")(total_count.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListResponse]
   }
 }

@@ -1,9 +1,8 @@
 package typings.reactWindow.mod
 
 import typings.react.mod.Component
-import typings.reactWindow.AnonAlign
-import typings.reactWindow.AnonRowIndex
-import typings.reactWindow.AnonScrollLeft
+import typings.reactWindow.anon.RowIndex
+import typings.reactWindow.anon.ScrollLeft
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +31,7 @@ class VariableSizeGrid ()
     * If you would like to delay this re-render until e.g. a state update has completed in the parent component,
     * specify a value of false for the optional shouldForceUpdate parameter.
     */
-  def resetAfterIndices(params: AnonRowIndex): Unit = js.native
+  def resetAfterIndices(params: RowIndex): Unit = js.native
   /**
     * VariableSizeGrid caches offsets and measurements for each row index for performance purposes.
     * This method clears that cached data for all rows after (and including) the specified index.
@@ -47,7 +46,7 @@ class VariableSizeGrid ()
   /**
     * Scroll to the specified offsets.
     */
-  def scrollTo(params: AnonScrollLeft): Unit = js.native
+  def scrollTo(params: ScrollLeft): Unit = js.native
   /**
     * Scroll to the specified item.
     *
@@ -65,6 +64,6 @@ class VariableSizeGrid ()
     *
     * If either `columnIndex` or `rowIndex` are omitted, `scrollLeft` or `scrollTop` will be unchanged (respectively).
     */
-  def scrollToItem(params: AnonAlign): Unit = js.native
+  def scrollToItem(params: typings.reactWindow.anon.Align): Unit = js.native
 }
 

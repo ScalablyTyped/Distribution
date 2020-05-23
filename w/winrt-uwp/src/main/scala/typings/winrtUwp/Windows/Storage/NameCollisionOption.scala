@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Storage
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object NameCollisionOption extends js.Object {
   /** Replace the existing item if the file or folder already exists. */
   @js.native
   sealed trait replaceExisting extends NameCollisionOption
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NameCollisionOption with Double] = js.native
-  /* 2 */ @js.native
-  object failIfExists extends TopLevel[failIfExists with Double]
-  
-  /* 0 */ @js.native
-  object generateUniqueName extends TopLevel[generateUniqueName with Double]
-  
-  /* 1 */ @js.native
-  object replaceExisting extends TopLevel[replaceExisting with Double]
   
 }
 

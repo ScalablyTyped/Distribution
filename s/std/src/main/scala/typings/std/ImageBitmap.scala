@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +22,11 @@ trait ImageBitmap
   def close(): Unit
 }
 
-@JSGlobal("ImageBitmap")
-@js.native
-object ImageBitmap extends Instantiable0[ImageBitmap]
+object ImageBitmap {
+  @scala.inline
+  def apply(close: () => Unit, height: Double, width: Double): ImageBitmap = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ImageBitmap]
+  }
+}
 

@@ -22,9 +22,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
-@JSGlobal("Excel.WorksheetCollection")
 @js.native
-class WorksheetCollection () extends ClientObject {
+trait WorksheetCollection extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_WorksheetCollection: RequestContext = js.native
@@ -116,10 +115,9 @@ class WorksheetCollection () extends ClientObject {
     *
     * Occurs when the hidden state of one or more rows has changed on a specific worksheet.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.11]
     *
     * @eventproperty
-    * @beta
     */
   val onRowHiddenChanged: EventHandlers[WorksheetRowHiddenChangedEventArgs] = js.native
   /**
@@ -162,7 +160,6 @@ class WorksheetCollection () extends ClientObject {
   def add(name: String): Worksheet = js.native
   /**
     * Inserts the specified worksheets of a workbook into the current workbook.
-    
     **Note**: This API is currently only supported for Office on Windows and Mac.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]

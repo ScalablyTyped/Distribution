@@ -17,13 +17,13 @@ object RatingChangeEvent {
     isDefaultPrevented: () => Boolean,
     preventDefault: js.Function,
     sender: Rating,
-    newValue: Int | Double = null,
-    oldValue: Int | Double = null,
+    newValue: js.UndefOr[Double] = js.undefined,
+    oldValue: js.UndefOr[Double] = js.undefined,
     target: Element = null
   ): RatingChangeEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    if (newValue != null) __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
-    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(newValue)) __obj.updateDynamic("newValue")(newValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(oldValue)) __obj.updateDynamic("oldValue")(oldValue.get.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[RatingChangeEvent]
   }

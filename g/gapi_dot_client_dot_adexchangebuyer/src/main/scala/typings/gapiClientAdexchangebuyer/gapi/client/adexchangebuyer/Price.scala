@@ -18,15 +18,15 @@ trait Price extends js.Object {
 object Price {
   @scala.inline
   def apply(
-    amountMicros: Int | Double = null,
+    amountMicros: js.UndefOr[Double] = js.undefined,
     currencyCode: String = null,
-    expectedCpmMicros: Int | Double = null,
+    expectedCpmMicros: js.UndefOr[Double] = js.undefined,
     pricingType: String = null
   ): Price = {
     val __obj = js.Dynamic.literal()
-    if (amountMicros != null) __obj.updateDynamic("amountMicros")(amountMicros.asInstanceOf[js.Any])
+    if (!js.isUndefined(amountMicros)) __obj.updateDynamic("amountMicros")(amountMicros.get.asInstanceOf[js.Any])
     if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode.asInstanceOf[js.Any])
-    if (expectedCpmMicros != null) __obj.updateDynamic("expectedCpmMicros")(expectedCpmMicros.asInstanceOf[js.Any])
+    if (!js.isUndefined(expectedCpmMicros)) __obj.updateDynamic("expectedCpmMicros")(expectedCpmMicros.get.asInstanceOf[js.Any])
     if (pricingType != null) __obj.updateDynamic("pricingType")(pricingType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Price]
   }

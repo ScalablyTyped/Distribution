@@ -1,7 +1,7 @@
 package typings.babylonjs.indexMod
 
 import typings.babylonjs.typesMod.Nullable
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -69,8 +69,8 @@ object ActionEvent extends js.Object {
     * @returns the new ActionEvent
     */
   def CreateNew(source: typings.babylonjs.abstractMeshMod.AbstractMesh): typings.babylonjs.actionEventMod.ActionEvent = js.native
-  def CreateNew(source: typings.babylonjs.abstractMeshMod.AbstractMesh, evt: Event_): typings.babylonjs.actionEventMod.ActionEvent = js.native
-  def CreateNew(source: typings.babylonjs.abstractMeshMod.AbstractMesh, evt: Event_, additionalData: js.Any): typings.babylonjs.actionEventMod.ActionEvent = js.native
+  def CreateNew(source: typings.babylonjs.abstractMeshMod.AbstractMesh, evt: Event): typings.babylonjs.actionEventMod.ActionEvent = js.native
+  def CreateNew(source: typings.babylonjs.abstractMeshMod.AbstractMesh, evt: Event, additionalData: js.Any): typings.babylonjs.actionEventMod.ActionEvent = js.native
   /**
     * Helper function to auto-create an ActionEvent from a primitive
     * @param prim defines the target primitive
@@ -80,11 +80,11 @@ object ActionEvent extends js.Object {
     * @returns the new ActionEvent
     */
   def CreateNewFromPrimitive(prim: js.Any, pointerPos: typings.babylonjs.mathVectorMod.Vector2): typings.babylonjs.actionEventMod.ActionEvent = js.native
-  def CreateNewFromPrimitive(prim: js.Any, pointerPos: typings.babylonjs.mathVectorMod.Vector2, evt: Event_): typings.babylonjs.actionEventMod.ActionEvent = js.native
+  def CreateNewFromPrimitive(prim: js.Any, pointerPos: typings.babylonjs.mathVectorMod.Vector2, evt: Event): typings.babylonjs.actionEventMod.ActionEvent = js.native
   def CreateNewFromPrimitive(
     prim: js.Any,
     pointerPos: typings.babylonjs.mathVectorMod.Vector2,
-    evt: Event_,
+    evt: Event,
     additionalData: js.Any
   ): typings.babylonjs.actionEventMod.ActionEvent = js.native
   /**
@@ -93,7 +93,7 @@ object ActionEvent extends js.Object {
     * @param evt The original (browser) event
     * @returns the new ActionEvent
     */
-  def CreateNewFromScene(scene: typings.babylonjs.sceneMod.Scene, evt: Event_): typings.babylonjs.actionEventMod.ActionEvent = js.native
+  def CreateNewFromScene(scene: typings.babylonjs.sceneMod.Scene, evt: Event): typings.babylonjs.actionEventMod.ActionEvent = js.native
   /**
     * Helper function to auto-create an ActionEvent from a source sprite
     * @param source The source sprite that triggered the event
@@ -103,11 +103,11 @@ object ActionEvent extends js.Object {
     * @returns the new ActionEvent
     */
   def CreateNewFromSprite(source: typings.babylonjs.spriteMod.Sprite, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.actionEventMod.ActionEvent = js.native
-  def CreateNewFromSprite(source: typings.babylonjs.spriteMod.Sprite, scene: typings.babylonjs.sceneMod.Scene, evt: Event_): typings.babylonjs.actionEventMod.ActionEvent = js.native
+  def CreateNewFromSprite(source: typings.babylonjs.spriteMod.Sprite, scene: typings.babylonjs.sceneMod.Scene, evt: Event): typings.babylonjs.actionEventMod.ActionEvent = js.native
   def CreateNewFromSprite(
     source: typings.babylonjs.spriteMod.Sprite,
     scene: typings.babylonjs.sceneMod.Scene,
-    evt: Event_,
+    evt: Event,
     additionalData: js.Any
   ): typings.babylonjs.actionEventMod.ActionEvent = js.native
 }

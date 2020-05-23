@@ -1,6 +1,6 @@
 package typings.antd.generateCalendarMod
 
-import typings.antd.AnonOnChange
+import typings.antd.anon.OnChange
 import typings.antd.generatePickerMod.PickerLocale
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
@@ -38,7 +38,7 @@ object CalendarProps {
     defaultValue: DateType = null,
     disabledDate: /* date */ DateType => Boolean = null,
     fullscreen: js.UndefOr[Boolean] = js.undefined,
-    headerRender: /* config */ AnonOnChange[DateType] => ReactNode = null,
+    headerRender: /* config */ OnChange[DateType] => ReactNode = null,
     locale: PickerLocale = null,
     mode: CalendarMode = null,
     monthCellRender: /* date */ DateType => ReactNode = null,
@@ -57,7 +57,7 @@ object CalendarProps {
     if (dateFullCellRender != null) __obj.updateDynamic("dateFullCellRender")(js.Any.fromFunction1(dateFullCellRender))
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (disabledDate != null) __obj.updateDynamic("disabledDate")(js.Any.fromFunction1(disabledDate))
-    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.get.asInstanceOf[js.Any])
     if (headerRender != null) __obj.updateDynamic("headerRender")(js.Any.fromFunction1(headerRender))
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 
 # Scala.js typings for app-builder-bin
 
-Typings are for version 3.5.6
+Typings are for version 3.5.9
 
 ## Library description:
 app-builder precompiled binaries

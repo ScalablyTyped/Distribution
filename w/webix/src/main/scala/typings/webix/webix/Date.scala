@@ -1,6 +1,5 @@
 package typings.webix.webix
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,8 +24,4 @@ trait Date extends js.Object {
   def weekStart(date: js.Any): js.Any = js.native
   def yearStart(date: js.Any): js.Any = js.native
 }
-
-@JSGlobal("webix.Date")
-@js.native
-object Date extends TopLevel[Date]
 

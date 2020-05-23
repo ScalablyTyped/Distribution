@@ -57,7 +57,7 @@ object SignOptions {
     if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
     if (jwtid != null) __obj.updateDynamic("jwtid")(jwtid.asInstanceOf[js.Any])
     if (keyid != null) __obj.updateDynamic("keyid")(keyid.asInstanceOf[js.Any])
-    if (!js.isUndefined(noTimestamp)) __obj.updateDynamic("noTimestamp")(noTimestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(noTimestamp)) __obj.updateDynamic("noTimestamp")(noTimestamp.get.asInstanceOf[js.Any])
     if (notBefore != null) __obj.updateDynamic("notBefore")(notBefore.asInstanceOf[js.Any])
     if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignOptions]

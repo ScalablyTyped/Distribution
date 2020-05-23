@@ -11,9 +11,9 @@ trait IUInt32Value extends js.Object {
 
 object IUInt32Value {
   @scala.inline
-  def apply(value: Int | Double = null): IUInt32Value = {
+  def apply(value: js.UndefOr[Double] = js.undefined): IUInt32Value = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUInt32Value]
   }
 }

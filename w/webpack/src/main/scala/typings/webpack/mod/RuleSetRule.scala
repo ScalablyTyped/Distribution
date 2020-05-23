@@ -132,7 +132,7 @@ object RuleSetRule {
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     if (resourceQuery != null) __obj.updateDynamic("resourceQuery")(resourceQuery.asInstanceOf[js.Any])
     if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
-    if (!js.isUndefined(sideEffects)) __obj.updateDynamic("sideEffects")(sideEffects.asInstanceOf[js.Any])
+    if (!js.isUndefined(sideEffects)) __obj.updateDynamic("sideEffects")(sideEffects.get.asInstanceOf[js.Any])
     if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (use != null) __obj.updateDynamic("use")(use.asInstanceOf[js.Any])

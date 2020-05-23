@@ -1,5 +1,6 @@
 package typings.sipJs
 
+import typings.sipJs.anon.Cseq
 import typings.sipJs.dialogStateMod.DialogState
 import typings.sipJs.messagesMod.IncomingRequestMessage
 import typings.sipJs.messagesMod.IncomingResponseMessage
@@ -85,9 +86,16 @@ object dialogMod extends js.Object {
       * @param method - Outgoing request method.
       */
     def createOutgoingRequestMessage(method: String): OutgoingRequestMessage = js.native
-    def createOutgoingRequestMessage(method: String, options: AnonCseq): OutgoingRequestMessage = js.native
+    def createOutgoingRequestMessage(method: String, options: Cseq): OutgoingRequestMessage = js.native
     /** Destructor. */
     def dispose(): Unit = js.native
+    /**
+      * Increment the local sequence number by one.
+      * It feels like this should be protected, but the current authentication handling currently
+      * needs this to keep the dialog in sync when "auto re-sends" request messages.
+      * @internal
+      */
+    def incrementLocalSequenceNumber(): Unit = js.native
     /**
       * Requests sent within a dialog, as any other requests, are atomic.  If
       * a particular request is accepted by the UAS, all the state changes

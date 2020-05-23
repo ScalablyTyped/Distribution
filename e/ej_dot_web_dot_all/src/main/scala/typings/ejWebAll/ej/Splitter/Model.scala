@@ -78,7 +78,7 @@ object Model {
   @scala.inline
   def apply(
     allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
-    animationSpeed: Int | Double = null,
+    animationSpeed: js.UndefOr[Double] = js.undefined,
     beforeExpandCollapse: /* e */ BeforeExpandCollapseEventArgs => Unit = null,
     clickOnExpander: /* e */ ClickOnExpanderEventArgs => Unit = null,
     create: /* e */ CreateEventArgs => Unit = null,
@@ -97,20 +97,20 @@ object Model {
     width: String = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation.asInstanceOf[js.Any])
-    if (animationSpeed != null) __obj.updateDynamic("animationSpeed")(animationSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationSpeed)) __obj.updateDynamic("animationSpeed")(animationSpeed.get.asInstanceOf[js.Any])
     if (beforeExpandCollapse != null) __obj.updateDynamic("beforeExpandCollapse")(js.Any.fromFunction1(beforeExpandCollapse))
     if (clickOnExpander != null) __obj.updateDynamic("clickOnExpander")(js.Any.fromFunction1(clickOnExpander))
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
-    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.get.asInstanceOf[js.Any])
     if (expandCollapse != null) __obj.updateDynamic("expandCollapse")(js.Any.fromFunction1(expandCollapse))
     if (expanderTemplate != null) __obj.updateDynamic("expanderTemplate")(expanderTemplate.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.get.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (resize != null) __obj.updateDynamic("resize")(js.Any.fromFunction1(resize))

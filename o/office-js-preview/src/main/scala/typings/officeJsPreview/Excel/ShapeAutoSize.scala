@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,20 +43,6 @@ object ShapeAutoSize extends js.Object {
     */
   @js.native
   sealed trait autoSizeTextToFitShape extends ShapeAutoSize
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ShapeAutoSize with String] = js.native
-  /* "AutoSizeMixed" */ @js.native
-  object autoSizeMixed extends TopLevel[autoSizeMixed with String]
-  
-  /* "AutoSizeNone" */ @js.native
-  object autoSizeNone extends TopLevel[autoSizeNone with String]
-  
-  /* "AutoSizeShapeToFitText" */ @js.native
-  object autoSizeShapeToFitText extends TopLevel[autoSizeShapeToFitText with String]
-  
-  /* "AutoSizeTextToFitShape" */ @js.native
-  object autoSizeTextToFitShape extends TopLevel[autoSizeTextToFitShape with String]
   
 }
 

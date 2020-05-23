@@ -13,9 +13,9 @@ trait ChunkOptions extends js.Object {
 
 object ChunkOptions {
   @scala.inline
-  def apply(batchSize: Int | Double = null): ChunkOptions = {
+  def apply(batchSize: js.UndefOr[Double] = js.undefined): ChunkOptions = {
     val __obj = js.Dynamic.literal()
-    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChunkOptions]
   }
 }

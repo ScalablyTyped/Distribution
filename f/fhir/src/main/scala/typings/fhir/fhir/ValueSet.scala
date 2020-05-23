@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A set of codes drawn from one or more code systems
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait ValueSet extends DomainResource {
   /**
     * Contains extended information for property 'copyright'.
@@ -213,12 +213,12 @@ object ValueSet {
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (expansion != null) __obj.updateDynamic("expansion")(expansion.asInstanceOf[js.Any])
-    if (!js.isUndefined(experimental)) __obj.updateDynamic("experimental")(experimental.asInstanceOf[js.Any])
-    if (!js.isUndefined(extensible)) __obj.updateDynamic("extensible")(extensible.asInstanceOf[js.Any])
+    if (!js.isUndefined(experimental)) __obj.updateDynamic("experimental")(experimental.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(extensible)) __obj.updateDynamic("extensible")(extensible.get.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(immutable)) __obj.updateDynamic("immutable")(immutable.asInstanceOf[js.Any])
+    if (!js.isUndefined(immutable)) __obj.updateDynamic("immutable")(immutable.get.asInstanceOf[js.Any])
     if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
     if (jurisdiction != null) __obj.updateDynamic("jurisdiction")(jurisdiction.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])

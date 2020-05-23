@@ -17,34 +17,55 @@ object momentStrings {
   sealed trait D
     extends typings.moment.mod.unitOfTime.date
        with All
+       with typings.moment.momentMod.unitOfTime.All
        with MomentConstructor
+       with typings.moment.momentMod.unitOfTime.MomentConstructor
+       with typings.moment.momentMod.unitOfTime.date
   
   @js.native
-  sealed trait DDD extends All
+  sealed trait DDD
+    extends All
+       with typings.moment.momentMod.unitOfTime.All
   
   @js.native
-  sealed trait E extends All
+  sealed trait E
+    extends All
+       with typings.moment.momentMod.unitOfTime.All
   
   @js.native
-  sealed trait GG extends All
+  sealed trait GG
+    extends All
+       with typings.moment.momentMod.unitOfTime.All
   
   @js.native
-  sealed trait L extends LongDateFormatKey
+  sealed trait L
+    extends LongDateFormatKey
+       with typings.moment.momentMod.LongDateFormatKey
   
   @js.native
-  sealed trait LL extends LongDateFormatKey
+  sealed trait LL
+    extends LongDateFormatKey
+       with typings.moment.momentMod.LongDateFormatKey
   
   @js.native
-  sealed trait LLL extends LongDateFormatKey
+  sealed trait LLL
+    extends LongDateFormatKey
+       with typings.moment.momentMod.LongDateFormatKey
   
   @js.native
-  sealed trait LLLL extends LongDateFormatKey
+  sealed trait LLLL
+    extends LongDateFormatKey
+       with typings.moment.momentMod.LongDateFormatKey
   
   @js.native
-  sealed trait LT extends LongDateFormatKey
+  sealed trait LT
+    extends LongDateFormatKey
+       with typings.moment.momentMod.LongDateFormatKey
   
   @js.native
-  sealed trait LTS extends LongDateFormatKey
+  sealed trait LTS
+    extends LongDateFormatKey
+       with typings.moment.momentMod.LongDateFormatKey
   
   @js.native
   sealed trait LeftparenthesisRightparenthesis extends js.Object
@@ -56,25 +77,40 @@ object momentStrings {
   sealed trait M
     extends Base
        with All
+       with typings.moment.momentMod.unitOfTime.All
+       with typings.moment.momentMod.unitOfTime.Base
        with Diff
+       with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.DurationConstructor
        with MomentConstructor
+       with typings.moment.momentMod.unitOfTime.MomentConstructor
        with RelativeTimeKey
+       with typings.moment.momentMod.RelativeTimeKey
   
   @js.native
-  sealed trait MM extends RelativeTimeKey
+  sealed trait MM
+    extends RelativeTimeKey
+       with typings.moment.momentMod.RelativeTimeKey
   
   @js.native
   sealed trait Q
     extends typings.moment.mod.unitOfTime.quarter
        with All
+       with typings.moment.momentMod.unitOfTime.All
        with Diff
+       with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.DurationConstructor
+       with typings.moment.momentMod.unitOfTime.quarter
   
   @js.native
   sealed trait W
     extends typings.moment.mod.unitOfTime.isoWeek
        with All
+       with typings.moment.momentMod.unitOfTime.All
+       with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.isoWeek
   
   @js.native
   sealed trait `[Rightparenthesis` extends js.Object
@@ -86,313 +122,512 @@ object momentStrings {
   sealed trait d_
     extends Base
        with All
+       with typings.moment.momentMod.unitOfTime.All
+       with typings.moment.momentMod.unitOfTime.Base
        with Diff
+       with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.DurationConstructor
        with MomentConstructor
+       with typings.moment.momentMod.unitOfTime.MomentConstructor
        with RelativeTimeKey
+       with typings.moment.momentMod.RelativeTimeKey
   
   @js.native
   sealed trait date
     extends typings.moment.mod.unitOfTime.date
        with All
+       with typings.moment.momentMod.unitOfTime.All
        with MomentConstructor
+       with typings.moment.momentMod.unitOfTime.MomentConstructor
+       with typings.moment.momentMod.unitOfTime.date
   
   @js.native
   sealed trait dates
     extends typings.moment.mod.unitOfTime.date
        with All
+       with typings.moment.momentMod.unitOfTime.All
        with MomentConstructor
+       with typings.moment.momentMod.unitOfTime.MomentConstructor
+       with typings.moment.momentMod.unitOfTime.date
   
   @js.native
   sealed trait day
     extends Base
        with All
+       with typings.moment.momentMod.unitOfTime.All
+       with typings.moment.momentMod.unitOfTime.Base
        with Diff
+       with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.DurationConstructor
        with MomentConstructor
+       with typings.moment.momentMod.unitOfTime.MomentConstructor
   
   @js.native
-  sealed trait dayOfYear extends All
+  sealed trait dayOfYear
+    extends All
+       with typings.moment.momentMod.unitOfTime.All
   
   @js.native
-  sealed trait dayOfYears extends All
+  sealed trait dayOfYears
+    extends All
+       with typings.moment.momentMod.unitOfTime.All
   
   @js.native
   sealed trait days
     extends Base
        with All
+       with typings.moment.momentMod.unitOfTime.All
+       with typings.moment.momentMod.unitOfTime.Base
        with Diff
+       with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.DurationConstructor
        with MomentConstructor
+       with typings.moment.momentMod.unitOfTime.MomentConstructor
   
   @js.native
-  sealed trait dd extends RelativeTimeKey
+  sealed trait dd
+    extends RelativeTimeKey
+       with typings.moment.momentMod.RelativeTimeKey
   
   @js.native
-  sealed trait e_ extends All
+  sealed trait e_
+    extends All
+       with typings.moment.momentMod.unitOfTime.All
   
   @js.native
-  sealed trait gg_ extends All
+  sealed trait gg_
+    extends All
+       with typings.moment.momentMod.unitOfTime.All
   
   @js.native
   sealed trait h
     extends Base
        with All
+       with typings.moment.momentMod.unitOfTime.All
+       with typings.moment.momentMod.unitOfTime.Base
        with Diff
+       with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.DurationConstructor
        with MomentConstructor
+       with typings.moment.momentMod.unitOfTime.MomentConstructor
        with RelativeTimeKey
+       with typings.moment.momentMod.RelativeTimeKey
   
   @js.native
-  sealed trait hh extends RelativeTimeKey
+  sealed trait hh
+    extends RelativeTimeKey
+       with typings.moment.momentMod.RelativeTimeKey
   
   @js.native
   sealed trait hour
     extends Base
        with All
+       with typings.moment.momentMod.unitOfTime.All
+       with typings.moment.momentMod.unitOfTime.Base
        with Diff
+       with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.DurationConstructor
        with MomentConstructor
+       with typings.moment.momentMod.unitOfTime.MomentConstructor
   
   @js.native
   sealed trait hours
     extends Base
        with All
+       with typings.moment.momentMod.unitOfTime.All
+       with typings.moment.momentMod.unitOfTime.Base
        with Diff
+       with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.DurationConstructor
        with MomentConstructor
+       with typings.moment.momentMod.unitOfTime.MomentConstructor
   
   @js.native
   sealed trait isoWeek
     extends typings.moment.mod.unitOfTime.isoWeek
        with All
+       with typings.moment.momentMod.unitOfTime.All
+       with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.isoWeek
   
   @js.native
-  sealed trait isoWeekYear extends All
+  sealed trait isoWeekYear
+    extends All
+       with typings.moment.momentMod.unitOfTime.All
   
   @js.native
-  sealed trait isoWeekYears extends All
+  sealed trait isoWeekYears
+    extends All
+       with typings.moment.momentMod.unitOfTime.All
   
   @js.native
-  sealed trait isoWeekday extends All
+  sealed trait isoWeekday
+    extends All
+       with typings.moment.momentMod.unitOfTime.All
   
   @js.native
-  sealed trait isoWeekdays extends All
+  sealed trait isoWeekdays
+    extends All
+       with typings.moment.momentMod.unitOfTime.All
   
   @js.native
   sealed trait isoWeeks
     extends typings.moment.mod.unitOfTime.isoWeek
        with All
+       with typings.moment.momentMod.unitOfTime.All
+       with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.isoWeek
   
   @js.native
-  sealed trait l_ extends LongDateFormatKey
+  sealed trait l_
+    extends LongDateFormatKey
+       with typings.moment.momentMod.LongDateFormatKey
   
   @js.native
-  sealed trait lastDay extends _CalendarKey
+  sealed trait lastDay
+    extends _CalendarKey
+       with typings.moment.momentMod._CalendarKey
   
   @js.native
-  sealed trait lastWeek extends _CalendarKey
+  sealed trait lastWeek
+    extends _CalendarKey
+       with typings.moment.momentMod._CalendarKey
   
   @js.native
-  sealed trait ll_ extends LongDateFormatKey
+  sealed trait ll_
+    extends LongDateFormatKey
+       with typings.moment.momentMod.LongDateFormatKey
   
   @js.native
-  sealed trait lll_ extends LongDateFormatKey
+  sealed trait lll_
+    extends LongDateFormatKey
+       with typings.moment.momentMod.LongDateFormatKey
   
   @js.native
-  sealed trait llll_ extends LongDateFormatKey
+  sealed trait llll_
+    extends LongDateFormatKey
+       with typings.moment.momentMod.LongDateFormatKey
   
   @js.native
-  sealed trait lt_ extends LongDateFormatKey
+  sealed trait lt_
+    extends LongDateFormatKey
+       with typings.moment.momentMod.LongDateFormatKey
   
   @js.native
-  sealed trait lts_ extends LongDateFormatKey
+  sealed trait lts_
+    extends LongDateFormatKey
+       with typings.moment.momentMod.LongDateFormatKey
   
   @js.native
   sealed trait m_
     extends Base
        with All
+       with typings.moment.momentMod.unitOfTime.All
+       with typings.moment.momentMod.unitOfTime.Base
        with Diff
+       with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.DurationConstructor
        with MomentConstructor
+       with typings.moment.momentMod.unitOfTime.MomentConstructor
        with RelativeTimeKey
+       with typings.moment.momentMod.RelativeTimeKey
   
   @js.native
   sealed trait millisecond
     extends Base
        with All
+       with typings.moment.momentMod.unitOfTime.All
+       with typings.moment.momentMod.unitOfTime.Base
        with Diff
+       with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.DurationConstructor
        with MomentConstructor
+       with typings.moment.momentMod.unitOfTime.MomentConstructor
   
   @js.native
   sealed trait milliseconds
     extends Base
        with All
+       with typings.moment.momentMod.unitOfTime.All
+       with typings.moment.momentMod.unitOfTime.Base
        with Diff
+       with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.DurationConstructor
        with MomentConstructor
+       with typings.moment.momentMod.unitOfTime.MomentConstructor
   
   @js.native
   sealed trait minute
     extends Base
        with All
+       with typings.moment.momentMod.unitOfTime.All
+       with typings.moment.momentMod.unitOfTime.Base
        with Diff
+       with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.DurationConstructor
        with MomentConstructor
+       with typings.moment.momentMod.unitOfTime.MomentConstructor
   
   @js.native
   sealed trait minutes
     extends Base
        with All
+       with typings.moment.momentMod.unitOfTime.All
+       with typings.moment.momentMod.unitOfTime.Base
        with Diff
+       with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.DurationConstructor
        with MomentConstructor
+       with typings.moment.momentMod.unitOfTime.MomentConstructor
   
   @js.native
-  sealed trait mm_ extends RelativeTimeKey
+  sealed trait mm_
+    extends RelativeTimeKey
+       with typings.moment.momentMod.RelativeTimeKey
   
   @js.native
   sealed trait month
     extends Base
        with All
+       with typings.moment.momentMod.unitOfTime.All
+       with typings.moment.momentMod.unitOfTime.Base
        with Diff
+       with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.DurationConstructor
        with MomentConstructor
+       with typings.moment.momentMod.unitOfTime.MomentConstructor
   
   @js.native
   sealed trait months
     extends Base
        with All
+       with typings.moment.momentMod.unitOfTime.All
+       with typings.moment.momentMod.unitOfTime.Base
        with Diff
+       with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.DurationConstructor
        with MomentConstructor
+       with typings.moment.momentMod.unitOfTime.MomentConstructor
   
   @js.native
   sealed trait ms
     extends Base
        with All
+       with typings.moment.momentMod.unitOfTime.All
+       with typings.moment.momentMod.unitOfTime.Base
        with Diff
+       with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.DurationConstructor
        with MomentConstructor
+       with typings.moment.momentMod.unitOfTime.MomentConstructor
   
   @js.native
-  sealed trait nextDay extends _CalendarKey
+  sealed trait nextDay
+    extends _CalendarKey
+       with typings.moment.momentMod._CalendarKey
   
   @js.native
-  sealed trait nextWeek extends _CalendarKey
+  sealed trait nextWeek
+    extends _CalendarKey
+       with typings.moment.momentMod._CalendarKey
   
   @js.native
   sealed trait quarter
     extends typings.moment.mod.unitOfTime.quarter
        with All
+       with typings.moment.momentMod.unitOfTime.All
        with Diff
+       with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.DurationConstructor
+       with typings.moment.momentMod.unitOfTime.quarter
   
   @js.native
   sealed trait quarters
     extends typings.moment.mod.unitOfTime.quarter
        with All
+       with typings.moment.momentMod.unitOfTime.All
        with Diff
+       with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.DurationConstructor
+       with typings.moment.momentMod.unitOfTime.quarter
   
   @js.native
   sealed trait s
     extends Base
        with All
+       with typings.moment.momentMod.unitOfTime.All
+       with typings.moment.momentMod.unitOfTime.Base
        with Diff
+       with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.DurationConstructor
        with MomentConstructor
+       with typings.moment.momentMod.unitOfTime.MomentConstructor
        with RelativeTimeKey
+       with typings.moment.momentMod.RelativeTimeKey
   
   @js.native
-  sealed trait sameDay extends _CalendarKey
+  sealed trait sameDay
+    extends _CalendarKey
+       with typings.moment.momentMod._CalendarKey
   
   @js.native
-  sealed trait sameElse extends _CalendarKey
+  sealed trait sameElse
+    extends _CalendarKey
+       with typings.moment.momentMod._CalendarKey
   
   @js.native
   sealed trait second
     extends Base
        with All
+       with typings.moment.momentMod.unitOfTime.All
+       with typings.moment.momentMod.unitOfTime.Base
        with Diff
+       with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.DurationConstructor
        with MomentConstructor
+       with typings.moment.momentMod.unitOfTime.MomentConstructor
   
   @js.native
   sealed trait seconds
     extends Base
        with All
+       with typings.moment.momentMod.unitOfTime.All
+       with typings.moment.momentMod.unitOfTime.Base
        with Diff
+       with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.DurationConstructor
        with MomentConstructor
+       with typings.moment.momentMod.unitOfTime.MomentConstructor
   
   @js.native
-  sealed trait ss extends RelativeTimeKey
+  sealed trait ss
+    extends RelativeTimeKey
+       with typings.moment.momentMod.RelativeTimeKey
   
   @js.native
   sealed trait w_
     extends Base
        with All
+       with typings.moment.momentMod.unitOfTime.All
+       with typings.moment.momentMod.unitOfTime.Base
        with Diff
+       with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.DurationConstructor
        with MomentConstructor
+       with typings.moment.momentMod.unitOfTime.MomentConstructor
+       with RelativeTimeKey
   
   @js.native
   sealed trait week
     extends Base
        with All
+       with typings.moment.momentMod.unitOfTime.All
+       with typings.moment.momentMod.unitOfTime.Base
        with Diff
+       with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.DurationConstructor
        with MomentConstructor
+       with typings.moment.momentMod.unitOfTime.MomentConstructor
   
   @js.native
-  sealed trait weekYear extends All
+  sealed trait weekYear
+    extends All
+       with typings.moment.momentMod.unitOfTime.All
   
   @js.native
-  sealed trait weekYears extends All
+  sealed trait weekYears
+    extends All
+       with typings.moment.momentMod.unitOfTime.All
   
   @js.native
-  sealed trait weekday extends All
+  sealed trait weekday
+    extends All
+       with typings.moment.momentMod.unitOfTime.All
   
   @js.native
-  sealed trait weekdays extends All
+  sealed trait weekdays
+    extends All
+       with typings.moment.momentMod.unitOfTime.All
   
   @js.native
   sealed trait weeks
     extends Base
        with All
+       with typings.moment.momentMod.unitOfTime.All
+       with typings.moment.momentMod.unitOfTime.Base
        with Diff
+       with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.DurationConstructor
        with MomentConstructor
+       with typings.moment.momentMod.unitOfTime.MomentConstructor
   
   @js.native
   sealed trait y
     extends Base
        with All
+       with typings.moment.momentMod.unitOfTime.All
+       with typings.moment.momentMod.unitOfTime.Base
        with Diff
+       with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.DurationConstructor
        with MomentConstructor
+       with typings.moment.momentMod.unitOfTime.MomentConstructor
        with RelativeTimeKey
+       with typings.moment.momentMod.RelativeTimeKey
   
   @js.native
   sealed trait year
     extends Base
        with All
+       with typings.moment.momentMod.unitOfTime.All
+       with typings.moment.momentMod.unitOfTime.Base
        with Diff
+       with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.DurationConstructor
        with MomentConstructor
+       with typings.moment.momentMod.unitOfTime.MomentConstructor
   
   @js.native
   sealed trait years
     extends Base
        with All
+       with typings.moment.momentMod.unitOfTime.All
+       with typings.moment.momentMod.unitOfTime.Base
        with Diff
+       with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
+       with typings.moment.momentMod.unitOfTime.DurationConstructor
        with MomentConstructor
+       with typings.moment.momentMod.unitOfTime.MomentConstructor
   
   @js.native
-  sealed trait yy extends RelativeTimeKey
+  sealed trait yy
+    extends RelativeTimeKey
+       with typings.moment.momentMod.RelativeTimeKey
   
   @scala.inline
   def D: D = "D".asInstanceOf[D]

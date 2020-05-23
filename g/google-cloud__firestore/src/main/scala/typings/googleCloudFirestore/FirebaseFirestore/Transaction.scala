@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("FirebaseFirestore.Transaction")
 @js.native
-class Transaction protected () extends js.Object {
+trait Transaction extends js.Object {
   /**
     * Create the document referred to by the provided `DocumentReference`.
     * The operation will fail the transaction if a document exists at the

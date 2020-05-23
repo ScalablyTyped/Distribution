@@ -1,6 +1,6 @@
 package typings.newman.mod
 
-import typings.newman.AnonRef
+import typings.newman.anon.Ref
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait NewmanRunFailure extends js.Object {
   /** The event where the failure occurred */
   var at: String
-  var cursor: AnonRef | js.Object
+  var cursor: Ref | js.Object
   var error: NewmanRunExecutionAssertionError
   var parent: js.Any
   var source: js.UndefOr[NewmanRunExecutionItem] = js.undefined
@@ -18,7 +18,7 @@ object NewmanRunFailure {
   @scala.inline
   def apply(
     at: String,
-    cursor: AnonRef | js.Object,
+    cursor: Ref | js.Object,
     error: NewmanRunExecutionAssertionError,
     parent: js.Any,
     source: NewmanRunExecutionItem = null

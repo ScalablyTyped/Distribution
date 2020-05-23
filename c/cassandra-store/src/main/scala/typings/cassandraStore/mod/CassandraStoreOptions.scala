@@ -14,9 +14,9 @@ trait CassandraStoreOptions extends js.Object {
 
 object CassandraStoreOptions {
   @scala.inline
-  def apply(clientOptions: ClientOptions, table: String, client: Client = null): CassandraStoreOptions = {
+  def apply(clientOptions: ClientOptions, table: String, client: js.UndefOr[Null | Client] = js.undefined): CassandraStoreOptions = {
     val __obj = js.Dynamic.literal(clientOptions = clientOptions.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
-    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
+    if (!js.isUndefined(client)) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
     __obj.asInstanceOf[CassandraStoreOptions]
   }
 }

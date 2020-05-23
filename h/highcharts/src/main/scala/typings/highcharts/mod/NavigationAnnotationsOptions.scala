@@ -75,7 +75,7 @@ object NavigationAnnotationsOptions {
     shapeOptions: NavigationAnnotationsShapeOptions = null,
     shapes: js.Array[NavigationAnnotationsShapesOptions] = null,
     visible: js.UndefOr[Boolean] = js.undefined,
-    zIndex: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined
   ): NavigationAnnotationsOptions = {
     val __obj = js.Dynamic.literal()
     if (controlPointOptions != null) __obj.updateDynamic("controlPointOptions")(controlPointOptions.asInstanceOf[js.Any])
@@ -86,8 +86,8 @@ object NavigationAnnotationsOptions {
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (shapeOptions != null) __obj.updateDynamic("shapeOptions")(shapeOptions.asInstanceOf[js.Any])
     if (shapes != null) __obj.updateDynamic("shapes")(shapes.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationAnnotationsOptions]
   }
 }

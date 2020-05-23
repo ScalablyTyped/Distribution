@@ -18,9 +18,9 @@ trait PutEmailIdentityFeedbackAttributesRequest extends js.Object {
 
 object PutEmailIdentityFeedbackAttributesRequest {
   @scala.inline
-  def apply(EmailIdentity: Identity, EmailForwardingEnabled: js.UndefOr[Boolean] = js.undefined): PutEmailIdentityFeedbackAttributesRequest = {
+  def apply(EmailIdentity: Identity, EmailForwardingEnabled: js.UndefOr[Enabled] = js.undefined): PutEmailIdentityFeedbackAttributesRequest = {
     val __obj = js.Dynamic.literal(EmailIdentity = EmailIdentity.asInstanceOf[js.Any])
-    if (!js.isUndefined(EmailForwardingEnabled)) __obj.updateDynamic("EmailForwardingEnabled")(EmailForwardingEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(EmailForwardingEnabled)) __obj.updateDynamic("EmailForwardingEnabled")(EmailForwardingEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutEmailIdentityFeedbackAttributesRequest]
   }
 }

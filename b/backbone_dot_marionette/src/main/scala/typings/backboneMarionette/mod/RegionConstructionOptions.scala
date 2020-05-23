@@ -36,7 +36,7 @@ object RegionConstructionOptions {
     replaceElement: String = null
   ): RegionConstructionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowMissingEl)) __obj.updateDynamic("allowMissingEl")(allowMissingEl.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowMissingEl)) __obj.updateDynamic("allowMissingEl")(allowMissingEl.get.asInstanceOf[js.Any])
     if (el != null) __obj.updateDynamic("el")(el.asInstanceOf[js.Any])
     if (parentEl != null) __obj.updateDynamic("parentEl")(parentEl.asInstanceOf[js.Any])
     if (replaceElement != null) __obj.updateDynamic("replaceElement")(replaceElement.asInstanceOf[js.Any])

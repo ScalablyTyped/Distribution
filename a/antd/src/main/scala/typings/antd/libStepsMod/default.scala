@@ -1,6 +1,6 @@
 package typings.antd.libStepsMod
 
-import typings.antd.AnonCurrent
+import typings.antd.anon.Current
 import typings.react.mod.ClassicComponentClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,6 +15,6 @@ class default () extends Steps
 @js.native
 object default extends js.Object {
   var Step: ClassicComponentClass[StepProps] = js.native
-  var defaultProps: AnonCurrent = js.native
+  var defaultProps: Current = js.native
 }
 

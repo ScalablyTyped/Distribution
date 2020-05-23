@@ -63,8 +63,8 @@ trait GetRouteResult extends js.Object {
 object GetRouteResult {
   @scala.inline
   def apply(
-    ApiGatewayManaged: js.UndefOr[Boolean] = js.undefined,
-    ApiKeyRequired: js.UndefOr[Boolean] = js.undefined,
+    ApiGatewayManaged: js.UndefOr[boolean] = js.undefined,
+    ApiKeyRequired: js.UndefOr[boolean] = js.undefined,
     AuthorizationScopes: AuthorizationScopes = null,
     AuthorizationType: AuthorizationType = null,
     AuthorizerId: Id = null,
@@ -78,8 +78,8 @@ object GetRouteResult {
     Target: StringWithLengthBetween1And128 = null
   ): GetRouteResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ApiGatewayManaged)) __obj.updateDynamic("ApiGatewayManaged")(ApiGatewayManaged.asInstanceOf[js.Any])
-    if (!js.isUndefined(ApiKeyRequired)) __obj.updateDynamic("ApiKeyRequired")(ApiKeyRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(ApiGatewayManaged)) __obj.updateDynamic("ApiGatewayManaged")(ApiGatewayManaged.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ApiKeyRequired)) __obj.updateDynamic("ApiKeyRequired")(ApiKeyRequired.get.asInstanceOf[js.Any])
     if (AuthorizationScopes != null) __obj.updateDynamic("AuthorizationScopes")(AuthorizationScopes.asInstanceOf[js.Any])
     if (AuthorizationType != null) __obj.updateDynamic("AuthorizationType")(AuthorizationType.asInstanceOf[js.Any])
     if (AuthorizerId != null) __obj.updateDynamic("AuthorizerId")(AuthorizerId.asInstanceOf[js.Any])

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DisassociateRouteTableRequest extends js.Object {
   /**
-    * The association ID representing the current association between the route table and subnet.
+    * The association ID representing the current association between the route table and subnet or gateway.
     */
   var AssociationId: RouteTableAssociationId = js.native
   /**
@@ -18,9 +18,9 @@ trait DisassociateRouteTableRequest extends js.Object {
 
 object DisassociateRouteTableRequest {
   @scala.inline
-  def apply(AssociationId: RouteTableAssociationId, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DisassociateRouteTableRequest = {
+  def apply(AssociationId: RouteTableAssociationId, DryRun: js.UndefOr[Boolean] = js.undefined): DisassociateRouteTableRequest = {
     val __obj = js.Dynamic.literal(AssociationId = AssociationId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateRouteTableRequest]
   }
 }

@@ -61,12 +61,12 @@ object InkAnalysisWordCollectionLoadOptions {
     wordAlternates: js.UndefOr[Boolean] = js.undefined
   ): InkAnalysisWordCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(languageId)) __obj.updateDynamic("languageId")(languageId.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(languageId)) __obj.updateDynamic("languageId")(languageId.get.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (!js.isUndefined(strokePointers)) __obj.updateDynamic("strokePointers")(strokePointers.asInstanceOf[js.Any])
-    if (!js.isUndefined(wordAlternates)) __obj.updateDynamic("wordAlternates")(wordAlternates.asInstanceOf[js.Any])
+    if (!js.isUndefined(strokePointers)) __obj.updateDynamic("strokePointers")(strokePointers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wordAlternates)) __obj.updateDynamic("wordAlternates")(wordAlternates.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InkAnalysisWordCollectionLoadOptions]
   }
 }

@@ -5,36 +5,36 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.geolib.AnonAlt
-  - typings.geolib.AnonAltitudeGeolibAltitudeInputValue
-  - typings.geolib.AnonElevation
-  - typings.geolib.AnonElev
+  - typings.geolib.anon.Alt
+  - typings.geolib.anon.AltitudeGeolibAltitudeInputValue
+  - typings.geolib.anon.Elevation
+  - typings.geolib.anon.Elev
 */
 trait GeolibInputAltitude extends js.Object
 
 object GeolibInputAltitude {
   @scala.inline
-  def AnonAlt(alt: Int | Double = null): GeolibInputAltitude = {
+  def Alt(alt: js.UndefOr[GeolibAltitudeInputValue] = js.undefined): GeolibInputAltitude = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (!js.isUndefined(alt)) __obj.updateDynamic("alt")(alt.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeolibInputAltitude]
   }
   @scala.inline
-  def AnonAltitudeGeolibAltitudeInputValue(altitude: Int | Double = null): GeolibInputAltitude = {
+  def AltitudeGeolibAltitudeInputValue(altitude: js.UndefOr[GeolibAltitudeInputValue] = js.undefined): GeolibInputAltitude = {
     val __obj = js.Dynamic.literal()
-    if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
+    if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeolibInputAltitude]
   }
   @scala.inline
-  def AnonElevation(elevation: Int | Double = null): GeolibInputAltitude = {
+  def Elevation(elevation: js.UndefOr[GeolibAltitudeInputValue] = js.undefined): GeolibInputAltitude = {
     val __obj = js.Dynamic.literal()
-    if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
+    if (!js.isUndefined(elevation)) __obj.updateDynamic("elevation")(elevation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeolibInputAltitude]
   }
   @scala.inline
-  def AnonElev(elev: Int | Double = null): GeolibInputAltitude = {
+  def Elev(elev: js.UndefOr[GeolibAltitudeInputValue] = js.undefined): GeolibInputAltitude = {
     val __obj = js.Dynamic.literal()
-    if (elev != null) __obj.updateDynamic("elev")(elev.asInstanceOf[js.Any])
+    if (!js.isUndefined(elev)) __obj.updateDynamic("elev")(elev.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeolibInputAltitude]
   }
 }

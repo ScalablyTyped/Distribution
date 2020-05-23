@@ -19,13 +19,13 @@ object customError {
     additional: js.Object = null,
     className: String = null,
     functionName: String = null,
-    lineNumber: Int | Double = null
+    lineNumber: js.UndefOr[Double] = js.undefined
   ): customError = {
     val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any])
     if (additional != null) __obj.updateDynamic("additional")(additional.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (functionName != null) __obj.updateDynamic("functionName")(functionName.asInstanceOf[js.Any])
-    if (lineNumber != null) __obj.updateDynamic("lineNumber")(lineNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineNumber)) __obj.updateDynamic("lineNumber")(lineNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[customError]
   }
 }

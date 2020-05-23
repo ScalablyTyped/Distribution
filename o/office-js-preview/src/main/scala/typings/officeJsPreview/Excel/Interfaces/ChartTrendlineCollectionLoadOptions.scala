@@ -112,18 +112,18 @@ object ChartTrendlineCollectionLoadOptions {
     `type`: js.UndefOr[Boolean] = js.undefined
   ): ChartTrendlineCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(backwardPeriod)) __obj.updateDynamic("backwardPeriod")(backwardPeriod.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(backwardPeriod)) __obj.updateDynamic("backwardPeriod")(backwardPeriod.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(forwardPeriod)) __obj.updateDynamic("forwardPeriod")(forwardPeriod.asInstanceOf[js.Any])
-    if (!js.isUndefined(intercept)) __obj.updateDynamic("intercept")(intercept.asInstanceOf[js.Any])
+    if (!js.isUndefined(forwardPeriod)) __obj.updateDynamic("forwardPeriod")(forwardPeriod.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(intercept)) __obj.updateDynamic("intercept")(intercept.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(movingAveragePeriod)) __obj.updateDynamic("movingAveragePeriod")(movingAveragePeriod.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(polynomialOrder)) __obj.updateDynamic("polynomialOrder")(polynomialOrder.asInstanceOf[js.Any])
-    if (!js.isUndefined(showEquation)) __obj.updateDynamic("showEquation")(showEquation.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRSquared)) __obj.updateDynamic("showRSquared")(showRSquared.asInstanceOf[js.Any])
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(movingAveragePeriod)) __obj.updateDynamic("movingAveragePeriod")(movingAveragePeriod.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(polynomialOrder)) __obj.updateDynamic("polynomialOrder")(polynomialOrder.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showEquation)) __obj.updateDynamic("showEquation")(showEquation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRSquared)) __obj.updateDynamic("showRSquared")(showRSquared.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartTrendlineCollectionLoadOptions]
   }
 }

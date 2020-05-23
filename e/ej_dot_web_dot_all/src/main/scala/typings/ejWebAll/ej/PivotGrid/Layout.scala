@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.PivotGrid
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,20 +25,6 @@ object Layout extends js.Object {
   ///To set layout with summaries at the top in PivotGrid.
   @js.native
   sealed trait NormalTopSummary extends Layout
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Layout with Double] = js.native
-  /* 3 */ @js.native
-  object ExcelLikeLayout extends TopLevel[ExcelLikeLayout with Double]
-  
-  /* 2 */ @js.native
-  object NoSummaries extends TopLevel[NoSummaries with Double]
-  
-  /* 0 */ @js.native
-  object Normal extends TopLevel[Normal with Double]
-  
-  /* 1 */ @js.native
-  object NormalTopSummary extends TopLevel[NormalTopSummary with Double]
   
 }
 

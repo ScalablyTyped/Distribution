@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.NumberDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -42,8 +41,4 @@ trait NodeList extends /* index */ NumberDictionary[Node] {
     */
   def values(): IterableIterator[Node] = js.native
 }
-
-@JSGlobal("NodeList")
-@js.native
-object NodeList extends Instantiable0[NodeList]
 

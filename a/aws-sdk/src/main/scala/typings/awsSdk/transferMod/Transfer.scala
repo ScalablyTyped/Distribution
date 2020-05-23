@@ -13,12 +13,12 @@ trait Transfer extends Service {
   @JSName("config")
   var config_Transfer: ConfigBase with ClientConfiguration = js.native
   /**
-    * Instantiates an autoscaling virtual server based on Secure File Transfer Protocol (SFTP) in AWS. When you make updates to your server or when you work with users, use the service-generated ServerId property that is assigned to the newly created server.
+    * Instantiates an autoscaling virtual server based on the selected file transfer protocol in AWS. When you make updates to your file transfer protocol-enabled server or when you work with users, use the service-generated ServerId property that is assigned to the newly created server.
     */
   def createServer(): Request[CreateServerResponse, AWSError] = js.native
   def createServer(callback: js.Function2[/* err */ AWSError, /* data */ CreateServerResponse, Unit]): Request[CreateServerResponse, AWSError] = js.native
   /**
-    * Instantiates an autoscaling virtual server based on Secure File Transfer Protocol (SFTP) in AWS. When you make updates to your server or when you work with users, use the service-generated ServerId property that is assigned to the newly created server.
+    * Instantiates an autoscaling virtual server based on the selected file transfer protocol in AWS. When you make updates to your file transfer protocol-enabled server or when you work with users, use the service-generated ServerId property that is assigned to the newly created server.
     */
   def createServer(params: CreateServerRequest): Request[CreateServerResponse, AWSError] = js.native
   def createServer(
@@ -26,12 +26,12 @@ trait Transfer extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateServerResponse, Unit]
   ): Request[CreateServerResponse, AWSError] = js.native
   /**
-    * Creates a user and associates them with an existing Secure File Transfer Protocol (SFTP) server. You can only create and associate users with SFTP servers that have the IdentityProviderType set to SERVICE_MANAGED. Using parameters for CreateUser, you can specify the user name, set the home directory, store the user's public key, and assign the user's AWS Identity and Access Management (IAM) role. You can also optionally add a scope-down policy, and assign metadata with tags that can be used to group and search for users.
+    * Creates a user and associates them with an existing file transfer protocol-enabled server. You can only create and associate users with servers that have the IdentityProviderType set to SERVICE_MANAGED. Using parameters for CreateUser, you can specify the user name, set the home directory, store the user's public key, and assign the user's AWS Identity and Access Management (IAM) role. You can also optionally add a scope-down policy, and assign metadata with tags that can be used to group and search for users.
     */
   def createUser(): Request[CreateUserResponse, AWSError] = js.native
   def createUser(callback: js.Function2[/* err */ AWSError, /* data */ CreateUserResponse, Unit]): Request[CreateUserResponse, AWSError] = js.native
   /**
-    * Creates a user and associates them with an existing Secure File Transfer Protocol (SFTP) server. You can only create and associate users with SFTP servers that have the IdentityProviderType set to SERVICE_MANAGED. Using parameters for CreateUser, you can specify the user name, set the home directory, store the user's public key, and assign the user's AWS Identity and Access Management (IAM) role. You can also optionally add a scope-down policy, and assign metadata with tags that can be used to group and search for users.
+    * Creates a user and associates them with an existing file transfer protocol-enabled server. You can only create and associate users with servers that have the IdentityProviderType set to SERVICE_MANAGED. Using parameters for CreateUser, you can specify the user name, set the home directory, store the user's public key, and assign the user's AWS Identity and Access Management (IAM) role. You can also optionally add a scope-down policy, and assign metadata with tags that can be used to group and search for users.
     */
   def createUser(params: CreateUserRequest): Request[CreateUserResponse, AWSError] = js.native
   def createUser(
@@ -39,12 +39,12 @@ trait Transfer extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateUserResponse, Unit]
   ): Request[CreateUserResponse, AWSError] = js.native
   /**
-    * Deletes the Secure File Transfer Protocol (SFTP) server that you specify. No response returns from this operation.
+    * Deletes the file transfer protocol-enabled server that you specify. No response returns from this operation.
     */
   def deleteServer(): Request[js.Object, AWSError] = js.native
   def deleteServer(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes the Secure File Transfer Protocol (SFTP) server that you specify. No response returns from this operation.
+    * Deletes the file transfer protocol-enabled server that you specify. No response returns from this operation.
     */
   def deleteServer(params: DeleteServerRequest): Request[js.Object, AWSError] = js.native
   def deleteServer(
@@ -65,22 +65,22 @@ trait Transfer extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes the user belonging to the server you specify. No response returns from this operation.  When you delete a user from a server, the user's information is lost. 
+    * Deletes the user belonging to a file transfer protocol-enabled server you specify. No response returns from this operation.  When you delete a user from a server, the user's information is lost. 
     */
   def deleteUser(): Request[js.Object, AWSError] = js.native
   def deleteUser(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes the user belonging to the server you specify. No response returns from this operation.  When you delete a user from a server, the user's information is lost. 
+    * Deletes the user belonging to a file transfer protocol-enabled server you specify. No response returns from this operation.  When you delete a user from a server, the user's information is lost. 
     */
   def deleteUser(params: DeleteUserRequest): Request[js.Object, AWSError] = js.native
   def deleteUser(params: DeleteUserRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Describes the server that you specify by passing the ServerId parameter. The response contains a description of the server's properties. When you set EndpointType to VPC, the response will contain the EndpointDetails.
+    * Describes a file transfer protocol-enabled server that you specify by passing the ServerId parameter. The response contains a description of a server's properties. When you set EndpointType to VPC, the response will contain the EndpointDetails.
     */
   def describeServer(): Request[DescribeServerResponse, AWSError] = js.native
   def describeServer(callback: js.Function2[/* err */ AWSError, /* data */ DescribeServerResponse, Unit]): Request[DescribeServerResponse, AWSError] = js.native
   /**
-    * Describes the server that you specify by passing the ServerId parameter. The response contains a description of the server's properties. When you set EndpointType to VPC, the response will contain the EndpointDetails.
+    * Describes a file transfer protocol-enabled server that you specify by passing the ServerId parameter. The response contains a description of a server's properties. When you set EndpointType to VPC, the response will contain the EndpointDetails.
     */
   def describeServer(params: DescribeServerRequest): Request[DescribeServerResponse, AWSError] = js.native
   def describeServer(
@@ -88,12 +88,12 @@ trait Transfer extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeServerResponse, Unit]
   ): Request[DescribeServerResponse, AWSError] = js.native
   /**
-    * Describes the user assigned to a specific server, as identified by its ServerId property. The response from this call returns the properties of the user associated with the ServerId value that was specified.
+    * Describes the user assigned to the specific file transfer protocol-enabled server, as identified by its ServerId property. The response from this call returns the properties of the user associated with the ServerId value that was specified.
     */
   def describeUser(): Request[DescribeUserResponse, AWSError] = js.native
   def describeUser(callback: js.Function2[/* err */ AWSError, /* data */ DescribeUserResponse, Unit]): Request[DescribeUserResponse, AWSError] = js.native
   /**
-    * Describes the user assigned to a specific server, as identified by its ServerId property. The response from this call returns the properties of the user associated with the ServerId value that was specified.
+    * Describes the user assigned to the specific file transfer protocol-enabled server, as identified by its ServerId property. The response from this call returns the properties of the user associated with the ServerId value that was specified.
     */
   def describeUser(params: DescribeUserRequest): Request[DescribeUserResponse, AWSError] = js.native
   def describeUser(
@@ -101,12 +101,12 @@ trait Transfer extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeUserResponse, Unit]
   ): Request[DescribeUserResponse, AWSError] = js.native
   /**
-    * Adds a Secure Shell (SSH) public key to a user account identified by a UserName value assigned to a specific server, identified by ServerId. The response returns the UserName value, the ServerId value, and the name of the SshPublicKeyId.
+    * Adds a Secure Shell (SSH) public key to a user account identified by a UserName value assigned to the specific file transfer protocol-enabled server, identified by ServerId. The response returns the UserName value, the ServerId value, and the name of the SshPublicKeyId.
     */
   def importSshPublicKey(): Request[ImportSshPublicKeyResponse, AWSError] = js.native
   def importSshPublicKey(callback: js.Function2[/* err */ AWSError, /* data */ ImportSshPublicKeyResponse, Unit]): Request[ImportSshPublicKeyResponse, AWSError] = js.native
   /**
-    * Adds a Secure Shell (SSH) public key to a user account identified by a UserName value assigned to a specific server, identified by ServerId. The response returns the UserName value, the ServerId value, and the name of the SshPublicKeyId.
+    * Adds a Secure Shell (SSH) public key to a user account identified by a UserName value assigned to the specific file transfer protocol-enabled server, identified by ServerId. The response returns the UserName value, the ServerId value, and the name of the SshPublicKeyId.
     */
   def importSshPublicKey(params: ImportSshPublicKeyRequest): Request[ImportSshPublicKeyResponse, AWSError] = js.native
   def importSshPublicKey(
@@ -114,12 +114,12 @@ trait Transfer extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ImportSshPublicKeyResponse, Unit]
   ): Request[ImportSshPublicKeyResponse, AWSError] = js.native
   /**
-    * Lists the Secure File Transfer Protocol (SFTP) servers that are associated with your AWS account.
+    * Lists the file transfer protocol-enabled servers that are associated with your AWS account.
     */
   def listServers(): Request[ListServersResponse, AWSError] = js.native
   def listServers(callback: js.Function2[/* err */ AWSError, /* data */ ListServersResponse, Unit]): Request[ListServersResponse, AWSError] = js.native
   /**
-    * Lists the Secure File Transfer Protocol (SFTP) servers that are associated with your AWS account.
+    * Lists the file transfer protocol-enabled servers that are associated with your AWS account.
     */
   def listServers(params: ListServersRequest): Request[ListServersResponse, AWSError] = js.native
   def listServers(
@@ -140,12 +140,12 @@ trait Transfer extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   /**
-    * Lists the users for the server that you specify by passing the ServerId parameter.
+    * Lists the users for a file transfer protocol-enabled server that you specify by passing the ServerId parameter.
     */
   def listUsers(): Request[ListUsersResponse, AWSError] = js.native
   def listUsers(callback: js.Function2[/* err */ AWSError, /* data */ ListUsersResponse, Unit]): Request[ListUsersResponse, AWSError] = js.native
   /**
-    * Lists the users for the server that you specify by passing the ServerId parameter.
+    * Lists the users for a file transfer protocol-enabled server that you specify by passing the ServerId parameter.
     */
   def listUsers(params: ListUsersRequest): Request[ListUsersResponse, AWSError] = js.native
   def listUsers(
@@ -153,22 +153,22 @@ trait Transfer extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListUsersResponse, Unit]
   ): Request[ListUsersResponse, AWSError] = js.native
   /**
-    * Changes the state of a Secure File Transfer Protocol (SFTP) server from OFFLINE to ONLINE. It has no impact on an SFTP server that is already ONLINE. An ONLINE server can accept and process file transfer jobs. The state of STARTING indicates that the server is in an intermediate state, either not fully able to respond, or not fully online. The values of START_FAILED can indicate an error condition.  No response is returned from this call.
+    * Changes the state of a file transfer protocol-enabled server from OFFLINE to ONLINE. It has no impact on a server that is already ONLINE. An ONLINE server can accept and process file transfer jobs. The state of STARTING indicates that the server is in an intermediate state, either not fully able to respond, or not fully online. The values of START_FAILED can indicate an error condition. No response is returned from this call.
     */
   def startServer(): Request[js.Object, AWSError] = js.native
   def startServer(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Changes the state of a Secure File Transfer Protocol (SFTP) server from OFFLINE to ONLINE. It has no impact on an SFTP server that is already ONLINE. An ONLINE server can accept and process file transfer jobs. The state of STARTING indicates that the server is in an intermediate state, either not fully able to respond, or not fully online. The values of START_FAILED can indicate an error condition.  No response is returned from this call.
+    * Changes the state of a file transfer protocol-enabled server from OFFLINE to ONLINE. It has no impact on a server that is already ONLINE. An ONLINE server can accept and process file transfer jobs. The state of STARTING indicates that the server is in an intermediate state, either not fully able to respond, or not fully online. The values of START_FAILED can indicate an error condition. No response is returned from this call.
     */
   def startServer(params: StartServerRequest): Request[js.Object, AWSError] = js.native
   def startServer(params: StartServerRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Changes the state of an SFTP server from ONLINE to OFFLINE. An OFFLINE server cannot accept and process file transfer jobs. Information tied to your server such as server and user properties are not affected by stopping your server. Stopping a server will not reduce or impact your Secure File Transfer Protocol (SFTP) endpoint billing. The state of STOPPING indicates that the server is in an intermediate state, either not fully able to respond, or not fully offline. The values of STOP_FAILED can indicate an error condition. No response is returned from this call.
+    * Changes the state of a file transfer protocol-enabled server from ONLINE to OFFLINE. An OFFLINE server cannot accept and process file transfer jobs. Information tied to your server, such as server and user properties, are not affected by stopping your server. Stopping the server will not reduce or impact your file transfer protocol endpoint billing. The state of STOPPING indicates that the server is in an intermediate state, either not fully able to respond, or not fully offline. The values of STOP_FAILED can indicate an error condition. No response is returned from this call.
     */
   def stopServer(): Request[js.Object, AWSError] = js.native
   def stopServer(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Changes the state of an SFTP server from ONLINE to OFFLINE. An OFFLINE server cannot accept and process file transfer jobs. Information tied to your server such as server and user properties are not affected by stopping your server. Stopping a server will not reduce or impact your Secure File Transfer Protocol (SFTP) endpoint billing. The state of STOPPING indicates that the server is in an intermediate state, either not fully able to respond, or not fully offline. The values of STOP_FAILED can indicate an error condition. No response is returned from this call.
+    * Changes the state of a file transfer protocol-enabled server from ONLINE to OFFLINE. An OFFLINE server cannot accept and process file transfer jobs. Information tied to your server, such as server and user properties, are not affected by stopping your server. Stopping the server will not reduce or impact your file transfer protocol endpoint billing. The state of STOPPING indicates that the server is in an intermediate state, either not fully able to respond, or not fully offline. The values of STOP_FAILED can indicate an error condition. No response is returned from this call.
     */
   def stopServer(params: StopServerRequest): Request[js.Object, AWSError] = js.native
   def stopServer(params: StopServerRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
@@ -183,12 +183,12 @@ trait Transfer extends Service {
   def tagResource(params: TagResourceRequest): Request[js.Object, AWSError] = js.native
   def tagResource(params: TagResourceRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * If the IdentityProviderType of the server is API_Gateway, tests whether your API Gateway is set up successfully. We highly recommend that you call this operation to test your authentication method as soon as you create your server. By doing so, you can troubleshoot issues with the API Gateway integration to ensure that your users can successfully use the service.
+    * If the IdentityProviderType of a file transfer protocol-enabled server is API_Gateway, tests whether your API Gateway is set up successfully. We highly recommend that you call this operation to test your authentication method as soon as you create your server. By doing so, you can troubleshoot issues with the API Gateway integration to ensure that your users can successfully use the service.
     */
   def testIdentityProvider(): Request[TestIdentityProviderResponse, AWSError] = js.native
   def testIdentityProvider(callback: js.Function2[/* err */ AWSError, /* data */ TestIdentityProviderResponse, Unit]): Request[TestIdentityProviderResponse, AWSError] = js.native
   /**
-    * If the IdentityProviderType of the server is API_Gateway, tests whether your API Gateway is set up successfully. We highly recommend that you call this operation to test your authentication method as soon as you create your server. By doing so, you can troubleshoot issues with the API Gateway integration to ensure that your users can successfully use the service.
+    * If the IdentityProviderType of a file transfer protocol-enabled server is API_Gateway, tests whether your API Gateway is set up successfully. We highly recommend that you call this operation to test your authentication method as soon as you create your server. By doing so, you can troubleshoot issues with the API Gateway integration to ensure that your users can successfully use the service.
     */
   def testIdentityProvider(params: TestIdentityProviderRequest): Request[TestIdentityProviderResponse, AWSError] = js.native
   def testIdentityProvider(
@@ -209,12 +209,12 @@ trait Transfer extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Updates the server properties after that server has been created. The UpdateServer call returns the ServerId of the Secure File Transfer Protocol (SFTP) server you updated.
+    * Updates the file transfer protocol-enabled server's properties after that server has been created. The UpdateServer call returns the ServerId of the server you updated.
     */
   def updateServer(): Request[UpdateServerResponse, AWSError] = js.native
   def updateServer(callback: js.Function2[/* err */ AWSError, /* data */ UpdateServerResponse, Unit]): Request[UpdateServerResponse, AWSError] = js.native
   /**
-    * Updates the server properties after that server has been created. The UpdateServer call returns the ServerId of the Secure File Transfer Protocol (SFTP) server you updated.
+    * Updates the file transfer protocol-enabled server's properties after that server has been created. The UpdateServer call returns the ServerId of the server you updated.
     */
   def updateServer(params: UpdateServerRequest): Request[UpdateServerResponse, AWSError] = js.native
   def updateServer(

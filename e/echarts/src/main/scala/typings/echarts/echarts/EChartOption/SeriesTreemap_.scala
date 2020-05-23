@@ -1,13 +1,13 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.AnonBorderColorSaturation
-import typings.echarts.AnonBottom
-import typings.echarts.AnonChildrenVisibleMin
-import typings.echarts.AnonEllipsis
-import typings.echarts.AnonExtraCssText
-import typings.echarts.AnonLink
-import typings.echarts.AnonTextShadowOffsetX
-import typings.echarts.AnonUpperLabel
+import typings.echarts.anon.BorderColorSaturation
+import typings.echarts.anon.Bottom
+import typings.echarts.anon.ChildrenVisibleMin
+import typings.echarts.anon.Ellipsis
+import typings.echarts.anon.ExtraCssText
+import typings.echarts.anon.Link
+import typings.echarts.anon.TextShadowOffsetX
+import typings.echarts.anon.UpperLabel
 import typings.echarts.echarts.EChartOption.SeriesTreemap.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -136,7 +136,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb
     */
-  var breadcrumb: js.UndefOr[AnonBottom] = js.undefined
+  var breadcrumb: js.UndefOr[Bottom] = js.undefined
   /**
     * Children will not be shown when area size of a node is smaller
     * than this value (unit: px square).
@@ -319,7 +319,7 @@ trait SeriesTreemap_ extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-treemap.emphasis
     */
-  var emphasis: js.UndefOr[AnonUpperLabel] = js.undefined
+  var emphasis: js.UndefOr[UpperLabel] = js.undefined
   /**
     * Height of treemap component.
     *
@@ -359,7 +359,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderColorSaturation] = js.undefined
+  var itemStyle: js.UndefOr[BorderColorSaturation] = js.undefined
   /**
     * `label` decribes the style of the label in each node.
     *
@@ -382,7 +382,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.label
     */
-  var label: js.UndefOr[AnonEllipsis] = js.undefined
+  var label: js.UndefOr[Ellipsis] = js.undefined
   /**
     * When `leafDepth` is set, the feature "drill down" is enabled,
     * which means when clicking a tree node, this node will be set
@@ -515,7 +515,7 @@ trait SeriesTreemap_ extends js.Object {
     * []
     * @see https://echarts.apache.org/en/option.html#series-treemap.levels
     */
-  var levels: js.UndefOr[AnonChildrenVisibleMin] = js.undefined
+  var levels: js.UndefOr[ChildrenVisibleMin] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -580,7 +580,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.silent
     */
-  var silent: js.UndefOr[AnonLink] = js.undefined
+  var silent: js.UndefOr[Link] = js.undefined
   /**
     * The expected square ratio.
     * Layout would approach the ratio as close as possible.
@@ -598,7 +598,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.tooltip
     */
-  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
   /**
     * Distance between treemap component and the top side of the container.
     *
@@ -666,7 +666,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.upperLabel
     */
-  var upperLabel: js.UndefOr[AnonTextShadowOffsetX] = js.undefined
+  var upperLabel: js.UndefOr[TextShadowOffsetX] = js.undefined
   /**
     * A node will not be shown when its area size is smaller than this
     * value (unit: px square).
@@ -827,39 +827,39 @@ object SeriesTreemap_ {
     animationDuration: js.Function | Double = null,
     animationEasing: String = null,
     bottom: Double | String = null,
-    breadcrumb: AnonBottom = null,
-    childrenVisibleMin: Int | Double = null,
+    breadcrumb: Bottom = null,
+    childrenVisibleMin: js.UndefOr[Double] = js.undefined,
     colorAlpha: js.Array[_] = null,
     colorMappingBy: String = null,
-    colorSaturation: Int | Double = null,
+    colorSaturation: js.UndefOr[Double] = js.undefined,
     data: js.Array[DataObject] = null,
     drillDownIcon: String = null,
-    emphasis: AnonUpperLabel = null,
+    emphasis: UpperLabel = null,
     height: Double | String = null,
     id: String = null,
-    itemStyle: AnonBorderColorSaturation = null,
-    label: AnonEllipsis = null,
-    leafDepth: Int | Double = null,
+    itemStyle: BorderColorSaturation = null,
+    label: Ellipsis = null,
+    leafDepth: js.UndefOr[Double] = js.undefined,
     left: Double | String = null,
-    levels: AnonChildrenVisibleMin = null,
+    levels: ChildrenVisibleMin = null,
     name: String = null,
     nodeClick: Boolean | String = null,
     right: Double | String = null,
     roam: Boolean | String = null,
-    silent: AnonLink = null,
-    squareRatio: Int | Double = null,
-    tooltip: AnonExtraCssText = null,
+    silent: Link = null,
+    squareRatio: js.UndefOr[Double] = js.undefined,
+    tooltip: ExtraCssText = null,
     top: Double | String = null,
     `type`: String = null,
-    upperLabel: AnonTextShadowOffsetX = null,
-    visibleMin: Int | Double = null,
-    visualDimension: Int | Double = null,
-    visualMax: Int | Double = null,
-    visualMin: Int | Double = null,
+    upperLabel: TextShadowOffsetX = null,
+    visibleMin: js.UndefOr[Double] = js.undefined,
+    visualDimension: js.UndefOr[Double] = js.undefined,
+    visualMax: js.UndefOr[Double] = js.undefined,
+    visualMin: js.UndefOr[Double] = js.undefined,
     width: Double | String = null,
-    z: Int | Double = null,
-    zlevel: Int | Double = null,
-    zoomToNodeRatio: Int | Double = null
+    z: js.UndefOr[Double] = js.undefined,
+    zlevel: js.UndefOr[Double] = js.undefined,
+    zoomToNodeRatio: js.UndefOr[Double] = js.undefined
   ): SeriesTreemap_ = {
     val __obj = js.Dynamic.literal()
     if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
@@ -867,10 +867,10 @@ object SeriesTreemap_ {
     if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
     if (breadcrumb != null) __obj.updateDynamic("breadcrumb")(breadcrumb.asInstanceOf[js.Any])
-    if (childrenVisibleMin != null) __obj.updateDynamic("childrenVisibleMin")(childrenVisibleMin.asInstanceOf[js.Any])
+    if (!js.isUndefined(childrenVisibleMin)) __obj.updateDynamic("childrenVisibleMin")(childrenVisibleMin.get.asInstanceOf[js.Any])
     if (colorAlpha != null) __obj.updateDynamic("colorAlpha")(colorAlpha.asInstanceOf[js.Any])
     if (colorMappingBy != null) __obj.updateDynamic("colorMappingBy")(colorMappingBy.asInstanceOf[js.Any])
-    if (colorSaturation != null) __obj.updateDynamic("colorSaturation")(colorSaturation.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorSaturation)) __obj.updateDynamic("colorSaturation")(colorSaturation.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (drillDownIcon != null) __obj.updateDynamic("drillDownIcon")(drillDownIcon.asInstanceOf[js.Any])
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
@@ -878,7 +878,7 @@ object SeriesTreemap_ {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (leafDepth != null) __obj.updateDynamic("leafDepth")(leafDepth.asInstanceOf[js.Any])
+    if (!js.isUndefined(leafDepth)) __obj.updateDynamic("leafDepth")(leafDepth.get.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (levels != null) __obj.updateDynamic("levels")(levels.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
@@ -886,19 +886,19 @@ object SeriesTreemap_ {
     if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
     if (roam != null) __obj.updateDynamic("roam")(roam.asInstanceOf[js.Any])
     if (silent != null) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
-    if (squareRatio != null) __obj.updateDynamic("squareRatio")(squareRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(squareRatio)) __obj.updateDynamic("squareRatio")(squareRatio.get.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (upperLabel != null) __obj.updateDynamic("upperLabel")(upperLabel.asInstanceOf[js.Any])
-    if (visibleMin != null) __obj.updateDynamic("visibleMin")(visibleMin.asInstanceOf[js.Any])
-    if (visualDimension != null) __obj.updateDynamic("visualDimension")(visualDimension.asInstanceOf[js.Any])
-    if (visualMax != null) __obj.updateDynamic("visualMax")(visualMax.asInstanceOf[js.Any])
-    if (visualMin != null) __obj.updateDynamic("visualMin")(visualMin.asInstanceOf[js.Any])
+    if (!js.isUndefined(visibleMin)) __obj.updateDynamic("visibleMin")(visibleMin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visualDimension)) __obj.updateDynamic("visualDimension")(visualDimension.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visualMax)) __obj.updateDynamic("visualMax")(visualMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visualMin)) __obj.updateDynamic("visualMin")(visualMin.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
-    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
-    if (zoomToNodeRatio != null) __obj.updateDynamic("zoomToNodeRatio")(zoomToNodeRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zlevel)) __obj.updateDynamic("zlevel")(zlevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomToNodeRatio)) __obj.updateDynamic("zoomToNodeRatio")(zoomToNodeRatio.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesTreemap_]
   }
 }

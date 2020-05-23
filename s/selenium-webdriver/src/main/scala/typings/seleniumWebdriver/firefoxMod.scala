@@ -1,5 +1,6 @@
 package typings.seleniumWebdriver
 
+import typings.seleniumWebdriver.anon.Height
 import typings.seleniumWebdriver.httpMod.Executor
 import typings.seleniumWebdriver.mod.Capabilities
 import typings.seleniumWebdriver.mod.WebDriver
@@ -113,7 +114,7 @@ object firefoxMod extends js.Object {
       * @throws {TypeError} if width or height is unspecified, not a number, or
       *     less than or equal to 0.
       */
-    def windowSize(size: AnonHeight): Options = js.native
+    def windowSize(size: Height): Options = js.native
   }
   
   @js.native

@@ -1,7 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,10 +9,4 @@ import scala.scalajs.js.annotation._
 trait DelayNode extends AudioNode {
   val delayTime: AudioParam = js.native
 }
-
-@JSGlobal("DelayNode")
-@js.native
-object DelayNode
-  extends Instantiable1[/* context */ BaseAudioContext, DelayNode]
-     with Instantiable2[/* context */ BaseAudioContext, /* options */ DelayOptions, DelayNode]
 

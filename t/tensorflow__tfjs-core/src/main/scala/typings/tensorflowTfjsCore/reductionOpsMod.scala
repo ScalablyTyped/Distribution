@@ -1,5 +1,6 @@
 package typings.tensorflowTfjsCore
 
+import typings.tensorflowTfjsCore.anon.Mean
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import typings.tensorflowTfjsCore.tensorMod.Tensor
@@ -14,7 +15,7 @@ object reductionOpsMod extends js.Object {
     /* x */ Tensor[Rank] | TensorLike, 
     /* axis */ js.UndefOr[Double | js.Array[Double]], 
     /* keepDims */ js.UndefOr[Boolean], 
-    AnonMean
+    Mean
   ] = js.native
   @js.native
   object all extends js.Object {

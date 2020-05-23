@@ -8,24 +8,39 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides event information when an app is launched. */
-@JSGlobal("Windows.UI.WebUI.WebUILaunchActivatedEventArgs")
-@js.native
-abstract class WebUILaunchActivatedEventArgs () extends js.Object {
+trait WebUILaunchActivatedEventArgs extends js.Object {
   /** Gets the app activated operation. */
-  var activatedOperation: ActivatedOperation = js.native
+  var activatedOperation: ActivatedOperation
   /** Gets the arguments that are passed to the app during its launch activation. */
-  var arguments: String = js.native
+  var arguments: String
   /** Gets the identifier for the currently shown app view. */
-  var currentlyShownApplicationViewId: Double = js.native
+  var currentlyShownApplicationViewId: Double
   /** Gets the activation type. */
-  var kind: ActivationKind = js.native
+  var kind: ActivationKind
   /** (Applies to Windows only) Gets an indication about whether a pre-launch has been activated. */
-  var prelaunchActivated: Boolean = js.native
+  var prelaunchActivated: Boolean
   /** Gets the execution state of the app before this activation. */
-  var previousExecutionState: ApplicationExecutionState = js.native
+  var previousExecutionState: ApplicationExecutionState
   /** Gets the splash screen object that provides information about the transition from the splash screen to the activated app. */
-  var splashScreen: SplashScreen = js.native
+  var splashScreen: SplashScreen
   /** Gets the ID of the source that was invoked to launch the application. */
-  var tileId: String = js.native
+  var tileId: String
+}
+
+object WebUILaunchActivatedEventArgs {
+  @scala.inline
+  def apply(
+    activatedOperation: ActivatedOperation,
+    arguments: String,
+    currentlyShownApplicationViewId: Double,
+    kind: ActivationKind,
+    prelaunchActivated: Boolean,
+    previousExecutionState: ApplicationExecutionState,
+    splashScreen: SplashScreen,
+    tileId: String
+  ): WebUILaunchActivatedEventArgs = {
+    val __obj = js.Dynamic.literal(activatedOperation = activatedOperation.asInstanceOf[js.Any], arguments = arguments.asInstanceOf[js.Any], currentlyShownApplicationViewId = currentlyShownApplicationViewId.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], prelaunchActivated = prelaunchActivated.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any], tileId = tileId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebUILaunchActivatedEventArgs]
+  }
 }
 

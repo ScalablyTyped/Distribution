@@ -9,28 +9,28 @@ import scala.scalajs.js.annotation._
 
 trait ToastrResponse extends js.Object {
   /**
-  	 * The datetime the toast was closed, if the state is hidden.
-  	 */
+    * The datetime the toast was closed, if the state is hidden.
+    */
   var endTime: js.UndefOr[Date] = js.undefined
   /**
-  	 * The event's toast details.
-  	 */
+    * The event's toast details.
+    */
   var map: ToastMap
   /**
-  	 * The toastr options.
-  	 */
+    * The toastr options.
+    */
   var options: ToastrOptions
   /**
-  	 * The datetime the toast was opened.
-  	 */
+    * The datetime the toast was opened.
+    */
   var startTime: Date
   /**
-  	 * The current state of the toast.
-  	 */
+    * The current state of the toast.
+    */
   var state: visible | hidden
   /**
-  	 * The internal toast id.
-  	 */
+    * The internal toast id.
+    */
   var toastId: Double
 }
 

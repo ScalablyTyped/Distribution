@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Pre-compiled SQL statement.
   */
-@JSGlobal("SqliteStatement")
 @js.native
-class SqliteStatement () extends js.Object {
+trait SqliteStatement extends js.Object {
   def bindBlob(index: Double, bytes: String): Unit = js.native
   def bindBlob(index: Double, bytes: js.Array[Double]): Unit = js.native
   /**

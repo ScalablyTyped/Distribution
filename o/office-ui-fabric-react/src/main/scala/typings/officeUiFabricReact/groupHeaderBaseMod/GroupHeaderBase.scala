@@ -12,6 +12,8 @@ class GroupHeaderBase protected ()
   extends Component[IGroupHeaderProps, IGroupHeaderState, js.Any] {
   def this(props: IGroupHeaderProps) = this()
   var _classNames: js.Any = js.native
+  var _defaultCheckboxRender: js.Any = js.native
+  var _fastDefaultCheckboxRender: js.Any = js.native
   var _onHeaderClick: js.Any = js.native
   var _onRenderTitle: js.Any = js.native
   var _onToggleCollapse: js.Any = js.native

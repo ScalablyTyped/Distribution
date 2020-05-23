@@ -5,12 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-@JSGlobal("Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs")
-@js.native
-abstract class XboxLiveEndpointPairStateChangedEventArgs () extends js.Object {
+trait XboxLiveEndpointPairStateChangedEventArgs extends js.Object {
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var newState: XboxLiveEndpointPairState = js.native
+  var newState: XboxLiveEndpointPairState
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var oldState: XboxLiveEndpointPairState = js.native
+  var oldState: XboxLiveEndpointPairState
+}
+
+object XboxLiveEndpointPairStateChangedEventArgs {
+  @scala.inline
+  def apply(newState: XboxLiveEndpointPairState, oldState: XboxLiveEndpointPairState): XboxLiveEndpointPairStateChangedEventArgs = {
+    val __obj = js.Dynamic.literal(newState = newState.asInstanceOf[js.Any], oldState = oldState.asInstanceOf[js.Any])
+    __obj.asInstanceOf[XboxLiveEndpointPairStateChangedEventArgs]
+  }
 }
 

@@ -1,9 +1,9 @@
 package typings.googleAnalytics.UniversalAnalytics
 
-import typings.googleAnalytics.AnonEventAction
-import typings.googleAnalytics.AnonEventCategory
-import typings.googleAnalytics.AnonSocialAction
-import typings.googleAnalytics.AnonTimingCategory
+import typings.googleAnalytics.anon.EventAction
+import typings.googleAnalytics.anon.EventCategory
+import typings.googleAnalytics.anon.SocialAction
+import typings.googleAnalytics.anon.TimingCategory
 import typings.googleAnalytics.googleAnalyticsStrings.create
 import typings.googleAnalytics.googleAnalyticsStrings.event
 import typings.googleAnalytics.googleAnalyticsStrings.pageview
@@ -41,8 +41,8 @@ trait ga extends js.Object {
   def apply(command: remove): Unit = js.native
   def apply(command: require, pluginName: String): Unit = js.native
   def apply(command: require, pluginName: String, pluginOptions: js.Any): Unit = js.native
-  def apply(command: send, fieldsObject: AnonEventCategory): Unit = js.native
   def apply(command: send, fieldsObject: FieldsObject): Unit = js.native
+  def apply(command: send, fieldsObject: EventCategory): Unit = js.native
   def apply(command: send, hitType: event, eventCategory: String, eventAction: String): Unit = js.native
   def apply(command: send, hitType: event, eventCategory: String, eventAction: String, eventLabel: String): Unit = js.native
   def apply(
@@ -62,11 +62,11 @@ trait ga extends js.Object {
     eventValue: Double,
     fieldsObject: FieldsObject
   ): Unit = js.native
-  def apply(command: send, hitType: event, fieldsObject: AnonEventAction): Unit = js.native
+  def apply(command: send, hitType: event, fieldsObject: EventAction): Unit = js.native
   def apply(command: send, hitType: pageview, page: String): Unit = js.native
-  def apply(command: send, hitType: social, fieldsObject: AnonSocialAction): Unit = js.native
+  def apply(command: send, hitType: social, fieldsObject: SocialAction): Unit = js.native
   def apply(command: send, hitType: social, socialNetwork: String, socialAction: String, socialTarget: String): Unit = js.native
-  def apply(command: send, hitType: timing, fieldsObject: AnonTimingCategory): Unit = js.native
+  def apply(command: send, hitType: timing, fieldsObject: TimingCategory): Unit = js.native
   def apply(command: send, hitType: timing, timingCategory: String, timingVar: String, timingValue: Double): Unit = js.native
   def apply(readyCallback: js.Function1[/* defaultTracker */ js.UndefOr[Tracker], Unit]): Unit = js.native
   def create(trackingId: String): Tracker = js.native

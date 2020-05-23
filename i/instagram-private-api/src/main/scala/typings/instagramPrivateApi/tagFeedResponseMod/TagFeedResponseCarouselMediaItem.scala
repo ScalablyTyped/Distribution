@@ -31,21 +31,21 @@ object TagFeedResponseCarouselMediaItem {
     original_height: Double,
     original_width: Double,
     pk: String,
-    is_dash_eligible: Int | Double = null,
-    number_of_qualities: Int | Double = null,
+    is_dash_eligible: js.UndefOr[Double] = js.undefined,
+    number_of_qualities: js.UndefOr[Double] = js.undefined,
     usertags: TagFeedResponseUsertags = null,
     video_codec: String = null,
     video_dash_manifest: String = null,
-    video_duration: Int | Double = null,
+    video_duration: js.UndefOr[Double] = js.undefined,
     video_versions: js.Array[TagFeedResponseVideoVersionsItem] = null
   ): TagFeedResponseCarouselMediaItem = {
     val __obj = js.Dynamic.literal(carousel_parent_id = carousel_parent_id.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image_versions2 = image_versions2.asInstanceOf[js.Any], media_type = media_type.asInstanceOf[js.Any], original_height = original_height.asInstanceOf[js.Any], original_width = original_width.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any])
-    if (is_dash_eligible != null) __obj.updateDynamic("is_dash_eligible")(is_dash_eligible.asInstanceOf[js.Any])
-    if (number_of_qualities != null) __obj.updateDynamic("number_of_qualities")(number_of_qualities.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_dash_eligible)) __obj.updateDynamic("is_dash_eligible")(is_dash_eligible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(number_of_qualities)) __obj.updateDynamic("number_of_qualities")(number_of_qualities.get.asInstanceOf[js.Any])
     if (usertags != null) __obj.updateDynamic("usertags")(usertags.asInstanceOf[js.Any])
     if (video_codec != null) __obj.updateDynamic("video_codec")(video_codec.asInstanceOf[js.Any])
     if (video_dash_manifest != null) __obj.updateDynamic("video_dash_manifest")(video_dash_manifest.asInstanceOf[js.Any])
-    if (video_duration != null) __obj.updateDynamic("video_duration")(video_duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(video_duration)) __obj.updateDynamic("video_duration")(video_duration.get.asInstanceOf[js.Any])
     if (video_versions != null) __obj.updateDynamic("video_versions")(video_versions.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagFeedResponseCarouselMediaItem]
   }

@@ -136,7 +136,7 @@ object Model {
   @scala.inline
   def apply(
     allowMouseWheel: js.UndefOr[Boolean] = js.undefined,
-    animationSpeed: Int | Double = null,
+    animationSpeed: js.UndefOr[Double] = js.undefined,
     change: /* e */ ChangeEventArgs => Unit = null,
     create: /* e */ CreateEventArgs => Unit = null,
     cssClass: String = null,
@@ -147,10 +147,10 @@ object Model {
     enabled: js.UndefOr[Boolean] = js.undefined,
     height: String = null,
     htmlAttributes: js.Any = null,
-    incrementStep: Int | Double = null,
-    largeStep: Int | Double = null,
-    maxValue: Int | Double = null,
-    minValue: Int | Double = null,
+    incrementStep: js.UndefOr[Double] = js.undefined,
+    largeStep: js.UndefOr[Double] = js.undefined,
+    maxValue: js.UndefOr[Double] = js.undefined,
+    minValue: js.UndefOr[Double] = js.undefined,
     orientation: Orientation | String = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     renderingTicks: /* e */ RenderingTicksEventArgs => Unit = null,
@@ -161,46 +161,46 @@ object Model {
     showTooltip: js.UndefOr[Boolean] = js.undefined,
     slide: /* e */ SlideEventArgs => Unit = null,
     sliderType: sliderType | String = null,
-    smallStep: Int | Double = null,
+    smallStep: js.UndefOr[Double] = js.undefined,
     start: /* e */ StartEventArgs => Unit = null,
     stop: /* e */ StopEventArgs => Unit = null,
     tooltipChange: /* e */ TooltipChangeEventArgs => Unit = null,
-    value: Int | Double = null,
+    value: js.UndefOr[Double] = js.undefined,
     values: js.Array[_] = null,
     width: String = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowMouseWheel)) __obj.updateDynamic("allowMouseWheel")(allowMouseWheel.asInstanceOf[js.Any])
-    if (animationSpeed != null) __obj.updateDynamic("animationSpeed")(animationSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowMouseWheel)) __obj.updateDynamic("allowMouseWheel")(allowMouseWheel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationSpeed)) __obj.updateDynamic("animationSpeed")(animationSpeed.get.asInstanceOf[js.Any])
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
-    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes.asInstanceOf[js.Any])
-    if (incrementStep != null) __obj.updateDynamic("incrementStep")(incrementStep.asInstanceOf[js.Any])
-    if (largeStep != null) __obj.updateDynamic("largeStep")(largeStep.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(incrementStep)) __obj.updateDynamic("incrementStep")(incrementStep.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(largeStep)) __obj.updateDynamic("largeStep")(largeStep.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minValue)) __obj.updateDynamic("minValue")(minValue.get.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     if (renderingTicks != null) __obj.updateDynamic("renderingTicks")(js.Any.fromFunction1(renderingTicks))
-    if (!js.isUndefined(showButtons)) __obj.updateDynamic("showButtons")(showButtons.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner.asInstanceOf[js.Any])
-    if (!js.isUndefined(showScale)) __obj.updateDynamic("showScale")(showScale.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSmallTicks)) __obj.updateDynamic("showSmallTicks")(showSmallTicks.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip.asInstanceOf[js.Any])
+    if (!js.isUndefined(showButtons)) __obj.updateDynamic("showButtons")(showButtons.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showScale)) __obj.updateDynamic("showScale")(showScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSmallTicks)) __obj.updateDynamic("showSmallTicks")(showSmallTicks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip.get.asInstanceOf[js.Any])
     if (slide != null) __obj.updateDynamic("slide")(js.Any.fromFunction1(slide))
     if (sliderType != null) __obj.updateDynamic("sliderType")(sliderType.asInstanceOf[js.Any])
-    if (smallStep != null) __obj.updateDynamic("smallStep")(smallStep.asInstanceOf[js.Any])
+    if (!js.isUndefined(smallStep)) __obj.updateDynamic("smallStep")(smallStep.get.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
     if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction1(stop))
     if (tooltipChange != null) __obj.updateDynamic("tooltipChange")(js.Any.fromFunction1(tooltipChange))
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]

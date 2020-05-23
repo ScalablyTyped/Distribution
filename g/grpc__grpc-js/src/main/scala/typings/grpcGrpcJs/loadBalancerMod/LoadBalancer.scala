@@ -1,6 +1,7 @@
 package typings.grpcGrpcJs.loadBalancerMod
 
 import typings.grpcGrpcJs.loadBalancingConfigMod.LoadBalancingConfig
+import typings.grpcGrpcJs.subchannelMod.SubchannelAddress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +34,7 @@ trait LoadBalancer extends js.Object {
     * transition to CONNECTING if in TRANSIENT_FAILURE.
     */
   def resetBackoff(): Unit = js.native
-  def updateAddressList(addressList: js.Array[String]): Unit = js.native
+  def updateAddressList(addressList: js.Array[SubchannelAddress]): Unit = js.native
   /**
     * Gives the load balancer a new list of addresses to start connecting to.
     * The load balancer will start establishing connections with the new list,
@@ -43,6 +44,6 @@ trait LoadBalancer extends js.Object {
     * @param lbConfig The load balancing config object from the service config,
     *     if one was provided
     */
-  def updateAddressList(addressList: js.Array[String], lbConfig: LoadBalancingConfig): Unit = js.native
+  def updateAddressList(addressList: js.Array[SubchannelAddress], lbConfig: LoadBalancingConfig): Unit = js.native
 }
 

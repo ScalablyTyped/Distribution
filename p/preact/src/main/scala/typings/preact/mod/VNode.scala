@@ -1,6 +1,6 @@
 package typings.preact.mod
 
-import typings.preact.AnonChildren
+import typings.preact.anon.Children
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait VNode[P] extends js.Object {
   		 */
   var endTime: js.UndefOr[Double] = js.undefined
   var key: Key
-  var props: P with AnonChildren
+  var props: P with Children
   /**
   		 * ref is not guaranteed by React.ReactElement, for compatiblity reasons
   		 * with popular react libs we define it as optional too
@@ -35,17 +35,17 @@ object VNode {
   @scala.inline
   def apply[P](
     key: Key,
-    props: P with AnonChildren,
+    props: P with Children,
     `type`: ComponentType[P] | String,
-    endTime: Int | Double = null,
-    ref: Ref[_] = null,
-    startTime: Int | Double = null
+    endTime: js.UndefOr[Double] = js.undefined,
+    ref: js.UndefOr[Null | Ref[_]] = js.undefined,
+    startTime: js.UndefOr[Double] = js.undefined
   ): VNode[P] = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(endTime)) __obj.updateDynamic("endTime")(endTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(startTime)) __obj.updateDynamic("startTime")(startTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VNode[P]]
   }
 }

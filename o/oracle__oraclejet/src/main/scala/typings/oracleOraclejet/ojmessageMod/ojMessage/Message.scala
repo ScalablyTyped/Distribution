@@ -26,7 +26,7 @@ trait Message extends js.Object {
 object Message {
   @scala.inline
   def apply(
-    autoTimeout: Int | Double = null,
+    autoTimeout: js.UndefOr[Double] = js.undefined,
     category: String = null,
     closeAffordance: none | defaults = null,
     detail: String = null,
@@ -37,7 +37,7 @@ object Message {
     timestamp: String = null
   ): Message = {
     val __obj = js.Dynamic.literal()
-    if (autoTimeout != null) __obj.updateDynamic("autoTimeout")(autoTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoTimeout)) __obj.updateDynamic("autoTimeout")(autoTimeout.get.asInstanceOf[js.Any])
     if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
     if (closeAffordance != null) __obj.updateDynamic("closeAffordance")(closeAffordance.asInstanceOf[js.Any])
     if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])

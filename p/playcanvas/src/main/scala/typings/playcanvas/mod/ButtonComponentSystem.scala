@@ -5,17 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @class
-  * @name pc.ButtonComponentSystem
-  * @augments pc.ComponentSystem
-  * @classdesc Manages creation of {@link pc.ButtonComponent}s.
-  * @description Create a new ButtonComponentSystem.
-  * @param {pc.Application} app - The application.
+  * Create a new ButtonComponentSystem.
+  * @param app - The application.
   */
 @JSImport("playcanvas", "ButtonComponentSystem")
 @js.native
 class ButtonComponentSystem protected ()
-  extends typings.playcanvas.pc.ButtonComponentSystem {
+  extends typings.playcanvas.pc.EventHandler {
   def this(app: typings.playcanvas.pc.Application) = this()
 }
 

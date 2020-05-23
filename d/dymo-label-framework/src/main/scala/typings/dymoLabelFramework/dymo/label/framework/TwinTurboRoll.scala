@@ -1,6 +1,5 @@
 package typings.dymoLabelFramework.dymo.label.framework
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object TwinTurboRoll extends js.Object {
   /** Indicates to print to the right roll only. */
   @js.native
   sealed trait Right extends TwinTurboRoll
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TwinTurboRoll with Double] = js.native
-  /* 2 */ @js.native
-  object Auto extends TopLevel[Auto with Double]
-  
-  /* 0 */ @js.native
-  object Left extends TopLevel[Left with Double]
-  
-  /* 1 */ @js.native
-  object Right extends TopLevel[Right with Double]
   
 }
 

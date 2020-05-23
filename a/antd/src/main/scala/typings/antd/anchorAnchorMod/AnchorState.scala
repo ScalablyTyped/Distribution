@@ -11,8 +11,7 @@ trait AnchorState extends js.Object {
 object AnchorState {
   @scala.inline
   def apply(activeLink: String = null): AnchorState = {
-    val __obj = js.Dynamic.literal()
-    if (activeLink != null) __obj.updateDynamic("activeLink")(activeLink.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(activeLink = activeLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnchorState]
   }
 }

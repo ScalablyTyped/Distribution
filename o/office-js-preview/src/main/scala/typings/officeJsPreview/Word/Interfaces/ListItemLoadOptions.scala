@@ -45,10 +45,10 @@ object ListItemLoadOptions {
     siblingIndex: js.UndefOr[Boolean] = js.undefined
   ): ListItemLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (!js.isUndefined(listString)) __obj.updateDynamic("listString")(listString.asInstanceOf[js.Any])
-    if (!js.isUndefined(siblingIndex)) __obj.updateDynamic("siblingIndex")(siblingIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(listString)) __obj.updateDynamic("listString")(listString.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(siblingIndex)) __obj.updateDynamic("siblingIndex")(siblingIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListItemLoadOptions]
   }
 }

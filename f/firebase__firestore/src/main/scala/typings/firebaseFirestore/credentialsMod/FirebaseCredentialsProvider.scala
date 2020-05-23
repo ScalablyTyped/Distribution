@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/api/credentials", "FirebaseCredentialsProvider")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/api/credentials", "FirebaseCredentialsProvider")
 @js.native
 class FirebaseCredentialsProvider protected () extends CredentialsProvider {
   def this(authProvider: Provider[FirebaseAuthInternalName]) = this()

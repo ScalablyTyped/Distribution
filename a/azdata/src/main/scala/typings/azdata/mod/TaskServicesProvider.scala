@@ -20,10 +20,10 @@ object TaskServicesProvider {
     providerId: String,
     registerOnTaskCreated: js.Function1[/* response */ TaskInfo, _] => Unit,
     registerOnTaskStatusChanged: js.Function1[/* response */ TaskProgressInfo, _] => Unit,
-    handle: Int | Double = null
+    handle: js.UndefOr[Double] = js.undefined
   ): TaskServicesProvider = {
     val __obj = js.Dynamic.literal(cancelTask = js.Any.fromFunction1(cancelTask), getAllTasks = js.Any.fromFunction1(getAllTasks), providerId = providerId.asInstanceOf[js.Any], registerOnTaskCreated = js.Any.fromFunction1(registerOnTaskCreated), registerOnTaskStatusChanged = js.Any.fromFunction1(registerOnTaskStatusChanged))
-    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
+    if (!js.isUndefined(handle)) __obj.updateDynamic("handle")(handle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskServicesProvider]
   }
 }

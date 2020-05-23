@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/util/obj", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/util/obj", JSImport.Namespace)
 @js.native
 object objMod extends js.Object {
   def forEach[V](obj: Dict[V], fn: js.Function2[/* key */ String, /* val */ V, Unit]): Unit = js.native

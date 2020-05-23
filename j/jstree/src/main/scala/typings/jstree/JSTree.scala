@@ -1,6 +1,6 @@
 package typings.jstree
 
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -60,7 +60,7 @@ trait JSTree extends JQuery {
     * @return {DOMElement}
     */
   def _firstChild(dom: HTMLElement): HTMLElement = js.native
-  def _kbevent_to_func(e: Event_): js.Function1[/* e */ Event_, Unit] = js.native
+  def _kbevent_to_func(e: Event): js.Function1[/* e */ Event, Unit] = js.native
   /**
     * handles the actual loading of a node. Used only internally.
     * @private

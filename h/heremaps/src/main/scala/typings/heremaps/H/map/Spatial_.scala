@@ -1,6 +1,6 @@
 package typings.heremaps.H.map
 
-import typings.heremaps.H.map.Spatial.Options
+import typings.heremaps.H.map.ArrowStyle.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,16 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * This class represents a spatial map object which provides its projected geometry.
   */
-@JSGlobal("H.map.Spatial")
 @js.native
-class Spatial_ protected () extends Object {
-  /**
-    * Constructor
-    * @param isClosed {boolean} - Indicates whether this spatial object represents a closed shape
-    * @param opt_options {H.map.Spatial.Options=} - The options to apply
-    */
-  def this(isClosed: Boolean) = this()
-  def this(isClosed: Boolean, opt_options: Options) = this()
+trait Spatial_ extends Object {
   /**
     * To get the arrow style of this spatial object or undefined if no style is defined. A returned arrow style is treated as immutable and must not be modified afterwards to prevent
     * inconsistancies!
@@ -41,7 +33,7 @@ class Spatial_ protected () extends Object {
     */
   def setArrows(): Spatial = js.native
   def setArrows(opt_arrows: ArrowStyle): Spatial = js.native
-  def setArrows(opt_arrows: typings.heremaps.H.map.ArrowStyle.Options): Spatial = js.native
+  def setArrows(opt_arrows: Options): Spatial = js.native
   /**
     * To set the drawing style of this object. If the passed opt_style argument is an instance of H.map.SpatialStyle it is treated as immutable and must not be modified afterwards to prevent
     * inconsistancies!

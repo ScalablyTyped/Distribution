@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.BulletGraph
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object TickPosition extends js.Object {
   //string
   @js.native
   sealed trait Cross extends TickPosition
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TickPosition with Double] = js.native
-  /* 1 */ @js.native
-  object Above extends TopLevel[Above with Double]
-  
-  /* 0 */ @js.native
-  object Below extends TopLevel[Below with Double]
-  
-  /* 2 */ @js.native
-  object Cross extends TopLevel[Cross with Double]
   
 }
 

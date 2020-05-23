@@ -1,7 +1,7 @@
 package typings.webgme.GmeConfig
 
-import typings.webgme.AnonDSN
-import typings.webgme.AnonLevelString
+import typings.webgme.anon.DSN
+import typings.webgme.anon.LevelString
 import typings.webgme.webgmeStrings.basic
 import typings.webgme.webgmeStrings.basic2
 import typings.webgme.webgmeStrings.basic3
@@ -34,7 +34,7 @@ trait ClientOptions extends js.Object {
     * 
     * Options passed to the raven-client, if not specified {release: } will be passed.
     */
-  var errorReporting: AnonDSN
+  var errorReporting: DSN
   /**
     * When debug is activated in the browser 
     * (type localStorage.debug = gme* in the 
@@ -42,7 +42,7 @@ trait ClientOptions extends js.Object {
     * this level will not be printed.
     * e.g. debug, info, warn, error
     */
-  var log: AnonLevelString
+  var log: LevelString
 }
 
 object ClientOptions {
@@ -50,8 +50,8 @@ object ClientOptions {
   def apply(
     appDir: String,
     defaultConnectionRouter: basic | basic2 | basic3,
-    errorReporting: AnonDSN,
-    log: AnonLevelString
+    errorReporting: DSN,
+    log: LevelString
   ): ClientOptions = {
     val __obj = js.Dynamic.literal(appDir = appDir.asInstanceOf[js.Any], defaultConnectionRouter = defaultConnectionRouter.asInstanceOf[js.Any], errorReporting = errorReporting.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]

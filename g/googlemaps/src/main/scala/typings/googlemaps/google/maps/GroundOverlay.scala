@@ -5,13 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.maps.GroundOverlay")
 @js.native
-class GroundOverlay protected () extends MVCObject {
-  def this(url: String, bounds: LatLngBounds) = this()
-  def this(url: String, bounds: LatLngBoundsLiteral) = this()
-  def this(url: String, bounds: LatLngBoundsLiteral, opts: GroundOverlayOptions) = this()
-  def this(url: String, bounds: LatLngBounds, opts: GroundOverlayOptions) = this()
+trait GroundOverlay extends MVCObject {
   def getBounds(): LatLngBounds = js.native
   def getMap(): Map[Element] = js.native
   def getOpacity(): Double = js.native

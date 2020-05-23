@@ -1,5 +1,6 @@
 package typings.typedoc
 
+import typings.typedoc.anon.PickIndexedAccessTypetype
 import typings.typedoc.modelsMod.IndexedAccessType
 import typings.typedoc.serializationComponentsMod.TypeSerializerComponent
 import scala.scalajs.js

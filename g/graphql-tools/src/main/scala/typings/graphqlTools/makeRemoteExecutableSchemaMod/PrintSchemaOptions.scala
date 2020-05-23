@@ -29,7 +29,7 @@ object PrintSchemaOptions {
   @scala.inline
   def apply(commentDescriptions: js.UndefOr[Boolean] = js.undefined): PrintSchemaOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(commentDescriptions)) __obj.updateDynamic("commentDescriptions")(commentDescriptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(commentDescriptions)) __obj.updateDynamic("commentDescriptions")(commentDescriptions.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintSchemaOptions]
   }
 }

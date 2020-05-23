@@ -1,7 +1,7 @@
 package typings.amcharts.mod.AmCharts
 
-import typings.amcharts.AnonDataItem
 import typings.amcharts.amChartMod.default
+import typings.amcharts.anon.DataItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -275,7 +275,7 @@ class AmLegend ()
     * @param handler The event handler.
     */
   /* CompleteClass */
-  override def addListener(`type`: String, handler: js.Function1[/* e */ AnonDataItem, Unit]): Unit = js.native
+  override def addListener(`type`: String, handler: js.Function1[/* e */ DataItem, Unit]): Unit = js.native
   /**
     * Removes event listener from chart object.
     */

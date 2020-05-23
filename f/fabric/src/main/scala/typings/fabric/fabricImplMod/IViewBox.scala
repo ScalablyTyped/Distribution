@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation._
 
 trait IViewBox extends js.Object {
   /**
-  	 * Height of viewbox
-  	 */
+    * Height of viewbox
+    */
   var height: Double
   /**
-  	 * Width of viewbox
-  	 */
+    * Width of viewbox
+    */
   var width: Double
   /**
-  	 * x-cooridnate of viewbox
-  	 */
+    * x-cooridnate of viewbox
+    */
   var x: Double
   /**
-  	 * y-coordinate of viewbox
-  	 */
+    * y-coordinate of viewbox
+    */
   var y: Double
 }
 

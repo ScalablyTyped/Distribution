@@ -1,17 +1,17 @@
 package typings.datatablesNetColreorder.DataTables
 
-import typings.datatablesNetColreorder.AnonMove
+import typings.datatablesNetColreorder.anon.Move
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Api extends js.Object {
-  var colReorder: AnonMove
+  var colReorder: Move
 }
 
 object Api {
   @scala.inline
-  def apply(colReorder: AnonMove): Api = {
+  def apply(colReorder: Move): Api = {
     val __obj = js.Dynamic.literal(colReorder = colReorder.asInstanceOf[js.Any])
     __obj.asInstanceOf[Api]
   }

@@ -11,9 +11,9 @@ trait UpdateChartSpecRequest extends js.Object {
 
 object UpdateChartSpecRequest {
   @scala.inline
-  def apply(chartId: Int | Double = null, spec: ChartSpec = null): UpdateChartSpecRequest = {
+  def apply(chartId: js.UndefOr[Double] = js.undefined, spec: ChartSpec = null): UpdateChartSpecRequest = {
     val __obj = js.Dynamic.literal()
-    if (chartId != null) __obj.updateDynamic("chartId")(chartId.asInstanceOf[js.Any])
+    if (!js.isUndefined(chartId)) __obj.updateDynamic("chartId")(chartId.get.asInstanceOf[js.Any])
     if (spec != null) __obj.updateDynamic("spec")(spec.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateChartSpecRequest]
   }

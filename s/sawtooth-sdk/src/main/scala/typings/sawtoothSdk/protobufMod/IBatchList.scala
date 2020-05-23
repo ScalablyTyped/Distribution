@@ -11,9 +11,9 @@ trait IBatchList extends js.Object {
 
 object IBatchList {
   @scala.inline
-  def apply(batches: js.Array[IBatch] = null): IBatchList = {
+  def apply(batches: js.UndefOr[Null | js.Array[IBatch]] = js.undefined): IBatchList = {
     val __obj = js.Dynamic.literal()
-    if (batches != null) __obj.updateDynamic("batches")(batches.asInstanceOf[js.Any])
+    if (!js.isUndefined(batches)) __obj.updateDynamic("batches")(batches.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBatchList]
   }
 }

@@ -19,22 +19,22 @@ object AnimationOptions {
   @scala.inline
   def apply(
     imageURL: String,
-    delta: Int | Double = null,
-    distance: Int | Double = null,
-    numberOfFrame: Int | Double = null,
-    offsetx: Int | Double = null,
-    offsety: Int | Double = null,
-    rate: Int | Double = null,
-    `type`: Int | Double = null
+    delta: js.UndefOr[Double] = js.undefined,
+    distance: js.UndefOr[Double] = js.undefined,
+    numberOfFrame: js.UndefOr[Double] = js.undefined,
+    offsetx: js.UndefOr[Double] = js.undefined,
+    offsety: js.UndefOr[Double] = js.undefined,
+    rate: js.UndefOr[Double] = js.undefined,
+    `type`: js.UndefOr[Double] = js.undefined
   ): AnimationOptions = {
     val __obj = js.Dynamic.literal(imageURL = imageURL.asInstanceOf[js.Any])
-    if (delta != null) __obj.updateDynamic("delta")(delta.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (numberOfFrame != null) __obj.updateDynamic("numberOfFrame")(numberOfFrame.asInstanceOf[js.Any])
-    if (offsetx != null) __obj.updateDynamic("offsetx")(offsetx.asInstanceOf[js.Any])
-    if (offsety != null) __obj.updateDynamic("offsety")(offsety.asInstanceOf[js.Any])
-    if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(delta)) __obj.updateDynamic("delta")(delta.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfFrame)) __obj.updateDynamic("numberOfFrame")(numberOfFrame.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetx)) __obj.updateDynamic("offsetx")(offsetx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsety)) __obj.updateDynamic("offsety")(offsety.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rate)) __obj.updateDynamic("rate")(rate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationOptions]
   }
 }

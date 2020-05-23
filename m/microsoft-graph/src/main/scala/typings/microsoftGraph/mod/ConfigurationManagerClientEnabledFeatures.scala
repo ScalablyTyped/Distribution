@@ -30,12 +30,12 @@ object ConfigurationManagerClientEnabledFeatures {
     windowsUpdateForBusiness: js.UndefOr[Boolean] = js.undefined
   ): ConfigurationManagerClientEnabledFeatures = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(compliancePolicy)) __obj.updateDynamic("compliancePolicy")(compliancePolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(deviceConfiguration)) __obj.updateDynamic("deviceConfiguration")(deviceConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(inventory)) __obj.updateDynamic("inventory")(inventory.asInstanceOf[js.Any])
-    if (!js.isUndefined(modernApps)) __obj.updateDynamic("modernApps")(modernApps.asInstanceOf[js.Any])
-    if (!js.isUndefined(resourceAccess)) __obj.updateDynamic("resourceAccess")(resourceAccess.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowsUpdateForBusiness)) __obj.updateDynamic("windowsUpdateForBusiness")(windowsUpdateForBusiness.asInstanceOf[js.Any])
+    if (!js.isUndefined(compliancePolicy)) __obj.updateDynamic("compliancePolicy")(compliancePolicy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deviceConfiguration)) __obj.updateDynamic("deviceConfiguration")(deviceConfiguration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inventory)) __obj.updateDynamic("inventory")(inventory.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(modernApps)) __obj.updateDynamic("modernApps")(modernApps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resourceAccess)) __obj.updateDynamic("resourceAccess")(resourceAccess.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowsUpdateForBusiness)) __obj.updateDynamic("windowsUpdateForBusiness")(windowsUpdateForBusiness.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationManagerClientEnabledFeatures]
   }
 }

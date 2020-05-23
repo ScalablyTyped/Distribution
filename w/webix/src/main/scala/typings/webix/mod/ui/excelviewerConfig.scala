@@ -116,13 +116,13 @@ object excelviewerConfig {
     borderless: js.UndefOr[Boolean] = js.undefined,
     checkboxRefresh: js.UndefOr[Boolean] = js.undefined,
     clipboard: Boolean | String = null,
-    columnWidth: Int | Double = null,
+    columnWidth: js.UndefOr[Double] = js.undefined,
     columns: js.Array[_] = null,
     container: String | HTMLElement = null,
     css: js.Any = null,
     data: String | js.Array[_] = null,
-    datafetch: Int | Double = null,
-    datathrottle: Int | Double = null,
+    datafetch: js.UndefOr[Double] = js.undefined,
+    datathrottle: js.UndefOr[Double] = js.undefined,
     datatype: String = null,
     delimiter: js.Any = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
@@ -139,29 +139,29 @@ object excelviewerConfig {
     fixedRowHeight: js.UndefOr[Boolean] = js.undefined,
     footer: js.UndefOr[Boolean] = js.undefined,
     form: String = null,
-    gravity: Int | Double = null,
+    gravity: js.UndefOr[Double] = js.undefined,
     header: js.UndefOr[Boolean] = js.undefined,
-    headerRowHeight: Int | Double = null,
+    headerRowHeight: js.UndefOr[Double] = js.undefined,
     headermenu: js.Any = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     hidden: js.UndefOr[Boolean] = js.undefined,
     hover: String = null,
     id: String | Double = null,
-    keyPressTimeout: Int | Double = null,
-    leftSplit: Int | Double = null,
+    keyPressTimeout: js.UndefOr[Double] = js.undefined,
+    leftSplit: js.UndefOr[Double] = js.undefined,
     liveValidation: js.UndefOr[Boolean] = js.undefined,
-    loadahead: Int | Double = null,
+    loadahead: js.UndefOr[Double] = js.undefined,
     map: js.Any = null,
     math: js.UndefOr[Boolean] = js.undefined,
-    maxColumnWidth: Int | Double = null,
-    maxHeight: Int | Double = null,
-    maxRowHeight: Int | Double = null,
-    maxWidth: Int | Double = null,
-    minColumnWidth: Int | Double = null,
-    minHeight: Int | Double = null,
-    minRowHeight: Int | Double = null,
-    minWidth: Int | Double = null,
-    mouseEventDelay: Int | Double = null,
+    maxColumnWidth: js.UndefOr[Double] = js.undefined,
+    maxHeight: js.UndefOr[Double] = js.undefined,
+    maxRowHeight: js.UndefOr[Double] = js.undefined,
+    maxWidth: js.UndefOr[Double] = js.undefined,
+    minColumnWidth: js.UndefOr[Double] = js.undefined,
+    minHeight: js.UndefOr[Double] = js.undefined,
+    minRowHeight: js.UndefOr[Double] = js.undefined,
+    minWidth: js.UndefOr[Double] = js.undefined,
+    mouseEventDelay: js.UndefOr[Double] = js.undefined,
     multiselect: js.UndefOr[Boolean] = js.undefined,
     navigation: js.UndefOr[Boolean] = js.undefined,
     on: EventHash = null,
@@ -175,9 +175,9 @@ object excelviewerConfig {
     removeMissed: js.UndefOr[Boolean] = js.undefined,
     resizeColumn: js.Any = null,
     resizeRow: js.Any = null,
-    rightSplit: Int | Double = null,
-    rowHeight: Int | Double = null,
-    rowLineHeight: Int | Double = null,
+    rightSplit: js.UndefOr[Double] = js.undefined,
+    rowHeight: js.UndefOr[Double] = js.undefined,
+    rowLineHeight: js.UndefOr[Double] = js.undefined,
     rules: js.Any = null,
     save: js.Any = null,
     scheme: js.Any = null,
@@ -193,93 +193,93 @@ object excelviewerConfig {
     templateCopy: /* repeated */ js.Any => js.Any = null,
     toolbar: String = null,
     tooltip: js.Any = null,
-    topSplit: Int | Double = null,
+    topSplit: js.UndefOr[Double] = js.undefined,
     `type`: js.Any = null,
     undo: js.UndefOr[Boolean] = js.undefined,
     url: js.Any = null,
     view: String = null,
-    width: Int | Double = null,
-    yCount: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined,
+    yCount: js.UndefOr[Double] = js.undefined
   ): excelviewerConfig = {
     val __obj = js.Dynamic.literal()
     if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (!js.isUndefined(areaselect)) __obj.updateDynamic("areaselect")(areaselect.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoConfig)) __obj.updateDynamic("autoConfig")(autoConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoheight)) __obj.updateDynamic("autoheight")(autoheight.asInstanceOf[js.Any])
-    if (!js.isUndefined(autowidth)) __obj.updateDynamic("autowidth")(autowidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(areaselect)) __obj.updateDynamic("areaselect")(areaselect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoConfig)) __obj.updateDynamic("autoConfig")(autoConfig.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoheight)) __obj.updateDynamic("autoheight")(autoheight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autowidth)) __obj.updateDynamic("autowidth")(autowidth.get.asInstanceOf[js.Any])
     if (blockselect != null) __obj.updateDynamic("blockselect")(blockselect.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.asInstanceOf[js.Any])
-    if (!js.isUndefined(checkboxRefresh)) __obj.updateDynamic("checkboxRefresh")(checkboxRefresh.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkboxRefresh)) __obj.updateDynamic("checkboxRefresh")(checkboxRefresh.get.asInstanceOf[js.Any])
     if (clipboard != null) __obj.updateDynamic("clipboard")(clipboard.asInstanceOf[js.Any])
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnWidth)) __obj.updateDynamic("columnWidth")(columnWidth.get.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (datafetch != null) __obj.updateDynamic("datafetch")(datafetch.asInstanceOf[js.Any])
-    if (datathrottle != null) __obj.updateDynamic("datathrottle")(datathrottle.asInstanceOf[js.Any])
+    if (!js.isUndefined(datafetch)) __obj.updateDynamic("datafetch")(datafetch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(datathrottle)) __obj.updateDynamic("datathrottle")(datathrottle.get.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (drag != null) __obj.updateDynamic("drag")(drag.asInstanceOf[js.Any])
     if (dragColumn != null) __obj.updateDynamic("dragColumn")(dragColumn.asInstanceOf[js.Any])
     if (dragscroll != null) __obj.updateDynamic("dragscroll")(dragscroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(editMath)) __obj.updateDynamic("editMath")(editMath.asInstanceOf[js.Any])
+    if (!js.isUndefined(editMath)) __obj.updateDynamic("editMath")(editMath.get.asInstanceOf[js.Any])
     if (editValue != null) __obj.updateDynamic("editValue")(editValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.get.asInstanceOf[js.Any])
     if (editaction != null) __obj.updateDynamic("editaction")(editaction.asInstanceOf[js.Any])
-    if (!js.isUndefined(excelHeader)) __obj.updateDynamic("excelHeader")(excelHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(excelHeader)) __obj.updateDynamic("excelHeader")(excelHeader.get.asInstanceOf[js.Any])
     if (externalData != null) __obj.updateDynamic("externalData")(js.Any.fromFunction1(externalData))
     if (filterMode != null) __obj.updateDynamic("filterMode")(filterMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedRowHeight)) __obj.updateDynamic("fixedRowHeight")(fixedRowHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(footer)) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedRowHeight)) __obj.updateDynamic("fixedRowHeight")(fixedRowHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(footer)) __obj.updateDynamic("footer")(footer.get.asInstanceOf[js.Any])
     if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
-    if (gravity != null) __obj.updateDynamic("gravity")(gravity.asInstanceOf[js.Any])
-    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (headerRowHeight != null) __obj.updateDynamic("headerRowHeight")(headerRowHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(gravity)) __obj.updateDynamic("gravity")(gravity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerRowHeight)) __obj.updateDynamic("headerRowHeight")(headerRowHeight.get.asInstanceOf[js.Any])
     if (headermenu != null) __obj.updateDynamic("headermenu")(headermenu.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (keyPressTimeout != null) __obj.updateDynamic("keyPressTimeout")(keyPressTimeout.asInstanceOf[js.Any])
-    if (leftSplit != null) __obj.updateDynamic("leftSplit")(leftSplit.asInstanceOf[js.Any])
-    if (!js.isUndefined(liveValidation)) __obj.updateDynamic("liveValidation")(liveValidation.asInstanceOf[js.Any])
-    if (loadahead != null) __obj.updateDynamic("loadahead")(loadahead.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyPressTimeout)) __obj.updateDynamic("keyPressTimeout")(keyPressTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(leftSplit)) __obj.updateDynamic("leftSplit")(leftSplit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(liveValidation)) __obj.updateDynamic("liveValidation")(liveValidation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loadahead)) __obj.updateDynamic("loadahead")(loadahead.get.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (!js.isUndefined(math)) __obj.updateDynamic("math")(math.asInstanceOf[js.Any])
-    if (maxColumnWidth != null) __obj.updateDynamic("maxColumnWidth")(maxColumnWidth.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxRowHeight != null) __obj.updateDynamic("maxRowHeight")(maxRowHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minColumnWidth != null) __obj.updateDynamic("minColumnWidth")(minColumnWidth.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minRowHeight != null) __obj.updateDynamic("minRowHeight")(minRowHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (mouseEventDelay != null) __obj.updateDynamic("mouseEventDelay")(mouseEventDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiselect)) __obj.updateDynamic("multiselect")(multiselect.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigation)) __obj.updateDynamic("navigation")(navigation.asInstanceOf[js.Any])
+    if (!js.isUndefined(math)) __obj.updateDynamic("math")(math.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxColumnWidth)) __obj.updateDynamic("maxColumnWidth")(maxColumnWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRowHeight)) __obj.updateDynamic("maxRowHeight")(maxRowHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minColumnWidth)) __obj.updateDynamic("minColumnWidth")(minColumnWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minRowHeight)) __obj.updateDynamic("minRowHeight")(minRowHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mouseEventDelay)) __obj.updateDynamic("mouseEventDelay")(mouseEventDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiselect)) __obj.updateDynamic("multiselect")(multiselect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(navigation)) __obj.updateDynamic("navigation")(navigation.get.asInstanceOf[js.Any])
     if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
     if (onContext != null) __obj.updateDynamic("onContext")(onContext.asInstanceOf[js.Any])
     if (onDblClick != null) __obj.updateDynamic("onDblClick")(js.Any.fromFunction1(onDblClick))
     if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
     if (pager != null) __obj.updateDynamic("pager")(pager.asInstanceOf[js.Any])
-    if (!js.isUndefined(prerender)) __obj.updateDynamic("prerender")(prerender.asInstanceOf[js.Any])
+    if (!js.isUndefined(prerender)) __obj.updateDynamic("prerender")(prerender.get.asInstanceOf[js.Any])
     if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
-    if (!js.isUndefined(removeMissed)) __obj.updateDynamic("removeMissed")(removeMissed.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeMissed)) __obj.updateDynamic("removeMissed")(removeMissed.get.asInstanceOf[js.Any])
     if (resizeColumn != null) __obj.updateDynamic("resizeColumn")(resizeColumn.asInstanceOf[js.Any])
     if (resizeRow != null) __obj.updateDynamic("resizeRow")(resizeRow.asInstanceOf[js.Any])
-    if (rightSplit != null) __obj.updateDynamic("rightSplit")(rightSplit.asInstanceOf[js.Any])
-    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
-    if (rowLineHeight != null) __obj.updateDynamic("rowLineHeight")(rowLineHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightSplit)) __obj.updateDynamic("rightSplit")(rightSplit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowHeight)) __obj.updateDynamic("rowHeight")(rowHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowLineHeight)) __obj.updateDynamic("rowLineHeight")(rowLineHeight.get.asInstanceOf[js.Any])
     if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     if (save != null) __obj.updateDynamic("save")(save.asInstanceOf[js.Any])
     if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
     if (scroll != null) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollAlignY)) __obj.updateDynamic("scrollAlignY")(scrollAlignY.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollX)) __obj.updateDynamic("scrollX")(scrollX.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollY)) __obj.updateDynamic("scrollY")(scrollY.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollAlignY)) __obj.updateDynamic("scrollAlignY")(scrollAlignY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollX)) __obj.updateDynamic("scrollX")(scrollX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollY)) __obj.updateDynamic("scrollY")(scrollY.get.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
     if (spans != null) __obj.updateDynamic("spans")(spans.asInstanceOf[js.Any])
     if (subRowHeight != null) __obj.updateDynamic("subRowHeight")(subRowHeight.asInstanceOf[js.Any])
@@ -288,13 +288,13 @@ object excelviewerConfig {
     if (templateCopy != null) __obj.updateDynamic("templateCopy")(js.Any.fromFunction1(templateCopy))
     if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (topSplit != null) __obj.updateDynamic("topSplit")(topSplit.asInstanceOf[js.Any])
+    if (!js.isUndefined(topSplit)) __obj.updateDynamic("topSplit")(topSplit.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(undo)) __obj.updateDynamic("undo")(undo.asInstanceOf[js.Any])
+    if (!js.isUndefined(undo)) __obj.updateDynamic("undo")(undo.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (yCount != null) __obj.updateDynamic("yCount")(yCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yCount)) __obj.updateDynamic("yCount")(yCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[excelviewerConfig]
   }
 }

@@ -24,7 +24,7 @@ trait DisplayPropertiesInfo extends js.Object {
     * If set, updates the display's logical bounds origin along y-axis.
     * @see[See documentation for boundsOriginX parameter.]
     */
-  var boundsOriginY: Double
+  var boundsOriginY: js.UndefOr[Double] = js.undefined
   /**
     * If set, updates the display mode to the mode matching this value.
     * @since Chrome 52
@@ -86,22 +86,23 @@ trait DisplayPropertiesInfo extends js.Object {
 object DisplayPropertiesInfo {
   @scala.inline
   def apply(
-    boundsOriginY: Double,
-    boundsOriginX: Int | Double = null,
+    boundsOriginX: js.UndefOr[Double] = js.undefined,
+    boundsOriginY: js.UndefOr[Double] = js.undefined,
     displayMode: DisplayMode = null,
-    displayZoomFactor: Int | Double = null,
+    displayZoomFactor: js.UndefOr[Double] = js.undefined,
     isPrimary: js.UndefOr[Boolean] = js.undefined,
     isUnified: js.UndefOr[Boolean] = js.undefined,
     mirroringSourceId: String = null,
     overscan: Insets = null,
     rotation: `0` | `90` | `180` | `270` = null
   ): DisplayPropertiesInfo = {
-    val __obj = js.Dynamic.literal(boundsOriginY = boundsOriginY.asInstanceOf[js.Any])
-    if (boundsOriginX != null) __obj.updateDynamic("boundsOriginX")(boundsOriginX.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(boundsOriginX)) __obj.updateDynamic("boundsOriginX")(boundsOriginX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(boundsOriginY)) __obj.updateDynamic("boundsOriginY")(boundsOriginY.get.asInstanceOf[js.Any])
     if (displayMode != null) __obj.updateDynamic("displayMode")(displayMode.asInstanceOf[js.Any])
-    if (displayZoomFactor != null) __obj.updateDynamic("displayZoomFactor")(displayZoomFactor.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPrimary)) __obj.updateDynamic("isPrimary")(isPrimary.asInstanceOf[js.Any])
-    if (!js.isUndefined(isUnified)) __obj.updateDynamic("isUnified")(isUnified.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayZoomFactor)) __obj.updateDynamic("displayZoomFactor")(displayZoomFactor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPrimary)) __obj.updateDynamic("isPrimary")(isPrimary.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isUnified)) __obj.updateDynamic("isUnified")(isUnified.get.asInstanceOf[js.Any])
     if (mirroringSourceId != null) __obj.updateDynamic("mirroringSourceId")(mirroringSourceId.asInstanceOf[js.Any])
     if (overscan != null) __obj.updateDynamic("overscan")(overscan.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])

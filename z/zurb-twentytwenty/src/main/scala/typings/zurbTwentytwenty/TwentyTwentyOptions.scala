@@ -21,7 +21,7 @@ object TwentyTwentyOptions {
     after_label: String = null,
     before_label: String = null,
     click_to_move: js.UndefOr[Boolean] = js.undefined,
-    default_offset_pct: Int | Double = null,
+    default_offset_pct: js.UndefOr[Double] = js.undefined,
     move_slider_on_hover: js.UndefOr[Boolean] = js.undefined,
     move_with_handle_only: js.UndefOr[Boolean] = js.undefined,
     no_overlay: js.UndefOr[Boolean] = js.undefined,
@@ -30,11 +30,11 @@ object TwentyTwentyOptions {
     val __obj = js.Dynamic.literal()
     if (after_label != null) __obj.updateDynamic("after_label")(after_label.asInstanceOf[js.Any])
     if (before_label != null) __obj.updateDynamic("before_label")(before_label.asInstanceOf[js.Any])
-    if (!js.isUndefined(click_to_move)) __obj.updateDynamic("click_to_move")(click_to_move.asInstanceOf[js.Any])
-    if (default_offset_pct != null) __obj.updateDynamic("default_offset_pct")(default_offset_pct.asInstanceOf[js.Any])
-    if (!js.isUndefined(move_slider_on_hover)) __obj.updateDynamic("move_slider_on_hover")(move_slider_on_hover.asInstanceOf[js.Any])
-    if (!js.isUndefined(move_with_handle_only)) __obj.updateDynamic("move_with_handle_only")(move_with_handle_only.asInstanceOf[js.Any])
-    if (!js.isUndefined(no_overlay)) __obj.updateDynamic("no_overlay")(no_overlay.asInstanceOf[js.Any])
+    if (!js.isUndefined(click_to_move)) __obj.updateDynamic("click_to_move")(click_to_move.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(default_offset_pct)) __obj.updateDynamic("default_offset_pct")(default_offset_pct.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(move_slider_on_hover)) __obj.updateDynamic("move_slider_on_hover")(move_slider_on_hover.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(move_with_handle_only)) __obj.updateDynamic("move_with_handle_only")(move_with_handle_only.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(no_overlay)) __obj.updateDynamic("no_overlay")(no_overlay.get.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     __obj.asInstanceOf[TwentyTwentyOptions]
   }

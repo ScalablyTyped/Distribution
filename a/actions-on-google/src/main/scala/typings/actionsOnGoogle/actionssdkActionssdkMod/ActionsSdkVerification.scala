@@ -30,11 +30,11 @@ object ActionsSdkVerification {
   def apply(
     project: String,
     error: String | (js.Function1[/* error */ String, String]) = null,
-    status: Int | Double = null
+    status: js.UndefOr[Double] = js.undefined
   ): ActionsSdkVerification = {
     val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionsSdkVerification]
   }
 }

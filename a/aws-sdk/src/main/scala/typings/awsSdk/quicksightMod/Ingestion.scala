@@ -54,8 +54,8 @@ object Ingestion {
     IngestionStatus: IngestionStatus,
     ErrorInfo: ErrorInfo = null,
     IngestionId: IngestionId = null,
-    IngestionSizeInBytes: Int | scala.Double = null,
-    IngestionTimeInSeconds: Int | scala.Double = null,
+    IngestionSizeInBytes: js.UndefOr[long] = js.undefined,
+    IngestionTimeInSeconds: js.UndefOr[long] = js.undefined,
     QueueInfo: QueueInfo = null,
     RequestSource: IngestionRequestSource = null,
     RequestType: IngestionRequestType = null,
@@ -64,8 +64,8 @@ object Ingestion {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], CreatedTime = CreatedTime.asInstanceOf[js.Any], IngestionStatus = IngestionStatus.asInstanceOf[js.Any])
     if (ErrorInfo != null) __obj.updateDynamic("ErrorInfo")(ErrorInfo.asInstanceOf[js.Any])
     if (IngestionId != null) __obj.updateDynamic("IngestionId")(IngestionId.asInstanceOf[js.Any])
-    if (IngestionSizeInBytes != null) __obj.updateDynamic("IngestionSizeInBytes")(IngestionSizeInBytes.asInstanceOf[js.Any])
-    if (IngestionTimeInSeconds != null) __obj.updateDynamic("IngestionTimeInSeconds")(IngestionTimeInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(IngestionSizeInBytes)) __obj.updateDynamic("IngestionSizeInBytes")(IngestionSizeInBytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(IngestionTimeInSeconds)) __obj.updateDynamic("IngestionTimeInSeconds")(IngestionTimeInSeconds.get.asInstanceOf[js.Any])
     if (QueueInfo != null) __obj.updateDynamic("QueueInfo")(QueueInfo.asInstanceOf[js.Any])
     if (RequestSource != null) __obj.updateDynamic("RequestSource")(RequestSource.asInstanceOf[js.Any])
     if (RequestType != null) __obj.updateDynamic("RequestType")(RequestType.asInstanceOf[js.Any])

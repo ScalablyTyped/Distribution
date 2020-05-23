@@ -40,7 +40,7 @@ object CardClickEventArgs {
     `type`: String = null
   ): CardClickEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (columnName != null) __obj.updateDynamic("columnName")(columnName.asInstanceOf[js.Any])
     if (currentCard != null) __obj.updateDynamic("currentCard")(currentCard.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])

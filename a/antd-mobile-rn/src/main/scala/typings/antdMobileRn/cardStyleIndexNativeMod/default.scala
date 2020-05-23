@@ -1,16 +1,16 @@
 package typings.antdMobileRn.cardStyleIndexNativeMod
 
-import typings.antdMobileRn.AnonBorderLeftWidth
-import typings.antdMobileRn.AnonBorderTopWidth
-import typings.antdMobileRn.AnonColorFlex
-import typings.antdMobileRn.AnonColorFlexFontSize
-import typings.antdMobileRn.AnonColorFontSize
-import typings.antdMobileRn.AnonFlex
-import typings.antdMobileRn.AnonFlexFontSize
-import typings.antdMobileRn.AnonMarginLeft
-import typings.antdMobileRn.AnonMarginRight
-import typings.antdMobileRn.AnonPaddingBottom
-import typings.antdMobileRn.AnonPaddingHorizontal
+import typings.antdMobileRn.anon.BorderLeftWidth
+import typings.antdMobileRn.anon.BorderTopWidth
+import typings.antdMobileRn.anon.ColorFlex
+import typings.antdMobileRn.anon.ColorFlexFontSize
+import typings.antdMobileRn.anon.ColorFontSize
+import typings.antdMobileRn.anon.Flex
+import typings.antdMobileRn.anon.FlexFontSize
+import typings.antdMobileRn.anon.MarginLeft
+import typings.antdMobileRn.anon.MarginRight
+import typings.antdMobileRn.anon.PaddingBottom
+import typings.antdMobileRn.anon.PaddingHorizontal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,16 +18,16 @@ import scala.scalajs.js.annotation._
 @JSImport("antd-mobile-rn/lib/card/style/index.native", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var body: AnonBorderTopWidth = js.native
-  var card: AnonPaddingBottom = js.native
-  var footerContent: AnonColorFlexFontSize = js.native
-  var footerExtra: AnonColorFontSize = js.native
-  var footerWrap: AnonPaddingHorizontal = js.native
-  var full: AnonBorderLeftWidth = js.native
-  var headerContent: AnonColorFlex = js.native
-  var headerExtra: AnonFlexFontSize = js.native
-  var headerImage: AnonMarginRight = js.native
-  var headerTitle: AnonFlex = js.native
-  var headerWrap: AnonMarginLeft = js.native
+  var body: BorderTopWidth = js.native
+  var card: PaddingBottom = js.native
+  var footerContent: ColorFlexFontSize = js.native
+  var footerExtra: ColorFontSize = js.native
+  var footerWrap: PaddingHorizontal = js.native
+  var full: BorderLeftWidth = js.native
+  var headerContent: ColorFlex = js.native
+  var headerExtra: FlexFontSize = js.native
+  var headerImage: MarginRight = js.native
+  var headerTitle: Flex = js.native
+  var headerWrap: MarginLeft = js.native
 }
 

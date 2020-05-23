@@ -1,6 +1,6 @@
 package typings.fullcalendar.coordCacheMod
 
-import typings.fullcalendar.AnonBottom
+import typings.fullcalendar.anon.Bottom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,6 +39,6 @@ class Default_ protected () extends js.Object {
   def isLeftInBounds(leftOffset: js.Any): Boolean = js.native
   def isPointInBounds(leftOffset: js.Any, topOffset: js.Any): Boolean = js.native
   def isTopInBounds(topOffset: js.Any): Boolean = js.native
-  def queryBoundingRect(): AnonBottom = js.native
+  def queryBoundingRect(): Bottom = js.native
 }
 

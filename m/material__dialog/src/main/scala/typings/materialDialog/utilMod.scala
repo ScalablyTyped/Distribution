@@ -1,5 +1,6 @@
 package typings.materialDialog
 
+import typings.materialDialog.anon.ClickOutsideDeactivates
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,6 +11,6 @@ import scala.scalajs.js.annotation._
 object utilMod extends js.Object {
   def createFocusTrapInstance(surfaceEl: Element, acceptButtonEl: Element): js.Any = js.native
   def createFocusTrapInstance(surfaceEl: Element, acceptButtonEl: Element, focusTrapFactory: MDCFocusTrapFactory): js.Any = js.native
-  type MDCFocusTrapFactory = js.Function2[/* a */ Element, /* b */ AnonClickOutsideDeactivates, js.Any]
+  type MDCFocusTrapFactory = js.Function2[/* a */ Element, /* b */ ClickOutsideDeactivates, js.Any]
 }
 

@@ -4,7 +4,7 @@ import typings.blueprintjsCore.boundaryMod.Boundary
 import typings.blueprintjsCore.menuItemMod.IMenuItemProps
 import typings.blueprintjsCore.popoverMod.IPopoverProps
 import typings.blueprintjsCore.propsMod.IProps
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,14 +48,14 @@ object ICollapsibleListProps {
     collapseFrom: Boundary = null,
     dropdownProps: IPopoverProps = null,
     visibleItemClassName: String = null,
-    visibleItemCount: Int | Double = null
+    visibleItemCount: js.UndefOr[Double] = js.undefined
   ): ICollapsibleListProps = {
     val __obj = js.Dynamic.literal(dropdownTarget = dropdownTarget.asInstanceOf[js.Any], visibleItemRenderer = js.Any.fromFunction2(visibleItemRenderer))
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (collapseFrom != null) __obj.updateDynamic("collapseFrom")(collapseFrom.asInstanceOf[js.Any])
     if (dropdownProps != null) __obj.updateDynamic("dropdownProps")(dropdownProps.asInstanceOf[js.Any])
     if (visibleItemClassName != null) __obj.updateDynamic("visibleItemClassName")(visibleItemClassName.asInstanceOf[js.Any])
-    if (visibleItemCount != null) __obj.updateDynamic("visibleItemCount")(visibleItemCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(visibleItemCount)) __obj.updateDynamic("visibleItemCount")(visibleItemCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICollapsibleListProps]
   }
 }

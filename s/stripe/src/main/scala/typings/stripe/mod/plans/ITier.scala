@@ -31,18 +31,17 @@ trait ITier extends js.Object {
 object ITier {
   @scala.inline
   def apply(
-    flat_amount: Int | Double = null,
-    flat_amount_decimal: Int | Double = null,
-    unit_amount: Int | Double = null,
-    unit_amount_decimal: Int | Double = null,
+    flat_amount: js.UndefOr[Null | Double] = js.undefined,
+    flat_amount_decimal: js.UndefOr[Null | Double] = js.undefined,
+    unit_amount: js.UndefOr[Null | Double] = js.undefined,
+    unit_amount_decimal: js.UndefOr[Null | Double] = js.undefined,
     up_to: Double | inf = null
   ): ITier = {
-    val __obj = js.Dynamic.literal()
-    if (flat_amount != null) __obj.updateDynamic("flat_amount")(flat_amount.asInstanceOf[js.Any])
-    if (flat_amount_decimal != null) __obj.updateDynamic("flat_amount_decimal")(flat_amount_decimal.asInstanceOf[js.Any])
-    if (unit_amount != null) __obj.updateDynamic("unit_amount")(unit_amount.asInstanceOf[js.Any])
-    if (unit_amount_decimal != null) __obj.updateDynamic("unit_amount_decimal")(unit_amount_decimal.asInstanceOf[js.Any])
-    if (up_to != null) __obj.updateDynamic("up_to")(up_to.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(up_to = up_to.asInstanceOf[js.Any])
+    if (!js.isUndefined(flat_amount)) __obj.updateDynamic("flat_amount")(flat_amount.asInstanceOf[js.Any])
+    if (!js.isUndefined(flat_amount_decimal)) __obj.updateDynamic("flat_amount_decimal")(flat_amount_decimal.asInstanceOf[js.Any])
+    if (!js.isUndefined(unit_amount)) __obj.updateDynamic("unit_amount")(unit_amount.asInstanceOf[js.Any])
+    if (!js.isUndefined(unit_amount_decimal)) __obj.updateDynamic("unit_amount_decimal")(unit_amount_decimal.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITier]
   }
 }

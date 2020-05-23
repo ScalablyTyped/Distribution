@@ -14,7 +14,7 @@ object FileOptions {
   @scala.inline
   def apply(downloadId: String, key: String, directory: js.UndefOr[Boolean] = js.undefined): FileOptions = {
     val __obj = js.Dynamic.literal(downloadId = downloadId.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-    if (!js.isUndefined(directory)) __obj.updateDynamic("directory")(directory.asInstanceOf[js.Any])
+    if (!js.isUndefined(directory)) __obj.updateDynamic("directory")(directory.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileOptions]
   }
 }

@@ -1,9 +1,9 @@
 package typings.nodeForge.mod.pki
 
-import typings.nodeForge.AnonAddField
-import typings.nodeForge.AnonId
-import typings.nodeForge.AnonName
-import typings.nodeForge.AnonNotAfter
+import typings.nodeForge.anon.AddField
+import typings.nodeForge.anon.Id
+import typings.nodeForge.anon.Name
+import typings.nodeForge.anon.NotAfter
 import typings.nodeForge.mod.md.MessageDigest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,15 +12,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Certificate extends js.Object {
   var extensions: js.Array[_] = js.native
-  var issuer: AnonAddField = js.native
+  var issuer: AddField = js.native
   var md: js.Any = js.native
   var privateKey: PrivateKey = js.native
   var publicKey: PublicKey = js.native
   var serialNumber: String = js.native
   var siginfo: js.Any = js.native
   var signature: js.Any = js.native
-  var subject: AnonAddField = js.native
-  var validity: AnonNotAfter = js.native
+  var subject: AddField = js.native
+  var validity: NotAfter = js.native
   var version: Double = js.native
   /**
     * Gets an issuer or subject attribute from its name, type, or short name.
@@ -44,8 +44,8 @@ trait Certificate extends js.Object {
     * @return the extension or null if not found.
     */
   def getExtension(options: String): js.UndefOr[js.Object] = js.native
-  def getExtension(options: AnonId): js.UndefOr[js.Object] = js.native
-  def getExtension(options: AnonName): js.UndefOr[js.Object] = js.native
+  def getExtension(options: Id): js.UndefOr[js.Object] = js.native
+  def getExtension(options: Name): js.UndefOr[js.Object] = js.native
   /**
     * Sets the extensions of this certificate.
     *

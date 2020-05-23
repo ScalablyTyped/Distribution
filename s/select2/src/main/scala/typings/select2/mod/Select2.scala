@@ -1,7 +1,6 @@
 package typings.select2.mod
 
-import typings.select2.AnonOptions
-import typings.select2.mod._Global_.JQuery
+import typings.select2.mod.global.JQuery
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +17,7 @@ trait Select2 extends js.Object {
   var $selection: JQuery[HTMLElement]
   var dropdown: js.Any
   var id: String
-  var options: AnonOptions
+  var options: typings.select2.anon.Options
   var results: js.Any
   var selection: js.Any
 }
@@ -32,7 +31,7 @@ object Select2 {
     $selection: JQuery[HTMLElement],
     dropdown: js.Any,
     id: String,
-    options: AnonOptions,
+    options: typings.select2.anon.Options,
     results: js.Any,
     selection: js.Any
   ): Select2 = {

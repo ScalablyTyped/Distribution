@@ -1,19 +1,19 @@
 package typings.oracleOraclejet.ojchartMod
 
-import typings.oracleOraclejet.AnonAlignTickMarks
-import typings.oracleOraclejet.AnonAnimationDownColor
-import typings.oracleOraclejet.AnonAxisLine
-import typings.oracleOraclejet.AnonBackgroundColor
-import typings.oracleOraclejet.AnonBaselineScaling
-import typings.oracleOraclejet.AnonBorderWidth
-import typings.oracleOraclejet.AnonClose
-import typings.oracleOraclejet.AnonContent
-import typings.oracleOraclejet.AnonConverter
-import typings.oracleOraclejet.AnonDrag
-import typings.oracleOraclejet.AnonInsert
-import typings.oracleOraclejet.AnonPreventDefault
-import typings.oracleOraclejet.AnonRenderer
-import typings.oracleOraclejet.AnonX
+import typings.oracleOraclejet.anon.AlignTickMarks
+import typings.oracleOraclejet.anon.AnimationDownColor
+import typings.oracleOraclejet.anon.AxisLine
+import typings.oracleOraclejet.anon.BackgroundColor
+import typings.oracleOraclejet.anon.BaselineScaling
+import typings.oracleOraclejet.anon.BorderWidth
+import typings.oracleOraclejet.anon.Close
+import typings.oracleOraclejet.anon.Content
+import typings.oracleOraclejet.anon.Converter
+import typings.oracleOraclejet.anon.Drag
+import typings.oracleOraclejet.anon.Insert
+import typings.oracleOraclejet.anon.PreventDefault
+import typings.oracleOraclejet.anon.Renderer
+import typings.oracleOraclejet.anon.X
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojchartMod.ojChart.DataLabelContext
 import typings.oracleOraclejet.ojchartMod.ojChart.ojDrill
@@ -81,8 +81,8 @@ import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
 import typings.std.ErrorEvent
+import typings.std.Event
 import typings.std.EventTarget
-import typings.std.Event_
 import typings.std.FocusEvent
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
@@ -105,9 +105,9 @@ trait ojChartEventMap[K, D] extends dvtBaseComponentEventMap[ojChartSettableProp
   var dataChanged: JetElementCustomEvent[(DataProvider[K, D]) | Null]
   var dataCursorBehaviorChanged: JetElementCustomEvent[smooth | snap | auto]
   var dataCursorChanged: JetElementCustomEvent[off | on | auto]
-  var dataCursorPositionChanged: JetElementCustomEvent[AnonX]
-  var dataLabelChanged: JetElementCustomEvent[js.Function1[/* context */ DataLabelContext, AnonInsert | AnonPreventDefault]]
-  var dndChanged: JetElementCustomEvent[AnonDrag]
+  var dataCursorPositionChanged: JetElementCustomEvent[X]
+  var dataLabelChanged: JetElementCustomEvent[js.Function1[/* context */ DataLabelContext, Insert | PreventDefault]]
+  var dndChanged: JetElementCustomEvent[Drag]
   var dragModeChanged: JetElementCustomEvent[pan | zoom | select | off | user]
   var drillingChanged: JetElementCustomEvent[on | seriesOnly | groupsOnly | off]
   var groupComparatorChanged: JetElementCustomEvent[(js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]) | Null]
@@ -117,16 +117,16 @@ trait ojChartEventMap[K, D] extends dvtBaseComponentEventMap[ojChartSettableProp
   var highlightedCategoriesChanged: JetElementCustomEvent[js.Array[String]]
   var hoverBehaviorChanged: JetElementCustomEvent[dim | none]
   var initialZoomingChanged: JetElementCustomEvent[first | last | none]
-  var legendChanged: JetElementCustomEvent[AnonBackgroundColor]
+  var legendChanged: JetElementCustomEvent[BackgroundColor]
   var ojDrill: typings.oracleOraclejet.ojchartMod.ojChart.ojDrill
   var ojSelectInput: typings.oracleOraclejet.ojchartMod.ojChart.ojSelectInput
   var ojViewportChange: typings.oracleOraclejet.ojchartMod.ojChart.ojViewportChange
   var ojViewportChangeInput: typings.oracleOraclejet.ojchartMod.ojChart.ojViewportChangeInput
   var orientationChanged: JetElementCustomEvent[horizontal | vertical]
   var otherThresholdChanged: JetElementCustomEvent[Double]
-  var overviewChanged: JetElementCustomEvent[AnonContent]
-  var pieCenterChanged: JetElementCustomEvent[AnonConverter]
-  var plotAreaChanged: JetElementCustomEvent[AnonBorderWidth]
+  var overviewChanged: JetElementCustomEvent[Content]
+  var pieCenterChanged: JetElementCustomEvent[Converter]
+  var plotAreaChanged: JetElementCustomEvent[BorderWidth]
   var polarGridShapeChanged: JetElementCustomEvent[polygon | circle]
   var selectionChanged: JetElementCustomEvent[js.Array[K]]
   var selectionModeChanged: JetElementCustomEvent[single | multiple | none]
@@ -136,17 +136,17 @@ trait ojChartEventMap[K, D] extends dvtBaseComponentEventMap[ojChartSettableProp
   var splitterPositionChanged: JetElementCustomEvent[Double]
   var stackChanged: JetElementCustomEvent[on | off]
   var stackLabelChanged: JetElementCustomEvent[on | off]
-  var styleDefaultsChanged: JetElementCustomEvent[AnonAnimationDownColor]
+  var styleDefaultsChanged: JetElementCustomEvent[AnimationDownColor]
   var timeAxisTypeChanged: JetElementCustomEvent[enabled | mixedFrequency | skipGaps | disabled | auto]
-  var tooltipChanged: JetElementCustomEvent[AnonRenderer]
+  var tooltipChanged: JetElementCustomEvent[Renderer]
   var touchResponseChanged: JetElementCustomEvent[touchStart | auto]
   var typeChanged: JetElementCustomEvent[
     line | area | lineWithArea | stock | boxPlot | combo | pie | scatter | bubble | funnel | pyramid | bar
   ]
-  var valueFormatsChanged: JetElementCustomEvent[AnonClose]
-  var xAxisChanged: JetElementCustomEvent[AnonAxisLine]
-  var y2AxisChanged: JetElementCustomEvent[AnonAlignTickMarks]
-  var yAxisChanged: JetElementCustomEvent[AnonBaselineScaling]
+  var valueFormatsChanged: JetElementCustomEvent[Close]
+  var xAxisChanged: JetElementCustomEvent[AxisLine]
+  var y2AxisChanged: JetElementCustomEvent[AlignTickMarks]
+  var yAxisChanged: JetElementCustomEvent[BaselineScaling]
   var zoomAndScrollChanged: JetElementCustomEvent[delayedScrollOnly | liveScrollOnly | delayed | live | off]
   var zoomDirectionChanged: JetElementCustomEvent[x | y | auto]
 }
@@ -164,43 +164,43 @@ object ojChartEventMap {
     asChanged: JetElementCustomEvent[String],
     auxclick: MouseEvent,
     blur: FocusEvent,
-    cancel: Event_,
-    canplay: Event_,
-    canplaythrough: Event_,
-    change: Event_,
+    cancel: Event,
+    canplay: Event,
+    canplaythrough: Event,
+    change: Event,
     click: MouseEvent,
-    close: Event_,
+    close: Event,
     contextmenu: MouseEvent,
     coordinateSystemChanged: JetElementCustomEvent[polar | cartesian],
     copy: ClipboardEvent,
-    cuechange: Event_,
+    cuechange: Event,
     cut: ClipboardEvent,
     dataChanged: JetElementCustomEvent[(DataProvider[K, D]) | Null],
     dataCursorBehaviorChanged: JetElementCustomEvent[smooth | snap | auto],
     dataCursorChanged: JetElementCustomEvent[off | on | auto],
-    dataCursorPositionChanged: JetElementCustomEvent[AnonX],
-    dataLabelChanged: JetElementCustomEvent[js.Function1[/* context */ DataLabelContext, AnonInsert | AnonPreventDefault]],
+    dataCursorPositionChanged: JetElementCustomEvent[X],
+    dataLabelChanged: JetElementCustomEvent[js.Function1[/* context */ DataLabelContext, Insert | PreventDefault]],
     dblclick: MouseEvent,
-    dndChanged: JetElementCustomEvent[AnonDrag],
+    dndChanged: JetElementCustomEvent[Drag],
     drag: DragEvent,
     dragModeChanged: JetElementCustomEvent[pan | zoom | select | off | user],
     dragend: DragEvent,
     dragenter: DragEvent,
-    dragexit: Event_,
+    dragexit: Event,
     dragleave: DragEvent,
     dragover: DragEvent,
     dragstart: DragEvent,
     drillingChanged: JetElementCustomEvent[on | seriesOnly | groupsOnly | off],
     drop: DragEvent,
-    durationchange: Event_,
-    emptied: Event_,
-    ended: Event_,
+    durationchange: Event,
+    emptied: Event,
+    ended: Event,
     error: ErrorEvent,
     focus: FocusEvent,
     focusin: FocusEvent,
     focusout: FocusEvent,
-    fullscreenchange: Event_,
-    fullscreenerror: Event_,
+    fullscreenchange: Event,
+    fullscreenerror: Event,
     gotpointercapture: PointerEvent,
     groupComparatorChanged: JetElementCustomEvent[(js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]) | Null],
     hiddenCategoriesChanged: JetElementCustomEvent[js.Array[String]],
@@ -209,16 +209,16 @@ object ojChartEventMap {
     highlightedCategoriesChanged: JetElementCustomEvent[js.Array[String]],
     hoverBehaviorChanged: JetElementCustomEvent[dim | none],
     initialZoomingChanged: JetElementCustomEvent[first | last | none],
-    input: Event_,
-    invalid: Event_,
+    input: Event,
+    invalid: Event,
     keydown: KeyboardEvent,
     keypress: KeyboardEvent,
     keyup: KeyboardEvent,
-    legendChanged: JetElementCustomEvent[AnonBackgroundColor],
-    load: Event_,
-    loadeddata: Event_,
-    loadedmetadata: Event_,
-    loadstart: Event_,
+    legendChanged: JetElementCustomEvent[BackgroundColor],
+    load: Event,
+    loadeddata: Event,
+    loadedmetadata: Event,
+    loadstart: Event,
     lostpointercapture: PointerEvent,
     mousedown: MouseEvent,
     mouseenter: MouseEvent,
@@ -233,13 +233,13 @@ object ojChartEventMap {
     ojViewportChangeInput: ojViewportChangeInput,
     orientationChanged: JetElementCustomEvent[horizontal | vertical],
     otherThresholdChanged: JetElementCustomEvent[Double],
-    overviewChanged: JetElementCustomEvent[AnonContent],
+    overviewChanged: JetElementCustomEvent[Content],
     paste: ClipboardEvent,
-    pause: Event_,
-    pieCenterChanged: JetElementCustomEvent[AnonConverter],
-    play: Event_,
-    playing: Event_,
-    plotAreaChanged: JetElementCustomEvent[AnonBorderWidth],
+    pause: Event,
+    pieCenterChanged: JetElementCustomEvent[Converter],
+    play: Event,
+    playing: Event,
+    plotAreaChanged: JetElementCustomEvent[BorderWidth],
     pointercancel: PointerEvent,
     pointerdown: PointerEvent,
     pointerenter: PointerEvent,
@@ -250,32 +250,32 @@ object ojChartEventMap {
     pointerup: PointerEvent,
     polarGridShapeChanged: JetElementCustomEvent[polygon | circle],
     progress: ProgressEvent[EventTarget],
-    ratechange: Event_,
-    reset: Event_,
+    ratechange: Event,
+    reset: Event,
     resize: UIEvent,
-    scroll: Event_,
+    scroll: Event,
     securitypolicyviolation: SecurityPolicyViolationEvent,
-    seeked: Event_,
-    seeking: Event_,
-    select: Event_,
+    seeked: Event,
+    seeking: Event,
+    select: Event,
     selectionChanged: JetElementCustomEvent[js.Array[K]],
     selectionModeChanged: JetElementCustomEvent[single | multiple | none],
-    selectionchange: Event_,
-    selectstart: Event_,
+    selectionchange: Event,
+    selectstart: Event,
     seriesComparatorChanged: JetElementCustomEvent[(js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]) | Null],
     sortingChanged: JetElementCustomEvent[ascending | descending | off],
     splitDualYChanged: JetElementCustomEvent[on | off | auto],
     splitterPositionChanged: JetElementCustomEvent[Double],
     stackChanged: JetElementCustomEvent[on | off],
     stackLabelChanged: JetElementCustomEvent[on | off],
-    stalled: Event_,
-    styleDefaultsChanged: JetElementCustomEvent[AnonAnimationDownColor],
-    submit: Event_,
-    suspend: Event_,
+    stalled: Event,
+    styleDefaultsChanged: JetElementCustomEvent[AnimationDownColor],
+    submit: Event,
+    suspend: Event,
     timeAxisTypeChanged: JetElementCustomEvent[enabled | mixedFrequency | skipGaps | disabled | auto],
-    timeupdate: Event_,
-    toggle: Event_,
-    tooltipChanged: JetElementCustomEvent[AnonRenderer],
+    timeupdate: Event,
+    toggle: Event,
+    tooltipChanged: JetElementCustomEvent[Renderer],
     touchResponseChanged: JetElementCustomEvent[touchStart | auto],
     touchcancel: TouchEvent,
     touchend: TouchEvent,
@@ -290,13 +290,13 @@ object ojChartEventMap {
     typeChanged: JetElementCustomEvent[
       line | area | lineWithArea | stock | boxPlot | combo | pie | scatter | bubble | funnel | pyramid | bar
     ],
-    valueFormatsChanged: JetElementCustomEvent[AnonClose],
-    volumechange: Event_,
-    waiting: Event_,
+    valueFormatsChanged: JetElementCustomEvent[Close],
+    volumechange: Event,
+    waiting: Event,
     wheel: WheelEvent,
-    xAxisChanged: JetElementCustomEvent[AnonAxisLine],
-    y2AxisChanged: JetElementCustomEvent[AnonAlignTickMarks],
-    yAxisChanged: JetElementCustomEvent[AnonBaselineScaling],
+    xAxisChanged: JetElementCustomEvent[AxisLine],
+    y2AxisChanged: JetElementCustomEvent[AlignTickMarks],
+    yAxisChanged: JetElementCustomEvent[BaselineScaling],
     zoomAndScrollChanged: JetElementCustomEvent[delayedScrollOnly | liveScrollOnly | delayed | live | off],
     zoomDirectionChanged: JetElementCustomEvent[x | y | auto]
   ): ojChartEventMap[K, D] = {

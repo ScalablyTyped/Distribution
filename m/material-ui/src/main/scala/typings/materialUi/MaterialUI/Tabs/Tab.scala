@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("__MaterialUI.Tabs.Tab")
 @js.native
-class Tab ()
+trait Tab
   extends Component[TabProps, js.Object, js.Any]
 

@@ -26,10 +26,10 @@ object ITooltipOptions {
   def apply(
     clickOpen: js.UndefOr[Boolean] = js.undefined,
     disableHover: js.UndefOr[Boolean] = js.undefined,
-    fadeInDuration: Int | Double = null,
-    fadeOutDuration: Int | Double = null,
-    hOffset: Int | Double = null,
-    hoverDelay: Int | Double = null,
+    fadeInDuration: js.UndefOr[Double] = js.undefined,
+    fadeOutDuration: js.UndefOr[Double] = js.undefined,
+    hOffset: js.UndefOr[Double] = js.undefined,
+    hoverDelay: js.UndefOr[Double] = js.undefined,
     positionClass: String = null,
     showOn: String = null,
     template: String = null,
@@ -37,15 +37,15 @@ object ITooltipOptions {
     tipText: String = null,
     tooltipClass: String = null,
     triggerClass: String = null,
-    vOffset: Int | Double = null
+    vOffset: js.UndefOr[Double] = js.undefined
   ): ITooltipOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clickOpen)) __obj.updateDynamic("clickOpen")(clickOpen.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableHover)) __obj.updateDynamic("disableHover")(disableHover.asInstanceOf[js.Any])
-    if (fadeInDuration != null) __obj.updateDynamic("fadeInDuration")(fadeInDuration.asInstanceOf[js.Any])
-    if (fadeOutDuration != null) __obj.updateDynamic("fadeOutDuration")(fadeOutDuration.asInstanceOf[js.Any])
-    if (hOffset != null) __obj.updateDynamic("hOffset")(hOffset.asInstanceOf[js.Any])
-    if (hoverDelay != null) __obj.updateDynamic("hoverDelay")(hoverDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickOpen)) __obj.updateDynamic("clickOpen")(clickOpen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableHover)) __obj.updateDynamic("disableHover")(disableHover.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fadeInDuration)) __obj.updateDynamic("fadeInDuration")(fadeInDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fadeOutDuration)) __obj.updateDynamic("fadeOutDuration")(fadeOutDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hOffset)) __obj.updateDynamic("hOffset")(hOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverDelay)) __obj.updateDynamic("hoverDelay")(hoverDelay.get.asInstanceOf[js.Any])
     if (positionClass != null) __obj.updateDynamic("positionClass")(positionClass.asInstanceOf[js.Any])
     if (showOn != null) __obj.updateDynamic("showOn")(showOn.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
@@ -53,7 +53,7 @@ object ITooltipOptions {
     if (tipText != null) __obj.updateDynamic("tipText")(tipText.asInstanceOf[js.Any])
     if (tooltipClass != null) __obj.updateDynamic("tooltipClass")(tooltipClass.asInstanceOf[js.Any])
     if (triggerClass != null) __obj.updateDynamic("triggerClass")(triggerClass.asInstanceOf[js.Any])
-    if (vOffset != null) __obj.updateDynamic("vOffset")(vOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(vOffset)) __obj.updateDynamic("vOffset")(vOffset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITooltipOptions]
   }
 }

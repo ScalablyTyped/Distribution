@@ -22,10 +22,10 @@ object TensorWithState {
     written: js.UndefOr[Boolean] = js.undefined
   ): TensorWithState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cleared)) __obj.updateDynamic("cleared")(cleared.asInstanceOf[js.Any])
-    if (!js.isUndefined(read)) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
+    if (!js.isUndefined(cleared)) __obj.updateDynamic("cleared")(cleared.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(read)) __obj.updateDynamic("read")(read.get.asInstanceOf[js.Any])
     if (tensor != null) __obj.updateDynamic("tensor")(tensor.asInstanceOf[js.Any])
-    if (!js.isUndefined(written)) __obj.updateDynamic("written")(written.asInstanceOf[js.Any])
+    if (!js.isUndefined(written)) __obj.updateDynamic("written")(written.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TensorWithState]
   }
 }

@@ -5,11 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CSG.OrthoNormalBasis")
 @js.native
-class OrthoNormalBasis protected () extends CxG {
-  def this(plane: Plane) = this()
-  def this(plane: Plane, rightvector: Vector3D) = this()
+trait OrthoNormalBasis extends CxG {
   var plane: Plane = js.native
   var planeorigin: Vector3D = js.native
   var u: Vector3D = js.native
@@ -20,13 +17,5 @@ class OrthoNormalBasis protected () extends CxG {
   def line3Dto2D(line3d: Line3D): Line2D = js.native
   def to2D(vec3: Vector3D): Vector2D = js.native
   def to3D(vec2: Vector2D): Vector3D = js.native
-}
-
-/* static members */
-@JSGlobal("CSG.OrthoNormalBasis")
-@js.native
-object OrthoNormalBasis extends js.Object {
-  def GetCartesian(xaxisid: String, yaxisid: String): OrthoNormalBasis = js.native
-  def Z0Plane(): OrthoNormalBasis = js.native
 }
 

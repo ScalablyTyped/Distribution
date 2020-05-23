@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.Diagram
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,32 +41,6 @@ object UserHandlePositions extends js.Object {
   //Set the position of the userhandle as topright
   @js.native
   sealed trait TopRight extends UserHandlePositions
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UserHandlePositions with Double] = js.native
-  /* 6 */ @js.native
-  object BottomCenter extends TopLevel[BottomCenter with Double]
-  
-  /* 5 */ @js.native
-  object BottomLeft extends TopLevel[BottomLeft with Double]
-  
-  /* 7 */ @js.native
-  object BottomRight extends TopLevel[BottomRight with Double]
-  
-  /* 3 */ @js.native
-  object MiddleLeft extends TopLevel[MiddleLeft with Double]
-  
-  /* 4 */ @js.native
-  object MiddleRight extends TopLevel[MiddleRight with Double]
-  
-  /* 1 */ @js.native
-  object TopCenter extends TopLevel[TopCenter with Double]
-  
-  /* 0 */ @js.native
-  object TopLeft extends TopLevel[TopLeft with Double]
-  
-  /* 2 */ @js.native
-  object TopRight extends TopLevel[TopRight with Double]
   
 }
 

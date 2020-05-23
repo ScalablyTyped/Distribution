@@ -1,6 +1,9 @@
 package typings.sharepoint
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.sharepoint.anon.Left
+import typings.sharepoint.anon.LeftTop
+import typings.sharepoint.anon.Top
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -74,8 +77,8 @@ trait MQueryResultSetElements extends MQueryResultSet[HTMLElement] {
   def mouseup(): MQueryResultSetElements = js.native
   def mouseup(handler: js.Function1[/* eventObject */ MQueryEvent, _]): MQueryResultSetElements = js.native
   def not(selector: String): MQueryResultSetElements = js.native
-  def offset(): AnonLeft = js.native
-  def offset(coordinates: AnonTop): MQueryResultSetElements = js.native
+  def offset(): Left = js.native
+  def offset(coordinates: Top): MQueryResultSetElements = js.native
   def offsetParent(): MQueryResultSetElements = js.native
   def offsetParent(selector: String): MQueryResultSetElements = js.native
   def one(eventType: String, handler: js.Function1[/* eventObject */ MQueryEvent, _]): MQueryResultSetElements = js.native
@@ -88,7 +91,7 @@ trait MQueryResultSetElements extends MQueryResultSet[HTMLElement] {
   def parentsUntil(selectorOrElement: String, filter: String): MQueryResultSetElements = js.native
   def parentsUntil(selectorOrElement: HTMLElement): MQueryResultSetElements = js.native
   def parentsUntil(selectorOrElement: HTMLElement, filter: String): MQueryResultSetElements = js.native
-  def position(): AnonLeftTop = js.native
+  def position(): LeftTop = js.native
   def remove(): MQueryResultSetElements = js.native
   def remove(selector: String): MQueryResultSetElements = js.native
   def removeClass(classNames: String): MQueryResultSetElements = js.native

@@ -18,10 +18,10 @@ trait TargetGroupTuple extends js.Object {
 
 object TargetGroupTuple {
   @scala.inline
-  def apply(TargetGroupArn: TargetGroupArn = null, Weight: Int | Double = null): TargetGroupTuple = {
+  def apply(TargetGroupArn: TargetGroupArn = null, Weight: js.UndefOr[TargetGroupWeight] = js.undefined): TargetGroupTuple = {
     val __obj = js.Dynamic.literal()
     if (TargetGroupArn != null) __obj.updateDynamic("TargetGroupArn")(TargetGroupArn.asInstanceOf[js.Any])
-    if (Weight != null) __obj.updateDynamic("Weight")(Weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(Weight)) __obj.updateDynamic("Weight")(Weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetGroupTuple]
   }
 }

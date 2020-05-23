@@ -4,17 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Devices.Input.MouseDevice")
-@js.native
-class MouseDevice () extends IMouseDevice {
-  /* CompleteClass */
-  override var onmousemoved: js.Any = js.native
-}
+trait MouseDevice extends IMouseDevice
 
-/* static members */
-@JSGlobal("Windows.Devices.Input.MouseDevice")
-@js.native
-object MouseDevice extends js.Object {
-  def getForCurrentView(): MouseDevice = js.native
+object MouseDevice {
+  @scala.inline
+  def apply(onmousemoved: js.Any): MouseDevice = {
+    val __obj = js.Dynamic.literal(onmousemoved = onmousemoved.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MouseDevice]
+  }
 }
 

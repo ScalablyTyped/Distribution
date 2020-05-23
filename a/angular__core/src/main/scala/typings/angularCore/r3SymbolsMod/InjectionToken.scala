@@ -51,9 +51,8 @@ trait InjectionToken[T] extends js.Object {
 
 object InjectionToken {
   @scala.inline
-  def apply[T](_desc: String, ɵprov: js.UndefOr[scala.Nothing] = js.undefined): InjectionToken[T] = {
+  def apply[T](_desc: String): InjectionToken[T] = {
     val __obj = js.Dynamic.literal(_desc = _desc.asInstanceOf[js.Any])
-    if (!js.isUndefined(ɵprov)) __obj.updateDynamic("\u0275prov")(ɵprov.asInstanceOf[js.Any])
     __obj.asInstanceOf[InjectionToken[T]]
   }
 }

@@ -1,6 +1,6 @@
 package typings.pixiJs.mod
 
-import typings.pixiJs.AnonClearBeforeRender
+import typings.pixiJs.anon.ClearBeforeRender
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,6 +40,6 @@ object autoDetectRenderer extends js.Object {
     * @return {PIXI.Renderer|PIXI.CanvasRenderer} Returns WebGL renderer if available, otherwise CanvasRenderer
     */
   def apply(): typings.pixiJs.PIXI.Renderer = js.native
-  def apply(options: AnonClearBeforeRender): typings.pixiJs.PIXI.Renderer = js.native
+  def apply(options: ClearBeforeRender): typings.pixiJs.PIXI.Renderer = js.native
 }
 

@@ -29,14 +29,14 @@ object RequestValidator {
   def apply(
     id: String = null,
     name: String = null,
-    validateRequestBody: js.UndefOr[scala.Boolean] = js.undefined,
-    validateRequestParameters: js.UndefOr[scala.Boolean] = js.undefined
+    validateRequestBody: js.UndefOr[Boolean] = js.undefined,
+    validateRequestParameters: js.UndefOr[Boolean] = js.undefined
   ): RequestValidator = {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateRequestBody)) __obj.updateDynamic("validateRequestBody")(validateRequestBody.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateRequestParameters)) __obj.updateDynamic("validateRequestParameters")(validateRequestParameters.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateRequestBody)) __obj.updateDynamic("validateRequestBody")(validateRequestBody.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateRequestParameters)) __obj.updateDynamic("validateRequestParameters")(validateRequestParameters.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestValidator]
   }
 }

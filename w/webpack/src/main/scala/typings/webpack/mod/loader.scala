@@ -197,10 +197,6 @@ object loader extends js.Object {
     def cacheable(): Unit = js.native
     def cacheable(flag: Boolean): Unit = js.native
     def callback(): Unit = js.native
-    def callback(err: js.UndefOr[scala.Nothing], content: String): Unit = js.native
-    def callback(err: js.UndefOr[scala.Nothing], content: String, sourceMap: RawSourceMap): Unit = js.native
-    def callback(err: js.UndefOr[scala.Nothing], content: Buffer): Unit = js.native
-    def callback(err: js.UndefOr[scala.Nothing], content: Buffer, sourceMap: RawSourceMap): Unit = js.native
     def callback(err: Null, content: String): Unit = js.native
     def callback(err: Null, content: String, sourceMap: RawSourceMap): Unit = js.native
     def callback(err: Null, content: Buffer): Unit = js.native

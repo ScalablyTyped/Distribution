@@ -17,6 +17,6 @@ class UnitNorm protected () extends Constraint {
 @js.native
 object UnitNorm extends js.Object {
   /** @nocollapse */
-  val className: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.UnitNorm = js.native
+  val className: /* "UnitNorm" */ String = js.native
 }
 

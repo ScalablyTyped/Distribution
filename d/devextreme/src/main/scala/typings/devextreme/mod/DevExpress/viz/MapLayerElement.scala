@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MapLayerElement extends js.Object {
   /** @name MapLayerElement.layer */
-  var layer: js.Any = js.native
+  var layer: js.UndefOr[js.Any] = js.native
   /** @name MapLayerElement.applySettings(settings) */
   def applySettings(settings: js.Any): Unit = js.native
   /** @name MapLayerElement.attribute(name) */

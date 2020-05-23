@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 
 trait ILineSegment extends IBase {
   /** [Method] Returns the point where two lines intersect
-  		* @param lineSegment Ext.util.LineSegment The line to intersect with.
-  		* @returns Ext.util.Point
-  		*/
+    * @param lineSegment Ext.util.LineSegment The line to intersect with.
+    * @returns Ext.util.Point
+    */
   var intersects: js.UndefOr[js.Function1[/* lineSegment */ js.UndefOr[this.type], IPoint]] = js.undefined
   /** [Method] Returns string representation of the line
-  		* @returns String For example Point[12,8] Point[0,0]
-  		*/
+    * @returns String For example Point[12,8] Point[0,0]
+    */
   @JSName("toString")
   var toString_FILineSegment: js.UndefOr[js.Function0[String]] = js.undefined
 }
@@ -59,7 +59,7 @@ object ILineSegment {
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (toString != null) __obj.updateDynamic("toString")(js.Any.fromFunction0(toString))
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])

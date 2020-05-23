@@ -3,7 +3,7 @@ package typings.firebaseFunctions.serviceMod
 import typings.firebaseAppTypes.privateMod.FirebaseService
 import typings.firebaseAuthInteropTypes.mod.FirebaseAuthInternalName
 import typings.firebaseComponent.mod.Provider
-import typings.firebaseFunctions.AnonDelete
+import typings.firebaseFunctions.anon.Delete
 import typings.firebaseFunctions.mod.FirebaseApp
 import typings.firebaseFunctionsTypes.mod.FirebaseFunctions
 import typings.firebaseMessagingTypes.mod.FirebaseMessagingName
@@ -33,7 +33,7 @@ class Service protected ()
     region_ : String
   ) = this()
   @JSName("INTERNAL")
-  var INTERNAL_Service: AnonDelete = js.native
+  var INTERNAL_Service: Delete = js.native
   /* CompleteClass */
   override var app: typings.firebaseAppTypes.mod.FirebaseApp = js.native
   var app_ : js.Any = js.native

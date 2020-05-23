@@ -56,11 +56,11 @@ object Response {
     redirectURL: String,
     status: Double,
     statusText: String,
-    _transferSize: Int | Double = null,
+    _transferSize: js.UndefOr[Null | Double] = js.undefined,
     comment: String = null
   ): Response = {
     val __obj = js.Dynamic.literal(bodySize = bodySize.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], cookies = cookies.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], headersSize = headersSize.asInstanceOf[js.Any], httpVersion = httpVersion.asInstanceOf[js.Any], redirectURL = redirectURL.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
-    if (_transferSize != null) __obj.updateDynamic("_transferSize")(_transferSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(_transferSize)) __obj.updateDynamic("_transferSize")(_transferSize.asInstanceOf[js.Any])
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }

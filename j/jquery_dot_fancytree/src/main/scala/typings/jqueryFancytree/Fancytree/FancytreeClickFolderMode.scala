@@ -1,6 +1,5 @@
 package typings.jqueryFancytree.Fancytree
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,20 +21,6 @@ object FancytreeClickFolderMode extends js.Object {
   
   @js.native
   sealed trait expand extends FancytreeClickFolderMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FancytreeClickFolderMode with Double] = js.native
-  /* 1 */ @js.native
-  object activate extends TopLevel[activate with Double]
-  
-  /* 3 */ @js.native
-  object activate_and_expand extends TopLevel[activate_and_expand with Double]
-  
-  /* 4 */ @js.native
-  object activate_dblclick_expands extends TopLevel[activate_dblclick_expands with Double]
-  
-  /* 2 */ @js.native
-  object expand extends TopLevel[expand with Double]
   
 }
 

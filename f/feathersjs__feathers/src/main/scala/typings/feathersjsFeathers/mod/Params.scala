@@ -1,7 +1,7 @@
 package typings.feathersjsFeathers.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.feathersjsFeathers.PickPaginationOptionsmax
+import typings.feathersjsFeathers.anon.PickPaginationOptionsmax
 import typings.feathersjsFeathers.feathersjsFeathersBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait Params
 object Params {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     paginate: `false` | PickPaginationOptionsmax = null,
     query: Query = null
   ): Params = {

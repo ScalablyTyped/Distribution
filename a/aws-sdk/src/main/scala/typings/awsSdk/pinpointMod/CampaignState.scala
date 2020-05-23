@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CampaignState extends js.Object {
   /**
-    * The current status of the campaign, or the current status of a treatment that belongs to an A/B test campaign. If a campaign uses A/B testing, the campaign has a status of COMPLETED only if all campaign treatments have a status of COMPLETED.
+    * The current status of the campaign, or the current status of a treatment that belongs to an A/B test campaign. If a campaign uses A/B testing, the campaign has a status of COMPLETED only if all campaign treatments have a status of COMPLETED. If you delete the segment that's associated with a campaign, the campaign fails and has a status of DELETED.
     */
   var CampaignStatus: js.UndefOr[typings.awsSdk.pinpointMod.CampaignStatus] = js.native
 }

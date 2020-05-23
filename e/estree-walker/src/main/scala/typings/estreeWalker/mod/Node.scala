@@ -18,7 +18,7 @@ object Node {
     end: Double,
     start: Double,
     `type`: String,
-    StringDictionary: /* propName */ StringDictionary[js.Any] = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null
   ): Node = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

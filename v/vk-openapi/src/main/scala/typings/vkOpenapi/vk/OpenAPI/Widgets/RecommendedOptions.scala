@@ -15,10 +15,14 @@ trait RecommendedOptions extends js.Object {
 
 object RecommendedOptions {
   @scala.inline
-  def apply(limit: Int | Double = null, max: Int | Double = null, period: day | week | month = null): RecommendedOptions = {
+  def apply(
+    limit: js.UndefOr[Double] = js.undefined,
+    max: js.UndefOr[Double] = js.undefined,
+    period: day | week | month = null
+  ): RecommendedOptions = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
     if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecommendedOptions]
   }

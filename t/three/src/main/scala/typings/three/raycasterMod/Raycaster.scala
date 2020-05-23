@@ -1,6 +1,6 @@
 package typings.three.raycasterMod
 
-import typings.three.AnonX
+import typings.three.anon.X
 import typings.three.cameraMod.Camera
 import typings.three.layersMod.Layers
 import typings.three.object3DMod.Object3D
@@ -75,6 +75,6 @@ class Raycaster () extends js.Object {
   	 * @param coords 2D coordinates of the mouse, in normalized device coordinates (NDC)---X and Y components should be between -1 and 1.
   	 * @param camera camera from which the ray should originate
   	 */
-  def setFromCamera(coords: AnonX, camera: Camera): Unit = js.native
+  def setFromCamera(coords: X, camera: Camera): Unit = js.native
 }
 

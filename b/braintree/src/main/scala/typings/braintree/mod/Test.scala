@@ -1,10 +1,10 @@
 package typings.braintree.mod
 
-import typings.braintree.AnonAbstractTransactable
-import typings.braintree.AnonAccountNotAuthorizedContactUs
-import typings.braintree.AnonAmexPayWithPoints
-import typings.braintree.AnonAuthorize
-import typings.braintree.AnonIssuingBank
+import typings.braintree.anon.AbstractTransactable
+import typings.braintree.anon.AccountNotAuthorizedContactUs
+import typings.braintree.anon.AmexPayWithPoints
+import typings.braintree.anon.Authorize
+import typings.braintree.anon.IssuingBank
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,10 +12,10 @@ import scala.scalajs.js.annotation._
 @JSImport("braintree", "Test")
 @js.native
 class Test () extends js.Object {
-  var CreditCardDefaults: AnonIssuingBank = js.native
-  var CreditCardNumbers: AnonAmexPayWithPoints = js.native
-  var MerchantAccountTest: AnonAccountNotAuthorizedContactUs = js.native
-  var Nonces: AnonAbstractTransactable = js.native
-  var TransactionAmounts: AnonAuthorize = js.native
+  var CreditCardDefaults: IssuingBank = js.native
+  var CreditCardNumbers: AmexPayWithPoints = js.native
+  var MerchantAccountTest: AccountNotAuthorizedContactUs = js.native
+  var Nonces: AbstractTransactable = js.native
+  var TransactionAmounts: Authorize = js.native
 }
 

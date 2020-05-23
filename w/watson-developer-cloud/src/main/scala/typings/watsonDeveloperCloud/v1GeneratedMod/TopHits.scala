@@ -13,10 +13,10 @@ trait TopHits extends js.Object {
 
 object TopHits {
   @scala.inline
-  def apply(hits: TopHitsResults = null, size: Int | Double = null): TopHits = {
+  def apply(hits: TopHitsResults = null, size: js.UndefOr[Double] = js.undefined): TopHits = {
     val __obj = js.Dynamic.literal()
     if (hits != null) __obj.updateDynamic("hits")(hits.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopHits]
   }
 }

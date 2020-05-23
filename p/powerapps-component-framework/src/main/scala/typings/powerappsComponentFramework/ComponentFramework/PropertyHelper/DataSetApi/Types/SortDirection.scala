@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-				 * Column Sort Direction
-				 * -1 - None,
-				 * 0 - Ascending,
-				 * 1 - Descending
-				 */
+  * Column Sort Direction
+  * -1 - None,
+  * 0 - Ascending,
+  * 1 - Descending
+  */
 /* Rewritten from type alias, can be one of: 
   - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`-1`
   - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0`

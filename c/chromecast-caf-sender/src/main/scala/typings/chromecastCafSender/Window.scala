@@ -1,5 +1,6 @@
 package typings.chromecastCafSender
 
+import typings.chromecastCafSender.anon.Typeofcast
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

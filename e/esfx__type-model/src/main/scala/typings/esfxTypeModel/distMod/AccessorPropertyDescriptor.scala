@@ -20,8 +20,8 @@ object AccessorPropertyDescriptor {
     set: /* v */ T => Unit = null
   ): AccessorPropertyDescriptor[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(configurable)) __obj.updateDynamic("configurable")(configurable.asInstanceOf[js.Any])
-    if (!js.isUndefined(enumerable)) __obj.updateDynamic("enumerable")(enumerable.asInstanceOf[js.Any])
+    if (!js.isUndefined(configurable)) __obj.updateDynamic("configurable")(configurable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enumerable)) __obj.updateDynamic("enumerable")(enumerable.get.asInstanceOf[js.Any])
     if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction0(get))
     if (set != null) __obj.updateDynamic("set")(js.Any.fromFunction1(set))
     __obj.asInstanceOf[AccessorPropertyDescriptor[T]]

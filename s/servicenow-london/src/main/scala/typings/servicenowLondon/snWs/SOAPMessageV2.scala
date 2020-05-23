@@ -4,29 +4,55 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sn_ws.SOAPMessageV2")
-@js.native
-class SOAPMessageV2 () extends js.Object {
-  def this(soapMessage: String, soapFunction: String) = this()
-  def execute(): SOAPResponseV2 = js.native
-  def executeAsync(): SOAPResponseV2 = js.native
-  def getEndpoint(): String = js.native
-  def getRequestBody(): String = js.native
-  def getRequestHeader(headerName: String): String = js.native
-  def getRequestHeaders(): js.Object = js.native
-  def setBasicAuth(userName: String, userPass: String): Unit = js.native
-  def setEccCorrelator(correlator: String): Unit = js.native
-  def setEccParameter(name: String, value: String): Unit = js.native
-  def setEndpoint(endpoint: String): Unit = js.native
-  def setHttpMethod(method: String): Unit = js.native
-  def setHttpTimeout(timeoutMs: Double): Unit = js.native
-  def setMIDServer(midServer: String): Unit = js.native
-  def setMutualAuth(profileName: String): Unit = js.native
-  def setRequestBody(body: String): Unit = js.native
-  def setRequestHeader(name: String, value: String): Unit = js.native
-  def setSOAPAction(soapAction: String): Unit = js.native
-  def setStringParameter(name: String, value: String): Unit = js.native
-  def setStringParameterNoEscape(name: String, value: String): Unit = js.native
-  def setWSSecurity(keystoreId: String, keystoreAlias: String, keystorePassword: String, certificateId: String): Unit = js.native
+trait SOAPMessageV2 extends js.Object {
+  def execute(): SOAPResponseV2
+  def executeAsync(): SOAPResponseV2
+  def getEndpoint(): String
+  def getRequestBody(): String
+  def getRequestHeader(headerName: String): String
+  def getRequestHeaders(): js.Object
+  def setBasicAuth(userName: String, userPass: String): Unit
+  def setEccCorrelator(correlator: String): Unit
+  def setEccParameter(name: String, value: String): Unit
+  def setEndpoint(endpoint: String): Unit
+  def setHttpMethod(method: String): Unit
+  def setHttpTimeout(timeoutMs: Double): Unit
+  def setMIDServer(midServer: String): Unit
+  def setMutualAuth(profileName: String): Unit
+  def setRequestBody(body: String): Unit
+  def setRequestHeader(name: String, value: String): Unit
+  def setSOAPAction(soapAction: String): Unit
+  def setStringParameter(name: String, value: String): Unit
+  def setStringParameterNoEscape(name: String, value: String): Unit
+  def setWSSecurity(keystoreId: String, keystoreAlias: String, keystorePassword: String, certificateId: String): Unit
+}
+
+object SOAPMessageV2 {
+  @scala.inline
+  def apply(
+    execute: () => SOAPResponseV2,
+    executeAsync: () => SOAPResponseV2,
+    getEndpoint: () => String,
+    getRequestBody: () => String,
+    getRequestHeader: String => String,
+    getRequestHeaders: () => js.Object,
+    setBasicAuth: (String, String) => Unit,
+    setEccCorrelator: String => Unit,
+    setEccParameter: (String, String) => Unit,
+    setEndpoint: String => Unit,
+    setHttpMethod: String => Unit,
+    setHttpTimeout: Double => Unit,
+    setMIDServer: String => Unit,
+    setMutualAuth: String => Unit,
+    setRequestBody: String => Unit,
+    setRequestHeader: (String, String) => Unit,
+    setSOAPAction: String => Unit,
+    setStringParameter: (String, String) => Unit,
+    setStringParameterNoEscape: (String, String) => Unit,
+    setWSSecurity: (String, String, String, String) => Unit
+  ): SOAPMessageV2 = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), executeAsync = js.Any.fromFunction0(executeAsync), getEndpoint = js.Any.fromFunction0(getEndpoint), getRequestBody = js.Any.fromFunction0(getRequestBody), getRequestHeader = js.Any.fromFunction1(getRequestHeader), getRequestHeaders = js.Any.fromFunction0(getRequestHeaders), setBasicAuth = js.Any.fromFunction2(setBasicAuth), setEccCorrelator = js.Any.fromFunction1(setEccCorrelator), setEccParameter = js.Any.fromFunction2(setEccParameter), setEndpoint = js.Any.fromFunction1(setEndpoint), setHttpMethod = js.Any.fromFunction1(setHttpMethod), setHttpTimeout = js.Any.fromFunction1(setHttpTimeout), setMIDServer = js.Any.fromFunction1(setMIDServer), setMutualAuth = js.Any.fromFunction1(setMutualAuth), setRequestBody = js.Any.fromFunction1(setRequestBody), setRequestHeader = js.Any.fromFunction2(setRequestHeader), setSOAPAction = js.Any.fromFunction1(setSOAPAction), setStringParameter = js.Any.fromFunction2(setStringParameter), setStringParameterNoEscape = js.Any.fromFunction2(setStringParameterNoEscape), setWSSecurity = js.Any.fromFunction4(setWSSecurity))
+    __obj.asInstanceOf[SOAPMessageV2]
+  }
 }
 

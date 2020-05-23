@@ -1,7 +1,7 @@
 package typings.antDesignIcons.iconMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.antDesignIcons.PickIconComponentPropsari
+import typings.antDesignIcons.anon.PickIconComponentPropsari
 import typings.react.mod.ForwardRefExoticComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

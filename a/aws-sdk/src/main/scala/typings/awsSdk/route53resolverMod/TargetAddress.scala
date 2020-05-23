@@ -18,9 +18,9 @@ trait TargetAddress extends js.Object {
 
 object TargetAddress {
   @scala.inline
-  def apply(Ip: Ip, Port: Int | Double = null): TargetAddress = {
+  def apply(Ip: Ip, Port: js.UndefOr[Port] = js.undefined): TargetAddress = {
     val __obj = js.Dynamic.literal(Ip = Ip.asInstanceOf[js.Any])
-    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
+    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetAddress]
   }
 }

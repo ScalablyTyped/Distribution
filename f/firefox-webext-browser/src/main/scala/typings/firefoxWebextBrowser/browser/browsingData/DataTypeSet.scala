@@ -49,17 +49,17 @@ object DataTypeSet {
     serviceWorkers: js.UndefOr[Boolean] = js.undefined
   ): DataTypeSet = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (!js.isUndefined(cookies)) __obj.updateDynamic("cookies")(cookies.asInstanceOf[js.Any])
-    if (!js.isUndefined(downloads)) __obj.updateDynamic("downloads")(downloads.asInstanceOf[js.Any])
-    if (!js.isUndefined(formData)) __obj.updateDynamic("formData")(formData.asInstanceOf[js.Any])
-    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
-    if (!js.isUndefined(indexedDB)) __obj.updateDynamic("indexedDB")(indexedDB.asInstanceOf[js.Any])
-    if (!js.isUndefined(localStorage)) __obj.updateDynamic("localStorage")(localStorage.asInstanceOf[js.Any])
-    if (!js.isUndefined(passwords)) __obj.updateDynamic("passwords")(passwords.asInstanceOf[js.Any])
-    if (!js.isUndefined(pluginData)) __obj.updateDynamic("pluginData")(pluginData.asInstanceOf[js.Any])
-    if (!js.isUndefined(serverBoundCertificates)) __obj.updateDynamic("serverBoundCertificates")(serverBoundCertificates.asInstanceOf[js.Any])
-    if (!js.isUndefined(serviceWorkers)) __obj.updateDynamic("serviceWorkers")(serviceWorkers.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cookies)) __obj.updateDynamic("cookies")(cookies.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(downloads)) __obj.updateDynamic("downloads")(downloads.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(formData)) __obj.updateDynamic("formData")(formData.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(indexedDB)) __obj.updateDynamic("indexedDB")(indexedDB.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(localStorage)) __obj.updateDynamic("localStorage")(localStorage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwords)) __obj.updateDynamic("passwords")(passwords.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pluginData)) __obj.updateDynamic("pluginData")(pluginData.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(serverBoundCertificates)) __obj.updateDynamic("serverBoundCertificates")(serverBoundCertificates.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(serviceWorkers)) __obj.updateDynamic("serviceWorkers")(serviceWorkers.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTypeSet]
   }
 }

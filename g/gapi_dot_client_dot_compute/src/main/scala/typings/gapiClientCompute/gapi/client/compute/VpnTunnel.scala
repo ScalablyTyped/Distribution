@@ -58,7 +58,7 @@ object VpnTunnel {
     description: String = null,
     detailedStatus: String = null,
     id: String = null,
-    ikeVersion: Int | Double = null,
+    ikeVersion: js.UndefOr[Double] = js.undefined,
     kind: String = null,
     localTrafficSelector: js.Array[String] = null,
     name: String = null,
@@ -77,7 +77,7 @@ object VpnTunnel {
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (detailedStatus != null) __obj.updateDynamic("detailedStatus")(detailedStatus.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (ikeVersion != null) __obj.updateDynamic("ikeVersion")(ikeVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(ikeVersion)) __obj.updateDynamic("ikeVersion")(ikeVersion.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (localTrafficSelector != null) __obj.updateDynamic("localTrafficSelector")(localTrafficSelector.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

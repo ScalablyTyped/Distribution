@@ -17,10 +17,10 @@ trait GPSCoordinates extends js.Object {
 
 object GPSCoordinates {
   @scala.inline
-  def apply(Latitude: Int | Double = null, Longitude: Int | Double = null): GPSCoordinates = {
+  def apply(Latitude: js.UndefOr[Double] = js.undefined, Longitude: js.UndefOr[Double] = js.undefined): GPSCoordinates = {
     val __obj = js.Dynamic.literal()
-    if (Latitude != null) __obj.updateDynamic("Latitude")(Latitude.asInstanceOf[js.Any])
-    if (Longitude != null) __obj.updateDynamic("Longitude")(Longitude.asInstanceOf[js.Any])
+    if (!js.isUndefined(Latitude)) __obj.updateDynamic("Latitude")(Latitude.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Longitude)) __obj.updateDynamic("Longitude")(Longitude.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GPSCoordinates]
   }
 }

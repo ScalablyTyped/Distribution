@@ -121,7 +121,7 @@ object Model {
     allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     animation: Animation = null,
     associate: Associate | String = null,
-    autoCloseTimeout: Int | Double = null,
+    autoCloseTimeout: js.UndefOr[Double] = js.undefined,
     beforeClose: /* e */ BeforeCloseEventArgs => Unit = null,
     beforeOpen: /* e */ BeforeOpenEventArgs => Unit = null,
     click: /* e */ ClickEventArgs => Unit = null,
@@ -150,10 +150,10 @@ object Model {
     width: String | Double = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation.get.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (associate != null) __obj.updateDynamic("associate")(associate.asInstanceOf[js.Any])
-    if (autoCloseTimeout != null) __obj.updateDynamic("autoCloseTimeout")(autoCloseTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCloseTimeout)) __obj.updateDynamic("autoCloseTimeout")(autoCloseTimeout.get.asInstanceOf[js.Any])
     if (beforeClose != null) __obj.updateDynamic("beforeClose")(js.Any.fromFunction1(beforeClose))
     if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(js.Any.fromFunction1(beforeOpen))
     if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
@@ -165,15 +165,15 @@ object Model {
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
-    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (hover != null) __obj.updateDynamic("hover")(js.Any.fromFunction1(hover))
-    if (!js.isUndefined(isBalloon)) __obj.updateDynamic("isBalloon")(isBalloon.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBalloon)) __obj.updateDynamic("isBalloon")(isBalloon.get.asInstanceOf[js.Any])
     if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner.asInstanceOf[js.Any])
-    if (!js.isUndefined(showShadow)) __obj.updateDynamic("showShadow")(showShadow.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showShadow)) __obj.updateDynamic("showShadow")(showShadow.get.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (tip != null) __obj.updateDynamic("tip")(tip.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

@@ -41,13 +41,13 @@ object ExtrudeSymbol3DLayerProperties {
     castShadows: js.UndefOr[Boolean] = js.undefined,
     edges: Edges3DProperties = null,
     material: ExtrudeSymbol3DLayerMaterialProperties = null,
-    size: Int | Double = null
+    size: js.UndefOr[Double] = js.undefined
   ): ExtrudeSymbol3DLayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(castShadows)) __obj.updateDynamic("castShadows")(castShadows.asInstanceOf[js.Any])
+    if (!js.isUndefined(castShadows)) __obj.updateDynamic("castShadows")(castShadows.get.asInstanceOf[js.Any])
     if (edges != null) __obj.updateDynamic("edges")(edges.asInstanceOf[js.Any])
     if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtrudeSymbol3DLayerProperties]
   }
 }

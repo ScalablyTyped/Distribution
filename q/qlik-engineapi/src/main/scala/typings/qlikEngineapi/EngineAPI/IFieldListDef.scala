@@ -50,13 +50,13 @@ object IFieldListDef {
     qShowSystem: js.UndefOr[Boolean] = js.undefined
   ): IFieldListDef = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(qShowDefinitionOnly)) __obj.updateDynamic("qShowDefinitionOnly")(qShowDefinitionOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(qShowDerivedFields)) __obj.updateDynamic("qShowDerivedFields")(qShowDerivedFields.asInstanceOf[js.Any])
-    if (!js.isUndefined(qShowHidden)) __obj.updateDynamic("qShowHidden")(qShowHidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(qShowImplicit)) __obj.updateDynamic("qShowImplicit")(qShowImplicit.asInstanceOf[js.Any])
-    if (!js.isUndefined(qShowSemantic)) __obj.updateDynamic("qShowSemantic")(qShowSemantic.asInstanceOf[js.Any])
-    if (!js.isUndefined(qShowSrcTables)) __obj.updateDynamic("qShowSrcTables")(qShowSrcTables.asInstanceOf[js.Any])
-    if (!js.isUndefined(qShowSystem)) __obj.updateDynamic("qShowSystem")(qShowSystem.asInstanceOf[js.Any])
+    if (!js.isUndefined(qShowDefinitionOnly)) __obj.updateDynamic("qShowDefinitionOnly")(qShowDefinitionOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qShowDerivedFields)) __obj.updateDynamic("qShowDerivedFields")(qShowDerivedFields.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qShowHidden)) __obj.updateDynamic("qShowHidden")(qShowHidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qShowImplicit)) __obj.updateDynamic("qShowImplicit")(qShowImplicit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qShowSemantic)) __obj.updateDynamic("qShowSemantic")(qShowSemantic.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qShowSrcTables)) __obj.updateDynamic("qShowSrcTables")(qShowSrcTables.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qShowSystem)) __obj.updateDynamic("qShowSystem")(qShowSystem.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFieldListDef]
   }
 }

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.System.Power
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object EnergySaverStatus extends js.Object {
   /** Battery saver is on. Save energy where possible. */
   @js.native
   sealed trait on extends EnergySaverStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EnergySaverStatus with Double] = js.native
-  /* 0 */ @js.native
-  object disabled extends TopLevel[disabled with Double]
-  
-  /* 1 */ @js.native
-  object off extends TopLevel[off with Double]
-  
-  /* 2 */ @js.native
-  object on extends TopLevel[on with Double]
   
 }
 

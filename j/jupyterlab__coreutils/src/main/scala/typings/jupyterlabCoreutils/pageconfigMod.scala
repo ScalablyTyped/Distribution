@@ -1,5 +1,7 @@
 package typings.jupyterlabCoreutils
 
+import typings.jupyterlabCoreutils.anon.Download
+import typings.jupyterlabCoreutils.anon.Raw
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +19,7 @@ object pageconfigMod extends js.Object {
       * Returns the URL converting this notebook to a certain
       * format with nbconvert.
       */
-    def getNBConvertURL(hasPathFormatDownload: AnonDownload): String = js.native
+    def getNBConvertURL(hasPathFormatDownload: Download): String = js.native
     /**
       * Get the Notebook version info [major, minor, patch].
       */
@@ -81,11 +83,11 @@ object pageconfigMod extends js.Object {
       /**
         * The collection of deferred extensions in page config.
         */
-      val deferred: js.Array[AnonRaw] = js.native
+      val deferred: js.Array[Raw] = js.native
       /**
         * The collection of disabled extensions in page config.
         */
-      val disabled: js.Array[AnonRaw] = js.native
+      val disabled: js.Array[Raw] = js.native
       /**
         * Returns whether a plugin is deferred.
         *

@@ -1,12 +1,12 @@
 package typings.reactVirtualized.esGridMod
 
 import typings.react.mod.Component
-import typings.reactVirtualized.AnonAlignment
-import typings.reactVirtualized.AnonAriareadonly
-import typings.reactVirtualized.AnonColumnIndex
-import typings.reactVirtualized.AnonRowIndex
-import typings.reactVirtualized.AnonScrollLeft
-import typings.reactVirtualized.PartialScrollOffset
+import typings.reactVirtualized.anon.Alignment
+import typings.reactVirtualized.anon.Ariareadonly
+import typings.reactVirtualized.anon.ColumnIndex
+import typings.reactVirtualized.anon.PartialScrollOffset
+import typings.reactVirtualized.anon.RowIndex
+import typings.reactVirtualized.anon.ScrollLeft
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ class Grid ()
     * Gets offsets for a given cell and alignment.
     */
   def getOffsetForCell(): ScrollOffset = js.native
-  def getOffsetForCell(params: AnonAlignment): ScrollOffset = js.native
+  def getOffsetForCell(params: Alignment): ScrollOffset = js.native
   /**
     * This method handles a scroll event originating from an external scroll control.
     * It's an advanced method and should probably not be used unless you're implementing a custom scroll-bar solution.
@@ -32,7 +32,7 @@ class Grid ()
     * This method is intended for advanced use-cases like CellMeasurer.
     */
   // @TODO (bvaughn) Add automated test coverage for this.
-  def invalidateCellSizeAfterRender(params: AnonColumnIndex): Unit = js.native
+  def invalidateCellSizeAfterRender(params: ColumnIndex): Unit = js.native
   /**
     * Pre-measure all columns and rows in a Grid.
     * Typically cells are only measured as needed and estimated sizes are used for cells that have not yet been measured.
@@ -45,23 +45,23 @@ class Grid ()
     * Since Grid only receives :columnCount and :rowCount it has no way of detecting when the underlying data changes.
     */
   def recomputeGridSize(): Unit = js.native
-  def recomputeGridSize(params: AnonRowIndex): Unit = js.native
+  def recomputeGridSize(params: RowIndex): Unit = js.native
   /**
     * Ensure column and row are visible.
     */
-  def scrollToCell(params: AnonColumnIndex): Unit = js.native
+  def scrollToCell(params: ColumnIndex): Unit = js.native
   /**
     * Scroll to the specified offset(s).
     * Useful for animating position changes.
     */
   def scrollToPosition(): Unit = js.native
-  def scrollToPosition(params: AnonScrollLeft): Unit = js.native
+  def scrollToPosition(params: ScrollLeft): Unit = js.native
 }
 
 /* static members */
 @JSImport("react-virtualized/dist/es/Grid", "Grid")
 @js.native
 object Grid extends js.Object {
-  var defaultProps: AnonAriareadonly = js.native
+  var defaultProps: Ariareadonly = js.native
 }
 

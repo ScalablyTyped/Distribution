@@ -27,13 +27,13 @@ trait UpdateThingGroupsForThingRequest extends js.Object {
 object UpdateThingGroupsForThingRequest {
   @scala.inline
   def apply(
-    overrideDynamicGroups: js.UndefOr[scala.Boolean] = js.undefined,
+    overrideDynamicGroups: js.UndefOr[OverrideDynamicGroups] = js.undefined,
     thingGroupsToAdd: ThingGroupList = null,
     thingGroupsToRemove: ThingGroupList = null,
     thingName: ThingName = null
   ): UpdateThingGroupsForThingRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(overrideDynamicGroups)) __obj.updateDynamic("overrideDynamicGroups")(overrideDynamicGroups.asInstanceOf[js.Any])
+    if (!js.isUndefined(overrideDynamicGroups)) __obj.updateDynamic("overrideDynamicGroups")(overrideDynamicGroups.get.asInstanceOf[js.Any])
     if (thingGroupsToAdd != null) __obj.updateDynamic("thingGroupsToAdd")(thingGroupsToAdd.asInstanceOf[js.Any])
     if (thingGroupsToRemove != null) __obj.updateDynamic("thingGroupsToRemove")(thingGroupsToRemove.asInstanceOf[js.Any])
     if (thingName != null) __obj.updateDynamic("thingName")(thingName.asInstanceOf[js.Any])

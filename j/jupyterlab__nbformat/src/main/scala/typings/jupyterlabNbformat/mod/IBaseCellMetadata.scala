@@ -1,6 +1,6 @@
 package typings.jupyterlabNbformat.mod
 
-import typings.jupyterlabNbformat.PartialIBaseCellJupyterMe
+import typings.jupyterlabNbformat.anon.PartialIBaseCellJupyterMe
 import typings.luminoCoreutils.jsonMod.PartialJSONObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`

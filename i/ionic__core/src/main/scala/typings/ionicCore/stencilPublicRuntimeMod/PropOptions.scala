@@ -37,7 +37,7 @@ object PropOptions {
   @scala.inline
   def apply(
     attr: String = null,
-    attribute: String = null,
+    attribute: js.UndefOr[Null | String] = js.undefined,
     connect: String = null,
     context: String = null,
     mutable: js.UndefOr[Boolean] = js.undefined,
@@ -46,12 +46,12 @@ object PropOptions {
   ): PropOptions = {
     val __obj = js.Dynamic.literal()
     if (attr != null) __obj.updateDynamic("attr")(attr.asInstanceOf[js.Any])
-    if (attribute != null) __obj.updateDynamic("attribute")(attribute.asInstanceOf[js.Any])
+    if (!js.isUndefined(attribute)) __obj.updateDynamic("attribute")(attribute.asInstanceOf[js.Any])
     if (connect != null) __obj.updateDynamic("connect")(connect.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (!js.isUndefined(mutable)) __obj.updateDynamic("mutable")(mutable.asInstanceOf[js.Any])
-    if (!js.isUndefined(reflect)) __obj.updateDynamic("reflect")(reflect.asInstanceOf[js.Any])
-    if (!js.isUndefined(reflectToAttr)) __obj.updateDynamic("reflectToAttr")(reflectToAttr.asInstanceOf[js.Any])
+    if (!js.isUndefined(mutable)) __obj.updateDynamic("mutable")(mutable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reflect)) __obj.updateDynamic("reflect")(reflect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reflectToAttr)) __obj.updateDynamic("reflectToAttr")(reflectToAttr.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropOptions]
   }
 }

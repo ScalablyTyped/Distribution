@@ -31,14 +31,14 @@ object LustreFileSystemConfiguration {
     DataRepositoryConfiguration: DataRepositoryConfiguration = null,
     DeploymentType: LustreDeploymentType = null,
     MountName: LustreFileSystemMountName = null,
-    PerUnitStorageThroughput: Int | Double = null,
+    PerUnitStorageThroughput: js.UndefOr[PerUnitStorageThroughput] = js.undefined,
     WeeklyMaintenanceStartTime: WeeklyTime = null
   ): LustreFileSystemConfiguration = {
     val __obj = js.Dynamic.literal()
     if (DataRepositoryConfiguration != null) __obj.updateDynamic("DataRepositoryConfiguration")(DataRepositoryConfiguration.asInstanceOf[js.Any])
     if (DeploymentType != null) __obj.updateDynamic("DeploymentType")(DeploymentType.asInstanceOf[js.Any])
     if (MountName != null) __obj.updateDynamic("MountName")(MountName.asInstanceOf[js.Any])
-    if (PerUnitStorageThroughput != null) __obj.updateDynamic("PerUnitStorageThroughput")(PerUnitStorageThroughput.asInstanceOf[js.Any])
+    if (!js.isUndefined(PerUnitStorageThroughput)) __obj.updateDynamic("PerUnitStorageThroughput")(PerUnitStorageThroughput.get.asInstanceOf[js.Any])
     if (WeeklyMaintenanceStartTime != null) __obj.updateDynamic("WeeklyMaintenanceStartTime")(WeeklyMaintenanceStartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[LustreFileSystemConfiguration]
   }

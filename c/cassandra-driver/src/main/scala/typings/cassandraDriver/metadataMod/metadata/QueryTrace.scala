@@ -1,7 +1,7 @@
 package typings.cassandraDriver.metadataMod.metadata
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.cassandraDriver.AnonActivity
+import typings.cassandraDriver.anon.Activity
 import typings.cassandraDriver.typesMod.types.InetAddress
 import typings.cassandraDriver.typesMod.types.Long
 import scala.scalajs.js
@@ -12,7 +12,7 @@ trait QueryTrace extends js.Object {
   var clientAddress: String
   var coordinator: InetAddress
   var duration: Double
-  var events: js.Array[AnonActivity]
+  var events: js.Array[Activity]
   var parameters: StringDictionary[js.Any]
   var requestType: String
   var startedAt: Double | Long
@@ -24,7 +24,7 @@ object QueryTrace {
     clientAddress: String,
     coordinator: InetAddress,
     duration: Double,
-    events: js.Array[AnonActivity],
+    events: js.Array[Activity],
     parameters: StringDictionary[js.Any],
     requestType: String,
     startedAt: Double | Long

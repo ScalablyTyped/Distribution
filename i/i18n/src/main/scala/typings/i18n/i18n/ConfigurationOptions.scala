@@ -136,7 +136,7 @@ object ConfigurationOptions {
   ): ConfigurationOptions = {
     val __obj = js.Dynamic.literal()
     if (api != null) __obj.updateDynamic("api")(api.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoReload)) __obj.updateDynamic("autoReload")(autoReload.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoReload)) __obj.updateDynamic("autoReload")(autoReload.get.asInstanceOf[js.Any])
     if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
     if (defaultLocale != null) __obj.updateDynamic("defaultLocale")(defaultLocale.asInstanceOf[js.Any])
     if (directory != null) __obj.updateDynamic("directory")(directory.asInstanceOf[js.Any])
@@ -148,13 +148,13 @@ object ConfigurationOptions {
     if (logDebugFn != null) __obj.updateDynamic("logDebugFn")(js.Any.fromFunction1(logDebugFn))
     if (logErrorFn != null) __obj.updateDynamic("logErrorFn")(js.Any.fromFunction1(logErrorFn))
     if (logWarnFn != null) __obj.updateDynamic("logWarnFn")(js.Any.fromFunction1(logWarnFn))
-    if (!js.isUndefined(objectNotation)) __obj.updateDynamic("objectNotation")(objectNotation.asInstanceOf[js.Any])
+    if (!js.isUndefined(objectNotation)) __obj.updateDynamic("objectNotation")(objectNotation.get.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveLegacyCase)) __obj.updateDynamic("preserveLegacyCase")(preserveLegacyCase.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveLegacyCase)) __obj.updateDynamic("preserveLegacyCase")(preserveLegacyCase.get.asInstanceOf[js.Any])
     if (queryParameter != null) __obj.updateDynamic("queryParameter")(queryParameter.asInstanceOf[js.Any])
     if (register != null) __obj.updateDynamic("register")(register.asInstanceOf[js.Any])
-    if (!js.isUndefined(syncFiles)) __obj.updateDynamic("syncFiles")(syncFiles.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateFiles)) __obj.updateDynamic("updateFiles")(updateFiles.asInstanceOf[js.Any])
+    if (!js.isUndefined(syncFiles)) __obj.updateDynamic("syncFiles")(syncFiles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateFiles)) __obj.updateDynamic("updateFiles")(updateFiles.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationOptions]
   }
 }

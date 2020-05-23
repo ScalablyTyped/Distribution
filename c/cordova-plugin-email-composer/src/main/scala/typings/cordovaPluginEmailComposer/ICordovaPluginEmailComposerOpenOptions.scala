@@ -33,7 +33,7 @@ object ICordovaPluginEmailComposerOpenOptions {
     if (bcc != null) __obj.updateDynamic("bcc")(bcc.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (cc != null) __obj.updateDynamic("cc")(cc.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHtml)) __obj.updateDynamic("isHtml")(isHtml.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHtml)) __obj.updateDynamic("isHtml")(isHtml.get.asInstanceOf[js.Any])
     if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICordovaPluginEmailComposerOpenOptions]

@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BatchGetDocumentsRequest extends js.Object {
+  var database: js.UndefOr[String] = js.undefined
   var documents: js.UndefOr[js.Array[String]] = js.undefined
   var mask: js.UndefOr[DocumentMask] = js.undefined
   var newTransaction: js.UndefOr[TransactionOptions] = js.undefined
@@ -15,6 +16,7 @@ trait BatchGetDocumentsRequest extends js.Object {
 object BatchGetDocumentsRequest {
   @scala.inline
   def apply(
+    database: String = null,
     documents: js.Array[String] = null,
     mask: DocumentMask = null,
     newTransaction: TransactionOptions = null,
@@ -22,6 +24,7 @@ object BatchGetDocumentsRequest {
     transaction: String = null
   ): BatchGetDocumentsRequest = {
     val __obj = js.Dynamic.literal()
+    if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
     if (documents != null) __obj.updateDynamic("documents")(documents.asInstanceOf[js.Any])
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
     if (newTransaction != null) __obj.updateDynamic("newTransaction")(newTransaction.asInstanceOf[js.Any])

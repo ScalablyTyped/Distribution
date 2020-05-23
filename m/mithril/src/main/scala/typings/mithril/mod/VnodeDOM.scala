@@ -16,19 +16,19 @@ trait VnodeDOM[Attrs, State /* <: Lifecycle[Attrs, State] */] extends Vnode[Attr
 
 object VnodeDOM {
   @scala.inline
-  def apply[Attrs, State /* <: Lifecycle[Attrs, State] */](
+  def apply[Attrs, State](
     attrs: Attrs,
     dom: Element,
     state: State,
     tag: String | (ComponentTypes[Attrs, State]),
     children: ChildArrayOrPrimitive = null,
-    domSize: Int | Double = null,
+    domSize: js.UndefOr[Double] = js.undefined,
     key: String | Double = null,
     text: String | Double | Boolean = null
   ): VnodeDOM[Attrs, State] = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], dom = dom.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (domSize != null) __obj.updateDynamic("domSize")(domSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(domSize)) __obj.updateDynamic("domSize")(domSize.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[VnodeDOM[Attrs, State]]

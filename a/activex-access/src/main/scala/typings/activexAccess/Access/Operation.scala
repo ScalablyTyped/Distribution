@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.Operation")
 @js.native
-class Operation protected () extends js.Object {
+trait Operation extends js.Object {
   @JSName("Access.Operation_typekey")
   var AccessDotOperation_typekey: Operation = js.native
   val Name: String = js.native

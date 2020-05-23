@@ -13,9 +13,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the properties, commands and events for handling calls on a telephony related device. */
-@JSGlobal("Windows.Media.Devices.CallControl")
 @js.native
-abstract class CallControl () extends js.Object {
+trait CallControl extends js.Object {
   /** Indicates whether the telephony device has a built-in ringer. */
   var hasRinger: Boolean = js.native
   /** Occurs when the device receives a request to answer a call. */
@@ -96,22 +95,5 @@ abstract class CallControl () extends js.Object {
   def removeEventListener_keypadpressed(`type`: keypadpressed, listener: KeypadPressedEventHandler): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_redialrequested(`type`: redialrequested, listener: RedialRequestedEventHandler): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Media.Devices.CallControl")
-@js.native
-object CallControl extends js.Object {
-  /**
-    * Returns a CallControl class that represents the audio communications device specified by the DeviceInformation ID being passed.
-    * @param deviceId The DeviceInformation ID of the specified audio communications device.
-    * @return A class that represents the specified audio communications device.
-    */
-  def fromId(deviceId: String): CallControl = js.native
-  /**
-    * Returns a CallControl class that represents the default audio communications device.
-    * @return A class that represents the default audio communications device.
-    */
-  def getDefault(): CallControl = js.native
 }
 

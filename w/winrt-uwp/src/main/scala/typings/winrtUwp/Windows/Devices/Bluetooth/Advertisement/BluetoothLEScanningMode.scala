@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object BluetoothLEScanningMode extends js.Object {
   /** Scanning mode is passive. */
   @js.native
   sealed trait passive extends BluetoothLEScanningMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BluetoothLEScanningMode with Double] = js.native
-  /* 1 */ @js.native
-  object active extends TopLevel[active with Double]
-  
-  /* 0 */ @js.native
-  object passive extends TopLevel[passive with Double]
   
 }
 

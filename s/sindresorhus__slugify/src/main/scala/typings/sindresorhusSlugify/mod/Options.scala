@@ -100,9 +100,9 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (customReplacements != null) __obj.updateDynamic("customReplacements")(customReplacements.asInstanceOf[js.Any])
-    if (!js.isUndefined(decamelize)) __obj.updateDynamic("decamelize")(decamelize.asInstanceOf[js.Any])
-    if (!js.isUndefined(lowercase)) __obj.updateDynamic("lowercase")(lowercase.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveLeadingUnderscore)) __obj.updateDynamic("preserveLeadingUnderscore")(preserveLeadingUnderscore.asInstanceOf[js.Any])
+    if (!js.isUndefined(decamelize)) __obj.updateDynamic("decamelize")(decamelize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lowercase)) __obj.updateDynamic("lowercase")(lowercase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveLeadingUnderscore)) __obj.updateDynamic("preserveLeadingUnderscore")(preserveLeadingUnderscore.get.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

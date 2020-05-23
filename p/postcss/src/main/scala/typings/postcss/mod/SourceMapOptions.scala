@@ -59,9 +59,9 @@ object SourceMapOptions {
     val __obj = js.Dynamic.literal()
     if (annotation != null) __obj.updateDynamic("annotation")(annotation.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
     if (prev != null) __obj.updateDynamic("prev")(prev.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourcesContent)) __obj.updateDynamic("sourcesContent")(sourcesContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourcesContent)) __obj.updateDynamic("sourcesContent")(sourcesContent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceMapOptions]
   }
 }

@@ -1,28 +1,28 @@
 package typings.passportNaver.mod
 
-import typings.passport.AnonFamilyName
-import typings.passport.AnonType
-import typings.passport.AnonValue
-import typings.passportNaver.AnonAge
+import typings.passport.anon.FamilyName
+import typings.passport.anon.Type
+import typings.passport.anon.Value
+import typings.passportNaver.anon.Age
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Profile
   extends typings.passport.mod.Profile {
-  var _json: AnonAge
+  var _json: Age
 }
 
 object Profile {
   @scala.inline
   def apply(
-    _json: AnonAge,
+    _json: Age,
     displayName: String,
     id: String,
     provider: String,
-    emails: js.Array[AnonType] = null,
-    name: AnonFamilyName = null,
-    photos: js.Array[AnonValue] = null,
+    emails: js.Array[Type] = null,
+    name: FamilyName = null,
+    photos: js.Array[Value] = null,
     username: String = null
   ): Profile = {
     val __obj = js.Dynamic.literal(_json = _json.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])

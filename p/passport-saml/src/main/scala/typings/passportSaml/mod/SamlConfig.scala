@@ -56,7 +56,7 @@ object SamlConfig {
   @scala.inline
   def apply(
     RACComparison: exact | minimum | maximum | better = null,
-    acceptedClockSkewMs: Int | Double = null,
+    acceptedClockSkewMs: js.UndefOr[Double] = js.undefined,
     additionalAuthorizeParams: js.Any = null,
     additionalLogoutParams: js.Any = null,
     additionalParams: js.Any = null,
@@ -84,14 +84,14 @@ object SamlConfig {
     privateCert: String = null,
     protocol: String = null,
     providerName: String = null,
-    requestIdExpirationPeriodMs: Int | Double = null,
+    requestIdExpirationPeriodMs: js.UndefOr[Double] = js.undefined,
     signatureAlgorithm: sha1 | sha256 | sha512 = null,
     skipRequestCompression: js.UndefOr[Boolean] = js.undefined,
     validateInResponseTo: js.UndefOr[Boolean] = js.undefined
   ): SamlConfig = {
     val __obj = js.Dynamic.literal()
     if (RACComparison != null) __obj.updateDynamic("RACComparison")(RACComparison.asInstanceOf[js.Any])
-    if (acceptedClockSkewMs != null) __obj.updateDynamic("acceptedClockSkewMs")(acceptedClockSkewMs.asInstanceOf[js.Any])
+    if (!js.isUndefined(acceptedClockSkewMs)) __obj.updateDynamic("acceptedClockSkewMs")(acceptedClockSkewMs.get.asInstanceOf[js.Any])
     if (additionalAuthorizeParams != null) __obj.updateDynamic("additionalAuthorizeParams")(additionalAuthorizeParams.asInstanceOf[js.Any])
     if (additionalLogoutParams != null) __obj.updateDynamic("additionalLogoutParams")(additionalLogoutParams.asInstanceOf[js.Any])
     if (additionalParams != null) __obj.updateDynamic("additionalParams")(additionalParams.asInstanceOf[js.Any])
@@ -103,9 +103,9 @@ object SamlConfig {
     if (callbackUrl != null) __obj.updateDynamic("callbackUrl")(callbackUrl.asInstanceOf[js.Any])
     if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
     if (decryptionPvk != null) __obj.updateDynamic("decryptionPvk")(decryptionPvk.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableRequestedAuthnContext)) __obj.updateDynamic("disableRequestedAuthnContext")(disableRequestedAuthnContext.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableRequestedAuthnContext)) __obj.updateDynamic("disableRequestedAuthnContext")(disableRequestedAuthnContext.get.asInstanceOf[js.Any])
     if (entryPoint != null) __obj.updateDynamic("entryPoint")(entryPoint.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceAuthn)) __obj.updateDynamic("forceAuthn")(forceAuthn.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceAuthn)) __obj.updateDynamic("forceAuthn")(forceAuthn.get.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (identifierFormat != null) __obj.updateDynamic("identifierFormat")(identifierFormat.asInstanceOf[js.Any])
     if (idpIssuer != null) __obj.updateDynamic("idpIssuer")(idpIssuer.asInstanceOf[js.Any])
@@ -113,16 +113,16 @@ object SamlConfig {
     if (logoutCallbackUrl != null) __obj.updateDynamic("logoutCallbackUrl")(logoutCallbackUrl.asInstanceOf[js.Any])
     if (logoutUrl != null) __obj.updateDynamic("logoutUrl")(logoutUrl.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(passReqToCallback)) __obj.updateDynamic("passReqToCallback")(passReqToCallback.asInstanceOf[js.Any])
-    if (!js.isUndefined(passive)) __obj.updateDynamic("passive")(passive.asInstanceOf[js.Any])
+    if (!js.isUndefined(passReqToCallback)) __obj.updateDynamic("passReqToCallback")(passReqToCallback.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passive)) __obj.updateDynamic("passive")(passive.get.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (privateCert != null) __obj.updateDynamic("privateCert")(privateCert.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (providerName != null) __obj.updateDynamic("providerName")(providerName.asInstanceOf[js.Any])
-    if (requestIdExpirationPeriodMs != null) __obj.updateDynamic("requestIdExpirationPeriodMs")(requestIdExpirationPeriodMs.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestIdExpirationPeriodMs)) __obj.updateDynamic("requestIdExpirationPeriodMs")(requestIdExpirationPeriodMs.get.asInstanceOf[js.Any])
     if (signatureAlgorithm != null) __obj.updateDynamic("signatureAlgorithm")(signatureAlgorithm.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipRequestCompression)) __obj.updateDynamic("skipRequestCompression")(skipRequestCompression.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateInResponseTo)) __obj.updateDynamic("validateInResponseTo")(validateInResponseTo.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipRequestCompression)) __obj.updateDynamic("skipRequestCompression")(skipRequestCompression.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateInResponseTo)) __obj.updateDynamic("validateInResponseTo")(validateInResponseTo.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SamlConfig]
   }
 }

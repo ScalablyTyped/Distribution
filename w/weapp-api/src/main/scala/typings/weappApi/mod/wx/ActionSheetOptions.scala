@@ -1,6 +1,6 @@
 package typings.weappApi.mod.wx
 
-import typings.weappApi.AnonTapIndex
+import typings.weappApi.anon.TapIndex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ object ActionSheetOptions {
     complete: /* res */ js.Any => Unit = null,
     fail: /* res */ js.Any => Unit = null,
     itemColor: String = null,
-    success: /* res */ AnonTapIndex => Unit = null
+    success: /* res */ TapIndex => Unit = null
   ): ActionSheetOptions = {
     val __obj = js.Dynamic.literal(itemList = itemList.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))

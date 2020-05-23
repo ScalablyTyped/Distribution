@@ -21,10 +21,9 @@ object SuggestionSelectedEventData {
     suggestion: TSuggestion,
     suggestionIndex: Double,
     suggestionValue: String,
-    sectionIndex: Int | Double = null
+    sectionIndex: Double = null.asInstanceOf[Double]
   ): SuggestionSelectedEventData[TSuggestion] = {
-    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], suggestion = suggestion.asInstanceOf[js.Any], suggestionIndex = suggestionIndex.asInstanceOf[js.Any], suggestionValue = suggestionValue.asInstanceOf[js.Any])
-    if (sectionIndex != null) __obj.updateDynamic("sectionIndex")(sectionIndex.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], suggestion = suggestion.asInstanceOf[js.Any], suggestionIndex = suggestionIndex.asInstanceOf[js.Any], suggestionValue = suggestionValue.asInstanceOf[js.Any], sectionIndex = sectionIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuggestionSelectedEventData[TSuggestion]]
   }
 }

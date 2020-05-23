@@ -11,35 +11,35 @@ import org.scalablytyped.runtime.Instantiable6
 import org.scalablytyped.runtime.Instantiable7
 import org.scalablytyped.runtime.Instantiable8
 import org.scalablytyped.runtime.Instantiable9
-import typings.aframe.AnonAlphamapfragment
-import typings.aframe.AnonAomap
-import typings.aframe.AnonDictname
-import typings.aframe.TypeofAnimationClip
-import typings.aframe.TypeofAnimationUtils
-import typings.aframe.TypeofBufferGeometry
-import typings.aframe.TypeofBufferGeometryUtils
-import typings.aframe.TypeofCache
-import typings.aframe.TypeofColor
-import typings.aframe.TypeofCurve
-import typings.aframe.TypeofCurveUtils
-import typings.aframe.TypeofEuler
-import typings.aframe.TypeofExtrudeBufferGeomet
-import typings.aframe.TypeofExtrudeGeometry
-import typings.aframe.TypeofGeometryUtils
-import typings.aframe.TypeofImageUtils
-import typings.aframe.TypeofKeyframeTrack
-import typings.aframe.TypeofLoaderUtils
-import typings.aframe.TypeofMathUtils
-import typings.aframe.TypeofObject3D
-import typings.aframe.TypeofPropertyBinding
-import typings.aframe.TypeofPropertyBindingComposite
-import typings.aframe.TypeofQuaternion
-import typings.aframe.TypeofSceneUtils
-import typings.aframe.TypeofShapeUtils
-import typings.aframe.TypeofSphericalHarmonics3
-import typings.aframe.TypeofTexture
-import typings.aframe.TypeofTriangle
-import typings.aframe.TypeofWebGLUniforms
+import typings.aframe.anon.Alphamapfragment
+import typings.aframe.anon.Aomap
+import typings.aframe.anon.Dictname
+import typings.aframe.anon.TypeofAnimationClip
+import typings.aframe.anon.TypeofAnimationUtils
+import typings.aframe.anon.TypeofBufferGeometry
+import typings.aframe.anon.TypeofBufferGeometryUtils
+import typings.aframe.anon.TypeofCache
+import typings.aframe.anon.TypeofColor
+import typings.aframe.anon.TypeofCurve
+import typings.aframe.anon.TypeofCurveUtils
+import typings.aframe.anon.TypeofEuler
+import typings.aframe.anon.TypeofExtrudeBufferGeomet
+import typings.aframe.anon.TypeofExtrudeGeometry
+import typings.aframe.anon.TypeofGeometryUtils
+import typings.aframe.anon.TypeofImageUtils
+import typings.aframe.anon.TypeofKeyframeTrack
+import typings.aframe.anon.TypeofLoaderUtils
+import typings.aframe.anon.TypeofMathUtils
+import typings.aframe.anon.TypeofObject3D
+import typings.aframe.anon.TypeofPropertyBinding
+import typings.aframe.anon.TypeofPropertyBindingComposite
+import typings.aframe.anon.TypeofQuaternion
+import typings.aframe.anon.TypeofSceneUtils
+import typings.aframe.anon.TypeofShapeUtils
+import typings.aframe.anon.TypeofSphericalHarmonics3
+import typings.aframe.anon.TypeofTexture
+import typings.aframe.anon.TypeofTriangle
+import typings.aframe.anon.TypeofWebGLUniforms
 import typings.std.ArrayLike
 import typings.std.AudioNode
 import typings.std.HTMLImageElement
@@ -655,13 +655,11 @@ trait ThreeLib extends js.Object {
   var PointLightHelper: Instantiable1[/* light */ PointLight, typings.three.mod.PointLightHelper] = js.native
   var Points: Instantiable0[typings.three.mod.Points] = js.native
   var PointsMaterial: Instantiable0[typings.three.mod.PointsMaterial] = js.native
-  var PolarGridHelper: Instantiable6[
+  var PolarGridHelper: Instantiable4[
     /* radius */ Double, 
     /* radials */ Double, 
     /* circles */ Double, 
     /* divisions */ Double, 
-    /* color1 */ Color, 
-    /* color2 */ Color, 
     typings.three.mod.PolarGridHelper
   ] = js.native
   var PolyhedronBufferGeometry: Instantiable2[
@@ -789,8 +787,8 @@ trait ThreeLib extends js.Object {
   val SRGB8_ALPHA8_ASTC_8x8_Format: CompressedPixelFormat = js.native
   var Scene: Instantiable0[typings.three.mod.Scene] = js.native
   val SceneUtils: TypeofSceneUtils = js.native
-  var ShaderChunk: AnonAlphamapfragment = js.native
-  var ShaderLib: AnonDictname = js.native
+  var ShaderChunk: Alphamapfragment = js.native
+  var ShaderLib: Dictname = js.native
   var ShaderMaterial: Instantiable0[typings.three.mod.ShaderMaterial] = js.native
   var ShadowMaterial: Instantiable0[typings.three.mod.ShadowMaterial] = js.native
   var Shape: Instantiable0[typings.three.mod.Shape] = js.native
@@ -920,7 +918,7 @@ trait ThreeLib extends js.Object {
   ] = js.native
   val Uncharted2ToneMapping: ToneMapping = js.native
   var Uniform: Instantiable1[/* value */ js.Any, typings.three.mod.Uniform] = js.native
-  var UniformsLib: AnonAomap = js.native
+  var UniformsLib: Aomap = js.native
   val UniformsUtils: js.Any = js.native
   val UnsignedByteType: TextureDataType = js.native
   val UnsignedInt248Type: TextureDataType = js.native

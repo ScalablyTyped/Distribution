@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side counterpart of the ComboBox and ComboBoxFor extensions.
   */
-@JSGlobal("MVCxClientComboBox")
 @js.native
-class MVCxClientComboBox () extends ASPxClientComboBox {
+trait MVCxClientComboBox extends ASPxClientComboBox {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -22,16 +21,5 @@ class MVCxClientComboBox () extends ASPxClientComboBox {
     */
   def PerformCallback(data: js.Any): Unit = js.native
   def PerformCallback(data: js.Any, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("MVCxClientComboBox")
-@js.native
-object MVCxClientComboBox extends js.Object {
-  /**
-    * Converts the specified object to the MVCxClientComboBox type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): MVCxClientComboBox = js.native
 }
 

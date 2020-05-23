@@ -15,7 +15,7 @@ trait RelationThrough[M /* <: Model */] extends js.Object {
 
 object RelationThrough {
   @scala.inline
-  def apply[M /* <: Model */](
+  def apply[M](
     from: RelationMappingColumnRef,
     to: RelationMappingColumnRef,
     beforeInsert: (M, /* context */ QueryContext) => js.Promise[Unit] | Unit = null,

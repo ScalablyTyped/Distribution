@@ -16,11 +16,15 @@ trait ListenRequest extends js.Object {
 
 object ListenRequest {
   @scala.inline
-  def apply(addTarget: Target = null, labels: Record[String, String] = null, removeTarget: Int | Double = null): ListenRequest = {
+  def apply(
+    addTarget: Target = null,
+    labels: Record[String, String] = null,
+    removeTarget: js.UndefOr[Double] = js.undefined
+  ): ListenRequest = {
     val __obj = js.Dynamic.literal()
     if (addTarget != null) __obj.updateDynamic("addTarget")(addTarget.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (removeTarget != null) __obj.updateDynamic("removeTarget")(removeTarget.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeTarget)) __obj.updateDynamic("removeTarget")(removeTarget.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenRequest]
   }
 }

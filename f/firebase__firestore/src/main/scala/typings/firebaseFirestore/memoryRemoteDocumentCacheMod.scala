@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/memory_remote_document_cache", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/memory_remote_document_cache", JSImport.Namespace)
 @js.native
 object memoryRemoteDocumentCacheMod extends js.Object {
   @js.native

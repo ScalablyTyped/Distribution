@@ -16,7 +16,7 @@ trait PlusBarcodeBarcodeOptions extends js.Object {
   /**
     * 是否保存扫码成功时的截图
     * 如果设置为true则在扫码成功时将图片保存，并通过onmarked回调函数的file参数返回保存文件的路径。
-    * 	默认值为false，不保存截图。
+    *     默认值为false，不保存截图。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
     */
@@ -31,9 +31,9 @@ trait PlusBarcodeBarcodeOptions extends js.Object {
   /**
     * 扫码成功时播放的提示音
     * 可取值：
-    * 	"none" - 不播放提示音；
-    * 	"default" - 播放默认提示音（5+引擎内置）。
-    * 	默认值为"default"。
+    *     "none" - 不播放提示音；
+    *     "default" - 播放默认提示音（5+引擎内置）。
+    *     默认值为"default"。
     * - none: 扫码成功时不播放提示音
     * - default: 扫码成功时播放默认提示音
     * 
@@ -43,7 +43,7 @@ trait PlusBarcodeBarcodeOptions extends js.Object {
   /**
     * 扫码成功时是否需要震动提醒
     * 如果设置为true则在扫码成功时震动设备，false则不震动。
-    * 	默认值为true。
+    *     默认值为true。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
     */
@@ -59,10 +59,10 @@ object PlusBarcodeBarcodeOptions {
     vibrate: js.UndefOr[Boolean] = js.undefined
   ): PlusBarcodeBarcodeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(conserve)) __obj.updateDynamic("conserve")(conserve.asInstanceOf[js.Any])
+    if (!js.isUndefined(conserve)) __obj.updateDynamic("conserve")(conserve.get.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (sound != null) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
-    if (!js.isUndefined(vibrate)) __obj.updateDynamic("vibrate")(vibrate.asInstanceOf[js.Any])
+    if (!js.isUndefined(vibrate)) __obj.updateDynamic("vibrate")(vibrate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusBarcodeBarcodeOptions]
   }
 }

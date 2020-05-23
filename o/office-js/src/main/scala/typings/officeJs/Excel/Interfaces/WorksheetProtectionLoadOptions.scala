@@ -18,14 +18,14 @@ trait WorksheetProtectionLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Sheet protection options. Read-only.
+    * Specifies the protection options for the worksheet.
     *
     * [Api set: ExcelApi 1.2]
     */
   var options: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Indicates if the worksheet is protected. Read-only.
+    * Specifies if the worksheet is protected.
     *
     * [Api set: ExcelApi 1.2]
     */
@@ -40,9 +40,9 @@ object WorksheetProtectionLoadOptions {
     `protected`: js.UndefOr[Boolean] = js.undefined
   ): WorksheetProtectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(options)) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (!js.isUndefined(`protected`)) __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(options)) __obj.updateDynamic("options")(options.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`protected`)) __obj.updateDynamic("protected")(`protected`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorksheetProtectionLoadOptions]
   }
 }

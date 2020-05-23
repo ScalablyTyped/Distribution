@@ -28,7 +28,7 @@ object PlusBluetoothBluetoothService {
   @scala.inline
   def apply(isPrimary: js.UndefOr[Boolean] = js.undefined, uuid: String = null): PlusBluetoothBluetoothService = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isPrimary)) __obj.updateDynamic("isPrimary")(isPrimary.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPrimary)) __obj.updateDynamic("isPrimary")(isPrimary.get.asInstanceOf[js.Any])
     if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusBluetoothBluetoothService]
   }

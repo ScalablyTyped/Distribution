@@ -33,18 +33,11 @@ object VastMediaFile {
     codec: String = null,
     fileURL: String = null,
     id: String = null,
-    maintainAspectRatio: js.UndefOr[Boolean] = js.undefined,
+    maintainAspectRatio: Boolean = null.asInstanceOf[Boolean],
     mimeType: String = null,
-    scalable: js.UndefOr[Boolean] = js.undefined
+    scalable: Boolean = null.asInstanceOf[Boolean]
   ): VastMediaFile = {
-    val __obj = js.Dynamic.literal(bitrate = bitrate.asInstanceOf[js.Any], deliveryType = deliveryType.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], maxBitrate = maxBitrate.asInstanceOf[js.Any], minBitrate = minBitrate.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (apiFramework != null) __obj.updateDynamic("apiFramework")(apiFramework.asInstanceOf[js.Any])
-    if (codec != null) __obj.updateDynamic("codec")(codec.asInstanceOf[js.Any])
-    if (fileURL != null) __obj.updateDynamic("fileURL")(fileURL.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(maintainAspectRatio)) __obj.updateDynamic("maintainAspectRatio")(maintainAspectRatio.asInstanceOf[js.Any])
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
-    if (!js.isUndefined(scalable)) __obj.updateDynamic("scalable")(scalable.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bitrate = bitrate.asInstanceOf[js.Any], deliveryType = deliveryType.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], maxBitrate = maxBitrate.asInstanceOf[js.Any], minBitrate = minBitrate.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], apiFramework = apiFramework.asInstanceOf[js.Any], codec = codec.asInstanceOf[js.Any], fileURL = fileURL.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], maintainAspectRatio = maintainAspectRatio.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any], scalable = scalable.asInstanceOf[js.Any])
     __obj.asInstanceOf[VastMediaFile]
   }
 }

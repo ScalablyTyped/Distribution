@@ -1,6 +1,7 @@
 package typings.mangopay2NodejsSdk.mod.user
 
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NATURAL
+import typings.mangopay2NodejsSdk.mod.Timestamp
 import typings.mangopay2NodejsSdk.mod.address.AddressData
 import typings.mangopay2NodejsSdk.typesMod.CountryISO
 import scala.scalajs.js
@@ -17,7 +18,7 @@ object UpdateUserNaturalData {
     Id: String,
     PersonType: NATURAL,
     Address: String | AddressData = null,
-    Birthday: Int | Double = null,
+    Birthday: js.UndefOr[Timestamp] = js.undefined,
     CountryOfResidence: CountryISO = null,
     Email: String = null,
     FirstName: String = null,
@@ -29,7 +30,7 @@ object UpdateUserNaturalData {
   ): UpdateUserNaturalData = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], PersonType = PersonType.asInstanceOf[js.Any])
     if (Address != null) __obj.updateDynamic("Address")(Address.asInstanceOf[js.Any])
-    if (Birthday != null) __obj.updateDynamic("Birthday")(Birthday.asInstanceOf[js.Any])
+    if (!js.isUndefined(Birthday)) __obj.updateDynamic("Birthday")(Birthday.get.asInstanceOf[js.Any])
     if (CountryOfResidence != null) __obj.updateDynamic("CountryOfResidence")(CountryOfResidence.asInstanceOf[js.Any])
     if (Email != null) __obj.updateDynamic("Email")(Email.asInstanceOf[js.Any])
     if (FirstName != null) __obj.updateDynamic("FirstName")(FirstName.asInstanceOf[js.Any])

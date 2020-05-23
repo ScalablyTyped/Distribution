@@ -19,15 +19,15 @@ object ClientOptions {
     accountKey: PrivateKeyBuffer | PrivateKeyString,
     directoryUrl: String,
     accountUrl: String = null,
-    backoffAttempts: Int | Double = null,
-    backoffMax: Int | Double = null,
-    backoffMin: Int | Double = null
+    backoffAttempts: js.UndefOr[Double] = js.undefined,
+    backoffMax: js.UndefOr[Double] = js.undefined,
+    backoffMin: js.UndefOr[Double] = js.undefined
   ): ClientOptions = {
     val __obj = js.Dynamic.literal(accountKey = accountKey.asInstanceOf[js.Any], directoryUrl = directoryUrl.asInstanceOf[js.Any])
     if (accountUrl != null) __obj.updateDynamic("accountUrl")(accountUrl.asInstanceOf[js.Any])
-    if (backoffAttempts != null) __obj.updateDynamic("backoffAttempts")(backoffAttempts.asInstanceOf[js.Any])
-    if (backoffMax != null) __obj.updateDynamic("backoffMax")(backoffMax.asInstanceOf[js.Any])
-    if (backoffMin != null) __obj.updateDynamic("backoffMin")(backoffMin.asInstanceOf[js.Any])
+    if (!js.isUndefined(backoffAttempts)) __obj.updateDynamic("backoffAttempts")(backoffAttempts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(backoffMax)) __obj.updateDynamic("backoffMax")(backoffMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(backoffMin)) __obj.updateDynamic("backoffMin")(backoffMin.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
 }

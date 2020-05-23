@@ -305,16 +305,16 @@ object Node {
     borderColor: String = null,
     borderDashArray: String = null,
     borderGradient: js.Any = null,
-    borderWidth: Int | Double = null,
+    borderWidth: js.UndefOr[Double] = js.undefined,
     canUngroup: js.UndefOr[Boolean] = js.undefined,
     children: js.Array[_] = null,
     `class`: NodesClass = null,
     classifier: ClassifierShapes | String = null,
     collapseIcon: NodesCollapseIcon = null,
-    connectorPadding: Int | Double = null,
+    connectorPadding: js.UndefOr[Double] = js.undefined,
     constraints: NodeConstraints | String = null,
     container: NodesContainer = null,
-    cornerRadius: Int | Double = null,
+    cornerRadius: js.UndefOr[Double] = js.undefined,
     cssClass: String = null,
     data: NodesData = null,
     enumeration: NodesEnumeration = null,
@@ -325,7 +325,7 @@ object Node {
     gateway: BPMNGateways | String = null,
     gradient: NodesGradient = null,
     header: js.Any = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     horizontalAlign: HorizontalAlignment | String = null,
     inEdges: js.Array[_] = null,
     interface: NodesInterface = null,
@@ -333,33 +333,33 @@ object Node {
     isSwimlane: js.UndefOr[Boolean] = js.undefined,
     labels: js.Array[NodesLabel] = null,
     lanes: js.Array[NodesLane] = null,
-    marginBottom: Int | Double = null,
-    marginLeft: Int | Double = null,
-    marginRight: Int | Double = null,
-    marginTop: Int | Double = null,
-    maxHeight: Int | Double = null,
-    maxWidth: Int | Double = null,
-    minHeight: Int | Double = null,
-    minWidth: Int | Double = null,
+    marginBottom: js.UndefOr[Double] = js.undefined,
+    marginLeft: js.UndefOr[Double] = js.undefined,
+    marginRight: js.UndefOr[Double] = js.undefined,
+    marginTop: js.UndefOr[Double] = js.undefined,
+    maxHeight: js.UndefOr[Double] = js.undefined,
+    maxWidth: js.UndefOr[Double] = js.undefined,
+    minHeight: js.UndefOr[Double] = js.undefined,
+    minWidth: js.UndefOr[Double] = js.undefined,
     name: String = null,
-    offsetX: Int | Double = null,
-    offsetY: Int | Double = null,
-    opacity: Int | Double = null,
+    offsetX: js.UndefOr[Double] = js.undefined,
+    offsetY: js.UndefOr[Double] = js.undefined,
+    opacity: js.UndefOr[Double] = js.undefined,
     orientation: String = null,
     outEdges: js.Array[_] = null,
-    paddingBottom: Int | Double = null,
-    paddingLeft: Int | Double = null,
-    paddingRight: Int | Double = null,
-    paddingTop: Int | Double = null,
+    paddingBottom: js.UndefOr[Double] = js.undefined,
+    paddingLeft: js.UndefOr[Double] = js.undefined,
+    paddingRight: js.UndefOr[Double] = js.undefined,
+    paddingTop: js.UndefOr[Double] = js.undefined,
     paletteItem: NodesPaletteItem = null,
     parent: String = null,
     pathData: String = null,
-    phaseSize: Int | Double = null,
+    phaseSize: js.UndefOr[Double] = js.undefined,
     phases: js.Array[NodesPhase] = null,
     pivot: js.Any = null,
     points: js.Array[_] = null,
     ports: js.Array[NodesPort] = null,
-    rotateAngle: Int | Double = null,
+    rotateAngle: js.UndefOr[Double] = js.undefined,
     shadow: NodesShadow = null,
     shape: BasicShapes | FlowShapes | BPMNShapes | UMLActivityShapes | String = null,
     source: String = null,
@@ -372,8 +372,8 @@ object Node {
     `type`: Shapes | String = null,
     verticalAlign: VerticalAlignment | String = null,
     visible: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null,
-    zOrder: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined,
+    zOrder: js.UndefOr[Double] = js.undefined
   ): Node = {
     val __obj = js.Dynamic.literal()
     if (activity != null) __obj.updateDynamic("activity")(activity.asInstanceOf[js.Any])
@@ -382,61 +382,61 @@ object Node {
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderDashArray != null) __obj.updateDynamic("borderDashArray")(borderDashArray.asInstanceOf[js.Any])
     if (borderGradient != null) __obj.updateDynamic("borderGradient")(borderGradient.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(canUngroup)) __obj.updateDynamic("canUngroup")(canUngroup.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(canUngroup)) __obj.updateDynamic("canUngroup")(canUngroup.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
     if (classifier != null) __obj.updateDynamic("classifier")(classifier.asInstanceOf[js.Any])
     if (collapseIcon != null) __obj.updateDynamic("collapseIcon")(collapseIcon.asInstanceOf[js.Any])
-    if (connectorPadding != null) __obj.updateDynamic("connectorPadding")(connectorPadding.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectorPadding)) __obj.updateDynamic("connectorPadding")(connectorPadding.get.asInstanceOf[js.Any])
     if (constraints != null) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(cornerRadius)) __obj.updateDynamic("cornerRadius")(cornerRadius.get.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (enumeration != null) __obj.updateDynamic("enumeration")(enumeration.asInstanceOf[js.Any])
     if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    if (!js.isUndefined(excludeFromLayout)) __obj.updateDynamic("excludeFromLayout")(excludeFromLayout.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludeFromLayout)) __obj.updateDynamic("excludeFromLayout")(excludeFromLayout.get.asInstanceOf[js.Any])
     if (expandIcon != null) __obj.updateDynamic("expandIcon")(expandIcon.asInstanceOf[js.Any])
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
     if (gateway != null) __obj.updateDynamic("gateway")(gateway.asInstanceOf[js.Any])
     if (gradient != null) __obj.updateDynamic("gradient")(gradient.asInstanceOf[js.Any])
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (horizontalAlign != null) __obj.updateDynamic("horizontalAlign")(horizontalAlign.asInstanceOf[js.Any])
     if (inEdges != null) __obj.updateDynamic("inEdges")(inEdges.asInstanceOf[js.Any])
     if (interface != null) __obj.updateDynamic("interface")(interface.asInstanceOf[js.Any])
-    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSwimlane)) __obj.updateDynamic("isSwimlane")(isSwimlane.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSwimlane)) __obj.updateDynamic("isSwimlane")(isSwimlane.get.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (lanes != null) __obj.updateDynamic("lanes")(lanes.asInstanceOf[js.Any])
-    if (marginBottom != null) __obj.updateDynamic("marginBottom")(marginBottom.asInstanceOf[js.Any])
-    if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
-    if (marginRight != null) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
-    if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginBottom)) __obj.updateDynamic("marginBottom")(marginBottom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginLeft)) __obj.updateDynamic("marginLeft")(marginLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginRight)) __obj.updateDynamic("marginRight")(marginRight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginTop)) __obj.updateDynamic("marginTop")(marginTop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX.asInstanceOf[js.Any])
-    if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetX)) __obj.updateDynamic("offsetX")(offsetX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetY)) __obj.updateDynamic("offsetY")(offsetY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (outEdges != null) __obj.updateDynamic("outEdges")(outEdges.asInstanceOf[js.Any])
-    if (paddingBottom != null) __obj.updateDynamic("paddingBottom")(paddingBottom.asInstanceOf[js.Any])
-    if (paddingLeft != null) __obj.updateDynamic("paddingLeft")(paddingLeft.asInstanceOf[js.Any])
-    if (paddingRight != null) __obj.updateDynamic("paddingRight")(paddingRight.asInstanceOf[js.Any])
-    if (paddingTop != null) __obj.updateDynamic("paddingTop")(paddingTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingBottom)) __obj.updateDynamic("paddingBottom")(paddingBottom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingLeft)) __obj.updateDynamic("paddingLeft")(paddingLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingRight)) __obj.updateDynamic("paddingRight")(paddingRight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingTop)) __obj.updateDynamic("paddingTop")(paddingTop.get.asInstanceOf[js.Any])
     if (paletteItem != null) __obj.updateDynamic("paletteItem")(paletteItem.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     if (pathData != null) __obj.updateDynamic("pathData")(pathData.asInstanceOf[js.Any])
-    if (phaseSize != null) __obj.updateDynamic("phaseSize")(phaseSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(phaseSize)) __obj.updateDynamic("phaseSize")(phaseSize.get.asInstanceOf[js.Any])
     if (phases != null) __obj.updateDynamic("phases")(phases.asInstanceOf[js.Any])
     if (pivot != null) __obj.updateDynamic("pivot")(pivot.asInstanceOf[js.Any])
     if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
     if (ports != null) __obj.updateDynamic("ports")(ports.asInstanceOf[js.Any])
-    if (rotateAngle != null) __obj.updateDynamic("rotateAngle")(rotateAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotateAngle)) __obj.updateDynamic("rotateAngle")(rotateAngle.get.asInstanceOf[js.Any])
     if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
@@ -448,9 +448,9 @@ object Node {
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (zOrder != null) __obj.updateDynamic("zOrder")(zOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zOrder)) __obj.updateDynamic("zOrder")(zOrder.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
 }

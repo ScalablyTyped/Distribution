@@ -1,7 +1,7 @@
 package typings.angularUiRouter.mod.angularAugmentingMod.ui
 
 import typings.angular.mod.IServiceProvider
-import typings.angular.mod._Global_.Function
+import typings.angular.mod.global.Function
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,7 +1,7 @@
 package typings.cliTable.mod
 
-import typings.cliTable.PartialRecordtoptopmidtop
-import typings.cliTable.Partialpaddingleftnumberp
+import typings.cliTable.anon.PartialRecordtoptopmidtop
+import typings.cliTable.anon.Partialpaddingleftnumberp
 import typings.cliTable.cliTableStrings.left
 import typings.cliTable.cliTableStrings.middle
 import typings.cliTable.cliTableStrings.right

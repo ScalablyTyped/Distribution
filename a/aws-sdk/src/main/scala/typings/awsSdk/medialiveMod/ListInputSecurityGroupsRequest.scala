@@ -12,9 +12,9 @@ trait ListInputSecurityGroupsRequest extends js.Object {
 
 object ListInputSecurityGroupsRequest {
   @scala.inline
-  def apply(MaxResults: Int | Double = null, NextToken: string = null): ListInputSecurityGroupsRequest = {
+  def apply(MaxResults: js.UndefOr[MaxResults] = js.undefined, NextToken: string = null): ListInputSecurityGroupsRequest = {
     val __obj = js.Dynamic.literal()
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListInputSecurityGroupsRequest]
   }

@@ -83,9 +83,9 @@ object CreateTrainingJobRequest {
     CheckpointConfig: CheckpointConfig = null,
     DebugHookConfig: DebugHookConfig = null,
     DebugRuleConfigurations: DebugRuleConfigurations = null,
-    EnableInterContainerTrafficEncryption: js.UndefOr[scala.Boolean] = js.undefined,
-    EnableManagedSpotTraining: js.UndefOr[scala.Boolean] = js.undefined,
-    EnableNetworkIsolation: js.UndefOr[scala.Boolean] = js.undefined,
+    EnableInterContainerTrafficEncryption: js.UndefOr[Boolean] = js.undefined,
+    EnableManagedSpotTraining: js.UndefOr[Boolean] = js.undefined,
+    EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined,
     ExperimentConfig: ExperimentConfig = null,
     HyperParameters: HyperParameters = null,
     InputDataConfig: InputDataConfig = null,
@@ -97,9 +97,9 @@ object CreateTrainingJobRequest {
     if (CheckpointConfig != null) __obj.updateDynamic("CheckpointConfig")(CheckpointConfig.asInstanceOf[js.Any])
     if (DebugHookConfig != null) __obj.updateDynamic("DebugHookConfig")(DebugHookConfig.asInstanceOf[js.Any])
     if (DebugRuleConfigurations != null) __obj.updateDynamic("DebugRuleConfigurations")(DebugRuleConfigurations.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableInterContainerTrafficEncryption)) __obj.updateDynamic("EnableInterContainerTrafficEncryption")(EnableInterContainerTrafficEncryption.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableManagedSpotTraining)) __obj.updateDynamic("EnableManagedSpotTraining")(EnableManagedSpotTraining.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableNetworkIsolation)) __obj.updateDynamic("EnableNetworkIsolation")(EnableNetworkIsolation.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableInterContainerTrafficEncryption)) __obj.updateDynamic("EnableInterContainerTrafficEncryption")(EnableInterContainerTrafficEncryption.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableManagedSpotTraining)) __obj.updateDynamic("EnableManagedSpotTraining")(EnableManagedSpotTraining.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableNetworkIsolation)) __obj.updateDynamic("EnableNetworkIsolation")(EnableNetworkIsolation.get.asInstanceOf[js.Any])
     if (ExperimentConfig != null) __obj.updateDynamic("ExperimentConfig")(ExperimentConfig.asInstanceOf[js.Any])
     if (HyperParameters != null) __obj.updateDynamic("HyperParameters")(HyperParameters.asInstanceOf[js.Any])
     if (InputDataConfig != null) __obj.updateDynamic("InputDataConfig")(InputDataConfig.asInstanceOf[js.Any])

@@ -17,7 +17,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/local_documents_view", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/local_documents_view", JSImport.Namespace)
 @js.native
 object localDocumentsViewMod extends js.Object {
   @js.native
@@ -52,7 +52,7 @@ object localDocumentsViewMod extends js.Object {
       *
       * @param transaction The persistence transaction.
       * @param query The query to match documents against.
-      * @param sinceReadTime If not set to SnapshotVersion.MIN, return only
+      * @param sinceReadTime If not set to SnapshotVersion.min(), return only
       *     documents that have been read since this snapshot version (exclusive).
       */
     def getDocumentsMatchingQuery(transaction: PersistenceTransaction, query: Query, sinceReadTime: SnapshotVersion): PersistencePromise[DocumentMap_] = js.native

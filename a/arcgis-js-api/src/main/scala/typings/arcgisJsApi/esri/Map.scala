@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,8 +53,4 @@ trait Map
     */
   var ground: Ground = js.native
 }
-
-@JSGlobal("__esri.Map")
-@js.native
-object Map extends TopLevel[MapConstructor]
 

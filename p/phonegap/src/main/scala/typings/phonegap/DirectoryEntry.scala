@@ -1,6 +1,5 @@
 package typings.phonegap
 
-import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,8 +21,4 @@ trait DirectoryEntry extends FileSystemEntry {
   ): Unit = js.native
   def removeRecursively(successCallback: js.Function0[Unit], errorCallback: js.Function1[/* error */ FileError, Unit]): Unit = js.native
 }
-
-@JSGlobal("DirectoryEntry")
-@js.native
-object DirectoryEntry extends Instantiable2[/* name */ String, /* root */ DirectoryEntry, DirectoryEntry]
 

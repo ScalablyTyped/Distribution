@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("__MaterialUI.EnhancedButton")
 @js.native
-class EnhancedButton ()
+trait EnhancedButton
   extends Component[EnhancedButtonProps, js.Object, js.Any]
 

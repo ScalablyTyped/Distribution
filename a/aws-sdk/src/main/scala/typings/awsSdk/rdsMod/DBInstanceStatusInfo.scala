@@ -28,13 +28,13 @@ object DBInstanceStatusInfo {
   @scala.inline
   def apply(
     Message: String = null,
-    Normal: js.UndefOr[scala.Boolean] = js.undefined,
+    Normal: js.UndefOr[Boolean] = js.undefined,
     Status: String = null,
     StatusType: String = null
   ): DBInstanceStatusInfo = {
     val __obj = js.Dynamic.literal()
     if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
-    if (!js.isUndefined(Normal)) __obj.updateDynamic("Normal")(Normal.asInstanceOf[js.Any])
+    if (!js.isUndefined(Normal)) __obj.updateDynamic("Normal")(Normal.get.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (StatusType != null) __obj.updateDynamic("StatusType")(StatusType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBInstanceStatusInfo]

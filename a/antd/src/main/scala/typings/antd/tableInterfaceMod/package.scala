@@ -31,7 +31,7 @@ package object tableInterfaceMod {
     /* record */ T, 
     /* selected */ scala.Boolean, 
     /* selectedRows */ js.Array[js.Object], 
-    /* nativeEvent */ typings.std.Event_, 
+    /* nativeEvent */ typings.std.Event, 
     scala.Unit
   ]
   /* Rewritten from type alias, can be one of: 
@@ -40,7 +40,6 @@ package object tableInterfaceMod {
     - scala.Null
   */
   type SortOrder = typings.antd.tableInterfaceMod._SortOrder | scala.Null
-  type TablePaginationConfig = typings.antd.paginationPaginationMod.PaginationConfig
   type TransformColumns[RecordType] = js.Function1[
     /* columns */ typings.antd.tableInterfaceMod.ColumnsType[RecordType], 
     typings.antd.tableInterfaceMod.ColumnsType[RecordType]

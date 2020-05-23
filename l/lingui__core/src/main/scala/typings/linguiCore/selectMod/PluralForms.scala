@@ -18,7 +18,7 @@ object PluralForms {
   @scala.inline
   def apply(
     other: String,
-    NumberDictionary: /* exact */ NumberDictionary[String] = null,
+    NumberDictionary: /* page */ NumberDictionary[String] = null,
     few: String = null,
     many: String = null,
     one: String = null,

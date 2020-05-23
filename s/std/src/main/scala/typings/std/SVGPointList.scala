@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.NumberDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,8 +19,4 @@ trait SVGPointList extends /* index */ NumberDictionary[DOMPoint] {
   def removeItem(index: Double): DOMPoint = js.native
   def replaceItem(newItem: DOMPoint, index: Double): DOMPoint = js.native
 }
-
-@JSGlobal("SVGPointList")
-@js.native
-object SVGPointList extends Instantiable0[SVGPointList]
 

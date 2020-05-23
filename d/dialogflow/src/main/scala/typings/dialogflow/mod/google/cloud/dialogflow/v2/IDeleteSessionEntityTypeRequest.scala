@@ -12,9 +12,9 @@ trait IDeleteSessionEntityTypeRequest extends js.Object {
 
 object IDeleteSessionEntityTypeRequest {
   @scala.inline
-  def apply(name: String = null): IDeleteSessionEntityTypeRequest = {
+  def apply(name: js.UndefOr[Null | String] = js.undefined): IDeleteSessionEntityTypeRequest = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDeleteSessionEntityTypeRequest]
   }
 }

@@ -35,10 +35,10 @@ object FontConstructorOptions {
   @scala.inline
   def apply(
     glyphs: js.Array[Glyph],
-    ascender: Int | Double = null,
+    ascender: js.UndefOr[Double] = js.undefined,
     copyright: String = null,
-    createdTimestamp: Int | Double = null,
-    descender: Int | Double = null,
+    createdTimestamp: js.UndefOr[Double] = js.undefined,
+    descender: js.UndefOr[Double] = js.undefined,
     description: String = null,
     designer: String = null,
     designerURL: String = null,
@@ -53,20 +53,20 @@ object FontConstructorOptions {
     postScriptName: String = null,
     styleName: String = null,
     trademark: String = null,
-    unitsPerEm: Int | Double = null,
+    unitsPerEm: js.UndefOr[Double] = js.undefined,
     version: String = null,
     weightClass: String = null,
     widthClass: String = null
   ): FontConstructorOptions = {
     val __obj = js.Dynamic.literal(glyphs = glyphs.asInstanceOf[js.Any])
-    if (ascender != null) __obj.updateDynamic("ascender")(ascender.asInstanceOf[js.Any])
+    if (!js.isUndefined(ascender)) __obj.updateDynamic("ascender")(ascender.get.asInstanceOf[js.Any])
     if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
-    if (createdTimestamp != null) __obj.updateDynamic("createdTimestamp")(createdTimestamp.asInstanceOf[js.Any])
-    if (descender != null) __obj.updateDynamic("descender")(descender.asInstanceOf[js.Any])
+    if (!js.isUndefined(createdTimestamp)) __obj.updateDynamic("createdTimestamp")(createdTimestamp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(descender)) __obj.updateDynamic("descender")(descender.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (designer != null) __obj.updateDynamic("designer")(designer.asInstanceOf[js.Any])
     if (designerURL != null) __obj.updateDynamic("designerURL")(designerURL.asInstanceOf[js.Any])
-    if (!js.isUndefined(empty)) __obj.updateDynamic("empty")(empty.asInstanceOf[js.Any])
+    if (!js.isUndefined(empty)) __obj.updateDynamic("empty")(empty.get.asInstanceOf[js.Any])
     if (familyName != null) __obj.updateDynamic("familyName")(familyName.asInstanceOf[js.Any])
     if (fsSelection != null) __obj.updateDynamic("fsSelection")(fsSelection.asInstanceOf[js.Any])
     if (fullName != null) __obj.updateDynamic("fullName")(fullName.asInstanceOf[js.Any])
@@ -77,7 +77,7 @@ object FontConstructorOptions {
     if (postScriptName != null) __obj.updateDynamic("postScriptName")(postScriptName.asInstanceOf[js.Any])
     if (styleName != null) __obj.updateDynamic("styleName")(styleName.asInstanceOf[js.Any])
     if (trademark != null) __obj.updateDynamic("trademark")(trademark.asInstanceOf[js.Any])
-    if (unitsPerEm != null) __obj.updateDynamic("unitsPerEm")(unitsPerEm.asInstanceOf[js.Any])
+    if (!js.isUndefined(unitsPerEm)) __obj.updateDynamic("unitsPerEm")(unitsPerEm.get.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     if (weightClass != null) __obj.updateDynamic("weightClass")(weightClass.asInstanceOf[js.Any])
     if (widthClass != null) __obj.updateDynamic("widthClass")(widthClass.asInstanceOf[js.Any])

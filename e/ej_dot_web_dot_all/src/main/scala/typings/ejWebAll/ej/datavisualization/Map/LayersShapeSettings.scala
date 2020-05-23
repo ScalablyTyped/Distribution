@@ -81,32 +81,32 @@ object LayersShapeSettings {
     colorValuePath: String = null,
     enableGradient: js.UndefOr[Boolean] = js.undefined,
     fill: String = null,
-    highlightBorderWidth: Int | Double = null,
+    highlightBorderWidth: js.UndefOr[Double] = js.undefined,
     highlightColor: String = null,
     highlightStroke: String = null,
     selectionColor: String = null,
     selectionStroke: String = null,
-    selectionStrokeWidth: Int | Double = null,
+    selectionStrokeWidth: js.UndefOr[Double] = js.undefined,
     stroke: String = null,
-    strokeThickness: Int | Double = null,
+    strokeThickness: js.UndefOr[Double] = js.undefined,
     valuePath: String = null
   ): LayersShapeSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFill)) __obj.updateDynamic("autoFill")(autoFill.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFill)) __obj.updateDynamic("autoFill")(autoFill.get.asInstanceOf[js.Any])
     if (colorMappings != null) __obj.updateDynamic("colorMappings")(colorMappings.asInstanceOf[js.Any])
     if (colorPalette != null) __obj.updateDynamic("colorPalette")(colorPalette.asInstanceOf[js.Any])
     if (colorPath != null) __obj.updateDynamic("colorPath")(colorPath.asInstanceOf[js.Any])
     if (colorValuePath != null) __obj.updateDynamic("colorValuePath")(colorValuePath.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGradient)) __obj.updateDynamic("enableGradient")(enableGradient.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGradient)) __obj.updateDynamic("enableGradient")(enableGradient.get.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (highlightBorderWidth != null) __obj.updateDynamic("highlightBorderWidth")(highlightBorderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightBorderWidth)) __obj.updateDynamic("highlightBorderWidth")(highlightBorderWidth.get.asInstanceOf[js.Any])
     if (highlightColor != null) __obj.updateDynamic("highlightColor")(highlightColor.asInstanceOf[js.Any])
     if (highlightStroke != null) __obj.updateDynamic("highlightStroke")(highlightStroke.asInstanceOf[js.Any])
     if (selectionColor != null) __obj.updateDynamic("selectionColor")(selectionColor.asInstanceOf[js.Any])
     if (selectionStroke != null) __obj.updateDynamic("selectionStroke")(selectionStroke.asInstanceOf[js.Any])
-    if (selectionStrokeWidth != null) __obj.updateDynamic("selectionStrokeWidth")(selectionStrokeWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectionStrokeWidth)) __obj.updateDynamic("selectionStrokeWidth")(selectionStrokeWidth.get.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (strokeThickness != null) __obj.updateDynamic("strokeThickness")(strokeThickness.asInstanceOf[js.Any])
+    if (!js.isUndefined(strokeThickness)) __obj.updateDynamic("strokeThickness")(strokeThickness.get.asInstanceOf[js.Any])
     if (valuePath != null) __obj.updateDynamic("valuePath")(valuePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayersShapeSettings]
   }

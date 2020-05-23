@@ -2,7 +2,6 @@ package typings.heremaps.H.map.layer
 
 import typings.heremaps.H.geo.Rect
 import typings.heremaps.H.map.ICopyright
-import typings.heremaps.H.map.layer.Layer.Options
 import typings.heremaps.H.util.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,14 +11,8 @@ import scala.scalajs.js.annotation._
   * The Layer class represents an object that is evaluated by the renderer in the order in which it is added to the layers collection. It provides the basic infrastructure for dispatching
   * update events to the renderer in case new data is available.
   */
-@JSGlobal("H.map.layer.Layer")
 @js.native
-/**
-  * Constructor
-  * @param opt_options {H.map.layer.Layer.Options=} - optional configuration object
-  */
-class Layer_ () extends EventTarget {
-  def this(opt_options: Options) = this()
+trait Layer_ extends EventTarget {
   def addOnDisposeCallback(callback: js.Function0[Unit], opt_scope: js.Object): Unit = js.native
   /**
     * This method returns the copyright of the current data provider.

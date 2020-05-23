@@ -39,10 +39,10 @@ object MobileAppContentFile {
     createdDateTime: String = null,
     id: String = null,
     isCommitted: js.UndefOr[Boolean] = js.undefined,
-    manifest: Int | Double = null,
+    manifest: js.UndefOr[Double] = js.undefined,
     name: String = null,
-    size: Int | Double = null,
-    sizeEncrypted: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
+    sizeEncrypted: js.UndefOr[Double] = js.undefined,
     uploadState: MobileAppContentFileUploadState = null
   ): MobileAppContentFile = {
     val __obj = js.Dynamic.literal()
@@ -50,11 +50,11 @@ object MobileAppContentFile {
     if (azureStorageUriExpirationDateTime != null) __obj.updateDynamic("azureStorageUriExpirationDateTime")(azureStorageUriExpirationDateTime.asInstanceOf[js.Any])
     if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCommitted)) __obj.updateDynamic("isCommitted")(isCommitted.asInstanceOf[js.Any])
-    if (manifest != null) __obj.updateDynamic("manifest")(manifest.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCommitted)) __obj.updateDynamic("isCommitted")(isCommitted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(manifest)) __obj.updateDynamic("manifest")(manifest.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (sizeEncrypted != null) __obj.updateDynamic("sizeEncrypted")(sizeEncrypted.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sizeEncrypted)) __obj.updateDynamic("sizeEncrypted")(sizeEncrypted.get.asInstanceOf[js.Any])
     if (uploadState != null) __obj.updateDynamic("uploadState")(uploadState.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileAppContentFile]
   }

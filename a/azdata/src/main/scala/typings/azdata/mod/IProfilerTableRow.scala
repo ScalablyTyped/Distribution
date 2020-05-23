@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 trait IProfilerTableRow extends js.Object {
   /**
-  		 * Name of the event; known issue this is not camel case, need to figure
-  		 * out a better way to determine column id's from rendered column names
-  		 */
+    * Name of the event; known issue this is not camel case, need to figure
+    * out a better way to determine column id's from rendered column names
+    */
   var EventClass: String
 }
 

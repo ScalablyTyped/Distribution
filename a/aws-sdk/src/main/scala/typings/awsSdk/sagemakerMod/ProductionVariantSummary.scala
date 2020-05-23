@@ -36,18 +36,18 @@ object ProductionVariantSummary {
   @scala.inline
   def apply(
     VariantName: VariantName,
-    CurrentInstanceCount: Int | Double = null,
-    CurrentWeight: Int | Double = null,
+    CurrentInstanceCount: js.UndefOr[TaskCount] = js.undefined,
+    CurrentWeight: js.UndefOr[VariantWeight] = js.undefined,
     DeployedImages: DeployedImages = null,
-    DesiredInstanceCount: Int | Double = null,
-    DesiredWeight: Int | Double = null
+    DesiredInstanceCount: js.UndefOr[TaskCount] = js.undefined,
+    DesiredWeight: js.UndefOr[VariantWeight] = js.undefined
   ): ProductionVariantSummary = {
     val __obj = js.Dynamic.literal(VariantName = VariantName.asInstanceOf[js.Any])
-    if (CurrentInstanceCount != null) __obj.updateDynamic("CurrentInstanceCount")(CurrentInstanceCount.asInstanceOf[js.Any])
-    if (CurrentWeight != null) __obj.updateDynamic("CurrentWeight")(CurrentWeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(CurrentInstanceCount)) __obj.updateDynamic("CurrentInstanceCount")(CurrentInstanceCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(CurrentWeight)) __obj.updateDynamic("CurrentWeight")(CurrentWeight.get.asInstanceOf[js.Any])
     if (DeployedImages != null) __obj.updateDynamic("DeployedImages")(DeployedImages.asInstanceOf[js.Any])
-    if (DesiredInstanceCount != null) __obj.updateDynamic("DesiredInstanceCount")(DesiredInstanceCount.asInstanceOf[js.Any])
-    if (DesiredWeight != null) __obj.updateDynamic("DesiredWeight")(DesiredWeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(DesiredInstanceCount)) __obj.updateDynamic("DesiredInstanceCount")(DesiredInstanceCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DesiredWeight)) __obj.updateDynamic("DesiredWeight")(DesiredWeight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductionVariantSummary]
   }
 }

@@ -40,20 +40,20 @@ object PanelContextProps {
     onSelect: (_, /* type */ key | mouse | submit) => Unit = null,
     open: js.UndefOr[Boolean] = js.undefined,
     operationRef: MutableRefObject[ContextOperationRefProps | Null] = null,
-    panelRef: Ref[HTMLDivElement] = null
+    panelRef: js.UndefOr[Null | Ref[HTMLDivElement]] = js.undefined
   ): PanelContextProps = {
     val __obj = js.Dynamic.literal()
     if (defaultOpenValue != null) __obj.updateDynamic("defaultOpenValue")(defaultOpenValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideHeader)) __obj.updateDynamic("hideHeader")(hideHeader.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideNextBtn)) __obj.updateDynamic("hideNextBtn")(hideNextBtn.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidePrevBtn)) __obj.updateDynamic("hidePrevBtn")(hidePrevBtn.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideRanges)) __obj.updateDynamic("hideRanges")(hideRanges.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideHeader)) __obj.updateDynamic("hideHeader")(hideHeader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideNextBtn)) __obj.updateDynamic("hideNextBtn")(hideNextBtn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidePrevBtn)) __obj.updateDynamic("hidePrevBtn")(hidePrevBtn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideRanges)) __obj.updateDynamic("hideRanges")(hideRanges.get.asInstanceOf[js.Any])
     if (onDateMouseEnter != null) __obj.updateDynamic("onDateMouseEnter")(js.Any.fromFunction1(onDateMouseEnter))
     if (onDateMouseLeave != null) __obj.updateDynamic("onDateMouseLeave")(js.Any.fromFunction1(onDateMouseLeave))
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2(onSelect))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
     if (operationRef != null) __obj.updateDynamic("operationRef")(operationRef.asInstanceOf[js.Any])
-    if (panelRef != null) __obj.updateDynamic("panelRef")(panelRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(panelRef)) __obj.updateDynamic("panelRef")(panelRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[PanelContextProps]
   }
 }

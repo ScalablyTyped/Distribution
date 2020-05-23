@@ -15,12 +15,12 @@ object OptimisticResponseConfig {
   @scala.inline
   def apply(
     operation: OperationDescriptor,
-    response: PayloadData = null,
-    updater: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit = null
+    response: js.UndefOr[Null | PayloadData] = js.undefined,
+    updater: js.UndefOr[Null | ((/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit)] = js.undefined
   ): OptimisticResponseConfig = {
     val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
-    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
-    if (updater != null) __obj.updateDynamic("updater")(js.Any.fromFunction2(updater))
+    if (!js.isUndefined(response)) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
+    if (!js.isUndefined(updater)) __obj.updateDynamic("updater")(if (updater != null) js.Any.fromFunction2(updater.asInstanceOf[(/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit]) else null)
     __obj.asInstanceOf[OptimisticResponseConfig]
   }
 }

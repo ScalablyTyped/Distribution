@@ -25,10 +25,13 @@ trait MatchRecursiveOptions extends js.Object {
 
 object MatchRecursiveOptions {
   @scala.inline
-  def apply(escapeChar: String = null, valueNames: MatchRecursiveValueNames = null): MatchRecursiveOptions = {
+  def apply(
+    escapeChar: js.UndefOr[Null | String] = js.undefined,
+    valueNames: js.UndefOr[Null | MatchRecursiveValueNames] = js.undefined
+  ): MatchRecursiveOptions = {
     val __obj = js.Dynamic.literal()
-    if (escapeChar != null) __obj.updateDynamic("escapeChar")(escapeChar.asInstanceOf[js.Any])
-    if (valueNames != null) __obj.updateDynamic("valueNames")(valueNames.asInstanceOf[js.Any])
+    if (!js.isUndefined(escapeChar)) __obj.updateDynamic("escapeChar")(escapeChar.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueNames)) __obj.updateDynamic("valueNames")(valueNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchRecursiveOptions]
   }
 }

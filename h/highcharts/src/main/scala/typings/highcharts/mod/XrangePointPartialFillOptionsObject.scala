@@ -20,9 +20,12 @@ trait XrangePointPartialFillOptionsObject extends js.Object {
 
 object XrangePointPartialFillOptionsObject {
   @scala.inline
-  def apply(amount: Int | Double = null, fill: ColorString | GradientColorObject | PatternObject = null): XrangePointPartialFillOptionsObject = {
+  def apply(
+    amount: js.UndefOr[Double] = js.undefined,
+    fill: ColorString | GradientColorObject | PatternObject = null
+  ): XrangePointPartialFillOptionsObject = {
     val __obj = js.Dynamic.literal()
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.get.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     __obj.asInstanceOf[XrangePointPartialFillOptionsObject]
   }

@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.CellValueConditionalFormatData
 import typings.officeJsPreview.Excel.Interfaces.CellValueConditionalFormatLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.CellValueConditionalFormatUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +16,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.6]
   */
-@JSGlobal("Excel.CellValueConditionalFormat")
 @js.native
-class CellValueConditionalFormat () extends ClientObject {
+trait CellValueConditionalFormat extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_CellValueConditionalFormat: RequestContext = js.native
@@ -31,7 +30,7 @@ class CellValueConditionalFormat () extends ClientObject {
   val format: ConditionalRangeFormat = js.native
   /**
     *
-    * Represents the Rule object on this conditional format.
+    * Specifies the Rule object on this conditional format.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -43,7 +42,7 @@ class CellValueConditionalFormat () extends ClientObject {
     */
   def load(): CellValueConditionalFormat = js.native
   def load(options: CellValueConditionalFormatLoadOptions): CellValueConditionalFormat = js.native
-  def load(propertyNamesAndPaths: AnonExpand): CellValueConditionalFormat = js.native
+  def load(propertyNamesAndPaths: Expand): CellValueConditionalFormat = js.native
   def load(propertyNames: String): CellValueConditionalFormat = js.native
   def load(propertyNames: js.Array[String]): CellValueConditionalFormat = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

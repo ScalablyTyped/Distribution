@@ -11,7 +11,7 @@ trait DiscoverInstancesRequest extends js.Object {
     */
   var HealthStatus: js.UndefOr[HealthStatusFilter] = js.native
   /**
-    * The maximum number of instances that you want Cloud Map to return in the response to a DiscoverInstances request. If you don't specify a value for MaxResults, Cloud Map returns up to 100 instances.
+    * The maximum number of instances that you want AWS Cloud Map to return in the response to a DiscoverInstances request. If you don't specify a value for MaxResults, AWS Cloud Map returns up to 100 instances.
     */
   var MaxResults: js.UndefOr[typings.awsSdk.servicediscoveryMod.MaxResults] = js.native
   /**
@@ -34,12 +34,12 @@ object DiscoverInstancesRequest {
     NamespaceName: NamespaceName,
     ServiceName: ServiceName,
     HealthStatus: HealthStatusFilter = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     QueryParameters: Attributes = null
   ): DiscoverInstancesRequest = {
     val __obj = js.Dynamic.literal(NamespaceName = NamespaceName.asInstanceOf[js.Any], ServiceName = ServiceName.asInstanceOf[js.Any])
     if (HealthStatus != null) __obj.updateDynamic("HealthStatus")(HealthStatus.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (QueryParameters != null) __obj.updateDynamic("QueryParameters")(QueryParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiscoverInstancesRequest]
   }

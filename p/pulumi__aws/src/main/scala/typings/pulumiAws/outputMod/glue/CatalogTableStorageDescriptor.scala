@@ -65,7 +65,7 @@ object CatalogTableStorageDescriptor {
     compressed: js.UndefOr[Boolean] = js.undefined,
     inputFormat: String = null,
     location: String = null,
-    numberOfBuckets: Int | Double = null,
+    numberOfBuckets: js.UndefOr[Double] = js.undefined,
     outputFormat: String = null,
     parameters: StringDictionary[String] = null,
     serDeInfo: CatalogTableStorageDescriptorSerDeInfo = null,
@@ -76,16 +76,16 @@ object CatalogTableStorageDescriptor {
     val __obj = js.Dynamic.literal()
     if (bucketColumns != null) __obj.updateDynamic("bucketColumns")(bucketColumns.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (!js.isUndefined(compressed)) __obj.updateDynamic("compressed")(compressed.asInstanceOf[js.Any])
+    if (!js.isUndefined(compressed)) __obj.updateDynamic("compressed")(compressed.get.asInstanceOf[js.Any])
     if (inputFormat != null) __obj.updateDynamic("inputFormat")(inputFormat.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (numberOfBuckets != null) __obj.updateDynamic("numberOfBuckets")(numberOfBuckets.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfBuckets)) __obj.updateDynamic("numberOfBuckets")(numberOfBuckets.get.asInstanceOf[js.Any])
     if (outputFormat != null) __obj.updateDynamic("outputFormat")(outputFormat.asInstanceOf[js.Any])
     if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     if (serDeInfo != null) __obj.updateDynamic("serDeInfo")(serDeInfo.asInstanceOf[js.Any])
     if (skewedInfo != null) __obj.updateDynamic("skewedInfo")(skewedInfo.asInstanceOf[js.Any])
     if (sortColumns != null) __obj.updateDynamic("sortColumns")(sortColumns.asInstanceOf[js.Any])
-    if (!js.isUndefined(storedAsSubDirectories)) __obj.updateDynamic("storedAsSubDirectories")(storedAsSubDirectories.asInstanceOf[js.Any])
+    if (!js.isUndefined(storedAsSubDirectories)) __obj.updateDynamic("storedAsSubDirectories")(storedAsSubDirectories.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CatalogTableStorageDescriptor]
   }
 }

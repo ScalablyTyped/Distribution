@@ -10,16 +10,16 @@ import scala.scalajs.js.annotation._
   */
 trait PossibleBatchQueryError extends js.Object {
   /**
-  	 * Index of the failed query
-  	 */
+    * Index of the failed query
+    */
   var index: js.UndefOr[Double] = js.undefined
 }
 
 object PossibleBatchQueryError {
   @scala.inline
-  def apply(index: Int | Double = null): PossibleBatchQueryError = {
+  def apply(index: js.UndefOr[Double] = js.undefined): PossibleBatchQueryError = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PossibleBatchQueryError]
   }
 }

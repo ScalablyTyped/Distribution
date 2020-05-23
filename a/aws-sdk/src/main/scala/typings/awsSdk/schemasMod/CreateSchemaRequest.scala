@@ -6,17 +6,29 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CreateSchemaRequest extends js.Object {
+  /**
+    * The source of the schema definition.
+    */
   var Content: stringMin1Max100000 = js.native
   /**
     * A description of the schema.
     */
   var Description: js.UndefOr[stringMin0Max256] = js.native
+  /**
+    * The name of the registry.
+    */
   var RegistryName: string = js.native
+  /**
+    * The name of the schema.
+    */
   var SchemaName: string = js.native
   /**
     * Tags associated with the schema.
     */
   var Tags: js.UndefOr[typings.awsSdk.schemasMod.Tags] = js.native
+  /**
+    * The type of schema.
+    */
   var Type: typings.awsSdk.schemasMod.Type = js.native
 }
 

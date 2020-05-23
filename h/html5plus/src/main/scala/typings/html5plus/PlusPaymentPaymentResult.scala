@@ -67,11 +67,11 @@ object PlusPaymentPaymentResult {
   ): PlusPaymentPaymentResult = {
     val __obj = js.Dynamic.literal()
     if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
-    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.get.asInstanceOf[js.Any])
     if (rawdata != null) __obj.updateDynamic("rawdata")(rawdata.asInstanceOf[js.Any])
     if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
     if (tradeno != null) __obj.updateDynamic("tradeno")(tradeno.asInstanceOf[js.Any])
-    if (!js.isUndefined(url)) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (!js.isUndefined(url)) __obj.updateDynamic("url")(url.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusPaymentPaymentResult]
   }
 }

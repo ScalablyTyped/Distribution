@@ -55,9 +55,7 @@ object jszipStrings {
   sealed trait stream extends InputType
   
   @js.native
-  sealed trait string
-    extends InputType
-       with OutputType
+  sealed trait string extends InputType
   
   @js.native
   sealed trait text

@@ -18,9 +18,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.10]
   */
-@JSGlobal("Excel.CommentCollection")
 @js.native
-class CommentCollection () extends ClientObject {
+trait CommentCollection extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_CommentCollection: RequestContext = js.native
@@ -38,8 +37,8 @@ class CommentCollection () extends ClientObject {
     * [Api set: ExcelApi 1.10]
     *
     * @param cellAddress The cell to which the comment is added. This can be a Range object or a string. If it's a string, it must contain the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided range is larger than one cell.
-    * @param content The comment's content. This can be either a string or CommentRichContent object. Strings are used for plain text. CommentRichContent objects allow for other comment features, such as mentions. [Api set: ExcelApi 1.10 for string, ExcelApiOnline 1.1 for CommentRichContent object]
-    * @param contentType Optional. The type of content contained within the comment. The default value is enum `ContentType.Plain`. [Api set: ExcelApi 1.10 for Enum ContentType.Plain, ExcelApiOnline 1.1 for Enum ContentType.Mention]
+    * @param content The comment's content. This can be either a string or CommentRichContent object. Strings are used for plain text. CommentRichContent objects allow for other comment features, such as mentions. [Api set: ExcelApi 1.10 for string, 1.11 for CommentRichContent object]
+    * @param contentType Optional. The type of content contained within the comment. The default value is enum `ContentType.Plain`. [Api set: ExcelApi 1.10 for Enum ContentType.Plain, 1.11 for Enum ContentType.Mention]
     */
   def add(cellAddress: Range, content: CommentRichContent): Comment = js.native
   def add(cellAddress: Range, content: CommentRichContent, contentType: ContentType): Comment = js.native
@@ -66,7 +65,7 @@ class CommentCollection () extends ClientObject {
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    * Gets a comment from the collection based on its ID. Read-only.
+    * Gets a comment from the collection based on its ID.
     *
     * [Api set: ExcelApi 1.10]
     *

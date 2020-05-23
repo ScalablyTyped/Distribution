@@ -26,8 +26,8 @@ object GrammarOptions {
     foldingStopMarker: String = null,
     injectionSelector: ScopeSelector = null,
     injections: js.Object = null,
-    maxLineLength: Int | Double = null,
-    maxTokensPerLine: Int | Double = null,
+    maxLineLength: js.UndefOr[Double] = js.undefined,
+    maxTokensPerLine: js.UndefOr[Double] = js.undefined,
     name: String = null,
     patterns: js.Array[js.Object] = null,
     repository: js.Object = null,
@@ -35,12 +35,12 @@ object GrammarOptions {
   ): GrammarOptions = {
     val __obj = js.Dynamic.literal()
     if (fileTypes != null) __obj.updateDynamic("fileTypes")(fileTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(firstLineMatch)) __obj.updateDynamic("firstLineMatch")(firstLineMatch.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstLineMatch)) __obj.updateDynamic("firstLineMatch")(firstLineMatch.get.asInstanceOf[js.Any])
     if (foldingStopMarker != null) __obj.updateDynamic("foldingStopMarker")(foldingStopMarker.asInstanceOf[js.Any])
     if (injectionSelector != null) __obj.updateDynamic("injectionSelector")(injectionSelector.asInstanceOf[js.Any])
     if (injections != null) __obj.updateDynamic("injections")(injections.asInstanceOf[js.Any])
-    if (maxLineLength != null) __obj.updateDynamic("maxLineLength")(maxLineLength.asInstanceOf[js.Any])
-    if (maxTokensPerLine != null) __obj.updateDynamic("maxTokensPerLine")(maxTokensPerLine.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLineLength)) __obj.updateDynamic("maxLineLength")(maxLineLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTokensPerLine)) __obj.updateDynamic("maxTokensPerLine")(maxTokensPerLine.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (patterns != null) __obj.updateDynamic("patterns")(patterns.asInstanceOf[js.Any])
     if (repository != null) __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])

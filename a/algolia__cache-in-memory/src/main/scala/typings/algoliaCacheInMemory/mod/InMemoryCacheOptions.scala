@@ -15,7 +15,7 @@ object InMemoryCacheOptions {
   @scala.inline
   def apply(serializable: js.UndefOr[Boolean] = js.undefined): InMemoryCacheOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(serializable)) __obj.updateDynamic("serializable")(serializable.asInstanceOf[js.Any])
+    if (!js.isUndefined(serializable)) __obj.updateDynamic("serializable")(serializable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InMemoryCacheOptions]
   }
 }

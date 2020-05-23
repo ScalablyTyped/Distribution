@@ -35,14 +35,14 @@ object SchemaSummary {
     SchemaArn: string = null,
     SchemaName: string = null,
     Tags: Tags = null,
-    VersionCount: Int | Double = null
+    VersionCount: js.UndefOr[long] = js.undefined
   ): SchemaSummary = {
     val __obj = js.Dynamic.literal()
     if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
     if (SchemaArn != null) __obj.updateDynamic("SchemaArn")(SchemaArn.asInstanceOf[js.Any])
     if (SchemaName != null) __obj.updateDynamic("SchemaName")(SchemaName.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (VersionCount != null) __obj.updateDynamic("VersionCount")(VersionCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(VersionCount)) __obj.updateDynamic("VersionCount")(VersionCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSummary]
   }
 }

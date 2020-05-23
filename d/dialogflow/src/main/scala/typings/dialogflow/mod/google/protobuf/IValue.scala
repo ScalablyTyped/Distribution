@@ -25,20 +25,22 @@ trait IValue extends js.Object {
 object IValue {
   @scala.inline
   def apply(
-    boolValue: js.UndefOr[Boolean] = js.undefined,
-    listValue: IListValue = null,
-    nullValue: NullValue | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.NullValue * / any */ String) = null,
-    numberValue: Int | Double = null,
-    stringValue: String = null,
-    structValue: IStruct = null
+    boolValue: js.UndefOr[Null | Boolean] = js.undefined,
+    listValue: js.UndefOr[Null | IListValue] = js.undefined,
+    nullValue: js.UndefOr[
+      Null | NullValue | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.NullValue * / any */ String)
+    ] = js.undefined,
+    numberValue: js.UndefOr[Null | Double] = js.undefined,
+    stringValue: js.UndefOr[Null | String] = js.undefined,
+    structValue: js.UndefOr[Null | IStruct] = js.undefined
   ): IValue = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue.asInstanceOf[js.Any])
-    if (listValue != null) __obj.updateDynamic("listValue")(listValue.asInstanceOf[js.Any])
-    if (nullValue != null) __obj.updateDynamic("nullValue")(nullValue.asInstanceOf[js.Any])
-    if (numberValue != null) __obj.updateDynamic("numberValue")(numberValue.asInstanceOf[js.Any])
-    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
-    if (structValue != null) __obj.updateDynamic("structValue")(structValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(listValue)) __obj.updateDynamic("listValue")(listValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(nullValue)) __obj.updateDynamic("nullValue")(nullValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberValue)) __obj.updateDynamic("numberValue")(numberValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(stringValue)) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(structValue)) __obj.updateDynamic("structValue")(structValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IValue]
   }
 }

@@ -27,7 +27,7 @@ object TransitionOptions {
     deepWait: js.UndefOr[Boolean] = js.undefined,
     delegate: FrameworkDelegate = null,
     direction: NavDirection = null,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     easing: String = null,
     keyboardClose: js.UndefOr[Boolean] = js.undefined,
     leavingEl: HTMLElement = null,
@@ -40,21 +40,21 @@ object TransitionOptions {
     viewIsReady: /* enteringEl */ HTMLElement => js.Promise[_] = null
   ): TransitionOptions = {
     val __obj = js.Dynamic.literal(baseEl = baseEl.asInstanceOf[js.Any], enteringEl = enteringEl.asInstanceOf[js.Any])
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
     if (animationBuilder != null) __obj.updateDynamic("animationBuilder")(js.Any.fromFunction2(animationBuilder))
-    if (!js.isUndefined(deepWait)) __obj.updateDynamic("deepWait")(deepWait.asInstanceOf[js.Any])
+    if (!js.isUndefined(deepWait)) __obj.updateDynamic("deepWait")(deepWait.get.asInstanceOf[js.Any])
     if (delegate != null) __obj.updateDynamic("delegate")(delegate.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboardClose)) __obj.updateDynamic("keyboardClose")(keyboardClose.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboardClose)) __obj.updateDynamic("keyboardClose")(keyboardClose.get.asInstanceOf[js.Any])
     if (leavingEl != null) __obj.updateDynamic("leavingEl")(leavingEl.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(progressAnimation)) __obj.updateDynamic("progressAnimation")(progressAnimation.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressAnimation)) __obj.updateDynamic("progressAnimation")(progressAnimation.get.asInstanceOf[js.Any])
     if (progressCallback != null) __obj.updateDynamic("progressCallback")(js.Any.fromFunction1(progressCallback))
-    if (!js.isUndefined(showGoBack)) __obj.updateDynamic("showGoBack")(showGoBack.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipIfBusy)) __obj.updateDynamic("skipIfBusy")(skipIfBusy.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateURL)) __obj.updateDynamic("updateURL")(updateURL.asInstanceOf[js.Any])
+    if (!js.isUndefined(showGoBack)) __obj.updateDynamic("showGoBack")(showGoBack.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipIfBusy)) __obj.updateDynamic("skipIfBusy")(skipIfBusy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateURL)) __obj.updateDynamic("updateURL")(updateURL.get.asInstanceOf[js.Any])
     if (viewIsReady != null) __obj.updateDynamic("viewIsReady")(js.Any.fromFunction1(viewIsReady))
     __obj.asInstanceOf[TransitionOptions]
   }

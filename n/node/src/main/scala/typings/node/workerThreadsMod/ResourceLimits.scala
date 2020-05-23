@@ -13,14 +13,14 @@ trait ResourceLimits extends js.Object {
 object ResourceLimits {
   @scala.inline
   def apply(
-    codeRangeSizeMb: Int | Double = null,
-    maxOldGenerationSizeMb: Int | Double = null,
-    maxYoungGenerationSizeMb: Int | Double = null
+    codeRangeSizeMb: js.UndefOr[Double] = js.undefined,
+    maxOldGenerationSizeMb: js.UndefOr[Double] = js.undefined,
+    maxYoungGenerationSizeMb: js.UndefOr[Double] = js.undefined
   ): ResourceLimits = {
     val __obj = js.Dynamic.literal()
-    if (codeRangeSizeMb != null) __obj.updateDynamic("codeRangeSizeMb")(codeRangeSizeMb.asInstanceOf[js.Any])
-    if (maxOldGenerationSizeMb != null) __obj.updateDynamic("maxOldGenerationSizeMb")(maxOldGenerationSizeMb.asInstanceOf[js.Any])
-    if (maxYoungGenerationSizeMb != null) __obj.updateDynamic("maxYoungGenerationSizeMb")(maxYoungGenerationSizeMb.asInstanceOf[js.Any])
+    if (!js.isUndefined(codeRangeSizeMb)) __obj.updateDynamic("codeRangeSizeMb")(codeRangeSizeMb.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxOldGenerationSizeMb)) __obj.updateDynamic("maxOldGenerationSizeMb")(maxOldGenerationSizeMb.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxYoungGenerationSizeMb)) __obj.updateDynamic("maxYoungGenerationSizeMb")(maxYoungGenerationSizeMb.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceLimits]
   }
 }

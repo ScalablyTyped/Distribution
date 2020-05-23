@@ -1,28 +1,28 @@
 package typings.gapiClientYoutube.gapi.client.youtube
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientYoutube.AnonAlt
-import typings.gapiClientYoutube.AnonLiveChatId
-import typings.gapiClientYoutube.AnonQuotaUser
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientYoutube.anon.Alt
+import typings.gapiClientYoutube.anon.LiveChatId
+import typings.gapiClientYoutube.anon.QuotaUser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LiveChatMessagesResource extends js.Object {
   /** Deletes a chat message. */
-  def delete(request: AnonQuotaUser): Request_[Unit]
+  def delete(request: QuotaUser): Request[Unit]
   /** Adds a message to a live chat. */
-  def insert(request: AnonAlt): Request_[LiveChatMessage]
+  def insert(request: Alt): Request[LiveChatMessage]
   /** Lists live chat messages for a specific chat. */
-  def list(request: AnonLiveChatId): Request_[LiveChatMessageListResponse]
+  def list(request: LiveChatId): Request[LiveChatMessageListResponse]
 }
 
 object LiveChatMessagesResource {
   @scala.inline
   def apply(
-    delete: AnonQuotaUser => Request_[Unit],
-    insert: AnonAlt => Request_[LiveChatMessage],
-    list: AnonLiveChatId => Request_[LiveChatMessageListResponse]
+    delete: QuotaUser => Request[Unit],
+    insert: Alt => Request[LiveChatMessage],
+    list: LiveChatId => Request[LiveChatMessageListResponse]
   ): LiveChatMessagesResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
     __obj.asInstanceOf[LiveChatMessagesResource]

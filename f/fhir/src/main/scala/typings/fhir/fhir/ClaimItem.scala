@@ -154,7 +154,7 @@ object ClaimItem {
     diagnosisLinkId: js.Array[positiveInt] = null,
     encounter: js.Array[Reference] = null,
     extension: js.Array[Extension] = null,
-    factor: Int | Double = null,
+    factor: js.UndefOr[decimal] = js.undefined,
     fhir_comments: js.Array[String] = null,
     id: String = null,
     informationLinkId: js.Array[positiveInt] = null,
@@ -192,7 +192,7 @@ object ClaimItem {
     if (diagnosisLinkId != null) __obj.updateDynamic("diagnosisLinkId")(diagnosisLinkId.asInstanceOf[js.Any])
     if (encounter != null) __obj.updateDynamic("encounter")(encounter.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (factor != null) __obj.updateDynamic("factor")(factor.asInstanceOf[js.Any])
+    if (!js.isUndefined(factor)) __obj.updateDynamic("factor")(factor.get.asInstanceOf[js.Any])
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (informationLinkId != null) __obj.updateDynamic("informationLinkId")(informationLinkId.asInstanceOf[js.Any])

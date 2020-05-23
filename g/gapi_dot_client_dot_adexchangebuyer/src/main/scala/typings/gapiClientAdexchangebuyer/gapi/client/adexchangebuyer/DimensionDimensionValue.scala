@@ -18,11 +18,15 @@ trait DimensionDimensionValue extends js.Object {
 
 object DimensionDimensionValue {
   @scala.inline
-  def apply(id: Int | Double = null, name: String = null, percentage: Int | Double = null): DimensionDimensionValue = {
+  def apply(
+    id: js.UndefOr[Double] = js.undefined,
+    name: String = null,
+    percentage: js.UndefOr[Double] = js.undefined
+  ): DimensionDimensionValue = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (percentage != null) __obj.updateDynamic("percentage")(percentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(percentage)) __obj.updateDynamic("percentage")(percentage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DimensionDimensionValue]
   }
 }

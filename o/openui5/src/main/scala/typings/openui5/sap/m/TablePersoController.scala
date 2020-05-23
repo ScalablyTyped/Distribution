@@ -5,34 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.m.TablePersoController")
 @js.native
-class TablePersoController protected () extends ManagedObject {
-  /**
-    * The TablePersoController can be used to connect a table that you want to providea personalization
-    * dialog for, with a persistence service such as one provided bythe unified shell.Accepts an object
-    * literal <code>mSettings</code> that defines initialproperty values, aggregated and associated
-    * objects as well as event handlers.See {@link sap.ui.base.ManagedObject#constructor} for a general
-    * description of the syntax of the settings object.
-    * @param sId optional id for the new control; generated automatically if			no non-empty id is given
-    * Note: this can be omitted, no matter			whether <code>mSettings</code> will be given or not!
-    * @param mSettings optional map/JSON-object with initial settings for the			new component instance
-    */
-  def this(sId: String) = this()
-  def this(sId: String, mSettings: js.Any) = this()
+trait TablePersoController extends ManagedObject {
   /**
     * Activates the controller, i.e. tries to retrieve existing persistedpersonalizations, creates a
     * TablePersoDialog for the associatedtable and attaches a close handler to apply the personalizations
     * tothe table and persist them.This method should be called when the table to be personalized knowsits
     * columns. Usually, this is when that table's view has set its model,which is typically done in the
-    * corresponding controller's init method.For example<pre><code> onInit: function () {		// set explored
-    * app's demo model on this sample		var oModel = new
-    * JSONModel(jQuery.sap.getModulePath("sap.ui.demo.mock", "/products.json"));		var oGroupingModel = new
-    * JSONModel({ hasGrouping: false});		this.getView().setModel(oModel);	
-    * this.getView().setModel(oGroupingModel, 'Grouping');		// init and activate controller		this._oTPC =
-    * new TablePersoController({			table: this.getView().byId("productsTable"),			//specify the first part
-    * of persistence ids e.g. 'demoApp-productsTable-dimensionsCol'			componentName: "demoApp",		
-    * persoService: DemoPersoService,		}).activate();	}</code></pre>
+    * corresponding controller's init method.For example<pre><code> onInit: function () {        // set explored
+    * app's demo model on this sample        var oModel = new
+    * JSONModel(jQuery.sap.getModulePath("sap.ui.demo.mock", "/products.json"));        var oGroupingModel = new
+    * JSONModel({ hasGrouping: false});        this.getView().setModel(oModel);    
+    * this.getView().setModel(oGroupingModel, 'Grouping');        // init and activate controller        this._oTPC =
+    * new TablePersoController({            table: this.getView().byId("productsTable"),            //specify the first part
+    * of persistence ids e.g. 'demoApp-productsTable-dimensionsCol'            componentName: "demoApp",        
+    * persoService: DemoPersoService,        }).activate();    }</code></pre>
     * @returns the TablePersoController instance.
     */
   def activate(): TablePersoController = js.native

@@ -5,10 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides data for the DisconnectButtonClicked event on the DevicePicker object. */
-@JSGlobal("Windows.Devices.Enumeration.DeviceDisconnectButtonClickedEventArgs")
-@js.native
-abstract class DeviceDisconnectButtonClickedEventArgs () extends js.Object {
+trait DeviceDisconnectButtonClickedEventArgs extends js.Object {
   /** The device that the user clicked the disconnect button for. */
-  var device: DeviceInformation = js.native
+  var device: DeviceInformation
+}
+
+object DeviceDisconnectButtonClickedEventArgs {
+  @scala.inline
+  def apply(device: DeviceInformation): DeviceDisconnectButtonClickedEventArgs = {
+    val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DeviceDisconnectButtonClickedEventArgs]
+  }
 }
 

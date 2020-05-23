@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,11 @@ trait DOMError extends js.Object {
   val name: java.lang.String
 }
 
-@JSGlobal("DOMError")
-@js.native
-object DOMError extends Instantiable0[DOMError]
+object DOMError {
+  @scala.inline
+  def apply(name: java.lang.String): DOMError = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DOMError]
+  }
+}
 

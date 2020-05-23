@@ -12,11 +12,15 @@ trait EncryptOptions extends js.Object {
 
 object EncryptOptions {
   @scala.inline
-  def apply(ownerPassword: String = null, password: String = null, userProtectionFlag: Int | Double = null): EncryptOptions = {
+  def apply(
+    ownerPassword: String = null,
+    password: String = null,
+    userProtectionFlag: js.UndefOr[Double] = js.undefined
+  ): EncryptOptions = {
     val __obj = js.Dynamic.literal()
     if (ownerPassword != null) __obj.updateDynamic("ownerPassword")(ownerPassword.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (userProtectionFlag != null) __obj.updateDynamic("userProtectionFlag")(userProtectionFlag.asInstanceOf[js.Any])
+    if (!js.isUndefined(userProtectionFlag)) __obj.updateDynamic("userProtectionFlag")(userProtectionFlag.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptOptions]
   }
 }

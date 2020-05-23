@@ -1,6 +1,5 @@
 package typings.screeps
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,10 +32,7 @@ trait StructureFactory
     * All ingredients should be available in the factory store.
     */
   def produce(resource: CommodityConstant | MineralConstant): ScreepsReturnCode = js.native
+  def produce(resource: RESOURCE_ENERGY): ScreepsReturnCode = js.native
   def produce(resource: RESOURCE_GHODIUM): ScreepsReturnCode = js.native
 }
-
-@JSGlobal("StructureFactory")
-@js.native
-object StructureFactory extends TopLevel[StructureFactoryConstructor]
 

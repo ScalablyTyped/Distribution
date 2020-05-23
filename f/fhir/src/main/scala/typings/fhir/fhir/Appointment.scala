@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s)
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait Appointment extends DomainResource {
   /**
     * Contains extended information for property 'comment'.
@@ -154,9 +154,9 @@ object Appointment {
     indication: js.Array[Reference] = null,
     language: code = null,
     meta: Meta = null,
-    minutesDuration: Int | Double = null,
+    minutesDuration: js.UndefOr[positiveInt] = js.undefined,
     modifierExtension: js.Array[Extension] = null,
-    priority: Int | Double = null,
+    priority: js.UndefOr[unsignedInt] = js.undefined,
     reason: js.Array[CodeableConcept] = null,
     requestedPeriod: js.Array[Period] = null,
     resourceType: code = null,
@@ -195,9 +195,9 @@ object Appointment {
     if (indication != null) __obj.updateDynamic("indication")(indication.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (minutesDuration != null) __obj.updateDynamic("minutesDuration")(minutesDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(minutesDuration)) __obj.updateDynamic("minutesDuration")(minutesDuration.get.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     if (requestedPeriod != null) __obj.updateDynamic("requestedPeriod")(requestedPeriod.asInstanceOf[js.Any])
     if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])

@@ -10,9 +10,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represent an audio capture effects manager which can be used to discover the audio processing chain on a device for a specific media category and audio processing mode. */
-@JSGlobal("Windows.Media.Effects.AudioCaptureEffectsManager")
 @js.native
-abstract class AudioCaptureEffectsManager () extends js.Object {
+trait AudioCaptureEffectsManager extends js.Object {
   /** Occurs when audio process chain changes. */
   @JSName("onaudiocaptureeffectschanged")
   var onaudiocaptureeffectschanged_Original: TypedEventHandler[AudioCaptureEffectsManager, _] = js.native

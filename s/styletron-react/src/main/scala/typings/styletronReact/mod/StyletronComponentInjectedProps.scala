@@ -13,7 +13,7 @@ trait StyletronComponentInjectedProps[P /* <: js.Object */] extends js.Object {
 
 object StyletronComponentInjectedProps {
   @scala.inline
-  def apply[P /* <: js.Object */]($as: StyletronBase = null, $style: StyleProp[P] = null): StyletronComponentInjectedProps[P] = {
+  def apply[P]($as: StyletronBase = null, $style: StyleProp[P] = null): StyletronComponentInjectedProps[P] = {
     val __obj = js.Dynamic.literal()
     if ($as != null) __obj.updateDynamic("$as")($as.asInstanceOf[js.Any])
     if ($style != null) __obj.updateDynamic("$style")($style.asInstanceOf[js.Any])

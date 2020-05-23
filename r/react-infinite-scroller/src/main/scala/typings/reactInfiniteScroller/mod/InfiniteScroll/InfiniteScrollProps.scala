@@ -81,8 +81,8 @@ object InfiniteScrollProps {
     initialLoad: js.UndefOr[Boolean] = js.undefined,
     isReverse: js.UndefOr[Boolean] = js.undefined,
     loader: ReactElement = null,
-    pageStart: Int | Double = null,
-    threshold: Int | Double = null,
+    pageStart: js.UndefOr[Double] = js.undefined,
+    threshold: js.UndefOr[Double] = js.undefined,
     useCapture: js.UndefOr[Boolean] = js.undefined,
     useWindow: js.UndefOr[Boolean] = js.undefined
   ): InfiniteScrollProps = {
@@ -91,14 +91,14 @@ object InfiniteScrollProps {
     if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (getScrollParent != null) __obj.updateDynamic("getScrollParent")(js.Any.fromFunction0(getScrollParent))
-    if (!js.isUndefined(hasMore)) __obj.updateDynamic("hasMore")(hasMore.asInstanceOf[js.Any])
-    if (!js.isUndefined(initialLoad)) __obj.updateDynamic("initialLoad")(initialLoad.asInstanceOf[js.Any])
-    if (!js.isUndefined(isReverse)) __obj.updateDynamic("isReverse")(isReverse.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasMore)) __obj.updateDynamic("hasMore")(hasMore.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialLoad)) __obj.updateDynamic("initialLoad")(initialLoad.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isReverse)) __obj.updateDynamic("isReverse")(isReverse.get.asInstanceOf[js.Any])
     if (loader != null) __obj.updateDynamic("loader")(loader.asInstanceOf[js.Any])
-    if (pageStart != null) __obj.updateDynamic("pageStart")(pageStart.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCapture)) __obj.updateDynamic("useCapture")(useCapture.asInstanceOf[js.Any])
-    if (!js.isUndefined(useWindow)) __obj.updateDynamic("useWindow")(useWindow.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageStart)) __obj.updateDynamic("pageStart")(pageStart.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCapture)) __obj.updateDynamic("useCapture")(useCapture.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useWindow)) __obj.updateDynamic("useWindow")(useWindow.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InfiniteScrollProps]
   }
 }

@@ -48,8 +48,8 @@ object AxisGrid {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (alternateColor != null) __obj.updateDynamic("alternateColor")(alternateColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideFirstLine)) __obj.updateDynamic("hideFirstLine")(hideFirstLine.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideLastLine)) __obj.updateDynamic("hideLastLine")(hideLastLine.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideFirstLine)) __obj.updateDynamic("hideFirstLine")(hideFirstLine.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideLastLine)) __obj.updateDynamic("hideLastLine")(hideLastLine.get.asInstanceOf[js.Any])
     if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AxisGrid]

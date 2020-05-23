@@ -7,9 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.googleMap")
 @js.native
-class googleMap () extends baseview {
+trait googleMap extends baseview {
   @JSName("$onLoad")
   var $onLoad_Original: WebixCallback = js.native
   @JSName("$scope")

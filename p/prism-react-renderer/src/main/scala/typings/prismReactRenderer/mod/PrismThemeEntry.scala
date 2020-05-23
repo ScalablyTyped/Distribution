@@ -40,7 +40,7 @@ object PrismThemeEntry {
     color: String = null,
     fontStyle: normal | italic = null,
     fontWeight: normal | bold | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     textDecorationLine: none | underline | `line-through` | (`underline line-through`) = null
   ): PrismThemeEntry = {
     val __obj = js.Dynamic.literal()
@@ -49,7 +49,7 @@ object PrismThemeEntry {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (textDecorationLine != null) __obj.updateDynamic("textDecorationLine")(textDecorationLine.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrismThemeEntry]
   }

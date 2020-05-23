@@ -7,11 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.Timeline")
 @js.native
-class Timeline protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: TimelineOptions) = this()
+trait Timeline extends Widget {
   var dataSource: DataSource = js.native
   @JSName("options")
   var options_Timeline: TimelineOptions = js.native
@@ -29,13 +26,5 @@ class Timeline protected () extends Widget {
   def previous(): Unit = js.native
   def redraw(): Unit = js.native
   def setDataSource(dataSource: DataSource): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.Timeline")
-@js.native
-object Timeline extends js.Object {
-  var fn: Timeline = js.native
-  def extend(proto: js.Object): Timeline = js.native
 }
 

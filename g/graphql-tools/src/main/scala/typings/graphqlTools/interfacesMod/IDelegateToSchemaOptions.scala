@@ -31,7 +31,7 @@ object IDelegateToSchemaOptions {
   ): IDelegateToSchemaOptions[TContext] = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], fieldName = fieldName.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
     if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipValidation)) __obj.updateDynamic("skipValidation")(skipValidation.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipValidation)) __obj.updateDynamic("skipValidation")(skipValidation.get.asInstanceOf[js.Any])
     if (transforms != null) __obj.updateDynamic("transforms")(transforms.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDelegateToSchemaOptions[TContext]]
   }

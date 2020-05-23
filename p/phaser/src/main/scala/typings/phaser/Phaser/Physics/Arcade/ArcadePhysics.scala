@@ -22,14 +22,8 @@ import scala.scalajs.js.annotation._
   * The separation that stops two objects penetrating may create a new penetration against a different object. If you
   * require a high level of stability please consider using an alternative physics system, such as Matter.js.
   */
-@JSGlobal("Phaser.Physics.Arcade.ArcadePhysics")
 @js.native
-class ArcadePhysics protected () extends js.Object {
-  /**
-    * 
-    * @param scene The Scene that this Plugin belongs to.
-    */
-  def this(scene: Scene) = this()
+trait ArcadePhysics extends js.Object {
   /**
     * An object holding the Arcade Physics factory methods.
     */

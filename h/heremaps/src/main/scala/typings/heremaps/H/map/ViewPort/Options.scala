@@ -20,12 +20,12 @@ object Options {
   @scala.inline
   def apply(
     fixedCenter: js.UndefOr[Boolean] = js.undefined,
-    margin: Int | Double = null,
+    margin: js.UndefOr[Double] = js.undefined,
     padding: Padding = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fixedCenter)) __obj.updateDynamic("fixedCenter")(fixedCenter.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedCenter)) __obj.updateDynamic("fixedCenter")(fixedCenter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.get.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

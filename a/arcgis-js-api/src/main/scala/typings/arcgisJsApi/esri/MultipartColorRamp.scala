@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.multipart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,8 +23,4 @@ trait MultipartColorRamp extends ColorRamp {
   @JSName("type")
   val type_MultipartColorRamp: multipart = js.native
 }
-
-@JSGlobal("__esri.MultipartColorRamp")
-@js.native
-object MultipartColorRamp extends TopLevel[MultipartColorRampConstructor]
 

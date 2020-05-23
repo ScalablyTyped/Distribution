@@ -1,17 +1,17 @@
 package typings.ava.mod
 
-import typings.ava.AnonComplete
+import typings.ava.anon.Complete
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Subscribable extends js.Object {
-  def subscribe(observer: AnonComplete): Unit
+  def subscribe(observer: Complete): Unit
 }
 
 object Subscribable {
   @scala.inline
-  def apply(subscribe: AnonComplete => Unit): Subscribable = {
+  def apply(subscribe: Complete => Unit): Subscribable = {
     val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction1(subscribe))
     __obj.asInstanceOf[Subscribable]
   }

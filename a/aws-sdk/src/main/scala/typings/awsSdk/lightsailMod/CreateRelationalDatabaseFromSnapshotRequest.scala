@@ -59,13 +59,13 @@ object CreateRelationalDatabaseFromSnapshotRequest {
   ): CreateRelationalDatabaseFromSnapshotRequest = {
     val __obj = js.Dynamic.literal(relationalDatabaseName = relationalDatabaseName.asInstanceOf[js.Any])
     if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
-    if (!js.isUndefined(publiclyAccessible)) __obj.updateDynamic("publiclyAccessible")(publiclyAccessible.asInstanceOf[js.Any])
+    if (!js.isUndefined(publiclyAccessible)) __obj.updateDynamic("publiclyAccessible")(publiclyAccessible.get.asInstanceOf[js.Any])
     if (relationalDatabaseBundleId != null) __obj.updateDynamic("relationalDatabaseBundleId")(relationalDatabaseBundleId.asInstanceOf[js.Any])
     if (relationalDatabaseSnapshotName != null) __obj.updateDynamic("relationalDatabaseSnapshotName")(relationalDatabaseSnapshotName.asInstanceOf[js.Any])
     if (restoreTime != null) __obj.updateDynamic("restoreTime")(restoreTime.asInstanceOf[js.Any])
     if (sourceRelationalDatabaseName != null) __obj.updateDynamic("sourceRelationalDatabaseName")(sourceRelationalDatabaseName.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(useLatestRestorableTime)) __obj.updateDynamic("useLatestRestorableTime")(useLatestRestorableTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(useLatestRestorableTime)) __obj.updateDynamic("useLatestRestorableTime")(useLatestRestorableTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRelationalDatabaseFromSnapshotRequest]
   }
 }

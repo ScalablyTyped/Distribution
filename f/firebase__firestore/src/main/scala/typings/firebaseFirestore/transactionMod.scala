@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/core/transaction", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/core/transaction", JSImport.Namespace)
 @js.native
 object transactionMod extends js.Object {
   @js.native

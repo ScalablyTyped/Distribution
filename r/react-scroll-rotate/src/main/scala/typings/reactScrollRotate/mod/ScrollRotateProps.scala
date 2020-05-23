@@ -21,24 +21,24 @@ trait ScrollRotateProps extends js.Object {
 object ScrollRotateProps {
   @scala.inline
   def apply(
-    animationDuration: Int | Double = null,
+    animationDuration: js.UndefOr[Double] = js.undefined,
     children: ReactNode = null,
-    from: Int | Double = null,
-    loops: Int | Double = null,
+    from: js.UndefOr[Double] = js.undefined,
+    loops: js.UndefOr[Double] = js.undefined,
     method: px | prec = null,
     target: String = null,
-    throttle: Int | Double = null,
-    to: Int | Double = null
+    throttle: js.UndefOr[Double] = js.undefined,
+    to: js.UndefOr[Double] = js.undefined
   ): ScrollRotateProps = {
     val __obj = js.Dynamic.literal()
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (loops != null) __obj.updateDynamic("loops")(loops.asInstanceOf[js.Any])
+    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loops)) __obj.updateDynamic("loops")(loops.get.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (throttle != null) __obj.updateDynamic("throttle")(throttle.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (!js.isUndefined(throttle)) __obj.updateDynamic("throttle")(throttle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(to)) __obj.updateDynamic("to")(to.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollRotateProps]
   }
 }

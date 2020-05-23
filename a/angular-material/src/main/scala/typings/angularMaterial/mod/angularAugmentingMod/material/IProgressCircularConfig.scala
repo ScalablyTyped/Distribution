@@ -22,24 +22,24 @@ trait IProgressCircularConfig extends js.Object {
 object IProgressCircularConfig {
   @scala.inline
   def apply(
-    duration: Int | Double = null,
-    durationIndeterminate: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
+    durationIndeterminate: js.UndefOr[Double] = js.undefined,
     easeFn: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double = null,
     easeFnIndeterminate: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double = null,
-    endIndeterminate: Int | Double = null,
-    progressSize: Int | Double = null,
-    startIndeterminate: Int | Double = null,
-    strokeWidth: Int | Double = null
+    endIndeterminate: js.UndefOr[Double] = js.undefined,
+    progressSize: js.UndefOr[Double] = js.undefined,
+    startIndeterminate: js.UndefOr[Double] = js.undefined,
+    strokeWidth: js.UndefOr[Double] = js.undefined
   ): IProgressCircularConfig = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (durationIndeterminate != null) __obj.updateDynamic("durationIndeterminate")(durationIndeterminate.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(durationIndeterminate)) __obj.updateDynamic("durationIndeterminate")(durationIndeterminate.get.asInstanceOf[js.Any])
     if (easeFn != null) __obj.updateDynamic("easeFn")(js.Any.fromFunction4(easeFn))
     if (easeFnIndeterminate != null) __obj.updateDynamic("easeFnIndeterminate")(js.Any.fromFunction4(easeFnIndeterminate))
-    if (endIndeterminate != null) __obj.updateDynamic("endIndeterminate")(endIndeterminate.asInstanceOf[js.Any])
-    if (progressSize != null) __obj.updateDynamic("progressSize")(progressSize.asInstanceOf[js.Any])
-    if (startIndeterminate != null) __obj.updateDynamic("startIndeterminate")(startIndeterminate.asInstanceOf[js.Any])
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(endIndeterminate)) __obj.updateDynamic("endIndeterminate")(endIndeterminate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressSize)) __obj.updateDynamic("progressSize")(progressSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startIndeterminate)) __obj.updateDynamic("startIndeterminate")(startIndeterminate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strokeWidth)) __obj.updateDynamic("strokeWidth")(strokeWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProgressCircularConfig]
   }
 }

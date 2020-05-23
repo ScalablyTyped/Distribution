@@ -12,7 +12,7 @@ object FromNodeOptions {
   @scala.inline
   def apply(multiArgs: js.UndefOr[Boolean] = js.undefined): FromNodeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(multiArgs)) __obj.updateDynamic("multiArgs")(multiArgs.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiArgs)) __obj.updateDynamic("multiArgs")(multiArgs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FromNodeOptions]
   }
 }

@@ -17,14 +17,14 @@ object AttributeInput {
   def apply(
     id: String | Double = null,
     key: String = null,
-    quantity: Int | Double = null,
+    quantity: js.UndefOr[Double] = js.undefined,
     value: String = null,
     variantId: String = null
   ): AttributeInput = {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (variantId != null) __obj.updateDynamic("variantId")(variantId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributeInput]

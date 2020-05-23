@@ -1,5 +1,7 @@
 package typings.expoLinearGradient
 
+import typings.expoLinearGradient.anon.Locations
+import typings.expoLinearGradient.anon.TypeofView
 import typings.react.mod.Component
 import typings.react.mod.ComponentProps
 import scala.scalajs.js
@@ -17,6 +19,6 @@ object nativeLinearGradientIosMod extends js.Object {
   class default () extends NativeLinearGradient
   
   type Point = js.Tuple2[Double, Double]
-  type Props = AnonLocations with ComponentProps[TypeofView]
+  type Props = Locations with ComponentProps[TypeofView]
 }
 

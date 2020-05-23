@@ -24,12 +24,12 @@ object AncillarySourceSettings {
   @scala.inline
   def apply(
     Convert608To708: AncillaryConvert608To708 = null,
-    SourceAncillaryChannelNumber: Int | Double = null,
+    SourceAncillaryChannelNumber: js.UndefOr[integerMin1Max4] = js.undefined,
     TerminateCaptions: AncillaryTerminateCaptions = null
   ): AncillarySourceSettings = {
     val __obj = js.Dynamic.literal()
     if (Convert608To708 != null) __obj.updateDynamic("Convert608To708")(Convert608To708.asInstanceOf[js.Any])
-    if (SourceAncillaryChannelNumber != null) __obj.updateDynamic("SourceAncillaryChannelNumber")(SourceAncillaryChannelNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(SourceAncillaryChannelNumber)) __obj.updateDynamic("SourceAncillaryChannelNumber")(SourceAncillaryChannelNumber.get.asInstanceOf[js.Any])
     if (TerminateCaptions != null) __obj.updateDynamic("TerminateCaptions")(TerminateCaptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[AncillarySourceSettings]
   }

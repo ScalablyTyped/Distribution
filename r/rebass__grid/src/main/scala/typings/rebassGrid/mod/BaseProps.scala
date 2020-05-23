@@ -20,13 +20,13 @@ object BaseProps {
     as: ElementType[_] = null,
     children: ReactNode = null,
     key: Key = null,
-    ref: LegacyRef[js.Any] = null
+    ref: js.UndefOr[Null | LegacyRef[js.Any]] = js.undefined
   ): BaseProps = {
     val __obj = js.Dynamic.literal()
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseProps]
   }
 }

@@ -52,7 +52,7 @@ object ICardholderListOptions {
     email: String = null,
     ending_before: String = null,
     is_default: js.UndefOr[Boolean] = js.undefined,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     phone_number: String = null,
     starting_after: String = null,
     status: CardholderStatus = null,
@@ -62,8 +62,8 @@ object ICardholderListOptions {
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
     if (ending_before != null) __obj.updateDynamic("ending_before")(ending_before.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_default)) __obj.updateDynamic("is_default")(is_default.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_default)) __obj.updateDynamic("is_default")(is_default.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (phone_number != null) __obj.updateDynamic("phone_number")(phone_number.asInstanceOf[js.Any])
     if (starting_after != null) __obj.updateDynamic("starting_after")(starting_after.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])

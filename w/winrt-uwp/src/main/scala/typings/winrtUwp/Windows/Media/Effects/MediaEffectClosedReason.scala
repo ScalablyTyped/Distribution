@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Effects
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object MediaEffectClosedReason extends js.Object {
   /** The media effect does not support the required encoding format. */
   @js.native
   sealed trait unsupportedEncodingFormat extends MediaEffectClosedReason
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MediaEffectClosedReason with Double] = js.native
-  /* 0 */ @js.native
-  object done extends TopLevel[done with Double]
-  
-  /* 3 */ @js.native
-  object effectCurrentlyUnloaded extends TopLevel[effectCurrentlyUnloaded with Double]
-  
-  /* 1 */ @js.native
-  object unknownError extends TopLevel[unknownError with Double]
-  
-  /* 2 */ @js.native
-  object unsupportedEncodingFormat extends TopLevel[unsupportedEncodingFormat with Double]
   
 }
 

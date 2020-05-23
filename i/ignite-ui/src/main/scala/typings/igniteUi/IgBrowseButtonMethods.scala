@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 trait IgBrowseButtonMethods extends js.Object {
   def attachFilePicker(e: js.Object, isHidden: js.Object): Unit
   /**
-  	 * $(".selector").igUpload("destroy");
-  	 */
+    * $(".selector").igUpload("destroy");
+    */
   def destroy(): Unit
   def getFilePicker(): Unit
 }

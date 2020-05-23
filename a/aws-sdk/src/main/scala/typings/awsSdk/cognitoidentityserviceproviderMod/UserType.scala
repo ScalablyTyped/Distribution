@@ -40,7 +40,7 @@ object UserType {
   @scala.inline
   def apply(
     Attributes: AttributeListType = null,
-    Enabled: js.UndefOr[Boolean] = js.undefined,
+    Enabled: js.UndefOr[BooleanType] = js.undefined,
     MFAOptions: MFAOptionListType = null,
     UserCreateDate: DateType = null,
     UserLastModifiedDate: DateType = null,
@@ -49,7 +49,7 @@ object UserType {
   ): UserType = {
     val __obj = js.Dynamic.literal()
     if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     if (MFAOptions != null) __obj.updateDynamic("MFAOptions")(MFAOptions.asInstanceOf[js.Any])
     if (UserCreateDate != null) __obj.updateDynamic("UserCreateDate")(UserCreateDate.asInstanceOf[js.Any])
     if (UserLastModifiedDate != null) __obj.updateDynamic("UserLastModifiedDate")(UserLastModifiedDate.asInstanceOf[js.Any])

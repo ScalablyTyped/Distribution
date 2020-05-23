@@ -39,7 +39,7 @@ object EventParams {
   def apply(
     affiliation: String = null,
     checkout_option: String = null,
-    checkout_step: Int | Double = null,
+    checkout_step: js.UndefOr[Double] = js.undefined,
     content_id: String = null,
     content_type: String = null,
     coupon: String = null,
@@ -63,12 +63,12 @@ object EventParams {
     shipping_tier: String = null,
     tax: Currency = null,
     transaction_id: String = null,
-    value: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined
   ): EventParams = {
     val __obj = js.Dynamic.literal()
     if (affiliation != null) __obj.updateDynamic("affiliation")(affiliation.asInstanceOf[js.Any])
     if (checkout_option != null) __obj.updateDynamic("checkout_option")(checkout_option.asInstanceOf[js.Any])
-    if (checkout_step != null) __obj.updateDynamic("checkout_step")(checkout_step.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkout_step)) __obj.updateDynamic("checkout_step")(checkout_step.get.asInstanceOf[js.Any])
     if (content_id != null) __obj.updateDynamic("content_id")(content_id.asInstanceOf[js.Any])
     if (content_type != null) __obj.updateDynamic("content_type")(content_type.asInstanceOf[js.Any])
     if (coupon != null) __obj.updateDynamic("coupon")(coupon.asInstanceOf[js.Any])
@@ -76,7 +76,7 @@ object EventParams {
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (event_category != null) __obj.updateDynamic("event_category")(event_category.asInstanceOf[js.Any])
     if (event_label != null) __obj.updateDynamic("event_label")(event_label.asInstanceOf[js.Any])
-    if (!js.isUndefined(fatal)) __obj.updateDynamic("fatal")(fatal.asInstanceOf[js.Any])
+    if (!js.isUndefined(fatal)) __obj.updateDynamic("fatal")(fatal.get.asInstanceOf[js.Any])
     if (item_list_id != null) __obj.updateDynamic("item_list_id")(item_list_id.asInstanceOf[js.Any])
     if (item_list_name != null) __obj.updateDynamic("item_list_name")(item_list_name.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
@@ -92,7 +92,7 @@ object EventParams {
     if (shipping_tier != null) __obj.updateDynamic("shipping_tier")(shipping_tier.asInstanceOf[js.Any])
     if (tax != null) __obj.updateDynamic("tax")(tax.asInstanceOf[js.Any])
     if (transaction_id != null) __obj.updateDynamic("transaction_id")(transaction_id.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventParams]
   }
 }

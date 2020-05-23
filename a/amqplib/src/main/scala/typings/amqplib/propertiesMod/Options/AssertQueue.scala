@@ -26,22 +26,22 @@ object AssertQueue {
     deadLetterRoutingKey: String = null,
     durable: js.UndefOr[Boolean] = js.undefined,
     exclusive: js.UndefOr[Boolean] = js.undefined,
-    expires: Int | Double = null,
-    maxLength: Int | Double = null,
-    maxPriority: Int | Double = null,
-    messageTtl: Int | Double = null
+    expires: js.UndefOr[Double] = js.undefined,
+    maxLength: js.UndefOr[Double] = js.undefined,
+    maxPriority: js.UndefOr[Double] = js.undefined,
+    messageTtl: js.UndefOr[Double] = js.undefined
   ): AssertQueue = {
     val __obj = js.Dynamic.literal()
     if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoDelete)) __obj.updateDynamic("autoDelete")(autoDelete.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoDelete)) __obj.updateDynamic("autoDelete")(autoDelete.get.asInstanceOf[js.Any])
     if (deadLetterExchange != null) __obj.updateDynamic("deadLetterExchange")(deadLetterExchange.asInstanceOf[js.Any])
     if (deadLetterRoutingKey != null) __obj.updateDynamic("deadLetterRoutingKey")(deadLetterRoutingKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(durable)) __obj.updateDynamic("durable")(durable.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.asInstanceOf[js.Any])
-    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (maxPriority != null) __obj.updateDynamic("maxPriority")(maxPriority.asInstanceOf[js.Any])
-    if (messageTtl != null) __obj.updateDynamic("messageTtl")(messageTtl.asInstanceOf[js.Any])
+    if (!js.isUndefined(durable)) __obj.updateDynamic("durable")(durable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expires)) __obj.updateDynamic("expires")(expires.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPriority)) __obj.updateDynamic("maxPriority")(maxPriority.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(messageTtl)) __obj.updateDynamic("messageTtl")(messageTtl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssertQueue]
   }
 }

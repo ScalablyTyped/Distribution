@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Enumeration
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object DevicePairingKinds extends js.Object {
   /** A pin is shown on the target device and must be provided to the app. */
   @js.native
   sealed trait providePin extends DevicePairingKinds
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DevicePairingKinds with Double] = js.native
-  /* 1 */ @js.native
-  object confirmOnly extends TopLevel[confirmOnly with Double]
-  
-  /* 4 */ @js.native
-  object confirmPinMatch extends TopLevel[confirmPinMatch with Double]
-  
-  /* 2 */ @js.native
-  object displayPin extends TopLevel[displayPin with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 3 */ @js.native
-  object providePin extends TopLevel[providePin with Double]
   
 }
 

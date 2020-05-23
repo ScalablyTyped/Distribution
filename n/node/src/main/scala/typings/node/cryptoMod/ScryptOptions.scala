@@ -14,16 +14,16 @@ trait ScryptOptions extends js.Object {
 object ScryptOptions {
   @scala.inline
   def apply(
-    N: Int | Double = null,
-    maxmem: Int | Double = null,
-    p: Int | Double = null,
-    r: Int | Double = null
+    N: js.UndefOr[Double] = js.undefined,
+    maxmem: js.UndefOr[Double] = js.undefined,
+    p: js.UndefOr[Double] = js.undefined,
+    r: js.UndefOr[Double] = js.undefined
   ): ScryptOptions = {
     val __obj = js.Dynamic.literal()
-    if (N != null) __obj.updateDynamic("N")(N.asInstanceOf[js.Any])
-    if (maxmem != null) __obj.updateDynamic("maxmem")(maxmem.asInstanceOf[js.Any])
-    if (p != null) __obj.updateDynamic("p")(p.asInstanceOf[js.Any])
-    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
+    if (!js.isUndefined(N)) __obj.updateDynamic("N")(N.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxmem)) __obj.updateDynamic("maxmem")(maxmem.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(p)) __obj.updateDynamic("p")(p.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(r)) __obj.updateDynamic("r")(r.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScryptOptions]
   }
 }

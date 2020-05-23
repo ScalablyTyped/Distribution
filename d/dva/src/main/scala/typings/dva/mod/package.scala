@@ -10,7 +10,7 @@ package object mod {
     /* effects */ typings.dva.mod.EffectsCommandMap, 
     scala.Unit
   ]
-  type EffectWithType = js.Tuple2[typings.dva.mod.Effect, typings.dva.AnonType]
+  type EffectWithType = js.Tuple2[typings.dva.mod.Effect, typings.dva.anon.Type]
   type EffectsMapObject = org.scalablytyped.runtime.StringDictionary[typings.dva.mod.Effect | typings.dva.mod.EffectWithType]
   type ReducerEnhancer = js.Function1[
     /* reducer */ typings.redux.mod.Reducer[js.Any, typings.redux.mod.AnyAction], 
@@ -22,7 +22,7 @@ package object mod {
   ]
   type Router = js.Function1[
     /* api */ js.UndefOr[typings.dva.mod.RouterAPI], 
-    typings.react.mod._Global_.JSX.Element | js.Object
+    typings.react.mod.global.JSX.Element | js.Object
   ]
   type Subscription = js.Function2[/* api */ typings.dva.mod.SubscriptionAPI, /* done */ js.Function, scala.Unit]
   type SubscriptionsMapObject = org.scalablytyped.runtime.StringDictionary[typings.dva.mod.Subscription]

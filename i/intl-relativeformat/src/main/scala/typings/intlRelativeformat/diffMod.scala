@@ -1,5 +1,6 @@
 package typings.intlRelativeformat
 
+import typings.intlRelativeformat.anon.RecordSUPPORTEDFIELDnumbe
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

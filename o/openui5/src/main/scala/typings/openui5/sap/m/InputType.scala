@@ -1,6 +1,5 @@
 package typings.openui5.sap.m
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,45 +49,6 @@ object InputType extends js.Object {
   
   @js.native
   sealed trait Week extends InputType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[InputType with Double] = js.native
-  /* 0 */ @js.native
-  object Date extends TopLevel[Date with Double]
-  
-  /* 1 */ @js.native
-  object Datetime extends TopLevel[Datetime with Double]
-  
-  /* 2 */ @js.native
-  object DatetimeLocale extends TopLevel[DatetimeLocale with Double]
-  
-  /* 3 */ @js.native
-  object Email extends TopLevel[Email with Double]
-  
-  /* 4 */ @js.native
-  object Month extends TopLevel[Month with Double]
-  
-  /* 5 */ @js.native
-  object Number extends TopLevel[Number with Double]
-  
-  /* 6 */ @js.native
-  object Password extends TopLevel[Password with Double]
-  
-  /* 7 */ @js.native
-  object Tel extends TopLevel[Tel with Double]
-  
-  /* 8 */ @js.native
-  object Text
-    extends TopLevel[typings.openui5.sap.m.InputType.Text with Double]
-  
-  /* 9 */ @js.native
-  object Time extends TopLevel[Time with Double]
-  
-  /* 10 */ @js.native
-  object Url extends TopLevel[Url with Double]
-  
-  /* 11 */ @js.native
-  object Week extends TopLevel[Week with Double]
   
 }
 

@@ -26,15 +26,15 @@ object PrimaryYAxisScrollbarSettings {
   @scala.inline
   def apply(
     canResize: js.UndefOr[Boolean] = js.undefined,
-    pointsLength: Int | Double = null,
+    pointsLength: js.UndefOr[Double] = js.undefined,
     range: PrimaryYAxisScrollbarSettingsRange = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): PrimaryYAxisScrollbarSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canResize)) __obj.updateDynamic("canResize")(canResize.asInstanceOf[js.Any])
-    if (pointsLength != null) __obj.updateDynamic("pointsLength")(pointsLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(canResize)) __obj.updateDynamic("canResize")(canResize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointsLength)) __obj.updateDynamic("pointsLength")(pointsLength.get.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrimaryYAxisScrollbarSettings]
   }
 }

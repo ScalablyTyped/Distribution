@@ -1,8 +1,8 @@
 package typings.log4javascript.mod
 
-import typings.log4javascript.AnonAppendResult
+import typings.log4javascript.anon.AppendResult
 import typings.std.HTMLElement
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,7 +53,7 @@ class InPageAppender protected () extends Appender {
   	 */
   def addCommandLineFunction(
     functionName: String,
-    commandLineFunction: js.Function3[/* appender */ Appender, /* args */ js.Any, /* returnValue */ AnonAppendResult, _]
+    commandLineFunction: js.Function3[/* appender */ Appender, /* args */ js.Any, /* returnValue */ AppendResult, _]
   ): Unit = js.native
   /**
   	 * Sets a CSS style property on the HTML element containing the console iframe.
@@ -97,7 +97,7 @@ class InPageAppender protected () extends Appender {
   /**
   	 * Returns a reference to the window in which commands typed into the command line are currently being executed.
   	 */
-  def getCommandWindow(): Window_ = js.native
+  def getCommandWindow(): Window = js.native
   /**
   	 * Returns the outer height of the console window.
   	 */
@@ -146,7 +146,7 @@ class InPageAppender protected () extends Appender {
   /**
   	 * Sets the window in which commands typed into the command line are executed.
   	 */
-  def setCommandWindow(commandWindow: Window_): Unit = js.native
+  def setCommandWindow(commandWindow: Window): Unit = js.native
   /**
   	 * Sets the outer height of the console window. Any valid CSS length may be used.
   	 */

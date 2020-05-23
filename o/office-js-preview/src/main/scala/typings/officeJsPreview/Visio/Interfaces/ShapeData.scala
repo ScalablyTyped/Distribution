@@ -76,7 +76,7 @@ object ShapeData {
   def apply(
     comments: js.Array[CommentData] = null,
     hyperlinks: js.Array[HyperlinkData] = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     name: String = null,
     select: js.UndefOr[Boolean] = js.undefined,
     shapeDataItems: js.Array[ShapeDataItemData] = null,
@@ -87,9 +87,9 @@ object ShapeData {
     val __obj = js.Dynamic.literal()
     if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
     if (hyperlinks != null) __obj.updateDynamic("hyperlinks")(hyperlinks.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(select)) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
+    if (!js.isUndefined(select)) __obj.updateDynamic("select")(select.get.asInstanceOf[js.Any])
     if (shapeDataItems != null) __obj.updateDynamic("shapeDataItems")(shapeDataItems.asInstanceOf[js.Any])
     if (subShapes != null) __obj.updateDynamic("subShapes")(subShapes.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])

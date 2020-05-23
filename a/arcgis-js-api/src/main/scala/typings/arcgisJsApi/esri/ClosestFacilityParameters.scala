@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`allow-backtrack`
 import typings.arcgisJsApi.arcgisJsApiStrings.`at-dead-ends-and-intersections`
 import typings.arcgisJsApi.arcgisJsApiStrings.`at-dead-ends-only`
@@ -276,8 +275,4 @@ trait ClosestFacilityParameters
     */
   var useHierarchy: Boolean = js.native
 }
-
-@JSGlobal("__esri.ClosestFacilityParameters")
-@js.native
-object ClosestFacilityParameters extends TopLevel[ClosestFacilityParametersConstructor]
 

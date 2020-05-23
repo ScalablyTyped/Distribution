@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.PushMaterial")
 @js.native
-class PushMaterial protected () extends Material {
-  def this(name: String, scene: Scene) = this()
+trait PushMaterial extends Material {
   var _activeEffect: Effect = js.native
   var _normalMatrix: Matrix = js.native
   /**

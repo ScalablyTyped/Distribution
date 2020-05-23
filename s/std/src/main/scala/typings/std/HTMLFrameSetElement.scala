@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,8 +56,4 @@ trait HTMLFrameSetElement
     options: EventListenerOptions
   ): Unit = js.native
 }
-
-@JSGlobal("HTMLFrameSetElement")
-@js.native
-object HTMLFrameSetElement extends Instantiable0[HTMLFrameSetElement]
 

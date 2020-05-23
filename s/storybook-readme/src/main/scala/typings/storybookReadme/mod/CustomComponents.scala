@@ -1,21 +1,21 @@
 package typings.storybookReadme.mod
 
-import typings.react.mod._Global_.JSX.Element
-import typings.storybookReadme.AnonChildrenElement
+import typings.react.mod.global.JSX.Element
+import typings.storybookReadme.anon.ChildrenElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CustomComponents extends js.Object {
-  var FooterComponent: js.UndefOr[js.Function1[/* props */ AnonChildrenElement, Element]] = js.undefined
-  var PreviewComponent: js.UndefOr[js.Function1[/* props */ AnonChildrenElement, Element]] = js.undefined
+  var FooterComponent: js.UndefOr[js.Function1[/* props */ ChildrenElement, Element]] = js.undefined
+  var PreviewComponent: js.UndefOr[js.Function1[/* props */ ChildrenElement, Element]] = js.undefined
 }
 
 object CustomComponents {
   @scala.inline
   def apply(
-    FooterComponent: /* props */ AnonChildrenElement => Element = null,
-    PreviewComponent: /* props */ AnonChildrenElement => Element = null
+    FooterComponent: /* props */ ChildrenElement => Element = null,
+    PreviewComponent: /* props */ ChildrenElement => Element = null
   ): CustomComponents = {
     val __obj = js.Dynamic.literal()
     if (FooterComponent != null) __obj.updateDynamic("FooterComponent")(js.Any.fromFunction1(FooterComponent))

@@ -35,39 +35,39 @@ object LDOptions {
     evaluationReasons: js.UndefOr[Boolean] = js.undefined,
     eventsUrl: String = null,
     fetchGoals: js.UndefOr[Boolean] = js.undefined,
-    flushInterval: Int | Double = null,
+    flushInterval: js.UndefOr[Double] = js.undefined,
     hash: String = null,
     logger: LDLogger = null,
     privateAttributeNames: js.Array[String] = null,
-    samplingInterval: Int | Double = null,
+    samplingInterval: js.UndefOr[Double] = js.undefined,
     sendEvents: js.UndefOr[Boolean] = js.undefined,
     sendEventsOnlyForVariation: js.UndefOr[Boolean] = js.undefined,
     sendLDHeaders: js.UndefOr[Boolean] = js.undefined,
-    streamReconnectDelay: Int | Double = null,
+    streamReconnectDelay: js.UndefOr[Double] = js.undefined,
     streamUrl: String = null,
     streaming: js.UndefOr[Boolean] = js.undefined,
     useReport: js.UndefOr[Boolean] = js.undefined
   ): LDOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allAttributesPrivate)) __obj.updateDynamic("allAttributesPrivate")(allAttributesPrivate.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFrequentDuplicateEvents)) __obj.updateDynamic("allowFrequentDuplicateEvents")(allowFrequentDuplicateEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(allAttributesPrivate)) __obj.updateDynamic("allAttributesPrivate")(allAttributesPrivate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFrequentDuplicateEvents)) __obj.updateDynamic("allowFrequentDuplicateEvents")(allowFrequentDuplicateEvents.get.asInstanceOf[js.Any])
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
     if (bootstrap != null) __obj.updateDynamic("bootstrap")(bootstrap.asInstanceOf[js.Any])
-    if (!js.isUndefined(evaluationReasons)) __obj.updateDynamic("evaluationReasons")(evaluationReasons.asInstanceOf[js.Any])
+    if (!js.isUndefined(evaluationReasons)) __obj.updateDynamic("evaluationReasons")(evaluationReasons.get.asInstanceOf[js.Any])
     if (eventsUrl != null) __obj.updateDynamic("eventsUrl")(eventsUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(fetchGoals)) __obj.updateDynamic("fetchGoals")(fetchGoals.asInstanceOf[js.Any])
-    if (flushInterval != null) __obj.updateDynamic("flushInterval")(flushInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetchGoals)) __obj.updateDynamic("fetchGoals")(fetchGoals.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flushInterval)) __obj.updateDynamic("flushInterval")(flushInterval.get.asInstanceOf[js.Any])
     if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     if (privateAttributeNames != null) __obj.updateDynamic("privateAttributeNames")(privateAttributeNames.asInstanceOf[js.Any])
-    if (samplingInterval != null) __obj.updateDynamic("samplingInterval")(samplingInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(sendEvents)) __obj.updateDynamic("sendEvents")(sendEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(sendEventsOnlyForVariation)) __obj.updateDynamic("sendEventsOnlyForVariation")(sendEventsOnlyForVariation.asInstanceOf[js.Any])
-    if (!js.isUndefined(sendLDHeaders)) __obj.updateDynamic("sendLDHeaders")(sendLDHeaders.asInstanceOf[js.Any])
-    if (streamReconnectDelay != null) __obj.updateDynamic("streamReconnectDelay")(streamReconnectDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(samplingInterval)) __obj.updateDynamic("samplingInterval")(samplingInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendEvents)) __obj.updateDynamic("sendEvents")(sendEvents.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendEventsOnlyForVariation)) __obj.updateDynamic("sendEventsOnlyForVariation")(sendEventsOnlyForVariation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendLDHeaders)) __obj.updateDynamic("sendLDHeaders")(sendLDHeaders.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(streamReconnectDelay)) __obj.updateDynamic("streamReconnectDelay")(streamReconnectDelay.get.asInstanceOf[js.Any])
     if (streamUrl != null) __obj.updateDynamic("streamUrl")(streamUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(streaming)) __obj.updateDynamic("streaming")(streaming.asInstanceOf[js.Any])
-    if (!js.isUndefined(useReport)) __obj.updateDynamic("useReport")(useReport.asInstanceOf[js.Any])
+    if (!js.isUndefined(streaming)) __obj.updateDynamic("streaming")(streaming.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useReport)) __obj.updateDynamic("useReport")(useReport.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LDOptions]
   }
 }

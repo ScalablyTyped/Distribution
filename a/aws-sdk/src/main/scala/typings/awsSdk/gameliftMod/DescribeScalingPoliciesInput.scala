@@ -28,12 +28,12 @@ object DescribeScalingPoliciesInput {
   @scala.inline
   def apply(
     FleetId: FleetIdOrArn,
-    Limit: Int | scala.Double = null,
+    Limit: js.UndefOr[PositiveInteger] = js.undefined,
     NextToken: NonZeroAndMaxString = null,
     StatusFilter: ScalingStatusType = null
   ): DescribeScalingPoliciesInput = {
     val __obj = js.Dynamic.literal(FleetId = FleetId.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (StatusFilter != null) __obj.updateDynamic("StatusFilter")(StatusFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeScalingPoliciesInput]

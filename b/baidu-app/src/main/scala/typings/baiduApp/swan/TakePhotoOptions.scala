@@ -1,6 +1,6 @@
 package typings.baiduApp.swan
 
-import typings.baiduApp.AnonTempImagePath
+import typings.baiduApp.anon.TempImagePath
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait TakePhotoOptions
   /** 成像质量，值为high, normal, low，默认normal */
   var quality: js.UndefOr[String] = js.undefined
   @JSName("success")
-  var success_TakePhotoOptions: js.UndefOr[js.Function1[/* res */ AnonTempImagePath, Unit]] = js.undefined
+  var success_TakePhotoOptions: js.UndefOr[js.Function1[/* res */ TempImagePath, Unit]] = js.undefined
 }
 
 object TakePhotoOptions {
@@ -19,7 +19,7 @@ object TakePhotoOptions {
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
     quality: String = null,
-    success: /* res */ AnonTempImagePath => Unit = null
+    success: /* res */ TempImagePath => Unit = null
   ): TakePhotoOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))

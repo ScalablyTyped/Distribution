@@ -11,7 +11,7 @@ trait Destination extends js.Object {
     */
   var DestinationId: String = js.native
   /**
-    * The type of resource used for the publishing destination. Currently, only S3 is supported.
+    * The type of resource used for the publishing destination. Currently, only Amazon S3 buckets are supported.
     */
   var DestinationType: typings.awsSdk.guarddutyMod.DestinationType = js.native
   /**

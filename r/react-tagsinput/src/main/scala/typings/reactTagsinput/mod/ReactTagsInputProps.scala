@@ -54,45 +54,45 @@ object ReactTagsInputProps {
     inputProps: InputProps = null,
     inputValue: String = null,
     key: Key = null,
-    maxTags: Int | Double = null,
+    maxTags: js.UndefOr[Double] = js.undefined,
     onChangeInput: /* value */ String => Unit = null,
     onValidationReject: /* tags */ js.Array[String] => Unit = null,
     onlyUnique: js.UndefOr[Boolean] = js.undefined,
     pasteSplit: /* data */ String => js.Array[String] = null,
     preventSubmit: js.UndefOr[Boolean] = js.undefined,
-    ref: LegacyRef[TagsInput[Tag]] = null,
+    ref: js.UndefOr[Null | LegacyRef[TagsInput[Tag]]] = js.undefined,
     removeKeys: js.Array[Double] = null,
     renderInput: /* props */ RenderInputProps[Tag] => ReactNode = null,
     renderLayout: (/* tagElements */ js.Array[ReactElement], /* inputElement */ ReactElement) => ReactChild = null,
     renderTag: /* props */ RenderTagProps[Tag] => ReactNode = null,
-    tagDisplayProp: /* keyof Tag */ String = null,
+    tagDisplayProp: js.UndefOr[Null | (/* keyof Tag */ String)] = js.undefined,
     tagProps: TagProps = null,
     validationRegex: RegExp = null
   ): ReactTagsInputProps[Tag] = {
     val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction3(onChange), value = value.asInstanceOf[js.Any])
     if (addKeys != null) __obj.updateDynamic("addKeys")(addKeys.asInstanceOf[js.Any])
-    if (!js.isUndefined(addOnBlur)) __obj.updateDynamic("addOnBlur")(addOnBlur.asInstanceOf[js.Any])
-    if (!js.isUndefined(addOnPaste)) __obj.updateDynamic("addOnPaste")(addOnPaste.asInstanceOf[js.Any])
+    if (!js.isUndefined(addOnBlur)) __obj.updateDynamic("addOnBlur")(addOnBlur.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(addOnPaste)) __obj.updateDynamic("addOnPaste")(addOnPaste.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (currentValue != null) __obj.updateDynamic("currentValue")(currentValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (focusedClassName != null) __obj.updateDynamic("focusedClassName")(focusedClassName.asInstanceOf[js.Any])
     if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
     if (inputValue != null) __obj.updateDynamic("inputValue")(inputValue.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (maxTags != null) __obj.updateDynamic("maxTags")(maxTags.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTags)) __obj.updateDynamic("maxTags")(maxTags.get.asInstanceOf[js.Any])
     if (onChangeInput != null) __obj.updateDynamic("onChangeInput")(js.Any.fromFunction1(onChangeInput))
     if (onValidationReject != null) __obj.updateDynamic("onValidationReject")(js.Any.fromFunction1(onValidationReject))
-    if (!js.isUndefined(onlyUnique)) __obj.updateDynamic("onlyUnique")(onlyUnique.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyUnique)) __obj.updateDynamic("onlyUnique")(onlyUnique.get.asInstanceOf[js.Any])
     if (pasteSplit != null) __obj.updateDynamic("pasteSplit")(js.Any.fromFunction1(pasteSplit))
-    if (!js.isUndefined(preventSubmit)) __obj.updateDynamic("preventSubmit")(preventSubmit.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventSubmit)) __obj.updateDynamic("preventSubmit")(preventSubmit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (removeKeys != null) __obj.updateDynamic("removeKeys")(removeKeys.asInstanceOf[js.Any])
     if (renderInput != null) __obj.updateDynamic("renderInput")(js.Any.fromFunction1(renderInput))
     if (renderLayout != null) __obj.updateDynamic("renderLayout")(js.Any.fromFunction2(renderLayout))
     if (renderTag != null) __obj.updateDynamic("renderTag")(js.Any.fromFunction1(renderTag))
-    if (tagDisplayProp != null) __obj.updateDynamic("tagDisplayProp")(tagDisplayProp.asInstanceOf[js.Any])
+    if (!js.isUndefined(tagDisplayProp)) __obj.updateDynamic("tagDisplayProp")(tagDisplayProp.asInstanceOf[js.Any])
     if (tagProps != null) __obj.updateDynamic("tagProps")(tagProps.asInstanceOf[js.Any])
     if (validationRegex != null) __obj.updateDynamic("validationRegex")(validationRegex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactTagsInputProps[Tag]]

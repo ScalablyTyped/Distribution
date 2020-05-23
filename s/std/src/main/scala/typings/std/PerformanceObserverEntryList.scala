@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,8 +11,4 @@ trait PerformanceObserverEntryList extends js.Object {
   def getEntriesByName(name: java.lang.String, `type`: java.lang.String): PerformanceEntryList = js.native
   def getEntriesByType(`type`: java.lang.String): PerformanceEntryList = js.native
 }
-
-@JSGlobal("PerformanceObserverEntryList")
-@js.native
-object PerformanceObserverEntryList extends Instantiable0[PerformanceObserverEntryList]
 

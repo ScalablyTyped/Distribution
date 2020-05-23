@@ -40,17 +40,17 @@ object KeyUpEventArgs {
     isEdit: js.UndefOr[Boolean] = js.undefined,
     isSheetRename: js.UndefOr[Boolean] = js.undefined,
     model: Model = null,
-    sheetIndex: Int | Double = null,
+    sheetIndex: js.UndefOr[Double] = js.undefined,
     target: HTMLElement = null,
     `type`: String = null
   ): KeyUpEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCommentEdit)) __obj.updateDynamic("isCommentEdit")(isCommentEdit.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEdit)) __obj.updateDynamic("isEdit")(isEdit.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSheetRename)) __obj.updateDynamic("isSheetRename")(isSheetRename.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCommentEdit)) __obj.updateDynamic("isCommentEdit")(isCommentEdit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEdit)) __obj.updateDynamic("isEdit")(isEdit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSheetRename)) __obj.updateDynamic("isSheetRename")(isSheetRename.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (sheetIndex != null) __obj.updateDynamic("sheetIndex")(sheetIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(sheetIndex)) __obj.updateDynamic("sheetIndex")(sheetIndex.get.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyUpEventArgs]

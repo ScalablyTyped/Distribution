@@ -1,6 +1,8 @@
 package typings.blueprintjsTable.draggableMod
 
 import typings.blueprintjsCore.propsMod.IProps
+import typings.blueprintjsTable.dragTypesMod.ICoordinateData
+import typings.blueprintjsTable.dragTypesMod.IDragHandler
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,8 +31,8 @@ object IDraggableProps {
     if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(js.Any.fromFunction1(onDoubleClick))
     if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction2(onDragEnd))
     if (onDragMove != null) __obj.updateDynamic("onDragMove")(js.Any.fromFunction2(onDragMove))
-    if (!js.isUndefined(preventDefault)) __obj.updateDynamic("preventDefault")(preventDefault.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopPropagation)) __obj.updateDynamic("stopPropagation")(stopPropagation.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventDefault)) __obj.updateDynamic("preventDefault")(preventDefault.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopPropagation)) __obj.updateDynamic("stopPropagation")(stopPropagation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDraggableProps]
   }
 }

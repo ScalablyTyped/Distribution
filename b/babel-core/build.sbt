@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "babel-core"
-version := "6.25-dt-20200226Z-9f8b47"
-scalaVersion := "2.13.1"
+version := "6.25-dt-20200226Z-f9dba7"
+scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "babel-generator" % "6.25-dt-20200226Z-55fabe",
-  "org.scalablytyped" %%% "babel-template" % "6.25-dt-20200226Z-4c6d91",
-  "org.scalablytyped" %%% "babel-traverse" % "6.25-dt-20190212Z-23fe48",
-  "org.scalablytyped" %%% "babel-types" % "7.0-dt-20190424Z-187f96",
-  "org.scalablytyped" %%% "babylon" % "6.16-dt-20200226Z-aad46b",
-  "org.scalablytyped" %%% "std" % "3.8-9b2470")
+  "org.scalablytyped" %%% "babel-generator" % "6.25-dt-20200515Z-ee0042",
+  "org.scalablytyped" %%% "babel-template" % "6.25-dt-20200226Z-b03dcd",
+  "org.scalablytyped" %%% "babel-traverse" % "6.25-dt-20200515Z-535fd7",
+  "org.scalablytyped" %%% "babel-types" % "7.0-dt-20200515Z-349e2d",
+  "org.scalablytyped" %%% "babylon" % "6.16-dt-20200226Z-f6c467",
+  "org.scalablytyped" %%% "std" % "3.9-18cbeb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

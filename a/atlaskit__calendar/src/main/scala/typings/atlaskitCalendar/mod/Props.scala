@@ -66,16 +66,16 @@ trait Props extends js.Object {
 object Props {
   @scala.inline
   def apply(
-    day: Int | Double = null,
-    defaultDay: Int | Double = null,
+    day: js.UndefOr[Double] = js.undefined,
+    defaultDay: js.UndefOr[Double] = js.undefined,
     defaultDisabled: js.Array[String] = null,
-    defaultMonth: Int | Double = null,
+    defaultMonth: js.UndefOr[Double] = js.undefined,
     defaultPreviouslySelected: js.Array[String] = null,
     defaultSelected: js.Array[String] = null,
-    defaultYear: Int | Double = null,
+    defaultYear: js.UndefOr[Double] = js.undefined,
     disabled: js.Array[String] = null,
     innerProps: HTMLAttributes[HTMLDivElement] = null,
-    month: Int | Double = null,
+    month: js.UndefOr[Double] = js.undefined,
     onBlur: /* e */ js.UndefOr[FocusEvent[HTMLDivElement]] => Unit = null,
     onChange: /* e */ ChangeEvent => Unit = null,
     onFocus: /* e */ js.UndefOr[FocusEvent[HTMLDivElement]] => Unit = null,
@@ -83,19 +83,19 @@ object Props {
     previouslySelected: js.Array[String] = null,
     selected: js.Array[String] = null,
     today: String = null,
-    year: Int | Double = null
+    year: js.UndefOr[Double] = js.undefined
   ): Props = {
     val __obj = js.Dynamic.literal()
-    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
-    if (defaultDay != null) __obj.updateDynamic("defaultDay")(defaultDay.asInstanceOf[js.Any])
+    if (!js.isUndefined(day)) __obj.updateDynamic("day")(day.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultDay)) __obj.updateDynamic("defaultDay")(defaultDay.get.asInstanceOf[js.Any])
     if (defaultDisabled != null) __obj.updateDynamic("defaultDisabled")(defaultDisabled.asInstanceOf[js.Any])
-    if (defaultMonth != null) __obj.updateDynamic("defaultMonth")(defaultMonth.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultMonth)) __obj.updateDynamic("defaultMonth")(defaultMonth.get.asInstanceOf[js.Any])
     if (defaultPreviouslySelected != null) __obj.updateDynamic("defaultPreviouslySelected")(defaultPreviouslySelected.asInstanceOf[js.Any])
     if (defaultSelected != null) __obj.updateDynamic("defaultSelected")(defaultSelected.asInstanceOf[js.Any])
-    if (defaultYear != null) __obj.updateDynamic("defaultYear")(defaultYear.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultYear)) __obj.updateDynamic("defaultYear")(defaultYear.get.asInstanceOf[js.Any])
     if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (innerProps != null) __obj.updateDynamic("innerProps")(innerProps.asInstanceOf[js.Any])
-    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
+    if (!js.isUndefined(month)) __obj.updateDynamic("month")(month.get.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
@@ -103,7 +103,7 @@ object Props {
     if (previouslySelected != null) __obj.updateDynamic("previouslySelected")(previouslySelected.asInstanceOf[js.Any])
     if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     if (today != null) __obj.updateDynamic("today")(today.asInstanceOf[js.Any])
-    if (year != null) __obj.updateDynamic("year")(year.asInstanceOf[js.Any])
+    if (!js.isUndefined(year)) __obj.updateDynamic("year")(year.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

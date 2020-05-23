@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object tablesTypesMod {
-  type AddColumns = typings.nodePgMigrate.tablesTypesMod.AddColumnsFn with typings.nodePgMigrate.AnonReverseAddColumnsFn
+  type AddColumns = typings.nodePgMigrate.tablesTypesMod.AddColumnsFn with typings.nodePgMigrate.anon.ReverseAddColumnsFn
   type AddColumnsFn = js.Function3[
     /* tableName */ typings.nodePgMigrate.generalTypesMod.Name, 
     /* newColumns */ typings.nodePgMigrate.tablesTypesMod.ColumnDefinitions, 
@@ -26,14 +26,14 @@ package object tablesTypesMod {
     java.lang.String | js.Array[java.lang.String]
   ]
   type ColumnDefinitions = org.scalablytyped.runtime.StringDictionary[typings.nodePgMigrate.tablesTypesMod.ColumnDefinition | java.lang.String]
-  type CreateConstraint = typings.nodePgMigrate.tablesTypesMod.CreateConstraintFn with typings.nodePgMigrate.AnonReverseCreateConstraintFn
+  type CreateConstraint = typings.nodePgMigrate.tablesTypesMod.CreateConstraintFn with typings.nodePgMigrate.anon.ReverseCreateConstraintFn
   type CreateConstraintFn = js.Function3[
     /* tableName */ typings.nodePgMigrate.generalTypesMod.Name, 
     /* constraintName */ java.lang.String | scala.Null, 
     /* expression */ (java.lang.String | typings.nodePgMigrate.tablesTypesMod.ConstraintOptions) with typings.nodePgMigrate.generalTypesMod.DropOptions, 
     java.lang.String | js.Array[java.lang.String]
   ]
-  type CreateTable = typings.nodePgMigrate.tablesTypesMod.CreateTableFn with typings.nodePgMigrate.AnonReverseCreateTableFn
+  type CreateTable = typings.nodePgMigrate.tablesTypesMod.CreateTableFn with typings.nodePgMigrate.anon.ReverseCreateTableFn
   type CreateTableFn = js.Function3[
     /* tableName */ typings.nodePgMigrate.generalTypesMod.Name, 
     /* columns */ typings.nodePgMigrate.tablesTypesMod.ColumnDefinitions, 
@@ -59,21 +59,21 @@ package object tablesTypesMod {
     /* dropOptions */ js.UndefOr[typings.nodePgMigrate.generalTypesMod.DropOptions], 
     java.lang.String | js.Array[java.lang.String]
   ]
-  type RenameColumn = typings.nodePgMigrate.tablesTypesMod.RenameColumnFn with typings.nodePgMigrate.AnonReverseRenameColumnFn
+  type RenameColumn = typings.nodePgMigrate.tablesTypesMod.RenameColumnFn with typings.nodePgMigrate.anon.ReverseRenameColumnFn
   type RenameColumnFn = js.Function3[
     /* tableName */ typings.nodePgMigrate.generalTypesMod.Name, 
     /* oldColumnName */ java.lang.String, 
     /* newColumnName */ java.lang.String, 
     java.lang.String | js.Array[java.lang.String]
   ]
-  type RenameConstraint = typings.nodePgMigrate.tablesTypesMod.RenameConstraintFn with typings.nodePgMigrate.AnonReverseRenameConstraintFn
+  type RenameConstraint = typings.nodePgMigrate.tablesTypesMod.RenameConstraintFn with typings.nodePgMigrate.anon.ReverseRenameConstraintFn
   type RenameConstraintFn = js.Function3[
     /* tableName */ typings.nodePgMigrate.generalTypesMod.Name, 
     /* oldConstraintName */ java.lang.String, 
     /* newConstraintName */ java.lang.String, 
     java.lang.String | js.Array[java.lang.String]
   ]
-  type RenameTable = typings.nodePgMigrate.tablesTypesMod.RenameTableFn with typings.nodePgMigrate.AnonReverseRenameTableFn
+  type RenameTable = typings.nodePgMigrate.tablesTypesMod.RenameTableFn with typings.nodePgMigrate.anon.ReverseRenameTableFn
   type RenameTableFn = js.Function2[
     /* tableName */ typings.nodePgMigrate.generalTypesMod.Name, 
     /* newtableName */ typings.nodePgMigrate.generalTypesMod.Name, 

@@ -34,14 +34,14 @@ object IIssuingDisputeListOptions {
     created: ICreated = null,
     disputed_transaction: String = null,
     ending_before: String = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     starting_after: String = null
   ): IIssuingDisputeListOptions = {
     val __obj = js.Dynamic.literal()
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (disputed_transaction != null) __obj.updateDynamic("disputed_transaction")(disputed_transaction.asInstanceOf[js.Any])
     if (ending_before != null) __obj.updateDynamic("ending_before")(ending_before.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (starting_after != null) __obj.updateDynamic("starting_after")(starting_after.asInstanceOf[js.Any])
     __obj.asInstanceOf[IIssuingDisputeListOptions]
   }

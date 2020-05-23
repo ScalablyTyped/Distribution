@@ -38,7 +38,7 @@ object UIkitStickyOptions {
     if (`cls-inactive` != null) __obj.updateDynamic("cls-inactive")(`cls-inactive`.asInstanceOf[js.Any])
     if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(`show-on-up`)) __obj.updateDynamic("show-on-up")(`show-on-up`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`show-on-up`)) __obj.updateDynamic("show-on-up")(`show-on-up`.get.asInstanceOf[js.Any])
     if (`target-offset` != null) __obj.updateDynamic("target-offset")(`target-offset`.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (`width-element` != null) __obj.updateDynamic("width-element")(`width-element`.asInstanceOf[js.Any])

@@ -1,5 +1,12 @@
 package typings.knockoutPaging
 
+import typings.knockoutPaging.anon.AddTemplate
+import typings.knockoutPaging.anon.ApplyMemoizedBindingsToNextSibling
+import typings.knockoutPaging.anon.BindingRewriteValidators
+import typings.knockoutPaging.anon.Instance
+import typings.knockoutPaging.anon.Instantiable
+import typings.knockoutPaging.anon.InstantiableInstance
+import typings.knockoutPaging.anon.ReadValue
 import typings.std.Element
 import typings.std.Node
 import scala.scalajs.js
@@ -11,22 +18,22 @@ import scala.scalajs.js.annotation._
 trait KnockoutStatic extends js.Object {
   var bindingHandlers: KnockoutBindingHandlers = js.native
   /////////////////////////////////
-  var bindingProvider: AnonInstantiableInstance = js.native
+  var bindingProvider: InstantiableInstance = js.native
   var components: KnockoutComponents = js.native
   var computedContext: KnockoutComputedContext = js.native
   @JSName("computed")
   var computed_Original: KnockoutComputedStatic = js.native
-  var expressionRewriting: AnonBindingRewriteValidators = js.native
+  var expressionRewriting: BindingRewriteValidators = js.native
   var extenders: KnockoutExtenders = js.native
   //////////////////////////////////
   // jqueryTmplTemplateEngine.js
   //////////////////////////////////
-  var jqueryTmplTemplateEngine: AnonAddTemplate = js.native
+  var jqueryTmplTemplateEngine: AddTemplate = js.native
   var memoization: KnockoutMemoization = js.native
   //////////////////////////////////
   // nativeTemplateEngine.js
   //////////////////////////////////
-  var nativeTemplateEngine: AnonInstance = js.native
+  var nativeTemplateEngine: Instance = js.native
   @JSName("observableArray")
   var observableArray_Original: KnockoutObservableArrayStatic = js.native
   @JSName("observable")
@@ -35,16 +42,16 @@ trait KnockoutStatic extends js.Object {
   /////////////////////////////////
   // selectExtensions.js
   /////////////////////////////////
-  var selectExtensions: AnonReadValue = js.native
+  var selectExtensions: ReadValue = js.native
   var subscribable: KnockoutSubscribableStatic = js.native
   //////////////////////////////////
   // templateEngine.js
   //////////////////////////////////
-  var templateEngine: AnonInstantiable = js.native
+  var templateEngine: Instantiable = js.native
   //////////////////////////////////
   // templateRewriting.js
   //////////////////////////////////
-  var templateRewriting: AnonApplyMemoizedBindingsToNextSibling = js.native
+  var templateRewriting: ApplyMemoizedBindingsToNextSibling = js.native
   //////////////////////////////////
   // templateSources.js
   //////////////////////////////////

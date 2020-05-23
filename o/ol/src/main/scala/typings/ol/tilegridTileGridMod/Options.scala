@@ -23,7 +23,7 @@ object Options {
   def apply(
     resolutions: js.Array[Double],
     extent: Extent = null,
-    minZoom: Int | Double = null,
+    minZoom: js.UndefOr[Double] = js.undefined,
     origin: Coordinate = null,
     origins: js.Array[Coordinate] = null,
     sizes: js.Array[Size] = null,
@@ -32,7 +32,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal(resolutions = resolutions.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     if (origins != null) __obj.updateDynamic("origins")(origins.asInstanceOf[js.Any])
     if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])

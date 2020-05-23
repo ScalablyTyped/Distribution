@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Charts
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object Orientation extends js.Object {
   
   @js.native
   sealed trait VERTICAL extends Orientation
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Orientation with Double] = js.native
-  /* 0 */ @js.native
-  object HORIZONTAL extends TopLevel[HORIZONTAL with Double]
-  
-  /* 1 */ @js.native
-  object VERTICAL extends TopLevel[VERTICAL with Double]
   
 }
 

@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 
 trait INames extends ISegmenter {
   /** [Method] Add step units to the value
-  		* @param value Object
-  		* @param step Object
-  		* @param unit Object
-  		*/
+    * @param value Object
+    * @param step Object
+    * @param unit Object
+    */
   @JSName("add")
   var add_INames: js.UndefOr[
     js.Function3[
@@ -23,11 +23,11 @@ trait INames extends ISegmenter {
     ]
   ] = js.undefined
   /** [Method] Align value with step of units
-  		* @param value Object
-  		* @param step Object
-  		* @param unit Object
-  		* @returns * Aligned value.
-  		*/
+    * @param value Object
+    * @param step Object
+    * @param unit Object
+    * @returns * Aligned value.
+    */
   @JSName("align")
   var align_INames: js.UndefOr[
     js.Function3[
@@ -38,12 +38,12 @@ trait INames extends ISegmenter {
     ]
   ] = js.undefined
   /** [Method] Given a start point and estimated step size of a range determine the preferred step size
-  		* @param min Object
-  		* @param estStepSize Object
-  		* @param minIdx Object
-  		* @param data Object
-  		* @returns Object Return the step size by an object of step x unit.
-  		*/
+    * @param min Object
+    * @param estStepSize Object
+    * @param minIdx Object
+    * @param data Object
+    * @returns Object Return the step size by an object of step x unit.
+    */
   @JSName("preferredStep")
   var preferredStep_INames: js.UndefOr[
     js.Function4[
@@ -110,7 +110,7 @@ object INames {
     if (renderer != null) __obj.updateDynamic("renderer")(js.Any.fromFunction2(renderer))
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setAxis != null) __obj.updateDynamic("setAxis")(js.Any.fromFunction1(setAxis))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[INames]

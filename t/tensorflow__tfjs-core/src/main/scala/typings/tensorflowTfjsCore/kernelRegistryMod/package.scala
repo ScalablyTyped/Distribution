@@ -20,7 +20,7 @@ package object kernelRegistryMod {
   ]
   type KernelDisposeFunc = typings.tensorflowTfjsCore.kernelRegistryMod.KernelSetupFunc
   type KernelFunc = js.Function1[
-    /* params */ typings.tensorflowTfjsCore.AnonAttrs, 
+    /* params */ typings.tensorflowTfjsCore.anon.Attrs, 
     typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo | js.Array[typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo]
   ]
   type KernelSetupFunc = js.Function1[/* backend */ js.Object, scala.Unit]

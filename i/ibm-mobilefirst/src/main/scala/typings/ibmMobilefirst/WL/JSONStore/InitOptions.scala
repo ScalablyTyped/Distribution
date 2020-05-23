@@ -22,9 +22,9 @@ object InitOptions {
     username: String = null
   ): InitOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(analytics)) __obj.updateDynamic("analytics")(analytics.asInstanceOf[js.Any])
-    if (!js.isUndefined(clear)) __obj.updateDynamic("clear")(clear.asInstanceOf[js.Any])
-    if (!js.isUndefined(localKeyGen)) __obj.updateDynamic("localKeyGen")(localKeyGen.asInstanceOf[js.Any])
+    if (!js.isUndefined(analytics)) __obj.updateDynamic("analytics")(analytics.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clear)) __obj.updateDynamic("clear")(clear.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(localKeyGen)) __obj.updateDynamic("localKeyGen")(localKeyGen.get.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitOptions]

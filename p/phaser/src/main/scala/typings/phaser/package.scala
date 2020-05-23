@@ -10,13 +10,13 @@ package object phaser {
     /* object2 */ typings.phaser.Phaser.GameObjects.GameObject, 
     scala.Unit
   ]
-  type CenterFunction = js.Function1[/* triangle */ typings.phaser.Phaser.Geom.Triangle, scala.Unit]
-  type CollideCallback = js.Function3[
-    /* body */ typings.phaser.Phaser.Physics.Impact.Body, 
-    /* other */ typings.phaser.Phaser.Physics.Impact.Body, 
-    /* axis */ java.lang.String, 
+  type CameraRotateCallback = js.Function3[
+    /* camera */ typings.phaser.Phaser.Cameras.Scene2D.Camera, 
+    /* progress */ scala.Double, 
+    /* angle */ scala.Double, 
     scala.Unit
   ]
+  type CenterFunction = js.Function1[/* triangle */ typings.phaser.Phaser.Geom.Triangle, scala.Unit]
   type ContentLoadedCallback = js.Function0[scala.Unit]
   /**
     * A filter that may be applied to a Context Choose operation.

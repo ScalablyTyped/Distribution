@@ -41,14 +41,14 @@ object MockResponseObject {
     body: String | js.Object = null,
     headers: StringDictionary[String] = null,
     redirectUrl: String = null,
-    status: Int | Double = null,
+    status: js.UndefOr[Double] = js.undefined,
     throws: Error = null
   ): MockResponseObject = {
     val __obj = js.Dynamic.literal()
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
     if (throws != null) __obj.updateDynamic("throws")(throws.asInstanceOf[js.Any])
     __obj.asInstanceOf[MockResponseObject]
   }

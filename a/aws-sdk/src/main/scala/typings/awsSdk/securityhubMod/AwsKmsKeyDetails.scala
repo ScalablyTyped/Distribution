@@ -36,7 +36,7 @@ object AwsKmsKeyDetails {
   @scala.inline
   def apply(
     AWSAccountId: NonEmptyString = null,
-    CreationDate: Int | scala.Double = null,
+    CreationDate: js.UndefOr[Double] = js.undefined,
     KeyId: NonEmptyString = null,
     KeyManager: NonEmptyString = null,
     KeyState: NonEmptyString = null,
@@ -44,7 +44,7 @@ object AwsKmsKeyDetails {
   ): AwsKmsKeyDetails = {
     val __obj = js.Dynamic.literal()
     if (AWSAccountId != null) __obj.updateDynamic("AWSAccountId")(AWSAccountId.asInstanceOf[js.Any])
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(CreationDate)) __obj.updateDynamic("CreationDate")(CreationDate.get.asInstanceOf[js.Any])
     if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId.asInstanceOf[js.Any])
     if (KeyManager != null) __obj.updateDynamic("KeyManager")(KeyManager.asInstanceOf[js.Any])
     if (KeyState != null) __obj.updateDynamic("KeyState")(KeyState.asInstanceOf[js.Any])

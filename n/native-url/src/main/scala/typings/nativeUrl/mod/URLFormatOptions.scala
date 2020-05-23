@@ -20,10 +20,10 @@ object URLFormatOptions {
     unicode: js.UndefOr[Boolean] = js.undefined
   ): URLFormatOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(auth)) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (!js.isUndefined(fragment)) __obj.updateDynamic("fragment")(fragment.asInstanceOf[js.Any])
-    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
-    if (!js.isUndefined(unicode)) __obj.updateDynamic("unicode")(unicode.asInstanceOf[js.Any])
+    if (!js.isUndefined(auth)) __obj.updateDynamic("auth")(auth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fragment)) __obj.updateDynamic("fragment")(fragment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unicode)) __obj.updateDynamic("unicode")(unicode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[URLFormatOptions]
   }
 }

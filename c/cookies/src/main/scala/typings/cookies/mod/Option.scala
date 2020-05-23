@@ -15,7 +15,7 @@ object Option {
   def apply(keys: js.Array[String] | Keygrip = null, secure: js.UndefOr[Boolean] = js.undefined): Option = {
     val __obj = js.Dynamic.literal()
     if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Option]
   }
 }

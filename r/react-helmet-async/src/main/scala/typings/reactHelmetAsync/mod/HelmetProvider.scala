@@ -14,6 +14,6 @@ class HelmetProvider ()
 @JSImport("react-helmet-async", "HelmetProvider")
 @js.native
 object HelmetProvider extends js.Object {
-  var canUseDOM: String | Double = js.native
+  var canUseDOM: Boolean = js.native
 }
 

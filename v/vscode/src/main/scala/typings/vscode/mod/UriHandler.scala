@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait UriHandler extends js.Object {
   /**
-  		 * Handle the provided system-wide [uri](#Uri).
-  		 *
-  		 * @see [window.registerUriHandler](#window.registerUriHandler).
-  		 */
+    * Handle the provided system-wide [uri](#Uri).
+    *
+    * @see [window.registerUriHandler](#window.registerUriHandler).
+    */
   def handleUri(uri: Uri): ProviderResult[Unit]
 }
 

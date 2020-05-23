@@ -41,18 +41,18 @@ object GetLogEventsRequest {
   def apply(
     logGroupName: LogGroupName,
     logStreamName: LogStreamName,
-    endTime: Int | Double = null,
-    limit: Int | Double = null,
+    endTime: js.UndefOr[Timestamp] = js.undefined,
+    limit: js.UndefOr[EventsLimit] = js.undefined,
     nextToken: NextToken = null,
-    startFromHead: js.UndefOr[Boolean] = js.undefined,
-    startTime: Int | Double = null
+    startFromHead: js.UndefOr[StartFromHead] = js.undefined,
+    startTime: js.UndefOr[Timestamp] = js.undefined
   ): GetLogEventsRequest = {
     val __obj = js.Dynamic.literal(logGroupName = logGroupName.asInstanceOf[js.Any], logStreamName = logStreamName.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(endTime)) __obj.updateDynamic("endTime")(endTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(startFromHead)) __obj.updateDynamic("startFromHead")(startFromHead.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(startFromHead)) __obj.updateDynamic("startFromHead")(startFromHead.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startTime)) __obj.updateDynamic("startTime")(startTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLogEventsRequest]
   }
 }

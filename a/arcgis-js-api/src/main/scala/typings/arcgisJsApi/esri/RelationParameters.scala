@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`interior-intersection`
 import typings.arcgisJsApi.arcgisJsApiStrings.`line-coincidence`
 import typings.arcgisJsApi.arcgisJsApiStrings.`line-touch`
@@ -61,8 +60,4 @@ trait RelationParameters
     */
   var relationParameter: String = js.native
 }
-
-@JSGlobal("__esri.RelationParameters")
-@js.native
-object RelationParameters extends TopLevel[RelationParametersConstructor]
 

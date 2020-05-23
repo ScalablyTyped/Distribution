@@ -12,11 +12,15 @@ trait DeviceMotionEventRotationRateInit extends js.Object {
 
 object DeviceMotionEventRotationRateInit {
   @scala.inline
-  def apply(alpha: Int | Double = null, beta: Int | Double = null, gamma: Int | Double = null): DeviceMotionEventRotationRateInit = {
+  def apply(
+    alpha: js.UndefOr[Null | Double] = js.undefined,
+    beta: js.UndefOr[Null | Double] = js.undefined,
+    gamma: js.UndefOr[Null | Double] = js.undefined
+  ): DeviceMotionEventRotationRateInit = {
     val __obj = js.Dynamic.literal()
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    if (beta != null) __obj.updateDynamic("beta")(beta.asInstanceOf[js.Any])
-    if (gamma != null) __obj.updateDynamic("gamma")(gamma.asInstanceOf[js.Any])
+    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(beta)) __obj.updateDynamic("beta")(beta.asInstanceOf[js.Any])
+    if (!js.isUndefined(gamma)) __obj.updateDynamic("gamma")(gamma.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceMotionEventRotationRateInit]
   }
 }

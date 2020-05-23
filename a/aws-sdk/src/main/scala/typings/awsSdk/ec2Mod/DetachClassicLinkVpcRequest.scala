@@ -22,9 +22,9 @@ trait DetachClassicLinkVpcRequest extends js.Object {
 
 object DetachClassicLinkVpcRequest {
   @scala.inline
-  def apply(InstanceId: InstanceId, VpcId: VpcId, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DetachClassicLinkVpcRequest = {
+  def apply(InstanceId: InstanceId, VpcId: VpcId, DryRun: js.UndefOr[Boolean] = js.undefined): DetachClassicLinkVpcRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any], VpcId = VpcId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetachClassicLinkVpcRequest]
   }
 }

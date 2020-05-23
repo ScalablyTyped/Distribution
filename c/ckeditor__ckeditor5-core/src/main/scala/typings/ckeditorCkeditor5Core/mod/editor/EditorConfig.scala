@@ -1,6 +1,6 @@
 package typings.ckeditorCkeditor5Core.mod.editor
 
-import typings.ckeditorCkeditor5Core.AnonItems
+import typings.ckeditorCkeditor5Core.anon.Items
 import typings.ckeditorCkeditor5Core.mod.AlignmentConfig
 import typings.ckeditorCkeditor5Core.mod.AutosaveConfig
 import typings.ckeditorCkeditor5Core.mod.CKFinderAdapterConfig
@@ -34,7 +34,7 @@ trait EditorConfig extends js.Object {
   var mediaEmbed: MediaEmbedConfig
   var plugins: js.Array[String | Plugin[Unit]]
   var removePlugins: js.Array[String]
-  var toolbar: js.Array[String] | AnonItems
+  var toolbar: js.Array[String] | Items
   var typing: TypingConfig
 }
 
@@ -56,7 +56,7 @@ object EditorConfig {
     mediaEmbed: MediaEmbedConfig,
     plugins: js.Array[String | Plugin[Unit]],
     removePlugins: js.Array[String],
-    toolbar: js.Array[String] | AnonItems,
+    toolbar: js.Array[String] | Items,
     typing: TypingConfig
   ): EditorConfig = {
     val __obj = js.Dynamic.literal(alignment = alignment.asInstanceOf[js.Any], autosave = autosave.asInstanceOf[js.Any], balloonToolbar = balloonToolbar.asInstanceOf[js.Any], blockToolbar = blockToolbar.asInstanceOf[js.Any], ckfinder = ckfinder.asInstanceOf[js.Any], cloudServices = cloudServices.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], heading = heading.asInstanceOf[js.Any], highlight = highlight.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], mediaEmbed = mediaEmbed.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], removePlugins = removePlugins.asInstanceOf[js.Any], toolbar = toolbar.asInstanceOf[js.Any], typing = typing.asInstanceOf[js.Any])

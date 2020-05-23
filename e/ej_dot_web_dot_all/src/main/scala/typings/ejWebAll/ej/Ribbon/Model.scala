@@ -160,7 +160,7 @@ object Model {
     load: /* e */ LoadEventArgs => Unit = null,
     locale: String = null,
     qatMenuItemClick: /* e */ QatMenuItemClickEventArgs => Unit = null,
-    selectedItemIndex: Int | Double = null,
+    selectedItemIndex: js.UndefOr[Double] = js.undefined,
     showQAT: js.UndefOr[Boolean] = js.undefined,
     tabAdd: /* e */ TabAddEventArgs => Unit = null,
     tabClick: /* e */ TabClickEventArgs => Unit = null,
@@ -172,33 +172,33 @@ object Model {
     width: String | Double = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowResizing)) __obj.updateDynamic("allowResizing")(allowResizing.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowResizing)) __obj.updateDynamic("allowResizing")(allowResizing.get.asInstanceOf[js.Any])
     if (applicationTab != null) __obj.updateDynamic("applicationTab")(applicationTab.asInstanceOf[js.Any])
     if (backstageItemClick != null) __obj.updateDynamic("backstageItemClick")(js.Any.fromFunction1(backstageItemClick))
     if (beforeTabRemove != null) __obj.updateDynamic("beforeTabRemove")(js.Any.fromFunction1(beforeTabRemove))
     if (buttonDefaults != null) __obj.updateDynamic("buttonDefaults")(buttonDefaults.asInstanceOf[js.Any])
     if (collapse != null) __obj.updateDynamic("collapse")(js.Any.fromFunction1(collapse))
     if (collapsePinSettings != null) __obj.updateDynamic("collapsePinSettings")(collapsePinSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible.get.asInstanceOf[js.Any])
     if (contextualTabs != null) __obj.updateDynamic("contextualTabs")(contextualTabs.asInstanceOf[js.Any])
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (disabledItemIndex != null) __obj.updateDynamic("disabledItemIndex")(disabledItemIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableOnDemand)) __obj.updateDynamic("enableOnDemand")(enableOnDemand.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableOnDemand)) __obj.updateDynamic("enableOnDemand")(enableOnDemand.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.get.asInstanceOf[js.Any])
     if (enabledItemIndex != null) __obj.updateDynamic("enabledItemIndex")(enabledItemIndex.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(js.Any.fromFunction1(expand))
     if (expandPinSettings != null) __obj.updateDynamic("expandPinSettings")(expandPinSettings.asInstanceOf[js.Any])
     if (galleryItemClick != null) __obj.updateDynamic("galleryItemClick")(js.Any.fromFunction1(galleryItemClick))
     if (groupClick != null) __obj.updateDynamic("groupClick")(js.Any.fromFunction1(groupClick))
     if (groupExpand != null) __obj.updateDynamic("groupExpand")(js.Any.fromFunction1(groupExpand))
-    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.get.asInstanceOf[js.Any])
     if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (qatMenuItemClick != null) __obj.updateDynamic("qatMenuItemClick")(js.Any.fromFunction1(qatMenuItemClick))
-    if (selectedItemIndex != null) __obj.updateDynamic("selectedItemIndex")(selectedItemIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(showQAT)) __obj.updateDynamic("showQAT")(showQAT.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedItemIndex)) __obj.updateDynamic("selectedItemIndex")(selectedItemIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showQAT)) __obj.updateDynamic("showQAT")(showQAT.get.asInstanceOf[js.Any])
     if (tabAdd != null) __obj.updateDynamic("tabAdd")(js.Any.fromFunction1(tabAdd))
     if (tabClick != null) __obj.updateDynamic("tabClick")(js.Any.fromFunction1(tabClick))
     if (tabCreate != null) __obj.updateDynamic("tabCreate")(js.Any.fromFunction1(tabCreate))

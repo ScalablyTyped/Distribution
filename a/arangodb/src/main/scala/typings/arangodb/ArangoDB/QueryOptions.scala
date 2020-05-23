@@ -29,30 +29,30 @@ object QueryOptions {
     count: js.UndefOr[Boolean] = js.undefined,
     failOnWarning: js.UndefOr[Boolean] = js.undefined,
     fullCount: js.UndefOr[Boolean] = js.undefined,
-    intermediateCommitCount: Int | Double = null,
-    intermediateCommitSize: Int | Double = null,
-    maxNumberOfPlans: Int | Double = null,
-    maxTransactionsSize: Int | Double = null,
-    maxWarningCount: Int | Double = null,
-    memoryLimit: Int | Double = null,
+    intermediateCommitCount: js.UndefOr[Double] = js.undefined,
+    intermediateCommitSize: js.UndefOr[Double] = js.undefined,
+    maxNumberOfPlans: js.UndefOr[Double] = js.undefined,
+    maxTransactionsSize: js.UndefOr[Double] = js.undefined,
+    maxWarningCount: js.UndefOr[Double] = js.undefined,
+    memoryLimit: js.UndefOr[Double] = js.undefined,
     profile: js.UndefOr[Boolean] = js.undefined,
     skipInaccessibleCollections: js.UndefOr[Boolean] = js.undefined,
     stream: js.UndefOr[Boolean] = js.undefined
   ): QueryOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (!js.isUndefined(failOnWarning)) __obj.updateDynamic("failOnWarning")(failOnWarning.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullCount)) __obj.updateDynamic("fullCount")(fullCount.asInstanceOf[js.Any])
-    if (intermediateCommitCount != null) __obj.updateDynamic("intermediateCommitCount")(intermediateCommitCount.asInstanceOf[js.Any])
-    if (intermediateCommitSize != null) __obj.updateDynamic("intermediateCommitSize")(intermediateCommitSize.asInstanceOf[js.Any])
-    if (maxNumberOfPlans != null) __obj.updateDynamic("maxNumberOfPlans")(maxNumberOfPlans.asInstanceOf[js.Any])
-    if (maxTransactionsSize != null) __obj.updateDynamic("maxTransactionsSize")(maxTransactionsSize.asInstanceOf[js.Any])
-    if (maxWarningCount != null) __obj.updateDynamic("maxWarningCount")(maxWarningCount.asInstanceOf[js.Any])
-    if (memoryLimit != null) __obj.updateDynamic("memoryLimit")(memoryLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(profile)) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipInaccessibleCollections)) __obj.updateDynamic("skipInaccessibleCollections")(skipInaccessibleCollections.asInstanceOf[js.Any])
-    if (!js.isUndefined(stream)) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(failOnWarning)) __obj.updateDynamic("failOnWarning")(failOnWarning.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullCount)) __obj.updateDynamic("fullCount")(fullCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(intermediateCommitCount)) __obj.updateDynamic("intermediateCommitCount")(intermediateCommitCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(intermediateCommitSize)) __obj.updateDynamic("intermediateCommitSize")(intermediateCommitSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxNumberOfPlans)) __obj.updateDynamic("maxNumberOfPlans")(maxNumberOfPlans.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTransactionsSize)) __obj.updateDynamic("maxTransactionsSize")(maxTransactionsSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWarningCount)) __obj.updateDynamic("maxWarningCount")(maxWarningCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(memoryLimit)) __obj.updateDynamic("memoryLimit")(memoryLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(profile)) __obj.updateDynamic("profile")(profile.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipInaccessibleCollections)) __obj.updateDynamic("skipInaccessibleCollections")(skipInaccessibleCollections.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stream)) __obj.updateDynamic("stream")(stream.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOptions]
   }
 }

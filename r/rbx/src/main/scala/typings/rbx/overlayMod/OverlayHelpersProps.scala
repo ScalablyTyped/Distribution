@@ -12,7 +12,7 @@ object OverlayHelpersProps {
   @scala.inline
   def apply(overlay: js.UndefOr[Boolean] = js.undefined): OverlayHelpersProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(overlay)) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlay)) __obj.updateDynamic("overlay")(overlay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverlayHelpersProps]
   }
 }

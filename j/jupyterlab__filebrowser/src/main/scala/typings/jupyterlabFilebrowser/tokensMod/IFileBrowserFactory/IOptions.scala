@@ -58,16 +58,16 @@ object IOptions {
   def apply(
     auto: js.UndefOr[Boolean] = js.undefined,
     driveName: String = null,
-    refreshInterval: Int | Double = null,
+    refreshInterval: js.UndefOr[Double] = js.undefined,
     restore: js.UndefOr[Boolean] = js.undefined,
-    state: IStateDB[ReadonlyPartialJSONValue] = null
+    state: js.UndefOr[Null | IStateDB[ReadonlyPartialJSONValue]] = js.undefined
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(auto)) __obj.updateDynamic("auto")(auto.asInstanceOf[js.Any])
+    if (!js.isUndefined(auto)) __obj.updateDynamic("auto")(auto.get.asInstanceOf[js.Any])
     if (driveName != null) __obj.updateDynamic("driveName")(driveName.asInstanceOf[js.Any])
-    if (refreshInterval != null) __obj.updateDynamic("refreshInterval")(refreshInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(restore)) __obj.updateDynamic("restore")(restore.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshInterval)) __obj.updateDynamic("refreshInterval")(refreshInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(restore)) __obj.updateDynamic("restore")(restore.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(state)) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

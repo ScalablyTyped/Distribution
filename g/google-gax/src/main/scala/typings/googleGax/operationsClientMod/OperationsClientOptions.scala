@@ -22,7 +22,7 @@ object OperationsClientOptions {
   ): OperationsClientOptions = {
     val __obj = js.Dynamic.literal()
     if (clientConfig != null) __obj.updateDynamic("clientConfig")(clientConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(fallback)) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
+    if (!js.isUndefined(fallback)) __obj.updateDynamic("fallback")(fallback.get.asInstanceOf[js.Any])
     if (libName != null) __obj.updateDynamic("libName")(libName.asInstanceOf[js.Any])
     if (libVersion != null) __obj.updateDynamic("libVersion")(libVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationsClientOptions]

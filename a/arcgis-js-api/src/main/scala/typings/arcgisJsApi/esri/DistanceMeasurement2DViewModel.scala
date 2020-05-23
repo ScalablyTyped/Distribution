@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`nautical-miles`
 import typings.arcgisJsApi.arcgisJsApiStrings.`us-feet`
 import typings.arcgisJsApi.arcgisJsApiStrings.disabled
@@ -94,7 +93,23 @@ trait DistanceMeasurement2DViewModel extends js.Object {
   def newMeasurement(): Unit
 }
 
-@JSGlobal("__esri.DistanceMeasurement2DViewModel")
-@js.native
-object DistanceMeasurement2DViewModel extends TopLevel[DistanceMeasurement2DViewModelConstructor]
+object DistanceMeasurement2DViewModel {
+  @scala.inline
+  def apply(
+    clearMeasurement: () => Unit,
+    geodesicDistanceThreshold: Double,
+    measurement: DistanceMeasurement2DViewModelMeasurement,
+    measurementLabel: String,
+    newMeasurement: () => Unit,
+    state: disabled | ready | measuring | measured,
+    unit: metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_,
+    unitOptions: js.Array[
+      metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
+    ],
+    view: MapView
+  ): DistanceMeasurement2DViewModel = {
+    val __obj = js.Dynamic.literal(clearMeasurement = js.Any.fromFunction0(clearMeasurement), geodesicDistanceThreshold = geodesicDistanceThreshold.asInstanceOf[js.Any], measurement = measurement.asInstanceOf[js.Any], measurementLabel = measurementLabel.asInstanceOf[js.Any], newMeasurement = js.Any.fromFunction0(newMeasurement), state = state.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any], unitOptions = unitOptions.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DistanceMeasurement2DViewModel]
+  }
+}
 

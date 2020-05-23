@@ -1,5 +1,6 @@
 package typings.jestEach
 
+import typings.jestEach.anon.Arguments
 import typings.jestTypes.globalMod.DoneFn
 import typings.jestTypes.globalMod.EachTable
 import typings.jestTypes.globalMod.EachTestFn
@@ -21,7 +22,7 @@ object bindMod extends js.Object {
     /* taggedTemplateData */ TemplateData, 
     js.Function3[/* title */ String, /* test */ EachTestFn, /* timeout */ js.UndefOr[Double], Unit]
   ] = js.native
-  type EachTests = js.Array[AnonArguments]
+  type EachTests = js.Array[Arguments]
   type GlobalCallback = js.Function3[/* testName */ String, /* fn */ TestFn, /* timeout */ js.UndefOr[Double], Unit]
   type TestFn = js.Function1[/* done */ js.UndefOr[DoneFn], js.UndefOr[js.Promise[js.Any] | Unit]]
 }

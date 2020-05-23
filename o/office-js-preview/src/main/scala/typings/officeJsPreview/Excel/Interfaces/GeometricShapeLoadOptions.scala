@@ -18,7 +18,7 @@ trait GeometricShapeLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns the shape identifier. Read-only.
+    * Returns the shape identifier.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -40,8 +40,8 @@ object GeometricShapeLoadOptions {
     shape: ShapeLoadOptions = null
   ): GeometricShapeLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeometricShapeLoadOptions]
   }

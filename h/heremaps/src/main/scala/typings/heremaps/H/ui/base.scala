@@ -1,7 +1,7 @@
 package typings.heremaps.H.ui
 
 import typings.heremaps.H.util.EventTarget
-import typings.std.Document_
+import typings.std.Document
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,16 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object base extends js.Object {
   @js.native
-  /**
-    * Constructor
-    * @param opt_elementType {string=} - the type of HTML element this UI element renders as, default is 'div'
-    * @param opt_className {string=} - an optional class name to be used on this element
-    * @param opt_children {Array<H.ui.base.Element>=} - optional child elements to be added to this container
-    */
-  class Container () extends EventTarget {
-    def this(opt_elementType: String) = this()
-    def this(opt_elementType: String, opt_className: String) = this()
-    def this(opt_elementType: String, opt_className: String, opt_children: js.Array[Element]) = this()
+  trait Container extends EventTarget {
     /**
       * Adds a child element to be rendered within the container element.
       * @param child {H.ui.base.Element} - the child element to be added
@@ -79,7 +70,7 @@ object base extends js.Object {
       * @param element {Element} - this UI element's HTML representation
       * @param doc {Document} - the HTML document into which the element is currently being rendered
       */
-    def renderInternal(element: ES6Element, doc: Document_): Unit = js.native
+    def renderInternal(element: ES6Element, doc: Document): Unit = js.native
     /**
       * This method stores arbitrary data with this UI element.
       * @param data {*} - the data to be stored
@@ -101,14 +92,7 @@ object base extends js.Object {
   }
   
   @js.native
-  /**
-    * Constructor
-    * @param opt_elementType {string=} - the type of HTML element this UI element renders as, default is 'div'
-    * @param opt_className {string=} - an optional class name to be used on this element
-    */
-  class Element () extends EventTarget {
-    def this(opt_elementType: String) = this()
-    def this(opt_elementType: String, opt_className: String) = this()
+  trait Element extends EventTarget {
     /**
       * This method adds a CSS class to this UI element (if it is not already present).
       * @param className {string} - the CSS class name to add
@@ -148,7 +132,7 @@ object base extends js.Object {
       * @param element {Element} - this UI element's HTML representation
       * @param doc {Document} - the HTML document into which the element is currently being rendered
       */
-    def renderInternal(element: ES6Element, doc: Document_): Unit = js.native
+    def renderInternal(element: ES6Element, doc: Document): Unit = js.native
     /**
       * This method stores arbitrary data with this UI element.
       * @param data {*} - the data to be stored

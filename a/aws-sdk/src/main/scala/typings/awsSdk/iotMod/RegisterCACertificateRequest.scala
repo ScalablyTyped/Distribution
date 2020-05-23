@@ -23,6 +23,10 @@ trait RegisterCACertificateRequest extends js.Object {
     */
   var setAsActive: js.UndefOr[SetAsActive] = js.native
   /**
+    * Metadata which can be used to manage the CA certificate.  For URI Request parameters use format: ...key1=value1&amp;key2=value2... For the CLI command-line parameter use format: &amp;&amp;tags "key1=value1&amp;key2=value2..." For the cli-input-json file use format: "tags": "key1=value1&amp;key2=value2..." 
+    */
+  var tags: js.UndefOr[TagList] = js.native
+  /**
     * The private key verification certificate.
     */
   var verificationCertificate: CertificatePem = js.native
@@ -33,14 +37,16 @@ object RegisterCACertificateRequest {
   def apply(
     caCertificate: CertificatePem,
     verificationCertificate: CertificatePem,
-    allowAutoRegistration: js.UndefOr[scala.Boolean] = js.undefined,
+    allowAutoRegistration: js.UndefOr[AllowAutoRegistration] = js.undefined,
     registrationConfig: RegistrationConfig = null,
-    setAsActive: js.UndefOr[scala.Boolean] = js.undefined
+    setAsActive: js.UndefOr[SetAsActive] = js.undefined,
+    tags: TagList = null
   ): RegisterCACertificateRequest = {
     val __obj = js.Dynamic.literal(caCertificate = caCertificate.asInstanceOf[js.Any], verificationCertificate = verificationCertificate.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowAutoRegistration)) __obj.updateDynamic("allowAutoRegistration")(allowAutoRegistration.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowAutoRegistration)) __obj.updateDynamic("allowAutoRegistration")(allowAutoRegistration.get.asInstanceOf[js.Any])
     if (registrationConfig != null) __obj.updateDynamic("registrationConfig")(registrationConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(setAsActive)) __obj.updateDynamic("setAsActive")(setAsActive.asInstanceOf[js.Any])
+    if (!js.isUndefined(setAsActive)) __obj.updateDynamic("setAsActive")(setAsActive.get.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterCACertificateRequest]
   }
 }

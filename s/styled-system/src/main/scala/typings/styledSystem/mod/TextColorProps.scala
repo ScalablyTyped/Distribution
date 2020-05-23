@@ -19,9 +19,9 @@ trait TextColorProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extend
 
 object TextColorProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](color: ResponsiveValue[TVal, ThemeType] = null): TextColorProps[ThemeType, TVal] = {
+  def apply[ThemeType, TVal](color: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): TextColorProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextColorProps[ThemeType, TVal]]
   }
 }

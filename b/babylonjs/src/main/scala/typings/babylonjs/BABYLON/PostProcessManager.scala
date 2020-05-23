@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.PostProcessManager")
 @js.native
-class PostProcessManager protected () extends js.Object {
-  /**
-    * Creates a new instance PostProcess
-    * @param scene The scene that the post process is associated with.
-    */
-  def this(scene: Scene) = this()
+trait PostProcessManager extends js.Object {
   var _buildIndexBuffer: js.Any = js.native
   var _indexBuffer: js.Any = js.native
   var _prepareBuffers: js.Any = js.native

@@ -24,75 +24,74 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * A button widget that has four states: normal, disabled, focused and selected.
-		 */
-@JSGlobal("Titanium.UI.Button")
+  * A button widget that has four states: normal, disabled, focused and selected.
+  */
 @js.native
-class Button () extends View {
+trait Button extends View {
   /**
-  			 * Specify an attributed string for the label.
-  			 */
+    * Specify an attributed string for the label.
+    */
   var attributedString: AttributedString = js.native
   /**
-  			 * Default button text color, as a color name or hex triplet.
-  			 */
+    * Default button text color, as a color name or hex triplet.
+    */
   var color: String = js.native
   /**
-  			 * Text color of the button in its disabled state, as a color name or hex triplet.
-  			 */
+    * Text color of the button in its disabled state, as a color name or hex triplet.
+    */
   var disabledColor: String = js.native
   /**
-  			 * Set to `true` to enable the button, `false` to disable the button.
-  			 */
+    * Set to `true` to enable the button, `false` to disable the button.
+    */
   var enabled: Boolean = js.native
   /**
-  			 * Font to use for the button text.
-  			 */
+    * Font to use for the button text.
+    */
   var font: Font = js.native
   /**
-  			 * Image to display on the button, specified as a local path, URL or a `Blob`.
-  			 */
+    * Image to display on the button, specified as a local path, URL or a `Blob`.
+    */
   var image: String | Blob = js.native
   /**
-  			 * Button text color used to indicate the selected state, as a color name or hex triplet.
-  			 */
+    * Button text color used to indicate the selected state, as a color name or hex triplet.
+    */
   var selectedColor: String = js.native
   /**
-  			 * Shadow color of the [title](Titanium.UI.Button.title), as a color name or hex triplet.
-  			 */
+    * Shadow color of the [title](Titanium.UI.Button.title), as a color name or hex triplet.
+    */
   var shadowColor: String = js.native
   /**
-  			 * Shadow offset of the [title](Titanium.UI.Button.title), as a dictionary with the properties `x` and `y`.
-  			 */
+    * Shadow offset of the [title](Titanium.UI.Button.title), as a dictionary with the properties `x` and `y`.
+    */
   var shadowOffset: Point = js.native
   /**
-  			 * Shadow radius of the [title](Titanium.UI.Button.title).
-  			 */
+    * Shadow radius of the [title](Titanium.UI.Button.title).
+    */
   var shadowRadius: Double = js.native
   /**
-  			 * Style constant for the button, as defined in <Titanium.UI.iOS.SystemButtonStyle>.
-  			 */
+    * Style constant for the button, as defined in <Titanium.UI.iOS.SystemButtonStyle>.
+    */
   var style: Double = js.native
   /**
-  			 * Specifies an iOS system button appearance, as defined in <Titanium.UI.iOS.SystemButton>.
-  			 */
+    * Specifies an iOS system button appearance, as defined in <Titanium.UI.iOS.SystemButton>.
+    */
   var systemButton: Double = js.native
   /**
-  			 * Text alignment, specified using one of the <Titanium.UI> text alignment constants.
-  			 */
+    * Text alignment, specified using one of the <Titanium.UI> text alignment constants.
+    */
   var textAlign: String | Double = js.native
   /**
-  			 * Button title.
-  			 */
+    * Button title.
+    */
   var title: String = js.native
   /**
-  			 * Key identifying a string from the locale file to use for the button title.
-  			 */
+    * Key identifying a string from the locale file to use for the button title.
+    */
   var titleid: String = js.native
   /**
-  			 * Vertical alignment for the text field, specified using one of the
-  			 * vertical alignment constants from <Titanium.UI>.
-  			 */
+    * Vertical alignment for the text field, specified using one of the
+    * vertical alignment constants from <Titanium.UI>.
+    */
   var verticalAlign: Double | String = js.native
   @JSName("fireEvent")
   def fireEvent_click(name: click, event: ButtonClickEvent): Unit = js.native
@@ -127,167 +126,167 @@ class Button () extends View {
   @JSName("fireEvent")
   def fireEvent_twofingertap(name: twofingertap, event: ButtonTwofingertapEvent): Unit = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Button.attributedString> property.
-  			 * @deprecated Access <Titanium.UI.Button.attributedString> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Button.attributedString> property.
+    * @deprecated Access <Titanium.UI.Button.attributedString> instead.
+    */
   def getAttributedString(): AttributedString = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Button.color> property.
-  			 * @deprecated Access <Titanium.UI.Button.color> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Button.color> property.
+    * @deprecated Access <Titanium.UI.Button.color> instead.
+    */
   def getColor(): String = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Button.disabledColor> property.
-  			 * @deprecated Access <Titanium.UI.Button.disabledColor> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Button.disabledColor> property.
+    * @deprecated Access <Titanium.UI.Button.disabledColor> instead.
+    */
   def getDisabledColor(): String = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Button.enabled> property.
-  			 * @deprecated Access <Titanium.UI.Button.enabled> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Button.enabled> property.
+    * @deprecated Access <Titanium.UI.Button.enabled> instead.
+    */
   def getEnabled(): Boolean = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Button.font> property.
-  			 * @deprecated Access <Titanium.UI.Button.font> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Button.font> property.
+    * @deprecated Access <Titanium.UI.Button.font> instead.
+    */
   def getFont(): Font = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Button.image> property.
-  			 * @deprecated Access <Titanium.UI.Button.image> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Button.image> property.
+    * @deprecated Access <Titanium.UI.Button.image> instead.
+    */
   def getImage(): String | Blob = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Button.selectedColor> property.
-  			 * @deprecated Access <Titanium.UI.Button.selectedColor> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Button.selectedColor> property.
+    * @deprecated Access <Titanium.UI.Button.selectedColor> instead.
+    */
   def getSelectedColor(): String = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Button.shadowColor> property.
-  			 * @deprecated Access <Titanium.UI.Button.shadowColor> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Button.shadowColor> property.
+    * @deprecated Access <Titanium.UI.Button.shadowColor> instead.
+    */
   def getShadowColor(): String = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Button.shadowOffset> property.
-  			 * @deprecated Access <Titanium.UI.Button.shadowOffset> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Button.shadowOffset> property.
+    * @deprecated Access <Titanium.UI.Button.shadowOffset> instead.
+    */
   def getShadowOffset(): Point = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Button.shadowRadius> property.
-  			 * @deprecated Access <Titanium.UI.Button.shadowRadius> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Button.shadowRadius> property.
+    * @deprecated Access <Titanium.UI.Button.shadowRadius> instead.
+    */
   def getShadowRadius(): Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Button.style> property.
-  			 * @deprecated Access <Titanium.UI.Button.style> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Button.style> property.
+    * @deprecated Access <Titanium.UI.Button.style> instead.
+    */
   def getStyle(): Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Button.systemButton> property.
-  			 * @deprecated Access <Titanium.UI.Button.systemButton> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Button.systemButton> property.
+    * @deprecated Access <Titanium.UI.Button.systemButton> instead.
+    */
   def getSystemButton(): Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Button.textAlign> property.
-  			 * @deprecated Access <Titanium.UI.Button.textAlign> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Button.textAlign> property.
+    * @deprecated Access <Titanium.UI.Button.textAlign> instead.
+    */
   def getTextAlign(): String | Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Button.title> property.
-  			 * @deprecated Access <Titanium.UI.Button.title> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Button.title> property.
+    * @deprecated Access <Titanium.UI.Button.title> instead.
+    */
   def getTitle(): String = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Button.titleid> property.
-  			 * @deprecated Access <Titanium.UI.Button.titleid> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Button.titleid> property.
+    * @deprecated Access <Titanium.UI.Button.titleid> instead.
+    */
   def getTitleid(): String = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Button.verticalAlign> property.
-  			 * @deprecated Access <Titanium.UI.Button.verticalAlign> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Button.verticalAlign> property.
+    * @deprecated Access <Titanium.UI.Button.verticalAlign> instead.
+    */
   def getVerticalAlign(): Double | String = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Button.attributedString> property.
-  			 * @deprecated Set the value using <Titanium.UI.Button.attributedString> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Button.attributedString> property.
+    * @deprecated Set the value using <Titanium.UI.Button.attributedString> instead.
+    */
   def setAttributedString(attributedString: AttributedString): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Button.color> property.
-  			 * @deprecated Set the value using <Titanium.UI.Button.color> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Button.color> property.
+    * @deprecated Set the value using <Titanium.UI.Button.color> instead.
+    */
   def setColor(color: String): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Button.disabledColor> property.
-  			 * @deprecated Set the value using <Titanium.UI.Button.disabledColor> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Button.disabledColor> property.
+    * @deprecated Set the value using <Titanium.UI.Button.disabledColor> instead.
+    */
   def setDisabledColor(disabledColor: String): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Button.enabled> property.
-  			 * @deprecated Set the value using <Titanium.UI.Button.enabled> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Button.enabled> property.
+    * @deprecated Set the value using <Titanium.UI.Button.enabled> instead.
+    */
   def setEnabled(enabled: Boolean): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Button.font> property.
-  			 * @deprecated Set the value using <Titanium.UI.Button.font> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Button.font> property.
+    * @deprecated Set the value using <Titanium.UI.Button.font> instead.
+    */
   def setFont(font: Font): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Button.image> property.
-  			 * @deprecated Set the value using <Titanium.UI.Button.image> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Button.image> property.
+    * @deprecated Set the value using <Titanium.UI.Button.image> instead.
+    */
   def setImage(image: String): Unit = js.native
   def setImage(image: Blob): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Button.selectedColor> property.
-  			 * @deprecated Set the value using <Titanium.UI.Button.selectedColor> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Button.selectedColor> property.
+    * @deprecated Set the value using <Titanium.UI.Button.selectedColor> instead.
+    */
   def setSelectedColor(selectedColor: String): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Button.shadowColor> property.
-  			 * @deprecated Set the value using <Titanium.UI.Button.shadowColor> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Button.shadowColor> property.
+    * @deprecated Set the value using <Titanium.UI.Button.shadowColor> instead.
+    */
   def setShadowColor(shadowColor: String): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Button.shadowOffset> property.
-  			 * @deprecated Set the value using <Titanium.UI.Button.shadowOffset> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Button.shadowOffset> property.
+    * @deprecated Set the value using <Titanium.UI.Button.shadowOffset> instead.
+    */
   def setShadowOffset(shadowOffset: Point): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Button.shadowRadius> property.
-  			 * @deprecated Set the value using <Titanium.UI.Button.shadowRadius> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Button.shadowRadius> property.
+    * @deprecated Set the value using <Titanium.UI.Button.shadowRadius> instead.
+    */
   def setShadowRadius(shadowRadius: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Button.style> property.
-  			 * @deprecated Set the value using <Titanium.UI.Button.style> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Button.style> property.
+    * @deprecated Set the value using <Titanium.UI.Button.style> instead.
+    */
   def setStyle(style: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Button.systemButton> property.
-  			 * @deprecated Set the value using <Titanium.UI.Button.systemButton> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Button.systemButton> property.
+    * @deprecated Set the value using <Titanium.UI.Button.systemButton> instead.
+    */
   def setSystemButton(systemButton: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Button.textAlign> property.
-  			 * @deprecated Set the value using <Titanium.UI.Button.textAlign> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Button.textAlign> property.
+    * @deprecated Set the value using <Titanium.UI.Button.textAlign> instead.
+    */
   def setTextAlign(textAlign: String): Unit = js.native
   def setTextAlign(textAlign: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Button.title> property.
-  			 * @deprecated Set the value using <Titanium.UI.Button.title> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Button.title> property.
+    * @deprecated Set the value using <Titanium.UI.Button.title> instead.
+    */
   def setTitle(title: String): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Button.titleid> property.
-  			 * @deprecated Set the value using <Titanium.UI.Button.titleid> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Button.titleid> property.
+    * @deprecated Set the value using <Titanium.UI.Button.titleid> instead.
+    */
   def setTitleid(titleid: String): Unit = js.native
   def setVerticalAlign(verticalAlign: String): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Button.verticalAlign> property.
-  			 * @deprecated Set the value using <Titanium.UI.Button.verticalAlign> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Button.verticalAlign> property.
+    * @deprecated Set the value using <Titanium.UI.Button.verticalAlign> instead.
+    */
   def setVerticalAlign(verticalAlign: Double): Unit = js.native
 }
 

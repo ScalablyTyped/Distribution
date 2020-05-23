@@ -18,13 +18,13 @@ object Option {
     load: /* element */ Element => Unit = null,
     loaded: /* element */ Element => Unit = null,
     rootMargin: String = null,
-    threshold: Int | Double = null
+    threshold: js.UndefOr[Double] = js.undefined
   ): Option = {
     val __obj = js.Dynamic.literal()
     if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
     if (loaded != null) __obj.updateDynamic("loaded")(js.Any.fromFunction1(loaded))
     if (rootMargin != null) __obj.updateDynamic("rootMargin")(rootMargin.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Option]
   }
 }

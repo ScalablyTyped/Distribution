@@ -152,7 +152,7 @@ object DocumentPropertiesData {
     lastSaveTime: Date = null,
     manager: String = null,
     revisionNumber: String = null,
-    security: Int | Double = null,
+    security: js.UndefOr[Double] = js.undefined,
     subject: String = null,
     template: String = null,
     title: String = null
@@ -172,7 +172,7 @@ object DocumentPropertiesData {
     if (lastSaveTime != null) __obj.updateDynamic("lastSaveTime")(lastSaveTime.asInstanceOf[js.Any])
     if (manager != null) __obj.updateDynamic("manager")(manager.asInstanceOf[js.Any])
     if (revisionNumber != null) __obj.updateDynamic("revisionNumber")(revisionNumber.asInstanceOf[js.Any])
-    if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
+    if (!js.isUndefined(security)) __obj.updateDynamic("security")(security.get.asInstanceOf[js.Any])
     if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

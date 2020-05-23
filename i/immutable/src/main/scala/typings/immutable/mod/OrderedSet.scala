@@ -1,14 +1,14 @@
 package typings.immutable.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.immutable.Immutable.Set
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait OrderedSet[T]
-  extends typings.immutable.Immutable.Set_[T] {
+trait OrderedSet[T] extends Set[T] {
   /**
     * Returns a new OrderedSet with only the values for which the `predicate`
     * function returns true.

@@ -1,6 +1,6 @@
 package typings.instagramPrivateApi.postingVideoOptionsMod
 
-import typings.instagramPrivateApi.AnonStorystickeridsAny
+import typings.instagramPrivateApi.anon.StorystickeridsAny
 import typings.instagramPrivateApi.instagramPrivateApiStrings.once
 import typings.instagramPrivateApi.instagramPrivateApiStrings.replayable
 import typings.instagramPrivateApi.instagramPrivateApiStrings.story
@@ -46,10 +46,10 @@ object PostingStoryVideoOptions {
     recipientUsers: js.Array[String] = null,
     replyType: story | String = null,
     slider: StorySlider = null,
-    stickerConfig: (js.Any with AnonStorystickeridsAny) | StickerBuilder = null,
+    stickerConfig: (js.Any with StorystickeridsAny) | StickerBuilder = null,
     threadIds: js.Array[String] = null,
     toBesties: js.UndefOr[Boolean] = js.undefined,
-    transcodeDelay: Int | Double = null,
+    transcodeDelay: js.UndefOr[Double] = js.undefined,
     viewMode: replayable | once | String = null
   ): PostingStoryVideoOptions = {
     val __obj = js.Dynamic.literal(coverImage = coverImage.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
@@ -69,8 +69,8 @@ object PostingStoryVideoOptions {
     if (slider != null) __obj.updateDynamic("slider")(slider.asInstanceOf[js.Any])
     if (stickerConfig != null) __obj.updateDynamic("stickerConfig")(stickerConfig.asInstanceOf[js.Any])
     if (threadIds != null) __obj.updateDynamic("threadIds")(threadIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(toBesties)) __obj.updateDynamic("toBesties")(toBesties.asInstanceOf[js.Any])
-    if (transcodeDelay != null) __obj.updateDynamic("transcodeDelay")(transcodeDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(toBesties)) __obj.updateDynamic("toBesties")(toBesties.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transcodeDelay)) __obj.updateDynamic("transcodeDelay")(transcodeDelay.get.asInstanceOf[js.Any])
     if (viewMode != null) __obj.updateDynamic("viewMode")(viewMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostingStoryVideoOptions]
   }

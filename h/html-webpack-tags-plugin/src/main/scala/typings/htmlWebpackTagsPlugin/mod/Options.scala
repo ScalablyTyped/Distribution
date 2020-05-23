@@ -39,19 +39,19 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (addHash != null) __obj.updateDynamic("addHash")(js.Any.fromFunction2(addHash))
     if (addPublicPath != null) __obj.updateDynamic("addPublicPath")(js.Any.fromFunction2(addPublicPath))
-    if (!js.isUndefined(append)) __obj.updateDynamic("append")(append.asInstanceOf[js.Any])
+    if (!js.isUndefined(append)) __obj.updateDynamic("append")(append.get.asInstanceOf[js.Any])
     if (cssExtensions != null) __obj.updateDynamic("cssExtensions")(cssExtensions.asInstanceOf[js.Any])
     if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
     if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
     if (jsExtensions != null) __obj.updateDynamic("jsExtensions")(jsExtensions.asInstanceOf[js.Any])
     if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
     if (metas != null) __obj.updateDynamic("metas")(metas.asInstanceOf[js.Any])
-    if (!js.isUndefined(prependExternals)) __obj.updateDynamic("prependExternals")(prependExternals.asInstanceOf[js.Any])
+    if (!js.isUndefined(prependExternals)) __obj.updateDynamic("prependExternals")(prependExternals.get.asInstanceOf[js.Any])
     if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath.asInstanceOf[js.Any])
     if (scripts != null) __obj.updateDynamic("scripts")(scripts.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHash)) __obj.updateDynamic("useHash")(useHash.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePublicPath)) __obj.updateDynamic("usePublicPath")(usePublicPath.asInstanceOf[js.Any])
+    if (!js.isUndefined(useHash)) __obj.updateDynamic("useHash")(useHash.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePublicPath)) __obj.updateDynamic("usePublicPath")(usePublicPath.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for fullcalendar
 
-Typings are for version 3.10.1
+Typings are for version 3.10.2
 
 ## Library description:
 Full-sized drag & drop event calendar

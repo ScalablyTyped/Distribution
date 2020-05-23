@@ -11,10 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Supports network communication using a stream socket over TCP or Bluetooth RFCOMM in Windows Store apps. */
-@JSGlobal("Windows.Networking.Sockets.StreamSocket")
 @js.native
-/** Creates a new StreamSocket object. */
-class StreamSocket () extends js.Object {
+trait StreamSocket extends js.Object {
   /** Gets socket control data on a StreamSocket object. */
   var control: StreamSocketControl = js.native
   /** Gets socket information on a StreamSocket object. */

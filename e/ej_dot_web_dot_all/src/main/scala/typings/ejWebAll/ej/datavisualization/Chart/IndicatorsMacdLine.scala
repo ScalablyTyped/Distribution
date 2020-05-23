@@ -17,10 +17,10 @@ trait IndicatorsMacdLine extends js.Object {
 
 object IndicatorsMacdLine {
   @scala.inline
-  def apply(fill: String = null, width: Int | Double = null): IndicatorsMacdLine = {
+  def apply(fill: String = null, width: js.UndefOr[Double] = js.undefined): IndicatorsMacdLine = {
     val __obj = js.Dynamic.literal()
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndicatorsMacdLine]
   }
 }

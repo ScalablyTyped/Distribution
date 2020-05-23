@@ -1,6 +1,6 @@
 package typings.vexJs.mod
 
-import typings.jquery.JQuery_
+import typings.jquery.JQuery
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,6 +13,6 @@ trait Vex extends js.Object {
   def close(id: Double): Boolean = js.native
   def closeAll(): Boolean = js.native
   def closeByID(id: Double): Boolean = js.native
-  def open(options: IVexOptions): JQuery_[HTMLElement] = js.native
+  def open(options: IVexOptions): JQuery[HTMLElement] = js.native
 }
 

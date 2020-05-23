@@ -1,7 +1,7 @@
 package typings.catalog.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.catalog.PartialTheme
+import typings.catalog.anon.PartialTheme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,7 +41,7 @@ object Config {
     if (scripts != null) __obj.updateDynamic("scripts")(scripts.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(useBrowserHistory)) __obj.updateDynamic("useBrowserHistory")(useBrowserHistory.asInstanceOf[js.Any])
+    if (!js.isUndefined(useBrowserHistory)) __obj.updateDynamic("useBrowserHistory")(useBrowserHistory.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

@@ -5,28 +5,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * Entity linking expression
-			 */
+  * Entity linking expression
+  */
 trait LinkEntityExposedExpression extends js.Object {
   /**
-  				 * The 'alias' for the link-entity relationship
-  				 */
+    * The 'alias' for the link-entity relationship
+    */
   var alias: String
   /**
-  				 * The 'from' attribute in the link-entity relationship
-  				 */
+    * The 'from' attribute in the link-entity relationship
+    */
   var from: String
   /**
-  				 * The 'type' of the link, referred by the link-entity attribute
-  				 */
+    * The 'type' of the link, referred by the link-entity attribute
+    */
   var linkType: String
   /**
-  				 * The 'name' of the entity to link to
-  				 */
+    * The 'name' of the entity to link to
+    */
   var name: String
   /**
-  				 * The 'to' attribute in the link-entity relationship
-  				 */
+    * The 'to' attribute in the link-entity relationship
+    */
   var to: String
 }
 

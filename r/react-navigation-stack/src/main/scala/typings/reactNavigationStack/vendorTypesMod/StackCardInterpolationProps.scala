@@ -1,9 +1,9 @@
 package typings.reactNavigationStack.vendorTypesMod
 
 import typings.reactNative.mod.Animated.AnimatedInterpolation
-import typings.reactNavigationStack.AnonLeft
-import typings.reactNavigationStack.AnonProgress
-import typings.reactNavigationStack.AnonScreen
+import typings.reactNavigationStack.anon.Left
+import typings.reactNavigationStack.anon.Progress
+import typings.reactNavigationStack.anon.Screen
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait StackCardInterpolationProps extends js.Object {
   /**
     * Values for the current screen.
     */
-  var current: AnonProgress
+  var current: Progress
   /**
     * The index of the card in the stack.
     */
@@ -24,7 +24,7 @@ trait StackCardInterpolationProps extends js.Object {
   /**
     * Safe area insets
     */
-  var insets: AnonLeft
+  var insets: Left
   /**
     * Animated node representing multiplier when direction is inverted (-1 - inverted, 1 - normal).
     */
@@ -32,12 +32,12 @@ trait StackCardInterpolationProps extends js.Object {
   /**
     * Layout measurements for various items we use for animation.
     */
-  var layouts: AnonScreen
+  var layouts: Screen
   /**
     * Values for the current screen the screen after this one in the stack.
     * This can be `undefined` in case the screen animating is the last one.
     */
-  var next: js.UndefOr[AnonProgress] = js.undefined
+  var next: js.UndefOr[Progress] = js.undefined
   /**
     * Animated node representing whether the card is being swiped (1 - swiping, 0 - not swiping).
     */
@@ -48,13 +48,13 @@ object StackCardInterpolationProps {
   @scala.inline
   def apply(
     closing: AnimatedInterpolation,
-    current: AnonProgress,
+    current: Progress,
     index: Double,
-    insets: AnonLeft,
+    insets: Left,
     inverted: AnimatedInterpolation,
-    layouts: AnonScreen,
+    layouts: Screen,
     swiping: AnimatedInterpolation,
-    next: AnonProgress = null
+    next: Progress = null
   ): StackCardInterpolationProps = {
     val __obj = js.Dynamic.literal(closing = closing.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], insets = insets.asInstanceOf[js.Any], inverted = inverted.asInstanceOf[js.Any], layouts = layouts.asInstanceOf[js.Any], swiping = swiping.asInstanceOf[js.Any])
     if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])

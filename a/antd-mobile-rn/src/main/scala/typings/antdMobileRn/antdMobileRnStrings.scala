@@ -6,36 +6,6 @@ import scala.scalajs.js.annotation._
 
 object antdMobileRnStrings {
   @js.native
-  sealed trait ActionSheet extends js.Object
-  
-  @js.native
-  sealed trait `ActionSheet example` extends js.Object
-  
-  @js.native
-  sealed trait Icon extends js.Object
-  
-  @js.native
-  sealed trait `Icon Example` extends js.Object
-  
-  @js.native
-  sealed trait List extends js.Object
-  
-  @js.native
-  sealed trait `List Example` extends js.Object
-  
-  @js.native
-  sealed trait Popover extends js.Object
-  
-  @js.native
-  sealed trait `Popover example` extends js.Object
-  
-  @js.native
-  sealed trait Tabs extends js.Object
-  
-  @js.native
-  sealed trait `Tabs example` extends js.Object
-  
-  @js.native
   sealed trait URL extends js.Object
   
   @js.native
@@ -392,26 +362,6 @@ object antdMobileRnStrings {
   @js.native
   sealed trait yesExcludeDescendants extends js.Object
   
-  @scala.inline
-  def ActionSheet: ActionSheet = "ActionSheet".asInstanceOf[ActionSheet]
-  @scala.inline
-  def `ActionSheet example`: `ActionSheet example` = ("ActionSheet example").asInstanceOf[`ActionSheet example`]
-  @scala.inline
-  def Icon: Icon = "Icon".asInstanceOf[Icon]
-  @scala.inline
-  def `Icon Example`: `Icon Example` = ("Icon Example").asInstanceOf[`Icon Example`]
-  @scala.inline
-  def List: List = "List".asInstanceOf[List]
-  @scala.inline
-  def `List Example`: `List Example` = ("List Example").asInstanceOf[`List Example`]
-  @scala.inline
-  def Popover: Popover = "Popover".asInstanceOf[Popover]
-  @scala.inline
-  def `Popover example`: `Popover example` = ("Popover example").asInstanceOf[`Popover example`]
-  @scala.inline
-  def Tabs: Tabs = "Tabs".asInstanceOf[Tabs]
-  @scala.inline
-  def `Tabs example`: `Tabs example` = ("Tabs example").asInstanceOf[`Tabs example`]
   @scala.inline
   def URL: URL = "URL".asInstanceOf[URL]
   @scala.inline

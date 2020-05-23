@@ -11,16 +11,16 @@ import scala.scalajs.js.annotation._
   * [Api set: Mailbox 1.3]
   *
   * @remarks
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 trait NotificationMessageDetails extends js.Object {
   /**
     * A reference to an icon that is defined in the manifest in the `Resources` section. It appears in the infobar area.
     * It is only applicable if the type is `InformationalMessage`. Specifying this parameter for an unsupported type results in an exception.
-    * 
+    *
     * **Note**: At present, the custom icon is displayed in Outlook on Windows only and not on other clients (e.g., Mac, web browser).
     */
   var icon: js.UndefOr[String] = js.undefined
@@ -62,7 +62,7 @@ object NotificationMessageDetails {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationMessageDetails]
   }
 }

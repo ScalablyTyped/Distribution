@@ -32,13 +32,13 @@ object GetFederationTokenRequest {
   @scala.inline
   def apply(
     Name: userNameType,
-    DurationSeconds: Int | Double = null,
+    DurationSeconds: js.UndefOr[durationSecondsType] = js.undefined,
     Policy: sessionPolicyDocumentType = null,
     PolicyArns: policyDescriptorListType = null,
     Tags: tagListType = null
   ): GetFederationTokenRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-    if (DurationSeconds != null) __obj.updateDynamic("DurationSeconds")(DurationSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(DurationSeconds)) __obj.updateDynamic("DurationSeconds")(DurationSeconds.get.asInstanceOf[js.Any])
     if (Policy != null) __obj.updateDynamic("Policy")(Policy.asInstanceOf[js.Any])
     if (PolicyArns != null) __obj.updateDynamic("PolicyArns")(PolicyArns.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])

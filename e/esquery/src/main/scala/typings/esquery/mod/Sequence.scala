@@ -22,7 +22,7 @@ object Sequence {
   ): Sequence = {
     val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sequence]
   }
 }

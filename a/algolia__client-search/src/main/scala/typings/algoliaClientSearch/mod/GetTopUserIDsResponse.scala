@@ -9,7 +9,7 @@ trait GetTopUserIDsResponse extends js.Object {
   /**
     * Mapping of cluster names to top users.
     */
-  val topUsers: Record[String, js.Array[UserIDResponse]]
+  var topUsers: Record[String, js.Array[UserIDResponse]]
 }
 
 object GetTopUserIDsResponse {

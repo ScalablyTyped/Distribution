@@ -27,22 +27,22 @@ trait IDocument extends js.Object {
 object IDocument {
   @scala.inline
   def apply(
-    content: String = null,
-    contentUri: String = null,
-    displayName: String = null,
-    knowledgeTypes: js.Array[KnowledgeType] = null,
-    mimeType: String = null,
-    name: String = null,
-    rawContent: Uint8Array | String = null
+    content: js.UndefOr[Null | String] = js.undefined,
+    contentUri: js.UndefOr[Null | String] = js.undefined,
+    displayName: js.UndefOr[Null | String] = js.undefined,
+    knowledgeTypes: js.UndefOr[Null | js.Array[KnowledgeType]] = js.undefined,
+    mimeType: js.UndefOr[Null | String] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined,
+    rawContent: js.UndefOr[Null | Uint8Array | String] = js.undefined
   ): IDocument = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (contentUri != null) __obj.updateDynamic("contentUri")(contentUri.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (knowledgeTypes != null) __obj.updateDynamic("knowledgeTypes")(knowledgeTypes.asInstanceOf[js.Any])
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (rawContent != null) __obj.updateDynamic("rawContent")(rawContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(content)) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentUri)) __obj.updateDynamic("contentUri")(contentUri.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayName)) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (!js.isUndefined(knowledgeTypes)) __obj.updateDynamic("knowledgeTypes")(knowledgeTypes.asInstanceOf[js.Any])
+    if (!js.isUndefined(mimeType)) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(rawContent)) __obj.updateDynamic("rawContent")(rawContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDocument]
   }
 }

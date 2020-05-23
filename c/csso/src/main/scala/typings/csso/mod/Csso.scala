@@ -1,8 +1,8 @@
 package typings.csso.mod
 
 import typings.cssTree.mod.CssNode
-import typings.csso.AnonAst
-import typings.csso.Typeofcsstree
+import typings.csso.anon.Ast
+import typings.csso.anon.Typeofcsstree
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,8 +13,8 @@ trait Csso extends js.Object {
   /**
     * Does the main task – compress an AST.
     */
-  def compress(ast: CssNode): AnonAst = js.native
-  def compress(ast: CssNode, options: CompressOptions): AnonAst = js.native
+  def compress(ast: CssNode): Ast = js.native
+  def compress(ast: CssNode, options: CompressOptions): Ast = js.native
   /**
     * Minify source CSS passed as String
     * @param source

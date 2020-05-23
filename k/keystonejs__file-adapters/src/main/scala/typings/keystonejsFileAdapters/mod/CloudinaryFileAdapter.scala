@@ -1,8 +1,8 @@
 package typings.keystonejsFileAdapters.mod
 
-import typings.keystonejsFileAdapters.AnonFilename
-import typings.keystonejsFileAdapters.AnonFilenameId
-import typings.keystonejsFileAdapters.AnonFilenameString
+import typings.keystonejsFileAdapters.anon.Filename
+import typings.keystonejsFileAdapters.anon.FilenameId
+import typings.keystonejsFileAdapters.anon.FilenameString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CloudinaryFileAdapter protected () extends js.Object {
   def this(options: CloudinaryFileAdapterConfig) = this()
-  def publicUrl(params: AnonFilenameString): String = js.native
-  def save(params: AnonFilename): js.Promise[AnonFilenameId] = js.native
+  def publicUrl(params: FilenameString): String = js.native
+  def save(params: Filename): js.Promise[FilenameId] = js.native
 }
 

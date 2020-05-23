@@ -7,7 +7,6 @@ import typings.heremaps.H.map.Object
 import typings.heremaps.H.map.Object.Type
 import typings.heremaps.H.map.Overlay
 import typings.heremaps.H.map.Spatial
-import typings.heremaps.H.map.provider.Provider.Options
 import typings.heremaps.H.math.BitMask
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,14 +15,8 @@ import scala.scalajs.js.annotation._
 /**
   * An abstract class to manage and provide map objects (Marker, Polyline, Polygon)
   */
-@JSGlobal("H.map.provider.ObjectProvider")
 @js.native
-/**
-  * Constructor
-  * @param opt_options {H.map.provider.Provider.Options=}
-  */
-class ObjectProvider () extends Provider {
-  def this(opt_options: Options) = this()
+trait ObjectProvider extends Provider {
   /**
     * Returns the accumulate invalidations of this provider's objects that have occurred.
     * @param opt_type {H.map.Object.Type=} - The type of objects to consider for the invalidations. If undefined, all types are taken into account.

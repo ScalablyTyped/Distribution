@@ -60,7 +60,7 @@ object FontOptions {
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (designer != null) __obj.updateDynamic("designer")(designer.asInstanceOf[js.Any])
     if (designerURL != null) __obj.updateDynamic("designerURL")(designerURL.asInstanceOf[js.Any])
-    if (!js.isUndefined(empty)) __obj.updateDynamic("empty")(empty.asInstanceOf[js.Any])
+    if (!js.isUndefined(empty)) __obj.updateDynamic("empty")(empty.get.asInstanceOf[js.Any])
     if (fsSelection != null) __obj.updateDynamic("fsSelection")(fsSelection.asInstanceOf[js.Any])
     if (fullName != null) __obj.updateDynamic("fullName")(fullName.asInstanceOf[js.Any])
     if (license != null) __obj.updateDynamic("license")(license.asInstanceOf[js.Any])

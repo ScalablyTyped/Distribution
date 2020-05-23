@@ -1,5 +1,6 @@
 package typings.asn1
 
+import typings.asn1.anon.GrowthFactor
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -38,7 +39,7 @@ object mod extends js.Object {
   
   @js.native
   class BerWriter () extends js.Object {
-    def this(options: AnonGrowthFactor) = this()
+    def this(options: GrowthFactor) = this()
     val _buf: Buffer = js.native
     var _offset: Double = js.native
     val _size: Double = js.native

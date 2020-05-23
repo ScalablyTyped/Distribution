@@ -1,7 +1,7 @@
 package typings.nextServer.libUtilsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.nextServer.ErrorstatusCodenumber
+import typings.nextServer.anon.ErrorstatusCodenumber
 import typings.node.querystringMod.ParsedUrlQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -40,9 +40,9 @@ object NEXT_DATA {
     if (assetPrefix != null) __obj.updateDynamic("assetPrefix")(assetPrefix.asInstanceOf[js.Any])
     if (dynamicIds != null) __obj.updateDynamic("dynamicIds")(dynamicIds.asInstanceOf[js.Any])
     if (err != null) __obj.updateDynamic("err")(err.asInstanceOf[js.Any])
-    if (!js.isUndefined(nextExport)) __obj.updateDynamic("nextExport")(nextExport.asInstanceOf[js.Any])
+    if (!js.isUndefined(nextExport)) __obj.updateDynamic("nextExport")(nextExport.get.asInstanceOf[js.Any])
     if (runtimeConfig != null) __obj.updateDynamic("runtimeConfig")(runtimeConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(skeleton)) __obj.updateDynamic("skeleton")(skeleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(skeleton)) __obj.updateDynamic("skeleton")(skeleton.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NEXT_DATA]
   }
 }

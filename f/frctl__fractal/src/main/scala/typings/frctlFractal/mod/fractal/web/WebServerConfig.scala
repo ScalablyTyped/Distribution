@@ -16,18 +16,18 @@ trait WebServerConfig extends js.Object {
 object WebServerConfig {
   @scala.inline
   def apply(
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     sync: js.UndefOr[Boolean] = js.undefined,
     syncOptions: WebServerSyncOptions = null,
     theme: WebTheme | String = null,
     watch: js.UndefOr[Boolean] = js.undefined
   ): WebServerConfig = {
     val __obj = js.Dynamic.literal()
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.get.asInstanceOf[js.Any])
     if (syncOptions != null) __obj.updateDynamic("syncOptions")(syncOptions.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
+    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebServerConfig]
   }
 }

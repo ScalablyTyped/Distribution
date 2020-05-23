@@ -1,6 +1,6 @@
 package typings.gulpUtil.mod.File
 
-import typings.vinyl.ConstructorOptionscontent
+import typings.vinyl.anon.ConstructorOptionscontent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

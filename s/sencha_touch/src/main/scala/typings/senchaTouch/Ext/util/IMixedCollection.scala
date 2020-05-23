@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.senchaTouch.Ext.IClass because Already inherited
 - typings.senchaTouch.Ext.IBase because Already inherited
 - typings.senchaTouch.Ext.util.ISortable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, destroy, extend, getInitialConfig, inheritableStatics, initConfig, mixins, platformConfig, self, singleton, statics, uses. Inlined defaultSortDirection, isSortable, sortRoot, sorters, initSortable, sort */ trait IMixedCollection extends IAbstractMixedCollection {
@@ -17,27 +17,27 @@ import scala.scalajs.js.annotation._
   /** [Property] (Boolean) */
   var isSortable: js.UndefOr[Boolean] = js.undefined
   /** [Method] Reorders each of the items based on a mapping from old index to new index
-  		* @param mapping Object Mapping from old item index to new item index.
-  		*/
+    * @param mapping Object Mapping from old item index to new item index.
+    */
   var reorder: js.UndefOr[js.Function1[/* mapping */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sorts the data in the Store by one or more of its properties
-  		* @param sorters String/Ext.util.Sorter[] Either a string name of one of the fields in this Store's configured Model, or an array of sorter configurations.
-  		* @param direction String The overall direction to sort the data by.
-  		* @param where String
-  		* @param doSort Boolean
-  		* @returns Ext.util.Sorter[]
-  		*/
+    * @param sorters String/Ext.util.Sorter[] Either a string name of one of the fields in this Store's configured Model, or an array of sorter configurations.
+    * @param direction String The overall direction to sort the data by.
+    * @param where String
+    * @param doSort Boolean
+    * @returns Ext.util.Sorter[]
+    */
   var sort: js.UndefOr[
     js.Function4[js.UndefOr[js.Any], js.UndefOr[String], js.UndefOr[String], js.UndefOr[Boolean], Array]
   ] = js.undefined
   /** [Method] Sorts the collection by a single sorter function
-  		* @param sorterFn Function The function to sort by.
-  		*/
+    * @param sorterFn Function The function to sort by.
+    */
   var sortBy: js.UndefOr[js.Function1[/* sorterFn */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sorts this collection by keys
-  		* @param dir String Sorting direction: 'ASC' or 'DESC'.
-  		* @param fn Function Comparison function that defines the sort order. Defaults to sorting by case insensitive string.
-  		*/
+    * @param dir String Sorting direction: 'ASC' or 'DESC'.
+    * @param fn Function Comparison function that defines the sort order. Defaults to sorting by case insensitive string.
+    */
   var sortByKey: js.UndefOr[js.Function2[/* dir */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Property] (String) */
   var sortRoot: js.UndefOr[String] = js.undefined
@@ -148,7 +148,7 @@ object IMixedCollection {
     if (addListener != null) __obj.updateDynamic("addListener")(js.Any.fromFunction5(addListener))
     if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5(addManagedListener))
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFunctions)) __obj.updateDynamic("allowFunctions")(allowFunctions.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFunctions)) __obj.updateDynamic("allowFunctions")(allowFunctions.get.asInstanceOf[js.Any])
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
     if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents.asInstanceOf[js.Any])
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
@@ -192,7 +192,7 @@ object IMixedCollection {
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (initSortable != null) __obj.updateDynamic("initSortable")(js.Any.fromFunction0(initSortable))
     if (insert != null) __obj.updateDynamic("insert")(js.Any.fromFunction3(insert))
-    if (!js.isUndefined(isSortable)) __obj.updateDynamic("isSortable")(isSortable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSortable)) __obj.updateDynamic("isSortable")(isSortable.get.asInstanceOf[js.Any])
     if (last != null) __obj.updateDynamic("last")(js.Any.fromFunction0(last))
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
@@ -217,7 +217,7 @@ object IMixedCollection {
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(js.Any.fromFunction1(setBubbleEvents))
     if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction4(sort))
     if (sortBy != null) __obj.updateDynamic("sortBy")(js.Any.fromFunction1(sortBy))
     if (sortByKey != null) __obj.updateDynamic("sortByKey")(js.Any.fromFunction2(sortByKey))

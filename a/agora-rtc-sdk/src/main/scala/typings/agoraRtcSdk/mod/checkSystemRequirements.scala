@@ -14,7 +14,7 @@ object checkSystemRequirements extends js.Object {
     *
     * Use this method before calling {@link createClient} to check the compatibility between the system and the web browser.
     *
-    * **Note:**
+    * **Note**
     *
     * Agora has yet to conduct comprehensive tests on Chromium kernel browsers, such as QQ and 360.
     * Agora will gradually achieve compatibility on most mainstream browsers in subsequent versions of the Web SDK.

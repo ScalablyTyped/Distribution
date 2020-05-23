@@ -22,11 +22,11 @@ trait RedisOptions extends js.Object {
 
 object RedisOptions {
   @scala.inline
-  def apply(host: String = null, options: ClientOpts = null, port: Int | Double = null): RedisOptions = {
+  def apply(host: String = null, options: ClientOpts = null, port: js.UndefOr[Double] = js.undefined): RedisOptions = {
     val __obj = js.Dynamic.literal()
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedisOptions]
   }
 }

@@ -1,7 +1,7 @@
 package typings.chaiThings
 
-import typings.chai.Chai_.Assertion
-import typings.chai.Chai_.Equal
+import typings.chai.Chai.Assertion
+import typings.chai.Chai.Equal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

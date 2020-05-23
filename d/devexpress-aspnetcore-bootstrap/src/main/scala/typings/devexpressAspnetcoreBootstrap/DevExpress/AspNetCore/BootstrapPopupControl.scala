@@ -15,9 +15,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapPopupControl")
 @js.native
-class BootstrapPopupControl () extends Control {
+trait BootstrapPopupControl extends Control {
   def adjustSize(): Unit = js.native
   def bringToFront(): Unit = js.native
   def bringWindowToFront(window: BootstrapPopupWindow): Unit = js.native

@@ -1,7 +1,7 @@
 package typings.dexie.mod.Dexie
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.dexie.AnonIDBKeyRange
+import typings.dexie.anon.IDBKeyRange
 import typings.dexie.mod.ThenShortcut
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ object ^ extends js.Object {
   var addons: js.Array[js.Function1[/* db */ this.type, Unit]] = js.native
   var currentTransaction: Transaction = js.native
   var default: typings.dexie.mod.Dexie = js.native
-  var dependencies: AnonIDBKeyRange = js.native
+  var dependencies: IDBKeyRange = js.native
   var maxKey: js.Array[js.Array[Unit]] | String = js.native
   var minKey: Double = js.native
   var semVer: String = js.native

@@ -15,7 +15,7 @@ object ThumbnailUrlOptions {
   def apply(format: String = null, png: js.UndefOr[Boolean] = js.undefined, size: String = null): ThumbnailUrlOptions = {
     val __obj = js.Dynamic.literal()
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(png)) __obj.updateDynamic("png")(png.asInstanceOf[js.Any])
+    if (!js.isUndefined(png)) __obj.updateDynamic("png")(png.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThumbnailUrlOptions]
   }

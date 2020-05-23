@@ -18,9 +18,9 @@ trait ModelVariable extends js.Object {
 
 object ModelVariable {
   @scala.inline
-  def apply(name: String, index: Int | Double = null): ModelVariable = {
+  def apply(name: String, index: js.UndefOr[ModelVariableIndex] = js.undefined): ModelVariable = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelVariable]
   }
 }

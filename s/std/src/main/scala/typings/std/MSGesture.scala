@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +10,11 @@ trait MSGesture extends js.Object {
   def stop(): Unit
 }
 
-@JSGlobal("MSGesture")
-@js.native
-object MSGesture extends Instantiable0[MSGesture]
+object MSGesture {
+  @scala.inline
+  def apply(addPointer: Double => Unit, stop: () => Unit, target: Element): MSGesture = {
+    val __obj = js.Dynamic.literal(addPointer = js.Any.fromFunction1(addPointer), stop = js.Any.fromFunction0(stop), target = target.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MSGesture]
+  }
+}
 

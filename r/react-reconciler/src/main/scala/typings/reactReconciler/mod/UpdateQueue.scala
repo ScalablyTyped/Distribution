@@ -29,15 +29,7 @@ object UpdateQueue {
     lastEffect: Update[State] = null,
     lastUpdate: Update[State] = null
   ): UpdateQueue[State] = {
-    val __obj = js.Dynamic.literal(baseState = baseState.asInstanceOf[js.Any])
-    if (firstCapturedEffect != null) __obj.updateDynamic("firstCapturedEffect")(firstCapturedEffect.asInstanceOf[js.Any])
-    if (firstCapturedUpdate != null) __obj.updateDynamic("firstCapturedUpdate")(firstCapturedUpdate.asInstanceOf[js.Any])
-    if (firstEffect != null) __obj.updateDynamic("firstEffect")(firstEffect.asInstanceOf[js.Any])
-    if (firstUpdate != null) __obj.updateDynamic("firstUpdate")(firstUpdate.asInstanceOf[js.Any])
-    if (lastCapturedEffect != null) __obj.updateDynamic("lastCapturedEffect")(lastCapturedEffect.asInstanceOf[js.Any])
-    if (lastCapturedUpdate != null) __obj.updateDynamic("lastCapturedUpdate")(lastCapturedUpdate.asInstanceOf[js.Any])
-    if (lastEffect != null) __obj.updateDynamic("lastEffect")(lastEffect.asInstanceOf[js.Any])
-    if (lastUpdate != null) __obj.updateDynamic("lastUpdate")(lastUpdate.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(baseState = baseState.asInstanceOf[js.Any], firstCapturedEffect = firstCapturedEffect.asInstanceOf[js.Any], firstCapturedUpdate = firstCapturedUpdate.asInstanceOf[js.Any], firstEffect = firstEffect.asInstanceOf[js.Any], firstUpdate = firstUpdate.asInstanceOf[js.Any], lastCapturedEffect = lastCapturedEffect.asInstanceOf[js.Any], lastCapturedUpdate = lastCapturedUpdate.asInstanceOf[js.Any], lastEffect = lastEffect.asInstanceOf[js.Any], lastUpdate = lastUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateQueue[State]]
   }
 }

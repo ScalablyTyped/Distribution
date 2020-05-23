@@ -1,12 +1,12 @@
 package typings.rcPicker.generateMod
 
-import typings.rcPicker.AnonFormat
+import typings.rcPicker.anon.Format
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GenerateConfig[DateType] extends js.Object {
-  var locale: AnonFormat[DateType]
+  var locale: Format[DateType]
   def addDate(value: DateType, diff: Double): DateType
   def addMonth(value: DateType, diff: Double): DateType
   def addYear(value: DateType, diff: Double): DateType
@@ -44,7 +44,7 @@ object GenerateConfig {
     getYear: DateType => Double,
     isAfter: (DateType, DateType) => Boolean,
     isValidate: DateType => Boolean,
-    locale: AnonFormat[DateType],
+    locale: Format[DateType],
     setDate: (DateType, Double) => DateType,
     setHour: (DateType, Double) => DateType,
     setMinute: (DateType, Double) => DateType,

@@ -48,7 +48,7 @@ object BrokerNodeInfo {
   @scala.inline
   def apply(
     AttachedENIId: string = null,
-    BrokerId: Int | Double = null,
+    BrokerId: js.UndefOr[double] = js.undefined,
     ClientSubnet: string = null,
     ClientVpcIpAddress: string = null,
     CurrentBrokerSoftwareInfo: BrokerSoftwareInfo = null,
@@ -56,7 +56,7 @@ object BrokerNodeInfo {
   ): BrokerNodeInfo = {
     val __obj = js.Dynamic.literal()
     if (AttachedENIId != null) __obj.updateDynamic("AttachedENIId")(AttachedENIId.asInstanceOf[js.Any])
-    if (BrokerId != null) __obj.updateDynamic("BrokerId")(BrokerId.asInstanceOf[js.Any])
+    if (!js.isUndefined(BrokerId)) __obj.updateDynamic("BrokerId")(BrokerId.get.asInstanceOf[js.Any])
     if (ClientSubnet != null) __obj.updateDynamic("ClientSubnet")(ClientSubnet.asInstanceOf[js.Any])
     if (ClientVpcIpAddress != null) __obj.updateDynamic("ClientVpcIpAddress")(ClientVpcIpAddress.asInstanceOf[js.Any])
     if (CurrentBrokerSoftwareInfo != null) __obj.updateDynamic("CurrentBrokerSoftwareInfo")(CurrentBrokerSoftwareInfo.asInstanceOf[js.Any])

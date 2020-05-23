@@ -1,6 +1,6 @@
 package typings.baseui.mod
 
-import typings.baseui.PartialLocale
+import typings.baseui.anon.PartialLocale
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`

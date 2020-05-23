@@ -13,15 +13,14 @@ trait AuthInfo extends js.Object {
   /**
     * The resources for which the principal is being authorized to perform the specified action.
     */
-  var resources: js.UndefOr[Resources] = js.native
+  var resources: Resources = js.native
 }
 
 object AuthInfo {
   @scala.inline
-  def apply(actionType: ActionType = null, resources: Resources = null): AuthInfo = {
-    val __obj = js.Dynamic.literal()
+  def apply(resources: Resources, actionType: ActionType = null): AuthInfo = {
+    val __obj = js.Dynamic.literal(resources = resources.asInstanceOf[js.Any])
     if (actionType != null) __obj.updateDynamic("actionType")(actionType.asInstanceOf[js.Any])
-    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthInfo]
   }
 }

@@ -23,8 +23,8 @@ object RedirectProps {
   ): RedirectProps[TState] = {
     val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (!js.isUndefined(noThrow)) __obj.updateDynamic("noThrow")(noThrow.asInstanceOf[js.Any])
-    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
+    if (!js.isUndefined(noThrow)) __obj.updateDynamic("noThrow")(noThrow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.get.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedirectProps[TState]]
   }

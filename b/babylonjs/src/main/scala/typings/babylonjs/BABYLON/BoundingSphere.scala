@@ -4,17 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.BoundingSphere")
 @js.native
-class BoundingSphere protected () extends js.Object {
-  /**
-    * Creates a new bounding sphere
-    * @param min defines the minimum vector (in local space)
-    * @param max defines the maximum vector (in local space)
-    * @param worldMatrix defines the new world matrix
-    */
-  def this(min: DeepImmutable[Vector3], max: DeepImmutable[Vector3]) = this()
-  def this(min: DeepImmutable[Vector3], max: DeepImmutable[Vector3], worldMatrix: DeepImmutable[Matrix]) = this()
+trait BoundingSphere extends js.Object {
   var _worldMatrix: js.Any = js.native
   /**
     * Gets the center of the bounding sphere in local space
@@ -80,19 +71,5 @@ class BoundingSphere protected () extends js.Object {
     * @returns the current bounding box
     */
   def scale(factor: Double): BoundingSphere = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.BoundingSphere")
-@js.native
-object BoundingSphere extends js.Object {
-  val TmpVector3: js.Any = js.native
-  /**
-    * Checks if two sphere intersct
-    * @param sphere0 sphere 0
-    * @param sphere1 sphere 1
-    * @returns true if the speres intersect
-    */
-  def Intersects(sphere0: DeepImmutable[BoundingSphere], sphere1: DeepImmutable[BoundingSphere]): Boolean = js.native
 }
 

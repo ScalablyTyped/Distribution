@@ -12,9 +12,9 @@ trait Errors extends js.Object {
 
 object Errors {
   @scala.inline
-  def apply(code: Int | Double = null, errors: js.Array[Error] = null, message: String = null): Errors = {
+  def apply(code: js.UndefOr[Double] = js.undefined, errors: js.Array[Error] = null, message: String = null): Errors = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (!js.isUndefined(code)) __obj.updateDynamic("code")(code.get.asInstanceOf[js.Any])
     if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[Errors]

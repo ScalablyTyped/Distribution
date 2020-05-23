@@ -33,12 +33,12 @@ object PageUpdateData {
   @scala.inline
   def apply(
     inkAnalysisOrNull: InkAnalysisUpdateData = null,
-    pageLevel: Int | Double = null,
+    pageLevel: js.UndefOr[Double] = js.undefined,
     title: String = null
   ): PageUpdateData = {
     val __obj = js.Dynamic.literal()
     if (inkAnalysisOrNull != null) __obj.updateDynamic("inkAnalysisOrNull")(inkAnalysisOrNull.asInstanceOf[js.Any])
-    if (pageLevel != null) __obj.updateDynamic("pageLevel")(pageLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageLevel)) __obj.updateDynamic("pageLevel")(pageLevel.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageUpdateData]
   }

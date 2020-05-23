@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("samchon/templates/distributed/derived/DistributedServerArray", JSImport.Namespace)
 @js.native
 object distributedServerArrayMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.tstl.isizeMod.ISize because Already inherited
   - typings.tstl.iforwardcontainerMod.IForwardContainer because Already inherited
   - typings.tstl.ipushMod.IPush because Already inherited

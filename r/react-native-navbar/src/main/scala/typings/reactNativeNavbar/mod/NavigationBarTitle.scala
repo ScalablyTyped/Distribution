@@ -20,12 +20,12 @@ object NavigationBarTitle {
   def apply(
     title: String,
     ellipsizeMode: head | middle | tail | clip = null,
-    numberOfLines: Int | Double = null,
+    numberOfLines: js.UndefOr[Double] = js.undefined,
     tintColor: String = null
   ): NavigationBarTitle = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     if (ellipsizeMode != null) __obj.updateDynamic("ellipsizeMode")(ellipsizeMode.asInstanceOf[js.Any])
-    if (numberOfLines != null) __obj.updateDynamic("numberOfLines")(numberOfLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfLines)) __obj.updateDynamic("numberOfLines")(numberOfLines.get.asInstanceOf[js.Any])
     if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationBarTitle]
   }

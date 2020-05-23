@@ -13,7 +13,7 @@ trait InvokeActionObject[TContext, TEvent /* <: EventObject */] extends Activity
 
 object InvokeActionObject {
   @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](
+  def apply[TContext, TEvent](
     activity: InvokeDefinition[TContext, TEvent],
     `type`: Start | Stop,
     exec: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => js.Any | Unit = null

@@ -1,6 +1,5 @@
 package typings.winjs.WinJS.UI
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,14 +24,6 @@ object Orientation extends js.Object {
     **/
   @js.native
   sealed trait vertical extends Orientation
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Orientation with Double] = js.native
-  /* 0 */ @js.native
-  object horizontal extends TopLevel[horizontal with Double]
-  
-  /* 1 */ @js.native
-  object vertical extends TopLevel[vertical with Double]
   
 }
 

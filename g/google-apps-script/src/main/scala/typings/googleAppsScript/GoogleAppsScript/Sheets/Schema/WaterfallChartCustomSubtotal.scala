@@ -15,12 +15,12 @@ object WaterfallChartCustomSubtotal {
   def apply(
     dataIsSubtotal: js.UndefOr[Boolean] = js.undefined,
     label: String = null,
-    subtotalIndex: Int | Double = null
+    subtotalIndex: js.UndefOr[Double] = js.undefined
   ): WaterfallChartCustomSubtotal = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dataIsSubtotal)) __obj.updateDynamic("dataIsSubtotal")(dataIsSubtotal.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataIsSubtotal)) __obj.updateDynamic("dataIsSubtotal")(dataIsSubtotal.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (subtotalIndex != null) __obj.updateDynamic("subtotalIndex")(subtotalIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(subtotalIndex)) __obj.updateDynamic("subtotalIndex")(subtotalIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WaterfallChartCustomSubtotal]
   }
 }

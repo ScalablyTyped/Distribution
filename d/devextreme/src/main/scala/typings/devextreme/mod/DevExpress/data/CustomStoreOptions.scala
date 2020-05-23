@@ -1,10 +1,10 @@
 package typings.devextreme.mod.DevExpress.data
 
-import typings.devextreme.AnonFilter
+import typings.devextreme.anon.Filter
 import typings.devextreme.devextremeStrings.processed
 import typings.devextreme.devextremeStrings.raw
-import typings.devextreme.mod._Global_.JQueryPromise
-import typings.devextreme.mod._Global_.Promise
+import typings.devextreme.mod.global.JQueryPromise
+import typings.devextreme.mod.global.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,9 +27,7 @@ trait CustomStoreOptions extends StoreOptions[CustomStore] {
     js.Function1[/* key */ js.Any | String | Double, Promise[Unit] | JQueryPromise[Unit]]
   ] = js.undefined
   /** @name CustomStore.Options.totalCount */
-  var totalCount: js.UndefOr[
-    js.Function1[/* loadOptions */ AnonFilter, Promise[Double] | JQueryPromise[Double]]
-  ] = js.undefined
+  var totalCount: js.UndefOr[js.Function1[/* loadOptions */ Filter, Promise[Double] | JQueryPromise[Double]]] = js.undefined
   /** @name CustomStore.Options.update */
   var update: js.UndefOr[
     js.Function2[
@@ -64,13 +62,13 @@ object CustomStoreOptions {
     onUpdated: (/* key */ js.Any | String | Double, /* values */ js.Any) => _ = null,
     onUpdating: (/* key */ js.Any | String | Double, /* values */ js.Any) => _ = null,
     remove: /* key */ js.Any | String | Double => Promise[Unit] | JQueryPromise[Unit] = null,
-    totalCount: /* loadOptions */ AnonFilter => Promise[Double] | JQueryPromise[Double] = null,
+    totalCount: /* loadOptions */ Filter => Promise[Double] | JQueryPromise[Double] = null,
     update: (/* key */ js.Any | String | Double, /* values */ js.Any) => Promise[_] | JQueryPromise[_] = null,
     useDefaultSearch: js.UndefOr[Boolean] = js.undefined
   ): CustomStoreOptions = {
     val __obj = js.Dynamic.literal()
     if (byKey != null) __obj.updateDynamic("byKey")(js.Any.fromFunction1(byKey))
-    if (!js.isUndefined(cacheRawData)) __obj.updateDynamic("cacheRawData")(cacheRawData.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheRawData)) __obj.updateDynamic("cacheRawData")(cacheRawData.get.asInstanceOf[js.Any])
     if (errorHandler != null) __obj.updateDynamic("errorHandler")(errorHandler.asInstanceOf[js.Any])
     if (insert != null) __obj.updateDynamic("insert")(js.Any.fromFunction1(insert))
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
@@ -90,7 +88,7 @@ object CustomStoreOptions {
     if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
     if (totalCount != null) __obj.updateDynamic("totalCount")(js.Any.fromFunction1(totalCount))
     if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction2(update))
-    if (!js.isUndefined(useDefaultSearch)) __obj.updateDynamic("useDefaultSearch")(useDefaultSearch.asInstanceOf[js.Any])
+    if (!js.isUndefined(useDefaultSearch)) __obj.updateDynamic("useDefaultSearch")(useDefaultSearch.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomStoreOptions]
   }
 }

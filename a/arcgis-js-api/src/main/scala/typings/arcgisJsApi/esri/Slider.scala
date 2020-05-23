@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`horizontal-reversed`
 import typings.arcgisJsApi.arcgisJsApiStrings.`max-change`
@@ -322,8 +321,4 @@ trait Slider extends Widget_ {
   def thumbCreatedFunction(index: Double, value: Double, thumbElement: HTMLElement): Unit = js.native
   def thumbCreatedFunction(index: Double, value: Double, thumbElement: HTMLElement, labelElement: HTMLElement): Unit = js.native
 }
-
-@JSGlobal("__esri.Slider")
-@js.native
-object Slider extends TopLevel[SliderConstructor]
 

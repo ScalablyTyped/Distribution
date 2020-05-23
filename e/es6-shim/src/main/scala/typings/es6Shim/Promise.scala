@@ -1,6 +1,5 @@
 package typings.es6Shim
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,8 +29,4 @@ trait Promise[T] extends js.Object {
     onrejected: js.Function1[/* reason */ js.Any, PromiseLike[TResult] | TResult | Unit]
   ): Promise[TResult] = js.native
 }
-
-@JSGlobal("Promise")
-@js.native
-object Promise extends TopLevel[PromiseConstructor]
 

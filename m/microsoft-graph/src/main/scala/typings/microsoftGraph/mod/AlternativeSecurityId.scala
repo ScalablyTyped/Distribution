@@ -15,11 +15,15 @@ trait AlternativeSecurityId extends js.Object {
 
 object AlternativeSecurityId {
   @scala.inline
-  def apply(identityProvider: String = null, key: Int | Double = null, `type`: Int | Double = null): AlternativeSecurityId = {
+  def apply(
+    identityProvider: String = null,
+    key: js.UndefOr[Double] = js.undefined,
+    `type`: js.UndefOr[Double] = js.undefined
+  ): AlternativeSecurityId = {
     val __obj = js.Dynamic.literal()
     if (identityProvider != null) __obj.updateDynamic("identityProvider")(identityProvider.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlternativeSecurityId]
   }
 }

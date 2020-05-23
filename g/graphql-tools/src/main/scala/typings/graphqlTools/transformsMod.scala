@@ -6,6 +6,9 @@ import typings.graphql.definitionMod.GraphQLNamedType
 import typings.graphql.definitionMod.GraphQLResolveInfo
 import typings.graphql.mod.GraphQLSchema
 import typings.graphqlTools.addArgumentsAsVariablesMod.default
+import typings.graphqlTools.anon.Field
+import typings.graphqlTools.anon.From
+import typings.graphqlTools.anon.GraphQLSchematransformsAr
 import typings.graphqlTools.filterRootFieldsMod.RootFilter
 import typings.graphqlTools.graphqlToolsStrings.Mutation
 import typings.graphqlTools.graphqlToolsStrings.Query
@@ -48,7 +51,7 @@ object transformsMod extends js.Object {
   @js.native
   class ExtractField protected ()
     extends typings.graphqlTools.extractFieldMod.default {
-    def this(hasFromTo: AnonFrom) = this()
+    def this(hasFromTo: From) = this()
   }
   
   @js.native
@@ -90,7 +93,7 @@ object transformsMod extends js.Object {
   @js.native
   class ReplaceFieldWithFragment protected ()
     extends typings.graphqlTools.replaceFieldWithFragmentMod.default {
-    def this(targetSchema: GraphQLSchema, fragments: js.Array[AnonField]) = this()
+    def this(targetSchema: GraphQLSchema, fragments: js.Array[Field]) = this()
   }
   
   @js.native

@@ -1,7 +1,7 @@
 package typings.angularHotkeys.mod.angularAugmentingMod.hotkeys
 
 import typings.angular.mod.IScope
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,25 +55,25 @@ trait HotkeysProvider extends js.Object {
   def add(
     combo: String,
     description: String,
-    callback: js.Function2[/* event */ Event_, /* hotkey */ Hotkey, Unit]
+    callback: js.Function2[/* event */ Event, /* hotkey */ Hotkey, Unit]
   ): Hotkey = js.native
   def add(
     combo: String,
     description: String,
-    callback: js.Function2[/* event */ Event_, /* hotkey */ Hotkey, Unit],
+    callback: js.Function2[/* event */ Event, /* hotkey */ Hotkey, Unit],
     action: String
   ): Hotkey = js.native
   def add(
     combo: String,
     description: String,
-    callback: js.Function2[/* event */ Event_, /* hotkey */ Hotkey, Unit],
+    callback: js.Function2[/* event */ Event, /* hotkey */ Hotkey, Unit],
     action: String,
     allowIn: js.Array[String]
   ): Hotkey = js.native
   def add(
     combo: String,
     description: String,
-    callback: js.Function2[/* event */ Event_, /* hotkey */ Hotkey, Unit],
+    callback: js.Function2[/* event */ Event, /* hotkey */ Hotkey, Unit],
     action: String,
     allowIn: js.Array[String],
     persistent: Boolean
@@ -83,25 +83,25 @@ trait HotkeysProvider extends js.Object {
   def add(
     combo: js.Array[String],
     description: String,
-    callback: js.Function2[/* event */ Event_, /* hotkey */ Hotkey, Unit]
+    callback: js.Function2[/* event */ Event, /* hotkey */ Hotkey, Unit]
   ): Hotkey = js.native
   def add(
     combo: js.Array[String],
     description: String,
-    callback: js.Function2[/* event */ Event_, /* hotkey */ Hotkey, Unit],
+    callback: js.Function2[/* event */ Event, /* hotkey */ Hotkey, Unit],
     action: String
   ): Hotkey = js.native
   def add(
     combo: js.Array[String],
     description: String,
-    callback: js.Function2[/* event */ Event_, /* hotkey */ Hotkey, Unit],
+    callback: js.Function2[/* event */ Event, /* hotkey */ Hotkey, Unit],
     action: String,
     allowIn: js.Array[String]
   ): Hotkey = js.native
   def add(
     combo: js.Array[String],
     description: String,
-    callback: js.Function2[/* event */ Event_, /* hotkey */ Hotkey, Unit],
+    callback: js.Function2[/* event */ Event, /* hotkey */ Hotkey, Unit],
     action: String,
     allowIn: js.Array[String],
     persistent: Boolean

@@ -1,6 +1,5 @@
 package typings.chrome.chrome.cast.media
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,14 +15,6 @@ object ResumeState extends js.Object {
   
   @js.native
   sealed trait PLAYBACK_START extends ResumeState
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ResumeState with String] = js.native
-  /* "PLAYBACK_PAUSE" */ @js.native
-  object PLAYBACK_PAUSE extends TopLevel[PLAYBACK_PAUSE with String]
-  
-  /* "PLAYBACK_START" */ @js.native
-  object PLAYBACK_START extends TopLevel[PLAYBACK_START with String]
   
 }
 

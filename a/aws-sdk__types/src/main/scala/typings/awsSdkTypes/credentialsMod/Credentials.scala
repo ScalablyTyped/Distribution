@@ -30,11 +30,11 @@ object Credentials {
   def apply(
     accessKeyId: String,
     secretAccessKey: String,
-    expiration: Int | Double = null,
+    expiration: js.UndefOr[Double] = js.undefined,
     sessionToken: String = null
   ): Credentials = {
     val __obj = js.Dynamic.literal(accessKeyId = accessKeyId.asInstanceOf[js.Any], secretAccessKey = secretAccessKey.asInstanceOf[js.Any])
-    if (expiration != null) __obj.updateDynamic("expiration")(expiration.asInstanceOf[js.Any])
+    if (!js.isUndefined(expiration)) __obj.updateDynamic("expiration")(expiration.get.asInstanceOf[js.Any])
     if (sessionToken != null) __obj.updateDynamic("sessionToken")(sessionToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[Credentials]
   }

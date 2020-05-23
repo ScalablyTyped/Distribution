@@ -37,7 +37,7 @@ object ListTypeVersionsInput {
   def apply(
     Arn: PrivateTypeArn = null,
     DeprecatedStatus: DeprecatedStatus = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: NextToken = null,
     Type: RegistryType = null,
     TypeName: TypeName = null
@@ -45,7 +45,7 @@ object ListTypeVersionsInput {
     val __obj = js.Dynamic.literal()
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
     if (DeprecatedStatus != null) __obj.updateDynamic("DeprecatedStatus")(DeprecatedStatus.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     if (TypeName != null) __obj.updateDynamic("TypeName")(TypeName.asInstanceOf[js.Any])

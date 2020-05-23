@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.TableStyleElement")
 @js.native
-class TableStyleElement protected () extends js.Object {
+trait TableStyleElement extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   @JSName("Borders")
   val Borders_Original: Borders = js.native

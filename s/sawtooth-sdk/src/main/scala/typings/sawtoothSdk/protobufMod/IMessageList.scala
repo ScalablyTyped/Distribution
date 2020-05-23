@@ -11,9 +11,9 @@ trait IMessageList extends js.Object {
 
 object IMessageList {
   @scala.inline
-  def apply(messages: js.Array[IMessage] = null): IMessageList = {
+  def apply(messages: js.UndefOr[Null | js.Array[IMessage]] = js.undefined): IMessageList = {
     val __obj = js.Dynamic.literal()
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (!js.isUndefined(messages)) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMessageList]
   }
 }

@@ -1,19 +1,20 @@
 organization := "org.scalablytyped"
 name := "ant-design__pro-layout"
-version := "5.0.9-569b81"
-scalaVersion := "2.13.1"
+version := "5.0.12-1d3e6b"
+scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.9-313239",
-  "org.scalablytyped" %%% "history" % "4.7.2-dt-20200226Z-849324",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-11830c",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200409Z-0bc722",
-  "org.scalablytyped" %%% "react-router" % "5.1-dt-20200402Z-df39e7",
-  "org.scalablytyped" %%% "std" % "3.8-9b2470",
-  "org.scalablytyped" %%% "unstated-next" % "1.1.0-ad78cb")
+  "org.scalablytyped" %%% "csstype" % "2.6.9-03f85a",
+  "org.scalablytyped" %%% "history" % "4.7.2-dt-20200518Z-48aa64",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-4fb81d",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20200515Z-0f8114",
+  "org.scalablytyped" %%% "react-router" % "5.1-dt-20200515Z-de425a",
+  "org.scalablytyped" %%% "std" % "3.9-18cbeb",
+  "org.scalablytyped" %%% "umijs__route-utils" % "1.0.11-ab7492",
+  "org.scalablytyped" %%% "unstated-next" % "1.1.0-741c26")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

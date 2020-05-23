@@ -3,11 +3,12 @@ package typings.roads
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
+import typings.roads.anon.CacheMaxAge
 import typings.roads.buildMod.RoadsBuildOptions
 import typings.roads.requestMod.default
 import typings.roads.roadMod.ResponseMiddleware
 import typings.std.HTMLElement
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,7 +62,7 @@ object mod extends js.Object {
       * @param {HTMLElement} container_element - The element that will be filled with your roads output
       * @param {Window} window - The pages window object to help set page title and other items
       */
-    def this(road: typings.roads.roadMod.default, container_element: HTMLElement, window: Window_) = this()
+    def this(road: typings.roads.roadMod.default, container_element: HTMLElement, window: Window) = this()
   }
   
   def build(input_file: String, output_file: String, options: RoadsBuildOptions): js.Promise[Unit] = js.native
@@ -81,7 +82,7 @@ object mod extends js.Object {
     @JSName("cookie")
     var cookie_Original: typings.roads.roadMod.Middleware = js.native
     @JSName("cors")
-    var cors_Original: js.Function1[/* options */ AnonCacheMaxAge, typings.roads.roadMod.Middleware] = js.native
+    var cors_Original: js.Function1[/* options */ CacheMaxAge, typings.roads.roadMod.Middleware] = js.native
     @JSName("killSlash")
     var killSlash_Original: typings.roads.roadMod.Middleware = js.native
     @JSName("parseBody")
@@ -102,7 +103,7 @@ object mod extends js.Object {
       headers: StringDictionary[js.Any],
       next: ResponseMiddleware
     ): js.Promise[typings.roads.responseMod.default] = js.native
-    def cors(options: AnonCacheMaxAge): typings.roads.roadMod.Middleware = js.native
+    def cors(options: CacheMaxAge): typings.roads.roadMod.Middleware = js.native
     def killSlash(
       method: String,
       path: String,

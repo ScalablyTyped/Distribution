@@ -46,7 +46,7 @@ object UpdateConfigurationParams {
     if (enrichments != null) __obj.updateDynamic("enrichments")(enrichments.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (normalizations != null) __obj.updateDynamic("normalizations")(normalizations.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateConfigurationParams]
   }

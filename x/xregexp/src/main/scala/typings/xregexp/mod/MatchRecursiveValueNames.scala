@@ -30,10 +30,10 @@ object MatchRecursiveValueNames {
   @scala.inline
   def apply(`0`: String = null, `1`: String = null, `2`: String = null, `3`: String = null): MatchRecursiveValueNames = {
     val __obj = js.Dynamic.literal()
-    if (`0` != null) __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
-    if (`1` != null) __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
-    if (`2` != null) __obj.updateDynamic("2")(`2`.asInstanceOf[js.Any])
-    if (`3` != null) __obj.updateDynamic("3")(`3`.asInstanceOf[js.Any])
+    __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
+    __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
+    __obj.updateDynamic("2")(`2`.asInstanceOf[js.Any])
+    __obj.updateDynamic("3")(`3`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchRecursiveValueNames]
   }
 }

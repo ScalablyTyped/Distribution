@@ -19,7 +19,7 @@ object RenderPageOptions {
     config: js.Any = null,
     endpoint: String = null,
     env: js.Any = null,
-    faviconUrl: String = null,
+    faviconUrl: js.UndefOr[Null | String] = js.undefined,
     schema: IntrospectionResult = null,
     settings: ISettings = null,
     subscriptionEndpoint: String = null,
@@ -34,7 +34,7 @@ object RenderPageOptions {
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (faviconUrl != null) __obj.updateDynamic("faviconUrl")(faviconUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(faviconUrl)) __obj.updateDynamic("faviconUrl")(faviconUrl.asInstanceOf[js.Any])
     if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
     if (subscriptionEndpoint != null) __obj.updateDynamic("subscriptionEndpoint")(subscriptionEndpoint.asInstanceOf[js.Any])

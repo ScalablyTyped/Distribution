@@ -49,21 +49,21 @@ object Query {
   ): Query = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(caseInsensitive)) __obj.updateDynamic("caseInsensitive")(caseInsensitive.asInstanceOf[js.Any])
-    if (!js.isUndefined(depths)) __obj.updateDynamic("depths")(depths.asInstanceOf[js.Any])
+    if (!js.isUndefined(caseInsensitive)) __obj.updateDynamic("caseInsensitive")(caseInsensitive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(depths)) __obj.updateDynamic("depths")(depths.get.asInstanceOf[js.Any])
     if (docFormat != null) __obj.updateDynamic("docFormat")(docFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(docs)) __obj.updateDynamic("docs")(docs.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandWordForward)) __obj.updateDynamic("expandWordForward")(expandWordForward.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(guess)) __obj.updateDynamic("guess")(guess.asInstanceOf[js.Any])
-    if (!js.isUndefined(inLiteral)) __obj.updateDynamic("inLiteral")(inLiteral.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeKeywords)) __obj.updateDynamic("includeKeywords")(includeKeywords.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineCharPositions)) __obj.updateDynamic("lineCharPositions")(lineCharPositions.asInstanceOf[js.Any])
-    if (!js.isUndefined(omitObjectPrototype)) __obj.updateDynamic("omitObjectPrototype")(omitObjectPrototype.asInstanceOf[js.Any])
-    if (!js.isUndefined(origins)) __obj.updateDynamic("origins")(origins.asInstanceOf[js.Any])
-    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (!js.isUndefined(types)) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
-    if (!js.isUndefined(urls)) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
+    if (!js.isUndefined(docs)) __obj.updateDynamic("docs")(docs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandWordForward)) __obj.updateDynamic("expandWordForward")(expandWordForward.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(guess)) __obj.updateDynamic("guess")(guess.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inLiteral)) __obj.updateDynamic("inLiteral")(inLiteral.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeKeywords)) __obj.updateDynamic("includeKeywords")(includeKeywords.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineCharPositions)) __obj.updateDynamic("lineCharPositions")(lineCharPositions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(omitObjectPrototype)) __obj.updateDynamic("omitObjectPrototype")(omitObjectPrototype.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(origins)) __obj.updateDynamic("origins")(origins.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(types)) __obj.updateDynamic("types")(types.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(urls)) __obj.updateDynamic("urls")(urls.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Query]
   }
   @scala.inline
@@ -78,7 +78,7 @@ object Query {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (docFormat != null) __obj.updateDynamic("docFormat")(docFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineCharPositions)) __obj.updateDynamic("lineCharPositions")(lineCharPositions.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineCharPositions)) __obj.updateDynamic("lineCharPositions")(lineCharPositions.get.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Query]
   }
@@ -95,7 +95,7 @@ object Query {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], newName = newName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (docFormat != null) __obj.updateDynamic("docFormat")(docFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineCharPositions)) __obj.updateDynamic("lineCharPositions")(lineCharPositions.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineCharPositions)) __obj.updateDynamic("lineCharPositions")(lineCharPositions.get.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Query]
   }
@@ -104,7 +104,7 @@ object Query {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (docFormat != null) __obj.updateDynamic("docFormat")(docFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineCharPositions)) __obj.updateDynamic("lineCharPositions")(lineCharPositions.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineCharPositions)) __obj.updateDynamic("lineCharPositions")(lineCharPositions.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Query]
   }
   @scala.inline
@@ -112,7 +112,7 @@ object Query {
     end: Double | Position,
     file: String,
     `type`: `type`,
-    depth: Int | Double = null,
+    depth: js.UndefOr[Double] = js.undefined,
     docFormat: full = null,
     lineCharPositions: js.UndefOr[Boolean] = js.undefined,
     preferFunction: js.UndefOr[Boolean] = js.undefined,
@@ -120,10 +120,10 @@ object Query {
   ): Query = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
     if (docFormat != null) __obj.updateDynamic("docFormat")(docFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineCharPositions)) __obj.updateDynamic("lineCharPositions")(lineCharPositions.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferFunction)) __obj.updateDynamic("preferFunction")(preferFunction.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineCharPositions)) __obj.updateDynamic("lineCharPositions")(lineCharPositions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferFunction)) __obj.updateDynamic("preferFunction")(preferFunction.get.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Query]
   }
@@ -139,7 +139,7 @@ object Query {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (docFormat != null) __obj.updateDynamic("docFormat")(docFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineCharPositions)) __obj.updateDynamic("lineCharPositions")(lineCharPositions.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineCharPositions)) __obj.updateDynamic("lineCharPositions")(lineCharPositions.get.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Query]
   }
@@ -154,9 +154,9 @@ object Query {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (docFormat != null) __obj.updateDynamic("docFormat")(docFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineCharPositions)) __obj.updateDynamic("lineCharPositions")(lineCharPositions.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineCharPositions)) __obj.updateDynamic("lineCharPositions")(lineCharPositions.get.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
+    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Query]
   }
   @scala.inline
@@ -171,7 +171,7 @@ object Query {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (docFormat != null) __obj.updateDynamic("docFormat")(docFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineCharPositions)) __obj.updateDynamic("lineCharPositions")(lineCharPositions.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineCharPositions)) __obj.updateDynamic("lineCharPositions")(lineCharPositions.get.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Query]
   }

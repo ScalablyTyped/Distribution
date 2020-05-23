@@ -1,12 +1,12 @@
 package typings.ionicCore
 
-import typings.ionicCore.componentsMod._Global_.HTMLIonContentElement
+import typings.ionicCore.componentsMod.global.HTMLIonContentElement
 import typings.ionicCore.contentInterfaceMod.ScrollBaseDetail
 import typings.ionicCore.contentInterfaceMod.ScrollDetail
 import typings.ionicCore.mod.Color
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -88,7 +88,7 @@ object contentMod extends js.Object {
       */
     def getScrollElement(): js.Promise[HTMLElement] = js.native
     def onAppLoad(): Unit = js.native
-    def onClick(ev: Event_): Unit = js.native
+    def onClick(ev: Event): Unit = js.native
     @JSName("render")
     def render_MContent(): js.Any = js.native
     /**
@@ -106,13 +106,6 @@ object contentMod extends js.Object {
       */
     def scrollToBottom(): js.Promise[Unit] = js.native
     def scrollToBottom(duration: Double): js.Promise[Unit] = js.native
-    def scrollToPoint(): js.Promise[Unit] = js.native
-    def scrollToPoint(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], duration: Double): js.Promise[Unit] = js.native
-    def scrollToPoint(x: js.UndefOr[scala.Nothing], y: Double): js.Promise[Unit] = js.native
-    def scrollToPoint(x: js.UndefOr[scala.Nothing], y: Double, duration: Double): js.Promise[Unit] = js.native
-    def scrollToPoint(x: js.UndefOr[scala.Nothing], y: Null, duration: Double): js.Promise[Unit] = js.native
-    def scrollToPoint(x: Double): js.Promise[Unit] = js.native
-    def scrollToPoint(x: Double, y: js.UndefOr[scala.Nothing], duration: Double): js.Promise[Unit] = js.native
     /**
       * Scroll to a specified X/Y location in the component.
       *
@@ -120,10 +113,11 @@ object contentMod extends js.Object {
       * @param y The point to scroll to on the vertical axis.
       * @param duration The amount of time to take scrolling to that point. Defaults to `0`.
       */
+    def scrollToPoint(): js.Promise[Unit] = js.native
+    def scrollToPoint(x: Double): js.Promise[Unit] = js.native
     def scrollToPoint(x: Double, y: Double): js.Promise[Unit] = js.native
     def scrollToPoint(x: Double, y: Double, duration: Double): js.Promise[Unit] = js.native
     def scrollToPoint(x: Double, y: Null, duration: Double): js.Promise[Unit] = js.native
-    def scrollToPoint(x: Null, y: js.UndefOr[scala.Nothing], duration: Double): js.Promise[Unit] = js.native
     def scrollToPoint(x: Null, y: Double): js.Promise[Unit] = js.native
     def scrollToPoint(x: Null, y: Double, duration: Double): js.Promise[Unit] = js.native
     def scrollToPoint(x: Null, y: Null, duration: Double): js.Promise[Unit] = js.native

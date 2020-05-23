@@ -1,6 +1,6 @@
 package typings.orientjs.mod
 
-import typings.orientjs.AnonPageSize
+import typings.orientjs.anon.PageSize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ class ODatabaseSession () extends ODatabase {
     * @return           The results of the batch script
     */
   def batch[R](batch: String): OResult[R] = js.native
-  def batch[R](batch: String, options: AnonPageSize): OResult[R] = js.native
+  def batch[R](batch: String, options: PageSize): OResult[R] = js.native
   /**
     * Begin a transaction in this database session. ODatabaseSession supports only 1 transaction at time.
     * Use multiple sessions if you want to run concurrent transactions.
@@ -45,7 +45,7 @@ class ODatabaseSession () extends ODatabase {
     * @return            The results of the command
     */
   def command[R](command: String): OResult[R] = js.native
-  def command[R](command: String, options: AnonPageSize): OResult[R] = js.native
+  def command[R](command: String, options: PageSize): OResult[R] = js.native
   /**
     * Commit the transaction.
     * @param   changes
@@ -63,7 +63,7 @@ class ODatabaseSession () extends ODatabase {
     * @return                          The results of the script
     */
   def execute[R](language: String, script: String): OResult[R] = js.native
-  def execute[R](language: String, script: String, options: AnonPageSize): OResult[R] = js.native
+  def execute[R](language: String, script: String, options: PageSize): OResult[R] = js.native
   /**
     * Execute an SQL Live query against the database and retreive the results
     *
@@ -82,7 +82,7 @@ class ODatabaseSession () extends ODatabase {
     * @returns                         The results of the query
     */
   def query[R](query: String): OResult[R] = js.native
-  def query[R](query: String, options: AnonPageSize): OResult[R] = js.native
+  def query[R](query: String, options: PageSize): OResult[R] = js.native
   /**
     * Execute a unit of work in a transaction
     *

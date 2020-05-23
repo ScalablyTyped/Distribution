@@ -56,8 +56,8 @@ object SearchVariantsRequest {
   def apply(
     callSetIds: js.Array[String] = null,
     end: String = null,
-    maxCalls: Int | Double = null,
-    pageSize: Int | Double = null,
+    maxCalls: js.UndefOr[Double] = js.undefined,
+    pageSize: js.UndefOr[Double] = js.undefined,
     pageToken: String = null,
     referenceName: String = null,
     start: String = null,
@@ -67,8 +67,8 @@ object SearchVariantsRequest {
     val __obj = js.Dynamic.literal()
     if (callSetIds != null) __obj.updateDynamic("callSetIds")(callSetIds.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (maxCalls != null) __obj.updateDynamic("maxCalls")(maxCalls.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxCalls)) __obj.updateDynamic("maxCalls")(maxCalls.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     if (referenceName != null) __obj.updateDynamic("referenceName")(referenceName.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])

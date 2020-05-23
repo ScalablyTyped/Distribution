@@ -12,7 +12,7 @@ object CCallOpts {
   @scala.inline
   def apply(async: js.UndefOr[Boolean] = js.undefined): CCallOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CCallOpts]
   }
 }

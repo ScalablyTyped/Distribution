@@ -13,7 +13,7 @@ trait BaseContext
 
 object BaseContext {
   @scala.inline
-  def apply(StringDictionary: /* k */ StringDictionary[js.Any] = null, res: ServerResponse = null): BaseContext = {
+  def apply(StringDictionary: /* name */ StringDictionary[js.Any] = null, res: ServerResponse = null): BaseContext = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (res != null) __obj.updateDynamic("res")(res.asInstanceOf[js.Any])

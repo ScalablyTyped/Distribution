@@ -1,6 +1,6 @@
 package typings.aceBuilds.mod.Ace
 
-import typings.aceBuilds.AnonFirstRange
+import typings.aceBuilds.anon.FirstRange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -59,8 +59,8 @@ trait Folding extends js.Object {
   def getFoldsInRangeList(ranges: js.Array[Range]): js.Array[Fold] = js.native
   def getNextFoldLine(docRow: Double): FoldLine | Null = js.native
   def getNextFoldLine(docRow: Double, startFoldLine: FoldLine): FoldLine | Null = js.native
-  def getParentFoldRangeData(row: Double): AnonFirstRange = js.native
-  def getParentFoldRangeData(row: Double, ignoreCurrent: Boolean): AnonFirstRange = js.native
+  def getParentFoldRangeData(row: Double): FirstRange = js.native
+  def getParentFoldRangeData(row: Double, ignoreCurrent: Boolean): FirstRange = js.native
   def isRowFolded(docRow: Double): Boolean = js.native
   def isRowFolded(docRow: Double, startFoldRow: FoldLine): Boolean = js.native
   def removeFold(fold: Fold): Unit = js.native

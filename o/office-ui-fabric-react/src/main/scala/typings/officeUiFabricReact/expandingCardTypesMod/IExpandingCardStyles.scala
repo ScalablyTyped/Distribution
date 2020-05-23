@@ -24,16 +24,16 @@ trait IExpandingCardStyles extends IBaseCardStyles {
 object IExpandingCardStyles {
   @scala.inline
   def apply(
-    compactCard: IStyle = null,
-    expandedCard: IStyle = null,
-    expandedCardScroll: IStyle = null,
-    root: IStyle = null
+    compactCard: js.UndefOr[Null | IStyle] = js.undefined,
+    expandedCard: js.UndefOr[Null | IStyle] = js.undefined,
+    expandedCardScroll: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined
   ): IExpandingCardStyles = {
     val __obj = js.Dynamic.literal()
-    if (compactCard != null) __obj.updateDynamic("compactCard")(compactCard.asInstanceOf[js.Any])
-    if (expandedCard != null) __obj.updateDynamic("expandedCard")(expandedCard.asInstanceOf[js.Any])
-    if (expandedCardScroll != null) __obj.updateDynamic("expandedCardScroll")(expandedCardScroll.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(compactCard)) __obj.updateDynamic("compactCard")(compactCard.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandedCard)) __obj.updateDynamic("expandedCard")(expandedCard.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandedCardScroll)) __obj.updateDynamic("expandedCardScroll")(expandedCardScroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExpandingCardStyles]
   }
 }

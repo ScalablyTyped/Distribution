@@ -20,7 +20,7 @@ object MostReadableArgs {
     size: large | small = null
   ): MostReadableArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeFallbackColors)) __obj.updateDynamic("includeFallbackColors")(includeFallbackColors.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeFallbackColors)) __obj.updateDynamic("includeFallbackColors")(includeFallbackColors.get.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[MostReadableArgs]

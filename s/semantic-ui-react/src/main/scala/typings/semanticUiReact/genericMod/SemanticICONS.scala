@@ -2497,7 +2497,6 @@ object SemanticICONS {
   def jpy: typings.semanticUiReact.semanticUiReactStrings.jpy = "jpy".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.jpy]
   @scala.inline
   def `js square`: typings.semanticUiReact.semanticUiReactStrings.`js square` = ("js square").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`js square`]
-  @JSName("js")
   @scala.inline
   def js_ : typings.semanticUiReact.semanticUiReactStrings.js_ = "js".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.js_]
   @scala.inline

@@ -1,7 +1,7 @@
 package typings.dexie.mod.Dexie
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dexie.AnonInstantiableTError
+import typings.dexie.anon.InstantiableTError
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,7 +29,7 @@ trait Promise[T] extends js.Object {
     * @returns A Promise for the completion of the callback.
     */
   def `catch`[TError](
-    errorConstructor: AnonInstantiableTError[TError],
+    errorConstructor: InstantiableTError[TError],
     onrejected: js.Function1[/* reason */ TError, T | js.Thenable[T]]
   ): Promise[T] = js.native
   // Extended methods provided by Dexie.Promise:
@@ -53,7 +53,7 @@ trait Promise[T] extends js.Object {
     */
   @JSName("catch")
   def catch_TResultTError[TResult, TError](
-    errorConstructor: AnonInstantiableTError[TError],
+    errorConstructor: InstantiableTError[TError],
     onrejected: js.Function1[/* reason */ TError, TResult | js.Thenable[TResult]]
   ): Promise[T | TResult] = js.native
   /**
@@ -66,30 +66,23 @@ trait Promise[T] extends js.Object {
   def `finally`(onFinally: js.Function0[Unit]): Promise[T] = js.native
   // From Promise<T> in lib.es2015.d.ts and lib.es2015.symbol.wellknown.d.ts but with return type Dexie.Promise<T>:
   def `then`(): Promise[T] = js.native
-  def `then`(
-    onfulfilled: js.UndefOr[scala.Nothing],
-    onrejected: js.Function1[/* reason */ js.Any, T | js.Thenable[T]]
-  ): Promise[T] = js.native
   def `then`(onfulfilled: js.Function1[/* value */ T, T | js.Thenable[T]]): Promise[T] = js.native
   def `then`(
     onfulfilled: js.Function1[/* value */ T, T | js.Thenable[T]],
     onrejected: js.Function1[/* reason */ js.Any, T | js.Thenable[T]]
   ): Promise[T] = js.native
   def `then`(onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, T | js.Thenable[T]]): Promise[T] = js.native
-  @JSName("then")
-  def then_TResult[TResult](
-    onfulfilled: js.UndefOr[scala.Nothing],
+  def `then`[TResult](
+    onfulfilled: js.UndefOr[(js.Function1[/* value */ T, T | js.Thenable[T]]) | Null],
     onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]
   ): Promise[T | TResult] = js.native
   @JSName("then")
   def then_TResult[TResult](onfulfilled: js.Function1[/* value */ T, TResult | js.Thenable[TResult]]): Promise[TResult] = js.native
   @JSName("then")
   def then_TResult[TResult](
-    onfulfilled: js.Function1[/* value */ T, T | TResult | (js.Thenable[T | TResult])],
+    onfulfilled: js.Function1[/* value */ T, TResult | js.Thenable[TResult]],
     onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]
-  ): Promise[T | TResult] = js.native
-  @JSName("then")
-  def then_TResult[TResult](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): Promise[T | TResult] = js.native
+  ): Promise[TResult] = js.native
   @JSName("then")
   def then_TResult1TResult2[TResult1, TResult2](
     onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]],

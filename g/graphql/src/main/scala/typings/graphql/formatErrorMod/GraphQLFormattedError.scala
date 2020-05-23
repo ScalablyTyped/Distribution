@@ -34,7 +34,7 @@ trait GraphQLFormattedError[TExtensions /* <: Record[String, _] */] extends js.O
 
 object GraphQLFormattedError {
   @scala.inline
-  def apply[TExtensions /* <: Record[String, _] */](
+  def apply[TExtensions](
     message: String,
     extensions: TExtensions = null,
     locations: js.Array[SourceLocation] = null,

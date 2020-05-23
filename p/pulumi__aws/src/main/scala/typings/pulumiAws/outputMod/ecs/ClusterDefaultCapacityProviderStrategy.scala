@@ -13,10 +13,14 @@ trait ClusterDefaultCapacityProviderStrategy extends js.Object {
 
 object ClusterDefaultCapacityProviderStrategy {
   @scala.inline
-  def apply(capacityProvider: String, base: Int | Double = null, weight: Int | Double = null): ClusterDefaultCapacityProviderStrategy = {
+  def apply(
+    capacityProvider: String,
+    base: js.UndefOr[Double] = js.undefined,
+    weight: js.UndefOr[Double] = js.undefined
+  ): ClusterDefaultCapacityProviderStrategy = {
     val __obj = js.Dynamic.literal(capacityProvider = capacityProvider.asInstanceOf[js.Any])
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(base)) __obj.updateDynamic("base")(base.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterDefaultCapacityProviderStrategy]
   }
 }

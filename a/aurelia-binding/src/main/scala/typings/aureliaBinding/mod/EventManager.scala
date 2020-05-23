@@ -1,6 +1,6 @@
 package typings.aureliaBinding.mod
 
-import typings.aureliaBinding.AnonProperties
+import typings.aureliaBinding.anon.Properties
 import typings.aureliaBinding.aureliaBindingBooleans.`true`
 import typings.std.EventListenerOrEventListenerObject
 import typings.std.EventTarget
@@ -36,6 +36,6 @@ class EventManager () extends js.Object {
     delegate: delegationStrategy,
     disposable: `true`
   ): Disposable = js.native
-  def registerElementConfig(config: AnonProperties): Unit = js.native
+  def registerElementConfig(config: Properties): Unit = js.native
 }
 

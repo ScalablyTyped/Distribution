@@ -56,7 +56,7 @@ object DescribeDatasetImportJobResponse {
   @scala.inline
   def apply(
     CreationTime: Timestamp = null,
-    DataSize: Int | scala.Double = null,
+    DataSize: js.UndefOr[Double] = js.undefined,
     DataSource: DataSource = null,
     DatasetArn: Arn = null,
     DatasetImportJobArn: Arn = null,
@@ -69,7 +69,7 @@ object DescribeDatasetImportJobResponse {
   ): DescribeDatasetImportJobResponse = {
     val __obj = js.Dynamic.literal()
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (DataSize != null) __obj.updateDynamic("DataSize")(DataSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(DataSize)) __obj.updateDynamic("DataSize")(DataSize.get.asInstanceOf[js.Any])
     if (DataSource != null) __obj.updateDynamic("DataSource")(DataSource.asInstanceOf[js.Any])
     if (DatasetArn != null) __obj.updateDynamic("DatasetArn")(DatasetArn.asInstanceOf[js.Any])
     if (DatasetImportJobArn != null) __obj.updateDynamic("DatasetImportJobArn")(DatasetImportJobArn.asInstanceOf[js.Any])

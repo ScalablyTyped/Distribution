@@ -23,7 +23,7 @@ trait IConsoleCreator[T /* <: Widget */] extends IMenuExtender[T] {
 
 object IConsoleCreator {
   @scala.inline
-  def apply[T /* <: Widget */](
+  def apply[T](
     createConsole: T => js.Promise[Unit],
     name: String,
     tracker: IWidgetTracker[T],

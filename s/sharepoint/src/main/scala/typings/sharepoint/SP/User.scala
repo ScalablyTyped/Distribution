@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.User")
 @js.native
-class User () extends Principal {
+trait User extends Principal {
   def get_email(): String = js.native
   def get_groups(): GroupCollection = js.native
   def get_isSiteAdmin(): Boolean = js.native

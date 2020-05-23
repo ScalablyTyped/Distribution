@@ -1,7 +1,7 @@
 package typings.reactNavigation.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.reactNavigation.AnonParams
+import typings.reactNavigation.anon.Params
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +32,7 @@ trait NavigationRouter[State, Options] extends js.Object {
     js.Object, 
     NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams]
   ] = js.native
-  def getPathAndParamsForState(state: State): AnonParams = js.native
+  def getPathAndParamsForState(state: State): Params = js.native
   /**
     * The reducer that outputs the new navigation state for a given action, with
     * an optional previous state. When the action is considered handled but the

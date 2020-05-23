@@ -2,6 +2,7 @@ package typings.tabulatorTables.Tabulator
 
 import typings.std.HTMLElement
 import typings.tabulatorTables.tabulatorTablesBooleans.`false`
+import typings.tabulatorTables.tabulatorTablesStrings.hover
 import typings.tabulatorTables.tabulatorTablesStrings.load
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,9 +24,9 @@ trait OptionsGeneral extends js.Object {
   ] = js.undefined
   /** The dataSorting callback is triggered whenever a sort event occurs, before sorting happens. */
   var dataSorting: js.UndefOr[js.Function1[/* sorters */ js.Array[Sorter], Unit]] = js.undefined
-  /** Footer  element to display for the table	 */
+  /** Footer  element to display for the table     */
   var footerElement: js.UndefOr[String | HTMLElement] = js.undefined
-  /** Sets the height of the containing element, can be set to any valid height css value. If set to false (the default), the height of the table will resize to fit the table data.	 */
+  /** Sets the height of the containing element, can be set to any valid height css value. If set to false (the default), the height of the table will resize to fit the table data.     */
   var height: js.UndefOr[String | Double | `false`] = js.undefined
   /** The htmlImported callback is triggered when Tabulator finishes importing data from an HTML table. */
   var htmlImported: js.UndefOr[EmptyCallback] = js.undefined
@@ -33,7 +34,7 @@ trait OptionsGeneral extends js.Object {
   var htmlImporting: js.UndefOr[EmptyCallback] = js.undefined
   /** Setting the invalidOptionWarnings option to false will disable console warning messages for invalid properties in the table constructor and column definition object */
   var invalidOptionWarnings: js.UndefOr[Boolean] = js.undefined
-  /** Keybinding configuration object	 */
+  /** Keybinding configuration object     */
   var keybindings: js.UndefOr[`false` | KeyBinding] = js.undefined
   /** Can be set to any valid CSS value. By setting this you can allow your table to expand to fit the data, but not overflow its parent element. Whene there are too many rows to fit in the available space, the vertical scroll bar will be shown. This has the added benefit of improving load times on larger tables */
   var maxHeight: js.UndefOr[String | Double] = js.undefined
@@ -41,7 +42,7 @@ trait OptionsGeneral extends js.Object {
   var minHeight: js.UndefOr[String | Double] = js.undefined
   /** Whenever a page has been loaded, the pageLoaded callback is called, passing the current page number as an argument. */
   var pageLoaded: js.UndefOr[js.Function1[/* pageno */ Double, Unit]] = js.undefined
-  /** placeholder element to display on empty table	 */
+  /** placeholder element to display on empty table     */
   var placeholder: js.UndefOr[String | HTMLElement] = js.undefined
   /** * The reactivity systems allow Tabulator to watch arrays and objects passed into the table for changes and then automatically update the table.
     This approach means you no longer need to worry about calling a number of different functions on the table to make changes, you simply update the array or object you originally passed into the table and Tabulator will take care of the rest.
@@ -67,13 +68,13 @@ trait OptionsGeneral extends js.Object {
   var tableBuilding: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** When a the tabulator constructor is called and the table has finished being rendered, the tableBuilt callback will triggered: */
   var tableBuilt: js.UndefOr[js.Function0[Unit]] = js.undefined
-  /** When to regenerate cell tooltip value	 */
-  var tooltipGenerationMode: js.UndefOr[load] = js.undefined
-  /** Function to generate tooltips for cells	 */
+  /** When to regenerate cell tooltip value     */
+  var tooltipGenerationMode: js.UndefOr[load | hover] = js.undefined
+  /** Function to generate tooltips for cells     */
   var tooltips: js.UndefOr[GlobalTooltipOption] = js.undefined
-  /** Enable rendering using the Virtual DOM engine	 */
+  /** Enable rendering using the Virtual DOM engine     */
   var virtualDom: js.UndefOr[Boolean] = js.undefined
-  /** Manually set the size of the virtual DOM buffer	 */
+  /** Manually set the size of the virtual DOM buffer     */
   var virtualDomBuffer: js.UndefOr[Boolean | Double] = js.undefined
 }
 
@@ -103,13 +104,13 @@ object OptionsGeneral {
     scrollVertical: /* top */ js.Any => Unit = null,
     tableBuilding: () => Unit = null,
     tableBuilt: () => Unit = null,
-    tooltipGenerationMode: load = null,
+    tooltipGenerationMode: load | hover = null,
     tooltips: GlobalTooltipOption = null,
     virtualDom: js.UndefOr[Boolean] = js.undefined,
     virtualDomBuffer: Boolean | Double = null
   ): OptionsGeneral = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize.get.asInstanceOf[js.Any])
     if (dataEdited != null) __obj.updateDynamic("dataEdited")(js.Any.fromFunction1(dataEdited))
     if (dataLoaded != null) __obj.updateDynamic("dataLoaded")(js.Any.fromFunction1(dataLoaded))
     if (dataLoading != null) __obj.updateDynamic("dataLoading")(js.Any.fromFunction1(dataLoading))
@@ -119,13 +120,13 @@ object OptionsGeneral {
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (htmlImported != null) __obj.updateDynamic("htmlImported")(js.Any.fromFunction1(htmlImported))
     if (htmlImporting != null) __obj.updateDynamic("htmlImporting")(js.Any.fromFunction1(htmlImporting))
-    if (!js.isUndefined(invalidOptionWarnings)) __obj.updateDynamic("invalidOptionWarnings")(invalidOptionWarnings.asInstanceOf[js.Any])
+    if (!js.isUndefined(invalidOptionWarnings)) __obj.updateDynamic("invalidOptionWarnings")(invalidOptionWarnings.get.asInstanceOf[js.Any])
     if (keybindings != null) __obj.updateDynamic("keybindings")(keybindings.asInstanceOf[js.Any])
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     if (pageLoaded != null) __obj.updateDynamic("pageLoaded")(js.Any.fromFunction1(pageLoaded))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(reactiveData)) __obj.updateDynamic("reactiveData")(reactiveData.asInstanceOf[js.Any])
+    if (!js.isUndefined(reactiveData)) __obj.updateDynamic("reactiveData")(reactiveData.get.asInstanceOf[js.Any])
     if (renderComplete != null) __obj.updateDynamic("renderComplete")(js.Any.fromFunction0(renderComplete))
     if (renderStarted != null) __obj.updateDynamic("renderStarted")(js.Any.fromFunction0(renderStarted))
     if (scrollHorizontal != null) __obj.updateDynamic("scrollHorizontal")(js.Any.fromFunction1(scrollHorizontal))
@@ -134,7 +135,7 @@ object OptionsGeneral {
     if (tableBuilt != null) __obj.updateDynamic("tableBuilt")(js.Any.fromFunction0(tableBuilt))
     if (tooltipGenerationMode != null) __obj.updateDynamic("tooltipGenerationMode")(tooltipGenerationMode.asInstanceOf[js.Any])
     if (tooltips != null) __obj.updateDynamic("tooltips")(tooltips.asInstanceOf[js.Any])
-    if (!js.isUndefined(virtualDom)) __obj.updateDynamic("virtualDom")(virtualDom.asInstanceOf[js.Any])
+    if (!js.isUndefined(virtualDom)) __obj.updateDynamic("virtualDom")(virtualDom.get.asInstanceOf[js.Any])
     if (virtualDomBuffer != null) __obj.updateDynamic("virtualDomBuffer")(virtualDomBuffer.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsGeneral]
   }

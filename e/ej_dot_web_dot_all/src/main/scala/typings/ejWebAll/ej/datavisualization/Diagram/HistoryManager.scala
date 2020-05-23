@@ -50,7 +50,7 @@ object HistoryManager {
     push: js.Any = null,
     redo: js.Any = null,
     redoStack: js.Array[_] = null,
-    stackLimit: Int | Double = null,
+    stackLimit: js.UndefOr[Double] = js.undefined,
     startGroupAction: js.Any = null,
     undo: js.Any = null,
     undoStack: js.Array[_] = null
@@ -62,7 +62,7 @@ object HistoryManager {
     if (push != null) __obj.updateDynamic("push")(push.asInstanceOf[js.Any])
     if (redo != null) __obj.updateDynamic("redo")(redo.asInstanceOf[js.Any])
     if (redoStack != null) __obj.updateDynamic("redoStack")(redoStack.asInstanceOf[js.Any])
-    if (stackLimit != null) __obj.updateDynamic("stackLimit")(stackLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(stackLimit)) __obj.updateDynamic("stackLimit")(stackLimit.get.asInstanceOf[js.Any])
     if (startGroupAction != null) __obj.updateDynamic("startGroupAction")(startGroupAction.asInstanceOf[js.Any])
     if (undo != null) __obj.updateDynamic("undo")(undo.asInstanceOf[js.Any])
     if (undoStack != null) __obj.updateDynamic("undoStack")(undoStack.asInstanceOf[js.Any])

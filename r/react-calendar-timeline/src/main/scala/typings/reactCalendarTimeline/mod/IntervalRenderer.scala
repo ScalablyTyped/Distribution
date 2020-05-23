@@ -1,6 +1,6 @@
 package typings.reactCalendarTimeline.mod
 
-import typings.reactCalendarTimeline.RequiredGetIntervalPropsk
+import typings.reactCalendarTimeline.anon.RequiredGetIntervalPropsk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

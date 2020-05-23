@@ -1,6 +1,6 @@
 package typings.antdMobile.customKeyboardMod
 
-import typings.antdMobile.AnonDisabledKeys
+import typings.antdMobile.anon.DisabledKeys
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends CustomKeyboard
 @JSImport("antd-mobile/lib/input-item/CustomKeyboard", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonDisabledKeys = js.native
+  var defaultProps: DisabledKeys = js.native
 }
 

@@ -39,7 +39,7 @@ object UnmarshalledSegmentResponse {
     Name: String = null,
     SegmentGroups: UnmarshalledSegmentGroupList = null,
     SegmentType: DIMENSIONAL | IMPORT | String = null,
-    Version: Int | Double = null
+    Version: js.UndefOr[Double] = js.undefined
   ): UnmarshalledSegmentResponse = {
     val __obj = js.Dynamic.literal()
     if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId.asInstanceOf[js.Any])
@@ -51,7 +51,7 @@ object UnmarshalledSegmentResponse {
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (SegmentGroups != null) __obj.updateDynamic("SegmentGroups")(SegmentGroups.asInstanceOf[js.Any])
     if (SegmentType != null) __obj.updateDynamic("SegmentType")(SegmentType.asInstanceOf[js.Any])
-    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
+    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledSegmentResponse]
   }
 }

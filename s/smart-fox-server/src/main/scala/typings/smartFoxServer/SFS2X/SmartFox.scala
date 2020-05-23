@@ -45,14 +45,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SFS2X.SmartFox")
 @js.native
-/**
-  * Creates a new SmartFox instance.
-  * @param {IconfigObj} configObj The SmartFox instance can be configured through a configuration object with the following properties (all optional).
-  */
-class SmartFox () extends js.Object {
-  def this(configObj: IconfigObj) = this()
+trait SmartFox extends js.Object {
   /** @type {Managers.BuddyManager} Returns a reference to the Buddy Manager. */
   var buddyManager: BuddyManager = js.native
   /** @type {IconfigObj} Returns the client configuration object passed during the SmartFox instance creation. */

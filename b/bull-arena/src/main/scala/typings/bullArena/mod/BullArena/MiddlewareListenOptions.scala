@@ -18,15 +18,15 @@ object MiddlewareListenOptions {
     basePath: String = null,
     disableListen: js.UndefOr[Boolean] = js.undefined,
     host: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     useCdn: js.UndefOr[Boolean] = js.undefined
   ): MiddlewareListenOptions = {
     val __obj = js.Dynamic.literal()
     if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableListen)) __obj.updateDynamic("disableListen")(disableListen.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableListen)) __obj.updateDynamic("disableListen")(disableListen.get.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCdn)) __obj.updateDynamic("useCdn")(useCdn.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCdn)) __obj.updateDynamic("useCdn")(useCdn.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MiddlewareListenOptions]
   }
 }

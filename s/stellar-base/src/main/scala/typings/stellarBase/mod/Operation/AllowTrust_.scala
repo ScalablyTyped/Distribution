@@ -22,7 +22,7 @@ object AllowTrust_ {
   ): AllowTrust_ = {
     val __obj = js.Dynamic.literal(assetCode = assetCode.asInstanceOf[js.Any], trustor = trustor.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(authorize)) __obj.updateDynamic("authorize")(authorize.asInstanceOf[js.Any])
+    if (!js.isUndefined(authorize)) __obj.updateDynamic("authorize")(authorize.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllowTrust_]
   }

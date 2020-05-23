@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation._
 
 trait IAbstract extends IBase {
   /** [Method] Returns the value of startTime
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getStartTime: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of startValue
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getStartValue: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Sets the value of startTime
-  		* @param startTime Number The new value.
-  		*/
+    * @param startTime Number The new value.
+    */
   var setStartTime: js.UndefOr[js.Function1[/* startTime */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of startValue
-  		* @param startValue Number The new value.
-  		*/
+    * @param startValue Number The new value.
+    */
   var setStartValue: js.UndefOr[js.Function1[/* startValue */ js.UndefOr[Double], Unit]] = js.undefined
 }
 
@@ -70,7 +70,7 @@ object IAbstract {
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setStartTime != null) __obj.updateDynamic("setStartTime")(js.Any.fromFunction1(setStartTime))
     if (setStartValue != null) __obj.updateDynamic("setStartValue")(js.Any.fromFunction1(setStartValue))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAbstract]

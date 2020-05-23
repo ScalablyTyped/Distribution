@@ -18,9 +18,9 @@ trait AcceptCertificateTransferRequest extends js.Object {
 
 object AcceptCertificateTransferRequest {
   @scala.inline
-  def apply(certificateId: CertificateId, setAsActive: js.UndefOr[scala.Boolean] = js.undefined): AcceptCertificateTransferRequest = {
+  def apply(certificateId: CertificateId, setAsActive: js.UndefOr[SetAsActive] = js.undefined): AcceptCertificateTransferRequest = {
     val __obj = js.Dynamic.literal(certificateId = certificateId.asInstanceOf[js.Any])
-    if (!js.isUndefined(setAsActive)) __obj.updateDynamic("setAsActive")(setAsActive.asInstanceOf[js.Any])
+    if (!js.isUndefined(setAsActive)) __obj.updateDynamic("setAsActive")(setAsActive.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceptCertificateTransferRequest]
   }
 }

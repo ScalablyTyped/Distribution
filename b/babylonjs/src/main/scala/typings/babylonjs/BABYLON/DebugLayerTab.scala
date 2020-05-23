@@ -1,6 +1,5 @@
 package typings.babylonjs.BABYLON
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,25 +39,6 @@ object DebugLayerTab extends js.Object {
     */
   @js.native
   sealed trait Tools extends DebugLayerTab
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DebugLayerTab with Double] = js.native
-  /* 1 */ @js.native
-  object Debug
-    extends TopLevel[typings.babylonjs.BABYLON.DebugLayerTab.Debug with Double]
-  
-  /* 0 */ @js.native
-  object Properties extends TopLevel[Properties with Double]
-  
-  /* 4 */ @js.native
-  object Settings extends TopLevel[Settings with Double]
-  
-  /* 2 */ @js.native
-  object Statistics extends TopLevel[Statistics with Double]
-  
-  /* 3 */ @js.native
-  object Tools
-    extends TopLevel[typings.babylonjs.BABYLON.DebugLayerTab.Tools with Double]
   
 }
 

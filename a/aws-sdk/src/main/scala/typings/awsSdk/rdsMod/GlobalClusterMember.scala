@@ -24,12 +24,12 @@ object GlobalClusterMember {
   @scala.inline
   def apply(
     DBClusterArn: String = null,
-    IsWriter: js.UndefOr[scala.Boolean] = js.undefined,
+    IsWriter: js.UndefOr[Boolean] = js.undefined,
     Readers: ReadersArnList = null
   ): GlobalClusterMember = {
     val __obj = js.Dynamic.literal()
     if (DBClusterArn != null) __obj.updateDynamic("DBClusterArn")(DBClusterArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsWriter)) __obj.updateDynamic("IsWriter")(IsWriter.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsWriter)) __obj.updateDynamic("IsWriter")(IsWriter.get.asInstanceOf[js.Any])
     if (Readers != null) __obj.updateDynamic("Readers")(Readers.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalClusterMember]
   }

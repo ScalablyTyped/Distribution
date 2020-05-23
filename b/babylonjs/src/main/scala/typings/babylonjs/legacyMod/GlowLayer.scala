@@ -1,6 +1,6 @@
 package typings.babylonjs.legacyMod
 
-import typings.babylonjs.PartialIGlowLayerOptions
+import typings.babylonjs.anon.PartialIGlowLayerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

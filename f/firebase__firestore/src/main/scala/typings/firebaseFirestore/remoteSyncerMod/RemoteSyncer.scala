@@ -58,7 +58,6 @@ object RemoteSyncer {
     rejectListen: (TargetId, FirestoreError) => js.Promise[Unit]
   ): RemoteSyncer = {
     val __obj = js.Dynamic.literal(applyRemoteEvent = js.Any.fromFunction1(applyRemoteEvent), applySuccessfulWrite = js.Any.fromFunction1(applySuccessfulWrite), getRemoteKeysForTarget = js.Any.fromFunction1(getRemoteKeysForTarget), rejectFailedWrite = js.Any.fromFunction2(rejectFailedWrite), rejectListen = js.Any.fromFunction2(rejectListen))
-  
     __obj.asInstanceOf[RemoteSyncer]
   }
 }

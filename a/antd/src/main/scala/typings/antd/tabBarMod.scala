@@ -1,6 +1,7 @@
 package typings.antd
 
-import typings.antd.contextMod.ConfigConsumerProps
+import typings.antd.anon.Animated
+import typings.antd.configProviderContextMod.ConfigConsumerProps
 import typings.antd.tabsMod.TabsProps
 import typings.react.mod.Component
 import typings.react.mod.ReactElement
@@ -23,7 +24,7 @@ object tabBarMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonAnimated = js.native
+    var defaultProps: Animated = js.native
   }
   
 }

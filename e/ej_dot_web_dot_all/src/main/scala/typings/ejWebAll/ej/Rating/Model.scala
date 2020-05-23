@@ -109,45 +109,45 @@ object Model {
     enabled: js.UndefOr[Boolean] = js.undefined,
     height: String = null,
     htmlAttributes: js.Any = null,
-    incrementStep: Int | Double = null,
-    maxValue: Int | Double = null,
-    minValue: Int | Double = null,
+    incrementStep: js.UndefOr[Double] = js.undefined,
+    maxValue: js.UndefOr[Double] = js.undefined,
+    minValue: js.UndefOr[Double] = js.undefined,
     mousemove: /* e */ MousemoveEventArgs => Unit = null,
     mouseout: /* e */ MouseoutEventArgs => Unit = null,
     mouseover: /* e */ MouseoverEventArgs => Unit = null,
     orientation: Orientation | String = null,
     precision: Precision | String = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
-    shapeHeight: Int | Double = null,
-    shapeWidth: Int | Double = null,
+    shapeHeight: js.UndefOr[Double] = js.undefined,
+    shapeWidth: js.UndefOr[Double] = js.undefined,
     showTooltip: js.UndefOr[Boolean] = js.undefined,
-    value: Int | Double = null,
+    value: js.UndefOr[Double] = js.undefined,
     width: String = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowReset)) __obj.updateDynamic("allowReset")(allowReset.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowReset)) __obj.updateDynamic("allowReset")(allowReset.get.asInstanceOf[js.Any])
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
-    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes.asInstanceOf[js.Any])
-    if (incrementStep != null) __obj.updateDynamic("incrementStep")(incrementStep.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(incrementStep)) __obj.updateDynamic("incrementStep")(incrementStep.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minValue)) __obj.updateDynamic("minValue")(minValue.get.asInstanceOf[js.Any])
     if (mousemove != null) __obj.updateDynamic("mousemove")(js.Any.fromFunction1(mousemove))
     if (mouseout != null) __obj.updateDynamic("mouseout")(js.Any.fromFunction1(mouseout))
     if (mouseover != null) __obj.updateDynamic("mouseover")(js.Any.fromFunction1(mouseover))
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (shapeHeight != null) __obj.updateDynamic("shapeHeight")(shapeHeight.asInstanceOf[js.Any])
-    if (shapeWidth != null) __obj.updateDynamic("shapeWidth")(shapeWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shapeHeight)) __obj.updateDynamic("shapeHeight")(shapeHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shapeWidth)) __obj.updateDynamic("shapeWidth")(shapeWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }

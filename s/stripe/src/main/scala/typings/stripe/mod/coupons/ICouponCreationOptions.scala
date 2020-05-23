@@ -58,30 +58,30 @@ object ICouponCreationOptions {
   @scala.inline
   def apply(
     duration: forever | once | repeating,
-    amount_off: Int | Double = null,
+    amount_off: js.UndefOr[Double] = js.undefined,
     currency: String = null,
-    duration_in_months: Int | Double = null,
+    duration_in_months: js.UndefOr[Double] = js.undefined,
     expand: js.Array[String] = null,
     id: String = null,
     include: js.Array[String] = null,
-    max_redemptions: Int | Double = null,
+    max_redemptions: js.UndefOr[Double] = js.undefined,
     metadata: IOptionsMetadata = null,
     name: String = null,
-    percent_off: Int | Double = null,
-    redeem_by: Int | Double = null
+    percent_off: js.UndefOr[Double] = js.undefined,
+    redeem_by: js.UndefOr[Double] = js.undefined
   ): ICouponCreationOptions = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
-    if (amount_off != null) __obj.updateDynamic("amount_off")(amount_off.asInstanceOf[js.Any])
+    if (!js.isUndefined(amount_off)) __obj.updateDynamic("amount_off")(amount_off.get.asInstanceOf[js.Any])
     if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
-    if (duration_in_months != null) __obj.updateDynamic("duration_in_months")(duration_in_months.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration_in_months)) __obj.updateDynamic("duration_in_months")(duration_in_months.get.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (max_redemptions != null) __obj.updateDynamic("max_redemptions")(max_redemptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(max_redemptions)) __obj.updateDynamic("max_redemptions")(max_redemptions.get.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (percent_off != null) __obj.updateDynamic("percent_off")(percent_off.asInstanceOf[js.Any])
-    if (redeem_by != null) __obj.updateDynamic("redeem_by")(redeem_by.asInstanceOf[js.Any])
+    if (!js.isUndefined(percent_off)) __obj.updateDynamic("percent_off")(percent_off.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(redeem_by)) __obj.updateDynamic("redeem_by")(redeem_by.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICouponCreationOptions]
   }
 }

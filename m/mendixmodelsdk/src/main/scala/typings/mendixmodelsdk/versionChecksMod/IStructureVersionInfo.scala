@@ -15,9 +15,9 @@ object IStructureVersionInfo {
   @scala.inline
   def apply(
     deleted: String = null,
-    deletionMessage: String = null,
+    deletionMessage: js.UndefOr[Null | String] = js.undefined,
     deprecated: String = null,
-    deprecationMessage: String = null,
+    deprecationMessage: js.UndefOr[Null | String] = js.undefined,
     experimental: IModifierValueHistory = null,
     introduced: String = null,
     properties: StringDictionary[IPropertyVersionInfo] = null,
@@ -25,9 +25,9 @@ object IStructureVersionInfo {
   ): IStructureVersionInfo = {
     val __obj = js.Dynamic.literal()
     if (deleted != null) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
-    if (deletionMessage != null) __obj.updateDynamic("deletionMessage")(deletionMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(deletionMessage)) __obj.updateDynamic("deletionMessage")(deletionMessage.asInstanceOf[js.Any])
     if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
-    if (deprecationMessage != null) __obj.updateDynamic("deprecationMessage")(deprecationMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(deprecationMessage)) __obj.updateDynamic("deprecationMessage")(deprecationMessage.asInstanceOf[js.Any])
     if (experimental != null) __obj.updateDynamic("experimental")(experimental.asInstanceOf[js.Any])
     if (introduced != null) __obj.updateDynamic("introduced")(introduced.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])

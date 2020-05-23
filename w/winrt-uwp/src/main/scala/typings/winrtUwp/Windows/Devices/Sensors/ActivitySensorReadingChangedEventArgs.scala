@@ -5,10 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents data for the reading–changed event of the sensor. */
-@JSGlobal("Windows.Devices.Sensors.ActivitySensorReadingChangedEventArgs")
-@js.native
-abstract class ActivitySensorReadingChangedEventArgs () extends js.Object {
+trait ActivitySensorReadingChangedEventArgs extends js.Object {
   /** Gets the most recent sensor reading. */
-  var reading: ActivitySensorReading = js.native
+  var reading: ActivitySensorReading
+}
+
+object ActivitySensorReadingChangedEventArgs {
+  @scala.inline
+  def apply(reading: ActivitySensorReading): ActivitySensorReadingChangedEventArgs = {
+    val __obj = js.Dynamic.literal(reading = reading.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ActivitySensorReadingChangedEventArgs]
+  }
 }
 

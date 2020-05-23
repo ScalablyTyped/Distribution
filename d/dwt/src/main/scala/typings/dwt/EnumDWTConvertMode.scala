@@ -1,6 +1,5 @@
 package typings.dwt
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,14 +15,6 @@ object EnumDWTConvertMode extends js.Object {
   
   @js.native
   sealed trait CM_RENDERALL extends EnumDWTConvertMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EnumDWTConvertMode with Double] = js.native
-  /* 0 */ @js.native
-  object CM_DEFAULT extends TopLevel[CM_DEFAULT with Double]
-  
-  /* 1 */ @js.native
-  object CM_RENDERALL extends TopLevel[CM_RENDERALL with Double]
   
 }
 

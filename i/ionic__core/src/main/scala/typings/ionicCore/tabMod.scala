@@ -1,6 +1,6 @@
 package typings.ionicCore
 
-import typings.ionicCore.componentsMod._Global_.HTMLIonTabElement
+import typings.ionicCore.componentsMod.global.HTMLIonTabElement
 import typings.ionicCore.mod.ComponentRef
 import typings.ionicCore.mod.FrameworkDelegate
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface

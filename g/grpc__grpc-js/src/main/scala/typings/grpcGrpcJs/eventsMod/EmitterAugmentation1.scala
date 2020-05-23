@@ -16,7 +16,7 @@ trait EmitterAugmentation1[Name /* <: String | js.Symbol */, Arg] extends js.Obj
 
 object EmitterAugmentation1 {
   @scala.inline
-  def apply[Name /* <: String | js.Symbol */, Arg](
+  def apply[Name, Arg](
     addListener: (Name, js.Function1[/* arg1 */ Arg, Unit]) => EmitterAugmentation1[Name, Arg],
     emit: (Name, Arg) => Boolean,
     on: (Name, js.Function1[/* arg1 */ Arg, Unit]) => EmitterAugmentation1[Name, Arg],
@@ -26,7 +26,6 @@ object EmitterAugmentation1 {
     removeListener: (Name, js.Function1[/* arg1 */ Arg, Unit]) => EmitterAugmentation1[Name, Arg]
   ): EmitterAugmentation1[Name, Arg] = {
     val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), emit = js.Any.fromFunction2(emit), on = js.Any.fromFunction2(on), once = js.Any.fromFunction2(once), prependListener = js.Any.fromFunction2(prependListener), prependOnceListener = js.Any.fromFunction2(prependOnceListener), removeListener = js.Any.fromFunction2(removeListener))
-  
     __obj.asInstanceOf[EmitterAugmentation1[Name, Arg]]
   }
 }

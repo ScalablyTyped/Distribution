@@ -29,19 +29,19 @@ object ReadinessCheck {
   def apply(
     appStartTimeout: String = null,
     checkInterval: String = null,
-    failureThreshold: Int | Double = null,
+    failureThreshold: js.UndefOr[Double] = js.undefined,
     host: String = null,
     path: String = null,
-    successThreshold: Int | Double = null,
+    successThreshold: js.UndefOr[Double] = js.undefined,
     timeout: String = null
   ): ReadinessCheck = {
     val __obj = js.Dynamic.literal()
     if (appStartTimeout != null) __obj.updateDynamic("appStartTimeout")(appStartTimeout.asInstanceOf[js.Any])
     if (checkInterval != null) __obj.updateDynamic("checkInterval")(checkInterval.asInstanceOf[js.Any])
-    if (failureThreshold != null) __obj.updateDynamic("failureThreshold")(failureThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(failureThreshold)) __obj.updateDynamic("failureThreshold")(failureThreshold.get.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (successThreshold != null) __obj.updateDynamic("successThreshold")(successThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(successThreshold)) __obj.updateDynamic("successThreshold")(successThreshold.get.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadinessCheck]
   }

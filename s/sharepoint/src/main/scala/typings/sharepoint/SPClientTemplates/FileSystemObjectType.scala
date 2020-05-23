@@ -1,6 +1,5 @@
 package typings.sharepoint.SPClientTemplates
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,20 +21,6 @@ object FileSystemObjectType extends js.Object {
   
   @js.native
   sealed trait Web extends FileSystemObjectType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FileSystemObjectType with Double] = js.native
-  /* 1 */ @js.native
-  object File extends TopLevel[File with Double]
-  
-  /* 2 */ @js.native
-  object Folder extends TopLevel[Folder with Double]
-  
-  /* 0 */ @js.native
-  object Invalid extends TopLevel[Invalid with Double]
-  
-  /* 3 */ @js.native
-  object Web extends TopLevel[Web with Double]
   
 }
 

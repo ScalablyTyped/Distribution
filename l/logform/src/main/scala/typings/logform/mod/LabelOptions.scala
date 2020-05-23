@@ -21,7 +21,7 @@ object LabelOptions {
   def apply(label: String = null, message: js.UndefOr[Boolean] = js.undefined): LabelOptions = {
     val __obj = js.Dynamic.literal()
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(message)) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (!js.isUndefined(message)) __obj.updateDynamic("message")(message.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelOptions]
   }
 }

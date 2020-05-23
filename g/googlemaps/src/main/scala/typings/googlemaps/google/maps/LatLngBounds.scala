@@ -9,19 +9,8 @@ import scala.scalajs.js.annotation._
   * A LatLngBounds instance represents a rectangle in geographical coordinates,
   * including one that crosses the 180 degrees longitudinal meridian.
   */
-@JSGlobal("google.maps.LatLngBounds")
 @js.native
-/**
-  * Constructs a rectangle from the points at its south-west and north-east
-  * corners.
-  */
-class LatLngBounds () extends _LocationBias {
-  def this(sw: LatLng) = this()
-  def this(sw: LatLngLiteral) = this()
-  def this(sw: LatLngLiteral, ne: LatLng) = this()
-  def this(sw: LatLngLiteral, ne: LatLngLiteral) = this()
-  def this(sw: LatLng, ne: LatLng) = this()
-  def this(sw: LatLng, ne: LatLngLiteral) = this()
+trait LatLngBounds extends _LocationBias {
   /** Returns true if the given lat/lng is in this bounds. */
   def contains(latLng: LatLng): Boolean = js.native
   def contains(latLng: LatLngLiteral): Boolean = js.native

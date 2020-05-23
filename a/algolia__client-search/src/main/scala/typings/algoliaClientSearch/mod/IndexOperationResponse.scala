@@ -8,7 +8,7 @@ trait IndexOperationResponse extends js.Object {
   /**
     * The operation task id. May be used to perform a wait task.
     */
-  val taskID: Double
+  var taskID: Double
 }
 
 object IndexOperationResponse {

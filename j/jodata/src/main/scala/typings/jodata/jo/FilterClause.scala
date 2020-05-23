@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("jo.FilterClause")
 @js.native
-class FilterClause () extends js.Object {
-  def this(property: String) = this()
+trait FilterClause extends js.Object {
   var Components: js.Array[String] = js.native
   var FuncReturnType: js.Any = js.native
   var IsClauseEmpty: Boolean = js.native

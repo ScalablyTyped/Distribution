@@ -1,6 +1,6 @@
 package typings.exprEval.mod
 
-import typings.exprEval.AnonWithMembers
+import typings.exprEval.anon.WithMembers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,10 +15,10 @@ trait Expression extends js.Object {
   def substitute(variable: String, value: Double): Expression = js.native
   def substitute(variable: String, value: Expression): Expression = js.native
   def symbols(): js.Array[String] = js.native
-  def symbols(options: AnonWithMembers): js.Array[String] = js.native
+  def symbols(options: WithMembers): js.Array[String] = js.native
   def toJSFunction(params: String): js.Function1[/* repeated */ js.Any, Double] = js.native
   def toJSFunction(params: String, values: Value): js.Function1[/* repeated */ js.Any, Double] = js.native
   def variables(): js.Array[String] = js.native
-  def variables(options: AnonWithMembers): js.Array[String] = js.native
+  def variables(options: WithMembers): js.Array[String] = js.native
 }
 

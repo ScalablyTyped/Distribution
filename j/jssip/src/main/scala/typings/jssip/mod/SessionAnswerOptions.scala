@@ -30,7 +30,7 @@ object SessionAnswerOptions {
     rtcAnswerConstraints: RTCAnswerOptions = null,
     rtcConstraints: js.Any = null,
     rtcOfferConstraints: RTCOfferOptions = null,
-    sessionTimersExpires: Int | Double = null
+    sessionTimersExpires: js.UndefOr[Double] = js.undefined
   ): SessionAnswerOptions = {
     val __obj = js.Dynamic.literal()
     if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
@@ -40,7 +40,7 @@ object SessionAnswerOptions {
     if (rtcAnswerConstraints != null) __obj.updateDynamic("rtcAnswerConstraints")(rtcAnswerConstraints.asInstanceOf[js.Any])
     if (rtcConstraints != null) __obj.updateDynamic("rtcConstraints")(rtcConstraints.asInstanceOf[js.Any])
     if (rtcOfferConstraints != null) __obj.updateDynamic("rtcOfferConstraints")(rtcOfferConstraints.asInstanceOf[js.Any])
-    if (sessionTimersExpires != null) __obj.updateDynamic("sessionTimersExpires")(sessionTimersExpires.asInstanceOf[js.Any])
+    if (!js.isUndefined(sessionTimersExpires)) __obj.updateDynamic("sessionTimersExpires")(sessionTimersExpires.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionAnswerOptions]
   }
 }

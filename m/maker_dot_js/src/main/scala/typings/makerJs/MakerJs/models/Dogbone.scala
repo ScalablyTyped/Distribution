@@ -1,32 +1,40 @@
 package typings.makerJs.MakerJs.models
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.makerJs.MakerJs.IModel
+import typings.makerJs.MakerJs.IModelMap
 import typings.makerJs.MakerJs.IPathMap
+import typings.makerJs.MakerJs.IPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MakerJs.models.Dogbone")
-@js.native
-class Dogbone protected () extends IModel {
-  /**
-    * Create a dogbone from width, height, corner radius, style, and bottomless flag.
-    *
-    * Example:
-    * ```
-    * var d = new makerjs.models.Dogbone(50, 100, 5);
-    * ```
-    *
-    * @param width Width of the rectangle.
-    * @param height Height of the rectangle.
-    * @param radius Corner radius.
-    * @param style Optional corner style: 0 (default) for dogbone, 1 for vertical, -1 for horizontal.
-    * @param bottomless Optional flag to omit the bottom line and bottom corners (default false).
-    */
-  def this(width: Double, height: Double, radius: Double) = this()
-  def this(width: Double, height: Double, radius: Double, style: Double) = this()
-  def this(width: Double, height: Double, radius: Double, style: Double, bottomless: Boolean) = this()
+trait Dogbone extends IModel {
   @JSName("paths")
-  var paths_Dogbone: IPathMap = js.native
+  var paths_Dogbone: IPathMap
+}
+
+object Dogbone {
+  @scala.inline
+  def apply(
+    paths: IPathMap,
+    exporterOptions: StringDictionary[js.Any] = null,
+    layer: String = null,
+    models: IModelMap = null,
+    notes: String = null,
+    origin: IPoint = null,
+    `type`: String = null,
+    units: String = null
+  ): Dogbone = {
+    val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any])
+    if (exporterOptions != null) __obj.updateDynamic("exporterOptions")(exporterOptions.asInstanceOf[js.Any])
+    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
+    if (models != null) __obj.updateDynamic("models")(models.asInstanceOf[js.Any])
+    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Dogbone]
+  }
 }
 

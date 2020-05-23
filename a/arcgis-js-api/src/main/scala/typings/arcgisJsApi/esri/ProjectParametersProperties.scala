@@ -50,7 +50,7 @@ object ProjectParametersProperties {
     if (geometries != null) __obj.updateDynamic("geometries")(geometries.asInstanceOf[js.Any])
     if (outSR != null) __obj.updateDynamic("outSR")(outSR.asInstanceOf[js.Any])
     if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference.asInstanceOf[js.Any])
-    if (!js.isUndefined(transformForward)) __obj.updateDynamic("transformForward")(transformForward.asInstanceOf[js.Any])
+    if (!js.isUndefined(transformForward)) __obj.updateDynamic("transformForward")(transformForward.get.asInstanceOf[js.Any])
     if (transformation != null) __obj.updateDynamic("transformation")(transformation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectParametersProperties]
   }

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.visualization.TreeMap")
 @js.native
-class TreeMap () extends ChartBaseClearable {
+trait TreeMap extends ChartBaseClearable {
   def draw(data: DataTable): Unit = js.native
   def draw(data: DataTable, options: TreeMapOptions): Unit = js.native
   def draw(data: DataView): Unit = js.native

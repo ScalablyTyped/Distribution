@@ -42,10 +42,10 @@ object FileModifierProps {
   ): FileModifierProps = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(boxed)) __obj.updateDynamic("boxed")(boxed.asInstanceOf[js.Any])
+    if (!js.isUndefined(boxed)) __obj.updateDynamic("boxed")(boxed.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullwidth)) __obj.updateDynamic("fullwidth")(fullwidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasName)) __obj.updateDynamic("hasName")(hasName.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullwidth)) __obj.updateDynamic("fullwidth")(fullwidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasName)) __obj.updateDynamic("hasName")(hasName.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileModifierProps]
   }

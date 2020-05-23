@@ -1,6 +1,6 @@
 package typings.ckeditorCkeditor5Engine.mod.model
 
-import typings.ckeditorCkeditor5Engine.AnonBoundaries
+import typings.ckeditorCkeditor5Engine.anon.Boundaries
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.backward
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.forward
 import typings.std.Iterable
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ckeditor/ckeditor5-engine", "model.TreeWalker")
 @js.native
 class TreeWalker () extends Iterable[TreeWalkerValue] {
-  def this(options: AnonBoundaries) = this()
+  def this(options: Boundaries) = this()
   val boundaries: Range = js.native
   val direction: backward | forward = js.native
   val ignoreElementEnd: Boolean = js.native

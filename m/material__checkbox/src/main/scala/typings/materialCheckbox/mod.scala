@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@material/checkbox", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.materialSelectionControl.mod.MDCSelectionControl because Inheritance from two classes. Inlined ripple */ @js.native
   class MDCCheckbox ()
     extends typings.materialBase.componentMod.default[MDCCheckboxAdapter, default] {

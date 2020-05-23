@@ -1,5 +1,7 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.anon.Delay
+import typings.officeUiFabricReact.anon.PartialITooltipProps
 import typings.officeUiFabricReact.officeUiFabricReactNumbers.`0`
 import typings.officeUiFabricReact.officeUiFabricReactNumbers.`10`
 import typings.officeUiFabricReact.officeUiFabricReactNumbers.`11`
@@ -117,7 +119,7 @@ object libTooltipMod extends js.Object {
   @js.native
   object TooltipHostBase extends js.Object {
     var _currentVisibleTooltip: js.Any = js.native
-    var defaultProps: AnonDelay = js.native
+    var defaultProps: Delay = js.native
   }
   
   @js.native

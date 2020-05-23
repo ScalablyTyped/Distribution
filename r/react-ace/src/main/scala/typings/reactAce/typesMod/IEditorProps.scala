@@ -90,15 +90,15 @@ object IEditorProps {
     $onSelectionChange: /* repeated */ js.Any => _ = null,
     $onSingleSelect: /* repeated */ js.Any => _ = null,
     $onTokenizerUpdate: /* repeated */ js.Any => _ = null,
-    StringDictionary: /* index */ StringDictionary[js.Any] = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null
   ): IEditorProps = {
     val __obj = js.Dynamic.literal()
     if ($blockScrolling != null) __obj.updateDynamic("$blockScrolling")($blockScrolling.asInstanceOf[js.Any])
-    if (!js.isUndefined($blockSelectEnabled)) __obj.updateDynamic("$blockSelectEnabled")($blockSelectEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined($enableBlockSelect)) __obj.updateDynamic("$enableBlockSelect")($enableBlockSelect.asInstanceOf[js.Any])
-    if (!js.isUndefined($enableMultiselect)) __obj.updateDynamic("$enableMultiselect")($enableMultiselect.asInstanceOf[js.Any])
-    if (!js.isUndefined($highlightPending)) __obj.updateDynamic("$highlightPending")($highlightPending.asInstanceOf[js.Any])
-    if (!js.isUndefined($highlightTagPending)) __obj.updateDynamic("$highlightTagPending")($highlightTagPending.asInstanceOf[js.Any])
+    if (!js.isUndefined($blockSelectEnabled)) __obj.updateDynamic("$blockSelectEnabled")($blockSelectEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined($enableBlockSelect)) __obj.updateDynamic("$enableBlockSelect")($enableBlockSelect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined($enableMultiselect)) __obj.updateDynamic("$enableMultiselect")($enableMultiselect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined($highlightPending)) __obj.updateDynamic("$highlightPending")($highlightPending.get.asInstanceOf[js.Any])
+    if (!js.isUndefined($highlightTagPending)) __obj.updateDynamic("$highlightTagPending")($highlightTagPending.get.asInstanceOf[js.Any])
     if ($multiselectOnSessionChange != null) __obj.updateDynamic("$multiselectOnSessionChange")(js.Any.fromFunction1($multiselectOnSessionChange))
     if ($onAddRange != null) __obj.updateDynamic("$onAddRange")(js.Any.fromFunction1($onAddRange))
     if ($onChangeAnnotation != null) __obj.updateDynamic("$onChangeAnnotation")(js.Any.fromFunction1($onChangeAnnotation))

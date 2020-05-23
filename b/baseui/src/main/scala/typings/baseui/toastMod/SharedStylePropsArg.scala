@@ -33,9 +33,9 @@ object SharedStylePropsArg {
     $type: `inline` | toast = null
   ): SharedStylePropsArg = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($closeable)) __obj.updateDynamic("$closeable")($closeable.asInstanceOf[js.Any])
-    if (!js.isUndefined($isRendered)) __obj.updateDynamic("$isRendered")($isRendered.asInstanceOf[js.Any])
-    if (!js.isUndefined($isVisible)) __obj.updateDynamic("$isVisible")($isVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined($closeable)) __obj.updateDynamic("$closeable")($closeable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined($isRendered)) __obj.updateDynamic("$isRendered")($isRendered.get.asInstanceOf[js.Any])
+    if (!js.isUndefined($isVisible)) __obj.updateDynamic("$isVisible")($isVisible.get.asInstanceOf[js.Any])
     if ($kind != null) __obj.updateDynamic("$kind")($kind.asInstanceOf[js.Any])
     if ($type != null) __obj.updateDynamic("$type")($type.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedStylePropsArg]

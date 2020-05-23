@@ -20,9 +20,9 @@ trait PlusZip extends js.Object {
   /**
     * JSON对象，配置图片压缩转换的参数
     * 设置width/height属性则表示需对图片进行缩放转换操作；
-    * 	设置rotate属性则表示需对图片进行旋转转换操作；
-    * 	设置clip属性则表示需对图片进行裁剪转换操作；
-    * 	如同时设置了多个转换操作，则按缩放、旋转、裁剪顺序进行操作。
+    *     设置rotate属性则表示需对图片进行旋转转换操作；
+    *     设置clip属性则表示需对图片进行裁剪转换操作；
+    *     如同时设置了多个转换操作，则按缩放、旋转、裁剪顺序进行操作。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/zip.html](http://www.html5plus.org/doc/zh_cn/zip.html)
     */

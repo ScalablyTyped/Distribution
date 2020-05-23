@@ -27,7 +27,7 @@ trait PlusWebviewAnimationTypeClose extends js.Object {
   /**
     * 无动画
     * 立即关闭页面，无任何动画效果。
-    * 	此效果忽略动画时间参数，立即关闭。
+    *     此效果忽略动画时间参数，立即关闭。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */

@@ -41,18 +41,18 @@ trait StatsOpts extends js.Object {
 object StatsOpts {
   @scala.inline
   def apply(
-    bucket_extension_interval: Int | Double = null,
-    bucket_precision: Int | Double = null,
+    bucket_extension_interval: js.UndefOr[Double] = js.undefined,
+    bucket_precision: js.UndefOr[Double] = js.undefined,
     buckets: js.Array[Double] = null,
     sampling: js.UndefOr[Boolean] = js.undefined,
     store_data: js.UndefOr[Boolean] = js.undefined
   ): StatsOpts = {
     val __obj = js.Dynamic.literal()
-    if (bucket_extension_interval != null) __obj.updateDynamic("bucket_extension_interval")(bucket_extension_interval.asInstanceOf[js.Any])
-    if (bucket_precision != null) __obj.updateDynamic("bucket_precision")(bucket_precision.asInstanceOf[js.Any])
+    if (!js.isUndefined(bucket_extension_interval)) __obj.updateDynamic("bucket_extension_interval")(bucket_extension_interval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bucket_precision)) __obj.updateDynamic("bucket_precision")(bucket_precision.get.asInstanceOf[js.Any])
     if (buckets != null) __obj.updateDynamic("buckets")(buckets.asInstanceOf[js.Any])
-    if (!js.isUndefined(sampling)) __obj.updateDynamic("sampling")(sampling.asInstanceOf[js.Any])
-    if (!js.isUndefined(store_data)) __obj.updateDynamic("store_data")(store_data.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampling)) __obj.updateDynamic("sampling")(sampling.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(store_data)) __obj.updateDynamic("store_data")(store_data.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatsOpts]
   }
 }

@@ -1,8 +1,8 @@
 package typings.backbone.mod
 
-import typings.std.Location_
+import typings.std.Location
 import typings.std.RegExp
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ class History_ () extends js.Object {
   var handlers: js.Array[_] = js.native
   var interval: Double = js.native
   var options: js.Any = js.native
-  /* private */ def _updateHash(location: Location_, fragment: String, replace: Boolean): Unit = js.native
+  /* private */ def _updateHash(location: Location, fragment: String, replace: Boolean): Unit = js.native
   def atRoot(): Boolean = js.native
   def checkUrl(): Unit = js.native
   def checkUrl(e: js.Any): Unit = js.native
@@ -21,7 +21,7 @@ class History_ () extends js.Object {
   def getFragment(): String = js.native
   def getFragment(fragment: String): String = js.native
   def getHash(): String = js.native
-  def getHash(window: Window_): String = js.native
+  def getHash(window: Window): String = js.native
   def getPath(): String = js.native
   def getSearch(): String = js.native
   def loadUrl(): Boolean = js.native

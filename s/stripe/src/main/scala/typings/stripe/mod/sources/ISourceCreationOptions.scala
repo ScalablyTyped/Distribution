@@ -1,11 +1,11 @@
 package typings.stripe.mod.sources
 
-import typings.stripe.AnonAcceptance
-import typings.stripe.AnonAddressEmail
-import typings.stripe.AnonBank
-import typings.stripe.AnonIban
-import typings.stripe.AnonRefundattributesmethod
-import typings.stripe.AnonReturnurlString
+import typings.stripe.anon.Acceptance
+import typings.stripe.anon.AddressEmail
+import typings.stripe.anon.Bank
+import typings.stripe.anon.Iban
+import typings.stripe.anon.Refundattributesmethod
+import typings.stripe.anon.ReturnurlString
 import typings.stripe.mod.IDataOptionsWithMetadata
 import typings.stripe.mod.IMetadata
 import typings.stripe.stripeStrings.ach_credit_transfer
@@ -37,14 +37,14 @@ trait ISourceCreationOptions extends IDataOptionsWithMetadata {
   var amount: js.UndefOr[Double] = js.undefined
   var currency: js.UndefOr[String] = js.undefined
   var flow: js.UndefOr[redirect | receiver | code_verification | none] = js.undefined
-  var ideal: js.UndefOr[AnonBank] = js.undefined
-  var mandate: js.UndefOr[AnonAcceptance] = js.undefined
+  var ideal: js.UndefOr[Bank] = js.undefined
+  var mandate: js.UndefOr[Acceptance] = js.undefined
   @JSName("metadata")
   var metadata_ISourceCreationOptions: js.UndefOr[IMetadata] = js.undefined
-  var owner: js.UndefOr[AnonAddressEmail] = js.undefined
-  var receiver: js.UndefOr[AnonRefundattributesmethod] = js.undefined
-  var redirect: js.UndefOr[AnonReturnurlString] = js.undefined
-  var sepa_debit: js.UndefOr[AnonIban] = js.undefined
+  var owner: js.UndefOr[AddressEmail] = js.undefined
+  var receiver: js.UndefOr[Refundattributesmethod] = js.undefined
+  var redirect: js.UndefOr[ReturnurlString] = js.undefined
+  var sepa_debit: js.UndefOr[Iban] = js.undefined
   var statement_descriptor: js.UndefOr[String] = js.undefined
   var token: js.UndefOr[String] = js.undefined
   var `type`: ach_credit_transfer | ach_debit | alipay | bancontact | card | card_present | eps | giropay | ideal | multibanco | p24 | sepa_debit | sofort | three_d_secure | wechat
@@ -55,25 +55,25 @@ object ISourceCreationOptions {
   @scala.inline
   def apply(
     `type`: ach_credit_transfer | ach_debit | alipay | bancontact | card | card_present | eps | giropay | ideal | multibanco | p24 | sepa_debit | sofort | three_d_secure | wechat,
-    amount: Int | Double = null,
+    amount: js.UndefOr[Double] = js.undefined,
     currency: String = null,
     expand: js.Array[String] = null,
     flow: redirect | receiver | code_verification | none = null,
-    ideal: AnonBank = null,
+    ideal: Bank = null,
     include: js.Array[String] = null,
-    mandate: AnonAcceptance = null,
+    mandate: Acceptance = null,
     metadata: IMetadata = null,
-    owner: AnonAddressEmail = null,
-    receiver: AnonRefundattributesmethod = null,
-    redirect: AnonReturnurlString = null,
-    sepa_debit: AnonIban = null,
+    owner: AddressEmail = null,
+    receiver: Refundattributesmethod = null,
+    redirect: ReturnurlString = null,
+    sepa_debit: Iban = null,
     statement_descriptor: String = null,
     token: String = null,
     usage: reusable | single_use = null
   ): ISourceCreationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.get.asInstanceOf[js.Any])
     if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     if (flow != null) __obj.updateDynamic("flow")(flow.asInstanceOf[js.Any])

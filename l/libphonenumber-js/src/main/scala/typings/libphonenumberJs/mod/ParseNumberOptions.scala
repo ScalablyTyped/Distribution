@@ -15,7 +15,7 @@ object ParseNumberOptions {
   def apply(defaultCountry: CountryCode = null, extended: js.UndefOr[Boolean] = js.undefined): ParseNumberOptions = {
     val __obj = js.Dynamic.literal()
     if (defaultCountry != null) __obj.updateDynamic("defaultCountry")(defaultCountry.asInstanceOf[js.Any])
-    if (!js.isUndefined(extended)) __obj.updateDynamic("extended")(extended.asInstanceOf[js.Any])
+    if (!js.isUndefined(extended)) __obj.updateDynamic("extended")(extended.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseNumberOptions]
   }
 }

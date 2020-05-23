@@ -15,11 +15,15 @@ trait PointDistributionBucket extends js.Object {
 
 object PointDistributionBucket {
   @scala.inline
-  def apply(count: String = null, lowerBound: Int | Double = null, upperBound: Int | Double = null): PointDistributionBucket = {
+  def apply(
+    count: String = null,
+    lowerBound: js.UndefOr[Double] = js.undefined,
+    upperBound: js.UndefOr[Double] = js.undefined
+  ): PointDistributionBucket = {
     val __obj = js.Dynamic.literal()
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (lowerBound != null) __obj.updateDynamic("lowerBound")(lowerBound.asInstanceOf[js.Any])
-    if (upperBound != null) __obj.updateDynamic("upperBound")(upperBound.asInstanceOf[js.Any])
+    if (!js.isUndefined(lowerBound)) __obj.updateDynamic("lowerBound")(lowerBound.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(upperBound)) __obj.updateDynamic("upperBound")(upperBound.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointDistributionBucket]
   }
 }

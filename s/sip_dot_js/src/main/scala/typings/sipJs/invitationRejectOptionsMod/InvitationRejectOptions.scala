@@ -1,6 +1,6 @@
 package typings.sipJs.invitationRejectOptionsMod
 
-import typings.sipJs.AnonBody
+import typings.sipJs.anon.Body
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ trait InvitationRejectOptions extends js.Object {
   /**
     * Body
     */
-  var body: js.UndefOr[String | AnonBody] = js.undefined
+  var body: js.UndefOr[String | Body] = js.undefined
   /**
     * Array of extra headers added to the response.
     */
@@ -27,16 +27,16 @@ trait InvitationRejectOptions extends js.Object {
 object InvitationRejectOptions {
   @scala.inline
   def apply(
-    body: String | AnonBody = null,
+    body: String | Body = null,
     extraHeaders: js.Array[String] = null,
     reasonPhrase: String = null,
-    statusCode: Int | Double = null
+    statusCode: js.UndefOr[Double] = js.undefined
   ): InvitationRejectOptions = {
     val __obj = js.Dynamic.literal()
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
     if (reasonPhrase != null) __obj.updateDynamic("reasonPhrase")(reasonPhrase.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusCode)) __obj.updateDynamic("statusCode")(statusCode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvitationRejectOptions]
   }
 }

@@ -1,7 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +31,7 @@ trait MouseEvent extends UIEvent {
     typeArg: java.lang.String,
     canBubbleArg: scala.Boolean,
     cancelableArg: scala.Boolean,
-    viewArg: Window_,
+    viewArg: Window,
     detailArg: Double,
     screenXArg: Double,
     screenYArg: Double,
@@ -49,7 +47,7 @@ trait MouseEvent extends UIEvent {
     typeArg: java.lang.String,
     canBubbleArg: scala.Boolean,
     cancelableArg: scala.Boolean,
-    viewArg: Window_,
+    viewArg: Window,
     detailArg: Double,
     screenXArg: Double,
     screenYArg: Double,
@@ -63,10 +61,4 @@ trait MouseEvent extends UIEvent {
     relatedTargetArg: EventTarget
   ): Unit = js.native
 }
-
-@JSGlobal("MouseEvent")
-@js.native
-object MouseEvent
-  extends Instantiable1[/* type */ java.lang.String, MouseEvent]
-     with Instantiable2[/* type */ java.lang.String, /* eventInitDict */ MouseEventInit, MouseEvent]
 

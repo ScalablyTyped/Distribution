@@ -5,12 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.Services.CompletionSession")
-@js.native
-class CompletionSession protected () extends js.Object {
-  def this(fileName: String, position: Double, entries: IdentiferNameHashTable[CachedCompletionEntryDetails]) = this()
-  var entries: IdentiferNameHashTable[CachedCompletionEntryDetails] = js.native
-  var fileName: String = js.native
-  var position: Double = js.native
+trait CompletionSession extends js.Object {
+  var entries: IdentiferNameHashTable[CachedCompletionEntryDetails]
+  var fileName: String
+  var position: Double
+}
+
+object CompletionSession {
+  @scala.inline
+  def apply(entries: IdentiferNameHashTable[CachedCompletionEntryDetails], fileName: String, position: Double): CompletionSession = {
+    val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CompletionSession]
+  }
 }
 

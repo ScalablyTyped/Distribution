@@ -1,9 +1,9 @@
 package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chartJs.AnonDictkey
-import typings.chartJs.AnonDisableCSSInjection
-import typings.chartJs.TypeofChart
+import typings.chartJs.anon.Dictkey
+import typings.chartJs.anon.DisableCSSInjection
+import typings.chartJs.anon.TypeofChart
 import typings.std.ArrayLike
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
@@ -27,10 +27,10 @@ object ^ extends js.Object {
   // Tooltip Static Options
   var Tooltip: ChartTooltipsStaticConfiguration = js.native
   var controllers: StringDictionary[js.Any] = js.native
-  var defaults: AnonDictkey = js.native
+  var defaults: Dictkey = js.native
   var helpers: StringDictionary[js.Any] = js.native
   val instances: StringDictionary[typings.chartJs.mod.Chart] = js.native
-  var platform: AnonDisableCSSInjection = js.native
+  var platform: DisableCSSInjection = js.native
   var pluginService: PluginServiceStatic = js.native
   var plugins: PluginServiceStatic = js.native
 }

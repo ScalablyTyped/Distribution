@@ -32,9 +32,9 @@ object SerializeJSOptions {
     unsafe: js.UndefOr[Boolean] = js.undefined
   ): SerializeJSOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isJSON)) __obj.updateDynamic("isJSON")(isJSON.asInstanceOf[js.Any])
+    if (!js.isUndefined(isJSON)) __obj.updateDynamic("isJSON")(isJSON.get.asInstanceOf[js.Any])
     if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
-    if (!js.isUndefined(unsafe)) __obj.updateDynamic("unsafe")(unsafe.asInstanceOf[js.Any])
+    if (!js.isUndefined(unsafe)) __obj.updateDynamic("unsafe")(unsafe.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SerializeJSOptions]
   }
 }

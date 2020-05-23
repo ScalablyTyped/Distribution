@@ -23,12 +23,12 @@ trait DownloadDBLogFilePortionDetails extends js.Object {
 object DownloadDBLogFilePortionDetails {
   @scala.inline
   def apply(
-    AdditionalDataPending: js.UndefOr[scala.Boolean] = js.undefined,
+    AdditionalDataPending: js.UndefOr[Boolean] = js.undefined,
     LogFileData: String = null,
     Marker: String = null
   ): DownloadDBLogFilePortionDetails = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AdditionalDataPending)) __obj.updateDynamic("AdditionalDataPending")(AdditionalDataPending.asInstanceOf[js.Any])
+    if (!js.isUndefined(AdditionalDataPending)) __obj.updateDynamic("AdditionalDataPending")(AdditionalDataPending.get.asInstanceOf[js.Any])
     if (LogFileData != null) __obj.updateDynamic("LogFileData")(LogFileData.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadDBLogFilePortionDetails]

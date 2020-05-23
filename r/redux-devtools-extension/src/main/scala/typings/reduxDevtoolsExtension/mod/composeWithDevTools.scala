@@ -1,7 +1,7 @@
 package typings.reduxDevtoolsExtension.mod
 
 import typings.redux.mod.StoreEnhancer
-import typings.reduxDevtoolsExtension.FnCall
+import typings.reduxDevtoolsExtension.anon.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

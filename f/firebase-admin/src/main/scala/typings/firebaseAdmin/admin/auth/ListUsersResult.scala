@@ -18,12 +18,12 @@ trait ListUsersResult extends js.Object {
     * The list of {@link admin.auth.UserRecord `UserRecord`} objects for the
     * current downloaded batch.
     */
-  var users: js.Array[UserRecord]
+  var users: js.Array[typings.firebaseAdmin.authMod.admin.auth.UserRecord]
 }
 
 object ListUsersResult {
   @scala.inline
-  def apply(users: js.Array[UserRecord], pageToken: String = null): ListUsersResult = {
+  def apply(users: js.Array[typings.firebaseAdmin.authMod.admin.auth.UserRecord], pageToken: String = null): ListUsersResult = {
     val __obj = js.Dynamic.literal(users = users.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListUsersResult]

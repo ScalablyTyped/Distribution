@@ -8,12 +8,12 @@ package object mod {
   // Workaround to get intellisense on type unions of 'literals' | string. 
   // See https://github.com/Microsoft/TypeScript/issues/29729
   type CustomTransportType = java.lang.String with js.Object
-  type DeferFactory = js.Function0[typings.when.When.Promise_[js.Any]]
+  type DeferFactory = js.Function0[typings.when.When.Promise[js.Any]]
   type OnChallengeHandler = js.Function3[
     /* session */ typings.autobahn.mod.Session, 
     /* method */ java.lang.String, 
     /* extra */ js.Any, 
-    java.lang.String | typings.when.When.Promise_[java.lang.String]
+    java.lang.String | typings.when.When.Promise[java.lang.String]
   ]
   type RegisterEndpoint = js.Function3[
     /* args */ js.UndefOr[js.Array[js.Any]], 

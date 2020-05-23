@@ -2,7 +2,7 @@ package typings.stellarSdk.serverApiMod.ServerApi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.stellarBase.mod.AssetType
-import typings.stellarSdk.AnonValue
+import typings.stellarSdk.anon.Value
 import typings.stellarSdk.horizonApiMod.Horizon.AccountThresholds
 import typings.stellarSdk.horizonApiMod.Horizon.BalanceLine
 import typings.stellarSdk.horizonApiMod.Horizon.BaseResponse
@@ -37,7 +37,7 @@ trait AccountRecord
   var thresholds: AccountThresholds = js.native
   @JSName("trades")
   var trades_Original: CallCollectionFunction[TradeRecord] = js.native
-  def data(options: AnonValue): js.Promise[AnonValue] = js.native
+  def data(options: Value): js.Promise[Value] = js.native
   def effects(): js.Promise[CollectionPage[EffectRecord]] = js.native
   def effects(options: CallFunctionTemplateOptions): js.Promise[CollectionPage[EffectRecord]] = js.native
   def offers(): js.Promise[CollectionPage[OfferRecord]] = js.native

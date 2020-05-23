@@ -15,7 +15,7 @@ trait AutomationExecutionMetadata extends js.Object {
     */
   var AutomationExecutionStatus: js.UndefOr[typings.awsSdk.ssmMod.AutomationExecutionStatus] = js.native
   /**
-    * Use this filter with DescribeAutomationExecutions. Specify either Local or CrossAccount. CrossAccount is an Automation that runs in multiple AWS Regions and accounts. For more information, see Executing Automations in Multiple AWS Regions and Accounts in the AWS Systems Manager User Guide. 
+    * Use this filter with DescribeAutomationExecutions. Specify either Local or CrossAccount. CrossAccount is an Automation that runs in multiple AWS Regions and accounts. For more information, see Running Automation workflows in multiple AWS Regions and accounts in the AWS Systems Manager User Guide. 
     */
   var AutomationType: js.UndefOr[typings.awsSdk.ssmMod.AutomationType] = js.native
   /**
@@ -51,7 +51,7 @@ trait AutomationExecutionMetadata extends js.Object {
     */
   var FailureMessage: js.UndefOr[String] = js.native
   /**
-    * An Amazon S3 bucket where execution information is stored.
+    * An S3 bucket where execution information is stored.
     */
   var LogFile: js.UndefOr[String] = js.native
   /**

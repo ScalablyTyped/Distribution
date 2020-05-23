@@ -1,6 +1,6 @@
 package typings.asn1js.mod
 
-import typings.asn1js.LocalHexBlockParamsisCons
+import typings.asn1js.anon.LocalHexBlockParamsisCons
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

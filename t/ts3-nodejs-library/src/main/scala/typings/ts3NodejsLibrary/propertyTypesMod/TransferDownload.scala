@@ -20,16 +20,16 @@ object TransferDownload {
   @scala.inline
   def apply(
     name: String,
-    cid: Int | Double = null,
-    clientftfid: Int | Double = null,
+    cid: js.UndefOr[Double] = js.undefined,
+    clientftfid: js.UndefOr[Double] = js.undefined,
     cpw: String = null,
-    seekpos: Int | Double = null
+    seekpos: js.UndefOr[Double] = js.undefined
   ): TransferDownload = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (cid != null) __obj.updateDynamic("cid")(cid.asInstanceOf[js.Any])
-    if (clientftfid != null) __obj.updateDynamic("clientftfid")(clientftfid.asInstanceOf[js.Any])
+    if (!js.isUndefined(cid)) __obj.updateDynamic("cid")(cid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientftfid)) __obj.updateDynamic("clientftfid")(clientftfid.get.asInstanceOf[js.Any])
     if (cpw != null) __obj.updateDynamic("cpw")(cpw.asInstanceOf[js.Any])
-    if (seekpos != null) __obj.updateDynamic("seekpos")(seekpos.asInstanceOf[js.Any])
+    if (!js.isUndefined(seekpos)) __obj.updateDynamic("seekpos")(seekpos.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransferDownload]
   }
 }

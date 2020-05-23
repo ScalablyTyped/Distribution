@@ -30,7 +30,7 @@ object PDFViewerOptions {
     messages: PDFViewerMessages = null,
     name: String = null,
     open: /* e */ PDFViewerOpenEvent => Unit = null,
-    page: Int | Double = null,
+    page: js.UndefOr[Double] = js.undefined,
     pdfjsProcessing: PDFViewerPdfjsProcessing = null,
     render: /* e */ PDFViewerRenderEvent => Unit = null,
     toolbar: Boolean | PDFViewerToolbar = null,
@@ -45,7 +45,7 @@ object PDFViewerOptions {
     if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
     if (pdfjsProcessing != null) __obj.updateDynamic("pdfjsProcessing")(pdfjsProcessing.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])

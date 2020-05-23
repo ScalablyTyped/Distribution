@@ -19,14 +19,8 @@ object FindResult {
     __obj.asInstanceOf[FindResult]
   }
   @scala.inline
-  def Done(
-    done: `true`,
-    filename: js.UndefOr[scala.Nothing] = js.undefined,
-    value: js.UndefOr[scala.Nothing] = js.undefined
-  ): FindResult = {
+  def Done(done: `true`): FindResult = {
     val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any])
-    if (!js.isUndefined(filename)) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindResult]
   }
 }

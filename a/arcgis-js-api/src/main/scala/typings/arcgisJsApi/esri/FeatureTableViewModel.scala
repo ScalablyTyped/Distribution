@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +35,16 @@ trait FeatureTableViewModel extends js.Object {
   var layer: FeatureLayer
 }
 
-@JSGlobal("__esri.FeatureTableViewModel")
-@js.native
-object FeatureTableViewModel extends TopLevel[FeatureTableViewModelConstructor]
+object FeatureTableViewModel {
+  @scala.inline
+  def apply(
+    attachmentsEnabled: Boolean,
+    fieldConfigs: js.Array[FieldColumnConfig],
+    hiddenFields: Collection[String],
+    layer: FeatureLayer
+  ): FeatureTableViewModel = {
+    val __obj = js.Dynamic.literal(attachmentsEnabled = attachmentsEnabled.asInstanceOf[js.Any], fieldConfigs = fieldConfigs.asInstanceOf[js.Any], hiddenFields = hiddenFields.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FeatureTableViewModel]
+  }
+}
 

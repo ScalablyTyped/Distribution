@@ -18,6 +18,7 @@ trait Event extends js.Object {
     * The date and time that the event ended.
     */
   var endTime: js.UndefOr[timestamp] = js.native
+  var eventScopeCode: js.UndefOr[typings.awsSdk.healthMod.eventScopeCode] = js.native
   /**
     * The category of the event. Possible values are issue, scheduledChange, and accountNotification.
     */
@@ -54,6 +55,7 @@ object Event {
     arn: eventArn = null,
     availabilityZone: availabilityZone = null,
     endTime: timestamp = null,
+    eventScopeCode: eventScopeCode = null,
     eventTypeCategory: eventTypeCategory = null,
     eventTypeCode: eventTypeCode = null,
     lastUpdatedTime: timestamp = null,
@@ -66,6 +68,7 @@ object Event {
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (eventScopeCode != null) __obj.updateDynamic("eventScopeCode")(eventScopeCode.asInstanceOf[js.Any])
     if (eventTypeCategory != null) __obj.updateDynamic("eventTypeCategory")(eventTypeCategory.asInstanceOf[js.Any])
     if (eventTypeCode != null) __obj.updateDynamic("eventTypeCode")(eventTypeCode.asInstanceOf[js.Any])
     if (lastUpdatedTime != null) __obj.updateDynamic("lastUpdatedTime")(lastUpdatedTime.asInstanceOf[js.Any])

@@ -20,16 +20,16 @@ trait ICard extends js.Object {
 object ICard {
   @scala.inline
   def apply(
-    buttons: js.Array[IButton] = null,
-    imageUri: String = null,
-    subtitle: String = null,
-    title: String = null
+    buttons: js.UndefOr[Null | js.Array[IButton]] = js.undefined,
+    imageUri: js.UndefOr[Null | String] = js.undefined,
+    subtitle: js.UndefOr[Null | String] = js.undefined,
+    title: js.UndefOr[Null | String] = js.undefined
   ): ICard = {
     val __obj = js.Dynamic.literal()
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (imageUri != null) __obj.updateDynamic("imageUri")(imageUri.asInstanceOf[js.Any])
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(buttons)) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageUri)) __obj.updateDynamic("imageUri")(imageUri.asInstanceOf[js.Any])
+    if (!js.isUndefined(subtitle)) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
+    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICard]
   }
 }

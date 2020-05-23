@@ -43,12 +43,12 @@ object ListProfileTimesRequest {
     period: AggregationPeriod,
     profilingGroupName: ProfilingGroupName,
     startTime: Timestamp,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[MaxResults] = js.undefined,
     nextToken: PaginationToken = null,
     orderBy: OrderBy = null
   ): ListProfileTimesRequest = {
     val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], period = period.asInstanceOf[js.Any], profilingGroupName = profilingGroupName.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProfileTimesRequest]

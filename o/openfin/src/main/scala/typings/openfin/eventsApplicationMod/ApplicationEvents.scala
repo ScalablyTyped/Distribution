@@ -10,7 +10,9 @@ import typings.openfin.openfinStrings.`view-crashed`
 import typings.openfin.openfinStrings.`view-created`
 import typings.openfin.openfinStrings.`view-destroyed`
 import typings.openfin.openfinStrings.`view-did-change-theme-color`
+import typings.openfin.openfinStrings.`view-focused`
 import typings.openfin.openfinStrings.`view-hidden`
+import typings.openfin.openfinStrings.`view-hotkey`
 import typings.openfin.openfinStrings.`view-navigation-rejected`
 import typings.openfin.openfinStrings.`view-page-favicon-updated`
 import typings.openfin.openfinStrings.`view-page-title-updated`
@@ -38,7 +40,10 @@ import typings.openfin.openfinStrings.`window-external-process-started`
 import typings.openfin.openfinStrings.`window-focused`
 import typings.openfin.openfinStrings.`window-group-changed`
 import typings.openfin.openfinStrings.`window-hidden`
+import typings.openfin.openfinStrings.`window-hotkey`
 import typings.openfin.openfinStrings.`window-initialized`
+import typings.openfin.openfinStrings.`window-layout-initialized`
+import typings.openfin.openfinStrings.`window-layout-ready`
 import typings.openfin.openfinStrings.`window-maximized`
 import typings.openfin.openfinStrings.`window-minimized`
 import typings.openfin.openfinStrings.`window-navigation-rejected`
@@ -66,6 +71,8 @@ import typings.openfin.openfinStrings.crashed
 import typings.openfin.openfinStrings.initialized
 import typings.openfin.openfinStrings.responding
 import typings.openfin.openfinStrings.started
+import typings.openfin.viewMod.InputEvent
+import typings.openfin.viewMod.TargetChangedEvent
 import typings.openfin.webcontentsMod.WindowResourceLoadFailedEvent
 import typings.openfin.webcontentsMod.WindowResourceResponseReceivedEvent
 import typings.openfin.windowMod.WillMoveOrResize
@@ -106,14 +113,16 @@ trait ApplicationEvents extends js.Object {
   var `view-created`: CrashedEvent with (WindowEvent[application, typings.openfin.openfinStrings.`view-created`])
   var `view-destroyed`: WindowEvent[application, typings.openfin.openfinStrings.`view-destroyed`]
   var `view-did-change-theme-color`: WindowEvent[application, typings.openfin.openfinStrings.`view-did-change-theme-color`]
+  var `view-focused`: WindowEvent[application, typings.openfin.openfinStrings.`view-focused`]
   var `view-hidden`: WindowEvent[application, typings.openfin.openfinStrings.`view-hidden`]
+  var `view-hotkey`: InputEvent with (WindowEvent[application, typings.openfin.openfinStrings.`view-hotkey`])
   var `view-navigation-rejected`: WindowNavigationRejectedEvent[application, typings.openfin.openfinStrings.`view-navigation-rejected`]
   var `view-page-favicon-updated`: WindowEvent[application, typings.openfin.openfinStrings.`view-page-favicon-updated`]
   var `view-page-title-updated`: WindowEvent[application, typings.openfin.openfinStrings.`view-page-title-updated`]
   var `view-resource-load-failed`: WindowResourceLoadFailedEvent[application, typings.openfin.openfinStrings.`view-resource-load-failed`]
   var `view-resource-response-received`: WindowResourceResponseReceivedEvent[application, typings.openfin.openfinStrings.`view-resource-response-received`]
   var `view-shown`: WindowEvent[application, typings.openfin.openfinStrings.`view-shown`]
-  var `view-target-changed`: WindowEvent[application, typings.openfin.openfinStrings.`view-target-changed`]
+  var `view-target-changed`: TargetChangedEvent[application, typings.openfin.openfinStrings.`view-target-changed`]
   var `window-alert-requested`: WindowAlertRequestedEvent[application, typings.openfin.openfinStrings.`window-alert-requested`]
   var `window-auth-requested`: WindowAuthRequestedEvent[application, typings.openfin.openfinStrings.`window-auth-requested`]
   var `window-begin-user-bounds-changing`: WindowBeginBoundsChangingEvent[application, typings.openfin.openfinStrings.`window-begin-user-bounds-changing`]
@@ -140,7 +149,10 @@ trait ApplicationEvents extends js.Object {
   var `window-focused`: WindowEvent[application, typings.openfin.openfinStrings.`window-focused`]
   var `window-group-changed`: WindowGroupChanged[application, typings.openfin.openfinStrings.`window-group-changed`]
   var `window-hidden`: WindowHiddenEvent[application, typings.openfin.openfinStrings.`window-hidden`]
+  var `window-hotkey`: InputEvent with (WindowEvent[application, typings.openfin.openfinStrings.`window-hotkey`])
   var `window-initialized`: WindowEvent[application, typings.openfin.openfinStrings.`window-initialized`]
+  var `window-layout-initialized`: WindowEvent[application, typings.openfin.openfinStrings.`window-layout-initialized`]
+  var `window-layout-ready`: WindowEvent[application, typings.openfin.openfinStrings.`window-layout-ready`]
   var `window-maximized`: WindowEvent[application, typings.openfin.openfinStrings.`window-maximized`]
   var `window-minimized`: WindowEvent[application, typings.openfin.openfinStrings.`window-minimized`]
   var `window-navigation-rejected`: WindowNavigationRejectedEvent[application, typings.openfin.openfinStrings.`window-navigation-rejected`]
@@ -185,14 +197,16 @@ object ApplicationEvents {
     `view-created`: CrashedEvent with (WindowEvent[application, `view-created`]),
     `view-destroyed`: WindowEvent[application, `view-destroyed`],
     `view-did-change-theme-color`: WindowEvent[application, `view-did-change-theme-color`],
+    `view-focused`: WindowEvent[application, `view-focused`],
     `view-hidden`: WindowEvent[application, `view-hidden`],
+    `view-hotkey`: InputEvent with (WindowEvent[application, `view-hotkey`]),
     `view-navigation-rejected`: WindowNavigationRejectedEvent[application, `view-navigation-rejected`],
     `view-page-favicon-updated`: WindowEvent[application, `view-page-favicon-updated`],
     `view-page-title-updated`: WindowEvent[application, `view-page-title-updated`],
     `view-resource-load-failed`: WindowResourceLoadFailedEvent[application, `view-resource-load-failed`],
     `view-resource-response-received`: WindowResourceResponseReceivedEvent[application, `view-resource-response-received`],
     `view-shown`: WindowEvent[application, `view-shown`],
-    `view-target-changed`: WindowEvent[application, `view-target-changed`],
+    `view-target-changed`: TargetChangedEvent[application, `view-target-changed`],
     `window-alert-requested`: WindowAlertRequestedEvent[application, `window-alert-requested`],
     `window-auth-requested`: WindowAuthRequestedEvent[application, `window-auth-requested`],
     `window-begin-user-bounds-changing`: WindowBeginBoundsChangingEvent[application, `window-begin-user-bounds-changing`],
@@ -213,7 +227,10 @@ object ApplicationEvents {
     `window-focused`: WindowEvent[application, `window-focused`],
     `window-group-changed`: WindowGroupChanged[application, `window-group-changed`],
     `window-hidden`: WindowHiddenEvent[application, `window-hidden`],
+    `window-hotkey`: InputEvent with (WindowEvent[application, `window-hotkey`]),
     `window-initialized`: WindowEvent[application, `window-initialized`],
+    `window-layout-initialized`: WindowEvent[application, `window-layout-initialized`],
+    `window-layout-ready`: WindowEvent[application, `window-layout-ready`],
     `window-maximized`: WindowEvent[application, `window-maximized`],
     `window-minimized`: WindowEvent[application, `window-minimized`],
     `window-navigation-rejected`: WindowNavigationRejectedEvent[application, `window-navigation-rejected`],
@@ -244,7 +261,9 @@ object ApplicationEvents {
     __obj.updateDynamic("view-created")(`view-created`.asInstanceOf[js.Any])
     __obj.updateDynamic("view-destroyed")(`view-destroyed`.asInstanceOf[js.Any])
     __obj.updateDynamic("view-did-change-theme-color")(`view-did-change-theme-color`.asInstanceOf[js.Any])
+    __obj.updateDynamic("view-focused")(`view-focused`.asInstanceOf[js.Any])
     __obj.updateDynamic("view-hidden")(`view-hidden`.asInstanceOf[js.Any])
+    __obj.updateDynamic("view-hotkey")(`view-hotkey`.asInstanceOf[js.Any])
     __obj.updateDynamic("view-navigation-rejected")(`view-navigation-rejected`.asInstanceOf[js.Any])
     __obj.updateDynamic("view-page-favicon-updated")(`view-page-favicon-updated`.asInstanceOf[js.Any])
     __obj.updateDynamic("view-page-title-updated")(`view-page-title-updated`.asInstanceOf[js.Any])
@@ -272,7 +291,10 @@ object ApplicationEvents {
     __obj.updateDynamic("window-focused")(`window-focused`.asInstanceOf[js.Any])
     __obj.updateDynamic("window-group-changed")(`window-group-changed`.asInstanceOf[js.Any])
     __obj.updateDynamic("window-hidden")(`window-hidden`.asInstanceOf[js.Any])
+    __obj.updateDynamic("window-hotkey")(`window-hotkey`.asInstanceOf[js.Any])
     __obj.updateDynamic("window-initialized")(`window-initialized`.asInstanceOf[js.Any])
+    __obj.updateDynamic("window-layout-initialized")(`window-layout-initialized`.asInstanceOf[js.Any])
+    __obj.updateDynamic("window-layout-ready")(`window-layout-ready`.asInstanceOf[js.Any])
     __obj.updateDynamic("window-maximized")(`window-maximized`.asInstanceOf[js.Any])
     __obj.updateDynamic("window-minimized")(`window-minimized`.asInstanceOf[js.Any])
     __obj.updateDynamic("window-navigation-rejected")(`window-navigation-rejected`.asInstanceOf[js.Any])

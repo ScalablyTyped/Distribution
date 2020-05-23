@@ -70,13 +70,13 @@ object NavigatorSeriesOptions {
     data: js.Array[Double | (js.Array[Double | String | Null]) | js.Object | Null] = null,
     dataGrouping: DataGroupingOptionsObject = null,
     dataLabels: NavigatorSeriesDataLabelsOptions | js.Array[NavigatorSeriesDataLabelsOptions] = null,
-    fillOpacity: Int | Double = null,
+    fillOpacity: js.UndefOr[Double] = js.undefined,
     id: String = null,
-    lineColor: ColorString = null,
-    lineWidth: Int | Double = null,
+    lineColor: js.UndefOr[Null | ColorString] = js.undefined,
+    lineWidth: js.UndefOr[Double] = js.undefined,
     marker: NavigatorSeriesMarkerOptions = null,
-    pointRange: Int | Double = null,
-    threshold: Int | Double = null,
+    pointRange: js.UndefOr[Null | Double] = js.undefined,
+    threshold: js.UndefOr[Null | Double] = js.undefined,
     `type`: String = null
   ): NavigatorSeriesOptions = {
     val __obj = js.Dynamic.literal()
@@ -85,13 +85,13 @@ object NavigatorSeriesOptions {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
-    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(fillOpacity)) __obj.updateDynamic("fillOpacity")(fillOpacity.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineColor)) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (pointRange != null) __obj.updateDynamic("pointRange")(pointRange.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointRange)) __obj.updateDynamic("pointRange")(pointRange.asInstanceOf[js.Any])
+    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigatorSeriesOptions]
   }

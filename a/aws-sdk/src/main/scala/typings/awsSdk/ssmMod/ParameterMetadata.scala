@@ -11,6 +11,10 @@ trait ParameterMetadata extends js.Object {
     */
   var AllowedPattern: js.UndefOr[typings.awsSdk.ssmMod.AllowedPattern] = js.native
   /**
+    * The data type of the parameter, such as text or aws:ec2:image. The default is text.
+    */
+  var DataType: js.UndefOr[ParameterDataType] = js.native
+  /**
     * Description of the parameter actions.
     */
   var Description: js.UndefOr[ParameterDescription] = js.native
@@ -39,7 +43,7 @@ trait ParameterMetadata extends js.Object {
     */
   var Tier: js.UndefOr[ParameterTier] = js.native
   /**
-    * The type of parameter. Valid parameter types include the following: String, String list, Secure string.
+    * The type of parameter. Valid parameter types include the following: String, StringList, and SecureString.
     */
   var Type: js.UndefOr[ParameterType] = js.native
   /**
@@ -52,6 +56,7 @@ object ParameterMetadata {
   @scala.inline
   def apply(
     AllowedPattern: AllowedPattern = null,
+    DataType: ParameterDataType = null,
     Description: ParameterDescription = null,
     KeyId: ParameterKeyId = null,
     LastModifiedDate: DateTime = null,
@@ -60,10 +65,11 @@ object ParameterMetadata {
     Policies: ParameterPolicyList = null,
     Tier: ParameterTier = null,
     Type: ParameterType = null,
-    Version: Int | Double = null
+    Version: js.UndefOr[PSParameterVersion] = js.undefined
   ): ParameterMetadata = {
     val __obj = js.Dynamic.literal()
     if (AllowedPattern != null) __obj.updateDynamic("AllowedPattern")(AllowedPattern.asInstanceOf[js.Any])
+    if (DataType != null) __obj.updateDynamic("DataType")(DataType.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId.asInstanceOf[js.Any])
     if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate.asInstanceOf[js.Any])
@@ -72,7 +78,7 @@ object ParameterMetadata {
     if (Policies != null) __obj.updateDynamic("Policies")(Policies.asInstanceOf[js.Any])
     if (Tier != null) __obj.updateDynamic("Tier")(Tier.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
-    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
+    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterMetadata]
   }
 }

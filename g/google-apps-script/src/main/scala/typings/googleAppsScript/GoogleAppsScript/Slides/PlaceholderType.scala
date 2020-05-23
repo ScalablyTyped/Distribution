@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Slides
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -71,62 +70,6 @@ object PlaceholderType extends js.Object {
   
   @js.native
   sealed trait UNSUPPORTED extends PlaceholderType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PlaceholderType with Double] = js.native
-  /* 2 */ @js.native
-  object BODY extends TopLevel[BODY with Double]
-  
-  /* 5 */ @js.native
-  object CENTERED_TITLE extends TopLevel[CENTERED_TITLE with Double]
-  
-  /* 3 */ @js.native
-  object CHART extends TopLevel[CHART with Double]
-  
-  /* 4 */ @js.native
-  object CLIP_ART extends TopLevel[CLIP_ART with Double]
-  
-  /* 7 */ @js.native
-  object DATE_AND_TIME extends TopLevel[DATE_AND_TIME with Double]
-  
-  /* 6 */ @js.native
-  object DIAGRAM extends TopLevel[DIAGRAM with Double]
-  
-  /* 8 */ @js.native
-  object FOOTER extends TopLevel[FOOTER with Double]
-  
-  /* 9 */ @js.native
-  object HEADER extends TopLevel[HEADER with Double]
-  
-  /* 10 */ @js.native
-  object MEDIA extends TopLevel[MEDIA with Double]
-  
-  /* 1 */ @js.native
-  object NONE extends TopLevel[NONE with Double]
-  
-  /* 11 */ @js.native
-  object OBJECT extends TopLevel[OBJECT with Double]
-  
-  /* 12 */ @js.native
-  object PICTURE extends TopLevel[PICTURE with Double]
-  
-  /* 17 */ @js.native
-  object SLIDE_IMAGE extends TopLevel[SLIDE_IMAGE with Double]
-  
-  /* 13 */ @js.native
-  object SLIDE_NUMBER extends TopLevel[SLIDE_NUMBER with Double]
-  
-  /* 14 */ @js.native
-  object SUBTITLE extends TopLevel[SUBTITLE with Double]
-  
-  /* 15 */ @js.native
-  object TABLE extends TopLevel[TABLE with Double]
-  
-  /* 16 */ @js.native
-  object TITLE extends TopLevel[TITLE with Double]
-  
-  /* 0 */ @js.native
-  object UNSUPPORTED extends TopLevel[UNSUPPORTED with Double]
   
 }
 

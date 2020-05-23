@@ -19,14 +19,14 @@ object Options {
     callback: () => Unit = null,
     duration: Double | (js.Function1[/* distance */ Double, Double]) = null,
     easing: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double = null,
-    offset: Int | Double = null
+    offset: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(a11y)) __obj.updateDynamic("a11y")(a11y.asInstanceOf[js.Any])
+    if (!js.isUndefined(a11y)) __obj.updateDynamic("a11y")(a11y.get.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(js.Any.fromFunction4(easing))
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

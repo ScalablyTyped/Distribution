@@ -15,9 +15,9 @@ trait FullscreenControlOptions extends js.Object {
 
 object FullscreenControlOptions {
   @scala.inline
-  def apply(container: HTMLElement = null): FullscreenControlOptions = {
+  def apply(container: js.UndefOr[Null | HTMLElement] = js.undefined): FullscreenControlOptions = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(container)) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullscreenControlOptions]
   }
 }

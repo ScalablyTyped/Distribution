@@ -27,13 +27,13 @@ object BabelDescriptor {
     writable: js.UndefOr[Boolean] = js.undefined
   ): BabelDescriptor = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(configurable)) __obj.updateDynamic("configurable")(configurable.asInstanceOf[js.Any])
-    if (!js.isUndefined(enumerable)) __obj.updateDynamic("enumerable")(enumerable.asInstanceOf[js.Any])
+    if (!js.isUndefined(configurable)) __obj.updateDynamic("configurable")(configurable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enumerable)) __obj.updateDynamic("enumerable")(enumerable.get.asInstanceOf[js.Any])
     if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction0(get))
     if (initializer != null) __obj.updateDynamic("initializer")(js.Any.fromFunction0(initializer))
     if (set != null) __obj.updateDynamic("set")(js.Any.fromFunction1(set))
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable.asInstanceOf[js.Any])
+    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BabelDescriptor]
   }
 }

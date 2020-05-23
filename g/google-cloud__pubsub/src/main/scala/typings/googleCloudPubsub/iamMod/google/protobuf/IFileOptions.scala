@@ -46,42 +46,42 @@ trait IFileOptions extends js.Object {
 object IFileOptions {
   @scala.inline
   def apply(
-    ccEnableArenas: js.UndefOr[Boolean] = js.undefined,
-    ccGenericServices: js.UndefOr[Boolean] = js.undefined,
-    csharpNamespace: String = null,
-    deprecated: js.UndefOr[Boolean] = js.undefined,
-    goPackage: String = null,
-    javaGenerateEqualsAndHash: js.UndefOr[Boolean] = js.undefined,
-    javaGenericServices: js.UndefOr[Boolean] = js.undefined,
-    javaMultipleFiles: js.UndefOr[Boolean] = js.undefined,
-    javaOuterClassname: String = null,
-    javaPackage: String = null,
-    javaStringCheckUtf8: js.UndefOr[Boolean] = js.undefined,
-    objcClassPrefix: String = null,
-    optimizeFor: OptimizeMode = null,
-    phpClassPrefix: String = null,
-    pyGenericServices: js.UndefOr[Boolean] = js.undefined,
-    swiftPrefix: String = null,
-    uninterpretedOption: js.Array[IUninterpretedOption] = null
+    ccEnableArenas: js.UndefOr[Null | Boolean] = js.undefined,
+    ccGenericServices: js.UndefOr[Null | Boolean] = js.undefined,
+    csharpNamespace: js.UndefOr[Null | String] = js.undefined,
+    deprecated: js.UndefOr[Null | Boolean] = js.undefined,
+    goPackage: js.UndefOr[Null | String] = js.undefined,
+    javaGenerateEqualsAndHash: js.UndefOr[Null | Boolean] = js.undefined,
+    javaGenericServices: js.UndefOr[Null | Boolean] = js.undefined,
+    javaMultipleFiles: js.UndefOr[Null | Boolean] = js.undefined,
+    javaOuterClassname: js.UndefOr[Null | String] = js.undefined,
+    javaPackage: js.UndefOr[Null | String] = js.undefined,
+    javaStringCheckUtf8: js.UndefOr[Null | Boolean] = js.undefined,
+    objcClassPrefix: js.UndefOr[Null | String] = js.undefined,
+    optimizeFor: js.UndefOr[Null | OptimizeMode] = js.undefined,
+    phpClassPrefix: js.UndefOr[Null | String] = js.undefined,
+    pyGenericServices: js.UndefOr[Null | Boolean] = js.undefined,
+    swiftPrefix: js.UndefOr[Null | String] = js.undefined,
+    uninterpretedOption: js.UndefOr[Null | js.Array[IUninterpretedOption]] = js.undefined
   ): IFileOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(ccEnableArenas)) __obj.updateDynamic("ccEnableArenas")(ccEnableArenas.asInstanceOf[js.Any])
     if (!js.isUndefined(ccGenericServices)) __obj.updateDynamic("ccGenericServices")(ccGenericServices.asInstanceOf[js.Any])
-    if (csharpNamespace != null) __obj.updateDynamic("csharpNamespace")(csharpNamespace.asInstanceOf[js.Any])
+    if (!js.isUndefined(csharpNamespace)) __obj.updateDynamic("csharpNamespace")(csharpNamespace.asInstanceOf[js.Any])
     if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
-    if (goPackage != null) __obj.updateDynamic("goPackage")(goPackage.asInstanceOf[js.Any])
+    if (!js.isUndefined(goPackage)) __obj.updateDynamic("goPackage")(goPackage.asInstanceOf[js.Any])
     if (!js.isUndefined(javaGenerateEqualsAndHash)) __obj.updateDynamic("javaGenerateEqualsAndHash")(javaGenerateEqualsAndHash.asInstanceOf[js.Any])
     if (!js.isUndefined(javaGenericServices)) __obj.updateDynamic("javaGenericServices")(javaGenericServices.asInstanceOf[js.Any])
     if (!js.isUndefined(javaMultipleFiles)) __obj.updateDynamic("javaMultipleFiles")(javaMultipleFiles.asInstanceOf[js.Any])
-    if (javaOuterClassname != null) __obj.updateDynamic("javaOuterClassname")(javaOuterClassname.asInstanceOf[js.Any])
-    if (javaPackage != null) __obj.updateDynamic("javaPackage")(javaPackage.asInstanceOf[js.Any])
+    if (!js.isUndefined(javaOuterClassname)) __obj.updateDynamic("javaOuterClassname")(javaOuterClassname.asInstanceOf[js.Any])
+    if (!js.isUndefined(javaPackage)) __obj.updateDynamic("javaPackage")(javaPackage.asInstanceOf[js.Any])
     if (!js.isUndefined(javaStringCheckUtf8)) __obj.updateDynamic("javaStringCheckUtf8")(javaStringCheckUtf8.asInstanceOf[js.Any])
-    if (objcClassPrefix != null) __obj.updateDynamic("objcClassPrefix")(objcClassPrefix.asInstanceOf[js.Any])
-    if (optimizeFor != null) __obj.updateDynamic("optimizeFor")(optimizeFor.asInstanceOf[js.Any])
-    if (phpClassPrefix != null) __obj.updateDynamic("phpClassPrefix")(phpClassPrefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(objcClassPrefix)) __obj.updateDynamic("objcClassPrefix")(objcClassPrefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimizeFor)) __obj.updateDynamic("optimizeFor")(optimizeFor.asInstanceOf[js.Any])
+    if (!js.isUndefined(phpClassPrefix)) __obj.updateDynamic("phpClassPrefix")(phpClassPrefix.asInstanceOf[js.Any])
     if (!js.isUndefined(pyGenericServices)) __obj.updateDynamic("pyGenericServices")(pyGenericServices.asInstanceOf[js.Any])
-    if (swiftPrefix != null) __obj.updateDynamic("swiftPrefix")(swiftPrefix.asInstanceOf[js.Any])
-    if (uninterpretedOption != null) __obj.updateDynamic("uninterpretedOption")(uninterpretedOption.asInstanceOf[js.Any])
+    if (!js.isUndefined(swiftPrefix)) __obj.updateDynamic("swiftPrefix")(swiftPrefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(uninterpretedOption)) __obj.updateDynamic("uninterpretedOption")(uninterpretedOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileOptions]
   }
 }

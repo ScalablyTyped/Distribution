@@ -12,7 +12,7 @@ trait AndroidManifest
 
 object AndroidManifest {
   @scala.inline
-  def apply(versionCode: Double, StringDictionary: /* key */ StringDictionary[js.Any] = null): AndroidManifest = {
+  def apply(versionCode: Double, StringDictionary: /* name */ StringDictionary[js.Any] = null): AndroidManifest = {
     val __obj = js.Dynamic.literal(versionCode = versionCode.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[AndroidManifest]

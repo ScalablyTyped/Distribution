@@ -1,6 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
-import typings.googleAppsScript.AnonName
+import typings.googleAppsScript.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ trait Request[T] extends js.Object {
     */
   var dimensionsFilters: js.Array[js.Array[DimensionsFilters]]
   /** The names of the requested fields. */
-  var fields: js.Array[AnonName]
+  var fields: js.Array[Name]
   /** An object containing information relevant to connector execution. */
   var scriptParams: ScriptParams
 }
@@ -36,7 +36,7 @@ object Request {
     configParams: T,
     dateRange: DateRange,
     dimensionsFilters: js.Array[js.Array[DimensionsFilters]],
-    fields: js.Array[AnonName],
+    fields: js.Array[Name],
     scriptParams: ScriptParams
   ): Request[T] = {
     val __obj = js.Dynamic.literal(configParams = configParams.asInstanceOf[js.Any], dateRange = dateRange.asInstanceOf[js.Any], dimensionsFilters = dimensionsFilters.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], scriptParams = scriptParams.asInstanceOf[js.Any])

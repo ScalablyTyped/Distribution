@@ -1,6 +1,6 @@
 package typings.reactTable.mod
 
-import typings.reactTable.PartialTableCommonProps
+import typings.reactTable.anon.PartialTableCommonProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait UseExpandedHooks[D /* <: js.Object */] extends js.Object {
 
 object UseExpandedHooks {
   @scala.inline
-  def apply[D /* <: js.Object */](
+  def apply[D](
     getToggleAllRowsExpandedProps: js.Array[PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps]],
     getToggleRowsExpandedProps: js.Array[PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps]]
   ): UseExpandedHooks[D] = {

@@ -19,15 +19,15 @@ object MetaData {
     exif: Exif = null,
     imageHead: ArrayBuffer | Uint8Array = null,
     iptc: Iptc = null,
-    originalHeight: Int | Double = null,
-    originalWidth: Int | Double = null
+    originalHeight: js.UndefOr[Double] = js.undefined,
+    originalWidth: js.UndefOr[Double] = js.undefined
   ): MetaData = {
     val __obj = js.Dynamic.literal()
     if (exif != null) __obj.updateDynamic("exif")(exif.asInstanceOf[js.Any])
     if (imageHead != null) __obj.updateDynamic("imageHead")(imageHead.asInstanceOf[js.Any])
     if (iptc != null) __obj.updateDynamic("iptc")(iptc.asInstanceOf[js.Any])
-    if (originalHeight != null) __obj.updateDynamic("originalHeight")(originalHeight.asInstanceOf[js.Any])
-    if (originalWidth != null) __obj.updateDynamic("originalWidth")(originalWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(originalHeight)) __obj.updateDynamic("originalHeight")(originalHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(originalWidth)) __obj.updateDynamic("originalWidth")(originalWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetaData]
   }
 }

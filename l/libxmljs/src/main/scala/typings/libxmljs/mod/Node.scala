@@ -1,6 +1,6 @@
 package typings.libxmljs.mod
 
-import typings.libxmljs.AnonDeclaration
+import typings.libxmljs.anon.Declaration
 import typings.libxmljs.libxmljsStrings.attribute
 import typings.libxmljs.libxmljsStrings.comment
 import typings.libxmljs.libxmljsStrings.element
@@ -31,7 +31,7 @@ class Node () extends js.Object {
   def prevSibling(): Node | Null = js.native
   def remove(): this.type = js.native
   def toString(format: Boolean): String = js.native
-  def toString(format: AnonDeclaration): String = js.native
+  def toString(format: Declaration): String = js.native
   def `type`(): comment | element | text | attribute = js.native
 }
 

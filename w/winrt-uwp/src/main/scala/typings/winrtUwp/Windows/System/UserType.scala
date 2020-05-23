@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.System
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object UserType extends js.Object {
   /** The user is a remote user. */
   @js.native
   sealed trait remoteUser extends UserType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UserType with Double] = js.native
-  /* 2 */ @js.native
-  object localGuest extends TopLevel[localGuest with Double]
-  
-  /* 0 */ @js.native
-  object localUser extends TopLevel[localUser with Double]
-  
-  /* 3 */ @js.native
-  object remoteGuest extends TopLevel[remoteGuest with Double]
-  
-  /* 1 */ @js.native
-  object remoteUser extends TopLevel[remoteUser with Double]
   
 }
 

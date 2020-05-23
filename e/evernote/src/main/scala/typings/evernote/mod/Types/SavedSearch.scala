@@ -1,6 +1,6 @@
 package typings.evernote.mod.Types
 
-import typings.evernote.AnonFormat
+import typings.evernote.anon.Format
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("evernote", "Types.SavedSearch")
 @js.native
 class SavedSearch () extends js.Object {
-  def this(args: AnonFormat) = this()
+  def this(args: Format) = this()
   var format: js.UndefOr[QueryFormat] = js.native
   var guid: js.UndefOr[Guid] = js.native
   var name: js.UndefOr[String] = js.native

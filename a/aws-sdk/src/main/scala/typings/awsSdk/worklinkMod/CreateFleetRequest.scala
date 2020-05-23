@@ -25,11 +25,11 @@ object CreateFleetRequest {
   def apply(
     FleetName: FleetName,
     DisplayName: DisplayName = null,
-    OptimizeForEndUserLocation: js.UndefOr[scala.Boolean] = js.undefined
+    OptimizeForEndUserLocation: js.UndefOr[Boolean] = js.undefined
   ): CreateFleetRequest = {
     val __obj = js.Dynamic.literal(FleetName = FleetName.asInstanceOf[js.Any])
     if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(OptimizeForEndUserLocation)) __obj.updateDynamic("OptimizeForEndUserLocation")(OptimizeForEndUserLocation.asInstanceOf[js.Any])
+    if (!js.isUndefined(OptimizeForEndUserLocation)) __obj.updateDynamic("OptimizeForEndUserLocation")(OptimizeForEndUserLocation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFleetRequest]
   }
 }

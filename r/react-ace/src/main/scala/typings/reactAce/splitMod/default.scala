@@ -1,7 +1,7 @@
 package typings.reactAce.splitMod
 
-import typings.reactAce.PartialISplitEditorProps
-import typings.reactAce.ValidationMapISplitEditor
+import typings.reactAce.anon.PartialISplitEditorProps
+import typings.reactAce.anon.ValidationMapISplitEditor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

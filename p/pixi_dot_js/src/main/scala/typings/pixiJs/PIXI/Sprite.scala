@@ -1,7 +1,5 @@
 package typings.pixiJs.PIXI
 
-import typings.std.HTMLCanvasElement
-import typings.std.HTMLVideoElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,10 +30,8 @@ import scala.scalajs.js.annotation._
   * @extends PIXI.Container
   * @memberof PIXI
   */
-@JSGlobal("PIXI.Sprite")
 @js.native
-class Sprite () extends Container {
-  def this(texture: Texture) = this()
+trait Sprite extends Container {
   /**
     * Cached tint value so we can tell when the tint is changed.
     * Value is used for 2d CanvasRenderer.
@@ -126,28 +122,5 @@ class Sprite () extends Container {
     * @return {boolean} the result of the test
     */
   def containsPoint(point: Point): Boolean = js.native
-}
-
-/* static members */
-@JSGlobal("PIXI.Sprite")
-@js.native
-object Sprite extends js.Object {
-  /**
-    * Helper function that creates a new sprite based on the source you provide.
-    * The source can be - frame id, image url, video url, canvas element, video element, base texture
-    *
-    * @static
-    * @param {string|PIXI.Texture|HTMLCanvasElement|HTMLVideoElement} source Source to create texture from
-    * @param {object} [options] See {@link PIXI.BaseTexture}'s constructor for options.
-    * @return {PIXI.Sprite} The newly created sprite
-    */
-  def from(source: String): Sprite = js.native
-  def from(source: String, options: js.Any): Sprite = js.native
-  def from(source: Texture): Sprite = js.native
-  def from(source: Texture, options: js.Any): Sprite = js.native
-  def from(source: HTMLCanvasElement): Sprite = js.native
-  def from(source: HTMLCanvasElement, options: js.Any): Sprite = js.native
-  def from(source: HTMLVideoElement): Sprite = js.native
-  def from(source: HTMLVideoElement, options: js.Any): Sprite = js.native
 }
 

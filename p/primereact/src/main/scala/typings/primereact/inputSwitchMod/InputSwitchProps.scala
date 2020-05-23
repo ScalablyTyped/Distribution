@@ -1,8 +1,8 @@
 package typings.primereact.inputSwitchMod
 
-import typings.primereact.AnonTargetValue
+import typings.primereact.anon.TargetValue
 import typings.primereact.tooltipOptionsMod.TooltipOptions
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,9 +14,9 @@ trait InputSwitchProps extends js.Object {
   var disabled: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var offLabel: js.UndefOr[String] = js.undefined
-  var onBlur: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ AnonTargetValue, Unit]] = js.undefined
-  var onFocus: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
+  var onBlur: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ TargetValue, Unit]] = js.undefined
+  var onFocus: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   var onLabel: js.UndefOr[String] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
   var tooltip: js.UndefOr[js.Any] = js.undefined
@@ -32,9 +32,9 @@ object InputSwitchProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     offLabel: String = null,
-    onBlur: /* event */ Event_ => Unit = null,
-    onChange: /* e */ AnonTargetValue => Unit = null,
-    onFocus: /* event */ Event_ => Unit = null,
+    onBlur: /* event */ Event => Unit = null,
+    onChange: /* e */ TargetValue => Unit = null,
+    onFocus: /* event */ Event => Unit = null,
     onLabel: String = null,
     style: js.Object = null,
     tooltip: js.Any = null,
@@ -42,9 +42,9 @@ object InputSwitchProps {
   ): InputSwitchProps = {
     val __obj = js.Dynamic.literal()
     if (ariaLabelledBy != null) __obj.updateDynamic("ariaLabelledBy")(ariaLabelledBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (offLabel != null) __obj.updateDynamic("offLabel")(offLabel.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))

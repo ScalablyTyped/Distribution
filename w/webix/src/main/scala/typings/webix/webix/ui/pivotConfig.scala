@@ -68,7 +68,7 @@ object pivotConfig {
   def apply(
     animate: js.Any = null,
     borderless: js.UndefOr[Boolean] = js.undefined,
-    columnWidth: Int | Double = null,
+    columnWidth: js.UndefOr[Double] = js.undefined,
     container: String | HTMLElement = null,
     css: js.Any = null,
     data: String | js.Array[_] = null,
@@ -79,28 +79,28 @@ object pivotConfig {
     externalProcessing: js.UndefOr[Boolean] = js.undefined,
     fieldMap: js.Any = null,
     filterLabelAlign: String = null,
-    filterLabelWidth: Int | Double = null,
+    filterLabelWidth: js.UndefOr[Double] = js.undefined,
     filterMap: js.Any = null,
-    filterMinWidth: Int | Double = null,
+    filterMinWidth: js.UndefOr[Double] = js.undefined,
     filterPlaceholder: Boolean | String = null,
-    filterWidth: Int | Double = null,
+    filterWidth: js.UndefOr[Double] = js.undefined,
     footer: String | Boolean = null,
     format: /* repeated */ js.Any => js.Any = null,
-    gravity: Int | Double = null,
+    gravity: js.UndefOr[Double] = js.undefined,
     headerTemplate: /* repeated */ js.Any => js.Any = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String | Double = null,
     max: js.UndefOr[Boolean] = js.undefined,
-    maxHeight: Int | Double = null,
-    maxWidth: Int | Double = null,
+    maxHeight: js.UndefOr[Double] = js.undefined,
+    maxWidth: js.UndefOr[Double] = js.undefined,
     min: js.UndefOr[Boolean] = js.undefined,
-    minHeight: Int | Double = null,
-    minWidth: Int | Double = null,
+    minHeight: js.UndefOr[Double] = js.undefined,
+    minWidth: js.UndefOr[Double] = js.undefined,
     on: EventHash = null,
     padding: js.Any = null,
-    paddingX: Int | Double = null,
-    paddingY: Int | Double = null,
+    paddingX: js.UndefOr[Double] = js.undefined,
+    paddingY: js.UndefOr[Double] = js.undefined,
     ping: /* repeated */ js.Any => js.Any = null,
     popup: js.Any = null,
     profile: js.UndefOr[Boolean] = js.undefined,
@@ -117,63 +117,63 @@ object pivotConfig {
     url: js.Any = null,
     view: String = null,
     webWorker: String = null,
-    width: Int | Double = null,
-    yScaleWidth: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined,
+    yScaleWidth: js.UndefOr[Double] = js.undefined
   ): pivotConfig = {
     val __obj = js.Dynamic.literal()
     if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.asInstanceOf[js.Any])
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnWidth)) __obj.updateDynamic("columnWidth")(columnWidth.get.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (datatable != null) __obj.updateDynamic("datatable")(datatable.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
     if (defaultOperation != null) __obj.updateDynamic("defaultOperation")(defaultOperation.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(externalProcessing)) __obj.updateDynamic("externalProcessing")(externalProcessing.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(externalProcessing)) __obj.updateDynamic("externalProcessing")(externalProcessing.get.asInstanceOf[js.Any])
     if (fieldMap != null) __obj.updateDynamic("fieldMap")(fieldMap.asInstanceOf[js.Any])
     if (filterLabelAlign != null) __obj.updateDynamic("filterLabelAlign")(filterLabelAlign.asInstanceOf[js.Any])
-    if (filterLabelWidth != null) __obj.updateDynamic("filterLabelWidth")(filterLabelWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterLabelWidth)) __obj.updateDynamic("filterLabelWidth")(filterLabelWidth.get.asInstanceOf[js.Any])
     if (filterMap != null) __obj.updateDynamic("filterMap")(filterMap.asInstanceOf[js.Any])
-    if (filterMinWidth != null) __obj.updateDynamic("filterMinWidth")(filterMinWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterMinWidth)) __obj.updateDynamic("filterMinWidth")(filterMinWidth.get.asInstanceOf[js.Any])
     if (filterPlaceholder != null) __obj.updateDynamic("filterPlaceholder")(filterPlaceholder.asInstanceOf[js.Any])
-    if (filterWidth != null) __obj.updateDynamic("filterWidth")(filterWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterWidth)) __obj.updateDynamic("filterWidth")(filterWidth.get.asInstanceOf[js.Any])
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction1(format))
-    if (gravity != null) __obj.updateDynamic("gravity")(gravity.asInstanceOf[js.Any])
+    if (!js.isUndefined(gravity)) __obj.updateDynamic("gravity")(gravity.get.asInstanceOf[js.Any])
     if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(js.Any.fromFunction1(headerTemplate))
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
     if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (paddingX != null) __obj.updateDynamic("paddingX")(paddingX.asInstanceOf[js.Any])
-    if (paddingY != null) __obj.updateDynamic("paddingY")(paddingY.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingX)) __obj.updateDynamic("paddingX")(paddingX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingY)) __obj.updateDynamic("paddingY")(paddingY.get.asInstanceOf[js.Any])
     if (ping != null) __obj.updateDynamic("ping")(js.Any.fromFunction1(ping))
     if (popup != null) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
-    if (!js.isUndefined(profile)) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
+    if (!js.isUndefined(profile)) __obj.updateDynamic("profile")(profile.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.get.asInstanceOf[js.Any])
     if (readonlyTitle != null) __obj.updateDynamic("readonlyTitle")(readonlyTitle.asInstanceOf[js.Any])
     if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
-    if (!js.isUndefined(removeMissed)) __obj.updateDynamic("removeMissed")(removeMissed.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeMissed)) __obj.updateDynamic("removeMissed")(removeMissed.get.asInstanceOf[js.Any])
     if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
-    if (!js.isUndefined(separateLabel)) __obj.updateDynamic("separateLabel")(separateLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(stableRowId)) __obj.updateDynamic("stableRowId")(stableRowId.asInstanceOf[js.Any])
+    if (!js.isUndefined(separateLabel)) __obj.updateDynamic("separateLabel")(separateLabel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stableRowId)) __obj.updateDynamic("stableRowId")(stableRowId.get.asInstanceOf[js.Any])
     if (structure != null) __obj.updateDynamic("structure")(structure.asInstanceOf[js.Any])
     if (totalColumn != null) __obj.updateDynamic("totalColumn")(totalColumn.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     if (webWorker != null) __obj.updateDynamic("webWorker")(webWorker.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (yScaleWidth != null) __obj.updateDynamic("yScaleWidth")(yScaleWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yScaleWidth)) __obj.updateDynamic("yScaleWidth")(yScaleWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[pivotConfig]
   }
 }

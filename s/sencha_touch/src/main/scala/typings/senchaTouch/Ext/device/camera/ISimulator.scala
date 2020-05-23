@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation._
 
 trait ISimulator extends IAbstract {
   /** [Method] Allows you to capture a photo
-  		* @param options Object
-  		*/
+    * @param options Object
+    */
   @JSName("capture")
   var capture_ISimulator: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Returns the value of samples
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   var getSamples: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Sets the value of samples
-  		* @param samples Array The new value.
-  		*/
+    * @param samples Array The new value.
+    */
   var setSamples: js.UndefOr[js.Function1[/* samples */ js.UndefOr[Array], Unit]] = js.undefined
 }
 
@@ -64,7 +64,7 @@ object ISimulator {
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setSamples != null) __obj.updateDynamic("setSamples")(js.Any.fromFunction1(setSamples))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISimulator]

@@ -13,10 +13,10 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(count: Int | Double = null, time: Int | Double = null): Options = {
+  def apply(count: js.UndefOr[Double] = js.undefined, time: js.UndefOr[Double] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(time)) __obj.updateDynamic("time")(time.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

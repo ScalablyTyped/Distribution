@@ -12,11 +12,15 @@ trait ICollisionFilter extends js.Object {
 
 object ICollisionFilter {
   @scala.inline
-  def apply(category: Int | Double = null, group: Int | Double = null, mask: Int | Double = null): ICollisionFilter = {
+  def apply(
+    category: js.UndefOr[Double] = js.undefined,
+    group: js.UndefOr[Double] = js.undefined,
+    mask: js.UndefOr[Double] = js.undefined
+  ): ICollisionFilter = {
     val __obj = js.Dynamic.literal()
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
+    if (!js.isUndefined(category)) __obj.updateDynamic("category")(category.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICollisionFilter]
   }
 }

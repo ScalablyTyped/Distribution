@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.ListColumn")
 @js.native
-class ListColumn protected () extends js.Object {
+trait ListColumn extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
   @JSName("DataBodyRange")

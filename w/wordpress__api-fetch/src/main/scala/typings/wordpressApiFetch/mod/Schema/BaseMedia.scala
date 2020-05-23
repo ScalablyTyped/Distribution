@@ -1,8 +1,8 @@
 package typings.wordpressApiFetch.mod.Schema
 
 import typings.std.Record
-import typings.wordpressApiFetch.AnonDictk
-import typings.wordpressApiFetch.AnonHeight
+import typings.wordpressApiFetch.anon.Dictk
+import typings.wordpressApiFetch.anon.Height
 import typings.wordpressApiFetch.wordpressApiFetchStrings.file
 import typings.wordpressApiFetch.wordpressApiFetchStrings.image
 import typings.wordpressApiFetch.wordpressApiFetchStrings.inherit
@@ -22,7 +22,7 @@ trait BaseMedia[T /* <: Context */] extends BaseResponse {
   var guid: Contextual[T, js.Object, js.Object]
   var id: Double
   var link: String
-  var media_details: AnonHeight
+  var media_details: Height
   var media_type: file | image
   var meta: js.Array[_]
   var mime_type: String
@@ -41,8 +41,8 @@ trait BaseMedia[T /* <: Context */] extends BaseResponse {
 
 object BaseMedia {
   @scala.inline
-  def apply[T /* <: Context */](
-    _links: Record[String, js.Array[AnonDictk]],
+  def apply[T](
+    _links: Record[String, js.Array[Dictk]],
     alt_text: String,
     author: Double,
     caption: Contextual[T, js.Object, js.Object],
@@ -54,7 +54,7 @@ object BaseMedia {
     guid: Contextual[T, js.Object, js.Object],
     id: Double,
     link: String,
-    media_details: AnonHeight,
+    media_details: Height,
     media_type: file | image,
     meta: js.Array[_],
     mime_type: String,
@@ -69,12 +69,11 @@ object BaseMedia {
     title: Contextual[T, js.Object, js.Object],
     `type`: String,
     _embedded: Record[String, js.Array[_]] = null,
-    post: Int | Double = null
+    post: Double = null.asInstanceOf[Double]
   ): BaseMedia[T] = {
-    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], alt_text = alt_text.asInstanceOf[js.Any], author = author.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], comment_status = comment_status.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], date_gmt = date_gmt.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], generated_slug = generated_slug.asInstanceOf[js.Any], guid = guid.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], media_details = media_details.asInstanceOf[js.Any], media_type = media_type.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], mime_type = mime_type.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any], modified_gmt = modified_gmt.asInstanceOf[js.Any], permalink_template = permalink_template.asInstanceOf[js.Any], ping_status = ping_status.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], source_url = source_url.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], alt_text = alt_text.asInstanceOf[js.Any], author = author.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], comment_status = comment_status.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], date_gmt = date_gmt.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], generated_slug = generated_slug.asInstanceOf[js.Any], guid = guid.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], media_details = media_details.asInstanceOf[js.Any], media_type = media_type.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], mime_type = mime_type.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any], modified_gmt = modified_gmt.asInstanceOf[js.Any], permalink_template = permalink_template.asInstanceOf[js.Any], ping_status = ping_status.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], source_url = source_url.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (_embedded != null) __obj.updateDynamic("_embedded")(_embedded.asInstanceOf[js.Any])
-    if (post != null) __obj.updateDynamic("post")(post.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseMedia[T]]
   }
 }

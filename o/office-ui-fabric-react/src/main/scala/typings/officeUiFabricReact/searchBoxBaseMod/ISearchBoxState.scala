@@ -13,7 +13,7 @@ object ISearchBoxState {
   @scala.inline
   def apply(hasFocus: js.UndefOr[Boolean] = js.undefined, value: String = null): ISearchBoxState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasFocus)) __obj.updateDynamic("hasFocus")(hasFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasFocus)) __obj.updateDynamic("hasFocus")(hasFocus.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISearchBoxState]
   }

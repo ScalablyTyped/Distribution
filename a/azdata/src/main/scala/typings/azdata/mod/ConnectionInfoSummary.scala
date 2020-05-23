@@ -6,32 +6,32 @@ import scala.scalajs.js.annotation._
 
 trait ConnectionInfoSummary extends js.Object {
   /**
-  		 * connection id returned from service host.
-  		 */
+    * connection id returned from service host.
+    */
   var connectionId: String
   /**
-  		 * information about the actual connection established
-  		 */
+    * information about the actual connection established
+    */
   var connectionSummary: ConnectionSummary
   /**
-  		 * Error message returned from the engine, if any.
-  		 */
+    * Error message returned from the engine, if any.
+    */
   var errorMessage: String
   /**
-  		 * Error number returned from the engine, if any.
-  		 */
+    * Error number returned from the engine, if any.
+    */
   var errorNumber: Double
   /**
-  		 * any diagnostic messages return from the service host.
-  		 */
+    * any diagnostic messages return from the service host.
+    */
   var messages: String
   /**
-  		 * URI identifying the owner of the connection
-  		 */
+    * URI identifying the owner of the connection
+    */
   var ownerUri: String
   /**
-  		 * Information about the connected server.
-  		 */
+    * Information about the connected server.
+    */
   var serverInfo: ServerInfo
 }
 

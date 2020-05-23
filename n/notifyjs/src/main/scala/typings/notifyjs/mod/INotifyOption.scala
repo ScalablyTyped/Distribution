@@ -1,6 +1,6 @@
 package typings.notifyjs.mod
 
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +32,7 @@ trait INotifyOption extends js.Object {
   /**
     * callback when notification is shown
     */
-  var notifyShow: js.UndefOr[js.Function1[/* e */ Event_, _]] = js.undefined
+  var notifyShow: js.UndefOr[js.Function1[/* e */ Event, _]] = js.undefined
   /**
     * callback when user has denied permission
     */
@@ -68,13 +68,13 @@ object INotifyOption {
     notifyClick: js.Function = null,
     notifyClose: js.Function = null,
     notifyError: js.Function = null,
-    notifyShow: /* e */ Event_ => _ = null,
+    notifyShow: /* e */ Event => _ = null,
     permissionDenied: js.Function = null,
     permissionGranted: js.Function = null,
     requireInteraction: js.UndefOr[Boolean] = js.undefined,
     silent: js.UndefOr[Boolean] = js.undefined,
     tag: String = null,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): INotifyOption = {
     val __obj = js.Dynamic.literal()
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
@@ -85,10 +85,10 @@ object INotifyOption {
     if (notifyShow != null) __obj.updateDynamic("notifyShow")(js.Any.fromFunction1(notifyShow))
     if (permissionDenied != null) __obj.updateDynamic("permissionDenied")(permissionDenied.asInstanceOf[js.Any])
     if (permissionGranted != null) __obj.updateDynamic("permissionGranted")(permissionGranted.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireInteraction)) __obj.updateDynamic("requireInteraction")(requireInteraction.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireInteraction)) __obj.updateDynamic("requireInteraction")(requireInteraction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[INotifyOption]
   }
 }

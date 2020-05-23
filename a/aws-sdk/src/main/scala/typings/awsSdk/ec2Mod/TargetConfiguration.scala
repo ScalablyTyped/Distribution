@@ -18,9 +18,9 @@ trait TargetConfiguration extends js.Object {
 
 object TargetConfiguration {
   @scala.inline
-  def apply(InstanceCount: Int | scala.Double = null, OfferingId: String = null): TargetConfiguration = {
+  def apply(InstanceCount: js.UndefOr[Integer] = js.undefined, OfferingId: String = null): TargetConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (InstanceCount != null) __obj.updateDynamic("InstanceCount")(InstanceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount.get.asInstanceOf[js.Any])
     if (OfferingId != null) __obj.updateDynamic("OfferingId")(OfferingId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetConfiguration]
   }

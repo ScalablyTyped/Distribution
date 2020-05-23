@@ -10,28 +10,28 @@ import scala.scalajs.js.annotation._
   */
 trait EncodeStringDict extends js.Object {
   /**
-  	 * Character encoding to use when encoding this string to bytes.
-  	 */
+    * Character encoding to use when encoding this string to bytes.
+    */
   var charset: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Destination buffer.
-  	 */
+    * Destination buffer.
+    */
   var dest: Buffer
   /**
-  	 * Index in the `dest` buffer of the first byte of the encoded string.
-  	 */
+    * Index in the `dest` buffer of the first byte of the encoded string.
+    */
   var destPosition: js.UndefOr[Double] = js.undefined
   /**
-  	 * Source string to encode.
-  	 */
+    * Source string to encode.
+    */
   var source: java.lang.String
   /**
-  	 * Number of characters in `source` to encode.
-  	 */
+    * Number of characters in `source` to encode.
+    */
   var sourceLength: js.UndefOr[Double] = js.undefined
   /**
-  	 * Position in `source` to start encoding.
-  	 */
+    * Position in `source` to start encoding.
+    */
   var sourcePosition: js.UndefOr[Double] = js.undefined
 }
 
@@ -41,15 +41,15 @@ object EncodeStringDict {
     dest: Buffer,
     source: java.lang.String,
     charset: java.lang.String = null,
-    destPosition: Int | Double = null,
-    sourceLength: Int | Double = null,
-    sourcePosition: Int | Double = null
+    destPosition: js.UndefOr[Double] = js.undefined,
+    sourceLength: js.UndefOr[Double] = js.undefined,
+    sourcePosition: js.UndefOr[Double] = js.undefined
   ): EncodeStringDict = {
     val __obj = js.Dynamic.literal(dest = dest.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
-    if (destPosition != null) __obj.updateDynamic("destPosition")(destPosition.asInstanceOf[js.Any])
-    if (sourceLength != null) __obj.updateDynamic("sourceLength")(sourceLength.asInstanceOf[js.Any])
-    if (sourcePosition != null) __obj.updateDynamic("sourcePosition")(sourcePosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(destPosition)) __obj.updateDynamic("destPosition")(destPosition.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceLength)) __obj.updateDynamic("sourceLength")(sourceLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourcePosition)) __obj.updateDynamic("sourcePosition")(sourcePosition.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncodeStringDict]
   }
 }

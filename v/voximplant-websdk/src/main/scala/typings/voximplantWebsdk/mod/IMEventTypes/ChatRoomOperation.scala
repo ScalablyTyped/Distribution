@@ -7,20 +7,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		*	Event dispatched when chat room participant was banned/unbanned
-		*/
+  *    Event dispatched when chat room participant was banned/unbanned
+  */
 trait ChatRoomOperation extends VoxImplantIMEvent {
   /**
-  			* Operation type
-  			*/
+    * Operation type
+    */
   var operation: ChatRoomOperationType
   /**
-  			* Operation result: true/false - success/failure
-  			*/
+    * Operation result: true/false - success/failure
+    */
   var result: Boolean
   /**
-  			* Room id
-  			*/
+    * Room id
+    */
   var room: String
 }
 

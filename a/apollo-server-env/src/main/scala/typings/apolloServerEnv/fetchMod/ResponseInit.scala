@@ -16,13 +16,13 @@ object ResponseInit {
   @scala.inline
   def apply(
     headers: HeadersInit = null,
-    status: Int | Double = null,
+    status: js.UndefOr[Double] = js.undefined,
     statusText: String = null,
     url: String = null
   ): ResponseInit = {
     val __obj = js.Dynamic.literal()
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
     if (statusText != null) __obj.updateDynamic("statusText")(statusText.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseInit]

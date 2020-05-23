@@ -12,11 +12,15 @@ trait GiphyOptions extends js.Object {
 
 object GiphyOptions {
   @scala.inline
-  def apply(apiKey: String = null, https: js.UndefOr[Boolean] = js.undefined, timeout: Int | Double = null): GiphyOptions = {
+  def apply(
+    apiKey: String = null,
+    https: js.UndefOr[Boolean] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined
+  ): GiphyOptions = {
     val __obj = js.Dynamic.literal()
     if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(https)) __obj.updateDynamic("https")(https.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(https)) __obj.updateDynamic("https")(https.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GiphyOptions]
   }
 }

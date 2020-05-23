@@ -28,8 +28,8 @@ object ColumnOptions {
   ): ColumnOptions = {
     val __obj = js.Dynamic.literal()
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (!js.isUndefined(columns_tfoot)) __obj.updateDynamic("columns_tfoot")(columns_tfoot.asInstanceOf[js.Any])
-    if (!js.isUndefined(columns_thead)) __obj.updateDynamic("columns_thead")(columns_thead.asInstanceOf[js.Any])
+    if (!js.isUndefined(columns_tfoot)) __obj.updateDynamic("columns_tfoot")(columns_tfoot.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columns_thead)) __obj.updateDynamic("columns_thead")(columns_thead.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnOptions]
   }
 }

@@ -12,7 +12,7 @@ object ParseOptions {
   @scala.inline
   def apply(allowDuplicateKeys: js.UndefOr[Boolean] = js.undefined): ParseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDuplicateKeys)) __obj.updateDynamic("allowDuplicateKeys")(allowDuplicateKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDuplicateKeys)) __obj.updateDynamic("allowDuplicateKeys")(allowDuplicateKeys.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseOptions]
   }
 }

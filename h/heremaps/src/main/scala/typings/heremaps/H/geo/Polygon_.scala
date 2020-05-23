@@ -8,11 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * @link https://developer.here.com/documentation/maps/api_reference/H.geo.Polygon.html
   */
-@JSGlobal("H.geo.Polygon")
 @js.native
-class Polygon_ protected () extends AbstractGeometry {
-  def this(exterior: LineString) = this()
-  def this(exterior: LineString, opt_interiors: js.Array[LineString]) = this()
+trait Polygon_ extends AbstractGeometry {
   def getExterior(): LineString = js.native
   def getInteriors(): js.Array[LineString] = js.native
   def getPoleCovering(): Direction = js.native

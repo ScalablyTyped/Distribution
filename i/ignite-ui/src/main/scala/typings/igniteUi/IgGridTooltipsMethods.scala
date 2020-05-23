@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait IgGridTooltipsMethods extends js.Object {
   /**
-  	 * Destroys the tooltip widget.
-  	 */
+    * Destroys the tooltip widget.
+    */
   def destroy(): Unit
   /**
-  	 * Returns the ID of the parent div element bounding the ruler and the tooltip container
-  	 */
+    * Returns the ID of the parent div element bounding the ruler and the tooltip container
+    */
   def id(): String
 }
 

@@ -22,7 +22,7 @@ object TileGridOptions {
   def apply(
     resolutions: js.Array[Double],
     extent: Extent_ = null,
-    minZoom: Int | Double = null,
+    minZoom: js.UndefOr[Double] = js.undefined,
     origin: Coordinate_ = null,
     origins: js.Array[Coordinate_] = null,
     tileSize: Double | Size = null,
@@ -30,7 +30,7 @@ object TileGridOptions {
   ): TileGridOptions = {
     val __obj = js.Dynamic.literal(resolutions = resolutions.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     if (origins != null) __obj.updateDynamic("origins")(origins.asInstanceOf[js.Any])
     if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])

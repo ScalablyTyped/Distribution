@@ -32,15 +32,15 @@ object Options {
   @scala.inline
   def apply(
     capabilities: DesiredCapabilities = null,
-    connectionRetryCount: Int | Double = null,
-    connectionRetryTimeout: Int | Double = null,
+    connectionRetryCount: js.UndefOr[Double] = js.undefined,
+    connectionRetryTimeout: js.UndefOr[Double] = js.undefined,
     headers: StringDictionary[String] = null,
     hostname: String = null,
     key: String = null,
     logLevel: WebDriverLogTypes = null,
     logOutput: String | WritableStream = null,
     path: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     protocol: String = null,
     queryParams: StringDictionary[String] = null,
     transformRequest: /* requestOptions */ HTTPRequestOptions => HTTPRequestOptions = null,
@@ -49,15 +49,15 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities.asInstanceOf[js.Any])
-    if (connectionRetryCount != null) __obj.updateDynamic("connectionRetryCount")(connectionRetryCount.asInstanceOf[js.Any])
-    if (connectionRetryTimeout != null) __obj.updateDynamic("connectionRetryTimeout")(connectionRetryTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectionRetryCount)) __obj.updateDynamic("connectionRetryCount")(connectionRetryCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectionRetryTimeout)) __obj.updateDynamic("connectionRetryTimeout")(connectionRetryTimeout.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
     if (logOutput != null) __obj.updateDynamic("logOutput")(logOutput.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
     if (transformRequest != null) __obj.updateDynamic("transformRequest")(js.Any.fromFunction1(transformRequest))

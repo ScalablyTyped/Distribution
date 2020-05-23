@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ScrollbarOptions extends js.Object {
   /**
-    * 	Scrollbar draggable element CSS class
+    *     Scrollbar draggable element CSS class
     *
     * @default 'swiper-scrollbar-drag'
     */
@@ -62,10 +62,10 @@ object ScrollbarOptions {
     val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any])
     if (dragClass != null) __obj.updateDynamic("dragClass")(dragClass.asInstanceOf[js.Any])
     if (dragSize != null) __obj.updateDynamic("dragSize")(dragSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide.get.asInstanceOf[js.Any])
     if (lockClass != null) __obj.updateDynamic("lockClass")(lockClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(snapOnRelease)) __obj.updateDynamic("snapOnRelease")(snapOnRelease.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapOnRelease)) __obj.updateDynamic("snapOnRelease")(snapOnRelease.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollbarOptions]
   }
 }

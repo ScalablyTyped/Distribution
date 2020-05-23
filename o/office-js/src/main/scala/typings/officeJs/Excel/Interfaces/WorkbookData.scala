@@ -8,21 +8,21 @@ import scala.scalajs.js.annotation._
 trait WorkbookData extends js.Object {
   /**
     *
-    * Specifies whether or not the workbook is in autosave mode. Read-Only.
+    * Specifies if the workbook is in autosave mode.
     *
     * [Api set: ExcelApi 1.9]
     */
   var autoSave: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents a collection of bindings that are part of the workbook. Read-only.
+    * Represents a collection of bindings that are part of the workbook.
     *
     * [Api set: ExcelApi 1.1]
     */
   var bindings: js.UndefOr[js.Array[BindingData]] = js.undefined
   /**
     *
-    * Returns a number about the version of Excel Calculation Engine. Read-Only.
+    * Returns a number about the version of Excel Calculation Engine.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -37,21 +37,21 @@ trait WorkbookData extends js.Object {
   var chartDataPointTrack: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents a collection of Comments associated with the workbook. Read-only.
+    * Represents a collection of Comments associated with the workbook.
     *
     * [Api set: ExcelApi 1.10]
     */
   var comments: js.UndefOr[js.Array[CommentData]] = js.undefined
   /**
     *
-    * Represents the collection of custom XML parts contained by this workbook. Read-only.
+    * Represents the collection of custom XML parts contained by this workbook.
     *
     * [Api set: ExcelApi 1.5]
     */
   var customXmlParts: js.UndefOr[js.Array[CustomXmlPartData]] = js.undefined
   /**
     *
-    * Specifies whether or not changes have been made since the workbook was last saved.
+    * Specifies if changes have been made since the workbook was last saved.
     You can set this property to true if you want to close a modified workbook without either saving it or being prompted to save it.
     *
     * [Api set: ExcelApi 1.9]
@@ -59,105 +59,105 @@ trait WorkbookData extends js.Object {
   var isDirty: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Gets the workbook name. Read-only.
+    * Gets the workbook name.
     *
     * [Api set: ExcelApi 1.7]
     */
   var name: js.UndefOr[String] = js.undefined
   /**
     *
-    * Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
+    * Represents a collection of workbook scoped named items (named ranges and constants).
     *
     * [Api set: ExcelApi 1.1]
     */
   var names: js.UndefOr[js.Array[NamedItemData]] = js.undefined
   /**
     *
-    * Represents a collection of PivotTableStyles associated with the workbook. Read-only.
+    * Represents a collection of PivotTableStyles associated with the workbook.
     *
     * [Api set: ExcelApi 1.10]
     */
   var pivotTableStyles: js.UndefOr[js.Array[PivotTableStyleData]] = js.undefined
   /**
     *
-    * Represents a collection of PivotTables associated with the workbook. Read-only.
+    * Represents a collection of PivotTables associated with the workbook.
     *
     * [Api set: ExcelApi 1.3]
     */
   var pivotTables: js.UndefOr[js.Array[PivotTableData]] = js.undefined
   /**
     *
-    * Specifies whether or not the workbook has ever been saved locally or online. Read-Only.
+    * Specifies if the workbook has ever been saved locally or online.
     *
     * [Api set: ExcelApi 1.9]
     */
   var previouslySaved: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Gets the workbook properties. Read-only.
+    * Gets the workbook properties.
     *
     * [Api set: ExcelApi 1.7]
     */
   var properties: js.UndefOr[DocumentPropertiesData] = js.undefined
   /**
     *
-    * Returns workbook protection object for a workbook. Read-only.
+    * Returns the protection object for a workbook.
     *
     * [Api set: ExcelApi 1.7]
     */
   var protection: js.UndefOr[WorkbookProtectionData] = js.undefined
   /**
     *
-    * True if the workbook is open in Read-only mode. Read-only.
+    * True if the workbook is open in Read-only mode.
     *
     * [Api set: ExcelApi 1.8]
     */
   var readOnly: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents a collection of Settings associated with the workbook. Read-only.
+    * Represents a collection of Settings associated with the workbook.
     *
     * [Api set: ExcelApi 1.4]
     */
   var settings: js.UndefOr[js.Array[SettingData]] = js.undefined
   /**
     *
-    * Represents a collection of SlicerStyles associated with the workbook. Read-only.
+    * Represents a collection of SlicerStyles associated with the workbook.
     *
     * [Api set: ExcelApi 1.10]
     */
   var slicerStyles: js.UndefOr[js.Array[SlicerStyleData]] = js.undefined
   /**
     *
-    * Represents a collection of Slicers associated with the workbook. Read-only.
+    * Represents a collection of Slicers associated with the workbook.
     *
     * [Api set: ExcelApi 1.10]
     */
   var slicers: js.UndefOr[js.Array[SlicerData]] = js.undefined
   /**
     *
-    * Represents a collection of styles associated with the workbook. Read-only.
+    * Represents a collection of styles associated with the workbook.
     *
     * [Api set: ExcelApi 1.7]
     */
   var styles: js.UndefOr[js.Array[StyleData]] = js.undefined
   /**
     *
-    * Represents a collection of TableStyles associated with the workbook. Read-only.
+    * Represents a collection of TableStyles associated with the workbook.
     *
     * [Api set: ExcelApi 1.10]
     */
   var tableStyles: js.UndefOr[js.Array[TableStyleData]] = js.undefined
   /**
     *
-    * Represents a collection of tables associated with the workbook. Read-only.
+    * Represents a collection of tables associated with the workbook.
     *
     * [Api set: ExcelApi 1.1]
     */
   var tables: js.UndefOr[js.Array[TableData]] = js.undefined
   /**
     *
-    * Represents a collection of TimelineStyles associated with the workbook. Read-only.
+    * Represents a collection of TimelineStyles associated with the workbook.
     *
     * [Api set: ExcelApi 1.10]
     */
@@ -172,7 +172,7 @@ trait WorkbookData extends js.Object {
   var usePrecisionAsDisplayed: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents a collection of worksheets associated with the workbook. Read-only.
+    * Represents a collection of worksheets associated with the workbook.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -184,7 +184,7 @@ object WorkbookData {
   def apply(
     autoSave: js.UndefOr[Boolean] = js.undefined,
     bindings: js.Array[BindingData] = null,
-    calculationEngineVersion: Int | Double = null,
+    calculationEngineVersion: js.UndefOr[Double] = js.undefined,
     chartDataPointTrack: js.UndefOr[Boolean] = js.undefined,
     comments: js.Array[CommentData] = null,
     customXmlParts: js.Array[CustomXmlPartData] = null,
@@ -208,21 +208,21 @@ object WorkbookData {
     worksheets: js.Array[WorksheetData] = null
   ): WorkbookData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoSave)) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoSave)) __obj.updateDynamic("autoSave")(autoSave.get.asInstanceOf[js.Any])
     if (bindings != null) __obj.updateDynamic("bindings")(bindings.asInstanceOf[js.Any])
-    if (calculationEngineVersion != null) __obj.updateDynamic("calculationEngineVersion")(calculationEngineVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(chartDataPointTrack)) __obj.updateDynamic("chartDataPointTrack")(chartDataPointTrack.asInstanceOf[js.Any])
+    if (!js.isUndefined(calculationEngineVersion)) __obj.updateDynamic("calculationEngineVersion")(calculationEngineVersion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(chartDataPointTrack)) __obj.updateDynamic("chartDataPointTrack")(chartDataPointTrack.get.asInstanceOf[js.Any])
     if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
     if (customXmlParts != null) __obj.updateDynamic("customXmlParts")(customXmlParts.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDirty)) __obj.updateDynamic("isDirty")(isDirty.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDirty)) __obj.updateDynamic("isDirty")(isDirty.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (names != null) __obj.updateDynamic("names")(names.asInstanceOf[js.Any])
     if (pivotTableStyles != null) __obj.updateDynamic("pivotTableStyles")(pivotTableStyles.asInstanceOf[js.Any])
     if (pivotTables != null) __obj.updateDynamic("pivotTables")(pivotTables.asInstanceOf[js.Any])
-    if (!js.isUndefined(previouslySaved)) __obj.updateDynamic("previouslySaved")(previouslySaved.asInstanceOf[js.Any])
+    if (!js.isUndefined(previouslySaved)) __obj.updateDynamic("previouslySaved")(previouslySaved.get.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (protection != null) __obj.updateDynamic("protection")(protection.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
     if (slicerStyles != null) __obj.updateDynamic("slicerStyles")(slicerStyles.asInstanceOf[js.Any])
     if (slicers != null) __obj.updateDynamic("slicers")(slicers.asInstanceOf[js.Any])
@@ -230,7 +230,7 @@ object WorkbookData {
     if (tableStyles != null) __obj.updateDynamic("tableStyles")(tableStyles.asInstanceOf[js.Any])
     if (tables != null) __obj.updateDynamic("tables")(tables.asInstanceOf[js.Any])
     if (timelineStyles != null) __obj.updateDynamic("timelineStyles")(timelineStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePrecisionAsDisplayed)) __obj.updateDynamic("usePrecisionAsDisplayed")(usePrecisionAsDisplayed.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePrecisionAsDisplayed)) __obj.updateDynamic("usePrecisionAsDisplayed")(usePrecisionAsDisplayed.get.asInstanceOf[js.Any])
     if (worksheets != null) __obj.updateDynamic("worksheets")(worksheets.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookData]
   }

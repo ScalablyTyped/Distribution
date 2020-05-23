@@ -26,7 +26,7 @@ object FormatterOptionsArgs {
     alwaysWriteHeaders: js.UndefOr[Boolean] = js.undefined,
     delimiter: String = null,
     escape: String = null,
-    headers: Boolean | js.Array[String] = null,
+    headers: js.UndefOr[Null | Boolean | js.Array[String]] = js.undefined,
     includeEndRowDelimiter: js.UndefOr[Boolean] = js.undefined,
     objectMode: js.UndefOr[Boolean] = js.undefined,
     quote: String | Boolean = null,
@@ -37,18 +37,18 @@ object FormatterOptionsArgs {
     writeBOM: js.UndefOr[Boolean] = js.undefined
   ): FormatterOptionsArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alwaysWriteHeaders)) __obj.updateDynamic("alwaysWriteHeaders")(alwaysWriteHeaders.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysWriteHeaders)) __obj.updateDynamic("alwaysWriteHeaders")(alwaysWriteHeaders.get.asInstanceOf[js.Any])
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     if (escape != null) __obj.updateDynamic("escape")(escape.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeEndRowDelimiter)) __obj.updateDynamic("includeEndRowDelimiter")(includeEndRowDelimiter.asInstanceOf[js.Any])
-    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(headers)) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeEndRowDelimiter)) __obj.updateDynamic("includeEndRowDelimiter")(includeEndRowDelimiter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.get.asInstanceOf[js.Any])
     if (quote != null) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
     if (quoteColumns != null) __obj.updateDynamic("quoteColumns")(quoteColumns.asInstanceOf[js.Any])
     if (quoteHeaders != null) __obj.updateDynamic("quoteHeaders")(quoteHeaders.asInstanceOf[js.Any])
     if (rowDelimiter != null) __obj.updateDynamic("rowDelimiter")(rowDelimiter.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (!js.isUndefined(writeBOM)) __obj.updateDynamic("writeBOM")(writeBOM.asInstanceOf[js.Any])
+    if (!js.isUndefined(writeBOM)) __obj.updateDynamic("writeBOM")(writeBOM.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatterOptionsArgs]
   }
 }

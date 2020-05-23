@@ -5,12 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides information about the Transferred event. */
-@JSGlobal("Windows.Media.PlayTo.PlayToConnectionTransferredEventArgs")
-@js.native
-abstract class PlayToConnectionTransferredEventArgs () extends js.Object {
+trait PlayToConnectionTransferredEventArgs extends js.Object {
   /** Gets the current Play To source that a connection was transferred to. */
-  var currentSource: PlayToSource = js.native
+  var currentSource: PlayToSource
   /** Gets the previous Play To source that a connection was transferred from. */
-  var previousSource: PlayToSource = js.native
+  var previousSource: PlayToSource
+}
+
+object PlayToConnectionTransferredEventArgs {
+  @scala.inline
+  def apply(currentSource: PlayToSource, previousSource: PlayToSource): PlayToConnectionTransferredEventArgs = {
+    val __obj = js.Dynamic.literal(currentSource = currentSource.asInstanceOf[js.Any], previousSource = previousSource.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlayToConnectionTransferredEventArgs]
+  }
 }
 

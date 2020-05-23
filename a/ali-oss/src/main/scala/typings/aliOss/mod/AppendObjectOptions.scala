@@ -22,14 +22,14 @@ object AppendObjectOptions {
     meta: UserMeta = null,
     mime: String = null,
     position: String = null,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): AppendObjectOptions = {
     val __obj = js.Dynamic.literal()
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (mime != null) __obj.updateDynamic("mime")(mime.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppendObjectOptions]
   }
 }

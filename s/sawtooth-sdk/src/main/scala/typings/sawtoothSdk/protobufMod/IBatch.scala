@@ -19,16 +19,16 @@ trait IBatch extends js.Object {
 object IBatch {
   @scala.inline
   def apply(
-    header: Uint8Array = null,
-    headerSignature: String = null,
-    trace: js.UndefOr[Boolean] = js.undefined,
-    transactions: js.Array[ITransaction] = null
+    header: js.UndefOr[Null | Uint8Array] = js.undefined,
+    headerSignature: js.UndefOr[Null | String] = js.undefined,
+    trace: js.UndefOr[Null | Boolean] = js.undefined,
+    transactions: js.UndefOr[Null | js.Array[ITransaction]] = js.undefined
   ): IBatch = {
     val __obj = js.Dynamic.literal()
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (headerSignature != null) __obj.updateDynamic("headerSignature")(headerSignature.asInstanceOf[js.Any])
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerSignature)) __obj.updateDynamic("headerSignature")(headerSignature.asInstanceOf[js.Any])
     if (!js.isUndefined(trace)) __obj.updateDynamic("trace")(trace.asInstanceOf[js.Any])
-    if (transactions != null) __obj.updateDynamic("transactions")(transactions.asInstanceOf[js.Any])
+    if (!js.isUndefined(transactions)) __obj.updateDynamic("transactions")(transactions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBatch]
   }
 }

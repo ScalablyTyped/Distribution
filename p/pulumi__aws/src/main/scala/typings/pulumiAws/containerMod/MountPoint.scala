@@ -20,7 +20,7 @@ object MountPoint {
   ): MountPoint = {
     val __obj = js.Dynamic.literal()
     if (containerPath != null) __obj.updateDynamic("containerPath")(containerPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     if (sourceVolume != null) __obj.updateDynamic("sourceVolume")(sourceVolume.asInstanceOf[js.Any])
     __obj.asInstanceOf[MountPoint]
   }

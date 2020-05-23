@@ -11,6 +11,10 @@ trait CreateInputRequest extends js.Object {
     */
   var Destinations: js.UndefOr[listOfInputDestinationRequest] = js.native
   /**
+    * Settings for the devices.
+    */
+  var InputDevices: js.UndefOr[listOfInputDeviceSettings] = js.native
+  /**
     * A list of security groups referenced by IDs to attach to the input.
     */
   var InputSecurityGroups: js.UndefOr[listOfString] = js.native
@@ -51,6 +55,7 @@ object CreateInputRequest {
   @scala.inline
   def apply(
     Destinations: listOfInputDestinationRequest = null,
+    InputDevices: listOfInputDeviceSettings = null,
     InputSecurityGroups: listOfString = null,
     MediaConnectFlows: listOfMediaConnectFlowRequest = null,
     Name: string = null,
@@ -63,6 +68,7 @@ object CreateInputRequest {
   ): CreateInputRequest = {
     val __obj = js.Dynamic.literal()
     if (Destinations != null) __obj.updateDynamic("Destinations")(Destinations.asInstanceOf[js.Any])
+    if (InputDevices != null) __obj.updateDynamic("InputDevices")(InputDevices.asInstanceOf[js.Any])
     if (InputSecurityGroups != null) __obj.updateDynamic("InputSecurityGroups")(InputSecurityGroups.asInstanceOf[js.Any])
     if (MediaConnectFlows != null) __obj.updateDynamic("MediaConnectFlows")(MediaConnectFlows.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])

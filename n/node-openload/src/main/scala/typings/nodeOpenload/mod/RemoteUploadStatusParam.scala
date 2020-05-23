@@ -11,10 +11,10 @@ trait RemoteUploadStatusParam extends js.Object {
 
 object RemoteUploadStatusParam {
   @scala.inline
-  def apply(id: String = null, limit: Int | Double = null): RemoteUploadStatusParam = {
+  def apply(id: String = null, limit: js.UndefOr[Double] = js.undefined): RemoteUploadStatusParam = {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteUploadStatusParam]
   }
 }

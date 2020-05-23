@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojthematicmapMod
 
-import typings.oracleOraclejet.AnonLocation
+import typings.oracleOraclejet.anon.Location
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.oracleOraclejetStrings.auto
 import typings.oracleOraclejet.oracleOraclejetStrings.off
@@ -10,8 +10,8 @@ import typings.std.DocumentAndElementEventHandlersEventMap
 import typings.std.DragEvent
 import typings.std.ElementEventMap
 import typings.std.ErrorEvent
+import typings.std.Event
 import typings.std.EventTarget
-import typings.std.Event_
 import typings.std.FocusEvent
 import typings.std.GlobalEventHandlersEventMap
 import typings.std.KeyboardEvent
@@ -33,10 +33,10 @@ trait ojThematicMapLinkEventMap
      with DocumentAndElementEventHandlersEventMap {
   var categoriesChanged: JetElementCustomEvent[js.Array[String]]
   var colorChanged: JetElementCustomEvent[String]
-  var endLocationChanged: JetElementCustomEvent[AnonLocation]
+  var endLocationChanged: JetElementCustomEvent[Location]
   var selectableChanged: JetElementCustomEvent[auto | off]
   var shortDescChanged: JetElementCustomEvent[String]
-  var startLocationChanged: JetElementCustomEvent[AnonLocation]
+  var startLocationChanged: JetElementCustomEvent[Location]
   var svgClassNameChanged: JetElementCustomEvent[String]
   var svgStyleChanged: JetElementCustomEvent[
     /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapLink['svgStyle'] */ js.Any
@@ -54,47 +54,47 @@ object ojThematicMapLinkEventMap {
     animationstart: AnimationEvent,
     auxclick: MouseEvent,
     blur: FocusEvent,
-    cancel: Event_,
-    canplay: Event_,
-    canplaythrough: Event_,
+    cancel: Event,
+    canplay: Event,
+    canplaythrough: Event,
     categoriesChanged: JetElementCustomEvent[js.Array[String]],
-    change: Event_,
+    change: Event,
     click: MouseEvent,
-    close: Event_,
+    close: Event,
     colorChanged: JetElementCustomEvent[String],
     contextmenu: MouseEvent,
     copy: ClipboardEvent,
-    cuechange: Event_,
+    cuechange: Event,
     cut: ClipboardEvent,
     dblclick: MouseEvent,
     drag: DragEvent,
     dragend: DragEvent,
     dragenter: DragEvent,
-    dragexit: Event_,
+    dragexit: Event,
     dragleave: DragEvent,
     dragover: DragEvent,
     dragstart: DragEvent,
     drop: DragEvent,
-    durationchange: Event_,
-    emptied: Event_,
-    endLocationChanged: JetElementCustomEvent[AnonLocation],
-    ended: Event_,
+    durationchange: Event,
+    emptied: Event,
+    endLocationChanged: JetElementCustomEvent[Location],
+    ended: Event,
     error: ErrorEvent,
     focus: FocusEvent,
     focusin: FocusEvent,
     focusout: FocusEvent,
-    fullscreenchange: Event_,
-    fullscreenerror: Event_,
+    fullscreenchange: Event,
+    fullscreenerror: Event,
     gotpointercapture: PointerEvent,
-    input: Event_,
-    invalid: Event_,
+    input: Event,
+    invalid: Event,
     keydown: KeyboardEvent,
     keypress: KeyboardEvent,
     keyup: KeyboardEvent,
-    load: Event_,
-    loadeddata: Event_,
-    loadedmetadata: Event_,
-    loadstart: Event_,
+    load: Event,
+    loadeddata: Event,
+    loadedmetadata: Event,
+    loadstart: Event,
     lostpointercapture: PointerEvent,
     mousedown: MouseEvent,
     mouseenter: MouseEvent,
@@ -104,9 +104,9 @@ object ojThematicMapLinkEventMap {
     mouseover: MouseEvent,
     mouseup: MouseEvent,
     paste: ClipboardEvent,
-    pause: Event_,
-    play: Event_,
-    playing: Event_,
+    pause: Event,
+    play: Event,
+    playing: Event,
     pointercancel: PointerEvent,
     pointerdown: PointerEvent,
     pointerenter: PointerEvent,
@@ -116,28 +116,28 @@ object ojThematicMapLinkEventMap {
     pointerover: PointerEvent,
     pointerup: PointerEvent,
     progress: ProgressEvent[EventTarget],
-    ratechange: Event_,
-    reset: Event_,
+    ratechange: Event,
+    reset: Event,
     resize: UIEvent,
-    scroll: Event_,
+    scroll: Event,
     securitypolicyviolation: SecurityPolicyViolationEvent,
-    seeked: Event_,
-    seeking: Event_,
-    select: Event_,
+    seeked: Event,
+    seeking: Event,
+    select: Event,
     selectableChanged: JetElementCustomEvent[auto | off],
-    selectionchange: Event_,
-    selectstart: Event_,
+    selectionchange: Event,
+    selectstart: Event,
     shortDescChanged: JetElementCustomEvent[String],
-    stalled: Event_,
-    startLocationChanged: JetElementCustomEvent[AnonLocation],
-    submit: Event_,
-    suspend: Event_,
+    stalled: Event,
+    startLocationChanged: JetElementCustomEvent[Location],
+    submit: Event,
+    suspend: Event,
     svgClassNameChanged: JetElementCustomEvent[String],
     svgStyleChanged: JetElementCustomEvent[
       /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapLink['svgStyle'] */ js.Any
     ],
-    timeupdate: Event_,
-    toggle: Event_,
+    timeupdate: Event,
+    toggle: Event,
     touchcancel: TouchEvent,
     touchend: TouchEvent,
     touchmove: TouchEvent,
@@ -146,8 +146,8 @@ object ojThematicMapLinkEventMap {
     transitionend: TransitionEvent,
     transitionrun: TransitionEvent,
     transitionstart: TransitionEvent,
-    volumechange: Event_,
-    waiting: Event_,
+    volumechange: Event,
+    waiting: Event,
     wheel: WheelEvent,
     widthChanged: JetElementCustomEvent[Double]
   ): ojThematicMapLinkEventMap = {

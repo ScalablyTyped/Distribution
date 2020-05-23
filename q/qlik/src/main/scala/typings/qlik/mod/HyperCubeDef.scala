@@ -38,10 +38,10 @@ object HyperCubeDef {
     qIndentMode: js.UndefOr[Boolean] = js.undefined,
     qInitialDataFetch: js.Array[NxPage] = null,
     qInterColumnSortOrder: js.Array[Double] = null,
-    qMaxStackedCells: Int | Double = null,
+    qMaxStackedCells: js.UndefOr[Double] = js.undefined,
     qMeasures: js.Array[NxMeasure] = null,
     qMode: S | P | K = null,
-    qNoOfLeftDims: Int | Double = null,
+    qNoOfLeftDims: js.UndefOr[Double] = js.undefined,
     qPopulateMissing: js.UndefOr[Boolean] = js.undefined,
     qShowTotalsAbove: js.UndefOr[Boolean] = js.undefined,
     qSortByYValue: `-1` | `0` | `1` = null,
@@ -50,22 +50,22 @@ object HyperCubeDef {
     qSupressMissing: js.UndefOr[Boolean] = js.undefined
   ): HyperCubeDef = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(qAlwaysFullyExpanded)) __obj.updateDynamic("qAlwaysFullyExpanded")(qAlwaysFullyExpanded.asInstanceOf[js.Any])
+    if (!js.isUndefined(qAlwaysFullyExpanded)) __obj.updateDynamic("qAlwaysFullyExpanded")(qAlwaysFullyExpanded.get.asInstanceOf[js.Any])
     if (qCalcCond != null) __obj.updateDynamic("qCalcCond")(qCalcCond.asInstanceOf[js.Any])
     if (qDimensions != null) __obj.updateDynamic("qDimensions")(qDimensions.asInstanceOf[js.Any])
-    if (!js.isUndefined(qIndentMode)) __obj.updateDynamic("qIndentMode")(qIndentMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(qIndentMode)) __obj.updateDynamic("qIndentMode")(qIndentMode.get.asInstanceOf[js.Any])
     if (qInitialDataFetch != null) __obj.updateDynamic("qInitialDataFetch")(qInitialDataFetch.asInstanceOf[js.Any])
     if (qInterColumnSortOrder != null) __obj.updateDynamic("qInterColumnSortOrder")(qInterColumnSortOrder.asInstanceOf[js.Any])
-    if (qMaxStackedCells != null) __obj.updateDynamic("qMaxStackedCells")(qMaxStackedCells.asInstanceOf[js.Any])
+    if (!js.isUndefined(qMaxStackedCells)) __obj.updateDynamic("qMaxStackedCells")(qMaxStackedCells.get.asInstanceOf[js.Any])
     if (qMeasures != null) __obj.updateDynamic("qMeasures")(qMeasures.asInstanceOf[js.Any])
     if (qMode != null) __obj.updateDynamic("qMode")(qMode.asInstanceOf[js.Any])
-    if (qNoOfLeftDims != null) __obj.updateDynamic("qNoOfLeftDims")(qNoOfLeftDims.asInstanceOf[js.Any])
-    if (!js.isUndefined(qPopulateMissing)) __obj.updateDynamic("qPopulateMissing")(qPopulateMissing.asInstanceOf[js.Any])
-    if (!js.isUndefined(qShowTotalsAbove)) __obj.updateDynamic("qShowTotalsAbove")(qShowTotalsAbove.asInstanceOf[js.Any])
+    if (!js.isUndefined(qNoOfLeftDims)) __obj.updateDynamic("qNoOfLeftDims")(qNoOfLeftDims.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qPopulateMissing)) __obj.updateDynamic("qPopulateMissing")(qPopulateMissing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qShowTotalsAbove)) __obj.updateDynamic("qShowTotalsAbove")(qShowTotalsAbove.get.asInstanceOf[js.Any])
     if (qSortByYValue != null) __obj.updateDynamic("qSortByYValue")(qSortByYValue.asInstanceOf[js.Any])
     if (qStateName != null) __obj.updateDynamic("qStateName")(qStateName.asInstanceOf[js.Any])
-    if (!js.isUndefined(qSuppressZero)) __obj.updateDynamic("qSuppressZero")(qSuppressZero.asInstanceOf[js.Any])
-    if (!js.isUndefined(qSupressMissing)) __obj.updateDynamic("qSupressMissing")(qSupressMissing.asInstanceOf[js.Any])
+    if (!js.isUndefined(qSuppressZero)) __obj.updateDynamic("qSuppressZero")(qSuppressZero.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qSupressMissing)) __obj.updateDynamic("qSupressMissing")(qSupressMissing.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HyperCubeDef]
   }
 }

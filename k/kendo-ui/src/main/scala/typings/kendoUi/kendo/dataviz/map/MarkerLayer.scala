@@ -5,17 +5,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.dataviz.map.MarkerLayer")
-@js.native
-class MarkerLayer protected () extends Layer_ {
-  def this(map: Map) = this()
-  def this(map: Map, options: MarkerLayerOptions) = this()
-  var items: js.Any = js.native
+trait MarkerLayer extends Layer_ {
+  var items: js.Any
   @JSName("options")
-  var options_MarkerLayer: MarkerLayerOptions = js.native
-  def add(marker: Marker): Unit = js.native
-  def clear(): Unit = js.native
-  def remove(marker: Marker): Unit = js.native
-  def setDataSource(dataSource: js.Any): Unit = js.native
+  var options_MarkerLayer: MarkerLayerOptions
+  def add(marker: Marker): Unit
+  def clear(): Unit
+  def remove(marker: Marker): Unit
+  def setDataSource(dataSource: js.Any): Unit
+}
+
+object MarkerLayer {
+  @scala.inline
+  def apply(
+    add: Marker => Unit,
+    clear: () => Unit,
+    hide: () => Unit,
+    items: js.Any,
+    map: Map,
+    options: MarkerLayerOptions,
+    remove: Marker => Unit,
+    setDataSource: js.Any => Unit,
+    show: () => Unit
+  ): MarkerLayer = {
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), clear = js.Any.fromFunction0(clear), hide = js.Any.fromFunction0(hide), items = items.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], remove = js.Any.fromFunction1(remove), setDataSource = js.Any.fromFunction1(setDataSource), show = js.Any.fromFunction0(show))
+    __obj.asInstanceOf[MarkerLayer]
+  }
 }
 

@@ -32,10 +32,10 @@ object PasteCleanupSettings {
     removeStyles: js.UndefOr[Boolean] = js.undefined
   ): PasteCleanupSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cleanCSS)) __obj.updateDynamic("cleanCSS")(cleanCSS.asInstanceOf[js.Any])
-    if (!js.isUndefined(cleanElements)) __obj.updateDynamic("cleanElements")(cleanElements.asInstanceOf[js.Any])
-    if (!js.isUndefined(listConversion)) __obj.updateDynamic("listConversion")(listConversion.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeStyles)) __obj.updateDynamic("removeStyles")(removeStyles.asInstanceOf[js.Any])
+    if (!js.isUndefined(cleanCSS)) __obj.updateDynamic("cleanCSS")(cleanCSS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cleanElements)) __obj.updateDynamic("cleanElements")(cleanElements.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(listConversion)) __obj.updateDynamic("listConversion")(listConversion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeStyles)) __obj.updateDynamic("removeStyles")(removeStyles.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PasteCleanupSettings]
   }
 }

@@ -1,6 +1,6 @@
 package typings.memjs.mod
 
-import typings.memjs.AnonLog
+import typings.memjs.anon.Log
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ trait ClientOptions extends js.Object {
     * A logger object that responds to `log(string)` method calls.
     * @default console
     */
-  var logger: js.UndefOr[AnonLog] = js.undefined
+  var logger: js.UndefOr[Log] = js.undefined
   /**
     * The number of times to retry an operation in lieu of failures.
     * @default 2
@@ -37,18 +37,18 @@ trait ClientOptions extends js.Object {
 object ClientOptions {
   @scala.inline
   def apply(
-    expires: Int | Double = null,
-    failoverTime: Int | Double = null,
-    logger: AnonLog = null,
-    retries: Int | Double = null,
-    retry_delay: Int | Double = null
+    expires: js.UndefOr[Double] = js.undefined,
+    failoverTime: js.UndefOr[Double] = js.undefined,
+    logger: Log = null,
+    retries: js.UndefOr[Double] = js.undefined,
+    retry_delay: js.UndefOr[Double] = js.undefined
   ): ClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (failoverTime != null) __obj.updateDynamic("failoverTime")(failoverTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(expires)) __obj.updateDynamic("expires")(expires.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(failoverTime)) __obj.updateDynamic("failoverTime")(failoverTime.get.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
-    if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
-    if (retry_delay != null) __obj.updateDynamic("retry_delay")(retry_delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(retries)) __obj.updateDynamic("retries")(retries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retry_delay)) __obj.updateDynamic("retry_delay")(retry_delay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
 }

@@ -30,17 +30,17 @@ object IExpandingCardStyleProps {
   def apply(
     theme: ITheme,
     className: String = null,
-    compactCardHeight: Int | Double = null,
+    compactCardHeight: js.UndefOr[Double] = js.undefined,
     expandedCardFirstFrameRendered: js.UndefOr[Boolean] = js.undefined,
-    expandedCardHeight: Int | Double = null,
+    expandedCardHeight: js.UndefOr[Double] = js.undefined,
     needsScroll: js.UndefOr[Boolean] = js.undefined
   ): IExpandingCardStyleProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (compactCardHeight != null) __obj.updateDynamic("compactCardHeight")(compactCardHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandedCardFirstFrameRendered)) __obj.updateDynamic("expandedCardFirstFrameRendered")(expandedCardFirstFrameRendered.asInstanceOf[js.Any])
-    if (expandedCardHeight != null) __obj.updateDynamic("expandedCardHeight")(expandedCardHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(needsScroll)) __obj.updateDynamic("needsScroll")(needsScroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(compactCardHeight)) __obj.updateDynamic("compactCardHeight")(compactCardHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandedCardFirstFrameRendered)) __obj.updateDynamic("expandedCardFirstFrameRendered")(expandedCardFirstFrameRendered.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandedCardHeight)) __obj.updateDynamic("expandedCardHeight")(expandedCardHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(needsScroll)) __obj.updateDynamic("needsScroll")(needsScroll.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExpandingCardStyleProps]
   }
 }

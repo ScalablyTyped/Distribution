@@ -154,15 +154,15 @@ object Result_ {
     kind: kind = null,
     level: level = null,
     locations: js.Array[Location] = null,
-    occurrenceCount: Int | Double = null,
+    occurrenceCount: js.UndefOr[Double] = js.undefined,
     partialFingerprints: StringDictionary[String] = null,
     properties: PropertyBag = null,
     provenance: ResultProvenance = null,
-    rank: Int | Double = null,
+    rank: js.UndefOr[Double] = js.undefined,
     relatedLocations: js.Array[Location] = null,
     rule: ReportingDescriptorReference = null,
     ruleId: String = null,
-    ruleIndex: Int | Double = null,
+    ruleIndex: js.UndefOr[Double] = js.undefined,
     stacks: js.Array[Stack] = null,
     suppressions: js.Array[Suppression] = null,
     taxa: js.Array[ReportingDescriptorReference] = null,
@@ -185,15 +185,15 @@ object Result_ {
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (locations != null) __obj.updateDynamic("locations")(locations.asInstanceOf[js.Any])
-    if (occurrenceCount != null) __obj.updateDynamic("occurrenceCount")(occurrenceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(occurrenceCount)) __obj.updateDynamic("occurrenceCount")(occurrenceCount.get.asInstanceOf[js.Any])
     if (partialFingerprints != null) __obj.updateDynamic("partialFingerprints")(partialFingerprints.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (provenance != null) __obj.updateDynamic("provenance")(provenance.asInstanceOf[js.Any])
-    if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
+    if (!js.isUndefined(rank)) __obj.updateDynamic("rank")(rank.get.asInstanceOf[js.Any])
     if (relatedLocations != null) __obj.updateDynamic("relatedLocations")(relatedLocations.asInstanceOf[js.Any])
     if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
     if (ruleId != null) __obj.updateDynamic("ruleId")(ruleId.asInstanceOf[js.Any])
-    if (ruleIndex != null) __obj.updateDynamic("ruleIndex")(ruleIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(ruleIndex)) __obj.updateDynamic("ruleIndex")(ruleIndex.get.asInstanceOf[js.Any])
     if (stacks != null) __obj.updateDynamic("stacks")(stacks.asInstanceOf[js.Any])
     if (suppressions != null) __obj.updateDynamic("suppressions")(suppressions.asInstanceOf[js.Any])
     if (taxa != null) __obj.updateDynamic("taxa")(taxa.asInstanceOf[js.Any])

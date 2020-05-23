@@ -7,11 +7,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ClientPolicyTls extends js.Object {
   /**
-    * Whether the policy is enforced. The default is True, if a value isn't specified.
+    * Whether the policy is enforced. The default is True, if a value isn't
+    specified.
     */
   var enforce: js.UndefOr[Boolean] = js.native
   /**
-    * The range of ports that the policy is enforced for.
+    * One or more ports that the policy is enforced for.
     */
   var ports: js.UndefOr[PortSet] = js.native
   /**
@@ -24,11 +25,11 @@ object ClientPolicyTls {
   @scala.inline
   def apply(
     validation: TlsValidationContext,
-    enforce: js.UndefOr[scala.Boolean] = js.undefined,
+    enforce: js.UndefOr[Boolean] = js.undefined,
     ports: PortSet = null
   ): ClientPolicyTls = {
     val __obj = js.Dynamic.literal(validation = validation.asInstanceOf[js.Any])
-    if (!js.isUndefined(enforce)) __obj.updateDynamic("enforce")(enforce.asInstanceOf[js.Any])
+    if (!js.isUndefined(enforce)) __obj.updateDynamic("enforce")(enforce.get.asInstanceOf[js.Any])
     if (ports != null) __obj.updateDynamic("ports")(ports.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientPolicyTls]
   }

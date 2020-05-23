@@ -22,10 +22,10 @@ trait DescribeTagsRequest extends js.Object {
 
 object DescribeTagsRequest {
   @scala.inline
-  def apply(FileSystemId: FileSystemId, Marker: Marker = null, MaxItems: Int | Double = null): DescribeTagsRequest = {
+  def apply(FileSystemId: FileSystemId, Marker: Marker = null, MaxItems: js.UndefOr[MaxItems] = js.undefined): DescribeTagsRequest = {
     val __obj = js.Dynamic.literal(FileSystemId = FileSystemId.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTagsRequest]
   }
 }

@@ -46,7 +46,7 @@ object MutableClusterInfo {
     ConfigurationInfo: ConfigurationInfo = null,
     EnhancedMonitoring: EnhancedMonitoring = null,
     LoggingInfo: LoggingInfo = null,
-    NumberOfBrokerNodes: Int | Double = null,
+    NumberOfBrokerNodes: js.UndefOr[integer] = js.undefined,
     OpenMonitoring: OpenMonitoring = null
   ): MutableClusterInfo = {
     val __obj = js.Dynamic.literal()
@@ -54,7 +54,7 @@ object MutableClusterInfo {
     if (ConfigurationInfo != null) __obj.updateDynamic("ConfigurationInfo")(ConfigurationInfo.asInstanceOf[js.Any])
     if (EnhancedMonitoring != null) __obj.updateDynamic("EnhancedMonitoring")(EnhancedMonitoring.asInstanceOf[js.Any])
     if (LoggingInfo != null) __obj.updateDynamic("LoggingInfo")(LoggingInfo.asInstanceOf[js.Any])
-    if (NumberOfBrokerNodes != null) __obj.updateDynamic("NumberOfBrokerNodes")(NumberOfBrokerNodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfBrokerNodes)) __obj.updateDynamic("NumberOfBrokerNodes")(NumberOfBrokerNodes.get.asInstanceOf[js.Any])
     if (OpenMonitoring != null) __obj.updateDynamic("OpenMonitoring")(OpenMonitoring.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutableClusterInfo]
   }

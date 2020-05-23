@@ -13,14 +13,14 @@ trait BatchPublishOptions extends js.Object {
 object BatchPublishOptions {
   @scala.inline
   def apply(
-    maxBytes: Int | Double = null,
-    maxMessages: Int | Double = null,
-    maxMilliseconds: Int | Double = null
+    maxBytes: js.UndefOr[Double] = js.undefined,
+    maxMessages: js.UndefOr[Double] = js.undefined,
+    maxMilliseconds: js.UndefOr[Double] = js.undefined
   ): BatchPublishOptions = {
     val __obj = js.Dynamic.literal()
-    if (maxBytes != null) __obj.updateDynamic("maxBytes")(maxBytes.asInstanceOf[js.Any])
-    if (maxMessages != null) __obj.updateDynamic("maxMessages")(maxMessages.asInstanceOf[js.Any])
-    if (maxMilliseconds != null) __obj.updateDynamic("maxMilliseconds")(maxMilliseconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxBytes)) __obj.updateDynamic("maxBytes")(maxBytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxMessages)) __obj.updateDynamic("maxMessages")(maxMessages.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxMilliseconds)) __obj.updateDynamic("maxMilliseconds")(maxMilliseconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchPublishOptions]
   }
 }

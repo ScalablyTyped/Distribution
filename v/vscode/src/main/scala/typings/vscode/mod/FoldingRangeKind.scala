@@ -12,20 +12,20 @@ sealed trait FoldingRangeKind extends js.Object
 @js.native
 object FoldingRangeKind extends js.Object {
   /**
-  		 * Kind for folding range representing a comment.
-  		 */
+    * Kind for folding range representing a comment.
+    */
   @js.native
   sealed trait Comment extends FoldingRangeKind
   
   /**
-  		 * Kind for folding range representing a import.
-  		 */
+    * Kind for folding range representing a import.
+    */
   @js.native
   sealed trait Imports extends FoldingRangeKind
   
   /**
-  		 * Kind for folding range representing regions originating from folding markers like `#region` and `#endregion`.
-  		 */
+    * Kind for folding range representing regions originating from folding markers like `#region` and `#endregion`.
+    */
   @js.native
   sealed trait Region extends FoldingRangeKind
   

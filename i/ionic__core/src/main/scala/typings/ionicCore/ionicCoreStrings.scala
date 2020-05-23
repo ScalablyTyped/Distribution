@@ -89,13 +89,13 @@ object ionicCoreStrings {
        with RouterDirection
   
   @js.native
+  sealed trait backButtonDefaultHref extends js.Object
+  
+  @js.native
   sealed trait backButtonIcon extends js.Object
   
   @js.native
   sealed trait backButtonText extends js.Object
-  
-  @js.native
-  sealed trait backdrop extends js.Object
   
   @js.native
   sealed trait backwards extends AnimationFill
@@ -194,6 +194,9 @@ object ionicCoreStrings {
   sealed trait document extends ListenTargetOptions
   
   @js.native
+  sealed trait done extends js.Object
+  
+  @js.native
   sealed trait dots extends SpinnerTypes
   
   @js.native
@@ -209,6 +212,9 @@ object ionicCoreStrings {
   sealed trait end
     extends AnimationPlayTo
        with Side
+  
+  @js.native
+  sealed trait enter extends js.Object
   
   @js.native
   sealed trait error extends js.Object
@@ -241,6 +247,9 @@ object ionicCoreStrings {
   
   @js.native
   sealed trait full extends js.Object
+  
+  @js.native
+  sealed trait go extends js.Object
   
   @js.native
   sealed trait hanging extends js.Object
@@ -319,21 +328,6 @@ object ionicCoreStrings {
   
   @js.native
   sealed trait inset extends js.Object
-  
-  @js.native
-  sealed trait ionViewDidEnter extends js.Object
-  
-  @js.native
-  sealed trait ionViewDidLeave extends js.Object
-  
-  @js.native
-  sealed trait ionViewWillEnter extends js.Object
-  
-  @js.native
-  sealed trait ionViewWillLeave extends js.Object
-  
-  @js.native
-  sealed trait ionViewWillUnload extends js.Object
   
   @js.native
   sealed trait ios
@@ -437,6 +431,9 @@ object ionicCoreStrings {
   sealed trait never extends js.Object
   
   @js.native
+  sealed trait next extends js.Object
+  
+  @js.native
   sealed trait no extends js.Object
   
   @js.native
@@ -491,6 +488,9 @@ object ionicCoreStrings {
   sealed trait popoverLeave extends js.Object
   
   @js.native
+  sealed trait previous extends js.Object
+  
+  @js.native
   sealed trait primary extends PredefinedColors
   
   @js.native
@@ -527,6 +527,9 @@ object ionicCoreStrings {
   sealed trait `s-rGB` extends js.Object
   
   @js.native
+  sealed trait sanitizerEnabled extends js.Object
+  
+  @js.native
   sealed trait scale extends RefresherAnimationType
   
   @js.native
@@ -543,6 +546,9 @@ object ionicCoreStrings {
   
   @js.native
   sealed trait selected extends js.Object
+  
+  @js.native
+  sealed trait send extends js.Object
   
   @js.native
   sealed trait small extends js.Object
@@ -691,11 +697,11 @@ object ionicCoreStrings {
   @scala.inline
   def back: back = "back".asInstanceOf[back]
   @scala.inline
+  def backButtonDefaultHref: backButtonDefaultHref = "backButtonDefaultHref".asInstanceOf[backButtonDefaultHref]
+  @scala.inline
   def backButtonIcon: backButtonIcon = "backButtonIcon".asInstanceOf[backButtonIcon]
   @scala.inline
   def backButtonText: backButtonText = "backButtonText".asInstanceOf[backButtonText]
-  @scala.inline
-  def backdrop: backdrop = "backdrop".asInstanceOf[backdrop]
   @scala.inline
   def backwards: backwards = "backwards".asInstanceOf[backwards]
   @scala.inline
@@ -761,6 +767,8 @@ object ionicCoreStrings {
   @scala.inline
   def document: document = "document".asInstanceOf[document]
   @scala.inline
+  def done: done = "done".asInstanceOf[done]
+  @scala.inline
   def dots: dots = "dots".asInstanceOf[dots]
   @scala.inline
   def eager: eager = "eager".asInstanceOf[eager]
@@ -770,6 +778,8 @@ object ionicCoreStrings {
   def email: email = "email".asInstanceOf[email]
   @scala.inline
   def end: end = "end".asInstanceOf[end]
+  @scala.inline
+  def enter: enter = "enter".asInstanceOf[enter]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
@@ -790,6 +800,8 @@ object ionicCoreStrings {
   def forwards: forwards = "forwards".asInstanceOf[forwards]
   @scala.inline
   def full: full = "full".asInstanceOf[full]
+  @scala.inline
+  def go: go = "go".asInstanceOf[go]
   @scala.inline
   def hanging: hanging = "hanging".asInstanceOf[hanging]
   @scala.inline
@@ -832,16 +844,6 @@ object ionicCoreStrings {
   def inputShims: inputShims = "inputShims".asInstanceOf[inputShims]
   @scala.inline
   def inset: inset = "inset".asInstanceOf[inset]
-  @scala.inline
-  def ionViewDidEnter: ionViewDidEnter = "ionViewDidEnter".asInstanceOf[ionViewDidEnter]
-  @scala.inline
-  def ionViewDidLeave: ionViewDidLeave = "ionViewDidLeave".asInstanceOf[ionViewDidLeave]
-  @scala.inline
-  def ionViewWillEnter: ionViewWillEnter = "ionViewWillEnter".asInstanceOf[ionViewWillEnter]
-  @scala.inline
-  def ionViewWillLeave: ionViewWillLeave = "ionViewWillLeave".asInstanceOf[ionViewWillLeave]
-  @scala.inline
-  def ionViewWillUnload: ionViewWillUnload = "ionViewWillUnload".asInstanceOf[ionViewWillUnload]
   @scala.inline
   def ios: ios = "ios".asInstanceOf[ios]
   @scala.inline
@@ -907,6 +909,8 @@ object ionicCoreStrings {
   @scala.inline
   def never: never = "never".asInstanceOf[never]
   @scala.inline
+  def next: next = "next".asInstanceOf[next]
+  @scala.inline
   def no: no = "no".asInstanceOf[no]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
@@ -943,6 +947,8 @@ object ionicCoreStrings {
   @scala.inline
   def popoverLeave: popoverLeave = "popoverLeave".asInstanceOf[popoverLeave]
   @scala.inline
+  def previous: previous = "previous".asInstanceOf[previous]
+  @scala.inline
   def primary: primary = "primary".asInstanceOf[primary]
   @scala.inline
   def pwa: pwa = "pwa".asInstanceOf[pwa]
@@ -967,6 +973,8 @@ object ionicCoreStrings {
   @scala.inline
   def `s-rGB`: `s-rGB` = "s-rGB".asInstanceOf[`s-rGB`]
   @scala.inline
+  def sanitizerEnabled: sanitizerEnabled = "sanitizerEnabled".asInstanceOf[sanitizerEnabled]
+  @scala.inline
   def scale: scale = "scale".asInstanceOf[scale]
   @scala.inline
   def scrollAssist: scrollAssist = "scrollAssist".asInstanceOf[scrollAssist]
@@ -978,6 +986,8 @@ object ionicCoreStrings {
   def secondary: secondary = "secondary".asInstanceOf[secondary]
   @scala.inline
   def selected: selected = "selected".asInstanceOf[selected]
+  @scala.inline
+  def send: send = "send".asInstanceOf[send]
   @scala.inline
   def small: small = "small".asInstanceOf[small]
   @scala.inline

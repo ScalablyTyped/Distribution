@@ -26,6 +26,7 @@ trait StatefulCheckboxProps extends js.Object {
   var checkmarkType: js.UndefOr[default_ | toggle | toggle_round] = js.undefined
   var children: js.UndefOr[ReactNode] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
+  var error: js.UndefOr[Boolean] = js.undefined
   var initialState: js.UndefOr[typings.baseui.checkboxMod.initialState] = js.undefined
   var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
   var isError: js.UndefOr[Boolean] = js.undefined
@@ -46,8 +47,9 @@ object StatefulCheckboxProps {
     checkmarkType: default_ | toggle | toggle_round = null,
     children: ReactNode = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
+    error: js.UndefOr[Boolean] = js.undefined,
     initialState: initialState = null,
-    inputRef: Ref[HTMLInputElement] = null,
+    inputRef: js.UndefOr[Null | Ref[HTMLInputElement]] = js.undefined,
     isError: js.UndefOr[Boolean] = js.undefined,
     isIndeterminate: js.UndefOr[Boolean] = js.undefined,
     labelPlacement: top | right | bottom | left = null,
@@ -59,14 +61,15 @@ object StatefulCheckboxProps {
     overrides: CheckboxOverrides = null
   ): StatefulCheckboxProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
     if (checkmarkType != null) __obj.updateDynamic("checkmarkType")(checkmarkType.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.get.asInstanceOf[js.Any])
     if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
-    if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(isError)) __obj.updateDynamic("isError")(isError.asInstanceOf[js.Any])
-    if (!js.isUndefined(isIndeterminate)) __obj.updateDynamic("isIndeterminate")(isIndeterminate.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputRef)) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(isError)) __obj.updateDynamic("isError")(isError.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isIndeterminate)) __obj.updateDynamic("isIndeterminate")(isIndeterminate.get.asInstanceOf[js.Any])
     if (labelPlacement != null) __obj.updateDynamic("labelPlacement")(labelPlacement.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))

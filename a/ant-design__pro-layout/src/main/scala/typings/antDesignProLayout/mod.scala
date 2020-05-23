@@ -1,5 +1,8 @@
 package typings.antDesignProLayout
 
+import typings.antDesignProLayout.anon.Breadcrumb
+import typings.antDesignProLayout.anon.Locale
+import typings.antDesignProLayout.anon.Tip
 import typings.antDesignProLayout.basicLayoutMod.BasicLayoutProps
 import typings.antDesignProLayout.footerMod.FooterProps
 import typings.antDesignProLayout.getPageTitleMod.GetPageTitleProps
@@ -39,7 +42,7 @@ object mod extends js.Object {
     */
   val GridContent: SFC[GridContentProps] = js.native
   val PageHeaderWrapper: SFC[PageHeaderWrapperProps] = js.native
-  val PageLoading: FC[AnonTip] = js.native
+  val PageLoading: FC[Tip] = js.native
   val RouteContext: Context[RouteContextType] = js.native
   /**
     * 可视化配置组件
@@ -53,42 +56,19 @@ object mod extends js.Object {
     * @param props
     */
   val default: FC[BasicLayoutProps] = js.native
-  def getMenuData(routes: js.Array[Route]): AnonBreadcrumb = js.native
+  def getMenuData(routes: js.Array[Route]): Breadcrumb = js.native
+  def getMenuData(routes: js.Array[Route], menu: Locale): Breadcrumb = js.native
   def getMenuData(
     routes: js.Array[Route],
-    menu: js.UndefOr[scala.Nothing],
-    formatMessage: js.UndefOr[scala.Nothing],
-    menuDataRender: js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]
-  ): AnonBreadcrumb = js.native
-  def getMenuData(
-    routes: js.Array[Route],
-    menu: js.UndefOr[scala.Nothing],
+    menu: Locale,
     formatMessage: js.Function1[/* message */ MessageDescriptor, String]
-  ): AnonBreadcrumb = js.native
+  ): Breadcrumb = js.native
   def getMenuData(
     routes: js.Array[Route],
-    menu: js.UndefOr[scala.Nothing],
+    menu: Locale,
     formatMessage: js.Function1[/* message */ MessageDescriptor, String],
     menuDataRender: js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]
-  ): AnonBreadcrumb = js.native
-  def getMenuData(routes: js.Array[Route], menu: AnonLocale): AnonBreadcrumb = js.native
-  def getMenuData(
-    routes: js.Array[Route],
-    menu: AnonLocale,
-    formatMessage: js.UndefOr[scala.Nothing],
-    menuDataRender: js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]
-  ): AnonBreadcrumb = js.native
-  def getMenuData(
-    routes: js.Array[Route],
-    menu: AnonLocale,
-    formatMessage: js.Function1[/* message */ MessageDescriptor, String]
-  ): AnonBreadcrumb = js.native
-  def getMenuData(
-    routes: js.Array[Route],
-    menu: AnonLocale,
-    formatMessage: js.Function1[/* message */ MessageDescriptor, String],
-    menuDataRender: js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]
-  ): AnonBreadcrumb = js.native
+  ): Breadcrumb = js.native
   def getPageTitle(props: GetPageTitleProps): String = js.native
   def getPageTitle(props: GetPageTitleProps, ignoreTile: Boolean): String = js.native
 }

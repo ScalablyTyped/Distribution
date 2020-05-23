@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ClickFeedback extends js.Object {
   /**
-    * The Unix timestamp of the data and time that the result was clicked.
+    * The Unix timestamp of the date and time that the result was clicked.
     */
   var ClickTime: Timestamp = js.native
   /**

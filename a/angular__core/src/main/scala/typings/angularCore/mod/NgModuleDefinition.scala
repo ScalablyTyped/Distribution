@@ -23,9 +23,7 @@ object NgModuleDefinition {
     factory: NgModuleDefinitionFactory = null,
     scope: root | platform = null
   ): NgModuleDefinition = {
-    val __obj = js.Dynamic.literal(modules = modules.asInstanceOf[js.Any], providers = providers.asInstanceOf[js.Any], providersByKey = providersByKey.asInstanceOf[js.Any])
-    if (factory != null) __obj.updateDynamic("factory")(factory.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(modules = modules.asInstanceOf[js.Any], providers = providers.asInstanceOf[js.Any], providersByKey = providersByKey.asInstanceOf[js.Any], factory = factory.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[NgModuleDefinition]
   }
 }

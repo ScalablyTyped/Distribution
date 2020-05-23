@@ -1,6 +1,6 @@
 package typings.unusedFilesWebpackPlugin.mod
 
-import typings.unusedFilesWebpackPlugin.AnonIgnore
+import typings.unusedFilesWebpackPlugin.anon.Ignore
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Options extends js.Object {
   var cwd: js.UndefOr[String] = js.undefined
   var failOnUnused: Boolean
-  var globOptions: js.UndefOr[AnonIgnore] = js.undefined
+  var globOptions: js.UndefOr[Ignore] = js.undefined
   var ignore: js.UndefOr[String | js.Array[String]] = js.undefined
   var patterns: js.UndefOr[js.Array[String]] = js.undefined
 }
@@ -18,7 +18,7 @@ object Options {
   def apply(
     failOnUnused: Boolean,
     cwd: String = null,
-    globOptions: AnonIgnore = null,
+    globOptions: Ignore = null,
     ignore: String | js.Array[String] = null,
     patterns: js.Array[String] = null
   ): Options = {

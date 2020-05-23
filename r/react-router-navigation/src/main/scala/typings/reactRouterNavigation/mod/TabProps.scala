@@ -29,7 +29,7 @@ object TabProps {
     exact: js.UndefOr[Boolean] = js.undefined,
     hideTabBar: js.UndefOr[Boolean] = js.undefined,
     label: String = null,
-    labelStyle: StyleProp[TextStyle] = null,
+    labelStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
     onIndexChange: /* index */ Double => Unit = null,
     onReset: /* props */ TabBarProps with RouteProps => Unit = null,
     path: String = null,
@@ -39,19 +39,19 @@ object TabProps {
     renderTabIcon: /* props */ TabSubViewProps => ReactNode = null,
     strict: js.UndefOr[Boolean] = js.undefined,
     tabActiveTintColor: String = null,
-    tabBarIndicatorStyle: StyleProp[ViewStyle] = null,
+    tabBarIndicatorStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     tabBarPosition: top | bottom = null,
-    tabBarStyle: StyleProp[ViewStyle] = null,
-    tabStyle: StyleProp[ViewStyle] = null,
+    tabBarStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    tabStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     tabTintColor: String = null
   ): TabProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideTabBar)) __obj.updateDynamic("hideTabBar")(hideTabBar.asInstanceOf[js.Any])
+    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideTabBar)) __obj.updateDynamic("hideTabBar")(hideTabBar.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelStyle)) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
     if (onIndexChange != null) __obj.updateDynamic("onIndexChange")(js.Any.fromFunction1(onIndexChange))
     if (onReset != null) __obj.updateDynamic("onReset")(js.Any.fromFunction1(onReset))
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
@@ -59,12 +59,12 @@ object TabProps {
     if (renderLabel != null) __obj.updateDynamic("renderLabel")(js.Any.fromFunction1(renderLabel))
     if (renderTabBar != null) __obj.updateDynamic("renderTabBar")(js.Any.fromFunction1(renderTabBar))
     if (renderTabIcon != null) __obj.updateDynamic("renderTabIcon")(js.Any.fromFunction1(renderTabIcon))
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
     if (tabActiveTintColor != null) __obj.updateDynamic("tabActiveTintColor")(tabActiveTintColor.asInstanceOf[js.Any])
-    if (tabBarIndicatorStyle != null) __obj.updateDynamic("tabBarIndicatorStyle")(tabBarIndicatorStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabBarIndicatorStyle)) __obj.updateDynamic("tabBarIndicatorStyle")(tabBarIndicatorStyle.asInstanceOf[js.Any])
     if (tabBarPosition != null) __obj.updateDynamic("tabBarPosition")(tabBarPosition.asInstanceOf[js.Any])
-    if (tabBarStyle != null) __obj.updateDynamic("tabBarStyle")(tabBarStyle.asInstanceOf[js.Any])
-    if (tabStyle != null) __obj.updateDynamic("tabStyle")(tabStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabBarStyle)) __obj.updateDynamic("tabBarStyle")(tabBarStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabStyle)) __obj.updateDynamic("tabStyle")(tabStyle.asInstanceOf[js.Any])
     if (tabTintColor != null) __obj.updateDynamic("tabTintColor")(tabTintColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabProps]
   }

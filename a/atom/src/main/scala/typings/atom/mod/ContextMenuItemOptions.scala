@@ -1,6 +1,6 @@
 package typings.atom.mod
 
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,7 +29,7 @@ trait ContextMenuItemOptions extends ContextMenuOptions {
     *  A function that is called on the item each time a context menu is created
     *  via a right click.
     */
-  var created: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
+  var created: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   /**
     *  Whether the menu item should be clickable. Disabled menu items typically
     *  appear grayed out. Defaults to true.
@@ -41,7 +41,7 @@ trait ContextMenuItemOptions extends ContextMenuOptions {
     *  A function that is called to determine whether to display this item on a
     *  given context menu deployment.
     */
-  var shouldDisplay: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
+  var shouldDisplay: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   /** An array of additional items. */
   var submenu: js.UndefOr[js.Array[ContextMenuOptions]] = js.undefined
   /** Whether the menu item should appear in the menu. Defaults to true. */
@@ -56,10 +56,10 @@ object ContextMenuItemOptions {
     before: js.Array[String] = null,
     beforeGroupContaining: js.Array[String] = null,
     command: String = null,
-    created: /* event */ Event_ => Unit = null,
+    created: /* event */ Event => Unit = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     label: String = null,
-    shouldDisplay: /* event */ Event_ => Unit = null,
+    shouldDisplay: /* event */ Event => Unit = null,
     submenu: js.Array[ContextMenuOptions] = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): ContextMenuItemOptions = {
@@ -70,11 +70,11 @@ object ContextMenuItemOptions {
     if (beforeGroupContaining != null) __obj.updateDynamic("beforeGroupContaining")(beforeGroupContaining.asInstanceOf[js.Any])
     if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(js.Any.fromFunction1(created))
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (shouldDisplay != null) __obj.updateDynamic("shouldDisplay")(js.Any.fromFunction1(shouldDisplay))
     if (submenu != null) __obj.updateDynamic("submenu")(submenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextMenuItemOptions]
   }
 }

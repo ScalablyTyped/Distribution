@@ -18,10 +18,10 @@ trait CelebrityRecognition extends js.Object {
 
 object CelebrityRecognition {
   @scala.inline
-  def apply(Celebrity: CelebrityDetail = null, Timestamp: Int | Double = null): CelebrityRecognition = {
+  def apply(Celebrity: CelebrityDetail = null, Timestamp: js.UndefOr[Timestamp] = js.undefined): CelebrityRecognition = {
     val __obj = js.Dynamic.literal()
     if (Celebrity != null) __obj.updateDynamic("Celebrity")(Celebrity.asInstanceOf[js.Any])
-    if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(Timestamp)) __obj.updateDynamic("Timestamp")(Timestamp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CelebrityRecognition]
   }
 }

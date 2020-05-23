@@ -43,7 +43,7 @@ object Constraint {
     negate: js.UndefOr[Boolean] = js.undefined
   ): Constraint = {
     val __obj = js.Dynamic.literal(comparator = comparator.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], monitor = monitor.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (!js.isUndefined(negate)) __obj.updateDynamic("negate")(negate.asInstanceOf[js.Any])
+    if (!js.isUndefined(negate)) __obj.updateDynamic("negate")(negate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Constraint]
   }
 }

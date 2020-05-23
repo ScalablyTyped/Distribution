@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when a web view receives a server redirect.
-		 */
+  * Fired when a web view receives a server redirect.
+  */
 trait WebViewRedirectEvent extends WebViewBaseEvent {
   /**
-  			 * Page title of webpage.
-  			 */
+    * Page title of webpage.
+    */
   var title: String
   /**
-  			 * URL of the web document being loaded.
-  			 */
+    * URL of the web document being loaded.
+    */
   var url: String
 }
 

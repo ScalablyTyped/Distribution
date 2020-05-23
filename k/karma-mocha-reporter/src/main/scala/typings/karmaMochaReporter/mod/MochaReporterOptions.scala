@@ -54,7 +54,7 @@ object MochaReporterOptions {
     colors: ColorOptions = null,
     divider: String | `false` = null,
     ignoreSkipped: js.UndefOr[Boolean] = js.undefined,
-    maxLogLines: Int | Double = null,
+    maxLogLines: js.UndefOr[Double] = js.undefined,
     output: OutputOptions = null,
     printFirstSuccess: js.UndefOr[Boolean] = js.undefined,
     showDiff: ShowDiffOptions = null,
@@ -63,10 +63,10 @@ object MochaReporterOptions {
     val __obj = js.Dynamic.literal()
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     if (divider != null) __obj.updateDynamic("divider")(divider.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreSkipped)) __obj.updateDynamic("ignoreSkipped")(ignoreSkipped.asInstanceOf[js.Any])
-    if (maxLogLines != null) __obj.updateDynamic("maxLogLines")(maxLogLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreSkipped)) __obj.updateDynamic("ignoreSkipped")(ignoreSkipped.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLogLines)) __obj.updateDynamic("maxLogLines")(maxLogLines.get.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
-    if (!js.isUndefined(printFirstSuccess)) __obj.updateDynamic("printFirstSuccess")(printFirstSuccess.asInstanceOf[js.Any])
+    if (!js.isUndefined(printFirstSuccess)) __obj.updateDynamic("printFirstSuccess")(printFirstSuccess.get.asInstanceOf[js.Any])
     if (showDiff != null) __obj.updateDynamic("showDiff")(showDiff.asInstanceOf[js.Any])
     if (symbols != null) __obj.updateDynamic("symbols")(symbols.asInstanceOf[js.Any])
     __obj.asInstanceOf[MochaReporterOptions]

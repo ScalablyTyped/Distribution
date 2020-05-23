@@ -18,13 +18,23 @@ trait CreateRoleAliasRequest extends js.Object {
     * The role ARN.
     */
   var roleArn: RoleArn = js.native
+  /**
+    * Metadata which can be used to manage the role alias.  For URI Request parameters use format: ...key1=value1&amp;key2=value2... For the CLI command-line parameter use format: &amp;&amp;tags "key1=value1&amp;key2=value2..." For the cli-input-json file use format: "tags": "key1=value1&amp;key2=value2..." 
+    */
+  var tags: js.UndefOr[TagList] = js.native
 }
 
 object CreateRoleAliasRequest {
   @scala.inline
-  def apply(roleAlias: RoleAlias, roleArn: RoleArn, credentialDurationSeconds: Int | Double = null): CreateRoleAliasRequest = {
+  def apply(
+    roleAlias: RoleAlias,
+    roleArn: RoleArn,
+    credentialDurationSeconds: js.UndefOr[CredentialDurationSeconds] = js.undefined,
+    tags: TagList = null
+  ): CreateRoleAliasRequest = {
     val __obj = js.Dynamic.literal(roleAlias = roleAlias.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
-    if (credentialDurationSeconds != null) __obj.updateDynamic("credentialDurationSeconds")(credentialDurationSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(credentialDurationSeconds)) __obj.updateDynamic("credentialDurationSeconds")(credentialDurationSeconds.get.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRoleAliasRequest]
   }
 }

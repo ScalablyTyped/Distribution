@@ -58,25 +58,25 @@ object Scte35SegmentationDescriptor {
     SegmentationCancelIndicator: Scte35SegmentationCancelIndicator,
     SegmentationEventId: longMin0Max4294967295,
     DeliveryRestrictions: Scte35DeliveryRestrictions = null,
-    SegmentNum: Int | Double = null,
-    SegmentationDuration: Int | Double = null,
-    SegmentationTypeId: Int | Double = null,
+    SegmentNum: js.UndefOr[integerMin0Max255] = js.undefined,
+    SegmentationDuration: js.UndefOr[longMin0Max1099511627775] = js.undefined,
+    SegmentationTypeId: js.UndefOr[integerMin0Max255] = js.undefined,
     SegmentationUpid: string = null,
-    SegmentationUpidType: Int | Double = null,
-    SegmentsExpected: Int | Double = null,
-    SubSegmentNum: Int | Double = null,
-    SubSegmentsExpected: Int | Double = null
+    SegmentationUpidType: js.UndefOr[integerMin0Max255] = js.undefined,
+    SegmentsExpected: js.UndefOr[integerMin0Max255] = js.undefined,
+    SubSegmentNum: js.UndefOr[integerMin0Max255] = js.undefined,
+    SubSegmentsExpected: js.UndefOr[integerMin0Max255] = js.undefined
   ): Scte35SegmentationDescriptor = {
     val __obj = js.Dynamic.literal(SegmentationCancelIndicator = SegmentationCancelIndicator.asInstanceOf[js.Any], SegmentationEventId = SegmentationEventId.asInstanceOf[js.Any])
     if (DeliveryRestrictions != null) __obj.updateDynamic("DeliveryRestrictions")(DeliveryRestrictions.asInstanceOf[js.Any])
-    if (SegmentNum != null) __obj.updateDynamic("SegmentNum")(SegmentNum.asInstanceOf[js.Any])
-    if (SegmentationDuration != null) __obj.updateDynamic("SegmentationDuration")(SegmentationDuration.asInstanceOf[js.Any])
-    if (SegmentationTypeId != null) __obj.updateDynamic("SegmentationTypeId")(SegmentationTypeId.asInstanceOf[js.Any])
+    if (!js.isUndefined(SegmentNum)) __obj.updateDynamic("SegmentNum")(SegmentNum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SegmentationDuration)) __obj.updateDynamic("SegmentationDuration")(SegmentationDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SegmentationTypeId)) __obj.updateDynamic("SegmentationTypeId")(SegmentationTypeId.get.asInstanceOf[js.Any])
     if (SegmentationUpid != null) __obj.updateDynamic("SegmentationUpid")(SegmentationUpid.asInstanceOf[js.Any])
-    if (SegmentationUpidType != null) __obj.updateDynamic("SegmentationUpidType")(SegmentationUpidType.asInstanceOf[js.Any])
-    if (SegmentsExpected != null) __obj.updateDynamic("SegmentsExpected")(SegmentsExpected.asInstanceOf[js.Any])
-    if (SubSegmentNum != null) __obj.updateDynamic("SubSegmentNum")(SubSegmentNum.asInstanceOf[js.Any])
-    if (SubSegmentsExpected != null) __obj.updateDynamic("SubSegmentsExpected")(SubSegmentsExpected.asInstanceOf[js.Any])
+    if (!js.isUndefined(SegmentationUpidType)) __obj.updateDynamic("SegmentationUpidType")(SegmentationUpidType.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SegmentsExpected)) __obj.updateDynamic("SegmentsExpected")(SegmentsExpected.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SubSegmentNum)) __obj.updateDynamic("SubSegmentNum")(SubSegmentNum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SubSegmentsExpected)) __obj.updateDynamic("SubSegmentsExpected")(SubSegmentsExpected.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scte35SegmentationDescriptor]
   }
 }

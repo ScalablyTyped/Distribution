@@ -1,5 +1,6 @@
 package typings.ionic
 
+import typings.ionic.anon.Appid
 import typings.ionic.commandMod.Command
 import typings.ionicCliFramework.definitionsMod.CommandLineOptions
 import scala.scalajs.js
@@ -11,8 +12,8 @@ import scala.scalajs.js.annotation._
 object coreMod extends js.Object {
   @js.native
   abstract class DeployConfCommand () extends DeployCoreCommand {
-    val optionsToPlistKeys: AnonAppid = js.native
-    val optionsToStringXmlKeys: AnonAppid = js.native
+    val optionsToPlistKeys: Appid = js.native
+    val optionsToStringXmlKeys: Appid = js.native
     /* protected */ def addConfToAndroidString(options: CommandLineOptions): js.Promise[Boolean] = js.native
     /* protected */ def addConfToIosPlist(options: CommandLineOptions): js.Promise[Boolean] = js.native
     /* protected */ def checkDeployInstalled(): js.Promise[Boolean] = js.native

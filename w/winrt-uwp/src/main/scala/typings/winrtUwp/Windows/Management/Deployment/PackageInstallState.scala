@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Management.Deployment
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object PackageInstallState extends js.Object {
   /** The package has been downloaded. */
   @js.native
   sealed trait staged extends PackageInstallState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PackageInstallState with Double] = js.native
-  /* 2 */ @js.native
-  object installed extends TopLevel[installed with Double]
-  
-  /* 0 */ @js.native
-  object notInstalled extends TopLevel[notInstalled with Double]
-  
-  /* 3 */ @js.native
-  object paused extends TopLevel[paused with Double]
-  
-  /* 1 */ @js.native
-  object staged extends TopLevel[staged with Double]
   
 }
 

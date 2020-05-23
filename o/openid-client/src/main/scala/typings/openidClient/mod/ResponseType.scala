@@ -17,20 +17,18 @@ trait ResponseType extends js.Object
 
 object ResponseType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def code: typings.openidClient.openidClientStrings.code = "code".asInstanceOf[typings.openidClient.openidClientStrings.code]
   @scala.inline
-  def code: typings.openidClient.openidClientStrings.code = this.cast("code")
+  def `code id_token`: typings.openidClient.openidClientStrings.`code id_token` = ("code id_token").asInstanceOf[typings.openidClient.openidClientStrings.`code id_token`]
   @scala.inline
-  def `code id_token`: typings.openidClient.openidClientStrings.`code id_token` = this.cast("code id_token")
+  def `code id_token token`: typings.openidClient.openidClientStrings.`code id_token token` = ("code id_token token").asInstanceOf[typings.openidClient.openidClientStrings.`code id_token token`]
   @scala.inline
-  def `code id_token token`: typings.openidClient.openidClientStrings.`code id_token token` = this.cast("code id_token token")
+  def `code token`: typings.openidClient.openidClientStrings.`code token` = ("code token").asInstanceOf[typings.openidClient.openidClientStrings.`code token`]
   @scala.inline
-  def `code token`: typings.openidClient.openidClientStrings.`code token` = this.cast("code token")
+  def id_token: typings.openidClient.openidClientStrings.id_token = "id_token".asInstanceOf[typings.openidClient.openidClientStrings.id_token]
   @scala.inline
-  def id_token: typings.openidClient.openidClientStrings.id_token = this.cast("id_token")
+  def `id_token token`: typings.openidClient.openidClientStrings.`id_token token` = ("id_token token").asInstanceOf[typings.openidClient.openidClientStrings.`id_token token`]
   @scala.inline
-  def `id_token token`: typings.openidClient.openidClientStrings.`id_token token` = this.cast("id_token token")
-  @scala.inline
-  def none: typings.openidClient.openidClientStrings.none = this.cast("none")
+  def none: typings.openidClient.openidClientStrings.none = "none".asInstanceOf[typings.openidClient.openidClientStrings.none]
 }
 

@@ -22,13 +22,13 @@ trait TimeEvents extends js.Object {
 object TimeEvents {
   @scala.inline
   def apply(
-    droppedAnnotationsCount: Int | Double = null,
-    droppedNetworkEventsCount: Int | Double = null,
+    droppedAnnotationsCount: js.UndefOr[Double] = js.undefined,
+    droppedNetworkEventsCount: js.UndefOr[Double] = js.undefined,
     timeEvent: js.Array[TimeEvent] = null
   ): TimeEvents = {
     val __obj = js.Dynamic.literal()
-    if (droppedAnnotationsCount != null) __obj.updateDynamic("droppedAnnotationsCount")(droppedAnnotationsCount.asInstanceOf[js.Any])
-    if (droppedNetworkEventsCount != null) __obj.updateDynamic("droppedNetworkEventsCount")(droppedNetworkEventsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(droppedAnnotationsCount)) __obj.updateDynamic("droppedAnnotationsCount")(droppedAnnotationsCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(droppedNetworkEventsCount)) __obj.updateDynamic("droppedNetworkEventsCount")(droppedNetworkEventsCount.get.asInstanceOf[js.Any])
     if (timeEvent != null) __obj.updateDynamic("timeEvent")(timeEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeEvents]
   }

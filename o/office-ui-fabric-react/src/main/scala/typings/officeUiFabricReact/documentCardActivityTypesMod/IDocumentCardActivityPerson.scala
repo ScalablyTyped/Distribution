@@ -41,7 +41,7 @@ object IDocumentCardActivityPerson {
     initialsColor: PersonaInitialsColor = null
   ): IDocumentCardActivityPerson = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], profileImageSrc = profileImageSrc.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowPhoneInitials)) __obj.updateDynamic("allowPhoneInitials")(allowPhoneInitials.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowPhoneInitials)) __obj.updateDynamic("allowPhoneInitials")(allowPhoneInitials.get.asInstanceOf[js.Any])
     if (initials != null) __obj.updateDynamic("initials")(initials.asInstanceOf[js.Any])
     if (initialsColor != null) __obj.updateDynamic("initialsColor")(initialsColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDocumentCardActivityPerson]

@@ -1,6 +1,6 @@
 package typings.fullcalendar.globalEmitterMod
 
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,12 +33,12 @@ class Default_ () extends js.Object {
   def handleMouseMove(ev: js.Any): Unit = js.native
   def handleMouseUp(ev: js.Any): Unit = js.native
   def handleScroll(ev: js.Any): Unit = js.native
-  def handleScrollProxy(ev: Event_): Unit = js.native
+  def handleScrollProxy(ev: Event): Unit = js.native
   def handleSelectStart(ev: js.Any): Unit = js.native
   def handleTouchCancel(ev: js.Any): Unit = js.native
   def handleTouchEnd(ev: js.Any): Unit = js.native
   def handleTouchMove(ev: js.Any): Unit = js.native
-  def handleTouchMoveProxy(ev: Event_): Unit = js.native
+  def handleTouchMoveProxy(ev: Event): Unit = js.native
   def handleTouchStart(ev: js.Any): Unit = js.native
   def hasHandlers(`type`: js.Any): js.Any = js.native
   def listenTo(other: js.Any, arg: js.Any): js.Any = js.native

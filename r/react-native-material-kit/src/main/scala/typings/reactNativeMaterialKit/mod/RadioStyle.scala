@@ -17,14 +17,14 @@ object RadioStyle {
   def apply(
     borderOffColor: String = null,
     borderOnColor: String = null,
-    extraRippleRadius: Int | Double = null,
+    extraRippleRadius: js.UndefOr[Double] = js.undefined,
     fillColor: String = null,
     rippleColor: String = null
   ): RadioStyle = {
     val __obj = js.Dynamic.literal()
     if (borderOffColor != null) __obj.updateDynamic("borderOffColor")(borderOffColor.asInstanceOf[js.Any])
     if (borderOnColor != null) __obj.updateDynamic("borderOnColor")(borderOnColor.asInstanceOf[js.Any])
-    if (extraRippleRadius != null) __obj.updateDynamic("extraRippleRadius")(extraRippleRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(extraRippleRadius)) __obj.updateDynamic("extraRippleRadius")(extraRippleRadius.get.asInstanceOf[js.Any])
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
     if (rippleColor != null) __obj.updateDynamic("rippleColor")(rippleColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadioStyle]

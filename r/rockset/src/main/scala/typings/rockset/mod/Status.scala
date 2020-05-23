@@ -43,8 +43,8 @@ object Status {
     message: String = null,
     since: String = null,
     state: INITIALIZING | WATCHING | PROCESSING | COMPLETED | ERROR = null,
-    total_error_items: Int | Double = null,
-    total_processed_items: Int | Double = null
+    total_error_items: js.UndefOr[Double] = js.undefined,
+    total_processed_items: js.UndefOr[Double] = js.undefined
   ): Status = {
     val __obj = js.Dynamic.literal()
     if (last_error_at != null) __obj.updateDynamic("last_error_at")(last_error_at.asInstanceOf[js.Any])
@@ -55,8 +55,8 @@ object Status {
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (total_error_items != null) __obj.updateDynamic("total_error_items")(total_error_items.asInstanceOf[js.Any])
-    if (total_processed_items != null) __obj.updateDynamic("total_processed_items")(total_processed_items.asInstanceOf[js.Any])
+    if (!js.isUndefined(total_error_items)) __obj.updateDynamic("total_error_items")(total_error_items.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(total_processed_items)) __obj.updateDynamic("total_processed_items")(total_processed_items.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Status]
   }
 }

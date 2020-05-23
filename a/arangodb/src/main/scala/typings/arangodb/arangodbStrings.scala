@@ -1160,6 +1160,9 @@ object arangodbStrings {
   sealed trait `permanent redirect` extends HttpStatus
   
   @js.native
+  sealed trait persistent extends IndexType
+  
+  @js.native
   sealed trait `precondition failed` extends HttpStatus
   
   @js.native
@@ -2017,6 +2020,8 @@ object arangodbStrings {
   def `payment required`: `payment required` = ("payment required").asInstanceOf[`payment required`]
   @scala.inline
   def `permanent redirect`: `permanent redirect` = ("permanent redirect").asInstanceOf[`permanent redirect`]
+  @scala.inline
+  def persistent: persistent = "persistent".asInstanceOf[persistent]
   @scala.inline
   def `precondition failed`: `precondition failed` = ("precondition failed").asInstanceOf[`precondition failed`]
   @scala.inline

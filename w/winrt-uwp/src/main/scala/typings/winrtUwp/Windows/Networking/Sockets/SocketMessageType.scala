@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.Sockets
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object SocketMessageType extends js.Object {
   /** The message type is UTF-8 text. */
   @js.native
   sealed trait utf8 extends SocketMessageType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SocketMessageType with Double] = js.native
-  /* 0 */ @js.native
-  object binary extends TopLevel[binary with Double]
-  
-  /* 1 */ @js.native
-  object utf8 extends TopLevel[utf8 with Double]
   
 }
 

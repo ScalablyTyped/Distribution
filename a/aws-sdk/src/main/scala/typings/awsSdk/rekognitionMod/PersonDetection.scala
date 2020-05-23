@@ -18,10 +18,10 @@ trait PersonDetection extends js.Object {
 
 object PersonDetection {
   @scala.inline
-  def apply(Person: PersonDetail = null, Timestamp: Int | Double = null): PersonDetection = {
+  def apply(Person: PersonDetail = null, Timestamp: js.UndefOr[Timestamp] = js.undefined): PersonDetection = {
     val __obj = js.Dynamic.literal()
     if (Person != null) __obj.updateDynamic("Person")(Person.asInstanceOf[js.Any])
-    if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(Timestamp)) __obj.updateDynamic("Timestamp")(Timestamp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersonDetection]
   }
 }

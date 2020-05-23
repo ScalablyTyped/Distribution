@@ -22,7 +22,7 @@ object NotificationProps {
     animation: String | js.Object = null,
     className: String = null,
     closeIcon: ReactNode = null,
-    maxCount: Int | Double = null,
+    maxCount: js.UndefOr[Double] = js.undefined,
     prefixCls: String = null,
     style: CSSProperties = null,
     transitionName: String = null
@@ -31,7 +31,7 @@ object NotificationProps {
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon.asInstanceOf[js.Any])
-    if (maxCount != null) __obj.updateDynamic("maxCount")(maxCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxCount)) __obj.updateDynamic("maxCount")(maxCount.get.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName.asInstanceOf[js.Any])

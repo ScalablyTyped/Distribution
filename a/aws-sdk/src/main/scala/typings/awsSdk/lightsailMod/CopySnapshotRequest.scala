@@ -46,7 +46,7 @@ object CopySnapshotRequest {
     if (restoreDate != null) __obj.updateDynamic("restoreDate")(restoreDate.asInstanceOf[js.Any])
     if (sourceResourceName != null) __obj.updateDynamic("sourceResourceName")(sourceResourceName.asInstanceOf[js.Any])
     if (sourceSnapshotName != null) __obj.updateDynamic("sourceSnapshotName")(sourceSnapshotName.asInstanceOf[js.Any])
-    if (!js.isUndefined(useLatestRestorableAutoSnapshot)) __obj.updateDynamic("useLatestRestorableAutoSnapshot")(useLatestRestorableAutoSnapshot.asInstanceOf[js.Any])
+    if (!js.isUndefined(useLatestRestorableAutoSnapshot)) __obj.updateDynamic("useLatestRestorableAutoSnapshot")(useLatestRestorableAutoSnapshot.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopySnapshotRequest]
   }
 }

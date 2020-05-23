@@ -18,9 +18,9 @@ object ParserOpts {
     tolerant: js.UndefOr[Boolean] = js.undefined
   ): ParserOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (!js.isUndefined(range)) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (!js.isUndefined(tolerant)) __obj.updateDynamic("tolerant")(tolerant.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(range)) __obj.updateDynamic("range")(range.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tolerant)) __obj.updateDynamic("tolerant")(tolerant.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParserOpts]
   }
 }

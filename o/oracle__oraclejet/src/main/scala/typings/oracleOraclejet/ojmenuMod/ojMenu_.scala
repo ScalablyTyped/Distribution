@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojmenuMod
 
-import typings.oracleOraclejet.AnonAriaFocusSkipLink
+import typings.oracleOraclejet.anon.AriaFocusSkipLink
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.baseComponent
 import typings.oracleOraclejet.ojmenuMod.ojMenu.OpenOptions
@@ -33,7 +33,7 @@ trait ojMenu_ extends baseComponent[ojMenuSettableProperties] {
   var onOpenOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[OpenOptions], _]) | Null = js.native
   var openOptions: OpenOptions = js.native
   @JSName("translations")
-  var translations_ojMenu_ : AnonAriaFocusSkipLink = js.native
+  var translations_ojMenu_ : AriaFocusSkipLink = js.native
   @JSName("addEventListener")
   def addEventListener_disabledChanged(
     `type`: disabledChanged,
@@ -135,6 +135,6 @@ trait ojMenu_ extends baseComponent[ojMenuSettableProperties] {
   @JSName("setProperty")
   def setProperty_openOptions(property: openOptions, value: OpenOptions): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonAriaFocusSkipLink): Unit = js.native
+  def setProperty_translations(property: translations, value: AriaFocusSkipLink): Unit = js.native
 }
 

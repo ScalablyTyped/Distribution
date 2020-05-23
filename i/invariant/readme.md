@@ -1,7 +1,7 @@
 
 # Scala.js typings for invariant
 
-Typings are for version 2.2.0
+Typings are for version 2.2.4
 
 ## Library description:
 invariant

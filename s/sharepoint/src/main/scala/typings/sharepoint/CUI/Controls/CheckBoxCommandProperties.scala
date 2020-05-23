@@ -4,7 +4,5 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CUI.Controls.CheckBoxCommandProperties")
-@js.native
-class CheckBoxCommandProperties () extends js.Object
+trait CheckBoxCommandProperties extends js.Object
 

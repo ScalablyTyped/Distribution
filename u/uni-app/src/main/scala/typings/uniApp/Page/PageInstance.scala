@@ -102,7 +102,7 @@ trait PageInstance[D /* <: AnyObject */, T /* <: AnyObject */] extends PageInsta
 
 object PageInstance {
   @scala.inline
-  def apply[D /* <: AnyObject */, T /* <: AnyObject */](
+  def apply[D, T](
     onBackPress: /* options */ BackPressOption => _ = null,
     onHide: () => Unit = null,
     onLoad: /* query */ js.UndefOr[AnyObject] => Unit = null,

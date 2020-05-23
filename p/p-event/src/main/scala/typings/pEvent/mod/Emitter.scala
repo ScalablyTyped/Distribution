@@ -15,7 +15,7 @@ trait Emitter[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[
 
 object Emitter {
   @scala.inline
-  def apply[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[_] */](
+  def apply[EventName, EmittedType](
     addEventListener: (EventName, /* listener */ js.Function1[EmittedType, Unit]) => Unit = null,
     addListener: (EventName, /* listener */ js.Function1[EmittedType, Unit]) => Unit = null,
     off: (EventName, /* listener */ js.Function1[EmittedType, Unit]) => Unit = null,

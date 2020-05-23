@@ -7,9 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** FaxDocument Class */
-@JSGlobal("FAXCOMEXLib.FaxDocument")
 @js.native
-class FaxDocument protected () extends js.Object {
+trait FaxDocument extends js.Object {
   /** Whether to attach a fax to the receipt */
   var AttachFaxToReceipt: Boolean = js.native
   /** Full paths to the fax document body files */

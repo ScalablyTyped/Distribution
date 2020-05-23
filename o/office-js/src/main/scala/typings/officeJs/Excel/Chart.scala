@@ -1,6 +1,5 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.ChartData
 import typings.officeJs.Excel.Interfaces.ChartLoadOptions
 import typings.officeJs.Excel.Interfaces.ChartUpdateData
@@ -8,6 +7,7 @@ import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.ClientResult
 import typings.officeJs.OfficeExtension.EventHandlers
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.Auto
 import typings.officeJs.officeJsStrings.Columns
 import typings.officeJs.officeJsStrings.Fill
@@ -28,27 +28,26 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
-@JSGlobal("Excel.Chart")
 @js.native
-class Chart () extends ClientObject {
+trait Chart extends ClientObject {
   /**
     *
-    * Represents chart axes. Read-only.
+    * Represents chart axes.
     *
     * [Api set: ExcelApi 1.1]
     */
   val axes: ChartAxes = js.native
   /**
     *
-    * Returns or sets a ChartCategoryLabelLevel enumeration constant referring to
-    the level of where the category labels are being sourced from. Read/Write.
+    * Specifies a ChartCategoryLabelLevel enumeration constant referring to
+    the level of where the category labels are being sourced from. 
     *
     * [Api set: ExcelApi 1.8]
     */
   var categoryLabelLevel: Double = js.native
   /**
     *
-    * Represents the type of the chart. See Excel.ChartType for details.
+    * Specifies the type of the chart. See Excel.ChartType for details.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -58,35 +57,35 @@ class Chart () extends ClientObject {
   var context_Chart: RequestContext = js.native
   /**
     *
-    * Represents the datalabels on the chart. Read-only.
+    * Represents the datalabels on the chart.
     *
     * [Api set: ExcelApi 1.1]
     */
   val dataLabels: ChartDataLabels = js.native
   /**
     *
-    * Returns or sets the way that blank cells are plotted on a chart. Read/Write.
+    * Specifies the way that blank cells are plotted on a chart.
     *
     * [Api set: ExcelApi 1.8]
     */
   var displayBlanksAs: ChartDisplayBlanksAs | NotPlotted | Zero | Interplotted = js.native
   /**
     *
-    * Encapsulates the format properties for the chart area. Read-only.
+    * Encapsulates the format properties for the chart area.
     *
     * [Api set: ExcelApi 1.1]
     */
   val format: ChartAreaFormat = js.native
   /**
     *
-    * Represents the height, in points, of the chart object.
+    * Specifies the height, in points, of the chart object.
     *
     * [Api set: ExcelApi 1.1]
     */
   var height: Double = js.native
   /**
     *
-    * The unique id of chart. Read-only.
+    * The unique id of chart.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -100,14 +99,14 @@ class Chart () extends ClientObject {
   var left: Double = js.native
   /**
     *
-    * Represents the legend for the chart. Read-only.
+    * Represents the legend for the chart.
     *
     * [Api set: ExcelApi 1.1]
     */
   val legend: ChartLegend = js.native
   /**
     *
-    * Represents the name of a chart object.
+    * Specifies the name of a chart object.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -132,7 +131,7 @@ class Chart () extends ClientObject {
   val onDeactivated: EventHandlers[ChartDeactivatedEventArgs] = js.native
   /**
     *
-    * Encapsulates the options for a pivot chart. Read-only.
+    * Encapsulates the options for a pivot chart.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -146,43 +145,43 @@ class Chart () extends ClientObject {
   val plotArea: ChartPlotArea = js.native
   /**
     *
-    * Returns or sets the way columns or rows are used as data series on the chart. Read/Write.
+    * Specifies the way columns or rows are used as data series on the chart.
     *
     * [Api set: ExcelApi 1.8]
     */
   var plotBy: ChartPlotBy | Rows | Columns = js.native
   /**
     *
-    * True if only visible cells are plotted. False if both visible and hidden cells are plotted. Read/Write.
+    * True if only visible cells are plotted. False if both visible and hidden cells are plotted.
     *
     * [Api set: ExcelApi 1.8]
     */
   var plotVisibleOnly: Boolean = js.native
   /**
     *
-    * Represents either a single series or collection of series in the chart. Read-only.
+    * Represents either a single series or collection of series in the chart.
     *
     * [Api set: ExcelApi 1.1]
     */
   val series: ChartSeriesCollection = js.native
   /**
     *
-    * Returns or sets a ChartSeriesNameLevel enumeration constant referring to
-    the level of where the series names are being sourced from. Read/Write.
+    * Specifies a ChartSeriesNameLevel enumeration constant referring to
+    the level of where the series names are being sourced from.
     *
     * [Api set: ExcelApi 1.8]
     */
   var seriesNameLevel: Double = js.native
   /**
     *
-    * Represents whether to display all field buttons on a PivotChart.
+    * Specifies whether to display all field buttons on a PivotChart.
     *
     * [Api set: ExcelApi 1.7]
     */
   var showAllFieldButtons: Boolean = js.native
   /**
     *
-    * Represents whether to show the data labels when the value is greater than the maximum value on the value axis.
+    * Specifies whether to show the data labels when the value is greater than the maximum value on the value axis.
     If value axis became smaller than the size of data points, you can use this property to set whether to show the data labels.
     This property applies to 2-D charts only.
     *
@@ -191,35 +190,35 @@ class Chart () extends ClientObject {
   var showDataLabelsOverMaximum: Boolean = js.native
   /**
     *
-    * Returns or sets the chart style for the chart. Read/Write.
+    * Specifies the chart style for the chart.
     *
     * [Api set: ExcelApi 1.8]
     */
   var style: Double = js.native
   /**
     *
-    * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title. Read-only.
+    * Specifies the title of the specified chart, including the text, visibility, position, and formatting of the title.
     *
     * [Api set: ExcelApi 1.1]
     */
   val title: ChartTitle = js.native
   /**
     *
-    * Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
+    * Specifies the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
     *
     * [Api set: ExcelApi 1.1]
     */
   var top: Double = js.native
   /**
     *
-    * Represents the width, in points, of the chart object.
+    * Specifies the width, in points, of the chart object.
     *
     * [Api set: ExcelApi 1.1]
     */
   var width: Double = js.native
   /**
     *
-    * The worksheet containing the current chart. Read-only.
+    * The worksheet containing the current chart.
     *
     * [Api set: ExcelApi 1.2]
     */
@@ -263,7 +262,7 @@ class Chart () extends ClientObject {
     */
   def load(): Chart = js.native
   def load(options: ChartLoadOptions): Chart = js.native
-  def load(propertyNamesAndPaths: AnonExpand): Chart = js.native
+  def load(propertyNamesAndPaths: Expand): Chart = js.native
   def load(propertyNames: String): Chart = js.native
   def load(propertyNames: js.Array[String]): Chart = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

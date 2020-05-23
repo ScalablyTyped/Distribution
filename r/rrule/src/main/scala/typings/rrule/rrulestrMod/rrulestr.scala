@@ -1,6 +1,6 @@
 package typings.rrule.rrulestrMod
 
-import typings.rrule.PartialRRuleStrOptions
+import typings.rrule.anon.PartialRRuleStrOptions
 import typings.rrule.rruleMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`

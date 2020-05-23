@@ -18,9 +18,9 @@ trait Gender extends js.Object {
 
 object Gender {
   @scala.inline
-  def apply(Confidence: Int | Double = null, Value: GenderType = null): Gender = {
+  def apply(Confidence: js.UndefOr[Percent] = js.undefined, Value: GenderType = null): Gender = {
     val __obj = js.Dynamic.literal()
-    if (Confidence != null) __obj.updateDynamic("Confidence")(Confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence.get.asInstanceOf[js.Any])
     if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Gender]
   }

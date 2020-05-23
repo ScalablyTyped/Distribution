@@ -12,14 +12,14 @@ sealed trait ChatRoomOperationType extends js.Object
 @js.native
 object ChatRoomOperationType extends js.Object {
   /**
-  		* Ban operation
-  		*/
+    * Ban operation
+    */
   @js.native
   sealed trait Ban extends ChatRoomOperationType
   
   /**
-  		* Unban operation
-  		*/
+    * Unban operation
+    */
   @js.native
   sealed trait Unban extends ChatRoomOperationType
   

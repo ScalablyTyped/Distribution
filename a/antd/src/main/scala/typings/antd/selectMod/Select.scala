@@ -4,10 +4,10 @@ import typings.antd.antdStrings.SECRET_COMBOBOX_MODE_DO_NOT_USE
 import typings.antd.antdStrings.combobox
 import typings.antd.antdStrings.multiple
 import typings.antd.antdStrings.tags
-import typings.antd.contextMod.ConfigConsumerProps
+import typings.antd.configProviderContextMod.ConfigConsumerProps
 import typings.react.mod.Component
 import typings.react.mod.RefObject
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

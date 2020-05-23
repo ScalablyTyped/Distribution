@@ -27,15 +27,15 @@ trait DefaultIntegerHyperParameterRange extends js.Object {
 object DefaultIntegerHyperParameterRange {
   @scala.inline
   def apply(
-    isTunable: js.UndefOr[scala.Boolean] = js.undefined,
-    maxValue: Int | Double = null,
-    minValue: Int | Double = null,
+    isTunable: js.UndefOr[Tunable] = js.undefined,
+    maxValue: js.UndefOr[IntegerMaxValue] = js.undefined,
+    minValue: js.UndefOr[IntegerMinValue] = js.undefined,
     name: ParameterName = null
   ): DefaultIntegerHyperParameterRange = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isTunable)) __obj.updateDynamic("isTunable")(isTunable.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTunable)) __obj.updateDynamic("isTunable")(isTunable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minValue)) __obj.updateDynamic("minValue")(minValue.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultIntegerHyperParameterRange]
   }

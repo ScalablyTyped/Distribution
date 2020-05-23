@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,14 +17,6 @@ object RadioButtonSize extends js.Object {
   //Shows small size radio button
   @js.native
   sealed trait Small extends RadioButtonSize
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RadioButtonSize with Double] = js.native
-  /* 1 */ @js.native
-  object Medium extends TopLevel[Medium with Double]
-  
-  /* 0 */ @js.native
-  object Small extends TopLevel[Small with Double]
   
 }
 

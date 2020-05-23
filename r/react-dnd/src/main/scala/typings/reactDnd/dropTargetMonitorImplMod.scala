@@ -3,6 +3,7 @@ package typings.reactDnd
 import typings.dndCore.interfacesMod.DragDropManager
 import typings.dndCore.interfacesMod.Listener
 import typings.dndCore.interfacesMod.Unsubscribe
+import typings.reactDnd.anon.HandlerIds
 import typings.reactDnd.monitorsMod.DropTargetMonitor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +17,7 @@ object dropTargetMonitorImplMod extends js.Object {
     def this(manager: DragDropManager) = this()
     var internalMonitor: js.Any = js.native
     var targetId: js.Any = js.native
-    def subscribeToStateChange(listener: Listener, options: AnonHandlerIds): Unsubscribe = js.native
+    def subscribeToStateChange(listener: Listener, options: HandlerIds): Unsubscribe = js.native
   }
   
 }

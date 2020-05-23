@@ -54,14 +54,14 @@ object immutableTreeMod extends js.Object {
       *   node
       * @return {?{path:!Path, value:!T}}
       */
-    def findRootMostMatchingPathAndValue(relativePath: Path, predicate: js.Function1[/* a */ T, Boolean]): AnonPath[T] | Null = js.native
+    def findRootMostMatchingPathAndValue(relativePath: Path, predicate: js.Function1[/* a */ T, Boolean]): typings.firebaseDatabase.anon.Path[T] | Null = js.native
     /**
       * Find, if it exists, the shortest subpath of the given path that points a defined
       * value in the tree
       * @param {!Path} relativePath
       * @return {?{path: !Path, value: !T}}
       */
-    def findRootMostValueAndPath(relativePath: Path): AnonPath[T] | Null = js.native
+    def findRootMostValueAndPath(relativePath: Path): typings.firebaseDatabase.anon.Path[T] | Null = js.native
     /**
       * Performs a depth first fold on this tree. Transforms a tree into a single
       * value, given a function that operates on the path to a node, an optional

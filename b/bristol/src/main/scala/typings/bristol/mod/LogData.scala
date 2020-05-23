@@ -15,14 +15,14 @@ trait LogData extends js.Object {
 object LogData {
   @scala.inline
   def apply(
-    code: Int | Double = null,
+    code: js.UndefOr[Double] = js.undefined,
     data: js.Any = null,
     error: LogError = null,
     id: String = null,
     path: String = null
   ): LogData = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (!js.isUndefined(code)) __obj.updateDynamic("code")(code.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

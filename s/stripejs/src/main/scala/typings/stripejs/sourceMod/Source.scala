@@ -120,11 +120,7 @@ object Source {
     status: pending | canceled | failed | consumed | chargeable,
     `type`: paymentOptions,
     usage: reusable,
-    StringDictionary: /**
-    * A matching name to the type with extra information about the payment method
-    * @see type
-    */
-  /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     code_verification: CodeVerification = null,
     receiver: Receiver = null,
     redirect: Redirect = null

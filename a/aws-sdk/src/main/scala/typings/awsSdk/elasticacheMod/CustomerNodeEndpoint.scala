@@ -18,10 +18,10 @@ trait CustomerNodeEndpoint extends js.Object {
 
 object CustomerNodeEndpoint {
   @scala.inline
-  def apply(Address: String = null, Port: Int | scala.Double = null): CustomerNodeEndpoint = {
+  def apply(Address: String = null, Port: js.UndefOr[IntegerOptional] = js.undefined): CustomerNodeEndpoint = {
     val __obj = js.Dynamic.literal()
     if (Address != null) __obj.updateDynamic("Address")(Address.asInstanceOf[js.Any])
-    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
+    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomerNodeEndpoint]
   }
 }

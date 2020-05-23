@@ -51,7 +51,7 @@ object PartialRemarkStringifyOptions {
     incrementListMarker: js.UndefOr[Boolean] = js.undefined,
     listItemIndent: tab | `1` | mixed = null,
     rule: `-_` | _underscore | Asterisk = null,
-    ruleRepetition: Int | Double = null,
+    ruleRepetition: js.UndefOr[Double] = js.undefined,
     ruleSpaces: js.UndefOr[Boolean] = js.undefined,
     setext: js.UndefOr[Boolean] = js.undefined,
     stringLength: /* s */ String => Double = null,
@@ -61,23 +61,23 @@ object PartialRemarkStringifyOptions {
   ): PartialRemarkStringifyOptions = {
     val __obj = js.Dynamic.literal()
     if (bullet != null) __obj.updateDynamic("bullet")(bullet.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeAtx)) __obj.updateDynamic("closeAtx")(closeAtx.asInstanceOf[js.Any])
-    if (!js.isUndefined(commonmark)) __obj.updateDynamic("commonmark")(commonmark.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeAtx)) __obj.updateDynamic("closeAtx")(closeAtx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(commonmark)) __obj.updateDynamic("commonmark")(commonmark.get.asInstanceOf[js.Any])
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
     if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
     if (fence != null) __obj.updateDynamic("fence")(fence.asInstanceOf[js.Any])
-    if (!js.isUndefined(fences)) __obj.updateDynamic("fences")(fences.asInstanceOf[js.Any])
-    if (!js.isUndefined(gfm)) __obj.updateDynamic("gfm")(gfm.asInstanceOf[js.Any])
-    if (!js.isUndefined(incrementListMarker)) __obj.updateDynamic("incrementListMarker")(incrementListMarker.asInstanceOf[js.Any])
+    if (!js.isUndefined(fences)) __obj.updateDynamic("fences")(fences.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gfm)) __obj.updateDynamic("gfm")(gfm.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(incrementListMarker)) __obj.updateDynamic("incrementListMarker")(incrementListMarker.get.asInstanceOf[js.Any])
     if (listItemIndent != null) __obj.updateDynamic("listItemIndent")(listItemIndent.asInstanceOf[js.Any])
     if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
-    if (ruleRepetition != null) __obj.updateDynamic("ruleRepetition")(ruleRepetition.asInstanceOf[js.Any])
-    if (!js.isUndefined(ruleSpaces)) __obj.updateDynamic("ruleSpaces")(ruleSpaces.asInstanceOf[js.Any])
-    if (!js.isUndefined(setext)) __obj.updateDynamic("setext")(setext.asInstanceOf[js.Any])
+    if (!js.isUndefined(ruleRepetition)) __obj.updateDynamic("ruleRepetition")(ruleRepetition.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ruleSpaces)) __obj.updateDynamic("ruleSpaces")(ruleSpaces.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setext)) __obj.updateDynamic("setext")(setext.get.asInstanceOf[js.Any])
     if (stringLength != null) __obj.updateDynamic("stringLength")(js.Any.fromFunction1(stringLength))
     if (strong != null) __obj.updateDynamic("strong")(strong.asInstanceOf[js.Any])
-    if (!js.isUndefined(tableCellPadding)) __obj.updateDynamic("tableCellPadding")(tableCellPadding.asInstanceOf[js.Any])
-    if (!js.isUndefined(tablePipeAlign)) __obj.updateDynamic("tablePipeAlign")(tablePipeAlign.asInstanceOf[js.Any])
+    if (!js.isUndefined(tableCellPadding)) __obj.updateDynamic("tableCellPadding")(tableCellPadding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tablePipeAlign)) __obj.updateDynamic("tablePipeAlign")(tablePipeAlign.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialRemarkStringifyOptions]
   }
 }

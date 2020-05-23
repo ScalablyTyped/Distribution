@@ -1,7 +1,7 @@
 package typings.antdMobileRn.pickerIndexNativeMod
 
-import typings.antdMobileRn.AnonAntLocale
-import typings.antdMobileRn.AnonCascade
+import typings.antdMobileRn.anon.AntLocale
+import typings.antdMobileRn.anon.Cascade
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ class default () extends Picker
 @JSImport("antd-mobile-rn/lib/picker/index.native", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var contextTypes: AnonAntLocale = js.native
-  var defaultProps: AnonCascade = js.native
+  var contextTypes: AntLocale = js.native
+  var defaultProps: Cascade = js.native
 }
 

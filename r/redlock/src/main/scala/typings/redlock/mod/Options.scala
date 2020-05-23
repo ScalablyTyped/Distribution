@@ -62,21 +62,21 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    driftFactor: Int | Double = null,
+    driftFactor: js.UndefOr[Double] = js.undefined,
     extendScript: ExtendScriptFunction | String = null,
     lockScript: LockScriptFunction | String = null,
-    retryCount: Int | Double = null,
-    retryDelay: Int | Double = null,
-    retryJitter: Int | Double = null,
+    retryCount: js.UndefOr[Double] = js.undefined,
+    retryDelay: js.UndefOr[Double] = js.undefined,
+    retryJitter: js.UndefOr[Double] = js.undefined,
     unlockScript: UnlockScriptFunction | String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (driftFactor != null) __obj.updateDynamic("driftFactor")(driftFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(driftFactor)) __obj.updateDynamic("driftFactor")(driftFactor.get.asInstanceOf[js.Any])
     if (extendScript != null) __obj.updateDynamic("extendScript")(extendScript.asInstanceOf[js.Any])
     if (lockScript != null) __obj.updateDynamic("lockScript")(lockScript.asInstanceOf[js.Any])
-    if (retryCount != null) __obj.updateDynamic("retryCount")(retryCount.asInstanceOf[js.Any])
-    if (retryDelay != null) __obj.updateDynamic("retryDelay")(retryDelay.asInstanceOf[js.Any])
-    if (retryJitter != null) __obj.updateDynamic("retryJitter")(retryJitter.asInstanceOf[js.Any])
+    if (!js.isUndefined(retryCount)) __obj.updateDynamic("retryCount")(retryCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retryDelay)) __obj.updateDynamic("retryDelay")(retryDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retryJitter)) __obj.updateDynamic("retryJitter")(retryJitter.get.asInstanceOf[js.Any])
     if (unlockScript != null) __obj.updateDynamic("unlockScript")(unlockScript.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

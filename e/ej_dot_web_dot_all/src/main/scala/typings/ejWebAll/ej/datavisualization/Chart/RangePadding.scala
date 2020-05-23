@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.Chart
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,20 +25,6 @@ object RangePadding extends js.Object {
   //string
   @js.native
   sealed trait Round extends RangePadding
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RangePadding with Double] = js.native
-  /* 0 */ @js.native
-  object Additional extends TopLevel[Additional with Double]
-  
-  /* 2 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 1 */ @js.native
-  object Normal extends TopLevel[Normal with Double]
-  
-  /* 3 */ @js.native
-  object Round extends TopLevel[Round with Double]
   
 }
 

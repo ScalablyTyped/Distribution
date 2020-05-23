@@ -1,7 +1,7 @@
 
 # Scala.js typings for execa
 
-Typings are for version 4.0.0
+Typings are for version 4.0.1
 
 ## Library description:
 Process execution for humans

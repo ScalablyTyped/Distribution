@@ -17,6 +17,7 @@ class MatrixDropdownRowModelBase protected ()
   val hasCondition: Boolean = js.native
   val id: String = js.native
   val isEmpty: Boolean = js.native
+  var isSettingValue: Boolean = js.native
   val locText: LocalizableString = js.native
   val rowIndex: Double = js.native
   val rowName: js.Any = js.native

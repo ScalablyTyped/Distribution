@@ -1,9 +1,9 @@
 package typings.oracleOraclejet.ojtagcloudMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.Anon24
-import typings.oracleOraclejet.AnonHoverBehaviorDelay
-import typings.oracleOraclejet.AnonLabelAndValue
+import typings.oracleOraclejet.anon.HoverBehaviorDelay
+import typings.oracleOraclejet.anon.LabelAndValue
+import typings.oracleOraclejet.anon.`24`
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.oracleOraclejetStrings.all
 import typings.oracleOraclejet.oracleOraclejetStrings.any
@@ -35,17 +35,17 @@ trait ojTagCloudSettablePropertiesLenient[K, D]
   var layout: js.UndefOr[cloud | rectangular] = js.undefined
   var selection: js.UndefOr[js.Array[K]] = js.undefined
   var selectionMode: js.UndefOr[single | multiple | none] = js.undefined
-  var styleDefaults: js.UndefOr[AnonHoverBehaviorDelay] = js.undefined
-  var tooltip: js.UndefOr[Anon24[K]] = js.undefined
+  var styleDefaults: js.UndefOr[HoverBehaviorDelay] = js.undefined
+  var tooltip: js.UndefOr[`24`[K]] = js.undefined
   var touchResponse: js.UndefOr[touchStart | auto] = js.undefined
   var trackResize: js.UndefOr[on | off] = js.undefined
-  var translations: js.UndefOr[AnonLabelAndValue] = js.undefined
+  var translations: js.UndefOr[LabelAndValue] = js.undefined
 }
 
 object ojTagCloudSettablePropertiesLenient {
   @scala.inline
   def apply[K, D](
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     animationOnDataChange: auto | none = null,
     animationOnDisplay: auto | none = null,
     as: String = null,
@@ -57,11 +57,11 @@ object ojTagCloudSettablePropertiesLenient {
     layout: cloud | rectangular = null,
     selection: js.Array[K] = null,
     selectionMode: single | multiple | none = null,
-    styleDefaults: AnonHoverBehaviorDelay = null,
-    tooltip: Anon24[K] = null,
+    styleDefaults: HoverBehaviorDelay = null,
+    tooltip: `24`[K] = null,
     touchResponse: touchStart | auto = null,
     trackResize: on | off = null,
-    translations: AnonLabelAndValue = null
+    translations: LabelAndValue = null
   ): ojTagCloudSettablePropertiesLenient[K, D] = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

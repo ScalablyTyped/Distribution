@@ -1,7 +1,7 @@
 package typings.gapiClientAdsensehost.gapi.client.adsensehost
 
-import typings.gapiClientAdsensehost.AnonBackupOption
-import typings.gapiClientAdsensehost.AnonMarkupLanguage
+import typings.gapiClientAdsensehost.anon.BackupOption
+import typings.gapiClientAdsensehost.anon.MarkupLanguage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait AdUnit extends js.Object {
   /** Identity code of this ad unit, not necessarily unique across ad clients. */
   var code: js.UndefOr[String] = js.undefined
   /** Settings specific to content ads (AFC) and highend mobile content ads (AFMC - deprecated). */
-  var contentAdsSettings: js.UndefOr[AnonBackupOption] = js.undefined
+  var contentAdsSettings: js.UndefOr[BackupOption] = js.undefined
   /** Custom style information specific to this ad unit. */
   var customStyle: js.UndefOr[AdStyle] = js.undefined
   /** Unique identifier of this ad unit. This should be considered an opaque identifier; it is not safe to rely on it being in any particular format. */
@@ -18,7 +18,7 @@ trait AdUnit extends js.Object {
   /** Kind of resource this is, in this case adsensehost#adUnit. */
   var kind: js.UndefOr[String] = js.undefined
   /** Settings specific to WAP mobile content ads (AFMC - deprecated). */
-  var mobileContentAdsSettings: js.UndefOr[AnonMarkupLanguage] = js.undefined
+  var mobileContentAdsSettings: js.UndefOr[MarkupLanguage] = js.undefined
   /** Name of this ad unit. */
   var name: js.UndefOr[String] = js.undefined
   /**
@@ -36,11 +36,11 @@ object AdUnit {
   @scala.inline
   def apply(
     code: String = null,
-    contentAdsSettings: AnonBackupOption = null,
+    contentAdsSettings: BackupOption = null,
     customStyle: AdStyle = null,
     id: String = null,
     kind: String = null,
-    mobileContentAdsSettings: AnonMarkupLanguage = null,
+    mobileContentAdsSettings: MarkupLanguage = null,
     name: String = null,
     status: String = null
   ): AdUnit = {

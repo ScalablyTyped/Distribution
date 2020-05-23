@@ -23,17 +23,17 @@ object Tick {
     alignWithLabel: js.UndefOr[Boolean] = js.undefined,
     inside: js.UndefOr[Boolean] = js.undefined,
     interval: Double | js.Function = null,
-    length: Int | Double = null,
+    length: js.UndefOr[Double] = js.undefined,
     lineStyle: LineStyle = null,
     show: js.UndefOr[Boolean] = js.undefined
   ): Tick = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alignWithLabel)) __obj.updateDynamic("alignWithLabel")(alignWithLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(inside)) __obj.updateDynamic("inside")(inside.asInstanceOf[js.Any])
+    if (!js.isUndefined(alignWithLabel)) __obj.updateDynamic("alignWithLabel")(alignWithLabel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inside)) __obj.updateDynamic("inside")(inside.get.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
     if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tick]
   }
 }

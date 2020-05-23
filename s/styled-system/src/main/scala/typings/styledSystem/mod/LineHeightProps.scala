@@ -18,9 +18,9 @@ trait LineHeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] exten
 
 object LineHeightProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](lineHeight: ResponsiveValue[TVal, ThemeType] = null): LineHeightProps[ThemeType, TVal] = {
+  def apply[ThemeType, TVal](lineHeight: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): LineHeightProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
-    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineHeight)) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineHeightProps[ThemeType, TVal]]
   }
 }

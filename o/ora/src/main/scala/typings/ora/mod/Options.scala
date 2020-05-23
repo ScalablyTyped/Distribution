@@ -14,7 +14,6 @@ trait Options extends js.Object {
   val color: js.UndefOr[Color] = js.undefined
   /**
   		Discard stdin input (except Ctrl+C) while running if it's TTY. This prevents the spinner from twitching on input, outputting broken lines on `Enter` key presses, and prevents buffering of input while the spinner is running.
-  		
   		This has no effect on Windows as there's no good way to implement discarding stdin properly there.
   		@default true
   		*/
@@ -75,8 +74,8 @@ object Options {
     color: Color = null,
     discardStdin: js.UndefOr[Boolean] = js.undefined,
     hideCursor: js.UndefOr[Boolean] = js.undefined,
-    indent: Int | Double = null,
-    interval: Int | Double = null,
+    indent: js.UndefOr[Double] = js.undefined,
+    interval: js.UndefOr[Double] = js.undefined,
     isEnabled: js.UndefOr[Boolean] = js.undefined,
     prefixText: String = null,
     spinner: SpinnerName | Spinner = null,
@@ -85,11 +84,11 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(discardStdin)) __obj.updateDynamic("discardStdin")(discardStdin.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideCursor)) __obj.updateDynamic("hideCursor")(hideCursor.asInstanceOf[js.Any])
-    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEnabled)) __obj.updateDynamic("isEnabled")(isEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(discardStdin)) __obj.updateDynamic("discardStdin")(discardStdin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideCursor)) __obj.updateDynamic("hideCursor")(hideCursor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(indent)) __obj.updateDynamic("indent")(indent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEnabled)) __obj.updateDynamic("isEnabled")(isEnabled.get.asInstanceOf[js.Any])
     if (prefixText != null) __obj.updateDynamic("prefixText")(prefixText.asInstanceOf[js.Any])
     if (spinner != null) __obj.updateDynamic("spinner")(spinner.asInstanceOf[js.Any])
     if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])

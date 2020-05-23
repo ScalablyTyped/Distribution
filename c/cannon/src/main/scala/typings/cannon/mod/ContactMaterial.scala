@@ -15,5 +15,21 @@ class ContactMaterial protected ()
     m2: typings.cannon.CANNON.Material,
     options: IContactMaterialOptions
   ) = this()
+  /* CompleteClass */
+  override var contactEquationRelaxation: Double = js.native
+  /* CompleteClass */
+  override var contactEquationStiffness: Double = js.native
+  /* CompleteClass */
+  override var friction: Double = js.native
+  /* CompleteClass */
+  override var frictionEquationRelaxation: Double = js.native
+  /* CompleteClass */
+  override var frictionEquationStiffness: Double = js.native
+  /* CompleteClass */
+  override var id: Double = js.native
+  /* CompleteClass */
+  override var materials: js.Array[typings.cannon.CANNON.Material] = js.native
+  /* CompleteClass */
+  override var restitution: Double = js.native
 }
 

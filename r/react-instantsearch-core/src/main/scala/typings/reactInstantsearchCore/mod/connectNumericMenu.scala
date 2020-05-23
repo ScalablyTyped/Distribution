@@ -4,7 +4,7 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
 import typings.react.mod.StatelessComponent
-import typings.reactInstantsearchCore.PartialNumericMenuProvide
+import typings.reactInstantsearchCore.anon.PartialNumericMenuProvide
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

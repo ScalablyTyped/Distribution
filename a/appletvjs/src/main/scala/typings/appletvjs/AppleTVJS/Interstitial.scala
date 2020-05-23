@@ -4,12 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AppleTVJS.Interstitial")
-@js.native
-class Interstitial () extends js.Object {
+trait Interstitial extends js.Object {
   /** The duration of the interstitial. */
-  var duration: Double = js.native
+  var duration: Double
   /** The starttime of the interstitial. */
-  var starttime: Double = js.native
+  var starttime: Double
+}
+
+object Interstitial {
+  @scala.inline
+  def apply(duration: Double, starttime: Double): Interstitial = {
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], starttime = starttime.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Interstitial]
+  }
 }
 

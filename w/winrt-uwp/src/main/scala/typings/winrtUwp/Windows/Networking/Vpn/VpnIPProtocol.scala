@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.Vpn
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,29 +38,6 @@ object VpnIPProtocol extends js.Object {
   /** User Datagram Protocol (UDP) */
   @js.native
   sealed trait udp extends VpnIPProtocol
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VpnIPProtocol with Double] = js.native
-  /* 3 */ @js.native
-  object icmp extends TopLevel[icmp with Double]
-  
-  /* 5 */ @js.native
-  object igmp extends TopLevel[igmp with Double]
-  
-  /* 4 */ @js.native
-  object ipv6Icmp extends TopLevel[ipv6Icmp with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 6 */ @js.native
-  object pgm extends TopLevel[pgm with Double]
-  
-  /* 1 */ @js.native
-  object tcp extends TopLevel[tcp with Double]
-  
-  /* 2 */ @js.native
-  object udp extends TopLevel[udp with Double]
   
 }
 

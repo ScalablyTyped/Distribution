@@ -19,7 +19,7 @@ object AuthenticatorSelectionCriteria {
   ): AuthenticatorSelectionCriteria = {
     val __obj = js.Dynamic.literal()
     if (authenticatorAttachment != null) __obj.updateDynamic("authenticatorAttachment")(authenticatorAttachment.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireResidentKey)) __obj.updateDynamic("requireResidentKey")(requireResidentKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireResidentKey)) __obj.updateDynamic("requireResidentKey")(requireResidentKey.get.asInstanceOf[js.Any])
     if (userVerification != null) __obj.updateDynamic("userVerification")(userVerification.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticatorSelectionCriteria]
   }

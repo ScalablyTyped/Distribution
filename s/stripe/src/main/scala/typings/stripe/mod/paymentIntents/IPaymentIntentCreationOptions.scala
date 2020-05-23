@@ -47,14 +47,14 @@ trait IPaymentIntentCreationOptions extends IPaymentIntentUpdateOptions {
 object IPaymentIntentCreationOptions {
   @scala.inline
   def apply(
-    amount: Int | Double = null,
-    application_fee_amount: Int | Double = null,
+    amount: js.UndefOr[Double] = js.undefined,
+    application_fee_amount: js.UndefOr[Double] = js.undefined,
     capture_method: automatic | manual = null,
     confirm: js.UndefOr[Boolean] = js.undefined,
     confirmation_method: automatic | manual = null,
     currency: String = null,
     customer: String = null,
-    description: String = null,
+    description: js.UndefOr[Null | String] = js.undefined,
     metadata: IOptionsMetadata = null,
     off_session: js.UndefOr[Boolean] = js.undefined,
     on_behalf_of: String = null,
@@ -72,23 +72,23 @@ object IPaymentIntentCreationOptions {
     transfer_group: String = null
   ): IPaymentIntentCreationOptions = {
     val __obj = js.Dynamic.literal()
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (application_fee_amount != null) __obj.updateDynamic("application_fee_amount")(application_fee_amount.asInstanceOf[js.Any])
+    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(application_fee_amount)) __obj.updateDynamic("application_fee_amount")(application_fee_amount.get.asInstanceOf[js.Any])
     if (capture_method != null) __obj.updateDynamic("capture_method")(capture_method.asInstanceOf[js.Any])
-    if (!js.isUndefined(confirm)) __obj.updateDynamic("confirm")(confirm.asInstanceOf[js.Any])
+    if (!js.isUndefined(confirm)) __obj.updateDynamic("confirm")(confirm.get.asInstanceOf[js.Any])
     if (confirmation_method != null) __obj.updateDynamic("confirmation_method")(confirmation_method.asInstanceOf[js.Any])
     if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(off_session)) __obj.updateDynamic("off_session")(off_session.asInstanceOf[js.Any])
+    if (!js.isUndefined(off_session)) __obj.updateDynamic("off_session")(off_session.get.asInstanceOf[js.Any])
     if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of.asInstanceOf[js.Any])
     if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method.asInstanceOf[js.Any])
     if (payment_method_options != null) __obj.updateDynamic("payment_method_options")(payment_method_options.asInstanceOf[js.Any])
     if (payment_method_types != null) __obj.updateDynamic("payment_method_types")(payment_method_types.asInstanceOf[js.Any])
     if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email.asInstanceOf[js.Any])
     if (return_url != null) __obj.updateDynamic("return_url")(return_url.asInstanceOf[js.Any])
-    if (!js.isUndefined(save_payment_method)) __obj.updateDynamic("save_payment_method")(save_payment_method.asInstanceOf[js.Any])
+    if (!js.isUndefined(save_payment_method)) __obj.updateDynamic("save_payment_method")(save_payment_method.get.asInstanceOf[js.Any])
     if (setup_future_usage != null) __obj.updateDynamic("setup_future_usage")(setup_future_usage.asInstanceOf[js.Any])
     if (shipping != null) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
     if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor.asInstanceOf[js.Any])

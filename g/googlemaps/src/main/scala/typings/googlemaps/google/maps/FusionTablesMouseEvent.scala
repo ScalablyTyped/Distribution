@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// TODO find source documentation
 trait FusionTablesMouseEvent extends js.Object {
   var infoWindowHtml: js.UndefOr[String] = js.undefined
   var latLng: js.UndefOr[LatLng] = js.undefined

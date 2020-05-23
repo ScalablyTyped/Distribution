@@ -1,13 +1,14 @@
 package typings.hapiHapi.mod
 
 import typings.hapiCatbox.mod.ClientOptions
-import typings.hapiHapi.AnonEncoding
-import typings.hapiHapi.AnonIsCaseSensitive
-import typings.hapiHapi.AnonLog
-import typings.hapiHapi.AnonMaxEventLoopDelay
-import typings.hapiHapi.AnonParser
+import typings.hapiHapi.anon.Encoding
+import typings.hapiHapi.anon.IsCaseSensitive
+import typings.hapiHapi.anon.Log
+import typings.hapiHapi.anon.MaxEventLoopDelay
+import typings.hapiHapi.anon.Parser
 import typings.hapiHapi.hapiHapiBooleans.`false`
 import typings.hapiMimos.mod.MimosOptions
+import typings.node.httpMod.Server
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -69,7 +70,7 @@ trait ServerOptions extends js.Object {
     * or request to ['error']. To turn off all output set the log or request to false. To display all server logs, set the log or request to '*'. To disable all debug information, set debug to
     * false.
     */
-  var debug: js.UndefOr[`false` | AnonLog] = js.undefined
+  var debug: js.UndefOr[`false` | Log] = js.undefined
   /**
     * @default the operating system hostname and if not available, to 'localhost'.
     * The public hostname or IP address. Used to set server.info.host and server.info.uri and as address is none provided.
@@ -81,7 +82,7 @@ trait ServerOptions extends js.Object {
     * If the listener needs to be manually started, set autoListen to false.
     * If the listener uses TLS, set tls to true.
     */
-  var listener: js.UndefOr[typings.node.httpMod.Server] = js.undefined
+  var listener: js.UndefOr[Server] = js.undefined
   /**
     * @default { sampleInterval: 0 }.
     * Server excessive load handling limits where:
@@ -90,7 +91,7 @@ trait ServerOptions extends js.Object {
     * * maxRssBytes - maximum process RSS size over which incoming requests are rejected with an HTTP Server Timeout (503) response. Defaults to 0 (no limit).
     * * maxEventLoopDelay - maximum event loop delay duration in milliseconds over which incoming requests are rejected with an HTTP Server Timeout (503) response. Defaults to 0 (no limit).
     */
-  var load: js.UndefOr[AnonMaxEventLoopDelay] = js.undefined
+  var load: js.UndefOr[MaxEventLoopDelay] = js.undefined
   /**
     * @default none.
     * Options passed to the mimos module when generating the mime database used by the server (and accessed via server.mime):
@@ -117,14 +118,14 @@ trait ServerOptions extends js.Object {
   /**
     * Query parameter configuration.
     */
-  var query: js.UndefOr[AnonParser] = js.undefined
+  var query: js.UndefOr[Parser] = js.undefined
   /**
     * @default { isCaseSensitive: true, stripTrailingSlash: false }.
     * Controls how incoming request URIs are matched against the routing table:
     * * isCaseSensitive - determines whether the paths '/example' and '/EXAMPLE' are considered different resources. Defaults to true.
     * * stripTrailingSlash - removes trailing slashes on incoming paths. Defaults to false.
     */
-  var router: js.UndefOr[AnonIsCaseSensitive] = js.undefined
+  var router: js.UndefOr[IsCaseSensitive] = js.undefined
   /**
     * @default none.
     * A route options object used as the default configuration for every route.
@@ -144,7 +145,7 @@ trait ServerOptions extends js.Object {
     */
   // TODO I am not sure if I need to use all the server.state() definition (like the default value) OR only the options below. The v16 use "any" here.
   // state?: ServerStateCookieOptions;
-  var state: js.UndefOr[AnonEncoding] = js.undefined
+  var state: js.UndefOr[Encoding] = js.undefined
   /**
     * @default none.
     * Used to create an HTTPS connection. The tls object is passed unchanged to the node HTTPS server as described in the node HTTPS documentation.
@@ -165,24 +166,24 @@ object ServerOptions {
     autoListen: js.UndefOr[Boolean] = js.undefined,
     cache: CacheProvider[ClientOptions] | ServerOptionsCache | js.Array[ServerOptionsCache] = null,
     compression: Boolean | ServerOptionsCompression = null,
-    debug: `false` | AnonLog = null,
+    debug: `false` | Log = null,
     host: String = null,
-    listener: typings.node.httpMod.Server = null,
-    load: AnonMaxEventLoopDelay = null,
+    listener: Server = null,
+    load: MaxEventLoopDelay = null,
     mime: MimosOptions = null,
     plugins: PluginSpecificConfiguration = null,
     port: Double | String = null,
-    query: AnonParser = null,
-    router: AnonIsCaseSensitive = null,
+    query: Parser = null,
+    router: IsCaseSensitive = null,
     routes: RouteOptions = null,
-    state: AnonEncoding = null,
+    state: Encoding = null,
     tls: Boolean | typings.node.httpsMod.ServerOptions = null,
     uri: String = null
   ): ServerOptions = {
     val __obj = js.Dynamic.literal()
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     if (app != null) __obj.updateDynamic("app")(app.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoListen)) __obj.updateDynamic("autoListen")(autoListen.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoListen)) __obj.updateDynamic("autoListen")(autoListen.get.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
     if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])

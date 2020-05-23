@@ -15,12 +15,12 @@ object ChartArcOptions {
   def apply(
     backgroundColor: ChartColor = null,
     borderColor: ChartColor = null,
-    borderWidth: Int | Double = null
+    borderWidth: js.UndefOr[Double] = js.undefined
   ): ChartArcOptions = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartArcOptions]
   }
 }

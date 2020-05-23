@@ -1,6 +1,7 @@
 package typings.backboneMarionette.mod
 
 import typings.backbone.mod.Model
+import typings.backbone.mod.ModelSetOptions
 import typings.std.DocumentFragment
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -30,7 +31,7 @@ class Region ()
   /**
     * @returns view that this region has.
     */
-  var currentView: typings.backbone.mod.View[Model] = js.native
+  var currentView: typings.backbone.mod.View[Model[_, ModelSetOptions]] = js.native
   /* CompleteClass */
   override var detachContents: js.Any = js.native
   /* CompleteClass */
@@ -64,7 +65,7 @@ class Region ()
     * Override this method to change how the new view is appended to the
     * `$el` that the region is managing
     */
-  def attachHtml(view: typings.backbone.mod.View[Model]): Unit = js.native
+  def attachHtml(view: typings.backbone.mod.View[Model[_, ModelSetOptions]]): Unit = js.native
   /**
     * Add sibling to the DOM immediately before the DOM node el. The
     * sibling will be at the same level as el.
@@ -83,7 +84,7 @@ class Region ()
     * Destroys the view taking into consideration if is a View descendant
     * or vanilla Backbone view.
     */
-  def destroyView[TModel /* <: Model */](view: typings.backbone.mod.View[TModel]): typings.backbone.mod.View[TModel] = js.native
+  def destroyView[TModel /* <: Model[_, ModelSetOptions] */](view: typings.backbone.mod.View[TModel]): typings.backbone.mod.View[TModel] = js.native
   /**
     * Remove the inner contents of el from the DOM while leaving el itself
     * in the DOM.
@@ -106,7 +107,7 @@ class Region ()
     * Empties the Region without destroying the view, returns the detached
     * view.
     */
-  def detachView(): typings.backbone.mod.View[Model] = js.native
+  def detachView(): typings.backbone.mod.View[Model[_, ModelSetOptions]] = js.native
   /**
     * Destroy the current view, clean up any event handlers and remove it
     * from the DOM. When a region is emptied empty events are triggered.
@@ -153,7 +154,7 @@ class Region ()
     * Override the region's removeView method to change how and when the
     * view is destroyed / removed from the DOM.
     */
-  def removeView(view: typings.backbone.mod.View[Model]): Unit = js.native
+  def removeView(view: typings.backbone.mod.View[Model[_, ModelSetOptions]]): Unit = js.native
   /**
     * Remove oldEl from the DOM and put newEl in its place.
     */
@@ -177,7 +178,7 @@ class Region ()
     * Renders and displays the specified view in this region.
     * @param view the view to display.
     */
-  def show(view: typings.backbone.mod.View[Model]): Unit = js.native
-  def show(view: typings.backbone.mod.View[Model], options: RegionViewOptions): Unit = js.native
+  def show(view: typings.backbone.mod.View[Model[_, ModelSetOptions]]): Unit = js.native
+  def show(view: typings.backbone.mod.View[Model[_, ModelSetOptions]], options: RegionViewOptions): Unit = js.native
 }
 

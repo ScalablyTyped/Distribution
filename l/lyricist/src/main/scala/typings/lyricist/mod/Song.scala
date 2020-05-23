@@ -1,8 +1,8 @@
 package typings.lyricist.mod
 
-import typings.lyricist.AnonAcceptedannotations
-import typings.lyricist.AnonExcludedpermissions
-import typings.lyricist.AnonSongs
+import typings.lyricist.anon.Acceptedannotations
+import typings.lyricist.anon.Excludedpermissions
+import typings.lyricist.anon.Songs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait Song extends js.Object {
   var api_path: String
   var apple_music_id: js.UndefOr[js.Any] = js.undefined
   var apple_music_player_url: String
-  var current_user_metadata: AnonExcludedpermissions
+  var current_user_metadata: Excludedpermissions
   var custom_performances: js.Array[_]
   var description: Description
   var description_annotation: DescriptionAnnotation
@@ -38,8 +38,8 @@ trait Song extends js.Object {
   var release_date: String
   var song_art_image_thumbnail_url: String
   var song_art_image_url: String
-  var song_relationships: js.Array[AnonSongs]
-  var stats: AnonAcceptedannotations
+  var song_relationships: js.Array[Songs]
+  var stats: Acceptedannotations
   var title: String
   var title_with_featured: String
   var url: String
@@ -55,7 +55,7 @@ object Song {
     annotation_count: Double,
     api_path: String,
     apple_music_player_url: String,
-    current_user_metadata: AnonExcludedpermissions,
+    current_user_metadata: Excludedpermissions,
     custom_performances: js.Array[_],
     description: Description,
     description_annotation: DescriptionAnnotation,
@@ -76,8 +76,8 @@ object Song {
     release_date: String,
     song_art_image_thumbnail_url: String,
     song_art_image_url: String,
-    song_relationships: js.Array[AnonSongs],
-    stats: AnonAcceptedannotations,
+    song_relationships: js.Array[Songs],
+    stats: Acceptedannotations,
     title: String,
     title_with_featured: String,
     url: String,

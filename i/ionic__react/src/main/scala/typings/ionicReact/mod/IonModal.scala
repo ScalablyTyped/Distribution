@@ -1,7 +1,7 @@
 package typings.ionicReact.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ionicReact.childrenReactNodeforwarde
+import typings.ionicReact.anon.childrenReactNodeforwarde
 import typings.react.mod.ForwardRefExoticComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

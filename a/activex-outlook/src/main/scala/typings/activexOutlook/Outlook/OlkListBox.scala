@@ -7,9 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Outlook.OlkListBox")
 @js.native
-class OlkListBox protected () extends js.Object {
+trait OlkListBox extends js.Object {
   var BackColor: OLE_COLOR = js.native
   var BorderStyle: OlBorderStyle = js.native
   var Enabled: Boolean = js.native

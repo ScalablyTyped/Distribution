@@ -5,618 +5,617 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	*
-	**/
-@JSGlobal("PlayerFramework.InteractiveViewModel")
+  *
+  **/
 @js.native
-class InteractiveViewModel () extends js.Object {
+trait InteractiveViewModel extends js.Object {
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var audioIcon: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var audioLabel: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var audioTooltip: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var bufferedPercentage: Double = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var captionsIcon: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var captionsLabel: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var captionsTooltip: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var currentItem: Double = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var elapsedTime: Double = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var elapsedTimeLabel: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var elapsedTimeText: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var elapsedTimeTooltip: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var endTime: Double = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var fastForwardIcon: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var fastForwardLabel: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var fastForwardTooltip: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var fullScreenIcon: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var fullScreenLabel: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var fullScreenTooltip: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var goLiveLabel: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var goLiveText: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var goLiveTooltip: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var infoIcon: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var infoLabel: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var infoTooltip: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isAudioDisabled: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isAudioHidden: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isCaptionsDisabled: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isElapsedTimeDisabled: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isElapsedTimeHidden: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isFastForwardDisabled: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isFastForwardHidden: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isFullScreenDisabled: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isFullScreenHidden: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isGoLiveDisabled: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isGoLiveHidden: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isInfoDisabled: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isInfoHidden: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isMediaQualityDisabled: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isMediaQualityHidden: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isMoreDisabled: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isMoreHidden: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isMuteDisabled: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isMuteHidden: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isPauseDisabled: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isPauseHidden: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isPlayPauseDisabled: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isPlayPauseHidden: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isPlayResumeDisabled: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isPlayResumeHidden: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isRemainingTimeDisabled: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isRemainingTimeHidden: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isReplayDisabled: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isReplayHidden: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isRewindDisabled: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isRewindHidden: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isSignalStrengthDisabled: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isSignalStrengthHidden: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isSkipAheadDisabled: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isSkipAheadHidden: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isSkipBackDisabled: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isSkipBackHidden: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isSkipNextDisabled: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isSkipNextHidden: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isSkipPreviousDisabled: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isSkipPreviousHidden: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isSlowMotionDisabled: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isSlowMotionHidden: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isStopDisabled: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isStopHidden: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isThumbnailVisible: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isTimelineDisabled: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isTimelineHidden: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isTotalTimeDisabled: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isTotalTimeHidden: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isVolumeDisabled: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isVolumeHidden: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isVolumeMuteDisabled: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isVolumeMuteHidden: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isZoomDisabled: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var isZoomHidden: Boolean = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var maxTime: Double = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var mediaMetadata: js.Object = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var mediaQuality: MediaQuality = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var mediaQualityLabel: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var mediaQualityTooltip: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var moreIcon: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var moreLabel: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var moreTooltip: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var muteIcon: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var muteLabel: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var muteTooltip: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var pauseIcon: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var pauseLabel: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var pauseTooltip: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var playPauseLabel: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var playPauseTooltip: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var playPouseIcon: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var playResumeIcon: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var playResumeLabel: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var playResumeTooltip: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var remainingTime: Double = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var remainingTimeLabel: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var remainingTimeText: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var remainingTimeTooltip: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var replayIcon: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var replayLabel: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var replayTooltip: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var rewindIcon: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var rewindLabel: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var rewindTooltip: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var signalStrength: Double = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var signalStrengthLabel: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var signalStrengthTooltip: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var skipAheadIcon: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var skipAheadLabel: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var skipAheadTooltip: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var skipBackIcon: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var skipBackLabel: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var skipBackTooltip: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var skipNextIcon: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var skipNextLabel: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var skipNextTooltip: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var skipPreviousIcon: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var skipPreviousLabel: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var skipPreviousTooltip: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var slowMotionIcon: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var slowMotionLabel: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var slowMotionTooltip: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var startTime: Double = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var state: ViewModelState = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var stopIcon: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var stopLabel: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var stopTooltip: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var thumbnailImageSrc: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var timelineLabel: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var timelineTooltip: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var totalTime: Double = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var totalTimeLabel: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var totalTimeText: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var totalTimeTooltip: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var visualMarkers: js.Array[_] = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var volume: Double = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var volumeIcon: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var volumeLabel: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var volumeMuteIcon: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var volumeMuteLabel: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var volumeMuteTooltip: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var volumeTooltip: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var zoomIcon: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var zoomLabel: String = js.native
   /**
-  		* TODO
-  		**/
+    * TODO
+    **/
   var zoomTooltip: String = js.native
   def audio(): Unit = js.native
   def captions(): Unit = js.native

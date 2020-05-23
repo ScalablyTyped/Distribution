@@ -9,9 +9,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Defines a set of asynchronous actions and operations that manage the wallet items in the wallet database. These can be used to read the existing items, or to add and remove items. */
-@JSGlobal("Windows.ApplicationModel.Wallet.WalletItemStore")
 @js.native
-abstract class WalletItemStore () extends js.Object {
+trait WalletItemStore extends js.Object {
   /**
     * Adds a new wallet item to the wallet.
     * @param id The identifier of the wallet item. This value must be unique. This sets the initial WalletItem.Id value (the identifier is for the WalletItemStore store, and isn't part of the initialization of a WalletItem object.

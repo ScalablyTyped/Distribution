@@ -18,9 +18,9 @@ trait ListLoggingConfigurationsRequest extends js.Object {
 
 object ListLoggingConfigurationsRequest {
   @scala.inline
-  def apply(Limit: Int | Double = null, NextMarker: NextMarker = null): ListLoggingConfigurationsRequest = {
+  def apply(Limit: js.UndefOr[PaginationLimit] = js.undefined, NextMarker: NextMarker = null): ListLoggingConfigurationsRequest = {
     val __obj = js.Dynamic.literal()
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListLoggingConfigurationsRequest]
   }

@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserver.mod
 
-import typings.vscodeLanguageserver.AnonWindow
+import typings.vscodeLanguageserver.anon.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,6 +20,6 @@ class ErrorMessageTracker () extends js.Object {
     *
     * @param connection The connection established between client and server.
     */
-  def sendErrors(connection: AnonWindow): Unit = js.native
+  def sendErrors(connection: Window): Unit = js.native
 }
 

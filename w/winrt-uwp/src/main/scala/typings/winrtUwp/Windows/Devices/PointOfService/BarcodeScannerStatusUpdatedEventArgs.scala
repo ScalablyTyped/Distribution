@@ -5,12 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides information about an operation status change. */
-@JSGlobal("Windows.Devices.PointOfService.BarcodeScannerStatusUpdatedEventArgs")
-@js.native
-abstract class BarcodeScannerStatusUpdatedEventArgs () extends js.Object {
+trait BarcodeScannerStatusUpdatedEventArgs extends js.Object {
   /** Gets the vendor specific status code. */
-  var extendedStatus: Double = js.native
+  var extendedStatus: Double
   /** Gets the status change information. */
-  var status: BarcodeScannerStatus = js.native
+  var status: BarcodeScannerStatus
+}
+
+object BarcodeScannerStatusUpdatedEventArgs {
+  @scala.inline
+  def apply(extendedStatus: Double, status: BarcodeScannerStatus): BarcodeScannerStatusUpdatedEventArgs = {
+    val __obj = js.Dynamic.literal(extendedStatus = extendedStatus.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BarcodeScannerStatusUpdatedEventArgs]
+  }
 }
 

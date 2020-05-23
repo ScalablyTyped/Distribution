@@ -17,10 +17,13 @@ import scala.scalajs.js.annotation._
 
 object TokenResponse {
   @scala.inline
-  def apply(StringDictionary: /* x */ StringDictionary[js.Any] = null, notBefore: Int | Double = null): TokenResponse = {
+  def apply(
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    notBefore: js.UndefOr[Double] = js.undefined
+  ): TokenResponse = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (notBefore != null) __obj.updateDynamic("notBefore")(notBefore.asInstanceOf[js.Any])
+    if (!js.isUndefined(notBefore)) __obj.updateDynamic("notBefore")(notBefore.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenResponse]
   }
 }

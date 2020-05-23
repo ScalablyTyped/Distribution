@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RetentionPolicy extends js.Object {
   /**
-    * The home Amazon Elastic File System (EFS).
+    * The default is Retain, which specifies to keep the data stored on the EFS volume. Specify Delete to delete the data stored on the EFS volume.
     */
   var HomeEfsFileSystem: js.UndefOr[RetentionType] = js.native
 }

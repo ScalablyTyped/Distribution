@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait RippleProps
   extends /**
-  * Additional properties passed to rippled component.
+  * Additional attributes passed to composed component.
   */
 /* key */ StringDictionary[js.Any] {
   /**
@@ -38,22 +38,19 @@ trait RippleProps
 object RippleProps {
   @scala.inline
   def apply(
-    StringDictionary: /**
-    * Additional properties passed to rippled component.
-    */
-  /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     children: ReactNode = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     onRippleEnded: js.Function = null,
-    spread: Int | Double = null,
+    spread: js.UndefOr[Double] = js.undefined,
     theme: RippleTheme = null
   ): RippleProps = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (onRippleEnded != null) __obj.updateDynamic("onRippleEnded")(onRippleEnded.asInstanceOf[js.Any])
-    if (spread != null) __obj.updateDynamic("spread")(spread.asInstanceOf[js.Any])
+    if (!js.isUndefined(spread)) __obj.updateDynamic("spread")(spread.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[RippleProps]
   }

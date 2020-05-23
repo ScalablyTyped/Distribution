@@ -19,18 +19,18 @@ object BounceOptions {
   def apply[T](
     from: T,
     to: T,
-    bounces: Int | Double = null,
-    delay: Int | Double = null,
-    duration: Int | Double = null,
+    bounces: js.UndefOr[Double] = js.undefined,
+    delay: js.UndefOr[Double] = js.undefined,
+    duration: js.UndefOr[Double] = js.undefined,
     easing: String = null,
-    stiffness: Int | Double = null
+    stiffness: js.UndefOr[Double] = js.undefined
   ): BounceOptions[T] = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
-    if (bounces != null) __obj.updateDynamic("bounces")(bounces.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(bounces)) __obj.updateDynamic("bounces")(bounces.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (stiffness != null) __obj.updateDynamic("stiffness")(stiffness.asInstanceOf[js.Any])
+    if (!js.isUndefined(stiffness)) __obj.updateDynamic("stiffness")(stiffness.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BounceOptions[T]]
   }
 }

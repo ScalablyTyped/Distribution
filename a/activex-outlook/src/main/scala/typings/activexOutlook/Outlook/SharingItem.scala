@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Outlook.SharingItem")
 @js.native
-class SharingItem protected () extends js.Object {
+trait SharingItem extends js.Object {
   val Actions: typings.activexOutlook.Outlook.Actions = js.native
   var AllowWriteAccess: Boolean = js.native
   var AlternateRecipientAllowed: Boolean = js.native

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,8 +21,4 @@ trait GoTo extends js.Object {
   def goToOverride(view: MapView, goToParameters: js.Any): Unit = js.native
   def goToOverride(view: SceneView, goToParameters: js.Any): Unit = js.native
 }
-
-@JSGlobal("__esri.GoTo")
-@js.native
-object GoTo extends TopLevel[GoToConstructor]
 

@@ -1,13 +1,13 @@
 package typings.docxTemplates.typesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.docxTemplates.AnonWp
+import typings.docxTemplates.anon.Wp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Context extends js.Object {
-  var buffers: AnonWp
+  var buffers: Wp
   var cmd: String
   var fCmd: Boolean
   var fJump: Boolean
@@ -34,7 +34,7 @@ trait Context extends js.Object {
 object Context {
   @scala.inline
   def apply(
-    buffers: AnonWp,
+    buffers: Wp,
     cmd: String,
     fCmd: Boolean,
     fJump: Boolean,

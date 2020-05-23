@@ -5,15 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.model.SelectionModel")
 @js.native
-class SelectionModel protected () extends EventProvider {
-  /**
-    * Constructs an instance of a sap.ui.model.SelectionModel.
-    * @param iSelectionMode <code>sap.ui.model.SelectionModel.SINGLE_SELECTION</code> or
-    * <code>sap.ui.model.SelectionModel.MULTI_SELECTION</code>
-    */
-  def this(iSelectionMode: Double) = this()
+trait SelectionModel extends EventProvider {
   /**
     * SelectionMode: Multi Selection
     */

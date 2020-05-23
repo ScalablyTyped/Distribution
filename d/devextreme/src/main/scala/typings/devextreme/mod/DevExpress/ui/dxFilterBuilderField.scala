@@ -1,8 +1,8 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.AnonDisplayExpr
-import typings.devextreme.AnonFilterOperation
-import typings.devextreme.AnonValue
+import typings.devextreme.anon.DisplayExpr
+import typings.devextreme.anon.FilterOperation
+import typings.devextreme.anon.Value
 import typings.devextreme.devextremeStrings.Equalssign
 import typings.devextreme.devextremeStrings.Greaterthansign
 import typings.devextreme.devextremeStrings.GreaterthansignEqualssign
@@ -23,7 +23,7 @@ import typings.devextreme.devextremeStrings.number
 import typings.devextreme.devextremeStrings.startswith
 import typings.devextreme.devextremeStrings.string_
 import typings.devextreme.mod.DevExpress.core.dxElement
-import typings.devextreme.mod._Global_.JQuery
+import typings.devextreme.mod.global.JQuery
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -41,7 +41,7 @@ trait dxFilterBuilderField extends js.Object {
   /** @name dxFilterBuilderField.caption */
   var caption: js.UndefOr[String] = js.undefined
   /** @name dxFilterBuilderField.customizeText */
-  var customizeText: js.UndefOr[js.Function1[/* fieldInfo */ AnonValue, String]] = js.undefined
+  var customizeText: js.UndefOr[js.Function1[/* fieldInfo */ Value, String]] = js.undefined
   /** @name dxFilterBuilderField.dataField */
   var dataField: js.UndefOr[String] = js.undefined
   /** @name dxFilterBuilderField.dataType */
@@ -51,7 +51,7 @@ trait dxFilterBuilderField extends js.Object {
   /** @name dxFilterBuilderField.editorTemplate */
   var editorTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[
-      /* conditionInfo */ AnonFilterOperation, 
+      /* conditionInfo */ FilterOperation, 
       /* container */ dxElement, 
       String | Element | JQuery
     ])
@@ -67,7 +67,7 @@ trait dxFilterBuilderField extends js.Object {
   /** @name dxFilterBuilderField.format */
   var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
   /** @name dxFilterBuilderField.lookup */
-  var lookup: js.UndefOr[AnonDisplayExpr] = js.undefined
+  var lookup: js.UndefOr[DisplayExpr] = js.undefined
   /** @name dxFilterBuilderField.name */
   var name: js.UndefOr[String] = js.undefined
   /** @name dxFilterBuilderField.trueText */
@@ -79,12 +79,12 @@ object dxFilterBuilderField {
   def apply(
     calculateFilterExpression: (/* filterValue */ js.Any, /* selectedFilterOperation */ String) => String | js.Array[_] | js.Function = null,
     caption: String = null,
-    customizeText: /* fieldInfo */ AnonValue => String = null,
+    customizeText: /* fieldInfo */ Value => String = null,
     dataField: String = null,
     dataType: string_ | number | date | boolean_ | `object` | datetime = null,
     editorOptions: js.Any = null,
     editorTemplate: typings.devextreme.mod.DevExpress.core.template | (js.Function2[
-      /* conditionInfo */ AnonFilterOperation, 
+      /* conditionInfo */ FilterOperation, 
       /* container */ dxElement, 
       String | Element | JQuery
     ]) = null,
@@ -93,7 +93,7 @@ object dxFilterBuilderField {
       Equalssign | LessthansignGreaterthansign | Lessthansign | LessthansignEqualssign | Greaterthansign | GreaterthansignEqualssign | contains | endswith | isblank | isnotblank | notcontains | startswith | between | String
     ] = null,
     format: format = null,
-    lookup: AnonDisplayExpr = null,
+    lookup: DisplayExpr = null,
     name: String = null,
     trueText: String = null
   ): dxFilterBuilderField = {

@@ -18,10 +18,10 @@ trait EndpointGroupEndpointConfiguration extends js.Object {
 
 object EndpointGroupEndpointConfiguration {
   @scala.inline
-  def apply(endpointId: String = null, weight: Int | Double = null): EndpointGroupEndpointConfiguration = {
+  def apply(endpointId: String = null, weight: js.UndefOr[Double] = js.undefined): EndpointGroupEndpointConfiguration = {
     val __obj = js.Dynamic.literal()
     if (endpointId != null) __obj.updateDynamic("endpointId")(endpointId.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointGroupEndpointConfiguration]
   }
 }

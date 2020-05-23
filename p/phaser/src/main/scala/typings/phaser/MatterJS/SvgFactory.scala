@@ -5,9 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MatterJS.SvgFactory")
-@js.native
-class SvgFactory () extends js.Object {
+trait SvgFactory extends js.Object {
   /**
     * Converts an SVG path into an array of vector points.
     * If the input path forms a concave shape, you must decompose the result into convex parts before use.
@@ -18,6 +16,14 @@ class SvgFactory () extends js.Object {
     * @param {Number} [sampleLength=15]
     * @return {Vector[]} points
     */
-  def pathToVertices(path: SVGPathElement, sampleLength: Double): js.Array[Vector] = js.native
+  def pathToVertices(path: SVGPathElement, sampleLength: Double): js.Array[Vector]
+}
+
+object SvgFactory {
+  @scala.inline
+  def apply(pathToVertices: (SVGPathElement, Double) => js.Array[Vector]): SvgFactory = {
+    val __obj = js.Dynamic.literal(pathToVertices = js.Any.fromFunction2(pathToVertices))
+    __obj.asInstanceOf[SvgFactory]
+  }
 }
 

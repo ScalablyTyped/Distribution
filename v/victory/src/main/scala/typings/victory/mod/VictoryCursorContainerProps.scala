@@ -82,12 +82,12 @@ object VictoryCursorContainerProps {
     desc: String = null,
     disable: js.UndefOr[Boolean] = js.undefined,
     events: DOMAttributes[_] = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     onCursorChange: (/* value */ CursorData, /* props */ VictoryCursorContainerProps) => Unit = null,
     responsive: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
     title: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): VictoryCursorContainerProps = {
     val __obj = js.Dynamic.literal()
     if (cursorComponent != null) __obj.updateDynamic("cursorComponent")(cursorComponent.asInstanceOf[js.Any])
@@ -97,14 +97,14 @@ object VictoryCursorContainerProps {
     if (cursorLabelOffset != null) __obj.updateDynamic("cursorLabelOffset")(cursorLabelOffset.asInstanceOf[js.Any])
     if (defaultCursorValue != null) __obj.updateDynamic("defaultCursorValue")(defaultCursorValue.asInstanceOf[js.Any])
     if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable.get.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (onCursorChange != null) __obj.updateDynamic("onCursorChange")(js.Any.fromFunction2(onCursorChange))
-    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VictoryCursorContainerProps]
   }
 }

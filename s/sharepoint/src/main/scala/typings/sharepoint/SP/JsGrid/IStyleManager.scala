@@ -1,27 +1,27 @@
 package typings.sharepoint.SP.JsGrid
 
-import typings.sharepoint.AnonAllSelected
-import typings.sharepoint.AnonDra
 import typings.sharepoint.SP.JsGrid.IStyleType.Cell
 import typings.sharepoint.SP.JsGrid.IStyleType.GridPane
 import typings.sharepoint.SP.JsGrid.IStyleType.Header
 import typings.sharepoint.SP.JsGrid.IStyleType.Splitter
 import typings.sharepoint.SP.JsGrid.IStyleType.TimescaleTier
 import typings.sharepoint.SP.JsGrid.IStyleType.Widget
+import typings.sharepoint.anon.AllSelected
+import typings.sharepoint.anon.Dra
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line: interface-name
 trait IStyleManager extends js.Object {
-  var columnHeaderStyleCollection: AnonAllSelected
+  var columnHeaderStyleCollection: AllSelected
   var defaultCellStyle: Cell
   var gridPaneStyle: GridPane
   var groupingStyles: js.Array[_]
   var readOnlyCellStyle: Cell
   var readOnlyFocusedCellStyle: Cell
-  var rowHeaderStyleCollection: AnonAllSelected
-  var splitterStyleCollection: AnonDra
+  var rowHeaderStyleCollection: AllSelected
+  var splitterStyleCollection: Dra
   var timescaleTierStyle: TimescaleTier
   var widgetDockHoverStyle: Widget
   var widgetDockPressedStyle: Widget
@@ -45,14 +45,14 @@ object IStyleManager {
     UpdateGroupStylesFromCss: (Cell, String) => Unit,
     UpdateHeaderStyleFromCss: (Header, js.Any) => Unit,
     UpdateSplitterStyleFromCss: (Splitter, js.Any) => Unit,
-    columnHeaderStyleCollection: AnonAllSelected,
+    columnHeaderStyleCollection: AllSelected,
     defaultCellStyle: Cell,
     gridPaneStyle: GridPane,
     groupingStyles: js.Array[_],
     readOnlyCellStyle: Cell,
     readOnlyFocusedCellStyle: Cell,
-    rowHeaderStyleCollection: AnonAllSelected,
-    splitterStyleCollection: AnonDra,
+    rowHeaderStyleCollection: AllSelected,
+    splitterStyleCollection: Dra,
     timescaleTierStyle: TimescaleTier,
     widgetDockHoverStyle: Widget,
     widgetDockPressedStyle: Widget,

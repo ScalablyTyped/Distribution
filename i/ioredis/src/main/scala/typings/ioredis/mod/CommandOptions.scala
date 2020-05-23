@@ -12,11 +12,15 @@ trait CommandOptions extends js.Object {
 
 object CommandOptions {
   @scala.inline
-  def apply(errorStack: String = null, keyPrefix: String = null, replyEncoding: String = null): CommandOptions = {
+  def apply(
+    errorStack: String = null,
+    keyPrefix: String = null,
+    replyEncoding: js.UndefOr[Null | String] = js.undefined
+  ): CommandOptions = {
     val __obj = js.Dynamic.literal()
     if (errorStack != null) __obj.updateDynamic("errorStack")(errorStack.asInstanceOf[js.Any])
     if (keyPrefix != null) __obj.updateDynamic("keyPrefix")(keyPrefix.asInstanceOf[js.Any])
-    if (replyEncoding != null) __obj.updateDynamic("replyEncoding")(replyEncoding.asInstanceOf[js.Any])
+    if (!js.isUndefined(replyEncoding)) __obj.updateDynamic("replyEncoding")(replyEncoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandOptions]
   }
 }

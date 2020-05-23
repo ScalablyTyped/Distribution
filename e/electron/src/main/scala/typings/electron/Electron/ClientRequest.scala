@@ -15,14 +15,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Electron.ClientRequest")
 @js.native
-class ClientRequest protected () extends EventEmitter {
-  def this(options: String) = this()
-  /**
-    * ClientRequest
-    */
-  def this(options: ClientRequestConstructorOptions) = this()
+trait ClientRequest extends EventEmitter {
   var chunkedEncoding: Boolean = js.native
   /**
     * Cancels an ongoing HTTP transaction. If the request has already emitted the

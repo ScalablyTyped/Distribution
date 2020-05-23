@@ -11,16 +11,16 @@ trait ExponentialOptions extends Options {
 object ExponentialOptions {
   @scala.inline
   def apply(
-    factor: Int | Double = null,
-    initialDelay: Int | Double = null,
-    maxDelay: Int | Double = null,
-    randomisationFactor: Int | Double = null
+    factor: js.UndefOr[Double] = js.undefined,
+    initialDelay: js.UndefOr[Double] = js.undefined,
+    maxDelay: js.UndefOr[Double] = js.undefined,
+    randomisationFactor: js.UndefOr[Double] = js.undefined
   ): ExponentialOptions = {
     val __obj = js.Dynamic.literal()
-    if (factor != null) __obj.updateDynamic("factor")(factor.asInstanceOf[js.Any])
-    if (initialDelay != null) __obj.updateDynamic("initialDelay")(initialDelay.asInstanceOf[js.Any])
-    if (maxDelay != null) __obj.updateDynamic("maxDelay")(maxDelay.asInstanceOf[js.Any])
-    if (randomisationFactor != null) __obj.updateDynamic("randomisationFactor")(randomisationFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(factor)) __obj.updateDynamic("factor")(factor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialDelay)) __obj.updateDynamic("initialDelay")(initialDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDelay)) __obj.updateDynamic("maxDelay")(maxDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(randomisationFactor)) __obj.updateDynamic("randomisationFactor")(randomisationFactor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExponentialOptions]
   }
 }

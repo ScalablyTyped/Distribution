@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.Barcode
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -58,44 +57,6 @@ object SymbologyType extends js.Object {
   //Represents the QR code
   @js.native
   sealed trait QRBarcode extends SymbologyType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SymbologyType with Double] = js.native
-  /* 5 */ @js.native
-  object Codabar extends TopLevel[Codabar with Double]
-  
-  /* 4 */ @js.native
-  object Code11 extends TopLevel[Code11 with Double]
-  
-  /* 9 */ @js.native
-  object Code128A extends TopLevel[Code128A with Double]
-  
-  /* 10 */ @js.native
-  object Code128B extends TopLevel[Code128B with Double]
-  
-  /* 11 */ @js.native
-  object Code128C extends TopLevel[Code128C with Double]
-  
-  /* 6 */ @js.native
-  object Code32 extends TopLevel[Code32 with Double]
-  
-  /* 2 */ @js.native
-  object Code39 extends TopLevel[Code39 with Double]
-  
-  /* 3 */ @js.native
-  object Code39Extended extends TopLevel[Code39Extended with Double]
-  
-  /* 7 */ @js.native
-  object Code93 extends TopLevel[Code93 with Double]
-  
-  /* 8 */ @js.native
-  object Code93Extended extends TopLevel[Code93Extended with Double]
-  
-  /* 1 */ @js.native
-  object DataMatrix extends TopLevel[DataMatrix with Double]
-  
-  /* 0 */ @js.native
-  object QRBarcode extends TopLevel[QRBarcode with Double]
   
 }
 

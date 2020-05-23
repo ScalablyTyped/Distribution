@@ -15,7 +15,7 @@ object StreamOptions {
   @scala.inline
   def apply(objectMode: js.UndefOr[Boolean] = js.undefined): StreamOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamOptions]
   }
 }

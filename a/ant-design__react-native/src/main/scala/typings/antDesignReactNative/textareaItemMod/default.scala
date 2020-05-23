@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.textareaItemMod
 
-import typings.antDesignReactNative.AnonAutoHeight
+import typings.antDesignReactNative.anon.AutoHeight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class default protected () extends TextAreaItem {
 @JSImport("@ant-design/react-native/lib/textarea-item", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonAutoHeight = js.native
+  var defaultProps: AutoHeight = js.native
 }
 

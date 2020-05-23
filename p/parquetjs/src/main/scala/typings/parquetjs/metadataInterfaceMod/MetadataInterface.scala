@@ -1,14 +1,14 @@
 package typings.parquetjs.metadataInterfaceMod
 
 import typings.nodeInt64.mod.^
-import typings.parquetjs.AnonKey
+import typings.parquetjs.anon.Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MetadataInterface extends js.Object {
   var created_by: String
-  var key_value_metadata: js.Array[AnonKey]
+  var key_value_metadata: js.Array[Key]
   var num_rows: ^
   var row_groups: js.Array[MetadataRowGroupsInterface]
   var schema: js.Array[MetadataSchemaInterface]
@@ -19,7 +19,7 @@ object MetadataInterface {
   @scala.inline
   def apply(
     created_by: String,
-    key_value_metadata: js.Array[AnonKey],
+    key_value_metadata: js.Array[Key],
     num_rows: ^,
     row_groups: js.Array[MetadataRowGroupsInterface],
     schema: js.Array[MetadataSchemaInterface],

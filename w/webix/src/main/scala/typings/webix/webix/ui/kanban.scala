@@ -8,9 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.kanban")
 @js.native
-class kanban () extends baseview {
+trait kanban extends baseview {
   @JSName("config")
   var config_kanban: kanbanConfig = js.native
   var data: DataStore = js.native

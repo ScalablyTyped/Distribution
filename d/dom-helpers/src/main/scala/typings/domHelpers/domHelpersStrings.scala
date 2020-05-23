@@ -1746,6 +1746,7 @@ object domHelpersStrings {
   sealed trait all
     extends CamelProperty
        with HyphenProperty
+       with Styles
   
   @js.native
   sealed trait animation
@@ -2824,9 +2825,6 @@ object domHelpersStrings {
        with Styles
   
   @js.native
-  sealed trait enableBackground extends Styles
-  
-  @js.native
   sealed trait ended extends js.Object
   
   @js.native
@@ -3111,9 +3109,6 @@ object domHelpersStrings {
   sealed trait `glyph-orientation-vertical` extends HyphenProperty
   
   @js.native
-  sealed trait glyphOrientationHorizontal extends Styles
-  
-  @js.native
   sealed trait glyphOrientationVertical
     extends CamelProperty
        with Styles
@@ -3307,9 +3302,7 @@ object domHelpersStrings {
   sealed trait `ime-mode` extends HyphenProperty
   
   @js.native
-  sealed trait imeMode
-    extends CamelProperty
-       with Styles
+  sealed trait imeMode extends CamelProperty
   
   @js.native
   sealed trait `initial-letter` extends HyphenProperty
@@ -3402,9 +3395,6 @@ object domHelpersStrings {
        with Styles
   
   @js.native
-  sealed trait kerning extends Styles
-  
-  @js.native
   sealed trait keydown extends js.Object
   
   @js.native
@@ -3412,21 +3402,6 @@ object domHelpersStrings {
   
   @js.native
   sealed trait keyup extends js.Object
-  
-  @js.native
-  sealed trait layoutGrid extends Styles
-  
-  @js.native
-  sealed trait layoutGridChar extends Styles
-  
-  @js.native
-  sealed trait layoutGridLine extends Styles
-  
-  @js.native
-  sealed trait layoutGridMode extends Styles
-  
-  @js.native
-  sealed trait layoutGridType extends Styles
   
   @js.native
   sealed trait left
@@ -3890,44 +3865,28 @@ object domHelpersStrings {
   sealed trait msBlockProgression extends CamelProperty
   
   @js.native
-  sealed trait msContentZoomChaining
-    extends CamelProperty
-       with Styles
+  sealed trait msContentZoomChaining extends CamelProperty
   
   @js.native
-  sealed trait msContentZoomLimit
-    extends CamelProperty
-       with Styles
+  sealed trait msContentZoomLimit extends CamelProperty
   
   @js.native
-  sealed trait msContentZoomLimitMax
-    extends CamelProperty
-       with Styles
+  sealed trait msContentZoomLimitMax extends CamelProperty
   
   @js.native
-  sealed trait msContentZoomLimitMin
-    extends CamelProperty
-       with Styles
+  sealed trait msContentZoomLimitMin extends CamelProperty
   
   @js.native
-  sealed trait msContentZoomSnap
-    extends CamelProperty
-       with Styles
+  sealed trait msContentZoomSnap extends CamelProperty
   
   @js.native
-  sealed trait msContentZoomSnapPoints
-    extends CamelProperty
-       with Styles
+  sealed trait msContentZoomSnapPoints extends CamelProperty
   
   @js.native
-  sealed trait msContentZoomSnapType
-    extends CamelProperty
-       with Styles
+  sealed trait msContentZoomSnapType extends CamelProperty
   
   @js.native
-  sealed trait msContentZooming
-    extends CamelProperty
-       with Styles
+  sealed trait msContentZooming extends CamelProperty
   
   @js.native
   sealed trait msFilter extends CamelProperty
@@ -3942,75 +3901,34 @@ object domHelpersStrings {
   sealed trait msFlexPositive extends CamelProperty
   
   @js.native
-  sealed trait msFlowFrom
-    extends CamelProperty
-       with Styles
+  sealed trait msFlowFrom extends CamelProperty
   
   @js.native
-  sealed trait msFlowInto
-    extends CamelProperty
-       with Styles
+  sealed trait msFlowInto extends CamelProperty
   
   @js.native
-  sealed trait msFontFeatureSettings extends Styles
+  sealed trait msGridColumns extends CamelProperty
   
   @js.native
-  sealed trait msGridColumn extends Styles
+  sealed trait msGridRows extends CamelProperty
   
   @js.native
-  sealed trait msGridColumnAlign extends Styles
+  sealed trait msHighContrastAdjust extends CamelProperty
   
   @js.native
-  sealed trait msGridColumnSpan extends Styles
+  sealed trait msHyphenateLimitChars extends CamelProperty
   
   @js.native
-  sealed trait msGridColumns
-    extends CamelProperty
-       with Styles
+  sealed trait msHyphenateLimitLines extends CamelProperty
   
   @js.native
-  sealed trait msGridRow extends Styles
+  sealed trait msHyphenateLimitZone extends CamelProperty
   
   @js.native
-  sealed trait msGridRowAlign extends Styles
+  sealed trait msHyphens extends CamelProperty
   
   @js.native
-  sealed trait msGridRowSpan extends Styles
-  
-  @js.native
-  sealed trait msGridRows
-    extends CamelProperty
-       with Styles
-  
-  @js.native
-  sealed trait msHighContrastAdjust
-    extends CamelProperty
-       with Styles
-  
-  @js.native
-  sealed trait msHyphenateLimitChars
-    extends CamelProperty
-       with Styles
-  
-  @js.native
-  sealed trait msHyphenateLimitLines
-    extends CamelProperty
-       with Styles
-  
-  @js.native
-  sealed trait msHyphenateLimitZone
-    extends CamelProperty
-       with Styles
-  
-  @js.native
-  sealed trait msHyphens
-    extends CamelProperty
-       with Styles
-  
-  @js.native
-  sealed trait msImeAlign
-    extends CamelProperty
-       with Styles
+  sealed trait msImeAlign extends CamelProperty
   
   @js.native
   sealed trait msImeMode extends CamelProperty
@@ -4022,9 +3940,7 @@ object domHelpersStrings {
   sealed trait msOrder extends CamelProperty
   
   @js.native
-  sealed trait msOverflowStyle
-    extends CamelProperty
-       with Styles
+  sealed trait msOverflowStyle extends CamelProperty
   
   @js.native
   sealed trait msOverflowX extends CamelProperty
@@ -4033,69 +3949,43 @@ object domHelpersStrings {
   sealed trait msOverflowY extends CamelProperty
   
   @js.native
-  sealed trait msScrollChaining
-    extends CamelProperty
-       with Styles
+  sealed trait msScrollChaining extends CamelProperty
   
   @js.native
-  sealed trait msScrollLimit
-    extends CamelProperty
-       with Styles
+  sealed trait msScrollLimit extends CamelProperty
   
   @js.native
-  sealed trait msScrollLimitXMax
-    extends CamelProperty
-       with Styles
+  sealed trait msScrollLimitXMax extends CamelProperty
   
   @js.native
-  sealed trait msScrollLimitXMin
-    extends CamelProperty
-       with Styles
+  sealed trait msScrollLimitXMin extends CamelProperty
   
   @js.native
-  sealed trait msScrollLimitYMax
-    extends CamelProperty
-       with Styles
+  sealed trait msScrollLimitYMax extends CamelProperty
   
   @js.native
-  sealed trait msScrollLimitYMin
-    extends CamelProperty
-       with Styles
+  sealed trait msScrollLimitYMin extends CamelProperty
   
   @js.native
-  sealed trait msScrollRails
-    extends CamelProperty
-       with Styles
+  sealed trait msScrollRails extends CamelProperty
   
   @js.native
-  sealed trait msScrollSnapPointsX
-    extends CamelProperty
-       with Styles
+  sealed trait msScrollSnapPointsX extends CamelProperty
   
   @js.native
-  sealed trait msScrollSnapPointsY
-    extends CamelProperty
-       with Styles
+  sealed trait msScrollSnapPointsY extends CamelProperty
   
   @js.native
-  sealed trait msScrollSnapType
-    extends CamelProperty
-       with Styles
+  sealed trait msScrollSnapType extends CamelProperty
   
   @js.native
-  sealed trait msScrollSnapX
-    extends CamelProperty
-       with Styles
+  sealed trait msScrollSnapX extends CamelProperty
   
   @js.native
-  sealed trait msScrollSnapY
-    extends CamelProperty
-       with Styles
+  sealed trait msScrollSnapY extends CamelProperty
   
   @js.native
-  sealed trait msScrollTranslation
-    extends CamelProperty
-       with Styles
+  sealed trait msScrollTranslation extends CamelProperty
   
   @js.native
   sealed trait msScrollbar3dlightColor extends CamelProperty
@@ -4125,25 +4015,16 @@ object domHelpersStrings {
   sealed trait msTextAutospace extends CamelProperty
   
   @js.native
-  sealed trait msTextCombineHorizontal
-    extends CamelProperty
-       with Styles
+  sealed trait msTextCombineHorizontal extends CamelProperty
   
   @js.native
   sealed trait msTextOverflow extends CamelProperty
   
   @js.native
-  sealed trait msTextSizeAdjust extends Styles
+  sealed trait msTouchAction extends CamelProperty
   
   @js.native
-  sealed trait msTouchAction
-    extends CamelProperty
-       with Styles
-  
-  @js.native
-  sealed trait msTouchSelect
-    extends CamelProperty
-       with Styles
+  sealed trait msTouchSelect extends CamelProperty
   
   @js.native
   sealed trait msTransform extends CamelProperty
@@ -4167,27 +4048,19 @@ object domHelpersStrings {
   sealed trait msTransitionTimingFunction extends CamelProperty
   
   @js.native
-  sealed trait msUserSelect
-    extends CamelProperty
-       with Styles
+  sealed trait msUserSelect extends CamelProperty
   
   @js.native
   sealed trait msWordBreak extends CamelProperty
   
   @js.native
-  sealed trait msWrapFlow
-    extends CamelProperty
-       with Styles
+  sealed trait msWrapFlow extends CamelProperty
   
   @js.native
-  sealed trait msWrapMargin
-    extends CamelProperty
-       with Styles
+  sealed trait msWrapMargin extends CamelProperty
   
   @js.native
-  sealed trait msWrapThrough
-    extends CamelProperty
-       with Styles
+  sealed trait msWrapThrough extends CamelProperty
   
   @js.native
   sealed trait msWritingMode extends CamelProperty
@@ -4551,9 +4424,6 @@ object domHelpersStrings {
   sealed trait pause extends js.Object
   
   @js.native
-  sealed trait penAction extends Styles
-  
-  @js.native
   sealed trait perspective
     extends CamelProperty
        with HyphenProperty
@@ -4706,9 +4576,6 @@ object domHelpersStrings {
   
   @js.native
   sealed trait rubyMerge extends CamelProperty
-  
-  @js.native
-  sealed trait rubyOverhang extends Styles
   
   @js.native
   sealed trait rubyPosition
@@ -5272,12 +5139,6 @@ object domHelpersStrings {
        with Styles
   
   @js.native
-  sealed trait textKashida extends Styles
-  
-  @js.native
-  sealed trait textKashidaSpace extends Styles
-  
-  @js.native
   sealed trait textOrientation
     extends CamelProperty
        with Styles
@@ -5544,9 +5405,6 @@ object domHelpersStrings {
   sealed trait webkitBorderBottomRightRadius_ extends Styles
   
   @js.native
-  sealed trait webkitBorderImage_ extends Styles
-  
-  @js.native
   sealed trait webkitBorderRadius_ extends Styles
   
   @js.native
@@ -5557,9 +5415,6 @@ object domHelpersStrings {
   
   @js.native
   sealed trait webkitBoxAlign_ extends Styles
-  
-  @js.native
-  sealed trait webkitBoxDirection_ extends Styles
   
   @js.native
   sealed trait webkitBoxFlex_ extends Styles
@@ -5578,42 +5433,6 @@ object domHelpersStrings {
   
   @js.native
   sealed trait webkitBoxSizing_ extends Styles
-  
-  @js.native
-  sealed trait webkitColumnBreakAfter extends Styles
-  
-  @js.native
-  sealed trait webkitColumnBreakBefore extends Styles
-  
-  @js.native
-  sealed trait webkitColumnBreakInside extends Styles
-  
-  @js.native
-  sealed trait webkitColumnCount_ extends Styles
-  
-  @js.native
-  sealed trait webkitColumnGap_ extends Styles
-  
-  @js.native
-  sealed trait webkitColumnRuleColor_ extends Styles
-  
-  @js.native
-  sealed trait webkitColumnRuleStyle_ extends Styles
-  
-  @js.native
-  sealed trait webkitColumnRuleWidth_ extends Styles
-  
-  @js.native
-  sealed trait webkitColumnRule_ extends Styles
-  
-  @js.native
-  sealed trait webkitColumnSpan_ extends Styles
-  
-  @js.native
-  sealed trait webkitColumnWidth_ extends Styles
-  
-  @js.native
-  sealed trait webkitColumns_ extends Styles
   
   @js.native
   sealed trait webkitFilter_ extends Styles
@@ -5739,13 +5558,7 @@ object domHelpersStrings {
   sealed trait webkitTransition_ extends Styles
   
   @js.native
-  sealed trait webkitUserModify_ extends Styles
-  
-  @js.native
   sealed trait webkitUserSelect_ extends Styles
-  
-  @js.native
-  sealed trait webkitWritingMode_ extends Styles
   
   @js.native
   sealed trait wheel extends js.Object
@@ -7545,8 +7358,6 @@ object domHelpersStrings {
   @scala.inline
   def emptyCells: emptyCells = "emptyCells".asInstanceOf[emptyCells]
   @scala.inline
-  def enableBackground: enableBackground = "enableBackground".asInstanceOf[enableBackground]
-  @scala.inline
   def ended: ended = "ended".asInstanceOf[ended]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
@@ -7690,8 +7501,6 @@ object domHelpersStrings {
   def gap: gap = "gap".asInstanceOf[gap]
   @scala.inline
   def `glyph-orientation-vertical`: `glyph-orientation-vertical` = "glyph-orientation-vertical".asInstanceOf[`glyph-orientation-vertical`]
-  @scala.inline
-  def glyphOrientationHorizontal: glyphOrientationHorizontal = "glyphOrientationHorizontal".asInstanceOf[glyphOrientationHorizontal]
   @scala.inline
   def glyphOrientationVertical: glyphOrientationVertical = "glyphOrientationVertical".asInstanceOf[glyphOrientationVertical]
   @scala.inline
@@ -7843,23 +7652,11 @@ object domHelpersStrings {
   @scala.inline
   def justifySelf: justifySelf = "justifySelf".asInstanceOf[justifySelf]
   @scala.inline
-  def kerning: kerning = "kerning".asInstanceOf[kerning]
-  @scala.inline
   def keydown: keydown = "keydown".asInstanceOf[keydown]
   @scala.inline
   def keypress: keypress = "keypress".asInstanceOf[keypress]
   @scala.inline
   def keyup: keyup = "keyup".asInstanceOf[keyup]
-  @scala.inline
-  def layoutGrid: layoutGrid = "layoutGrid".asInstanceOf[layoutGrid]
-  @scala.inline
-  def layoutGridChar: layoutGridChar = "layoutGridChar".asInstanceOf[layoutGridChar]
-  @scala.inline
-  def layoutGridLine: layoutGridLine = "layoutGridLine".asInstanceOf[layoutGridLine]
-  @scala.inline
-  def layoutGridMode: layoutGridMode = "layoutGridMode".asInstanceOf[layoutGridMode]
-  @scala.inline
-  def layoutGridType: layoutGridType = "layoutGridType".asInstanceOf[layoutGridType]
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
@@ -8143,21 +7940,7 @@ object domHelpersStrings {
   @scala.inline
   def msFlowInto: msFlowInto = "msFlowInto".asInstanceOf[msFlowInto]
   @scala.inline
-  def msFontFeatureSettings: msFontFeatureSettings = "msFontFeatureSettings".asInstanceOf[msFontFeatureSettings]
-  @scala.inline
-  def msGridColumn: msGridColumn = "msGridColumn".asInstanceOf[msGridColumn]
-  @scala.inline
-  def msGridColumnAlign: msGridColumnAlign = "msGridColumnAlign".asInstanceOf[msGridColumnAlign]
-  @scala.inline
-  def msGridColumnSpan: msGridColumnSpan = "msGridColumnSpan".asInstanceOf[msGridColumnSpan]
-  @scala.inline
   def msGridColumns: msGridColumns = "msGridColumns".asInstanceOf[msGridColumns]
-  @scala.inline
-  def msGridRow: msGridRow = "msGridRow".asInstanceOf[msGridRow]
-  @scala.inline
-  def msGridRowAlign: msGridRowAlign = "msGridRowAlign".asInstanceOf[msGridRowAlign]
-  @scala.inline
-  def msGridRowSpan: msGridRowSpan = "msGridRowSpan".asInstanceOf[msGridRowSpan]
   @scala.inline
   def msGridRows: msGridRows = "msGridRows".asInstanceOf[msGridRows]
   @scala.inline
@@ -8232,8 +8015,6 @@ object domHelpersStrings {
   def msTextCombineHorizontal: msTextCombineHorizontal = "msTextCombineHorizontal".asInstanceOf[msTextCombineHorizontal]
   @scala.inline
   def msTextOverflow: msTextOverflow = "msTextOverflow".asInstanceOf[msTextOverflow]
-  @scala.inline
-  def msTextSizeAdjust: msTextSizeAdjust = "msTextSizeAdjust".asInstanceOf[msTextSizeAdjust]
   @scala.inline
   def msTouchAction: msTouchAction = "msTouchAction".asInstanceOf[msTouchAction]
   @scala.inline
@@ -8461,8 +8242,6 @@ object domHelpersStrings {
   @scala.inline
   def pause: pause = "pause".asInstanceOf[pause]
   @scala.inline
-  def penAction: penAction = "penAction".asInstanceOf[penAction]
-  @scala.inline
   def perspective: perspective = "perspective".asInstanceOf[perspective]
   @scala.inline
   def `perspective-origin`: `perspective-origin` = "perspective-origin".asInstanceOf[`perspective-origin`]
@@ -8542,8 +8321,6 @@ object domHelpersStrings {
   def rubyAlign: rubyAlign = "rubyAlign".asInstanceOf[rubyAlign]
   @scala.inline
   def rubyMerge: rubyMerge = "rubyMerge".asInstanceOf[rubyMerge]
-  @scala.inline
-  def rubyOverhang: rubyOverhang = "rubyOverhang".asInstanceOf[rubyOverhang]
   @scala.inline
   def rubyPosition: rubyPosition = "rubyPosition".asInstanceOf[rubyPosition]
   @scala.inline
@@ -8877,10 +8654,6 @@ object domHelpersStrings {
   @scala.inline
   def textJustify: textJustify = "textJustify".asInstanceOf[textJustify]
   @scala.inline
-  def textKashida: textKashida = "textKashida".asInstanceOf[textKashida]
-  @scala.inline
-  def textKashidaSpace: textKashidaSpace = "textKashidaSpace".asInstanceOf[textKashidaSpace]
-  @scala.inline
   def textOrientation: textOrientation = "textOrientation".asInstanceOf[textOrientation]
   @scala.inline
   def textOverflow: textOverflow = "textOverflow".asInstanceOf[textOverflow]
@@ -9025,8 +8798,6 @@ object domHelpersStrings {
   @scala.inline
   def webkitBorderBottomRightRadius_ : webkitBorderBottomRightRadius_ = "webkitBorderBottomRightRadius".asInstanceOf[webkitBorderBottomRightRadius_]
   @scala.inline
-  def webkitBorderImage_ : webkitBorderImage_ = "webkitBorderImage".asInstanceOf[webkitBorderImage_]
-  @scala.inline
   def webkitBorderRadius_ : webkitBorderRadius_ = "webkitBorderRadius".asInstanceOf[webkitBorderRadius_]
   @scala.inline
   def webkitBorderTopLeftRadius_ : webkitBorderTopLeftRadius_ = "webkitBorderTopLeftRadius".asInstanceOf[webkitBorderTopLeftRadius_]
@@ -9034,8 +8805,6 @@ object domHelpersStrings {
   def webkitBorderTopRightRadius_ : webkitBorderTopRightRadius_ = "webkitBorderTopRightRadius".asInstanceOf[webkitBorderTopRightRadius_]
   @scala.inline
   def webkitBoxAlign_ : webkitBoxAlign_ = "webkitBoxAlign".asInstanceOf[webkitBoxAlign_]
-  @scala.inline
-  def webkitBoxDirection_ : webkitBoxDirection_ = "webkitBoxDirection".asInstanceOf[webkitBoxDirection_]
   @scala.inline
   def webkitBoxFlex_ : webkitBoxFlex_ = "webkitBoxFlex".asInstanceOf[webkitBoxFlex_]
   @scala.inline
@@ -9048,30 +8817,6 @@ object domHelpersStrings {
   def webkitBoxShadow_ : webkitBoxShadow_ = "webkitBoxShadow".asInstanceOf[webkitBoxShadow_]
   @scala.inline
   def webkitBoxSizing_ : webkitBoxSizing_ = "webkitBoxSizing".asInstanceOf[webkitBoxSizing_]
-  @scala.inline
-  def webkitColumnBreakAfter: webkitColumnBreakAfter = "webkitColumnBreakAfter".asInstanceOf[webkitColumnBreakAfter]
-  @scala.inline
-  def webkitColumnBreakBefore: webkitColumnBreakBefore = "webkitColumnBreakBefore".asInstanceOf[webkitColumnBreakBefore]
-  @scala.inline
-  def webkitColumnBreakInside: webkitColumnBreakInside = "webkitColumnBreakInside".asInstanceOf[webkitColumnBreakInside]
-  @scala.inline
-  def webkitColumnCount_ : webkitColumnCount_ = "webkitColumnCount".asInstanceOf[webkitColumnCount_]
-  @scala.inline
-  def webkitColumnGap_ : webkitColumnGap_ = "webkitColumnGap".asInstanceOf[webkitColumnGap_]
-  @scala.inline
-  def webkitColumnRuleColor_ : webkitColumnRuleColor_ = "webkitColumnRuleColor".asInstanceOf[webkitColumnRuleColor_]
-  @scala.inline
-  def webkitColumnRuleStyle_ : webkitColumnRuleStyle_ = "webkitColumnRuleStyle".asInstanceOf[webkitColumnRuleStyle_]
-  @scala.inline
-  def webkitColumnRuleWidth_ : webkitColumnRuleWidth_ = "webkitColumnRuleWidth".asInstanceOf[webkitColumnRuleWidth_]
-  @scala.inline
-  def webkitColumnRule_ : webkitColumnRule_ = "webkitColumnRule".asInstanceOf[webkitColumnRule_]
-  @scala.inline
-  def webkitColumnSpan_ : webkitColumnSpan_ = "webkitColumnSpan".asInstanceOf[webkitColumnSpan_]
-  @scala.inline
-  def webkitColumnWidth_ : webkitColumnWidth_ = "webkitColumnWidth".asInstanceOf[webkitColumnWidth_]
-  @scala.inline
-  def webkitColumns_ : webkitColumns_ = "webkitColumns".asInstanceOf[webkitColumns_]
   @scala.inline
   def webkitFilter_ : webkitFilter_ = "webkitFilter".asInstanceOf[webkitFilter_]
   @scala.inline
@@ -9155,11 +8900,7 @@ object domHelpersStrings {
   @scala.inline
   def webkitTransition_ : webkitTransition_ = "webkitTransition".asInstanceOf[webkitTransition_]
   @scala.inline
-  def webkitUserModify_ : webkitUserModify_ = "webkitUserModify".asInstanceOf[webkitUserModify_]
-  @scala.inline
   def webkitUserSelect_ : webkitUserSelect_ = "webkitUserSelect".asInstanceOf[webkitUserSelect_]
-  @scala.inline
-  def webkitWritingMode_ : webkitWritingMode_ = "webkitWritingMode".asInstanceOf[webkitWritingMode_]
   @scala.inline
   def wheel: wheel = "wheel".asInstanceOf[wheel]
   @scala.inline

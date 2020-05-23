@@ -1,6 +1,6 @@
 package typings.makeDir.mod
 
-import typings.makeDir.Typeoffs
+import typings.makeDir.anon.Typeoffs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,17 +14,17 @@ trait Options extends js.Object {
   val fs: js.UndefOr[Typeoffs] = js.undefined
   /**
   		Directory [permissions](https://x-team.com/blog/file-system-permissions-umask-node-js/).
-  		@default 0o777 & (~process.umask())
+  		@default 0o777
   		*/
   val mode: js.UndefOr[Double] = js.undefined
 }
 
 object Options {
   @scala.inline
-  def apply(fs: Typeoffs = null, mode: Int | Double = null): Options = {
+  def apply(fs: Typeoffs = null, mode: js.UndefOr[Double] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
     if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(mode)) __obj.updateDynamic("mode")(mode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

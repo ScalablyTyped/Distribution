@@ -35,20 +35,20 @@ trait AutoscalingPolicy extends js.Object {
 object AutoscalingPolicy {
   @scala.inline
   def apply(
-    coolDownPeriodSec: Int | Double = null,
+    coolDownPeriodSec: js.UndefOr[Double] = js.undefined,
     cpuUtilization: AutoscalingPolicyCpuUtilization = null,
     customMetricUtilizations: js.Array[AutoscalingPolicyCustomMetricUtilization] = null,
     loadBalancingUtilization: AutoscalingPolicyLoadBalancingUtilization = null,
-    maxNumReplicas: Int | Double = null,
-    minNumReplicas: Int | Double = null
+    maxNumReplicas: js.UndefOr[Double] = js.undefined,
+    minNumReplicas: js.UndefOr[Double] = js.undefined
   ): AutoscalingPolicy = {
     val __obj = js.Dynamic.literal()
-    if (coolDownPeriodSec != null) __obj.updateDynamic("coolDownPeriodSec")(coolDownPeriodSec.asInstanceOf[js.Any])
+    if (!js.isUndefined(coolDownPeriodSec)) __obj.updateDynamic("coolDownPeriodSec")(coolDownPeriodSec.get.asInstanceOf[js.Any])
     if (cpuUtilization != null) __obj.updateDynamic("cpuUtilization")(cpuUtilization.asInstanceOf[js.Any])
     if (customMetricUtilizations != null) __obj.updateDynamic("customMetricUtilizations")(customMetricUtilizations.asInstanceOf[js.Any])
     if (loadBalancingUtilization != null) __obj.updateDynamic("loadBalancingUtilization")(loadBalancingUtilization.asInstanceOf[js.Any])
-    if (maxNumReplicas != null) __obj.updateDynamic("maxNumReplicas")(maxNumReplicas.asInstanceOf[js.Any])
-    if (minNumReplicas != null) __obj.updateDynamic("minNumReplicas")(minNumReplicas.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxNumReplicas)) __obj.updateDynamic("maxNumReplicas")(maxNumReplicas.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minNumReplicas)) __obj.updateDynamic("minNumReplicas")(minNumReplicas.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoscalingPolicy]
   }
 }

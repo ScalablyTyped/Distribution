@@ -20,10 +20,10 @@ object DeleteLocalGatewayRouteTableVpcAssociationRequest {
   @scala.inline
   def apply(
     LocalGatewayRouteTableVpcAssociationId: LocalGatewayRouteTableVpcAssociationId,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined
   ): DeleteLocalGatewayRouteTableVpcAssociationRequest = {
     val __obj = js.Dynamic.literal(LocalGatewayRouteTableVpcAssociationId = LocalGatewayRouteTableVpcAssociationId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLocalGatewayRouteTableVpcAssociationRequest]
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rsmq" : "0.12.0"
+      "rsmq" : "0.12.2"
     }
   ],
   "test-dependencies" : [
     {
-      "rsmq" : "0.12.0"
+      "rsmq" : "0.12.2"
     }
   ],
   "compile-devDependencies" : [

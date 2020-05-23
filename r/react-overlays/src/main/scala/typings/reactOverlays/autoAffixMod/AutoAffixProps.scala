@@ -28,8 +28,8 @@ object AutoAffixProps {
     bottomClassName: String = null,
     bottomStyle: CSSProperties = null,
     container: ReactInstance | js.Function0[ReactInstance] = null,
-    offsetBottom: Int | Double = null,
-    offsetTop: Int | Double = null,
+    offsetBottom: js.UndefOr[Double] = js.undefined,
+    offsetTop: js.UndefOr[Double] = js.undefined,
     onAffix: () => Unit = null,
     onAffixBottom: () => Unit = null,
     onAffixTop: () => Unit = null,
@@ -38,17 +38,17 @@ object AutoAffixProps {
     onAffixedTop: () => Unit = null,
     topClassName: String = null,
     topStyle: CSSProperties = null,
-    viewportOffsetTop: Int | Double = null
+    viewportOffsetTop: js.UndefOr[Double] = js.undefined
   ): AutoAffixProps = {
     val __obj = js.Dynamic.literal()
     if (affixClassName != null) __obj.updateDynamic("affixClassName")(affixClassName.asInstanceOf[js.Any])
     if (affixStyle != null) __obj.updateDynamic("affixStyle")(affixStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth.get.asInstanceOf[js.Any])
     if (bottomClassName != null) __obj.updateDynamic("bottomClassName")(bottomClassName.asInstanceOf[js.Any])
     if (bottomStyle != null) __obj.updateDynamic("bottomStyle")(bottomStyle.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (offsetBottom != null) __obj.updateDynamic("offsetBottom")(offsetBottom.asInstanceOf[js.Any])
-    if (offsetTop != null) __obj.updateDynamic("offsetTop")(offsetTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetBottom)) __obj.updateDynamic("offsetBottom")(offsetBottom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetTop)) __obj.updateDynamic("offsetTop")(offsetTop.get.asInstanceOf[js.Any])
     if (onAffix != null) __obj.updateDynamic("onAffix")(js.Any.fromFunction0(onAffix))
     if (onAffixBottom != null) __obj.updateDynamic("onAffixBottom")(js.Any.fromFunction0(onAffixBottom))
     if (onAffixTop != null) __obj.updateDynamic("onAffixTop")(js.Any.fromFunction0(onAffixTop))
@@ -57,7 +57,7 @@ object AutoAffixProps {
     if (onAffixedTop != null) __obj.updateDynamic("onAffixedTop")(js.Any.fromFunction0(onAffixedTop))
     if (topClassName != null) __obj.updateDynamic("topClassName")(topClassName.asInstanceOf[js.Any])
     if (topStyle != null) __obj.updateDynamic("topStyle")(topStyle.asInstanceOf[js.Any])
-    if (viewportOffsetTop != null) __obj.updateDynamic("viewportOffsetTop")(viewportOffsetTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewportOffsetTop)) __obj.updateDynamic("viewportOffsetTop")(viewportOffsetTop.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoAffixProps]
   }
 }

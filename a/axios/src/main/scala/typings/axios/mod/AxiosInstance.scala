@@ -1,6 +1,6 @@
 package typings.axios.mod
 
-import typings.axios.AnonRequest
+import typings.axios.anon.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AxiosInstance extends js.Object {
   var defaults: AxiosRequestConfig = js.native
-  var interceptors: AnonRequest = js.native
+  var interceptors: Request = js.native
   def apply(config: AxiosRequestConfig): AxiosPromise[_] = js.native
   def apply(url: String): AxiosPromise[_] = js.native
   def apply(url: String, config: AxiosRequestConfig): AxiosPromise[_] = js.native

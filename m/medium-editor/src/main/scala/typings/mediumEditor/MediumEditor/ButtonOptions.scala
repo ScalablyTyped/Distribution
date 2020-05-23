@@ -1,7 +1,7 @@
 package typings.mediumEditor.MediumEditor
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.mediumEditor.AnonProp
+import typings.mediumEditor.anon.Prop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait ButtonOptions extends js.Object {
   var contentDefault: js.UndefOr[String] = js.undefined
   var contentFA: js.UndefOr[String] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var style: js.UndefOr[AnonProp] = js.undefined
+  var style: js.UndefOr[Prop] = js.undefined
   var tagNames: js.UndefOr[js.Array[String]] = js.undefined
   var useQueryState: js.UndefOr[Boolean] = js.undefined
 }
@@ -29,7 +29,7 @@ object ButtonOptions {
     contentDefault: String = null,
     contentFA: String = null,
     name: String = null,
-    style: AnonProp = null,
+    style: Prop = null,
     tagNames: js.Array[String] = null,
     useQueryState: js.UndefOr[Boolean] = js.undefined
   ): ButtonOptions = {
@@ -43,7 +43,7 @@ object ButtonOptions {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (tagNames != null) __obj.updateDynamic("tagNames")(tagNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(useQueryState)) __obj.updateDynamic("useQueryState")(useQueryState.asInstanceOf[js.Any])
+    if (!js.isUndefined(useQueryState)) __obj.updateDynamic("useQueryState")(useQueryState.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonOptions]
   }
 }

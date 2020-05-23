@@ -1,32 +1,32 @@
 package typings.bootstrapFileinput.BootstrapFileInput
 
-import typings.bootstrapFileinput.AnonHeight
+import typings.bootstrapFileinput.anon.Height
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PreviewSettings extends js.Object {
-  var audio: js.UndefOr[AnonHeight] = js.undefined
-  var flash: js.UndefOr[AnonHeight] = js.undefined
-  var html: js.UndefOr[AnonHeight] = js.undefined
-  var image: js.UndefOr[AnonHeight] = js.undefined
-  var `object`: js.UndefOr[AnonHeight] = js.undefined
-  var other: js.UndefOr[AnonHeight] = js.undefined
-  var text: js.UndefOr[AnonHeight] = js.undefined
-  var video: js.UndefOr[AnonHeight] = js.undefined
+  var audio: js.UndefOr[Height] = js.undefined
+  var flash: js.UndefOr[Height] = js.undefined
+  var html: js.UndefOr[Height] = js.undefined
+  var image: js.UndefOr[Height] = js.undefined
+  var `object`: js.UndefOr[Height] = js.undefined
+  var other: js.UndefOr[Height] = js.undefined
+  var text: js.UndefOr[Height] = js.undefined
+  var video: js.UndefOr[Height] = js.undefined
 }
 
 object PreviewSettings {
   @scala.inline
   def apply(
-    audio: AnonHeight = null,
-    flash: AnonHeight = null,
-    html: AnonHeight = null,
-    image: AnonHeight = null,
-    `object`: AnonHeight = null,
-    other: AnonHeight = null,
-    text: AnonHeight = null,
-    video: AnonHeight = null
+    audio: Height = null,
+    flash: Height = null,
+    html: Height = null,
+    image: Height = null,
+    `object`: Height = null,
+    other: Height = null,
+    text: Height = null,
+    video: Height = null
   ): PreviewSettings = {
     val __obj = js.Dynamic.literal()
     if (audio != null) __obj.updateDynamic("audio")(audio.asInstanceOf[js.Any])

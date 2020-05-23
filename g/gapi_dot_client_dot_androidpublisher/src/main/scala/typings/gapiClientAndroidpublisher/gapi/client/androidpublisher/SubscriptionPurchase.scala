@@ -48,27 +48,27 @@ object SubscriptionPurchase {
   @scala.inline
   def apply(
     autoRenewing: js.UndefOr[Boolean] = js.undefined,
-    cancelReason: Int | Double = null,
+    cancelReason: js.UndefOr[Double] = js.undefined,
     countryCode: String = null,
     developerPayload: String = null,
     expiryTimeMillis: String = null,
     kind: String = null,
     orderId: String = null,
-    paymentState: Int | Double = null,
+    paymentState: js.UndefOr[Double] = js.undefined,
     priceAmountMicros: String = null,
     priceCurrencyCode: String = null,
     startTimeMillis: String = null,
     userCancellationTimeMillis: String = null
   ): SubscriptionPurchase = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoRenewing)) __obj.updateDynamic("autoRenewing")(autoRenewing.asInstanceOf[js.Any])
-    if (cancelReason != null) __obj.updateDynamic("cancelReason")(cancelReason.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoRenewing)) __obj.updateDynamic("autoRenewing")(autoRenewing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelReason)) __obj.updateDynamic("cancelReason")(cancelReason.get.asInstanceOf[js.Any])
     if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode.asInstanceOf[js.Any])
     if (developerPayload != null) __obj.updateDynamic("developerPayload")(developerPayload.asInstanceOf[js.Any])
     if (expiryTimeMillis != null) __obj.updateDynamic("expiryTimeMillis")(expiryTimeMillis.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (orderId != null) __obj.updateDynamic("orderId")(orderId.asInstanceOf[js.Any])
-    if (paymentState != null) __obj.updateDynamic("paymentState")(paymentState.asInstanceOf[js.Any])
+    if (!js.isUndefined(paymentState)) __obj.updateDynamic("paymentState")(paymentState.get.asInstanceOf[js.Any])
     if (priceAmountMicros != null) __obj.updateDynamic("priceAmountMicros")(priceAmountMicros.asInstanceOf[js.Any])
     if (priceCurrencyCode != null) __obj.updateDynamic("priceCurrencyCode")(priceCurrencyCode.asInstanceOf[js.Any])
     if (startTimeMillis != null) __obj.updateDynamic("startTimeMillis")(startTimeMillis.asInstanceOf[js.Any])

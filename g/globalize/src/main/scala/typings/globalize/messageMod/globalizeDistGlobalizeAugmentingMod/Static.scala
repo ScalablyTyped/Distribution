@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait Static extends js.Object {
   /**
-  		 * Load messages data.
-  		 * @param {Object} json JSON object of messages data. Keys can use any character, except /, { and }. Values (i.e., the message content itself) can contain any character.
-  		 * @returns {void}
-  		 */
+    * Load messages data.
+    * @param {Object} json JSON object of messages data. Keys can use any character, except /, { and }. Values (i.e., the message content itself) can contain any character.
+    * @returns {void}
+    */
   def loadMessages(json: js.Object): Unit
 }
 

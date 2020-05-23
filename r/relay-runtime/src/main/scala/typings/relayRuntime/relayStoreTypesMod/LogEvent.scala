@@ -1,6 +1,6 @@
 package typings.relayRuntime.relayStoreTypesMod
 
-import typings.relayRuntime.AnonName
+import typings.relayRuntime.anon.Name
 import typings.relayRuntime.relayRuntimeStrings.executeDotcomplete
 import typings.relayRuntime.relayRuntimeStrings.executeDoterror
 import typings.relayRuntime.relayRuntimeStrings.executeDotinfo
@@ -36,7 +36,7 @@ object LogEvent {
     __obj.asInstanceOf[LogEvent]
   }
   @scala.inline
-  def LogEventExecuteStart(name: executeDotstart, params: AnonName, transactionID: Double, variables: js.Object): LogEvent = {
+  def LogEventExecuteStart(name: executeDotstart, params: Name, transactionID: Double, variables: js.Object): LogEvent = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], transactionID = transactionID.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogEvent]
   }

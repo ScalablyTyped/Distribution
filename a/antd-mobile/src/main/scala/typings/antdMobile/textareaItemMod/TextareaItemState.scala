@@ -13,7 +13,7 @@ object TextareaItemState {
   @scala.inline
   def apply(focus: js.UndefOr[Boolean] = js.undefined, value: String = null): TextareaItemState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
+    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextareaItemState]
   }

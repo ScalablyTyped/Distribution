@@ -15,7 +15,11 @@ trait MediaDeviceInfo extends js.Object {
   /**
     * Device ID
     *
-    * Unique ID of the device.
+    * The unique ID of the device.
+    *
+    * **Note**
+    *
+    * On Chrome 81 or later, the device ID is only available after the user has granted permission to use the media device.
     */
   val deviceId: String
   /**
@@ -29,7 +33,7 @@ trait MediaDeviceInfo extends js.Object {
     *
     * Returns a `DOMString` that is a label describing this device (for example "External USB Webcam").
     *
-    * **Note:**
+    * **Note**
     *
     * For security reasons, the label field is always blank unless an active media stream exists or the user has granted persistent permission for media device access.
     *

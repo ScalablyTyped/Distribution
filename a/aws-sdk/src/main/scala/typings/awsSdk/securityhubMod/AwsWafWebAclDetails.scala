@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AwsWafWebAclDetails extends js.Object {
   /**
-    * The action to perform if none of the Rules contained in the WebACL match.
+    * The action to perform if none of the rules contained in the WebACL match.
     */
   var DefaultAction: js.UndefOr[NonEmptyString] = js.native
   /**

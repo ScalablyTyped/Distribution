@@ -77,61 +77,31 @@ abstract class PlatformPackager[DC /* <: PlatformSpecificBuildOptions */] protec
     platformSpecificBuildOptions: DC,
     targets: js.Array[Target]
   ): js.Promise[Unit] = js.native
-  def expandArtifactBeautyNamePattern(targetSpecificOptions: js.UndefOr[scala.Nothing], ext: String): String = js.native
-  def expandArtifactBeautyNamePattern(targetSpecificOptions: js.UndefOr[scala.Nothing], ext: String, arch: Arch): String = js.native
-  def expandArtifactBeautyNamePattern(targetSpecificOptions: Null, ext: String): String = js.native
-  def expandArtifactBeautyNamePattern(targetSpecificOptions: Null, ext: String, arch: Arch): String = js.native
-  def expandArtifactBeautyNamePattern(targetSpecificOptions: TargetSpecificOptions, ext: String): String = js.native
-  def expandArtifactBeautyNamePattern(targetSpecificOptions: TargetSpecificOptions, ext: String, arch: Arch): String = js.native
-  def expandArtifactNamePattern(targetSpecificOptions: js.UndefOr[scala.Nothing], ext: String): String = js.native
-  def expandArtifactNamePattern(targetSpecificOptions: js.UndefOr[scala.Nothing], ext: String, arch: Null, defaultPattern: String): String = js.native
+  def expandArtifactBeautyNamePattern(targetSpecificOptions: js.UndefOr[Null | TargetSpecificOptions], ext: String): String = js.native
+  def expandArtifactBeautyNamePattern(targetSpecificOptions: js.UndefOr[Null | TargetSpecificOptions], ext: String, arch: Arch): String = js.native
+  def expandArtifactNamePattern(targetSpecificOptions: js.UndefOr[Null | TargetSpecificOptions], ext: String): String = js.native
   def expandArtifactNamePattern(
-    targetSpecificOptions: js.UndefOr[scala.Nothing],
+    targetSpecificOptions: js.UndefOr[Null | TargetSpecificOptions],
+    ext: String,
+    arch: Null,
+    defaultPattern: String
+  ): String = js.native
+  def expandArtifactNamePattern(
+    targetSpecificOptions: js.UndefOr[Null | TargetSpecificOptions],
     ext: String,
     arch: Null,
     defaultPattern: String,
     skipArchIfX64: Boolean
   ): String = js.native
-  def expandArtifactNamePattern(targetSpecificOptions: js.UndefOr[scala.Nothing], ext: String, arch: Arch): String = js.native
-  def expandArtifactNamePattern(targetSpecificOptions: js.UndefOr[scala.Nothing], ext: String, arch: Arch, defaultPattern: String): String = js.native
+  def expandArtifactNamePattern(targetSpecificOptions: js.UndefOr[Null | TargetSpecificOptions], ext: String, arch: Arch): String = js.native
   def expandArtifactNamePattern(
-    targetSpecificOptions: js.UndefOr[scala.Nothing],
+    targetSpecificOptions: js.UndefOr[Null | TargetSpecificOptions],
     ext: String,
     arch: Arch,
-    defaultPattern: String,
-    skipArchIfX64: Boolean
+    defaultPattern: String
   ): String = js.native
-  def expandArtifactNamePattern(targetSpecificOptions: Null, ext: String): String = js.native
-  def expandArtifactNamePattern(targetSpecificOptions: Null, ext: String, arch: Null, defaultPattern: String): String = js.native
   def expandArtifactNamePattern(
-    targetSpecificOptions: Null,
-    ext: String,
-    arch: Null,
-    defaultPattern: String,
-    skipArchIfX64: Boolean
-  ): String = js.native
-  def expandArtifactNamePattern(targetSpecificOptions: Null, ext: String, arch: Arch): String = js.native
-  def expandArtifactNamePattern(targetSpecificOptions: Null, ext: String, arch: Arch, defaultPattern: String): String = js.native
-  def expandArtifactNamePattern(
-    targetSpecificOptions: Null,
-    ext: String,
-    arch: Arch,
-    defaultPattern: String,
-    skipArchIfX64: Boolean
-  ): String = js.native
-  def expandArtifactNamePattern(targetSpecificOptions: TargetSpecificOptions, ext: String): String = js.native
-  def expandArtifactNamePattern(targetSpecificOptions: TargetSpecificOptions, ext: String, arch: Null, defaultPattern: String): String = js.native
-  def expandArtifactNamePattern(
-    targetSpecificOptions: TargetSpecificOptions,
-    ext: String,
-    arch: Null,
-    defaultPattern: String,
-    skipArchIfX64: Boolean
-  ): String = js.native
-  def expandArtifactNamePattern(targetSpecificOptions: TargetSpecificOptions, ext: String, arch: Arch): String = js.native
-  def expandArtifactNamePattern(targetSpecificOptions: TargetSpecificOptions, ext: String, arch: Arch, defaultPattern: String): String = js.native
-  def expandArtifactNamePattern(
-    targetSpecificOptions: TargetSpecificOptions,
+    targetSpecificOptions: js.UndefOr[Null | TargetSpecificOptions],
     ext: String,
     arch: Arch,
     defaultPattern: String,
@@ -145,12 +115,8 @@ abstract class PlatformPackager[DC /* <: PlatformSpecificBuildOptions */] protec
   def expandMacro(pattern: String, arch: Null, extra: js.Any, isProductNameSanitized: Boolean): String = js.native
   def fileAssociations: js.Array[FileAssociation] = js.native
   def forceCodeSigning: Boolean = js.native
-  def generateName2(ext: String, classifier: js.UndefOr[scala.Nothing], deployment: Boolean): String = js.native
-  def generateName2(ext: String, classifier: String, deployment: Boolean): String = js.native
-  def generateName2(ext: String, classifier: Null, deployment: Boolean): String = js.native
-  def generateName2(ext: Null, classifier: js.UndefOr[scala.Nothing], deployment: Boolean): String = js.native
-  def generateName2(ext: Null, classifier: String, deployment: Boolean): String = js.native
-  def generateName2(ext: Null, classifier: Null, deployment: Boolean): String = js.native
+  def generateName2(ext: String, classifier: js.UndefOr[Null | String], deployment: Boolean): String = js.native
+  def generateName2(ext: Null, classifier: js.UndefOr[Null | String], deployment: Boolean): String = js.native
   /* protected */ def getCscLink(): js.UndefOr[String | Null] = js.native
   /* protected */ def getCscLink(extraEnvName: String): js.UndefOr[String | Null] = js.native
   /* protected */ def getCscPassword(): String = js.native
@@ -160,6 +126,7 @@ abstract class PlatformPackager[DC /* <: PlatformSpecificBuildOptions */] protec
   def getIconPath(): js.Promise[String | Null] = js.native
   def getMacOsResourcesDir(appOutDir: String): String = js.native
   /* protected */ def getOrConvertIcon(format: IconFormat): js.Promise[String | Null] = js.native
+  def getResource(): js.Promise[String | Null] = js.native
   def getResource(custom: String, names: String*): js.Promise[String | Null] = js.native
   def getResource(names: String*): js.Promise[String | Null] = js.native
   def getResourcesDir(appOutDir: String): String = js.native

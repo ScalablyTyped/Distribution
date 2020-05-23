@@ -24,10 +24,10 @@ object EnvironmentTextureSpecularInfoV1 {
   def apply(
     lodGenerationScale: Double,
     mipmaps: js.Array[BufferImageData],
-    specularDataPosition: Int | Double = null
+    specularDataPosition: js.UndefOr[Double] = js.undefined
   ): EnvironmentTextureSpecularInfoV1 = {
     val __obj = js.Dynamic.literal(lodGenerationScale = lodGenerationScale.asInstanceOf[js.Any], mipmaps = mipmaps.asInstanceOf[js.Any])
-    if (specularDataPosition != null) __obj.updateDynamic("specularDataPosition")(specularDataPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(specularDataPosition)) __obj.updateDynamic("specularDataPosition")(specularDataPosition.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvironmentTextureSpecularInfoV1]
   }
 }

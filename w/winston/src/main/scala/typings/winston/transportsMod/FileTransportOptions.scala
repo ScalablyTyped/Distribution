@@ -32,8 +32,8 @@ object FileTransportOptions {
     level: String = null,
     log: (/* info */ js.Any, /* next */ js.Function0[Unit]) => _ = null,
     logv: (/* info */ js.Any, /* next */ js.Function0[Unit]) => _ = null,
-    maxFiles: Int | Double = null,
-    maxsize: Int | Double = null,
+    maxFiles: js.UndefOr[Double] = js.undefined,
+    maxsize: js.UndefOr[Double] = js.undefined,
     options: js.Object = null,
     rotationFormat: js.Function = null,
     silent: js.UndefOr[Boolean] = js.undefined,
@@ -47,18 +47,18 @@ object FileTransportOptions {
     if (eol != null) __obj.updateDynamic("eol")(eol.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleExceptions)) __obj.updateDynamic("handleExceptions")(handleExceptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleExceptions)) __obj.updateDynamic("handleExceptions")(handleExceptions.get.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(js.Any.fromFunction2(log))
     if (logv != null) __obj.updateDynamic("logv")(js.Any.fromFunction2(logv))
-    if (maxFiles != null) __obj.updateDynamic("maxFiles")(maxFiles.asInstanceOf[js.Any])
-    if (maxsize != null) __obj.updateDynamic("maxsize")(maxsize.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFiles)) __obj.updateDynamic("maxFiles")(maxFiles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxsize)) __obj.updateDynamic("maxsize")(maxsize.get.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (rotationFormat != null) __obj.updateDynamic("rotationFormat")(rotationFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
-    if (!js.isUndefined(tailable)) __obj.updateDynamic("tailable")(tailable.asInstanceOf[js.Any])
-    if (!js.isUndefined(zippedArchive)) __obj.updateDynamic("zippedArchive")(zippedArchive.asInstanceOf[js.Any])
+    if (!js.isUndefined(tailable)) __obj.updateDynamic("tailable")(tailable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zippedArchive)) __obj.updateDynamic("zippedArchive")(zippedArchive.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileTransportOptions]
   }
 }

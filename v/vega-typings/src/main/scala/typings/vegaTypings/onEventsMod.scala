@@ -1,5 +1,6 @@
 package typings.vegaTypings
 
+import typings.vegaTypings.anon.Encode
 import typings.vegaTypings.exprMod.Expr
 import typings.vegaTypings.selectorMod.EventSelector
 import typings.vegaTypings.streamMod.EventStream
@@ -16,17 +17,17 @@ object onEventsMod extends js.Object {
   
   /* Rewritten from type alias, can be one of: 
     - typings.vegaTypings.signalMod.SignalRef
-    - typings.vegaTypings.AnonScaleString
+    - typings.vegaTypings.anon.ScaleString
     - typings.vegaTypings.streamMod.Stream
   */
   type EventListener = _EventListener | EventStream
   type Events = EventSelector | EventListener
-  type OnEvent = (AnonEncode | AnonUpdate) with AnonEvents
+  type OnEvent = (Encode | typings.vegaTypings.anon.Update) with typings.vegaTypings.anon.Events
   /* Rewritten from type alias, can be one of: 
     - typings.vegaTypings.exprMod.Expr
     - typings.vegaTypings.exprMod.ExprRef
     - typings.vegaTypings.signalMod.SignalRef
-    - typings.vegaTypings.AnonValueSignalValue
+    - typings.vegaTypings.anon.ValueSignalValue
   */
   type Update = _Update | Expr
 }

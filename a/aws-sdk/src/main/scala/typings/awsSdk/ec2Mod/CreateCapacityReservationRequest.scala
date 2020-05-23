@@ -73,11 +73,11 @@ object CreateCapacityReservationRequest {
     AvailabilityZone: String = null,
     AvailabilityZoneId: String = null,
     ClientToken: String = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
-    EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
+    EbsOptimized: js.UndefOr[Boolean] = js.undefined,
     EndDate: DateTime = null,
     EndDateType: EndDateType = null,
-    EphemeralStorage: js.UndefOr[scala.Boolean] = js.undefined,
+    EphemeralStorage: js.UndefOr[Boolean] = js.undefined,
     InstanceMatchCriteria: InstanceMatchCriteria = null,
     TagSpecifications: TagSpecificationList = null,
     Tenancy: CapacityReservationTenancy = null
@@ -86,11 +86,11 @@ object CreateCapacityReservationRequest {
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
     if (AvailabilityZoneId != null) __obj.updateDynamic("AvailabilityZoneId")(AvailabilityZoneId.asInstanceOf[js.Any])
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
-    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.get.asInstanceOf[js.Any])
     if (EndDate != null) __obj.updateDynamic("EndDate")(EndDate.asInstanceOf[js.Any])
     if (EndDateType != null) __obj.updateDynamic("EndDateType")(EndDateType.asInstanceOf[js.Any])
-    if (!js.isUndefined(EphemeralStorage)) __obj.updateDynamic("EphemeralStorage")(EphemeralStorage.asInstanceOf[js.Any])
+    if (!js.isUndefined(EphemeralStorage)) __obj.updateDynamic("EphemeralStorage")(EphemeralStorage.get.asInstanceOf[js.Any])
     if (InstanceMatchCriteria != null) __obj.updateDynamic("InstanceMatchCriteria")(InstanceMatchCriteria.asInstanceOf[js.Any])
     if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications.asInstanceOf[js.Any])
     if (Tenancy != null) __obj.updateDynamic("Tenancy")(Tenancy.asInstanceOf[js.Any])

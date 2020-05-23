@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side equivalent of the BootstrapTagBox object.
   */
-@JSGlobal("BootstrapClientTagBox")
 @js.native
-class BootstrapClientTagBox () extends ASPxClientTokenBox {
+trait BootstrapClientTagBox extends ASPxClientTokenBox {
   /**
     * Fires on the client side after the tag collection has been changed.
     */

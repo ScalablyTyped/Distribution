@@ -1,5 +1,13 @@
 package typings.antdMobileRn
 
+import typings.antdMobileRn.anon.BorderColor
+import typings.antdMobileRn.anon.BorderColorString
+import typings.antdMobileRn.anon.BorderWidth
+import typings.antdMobileRn.anon.ColorString
+import typings.antdMobileRn.anon.FontSizeNumber
+import typings.antdMobileRn.anon.MarginRight
+import typings.antdMobileRn.anon.Opacity
+import typings.antdMobileRn.anon.PaddingLeft
 import typings.reactNative.mod.ViewStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,36 +19,36 @@ object buttonStyleIndexNativeMod extends js.Object {
   @js.native
   object default extends js.Object {
     var container: ViewStyle = js.native
-    var defaultDisabledRaw: AnonBorderColor = js.native
-    var defaultDisabledRawText: AnonColorString = js.native
-    var defaultHighlight: AnonBorderColor = js.native
-    var defaultHighlightText: AnonColorString = js.native
-    var defaultRaw: AnonBorderColor = js.native
-    var defaultRawText: AnonColorString = js.native
-    var ghostDisabledRaw: AnonBorderColorString = js.native
-    var ghostDisabledRawText: AnonColorString = js.native
-    var ghostHighlight: AnonBorderColor = js.native
-    var ghostHighlightText: AnonColorString = js.native
-    var ghostRaw: AnonBorderColor = js.native
-    var ghostRawText: AnonColorString = js.native
-    var indicator: AnonMarginRight = js.native
-    var largeRaw: AnonPaddingLeft = js.native
-    var largeRawText: AnonFontSizeNumber = js.native
-    var primaryDisabledRaw: AnonOpacity = js.native
-    var primaryDisabledRawText: AnonColorString = js.native
-    var primaryHighlight: AnonBorderColor = js.native
-    var primaryHighlightText: AnonColorString = js.native
-    var primaryRaw: AnonBorderColor = js.native
-    var primaryRawText: AnonColorString = js.native
-    var smallRaw: AnonPaddingLeft = js.native
-    var smallRawText: AnonFontSizeNumber = js.native
-    var warningDisabledRaw: AnonOpacity = js.native
-    var warningDisabledRawText: AnonColorString = js.native
-    var warningHighlight: AnonBorderColor = js.native
-    var warningHighlightText: AnonColorString = js.native
-    var warningRaw: AnonBorderColor = js.native
-    var warningRawText: AnonColorString = js.native
-    var wrapperStyle: AnonBorderWidth = js.native
+    var defaultDisabledRaw: BorderColor = js.native
+    var defaultDisabledRawText: ColorString = js.native
+    var defaultHighlight: BorderColor = js.native
+    var defaultHighlightText: ColorString = js.native
+    var defaultRaw: BorderColor = js.native
+    var defaultRawText: ColorString = js.native
+    var ghostDisabledRaw: BorderColorString = js.native
+    var ghostDisabledRawText: ColorString = js.native
+    var ghostHighlight: BorderColor = js.native
+    var ghostHighlightText: ColorString = js.native
+    var ghostRaw: BorderColor = js.native
+    var ghostRawText: ColorString = js.native
+    var indicator: MarginRight = js.native
+    var largeRaw: PaddingLeft = js.native
+    var largeRawText: FontSizeNumber = js.native
+    var primaryDisabledRaw: Opacity = js.native
+    var primaryDisabledRawText: ColorString = js.native
+    var primaryHighlight: BorderColor = js.native
+    var primaryHighlightText: ColorString = js.native
+    var primaryRaw: BorderColor = js.native
+    var primaryRawText: ColorString = js.native
+    var smallRaw: PaddingLeft = js.native
+    var smallRawText: FontSizeNumber = js.native
+    var warningDisabledRaw: Opacity = js.native
+    var warningDisabledRawText: ColorString = js.native
+    var warningHighlight: BorderColor = js.native
+    var warningHighlightText: ColorString = js.native
+    var warningRaw: BorderColor = js.native
+    var warningRawText: ColorString = js.native
+    var wrapperStyle: BorderWidth = js.native
   }
   
 }

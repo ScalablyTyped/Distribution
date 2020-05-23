@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.active
 import typings.arcgisJsApi.arcgisJsApiStrings.circle
@@ -236,8 +235,4 @@ trait Sketch extends Widget_ {
   def update(graphics: Graphic): js.Promise[Unit] = js.native
   def update(graphics: Graphic, updateOptions: SketchUpdateUpdateOptions): js.Promise[Unit] = js.native
 }
-
-@JSGlobal("__esri.Sketch")
-@js.native
-object Sketch extends TopLevel[SketchConstructor]
 

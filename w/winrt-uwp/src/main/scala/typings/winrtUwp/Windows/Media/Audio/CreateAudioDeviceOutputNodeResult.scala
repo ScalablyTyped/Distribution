@@ -5,12 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the result of creating an audio device output node. */
-@JSGlobal("Windows.Media.Audio.CreateAudioDeviceOutputNodeResult")
-@js.native
-abstract class CreateAudioDeviceOutputNodeResult () extends js.Object {
+trait CreateAudioDeviceOutputNodeResult extends js.Object {
   /** Gets the audio device output node. */
-  var deviceOutputNode: AudioDeviceOutputNode = js.native
+  var deviceOutputNode: AudioDeviceOutputNode
   /** Gets the status of audio device output node creation. */
-  var status: AudioDeviceNodeCreationStatus = js.native
+  var status: AudioDeviceNodeCreationStatus
+}
+
+object CreateAudioDeviceOutputNodeResult {
+  @scala.inline
+  def apply(deviceOutputNode: AudioDeviceOutputNode, status: AudioDeviceNodeCreationStatus): CreateAudioDeviceOutputNodeResult = {
+    val __obj = js.Dynamic.literal(deviceOutputNode = deviceOutputNode.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CreateAudioDeviceOutputNodeResult]
+  }
 }
 

@@ -24,12 +24,12 @@ object ListGlobalTablesInput {
   @scala.inline
   def apply(
     ExclusiveStartGlobalTableName: TableName = null,
-    Limit: Int | scala.Double = null,
+    Limit: js.UndefOr[PositiveIntegerObject] = js.undefined,
     RegionName: RegionName = null
   ): ListGlobalTablesInput = {
     val __obj = js.Dynamic.literal()
     if (ExclusiveStartGlobalTableName != null) __obj.updateDynamic("ExclusiveStartGlobalTableName")(ExclusiveStartGlobalTableName.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     if (RegionName != null) __obj.updateDynamic("RegionName")(RegionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGlobalTablesInput]
   }

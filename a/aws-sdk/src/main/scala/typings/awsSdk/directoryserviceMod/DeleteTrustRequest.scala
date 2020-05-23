@@ -18,9 +18,12 @@ trait DeleteTrustRequest extends js.Object {
 
 object DeleteTrustRequest {
   @scala.inline
-  def apply(TrustId: TrustId, DeleteAssociatedConditionalForwarder: js.UndefOr[Boolean] = js.undefined): DeleteTrustRequest = {
+  def apply(
+    TrustId: TrustId,
+    DeleteAssociatedConditionalForwarder: js.UndefOr[DeleteAssociatedConditionalForwarder] = js.undefined
+  ): DeleteTrustRequest = {
     val __obj = js.Dynamic.literal(TrustId = TrustId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeleteAssociatedConditionalForwarder)) __obj.updateDynamic("DeleteAssociatedConditionalForwarder")(DeleteAssociatedConditionalForwarder.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeleteAssociatedConditionalForwarder)) __obj.updateDynamic("DeleteAssociatedConditionalForwarder")(DeleteAssociatedConditionalForwarder.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTrustRequest]
   }
 }

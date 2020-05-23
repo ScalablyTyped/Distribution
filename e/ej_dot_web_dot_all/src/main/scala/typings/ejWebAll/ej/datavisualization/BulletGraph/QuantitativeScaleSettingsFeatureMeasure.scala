@@ -21,11 +21,15 @@ trait QuantitativeScaleSettingsFeatureMeasure extends js.Object {
 
 object QuantitativeScaleSettingsFeatureMeasure {
   @scala.inline
-  def apply(category: String = null, comparativeMeasureValue: Int | Double = null, value: Int | Double = null): QuantitativeScaleSettingsFeatureMeasure = {
+  def apply(
+    category: String = null,
+    comparativeMeasureValue: js.UndefOr[Double] = js.undefined,
+    value: js.UndefOr[Double] = js.undefined
+  ): QuantitativeScaleSettingsFeatureMeasure = {
     val __obj = js.Dynamic.literal()
     if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (comparativeMeasureValue != null) __obj.updateDynamic("comparativeMeasureValue")(comparativeMeasureValue.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(comparativeMeasureValue)) __obj.updateDynamic("comparativeMeasureValue")(comparativeMeasureValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuantitativeScaleSettingsFeatureMeasure]
   }
 }

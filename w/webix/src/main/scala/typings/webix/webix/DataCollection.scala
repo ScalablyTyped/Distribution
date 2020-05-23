@@ -1,6 +1,5 @@
 package typings.webix.webix
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -105,8 +104,4 @@ trait DataCollection extends js.Object {
   def validate(id: String): Boolean = js.native
   def waitSave(handler: WebixCallback): js.Promise[_] = js.native
 }
-
-@JSGlobal("webix.DataCollection")
-@js.native
-object DataCollection extends TopLevel[DataCollectionFactory]
 

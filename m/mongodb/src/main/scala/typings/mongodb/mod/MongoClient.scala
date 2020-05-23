@@ -1,7 +1,7 @@
 package typings.mongodb.mod
 
-import typings.mongodb.AnonDbName
-import typings.mongodb.ChangeStreamOptionssessio
+import typings.mongodb.anon.ChangeStreamOptionssessio
+import typings.mongodb.anon.DbName
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,8 +30,8 @@ class MongoClient protected () extends EventEmitter {
   def logout(): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html#logout */
   def logout(callback: MongoCallback[_]): Unit = js.native
-  def logout(options: AnonDbName): js.Promise[_] = js.native
-  def logout(options: AnonDbName, callback: MongoCallback[_]): Unit = js.native
+  def logout(options: DbName): js.Promise[_] = js.native
+  def logout(options: DbName, callback: MongoCallback[_]): Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html#startSession */
   def startSession(): ClientSession = js.native
   def startSession(options: SessionOptions): ClientSession = js.native

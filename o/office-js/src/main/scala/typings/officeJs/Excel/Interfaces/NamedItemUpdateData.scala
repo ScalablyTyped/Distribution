@@ -8,21 +8,21 @@ import scala.scalajs.js.annotation._
 trait NamedItemUpdateData extends js.Object {
   /**
     *
-    * Represents the comment associated with this name.
+    * Specifies the comment associated with this name.
     *
     * [Api set: ExcelApi 1.4]
     */
   var comment: js.UndefOr[String] = js.undefined
   /**
     *
-    * Gets or sets the formula of the named item.  Formula always starts with a '=' sign.
+    * The formula of the named item. Formula always starts with a '=' sign.
     *
     * [Api set: ExcelApi 1.7]
     */
   var formula: js.UndefOr[js.Any] = js.undefined
   /**
     *
-    * Specifies whether the object is visible or not.
+    * Specifies if the object is visible.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -35,7 +35,7 @@ object NamedItemUpdateData {
     val __obj = js.Dynamic.literal()
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamedItemUpdateData]
   }
 }

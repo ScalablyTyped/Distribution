@@ -59,7 +59,7 @@ trait ServiceUpdate extends js.Object {
 object ServiceUpdate {
   @scala.inline
   def apply(
-    AutoUpdateAfterRecommendedApplyByDate: js.UndefOr[scala.Boolean] = js.undefined,
+    AutoUpdateAfterRecommendedApplyByDate: js.UndefOr[BooleanOptional] = js.undefined,
     Engine: String = null,
     EngineVersion: String = null,
     EstimatedUpdateTime: String = null,
@@ -73,7 +73,7 @@ object ServiceUpdate {
     ServiceUpdateType: ServiceUpdateType = null
   ): ServiceUpdate = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AutoUpdateAfterRecommendedApplyByDate)) __obj.updateDynamic("AutoUpdateAfterRecommendedApplyByDate")(AutoUpdateAfterRecommendedApplyByDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoUpdateAfterRecommendedApplyByDate)) __obj.updateDynamic("AutoUpdateAfterRecommendedApplyByDate")(AutoUpdateAfterRecommendedApplyByDate.get.asInstanceOf[js.Any])
     if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
     if (EstimatedUpdateTime != null) __obj.updateDynamic("EstimatedUpdateTime")(EstimatedUpdateTime.asInstanceOf[js.Any])

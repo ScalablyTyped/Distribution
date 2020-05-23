@@ -40,14 +40,14 @@ object UpdateInfo {
     releaseDate: String,
     sha512: String,
     version: String,
-    releaseName: String = null,
-    releaseNotes: String | js.Array[ReleaseNoteInfo] = null,
-    stagingPercentage: Int | Double = null
+    releaseName: js.UndefOr[Null | String] = js.undefined,
+    releaseNotes: js.UndefOr[Null | String | js.Array[ReleaseNoteInfo]] = js.undefined,
+    stagingPercentage: js.UndefOr[Double] = js.undefined
   ): UpdateInfo = {
     val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], releaseDate = releaseDate.asInstanceOf[js.Any], sha512 = sha512.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-    if (releaseName != null) __obj.updateDynamic("releaseName")(releaseName.asInstanceOf[js.Any])
-    if (releaseNotes != null) __obj.updateDynamic("releaseNotes")(releaseNotes.asInstanceOf[js.Any])
-    if (stagingPercentage != null) __obj.updateDynamic("stagingPercentage")(stagingPercentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(releaseName)) __obj.updateDynamic("releaseName")(releaseName.asInstanceOf[js.Any])
+    if (!js.isUndefined(releaseNotes)) __obj.updateDynamic("releaseNotes")(releaseNotes.asInstanceOf[js.Any])
+    if (!js.isUndefined(stagingPercentage)) __obj.updateDynamic("stagingPercentage")(stagingPercentage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateInfo]
   }
 }

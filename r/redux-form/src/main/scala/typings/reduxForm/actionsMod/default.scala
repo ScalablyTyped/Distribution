@@ -1,8 +1,8 @@
 package typings.reduxForm.actionsMod
 
-import typings.reduxForm.FnCall
-import typings.reduxForm.FnCallFormSyncWarningsWarning
-import typings.reduxForm.FnCallFromSyncErrorsError
+import typings.reduxForm.anon.FnCall
+import typings.reduxForm.anon.FnCallFormSyncWarningsWarning
+import typings.reduxForm.anon.FnCallFromSyncErrorsError
 import typings.reduxForm.mod.FieldType
 import typings.reduxForm.mod.FormErrors
 import scala.scalajs.js
@@ -72,6 +72,7 @@ object default extends js.Object {
   var initialize: FnCall = js.native
   var registerField: js.Function3[/* form */ String, /* name */ String, /* type */ FieldType, FormAction] = js.native
   var reset: js.Function1[/* form */ String, FormAction] = js.native
+  var resetSection: js.Function2[/* form */ String, /* repeated */ String, FormAction] = js.native
   var setSubmitFailed: js.Function2[/* form */ String, /* repeated */ String, FormAction] = js.native
   var setSubmitSucceeded: js.Function2[/* form */ String, /* repeated */ String, FormAction] = js.native
   var startAsyncValidation: js.Function1[/* form */ String, FormAction] = js.native

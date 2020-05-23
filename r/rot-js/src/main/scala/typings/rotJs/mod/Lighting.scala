@@ -1,6 +1,6 @@
 package typings.rotJs.mod
 
-import typings.rotJs.PartialOptionsEmissionThreshold
+import typings.rotJs.anon.PartialOptionsEmissionThreshold
 import typings.rotJs.lightingMod.ReflectivityCallback
 import typings.rotJs.lightingMod.default
 import scala.scalajs.js

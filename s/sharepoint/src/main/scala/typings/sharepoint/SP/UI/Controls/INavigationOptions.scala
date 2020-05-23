@@ -55,15 +55,15 @@ object INavigationOptions {
     if (appTitleIconUrl != null) __obj.updateDynamic("appTitleIconUrl")(appTitleIconUrl.asInstanceOf[js.Any])
     if (appWebUrl != null) __obj.updateDynamic("appWebUrl")(appWebUrl.asInstanceOf[js.Any])
     if (assetId != null) __obj.updateDynamic("assetId")(assetId.asInstanceOf[js.Any])
-    if (!js.isUndefined(bottomHeaderVisible)) __obj.updateDynamic("bottomHeaderVisible")(bottomHeaderVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(bottomHeaderVisible)) __obj.updateDynamic("bottomHeaderVisible")(bottomHeaderVisible.get.asInstanceOf[js.Any])
     if (clientTag != null) __obj.updateDynamic("clientTag")(clientTag.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (onCssLoaded != null) __obj.updateDynamic("onCssLoaded")(onCssLoaded.asInstanceOf[js.Any])
-    if (!js.isUndefined(rightToLeft)) __obj.updateDynamic("rightToLeft")(rightToLeft.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightToLeft)) __obj.updateDynamic("rightToLeft")(rightToLeft.get.asInstanceOf[js.Any])
     if (settingsLinks != null) __obj.updateDynamic("settingsLinks")(settingsLinks.asInstanceOf[js.Any])
     if (siteTitle != null) __obj.updateDynamic("siteTitle")(siteTitle.asInstanceOf[js.Any])
     if (siteUrl != null) __obj.updateDynamic("siteUrl")(siteUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(topHeaderVisible)) __obj.updateDynamic("topHeaderVisible")(topHeaderVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(topHeaderVisible)) __obj.updateDynamic("topHeaderVisible")(topHeaderVisible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[INavigationOptions]
   }
 }

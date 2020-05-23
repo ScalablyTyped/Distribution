@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object empty
   extends TopLevel[
-      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Operator.empty */ js.Any
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Operator.fromArray */ js.Any
     ]
 

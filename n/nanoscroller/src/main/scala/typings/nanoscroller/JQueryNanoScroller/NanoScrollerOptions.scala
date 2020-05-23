@@ -131,43 +131,43 @@ object NanoScrollerOptions {
     disableResize: js.UndefOr[Boolean] = js.undefined,
     enabledClass: String = null,
     flash: js.UndefOr[Boolean] = js.undefined,
-    flashDelay: Int | Double = null,
+    flashDelay: js.UndefOr[Double] = js.undefined,
     flashedClass: String = null,
     iOSNativeScrolling: js.UndefOr[Boolean] = js.undefined,
     paneClass: String = null,
     preventPageScrolling: js.UndefOr[Boolean] = js.undefined,
     scroll: top | bottom = null,
-    scrollBottom: Int | Double = null,
+    scrollBottom: js.UndefOr[Double] = js.undefined,
     scrollTo: JQuery = null,
-    scrollTop: Int | Double = null,
+    scrollTop: js.UndefOr[Double] = js.undefined,
     sliderClass: String = null,
-    sliderMaxHeight: Int | Double = null,
-    sliderMinHeight: Int | Double = null,
+    sliderMaxHeight: js.UndefOr[Null | Double] = js.undefined,
+    sliderMinHeight: js.UndefOr[Double] = js.undefined,
     stop: js.UndefOr[Boolean] = js.undefined,
-    tabIndex: Int | Double = null
+    tabIndex: js.UndefOr[Double] = js.undefined
   ): NanoScrollerOptions = {
     val __obj = js.Dynamic.literal()
     if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(alwaysVisible)) __obj.updateDynamic("alwaysVisible")(alwaysVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysVisible)) __obj.updateDynamic("alwaysVisible")(alwaysVisible.get.asInstanceOf[js.Any])
     if (contentClass != null) __obj.updateDynamic("contentClass")(contentClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroy)) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableResize)) __obj.updateDynamic("disableResize")(disableResize.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroy)) __obj.updateDynamic("destroy")(destroy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableResize)) __obj.updateDynamic("disableResize")(disableResize.get.asInstanceOf[js.Any])
     if (enabledClass != null) __obj.updateDynamic("enabledClass")(enabledClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(flash)) __obj.updateDynamic("flash")(flash.asInstanceOf[js.Any])
-    if (flashDelay != null) __obj.updateDynamic("flashDelay")(flashDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(flash)) __obj.updateDynamic("flash")(flash.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flashDelay)) __obj.updateDynamic("flashDelay")(flashDelay.get.asInstanceOf[js.Any])
     if (flashedClass != null) __obj.updateDynamic("flashedClass")(flashedClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(iOSNativeScrolling)) __obj.updateDynamic("iOSNativeScrolling")(iOSNativeScrolling.asInstanceOf[js.Any])
+    if (!js.isUndefined(iOSNativeScrolling)) __obj.updateDynamic("iOSNativeScrolling")(iOSNativeScrolling.get.asInstanceOf[js.Any])
     if (paneClass != null) __obj.updateDynamic("paneClass")(paneClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventPageScrolling)) __obj.updateDynamic("preventPageScrolling")(preventPageScrolling.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventPageScrolling)) __obj.updateDynamic("preventPageScrolling")(preventPageScrolling.get.asInstanceOf[js.Any])
     if (scroll != null) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
-    if (scrollBottom != null) __obj.updateDynamic("scrollBottom")(scrollBottom.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollBottom)) __obj.updateDynamic("scrollBottom")(scrollBottom.get.asInstanceOf[js.Any])
     if (scrollTo != null) __obj.updateDynamic("scrollTo")(scrollTo.asInstanceOf[js.Any])
-    if (scrollTop != null) __obj.updateDynamic("scrollTop")(scrollTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollTop)) __obj.updateDynamic("scrollTop")(scrollTop.get.asInstanceOf[js.Any])
     if (sliderClass != null) __obj.updateDynamic("sliderClass")(sliderClass.asInstanceOf[js.Any])
-    if (sliderMaxHeight != null) __obj.updateDynamic("sliderMaxHeight")(sliderMaxHeight.asInstanceOf[js.Any])
-    if (sliderMinHeight != null) __obj.updateDynamic("sliderMinHeight")(sliderMinHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(stop)) __obj.updateDynamic("stop")(stop.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(sliderMaxHeight)) __obj.updateDynamic("sliderMaxHeight")(sliderMaxHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(sliderMinHeight)) __obj.updateDynamic("sliderMinHeight")(sliderMinHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stop)) __obj.updateDynamic("stop")(stop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NanoScrollerOptions]
   }
 }

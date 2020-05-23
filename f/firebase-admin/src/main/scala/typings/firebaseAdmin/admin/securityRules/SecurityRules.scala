@@ -1,6 +1,5 @@
 package typings.firebaseAdmin.admin.securityRules
 
-import typings.firebaseAdmin.admin.app.App
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SecurityRules extends js.Object {
-  var app: App = js.native
+  var app: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _admin.app.App */ js.Any = js.native
   /**
     * Creates a {@link admin.securityRules.RulesFile `RuleFile`} with the given name
     * and source. Throws an error if any of the arguments are invalid. This is a local
@@ -32,8 +31,8 @@ trait SecurityRules extends js.Object {
     * @param source Contents of the rules file.
     * @return A new rules file instance.
     */
-  def createRulesFileFromSource(name: String, source: String): RulesFile = js.native
-  def createRulesFileFromSource(name: String, source: Buffer): RulesFile = js.native
+  def createRulesFileFromSource(name: String, source: String): typings.firebaseAdmin.securityRulesMod.admin.securityRules.RulesFile = js.native
+  def createRulesFileFromSource(name: String, source: Buffer): typings.firebaseAdmin.securityRulesMod.admin.securityRules.RulesFile = js.native
   /**
     * Creates a new {@link admin.securityRules.Ruleset `Ruleset`} from the given
     * {@link admin.securityRules.RulesFile `RuleFile`}.
@@ -41,7 +40,7 @@ trait SecurityRules extends js.Object {
     * @param file Rules file to include in the new `Ruleset`.
     * @returns A promise that fulfills with the newly created `Ruleset`.
     */
-  def createRuleset(file: RulesFile): js.Promise[Ruleset] = js.native
+  def createRuleset(file: typings.firebaseAdmin.securityRulesMod.admin.securityRules.RulesFile): js.Promise[typings.firebaseAdmin.securityRulesMod.admin.securityRules.Ruleset] = js.native
   /**
     * Deletes the {@link admin.securityRules.Ruleset `Ruleset`} identified by the given
     * name. The input name should be the short name string without the project ID
@@ -60,7 +59,7 @@ trait SecurityRules extends js.Object {
     *
     * @return A promise that fulfills with the Firestore ruleset.
     */
-  def getFirestoreRuleset(): js.Promise[Ruleset] = js.native
+  def getFirestoreRuleset(): js.Promise[typings.firebaseAdmin.securityRulesMod.admin.securityRules.Ruleset] = js.native
   /**
     * Gets the {@link admin.securityRules.Ruleset `Ruleset`} identified by the given
     * name. The input name should be the short name string without the project ID
@@ -71,7 +70,7 @@ trait SecurityRules extends js.Object {
     * @param name Name of the `Ruleset` to retrieve.
     * @return A promise that fulfills with the specified `Ruleset`.
     */
-  def getRuleset(name: String): js.Promise[Ruleset] = js.native
+  def getRuleset(name: String): js.Promise[typings.firebaseAdmin.securityRulesMod.admin.securityRules.Ruleset] = js.native
   /**
     * Gets the {@link admin.securityRules.Ruleset `Ruleset`} currently applied to a
     * Cloud Storage bucket. Rejects with a `not-found` error if no ruleset is applied
@@ -82,8 +81,8 @@ trait SecurityRules extends js.Object {
     *   `AppOptions`.
     * @return A promise that fulfills with the Cloud Storage ruleset.
     */
-  def getStorageRuleset(): js.Promise[Ruleset] = js.native
-  def getStorageRuleset(bucket: String): js.Promise[Ruleset] = js.native
+  def getStorageRuleset(): js.Promise[typings.firebaseAdmin.securityRulesMod.admin.securityRules.Ruleset] = js.native
+  def getStorageRuleset(bucket: String): js.Promise[typings.firebaseAdmin.securityRulesMod.admin.securityRules.Ruleset] = js.native
   /**
     * Retrieves a page of ruleset metadata.
     *
@@ -93,9 +92,9 @@ trait SecurityRules extends js.Object {
     *   starting without any offset.
     * @return A promise that fulfills with a page of rulesets.
     */
-  def listRulesetMetadata(): js.Promise[RulesetMetadataList] = js.native
-  def listRulesetMetadata(pageSize: Double): js.Promise[RulesetMetadataList] = js.native
-  def listRulesetMetadata(pageSize: Double, nextPageToken: String): js.Promise[RulesetMetadataList] = js.native
+  def listRulesetMetadata(): js.Promise[typings.firebaseAdmin.securityRulesMod.admin.securityRules.RulesetMetadataList] = js.native
+  def listRulesetMetadata(pageSize: Double): js.Promise[typings.firebaseAdmin.securityRulesMod.admin.securityRules.RulesetMetadataList] = js.native
+  def listRulesetMetadata(pageSize: Double, nextPageToken: String): js.Promise[typings.firebaseAdmin.securityRulesMod.admin.securityRules.RulesetMetadataList] = js.native
   /**
     * Applies the specified {@link admin.securityRules.Ruleset `Ruleset`} ruleset
     * to Cloud Firestore.
@@ -105,7 +104,7 @@ trait SecurityRules extends js.Object {
     * @return A promise that fulfills when the ruleset is released.
     */
   def releaseFirestoreRuleset(ruleset: String): js.Promise[Unit] = js.native
-  def releaseFirestoreRuleset(ruleset: RulesetMetadata): js.Promise[Unit] = js.native
+  def releaseFirestoreRuleset(ruleset: typings.firebaseAdmin.securityRulesMod.admin.securityRules.RulesetMetadata): js.Promise[Unit] = js.native
   /**
     * Creates a new {@link admin.securityRules.Ruleset `Ruleset`} from the given
     * source, and applies it to Cloud Firestore.
@@ -113,8 +112,8 @@ trait SecurityRules extends js.Object {
     * @param source Rules source to apply.
     * @return A promise that fulfills when the ruleset is created and released.
     */
-  def releaseFirestoreRulesetFromSource(source: String): js.Promise[Ruleset] = js.native
-  def releaseFirestoreRulesetFromSource(source: Buffer): js.Promise[Ruleset] = js.native
+  def releaseFirestoreRulesetFromSource(source: String): js.Promise[typings.firebaseAdmin.securityRulesMod.admin.securityRules.Ruleset] = js.native
+  def releaseFirestoreRulesetFromSource(source: Buffer): js.Promise[typings.firebaseAdmin.securityRulesMod.admin.securityRules.Ruleset] = js.native
   /**
     * Applies the specified {@link admin.securityRules.Ruleset `Ruleset`} ruleset
     * to a Cloud Storage bucket.
@@ -128,8 +127,11 @@ trait SecurityRules extends js.Object {
     */
   def releaseStorageRuleset(ruleset: String): js.Promise[Unit] = js.native
   def releaseStorageRuleset(ruleset: String, bucket: String): js.Promise[Unit] = js.native
-  def releaseStorageRuleset(ruleset: RulesetMetadata): js.Promise[Unit] = js.native
-  def releaseStorageRuleset(ruleset: RulesetMetadata, bucket: String): js.Promise[Unit] = js.native
+  def releaseStorageRuleset(ruleset: typings.firebaseAdmin.securityRulesMod.admin.securityRules.RulesetMetadata): js.Promise[Unit] = js.native
+  def releaseStorageRuleset(
+    ruleset: typings.firebaseAdmin.securityRulesMod.admin.securityRules.RulesetMetadata,
+    bucket: String
+  ): js.Promise[Unit] = js.native
   /**
     * Creates a new {@link admin.securityRules.Ruleset `Ruleset`} from the given
     * source, and applies it to a Cloud Storage bucket.
@@ -140,9 +142,9 @@ trait SecurityRules extends js.Object {
     *   {@link admin.AppOptions `AppOptions`}.
     * @return A promise that fulfills when the ruleset is created and released.
     */
-  def releaseStorageRulesetFromSource(source: String): js.Promise[Ruleset] = js.native
-  def releaseStorageRulesetFromSource(source: String, bucket: String): js.Promise[Ruleset] = js.native
-  def releaseStorageRulesetFromSource(source: Buffer): js.Promise[Ruleset] = js.native
-  def releaseStorageRulesetFromSource(source: Buffer, bucket: String): js.Promise[Ruleset] = js.native
+  def releaseStorageRulesetFromSource(source: String): js.Promise[typings.firebaseAdmin.securityRulesMod.admin.securityRules.Ruleset] = js.native
+  def releaseStorageRulesetFromSource(source: String, bucket: String): js.Promise[typings.firebaseAdmin.securityRulesMod.admin.securityRules.Ruleset] = js.native
+  def releaseStorageRulesetFromSource(source: Buffer): js.Promise[typings.firebaseAdmin.securityRulesMod.admin.securityRules.Ruleset] = js.native
+  def releaseStorageRulesetFromSource(source: Buffer, bucket: String): js.Promise[typings.firebaseAdmin.securityRulesMod.admin.securityRules.Ruleset] = js.native
 }
 

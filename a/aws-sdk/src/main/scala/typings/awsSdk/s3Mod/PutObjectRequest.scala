@@ -112,7 +112,7 @@ trait PutObjectRequest extends js.Object {
     */
   var ServerSideEncryption: js.UndefOr[typings.awsSdk.s3Mod.ServerSideEncryption] = js.native
   /**
-    * If you don't specify, Standard is the default storage class. Amazon S3 supports other storage classes.
+    * If you don't specify, S3 Standard is the default storage class. Amazon S3 supports other storage classes.
     */
   var StorageClass: js.UndefOr[typings.awsSdk.s3Mod.StorageClass] = js.native
   /**
@@ -136,7 +136,7 @@ object PutObjectRequest {
     ContentDisposition: ContentDisposition = null,
     ContentEncoding: ContentEncoding = null,
     ContentLanguage: ContentLanguage = null,
-    ContentLength: Int | Double = null,
+    ContentLength: js.UndefOr[ContentLength] = js.undefined,
     ContentMD5: ContentMD5 = null,
     ContentType: ContentType = null,
     Expires: Expires = null,
@@ -166,7 +166,7 @@ object PutObjectRequest {
     if (ContentDisposition != null) __obj.updateDynamic("ContentDisposition")(ContentDisposition.asInstanceOf[js.Any])
     if (ContentEncoding != null) __obj.updateDynamic("ContentEncoding")(ContentEncoding.asInstanceOf[js.Any])
     if (ContentLanguage != null) __obj.updateDynamic("ContentLanguage")(ContentLanguage.asInstanceOf[js.Any])
-    if (ContentLength != null) __obj.updateDynamic("ContentLength")(ContentLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(ContentLength)) __obj.updateDynamic("ContentLength")(ContentLength.get.asInstanceOf[js.Any])
     if (ContentMD5 != null) __obj.updateDynamic("ContentMD5")(ContentMD5.asInstanceOf[js.Any])
     if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType.asInstanceOf[js.Any])
     if (Expires != null) __obj.updateDynamic("Expires")(Expires.asInstanceOf[js.Any])

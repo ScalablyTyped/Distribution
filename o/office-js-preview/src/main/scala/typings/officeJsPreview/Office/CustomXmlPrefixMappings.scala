@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 /**
   * Represents a collection of CustomXmlPart objects.
-  * 
+  *
   * @remarks
-  * 
+  *
   * **Hosts**: Word
   */
 @js.native
@@ -17,9 +17,9 @@ trait CustomXmlPrefixMappings extends js.Object {
     * Asynchronously adds a prefix to namespace mapping to use when querying an item.
     *
     * @remarks
-    * 
+    *
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
-    * 
+    *
     * If no namespace is assigned to the requested prefix, the method returns an empty string ("").
     *
     * @param prefix Specifies the prefix to add to the prefix mapping list. Required.
@@ -40,10 +40,10 @@ trait CustomXmlPrefixMappings extends js.Object {
     * Asynchronously gets the namespace mapped to the specified prefix.
     *
     * @remarks
-    * 
+    *
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
-    * 
-    * If the prefix already exists in the namespace manager, this method will overwrite the mapping of that prefix except when the prefix is one 
+    *
+    * If the prefix already exists in the namespace manager, this method will overwrite the mapping of that prefix except when the prefix is one
     * added or used by the data store internally, in which case it will return an error.
     *
     * @param prefix TSpecifies the prefix to get the namespace for. Required.
@@ -63,10 +63,10 @@ trait CustomXmlPrefixMappings extends js.Object {
     * Asynchronously gets the prefix for the specified namespace.
     *
     * @remarks
-    * 
+    *
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
-    * 
-    * If no prefix is assigned to the requested namespace, the method returns an empty string (""). If there are multiple prefixes specified in 
+    *
+    * If no prefix is assigned to the requested namespace, the method returns an empty string (""). If there are multiple prefixes specified in
     * the namespace manager, the method returns the first prefix that matches the supplied namespace.
     *
     * @param ns Specifies the namespace to get the prefix for. Required.

@@ -22,9 +22,9 @@ trait ListAvailableManagedRuleGroupsRequest extends js.Object {
 
 object ListAvailableManagedRuleGroupsRequest {
   @scala.inline
-  def apply(Scope: Scope, Limit: Int | Double = null, NextMarker: NextMarker = null): ListAvailableManagedRuleGroupsRequest = {
+  def apply(Scope: Scope, Limit: js.UndefOr[PaginationLimit] = js.undefined, NextMarker: NextMarker = null): ListAvailableManagedRuleGroupsRequest = {
     val __obj = js.Dynamic.literal(Scope = Scope.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAvailableManagedRuleGroupsRequest]
   }

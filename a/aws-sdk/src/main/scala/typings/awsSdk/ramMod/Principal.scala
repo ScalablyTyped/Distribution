@@ -32,14 +32,14 @@ object Principal {
   @scala.inline
   def apply(
     creationTime: DateTime = null,
-    external: js.UndefOr[scala.Boolean] = js.undefined,
+    external: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     lastUpdatedTime: DateTime = null,
     resourceShareArn: String = null
   ): Principal = {
     val __obj = js.Dynamic.literal()
     if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(external)) __obj.updateDynamic("external")(external.asInstanceOf[js.Any])
+    if (!js.isUndefined(external)) __obj.updateDynamic("external")(external.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (lastUpdatedTime != null) __obj.updateDynamic("lastUpdatedTime")(lastUpdatedTime.asInstanceOf[js.Any])
     if (resourceShareArn != null) __obj.updateDynamic("resourceShareArn")(resourceShareArn.asInstanceOf[js.Any])

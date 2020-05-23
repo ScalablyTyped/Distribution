@@ -4,15 +4,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.BuildingBlockTypes")
-@js.native
-class BuildingBlockTypes protected () extends js.Object {
-  val Application: typings.activexWord.Word.Application = js.native
-  val Count: Double = js.native
-  val Creator: Double = js.native
-  val Parent: js.Any = js.native
+trait BuildingBlockTypes extends js.Object {
+  val Application: typings.activexWord.Word.Application
+  val Count: Double
+  val Creator: Double
+  val Parent: js.Any
   @JSName("Word.BuildingBlockTypes_typekey")
-  var WordDotBuildingBlockTypes_typekey: BuildingBlockTypes = js.native
-  def Item(Index: WdBuildingBlockTypes): BuildingBlockType = js.native
+  var WordDotBuildingBlockTypes_typekey: BuildingBlockTypes
+  def Item(Index: WdBuildingBlockTypes): BuildingBlockType
+}
+
+object BuildingBlockTypes {
+  @scala.inline
+  def apply(
+    Application: Application,
+    Count: Double,
+    Creator: Double,
+    Item: WdBuildingBlockTypes => BuildingBlockType,
+    Parent: js.Any,
+    WordDotBuildingBlockTypes_typekey: BuildingBlockTypes
+  ): BuildingBlockTypes = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
+    __obj.updateDynamic("Word.BuildingBlockTypes_typekey")(WordDotBuildingBlockTypes_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BuildingBlockTypes]
+  }
 }
 

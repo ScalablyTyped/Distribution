@@ -28,9 +28,9 @@ object IDetailsListStyleProps {
   ): IDetailsListStyleProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFixed)) __obj.updateDynamic("isFixed")(isFixed.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHorizontalConstrained)) __obj.updateDynamic("isHorizontalConstrained")(isHorizontalConstrained.asInstanceOf[js.Any])
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFixed)) __obj.updateDynamic("isFixed")(isFixed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHorizontalConstrained)) __obj.updateDynamic("isHorizontalConstrained")(isHorizontalConstrained.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetailsListStyleProps]
   }
 }

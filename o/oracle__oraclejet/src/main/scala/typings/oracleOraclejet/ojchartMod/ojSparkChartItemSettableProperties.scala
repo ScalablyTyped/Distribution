@@ -42,16 +42,13 @@ object ojSparkChartItemSettableProperties {
     markerSize: Double,
     svgClassName: String,
     svgStyle: js.Object,
-    high: Int | Double = null,
-    low: Int | Double = null,
+    high: Double = null.asInstanceOf[Double],
+    low: Double = null.asInstanceOf[Double],
     markerShape: auto | circle | diamond | human | plus | square | star | triangleDown | triangleUp | String = null,
-    value: Int | Double = null
+    value: Double = null.asInstanceOf[Double]
   ): ojSparkChartItemSettableProperties = {
-    val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], markerDisplayed = markerDisplayed.asInstanceOf[js.Any], markerSize = markerSize.asInstanceOf[js.Any], svgClassName = svgClassName.asInstanceOf[js.Any], svgStyle = svgStyle.asInstanceOf[js.Any])
-    if (high != null) __obj.updateDynamic("high")(high.asInstanceOf[js.Any])
-    if (low != null) __obj.updateDynamic("low")(low.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], markerDisplayed = markerDisplayed.asInstanceOf[js.Any], markerSize = markerSize.asInstanceOf[js.Any], svgClassName = svgClassName.asInstanceOf[js.Any], svgStyle = svgStyle.asInstanceOf[js.Any], high = high.asInstanceOf[js.Any], low = low.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (markerShape != null) __obj.updateDynamic("markerShape")(markerShape.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojSparkChartItemSettableProperties]
   }
 }

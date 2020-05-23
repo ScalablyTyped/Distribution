@@ -17,9 +17,9 @@ trait IPaymentIntentDataTransferDataOptions extends js.Object {
 
 object IPaymentIntentDataTransferDataOptions {
   @scala.inline
-  def apply(amount: Int | Double = null, destination: String = null): IPaymentIntentDataTransferDataOptions = {
+  def apply(amount: js.UndefOr[Double] = js.undefined, destination: String = null): IPaymentIntentDataTransferDataOptions = {
     val __obj = js.Dynamic.literal()
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.get.asInstanceOf[js.Any])
     if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentIntentDataTransferDataOptions]
   }

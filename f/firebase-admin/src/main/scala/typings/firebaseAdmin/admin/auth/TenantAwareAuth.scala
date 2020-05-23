@@ -22,7 +22,8 @@ import scala.scalajs.js.annotation._
   * `auth.tenantManager().authForTenant(tenantId)`.
   */
 @js.native
-trait TenantAwareAuth extends BaseAuth {
+trait TenantAwareAuth
+  extends typings.firebaseAdmin.authMod.admin.auth.BaseAuth {
   /**
     * The tenant identifier corresponding to this `TenantAwareAuth` instance.
     * All calls to the user management APIs, OIDC/SAML provider management APIs, email link

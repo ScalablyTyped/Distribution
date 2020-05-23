@@ -1,7 +1,7 @@
 package typings.jupyterlabApplication.labMod.JupyterLab
 
 import org.scalablytyped.runtime.TopLevel
-import typings.jupyterlabApplication.AnonMatches
+import typings.jupyterlabApplication.anon.Matches
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IExtensionModule
 import typings.luminoCoreutils.mod.Token
 import scala.scalajs.js
@@ -15,7 +15,7 @@ trait IInfo extends js.Object {
   /**
     * The collection of deferred extension patterns and matched extensions.
     */
-  val deferred: AnonMatches
+  val deferred: Matches
   /**
     * Whether the application is in dev mode.
     */
@@ -23,7 +23,7 @@ trait IInfo extends js.Object {
   /**
     * The collection of disabled extension patterns and matched extensions.
     */
-  val disabled: AnonMatches
+  val disabled: Matches
   /**
     * Whether files are cached on the server.
     */

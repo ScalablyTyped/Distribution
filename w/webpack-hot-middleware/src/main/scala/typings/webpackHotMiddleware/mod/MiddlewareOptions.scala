@@ -13,9 +13,9 @@ trait MiddlewareOptions extends js.Object {
 
 object MiddlewareOptions {
   @scala.inline
-  def apply(heartbeat: Int | Double = null, log: `false` | Logger = null, path: String = null): MiddlewareOptions = {
+  def apply(heartbeat: js.UndefOr[Double] = js.undefined, log: `false` | Logger = null, path: String = null): MiddlewareOptions = {
     val __obj = js.Dynamic.literal()
-    if (heartbeat != null) __obj.updateDynamic("heartbeat")(heartbeat.asInstanceOf[js.Any])
+    if (!js.isUndefined(heartbeat)) __obj.updateDynamic("heartbeat")(heartbeat.get.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[MiddlewareOptions]

@@ -1,6 +1,6 @@
 package typings.jupyterlabServices
 
-import typings.jupyterlabServices.jupyterlabServicesStrings.apiSlashsessions
+import typings.jupyterlabServices.anon.PickIModelidDeepPartialOm
 import typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings
 import typings.jupyterlabServices.sessionManagerMod.SessionManager.IOptions
 import typings.jupyterlabServices.sessionSessionMod.IModel
@@ -25,7 +25,7 @@ object sessionMod extends js.Object {
   
   @js.native
   object SessionAPI extends js.Object {
-    val SESSION_SERVICE_URL: apiSlashsessions = js.native
+    val SESSION_SERVICE_URL: /* "api/sessions" */ String = js.native
     def getSessionModel(id: String): js.Promise[IModel] = js.native
     def getSessionModel(id: String, settings: ISettings): js.Promise[IModel] = js.native
     def getSessionUrl(baseUrl: String, id: String): String = js.native

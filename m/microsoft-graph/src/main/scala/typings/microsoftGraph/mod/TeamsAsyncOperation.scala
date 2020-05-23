@@ -18,7 +18,7 @@ trait TeamsAsyncOperation extends Entity {
 object TeamsAsyncOperation {
   @scala.inline
   def apply(
-    attemptsCount: Int | Double = null,
+    attemptsCount: js.UndefOr[Double] = js.undefined,
     createdDateTime: String = null,
     error: OperationError = null,
     id: String = null,
@@ -29,7 +29,7 @@ object TeamsAsyncOperation {
     targetResourceLocation: String = null
   ): TeamsAsyncOperation = {
     val __obj = js.Dynamic.literal()
-    if (attemptsCount != null) __obj.updateDynamic("attemptsCount")(attemptsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(attemptsCount)) __obj.updateDynamic("attemptsCount")(attemptsCount.get.asInstanceOf[js.Any])
     if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

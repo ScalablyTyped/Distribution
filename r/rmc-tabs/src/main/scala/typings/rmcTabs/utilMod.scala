@@ -1,5 +1,6 @@
 package typings.rmcTabs
 
+import typings.rmcTabs.anon.MozTransform
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +15,7 @@ object utilMod extends js.Object {
   def getPxStyle(value: Double): String = js.native
   def getPxStyle(value: Double, unit: String): String = js.native
   def getPxStyle(value: Double, unit: String, vertical: Boolean): String = js.native
-  def getTransformPropValue(v: js.Any): AnonMozTransform = js.native
+  def getTransformPropValue(v: js.Any): MozTransform = js.native
   def setPxStyle(el: HTMLElement, value: String): Unit = js.native
   def setPxStyle(el: HTMLElement, value: String, unit: String): Unit = js.native
   def setPxStyle(el: HTMLElement, value: String, unit: String, vertical: Boolean): Unit = js.native

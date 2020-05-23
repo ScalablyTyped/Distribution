@@ -22,10 +22,10 @@ trait GetUsagePlansRequest extends js.Object {
 
 object GetUsagePlansRequest {
   @scala.inline
-  def apply(keyId: String = null, limit: Int | scala.Double = null, position: String = null): GetUsagePlansRequest = {
+  def apply(keyId: String = null, limit: js.UndefOr[NullableInteger] = js.undefined, position: String = null): GetUsagePlansRequest = {
     val __obj = js.Dynamic.literal()
     if (keyId != null) __obj.updateDynamic("keyId")(keyId.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUsagePlansRequest]
   }

@@ -44,7 +44,7 @@ object Sink {
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (head != null) __obj.updateDynamic("head")(head.asInstanceOf[js.Any])
     if (htmlById != null) __obj.updateDynamic("htmlById")(htmlById.asInstanceOf[js.Any])
-    if (!js.isUndefined(maybeMadeChanges)) __obj.updateDynamic("maybeMadeChanges")(maybeMadeChanges.asInstanceOf[js.Any])
+    if (!js.isUndefined(maybeMadeChanges)) __obj.updateDynamic("maybeMadeChanges")(maybeMadeChanges.get.asInstanceOf[js.Any])
     if (renderIntoElementById != null) __obj.updateDynamic("renderIntoElementById")(renderIntoElementById.asInstanceOf[js.Any])
     if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sink]

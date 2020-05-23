@@ -79,7 +79,7 @@ trait JobUpdate extends js.Object {
 object JobUpdate {
   @scala.inline
   def apply(
-    AllocatedCapacity: Int | Double = null,
+    AllocatedCapacity: js.UndefOr[IntegerValue] = js.undefined,
     Command: JobCommand = null,
     Connections: ConnectionsList = null,
     DefaultArguments: GenericMap = null,
@@ -87,18 +87,18 @@ object JobUpdate {
     ExecutionProperty: ExecutionProperty = null,
     GlueVersion: GlueVersionString = null,
     LogUri: UriString = null,
-    MaxCapacity: Int | Double = null,
-    MaxRetries: Int | Double = null,
+    MaxCapacity: js.UndefOr[NullableDouble] = js.undefined,
+    MaxRetries: js.UndefOr[MaxRetries] = js.undefined,
     NonOverridableArguments: GenericMap = null,
     NotificationProperty: NotificationProperty = null,
-    NumberOfWorkers: Int | Double = null,
+    NumberOfWorkers: js.UndefOr[NullableInteger] = js.undefined,
     Role: RoleString = null,
     SecurityConfiguration: NameString = null,
-    Timeout: Int | Double = null,
+    Timeout: js.UndefOr[Timeout] = js.undefined,
     WorkerType: WorkerType = null
   ): JobUpdate = {
     val __obj = js.Dynamic.literal()
-    if (AllocatedCapacity != null) __obj.updateDynamic("AllocatedCapacity")(AllocatedCapacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllocatedCapacity)) __obj.updateDynamic("AllocatedCapacity")(AllocatedCapacity.get.asInstanceOf[js.Any])
     if (Command != null) __obj.updateDynamic("Command")(Command.asInstanceOf[js.Any])
     if (Connections != null) __obj.updateDynamic("Connections")(Connections.asInstanceOf[js.Any])
     if (DefaultArguments != null) __obj.updateDynamic("DefaultArguments")(DefaultArguments.asInstanceOf[js.Any])
@@ -106,14 +106,14 @@ object JobUpdate {
     if (ExecutionProperty != null) __obj.updateDynamic("ExecutionProperty")(ExecutionProperty.asInstanceOf[js.Any])
     if (GlueVersion != null) __obj.updateDynamic("GlueVersion")(GlueVersion.asInstanceOf[js.Any])
     if (LogUri != null) __obj.updateDynamic("LogUri")(LogUri.asInstanceOf[js.Any])
-    if (MaxCapacity != null) __obj.updateDynamic("MaxCapacity")(MaxCapacity.asInstanceOf[js.Any])
-    if (MaxRetries != null) __obj.updateDynamic("MaxRetries")(MaxRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxCapacity)) __obj.updateDynamic("MaxCapacity")(MaxCapacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRetries)) __obj.updateDynamic("MaxRetries")(MaxRetries.get.asInstanceOf[js.Any])
     if (NonOverridableArguments != null) __obj.updateDynamic("NonOverridableArguments")(NonOverridableArguments.asInstanceOf[js.Any])
     if (NotificationProperty != null) __obj.updateDynamic("NotificationProperty")(NotificationProperty.asInstanceOf[js.Any])
-    if (NumberOfWorkers != null) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfWorkers)) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers.get.asInstanceOf[js.Any])
     if (Role != null) __obj.updateDynamic("Role")(Role.asInstanceOf[js.Any])
     if (SecurityConfiguration != null) __obj.updateDynamic("SecurityConfiguration")(SecurityConfiguration.asInstanceOf[js.Any])
-    if (Timeout != null) __obj.updateDynamic("Timeout")(Timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(Timeout)) __obj.updateDynamic("Timeout")(Timeout.get.asInstanceOf[js.Any])
     if (WorkerType != null) __obj.updateDynamic("WorkerType")(WorkerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobUpdate]
   }

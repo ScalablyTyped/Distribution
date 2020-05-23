@@ -1,6 +1,6 @@
 package typings.magicString.mod
 
-import typings.magicString.PartialSourceMapOptions
+import typings.magicString.anon.PartialSourceMapOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

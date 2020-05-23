@@ -21,10 +21,10 @@ trait PlotPivotpointsParamsOptions extends js.Object {
 
 object PlotPivotpointsParamsOptions {
   @scala.inline
-  def apply(algorithm: String = null, period: Int | Double = null): PlotPivotpointsParamsOptions = {
+  def apply(algorithm: String = null, period: js.UndefOr[Double] = js.undefined): PlotPivotpointsParamsOptions = {
     val __obj = js.Dynamic.literal()
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
+    if (!js.isUndefined(period)) __obj.updateDynamic("period")(period.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotPivotpointsParamsOptions]
   }
 }

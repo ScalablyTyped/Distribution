@@ -1,21 +1,21 @@
 package typings.oracleOraclejet.ojchartMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.AnonAlignTickMarks
-import typings.oracleOraclejet.AnonAnimationDownColor
-import typings.oracleOraclejet.AnonAxisLine
-import typings.oracleOraclejet.AnonBackgroundColor
-import typings.oracleOraclejet.AnonBaselineScaling
-import typings.oracleOraclejet.AnonBorderWidth
-import typings.oracleOraclejet.AnonClose
-import typings.oracleOraclejet.AnonComponentName
-import typings.oracleOraclejet.AnonContent
-import typings.oracleOraclejet.AnonConverter
-import typings.oracleOraclejet.AnonDrag
-import typings.oracleOraclejet.AnonInsert
-import typings.oracleOraclejet.AnonPreventDefault
-import typings.oracleOraclejet.AnonRenderer
-import typings.oracleOraclejet.AnonX
+import typings.oracleOraclejet.anon.AlignTickMarks
+import typings.oracleOraclejet.anon.AnimationDownColor
+import typings.oracleOraclejet.anon.AxisLine
+import typings.oracleOraclejet.anon.BackgroundColor
+import typings.oracleOraclejet.anon.BaselineScaling
+import typings.oracleOraclejet.anon.BorderWidth
+import typings.oracleOraclejet.anon.Close
+import typings.oracleOraclejet.anon.ComponentName
+import typings.oracleOraclejet.anon.Content
+import typings.oracleOraclejet.anon.Converter
+import typings.oracleOraclejet.anon.Drag
+import typings.oracleOraclejet.anon.Insert
+import typings.oracleOraclejet.anon.PreventDefault
+import typings.oracleOraclejet.anon.Renderer
+import typings.oracleOraclejet.anon.X
 import typings.oracleOraclejet.ojchartMod.ojChart.DataLabelContext
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.oracleOraclejetStrings.all
@@ -87,9 +87,9 @@ trait ojChartSettablePropertiesLenient[K, D]
   var data: js.UndefOr[DataProvider[K, D]] = js.undefined
   var dataCursor: js.UndefOr[off | on | auto] = js.undefined
   var dataCursorBehavior: js.UndefOr[smooth | snap | auto] = js.undefined
-  var dataCursorPosition: js.UndefOr[AnonX] = js.undefined
-  var dataLabel: js.UndefOr[js.Function1[/* context */ DataLabelContext, AnonInsert | AnonPreventDefault]] = js.undefined
-  var dnd: js.UndefOr[AnonDrag] = js.undefined
+  var dataCursorPosition: js.UndefOr[X] = js.undefined
+  var dataLabel: js.UndefOr[js.Function1[/* context */ DataLabelContext, Insert | PreventDefault]] = js.undefined
+  var dnd: js.UndefOr[Drag] = js.undefined
   var dragMode: js.UndefOr[pan | zoom | select | off | user] = js.undefined
   var drilling: js.UndefOr[on | seriesOnly | groupsOnly | off] = js.undefined
   var groupComparator: js.UndefOr[js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]] = js.undefined
@@ -99,12 +99,12 @@ trait ojChartSettablePropertiesLenient[K, D]
   var highlightedCategories: js.UndefOr[js.Array[String]] = js.undefined
   var hoverBehavior: js.UndefOr[dim | none] = js.undefined
   var initialZooming: js.UndefOr[first | last | none] = js.undefined
-  var legend: js.UndefOr[AnonBackgroundColor] = js.undefined
+  var legend: js.UndefOr[BackgroundColor] = js.undefined
   var orientation: js.UndefOr[horizontal | vertical] = js.undefined
   var otherThreshold: js.UndefOr[Double] = js.undefined
-  var overview: js.UndefOr[AnonContent] = js.undefined
-  var pieCenter: js.UndefOr[AnonConverter] = js.undefined
-  var plotArea: js.UndefOr[AnonBorderWidth] = js.undefined
+  var overview: js.UndefOr[Content] = js.undefined
+  var pieCenter: js.UndefOr[Converter] = js.undefined
+  var plotArea: js.UndefOr[BorderWidth] = js.undefined
   var polarGridShape: js.UndefOr[polygon | circle] = js.undefined
   var selection: js.UndefOr[js.Array[K]] = js.undefined
   var selectionMode: js.UndefOr[single | multiple | none] = js.undefined
@@ -114,19 +114,19 @@ trait ojChartSettablePropertiesLenient[K, D]
   var splitterPosition: js.UndefOr[Double] = js.undefined
   var stack: js.UndefOr[on | off] = js.undefined
   var stackLabel: js.UndefOr[on | off] = js.undefined
-  var styleDefaults: js.UndefOr[AnonAnimationDownColor] = js.undefined
+  var styleDefaults: js.UndefOr[AnimationDownColor] = js.undefined
   var timeAxisType: js.UndefOr[enabled | mixedFrequency | skipGaps | disabled | auto] = js.undefined
-  var tooltip: js.UndefOr[AnonRenderer] = js.undefined
+  var tooltip: js.UndefOr[Renderer] = js.undefined
   var touchResponse: js.UndefOr[touchStart | auto] = js.undefined
   var trackResize: js.UndefOr[on | off] = js.undefined
-  var translations: js.UndefOr[AnonComponentName] = js.undefined
+  var translations: js.UndefOr[ComponentName] = js.undefined
   var `type`: js.UndefOr[
     line | area | lineWithArea | stock | boxPlot | combo | pie | scatter | bubble | funnel | pyramid | bar
   ] = js.undefined
-  var valueFormats: js.UndefOr[AnonClose] = js.undefined
-  var xAxis: js.UndefOr[AnonAxisLine] = js.undefined
-  var y2Axis: js.UndefOr[AnonAlignTickMarks] = js.undefined
-  var yAxis: js.UndefOr[AnonBaselineScaling] = js.undefined
+  var valueFormats: js.UndefOr[Close] = js.undefined
+  var xAxis: js.UndefOr[AxisLine] = js.undefined
+  var y2Axis: js.UndefOr[AlignTickMarks] = js.undefined
+  var yAxis: js.UndefOr[BaselineScaling] = js.undefined
   var zoomAndScroll: js.UndefOr[delayedScrollOnly | liveScrollOnly | delayed | live | off] = js.undefined
   var zoomDirection: js.UndefOr[x | y | auto] = js.undefined
 }
@@ -134,7 +134,7 @@ trait ojChartSettablePropertiesLenient[K, D]
 object ojChartSettablePropertiesLenient {
   @scala.inline
   def apply[K, D](
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     animationOnDataChange: auto | slideToLeft | slideToRight | none = null,
     animationOnDisplay: auto | alphaFade | zoom | none = null,
     as: String = null,
@@ -142,9 +142,9 @@ object ojChartSettablePropertiesLenient {
     data: DataProvider[K, D] = null,
     dataCursor: off | on | auto = null,
     dataCursorBehavior: smooth | snap | auto = null,
-    dataCursorPosition: AnonX = null,
-    dataLabel: /* context */ DataLabelContext => AnonInsert | AnonPreventDefault = null,
-    dnd: AnonDrag = null,
+    dataCursorPosition: X = null,
+    dataLabel: /* context */ DataLabelContext => Insert | PreventDefault = null,
+    dnd: Drag = null,
     dragMode: pan | zoom | select | off | user = null,
     drilling: on | seriesOnly | groupsOnly | off = null,
     groupComparator: (/* param0 */ js.Object, /* param1 */ js.Object) => Double = null,
@@ -154,32 +154,32 @@ object ojChartSettablePropertiesLenient {
     highlightedCategories: js.Array[String] = null,
     hoverBehavior: dim | none = null,
     initialZooming: first | last | none = null,
-    legend: AnonBackgroundColor = null,
+    legend: BackgroundColor = null,
     orientation: horizontal | vertical = null,
-    otherThreshold: Int | Double = null,
-    overview: AnonContent = null,
-    pieCenter: AnonConverter = null,
-    plotArea: AnonBorderWidth = null,
+    otherThreshold: js.UndefOr[Double] = js.undefined,
+    overview: Content = null,
+    pieCenter: Converter = null,
+    plotArea: BorderWidth = null,
     polarGridShape: polygon | circle = null,
     selection: js.Array[K] = null,
     selectionMode: single | multiple | none = null,
     seriesComparator: (/* param0 */ js.Object, /* param1 */ js.Object) => Double = null,
     sorting: ascending | descending | off = null,
     splitDualY: on | off | auto = null,
-    splitterPosition: Int | Double = null,
+    splitterPosition: js.UndefOr[Double] = js.undefined,
     stack: on | off = null,
     stackLabel: on | off = null,
-    styleDefaults: AnonAnimationDownColor = null,
+    styleDefaults: AnimationDownColor = null,
     timeAxisType: enabled | mixedFrequency | skipGaps | disabled | auto = null,
-    tooltip: AnonRenderer = null,
+    tooltip: Renderer = null,
     touchResponse: touchStart | auto = null,
     trackResize: on | off = null,
-    translations: AnonComponentName = null,
+    translations: ComponentName = null,
     `type`: line | area | lineWithArea | stock | boxPlot | combo | pie | scatter | bubble | funnel | pyramid | bar = null,
-    valueFormats: AnonClose = null,
-    xAxis: AnonAxisLine = null,
-    y2Axis: AnonAlignTickMarks = null,
-    yAxis: AnonBaselineScaling = null,
+    valueFormats: Close = null,
+    xAxis: AxisLine = null,
+    y2Axis: AlignTickMarks = null,
+    yAxis: BaselineScaling = null,
     zoomAndScroll: delayedScrollOnly | liveScrollOnly | delayed | live | off = null,
     zoomDirection: x | y | auto = null
   ): ojChartSettablePropertiesLenient[K, D] = {
@@ -206,7 +206,7 @@ object ojChartSettablePropertiesLenient {
     if (initialZooming != null) __obj.updateDynamic("initialZooming")(initialZooming.asInstanceOf[js.Any])
     if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (otherThreshold != null) __obj.updateDynamic("otherThreshold")(otherThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(otherThreshold)) __obj.updateDynamic("otherThreshold")(otherThreshold.get.asInstanceOf[js.Any])
     if (overview != null) __obj.updateDynamic("overview")(overview.asInstanceOf[js.Any])
     if (pieCenter != null) __obj.updateDynamic("pieCenter")(pieCenter.asInstanceOf[js.Any])
     if (plotArea != null) __obj.updateDynamic("plotArea")(plotArea.asInstanceOf[js.Any])
@@ -216,7 +216,7 @@ object ojChartSettablePropertiesLenient {
     if (seriesComparator != null) __obj.updateDynamic("seriesComparator")(js.Any.fromFunction2(seriesComparator))
     if (sorting != null) __obj.updateDynamic("sorting")(sorting.asInstanceOf[js.Any])
     if (splitDualY != null) __obj.updateDynamic("splitDualY")(splitDualY.asInstanceOf[js.Any])
-    if (splitterPosition != null) __obj.updateDynamic("splitterPosition")(splitterPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(splitterPosition)) __obj.updateDynamic("splitterPosition")(splitterPosition.get.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     if (stackLabel != null) __obj.updateDynamic("stackLabel")(stackLabel.asInstanceOf[js.Any])
     if (styleDefaults != null) __obj.updateDynamic("styleDefaults")(styleDefaults.asInstanceOf[js.Any])

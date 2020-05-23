@@ -11,9 +11,9 @@ trait IClientBlockGetByTransactionIdRequest extends js.Object {
 
 object IClientBlockGetByTransactionIdRequest {
   @scala.inline
-  def apply(transactionId: String = null): IClientBlockGetByTransactionIdRequest = {
+  def apply(transactionId: js.UndefOr[Null | String] = js.undefined): IClientBlockGetByTransactionIdRequest = {
     val __obj = js.Dynamic.literal()
-    if (transactionId != null) __obj.updateDynamic("transactionId")(transactionId.asInstanceOf[js.Any])
+    if (!js.isUndefined(transactionId)) __obj.updateDynamic("transactionId")(transactionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientBlockGetByTransactionIdRequest]
   }
 }

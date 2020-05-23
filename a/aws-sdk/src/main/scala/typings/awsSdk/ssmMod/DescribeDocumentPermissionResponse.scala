@@ -11,7 +11,7 @@ trait DescribeDocumentPermissionResponse extends js.Object {
     */
   var AccountIds: js.UndefOr[AccountIdList] = js.native
   /**
-    * A list of of AWS accounts where the current document is shared and the version shared with each account.
+    * A list of AWS accounts where the current document is shared and the version shared with each account.
     */
   var AccountSharingInfoList: js.UndefOr[typings.awsSdk.ssmMod.AccountSharingInfoList] = js.native
 }

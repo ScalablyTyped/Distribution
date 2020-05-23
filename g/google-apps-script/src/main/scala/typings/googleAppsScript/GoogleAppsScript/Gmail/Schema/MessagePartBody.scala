@@ -12,11 +12,11 @@ trait MessagePartBody extends js.Object {
 
 object MessagePartBody {
   @scala.inline
-  def apply(attachmentId: String = null, data: String = null, size: Int | Double = null): MessagePartBody = {
+  def apply(attachmentId: String = null, data: String = null, size: js.UndefOr[Double] = js.undefined): MessagePartBody = {
     val __obj = js.Dynamic.literal()
     if (attachmentId != null) __obj.updateDynamic("attachmentId")(attachmentId.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessagePartBody]
   }
 }

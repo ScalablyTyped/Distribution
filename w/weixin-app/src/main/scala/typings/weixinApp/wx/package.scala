@@ -23,29 +23,29 @@ package object wx {
   type DefaultData[V] = js.Object | (js.ThisFunction0[/* this */ V, js.Object])
   type DefaultMethods[V] = org.scalablytyped.runtime.StringDictionary[js.ThisFunction1[/* this */ V, /* repeated */ js.Any, js.Any]]
   type DefaultProps = js.Object | (typings.std.Record[java.lang.String, js.Any])
-  type FormEvent = typings.weixinApp.wx.BuiltInEvent[typings.weixinApp.weixinAppStrings.form, typings.weixinApp.AnonValue]
+  type FormEvent = typings.weixinApp.wx.BuiltInEvent[typings.weixinApp.weixinAppStrings.form, typings.weixinApp.anon.Value]
   /**
-  	 * 指定focus时的光标位置
-  	 * @version 1.5.0
-  	 */
-  type InputEvent = typings.weixinApp.wx.BuiltInEvent[typings.weixinApp.weixinAppStrings.input, typings.weixinApp.AnonCursor]
+    * 指定focus时的光标位置
+    * @version 1.5.0
+    */
+  type InputEvent = typings.weixinApp.wx.BuiltInEvent[typings.weixinApp.weixinAppStrings.input, typings.weixinApp.anon.Cursor]
   /**
-  	 * https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/observer.html
-  	 */
+    * https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/observer.html
+    */
   type ObserversDefs[V] = org.scalablytyped.runtime.StringDictionary[js.ThisFunction1[/* this */ V, /* repeated */ js.Any, js.Any]]
-  type Prop[T] = js.Function0[T] | typings.weixinApp.AnonInstantiable[T]
+  type Prop[T] = js.Function0[T] | typings.weixinApp.anon.Instantiable[T]
   type PropValidator[T] = typings.weixinApp.wx.PropOptions[T] | typings.weixinApp.wx.Prop[T] | js.Array[typings.weixinApp.wx.Prop[T]]
   /**
-  	 * There are two valid ways to define the type of data / properties:
-  	 *
-  	 * 1. { name: valueType }
-  	 * 2. { name: { type: valueType, value?: value } }
-  	 *
-  	 * and this conditional type will extract that out so the call-site will typecheck.
-  	 *
-  	 * Note this is different from PropOptions as it is the definitions you passed to Component function
-  	 * whereas this type is for call-site.
-  	 */
+    * There are two valid ways to define the type of data / properties:
+    *
+    * 1. { name: valueType }
+    * 2. { name: { type: valueType, value?: value } }
+    *
+    * and this conditional type will extract that out so the call-site will typecheck.
+    *
+    * Note this is different from PropOptions as it is the definitions you passed to Component function
+    * whereas this type is for call-site.
+    */
   type PropValueType[Def] = js.Any
   type PropsDefinition[T] = typings.weixinApp.wx.ArrayPropsDefinition[T] | typings.weixinApp.wx.RecordPropsDefinition[T]
   type RecordPropsDefinition[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 

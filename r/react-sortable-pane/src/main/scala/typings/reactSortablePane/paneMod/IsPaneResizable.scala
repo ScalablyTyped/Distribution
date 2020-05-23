@@ -18,9 +18,9 @@ object IsPaneResizable {
     y: js.UndefOr[Boolean] = js.undefined
   ): IsPaneResizable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (!js.isUndefined(xy)) __obj.updateDynamic("xy")(xy.asInstanceOf[js.Any])
-    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xy)) __obj.updateDynamic("xy")(xy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsPaneResizable]
   }
 }

@@ -14,10 +14,10 @@ trait ITelephonySynthesizeSpeech extends js.Object {
 
 object ITelephonySynthesizeSpeech {
   @scala.inline
-  def apply(ssml: String = null, text: String = null): ITelephonySynthesizeSpeech = {
+  def apply(ssml: js.UndefOr[Null | String] = js.undefined, text: js.UndefOr[Null | String] = js.undefined): ITelephonySynthesizeSpeech = {
     val __obj = js.Dynamic.literal()
-    if (ssml != null) __obj.updateDynamic("ssml")(ssml.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssml)) __obj.updateDynamic("ssml")(ssml.asInstanceOf[js.Any])
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITelephonySynthesizeSpeech]
   }
 }

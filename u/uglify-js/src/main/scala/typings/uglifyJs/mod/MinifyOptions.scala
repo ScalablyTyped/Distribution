@@ -81,14 +81,14 @@ object MinifyOptions {
   ): MinifyOptions = {
     val __obj = js.Dynamic.literal()
     if (compress != null) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
-    if (!js.isUndefined(ie8)) __obj.updateDynamic("ie8")(ie8.asInstanceOf[js.Any])
-    if (!js.isUndefined(keep_fnames)) __obj.updateDynamic("keep_fnames")(keep_fnames.asInstanceOf[js.Any])
+    if (!js.isUndefined(ie8)) __obj.updateDynamic("ie8")(ie8.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keep_fnames)) __obj.updateDynamic("keep_fnames")(keep_fnames.get.asInstanceOf[js.Any])
     if (mangle != null) __obj.updateDynamic("mangle")(mangle.asInstanceOf[js.Any])
     if (nameCache != null) __obj.updateDynamic("nameCache")(nameCache.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
     if (sourceMap != null) __obj.updateDynamic("sourceMap")(sourceMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(toplevel)) __obj.updateDynamic("toplevel")(toplevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(toplevel)) __obj.updateDynamic("toplevel")(toplevel.get.asInstanceOf[js.Any])
     if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[MinifyOptions]
   }

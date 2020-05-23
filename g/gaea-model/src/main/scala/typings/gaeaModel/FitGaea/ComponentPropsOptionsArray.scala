@@ -1,7 +1,7 @@
 package typings.gaeaModel.FitGaea
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.gaeaModel.AnonCurrentUnit
+import typings.gaeaModel.anon.CurrentUnit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ object ComponentPropsOptionsArray {
     array: js.Array[ComponentPropsOptionsArrayValue] = null,
     emptyValue: js.Any = null,
     instance: js.Array[StringDictionary[ComponentPropsOptionValue]] = null,
-    number: AnonCurrentUnit = null,
+    number: CurrentUnit = null,
     selector: js.Array[ComponentPropsOptionsSelector] = null,
     `type`: String = null
   ): ComponentPropsOptionsArray = {

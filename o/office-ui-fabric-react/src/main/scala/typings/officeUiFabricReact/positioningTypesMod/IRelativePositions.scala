@@ -1,13 +1,12 @@
 package typings.officeUiFabricReact.positioningTypesMod
 
-import typings.officeUiFabricReact.AnonPosition
 import typings.officeUiFabricReact.directionalHintMod.DirectionalHint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IRelativePositions extends js.Object {
-  var beakPosition: AnonPosition
+  var beakPosition: typings.officeUiFabricReact.anon.Position
   var calloutPosition: IPosition
   var directionalClassName: String
   var submenuDirection: DirectionalHint
@@ -16,7 +15,7 @@ trait IRelativePositions extends js.Object {
 object IRelativePositions {
   @scala.inline
   def apply(
-    beakPosition: AnonPosition,
+    beakPosition: typings.officeUiFabricReact.anon.Position,
     calloutPosition: IPosition,
     directionalClassName: String,
     submenuDirection: DirectionalHint

@@ -15,11 +15,11 @@ object ConsistentHashRingOptions {
   @scala.inline
   def apply(
     computeHash: (/* key */ String | Double, /* seed */ Double) => Double = null,
-    numberOfVirtualNodesPerCollection: Int | Double = null
+    numberOfVirtualNodesPerCollection: js.UndefOr[Double] = js.undefined
   ): ConsistentHashRingOptions = {
     val __obj = js.Dynamic.literal()
     if (computeHash != null) __obj.updateDynamic("computeHash")(js.Any.fromFunction2(computeHash))
-    if (numberOfVirtualNodesPerCollection != null) __obj.updateDynamic("numberOfVirtualNodesPerCollection")(numberOfVirtualNodesPerCollection.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfVirtualNodesPerCollection)) __obj.updateDynamic("numberOfVirtualNodesPerCollection")(numberOfVirtualNodesPerCollection.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsistentHashRingOptions]
   }
 }

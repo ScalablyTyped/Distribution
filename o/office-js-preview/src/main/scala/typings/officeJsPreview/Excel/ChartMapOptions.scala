@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.ChartMapOptionsData
 import typings.officeJsPreview.Excel.Interfaces.ChartMapOptionsLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.ChartMapOptionsUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.Albers
 import typings.officeJsPreview.officeJsPreviewStrings.Automatic
 import typings.officeJsPreview.officeJsPreviewStrings.BestFit
@@ -31,29 +31,28 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
-@JSGlobal("Excel.ChartMapOptions")
 @js.native
-class ChartMapOptions () extends ClientObject {
+trait ChartMapOptions extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_ChartMapOptions: RequestContext = js.native
   /**
     *
-    * Returns or sets the series map labels strategy of a region map chart. Read/Write.
+    * Specifies the series map labels strategy of a region map chart.
     *
     * [Api set: ExcelApi 1.9]
     */
   var labelStrategy: ChartMapLabelStrategy | None | BestFit | ShowAll = js.native
   /**
     *
-    * Returns or sets the series mapping level of a region map chart. Read/Write.
+    * Specifies the series mapping level of a region map chart.
     *
     * [Api set: ExcelApi 1.9]
     */
   var level: ChartMapAreaLevel | Automatic | DataOnly | City | County | State | Country | Continent | World = js.native
   /**
     *
-    * Returns or sets the series projection type of a region map chart. Read/Write.
+    * Specifies the series projection type of a region map chart.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -65,7 +64,7 @@ class ChartMapOptions () extends ClientObject {
     */
   def load(): ChartMapOptions = js.native
   def load(options: ChartMapOptionsLoadOptions): ChartMapOptions = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ChartMapOptions = js.native
+  def load(propertyNamesAndPaths: Expand): ChartMapOptions = js.native
   def load(propertyNames: String): ChartMapOptions = js.native
   def load(propertyNames: js.Array[String]): ChartMapOptions = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

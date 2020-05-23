@@ -35,20 +35,20 @@ trait JobExecutionSummary extends js.Object {
 object JobExecutionSummary {
   @scala.inline
   def apply(
-    executionNumber: Int | Double = null,
+    executionNumber: js.UndefOr[ExecutionNumber] = js.undefined,
     jobId: JobId = null,
-    lastUpdatedAt: Int | Double = null,
-    queuedAt: Int | Double = null,
-    startedAt: Int | Double = null,
-    versionNumber: Int | Double = null
+    lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.undefined,
+    queuedAt: js.UndefOr[QueuedAt] = js.undefined,
+    startedAt: js.UndefOr[StartedAt] = js.undefined,
+    versionNumber: js.UndefOr[VersionNumber] = js.undefined
   ): JobExecutionSummary = {
     val __obj = js.Dynamic.literal()
-    if (executionNumber != null) __obj.updateDynamic("executionNumber")(executionNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(executionNumber)) __obj.updateDynamic("executionNumber")(executionNumber.get.asInstanceOf[js.Any])
     if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
-    if (lastUpdatedAt != null) __obj.updateDynamic("lastUpdatedAt")(lastUpdatedAt.asInstanceOf[js.Any])
-    if (queuedAt != null) __obj.updateDynamic("queuedAt")(queuedAt.asInstanceOf[js.Any])
-    if (startedAt != null) __obj.updateDynamic("startedAt")(startedAt.asInstanceOf[js.Any])
-    if (versionNumber != null) __obj.updateDynamic("versionNumber")(versionNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastUpdatedAt)) __obj.updateDynamic("lastUpdatedAt")(lastUpdatedAt.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(queuedAt)) __obj.updateDynamic("queuedAt")(queuedAt.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startedAt)) __obj.updateDynamic("startedAt")(startedAt.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(versionNumber)) __obj.updateDynamic("versionNumber")(versionNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobExecutionSummary]
   }
 }

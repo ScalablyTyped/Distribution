@@ -91,11 +91,11 @@ object LaunchConfiguration {
     ImageId: XmlStringMaxLen255,
     InstanceType: XmlStringMaxLen255,
     LaunchConfigurationName: XmlStringMaxLen255,
-    AssociatePublicIpAddress: js.UndefOr[Boolean] = js.undefined,
+    AssociatePublicIpAddress: js.UndefOr[AssociatePublicIpAddress] = js.undefined,
     BlockDeviceMappings: BlockDeviceMappings = null,
     ClassicLinkVPCId: XmlStringMaxLen255 = null,
     ClassicLinkVPCSecurityGroups: ClassicLinkVPCSecurityGroups = null,
-    EbsOptimized: js.UndefOr[Boolean] = js.undefined,
+    EbsOptimized: js.UndefOr[EbsOptimized] = js.undefined,
     IamInstanceProfile: XmlStringMaxLen1600 = null,
     InstanceMonitoring: InstanceMonitoring = null,
     KernelId: XmlStringMaxLen255 = null,
@@ -108,11 +108,11 @@ object LaunchConfiguration {
     UserData: XmlStringUserData = null
   ): LaunchConfiguration = {
     val __obj = js.Dynamic.literal(CreatedTime = CreatedTime.asInstanceOf[js.Any], ImageId = ImageId.asInstanceOf[js.Any], InstanceType = InstanceType.asInstanceOf[js.Any], LaunchConfigurationName = LaunchConfigurationName.asInstanceOf[js.Any])
-    if (!js.isUndefined(AssociatePublicIpAddress)) __obj.updateDynamic("AssociatePublicIpAddress")(AssociatePublicIpAddress.asInstanceOf[js.Any])
+    if (!js.isUndefined(AssociatePublicIpAddress)) __obj.updateDynamic("AssociatePublicIpAddress")(AssociatePublicIpAddress.get.asInstanceOf[js.Any])
     if (BlockDeviceMappings != null) __obj.updateDynamic("BlockDeviceMappings")(BlockDeviceMappings.asInstanceOf[js.Any])
     if (ClassicLinkVPCId != null) __obj.updateDynamic("ClassicLinkVPCId")(ClassicLinkVPCId.asInstanceOf[js.Any])
     if (ClassicLinkVPCSecurityGroups != null) __obj.updateDynamic("ClassicLinkVPCSecurityGroups")(ClassicLinkVPCSecurityGroups.asInstanceOf[js.Any])
-    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.asInstanceOf[js.Any])
+    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.get.asInstanceOf[js.Any])
     if (IamInstanceProfile != null) __obj.updateDynamic("IamInstanceProfile")(IamInstanceProfile.asInstanceOf[js.Any])
     if (InstanceMonitoring != null) __obj.updateDynamic("InstanceMonitoring")(InstanceMonitoring.asInstanceOf[js.Any])
     if (KernelId != null) __obj.updateDynamic("KernelId")(KernelId.asInstanceOf[js.Any])

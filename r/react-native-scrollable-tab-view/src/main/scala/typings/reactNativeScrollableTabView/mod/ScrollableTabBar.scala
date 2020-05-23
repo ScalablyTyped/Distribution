@@ -1,7 +1,7 @@
 package typings.reactNativeScrollableTabView.mod
 
 import typings.react.mod.Component
-import typings.reactNativeScrollableTabView.TabBarPropsScrollableTabB
+import typings.reactNativeScrollableTabView.anon.TabBarPropsScrollableTabB
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

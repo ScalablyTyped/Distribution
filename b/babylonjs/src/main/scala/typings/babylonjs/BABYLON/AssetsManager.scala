@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.AssetsManager")
 @js.native
-class AssetsManager protected () extends js.Object {
-  /**
-    * Creates a new AssetsManager
-    * @param scene defines the scene to work on
-    */
-  def this(scene: Scene) = this()
+trait AssetsManager extends js.Object {
   var _decreaseWaitingTasksCount: js.Any = js.native
   var _isLoading: js.Any = js.native
   var _runTask: js.Any = js.native

@@ -18,26 +18,26 @@ trait AppImageOptions
 object AppImageOptions {
   @scala.inline
   def apply(
-    artifactName: String = null,
-    category: String = null,
-    description: String = null,
-    desktop: js.Any = null,
-    executableArgs: js.Array[String] = null,
-    license: String = null,
-    mimeTypes: js.Array[String] = null,
-    publish: Publish = null,
-    synopsis: String = null
+    artifactName: js.UndefOr[Null | String] = js.undefined,
+    category: js.UndefOr[Null | String] = js.undefined,
+    description: js.UndefOr[Null | String] = js.undefined,
+    desktop: js.UndefOr[Null | js.Any] = js.undefined,
+    executableArgs: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    license: js.UndefOr[Null | String] = js.undefined,
+    mimeTypes: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    publish: js.UndefOr[Null | Publish] = js.undefined,
+    synopsis: js.UndefOr[Null | String] = js.undefined
   ): AppImageOptions = {
     val __obj = js.Dynamic.literal()
-    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (desktop != null) __obj.updateDynamic("desktop")(desktop.asInstanceOf[js.Any])
-    if (executableArgs != null) __obj.updateDynamic("executableArgs")(executableArgs.asInstanceOf[js.Any])
-    if (license != null) __obj.updateDynamic("license")(license.asInstanceOf[js.Any])
-    if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes.asInstanceOf[js.Any])
-    if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
-    if (synopsis != null) __obj.updateDynamic("synopsis")(synopsis.asInstanceOf[js.Any])
+    if (!js.isUndefined(artifactName)) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
+    if (!js.isUndefined(category)) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(desktop)) __obj.updateDynamic("desktop")(desktop.asInstanceOf[js.Any])
+    if (!js.isUndefined(executableArgs)) __obj.updateDynamic("executableArgs")(executableArgs.asInstanceOf[js.Any])
+    if (!js.isUndefined(license)) __obj.updateDynamic("license")(license.asInstanceOf[js.Any])
+    if (!js.isUndefined(mimeTypes)) __obj.updateDynamic("mimeTypes")(mimeTypes.asInstanceOf[js.Any])
+    if (!js.isUndefined(publish)) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
+    if (!js.isUndefined(synopsis)) __obj.updateDynamic("synopsis")(synopsis.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppImageOptions]
   }
 }

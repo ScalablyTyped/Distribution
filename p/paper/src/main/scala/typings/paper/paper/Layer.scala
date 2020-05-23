@@ -12,27 +12,8 @@ import scala.scalajs.js.annotation._
   * An array of all layers in a project can be accessed through
   * {@link Project#layers}.
   */
-@JSGlobal("paper.Layer")
 @js.native
-/** 
-  * Creates a new Layer item and places it at the end of the
-  * {@link Project#layers} array. The newly created layer will be activated,
-  * so all newly created items will be placed within it.
-  * 
-  * @param children - An array of items that will be added to the
-  * newly created layer
-  */
-class Layer () extends Group {
-  def this(children: js.Array[Item]) = this()
-  /** 
-    * Creates a new Layer item and places it at the end of the
-    * {@link Project#layers} array. The newly created layer will be activated,
-    * so all newly created items will be placed within it.
-    * 
-    * @param object - an object containing the properties to be set on
-    *     the layer
-    */
-  def this(`object`: js.Object) = this()
+trait Layer extends Group {
   /** 
     * Activates the layer.
     */

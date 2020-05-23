@@ -55,30 +55,30 @@ trait ReplicationTaskStats extends js.Object {
 object ReplicationTaskStats {
   @scala.inline
   def apply(
-    ElapsedTimeMillis: Int | Double = null,
+    ElapsedTimeMillis: js.UndefOr[Long] = js.undefined,
     FreshStartDate: TStamp = null,
     FullLoadFinishDate: TStamp = null,
-    FullLoadProgressPercent: Int | Double = null,
+    FullLoadProgressPercent: js.UndefOr[Integer] = js.undefined,
     FullLoadStartDate: TStamp = null,
     StartDate: TStamp = null,
     StopDate: TStamp = null,
-    TablesErrored: Int | Double = null,
-    TablesLoaded: Int | Double = null,
-    TablesLoading: Int | Double = null,
-    TablesQueued: Int | Double = null
+    TablesErrored: js.UndefOr[Integer] = js.undefined,
+    TablesLoaded: js.UndefOr[Integer] = js.undefined,
+    TablesLoading: js.UndefOr[Integer] = js.undefined,
+    TablesQueued: js.UndefOr[Integer] = js.undefined
   ): ReplicationTaskStats = {
     val __obj = js.Dynamic.literal()
-    if (ElapsedTimeMillis != null) __obj.updateDynamic("ElapsedTimeMillis")(ElapsedTimeMillis.asInstanceOf[js.Any])
+    if (!js.isUndefined(ElapsedTimeMillis)) __obj.updateDynamic("ElapsedTimeMillis")(ElapsedTimeMillis.get.asInstanceOf[js.Any])
     if (FreshStartDate != null) __obj.updateDynamic("FreshStartDate")(FreshStartDate.asInstanceOf[js.Any])
     if (FullLoadFinishDate != null) __obj.updateDynamic("FullLoadFinishDate")(FullLoadFinishDate.asInstanceOf[js.Any])
-    if (FullLoadProgressPercent != null) __obj.updateDynamic("FullLoadProgressPercent")(FullLoadProgressPercent.asInstanceOf[js.Any])
+    if (!js.isUndefined(FullLoadProgressPercent)) __obj.updateDynamic("FullLoadProgressPercent")(FullLoadProgressPercent.get.asInstanceOf[js.Any])
     if (FullLoadStartDate != null) __obj.updateDynamic("FullLoadStartDate")(FullLoadStartDate.asInstanceOf[js.Any])
     if (StartDate != null) __obj.updateDynamic("StartDate")(StartDate.asInstanceOf[js.Any])
     if (StopDate != null) __obj.updateDynamic("StopDate")(StopDate.asInstanceOf[js.Any])
-    if (TablesErrored != null) __obj.updateDynamic("TablesErrored")(TablesErrored.asInstanceOf[js.Any])
-    if (TablesLoaded != null) __obj.updateDynamic("TablesLoaded")(TablesLoaded.asInstanceOf[js.Any])
-    if (TablesLoading != null) __obj.updateDynamic("TablesLoading")(TablesLoading.asInstanceOf[js.Any])
-    if (TablesQueued != null) __obj.updateDynamic("TablesQueued")(TablesQueued.asInstanceOf[js.Any])
+    if (!js.isUndefined(TablesErrored)) __obj.updateDynamic("TablesErrored")(TablesErrored.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TablesLoaded)) __obj.updateDynamic("TablesLoaded")(TablesLoaded.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TablesLoading)) __obj.updateDynamic("TablesLoading")(TablesLoading.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TablesQueued)) __obj.updateDynamic("TablesQueued")(TablesQueued.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicationTaskStats]
   }
 }

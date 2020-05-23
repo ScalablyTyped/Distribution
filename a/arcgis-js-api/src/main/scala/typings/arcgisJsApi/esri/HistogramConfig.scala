@@ -57,22 +57,22 @@ object HistogramConfig {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    average: Int | Double = null,
+    average: js.UndefOr[Double] = js.undefined,
     barCreatedFunction: (/* index */ Double, /* element */ js.Any) => Unit = null,
     bins: js.Array[Bin] = null,
     dataLineCreatedFunction: (/* lineElement */ js.Any, /* labelElement */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double]) => Unit = null,
     dataLines: js.Array[HistogramConfigDataLines] = null,
-    standardDeviation: Int | Double = null,
-    standardDeviationCount: Int | Double = null
+    standardDeviation: js.UndefOr[Double] = js.undefined,
+    standardDeviationCount: js.UndefOr[Double] = js.undefined
   ): HistogramConfig = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (average != null) __obj.updateDynamic("average")(average.asInstanceOf[js.Any])
+    if (!js.isUndefined(average)) __obj.updateDynamic("average")(average.get.asInstanceOf[js.Any])
     if (barCreatedFunction != null) __obj.updateDynamic("barCreatedFunction")(js.Any.fromFunction2(barCreatedFunction))
     if (bins != null) __obj.updateDynamic("bins")(bins.asInstanceOf[js.Any])
     if (dataLineCreatedFunction != null) __obj.updateDynamic("dataLineCreatedFunction")(js.Any.fromFunction3(dataLineCreatedFunction))
     if (dataLines != null) __obj.updateDynamic("dataLines")(dataLines.asInstanceOf[js.Any])
-    if (standardDeviation != null) __obj.updateDynamic("standardDeviation")(standardDeviation.asInstanceOf[js.Any])
-    if (standardDeviationCount != null) __obj.updateDynamic("standardDeviationCount")(standardDeviationCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(standardDeviation)) __obj.updateDynamic("standardDeviation")(standardDeviation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(standardDeviationCount)) __obj.updateDynamic("standardDeviationCount")(standardDeviationCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistogramConfig]
   }
 }

@@ -24,8 +24,8 @@ object SharedAlbumOptions {
     isCommentable: js.UndefOr[Boolean] = js.undefined
   ): SharedAlbumOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isCollaborative)) __obj.updateDynamic("isCollaborative")(isCollaborative.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCommentable)) __obj.updateDynamic("isCommentable")(isCommentable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCollaborative)) __obj.updateDynamic("isCollaborative")(isCollaborative.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCommentable)) __obj.updateDynamic("isCommentable")(isCommentable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedAlbumOptions]
   }
 }

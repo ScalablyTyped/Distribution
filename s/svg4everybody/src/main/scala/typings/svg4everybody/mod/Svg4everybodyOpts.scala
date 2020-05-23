@@ -30,8 +30,8 @@ object Svg4everybodyOpts {
     val __obj = js.Dynamic.literal()
     if (attributeName != null) __obj.updateDynamic("attributeName")(attributeName.asInstanceOf[js.Any])
     if (fallback != null) __obj.updateDynamic("fallback")(js.Any.fromFunction3(fallback))
-    if (!js.isUndefined(nosvg)) __obj.updateDynamic("nosvg")(nosvg.asInstanceOf[js.Any])
-    if (!js.isUndefined(polyfill)) __obj.updateDynamic("polyfill")(polyfill.asInstanceOf[js.Any])
+    if (!js.isUndefined(nosvg)) __obj.updateDynamic("nosvg")(nosvg.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(polyfill)) __obj.updateDynamic("polyfill")(polyfill.get.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction3(validate))
     __obj.asInstanceOf[Svg4everybodyOpts]
   }

@@ -1,5 +1,6 @@
 package typings.slimerjs
 
+import typings.slimerjs.anon.Charset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +33,7 @@ trait FileSystem extends js.Object {
   // open(path: string, mode: string): IStream;
   // open(path: string, options: { mode: string; charset?: string; }): IStream;
   def open(path: String, mode: String): Stream = js.native
-  def open(path: String, mode: AnonCharset): Stream = js.native
+  def open(path: String, mode: Charset): Stream = js.native
   def read(path: String): String = js.native
   def readLink(path: String): String = js.native
   def remove(path: String): Unit = js.native

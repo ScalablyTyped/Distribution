@@ -22,15 +22,15 @@ object SvgCumulativeIconSet {
   def apply(
     cumulative: `true`,
     iconIdParser: (/* id */ String, /* params */ js.Array[String]) => String = null,
-    iconSize: Int | Double = null,
+    iconSize: js.UndefOr[Double] = js.undefined,
     viewBox: String = null,
-    waitDuration: Int | Double = null
+    waitDuration: js.UndefOr[Double] = js.undefined
   ): SvgCumulativeIconSet = {
     val __obj = js.Dynamic.literal(cumulative = cumulative.asInstanceOf[js.Any])
     if (iconIdParser != null) __obj.updateDynamic("iconIdParser")(js.Any.fromFunction2(iconIdParser))
-    if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(iconSize)) __obj.updateDynamic("iconSize")(iconSize.get.asInstanceOf[js.Any])
     if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox.asInstanceOf[js.Any])
-    if (waitDuration != null) __obj.updateDynamic("waitDuration")(waitDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitDuration)) __obj.updateDynamic("waitDuration")(waitDuration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SvgCumulativeIconSet]
   }
 }

@@ -11,7 +11,7 @@ trait ListTagsForResourceInput extends js.Object {
     */
   var NextToken: js.UndefOr[typings.awsSdk.kinesisvideoMod.NextToken] = js.native
   /**
-    * The ARN of the signaling channel for which you want to list tags.
+    * The Amazon Resource Name (ARN) of the signaling channel for which you want to list tags.
     */
   var ResourceARN: typings.awsSdk.kinesisvideoMod.ResourceARN = js.native
 }

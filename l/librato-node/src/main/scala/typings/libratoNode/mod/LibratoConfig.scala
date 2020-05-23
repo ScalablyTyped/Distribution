@@ -20,14 +20,14 @@ object LibratoConfig {
   def apply(
     email: String,
     token: String,
-    period: Int | Double = null,
+    period: js.UndefOr[Double] = js.undefined,
     prefix: String = null,
     requestOptions: LibratoRequestOptions = null,
     simulate: `false` = null,
     source: String = null
   ): LibratoConfig = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
+    if (!js.isUndefined(period)) __obj.updateDynamic("period")(period.get.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions.asInstanceOf[js.Any])
     if (simulate != null) __obj.updateDynamic("simulate")(simulate.asInstanceOf[js.Any])

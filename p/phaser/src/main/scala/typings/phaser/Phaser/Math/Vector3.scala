@@ -9,18 +9,8 @@ import scala.scalajs.js.annotation._
   * 
   * A three-component vector.
   */
-@JSGlobal("Phaser.Math.Vector3")
 @js.native
-/**
-  * 
-  * @param x The x component.
-  * @param y The y component.
-  * @param z The z component.
-  */
-class Vector3 () extends js.Object {
-  def this(x: Double) = this()
-  def this(x: Double, y: Double) = this()
-  def this(x: Double, y: Double, z: Double) = this()
+trait Vector3 extends js.Object {
   /**
     * The x component of this Vector.
     */
@@ -195,59 +185,5 @@ class Vector3 () extends js.Object {
     * Sets the y component of the vector to 1, and the others to 0.
     */
   def up(): Vector3 = js.native
-}
-
-/* static members */
-@JSGlobal("Phaser.Math.Vector3")
-@js.native
-object Vector3 extends js.Object {
-  /**
-    * A static back Vector3 for use by reference.
-    * 
-    * This constant is meant for comparison operations and should not be modified directly.
-    */
-  val BACK: Vector3 = js.native
-  /**
-    * A static down Vector3 for use by reference.
-    * 
-    * This constant is meant for comparison operations and should not be modified directly.
-    */
-  val DOWN: Vector3 = js.native
-  /**
-    * A static forward Vector3 for use by reference.
-    * 
-    * This constant is meant for comparison operations and should not be modified directly.
-    */
-  val FORWARD: Vector3 = js.native
-  /**
-    * A static left Vector3 for use by reference.
-    * 
-    * This constant is meant for comparison operations and should not be modified directly.
-    */
-  val LEFT: Vector3 = js.native
-  /**
-    * A static one Vector3 for use by reference.
-    * 
-    * This constant is meant for comparison operations and should not be modified directly.
-    */
-  val ONE: Vector3 = js.native
-  /**
-    * A static right Vector3 for use by reference.
-    * 
-    * This constant is meant for comparison operations and should not be modified directly.
-    */
-  val RIGHT: Vector3 = js.native
-  /**
-    * A static up Vector3 for use by reference.
-    * 
-    * This constant is meant for comparison operations and should not be modified directly.
-    */
-  val UP: Vector3 = js.native
-  /**
-    * A static zero Vector3 for use by reference.
-    * 
-    * This constant is meant for comparison operations and should not be modified directly.
-    */
-  val ZERO: Vector3 = js.native
 }
 

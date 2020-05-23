@@ -13,9 +13,9 @@ trait ISourceCodeInfo extends js.Object {
 
 object ISourceCodeInfo {
   @scala.inline
-  def apply(location: js.Array[ILocation] = null): ISourceCodeInfo = {
+  def apply(location: js.UndefOr[Null | js.Array[ILocation]] = js.undefined): ISourceCodeInfo = {
     val __obj = js.Dynamic.literal()
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (!js.isUndefined(location)) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISourceCodeInfo]
   }
 }

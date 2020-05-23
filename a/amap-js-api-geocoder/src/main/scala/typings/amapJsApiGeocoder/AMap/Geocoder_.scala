@@ -5,21 +5,14 @@ import typings.amapJsApi.AMap.Lang
 import typings.amapJsApi.AMap.LocationValue
 import typings.amapJsApiGeocoder.AMap.Geocoder.BatchReGeocodeResult
 import typings.amapJsApiGeocoder.AMap.Geocoder.GeocodeResult
-import typings.amapJsApiGeocoder.AMap.Geocoder.Options
 import typings.amapJsApiGeocoder.AMap.Geocoder.ReGeocodeResult
 import typings.amapJsApiGeocoder.AMap.Geocoder.SearchStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.Geocoder")
 @js.native
-/**
-  * 地理编码与逆地理编码
-  * @param options 选项
-  */
-class Geocoder_ () extends EventEmitter {
-  def this(options: Options) = this()
+trait Geocoder_ extends EventEmitter {
   /**
     * 根据给定坐标进行解析
     * @param locations 坐标数组

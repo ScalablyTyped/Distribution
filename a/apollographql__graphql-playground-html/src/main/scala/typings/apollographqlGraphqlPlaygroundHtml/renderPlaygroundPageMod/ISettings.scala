@@ -47,7 +47,7 @@ object ISettings {
     __obj.updateDynamic("general.betaUpdates")(generalDotbetaUpdates.asInstanceOf[js.Any])
     __obj.updateDynamic("request.credentials")(requestDotcredentials.asInstanceOf[js.Any])
     __obj.updateDynamic("tracing.hideTracingResponse")(tracingDothideTracingResponse.asInstanceOf[js.Any])
-    if (!js.isUndefined(queryPlanDothideQueryPlanResponse)) __obj.updateDynamic("queryPlan.hideQueryPlanResponse")(queryPlanDothideQueryPlanResponse.asInstanceOf[js.Any])
+    if (!js.isUndefined(queryPlanDothideQueryPlanResponse)) __obj.updateDynamic("queryPlan.hideQueryPlanResponse")(queryPlanDothideQueryPlanResponse.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISettings]
   }
 }

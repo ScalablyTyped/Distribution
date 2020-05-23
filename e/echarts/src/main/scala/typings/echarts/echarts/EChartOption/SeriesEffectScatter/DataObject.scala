@@ -1,9 +1,9 @@
 package typings.echarts.echarts.EChartOption.SeriesEffectScatter
 
-import typings.echarts.AnonBorderType
-import typings.echarts.AnonDistance
-import typings.echarts.AnonExtraCssText
-import typings.echarts.AnonLabelAnonDistance
+import typings.echarts.anon.BorderType
+import typings.echarts.anon.Distance
+import typings.echarts.anon.ExtraCssText
+import typings.echarts.anon.LabelDistance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,15 +12,15 @@ trait DataObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-effectScatter.data.emphasis
     */
-  var emphasis: js.UndefOr[AnonLabelAnonDistance] = js.undefined
+  var emphasis: js.UndefOr[LabelDistance] = js.undefined
   /**
     * @see https://echarts.apache.org/en/option.html#series-effectScatter.data.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderType] = js.undefined
+  var itemStyle: js.UndefOr[BorderType] = js.undefined
   /**
     * @see https://echarts.apache.org/en/option.html#series-effectScatter.data.label
     */
-  var label: js.UndefOr[AnonDistance] = js.undefined
+  var label: js.UndefOr[Distance] = js.undefined
   /**
     * Symbol of single data.
     *
@@ -121,30 +121,30 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-effectScatter.data.tooltip
     */
-  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
 }
 
 object DataObject {
   @scala.inline
   def apply(
-    emphasis: AnonLabelAnonDistance = null,
-    itemStyle: AnonBorderType = null,
-    label: AnonDistance = null,
+    emphasis: LabelDistance = null,
+    itemStyle: BorderType = null,
+    label: Distance = null,
     symbol: String = null,
     symbolKeepAspect: js.UndefOr[Boolean] = js.undefined,
     symbolOffset: js.Array[_] = null,
-    symbolRotate: Int | Double = null,
+    symbolRotate: js.UndefOr[Double] = js.undefined,
     symbolSize: js.Array[_] | Double = null,
-    tooltip: AnonExtraCssText = null
+    tooltip: ExtraCssText = null
   ): DataObject = {
     val __obj = js.Dynamic.literal()
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbolKeepAspect)) __obj.updateDynamic("symbolKeepAspect")(symbolKeepAspect.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolKeepAspect)) __obj.updateDynamic("symbolKeepAspect")(symbolKeepAspect.get.asInstanceOf[js.Any])
     if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset.asInstanceOf[js.Any])
-    if (symbolRotate != null) __obj.updateDynamic("symbolRotate")(symbolRotate.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolRotate)) __obj.updateDynamic("symbolRotate")(symbolRotate.get.asInstanceOf[js.Any])
     if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataObject]

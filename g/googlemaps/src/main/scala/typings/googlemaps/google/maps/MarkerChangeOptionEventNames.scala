@@ -4,7 +4,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/***** Overlays *****/
 /* Rewritten from type alias, can be one of: 
   - typings.googlemaps.googlemapsStrings.animation_changed
   - typings.googlemaps.googlemapsStrings.clickable_changed

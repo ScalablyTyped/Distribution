@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Usb
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object UsbEndpointType extends js.Object {
   /** Indicates a USB isochronous endpoint. */
   @js.native
   sealed trait isochronous extends UsbEndpointType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UsbEndpointType with Double] = js.native
-  /* 2 */ @js.native
-  object bulk extends TopLevel[bulk with Double]
-  
-  /* 0 */ @js.native
-  object control extends TopLevel[control with Double]
-  
-  /* 3 */ @js.native
-  object interrupt extends TopLevel[interrupt with Double]
-  
-  /* 1 */ @js.native
-  object isochronous extends TopLevel[isochronous with Double]
   
 }
 

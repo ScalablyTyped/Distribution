@@ -13,8 +13,8 @@ object UrlEncodedBodyParser_ {
   @scala.inline
   def apply(mapParams: js.UndefOr[Boolean] = js.undefined, overrideParams: js.UndefOr[Boolean] = js.undefined): UrlEncodedBodyParser_ = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(mapParams)) __obj.updateDynamic("mapParams")(mapParams.asInstanceOf[js.Any])
-    if (!js.isUndefined(overrideParams)) __obj.updateDynamic("overrideParams")(overrideParams.asInstanceOf[js.Any])
+    if (!js.isUndefined(mapParams)) __obj.updateDynamic("mapParams")(mapParams.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overrideParams)) __obj.updateDynamic("overrideParams")(overrideParams.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlEncodedBodyParser_]
   }
 }

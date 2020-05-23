@@ -1,6 +1,6 @@
 package typings.zingchart.mod
 
-import typings.zingchart.AnonCalloutoffset
+import typings.zingchart.anon.Calloutoffset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait refresh extends js.Object {
     * Enabling true will allow dynamic value range of the scale pertaining to the values. false (default) | true
     */
   var `adjust-scale`: js.UndefOr[Boolean] = js.undefined
-  var curtain: js.UndefOr[AnonCalloutoffset] = js.undefined
+  var curtain: js.UndefOr[Calloutoffset] = js.undefined
   /**
     * Sets the timeout between two refresh operations. If value is smaller than 50, seconds are assumed, otherwise milliseconds are assu
     * med. 5 | 10 | ...
@@ -42,20 +42,20 @@ object refresh {
   @scala.inline
   def apply(
     `adjust-scale`: js.UndefOr[Boolean] = js.undefined,
-    curtain: AnonCalloutoffset = null,
-    interval: Int | Double = null,
-    `max-ticks`: Int | Double = null,
-    `reset-timeout`: Int | Double = null,
+    curtain: Calloutoffset = null,
+    interval: js.UndefOr[Double] = js.undefined,
+    `max-ticks`: js.UndefOr[Double] = js.undefined,
+    `reset-timeout`: js.UndefOr[Double] = js.undefined,
     transport: String = null,
     `type`: String = null,
     url: String = null
   ): refresh = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(`adjust-scale`)) __obj.updateDynamic("adjust-scale")(`adjust-scale`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`adjust-scale`)) __obj.updateDynamic("adjust-scale")(`adjust-scale`.get.asInstanceOf[js.Any])
     if (curtain != null) __obj.updateDynamic("curtain")(curtain.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (`max-ticks` != null) __obj.updateDynamic("max-ticks")(`max-ticks`.asInstanceOf[js.Any])
-    if (`reset-timeout` != null) __obj.updateDynamic("reset-timeout")(`reset-timeout`.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`max-ticks`)) __obj.updateDynamic("max-ticks")(`max-ticks`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`reset-timeout`)) __obj.updateDynamic("reset-timeout")(`reset-timeout`.get.asInstanceOf[js.Any])
     if (transport != null) __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])

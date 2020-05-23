@@ -13,10 +13,10 @@ trait LatLng extends js.Object {
 
 object LatLng {
   @scala.inline
-  def apply(latitude: Int | Double = null, longitude: Int | Double = null): LatLng = {
+  def apply(latitude: js.UndefOr[Double] = js.undefined, longitude: js.UndefOr[Double] = js.undefined): LatLng = {
     val __obj = js.Dynamic.literal()
-    if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
-    if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
+    if (!js.isUndefined(latitude)) __obj.updateDynamic("latitude")(latitude.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(longitude)) __obj.updateDynamic("longitude")(longitude.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LatLng]
   }
 }

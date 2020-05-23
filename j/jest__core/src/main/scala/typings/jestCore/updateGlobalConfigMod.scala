@@ -1,5 +1,6 @@
 package typings.jestCore
 
+import typings.jestCore.anon.PartialPickGlobalConfigba
 import typings.jestTypes.configMod.GlobalConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`

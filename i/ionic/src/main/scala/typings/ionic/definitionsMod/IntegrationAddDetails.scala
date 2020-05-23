@@ -21,7 +21,7 @@ object IntegrationAddDetails {
   ): IntegrationAddDetails = {
     val __obj = js.Dynamic.literal(env = env.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     if (enableArgs != null) __obj.updateDynamic("enableArgs")(enableArgs.asInstanceOf[js.Any])
-    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.asInstanceOf[js.Any])
+    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntegrationAddDetails]
   }
 }

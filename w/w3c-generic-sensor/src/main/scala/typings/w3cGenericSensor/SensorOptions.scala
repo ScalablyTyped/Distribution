@@ -10,9 +10,9 @@ trait SensorOptions extends js.Object {
 
 object SensorOptions {
   @scala.inline
-  def apply(frequency: Int | Double = null): SensorOptions = {
+  def apply(frequency: js.UndefOr[Double] = js.undefined): SensorOptions = {
     val __obj = js.Dynamic.literal()
-    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
+    if (!js.isUndefined(frequency)) __obj.updateDynamic("frequency")(frequency.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SensorOptions]
   }
 }

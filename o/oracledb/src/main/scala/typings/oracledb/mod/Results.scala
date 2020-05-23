@@ -46,13 +46,13 @@ object Results {
     batchErrors: js.Array[DBError] = null,
     dmlRowCounts: js.Array[Double] = null,
     outBinds: js.Array[T] = null,
-    rowsAffected: Int | Double = null
+    rowsAffected: js.UndefOr[Double] = js.undefined
   ): Results[T] = {
     val __obj = js.Dynamic.literal()
     if (batchErrors != null) __obj.updateDynamic("batchErrors")(batchErrors.asInstanceOf[js.Any])
     if (dmlRowCounts != null) __obj.updateDynamic("dmlRowCounts")(dmlRowCounts.asInstanceOf[js.Any])
     if (outBinds != null) __obj.updateDynamic("outBinds")(outBinds.asInstanceOf[js.Any])
-    if (rowsAffected != null) __obj.updateDynamic("rowsAffected")(rowsAffected.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowsAffected)) __obj.updateDynamic("rowsAffected")(rowsAffected.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Results[T]]
   }
 }

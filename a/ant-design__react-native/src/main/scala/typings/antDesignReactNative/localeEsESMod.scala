@@ -1,5 +1,6 @@
 package typings.antDesignReactNative
 
+import typings.antDesignReactNative.anon.Calendar
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation._
 object localeEsESMod extends js.Object {
   @js.native
   object default extends js.Object {
-    var DatePickerLocale: AnonCalendar = js.native
+    var DatePickerLocale: Calendar = js.native
     var dismissText: String = js.native
     var extra: String = js.native
     var okText: String = js.native

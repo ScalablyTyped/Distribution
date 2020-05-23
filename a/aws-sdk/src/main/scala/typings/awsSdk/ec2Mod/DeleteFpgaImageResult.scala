@@ -14,9 +14,9 @@ trait DeleteFpgaImageResult extends js.Object {
 
 object DeleteFpgaImageResult {
   @scala.inline
-  def apply(Return: js.UndefOr[scala.Boolean] = js.undefined): DeleteFpgaImageResult = {
+  def apply(Return: js.UndefOr[Boolean] = js.undefined): DeleteFpgaImageResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Return)) __obj.updateDynamic("Return")(Return.asInstanceOf[js.Any])
+    if (!js.isUndefined(Return)) __obj.updateDynamic("Return")(Return.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFpgaImageResult]
   }
 }

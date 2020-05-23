@@ -25,12 +25,12 @@ trait MultiSelectFilterProps[T /* <: js.Object */] extends js.Object {
 
 object MultiSelectFilterProps {
   @scala.inline
-  def apply[T /* <: js.Object */](
+  def apply[T](
     options: MultiSelectFilterOptions | js.Function0[MultiSelectFilterOptions],
     className: String = null,
     comparator: Comparator = null,
     defaultValue: js.Any = null,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     getFilter: /* filter */ String => Unit = null,
     id: String = null,
     onFilter: /* filterValue */ String => Unit | js.Array[T] = null,
@@ -42,13 +42,13 @@ object MultiSelectFilterProps {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (comparator != null) __obj.updateDynamic("comparator")(comparator.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (getFilter != null) __obj.updateDynamic("getFilter")(js.Any.fromFunction1(getFilter))
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (onFilter != null) __obj.updateDynamic("onFilter")(js.Any.fromFunction1(onFilter))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(withoutEmptyOption)) __obj.updateDynamic("withoutEmptyOption")(withoutEmptyOption.asInstanceOf[js.Any])
+    if (!js.isUndefined(withoutEmptyOption)) __obj.updateDynamic("withoutEmptyOption")(withoutEmptyOption.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiSelectFilterProps[T]]
   }
 }

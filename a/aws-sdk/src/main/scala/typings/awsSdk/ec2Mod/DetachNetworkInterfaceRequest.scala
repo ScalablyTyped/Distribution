@@ -24,12 +24,12 @@ object DetachNetworkInterfaceRequest {
   @scala.inline
   def apply(
     AttachmentId: NetworkInterfaceAttachmentId,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
-    Force: js.UndefOr[scala.Boolean] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined,
+    Force: js.UndefOr[Boolean] = js.undefined
   ): DetachNetworkInterfaceRequest = {
     val __obj = js.Dynamic.literal(AttachmentId = AttachmentId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
-    if (!js.isUndefined(Force)) __obj.updateDynamic("Force")(Force.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Force)) __obj.updateDynamic("Force")(Force.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetachNetworkInterfaceRequest]
   }
 }

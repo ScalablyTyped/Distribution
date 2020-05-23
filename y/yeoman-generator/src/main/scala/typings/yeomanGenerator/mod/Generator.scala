@@ -2,9 +2,9 @@ package typings.yeomanGenerator.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.eventsMod.EventEmitter
-import typings.yeomanGenerator.AnonAdapter
-import typings.yeomanGenerator.AnonGit
-import typings.yeomanGenerator.AnonLink
+import typings.yeomanGenerator.anon.Adapter
+import typings.yeomanGenerator.anon.Git
+import typings.yeomanGenerator.anon.Link
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,12 +14,12 @@ trait Generator extends EventEmitter {
   var appname: String = js.native
   var config: Storage = js.native
   var description: String = js.native
-  var env: AnonAdapter = js.native
+  var env: Adapter = js.native
   var fs: MemFsEditor = js.native
   var options: StringDictionary[js.Any] = js.native
   var resolved: String = js.native
   // actions/user mixin
-  val user: AnonGit = js.native
+  val user: Git = js.native
   def argument(name: String, config: ArgumentConfig): this.type = js.native
   // actions/help mixin
   def argumentsHelp(): String = js.native
@@ -42,7 +42,7 @@ trait Generator extends EventEmitter {
   def bowerInstall(component: js.Array[String], options: js.Object): Unit = js.native
   def bowerInstall(component: js.Array[String], options: js.Object, spawnOptions: js.Object): Unit = js.native
   def composeWith(namespace: String, options: StringDictionary[js.Any]): this.type = js.native
-  def composeWith(namespace: String, options: StringDictionary[js.Any], settings: AnonLink): this.type = js.native
+  def composeWith(namespace: String, options: StringDictionary[js.Any], settings: Link): this.type = js.native
   def desc(description: String): this.type = js.native
   def destinationPath(path: String*): String = js.native
   def destinationRoot(): String = js.native

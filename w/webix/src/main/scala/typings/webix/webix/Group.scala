@@ -1,6 +1,5 @@
 package typings.webix.webix
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,8 +11,4 @@ trait Group extends js.Object {
   def group(config: js.Any, target: Double): Unit = js.native
   def ungroup(mode: Boolean): Unit = js.native
 }
-
-@JSGlobal("webix.Group")
-@js.native
-object Group extends TopLevel[Group]
 

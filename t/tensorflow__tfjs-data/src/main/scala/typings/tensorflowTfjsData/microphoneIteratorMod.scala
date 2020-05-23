@@ -1,6 +1,7 @@
 package typings.tensorflowTfjsData
 
 import typings.tensorflowTfjsCore.tensorTypesMod.TensorContainer
+import typings.tensorflowTfjsData.anon.Spectrogram
 import typings.tensorflowTfjsData.lazyIteratorMod.LazyIterator
 import typings.tensorflowTfjsData.typesMod.MicrophoneConfig
 import scala.scalajs.js
@@ -30,7 +31,7 @@ object microphoneIteratorMod extends js.Object {
     val smoothingTimeConstant: js.Any = js.native
     var stream: js.Any = js.native
     var timeData: js.Any = js.native
-    def capture(): js.Promise[AnonSpectrogram] = js.native
+    def capture(): js.Promise[Spectrogram] = js.native
     def getSampleRate(): Double = js.native
     def start(): js.Promise[Unit] = js.native
     def stop(): Unit = js.native

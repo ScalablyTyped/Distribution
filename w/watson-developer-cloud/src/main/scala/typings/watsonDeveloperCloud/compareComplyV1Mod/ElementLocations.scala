@@ -14,10 +14,10 @@ trait ElementLocations extends js.Object {
 
 object ElementLocations {
   @scala.inline
-  def apply(begin: Int | Double = null, end: Int | Double = null): ElementLocations = {
+  def apply(begin: js.UndefOr[Double] = js.undefined, end: js.UndefOr[Double] = js.undefined): ElementLocations = {
     val __obj = js.Dynamic.literal()
-    if (begin != null) __obj.updateDynamic("begin")(begin.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (!js.isUndefined(begin)) __obj.updateDynamic("begin")(begin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementLocations]
   }
 }

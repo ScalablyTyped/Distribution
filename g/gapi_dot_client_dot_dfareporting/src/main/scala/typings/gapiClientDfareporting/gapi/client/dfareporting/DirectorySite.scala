@@ -120,7 +120,7 @@ object DirectorySite {
     url: String = null
   ): DirectorySite = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (contactAssignments != null) __obj.updateDynamic("contactAssignments")(contactAssignments.asInstanceOf[js.Any])
     if (countryId != null) __obj.updateDynamic("countryId")(countryId.asInstanceOf[js.Any])
     if (currencyId != null) __obj.updateDynamic("currencyId")(currencyId.asInstanceOf[js.Any])

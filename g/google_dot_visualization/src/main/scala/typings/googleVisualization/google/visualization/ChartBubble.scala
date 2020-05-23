@@ -12,9 +12,13 @@ trait ChartBubble extends js.Object {
 
 object ChartBubble {
   @scala.inline
-  def apply(opacity: Int | Double = null, stroke: String = null, textStyle: ChartTextStyle = null): ChartBubble = {
+  def apply(
+    opacity: js.UndefOr[Double] = js.undefined,
+    stroke: String = null,
+    textStyle: ChartTextStyle = null
+  ): ChartBubble = {
     val __obj = js.Dynamic.literal()
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartBubble]

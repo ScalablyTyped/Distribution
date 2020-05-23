@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`coded-value`
 import typings.arcgisJsApi.arcgisJsApiStrings.inherited
 import typings.arcgisJsApi.arcgisJsApiStrings.range
@@ -25,8 +24,4 @@ trait Domain
     */
   var `type`: range | `coded-value` | inherited = js.native
 }
-
-@JSGlobal("__esri.Domain")
-@js.native
-object Domain extends TopLevel[DomainConstructor]
 

@@ -12,11 +12,15 @@ trait PointCollectionOption extends js.Object {
 
 object PointCollectionOption {
   @scala.inline
-  def apply(color: String = null, shape: Int | Double = null, size: Int | Double = null): PointCollectionOption = {
+  def apply(
+    color: String = null,
+    shape: js.UndefOr[ShapeType] = js.undefined,
+    size: js.UndefOr[SizeType] = js.undefined
+  ): PointCollectionOption = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(shape)) __obj.updateDynamic("shape")(shape.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointCollectionOption]
   }
 }

@@ -1,6 +1,6 @@
 package typings.forkTsCheckerWebpackPlugin.mod
 
-import typings.forkTsCheckerWebpackPlugin.PartialOptions
+import typings.forkTsCheckerWebpackPlugin.anon.PartialOptions
 import typings.workerRpc.mod.RpcProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,7 +1,7 @@
 package typings.openidClient.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.openidClient.AnonIdtoken
+import typings.openidClient.anon.Idtoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait AuthorizationParameters
   extends /* key */ StringDictionary[js.Any] {
   var acr_values: js.UndefOr[String] = js.undefined
   var audience: js.UndefOr[String] = js.undefined
-  var claims: js.UndefOr[String | AnonIdtoken] = js.undefined
+  var claims: js.UndefOr[String | Idtoken] = js.undefined
   var claims_locales: js.UndefOr[String] = js.undefined
   var client_id: js.UndefOr[String] = js.undefined
   var code_challenge: js.UndefOr[String] = js.undefined
@@ -35,10 +35,10 @@ trait AuthorizationParameters
 object AuthorizationParameters {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     acr_values: String = null,
     audience: String = null,
-    claims: String | AnonIdtoken = null,
+    claims: String | Idtoken = null,
     claims_locales: String = null,
     client_id: String = null,
     code_challenge: String = null,

@@ -13,7 +13,7 @@ trait State[OptionType /* <: OptionTypeBase */] extends js.Object {
 
 object State {
   @scala.inline
-  def apply[OptionType /* <: OptionTypeBase */](options: OptionsType[OptionType], newOption: OptionType = null): State[OptionType] = {
+  def apply[OptionType](options: OptionsType[OptionType], newOption: OptionType = null): State[OptionType] = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     if (newOption != null) __obj.updateDynamic("newOption")(newOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[State[OptionType]]

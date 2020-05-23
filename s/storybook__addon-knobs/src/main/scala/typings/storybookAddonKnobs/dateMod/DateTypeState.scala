@@ -12,7 +12,7 @@ object DateTypeState {
   @scala.inline
   def apply(valid: js.UndefOr[Boolean] = js.undefined): DateTypeState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
+    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateTypeState]
   }
 }

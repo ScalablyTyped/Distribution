@@ -5,6 +5,14 @@ import typings.domHelpers.addEventListenerMod.TaggedEventHandler
 import typings.domHelpers.animateMod.AnimateProperties
 import typings.domHelpers.animateMod.Cancel
 import typings.domHelpers.animateMod.Options
+import typings.domHelpers.anon.Fn0
+import typings.domHelpers.anon.Fn1
+import typings.domHelpers.anon.FnCallNodeEventNameHandlerOptions
+import typings.domHelpers.anon.FnCallNodePropertiesDurationEasingCallback
+import typings.domHelpers.anon.FnCallNodeProperty
+import typings.domHelpers.anon.FnCallSelectorHandler
+import typings.domHelpers.anon.Height
+import typings.domHelpers.anon.PartialRecordPropertystri
 import typings.domHelpers.domHelpersStrings.abort
 import typings.domHelpers.domHelpersStrings.animationcancel
 import typings.domHelpers.domHelpersStrings.animationend
@@ -102,13 +110,13 @@ import typings.domHelpers.typesMod.CamelProperty
 import typings.domHelpers.typesMod.HyphenProperty
 import typings.std.AddEventListenerOptions
 import typings.std.CSSStyleDeclaration
-import typings.std.Document_
+import typings.std.Document
 import typings.std.Element
 import typings.std.EventListenerOptions
 import typings.std.FrameRequestCallback
 import typings.std.HTMLElement
 import typings.std.SVGElement
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -118,7 +126,7 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   val requestAnimationFrame: js.Function1[/* callback */ FrameRequestCallback, Double] = js.native
   def activeElement(): Element | Null = js.native
-  def activeElement(doc: Document_): Element | Null = js.native
+  def activeElement(doc: Document): Element | Null = js.native
   def addClass(element: Element, className: String): Unit = js.native
   def addClass(element: SVGElement, className: String): Unit = js.native
   @JSName("addEventListener")
@@ -2588,15 +2596,15 @@ object mod extends js.Object {
     options: AddEventListenerOptions
   ): js.Function0[Unit] = js.native
   def matches(node: Element, selector: String): Boolean = js.native
-  def offset(node: HTMLElement): AnonHeight = js.native
+  def offset(node: HTMLElement): Height = js.native
   def offsetParent(node: HTMLElement): HTMLElement = js.native
-  def ownerDocument(): Document_ = js.native
-  def ownerDocument(node: Element): Document_ = js.native
-  def ownerWindow(): Window_ = js.native
-  def ownerWindow(node: Element): Window_ = js.native
-  def position(node: HTMLElement): AnonHeight = js.native
-  def position(node: HTMLElement, offsetParent: HTMLElement): AnonHeight = js.native
-  def querySelectorAll(element: Document_, selector: String): js.Array[HTMLElement] = js.native
+  def ownerDocument(): Document = js.native
+  def ownerDocument(node: Element): Document = js.native
+  def ownerWindow(): Window = js.native
+  def ownerWindow(node: Element): Window = js.native
+  def position(node: HTMLElement): Height = js.native
+  def position(node: HTMLElement, offsetParent: HTMLElement): Height = js.native
+  def querySelectorAll(element: Document, selector: String): js.Array[HTMLElement] = js.native
   def querySelectorAll(element: HTMLElement, selector: String): js.Array[HTMLElement] = js.native
   def removeClass(element: Element, className: String): Unit = js.native
   def removeClass(element: SVGElement, className: String): Unit = js.native
@@ -3783,8 +3791,8 @@ object mod extends js.Object {
   ): Unit = js.native
   def scrollLeft(node: Element): Double = js.native
   def scrollLeft(node: Element, `val`: Double): js.UndefOr[scala.Nothing] = js.native
-  def scrollParent(element: HTMLElement): Document_ | HTMLElement = js.native
-  def scrollParent(element: HTMLElement, firstPossible: Boolean): Document_ | HTMLElement = js.native
+  def scrollParent(element: HTMLElement): Document | HTMLElement = js.native
+  def scrollParent(element: HTMLElement, firstPossible: Boolean): Document | HTMLElement = js.native
   def scrollTo(selected: HTMLElement): js.UndefOr[js.Function0[Unit]] = js.native
   def scrollTo(selected: HTMLElement, scrollParent: HTMLElement): js.UndefOr[js.Function0[Unit]] = js.native
   def scrollTop(node: Element): Double = js.native
@@ -3804,7 +3812,7 @@ object mod extends js.Object {
   @js.native
   object default extends js.Object {
     @JSName("activeElement")
-    var activeElement_Original: js.Function1[/* doc */ js.UndefOr[Document_], Element | Null] = js.native
+    var activeElement_Original: js.Function1[/* doc */ js.UndefOr[Document], Element | Null] = js.native
     @JSName("addClass")
     var addClass_Original: js.Function2[/* element */ Element | SVGElement, /* className */ String, Unit] = js.native
     @JSName("addEventListener")
@@ -3835,15 +3843,15 @@ object mod extends js.Object {
     @JSName("offsetParent")
     var offsetParent_Original: js.Function1[/* node */ HTMLElement, HTMLElement] = js.native
     @JSName("offset")
-    var offset_Original: js.Function1[/* node */ HTMLElement, AnonHeight] = js.native
+    var offset_Original: js.Function1[/* node */ HTMLElement, Height] = js.native
     @JSName("ownerDocument")
-    var ownerDocument_Original: js.Function1[/* node */ js.UndefOr[Element], Document_] = js.native
+    var ownerDocument_Original: js.Function1[/* node */ js.UndefOr[Element], Document] = js.native
     @JSName("ownerWindow")
-    var ownerWindow_Original: js.Function1[/* node */ js.UndefOr[Element], Window_] = js.native
+    var ownerWindow_Original: js.Function1[/* node */ js.UndefOr[Element], Window] = js.native
     @JSName("position")
-    var position_Original: js.Function2[/* node */ HTMLElement, /* offsetParent */ js.UndefOr[HTMLElement], AnonHeight] = js.native
+    var position_Original: js.Function2[/* node */ HTMLElement, /* offsetParent */ js.UndefOr[HTMLElement], Height] = js.native
     @JSName("querySelectorAll")
-    var querySelectorAll_Original: js.Function2[/* element */ HTMLElement | Document_, /* selector */ String, js.Array[HTMLElement]] = js.native
+    var querySelectorAll_Original: js.Function2[/* element */ HTMLElement | Document, /* selector */ String, js.Array[HTMLElement]] = js.native
     @JSName("removeClass")
     var removeClass_Original: js.Function2[/* element */ Element | SVGElement, /* className */ String, Unit] = js.native
     @JSName("removeEventListener")
@@ -3853,7 +3861,7 @@ object mod extends js.Object {
     var scrollParent_Original: js.Function2[
         /* element */ HTMLElement, 
         /* firstPossible */ js.UndefOr[Boolean], 
-        Document_ | HTMLElement
+        Document | HTMLElement
       ] = js.native
     @JSName("scrollTo")
     var scrollTo_Original: js.Function2[
@@ -3877,7 +3885,7 @@ object mod extends js.Object {
     @JSName("width")
     var width_Original: js.Function2[/* node */ HTMLElement, /* client */ js.UndefOr[Boolean], Double] = js.native
     def activeElement(): Element | Null = js.native
-    def activeElement(doc: Document_): Element | Null = js.native
+    def activeElement(doc: Document): Element | Null = js.native
     def addClass(element: Element, className: String): Unit = js.native
     def addClass(element: SVGElement, className: String): Unit = js.native
     @JSName("addEventListener")
@@ -6344,15 +6352,15 @@ object mod extends js.Object {
       options: AddEventListenerOptions
     ): js.Function0[Unit] = js.native
     def matches(node: Element, selector: String): Boolean = js.native
-    def offset(node: HTMLElement): AnonHeight = js.native
+    def offset(node: HTMLElement): Height = js.native
     def offsetParent(node: HTMLElement): HTMLElement = js.native
-    def ownerDocument(): Document_ = js.native
-    def ownerDocument(node: Element): Document_ = js.native
-    def ownerWindow(): Window_ = js.native
-    def ownerWindow(node: Element): Window_ = js.native
-    def position(node: HTMLElement): AnonHeight = js.native
-    def position(node: HTMLElement, offsetParent: HTMLElement): AnonHeight = js.native
-    def querySelectorAll(element: Document_, selector: String): js.Array[HTMLElement] = js.native
+    def ownerDocument(): Document = js.native
+    def ownerDocument(node: Element): Document = js.native
+    def ownerWindow(): Window = js.native
+    def ownerWindow(node: Element): Window = js.native
+    def position(node: HTMLElement): Height = js.native
+    def position(node: HTMLElement, offsetParent: HTMLElement): Height = js.native
+    def querySelectorAll(element: Document, selector: String): js.Array[HTMLElement] = js.native
     def querySelectorAll(element: HTMLElement, selector: String): js.Array[HTMLElement] = js.native
     def removeClass(element: Element, className: String): Unit = js.native
     def removeClass(element: SVGElement, className: String): Unit = js.native
@@ -7539,8 +7547,8 @@ object mod extends js.Object {
     ): Unit = js.native
     def scrollLeft(node: Element): Double = js.native
     def scrollLeft(node: Element, `val`: Double): js.UndefOr[scala.Nothing] = js.native
-    def scrollParent(element: HTMLElement): Document_ | HTMLElement = js.native
-    def scrollParent(element: HTMLElement, firstPossible: Boolean): Document_ | HTMLElement = js.native
+    def scrollParent(element: HTMLElement): Document | HTMLElement = js.native
+    def scrollParent(element: HTMLElement, firstPossible: Boolean): Document | HTMLElement = js.native
     def scrollTo(selected: HTMLElement): js.UndefOr[js.Function0[Unit]] = js.native
     def scrollTo(selected: HTMLElement, scrollParent: HTMLElement): js.UndefOr[js.Function0[Unit]] = js.native
     def scrollTop(node: Element): Double = js.native

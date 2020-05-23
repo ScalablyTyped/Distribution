@@ -171,7 +171,7 @@ package object toolsMod {
     js.Function1[/* x */ js.Any, js.Any], 
     js.Function1[/* x */ js.Any, R]
   ])
-  type Placeholder = (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify A.x */ js.Any) with typings.ramda.AnonFunctionalplaceholder
+  type Placeholder = (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify A.x */ js.Any) with typings.ramda.anon.Functionalplaceholder
   type Pred = js.Function1[/* repeated */ js.Any, scala.Boolean]
   type SafePred[A] = js.Function1[/* repeated */ A, scala.Boolean]
   type ValueOfRecord[R] = js.Any

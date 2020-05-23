@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,17 +30,6 @@ object ASPxClientSpreadsheetEditMode extends js.Object {
     */
   @js.native
   sealed trait None extends ASPxClientSpreadsheetEditMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ASPxClientSpreadsheetEditMode with Double] = js.native
-  /* 1 */ @js.native
-  object Cell extends TopLevel[Cell with Double]
-  
-  /* 2 */ @js.native
-  object Comment extends TopLevel[Comment with Double]
-  
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
   
 }
 

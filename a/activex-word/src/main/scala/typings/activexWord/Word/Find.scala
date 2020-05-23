@@ -4,50 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.Find")
-@js.native
-class Find[TParent] protected () extends js.Object {
-  val Application: typings.activexWord.Word.Application = js.native
-  var CorrectHangulEndings: Boolean = js.native
-  val Creator: Double = js.native
-  var Font: typings.activexWord.Word.Font = js.native
-  var Format: Boolean = js.native
-  var Forward: Boolean = js.native
-  val Found: Boolean = js.native
-  val Frame: typings.activexWord.Word.Frame = js.native
-  var HanjaPhoneticHangul: Boolean = js.native
-  var Highlight: Double = js.native
-  var IgnorePunct: Boolean = js.native
-  var IgnoreSpace: Boolean = js.native
-  var LanguageID: WdLanguageID = js.native
-  var LanguageIDFarEast: WdLanguageID = js.native
-  var LanguageIDOther: WdLanguageID = js.native
-  var MatchAlefHamza: Boolean = js.native
-  var MatchAllWordForms: Boolean = js.native
-  var MatchByte: Boolean = js.native
-  var MatchCase: Boolean = js.native
-  var MatchControl: Boolean = js.native
-  var MatchDiacritics: Boolean = js.native
-  var MatchFuzzy: Boolean = js.native
-  var MatchKashida: Boolean = js.native
-  var MatchPhrase: Boolean = js.native
-  var MatchPrefix: Boolean = js.native
-  var MatchSoundsLike: Boolean = js.native
-  var MatchSuffix: Boolean = js.native
-  var MatchWholeWord: Boolean = js.native
-  var MatchWildcards: Boolean = js.native
-  var NoProofing: Double = js.native
-  var ParagraphFormat: typings.activexWord.Word.ParagraphFormat = js.native
-  val Parent: TParent = js.native
-  val Replacement: typings.activexWord.Word.Replacement = js.native
-  var Style: js.Any = js.native
-  var Text: String = js.native
+trait Find[TParent] extends js.Object {
+  val Application: typings.activexWord.Word.Application
+  var CorrectHangulEndings: Boolean
+  val Creator: Double
+  var Font: typings.activexWord.Word.Font
+  var Format: Boolean
+  var Forward: Boolean
+  val Found: Boolean
+  val Frame: typings.activexWord.Word.Frame
+  var HanjaPhoneticHangul: Boolean
+  var Highlight: Double
+  var IgnorePunct: Boolean
+  var IgnoreSpace: Boolean
+  var LanguageID: WdLanguageID
+  var LanguageIDFarEast: WdLanguageID
+  var LanguageIDOther: WdLanguageID
+  var MatchAlefHamza: Boolean
+  var MatchAllWordForms: Boolean
+  var MatchByte: Boolean
+  var MatchCase: Boolean
+  var MatchControl: Boolean
+  var MatchDiacritics: Boolean
+  var MatchFuzzy: Boolean
+  var MatchKashida: Boolean
+  var MatchPhrase: Boolean
+  var MatchPrefix: Boolean
+  var MatchSoundsLike: Boolean
+  var MatchSuffix: Boolean
+  var MatchWholeWord: Boolean
+  var MatchWildcards: Boolean
+  var NoProofing: Double
+  var ParagraphFormat: typings.activexWord.Word.ParagraphFormat
+  val Parent: TParent
+  val Replacement: typings.activexWord.Word.Replacement
+  var Style: js.Any
+  var Text: String
   @JSName("Word.Find_typekey")
-  var WordDotFind_typekey: Find[Range | Selection] = js.native
-  var Wrap: WdFindWrap = js.native
-  def ClearAllFuzzyOptions(): Unit = js.native
-  def ClearFormatting(): Unit = js.native
-  def ClearHitHighlight(): Boolean = js.native
+  var WordDotFind_typekey: Find[Range | Selection]
+  var Wrap: WdFindWrap
+  def ClearAllFuzzyOptions(): Unit
+  def ClearFormatting(): Unit
+  def ClearHitHighlight(): Boolean
   def Execute(
     FindText: js.UndefOr[String],
     MatchCase: js.UndefOr[Boolean],
@@ -64,7 +62,7 @@ class Find[TParent] protected () extends js.Object {
     MatchDiacritics: js.UndefOr[Boolean],
     MatchAlefHamza: js.UndefOr[Boolean],
     MatchControl: js.UndefOr[Boolean]
-  ): Boolean = js.native
+  ): Boolean
   def Execute2007(
     FindText: js.UndefOr[String],
     MatchCase: js.UndefOr[Boolean],
@@ -86,7 +84,7 @@ class Find[TParent] protected () extends js.Object {
     MatchPhrase: js.UndefOr[Boolean],
     IgnoreSpace: js.UndefOr[Boolean],
     IgnorePunct: js.UndefOr[Boolean]
-  ): Boolean = js.native
+  ): Boolean
   def ExecuteOld(
     FindText: js.UndefOr[String],
     MatchCase: js.UndefOr[Boolean],
@@ -99,7 +97,7 @@ class Find[TParent] protected () extends js.Object {
     Format: js.UndefOr[Boolean],
     ReplaceWith: js.UndefOr[String],
     Replace: js.UndefOr[WdReplace]
-  ): Boolean = js.native
+  ): Boolean
   def HitHighlight(
     FindText: js.Any,
     HighlightColor: js.UndefOr[js.Any],
@@ -121,7 +119,62 @@ class Find[TParent] protected () extends js.Object {
     IgnoreSpace: js.UndefOr[js.Any],
     IgnorePunct: js.UndefOr[js.Any],
     HanjaPhoneticHangul: js.UndefOr[js.Any]
-  ): Boolean = js.native
-  def SetAllFuzzyOptions(): Unit = js.native
+  ): Boolean
+  def SetAllFuzzyOptions(): Unit
+}
+
+object Find {
+  @scala.inline
+  def apply[TParent](
+    Application: Application,
+    ClearAllFuzzyOptions: () => Unit,
+    ClearFormatting: () => Unit,
+    ClearHitHighlight: () => Boolean,
+    CorrectHangulEndings: Boolean,
+    Creator: Double,
+    Execute: (js.UndefOr[String], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[WdFindWrap], js.UndefOr[Boolean], js.UndefOr[String], js.UndefOr[WdReplace], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean]) => Boolean,
+    Execute2007: (js.UndefOr[String], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[WdFindWrap], js.UndefOr[Boolean], js.UndefOr[String], js.UndefOr[WdReplace], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean]) => Boolean,
+    ExecuteOld: (js.UndefOr[String], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[WdFindWrap], js.UndefOr[Boolean], js.UndefOr[String], js.UndefOr[WdReplace]) => Boolean,
+    Font: Font,
+    Format: Boolean,
+    Forward: Boolean,
+    Found: Boolean,
+    Frame: Frame,
+    HanjaPhoneticHangul: Boolean,
+    Highlight: Double,
+    HitHighlight: (js.Any, js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Boolean,
+    IgnorePunct: Boolean,
+    IgnoreSpace: Boolean,
+    LanguageID: WdLanguageID,
+    LanguageIDFarEast: WdLanguageID,
+    LanguageIDOther: WdLanguageID,
+    MatchAlefHamza: Boolean,
+    MatchAllWordForms: Boolean,
+    MatchByte: Boolean,
+    MatchCase: Boolean,
+    MatchControl: Boolean,
+    MatchDiacritics: Boolean,
+    MatchFuzzy: Boolean,
+    MatchKashida: Boolean,
+    MatchPhrase: Boolean,
+    MatchPrefix: Boolean,
+    MatchSoundsLike: Boolean,
+    MatchSuffix: Boolean,
+    MatchWholeWord: Boolean,
+    MatchWildcards: Boolean,
+    NoProofing: Double,
+    ParagraphFormat: ParagraphFormat,
+    Parent: TParent,
+    Replacement: Replacement,
+    SetAllFuzzyOptions: () => Unit,
+    Style: js.Any,
+    Text: String,
+    WordDotFind_typekey: Find[Range | Selection],
+    Wrap: WdFindWrap
+  ): Find[TParent] = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], ClearAllFuzzyOptions = js.Any.fromFunction0(ClearAllFuzzyOptions), ClearFormatting = js.Any.fromFunction0(ClearFormatting), ClearHitHighlight = js.Any.fromFunction0(ClearHitHighlight), CorrectHangulEndings = CorrectHangulEndings.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Execute = js.Any.fromFunction15(Execute), Execute2007 = js.Any.fromFunction20(Execute2007), ExecuteOld = js.Any.fromFunction11(ExecuteOld), Font = Font.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any], Forward = Forward.asInstanceOf[js.Any], Found = Found.asInstanceOf[js.Any], Frame = Frame.asInstanceOf[js.Any], HanjaPhoneticHangul = HanjaPhoneticHangul.asInstanceOf[js.Any], Highlight = Highlight.asInstanceOf[js.Any], HitHighlight = js.Any.fromFunction20(HitHighlight), IgnorePunct = IgnorePunct.asInstanceOf[js.Any], IgnoreSpace = IgnoreSpace.asInstanceOf[js.Any], LanguageID = LanguageID.asInstanceOf[js.Any], LanguageIDFarEast = LanguageIDFarEast.asInstanceOf[js.Any], LanguageIDOther = LanguageIDOther.asInstanceOf[js.Any], MatchAlefHamza = MatchAlefHamza.asInstanceOf[js.Any], MatchAllWordForms = MatchAllWordForms.asInstanceOf[js.Any], MatchByte = MatchByte.asInstanceOf[js.Any], MatchCase = MatchCase.asInstanceOf[js.Any], MatchControl = MatchControl.asInstanceOf[js.Any], MatchDiacritics = MatchDiacritics.asInstanceOf[js.Any], MatchFuzzy = MatchFuzzy.asInstanceOf[js.Any], MatchKashida = MatchKashida.asInstanceOf[js.Any], MatchPhrase = MatchPhrase.asInstanceOf[js.Any], MatchPrefix = MatchPrefix.asInstanceOf[js.Any], MatchSoundsLike = MatchSoundsLike.asInstanceOf[js.Any], MatchSuffix = MatchSuffix.asInstanceOf[js.Any], MatchWholeWord = MatchWholeWord.asInstanceOf[js.Any], MatchWildcards = MatchWildcards.asInstanceOf[js.Any], NoProofing = NoProofing.asInstanceOf[js.Any], ParagraphFormat = ParagraphFormat.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Replacement = Replacement.asInstanceOf[js.Any], SetAllFuzzyOptions = js.Any.fromFunction0(SetAllFuzzyOptions), Style = Style.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any], Wrap = Wrap.asInstanceOf[js.Any])
+    __obj.updateDynamic("Word.Find_typekey")(WordDotFind_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Find[TParent]]
+  }
 }
 

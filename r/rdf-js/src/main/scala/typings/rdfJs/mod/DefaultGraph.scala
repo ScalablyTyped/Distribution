@@ -17,11 +17,11 @@ trait DefaultGraph
     * Contains an empty string as constant value.
     */
   var value: _empty = js.native
-  def equals(): Boolean = js.native
   /**
     * @param other The term to compare with.
     * @return True if and only if other has termType "DefaultGraph".
     */
+  def equals(): Boolean = js.native
   def equals(other: Term): Boolean = js.native
 }
 

@@ -1,6 +1,5 @@
 package typings.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,14 +26,6 @@ object EventSource extends js.Object {
     */
   @js.native
   sealed trait remote extends EventSource
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[EventSource with String] = js.native
-  /* "Local" */ @js.native
-  object local extends TopLevel[local with String]
-  
-  /* "Remote" */ @js.native
-  object remote extends TopLevel[remote with String]
   
 }
 

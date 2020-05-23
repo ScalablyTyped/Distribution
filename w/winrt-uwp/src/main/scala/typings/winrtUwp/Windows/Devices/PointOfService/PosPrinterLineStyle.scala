@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.PointOfService
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object PosPrinterLineStyle extends js.Object {
   /** Prints a continuous solid line. */
   @js.native
   sealed trait singleSolid extends PosPrinterLineStyle
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PosPrinterLineStyle with Double] = js.native
-  /* 2 */ @js.native
-  object broken extends TopLevel[broken with Double]
-  
-  /* 3 */ @js.native
-  object chain extends TopLevel[chain with Double]
-  
-  /* 1 */ @js.native
-  object doubleSolid extends TopLevel[doubleSolid with Double]
-  
-  /* 0 */ @js.native
-  object singleSolid extends TopLevel[singleSolid with Double]
   
 }
 

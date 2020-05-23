@@ -1,15 +1,12 @@
 package typings.ckeditor.CKEDITOR.dom
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CKEDITOR.dom.domObject")
 @js.native
-class domObject protected ()
+trait domObject
   extends typings.ckeditor.CKEDITOR.event {
-  def this(nativeDomObject: StringDictionary[js.Any]) = this()
   @JSName("$")
   val $: js.Any = js.native
   def clearCustomData(): Unit = js.native

@@ -46,7 +46,7 @@ trait LineLoadOptions extends js.Object {
   var beginConnectedShape: js.UndefOr[ShapeLoadOptions] = js.undefined
   /**
     *
-    * Represents the connection site to which the beginning of a connector is connected. Read-only. Returns null when the beginning of the line is not attached to any shape.
+    * Represents the connection site to which the beginning of a connector is connected. Returns null when the beginning of the line is not attached to any shape.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -88,28 +88,28 @@ trait LineLoadOptions extends js.Object {
   var endConnectedShape: js.UndefOr[ShapeLoadOptions] = js.undefined
   /**
     *
-    * Represents the connection site to which the end of a connector is connected. Read-only. Returns null when the end of the line is not attached to any shape.
+    * Represents the connection site to which the end of a connector is connected. Returns null when the end of the line is not attached to any shape.
     *
     * [Api set: ExcelApi 1.9]
     */
   var endConnectedSite: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the shape identifier. Read-only.
+    * Specifies the shape identifier.
     *
     * [Api set: ExcelApi 1.9]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Specifies whether or not the beginning of the specified line is connected to a shape. Read-only.
+    * Specifies if the beginning of the specified line is connected to a shape.
     *
     * [Api set: ExcelApi 1.9]
     */
   var isBeginConnected: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Specifies whether or not the end of the specified line is connected to a shape. Read-only.
+    * Specifies if the end of the specified line is connected to a shape.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -144,21 +144,21 @@ object LineLoadOptions {
     shape: ShapeLoadOptions = null
   ): LineLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(beginArrowheadLength)) __obj.updateDynamic("beginArrowheadLength")(beginArrowheadLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(beginArrowheadStyle)) __obj.updateDynamic("beginArrowheadStyle")(beginArrowheadStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(beginArrowheadWidth)) __obj.updateDynamic("beginArrowheadWidth")(beginArrowheadWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(beginArrowheadLength)) __obj.updateDynamic("beginArrowheadLength")(beginArrowheadLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(beginArrowheadStyle)) __obj.updateDynamic("beginArrowheadStyle")(beginArrowheadStyle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(beginArrowheadWidth)) __obj.updateDynamic("beginArrowheadWidth")(beginArrowheadWidth.get.asInstanceOf[js.Any])
     if (beginConnectedShape != null) __obj.updateDynamic("beginConnectedShape")(beginConnectedShape.asInstanceOf[js.Any])
-    if (!js.isUndefined(beginConnectedSite)) __obj.updateDynamic("beginConnectedSite")(beginConnectedSite.asInstanceOf[js.Any])
-    if (!js.isUndefined(connectorType)) __obj.updateDynamic("connectorType")(connectorType.asInstanceOf[js.Any])
-    if (!js.isUndefined(endArrowheadLength)) __obj.updateDynamic("endArrowheadLength")(endArrowheadLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(endArrowheadStyle)) __obj.updateDynamic("endArrowheadStyle")(endArrowheadStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(endArrowheadWidth)) __obj.updateDynamic("endArrowheadWidth")(endArrowheadWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(beginConnectedSite)) __obj.updateDynamic("beginConnectedSite")(beginConnectedSite.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectorType)) __obj.updateDynamic("connectorType")(connectorType.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(endArrowheadLength)) __obj.updateDynamic("endArrowheadLength")(endArrowheadLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(endArrowheadStyle)) __obj.updateDynamic("endArrowheadStyle")(endArrowheadStyle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(endArrowheadWidth)) __obj.updateDynamic("endArrowheadWidth")(endArrowheadWidth.get.asInstanceOf[js.Any])
     if (endConnectedShape != null) __obj.updateDynamic("endConnectedShape")(endConnectedShape.asInstanceOf[js.Any])
-    if (!js.isUndefined(endConnectedSite)) __obj.updateDynamic("endConnectedSite")(endConnectedSite.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBeginConnected)) __obj.updateDynamic("isBeginConnected")(isBeginConnected.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEndConnected)) __obj.updateDynamic("isEndConnected")(isEndConnected.asInstanceOf[js.Any])
+    if (!js.isUndefined(endConnectedSite)) __obj.updateDynamic("endConnectedSite")(endConnectedSite.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBeginConnected)) __obj.updateDynamic("isBeginConnected")(isBeginConnected.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEndConnected)) __obj.updateDynamic("isEndConnected")(isEndConnected.get.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineLoadOptions]
   }

@@ -365,6 +365,19 @@ trait ApiGatewayV2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteVpcLinkResponse, Unit]
   ): Request[DeleteVpcLinkResponse, AWSError] = js.native
   /**
+    * 
+    */
+  def exportApi(): Request[ExportApiResponse, AWSError] = js.native
+  def exportApi(callback: js.Function2[/* err */ AWSError, /* data */ ExportApiResponse, Unit]): Request[ExportApiResponse, AWSError] = js.native
+  /**
+    * 
+    */
+  def exportApi(params: ExportApiRequest): Request[ExportApiResponse, AWSError] = js.native
+  def exportApi(
+    params: ExportApiRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ExportApiResponse, Unit]
+  ): Request[ExportApiResponse, AWSError] = js.native
+  /**
     * Gets an Api resource.
     */
   def getApi(): Request[GetApiResponse, AWSError] = js.native

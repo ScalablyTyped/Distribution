@@ -1,6 +1,6 @@
 package typings.monacoEditor.mod.languages.json
 
-import typings.monacoEditor.AnonFileMatch
+import typings.monacoEditor.anon.FileMatch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait DiagnosticsOptions extends js.Object {
   /**
     * A list of known schemas and/or associations of schemas to file names.
     */
-  val schemas: js.UndefOr[js.Array[AnonFileMatch]] = js.undefined
+  val schemas: js.UndefOr[js.Array[FileMatch]] = js.undefined
   /**
     * If set, the validator will be enabled and perform syntax validation as well as schema based validation.
     */
@@ -29,14 +29,14 @@ object DiagnosticsOptions {
   def apply(
     allowComments: js.UndefOr[Boolean] = js.undefined,
     enableSchemaRequest: js.UndefOr[Boolean] = js.undefined,
-    schemas: js.Array[AnonFileMatch] = null,
+    schemas: js.Array[FileMatch] = null,
     validate: js.UndefOr[Boolean] = js.undefined
   ): DiagnosticsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowComments)) __obj.updateDynamic("allowComments")(allowComments.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSchemaRequest)) __obj.updateDynamic("enableSchemaRequest")(enableSchemaRequest.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowComments)) __obj.updateDynamic("allowComments")(allowComments.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSchemaRequest)) __obj.updateDynamic("enableSchemaRequest")(enableSchemaRequest.get.asInstanceOf[js.Any])
     if (schemas != null) __obj.updateDynamic("schemas")(schemas.asInstanceOf[js.Any])
-    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagnosticsOptions]
   }
 }

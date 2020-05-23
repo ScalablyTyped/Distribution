@@ -1,11 +1,11 @@
 package typings.stormReactDiagrams.diagramModelMod
 
-import typings.stormReactDiagrams.AnonLocked
-import typings.stormReactDiagrams.BaseEventDiagramModeloffs
-import typings.stormReactDiagrams.BaseEventDiagramModelsize
-import typings.stormReactDiagrams.BaseEventDiagramModelzoom
-import typings.stormReactDiagrams.BaseEventanylinkLinkModel
-import typings.stormReactDiagrams.BaseEventanynodeNodeModel
+import typings.stormReactDiagrams.anon.BaseEventDiagramModeloffs
+import typings.stormReactDiagrams.anon.BaseEventDiagramModelsize
+import typings.stormReactDiagrams.anon.BaseEventDiagramModelzoom
+import typings.stormReactDiagrams.anon.BaseEventanylinkLinkModel
+import typings.stormReactDiagrams.anon.BaseEventanynodeNodeModel
+import typings.stormReactDiagrams.anon.Locked
 import typings.stormReactDiagrams.baseEntityMod.BaseEvent
 import typings.stormReactDiagrams.baseEntityMod.BaseListener
 import scala.scalajs.js
@@ -26,7 +26,7 @@ object DiagramListener {
   def apply(
     gridUpdated: /* event */ BaseEventDiagramModelsize => Unit = null,
     linksUpdated: /* event */ BaseEventanylinkLinkModel => Unit = null,
-    lockChanged: /* event */ BaseEvent[js.Any] with AnonLocked => Unit = null,
+    lockChanged: /* event */ BaseEvent[js.Any] with Locked => Unit = null,
     nodesUpdated: /* event */ BaseEventanynodeNodeModel => Unit = null,
     offsetUpdated: /* event */ BaseEventDiagramModeloffs => Unit = null,
     zoomUpdated: /* event */ BaseEventDiagramModelzoom => Unit = null

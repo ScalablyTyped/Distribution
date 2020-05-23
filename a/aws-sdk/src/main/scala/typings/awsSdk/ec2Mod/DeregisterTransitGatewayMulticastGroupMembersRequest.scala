@@ -27,13 +27,13 @@ trait DeregisterTransitGatewayMulticastGroupMembersRequest extends js.Object {
 object DeregisterTransitGatewayMulticastGroupMembersRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     GroupIpAddress: String = null,
     NetworkInterfaceIds: TransitGatewayNetworkInterfaceIdList = null,
     TransitGatewayMulticastDomainId: TransitGatewayMulticastDomainId = null
   ): DeregisterTransitGatewayMulticastGroupMembersRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (GroupIpAddress != null) __obj.updateDynamic("GroupIpAddress")(GroupIpAddress.asInstanceOf[js.Any])
     if (NetworkInterfaceIds != null) __obj.updateDynamic("NetworkInterfaceIds")(NetworkInterfaceIds.asInstanceOf[js.Any])
     if (TransitGatewayMulticastDomainId != null) __obj.updateDynamic("TransitGatewayMulticastDomainId")(TransitGatewayMulticastDomainId.asInstanceOf[js.Any])

@@ -42,7 +42,7 @@ package object mod {
     ], 
     scala.Unit | java.lang.String | typings.std.Error
   ]
-  type defineEventStreamsToLoadHandler = js.Function1[/* cmd */ js.Any, js.Array[typings.cqrsDomain.AnonAggregate]]
+  type defineEventStreamsToLoadHandler = js.Function1[/* cmd */ js.Any, js.Array[typings.cqrsDomain.anon.Aggregate]]
   /**
     * @param loadingTime is the loading time in ms of the eventstore data
     * @param events are all loaded events in an array

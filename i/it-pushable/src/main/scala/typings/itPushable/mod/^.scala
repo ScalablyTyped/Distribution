@@ -1,6 +1,6 @@
 package typings.itPushable.mod
 
-import typings.itPushable.Optionswritevtrue
+import typings.itPushable.anon.Optionswritevtrue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

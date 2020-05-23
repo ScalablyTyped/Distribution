@@ -1,19 +1,12 @@
 package typings.typescriptServices.TypeScript
 
-import typings.typescriptServices.AnonDependencyList
+import typings.typescriptServices.anon.DependencyList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.Emitter")
 @js.native
-class Emitter protected () extends js.Object {
-  def this(
-    emittingFileName: String,
-    outfile: TextWriter,
-    emitOptions: EmitOptions,
-    semanticInfoChain: SemanticInfoChain
-  ) = this()
+trait Emitter extends js.Object {
   var captureThisStmtString: String = js.native
   var currentVariableDeclaration: js.Any = js.native
   var declStack: js.Any = js.native
@@ -168,7 +161,7 @@ class Emitter protected () extends js.Object {
   /* private */ def getImportDecls(fileName: js.Any): js.Any = js.native
   /* private */ def getIndentString(): js.Any = js.native
   /* private */ def getModuleDeclToVerifyChildNameCollision(moduleDecl: js.Any, changeNameIfAnyDeclarationInContext: js.Any): js.Any = js.native
-  def getModuleImportAndDependencyList(sourceUnit: SourceUnit): AnonDependencyList = js.native
+  def getModuleImportAndDependencyList(sourceUnit: SourceUnit): DependencyList = js.native
   /* private */ def getModuleName(moduleDecl: js.Any): js.Any = js.native
   /* private */ def getModuleName(moduleDecl: js.Any, changeNameIfAnyDeclarationInContext: js.Any): js.Any = js.native
   def getOutputFiles(): js.Array[OutputFile] = js.native

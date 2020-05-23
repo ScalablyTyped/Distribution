@@ -1,11 +1,11 @@
 package typings.smoothScrollbar.scrollbarMod
 
-import typings.smoothScrollbar.PartialScrollIntoViewOpti
-import typings.smoothScrollbar.PartialScrollToOptions
-import typings.smoothScrollbar.PartialSetPositionOptions
+import typings.smoothScrollbar.anon.PartialScrollIntoViewOpti
+import typings.smoothScrollbar.anon.PartialScrollToOptions
+import typings.smoothScrollbar.anon.PartialSetPositionOptions
 import typings.smoothScrollbar.data2dMod.Data2d
 import typings.smoothScrollbar.trackMod.TrackController
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,8 +26,8 @@ trait Scrollbar extends js.Object {
   val track: TrackController = js.native
   def addListener(fn: ScrollListener): Unit = js.native
   def addMomentum(x: Double, y: Double): Unit = js.native
-  def addTransformableMomentum(x: Double, y: Double, fromEvent: Event_): Unit = js.native
-  def addTransformableMomentum(x: Double, y: Double, fromEvent: Event_, callback: AddTransformableMomentumCallback): Unit = js.native
+  def addTransformableMomentum(x: Double, y: Double, fromEvent: Event): Unit = js.native
+  def addTransformableMomentum(x: Double, y: Double, fromEvent: Event, callback: AddTransformableMomentumCallback): Unit = js.native
   def destroy(): Unit = js.native
   def getSize(): ScrollbarSize = js.native
   def isVisible(elem: HTMLElement): Boolean = js.native

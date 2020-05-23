@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "extended-listbox" : "5.0.1"
+      "extended-listbox" : "5.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "extended-listbox" : "5.0.1"
+      "extended-listbox" : "5.0.2"
     }
   ],
   "compile-devDependencies" : [

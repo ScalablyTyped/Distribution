@@ -24,20 +24,22 @@ object ComposeObjectTypeConfig {
   @scala.inline
   def apply[TSource, TContext](
     name: String,
-    description: String = null,
+    description: js.UndefOr[Null | String] = js.undefined,
     extensions: Extensions = null,
     fields: Thunk[ComposeFieldConfigMap[TSource, TContext]] = null,
-    interfaces: Thunk[js.Array[ComposeInterfaceType] | Null] = null,
+    interfaces: js.UndefOr[Null | (Thunk[js.Array[ComposeInterfaceType] | Null])] = js.undefined,
     isIntrospection: js.UndefOr[Boolean] = js.undefined,
-    isTypeOf: (TSource, TContext, /* info */ GraphQLResolveInfo) => PromiseOrValue[Boolean] = null
+    isTypeOf: js.UndefOr[
+      Null | ((TSource, TContext, /* info */ GraphQLResolveInfo) => PromiseOrValue[Boolean])
+    ] = js.undefined
   ): ComposeObjectTypeConfig[TSource, TContext] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (interfaces != null) __obj.updateDynamic("interfaces")(interfaces.asInstanceOf[js.Any])
-    if (!js.isUndefined(isIntrospection)) __obj.updateDynamic("isIntrospection")(isIntrospection.asInstanceOf[js.Any])
-    if (isTypeOf != null) __obj.updateDynamic("isTypeOf")(js.Any.fromFunction3(isTypeOf))
+    if (!js.isUndefined(interfaces)) __obj.updateDynamic("interfaces")(interfaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(isIntrospection)) __obj.updateDynamic("isIntrospection")(isIntrospection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTypeOf)) __obj.updateDynamic("isTypeOf")(if (isTypeOf != null) js.Any.fromFunction3(isTypeOf.asInstanceOf[(TSource, TContext, /* info */ GraphQLResolveInfo) => PromiseOrValue[Boolean]]) else null)
     __obj.asInstanceOf[ComposeObjectTypeConfig[TSource, TContext]]
   }
 }

@@ -79,7 +79,7 @@ object OpenParameters {
     allowCancel: js.UndefOr[Boolean] = js.undefined,
     container: Element = null,
     debug: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     hideHeader: js.UndefOr[Boolean] = js.undefined,
     messageListener: /* eventData */ MessageEvent => Unit = null,
     redirectUrl: String = null,
@@ -87,22 +87,22 @@ object OpenParameters {
     skipDomainVerification: js.UndefOr[Boolean] = js.undefined,
     url: String = null,
     userCulture: String = null,
-    uxVersion: Int | Double = null,
+    uxVersion: js.UndefOr[Double] = js.undefined,
     whiteLabelingOptions: js.Object = null
   ): OpenParameters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowCancel)) __obj.updateDynamic("allowCancel")(allowCancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCancel)) __obj.updateDynamic("allowCancel")(allowCancel.get.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideHeader)) __obj.updateDynamic("hideHeader")(hideHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideHeader)) __obj.updateDynamic("hideHeader")(hideHeader.get.asInstanceOf[js.Any])
     if (messageListener != null) __obj.updateDynamic("messageListener")(js.Any.fromFunction1(messageListener))
     if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl.asInstanceOf[js.Any])
     if (requester != null) __obj.updateDynamic("requester")(requester.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipDomainVerification)) __obj.updateDynamic("skipDomainVerification")(skipDomainVerification.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipDomainVerification)) __obj.updateDynamic("skipDomainVerification")(skipDomainVerification.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (userCulture != null) __obj.updateDynamic("userCulture")(userCulture.asInstanceOf[js.Any])
-    if (uxVersion != null) __obj.updateDynamic("uxVersion")(uxVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(uxVersion)) __obj.updateDynamic("uxVersion")(uxVersion.get.asInstanceOf[js.Any])
     if (whiteLabelingOptions != null) __obj.updateDynamic("whiteLabelingOptions")(whiteLabelingOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenParameters]
   }

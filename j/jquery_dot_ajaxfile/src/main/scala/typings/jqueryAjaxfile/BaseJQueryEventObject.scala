@@ -1,7 +1,7 @@
 package typings.jqueryAjaxfile
 
 import typings.std.Element
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
   * Interface of the JQuery extension of the W3C event object
   */
 @js.native
-trait BaseJQueryEventObject extends Event_ {
+trait BaseJQueryEventObject extends Event {
   var data: js.Any = js.native
   var delegateTarget: Element = js.native
   var metaKey: Boolean = js.native
   var namespace: String = js.native
-  var originalEvent: Event_ = js.native
+  var originalEvent: Event = js.native
   var pageX: Double = js.native
   var pageY: Double = js.native
   var relatedTarget: Element = js.native

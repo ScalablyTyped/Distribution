@@ -32,16 +32,16 @@ object PrimaryYAxisMajorGridLines {
   def apply(
     color: String = null,
     dashArray: String = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): PrimaryYAxisMajorGridLines = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (dashArray != null) __obj.updateDynamic("dashArray")(dashArray.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrimaryYAxisMajorGridLines]
   }
 }

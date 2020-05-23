@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Casting
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object CastingConnectionState extends js.Object {
   /** The casting connection is actively playing content. */
   @js.native
   sealed trait rendering extends CastingConnectionState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CastingConnectionState with Double] = js.native
-  /* 1 */ @js.native
-  object connected extends TopLevel[connected with Double]
-  
-  /* 4 */ @js.native
-  object connecting extends TopLevel[connecting with Double]
-  
-  /* 0 */ @js.native
-  object disconnected extends TopLevel[disconnected with Double]
-  
-  /* 3 */ @js.native
-  object disconnecting extends TopLevel[disconnecting with Double]
-  
-  /* 2 */ @js.native
-  object rendering extends TopLevel[rendering with Double]
   
 }
 

@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.PivotClient
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object DisplayMode extends js.Object {
   ///To display only PivotGrid widget.
   @js.native
   sealed trait GridOnly extends DisplayMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DisplayMode with Double] = js.native
-  /* 2 */ @js.native
-  object ChartAndGrid extends TopLevel[ChartAndGrid with Double]
-  
-  /* 0 */ @js.native
-  object ChartOnly extends TopLevel[ChartOnly with Double]
-  
-  /* 1 */ @js.native
-  object GridOnly extends TopLevel[GridOnly with Double]
   
 }
 

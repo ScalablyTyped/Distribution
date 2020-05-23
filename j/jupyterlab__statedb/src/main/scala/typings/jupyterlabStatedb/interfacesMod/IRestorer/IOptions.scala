@@ -32,7 +32,7 @@ trait IOptions[T /* <: IObservableDisposable */] extends js.Object {
 
 object IOptions {
   @scala.inline
-  def apply[T /* <: IObservableDisposable */](
+  def apply[T](
     command: String,
     name: T => String,
     args: /* obj */ T => ReadonlyPartialJSONObject = null,

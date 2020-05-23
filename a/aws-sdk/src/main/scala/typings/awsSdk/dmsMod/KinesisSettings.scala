@@ -43,22 +43,22 @@ trait KinesisSettings extends js.Object {
 object KinesisSettings {
   @scala.inline
   def apply(
-    IncludeControlDetails: js.UndefOr[scala.Boolean] = js.undefined,
-    IncludePartitionValue: js.UndefOr[scala.Boolean] = js.undefined,
-    IncludeTableAlterOperations: js.UndefOr[scala.Boolean] = js.undefined,
-    IncludeTransactionDetails: js.UndefOr[scala.Boolean] = js.undefined,
+    IncludeControlDetails: js.UndefOr[BooleanOptional] = js.undefined,
+    IncludePartitionValue: js.UndefOr[BooleanOptional] = js.undefined,
+    IncludeTableAlterOperations: js.UndefOr[BooleanOptional] = js.undefined,
+    IncludeTransactionDetails: js.UndefOr[BooleanOptional] = js.undefined,
     MessageFormat: MessageFormatValue = null,
-    PartitionIncludeSchemaTable: js.UndefOr[scala.Boolean] = js.undefined,
+    PartitionIncludeSchemaTable: js.UndefOr[BooleanOptional] = js.undefined,
     ServiceAccessRoleArn: String = null,
     StreamArn: String = null
   ): KinesisSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(IncludeControlDetails)) __obj.updateDynamic("IncludeControlDetails")(IncludeControlDetails.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludePartitionValue)) __obj.updateDynamic("IncludePartitionValue")(IncludePartitionValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeTableAlterOperations)) __obj.updateDynamic("IncludeTableAlterOperations")(IncludeTableAlterOperations.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeTransactionDetails)) __obj.updateDynamic("IncludeTransactionDetails")(IncludeTransactionDetails.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeControlDetails)) __obj.updateDynamic("IncludeControlDetails")(IncludeControlDetails.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludePartitionValue)) __obj.updateDynamic("IncludePartitionValue")(IncludePartitionValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeTableAlterOperations)) __obj.updateDynamic("IncludeTableAlterOperations")(IncludeTableAlterOperations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeTransactionDetails)) __obj.updateDynamic("IncludeTransactionDetails")(IncludeTransactionDetails.get.asInstanceOf[js.Any])
     if (MessageFormat != null) __obj.updateDynamic("MessageFormat")(MessageFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(PartitionIncludeSchemaTable)) __obj.updateDynamic("PartitionIncludeSchemaTable")(PartitionIncludeSchemaTable.asInstanceOf[js.Any])
+    if (!js.isUndefined(PartitionIncludeSchemaTable)) __obj.updateDynamic("PartitionIncludeSchemaTable")(PartitionIncludeSchemaTable.get.asInstanceOf[js.Any])
     if (ServiceAccessRoleArn != null) __obj.updateDynamic("ServiceAccessRoleArn")(ServiceAccessRoleArn.asInstanceOf[js.Any])
     if (StreamArn != null) __obj.updateDynamic("StreamArn")(StreamArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[KinesisSettings]

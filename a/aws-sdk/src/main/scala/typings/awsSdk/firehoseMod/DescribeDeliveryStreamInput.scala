@@ -25,11 +25,11 @@ object DescribeDeliveryStreamInput {
   def apply(
     DeliveryStreamName: DeliveryStreamName,
     ExclusiveStartDestinationId: DestinationId = null,
-    Limit: Int | Double = null
+    Limit: js.UndefOr[DescribeDeliveryStreamInputLimit] = js.undefined
   ): DescribeDeliveryStreamInput = {
     val __obj = js.Dynamic.literal(DeliveryStreamName = DeliveryStreamName.asInstanceOf[js.Any])
     if (ExclusiveStartDestinationId != null) __obj.updateDynamic("ExclusiveStartDestinationId")(ExclusiveStartDestinationId.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDeliveryStreamInput]
   }
 }

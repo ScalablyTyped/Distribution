@@ -2,7 +2,7 @@ package typings.reactSelect.controlMod
 
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
-import typings.reactSelect.AnonOnMouseDown
+import typings.reactSelect.anon.OnMouseDown
 import typings.reactSelect.selectMod.Props
 import typings.reactSelect.typesMod.ActionTypes
 import typings.reactSelect.typesMod.ClassNamesState
@@ -21,7 +21,7 @@ trait ControlProps[OptionType /* <: OptionTypeBase */] extends js.Object {
   var className: js.UndefOr[String] = js.native
   var hasValue: Boolean = js.native
   /** The mouse down event and the innerRef to pass down to the controller element. */
-  var innerProps: AnonOnMouseDown = js.native
+  var innerProps: OnMouseDown = js.native
   var innerRef: Ref[_] = js.native
   /** Whether the select is disabled. */
   var isDisabled: Boolean = js.native
@@ -33,10 +33,10 @@ trait ControlProps[OptionType /* <: OptionTypeBase */] extends js.Object {
   def clearValue(): Unit = js.native
   def cx(): String | Unit = js.native
   def cx(a: String): String | Unit = js.native
-  def cx(a: String, b: js.UndefOr[ClassNamesState], c: String): String | Unit = js.native
   def cx(a: String, b: ClassNamesState): String | Unit = js.native
-  def cx(a: Null, b: js.UndefOr[ClassNamesState], c: String): String | Unit = js.native
+  def cx(a: String, b: ClassNamesState, c: String): String | Unit = js.native
   def cx(a: Null, b: ClassNamesState): String | Unit = js.native
+  def cx(a: Null, b: ClassNamesState, c: String): String | Unit = js.native
   /*
     Get the styles of a particular part of the select. Pass in the name of the
     property as the first argument, and the current props as the second argument.

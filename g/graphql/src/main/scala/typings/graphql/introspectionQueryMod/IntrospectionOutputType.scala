@@ -26,10 +26,10 @@ object IntrospectionOutputType {
     kind: INTERFACE,
     name: String,
     possibleTypes: js.Array[IntrospectionNamedTypeRef[IntrospectionObjectType]],
-    description: Maybe[String] = null
+    description: js.UndefOr[Null | Maybe[String]] = js.undefined
   ): IntrospectionOutputType = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], possibleTypes = possibleTypes.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionOutputType]
   }
   @scala.inline
@@ -37,16 +37,16 @@ object IntrospectionOutputType {
     kind: UNION,
     name: String,
     possibleTypes: js.Array[IntrospectionNamedTypeRef[IntrospectionObjectType]],
-    description: Maybe[String] = null
+    description: js.UndefOr[Null | Maybe[String]] = js.undefined
   ): IntrospectionOutputType = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], possibleTypes = possibleTypes.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionOutputType]
   }
   @scala.inline
-  def IntrospectionScalarType(kind: SCALAR, name: String, description: Maybe[String] = null): IntrospectionOutputType = {
+  def IntrospectionScalarType(kind: SCALAR, name: String, description: js.UndefOr[Null | Maybe[String]] = js.undefined): IntrospectionOutputType = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionOutputType]
   }
   @scala.inline
@@ -54,10 +54,10 @@ object IntrospectionOutputType {
     enumValues: js.Array[IntrospectionEnumValue],
     kind: ENUM,
     name: String,
-    description: Maybe[String] = null
+    description: js.UndefOr[Null | Maybe[String]] = js.undefined
   ): IntrospectionOutputType = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionOutputType]
   }
   @scala.inline
@@ -66,10 +66,10 @@ object IntrospectionOutputType {
     interfaces: js.Array[IntrospectionNamedTypeRef[IntrospectionInterfaceType]],
     kind: OBJECT,
     name: String,
-    description: Maybe[String] = null
+    description: js.UndefOr[Null | Maybe[String]] = js.undefined
   ): IntrospectionOutputType = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], interfaces = interfaces.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionOutputType]
   }
 }

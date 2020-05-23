@@ -13,32 +13,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Web.AtomPub.ResourceCollection")
-@js.native
-class ResourceCollection () extends IResourceCollection {
-  /* CompleteClass */
-  override var accepts: IVectorView[String] = js.native
-  /* CompleteClass */
-  override var attributeExtensions: IVector[SyndicationAttribute] = js.native
-  /* CompleteClass */
-  override var baseUri: Uri = js.native
-  /* CompleteClass */
-  override var categories: IVectorView[SyndicationCategory] = js.native
-  /* CompleteClass */
-  override var elementExtensions: IVector[ISyndicationNode] = js.native
-  /* CompleteClass */
-  override var language: String = js.native
-  /* CompleteClass */
-  override var nodeName: String = js.native
-  /* CompleteClass */
-  override var nodeNamespace: String = js.native
-  /* CompleteClass */
-  override var nodeValue: String = js.native
-  /* CompleteClass */
-  override var title: ISyndicationText = js.native
-  /* CompleteClass */
-  override var uri: Uri = js.native
-  /* CompleteClass */
-  override def getXmlDocument(format: SyndicationFormat): XmlDocument = js.native
+trait ResourceCollection extends IResourceCollection
+
+object ResourceCollection {
+  @scala.inline
+  def apply(
+    accepts: IVectorView[String],
+    attributeExtensions: IVector[SyndicationAttribute],
+    baseUri: Uri,
+    categories: IVectorView[SyndicationCategory],
+    elementExtensions: IVector[ISyndicationNode],
+    getXmlDocument: SyndicationFormat => XmlDocument,
+    language: String,
+    nodeName: String,
+    nodeNamespace: String,
+    nodeValue: String,
+    title: ISyndicationText,
+    uri: Uri
+  ): ResourceCollection = {
+    val __obj = js.Dynamic.literal(accepts = accepts.asInstanceOf[js.Any], attributeExtensions = attributeExtensions.asInstanceOf[js.Any], baseUri = baseUri.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], elementExtensions = elementExtensions.asInstanceOf[js.Any], getXmlDocument = js.Any.fromFunction1(getXmlDocument), language = language.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], nodeNamespace = nodeNamespace.asInstanceOf[js.Any], nodeValue = nodeValue.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ResourceCollection]
+  }
 }
 

@@ -17,7 +17,7 @@ trait RenderOptions[Q /* <: Queries */] extends js.Object {
 
 object RenderOptions {
   @scala.inline
-  def apply[Q /* <: Queries */](
+  def apply[Q](
     baseElement: HTMLElement = null,
     container: HTMLElement = null,
     hydrate: js.UndefOr[Boolean] = js.undefined,
@@ -27,7 +27,7 @@ object RenderOptions {
     val __obj = js.Dynamic.literal()
     if (baseElement != null) __obj.updateDynamic("baseElement")(baseElement.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(hydrate)) __obj.updateDynamic("hydrate")(hydrate.asInstanceOf[js.Any])
+    if (!js.isUndefined(hydrate)) __obj.updateDynamic("hydrate")(hydrate.get.asInstanceOf[js.Any])
     if (queries != null) __obj.updateDynamic("queries")(queries.asInstanceOf[js.Any])
     if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderOptions[Q]]

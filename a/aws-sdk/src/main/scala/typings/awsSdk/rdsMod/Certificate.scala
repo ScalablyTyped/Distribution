@@ -46,7 +46,7 @@ object Certificate {
     CertificateArn: String = null,
     CertificateIdentifier: String = null,
     CertificateType: String = null,
-    CustomerOverride: js.UndefOr[scala.Boolean] = js.undefined,
+    CustomerOverride: js.UndefOr[BooleanOptional] = js.undefined,
     CustomerOverrideValidTill: TStamp = null,
     Thumbprint: String = null,
     ValidFrom: TStamp = null,
@@ -56,7 +56,7 @@ object Certificate {
     if (CertificateArn != null) __obj.updateDynamic("CertificateArn")(CertificateArn.asInstanceOf[js.Any])
     if (CertificateIdentifier != null) __obj.updateDynamic("CertificateIdentifier")(CertificateIdentifier.asInstanceOf[js.Any])
     if (CertificateType != null) __obj.updateDynamic("CertificateType")(CertificateType.asInstanceOf[js.Any])
-    if (!js.isUndefined(CustomerOverride)) __obj.updateDynamic("CustomerOverride")(CustomerOverride.asInstanceOf[js.Any])
+    if (!js.isUndefined(CustomerOverride)) __obj.updateDynamic("CustomerOverride")(CustomerOverride.get.asInstanceOf[js.Any])
     if (CustomerOverrideValidTill != null) __obj.updateDynamic("CustomerOverrideValidTill")(CustomerOverrideValidTill.asInstanceOf[js.Any])
     if (Thumbprint != null) __obj.updateDynamic("Thumbprint")(Thumbprint.asInstanceOf[js.Any])
     if (ValidFrom != null) __obj.updateDynamic("ValidFrom")(ValidFrom.asInstanceOf[js.Any])

@@ -1,5 +1,9 @@
 package typings.uirouterCore
 
+import typings.uirouterCore.anon.Configuration
+import typings.uirouterCore.anon.Hash
+import typings.uirouterCore.anon.Instantiable
+import typings.uirouterCore.anon.InstantiableLocationConfig
 import typings.uirouterCore.coreservicesMod.InjectorLike
 import typings.uirouterCore.coreservicesMod.LocationServices
 import typings.uirouterCore.coreservicesMod.QLike
@@ -59,11 +63,11 @@ object vanillaMod extends js.Object {
   def locationPluginFactory(
     name: String,
     isHtml5: Boolean,
-    serviceClass: AnonInstantiable,
-    configurationClass: AnonInstantiableLocationConfig
-  ): js.Function1[/* uiRouter */ UIRouter, AnonConfiguration] = js.native
+    serviceClass: Instantiable,
+    configurationClass: InstantiableLocationConfig
+  ): js.Function1[/* uiRouter */ UIRouter, Configuration] = js.native
   def memoryLocationPlugin(router: UIRouter): LocationPlugin = js.native
-  def parseUrl(url: String): AnonHash = js.native
+  def parseUrl(url: String): Hash = js.native
   def pushStateLocationPlugin(router: UIRouter): LocationPlugin = js.native
   def servicesPlugin(router: UIRouter): ServicesPlugin = js.native
 }

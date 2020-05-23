@@ -17,20 +17,20 @@ object IEllpiticalArcOptions {
   def apply(
     clockwise: js.UndefOr[Boolean] = js.undefined,
     large: js.UndefOr[Boolean] = js.undefined,
-    radius: Int | Double = null,
-    resolution: Int | Double = null,
-    xaxisrotation: Int | Double = null,
-    xradius: Int | Double = null,
-    yradius: Int | Double = null
+    radius: js.UndefOr[Double] = js.undefined,
+    resolution: js.UndefOr[Double] = js.undefined,
+    xaxisrotation: js.UndefOr[Double] = js.undefined,
+    xradius: js.UndefOr[Double] = js.undefined,
+    yradius: js.UndefOr[Double] = js.undefined
   ): IEllpiticalArcOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clockwise)) __obj.updateDynamic("clockwise")(clockwise.asInstanceOf[js.Any])
-    if (!js.isUndefined(large)) __obj.updateDynamic("large")(large.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
-    if (xaxisrotation != null) __obj.updateDynamic("xaxisrotation")(xaxisrotation.asInstanceOf[js.Any])
-    if (xradius != null) __obj.updateDynamic("xradius")(xradius.asInstanceOf[js.Any])
-    if (yradius != null) __obj.updateDynamic("yradius")(yradius.asInstanceOf[js.Any])
+    if (!js.isUndefined(clockwise)) __obj.updateDynamic("clockwise")(clockwise.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(large)) __obj.updateDynamic("large")(large.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolution)) __obj.updateDynamic("resolution")(resolution.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xaxisrotation)) __obj.updateDynamic("xaxisrotation")(xaxisrotation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xradius)) __obj.updateDynamic("xradius")(xradius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yradius)) __obj.updateDynamic("yradius")(yradius.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEllpiticalArcOptions]
   }
 }

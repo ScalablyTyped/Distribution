@@ -24,13 +24,13 @@ object Install {
     installState: String = null,
     kind: String = null,
     productId: String = null,
-    versionCode: Int | Double = null
+    versionCode: js.UndefOr[Double] = js.undefined
   ): Install = {
     val __obj = js.Dynamic.literal()
     if (installState != null) __obj.updateDynamic("installState")(installState.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
-    if (versionCode != null) __obj.updateDynamic("versionCode")(versionCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(versionCode)) __obj.updateDynamic("versionCode")(versionCode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Install]
   }
 }

@@ -1,12 +1,12 @@
 package typings.uifabricStyling.ithemeMod
 
 import typings.uifabricMergeStyles.istyleMod.IRawStyle
-import typings.uifabricStyling.PartialIEffects
-import typings.uifabricStyling.PartialIFontStyles
-import typings.uifabricStyling.PartialIPalette
-import typings.uifabricStyling.PartialISemanticColors
-import typings.uifabricStyling.PartialISpacing
-import typings.uifabricStyling.PinISchemeNamesIScheme
+import typings.uifabricStyling.anon.PartialIEffects
+import typings.uifabricStyling.anon.PartialIFontStyles
+import typings.uifabricStyling.anon.PartialIPalette
+import typings.uifabricStyling.anon.PartialISemanticColors
+import typings.uifabricStyling.anon.PartialISpacing
+import typings.uifabricStyling.anon.PinISchemeNamesIScheme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,12 +43,12 @@ object IPartialTheme {
   ): IPartialTheme = {
     val __obj = js.Dynamic.literal()
     if (defaultFontStyle != null) __obj.updateDynamic("defaultFontStyle")(defaultFontStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableGlobalClassNames)) __obj.updateDynamic("disableGlobalClassNames")(disableGlobalClassNames.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableGlobalClassNames)) __obj.updateDynamic("disableGlobalClassNames")(disableGlobalClassNames.get.asInstanceOf[js.Any])
     if (effects != null) __obj.updateDynamic("effects")(effects.asInstanceOf[js.Any])
     if (fonts != null) __obj.updateDynamic("fonts")(fonts.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInverted)) __obj.updateDynamic("isInverted")(isInverted.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInverted)) __obj.updateDynamic("isInverted")(isInverted.get.asInstanceOf[js.Any])
     if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.get.asInstanceOf[js.Any])
     if (schemes != null) __obj.updateDynamic("schemes")(schemes.asInstanceOf[js.Any])
     if (semanticColors != null) __obj.updateDynamic("semanticColors")(semanticColors.asInstanceOf[js.Any])
     if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])

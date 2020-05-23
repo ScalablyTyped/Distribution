@@ -12,11 +12,15 @@ trait CAGExtrudeOptions extends js.Object {
 
 object CAGExtrudeOptions {
   @scala.inline
-  def apply(offset: js.Array[Double] = null, twistangle: Int | Double = null, twiststeps: Int | Double = null): CAGExtrudeOptions = {
+  def apply(
+    offset: js.Array[Double] = null,
+    twistangle: js.UndefOr[Double] = js.undefined,
+    twiststeps: js.UndefOr[Double] = js.undefined
+  ): CAGExtrudeOptions = {
     val __obj = js.Dynamic.literal()
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (twistangle != null) __obj.updateDynamic("twistangle")(twistangle.asInstanceOf[js.Any])
-    if (twiststeps != null) __obj.updateDynamic("twiststeps")(twiststeps.asInstanceOf[js.Any])
+    if (!js.isUndefined(twistangle)) __obj.updateDynamic("twistangle")(twistangle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(twiststeps)) __obj.updateDynamic("twiststeps")(twiststeps.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CAGExtrudeOptions]
   }
 }

@@ -55,12 +55,12 @@ trait TextGroupOptions[T /* <: MultilineText */] extends GroupOptions {
 
 object TextGroupOptions {
   @scala.inline
-  def apply[T /* <: MultilineText */](
+  def apply[T](
     font: Font,
     addTo: Anchor = null,
     color: String = null,
     fill: js.UndefOr[Boolean] = js.undefined,
-    fontSize: Int | Double = null,
+    fontSize: js.UndefOr[Double] = js.undefined,
     rotate: VectorOptions = null,
     scale: VectorOptions | Double = null,
     stroke: Double | `false` = null,
@@ -74,17 +74,17 @@ object TextGroupOptions {
     val __obj = js.Dynamic.literal(font = font.asInstanceOf[js.Any])
     if (addTo != null) __obj.updateDynamic("addTo")(addTo.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
     if (textBaseline != null) __obj.updateDynamic("textBaseline")(textBaseline.asInstanceOf[js.Any])
     if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateSort)) __obj.updateDynamic("updateSort")(updateSort.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateSort)) __obj.updateDynamic("updateSort")(updateSort.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextGroupOptions[T]]
   }
 }

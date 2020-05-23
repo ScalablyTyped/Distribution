@@ -1,6 +1,6 @@
 package typings.reactNativeJoi.mod
 
-import typings.reactNativeJoi.AnonArrays
+import typings.reactNativeJoi.anon.Arrays
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,7 +46,7 @@ trait ValidationOptions extends js.Object {
     * - when an object:
     *      - objects - set to true to remove unknown keys from objects
     */
-  var stripUnknown: js.UndefOr[Boolean | AnonArrays] = js.undefined
+  var stripUnknown: js.UndefOr[Boolean | Arrays] = js.undefined
 }
 
 object ValidationOptions {
@@ -60,17 +60,17 @@ object ValidationOptions {
     noDefaults: js.UndefOr[Boolean] = js.undefined,
     presence: typings.reactNativeJoi.reactNativeJoiStrings.optional | typings.reactNativeJoi.reactNativeJoiStrings.required | typings.reactNativeJoi.reactNativeJoiStrings.forbidden = null,
     skipFunctions: js.UndefOr[Boolean] = js.undefined,
-    stripUnknown: Boolean | AnonArrays = null
+    stripUnknown: Boolean | Arrays = null
   ): ValidationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(abortEarly)) __obj.updateDynamic("abortEarly")(abortEarly.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowUnknown)) __obj.updateDynamic("allowUnknown")(allowUnknown.asInstanceOf[js.Any])
+    if (!js.isUndefined(abortEarly)) __obj.updateDynamic("abortEarly")(abortEarly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowUnknown)) __obj.updateDynamic("allowUnknown")(allowUnknown.get.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (!js.isUndefined(convert)) __obj.updateDynamic("convert")(convert.asInstanceOf[js.Any])
+    if (!js.isUndefined(convert)) __obj.updateDynamic("convert")(convert.get.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (!js.isUndefined(noDefaults)) __obj.updateDynamic("noDefaults")(noDefaults.asInstanceOf[js.Any])
+    if (!js.isUndefined(noDefaults)) __obj.updateDynamic("noDefaults")(noDefaults.get.asInstanceOf[js.Any])
     if (presence != null) __obj.updateDynamic("presence")(presence.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipFunctions)) __obj.updateDynamic("skipFunctions")(skipFunctions.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipFunctions)) __obj.updateDynamic("skipFunctions")(skipFunctions.get.asInstanceOf[js.Any])
     if (stripUnknown != null) __obj.updateDynamic("stripUnknown")(stripUnknown.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationOptions]
   }

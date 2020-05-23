@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.WebService")
 @js.native
-class WebService protected () extends js.Object {
+trait WebService extends js.Object {
   @JSName("Access.WebService_typekey")
   var AccessDotWebService_typekey: WebService = js.native
   @JSName("Entities")

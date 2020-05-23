@@ -4,23 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Devices.Sensors.Compass")
-@js.native
-class Compass () extends ICompass {
-  /* CompleteClass */
-  override var minimumReportInterval: Double = js.native
-  /* CompleteClass */
-  override var onreadingchanged: js.Any = js.native
-  /* CompleteClass */
-  override var reportInterval: Double = js.native
-  /* CompleteClass */
-  override def getCurrentReading(): CompassReading = js.native
-}
+trait Compass extends ICompass
 
-/* static members */
-@JSGlobal("Windows.Devices.Sensors.Compass")
-@js.native
-object Compass extends js.Object {
-  def getDefault(): Compass = js.native
+object Compass {
+  @scala.inline
+  def apply(
+    getCurrentReading: () => CompassReading,
+    minimumReportInterval: Double,
+    onreadingchanged: js.Any,
+    reportInterval: Double
+  ): Compass = {
+    val __obj = js.Dynamic.literal(getCurrentReading = js.Any.fromFunction0(getCurrentReading), minimumReportInterval = minimumReportInterval.asInstanceOf[js.Any], onreadingchanged = onreadingchanged.asInstanceOf[js.Any], reportInterval = reportInterval.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Compass]
+  }
 }
 

@@ -1,6 +1,5 @@
 package typings.appBuilderLib
 
-import typings.appBuilderLib.appBuilderLibStrings.S3
 import typings.appBuilderLib.baseS3PublisherMod.BaseS3Publisher
 import typings.builderUtilRuntime.publishOptionsMod.S3Options
 import typings.electronPublish.mod.PublishContext
@@ -15,7 +14,7 @@ object s3PublisherMod extends js.Object {
   trait S3Publisher extends BaseS3Publisher {
     val info: js.Any = js.native
     @JSName("providerName")
-    val providerName_FS3Publisher: S3 = js.native
+    val providerName_FS3Publisher: /* "S3" */ String = js.native
   }
   
   @js.native

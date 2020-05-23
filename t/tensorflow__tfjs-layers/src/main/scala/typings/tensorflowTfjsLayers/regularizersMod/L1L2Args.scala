@@ -13,10 +13,10 @@ trait L1L2Args extends js.Object {
 
 object L1L2Args {
   @scala.inline
-  def apply(l1: Int | Double = null, l2: Int | Double = null): L1L2Args = {
+  def apply(l1: js.UndefOr[Double] = js.undefined, l2: js.UndefOr[Double] = js.undefined): L1L2Args = {
     val __obj = js.Dynamic.literal()
-    if (l1 != null) __obj.updateDynamic("l1")(l1.asInstanceOf[js.Any])
-    if (l2 != null) __obj.updateDynamic("l2")(l2.asInstanceOf[js.Any])
+    if (!js.isUndefined(l1)) __obj.updateDynamic("l1")(l1.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(l2)) __obj.updateDynamic("l2")(l2.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[L1L2Args]
   }
 }

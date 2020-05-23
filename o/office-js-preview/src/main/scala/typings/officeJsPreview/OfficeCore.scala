@@ -1,7 +1,6 @@
 package typings.officeJsPreview
 
 import typings.officeJsPreview.OfficeExtension.ClientRequestContext
-import typings.officeJsPreview.OfficeExtension.RequestUrlAndHeaderInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,12 +15,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("OfficeCore")
 @js.native
 object OfficeCore extends js.Object {
-  @js.native
-  class RequestContext () extends ClientRequestContext {
-    def this(url: String) = this()
-    def this(url: js.Any) = this()
-    def this(url: RequestUrlAndHeaderInfo) = this()
-  }
-  
+  type RequestContext = ClientRequestContext
 }
 

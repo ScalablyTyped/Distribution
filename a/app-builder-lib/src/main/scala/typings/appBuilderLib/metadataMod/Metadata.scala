@@ -52,33 +52,33 @@ trait Metadata extends js.Object {
 object Metadata {
   @scala.inline
   def apply(
-    author: AuthorMetadata = null,
+    author: js.UndefOr[Null | AuthorMetadata] = js.undefined,
     build: Configuration = null,
     dependencies: StringDictionary[String] = null,
     description: String = null,
-    homepage: String = null,
-    license: String = null,
-    main: String = null,
+    homepage: js.UndefOr[Null | String] = js.undefined,
+    license: js.UndefOr[Null | String] = js.undefined,
+    main: js.UndefOr[Null | String] = js.undefined,
     name: String = null,
-    productName: String = null,
-    repository: String | RepositoryInfo = null,
-    shortVersion: String = null,
-    shortVersionWindows: String = null,
+    productName: js.UndefOr[Null | String] = js.undefined,
+    repository: js.UndefOr[Null | String | RepositoryInfo] = js.undefined,
+    shortVersion: js.UndefOr[Null | String] = js.undefined,
+    shortVersionWindows: js.UndefOr[Null | String] = js.undefined,
     version: String = null
   ): Metadata = {
     val __obj = js.Dynamic.literal()
-    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (!js.isUndefined(author)) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
     if (build != null) __obj.updateDynamic("build")(build.asInstanceOf[js.Any])
     if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (homepage != null) __obj.updateDynamic("homepage")(homepage.asInstanceOf[js.Any])
-    if (license != null) __obj.updateDynamic("license")(license.asInstanceOf[js.Any])
-    if (main != null) __obj.updateDynamic("main")(main.asInstanceOf[js.Any])
+    if (!js.isUndefined(homepage)) __obj.updateDynamic("homepage")(homepage.asInstanceOf[js.Any])
+    if (!js.isUndefined(license)) __obj.updateDynamic("license")(license.asInstanceOf[js.Any])
+    if (!js.isUndefined(main)) __obj.updateDynamic("main")(main.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (productName != null) __obj.updateDynamic("productName")(productName.asInstanceOf[js.Any])
-    if (repository != null) __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])
-    if (shortVersion != null) __obj.updateDynamic("shortVersion")(shortVersion.asInstanceOf[js.Any])
-    if (shortVersionWindows != null) __obj.updateDynamic("shortVersionWindows")(shortVersionWindows.asInstanceOf[js.Any])
+    if (!js.isUndefined(productName)) __obj.updateDynamic("productName")(productName.asInstanceOf[js.Any])
+    if (!js.isUndefined(repository)) __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])
+    if (!js.isUndefined(shortVersion)) __obj.updateDynamic("shortVersion")(shortVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(shortVersionWindows)) __obj.updateDynamic("shortVersionWindows")(shortVersionWindows.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metadata]
   }

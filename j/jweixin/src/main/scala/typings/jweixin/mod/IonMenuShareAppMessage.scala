@@ -8,16 +8,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IonMenuShareAppMessage extends BaseParams {
-  		// 分享类型,music、video或link，不填默认为link
+          // 分享类型,music、video或link，不填默认为link
   var dataUrl: js.UndefOr[String] = js.undefined
-  	// 分享标题
+      // 分享标题
   var desc: String
-  	// 分享链接
+      // 分享链接
   var imgUrl: String
-  	// 分享描述
+      // 分享描述
   var link: String
   var title: String
-  	// 分享图标
+      // 分享图标
   var `type`: js.UndefOr[music | video或link | link] = js.undefined
   // 用户取消分享后执行的回调函数
   def cancel(): Unit

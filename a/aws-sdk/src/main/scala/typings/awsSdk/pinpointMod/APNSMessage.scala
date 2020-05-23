@@ -85,7 +85,7 @@ object APNSMessage {
   def apply(
     APNSPushType: string = null,
     Action: Action = null,
-    Badge: Int | Double = null,
+    Badge: js.UndefOr[integer] = js.undefined,
     Body: string = null,
     Category: string = null,
     CollapseId: string = null,
@@ -94,18 +94,18 @@ object APNSMessage {
     PreferredAuthenticationMethod: string = null,
     Priority: string = null,
     RawContent: string = null,
-    SilentPush: js.UndefOr[Boolean] = js.undefined,
+    SilentPush: js.UndefOr[boolean] = js.undefined,
     Sound: string = null,
     Substitutions: MapOfListOfString = null,
     ThreadId: string = null,
-    TimeToLive: Int | Double = null,
+    TimeToLive: js.UndefOr[integer] = js.undefined,
     Title: string = null,
     Url: string = null
   ): APNSMessage = {
     val __obj = js.Dynamic.literal()
     if (APNSPushType != null) __obj.updateDynamic("APNSPushType")(APNSPushType.asInstanceOf[js.Any])
     if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
-    if (Badge != null) __obj.updateDynamic("Badge")(Badge.asInstanceOf[js.Any])
+    if (!js.isUndefined(Badge)) __obj.updateDynamic("Badge")(Badge.get.asInstanceOf[js.Any])
     if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
     if (Category != null) __obj.updateDynamic("Category")(Category.asInstanceOf[js.Any])
     if (CollapseId != null) __obj.updateDynamic("CollapseId")(CollapseId.asInstanceOf[js.Any])
@@ -114,11 +114,11 @@ object APNSMessage {
     if (PreferredAuthenticationMethod != null) __obj.updateDynamic("PreferredAuthenticationMethod")(PreferredAuthenticationMethod.asInstanceOf[js.Any])
     if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
     if (RawContent != null) __obj.updateDynamic("RawContent")(RawContent.asInstanceOf[js.Any])
-    if (!js.isUndefined(SilentPush)) __obj.updateDynamic("SilentPush")(SilentPush.asInstanceOf[js.Any])
+    if (!js.isUndefined(SilentPush)) __obj.updateDynamic("SilentPush")(SilentPush.get.asInstanceOf[js.Any])
     if (Sound != null) __obj.updateDynamic("Sound")(Sound.asInstanceOf[js.Any])
     if (Substitutions != null) __obj.updateDynamic("Substitutions")(Substitutions.asInstanceOf[js.Any])
     if (ThreadId != null) __obj.updateDynamic("ThreadId")(ThreadId.asInstanceOf[js.Any])
-    if (TimeToLive != null) __obj.updateDynamic("TimeToLive")(TimeToLive.asInstanceOf[js.Any])
+    if (!js.isUndefined(TimeToLive)) __obj.updateDynamic("TimeToLive")(TimeToLive.get.asInstanceOf[js.Any])
     if (Title != null) __obj.updateDynamic("Title")(Title.asInstanceOf[js.Any])
     if (Url != null) __obj.updateDynamic("Url")(Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[APNSMessage]

@@ -23,13 +23,6 @@ object MessageBarType extends js.Object {
   @js.native
   sealed trait info extends MessageBarType
   
-  /**
-    * Deprecated at v0.48.0, to be removed at \>= v1.0.0. Use `blocked` instead.
-    * @deprecated Use `blocked` instead.
-    */
-  @js.native
-  sealed trait remove extends MessageBarType
-  
   /** SevereWarning styled MessageBar */
   @js.native
   sealed trait severeWarning extends MessageBarType
@@ -52,9 +45,6 @@ object MessageBarType extends js.Object {
   
   /* 0 */ @js.native
   object info extends TopLevel[info with Double]
-  
-  /* 90000 */ @js.native
-  object remove extends TopLevel[remove with Double]
   
   /* 3 */ @js.native
   object severeWarning extends TopLevel[severeWarning with Double]

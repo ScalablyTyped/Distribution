@@ -2,7 +2,10 @@ package typings.reactNativeTabView
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ComponentType
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
+import typings.reactNativeTabView.anon.Bounces
+import typings.reactNativeTabView.anon.GestureHandlerProps
+import typings.reactNativeTabView.anon.GetAccessibilityLabel
 import typings.reactNativeTabView.scrollPagerMod.default
 import typings.reactNativeTabView.typesMod.Route
 import scala.scalajs.js
@@ -31,19 +34,19 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object ScrollPager extends js.Object {
-    var defaultProps: AnonBounces = js.native
+    var defaultProps: Bounces = js.native
   }
   
   /* static members */
   @js.native
   object TabBar extends js.Object {
-    var defaultProps: AnonGetAccessibilityLabel = js.native
+    var defaultProps: GetAccessibilityLabel = js.native
   }
   
   /* static members */
   @js.native
   object TabView extends js.Object {
-    var defaultProps: AnonGestureHandlerProps = js.native
+    var defaultProps: GestureHandlerProps = js.native
   }
   
 }

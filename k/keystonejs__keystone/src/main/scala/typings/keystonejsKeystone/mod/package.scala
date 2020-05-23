@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type Access = scala.Boolean | typings.keystonejsKeystone.mod.AccessCallback | typings.keystonejsKeystone.AnonAuth
+  type Access = scala.Boolean | typings.keystonejsKeystone.mod.AccessCallback | typings.keystonejsKeystone.anon.Auth
   type AccessCallback = js.Function1[
     /* context */ typings.keystonejsKeystone.mod.AuthenticationContext, 
     scala.Boolean | typings.keystonejsKeystone.mod.GraphQLWhereClause

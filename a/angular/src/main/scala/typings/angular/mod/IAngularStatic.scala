@@ -1,16 +1,16 @@
 package typings.angular.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angular.AnonCodeName
 import typings.angular.JQLite
 import typings.angular.JQuery
 import typings.angular.JQueryStatic
-import typings.angular.mod._Global_.Function
+import typings.angular.anon.CodeName
 import typings.angular.mod.auto.IInjectorService
+import typings.angular.mod.global.Function
 import typings.std.ArrayLike
-import typings.std.Document_
+import typings.std.Document
 import typings.std.Element
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +33,7 @@ trait IAngularStatic extends js.Object {
     * @param extraModules An optional array of modules that should be added to the original list of modules that the app was about to be bootstrapped with.
     */
   var resumeBootstrap: js.UndefOr[js.Function1[/* extraModules */ js.UndefOr[js.Array[String]], IInjectorService]] = js.native
-  var version: AnonCodeName = js.native
+  var version: CodeName = js.native
   def bind(context: js.Any, fn: Function, args: js.Any*): Function = js.native
   /**
     * Use this function to manually start up angular application.
@@ -59,10 +59,10 @@ trait IAngularStatic extends js.Object {
     modules: js.Array[String | Function | js.Array[_]],
     config: IAngularBootstrapConfig
   ): IInjectorService = js.native
-  def bootstrap(element: Document_): IInjectorService = js.native
-  def bootstrap(element: Document_, modules: js.Array[String | Function | js.Array[_]]): IInjectorService = js.native
+  def bootstrap(element: Document): IInjectorService = js.native
+  def bootstrap(element: Document, modules: js.Array[String | Function | js.Array[_]]): IInjectorService = js.native
   def bootstrap(
-    element: Document_,
+    element: Document,
     modules: js.Array[String | Function | js.Array[_]],
     config: IAngularBootstrapConfig
   ): IInjectorService = js.native
@@ -95,9 +95,9 @@ trait IAngularStatic extends js.Object {
   def element(element: js.Function0[Unit]): JQLite = js.native
   def element(element: JQuery): JQLite = js.native
   def element(element: ArrayLike[Element]): JQLite = js.native
-  def element(element: Document_): JQLite = js.native
+  def element(element: Document): JQLite = js.native
   def element(element: Element): JQLite = js.native
-  def element(element: Window_): JQLite = js.native
+  def element(element: Window): JQLite = js.native
   def equals(value1: js.Any, value2: js.Any): Boolean = js.native
   /**
     * Configure several aspects of error handling in AngularJS if used as a setter
@@ -177,7 +177,7 @@ trait IAngularStatic extends js.Object {
   def isDate(value: js.Any): /* is std.Date */ Boolean = js.native
   def isDefined(value: js.Any): Boolean = js.native
   def isElement(value: js.Any): Boolean = js.native
-  def isFunction(value: js.Any): /* is angular.angular._Global_.Function */ Boolean = js.native
+  def isFunction(value: js.Any): /* is angular.angular.<global>.Function */ Boolean = js.native
   def isNumber(value: js.Any): /* is number */ Boolean = js.native
   def isObject(value: js.Any): /* is std.Object */ Boolean = js.native
   @JSName("isObject")

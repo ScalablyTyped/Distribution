@@ -35,7 +35,7 @@ object SliceViewModelProperties {
     view: SceneViewProperties = null
   ): SliceViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(excludeGroundSurface)) __obj.updateDynamic("excludeGroundSurface")(excludeGroundSurface.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludeGroundSurface)) __obj.updateDynamic("excludeGroundSurface")(excludeGroundSurface.get.asInstanceOf[js.Any])
     if (excludedLayers != null) __obj.updateDynamic("excludedLayers")(excludedLayers.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliceViewModelProperties]

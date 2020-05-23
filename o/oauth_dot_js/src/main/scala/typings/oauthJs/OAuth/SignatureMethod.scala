@@ -1,6 +1,5 @@
 package typings.oauthJs.OAuth
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,16 @@ trait SignatureMethod extends js.Object {
   def sign(message: Message): String
 }
 
-@JSGlobal("OAuth.SignatureMethod")
-@js.native
-object SignatureMethod extends TopLevel[SignatureMethodStatic]
+object SignatureMethod {
+  @scala.inline
+  def apply(
+    getSignature: String => String,
+    initialize: (String, Accessor) => Unit,
+    key: String,
+    sign: Message => String
+  ): SignatureMethod = {
+    val __obj = js.Dynamic.literal(getSignature = js.Any.fromFunction1(getSignature), initialize = js.Any.fromFunction2(initialize), key = key.asInstanceOf[js.Any], sign = js.Any.fromFunction1(sign))
+    __obj.asInstanceOf[SignatureMethod]
+  }
+}
 

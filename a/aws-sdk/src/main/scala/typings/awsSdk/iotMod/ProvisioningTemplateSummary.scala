@@ -37,7 +37,7 @@ object ProvisioningTemplateSummary {
   def apply(
     creationDate: DateType = null,
     description: TemplateDescription = null,
-    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[Enabled] = js.undefined,
     lastModifiedDate: DateType = null,
     templateArn: TemplateArn = null,
     templateName: TemplateName = null
@@ -45,7 +45,7 @@ object ProvisioningTemplateSummary {
     val __obj = js.Dynamic.literal()
     if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate.asInstanceOf[js.Any])
     if (templateArn != null) __obj.updateDynamic("templateArn")(templateArn.asInstanceOf[js.Any])
     if (templateName != null) __obj.updateDynamic("templateName")(templateName.asInstanceOf[js.Any])

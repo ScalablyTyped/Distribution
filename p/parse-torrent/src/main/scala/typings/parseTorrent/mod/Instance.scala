@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.std.Object because Already inherited
 - typings.parseTorrentFile.mod.Instance because var conflicts: announce, constructor, infoHash, infoHashBuffer, name, urlList. Inlined created, createdBy, files, info, infoBuffer, lastPieceLength, length, pieceLength, pieces, `private` */ trait Instance
   extends typings.magnetUri.mod.Instance {
@@ -44,10 +44,10 @@ object Instance {
     ix: Double | js.Array[Double] = null,
     keywords: String | js.Array[String] = null,
     kt: js.Array[String] = null,
-    lastPieceLength: Int | Double = null,
-    length: Int | Double = null,
+    lastPieceLength: js.UndefOr[Double] = js.undefined,
+    length: js.UndefOr[Double] = js.undefined,
     name: String | js.Array[String] = null,
-    pieceLength: Int | Double = null,
+    pieceLength: js.UndefOr[Double] = js.undefined,
     pieces: js.Array[String] = null,
     `private`: js.UndefOr[Boolean] = js.undefined,
     tr: String | js.Array[String] = null,
@@ -70,12 +70,12 @@ object Instance {
     if (ix != null) __obj.updateDynamic("ix")(ix.asInstanceOf[js.Any])
     if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
     if (kt != null) __obj.updateDynamic("kt")(kt.asInstanceOf[js.Any])
-    if (lastPieceLength != null) __obj.updateDynamic("lastPieceLength")(lastPieceLength.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastPieceLength)) __obj.updateDynamic("lastPieceLength")(lastPieceLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (pieceLength != null) __obj.updateDynamic("pieceLength")(pieceLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(pieceLength)) __obj.updateDynamic("pieceLength")(pieceLength.get.asInstanceOf[js.Any])
     if (pieces != null) __obj.updateDynamic("pieces")(pieces.asInstanceOf[js.Any])
-    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.get.asInstanceOf[js.Any])
     if (tr != null) __obj.updateDynamic("tr")(tr.asInstanceOf[js.Any])
     if (urlList != null) __obj.updateDynamic("urlList")(urlList.asInstanceOf[js.Any])
     if (ws != null) __obj.updateDynamic("ws")(ws.asInstanceOf[js.Any])

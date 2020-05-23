@@ -18,7 +18,7 @@ trait PosCustomBatchRequestEntry extends js.Object {
 object PosCustomBatchRequestEntry {
   @scala.inline
   def apply(
-    batchId: Int | Double = null,
+    batchId: js.UndefOr[Double] = js.undefined,
     inventory: PosInventory = null,
     merchantId: String = null,
     method: String = null,
@@ -28,7 +28,7 @@ object PosCustomBatchRequestEntry {
     targetMerchantId: String = null
   ): PosCustomBatchRequestEntry = {
     val __obj = js.Dynamic.literal()
-    if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchId)) __obj.updateDynamic("batchId")(batchId.get.asInstanceOf[js.Any])
     if (inventory != null) __obj.updateDynamic("inventory")(inventory.asInstanceOf[js.Any])
     if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])

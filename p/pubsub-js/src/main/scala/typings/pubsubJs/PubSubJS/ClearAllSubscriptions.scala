@@ -4,15 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClearAllSubscriptions extends js.Object {
-  def clearAllSubscriptions(): js.Any
-}
-
-object ClearAllSubscriptions {
-  @scala.inline
-  def apply(clearAllSubscriptions: () => js.Any): ClearAllSubscriptions = {
-    val __obj = js.Dynamic.literal(clearAllSubscriptions = js.Any.fromFunction0(clearAllSubscriptions))
-    __obj.asInstanceOf[ClearAllSubscriptions]
-  }
+  def clearAllSubscriptions(): Unit = js.native
+  def clearAllSubscriptions(token: js.Any): Unit = js.native
 }
 

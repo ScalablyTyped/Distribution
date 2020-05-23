@@ -22,13 +22,13 @@ object SlideGround {
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     get: /* propertyName */ String => _ = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     set: (js.Function2[/* propertyName */ String, /* value */ js.Any, SlideGround]) with (js.Function1[/* props */ HashMap[_], SlideGround]) = null,
     watch: (/* path */ String | js.Array[String], /* callback */ WatchCallback, /* sync */ js.UndefOr[Boolean]) => WatchHandle = null
   ): SlideGround = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction1(get))
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (set != null) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
     if (watch != null) __obj.updateDynamic("watch")(js.Any.fromFunction3(watch))
     __obj.asInstanceOf[SlideGround]

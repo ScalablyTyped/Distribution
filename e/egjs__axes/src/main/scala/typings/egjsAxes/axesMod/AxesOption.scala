@@ -15,18 +15,18 @@ trait AxesOption extends js.Object {
 object AxesOption {
   @scala.inline
   def apply(
-    deceleration: Int | Double = null,
+    deceleration: js.UndefOr[Double] = js.undefined,
     easing: /* x */ Double => Double = null,
     interruptable: js.UndefOr[Boolean] = js.undefined,
-    maximumDuration: Int | Double = null,
-    minimumDuration: Int | Double = null
+    maximumDuration: js.UndefOr[Double] = js.undefined,
+    minimumDuration: js.UndefOr[Double] = js.undefined
   ): AxesOption = {
     val __obj = js.Dynamic.literal()
-    if (deceleration != null) __obj.updateDynamic("deceleration")(deceleration.asInstanceOf[js.Any])
+    if (!js.isUndefined(deceleration)) __obj.updateDynamic("deceleration")(deceleration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(js.Any.fromFunction1(easing))
-    if (!js.isUndefined(interruptable)) __obj.updateDynamic("interruptable")(interruptable.asInstanceOf[js.Any])
-    if (maximumDuration != null) __obj.updateDynamic("maximumDuration")(maximumDuration.asInstanceOf[js.Any])
-    if (minimumDuration != null) __obj.updateDynamic("minimumDuration")(minimumDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(interruptable)) __obj.updateDynamic("interruptable")(interruptable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumDuration)) __obj.updateDynamic("maximumDuration")(maximumDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumDuration)) __obj.updateDynamic("minimumDuration")(minimumDuration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AxesOption]
   }
 }

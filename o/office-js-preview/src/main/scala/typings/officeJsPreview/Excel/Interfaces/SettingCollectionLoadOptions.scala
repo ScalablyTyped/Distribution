@@ -18,7 +18,7 @@ trait SettingCollectionLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Returns the key that represents the id of the Setting. Read-only.
+    * For EACH ITEM in the collection: The key that represents the id of the Setting.
     *
     * [Api set: ExcelApi 1.4]
     */
@@ -40,9 +40,9 @@ object SettingCollectionLoadOptions {
     value: js.UndefOr[Boolean] = js.undefined
   ): SettingCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettingCollectionLoadOptions]
   }
 }

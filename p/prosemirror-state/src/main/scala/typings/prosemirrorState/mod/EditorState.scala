@@ -4,10 +4,9 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.prosemirrorModel.mod.Mark
 import typings.prosemirrorModel.mod.Node
 import typings.prosemirrorModel.mod.Schema
-import typings.prosemirrorState.AnonDoc
-import typings.prosemirrorState.AnonPlugins
-import typings.prosemirrorState.AnonSchema
-import typings.prosemirrorState.AnonState
+import typings.prosemirrorState.anon.Doc
+import typings.prosemirrorState.anon.Plugins
+import typings.prosemirrorState.anon.State
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,7 +51,7 @@ class EditorState[S /* <: Schema[_, _] */] () extends js.Object {
     * hooks](#state.PluginSpec.filterTransaction) of
     * plugins) along with the new state.
     */
-  def applyTransaction(tr: Transaction[S]): AnonState[S] = js.native
+  def applyTransaction(tr: Transaction[S]): State[S] = js.native
   /**
     * Create a new state based on this one, but with an adjusted set of
     * active plugins. State fields that exist in both sets of plugins
@@ -61,7 +60,7 @@ class EditorState[S /* <: Schema[_, _] */] () extends js.Object {
     * [`init`](#state.StateField.init) method, passing in the new
     * configuration object..
     */
-  def reconfigure(config: AnonPlugins[S]): EditorState[S] = js.native
+  def reconfigure(config: Plugins[S]): EditorState[S] = js.native
   /**
     * Serialize this state to JSON. If you want to serialize the state
     * of plugins, pass an object mapping property names to use in the
@@ -80,7 +79,7 @@ object EditorState extends js.Object {
   /**
     * Create a new state.
     */
-  def create[S /* <: Schema[_, _] */](config: AnonDoc[S]): EditorState[S] = js.native
+  def create[S /* <: Schema[_, _] */](config: Doc[S]): EditorState[S] = js.native
   /**
     * Deserialize a JSON representation of a state. `config` should
     * have at least a `schema` field, and should contain array of
@@ -88,9 +87,9 @@ object EditorState extends js.Object {
     * to deserialize the state of plugins, by associating plugin
     * instances with the property names they use in the JSON object.
     */
-  def fromJSON[S /* <: Schema[_, _] */](config: AnonSchema[S], json: StringDictionary[js.Any]): EditorState[S] = js.native
+  def fromJSON[S /* <: Schema[_, _] */](config: typings.prosemirrorState.anon.Schema[S], json: StringDictionary[js.Any]): EditorState[S] = js.native
   def fromJSON[S /* <: Schema[_, _] */](
-    config: AnonSchema[S],
+    config: typings.prosemirrorState.anon.Schema[S],
     json: StringDictionary[js.Any],
     pluginFields: StringDictionary[Plugin[_, S]]
   ): EditorState[S] = js.native

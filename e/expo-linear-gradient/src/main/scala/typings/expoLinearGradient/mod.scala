@@ -1,5 +1,6 @@
 package typings.expoLinearGradient
 
+import typings.expoLinearGradient.anon.AccessibilityActions
 import typings.expoLinearGradient.linearGradientMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +15,7 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object LinearGradient extends js.Object {
-    var propTypes: AnonAccessibilityActions = js.native
+    var propTypes: AccessibilityActions = js.native
   }
   
 }

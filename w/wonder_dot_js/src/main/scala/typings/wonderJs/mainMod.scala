@@ -1,5 +1,7 @@
 package typings.wonderJs
 
+import typings.wonderJs.anon.CanvasId
+import typings.wonderJs.anon.TypeofMain
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +16,7 @@ object mainMod extends js.Object {
   @js.native
   object Main extends js.Object {
     def init(): TypeofMain = js.native
-    def setConfig(hasCanvasIdIsTestScreenSizeUseDevicePixelRatioContextConfig: AnonCanvasId): TypeofMain = js.native
+    def setConfig(hasCanvasIdIsTestScreenSizeUseDevicePixelRatioContextConfig: CanvasId): TypeofMain = js.native
   }
   
 }

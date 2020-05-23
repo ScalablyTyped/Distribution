@@ -1,6 +1,5 @@
 package typings.grunt.grunt
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -53,29 +52,6 @@ object fail extends js.Object {
     
     @js.native
     sealed trait Warning extends ErrorCode
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ErrorCode with Double] = js.native
-    /* 5 */ @js.native
-    object Autocomplete extends TopLevel[Autocomplete with Double]
-    
-    /* 1 */ @js.native
-    object Fatal extends TopLevel[Fatal with Double]
-    
-    /* 2 */ @js.native
-    object MissingGruntfile extends TopLevel[MissingGruntfile with Double]
-    
-    /* 0 */ @js.native
-    object NoError extends TopLevel[NoError with Double]
-    
-    /* 3 */ @js.native
-    object Task extends TopLevel[Task with Double]
-    
-    /* 4 */ @js.native
-    object Template extends TopLevel[Template with Double]
-    
-    /* 6 */ @js.native
-    object Warning extends TopLevel[Warning with Double]
     
   }
   

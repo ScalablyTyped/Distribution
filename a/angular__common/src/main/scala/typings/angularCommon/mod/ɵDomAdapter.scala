@@ -1,10 +1,10 @@
 package typings.angularCommon.mod
 
-import typings.std.Document_
+import typings.std.Document
 import typings.std.Element
 import typings.std.HTMLDocument
 import typings.std.HTMLElement
-import typings.std.History_
+import typings.std.History
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,11 +17,11 @@ abstract class ɵDomAdapter () extends js.Object {
   def createElement(tagName: js.Any, doc: js.Any): HTMLElement = js.native
   def createHtmlDocument(): HTMLDocument = js.native
   def dispatchEvent(el: js.Any, evt: js.Any): js.Any = js.native
-   /** This is the ambient Location definition, NOT Location from @angular/common.  */ def getBaseHref(doc: Document_): String | Null = js.native
+   /** This is the ambient Location definition, NOT Location from @angular/common.  */ def getBaseHref(doc: Document): String | Null = js.native
   def getCookie(name: String): String | Null = js.native
-  def getDefaultDocument(): Document_ = js.native
-  def getGlobalEventTarget(doc: Document_, target: String): js.Any = js.native
-  def getHistory(): History_ = js.native
+  def getDefaultDocument(): Document = js.native
+  def getGlobalEventTarget(doc: Document, target: String): js.Any = js.native
+  def getHistory(): History = js.native
   def getLocation(): js.Any = js.native
   def getProperty(el: Element, name: String): js.Any = js.native
   def getUserAgent(): String = js.native

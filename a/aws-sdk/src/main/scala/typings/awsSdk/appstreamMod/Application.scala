@@ -40,7 +40,7 @@ object Application {
   @scala.inline
   def apply(
     DisplayName: String = null,
-    Enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    Enabled: js.UndefOr[Boolean] = js.undefined,
     IconURL: String = null,
     LaunchParameters: String = null,
     LaunchPath: String = null,
@@ -49,7 +49,7 @@ object Application {
   ): Application = {
     val __obj = js.Dynamic.literal()
     if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     if (IconURL != null) __obj.updateDynamic("IconURL")(IconURL.asInstanceOf[js.Any])
     if (LaunchParameters != null) __obj.updateDynamic("LaunchParameters")(LaunchParameters.asInstanceOf[js.Any])
     if (LaunchPath != null) __obj.updateDynamic("LaunchPath")(LaunchPath.asInstanceOf[js.Any])

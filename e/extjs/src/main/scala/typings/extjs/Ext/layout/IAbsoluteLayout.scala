@@ -12,8 +12,8 @@ trait IAbsoluteLayout extends IAnchor {
   /** [Config Option] (Boolean) */
   var ignoreOnContentChange: js.UndefOr[Boolean] = js.undefined
   /** [Method] This method is called when a child item changes in some way
-  		* @returns Boolean True if this layout has handled the content change.
-  		*/
+    * @returns Boolean True if this layout has handled the content change.
+    */
   @JSName("onContentChange")
   var onContentChange_IAbsoluteLayout: js.UndefOr[js.Function0[Boolean]] = js.undefined
 }
@@ -94,7 +94,7 @@ object IAbsoluteLayout {
     if (configureItem != null) __obj.updateDynamic("configureItem")(js.Any.fromFunction1(configureItem))
     if (defaultAnchor != null) __obj.updateDynamic("defaultAnchor")(defaultAnchor.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (!js.isUndefined(done)) __obj.updateDynamic("done")(done.asInstanceOf[js.Any])
+    if (!js.isUndefined(done)) __obj.updateDynamic("done")(done.get.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (finalizeLayout != null) __obj.updateDynamic("finalizeLayout")(js.Any.fromFunction1(finalizeLayout))
     if (finishedLayout != null) __obj.updateDynamic("finishedLayout")(js.Any.fromFunction1(finishedLayout))
@@ -109,15 +109,15 @@ object IAbsoluteLayout {
     if (getRenderedItems != null) __obj.updateDynamic("getRenderedItems")(js.Any.fromFunction0(getRenderedItems))
     if (getTarget != null) __obj.updateDynamic("getTarget")(js.Any.fromFunction0(getTarget))
     if (getVisibleItems != null) __obj.updateDynamic("getVisibleItems")(js.Any.fromFunction0(getVisibleItems))
-    if (!js.isUndefined(ignoreOnContentChange)) __obj.updateDynamic("ignoreOnContentChange")(ignoreOnContentChange.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreOnContentChange)) __obj.updateDynamic("ignoreOnContentChange")(ignoreOnContentChange.get.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (initLayout != null) __obj.updateDynamic("initLayout")(js.Any.fromFunction0(initLayout))
-    if (!js.isUndefined(isLayout)) __obj.updateDynamic("isLayout")(isLayout.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLayout)) __obj.updateDynamic("isLayout")(isLayout.get.asInstanceOf[js.Any])
     if (isValidParent != null) __obj.updateDynamic("isValidParent")(js.Any.fromFunction3(isValidParent))
     if (itemCls != null) __obj.updateDynamic("itemCls")(itemCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(manageOverflow)) __obj.updateDynamic("manageOverflow")(manageOverflow.asInstanceOf[js.Any])
-    if (!js.isUndefined(managePadding)) __obj.updateDynamic("managePadding")(managePadding.asInstanceOf[js.Any])
+    if (!js.isUndefined(manageOverflow)) __obj.updateDynamic("manageOverflow")(manageOverflow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(managePadding)) __obj.updateDynamic("managePadding")(managePadding.get.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (notifyOwner != null) __obj.updateDynamic("notifyOwner")(js.Any.fromFunction1(notifyOwner))
     if (onContentChange != null) __obj.updateDynamic("onContentChange")(js.Any.fromFunction0(onContentChange))
@@ -125,10 +125,10 @@ object IAbsoluteLayout {
     if (removeChildEls != null) __obj.updateDynamic("removeChildEls")(js.Any.fromFunction1(removeChildEls))
     if (renderItems != null) __obj.updateDynamic("renderItems")(js.Any.fromFunction2(renderItems))
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
-    if (!js.isUndefined(reserveScrollbar)) __obj.updateDynamic("reserveScrollbar")(reserveScrollbar.asInstanceOf[js.Any])
+    if (!js.isUndefined(reserveScrollbar)) __obj.updateDynamic("reserveScrollbar")(reserveScrollbar.get.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setCtSizeIfNeeded != null) __obj.updateDynamic("setCtSizeIfNeeded")(js.Any.fromFunction2(setCtSizeIfNeeded))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAbsoluteLayout]

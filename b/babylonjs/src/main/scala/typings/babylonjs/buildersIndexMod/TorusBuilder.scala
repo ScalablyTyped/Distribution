@@ -1,6 +1,6 @@
 package typings.babylonjs.buildersIndexMod
 
-import typings.babylonjs.AnonThickness
+import typings.babylonjs.anon.Thickness
 import typings.babylonjs.meshMod.Mesh
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,6 +29,6 @@ object TorusBuilder extends js.Object {
     * @returns the torus mesh
     * @see https://doc.babylonjs.com/how_to/set_shapes#torus
     */
-  def CreateTorus(name: String, options: AnonThickness, scene: js.Any): Mesh = js.native
+  def CreateTorus(name: String, options: Thickness, scene: js.Any): Mesh = js.native
 }
 

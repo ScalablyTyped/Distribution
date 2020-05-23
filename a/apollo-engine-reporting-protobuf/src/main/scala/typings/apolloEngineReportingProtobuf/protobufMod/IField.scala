@@ -13,10 +13,13 @@ trait IField extends js.Object {
 
 object IField {
   @scala.inline
-  def apply(name: String = null, returnType: String = null): IField = {
+  def apply(
+    name: js.UndefOr[Null | String] = js.undefined,
+    returnType: js.UndefOr[Null | String] = js.undefined
+  ): IField = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (returnType != null) __obj.updateDynamic("returnType")(returnType.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnType)) __obj.updateDynamic("returnType")(returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IField]
   }
 }

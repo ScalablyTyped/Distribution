@@ -104,27 +104,27 @@ object IConstraintDefinition {
   def apply(
     bodyA: Body = null,
     bodyB: Body = null,
-    damping: Int | Double = null,
-    id: Int | Double = null,
+    damping: js.UndefOr[Double] = js.undefined,
+    id: js.UndefOr[Double] = js.undefined,
     label: String = null,
-    length: Int | Double = null,
+    length: js.UndefOr[Double] = js.undefined,
     pointA: Vector = null,
     pointB: Vector = null,
     render: IConstraintRenderDefinition = null,
-    stiffness: Int | Double = null,
+    stiffness: js.UndefOr[Double] = js.undefined,
     `type`: String = null
   ): IConstraintDefinition = {
     val __obj = js.Dynamic.literal()
     if (bodyA != null) __obj.updateDynamic("bodyA")(bodyA.asInstanceOf[js.Any])
     if (bodyB != null) __obj.updateDynamic("bodyB")(bodyB.asInstanceOf[js.Any])
-    if (damping != null) __obj.updateDynamic("damping")(damping.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(damping)) __obj.updateDynamic("damping")(damping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
     if (pointA != null) __obj.updateDynamic("pointA")(pointA.asInstanceOf[js.Any])
     if (pointB != null) __obj.updateDynamic("pointB")(pointB.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
-    if (stiffness != null) __obj.updateDynamic("stiffness")(stiffness.asInstanceOf[js.Any])
+    if (!js.isUndefined(stiffness)) __obj.updateDynamic("stiffness")(stiffness.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConstraintDefinition]
   }

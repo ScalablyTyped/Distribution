@@ -1,6 +1,6 @@
 package typings.blueprintjsTable.mod
 
-import typings.blueprintjsTable.AnonTruncated
+import typings.blueprintjsTable.anon.Truncated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ class Cell ()
 @JSImport("@blueprintjs/table", "Cell")
 @js.native
 object Cell extends js.Object {
-  var defaultProps: AnonTruncated = js.native
+  var defaultProps: Truncated = js.native
   var displayName: String = js.native
 }
 

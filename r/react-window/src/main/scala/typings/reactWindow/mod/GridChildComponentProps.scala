@@ -23,7 +23,7 @@ object GridChildComponentProps {
     isScrolling: js.UndefOr[Boolean] = js.undefined
   ): GridChildComponentProps = {
     val __obj = js.Dynamic.literal(columnIndex = columnIndex.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
-    if (!js.isUndefined(isScrolling)) __obj.updateDynamic("isScrolling")(isScrolling.asInstanceOf[js.Any])
+    if (!js.isUndefined(isScrolling)) __obj.updateDynamic("isScrolling")(isScrolling.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridChildComponentProps]
   }
 }

@@ -14,7 +14,7 @@ object PendingProps {
   def apply[T](children: PendingChildren[T] = null, initial: js.UndefOr[Boolean] = js.undefined): PendingProps[T] = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(initial)) __obj.updateDynamic("initial")(initial.asInstanceOf[js.Any])
+    if (!js.isUndefined(initial)) __obj.updateDynamic("initial")(initial.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PendingProps[T]]
   }
 }

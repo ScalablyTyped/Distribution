@@ -20,10 +20,10 @@ object ReadConfig_ {
     globalConfig: GlobalConfig,
     hasDeprecationWarnings: Boolean,
     projectConfig: ProjectConfig,
-    configPath: Path = null
+    configPath: js.UndefOr[Null | Path] = js.undefined
   ): ReadConfig_ = {
     val __obj = js.Dynamic.literal(globalConfig = globalConfig.asInstanceOf[js.Any], hasDeprecationWarnings = hasDeprecationWarnings.asInstanceOf[js.Any], projectConfig = projectConfig.asInstanceOf[js.Any])
-    if (configPath != null) __obj.updateDynamic("configPath")(configPath.asInstanceOf[js.Any])
+    if (!js.isUndefined(configPath)) __obj.updateDynamic("configPath")(configPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadConfig_]
   }
 }

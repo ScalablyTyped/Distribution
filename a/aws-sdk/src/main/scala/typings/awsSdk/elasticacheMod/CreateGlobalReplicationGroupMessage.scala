@@ -11,7 +11,7 @@ trait CreateGlobalReplicationGroupMessage extends js.Object {
     */
   var GlobalReplicationGroupDescription: js.UndefOr[String] = js.native
   /**
-    * The suffix for name of a Global Datastore. The suffix guarantees uniqueness of the Global Datastore name across multiple regions.
+    * The suffix name of a Global Datastore. The suffix guarantees uniqueness of the Global Datastore name across multiple regions.
     */
   var GlobalReplicationGroupIdSuffix: String = js.native
   /**

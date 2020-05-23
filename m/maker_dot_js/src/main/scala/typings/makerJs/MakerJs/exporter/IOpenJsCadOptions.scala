@@ -30,20 +30,20 @@ trait IOpenJsCadOptions extends IFindLoopsOptions {
 object IOpenJsCadOptions {
   @scala.inline
   def apply(
-    extrusion: Int | Double = null,
-    facetSize: Int | Double = null,
+    extrusion: js.UndefOr[Double] = js.undefined,
+    facetSize: js.UndefOr[Double] = js.undefined,
     functionName: String = null,
     modelMap: IOpenJsCadOptionsMap = null,
-    pointMatchingDistance: Int | Double = null,
+    pointMatchingDistance: js.UndefOr[Double] = js.undefined,
     removeFromOriginal: js.UndefOr[Boolean] = js.undefined
   ): IOpenJsCadOptions = {
     val __obj = js.Dynamic.literal()
-    if (extrusion != null) __obj.updateDynamic("extrusion")(extrusion.asInstanceOf[js.Any])
-    if (facetSize != null) __obj.updateDynamic("facetSize")(facetSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(extrusion)) __obj.updateDynamic("extrusion")(extrusion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(facetSize)) __obj.updateDynamic("facetSize")(facetSize.get.asInstanceOf[js.Any])
     if (functionName != null) __obj.updateDynamic("functionName")(functionName.asInstanceOf[js.Any])
     if (modelMap != null) __obj.updateDynamic("modelMap")(modelMap.asInstanceOf[js.Any])
-    if (pointMatchingDistance != null) __obj.updateDynamic("pointMatchingDistance")(pointMatchingDistance.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeFromOriginal)) __obj.updateDynamic("removeFromOriginal")(removeFromOriginal.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointMatchingDistance)) __obj.updateDynamic("pointMatchingDistance")(pointMatchingDistance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeFromOriginal)) __obj.updateDynamic("removeFromOriginal")(removeFromOriginal.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOpenJsCadOptions]
   }
 }

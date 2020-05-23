@@ -1,6 +1,6 @@
 package typings.bluebird.mod
 
-import typings.bluebird.FnCall
+import typings.bluebird.anon.FnCall
 import typings.bluebird.bluebirdStrings.Object
 import typings.std.Error
 import typings.std.Map
@@ -31,11 +31,21 @@ trait Bluebird[R]
     * Same as calling `Promise.all(thisPromise)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
     */
   def all(): Bluebird[scala.Nothing] = js.native
+  @JSName("all")
+  def all_R[R](): Bluebird[js.Array[R]] = js.native
+  @JSName("all")
+  def all_T1[T1](): Bluebird[js.Array[T1]] = js.native
+  @JSName("all")
+  def all_T1T2[T1, T2](): Bluebird[js.Tuple2[T1, T2]] = js.native
+  @JSName("all")
+  def all_T1T2T3[T1, T2, T3](): Bluebird[js.Tuple3[T1, T2, T3]] = js.native
+  @JSName("all")
+  def all_T1T2T3T4[T1, T2, T3, T4](): Bluebird[js.Tuple4[T1, T2, T3, T4]] = js.native
   /**
     * Same as calling `Promise.all(thisPromise)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
     */
   @JSName("all")
-  def all_Q[Q](): Bluebird[R] = js.native
+  def all_T1T2T3T4T5[T1, T2, T3, T4, T5](): Bluebird[js.Tuple5[T1, T2, T3, T4, T5]] = js.native
   /**
     * Same as calling `Promise.any(thisPromise)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
     */
@@ -73,7 +83,6 @@ trait Bluebird[R]
     * Cancel this `promise`. Will not do anything if this promise is already settled or if the cancellation feature has not been enabled
     */
   def cancel(): Unit = js.native
-  def `catch`[U](): Bluebird[U | R] = js.native
   /**
     * This is a catch-all exception handler, shortcut for calling `.then(null, handler)` on this promise.
     *
@@ -81,6 +90,7 @@ trait Bluebird[R]
     *
     * Alias `.caught();` for compatibility with earlier ECMAScript version.
     */
+  def `catch`[U](): Bluebird[U | R] = js.native
   def `catch`[U](onReject: js.Function1[/* error */ js.Any, Resolvable[U]]): Bluebird[U | R] = js.native
   def `catch`[U, E1](
     // tslint:disable-next-line:unified-signatures
@@ -648,7 +658,6 @@ trait Bluebird[R]
     * Same limitations apply as with `.catchReturn()`.
     */
   def catchThrow(reason: Error): Bluebird[R] = js.native
-  def caught[U](): Bluebird[U | R] = js.native
   /**
     * This is a catch-all exception handler, shortcut for calling `.then(null, handler)` on this promise.
     *
@@ -656,6 +665,7 @@ trait Bluebird[R]
     *
     * Alias `.caught();` for compatibility with earlier ECMAScript version.
     */
+  def caught[U](): Bluebird[U | R] = js.native
   def caught[U](onReject: js.Function1[/* error */ js.Any, Resolvable[U]]): Bluebird[U | R] = js.native
   def caught[U, E1](
     // tslint:disable-next-line:unified-signatures

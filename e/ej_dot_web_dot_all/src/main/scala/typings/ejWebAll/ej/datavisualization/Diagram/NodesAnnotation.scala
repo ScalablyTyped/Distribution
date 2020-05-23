@@ -33,20 +33,20 @@ trait NodesAnnotation extends js.Object {
 object NodesAnnotation {
   @scala.inline
   def apply(
-    angle: Int | Double = null,
+    angle: js.UndefOr[Double] = js.undefined,
     direction: BPMNAnnotationDirection | String = null,
-    height: Int | Double = null,
-    length: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
+    length: js.UndefOr[Double] = js.undefined,
     text: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): NodesAnnotation = {
     val __obj = js.Dynamic.literal()
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodesAnnotation]
   }
 }

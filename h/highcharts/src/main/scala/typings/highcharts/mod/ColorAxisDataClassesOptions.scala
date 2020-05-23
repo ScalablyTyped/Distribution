@@ -42,15 +42,15 @@ object ColorAxisDataClassesOptions {
   @scala.inline
   def apply(
     color: ColorString | GradientColorObject | PatternObject = null,
-    from: Int | Double = null,
+    from: js.UndefOr[Double] = js.undefined,
     name: String = null,
-    to: Int | Double = null
+    to: js.UndefOr[Double] = js.undefined
   ): ColorAxisDataClassesOptions = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (!js.isUndefined(to)) __obj.updateDynamic("to")(to.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorAxisDataClassesOptions]
   }
 }

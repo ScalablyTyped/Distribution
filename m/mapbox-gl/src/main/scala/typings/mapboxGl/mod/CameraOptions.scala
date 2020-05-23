@@ -21,17 +21,17 @@ object CameraOptions {
   @scala.inline
   def apply(
     around: LngLatLike = null,
-    bearing: Int | Double = null,
+    bearing: js.UndefOr[Double] = js.undefined,
     center: LngLatLike = null,
-    pitch: Int | Double = null,
-    zoom: Int | Double = null
+    pitch: js.UndefOr[Double] = js.undefined,
+    zoom: js.UndefOr[Double] = js.undefined
   ): CameraOptions = {
     val __obj = js.Dynamic.literal()
     if (around != null) __obj.updateDynamic("around")(around.asInstanceOf[js.Any])
-    if (bearing != null) __obj.updateDynamic("bearing")(bearing.asInstanceOf[js.Any])
+    if (!js.isUndefined(bearing)) __obj.updateDynamic("bearing")(bearing.get.asInstanceOf[js.Any])
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(pitch)) __obj.updateDynamic("pitch")(pitch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraOptions]
   }
 }

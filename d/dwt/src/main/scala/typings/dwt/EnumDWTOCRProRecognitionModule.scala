@@ -1,6 +1,5 @@
 package typings.dwt
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,20 +21,6 @@ object EnumDWTOCRProRecognitionModule extends js.Object {
   
   @js.native
   sealed trait OCRPM_MOSTACCURATE extends EnumDWTOCRProRecognitionModule
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[EnumDWTOCRProRecognitionModule with String] = js.native
-  /* "AUTO" */ @js.native
-  object OCRPM_AUTO extends TopLevel[OCRPM_AUTO with String]
-  
-  /* "BALANCED" */ @js.native
-  object OCRPM_BALANCED extends TopLevel[OCRPM_BALANCED with String]
-  
-  /* "FASTEST" */ @js.native
-  object OCRPM_FASTEST extends TopLevel[OCRPM_FASTEST with String]
-  
-  /* "MOSTACCURATE" */ @js.native
-  object OCRPM_MOSTACCURATE extends TopLevel[OCRPM_MOSTACCURATE with String]
   
 }
 

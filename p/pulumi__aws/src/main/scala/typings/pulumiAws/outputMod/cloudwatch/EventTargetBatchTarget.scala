@@ -29,12 +29,12 @@ object EventTargetBatchTarget {
   def apply(
     jobDefinition: String,
     jobName: String,
-    arraySize: Int | Double = null,
-    jobAttempts: Int | Double = null
+    arraySize: js.UndefOr[Double] = js.undefined,
+    jobAttempts: js.UndefOr[Double] = js.undefined
   ): EventTargetBatchTarget = {
     val __obj = js.Dynamic.literal(jobDefinition = jobDefinition.asInstanceOf[js.Any], jobName = jobName.asInstanceOf[js.Any])
-    if (arraySize != null) __obj.updateDynamic("arraySize")(arraySize.asInstanceOf[js.Any])
-    if (jobAttempts != null) __obj.updateDynamic("jobAttempts")(jobAttempts.asInstanceOf[js.Any])
+    if (!js.isUndefined(arraySize)) __obj.updateDynamic("arraySize")(arraySize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(jobAttempts)) __obj.updateDynamic("jobAttempts")(jobAttempts.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventTargetBatchTarget]
   }
 }

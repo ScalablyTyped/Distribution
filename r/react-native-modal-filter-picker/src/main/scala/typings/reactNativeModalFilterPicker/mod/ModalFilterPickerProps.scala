@@ -1,6 +1,6 @@
 package typings.reactNativeModalFilterPicker.mod
 
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.FlatListProps
 import typings.reactNative.mod.KeyboardAvoidingView
 import typings.reactNative.mod.ListViewProps
@@ -51,64 +51,64 @@ trait ModalFilterPickerProps[T /* <: ModalFilterPickerOption */] extends js.Obje
 
 object ModalFilterPickerProps {
   @scala.inline
-  def apply[T /* <: ModalFilterPickerOption */](
+  def apply[T](
     onCancel: () => Unit,
     onSelect: String => Unit,
     options: js.Array[T],
     androidUnderlineColor: String = null,
     autoFocus: js.UndefOr[Boolean] = js.undefined,
-    cancelButtonStyle: StyleProp[ViewStyle] = null,
+    cancelButtonStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     cancelButtonText: String = null,
-    cancelButtonTextStyle: StyleProp[TextStyle] = null,
-    cancelContainerStyle: StyleProp[ViewStyle] = null,
-    filterTextInputContainerStyle: StyleProp[ViewStyle] = null,
-    filterTextInputStyle: StyleProp[TextStyle] = null,
+    cancelButtonTextStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
+    cancelContainerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    filterTextInputContainerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    filterTextInputStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
     keyboardShouldPersistTaps: never | always | handle = null,
-    listContainerStyle: StyleProp[ViewStyle] = null,
+    listContainerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     listViewProps: Partial[ListViewProps | FlatListProps[T]] = null,
     modal: ModalProps = null,
     noResultsText: String = null,
-    optionTextStyle: StyleProp[TextStyle] = null,
-    overlayStyle: StyleProp[KeyboardAvoidingView | ViewStyle] = null,
+    optionTextStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
+    overlayStyle: js.UndefOr[Null | (StyleProp[KeyboardAvoidingView | ViewStyle])] = js.undefined,
     placeholderText: String = null,
     placeholderTextColor: String = null,
     renderCancelButton: () => Element = null,
     renderList: () => Element = null,
     renderOption: (/* option */ T, /* isSelected */ Boolean) => Element = null,
     selectedOption: String = null,
-    selectedOptionTextStyle: StyleProp[TextStyle] = null,
+    selectedOptionTextStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
     showFilter: js.UndefOr[Boolean] = js.undefined,
     title: String = null,
-    titleTextStyle: StyleProp[TextStyle] = null,
+    titleTextStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined
   ): ModalFilterPickerProps[T] = {
     val __obj = js.Dynamic.literal(onCancel = js.Any.fromFunction0(onCancel), onSelect = js.Any.fromFunction1(onSelect), options = options.asInstanceOf[js.Any])
     if (androidUnderlineColor != null) __obj.updateDynamic("androidUnderlineColor")(androidUnderlineColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (cancelButtonStyle != null) __obj.updateDynamic("cancelButtonStyle")(cancelButtonStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelButtonStyle)) __obj.updateDynamic("cancelButtonStyle")(cancelButtonStyle.asInstanceOf[js.Any])
     if (cancelButtonText != null) __obj.updateDynamic("cancelButtonText")(cancelButtonText.asInstanceOf[js.Any])
-    if (cancelButtonTextStyle != null) __obj.updateDynamic("cancelButtonTextStyle")(cancelButtonTextStyle.asInstanceOf[js.Any])
-    if (cancelContainerStyle != null) __obj.updateDynamic("cancelContainerStyle")(cancelContainerStyle.asInstanceOf[js.Any])
-    if (filterTextInputContainerStyle != null) __obj.updateDynamic("filterTextInputContainerStyle")(filterTextInputContainerStyle.asInstanceOf[js.Any])
-    if (filterTextInputStyle != null) __obj.updateDynamic("filterTextInputStyle")(filterTextInputStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelButtonTextStyle)) __obj.updateDynamic("cancelButtonTextStyle")(cancelButtonTextStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelContainerStyle)) __obj.updateDynamic("cancelContainerStyle")(cancelContainerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterTextInputContainerStyle)) __obj.updateDynamic("filterTextInputContainerStyle")(filterTextInputContainerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterTextInputStyle)) __obj.updateDynamic("filterTextInputStyle")(filterTextInputStyle.asInstanceOf[js.Any])
     if (keyboardShouldPersistTaps != null) __obj.updateDynamic("keyboardShouldPersistTaps")(keyboardShouldPersistTaps.asInstanceOf[js.Any])
-    if (listContainerStyle != null) __obj.updateDynamic("listContainerStyle")(listContainerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(listContainerStyle)) __obj.updateDynamic("listContainerStyle")(listContainerStyle.asInstanceOf[js.Any])
     if (listViewProps != null) __obj.updateDynamic("listViewProps")(listViewProps.asInstanceOf[js.Any])
     if (modal != null) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
     if (noResultsText != null) __obj.updateDynamic("noResultsText")(noResultsText.asInstanceOf[js.Any])
-    if (optionTextStyle != null) __obj.updateDynamic("optionTextStyle")(optionTextStyle.asInstanceOf[js.Any])
-    if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(optionTextStyle)) __obj.updateDynamic("optionTextStyle")(optionTextStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlayStyle)) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
     if (placeholderText != null) __obj.updateDynamic("placeholderText")(placeholderText.asInstanceOf[js.Any])
     if (placeholderTextColor != null) __obj.updateDynamic("placeholderTextColor")(placeholderTextColor.asInstanceOf[js.Any])
     if (renderCancelButton != null) __obj.updateDynamic("renderCancelButton")(js.Any.fromFunction0(renderCancelButton))
     if (renderList != null) __obj.updateDynamic("renderList")(js.Any.fromFunction0(renderList))
     if (renderOption != null) __obj.updateDynamic("renderOption")(js.Any.fromFunction2(renderOption))
     if (selectedOption != null) __obj.updateDynamic("selectedOption")(selectedOption.asInstanceOf[js.Any])
-    if (selectedOptionTextStyle != null) __obj.updateDynamic("selectedOptionTextStyle")(selectedOptionTextStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFilter)) __obj.updateDynamic("showFilter")(showFilter.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedOptionTextStyle)) __obj.updateDynamic("selectedOptionTextStyle")(selectedOptionTextStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFilter)) __obj.updateDynamic("showFilter")(showFilter.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titleTextStyle != null) __obj.updateDynamic("titleTextStyle")(titleTextStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(titleTextStyle)) __obj.updateDynamic("titleTextStyle")(titleTextStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalFilterPickerProps[T]]
   }
 }

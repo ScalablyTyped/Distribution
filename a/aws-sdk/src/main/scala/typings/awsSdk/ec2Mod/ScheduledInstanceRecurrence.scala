@@ -32,16 +32,16 @@ object ScheduledInstanceRecurrence {
   @scala.inline
   def apply(
     Frequency: String = null,
-    Interval: Int | scala.Double = null,
+    Interval: js.UndefOr[Integer] = js.undefined,
     OccurrenceDaySet: OccurrenceDaySet = null,
-    OccurrenceRelativeToEnd: js.UndefOr[scala.Boolean] = js.undefined,
+    OccurrenceRelativeToEnd: js.UndefOr[Boolean] = js.undefined,
     OccurrenceUnit: String = null
   ): ScheduledInstanceRecurrence = {
     val __obj = js.Dynamic.literal()
     if (Frequency != null) __obj.updateDynamic("Frequency")(Frequency.asInstanceOf[js.Any])
-    if (Interval != null) __obj.updateDynamic("Interval")(Interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(Interval)) __obj.updateDynamic("Interval")(Interval.get.asInstanceOf[js.Any])
     if (OccurrenceDaySet != null) __obj.updateDynamic("OccurrenceDaySet")(OccurrenceDaySet.asInstanceOf[js.Any])
-    if (!js.isUndefined(OccurrenceRelativeToEnd)) __obj.updateDynamic("OccurrenceRelativeToEnd")(OccurrenceRelativeToEnd.asInstanceOf[js.Any])
+    if (!js.isUndefined(OccurrenceRelativeToEnd)) __obj.updateDynamic("OccurrenceRelativeToEnd")(OccurrenceRelativeToEnd.get.asInstanceOf[js.Any])
     if (OccurrenceUnit != null) __obj.updateDynamic("OccurrenceUnit")(OccurrenceUnit.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduledInstanceRecurrence]
   }

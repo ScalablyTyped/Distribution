@@ -3,6 +3,8 @@ package typings.typestyle
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.std.Record
+import typings.typestyle.anon.AutoGenerateTag
+import typings.typestyle.anon.TextContent
 import typings.typestyle.typesMod.FontFace
 import typings.typestyle.typesMod.KeyFrames
 import typings.typestyle.typesMod.MediaQuery
@@ -19,13 +21,13 @@ object mod extends js.Object {
   @js.native
   class TypeStyle protected ()
     extends typings.typestyle.typestyleMod.TypeStyle {
-    def this(hasAutoGenerateTag: AnonAutoGenerateTag) = this()
+    def this(hasAutoGenerateTag: AutoGenerateTag) = this()
   }
   
   @JSName("classes")
   def classes_false(classes: (js.UndefOr[String | `false` | Null | StringDictionary[js.Any]])*): String = js.native
   def createTypeStyle(): typings.typestyle.typestyleMod.TypeStyle = js.native
-  def createTypeStyle(target: AnonTextContent): typings.typestyle.typestyleMod.TypeStyle = js.native
+  def createTypeStyle(target: TextContent): typings.typestyle.typestyleMod.TypeStyle = js.native
   def cssRaw(mustBeValidCSS: String): Unit = js.native
   def cssRule(selector: String, objects: NestedCSSProperties*): Unit = js.native
   @JSName("extend")

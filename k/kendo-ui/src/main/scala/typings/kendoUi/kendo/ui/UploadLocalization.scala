@@ -20,7 +20,9 @@ trait UploadLocalization extends js.Object {
   var statusFailed: js.UndefOr[String] = js.undefined
   var statusUploaded: js.UndefOr[String] = js.undefined
   var statusUploading: js.UndefOr[String] = js.undefined
+  var uploadFail: js.UndefOr[String] = js.undefined
   var uploadSelectedFiles: js.UndefOr[String] = js.undefined
+  var uploadSuccess: js.UndefOr[String] = js.undefined
 }
 
 object UploadLocalization {
@@ -41,7 +43,9 @@ object UploadLocalization {
     statusFailed: String = null,
     statusUploaded: String = null,
     statusUploading: String = null,
-    uploadSelectedFiles: String = null
+    uploadFail: String = null,
+    uploadSelectedFiles: String = null,
+    uploadSuccess: String = null
   ): UploadLocalization = {
     val __obj = js.Dynamic.literal()
     if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
@@ -59,7 +63,9 @@ object UploadLocalization {
     if (statusFailed != null) __obj.updateDynamic("statusFailed")(statusFailed.asInstanceOf[js.Any])
     if (statusUploaded != null) __obj.updateDynamic("statusUploaded")(statusUploaded.asInstanceOf[js.Any])
     if (statusUploading != null) __obj.updateDynamic("statusUploading")(statusUploading.asInstanceOf[js.Any])
+    if (uploadFail != null) __obj.updateDynamic("uploadFail")(uploadFail.asInstanceOf[js.Any])
     if (uploadSelectedFiles != null) __obj.updateDynamic("uploadSelectedFiles")(uploadSelectedFiles.asInstanceOf[js.Any])
+    if (uploadSuccess != null) __obj.updateDynamic("uploadSuccess")(uploadSuccess.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadLocalization]
   }
 }

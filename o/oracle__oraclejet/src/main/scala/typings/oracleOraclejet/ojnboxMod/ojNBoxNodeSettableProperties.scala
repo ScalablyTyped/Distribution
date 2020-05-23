@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojnboxMod
 
-import typings.oracleOraclejet.AnonBorderRadiusBorderWidth
-import typings.oracleOraclejet.AnonBorderWidthColor
+import typings.oracleOraclejet.anon.BorderRadiusBorderWidth
+import typings.oracleOraclejet.anon.BorderWidthColor
 import typings.oracleOraclejet.mod.JetSettableProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,9 +14,9 @@ trait ojNBoxNodeSettableProperties extends JetSettableProperties {
   var color: js.UndefOr[String] = js.undefined
   var column: String
   var groupCategory: js.UndefOr[String] = js.undefined
-  var icon: js.UndefOr[AnonBorderRadiusBorderWidth] = js.undefined
+  var icon: js.UndefOr[BorderRadiusBorderWidth] = js.undefined
   var indicatorColor: js.UndefOr[String] = js.undefined
-  var indicatorIcon: js.UndefOr[AnonBorderWidthColor] = js.undefined
+  var indicatorIcon: js.UndefOr[BorderWidthColor] = js.undefined
   var label: String
   var row: String
   var secondaryLabel: String
@@ -41,22 +41,21 @@ object ojNBoxNodeSettableProperties {
     svgClassName: String,
     color: String = null,
     groupCategory: String = null,
-    icon: AnonBorderRadiusBorderWidth = null,
+    icon: BorderRadiusBorderWidth = null,
     indicatorColor: String = null,
-    indicatorIcon: AnonBorderWidthColor = null,
+    indicatorIcon: BorderWidthColor = null,
     svgStyle: js.Object = null,
-    xPercentage: Int | Double = null,
-    yPercentage: Int | Double = null
+    xPercentage: js.UndefOr[Null | Double] = js.undefined,
+    yPercentage: js.UndefOr[Null | Double] = js.undefined
   ): ojNBoxNodeSettableProperties = {
-    val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], borderWidth = borderWidth.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], secondaryLabel = secondaryLabel.asInstanceOf[js.Any], shortDesc = shortDesc.asInstanceOf[js.Any], svgClassName = svgClassName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], borderWidth = borderWidth.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], secondaryLabel = secondaryLabel.asInstanceOf[js.Any], shortDesc = shortDesc.asInstanceOf[js.Any], svgClassName = svgClassName.asInstanceOf[js.Any], svgStyle = svgStyle.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (groupCategory != null) __obj.updateDynamic("groupCategory")(groupCategory.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (indicatorColor != null) __obj.updateDynamic("indicatorColor")(indicatorColor.asInstanceOf[js.Any])
     if (indicatorIcon != null) __obj.updateDynamic("indicatorIcon")(indicatorIcon.asInstanceOf[js.Any])
-    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle.asInstanceOf[js.Any])
-    if (xPercentage != null) __obj.updateDynamic("xPercentage")(xPercentage.asInstanceOf[js.Any])
-    if (yPercentage != null) __obj.updateDynamic("yPercentage")(yPercentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(xPercentage)) __obj.updateDynamic("xPercentage")(xPercentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(yPercentage)) __obj.updateDynamic("yPercentage")(yPercentage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojNBoxNodeSettableProperties]
   }
 }

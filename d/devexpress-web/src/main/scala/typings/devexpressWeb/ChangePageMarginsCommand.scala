@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A command to change page margin settings.
   */
-@JSGlobal("ChangePageMarginsCommand")
 @js.native
-class ChangePageMarginsCommand () extends CommandBase {
+trait ChangePageMarginsCommand extends CommandBase {
   /**
     * Executes the ChangePageMarginsCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param left The margin settings object or the left margin in twips.

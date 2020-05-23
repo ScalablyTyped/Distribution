@@ -1,8 +1,9 @@
 package typings.rcSwipeout
 
+import typings.rcSwipeout.anon.AutoClose
 import typings.rcSwipeout.propTypesMod.IPropTypes
 import typings.react.mod.Component
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,7 +52,7 @@ object swipeoutMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonAutoClose = js.native
+    var defaultProps: AutoClose = js.native
   }
   
 }

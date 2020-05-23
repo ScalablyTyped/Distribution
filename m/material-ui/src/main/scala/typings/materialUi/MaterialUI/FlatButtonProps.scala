@@ -2,7 +2,7 @@ package typings.materialUi.MaterialUI
 
 import typings.materialUi.materialUiStrings.after
 import typings.materialUi.materialUiStrings.before
-import typings.react.AnonHtml
+import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
@@ -22,12 +22,12 @@ import typings.react.mod.TouchEvent
 import typings.react.mod.TransitionEvent
 import typings.react.mod.UIEvent
 import typings.react.mod.WheelEvent
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.materialUi.MaterialUI.SharedEnhancedButtonProps because var conflicts: onBlur, onClick, onFocus, onKeyDown, onKeyUp. Inlined centerRipple, disableFocusRipple, disableKeyboardFocus, disableTouchRipple, focusRippleColor, focusRippleOpacity, href, keyboardFocused, onKeyboardFocus, style, tabIndex, target, touchRippleColor, touchRippleOpacity, `type`, containerElement */ trait FlatButtonProps
   extends DOMAttributes[js.Object] {
   // <EnhancedButton/> is the element that get the 'other' properties
@@ -72,13 +72,13 @@ object FlatButtonProps {
     children: ReactNode = null,
     className: String = null,
     containerElement: ReactNode | String = null,
-    dangerouslySetInnerHTML: AnonHtml = null,
+    dangerouslySetInnerHTML: Html = null,
     disableFocusRipple: js.UndefOr[Boolean] = js.undefined,
     disableKeyboardFocus: js.UndefOr[Boolean] = js.undefined,
     disableTouchRipple: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     focusRippleColor: String = null,
-    focusRippleOpacity: Int | Double = null,
+    focusRippleOpacity: js.UndefOr[Double] = js.undefined,
     fullWidth: js.UndefOr[Boolean] = js.undefined,
     hoverColor: String = null,
     href: String = null,
@@ -88,15 +88,15 @@ object FlatButtonProps {
     labelPosition: before | after = null,
     labelStyle: CSSProperties = null,
     linkButton: js.UndefOr[Boolean] = js.undefined,
-    onAbort: SyntheticEvent[js.Object, Event_] => Unit = null,
+    onAbort: SyntheticEvent[js.Object, Event] => Unit = null,
     onAnimationEnd: AnimationEvent[js.Object] => Unit = null,
     onAnimationIteration: AnimationEvent[js.Object] => Unit = null,
     onAnimationStart: AnimationEvent[js.Object] => Unit = null,
     onAuxClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     onBeforeInput: FormEvent[js.Object] => Unit = null,
     onBlur: FocusEvent[js.Object] => Unit = null,
-    onCanPlay: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onCanPlayThrough: SyntheticEvent[js.Object, Event_] => Unit = null,
+    onCanPlay: SyntheticEvent[js.Object, Event] => Unit = null,
+    onCanPlayThrough: SyntheticEvent[js.Object, Event] => Unit = null,
     onChange: FormEvent[js.Object] => Unit = null,
     onClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     onCompositionEnd: CompositionEvent[js.Object] => Unit = null,
@@ -114,11 +114,11 @@ object FlatButtonProps {
     onDragOver: DragEvent[js.Object] => Unit = null,
     onDragStart: DragEvent[js.Object] => Unit = null,
     onDrop: DragEvent[js.Object] => Unit = null,
-    onDurationChange: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onEmptied: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onEncrypted: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onEnded: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onError: SyntheticEvent[js.Object, Event_] => Unit = null,
+    onDurationChange: SyntheticEvent[js.Object, Event] => Unit = null,
+    onEmptied: SyntheticEvent[js.Object, Event] => Unit = null,
+    onEncrypted: SyntheticEvent[js.Object, Event] => Unit = null,
+    onEnded: SyntheticEvent[js.Object, Event] => Unit = null,
+    onError: SyntheticEvent[js.Object, Event] => Unit = null,
     onFocus: FocusEvent[js.Object] => Unit = null,
     onInput: FormEvent[js.Object] => Unit = null,
     onInvalid: FormEvent[js.Object] => Unit = null,
@@ -126,10 +126,10 @@ object FlatButtonProps {
     onKeyPress: KeyboardEvent[js.Object] => Unit = null,
     onKeyUp: KeyboardEvent[js.Object] => Unit = null,
     onKeyboardFocus: (/* e */ FocusEvent[js.Object], /* isKeyboardFocused */ Boolean) => Unit = null,
-    onLoad: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onLoadStart: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onLoadedData: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onLoadedMetadata: SyntheticEvent[js.Object, Event_] => Unit = null,
+    onLoad: SyntheticEvent[js.Object, Event] => Unit = null,
+    onLoadStart: SyntheticEvent[js.Object, Event] => Unit = null,
+    onLoadedData: SyntheticEvent[js.Object, Event] => Unit = null,
+    onLoadedMetadata: SyntheticEvent[js.Object, Event] => Unit = null,
     onMouseDown: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     onMouseEnter: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     onMouseLeave: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
@@ -138,9 +138,9 @@ object FlatButtonProps {
     onMouseOver: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     onMouseUp: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     onPaste: ClipboardEvent[js.Object] => Unit = null,
-    onPause: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onPlay: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onPlaying: SyntheticEvent[js.Object, Event_] => Unit = null,
+    onPause: SyntheticEvent[js.Object, Event] => Unit = null,
+    onPlay: SyntheticEvent[js.Object, Event] => Unit = null,
+    onPlaying: SyntheticEvent[js.Object, Event] => Unit = null,
     onPointerCancel: PointerEvent[js.Object] => Unit = null,
     onPointerDown: PointerEvent[js.Object] => Unit = null,
     onPointerEnter: PointerEvent[js.Object] => Unit = null,
@@ -149,57 +149,57 @@ object FlatButtonProps {
     onPointerOut: PointerEvent[js.Object] => Unit = null,
     onPointerOver: PointerEvent[js.Object] => Unit = null,
     onPointerUp: PointerEvent[js.Object] => Unit = null,
-    onProgress: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onRateChange: SyntheticEvent[js.Object, Event_] => Unit = null,
+    onProgress: SyntheticEvent[js.Object, Event] => Unit = null,
+    onRateChange: SyntheticEvent[js.Object, Event] => Unit = null,
     onReset: FormEvent[js.Object] => Unit = null,
     onScroll: UIEvent[js.Object, NativeUIEvent] => Unit = null,
-    onSeeked: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onSeeking: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onSelect: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onStalled: SyntheticEvent[js.Object, Event_] => Unit = null,
+    onSeeked: SyntheticEvent[js.Object, Event] => Unit = null,
+    onSeeking: SyntheticEvent[js.Object, Event] => Unit = null,
+    onSelect: SyntheticEvent[js.Object, Event] => Unit = null,
+    onStalled: SyntheticEvent[js.Object, Event] => Unit = null,
     onSubmit: FormEvent[js.Object] => Unit = null,
-    onSuspend: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onTimeUpdate: SyntheticEvent[js.Object, Event_] => Unit = null,
+    onSuspend: SyntheticEvent[js.Object, Event] => Unit = null,
+    onTimeUpdate: SyntheticEvent[js.Object, Event] => Unit = null,
     onTouchCancel: TouchEvent[js.Object] => Unit = null,
     onTouchEnd: TouchEvent[js.Object] => Unit = null,
     onTouchMove: TouchEvent[js.Object] => Unit = null,
     onTouchStart: TouchEvent[js.Object] => Unit = null,
     onTransitionEnd: TransitionEvent[js.Object] => Unit = null,
-    onVolumeChange: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onWaiting: SyntheticEvent[js.Object, Event_] => Unit = null,
+    onVolumeChange: SyntheticEvent[js.Object, Event] => Unit = null,
+    onWaiting: SyntheticEvent[js.Object, Event] => Unit = null,
     onWheel: WheelEvent[js.Object] => Unit = null,
     primary: js.UndefOr[Boolean] = js.undefined,
     rippleColor: String = null,
     secondary: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
-    tabIndex: Int | Double = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
     target: String = null,
     touchRippleColor: String = null,
-    touchRippleOpacity: Int | Double = null,
+    touchRippleOpacity: js.UndefOr[Double] = js.undefined,
     `type`: String = null
   ): FlatButtonProps = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(centerRipple)) __obj.updateDynamic("centerRipple")(centerRipple.asInstanceOf[js.Any])
+    if (!js.isUndefined(centerRipple)) __obj.updateDynamic("centerRipple")(centerRipple.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (containerElement != null) __obj.updateDynamic("containerElement")(containerElement.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableFocusRipple)) __obj.updateDynamic("disableFocusRipple")(disableFocusRipple.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableKeyboardFocus)) __obj.updateDynamic("disableKeyboardFocus")(disableKeyboardFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableTouchRipple)) __obj.updateDynamic("disableTouchRipple")(disableTouchRipple.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableFocusRipple)) __obj.updateDynamic("disableFocusRipple")(disableFocusRipple.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableKeyboardFocus)) __obj.updateDynamic("disableKeyboardFocus")(disableKeyboardFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableTouchRipple)) __obj.updateDynamic("disableTouchRipple")(disableTouchRipple.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (focusRippleColor != null) __obj.updateDynamic("focusRippleColor")(focusRippleColor.asInstanceOf[js.Any])
-    if (focusRippleOpacity != null) __obj.updateDynamic("focusRippleOpacity")(focusRippleOpacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullWidth)) __obj.updateDynamic("fullWidth")(fullWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusRippleOpacity)) __obj.updateDynamic("focusRippleOpacity")(focusRippleOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullWidth)) __obj.updateDynamic("fullWidth")(fullWidth.get.asInstanceOf[js.Any])
     if (hoverColor != null) __obj.updateDynamic("hoverColor")(hoverColor.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboardFocused)) __obj.updateDynamic("keyboardFocused")(keyboardFocused.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboardFocused)) __obj.updateDynamic("keyboardFocused")(keyboardFocused.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
     if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(linkButton)) __obj.updateDynamic("linkButton")(linkButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkButton)) __obj.updateDynamic("linkButton")(linkButton.get.asInstanceOf[js.Any])
     if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1(onAbort))
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
     if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(js.Any.fromFunction1(onAnimationIteration))
@@ -280,14 +280,14 @@ object FlatButtonProps {
     if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(js.Any.fromFunction1(onVolumeChange))
     if (onWaiting != null) __obj.updateDynamic("onWaiting")(js.Any.fromFunction1(onWaiting))
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.get.asInstanceOf[js.Any])
     if (rippleColor != null) __obj.updateDynamic("rippleColor")(rippleColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(secondary)) __obj.updateDynamic("secondary")(secondary.asInstanceOf[js.Any])
+    if (!js.isUndefined(secondary)) __obj.updateDynamic("secondary")(secondary.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (touchRippleColor != null) __obj.updateDynamic("touchRippleColor")(touchRippleColor.asInstanceOf[js.Any])
-    if (touchRippleOpacity != null) __obj.updateDynamic("touchRippleOpacity")(touchRippleOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchRippleOpacity)) __obj.updateDynamic("touchRippleOpacity")(touchRippleOpacity.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlatButtonProps]
   }

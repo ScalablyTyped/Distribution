@@ -123,9 +123,9 @@ object ConnectionAttributes {
     newPassword: String = null,
     password: String = null,
     poolAlias: String = null,
-    privilege: Int | Double = null,
+    privilege: js.UndefOr[Double] = js.undefined,
     shardingKey: js.Array[String | Double | Date | Buffer] = null,
-    stmtCacheSize: Int | Double = null,
+    stmtCacheSize: js.UndefOr[Double] = js.undefined,
     superShardingKey: js.Array[String | Double | Date | Buffer] = null,
     tag: String = null,
     user: String = null
@@ -134,15 +134,15 @@ object ConnectionAttributes {
     if (connectString != null) __obj.updateDynamic("connectString")(connectString.asInstanceOf[js.Any])
     if (connectionString != null) __obj.updateDynamic("connectionString")(connectionString.asInstanceOf[js.Any])
     if (edition != null) __obj.updateDynamic("edition")(edition.asInstanceOf[js.Any])
-    if (!js.isUndefined(events)) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (!js.isUndefined(externalAuth)) __obj.updateDynamic("externalAuth")(externalAuth.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchAny)) __obj.updateDynamic("matchAny")(matchAny.asInstanceOf[js.Any])
+    if (!js.isUndefined(events)) __obj.updateDynamic("events")(events.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(externalAuth)) __obj.updateDynamic("externalAuth")(externalAuth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchAny)) __obj.updateDynamic("matchAny")(matchAny.get.asInstanceOf[js.Any])
     if (newPassword != null) __obj.updateDynamic("newPassword")(newPassword.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (poolAlias != null) __obj.updateDynamic("poolAlias")(poolAlias.asInstanceOf[js.Any])
-    if (privilege != null) __obj.updateDynamic("privilege")(privilege.asInstanceOf[js.Any])
+    if (!js.isUndefined(privilege)) __obj.updateDynamic("privilege")(privilege.get.asInstanceOf[js.Any])
     if (shardingKey != null) __obj.updateDynamic("shardingKey")(shardingKey.asInstanceOf[js.Any])
-    if (stmtCacheSize != null) __obj.updateDynamic("stmtCacheSize")(stmtCacheSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(stmtCacheSize)) __obj.updateDynamic("stmtCacheSize")(stmtCacheSize.get.asInstanceOf[js.Any])
     if (superShardingKey != null) __obj.updateDynamic("superShardingKey")(superShardingKey.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])

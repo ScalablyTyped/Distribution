@@ -1,7 +1,7 @@
 package typings.cesium.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.AnonHeightmap
+import typings.cesium.anon.Heightmap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ object HeightmapTessellator extends js.Object {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[HeightmapTessellator with Double] = js.native
-  def computeVertices(options: AnonHeightmap): js.UndefOr[scala.Nothing] = js.native
+  def computeVertices(options: Heightmap): js.UndefOr[scala.Nothing] = js.native
   /* 0 */ @js.native
   object DEFAULT_STRUCTURE extends TopLevel[DEFAULT_STRUCTURE with Double]
   

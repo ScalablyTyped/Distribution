@@ -61,30 +61,30 @@ object StorageDescriptor {
   def apply(
     BucketColumns: NameStringList = null,
     Columns: ColumnList = null,
-    Compressed: js.UndefOr[scala.Boolean] = js.undefined,
+    Compressed: js.UndefOr[Boolean] = js.undefined,
     InputFormat: FormatString = null,
     Location: LocationString = null,
-    NumberOfBuckets: Int | Double = null,
+    NumberOfBuckets: js.UndefOr[Integer] = js.undefined,
     OutputFormat: FormatString = null,
     Parameters: ParametersMap = null,
     SerdeInfo: SerDeInfo = null,
     SkewedInfo: SkewedInfo = null,
     SortColumns: OrderList = null,
-    StoredAsSubDirectories: js.UndefOr[scala.Boolean] = js.undefined
+    StoredAsSubDirectories: js.UndefOr[Boolean] = js.undefined
   ): StorageDescriptor = {
     val __obj = js.Dynamic.literal()
     if (BucketColumns != null) __obj.updateDynamic("BucketColumns")(BucketColumns.asInstanceOf[js.Any])
     if (Columns != null) __obj.updateDynamic("Columns")(Columns.asInstanceOf[js.Any])
-    if (!js.isUndefined(Compressed)) __obj.updateDynamic("Compressed")(Compressed.asInstanceOf[js.Any])
+    if (!js.isUndefined(Compressed)) __obj.updateDynamic("Compressed")(Compressed.get.asInstanceOf[js.Any])
     if (InputFormat != null) __obj.updateDynamic("InputFormat")(InputFormat.asInstanceOf[js.Any])
     if (Location != null) __obj.updateDynamic("Location")(Location.asInstanceOf[js.Any])
-    if (NumberOfBuckets != null) __obj.updateDynamic("NumberOfBuckets")(NumberOfBuckets.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfBuckets)) __obj.updateDynamic("NumberOfBuckets")(NumberOfBuckets.get.asInstanceOf[js.Any])
     if (OutputFormat != null) __obj.updateDynamic("OutputFormat")(OutputFormat.asInstanceOf[js.Any])
     if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
     if (SerdeInfo != null) __obj.updateDynamic("SerdeInfo")(SerdeInfo.asInstanceOf[js.Any])
     if (SkewedInfo != null) __obj.updateDynamic("SkewedInfo")(SkewedInfo.asInstanceOf[js.Any])
     if (SortColumns != null) __obj.updateDynamic("SortColumns")(SortColumns.asInstanceOf[js.Any])
-    if (!js.isUndefined(StoredAsSubDirectories)) __obj.updateDynamic("StoredAsSubDirectories")(StoredAsSubDirectories.asInstanceOf[js.Any])
+    if (!js.isUndefined(StoredAsSubDirectories)) __obj.updateDynamic("StoredAsSubDirectories")(StoredAsSubDirectories.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorageDescriptor]
   }
 }

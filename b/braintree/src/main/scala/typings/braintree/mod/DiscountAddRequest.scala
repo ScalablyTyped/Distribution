@@ -18,14 +18,14 @@ object DiscountAddRequest {
     inheritedFromId: String,
     amount: String = null,
     neverExpires: js.UndefOr[Boolean] = js.undefined,
-    numberOfBillingCycles: Int | Double = null,
-    quantity: Int | Double = null
+    numberOfBillingCycles: js.UndefOr[Double] = js.undefined,
+    quantity: js.UndefOr[Double] = js.undefined
   ): DiscountAddRequest = {
     val __obj = js.Dynamic.literal(inheritedFromId = inheritedFromId.asInstanceOf[js.Any])
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (!js.isUndefined(neverExpires)) __obj.updateDynamic("neverExpires")(neverExpires.asInstanceOf[js.Any])
-    if (numberOfBillingCycles != null) __obj.updateDynamic("numberOfBillingCycles")(numberOfBillingCycles.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (!js.isUndefined(neverExpires)) __obj.updateDynamic("neverExpires")(neverExpires.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfBillingCycles)) __obj.updateDynamic("numberOfBillingCycles")(numberOfBillingCycles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiscountAddRequest]
   }
 }

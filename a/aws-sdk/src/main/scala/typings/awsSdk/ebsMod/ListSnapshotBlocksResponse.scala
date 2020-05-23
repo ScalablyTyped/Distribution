@@ -31,18 +31,18 @@ trait ListSnapshotBlocksResponse extends js.Object {
 object ListSnapshotBlocksResponse {
   @scala.inline
   def apply(
-    BlockSize: Int | Double = null,
+    BlockSize: js.UndefOr[BlockSize] = js.undefined,
     Blocks: Blocks = null,
     ExpiryTime: TimeStamp = null,
     NextToken: PageToken = null,
-    VolumeSize: Int | Double = null
+    VolumeSize: js.UndefOr[VolumeSize] = js.undefined
   ): ListSnapshotBlocksResponse = {
     val __obj = js.Dynamic.literal()
-    if (BlockSize != null) __obj.updateDynamic("BlockSize")(BlockSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(BlockSize)) __obj.updateDynamic("BlockSize")(BlockSize.get.asInstanceOf[js.Any])
     if (Blocks != null) __obj.updateDynamic("Blocks")(Blocks.asInstanceOf[js.Any])
     if (ExpiryTime != null) __obj.updateDynamic("ExpiryTime")(ExpiryTime.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (VolumeSize != null) __obj.updateDynamic("VolumeSize")(VolumeSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(VolumeSize)) __obj.updateDynamic("VolumeSize")(VolumeSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSnapshotBlocksResponse]
   }
 }

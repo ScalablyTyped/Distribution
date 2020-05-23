@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.barcode")
 @js.native
-class barcode () extends baseview {
+trait barcode extends baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
   @JSName("config")

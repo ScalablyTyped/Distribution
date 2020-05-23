@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 trait SetTabBarBadgeOptions
   extends BaseOptions[js.Any, js.Any] {
   /**
-  		 * tabBar的哪一项，从左边算起
-  		 */
+    * tabBar的哪一项，从左边算起
+    */
   var index: Double
   /**
-  		 * 显示的文本，超过 3 个字符则显示成“…”
-  		 */
+    * 显示的文本，超过 3 个字符则显示成“…”
+    */
   var text: String
 }
 

@@ -6,12 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object mod {
   type ApplicationRequestHandler[T] = typings.expressServeStaticCore.mod.IRouterHandler[T] with (typings.expressServeStaticCore.mod.IRouterMatcher[T, _]) with (js.Function1[
-    /* repeated */ typings.expressServeStaticCore.mod.RequestHandlerParams[
-      typings.expressServeStaticCore.mod.ParamsDictionary, 
-      _, 
-      _, 
-      typings.expressServeStaticCore.mod.Query
-    ], 
+    /* repeated */ typings.expressServeStaticCore.mod.RequestHandlerParams[typings.expressServeStaticCore.mod.ParamsDictionary, _, _, typings.qs.mod.ParsedQs], 
     T
   ])
   type Dictionary[T] = org.scalablytyped.runtime.StringDictionary[T]
@@ -27,13 +22,13 @@ package object mod {
     typings.expressServeStaticCore.mod.ParamsDictionary, 
     js.Any, 
     js.Any, 
-    typings.expressServeStaticCore.mod.Query
+    typings.qs.mod.ParsedQs
   ]
-  type NextFunction = js.Function1[/* err */ js.UndefOr[js.Any], scala.Unit]
   type Params = typings.expressServeStaticCore.mod.ParamsDictionary | typings.expressServeStaticCore.mod.ParamsArray
   type ParamsArray = js.Array[java.lang.String]
   type ParamsDictionary = org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type PathParams = java.lang.String | typings.std.RegExp | (js.Array[java.lang.String | typings.std.RegExp])
+  type Query = typings.qs.mod.ParsedQs
   type RequestHandler[P /* <: typings.expressServeStaticCore.mod.Params */, ResBody, ReqBody, ReqQuery] = js.Function3[
     /* req */ typings.expressServeStaticCore.mod.Request[P, ResBody, ReqBody, ReqQuery], 
     /* res */ typings.expressServeStaticCore.mod.Response[ResBody], 
@@ -41,14 +36,14 @@ package object mod {
     js.Any
   ]
   type RequestHandlerParams[P /* <: typings.expressServeStaticCore.mod.Params */, ResBody, ReqBody, ReqQuery] = (typings.expressServeStaticCore.mod.RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (typings.expressServeStaticCore.mod.ErrorRequestHandler[P, ResBody, ReqBody, ReqQuery]) | (js.Array[
-    (typings.expressServeStaticCore.mod.RequestHandler[P, js.Any, js.Any, typings.expressServeStaticCore.mod.Query]) | (typings.expressServeStaticCore.mod.ErrorRequestHandler[P, js.Any, js.Any, typings.expressServeStaticCore.mod.Query])
+    (typings.expressServeStaticCore.mod.RequestHandler[P, js.Any, js.Any, typings.qs.mod.ParsedQs]) | (typings.expressServeStaticCore.mod.ErrorRequestHandler[P, js.Any, js.Any, typings.qs.mod.ParsedQs])
   ])
   type RequestParamHandler = js.Function5[
     /* req */ typings.expressServeStaticCore.mod.Request[
       typings.expressServeStaticCore.mod.ParamsDictionary, 
       js.Any, 
       js.Any, 
-      typings.expressServeStaticCore.mod.Query
+      typings.qs.mod.ParsedQs
     ], 
     /* res */ typings.expressServeStaticCore.mod.Response[js.Any], 
     /* next */ typings.expressServeStaticCore.mod.NextFunction, 

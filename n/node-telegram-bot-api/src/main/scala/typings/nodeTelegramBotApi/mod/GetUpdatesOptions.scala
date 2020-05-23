@@ -15,15 +15,15 @@ object GetUpdatesOptions {
   @scala.inline
   def apply(
     allowed_updates: js.Array[String] = null,
-    limit: Int | Double = null,
-    offset: Int | Double = null,
-    timeout: Int | Double = null
+    limit: js.UndefOr[Double] = js.undefined,
+    offset: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined
   ): GetUpdatesOptions = {
     val __obj = js.Dynamic.literal()
     if (allowed_updates != null) __obj.updateDynamic("allowed_updates")(allowed_updates.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUpdatesOptions]
   }
 }

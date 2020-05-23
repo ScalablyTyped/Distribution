@@ -12,7 +12,7 @@ trait Actions_
 
 object Actions_ {
   @scala.inline
-  def apply(routing: routeActions, StringDictionary: /* propName */ StringDictionary[js.Any] = null): Actions_ = {
+  def apply(routing: routeActions, StringDictionary: /* name */ StringDictionary[js.Any] = null): Actions_ = {
     val __obj = js.Dynamic.literal(routing = routing.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Actions_]

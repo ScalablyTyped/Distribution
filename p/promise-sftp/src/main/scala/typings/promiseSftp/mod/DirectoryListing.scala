@@ -1,6 +1,6 @@
 package typings.promiseSftp.mod
 
-import typings.promiseSftp.AnonGroup
+import typings.promiseSftp.anon.Group
 import typings.promiseSftp.promiseSftpStrings.`-_`
 import typings.promiseSftp.promiseSftpStrings.d
 import typings.promiseSftp.promiseSftpStrings.l
@@ -20,7 +20,7 @@ trait DirectoryListing extends js.Object {
   /** The user name or ID that this entry belongs to. *NIX only */
   var owner: js.UndefOr[String] = js.undefined
   /** The various permissions for this entry. *NIX only */
-  var rights: js.UndefOr[AnonGroup] = js.undefined
+  var rights: js.UndefOr[Group] = js.undefined
   /** True if the sticky bit is set for this entry */
   var sticky: js.UndefOr[Boolean] = js.undefined
   /** For symlink entries, this is the symlink's target. *NIX only */
@@ -37,7 +37,7 @@ object DirectoryListing {
     `type`: d | `-_` | l,
     group: String = null,
     owner: String = null,
-    rights: AnonGroup = null,
+    rights: Group = null,
     sticky: js.UndefOr[Boolean] = js.undefined,
     target: String = null
   ): DirectoryListing = {
@@ -46,7 +46,7 @@ object DirectoryListing {
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     if (rights != null) __obj.updateDynamic("rights")(rights.asInstanceOf[js.Any])
-    if (!js.isUndefined(sticky)) __obj.updateDynamic("sticky")(sticky.asInstanceOf[js.Any])
+    if (!js.isUndefined(sticky)) __obj.updateDynamic("sticky")(sticky.get.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectoryListing]
   }

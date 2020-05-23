@@ -14,7 +14,10 @@ import scala.scalajs.js.annotation._
 object platformMod extends js.Object {
   @js.native
   trait BackButtonEmitter extends Subject[BackButtonEventDetail] {
-    def subscribeWithPriority(priority: Double, callback: js.Function0[js.Promise[_] | Unit]): Subscription = js.native
+    def subscribeWithPriority(
+      priority: Double,
+      callback: js.Function1[/* processNextHandler */ js.Function0[Unit], js.Promise[_] | Unit]
+    ): Subscription = js.native
   }
   
   @js.native
@@ -33,6 +36,16 @@ object platformMod extends js.Object {
       * [W3C: Structural markup and right-to-left text in HTML](http://www.w3.org/International/questions/qa-html-dir)
       */
     val isRTL: Boolean = js.native
+    /**
+      * The keyboardDidHide event emits when the
+      * on-screen keyboard is hidden.
+      */
+    var keyboardDidHide: Subject[Unit] = js.native
+    /**
+      * The keyboardDidShow event emits when the
+      * on-screen keyboard is presented.
+      */
+    var keyboardDidShow: js.Any = js.native
     /**
       * The pause event emits when the native platform puts the application
       * into the background, typically when the user switches to a different

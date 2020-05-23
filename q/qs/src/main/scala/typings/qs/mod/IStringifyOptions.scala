@@ -65,22 +65,22 @@ object IStringifyOptions {
     strictNullHandling: js.UndefOr[Boolean] = js.undefined
   ): IStringifyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addQueryPrefix)) __obj.updateDynamic("addQueryPrefix")(addQueryPrefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDots)) __obj.updateDynamic("allowDots")(allowDots.asInstanceOf[js.Any])
+    if (!js.isUndefined(addQueryPrefix)) __obj.updateDynamic("addQueryPrefix")(addQueryPrefix.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDots)) __obj.updateDynamic("allowDots")(allowDots.get.asInstanceOf[js.Any])
     if (arrayFormat != null) __obj.updateDynamic("arrayFormat")(arrayFormat.asInstanceOf[js.Any])
     if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
-    if (!js.isUndefined(charsetSentinel)) __obj.updateDynamic("charsetSentinel")(charsetSentinel.asInstanceOf[js.Any])
+    if (!js.isUndefined(charsetSentinel)) __obj.updateDynamic("charsetSentinel")(charsetSentinel.get.asInstanceOf[js.Any])
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (!js.isUndefined(encode)) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
-    if (!js.isUndefined(encodeValuesOnly)) __obj.updateDynamic("encodeValuesOnly")(encodeValuesOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(encode)) __obj.updateDynamic("encode")(encode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(encodeValuesOnly)) __obj.updateDynamic("encodeValuesOnly")(encodeValuesOnly.get.asInstanceOf[js.Any])
     if (encoder != null) __obj.updateDynamic("encoder")(js.Any.fromFunction4(encoder))
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(indices)) __obj.updateDynamic("indices")(indices.asInstanceOf[js.Any])
+    if (!js.isUndefined(indices)) __obj.updateDynamic("indices")(indices.get.asInstanceOf[js.Any])
     if (serializeDate != null) __obj.updateDynamic("serializeDate")(js.Any.fromFunction1(serializeDate))
-    if (!js.isUndefined(skipNulls)) __obj.updateDynamic("skipNulls")(skipNulls.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipNulls)) __obj.updateDynamic("skipNulls")(skipNulls.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction2(sort))
-    if (!js.isUndefined(strictNullHandling)) __obj.updateDynamic("strictNullHandling")(strictNullHandling.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictNullHandling)) __obj.updateDynamic("strictNullHandling")(strictNullHandling.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStringifyOptions]
   }
 }

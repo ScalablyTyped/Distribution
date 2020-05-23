@@ -5,18 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.model.Binding")
 @js.native
-abstract class Binding protected () extends EventProvider {
-  /**
-    * Constructor for Binding class.
-    * @param oModel the model
-    * @param sPath the path
-    * @param oContext the context object
-    * @param mParameters undefined
-    */
-  def this(oModel: Model, sPath: String, oContext: Context) = this()
-  def this(oModel: Model, sPath: String, oContext: Context, mParameters: js.Any) = this()
+trait Binding extends EventProvider {
   /**
     * Attach event-handler <code>fnFunction</code> to the 'AggregatedDataStateChange' event of this
     * <code>sap.ui.model.Binding</code>.<br/>

@@ -1,5 +1,6 @@
 package typings.operationRetrier
 
+import typings.operationRetrier.anon.Initial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +23,7 @@ object mod extends js.Object {
     /**
       * Creates a new Retrier instance
       */
-    def this(options: AnonInitial) = this()
+    def this(options: Initial) = this()
   }
   
   /**
@@ -34,7 +35,7 @@ object mod extends js.Object {
     /**
       * Creates a new Retrier instance
       */
-    def this(options: AnonInitial) = this()
+    def this(options: Initial) = this()
   }
   
   /* static members */

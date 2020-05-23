@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__dom-ready
 
-Typings are for version 2.3
+Typings are for version 2.9.0
 
 ## Library description:
 Execute callback after the DOM is loaded.
@@ -24,7 +24,7 @@ Execute callback after the DOM is loaded.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

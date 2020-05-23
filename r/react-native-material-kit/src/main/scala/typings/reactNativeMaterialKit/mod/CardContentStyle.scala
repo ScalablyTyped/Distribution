@@ -11,10 +11,10 @@ trait CardContentStyle extends js.Object {
 
 object CardContentStyle {
   @scala.inline
-  def apply(color: String = null, padding: Int | Double = null): CardContentStyle = {
+  def apply(color: String = null, padding: js.UndefOr[Double] = js.undefined): CardContentStyle = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardContentStyle]
   }
 }

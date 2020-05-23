@@ -17,13 +17,13 @@ import scala.scalajs.js.annotation._
 object DescriptionProps {
   @scala.inline
   def apply(
-    column: Int | Double = null,
+    column: js.UndefOr[Double] = js.undefined,
     key: String | Double = null,
     style: CSSProperties = null,
     term: ReactNode = null
   ): DescriptionProps = {
     val __obj = js.Dynamic.literal()
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    if (!js.isUndefined(column)) __obj.updateDynamic("column")(column.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (term != null) __obj.updateDynamic("term")(term.asInstanceOf[js.Any])

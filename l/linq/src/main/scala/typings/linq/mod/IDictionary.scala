@@ -1,6 +1,6 @@
 package typings.linq.mod
 
-import typings.linq.AnonValue
+import typings.linq.anon.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait IDictionary[TKey, TValue] extends js.Object {
   def get(key: TKey): TValue
   def remove(key: TKey): Unit
   def set(key: TKey, value: TValue): Boolean
-  def toEnumerable(): IEnumerable[AnonValue[TKey, TValue]]
+  def toEnumerable(): IEnumerable[Value[TKey, TValue]]
 }
 
 object IDictionary {
@@ -26,7 +26,7 @@ object IDictionary {
     get: TKey => TValue,
     remove: TKey => Unit,
     set: (TKey, TValue) => Boolean,
-    toEnumerable: () => IEnumerable[AnonValue[TKey, TValue]]
+    toEnumerable: () => IEnumerable[Value[TKey, TValue]]
   ): IDictionary[TKey, TValue] = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), clear = js.Any.fromFunction0(clear), contains = js.Any.fromFunction1(contains), count = js.Any.fromFunction0(count), get = js.Any.fromFunction1(get), remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction2(set), toEnumerable = js.Any.fromFunction0(toEnumerable))
     __obj.asInstanceOf[IDictionary[TKey, TValue]]

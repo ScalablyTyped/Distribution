@@ -1,6 +1,6 @@
 package typings.pixiJs.mod
 
-import typings.pixiJs.AnonHeight
+import typings.pixiJs.anon.Height
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,6 +49,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class BaseRenderTexture ()
   extends typings.pixiJs.PIXI.BaseRenderTexture {
-  def this(options: AnonHeight) = this()
+  def this(options: Height) = this()
 }
 

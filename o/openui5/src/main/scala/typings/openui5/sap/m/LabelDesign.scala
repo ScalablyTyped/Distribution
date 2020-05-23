@@ -1,6 +1,5 @@
 package typings.openui5.sap.m
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object LabelDesign extends js.Object {
   
   @js.native
   sealed trait Standard extends LabelDesign
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[LabelDesign with Double] = js.native
-  /* 0 */ @js.native
-  object Bold extends TopLevel[Bold with Double]
-  
-  /* 1 */ @js.native
-  object Standard extends TopLevel[Standard with Double]
   
 }
 

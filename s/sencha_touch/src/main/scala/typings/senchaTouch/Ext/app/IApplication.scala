@@ -15,68 +15,68 @@ trait IApplication extends IController {
   /** [Config Option] (Ext.app.Profile) */
   var currentProfile: js.UndefOr[IProfile] = js.undefined
   /** [Method] Dispatches a given Ext app Action to the relevant Controller instance
-  		* @param action Ext.app.Action The action to dispatch.
-  		* @param addToHistory Boolean Sets the browser's url to the action's url.
-  		*/
+    * @param action Ext.app.Action The action to dispatch.
+    * @param addToHistory Boolean Sets the browser's url to the action's url.
+    */
   var dispatch: js.UndefOr[
     js.Function2[/* action */ js.UndefOr[IAction], /* addToHistory */ js.UndefOr[Boolean], Unit]
   ] = js.undefined
   /** [Method] Returns the value of appFolder
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getAppFolder: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the Controller instance for the given controller name
-  		* @param name String The name of the Controller.
-  		* @param profileName String Optional profile name. If passed, this is the same as calling getController('profileName.controllerName').
-  		* @returns Ext.app.Controller controller instance or undefined.
-  		*/
+    * @param name String The name of the Controller.
+    * @param profileName String Optional profile name. If passed, this is the same as calling getController('profileName.controllerName').
+    * @returns Ext.app.Controller controller instance or undefined.
+    */
   @JSName("getController")
   var getController_IApplication: js.UndefOr[
     js.Function2[/* name */ js.UndefOr[String], /* profileName */ js.UndefOr[String], IController]
   ] = js.undefined
   /** [Method] Returns the value of controllers
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   var getControllers: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the value of currentProfile
-  		* @returns Ext.app.Profile
-  		*/
+    * @returns Ext.app.Profile
+    */
   var getCurrentProfile: js.UndefOr[js.Function0[IProfile]] = js.undefined
   /** [Method] Returns the value of history
-  		* @returns Ext.app.History
-  		*/
+    * @returns Ext.app.History
+    */
   var getHistory: js.UndefOr[js.Function0[IHistory]] = js.undefined
   /** [Method] Returns the value of launch
-  		* @returns Function
-  		*/
+    * @returns Function
+    */
   var getLaunch: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of name
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of profiles
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   var getProfiles: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the value of requires
-  		* @returns String[]
-  		*/
+    * @returns String[]
+    */
   var getRequires: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the value of router
-  		* @returns Ext.app.Router
-  		*/
+    * @returns Ext.app.Router
+    */
   var getRouter: js.UndefOr[js.Function0[IRouter]] = js.undefined
   /** [Method] Returns the value of themeVariation
-  		* @returns String/Function
-  		*/
+    * @returns String/Function
+    */
   var getThemeVariation: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of themeVariationPrefix
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getThemeVariationPrefix: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of themeVariationTransitionCls
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getThemeVariationTransitionCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (Boolean) */
   var glossOnIcon: js.UndefOr[Boolean] = js.undefined
@@ -95,8 +95,8 @@ trait IApplication extends IController {
   /** [Config Option] (Array) */
   var profiles: js.UndefOr[Array] = js.undefined
   /** [Method] Redirects the browser to the given url
-  		* @param url String/Ext.data.Model The String url to redirect to.
-  		*/
+    * @param url String/Ext.data.Model The String url to redirect to.
+    */
   @JSName("redirectTo")
   var redirectTo_IApplication: js.UndefOr[js.Function1[/* url */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (String[]) */
@@ -104,52 +104,52 @@ trait IApplication extends IController {
   /** [Config Option] (Ext.app.Router) */
   var router: js.UndefOr[IRouter] = js.undefined
   /** [Method] Sets the value of appFolder
-  		* @param appFolder String The new value.
-  		*/
+    * @param appFolder String The new value.
+    */
   var setAppFolder: js.UndefOr[js.Function1[/* appFolder */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of controllers
-  		* @param controllers Array The new value.
-  		*/
+    * @param controllers Array The new value.
+    */
   var setControllers: js.UndefOr[js.Function1[/* controllers */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Sets the value of currentProfile
-  		* @param currentProfile Ext.app.Profile The new value.
-  		*/
+    * @param currentProfile Ext.app.Profile The new value.
+    */
   var setCurrentProfile: js.UndefOr[js.Function1[/* currentProfile */ js.UndefOr[IProfile], Unit]] = js.undefined
   /** [Method] Sets the value of history
-  		* @param history Ext.app.History The new value.
-  		*/
+    * @param history Ext.app.History The new value.
+    */
   var setHistory: js.UndefOr[js.Function1[/* history */ js.UndefOr[IHistory], Unit]] = js.undefined
   /** [Method] Sets the value of launch
-  		* @param launch Function The new value.
-  		*/
+    * @param launch Function The new value.
+    */
   var setLaunch: js.UndefOr[js.Function1[/* launch */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of name
-  		* @param name String The new value.
-  		*/
+    * @param name String The new value.
+    */
   var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of profiles
-  		* @param profiles Array The new value.
-  		*/
+    * @param profiles Array The new value.
+    */
   var setProfiles: js.UndefOr[js.Function1[/* profiles */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Sets the value of requires
-  		* @param requires String[] The new value.
-  		*/
+    * @param requires String[] The new value.
+    */
   var setRequires: js.UndefOr[js.Function1[/* requires */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Sets the value of router
-  		* @param router Ext.app.Router The new value.
-  		*/
+    * @param router Ext.app.Router The new value.
+    */
   var setRouter: js.UndefOr[js.Function1[/* router */ js.UndefOr[IRouter], Unit]] = js.undefined
   /** [Method] Sets the value of themeVariation
-  		* @param themeVariation String/Function The new value.
-  		*/
+    * @param themeVariation String/Function The new value.
+    */
   var setThemeVariation: js.UndefOr[js.Function1[/* themeVariation */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of themeVariationPrefix
-  		* @param themeVariationPrefix String The new value.
-  		*/
+    * @param themeVariationPrefix String The new value.
+    */
   var setThemeVariationPrefix: js.UndefOr[js.Function1[/* themeVariationPrefix */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of themeVariationTransitionCls
-  		* @param themeVariationTransitionCls String The new value.
-  		*/
+    * @param themeVariationTransitionCls String The new value.
+    */
   var setThemeVariationTransitionCls: js.UndefOr[js.Function1[/* themeVariationTransitionCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (Object) */
   var startupImage: js.UndefOr[js.Any] = js.undefined
@@ -346,14 +346,14 @@ object IApplication {
     if (getThemeVariationPrefix != null) __obj.updateDynamic("getThemeVariationPrefix")(js.Any.fromFunction0(getThemeVariationPrefix))
     if (getThemeVariationTransitionCls != null) __obj.updateDynamic("getThemeVariationTransitionCls")(js.Any.fromFunction0(getThemeVariationTransitionCls))
     if (getViews != null) __obj.updateDynamic("getViews")(js.Any.fromFunction0(getViews))
-    if (!js.isUndefined(glossOnIcon)) __obj.updateDynamic("glossOnIcon")(glossOnIcon.asInstanceOf[js.Any])
+    if (!js.isUndefined(glossOnIcon)) __obj.updateDynamic("glossOnIcon")(glossOnIcon.get.asInstanceOf[js.Any])
     if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
     if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(isIconPrecomposed)) __obj.updateDynamic("isIconPrecomposed")(isIconPrecomposed.asInstanceOf[js.Any])
+    if (!js.isUndefined(isIconPrecomposed)) __obj.updateDynamic("isIconPrecomposed")(isIconPrecomposed.get.asInstanceOf[js.Any])
     if (launch != null) __obj.updateDynamic("launch")(launch.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
@@ -402,7 +402,7 @@ object IApplication {
     if (setThemeVariationPrefix != null) __obj.updateDynamic("setThemeVariationPrefix")(js.Any.fromFunction1(setThemeVariationPrefix))
     if (setThemeVariationTransitionCls != null) __obj.updateDynamic("setThemeVariationTransitionCls")(js.Any.fromFunction1(setThemeVariationTransitionCls))
     if (setViews != null) __obj.updateDynamic("setViews")(js.Any.fromFunction1(setViews))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (startupImage != null) __obj.updateDynamic("startupImage")(startupImage.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (statusBarStyle != null) __obj.updateDynamic("statusBarStyle")(statusBarStyle.asInstanceOf[js.Any])

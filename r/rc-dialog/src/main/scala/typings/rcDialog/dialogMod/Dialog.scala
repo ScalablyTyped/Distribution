@@ -4,7 +4,7 @@ import typings.rcDialog.idialogproptypesMod.IDialogPropTypes
 import typings.react.mod.Component
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEventHandler
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
 import typings.std.MouseEvent
 import scala.scalajs.js

@@ -1,6 +1,6 @@
 package typings.makerJs.MakerJs.models
 
-import typings.makerJs.MakerJs.IFindChainsOptions
+import org.scalablytyped.runtime.StringDictionary
 import typings.makerJs.MakerJs.IModel
 import typings.makerJs.MakerJs.IModelMap
 import typings.makerJs.MakerJs.IPathBezierSeed
@@ -10,41 +10,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MakerJs.models.BezierCurve")
-@js.native
-class BezierCurve protected () extends IModel {
-  def this(points: js.Array[IPoint]) = this()
-  def this(seed: IPathBezierSeed) = this()
-  def this(points: js.Array[IPoint], accuracy: Double) = this()
-  def this(seed: IPathBezierSeed, accuracy: Double) = this()
-  def this(seed: IPathBezierSeed, isChild: Boolean) = this()
-  def this(origin: IPoint, controls: js.Array[IPoint], end: IPoint) = this()
-  def this(origin: IPoint, control: IPoint, end: IPoint) = this()
-  def this(seed: IPathBezierSeed, isChild: Boolean, accuracy: Double) = this()
-  def this(origin: IPoint, control1: IPoint, control2: IPoint, end: IPoint) = this()
-  def this(origin: IPoint, controls: js.Array[IPoint], end: IPoint, accuracy: Double) = this()
-  def this(origin: IPoint, control: IPoint, end: IPoint, accuracy: Double) = this()
-  def this(origin: IPoint, control1: IPoint, control2: IPoint, end: IPoint, accuracy: Double) = this()
-  var accuracy: Double = js.native
+trait BezierCurve extends IModel {
+  var accuracy: Double
   @JSName("models")
-  var models_BezierCurve: IModelMap = js.native
+  var models_BezierCurve: IModelMap
   @JSName("origin")
-  var origin_BezierCurve: IPoint = js.native
+  var origin_BezierCurve: IPoint
   @JSName("paths")
-  var paths_BezierCurve: IPathMap = js.native
-  var seed: IPathBezierSeed = js.native
+  var paths_BezierCurve: IPathMap
+  var seed: IPathBezierSeed
   @JSName("type")
-  var type_BezierCurve: String = js.native
+  var type_BezierCurve: String
 }
 
-/* static members */
-@JSGlobal("MakerJs.models.BezierCurve")
-@js.native
-object BezierCurve extends js.Object {
-  var typeName: String = js.native
-  def computeLength(seed: IPathBezierSeed): Double = js.native
-  def computePoint(seed: IPathBezierSeed, t: Double): IPoint = js.native
-  def getBezierSeeds(curve: BezierCurve): js.Array[IPathBezierSeed] = js.native
-  def getBezierSeeds(curve: BezierCurve, options: IFindChainsOptions): js.Array[IPathBezierSeed] = js.native
+object BezierCurve {
+  @scala.inline
+  def apply(
+    accuracy: Double,
+    models: IModelMap,
+    origin: IPoint,
+    paths: IPathMap,
+    seed: IPathBezierSeed,
+    `type`: String,
+    exporterOptions: StringDictionary[js.Any] = null,
+    layer: String = null,
+    notes: String = null,
+    units: String = null
+  ): BezierCurve = {
+    val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any], models = models.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any], seed = seed.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (exporterOptions != null) __obj.updateDynamic("exporterOptions")(exporterOptions.asInstanceOf[js.Any])
+    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
+    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
+    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BezierCurve]
+  }
 }
 

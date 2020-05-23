@@ -13,6 +13,13 @@ import scala.scalajs.js.annotation._
 class HTML5HistoryManager () extends HistoryManager {
   def this(applicationPath: String) = this()
   /**
+    * Sets the browser Url to the url using pushState
+    * @param url The current url
+    * @param replace A value indicating whether to replace the current
+    * browser history entry
+    */
+  def addHistory(url: String, replace: Boolean): Unit = js.native
+  /**
     * Registers a listener for the popstate event
     * @param navigateHistory The history navigation event handler
     */

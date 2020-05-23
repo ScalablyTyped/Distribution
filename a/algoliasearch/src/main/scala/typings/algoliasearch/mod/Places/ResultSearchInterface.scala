@@ -43,7 +43,7 @@ trait ResultSearchInterface[T /* <: HitInterface | LocalizedHitInterface */] ext
 
 object ResultSearchInterface {
   @scala.inline
-  def apply[T /* <: HitInterface | LocalizedHitInterface */](
+  def apply[T](
     degradedQuery: Boolean,
     hits: js.Array[T],
     nbHits: Double,

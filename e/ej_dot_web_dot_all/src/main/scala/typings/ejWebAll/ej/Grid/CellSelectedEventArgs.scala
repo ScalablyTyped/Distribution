@@ -41,24 +41,24 @@ object CellSelectedEventArgs {
   @scala.inline
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
-    cellIndex: Int | Double = null,
+    cellIndex: js.UndefOr[Double] = js.undefined,
     currentCell: js.Any = null,
     data: js.Any = null,
     model: js.Any = null,
     previousRowCell: js.Any = null,
-    previousRowCellIndex: Int | Double = null,
+    previousRowCellIndex: js.UndefOr[Double] = js.undefined,
     selectedData: js.Any = null,
     selectedRowCellIndex: js.Array[_] = null,
     `type`: String = null
   ): CellSelectedEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (cellIndex != null) __obj.updateDynamic("cellIndex")(cellIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellIndex)) __obj.updateDynamic("cellIndex")(cellIndex.get.asInstanceOf[js.Any])
     if (currentCell != null) __obj.updateDynamic("currentCell")(currentCell.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (previousRowCell != null) __obj.updateDynamic("previousRowCell")(previousRowCell.asInstanceOf[js.Any])
-    if (previousRowCellIndex != null) __obj.updateDynamic("previousRowCellIndex")(previousRowCellIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(previousRowCellIndex)) __obj.updateDynamic("previousRowCellIndex")(previousRowCellIndex.get.asInstanceOf[js.Any])
     if (selectedData != null) __obj.updateDynamic("selectedData")(selectedData.asInstanceOf[js.Any])
     if (selectedRowCellIndex != null) __obj.updateDynamic("selectedRowCellIndex")(selectedRowCellIndex.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

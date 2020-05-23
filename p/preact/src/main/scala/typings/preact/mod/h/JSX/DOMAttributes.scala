@@ -1,6 +1,6 @@
 package typings.preact.mod.h.JSX
 
-import typings.preact.AnonHtml
+import typings.preact.anon.Html
 import typings.preact.mod.ComponentChildren
 import typings.preact.mod.PreactDOMAttributes
 import typings.std.EventTarget
@@ -192,9 +192,9 @@ trait DOMAttributes[Target /* <: EventTarget */] extends PreactDOMAttributes {
 
 object DOMAttributes {
   @scala.inline
-  def apply[Target /* <: EventTarget */](
-    children: ComponentChildren = null,
-    dangerouslySetInnerHTML: AnonHtml = null,
+  def apply[Target](
+    children: js.UndefOr[Null | ComponentChildren] = js.undefined,
+    dangerouslySetInnerHTML: Html = null,
     onAbort: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
     onAbortCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
     onAnimationEnd: typings.preact.jsxMod.JSXInternal.AnimationEventHandler[Target] = null,
@@ -360,7 +360,7 @@ object DOMAttributes {
     onWheelCapture: typings.preact.jsxMod.JSXInternal.WheelEventHandler[Target] = null
   ): DOMAttributes[Target] = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(children)) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (onAbort != null) __obj.updateDynamic("onAbort")(onAbort.asInstanceOf[js.Any])
     if (onAbortCapture != null) __obj.updateDynamic("onAbortCapture")(onAbortCapture.asInstanceOf[js.Any])

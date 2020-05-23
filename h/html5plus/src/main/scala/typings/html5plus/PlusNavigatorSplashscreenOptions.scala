@@ -20,7 +20,7 @@ trait PlusNavigatorSplashscreenOptions extends js.Object {
   /**
     * 是否自动关闭启动界面（WAP2APP应用）
     * 与autoclose属性值作用一致，仅在WAP2APP应用中有效。
-    * 	不推荐设置此值，如果未设置会自动使用autoclose属性值。
+    *     不推荐设置此值，如果未设置会自动使用autoclose属性值。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
@@ -35,7 +35,7 @@ trait PlusNavigatorSplashscreenOptions extends js.Object {
   /**
     * 启动界面延时关闭时间（WAP2APP应用）
     * 与delay属性值作用一致，仅在WAP2APP应用中有效。
-    * 	不推荐设置此值，如果未设置会自动使用delay属性值。
+    *     不推荐设置此值，如果未设置会自动使用delay属性值。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
@@ -54,15 +54,15 @@ object PlusNavigatorSplashscreenOptions {
   def apply(
     autoclose: js.UndefOr[Boolean] = js.undefined,
     autoclose_w2a: js.UndefOr[Boolean] = js.undefined,
-    delay: Int | Double = null,
-    delay_w2a: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
+    delay_w2a: js.UndefOr[Double] = js.undefined,
     image: String = null
   ): PlusNavigatorSplashscreenOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoclose)) __obj.updateDynamic("autoclose")(autoclose.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoclose_w2a)) __obj.updateDynamic("autoclose_w2a")(autoclose_w2a.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (delay_w2a != null) __obj.updateDynamic("delay_w2a")(delay_w2a.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoclose)) __obj.updateDynamic("autoclose")(autoclose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoclose_w2a)) __obj.updateDynamic("autoclose_w2a")(autoclose_w2a.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay_w2a)) __obj.updateDynamic("delay_w2a")(delay_w2a.get.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNavigatorSplashscreenOptions]
   }

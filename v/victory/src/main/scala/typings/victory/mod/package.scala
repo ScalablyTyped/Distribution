@@ -12,9 +12,9 @@ package object mod {
     */
   /* Rewritten from type alias, can be one of: 
     - js.Array[java.lang.String]
-    - typings.victory.AnonXArray
-    - typings.victory.AnonYArray
-    - typings.victory.AnonXArrayYArray
+    - typings.victory.anon.XArray
+    - typings.victory.anon.YArray
+    - typings.victory.anon.XArrayYArray
   */
   type CategoryPropType = typings.victory.mod._CategoryPropType | js.Array[java.lang.String]
   /* Rewritten from type alias, can be one of: 
@@ -36,11 +36,11 @@ package object mod {
   /**
     * Domain padding
     */
-  type DomainPaddingPropType = scala.Double | typings.victory.Anon0
+  type DomainPaddingPropType = scala.Double | typings.victory.anon.`0`
   /* Rewritten from type alias, can be one of: 
     - typings.victory.mod.DomainTuple
-    - typings.victory.AnonXDomainTuple
-    - typings.victory.AnonYDomainTuple
+    - typings.victory.anon.XDomainTuple
+    - typings.victory.anon.YDomainTuple
   */
   type DomainPropType = typings.victory.mod._DomainPropType | typings.victory.mod.DomainTuple
   /**

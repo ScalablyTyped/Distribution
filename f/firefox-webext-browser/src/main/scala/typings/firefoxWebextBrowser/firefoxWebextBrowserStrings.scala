@@ -4,10 +4,10 @@ import typings.firefoxWebextBrowser.browser.activityLog.UndefinedType
 import typings.firefoxWebextBrowser.browser.activityLog.UndefinedViewType
 import typings.firefoxWebextBrowser.browser.bookmarks.BookmarkTreeNodeType
 import typings.firefoxWebextBrowser.browser.browserSettings.ContextMenuMouseEvent
-import typings.firefoxWebextBrowser.browser.browserSettings.ImageAnimationBehavior_
+import typings.firefoxWebextBrowser.browser.browserSettings.ImageAnimationBehavior
 import typings.firefoxWebextBrowser.browser.captivePortal.Status
 import typings.firefoxWebextBrowser.browser.captivePortal.UndefinedState
-import typings.firefoxWebextBrowser.browser.clipboard._SetImageData
+import typings.firefoxWebextBrowser.browser.clipboard.SetImageData
 import typings.firefoxWebextBrowser.browser.contextMenus.ContextType
 import typings.firefoxWebextBrowser.browser.contextMenus.ItemType
 import typings.firefoxWebextBrowser.browser.contextMenus.OnClickDataModifiers
@@ -742,7 +742,7 @@ object firefoxWebextBrowserStrings {
   @js.native
   sealed trait jpeg
     extends ImageFormat
-       with _SetImageData
+       with SetImageData
   
   @js.native
   sealed trait js_ extends ProfilerFeature
@@ -917,14 +917,14 @@ object firefoxWebextBrowserStrings {
   
   @js.native
   sealed trait none
-    extends ImageAnimationBehavior_
+    extends ImageAnimationBehavior
        with ProxyConfigProxyType
   
   @js.native
   sealed trait normal
     extends CreateType
        with ExtensionInstallType
-       with ImageAnimationBehavior_
+       with ImageAnimationBehavior
        with ItemType
        with typings.firefoxWebextBrowser.browser.menus.ItemType
        with WindowState
@@ -959,7 +959,7 @@ object firefoxWebextBrowserStrings {
   sealed trait offline extends _ResolveFlags
   
   @js.native
-  sealed trait once extends ImageAnimationBehavior_
+  sealed trait once extends ImageAnimationBehavior
   
   @js.native
   sealed trait openbsd extends PlatformOs
@@ -1025,7 +1025,7 @@ object firefoxWebextBrowserStrings {
   @js.native
   sealed trait png
     extends ImageFormat
-       with _SetImageData
+       with SetImageData
   
   @js.native
   sealed trait policy_compliant extends CertificateTransparencyStatus

@@ -1,6 +1,6 @@
 package typings.parse.reactNativeMod
 
-import typings.parse.mod._Global_.Parse.Attributes
+import typings.parse.mod.global.Parse.Attributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("parse/react-native", "Relation")
 @js.native
-class Relation[S /* <: typings.parse.mod._Global_.Parse.Object[Attributes] */, T /* <: typings.parse.mod._Global_.Parse.Object[Attributes] */] ()
+class Relation[S /* <: typings.parse.mod.global.Parse.Object[Attributes] */, T /* <: typings.parse.mod.global.Parse.Object[Attributes] */] ()
   extends typings.parse.mod.Relation[S, T] {
   def this(parent: S) = this()
   def this(parent: S, key: String) = this()

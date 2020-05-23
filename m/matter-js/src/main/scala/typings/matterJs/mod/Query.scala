@@ -13,6 +13,14 @@ class Query () extends js.Object
 @js.native
 object Query extends js.Object {
   /**
+    * Finds a list of collisions between body and bodies.
+    * @method collides
+    * @param {body} body
+    * @param {body[]} bodies
+    * @return {object[]} Collisions
+    */
+  def collides(body: Body, bodies: js.Array[Body]): js.Array[_] = js.native
+  /**
     * Returns all bodies whose vertices contain the given point, from the given set of bodies.
     * @method point
     * @param {body[]} bodies

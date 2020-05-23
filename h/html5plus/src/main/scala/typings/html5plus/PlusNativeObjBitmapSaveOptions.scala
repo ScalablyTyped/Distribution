@@ -31,9 +31,9 @@ trait PlusNativeObjBitmapSaveOptions extends js.Object {
   /**
     * 覆盖保存图片文件
     * 仅在保存的图片路径文件存在时有效：
-    * 	true表示覆盖存在的文件；
-    * 	false表示不覆盖，如果文件存在，则返回失败。
-    * 	默认值为false。
+    *     true表示覆盖存在的文件；
+    *     false表示不覆盖，如果文件存在，则返回失败。
+    *     默认值为false。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -41,7 +41,7 @@ trait PlusNativeObjBitmapSaveOptions extends js.Object {
   /**
     * 保存图片的质量
     * 取值范围为1-100，1表示使用最低的图片质量（保存后的图片文件最小）、100表示使用最高的图片质量（保存后的图片文件最大）；
-    * 	默认值为50。
+    *     默认值为50。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -54,13 +54,13 @@ object PlusNativeObjBitmapSaveOptions {
     clip: PlusNativeObjRect = null,
     format: jpg | png = null,
     overwrite: js.UndefOr[Boolean] = js.undefined,
-    quality: Int | Double = null
+    quality: js.UndefOr[Double] = js.undefined
   ): PlusNativeObjBitmapSaveOptions = {
     val __obj = js.Dynamic.literal()
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeObjBitmapSaveOptions]
   }
 }

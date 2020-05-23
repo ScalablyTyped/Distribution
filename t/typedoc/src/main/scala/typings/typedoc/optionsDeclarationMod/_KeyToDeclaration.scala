@@ -48,7 +48,7 @@ trait _KeyToDeclaration[K /* <: options | tsconfig | inputFiles | mode | include
 
 object _KeyToDeclaration {
   @scala.inline
-  def MixedDeclarationOption[K /* <: options | tsconfig | inputFiles | mode | includeDeclarations | entryPoint | exclude | externalPattern | excludeExternals | excludeNotExported | excludePrivate | excludeProtected | ignoreCompilerErrors | includes | media | out | json | theme | name | includeVersion | excludeTags | readme | defaultCategory | categoryOrder | categorizeByGroup | gitRevision | gaID | gaSite | hideGenerator | toc | disableOutputCheck | help | version | plugin | logger | listInvalidSymbolLinks */](
+  def MixedDeclarationOption[K](
     help: String,
     name: String,
     `type`: Mixed,
@@ -64,7 +64,7 @@ object _KeyToDeclaration {
     __obj.asInstanceOf[_KeyToDeclaration[K]]
   }
   @scala.inline
-  def ArrayDeclarationOption[K /* <: options | tsconfig | inputFiles | mode | includeDeclarations | entryPoint | exclude | externalPattern | excludeExternals | excludeNotExported | excludePrivate | excludeProtected | ignoreCompilerErrors | includes | media | out | json | theme | name | includeVersion | excludeTags | readme | defaultCategory | categoryOrder | categorizeByGroup | gitRevision | gaID | gaSite | hideGenerator | toc | disableOutputCheck | help | version | plugin | logger | listInvalidSymbolLinks */](
+  def ArrayDeclarationOption[K](
     help: String,
     name: String,
     `type`: Array,
@@ -80,7 +80,7 @@ object _KeyToDeclaration {
     __obj.asInstanceOf[_KeyToDeclaration[K]]
   }
   @scala.inline
-  def BooleanDeclarationOption[K /* <: options | tsconfig | inputFiles | mode | includeDeclarations | entryPoint | exclude | externalPattern | excludeExternals | excludeNotExported | excludePrivate | excludeProtected | ignoreCompilerErrors | includes | media | out | json | theme | name | includeVersion | excludeTags | readme | defaultCategory | categoryOrder | categorizeByGroup | gitRevision | gaID | gaSite | hideGenerator | toc | disableOutputCheck | help | version | plugin | logger | listInvalidSymbolLinks */](
+  def BooleanDeclarationOption[K](
     help: String,
     name: String,
     `type`: Boolean,
@@ -90,29 +90,29 @@ object _KeyToDeclaration {
   ): _KeyToDeclaration[K] = {
     val __obj = js.Dynamic.literal(help = help.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.get.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (short != null) __obj.updateDynamic("short")(short.asInstanceOf[js.Any])
     __obj.asInstanceOf[_KeyToDeclaration[K]]
   }
   @scala.inline
-  def NumberDeclarationOption[K /* <: options | tsconfig | inputFiles | mode | includeDeclarations | entryPoint | exclude | externalPattern | excludeExternals | excludeNotExported | excludePrivate | excludeProtected | ignoreCompilerErrors | includes | media | out | json | theme | name | includeVersion | excludeTags | readme | defaultCategory | categoryOrder | categorizeByGroup | gitRevision | gaID | gaSite | hideGenerator | toc | disableOutputCheck | help | version | plugin | logger | listInvalidSymbolLinks */](
+  def NumberDeclarationOption[K](
     help: String,
     name: String,
     `type`: Number,
-    defaultValue: Int | Double = null,
+    defaultValue: js.UndefOr[Double] = js.undefined,
     scope: ParameterScope = null,
     short: String = null
   ): _KeyToDeclaration[K] = {
     val __obj = js.Dynamic.literal(help = help.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.get.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (short != null) __obj.updateDynamic("short")(short.asInstanceOf[js.Any])
     __obj.asInstanceOf[_KeyToDeclaration[K]]
   }
   @scala.inline
-  def StringDeclarationOption[K /* <: options | tsconfig | inputFiles | mode | includeDeclarations | entryPoint | exclude | externalPattern | excludeExternals | excludeNotExported | excludePrivate | excludeProtected | ignoreCompilerErrors | includes | media | out | json | theme | name | includeVersion | excludeTags | readme | defaultCategory | categoryOrder | categorizeByGroup | gitRevision | gaID | gaSite | hideGenerator | toc | disableOutputCheck | help | version | plugin | logger | listInvalidSymbolLinks */](
+  def StringDeclarationOption[K](
     help: String,
     name: String,
     defaultValue: String = null,

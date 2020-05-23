@@ -39,16 +39,16 @@ object ISubscriptionItemCreationOptions {
     include: js.Array[String] = null,
     metadata: IOptionsMetadata = null,
     prorate: js.UndefOr[Boolean] = js.undefined,
-    proration_date: Int | Double = null,
-    quantity: Int | Double = null
+    proration_date: js.UndefOr[Double] = js.undefined,
+    quantity: js.UndefOr[Double] = js.undefined
   ): ISubscriptionItemCreationOptions = {
     val __obj = js.Dynamic.literal(plan = plan.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(prorate)) __obj.updateDynamic("prorate")(prorate.asInstanceOf[js.Any])
-    if (proration_date != null) __obj.updateDynamic("proration_date")(proration_date.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (!js.isUndefined(prorate)) __obj.updateDynamic("prorate")(prorate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(proration_date)) __obj.updateDynamic("proration_date")(proration_date.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISubscriptionItemCreationOptions]
   }
 }

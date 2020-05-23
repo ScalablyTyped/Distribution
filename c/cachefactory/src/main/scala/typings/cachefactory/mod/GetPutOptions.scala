@@ -14,24 +14,24 @@ trait GetPutOptions extends ItemInfo {
 object GetPutOptions {
   @scala.inline
   def apply(
-    accessed: Int | Double = null,
-    created: Int | Double = null,
-    expires: Int | Double = null,
+    accessed: js.UndefOr[Double] = js.undefined,
+    created: js.UndefOr[Double] = js.undefined,
+    expires: js.UndefOr[Double] = js.undefined,
     isExpired: js.UndefOr[Boolean] = js.undefined,
-    maxAge: Int | Double = null,
+    maxAge: js.UndefOr[Double] = js.undefined,
     onExpire: (/* key */ String, /* value */ js.Any, /* done */ js.UndefOr[js.Function]) => Unit = null,
     storeOnReject: js.UndefOr[Boolean] = js.undefined,
     storeOnResolve: js.UndefOr[Boolean] = js.undefined
   ): GetPutOptions = {
     val __obj = js.Dynamic.literal()
-    if (accessed != null) __obj.updateDynamic("accessed")(accessed.asInstanceOf[js.Any])
-    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (!js.isUndefined(isExpired)) __obj.updateDynamic("isExpired")(isExpired.asInstanceOf[js.Any])
-    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessed)) __obj.updateDynamic("accessed")(accessed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(created)) __obj.updateDynamic("created")(created.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expires)) __obj.updateDynamic("expires")(expires.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExpired)) __obj.updateDynamic("isExpired")(isExpired.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAge)) __obj.updateDynamic("maxAge")(maxAge.get.asInstanceOf[js.Any])
     if (onExpire != null) __obj.updateDynamic("onExpire")(js.Any.fromFunction3(onExpire))
-    if (!js.isUndefined(storeOnReject)) __obj.updateDynamic("storeOnReject")(storeOnReject.asInstanceOf[js.Any])
-    if (!js.isUndefined(storeOnResolve)) __obj.updateDynamic("storeOnResolve")(storeOnResolve.asInstanceOf[js.Any])
+    if (!js.isUndefined(storeOnReject)) __obj.updateDynamic("storeOnReject")(storeOnReject.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(storeOnResolve)) __obj.updateDynamic("storeOnResolve")(storeOnResolve.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPutOptions]
   }
 }

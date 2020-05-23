@@ -1,7 +1,7 @@
 package typings.paypalRestSdk.mod
 
-import typings.paypalRestSdk.AnonAllowedpaymentmethod
-import typings.paypalRestSdk.AnonItems
+import typings.paypalRestSdk.anon.Allowedpaymentmethod
+import typings.paypalRestSdk.anon.Items
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,12 +11,12 @@ trait Transaction extends js.Object {
   var custom: js.UndefOr[String] = js.undefined
   var description: js.UndefOr[String] = js.undefined
   var invoice_number: js.UndefOr[String] = js.undefined
-  var item_list: js.UndefOr[AnonItems] = js.undefined
+  var item_list: js.UndefOr[Items] = js.undefined
   var note_to_payee: js.UndefOr[String] = js.undefined
   var notify_url: js.UndefOr[String] = js.undefined
   var order_url: js.UndefOr[String] = js.undefined
   var payee: js.UndefOr[Payee] = js.undefined
-  var payment_options: js.UndefOr[AnonAllowedpaymentmethod] = js.undefined
+  var payment_options: js.UndefOr[Allowedpaymentmethod] = js.undefined
   var purchase_order: js.UndefOr[String] = js.undefined
   var reference_id: js.UndefOr[String] = js.undefined
   val related_resources: js.UndefOr[js.Array[RelatedResources]] = js.undefined
@@ -30,12 +30,12 @@ object Transaction {
     custom: String = null,
     description: String = null,
     invoice_number: String = null,
-    item_list: AnonItems = null,
+    item_list: Items = null,
     note_to_payee: String = null,
     notify_url: String = null,
     order_url: String = null,
     payee: Payee = null,
-    payment_options: AnonAllowedpaymentmethod = null,
+    payment_options: Allowedpaymentmethod = null,
     purchase_order: String = null,
     reference_id: String = null,
     related_resources: js.Array[RelatedResources] = null,

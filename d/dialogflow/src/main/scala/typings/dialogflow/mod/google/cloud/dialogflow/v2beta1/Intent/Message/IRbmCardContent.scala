@@ -20,16 +20,16 @@ trait IRbmCardContent extends js.Object {
 object IRbmCardContent {
   @scala.inline
   def apply(
-    description: String = null,
-    media: IRbmMedia = null,
-    suggestions: js.Array[IRbmSuggestion] = null,
-    title: String = null
+    description: js.UndefOr[Null | String] = js.undefined,
+    media: js.UndefOr[Null | IRbmMedia] = js.undefined,
+    suggestions: js.UndefOr[Null | js.Array[IRbmSuggestion]] = js.undefined,
+    title: js.UndefOr[Null | String] = js.undefined
   ): IRbmCardContent = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
-    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(media)) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
+    if (!js.isUndefined(suggestions)) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])
+    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRbmCardContent]
   }
 }

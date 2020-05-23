@@ -21,8 +21,8 @@ object ObserverArrayOpts {
   ): ObserverArrayOpts = {
     val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.asInstanceOf[js.Any])
-    if (!js.isUndefined(init)) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
+    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(init)) __obj.updateDynamic("init")(init.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObserverArrayOpts]
   }
 }

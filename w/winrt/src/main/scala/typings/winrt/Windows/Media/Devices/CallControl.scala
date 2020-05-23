@@ -4,38 +4,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Media.Devices.CallControl")
-@js.native
-class CallControl () extends ICallControl {
-  /* CompleteClass */
-  override var hasRinger: Boolean = js.native
-  /* CompleteClass */
-  override var onanswerrequested: js.Any = js.native
-  /* CompleteClass */
-  override var onaudiotransferrequested: js.Any = js.native
-  /* CompleteClass */
-  override var ondialrequested: js.Any = js.native
-  /* CompleteClass */
-  override var onhanguprequested: js.Any = js.native
-  /* CompleteClass */
-  override var onkeypadpressed: js.Any = js.native
-  /* CompleteClass */
-  override var onredialrequested: js.Any = js.native
-  /* CompleteClass */
-  override def endCall(callToken: Double): Unit = js.native
-  /* CompleteClass */
-  override def indicateActiveCall(callToken: Double): Unit = js.native
-  /* CompleteClass */
-  override def indicateNewIncomingCall(enableRinger: Boolean, callerId: String): Double = js.native
-  /* CompleteClass */
-  override def indicateNewOutgoingCall(): Double = js.native
-}
+trait CallControl extends ICallControl
 
-/* static members */
-@JSGlobal("Windows.Media.Devices.CallControl")
-@js.native
-object CallControl extends js.Object {
-  def fromId(deviceInterfaceId: String): CallControl = js.native
-  def getDefault(): CallControl = js.native
+object CallControl {
+  @scala.inline
+  def apply(
+    endCall: Double => Unit,
+    hasRinger: Boolean,
+    indicateActiveCall: Double => Unit,
+    indicateNewIncomingCall: (Boolean, String) => Double,
+    indicateNewOutgoingCall: () => Double,
+    onanswerrequested: js.Any,
+    onaudiotransferrequested: js.Any,
+    ondialrequested: js.Any,
+    onhanguprequested: js.Any,
+    onkeypadpressed: js.Any,
+    onredialrequested: js.Any
+  ): CallControl = {
+    val __obj = js.Dynamic.literal(endCall = js.Any.fromFunction1(endCall), hasRinger = hasRinger.asInstanceOf[js.Any], indicateActiveCall = js.Any.fromFunction1(indicateActiveCall), indicateNewIncomingCall = js.Any.fromFunction2(indicateNewIncomingCall), indicateNewOutgoingCall = js.Any.fromFunction0(indicateNewOutgoingCall), onanswerrequested = onanswerrequested.asInstanceOf[js.Any], onaudiotransferrequested = onaudiotransferrequested.asInstanceOf[js.Any], ondialrequested = ondialrequested.asInstanceOf[js.Any], onhanguprequested = onhanguprequested.asInstanceOf[js.Any], onkeypadpressed = onkeypadpressed.asInstanceOf[js.Any], onredialrequested = onredialrequested.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CallControl]
+  }
 }
 

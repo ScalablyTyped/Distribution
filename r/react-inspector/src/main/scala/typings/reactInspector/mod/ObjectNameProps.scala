@@ -14,7 +14,7 @@ object ObjectNameProps {
   @scala.inline
   def apply(dimmed: js.UndefOr[Boolean] = js.undefined, name: String = null, styles: js.Object = null): ObjectNameProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dimmed)) __obj.updateDynamic("dimmed")(dimmed.asInstanceOf[js.Any])
+    if (!js.isUndefined(dimmed)) __obj.updateDynamic("dimmed")(dimmed.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectNameProps]

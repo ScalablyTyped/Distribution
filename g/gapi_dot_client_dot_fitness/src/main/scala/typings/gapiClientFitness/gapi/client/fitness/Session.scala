@@ -33,7 +33,7 @@ object Session {
   @scala.inline
   def apply(
     activeTimeMillis: String = null,
-    activityType: Int | Double = null,
+    activityType: js.UndefOr[Double] = js.undefined,
     application: Application = null,
     description: String = null,
     endTimeMillis: String = null,
@@ -44,7 +44,7 @@ object Session {
   ): Session = {
     val __obj = js.Dynamic.literal()
     if (activeTimeMillis != null) __obj.updateDynamic("activeTimeMillis")(activeTimeMillis.asInstanceOf[js.Any])
-    if (activityType != null) __obj.updateDynamic("activityType")(activityType.asInstanceOf[js.Any])
+    if (!js.isUndefined(activityType)) __obj.updateDynamic("activityType")(activityType.get.asInstanceOf[js.Any])
     if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (endTimeMillis != null) __obj.updateDynamic("endTimeMillis")(endTimeMillis.asInstanceOf[js.Any])

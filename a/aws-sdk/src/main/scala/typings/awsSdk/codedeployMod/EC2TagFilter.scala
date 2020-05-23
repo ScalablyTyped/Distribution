@@ -11,7 +11,7 @@ trait EC2TagFilter extends js.Object {
     */
   var Key: js.UndefOr[typings.awsSdk.codedeployMod.Key] = js.native
   /**
-    * The tag filter type:   KEY_ONLY: Key only.   VALUE_ONLY: Value only.   KEY_AND_VALUE: Key and value.  
+    * The tag filter type:    KEY_ONLY: Key only.    VALUE_ONLY: Value only.    KEY_AND_VALUE: Key and value.  
     */
   var Type: js.UndefOr[EC2TagFilterType] = js.native
   /**

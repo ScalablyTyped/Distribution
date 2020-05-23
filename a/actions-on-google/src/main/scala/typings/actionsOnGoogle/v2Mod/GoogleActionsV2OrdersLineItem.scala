@@ -60,7 +60,7 @@ object GoogleActionsV2OrdersLineItem {
     name: String = null,
     offerId: String = null,
     price: GoogleActionsV2OrdersPrice = null,
-    quantity: Int | Double = null,
+    quantity: js.UndefOr[Double] = js.undefined,
     subLines: js.Array[GoogleActionsV2OrdersLineItemSubLine] = null,
     `type`: GoogleActionsV2OrdersLineItemType = null
   ): GoogleActionsV2OrdersLineItem = {
@@ -72,7 +72,7 @@ object GoogleActionsV2OrdersLineItem {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (offerId != null) __obj.updateDynamic("offerId")(offerId.asInstanceOf[js.Any])
     if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity.get.asInstanceOf[js.Any])
     if (subLines != null) __obj.updateDynamic("subLines")(subLines.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersLineItem]

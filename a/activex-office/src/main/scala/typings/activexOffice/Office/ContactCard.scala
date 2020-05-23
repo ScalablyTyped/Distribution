@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.ContactCard")
 @js.native
-class ContactCard protected () extends js.Object {
+trait ContactCard extends js.Object {
   val Application: js.Any = js.native
   val Creator: Double = js.native
   @JSName("Office.ContactCard_typekey")

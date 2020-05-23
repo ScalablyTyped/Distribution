@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ChartGridlinesFormatData extends js.Object {
   /**
     *
-    * Represents chart line formatting. Read-only.
+    * Represents chart line formatting.
     *
     * [Api set: ExcelApi 1.1]
     */

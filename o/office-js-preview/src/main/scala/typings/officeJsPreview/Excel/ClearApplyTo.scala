@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,23 +43,6 @@ object ClearApplyTo extends js.Object {
     */
   @js.native
   sealed trait removeHyperlinks extends ClearApplyTo
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ClearApplyTo with String] = js.native
-  /* "All" */ @js.native
-  object all extends TopLevel[all with String]
-  
-  /* "Contents" */ @js.native
-  object contents extends TopLevel[contents with String]
-  
-  /* "Formats" */ @js.native
-  object formats extends TopLevel[formats with String]
-  
-  /* "Hyperlinks" */ @js.native
-  object hyperlinks extends TopLevel[hyperlinks with String]
-  
-  /* "RemoveHyperlinks" */ @js.native
-  object removeHyperlinks extends TopLevel[removeHyperlinks with String]
   
 }
 

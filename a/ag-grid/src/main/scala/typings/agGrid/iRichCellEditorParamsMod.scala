@@ -1,5 +1,6 @@
 package typings.agGrid
 
+import typings.agGrid.anon.InstantiableICellRendererComp
 import typings.agGrid.componentResolverMod.ComponentHolder
 import typings.agGrid.iCellEditorMod.ICellEditorParams
 import typings.agGrid.iCellRendererMod.ICellRendererFunc
@@ -15,7 +16,7 @@ object iRichCellEditorParamsMod extends js.Object {
     extends ICellEditorParams
        with ComponentHolder {
     var cellHeight: Double = js.native
-    var cellRenderer: AnonInstantiableICellRendererComp | ICellRendererFunc | String = js.native
+    var cellRenderer: InstantiableICellRendererComp | ICellRendererFunc | String = js.native
     var values: js.Array[String] = js.native
   }
   

@@ -32,13 +32,13 @@ object ListPhoneNumbersRequest {
   @scala.inline
   def apply(
     InstanceId: InstanceId,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResult1000] = js.undefined,
     NextToken: NextToken = null,
     PhoneNumberCountryCodes: PhoneNumberCountryCodes = null,
     PhoneNumberTypes: PhoneNumberTypes = null
   ): ListPhoneNumbersRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (PhoneNumberCountryCodes != null) __obj.updateDynamic("PhoneNumberCountryCodes")(PhoneNumberCountryCodes.asInstanceOf[js.Any])
     if (PhoneNumberTypes != null) __obj.updateDynamic("PhoneNumberTypes")(PhoneNumberTypes.asInstanceOf[js.Any])

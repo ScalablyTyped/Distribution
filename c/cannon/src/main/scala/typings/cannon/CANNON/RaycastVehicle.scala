@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CANNON.RaycastVehicle")
 @js.native
-class RaycastVehicle () extends js.Object {
-  def this(options: IRaycastVehicleOptions) = this()
+trait RaycastVehicle extends js.Object {
   var chassisBody: Body = js.native
   var iindexRightAxis: Double = js.native
   var indexForwardAxis: Double = js.native

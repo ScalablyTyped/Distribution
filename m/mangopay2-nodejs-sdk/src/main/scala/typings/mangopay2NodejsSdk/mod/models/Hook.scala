@@ -1,6 +1,6 @@
 package typings.mangopay2NodejsSdk.mod.models
 
-import typings.mangopay2NodejsSdk.PartialHookData
+import typings.mangopay2NodejsSdk.anon.PartialHookData
 import typings.mangopay2NodejsSdk.mod.hook.HookData
 import typings.mangopay2NodejsSdk.mod.hook.HookStatus
 import typings.mangopay2NodejsSdk.mod.hook.HookValidity

@@ -16,14 +16,14 @@ object Options {
   def apply(
     bitDepthReduction: js.UndefOr[Boolean] = js.undefined,
     colorTypeReduction: js.UndefOr[Boolean] = js.undefined,
-    optimizationLevel: Int | Double = null,
+    optimizationLevel: js.UndefOr[Double] = js.undefined,
     paletteReduction: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bitDepthReduction)) __obj.updateDynamic("bitDepthReduction")(bitDepthReduction.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorTypeReduction)) __obj.updateDynamic("colorTypeReduction")(colorTypeReduction.asInstanceOf[js.Any])
-    if (optimizationLevel != null) __obj.updateDynamic("optimizationLevel")(optimizationLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(paletteReduction)) __obj.updateDynamic("paletteReduction")(paletteReduction.asInstanceOf[js.Any])
+    if (!js.isUndefined(bitDepthReduction)) __obj.updateDynamic("bitDepthReduction")(bitDepthReduction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorTypeReduction)) __obj.updateDynamic("colorTypeReduction")(colorTypeReduction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimizationLevel)) __obj.updateDynamic("optimizationLevel")(optimizationLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(paletteReduction)) __obj.updateDynamic("paletteReduction")(paletteReduction.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

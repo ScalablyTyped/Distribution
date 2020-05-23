@@ -1,6 +1,6 @@
 package typings.ckeditorCkeditor5Engine.mod.model
 
-import typings.ckeditorCkeditor5Engine.AnonIgnoreElementEnd
+import typings.ckeditorCkeditor5Engine.anon.IgnoreElementEnd
 import typings.ckeditorCkeditor5Engine.mod.model.operation.Operation
 import typings.std.Iterable
 import scala.scalajs.js
@@ -29,7 +29,7 @@ class Range protected () extends Iterable[Node] {
   def getPositions(options: js.Object): Iterable[Position] = js.native
   def getTransformedByOperation(operation: Operation): js.Array[Range] = js.native
   def getTransformedByOperations(operations: Iterable[Operation]): js.Array[Range] = js.native
-  def getWalker(options: AnonIgnoreElementEnd): Unit = js.native
+  def getWalker(options: IgnoreElementEnd): Unit = js.native
   def isEqual(otherRange: Range): Boolean = js.native
   def isIntersecting(otherRange: Range): Boolean = js.native
   def toJSON(): js.Object = js.native

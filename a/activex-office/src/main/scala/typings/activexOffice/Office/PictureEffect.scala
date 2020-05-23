@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.PictureEffect")
 @js.native
-class PictureEffect protected () extends js.Object {
+trait PictureEffect extends js.Object {
   val Application: js.Any = js.native
   val Creator: Double = js.native
   @JSName("EffectParameters")

@@ -35,7 +35,7 @@ trait ListObjectsV2Output extends js.Object {
     */
   var KeyCount: js.UndefOr[typings.awsSdk.s3Mod.KeyCount] = js.native
   /**
-    * Sets the maximum number of keys returned in the response. The response might contain fewer keys but will never contain more.
+    * Sets the maximum number of keys returned in the response. By default the API returns up to 1,000 key names. The response might contain fewer keys but will never contain more.
     */
   var MaxKeys: js.UndefOr[typings.awsSdk.s3Mod.MaxKeys] = js.native
   /**
@@ -64,9 +64,9 @@ object ListObjectsV2Output {
     ContinuationToken: Token = null,
     Delimiter: Delimiter = null,
     EncodingType: EncodingType = null,
-    IsTruncated: js.UndefOr[Boolean] = js.undefined,
-    KeyCount: Int | Double = null,
-    MaxKeys: Int | Double = null,
+    IsTruncated: js.UndefOr[IsTruncated] = js.undefined,
+    KeyCount: js.UndefOr[KeyCount] = js.undefined,
+    MaxKeys: js.UndefOr[MaxKeys] = js.undefined,
     Name: BucketName = null,
     NextContinuationToken: NextToken = null,
     Prefix: Prefix = null,
@@ -78,9 +78,9 @@ object ListObjectsV2Output {
     if (ContinuationToken != null) __obj.updateDynamic("ContinuationToken")(ContinuationToken.asInstanceOf[js.Any])
     if (Delimiter != null) __obj.updateDynamic("Delimiter")(Delimiter.asInstanceOf[js.Any])
     if (EncodingType != null) __obj.updateDynamic("EncodingType")(EncodingType.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.asInstanceOf[js.Any])
-    if (KeyCount != null) __obj.updateDynamic("KeyCount")(KeyCount.asInstanceOf[js.Any])
-    if (MaxKeys != null) __obj.updateDynamic("MaxKeys")(MaxKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(KeyCount)) __obj.updateDynamic("KeyCount")(KeyCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxKeys)) __obj.updateDynamic("MaxKeys")(MaxKeys.get.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (NextContinuationToken != null) __obj.updateDynamic("NextContinuationToken")(NextContinuationToken.asInstanceOf[js.Any])
     if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])

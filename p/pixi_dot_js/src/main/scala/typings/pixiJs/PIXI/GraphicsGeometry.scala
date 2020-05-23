@@ -1,6 +1,5 @@
 package typings.pixiJs.PIXI
 
-import typings.pixiJs.AnonBaseTexture
 import typings.pixiJs.PIXI.graphicsUtils.BatchPart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,9 +16,8 @@ import scala.scalajs.js.annotation._
   * @extends PIXI.BatchGeometry
   * @memberof PIXI
   */
-@JSGlobal("PIXI.GraphicsGeometry")
 @js.native
-class GraphicsGeometry () extends BatchGeometry {
+trait GraphicsGeometry extends BatchGeometry {
   /**
     * Cached bounds.
     *
@@ -245,7 +243,7 @@ class GraphicsGeometry () extends BatchGeometry {
     *  Should it destroy the base texture of the child sprite
     */
   def destroy(): Unit = js.native
-  def destroy(options: AnonBaseTexture): Unit = js.native
+  def destroy(options: typings.pixiJs.anon.BaseTexture): Unit = js.native
   /**
     * Draws the given shape to this Graphics object. Can be any of Circle, Rectangle, Ellipse, Line or Polygon.
     *
@@ -336,21 +334,5 @@ class GraphicsGeometry () extends BatchGeometry {
     * @protected
     */
   /* protected */ def validateBatching(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("PIXI.GraphicsGeometry")
-@js.native
-object GraphicsGeometry extends js.Object {
-  /**
-    * The maximum number of points to consider an object "batchable",
-    * able to be batched by the renderer's batch system.
-    *
-    * @memberof PIXI.GraphicsGeometry
-    * @static
-    * @member {number} BATCHABLE_SIZE
-    * @default 100
-    */
-  var BATCHABLE_SIZE: Double = js.native
 }
 

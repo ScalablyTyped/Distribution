@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLMarqueeElement")
 @js.native
-class HTMLMarqueeElement protected () extends js.Object {
+trait HTMLMarqueeElement extends js.Object {
   @JSName("MSHTML.HTMLMarqueeElement_typekey")
   var MSHTMLDotHTMLMarqueeElement_typekey: HTMLMarqueeElement = js.native
   var accessKey: String = js.native

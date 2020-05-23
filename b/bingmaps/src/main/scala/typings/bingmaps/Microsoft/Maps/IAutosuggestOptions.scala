@@ -48,20 +48,20 @@ object IAutosuggestOptions {
     bounds: LocationRect = null,
     countryCode: String = null,
     map: Map = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[Double] = js.undefined,
     placeSuggestions: js.UndefOr[Boolean] = js.undefined,
     useMapView: js.UndefOr[Boolean] = js.undefined,
     userLocation: Location = null
   ): IAutosuggestOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addressSuggestions)) __obj.updateDynamic("addressSuggestions")(addressSuggestions.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoDetectLocation)) __obj.updateDynamic("autoDetectLocation")(autoDetectLocation.asInstanceOf[js.Any])
+    if (!js.isUndefined(addressSuggestions)) __obj.updateDynamic("addressSuggestions")(addressSuggestions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoDetectLocation)) __obj.updateDynamic("autoDetectLocation")(autoDetectLocation.get.asInstanceOf[js.Any])
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
-    if (!js.isUndefined(placeSuggestions)) __obj.updateDynamic("placeSuggestions")(placeSuggestions.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMapView)) __obj.updateDynamic("useMapView")(useMapView.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(placeSuggestions)) __obj.updateDynamic("placeSuggestions")(placeSuggestions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useMapView)) __obj.updateDynamic("useMapView")(useMapView.get.asInstanceOf[js.Any])
     if (userLocation != null) __obj.updateDynamic("userLocation")(userLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAutosuggestOptions]
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateSignalingChannelInput extends js.Object {
   /**
-    * The ARN of the signaling channel that you want to update.
+    * The Amazon Resource Name (ARN) of the signaling channel that you want to update.
     */
   var ChannelARN: ResourceARN = js.native
   /**

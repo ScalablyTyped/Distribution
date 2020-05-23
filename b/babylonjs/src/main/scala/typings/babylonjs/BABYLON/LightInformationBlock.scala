@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.LightInformationBlock")
 @js.native
-class LightInformationBlock protected () extends NodeMaterialBlock {
-  /**
-    * Creates a new LightInformationBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait LightInformationBlock extends NodeMaterialBlock {
   var _lightColorUniformName: js.Any = js.native
   var _lightDataUniformName: js.Any = js.native
   var _lightTypeDefineName: js.Any = js.native

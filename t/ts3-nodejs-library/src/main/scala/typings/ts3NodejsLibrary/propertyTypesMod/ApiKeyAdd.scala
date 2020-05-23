@@ -13,10 +13,14 @@ trait ApiKeyAdd extends js.Object {
 
 object ApiKeyAdd {
   @scala.inline
-  def apply(scope: ApiKeyScope, cldbid: Int | Double = null, lifetime: Int | Double = null): ApiKeyAdd = {
+  def apply(
+    scope: ApiKeyScope,
+    cldbid: js.UndefOr[Double] = js.undefined,
+    lifetime: js.UndefOr[Double] = js.undefined
+  ): ApiKeyAdd = {
     val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
-    if (cldbid != null) __obj.updateDynamic("cldbid")(cldbid.asInstanceOf[js.Any])
-    if (lifetime != null) __obj.updateDynamic("lifetime")(lifetime.asInstanceOf[js.Any])
+    if (!js.isUndefined(cldbid)) __obj.updateDynamic("cldbid")(cldbid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lifetime)) __obj.updateDynamic("lifetime")(lifetime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiKeyAdd]
   }
 }

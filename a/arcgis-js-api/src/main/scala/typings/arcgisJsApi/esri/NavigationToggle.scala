@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,8 +47,4 @@ trait NavigationToggle extends Widget_ {
     */
   def toggle(): Unit = js.native
 }
-
-@JSGlobal("__esri.NavigationToggle")
-@js.native
-object NavigationToggle extends TopLevel[NavigationToggleConstructor]
 

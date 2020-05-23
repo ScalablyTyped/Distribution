@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetRecommenderConfigurationsRequest extends js.Object {
   /**
-    * The maximum number of items to include in each page of a paginated response. This parameter is currently not supported for application, campaign, and journey metrics.
+    * The maximum number of items to include in each page of a paginated response. This parameter is not supported for application, campaign, and journey metrics.
     */
   var PageSize: js.UndefOr[string] = js.native
   /**

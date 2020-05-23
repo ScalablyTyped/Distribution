@@ -24,13 +24,13 @@ object DrawComparativeMeasureSymbolEventArgs {
   @scala.inline
   def apply(
     Object: js.Any = null,
-    Value: Int | Double = null,
+    Value: js.UndefOr[Double] = js.undefined,
     scaleElement: HTMLElement = null,
     targetElement: HTMLElement = null
   ): DrawComparativeMeasureSymbolEventArgs = {
     val __obj = js.Dynamic.literal()
     if (Object != null) __obj.updateDynamic("Object")(Object.asInstanceOf[js.Any])
-    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
+    if (!js.isUndefined(Value)) __obj.updateDynamic("Value")(Value.get.asInstanceOf[js.Any])
     if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement.asInstanceOf[js.Any])
     if (targetElement != null) __obj.updateDynamic("targetElement")(targetElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawComparativeMeasureSymbolEventArgs]

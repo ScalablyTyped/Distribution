@@ -23,12 +23,12 @@ object AgendaViewSettings {
   @scala.inline
   def apply(
     dateColumnTemplateId: String = null,
-    daysInAgenda: Int | Double = null,
+    daysInAgenda: js.UndefOr[Double] = js.undefined,
     timeColumnTemplateId: String = null
   ): AgendaViewSettings = {
     val __obj = js.Dynamic.literal()
     if (dateColumnTemplateId != null) __obj.updateDynamic("dateColumnTemplateId")(dateColumnTemplateId.asInstanceOf[js.Any])
-    if (daysInAgenda != null) __obj.updateDynamic("daysInAgenda")(daysInAgenda.asInstanceOf[js.Any])
+    if (!js.isUndefined(daysInAgenda)) __obj.updateDynamic("daysInAgenda")(daysInAgenda.get.asInstanceOf[js.Any])
     if (timeColumnTemplateId != null) __obj.updateDynamic("timeColumnTemplateId")(timeColumnTemplateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgendaViewSettings]
   }

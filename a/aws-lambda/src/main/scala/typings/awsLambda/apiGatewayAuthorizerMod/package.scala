@@ -47,6 +47,6 @@ package object apiGatewayAuthorizerMod {
   type CustomAuthorizerResult = typings.awsLambda.apiGatewayAuthorizerMod.APIGatewayAuthorizerResult
   type PrincipalValue = (org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]) | java.lang.String | js.Array[java.lang.String]
   type Statement = typings.awsLambda.apiGatewayAuthorizerMod.BaseStatement with typings.awsLambda.apiGatewayAuthorizerMod.StatementAction with (typings.awsLambda.apiGatewayAuthorizerMod.StatementResource | typings.awsLambda.apiGatewayAuthorizerMod.StatementPrincipal)
-  type StatementPrincipal = typings.awsLambda.apiGatewayAuthorizerMod.MaybeStatementResource with (typings.awsLambda.AnonPrincipal | typings.awsLambda.AnonNotPrincipal)
-  type StatementResource = typings.awsLambda.apiGatewayAuthorizerMod.MaybeStatementPrincipal with (typings.awsLambda.AnonResource | typings.awsLambda.AnonNotResource)
+  type StatementPrincipal = typings.awsLambda.apiGatewayAuthorizerMod.MaybeStatementResource with (typings.awsLambda.anon.Principal | typings.awsLambda.anon.NotPrincipal)
+  type StatementResource = typings.awsLambda.apiGatewayAuthorizerMod.MaybeStatementPrincipal with (typings.awsLambda.anon.Resource | typings.awsLambda.anon.NotResource)
 }

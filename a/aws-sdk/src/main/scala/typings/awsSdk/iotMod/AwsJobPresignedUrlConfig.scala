@@ -14,9 +14,9 @@ trait AwsJobPresignedUrlConfig extends js.Object {
 
 object AwsJobPresignedUrlConfig {
   @scala.inline
-  def apply(expiresInSec: Int | Double = null): AwsJobPresignedUrlConfig = {
+  def apply(expiresInSec: js.UndefOr[ExpiresInSeconds] = js.undefined): AwsJobPresignedUrlConfig = {
     val __obj = js.Dynamic.literal()
-    if (expiresInSec != null) __obj.updateDynamic("expiresInSec")(expiresInSec.asInstanceOf[js.Any])
+    if (!js.isUndefined(expiresInSec)) __obj.updateDynamic("expiresInSec")(expiresInSec.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsJobPresignedUrlConfig]
   }
 }

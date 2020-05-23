@@ -16,15 +16,15 @@ object MarkerProps {
   @scala.inline
   def apply(
     markerStyle: ViewStyle = null,
-    pressed: Int | Double = null,
+    pressed: js.UndefOr[Double] = js.undefined,
     pressedMarkerStyle: ViewStyle = null,
-    value: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined
   ): MarkerProps = {
     val __obj = js.Dynamic.literal()
     if (markerStyle != null) __obj.updateDynamic("markerStyle")(markerStyle.asInstanceOf[js.Any])
-    if (pressed != null) __obj.updateDynamic("pressed")(pressed.asInstanceOf[js.Any])
+    if (!js.isUndefined(pressed)) __obj.updateDynamic("pressed")(pressed.get.asInstanceOf[js.Any])
     if (pressedMarkerStyle != null) __obj.updateDynamic("pressedMarkerStyle")(pressedMarkerStyle.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerProps]
   }
 }

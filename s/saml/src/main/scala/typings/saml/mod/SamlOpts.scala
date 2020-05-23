@@ -54,7 +54,7 @@ object SamlOpts {
     issuer: String = null,
     keyEncryptionAlgorighm: String = null,
     keyInfoProvider: KeyInfoProvider = null,
-    lifetimeInSeconds: Int | Double = null,
+    lifetimeInSeconds: js.UndefOr[Double] = js.undefined,
     nameIdentifier: String = null,
     nameIdentifierFormat: String = null,
     prefix: String = null,
@@ -77,11 +77,11 @@ object SamlOpts {
     if (encryptionPublicKey != null) __obj.updateDynamic("encryptionPublicKey")(encryptionPublicKey.asInstanceOf[js.Any])
     if (holderOfKeyProofSecret != null) __obj.updateDynamic("holderOfKeyProofSecret")(holderOfKeyProofSecret.asInstanceOf[js.Any])
     if (inResponseTo != null) __obj.updateDynamic("inResponseTo")(inResponseTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeAttributeNameFormat)) __obj.updateDynamic("includeAttributeNameFormat")(includeAttributeNameFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeAttributeNameFormat)) __obj.updateDynamic("includeAttributeNameFormat")(includeAttributeNameFormat.get.asInstanceOf[js.Any])
     if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
     if (keyEncryptionAlgorighm != null) __obj.updateDynamic("keyEncryptionAlgorighm")(keyEncryptionAlgorighm.asInstanceOf[js.Any])
     if (keyInfoProvider != null) __obj.updateDynamic("keyInfoProvider")(keyInfoProvider.asInstanceOf[js.Any])
-    if (lifetimeInSeconds != null) __obj.updateDynamic("lifetimeInSeconds")(lifetimeInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(lifetimeInSeconds)) __obj.updateDynamic("lifetimeInSeconds")(lifetimeInSeconds.get.asInstanceOf[js.Any])
     if (nameIdentifier != null) __obj.updateDynamic("nameIdentifier")(nameIdentifier.asInstanceOf[js.Any])
     if (nameIdentifierFormat != null) __obj.updateDynamic("nameIdentifierFormat")(nameIdentifierFormat.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
@@ -90,7 +90,7 @@ object SamlOpts {
     if (signatureAlgorithm != null) __obj.updateDynamic("signatureAlgorithm")(signatureAlgorithm.asInstanceOf[js.Any])
     if (signatureNamespacePrefix != null) __obj.updateDynamic("signatureNamespacePrefix")(signatureNamespacePrefix.asInstanceOf[js.Any])
     if (subjectConfirmationMethod != null) __obj.updateDynamic("subjectConfirmationMethod")(subjectConfirmationMethod.asInstanceOf[js.Any])
-    if (!js.isUndefined(typedAttributes)) __obj.updateDynamic("typedAttributes")(typedAttributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(typedAttributes)) __obj.updateDynamic("typedAttributes")(typedAttributes.get.asInstanceOf[js.Any])
     if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
     if (xpathToNodeBeforeSignature != null) __obj.updateDynamic("xpathToNodeBeforeSignature")(xpathToNodeBeforeSignature.asInstanceOf[js.Any])
     __obj.asInstanceOf[SamlOpts]

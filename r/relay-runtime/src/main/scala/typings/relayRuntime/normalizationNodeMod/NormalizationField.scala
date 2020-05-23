@@ -1,7 +1,7 @@
 package typings.relayRuntime.normalizationNodeMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.relayRuntime.AnonFragmentName
+import typings.relayRuntime.anon.FragmentName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,14 +18,14 @@ object NormalizationField {
   def NormalizationScalarField(
     kind: String,
     name: String,
-    alias: String = null,
-    args: js.Array[NormalizationArgument] = null,
-    storageKey: String = null
+    alias: js.UndefOr[Null | String] = js.undefined,
+    args: js.UndefOr[Null | js.Array[NormalizationArgument]] = js.undefined,
+    storageKey: js.UndefOr[Null | String] = js.undefined
   ): NormalizationField = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (storageKey != null) __obj.updateDynamic("storageKey")(storageKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(alias)) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (!js.isUndefined(args)) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (!js.isUndefined(storageKey)) __obj.updateDynamic("storageKey")(storageKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationField]
   }
   @scala.inline
@@ -35,28 +35,28 @@ object NormalizationField {
     name: String,
     plural: Boolean,
     selections: js.Array[NormalizationSelection],
-    alias: String = null,
-    concreteType: String = null,
-    storageKey: String = null
+    alias: js.UndefOr[Null | String] = js.undefined,
+    concreteType: js.UndefOr[Null | String] = js.undefined,
+    storageKey: js.UndefOr[Null | String] = js.undefined
   ): NormalizationField = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], plural = plural.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (concreteType != null) __obj.updateDynamic("concreteType")(concreteType.asInstanceOf[js.Any])
-    if (storageKey != null) __obj.updateDynamic("storageKey")(storageKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(alias)) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (!js.isUndefined(concreteType)) __obj.updateDynamic("concreteType")(concreteType.asInstanceOf[js.Any])
+    if (!js.isUndefined(storageKey)) __obj.updateDynamic("storageKey")(storageKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationField]
   }
   @scala.inline
   def NormalizationMatchField(
     args: js.Array[NormalizationArgument],
     kind: String,
-    matchesByType: StringDictionary[AnonFragmentName],
+    matchesByType: StringDictionary[FragmentName],
     name: String,
-    alias: String = null,
-    storageKey: String = null
+    alias: js.UndefOr[Null | String] = js.undefined,
+    storageKey: js.UndefOr[Null | String] = js.undefined
   ): NormalizationField = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], matchesByType = matchesByType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (storageKey != null) __obj.updateDynamic("storageKey")(storageKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(alias)) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (!js.isUndefined(storageKey)) __obj.updateDynamic("storageKey")(storageKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationField]
   }
 }

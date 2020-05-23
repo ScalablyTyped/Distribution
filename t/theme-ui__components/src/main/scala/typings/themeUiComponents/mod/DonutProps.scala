@@ -2,7 +2,7 @@ package typings.themeUiComponents.mod
 
 import typings.csstype.mod.GlobalsNumber
 import typings.emotionCore.mod.InterpolationWithTheme
-import typings.react.AnonHtml
+import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
 import typings.react.mod.Booleanish
@@ -34,7 +34,7 @@ import typings.react.mod.TouchEventHandler
 import typings.react.mod.TransitionEventHandler
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEventHandler
-import typings.std.Event_
+import typings.std.Event
 import typings.std.SVGSVGElement
 import typings.styledSystem.mod.RequiredTheme
 import typings.styledSystem.mod.ResponsiveValue
@@ -228,7 +228,7 @@ trait DonutProps extends js.Object {
   var cx: js.UndefOr[Double | String] = js.undefined
   var cy: js.UndefOr[Double | String] = js.undefined
   var d: js.UndefOr[String] = js.undefined
-  var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.undefined
+  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
   var decelerate: js.UndefOr[Double | String] = js.undefined
   var descent: js.UndefOr[Double | String] = js.undefined
   var diffuseConstant: js.UndefOr[Double | String] = js.undefined
@@ -617,9 +617,9 @@ object DonutProps {
     `aria-autocomplete`: none | `inline` | list | both = null,
     `aria-busy`: js.UndefOr[Boolean] = js.undefined,
     `aria-checked`: Boolean | mixed = null,
-    `aria-colcount`: Int | Double = null,
-    `aria-colindex`: Int | Double = null,
-    `aria-colspan`: Int | Double = null,
+    `aria-colcount`: js.UndefOr[Double] = js.undefined,
+    `aria-colindex`: js.UndefOr[Double] = js.undefined,
+    `aria-colspan`: js.UndefOr[Double] = js.undefined,
     `aria-controls`: String = null,
     `aria-current`: Boolean | page | step | location | date | time = null,
     `aria-describedby`: String = null,
@@ -636,7 +636,7 @@ object DonutProps {
     `aria-keyshortcuts`: String = null,
     `aria-label`: String = null,
     `aria-labelledby`: String = null,
-    `aria-level`: Int | Double = null,
+    `aria-level`: js.UndefOr[Double] = js.undefined,
     `aria-live`: off | assertive | polite = null,
     `aria-modal`: js.UndefOr[Boolean] = js.undefined,
     `aria-multiline`: js.UndefOr[Boolean] = js.undefined,
@@ -644,35 +644,35 @@ object DonutProps {
     `aria-orientation`: horizontal | vertical = null,
     `aria-owns`: String = null,
     `aria-placeholder`: String = null,
-    `aria-posinset`: Int | Double = null,
+    `aria-posinset`: js.UndefOr[Double] = js.undefined,
     `aria-pressed`: Boolean | mixed = null,
     `aria-readonly`: js.UndefOr[Boolean] = js.undefined,
     `aria-relevant`: additions | (`additions text`) | all | removals | text = null,
     `aria-required`: js.UndefOr[Boolean] = js.undefined,
     `aria-roledescription`: String = null,
-    `aria-rowcount`: Int | Double = null,
-    `aria-rowindex`: Int | Double = null,
-    `aria-rowspan`: Int | Double = null,
+    `aria-rowcount`: js.UndefOr[Double] = js.undefined,
+    `aria-rowindex`: js.UndefOr[Double] = js.undefined,
+    `aria-rowspan`: js.UndefOr[Double] = js.undefined,
     `aria-selected`: js.UndefOr[Boolean] = js.undefined,
-    `aria-setsize`: Int | Double = null,
+    `aria-setsize`: js.UndefOr[Double] = js.undefined,
     `aria-sort`: none | ascending | descending | other = null,
-    `aria-valuemax`: Int | Double = null,
-    `aria-valuemin`: Int | Double = null,
-    `aria-valuenow`: Int | Double = null,
+    `aria-valuemax`: js.UndefOr[Double] = js.undefined,
+    `aria-valuemin`: js.UndefOr[Double] = js.undefined,
+    `aria-valuenow`: js.UndefOr[Double] = js.undefined,
     `aria-valuetext`: String = null,
     as: ElementType[_] = null,
     ascent: Double | String = null,
     attributeName: String = null,
     attributeType: String = null,
-    autoReverse: js.UndefOr[Boolean] = js.undefined,
+    autoReverse: js.UndefOr[Booleanish] = js.undefined,
     azimuth: Double | String = null,
-    backgroundColor: ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme] = null,
+    backgroundColor: js.UndefOr[Null | (ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme])] = js.undefined,
     baseFrequency: Double | String = null,
     baseProfile: Double | String = null,
     baselineShift: Double | String = null,
     bbox: Double | String = null,
     begin: Double | String = null,
-    bg: ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme] = null,
+    bg: js.UndefOr[Null | (ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme])] = js.undefined,
     bias: Double | String = null,
     by: Double | String = null,
     calcMode: Double | String = null,
@@ -683,7 +683,7 @@ object DonutProps {
     clipPath: String = null,
     clipPathUnits: Double | String = null,
     clipRule: Double | String = null,
-    color: ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme] = null,
+    color: js.UndefOr[Null | (ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme])] = js.undefined,
     colorInterpolation: Double | String = null,
     colorInterpolationFilters: auto | sRGB | linearRGB | inherit = null,
     colorProfile: Double | String = null,
@@ -691,12 +691,12 @@ object DonutProps {
     contentScriptType: Double | String = null,
     contentStyleType: Double | String = null,
     crossOrigin: anonymous | `use-credentials` | _empty = null,
-    css: InterpolationWithTheme[_] = null,
+    css: js.UndefOr[Null | InterpolationWithTheme[_]] = js.undefined,
     cursor: Double | String = null,
     cx: Double | String = null,
     cy: Double | String = null,
     d: String = null,
-    dangerouslySetInnerHTML: AnonHtml = null,
+    dangerouslySetInnerHTML: Html = null,
     decelerate: Double | String = null,
     descent: Double | String = null,
     diffuseConstant: Double | String = null,
@@ -712,7 +712,7 @@ object DonutProps {
     enableBackground: Double | String = null,
     end: Double | String = null,
     exponent: Double | String = null,
-    externalResourcesRequired: js.UndefOr[Boolean] = js.undefined,
+    externalResourcesRequired: js.UndefOr[Booleanish] = js.undefined,
     fill: String = null,
     fillOpacity: Double | String = null,
     fillRule: nonzero | evenodd | inherit = null,
@@ -770,14 +770,14 @@ object DonutProps {
     lightingColor: Double | String = null,
     limitingConeAngle: Double | String = null,
     local: Double | String = null,
-    m: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    margin: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    marginBottom: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    marginLeft: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    marginRight: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    marginTop: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    marginX: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    marginY: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
+    m: js.UndefOr[Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme])] = js.undefined,
+    margin: js.UndefOr[Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme])] = js.undefined,
+    marginBottom: js.UndefOr[Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme])] = js.undefined,
+    marginLeft: js.UndefOr[Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme])] = js.undefined,
+    marginRight: js.UndefOr[Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme])] = js.undefined,
+    marginTop: js.UndefOr[Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme])] = js.undefined,
+    marginX: js.UndefOr[Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme])] = js.undefined,
+    marginY: js.UndefOr[Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme])] = js.undefined,
     markerEnd: String = null,
     markerHeight: Double | String = null,
     markerMid: String = null,
@@ -788,29 +788,29 @@ object DonutProps {
     maskContentUnits: Double | String = null,
     maskUnits: Double | String = null,
     mathematical: Double | String = null,
-    max: Int | Double = null,
-    mb: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
+    max: js.UndefOr[Double] = js.undefined,
+    mb: js.UndefOr[Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme])] = js.undefined,
     media: String = null,
     method: String = null,
-    min: Int | Double = null,
-    ml: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
+    min: js.UndefOr[Double] = js.undefined,
+    ml: js.UndefOr[Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme])] = js.undefined,
     mode: Double | String = null,
-    mr: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    mt: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    mx: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    my: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
+    mr: js.UndefOr[Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme])] = js.undefined,
+    mt: js.UndefOr[Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme])] = js.undefined,
+    mx: js.UndefOr[Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme])] = js.undefined,
+    my: js.UndefOr[Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme])] = js.undefined,
     name: String = null,
     numOctaves: Double | String = null,
     offset: Double | String = null,
-    onAbort: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
+    onAbort: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
     onAnimationEnd: AnimationEvent[SVGSVGElement] => Unit = null,
     onAnimationIteration: AnimationEvent[SVGSVGElement] => Unit = null,
     onAnimationStart: AnimationEvent[SVGSVGElement] => Unit = null,
     onAuxClick: MouseEvent[SVGSVGElement, NativeMouseEvent] => Unit = null,
     onBeforeInput: FormEvent[SVGSVGElement] => Unit = null,
     onBlur: FocusEvent[SVGSVGElement] => Unit = null,
-    onCanPlay: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
-    onCanPlayThrough: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
+    onCanPlay: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
+    onCanPlayThrough: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
     onChange: FormEvent[SVGSVGElement] => Unit = null,
     onClick: MouseEvent[SVGSVGElement, NativeMouseEvent] => Unit = null,
     onCompositionEnd: CompositionEvent[SVGSVGElement] => Unit = null,
@@ -828,21 +828,21 @@ object DonutProps {
     onDragOver: DragEvent[SVGSVGElement] => Unit = null,
     onDragStart: DragEvent[SVGSVGElement] => Unit = null,
     onDrop: DragEvent[SVGSVGElement] => Unit = null,
-    onDurationChange: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
-    onEmptied: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
-    onEncrypted: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
-    onEnded: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
-    onError: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
+    onDurationChange: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
+    onEmptied: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
+    onEncrypted: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
+    onEnded: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
+    onError: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
     onFocus: FocusEvent[SVGSVGElement] => Unit = null,
     onInput: FormEvent[SVGSVGElement] => Unit = null,
     onInvalid: FormEvent[SVGSVGElement] => Unit = null,
     onKeyDown: KeyboardEvent[SVGSVGElement] => Unit = null,
     onKeyPress: KeyboardEvent[SVGSVGElement] => Unit = null,
     onKeyUp: KeyboardEvent[SVGSVGElement] => Unit = null,
-    onLoad: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
-    onLoadStart: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
-    onLoadedData: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
-    onLoadedMetadata: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
+    onLoad: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
+    onLoadStart: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
+    onLoadedData: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
+    onLoadedMetadata: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
     onMouseDown: MouseEvent[SVGSVGElement, NativeMouseEvent] => Unit = null,
     onMouseEnter: MouseEvent[SVGSVGElement, NativeMouseEvent] => Unit = null,
     onMouseLeave: MouseEvent[SVGSVGElement, NativeMouseEvent] => Unit = null,
@@ -851,9 +851,9 @@ object DonutProps {
     onMouseOver: MouseEvent[SVGSVGElement, NativeMouseEvent] => Unit = null,
     onMouseUp: MouseEvent[SVGSVGElement, NativeMouseEvent] => Unit = null,
     onPaste: ClipboardEvent[SVGSVGElement] => Unit = null,
-    onPause: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
-    onPlay: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
-    onPlaying: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
+    onPause: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
+    onPlay: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
+    onPlaying: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
     onPointerCancel: PointerEvent[SVGSVGElement] => Unit = null,
     onPointerDown: PointerEvent[SVGSVGElement] => Unit = null,
     onPointerEnter: PointerEvent[SVGSVGElement] => Unit = null
@@ -868,66 +868,66 @@ object DonutProps {
     if (amplitude != null) __obj.updateDynamic("amplitude")(amplitude.asInstanceOf[js.Any])
     if (arabicForm != null) __obj.updateDynamic("arabicForm")(arabicForm.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.get.asInstanceOf[js.Any])
     if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.get.asInstanceOf[js.Any])
     if (`aria-checked` != null) __obj.updateDynamic("aria-checked")(`aria-checked`.asInstanceOf[js.Any])
-    if (`aria-colcount` != null) __obj.updateDynamic("aria-colcount")(`aria-colcount`.asInstanceOf[js.Any])
-    if (`aria-colindex` != null) __obj.updateDynamic("aria-colindex")(`aria-colindex`.asInstanceOf[js.Any])
-    if (`aria-colspan` != null) __obj.updateDynamic("aria-colspan")(`aria-colspan`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-colcount`)) __obj.updateDynamic("aria-colcount")(`aria-colcount`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-colindex`)) __obj.updateDynamic("aria-colindex")(`aria-colindex`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-colspan`)) __obj.updateDynamic("aria-colspan")(`aria-colspan`.get.asInstanceOf[js.Any])
     if (`aria-controls` != null) __obj.updateDynamic("aria-controls")(`aria-controls`.asInstanceOf[js.Any])
     if (`aria-current` != null) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
     if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
     if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.get.asInstanceOf[js.Any])
     if (`aria-dropeffect` != null) __obj.updateDynamic("aria-dropeffect")(`aria-dropeffect`.asInstanceOf[js.Any])
     if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.get.asInstanceOf[js.Any])
     if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.get.asInstanceOf[js.Any])
     if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.get.asInstanceOf[js.Any])
     if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
     if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`.asInstanceOf[js.Any])
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
     if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (`aria-level` != null) __obj.updateDynamic("aria-level")(`aria-level`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-level`)) __obj.updateDynamic("aria-level")(`aria-level`.get.asInstanceOf[js.Any])
     if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.get.asInstanceOf[js.Any])
     if (`aria-orientation` != null) __obj.updateDynamic("aria-orientation")(`aria-orientation`.asInstanceOf[js.Any])
     if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`.asInstanceOf[js.Any])
     if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`.asInstanceOf[js.Any])
-    if (`aria-posinset` != null) __obj.updateDynamic("aria-posinset")(`aria-posinset`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-posinset`)) __obj.updateDynamic("aria-posinset")(`aria-posinset`.get.asInstanceOf[js.Any])
     if (`aria-pressed` != null) __obj.updateDynamic("aria-pressed")(`aria-pressed`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.get.asInstanceOf[js.Any])
     if (`aria-relevant` != null) __obj.updateDynamic("aria-relevant")(`aria-relevant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.get.asInstanceOf[js.Any])
     if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`.asInstanceOf[js.Any])
-    if (`aria-rowcount` != null) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.asInstanceOf[js.Any])
-    if (`aria-rowindex` != null) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.asInstanceOf[js.Any])
-    if (`aria-rowspan` != null) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.asInstanceOf[js.Any])
-    if (`aria-setsize` != null) __obj.updateDynamic("aria-setsize")(`aria-setsize`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-rowcount`)) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-rowindex`)) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-rowspan`)) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-setsize`)) __obj.updateDynamic("aria-setsize")(`aria-setsize`.get.asInstanceOf[js.Any])
     if (`aria-sort` != null) __obj.updateDynamic("aria-sort")(`aria-sort`.asInstanceOf[js.Any])
-    if (`aria-valuemax` != null) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.asInstanceOf[js.Any])
-    if (`aria-valuemin` != null) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.asInstanceOf[js.Any])
-    if (`aria-valuenow` != null) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-valuemax`)) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-valuemin`)) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-valuenow`)) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.get.asInstanceOf[js.Any])
     if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (ascent != null) __obj.updateDynamic("ascent")(ascent.asInstanceOf[js.Any])
     if (attributeName != null) __obj.updateDynamic("attributeName")(attributeName.asInstanceOf[js.Any])
     if (attributeType != null) __obj.updateDynamic("attributeType")(attributeType.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoReverse)) __obj.updateDynamic("autoReverse")(autoReverse.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoReverse)) __obj.updateDynamic("autoReverse")(autoReverse.get.asInstanceOf[js.Any])
     if (azimuth != null) __obj.updateDynamic("azimuth")(azimuth.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(backgroundColor)) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (baseFrequency != null) __obj.updateDynamic("baseFrequency")(baseFrequency.asInstanceOf[js.Any])
     if (baseProfile != null) __obj.updateDynamic("baseProfile")(baseProfile.asInstanceOf[js.Any])
     if (baselineShift != null) __obj.updateDynamic("baselineShift")(baselineShift.asInstanceOf[js.Any])
     if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
     if (begin != null) __obj.updateDynamic("begin")(begin.asInstanceOf[js.Any])
-    if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
+    if (!js.isUndefined(bg)) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
     if (bias != null) __obj.updateDynamic("bias")(bias.asInstanceOf[js.Any])
     if (by != null) __obj.updateDynamic("by")(by.asInstanceOf[js.Any])
     if (calcMode != null) __obj.updateDynamic("calcMode")(calcMode.asInstanceOf[js.Any])
@@ -938,7 +938,7 @@ object DonutProps {
     if (clipPath != null) __obj.updateDynamic("clipPath")(clipPath.asInstanceOf[js.Any])
     if (clipPathUnits != null) __obj.updateDynamic("clipPathUnits")(clipPathUnits.asInstanceOf[js.Any])
     if (clipRule != null) __obj.updateDynamic("clipRule")(clipRule.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (colorInterpolation != null) __obj.updateDynamic("colorInterpolation")(colorInterpolation.asInstanceOf[js.Any])
     if (colorInterpolationFilters != null) __obj.updateDynamic("colorInterpolationFilters")(colorInterpolationFilters.asInstanceOf[js.Any])
     if (colorProfile != null) __obj.updateDynamic("colorProfile")(colorProfile.asInstanceOf[js.Any])
@@ -946,7 +946,7 @@ object DonutProps {
     if (contentScriptType != null) __obj.updateDynamic("contentScriptType")(contentScriptType.asInstanceOf[js.Any])
     if (contentStyleType != null) __obj.updateDynamic("contentStyleType")(contentStyleType.asInstanceOf[js.Any])
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
-    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
+    if (!js.isUndefined(css)) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (cx != null) __obj.updateDynamic("cx")(cx.asInstanceOf[js.Any])
     if (cy != null) __obj.updateDynamic("cy")(cy.asInstanceOf[js.Any])
@@ -967,7 +967,7 @@ object DonutProps {
     if (enableBackground != null) __obj.updateDynamic("enableBackground")(enableBackground.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (exponent != null) __obj.updateDynamic("exponent")(exponent.asInstanceOf[js.Any])
-    if (!js.isUndefined(externalResourcesRequired)) __obj.updateDynamic("externalResourcesRequired")(externalResourcesRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(externalResourcesRequired)) __obj.updateDynamic("externalResourcesRequired")(externalResourcesRequired.get.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (fillRule != null) __obj.updateDynamic("fillRule")(fillRule.asInstanceOf[js.Any])
@@ -1025,14 +1025,14 @@ object DonutProps {
     if (lightingColor != null) __obj.updateDynamic("lightingColor")(lightingColor.asInstanceOf[js.Any])
     if (limitingConeAngle != null) __obj.updateDynamic("limitingConeAngle")(limitingConeAngle.asInstanceOf[js.Any])
     if (local != null) __obj.updateDynamic("local")(local.asInstanceOf[js.Any])
-    if (m != null) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (marginBottom != null) __obj.updateDynamic("marginBottom")(marginBottom.asInstanceOf[js.Any])
-    if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
-    if (marginRight != null) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
-    if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
-    if (marginX != null) __obj.updateDynamic("marginX")(marginX.asInstanceOf[js.Any])
-    if (marginY != null) __obj.updateDynamic("marginY")(marginY.asInstanceOf[js.Any])
+    if (!js.isUndefined(m)) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
+    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginBottom)) __obj.updateDynamic("marginBottom")(marginBottom.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginLeft)) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginRight)) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginTop)) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginX)) __obj.updateDynamic("marginX")(marginX.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginY)) __obj.updateDynamic("marginY")(marginY.asInstanceOf[js.Any])
     if (markerEnd != null) __obj.updateDynamic("markerEnd")(markerEnd.asInstanceOf[js.Any])
     if (markerHeight != null) __obj.updateDynamic("markerHeight")(markerHeight.asInstanceOf[js.Any])
     if (markerMid != null) __obj.updateDynamic("markerMid")(markerMid.asInstanceOf[js.Any])
@@ -1043,17 +1043,17 @@ object DonutProps {
     if (maskContentUnits != null) __obj.updateDynamic("maskContentUnits")(maskContentUnits.asInstanceOf[js.Any])
     if (maskUnits != null) __obj.updateDynamic("maskUnits")(maskUnits.asInstanceOf[js.Any])
     if (mathematical != null) __obj.updateDynamic("mathematical")(mathematical.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (mb != null) __obj.updateDynamic("mb")(mb.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mb)) __obj.updateDynamic("mb")(mb.asInstanceOf[js.Any])
     if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (ml != null) __obj.updateDynamic("ml")(ml.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ml)) __obj.updateDynamic("ml")(ml.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (mr != null) __obj.updateDynamic("mr")(mr.asInstanceOf[js.Any])
-    if (mt != null) __obj.updateDynamic("mt")(mt.asInstanceOf[js.Any])
-    if (mx != null) __obj.updateDynamic("mx")(mx.asInstanceOf[js.Any])
-    if (my != null) __obj.updateDynamic("my")(my.asInstanceOf[js.Any])
+    if (!js.isUndefined(mr)) __obj.updateDynamic("mr")(mr.asInstanceOf[js.Any])
+    if (!js.isUndefined(mt)) __obj.updateDynamic("mt")(mt.asInstanceOf[js.Any])
+    if (!js.isUndefined(mx)) __obj.updateDynamic("mx")(mx.asInstanceOf[js.Any])
+    if (!js.isUndefined(my)) __obj.updateDynamic("my")(my.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (numOctaves != null) __obj.updateDynamic("numOctaves")(numOctaves.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])

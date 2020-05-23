@@ -21,7 +21,7 @@ object Options {
   def apply(
     autoHide: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     label: String | HTMLElement = null,
     render: /* p0 */ typings.ol.mapEventMod.default => Unit = null,
     resetNorth: () => Unit = null,
@@ -29,9 +29,9 @@ object Options {
     tipLabel: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (resetNorth != null) __obj.updateDynamic("resetNorth")(js.Any.fromFunction0(resetNorth))

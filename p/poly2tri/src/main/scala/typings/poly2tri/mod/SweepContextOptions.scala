@@ -17,7 +17,7 @@ object SweepContextOptions {
   @scala.inline
   def apply(cloneArrays: js.UndefOr[Boolean] = js.undefined): SweepContextOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cloneArrays)) __obj.updateDynamic("cloneArrays")(cloneArrays.asInstanceOf[js.Any])
+    if (!js.isUndefined(cloneArrays)) __obj.updateDynamic("cloneArrays")(cloneArrays.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SweepContextOptions]
   }
 }

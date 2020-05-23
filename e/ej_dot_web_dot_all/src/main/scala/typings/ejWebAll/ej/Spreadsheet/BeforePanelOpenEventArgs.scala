@@ -32,15 +32,15 @@ object BeforePanelOpenEventArgs {
     cancel: js.UndefOr[Boolean] = js.undefined,
     model: Model = null,
     range: js.Any = null,
-    sheetIdx: Int | Double = null,
+    sheetIdx: js.UndefOr[Double] = js.undefined,
     `type`: String = null
   ): BeforePanelOpenEventArgs = {
     val __obj = js.Dynamic.literal()
     if (activationPanel != null) __obj.updateDynamic("activationPanel")(activationPanel.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (sheetIdx != null) __obj.updateDynamic("sheetIdx")(sheetIdx.asInstanceOf[js.Any])
+    if (!js.isUndefined(sheetIdx)) __obj.updateDynamic("sheetIdx")(sheetIdx.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeforePanelOpenEventArgs]
   }

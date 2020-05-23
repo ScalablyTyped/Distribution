@@ -11,10 +11,10 @@ trait DurationHistogramOptions extends js.Object {
 
 object DurationHistogramOptions {
   @scala.inline
-  def apply(buckets: js.Array[Double] = null, initSize: Int | Double = null): DurationHistogramOptions = {
+  def apply(buckets: js.Array[Double] = null, initSize: js.UndefOr[Double] = js.undefined): DurationHistogramOptions = {
     val __obj = js.Dynamic.literal()
     if (buckets != null) __obj.updateDynamic("buckets")(buckets.asInstanceOf[js.Any])
-    if (initSize != null) __obj.updateDynamic("initSize")(initSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(initSize)) __obj.updateDynamic("initSize")(initSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DurationHistogramOptions]
   }
 }

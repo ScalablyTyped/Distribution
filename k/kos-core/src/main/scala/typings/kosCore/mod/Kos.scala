@@ -1,6 +1,6 @@
 package typings.kosCore.mod
 
-import typings.kosCore.AnonDispatch
+import typings.kosCore.anon.Dispatch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +14,6 @@ trait Kos extends js.Object {
   def removeModel(namespace: String): Unit = js.native
   def start(Layout: ReactComponent[_, _]): Unit = js.native
   def start(Layout: ReactComponent[_, _], container: String): Unit = js.native
-  def use(middleware: js.Function1[/* api */ AnonDispatch, Unit]): Unit = js.native
+  def use(middleware: js.Function1[/* api */ Dispatch, Unit]): Unit = js.native
 }
 

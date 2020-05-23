@@ -33,7 +33,7 @@ object ExportingMenuObject {
   ): ExportingMenuObject = {
     val __obj = js.Dynamic.literal()
     if (onclick != null) __obj.updateDynamic("onclick")(onclick.asInstanceOf[js.Any])
-    if (!js.isUndefined(separator)) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
+    if (!js.isUndefined(separator)) __obj.updateDynamic("separator")(separator.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (textKey != null) __obj.updateDynamic("textKey")(textKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportingMenuObject]

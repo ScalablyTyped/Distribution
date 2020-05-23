@@ -21,7 +21,7 @@ trait ServerRoute extends js.Object {
     * additional route options. The options value can be an object or a function that returns an object using the signature function(server) where server is the server the route is being added to
     * and this is bound to the current realm's bind option.
     */
-  var options: js.UndefOr[RouteOptions | (js.Function1[/* server */ Server, RouteOptions])] = js.undefined
+  var options: js.UndefOr[RouteOptions | (js.Function1[/* server */ Server_, RouteOptions])] = js.undefined
   /**
     * (required) the absolute path used to match incoming requests (must begin with '/'). Incoming requests are compared to the configured paths based on the server's router configuration. The path
     * can include named parameters enclosed in {} which will be matched against literal values in the request as described in Path parameters. For context [See
@@ -45,7 +45,7 @@ object ServerRoute {
     method: HTTP_METHODS_PARTIAL | (js.Array[HTTP_METHODS_PARTIAL | String]) | String,
     path: String,
     handler: Method | HandlerDecorations = null,
-    options: RouteOptions | (js.Function1[/* server */ Server, RouteOptions]) = null,
+    options: RouteOptions | (js.Function1[/* server */ Server_, RouteOptions]) = null,
     rules: js.Object = null,
     vhost: String | js.Array[String] = null
   ): ServerRoute = {

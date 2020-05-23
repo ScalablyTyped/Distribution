@@ -1,5 +1,6 @@
 package typings.electron.mod.remote
 
+import typings.electron.Electron.NativeImage_
 import typings.electron.Electron.TouchBarButton
 import typings.electron.Electron.TouchBarButtonConstructorOptions
 import scala.scalajs.js
@@ -14,5 +15,13 @@ class TouchBarButtonCls protected () extends TouchBarButton {
     * TouchBarButton
     */
   def this(options: TouchBarButtonConstructorOptions) = this()
+  /* CompleteClass */
+  override var accessibilityLabel: String = js.native
+  /* CompleteClass */
+  override var backgroundColor: String = js.native
+  /* CompleteClass */
+  override var icon: NativeImage_ = js.native
+  /* CompleteClass */
+  override var label: String = js.native
 }
 

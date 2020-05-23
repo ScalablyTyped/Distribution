@@ -24,11 +24,11 @@ object ListLogPatternSetsRequest {
   @scala.inline
   def apply(
     ResourceGroupName: ResourceGroupName,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxEntities] = js.undefined,
     NextToken: PaginationToken = null
   ): ListLogPatternSetsRequest = {
     val __obj = js.Dynamic.literal(ResourceGroupName = ResourceGroupName.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListLogPatternSetsRequest]
   }

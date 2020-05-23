@@ -54,7 +54,7 @@ object Options {
     icalEvent: String | Buffer | Readable | IcalAttachment = null,
     inReplyTo: String | Address = null,
     list: ListHeaders = null,
-    maxConnections: Int | Double = null,
+    maxConnections: js.UndefOr[Double] = js.undefined,
     messageId: String = null,
     normalizeHeaderKey: /* key */ String => String = null,
     priority: high | normal | low = null,
@@ -62,7 +62,7 @@ object Options {
     references: String | js.Array[String] = null,
     replyTo: String | Address = null,
     sender: String | Address = null,
-    sendingRate: Int | Double = null,
+    sendingRate: js.UndefOr[Double] = js.undefined,
     ses: MailSesOptions = null,
     subject: String = null,
     text: String | Buffer | Readable | AttachmentLike = null,
@@ -78,8 +78,8 @@ object Options {
     if (cc != null) __obj.updateDynamic("cc")(cc.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableFileAccess)) __obj.updateDynamic("disableFileAccess")(disableFileAccess.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableUrlAccess)) __obj.updateDynamic("disableUrlAccess")(disableUrlAccess.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableFileAccess)) __obj.updateDynamic("disableFileAccess")(disableFileAccess.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableUrlAccess)) __obj.updateDynamic("disableUrlAccess")(disableUrlAccess.get.asInstanceOf[js.Any])
     if (dkim != null) __obj.updateDynamic("dkim")(dkim.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (envelope != null) __obj.updateDynamic("envelope")(envelope.asInstanceOf[js.Any])
@@ -89,7 +89,7 @@ object Options {
     if (icalEvent != null) __obj.updateDynamic("icalEvent")(icalEvent.asInstanceOf[js.Any])
     if (inReplyTo != null) __obj.updateDynamic("inReplyTo")(inReplyTo.asInstanceOf[js.Any])
     if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
-    if (maxConnections != null) __obj.updateDynamic("maxConnections")(maxConnections.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxConnections)) __obj.updateDynamic("maxConnections")(maxConnections.get.asInstanceOf[js.Any])
     if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
     if (normalizeHeaderKey != null) __obj.updateDynamic("normalizeHeaderKey")(js.Any.fromFunction1(normalizeHeaderKey))
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
@@ -97,7 +97,7 @@ object Options {
     if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
     if (replyTo != null) __obj.updateDynamic("replyTo")(replyTo.asInstanceOf[js.Any])
     if (sender != null) __obj.updateDynamic("sender")(sender.asInstanceOf[js.Any])
-    if (sendingRate != null) __obj.updateDynamic("sendingRate")(sendingRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendingRate)) __obj.updateDynamic("sendingRate")(sendingRate.get.asInstanceOf[js.Any])
     if (ses != null) __obj.updateDynamic("ses")(ses.asInstanceOf[js.Any])
     if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])

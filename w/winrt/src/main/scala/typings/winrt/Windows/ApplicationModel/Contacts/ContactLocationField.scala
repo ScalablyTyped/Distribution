@@ -4,39 +4,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.Contacts.ContactLocationField")
-@js.native
-class ContactLocationField protected () extends IContactLocationField {
-  def this(unstructuredAddress: String) = this()
-  def this(unstructuredAddress: String, category: ContactFieldCategory) = this()
-  def this(
-    unstructuredAddress: String,
+trait ContactLocationField extends IContactLocationField
+
+object ContactLocationField {
+  @scala.inline
+  def apply(
     category: ContactFieldCategory,
-    street: String,
     city: String,
-    region: String,
     country: String,
-    postalCode: String
-  ) = this()
-  /* CompleteClass */
-  override var category: ContactFieldCategory = js.native
-  /* CompleteClass */
-  override var city: String = js.native
-  /* CompleteClass */
-  override var country: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
-  /* CompleteClass */
-  override var postalCode: String = js.native
-  /* CompleteClass */
-  override var region: String = js.native
-  /* CompleteClass */
-  override var street: String = js.native
-  /* CompleteClass */
-  override var `type`: ContactFieldType = js.native
-  /* CompleteClass */
-  override var unstructuredAddress: String = js.native
-  /* CompleteClass */
-  override var value: String = js.native
+    name: String,
+    postalCode: String,
+    region: String,
+    street: String,
+    `type`: ContactFieldType,
+    unstructuredAddress: String,
+    value: String
+  ): ContactLocationField = {
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], city = city.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], street = street.asInstanceOf[js.Any], unstructuredAddress = unstructuredAddress.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ContactLocationField]
+  }
 }
 

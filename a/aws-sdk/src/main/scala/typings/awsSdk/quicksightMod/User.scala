@@ -39,7 +39,7 @@ trait User extends js.Object {
 object User {
   @scala.inline
   def apply(
-    Active: js.UndefOr[scala.Boolean] = js.undefined,
+    Active: js.UndefOr[Boolean] = js.undefined,
     Arn: Arn = null,
     Email: String = null,
     IdentityType: IdentityType = null,
@@ -48,7 +48,7 @@ object User {
     UserName: UserName_ = null
   ): User = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Active)) __obj.updateDynamic("Active")(Active.asInstanceOf[js.Any])
+    if (!js.isUndefined(Active)) __obj.updateDynamic("Active")(Active.get.asInstanceOf[js.Any])
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
     if (Email != null) __obj.updateDynamic("Email")(Email.asInstanceOf[js.Any])
     if (IdentityType != null) __obj.updateDynamic("IdentityType")(IdentityType.asInstanceOf[js.Any])

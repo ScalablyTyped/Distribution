@@ -10,14 +10,8 @@ import scala.scalajs.js.annotation._
   * This pipeline extends TextureTintPipeline so it implements all it's rendering functions
   * and batching system.
   */
-@JSGlobal("Phaser.Renderer.WebGL.Pipelines.ForwardDiffuseLightPipeline")
 @js.native
-class ForwardDiffuseLightPipeline protected () extends TextureTintPipeline {
-  /**
-    * 
-    * @param config The configuration of the pipeline, same as the {@link Phaser.Renderer.WebGL.Pipelines.TextureTintPipeline}. The fragment shader will be replaced with the lighting shader.
-    */
-  def this(config: js.Object) = this()
+trait ForwardDiffuseLightPipeline extends TextureTintPipeline {
   /**
     * Sets the Game Objects normal map as the active texture.
     * @param gameObject The Game Object to update.

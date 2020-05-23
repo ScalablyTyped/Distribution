@@ -1,6 +1,6 @@
 package typings.sharepoint.SP.JsGrid
 
-import typings.sharepoint.AnonBottom
+import typings.sharepoint.anon.Bottom
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,7 +27,7 @@ object IEditControlCellContext {
     NotifyExpandControl: () => Unit,
     SetCurrentValue: js.Any => Unit,
     Show: HTMLElement => Unit,
-    cellExpandSpace: AnonBottom,
+    cellExpandSpace: Bottom,
     cellHeight: Double,
     cellRect: js.Any,
     cellStyle: js.Any,

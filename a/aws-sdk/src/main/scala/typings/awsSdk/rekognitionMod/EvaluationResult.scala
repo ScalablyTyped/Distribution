@@ -18,9 +18,9 @@ trait EvaluationResult extends js.Object {
 
 object EvaluationResult {
   @scala.inline
-  def apply(F1Score: Int | Double = null, Summary: Summary = null): EvaluationResult = {
+  def apply(F1Score: js.UndefOr[Float] = js.undefined, Summary: Summary = null): EvaluationResult = {
     val __obj = js.Dynamic.literal()
-    if (F1Score != null) __obj.updateDynamic("F1Score")(F1Score.asInstanceOf[js.Any])
+    if (!js.isUndefined(F1Score)) __obj.updateDynamic("F1Score")(F1Score.get.asInstanceOf[js.Any])
     if (Summary != null) __obj.updateDynamic("Summary")(Summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[EvaluationResult]
   }

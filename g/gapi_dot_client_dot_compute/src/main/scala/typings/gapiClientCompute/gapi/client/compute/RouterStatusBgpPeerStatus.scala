@@ -34,7 +34,7 @@ object RouterStatusBgpPeerStatus {
     ipAddress: String = null,
     linkedVpnTunnel: String = null,
     name: String = null,
-    numLearnedRoutes: Int | Double = null,
+    numLearnedRoutes: js.UndefOr[Double] = js.undefined,
     peerIpAddress: String = null,
     state: String = null,
     status: String = null,
@@ -46,7 +46,7 @@ object RouterStatusBgpPeerStatus {
     if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
     if (linkedVpnTunnel != null) __obj.updateDynamic("linkedVpnTunnel")(linkedVpnTunnel.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (numLearnedRoutes != null) __obj.updateDynamic("numLearnedRoutes")(numLearnedRoutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(numLearnedRoutes)) __obj.updateDynamic("numLearnedRoutes")(numLearnedRoutes.get.asInstanceOf[js.Any])
     if (peerIpAddress != null) __obj.updateDynamic("peerIpAddress")(peerIpAddress.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])

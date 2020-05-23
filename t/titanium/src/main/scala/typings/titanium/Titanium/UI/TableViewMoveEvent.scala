@@ -6,41 +6,41 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when a table row is moved by the user.
-		 */
+  * Fired when a table row is moved by the user.
+  */
 trait TableViewMoveEvent extends TableViewBaseEvent {
   /**
-  			 * Boolean to indicate if the right area was clicked. Always `false` for this event.
-  			 */
+    * Boolean to indicate if the right area was clicked. Always `false` for this event.
+    */
   var detail: Boolean
   /**
-  			 * Row index.
-  			 */
+    * Row index.
+    */
   var index: Double
   /**
-  			 * Table view row object.
-  			 */
+    * Table view row object.
+    */
   var row: TableViewRow
   /**
-  			 * Properties of the row. Use this property rather than `row` to access any custom row
-  			 * properties.
-  			 */
+    * Properties of the row. Use this property rather than `row` to access any custom row
+    * properties.
+    */
   var rowData: Dictionary[TableViewRow]
   /**
-  			 * Boolean to indicate if the table is in search mode. Always `false` for this event.
-  			 */
+    * Boolean to indicate if the table is in search mode. Always `false` for this event.
+    */
   var searchMode: Boolean
   /**
-  			 * Table view section object, if the deleted row is contained in a section.
-  			 */
+    * Table view section object, if the deleted row is contained in a section.
+    */
   var section: TableViewSection
   /**
-  			 * X coordinate of the event from the `source` view's coordinate system.
-  			 */
+    * X coordinate of the event from the `source` view's coordinate system.
+    */
   var x: Double
   /**
-  			 * Y coordinate of the event from the `source` view's coordinate system.
-  			 */
+    * Y coordinate of the event from the `source` view's coordinate system.
+    */
   var y: Double
 }
 

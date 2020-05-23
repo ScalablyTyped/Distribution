@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.spreadsheet")
 @js.native
-class spreadsheet () extends baseview {
+trait spreadsheet extends baseview {
   @JSName("$$")
   var DollarDollar: js.Any = js.native
   var comments: js.Any = js.native

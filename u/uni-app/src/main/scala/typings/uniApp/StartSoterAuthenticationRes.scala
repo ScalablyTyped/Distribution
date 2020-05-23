@@ -27,13 +27,13 @@ object StartSoterAuthenticationRes {
   @scala.inline
   def apply(
     authMode: String = null,
-    errCode: Int | Double = null,
+    errCode: js.UndefOr[Double] = js.undefined,
     errMsg: String = null,
     resultJSON: String = null
   ): StartSoterAuthenticationRes = {
     val __obj = js.Dynamic.literal()
     if (authMode != null) __obj.updateDynamic("authMode")(authMode.asInstanceOf[js.Any])
-    if (errCode != null) __obj.updateDynamic("errCode")(errCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(errCode)) __obj.updateDynamic("errCode")(errCode.get.asInstanceOf[js.Any])
     if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg.asInstanceOf[js.Any])
     if (resultJSON != null) __obj.updateDynamic("resultJSON")(resultJSON.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartSoterAuthenticationRes]

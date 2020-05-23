@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when an SSL error occurred.
-		 */
+  * Fired when an SSL error occurred.
+  */
 trait WebViewSslerrorEvent extends WebViewBaseEvent {
   /**
-  			 * SSL error code.
-  			 */
+    * SSL error code.
+    */
   var code: Double
 }
 

@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +12,18 @@ trait DeferredPermissionRequest extends js.Object {
   def deny(): Unit
 }
 
-@JSGlobal("DeferredPermissionRequest")
-@js.native
-object DeferredPermissionRequest extends Instantiable0[DeferredPermissionRequest]
+object DeferredPermissionRequest {
+  @scala.inline
+  def apply(
+    allow: () => Unit,
+    deny: () => Unit,
+    id: Double,
+    `type`: MSWebViewPermissionType,
+    uri: java.lang.String
+  ): DeferredPermissionRequest = {
+    val __obj = js.Dynamic.literal(allow = js.Any.fromFunction0(allow), deny = js.Any.fromFunction0(deny), id = id.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DeferredPermissionRequest]
+  }
+}
 

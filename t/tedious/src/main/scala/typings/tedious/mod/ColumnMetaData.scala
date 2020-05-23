@@ -32,15 +32,15 @@ object ColumnMetaData {
   def apply(
     colName: String,
     `type`: ColumnType,
-    dataLength: Int | Double = null,
-    precision: Int | Double = null,
-    scale: Int | Double = null
+    dataLength: js.UndefOr[Double] = js.undefined,
+    precision: js.UndefOr[Double] = js.undefined,
+    scale: js.UndefOr[Double] = js.undefined
   ): ColumnMetaData = {
     val __obj = js.Dynamic.literal(colName = colName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (dataLength != null) __obj.updateDynamic("dataLength")(dataLength.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataLength)) __obj.updateDynamic("dataLength")(dataLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnMetaData]
   }
 }

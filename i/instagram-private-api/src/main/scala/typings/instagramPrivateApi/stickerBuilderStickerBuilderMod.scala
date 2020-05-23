@@ -1,5 +1,20 @@
 package typings.instagramPrivateApi
 
+import typings.instagramPrivateApi.anon.PartialInstaSticker
+import typings.instagramPrivateApi.anon.PartialStickerOptionsAtta
+import typings.instagramPrivateApi.anon.PartialStickerOptionsMent
+import typings.instagramPrivateApi.anon.StickerOptionsAttachmentS
+import typings.instagramPrivateApi.anon.StickerOptionsChatSticker
+import typings.instagramPrivateApi.anon.StickerOptionsCountdownSt
+import typings.instagramPrivateApi.anon.StickerOptionsHashtagStic
+import typings.instagramPrivateApi.anon.StickerOptionsLocationSti
+import typings.instagramPrivateApi.anon.StickerOptionsMentionStic
+import typings.instagramPrivateApi.anon.StickerOptionsPollSticker
+import typings.instagramPrivateApi.anon.StickerOptionsQuestionSti
+import typings.instagramPrivateApi.anon.StickerOptionsQuizSticker
+import typings.instagramPrivateApi.anon.StickerOptionsSliderStick
+import typings.instagramPrivateApi.anon.Storystickerids
+import typings.instagramPrivateApi.anon.User
 import typings.instagramPrivateApi.stickersMod.AttachmentSticker
 import typings.instagramPrivateApi.stickersMod.ChatSticker
 import typings.instagramPrivateApi.stickersMod.CountdownSticker
@@ -30,22 +45,22 @@ object stickerBuilderStickerBuilderMod extends js.Object {
   @js.native
   object StickerBuilder extends js.Object {
     def attachment(options: StickerOptionsAttachmentS): AttachmentSticker = js.native
-    def attachmentFromMedia(mediaInfo: AnonUser): AttachmentSticker = js.native
-    def attachmentFromMedia(mediaInfo: AnonUser, additional: PartialStickerOptionsAtta): AttachmentSticker = js.native
+    def attachmentFromMedia(mediaInfo: User): AttachmentSticker = js.native
+    def attachmentFromMedia(mediaInfo: User, additional: PartialStickerOptionsAtta): AttachmentSticker = js.native
     def chat(options: StickerOptionsChatSticker): ChatSticker = js.native
     def countdown(options: StickerOptionsCountdownSt): CountdownSticker = js.native
     def hashtag(options: StickerOptionsHashtagStic): HashtagSticker = js.native
     def location(options: StickerOptionsLocationSti): LocationSticker = js.native
     def mention(options: StickerOptionsMentionStic): MentionSticker = js.native
-    def mentionReel(mediaInfo: AnonUser): MentionSticker = js.native
-    def mentionReel(mediaInfo: AnonUser, additional: PartialStickerOptionsMent): MentionSticker = js.native
+    def mentionReel(mediaInfo: User): MentionSticker = js.native
+    def mentionReel(mediaInfo: User, additional: PartialStickerOptionsMent): MentionSticker = js.native
     def poll(options: StickerOptionsPollSticker): PollSticker = js.native
     def question(options: StickerOptionsQuestionSti): QuestionSticker = js.native
     def quiz(options: StickerOptionsQuizSticker): QuizSticker = js.native
     def slider(options: StickerOptionsSliderStick): SliderSticker = js.native
   }
   
-  type StickerConfig = js.Any with AnonStorystickerids
+  type StickerConfig = js.Any with Storystickerids
   type StickerOptions[T /* <: InstaSticker */] = (Diff[T, InstaSticker]) with PartialInstaSticker
 }
 

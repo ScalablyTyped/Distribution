@@ -15,7 +15,7 @@ object UseTranslationOptions {
   def apply(i18n: i18n = null, useSuspense: js.UndefOr[Boolean] = js.undefined): UseTranslationOptions = {
     val __obj = js.Dynamic.literal()
     if (i18n != null) __obj.updateDynamic("i18n")(i18n.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSuspense)) __obj.updateDynamic("useSuspense")(useSuspense.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSuspense)) __obj.updateDynamic("useSuspense")(useSuspense.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseTranslationOptions]
   }
 }

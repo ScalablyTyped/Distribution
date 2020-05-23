@@ -2,10 +2,10 @@ package typings.vueI18n.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
-import typings.vueI18n.Fn0
-import typings.vueI18n.FnCall
-import typings.vueI18n.FnCallKeyChoiceLocaleValues
-import typings.vueI18n.FnCallValueKeyLocale
+import typings.vueI18n.anon.Fn0
+import typings.vueI18n.anon.FnCall
+import typings.vueI18n.anon.FnCallKeyChoiceLocaleValues
+import typings.vueI18n.anon.FnCallValueKeyLocale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

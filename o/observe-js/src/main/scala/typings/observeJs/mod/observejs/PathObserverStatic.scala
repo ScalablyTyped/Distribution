@@ -7,16 +7,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /*----------------------
-		PathObserver
-	----------------------*/
+  PathObserver
+  ----------------------*/
 @js.native
 trait PathObserverStatic
   extends /**
-		 * Constructor
-		 * @param receiver the target for observation
-		 * @param path specifies the paht to observe. If path === '' the receiver itself gets observed.
-		 * @param defaultValue the defaultValue
-		 */
+  * Constructor
+  * @param receiver the target for observation
+  * @param path specifies the paht to observe. If path === '' the receiver itself gets observed.
+  * @param defaultValue the defaultValue
+  */
 Instantiable2[/* receiver */ js.Any, /* path */ String, PathObserverInstance]
      with Instantiable3[
       /* receiver */ js.Any, 

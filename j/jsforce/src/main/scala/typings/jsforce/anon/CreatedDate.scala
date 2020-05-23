@@ -1,0 +1,20 @@
+package typings.jsforce.anon
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait CreatedDate extends js.Object {
+  var createdDate: js.Any
+  var `type`: js.Object
+}
+
+object CreatedDate {
+  @scala.inline
+  def apply(createdDate: js.Any, `type`: js.Object): CreatedDate = {
+    val __obj = js.Dynamic.literal(createdDate = createdDate.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CreatedDate]
+  }
+}
+

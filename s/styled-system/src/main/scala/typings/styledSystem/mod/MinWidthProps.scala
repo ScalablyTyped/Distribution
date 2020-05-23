@@ -16,9 +16,9 @@ trait MinWidthProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends
 
 object MinWidthProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](minWidth: ResponsiveValue[TVal, ThemeType] = null): MinWidthProps[ThemeType, TVal] = {
+  def apply[ThemeType, TVal](minWidth: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): MinWidthProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[MinWidthProps[ThemeType, TVal]]
   }
 }

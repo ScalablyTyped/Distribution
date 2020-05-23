@@ -22,7 +22,7 @@ trait PivotTableData extends js.Object {
   var dataHierarchies: js.UndefOr[js.Array[DataPivotHierarchyData]] = js.undefined
   /**
     *
-    * Specifies whether the PivotTable allows values in the data body to be edited by the user.
+    * Specifies if the PivotTable allows values in the data body to be edited by the user.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -43,7 +43,7 @@ trait PivotTableData extends js.Object {
   var hierarchies: js.UndefOr[js.Array[PivotHierarchyData]] = js.undefined
   /**
     *
-    * Id of the PivotTable. Read-only.
+    * Id of the PivotTable.
     *
     * [Api set: ExcelApi 1.5]
     */
@@ -64,7 +64,7 @@ trait PivotTableData extends js.Object {
   var rowHierarchies: js.UndefOr[js.Array[RowColumnPivotHierarchyData]] = js.undefined
   /**
     *
-    * Specifies whether the PivotTable uses custom lists when sorting.
+    * Specifies if the PivotTable uses custom lists when sorting.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -87,13 +87,13 @@ object PivotTableData {
     val __obj = js.Dynamic.literal()
     if (columnHierarchies != null) __obj.updateDynamic("columnHierarchies")(columnHierarchies.asInstanceOf[js.Any])
     if (dataHierarchies != null) __obj.updateDynamic("dataHierarchies")(dataHierarchies.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableDataValueEditing)) __obj.updateDynamic("enableDataValueEditing")(enableDataValueEditing.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableDataValueEditing)) __obj.updateDynamic("enableDataValueEditing")(enableDataValueEditing.get.asInstanceOf[js.Any])
     if (filterHierarchies != null) __obj.updateDynamic("filterHierarchies")(filterHierarchies.asInstanceOf[js.Any])
     if (hierarchies != null) __obj.updateDynamic("hierarchies")(hierarchies.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (rowHierarchies != null) __obj.updateDynamic("rowHierarchies")(rowHierarchies.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCustomSortLists)) __obj.updateDynamic("useCustomSortLists")(useCustomSortLists.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCustomSortLists)) __obj.updateDynamic("useCustomSortLists")(useCustomSortLists.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotTableData]
   }
 }

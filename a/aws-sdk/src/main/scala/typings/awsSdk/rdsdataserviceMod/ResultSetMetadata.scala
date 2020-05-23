@@ -18,9 +18,9 @@ trait ResultSetMetadata extends js.Object {
 
 object ResultSetMetadata {
   @scala.inline
-  def apply(columnCount: Int | Double = null, columnMetadata: Metadata = null): ResultSetMetadata = {
+  def apply(columnCount: js.UndefOr[Long] = js.undefined, columnMetadata: Metadata = null): ResultSetMetadata = {
     val __obj = js.Dynamic.literal()
-    if (columnCount != null) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnCount)) __obj.updateDynamic("columnCount")(columnCount.get.asInstanceOf[js.Any])
     if (columnMetadata != null) __obj.updateDynamic("columnMetadata")(columnMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultSetMetadata]
   }

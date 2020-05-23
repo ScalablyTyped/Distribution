@@ -14,5 +14,12 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "BatchDrawCall")
 @js.native
 class BatchDrawCall ()
-  extends typings.pixiJs.PIXI.BatchDrawCall
+  extends typings.pixiJs.PIXI.BatchDrawCall {
+  /**
+    * data for uniforms or custom webgl state
+    * @member {object} PIXI.BatchDrawCall#data
+    */
+  /* CompleteClass */
+  override var data: js.Any = js.native
+}
 

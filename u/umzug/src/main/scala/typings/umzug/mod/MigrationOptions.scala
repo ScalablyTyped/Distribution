@@ -1,7 +1,7 @@
 package typings.umzug.mod
 
 import typings.std.RegExp
-import typings.umzug.AnonDown
+import typings.umzug.anon.Down
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait MigrationOptions extends js.Object {
     * See https://github.com/sequelize/umzug/tree/master/test/fixtures
     * for examples.
     */
-  var customResolver: js.UndefOr[js.Function1[/* path */ String, AnonDown]] = js.undefined
+  var customResolver: js.UndefOr[js.Function1[/* path */ String, Down]] = js.undefined
   /*
     * The params that gets passed to the migrations.
     * Might be an array or a synchronous function which returns an array.
@@ -35,7 +35,7 @@ trait MigrationOptions extends js.Object {
 object MigrationOptions {
   @scala.inline
   def apply(
-    customResolver: /* path */ String => AnonDown = null,
+    customResolver: /* path */ String => Down = null,
     params: js.Array[_] = null,
     path: String = null,
     pattern: RegExp = null,

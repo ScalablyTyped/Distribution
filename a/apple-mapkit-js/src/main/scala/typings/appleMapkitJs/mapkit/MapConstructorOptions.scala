@@ -128,7 +128,7 @@ object MapConstructorOptions {
     overlays: js.Array[Overlay] = null,
     padding: Padding = null,
     region: CoordinateRegion = null,
-    rotation: Int | Double = null,
+    rotation: js.UndefOr[Double] = js.undefined,
     selectedAnnotation: Annotation = null,
     selectedOverlay: Overlay = null,
     showsCompass: String = null,
@@ -147,25 +147,25 @@ object MapConstructorOptions {
     if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (colorScheme != null) __obj.updateDynamic("colorScheme")(colorScheme.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRotationEnabled)) __obj.updateDynamic("isRotationEnabled")(isRotationEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(isScrollEnabled)) __obj.updateDynamic("isScrollEnabled")(isScrollEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(isZoomEnabled)) __obj.updateDynamic("isZoomEnabled")(isZoomEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRotationEnabled)) __obj.updateDynamic("isRotationEnabled")(isRotationEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isScrollEnabled)) __obj.updateDynamic("isScrollEnabled")(isScrollEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isZoomEnabled)) __obj.updateDynamic("isZoomEnabled")(isZoomEnabled.get.asInstanceOf[js.Any])
     if (mapType != null) __obj.updateDynamic("mapType")(mapType.asInstanceOf[js.Any])
     if (overlays != null) __obj.updateDynamic("overlays")(overlays.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
     if (selectedAnnotation != null) __obj.updateDynamic("selectedAnnotation")(selectedAnnotation.asInstanceOf[js.Any])
     if (selectedOverlay != null) __obj.updateDynamic("selectedOverlay")(selectedOverlay.asInstanceOf[js.Any])
     if (showsCompass != null) __obj.updateDynamic("showsCompass")(showsCompass.asInstanceOf[js.Any])
-    if (!js.isUndefined(showsMapTypeControl)) __obj.updateDynamic("showsMapTypeControl")(showsMapTypeControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(showsPointsOfInterest)) __obj.updateDynamic("showsPointsOfInterest")(showsPointsOfInterest.asInstanceOf[js.Any])
+    if (!js.isUndefined(showsMapTypeControl)) __obj.updateDynamic("showsMapTypeControl")(showsMapTypeControl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showsPointsOfInterest)) __obj.updateDynamic("showsPointsOfInterest")(showsPointsOfInterest.get.asInstanceOf[js.Any])
     if (showsScale != null) __obj.updateDynamic("showsScale")(showsScale.asInstanceOf[js.Any])
-    if (!js.isUndefined(showsUserLocation)) __obj.updateDynamic("showsUserLocation")(showsUserLocation.asInstanceOf[js.Any])
-    if (!js.isUndefined(showsUserLocationControl)) __obj.updateDynamic("showsUserLocationControl")(showsUserLocationControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(showsZoomControl)) __obj.updateDynamic("showsZoomControl")(showsZoomControl.asInstanceOf[js.Any])
+    if (!js.isUndefined(showsUserLocation)) __obj.updateDynamic("showsUserLocation")(showsUserLocation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showsUserLocationControl)) __obj.updateDynamic("showsUserLocationControl")(showsUserLocationControl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showsZoomControl)) __obj.updateDynamic("showsZoomControl")(showsZoomControl.get.asInstanceOf[js.Any])
     if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(tracksUserLocation)) __obj.updateDynamic("tracksUserLocation")(tracksUserLocation.asInstanceOf[js.Any])
+    if (!js.isUndefined(tracksUserLocation)) __obj.updateDynamic("tracksUserLocation")(tracksUserLocation.get.asInstanceOf[js.Any])
     if (visibleMapRect != null) __obj.updateDynamic("visibleMapRect")(visibleMapRect.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapConstructorOptions]
   }

@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.SHADER_DEPTH
-  * @type {number}
-  * @description Render RGBA-encoded depth value.
+  * Render RGBA-encoded depth value.
   */
 @JSImport("playcanvas", "SHADER_DEPTH")
 @js.native

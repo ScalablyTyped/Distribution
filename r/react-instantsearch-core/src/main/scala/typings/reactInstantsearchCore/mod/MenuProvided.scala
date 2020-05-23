@@ -1,6 +1,6 @@
 package typings.reactInstantsearchCore.mod
 
-import typings.reactInstantsearchCore.AnonCount
+import typings.reactInstantsearchCore.anon.Count
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait MenuProvided extends js.Object {
   var currentRefinement: String
   var isFromSearch: Boolean
-  var items: js.Array[AnonCount]
+  var items: js.Array[Count]
   def createURL(args: js.Any*): js.Any
   def refine(args: js.Any*): js.Any
   def searchForItems(args: js.Any*): js.Any
@@ -20,7 +20,7 @@ object MenuProvided {
     createURL: /* repeated */ js.Any => js.Any,
     currentRefinement: String,
     isFromSearch: Boolean,
-    items: js.Array[AnonCount],
+    items: js.Array[Count],
     refine: /* repeated */ js.Any => js.Any,
     searchForItems: /* repeated */ js.Any => js.Any
   ): MenuProvided = {

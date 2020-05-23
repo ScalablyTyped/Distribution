@@ -45,18 +45,18 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    cacheHeuristic: Int | Double = null,
+    cacheHeuristic: js.UndefOr[Double] = js.undefined,
     ignoreCargoCult: js.UndefOr[Boolean] = js.undefined,
-    immutableMinTimeToLive: Int | Double = null,
+    immutableMinTimeToLive: js.UndefOr[Double] = js.undefined,
     shared: js.UndefOr[Boolean] = js.undefined,
     trustServerDate: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (cacheHeuristic != null) __obj.updateDynamic("cacheHeuristic")(cacheHeuristic.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreCargoCult)) __obj.updateDynamic("ignoreCargoCult")(ignoreCargoCult.asInstanceOf[js.Any])
-    if (immutableMinTimeToLive != null) __obj.updateDynamic("immutableMinTimeToLive")(immutableMinTimeToLive.asInstanceOf[js.Any])
-    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared.asInstanceOf[js.Any])
-    if (!js.isUndefined(trustServerDate)) __obj.updateDynamic("trustServerDate")(trustServerDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheHeuristic)) __obj.updateDynamic("cacheHeuristic")(cacheHeuristic.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCargoCult)) __obj.updateDynamic("ignoreCargoCult")(ignoreCargoCult.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(immutableMinTimeToLive)) __obj.updateDynamic("immutableMinTimeToLive")(immutableMinTimeToLive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trustServerDate)) __obj.updateDynamic("trustServerDate")(trustServerDate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

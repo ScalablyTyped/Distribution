@@ -1,6 +1,6 @@
 package typings.evernote.mod.Types
 
-import typings.evernote.AnonAdvertiserName
+import typings.evernote.anon.AdvertiserName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("evernote", "Types.Ad")
 @js.native
 class Ad () extends js.Object {
-  def this(args: AnonAdvertiserName) = this()
+  def this(args: AdvertiserName) = this()
   var advertiserName: js.UndefOr[String] = js.native
   var destinationUrl: js.UndefOr[String] = js.native
   var displayFrequency: js.UndefOr[Double] = js.native

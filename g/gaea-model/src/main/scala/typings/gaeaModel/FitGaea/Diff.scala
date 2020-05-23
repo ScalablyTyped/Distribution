@@ -1,11 +1,11 @@
 package typings.gaeaModel.FitGaea
 
-import typings.gaeaModel.AnonBeforeName
-import typings.gaeaModel.AnonComponentInfo
-import typings.gaeaModel.AnonIndex
-import typings.gaeaModel.AnonNewIndex
-import typings.gaeaModel.AnonNewValue
-import typings.gaeaModel.AnonSourceIndex
+import typings.gaeaModel.anon.BeforeName
+import typings.gaeaModel.anon.ComponentInfo
+import typings.gaeaModel.anon.Index
+import typings.gaeaModel.anon.NewIndex
+import typings.gaeaModel.anon.NewValue
+import typings.gaeaModel.anon.SourceIndex
 import typings.gaeaModel.gaeaModelStrings.add
 import typings.gaeaModel.gaeaModelStrings.addCombo
 import typings.gaeaModel.gaeaModelStrings.addSource
@@ -21,27 +21,27 @@ import scala.scalajs.js.annotation._
 
 trait Diff extends js.Object {
   // 新增操作
-  var add: js.UndefOr[AnonIndex] = js.undefined
+  var add: js.UndefOr[Index] = js.undefined
   // 新增组合
-  var addCombo: js.UndefOr[AnonComponentInfo] = js.undefined
+  var addCombo: js.UndefOr[ComponentInfo] = js.undefined
   // 新增模板
-  var addSource: js.UndefOr[AnonComponentInfo] = js.undefined
+  var addSource: js.UndefOr[ComponentInfo] = js.undefined
   // 内部交换顺序
-  var exchange: js.UndefOr[AnonNewIndex] = js.undefined
+  var exchange: js.UndefOr[NewIndex] = js.undefined
   // 操作组件的 mapUniqueKey
   var mapUniqueKey: String
   // 移动到另一个父元素
-  var move: js.UndefOr[AnonSourceIndex] = js.undefined
+  var move: js.UndefOr[SourceIndex] = js.undefined
   // 粘贴操作
   var paste: js.UndefOr[DiffRemove] = js.undefined
   // 删除组件
   var remove: js.UndefOr[DiffRemove] = js.undefined
   // 重置组件
-  var reset: js.UndefOr[AnonBeforeName] = js.undefined
+  var reset: js.UndefOr[BeforeName] = js.undefined
   // 操作类型
   var `type`: add | move | remove | exchange | update | paste | reset | addCombo | addSource
   // 更新操作
-  var update: js.UndefOr[AnonNewValue] = js.undefined
+  var update: js.UndefOr[NewValue] = js.undefined
 }
 
 object Diff {
@@ -49,15 +49,15 @@ object Diff {
   def apply(
     mapUniqueKey: String,
     `type`: add | move | remove | exchange | update | paste | reset | addCombo | addSource,
-    add: AnonIndex = null,
-    addCombo: AnonComponentInfo = null,
-    addSource: AnonComponentInfo = null,
-    exchange: AnonNewIndex = null,
-    move: AnonSourceIndex = null,
+    add: Index = null,
+    addCombo: ComponentInfo = null,
+    addSource: ComponentInfo = null,
+    exchange: NewIndex = null,
+    move: SourceIndex = null,
     paste: DiffRemove = null,
     remove: DiffRemove = null,
-    reset: AnonBeforeName = null,
-    update: AnonNewValue = null
+    reset: BeforeName = null,
+    update: NewValue = null
   ): Diff = {
     val __obj = js.Dynamic.literal(mapUniqueKey = mapUniqueKey.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

@@ -6,11 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CallOptions
-  extends /**
-  * Additional custom call options. These can be used to pass additional
-  * data per-call to client interceptors
-  */
-/* key */ StringDictionary[js.Any] {
+  extends /* field */ StringDictionary[js.Any] {
   /**
     * The credentials that should be used to make this particular call.
     */
@@ -40,16 +36,12 @@ trait CallOptions
 object CallOptions {
   @scala.inline
   def apply(
-    StringDictionary: /**
-    * Additional custom call options. These can be used to pass additional
-    * data per-call to client interceptors
-    */
-  /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     credentials: CallCredentials = null,
     deadline: Deadline = null,
     host: String = null,
     parent: Call = null,
-    propagate_flags: Int | Double = null
+    propagate_flags: js.UndefOr[Double] = js.undefined
   ): CallOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
@@ -57,7 +49,7 @@ object CallOptions {
     if (deadline != null) __obj.updateDynamic("deadline")(deadline.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (propagate_flags != null) __obj.updateDynamic("propagate_flags")(propagate_flags.asInstanceOf[js.Any])
+    if (!js.isUndefined(propagate_flags)) __obj.updateDynamic("propagate_flags")(propagate_flags.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallOptions]
   }
 }

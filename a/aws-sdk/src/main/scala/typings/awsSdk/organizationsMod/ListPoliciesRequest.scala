@@ -22,9 +22,9 @@ trait ListPoliciesRequest extends js.Object {
 
 object ListPoliciesRequest {
   @scala.inline
-  def apply(Filter: PolicyType, MaxResults: Int | Double = null, NextToken: NextToken = null): ListPoliciesRequest = {
+  def apply(Filter: PolicyType, MaxResults: js.UndefOr[MaxResults] = js.undefined, NextToken: NextToken = null): ListPoliciesRequest = {
     val __obj = js.Dynamic.literal(Filter = Filter.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPoliciesRequest]
   }

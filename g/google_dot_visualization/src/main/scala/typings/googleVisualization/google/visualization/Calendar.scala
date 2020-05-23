@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.visualization.Calendar")
 @js.native
-class Calendar () extends ChartBaseClearable {
+trait Calendar extends ChartBaseClearable {
   def draw(data: DataTable): Unit = js.native
   def draw(data: DataTable, options: CalendarOptions): Unit = js.native
   def draw(data: DataView): Unit = js.native

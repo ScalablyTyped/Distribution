@@ -1,6 +1,6 @@
 package typings.firebaseAdmin.admin.auth
 
-import typings.firebaseAdmin.AnonEnabled
+import typings.firebaseAdmin.anon.Enabled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +33,7 @@ trait Tenant extends js.Object {
   /**
     * The email sign in provider configuration.
     */
-  var emailSignInConfig: js.UndefOr[AnonEnabled] = js.undefined
+  var emailSignInConfig: js.UndefOr[Enabled] = js.undefined
   /**
     * The tenant identifier.
     */
@@ -50,7 +50,7 @@ object Tenant {
     tenantId: String,
     toJSON: () => js.Object,
     displayName: String = null,
-    emailSignInConfig: AnonEnabled = null
+    emailSignInConfig: Enabled = null
   ): Tenant = {
     val __obj = js.Dynamic.literal(tenantId = tenantId.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])

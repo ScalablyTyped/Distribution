@@ -1,6 +1,6 @@
 package typings.graphql.definitionMod
 
-import typings.graphql.GraphQLObjectTypeConfigan
+import typings.graphql.anon.GraphQLObjectTypeConfigan
 import typings.graphql.astMod.ObjectTypeDefinitionNode
 import typings.graphql.astMod.ObjectTypeExtensionNode
 import typings.graphql.maybeMod.Maybe

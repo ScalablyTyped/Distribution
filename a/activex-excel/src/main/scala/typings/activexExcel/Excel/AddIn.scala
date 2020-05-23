@@ -4,25 +4,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.AddIn")
-@js.native
-class AddIn protected () extends js.Object {
-  val Application: typings.activexExcel.Excel.Application = js.native
-  val Author: String = js.native
-  val CLSID: String = js.native
-  val Comments: String = js.native
-  val Creator: XlCreator = js.native
+trait AddIn extends js.Object {
+  val Application: typings.activexExcel.Excel.Application
+  val Author: String
+  val CLSID: String
+  val Comments: String
+  val Creator: XlCreator
   @JSName("Excel.AddIn_typekey")
-  var ExcelDotAddIn_typekey: AddIn = js.native
-  val FullName: String = js.native
-  var Installed: Boolean = js.native
-  val IsOpen: Boolean = js.native
-  val Keywords: String = js.native
-  val Name: String = js.native
-  val Parent: js.Any = js.native
-  val Path: String = js.native
-  val Subject: String = js.native
-  val Title: String = js.native
-  val progID: String = js.native
+  var ExcelDotAddIn_typekey: AddIn
+  val FullName: String
+  var Installed: Boolean
+  val IsOpen: Boolean
+  val Keywords: String
+  val Name: String
+  val Parent: js.Any
+  val Path: String
+  val Subject: String
+  val Title: String
+  val progID: String
+}
+
+object AddIn {
+  @scala.inline
+  def apply(
+    Application: Application,
+    Author: String,
+    CLSID: String,
+    Comments: String,
+    Creator: XlCreator,
+    ExcelDotAddIn_typekey: AddIn,
+    FullName: String,
+    Installed: Boolean,
+    IsOpen: Boolean,
+    Keywords: String,
+    Name: String,
+    Parent: js.Any,
+    Path: String,
+    Subject: String,
+    Title: String,
+    progID: String
+  ): AddIn = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Author = Author.asInstanceOf[js.Any], CLSID = CLSID.asInstanceOf[js.Any], Comments = Comments.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], FullName = FullName.asInstanceOf[js.Any], Installed = Installed.asInstanceOf[js.Any], IsOpen = IsOpen.asInstanceOf[js.Any], Keywords = Keywords.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Path = Path.asInstanceOf[js.Any], Subject = Subject.asInstanceOf[js.Any], Title = Title.asInstanceOf[js.Any], progID = progID.asInstanceOf[js.Any])
+    __obj.updateDynamic("Excel.AddIn_typekey")(ExcelDotAddIn_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AddIn]
+  }
 }
 

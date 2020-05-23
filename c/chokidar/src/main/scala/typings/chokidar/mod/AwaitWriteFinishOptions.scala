@@ -17,10 +17,13 @@ trait AwaitWriteFinishOptions extends js.Object {
 
 object AwaitWriteFinishOptions {
   @scala.inline
-  def apply(pollInterval: Int | Double = null, stabilityThreshold: Int | Double = null): AwaitWriteFinishOptions = {
+  def apply(
+    pollInterval: js.UndefOr[Double] = js.undefined,
+    stabilityThreshold: js.UndefOr[Double] = js.undefined
+  ): AwaitWriteFinishOptions = {
     val __obj = js.Dynamic.literal()
-    if (pollInterval != null) __obj.updateDynamic("pollInterval")(pollInterval.asInstanceOf[js.Any])
-    if (stabilityThreshold != null) __obj.updateDynamic("stabilityThreshold")(stabilityThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(pollInterval)) __obj.updateDynamic("pollInterval")(pollInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stabilityThreshold)) __obj.updateDynamic("stabilityThreshold")(stabilityThreshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwaitWriteFinishOptions]
   }
 }

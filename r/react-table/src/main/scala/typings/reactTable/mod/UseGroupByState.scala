@@ -10,7 +10,7 @@ trait UseGroupByState[D /* <: js.Object */] extends js.Object {
 
 object UseGroupByState {
   @scala.inline
-  def apply[D /* <: js.Object */](groupBy: js.Array[IdType[D]]): UseGroupByState[D] = {
+  def apply[D](groupBy: js.Array[IdType[D]]): UseGroupByState[D] = {
     val __obj = js.Dynamic.literal(groupBy = groupBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseGroupByState[D]]
   }

@@ -27,8 +27,8 @@ object SnapshotSuite {
     visited: js.UndefOr[Boolean] = js.undefined
   ): SnapshotSuite = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], snapshots = snapshots.asInstanceOf[js.Any])
-    if (!js.isUndefined(dirty)) __obj.updateDynamic("dirty")(dirty.asInstanceOf[js.Any])
-    if (!js.isUndefined(visited)) __obj.updateDynamic("visited")(visited.asInstanceOf[js.Any])
+    if (!js.isUndefined(dirty)) __obj.updateDynamic("dirty")(dirty.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visited)) __obj.updateDynamic("visited")(visited.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotSuite]
   }
 }

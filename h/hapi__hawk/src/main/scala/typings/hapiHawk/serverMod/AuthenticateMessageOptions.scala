@@ -14,14 +14,14 @@ trait AuthenticateMessageOptions extends js.Object {
 object AuthenticateMessageOptions {
   @scala.inline
   def apply(
-    localtimeOffsetMsec: Int | Double = null,
+    localtimeOffsetMsec: js.UndefOr[Double] = js.undefined,
     nonceFunc: (/* key */ String, /* nonce */ String, /* ts */ String) => js.Promise[Unit] | Unit = null,
-    timestampSkewSec: Int | Double = null
+    timestampSkewSec: js.UndefOr[Double] = js.undefined
   ): AuthenticateMessageOptions = {
     val __obj = js.Dynamic.literal()
-    if (localtimeOffsetMsec != null) __obj.updateDynamic("localtimeOffsetMsec")(localtimeOffsetMsec.asInstanceOf[js.Any])
+    if (!js.isUndefined(localtimeOffsetMsec)) __obj.updateDynamic("localtimeOffsetMsec")(localtimeOffsetMsec.get.asInstanceOf[js.Any])
     if (nonceFunc != null) __obj.updateDynamic("nonceFunc")(js.Any.fromFunction3(nonceFunc))
-    if (timestampSkewSec != null) __obj.updateDynamic("timestampSkewSec")(timestampSkewSec.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestampSkewSec)) __obj.updateDynamic("timestampSkewSec")(timestampSkewSec.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticateMessageOptions]
   }
 }

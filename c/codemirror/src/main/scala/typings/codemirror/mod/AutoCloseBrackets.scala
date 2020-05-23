@@ -40,7 +40,7 @@ object AutoCloseBrackets {
     val __obj = js.Dynamic.literal()
     if (closeBefore != null) __obj.updateDynamic("closeBefore")(closeBefore.asInstanceOf[js.Any])
     if (explode != null) __obj.updateDynamic("explode")(explode.asInstanceOf[js.Any])
-    if (!js.isUndefined(`override`)) __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`override`)) __obj.updateDynamic("override")(`override`.get.asInstanceOf[js.Any])
     if (pairs != null) __obj.updateDynamic("pairs")(pairs.asInstanceOf[js.Any])
     if (triples != null) __obj.updateDynamic("triples")(triples.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoCloseBrackets]

@@ -1,21 +1,11 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.PartialIGlowLayerOptionsBlurKernelSize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.GlowLayer")
 @js.native
-class GlowLayer protected () extends EffectLayer {
-  /**
-    * Instantiates a new glow Layer and references it to the scene.
-    * @param name The name of the layer
-    * @param scene The scene to use the layer in
-    * @param options Sets of none mandatory options to use with the layer (see IGlowLayerOptions for more information)
-    */
-  def this(name: String, scene: Scene) = this()
-  def this(name: String, scene: Scene, options: PartialIGlowLayerOptionsBlurKernelSize) = this()
+trait GlowLayer extends EffectLayer {
   var _blurTexture1: js.Any = js.native
   var _blurTexture2: js.Any = js.native
   var _excludedMeshes: js.Any = js.native
@@ -95,31 +85,5 @@ class GlowLayer protected () extends EffectLayer {
     * @param mesh The mesh for which we need to not use its material
     */
   def unReferenceMeshFromUsingItsOwnMaterial(mesh: AbstractMesh): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.GlowLayer")
-@js.native
-object GlowLayer extends js.Object {
-  /**
-    * The default blur kernel size used for the glow.
-    */
-  var DefaultBlurKernelSize: Double = js.native
-  /**
-    * The default texture size ratio used for the glow.
-    */
-  var DefaultTextureRatio: Double = js.native
-  /**
-    * Effect Name of the layer.
-    */
-  val EffectName: String = js.native
-  /**
-    * Creates a Glow Layer from parsed glow layer data
-    * @param parsedGlowLayer defines glow layer data
-    * @param scene defines the current scene
-    * @param rootUrl defines the root URL containing the glow layer information
-    * @returns a parsed Glow Layer
-    */
-  def Parse(parsedGlowLayer: js.Any, scene: Scene, rootUrl: String): GlowLayer = js.native
 }
 

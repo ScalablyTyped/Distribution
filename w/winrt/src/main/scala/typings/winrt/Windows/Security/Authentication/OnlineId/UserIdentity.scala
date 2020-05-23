@@ -5,24 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Security.Authentication.OnlineId.UserIdentity")
-@js.native
-class UserIdentity () extends IUserIdentity {
-  /* CompleteClass */
-  override var firstName: String = js.native
-  /* CompleteClass */
-  override var id: String = js.native
-  /* CompleteClass */
-  override var isBetaAccount: Boolean = js.native
-  /* CompleteClass */
-  override var isConfirmedPC: Boolean = js.native
-  /* CompleteClass */
-  override var lastName: String = js.native
-  /* CompleteClass */
-  override var safeCustomerId: String = js.native
-  /* CompleteClass */
-  override var signInName: String = js.native
-  /* CompleteClass */
-  override var tickets: IVectorView[OnlineIdServiceTicket] = js.native
+trait UserIdentity extends IUserIdentity
+
+object UserIdentity {
+  @scala.inline
+  def apply(
+    firstName: String,
+    id: String,
+    isBetaAccount: Boolean,
+    isConfirmedPC: Boolean,
+    lastName: String,
+    safeCustomerId: String,
+    signInName: String,
+    tickets: IVectorView[OnlineIdServiceTicket]
+  ): UserIdentity = {
+    val __obj = js.Dynamic.literal(firstName = firstName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isBetaAccount = isBetaAccount.asInstanceOf[js.Any], isConfirmedPC = isConfirmedPC.asInstanceOf[js.Any], lastName = lastName.asInstanceOf[js.Any], safeCustomerId = safeCustomerId.asInstanceOf[js.Any], signInName = signInName.asInstanceOf[js.Any], tickets = tickets.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UserIdentity]
+  }
 }
 

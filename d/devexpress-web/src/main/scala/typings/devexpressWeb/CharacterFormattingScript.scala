@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,17 +30,6 @@ object CharacterFormattingScript extends js.Object {
     */
   @js.native
   sealed trait Superscript extends CharacterFormattingScript
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CharacterFormattingScript with Double] = js.native
-  /* 0 */ @js.native
-  object Normal extends TopLevel[Normal with Double]
-  
-  /* 1 */ @js.native
-  object Subscript extends TopLevel[Subscript with Double]
-  
-  /* 2 */ @js.native
-  object Superscript extends TopLevel[Superscript with Double]
   
 }
 

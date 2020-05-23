@@ -37,41 +37,41 @@ object gridOptions {
   def apply(
     aboveData: js.UndefOr[Boolean] = js.undefined,
     autoHighlight: js.UndefOr[Boolean] = js.undefined,
-    axisMargin: Int | Double = null,
+    axisMargin: js.UndefOr[Double] = js.undefined,
     backgroundColor: js.Any = null,
     borderColor: js.Any = null,
     borderWidth: js.Any = null,
     clickable: js.UndefOr[Boolean] = js.undefined,
     color: js.Any = null,
     hoverable: js.UndefOr[Boolean] = js.undefined,
-    labelMargin: Int | Double = null,
+    labelMargin: js.UndefOr[Double] = js.undefined,
     margin: js.Any = null,
     markings: js.Any = null,
     markingsColor: js.Any = null,
-    markingsLineWidth: Int | Double = null,
-    minBorderMargin: Int | Double = null,
-    mouseActiveRadius: Int | Double = null,
+    markingsLineWidth: js.UndefOr[Double] = js.undefined,
+    minBorderMargin: js.UndefOr[Double] = js.undefined,
+    mouseActiveRadius: js.UndefOr[Double] = js.undefined,
     show: js.UndefOr[Boolean] = js.undefined,
     tickColor: js.Any = null
   ): gridOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(aboveData)) __obj.updateDynamic("aboveData")(aboveData.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoHighlight)) __obj.updateDynamic("autoHighlight")(autoHighlight.asInstanceOf[js.Any])
-    if (axisMargin != null) __obj.updateDynamic("axisMargin")(axisMargin.asInstanceOf[js.Any])
+    if (!js.isUndefined(aboveData)) __obj.updateDynamic("aboveData")(aboveData.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHighlight)) __obj.updateDynamic("autoHighlight")(autoHighlight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(axisMargin)) __obj.updateDynamic("axisMargin")(axisMargin.get.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverable)) __obj.updateDynamic("hoverable")(hoverable.asInstanceOf[js.Any])
-    if (labelMargin != null) __obj.updateDynamic("labelMargin")(labelMargin.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverable)) __obj.updateDynamic("hoverable")(hoverable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelMargin)) __obj.updateDynamic("labelMargin")(labelMargin.get.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (markings != null) __obj.updateDynamic("markings")(markings.asInstanceOf[js.Any])
     if (markingsColor != null) __obj.updateDynamic("markingsColor")(markingsColor.asInstanceOf[js.Any])
-    if (markingsLineWidth != null) __obj.updateDynamic("markingsLineWidth")(markingsLineWidth.asInstanceOf[js.Any])
-    if (minBorderMargin != null) __obj.updateDynamic("minBorderMargin")(minBorderMargin.asInstanceOf[js.Any])
-    if (mouseActiveRadius != null) __obj.updateDynamic("mouseActiveRadius")(mouseActiveRadius.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (!js.isUndefined(markingsLineWidth)) __obj.updateDynamic("markingsLineWidth")(markingsLineWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minBorderMargin)) __obj.updateDynamic("minBorderMargin")(minBorderMargin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mouseActiveRadius)) __obj.updateDynamic("mouseActiveRadius")(mouseActiveRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
     if (tickColor != null) __obj.updateDynamic("tickColor")(tickColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[gridOptions]
   }

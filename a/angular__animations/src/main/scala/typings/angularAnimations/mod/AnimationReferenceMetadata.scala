@@ -24,9 +24,8 @@ object AnimationReferenceMetadata {
     `type`: AnimationMetadataType,
     options: AnimationOptions = null
   ): AnimationReferenceMetadata = {
-    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationReferenceMetadata]
   }
 }

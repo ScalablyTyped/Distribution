@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Diet, formula or nutritional supplement request
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait NutritionOrder extends DomainResource {
   /**
     * Contains extended information for property 'dateTime'.

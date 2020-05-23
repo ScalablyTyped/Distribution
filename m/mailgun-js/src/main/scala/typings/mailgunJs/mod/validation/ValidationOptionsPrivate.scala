@@ -12,7 +12,7 @@ object ValidationOptionsPrivate {
   @scala.inline
   def apply(mailbox_verification: js.UndefOr[Boolean] = js.undefined): ValidationOptionsPrivate = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(mailbox_verification)) __obj.updateDynamic("mailbox_verification")(mailbox_verification.asInstanceOf[js.Any])
+    if (!js.isUndefined(mailbox_verification)) __obj.updateDynamic("mailbox_verification")(mailbox_verification.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationOptionsPrivate]
   }
 }

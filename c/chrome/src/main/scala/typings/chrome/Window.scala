@@ -1,5 +1,6 @@
 package typings.chrome
 
+import typings.chrome.anon.Typeofchrome
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

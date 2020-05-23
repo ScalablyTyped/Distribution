@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.WorkbookData
 import typings.officeJsPreview.Excel.Interfaces.WorkbookLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.WorkbookUpdateData
@@ -8,6 +7,7 @@ import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.OfficeExtension.EventHandlers
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.Prompt
 import typings.officeJsPreview.officeJsPreviewStrings.Save
 import typings.officeJsPreview.officeJsPreviewStrings.SkipSave
@@ -22,33 +22,32 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
-@JSGlobal("Excel.Workbook")
 @js.native
-class Workbook () extends ClientObject {
+trait Workbook extends ClientObject {
   /**
     *
-    * Represents the Excel application instance that contains this workbook. Read-only.
+    * Represents the Excel application instance that contains this workbook.
     *
     * [Api set: ExcelApi 1.1]
     */
   val application: Application = js.native
   /**
     *
-    * Specifies whether or not the workbook is in autosave mode. Read-Only.
+    * Specifies if the workbook is in autosave mode.
     *
     * [Api set: ExcelApi 1.9]
     */
   val autoSave: Boolean = js.native
   /**
     *
-    * Represents a collection of bindings that are part of the workbook. Read-only.
+    * Represents a collection of bindings that are part of the workbook.
     *
     * [Api set: ExcelApi 1.1]
     */
   val bindings: BindingCollection = js.native
   /**
     *
-    * Returns a number about the version of Excel Calculation Engine. Read-Only.
+    * Returns a number about the version of Excel Calculation Engine.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -63,7 +62,7 @@ class Workbook () extends ClientObject {
   var chartDataPointTrack: Boolean = js.native
   /**
     *
-    * Represents a collection of Comments associated with the workbook. Read-only.
+    * Represents a collection of Comments associated with the workbook.
     *
     * [Api set: ExcelApi 1.10]
     */
@@ -73,28 +72,28 @@ class Workbook () extends ClientObject {
   var context_Workbook: RequestContext = js.native
   /**
     *
-    * Represents the collection of custom XML parts contained by this workbook. Read-only.
+    * Represents the collection of custom XML parts contained by this workbook.
     *
     * [Api set: ExcelApi 1.5]
     */
   val customXmlParts: CustomXmlPartCollection = js.native
   /**
     *
-    * Represents all data connections in the workbook. Read-only.
+    * Represents all data connections in the workbook.
     *
     * [Api set: ExcelApi 1.7]
     */
   val dataConnections: DataConnectionCollection = js.native
   /**
     *
-    * Represents a collection of worksheet functions that can be used for computation. Read-only.
+    * Represents a collection of worksheet functions that can be used for computation.
     *
     * [Api set: ExcelApi 1.2]
     */
   val functions: Functions = js.native
   /**
     *
-    * Specifies whether or not changes have been made since the workbook was last saved.
+    * Specifies if changes have been made since the workbook was last saved.
     You can set this property to true if you want to close a modified workbook without either saving it or being prompted to save it.
     *
     * [Api set: ExcelApi 1.9]
@@ -102,14 +101,14 @@ class Workbook () extends ClientObject {
   var isDirty: Boolean = js.native
   /**
     *
-    * Gets the workbook name. Read-only.
+    * Gets the workbook name.
     *
     * [Api set: ExcelApi 1.7]
     */
   val name: String = js.native
   /**
     *
-    * Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
+    * Represents a collection of workbook scoped named items (named ranges and constants).
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -134,91 +133,99 @@ class Workbook () extends ClientObject {
   val onSelectionChanged: EventHandlers[SelectionChangedEventArgs] = js.native
   /**
     *
-    * Represents a collection of PivotTableStyles associated with the workbook. Read-only.
+    * Represents a collection of PivotTableStyles associated with the workbook.
     *
     * [Api set: ExcelApi 1.10]
     */
   val pivotTableStyles: PivotTableStyleCollection = js.native
   /**
     *
-    * Represents a collection of PivotTables associated with the workbook. Read-only.
+    * Represents a collection of PivotTables associated with the workbook.
     *
     * [Api set: ExcelApi 1.3]
     */
   val pivotTables: PivotTableCollection = js.native
   /**
     *
-    * Specifies whether or not the workbook has ever been saved locally or online. Read-Only.
+    * Specifies if the workbook has ever been saved locally or online.
     *
     * [Api set: ExcelApi 1.9]
     */
   val previouslySaved: Boolean = js.native
   /**
     *
-    * Gets the workbook properties. Read-only.
+    * Gets the workbook properties.
     *
     * [Api set: ExcelApi 1.7]
     */
   val properties: DocumentProperties = js.native
   /**
     *
-    * Returns workbook protection object for a workbook. Read-only.
+    * Returns workbook protection object for a workbook.
     *
     * [Api set: ExcelApi 1.7]
     */
   val protection: WorkbookProtection = js.native
   /**
     *
-    * True if the workbook is open in Read-only mode. Read-only.
+    * True if the workbook is open in Read-only mode.
     *
     * [Api set: ExcelApi 1.8]
     */
   val readOnly: Boolean = js.native
   /**
     *
-    * Represents a collection of Settings associated with the workbook. Read-only.
+    * Represents a collection of Settings associated with the workbook.
     *
     * [Api set: ExcelApi 1.4]
     */
   val settings: SettingCollection = js.native
   /**
     *
-    * Represents a collection of SlicerStyles associated with the workbook. Read-only.
+    * Specifies whether the PivotTable's field list pane is shown at the workbook level.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var showPivotFieldList: Boolean = js.native
+  /**
+    *
+    * Represents a collection of SlicerStyles associated with the workbook.
     *
     * [Api set: ExcelApi 1.10]
     */
   val slicerStyles: SlicerStyleCollection = js.native
   /**
     *
-    * Represents a collection of Slicers associated with the workbook. Read-only.
+    * Represents a collection of Slicers associated with the workbook.
     *
     * [Api set: ExcelApi 1.10]
     */
   val slicers: SlicerCollection = js.native
   /**
     *
-    * Represents a collection of styles associated with the workbook. Read-only.
+    * Represents a collection of styles associated with the workbook.
     *
     * [Api set: ExcelApi 1.7]
     */
   val styles: StyleCollection = js.native
   /**
     *
-    * Represents a collection of TableStyles associated with the workbook. Read-only.
+    * Represents a collection of TableStyles associated with the workbook.
     *
     * [Api set: ExcelApi 1.10]
     */
   val tableStyles: TableStyleCollection = js.native
   /**
     *
-    * Represents a collection of tables associated with the workbook. Read-only.
+    * Represents a collection of tables associated with the workbook.
     *
     * [Api set: ExcelApi 1.1]
     */
   val tables: TableCollection = js.native
   /**
     *
-    * Represents a collection of TimelineStyles associated with the workbook. Read-only.
+    * Represents a collection of TimelineStyles associated with the workbook.
     *
     * [Api set: ExcelApi 1.10]
     */
@@ -241,7 +248,7 @@ class Workbook () extends ClientObject {
   var usePrecisionAsDisplayed: Boolean = js.native
   /**
     *
-    * Represents a collection of worksheets associated with the workbook. Read-only.
+    * Represents a collection of worksheets associated with the workbook.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -249,8 +256,7 @@ class Workbook () extends ClientObject {
   /**
     * Close current workbook.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.11]
     *
     * @param closeBehavior workbook close behavior.
     */
@@ -316,14 +322,13 @@ class Workbook () extends ClientObject {
     */
   def load(): Workbook = js.native
   def load(options: WorkbookLoadOptions): Workbook = js.native
-  def load(propertyNamesAndPaths: AnonExpand): Workbook = js.native
+  def load(propertyNamesAndPaths: Expand): Workbook = js.native
   def load(propertyNames: String): Workbook = js.native
   def load(propertyNames: js.Array[String]): Workbook = js.native
   /**
     * Save current workbook.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.11]
     *
     * @param saveBehavior workbook save behavior.
     */

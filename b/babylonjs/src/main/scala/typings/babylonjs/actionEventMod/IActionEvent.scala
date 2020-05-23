@@ -31,9 +31,8 @@ object IActionEvent {
     meshUnderPointer: Nullable[AbstractMesh] = null,
     sourceEvent: js.Any = null
   ): IActionEvent = {
-    val __obj = js.Dynamic.literal(pointerX = pointerX.asInstanceOf[js.Any], pointerY = pointerY.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(pointerX = pointerX.asInstanceOf[js.Any], pointerY = pointerY.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], meshUnderPointer = meshUnderPointer.asInstanceOf[js.Any])
     if (additionalData != null) __obj.updateDynamic("additionalData")(additionalData.asInstanceOf[js.Any])
-    if (meshUnderPointer != null) __obj.updateDynamic("meshUnderPointer")(meshUnderPointer.asInstanceOf[js.Any])
     if (sourceEvent != null) __obj.updateDynamic("sourceEvent")(sourceEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IActionEvent]
   }

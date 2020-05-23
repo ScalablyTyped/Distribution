@@ -16,15 +16,15 @@ object RangeOptions {
   @scala.inline
   def apply(
     allText: String = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    step: Int | Double = null
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
+    step: js.UndefOr[Double] = js.undefined
   ): RangeOptions = {
     val __obj = js.Dynamic.literal()
     if (allText != null) __obj.updateDynamic("allText")(allText.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeOptions]
   }
 }

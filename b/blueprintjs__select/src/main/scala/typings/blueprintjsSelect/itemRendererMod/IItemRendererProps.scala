@@ -24,10 +24,10 @@ object IItemRendererProps {
     handleClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit,
     modifiers: IItemModifiers,
     query: String,
-    index: Int | Double = null
+    index: js.UndefOr[Double] = js.undefined
   ): IItemRendererProps = {
     val __obj = js.Dynamic.literal(handleClick = js.Any.fromFunction1(handleClick), modifiers = modifiers.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IItemRendererProps]
   }
 }

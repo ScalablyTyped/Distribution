@@ -17,10 +17,10 @@ trait CompletedPart extends js.Object {
 
 object CompletedPart {
   @scala.inline
-  def apply(ETag: String = null, PartNumber: Int | Double = null): CompletedPart = {
+  def apply(ETag: String = null, PartNumber: js.UndefOr[Double] = js.undefined): CompletedPart = {
     val __obj = js.Dynamic.literal()
     if (ETag != null) __obj.updateDynamic("ETag")(ETag.asInstanceOf[js.Any])
-    if (PartNumber != null) __obj.updateDynamic("PartNumber")(PartNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(PartNumber)) __obj.updateDynamic("PartNumber")(PartNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletedPart]
   }
 }

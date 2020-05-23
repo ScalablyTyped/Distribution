@@ -1,6 +1,6 @@
 package typings.bugsnagJs.clientMod
 
-import typings.bugsnagJs.AnonName
+import typings.bugsnagJs.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ISessionPayload extends js.Object {
   var app: js.UndefOr[js.Object] = js.undefined
   var device: js.UndefOr[js.Object] = js.undefined
-  var notifier: AnonName
+  var notifier: Name
   var sessions: js.Array[ISession]
   var user: js.UndefOr[js.Object] = js.undefined
 }
@@ -16,7 +16,7 @@ trait ISessionPayload extends js.Object {
 object ISessionPayload {
   @scala.inline
   def apply(
-    notifier: AnonName,
+    notifier: Name,
     sessions: js.Array[ISession],
     app: js.Object = null,
     device: js.Object = null,

@@ -13,10 +13,15 @@ trait SparklineSeriesItemLine extends js.Object {
 
 object SparklineSeriesItemLine {
   @scala.inline
-  def apply(color: String = null, opacity: Int | Double = null, style: String = null, width: String = null): SparklineSeriesItemLine = {
+  def apply(
+    color: String = null,
+    opacity: js.UndefOr[Double] = js.undefined,
+    style: String = null,
+    width: String = null
+  ): SparklineSeriesItemLine = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparklineSeriesItemLine]

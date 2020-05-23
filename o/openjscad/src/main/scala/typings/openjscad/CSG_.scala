@@ -8,14 +8,14 @@ import typings.openjscad.CSG.Polygon
 import typings.openjscad.CSG.Polygon.Shared
 import typings.openjscad.CSG.Properties
 import typings.openjscad.CSG.Vector3D
+import typings.openjscad.anon.Class
 import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CSG")
 @js.native
-class CSG_ ()
+trait CSG_
   extends CxG
      with ICenter {
   var cachedBoundingBox: js.Array[Vector3D] = js.native
@@ -24,8 +24,6 @@ class CSG_ ()
   var polygons: js.Array[Polygon] = js.native
   var properties: Properties = js.native
   def canonicalized(): CSG = js.native
-  /* CompleteClass */
-  override def center(cAxes: js.Array[String]): CxG = js.native
   def connectTo(myConnector: Connector, otherConnector: Connector, mirror: Boolean, normalrotation: Double): CSG = js.native
   def contract(radius: Double, resolution: Double): CSG = js.native
   def cutByPlane(plane: Plane): CSG = js.native
@@ -52,7 +50,7 @@ class CSG_ ()
   def subtract(csg: js.Array[CSG]): CSG = js.native
   def subtract(csg: CSG): CSG = js.native
   def subtractSub(csg: CSG, retesselate: Boolean, canonicalize: Boolean): CSG = js.native
-  def toCompactBinary(): AnonClass = js.native
+  def toCompactBinary(): Class = js.native
   def toPointCloud(cuberadius: js.Any): CSG = js.native
   def toPolygons(): js.Array[Polygon] = js.native
   def toTriangles(): js.Array[_] = js.native

@@ -29,12 +29,12 @@ object BlockDeviceMapping {
   def apply(
     DeviceName: XmlStringMaxLen255,
     Ebs: Ebs = null,
-    NoDevice: js.UndefOr[Boolean] = js.undefined,
+    NoDevice: js.UndefOr[NoDevice] = js.undefined,
     VirtualName: XmlStringMaxLen255 = null
   ): BlockDeviceMapping = {
     val __obj = js.Dynamic.literal(DeviceName = DeviceName.asInstanceOf[js.Any])
     if (Ebs != null) __obj.updateDynamic("Ebs")(Ebs.asInstanceOf[js.Any])
-    if (!js.isUndefined(NoDevice)) __obj.updateDynamic("NoDevice")(NoDevice.asInstanceOf[js.Any])
+    if (!js.isUndefined(NoDevice)) __obj.updateDynamic("NoDevice")(NoDevice.get.asInstanceOf[js.Any])
     if (VirtualName != null) __obj.updateDynamic("VirtualName")(VirtualName.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockDeviceMapping]
   }

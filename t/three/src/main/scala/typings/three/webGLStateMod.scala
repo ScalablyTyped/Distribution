@@ -2,6 +2,7 @@ package typings.three
 
 import typings.std.ArrayBufferView
 import typings.std.WebGLRenderingContext
+import typings.three.anon.Stencil
 import typings.three.constantsMod.Blending
 import typings.three.constantsMod.BlendingDstFactor
 import typings.three.constantsMod.BlendingEquation
@@ -40,7 +41,7 @@ object webGLStateMod extends js.Object {
   @js.native
   class WebGLState protected () extends js.Object {
     def this(gl: WebGLRenderingContext, extensions: WebGLExtensions, capabilities: WebGLCapabilities) = this()
-    var buffers: AnonStencil = js.native
+    var buffers: Stencil = js.native
     def activeTexture(webglSlot: Double): Unit = js.native
     def bindTexture(webglType: Double, webglTexture: js.Any): Unit = js.native
     // Same interface as https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/compressedTexImage2D

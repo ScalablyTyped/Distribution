@@ -1,6 +1,5 @@
 package typings.heremaps.H.clustering
 
-import typings.heremaps.H.clustering.Provider.Options
 import typings.heremaps.H.geo.Rect
 import typings.heremaps.H.map.DomMarker
 import typings.heremaps.H.map.Marker
@@ -20,16 +19,8 @@ import scala.scalajs.js.annotation._
   * @property min {number} - Minimum zoom level at which provider can cluster data
   * @property max {number} - Maximum zoom level at which provider can cluster data
   */
-@JSGlobal("H.clustering.Provider")
 @js.native
-class Provider_ protected () extends EventTarget {
-  /**
-    * Constructor
-    * @param dataPoints {Array<H.clustering.DataPoint>}
-    * @param opt_options {H.clustering.Provider.Options=}
-    */
-  def this(dataPoints: js.Array[DataPoint]) = this()
-  def this(dataPoints: js.Array[DataPoint], opt_options: Options) = this()
+trait Provider_ extends EventTarget {
   var max: Double = js.native
   var min: Double = js.native
   /**

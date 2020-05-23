@@ -29,8 +29,7 @@ object Renderer {
     transitionViewportPosition: js.Object => Unit,
     layout: typings.divaJs.documentLayoutMod.default = null
   ): Renderer = {
-    val __obj = js.Dynamic.literal(adjust = js.Any.fromFunction0(adjust), destroy = js.Any.fromFunction0(destroy), getRenderedPages = js.Any.fromFunction0(getRenderedPages), goto = js.Any.fromFunction3(goto), isPageVisible = js.Any.fromFunction1(isPageVisible), load = js.Any.fromFunction3(load), transitionViewportPosition = js.Any.fromFunction1(transitionViewportPosition))
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(adjust = js.Any.fromFunction0(adjust), destroy = js.Any.fromFunction0(destroy), getRenderedPages = js.Any.fromFunction0(getRenderedPages), goto = js.Any.fromFunction3(goto), isPageVisible = js.Any.fromFunction1(isPageVisible), load = js.Any.fromFunction3(load), transitionViewportPosition = js.Any.fromFunction1(transitionViewportPosition), layout = layout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Renderer]
   }
 }

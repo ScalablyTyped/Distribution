@@ -1,11 +1,11 @@
 package typings.antd.mentionsMod
 
-import typings.antd.AnonFocused
-import typings.antd.contextMod.ConfigConsumerProps
+import typings.antd.anon.Focused
+import typings.antd.configProviderContextMod.ConfigConsumerProps
 import typings.antd.renderEmptyMod.RenderEmptyHandler
 import typings.react.mod.Component
 import typings.react.mod.FocusEventHandler
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLTextAreaElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ trait Mentions
   var onFocus: FocusEventHandler[HTMLTextAreaElement] = js.native
   var rcMentions: js.Any = js.native
   @JSName("state")
-  var state_Mentions: AnonFocused = js.native
+  var state_Mentions: Focused = js.native
   def blur(): Unit = js.native
   def focus(): Unit = js.native
   def getFilterOption(): js.Any = js.native

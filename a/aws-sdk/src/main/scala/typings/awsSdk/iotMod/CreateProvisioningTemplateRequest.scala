@@ -15,6 +15,10 @@ trait CreateProvisioningTemplateRequest extends js.Object {
     */
   var enabled: js.UndefOr[Enabled] = js.native
   /**
+    * Creates a pre-provisioning hook template.
+    */
+  var preProvisioningHook: js.UndefOr[ProvisioningHook] = js.native
+  /**
     * The role ARN for the role associated with the fleet provisioning template. This IoT role grants permission to provision a device.
     */
   var provisioningRoleArn: RoleArn = js.native
@@ -39,12 +43,14 @@ object CreateProvisioningTemplateRequest {
     templateBody: TemplateBody,
     templateName: TemplateName,
     description: TemplateDescription = null,
-    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[Enabled] = js.undefined,
+    preProvisioningHook: ProvisioningHook = null,
     tags: TagList = null
   ): CreateProvisioningTemplateRequest = {
     val __obj = js.Dynamic.literal(provisioningRoleArn = provisioningRoleArn.asInstanceOf[js.Any], templateBody = templateBody.asInstanceOf[js.Any], templateName = templateName.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (preProvisioningHook != null) __obj.updateDynamic("preProvisioningHook")(preProvisioningHook.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateProvisioningTemplateRequest]
   }

@@ -47,23 +47,23 @@ trait DescribeEventsMessage extends js.Object {
 object DescribeEventsMessage {
   @scala.inline
   def apply(
-    Duration: Int | Double = null,
+    Duration: js.UndefOr[IntegerOptional] = js.undefined,
     EndTime: TStamp = null,
     EventCategories: EventCategoriesList = null,
     Filters: FilterList = null,
     Marker: String = null,
-    MaxRecords: Int | Double = null,
+    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
     SourceIdentifier: String = null,
     SourceType: SourceType = null,
     StartTime: TStamp = null
   ): DescribeEventsMessage = {
     val __obj = js.Dynamic.literal()
-    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration.get.asInstanceOf[js.Any])
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
     if (EventCategories != null) __obj.updateDynamic("EventCategories")(EventCategories.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     if (SourceIdentifier != null) __obj.updateDynamic("SourceIdentifier")(SourceIdentifier.asInstanceOf[js.Any])
     if (SourceType != null) __obj.updateDynamic("SourceType")(SourceType.asInstanceOf[js.Any])
     if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])

@@ -20,9 +20,9 @@ object JsonBodyParserOptions {
     reviver: (/* key */ js.Any, /* value */ js.Any) => _ = null
   ): JsonBodyParserOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bodyReader)) __obj.updateDynamic("bodyReader")(bodyReader.asInstanceOf[js.Any])
-    if (!js.isUndefined(mapParams)) __obj.updateDynamic("mapParams")(mapParams.asInstanceOf[js.Any])
-    if (!js.isUndefined(overrideParams)) __obj.updateDynamic("overrideParams")(overrideParams.asInstanceOf[js.Any])
+    if (!js.isUndefined(bodyReader)) __obj.updateDynamic("bodyReader")(bodyReader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mapParams)) __obj.updateDynamic("mapParams")(mapParams.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overrideParams)) __obj.updateDynamic("overrideParams")(overrideParams.get.asInstanceOf[js.Any])
     if (reviver != null) __obj.updateDynamic("reviver")(js.Any.fromFunction2(reviver))
     __obj.asInstanceOf[JsonBodyParserOptions]
   }

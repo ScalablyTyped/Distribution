@@ -18,7 +18,7 @@ object DataSourceChangeEvent {
   def apply(
     action: String = null,
     field: String = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     items: js.Array[DataSourceItemOrGroup] = null,
     node: js.Any = null,
     sender: DataSource = null,
@@ -27,7 +27,7 @@ object DataSourceChangeEvent {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
     if (sender != null) __obj.updateDynamic("sender")(sender.asInstanceOf[js.Any])

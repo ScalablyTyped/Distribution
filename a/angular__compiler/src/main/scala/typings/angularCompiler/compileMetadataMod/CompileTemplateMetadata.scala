@@ -1,6 +1,6 @@
 package typings.angularCompiler.compileMetadataMod
 
-import typings.angularCompiler.AnonAnimations
+import typings.angularCompiler.anon.Animations
 import typings.angularCompiler.coreMod.ViewEncapsulation
 import typings.angularCompiler.mlParserParserMod.ParseTreeResult
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/src/compile_metadata", "CompileTemplateMetadata")
 @js.native
 class CompileTemplateMetadata protected () extends js.Object {
-  def this(hasEncapsulationTemplateTemplateUrlHtmlAstStylesStyleUrlsExternalStylesheetsAnimationsNgContentSelectorsInterpolationIsInlinePreserveWhitespaces: AnonAnimations) = this()
+  def this(hasEncapsulationTemplateTemplateUrlHtmlAstStylesStyleUrlsExternalStylesheetsAnimationsNgContentSelectorsInterpolationIsInlinePreserveWhitespaces: Animations) = this()
   var animations: js.Array[_] = js.native
   var encapsulation: ViewEncapsulation | Null = js.native
   var externalStylesheets: js.Array[CompileStylesheetMetadata] = js.native

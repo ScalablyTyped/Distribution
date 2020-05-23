@@ -11,10 +11,10 @@ trait PathElevationRequest extends js.Object {
 
 object PathElevationRequest {
   @scala.inline
-  def apply(path: js.Array[LatLng] = null, samples: Int | Double = null): PathElevationRequest = {
+  def apply(path: js.Array[LatLng] = null, samples: js.UndefOr[Double] = js.undefined): PathElevationRequest = {
     val __obj = js.Dynamic.literal()
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (samples != null) __obj.updateDynamic("samples")(samples.asInstanceOf[js.Any])
+    if (!js.isUndefined(samples)) __obj.updateDynamic("samples")(samples.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathElevationRequest]
   }
 }

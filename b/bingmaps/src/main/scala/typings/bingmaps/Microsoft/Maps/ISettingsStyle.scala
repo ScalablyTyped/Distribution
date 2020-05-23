@@ -16,7 +16,7 @@ object ISettingsStyle {
   def apply(landColor: String = null, shadedReliefVisible: js.UndefOr[Boolean] = js.undefined): ISettingsStyle = {
     val __obj = js.Dynamic.literal()
     if (landColor != null) __obj.updateDynamic("landColor")(landColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadedReliefVisible)) __obj.updateDynamic("shadedReliefVisible")(shadedReliefVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadedReliefVisible)) __obj.updateDynamic("shadedReliefVisible")(shadedReliefVisible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISettingsStyle]
   }
 }

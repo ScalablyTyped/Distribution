@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait ChangedConnectionInfo extends js.Object {
   /**
-  		 * Summary of details containing any connection changes.
-  		 */
+    * Summary of details containing any connection changes.
+    */
   var connection: ConnectionSummary
   /**
-  		 * Owner URI of the connection that changed.
-  		 */
+    * Owner URI of the connection that changed.
+    */
   var connectionUri: String
 }
 

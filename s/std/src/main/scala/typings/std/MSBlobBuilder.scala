@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,8 +11,4 @@ trait MSBlobBuilder extends js.Object {
   def getBlob(): Blob = js.native
   def getBlob(contentType: java.lang.String): Blob = js.native
 }
-
-@JSGlobal("MSBlobBuilder")
-@js.native
-object MSBlobBuilder extends Instantiable0[MSBlobBuilder]
 

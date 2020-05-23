@@ -28,7 +28,7 @@ object AvatarProps {
     color: String = null,
     icon: ReactElement = null,
     onClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     src: String = null,
     style: CSSProperties = null
   ): AvatarProps = {
@@ -38,7 +38,7 @@ object AvatarProps {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[AvatarProps]

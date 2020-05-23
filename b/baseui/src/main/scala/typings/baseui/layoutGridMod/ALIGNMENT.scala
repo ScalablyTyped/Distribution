@@ -25,10 +25,10 @@ object ALIGNMENT extends js.Object {
   /* "center" */ @js.native
   object center extends TopLevel[center with String]
   
-  /* "end" */ @js.native
+  /* "flex-end" */ @js.native
   object end extends TopLevel[end with String]
   
-  /* "start" */ @js.native
+  /* "flex-start" */ @js.native
   object start extends TopLevel[start with String]
   
 }

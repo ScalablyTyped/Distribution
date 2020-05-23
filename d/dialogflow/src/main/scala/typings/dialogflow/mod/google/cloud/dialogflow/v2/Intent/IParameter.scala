@@ -27,24 +27,24 @@ trait IParameter extends js.Object {
 object IParameter {
   @scala.inline
   def apply(
-    defaultValue: String = null,
-    displayName: String = null,
-    entityTypeDisplayName: String = null,
-    isList: js.UndefOr[Boolean] = js.undefined,
-    mandatory: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    prompts: js.Array[String] = null,
-    value: String = null
+    defaultValue: js.UndefOr[Null | String] = js.undefined,
+    displayName: js.UndefOr[Null | String] = js.undefined,
+    entityTypeDisplayName: js.UndefOr[Null | String] = js.undefined,
+    isList: js.UndefOr[Null | Boolean] = js.undefined,
+    mandatory: js.UndefOr[Null | Boolean] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined,
+    prompts: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    value: js.UndefOr[Null | String] = js.undefined
   ): IParameter = {
     val __obj = js.Dynamic.literal()
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (entityTypeDisplayName != null) __obj.updateDynamic("entityTypeDisplayName")(entityTypeDisplayName.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayName)) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (!js.isUndefined(entityTypeDisplayName)) __obj.updateDynamic("entityTypeDisplayName")(entityTypeDisplayName.asInstanceOf[js.Any])
     if (!js.isUndefined(isList)) __obj.updateDynamic("isList")(isList.asInstanceOf[js.Any])
     if (!js.isUndefined(mandatory)) __obj.updateDynamic("mandatory")(mandatory.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (prompts != null) __obj.updateDynamic("prompts")(prompts.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(prompts)) __obj.updateDynamic("prompts")(prompts.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IParameter]
   }
 }

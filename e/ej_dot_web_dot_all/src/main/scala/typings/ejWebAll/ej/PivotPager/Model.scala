@@ -38,21 +38,21 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    categoricalCurrentPage: Int | Double = null,
-    categoricalPageCount: Int | Double = null,
+    categoricalCurrentPage: js.UndefOr[Double] = js.undefined,
+    categoricalPageCount: js.UndefOr[Double] = js.undefined,
     locale: String = null,
     mode: Mode | String = null,
-    seriesCurrentPage: Int | Double = null,
-    seriesPageCount: Int | Double = null,
+    seriesCurrentPage: js.UndefOr[Double] = js.undefined,
+    seriesPageCount: js.UndefOr[Double] = js.undefined,
     targetControlID: String = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (categoricalCurrentPage != null) __obj.updateDynamic("categoricalCurrentPage")(categoricalCurrentPage.asInstanceOf[js.Any])
-    if (categoricalPageCount != null) __obj.updateDynamic("categoricalPageCount")(categoricalPageCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(categoricalCurrentPage)) __obj.updateDynamic("categoricalCurrentPage")(categoricalCurrentPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(categoricalPageCount)) __obj.updateDynamic("categoricalPageCount")(categoricalPageCount.get.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (seriesCurrentPage != null) __obj.updateDynamic("seriesCurrentPage")(seriesCurrentPage.asInstanceOf[js.Any])
-    if (seriesPageCount != null) __obj.updateDynamic("seriesPageCount")(seriesPageCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(seriesCurrentPage)) __obj.updateDynamic("seriesCurrentPage")(seriesCurrentPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(seriesPageCount)) __obj.updateDynamic("seriesPageCount")(seriesPageCount.get.asInstanceOf[js.Any])
     if (targetControlID != null) __obj.updateDynamic("targetControlID")(targetControlID.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }

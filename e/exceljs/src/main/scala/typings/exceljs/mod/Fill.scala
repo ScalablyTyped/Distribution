@@ -1,7 +1,7 @@
 package typings.exceljs.mod
 
-import typings.exceljs.AnonLeft
-import typings.exceljs.PartialColor
+import typings.exceljs.anon.Left
+import typings.exceljs.anon.PartialColor
 import typings.exceljs.exceljsStrings.angle
 import typings.exceljs.exceljsStrings.gradient
 import typings.exceljs.exceljsStrings.path
@@ -32,7 +32,7 @@ object Fill {
     __obj.asInstanceOf[Fill]
   }
   @scala.inline
-  def FillGradientPath(center: AnonLeft, gradient: path, stops: js.Array[GradientStop], `type`: gradient): Fill = {
+  def FillGradientPath(center: Left, gradient: path, stops: js.Array[GradientStop], `type`: gradient): Fill = {
     val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], gradient = gradient.asInstanceOf[js.Any], stops = stops.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fill]

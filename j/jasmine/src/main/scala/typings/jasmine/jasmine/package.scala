@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 package object jasmine {
   type CustomAsyncMatcherFactories = org.scalablytyped.runtime.StringDictionary[typings.jasmine.jasmine.CustomAsyncMatcherFactory]
   type CustomAsyncMatcherFactory = js.Function2[
-    /* util */ typings.jasmine.jasmine.MatchersUtil_, 
+    /* util */ typings.jasmine.jasmine.MatchersUtil, 
     /* customEqualityTesters */ js.Array[typings.jasmine.jasmine.CustomEqualityTester], 
     typings.jasmine.jasmine.CustomAsyncMatcher
   ]
   type CustomEqualityTester = js.Function2[/* first */ js.Any, /* second */ js.Any, scala.Boolean | scala.Unit]
   type CustomMatcherFactories = org.scalablytyped.runtime.StringDictionary[typings.jasmine.jasmine.CustomMatcherFactory]
   type CustomMatcherFactory = js.Function2[
-    /* util */ typings.jasmine.jasmine.MatchersUtil_, 
+    /* util */ typings.jasmine.jasmine.MatchersUtil, 
     /* customEqualityTesters */ js.Array[typings.jasmine.jasmine.CustomEqualityTester], 
     typings.jasmine.jasmine.CustomMatcher
   ]
   /* Rewritten from type alias, can be one of: 
     - T
-    - typings.jasmine.jasmine.ObjectContaining_[T]
+    - typings.jasmine.jasmine.ObjectContaining[T]
     - typings.jasmine.jasmine.AsymmetricMatcher[js.Any]
-    - typings.jasmine.jasmine.Any_
+    - typings.jasmine.jasmine.Any
     - typings.jasmine.jasmine.Spy
     - / * import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: jasmine.jasmine.ExpectedRecursive<T[K]>}
@@ -31,7 +31,7 @@ package object jasmine {
   type Expected[T] = typings.jasmine.jasmine._Expected[T] | typings.jasmine.jasmine.AsymmetricMatcher[js.Any] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: jasmine.jasmine.ExpectedRecursive<T[K]>}
     */ typings.jasmine.jasmineStrings.Expected with org.scalablytyped.runtime.TopLevel[T]) | T
-  type ExpectedRecursive[T] = T | typings.jasmine.jasmine.ObjectContaining_[T] | typings.jasmine.jasmine.AsymmetricMatcher[js.Any] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  type ExpectedRecursive[T] = T | typings.jasmine.jasmine.ObjectContaining[T] | typings.jasmine.jasmine.AsymmetricMatcher[js.Any] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jasmine.jasmine.ExpectedRecursive<T[K]> * / object | jasmine.jasmine.Any}
     */ typings.jasmine.jasmineStrings.ExpectedRecursive with org.scalablytyped.runtime.TopLevel[js.Any])
   type Func = js.Function1[/* repeated */ js.Any, js.Any]

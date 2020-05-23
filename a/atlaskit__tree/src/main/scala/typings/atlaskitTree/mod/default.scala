@@ -1,6 +1,6 @@
 package typings.atlaskitTree.mod
 
-import typings.atlaskitTree.AnonIsDragEnabled
+import typings.atlaskitTree.anon.IsDragEnabled
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,6 +15,6 @@ class default ()
 @JSImport("@atlaskit/tree", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonIsDragEnabled = js.native
+  var defaultProps: IsDragEnabled = js.native
 }
 

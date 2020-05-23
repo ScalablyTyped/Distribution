@@ -26,13 +26,13 @@ object ListBonusPaymentsRequest {
   def apply(
     AssignmentId: EntityId = null,
     HITId: EntityId = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[ResultSize] = js.undefined,
     NextToken: PaginationToken = null
   ): ListBonusPaymentsRequest = {
     val __obj = js.Dynamic.literal()
     if (AssignmentId != null) __obj.updateDynamic("AssignmentId")(AssignmentId.asInstanceOf[js.Any])
     if (HITId != null) __obj.updateDynamic("HITId")(HITId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBonusPaymentsRequest]
   }

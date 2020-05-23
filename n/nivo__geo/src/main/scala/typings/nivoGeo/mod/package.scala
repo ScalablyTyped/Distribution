@@ -11,7 +11,7 @@ package object mod {
     scala.Unit
   ]
   type ChoroplethProps = typings.nivoGeo.mod.ChoroplethCommonProps
-  type ChoroplethTooltip = typings.react.mod.FunctionComponent[typings.nivoGeo.AnonFeatureChoroplethBoundFeature]
+  type ChoroplethTooltip = typings.react.mod.FunctionComponent[typings.nivoGeo.anon.FeatureChoroplethBoundFeature]
   type DatumMatcher = js.Function1[/* repeated */ js.Any, scala.Boolean]
   type FeatureAccessor[F, T] = js.Function1[/* feature */ F, T]
   type GeoMapEventHandler = js.Function2[
@@ -20,5 +20,5 @@ package object mod {
     scala.Unit
   ]
   type GeoMapProps = typings.nivoGeo.mod.GeoMapCommonProps
-  type GeoMapTooltip = typings.react.mod.FunctionComponent[typings.nivoGeo.AnonFeature]
+  type GeoMapTooltip = typings.react.mod.FunctionComponent[typings.nivoGeo.anon.Feature]
 }

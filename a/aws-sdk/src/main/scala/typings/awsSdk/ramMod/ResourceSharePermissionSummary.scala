@@ -45,7 +45,7 @@ object ResourceSharePermissionSummary {
   def apply(
     arn: String = null,
     creationTime: DateTime = null,
-    defaultVersion: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultVersion: js.UndefOr[Boolean] = js.undefined,
     lastUpdatedTime: DateTime = null,
     name: String = null,
     resourceType: String = null,
@@ -55,7 +55,7 @@ object ResourceSharePermissionSummary {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultVersion)) __obj.updateDynamic("defaultVersion")(defaultVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultVersion)) __obj.updateDynamic("defaultVersion")(defaultVersion.get.asInstanceOf[js.Any])
     if (lastUpdatedTime != null) __obj.updateDynamic("lastUpdatedTime")(lastUpdatedTime.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])

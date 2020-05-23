@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,8 +27,4 @@ trait ColorStop
     */
   var value: Double = js.native
 }
-
-@JSGlobal("__esri.ColorStop")
-@js.native
-object ColorStop extends TopLevel[ColorStopConstructor]
 

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.FreeCameraKeyboardMoveInput")
 @js.native
-class FreeCameraKeyboardMoveInput () extends ICameraInput[FreeCamera] {
+trait FreeCameraKeyboardMoveInput extends ICameraInput[FreeCamera] {
   var _engine: js.Any = js.native
   var _keys: js.Any = js.native
   var _onCanvasBlurObserver: js.Any = js.native

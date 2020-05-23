@@ -7,19 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientComboBox.CustomHighlighting and ASPxClientListBox.CustomHighlighting events.
   */
-@JSGlobal("ASPxClientListEditCustomHighlightingEventArgs")
-@js.native
-/**
-  * Initializes a new instance of the ASPxClientListEditCustomHighlightingEventArgs class.
-  */
-class ASPxClientListEditCustomHighlightingEventArgs () extends ASPxClientEventArgs {
+trait ASPxClientListEditCustomHighlightingEventArgs extends ASPxClientEventArgs {
   /**
     * Gets a string that is a filter condition for the editor's items typed by a user.
     */
-  var filter: String = js.native
+  var filter: String
   /**
     * Specifies rules according to which the editor highlights the filtered items.
     */
-  var highlighting: js.Any = js.native
+  var highlighting: js.Any
+}
+
+object ASPxClientListEditCustomHighlightingEventArgs {
+  @scala.inline
+  def apply(filter: String, highlighting: js.Any): ASPxClientListEditCustomHighlightingEventArgs = {
+    val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], highlighting = highlighting.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientListEditCustomHighlightingEventArgs]
+  }
 }
 

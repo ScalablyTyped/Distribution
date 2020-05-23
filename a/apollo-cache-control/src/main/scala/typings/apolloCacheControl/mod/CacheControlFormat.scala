@@ -1,7 +1,7 @@
 package typings.apolloCacheControl.mod
 
+import typings.apolloCacheControl.anon.pathArraystringnumberCach
 import typings.apolloCacheControl.apolloCacheControlNumbers.`1`
-import typings.apolloCacheControl.pathArraystringnumberCach
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

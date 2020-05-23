@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * A command to convert the selected text to upper case.
   */
-@JSGlobal("MakeTextUpperCaseCommand")
-@js.native
-class MakeTextUpperCaseCommand () extends CommandWithSimpleStateBase {
+trait MakeTextUpperCaseCommand extends CommandWithSimpleStateBase {
   /**
     * Executes the MakeTextUpperCaseCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
+}
+
+object MakeTextUpperCaseCommand {
+  @scala.inline
+  def apply(execute: () => Boolean, getState: () => SimpleCommandState): MakeTextUpperCaseCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
+    __obj.asInstanceOf[MakeTextUpperCaseCommand]
+  }
 }
 

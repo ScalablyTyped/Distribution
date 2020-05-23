@@ -7,10 +7,10 @@ import typings.firebaseFirestore.documentKeyMod.DocumentKey
 import typings.firebaseFirestore.documentMod.Document
 import typings.firebaseFirestore.documentMod.MaybeDocument
 import typings.firebaseFirestore.errorMod.FirestoreError
-import typings.firebaseFirestore.modelFieldValueMod.ObjectValue
 import typings.firebaseFirestore.mutationMod.FieldMask
 import typings.firebaseFirestore.mutationMod.Mutation
 import typings.firebaseFirestore.mutationMod.MutationResult
+import typings.firebaseFirestore.objectValueMod.ObjectValue
 import typings.firebaseFirestore.pathMod.FieldPath
 import typings.firebaseFirestore.pathMod.ResourcePath
 import typings.firebaseFirestore.queryMod.Direction
@@ -29,7 +29,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/remote/serializer", "JsonProtoSerializer")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/remote/serializer", "JsonProtoSerializer")
 @js.native
 class JsonProtoSerializer protected () extends js.Object {
   def this(databaseId: DatabaseId, options: SerializerOptions) = this()
@@ -65,11 +65,11 @@ class JsonProtoSerializer protected () extends js.Object {
   var toLabel: js.Any = js.native
   var toOrder: js.Any = js.native
   var toPrecondition: js.Any = js.native
-  def encodedDatabaseId(): String = js.native
-  def fromBytes(): ByteString = js.native
+  def encodedDatabaseId: String = js.native
   /**
     * Returns a ByteString based on the proto string value.
     */
+  def fromBytes(): ByteString = js.native
   def fromBytes(value: String): ByteString = js.native
   def fromBytes(value: Uint8Array): ByteString = js.native
   def fromDirection(): js.UndefOr[Direction] = js.native
@@ -129,10 +129,6 @@ class JsonProtoSerializer protected () extends js.Object {
     state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.TargetChangeTargetChangeType */ js.Any
   ): WatchTargetChangeState = js.native
   def fromWriteResults(): js.Array[MutationResult] = js.native
-  def fromWriteResults(
-    protos: js.UndefOr[scala.Nothing],
-    commitTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Timestamp */ js.Any
-  ): js.Array[MutationResult] = js.native
   def fromWriteResults(
     protos: js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.WriteResult */ _

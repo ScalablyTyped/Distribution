@@ -15,7 +15,8 @@ object TypeFormatFlags extends js.Object {
   /* 8388608 */ val InTypeAlias: typings.typescript.mod.TypeFormatFlags.InTypeAlias with Double = js.native
   /* 1024 */ val MultilineObjectLiterals: typings.typescript.mod.TypeFormatFlags.MultilineObjectLiterals with Double = js.native
   /* 1 */ val NoTruncation: typings.typescript.mod.TypeFormatFlags.NoTruncation with Double = js.native
-  /* 277904747 */ val NodeBuilderFlagsMask: typings.typescript.mod.TypeFormatFlags.NodeBuilderFlagsMask with Double = js.native
+  /* 536870912 */ val NoTypeReduction: typings.typescript.mod.TypeFormatFlags.NoTypeReduction with Double = js.native
+  /* 814775659 */ val NodeBuilderFlagsMask: typings.typescript.mod.TypeFormatFlags.NodeBuilderFlagsMask with Double = js.native
   /* 0 */ val None: typings.typescript.mod.TypeFormatFlags.None with Double = js.native
   /* 8192 */ val OmitParameterModifiers: typings.typescript.mod.TypeFormatFlags.OmitParameterModifiers with Double = js.native
   /* 256 */ val SuppressAnyReturnType: typings.typescript.mod.TypeFormatFlags.SuppressAnyReturnType with Double = js.native

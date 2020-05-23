@@ -4,19 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.ApplicationSettings.SettingsPane")
-@js.native
-class SettingsPane () extends ISettingsPane {
-  /* CompleteClass */
-  override var oncommandsrequested: js.Any = js.native
-}
+trait SettingsPane extends ISettingsPane
 
-/* static members */
-@JSGlobal("Windows.UI.ApplicationSettings.SettingsPane")
-@js.native
-object SettingsPane extends js.Object {
-  var edge: SettingsEdgeLocation = js.native
-  def getForCurrentView(): SettingsPane = js.native
-  def show(): Unit = js.native
+object SettingsPane {
+  @scala.inline
+  def apply(oncommandsrequested: js.Any): SettingsPane = {
+    val __obj = js.Dynamic.literal(oncommandsrequested = oncommandsrequested.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SettingsPane]
+  }
 }
 

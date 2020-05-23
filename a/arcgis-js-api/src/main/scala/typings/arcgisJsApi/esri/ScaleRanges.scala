@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -63,8 +62,4 @@ trait ScaleRanges extends Accessor {
     */
   def isMinScaleEdge(scale: Unit): Boolean = js.native
 }
-
-@JSGlobal("__esri.ScaleRanges")
-@js.native
-object ScaleRanges extends TopLevel[ScaleRangesConstructor]
 

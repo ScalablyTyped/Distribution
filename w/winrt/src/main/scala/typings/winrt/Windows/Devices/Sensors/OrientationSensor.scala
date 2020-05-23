@@ -4,23 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Devices.Sensors.OrientationSensor")
-@js.native
-class OrientationSensor () extends IOrientationSensor {
-  /* CompleteClass */
-  override var minimumReportInterval: Double = js.native
-  /* CompleteClass */
-  override var onreadingchanged: js.Any = js.native
-  /* CompleteClass */
-  override var reportInterval: Double = js.native
-  /* CompleteClass */
-  override def getCurrentReading(): OrientationSensorReading = js.native
-}
+trait OrientationSensor extends IOrientationSensor
 
-/* static members */
-@JSGlobal("Windows.Devices.Sensors.OrientationSensor")
-@js.native
-object OrientationSensor extends js.Object {
-  def getDefault(): OrientationSensor = js.native
+object OrientationSensor {
+  @scala.inline
+  def apply(
+    getCurrentReading: () => OrientationSensorReading,
+    minimumReportInterval: Double,
+    onreadingchanged: js.Any,
+    reportInterval: Double
+  ): OrientationSensor = {
+    val __obj = js.Dynamic.literal(getCurrentReading = js.Any.fromFunction0(getCurrentReading), minimumReportInterval = minimumReportInterval.asInstanceOf[js.Any], onreadingchanged = onreadingchanged.asInstanceOf[js.Any], reportInterval = reportInterval.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OrientationSensor]
+  }
 }
 

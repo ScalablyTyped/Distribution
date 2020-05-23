@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.firebaseAdmin.TokenMessage
-  - typings.firebaseAdmin.TopicMessage
-  - typings.firebaseAdmin.ConditionMessage
+  - typings.firebaseAdmin.messagingMod.TokenMessage
+  - typings.firebaseAdmin.messagingMod.TopicMessage
+  - typings.firebaseAdmin.messagingMod.ConditionMessage
 */
 trait Message extends js.Object
 
@@ -16,12 +16,12 @@ object Message {
   @scala.inline
   def TokenMessage(
     token: String,
-    android: AndroidConfig = null,
-    apns: ApnsConfig = null,
+    android: typings.firebaseAdmin.messagingMod.admin.messaging.AndroidConfig = null,
+    apns: typings.firebaseAdmin.messagingMod.admin.messaging.ApnsConfig = null,
     data: StringDictionary[String] = null,
-    fcmOptions: FcmOptions = null,
-    notification: Notification = null,
-    webpush: WebpushConfig = null
+    fcmOptions: typings.firebaseAdmin.messagingMod.admin.messaging.FcmOptions = null,
+    notification: typings.firebaseAdmin.messagingMod.admin.messaging.Notification = null,
+    webpush: typings.firebaseAdmin.messagingMod.admin.messaging.WebpushConfig = null
   ): Message = {
     val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
     if (android != null) __obj.updateDynamic("android")(android.asInstanceOf[js.Any])
@@ -35,12 +35,12 @@ object Message {
   @scala.inline
   def TopicMessage(
     topic: String,
-    android: AndroidConfig = null,
-    apns: ApnsConfig = null,
+    android: typings.firebaseAdmin.messagingMod.admin.messaging.AndroidConfig = null,
+    apns: typings.firebaseAdmin.messagingMod.admin.messaging.ApnsConfig = null,
     data: StringDictionary[String] = null,
-    fcmOptions: FcmOptions = null,
-    notification: Notification = null,
-    webpush: WebpushConfig = null
+    fcmOptions: typings.firebaseAdmin.messagingMod.admin.messaging.FcmOptions = null,
+    notification: typings.firebaseAdmin.messagingMod.admin.messaging.Notification = null,
+    webpush: typings.firebaseAdmin.messagingMod.admin.messaging.WebpushConfig = null
   ): Message = {
     val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any])
     if (android != null) __obj.updateDynamic("android")(android.asInstanceOf[js.Any])
@@ -54,12 +54,12 @@ object Message {
   @scala.inline
   def ConditionMessage(
     condition: String,
-    android: AndroidConfig = null,
-    apns: ApnsConfig = null,
+    android: typings.firebaseAdmin.messagingMod.admin.messaging.AndroidConfig = null,
+    apns: typings.firebaseAdmin.messagingMod.admin.messaging.ApnsConfig = null,
     data: StringDictionary[String] = null,
-    fcmOptions: FcmOptions = null,
-    notification: Notification = null,
-    webpush: WebpushConfig = null
+    fcmOptions: typings.firebaseAdmin.messagingMod.admin.messaging.FcmOptions = null,
+    notification: typings.firebaseAdmin.messagingMod.admin.messaging.Notification = null,
+    webpush: typings.firebaseAdmin.messagingMod.admin.messaging.WebpushConfig = null
   ): Message = {
     val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any])
     if (android != null) __obj.updateDynamic("android")(android.asInstanceOf[js.Any])

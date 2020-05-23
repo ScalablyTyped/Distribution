@@ -6,13 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.View")
 @js.native
-class View protected () extends Observable_ {
-  def this(element: String) = this()
-  def this(element: Element) = this()
-  def this(element: String, options: ViewOptions) = this()
-  def this(element: Element, options: ViewOptions) = this()
+trait View extends Observable {
   var content: js.Any = js.native
   var element: JQuery = js.native
   var model: js.Object = js.native

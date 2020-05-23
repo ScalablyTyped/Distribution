@@ -1,6 +1,6 @@
 package typings.jupyterlabServices.messagesMod
 
-import typings.jupyterlabServices.AnonCursorpos
+import typings.jupyterlabServices.anon.Cursorpos
 import typings.jupyterlabServices.jupyterlabServicesStrings.inspect_request
 import typings.jupyterlabServices.jupyterlabServicesStrings.shell
 import typings.luminoCoreutils.jsonMod.JSONObject
@@ -14,14 +14,14 @@ trait IInspectRequestMsg
   extends IShellMessage[inspect_request]
      with _Message {
   @JSName("content")
-  var content_IInspectRequestMsg: AnonCursorpos
+  var content_IInspectRequestMsg: Cursorpos
 }
 
 object IInspectRequestMsg {
   @scala.inline
   def apply(
     channel: shell,
-    content: AnonCursorpos,
+    content: Cursorpos,
     header: IHeader[inspect_request],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,

@@ -1,7 +1,7 @@
 package typings.reactNativeFetchBlob.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.reactNativeFetchBlob.AnonFree
+import typings.reactNativeFetchBlob.anon.Free
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait FS extends js.Object {
   def asset(path: String): String = js.native
   def cp(path: String, dest: String): js.Promise[Boolean] = js.native
   def createFile(path: String, data: String, encoding: Encoding): js.Promise[Unit] = js.native
-  def df(): js.Promise[AnonFree] = js.native
+  def df(): js.Promise[Free] = js.native
   /**
     * Check if file exists and if it is a folder.
     * @param  path Path to check

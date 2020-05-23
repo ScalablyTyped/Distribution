@@ -32,15 +32,15 @@ object ChooserOptions {
     folderselect: js.UndefOr[Boolean] = js.undefined,
     linkType: preview | direct = null,
     multiselect: js.UndefOr[Boolean] = js.undefined,
-    sizeLimit: Int | Double = null
+    sizeLimit: js.UndefOr[Double] = js.undefined
   ): ChooserOptions = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
     if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction0(cancel))
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (!js.isUndefined(folderselect)) __obj.updateDynamic("folderselect")(folderselect.asInstanceOf[js.Any])
+    if (!js.isUndefined(folderselect)) __obj.updateDynamic("folderselect")(folderselect.get.asInstanceOf[js.Any])
     if (linkType != null) __obj.updateDynamic("linkType")(linkType.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiselect)) __obj.updateDynamic("multiselect")(multiselect.asInstanceOf[js.Any])
-    if (sizeLimit != null) __obj.updateDynamic("sizeLimit")(sizeLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiselect)) __obj.updateDynamic("multiselect")(multiselect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sizeLimit)) __obj.updateDynamic("sizeLimit")(sizeLimit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChooserOptions]
   }
 }

@@ -1,6 +1,6 @@
 package typings.securePassword.mod
 
-import typings.securePassword.AnonMemlimit
+import typings.securePassword.anon.Memlimit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("secure-password", JSImport.Namespace)
 @js.native
 class ^ () extends SecurePassword {
-  def this(opts: AnonMemlimit) = this()
+  def this(opts: Memlimit) = this()
 }
 
 @JSImport("secure-password", JSImport.Namespace)

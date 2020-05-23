@@ -21,15 +21,15 @@ object SearchBarProps {
     onClearSearch: () => Unit = null,
     onFilterLinesWithMatches: /* isFiltered */ Boolean => Unit = null,
     onSearch: /* keyword */ String => Unit = null,
-    resultsCount: Int | Double = null
+    resultsCount: js.UndefOr[Double] = js.undefined
   ): SearchBarProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(filterActive)) __obj.updateDynamic("filterActive")(filterActive.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterActive)) __obj.updateDynamic("filterActive")(filterActive.get.asInstanceOf[js.Any])
     if (onClearSearch != null) __obj.updateDynamic("onClearSearch")(js.Any.fromFunction0(onClearSearch))
     if (onFilterLinesWithMatches != null) __obj.updateDynamic("onFilterLinesWithMatches")(js.Any.fromFunction1(onFilterLinesWithMatches))
     if (onSearch != null) __obj.updateDynamic("onSearch")(js.Any.fromFunction1(onSearch))
-    if (resultsCount != null) __obj.updateDynamic("resultsCount")(resultsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(resultsCount)) __obj.updateDynamic("resultsCount")(resultsCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchBarProps]
   }
 }

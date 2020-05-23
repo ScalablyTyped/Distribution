@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PutJobTaggingRequest extends js.Object {
   /**
-    * The account ID for the Amazon Web Services account associated with the Amazon S3 batch operations job you want to replace tags on.
+    * The AWS account ID associated with the Amazon S3 Batch Operations job.
     */
   var AccountId: typings.awsSdk.s3controlMod.AccountId = js.native
   /**
-    * The ID for the job whose tags you want to replace.
+    * The ID for the Amazon S3 Batch Operations job whose tags you want to replace.
     */
   var JobId: typings.awsSdk.s3controlMod.JobId = js.native
   /**
-    * The set of tags to associate with the job.
+    * The set of tags to associate with the Amazon S3 Batch Operations job.
     */
   var Tags: S3TagSet = js.native
 }

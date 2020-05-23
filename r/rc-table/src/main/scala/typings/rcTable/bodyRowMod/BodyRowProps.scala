@@ -4,7 +4,6 @@ import typings.rcTable.interfaceMod.CustomizeComponent
 import typings.rcTable.interfaceMod.GetComponentProps
 import typings.rcTable.interfaceMod.GetRowKey
 import typings.rcTable.interfaceMod.Key
-import typings.rcTable.interfaceMod.StickyOffsets
 import typings.react.mod.CSSProperties
 import typings.react.mod.HTMLAttributes
 import typings.std.HTMLElement
@@ -26,7 +25,6 @@ trait BodyRowProps[RecordType] extends js.Object {
   var recordKey: Key
   var rowComponent: CustomizeComponent
   var rowKey: typings.react.mod.Key
-  var stickyOffsets: StickyOffsets
   var style: js.UndefOr[CSSProperties] = js.undefined
   def rowExpandable(record: RecordType): Boolean
 }
@@ -45,14 +43,13 @@ object BodyRowProps {
     rowComponent: CustomizeComponent,
     rowExpandable: RecordType => Boolean,
     rowKey: typings.react.mod.Key,
-    stickyOffsets: StickyOffsets,
     className: String = null,
-    indent: Int | Double = null,
+    indent: js.UndefOr[Double] = js.undefined,
     style: CSSProperties = null
   ): BodyRowProps[RecordType] = {
-    val __obj = js.Dynamic.literal(cellComponent = cellComponent.asInstanceOf[js.Any], childrenColumnName = childrenColumnName.asInstanceOf[js.Any], expandedKeys = expandedKeys.asInstanceOf[js.Any], getRowKey = js.Any.fromFunction2(getRowKey), index = index.asInstanceOf[js.Any], onRow = js.Any.fromFunction2(onRow), record = record.asInstanceOf[js.Any], recordKey = recordKey.asInstanceOf[js.Any], rowComponent = rowComponent.asInstanceOf[js.Any], rowExpandable = js.Any.fromFunction1(rowExpandable), rowKey = rowKey.asInstanceOf[js.Any], stickyOffsets = stickyOffsets.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cellComponent = cellComponent.asInstanceOf[js.Any], childrenColumnName = childrenColumnName.asInstanceOf[js.Any], expandedKeys = expandedKeys.asInstanceOf[js.Any], getRowKey = js.Any.fromFunction2(getRowKey), index = index.asInstanceOf[js.Any], onRow = js.Any.fromFunction2(onRow), record = record.asInstanceOf[js.Any], recordKey = recordKey.asInstanceOf[js.Any], rowComponent = rowComponent.asInstanceOf[js.Any], rowExpandable = js.Any.fromFunction1(rowExpandable), rowKey = rowKey.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
+    if (!js.isUndefined(indent)) __obj.updateDynamic("indent")(indent.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[BodyRowProps[RecordType]]
   }

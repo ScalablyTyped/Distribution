@@ -53,28 +53,28 @@ trait ICoachmarkStyles extends js.Object {
 object ICoachmarkStyles {
   @scala.inline
   def apply(
-    ariaContainer: IStyle = null,
-    childrenContainer: IStyle = null,
-    collapsed: IStyle = null,
-    entityHost: IStyle = null,
-    entityInnerHost: IStyle = null,
-    pulsingBeacon: IStyle = null,
-    root: IStyle = null,
-    rotateAnimationLayer: IStyle = null,
-    scaleAnimationLayer: IStyle = null,
-    translateAnimationContainer: IStyle = null
+    ariaContainer: js.UndefOr[Null | IStyle] = js.undefined,
+    childrenContainer: js.UndefOr[Null | IStyle] = js.undefined,
+    collapsed: js.UndefOr[Null | IStyle] = js.undefined,
+    entityHost: js.UndefOr[Null | IStyle] = js.undefined,
+    entityInnerHost: js.UndefOr[Null | IStyle] = js.undefined,
+    pulsingBeacon: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined,
+    rotateAnimationLayer: js.UndefOr[Null | IStyle] = js.undefined,
+    scaleAnimationLayer: js.UndefOr[Null | IStyle] = js.undefined,
+    translateAnimationContainer: js.UndefOr[Null | IStyle] = js.undefined
   ): ICoachmarkStyles = {
     val __obj = js.Dynamic.literal()
-    if (ariaContainer != null) __obj.updateDynamic("ariaContainer")(ariaContainer.asInstanceOf[js.Any])
-    if (childrenContainer != null) __obj.updateDynamic("childrenContainer")(childrenContainer.asInstanceOf[js.Any])
-    if (collapsed != null) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
-    if (entityHost != null) __obj.updateDynamic("entityHost")(entityHost.asInstanceOf[js.Any])
-    if (entityInnerHost != null) __obj.updateDynamic("entityInnerHost")(entityInnerHost.asInstanceOf[js.Any])
-    if (pulsingBeacon != null) __obj.updateDynamic("pulsingBeacon")(pulsingBeacon.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (rotateAnimationLayer != null) __obj.updateDynamic("rotateAnimationLayer")(rotateAnimationLayer.asInstanceOf[js.Any])
-    if (scaleAnimationLayer != null) __obj.updateDynamic("scaleAnimationLayer")(scaleAnimationLayer.asInstanceOf[js.Any])
-    if (translateAnimationContainer != null) __obj.updateDynamic("translateAnimationContainer")(translateAnimationContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(ariaContainer)) __obj.updateDynamic("ariaContainer")(ariaContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(childrenContainer)) __obj.updateDynamic("childrenContainer")(childrenContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
+    if (!js.isUndefined(entityHost)) __obj.updateDynamic("entityHost")(entityHost.asInstanceOf[js.Any])
+    if (!js.isUndefined(entityInnerHost)) __obj.updateDynamic("entityInnerHost")(entityInnerHost.asInstanceOf[js.Any])
+    if (!js.isUndefined(pulsingBeacon)) __obj.updateDynamic("pulsingBeacon")(pulsingBeacon.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotateAnimationLayer)) __obj.updateDynamic("rotateAnimationLayer")(rotateAnimationLayer.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleAnimationLayer)) __obj.updateDynamic("scaleAnimationLayer")(scaleAnimationLayer.asInstanceOf[js.Any])
+    if (!js.isUndefined(translateAnimationContainer)) __obj.updateDynamic("translateAnimationContainer")(translateAnimationContainer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICoachmarkStyles]
   }
 }

@@ -31,15 +31,15 @@ trait S3CopyObjectOperation extends js.Object {
     */
   var NewObjectTagging: js.UndefOr[S3TagSet] = js.native
   /**
-    * 
+    * The Legal Hold status to be applied to all objects in the Batch Operations job.
     */
   var ObjectLockLegalHoldStatus: js.UndefOr[S3ObjectLockLegalHoldStatus] = js.native
   /**
-    * 
+    * The Retention mode to be applied to all objects in the Batch Operations job.
     */
   var ObjectLockMode: js.UndefOr[S3ObjectLockMode] = js.native
   /**
-    * 
+    * The date when the applied Object Retention configuration will expire on all objects in the Batch Operations job.
     */
   var ObjectLockRetainUntilDate: js.UndefOr[TimeStamp] = js.native
   /**
@@ -85,7 +85,7 @@ object S3CopyObjectOperation {
     ObjectLockMode: S3ObjectLockMode = null,
     ObjectLockRetainUntilDate: TimeStamp = null,
     RedirectLocation: NonEmptyMaxLength2048String = null,
-    RequesterPays: js.UndefOr[scala.Boolean] = js.undefined,
+    RequesterPays: js.UndefOr[Boolean] = js.undefined,
     SSEAwsKmsKeyId: KmsKeyArnString = null,
     StorageClass: S3StorageClass = null,
     TargetKeyPrefix: NonEmptyMaxLength1024String = null,
@@ -103,7 +103,7 @@ object S3CopyObjectOperation {
     if (ObjectLockMode != null) __obj.updateDynamic("ObjectLockMode")(ObjectLockMode.asInstanceOf[js.Any])
     if (ObjectLockRetainUntilDate != null) __obj.updateDynamic("ObjectLockRetainUntilDate")(ObjectLockRetainUntilDate.asInstanceOf[js.Any])
     if (RedirectLocation != null) __obj.updateDynamic("RedirectLocation")(RedirectLocation.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequesterPays)) __obj.updateDynamic("RequesterPays")(RequesterPays.asInstanceOf[js.Any])
+    if (!js.isUndefined(RequesterPays)) __obj.updateDynamic("RequesterPays")(RequesterPays.get.asInstanceOf[js.Any])
     if (SSEAwsKmsKeyId != null) __obj.updateDynamic("SSEAwsKmsKeyId")(SSEAwsKmsKeyId.asInstanceOf[js.Any])
     if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])
     if (TargetKeyPrefix != null) __obj.updateDynamic("TargetKeyPrefix")(TargetKeyPrefix.asInstanceOf[js.Any])

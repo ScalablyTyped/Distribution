@@ -17,11 +17,15 @@ trait IListSelect extends js.Object {
 
 object IListSelect {
   @scala.inline
-  def apply(items: js.Array[IItem] = null, subtitle: String = null, title: String = null): IListSelect = {
+  def apply(
+    items: js.UndefOr[Null | js.Array[IItem]] = js.undefined,
+    subtitle: js.UndefOr[Null | String] = js.undefined,
+    title: js.UndefOr[Null | String] = js.undefined
+  ): IListSelect = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(items)) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (!js.isUndefined(subtitle)) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
+    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListSelect]
   }
 }

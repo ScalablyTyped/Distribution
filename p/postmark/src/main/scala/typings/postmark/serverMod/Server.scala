@@ -61,7 +61,7 @@ object Server {
     if (InboundDomain != null) __obj.updateDynamic("InboundDomain")(InboundDomain.asInstanceOf[js.Any])
     if (InboundHookUrl != null) __obj.updateDynamic("InboundHookUrl")(InboundHookUrl.asInstanceOf[js.Any])
     if (OpenHookUrl != null) __obj.updateDynamic("OpenHookUrl")(OpenHookUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(TrackOpens)) __obj.updateDynamic("TrackOpens")(TrackOpens.asInstanceOf[js.Any])
+    if (!js.isUndefined(TrackOpens)) __obj.updateDynamic("TrackOpens")(TrackOpens.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Server]
   }
 }

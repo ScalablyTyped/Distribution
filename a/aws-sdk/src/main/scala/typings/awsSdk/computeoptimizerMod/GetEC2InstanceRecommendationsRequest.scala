@@ -34,14 +34,14 @@ object GetEC2InstanceRecommendationsRequest {
     accountIds: AccountIds = null,
     filters: Filters = null,
     instanceArns: InstanceArns = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[MaxResults] = js.undefined,
     nextToken: NextToken = null
   ): GetEC2InstanceRecommendationsRequest = {
     val __obj = js.Dynamic.literal()
     if (accountIds != null) __obj.updateDynamic("accountIds")(accountIds.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     if (instanceArns != null) __obj.updateDynamic("instanceArns")(instanceArns.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEC2InstanceRecommendationsRequest]
   }

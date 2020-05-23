@@ -32,35 +32,35 @@ object GraphvizOptions {
     fade: js.UndefOr[Boolean] = js.undefined,
     fit: js.UndefOr[Boolean] = js.undefined,
     growEnteringEdges: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     keyMode: KeyMode = null,
-    scale: Int | Double = null,
-    totalMemory: Int | Double = null,
+    scale: js.UndefOr[Double] = js.undefined,
+    totalMemory: js.UndefOr[Double] = js.undefined,
     tweenPaths: js.UndefOr[Boolean] = js.undefined,
     tweenPrecision: Double | String = null,
     tweenShapes: js.UndefOr[Boolean] = js.undefined,
     useWorker: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null,
+    width: js.UndefOr[Double] = js.undefined,
     zoom: js.UndefOr[Boolean] = js.undefined,
     zoomScaleExtent: js.Tuple2[Double, Double] = null,
     zoomTranslateExtent: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = null
   ): GraphvizOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(convertEqualSidedPolygons)) __obj.updateDynamic("convertEqualSidedPolygons")(convertEqualSidedPolygons.asInstanceOf[js.Any])
+    if (!js.isUndefined(convertEqualSidedPolygons)) __obj.updateDynamic("convertEqualSidedPolygons")(convertEqualSidedPolygons.get.asInstanceOf[js.Any])
     if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
-    if (!js.isUndefined(fade)) __obj.updateDynamic("fade")(fade.asInstanceOf[js.Any])
-    if (!js.isUndefined(fit)) __obj.updateDynamic("fit")(fit.asInstanceOf[js.Any])
-    if (!js.isUndefined(growEnteringEdges)) __obj.updateDynamic("growEnteringEdges")(growEnteringEdges.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(fade)) __obj.updateDynamic("fade")(fade.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fit)) __obj.updateDynamic("fit")(fit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(growEnteringEdges)) __obj.updateDynamic("growEnteringEdges")(growEnteringEdges.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (keyMode != null) __obj.updateDynamic("keyMode")(keyMode.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (totalMemory != null) __obj.updateDynamic("totalMemory")(totalMemory.asInstanceOf[js.Any])
-    if (!js.isUndefined(tweenPaths)) __obj.updateDynamic("tweenPaths")(tweenPaths.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalMemory)) __obj.updateDynamic("totalMemory")(totalMemory.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tweenPaths)) __obj.updateDynamic("tweenPaths")(tweenPaths.get.asInstanceOf[js.Any])
     if (tweenPrecision != null) __obj.updateDynamic("tweenPrecision")(tweenPrecision.asInstanceOf[js.Any])
-    if (!js.isUndefined(tweenShapes)) __obj.updateDynamic("tweenShapes")(tweenShapes.asInstanceOf[js.Any])
-    if (!js.isUndefined(useWorker)) __obj.updateDynamic("useWorker")(useWorker.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(tweenShapes)) __obj.updateDynamic("tweenShapes")(tweenShapes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useWorker)) __obj.updateDynamic("useWorker")(useWorker.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     if (zoomScaleExtent != null) __obj.updateDynamic("zoomScaleExtent")(zoomScaleExtent.asInstanceOf[js.Any])
     if (zoomTranslateExtent != null) __obj.updateDynamic("zoomTranslateExtent")(zoomTranslateExtent.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphvizOptions]

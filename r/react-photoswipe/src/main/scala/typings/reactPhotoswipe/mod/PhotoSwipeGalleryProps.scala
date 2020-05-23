@@ -3,8 +3,8 @@ package typings.reactPhotoswipe.mod
 import typings.photoswipe.mod.Item
 import typings.photoswipe.mod.Options
 import typings.react.mod.ReactNode
-import typings.reactPhotoswipe.AnonPrevent
-import typings.reactPhotoswipe.AnonX
+import typings.reactPhotoswipe.anon.Prevent
+import typings.reactPhotoswipe.anon.X
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -51,7 +51,7 @@ trait PhotoSwipeGalleryProps extends js.Object {
       /* instance */ PhotoSwipe, 
       /* e */ MouseEvent, 
       /* isDown */ Boolean, 
-      /* preventObj */ AnonPrevent, 
+      /* preventObj */ Prevent, 
       Unit
     ]
   ] = js.undefined
@@ -60,7 +60,7 @@ trait PhotoSwipeGalleryProps extends js.Object {
     js.Function3[/* instance */ PhotoSwipe, /* e */ MouseEvent, /* item */ Item, Unit]
   ] = js.undefined
   var unbindEvents: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.undefined
-  var updateScrollOffset: js.UndefOr[js.Function2[/* instance */ PhotoSwipe, /* _offset */ AnonX, Unit]] = js.undefined
+  var updateScrollOffset: js.UndefOr[js.Function2[/* instance */ PhotoSwipe, /* _offset */ X, Unit]] = js.undefined
   /**
     * Thumbnail content
     * @default <img src={item.src} width='100' height='100'/>
@@ -90,11 +90,11 @@ object PhotoSwipeGalleryProps {
     onClose: () => Unit = null,
     options: Options = null,
     parseVerticalMargin: (/* instance */ PhotoSwipe, /* item */ Item) => Unit = null,
-    preventDragEvent: (/* instance */ PhotoSwipe, /* e */ MouseEvent, /* isDown */ Boolean, /* preventObj */ AnonPrevent) => Unit = null,
+    preventDragEvent: (/* instance */ PhotoSwipe, /* e */ MouseEvent, /* isDown */ Boolean, /* preventObj */ Prevent) => Unit = null,
     resize: /* instance */ PhotoSwipe => Unit = null,
     shareLinkClick: (/* instance */ PhotoSwipe, /* e */ MouseEvent, /* item */ Item) => Unit = null,
     unbindEvents: /* instance */ PhotoSwipe => Unit = null,
-    updateScrollOffset: (/* instance */ PhotoSwipe, /* _offset */ AnonX) => Unit = null
+    updateScrollOffset: (/* instance */ PhotoSwipe, /* _offset */ X) => Unit = null
   ): PhotoSwipeGalleryProps = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], thumbnailContent = js.Any.fromFunction1(thumbnailContent))
     if (afterChange != null) __obj.updateDynamic("afterChange")(js.Any.fromFunction1(afterChange))
@@ -109,7 +109,7 @@ object PhotoSwipeGalleryProps {
     if (initialZoomInEnd != null) __obj.updateDynamic("initialZoomInEnd")(js.Any.fromFunction1(initialZoomInEnd))
     if (initialZoomOut != null) __obj.updateDynamic("initialZoomOut")(js.Any.fromFunction1(initialZoomOut))
     if (initialZoomOutEnd != null) __obj.updateDynamic("initialZoomOutEnd")(js.Any.fromFunction1(initialZoomOutEnd))
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.get.asInstanceOf[js.Any])
     if (mouseUsed != null) __obj.updateDynamic("mouseUsed")(js.Any.fromFunction1(mouseUsed))
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])

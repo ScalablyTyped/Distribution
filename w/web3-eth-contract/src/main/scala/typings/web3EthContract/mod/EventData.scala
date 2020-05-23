@@ -1,7 +1,7 @@
 package typings.web3EthContract.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.web3EthContract.AnonData
+import typings.web3EthContract.anon.Data
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait EventData extends js.Object {
   var blockNumber: Double
   var event: String
   var logIndex: Double
-  var raw: AnonData
+  var raw: Data
   var returnValues: StringDictionary[js.Any]
   var signature: String
   var transactionHash: String
@@ -27,7 +27,7 @@ object EventData {
     blockNumber: Double,
     event: String,
     logIndex: Double,
-    raw: AnonData,
+    raw: Data,
     returnValues: StringDictionary[js.Any],
     signature: String,
     transactionHash: String,

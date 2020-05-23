@@ -38,7 +38,7 @@ object CustomTableLayout {
     vLineWidth: (/* rowIndex */ Double, /* node */ ContentTable, /* columnIndex */ Double) => js.UndefOr[Double | Null] = null
   ): CustomTableLayout = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(defaultBorder)) __obj.updateDynamic("defaultBorder")(defaultBorder.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultBorder)) __obj.updateDynamic("defaultBorder")(defaultBorder.get.asInstanceOf[js.Any])
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (hLineColor != null) __obj.updateDynamic("hLineColor")(hLineColor.asInstanceOf[js.Any])

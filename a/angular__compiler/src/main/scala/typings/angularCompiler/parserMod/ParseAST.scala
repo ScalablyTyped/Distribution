@@ -95,12 +95,19 @@ class ParseAST protected () extends js.Object {
   var sourceSpanCache: js.Any = js.native
   var tokens: js.Array[Token] = js.native
   def advance(): Unit = js.native
+  /** Whether all the parser input has been processed. */
+  def atEOF: Boolean = js.native
   def consumeOptionalCharacter(code: Double): Boolean = js.native
   def consumeOptionalOperator(op: String): Boolean = js.native
   /**
     * Returns the absolute offset of the start of the current token.
     */
   def currentAbsoluteOffset: Double = js.native
+  /**
+    * End index of the last processed token, or the start of the first token if none have been
+    * processed.
+    */
+  def currentEndIndex: Double = js.native
   def error(message: String): Unit = js.native
   def error(message: String, index: Double): Unit = js.native
   def expectCharacter(code: Double): Unit = js.native
@@ -112,6 +119,10 @@ class ParseAST protected () extends js.Object {
     * and returns the string along with its absolute source span.
     */
   def expectTemplateBindingKey(): TemplateBindingIdentifier = js.native
+  /**
+    * Index of the next token to be processed, or the end of the last token if all have been
+    * processed.
+    */
   def inputIndex: Double = js.native
   def next: Token = js.native
   def parseAccessMemberOrMethodCall(receiver: AST): AST = js.native

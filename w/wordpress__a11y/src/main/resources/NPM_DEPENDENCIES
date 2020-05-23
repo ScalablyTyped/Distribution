@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@wordpress/a11y" : "2.9.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@wordpress/a11y" : "2.9.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

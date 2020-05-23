@@ -41,14 +41,14 @@ object ScheduleKeyDeletionInput {
     KeyId: String,
     $abortSignal: AbortSignal = null,
     $httpOptions: NodeHttpOptions = null,
-    $maxRetries: Int | Double = null,
-    PendingWindowInDays: Int | Double = null
+    $maxRetries: js.UndefOr[Double] = js.undefined,
+    PendingWindowInDays: js.UndefOr[Double] = js.undefined
   ): ScheduleKeyDeletionInput = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
     if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
     if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
-    if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
-    if (PendingWindowInDays != null) __obj.updateDynamic("PendingWindowInDays")(PendingWindowInDays.asInstanceOf[js.Any])
+    if (!js.isUndefined($maxRetries)) __obj.updateDynamic("$maxRetries")($maxRetries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(PendingWindowInDays)) __obj.updateDynamic("PendingWindowInDays")(PendingWindowInDays.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduleKeyDeletionInput]
   }
 }

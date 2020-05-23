@@ -34,8 +34,8 @@ object SyslogTransportOptions {
     log: (/* info */ js.Any, /* next */ js.Function0[Unit]) => _ = null,
     logv: (/* info */ js.Any, /* next */ js.Function0[Unit]) => _ = null,
     path: String = null,
-    pid: Int | Double = null,
-    port: Int | Double = null,
+    pid: js.UndefOr[Double] = js.undefined,
+    port: js.UndefOr[Double] = js.undefined,
     protocol: String = null,
     silent: js.UndefOr[Boolean] = js.undefined,
     `type`: String = null
@@ -46,17 +46,17 @@ object SyslogTransportOptions {
     if (eol != null) __obj.updateDynamic("eol")(eol.asInstanceOf[js.Any])
     if (facility != null) __obj.updateDynamic("facility")(facility.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleExceptions)) __obj.updateDynamic("handleExceptions")(handleExceptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleExceptions)) __obj.updateDynamic("handleExceptions")(handleExceptions.get.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (localhost != null) __obj.updateDynamic("localhost")(localhost.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(js.Any.fromFunction2(log))
     if (logv != null) __obj.updateDynamic("logv")(js.Any.fromFunction2(logv))
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (pid != null) __obj.updateDynamic("pid")(pid.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(pid)) __obj.updateDynamic("pid")(pid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyslogTransportOptions]
   }

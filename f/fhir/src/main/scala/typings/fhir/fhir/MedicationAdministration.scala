@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Administration of medication to a patient
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait MedicationAdministration extends DomainResource {
   /**
     * Contains extended information for property 'effectiveDateTime'.
@@ -179,7 +179,7 @@ object MedicationAdministration {
     if (medicationReference != null) __obj.updateDynamic("medicationReference")(medicationReference.asInstanceOf[js.Any])
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (!js.isUndefined(notGiven)) __obj.updateDynamic("notGiven")(notGiven.asInstanceOf[js.Any])
+    if (!js.isUndefined(notGiven)) __obj.updateDynamic("notGiven")(notGiven.get.asInstanceOf[js.Any])
     if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
     if (partOf != null) __obj.updateDynamic("partOf")(partOf.asInstanceOf[js.Any])
     if (performer != null) __obj.updateDynamic("performer")(performer.asInstanceOf[js.Any])

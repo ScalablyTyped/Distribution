@@ -17,9 +17,9 @@ trait RouteOptions extends js.Object {
 
 object RouteOptions {
   @scala.inline
-  def apply(route: String, expire: Int | Double = null): RouteOptions = {
+  def apply(route: String, expire: js.UndefOr[Double] = js.undefined): RouteOptions = {
     val __obj = js.Dynamic.literal(route = route.asInstanceOf[js.Any])
-    if (expire != null) __obj.updateDynamic("expire")(expire.asInstanceOf[js.Any])
+    if (!js.isUndefined(expire)) __obj.updateDynamic("expire")(expire.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteOptions]
   }
 }

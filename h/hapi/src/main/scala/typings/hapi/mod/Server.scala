@@ -1,15 +1,13 @@
 package typings.hapi.mod
 
 import typings.catbox.mod.Policy
-import typings.hapi.AnonApply
-import typings.hapi.AnonApplyBoolean
-import typings.hapi.AnonApplyExtend
-import typings.hapi.AnonEventLoopDelay
-import typings.hapi.AnonExtend
-import typings.hapi.AnonMethod
-import typings.hapi.AnonRequest
-import typings.hapi.AnonTimeout
-import typings.hapi.AnonValidate
+import typings.hapi.anon.Apply
+import typings.hapi.anon.ApplyBoolean
+import typings.hapi.anon.ApplyExtend
+import typings.hapi.anon.EventLoopDelay
+import typings.hapi.anon.Extend
+import typings.hapi.anon.Timeout
+import typings.hapi.anon.Validate
 import typings.hapi.hapiStrings.handler
 import typings.hapi.hapiStrings.request
 import typings.hapi.hapiStrings.server
@@ -54,7 +52,7 @@ class Server () extends js.Object {
     * modified directly, but only through server.decorate.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverdecorations)
     */
-  val decorations: AnonRequest = js.native
+  val decorations: typings.hapi.anon.Request = js.native
   /**
     * Access: podium public interface.
     * The server events emitter. Utilizes the podium with support for event criteria validation, channels, and filters.
@@ -96,7 +94,7 @@ class Server () extends js.Object {
     * * rss - RSS memory usage.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverload)
     */
-  val load: AnonEventLoopDelay = js.native
+  val load: EventLoopDelay = js.native
   /**
     * Server methods are functions registered with the server and used throughout the application as a common utility.
     * Their advantage is in the ability to configure them to use the built-in cache and share across multiple request
@@ -232,13 +230,13 @@ class Server () extends js.Object {
   @JSName("decorate")
   def decorate_handler(`type`: handler, property: DecorateName, method: HandlerDecorationMethod): Unit = js.native
   @JSName("decorate")
-  def decorate_handler(`type`: handler, property: DecorateName, method: HandlerDecorationMethod, options: AnonApply): Unit = js.native
+  def decorate_handler(`type`: handler, property: DecorateName, method: HandlerDecorationMethod, options: Apply): Unit = js.native
   @JSName("decorate")
   def decorate_request(
     `type`: request,
     property: DecorateName,
     method: js.Function1[/* request */ Request, DecorationMethod[Request]],
-    options: AnonApplyExtend
+    options: ApplyExtend
   ): Unit = js.native
   @JSName("decorate")
   def decorate_request(
@@ -248,23 +246,23 @@ class Server () extends js.Object {
       /* existing */ js.Function1[/* repeated */ js.Any, _], 
       js.Function1[/* request */ Request, DecorationMethod[Request]]
     ],
-    options: AnonExtend
+    options: Extend
   ): Unit = js.native
   @JSName("decorate")
   def decorate_request(`type`: request, property: DecorateName, method: DecorationMethod[Request]): Unit = js.native
   @JSName("decorate")
-  def decorate_request(`type`: request, property: DecorateName, method: DecorationMethod[Request], options: AnonApply): Unit = js.native
+  def decorate_request(`type`: request, property: DecorateName, method: DecorationMethod[Request], options: Apply): Unit = js.native
   @JSName("decorate")
   def decorate_server(
     `type`: server,
     property: DecorateName,
     method: js.Function1[/* existing */ js.Function1[/* repeated */ js.Any, _], DecorationMethod[this.type]],
-    options: AnonApplyBoolean
+    options: ApplyBoolean
   ): Unit = js.native
   @JSName("decorate")
   def decorate_server(`type`: server, property: DecorateName, method: DecorationMethod[Server]): Unit = js.native
   @JSName("decorate")
-  def decorate_server(`type`: server, property: DecorateName, method: DecorationMethod[Server], options: AnonApply): Unit = js.native
+  def decorate_server(`type`: server, property: DecorateName, method: DecorationMethod[Server], options: Apply): Unit = js.native
   @JSName("decorate")
   def decorate_toolkit(
     `type`: toolkit,
@@ -273,17 +271,12 @@ class Server () extends js.Object {
       /* existing */ js.Function1[/* repeated */ js.Any, _], 
       DecorationMethod[ResponseToolkit]
     ],
-    options: AnonApplyBoolean
+    options: ApplyBoolean
   ): Unit = js.native
   @JSName("decorate")
   def decorate_toolkit(`type`: toolkit, property: DecorateName, method: DecorationMethod[ResponseToolkit]): Unit = js.native
   @JSName("decorate")
-  def decorate_toolkit(
-    `type`: toolkit,
-    property: DecorateName,
-    method: DecorationMethod[ResponseToolkit],
-    options: AnonApply
-  ): Unit = js.native
+  def decorate_toolkit(`type`: toolkit, property: DecorateName, method: DecorationMethod[ResponseToolkit], options: Apply): Unit = js.native
   /**
     * Used within a plugin to declare a required dependency on other plugins where:
     * @param dependencies - plugins which must be registered in order for this plugin to operate. Plugins listed must be registered before the server is
@@ -584,10 +577,10 @@ class Server () extends js.Object {
     * @return void
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverrulesprocessor-options)
     */
-  def rules(processor: js.Function2[/* rules */ js.Object, /* info */ AnonMethod, js.Object]): Unit = js.native
+  def rules(processor: js.Function2[/* rules */ js.Object, /* info */ typings.hapi.anon.Method, js.Object]): Unit = js.native
   def rules(
-    processor: js.Function2[/* rules */ js.Object, /* info */ AnonMethod, js.Object],
-    options: AnonValidate
+    processor: js.Function2[/* rules */ js.Object, /* info */ typings.hapi.anon.Method, js.Object],
+    options: Validate
   ): Unit = js.native
    // TODO needs implementation
   /**
@@ -618,7 +611,7 @@ class Server () extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-await-serverstopoptions)
     */
   def stop(): js.Promise[Unit] = js.native
-  def stop(options: AnonTimeout): js.Promise[Unit] = js.native
+  def stop(options: Timeout): js.Promise[Unit] = js.native
   /**
     * Returns a copy of the routing table where:
     * @param host - (optional) host to filter routes matching a specific virtual host. Defaults to all virtual hosts.

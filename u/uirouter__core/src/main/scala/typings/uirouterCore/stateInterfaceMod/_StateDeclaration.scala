@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.uirouterCore.stateInterfaceMod.StateDeclaration
-  - typings.uirouterCore.AnonInstantiableStateDeclaration
+  - typings.uirouterCore.anon.InstantiableStateDeclaration
 */
 trait _StateDeclaration extends js.Object
 

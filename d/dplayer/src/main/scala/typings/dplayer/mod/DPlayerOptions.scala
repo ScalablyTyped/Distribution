@@ -31,7 +31,7 @@ trait DPlayerOptions
 object DPlayerOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     apiBackend: DPlayerAPIBackend = null,
     autoplay: js.UndefOr[Boolean] = js.undefined,
     container: HTMLElement = null,
@@ -49,28 +49,27 @@ object DPlayerOptions {
     subtitle: DPlayerSubTitle = null,
     theme: String = null,
     video: DPlayerVideo = null,
-    volume: Int | Double = null
+    volume: js.UndefOr[Double] = js.undefined
   ): DPlayerOptions = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (apiBackend != null) __obj.updateDynamic("apiBackend")(apiBackend.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.get.asInstanceOf[js.Any])
     if (contextmenu != null) __obj.updateDynamic("contextmenu")(contextmenu.asInstanceOf[js.Any])
     if (danmaku != null) __obj.updateDynamic("danmaku")(danmaku.asInstanceOf[js.Any])
     if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
-    if (!js.isUndefined(hotkey)) __obj.updateDynamic("hotkey")(hotkey.asInstanceOf[js.Any])
+    if (!js.isUndefined(hotkey)) __obj.updateDynamic("hotkey")(hotkey.get.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (!js.isUndefined(live)) __obj.updateDynamic("live")(live.asInstanceOf[js.Any])
+    if (!js.isUndefined(live)) __obj.updateDynamic("live")(live.get.asInstanceOf[js.Any])
     if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (!js.isUndefined(mutex)) __obj.updateDynamic("mutex")(mutex.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mutex)) __obj.updateDynamic("mutex")(mutex.get.asInstanceOf[js.Any])
     if (preload != null) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
-    if (!js.isUndefined(screenshot)) __obj.updateDynamic("screenshot")(screenshot.asInstanceOf[js.Any])
+    if (!js.isUndefined(screenshot)) __obj.updateDynamic("screenshot")(screenshot.get.asInstanceOf[js.Any])
     if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
-    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
+    if (!js.isUndefined(volume)) __obj.updateDynamic("volume")(volume.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DPlayerOptions]
   }
 }

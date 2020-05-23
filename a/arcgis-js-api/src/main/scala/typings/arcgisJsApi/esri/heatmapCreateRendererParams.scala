@@ -95,23 +95,23 @@ object heatmapCreateRendererParams {
     propertyIsEnumerable: PropertyKey => Boolean,
     view: MapView,
     basemap: String | Basemap = null,
-    blurRadius: Int | Double = null,
+    blurRadius: js.UndefOr[Double] = js.undefined,
     fadeToTransparent: js.UndefOr[Boolean] = js.undefined,
     field: String = null,
     heatmapScheme: HeatmapScheme = null,
-    maxRatio: Int | Double = null,
-    minRatio: Int | Double = null,
+    maxRatio: js.UndefOr[Double] = js.undefined,
+    minRatio: js.UndefOr[Double] = js.undefined,
     signal: AbortSignal = null,
     statistics: HeatmapStatisticsResult = null
   ): heatmapCreateRendererParams = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), view = view.asInstanceOf[js.Any])
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
-    if (blurRadius != null) __obj.updateDynamic("blurRadius")(blurRadius.asInstanceOf[js.Any])
-    if (!js.isUndefined(fadeToTransparent)) __obj.updateDynamic("fadeToTransparent")(fadeToTransparent.asInstanceOf[js.Any])
+    if (!js.isUndefined(blurRadius)) __obj.updateDynamic("blurRadius")(blurRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fadeToTransparent)) __obj.updateDynamic("fadeToTransparent")(fadeToTransparent.get.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (heatmapScheme != null) __obj.updateDynamic("heatmapScheme")(heatmapScheme.asInstanceOf[js.Any])
-    if (maxRatio != null) __obj.updateDynamic("maxRatio")(maxRatio.asInstanceOf[js.Any])
-    if (minRatio != null) __obj.updateDynamic("minRatio")(minRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRatio)) __obj.updateDynamic("maxRatio")(maxRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minRatio)) __obj.updateDynamic("minRatio")(minRatio.get.asInstanceOf[js.Any])
     if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])
     __obj.asInstanceOf[heatmapCreateRendererParams]

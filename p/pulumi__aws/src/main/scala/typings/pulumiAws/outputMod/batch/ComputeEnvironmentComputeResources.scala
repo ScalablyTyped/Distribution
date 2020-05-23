@@ -80,8 +80,8 @@ object ComputeEnvironmentComputeResources {
     subnets: js.Array[String],
     `type`: String,
     allocationStrategy: String = null,
-    bidPercentage: Int | Double = null,
-    desiredVcpus: Int | Double = null,
+    bidPercentage: js.UndefOr[Double] = js.undefined,
+    desiredVcpus: js.UndefOr[Double] = js.undefined,
     ec2KeyPair: String = null,
     imageId: String = null,
     launchTemplate: ComputeEnvironmentComputeResourcesLaunchTemplate = null,
@@ -91,8 +91,8 @@ object ComputeEnvironmentComputeResources {
     val __obj = js.Dynamic.literal(instanceRole = instanceRole.asInstanceOf[js.Any], instanceTypes = instanceTypes.asInstanceOf[js.Any], maxVcpus = maxVcpus.asInstanceOf[js.Any], minVcpus = minVcpus.asInstanceOf[js.Any], securityGroupIds = securityGroupIds.asInstanceOf[js.Any], subnets = subnets.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (allocationStrategy != null) __obj.updateDynamic("allocationStrategy")(allocationStrategy.asInstanceOf[js.Any])
-    if (bidPercentage != null) __obj.updateDynamic("bidPercentage")(bidPercentage.asInstanceOf[js.Any])
-    if (desiredVcpus != null) __obj.updateDynamic("desiredVcpus")(desiredVcpus.asInstanceOf[js.Any])
+    if (!js.isUndefined(bidPercentage)) __obj.updateDynamic("bidPercentage")(bidPercentage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(desiredVcpus)) __obj.updateDynamic("desiredVcpus")(desiredVcpus.get.asInstanceOf[js.Any])
     if (ec2KeyPair != null) __obj.updateDynamic("ec2KeyPair")(ec2KeyPair.asInstanceOf[js.Any])
     if (imageId != null) __obj.updateDynamic("imageId")(imageId.asInstanceOf[js.Any])
     if (launchTemplate != null) __obj.updateDynamic("launchTemplate")(launchTemplate.asInstanceOf[js.Any])

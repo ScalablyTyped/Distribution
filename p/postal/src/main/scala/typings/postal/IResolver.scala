@@ -1,5 +1,6 @@
 package typings.postal
 
+import typings.postal.anon.Binding
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait IResolver extends js.Object {
   def compare(binding: String, topic: String, headerOptions: js.Object): Boolean = js.native
   def purge(): Unit = js.native
-  def purge(options: AnonBinding): Unit = js.native
+  def purge(options: Binding): Unit = js.native
   def reset(): Unit = js.native
 }
 

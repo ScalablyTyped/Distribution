@@ -17,16 +17,16 @@ object ArcGaugeGaugeArea {
   def apply(
     background: String = null,
     border: ArcGaugeGaugeAreaBorder = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     margin: Double | ArcGaugeGaugeAreaMargin = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): ArcGaugeGaugeArea = {
     val __obj = js.Dynamic.literal()
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArcGaugeGaugeArea]
   }
 }

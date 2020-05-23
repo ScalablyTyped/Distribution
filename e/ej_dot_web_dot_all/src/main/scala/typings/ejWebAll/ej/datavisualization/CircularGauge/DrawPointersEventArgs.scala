@@ -49,34 +49,34 @@ trait DrawPointersEventArgs extends js.Object {
 object DrawPointersEventArgs {
   @scala.inline
   def apply(
-    angle: Int | Double = null,
+    angle: js.UndefOr[Double] = js.undefined,
     cancel: js.UndefOr[Boolean] = js.undefined,
     context: js.Any = null,
     element: js.Any = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     model: js.Any = null,
     `object`: js.Any = null,
     position: js.Any = null,
     scaleElement: js.Any = null,
-    scaleIndex: Int | Double = null,
+    scaleIndex: js.UndefOr[Double] = js.undefined,
     style: String = null,
     `type`: String = null,
-    value: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined
   ): DrawPointersEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement.asInstanceOf[js.Any])
-    if (scaleIndex != null) __obj.updateDynamic("scaleIndex")(scaleIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleIndex)) __obj.updateDynamic("scaleIndex")(scaleIndex.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawPointersEventArgs]
   }
 }

@@ -10,19 +10,19 @@ import scala.scalajs.js.annotation._
 
 trait IDataProxy extends IEvented {
   /** [Method] Performs a batch of Operations in the order specified by batchOrder
-  		* @param options Object Object containing one or more properties supported by the batch method:
-  		* @returns Ext.data.Batch The newly created Batch
-  		*/
+    * @param options Object Object containing one or more properties supported by the batch method:
+    * @returns Ext.data.Batch The newly created Batch
+    */
   var batch: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], IBatch]] = js.undefined
   /** [Config Option] (Boolean) */
   var batchActions: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
   var batchOrder: js.UndefOr[String] = js.undefined
   /** [Method] Performs the given create operation
-  		* @param operation Ext.data.Operation The Operation to perform
-  		* @param callback Function Callback function to be called when the Operation has completed (whether successful or not)
-  		* @param scope Object Scope to execute the callback function in
-  		*/
+    * @param operation Ext.data.Operation The Operation to perform
+    * @param callback Function Callback function to be called when the Operation has completed (whether successful or not)
+    * @param scope Object Scope to execute the callback function in
+    */
   var create: js.UndefOr[
     js.Function3[
       /* operation */ js.UndefOr[IOperation], 
@@ -32,10 +32,10 @@ trait IDataProxy extends IEvented {
     ]
   ] = js.undefined
   /** [Method] Performs the given destroy operation
-  		* @param operation Ext.data.Operation The Operation to perform
-  		* @param callback Function Callback function to be called when the Operation has completed (whether successful or not)
-  		* @param scope Object Scope to execute the callback function in
-  		*/
+    * @param operation Ext.data.Operation The Operation to perform
+    * @param callback Function Callback function to be called when the Operation has completed (whether successful or not)
+    * @param scope Object Scope to execute the callback function in
+    */
   @JSName("destroy")
   var destroy_IDataProxy: js.UndefOr[
     js.Function3[
@@ -46,32 +46,32 @@ trait IDataProxy extends IEvented {
     ]
   ] = js.undefined
   /** [Method] Returns the value of batchActions
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getBatchActions: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of batchOrder
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getBatchOrder: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of model
-  		* @returns String/Ext.data.Model
-  		*/
+    * @returns String/Ext.data.Model
+    */
   var getModel: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of reader
-  		* @returns Object/String/Ext.data.reader.Reader
-  		*/
+    * @returns Object/String/Ext.data.reader.Reader
+    */
   var getReader: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of writer
-  		* @returns Object/String/Ext.data.writer.Writer
-  		*/
+    * @returns Object/String/Ext.data.writer.Writer
+    */
   var getWriter: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Config Option] (String/Ext.data.Model) */
   var model: js.UndefOr[js.Any] = js.undefined
   /** [Method] Performs the given read operation
-  		* @param operation Ext.data.Operation The Operation to perform
-  		* @param callback Function Callback function to be called when the Operation has completed (whether successful or not)
-  		* @param scope Object Scope to execute the callback function in
-  		*/
+    * @param operation Ext.data.Operation The Operation to perform
+    * @param callback Function Callback function to be called when the Operation has completed (whether successful or not)
+    * @param scope Object Scope to execute the callback function in
+    */
   var read: js.UndefOr[
     js.Function3[
       /* operation */ js.UndefOr[IOperation], 
@@ -83,30 +83,30 @@ trait IDataProxy extends IEvented {
   /** [Config Option] (Object/String/Ext.data.reader.Reader) */
   var reader: js.UndefOr[js.Any] = js.undefined
   /** [Method] Sets the value of batchActions
-  		* @param batchActions Boolean The new value.
-  		*/
+    * @param batchActions Boolean The new value.
+    */
   var setBatchActions: js.UndefOr[js.Function1[/* batchActions */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of batchOrder
-  		* @param batchOrder String The new value.
-  		*/
+    * @param batchOrder String The new value.
+    */
   var setBatchOrder: js.UndefOr[js.Function1[/* batchOrder */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of model
-  		* @param model String/Ext.data.Model The new value.
-  		*/
+    * @param model String/Ext.data.Model The new value.
+    */
   var setModel: js.UndefOr[js.Function1[/* model */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of reader
-  		* @param reader Object/String/Ext.data.reader.Reader The new value.
-  		*/
+    * @param reader Object/String/Ext.data.reader.Reader The new value.
+    */
   var setReader: js.UndefOr[js.Function1[/* reader */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of writer
-  		* @param writer Object/String/Ext.data.writer.Writer The new value.
-  		*/
+    * @param writer Object/String/Ext.data.writer.Writer The new value.
+    */
   var setWriter: js.UndefOr[js.Function1[/* writer */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Performs the given update operation
-  		* @param operation Ext.data.Operation The Operation to perform
-  		* @param callback Function Callback function to be called when the Operation has completed (whether successful or not)
-  		* @param scope Object Scope to execute the callback function in
-  		*/
+    * @param operation Ext.data.Operation The Operation to perform
+    * @param callback Function Callback function to be called when the Operation has completed (whether successful or not)
+    * @param scope Object Scope to execute the callback function in
+    */
   var update: js.UndefOr[
     js.Function3[
       /* operation */ js.UndefOr[IOperation], 
@@ -200,7 +200,7 @@ object IDataProxy {
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
     if (batch != null) __obj.updateDynamic("batch")(js.Any.fromFunction1(batch))
-    if (!js.isUndefined(batchActions)) __obj.updateDynamic("batchActions")(batchActions.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchActions)) __obj.updateDynamic("batchActions")(batchActions.get.asInstanceOf[js.Any])
     if (batchOrder != null) __obj.updateDynamic("batchOrder")(batchOrder.asInstanceOf[js.Any])
     if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents.asInstanceOf[js.Any])
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
@@ -251,7 +251,7 @@ object IDataProxy {
     if (setModel != null) __obj.updateDynamic("setModel")(js.Any.fromFunction1(setModel))
     if (setReader != null) __obj.updateDynamic("setReader")(js.Any.fromFunction1(setReader))
     if (setWriter != null) __obj.updateDynamic("setWriter")(js.Any.fromFunction1(setWriter))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))

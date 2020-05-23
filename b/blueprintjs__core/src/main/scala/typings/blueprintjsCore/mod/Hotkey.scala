@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.AnonAllowInInput
+import typings.blueprintjsCore.anon.AllowInInput
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ class Hotkey ()
 @JSImport("@blueprintjs/core", "Hotkey")
 @js.native
 object Hotkey extends js.Object {
-  var defaultProps: AnonAllowInInput = js.native
+  var defaultProps: AllowInInput = js.native
   var displayName: String = js.native
 }
 

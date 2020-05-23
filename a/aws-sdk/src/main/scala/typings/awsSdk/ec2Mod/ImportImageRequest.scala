@@ -68,8 +68,8 @@ object ImportImageRequest {
     ClientToken: String = null,
     Description: String = null,
     DiskContainers: ImageDiskContainerList = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
-    Encrypted: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
+    Encrypted: js.UndefOr[Boolean] = js.undefined,
     Hypervisor: String = null,
     KmsKeyId: KmsKeyId = null,
     LicenseSpecifications: ImportImageLicenseSpecificationListRequest = null,
@@ -83,8 +83,8 @@ object ImportImageRequest {
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (DiskContainers != null) __obj.updateDynamic("DiskContainers")(DiskContainers.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
-    if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.get.asInstanceOf[js.Any])
     if (Hypervisor != null) __obj.updateDynamic("Hypervisor")(Hypervisor.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
     if (LicenseSpecifications != null) __obj.updateDynamic("LicenseSpecifications")(LicenseSpecifications.asInstanceOf[js.Any])

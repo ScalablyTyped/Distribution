@@ -22,14 +22,14 @@ object messagesMod extends js.Object {
     def this(method: String) = this()
   }
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.vscodeJsonrpc.mod.ProgressType because Inheritance from two classes. Inlined __ */ @js.native
   class ProtocolRequestType[P, R, PR, E, RO] protected () extends RequestType[P, R, E, RO] {
     def this(method: String) = this()
     val __ : js.UndefOr[js.Tuple2[PR, _EM]] = js.native
   }
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.vscodeJsonrpc.mod.ProgressType because Inheritance from two classes. Inlined __ */ @js.native
   class ProtocolRequestType0[R, PR, E, RO] protected () extends RequestType0[R, E, RO] {
     def this(method: String) = this()

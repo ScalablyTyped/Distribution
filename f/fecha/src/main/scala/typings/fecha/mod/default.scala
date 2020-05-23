@@ -1,7 +1,7 @@
 package typings.fecha.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.fecha.PartialI18nSettings
+import typings.fecha.anon.PartialI18nSettings
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

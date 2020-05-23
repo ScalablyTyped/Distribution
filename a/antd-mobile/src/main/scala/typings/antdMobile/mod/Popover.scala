@@ -1,7 +1,7 @@
 package typings.antdMobile.mod
 
-import typings.antdMobile.AnonPlacement
-import typings.antdMobile.TypeofItemInstantiable
+import typings.antdMobile.anon.Placement
+import typings.antdMobile.anon.TypeofItemInstantiable
 import typings.antdMobile.popoverMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,6 +16,6 @@ class Popover () extends default
 @js.native
 object Popover extends js.Object {
   var Item: TypeofItemInstantiable = js.native
-  var defaultProps: AnonPlacement = js.native
+  var defaultProps: Placement = js.native
 }
 

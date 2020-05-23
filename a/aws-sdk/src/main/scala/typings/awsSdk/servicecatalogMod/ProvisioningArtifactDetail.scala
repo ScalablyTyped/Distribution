@@ -39,7 +39,7 @@ trait ProvisioningArtifactDetail extends js.Object {
 object ProvisioningArtifactDetail {
   @scala.inline
   def apply(
-    Active: js.UndefOr[Boolean] = js.undefined,
+    Active: js.UndefOr[ProvisioningArtifactActive] = js.undefined,
     CreatedTime: CreationTime = null,
     Description: ProvisioningArtifactName = null,
     Guidance: ProvisioningArtifactGuidance = null,
@@ -48,7 +48,7 @@ object ProvisioningArtifactDetail {
     Type: ProvisioningArtifactType = null
   ): ProvisioningArtifactDetail = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Active)) __obj.updateDynamic("Active")(Active.asInstanceOf[js.Any])
+    if (!js.isUndefined(Active)) __obj.updateDynamic("Active")(Active.get.asInstanceOf[js.Any])
     if (CreatedTime != null) __obj.updateDynamic("CreatedTime")(CreatedTime.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (Guidance != null) __obj.updateDynamic("Guidance")(Guidance.asInstanceOf[js.Any])

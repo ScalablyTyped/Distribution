@@ -164,18 +164,18 @@ object Model {
     focusIn: /* e */ FocusInEventArgs => Unit = null,
     focusOut: /* e */ FocusOutEventArgs => Unit = null,
     height: String | Double = null,
-    hourInterval: Int | Double = null,
+    hourInterval: js.UndefOr[Double] = js.undefined,
     htmlAttributes: js.Any = null,
-    interval: Int | Double = null,
+    interval: js.UndefOr[Double] = js.undefined,
     locale: String = null,
     maxTime: String = null,
     minTime: String = null,
-    minutesInterval: Int | Double = null,
+    minutesInterval: js.UndefOr[Double] = js.undefined,
     open: /* e */ OpenEventArgs => Unit = null,
     popupHeight: String | Double = null,
     popupWidth: String | Double = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
-    secondsInterval: Int | Double = null,
+    secondsInterval: js.UndefOr[Double] = js.undefined,
     select: /* e */ SelectEventArgs => Unit = null,
     showPopupButton: js.UndefOr[Boolean] = js.undefined,
     showRoundedCorner: js.UndefOr[Boolean] = js.undefined,
@@ -195,29 +195,29 @@ object Model {
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (disableTimeRanges != null) __obj.updateDynamic("disableTimeRanges")(disableTimeRanges.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableStrictMode)) __obj.updateDynamic("enableStrictMode")(enableStrictMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableStrictMode)) __obj.updateDynamic("enableStrictMode")(enableStrictMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (focusIn != null) __obj.updateDynamic("focusIn")(js.Any.fromFunction1(focusIn))
     if (focusOut != null) __obj.updateDynamic("focusOut")(js.Any.fromFunction1(focusOut))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hourInterval != null) __obj.updateDynamic("hourInterval")(hourInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(hourInterval)) __obj.updateDynamic("hourInterval")(hourInterval.get.asInstanceOf[js.Any])
     if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (maxTime != null) __obj.updateDynamic("maxTime")(maxTime.asInstanceOf[js.Any])
     if (minTime != null) __obj.updateDynamic("minTime")(minTime.asInstanceOf[js.Any])
-    if (minutesInterval != null) __obj.updateDynamic("minutesInterval")(minutesInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(minutesInterval)) __obj.updateDynamic("minutesInterval")(minutesInterval.get.asInstanceOf[js.Any])
     if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
     if (popupHeight != null) __obj.updateDynamic("popupHeight")(popupHeight.asInstanceOf[js.Any])
     if (popupWidth != null) __obj.updateDynamic("popupWidth")(popupWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (secondsInterval != null) __obj.updateDynamic("secondsInterval")(secondsInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(secondsInterval)) __obj.updateDynamic("secondsInterval")(secondsInterval.get.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
-    if (!js.isUndefined(showPopupButton)) __obj.updateDynamic("showPopupButton")(showPopupButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPopupButton)) __obj.updateDynamic("showPopupButton")(showPopupButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner.get.asInstanceOf[js.Any])
     if (timeFormat != null) __obj.updateDynamic("timeFormat")(timeFormat.asInstanceOf[js.Any])
     if (validationMessages != null) __obj.updateDynamic("validationMessages")(validationMessages.asInstanceOf[js.Any])
     if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules.asInstanceOf[js.Any])

@@ -5,16 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Devices.Sensors.GyrometerReading")
-@js.native
-class GyrometerReading () extends IGyrometerReading {
-  /* CompleteClass */
-  override var angularVelocityX: Double = js.native
-  /* CompleteClass */
-  override var angularVelocityY: Double = js.native
-  /* CompleteClass */
-  override var angularVelocityZ: Double = js.native
-  /* CompleteClass */
-  override var timestamp: Date = js.native
+trait GyrometerReading extends IGyrometerReading
+
+object GyrometerReading {
+  @scala.inline
+  def apply(angularVelocityX: Double, angularVelocityY: Double, angularVelocityZ: Double, timestamp: Date): GyrometerReading = {
+    val __obj = js.Dynamic.literal(angularVelocityX = angularVelocityX.asInstanceOf[js.Any], angularVelocityY = angularVelocityY.asInstanceOf[js.Any], angularVelocityZ = angularVelocityZ.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GyrometerReading]
+  }
 }
 

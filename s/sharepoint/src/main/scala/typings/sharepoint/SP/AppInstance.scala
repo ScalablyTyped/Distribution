@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.AppInstance")
 @js.native
-class AppInstance () extends ClientObject {
+trait AppInstance extends ClientObject {
   def cancelAllJobs(): BooleanResult = js.native
   def getErrorDetails(): ClientObjectList[AppInstanceErrorDetails] = js.native
   def getPreviousAppVersion(): App = js.native

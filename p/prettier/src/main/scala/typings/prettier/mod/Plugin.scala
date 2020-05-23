@@ -1,7 +1,7 @@
 package typings.prettier.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.prettier.PartialRequiredOptions
+import typings.prettier.anon.PartialRequiredOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

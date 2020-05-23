@@ -22,9 +22,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.Application")
 @js.native
-class Application protected () extends js.Object {
+trait Application extends js.Object {
   val ActiveDocument: Document = js.native
   val ActiveEncryptionSession: Double = js.native
   var ActivePrinter: String = js.native

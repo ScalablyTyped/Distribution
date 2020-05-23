@@ -11,6 +11,6 @@ package object dynamicMod {
     typings.react.mod.ComponentType[P]
   ]
   type Loader[P] = js.Function0[typings.nextServer.dynamicMod.LoaderComponent[P]] | typings.nextServer.dynamicMod.LoaderComponent[P]
-  type LoaderComponent[P] = js.Promise[typings.react.mod.ComponentType[P] | typings.nextServer.AnonDefault[P]]
+  type LoaderComponent[P] = js.Promise[typings.react.mod.ComponentType[P] | typings.nextServer.anon.Default[P]]
   type LoaderMap = org.scalablytyped.runtime.StringDictionary[js.Function0[typings.nextServer.dynamicMod.Loader[js.Any]]]
 }

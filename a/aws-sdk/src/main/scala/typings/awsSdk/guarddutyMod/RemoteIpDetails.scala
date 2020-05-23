@@ -7,23 +7,23 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RemoteIpDetails extends js.Object {
   /**
-    * City information of the remote IP address.
+    * The city information of the remote IP address.
     */
   var City: js.UndefOr[typings.awsSdk.guarddutyMod.City] = js.native
   /**
-    * Country code of the remote IP address.
+    * The country code of the remote IP address.
     */
   var Country: js.UndefOr[typings.awsSdk.guarddutyMod.Country] = js.native
   /**
-    * Location information of the remote IP address.
+    * The location information of the remote IP address.
     */
   var GeoLocation: js.UndefOr[typings.awsSdk.guarddutyMod.GeoLocation] = js.native
   /**
-    * IPV4 remote address of the connection.
+    * The IPv4 remote address of the connection.
     */
   var IpAddressV4: js.UndefOr[String] = js.native
   /**
-    * ISP Organization information of the remote IP address.
+    * The ISP organization information of the remote IP address.
     */
   var Organization: js.UndefOr[typings.awsSdk.guarddutyMod.Organization] = js.native
 }

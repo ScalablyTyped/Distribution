@@ -44,7 +44,7 @@ object StreamRecord {
     NewImage: AttributeMap = null,
     OldImage: AttributeMap = null,
     SequenceNumber: SequenceNumber = null,
-    SizeBytes: Int | Double = null,
+    SizeBytes: js.UndefOr[PositiveLongObject] = js.undefined,
     StreamViewType: StreamViewType = null
   ): StreamRecord = {
     val __obj = js.Dynamic.literal()
@@ -53,7 +53,7 @@ object StreamRecord {
     if (NewImage != null) __obj.updateDynamic("NewImage")(NewImage.asInstanceOf[js.Any])
     if (OldImage != null) __obj.updateDynamic("OldImage")(OldImage.asInstanceOf[js.Any])
     if (SequenceNumber != null) __obj.updateDynamic("SequenceNumber")(SequenceNumber.asInstanceOf[js.Any])
-    if (SizeBytes != null) __obj.updateDynamic("SizeBytes")(SizeBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(SizeBytes)) __obj.updateDynamic("SizeBytes")(SizeBytes.get.asInstanceOf[js.Any])
     if (StreamViewType != null) __obj.updateDynamic("StreamViewType")(StreamViewType.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamRecord]
   }

@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Outlook.NoteItem")
 @js.native
-class NoteItem protected () extends js.Object {
+trait NoteItem extends js.Object {
   val Application: typings.activexOutlook.Outlook.Application = js.native
   val AutoResolvedWinner: Boolean = js.native
   var Body: String = js.native

@@ -55,7 +55,7 @@ object UpdateDialog {
     title: String = null
   ): UpdateDialog = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(appendReleaseDescription)) __obj.updateDynamic("appendReleaseDescription")(appendReleaseDescription.asInstanceOf[js.Any])
+    if (!js.isUndefined(appendReleaseDescription)) __obj.updateDynamic("appendReleaseDescription")(appendReleaseDescription.get.asInstanceOf[js.Any])
     if (descriptionPrefix != null) __obj.updateDynamic("descriptionPrefix")(descriptionPrefix.asInstanceOf[js.Any])
     if (mandatoryContinueButtonLabel != null) __obj.updateDynamic("mandatoryContinueButtonLabel")(mandatoryContinueButtonLabel.asInstanceOf[js.Any])
     if (mandatoryUpdateMessage != null) __obj.updateDynamic("mandatoryUpdateMessage")(mandatoryUpdateMessage.asInstanceOf[js.Any])

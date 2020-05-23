@@ -35,14 +35,14 @@ object CreateIngestionResponse {
     IngestionId: IngestionId = null,
     IngestionStatus: IngestionStatus = null,
     RequestId: java.lang.String = null,
-    Status: Int | scala.Double = null
+    Status: js.UndefOr[StatusCode] = js.undefined
   ): CreateIngestionResponse = {
     val __obj = js.Dynamic.literal()
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
     if (IngestionId != null) __obj.updateDynamic("IngestionId")(IngestionId.asInstanceOf[js.Any])
     if (IngestionStatus != null) __obj.updateDynamic("IngestionStatus")(IngestionStatus.asInstanceOf[js.Any])
     if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
+    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateIngestionResponse]
   }
 }

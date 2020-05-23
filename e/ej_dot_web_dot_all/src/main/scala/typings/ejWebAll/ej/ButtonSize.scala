@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,23 +29,6 @@ object ButtonSize extends js.Object {
   //Creates button with Built-in small size height, width specified
   @js.native
   sealed trait Small extends ButtonSize
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ButtonSize with Double] = js.native
-  /* 4 */ @js.native
-  object Large extends TopLevel[Large with Double]
-  
-  /* 3 */ @js.native
-  object Medium extends TopLevel[Medium with Double]
-  
-  /* 1 */ @js.native
-  object Mini extends TopLevel[Mini with Double]
-  
-  /* 0 */ @js.native
-  object Normal extends TopLevel[Normal with Double]
-  
-  /* 2 */ @js.native
-  object Small extends TopLevel[Small with Double]
   
 }
 

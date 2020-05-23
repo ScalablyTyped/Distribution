@@ -25,10 +25,14 @@ trait PlotMfiParamsOptions extends js.Object {
 
 object PlotMfiParamsOptions {
   @scala.inline
-  def apply(decimals: Int | Double = null, period: Int | Double = null, volumeSeriesID: String = null): PlotMfiParamsOptions = {
+  def apply(
+    decimals: js.UndefOr[Double] = js.undefined,
+    period: js.UndefOr[Double] = js.undefined,
+    volumeSeriesID: String = null
+  ): PlotMfiParamsOptions = {
     val __obj = js.Dynamic.literal()
-    if (decimals != null) __obj.updateDynamic("decimals")(decimals.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
+    if (!js.isUndefined(decimals)) __obj.updateDynamic("decimals")(decimals.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(period)) __obj.updateDynamic("period")(period.get.asInstanceOf[js.Any])
     if (volumeSeriesID != null) __obj.updateDynamic("volumeSeriesID")(volumeSeriesID.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotMfiParamsOptions]
   }

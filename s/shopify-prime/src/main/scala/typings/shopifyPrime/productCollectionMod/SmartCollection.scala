@@ -1,7 +1,7 @@
 package typings.shopifyPrime.productCollectionMod
 
-import typings.shopifyPrime.AnonAttachment
-import typings.shopifyPrime.AnonColumn
+import typings.shopifyPrime.anon.Attachment
+import typings.shopifyPrime.anon.Column
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,7 +51,7 @@ trait SmartCollection extends ProductCollection {
     *
     * tag: product tag.
     */
-  var rules: js.UndefOr[js.Array[AnonColumn]] = js.undefined
+  var rules: js.UndefOr[js.Array[Column]] = js.undefined
 }
 
 object SmartCollection {
@@ -61,11 +61,11 @@ object SmartCollection {
     body_html: String = null,
     disjunctive: js.UndefOr[Boolean] = js.undefined,
     handle: String = null,
-    id: Int | Double = null,
-    image: AnonAttachment = null,
+    id: js.UndefOr[Double] = js.undefined,
+    image: Attachment = null,
     published_at: String = null,
     published_scope: String = null,
-    rules: js.Array[AnonColumn] = null,
+    rules: js.Array[Column] = null,
     sort_order: String = null,
     template_suffix: String = null,
     title: String = null,
@@ -74,9 +74,9 @@ object SmartCollection {
     val __obj = js.Dynamic.literal()
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
     if (body_html != null) __obj.updateDynamic("body_html")(body_html.asInstanceOf[js.Any])
-    if (!js.isUndefined(disjunctive)) __obj.updateDynamic("disjunctive")(disjunctive.asInstanceOf[js.Any])
+    if (!js.isUndefined(disjunctive)) __obj.updateDynamic("disjunctive")(disjunctive.get.asInstanceOf[js.Any])
     if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (published_at != null) __obj.updateDynamic("published_at")(published_at.asInstanceOf[js.Any])
     if (published_scope != null) __obj.updateDynamic("published_scope")(published_scope.asInstanceOf[js.Any])

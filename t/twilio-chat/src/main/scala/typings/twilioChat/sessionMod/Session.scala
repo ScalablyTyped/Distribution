@@ -1,6 +1,6 @@
 package typings.twilioChat.sessionMod
 
-import typings.twilioChat.AnonIdentity
+import typings.twilioChat.anon.Identity
 import typings.twilioChat.configurationMod.Configuration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -45,7 +45,7 @@ class Session protected () extends js.Object {
   def getMaxUserInfosToSubscribe(): js.Promise[Double] = js.native
   def getMyChannelsId(): js.Promise[String] = js.native
   def getSessionLinks(): js.Promise[SessionLinks] = js.native
-  def getUsersData(): js.Promise[AnonIdentity] = js.native
+  def getUsersData(): js.Promise[Identity] = js.native
   def identity: String = js.native
   def initialize(): js.Promise[Session] = js.native
   def reachabilityEnabled: Boolean = js.native

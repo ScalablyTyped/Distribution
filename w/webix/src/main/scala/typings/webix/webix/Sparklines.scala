@@ -1,6 +1,5 @@
 package typings.webix.webix
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +11,16 @@ trait Sparklines extends js.Object {
   def template(item: js.Any, common: String, data: js.Array[_], column: js.Any, index: Double): String
 }
 
-@JSGlobal("webix.Sparklines")
-@js.native
-object Sparklines extends TopLevel[Sparklines]
+object Sparklines {
+  @scala.inline
+  def apply(
+    paddingX: Double,
+    paddingY: Double,
+    radius: Double,
+    template: (js.Any, String, js.Array[_], js.Any, Double) => String
+  ): Sparklines = {
+    val __obj = js.Dynamic.literal(paddingX = paddingX.asInstanceOf[js.Any], paddingY = paddingY.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], template = js.Any.fromFunction5(template))
+    __obj.asInstanceOf[Sparklines]
+  }
+}
 

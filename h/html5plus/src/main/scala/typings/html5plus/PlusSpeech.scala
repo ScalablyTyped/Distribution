@@ -28,7 +28,7 @@ trait PlusSpeech extends js.Object {
   /**
     * 监听语音识别事件
     * 向语音识别模块添加事件监听器，当指定的事件发生时，将触发listener函数的执行。 
-    * 	可多次调用此方法添加多个监听器，当监听的事件发生时，将按照添加的先后顺序触发执行。
+    *     可多次调用此方法添加多个监听器，当监听的事件发生时，将按照添加的先后顺序触发执行。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
     */

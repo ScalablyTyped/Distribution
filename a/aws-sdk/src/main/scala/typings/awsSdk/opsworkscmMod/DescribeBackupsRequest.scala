@@ -28,13 +28,13 @@ object DescribeBackupsRequest {
   @scala.inline
   def apply(
     BackupId: BackupId = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: NextToken = null,
     ServerName: ServerName = null
   ): DescribeBackupsRequest = {
     val __obj = js.Dynamic.literal()
     if (BackupId != null) __obj.updateDynamic("BackupId")(BackupId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (ServerName != null) __obj.updateDynamic("ServerName")(ServerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeBackupsRequest]

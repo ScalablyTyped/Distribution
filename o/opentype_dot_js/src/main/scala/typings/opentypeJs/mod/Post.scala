@@ -34,13 +34,13 @@ object Post {
     version: Double,
     glyphNameIndex: js.Array[Double] = null,
     names: js.Array[String] = null,
-    numberOfGlyphs: Int | Double = null,
+    numberOfGlyphs: js.UndefOr[Double] = js.undefined,
     offset: js.Array[Double] = null
   ): Post = {
     val __obj = js.Dynamic.literal(isFixedPitch = isFixedPitch.asInstanceOf[js.Any], italicAngle = italicAngle.asInstanceOf[js.Any], maxMemType1 = maxMemType1.asInstanceOf[js.Any], maxMemType42 = maxMemType42.asInstanceOf[js.Any], minMemType1 = minMemType1.asInstanceOf[js.Any], minMemType42 = minMemType42.asInstanceOf[js.Any], underlinePosition = underlinePosition.asInstanceOf[js.Any], underlineThickness = underlineThickness.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     if (glyphNameIndex != null) __obj.updateDynamic("glyphNameIndex")(glyphNameIndex.asInstanceOf[js.Any])
     if (names != null) __obj.updateDynamic("names")(names.asInstanceOf[js.Any])
-    if (numberOfGlyphs != null) __obj.updateDynamic("numberOfGlyphs")(numberOfGlyphs.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfGlyphs)) __obj.updateDynamic("numberOfGlyphs")(numberOfGlyphs.get.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Post]
   }

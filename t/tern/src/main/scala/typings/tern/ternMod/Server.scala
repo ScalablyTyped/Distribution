@@ -1,7 +1,6 @@
 package typings.tern.ternMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.tern.AnonQuery
 import typings.tern.inferMod.Context
 import typings.tern.ternStrings.afterLoad
 import typings.tern.ternStrings.beforeLoad
@@ -49,12 +48,12 @@ trait Server extends js.Object {
   /** Load a server plugin (or don’t do anything, if the plugin is already loaded). */
   def loadPlugin(name: String, options: js.Object): Unit = js.native
   /** Unregister an event handler. */
-  def off[K /* <: reset | beforeLoad | afterLoad | preParse | postParse | preInfer | postInfer | typeAt | completion */](
+  def off[K /* <: /* keyof tern.tern/lib/tern.Events */ reset | beforeLoad | afterLoad | preParse | postParse | preInfer | postInfer | typeAt | completion */](
     eventType: K,
     handler: /* import warning: importer.ImportType#apply Failed type conversion: tern.tern/lib/tern.Events[K] */ js.Any
   ): Unit = js.native
   /** Register an event handler for the named type of event. */
-  def on[K /* <: reset | beforeLoad | afterLoad | preParse | postParse | preInfer | postInfer | typeAt | completion */](
+  def on[K /* <: /* keyof tern.tern/lib/tern.Events */ reset | beforeLoad | afterLoad | preParse | postParse | preInfer | postInfer | typeAt | completion */](
     eventType: K,
     handler: /* import warning: importer.ImportType#apply Failed type conversion: tern.tern/lib/tern.Events[K] */ js.Any
   ): Unit = js.native
@@ -66,7 +65,7 @@ trait Server extends js.Object {
     * When the server hasn’t been configured to be asynchronous, the callback will be called before request returns.
     */
   def request[Q /* <: Query */, D /* <: Document */](
-    doc: D with AnonQuery[Q],
+    doc: D with typings.tern.anon.Query[Q],
     callback: js.Function2[
       /* error */ String | Null, 
       /* response */ js.UndefOr[js.Object | QueryResult[Q]], 
@@ -75,7 +74,7 @@ trait Server extends js.Object {
   ): Unit = js.native
   def reset(): Unit = js.native
   def signal(
-    event: reset | beforeLoad | afterLoad | preParse | postParse | preInfer | postInfer | typeAt | completion,
+    event: /* keyof tern.tern/lib/tern.Events */ reset | beforeLoad | afterLoad | preParse | postParse | preInfer | postInfer | typeAt | completion,
     file: File
   ): Unit = js.native
 }

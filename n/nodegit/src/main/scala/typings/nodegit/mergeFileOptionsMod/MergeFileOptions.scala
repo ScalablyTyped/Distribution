@@ -18,22 +18,22 @@ trait MergeFileOptions
 object MergeFileOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     ancestorLabel: String = null,
-    favor: Int | Double = null,
-    flags: Int | Double = null,
+    favor: js.UndefOr[Double] = js.undefined,
+    flags: js.UndefOr[Double] = js.undefined,
     ourLabel: String = null,
     theirLabel: String = null,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): MergeFileOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (ancestorLabel != null) __obj.updateDynamic("ancestorLabel")(ancestorLabel.asInstanceOf[js.Any])
-    if (favor != null) __obj.updateDynamic("favor")(favor.asInstanceOf[js.Any])
-    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
+    if (!js.isUndefined(favor)) __obj.updateDynamic("favor")(favor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flags)) __obj.updateDynamic("flags")(flags.get.asInstanceOf[js.Any])
     if (ourLabel != null) __obj.updateDynamic("ourLabel")(ourLabel.asInstanceOf[js.Any])
     if (theirLabel != null) __obj.updateDynamic("theirLabel")(theirLabel.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergeFileOptions]
   }
 }

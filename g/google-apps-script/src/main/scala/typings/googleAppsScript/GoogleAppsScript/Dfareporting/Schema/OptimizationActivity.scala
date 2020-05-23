@@ -15,12 +15,12 @@ object OptimizationActivity {
   def apply(
     floodlightActivityId: String = null,
     floodlightActivityIdDimensionValue: DimensionValue = null,
-    weight: Int | Double = null
+    weight: js.UndefOr[Double] = js.undefined
   ): OptimizationActivity = {
     val __obj = js.Dynamic.literal()
     if (floodlightActivityId != null) __obj.updateDynamic("floodlightActivityId")(floodlightActivityId.asInstanceOf[js.Any])
     if (floodlightActivityIdDimensionValue != null) __obj.updateDynamic("floodlightActivityIdDimensionValue")(floodlightActivityIdDimensionValue.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptimizationActivity]
   }
 }

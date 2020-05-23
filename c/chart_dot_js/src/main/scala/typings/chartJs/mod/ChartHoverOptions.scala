@@ -21,16 +21,16 @@ trait ChartHoverOptions extends js.Object {
 object ChartHoverOptions {
   @scala.inline
   def apply(
-    animationDuration: Int | Double = null,
+    animationDuration: js.UndefOr[Double] = js.undefined,
     axis: x | y | xy = null,
     intersect: js.UndefOr[Boolean] = js.undefined,
     mode: InteractionMode = null,
     onHover: js.ThisFunction2[/* this */ Chart, /* event */ MouseEvent, /* activeElements */ js.Array[js.Object], _] = null
   ): ChartHoverOptions = {
     val __obj = js.Dynamic.literal()
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
     if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (!js.isUndefined(intersect)) __obj.updateDynamic("intersect")(intersect.asInstanceOf[js.Any])
+    if (!js.isUndefined(intersect)) __obj.updateDynamic("intersect")(intersect.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (onHover != null) __obj.updateDynamic("onHover")(onHover.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartHoverOptions]

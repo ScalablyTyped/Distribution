@@ -26,15 +26,15 @@ trait ColumnDefinition extends js.Object {
 object ColumnDefinition {
   @scala.inline
   def apply(
-    columnWidth: Int | Double = null,
+    columnWidth: js.UndefOr[Double] = js.undefined,
     lineColor: String = null,
-    lineWidth: Int | Double = null,
+    lineWidth: js.UndefOr[Double] = js.undefined,
     unit: Unit | String = null
   ): ColumnDefinition = {
     val __obj = js.Dynamic.literal()
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnWidth)) __obj.updateDynamic("columnWidth")(columnWidth.get.asInstanceOf[js.Any])
     if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnDefinition]
   }

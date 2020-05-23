@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Devices.Enumeration
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,29 +30,6 @@ object Panel extends js.Object {
   
   @js.native
   sealed trait unknown extends Panel
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Panel with Double] = js.native
-  /* 2 */ @js.native
-  object back extends TopLevel[back with Double]
-  
-  /* 4 */ @js.native
-  object bottom extends TopLevel[bottom with Double]
-  
-  /* 1 */ @js.native
-  object front extends TopLevel[front with Double]
-  
-  /* 5 */ @js.native
-  object left extends TopLevel[left with Double]
-  
-  /* 6 */ @js.native
-  object right extends TopLevel[right with Double]
-  
-  /* 3 */ @js.native
-  object top extends TopLevel[top with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
   
 }
 

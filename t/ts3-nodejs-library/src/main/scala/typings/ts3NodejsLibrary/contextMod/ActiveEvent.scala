@@ -11,9 +11,9 @@ trait ActiveEvent extends js.Object {
 
 object ActiveEvent {
   @scala.inline
-  def apply(event: String, id: Int | Double = null): ActiveEvent = {
+  def apply(event: String, id: js.UndefOr[Double] = js.undefined): ActiveEvent = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveEvent]
   }
 }

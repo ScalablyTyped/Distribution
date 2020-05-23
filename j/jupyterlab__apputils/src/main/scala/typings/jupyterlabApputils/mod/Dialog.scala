@@ -1,7 +1,7 @@
 package typings.jupyterlabApputils.mod
 
-import typings.jupyterlabApputils.PartialIButton
-import typings.jupyterlabApputils.ReadonlyIButton
+import typings.jupyterlabApputils.anon.PartialIButton
+import typings.jupyterlabApputils.anon.ReadonlyIButton
 import typings.jupyterlabApputils.dialogMod.Dialog.IOptions
 import typings.std.Partial
 import scala.scalajs.js

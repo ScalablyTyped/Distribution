@@ -18,7 +18,7 @@ object SidebarShowDetail {
   @scala.inline
   def apply(reload: js.UndefOr[Boolean] = js.undefined, url: String = null): SidebarShowDetail = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(reload)) __obj.updateDynamic("reload")(reload.asInstanceOf[js.Any])
+    if (!js.isUndefined(reload)) __obj.updateDynamic("reload")(reload.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SidebarShowDetail]
   }

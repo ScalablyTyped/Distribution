@@ -1,8 +1,8 @@
 package typings.angularForms.mod
 
-import typings.angularForms.AnonEmitEvent
-import typings.angularForms.AnonEmitEventBoolean
-import typings.angularForms.AnonOnlySelf
+import typings.angularForms.anon.EmitEvent
+import typings.angularForms.anon.EmitEventBoolean
+import typings.angularForms.anon.OnlySelf
 import typings.rxjs.mod.Observable_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -132,7 +132,7 @@ abstract class AbstractControl () extends js.Object {
     * When false, no events are emitted.
     */
   def disable(): Unit = js.native
-  def disable(opts: AnonEmitEvent): Unit = js.native
+  def disable(opts: EmitEvent): Unit = js.native
   /**
     * A control is `disabled` when its `status` is `DISABLED`.
     *
@@ -164,7 +164,7 @@ abstract class AbstractControl () extends js.Object {
     * When false, no events are emitted.
     */
   def enable(): Unit = js.native
-  def enable(opts: AnonEmitEvent): Unit = js.native
+  def enable(opts: EmitEvent): Unit = js.native
   /**
     * A control is `enabled` as long as its `status` is not `DISABLED`.
     *
@@ -285,7 +285,7 @@ abstract class AbstractControl () extends js.Object {
     * marks all direct ancestors. Default is false.
     */
   def markAsDirty(): Unit = js.native
-  def markAsDirty(opts: AnonOnlySelf): Unit = js.native
+  def markAsDirty(opts: OnlySelf): Unit = js.native
   /**
     * Marks the control as `pending`.
     *
@@ -303,7 +303,7 @@ abstract class AbstractControl () extends js.Object {
     *
     */
   def markAsPending(): Unit = js.native
-  def markAsPending(opts: AnonEmitEvent): Unit = js.native
+  def markAsPending(opts: EmitEvent): Unit = js.native
   /**
     * Marks the control as `pristine`.
     *
@@ -321,7 +321,7 @@ abstract class AbstractControl () extends js.Object {
     * marks all direct ancestors. Default is false.
     */
   def markAsPristine(): Unit = js.native
-  def markAsPristine(opts: AnonOnlySelf): Unit = js.native
+  def markAsPristine(opts: OnlySelf): Unit = js.native
   /**
     * Marks the control as `touched`. A control is touched by focus and
     * blur events that do not change the value.
@@ -336,7 +336,7 @@ abstract class AbstractControl () extends js.Object {
     * marks all direct ancestors. Default is false.
     */
   def markAsTouched(): Unit = js.native
-  def markAsTouched(opts: AnonOnlySelf): Unit = js.native
+  def markAsTouched(opts: OnlySelf): Unit = js.native
   /**
     * Marks the control as `untouched`.
     *
@@ -353,7 +353,7 @@ abstract class AbstractControl () extends js.Object {
     * marks all direct ancestors. Default is false.
     */
   def markAsUntouched(): Unit = js.native
-  def markAsUntouched(opts: AnonOnlySelf): Unit = js.native
+  def markAsUntouched(opts: OnlySelf): Unit = js.native
   /**
     * The parent control.
     */
@@ -394,7 +394,7 @@ abstract class AbstractControl () extends js.Object {
     */
   def setAsyncValidators(newValidator: AsyncValidatorFn): Unit = js.native
   def setErrors(): Unit = js.native
-  def setErrors(errors: Null, opts: AnonEmitEventBoolean): Unit = js.native
+  def setErrors(errors: Null, opts: EmitEventBoolean): Unit = js.native
   /**
     * Sets errors on a form control when running validations manually, rather than automatically.
     *
@@ -419,7 +419,7 @@ abstract class AbstractControl () extends js.Object {
     * ```
     */
   def setErrors(errors: ValidationErrors): Unit = js.native
-  def setErrors(errors: ValidationErrors, opts: AnonEmitEventBoolean): Unit = js.native
+  def setErrors(errors: ValidationErrors, opts: EmitEventBoolean): Unit = js.native
   def setParent(parent: FormArray): Unit = js.native
   /**
     * @param parent Sets the parent of the control
@@ -470,7 +470,7 @@ abstract class AbstractControl () extends js.Object {
     * When false, no events are emitted.
     */
   def updateValueAndValidity(): Unit = js.native
-  def updateValueAndValidity(opts: AnonEmitEvent): Unit = js.native
+  def updateValueAndValidity(opts: EmitEvent): Unit = js.native
   /**
     * A control is `valid` when its `status` is `VALID`.
     *

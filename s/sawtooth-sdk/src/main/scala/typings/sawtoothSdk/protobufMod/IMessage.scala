@@ -17,11 +17,15 @@ trait IMessage extends js.Object {
 
 object IMessage {
   @scala.inline
-  def apply(content: Uint8Array = null, correlationId: String = null, messageType: MessageType = null): IMessage = {
+  def apply(
+    content: js.UndefOr[Null | Uint8Array] = js.undefined,
+    correlationId: js.UndefOr[Null | String] = js.undefined,
+    messageType: js.UndefOr[Null | MessageType] = js.undefined
+  ): IMessage = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (correlationId != null) __obj.updateDynamic("correlationId")(correlationId.asInstanceOf[js.Any])
-    if (messageType != null) __obj.updateDynamic("messageType")(messageType.asInstanceOf[js.Any])
+    if (!js.isUndefined(content)) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(correlationId)) __obj.updateDynamic("correlationId")(correlationId.asInstanceOf[js.Any])
+    if (!js.isUndefined(messageType)) __obj.updateDynamic("messageType")(messageType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMessage]
   }
 }

@@ -21,16 +21,16 @@ object BackgroundAudioPlayerState {
   @scala.inline
   def apply(
     status: Double,
-    currentPosition: Int | Double = null,
+    currentPosition: js.UndefOr[Double] = js.undefined,
     dataUrl: String = null,
-    downloadPercent: Int | Double = null,
-    duration: Int | Double = null
+    downloadPercent: js.UndefOr[Double] = js.undefined,
+    duration: js.UndefOr[Double] = js.undefined
   ): BackgroundAudioPlayerState = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
-    if (currentPosition != null) __obj.updateDynamic("currentPosition")(currentPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentPosition)) __obj.updateDynamic("currentPosition")(currentPosition.get.asInstanceOf[js.Any])
     if (dataUrl != null) __obj.updateDynamic("dataUrl")(dataUrl.asInstanceOf[js.Any])
-    if (downloadPercent != null) __obj.updateDynamic("downloadPercent")(downloadPercent.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(downloadPercent)) __obj.updateDynamic("downloadPercent")(downloadPercent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundAudioPlayerState]
   }
 }

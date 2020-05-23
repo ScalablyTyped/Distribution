@@ -11,8 +11,7 @@ trait StylesTarget extends js.Object {
 object StylesTarget {
   @scala.inline
   def apply(textContent: String = null): StylesTarget = {
-    val __obj = js.Dynamic.literal()
-    if (textContent != null) __obj.updateDynamic("textContent")(textContent.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(textContent = textContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[StylesTarget]
   }
 }

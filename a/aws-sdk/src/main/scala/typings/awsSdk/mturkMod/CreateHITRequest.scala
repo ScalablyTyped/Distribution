@@ -81,12 +81,12 @@ object CreateHITRequest {
     Reward: CurrencyAmount,
     Title: String,
     AssignmentReviewPolicy: ReviewPolicy = null,
-    AutoApprovalDelayInSeconds: Int | Double = null,
+    AutoApprovalDelayInSeconds: js.UndefOr[Long] = js.undefined,
     HITLayoutId: EntityId = null,
     HITLayoutParameters: HITLayoutParameterList = null,
     HITReviewPolicy: ReviewPolicy = null,
     Keywords: String = null,
-    MaxAssignments: Int | Double = null,
+    MaxAssignments: js.UndefOr[Integer] = js.undefined,
     QualificationRequirements: QualificationRequirementList = null,
     Question: String = null,
     RequesterAnnotation: String = null,
@@ -94,12 +94,12 @@ object CreateHITRequest {
   ): CreateHITRequest = {
     val __obj = js.Dynamic.literal(AssignmentDurationInSeconds = AssignmentDurationInSeconds.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], LifetimeInSeconds = LifetimeInSeconds.asInstanceOf[js.Any], Reward = Reward.asInstanceOf[js.Any], Title = Title.asInstanceOf[js.Any])
     if (AssignmentReviewPolicy != null) __obj.updateDynamic("AssignmentReviewPolicy")(AssignmentReviewPolicy.asInstanceOf[js.Any])
-    if (AutoApprovalDelayInSeconds != null) __obj.updateDynamic("AutoApprovalDelayInSeconds")(AutoApprovalDelayInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoApprovalDelayInSeconds)) __obj.updateDynamic("AutoApprovalDelayInSeconds")(AutoApprovalDelayInSeconds.get.asInstanceOf[js.Any])
     if (HITLayoutId != null) __obj.updateDynamic("HITLayoutId")(HITLayoutId.asInstanceOf[js.Any])
     if (HITLayoutParameters != null) __obj.updateDynamic("HITLayoutParameters")(HITLayoutParameters.asInstanceOf[js.Any])
     if (HITReviewPolicy != null) __obj.updateDynamic("HITReviewPolicy")(HITReviewPolicy.asInstanceOf[js.Any])
     if (Keywords != null) __obj.updateDynamic("Keywords")(Keywords.asInstanceOf[js.Any])
-    if (MaxAssignments != null) __obj.updateDynamic("MaxAssignments")(MaxAssignments.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxAssignments)) __obj.updateDynamic("MaxAssignments")(MaxAssignments.get.asInstanceOf[js.Any])
     if (QualificationRequirements != null) __obj.updateDynamic("QualificationRequirements")(QualificationRequirements.asInstanceOf[js.Any])
     if (Question != null) __obj.updateDynamic("Question")(Question.asInstanceOf[js.Any])
     if (RequesterAnnotation != null) __obj.updateDynamic("RequesterAnnotation")(RequesterAnnotation.asInstanceOf[js.Any])

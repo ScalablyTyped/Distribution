@@ -18,18 +18,18 @@ object SpriteOptions {
   def apply(
     animation: js.Any = null,
     callback: () => _ = null,
-    height: Int | Double = null,
-    posx: Int | Double = null,
-    posy: Int | Double = null,
-    width: Int | Double = null
+    height: js.UndefOr[Double] = js.undefined,
+    posx: js.UndefOr[Double] = js.undefined,
+    posy: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): SpriteOptions = {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (posx != null) __obj.updateDynamic("posx")(posx.asInstanceOf[js.Any])
-    if (posy != null) __obj.updateDynamic("posy")(posy.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(posx)) __obj.updateDynamic("posx")(posx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(posy)) __obj.updateDynamic("posy")(posy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpriteOptions]
   }
 }

@@ -4,7 +4,7 @@ import typings.react.mod.Key
 import typings.react.mod.LegacyRef
 import typings.react.mod.Props
 import typings.react.mod.ReactNode
-import typings.reactResizeDetector.AnonLeading
+import typings.reactResizeDetector.anon.Leading
 import typings.reactResizeDetector.reactResizeDetectorStrings.debounce
 import typings.reactResizeDetector.reactResizeDetectorStrings.throttle
 import typings.std.HTMLElement
@@ -58,7 +58,7 @@ trait ReactResizeDetectorProps extends Props[ReactResizeDetector] {
     * Please refer to lodash's docs for more info.
     * Default: undefined
     */
-  var refreshOptions: js.UndefOr[AnonLeading] = js.undefined
+  var refreshOptions: js.UndefOr[Leading] = js.undefined
   /**
     * Use this in conjunction with refreshMode.
     * Important! It's a numeric prop so set it accordingly, e.g. refreshRate={500}.
@@ -92,28 +92,28 @@ object ReactResizeDetectorProps {
     nodeType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any = null,
     onResize: (/* width */ Double, /* height */ Double) => Unit = null,
     querySelector: String = null,
-    ref: LegacyRef[ReactResizeDetector] = null,
+    ref: js.UndefOr[Null | LegacyRef[ReactResizeDetector]] = js.undefined,
     refreshMode: throttle | debounce = null,
-    refreshOptions: AnonLeading = null,
-    refreshRate: Int | Double = null,
+    refreshOptions: Leading = null,
+    refreshRate: js.UndefOr[Double] = js.undefined,
     render: /* props */ ReactResizeDetectorDimensions => ReactNode = null,
     skipOnMount: js.UndefOr[Boolean] = js.undefined,
     targetDomEl: HTMLElement = null
   ): ReactResizeDetectorProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleHeight)) __obj.updateDynamic("handleHeight")(handleHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleWidth)) __obj.updateDynamic("handleWidth")(handleWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleHeight)) __obj.updateDynamic("handleHeight")(handleHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleWidth)) __obj.updateDynamic("handleWidth")(handleWidth.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (nodeType != null) __obj.updateDynamic("nodeType")(nodeType.asInstanceOf[js.Any])
     if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction2(onResize))
     if (querySelector != null) __obj.updateDynamic("querySelector")(querySelector.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (refreshMode != null) __obj.updateDynamic("refreshMode")(refreshMode.asInstanceOf[js.Any])
     if (refreshOptions != null) __obj.updateDynamic("refreshOptions")(refreshOptions.asInstanceOf[js.Any])
-    if (refreshRate != null) __obj.updateDynamic("refreshRate")(refreshRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshRate)) __obj.updateDynamic("refreshRate")(refreshRate.get.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
-    if (!js.isUndefined(skipOnMount)) __obj.updateDynamic("skipOnMount")(skipOnMount.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipOnMount)) __obj.updateDynamic("skipOnMount")(skipOnMount.get.asInstanceOf[js.Any])
     if (targetDomEl != null) __obj.updateDynamic("targetDomEl")(targetDomEl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactResizeDetectorProps]
   }

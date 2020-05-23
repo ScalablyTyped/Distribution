@@ -22,23 +22,23 @@ object MicrophoneConfig {
   @scala.inline
   def apply(
     audioTrackConstraints: MediaTrackConstraints = null,
-    columnTruncateLength: Int | Double = null,
-    fftSize: Int | Double = null,
+    columnTruncateLength: js.UndefOr[Double] = js.undefined,
+    fftSize: js.UndefOr[Double] = js.undefined,
     includeSpectrogram: js.UndefOr[Boolean] = js.undefined,
     includeWaveform: js.UndefOr[Boolean] = js.undefined,
-    numFramesPerSpectrogram: Int | Double = null,
+    numFramesPerSpectrogram: js.UndefOr[Double] = js.undefined,
     sampleRateHz: `44100` | `48000` = null,
-    smoothingTimeConstant: Int | Double = null
+    smoothingTimeConstant: js.UndefOr[Double] = js.undefined
   ): MicrophoneConfig = {
     val __obj = js.Dynamic.literal()
     if (audioTrackConstraints != null) __obj.updateDynamic("audioTrackConstraints")(audioTrackConstraints.asInstanceOf[js.Any])
-    if (columnTruncateLength != null) __obj.updateDynamic("columnTruncateLength")(columnTruncateLength.asInstanceOf[js.Any])
-    if (fftSize != null) __obj.updateDynamic("fftSize")(fftSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeSpectrogram)) __obj.updateDynamic("includeSpectrogram")(includeSpectrogram.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeWaveform)) __obj.updateDynamic("includeWaveform")(includeWaveform.asInstanceOf[js.Any])
-    if (numFramesPerSpectrogram != null) __obj.updateDynamic("numFramesPerSpectrogram")(numFramesPerSpectrogram.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnTruncateLength)) __obj.updateDynamic("columnTruncateLength")(columnTruncateLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fftSize)) __obj.updateDynamic("fftSize")(fftSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeSpectrogram)) __obj.updateDynamic("includeSpectrogram")(includeSpectrogram.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeWaveform)) __obj.updateDynamic("includeWaveform")(includeWaveform.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numFramesPerSpectrogram)) __obj.updateDynamic("numFramesPerSpectrogram")(numFramesPerSpectrogram.get.asInstanceOf[js.Any])
     if (sampleRateHz != null) __obj.updateDynamic("sampleRateHz")(sampleRateHz.asInstanceOf[js.Any])
-    if (smoothingTimeConstant != null) __obj.updateDynamic("smoothingTimeConstant")(smoothingTimeConstant.asInstanceOf[js.Any])
+    if (!js.isUndefined(smoothingTimeConstant)) __obj.updateDynamic("smoothingTimeConstant")(smoothingTimeConstant.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MicrophoneConfig]
   }
 }

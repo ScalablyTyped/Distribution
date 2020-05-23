@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait TableRowData extends js.Object {
   /**
     *
-    * Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.
+    * Returns the index number of the row within the rows collection of the table. Zero-indexed.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -24,9 +24,9 @@ trait TableRowData extends js.Object {
 
 object TableRowData {
   @scala.inline
-  def apply(index: Int | Double = null, values: js.Array[js.Array[_]] = null): TableRowData = {
+  def apply(index: js.UndefOr[Double] = js.undefined, values: js.Array[js.Array[_]] = null): TableRowData = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableRowData]
   }

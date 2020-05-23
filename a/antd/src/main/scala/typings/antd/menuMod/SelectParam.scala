@@ -1,12 +1,12 @@
 package typings.antd.menuMod
 
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SelectParam extends js.Object {
-  var domEvent: Event_
+  var domEvent: Event
   var item: js.Any
   var key: String
   var keyPath: js.Array[String]
@@ -16,7 +16,7 @@ trait SelectParam extends js.Object {
 object SelectParam {
   @scala.inline
   def apply(
-    domEvent: Event_,
+    domEvent: Event,
     item: js.Any,
     key: String,
     keyPath: js.Array[String],

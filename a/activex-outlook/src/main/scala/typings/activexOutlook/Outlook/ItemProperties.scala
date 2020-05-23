@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Outlook.ItemProperties")
 @js.native
-class ItemProperties protected () extends js.Object {
+trait ItemProperties extends js.Object {
   val Application: typings.activexOutlook.Outlook.Application = js.native
   val Class: OlObjectClass = js.native
   val Count: Double = js.native

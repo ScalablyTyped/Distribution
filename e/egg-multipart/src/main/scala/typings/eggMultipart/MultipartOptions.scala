@@ -1,5 +1,6 @@
 package typings.eggMultipart
 
+import typings.eggMultipart.anon.FieldNameSize
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +19,7 @@ trait MultipartOptions extends js.Object {
   ] = js.undefined
    // required file submit, default is true
   var defCharset: js.UndefOr[String] = js.undefined
-  var limits: js.UndefOr[AnonFieldNameSize] = js.undefined
+  var limits: js.UndefOr[FieldNameSize] = js.undefined
   var requireFile: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -27,14 +28,14 @@ object MultipartOptions {
   def apply(
     checkFile: (/* fieldname */ String, /* file */ js.Any, /* filename */ String, /* encoding */ String, /* mimetype */ String) => Unit | Error = null,
     defCharset: String = null,
-    limits: AnonFieldNameSize = null,
+    limits: FieldNameSize = null,
     requireFile: js.UndefOr[Boolean] = js.undefined
   ): MultipartOptions = {
     val __obj = js.Dynamic.literal()
     if (checkFile != null) __obj.updateDynamic("checkFile")(js.Any.fromFunction5(checkFile))
     if (defCharset != null) __obj.updateDynamic("defCharset")(defCharset.asInstanceOf[js.Any])
     if (limits != null) __obj.updateDynamic("limits")(limits.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireFile)) __obj.updateDynamic("requireFile")(requireFile.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireFile)) __obj.updateDynamic("requireFile")(requireFile.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultipartOptions]
   }
 }

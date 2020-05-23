@@ -13,8 +13,8 @@ trait IHighlight extends IBase {
   /** [Property] (Object) */
   var highlightCfg: js.UndefOr[js.Any] = js.undefined
   /** [Method] Highlight the given series item
-  		* @param item Object Info about the item; same format as returned by #getItemForPoint.
-  		*/
+    * @param item Object Info about the item; same format as returned by #getItemForPoint.
+    */
   var highlightItem: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Un highlight any existing highlights */
   var unHighlightItem: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -61,7 +61,7 @@ object IHighlight {
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (unHighlightItem != null) __obj.updateDynamic("unHighlightItem")(js.Any.fromFunction0(unHighlightItem))
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])

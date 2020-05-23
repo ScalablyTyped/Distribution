@@ -1,5 +1,7 @@
 package typings.fridaGum
 
+import typings.fridaGum.anon.Index
+import typings.fridaGum.anon.Value
 import typings.fridaGum.fridaGumStrings.`reg-mrs`
 import typings.fridaGum.fridaGumStrings.`reg-msr`
 import typings.fridaGum.fridaGumStrings.barrier
@@ -36,16 +38,16 @@ object Arm64Operand {
     `type`: barrier,
     value: Double,
     ext: Arm64Extender = null,
-    shift: AnonValue = null,
+    shift: Value = null,
     vas: Arm64Vas = null,
-    vectorIndex: Int | Double = null
+    vectorIndex: js.UndefOr[Double] = js.undefined
   ): Arm64Operand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
     if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
     if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(vectorIndex)) __obj.updateDynamic("vectorIndex")(vectorIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arm64Operand]
   }
   @scala.inline
@@ -53,16 +55,16 @@ object Arm64Operand {
     `type`: pstate,
     value: Double,
     ext: Arm64Extender = null,
-    shift: AnonValue = null,
+    shift: Value = null,
     vas: Arm64Vas = null,
-    vectorIndex: Int | Double = null
+    vectorIndex: js.UndefOr[Double] = js.undefined
   ): Arm64Operand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
     if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
     if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(vectorIndex)) __obj.updateDynamic("vectorIndex")(vectorIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arm64Operand]
   }
   @scala.inline
@@ -70,16 +72,16 @@ object Arm64Operand {
     `type`: `reg-mrs`,
     value: Arm64Register,
     ext: Arm64Extender = null,
-    shift: AnonValue = null,
+    shift: Value = null,
     vas: Arm64Vas = null,
-    vectorIndex: Int | Double = null
+    vectorIndex: js.UndefOr[Double] = js.undefined
   ): Arm64Operand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
     if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
     if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(vectorIndex)) __obj.updateDynamic("vectorIndex")(vectorIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arm64Operand]
   }
   @scala.inline
@@ -87,33 +89,33 @@ object Arm64Operand {
     `type`: prefetch,
     value: Double,
     ext: Arm64Extender = null,
-    shift: AnonValue = null,
+    shift: Value = null,
     vas: Arm64Vas = null,
-    vectorIndex: Int | Double = null
+    vectorIndex: js.UndefOr[Double] = js.undefined
   ): Arm64Operand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
     if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
     if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(vectorIndex)) __obj.updateDynamic("vectorIndex")(vectorIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arm64Operand]
   }
   @scala.inline
   def Arm64CimmOperand(
     `type`: cimm,
-    value: Int64_,
+    value: Int64,
     ext: Arm64Extender = null,
-    shift: AnonValue = null,
+    shift: Value = null,
     vas: Arm64Vas = null,
-    vectorIndex: Int | Double = null
+    vectorIndex: js.UndefOr[Double] = js.undefined
   ): Arm64Operand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
     if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
     if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(vectorIndex)) __obj.updateDynamic("vectorIndex")(vectorIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arm64Operand]
   }
   @scala.inline
@@ -121,16 +123,16 @@ object Arm64Operand {
     `type`: `reg-msr`,
     value: Arm64Register,
     ext: Arm64Extender = null,
-    shift: AnonValue = null,
+    shift: Value = null,
     vas: Arm64Vas = null,
-    vectorIndex: Int | Double = null
+    vectorIndex: js.UndefOr[Double] = js.undefined
   ): Arm64Operand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
     if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
     if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(vectorIndex)) __obj.updateDynamic("vectorIndex")(vectorIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arm64Operand]
   }
   @scala.inline
@@ -138,16 +140,16 @@ object Arm64Operand {
     `type`: reg,
     value: Arm64Register,
     ext: Arm64Extender = null,
-    shift: AnonValue = null,
+    shift: Value = null,
     vas: Arm64Vas = null,
-    vectorIndex: Int | Double = null
+    vectorIndex: js.UndefOr[Double] = js.undefined
   ): Arm64Operand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
     if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
     if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(vectorIndex)) __obj.updateDynamic("vectorIndex")(vectorIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arm64Operand]
   }
   @scala.inline
@@ -155,16 +157,16 @@ object Arm64Operand {
     `type`: sys,
     value: Double,
     ext: Arm64Extender = null,
-    shift: AnonValue = null,
+    shift: Value = null,
     vas: Arm64Vas = null,
-    vectorIndex: Int | Double = null
+    vectorIndex: js.UndefOr[Double] = js.undefined
   ): Arm64Operand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
     if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
     if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(vectorIndex)) __obj.updateDynamic("vectorIndex")(vectorIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arm64Operand]
   }
   @scala.inline
@@ -172,50 +174,50 @@ object Arm64Operand {
     `type`: fp,
     value: Double,
     ext: Arm64Extender = null,
-    shift: AnonValue = null,
+    shift: Value = null,
     vas: Arm64Vas = null,
-    vectorIndex: Int | Double = null
+    vectorIndex: js.UndefOr[Double] = js.undefined
   ): Arm64Operand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
     if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
     if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(vectorIndex)) __obj.updateDynamic("vectorIndex")(vectorIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arm64Operand]
   }
   @scala.inline
   def Arm64MemOperand(
     `type`: mem,
-    value: AnonIndex,
+    value: Index,
     ext: Arm64Extender = null,
-    shift: AnonValue = null,
+    shift: Value = null,
     vas: Arm64Vas = null,
-    vectorIndex: Int | Double = null
+    vectorIndex: js.UndefOr[Double] = js.undefined
   ): Arm64Operand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
     if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
     if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(vectorIndex)) __obj.updateDynamic("vectorIndex")(vectorIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arm64Operand]
   }
   @scala.inline
   def Arm64ImmOperand(
     `type`: imm,
-    value: Int64_,
+    value: Int64,
     ext: Arm64Extender = null,
-    shift: AnonValue = null,
+    shift: Value = null,
     vas: Arm64Vas = null,
-    vectorIndex: Int | Double = null
+    vectorIndex: js.UndefOr[Double] = js.undefined
   ): Arm64Operand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
     if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
     if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(vectorIndex)) __obj.updateDynamic("vectorIndex")(vectorIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arm64Operand]
   }
 }

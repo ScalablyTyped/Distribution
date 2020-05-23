@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.text
 import typings.arcgisJsApi.esri.content.Content
 import scala.scalajs.js
@@ -29,8 +28,4 @@ trait TextContent
   @JSName("type")
   val type_TextContent: text = js.native
 }
-
-@JSGlobal("__esri.TextContent")
-@js.native
-object TextContent extends TopLevel[TextContentConstructor]
 

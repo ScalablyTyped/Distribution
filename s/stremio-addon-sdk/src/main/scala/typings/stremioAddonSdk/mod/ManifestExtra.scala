@@ -41,12 +41,12 @@ object ManifestExtra {
     name: Extra,
     isRequired: js.UndefOr[Boolean] = js.undefined,
     options: js.Array[String] = null,
-    optionsLimit: Int | Double = null
+    optionsLimit: js.UndefOr[Double] = js.undefined
   ): ManifestExtra = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.get.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (optionsLimit != null) __obj.updateDynamic("optionsLimit")(optionsLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(optionsLimit)) __obj.updateDynamic("optionsLimit")(optionsLimit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManifestExtra]
   }
 }

@@ -29,7 +29,7 @@ object UserArgs {
     printCode: js.UndefOr[Boolean] = js.undefined
   ): UserArgs = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], blockSize = blockSize.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], funcName = funcName.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any])
-    if (!js.isUndefined(printCode)) __obj.updateDynamic("printCode")(printCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(printCode)) __obj.updateDynamic("printCode")(printCode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserArgs]
   }
 }

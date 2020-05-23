@@ -54,7 +54,7 @@ object JsonWebKey {
     if (dp != null) __obj.updateDynamic("dp")(dp.asInstanceOf[js.Any])
     if (dq != null) __obj.updateDynamic("dq")(dq.asInstanceOf[js.Any])
     if (e != null) __obj.updateDynamic("e")(e.asInstanceOf[js.Any])
-    if (!js.isUndefined(ext)) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
+    if (!js.isUndefined(ext)) __obj.updateDynamic("ext")(ext.get.asInstanceOf[js.Any])
     if (k != null) __obj.updateDynamic("k")(k.asInstanceOf[js.Any])
     if (key_ops != null) __obj.updateDynamic("key_ops")(key_ops.asInstanceOf[js.Any])
     if (kty != null) __obj.updateDynamic("kty")(kty.asInstanceOf[js.Any])

@@ -14,10 +14,13 @@ trait IConsensusSendToRequest extends js.Object {
 
 object IConsensusSendToRequest {
   @scala.inline
-  def apply(message: IConsensusPeerMessage = null, peerId: Uint8Array = null): IConsensusSendToRequest = {
+  def apply(
+    message: js.UndefOr[Null | IConsensusPeerMessage] = js.undefined,
+    peerId: js.UndefOr[Null | Uint8Array] = js.undefined
+  ): IConsensusSendToRequest = {
     val __obj = js.Dynamic.literal()
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (peerId != null) __obj.updateDynamic("peerId")(peerId.asInstanceOf[js.Any])
+    if (!js.isUndefined(message)) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (!js.isUndefined(peerId)) __obj.updateDynamic("peerId")(peerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConsensusSendToRequest]
   }
 }

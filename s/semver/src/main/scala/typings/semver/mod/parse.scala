@@ -8,12 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("semver", "parse")
 @js.native
 object parse extends js.Object {
-  def apply(): ^  | Null = js.native
-  def apply(version: js.UndefOr[scala.Nothing], optionsOrLoose: Boolean): ^  | Null = js.native
-  def apply(version: js.UndefOr[scala.Nothing], optionsOrLoose: Options): ^  | Null = js.native
   /**
     * Return the parsed version as a SemVer object, or null if it's not valid.
     */
+  def apply(): ^  | Null = js.native
   def apply(version: String): ^  | Null = js.native
   def apply(version: String, optionsOrLoose: Boolean): ^  | Null = js.native
   def apply(version: String, optionsOrLoose: Options): ^  | Null = js.native

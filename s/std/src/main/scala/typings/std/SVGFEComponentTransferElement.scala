@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,8 +47,4 @@ trait SVGFEComponentTransferElement
     options: EventListenerOptions
   ): Unit = js.native
 }
-
-@JSGlobal("SVGFEComponentTransferElement")
-@js.native
-object SVGFEComponentTransferElement extends Instantiable0[SVGFEComponentTransferElement]
 

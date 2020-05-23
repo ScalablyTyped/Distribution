@@ -49,9 +49,9 @@ object AutoBranchCreationConfig {
   def apply(
     basicAuthCredentials: BasicAuthCredentials = null,
     buildSpec: BuildSpec = null,
-    enableAutoBuild: js.UndefOr[Boolean] = js.undefined,
-    enableBasicAuth: js.UndefOr[Boolean] = js.undefined,
-    enablePullRequestPreview: js.UndefOr[Boolean] = js.undefined,
+    enableAutoBuild: js.UndefOr[EnableAutoBuild] = js.undefined,
+    enableBasicAuth: js.UndefOr[EnableBasicAuth] = js.undefined,
+    enablePullRequestPreview: js.UndefOr[EnablePullRequestPreview] = js.undefined,
     environmentVariables: EnvironmentVariables = null,
     framework: Framework = null,
     pullRequestEnvironmentName: PullRequestEnvironmentName = null,
@@ -60,9 +60,9 @@ object AutoBranchCreationConfig {
     val __obj = js.Dynamic.literal()
     if (basicAuthCredentials != null) __obj.updateDynamic("basicAuthCredentials")(basicAuthCredentials.asInstanceOf[js.Any])
     if (buildSpec != null) __obj.updateDynamic("buildSpec")(buildSpec.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAutoBuild)) __obj.updateDynamic("enableAutoBuild")(enableAutoBuild.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableBasicAuth)) __obj.updateDynamic("enableBasicAuth")(enableBasicAuth.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePullRequestPreview)) __obj.updateDynamic("enablePullRequestPreview")(enablePullRequestPreview.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAutoBuild)) __obj.updateDynamic("enableAutoBuild")(enableAutoBuild.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableBasicAuth)) __obj.updateDynamic("enableBasicAuth")(enableBasicAuth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePullRequestPreview)) __obj.updateDynamic("enablePullRequestPreview")(enablePullRequestPreview.get.asInstanceOf[js.Any])
     if (environmentVariables != null) __obj.updateDynamic("environmentVariables")(environmentVariables.asInstanceOf[js.Any])
     if (framework != null) __obj.updateDynamic("framework")(framework.asInstanceOf[js.Any])
     if (pullRequestEnvironmentName != null) __obj.updateDynamic("pullRequestEnvironmentName")(pullRequestEnvironmentName.asInstanceOf[js.Any])

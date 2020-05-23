@@ -21,16 +21,16 @@ object WifiAccessPoint {
   @scala.inline
   def apply(
     macAddress: String,
-    age: Int | Double = null,
-    channel: Int | Double = null,
-    signalStrength: Int | Double = null,
-    signalToNoiseRatio: Int | Double = null
+    age: js.UndefOr[Double] = js.undefined,
+    channel: js.UndefOr[Double] = js.undefined,
+    signalStrength: js.UndefOr[Double] = js.undefined,
+    signalToNoiseRatio: js.UndefOr[Double] = js.undefined
   ): WifiAccessPoint = {
     val __obj = js.Dynamic.literal(macAddress = macAddress.asInstanceOf[js.Any])
-    if (age != null) __obj.updateDynamic("age")(age.asInstanceOf[js.Any])
-    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
-    if (signalStrength != null) __obj.updateDynamic("signalStrength")(signalStrength.asInstanceOf[js.Any])
-    if (signalToNoiseRatio != null) __obj.updateDynamic("signalToNoiseRatio")(signalToNoiseRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(age)) __obj.updateDynamic("age")(age.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(channel)) __obj.updateDynamic("channel")(channel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(signalStrength)) __obj.updateDynamic("signalStrength")(signalStrength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(signalToNoiseRatio)) __obj.updateDynamic("signalToNoiseRatio")(signalToNoiseRatio.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WifiAccessPoint]
   }
 }

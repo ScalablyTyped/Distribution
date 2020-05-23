@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,14 +15,6 @@ object headerOption extends js.Object {
   
   @js.native
   sealed trait tHead extends headerOption
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[headerOption with Double] = js.native
-  /* 0 */ @js.native
-  object row extends TopLevel[row with Double]
-  
-  /* 1 */ @js.native
-  object tHead extends TopLevel[tHead with Double]
   
 }
 

@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side counterpart of the Scheduler extension.
   */
-@JSGlobal("MVCxClientScheduler")
 @js.native
-class MVCxClientScheduler () extends ASPxClientScheduler {
+trait MVCxClientScheduler extends ASPxClientScheduler {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -26,16 +25,5 @@ class MVCxClientScheduler () extends ASPxClientScheduler {
     */
   def PerformCallback(data: js.Any): Unit = js.native
   def PerformCallback(data: js.Any, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("MVCxClientScheduler")
-@js.native
-object MVCxClientScheduler extends js.Object {
-  /**
-    * Converts the specified object to the MVCxClientScheduler type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): MVCxClientScheduler = js.native
 }
 

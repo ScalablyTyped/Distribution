@@ -1,12 +1,12 @@
 package typings.egg.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.egg.AnonCallback
-import typings.egg.AnonCookieField
-import typings.egg.AnonCsp
-import typings.egg.AnonEnable
-import typings.egg.AnonFastReady
-import typings.egg.AnonIgnore
+import typings.egg.anon.Callback
+import typings.egg.anon.CookieField
+import typings.egg.anon.Csp
+import typings.egg.anon.Enable
+import typings.egg.anon.FastReady
+import typings.egg.anon.Ignore
 import typings.eggLogger.mod.EggLoggerOptions
 import typings.node.Buffer
 import typings.node.netMod.Socket
@@ -30,8 +30,9 @@ trait EggAppConfig
     * @property {String | RegExp | Function | Array} ignore - won't parse request body when url path hit ignore pattern, can not set `ignore` when `match` presented
     * @property {String | RegExp | Function | Array} match - will parse request body only when url path hit match pattern
     * @property {String} encoding - body encoding config, default utf8
-    * @property {String} formLimit - form body size limit, default 100kb
-    * @property {String} jsonLimit - json body size limit, default 100kb
+    * @property {String} formLimit - form body size limit, default 1mb
+    * @property {String} jsonLimit - json body size limit, default 1mb
+    * @property {String} textLimit - json body size limit, default 1mb
     * @property {Boolean} strict - json body strict mode, if set strict value true, then only receive object and array json body
     * @property {Number} queryString.arrayLimit - from item array length limit, default 100
     * @property {Number} queryString.depth - json value deep lenght, default 5
@@ -39,18 +40,18 @@ trait EggAppConfig
     * @property {string[]} enableTypes - parser will only parse when request type hits enableTypes, default is ['json', 'form']
     * @property {any} extendTypes - support extend types
     */
-  var bodyParser: AnonEnable
+  var bodyParser: Enable
   /**
     * customLoader config
     */
   var customLoader: StringDictionary[CustomLoaderConfig]
   /** custom logger of egg */
   var customLogger: StringDictionary[EggLoggerOptions]
-  var development: AnonFastReady
+  var development: FastReady
   /**
     * It will ignore special keys when dumpConfig
     */
-  var dump: AnonIgnore
+  var dump: Ignore
   /**
     * The environment of egg
     */
@@ -61,7 +62,7 @@ trait EggAppConfig
   /**
     * I18n options
     */
-  var i18n: AnonCookieField
+  var i18n: CookieField
   /**
     * Detect request' ip from specified headers, not case-sensitive. Only worked when config.proxy set to true.
     */
@@ -74,7 +75,7 @@ trait EggAppConfig
     * @property {Boolean} csrf - enable csrf check or not. default to false
     * @property {String|RegExp|Array} whiteList - referrer white list
     */
-  var jsonp: AnonCallback
+  var jsonp: Callback
   /**
     * The key that signing cookies. It can contain multiple keys seperated by .
     */
@@ -106,7 +107,7 @@ trait EggAppConfig
     */
   var pkg: js.Any
   var rundir: String
-  var security: AnonCsp
+  var security: Csp
   /**
     * server timeout in milliseconds, default to 2 minutes.
     *
@@ -126,17 +127,17 @@ object EggAppConfig {
   def apply(
     HOME: String,
     baseDir: String,
-    bodyParser: AnonEnable,
+    bodyParser: Enable,
     customLoader: StringDictionary[CustomLoaderConfig],
     customLogger: StringDictionary[EggLoggerOptions],
-    development: AnonFastReady,
-    dump: AnonIgnore,
+    development: FastReady,
+    dump: Ignore,
     env: EggEnvType,
     hostHeaders: String,
     httpclient: HttpClientConfig,
-    i18n: AnonCookieField,
+    i18n: CookieField,
     ipHeaders: String,
-    jsonp: AnonCallback,
+    jsonp: Callback,
     keys: String,
     logger: EggLoggerConfig,
     middleware: js.Array[String],
@@ -144,16 +145,15 @@ object EggAppConfig {
     onClientError: (Error, Socket, EggApplication) => ClientErrorResponse | js.Promise[ClientErrorResponse],
     pkg: js.Any,
     rundir: String,
-    security: AnonCsp,
+    security: Csp,
     siteFile: PlainObject[String | Buffer],
     watcher: PlainObject[_],
     workerStartTimeout: Double,
-    StringDictionary: /* prop */ StringDictionary[js.Any] = null,
-    serverTimeout: Int | Double = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    serverTimeout: Double = null.asInstanceOf[Double]
   ): EggAppConfig = {
-    val __obj = js.Dynamic.literal(HOME = HOME.asInstanceOf[js.Any], baseDir = baseDir.asInstanceOf[js.Any], bodyParser = bodyParser.asInstanceOf[js.Any], customLoader = customLoader.asInstanceOf[js.Any], customLogger = customLogger.asInstanceOf[js.Any], development = development.asInstanceOf[js.Any], dump = dump.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], hostHeaders = hostHeaders.asInstanceOf[js.Any], httpclient = httpclient.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], ipHeaders = ipHeaders.asInstanceOf[js.Any], jsonp = jsonp.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any], middleware = middleware.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], onClientError = js.Any.fromFunction3(onClientError), pkg = pkg.asInstanceOf[js.Any], rundir = rundir.asInstanceOf[js.Any], security = security.asInstanceOf[js.Any], siteFile = siteFile.asInstanceOf[js.Any], watcher = watcher.asInstanceOf[js.Any], workerStartTimeout = workerStartTimeout.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(HOME = HOME.asInstanceOf[js.Any], baseDir = baseDir.asInstanceOf[js.Any], bodyParser = bodyParser.asInstanceOf[js.Any], customLoader = customLoader.asInstanceOf[js.Any], customLogger = customLogger.asInstanceOf[js.Any], development = development.asInstanceOf[js.Any], dump = dump.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], hostHeaders = hostHeaders.asInstanceOf[js.Any], httpclient = httpclient.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], ipHeaders = ipHeaders.asInstanceOf[js.Any], jsonp = jsonp.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any], middleware = middleware.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], onClientError = js.Any.fromFunction3(onClientError), pkg = pkg.asInstanceOf[js.Any], rundir = rundir.asInstanceOf[js.Any], security = security.asInstanceOf[js.Any], siteFile = siteFile.asInstanceOf[js.Any], watcher = watcher.asInstanceOf[js.Any], workerStartTimeout = workerStartTimeout.asInstanceOf[js.Any], serverTimeout = serverTimeout.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (serverTimeout != null) __obj.updateDynamic("serverTimeout")(serverTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[EggAppConfig]
   }
 }

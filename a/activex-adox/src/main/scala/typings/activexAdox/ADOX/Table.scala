@@ -7,9 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ADOX.Table")
 @js.native
-class Table protected () extends js.Object {
+trait Table extends js.Object {
   @JSName("ADOX.Table_typekey")
   var ADOXDotTable_typekey: Table = js.native
   @JSName("Columns")

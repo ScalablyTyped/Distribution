@@ -34,7 +34,7 @@ trait Folder extends js.Object {
   def getAccess(email: String): Permission = js.native
   def getAccess(user: typings.googleAppsScript.GoogleAppsScript.Base.User): Permission = js.native
   def getDateCreated(): Date = js.native
-  def getDescription(): String = js.native
+  def getDescription(): String | Null = js.native
   def getEditors(): js.Array[User] = js.native
   def getFiles(): FileIterator = js.native
   def getFilesByName(name: String): FileIterator = js.native

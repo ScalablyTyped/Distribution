@@ -12,9 +12,9 @@ trait IGetSubscriptionRequest extends js.Object {
 
 object IGetSubscriptionRequest {
   @scala.inline
-  def apply(subscription: String = null): IGetSubscriptionRequest = {
+  def apply(subscription: js.UndefOr[Null | String] = js.undefined): IGetSubscriptionRequest = {
     val __obj = js.Dynamic.literal()
-    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscription)) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGetSubscriptionRequest]
   }
 }

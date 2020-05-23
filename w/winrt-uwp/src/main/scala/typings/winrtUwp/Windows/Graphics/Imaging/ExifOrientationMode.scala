@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Graphics.Imaging
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object ExifOrientationMode extends js.Object {
   /** If the image frame contains a valid EXIF orientation flag, the specified rotation and/or flip operations are performed on the pixel data. */
   @js.native
   sealed trait respectExifOrientation extends ExifOrientationMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ExifOrientationMode with Double] = js.native
-  /* 0 */ @js.native
-  object ignoreExifOrientation extends TopLevel[ignoreExifOrientation with Double]
-  
-  /* 1 */ @js.native
-  object respectExifOrientation extends TopLevel[respectExifOrientation with Double]
   
 }
 

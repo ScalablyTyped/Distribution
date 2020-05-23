@@ -61,8 +61,8 @@ object MapMatchingRequest {
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (overview != null) __obj.updateDynamic("overview")(overview.asInstanceOf[js.Any])
     if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
-    if (!js.isUndefined(steps)) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
-    if (!js.isUndefined(tidy)) __obj.updateDynamic("tidy")(tidy.asInstanceOf[js.Any])
+    if (!js.isUndefined(steps)) __obj.updateDynamic("steps")(steps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tidy)) __obj.updateDynamic("tidy")(tidy.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapMatchingRequest]
   }
 }

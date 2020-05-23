@@ -56,20 +56,20 @@ object Response {
     relays: js.Array[TRelay],
     relays_published: String,
     version: String,
-    bridges_skipped: Int | Double = null,
-    bridges_truncated: Int | Double = null,
+    bridges_skipped: js.UndefOr[Double] = js.undefined,
+    bridges_truncated: js.UndefOr[Double] = js.undefined,
     build_revision: String = null,
     next_major_version_scheduled: String = null,
-    relays_skipped: Int | Double = null,
-    relays_truncated: Int | Double = null
+    relays_skipped: js.UndefOr[Double] = js.undefined,
+    relays_truncated: js.UndefOr[Double] = js.undefined
   ): Response[TRelay, TBridge] = {
     val __obj = js.Dynamic.literal(bridges = bridges.asInstanceOf[js.Any], bridges_published = bridges_published.asInstanceOf[js.Any], relays = relays.asInstanceOf[js.Any], relays_published = relays_published.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-    if (bridges_skipped != null) __obj.updateDynamic("bridges_skipped")(bridges_skipped.asInstanceOf[js.Any])
-    if (bridges_truncated != null) __obj.updateDynamic("bridges_truncated")(bridges_truncated.asInstanceOf[js.Any])
+    if (!js.isUndefined(bridges_skipped)) __obj.updateDynamic("bridges_skipped")(bridges_skipped.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bridges_truncated)) __obj.updateDynamic("bridges_truncated")(bridges_truncated.get.asInstanceOf[js.Any])
     if (build_revision != null) __obj.updateDynamic("build_revision")(build_revision.asInstanceOf[js.Any])
     if (next_major_version_scheduled != null) __obj.updateDynamic("next_major_version_scheduled")(next_major_version_scheduled.asInstanceOf[js.Any])
-    if (relays_skipped != null) __obj.updateDynamic("relays_skipped")(relays_skipped.asInstanceOf[js.Any])
-    if (relays_truncated != null) __obj.updateDynamic("relays_truncated")(relays_truncated.asInstanceOf[js.Any])
+    if (!js.isUndefined(relays_skipped)) __obj.updateDynamic("relays_skipped")(relays_skipped.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(relays_truncated)) __obj.updateDynamic("relays_truncated")(relays_truncated.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response[TRelay, TBridge]]
   }
 }

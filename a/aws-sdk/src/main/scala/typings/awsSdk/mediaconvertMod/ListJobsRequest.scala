@@ -31,14 +31,14 @@ trait ListJobsRequest extends js.Object {
 object ListJobsRequest {
   @scala.inline
   def apply(
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[integerMin1Max20] = js.undefined,
     NextToken: string = null,
     Order: Order = null,
     Queue: string = null,
     Status: JobStatus = null
   ): ListJobsRequest = {
     val __obj = js.Dynamic.literal()
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (Order != null) __obj.updateDynamic("Order")(Order.asInstanceOf[js.Any])
     if (Queue != null) __obj.updateDynamic("Queue")(Queue.asInstanceOf[js.Any])

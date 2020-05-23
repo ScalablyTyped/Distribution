@@ -68,16 +68,16 @@ object CreateTrafficMirrorFilterRuleRequest {
     ClientToken: String = null,
     Description: String = null,
     DestinationPortRange: TrafficMirrorPortRangeRequest = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
-    Protocol: Int | scala.Double = null,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
+    Protocol: js.UndefOr[Integer] = js.undefined,
     SourcePortRange: TrafficMirrorPortRangeRequest = null
   ): CreateTrafficMirrorFilterRuleRequest = {
     val __obj = js.Dynamic.literal(DestinationCidrBlock = DestinationCidrBlock.asInstanceOf[js.Any], RuleAction = RuleAction.asInstanceOf[js.Any], RuleNumber = RuleNumber.asInstanceOf[js.Any], SourceCidrBlock = SourceCidrBlock.asInstanceOf[js.Any], TrafficDirection = TrafficDirection.asInstanceOf[js.Any], TrafficMirrorFilterId = TrafficMirrorFilterId.asInstanceOf[js.Any])
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (DestinationPortRange != null) __obj.updateDynamic("DestinationPortRange")(DestinationPortRange.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
-    if (Protocol != null) __obj.updateDynamic("Protocol")(Protocol.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Protocol)) __obj.updateDynamic("Protocol")(Protocol.get.asInstanceOf[js.Any])
     if (SourcePortRange != null) __obj.updateDynamic("SourcePortRange")(SourcePortRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTrafficMirrorFilterRuleRequest]
   }

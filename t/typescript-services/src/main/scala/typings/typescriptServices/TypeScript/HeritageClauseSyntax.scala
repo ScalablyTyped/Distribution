@@ -4,15 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.HeritageClauseSyntax")
 @js.native
-class HeritageClauseSyntax protected () extends SyntaxNode {
-  def this(
-    kind: SyntaxKind,
-    extendsOrImplementsKeyword: ISyntaxToken,
-    typeNames: ISeparatedSyntaxList,
-    parsedInStrictMode: Boolean
-  ) = this()
+trait HeritageClauseSyntax extends SyntaxNode {
   var _kind: js.Any = js.native
   var extendsOrImplementsKeyword: ISyntaxToken = js.native
   var typeNames: ISeparatedSyntaxList = js.native

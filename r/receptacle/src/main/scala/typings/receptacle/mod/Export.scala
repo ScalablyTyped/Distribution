@@ -18,10 +18,10 @@ object Export {
     id: Double | String,
     items: js.Array[Items[T] with InternalItemData[T]],
     lastModified: Date,
-    max: Int | Double = null
+    max: js.UndefOr[Double] = js.undefined
   ): Export[T, X] = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], lastModified = lastModified.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Export[T, X]]
   }
 }

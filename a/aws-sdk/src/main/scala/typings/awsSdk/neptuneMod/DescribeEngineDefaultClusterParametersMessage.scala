@@ -30,12 +30,12 @@ object DescribeEngineDefaultClusterParametersMessage {
     DBParameterGroupFamily: String,
     Filters: FilterList = null,
     Marker: String = null,
-    MaxRecords: Int | scala.Double = null
+    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
   ): DescribeEngineDefaultClusterParametersMessage = {
     val __obj = js.Dynamic.literal(DBParameterGroupFamily = DBParameterGroupFamily.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEngineDefaultClusterParametersMessage]
   }
 }

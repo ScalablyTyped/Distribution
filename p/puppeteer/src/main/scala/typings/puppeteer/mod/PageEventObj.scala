@@ -1,6 +1,5 @@
 package typings.puppeteer.mod
 
-import typings.puppeteer.AnonMetrics
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,7 +32,7 @@ trait PageEventObj extends js.Object {
     * Emitted when the JavaScript code makes a call to `console.timeStamp`.
     * For the list of metrics see `page.metrics`.
     */
-  var metrics: AnonMetrics
+  var metrics: typings.puppeteer.anon.Metrics
   /** Emitted when an uncaught exception happens within the page. */
   var pageerror: Error
   /** Emitted when the page opens a new tab or window. */
@@ -64,7 +63,7 @@ object PageEventObj {
     frameattached: Frame,
     framedetached: Frame,
     framenavigated: Frame,
-    metrics: AnonMetrics,
+    metrics: typings.puppeteer.anon.Metrics,
     pageerror: Error,
     popup: Page,
     request: Request,
@@ -72,13 +71,9 @@ object PageEventObj {
     requestfinished: Request,
     response: Response,
     workercreated: Worker,
-    workerdestroyed: Worker,
-    close: js.UndefOr[scala.Nothing] = js.undefined,
-    load: js.UndefOr[scala.Nothing] = js.undefined
+    workerdestroyed: Worker
   ): PageEventObj = {
     val __obj = js.Dynamic.literal(console = console.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], frameattached = frameattached.asInstanceOf[js.Any], framedetached = framedetached.asInstanceOf[js.Any], framenavigated = framenavigated.asInstanceOf[js.Any], metrics = metrics.asInstanceOf[js.Any], pageerror = pageerror.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], requestfailed = requestfailed.asInstanceOf[js.Any], requestfinished = requestfinished.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], workercreated = workercreated.asInstanceOf[js.Any], workerdestroyed = workerdestroyed.asInstanceOf[js.Any])
-    if (!js.isUndefined(close)) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
-    if (!js.isUndefined(load)) __obj.updateDynamic("load")(load.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageEventObj]
   }
 }

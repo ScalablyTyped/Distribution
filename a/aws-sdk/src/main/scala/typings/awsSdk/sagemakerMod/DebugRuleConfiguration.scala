@@ -45,14 +45,14 @@ object DebugRuleConfiguration {
     LocalPath: DirectoryPath = null,
     RuleParameters: RuleParameters = null,
     S3OutputPath: S3Uri = null,
-    VolumeSizeInGB: Int | Double = null
+    VolumeSizeInGB: js.UndefOr[OptionalVolumeSizeInGB] = js.undefined
   ): DebugRuleConfiguration = {
     val __obj = js.Dynamic.literal(RuleConfigurationName = RuleConfigurationName.asInstanceOf[js.Any], RuleEvaluatorImage = RuleEvaluatorImage.asInstanceOf[js.Any])
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
     if (LocalPath != null) __obj.updateDynamic("LocalPath")(LocalPath.asInstanceOf[js.Any])
     if (RuleParameters != null) __obj.updateDynamic("RuleParameters")(RuleParameters.asInstanceOf[js.Any])
     if (S3OutputPath != null) __obj.updateDynamic("S3OutputPath")(S3OutputPath.asInstanceOf[js.Any])
-    if (VolumeSizeInGB != null) __obj.updateDynamic("VolumeSizeInGB")(VolumeSizeInGB.asInstanceOf[js.Any])
+    if (!js.isUndefined(VolumeSizeInGB)) __obj.updateDynamic("VolumeSizeInGB")(VolumeSizeInGB.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebugRuleConfiguration]
   }
 }

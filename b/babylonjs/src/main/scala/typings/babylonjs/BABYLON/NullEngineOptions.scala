@@ -4,30 +4,42 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.NullEngineOptions")
-@js.native
-class NullEngineOptions () extends js.Object {
+trait NullEngineOptions extends js.Object {
   /**
     * If delta time between frames should be constant
     * @see https://doc.babylonjs.com/babylon101/animations#deterministic-lockstep
     */
-  var deterministicLockstep: Boolean = js.native
+  var deterministicLockstep: Boolean
   /**
     * Maximum about of steps between frames (Default: 4)
     * @see https://doc.babylonjs.com/babylon101/animations#deterministic-lockstep
     */
-  var lockstepMaxSteps: Double = js.native
+  var lockstepMaxSteps: Double
   /**
     * Render height (Default: 256)
     */
-  var renderHeight: Double = js.native
+  var renderHeight: Double
   /**
     * Render width (Default: 512)
     */
-  var renderWidth: Double = js.native
+  var renderWidth: Double
   /**
     * Texture size (Default: 512)
     */
-  var textureSize: Double = js.native
+  var textureSize: Double
+}
+
+object NullEngineOptions {
+  @scala.inline
+  def apply(
+    deterministicLockstep: Boolean,
+    lockstepMaxSteps: Double,
+    renderHeight: Double,
+    renderWidth: Double,
+    textureSize: Double
+  ): NullEngineOptions = {
+    val __obj = js.Dynamic.literal(deterministicLockstep = deterministicLockstep.asInstanceOf[js.Any], lockstepMaxSteps = lockstepMaxSteps.asInstanceOf[js.Any], renderHeight = renderHeight.asInstanceOf[js.Any], renderWidth = renderWidth.asInstanceOf[js.Any], textureSize = textureSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NullEngineOptions]
+  }
 }
 

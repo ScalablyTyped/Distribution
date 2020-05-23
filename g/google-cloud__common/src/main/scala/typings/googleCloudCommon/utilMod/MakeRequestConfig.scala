@@ -26,15 +26,15 @@ object MakeRequestConfig {
   @scala.inline
   def apply(
     autoRetry: js.UndefOr[Boolean] = js.undefined,
-    maxRetries: Int | Double = null,
-    retries: Int | Double = null,
+    maxRetries: js.UndefOr[Double] = js.undefined,
+    retries: js.UndefOr[Double] = js.undefined,
     shouldRetryFn: /* response */ js.UndefOr[Response[_]] => Boolean = null,
     stream: Duplexify = null
   ): MakeRequestConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoRetry)) __obj.updateDynamic("autoRetry")(autoRetry.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoRetry)) __obj.updateDynamic("autoRetry")(autoRetry.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retries)) __obj.updateDynamic("retries")(retries.get.asInstanceOf[js.Any])
     if (shouldRetryFn != null) __obj.updateDynamic("shouldRetryFn")(js.Any.fromFunction1(shouldRetryFn))
     if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
     __obj.asInstanceOf[MakeRequestConfig]

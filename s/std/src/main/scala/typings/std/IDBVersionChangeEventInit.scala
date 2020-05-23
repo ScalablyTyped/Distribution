@@ -15,15 +15,15 @@ object IDBVersionChangeEventInit {
     bubbles: js.UndefOr[scala.Boolean] = js.undefined,
     cancelable: js.UndefOr[scala.Boolean] = js.undefined,
     composed: js.UndefOr[scala.Boolean] = js.undefined,
-    newVersion: Int | Double = null,
-    oldVersion: Int | Double = null
+    newVersion: js.UndefOr[Null | Double] = js.undefined,
+    oldVersion: js.UndefOr[Double] = js.undefined
   ): IDBVersionChangeEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (newVersion != null) __obj.updateDynamic("newVersion")(newVersion.asInstanceOf[js.Any])
-    if (oldVersion != null) __obj.updateDynamic("oldVersion")(oldVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(newVersion)) __obj.updateDynamic("newVersion")(newVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(oldVersion)) __obj.updateDynamic("oldVersion")(oldVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDBVersionChangeEventInit]
   }
 }

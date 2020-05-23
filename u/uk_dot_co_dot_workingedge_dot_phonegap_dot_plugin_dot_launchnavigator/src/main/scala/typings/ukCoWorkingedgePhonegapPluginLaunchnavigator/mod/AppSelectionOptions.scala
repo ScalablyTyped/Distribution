@@ -40,7 +40,7 @@ trait AppSelectionOptions extends js.Object {
 object AppSelectionOptions {
   @scala.inline
   def apply(
-    androidTheme: Int | Double = null,
+    androidTheme: js.UndefOr[Double] = js.undefined,
     callback: /* app */ String => Unit = null,
     cancelButtonText: String = null,
     dialogHeaderText: String = null,
@@ -48,7 +48,7 @@ object AppSelectionOptions {
     rememberChoice: RememberChoiceOptions = null
   ): AppSelectionOptions = {
     val __obj = js.Dynamic.literal()
-    if (androidTheme != null) __obj.updateDynamic("androidTheme")(androidTheme.asInstanceOf[js.Any])
+    if (!js.isUndefined(androidTheme)) __obj.updateDynamic("androidTheme")(androidTheme.get.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
     if (cancelButtonText != null) __obj.updateDynamic("cancelButtonText")(cancelButtonText.asInstanceOf[js.Any])
     if (dialogHeaderText != null) __obj.updateDynamic("dialogHeaderText")(dialogHeaderText.asInstanceOf[js.Any])

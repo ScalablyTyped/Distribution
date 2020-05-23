@@ -15,7 +15,7 @@ object LinkOptions {
   def apply(key: String | Buffer = null, noKey: js.UndefOr[Boolean] = js.undefined): LinkOptions = {
     val __obj = js.Dynamic.literal()
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(noKey)) __obj.updateDynamic("noKey")(noKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(noKey)) __obj.updateDynamic("noKey")(noKey.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkOptions]
   }
 }

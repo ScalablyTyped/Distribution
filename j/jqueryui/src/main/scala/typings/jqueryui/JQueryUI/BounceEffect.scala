@@ -11,10 +11,10 @@ trait BounceEffect extends js.Object {
 
 object BounceEffect {
   @scala.inline
-  def apply(distance: Int | Double = null, times: Int | Double = null): BounceEffect = {
+  def apply(distance: js.UndefOr[Double] = js.undefined, times: js.UndefOr[Double] = js.undefined): BounceEffect = {
     val __obj = js.Dynamic.literal()
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (times != null) __obj.updateDynamic("times")(times.asInstanceOf[js.Any])
+    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(times)) __obj.updateDynamic("times")(times.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BounceEffect]
   }
 }

@@ -1,7 +1,7 @@
 package typings.divaJs.interfacesMod
 
-import typings.divaJs.AnonD
-import typings.divaJs.AnonH
+import typings.divaJs.anon.D
+import typings.divaJs.anon.H
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 trait Page extends js.Object {
   var api: Double
   var canvas: String
-  var d: AnonH
+  var d: H
   var f: String
   var facingPages: Boolean
   var il: String
   var l: String
   var m: Double
-  var otherImages: AnonD
+  var otherImages: D
   var paged: Boolean
   var url: String
   var xoffset: Double
@@ -27,13 +27,13 @@ object Page {
   def apply(
     api: Double,
     canvas: String,
-    d: AnonH,
+    d: H,
     f: String,
     facingPages: Boolean,
     il: String,
     l: String,
     m: Double,
-    otherImages: AnonD,
+    otherImages: D,
     paged: Boolean,
     url: String,
     xoffset: Double,

@@ -70,7 +70,7 @@ object DrawingManagerOptions {
     circleOptions: CircleOptions = null,
     drawingControl: js.UndefOr[Boolean] = js.undefined,
     drawingControlOptions: DrawingControlOptions = null,
-    drawingMode: OverlayType = null,
+    drawingMode: js.UndefOr[Null | OverlayType] = js.undefined,
     map: Map[Element] = null,
     markerOptions: MarkerOptions = null,
     polygonOptions: PolygonOptions = null,
@@ -79,9 +79,9 @@ object DrawingManagerOptions {
   ): DrawingManagerOptions = {
     val __obj = js.Dynamic.literal()
     if (circleOptions != null) __obj.updateDynamic("circleOptions")(circleOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawingControl)) __obj.updateDynamic("drawingControl")(drawingControl.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawingControl)) __obj.updateDynamic("drawingControl")(drawingControl.get.asInstanceOf[js.Any])
     if (drawingControlOptions != null) __obj.updateDynamic("drawingControlOptions")(drawingControlOptions.asInstanceOf[js.Any])
-    if (drawingMode != null) __obj.updateDynamic("drawingMode")(drawingMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawingMode)) __obj.updateDynamic("drawingMode")(drawingMode.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     if (markerOptions != null) __obj.updateDynamic("markerOptions")(markerOptions.asInstanceOf[js.Any])
     if (polygonOptions != null) __obj.updateDynamic("polygonOptions")(polygonOptions.asInstanceOf[js.Any])

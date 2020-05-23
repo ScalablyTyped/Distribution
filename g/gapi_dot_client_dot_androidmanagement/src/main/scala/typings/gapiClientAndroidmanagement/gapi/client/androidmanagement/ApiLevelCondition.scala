@@ -14,9 +14,9 @@ trait ApiLevelCondition extends js.Object {
 
 object ApiLevelCondition {
   @scala.inline
-  def apply(minApiLevel: Int | Double = null): ApiLevelCondition = {
+  def apply(minApiLevel: js.UndefOr[Double] = js.undefined): ApiLevelCondition = {
     val __obj = js.Dynamic.literal()
-    if (minApiLevel != null) __obj.updateDynamic("minApiLevel")(minApiLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(minApiLevel)) __obj.updateDynamic("minApiLevel")(minApiLevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiLevelCondition]
   }
 }

@@ -13,7 +13,7 @@ object GeocodeServiceOptions {
   @scala.inline
   def apply(supportsSuggest: js.UndefOr[Boolean] = js.undefined): GeocodeServiceOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(supportsSuggest)) __obj.updateDynamic("supportsSuggest")(supportsSuggest.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsSuggest)) __obj.updateDynamic("supportsSuggest")(supportsSuggest.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeocodeServiceOptions]
   }
 }

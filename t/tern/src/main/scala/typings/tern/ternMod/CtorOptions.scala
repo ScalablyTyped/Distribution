@@ -23,13 +23,13 @@ object CtorOptions {
   def apply(
     defs: js.Array[Def] = null,
     ecmaVersion: `5` | `6` = null,
-    fetchTimeout: Int | Double = null,
+    fetchTimeout: js.UndefOr[Double] = js.undefined,
     plugins: StringDictionary[js.Object] = null
   ): CtorOptions = {
     val __obj = js.Dynamic.literal()
     if (defs != null) __obj.updateDynamic("defs")(defs.asInstanceOf[js.Any])
     if (ecmaVersion != null) __obj.updateDynamic("ecmaVersion")(ecmaVersion.asInstanceOf[js.Any])
-    if (fetchTimeout != null) __obj.updateDynamic("fetchTimeout")(fetchTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetchTimeout)) __obj.updateDynamic("fetchTimeout")(fetchTimeout.get.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     __obj.asInstanceOf[CtorOptions]
   }

@@ -1,6 +1,6 @@
 package typings.gapiClient.gapi.client
 
-import typings.gapiClient.AnonCallback
+import typings.gapiClient.anon.Callback
 import typings.std.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,8 +16,8 @@ trait Batch[T] extends Promise[Response[ResponseMap[T]]] {
     * @param request The HTTP request to add to this batch.
     * @param opt_params extra parameters for this batch entry.
     */
-  def add[T](request: Request_[T]): Unit = js.native
-  def add[T](request: Request_[T], opt_params: AnonCallback[T]): Unit = js.native
+  def add[T](request: Request[T]): Unit = js.native
+  def add[T](request: Request[T], opt_params: Callback[T]): Unit = js.native
   /**
     * Executes all requests in the batch. The supplied callback is executed on success or failure.
     * @param callback The callback to execute when the batch returns.

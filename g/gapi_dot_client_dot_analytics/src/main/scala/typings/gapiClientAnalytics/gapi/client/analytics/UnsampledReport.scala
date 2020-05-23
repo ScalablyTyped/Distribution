@@ -1,7 +1,7 @@
 package typings.gapiClientAnalytics.gapi.client.analytics
 
-import typings.gapiClientAnalytics.AnonBucketId
-import typings.gapiClientAnalytics.AnonDocumentId
+import typings.gapiClientAnalytics.anon.BucketId
+import typings.gapiClientAnalytics.anon.DocumentId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait UnsampledReport extends js.Object {
   /** Account ID to which this unsampled report belongs. */
   var accountId: js.UndefOr[String] = js.undefined
   /** Download details for a file stored in Google Cloud Storage. */
-  var cloudStorageDownloadDetails: js.UndefOr[AnonBucketId] = js.undefined
+  var cloudStorageDownloadDetails: js.UndefOr[BucketId] = js.undefined
   /** Time this unsampled report was created. */
   var created: js.UndefOr[String] = js.undefined
   /** The dimensions for the unsampled report. */
@@ -21,7 +21,7 @@ trait UnsampledReport extends js.Object {
     */
   var downloadType: js.UndefOr[String] = js.undefined
   /** Download details for a file stored in Google Drive. */
-  var driveDownloadDetails: js.UndefOr[AnonDocumentId] = js.undefined
+  var driveDownloadDetails: js.UndefOr[DocumentId] = js.undefined
   /** The end date for the unsampled report. */
   var `end-date`: js.UndefOr[String] = js.undefined
   /** The filters for the unsampled report. */
@@ -54,11 +54,11 @@ object UnsampledReport {
   @scala.inline
   def apply(
     accountId: String = null,
-    cloudStorageDownloadDetails: AnonBucketId = null,
+    cloudStorageDownloadDetails: BucketId = null,
     created: String = null,
     dimensions: String = null,
     downloadType: String = null,
-    driveDownloadDetails: AnonDocumentId = null,
+    driveDownloadDetails: DocumentId = null,
     `end-date`: String = null,
     filters: String = null,
     id: String = null,

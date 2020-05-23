@@ -20,7 +20,7 @@ object Aps {
   @scala.inline
   def apply(
     alert: String | ApsAlert = null,
-    badge: Int | Double = null,
+    badge: js.UndefOr[Double] = js.undefined,
     category: String = null,
     `content-available`: `1` = null,
     `launch-image`: String = null,
@@ -30,7 +30,7 @@ object Aps {
   ): Aps = {
     val __obj = js.Dynamic.literal()
     if (alert != null) __obj.updateDynamic("alert")(alert.asInstanceOf[js.Any])
-    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
+    if (!js.isUndefined(badge)) __obj.updateDynamic("badge")(badge.get.asInstanceOf[js.Any])
     if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
     if (`content-available` != null) __obj.updateDynamic("content-available")(`content-available`.asInstanceOf[js.Any])
     if (`launch-image` != null) __obj.updateDynamic("launch-image")(`launch-image`.asInstanceOf[js.Any])

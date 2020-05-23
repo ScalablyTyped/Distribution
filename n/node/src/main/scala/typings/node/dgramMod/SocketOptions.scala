@@ -31,17 +31,17 @@ object SocketOptions {
     `type`: SocketType,
     ipv6Only: js.UndefOr[Boolean] = js.undefined,
     lookup: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit = null,
-    recvBufferSize: Int | Double = null,
+    recvBufferSize: js.UndefOr[Double] = js.undefined,
     reuseAddr: js.UndefOr[Boolean] = js.undefined,
-    sendBufferSize: Int | Double = null
+    sendBufferSize: js.UndefOr[Double] = js.undefined
   ): SocketOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(ipv6Only)) __obj.updateDynamic("ipv6Only")(ipv6Only.asInstanceOf[js.Any])
+    if (!js.isUndefined(ipv6Only)) __obj.updateDynamic("ipv6Only")(ipv6Only.get.asInstanceOf[js.Any])
     if (lookup != null) __obj.updateDynamic("lookup")(js.Any.fromFunction3(lookup))
-    if (recvBufferSize != null) __obj.updateDynamic("recvBufferSize")(recvBufferSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(reuseAddr)) __obj.updateDynamic("reuseAddr")(reuseAddr.asInstanceOf[js.Any])
-    if (sendBufferSize != null) __obj.updateDynamic("sendBufferSize")(sendBufferSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(recvBufferSize)) __obj.updateDynamic("recvBufferSize")(recvBufferSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reuseAddr)) __obj.updateDynamic("reuseAddr")(reuseAddr.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendBufferSize)) __obj.updateDynamic("sendBufferSize")(sendBufferSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketOptions]
   }
 }

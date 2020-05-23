@@ -7,15 +7,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Manages PlayReady-ND storage files. */
-@JSGlobal("Windows.Media.Protection.PlayReady.NDStorageFileHelper")
-@js.native
-/** Creates a new instance of the NDStorageFileHelper class. */
-class NDStorageFileHelper () extends js.Object {
+trait NDStorageFileHelper extends js.Object {
   /**
     * Gets transmitter settings from the URLs associated with a StorageFile object if the URLs contain PlayReady-ND metadata.
     * @param file A storage file object that a media server has discovered.
     * @return The transmitter settings found in the storage file.
     */
-  def getFileURLs(file: IStorageFile): IVector[String] = js.native
+  def getFileURLs(file: IStorageFile): IVector[String]
+}
+
+object NDStorageFileHelper {
+  @scala.inline
+  def apply(getFileURLs: IStorageFile => IVector[String]): NDStorageFileHelper = {
+    val __obj = js.Dynamic.literal(getFileURLs = js.Any.fromFunction1(getFileURLs))
+    __obj.asInstanceOf[NDStorageFileHelper]
+  }
 }
 

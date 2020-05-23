@@ -18,23 +18,23 @@ trait ChartTooltipItem extends js.Object {
 object ChartTooltipItem {
   @scala.inline
   def apply(
-    datasetIndex: Int | Double = null,
-    index: Int | Double = null,
+    datasetIndex: js.UndefOr[Double] = js.undefined,
+    index: js.UndefOr[Double] = js.undefined,
     label: String = null,
     value: String = null,
-    x: Int | Double = null,
+    x: js.UndefOr[Double] = js.undefined,
     xLabel: String | Double = null,
-    y: Int | Double = null,
+    y: js.UndefOr[Double] = js.undefined,
     yLabel: String | Double = null
   ): ChartTooltipItem = {
     val __obj = js.Dynamic.literal()
-    if (datasetIndex != null) __obj.updateDynamic("datasetIndex")(datasetIndex.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(datasetIndex)) __obj.updateDynamic("datasetIndex")(datasetIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
     if (xLabel != null) __obj.updateDynamic("xLabel")(xLabel.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     if (yLabel != null) __obj.updateDynamic("yLabel")(yLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartTooltipItem]
   }

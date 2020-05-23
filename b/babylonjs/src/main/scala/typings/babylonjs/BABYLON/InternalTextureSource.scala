@@ -1,6 +1,5 @@
 package typings.babylonjs.BABYLON
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -94,51 +93,6 @@ object InternalTextureSource extends js.Object {
     */
   @js.native
   sealed trait Url extends InternalTextureSource
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[InternalTextureSource with Double] = js.native
-  /* 7 */ @js.native
-  object Cube extends TopLevel[Cube with Double]
-  
-  /* 9 */ @js.native
-  object CubePrefiltered extends TopLevel[CubePrefiltered with Double]
-  
-  /* 8 */ @js.native
-  object CubeRaw extends TopLevel[CubeRaw with Double]
-  
-  /* 13 */ @js.native
-  object CubeRawRGBD extends TopLevel[CubeRawRGBD with Double]
-  
-  /* 12 */ @js.native
-  object Depth extends TopLevel[Depth with Double]
-  
-  /* 4 */ @js.native
-  object Dynamic extends TopLevel[Dynamic with Double]
-  
-  /* 6 */ @js.native
-  object MultiRenderTarget
-    extends TopLevel[typings.babylonjs.BABYLON.InternalTextureSource.MultiRenderTarget with Double]
-  
-  /* 3 */ @js.native
-  object Raw extends TopLevel[Raw with Double]
-  
-  /* 11 */ @js.native
-  object Raw2DArray extends TopLevel[Raw2DArray with Double]
-  
-  /* 10 */ @js.native
-  object Raw3D extends TopLevel[Raw3D with Double]
-  
-  /* 5 */ @js.native
-  object RenderTarget extends TopLevel[RenderTarget with Double]
-  
-  /* 2 */ @js.native
-  object Temp extends TopLevel[Temp with Double]
-  
-  /* 0 */ @js.native
-  object Unknown extends TopLevel[Unknown with Double]
-  
-  /* 1 */ @js.native
-  object Url extends TopLevel[Url with Double]
   
 }
 

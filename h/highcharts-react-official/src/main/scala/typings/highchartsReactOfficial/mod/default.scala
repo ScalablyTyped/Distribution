@@ -1,7 +1,7 @@
 package typings.highchartsReactOfficial.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.highchartsReactOfficial.AnonChart
+import typings.highchartsReactOfficial.anon.Chart
 import typings.highchartsReactOfficial.mod.HighchartsReact.Props
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.PropsWithoutRef
@@ -12,5 +12,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("highcharts-react-official", JSImport.Default)
 @js.native
-object default extends TopLevel[ForwardRefExoticComponent[PropsWithoutRef[Props] with RefAttributes[AnonChart]]]
+object default extends TopLevel[ForwardRefExoticComponent[PropsWithoutRef[Props] with RefAttributes[Chart]]]
 

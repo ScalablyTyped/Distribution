@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation._
 
 trait SignatureHelpProvider extends js.Object {
   /**
-  		 * Provide help for the signature at the given position and document.
-  		 *
-  		 * @param document The document in which the command was invoked.
-  		 * @param position The position at which the command was invoked.
-  		 * @param token A cancellation token.
-  		 * @param context Information about how signature help was triggered.
-  		 *
-  		 * @return Signature help or a thenable that resolves to such. The lack of a result can be
-  		 * signaled by returning `undefined` or `null`.
-  		 */
+    * Provide help for the signature at the given position and document.
+    *
+    * @param document The document in which the command was invoked.
+    * @param position The position at which the command was invoked.
+    * @param token A cancellation token.
+    * @param context Information about how signature help was triggered.
+    *
+    * @return Signature help or a thenable that resolves to such. The lack of a result can be
+    * signaled by returning `undefined` or `null`.
+    */
   def provideSignatureHelp(
     document: TextDocument,
     position: Position,

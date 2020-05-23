@@ -15,15 +15,15 @@ object opts {
   @scala.inline
   def apply(
     fileName: String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     url: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): opts = {
     val __obj = js.Dynamic.literal()
     if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[opts]
   }
 }

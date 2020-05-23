@@ -1,9 +1,9 @@
 package typings.algoliasearch.mod.Places
 
-import typings.algoliasearch.AnonAdministrative
-import typings.algoliasearch.AnonDefault
-import typings.algoliasearch.AnonDictkey
-import typings.algoliasearch.AnonLat
+import typings.algoliasearch.anon.Administrative
+import typings.algoliasearch.anon.Default
+import typings.algoliasearch.anon.Dictkey
+import typings.algoliasearch.anon.Lat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,12 +17,12 @@ trait HitInterface extends js.Object {
     * Associated list of latitude and longitude.
     * https://community.algolia.com/places/api-clients.html#api-suggestion-latlng
     */
-  var _geoloc: AnonLat
+  var _geoloc: Lat
   /**
     * The associated highlighting information.
     * https://community.algolia.com/places/api-clients.html#api-suggestion-highlightResult
     */
-  var _highlightResult: AnonAdministrative
+  var _highlightResult: Administrative
   var _tags: js.Array[String]
   var admin_level: Double
   /**
@@ -34,12 +34,12 @@ trait HitInterface extends js.Object {
     * https://community.algolia.com/places/api-clients.html#api-suggestion-city
     * List of the associated city names. If no language parameter is specified, retrieves all of them.
     */
-  var city: js.UndefOr[AnonDefault] = js.undefined
+  var city: js.UndefOr[Default] = js.undefined
   /**
     * Associated country name.
     * https://community.algolia.com/places/api-clients.html#api-suggestion-country
     */
-  var country: AnonDictkey
+  var country: Dictkey
   /**
     * Two letters country code (ISO 639-1).
     * https://community.algolia.com/places/api-clients.html#api-suggestion-countryCode
@@ -49,7 +49,7 @@ trait HitInterface extends js.Object {
     * List of the associated county names. If no language parameter is specified, retrieves all of them.
     * https://community.algolia.com/places/api-clients.html#api-suggestion-county
     */
-  var county: js.UndefOr[AnonDefault] = js.undefined
+  var county: js.UndefOr[Default] = js.undefined
   var district: js.UndefOr[String] = js.undefined
   var importance: Double
   var is_city: Boolean
@@ -61,7 +61,7 @@ trait HitInterface extends js.Object {
     * https://community.algolia.com/places/api-clients.html#api-suggestion-name
     * List of names of the place. If no language parameter is specified, retrieves all of them.
     */
-  var locale_names: AnonDefault
+  var locale_names: Default
   var objectID: String
   /**
     * Associated population.
@@ -78,11 +78,11 @@ trait HitInterface extends js.Object {
 object HitInterface {
   @scala.inline
   def apply(
-    _geoloc: AnonLat,
-    _highlightResult: AnonAdministrative,
+    _geoloc: Lat,
+    _highlightResult: Administrative,
     _tags: js.Array[String],
     admin_level: Double,
-    country: AnonDictkey,
+    country: Dictkey,
     country_code: String,
     importance: Double,
     is_city: Boolean,
@@ -90,13 +90,13 @@ object HitInterface {
     is_highway: Boolean,
     is_popular: Boolean,
     is_suburb: Boolean,
-    locale_names: AnonDefault,
+    locale_names: Default,
     objectID: String,
     administrative: js.Array[String] = null,
-    city: AnonDefault = null,
-    county: AnonDefault = null,
+    city: Default = null,
+    county: Default = null,
     district: String = null,
-    population: Int | Double = null,
+    population: js.UndefOr[Double] = js.undefined,
     postcode: js.Array[String] = null
   ): HitInterface = {
     val __obj = js.Dynamic.literal(_geoloc = _geoloc.asInstanceOf[js.Any], _highlightResult = _highlightResult.asInstanceOf[js.Any], _tags = _tags.asInstanceOf[js.Any], admin_level = admin_level.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], country_code = country_code.asInstanceOf[js.Any], importance = importance.asInstanceOf[js.Any], is_city = is_city.asInstanceOf[js.Any], is_country = is_country.asInstanceOf[js.Any], is_highway = is_highway.asInstanceOf[js.Any], is_popular = is_popular.asInstanceOf[js.Any], is_suburb = is_suburb.asInstanceOf[js.Any], locale_names = locale_names.asInstanceOf[js.Any], objectID = objectID.asInstanceOf[js.Any])
@@ -104,7 +104,7 @@ object HitInterface {
     if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
     if (county != null) __obj.updateDynamic("county")(county.asInstanceOf[js.Any])
     if (district != null) __obj.updateDynamic("district")(district.asInstanceOf[js.Any])
-    if (population != null) __obj.updateDynamic("population")(population.asInstanceOf[js.Any])
+    if (!js.isUndefined(population)) __obj.updateDynamic("population")(population.get.asInstanceOf[js.Any])
     if (postcode != null) __obj.updateDynamic("postcode")(postcode.asInstanceOf[js.Any])
     __obj.asInstanceOf[HitInterface]
   }

@@ -1,7 +1,7 @@
 package typings.ionicAngular
 
 import typings.ionicAngular.overlayMod.OverlayBaseController
-import typings.ionicCore.componentsMod._Global_.HTMLIonLoadingElement
+import typings.ionicCore.componentsMod.global.HTMLIonLoadingElement
 import typings.ionicCore.loadingInterfaceMod.LoadingOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

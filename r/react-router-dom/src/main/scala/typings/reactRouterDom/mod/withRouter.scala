@@ -21,7 +21,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object withRouter extends js.Object {
   def apply[P /* <: RouteComponentProps[_, StaticContext, LocationState] */, C /* <: ComponentType[P] */](component: C with ComponentType[P]): (ComponentClass[
-    (Omit[P, history | location | `match` | staticContext]) with WithRouterProps[C], 
+    (Omit[
+      P, 
+      /* keyof react-router.react-router.RouteComponentProps<any, react-router.react-router.StaticContext, history.history.LocationState> */ history | location | `match` | staticContext
+    ]) with WithRouterProps[C], 
     ComponentState
   ]) with WithRouterStatics[C] = js.native
 }

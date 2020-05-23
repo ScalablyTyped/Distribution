@@ -1,6 +1,6 @@
 package typings.webgme.GmeClasses
 
-import typings.webgme.AnonChildren
+import typings.webgme.anon.Children
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait MetaNodeParameters extends js.Object {
     */
   var multiplicity: js.UndefOr[Boolean] = js.undefined
   /** the input parameters of the query. */
-  var `object`: AnonChildren
+  var `object`: Children
   /** 
     * if true, the query filters out the 
     * abstract and connection-like nodes 
@@ -33,7 +33,7 @@ trait MetaNodeParameters extends js.Object {
 object MetaNodeParameters {
   @scala.inline
   def apply(
-    `object`: AnonChildren,
+    `object`: Children,
     aspect: String = null,
     multiplicity: js.UndefOr[Boolean] = js.undefined,
     sensitive: js.UndefOr[Boolean] = js.undefined
@@ -41,8 +41,8 @@ object MetaNodeParameters {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     if (aspect != null) __obj.updateDynamic("aspect")(aspect.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiplicity)) __obj.updateDynamic("multiplicity")(multiplicity.asInstanceOf[js.Any])
-    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiplicity)) __obj.updateDynamic("multiplicity")(multiplicity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetaNodeParameters]
   }
 }

@@ -24,11 +24,11 @@ object ListPoliciesGrantingServiceAccessResponse {
   @scala.inline
   def apply(
     PoliciesGrantingServiceAccess: listPolicyGrantingServiceAccessResponseListType,
-    IsTruncated: js.UndefOr[Boolean] = js.undefined,
+    IsTruncated: js.UndefOr[booleanType] = js.undefined,
     Marker: responseMarkerType = null
   ): ListPoliciesGrantingServiceAccessResponse = {
     val __obj = js.Dynamic.literal(PoliciesGrantingServiceAccess = PoliciesGrantingServiceAccess.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.get.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPoliciesGrantingServiceAccessResponse]
   }

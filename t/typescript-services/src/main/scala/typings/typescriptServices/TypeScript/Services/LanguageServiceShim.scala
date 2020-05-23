@@ -4,78 +4,55 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.Services.LanguageServiceShim")
-@js.native
-class LanguageServiceShim protected ()
+trait LanguageServiceShim
   extends ShimBase
      with ILanguageServiceShim {
-  def this(factory: IShimFactory, host: ILanguageServiceShimHost, languageService: ILanguageService) = this()
-  var host: js.Any = js.native
-  /* CompleteClass */
-  override var languageService: ILanguageService = js.native
-  var logger: js.Any = js.native
-  /* private */ def _navigateToItemsToString(items: js.Any): js.Any = js.native
-  /* CompleteClass */
-  override def cleanupSemanticCache(): Unit = js.native
-  /* CompleteClass */
-  override def dispose(dummy: js.Any): Unit = js.native
-  def forwardJSONCall(actionDescription: String, action: js.Function0[_]): String = js.native
-  /* CompleteClass */
-  override def getBraceMatchingAtPosition(fileName: String, position: Double): String = js.native
-  /* CompleteClass */
-  override def getBreakpointStatementAtPosition(fileName: String, position: Double): String = js.native
-  /* CompleteClass */
-  override def getCompilerOptionsDiagnostics(): String = js.native
-  /* CompleteClass */
-  override def getCompletionEntryDetails(fileName: String, position: Double, entryName: String): String = js.native
-  /* CompleteClass */
-  override def getCompletionsAtPosition(fileName: String, position: Double, isMemberCompletion: Boolean): String = js.native
-  /* CompleteClass */
-  override def getDefinitionAtPosition(fileName: String, position: Double): String = js.native
-  /* CompleteClass */
-  override def getEmitOutput(fileName: String): String = js.native
-  /* CompleteClass */
-  override def getFormattingEditsAfterKeystroke(fileName: String, position: Double, key: String, options: String): String = js.native
-  /* CompleteClass */
-  override def getFormattingEditsForDocument(fileName: String, minChar: Double, limChar: Double, options: String): String = js.native
-  /* CompleteClass */
-  override def getFormattingEditsForRange(fileName: String, minChar: Double, limChar: Double, options: String): String = js.native
-  /* CompleteClass */
-  override def getFormattingEditsOnPaste(fileName: String, minChar: Double, limChar: Double, options: String): String = js.native
-  /* CompleteClass */
-  override def getImplementorsAtPosition(fileName: String, position: Double): String = js.native
-  /* CompleteClass */
-  override def getIndentationAtPosition(fileName: String, position: Double, options: String): String = js.native
-  /* CompleteClass */
-  override def getNameOrDottedNameSpan(fileName: String, startPos: Double, endPos: Double): String = js.native
-  /* CompleteClass */
-  override def getNavigateToItems(searchValue: String): String = js.native
-  /* CompleteClass */
-  override def getOccurrencesAtPosition(fileName: String, position: Double): String = js.native
-  /* CompleteClass */
-  override def getOutliningRegions(fileName: String): String = js.native
-  /* CompleteClass */
-  override def getReferencesAtPosition(fileName: String, position: Double): String = js.native
-  /* CompleteClass */
-  override def getScriptLexicalStructure(fileName: String): String = js.native
-  /* CompleteClass */
-  override def getSemanticDiagnostics(fileName: String): String = js.native
-  /* CompleteClass */
-  override def getSignatureAtPosition(fileName: String, position: Double): String = js.native
-  /* CompleteClass */
-  override def getSyntacticDiagnostics(fileName: String): String = js.native
-  /* CompleteClass */
-  override def getTypeAtPosition(fileName: String, position: Double): String = js.native
-  /* private */ def realizeDiagnosticWithFileName(diagnostic: js.Any): js.Any = js.native
-  /* CompleteClass */
-  override def refresh(throwOnError: Boolean): Unit = js.native
+  var host: js.Any
+  var logger: js.Any
+  /* private */ def _navigateToItemsToString(items: js.Any): js.Any
+  def forwardJSONCall(actionDescription: String, action: js.Function0[_]): String
+  /* private */ def realizeDiagnosticWithFileName(diagnostic: js.Any): js.Any
 }
 
-/* static members */
-@JSGlobal("TypeScript.Services.LanguageServiceShim")
-@js.native
-object LanguageServiceShim extends js.Object {
-  /* private */ def realizeDiagnostic(diagnostic: js.Any): js.Any = js.native
-  /* private */ def realizeDiagnosticCategory(category: js.Any): js.Any = js.native
+object LanguageServiceShim {
+  @scala.inline
+  def apply(
+    _navigateToItemsToString: js.Any => js.Any,
+    cleanupSemanticCache: () => Unit,
+    dispose: js.Any => Unit,
+    factory: js.Any,
+    forwardJSONCall: (String, js.Function0[_]) => String,
+    getBraceMatchingAtPosition: (String, Double) => String,
+    getBreakpointStatementAtPosition: (String, Double) => String,
+    getCompilerOptionsDiagnostics: () => String,
+    getCompletionEntryDetails: (String, Double, String) => String,
+    getCompletionsAtPosition: (String, Double, Boolean) => String,
+    getDefinitionAtPosition: (String, Double) => String,
+    getEmitOutput: String => String,
+    getFormattingEditsAfterKeystroke: (String, Double, String, String) => String,
+    getFormattingEditsForDocument: (String, Double, Double, String) => String,
+    getFormattingEditsForRange: (String, Double, Double, String) => String,
+    getFormattingEditsOnPaste: (String, Double, Double, String) => String,
+    getImplementorsAtPosition: (String, Double) => String,
+    getIndentationAtPosition: (String, Double, String) => String,
+    getNameOrDottedNameSpan: (String, Double, Double) => String,
+    getNavigateToItems: String => String,
+    getOccurrencesAtPosition: (String, Double) => String,
+    getOutliningRegions: String => String,
+    getReferencesAtPosition: (String, Double) => String,
+    getScriptLexicalStructure: String => String,
+    getSemanticDiagnostics: String => String,
+    getSignatureAtPosition: (String, Double) => String,
+    getSyntacticDiagnostics: String => String,
+    getTypeAtPosition: (String, Double) => String,
+    host: js.Any,
+    languageService: ILanguageService,
+    logger: js.Any,
+    realizeDiagnosticWithFileName: js.Any => js.Any,
+    refresh: Boolean => Unit
+  ): LanguageServiceShim = {
+    val __obj = js.Dynamic.literal(_navigateToItemsToString = js.Any.fromFunction1(_navigateToItemsToString), cleanupSemanticCache = js.Any.fromFunction0(cleanupSemanticCache), dispose = js.Any.fromFunction1(dispose), factory = factory.asInstanceOf[js.Any], forwardJSONCall = js.Any.fromFunction2(forwardJSONCall), getBraceMatchingAtPosition = js.Any.fromFunction2(getBraceMatchingAtPosition), getBreakpointStatementAtPosition = js.Any.fromFunction2(getBreakpointStatementAtPosition), getCompilerOptionsDiagnostics = js.Any.fromFunction0(getCompilerOptionsDiagnostics), getCompletionEntryDetails = js.Any.fromFunction3(getCompletionEntryDetails), getCompletionsAtPosition = js.Any.fromFunction3(getCompletionsAtPosition), getDefinitionAtPosition = js.Any.fromFunction2(getDefinitionAtPosition), getEmitOutput = js.Any.fromFunction1(getEmitOutput), getFormattingEditsAfterKeystroke = js.Any.fromFunction4(getFormattingEditsAfterKeystroke), getFormattingEditsForDocument = js.Any.fromFunction4(getFormattingEditsForDocument), getFormattingEditsForRange = js.Any.fromFunction4(getFormattingEditsForRange), getFormattingEditsOnPaste = js.Any.fromFunction4(getFormattingEditsOnPaste), getImplementorsAtPosition = js.Any.fromFunction2(getImplementorsAtPosition), getIndentationAtPosition = js.Any.fromFunction3(getIndentationAtPosition), getNameOrDottedNameSpan = js.Any.fromFunction3(getNameOrDottedNameSpan), getNavigateToItems = js.Any.fromFunction1(getNavigateToItems), getOccurrencesAtPosition = js.Any.fromFunction2(getOccurrencesAtPosition), getOutliningRegions = js.Any.fromFunction1(getOutliningRegions), getReferencesAtPosition = js.Any.fromFunction2(getReferencesAtPosition), getScriptLexicalStructure = js.Any.fromFunction1(getScriptLexicalStructure), getSemanticDiagnostics = js.Any.fromFunction1(getSemanticDiagnostics), getSignatureAtPosition = js.Any.fromFunction2(getSignatureAtPosition), getSyntacticDiagnostics = js.Any.fromFunction1(getSyntacticDiagnostics), getTypeAtPosition = js.Any.fromFunction2(getTypeAtPosition), host = host.asInstanceOf[js.Any], languageService = languageService.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any], realizeDiagnosticWithFileName = js.Any.fromFunction1(realizeDiagnosticWithFileName), refresh = js.Any.fromFunction1(refresh))
+    __obj.asInstanceOf[LanguageServiceShim]
+  }
 }
 

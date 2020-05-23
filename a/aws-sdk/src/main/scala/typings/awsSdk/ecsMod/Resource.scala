@@ -35,17 +35,17 @@ trait Resource extends js.Object {
 object Resource {
   @scala.inline
   def apply(
-    doubleValue: Int | scala.Double = null,
-    integerValue: Int | scala.Double = null,
-    longValue: Int | scala.Double = null,
+    doubleValue: js.UndefOr[Double] = js.undefined,
+    integerValue: js.UndefOr[Integer] = js.undefined,
+    longValue: js.UndefOr[Long] = js.undefined,
     name: String = null,
     stringSetValue: StringList = null,
     `type`: String = null
   ): Resource = {
     val __obj = js.Dynamic.literal()
-    if (doubleValue != null) __obj.updateDynamic("doubleValue")(doubleValue.asInstanceOf[js.Any])
-    if (integerValue != null) __obj.updateDynamic("integerValue")(integerValue.asInstanceOf[js.Any])
-    if (longValue != null) __obj.updateDynamic("longValue")(longValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleValue)) __obj.updateDynamic("doubleValue")(doubleValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(integerValue)) __obj.updateDynamic("integerValue")(integerValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(longValue)) __obj.updateDynamic("longValue")(longValue.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (stringSetValue != null) __obj.updateDynamic("stringSetValue")(stringSetValue.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

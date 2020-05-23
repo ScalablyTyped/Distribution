@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.CustomPropertyData
 import typings.officeJsPreview.Excel.Interfaces.CustomPropertyLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.CustomPropertyUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.Boolean
 import typings.officeJsPreview.officeJsPreviewStrings.Date
 import typings.officeJsPreview.officeJsPreviewStrings.Float
@@ -20,29 +20,28 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.7]
   */
-@JSGlobal("Excel.CustomProperty")
 @js.native
-class CustomProperty () extends ClientObject {
+trait CustomProperty extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_CustomProperty: RequestContext = js.native
   /**
     *
-    * Gets the key of the custom property. Read only.
+    * The key of the custom property.
     *
     * [Api set: ExcelApi 1.7]
     */
   val key: String = js.native
   /**
     *
-    * Gets the value type of the custom property. Read only.
+    * The type of the value used for the custom property.
     *
     * [Api set: ExcelApi 1.7]
     */
   val `type`: DocumentPropertyType | Number | Boolean | Date | typings.officeJsPreview.officeJsPreviewStrings.String | Float = js.native
   /**
     *
-    * Gets or sets the value of the custom property.
+    * The value of the custom property.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -60,7 +59,7 @@ class CustomProperty () extends ClientObject {
     */
   def load(): CustomProperty = js.native
   def load(options: CustomPropertyLoadOptions): CustomProperty = js.native
-  def load(propertyNamesAndPaths: AnonExpand): CustomProperty = js.native
+  def load(propertyNamesAndPaths: Expand): CustomProperty = js.native
   def load(propertyNames: String): CustomProperty = js.native
   def load(propertyNames: js.Array[String]): CustomProperty = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

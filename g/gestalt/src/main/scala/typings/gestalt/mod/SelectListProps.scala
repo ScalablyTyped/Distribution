@@ -1,7 +1,6 @@
 package typings.gestalt.mod
 
-import typings.gestalt.AnonLabel
-import typings.gestalt.AnonValue
+import typings.gestalt.anon.Value
 import typings.gestalt.gestaltStrings.lg
 import typings.gestalt.gestaltStrings.md
 import scala.scalajs.js
@@ -15,19 +14,19 @@ trait SelectListProps extends js.Object {
   var id: String
   var label: js.UndefOr[String] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var options: js.Array[AnonLabel]
+  var options: js.Array[typings.gestalt.anon.Label]
   var placeholder: js.UndefOr[String] = js.undefined
   var size: js.UndefOr[md | lg] = js.undefined
   var value: js.UndefOr[String] = js.undefined
-  def onChange(args: AnonValue): Unit
+  def onChange(args: Value): Unit
 }
 
 object SelectListProps {
   @scala.inline
   def apply(
     id: String,
-    onChange: AnonValue => Unit,
-    options: js.Array[AnonLabel],
+    onChange: Value => Unit,
+    options: js.Array[typings.gestalt.anon.Label],
     disabled: js.UndefOr[Boolean] = js.undefined,
     errorMessage: String = null,
     helperText: String = null,
@@ -38,7 +37,7 @@ object SelectListProps {
     value: String = null
   ): SelectListProps = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), options = options.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
     if (helperText != null) __obj.updateDynamic("helperText")(helperText.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])

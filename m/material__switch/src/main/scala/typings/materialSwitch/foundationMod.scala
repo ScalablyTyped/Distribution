@@ -2,7 +2,10 @@ package typings.materialSwitch
 
 import typings.materialBase.foundationMod.MDCFoundation
 import typings.materialSwitch.adapterMod.MDCSwitchAdapter
-import typings.std.Event_
+import typings.materialSwitch.anon.ARIACHECKEDATTR
+import typings.materialSwitch.anon.CHECKED
+import typings.materialSwitch.anon.PartialMDCSwitchAdapter
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +20,7 @@ object foundationMod extends js.Object {
     /* CompleteClass */
     override def destroy(): Unit = js.native
     /** Handles the change event for the switch native control. */
-    def handleChange(evt: Event_): Unit = js.native
+    def handleChange(evt: Event): Unit = js.native
     // Subclasses should override this method to perform initialization routines (registering events, etc.)
     /* CompleteClass */
     override def init(): Unit = js.native
@@ -36,22 +39,22 @@ object foundationMod extends js.Object {
   @js.native
   object MDCSwitchFoundation extends js.Object {
     /** The CSS classes used by the switch. */
-    val cssClasses: AnonCHECKED = js.native
+    val cssClasses: CHECKED = js.native
     /** The default Adapter for the switch. */
     val defaultAdapter: MDCSwitchAdapter = js.native
     /** The string constants used by the switch. */
-    val strings: AnonARIACHECKEDATTR = js.native
+    val strings: ARIACHECKEDATTR = js.native
   }
   
   /* static members */
   @js.native
   object default extends js.Object {
     /** The CSS classes used by the switch. */
-    val cssClasses: AnonCHECKED = js.native
+    val cssClasses: CHECKED = js.native
     /** The default Adapter for the switch. */
     val defaultAdapter: MDCSwitchAdapter = js.native
     /** The string constants used by the switch. */
-    val strings: AnonARIACHECKEDATTR = js.native
+    val strings: ARIACHECKEDATTR = js.native
   }
   
 }

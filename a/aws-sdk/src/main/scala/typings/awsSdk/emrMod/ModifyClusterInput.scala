@@ -18,9 +18,9 @@ trait ModifyClusterInput extends js.Object {
 
 object ModifyClusterInput {
   @scala.inline
-  def apply(ClusterId: String, StepConcurrencyLevel: Int | Double = null): ModifyClusterInput = {
+  def apply(ClusterId: String, StepConcurrencyLevel: js.UndefOr[Integer] = js.undefined): ModifyClusterInput = {
     val __obj = js.Dynamic.literal(ClusterId = ClusterId.asInstanceOf[js.Any])
-    if (StepConcurrencyLevel != null) __obj.updateDynamic("StepConcurrencyLevel")(StepConcurrencyLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(StepConcurrencyLevel)) __obj.updateDynamic("StepConcurrencyLevel")(StepConcurrencyLevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyClusterInput]
   }
 }

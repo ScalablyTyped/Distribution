@@ -1,7 +1,7 @@
 package typings.servicenowLondon.snWs
 
-import typings.servicenowLondon.AnonGet
-import typings.servicenowLondon.AnonName
+import typings.servicenowLondon.anon.Get
+import typings.servicenowLondon.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,9 +10,7 @@ import scala.scalajs.js.annotation._
   * The RESTResponseV2 API allows you to use the data returned by an outbound REST message
   * in JavaScript code.
   */
-@JSGlobal("sn_ws.RESTResponseV2")
-@js.native
-class RESTResponseV2 () extends js.Object {
+trait RESTResponseV2 extends js.Object {
   /**
     * Returns all headers contained in the response, including any duplicate headers.
     *
@@ -27,7 +25,7 @@ class RESTResponseV2 () extends js.Object {
     *   gs.info(headers[i].name + ': ' + headers[i].value);
     * }
     */
-  def getAllHeaders(): js.Array[AnonName] = js.native
+  def getAllHeaders(): js.Array[Name]
   /**
     * Get the content of the REST response body.
     *
@@ -46,7 +44,7 @@ class RESTResponseV2 () extends js.Object {
     * var response = sm.execute();
     * var responseBody = response.getBody();
     */
-  def getBody(): String = js.native
+  def getBody(): String
   /**
     * Returns all cookies included in the response.
     *
@@ -59,7 +57,7 @@ class RESTResponseV2 () extends js.Object {
     *   gs.info('cookie: ' + cookies.get(i));
     * }
     */
-  def getCookies(): AnonGet = js.native
+  def getCookies(): Get
   /**
     * Get the numeric error code if there was an error during the REST transaction.
     *
@@ -74,7 +72,7 @@ class RESTResponseV2 () extends js.Object {
     * var response = sm.execute();
     * var errorCode = response.getErrorCode();
     */
-  def getErrorCode(): Double = js.native
+  def getErrorCode(): Double
   /**
     * Get the error message if there was an error during the REST transaction.
     *
@@ -86,7 +84,7 @@ class RESTResponseV2 () extends js.Object {
     * var response = sm.execute();
     * var errorMsg = response.getErrorMessage();
     */
-  def getErrorMessage(): String = js.native
+  def getErrorMessage(): String
   /**
     * Get the value for a specified header.
     *
@@ -99,7 +97,7 @@ class RESTResponseV2 () extends js.Object {
     * var response = sm.execute();
     * var headerVal = response.getHeader('Content-Type');
     */
-  def getHeader(name: String): String = js.native
+  def getHeader(name: String): String
   /**
     * Get all headers returned in the REST response and the associated values.
     *
@@ -115,7 +113,7 @@ class RESTResponseV2 () extends js.Object {
     * var response = sm.execute();
     * var headers = response.getHeaders();
     */
-  def getHeaders(): js.Object = js.native
+  def getHeaders(): js.Object
   /**
     * Get the fully-resolved query sent to the REST endpoint.
     *
@@ -131,7 +129,7 @@ class RESTResponseV2 () extends js.Object {
     * var response = sm.execute();
     * var queryString = response.getQueryString();
     */
-  def getQueryString(): String = js.native
+  def getQueryString(): String
   /**
     * Get the sys_id value of the attachment created from the response body content.
     *
@@ -142,7 +140,7 @@ class RESTResponseV2 () extends js.Object {
     *
     * @returns The sys_id of the new attachment record.
     */
-  def getResponseAttachmentSysid(): String = js.native
+  def getResponseAttachmentSysid(): String
   /**
     * Get the numeric HTTP status code returned by the REST provider.
     *
@@ -155,7 +153,7 @@ class RESTResponseV2 () extends js.Object {
     * var response = sm.execute();
     * var statusCode = response.getStatusCode();
     */
-  def getStatusCode(): Double = js.native
+  def getStatusCode(): Double
   /**
     * Indicate if there was an error during the REST transaction.
     *
@@ -167,7 +165,7 @@ class RESTResponseV2 () extends js.Object {
     * var response = sm.execute();
     * var error = response.haveError();
     */
-  def haveError(): Boolean = js.native
+  def haveError(): Boolean
   /**
     * Set the amount of time the instance waits for a response from the web service provider.
     *
@@ -181,6 +179,27 @@ class RESTResponseV2 () extends js.Object {
     * var response = sm.executeAsync();
     * response.waitForResponse(60);
     */
-  def waitForResponse(timeoutSecs: Double): Unit = js.native
+  def waitForResponse(timeoutSecs: Double): Unit
+}
+
+object RESTResponseV2 {
+  @scala.inline
+  def apply(
+    getAllHeaders: () => js.Array[Name],
+    getBody: () => String,
+    getCookies: () => Get,
+    getErrorCode: () => Double,
+    getErrorMessage: () => String,
+    getHeader: String => String,
+    getHeaders: () => js.Object,
+    getQueryString: () => String,
+    getResponseAttachmentSysid: () => String,
+    getStatusCode: () => Double,
+    haveError: () => Boolean,
+    waitForResponse: Double => Unit
+  ): RESTResponseV2 = {
+    val __obj = js.Dynamic.literal(getAllHeaders = js.Any.fromFunction0(getAllHeaders), getBody = js.Any.fromFunction0(getBody), getCookies = js.Any.fromFunction0(getCookies), getErrorCode = js.Any.fromFunction0(getErrorCode), getErrorMessage = js.Any.fromFunction0(getErrorMessage), getHeader = js.Any.fromFunction1(getHeader), getHeaders = js.Any.fromFunction0(getHeaders), getQueryString = js.Any.fromFunction0(getQueryString), getResponseAttachmentSysid = js.Any.fromFunction0(getResponseAttachmentSysid), getStatusCode = js.Any.fromFunction0(getStatusCode), haveError = js.Any.fromFunction0(haveError), waitForResponse = js.Any.fromFunction1(waitForResponse))
+    __obj.asInstanceOf[RESTResponseV2]
+  }
 }
 

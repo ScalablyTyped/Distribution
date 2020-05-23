@@ -1,5 +1,7 @@
 package typings.popcorn
 
+import typings.popcorn.anon.Call
+import typings.popcorn.anon.ToSeconds
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,8 +10,8 @@ import scala.scalajs.js.annotation._
 trait PopcornStatic extends js.Object {
   var locale: PopcornLocale = js.native
   @JSName("plugin")
-  var plugin_Original: AnonCall = js.native
-  var util: AnonToSeconds = js.native
+  var plugin_Original: Call = js.native
+  var util: ToSeconds = js.native
   def apply(callback: js.Function): PopcornImpl = js.native
   def apply(selector: String): PopcornImpl = js.native
   def apply(selector: String, options: js.Any): PopcornImpl = js.native

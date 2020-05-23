@@ -16,7 +16,7 @@ object DeserializeOptions {
   @scala.inline
   def apply(keepWsc: js.UndefOr[Boolean] = js.undefined): DeserializeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(keepWsc)) __obj.updateDynamic("keepWsc")(keepWsc.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepWsc)) __obj.updateDynamic("keepWsc")(keepWsc.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeserializeOptions]
   }
 }

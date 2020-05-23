@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("yandex-maps", "data")
 @js.native
 object data extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.yandexMaps.mod.IFreezable because var conflicts: events. Inlined freeze, isFrozen, unfreeze */ @js.native
   class Manager () extends IDataManager {
     def this(data: js.Object) = this()

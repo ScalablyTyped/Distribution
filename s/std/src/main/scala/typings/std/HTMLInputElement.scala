@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.std.stdStrings.backward
 import typings.std.stdStrings.forward
 import typings.std.stdStrings.none
@@ -212,8 +211,4 @@ trait HTMLInputElement extends HTMLElement {
   def stepUp(): Unit = js.native
   def stepUp(n: Double): Unit = js.native
 }
-
-@JSGlobal("HTMLInputElement")
-@js.native
-object HTMLInputElement extends Instantiable0[HTMLInputElement]
 

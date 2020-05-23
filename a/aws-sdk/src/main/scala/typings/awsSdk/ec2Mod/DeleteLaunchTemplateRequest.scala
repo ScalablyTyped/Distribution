@@ -23,12 +23,12 @@ trait DeleteLaunchTemplateRequest extends js.Object {
 object DeleteLaunchTemplateRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     LaunchTemplateId: LaunchTemplateId = null,
     LaunchTemplateName: LaunchTemplateName = null
   ): DeleteLaunchTemplateRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (LaunchTemplateId != null) __obj.updateDynamic("LaunchTemplateId")(LaunchTemplateId.asInstanceOf[js.Any])
     if (LaunchTemplateName != null) __obj.updateDynamic("LaunchTemplateName")(LaunchTemplateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLaunchTemplateRequest]

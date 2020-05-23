@@ -63,8 +63,8 @@ trait ImportTask extends js.Object {
 object ImportTask {
   @scala.inline
   def apply(
-    applicationImportFailure: Int | Double = null,
-    applicationImportSuccess: Int | Double = null,
+    applicationImportFailure: js.UndefOr[Integer] = js.undefined,
+    applicationImportSuccess: js.UndefOr[Integer] = js.undefined,
     clientRequestToken: ClientRequestToken = null,
     errorsAndFailedEntriesZip: S3PresignedUrl = null,
     importCompletionTime: TimeStamp = null,
@@ -73,13 +73,13 @@ object ImportTask {
     importTaskId: ImportTaskIdentifier = null,
     importUrl: ImportURL = null,
     name: ImportTaskName = null,
-    serverImportFailure: Int | Double = null,
-    serverImportSuccess: Int | Double = null,
+    serverImportFailure: js.UndefOr[Integer] = js.undefined,
+    serverImportSuccess: js.UndefOr[Integer] = js.undefined,
     status: ImportStatus = null
   ): ImportTask = {
     val __obj = js.Dynamic.literal()
-    if (applicationImportFailure != null) __obj.updateDynamic("applicationImportFailure")(applicationImportFailure.asInstanceOf[js.Any])
-    if (applicationImportSuccess != null) __obj.updateDynamic("applicationImportSuccess")(applicationImportSuccess.asInstanceOf[js.Any])
+    if (!js.isUndefined(applicationImportFailure)) __obj.updateDynamic("applicationImportFailure")(applicationImportFailure.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(applicationImportSuccess)) __obj.updateDynamic("applicationImportSuccess")(applicationImportSuccess.get.asInstanceOf[js.Any])
     if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken.asInstanceOf[js.Any])
     if (errorsAndFailedEntriesZip != null) __obj.updateDynamic("errorsAndFailedEntriesZip")(errorsAndFailedEntriesZip.asInstanceOf[js.Any])
     if (importCompletionTime != null) __obj.updateDynamic("importCompletionTime")(importCompletionTime.asInstanceOf[js.Any])
@@ -88,8 +88,8 @@ object ImportTask {
     if (importTaskId != null) __obj.updateDynamic("importTaskId")(importTaskId.asInstanceOf[js.Any])
     if (importUrl != null) __obj.updateDynamic("importUrl")(importUrl.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (serverImportFailure != null) __obj.updateDynamic("serverImportFailure")(serverImportFailure.asInstanceOf[js.Any])
-    if (serverImportSuccess != null) __obj.updateDynamic("serverImportSuccess")(serverImportSuccess.asInstanceOf[js.Any])
+    if (!js.isUndefined(serverImportFailure)) __obj.updateDynamic("serverImportFailure")(serverImportFailure.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(serverImportSuccess)) __obj.updateDynamic("serverImportSuccess")(serverImportSuccess.get.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportTask]
   }

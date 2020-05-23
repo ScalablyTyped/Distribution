@@ -23,14 +23,14 @@ trait NoiseReducerSpatialFilterSettings extends js.Object {
 object NoiseReducerSpatialFilterSettings {
   @scala.inline
   def apply(
-    PostFilterSharpenStrength: Int | Double = null,
-    Speed: Int | Double = null,
-    Strength: Int | Double = null
+    PostFilterSharpenStrength: js.UndefOr[integerMin0Max3] = js.undefined,
+    Speed: js.UndefOr[integerMinNegative2Max3] = js.undefined,
+    Strength: js.UndefOr[integerMin0Max16] = js.undefined
   ): NoiseReducerSpatialFilterSettings = {
     val __obj = js.Dynamic.literal()
-    if (PostFilterSharpenStrength != null) __obj.updateDynamic("PostFilterSharpenStrength")(PostFilterSharpenStrength.asInstanceOf[js.Any])
-    if (Speed != null) __obj.updateDynamic("Speed")(Speed.asInstanceOf[js.Any])
-    if (Strength != null) __obj.updateDynamic("Strength")(Strength.asInstanceOf[js.Any])
+    if (!js.isUndefined(PostFilterSharpenStrength)) __obj.updateDynamic("PostFilterSharpenStrength")(PostFilterSharpenStrength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Speed)) __obj.updateDynamic("Speed")(Speed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Strength)) __obj.updateDynamic("Strength")(Strength.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoiseReducerSpatialFilterSettings]
   }
 }

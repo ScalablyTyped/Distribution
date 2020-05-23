@@ -1,8 +1,8 @@
 package typings.stripe.mod.accounts
 
-import typings.stripe.AnonBranding
-import typings.stripe.AnonDate
-import typings.stripe.AnonMcc
+import typings.stripe.anon.Branding
+import typings.stripe.anon.Date
+import typings.stripe.anon.Mcc
 import typings.stripe.stripeStrings.company
 import typings.stripe.stripeStrings.individual
 import scala.scalajs.js
@@ -13,7 +13,7 @@ trait IAccountShared extends js.Object {
   /**
     * Optional information related to the business.
     */
-  var business_profile: js.UndefOr[AnonMcc] = js.undefined
+  var business_profile: js.UndefOr[Mcc] = js.undefined
   /**
     * The business type. Can be individual or company.
     */
@@ -47,26 +47,26 @@ trait IAccountShared extends js.Object {
   /**
     * Account options for customizing how the account functions within Stripe.
     */
-  var settings: js.UndefOr[AnonBranding] = js.undefined
+  var settings: js.UndefOr[Branding] = js.undefined
   /**
     * Details on who accepted the Stripe terms of service, and when they
     * accepted it. See our updating managed accounts guide for more
     * information
     */
-  var tos_acceptance: js.UndefOr[AnonDate] = js.undefined
+  var tos_acceptance: js.UndefOr[Date] = js.undefined
 }
 
 object IAccountShared {
   @scala.inline
   def apply(
-    business_profile: AnonMcc = null,
+    business_profile: Mcc = null,
     business_type: individual | company = null,
     default_currency: String = null,
     email: String = null,
     product_description: String = null,
     requested_capabilities: js.Array[String] = null,
-    settings: AnonBranding = null,
-    tos_acceptance: AnonDate = null
+    settings: Branding = null,
+    tos_acceptance: Date = null
   ): IAccountShared = {
     val __obj = js.Dynamic.literal()
     if (business_profile != null) __obj.updateDynamic("business_profile")(business_profile.asInstanceOf[js.Any])

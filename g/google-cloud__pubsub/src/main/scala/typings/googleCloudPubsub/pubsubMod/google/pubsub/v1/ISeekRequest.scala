@@ -17,11 +17,15 @@ trait ISeekRequest extends js.Object {
 
 object ISeekRequest {
   @scala.inline
-  def apply(snapshot: String = null, subscription: String = null, time: ITimestamp = null): ISeekRequest = {
+  def apply(
+    snapshot: js.UndefOr[Null | String] = js.undefined,
+    subscription: js.UndefOr[Null | String] = js.undefined,
+    time: js.UndefOr[Null | ITimestamp] = js.undefined
+  ): ISeekRequest = {
     val __obj = js.Dynamic.literal()
-    if (snapshot != null) __obj.updateDynamic("snapshot")(snapshot.asInstanceOf[js.Any])
-    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapshot)) __obj.updateDynamic("snapshot")(snapshot.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscription)) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
+    if (!js.isUndefined(time)) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISeekRequest]
   }
 }

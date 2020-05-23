@@ -15,14 +15,14 @@ object AltimeterOption {
   @scala.inline
   def apply(
     controller: String,
-    address: Int | Double = null,
-    elevation: Int | Double = null,
-    freq: Int | Double = null
+    address: js.UndefOr[Double] = js.undefined,
+    elevation: js.UndefOr[Double] = js.undefined,
+    freq: js.UndefOr[Double] = js.undefined
   ): AltimeterOption = {
     val __obj = js.Dynamic.literal(controller = controller.asInstanceOf[js.Any])
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
-    if (freq != null) __obj.updateDynamic("freq")(freq.asInstanceOf[js.Any])
+    if (!js.isUndefined(address)) __obj.updateDynamic("address")(address.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(elevation)) __obj.updateDynamic("elevation")(elevation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(freq)) __obj.updateDynamic("freq")(freq.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AltimeterOption]
   }
 }

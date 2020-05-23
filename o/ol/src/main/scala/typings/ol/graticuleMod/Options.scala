@@ -36,46 +36,46 @@ object Options {
     extent: Extent = null,
     intervals: js.Array[Double] = null,
     latLabelFormatter: /* p0 */ Double => String = null,
-    latLabelPosition: Int | Double = null,
+    latLabelPosition: js.UndefOr[Double] = js.undefined,
     latLabelStyle: typings.ol.textMod.default = null,
     lonLabelFormatter: /* p0 */ Double => String = null,
-    lonLabelPosition: Int | Double = null,
+    lonLabelPosition: js.UndefOr[Double] = js.undefined,
     lonLabelStyle: typings.ol.textMod.default = null,
-    maxLines: Int | Double = null,
-    maxResolution: Int | Double = null,
-    maxZoom: Int | Double = null,
-    minResolution: Int | Double = null,
-    minZoom: Int | Double = null,
-    opacity: Int | Double = null,
+    maxLines: js.UndefOr[Double] = js.undefined,
+    maxResolution: js.UndefOr[Double] = js.undefined,
+    maxZoom: js.UndefOr[Double] = js.undefined,
+    minResolution: js.UndefOr[Double] = js.undefined,
+    minZoom: js.UndefOr[Double] = js.undefined,
+    opacity: js.UndefOr[Double] = js.undefined,
     showLabels: js.UndefOr[Boolean] = js.undefined,
     strokeStyle: typings.ol.strokeMod.default = null,
-    targetSize: Int | Double = null,
+    targetSize: js.UndefOr[Double] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
     wrapX: js.UndefOr[Boolean] = js.undefined,
-    zIndex: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
     if (intervals != null) __obj.updateDynamic("intervals")(intervals.asInstanceOf[js.Any])
     if (latLabelFormatter != null) __obj.updateDynamic("latLabelFormatter")(js.Any.fromFunction1(latLabelFormatter))
-    if (latLabelPosition != null) __obj.updateDynamic("latLabelPosition")(latLabelPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(latLabelPosition)) __obj.updateDynamic("latLabelPosition")(latLabelPosition.get.asInstanceOf[js.Any])
     if (latLabelStyle != null) __obj.updateDynamic("latLabelStyle")(latLabelStyle.asInstanceOf[js.Any])
     if (lonLabelFormatter != null) __obj.updateDynamic("lonLabelFormatter")(js.Any.fromFunction1(lonLabelFormatter))
-    if (lonLabelPosition != null) __obj.updateDynamic("lonLabelPosition")(lonLabelPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(lonLabelPosition)) __obj.updateDynamic("lonLabelPosition")(lonLabelPosition.get.asInstanceOf[js.Any])
     if (lonLabelStyle != null) __obj.updateDynamic("lonLabelStyle")(lonLabelStyle.asInstanceOf[js.Any])
-    if (maxLines != null) __obj.updateDynamic("maxLines")(maxLines.asInstanceOf[js.Any])
-    if (maxResolution != null) __obj.updateDynamic("maxResolution")(maxResolution.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minResolution != null) __obj.updateDynamic("minResolution")(minResolution.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLabels)) __obj.updateDynamic("showLabels")(showLabels.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLines)) __obj.updateDynamic("maxLines")(maxLines.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResolution)) __obj.updateDynamic("maxResolution")(maxResolution.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minResolution)) __obj.updateDynamic("minResolution")(minResolution.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLabels)) __obj.updateDynamic("showLabels")(showLabels.get.asInstanceOf[js.Any])
     if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle.asInstanceOf[js.Any])
-    if (targetSize != null) __obj.updateDynamic("targetSize")(targetSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetSize)) __obj.updateDynamic("targetSize")(targetSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

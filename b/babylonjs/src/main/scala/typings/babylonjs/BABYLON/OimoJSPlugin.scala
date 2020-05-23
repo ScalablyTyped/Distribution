@@ -4,11 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.OimoJSPlugin")
 @js.native
-class OimoJSPlugin () extends IPhysicsEnginePlugin {
-  def this(iterations: Double) = this()
-  def this(iterations: Double, oimoInjection: js.Any) = this()
+trait OimoJSPlugin extends IPhysicsEnginePlugin {
   var BJSOIMO: js.Any = js.native
   var _raycastResult: js.Any = js.native
   var _tmpImpostorsArray: js.Any = js.native

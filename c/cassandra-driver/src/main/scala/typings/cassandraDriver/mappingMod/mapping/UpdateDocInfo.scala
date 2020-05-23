@@ -21,18 +21,18 @@ object UpdateDocInfo {
     deleteOnlyColumns: js.UndefOr[Boolean] = js.undefined,
     fields: js.Array[String] = null,
     ifExists: js.UndefOr[Boolean] = js.undefined,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     orderBy: StringDictionary[String] = null,
-    ttl: Int | Double = null,
+    ttl: js.UndefOr[Double] = js.undefined,
     when: StringDictionary[js.Any] = null
   ): UpdateDocInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deleteOnlyColumns)) __obj.updateDynamic("deleteOnlyColumns")(deleteOnlyColumns.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleteOnlyColumns)) __obj.updateDynamic("deleteOnlyColumns")(deleteOnlyColumns.get.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(ifExists)) __obj.updateDynamic("ifExists")(ifExists.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(ifExists)) __obj.updateDynamic("ifExists")(ifExists.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
     if (when != null) __obj.updateDynamic("when")(when.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDocInfo]
   }

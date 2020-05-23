@@ -1,6 +1,5 @@
 package typings.phonegap
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,8 +36,4 @@ trait FileTransfer extends js.Object {
     options: js.Any
   ): Unit = js.native
 }
-
-@JSGlobal("FileTransfer")
-@js.native
-object FileTransfer extends Instantiable0[FileTransfer]
 

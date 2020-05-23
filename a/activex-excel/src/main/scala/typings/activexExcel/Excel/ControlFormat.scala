@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.ControlFormat")
 @js.native
-class ControlFormat protected () extends js.Object {
+trait ControlFormat extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
   var DropDownLines: Double = js.native

@@ -1,6 +1,6 @@
 package typings.popperJs.mod.Popper
 
-import typings.popperJs.AnonArrow
+import typings.popperJs.anon.Arrow
 import typings.std.CSSStyleDeclaration
 import typings.std.Element
 import scala.scalajs.js
@@ -15,7 +15,7 @@ trait Data extends js.Object {
   var flipped: Boolean
   var hide: Boolean
   var instance: typings.popperJs.mod.Popper
-  var offsets: AnonArrow
+  var offsets: Arrow
   var originalPlacement: Placement
   var placement: Placement
   var styles: CSSStyleDeclaration
@@ -31,7 +31,7 @@ object Data {
     flipped: Boolean,
     hide: Boolean,
     instance: typings.popperJs.mod.Popper,
-    offsets: AnonArrow,
+    offsets: Arrow,
     originalPlacement: Placement,
     placement: Placement,
     styles: CSSStyleDeclaration

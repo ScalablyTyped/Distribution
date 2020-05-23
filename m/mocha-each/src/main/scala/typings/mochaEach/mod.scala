@@ -1,10 +1,11 @@
 package typings.mochaEach
 
-import typings.mocha.Mocha_.SuiteFunction
-import typings.mocha.Mocha_.TestFunction
+import typings.mocha.Mocha.SuiteFunction
+import typings.mocha.Mocha.TestFunction
 import typings.mocha.mod.Context
 import typings.mocha.mod.Suite_
 import typings.mocha.mod.Test_
+import typings.mochaEach.anon.Describe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,8 +46,8 @@ object mod extends js.Object {
     * a series of mocha tests, defined using the `it` or `describe` notation common to
     * Mocha.
     */
-  def apply(parameters: js.Array[_]): AnonDescribe = js.native
-  def apply(parameters: js.Array[_], dIt: TestFunction): AnonDescribe = js.native
-  def apply(parameters: js.Array[_], dIt: TestFunction, dDescribe: SuiteFunction): AnonDescribe = js.native
+  def apply(parameters: js.Array[_]): Describe = js.native
+  def apply(parameters: js.Array[_], dIt: TestFunction): Describe = js.native
+  def apply(parameters: js.Array[_], dIt: TestFunction, dDescribe: SuiteFunction): Describe = js.native
 }
 

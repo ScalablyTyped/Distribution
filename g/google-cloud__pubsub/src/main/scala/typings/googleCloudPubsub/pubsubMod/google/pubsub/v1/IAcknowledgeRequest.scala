@@ -14,10 +14,13 @@ trait IAcknowledgeRequest extends js.Object {
 
 object IAcknowledgeRequest {
   @scala.inline
-  def apply(ackIds: js.Array[String] = null, subscription: String = null): IAcknowledgeRequest = {
+  def apply(
+    ackIds: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    subscription: js.UndefOr[Null | String] = js.undefined
+  ): IAcknowledgeRequest = {
     val __obj = js.Dynamic.literal()
-    if (ackIds != null) __obj.updateDynamic("ackIds")(ackIds.asInstanceOf[js.Any])
-    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
+    if (!js.isUndefined(ackIds)) __obj.updateDynamic("ackIds")(ackIds.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscription)) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAcknowledgeRequest]
   }
 }

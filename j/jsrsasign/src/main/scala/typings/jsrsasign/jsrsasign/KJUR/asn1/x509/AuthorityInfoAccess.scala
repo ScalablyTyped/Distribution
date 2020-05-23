@@ -1,6 +1,5 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
-import typings.jsrsasign.jsrsasign.KJUR.asn1.ArrayParam
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,11 +28,28 @@ import scala.scalajs.js.annotation._
   *   }]
   * });
   */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.AuthorityInfoAccess")
-@js.native
-class AuthorityInfoAccess () extends Extension {
-  def this(params: ArrayParam[ExtensionParam]) = this()
-  def getExtnValueHex(): String = js.native
-  def setAccessDescriptionArray(accessDescriptionArray: js.Array[ExtensionParam]): Unit = js.native
+trait AuthorityInfoAccess extends Extension {
+  def getExtnValueHex(): String
+  def setAccessDescriptionArray(accessDescriptionArray: js.Array[ExtensionParam]): Unit
+}
+
+object AuthorityInfoAccess {
+  @scala.inline
+  def apply(
+    getEncodedHex: () => String,
+    getExtnValueHex: () => String,
+    getFreshValueHex: () => String,
+    getLengthHexFromValue: () => String,
+    getValueHex: () => String,
+    hL: String,
+    hT: String,
+    hTLV: String,
+    hV: String,
+    isModified: String,
+    setAccessDescriptionArray: js.Array[ExtensionParam] => Unit
+  ): AuthorityInfoAccess = {
+    val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex), getExtnValueHex = js.Any.fromFunction0(getExtnValueHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setAccessDescriptionArray = js.Any.fromFunction1(setAccessDescriptionArray))
+    __obj.asInstanceOf[AuthorityInfoAccess]
+  }
 }
 

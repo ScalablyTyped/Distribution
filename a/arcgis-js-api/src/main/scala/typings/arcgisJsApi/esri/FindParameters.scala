@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -62,8 +61,4 @@ trait FindParameters
     */
   var searchText: String = js.native
 }
-
-@JSGlobal("__esri.FindParameters")
-@js.native
-object FindParameters extends TopLevel[FindParametersConstructor]
 

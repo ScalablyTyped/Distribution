@@ -46,7 +46,7 @@ object TransactionOptions {
     `type`: TransactionType = null
   ): TransactionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autocommit)) __obj.updateDynamic("autocommit")(autocommit.asInstanceOf[js.Any])
+    if (!js.isUndefined(autocommit)) __obj.updateDynamic("autocommit")(autocommit.get.asInstanceOf[js.Any])
     if (deferrable != null) __obj.updateDynamic("deferrable")(deferrable.asInstanceOf[js.Any])
     if (isolationLevel != null) __obj.updateDynamic("isolationLevel")(isolationLevel.asInstanceOf[js.Any])
     if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])

@@ -31,20 +31,22 @@ trait IMethodOptions extends js.Object {
 object IMethodOptions {
   @scala.inline
   def apply(
-    DotgoogleDotapiDothttp: IHttpRule = null,
-    DotgoogleDotapiDotmethodSignature: js.Array[String] = null,
-    DotgoogleDotlongrunningDotoperationInfo: IOperationInfo = null,
-    deprecated: js.UndefOr[Boolean] = js.undefined,
-    idempotencyLevel: IdempotencyLevel | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.MethodOptions.IdempotencyLevel * / any */ String) = null,
-    uninterpretedOption: js.Array[IUninterpretedOption] = null
+    DotgoogleDotapiDothttp: js.UndefOr[Null | IHttpRule] = js.undefined,
+    DotgoogleDotapiDotmethodSignature: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    DotgoogleDotlongrunningDotoperationInfo: js.UndefOr[Null | IOperationInfo] = js.undefined,
+    deprecated: js.UndefOr[Null | Boolean] = js.undefined,
+    idempotencyLevel: js.UndefOr[
+      Null | IdempotencyLevel | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.MethodOptions.IdempotencyLevel * / any */ String)
+    ] = js.undefined,
+    uninterpretedOption: js.UndefOr[Null | js.Array[IUninterpretedOption]] = js.undefined
   ): IMethodOptions = {
     val __obj = js.Dynamic.literal()
-    if (DotgoogleDotapiDothttp != null) __obj.updateDynamic(".google.api.http")(DotgoogleDotapiDothttp.asInstanceOf[js.Any])
-    if (DotgoogleDotapiDotmethodSignature != null) __obj.updateDynamic(".google.api.methodSignature")(DotgoogleDotapiDotmethodSignature.asInstanceOf[js.Any])
-    if (DotgoogleDotlongrunningDotoperationInfo != null) __obj.updateDynamic(".google.longrunning.operationInfo")(DotgoogleDotlongrunningDotoperationInfo.asInstanceOf[js.Any])
+    if (!js.isUndefined(DotgoogleDotapiDothttp)) __obj.updateDynamic(".google.api.http")(DotgoogleDotapiDothttp.asInstanceOf[js.Any])
+    if (!js.isUndefined(DotgoogleDotapiDotmethodSignature)) __obj.updateDynamic(".google.api.methodSignature")(DotgoogleDotapiDotmethodSignature.asInstanceOf[js.Any])
+    if (!js.isUndefined(DotgoogleDotlongrunningDotoperationInfo)) __obj.updateDynamic(".google.longrunning.operationInfo")(DotgoogleDotlongrunningDotoperationInfo.asInstanceOf[js.Any])
     if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
-    if (idempotencyLevel != null) __obj.updateDynamic("idempotencyLevel")(idempotencyLevel.asInstanceOf[js.Any])
-    if (uninterpretedOption != null) __obj.updateDynamic("uninterpretedOption")(uninterpretedOption.asInstanceOf[js.Any])
+    if (!js.isUndefined(idempotencyLevel)) __obj.updateDynamic("idempotencyLevel")(idempotencyLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(uninterpretedOption)) __obj.updateDynamic("uninterpretedOption")(uninterpretedOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMethodOptions]
   }
 }

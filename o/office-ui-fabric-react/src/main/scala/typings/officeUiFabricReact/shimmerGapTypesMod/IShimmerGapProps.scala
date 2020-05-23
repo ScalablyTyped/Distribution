@@ -43,7 +43,7 @@ object IShimmerGapProps {
     AllHTMLAttributes: AllHTMLAttributes[HTMLElement] = null,
     borderStyle: IRawStyle = null,
     componentRef: IRefObject[IShimmerGap] = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     styles: IStyleFunctionOrObject[IShimmerGapStyleProps, IShimmerGapStyles] = null,
     theme: ITheme = null
   ): IShimmerGapProps = {
@@ -51,7 +51,7 @@ object IShimmerGapProps {
     if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
     if (borderStyle != null) __obj.updateDynamic("borderStyle")(borderStyle.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShimmerGapProps]

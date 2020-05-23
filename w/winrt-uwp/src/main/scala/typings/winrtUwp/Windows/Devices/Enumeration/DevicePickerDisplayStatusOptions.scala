@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Enumeration
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object DevicePickerDisplayStatusOptions extends js.Object {
   /** Picker should display a retry button. */
   @js.native
   sealed trait showRetryButton extends DevicePickerDisplayStatusOptions
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DevicePickerDisplayStatusOptions with Double] = js.native
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 2 */ @js.native
-  object showDisconnectButton extends TopLevel[showDisconnectButton with Double]
-  
-  /* 1 */ @js.native
-  object showProgress extends TopLevel[showProgress with Double]
-  
-  /* 3 */ @js.native
-  object showRetryButton extends TopLevel[showRetryButton with Double]
   
 }
 

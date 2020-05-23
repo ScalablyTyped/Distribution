@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk.restMod.rest
 
 import typings.mendixmodelsdk.domainmodelsMod.domainmodels.IRemoteEntitySourceDocument
+import typings.mendixmodelsdk.instancesMod.IList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,5 +17,22 @@ import scala.scalajs.js.annotation._
   * In version 7.18.0: introduced
   */
 @js.native
-trait IConsumedODataService extends IRemoteEntitySourceDocument
+trait IConsumedODataService extends IRemoteEntitySourceDocument {
+  /**
+    * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+    *
+    * In version 8.9.0: added public
+    */
+  val entities: IList[IODataEntity] = js.native
+  /**
+    * In version 8.10.0: added public
+    * In version 8.0.0: introduced
+    */
+  val serviceName: String = js.native
+  /**
+    * In version 8.10.0: added public
+    * In version 8.0.0: introduced
+    */
+  val version: String = js.native
+}
 

@@ -1,8 +1,5 @@
 package typings.datastoreCore.mod
 
-import typings.datastoreCore.datastoreCoreStrings.SHARDING
-import typings.datastoreCore.datastoreCoreStrings.SlashrepoSlashflatfsSlashshardSlash
-import typings.datastoreCore.datastoreCoreStrings._README
 import typings.interfaceDatastore.mod.Datastore
 import typings.node.Buffer
 import scala.scalajs.js
@@ -31,9 +28,9 @@ object shard extends js.Object {
   class Suffix () extends Shard
   
   @JSName("PREFIX")
-  val PREFIX_ : SlashrepoSlashflatfsSlashshardSlash = js.native
-  val README_FN: _README = js.native
-  val SHARDING_FN: SHARDING = js.native
+  val PREFIX_ : /* "/repo/flatfs/shard/" */ String = js.native
+  val README_FN: /* "_README" */ String = js.native
+  val SHARDING_FN: /* "SHARDING" */ String = js.native
   val readme: String = js.native
   def parseShardFun(str: String): Shard = js.native
   def readShardFun(path: String, store: Datastore[Buffer]): js.Promise[Shard] = js.native

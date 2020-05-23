@@ -1,6 +1,6 @@
 package typings.stormReactDiagrams.diagramEngineMod
 
-import typings.stormReactDiagrams.AnonLocked
+import typings.stormReactDiagrams.anon.Locked
 import typings.stormReactDiagrams.baseEntityMod.BaseEvent
 import typings.stormReactDiagrams.baseEntityMod.BaseListener
 import scala.scalajs.js
@@ -21,7 +21,7 @@ object DiagramEngineListener {
   def apply(
     labelFactoriesUpdated: () => Unit = null,
     linkFactoriesUpdated: () => Unit = null,
-    lockChanged: /* event */ BaseEvent[js.Any] with AnonLocked => Unit = null,
+    lockChanged: /* event */ BaseEvent[js.Any] with Locked => Unit = null,
     nodeFactoriesUpdated: () => Unit = null,
     portFactoriesUpdated: () => Unit = null,
     repaintCanvas: () => Unit = null

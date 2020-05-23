@@ -47,13 +47,13 @@ object JSONEditorArrayOptions {
     disable_collapse: js.UndefOr[Boolean] = js.undefined
   ): JSONEditorArrayOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_array_add)) __obj.updateDynamic("disable_array_add")(disable_array_add.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_array_delete)) __obj.updateDynamic("disable_array_delete")(disable_array_delete.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_array_delete_all_rows)) __obj.updateDynamic("disable_array_delete_all_rows")(disable_array_delete_all_rows.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_array_delete_last_row)) __obj.updateDynamic("disable_array_delete_last_row")(disable_array_delete_last_row.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_array_reorder)) __obj.updateDynamic("disable_array_reorder")(disable_array_reorder.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_collapse)) __obj.updateDynamic("disable_collapse")(disable_collapse.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable_array_add)) __obj.updateDynamic("disable_array_add")(disable_array_add.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable_array_delete)) __obj.updateDynamic("disable_array_delete")(disable_array_delete.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable_array_delete_all_rows)) __obj.updateDynamic("disable_array_delete_all_rows")(disable_array_delete_all_rows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable_array_delete_last_row)) __obj.updateDynamic("disable_array_delete_last_row")(disable_array_delete_last_row.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable_array_reorder)) __obj.updateDynamic("disable_array_reorder")(disable_array_reorder.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable_collapse)) __obj.updateDynamic("disable_collapse")(disable_collapse.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONEditorArrayOptions]
   }
 }

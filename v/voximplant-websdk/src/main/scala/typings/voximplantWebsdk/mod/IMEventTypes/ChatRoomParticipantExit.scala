@@ -6,16 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		*	Event dispatched when participant left the chat room
-		*/
+  *    Event dispatched when participant left the chat room
+  */
 trait ChatRoomParticipantExit extends VoxImplantIMEvent {
   /**
-  			* User id
-  			*/
+    * User id
+    */
   var participant: String
   /**
-  			* Room id
-  			*/
+    * Room id
+    */
   var room: String
 }
 

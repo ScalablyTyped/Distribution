@@ -69,13 +69,7 @@ object rascalStrings {
   sealed trait republish extends js.Object
   
   @js.native
-  sealed trait `return` extends js.Object
-  
-  @js.native
   sealed trait stub extends js.Object
-  
-  @js.native
-  sealed trait success extends js.Object
   
   @js.native
   sealed trait topic extends js.Object
@@ -123,11 +117,7 @@ object rascalStrings {
   @scala.inline
   def republish: republish = "republish".asInstanceOf[republish]
   @scala.inline
-  def `return`: `return` = "return".asInstanceOf[`return`]
-  @scala.inline
   def stub: stub = "stub".asInstanceOf[stub]
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
   @scala.inline
   def topic: topic = "topic".asInstanceOf[topic]
 }

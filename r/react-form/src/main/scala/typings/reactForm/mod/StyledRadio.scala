@@ -2,7 +2,7 @@ package typings.reactForm.mod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.StatelessComponent
-import typings.reactForm.StyledPropsInputHTMLAttriAbout
+import typings.reactForm.anon.StyledPropsInputHTMLAttriAbout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

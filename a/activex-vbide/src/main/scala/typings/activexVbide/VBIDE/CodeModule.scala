@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("VBIDE.CodeModule")
 @js.native
-class CodeModule protected () extends js.Object {
+trait CodeModule extends js.Object {
   val CodePane: typings.activexVbide.VBIDE.CodePane = js.native
   val CountOfDeclarationLines: Double = js.native
   val CountOfLines: Double = js.native

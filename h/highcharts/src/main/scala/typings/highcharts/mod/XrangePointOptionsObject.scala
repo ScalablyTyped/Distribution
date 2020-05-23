@@ -121,7 +121,7 @@ object XrangePointOptionsObject {
     accessibility: PointAccessibilityOptionsObject = null,
     className: String = null,
     color: ColorString | GradientColorObject | PatternObject = null,
-    colorIndex: Int | Double = null,
+    colorIndex: js.UndefOr[Double] = js.undefined,
     connect: String | XrangePointConnectorsOptionsObject | (js.Array[String | XrangePointConnectorsOptionsObject]) = null,
     custom: Dictionary[_] = null,
     dataLabels: DataLabelsOptions | js.Array[DataLabelsOptions] = null,
@@ -130,20 +130,20 @@ object XrangePointOptionsObject {
     drilldown: String = null,
     events: PointEventsOptionsObject = null,
     id: String = null,
-    labelrank: Int | Double = null,
+    labelrank: js.UndefOr[Double] = js.undefined,
     marker: PointMarkerOptionsObject = null,
     name: String = null,
     partialFill: XrangePointPartialFillOptionsObject = null,
     selected: js.UndefOr[Boolean] = js.undefined,
-    x: Int | Double = null,
-    x2: Int | Double = null,
-    y: Int | Double = null
+    x: js.UndefOr[Double] = js.undefined,
+    x2: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined
   ): XrangePointOptionsObject = {
     val __obj = js.Dynamic.literal()
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorIndex)) __obj.updateDynamic("colorIndex")(colorIndex.get.asInstanceOf[js.Any])
     if (connect != null) __obj.updateDynamic("connect")(connect.asInstanceOf[js.Any])
     if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
@@ -152,14 +152,14 @@ object XrangePointOptionsObject {
     if (drilldown != null) __obj.updateDynamic("drilldown")(drilldown.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (labelrank != null) __obj.updateDynamic("labelrank")(labelrank.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelrank)) __obj.updateDynamic("labelrank")(labelrank.get.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (partialFill != null) __obj.updateDynamic("partialFill")(partialFill.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (x2 != null) __obj.updateDynamic("x2")(x2.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(x2)) __obj.updateDynamic("x2")(x2.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[XrangePointOptionsObject]
   }
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "dockerfile-ast" : "0.0.19"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "dockerfile-ast" : "0.0.19"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

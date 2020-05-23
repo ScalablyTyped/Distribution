@@ -22,10 +22,10 @@ object NormalizationSplitOperation {
     kind: String,
     name: String,
     selections: js.Array[NormalizationSelection],
-    metadata: StringDictionary[js.Any] = null
+    metadata: js.UndefOr[Null | StringDictionary[js.Any]] = js.undefined
   ): NormalizationSplitOperation = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(metadata)) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationSplitOperation]
   }
 }

@@ -29,13 +29,13 @@ object AnimationOptionsObject {
   @scala.inline
   def apply(
     complete: js.Function = null,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     easing: String | js.Function = null,
     step: js.Function = null
   ): AnimationOptionsObject = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(complete.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationOptionsObject]

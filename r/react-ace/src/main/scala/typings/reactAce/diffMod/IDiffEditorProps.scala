@@ -42,16 +42,16 @@ object IDiffEditorProps {
   @scala.inline
   def apply(
     className: String = null,
-    cursorStart: Int | Double = null,
+    cursorStart: js.UndefOr[Double] = js.undefined,
     editorProps: js.Object = null,
     enableBasicAutocompletion: Boolean | js.Array[String] = null,
     enableLiveAutocompletion: Boolean | js.Array[String] = null,
     focus: js.UndefOr[Boolean] = js.undefined,
-    fontSize: Int | Double = null,
+    fontSize: js.UndefOr[Double] = js.undefined,
     height: String = null,
     highlightActiveLine: js.UndefOr[Boolean] = js.undefined,
-    maxLines: Int | Double = null,
-    minLines: Int | Double = null,
+    maxLines: js.UndefOr[Double] = js.undefined,
+    minLines: js.UndefOr[Double] = js.undefined,
     mode: String = null,
     name: String = null,
     onChange: (/* value */ js.Array[String], /* event */ js.UndefOr[js.Any]) => Unit = null,
@@ -64,9 +64,9 @@ object IDiffEditorProps {
     setOptions: js.Object = null,
     showGutter: js.UndefOr[Boolean] = js.undefined,
     showPrintMargin: js.UndefOr[Boolean] = js.undefined,
-    splits: Int | Double = null,
+    splits: js.UndefOr[Double] = js.undefined,
     style: js.Object = null,
-    tabSize: Int | Double = null,
+    tabSize: js.UndefOr[Double] = js.undefined,
     theme: String = null,
     value: js.Array[String] = null,
     width: String = null,
@@ -74,16 +74,16 @@ object IDiffEditorProps {
   ): IDiffEditorProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (cursorStart != null) __obj.updateDynamic("cursorStart")(cursorStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(cursorStart)) __obj.updateDynamic("cursorStart")(cursorStart.get.asInstanceOf[js.Any])
     if (editorProps != null) __obj.updateDynamic("editorProps")(editorProps.asInstanceOf[js.Any])
     if (enableBasicAutocompletion != null) __obj.updateDynamic("enableBasicAutocompletion")(enableBasicAutocompletion.asInstanceOf[js.Any])
     if (enableLiveAutocompletion != null) __obj.updateDynamic("enableLiveAutocompletion")(enableLiveAutocompletion.asInstanceOf[js.Any])
-    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightActiveLine)) __obj.updateDynamic("highlightActiveLine")(highlightActiveLine.asInstanceOf[js.Any])
-    if (maxLines != null) __obj.updateDynamic("maxLines")(maxLines.asInstanceOf[js.Any])
-    if (minLines != null) __obj.updateDynamic("minLines")(minLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightActiveLine)) __obj.updateDynamic("highlightActiveLine")(highlightActiveLine.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLines)) __obj.updateDynamic("maxLines")(maxLines.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minLines)) __obj.updateDynamic("minLines")(minLines.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
@@ -91,18 +91,18 @@ object IDiffEditorProps {
     if (onPaste != null) __obj.updateDynamic("onPaste")(js.Any.fromFunction1(onPaste))
     if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     if (scrollMargin != null) __obj.updateDynamic("scrollMargin")(scrollMargin.asInstanceOf[js.Any])
     if (setOptions != null) __obj.updateDynamic("setOptions")(setOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(showGutter)) __obj.updateDynamic("showGutter")(showGutter.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPrintMargin)) __obj.updateDynamic("showPrintMargin")(showPrintMargin.asInstanceOf[js.Any])
-    if (splits != null) __obj.updateDynamic("splits")(splits.asInstanceOf[js.Any])
+    if (!js.isUndefined(showGutter)) __obj.updateDynamic("showGutter")(showGutter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPrintMargin)) __obj.updateDynamic("showPrintMargin")(showPrintMargin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(splits)) __obj.updateDynamic("splits")(splits.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tabSize != null) __obj.updateDynamic("tabSize")(tabSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabSize)) __obj.updateDynamic("tabSize")(tabSize.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapEnabled)) __obj.updateDynamic("wrapEnabled")(wrapEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapEnabled)) __obj.updateDynamic("wrapEnabled")(wrapEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDiffEditorProps]
   }
 }

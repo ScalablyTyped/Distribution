@@ -14,9 +14,14 @@ trait ScannerArgs extends js.Object {
 
 object ScannerArgs {
   @scala.inline
-  def apply(hasMoreData: Boolean, line: String, parserOptions: ParserOptions, cursor: Int | Double = null): ScannerArgs = {
+  def apply(
+    hasMoreData: Boolean,
+    line: String,
+    parserOptions: ParserOptions,
+    cursor: js.UndefOr[Double] = js.undefined
+  ): ScannerArgs = {
     val __obj = js.Dynamic.literal(hasMoreData = hasMoreData.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], parserOptions = parserOptions.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (!js.isUndefined(cursor)) __obj.updateDynamic("cursor")(cursor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScannerArgs]
   }
 }

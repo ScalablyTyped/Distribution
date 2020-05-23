@@ -69,13 +69,13 @@ object SearchOptionsUpdateData {
     matchWildcards: js.UndefOr[Boolean] = js.undefined
   ): SearchOptionsUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignorePunct)) __obj.updateDynamic("ignorePunct")(ignorePunct.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreSpace)) __obj.updateDynamic("ignoreSpace")(ignoreSpace.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchPrefix)) __obj.updateDynamic("matchPrefix")(matchPrefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchSuffix)) __obj.updateDynamic("matchSuffix")(matchSuffix.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchWholeWord)) __obj.updateDynamic("matchWholeWord")(matchWholeWord.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchWildcards)) __obj.updateDynamic("matchWildcards")(matchWildcards.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignorePunct)) __obj.updateDynamic("ignorePunct")(ignorePunct.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreSpace)) __obj.updateDynamic("ignoreSpace")(ignoreSpace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchPrefix)) __obj.updateDynamic("matchPrefix")(matchPrefix.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchSuffix)) __obj.updateDynamic("matchSuffix")(matchSuffix.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchWholeWord)) __obj.updateDynamic("matchWholeWord")(matchWholeWord.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchWildcards)) __obj.updateDynamic("matchWildcards")(matchWildcards.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchOptionsUpdateData]
   }
 }

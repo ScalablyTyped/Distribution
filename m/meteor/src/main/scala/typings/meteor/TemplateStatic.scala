@@ -1,6 +1,7 @@
 package typings.meteor
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.meteor.Blaze.Template
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TemplateStatic
   extends typings.meteor.Blaze.TemplateStatic
-     with /* index */ StringDictionary[js.Any | typings.meteor.Blaze.Template] {
-  var body: typings.meteor.Blaze.Template = js.native
+     with /* index */ StringDictionary[js.Any | Template] {
+  var body: Template = js.native
 }
 

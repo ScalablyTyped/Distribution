@@ -5,12 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the current network security settings. */
-@JSGlobal("Windows.Networking.Connectivity.NetworkSecuritySettings")
-@js.native
-abstract class NetworkSecuritySettings () extends js.Object {
+trait NetworkSecuritySettings extends js.Object {
   /** Retrieves the type of authentication used by the network. */
-  var networkAuthenticationType: NetworkAuthenticationType = js.native
+  var networkAuthenticationType: NetworkAuthenticationType
   /** Retrieves the type of encryption used by the network. */
-  var networkEncryptionType: NetworkEncryptionType = js.native
+  var networkEncryptionType: NetworkEncryptionType
+}
+
+object NetworkSecuritySettings {
+  @scala.inline
+  def apply(networkAuthenticationType: NetworkAuthenticationType, networkEncryptionType: NetworkEncryptionType): NetworkSecuritySettings = {
+    val __obj = js.Dynamic.literal(networkAuthenticationType = networkAuthenticationType.asInstanceOf[js.Any], networkEncryptionType = networkEncryptionType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NetworkSecuritySettings]
+  }
 }
 

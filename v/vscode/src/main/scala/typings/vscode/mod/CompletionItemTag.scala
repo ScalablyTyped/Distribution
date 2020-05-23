@@ -12,8 +12,8 @@ sealed trait CompletionItemTag extends js.Object
 @js.native
 object CompletionItemTag extends js.Object {
   /**
-  		 * Render a completion as obsolete, usually using a strike-out.
-  		 */
+    * Render a completion as obsolete, usually using a strike-out.
+    */
   @js.native
   sealed trait Deprecated extends CompletionItemTag
   

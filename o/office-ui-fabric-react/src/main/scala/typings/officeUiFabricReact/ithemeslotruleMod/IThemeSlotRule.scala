@@ -46,8 +46,8 @@ object IThemeSlotRule {
     if (asShade != null) __obj.updateDynamic("asShade")(asShade.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (inherits != null) __obj.updateDynamic("inherits")(inherits.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBackgroundShade)) __obj.updateDynamic("isBackgroundShade")(isBackgroundShade.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCustomized)) __obj.updateDynamic("isCustomized")(isCustomized.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBackgroundShade)) __obj.updateDynamic("isBackgroundShade")(isBackgroundShade.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCustomized)) __obj.updateDynamic("isCustomized")(isCustomized.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IThemeSlotRule]
   }

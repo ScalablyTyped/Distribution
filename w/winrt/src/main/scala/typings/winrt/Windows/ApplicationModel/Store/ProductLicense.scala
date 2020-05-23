@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.Store.ProductLicense")
-@js.native
-class ProductLicense () extends IProductLicense {
-  /* CompleteClass */
-  override var expirationDate: Date = js.native
-  /* CompleteClass */
-  override var isActive: Boolean = js.native
-  /* CompleteClass */
-  override var productId: String = js.native
+trait ProductLicense extends IProductLicense
+
+object ProductLicense {
+  @scala.inline
+  def apply(expirationDate: Date, isActive: Boolean, productId: String): ProductLicense = {
+    val __obj = js.Dynamic.literal(expirationDate = expirationDate.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ProductLicense]
+  }
 }
 

@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,8 +23,4 @@ trait IDBFactory extends js.Object {
   def open(name: java.lang.String): IDBOpenDBRequest = js.native
   def open(name: java.lang.String, version: Double): IDBOpenDBRequest = js.native
 }
-
-@JSGlobal("IDBFactory")
-@js.native
-object IDBFactory extends Instantiable0[IDBFactory]
 

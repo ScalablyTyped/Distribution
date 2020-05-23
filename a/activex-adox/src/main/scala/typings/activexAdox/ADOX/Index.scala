@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ADOX.Index")
 @js.native
-class Index protected () extends js.Object {
+trait Index extends js.Object {
   @JSName("ADOX.Index_typekey")
   var ADOXDotIndex_typekey: Index = js.native
   var Clustered: Boolean = js.native

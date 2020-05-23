@@ -1,5 +1,6 @@
 package typings.ngxInfiniteScroll
 
+import typings.ngxInfiniteScroll.anon.TotalToScroll
 import typings.ngxInfiniteScroll.modelsMod.IScrollState
 import typings.ngxInfiniteScroll.modelsMod.IScrollerDistance
 import scala.scalajs.js
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation._
 object scrollStateMod extends js.Object {
   @js.native
   class ScrollState protected () extends IScrollState {
-    def this(hasTotalToScroll: AnonTotalToScroll) = this()
+    def this(hasTotalToScroll: TotalToScroll) = this()
     /* CompleteClass */
     override var lastScrollPosition: Double = js.native
     /* CompleteClass */

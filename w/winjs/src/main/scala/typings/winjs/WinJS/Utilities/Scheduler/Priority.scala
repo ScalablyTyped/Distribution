@@ -1,6 +1,5 @@
 package typings.winjs.WinJS.Utilities.Scheduler
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,29 +55,6 @@ object Priority extends js.Object {
     **/
   @js.native
   sealed trait normal extends Priority
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Priority with Double] = js.native
-  /* 0 */ @js.native
-  object aboveNormal extends TopLevel[aboveNormal with Double]
-  
-  /* 1 */ @js.native
-  object belowNormal extends TopLevel[belowNormal with Double]
-  
-  /* 2 */ @js.native
-  object high extends TopLevel[high with Double]
-  
-  /* 3 */ @js.native
-  object idle extends TopLevel[idle with Double]
-  
-  /* 4 */ @js.native
-  object max extends TopLevel[max with Double]
-  
-  /* 5 */ @js.native
-  object min extends TopLevel[min with Double]
-  
-  /* 6 */ @js.native
-  object normal extends TopLevel[normal with Double]
   
 }
 

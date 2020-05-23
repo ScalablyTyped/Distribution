@@ -30,10 +30,10 @@ object ModifyInstanceEventStartTimeRequest {
     InstanceEventId: String,
     InstanceId: InstanceId,
     NotBefore: DateTime,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined
   ): ModifyInstanceEventStartTimeRequest = {
     val __obj = js.Dynamic.literal(InstanceEventId = InstanceEventId.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any], NotBefore = NotBefore.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyInstanceEventStartTimeRequest]
   }
 }

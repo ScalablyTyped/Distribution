@@ -1,6 +1,6 @@
 package typings.prosemirrorMenu.mod
 
-import typings.prosemirrorMenu.AnonDom
+import typings.prosemirrorMenu.anon.Dom
 import typings.prosemirrorModel.mod.Schema
 import typings.prosemirrorView.mod.EditorView
 import scala.scalajs.js
@@ -14,12 +14,12 @@ trait MenuElement[S /* <: Schema[_, _] */] extends js.Object {
     * a new state. The `update` function will return false if the
     * update hid the entire element.
     */
-  def render(pm: EditorView[S]): AnonDom[S]
+  def render(pm: EditorView[S]): Dom[S]
 }
 
 object MenuElement {
   @scala.inline
-  def apply[S /* <: Schema[_, _] */](render: EditorView[S] => AnonDom[S]): MenuElement[S] = {
+  def apply[S](render: EditorView[S] => Dom[S]): MenuElement[S] = {
     val __obj = js.Dynamic.literal(render = js.Any.fromFunction1(render))
     __obj.asInstanceOf[MenuElement[S]]
   }

@@ -2,8 +2,8 @@ package typings.antd.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.antd.PickPickPickerDatePropsMo
-import typings.antd.PickPickPickerTimePropsMo
+import typings.antd.anon.PickPickPickerDatePropsMo
+import typings.antd.anon.PickPickPickerTimePropsMo
 import typings.antd.generatePickerMod.PickerProps
 import typings.antd.generatePickerMod.RangePickerProps
 import typings.moment.mod.Moment

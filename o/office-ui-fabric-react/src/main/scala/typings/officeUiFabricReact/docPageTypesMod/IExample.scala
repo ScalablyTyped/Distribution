@@ -1,8 +1,8 @@
 package typings.officeUiFabricReact.docPageTypesMod
 
-import typings.officeUiFabricReact.AnonRoot
-import typings.officeUiFabricReact.AnonTheme
-import typings.react.mod._Global_.JSX.Element
+import typings.officeUiFabricReact.anon.Root
+import typings.officeUiFabricReact.anon.Theme
+import typings.react.mod.global.JSX.Element
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ trait IExample extends js.Object {
   var codepenJS: js.UndefOr[String] = js.undefined
   var isScrollable: js.UndefOr[Boolean] = js.undefined
   /** Custom styles. Partial version of `IExampleCardProps['styles']`. */
-  var styles: js.UndefOr[IStyleFunctionOrObject[AnonTheme, AnonRoot]] = js.undefined
+  var styles: js.UndefOr[IStyleFunctionOrObject[Theme, Root]] = js.undefined
   /** Title of the example */
   var title: String
   /** Working example of the example */
@@ -30,11 +30,11 @@ object IExample {
     view: Element,
     codepenJS: String = null,
     isScrollable: js.UndefOr[Boolean] = js.undefined,
-    styles: IStyleFunctionOrObject[AnonTheme, AnonRoot] = null
+    styles: IStyleFunctionOrObject[Theme, Root] = null
   ): IExample = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     if (codepenJS != null) __obj.updateDynamic("codepenJS")(codepenJS.asInstanceOf[js.Any])
-    if (!js.isUndefined(isScrollable)) __obj.updateDynamic("isScrollable")(isScrollable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isScrollable)) __obj.updateDynamic("isScrollable")(isScrollable.get.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExample]
   }

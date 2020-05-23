@@ -30,7 +30,7 @@ object NoticeIconTabProps {
     onClear: js.Any => Unit,
     onClick: js.Any => Unit,
     onViewMore: js.Any => Unit,
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     data: js.Array[_] = null,
     emptyImage: String = null,
     emptyText: ReactNode = null,
@@ -42,14 +42,14 @@ object NoticeIconTabProps {
     title: String = null
   ): NoticeIconTabProps = {
     val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], onClear = js.Any.fromFunction1(onClear), onClick = js.Any.fromFunction1(onClick), onViewMore = js.Any.fromFunction1(onViewMore))
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (emptyImage != null) __obj.updateDynamic("emptyImage")(emptyImage.asInstanceOf[js.Any])
     if (emptyText != null) __obj.updateDynamic("emptyText")(emptyText.asInstanceOf[js.Any])
     if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(showClear)) __obj.updateDynamic("showClear")(showClear.asInstanceOf[js.Any])
-    if (!js.isUndefined(showViewMore)) __obj.updateDynamic("showViewMore")(showViewMore.asInstanceOf[js.Any])
+    if (!js.isUndefined(showClear)) __obj.updateDynamic("showClear")(showClear.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showViewMore)) __obj.updateDynamic("showViewMore")(showViewMore.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoticeIconTabProps]

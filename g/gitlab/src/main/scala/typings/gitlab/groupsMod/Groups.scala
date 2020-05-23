@@ -1,6 +1,6 @@
 package typings.gitlab.groupsMod
 
-import typings.gitlab.Sudoproviderstring
+import typings.gitlab.anon.Sudoproviderstring
 import typings.gitlab.infrastructureMod.BaseService
 import typings.gitlab.projectsMod.ProjectSchema
 import typings.gitlab.requestHelperMod.BaseRequestOptions

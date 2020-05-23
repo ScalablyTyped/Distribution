@@ -22,7 +22,7 @@ object LabelValueType {
     value: RawValueType = null
   ): LabelValueType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(halfChecked)) __obj.updateDynamic("halfChecked")(halfChecked.asInstanceOf[js.Any])
+    if (!js.isUndefined(halfChecked)) __obj.updateDynamic("halfChecked")(halfChecked.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

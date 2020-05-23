@@ -36,7 +36,7 @@ object BrowserConsoleLogOptions {
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(terminal)) __obj.updateDynamic("terminal")(terminal.asInstanceOf[js.Any])
+    if (!js.isUndefined(terminal)) __obj.updateDynamic("terminal")(terminal.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrowserConsoleLogOptions]
   }
 }

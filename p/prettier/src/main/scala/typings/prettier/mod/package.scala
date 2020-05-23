@@ -13,7 +13,7 @@ package object mod {
   ]
   type CustomParser = js.Function3[
     /* text */ java.lang.String, 
-    /* parsers */ typings.prettier.RecordBuiltInParserNameBu, 
+    /* parsers */ typings.prettier.anon.RecordBuiltInParserNameBu, 
     /* options */ typings.prettier.mod.Options, 
     typings.prettier.mod.AST
   ]

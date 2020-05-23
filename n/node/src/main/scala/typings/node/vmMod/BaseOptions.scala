@@ -24,11 +24,15 @@ trait BaseOptions extends js.Object {
 
 object BaseOptions {
   @scala.inline
-  def apply(columnOffset: Int | Double = null, filename: String = null, lineOffset: Int | Double = null): BaseOptions = {
+  def apply(
+    columnOffset: js.UndefOr[Double] = js.undefined,
+    filename: String = null,
+    lineOffset: js.UndefOr[Double] = js.undefined
+  ): BaseOptions = {
     val __obj = js.Dynamic.literal()
-    if (columnOffset != null) __obj.updateDynamic("columnOffset")(columnOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnOffset)) __obj.updateDynamic("columnOffset")(columnOffset.get.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (lineOffset != null) __obj.updateDynamic("lineOffset")(lineOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineOffset)) __obj.updateDynamic("lineOffset")(lineOffset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseOptions]
   }
 }

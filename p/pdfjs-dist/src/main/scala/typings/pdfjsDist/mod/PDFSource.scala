@@ -169,44 +169,44 @@ object PDFSource {
     httpHeaders: StringDictionary[String] = null,
     initialData: Uint8Array | BufferSource = null,
     isEvalSupported: js.UndefOr[Boolean] = js.undefined,
-    length: Int | Double = null,
-    maxImageSize: Int | Double = null,
+    length: js.UndefOr[Double] = js.undefined,
+    maxImageSize: js.UndefOr[Double] = js.undefined,
     nativeImageDecoderSupport: decode | display | none = null,
     password: String = null,
     pdfBug: js.UndefOr[Boolean] = js.undefined,
     range: PDFDataRangeTransport = null,
-    rangeChunkSize: Int | Double = null,
+    rangeChunkSize: js.UndefOr[Double] = js.undefined,
     stopAtErrors: js.UndefOr[Boolean] = js.undefined,
     url: String = null,
-    verbosity: Int | Double = null,
+    verbosity: js.UndefOr[Double] = js.undefined,
     withCredentials: js.UndefOr[Boolean] = js.undefined,
     worker: PDFWorker = null
   ): PDFSource = {
     val __obj = js.Dynamic.literal()
     if (CMapReaderFactory != null) __obj.updateDynamic("CMapReaderFactory")(CMapReaderFactory.asInstanceOf[js.Any])
-    if (!js.isUndefined(cMapPacked)) __obj.updateDynamic("cMapPacked")(cMapPacked.asInstanceOf[js.Any])
+    if (!js.isUndefined(cMapPacked)) __obj.updateDynamic("cMapPacked")(cMapPacked.get.asInstanceOf[js.Any])
     if (cMapUrl != null) __obj.updateDynamic("cMapUrl")(cMapUrl.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableAutoFetch)) __obj.updateDynamic("disableAutoFetch")(disableAutoFetch.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableCreateObjectURL)) __obj.updateDynamic("disableCreateObjectURL")(disableCreateObjectURL.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableFontFace)) __obj.updateDynamic("disableFontFace")(disableFontFace.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableRange)) __obj.updateDynamic("disableRange")(disableRange.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableStream)) __obj.updateDynamic("disableStream")(disableStream.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableAutoFetch)) __obj.updateDynamic("disableAutoFetch")(disableAutoFetch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableCreateObjectURL)) __obj.updateDynamic("disableCreateObjectURL")(disableCreateObjectURL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableFontFace)) __obj.updateDynamic("disableFontFace")(disableFontFace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableRange)) __obj.updateDynamic("disableRange")(disableRange.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableStream)) __obj.updateDynamic("disableStream")(disableStream.get.asInstanceOf[js.Any])
     if (docBaseUrl != null) __obj.updateDynamic("docBaseUrl")(docBaseUrl.asInstanceOf[js.Any])
     if (httpHeaders != null) __obj.updateDynamic("httpHeaders")(httpHeaders.asInstanceOf[js.Any])
     if (initialData != null) __obj.updateDynamic("initialData")(initialData.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEvalSupported)) __obj.updateDynamic("isEvalSupported")(isEvalSupported.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (maxImageSize != null) __obj.updateDynamic("maxImageSize")(maxImageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEvalSupported)) __obj.updateDynamic("isEvalSupported")(isEvalSupported.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxImageSize)) __obj.updateDynamic("maxImageSize")(maxImageSize.get.asInstanceOf[js.Any])
     if (nativeImageDecoderSupport != null) __obj.updateDynamic("nativeImageDecoderSupport")(nativeImageDecoderSupport.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (!js.isUndefined(pdfBug)) __obj.updateDynamic("pdfBug")(pdfBug.asInstanceOf[js.Any])
+    if (!js.isUndefined(pdfBug)) __obj.updateDynamic("pdfBug")(pdfBug.get.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (rangeChunkSize != null) __obj.updateDynamic("rangeChunkSize")(rangeChunkSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopAtErrors)) __obj.updateDynamic("stopAtErrors")(stopAtErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(rangeChunkSize)) __obj.updateDynamic("rangeChunkSize")(rangeChunkSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopAtErrors)) __obj.updateDynamic("stopAtErrors")(stopAtErrors.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (verbosity != null) __obj.updateDynamic("verbosity")(verbosity.asInstanceOf[js.Any])
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbosity)) __obj.updateDynamic("verbosity")(verbosity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.get.asInstanceOf[js.Any])
     if (worker != null) __obj.updateDynamic("worker")(worker.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFSource]
   }

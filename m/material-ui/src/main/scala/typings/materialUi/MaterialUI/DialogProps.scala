@@ -1,6 +1,6 @@
 package typings.materialUi.MaterialUI
 
-import typings.react.AnonHtml
+import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
@@ -23,12 +23,12 @@ import typings.react.mod.TouchEvent
 import typings.react.mod.TransitionEvent
 import typings.react.mod.UIEvent
 import typings.react.mod.WheelEvent
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.react.mod.Props because var conflicts: children. Inlined key, ref */ trait DialogProps
   extends DOMAttributes[js.Object] {
   /** @deprecated use a custom `actions` property instead */
@@ -75,18 +75,18 @@ object DialogProps {
     className: String = null,
     contentClassName: String = null,
     contentStyle: CSSProperties = null,
-    dangerouslySetInnerHTML: AnonHtml = null,
+    dangerouslySetInnerHTML: Html = null,
     key: Key = null,
     modal: js.UndefOr[Boolean] = js.undefined,
-    onAbort: SyntheticEvent[js.Object, Event_] => Unit = null,
+    onAbort: SyntheticEvent[js.Object, Event] => Unit = null,
     onAnimationEnd: AnimationEvent[js.Object] => Unit = null,
     onAnimationIteration: AnimationEvent[js.Object] => Unit = null,
     onAnimationStart: AnimationEvent[js.Object] => Unit = null,
     onAuxClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     onBeforeInput: FormEvent[js.Object] => Unit = null,
     onBlur: FocusEvent[js.Object] => Unit = null,
-    onCanPlay: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onCanPlayThrough: SyntheticEvent[js.Object, Event_] => Unit = null,
+    onCanPlay: SyntheticEvent[js.Object, Event] => Unit = null,
+    onCanPlayThrough: SyntheticEvent[js.Object, Event] => Unit = null,
     onChange: FormEvent[js.Object] => Unit = null,
     onClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     onCompositionEnd: CompositionEvent[js.Object] => Unit = null,
@@ -104,21 +104,21 @@ object DialogProps {
     onDragOver: DragEvent[js.Object] => Unit = null,
     onDragStart: DragEvent[js.Object] => Unit = null,
     onDrop: DragEvent[js.Object] => Unit = null,
-    onDurationChange: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onEmptied: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onEncrypted: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onEnded: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onError: SyntheticEvent[js.Object, Event_] => Unit = null,
+    onDurationChange: SyntheticEvent[js.Object, Event] => Unit = null,
+    onEmptied: SyntheticEvent[js.Object, Event] => Unit = null,
+    onEncrypted: SyntheticEvent[js.Object, Event] => Unit = null,
+    onEnded: SyntheticEvent[js.Object, Event] => Unit = null,
+    onError: SyntheticEvent[js.Object, Event] => Unit = null,
     onFocus: FocusEvent[js.Object] => Unit = null,
     onInput: FormEvent[js.Object] => Unit = null,
     onInvalid: FormEvent[js.Object] => Unit = null,
     onKeyDown: KeyboardEvent[js.Object] => Unit = null,
     onKeyPress: KeyboardEvent[js.Object] => Unit = null,
     onKeyUp: KeyboardEvent[js.Object] => Unit = null,
-    onLoad: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onLoadStart: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onLoadedData: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onLoadedMetadata: SyntheticEvent[js.Object, Event_] => Unit = null,
+    onLoad: SyntheticEvent[js.Object, Event] => Unit = null,
+    onLoadStart: SyntheticEvent[js.Object, Event] => Unit = null,
+    onLoadedData: SyntheticEvent[js.Object, Event] => Unit = null,
+    onLoadedMetadata: SyntheticEvent[js.Object, Event] => Unit = null,
     onMouseDown: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     onMouseEnter: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     onMouseLeave: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
@@ -127,9 +127,9 @@ object DialogProps {
     onMouseOver: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     onMouseUp: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     onPaste: ClipboardEvent[js.Object] => Unit = null,
-    onPause: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onPlay: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onPlaying: SyntheticEvent[js.Object, Event_] => Unit = null,
+    onPause: SyntheticEvent[js.Object, Event] => Unit = null,
+    onPlay: SyntheticEvent[js.Object, Event] => Unit = null,
+    onPlaying: SyntheticEvent[js.Object, Event] => Unit = null,
     onPointerCancel: PointerEvent[js.Object] => Unit = null,
     onPointerDown: PointerEvent[js.Object] => Unit = null,
     onPointerEnter: PointerEvent[js.Object] => Unit = null,
@@ -138,31 +138,31 @@ object DialogProps {
     onPointerOut: PointerEvent[js.Object] => Unit = null,
     onPointerOver: PointerEvent[js.Object] => Unit = null,
     onPointerUp: PointerEvent[js.Object] => Unit = null,
-    onProgress: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onRateChange: SyntheticEvent[js.Object, Event_] => Unit = null,
+    onProgress: SyntheticEvent[js.Object, Event] => Unit = null,
+    onRateChange: SyntheticEvent[js.Object, Event] => Unit = null,
     onRequestClose: /* buttonClicked */ Boolean => Unit = null,
     onReset: FormEvent[js.Object] => Unit = null,
     onScroll: UIEvent[js.Object, NativeUIEvent] => Unit = null,
-    onSeeked: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onSeeking: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onSelect: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onStalled: SyntheticEvent[js.Object, Event_] => Unit = null,
+    onSeeked: SyntheticEvent[js.Object, Event] => Unit = null,
+    onSeeking: SyntheticEvent[js.Object, Event] => Unit = null,
+    onSelect: SyntheticEvent[js.Object, Event] => Unit = null,
+    onStalled: SyntheticEvent[js.Object, Event] => Unit = null,
     onSubmit: FormEvent[js.Object] => Unit = null,
-    onSuspend: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onTimeUpdate: SyntheticEvent[js.Object, Event_] => Unit = null,
+    onSuspend: SyntheticEvent[js.Object, Event] => Unit = null,
+    onTimeUpdate: SyntheticEvent[js.Object, Event] => Unit = null,
     onTouchCancel: TouchEvent[js.Object] => Unit = null,
     onTouchEnd: TouchEvent[js.Object] => Unit = null,
     onTouchMove: TouchEvent[js.Object] => Unit = null,
     onTouchStart: TouchEvent[js.Object] => Unit = null,
     onTransitionEnd: TransitionEvent[js.Object] => Unit = null,
-    onVolumeChange: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onWaiting: SyntheticEvent[js.Object, Event_] => Unit = null,
+    onVolumeChange: SyntheticEvent[js.Object, Event] => Unit = null,
+    onWaiting: SyntheticEvent[js.Object, Event] => Unit = null,
     onWheel: WheelEvent[js.Object] => Unit = null,
     overlayClassName: String = null,
     overlayStyle: CSSProperties = null,
     paperClassName: String = null,
     paperProps: js.Any = null,
-    ref: LegacyRef[Dialog] = null,
+    ref: js.UndefOr[Null | LegacyRef[Dialog]] = js.undefined,
     repositionOnUpdate: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
     title: ReactNode = null,
@@ -174,8 +174,8 @@ object DialogProps {
     if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
     if (actionsContainerClassName != null) __obj.updateDynamic("actionsContainerClassName")(actionsContainerClassName.asInstanceOf[js.Any])
     if (actionsContainerStyle != null) __obj.updateDynamic("actionsContainerStyle")(actionsContainerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoDetectWindowHeight)) __obj.updateDynamic("autoDetectWindowHeight")(autoDetectWindowHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoScrollBodyContent)) __obj.updateDynamic("autoScrollBodyContent")(autoScrollBodyContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoDetectWindowHeight)) __obj.updateDynamic("autoDetectWindowHeight")(autoDetectWindowHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoScrollBodyContent)) __obj.updateDynamic("autoScrollBodyContent")(autoScrollBodyContent.get.asInstanceOf[js.Any])
     if (bodyClassName != null) __obj.updateDynamic("bodyClassName")(bodyClassName.asInstanceOf[js.Any])
     if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
@@ -184,7 +184,7 @@ object DialogProps {
     if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.get.asInstanceOf[js.Any])
     if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1(onAbort))
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
     if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(js.Any.fromFunction1(onAnimationIteration))
@@ -269,8 +269,8 @@ object DialogProps {
     if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
     if (paperClassName != null) __obj.updateDynamic("paperClassName")(paperClassName.asInstanceOf[js.Any])
     if (paperProps != null) __obj.updateDynamic("paperProps")(paperProps.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (!js.isUndefined(repositionOnUpdate)) __obj.updateDynamic("repositionOnUpdate")(repositionOnUpdate.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(repositionOnUpdate)) __obj.updateDynamic("repositionOnUpdate")(repositionOnUpdate.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (titleClassName != null) __obj.updateDynamic("titleClassName")(titleClassName.asInstanceOf[js.Any])

@@ -31,13 +31,13 @@ object ServerOptions {
     IncomingMessage: Instantiable1[/* socket */ Socket, IncomingMessage] = null,
     ServerResponse: Instantiable1[/* req */ IncomingMessage, ServerResponse] = null,
     insecureHTTPParser: js.UndefOr[Boolean] = js.undefined,
-    maxHeaderSize: Int | Double = null
+    maxHeaderSize: js.UndefOr[Double] = js.undefined
   ): ServerOptions = {
     val __obj = js.Dynamic.literal()
     if (IncomingMessage != null) __obj.updateDynamic("IncomingMessage")(IncomingMessage.asInstanceOf[js.Any])
     if (ServerResponse != null) __obj.updateDynamic("ServerResponse")(ServerResponse.asInstanceOf[js.Any])
-    if (!js.isUndefined(insecureHTTPParser)) __obj.updateDynamic("insecureHTTPParser")(insecureHTTPParser.asInstanceOf[js.Any])
-    if (maxHeaderSize != null) __obj.updateDynamic("maxHeaderSize")(maxHeaderSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(insecureHTTPParser)) __obj.updateDynamic("insecureHTTPParser")(insecureHTTPParser.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeaderSize)) __obj.updateDynamic("maxHeaderSize")(maxHeaderSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerOptions]
   }
 }

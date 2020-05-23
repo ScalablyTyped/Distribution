@@ -6,12 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // see https://docs.com/ckeditor4/latest/api/CKEDITOR_dom_selection.html
-@JSGlobal("CKEDITOR.dom.selection")
 @js.native
-class selection protected () extends js.Object {
-  def this(target: typings.ckeditor.CKEDITOR.dom.document) = this()
-  def this(target: element) = this()
-  def this(target: selection) = this()
+trait selection extends js.Object {
   val FILLING_CHAR_SEQUENCE: String = js.native
   val document: typings.ckeditor.CKEDITOR.dom.document = js.native
   val isFake: Boolean = js.native

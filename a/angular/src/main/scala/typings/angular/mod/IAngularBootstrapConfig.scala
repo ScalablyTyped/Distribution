@@ -12,7 +12,7 @@ object IAngularBootstrapConfig {
   @scala.inline
   def apply(strictDi: js.UndefOr[Boolean] = js.undefined): IAngularBootstrapConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(strictDi)) __obj.updateDynamic("strictDi")(strictDi.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictDi)) __obj.updateDynamic("strictDi")(strictDi.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAngularBootstrapConfig]
   }
 }

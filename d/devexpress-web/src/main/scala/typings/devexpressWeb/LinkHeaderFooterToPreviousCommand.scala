@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * A command to link a header/footer to the previous section, so it has the same content.
   */
-@JSGlobal("LinkHeaderFooterToPreviousCommand")
-@js.native
-class LinkHeaderFooterToPreviousCommand () extends CommandWithSimpleStateBase {
+trait LinkHeaderFooterToPreviousCommand extends CommandWithSimpleStateBase {
   /**
     * Executes the LinkHeaderFooterToPreviousCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
+}
+
+object LinkHeaderFooterToPreviousCommand {
+  @scala.inline
+  def apply(execute: () => Boolean, getState: () => SimpleCommandState): LinkHeaderFooterToPreviousCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
+    __obj.asInstanceOf[LinkHeaderFooterToPreviousCommand]
+  }
 }
 

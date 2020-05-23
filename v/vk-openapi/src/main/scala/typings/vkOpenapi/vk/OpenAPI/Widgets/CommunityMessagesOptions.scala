@@ -28,7 +28,7 @@ object CommunityMessagesOptions {
     disableExpandChatSound: `1` = null,
     disableNewMessagesSound: `1` = null,
     disableTitleChange: `1` = null,
-    expandTimeout: Int | Double = null,
+    expandTimeout: js.UndefOr[Double] = js.undefined,
     expanded: `1` = null,
     onCanNotWrite: /* reason */ OnCanNotWriteReason => Unit = null,
     tooltipButtonText: String = null,
@@ -41,7 +41,7 @@ object CommunityMessagesOptions {
     if (disableExpandChatSound != null) __obj.updateDynamic("disableExpandChatSound")(disableExpandChatSound.asInstanceOf[js.Any])
     if (disableNewMessagesSound != null) __obj.updateDynamic("disableNewMessagesSound")(disableNewMessagesSound.asInstanceOf[js.Any])
     if (disableTitleChange != null) __obj.updateDynamic("disableTitleChange")(disableTitleChange.asInstanceOf[js.Any])
-    if (expandTimeout != null) __obj.updateDynamic("expandTimeout")(expandTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandTimeout)) __obj.updateDynamic("expandTimeout")(expandTimeout.get.asInstanceOf[js.Any])
     if (expanded != null) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
     if (onCanNotWrite != null) __obj.updateDynamic("onCanNotWrite")(js.Any.fromFunction1(onCanNotWrite))
     if (tooltipButtonText != null) __obj.updateDynamic("tooltipButtonText")(tooltipButtonText.asInstanceOf[js.Any])

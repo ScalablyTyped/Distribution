@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * Fired when the query finds a new batch of matching items.
-			 */
+  * Fired when the query finds a new batch of matching items.
+  */
 trait SearchQueryFounditemsEvent extends SearchQueryBaseEvent {
   /**
-  				 * The number of items that are currently fetched.
-  				 */
+    * The number of items that are currently fetched.
+    */
   var foundItemsCount: Double
   /**
-  				 * An array of indexed items that match the specified query.
-  				 */
+    * An array of indexed items that match the specified query.
+    */
   var items: js.Array[SearchableItem]
 }
 

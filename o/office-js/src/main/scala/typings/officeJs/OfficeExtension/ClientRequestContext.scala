@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation._
   * An abstract RequestContext object that facilitates requests to the host Office application. 
   * The `Excel.run` and `Word.run` methods provide a request context.
   */
-@JSGlobal("OfficeExtension.ClientRequestContext")
 @js.native
-class ClientRequestContext () extends js.Object {
-  def this(url: String) = this()
+trait ClientRequestContext extends js.Object {
   /** Debug information */
   val debugInfo: RequestContextDebugInfo = js.native
   /** Request headers */

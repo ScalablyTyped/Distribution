@@ -17,14 +17,14 @@ trait ICooSparse extends js.Object {
 object ICooSparse {
   @scala.inline
   def apply(
-    denseShapeTensorName: String = null,
-    indicesTensorName: String = null,
-    valuesTensorName: String = null
+    denseShapeTensorName: js.UndefOr[Null | String] = js.undefined,
+    indicesTensorName: js.UndefOr[Null | String] = js.undefined,
+    valuesTensorName: js.UndefOr[Null | String] = js.undefined
   ): ICooSparse = {
     val __obj = js.Dynamic.literal()
-    if (denseShapeTensorName != null) __obj.updateDynamic("denseShapeTensorName")(denseShapeTensorName.asInstanceOf[js.Any])
-    if (indicesTensorName != null) __obj.updateDynamic("indicesTensorName")(indicesTensorName.asInstanceOf[js.Any])
-    if (valuesTensorName != null) __obj.updateDynamic("valuesTensorName")(valuesTensorName.asInstanceOf[js.Any])
+    if (!js.isUndefined(denseShapeTensorName)) __obj.updateDynamic("denseShapeTensorName")(denseShapeTensorName.asInstanceOf[js.Any])
+    if (!js.isUndefined(indicesTensorName)) __obj.updateDynamic("indicesTensorName")(indicesTensorName.asInstanceOf[js.Any])
+    if (!js.isUndefined(valuesTensorName)) __obj.updateDynamic("valuesTensorName")(valuesTensorName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICooSparse]
   }
 }

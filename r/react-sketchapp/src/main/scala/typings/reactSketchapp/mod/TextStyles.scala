@@ -1,7 +1,7 @@
 package typings.reactSketchapp.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.reactSketchapp.AnonClearExistingStyles
+import typings.reactSketchapp.anon.ClearExistingStyles
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ object TextStyles extends js.Object {
   /**
     * The primary interface to TextStyles. Call this before rendering.
     */
-  def create(options: AnonClearExistingStyles, styles: StringDictionary[TextStyle]): js.Any = js.native
+  def create(options: ClearExistingStyles, styles: StringDictionary[TextStyle]): js.Any = js.native
   /**
     * Find a stored style by name.
     */

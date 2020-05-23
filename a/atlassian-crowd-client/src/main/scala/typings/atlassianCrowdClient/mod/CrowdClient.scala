@@ -1,11 +1,11 @@
 package typings.atlassianCrowdClient.mod
 
-import typings.atlassianCrowdClient.AnonAttributes
-import typings.atlassianCrowdClient.AnonAuthenticate
-import typings.atlassianCrowdClient.AnonChildren
-import typings.atlassianCrowdClient.AnonCookie
-import typings.atlassianCrowdClient.AnonCreate
-import typings.atlassianCrowdClient.AnonGroup
+import typings.atlassianCrowdClient.anon.Attributes
+import typings.atlassianCrowdClient.anon.Authenticate
+import typings.atlassianCrowdClient.anon.Children
+import typings.atlassianCrowdClient.anon.Cookie
+import typings.atlassianCrowdClient.anon.Create
+import typings.atlassianCrowdClient.anon.Group
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,11 +13,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CrowdClient
   extends typings.atlassianCrowdClient.apiMod.^ {
-  var authentication: AnonAuthenticate = js.native
-  var config: AnonCookie = js.native
-  var group: AnonChildren = js.native
-  var search: AnonGroup = js.native
-  var session: AnonCreate = js.native
-  var user: AnonAttributes = js.native
+  var authentication: Authenticate = js.native
+  var config: Cookie = js.native
+  var group: Children = js.native
+  var search: Group = js.native
+  var session: Create = js.native
+  var user: Attributes = js.native
 }
 

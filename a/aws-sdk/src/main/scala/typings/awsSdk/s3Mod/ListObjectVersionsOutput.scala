@@ -67,9 +67,9 @@ object ListObjectVersionsOutput {
     DeleteMarkers: DeleteMarkers = null,
     Delimiter: Delimiter = null,
     EncodingType: EncodingType = null,
-    IsTruncated: js.UndefOr[Boolean] = js.undefined,
+    IsTruncated: js.UndefOr[IsTruncated] = js.undefined,
     KeyMarker: KeyMarker = null,
-    MaxKeys: Int | Double = null,
+    MaxKeys: js.UndefOr[MaxKeys] = js.undefined,
     Name: BucketName = null,
     NextKeyMarker: NextKeyMarker = null,
     NextVersionIdMarker: NextVersionIdMarker = null,
@@ -82,9 +82,9 @@ object ListObjectVersionsOutput {
     if (DeleteMarkers != null) __obj.updateDynamic("DeleteMarkers")(DeleteMarkers.asInstanceOf[js.Any])
     if (Delimiter != null) __obj.updateDynamic("Delimiter")(Delimiter.asInstanceOf[js.Any])
     if (EncodingType != null) __obj.updateDynamic("EncodingType")(EncodingType.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.get.asInstanceOf[js.Any])
     if (KeyMarker != null) __obj.updateDynamic("KeyMarker")(KeyMarker.asInstanceOf[js.Any])
-    if (MaxKeys != null) __obj.updateDynamic("MaxKeys")(MaxKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxKeys)) __obj.updateDynamic("MaxKeys")(MaxKeys.get.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (NextKeyMarker != null) __obj.updateDynamic("NextKeyMarker")(NextKeyMarker.asInstanceOf[js.Any])
     if (NextVersionIdMarker != null) __obj.updateDynamic("NextVersionIdMarker")(NextVersionIdMarker.asInstanceOf[js.Any])

@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.PivotField")
 @js.native
-class PivotField protected () extends js.Object {
+trait PivotField extends js.Object {
   val AllItemsVisible: Boolean = js.native
   val Application: typings.activexExcel.Excel.Application = js.native
   val AutoShowCount: Double = js.native

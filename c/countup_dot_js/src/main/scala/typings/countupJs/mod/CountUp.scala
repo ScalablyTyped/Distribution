@@ -50,7 +50,9 @@ class CountUp protected () extends js.Object {
   def reset(): Unit = js.native
   def start(): Unit = js.native
   def start(callback: js.Function1[/* args */ js.UndefOr[js.Any], _]): Unit = js.native
-  def update(newEndVal: js.Any): Unit = js.native
+  def update(newEndVal: String): Unit = js.native
+  def update(newEndVal: Double): Unit = js.native
+  def validateValue(value: String): Double = js.native
   def validateValue(value: Double): Double = js.native
 }
 

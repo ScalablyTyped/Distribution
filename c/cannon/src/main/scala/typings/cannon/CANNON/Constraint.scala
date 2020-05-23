@@ -4,18 +4,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CANNON.Constraint")
-@js.native
-class Constraint protected () extends js.Object {
-  def this(bodyA: Body, bodyB: Body) = this()
-  def this(bodyA: Body, bodyB: Body, options: IConstraintOptions) = this()
-  var bodyA: Body = js.native
-  var bodyB: Body = js.native
-  var collideConnected: Boolean = js.native
-  var equations: js.Array[_] = js.native
-  var id: Double = js.native
-  def disable(): Unit = js.native
-  def enable(): Unit = js.native
-  def update(): Unit = js.native
+trait Constraint extends js.Object {
+  var bodyA: Body
+  var bodyB: Body
+  var collideConnected: Boolean
+  var equations: js.Array[_]
+  var id: Double
+  def disable(): Unit
+  def enable(): Unit
+  def update(): Unit
+}
+
+object Constraint {
+  @scala.inline
+  def apply(
+    bodyA: Body,
+    bodyB: Body,
+    collideConnected: Boolean,
+    disable: () => Unit,
+    enable: () => Unit,
+    equations: js.Array[_],
+    id: Double,
+    update: () => Unit
+  ): Constraint = {
+    val __obj = js.Dynamic.literal(bodyA = bodyA.asInstanceOf[js.Any], bodyB = bodyB.asInstanceOf[js.Any], collideConnected = collideConnected.asInstanceOf[js.Any], disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), equations = equations.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], update = js.Any.fromFunction0(update))
+    __obj.asInstanceOf[Constraint]
+  }
 }
 

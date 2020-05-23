@@ -21,9 +21,9 @@ trait IOptions extends js.Object {
 
 object IOptions {
   @scala.inline
-  def apply(context: Context, saveInterval: Int | Double = null): IOptions = {
+  def apply(context: Context, saveInterval: js.UndefOr[Double] = js.undefined): IOptions = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
-    if (saveInterval != null) __obj.updateDynamic("saveInterval")(saveInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveInterval)) __obj.updateDynamic("saveInterval")(saveInterval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

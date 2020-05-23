@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait ResizedEventUIParam extends js.Object {
   /**
-  	 * Used to obtain reference to igScroll.
-  	 */
+    * Used to obtain reference to igScroll.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 

@@ -19,10 +19,10 @@ trait PlotRsiParamsOptions extends js.Object {
 
 object PlotRsiParamsOptions {
   @scala.inline
-  def apply(decimals: Int | Double = null, period: Int | Double = null): PlotRsiParamsOptions = {
+  def apply(decimals: js.UndefOr[Double] = js.undefined, period: js.UndefOr[Double] = js.undefined): PlotRsiParamsOptions = {
     val __obj = js.Dynamic.literal()
-    if (decimals != null) __obj.updateDynamic("decimals")(decimals.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
+    if (!js.isUndefined(decimals)) __obj.updateDynamic("decimals")(decimals.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(period)) __obj.updateDynamic("period")(period.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotRsiParamsOptions]
   }
 }

@@ -32,7 +32,7 @@ trait InvokeDefinition[TContext, TEvent /* <: EventObject */] extends ActivityDe
 
 object InvokeDefinition {
   @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](
+  def apply[TContext, TEvent](
     id: String,
     src: String,
     `type`: String,
@@ -43,10 +43,10 @@ object InvokeDefinition {
   ): InvokeDefinition[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoForward)) __obj.updateDynamic("autoForward")(autoForward.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoForward)) __obj.updateDynamic("autoForward")(autoForward.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (exec != null) __obj.updateDynamic("exec")(js.Any.fromFunction3(exec))
-    if (!js.isUndefined(forward)) __obj.updateDynamic("forward")(forward.asInstanceOf[js.Any])
+    if (!js.isUndefined(forward)) __obj.updateDynamic("forward")(forward.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvokeDefinition[TContext, TEvent]]
   }
 }

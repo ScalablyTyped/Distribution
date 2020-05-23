@@ -16,17 +16,17 @@ object Options {
   @scala.inline
   def apply(
     mediaQueries: js.UndefOr[Boolean] = js.undefined,
-    precision: Int | Double = null,
+    precision: js.UndefOr[Double] = js.undefined,
     preserve: js.UndefOr[Boolean] = js.undefined,
     selectors: js.UndefOr[Boolean] = js.undefined,
     warnWhenCannotResolve: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(mediaQueries)) __obj.updateDynamic("mediaQueries")(mediaQueries.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserve)) __obj.updateDynamic("preserve")(preserve.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectors)) __obj.updateDynamic("selectors")(selectors.asInstanceOf[js.Any])
-    if (!js.isUndefined(warnWhenCannotResolve)) __obj.updateDynamic("warnWhenCannotResolve")(warnWhenCannotResolve.asInstanceOf[js.Any])
+    if (!js.isUndefined(mediaQueries)) __obj.updateDynamic("mediaQueries")(mediaQueries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserve)) __obj.updateDynamic("preserve")(preserve.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectors)) __obj.updateDynamic("selectors")(selectors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(warnWhenCannotResolve)) __obj.updateDynamic("warnWhenCannotResolve")(warnWhenCannotResolve.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

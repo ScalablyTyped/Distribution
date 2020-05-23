@@ -1,11 +1,13 @@
 package typings.reactFoundation
 
 import typings.react.mod.StatelessComponent
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.reactFoundation.accordionMod.AccordianContentProps
 import typings.reactFoundation.accordionMod.AccordianItemProps
 import typings.reactFoundation.accordionMod.AccordianProps
 import typings.reactFoundation.accordionMod.AccordionTitleProps
+import typings.reactFoundation.anon.AlignX
+import typings.reactFoundation.anon.Breakpoint
 import typings.reactFoundation.badgeMod.BadgeProps
 import typings.reactFoundation.breadcrumbsMod.BreadcrumbItemProps
 import typings.reactFoundation.breadcrumbsMod.BreadcrumbsProps
@@ -198,8 +200,8 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object ResponsiveNavigation extends js.Object {
-    var defaultProps: AnonBreakpoint = js.native
-    var propTypes: AnonAlignX = js.native
+    var defaultProps: Breakpoint = js.native
+    var propTypes: AlignX = js.native
   }
   
   @js.native

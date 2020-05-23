@@ -1,6 +1,5 @@
 package typings.mathjax.MathJax
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +34,18 @@ trait Message extends js.Object {
   def filterText(text: String, n: Double): String
 }
 
-@JSGlobal("MathJax.Message")
-@js.native
-object Message extends TopLevel[Message]
+object Message {
+  @scala.inline
+  def apply(
+    Clear: (Double, Double) => Unit,
+    File: String => Double,
+    Log: () => String,
+    Remove: () => Unit,
+    Set: (String, Double, Double) => Double,
+    filterText: (String, Double) => String
+  ): Message = {
+    val __obj = js.Dynamic.literal(Clear = js.Any.fromFunction2(Clear), File = js.Any.fromFunction1(File), Log = js.Any.fromFunction0(Log), Remove = js.Any.fromFunction0(Remove), Set = js.Any.fromFunction3(Set), filterText = js.Any.fromFunction2(filterText))
+    __obj.asInstanceOf[Message]
+  }
+}
 

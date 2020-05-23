@@ -29,15 +29,15 @@ object SceneLayerViewProperties {
   @scala.inline
   def apply(
     filter: FeatureFilterProperties = null,
-    maximumNumberOfFeatures: Int | Double = null,
+    maximumNumberOfFeatures: js.UndefOr[Double] = js.undefined,
     maximumNumberOfFeaturesExceeded: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined
   ): SceneLayerViewProperties = {
     val __obj = js.Dynamic.literal()
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (maximumNumberOfFeatures != null) __obj.updateDynamic("maximumNumberOfFeatures")(maximumNumberOfFeatures.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximumNumberOfFeaturesExceeded)) __obj.updateDynamic("maximumNumberOfFeaturesExceeded")(maximumNumberOfFeaturesExceeded.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumNumberOfFeatures)) __obj.updateDynamic("maximumNumberOfFeatures")(maximumNumberOfFeatures.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumNumberOfFeaturesExceeded)) __obj.updateDynamic("maximumNumberOfFeaturesExceeded")(maximumNumberOfFeaturesExceeded.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneLayerViewProperties]
   }
 }

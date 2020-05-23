@@ -1,7 +1,7 @@
 package typings.raphael.mod
 
-import typings.raphael.PartialRaphaelAttributes
-import typings.raphael.PartialRaphaelGlowSetting
+import typings.raphael.anon.PartialRaphaelAttributes
+import typings.raphael.anon.PartialRaphaelGlowSetting
 import typings.raphael.raphaelStrings.SVG
 import typings.raphael.raphaelStrings.VML
 import typings.raphael.raphaelStrings.`arrow-end`
@@ -752,7 +752,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
 
 object RaphaelElementPluginRegistry {
   @scala.inline
-  def apply[TTechnology /* <: RaphaelTechnology */](
+  def apply[TTechnology](
     animate: RaphaelElementPluginMethod[
       TTechnology, 
       Parameters[

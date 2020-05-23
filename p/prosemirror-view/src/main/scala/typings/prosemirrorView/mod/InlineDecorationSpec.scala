@@ -22,8 +22,8 @@ trait InlineDecorationSpec extends js.Object {
 object InlineDecorationSpec {
   @scala.inline
   def apply(
-    inclusiveEnd: js.UndefOr[Boolean] = js.undefined,
-    inclusiveStart: js.UndefOr[Boolean] = js.undefined
+    inclusiveEnd: js.UndefOr[Null | Boolean] = js.undefined,
+    inclusiveStart: js.UndefOr[Null | Boolean] = js.undefined
   ): InlineDecorationSpec = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(inclusiveEnd)) __obj.updateDynamic("inclusiveEnd")(inclusiveEnd.asInstanceOf[js.Any])

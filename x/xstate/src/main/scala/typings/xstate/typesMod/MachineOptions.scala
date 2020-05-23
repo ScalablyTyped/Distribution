@@ -24,7 +24,7 @@ trait MachineOptions[TContext, TEvent /* <: EventObject */] extends js.Object {
 
 object MachineOptions {
   @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](
+  def apply[TContext, TEvent](
     actions: ActionFunctionMap[TContext, TEvent],
     activities: Record[String, ActivityConfig[TContext, TEvent]],
     delays: DelayFunctionMap[TContext, TEvent],

@@ -26,7 +26,7 @@ trait CellTypeSettings extends js.Object {
   /** Specifies the button type of Custom Cell type.
     */
   var `type`: js.UndefOr[CustomCellType] = js.undefined
-  /** Specifies the value for datepicker of Custom Cell type.
+  /** Specifies the datepicker of Custom Cell type.
     */
   var value: js.UndefOr[String] = js.undefined
 }
@@ -36,7 +36,7 @@ object CellTypeSettings {
   def apply(
     backgroundColor: String = null,
     dataSourceRange: String = null,
-    dataSourceSheetIndex: Int | Double = null,
+    dataSourceSheetIndex: js.UndefOr[Double] = js.undefined,
     field: js.Any = null,
     isChecked: js.UndefOr[Boolean] = js.undefined,
     text: String = null,
@@ -46,9 +46,9 @@ object CellTypeSettings {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (dataSourceRange != null) __obj.updateDynamic("dataSourceRange")(dataSourceRange.asInstanceOf[js.Any])
-    if (dataSourceSheetIndex != null) __obj.updateDynamic("dataSourceSheetIndex")(dataSourceSheetIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataSourceSheetIndex)) __obj.updateDynamic("dataSourceSheetIndex")(dataSourceSheetIndex.get.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (!js.isUndefined(isChecked)) __obj.updateDynamic("isChecked")(isChecked.asInstanceOf[js.Any])
+    if (!js.isUndefined(isChecked)) __obj.updateDynamic("isChecked")(isChecked.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

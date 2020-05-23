@@ -10,54 +10,54 @@ import scala.scalajs.js.annotation._
 
 trait IScrollView extends IEvented {
   /** [Method] Returns the value of cls
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of element
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getElement: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of indicators
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getIndicators: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of indicatorsHidingDelay
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getIndicatorsHidingDelay: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of indicatorsUi
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getIndicatorsUi: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the scroller instance in this view
-  		* @returns Ext.scroll.View The scroller
-  		*/
+    * @returns Ext.scroll.View The scroller
+    */
   var getScroller: js.UndefOr[js.Function0[IView]] = js.undefined
   /** [Config Option] (String) */
   var indicatorsUi: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of cls
-  		* @param cls String The new value.
-  		*/
+    * @param cls String The new value.
+    */
   var setCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of element
-  		* @param element Object The new value.
-  		*/
+    * @param element Object The new value.
+    */
   var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of indicators
-  		* @param indicators Object The new value.
-  		*/
+    * @param indicators Object The new value.
+    */
   var setIndicators: js.UndefOr[js.Function1[/* indicators */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of indicatorsHidingDelay
-  		* @param indicatorsHidingDelay Number The new value.
-  		*/
+    * @param indicatorsHidingDelay Number The new value.
+    */
   var setIndicatorsHidingDelay: js.UndefOr[js.Function1[/* indicatorsHidingDelay */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of indicatorsUi
-  		* @param indicatorsUi String The new value.
-  		*/
+    * @param indicatorsUi String The new value.
+    */
   var setIndicatorsUi: js.UndefOr[js.Function1[/* indicatorsUi */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of scroller
-  		* @param scroller Object The new value.
-  		*/
+    * @param scroller Object The new value.
+    */
   var setScroller: js.UndefOr[js.Function1[/* scroller */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -183,7 +183,7 @@ object IScrollView {
     if (setIndicatorsUi != null) __obj.updateDynamic("setIndicatorsUi")(js.Any.fromFunction1(setIndicatorsUi))
     if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
     if (setScroller != null) __obj.updateDynamic("setScroller")(js.Any.fromFunction1(setScroller))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))

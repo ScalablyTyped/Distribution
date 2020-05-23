@@ -1,16 +1,13 @@
 package typings.ckeditor.CKEDITOR.plugins.balloontoolbar
 
 import typings.ckeditor.CKEDITOR.dom.element
-import typings.ckeditor.CKEDITOR.editor
 import typings.ckeditor.CKEDITOR.ui.balloonToolbar
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CKEDITOR.plugins.balloontoolbar.context")
 @js.native
-class context protected () extends js.Object {
-  def this(editor: editor, options: contextDefinition) = this()
+trait context extends js.Object {
   var editor: typings.ckeditor.CKEDITOR.editor = js.native
   var options: contextDefinition = js.native
   var toolbar: balloonToolbar = js.native

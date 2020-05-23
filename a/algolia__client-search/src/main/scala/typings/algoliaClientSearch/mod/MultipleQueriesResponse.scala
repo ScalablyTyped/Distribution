@@ -8,7 +8,7 @@ trait MultipleQueriesResponse[TObject] extends js.Object {
   /**
     * The list of results.
     */
-  val results: js.Array[SearchResponse[TObject with ObjectWithObjectID]]
+  var results: js.Array[SearchResponse[TObject with ObjectWithObjectID]]
 }
 
 object MultipleQueriesResponse {

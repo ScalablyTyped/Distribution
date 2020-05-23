@@ -32,7 +32,7 @@ object DialogBeforeOpenEventArgs {
     `type`: String = null
   ): DialogBeforeOpenEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (requestType != null) __obj.updateDynamic("requestType")(requestType.asInstanceOf[js.Any])
     if (spellCheckDialog != null) __obj.updateDynamic("spellCheckDialog")(spellCheckDialog.asInstanceOf[js.Any])

@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** MX Namespace Manager 6.0 */
-@JSGlobal("MSXML2.MXNamespaceManager60")
 @js.native
-class MXNamespaceManager60 protected () extends js.Object {
+trait MXNamespaceManager60 extends js.Object {
   @JSName("MSXML2.MXNamespaceManager60_typekey")
   var MSXML2DotMXNamespaceManager60_typekey: MXNamespaceManager60 = js.native
   var allowOverride: Boolean = js.native

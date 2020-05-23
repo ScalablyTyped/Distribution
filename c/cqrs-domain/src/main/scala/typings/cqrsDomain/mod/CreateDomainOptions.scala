@@ -1,8 +1,8 @@
 package typings.cqrsDomain.mod
 
-import typings.cqrsDomain.AnonAuthSource
-import typings.cqrsDomain.AnonDb
-import typings.cqrsDomain.AnonHost
+import typings.cqrsDomain.anon.AuthSource
+import typings.cqrsDomain.anon.Db
+import typings.cqrsDomain.anon.Host
 import typings.cqrsDomain.cqrsDomainBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ trait CreateDomainOptions extends js.Object {
     * currently supports: mongodb, redis, tingodb, couchdb, azuretable, dynamodb and inmemory
     * hint settings like: [eventstore](https://github.com/adrai/node-eventstore#provide-implementation-for-storage)
     */
-  var aggregateLock: js.UndefOr[AnonDb] = js.undefined
+  var aggregateLock: js.UndefOr[Db] = js.undefined
   /**
     * optional, default is 'commandRejected'
     * will be used if an error occurs and an event should be generated
@@ -26,7 +26,7 @@ trait CreateDomainOptions extends js.Object {
     * currently supports: mongodb, redis, tingodb and inmemory
     * hint settings like: [eventstore](https://github.com/adrai/node-eventstore#provide-implementation-for-storage)
     */
-  var deduplication: js.UndefOr[AnonHost] = js.undefined
+  var deduplication: js.UndefOr[Host] = js.undefined
   /**
     * the path to the "working directory"
     * can be structured like
@@ -39,7 +39,7 @@ trait CreateDomainOptions extends js.Object {
     * currently supports: mongodb, redis, tingodb, azuretable and inmemory
     * hint: [eventstore](https://github.com/adrai/node-eventstore#provide-implementation-for-storage)
     */
-  var eventStore: js.UndefOr[AnonAuthSource] = js.undefined
+  var eventStore: js.UndefOr[AuthSource] = js.undefined
   /**
     * optional, default is 800
     * if using in scaled systems and not guaranteeing that each command for an aggregate instance
@@ -65,12 +65,12 @@ object CreateDomainOptions {
   @scala.inline
   def apply(
     domainPath: String,
-    aggregateLock: AnonDb = null,
+    aggregateLock: Db = null,
     commandRejectedEventName: String = null,
-    deduplication: AnonHost = null,
-    eventStore: AnonAuthSource = null,
-    retryOnConcurrencyTimeout: Int | Double = null,
-    snapshotThreshold: Int | Double = null,
+    deduplication: Host = null,
+    eventStore: AuthSource = null,
+    retryOnConcurrencyTimeout: js.UndefOr[Double] = js.undefined,
+    snapshotThreshold: js.UndefOr[Double] = js.undefined,
     useLoaderExtensions: `true` = null
   ): CreateDomainOptions = {
     val __obj = js.Dynamic.literal(domainPath = domainPath.asInstanceOf[js.Any])
@@ -78,8 +78,8 @@ object CreateDomainOptions {
     if (commandRejectedEventName != null) __obj.updateDynamic("commandRejectedEventName")(commandRejectedEventName.asInstanceOf[js.Any])
     if (deduplication != null) __obj.updateDynamic("deduplication")(deduplication.asInstanceOf[js.Any])
     if (eventStore != null) __obj.updateDynamic("eventStore")(eventStore.asInstanceOf[js.Any])
-    if (retryOnConcurrencyTimeout != null) __obj.updateDynamic("retryOnConcurrencyTimeout")(retryOnConcurrencyTimeout.asInstanceOf[js.Any])
-    if (snapshotThreshold != null) __obj.updateDynamic("snapshotThreshold")(snapshotThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(retryOnConcurrencyTimeout)) __obj.updateDynamic("retryOnConcurrencyTimeout")(retryOnConcurrencyTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapshotThreshold)) __obj.updateDynamic("snapshotThreshold")(snapshotThreshold.get.asInstanceOf[js.Any])
     if (useLoaderExtensions != null) __obj.updateDynamic("useLoaderExtensions")(useLoaderExtensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDomainOptions]
   }

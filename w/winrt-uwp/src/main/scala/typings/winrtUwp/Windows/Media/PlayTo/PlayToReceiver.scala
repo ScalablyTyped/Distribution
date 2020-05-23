@@ -19,10 +19,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a Play To target. */
-@JSGlobal("Windows.Media.PlayTo.PlayToReceiver")
 @js.native
-/** Creates a new instance of a Play To receiver. */
-class PlayToReceiver () extends js.Object {
+trait PlayToReceiver extends js.Object {
   /** Gets or sets the display name of the Play To target. */
   var friendlyName: String = js.native
   /** Occurs when the time location of the playback has changed. */

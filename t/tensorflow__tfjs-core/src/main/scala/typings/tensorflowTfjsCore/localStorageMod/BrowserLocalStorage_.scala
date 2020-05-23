@@ -1,7 +1,6 @@
 package typings.tensorflowTfjsCore.localStorageMod
 
 import typings.std.Storage
-import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.localstorageColonSlashSlash
 import typings.tensorflowTfjsCore.typesMod.IOHandler
 import typings.tensorflowTfjsCore.typesMod.ModelArtifacts
 import typings.tensorflowTfjsCore.typesMod.SaveResult
@@ -43,6 +42,6 @@ class BrowserLocalStorage_ protected () extends IOHandler {
 @JSImport("@tensorflow/tfjs-core/dist/io/local_storage", "BrowserLocalStorage")
 @js.native
 object BrowserLocalStorage_ extends js.Object {
-  val URL_SCHEME: localstorageColonSlashSlash = js.native
+  val URL_SCHEME: /* "localstorage://" */ String = js.native
 }
 

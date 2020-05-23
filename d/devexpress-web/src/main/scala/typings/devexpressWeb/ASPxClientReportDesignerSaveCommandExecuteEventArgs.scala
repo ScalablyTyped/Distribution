@@ -7,15 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientReportDesigner.SaveCommandExecute event.
   */
-@JSGlobal("ASPxClientReportDesignerSaveCommandExecuteEventArgs")
-@js.native
-/**
-  * Initializes a new instance of the ASPxClientReportDesignerSaveCommandExecuteEventArgs class with the default settings.
-  */
-class ASPxClientReportDesignerSaveCommandExecuteEventArgs () extends ASPxClientEventArgs {
+trait ASPxClientReportDesignerSaveCommandExecuteEventArgs extends ASPxClientEventArgs {
   /**
     * Specifies whether or not the event was handled.
     */
-  var handled: Boolean = js.native
+  var handled: Boolean
+}
+
+object ASPxClientReportDesignerSaveCommandExecuteEventArgs {
+  @scala.inline
+  def apply(handled: Boolean): ASPxClientReportDesignerSaveCommandExecuteEventArgs = {
+    val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientReportDesignerSaveCommandExecuteEventArgs]
+  }
 }
 

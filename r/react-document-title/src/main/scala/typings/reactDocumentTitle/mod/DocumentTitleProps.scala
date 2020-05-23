@@ -12,9 +12,9 @@ trait DocumentTitleProps extends js.Object {
 
 object DocumentTitleProps {
   @scala.inline
-  def apply(title: String, children: ReactChild = null): DocumentTitleProps = {
+  def apply(title: String, children: js.UndefOr[Null | ReactChild] = js.undefined): DocumentTitleProps = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(children)) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentTitleProps]
   }
 }

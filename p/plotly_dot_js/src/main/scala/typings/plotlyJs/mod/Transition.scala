@@ -44,17 +44,17 @@ import scala.scalajs.js.annotation._
 
 trait Transition extends js.Object {
   /**
-  	 * Sets the duration of the slider transition
-  	 */
+    * Sets the duration of the slider transition
+    */
   var duration: Double
   /**
-  	 * Sets the easing function of the slider transition
-  	 */
+    * Sets the easing function of the slider transition
+    */
   var easing: linear | quad | cubic | sin | exp | circle | elastic | back | bounce | `linear-in` | `quad-in` | `cubic-in` | `sin-in` | `exp-in` | `circle-in` | `elastic-in` | `back-in` | `bounce-in` | `linear-out` | `quad-out` | `cubic-out` | `sin-out` | `exp-out` | `circle-out` | `elastic-out` | `back-out` | `bounce-out` | `linear-in-out` | `quad-in-out` | `cubic-in-out` | `sin-in-out` | `exp-in-out` | `circle-in-out` | `elastic-in-out` | `back-in-out` | `bounce-in-out`
   /**
-  	 * Determines whether the figure's layout or traces smoothly transitions during updates that make both traces
-  	 * and layout change. Default is "layout first".
-  	 */
+    * Determines whether the figure's layout or traces smoothly transitions during updates that make both traces
+    * and layout change. Default is "layout first".
+    */
   var ordering: js.UndefOr[(`layout first`) | (`traces first`)] = js.undefined
 }
 

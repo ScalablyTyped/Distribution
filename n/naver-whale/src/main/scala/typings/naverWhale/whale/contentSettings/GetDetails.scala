@@ -24,7 +24,7 @@ object GetDetails {
     secondaryUrl: String = null
   ): GetDetails = {
     val __obj = js.Dynamic.literal(primaryUrl = primaryUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(incognito)) __obj.updateDynamic("incognito")(incognito.asInstanceOf[js.Any])
+    if (!js.isUndefined(incognito)) __obj.updateDynamic("incognito")(incognito.get.asInstanceOf[js.Any])
     if (resourceIdentifier != null) __obj.updateDynamic("resourceIdentifier")(resourceIdentifier.asInstanceOf[js.Any])
     if (secondaryUrl != null) __obj.updateDynamic("secondaryUrl")(secondaryUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDetails]

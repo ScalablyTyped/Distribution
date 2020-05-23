@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Item containing charge code(s) associated with the provision of healthcare provider products
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait ChargeItem extends DomainResource {
   /**
     * Contains extended information for property 'definition'.
@@ -159,7 +159,7 @@ object ChargeItem {
     enteredDate: dateTime = null,
     enterer: Reference = null,
     extension: js.Array[Extension] = null,
-    factorOverride: Int | Double = null,
+    factorOverride: js.UndefOr[decimal] = js.undefined,
     id: id = null,
     identifier: Identifier = null,
     implicitRules: uri = null,
@@ -202,7 +202,7 @@ object ChargeItem {
     if (enteredDate != null) __obj.updateDynamic("enteredDate")(enteredDate.asInstanceOf[js.Any])
     if (enterer != null) __obj.updateDynamic("enterer")(enterer.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (factorOverride != null) __obj.updateDynamic("factorOverride")(factorOverride.asInstanceOf[js.Any])
+    if (!js.isUndefined(factorOverride)) __obj.updateDynamic("factorOverride")(factorOverride.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
     if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])

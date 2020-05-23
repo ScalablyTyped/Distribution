@@ -16,7 +16,7 @@ object AuthorizedKeysView {
   def apply(keys: js.Array[String] = null, sudoer: js.UndefOr[Boolean] = js.undefined): AuthorizedKeysView = {
     val __obj = js.Dynamic.literal()
     if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
-    if (!js.isUndefined(sudoer)) __obj.updateDynamic("sudoer")(sudoer.asInstanceOf[js.Any])
+    if (!js.isUndefined(sudoer)) __obj.updateDynamic("sudoer")(sudoer.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizedKeysView]
   }
 }

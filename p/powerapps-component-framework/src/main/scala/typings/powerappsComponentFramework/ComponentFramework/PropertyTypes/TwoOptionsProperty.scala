@@ -8,8 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Property Interface for context.parameters.[property_key], when property manifest type is TwoOptions
-		 */
+  * Property Interface for context.parameters.[property_key], when property manifest type is TwoOptions
+  */
 trait TwoOptionsProperty extends Property {
   var attributes: js.UndefOr[TwoOptionMetadata] = js.undefined
   @JSName("raw")

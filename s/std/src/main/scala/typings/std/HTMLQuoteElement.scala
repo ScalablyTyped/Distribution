@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,8 +12,4 @@ trait HTMLQuoteElement extends HTMLElement {
     */
   var cite: java.lang.String = js.native
 }
-
-@JSGlobal("HTMLQuoteElement")
-@js.native
-object HTMLQuoteElement extends Instantiable0[HTMLQuoteElement]
 

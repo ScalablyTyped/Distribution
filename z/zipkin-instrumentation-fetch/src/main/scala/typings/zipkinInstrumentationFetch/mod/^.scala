@@ -1,6 +1,6 @@
 package typings.zipkinInstrumentationFetch.mod
 
-import typings.zipkinInstrumentationFetch.Typeoffetch
+import typings.zipkinInstrumentationFetch.anon.Typeoffetch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

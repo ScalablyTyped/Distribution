@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("signals.js/lib/org/osflash/signals/Signal", JSImport.Namespace)
 @js.native
 object signalMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.signalsJs.ioncesignalMod.IOnceSignal because Already inherited
   - typings.signalsJs.isignalMod.ISignal because var conflicts: numListeners, valueClasses. Inlined add */ @js.native
   class Signal protected () extends OnceSignal {

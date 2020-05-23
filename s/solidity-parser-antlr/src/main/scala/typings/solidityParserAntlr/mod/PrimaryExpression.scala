@@ -32,11 +32,10 @@ object PrimaryExpression {
     range: js.Tuple2[Double, Double] = null,
     subdenomination: wei | szabo | finney | ether | seconds | minutes | hours | days | weeks | years = null
   ): PrimaryExpression = {
-    val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any], subdenomination = subdenomination.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (subdenomination != null) __obj.updateDynamic("subdenomination")(subdenomination.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrimaryExpression]
   }
   @scala.inline

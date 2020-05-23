@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation._
 
 trait ButtonGroupProps extends js.Object {
   /**
-  	 * Delete button.
-  	 */
+    * Delete button.
+    */
   var deleteBtn: ReactElement
   /**
-  	 * Export to CSV button.
-  	 */
+    * Export to CSV button.
+    */
   var exportCSVBtn: ReactElement
   /**
-  	 * Insert button (to add a row).
-  	 */
+    * Insert button (to add a row).
+    */
   var insertBtn: ReactElement
   /**
-  	 * Toggle button to switch between showing all rows and showing selected rows only.
-  	 */
+    * Toggle button to switch between showing all rows and showing selected rows only.
+    */
   var showSelectedOnlyBtn: ReactElement
 }
 

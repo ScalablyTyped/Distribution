@@ -4576,7 +4576,6 @@ object IconName {
   def `itunes-note`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`itunes-note` = "itunes-note".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`itunes-note`]
   @scala.inline
   def `jack-o-lantern`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`jack-o-lantern` = "jack-o-lantern".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`jack-o-lantern`]
-  @JSName("java")
   @scala.inline
   def java_ : typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.java_ = "java".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.java_]
   @scala.inline
@@ -4599,7 +4598,6 @@ object IconName {
   def joystick: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.joystick = "joystick".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.joystick]
   @scala.inline
   def `js-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`js-square` = "js-square".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`js-square`]
-  @JSName("js")
   @scala.inline
   def js_ : typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.js_ = "js".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.js_]
   @scala.inline

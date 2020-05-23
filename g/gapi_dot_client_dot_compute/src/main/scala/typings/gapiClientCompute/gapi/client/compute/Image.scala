@@ -1,6 +1,6 @@
 package typings.gapiClientCompute.gapi.client.compute
 
-import typings.gapiClientCompute.AnonContainerType
+import typings.gapiClientCompute.anon.ContainerType
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -65,7 +65,7 @@ trait Image extends js.Object {
     */
   var name: js.UndefOr[String] = js.undefined
   /** The parameters of the raw disk image. */
-  var rawDisk: js.UndefOr[AnonContainerType] = js.undefined
+  var rawDisk: js.UndefOr[ContainerType] = js.undefined
   /** [Output Only] Server-defined URL for the resource. */
   var selfLink: js.UndefOr[String] = js.undefined
   /**
@@ -123,7 +123,7 @@ object Image {
     labels: Record[String, String] = null,
     licenses: js.Array[String] = null,
     name: String = null,
-    rawDisk: AnonContainerType = null,
+    rawDisk: ContainerType = null,
     selfLink: String = null,
     sourceDisk: String = null,
     sourceDiskEncryptionKey: CustomerEncryptionKey = null,

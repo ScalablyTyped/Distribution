@@ -13,6 +13,9 @@ object flickityStrings {
   sealed trait cellSelect extends FlickityEvents
   
   @js.native
+  sealed trait change extends FlickityEvents
+  
+  @js.native
   sealed trait dragEnd extends FlickityEvents
   
   @js.native
@@ -52,6 +55,8 @@ object flickityStrings {
   def bgLazyLoad: bgLazyLoad = "bgLazyLoad".asInstanceOf[bgLazyLoad]
   @scala.inline
   def cellSelect: cellSelect = "cellSelect".asInstanceOf[cellSelect]
+  @scala.inline
+  def change: change = "change".asInstanceOf[change]
   @scala.inline
   def dragEnd: dragEnd = "dragEnd".asInstanceOf[dragEnd]
   @scala.inline

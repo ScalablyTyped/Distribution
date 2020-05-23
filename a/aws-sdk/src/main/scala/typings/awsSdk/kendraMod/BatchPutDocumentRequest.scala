@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BatchPutDocumentRequest extends js.Object {
   /**
-    * One or more documents to add to the index.  Each document is limited to 5 Mb, the total size of the list is limited to 50 Mb.
+    * One or more documents to add to the index.  Documents have the following file size limits.   5 MB total size for inline documents   50 MB total size for files from an S3 bucket   5 MB extracted text for any file   For more information about file size and transaction per second quotas, see Quotas.
     */
   var Documents: DocumentList = js.native
   /**

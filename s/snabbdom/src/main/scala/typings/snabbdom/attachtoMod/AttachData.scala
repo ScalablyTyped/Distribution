@@ -17,8 +17,11 @@ trait AttachData
 object AttachData {
   @scala.inline
   def apply(
-    NumberDictionary: /* i */ NumberDictionary[js.Any] = null,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    NumberDictionary: /* key */ NumberDictionary[js.Any] = null,
+    StringDictionary: /**
+    * Any other extra properties that have been attached to the object will also be present on the serialized object.
+    */
+  /* key */ StringDictionary[js.Any] = null,
     placeholder: js.Any = null,
     real: Node = null
   ): AttachData = {

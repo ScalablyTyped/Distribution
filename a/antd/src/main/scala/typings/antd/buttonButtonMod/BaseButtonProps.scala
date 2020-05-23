@@ -1,6 +1,6 @@
 package typings.antd.buttonButtonMod
 
-import typings.antd.AnonDelay
+import typings.antd.anon.Delay
 import typings.antd.sizeContextMod.SizeType
 import typings.react.mod.ReactNode
 import scala.scalajs.js
@@ -14,7 +14,7 @@ trait BaseButtonProps extends js.Object {
   var danger: js.UndefOr[Boolean] = js.undefined
   var ghost: js.UndefOr[Boolean] = js.undefined
   var icon: js.UndefOr[ReactNode] = js.undefined
-  var loading: js.UndefOr[Boolean | AnonDelay] = js.undefined
+  var loading: js.UndefOr[Boolean | Delay] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   var shape: js.UndefOr[ButtonShape] = js.undefined
   var size: js.UndefOr[SizeType] = js.undefined
@@ -30,18 +30,18 @@ object BaseButtonProps {
     danger: js.UndefOr[Boolean] = js.undefined,
     ghost: js.UndefOr[Boolean] = js.undefined,
     icon: ReactNode = null,
-    loading: Boolean | AnonDelay = null,
+    loading: Boolean | Delay = null,
     prefixCls: String = null,
     shape: ButtonShape = null,
     size: SizeType = null,
     `type`: ButtonType = null
   ): BaseButtonProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
+    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(danger)) __obj.updateDynamic("danger")(danger.asInstanceOf[js.Any])
-    if (!js.isUndefined(ghost)) __obj.updateDynamic("ghost")(ghost.asInstanceOf[js.Any])
+    if (!js.isUndefined(danger)) __obj.updateDynamic("danger")(danger.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ghost)) __obj.updateDynamic("ghost")(ghost.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.OfficeTheme")
 @js.native
-class OfficeTheme protected () extends js.Object {
+trait OfficeTheme extends js.Object {
   val Application: js.Any = js.native
   val Creator: Double = js.native
   @JSName("Office.OfficeTheme_typekey")

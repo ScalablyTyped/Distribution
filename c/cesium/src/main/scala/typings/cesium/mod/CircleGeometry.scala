@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonCenter
+import typings.cesium.anon.Center
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "CircleGeometry")
 @js.native
 class CircleGeometry protected () extends Packable {
-  def this(options: AnonCenter) = this()
+  def this(options: Center) = this()
 }
 
 /* static members */

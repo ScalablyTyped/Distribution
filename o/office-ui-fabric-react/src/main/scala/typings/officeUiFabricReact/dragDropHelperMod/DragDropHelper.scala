@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.dragDropHelperMod
 
-import typings.officeUiFabricReact.AnonDispose
+import typings.officeUiFabricReact.anon.Dispose
 import typings.officeUiFabricReact.dragdropInterfacesMod.IDragDropHelper
 import typings.officeUiFabricReact.dragdropInterfacesMod.IDragDropOptions
 import typings.officeUiFabricReact.utilitiesMod.EventGroup
@@ -59,7 +59,7 @@ class DragDropHelper protected () extends IDragDropHelper {
     * Subscribe to events on a DOM node with drag and drop configuration.
     */
   /* CompleteClass */
-  override def subscribe(root: HTMLElement, events: EventGroup, options: IDragDropOptions): AnonDispose = js.native
+  override def subscribe(root: HTMLElement, events: EventGroup, options: IDragDropOptions): Dispose = js.native
   /**
     * Unsubscribe to events registered on a DOM node with key.
     */

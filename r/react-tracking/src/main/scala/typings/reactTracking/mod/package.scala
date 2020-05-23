@@ -12,7 +12,7 @@ package object mod {
   /* Rewritten from type alias, can be one of: 
     - typings.reactTracking.reactTrackingBooleans.`false`
     - scala.Null
-    - `js.undefined`
+    - js.UndefOr[scala.Nothing]
     - typings.reactTracking.reactTrackingStrings._empty
   */
   type Falsy = js.UndefOr[typings.reactTracking.mod._Falsy | scala.Null]
@@ -29,7 +29,7 @@ package object mod {
     /* options */ js.UndefOr[typings.reactTracking.mod.Options[typings.std.Partial[T]]], 
     typings.reactTracking.mod.Decorator
   ]
-  type TrackingContext[T] = typings.react.mod.Context[typings.reactTracking.AnonTracking[T]]
+  type TrackingContext[T] = typings.react.mod.Context[typings.reactTracking.anon.Tracking[T]]
   type TrackingInfo[T, P, S] = T | (js.Function3[
     /* props */ P, 
     /* state */ S, 

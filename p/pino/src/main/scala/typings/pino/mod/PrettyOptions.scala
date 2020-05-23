@@ -72,12 +72,12 @@ object PrettyOptions {
     translateTime: Boolean | String = null
   ): PrettyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(colorize)) __obj.updateDynamic("colorize")(colorize.asInstanceOf[js.Any])
-    if (!js.isUndefined(crlf)) __obj.updateDynamic("crlf")(crlf.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorize)) __obj.updateDynamic("colorize")(colorize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(crlf)) __obj.updateDynamic("crlf")(crlf.get.asInstanceOf[js.Any])
     if (errorLikeObjectKeys != null) __obj.updateDynamic("errorLikeObjectKeys")(errorLikeObjectKeys.asInstanceOf[js.Any])
     if (errorProps != null) __obj.updateDynamic("errorProps")(errorProps.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(levelFirst)) __obj.updateDynamic("levelFirst")(levelFirst.asInstanceOf[js.Any])
+    if (!js.isUndefined(levelFirst)) __obj.updateDynamic("levelFirst")(levelFirst.get.asInstanceOf[js.Any])
     if (messageFormat != null) __obj.updateDynamic("messageFormat")(messageFormat.asInstanceOf[js.Any])
     if (messageKey != null) __obj.updateDynamic("messageKey")(messageKey.asInstanceOf[js.Any])
     if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])

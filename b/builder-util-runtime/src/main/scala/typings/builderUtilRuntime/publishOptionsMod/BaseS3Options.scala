@@ -30,22 +30,22 @@ object BaseS3Options {
   @scala.inline
   def apply(
     provider: PublishProvider,
-    acl: `private` | `public-read` = null,
-    channel: String = null,
-    path: String = null,
+    acl: js.UndefOr[Null | `private` | `public-read`] = js.undefined,
+    channel: js.UndefOr[Null | String] = js.undefined,
+    path: js.UndefOr[Null | String] = js.undefined,
     publishAutoUpdate: js.UndefOr[Boolean] = js.undefined,
-    publisherName: js.Array[String] = null,
+    publisherName: js.UndefOr[Null | js.Array[String]] = js.undefined,
     requestHeaders: OutgoingHttpHeaders = null,
-    updaterCacheDirName: String = null
+    updaterCacheDirName: js.UndefOr[Null | String] = js.undefined
   ): BaseS3Options = {
     val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
-    if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
-    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.asInstanceOf[js.Any])
-    if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
+    if (!js.isUndefined(acl)) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
+    if (!js.isUndefined(channel)) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
+    if (!js.isUndefined(path)) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(publisherName)) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
     if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
-    if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
+    if (!js.isUndefined(updaterCacheDirName)) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseS3Options]
   }
 }

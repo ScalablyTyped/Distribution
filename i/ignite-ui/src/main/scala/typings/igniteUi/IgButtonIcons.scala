@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait IgButtonIcons
   extends /**
-	 * Option for IgButtonIcons
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   var primary: js.UndefOr[js.Any] = js.undefined
   var secondary: js.UndefOr[js.Any] = js.undefined
@@ -17,10 +17,7 @@ trait IgButtonIcons
 object IgButtonIcons {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for IgButtonIcons
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     primary: js.Any = null,
     secondary: js.Any = null
   ): IgButtonIcons = {

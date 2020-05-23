@@ -197,7 +197,7 @@ object PortalItemProperties {
   def apply(
     access: String = null,
     accessInformation: String = null,
-    avgRating: Int | Double = null,
+    avgRating: js.UndefOr[Double] = js.undefined,
     categories: js.Array[String] = null,
     created: DateProperties = null,
     culture: String = null,
@@ -208,14 +208,14 @@ object PortalItemProperties {
     licenseInfo: String = null,
     modified: DateProperties = null,
     name: String = null,
-    numComments: Int | Double = null,
-    numRatings: Int | Double = null,
-    numViews: Int | Double = null,
+    numComments: js.UndefOr[Double] = js.undefined,
+    numRatings: js.UndefOr[Double] = js.undefined,
+    numViews: js.UndefOr[Double] = js.undefined,
     owner: String = null,
     ownerFolder: String = null,
     portal: PortalProperties = null,
     screenshots: js.Array[String] = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     snippet: String = null,
     sourceJSON: js.Any = null,
     tags: js.Array[String] = null,
@@ -227,7 +227,7 @@ object PortalItemProperties {
     val __obj = js.Dynamic.literal()
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
     if (accessInformation != null) __obj.updateDynamic("accessInformation")(accessInformation.asInstanceOf[js.Any])
-    if (avgRating != null) __obj.updateDynamic("avgRating")(avgRating.asInstanceOf[js.Any])
+    if (!js.isUndefined(avgRating)) __obj.updateDynamic("avgRating")(avgRating.get.asInstanceOf[js.Any])
     if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (culture != null) __obj.updateDynamic("culture")(culture.asInstanceOf[js.Any])
@@ -238,14 +238,14 @@ object PortalItemProperties {
     if (licenseInfo != null) __obj.updateDynamic("licenseInfo")(licenseInfo.asInstanceOf[js.Any])
     if (modified != null) __obj.updateDynamic("modified")(modified.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (numComments != null) __obj.updateDynamic("numComments")(numComments.asInstanceOf[js.Any])
-    if (numRatings != null) __obj.updateDynamic("numRatings")(numRatings.asInstanceOf[js.Any])
-    if (numViews != null) __obj.updateDynamic("numViews")(numViews.asInstanceOf[js.Any])
+    if (!js.isUndefined(numComments)) __obj.updateDynamic("numComments")(numComments.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numRatings)) __obj.updateDynamic("numRatings")(numRatings.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numViews)) __obj.updateDynamic("numViews")(numViews.get.asInstanceOf[js.Any])
     if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     if (ownerFolder != null) __obj.updateDynamic("ownerFolder")(ownerFolder.asInstanceOf[js.Any])
     if (portal != null) __obj.updateDynamic("portal")(portal.asInstanceOf[js.Any])
     if (screenshots != null) __obj.updateDynamic("screenshots")(screenshots.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (snippet != null) __obj.updateDynamic("snippet")(snippet.asInstanceOf[js.Any])
     if (sourceJSON != null) __obj.updateDynamic("sourceJSON")(sourceJSON.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

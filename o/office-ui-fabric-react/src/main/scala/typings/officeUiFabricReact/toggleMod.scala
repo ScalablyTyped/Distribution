@@ -1,5 +1,8 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.anon.PartialIToggleState
+import typings.officeUiFabricReact.anon.ReadonlyIToggleProps
+import typings.officeUiFabricReact.anon.ReadonlyIToggleState
 import typings.officeUiFabricReact.toggleTypesMod.IToggleProps
 import typings.react.mod.FunctionComponent
 import scala.scalajs.js

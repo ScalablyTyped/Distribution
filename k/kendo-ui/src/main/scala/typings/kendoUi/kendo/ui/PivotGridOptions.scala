@@ -36,7 +36,7 @@ object PivotGridOptions {
     autoBind: js.UndefOr[Boolean] = js.undefined,
     collapseMember: /* e */ PivotGridCollapseMemberEvent => Unit = null,
     columnHeaderTemplate: String | js.Function = null,
-    columnWidth: Int | Double = null,
+    columnWidth: js.UndefOr[Double] = js.undefined,
     dataBinding: /* e */ PivotGridDataBindingEvent => Unit = null,
     dataBound: /* e */ PivotGridDataBoundEvent => Unit = null,
     dataCellTemplate: String | js.Function = null,
@@ -57,10 +57,10 @@ object PivotGridOptions {
     sortable: Boolean | PivotGridSortable = null
   ): PivotGridOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.get.asInstanceOf[js.Any])
     if (collapseMember != null) __obj.updateDynamic("collapseMember")(js.Any.fromFunction1(collapseMember))
     if (columnHeaderTemplate != null) __obj.updateDynamic("columnHeaderTemplate")(columnHeaderTemplate.asInstanceOf[js.Any])
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnWidth)) __obj.updateDynamic("columnWidth")(columnWidth.get.asInstanceOf[js.Any])
     if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction1(dataBinding))
     if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
     if (dataCellTemplate != null) __obj.updateDynamic("dataCellTemplate")(dataCellTemplate.asInstanceOf[js.Any])
@@ -68,7 +68,7 @@ object PivotGridOptions {
     if (excel != null) __obj.updateDynamic("excel")(excel.asInstanceOf[js.Any])
     if (excelExport != null) __obj.updateDynamic("excelExport")(js.Any.fromFunction1(excelExport))
     if (expandMember != null) __obj.updateDynamic("expandMember")(js.Any.fromFunction1(expandMember))
-    if (!js.isUndefined(filterable)) __obj.updateDynamic("filterable")(filterable.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterable)) __obj.updateDynamic("filterable")(filterable.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (kpiStatusTemplate != null) __obj.updateDynamic("kpiStatusTemplate")(kpiStatusTemplate.asInstanceOf[js.Any])
     if (kpiTrendTemplate != null) __obj.updateDynamic("kpiTrendTemplate")(kpiTrendTemplate.asInstanceOf[js.Any])
@@ -76,7 +76,7 @@ object PivotGridOptions {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (pdf != null) __obj.updateDynamic("pdf")(pdf.asInstanceOf[js.Any])
     if (pdfExport != null) __obj.updateDynamic("pdfExport")(js.Any.fromFunction1(pdfExport))
-    if (!js.isUndefined(reorderable)) __obj.updateDynamic("reorderable")(reorderable.asInstanceOf[js.Any])
+    if (!js.isUndefined(reorderable)) __obj.updateDynamic("reorderable")(reorderable.get.asInstanceOf[js.Any])
     if (rowHeaderTemplate != null) __obj.updateDynamic("rowHeaderTemplate")(rowHeaderTemplate.asInstanceOf[js.Any])
     if (sortable != null) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotGridOptions]

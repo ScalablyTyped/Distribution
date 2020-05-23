@@ -14,16 +14,16 @@ trait ISize extends js.Object {
 object ISize {
   @scala.inline
   def apply(
-    height: Int | Double = null,
-    orientation: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
+    orientation: js.UndefOr[Double] = js.undefined,
     `type`: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): ISize = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(orientation)) __obj.updateDynamic("orientation")(orientation.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISize]
   }
 }

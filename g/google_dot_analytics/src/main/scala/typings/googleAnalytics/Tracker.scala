@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Tracker")
 @js.native
-class Tracker () extends js.Object {
+trait Tracker extends js.Object {
   def _getAccount(): String = js.native
   def _getName(): String = js.native
   def _getVersion(): String = js.native

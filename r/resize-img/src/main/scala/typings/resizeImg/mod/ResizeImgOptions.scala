@@ -11,10 +11,10 @@ trait ResizeImgOptions extends js.Object {
 
 object ResizeImgOptions {
   @scala.inline
-  def apply(height: Int | Double = null, width: Int | Double = null): ResizeImgOptions = {
+  def apply(height: js.UndefOr[Double] = js.undefined, width: js.UndefOr[Double] = js.undefined): ResizeImgOptions = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResizeImgOptions]
   }
 }

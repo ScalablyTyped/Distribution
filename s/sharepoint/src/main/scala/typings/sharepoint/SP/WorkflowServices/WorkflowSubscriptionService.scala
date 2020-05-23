@@ -1,18 +1,14 @@
 package typings.sharepoint.SP.WorkflowServices
 
 import typings.sharepoint.SP.ClientObject
-import typings.sharepoint.SP.ClientRuntimeContext
 import typings.sharepoint.SP.Guid
 import typings.sharepoint.SP.GuidResult
-import typings.sharepoint.SP.ObjectPathStaticProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.WorkflowServices.WorkflowSubscriptionService")
 @js.native
-class WorkflowSubscriptionService protected () extends ClientObject {
-  def this(context: ClientRuntimeContext, objectPath: ObjectPathStaticProperty) = this()
+trait WorkflowSubscriptionService extends ClientObject {
   def deleteSubscription(subscriptionId: Guid): WorkflowSubscription = js.native
   /** Retrieves workflow subscriptions that contains all of the workflow subscriptions on the Web  */
   def enumerateSubscriptions(): WorkflowSubscriptionCollection = js.native
@@ -39,12 +35,5 @@ class WorkflowSubscriptionService protected () extends ClientObject {
     @param listId GUID of the list containing the event receiver to be unregistered.
     @eventName eventName The name of the event to be removed. */
   def unregisterInterestInList(listId: String, eventName: String): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("SP.WorkflowServices.WorkflowSubscriptionService")
-@js.native
-object WorkflowSubscriptionService extends js.Object {
-  def getCurrent(context: ClientRuntimeContext): WorkflowSubscriptionService = js.native
 }
 

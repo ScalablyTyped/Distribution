@@ -6,11 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** ASN1 utilities class */
-@JSGlobal("jsrsasign.KJUR.asn1.ASN1Util")
-@js.native
-class ASN1Util () extends js.Object {
-  def bigIntToMinTwosComplementsHex(bigIntegerValue: BigInteger): String = js.native
-  def integerToByteHex(i: Double): String = js.native
+trait ASN1Util extends js.Object {
+  def bigIntToMinTwosComplementsHex(bigIntegerValue: BigInteger): String
+  def integerToByteHex(i: Double): String
   /**
     * get encoded hexadecimal string of ASN1Object specifed by JSON parameters
     *
@@ -22,7 +20,7 @@ class ASN1Util () extends js.Object {
     * @example
     * jsonToASN1HEX({'prnstr': 'aaa'});
     */
-  def jsonToASN1HEX(param: ASNObject): String = js.native
+  def jsonToASN1HEX(param: ASNObject): String
   /**
     * generate ASN1Object specifed by JSON parameters
     * @param param JSON parameter to generate ASN1Object
@@ -68,40 +66,19 @@ class ASN1Util () extends js.Object {
     *                      {'prnstr': 'aaa'}]}
     *                   ]});
     */
-  def newObject(param: ASNObject): ASN1Object = js.native
+  def newObject(param: ASNObject): ASN1Object
 }
 
-/* static members */
-@JSGlobal("jsrsasign.KJUR.asn1.ASN1Util")
-@js.native
-object ASN1Util extends js.Object {
-  /**
-    * get PEM string from hexadecimal data and header string
-    * @param dataHex hexadecimal string of PEM body
-    * @param pemHeader PEM header string (ex. 'RSA PRIVATE KEY')
-    * @return PEM formatted string of input data
-    * @description
-    * This method converts a hexadecimal string to a PEM string with
-    * a specified header. Its line break will be CRLF("\r\n").
-    * @example
-    * var pem = KJUR.asn1.ASN1Util.getPEMStringFromHex('616161', 'RSA PRIVATE KEY');
-    * // value of pem will be:
-    * -----BEGIN PRIVATE KEY-----
-    * YWFh
-    * -----END PRIVATE KEY-----
-    */
-  def getPEMStringFromHex(dataHex: String, pemHeader: String): String = js.native
-  /**
-    * get dot noted oid number string from hexadecimal value of OID
-    *
-    * @param hex hexadecimal value of object identifier
-    * @return dot noted string of object identifier
-    * @description
-    * This static method converts from hexadecimal string representation of
-    * ASN.1 value of object identifier to oid number string.
-    * @example
-    * KJUR.asn1.ASN1Util.oidHexToInt('550406') → "2.5.4.6"
-    */
-  def oidHexToInt(hex: String): String = js.native
+object ASN1Util {
+  @scala.inline
+  def apply(
+    bigIntToMinTwosComplementsHex: BigInteger => String,
+    integerToByteHex: Double => String,
+    jsonToASN1HEX: ASNObject => String,
+    newObject: ASNObject => ASN1Object
+  ): ASN1Util = {
+    val __obj = js.Dynamic.literal(bigIntToMinTwosComplementsHex = js.Any.fromFunction1(bigIntToMinTwosComplementsHex), integerToByteHex = js.Any.fromFunction1(integerToByteHex), jsonToASN1HEX = js.Any.fromFunction1(jsonToASN1HEX), newObject = js.Any.fromFunction1(newObject))
+    __obj.asInstanceOf[ASN1Util]
+  }
 }
 

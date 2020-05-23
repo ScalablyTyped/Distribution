@@ -14,21 +14,26 @@ import typings.expressValidator.expressValidatorStrings.isBase32
 import typings.expressValidator.expressValidatorStrings.isBase64
 import typings.expressValidator.expressValidatorStrings.isBefore
 import typings.expressValidator.expressValidatorStrings.isBoolean
+import typings.expressValidator.expressValidatorStrings.isBtcAddress
 import typings.expressValidator.expressValidatorStrings.isByteLength
 import typings.expressValidator.expressValidatorStrings.isCreditCard
 import typings.expressValidator.expressValidatorStrings.isCurrency
 import typings.expressValidator.expressValidatorStrings.isDataURI
 import typings.expressValidator.expressValidatorStrings.isDecimal
 import typings.expressValidator.expressValidatorStrings.isDivisibleBy
+import typings.expressValidator.expressValidatorStrings.isEAN
 import typings.expressValidator.expressValidatorStrings.isEmail
 import typings.expressValidator.expressValidatorStrings.isEmpty
+import typings.expressValidator.expressValidatorStrings.isEthereumAddress
 import typings.expressValidator.expressValidatorStrings.isFQDN
 import typings.expressValidator.expressValidatorStrings.isFloat
 import typings.expressValidator.expressValidatorStrings.isFullWidth
+import typings.expressValidator.expressValidatorStrings.isHSL
 import typings.expressValidator.expressValidatorStrings.isHalfWidth
 import typings.expressValidator.expressValidatorStrings.isHash
 import typings.expressValidator.expressValidatorStrings.isHexColor
 import typings.expressValidator.expressValidatorStrings.isHexadecimal
+import typings.expressValidator.expressValidatorStrings.isIBAN
 import typings.expressValidator.expressValidatorStrings.isIP
 import typings.expressValidator.expressValidatorStrings.isIPRange
 import typings.expressValidator.expressValidatorStrings.isISBN
@@ -45,6 +50,7 @@ import typings.expressValidator.expressValidatorStrings.isJSON
 import typings.expressValidator.expressValidatorStrings.isJWT
 import typings.expressValidator.expressValidatorStrings.isLatLong
 import typings.expressValidator.expressValidatorStrings.isLength
+import typings.expressValidator.expressValidatorStrings.isLocale
 import typings.expressValidator.expressValidatorStrings.isLowercase
 import typings.expressValidator.expressValidatorStrings.isMACAddress
 import typings.expressValidator.expressValidatorStrings.isMD5
@@ -55,9 +61,12 @@ import typings.expressValidator.expressValidatorStrings.isMongoId
 import typings.expressValidator.expressValidatorStrings.isMultibyte
 import typings.expressValidator.expressValidatorStrings.isNumeric
 import typings.expressValidator.expressValidatorStrings.isOctal
+import typings.expressValidator.expressValidatorStrings.isPassportNumber
 import typings.expressValidator.expressValidatorStrings.isPort
 import typings.expressValidator.expressValidatorStrings.isPostalCode
 import typings.expressValidator.expressValidatorStrings.isRFC3339
+import typings.expressValidator.expressValidatorStrings.isRgbColor
+import typings.expressValidator.expressValidatorStrings.isSemVer
 import typings.expressValidator.expressValidatorStrings.isSlug
 import typings.expressValidator.expressValidatorStrings.isString
 import typings.expressValidator.expressValidatorStrings.isSurrogatePair
@@ -103,6 +112,9 @@ trait ValidatorsSchema extends js.Object {
   var isBoolean: js.UndefOr[
     ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBoolean]
   ] = js.undefined
+  var isBtcAddress: js.UndefOr[
+    ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBtcAddress]
+  ] = js.undefined
   var isByteLength: js.UndefOr[
     ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isByteLength]
   ] = js.undefined
@@ -121,13 +133,18 @@ trait ValidatorsSchema extends js.Object {
   var isDivisibleBy: js.UndefOr[
     ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isDivisibleBy]
   ] = js.undefined
+  var isEAN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEAN]] = js.undefined
   var isEmail: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEmail]] = js.undefined
   var isEmpty: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEmpty]] = js.undefined
+  var isEthereumAddress: js.UndefOr[
+    ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEthereumAddress]
+  ] = js.undefined
   var isFQDN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isFQDN]] = js.undefined
   var isFloat: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isFloat]] = js.undefined
   var isFullWidth: js.UndefOr[
     ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isFullWidth]
   ] = js.undefined
+  var isHSL: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHSL]] = js.undefined
   var isHalfWidth: js.UndefOr[
     ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHalfWidth]
   ] = js.undefined
@@ -138,6 +155,7 @@ trait ValidatorsSchema extends js.Object {
   var isHexadecimal: js.UndefOr[
     ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHexadecimal]
   ] = js.undefined
+  var isIBAN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIBAN]] = js.undefined
   var isIP: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIP]] = js.undefined
   var isIPRange: js.UndefOr[
     ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIPRange]
@@ -168,6 +186,9 @@ trait ValidatorsSchema extends js.Object {
   var isLength: js.UndefOr[
     ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isLength]
   ] = js.undefined
+  var isLocale: js.UndefOr[
+    ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isLocale]
+  ] = js.undefined
   var isLowercase: js.UndefOr[
     ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isLowercase]
   ] = js.undefined
@@ -194,12 +215,21 @@ trait ValidatorsSchema extends js.Object {
     ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isNumeric]
   ] = js.undefined
   var isOctal: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isOctal]] = js.undefined
+  var isPassportNumber: js.UndefOr[
+    ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isPassportNumber]
+  ] = js.undefined
   var isPort: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isPort]] = js.undefined
   var isPostalCode: js.UndefOr[
     ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isPostalCode]
   ] = js.undefined
   var isRFC3339: js.UndefOr[
     ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isRFC3339]
+  ] = js.undefined
+  var isRgbColor: js.UndefOr[
+    ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isRgbColor]
+  ] = js.undefined
+  var isSemVer: js.UndefOr[
+    ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isSemVer]
   ] = js.undefined
   var isSlug: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isSlug]] = js.undefined
   var isString: js.UndefOr[
@@ -246,21 +276,26 @@ object ValidatorsSchema {
     isBase64: ValidatorSchemaOptions[isBase64] = null,
     isBefore: ValidatorSchemaOptions[isBefore] = null,
     isBoolean: ValidatorSchemaOptions[isBoolean] = null,
+    isBtcAddress: ValidatorSchemaOptions[isBtcAddress] = null,
     isByteLength: ValidatorSchemaOptions[isByteLength] = null,
     isCreditCard: ValidatorSchemaOptions[isCreditCard] = null,
     isCurrency: ValidatorSchemaOptions[isCurrency] = null,
     isDataURI: ValidatorSchemaOptions[isDataURI] = null,
     isDecimal: ValidatorSchemaOptions[isDecimal] = null,
     isDivisibleBy: ValidatorSchemaOptions[isDivisibleBy] = null,
+    isEAN: ValidatorSchemaOptions[isEAN] = null,
     isEmail: ValidatorSchemaOptions[isEmail] = null,
     isEmpty: ValidatorSchemaOptions[isEmpty] = null,
+    isEthereumAddress: ValidatorSchemaOptions[isEthereumAddress] = null,
     isFQDN: ValidatorSchemaOptions[isFQDN] = null,
     isFloat: ValidatorSchemaOptions[isFloat] = null,
     isFullWidth: ValidatorSchemaOptions[isFullWidth] = null,
+    isHSL: ValidatorSchemaOptions[isHSL] = null,
     isHalfWidth: ValidatorSchemaOptions[isHalfWidth] = null,
     isHash: ValidatorSchemaOptions[isHash] = null,
     isHexColor: ValidatorSchemaOptions[isHexColor] = null,
     isHexadecimal: ValidatorSchemaOptions[isHexadecimal] = null,
+    isIBAN: ValidatorSchemaOptions[isIBAN] = null,
     isIP: ValidatorSchemaOptions[isIP] = null,
     isIPRange: ValidatorSchemaOptions[isIPRange] = null,
     isISBN: ValidatorSchemaOptions[isISBN] = null,
@@ -277,6 +312,7 @@ object ValidatorsSchema {
     isJWT: ValidatorSchemaOptions[isJWT] = null,
     isLatLong: ValidatorSchemaOptions[isLatLong] = null,
     isLength: ValidatorSchemaOptions[isLength] = null,
+    isLocale: ValidatorSchemaOptions[isLocale] = null,
     isLowercase: ValidatorSchemaOptions[isLowercase] = null,
     isMACAddress: ValidatorSchemaOptions[isMACAddress] = null,
     isMD5: ValidatorSchemaOptions[isMD5] = null,
@@ -287,9 +323,12 @@ object ValidatorsSchema {
     isMultibyte: ValidatorSchemaOptions[isMultibyte] = null,
     isNumeric: ValidatorSchemaOptions[isNumeric] = null,
     isOctal: ValidatorSchemaOptions[isOctal] = null,
+    isPassportNumber: ValidatorSchemaOptions[isPassportNumber] = null,
     isPort: ValidatorSchemaOptions[isPort] = null,
     isPostalCode: ValidatorSchemaOptions[isPostalCode] = null,
     isRFC3339: ValidatorSchemaOptions[isRFC3339] = null,
+    isRgbColor: ValidatorSchemaOptions[isRgbColor] = null,
+    isSemVer: ValidatorSchemaOptions[isSemVer] = null,
     isSlug: ValidatorSchemaOptions[isSlug] = null,
     isString: ValidatorSchemaOptions[isString] = null,
     isSurrogatePair: ValidatorSchemaOptions[isSurrogatePair] = null,
@@ -318,21 +357,26 @@ object ValidatorsSchema {
     if (isBase64 != null) __obj.updateDynamic("isBase64")(isBase64.asInstanceOf[js.Any])
     if (isBefore != null) __obj.updateDynamic("isBefore")(isBefore.asInstanceOf[js.Any])
     if (isBoolean != null) __obj.updateDynamic("isBoolean")(isBoolean.asInstanceOf[js.Any])
+    if (isBtcAddress != null) __obj.updateDynamic("isBtcAddress")(isBtcAddress.asInstanceOf[js.Any])
     if (isByteLength != null) __obj.updateDynamic("isByteLength")(isByteLength.asInstanceOf[js.Any])
     if (isCreditCard != null) __obj.updateDynamic("isCreditCard")(isCreditCard.asInstanceOf[js.Any])
     if (isCurrency != null) __obj.updateDynamic("isCurrency")(isCurrency.asInstanceOf[js.Any])
     if (isDataURI != null) __obj.updateDynamic("isDataURI")(isDataURI.asInstanceOf[js.Any])
     if (isDecimal != null) __obj.updateDynamic("isDecimal")(isDecimal.asInstanceOf[js.Any])
     if (isDivisibleBy != null) __obj.updateDynamic("isDivisibleBy")(isDivisibleBy.asInstanceOf[js.Any])
+    if (isEAN != null) __obj.updateDynamic("isEAN")(isEAN.asInstanceOf[js.Any])
     if (isEmail != null) __obj.updateDynamic("isEmail")(isEmail.asInstanceOf[js.Any])
     if (isEmpty != null) __obj.updateDynamic("isEmpty")(isEmpty.asInstanceOf[js.Any])
+    if (isEthereumAddress != null) __obj.updateDynamic("isEthereumAddress")(isEthereumAddress.asInstanceOf[js.Any])
     if (isFQDN != null) __obj.updateDynamic("isFQDN")(isFQDN.asInstanceOf[js.Any])
     if (isFloat != null) __obj.updateDynamic("isFloat")(isFloat.asInstanceOf[js.Any])
     if (isFullWidth != null) __obj.updateDynamic("isFullWidth")(isFullWidth.asInstanceOf[js.Any])
+    if (isHSL != null) __obj.updateDynamic("isHSL")(isHSL.asInstanceOf[js.Any])
     if (isHalfWidth != null) __obj.updateDynamic("isHalfWidth")(isHalfWidth.asInstanceOf[js.Any])
     if (isHash != null) __obj.updateDynamic("isHash")(isHash.asInstanceOf[js.Any])
     if (isHexColor != null) __obj.updateDynamic("isHexColor")(isHexColor.asInstanceOf[js.Any])
     if (isHexadecimal != null) __obj.updateDynamic("isHexadecimal")(isHexadecimal.asInstanceOf[js.Any])
+    if (isIBAN != null) __obj.updateDynamic("isIBAN")(isIBAN.asInstanceOf[js.Any])
     if (isIP != null) __obj.updateDynamic("isIP")(isIP.asInstanceOf[js.Any])
     if (isIPRange != null) __obj.updateDynamic("isIPRange")(isIPRange.asInstanceOf[js.Any])
     if (isISBN != null) __obj.updateDynamic("isISBN")(isISBN.asInstanceOf[js.Any])
@@ -349,6 +393,7 @@ object ValidatorsSchema {
     if (isJWT != null) __obj.updateDynamic("isJWT")(isJWT.asInstanceOf[js.Any])
     if (isLatLong != null) __obj.updateDynamic("isLatLong")(isLatLong.asInstanceOf[js.Any])
     if (isLength != null) __obj.updateDynamic("isLength")(isLength.asInstanceOf[js.Any])
+    if (isLocale != null) __obj.updateDynamic("isLocale")(isLocale.asInstanceOf[js.Any])
     if (isLowercase != null) __obj.updateDynamic("isLowercase")(isLowercase.asInstanceOf[js.Any])
     if (isMACAddress != null) __obj.updateDynamic("isMACAddress")(isMACAddress.asInstanceOf[js.Any])
     if (isMD5 != null) __obj.updateDynamic("isMD5")(isMD5.asInstanceOf[js.Any])
@@ -359,9 +404,12 @@ object ValidatorsSchema {
     if (isMultibyte != null) __obj.updateDynamic("isMultibyte")(isMultibyte.asInstanceOf[js.Any])
     if (isNumeric != null) __obj.updateDynamic("isNumeric")(isNumeric.asInstanceOf[js.Any])
     if (isOctal != null) __obj.updateDynamic("isOctal")(isOctal.asInstanceOf[js.Any])
+    if (isPassportNumber != null) __obj.updateDynamic("isPassportNumber")(isPassportNumber.asInstanceOf[js.Any])
     if (isPort != null) __obj.updateDynamic("isPort")(isPort.asInstanceOf[js.Any])
     if (isPostalCode != null) __obj.updateDynamic("isPostalCode")(isPostalCode.asInstanceOf[js.Any])
     if (isRFC3339 != null) __obj.updateDynamic("isRFC3339")(isRFC3339.asInstanceOf[js.Any])
+    if (isRgbColor != null) __obj.updateDynamic("isRgbColor")(isRgbColor.asInstanceOf[js.Any])
+    if (isSemVer != null) __obj.updateDynamic("isSemVer")(isSemVer.asInstanceOf[js.Any])
     if (isSlug != null) __obj.updateDynamic("isSlug")(isSlug.asInstanceOf[js.Any])
     if (isString != null) __obj.updateDynamic("isString")(isString.asInstanceOf[js.Any])
     if (isSurrogatePair != null) __obj.updateDynamic("isSurrogatePair")(isSurrogatePair.asInstanceOf[js.Any])

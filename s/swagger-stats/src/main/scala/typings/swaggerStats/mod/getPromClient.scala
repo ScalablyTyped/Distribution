@@ -1,6 +1,6 @@
 package typings.swaggerStats.mod
 
-import typings.swaggerStats.TypeofPromClient
+import typings.swaggerStats.anon.TypeofPromClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

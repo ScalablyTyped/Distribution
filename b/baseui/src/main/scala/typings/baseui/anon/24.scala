@@ -1,0 +1,23 @@
+package typings.baseui.anon
+
+import typings.baseui.baseuiStrings.Plussign1284
+import typings.baseui.baseuiStrings.VG
+import typings.baseui.baseuiStrings.`British Virgin Islands`
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait `24` extends js.Object {
+  var dialCode: Plussign1284
+  var id: VG
+  var label: `British Virgin Islands`
+}
+
+object `24` {
+  @scala.inline
+  def apply(dialCode: Plussign1284, id: VG, label: `British Virgin Islands`): `24` = {
+    val __obj = js.Dynamic.literal(dialCode = dialCode.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
+    __obj.asInstanceOf[`24`]
+  }
+}
+

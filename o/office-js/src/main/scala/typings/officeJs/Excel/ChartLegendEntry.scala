@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.ChartLegendEntryData
 import typings.officeJs.Excel.Interfaces.ChartLegendEntryLoadOptions
 import typings.officeJs.Excel.Interfaces.ChartLegendEntryUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,36 +16,35 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.7]
   */
-@JSGlobal("Excel.ChartLegendEntry")
 @js.native
-class ChartLegendEntry () extends ClientObject {
+trait ChartLegendEntry extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_ChartLegendEntry: RequestContext = js.native
   /**
     *
-    * Represents the height of the legendEntry on the chart legend.
+    * Specifies the height of the legendEntry on the chart legend.
     *
     * [Api set: ExcelApi 1.8]
     */
   val height: Double = js.native
   /**
     *
-    * Represents the index of the legendEntry in the chart legend.
+    * Specifies the index of the legendEntry in the chart legend.
     *
     * [Api set: ExcelApi 1.8]
     */
   val index: Double = js.native
   /**
     *
-    * Represents the left of a chart legendEntry.
+    * Specifies the left of a chart legendEntry.
     *
     * [Api set: ExcelApi 1.8]
     */
   val left: Double = js.native
   /**
     *
-    * Represents the top of a chart legendEntry.
+    * Specifies the top of a chart legendEntry.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -71,7 +70,7 @@ class ChartLegendEntry () extends ClientObject {
     */
   def load(): ChartLegendEntry = js.native
   def load(options: ChartLegendEntryLoadOptions): ChartLegendEntry = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ChartLegendEntry = js.native
+  def load(propertyNamesAndPaths: Expand): ChartLegendEntry = js.native
   def load(propertyNames: String): ChartLegendEntry = js.native
   def load(propertyNames: js.Array[String]): ChartLegendEntry = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

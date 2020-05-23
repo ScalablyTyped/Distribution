@@ -35,14 +35,14 @@ object TranslateMarkerOption {
     rotate: Double,
     animationEnd: Function = null,
     complete: /* res */ GeneralCallbackResult => Unit = null,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     fail: /* res */ GeneralCallbackResult => Unit = null,
     success: /* res */ GeneralCallbackResult => Unit = null
   ): TranslateMarkerOption = {
     val __obj = js.Dynamic.literal(autoRotate = autoRotate.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], markerId = markerId.asInstanceOf[js.Any], rotate = rotate.asInstanceOf[js.Any])
     if (animationEnd != null) __obj.updateDynamic("animationEnd")(animationEnd.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[TranslateMarkerOption]

@@ -1,7 +1,7 @@
 package typings.angularDesktopNotification.mod.angularAugmentingMod.desktopNotification
 
+import typings.std.Event
 import typings.std.EventListener
-import typings.std.Event_
 import typings.std.MouseEvent
 import typings.std.NotificationAction
 import typings.std.NotificationDirection
@@ -61,12 +61,12 @@ object AugmentedNotificationOptions {
     image: String = null,
     lang: String = null,
     onClick: /* event */ MouseEvent => Unit = null,
-    onError: /* evt */ Event_ => Unit = null,
+    onError: /* evt */ Event => Unit = null,
     renotify: js.UndefOr[Boolean] = js.undefined,
     requireInteraction: js.UndefOr[Boolean] = js.undefined,
     silent: js.UndefOr[Boolean] = js.undefined,
     tag: String = null,
-    timestamp: Int | Double = null,
+    timestamp: js.UndefOr[Double] = js.undefined,
     title: String = null,
     vibrate: js.Any = null
   ): AugmentedNotificationOptions = {
@@ -81,11 +81,11 @@ object AugmentedNotificationOptions {
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
-    if (!js.isUndefined(renotify)) __obj.updateDynamic("renotify")(renotify.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireInteraction)) __obj.updateDynamic("requireInteraction")(requireInteraction.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(renotify)) __obj.updateDynamic("renotify")(renotify.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireInteraction)) __obj.updateDynamic("requireInteraction")(requireInteraction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (vibrate != null) __obj.updateDynamic("vibrate")(vibrate.asInstanceOf[js.Any])
     __obj.asInstanceOf[AugmentedNotificationOptions]

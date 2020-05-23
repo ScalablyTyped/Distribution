@@ -1,7 +1,7 @@
 package typings.smoothie.mod
 
-import typings.smoothie.AnonIndex
-import typings.smoothie.AnonLineWidth
+import typings.smoothie.anon.Index
+import typings.smoothie.anon.LineWidth
 import typings.smoothie.smoothieStrings.bezier
 import typings.smoothie.smoothieStrings.linear
 import typings.smoothie.smoothieStrings.step
@@ -46,8 +46,8 @@ trait IChartOptions extends js.Object {
   /** Optional function to format time stamps for bottom of chart. You may use <code>SmoothieChart.timeFormatter</code>, or your own/ */
   var timestampFormatter: js.UndefOr[js.Function1[/* date */ Date, String]] = js.undefined
   var tooltip: js.UndefOr[Boolean] = js.undefined
-  var tooltipFormatter: js.UndefOr[js.Function2[/* timestamp */ Double, /* data */ js.Array[AnonIndex], String]] = js.undefined
-  var tooltipLine: js.UndefOr[AnonLineWidth] = js.undefined
+  var tooltipFormatter: js.UndefOr[js.Function2[/* timestamp */ Double, /* data */ js.Array[Index], String]] = js.undefined
+  var tooltipLine: js.UndefOr[LineWidth] = js.undefined
   /** Callback function that formats the intermediate y value labels */
   var yIntermediateFormatter: js.UndefOr[js.Function2[/* intermediate */ Double, /* precision */ Double, String]] = js.undefined
   /** Callback function that formats the max y value label */
@@ -60,50 +60,50 @@ trait IChartOptions extends js.Object {
 object IChartOptions {
   @scala.inline
   def apply(
-    displayDataFromPercentile: Int | Double = null,
+    displayDataFromPercentile: js.UndefOr[Double] = js.undefined,
     enableDpiScaling: js.UndefOr[Boolean] = js.undefined,
     grid: IGridOptions = null,
     horizontalLines: js.Array[IHorizontalLine] = null,
     interpolation: linear | step | bezier = null,
     labels: ILabelOptions = null,
-    limitFPS: Int | Double = null,
-    maxDataSetLength: Int | Double = null,
-    maxValue: Int | Double = null,
-    maxValueScale: Int | Double = null,
-    millisPerPixel: Int | Double = null,
-    minValue: Int | Double = null,
-    minValueScale: Int | Double = null,
+    limitFPS: js.UndefOr[Double] = js.undefined,
+    maxDataSetLength: js.UndefOr[Double] = js.undefined,
+    maxValue: js.UndefOr[Double] = js.undefined,
+    maxValueScale: js.UndefOr[Double] = js.undefined,
+    millisPerPixel: js.UndefOr[Double] = js.undefined,
+    minValue: js.UndefOr[Double] = js.undefined,
+    minValueScale: js.UndefOr[Double] = js.undefined,
     nonRealtimeData: js.UndefOr[Boolean] = js.undefined,
     responsive: js.UndefOr[Boolean] = js.undefined,
-    scaleSmoothing: Int | Double = null,
+    scaleSmoothing: js.UndefOr[Double] = js.undefined,
     timestampFormatter: /* date */ Date => String = null,
     tooltip: js.UndefOr[Boolean] = js.undefined,
-    tooltipFormatter: (/* timestamp */ Double, /* data */ js.Array[AnonIndex]) => String = null,
-    tooltipLine: AnonLineWidth = null,
+    tooltipFormatter: (/* timestamp */ Double, /* data */ js.Array[Index]) => String = null,
+    tooltipLine: LineWidth = null,
     yIntermediateFormatter: (/* intermediate */ Double, /* precision */ Double) => String = null,
     yMaxFormatter: (/* max */ Double, /* precision */ Double) => String = null,
     yMinFormatter: (/* min */ Double, /* precision */ Double) => String = null,
     yRangeFunction: /* range */ IRange => IRange = null
   ): IChartOptions = {
     val __obj = js.Dynamic.literal()
-    if (displayDataFromPercentile != null) __obj.updateDynamic("displayDataFromPercentile")(displayDataFromPercentile.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableDpiScaling)) __obj.updateDynamic("enableDpiScaling")(enableDpiScaling.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayDataFromPercentile)) __obj.updateDynamic("displayDataFromPercentile")(displayDataFromPercentile.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableDpiScaling)) __obj.updateDynamic("enableDpiScaling")(enableDpiScaling.get.asInstanceOf[js.Any])
     if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
     if (horizontalLines != null) __obj.updateDynamic("horizontalLines")(horizontalLines.asInstanceOf[js.Any])
     if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (limitFPS != null) __obj.updateDynamic("limitFPS")(limitFPS.asInstanceOf[js.Any])
-    if (maxDataSetLength != null) __obj.updateDynamic("maxDataSetLength")(maxDataSetLength.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (maxValueScale != null) __obj.updateDynamic("maxValueScale")(maxValueScale.asInstanceOf[js.Any])
-    if (millisPerPixel != null) __obj.updateDynamic("millisPerPixel")(millisPerPixel.asInstanceOf[js.Any])
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (minValueScale != null) __obj.updateDynamic("minValueScale")(minValueScale.asInstanceOf[js.Any])
-    if (!js.isUndefined(nonRealtimeData)) __obj.updateDynamic("nonRealtimeData")(nonRealtimeData.asInstanceOf[js.Any])
-    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
-    if (scaleSmoothing != null) __obj.updateDynamic("scaleSmoothing")(scaleSmoothing.asInstanceOf[js.Any])
+    if (!js.isUndefined(limitFPS)) __obj.updateDynamic("limitFPS")(limitFPS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDataSetLength)) __obj.updateDynamic("maxDataSetLength")(maxDataSetLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxValueScale)) __obj.updateDynamic("maxValueScale")(maxValueScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(millisPerPixel)) __obj.updateDynamic("millisPerPixel")(millisPerPixel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minValue)) __obj.updateDynamic("minValue")(minValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minValueScale)) __obj.updateDynamic("minValueScale")(minValueScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nonRealtimeData)) __obj.updateDynamic("nonRealtimeData")(nonRealtimeData.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleSmoothing)) __obj.updateDynamic("scaleSmoothing")(scaleSmoothing.get.asInstanceOf[js.Any])
     if (timestampFormatter != null) __obj.updateDynamic("timestampFormatter")(js.Any.fromFunction1(timestampFormatter))
-    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
+    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip.get.asInstanceOf[js.Any])
     if (tooltipFormatter != null) __obj.updateDynamic("tooltipFormatter")(js.Any.fromFunction2(tooltipFormatter))
     if (tooltipLine != null) __obj.updateDynamic("tooltipLine")(tooltipLine.asInstanceOf[js.Any])
     if (yIntermediateFormatter != null) __obj.updateDynamic("yIntermediateFormatter")(js.Any.fromFunction2(yIntermediateFormatter))

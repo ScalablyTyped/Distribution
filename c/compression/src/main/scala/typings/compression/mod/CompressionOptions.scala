@@ -110,27 +110,24 @@ trait CompressionOptions
 object CompressionOptions {
   @scala.inline
   def apply(
-    StringDictionary: /**
-    * In addition , `zlib` options may be passed in to the options object.
-    */
-  /* property */ StringDictionary[js.Any] = null,
-    chunkSize: Int | Double = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    chunkSize: js.UndefOr[Double] = js.undefined,
     filter: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => Boolean = null,
-    level: Int | Double = null,
-    memLevel: Int | Double = null,
-    strategy: Int | Double = null,
+    level: js.UndefOr[Double] = js.undefined,
+    memLevel: js.UndefOr[Double] = js.undefined,
+    strategy: js.UndefOr[Double] = js.undefined,
     threshold: Double | String = null,
-    windowBits: Int | Double = null
+    windowBits: js.UndefOr[Double] = js.undefined
   ): CompressionOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(chunkSize)) __obj.updateDynamic("chunkSize")(chunkSize.get.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction2(filter))
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (memLevel != null) __obj.updateDynamic("memLevel")(memLevel.asInstanceOf[js.Any])
-    if (strategy != null) __obj.updateDynamic("strategy")(strategy.asInstanceOf[js.Any])
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(memLevel)) __obj.updateDynamic("memLevel")(memLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strategy)) __obj.updateDynamic("strategy")(strategy.get.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
-    if (windowBits != null) __obj.updateDynamic("windowBits")(windowBits.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowBits)) __obj.updateDynamic("windowBits")(windowBits.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompressionOptions]
   }
 }

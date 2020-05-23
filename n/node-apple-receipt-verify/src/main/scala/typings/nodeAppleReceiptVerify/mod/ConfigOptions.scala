@@ -27,11 +27,11 @@ object ConfigOptions {
   ): ConfigOptions = {
     val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
     if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (!js.isUndefined(excludeOldTransactions)) __obj.updateDynamic("excludeOldTransactions")(excludeOldTransactions.asInstanceOf[js.Any])
-    if (!js.isUndefined(extended)) __obj.updateDynamic("extended")(extended.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreExpired)) __obj.updateDynamic("ignoreExpired")(ignoreExpired.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreExpiredError)) __obj.updateDynamic("ignoreExpiredError")(ignoreExpiredError.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludeOldTransactions)) __obj.updateDynamic("excludeOldTransactions")(excludeOldTransactions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(extended)) __obj.updateDynamic("extended")(extended.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreExpired)) __obj.updateDynamic("ignoreExpired")(ignoreExpired.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreExpiredError)) __obj.updateDynamic("ignoreExpiredError")(ignoreExpiredError.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]
   }
 }

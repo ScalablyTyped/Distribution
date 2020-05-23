@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.ContentControl")
 @js.native
-class ContentControl protected () extends js.Object {
+trait ContentControl extends js.Object {
   val Application: typings.activexWord.Word.Application = js.native
   var BuildingBlockCategory: String = js.native
   var BuildingBlockType: WdBuildingBlockTypes = js.native

@@ -44,8 +44,8 @@ object DeviceDescription {
     Arn: string = null,
     Attributes: DeviceAttributes = null,
     DeviceId: string = null,
-    Enabled: js.UndefOr[Boolean] = js.undefined,
-    RemainingLife: Int | Double = null,
+    Enabled: js.UndefOr[boolean] = js.undefined,
+    RemainingLife: js.UndefOr[doubleMin0Max100] = js.undefined,
     Tags: mapOfString = null,
     Type: string = null
   ): DeviceDescription = {
@@ -53,8 +53,8 @@ object DeviceDescription {
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
     if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
     if (DeviceId != null) __obj.updateDynamic("DeviceId")(DeviceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
-    if (RemainingLife != null) __obj.updateDynamic("RemainingLife")(RemainingLife.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RemainingLife)) __obj.updateDynamic("RemainingLife")(RemainingLife.get.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceDescription]

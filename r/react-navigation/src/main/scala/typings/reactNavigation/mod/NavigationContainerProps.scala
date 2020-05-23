@@ -48,23 +48,23 @@ object NavigationContainerProps {
     navigationOptions: Options = null,
     onNavigationStateChange: (/* prevNavigationState */ NavigationState, /* nextNavigationState */ NavigationState, /* action */ NavigationAction) => js.UndefOr[Unit | Null] = null,
     persistNavigationState: /* state */ NavigationState => js.Promise[_] = null,
-    persistenceKey: String = null,
+    persistenceKey: js.UndefOr[Null | String] = js.undefined,
     renderLoadingExperimental: ComponentType[js.Object] = null,
     screenProps: ScreenProps = null,
-    style: StyleProp[ViewStyle] = null,
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     uriPrefix: String | RegExp = null
   ): NavigationContainerProps[State, Options, ScreenProps] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableURLHandling)) __obj.updateDynamic("enableURLHandling")(enableURLHandling.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableURLHandling)) __obj.updateDynamic("enableURLHandling")(enableURLHandling.get.asInstanceOf[js.Any])
     if (loadNavigationState != null) __obj.updateDynamic("loadNavigationState")(js.Any.fromFunction0(loadNavigationState))
     if (navigation != null) __obj.updateDynamic("navigation")(navigation.asInstanceOf[js.Any])
     if (navigationOptions != null) __obj.updateDynamic("navigationOptions")(navigationOptions.asInstanceOf[js.Any])
     if (onNavigationStateChange != null) __obj.updateDynamic("onNavigationStateChange")(js.Any.fromFunction3(onNavigationStateChange))
     if (persistNavigationState != null) __obj.updateDynamic("persistNavigationState")(js.Any.fromFunction1(persistNavigationState))
-    if (persistenceKey != null) __obj.updateDynamic("persistenceKey")(persistenceKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistenceKey)) __obj.updateDynamic("persistenceKey")(persistenceKey.asInstanceOf[js.Any])
     if (renderLoadingExperimental != null) __obj.updateDynamic("renderLoadingExperimental")(renderLoadingExperimental.asInstanceOf[js.Any])
     if (screenProps != null) __obj.updateDynamic("screenProps")(screenProps.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (uriPrefix != null) __obj.updateDynamic("uriPrefix")(uriPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationContainerProps[State, Options, ScreenProps]]
   }

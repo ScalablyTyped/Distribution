@@ -9,16 +9,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ImageInfo_ extends js.Object {
-  							// 图片高度，单位：像素(px) 。
+                              // 图片高度，单位：像素(px) 。
   var colorModel: String
-  							// 文件大小，单位：Bytes
+                              // 文件大小，单位：Bytes
   var format: png | jpeg | gif | bmp
-  						// 彩色空间，如palette16、ycbcr等。
+                          // 彩色空间，如palette16、ycbcr等。
   var frameNumber: Double
-  							// 图片宽度，单位：像素(px) 。
+                              // 图片宽度，单位：像素(px) 。
   var height: Double
   var size: Double
-  	// 图片类型，如png、jpeg、gif、bmp等。
+      // 图片类型，如png、jpeg、gif、bmp等。
   var width: Double
 }
 

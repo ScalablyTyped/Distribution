@@ -1,6 +1,6 @@
 package typings.typescript.mod
 
-import typings.typescript.AnonAssignable
+import typings.typescript.anon.Assignable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,11 +41,12 @@ trait Program extends ScriptReferenceHost {
   def getGlobalDiagnostics(): js.Array[Diagnostic] = js.native
   def getGlobalDiagnostics(cancellationToken: CancellationToken): js.Array[Diagnostic] = js.native
   def getIdentifierCount(): Double = js.native
+  def getInstantiationCount(): Double = js.native
   def getNodeCount(): Double = js.native
   def getOptionsDiagnostics(): js.Array[Diagnostic] = js.native
   def getOptionsDiagnostics(cancellationToken: CancellationToken): js.Array[Diagnostic] = js.native
   def getProjectReferences(): js.UndefOr[js.Array[ProjectReference]] = js.native
-  def getRelationCacheSizes(): AnonAssignable = js.native
+  def getRelationCacheSizes(): Assignable = js.native
   def getResolvedProjectReferences(): js.UndefOr[js.Array[js.UndefOr[ResolvedProjectReference]]] = js.native
   /**
     * Get a list of root file names that were passed to a 'createProgram'

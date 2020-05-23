@@ -29,11 +29,11 @@ object CreateClusterSnapshotMessage {
   def apply(
     ClusterIdentifier: String,
     SnapshotIdentifier: String,
-    ManualSnapshotRetentionPeriod: Int | scala.Double = null,
+    ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
     Tags: TagList = null
   ): CreateClusterSnapshotMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any], SnapshotIdentifier = SnapshotIdentifier.asInstanceOf[js.Any])
-    if (ManualSnapshotRetentionPeriod != null) __obj.updateDynamic("ManualSnapshotRetentionPeriod")(ManualSnapshotRetentionPeriod.asInstanceOf[js.Any])
+    if (!js.isUndefined(ManualSnapshotRetentionPeriod)) __obj.updateDynamic("ManualSnapshotRetentionPeriod")(ManualSnapshotRetentionPeriod.get.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateClusterSnapshotMessage]
   }

@@ -11,10 +11,10 @@ trait MoveOptions extends js.Object {
 
 object MoveOptions {
   @scala.inline
-  def apply(limit: Int | Double = null, overwrite: js.UndefOr[Boolean] = js.undefined): MoveOptions = {
+  def apply(limit: js.UndefOr[Double] = js.undefined, overwrite: js.UndefOr[Boolean] = js.undefined): MoveOptions = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MoveOptions]
   }
 }

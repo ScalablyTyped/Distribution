@@ -26,6 +26,9 @@ trait CreateRateBasedRuleRequest extends js.Object {
     * The maximum number of requests, which have an identical value in the field that is specified by RateKey, allowed in a five-minute period. If the number of requests exceeds the RateLimit and the other predicates specified in the rule are also met, AWS WAF triggers the action that is specified for this rule.
     */
   var RateLimit: typings.awsSdk.wafregionalMod.RateLimit = js.native
+  /**
+    * 
+    */
   var Tags: js.UndefOr[TagList] = js.native
 }
 

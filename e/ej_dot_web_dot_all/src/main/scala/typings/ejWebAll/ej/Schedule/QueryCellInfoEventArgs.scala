@@ -53,7 +53,7 @@ object QueryCellInfoEventArgs {
   ): QueryCellInfoEventArgs = {
     val __obj = js.Dynamic.literal()
     if (appointment != null) __obj.updateDynamic("appointment")(appointment.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
     if (cellType != null) __obj.updateDynamic("cellType")(cellType.asInstanceOf[js.Any])
     if (currentAppointmentDate != null) __obj.updateDynamic("currentAppointmentDate")(currentAppointmentDate.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 package typings.antd.confirmMod
 
-import typings.antd.AnonDestroy
+import typings.antd.anon.Destroy
 import typings.antd.modalModalMod.ModalFuncProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,12 +18,12 @@ trait ModalStaticFunctions extends js.Object {
 object ModalStaticFunctions {
   @scala.inline
   def apply(
-    confirm: /* props */ ModalFuncProps => AnonDestroy,
-    error: /* props */ ModalFuncProps => AnonDestroy,
-    info: /* props */ ModalFuncProps => AnonDestroy,
-    success: /* props */ ModalFuncProps => AnonDestroy,
-    warn: /* props */ ModalFuncProps => AnonDestroy,
-    warning: /* props */ ModalFuncProps => AnonDestroy
+    confirm: /* props */ ModalFuncProps => Destroy,
+    error: /* props */ ModalFuncProps => Destroy,
+    info: /* props */ ModalFuncProps => Destroy,
+    success: /* props */ ModalFuncProps => Destroy,
+    warn: /* props */ ModalFuncProps => Destroy,
+    warning: /* props */ ModalFuncProps => Destroy
   ): ModalStaticFunctions = {
     val __obj = js.Dynamic.literal(confirm = js.Any.fromFunction1(confirm), error = js.Any.fromFunction1(error), info = js.Any.fromFunction1(info), success = js.Any.fromFunction1(success), warn = js.Any.fromFunction1(warn), warning = js.Any.fromFunction1(warning))
     __obj.asInstanceOf[ModalStaticFunctions]

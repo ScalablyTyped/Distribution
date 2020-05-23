@@ -1,15 +1,15 @@
 package typings.vsoNodeApi.workInterfacesMod
 
-import typings.vsoNodeApi.AnonEnumValuesAnonAllPermissions
-import typings.vsoNodeApi.AnonEnumValuesAnonAsRequirements
-import typings.vsoNodeApi.AnonEnumValuesAnonAvatarAndFullName
-import typings.vsoNodeApi.AnonEnumValuesAnonBacklogInError
-import typings.vsoNodeApi.AnonEnumValuesAnonCurrent
-import typings.vsoNodeApi.AnonEnumValuesAnonDeliveryTimelineView
-import typings.vsoNodeApi.AnonEnumValuesAnonDouble
-import typings.vsoNodeApi.AnonEnumValuesAnonIncoming
-import typings.vsoNodeApi.AnonEnumValuesAnonInvalidFilterClause
-import typings.vsoNodeApi.AnonEnumValuesAnonIsOverlapping
+import typings.vsoNodeApi.anon.EnumValuesAllPermissions
+import typings.vsoNodeApi.anon.EnumValuesAsRequirements
+import typings.vsoNodeApi.anon.EnumValuesAvatarAndFullName
+import typings.vsoNodeApi.anon.EnumValuesBacklogInError
+import typings.vsoNodeApi.anon.EnumValuesCurrent
+import typings.vsoNodeApi.anon.EnumValuesDeliveryTimelineView
+import typings.vsoNodeApi.anon.EnumValuesDouble
+import typings.vsoNodeApi.anon.EnumValuesIncoming
+import typings.vsoNodeApi.anon.EnumValuesInvalidFilterClause
+import typings.vsoNodeApi.anon.EnumValuesIsOverlapping
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,8 +20,8 @@ object TypeInfo extends js.Object {
   var BacklogConfiguration: js.Any = js.native
   var Board: js.Any = js.native
   var BoardColumn: js.Any = js.native
-  var BoardColumnType: AnonEnumValuesAnonIncoming = js.native
-  var BugsBehavior: AnonEnumValuesAnonAsRequirements = js.native
+  var BoardColumnType: EnumValuesIncoming = js.native
+  var BugsBehavior: EnumValuesAsRequirements = js.native
   var CapacityPatch: js.Any = js.native
   var CardFieldSettings: js.Any = js.native
   var CardSettings: js.Any = js.native
@@ -30,13 +30,13 @@ object TypeInfo extends js.Object {
   var DeliveryViewData: js.Any = js.native
   var DeliveryViewPropertyCollection: js.Any = js.native
   var FieldInfo: js.Any = js.native
-  var FieldType: AnonEnumValuesAnonDouble = js.native
-  var IdentityDisplayFormat: AnonEnumValuesAnonAvatarAndFullName = js.native
+  var FieldType: EnumValuesDouble = js.native
+  var IdentityDisplayFormat: EnumValuesAvatarAndFullName = js.native
   var Marker: js.Any = js.native
   var Plan: js.Any = js.native
   var PlanMetadata: js.Any = js.native
-  var PlanType: AnonEnumValuesAnonDeliveryTimelineView = js.native
-  var PlanUserPermissions: AnonEnumValuesAnonAllPermissions = js.native
+  var PlanType: EnumValuesDeliveryTimelineView = js.native
+  var PlanUserPermissions: EnumValuesAllPermissions = js.native
   var TeamIterationAttributes: js.Any = js.native
   var TeamMemberCapacity: js.Any = js.native
   var TeamSetting: js.Any = js.native
@@ -44,15 +44,15 @@ object TypeInfo extends js.Object {
   var TeamSettingsDaysOffPatch: js.Any = js.native
   var TeamSettingsIteration: js.Any = js.native
   var TeamSettingsPatch: js.Any = js.native
-  var TimeFrame: AnonEnumValuesAnonCurrent = js.native
+  var TimeFrame: EnumValuesCurrent = js.native
   var TimelineCriteriaStatus: js.Any = js.native
-  var TimelineCriteriaStatusCode: AnonEnumValuesAnonInvalidFilterClause = js.native
+  var TimelineCriteriaStatusCode: EnumValuesInvalidFilterClause = js.native
   var TimelineIterationStatus: js.Any = js.native
-  var TimelineIterationStatusCode: AnonEnumValuesAnonIsOverlapping = js.native
+  var TimelineIterationStatusCode: EnumValuesIsOverlapping = js.native
   var TimelineTeamData: js.Any = js.native
   var TimelineTeamIteration: js.Any = js.native
   var TimelineTeamStatus: js.Any = js.native
-  var TimelineTeamStatusCode: AnonEnumValuesAnonBacklogInError = js.native
+  var TimelineTeamStatusCode: EnumValuesBacklogInError = js.native
   var UpdatePlan: js.Any = js.native
 }
 

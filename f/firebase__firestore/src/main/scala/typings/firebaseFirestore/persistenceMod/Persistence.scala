@@ -4,7 +4,6 @@ import typings.firebaseFirestore.indexManagerMod.IndexManager
 import typings.firebaseFirestore.mutationQueueMod.MutationQueue
 import typings.firebaseFirestore.persistencePromiseMod.PersistencePromise
 import typings.firebaseFirestore.remoteDocumentCacheMod.RemoteDocumentCache
-import typings.firebaseFirestore.sharedClientStateMod.ClientId
 import typings.firebaseFirestore.targetCacheMod.TargetCache
 import typings.firebaseFirestore.userMod.User
 import scala.scalajs.js
@@ -17,14 +16,6 @@ trait Persistence extends js.Object {
     * Whether or not this persistence instance has been started.
     */
   val started: Boolean
-  /**
-    * Returns the IDs of the clients that are currently active. If multi-tab
-    * is not supported, returns an array that only contains the local client's
-    * ID.
-    *
-    * PORTING NOTE: This is only used for Web multi-tab.
-    */
-  def getActiveClients(): js.Promise[js.Array[ClientId]]
   /**
     * Returns an IndexManager instance that manages our persisted query indexes.
     *
@@ -95,30 +86,16 @@ trait Persistence extends js.Object {
     */
   def setDatabaseDeletedListener(databaseDeletedListener: js.Function0[js.Promise[Unit]]): Unit
   /**
-    * Adjusts the current network state in the client's metadata, potentially
-    * affecting the primary lease.
-    *
-    * PORTING NOTE: This is only used for Web multi-tab.
-    */
-  def setNetworkEnabled(networkEnabled: Boolean): Unit
-  /**
-    * Registers a listener that gets called when the primary state of the
-    * instance changes. Upon registering, this listener is invoked immediately
-    * with the current primary state.
-    *
-    * PORTING NOTE: This is only used for Web multi-tab.
-    */
-  def setPrimaryStateListener(primaryStateListener: PrimaryStateListener): js.Promise[Unit]
-  /**
     * Releases any resources held during eager shutdown.
     */
   def shutdown(): js.Promise[Unit]
+  /** Starts persistence. */
+  def start(): js.Promise[Unit]
 }
 
 object Persistence {
   @scala.inline
   def apply(
-    getActiveClients: () => js.Promise[js.Array[ClientId]],
     getIndexManager: () => IndexManager,
     getMutationQueue: User => MutationQueue,
     getRemoteDocumentCache: () => RemoteDocumentCache,
@@ -126,13 +103,11 @@ object Persistence {
     referenceDelegate: ReferenceDelegate,
     runTransaction: (String, PersistenceTransactionMode, js.Function1[/* transaction */ PersistenceTransaction, PersistencePromise[js.Any]]) => js.Promise[js.Any],
     setDatabaseDeletedListener: js.Function0[js.Promise[Unit]] => Unit,
-    setNetworkEnabled: Boolean => Unit,
-    setPrimaryStateListener: PrimaryStateListener => js.Promise[Unit],
     shutdown: () => js.Promise[Unit],
+    start: () => js.Promise[Unit],
     started: Boolean
   ): Persistence = {
-    val __obj = js.Dynamic.literal(getActiveClients = js.Any.fromFunction0(getActiveClients), getIndexManager = js.Any.fromFunction0(getIndexManager), getMutationQueue = js.Any.fromFunction1(getMutationQueue), getRemoteDocumentCache = js.Any.fromFunction0(getRemoteDocumentCache), getTargetCache = js.Any.fromFunction0(getTargetCache), referenceDelegate = referenceDelegate.asInstanceOf[js.Any], runTransaction = js.Any.fromFunction3(runTransaction), setDatabaseDeletedListener = js.Any.fromFunction1(setDatabaseDeletedListener), setNetworkEnabled = js.Any.fromFunction1(setNetworkEnabled), setPrimaryStateListener = js.Any.fromFunction1(setPrimaryStateListener), shutdown = js.Any.fromFunction0(shutdown), started = started.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal(getIndexManager = js.Any.fromFunction0(getIndexManager), getMutationQueue = js.Any.fromFunction1(getMutationQueue), getRemoteDocumentCache = js.Any.fromFunction0(getRemoteDocumentCache), getTargetCache = js.Any.fromFunction0(getTargetCache), referenceDelegate = referenceDelegate.asInstanceOf[js.Any], runTransaction = js.Any.fromFunction3(runTransaction), setDatabaseDeletedListener = js.Any.fromFunction1(setDatabaseDeletedListener), shutdown = js.Any.fromFunction0(shutdown), start = js.Any.fromFunction0(start), started = started.asInstanceOf[js.Any])
     __obj.asInstanceOf[Persistence]
   }
 }

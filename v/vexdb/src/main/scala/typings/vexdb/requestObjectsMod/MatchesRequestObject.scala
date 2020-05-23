@@ -41,8 +41,8 @@ object MatchesRequestObject {
     division: StringRequest = null,
     field: StringRequest = null,
     instance: NumberRequest = null,
-    limit_number: Int | Double = null,
-    limit_start: Int | Double = null,
+    limit_number: js.UndefOr[Double] = js.undefined,
+    limit_start: js.UndefOr[Double] = js.undefined,
     matchnum: NumberRequest = null,
     red1: StringRequest = null,
     red2: StringRequest = null,
@@ -66,8 +66,8 @@ object MatchesRequestObject {
     if (division != null) __obj.updateDynamic("division")(division.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
-    if (limit_number != null) __obj.updateDynamic("limit_number")(limit_number.asInstanceOf[js.Any])
-    if (limit_start != null) __obj.updateDynamic("limit_start")(limit_start.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit_number)) __obj.updateDynamic("limit_number")(limit_number.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit_start)) __obj.updateDynamic("limit_start")(limit_start.get.asInstanceOf[js.Any])
     if (matchnum != null) __obj.updateDynamic("matchnum")(matchnum.asInstanceOf[js.Any])
     if (red1 != null) __obj.updateDynamic("red1")(red1.asInstanceOf[js.Any])
     if (red2 != null) __obj.updateDynamic("red2")(red2.asInstanceOf[js.Any])
@@ -78,7 +78,7 @@ object MatchesRequestObject {
     if (scheduled != null) __obj.updateDynamic("scheduled")(scheduled.asInstanceOf[js.Any])
     if (scored != null) __obj.updateDynamic("scored")(scored.asInstanceOf[js.Any])
     if (season != null) __obj.updateDynamic("season")(season.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.asInstanceOf[js.Any])
+    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.get.asInstanceOf[js.Any])
     if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
     if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchesRequestObject]

@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,8 +12,4 @@ trait WeakSet[T /* <: js.Object */] extends js.Object {
   def delete(value: T): scala.Boolean = js.native
   def has(value: T): scala.Boolean = js.native
 }
-
-@JSGlobal("WeakSet")
-@js.native
-object WeakSet extends TopLevel[WeakSetConstructor]
 

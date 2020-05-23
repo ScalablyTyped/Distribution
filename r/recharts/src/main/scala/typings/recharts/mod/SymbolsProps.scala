@@ -117,7 +117,7 @@ object SymbolsProps {
   @scala.inline
   def apply(
     alignmentBaseline: String = null,
-    angle: Int | Double = null,
+    angle: js.UndefOr[Double] = js.undefined,
     baselineShift: String = null,
     className: String = null,
     clip: String = null,
@@ -129,13 +129,13 @@ object SymbolsProps {
     colorProfile: String = null,
     colorRendering: String = null,
     cursor: String = null,
-    cx: Int | Double = null,
-    cy: Int | Double = null,
+    cx: js.UndefOr[Double] = js.undefined,
+    cy: js.UndefOr[Double] = js.undefined,
     direction: String = null,
     display: String = null,
     dominantBaseline: String = null,
-    dx: Int | Double = null,
-    dy: Int | Double = null,
+    dx: js.UndefOr[Double] = js.undefined,
+    dy: js.UndefOr[Double] = js.undefined,
     fill: String = null,
     fillOpacity: Double | String = null,
     fillRule: String = null,
@@ -151,7 +151,7 @@ object SymbolsProps {
     fontVariant: String = null,
     fontWeight: normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit = null,
     glyphOrientationVertical: String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     imageRendering: auto | optimizeSpeed | optimizeQuality | inherit = null,
     kerning: Double | String = null,
     letterSpacing: String = null,
@@ -163,9 +163,9 @@ object SymbolsProps {
     opacity: Double | String = null,
     overflow: String = null,
     pointerEvents: String = null,
-    r: Int | Double = null,
+    r: js.UndefOr[Double] = js.undefined,
     shapeRendering: auto | optimizeSpeed | crispEdges | geometricPrecision | inherit = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     sizeType: area | diameter = null,
     stopColor: String = null,
     stopOpacity: Double | String = null,
@@ -185,15 +185,15 @@ object SymbolsProps {
     `type`: circle | cross | diamond | square | star | triangle | wye = null,
     unicodeBidi: String = null,
     visibility: String = null,
-    width: Int | Double = null,
+    width: js.UndefOr[Double] = js.undefined,
     wordSpacing: Double | String = null,
     writingMode: String = null,
-    x: Int | Double = null,
-    y: Int | Double = null
+    x: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined
   ): SymbolsProps = {
     val __obj = js.Dynamic.literal()
     if (alignmentBaseline != null) __obj.updateDynamic("alignmentBaseline")(alignmentBaseline.asInstanceOf[js.Any])
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
     if (baselineShift != null) __obj.updateDynamic("baselineShift")(baselineShift.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
@@ -205,13 +205,13 @@ object SymbolsProps {
     if (colorProfile != null) __obj.updateDynamic("colorProfile")(colorProfile.asInstanceOf[js.Any])
     if (colorRendering != null) __obj.updateDynamic("colorRendering")(colorRendering.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (cx != null) __obj.updateDynamic("cx")(cx.asInstanceOf[js.Any])
-    if (cy != null) __obj.updateDynamic("cy")(cy.asInstanceOf[js.Any])
+    if (!js.isUndefined(cx)) __obj.updateDynamic("cx")(cx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cy)) __obj.updateDynamic("cy")(cy.get.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (dominantBaseline != null) __obj.updateDynamic("dominantBaseline")(dominantBaseline.asInstanceOf[js.Any])
-    if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
-    if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
+    if (!js.isUndefined(dx)) __obj.updateDynamic("dx")(dx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dy)) __obj.updateDynamic("dy")(dy.get.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (fillRule != null) __obj.updateDynamic("fillRule")(fillRule.asInstanceOf[js.Any])
@@ -227,7 +227,7 @@ object SymbolsProps {
     if (fontVariant != null) __obj.updateDynamic("fontVariant")(fontVariant.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (glyphOrientationVertical != null) __obj.updateDynamic("glyphOrientationVertical")(glyphOrientationVertical.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (imageRendering != null) __obj.updateDynamic("imageRendering")(imageRendering.asInstanceOf[js.Any])
     if (kerning != null) __obj.updateDynamic("kerning")(kerning.asInstanceOf[js.Any])
     if (letterSpacing != null) __obj.updateDynamic("letterSpacing")(letterSpacing.asInstanceOf[js.Any])
@@ -239,9 +239,9 @@ object SymbolsProps {
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
     if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
-    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
+    if (!js.isUndefined(r)) __obj.updateDynamic("r")(r.get.asInstanceOf[js.Any])
     if (shapeRendering != null) __obj.updateDynamic("shapeRendering")(shapeRendering.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (sizeType != null) __obj.updateDynamic("sizeType")(sizeType.asInstanceOf[js.Any])
     if (stopColor != null) __obj.updateDynamic("stopColor")(stopColor.asInstanceOf[js.Any])
     if (stopOpacity != null) __obj.updateDynamic("stopOpacity")(stopOpacity.asInstanceOf[js.Any])
@@ -261,11 +261,11 @@ object SymbolsProps {
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (unicodeBidi != null) __obj.updateDynamic("unicodeBidi")(unicodeBidi.asInstanceOf[js.Any])
     if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     if (wordSpacing != null) __obj.updateDynamic("wordSpacing")(wordSpacing.asInstanceOf[js.Any])
     if (writingMode != null) __obj.updateDynamic("writingMode")(writingMode.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SymbolsProps]
   }
 }

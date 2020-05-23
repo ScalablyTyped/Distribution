@@ -1,7 +1,7 @@
 package typings.ionicReact.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ionicReact.IonSkeletonTextPickHTMLAt
+import typings.ionicReact.anon.IonSkeletonTextPickHTMLAt
 import typings.react.mod.ForwardRefExoticComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

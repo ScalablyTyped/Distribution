@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.PIXELFORMAT_R32F
-  * @type {number}
-  * @description 32-bit floating point single channel format (WebGL2 only).
+  * 32-bit floating point single channel format (WebGL2 only).
   */
 @JSImport("playcanvas", "PIXELFORMAT_R32F")
 @js.native

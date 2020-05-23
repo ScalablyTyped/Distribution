@@ -69,13 +69,13 @@ trait SliderProps extends Props {
 object SliderProps {
   @scala.inline
   def apply(
-    buffer: Int | Double = null,
+    buffer: js.UndefOr[Double] = js.undefined,
     className: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     editable: js.UndefOr[Boolean] = js.undefined,
     key: Key = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
     onChange: js.Function = null,
     onClick: js.Function = null,
     onContextMenu: js.Function = null,
@@ -102,19 +102,19 @@ object SliderProps {
     onTouchStart: js.Function = null,
     pinned: js.UndefOr[Boolean] = js.undefined,
     snaps: js.UndefOr[Boolean] = js.undefined,
-    step: Int | Double = null,
+    step: js.UndefOr[Double] = js.undefined,
     style: CSSProperties = null,
     theme: SliderTheme = null,
-    value: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined
   ): SliderProps = {
     val __obj = js.Dynamic.literal()
-    if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(onChange.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
     if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(onContextMenu.asInstanceOf[js.Any])
@@ -139,12 +139,12 @@ object SliderProps {
     if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd.asInstanceOf[js.Any])
     if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove.asInstanceOf[js.Any])
     if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart.asInstanceOf[js.Any])
-    if (!js.isUndefined(pinned)) __obj.updateDynamic("pinned")(pinned.asInstanceOf[js.Any])
-    if (!js.isUndefined(snaps)) __obj.updateDynamic("snaps")(snaps.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (!js.isUndefined(pinned)) __obj.updateDynamic("pinned")(pinned.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(snaps)) __obj.updateDynamic("snaps")(snaps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliderProps]
   }
 }

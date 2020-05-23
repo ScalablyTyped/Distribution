@@ -20,30 +20,30 @@ trait TrackSearchParams extends Pageable {
 object TrackSearchParams {
   @scala.inline
   def apply(
-    f_artist_id: Int | Double = null,
-    f_artist_mbid: Int | Double = null,
+    f_artist_id: js.UndefOr[Double] = js.undefined,
+    f_artist_mbid: js.UndefOr[Double] = js.undefined,
     f_has_lyrics: TBoolean = null,
     f_lyrics_language: String = null,
-    f_music_genre_id: Int | Double = null,
-    page: Int | Double = null,
-    page_size: Int | Double = null,
+    f_music_genre_id: js.UndefOr[Double] = js.undefined,
+    page: js.UndefOr[Double] = js.undefined,
+    page_size: js.UndefOr[Double] = js.undefined,
     q: String = null,
     q_lyrics: String = null,
-    quorum_factor: Int | Double = null,
+    quorum_factor: js.UndefOr[Double] = js.undefined,
     s_artist_rating: TSort = null,
     s_track_rating: TSort = null
   ): TrackSearchParams = {
     val __obj = js.Dynamic.literal()
-    if (f_artist_id != null) __obj.updateDynamic("f_artist_id")(f_artist_id.asInstanceOf[js.Any])
-    if (f_artist_mbid != null) __obj.updateDynamic("f_artist_mbid")(f_artist_mbid.asInstanceOf[js.Any])
+    if (!js.isUndefined(f_artist_id)) __obj.updateDynamic("f_artist_id")(f_artist_id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(f_artist_mbid)) __obj.updateDynamic("f_artist_mbid")(f_artist_mbid.get.asInstanceOf[js.Any])
     if (f_has_lyrics != null) __obj.updateDynamic("f_has_lyrics")(f_has_lyrics.asInstanceOf[js.Any])
     if (f_lyrics_language != null) __obj.updateDynamic("f_lyrics_language")(f_lyrics_language.asInstanceOf[js.Any])
-    if (f_music_genre_id != null) __obj.updateDynamic("f_music_genre_id")(f_music_genre_id.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (page_size != null) __obj.updateDynamic("page_size")(page_size.asInstanceOf[js.Any])
+    if (!js.isUndefined(f_music_genre_id)) __obj.updateDynamic("f_music_genre_id")(f_music_genre_id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(page_size)) __obj.updateDynamic("page_size")(page_size.get.asInstanceOf[js.Any])
     if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
     if (q_lyrics != null) __obj.updateDynamic("q_lyrics")(q_lyrics.asInstanceOf[js.Any])
-    if (quorum_factor != null) __obj.updateDynamic("quorum_factor")(quorum_factor.asInstanceOf[js.Any])
+    if (!js.isUndefined(quorum_factor)) __obj.updateDynamic("quorum_factor")(quorum_factor.get.asInstanceOf[js.Any])
     if (s_artist_rating != null) __obj.updateDynamic("s_artist_rating")(s_artist_rating.asInstanceOf[js.Any])
     if (s_track_rating != null) __obj.updateDynamic("s_track_rating")(s_track_rating.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackSearchParams]

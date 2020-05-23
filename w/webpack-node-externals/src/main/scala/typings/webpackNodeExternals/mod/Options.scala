@@ -59,7 +59,7 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (binaryDirs != null) __obj.updateDynamic("binaryDirs")(binaryDirs.asInstanceOf[js.Any])
     if (importType != null) __obj.updateDynamic("importType")(importType.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeAbsolutePaths)) __obj.updateDynamic("includeAbsolutePaths")(includeAbsolutePaths.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeAbsolutePaths)) __obj.updateDynamic("includeAbsolutePaths")(includeAbsolutePaths.get.asInstanceOf[js.Any])
     if (modulesDir != null) __obj.updateDynamic("modulesDir")(modulesDir.asInstanceOf[js.Any])
     if (modulesFromFile != null) __obj.updateDynamic("modulesFromFile")(modulesFromFile.asInstanceOf[js.Any])
     if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])

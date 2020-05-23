@@ -13,8 +13,8 @@ object JSONEditorNodeUpdateDomOptions {
   @scala.inline
   def apply(recurse: js.UndefOr[Boolean] = js.undefined, updateIndexes: js.UndefOr[Boolean] = js.undefined): JSONEditorNodeUpdateDomOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(recurse)) __obj.updateDynamic("recurse")(recurse.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateIndexes)) __obj.updateDynamic("updateIndexes")(updateIndexes.asInstanceOf[js.Any])
+    if (!js.isUndefined(recurse)) __obj.updateDynamic("recurse")(recurse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateIndexes)) __obj.updateDynamic("updateIndexes")(updateIndexes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONEditorNodeUpdateDomOptions]
   }
 }

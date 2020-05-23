@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Media.PlayTo.PlayToConnectionTransferredEventArgs")
-@js.native
-class PlayToConnectionTransferredEventArgs () extends IPlayToConnectionTransferredEventArgs {
-  /* CompleteClass */
-  override var currentSource: PlayToSource = js.native
-  /* CompleteClass */
-  override var previousSource: PlayToSource = js.native
+trait PlayToConnectionTransferredEventArgs extends IPlayToConnectionTransferredEventArgs
+
+object PlayToConnectionTransferredEventArgs {
+  @scala.inline
+  def apply(currentSource: PlayToSource, previousSource: PlayToSource): PlayToConnectionTransferredEventArgs = {
+    val __obj = js.Dynamic.literal(currentSource = currentSource.asInstanceOf[js.Any], previousSource = previousSource.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlayToConnectionTransferredEventArgs]
+  }
 }
 

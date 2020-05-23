@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.Control")
 @js.native
-class Control protected () extends js.Object {
+trait Control extends js.Object {
   @JSName("Access.Control_typekey")
   var AccessDotControl_typekey: Control = js.native
   val Application: typings.activexAccess.Access.Application = js.native

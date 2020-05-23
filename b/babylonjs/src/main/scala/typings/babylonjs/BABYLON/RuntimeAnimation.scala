@@ -4,17 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.RuntimeAnimation")
 @js.native
-class RuntimeAnimation protected () extends js.Object {
-  /**
-    * Create a new RuntimeAnimation object
-    * @param target defines the target of the animation
-    * @param animation defines the source animation object
-    * @param scene defines the hosting scene
-    * @param host defines the initiating Animatable
-    */
-  def this(target: js.Any, animation: Animation, scene: Scene, host: Animatable) = this()
+trait RuntimeAnimation extends js.Object {
   /**
     * The active target of the runtime animation
     */

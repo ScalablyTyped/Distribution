@@ -9,38 +9,38 @@ import scala.scalajs.js.annotation._
 
 trait IAbstract extends IObservable {
   /** [Method] Returns an Array of contact objects
-  		* @param config Object
-  		* @returns Object[] An array of contact objects.
-  		*/
+    * @param config Object
+    * @returns Object[] An array of contact objects.
+    */
   var getContacts: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Array]] = js.undefined
   /** [Method] Returns the value of includeImages
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getIncludeImages: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns localized user readable label for a contact field i e
-  		* @param config Object
-  		* @returns String user readable string
-  		*/
+    * @param config Object
+    * @returns String user readable string
+    */
   var getLocalizedLabel: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], String]] = js.undefined
   /** [Method] Returns base64 encoded image thumbnail for a contact specified in config id This method is for Sencha Native Packager
-  		* @param config Object
-  		* @returns String base64 string
-  		*/
+    * @param config Object
+    * @returns String base64 string
+    */
   var getThumbnail: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], String]] = js.undefined
   /** [Config Option] (Boolean) */
   var includeImages: js.UndefOr[Boolean] = js.undefined
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
-  		* @param object Object The Observable whose events this object is to relay.
-  		* @param events String/Array/Object Array of event names to relay.
-  		* @returns Ext.mixin.Observable this
-  		*/
+    * @param object Object The Observable whose events this object is to relay.
+    * @param events String/Array/Object Array of event names to relay.
+    * @returns Ext.mixin.Observable this
+    */
   @JSName("relayEvents")
   var relayEvents_IAbstract: js.UndefOr[
     js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
   ] = js.undefined
   /** [Method] Sets the value of includeImages
-  		* @param includeImages Boolean The new value.
-  		*/
+    * @param includeImages Boolean The new value.
+    */
   var setIncludeImages: js.UndefOr[js.Function1[/* includeImages */ js.UndefOr[Boolean], Unit]] = js.undefined
 }
 
@@ -131,7 +131,7 @@ object IAbstract {
     if (getLocalizedLabel != null) __obj.updateDynamic("getLocalizedLabel")(js.Any.fromFunction1(getLocalizedLabel))
     if (getThumbnail != null) __obj.updateDynamic("getThumbnail")(js.Any.fromFunction1(getThumbnail))
     if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
-    if (!js.isUndefined(includeImages)) __obj.updateDynamic("includeImages")(includeImages.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeImages)) __obj.updateDynamic("includeImages")(includeImages.get.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
@@ -152,7 +152,7 @@ object IAbstract {
     if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(js.Any.fromFunction1(setBubbleEvents))
     if (setIncludeImages != null) __obj.updateDynamic("setIncludeImages")(js.Any.fromFunction1(setIncludeImages))
     if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))

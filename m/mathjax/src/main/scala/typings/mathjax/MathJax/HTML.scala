@@ -1,6 +1,5 @@
 package typings.mathjax.MathJax
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +27,20 @@ trait HTML extends js.Object {
   def setScript(script: String, text: String): Unit
 }
 
-@JSGlobal("MathJax.HTML")
-@js.native
-object HTML extends TopLevel[HTML]
+object HTML {
+  @scala.inline
+  def apply(
+    Element: (String, js.Any, js.Any) => js.Any,
+    TextNode: String => js.Any,
+    addElement: (js.Any, String, js.Any, js.Any) => js.Any,
+    addText: (js.Any, String) => js.Any,
+    getScript: String => String,
+    setScript: (String, String) => Unit,
+    Cookie: Cookie = null
+  ): HTML = {
+    val __obj = js.Dynamic.literal(Element = js.Any.fromFunction3(Element), TextNode = js.Any.fromFunction1(TextNode), addElement = js.Any.fromFunction4(addElement), addText = js.Any.fromFunction2(addText), getScript = js.Any.fromFunction1(getScript), setScript = js.Any.fromFunction2(setScript))
+    if (Cookie != null) __obj.updateDynamic("Cookie")(Cookie.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HTML]
+  }
+}
 

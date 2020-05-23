@@ -22,9 +22,13 @@ trait ListTaskExecutionsRequest extends js.Object {
 
 object ListTaskExecutionsRequest {
   @scala.inline
-  def apply(MaxResults: Int | Double = null, NextToken: NextToken = null, TaskArn: TaskArn = null): ListTaskExecutionsRequest = {
+  def apply(
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    NextToken: NextToken = null,
+    TaskArn: TaskArn = null
+  ): ListTaskExecutionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (TaskArn != null) __obj.updateDynamic("TaskArn")(TaskArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTaskExecutionsRequest]

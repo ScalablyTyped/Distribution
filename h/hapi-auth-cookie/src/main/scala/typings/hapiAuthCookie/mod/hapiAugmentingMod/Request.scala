@@ -1,17 +1,17 @@
 package typings.hapiAuthCookie.mod.hapiAugmentingMod
 
-import typings.hapiAuthCookie.AnonClear
+import typings.hapiAuthCookie.anon.Clear
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Request extends js.Object {
-  var cookieAuth: AnonClear
+  var cookieAuth: Clear
 }
 
 object Request {
   @scala.inline
-  def apply(cookieAuth: AnonClear): Request = {
+  def apply(cookieAuth: Clear): Request = {
     val __obj = js.Dynamic.literal(cookieAuth = cookieAuth.asInstanceOf[js.Any])
     __obj.asInstanceOf[Request]
   }

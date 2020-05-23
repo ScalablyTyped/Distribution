@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * 用户向服务请求识别身份证，身份证识别包括正面和背面。
-		 */
+  * 用户向服务请求识别身份证，身份证识别包括正面和背面。
+  */
 trait ocrIdCardOptions
   extends BaseOptions[js.Any, js.Any] {
    // 图片资源地址
@@ -35,8 +35,8 @@ object ocrIdCardOptions {
   ): ocrIdCardOptions = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (!js.isUndefined(detect_direction)) __obj.updateDynamic("detect_direction")(detect_direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(detect_risk)) __obj.updateDynamic("detect_risk")(detect_risk.asInstanceOf[js.Any])
+    if (!js.isUndefined(detect_direction)) __obj.updateDynamic("detect_direction")(detect_direction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(detect_risk)) __obj.updateDynamic("detect_risk")(detect_risk.get.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (id_card_side != null) __obj.updateDynamic("id_card_side")(id_card_side.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))

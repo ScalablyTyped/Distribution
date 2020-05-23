@@ -31,16 +31,16 @@ object MarkerSettings {
   def apply(
     border: MarkerSettingsBorder = null,
     fill: String = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): MarkerSettings = {
     val __obj = js.Dynamic.literal()
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerSettings]
   }
 }

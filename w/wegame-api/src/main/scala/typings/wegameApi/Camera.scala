@@ -1,5 +1,8 @@
 package typings.wegameApi
 
+import typings.wegameApi.anon.Data
+import typings.wegameApi.anon.Height
+import typings.wegameApi.anon.TempThumbPath
 import typings.wegameApi.wegameApiStrings.auto
 import typings.wegameApi.wegameApiStrings.back
 import typings.wegameApi.wegameApiStrings.front
@@ -18,9 +21,8 @@ import scala.scalajs.js.annotation._
 /**
   * 相机对象
   */
-@JSGlobal("Camera")
 @js.native
-class Camera () extends js.Object {
+trait Camera extends js.Object {
   /**
     * 摄像头朝向
     */
@@ -69,7 +71,7 @@ class Camera () extends js.Object {
   /**
     * 监听摄像头实时帧数据
     */
-  def onCameraFrame(callback: js.Function1[/* res */ AnonData, Unit]): Unit = js.native
+  def onCameraFrame(callback: js.Function1[/* res */ Data, Unit]): Unit = js.native
   /**
     * 监听摄像头非正常终止事件，如退出后台等情况
     * @param callback 回调函数
@@ -83,17 +85,17 @@ class Camera () extends js.Object {
     * 结束录像，成功则返回封面与视频
     * @param compressed 是否压缩录制视频
     */
-  def stopRecord(compressed: Boolean): js.Promise[AnonTempThumbPath] = js.native
+  def stopRecord(compressed: Boolean): js.Promise[TempThumbPath] = js.native
   /**
     * 拍照，可指定质量，成功则返回图片
     * @param quality 图片质量
     */
-  def takePhoto(): js.Promise[AnonHeight] = js.native
+  def takePhoto(): js.Promise[Height] = js.native
   @JSName("takePhoto")
-  def takePhoto_high(quality: high): js.Promise[AnonHeight] = js.native
+  def takePhoto_high(quality: high): js.Promise[Height] = js.native
   @JSName("takePhoto")
-  def takePhoto_low(quality: low): js.Promise[AnonHeight] = js.native
+  def takePhoto_low(quality: low): js.Promise[Height] = js.native
   @JSName("takePhoto")
-  def takePhoto_normal(quality: normal): js.Promise[AnonHeight] = js.native
+  def takePhoto_normal(quality: normal): js.Promise[Height] = js.native
 }
 

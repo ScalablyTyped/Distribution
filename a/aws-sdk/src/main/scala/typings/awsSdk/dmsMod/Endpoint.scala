@@ -75,6 +75,10 @@ trait Endpoint extends js.Object {
     */
   var MongoDbSettings: js.UndefOr[typings.awsSdk.dmsMod.MongoDbSettings] = js.native
   /**
+    * The settings for the MongoDB source endpoint. For more information, see the NeptuneSettings structure.
+    */
+  var NeptuneSettings: js.UndefOr[typings.awsSdk.dmsMod.NeptuneSettings] = js.native
+  /**
     * The port value used to access the endpoint.
     */
   var Port: js.UndefOr[IntegerOptional] = js.native
@@ -128,7 +132,8 @@ object Endpoint {
     KinesisSettings: KinesisSettings = null,
     KmsKeyId: String = null,
     MongoDbSettings: MongoDbSettings = null,
-    Port: Int | Double = null,
+    NeptuneSettings: NeptuneSettings = null,
+    Port: js.UndefOr[IntegerOptional] = js.undefined,
     RedshiftSettings: RedshiftSettings = null,
     S3Settings: S3Settings = null,
     ServerName: String = null,
@@ -155,7 +160,8 @@ object Endpoint {
     if (KinesisSettings != null) __obj.updateDynamic("KinesisSettings")(KinesisSettings.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
     if (MongoDbSettings != null) __obj.updateDynamic("MongoDbSettings")(MongoDbSettings.asInstanceOf[js.Any])
-    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
+    if (NeptuneSettings != null) __obj.updateDynamic("NeptuneSettings")(NeptuneSettings.asInstanceOf[js.Any])
+    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
     if (RedshiftSettings != null) __obj.updateDynamic("RedshiftSettings")(RedshiftSettings.asInstanceOf[js.Any])
     if (S3Settings != null) __obj.updateDynamic("S3Settings")(S3Settings.asInstanceOf[js.Any])
     if (ServerName != null) __obj.updateDynamic("ServerName")(ServerName.asInstanceOf[js.Any])

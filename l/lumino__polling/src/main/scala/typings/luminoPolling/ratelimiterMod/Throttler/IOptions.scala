@@ -23,10 +23,10 @@ trait IOptions extends js.Object {
 
 object IOptions {
   @scala.inline
-  def apply(edge: leading | trailing = null, limit: Int | Double = null): IOptions = {
+  def apply(edge: leading | trailing = null, limit: js.UndefOr[Double] = js.undefined): IOptions = {
     val __obj = js.Dynamic.literal()
     if (edge != null) __obj.updateDynamic("edge")(edge.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

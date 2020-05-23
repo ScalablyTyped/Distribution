@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object typesMod {
   type EventHandler = js.Function6[
-    /* e */ typings.std.Event_, 
+    /* e */ typings.std.Event, 
     /* deltaX */ scala.Double, 
     /* deltaY */ scala.Double, 
     /* absX */ scala.Double, 

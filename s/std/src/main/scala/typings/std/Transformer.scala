@@ -16,17 +16,13 @@ object Transformer {
   @scala.inline
   def apply[I, O](
     flush: /* controller */ TransformStreamDefaultController[O] => Unit | js.Thenable[Unit] = null,
-    readableType: js.UndefOr[scala.Nothing] = js.undefined,
     start: /* controller */ TransformStreamDefaultController[O] => Unit | js.Thenable[Unit] = null,
-    transform: (I, /* controller */ TransformStreamDefaultController[O]) => Unit | js.Thenable[Unit] = null,
-    writableType: js.UndefOr[scala.Nothing] = js.undefined
+    transform: (I, /* controller */ TransformStreamDefaultController[O]) => Unit | js.Thenable[Unit] = null
   ): Transformer[I, O] = {
     val __obj = js.Dynamic.literal()
     if (flush != null) __obj.updateDynamic("flush")(js.Any.fromFunction1(flush))
-    if (!js.isUndefined(readableType)) __obj.updateDynamic("readableType")(readableType.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
     if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction2(transform))
-    if (!js.isUndefined(writableType)) __obj.updateDynamic("writableType")(writableType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transformer[I, O]]
   }
 }

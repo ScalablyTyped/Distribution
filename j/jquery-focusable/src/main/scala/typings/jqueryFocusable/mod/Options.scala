@@ -15,7 +15,7 @@ object Options {
   @scala.inline
   def apply(findNegativeTabindex: js.UndefOr[Boolean] = js.undefined, findPositiveTabindex: `true` = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(findNegativeTabindex)) __obj.updateDynamic("findNegativeTabindex")(findNegativeTabindex.asInstanceOf[js.Any])
+    if (!js.isUndefined(findNegativeTabindex)) __obj.updateDynamic("findNegativeTabindex")(findNegativeTabindex.get.asInstanceOf[js.Any])
     if (findPositiveTabindex != null) __obj.updateDynamic("findPositiveTabindex")(findPositiveTabindex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

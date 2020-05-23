@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListFindingsResponse extends js.Object {
   /**
-    * The IDs of the findings you are listing.
+    * The IDs of the findings that you're listing.
     */
   var FindingIds: typings.awsSdk.guarddutyMod.FindingIds = js.native
   /**
-    * Pagination parameter to be used on the next list operation to retrieve more items.
+    * The pagination parameter to be used on the next list operation to retrieve more items.
     */
   var NextToken: js.UndefOr[String] = js.native
 }

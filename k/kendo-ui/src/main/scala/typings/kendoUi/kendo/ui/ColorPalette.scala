@@ -2,16 +2,12 @@ package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.JQuery
 import typings.kendoUi.kendo.Color
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.ColorPalette")
 @js.native
-class ColorPalette protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: ColorPaletteOptions) = this()
+trait ColorPalette extends Widget {
   @JSName("options")
   var options_ColorPalette: ColorPaletteOptions = js.native
   var wrapper: JQuery = js.native
@@ -25,13 +21,5 @@ class ColorPalette protected () extends Widget {
   def value(color: String): Unit = js.native
   @JSName("value")
   def value_Unit(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.ColorPalette")
-@js.native
-object ColorPalette extends js.Object {
-  var fn: ColorPalette = js.native
-  def extend(proto: js.Object): ColorPalette = js.native
 }
 

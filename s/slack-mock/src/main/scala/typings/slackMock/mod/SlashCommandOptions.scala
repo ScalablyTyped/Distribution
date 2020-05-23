@@ -16,13 +16,13 @@ object SlashCommandOptions {
   def apply[T](
     body: T = null,
     headers: SlashCommandHttpHeaders = null,
-    statusCode: Int | Double = null,
+    statusCode: js.UndefOr[Double] = js.undefined,
     url: SlashCommandUrl = null
   ): SlashCommandOptions[T] = {
     val __obj = js.Dynamic.literal()
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusCode)) __obj.updateDynamic("statusCode")(statusCode.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlashCommandOptions[T]]
   }

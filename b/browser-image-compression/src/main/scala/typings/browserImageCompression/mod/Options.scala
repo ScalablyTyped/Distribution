@@ -24,22 +24,22 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    exifOrientation: Int | Double = null,
+    exifOrientation: js.UndefOr[Double] = js.undefined,
     fileType: String = null,
-    maxIteration: Int | Double = null,
-    maxSizeMB: Int | Double = null,
-    maxWidthOrHeight: Int | Double = null,
+    maxIteration: js.UndefOr[Double] = js.undefined,
+    maxSizeMB: js.UndefOr[Double] = js.undefined,
+    maxWidthOrHeight: js.UndefOr[Double] = js.undefined,
     onProgress: /* progress */ Double => Unit = null,
     useWebWorker: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (exifOrientation != null) __obj.updateDynamic("exifOrientation")(exifOrientation.asInstanceOf[js.Any])
+    if (!js.isUndefined(exifOrientation)) __obj.updateDynamic("exifOrientation")(exifOrientation.get.asInstanceOf[js.Any])
     if (fileType != null) __obj.updateDynamic("fileType")(fileType.asInstanceOf[js.Any])
-    if (maxIteration != null) __obj.updateDynamic("maxIteration")(maxIteration.asInstanceOf[js.Any])
-    if (maxSizeMB != null) __obj.updateDynamic("maxSizeMB")(maxSizeMB.asInstanceOf[js.Any])
-    if (maxWidthOrHeight != null) __obj.updateDynamic("maxWidthOrHeight")(maxWidthOrHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxIteration)) __obj.updateDynamic("maxIteration")(maxIteration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSizeMB)) __obj.updateDynamic("maxSizeMB")(maxSizeMB.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidthOrHeight)) __obj.updateDynamic("maxWidthOrHeight")(maxWidthOrHeight.get.asInstanceOf[js.Any])
     if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
-    if (!js.isUndefined(useWebWorker)) __obj.updateDynamic("useWebWorker")(useWebWorker.asInstanceOf[js.Any])
+    if (!js.isUndefined(useWebWorker)) __obj.updateDynamic("useWebWorker")(useWebWorker.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

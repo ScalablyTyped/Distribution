@@ -1,6 +1,6 @@
 package typings.asyncValidator.mod
 
-import typings.asyncValidator.AnonType
+import typings.asyncValidator.anon.Type
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +17,7 @@ trait RuleItem extends js.Object {
       Unit | js.Promise[Unit]
     ]
   ] = js.undefined
-  var defaultField: js.UndefOr[AnonType] = js.undefined
+  var defaultField: js.UndefOr[Type] = js.undefined
    // Length of type 'string' and 'array'
   var enum: js.UndefOr[js.Array[js.UndefOr[String | Double | Boolean | Null]]] = js.undefined
   var fields: js.UndefOr[Rules] = js.undefined
@@ -53,13 +53,13 @@ object RuleItem {
   @scala.inline
   def apply(
     asyncValidator: (/* rule */ Rules, /* value */ js.Any, /* callback */ js.Function1[/* error */ String | js.Array[String] | Unit, Unit], /* source */ ValidateSource, /* options */ ValidateOption) => Unit | js.Promise[Unit] = null,
-    defaultField: AnonType = null,
+    defaultField: Type = null,
     enum: js.Array[js.UndefOr[String | Double | Boolean | Null]] = null,
     fields: Rules = null,
-    len: Int | Double = null,
-    max: Int | Double = null,
+    len: js.UndefOr[Double] = js.undefined,
+    max: js.UndefOr[Double] = js.undefined,
     message: String = null,
-    min: Int | Double = null,
+    min: js.UndefOr[Double] = js.undefined,
     options: ValidateOption = null,
     pattern: RegExp | String = null,
     required: js.UndefOr[Boolean] = js.undefined,
@@ -73,17 +73,17 @@ object RuleItem {
     if (defaultField != null) __obj.updateDynamic("defaultField")(defaultField.asInstanceOf[js.Any])
     if (enum != null) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (len != null) __obj.updateDynamic("len")(len.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (!js.isUndefined(len)) __obj.updateDynamic("len")(len.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (validator != null) __obj.updateDynamic("validator")(js.Any.fromFunction5(validator))
-    if (!js.isUndefined(whitespace)) __obj.updateDynamic("whitespace")(whitespace.asInstanceOf[js.Any])
+    if (!js.isUndefined(whitespace)) __obj.updateDynamic("whitespace")(whitespace.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleItem]
   }
 }

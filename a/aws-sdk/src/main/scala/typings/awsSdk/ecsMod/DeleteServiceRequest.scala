@@ -22,10 +22,10 @@ trait DeleteServiceRequest extends js.Object {
 
 object DeleteServiceRequest {
   @scala.inline
-  def apply(service: String, cluster: String = null, force: js.UndefOr[scala.Boolean] = js.undefined): DeleteServiceRequest = {
+  def apply(service: String, cluster: String = null, force: js.UndefOr[BoxedBoolean] = js.undefined): DeleteServiceRequest = {
     val __obj = js.Dynamic.literal(service = service.asInstanceOf[js.Any])
     if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteServiceRequest]
   }
 }

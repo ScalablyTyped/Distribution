@@ -1,6 +1,5 @@
 package typings.tensorflowTfjsCore.browserFilesMod
 
-import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.downloadsColonSlashSlash
 import typings.tensorflowTfjsCore.typesMod.IOHandler
 import typings.tensorflowTfjsCore.typesMod.ModelArtifacts
 import typings.tensorflowTfjsCore.typesMod.SaveResult
@@ -24,6 +23,6 @@ class BrowserDownloads_ () extends IOHandler {
 @JSImport("@tensorflow/tfjs-core/dist/io/browser_files", "BrowserDownloads")
 @js.native
 object BrowserDownloads_ extends js.Object {
-  val URL_SCHEME: downloadsColonSlashSlash = js.native
+  val URL_SCHEME: /* "downloads://" */ String = js.native
 }
 

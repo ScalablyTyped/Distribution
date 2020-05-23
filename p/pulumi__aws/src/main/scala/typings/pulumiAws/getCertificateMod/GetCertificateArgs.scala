@@ -41,7 +41,7 @@ object GetCertificateArgs {
   ): GetCertificateArgs = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any])
     if (keyTypes != null) __obj.updateDynamic("keyTypes")(keyTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(mostRecent)) __obj.updateDynamic("mostRecent")(mostRecent.asInstanceOf[js.Any])
+    if (!js.isUndefined(mostRecent)) __obj.updateDynamic("mostRecent")(mostRecent.get.asInstanceOf[js.Any])
     if (statuses != null) __obj.updateDynamic("statuses")(statuses.asInstanceOf[js.Any])
     if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCertificateArgs]

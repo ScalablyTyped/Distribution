@@ -24,17 +24,17 @@ object UnmarkOptions {
     element: String = null,
     exclude: js.Array[String] = null,
     iframes: js.UndefOr[Boolean] = js.undefined,
-    iframesTimeout: Int | Double = null,
+    iframesTimeout: js.UndefOr[Double] = js.undefined,
     log: js.Object = null
   ): UnmarkOptions = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (done != null) __obj.updateDynamic("done")(js.Any.fromFunction1(done))
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (!js.isUndefined(iframes)) __obj.updateDynamic("iframes")(iframes.asInstanceOf[js.Any])
-    if (iframesTimeout != null) __obj.updateDynamic("iframesTimeout")(iframesTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(iframes)) __obj.updateDynamic("iframes")(iframes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(iframesTimeout)) __obj.updateDynamic("iframesTimeout")(iframesTimeout.get.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarkOptions]
   }

@@ -10,9 +10,9 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(sessionTimeout: Int | Double = null): Options = {
+  def apply(sessionTimeout: js.UndefOr[s] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (sessionTimeout != null) __obj.updateDynamic("sessionTimeout")(sessionTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(sessionTimeout)) __obj.updateDynamic("sessionTimeout")(sessionTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

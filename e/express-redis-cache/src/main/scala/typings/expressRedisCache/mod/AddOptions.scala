@@ -11,9 +11,9 @@ trait AddOptions extends js.Object {
 
 object AddOptions {
   @scala.inline
-  def apply(expire: Int | Double = null, `type`: String = null): AddOptions = {
+  def apply(expire: js.UndefOr[Double] = js.undefined, `type`: String = null): AddOptions = {
     val __obj = js.Dynamic.literal()
-    if (expire != null) __obj.updateDynamic("expire")(expire.asInstanceOf[js.Any])
+    if (!js.isUndefined(expire)) __obj.updateDynamic("expire")(expire.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddOptions]
   }

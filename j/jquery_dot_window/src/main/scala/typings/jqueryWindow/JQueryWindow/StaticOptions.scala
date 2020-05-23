@@ -41,22 +41,22 @@ trait StaticOptions extends js.Object {
 object StaticOptions {
   @scala.inline
   def apply(
-    animationSpeed: Int | Double = null,
+    animationSpeed: js.UndefOr[Double] = js.undefined,
     dock: String = null,
     dockArea: JQuery | HTMLElement = null,
     handleScrollbar: js.UndefOr[Boolean] = js.undefined,
-    minWinLong: Int | Double = null,
-    minWinNarrow: Int | Double = null,
+    minWinLong: js.UndefOr[Double] = js.undefined,
+    minWinNarrow: js.UndefOr[Double] = js.undefined,
     showLog: js.UndefOr[Boolean] = js.undefined
   ): StaticOptions = {
     val __obj = js.Dynamic.literal()
-    if (animationSpeed != null) __obj.updateDynamic("animationSpeed")(animationSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationSpeed)) __obj.updateDynamic("animationSpeed")(animationSpeed.get.asInstanceOf[js.Any])
     if (dock != null) __obj.updateDynamic("dock")(dock.asInstanceOf[js.Any])
     if (dockArea != null) __obj.updateDynamic("dockArea")(dockArea.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleScrollbar)) __obj.updateDynamic("handleScrollbar")(handleScrollbar.asInstanceOf[js.Any])
-    if (minWinLong != null) __obj.updateDynamic("minWinLong")(minWinLong.asInstanceOf[js.Any])
-    if (minWinNarrow != null) __obj.updateDynamic("minWinNarrow")(minWinNarrow.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLog)) __obj.updateDynamic("showLog")(showLog.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleScrollbar)) __obj.updateDynamic("handleScrollbar")(handleScrollbar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWinLong)) __obj.updateDynamic("minWinLong")(minWinLong.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWinNarrow)) __obj.updateDynamic("minWinNarrow")(minWinNarrow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLog)) __obj.updateDynamic("showLog")(showLog.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaticOptions]
   }
 }

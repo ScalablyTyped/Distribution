@@ -38,27 +38,27 @@ object Config {
   def apply(
     password: String,
     user: String,
-    authTimeout: Int | Double = null,
+    authTimeout: js.UndefOr[Double] = js.undefined,
     autotls: String = null,
-    connTimeout: Int | Double = null,
+    connTimeout: js.UndefOr[Double] = js.undefined,
     debug: js.Function = null,
     host: String = null,
     keepalive: js.Any = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     tls: js.UndefOr[Boolean] = js.undefined,
     tlsOptions: js.Object = null,
     xoauth: String = null,
     xoauth2: String = null
   ): Config = {
     val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-    if (authTimeout != null) __obj.updateDynamic("authTimeout")(authTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(authTimeout)) __obj.updateDynamic("authTimeout")(authTimeout.get.asInstanceOf[js.Any])
     if (autotls != null) __obj.updateDynamic("autotls")(autotls.asInstanceOf[js.Any])
-    if (connTimeout != null) __obj.updateDynamic("connTimeout")(connTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(connTimeout)) __obj.updateDynamic("connTimeout")(connTimeout.get.asInstanceOf[js.Any])
     if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (keepalive != null) __obj.updateDynamic("keepalive")(keepalive.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(tls)) __obj.updateDynamic("tls")(tls.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tls)) __obj.updateDynamic("tls")(tls.get.asInstanceOf[js.Any])
     if (tlsOptions != null) __obj.updateDynamic("tlsOptions")(tlsOptions.asInstanceOf[js.Any])
     if (xoauth != null) __obj.updateDynamic("xoauth")(xoauth.asInstanceOf[js.Any])
     if (xoauth2 != null) __obj.updateDynamic("xoauth2")(xoauth2.asInstanceOf[js.Any])

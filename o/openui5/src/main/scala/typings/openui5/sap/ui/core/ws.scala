@@ -1,6 +1,6 @@
 package typings.openui5.sap.ui.core
 
-import typings.openui5.TypeofReadyState
+import typings.openui5.anon.TypeofReadyState
 import typings.openui5.sap.ui.base.EventProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,15 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ws extends js.Object {
   @js.native
-  class SapPcpWebSocket protected () extends WebSocket {
-    /**
-      * Creates a new WebSocket connection and uses the pcp-protocol for communication.
-      * @param sUrl relative or absolute URL for WebSocket connection.
-      * @param aProtocols array of protocols as strings, a single protocol as a string.Protocol(s) should be
-      * selected from {@link sap.ui.core.ws.SapPcpWebSocket.SUPPORTED_PROTOCOLS}.
-      */
-    def this(sUrl: String) = this()
-    def this(sUrl: String, aProtocols: js.Array[_]) = this()
+  trait SapPcpWebSocket extends WebSocket {
     def send(message: String, oPcpFields: js.Any): SapPcpWebSocket = js.native
     def send(message: js.Any): SapPcpWebSocket = js.native
     def send(message: js.Any, oPcpFields: js.Any): SapPcpWebSocket = js.native
@@ -27,14 +19,7 @@ object ws extends js.Object {
   }
   
   @js.native
-  class WebSocket protected () extends EventProvider {
-    /**
-      * Creates a new WebSocket connection.
-      * @param sUrl relative or absolute URL for WebSocket connection.
-      * @param aProtocols array of protocols as strings, a single protocol as a string
-      */
-    def this(sUrl: String) = this()
-    def this(sUrl: String, aProtocols: js.Array[_]) = this()
+  trait WebSocket extends EventProvider {
     /**
       * Attach event-handler <code>fnFunction</code> to the 'close' event of this
       * <code>sap.ui.core.ws.WebSocket</code>.<br>
@@ -165,38 +150,6 @@ object ws extends js.Object {
       * @returns <code>this</code> to allow method chaining
       */
     def send(sMessage: String): WebSocket = js.native
-  }
-  
-  @js.native
-  object ReadyState extends js.Object {
-    /**
-      * The connection has been closed or could not be opened.
-      */
-    var CLOSED: js.Any = js.native
-    /**
-      * The connection is going through the closing handshake.
-      */
-    var CLOSING: js.Any = js.native
-    /**
-      * The connection has not yet been established.
-      */
-    var CONNECTING: js.Any = js.native
-    /**
-      * The WebSocket connection is established and communication is possible.
-      */
-    var OPEN: js.Any = js.native
-  }
-  
-  @js.native
-  object SapPcpWebSocket extends js.Object {
-    @js.native
-    object SUPPORTED_PROTOCOLS extends js.Object {
-      /**
-        * Protocol v10.pcp.sap.com
-        */
-      var v10: js.Any = js.native
-    }
-    
   }
   
 }

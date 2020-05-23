@@ -2,7 +2,7 @@ package typings.rcSelect.mod.RcSelect
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ReactNode
-import typings.std.Event_
+import typings.std.Event
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,7 +36,7 @@ trait SelectProps extends js.Object {
   var onChange: js.UndefOr[js.Function2[/* value */ String, /* label */ String, Unit]] = js.undefined
   var onDeselect: js.UndefOr[js.Function2[/* value */ String, /* option */ Option, Unit]] = js.undefined
   var onFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onInputKeyDown: js.UndefOr[js.Function1[/* e */ Event_, Unit]] = js.undefined
+  var onInputKeyDown: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
   var onPopupScroll: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onSearch: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onSelect: js.UndefOr[js.Function2[/* value */ String, /* ontion */ Option, Unit]] = js.undefined
@@ -74,16 +74,16 @@ object SelectProps {
     getPopupContainer: /* trigger */ Node => Node = null,
     id: String = null,
     labelInValue: js.UndefOr[Boolean] = js.undefined,
-    maxTagCount: Int | Double = null,
+    maxTagCount: js.UndefOr[Double] = js.undefined,
     maxTagPlaceholder: ReactNode | js.Function = null,
-    maxTagTextLength: Int | Double = null,
+    maxTagTextLength: js.UndefOr[Double] = js.undefined,
     multiple: js.UndefOr[Boolean] = js.undefined,
     notFoundContent: String = null,
     onBlur: () => Unit = null,
     onChange: (/* value */ String, /* label */ String) => Unit = null,
     onDeselect: (/* value */ String, /* option */ Option) => Unit = null,
     onFocus: () => Unit = null,
-    onInputKeyDown: /* e */ Event_ => Unit = null,
+    onInputKeyDown: /* e */ Event => Unit = null,
     onPopupScroll: () => Unit = null,
     onSearch: () => Unit = null,
     onSelect: (/* value */ String, /* ontion */ Option) => Unit = null,
@@ -100,28 +100,28 @@ object SelectProps {
     value: String | js.Array[String] = null
   ): SelectProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear.get.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (choiceTransitionName != null) __obj.updateDynamic("choiceTransitionName")(choiceTransitionName.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(combobox)) __obj.updateDynamic("combobox")(combobox.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultActiveFirstOption)) __obj.updateDynamic("defaultActiveFirstOption")(defaultActiveFirstOption.asInstanceOf[js.Any])
+    if (!js.isUndefined(combobox)) __obj.updateDynamic("combobox")(combobox.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultActiveFirstOption)) __obj.updateDynamic("defaultActiveFirstOption")(defaultActiveFirstOption.get.asInstanceOf[js.Any])
     if (defaultLabel != null) __obj.updateDynamic("defaultLabel")(defaultLabel.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (dropdownClassName != null) __obj.updateDynamic("dropdownClassName")(dropdownClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropdownMatchSelectWidth)) __obj.updateDynamic("dropdownMatchSelectWidth")(dropdownMatchSelectWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropdownMatchSelectWidth)) __obj.updateDynamic("dropdownMatchSelectWidth")(dropdownMatchSelectWidth.get.asInstanceOf[js.Any])
     if (dropdownMenuStyle != null) __obj.updateDynamic("dropdownMenuStyle")(dropdownMenuStyle.asInstanceOf[js.Any])
     if (dropdownStyle != null) __obj.updateDynamic("dropdownStyle")(dropdownStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(filterOption)) __obj.updateDynamic("filterOption")(filterOption.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterOption)) __obj.updateDynamic("filterOption")(filterOption.get.asInstanceOf[js.Any])
     if (getInputElement != null) __obj.updateDynamic("getInputElement")(js.Any.fromFunction0(getInputElement))
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(labelInValue)) __obj.updateDynamic("labelInValue")(labelInValue.asInstanceOf[js.Any])
-    if (maxTagCount != null) __obj.updateDynamic("maxTagCount")(maxTagCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelInValue)) __obj.updateDynamic("labelInValue")(labelInValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTagCount)) __obj.updateDynamic("maxTagCount")(maxTagCount.get.asInstanceOf[js.Any])
     if (maxTagPlaceholder != null) __obj.updateDynamic("maxTagPlaceholder")(maxTagPlaceholder.asInstanceOf[js.Any])
-    if (maxTagTextLength != null) __obj.updateDynamic("maxTagTextLength")(maxTagTextLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTagTextLength)) __obj.updateDynamic("maxTagTextLength")(maxTagTextLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
     if (notFoundContent != null) __obj.updateDynamic("notFoundContent")(notFoundContent.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction0(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
@@ -136,9 +136,9 @@ object SelectProps {
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (showAction != null) __obj.updateDynamic("showAction")(showAction.asInstanceOf[js.Any])
-    if (!js.isUndefined(showArrow)) __obj.updateDynamic("showArrow")(showArrow.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSearch)) __obj.updateDynamic("showSearch")(showSearch.asInstanceOf[js.Any])
-    if (!js.isUndefined(tags)) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (!js.isUndefined(showArrow)) __obj.updateDynamic("showArrow")(showArrow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSearch)) __obj.updateDynamic("showSearch")(showSearch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tags)) __obj.updateDynamic("tags")(tags.get.asInstanceOf[js.Any])
     if (tokenSeparators != null) __obj.updateDynamic("tokenSeparators")(tokenSeparators.asInstanceOf[js.Any])
     if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

@@ -6,15 +6,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Storage.StorageStreamTransaction")
-@js.native
-class StorageStreamTransaction () extends IStorageStreamTransaction {
-  /* CompleteClass */
-  override var stream: IRandomAccessStream = js.native
-  /* CompleteClass */
-  override def close(): Unit = js.native
-  /* CompleteClass */
-  override def commitAsync(): IAsyncAction = js.native
-  def dispose(): Unit = js.native
+trait StorageStreamTransaction extends IStorageStreamTransaction {
+  def dispose(): Unit
+}
+
+object StorageStreamTransaction {
+  @scala.inline
+  def apply(
+    close: () => Unit,
+    commitAsync: () => IAsyncAction,
+    dispose: () => Unit,
+    stream: IRandomAccessStream
+  ): StorageStreamTransaction = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), commitAsync = js.Any.fromFunction0(commitAsync), dispose = js.Any.fromFunction0(dispose), stream = stream.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StorageStreamTransaction]
+  }
 }
 

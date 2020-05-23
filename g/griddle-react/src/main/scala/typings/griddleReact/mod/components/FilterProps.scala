@@ -18,7 +18,7 @@ trait FilterProps
 object FilterProps {
   @scala.inline
   def apply(
-    StringDictionary: /* x */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     className: String = null,
     placeholder: String = null,
     setFilter: /* filter */ GriddleFilter => Unit = null,

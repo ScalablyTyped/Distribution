@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Store
-  extends EventEmitter[String | js.Symbol] {
+  extends EventEmitter[String | js.Symbol, js.Any] {
   def bindActions(args: (String | js.Function)*): Unit = js.native
   def bindActions(args: js.Array[String | js.Function]): Unit = js.native
   def waitFor(stores: js.Array[String], fn: js.Function): Unit = js.native

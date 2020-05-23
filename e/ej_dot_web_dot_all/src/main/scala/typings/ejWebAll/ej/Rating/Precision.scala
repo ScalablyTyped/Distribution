@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.Rating
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object Precision extends js.Object {
   ///string
   @js.native
   sealed trait Half extends Precision
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Precision with Double] = js.native
-  /* 0 */ @js.native
-  object Exact extends TopLevel[Exact with Double]
-  
-  /* 1 */ @js.native
-  object Full extends TopLevel[Full with Double]
-  
-  /* 2 */ @js.native
-  object Half extends TopLevel[Half with Double]
   
 }
 

@@ -32,7 +32,7 @@ object WithdrawOpts {
     payment_method: String = null
   ): WithdrawOpts = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any])
-    if (!js.isUndefined(commit)) __obj.updateDynamic("commit")(commit.asInstanceOf[js.Any])
+    if (!js.isUndefined(commit)) __obj.updateDynamic("commit")(commit.get.asInstanceOf[js.Any])
     if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithdrawOpts]
   }

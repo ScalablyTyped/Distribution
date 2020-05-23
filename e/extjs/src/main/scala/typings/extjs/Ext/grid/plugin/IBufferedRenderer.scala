@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 
 trait IBufferedRenderer extends IAbstractPlugin {
   /** [Method] Initialize this as a plugin
-  		* @param grid Object
-  		*/
+    * @param grid Object
+    */
   @JSName("init")
   var init_IBufferedRenderer: js.UndefOr[js.Function1[/* grid */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Number) */
@@ -23,11 +23,11 @@ trait IBufferedRenderer extends IAbstractPlugin {
   /** [Property] (Number) */
   var position: js.UndefOr[Double] = js.undefined
   /** [Method] Scrolls to and optionlly selects the specified row index in the total dataset
-  		* @param recordIdx Number The zero-based position in the dataset to scroll to.
-  		* @param doSelect Boolean Pass as true to select the specified row.
-  		* @param callback Function A function to call when the row has been scrolled to.
-  		* @param scope Object The scope (this reference) in which to execute the callback. Defaults to this BufferedRenderer.
-  		*/
+    * @param recordIdx Number The zero-based position in the dataset to scroll to.
+    * @param doSelect Boolean Pass as true to select the specified row.
+    * @param callback Function A function to call when the row has been scrolled to.
+    * @param scope Object The scope (this reference) in which to execute the callback. Defaults to this BufferedRenderer.
+    */
   var scrollTo: js.UndefOr[
     js.Function4[
       /* recordIdx */ js.UndefOr[Double], 
@@ -67,21 +67,21 @@ object IBufferedRenderer {
     init: /* grid */ js.UndefOr[js.Any] => Unit = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IBufferedRenderer = null,
     isPlugin: js.UndefOr[Boolean] = js.undefined,
-    leadingBufferZone: Int | Double = null,
+    leadingBufferZone: js.UndefOr[Double] = js.undefined,
     mixins: js.Any = null,
-    numFromEdge: Int | Double = null,
-    percentageFromEdge: Int | Double = null,
+    numFromEdge: js.UndefOr[Double] = js.undefined,
+    percentageFromEdge: js.UndefOr[Double] = js.undefined,
     pluginId: String = null,
-    position: Int | Double = null,
+    position: js.UndefOr[Double] = js.undefined,
     requires: Array = null,
     scrollTo: (/* recordIdx */ js.UndefOr[Double], /* doSelect */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    scrollToLoadBuffer: Int | Double = null,
+    scrollToLoadBuffer: js.UndefOr[Double] = js.undefined,
     self: IClass = null,
     setCmp: /* cmp */ js.UndefOr[IComponent] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     synchronousRender: js.UndefOr[Boolean] = js.undefined,
-    trailingBufferZone: Int | Double = null,
+    trailingBufferZone: js.UndefOr[Double] = js.undefined,
     uses: Array = null,
     variableRowHeight: js.UndefOr[Boolean] = js.undefined
   ): IBufferedRenderer = {
@@ -102,24 +102,24 @@ object IBufferedRenderer {
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(isPlugin)) __obj.updateDynamic("isPlugin")(isPlugin.asInstanceOf[js.Any])
-    if (leadingBufferZone != null) __obj.updateDynamic("leadingBufferZone")(leadingBufferZone.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPlugin)) __obj.updateDynamic("isPlugin")(isPlugin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(leadingBufferZone)) __obj.updateDynamic("leadingBufferZone")(leadingBufferZone.get.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (numFromEdge != null) __obj.updateDynamic("numFromEdge")(numFromEdge.asInstanceOf[js.Any])
-    if (percentageFromEdge != null) __obj.updateDynamic("percentageFromEdge")(percentageFromEdge.asInstanceOf[js.Any])
+    if (!js.isUndefined(numFromEdge)) __obj.updateDynamic("numFromEdge")(numFromEdge.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(percentageFromEdge)) __obj.updateDynamic("percentageFromEdge")(percentageFromEdge.get.asInstanceOf[js.Any])
     if (pluginId != null) __obj.updateDynamic("pluginId")(pluginId.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.get.asInstanceOf[js.Any])
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (scrollTo != null) __obj.updateDynamic("scrollTo")(js.Any.fromFunction4(scrollTo))
-    if (scrollToLoadBuffer != null) __obj.updateDynamic("scrollToLoadBuffer")(scrollToLoadBuffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollToLoadBuffer)) __obj.updateDynamic("scrollToLoadBuffer")(scrollToLoadBuffer.get.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setCmp != null) __obj.updateDynamic("setCmp")(js.Any.fromFunction1(setCmp))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (!js.isUndefined(synchronousRender)) __obj.updateDynamic("synchronousRender")(synchronousRender.asInstanceOf[js.Any])
-    if (trailingBufferZone != null) __obj.updateDynamic("trailingBufferZone")(trailingBufferZone.asInstanceOf[js.Any])
+    if (!js.isUndefined(synchronousRender)) __obj.updateDynamic("synchronousRender")(synchronousRender.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trailingBufferZone)) __obj.updateDynamic("trailingBufferZone")(trailingBufferZone.get.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
-    if (!js.isUndefined(variableRowHeight)) __obj.updateDynamic("variableRowHeight")(variableRowHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(variableRowHeight)) __obj.updateDynamic("variableRowHeight")(variableRowHeight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBufferedRenderer]
   }
 }

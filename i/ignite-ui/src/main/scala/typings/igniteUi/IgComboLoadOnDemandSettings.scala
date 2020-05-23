@@ -7,35 +7,32 @@ import scala.scalajs.js.annotation._
 
 trait IgComboLoadOnDemandSettings
   extends /**
-	 * Option for IgComboLoadOnDemandSettings
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   /**
-  	 * Gets/Sets option to enable load on demand.
-  	 *
-  	 */
+    * Gets/Sets option to enable load on demand.
+    *
+    */
   var enabled: js.UndefOr[Boolean] = js.undefined
   /**
-  	 * Gets/Sets number of records loaded on each request.
-  	 *
-  	 */
+    * Gets/Sets number of records loaded on each request.
+    *
+    */
   var pageSize: js.UndefOr[Double] = js.undefined
 }
 
 object IgComboLoadOnDemandSettings {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for IgComboLoadOnDemandSettings
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
-    pageSize: Int | Double = null
+    pageSize: js.UndefOr[Double] = js.undefined
   ): IgComboLoadOnDemandSettings = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgComboLoadOnDemandSettings]
   }
 }

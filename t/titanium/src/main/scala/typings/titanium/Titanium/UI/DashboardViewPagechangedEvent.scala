@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the current page of the dashboard view changes.
-		 */
+  * Fired when the current page of the dashboard view changes.
+  */
 trait DashboardViewPagechangedEvent extends DashboardViewBaseEvent {
   /**
-  			 * The current page number.
-  			 */
+    * The current page number.
+    */
   var pageNo: Double
 }
 

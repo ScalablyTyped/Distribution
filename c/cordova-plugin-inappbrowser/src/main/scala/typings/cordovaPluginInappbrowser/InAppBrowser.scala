@@ -1,6 +1,8 @@
 package typings.cordovaPluginInappbrowser
 
-import typings.std.Event_
+import typings.cordovaPluginInappbrowser.anon.Code
+import typings.cordovaPluginInappbrowser.anon.File
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,8 +35,8 @@ trait InAppBrowser extends Window {
     *                  For multi-line scripts, this is the return value of the last statement,
     *                  or the last expression evaluated.
     */
-  def executeScript(script: AnonCode, callback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def executeScript(script: AnonFile, callback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def executeScript(script: Code, callback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def executeScript(script: File, callback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   /** Hides the InAppBrowser window. Calling this has no effect if the InAppBrowser was already hidden. */
   def hide(): Unit = js.native
   /**
@@ -42,11 +44,11 @@ trait InAppBrowser extends Window {
     * @param css       Details of the script to run, specifying either a file or code key.
     * @param callback  The function that executes after the CSS is injected.
     */
-  def insertCSS(css: AnonCode, callback: js.Function0[Unit]): Unit = js.native
-  def insertCSS(css: AnonFile, callback: js.Function0[Unit]): Unit = js.native
+  def insertCSS(css: Code, callback: js.Function0[Unit]): Unit = js.native
+  def insertCSS(css: File, callback: js.Function0[Unit]): Unit = js.native
   def onexit(`type`: InAppBrowserEvent): Unit = js.native
   def onloaderror(`type`: InAppBrowserEvent): Unit = js.native
-  def onloadstart(`type`: Event_): Unit = js.native
+  def onloadstart(`type`: Event): Unit = js.native
   def onloadstop(`type`: InAppBrowserEvent): Unit = js.native
   // removeEventListener overloads
   /**

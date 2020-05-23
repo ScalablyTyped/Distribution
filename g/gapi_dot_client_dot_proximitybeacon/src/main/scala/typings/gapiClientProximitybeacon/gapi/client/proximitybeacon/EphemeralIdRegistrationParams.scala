@@ -25,13 +25,13 @@ trait EphemeralIdRegistrationParams extends js.Object {
 object EphemeralIdRegistrationParams {
   @scala.inline
   def apply(
-    maxRotationPeriodExponent: Int | Double = null,
-    minRotationPeriodExponent: Int | Double = null,
+    maxRotationPeriodExponent: js.UndefOr[Double] = js.undefined,
+    minRotationPeriodExponent: js.UndefOr[Double] = js.undefined,
     serviceEcdhPublicKey: String = null
   ): EphemeralIdRegistrationParams = {
     val __obj = js.Dynamic.literal()
-    if (maxRotationPeriodExponent != null) __obj.updateDynamic("maxRotationPeriodExponent")(maxRotationPeriodExponent.asInstanceOf[js.Any])
-    if (minRotationPeriodExponent != null) __obj.updateDynamic("minRotationPeriodExponent")(minRotationPeriodExponent.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRotationPeriodExponent)) __obj.updateDynamic("maxRotationPeriodExponent")(maxRotationPeriodExponent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minRotationPeriodExponent)) __obj.updateDynamic("minRotationPeriodExponent")(minRotationPeriodExponent.get.asInstanceOf[js.Any])
     if (serviceEcdhPublicKey != null) __obj.updateDynamic("serviceEcdhPublicKey")(serviceEcdhPublicKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[EphemeralIdRegistrationParams]
   }

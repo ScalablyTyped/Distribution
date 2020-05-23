@@ -20,19 +20,19 @@ object CSSTransitionGroupProps {
   def apply(
     transitionName: String | CSSTransitionGroupTransitionName,
     transitionAppear: js.UndefOr[Boolean] = js.undefined,
-    transitionAppearTimeout: Int | Double = null,
+    transitionAppearTimeout: js.UndefOr[Double] = js.undefined,
     transitionEnter: js.UndefOr[Boolean] = js.undefined,
-    transitionEnterTimeout: Int | Double = null,
+    transitionEnterTimeout: js.UndefOr[Double] = js.undefined,
     transitionLeave: js.UndefOr[Boolean] = js.undefined,
-    transitionLeaveTimeout: Int | Double = null
+    transitionLeaveTimeout: js.UndefOr[Double] = js.undefined
   ): CSSTransitionGroupProps = {
     val __obj = js.Dynamic.literal(transitionName = transitionName.asInstanceOf[js.Any])
-    if (!js.isUndefined(transitionAppear)) __obj.updateDynamic("transitionAppear")(transitionAppear.asInstanceOf[js.Any])
-    if (transitionAppearTimeout != null) __obj.updateDynamic("transitionAppearTimeout")(transitionAppearTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(transitionEnter)) __obj.updateDynamic("transitionEnter")(transitionEnter.asInstanceOf[js.Any])
-    if (transitionEnterTimeout != null) __obj.updateDynamic("transitionEnterTimeout")(transitionEnterTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(transitionLeave)) __obj.updateDynamic("transitionLeave")(transitionLeave.asInstanceOf[js.Any])
-    if (transitionLeaveTimeout != null) __obj.updateDynamic("transitionLeaveTimeout")(transitionLeaveTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitionAppear)) __obj.updateDynamic("transitionAppear")(transitionAppear.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitionAppearTimeout)) __obj.updateDynamic("transitionAppearTimeout")(transitionAppearTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitionEnter)) __obj.updateDynamic("transitionEnter")(transitionEnter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitionEnterTimeout)) __obj.updateDynamic("transitionEnterTimeout")(transitionEnterTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitionLeave)) __obj.updateDynamic("transitionLeave")(transitionLeave.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitionLeaveTimeout)) __obj.updateDynamic("transitionLeaveTimeout")(transitionLeaveTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSSTransitionGroupProps]
   }
 }

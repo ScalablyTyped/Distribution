@@ -11,10 +11,8 @@ trait Dimensions extends js.Object {
 
 object Dimensions {
   @scala.inline
-  def apply(height: Int | Double = null, width: Int | Double = null): Dimensions = {
-    val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+  def apply(height: Double = null.asInstanceOf[Double], width: Double = null.asInstanceOf[Double]): Dimensions = {
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dimensions]
   }
 }

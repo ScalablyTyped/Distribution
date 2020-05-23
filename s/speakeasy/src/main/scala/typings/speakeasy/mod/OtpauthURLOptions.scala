@@ -45,20 +45,20 @@ object OtpauthURLOptions {
     label: String,
     secret: String,
     algorithm: Algorithm = null,
-    counter: Int | Double = null,
-    digits: Int | Double = null,
+    counter: js.UndefOr[Double] = js.undefined,
+    digits: js.UndefOr[Double] = js.undefined,
     encoding: Encoding = null,
     issuer: String = null,
-    period: Int | Double = null,
+    period: js.UndefOr[Double] = js.undefined,
     `type`: htop | typings.speakeasy.speakeasyStrings.totp = null
   ): OtpauthURLOptions = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
-    if (counter != null) __obj.updateDynamic("counter")(counter.asInstanceOf[js.Any])
-    if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
+    if (!js.isUndefined(counter)) __obj.updateDynamic("counter")(counter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(digits)) __obj.updateDynamic("digits")(digits.get.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
+    if (!js.isUndefined(period)) __obj.updateDynamic("period")(period.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OtpauthURLOptions]
   }

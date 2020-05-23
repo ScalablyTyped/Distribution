@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.mesh
 import typings.arcgisJsApi.arcgisJsApiStrings.multipoint
 import typings.arcgisJsApi.arcgisJsApiStrings.point
@@ -56,8 +55,4 @@ trait Geometry_
     */
   val `type`: point | multipoint | polyline | polygon | typings.arcgisJsApi.arcgisJsApiStrings.extent | mesh = js.native
 }
-
-@JSGlobal("__esri.Geometry")
-@js.native
-object Geometry_ extends TopLevel[GeometryConstructor]
 

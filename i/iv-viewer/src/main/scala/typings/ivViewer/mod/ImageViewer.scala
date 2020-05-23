@@ -1,7 +1,7 @@
 package typings.ivViewer.mod
 
-import typings.ivViewer.AnonContainer
-import typings.ivViewer.AnonX
+import typings.ivViewer.anon.Container
+import typings.ivViewer.anon.X
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,9 +22,9 @@ class ImageViewer () extends js.Object {
   var _state: State = js.native
   /* protected */ def _calculateDimensions(): Unit = js.native
   /* protected */ def _doubleTapToZoom(): Unit = js.native
-  /* protected */ def _findContainerAndImageSrc(): AnonContainer = js.native
-  /* protected */ def _findContainerAndImageSrc(element: String): AnonContainer = js.native
-  /* protected */ def _findContainerAndImageSrc(element: Element): AnonContainer = js.native
+  /* protected */ def _findContainerAndImageSrc(): Container = js.native
+  /* protected */ def _findContainerAndImageSrc(element: String): Container = js.native
+  /* protected */ def _findContainerAndImageSrc(element: Element): Container = js.native
   /* protected */ def _getImageCurrentDim(): Unit = js.native
   /* protected */ def _init(): Unit = js.native
   /* protected */ def _initDom(): Unit = js.native
@@ -47,7 +47,7 @@ class ImageViewer () extends js.Object {
   def showSnapView(): Unit = js.native
   def showSnapView(noTimeout: Boolean): Unit = js.native
   def zoom(perc: Double): Unit = js.native
-  def zoom(perc: Double, point: AnonX): Unit = js.native
+  def zoom(perc: Double, point: X): Unit = js.native
 }
 
 /* static members */

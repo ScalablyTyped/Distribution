@@ -1,38 +1,38 @@
 package typings.rcFieldForm.interfaceMod
 
-import typings.rcFieldForm.AnonArray
-import typings.rcFieldForm.AnonFormat
-import typings.rcFieldForm.AnonLen
-import typings.rcFieldForm.AnonMismatch
+import typings.rcFieldForm.anon.Array
+import typings.rcFieldForm.anon.Format
+import typings.rcFieldForm.anon.Len
+import typings.rcFieldForm.anon.Mismatch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ValidateMessages extends js.Object {
-  var array: js.UndefOr[AnonLen] = js.undefined
-  var date: js.UndefOr[AnonFormat] = js.undefined
+  var array: js.UndefOr[Len] = js.undefined
+  var date: js.UndefOr[Format] = js.undefined
   var default: js.UndefOr[ValidateMessage] = js.undefined
   var enum: js.UndefOr[ValidateMessage] = js.undefined
-  var number: js.UndefOr[AnonLen] = js.undefined
-  var pattern: js.UndefOr[AnonMismatch] = js.undefined
+  var number: js.UndefOr[Len] = js.undefined
+  var pattern: js.UndefOr[Mismatch] = js.undefined
   var required: js.UndefOr[ValidateMessage] = js.undefined
-  var string: js.UndefOr[AnonLen] = js.undefined
-  var types: js.UndefOr[AnonArray] = js.undefined
+  var string: js.UndefOr[Len] = js.undefined
+  var types: js.UndefOr[Array] = js.undefined
   var whitespace: js.UndefOr[ValidateMessage] = js.undefined
 }
 
 object ValidateMessages {
   @scala.inline
   def apply(
-    array: AnonLen = null,
-    date: AnonFormat = null,
+    array: Len = null,
+    date: Format = null,
     default: ValidateMessage = null,
     enum: ValidateMessage = null,
-    number: AnonLen = null,
-    pattern: AnonMismatch = null,
+    number: Len = null,
+    pattern: Mismatch = null,
     required: ValidateMessage = null,
-    string: AnonLen = null,
-    types: AnonArray = null,
+    string: Len = null,
+    types: Array = null,
     whitespace: ValidateMessage = null
   ): ValidateMessages = {
     val __obj = js.Dynamic.literal()

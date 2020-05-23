@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Graphics.Imaging
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object BitmapInterpolationMode extends js.Object {
   /** A nearest neighbor interpolation algorithm. Also known as nearest pixel or point interpolation. The output pixel is assigned the value of the pixel that the point falls within. No other pixels are considered. */
   @js.native
   sealed trait nearestNeighbor extends BitmapInterpolationMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BitmapInterpolationMode with Double] = js.native
-  /* 2 */ @js.native
-  object cubic extends TopLevel[cubic with Double]
-  
-  /* 3 */ @js.native
-  object fant extends TopLevel[fant with Double]
-  
-  /* 1 */ @js.native
-  object linear extends TopLevel[linear with Double]
-  
-  /* 0 */ @js.native
-  object nearestNeighbor extends TopLevel[nearestNeighbor with Double]
   
 }
 

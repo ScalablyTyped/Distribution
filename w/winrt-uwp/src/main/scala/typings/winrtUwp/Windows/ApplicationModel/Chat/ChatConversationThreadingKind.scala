@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Chat
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object ChatConversationThreadingKind extends js.Object {
   /** By participants */
   @js.native
   sealed trait participants extends ChatConversationThreadingKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ChatConversationThreadingKind with Double] = js.native
-  /* 1 */ @js.native
-  object contactId extends TopLevel[contactId with Double]
-  
-  /* 2 */ @js.native
-  object conversationId extends TopLevel[conversationId with Double]
-  
-  /* 3 */ @js.native
-  object custom extends TopLevel[custom with Double]
-  
-  /* 0 */ @js.native
-  object participants extends TopLevel[participants with Double]
   
 }
 

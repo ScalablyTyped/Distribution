@@ -77,7 +77,7 @@ object ButtomSettingsCommon {
     if (available != null) __obj.updateDynamic("available")(js.Any.fromFunction2(available))
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction3(destroy))
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction3(init))
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

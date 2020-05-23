@@ -47,6 +47,7 @@ package object mediapackagevodMod {
     - java.lang.String
   */
   type StreamOrder = typings.awsSdk.mediapackagevodMod._StreamOrder | java.lang.String
+  type Tags = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.mediapackagevodMod.string]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`2018-11-07`
     - typings.awsSdk.awsSdkStrings.latest_
@@ -64,5 +65,6 @@ package object mediapackagevodMod {
   type listOfPackagingGroup = js.Array[typings.awsSdk.mediapackagevodMod.PackagingGroup]
   type listOfPeriodTriggersElement = js.Array[typings.awsSdk.mediapackagevodMod.PeriodTriggersElement]
   type listOfString = js.Array[typings.awsSdk.mediapackagevodMod.string]
+  type mapOfString = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.mediapackagevodMod.string]
   type string = java.lang.String
 }

@@ -2,23 +2,14 @@ package typings.typescriptServices.TypeScript.Services.Formatting
 
 import typings.typescriptServices.FormattingOptions
 import typings.typescriptServices.TypeScript.ISyntaxToken
-import typings.typescriptServices.TypeScript.SourceUnitSyntax
 import typings.typescriptServices.TypeScript.SyntaxWalker
 import typings.typescriptServices.TypeScript.TextSpan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.Services.Formatting.IndentationTrackingWalker")
 @js.native
-class IndentationTrackingWalker protected () extends SyntaxWalker {
-  def this(
-    textSpan: TextSpan,
-    sourceUnit: SourceUnitSyntax,
-    snapshot: ITextSnapshot,
-    indentFirstToken: Boolean,
-    options: FormattingOptions
-  ) = this()
+trait IndentationTrackingWalker extends SyntaxWalker {
   var _indentationNodeContextPool: js.Any = js.native
   var _lastTriviaWasNewLine: js.Any = js.native
   var _parent: js.Any = js.native

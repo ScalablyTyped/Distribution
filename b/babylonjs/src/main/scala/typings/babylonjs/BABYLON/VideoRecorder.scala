@@ -5,16 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.VideoRecorder")
 @js.native
-class VideoRecorder protected () extends js.Object {
-  /**
-    * Create a new VideoCapture object which can help converting what you see in Babylon to a video file.
-    * @param engine Defines the BabylonJS Engine you wish to record.
-    * @param options Defines options that can be used to customize the capture.
-    */
-  def this(engine: Engine) = this()
-  def this(engine: Engine, options: Nullable[VideoRecorderOptions]) = this()
+trait VideoRecorder extends js.Object {
   var _canvas: js.Any = js.native
   var _fileName: js.Any = js.native
   var _handleDataAvailable: js.Any = js.native
@@ -48,18 +40,5 @@ class VideoRecorder protected () extends js.Object {
     * Stops the current recording before the default capture timeout passed in the startRecording function.
     */
   def stopRecording(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.VideoRecorder")
-@js.native
-object VideoRecorder extends js.Object {
-  val _defaultOptions: js.Any = js.native
-  /**
-    * Returns whether or not the VideoRecorder is available in your browser.
-    * @param engine Defines the Babylon Engine.
-    * @returns true if supported otherwise false.
-    */
-  def IsSupported(engine: Engine): Boolean = js.native
 }
 

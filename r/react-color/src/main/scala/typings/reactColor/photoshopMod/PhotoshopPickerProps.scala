@@ -26,7 +26,7 @@ object PhotoshopPickerProps {
     onCancel: /* color */ ColorResult => Unit = null,
     onChange: /* color */ ColorResult => Unit = null,
     onChangeComplete: /* color */ ColorResult => Unit = null,
-    ref: LegacyRef[PhotoshopPicker] = null
+    ref: js.UndefOr[Null | LegacyRef[PhotoshopPicker]] = js.undefined
   ): PhotoshopPickerProps = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
@@ -36,7 +36,7 @@ object PhotoshopPickerProps {
     if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction1(onCancel))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onChangeComplete != null) __obj.updateDynamic("onChangeComplete")(js.Any.fromFunction1(onChangeComplete))
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhotoshopPickerProps]
   }
 }

@@ -21,10 +21,10 @@ trait ResponsiveContainerProps extends js.Object {
 object ResponsiveContainerProps {
   @scala.inline
   def apply(
-    aspect: Int | Double = null,
+    aspect: js.UndefOr[Double] = js.undefined,
     children: ReactNode = null,
     className: String | Double = null,
-    debounce: Int | Double = null,
+    debounce: js.UndefOr[Double] = js.undefined,
     height: String | Double = null,
     id: String | Double = null,
     maxHeight: String | Double = null,
@@ -33,10 +33,10 @@ object ResponsiveContainerProps {
     width: String | Double = null
   ): ResponsiveContainerProps = {
     val __obj = js.Dynamic.literal()
-    if (aspect != null) __obj.updateDynamic("aspect")(aspect.asInstanceOf[js.Any])
+    if (!js.isUndefined(aspect)) __obj.updateDynamic("aspect")(aspect.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (debounce != null) __obj.updateDynamic("debounce")(debounce.asInstanceOf[js.Any])
+    if (!js.isUndefined(debounce)) __obj.updateDynamic("debounce")(debounce.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])

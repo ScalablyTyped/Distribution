@@ -15,18 +15,18 @@ trait ResponseObject extends js.Object {
 object ResponseObject {
   @scala.inline
   def apply(
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     response: String = null,
     responseHeaders: js.Object = null,
-    status: Int | Double = null,
-    total: Int | Double = null
+    status: js.UndefOr[Double] = js.undefined,
+    total: js.UndefOr[Double] = js.undefined
   ): ResponseObject = {
     val __obj = js.Dynamic.literal()
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseObject]
   }
 }

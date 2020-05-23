@@ -1,5 +1,6 @@
 package typings.rrule
 
+import typings.rrule.anon.PartialOptions
 import typings.rrule.i18nMod.Language
 import scala.scalajs.js
 import scala.scalajs.js.`|`

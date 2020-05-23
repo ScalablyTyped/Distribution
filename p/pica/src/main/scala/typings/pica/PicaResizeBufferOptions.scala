@@ -40,18 +40,18 @@ object PicaResizeBufferOptions {
     width: Double,
     alpha: js.UndefOr[Boolean] = js.undefined,
     dest: String = null,
-    quality: Int | Double = null,
-    unsharpAmount: Int | Double = null,
-    unsharpRadius: Int | Double = null,
-    unsharpThreshold: Int | Double = null
+    quality: js.UndefOr[Double] = js.undefined,
+    unsharpAmount: js.UndefOr[Double] = js.undefined,
+    unsharpRadius: js.UndefOr[Double] = js.undefined,
+    unsharpThreshold: js.UndefOr[Double] = js.undefined
   ): PicaResizeBufferOptions = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], toHeigh = toHeigh.asInstanceOf[js.Any], toWidth = toWidth.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
     if (dest != null) __obj.updateDynamic("dest")(dest.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (unsharpAmount != null) __obj.updateDynamic("unsharpAmount")(unsharpAmount.asInstanceOf[js.Any])
-    if (unsharpRadius != null) __obj.updateDynamic("unsharpRadius")(unsharpRadius.asInstanceOf[js.Any])
-    if (unsharpThreshold != null) __obj.updateDynamic("unsharpThreshold")(unsharpThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unsharpAmount)) __obj.updateDynamic("unsharpAmount")(unsharpAmount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unsharpRadius)) __obj.updateDynamic("unsharpRadius")(unsharpRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unsharpThreshold)) __obj.updateDynamic("unsharpThreshold")(unsharpThreshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PicaResizeBufferOptions]
   }
 }

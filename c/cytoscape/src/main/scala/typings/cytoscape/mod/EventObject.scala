@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   *
   * http://js.cytoscape.org/#events
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.cytoscape.mod.AbstractEventObject because Already inherited
 - typings.cytoscape.mod.LayoutEventObject because var conflicts: cy, namespace, target, timeStamp, `type`. Inlined layout */ trait EventObject extends InputEventObject {
   /**

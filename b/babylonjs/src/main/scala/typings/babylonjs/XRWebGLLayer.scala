@@ -1,8 +1,5 @@
 package typings.babylonjs
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Instantiable3
 import typings.std.WebGLFramebuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,15 +12,16 @@ trait XRWebGLLayer extends js.Object {
   var getViewport: js.Function
 }
 
-@JSGlobal("XRWebGLLayer")
-@js.native
-object XRWebGLLayer
-  extends Instantiable1[/* session */ XRSession, XRWebGLLayer]
-     with Instantiable2[/* session */ XRSession, /* context */ WebGLRenderingContext, XRWebGLLayer]
-     with Instantiable3[
-      /* session */ XRSession, 
-      js.UndefOr[/* context */ WebGLRenderingContext], 
-      /* options */ XRWebGLLayerOptions, 
-      XRWebGLLayer
-    ]
+object XRWebGLLayer {
+  @scala.inline
+  def apply(
+    framebuffer: WebGLFramebuffer,
+    framebufferHeight: Double,
+    framebufferWidth: Double,
+    getViewport: js.Function
+  ): XRWebGLLayer = {
+    val __obj = js.Dynamic.literal(framebuffer = framebuffer.asInstanceOf[js.Any], framebufferHeight = framebufferHeight.asInstanceOf[js.Any], framebufferWidth = framebufferWidth.asInstanceOf[js.Any], getViewport = getViewport.asInstanceOf[js.Any])
+    __obj.asInstanceOf[XRWebGLLayer]
+  }
+}
 

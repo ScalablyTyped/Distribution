@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.ChartPlotAreaFormatData
 import typings.officeJsPreview.Excel.Interfaces.ChartPlotAreaFormatLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.ChartPlotAreaFormatUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,12 +16,11 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.8]
   */
-@JSGlobal("Excel.ChartPlotAreaFormat")
 @js.native
-class ChartPlotAreaFormat () extends ClientObject {
+trait ChartPlotAreaFormat extends ClientObject {
   /**
     *
-    * Represents the border attributes of a chart plotArea.
+    * Specifies the border attributes of a chart plotArea.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -31,7 +30,7 @@ class ChartPlotAreaFormat () extends ClientObject {
   var context_ChartPlotAreaFormat: RequestContext = js.native
   /**
     *
-    * Represents the fill format of an object, which includes background formatting information.
+    * Specifies the fill format of an object, which includes background formatting information.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -43,7 +42,7 @@ class ChartPlotAreaFormat () extends ClientObject {
     */
   def load(): ChartPlotAreaFormat = js.native
   def load(options: ChartPlotAreaFormatLoadOptions): ChartPlotAreaFormat = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ChartPlotAreaFormat = js.native
+  def load(propertyNamesAndPaths: Expand): ChartPlotAreaFormat = js.native
   def load(propertyNames: String): ChartPlotAreaFormat = js.native
   def load(propertyNames: js.Array[String]): ChartPlotAreaFormat = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

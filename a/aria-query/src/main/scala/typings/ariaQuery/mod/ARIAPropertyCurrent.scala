@@ -1,7 +1,5 @@
 package typings.ariaQuery.mod
 
-import typings.ariaQuery.ariaQueryBooleans.`false`
-import typings.ariaQuery.ariaQueryBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +21,7 @@ object ARIAPropertyCurrent {
   @scala.inline
   def date: typings.ariaQuery.ariaQueryStrings.date = "date".asInstanceOf[typings.ariaQuery.ariaQueryStrings.date]
   @scala.inline
-  def `false`: typings.ariaQuery.ariaQueryStrings.`false` = "false".asInstanceOf[typings.ariaQuery.ariaQueryStrings.`false`]
-  @JSName("false")
-  @scala.inline
-  def false_false: `false` = false.asInstanceOf[`false`]
+  def `false`: typings.ariaQuery.ariaQueryBooleans.`false` = false.asInstanceOf[typings.ariaQuery.ariaQueryBooleans.`false`]
   @scala.inline
   def location: typings.ariaQuery.ariaQueryStrings.location = "location".asInstanceOf[typings.ariaQuery.ariaQueryStrings.location]
   @scala.inline
@@ -36,9 +31,6 @@ object ARIAPropertyCurrent {
   @scala.inline
   def time: typings.ariaQuery.ariaQueryStrings.time = "time".asInstanceOf[typings.ariaQuery.ariaQueryStrings.time]
   @scala.inline
-  def `true`: typings.ariaQuery.ariaQueryStrings.`true` = "true".asInstanceOf[typings.ariaQuery.ariaQueryStrings.`true`]
-  @JSName("true")
-  @scala.inline
-  def true_true: `true` = true.asInstanceOf[`true`]
+  def `true`: typings.ariaQuery.ariaQueryBooleans.`true` = true.asInstanceOf[typings.ariaQuery.ariaQueryBooleans.`true`]
 }
 

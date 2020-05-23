@@ -4,7 +4,7 @@ import typings.react.mod.Key
 import typings.react.mod.LegacyRef
 import typings.react.mod.Props
 import typings.react.mod.ReactNode
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -60,7 +60,7 @@ object JSONTreeProps {
   def apply(
     data: js.Array[_] | js.Object,
     children: ReactNode = null,
-    collectionLimit: Int | Double = null,
+    collectionLimit: js.UndefOr[Double] = js.undefined,
     getItemString: (/* type */ String, /* data */ js.Array[_] | js.Object, /* itemType */ String, /* itemString */ String) => Element = null,
     hideRoot: js.UndefOr[Boolean] = js.undefined,
     invertTheme: js.UndefOr[Boolean] = js.undefined,
@@ -69,7 +69,7 @@ object JSONTreeProps {
     keyPath: js.Array[String | Double] = null,
     labelRenderer: (/* keyPath */ js.Array[String], /* nodeType */ js.UndefOr[String], /* expanded */ js.UndefOr[Boolean], /* expandable */ js.UndefOr[Boolean]) => Element = null,
     postprocessValue: /* raw */ String => Element = null,
-    ref: LegacyRef[JSONTreeComponent] = null,
+    ref: js.UndefOr[Null | LegacyRef[JSONTreeComponent]] = js.undefined,
     shouldExpandNode: (/* keyPath */ js.Array[String | Double], /* data */ js.Array[_] | js.Object, /* level */ Double) => Boolean = null,
     sortObjectKeys: js.Function | Boolean = null,
     theme: js.Object | String = null,
@@ -77,16 +77,16 @@ object JSONTreeProps {
   ): JSONTreeProps = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (collectionLimit != null) __obj.updateDynamic("collectionLimit")(collectionLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(collectionLimit)) __obj.updateDynamic("collectionLimit")(collectionLimit.get.asInstanceOf[js.Any])
     if (getItemString != null) __obj.updateDynamic("getItemString")(js.Any.fromFunction4(getItemString))
-    if (!js.isUndefined(hideRoot)) __obj.updateDynamic("hideRoot")(hideRoot.asInstanceOf[js.Any])
-    if (!js.isUndefined(invertTheme)) __obj.updateDynamic("invertTheme")(invertTheme.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideRoot)) __obj.updateDynamic("hideRoot")(hideRoot.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(invertTheme)) __obj.updateDynamic("invertTheme")(invertTheme.get.asInstanceOf[js.Any])
     if (isCustomNode != null) __obj.updateDynamic("isCustomNode")(js.Any.fromFunction0(isCustomNode))
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (keyPath != null) __obj.updateDynamic("keyPath")(keyPath.asInstanceOf[js.Any])
     if (labelRenderer != null) __obj.updateDynamic("labelRenderer")(js.Any.fromFunction4(labelRenderer))
     if (postprocessValue != null) __obj.updateDynamic("postprocessValue")(js.Any.fromFunction1(postprocessValue))
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (shouldExpandNode != null) __obj.updateDynamic("shouldExpandNode")(js.Any.fromFunction3(shouldExpandNode))
     if (sortObjectKeys != null) __obj.updateDynamic("sortObjectKeys")(sortObjectKeys.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])

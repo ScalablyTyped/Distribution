@@ -68,7 +68,7 @@ object FirehoseDeliveryStreamRedshiftConfiguration {
     copyOptions: String = null,
     dataTableColumns: String = null,
     processingConfiguration: FirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration = null,
-    retryDuration: Int | Double = null,
+    retryDuration: js.UndefOr[Double] = js.undefined,
     s3BackupConfiguration: FirehoseDeliveryStreamRedshiftConfigurationS3BackupConfiguration = null,
     s3BackupMode: String = null
   ): FirehoseDeliveryStreamRedshiftConfiguration = {
@@ -76,7 +76,7 @@ object FirehoseDeliveryStreamRedshiftConfiguration {
     if (copyOptions != null) __obj.updateDynamic("copyOptions")(copyOptions.asInstanceOf[js.Any])
     if (dataTableColumns != null) __obj.updateDynamic("dataTableColumns")(dataTableColumns.asInstanceOf[js.Any])
     if (processingConfiguration != null) __obj.updateDynamic("processingConfiguration")(processingConfiguration.asInstanceOf[js.Any])
-    if (retryDuration != null) __obj.updateDynamic("retryDuration")(retryDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(retryDuration)) __obj.updateDynamic("retryDuration")(retryDuration.get.asInstanceOf[js.Any])
     if (s3BackupConfiguration != null) __obj.updateDynamic("s3BackupConfiguration")(s3BackupConfiguration.asInstanceOf[js.Any])
     if (s3BackupMode != null) __obj.updateDynamic("s3BackupMode")(s3BackupMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirehoseDeliveryStreamRedshiftConfiguration]

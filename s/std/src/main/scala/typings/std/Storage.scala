@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -37,7 +36,20 @@ trait Storage
   def setItem(key: java.lang.String, value: java.lang.String): Unit
 }
 
-@JSGlobal("Storage")
-@js.native
-object Storage extends Instantiable0[Storage]
+object Storage {
+  @scala.inline
+  def apply(
+    clear: () => Unit,
+    getItem: java.lang.String => java.lang.String | Null,
+    key: Double => java.lang.String | Null,
+    length: Double,
+    removeItem: java.lang.String => Unit,
+    setItem: (java.lang.String, java.lang.String) => Unit,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null
+  ): Storage = {
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), getItem = js.Any.fromFunction1(getItem), key = js.Any.fromFunction1(key), length = length.asInstanceOf[js.Any], removeItem = js.Any.fromFunction1(removeItem), setItem = js.Any.fromFunction2(setItem))
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Storage]
+  }
+}
 

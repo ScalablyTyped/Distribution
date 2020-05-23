@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_servicemanagement"
-version := "1.0-dt-20200225Z-f1f0e2"
-scalaVersion := "2.13.1"
+version := "1.0-dt-20200515Z-dccd34"
+scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "gapi_dot_client" % "1.0-dt-20200407Z-af6e4d",
-  "org.scalablytyped" %%% "std" % "3.8-9b2470")
+  "org.scalablytyped" %%% "gapi_dot_client" % "1.0-dt-20200426Z-f1fede",
+  "org.scalablytyped" %%% "std" % "3.9-18cbeb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

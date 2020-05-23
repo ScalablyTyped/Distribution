@@ -1,6 +1,6 @@
 package typings.gapiClientCompute.gapi.client.compute
 
-import typings.gapiClientCompute.AnonCode
+import typings.gapiClientCompute.anon.Code
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +22,7 @@ trait SubnetworkAggregatedList extends js.Object {
   /** [Output Only] Server-defined URL for this resource. */
   var selfLink: js.UndefOr[String] = js.undefined
   /** [Output Only] Informational warning message. */
-  var warning: js.UndefOr[AnonCode] = js.undefined
+  var warning: js.UndefOr[Code] = js.undefined
 }
 
 object SubnetworkAggregatedList {
@@ -33,7 +33,7 @@ object SubnetworkAggregatedList {
     kind: String = null,
     nextPageToken: String = null,
     selfLink: String = null,
-    warning: AnonCode = null
+    warning: Code = null
   ): SubnetworkAggregatedList = {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

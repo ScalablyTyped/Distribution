@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Core
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,29 +38,6 @@ object MediaStreamSourceClosedReason extends js.Object {
   /** Components needed to implement the protection system are missing. */
   @js.native
   sealed trait unsupportedProtectionSystem extends MediaStreamSourceClosedReason
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MediaStreamSourceClosedReason with Double] = js.native
-  /* 2 */ @js.native
-  object appReportedError extends TopLevel[appReportedError with Double]
-  
-  /* 0 */ @js.native
-  object done extends TopLevel[done with Double]
-  
-  /* 6 */ @js.native
-  object missingSampleRequestedEventHandler extends TopLevel[missingSampleRequestedEventHandler with Double]
-  
-  /* 4 */ @js.native
-  object protectionSystemFailure extends TopLevel[protectionSystemFailure with Double]
-  
-  /* 1 */ @js.native
-  object unknownError extends TopLevel[unknownError with Double]
-  
-  /* 5 */ @js.native
-  object unsupportedEncodingFormat extends TopLevel[unsupportedEncodingFormat with Double]
-  
-  /* 3 */ @js.native
-  object unsupportedProtectionSystem extends TopLevel[unsupportedProtectionSystem with Double]
   
 }
 

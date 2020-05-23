@@ -72,25 +72,25 @@ object IInteractDef {
   @scala.inline
   def apply(
     qResult: Double,
-    qButtons: Int | Double = null,
+    qButtons: js.UndefOr[Double] = js.undefined,
     qHidden: js.UndefOr[Boolean] = js.undefined,
     qInput: String = null,
     qLine: String = null,
     qMsg: String = null,
-    qNewLineNr: Int | Double = null,
-    qOldLineNr: Int | Double = null,
+    qNewLineNr: js.UndefOr[Double] = js.undefined,
+    qOldLineNr: js.UndefOr[Double] = js.undefined,
     qPath: String = null,
     qTitle: String = null,
     qType: InteractionType = null
   ): IInteractDef = {
     val __obj = js.Dynamic.literal(qResult = qResult.asInstanceOf[js.Any])
-    if (qButtons != null) __obj.updateDynamic("qButtons")(qButtons.asInstanceOf[js.Any])
-    if (!js.isUndefined(qHidden)) __obj.updateDynamic("qHidden")(qHidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(qButtons)) __obj.updateDynamic("qButtons")(qButtons.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qHidden)) __obj.updateDynamic("qHidden")(qHidden.get.asInstanceOf[js.Any])
     if (qInput != null) __obj.updateDynamic("qInput")(qInput.asInstanceOf[js.Any])
     if (qLine != null) __obj.updateDynamic("qLine")(qLine.asInstanceOf[js.Any])
     if (qMsg != null) __obj.updateDynamic("qMsg")(qMsg.asInstanceOf[js.Any])
-    if (qNewLineNr != null) __obj.updateDynamic("qNewLineNr")(qNewLineNr.asInstanceOf[js.Any])
-    if (qOldLineNr != null) __obj.updateDynamic("qOldLineNr")(qOldLineNr.asInstanceOf[js.Any])
+    if (!js.isUndefined(qNewLineNr)) __obj.updateDynamic("qNewLineNr")(qNewLineNr.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qOldLineNr)) __obj.updateDynamic("qOldLineNr")(qOldLineNr.get.asInstanceOf[js.Any])
     if (qPath != null) __obj.updateDynamic("qPath")(qPath.asInstanceOf[js.Any])
     if (qTitle != null) __obj.updateDynamic("qTitle")(qTitle.asInstanceOf[js.Any])
     if (qType != null) __obj.updateDynamic("qType")(qType.asInstanceOf[js.Any])

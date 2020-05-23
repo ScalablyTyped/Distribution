@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`building-group`
 import typings.arcgisJsApi.arcgisJsApiStrings.`hide-children`
 import typings.arcgisJsApi.arcgisJsApiStrings.hide
@@ -42,8 +41,4 @@ trait BuildingGroupSublayer extends BuildingSublayer {
     */
   def loadAll(): js.Promise[BuildingSceneLayer] = js.native
 }
-
-@JSGlobal("__esri.BuildingGroupSublayer")
-@js.native
-object BuildingGroupSublayer extends TopLevel[BuildingGroupSublayerConstructor]
 

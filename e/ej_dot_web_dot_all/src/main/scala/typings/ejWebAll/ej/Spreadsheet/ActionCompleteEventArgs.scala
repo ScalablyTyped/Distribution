@@ -32,15 +32,15 @@ object ActionCompleteEventArgs {
     model: Model = null,
     reqType: String = null,
     selectedCell: js.Array[_] | js.Any = null,
-    sheetIdx: Int | Double = null,
+    sheetIdx: js.UndefOr[Double] = js.undefined,
     `type`: String = null
   ): ActionCompleteEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (reqType != null) __obj.updateDynamic("reqType")(reqType.asInstanceOf[js.Any])
     if (selectedCell != null) __obj.updateDynamic("selectedCell")(selectedCell.asInstanceOf[js.Any])
-    if (sheetIdx != null) __obj.updateDynamic("sheetIdx")(sheetIdx.asInstanceOf[js.Any])
+    if (!js.isUndefined(sheetIdx)) __obj.updateDynamic("sheetIdx")(sheetIdx.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionCompleteEventArgs]
   }

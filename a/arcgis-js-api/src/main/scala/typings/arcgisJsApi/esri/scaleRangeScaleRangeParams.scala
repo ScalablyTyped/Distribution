@@ -44,11 +44,11 @@ object scaleRangeScaleRangeParams {
     layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer,
     propertyIsEnumerable: PropertyKey => Boolean,
     view: View,
-    sampleSize: Int | Double = null,
+    sampleSize: js.UndefOr[Double] = js.undefined,
     signal: AbortSignal = null
   ): scaleRangeScaleRangeParams = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), view = view.asInstanceOf[js.Any])
-    if (sampleSize != null) __obj.updateDynamic("sampleSize")(sampleSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampleSize)) __obj.updateDynamic("sampleSize")(sampleSize.get.asInstanceOf[js.Any])
     if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     __obj.asInstanceOf[scaleRangeScaleRangeParams]
   }

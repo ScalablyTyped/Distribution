@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.PullErrorTypeSymbol")
 @js.native
-class PullErrorTypeSymbol protected () extends PullPrimitiveTypeSymbol {
-  def this(_anyType: PullTypeSymbol, name: String) = this()
+trait PullErrorTypeSymbol extends PullPrimitiveTypeSymbol {
   var _anyType: PullTypeSymbol = js.native
 }
 

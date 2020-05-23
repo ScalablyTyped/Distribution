@@ -11,9 +11,9 @@ trait TransformedSource extends js.Object {
 
 object TransformedSource {
   @scala.inline
-  def apply(code: String, map: FixedRawSourceMap | String = null): TransformedSource = {
+  def apply(code: String, map: js.UndefOr[Null | FixedRawSourceMap | String] = js.undefined): TransformedSource = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (!js.isUndefined(map)) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformedSource]
   }
 }

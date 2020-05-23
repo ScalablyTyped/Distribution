@@ -18,9 +18,9 @@ object UrlsConfigObj {
     wwwMatches: js.UndefOr[Boolean] = js.undefined
   ): UrlsConfigObj = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(schemeMatches)) __obj.updateDynamic("schemeMatches")(schemeMatches.asInstanceOf[js.Any])
-    if (!js.isUndefined(tldMatches)) __obj.updateDynamic("tldMatches")(tldMatches.asInstanceOf[js.Any])
-    if (!js.isUndefined(wwwMatches)) __obj.updateDynamic("wwwMatches")(wwwMatches.asInstanceOf[js.Any])
+    if (!js.isUndefined(schemeMatches)) __obj.updateDynamic("schemeMatches")(schemeMatches.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tldMatches)) __obj.updateDynamic("tldMatches")(tldMatches.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wwwMatches)) __obj.updateDynamic("wwwMatches")(wwwMatches.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlsConfigObj]
   }
 }

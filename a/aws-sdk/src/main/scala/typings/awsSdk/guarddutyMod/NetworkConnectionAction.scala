@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation._
 @js.native
 trait NetworkConnectionAction extends js.Object {
   /**
-    * Network connection blocked information.
+    * Indicates whether EC2 blocked the network connection to your instance.
     */
   var Blocked: js.UndefOr[Boolean] = js.native
   /**
-    * Network connection direction.
+    * The network connection direction.
     */
   var ConnectionDirection: js.UndefOr[String] = js.native
   /**
-    * Local IP information of the connection.
+    * The local IP information of the connection.
     */
   var LocalIpDetails: js.UndefOr[typings.awsSdk.guarddutyMod.LocalIpDetails] = js.native
   /**
-    * Local port information of the connection.
+    * The local port information of the connection.
     */
   var LocalPortDetails: js.UndefOr[typings.awsSdk.guarddutyMod.LocalPortDetails] = js.native
   /**
-    * Network connection protocol.
+    * The network connection protocol.
     */
   var Protocol: js.UndefOr[String] = js.native
   /**
-    * Remote IP information of the connection.
+    * The remote IP information of the connection.
     */
   var RemoteIpDetails: js.UndefOr[typings.awsSdk.guarddutyMod.RemoteIpDetails] = js.native
   /**
-    * Remote port information of the connection.
+    * The remote port information of the connection.
     */
   var RemotePortDetails: js.UndefOr[typings.awsSdk.guarddutyMod.RemotePortDetails] = js.native
 }
@@ -39,7 +39,7 @@ trait NetworkConnectionAction extends js.Object {
 object NetworkConnectionAction {
   @scala.inline
   def apply(
-    Blocked: js.UndefOr[scala.Boolean] = js.undefined,
+    Blocked: js.UndefOr[Boolean] = js.undefined,
     ConnectionDirection: String = null,
     LocalIpDetails: LocalIpDetails = null,
     LocalPortDetails: LocalPortDetails = null,
@@ -48,7 +48,7 @@ object NetworkConnectionAction {
     RemotePortDetails: RemotePortDetails = null
   ): NetworkConnectionAction = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Blocked)) __obj.updateDynamic("Blocked")(Blocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(Blocked)) __obj.updateDynamic("Blocked")(Blocked.get.asInstanceOf[js.Any])
     if (ConnectionDirection != null) __obj.updateDynamic("ConnectionDirection")(ConnectionDirection.asInstanceOf[js.Any])
     if (LocalIpDetails != null) __obj.updateDynamic("LocalIpDetails")(LocalIpDetails.asInstanceOf[js.Any])
     if (LocalPortDetails != null) __obj.updateDynamic("LocalPortDetails")(LocalPortDetails.asInstanceOf[js.Any])

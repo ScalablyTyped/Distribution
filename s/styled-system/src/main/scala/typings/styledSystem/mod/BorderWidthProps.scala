@@ -39,19 +39,19 @@ trait BorderWidthProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] exte
 
 object BorderWidthProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](
-    borderBottomWidth: ResponsiveValue[TVal, ThemeType] = null,
-    borderLeftWidth: ResponsiveValue[TVal, ThemeType] = null,
-    borderRightWidth: ResponsiveValue[TVal, ThemeType] = null,
-    borderTopWidth: ResponsiveValue[TVal, ThemeType] = null,
-    borderWidth: ResponsiveValue[TVal, ThemeType] = null
+  def apply[ThemeType, TVal](
+    borderBottomWidth: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    borderLeftWidth: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    borderRightWidth: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    borderTopWidth: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    borderWidth: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined
   ): BorderWidthProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
-    if (borderBottomWidth != null) __obj.updateDynamic("borderBottomWidth")(borderBottomWidth.asInstanceOf[js.Any])
-    if (borderLeftWidth != null) __obj.updateDynamic("borderLeftWidth")(borderLeftWidth.asInstanceOf[js.Any])
-    if (borderRightWidth != null) __obj.updateDynamic("borderRightWidth")(borderRightWidth.asInstanceOf[js.Any])
-    if (borderTopWidth != null) __obj.updateDynamic("borderTopWidth")(borderTopWidth.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderBottomWidth)) __obj.updateDynamic("borderBottomWidth")(borderBottomWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderLeftWidth)) __obj.updateDynamic("borderLeftWidth")(borderLeftWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderRightWidth)) __obj.updateDynamic("borderRightWidth")(borderRightWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderTopWidth)) __obj.updateDynamic("borderTopWidth")(borderTopWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[BorderWidthProps[ThemeType, TVal]]
   }
 }

@@ -1,6 +1,6 @@
 package typings.reactSelect.componentsMultiValueMod
 
-import typings.reactSelect.AnonCropWithEllipsis
+import typings.reactSelect.anon.CropWithEllipsis
 import typings.reactSelect.typesMod.OptionTypeBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,6 @@ class default[OptionType /* <: OptionTypeBase */] () extends MultiValue[OptionTy
 @JSImport("react-select/src/components/MultiValue", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonCropWithEllipsis = js.native
+  var defaultProps: CropWithEllipsis = js.native
 }
 

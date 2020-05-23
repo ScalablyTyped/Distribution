@@ -28,11 +28,8 @@ import scala.scalajs.js.annotation._
   * @class
   * @memberof PIXI
   */
-@JSGlobal("PIXI.Spritesheet")
 @js.native
-class Spritesheet protected () extends js.Object {
-  def this(baseTexture: BaseTexture, data: js.Any) = this()
-  def this(baseTexture: BaseTexture, data: js.Any, resolutionFilename: String) = this()
+trait Spritesheet extends js.Object {
   /**
     * A map containing the textures for each animation.
     * Can be used to create an {@link PIXI.AnimatedSprite|AnimatedSprite}:
@@ -43,7 +40,7 @@ class Spritesheet protected () extends js.Object {
     */
   var animations: js.Any = js.native
   /**
-    * Reference to ths source texture
+    * Reference to ths source texture.
     * @type {PIXI.BaseTexture}
     */
   var baseTexture: BaseTexture = js.native
@@ -81,18 +78,5 @@ class Spritesheet protected () extends js.Object {
     *        a map of the Textures for this spritesheet.
     */
   def parse(callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("PIXI.Spritesheet")
-@js.native
-object Spritesheet extends js.Object {
-  /**
-    * The maximum number of Textures to build per process.
-    *
-    * @type {number}
-    * @default 1000
-    */
-  var BATCH_SIZE: Double = js.native
 }
 

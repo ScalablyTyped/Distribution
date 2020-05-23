@@ -1,6 +1,5 @@
 package typings.screeps
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +33,21 @@ trait Deposit extends RoomObject {
   var ticksToDecay: Double
 }
 
-@JSGlobal("Deposit")
-@js.native
-object Deposit extends TopLevel[DepositConstructor]
+object Deposit {
+  @scala.inline
+  def apply(
+    cooldown: Double,
+    depositType: DepositConstant,
+    effects: js.Array[RoomObjectEffect],
+    id: Id[Deposit],
+    lastCooldown: Double,
+    pos: RoomPosition,
+    ticksToDecay: Double,
+    room: Room = null
+  ): Deposit = {
+    val __obj = js.Dynamic.literal(cooldown = cooldown.asInstanceOf[js.Any], depositType = depositType.asInstanceOf[js.Any], effects = effects.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lastCooldown = lastCooldown.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], ticksToDecay = ticksToDecay.asInstanceOf[js.Any])
+    if (room != null) __obj.updateDynamic("room")(room.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Deposit]
+  }
+}
 

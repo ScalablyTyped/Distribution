@@ -1,7 +1,7 @@
 package typings.ionicReact.componentsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ionicReact.IonCardHeaderPickHTMLAttr
+import typings.ionicReact.anon.IonCardHeaderPickHTMLAttr
 import typings.react.mod.ForwardRefExoticComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

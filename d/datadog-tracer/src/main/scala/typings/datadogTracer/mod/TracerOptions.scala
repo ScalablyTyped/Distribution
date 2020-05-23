@@ -18,13 +18,13 @@ object TracerOptions {
     service: String,
     endpoint: String = null,
     hostname: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     protocol: String = null
   ): TracerOptions = {
     val __obj = js.Dynamic.literal(service = service.asInstanceOf[js.Any])
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
     if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[TracerOptions]
   }

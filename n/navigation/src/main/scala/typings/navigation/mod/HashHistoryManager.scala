@@ -14,6 +14,13 @@ import scala.scalajs.js.annotation._
 class HashHistoryManager () extends HistoryManager {
   def this(replaceQueryIdentifier: Boolean) = this()
   /**
+    * Sets the browser Url's hash to the url
+    * @param url The current url
+    * @param replace A value indicating whether to replace the current
+    * browser history entry
+    */
+  def addHistory(url: String, replace: Boolean): Unit = js.native
+  /**
     * Registers a listener for the hashchange event
     * @param navigateHistory The history navigation event handler
     */

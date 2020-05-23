@@ -27,14 +27,14 @@ object TurnBasedMatchCreateRequest {
     invitedPlayerIds: js.Array[String] = null,
     kind: String = null,
     requestId: String = null,
-    variant: Int | Double = null
+    variant: js.UndefOr[Double] = js.undefined
   ): TurnBasedMatchCreateRequest = {
     val __obj = js.Dynamic.literal()
     if (autoMatchingCriteria != null) __obj.updateDynamic("autoMatchingCriteria")(autoMatchingCriteria.asInstanceOf[js.Any])
     if (invitedPlayerIds != null) __obj.updateDynamic("invitedPlayerIds")(invitedPlayerIds.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
-    if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
+    if (!js.isUndefined(variant)) __obj.updateDynamic("variant")(variant.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TurnBasedMatchCreateRequest]
   }
 }

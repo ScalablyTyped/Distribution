@@ -16,9 +16,9 @@ trait MaxHeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extend
 
 object MaxHeightProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](maxHeight: ResponsiveValue[TVal, ThemeType] = null): MaxHeightProps[ThemeType, TVal] = {
+  def apply[ThemeType, TVal](maxHeight: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): MaxHeightProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaxHeightProps[ThemeType, TVal]]
   }
 }

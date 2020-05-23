@@ -1,23 +1,22 @@
 package typings.winrtUwp.Windows.Media.Playback
 
 import typings.std.Array
-import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsVideoTrack
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.Foundation.TypedEventHandler
 import typings.winrtUwp.Windows.Media.Core.ISingleSelectMediaTrackList
 import typings.winrtUwp.Windows.Media.Core.VideoTrack
 import typings.winrtUwp.Windows.WinRTEvent
+import typings.winrtUwp.anon.Index
+import typings.winrtUwp.anon.ItemsVideoTrack
 import typings.winrtUwp.winrtUwpStrings.selectedindexchanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a read-only list of video tracks, of which a single track can be selected at one time. */
-@JSGlobal("Windows.Media.Playback.MediaPlaybackVideoTrackList")
 @js.native
-abstract class MediaPlaybackVideoTrackList () extends Array[VideoTrack] {
+trait MediaPlaybackVideoTrackList extends Array[VideoTrack] {
   /** Occurs when the index of the currently selected video track changes. */
   @JSName("onselectedindexchanged")
   var onselectedindexchanged_Original: TypedEventHandler[ISingleSelectMediaTrackList, _] = js.native
@@ -43,8 +42,8 @@ abstract class MediaPlaybackVideoTrackList () extends Array[VideoTrack] {
     * Retrieves the video tracks that start at the specified index in the list.
     * @param startIndex The zero-based index of the start of the video tracks in the list.
     */
-  def getMany(startIndex: Double): AnonItemsVideoTrack = js.native
-  def indexOf(value: VideoTrack, extra: js.Any*): AnonIndex = js.native
+  def getMany(startIndex: Double): ItemsVideoTrack = js.native
+  def indexOf(value: VideoTrack, extra: js.Any*): Index = js.native
   /* hack */
   @JSName("indexOf")
   def indexOf_Double(searchElement: VideoTrack): Double = js.native

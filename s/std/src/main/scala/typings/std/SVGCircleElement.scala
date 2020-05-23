@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,8 +11,4 @@ trait SVGCircleElement extends SVGGeometryElement {
   val cy: SVGAnimatedLength = js.native
   val r: SVGAnimatedLength = js.native
 }
-
-@JSGlobal("SVGCircleElement")
-@js.native
-object SVGCircleElement extends Instantiable0[SVGCircleElement]
 

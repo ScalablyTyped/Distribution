@@ -23,9 +23,9 @@ object BufferOptions {
     tableLayouts: StringDictionary[CustomTableLayout] = null
   ): BufferOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoPrint)) __obj.updateDynamic("autoPrint")(autoPrint.asInstanceOf[js.Any])
-    if (!js.isUndefined(bufferPages)) __obj.updateDynamic("bufferPages")(bufferPages.asInstanceOf[js.Any])
-    if (!js.isUndefined(fontLayoutCache)) __obj.updateDynamic("fontLayoutCache")(fontLayoutCache.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPrint)) __obj.updateDynamic("autoPrint")(autoPrint.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bufferPages)) __obj.updateDynamic("bufferPages")(bufferPages.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontLayoutCache)) __obj.updateDynamic("fontLayoutCache")(fontLayoutCache.get.asInstanceOf[js.Any])
     if (progressCallback != null) __obj.updateDynamic("progressCallback")(js.Any.fromFunction1(progressCallback))
     if (tableLayouts != null) __obj.updateDynamic("tableLayouts")(tableLayouts.asInstanceOf[js.Any])
     __obj.asInstanceOf[BufferOptions]

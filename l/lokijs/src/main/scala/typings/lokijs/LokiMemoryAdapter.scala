@@ -1,6 +1,8 @@
 package typings.lokijs
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.lokijs.anon.AsyncResponses
+import typings.lokijs.anon.Lastsave
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,12 +17,9 @@ import scala.scalajs.js.annotation._
   * @param [options.asyncTimeout=50] - timeout in ms to queue callbacks
   * @constructor LokiMemoryAdapter
   */
-@JSGlobal("LokiMemoryAdapter")
-@js.native
-class LokiMemoryAdapter () extends LokiPersistenceAdapter {
-  def this(options: AnonAsyncResponses) = this()
-  var hashStore: StringDictionary[AnonLastsave] = js.native
-  var options: AnonAsyncResponses = js.native
+trait LokiMemoryAdapter extends LokiPersistenceAdapter {
+  var hashStore: StringDictionary[Lastsave]
+  var options: AsyncResponses
   /**
     * Deletes a database from its in-memory store.
     *
@@ -28,9 +27,7 @@ class LokiMemoryAdapter () extends LokiPersistenceAdapter {
     * @param callback - function to call when done
     */
   @JSName("deleteDatabase")
-  def deleteDatabase_MLokiMemoryAdapter(dbname: String, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit = js.native
-  /* CompleteClass */
-  override def loadDatabase(dbname: String, callback: js.Function1[/* value */ js.Any, Unit]): Unit = js.native
+  def deleteDatabase_MLokiMemoryAdapter(dbname: String, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit
   /**
     * Saves a serialized database to its in-memory store.
     * (Loki persistence adapter interface function)
@@ -39,6 +36,24 @@ class LokiMemoryAdapter () extends LokiPersistenceAdapter {
     * @param callback - adapter callback to return load result to caller
     */
   @JSName("saveDatabase")
-  def saveDatabase_MLokiMemoryAdapter(dbname: String, dbstring: js.Any, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+  def saveDatabase_MLokiMemoryAdapter(dbname: String, dbstring: js.Any, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit
+}
+
+object LokiMemoryAdapter {
+  @scala.inline
+  def apply(
+    deleteDatabase: (String, js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) => Unit,
+    hashStore: StringDictionary[Lastsave],
+    loadDatabase: (String, js.Function1[/* value */ js.Any, Unit]) => Unit,
+    options: AsyncResponses,
+    saveDatabase: (String, js.Any, js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) => Unit,
+    exportDatabase: (/* dbname */ String, /* dbref */ Loki, /* callback */ js.Function1[/* err */ Error | Null, Unit]) => Unit = null,
+    mode: String = null
+  ): LokiMemoryAdapter = {
+    val __obj = js.Dynamic.literal(deleteDatabase = js.Any.fromFunction2(deleteDatabase), hashStore = hashStore.asInstanceOf[js.Any], loadDatabase = js.Any.fromFunction2(loadDatabase), options = options.asInstanceOf[js.Any], saveDatabase = js.Any.fromFunction3(saveDatabase))
+    if (exportDatabase != null) __obj.updateDynamic("exportDatabase")(js.Any.fromFunction3(exportDatabase))
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LokiMemoryAdapter]
+  }
 }
 

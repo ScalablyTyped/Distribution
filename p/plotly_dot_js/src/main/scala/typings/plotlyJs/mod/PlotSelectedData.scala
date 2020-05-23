@@ -19,23 +19,23 @@ trait PlotSelectedData extends js.Object {
 object PlotSelectedData {
   @scala.inline
   def apply(
-    curveNumber: Int | Double = null,
+    curveNumber: js.UndefOr[Double] = js.undefined,
     data: PlotData = null,
-    pointIndex: Int | Double = null,
-    pointNumber: Int | Double = null,
-    x: Datum = null,
+    pointIndex: js.UndefOr[Double] = js.undefined,
+    pointNumber: js.UndefOr[Double] = js.undefined,
+    x: js.UndefOr[Null | Datum] = js.undefined,
     xaxis: LayoutAxis = null,
-    y: Datum = null,
+    y: js.UndefOr[Null | Datum] = js.undefined,
     yaxis: LayoutAxis = null
   ): PlotSelectedData = {
     val __obj = js.Dynamic.literal()
-    if (curveNumber != null) __obj.updateDynamic("curveNumber")(curveNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(curveNumber)) __obj.updateDynamic("curveNumber")(curveNumber.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (pointIndex != null) __obj.updateDynamic("pointIndex")(pointIndex.asInstanceOf[js.Any])
-    if (pointNumber != null) __obj.updateDynamic("pointNumber")(pointNumber.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointIndex)) __obj.updateDynamic("pointIndex")(pointIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointNumber)) __obj.updateDynamic("pointNumber")(pointNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (xaxis != null) __obj.updateDynamic("xaxis")(xaxis.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     if (yaxis != null) __obj.updateDynamic("yaxis")(yaxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotSelectedData]
   }

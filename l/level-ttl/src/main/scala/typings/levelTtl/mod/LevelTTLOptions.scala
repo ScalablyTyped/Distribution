@@ -49,8 +49,8 @@ trait LevelTTLOptions extends js.Object {
 object LevelTTLOptions {
   @scala.inline
   def apply(
-    checkFrequency: Int | Double = null,
-    defaultTTL: Int | Double = null,
+    checkFrequency: js.UndefOr[Double] = js.undefined,
+    defaultTTL: js.UndefOr[Double] = js.undefined,
     expiryNamespace: String = null,
     methodPrefix: String = null,
     namespace: String = null,
@@ -58,8 +58,8 @@ object LevelTTLOptions {
     sub: LevelUp[AbstractLevelDOWN[_, _], AbstractIterator[_, _]] = null
   ): LevelTTLOptions = {
     val __obj = js.Dynamic.literal()
-    if (checkFrequency != null) __obj.updateDynamic("checkFrequency")(checkFrequency.asInstanceOf[js.Any])
-    if (defaultTTL != null) __obj.updateDynamic("defaultTTL")(defaultTTL.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkFrequency)) __obj.updateDynamic("checkFrequency")(checkFrequency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultTTL)) __obj.updateDynamic("defaultTTL")(defaultTTL.get.asInstanceOf[js.Any])
     if (expiryNamespace != null) __obj.updateDynamic("expiryNamespace")(expiryNamespace.asInstanceOf[js.Any])
     if (methodPrefix != null) __obj.updateDynamic("methodPrefix")(methodPrefix.asInstanceOf[js.Any])
     if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])

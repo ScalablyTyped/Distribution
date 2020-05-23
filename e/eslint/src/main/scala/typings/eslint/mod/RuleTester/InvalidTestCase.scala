@@ -19,7 +19,7 @@ object InvalidTestCase {
     filename: String = null,
     globals: StringDictionary[Boolean] = null,
     options: js.Any = null,
-    output: String = null,
+    output: js.UndefOr[Null | String] = js.undefined,
     parser: String = null,
     parserOptions: ParserOptions = null,
     settings: StringDictionary[js.Any] = null
@@ -28,7 +28,7 @@ object InvalidTestCase {
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (globals != null) __obj.updateDynamic("globals")(globals.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
+    if (!js.isUndefined(output)) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     if (parser != null) __obj.updateDynamic("parser")(parser.asInstanceOf[js.Any])
     if (parserOptions != null) __obj.updateDynamic("parserOptions")(parserOptions.asInstanceOf[js.Any])
     if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])

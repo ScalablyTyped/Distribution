@@ -1,7 +1,7 @@
 package typings.jupyterlabNbformat.mod
 
-import typings.jupyterlabNbformat.PartialIBaseCellJupyterMe
-import typings.jupyterlabNbformat.PartialICodeCellJupyterMe
+import typings.jupyterlabNbformat.anon.PartialIBaseCellJupyterMe
+import typings.jupyterlabNbformat.anon.PartialICodeCellJupyterMe
 import typings.jupyterlabNbformat.jupyterlabNbformatStrings.auto
 import scala.scalajs.js
 import scala.scalajs.js.`|`

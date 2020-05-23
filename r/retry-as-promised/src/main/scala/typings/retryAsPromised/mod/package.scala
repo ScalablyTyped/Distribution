@@ -12,7 +12,7 @@ package object mod {
     typings.bluebird.mod.^[js.Any]
   ]
   type RetryCallback[T] = js.Function1[
-    /* hasCurrent */ typings.retryAsPromised.AnonCurrent, 
+    /* hasCurrent */ typings.retryAsPromised.anon.Current, 
     typings.bluebird.mod.Thenable[T]
   ]
 }

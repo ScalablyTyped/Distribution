@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.capture
 import typings.arcgisJsApi.arcgisJsApiStrings.disabled
 import typings.arcgisJsApi.arcgisJsApiStrings.live
@@ -101,8 +100,4 @@ trait CoordinateConversionViewModel
     */
   def updateConversions(location: Point, conversions: js.Array[Conversion]): js.Promise[js.Array[Conversion]] = js.native
 }
-
-@JSGlobal("__esri.CoordinateConversionViewModel")
-@js.native
-object CoordinateConversionViewModel extends TopLevel[CoordinateConversionViewModelConstructor]
 

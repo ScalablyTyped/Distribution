@@ -12,7 +12,7 @@ trait Config
 
 object Config {
   @scala.inline
-  def apply(get: String => js.Any, StringDictionary: /* key */ StringDictionary[js.Any] = null): Config = {
+  def apply(get: String => js.Any, StringDictionary: /* name */ StringDictionary[js.Any] = null): Config = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Config]

@@ -13,9 +13,9 @@ import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IModel
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IPosition
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IRange
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.ISelectionStyle
-import typings.jupyterlabCodemirror.AnonBias
-import typings.jupyterlabCodemirror.AnonBottom
-import typings.jupyterlabCodemirror.AnonFrom
+import typings.jupyterlabCodemirror.anon.Bias
+import typings.jupyterlabCodemirror.anon.Bottom
+import typings.jupyterlabCodemirror.anon.From
 import typings.jupyterlabCodemirror.editorMod.CodeMirrorEditor.IOptions
 import typings.jupyterlabCodemirror.jupyterlabCodemirrorStrings.autoClosingBrackets
 import typings.jupyterlabCodemirror.jupyterlabCodemirrorStrings.bounded
@@ -56,7 +56,7 @@ import typings.jupyterlabCodemirror.jupyterlabCodemirrorStrings.window
 import typings.jupyterlabCodemirror.jupyterlabCodemirrorStrings.wordWrapColumn
 import typings.jupyterlabCodemirror.modeMod.Mode.IMode
 import typings.luminoSignaling.mod.Signal
-import typings.std.Event_
+import typings.std.Event
 import typings.std.KeyboardEvent
 import typings.std.RegExp
 import scala.scalajs.js
@@ -191,13 +191,13 @@ class CodeMirrorEditor_ protected () extends IEditor {
     */
   @JSName("charWidth")
   def charWidth_MCodeMirrorEditor_ : Double = js.native
-  def cursorCoords(where: Boolean): AnonBottom = js.native
+  def cursorCoords(where: Boolean): Bottom = js.native
   @JSName("cursorCoords")
-  def cursorCoords_local(where: Boolean, mode: local): AnonBottom = js.native
+  def cursorCoords_local(where: Boolean, mode: local): Bottom = js.native
   @JSName("cursorCoords")
-  def cursorCoords_page(where: Boolean, mode: page): AnonBottom = js.native
+  def cursorCoords_page(where: Boolean, mode: page): Bottom = js.native
   @JSName("cursorCoords")
-  def cursorCoords_window(where: Boolean, mode: window): AnonBottom = js.native
+  def cursorCoords_window(where: Boolean, mode: window): Bottom = js.native
   /**
     * Dispose of the resources held by the object.
     *
@@ -328,7 +328,7 @@ class CodeMirrorEditor_ protected () extends IEditor {
     * called in response to events on the editor's DOM node. It should
     * not be called directly by user code.
     */
-  def handleEvent(event: Event_): Unit = js.native
+  def handleEvent(event: Event): Unit = js.native
   /**
     * Tests whether the editor is disposed.
     */
@@ -364,7 +364,7 @@ class CodeMirrorEditor_ protected () extends IEditor {
     */
   @JSName("replaceSelection")
   def replaceSelection_MCodeMirrorEditor_(text: String): Unit = js.native
-  def scrollIntoView(pos: AnonFrom, margin: Double): Unit = js.native
+  def scrollIntoView(pos: From, margin: Double): Unit = js.native
   /**
     * The selection style of this editor.
     */
@@ -382,7 +382,7 @@ class CodeMirrorEditor_ protected () extends IEditor {
     */
   /* CompleteClass */
   override def setCursorPosition(position: IPosition): Unit = js.native
-  def setCursorPosition(position: IPosition, options: AnonBias): Unit = js.native
+  def setCursorPosition(position: IPosition, options: Bias): Unit = js.native
   def setOption(option: lineWrap, value: bounded): Unit = js.native
   def setOption(option: lineWrap, value: off): Unit = js.native
   def setOption(option: lineWrap, value: on): Unit = js.native

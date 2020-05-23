@@ -35,14 +35,14 @@ object SetBreakpointByUrlParameterType {
   @scala.inline
   def apply(
     lineNumber: Double,
-    columnNumber: Int | Double = null,
+    columnNumber: js.UndefOr[Double] = js.undefined,
     condition: String = null,
     scriptHash: String = null,
     url: String = null,
     urlRegex: String = null
   ): SetBreakpointByUrlParameterType = {
     val __obj = js.Dynamic.literal(lineNumber = lineNumber.asInstanceOf[js.Any])
-    if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnNumber)) __obj.updateDynamic("columnNumber")(columnNumber.get.asInstanceOf[js.Any])
     if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
     if (scriptHash != null) __obj.updateDynamic("scriptHash")(scriptHash.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])

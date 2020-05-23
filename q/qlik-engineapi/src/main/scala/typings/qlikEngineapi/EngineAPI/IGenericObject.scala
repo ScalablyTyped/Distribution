@@ -1,7 +1,7 @@
 package typings.qlikEngineapi.EngineAPI
 
-import typings.qlikEngineapi.AnonQAxisData
-import typings.qlikEngineapi.AnonQDataPages
+import typings.qlikEngineapi.anon.QAxisData
+import typings.qlikEngineapi.anon.QDataPages
 import typings.qlikEngineapi.enigmaJS.IGeneratedAPI
 import typings.std.Range
 import scala.scalajs.js
@@ -381,7 +381,7 @@ trait IGenericObject extends IGeneratedAPI {
     * Options.MaxNbrTicks - maximum number of ticks.
     * @returns - A Promise <Boolean> or <Array of NxDataPage> or <Array of NxAxisData>
     */
-  def getHyperCubeContinuousData(qPath: String, qOptions: js.Array[IContinuousDataOptions]): js.Promise[AnonQAxisData] = js.native
+  def getHyperCubeContinuousData(qPath: String, qOptions: js.Array[IContinuousDataOptions]): js.Promise[QAxisData] = js.native
   /**
     * Retrieves the values of a chart, a table, or a scatter plot. It is possible to retrieve specific pages of data.
     * Note: This method does not apply to stacked tables.
@@ -501,7 +501,7 @@ trait IGenericObject extends IGeneratedAPI {
     * - Options.MaxNbrTicks - maximum number of ticks.
     * @returns - A data set Array of (NxDataPage) or (NxAxisData)
     */
-  def getListObjectContinuousData(qPath: String, qOptions: IContinuousDataOptions): js.Promise[AnonQDataPages] = js.native
+  def getListObjectContinuousData(qPath: String, qOptions: IContinuousDataOptions): js.Promise[QDataPages] = js.native
   /**
     * Retrieves the values of a list object.
     * @param qPath - Path to the definition of the object to be selected.

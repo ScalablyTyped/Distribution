@@ -1,14 +1,14 @@
 package typings.cliTable3.mod
 
-import typings.cliTable3.AnonBorder
-import typings.cliTable3.RecordCharNamestring
+import typings.cliTable3.anon.Border
+import typings.cliTable3.anon.RecordCharNamestring
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TableInstanceOptions extends TableOptions {
   var chars: RecordCharNamestring
-  var style: AnonBorder
+  var style: Border
 }
 
 object TableInstanceOptions {
@@ -20,7 +20,7 @@ object TableInstanceOptions {
     head: js.Array[String],
     rowAligns: js.Array[VerticalAlignment],
     rowHeights: js.Array[Double | Null],
-    style: AnonBorder,
+    style: Border,
     truncate: String,
     wordWrap: Boolean
   ): TableInstanceOptions = {

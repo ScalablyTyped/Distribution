@@ -4,68 +4,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Data.Xml.Dom.XmlDocumentType")
-@js.native
-class XmlDocumentType () extends IXmlDocumentType {
-  /* CompleteClass */
-  override var attributes: XmlNamedNodeMap = js.native
-  /* CompleteClass */
-  override var childNodes: XmlNodeList = js.native
-  /* CompleteClass */
-  override var entities: XmlNamedNodeMap = js.native
-  /* CompleteClass */
-  override var firstChild: IXmlNode = js.native
-  /* CompleteClass */
-  override var innerText: String = js.native
-  /* CompleteClass */
-  override var lastChild: IXmlNode = js.native
-  /* CompleteClass */
-  override var localName: js.Any = js.native
-  /* CompleteClass */
-  override var name: String = js.native
-  /* CompleteClass */
-  override var namespaceUri: js.Any = js.native
-  /* CompleteClass */
-  override var nextSibling: IXmlNode = js.native
-  /* CompleteClass */
-  override var nodeName: String = js.native
-  /* CompleteClass */
-  override var nodeType: NodeType = js.native
-  /* CompleteClass */
-  override var nodeValue: js.Any = js.native
-  /* CompleteClass */
-  override var notations: XmlNamedNodeMap = js.native
-  /* CompleteClass */
-  override var ownerDocument: XmlDocument = js.native
-  /* CompleteClass */
-  override var parentNode: IXmlNode = js.native
-  /* CompleteClass */
-  override var prefix: js.Any = js.native
-  /* CompleteClass */
-  override var previousSibling: IXmlNode = js.native
-  /* CompleteClass */
-  override def appendChild(newChild: IXmlNode): IXmlNode = js.native
-  /* CompleteClass */
-  override def cloneNode(deep: Boolean): IXmlNode = js.native
-  /* CompleteClass */
-  override def getXml(): String = js.native
-  /* CompleteClass */
-  override def hasChildNodes(): Boolean = js.native
-  /* CompleteClass */
-  override def insertBefore(newChild: IXmlNode, referenceChild: IXmlNode): IXmlNode = js.native
-  /* CompleteClass */
-  override def normalize(): Unit = js.native
-  /* CompleteClass */
-  override def removeChild(childNode: IXmlNode): IXmlNode = js.native
-  /* CompleteClass */
-  override def replaceChild(newChild: IXmlNode, referenceChild: IXmlNode): IXmlNode = js.native
-  /* CompleteClass */
-  override def selectNodes(xpath: String): XmlNodeList = js.native
-  /* CompleteClass */
-  override def selectNodesNS(xpath: String, namespaces: js.Any): XmlNodeList = js.native
-  /* CompleteClass */
-  override def selectSingleNode(xpath: String): IXmlNode = js.native
-  /* CompleteClass */
-  override def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
+trait XmlDocumentType extends IXmlDocumentType
+
+object XmlDocumentType {
+  @scala.inline
+  def apply(
+    appendChild: IXmlNode => IXmlNode,
+    attributes: XmlNamedNodeMap,
+    childNodes: XmlNodeList,
+    cloneNode: Boolean => IXmlNode,
+    entities: XmlNamedNodeMap,
+    firstChild: IXmlNode,
+    getXml: () => String,
+    hasChildNodes: () => Boolean,
+    innerText: String,
+    insertBefore: (IXmlNode, IXmlNode) => IXmlNode,
+    lastChild: IXmlNode,
+    localName: js.Any,
+    name: String,
+    namespaceUri: js.Any,
+    nextSibling: IXmlNode,
+    nodeName: String,
+    nodeType: NodeType,
+    nodeValue: js.Any,
+    normalize: () => Unit,
+    notations: XmlNamedNodeMap,
+    ownerDocument: XmlDocument,
+    parentNode: IXmlNode,
+    prefix: js.Any,
+    previousSibling: IXmlNode,
+    removeChild: IXmlNode => IXmlNode,
+    replaceChild: (IXmlNode, IXmlNode) => IXmlNode,
+    selectNodes: String => XmlNodeList,
+    selectNodesNS: (String, js.Any) => XmlNodeList,
+    selectSingleNode: String => IXmlNode,
+    selectSingleNodeNS: (String, js.Any) => IXmlNode
+  ): XmlDocumentType = {
+    val __obj = js.Dynamic.literal(appendChild = js.Any.fromFunction1(appendChild), attributes = attributes.asInstanceOf[js.Any], childNodes = childNodes.asInstanceOf[js.Any], cloneNode = js.Any.fromFunction1(cloneNode), entities = entities.asInstanceOf[js.Any], firstChild = firstChild.asInstanceOf[js.Any], getXml = js.Any.fromFunction0(getXml), hasChildNodes = js.Any.fromFunction0(hasChildNodes), innerText = innerText.asInstanceOf[js.Any], insertBefore = js.Any.fromFunction2(insertBefore), lastChild = lastChild.asInstanceOf[js.Any], localName = localName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespaceUri = namespaceUri.asInstanceOf[js.Any], nextSibling = nextSibling.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], nodeValue = nodeValue.asInstanceOf[js.Any], normalize = js.Any.fromFunction0(normalize), notations = notations.asInstanceOf[js.Any], ownerDocument = ownerDocument.asInstanceOf[js.Any], parentNode = parentNode.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], previousSibling = previousSibling.asInstanceOf[js.Any], removeChild = js.Any.fromFunction1(removeChild), replaceChild = js.Any.fromFunction2(replaceChild), selectNodes = js.Any.fromFunction1(selectNodes), selectNodesNS = js.Any.fromFunction2(selectNodesNS), selectSingleNode = js.Any.fromFunction1(selectSingleNode), selectSingleNodeNS = js.Any.fromFunction2(selectSingleNodeNS))
+    __obj.asInstanceOf[XmlDocumentType]
+  }
 }
 

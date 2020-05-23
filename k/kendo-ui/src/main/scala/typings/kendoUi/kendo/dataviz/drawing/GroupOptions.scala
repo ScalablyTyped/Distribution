@@ -22,7 +22,7 @@ object GroupOptions {
     clip: typings.kendoUi.kendo.drawing.Path = null,
     cursor: String = null,
     name: String = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     pdf: typings.kendoUi.kendo.drawing.PDFOptions = null,
     tooltip: typings.kendoUi.kendo.drawing.TooltipOptions = null,
     transform: Transformation = null,
@@ -32,11 +32,11 @@ object GroupOptions {
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (pdf != null) __obj.updateDynamic("pdf")(pdf.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupOptions]
   }
 }

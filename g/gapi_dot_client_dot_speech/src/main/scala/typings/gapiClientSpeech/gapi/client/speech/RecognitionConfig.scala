@@ -56,18 +56,18 @@ object RecognitionConfig {
     enableWordTimeOffsets: js.UndefOr[Boolean] = js.undefined,
     encoding: String = null,
     languageCode: String = null,
-    maxAlternatives: Int | Double = null,
+    maxAlternatives: js.UndefOr[Double] = js.undefined,
     profanityFilter: js.UndefOr[Boolean] = js.undefined,
-    sampleRateHertz: Int | Double = null,
+    sampleRateHertz: js.UndefOr[Double] = js.undefined,
     speechContexts: js.Array[SpeechContext] = null
   ): RecognitionConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableWordTimeOffsets)) __obj.updateDynamic("enableWordTimeOffsets")(enableWordTimeOffsets.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableWordTimeOffsets)) __obj.updateDynamic("enableWordTimeOffsets")(enableWordTimeOffsets.get.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (maxAlternatives != null) __obj.updateDynamic("maxAlternatives")(maxAlternatives.asInstanceOf[js.Any])
-    if (!js.isUndefined(profanityFilter)) __obj.updateDynamic("profanityFilter")(profanityFilter.asInstanceOf[js.Any])
-    if (sampleRateHertz != null) __obj.updateDynamic("sampleRateHertz")(sampleRateHertz.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAlternatives)) __obj.updateDynamic("maxAlternatives")(maxAlternatives.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(profanityFilter)) __obj.updateDynamic("profanityFilter")(profanityFilter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampleRateHertz)) __obj.updateDynamic("sampleRateHertz")(sampleRateHertz.get.asInstanceOf[js.Any])
     if (speechContexts != null) __obj.updateDynamic("speechContexts")(speechContexts.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecognitionConfig]
   }

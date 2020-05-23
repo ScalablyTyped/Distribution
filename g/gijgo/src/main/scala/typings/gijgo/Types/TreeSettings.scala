@@ -86,15 +86,15 @@ object TreeSettings {
     textField: String = null,
     uiLibrary: String = null,
     unselect: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _ = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): TreeSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoLoad)) __obj.updateDynamic("autoLoad")(autoLoad.asInstanceOf[js.Any])
-    if (!js.isUndefined(border)) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (!js.isUndefined(cascadeCheck)) __obj.updateDynamic("cascadeCheck")(cascadeCheck.asInstanceOf[js.Any])
-    if (!js.isUndefined(cascadeSelection)) __obj.updateDynamic("cascadeSelection")(cascadeSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoLoad)) __obj.updateDynamic("autoLoad")(autoLoad.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(border)) __obj.updateDynamic("border")(border.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cascadeCheck)) __obj.updateDynamic("cascadeCheck")(cascadeCheck.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cascadeSelection)) __obj.updateDynamic("cascadeSelection")(cascadeSelection.get.asInstanceOf[js.Any])
     if (checkboxChange != null) __obj.updateDynamic("checkboxChange")(js.Any.fromFunction4(checkboxChange))
-    if (!js.isUndefined(checkboxes)) __obj.updateDynamic("checkboxes")(checkboxes.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkboxes)) __obj.updateDynamic("checkboxes")(checkboxes.get.asInstanceOf[js.Any])
     if (checkedField != null) __obj.updateDynamic("checkedField")(checkedField.asInstanceOf[js.Any])
     if (childrenField != null) __obj.updateDynamic("childrenField")(childrenField.asInstanceOf[js.Any])
     if (collapse != null) __obj.updateDynamic("collapse")(js.Any.fromFunction3(collapse))
@@ -104,7 +104,7 @@ object TreeSettings {
     if (destroying != null) __obj.updateDynamic("destroying")(js.Any.fromFunction1(destroying))
     if (disable != null) __obj.updateDynamic("disable")(js.Any.fromFunction3(disable))
     if (disabledField != null) __obj.updateDynamic("disabledField")(disabledField.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragAndDrop)) __obj.updateDynamic("dragAndDrop")(dragAndDrop.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragAndDrop)) __obj.updateDynamic("dragAndDrop")(dragAndDrop.get.asInstanceOf[js.Any])
     if (enable != null) __obj.updateDynamic("enable")(js.Any.fromFunction3(enable))
     if (expand != null) __obj.updateDynamic("expand")(js.Any.fromFunction3(expand))
     if (hasChildrenField != null) __obj.updateDynamic("hasChildrenField")(hasChildrenField.asInstanceOf[js.Any])
@@ -114,7 +114,7 @@ object TreeSettings {
     if (imageHtmlField != null) __obj.updateDynamic("imageHtmlField")(imageHtmlField.asInstanceOf[js.Any])
     if (imageUrlField != null) __obj.updateDynamic("imageUrlField")(imageUrlField.asInstanceOf[js.Any])
     if (initialized != null) __obj.updateDynamic("initialized")(js.Any.fromFunction1(initialized))
-    if (!js.isUndefined(lazyLoading)) __obj.updateDynamic("lazyLoading")(lazyLoading.asInstanceOf[js.Any])
+    if (!js.isUndefined(lazyLoading)) __obj.updateDynamic("lazyLoading")(lazyLoading.get.asInstanceOf[js.Any])
     if (nodeDataBound != null) __obj.updateDynamic("nodeDataBound")(js.Any.fromFunction3(nodeDataBound))
     if (nodeDrop != null) __obj.updateDynamic("nodeDrop")(js.Any.fromFunction4(nodeDrop))
     if (paramNames != null) __obj.updateDynamic("paramNames")(paramNames.asInstanceOf[js.Any])
@@ -124,7 +124,7 @@ object TreeSettings {
     if (textField != null) __obj.updateDynamic("textField")(textField.asInstanceOf[js.Any])
     if (uiLibrary != null) __obj.updateDynamic("uiLibrary")(uiLibrary.asInstanceOf[js.Any])
     if (unselect != null) __obj.updateDynamic("unselect")(js.Any.fromFunction3(unselect))
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeSettings]
   }
 }

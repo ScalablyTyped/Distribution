@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * Attribute required level
-			 * -1 - Unknown
-			 * 0 - None
-			 * 1 - SystemRequired
-			 * 2 - ApplicationRequired
-			 * 3 - Recommended
-			 */
+  * Attribute required level
+  * -1 - Unknown
+  * 0 - None
+  * 1 - SystemRequired
+  * 2 - ApplicationRequired
+  * 3 - Recommended
+  */
 /* Rewritten from type alias, can be one of: 
   - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`-1`
   - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0`

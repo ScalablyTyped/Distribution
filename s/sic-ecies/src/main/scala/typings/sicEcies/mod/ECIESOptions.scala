@@ -13,8 +13,8 @@ object ECIESOptions {
   @scala.inline
   def apply(noKey: js.UndefOr[Boolean] = js.undefined, shortTag: js.UndefOr[Boolean] = js.undefined): ECIESOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(noKey)) __obj.updateDynamic("noKey")(noKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(shortTag)) __obj.updateDynamic("shortTag")(shortTag.asInstanceOf[js.Any])
+    if (!js.isUndefined(noKey)) __obj.updateDynamic("noKey")(noKey.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shortTag)) __obj.updateDynamic("shortTag")(shortTag.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ECIESOptions]
   }
 }

@@ -133,8 +133,8 @@ object Build {
   def apply(
     arn: NonEmptyString = null,
     artifacts: BuildArtifacts = null,
-    buildComplete: js.UndefOr[scala.Boolean] = js.undefined,
-    buildNumber: Int | Double = null,
+    buildComplete: js.UndefOr[Boolean] = js.undefined,
+    buildNumber: js.UndefOr[WrapperLong] = js.undefined,
     buildStatus: StatusType = null,
     cache: ProjectCache = null,
     currentPhase: String = null,
@@ -149,7 +149,7 @@ object Build {
     networkInterface: NetworkInterface = null,
     phases: BuildPhases = null,
     projectName: NonEmptyString = null,
-    queuedTimeoutInMinutes: Int | Double = null,
+    queuedTimeoutInMinutes: js.UndefOr[WrapperInt] = js.undefined,
     reportArns: BuildReportArns = null,
     resolvedSourceVersion: NonEmptyString = null,
     secondaryArtifacts: BuildArtifactsList = null,
@@ -159,14 +159,14 @@ object Build {
     source: ProjectSource = null,
     sourceVersion: NonEmptyString = null,
     startTime: Timestamp = null,
-    timeoutInMinutes: Int | Double = null,
+    timeoutInMinutes: js.UndefOr[WrapperInt] = js.undefined,
     vpcConfig: VpcConfig = null
   ): Build = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (artifacts != null) __obj.updateDynamic("artifacts")(artifacts.asInstanceOf[js.Any])
-    if (!js.isUndefined(buildComplete)) __obj.updateDynamic("buildComplete")(buildComplete.asInstanceOf[js.Any])
-    if (buildNumber != null) __obj.updateDynamic("buildNumber")(buildNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(buildComplete)) __obj.updateDynamic("buildComplete")(buildComplete.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(buildNumber)) __obj.updateDynamic("buildNumber")(buildNumber.get.asInstanceOf[js.Any])
     if (buildStatus != null) __obj.updateDynamic("buildStatus")(buildStatus.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (currentPhase != null) __obj.updateDynamic("currentPhase")(currentPhase.asInstanceOf[js.Any])
@@ -181,7 +181,7 @@ object Build {
     if (networkInterface != null) __obj.updateDynamic("networkInterface")(networkInterface.asInstanceOf[js.Any])
     if (phases != null) __obj.updateDynamic("phases")(phases.asInstanceOf[js.Any])
     if (projectName != null) __obj.updateDynamic("projectName")(projectName.asInstanceOf[js.Any])
-    if (queuedTimeoutInMinutes != null) __obj.updateDynamic("queuedTimeoutInMinutes")(queuedTimeoutInMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(queuedTimeoutInMinutes)) __obj.updateDynamic("queuedTimeoutInMinutes")(queuedTimeoutInMinutes.get.asInstanceOf[js.Any])
     if (reportArns != null) __obj.updateDynamic("reportArns")(reportArns.asInstanceOf[js.Any])
     if (resolvedSourceVersion != null) __obj.updateDynamic("resolvedSourceVersion")(resolvedSourceVersion.asInstanceOf[js.Any])
     if (secondaryArtifacts != null) __obj.updateDynamic("secondaryArtifacts")(secondaryArtifacts.asInstanceOf[js.Any])
@@ -191,7 +191,7 @@ object Build {
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (sourceVersion != null) __obj.updateDynamic("sourceVersion")(sourceVersion.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (timeoutInMinutes != null) __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutInMinutes)) __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes.get.asInstanceOf[js.Any])
     if (vpcConfig != null) __obj.updateDynamic("vpcConfig")(vpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[Build]
   }

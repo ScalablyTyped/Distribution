@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.landscape
 import typings.arcgisJsApi.arcgisJsApiStrings.large
 import typings.arcgisJsApi.arcgisJsApiStrings.medium
@@ -67,7 +66,16 @@ trait BreakpointsOwner extends js.Object {
   var widthBreakpoint: xsmall | small | medium | large | xlarge
 }
 
-@JSGlobal("__esri.BreakpointsOwner")
-@js.native
-object BreakpointsOwner extends TopLevel[BreakpointsOwnerConstructor]
+object BreakpointsOwner {
+  @scala.inline
+  def apply(
+    breakpoints: BreakpointsOwnerBreakpoints,
+    heightBreakpoint: xsmall | small | medium | large | xlarge,
+    orientation: landscape | portrait,
+    widthBreakpoint: xsmall | small | medium | large | xlarge
+  ): BreakpointsOwner = {
+    val __obj = js.Dynamic.literal(breakpoints = breakpoints.asInstanceOf[js.Any], heightBreakpoint = heightBreakpoint.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], widthBreakpoint = widthBreakpoint.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BreakpointsOwner]
+  }
+}
 

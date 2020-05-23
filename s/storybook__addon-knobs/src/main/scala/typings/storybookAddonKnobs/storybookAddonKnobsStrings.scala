@@ -11,9 +11,6 @@ object storybookAddonKnobsStrings {
   sealed trait Mutable extends js.Object
   
   @js.native
-  sealed trait Other extends js.Object
-  
-  @js.native
   sealed trait array extends KnobType
   
   @js.native
@@ -41,9 +38,6 @@ object storybookAddonKnobsStrings {
   sealed trait `inline-radio` extends OptionsKnobOptionsDisplay
   
   @js.native
-  sealed trait knobs extends js.Object
-  
-  @js.native
   sealed trait `multi-select` extends OptionsKnobOptionsDisplay
   
   @js.native
@@ -67,15 +61,10 @@ object storybookAddonKnobsStrings {
        with OptionsKnobOptionsDisplay
   
   @js.native
-  sealed trait storybookjsSlashknobs extends js.Object
-  
-  @js.native
   sealed trait text extends KnobType
   
   @scala.inline
   def Mutable: Mutable = "Mutable".asInstanceOf[Mutable]
-  @scala.inline
-  def Other: Other = "Other".asInstanceOf[Other]
   @scala.inline
   def array: array = "array".asInstanceOf[array]
   @scala.inline
@@ -95,8 +84,6 @@ object storybookAddonKnobsStrings {
   @scala.inline
   def `inline-radio`: `inline-radio` = "inline-radio".asInstanceOf[`inline-radio`]
   @scala.inline
-  def knobs: knobs = "knobs".asInstanceOf[knobs]
-  @scala.inline
   def `multi-select`: `multi-select` = "multi-select".asInstanceOf[`multi-select`]
   @scala.inline
   def number: number = "number".asInstanceOf[number]
@@ -110,8 +97,6 @@ object storybookAddonKnobsStrings {
   def radios: radios = "radios".asInstanceOf[radios]
   @scala.inline
   def select: select = "select".asInstanceOf[select]
-  @scala.inline
-  def storybookjsSlashknobs: storybookjsSlashknobs = "storybookjs/knobs".asInstanceOf[storybookjsSlashknobs]
   @scala.inline
   def text: text = "text".asInstanceOf[text]
 }

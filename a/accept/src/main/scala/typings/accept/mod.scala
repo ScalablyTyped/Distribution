@@ -1,5 +1,6 @@
 package typings.accept
 
+import typings.accept.anon.Charsets
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,6 +29,6 @@ object mod extends js.Object {
   def mediaType(mediaTypeHeader: String, preferences: js.Array[String]): String = js.native
   def mediaTypes(): js.Array[String] = js.native
   def mediaTypes(mediaTypeHeader: String): js.Array[String] = js.native
-  def parseAll(headers: Record[String, js.UndefOr[String | js.Array[String]]]): AnonCharsets = js.native
+  def parseAll(headers: Record[String, js.UndefOr[String | js.Array[String]]]): Charsets = js.native
 }
 

@@ -1,17 +1,17 @@
 package typings.firefoxWebextBrowser.browser.manifest
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.firefoxWebextBrowser.AnonEdge
-import typings.firefoxWebextBrowser.AnonGecko
+import typings.firefoxWebextBrowser.anon.Edge
+import typings.firefoxWebextBrowser.anon.Gecko
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a WebExtension dictionary manifest.json file */
 trait WebExtensionDictionaryManifest extends js.Object {
-  var applications: js.UndefOr[AnonGecko] = js.undefined
+  var applications: js.UndefOr[Gecko] = js.undefined
   var author: js.UndefOr[String] = js.undefined
-  var browser_specific_settings: js.UndefOr[AnonEdge] = js.undefined
+  var browser_specific_settings: js.UndefOr[Edge] = js.undefined
   var description: js.UndefOr[String] = js.undefined
   var dictionaries: StringDictionary[String]
   var homepage_url: js.UndefOr[String] = js.undefined
@@ -28,9 +28,9 @@ object WebExtensionDictionaryManifest {
     manifest_version: Double,
     name: String,
     version: String,
-    applications: AnonGecko = null,
+    applications: Gecko = null,
     author: String = null,
-    browser_specific_settings: AnonEdge = null,
+    browser_specific_settings: Edge = null,
     description: String = null,
     homepage_url: String = null,
     short_name: String = null

@@ -48,7 +48,7 @@ object ReferenceSet {
     description: String = null,
     id: String = null,
     md5checksum: String = null,
-    ncbiTaxonId: Int | Double = null,
+    ncbiTaxonId: js.UndefOr[Double] = js.undefined,
     referenceIds: js.Array[String] = null,
     sourceAccessions: js.Array[String] = null,
     sourceUri: String = null
@@ -58,7 +58,7 @@ object ReferenceSet {
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (md5checksum != null) __obj.updateDynamic("md5checksum")(md5checksum.asInstanceOf[js.Any])
-    if (ncbiTaxonId != null) __obj.updateDynamic("ncbiTaxonId")(ncbiTaxonId.asInstanceOf[js.Any])
+    if (!js.isUndefined(ncbiTaxonId)) __obj.updateDynamic("ncbiTaxonId")(ncbiTaxonId.get.asInstanceOf[js.Any])
     if (referenceIds != null) __obj.updateDynamic("referenceIds")(referenceIds.asInstanceOf[js.Any])
     if (sourceAccessions != null) __obj.updateDynamic("sourceAccessions")(sourceAccessions.asInstanceOf[js.Any])
     if (sourceUri != null) __obj.updateDynamic("sourceUri")(sourceUri.asInstanceOf[js.Any])

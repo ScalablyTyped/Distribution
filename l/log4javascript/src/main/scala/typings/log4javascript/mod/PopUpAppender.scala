@@ -1,7 +1,7 @@
 package typings.log4javascript.mod
 
-import typings.log4javascript.AnonAppendResult
-import typings.std.Window_
+import typings.log4javascript.anon.AppendResult
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,7 +45,7 @@ class PopUpAppender () extends Appender {
   	 */
   def addCommandLineFunction(
     functionName: String,
-    commandLineFunction: js.Function3[/* appender */ Appender, /* args */ js.Any, /* returnValue */ AnonAppendResult, _]
+    commandLineFunction: js.Function3[/* appender */ Appender, /* args */ js.Any, /* returnValue */ AppendResult, _]
   ): Unit = js.native
   /**
   	 * Clears all messages from the console window.
@@ -85,7 +85,7 @@ class PopUpAppender () extends Appender {
   /**
   	 * Returns a reference to the window in which commands typed into the command line are currently being executed.
   	 */
-  def getCommandWindow(): Window_ = js.native
+  def getCommandWindow(): Window = js.native
   /**
   	 * Returns the outer height in pixels of the pop-up window.
   	 */
@@ -150,7 +150,7 @@ class PopUpAppender () extends Appender {
   /**
   	 * Sets the window in which commands typed into the command line are executed.
   	 */
-  def setCommandWindow(commandWindow: Window_): Unit = js.native
+  def setCommandWindow(commandWindow: Window): Unit = js.native
   /**
   	 * Sets whether to announce to show an alert to the user when the pop-up window cannot be created as a result of a pop-up blocker.
   	 */

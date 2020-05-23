@@ -5,14 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.core.LocaleData")
 @js.native
-class LocaleData protected () extends Object {
-  /**
-    * Creates an instance of the Data.
-    * @param oLocale the locale
-    */
-  def this(oLocale: Locale) = this()
+trait LocaleData extends Object {
   /**
     * Returns the defined pattern for representing the calendar week number.
     * @since 1.32.0

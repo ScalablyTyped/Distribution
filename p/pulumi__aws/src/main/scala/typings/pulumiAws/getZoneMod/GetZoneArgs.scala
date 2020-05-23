@@ -38,15 +38,15 @@ object GetZoneArgs {
   def apply(
     name: String = null,
     privateZone: js.UndefOr[Boolean] = js.undefined,
-    resourceRecordSetCount: Int | Double = null,
+    resourceRecordSetCount: js.UndefOr[Double] = js.undefined,
     tags: StringDictionary[js.Any] = null,
     vpcId: String = null,
     zoneId: String = null
   ): GetZoneArgs = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(privateZone)) __obj.updateDynamic("privateZone")(privateZone.asInstanceOf[js.Any])
-    if (resourceRecordSetCount != null) __obj.updateDynamic("resourceRecordSetCount")(resourceRecordSetCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(privateZone)) __obj.updateDynamic("privateZone")(privateZone.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resourceRecordSetCount)) __obj.updateDynamic("resourceRecordSetCount")(resourceRecordSetCount.get.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
     if (zoneId != null) __obj.updateDynamic("zoneId")(zoneId.asInstanceOf[js.Any])

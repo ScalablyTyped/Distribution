@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonAspectRatio
+import typings.cesium.anon.AspectRatio
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "OrthographicFrustum")
 @js.native
 class OrthographicFrustum () extends Frustum {
-  def this(options: AnonAspectRatio) = this()
+  def this(options: AspectRatio) = this()
   var aspectRatio: Double = js.native
   var width: Double = js.native
   def clone(result: OrthographicFrustum): OrthographicFrustum = js.native

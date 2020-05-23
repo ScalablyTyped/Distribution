@@ -1,37 +1,37 @@
 organization := "org.scalablytyped"
 name := "optics-agent"
-version := "1.1-dt-20190826Z-0dca33"
-scalaVersion := "2.13.1"
+version := "1.1-dt-20200515Z-8f8a2f"
+scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-faa220",
-  "org.scalablytyped" %%% "body-parser" % "1.19-dt-20200210Z-e204eb",
-  "org.scalablytyped" %%% "boom" % "7.3-dt-20200226Z-e98120",
-  "org.scalablytyped" %%% "catbox" % "10.0-dt-20190219Z-e26bff",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20200226Z-677666",
-  "org.scalablytyped" %%% "content-disposition" % "0.5-dt-20200331Z-650a48",
-  "org.scalablytyped" %%% "cookies" % "0.7-dt-20191002Z-c7af76",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20200409Z-704088",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20200415Z-afdfd2",
-  "org.scalablytyped" %%% "graphql" % "14.6.0-d18599",
-  "org.scalablytyped" %%% "hapi" % "18.0-dt-20200227Z-dc6d2a",
-  "org.scalablytyped" %%% "iron" % "5.0-dt-20180214Z-74c478",
-  "org.scalablytyped" %%% "joi" % "14.3-dt-20200227Z-ad8611",
-  "org.scalablytyped" %%% "keygrip" % "1.0-dt-20191226Z-74aed5",
-  "org.scalablytyped" %%% "koa" % "2.11.0-dt-20200327Z-6cad27",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20191126Z-cd6086",
-  "org.scalablytyped" %%% "mime-db" % "1.27-dt-20200330Z-8b3e50",
-  "org.scalablytyped" %%% "mimos" % "3.0-dt-20200330Z-876f6d",
-  "org.scalablytyped" %%% "node" % "13.13-dt-20200417Z-f3d81d",
-  "org.scalablytyped" %%% "podium" % "1.0-dt-20200225Z-8c1d2b",
-  "org.scalablytyped" %%% "qs" % "6.9-dt-20200225Z-6c439e",
-  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-0a8d6e",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20200227Z-c88828",
-  "org.scalablytyped" %%% "shot" % "4.0-dt-20181002Z-d7c346",
-  "org.scalablytyped" %%% "std" % "3.8-9b2470")
+  "org.scalablytyped" %%% "accepts" % "1.3-dt-20200515Z-3e6292",
+  "org.scalablytyped" %%% "body-parser" % "1.19-dt-20200210Z-5329e6",
+  "org.scalablytyped" %%% "boom" % "7.3-dt-20200515Z-c922ee",
+  "org.scalablytyped" %%% "catbox" % "10.0-dt-20200515Z-5d07c9",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20200515Z-4db3c4",
+  "org.scalablytyped" %%% "content-disposition" % "0.5-dt-20200515Z-bcd10f",
+  "org.scalablytyped" %%% "cookies" % "0.7-dt-20191002Z-b72608",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20200515Z-9eb2b7",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20200515Z-c2bfc2",
+  "org.scalablytyped" %%% "graphql" % "14.6.0-2fa9e2",
+  "org.scalablytyped" %%% "hapi" % "18.0-dt-20200515Z-552717",
+  "org.scalablytyped" %%% "iron" % "5.0-dt-20200515Z-7b393d",
+  "org.scalablytyped" %%% "joi" % "14.3-dt-20200515Z-89560b",
+  "org.scalablytyped" %%% "keygrip" % "1.0-dt-20200515Z-0ee69b",
+  "org.scalablytyped" %%% "koa" % "2.11.0-dt-20200515Z-990721",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20200515Z-593c89",
+  "org.scalablytyped" %%% "mime-db" % "1.43-dt-20200424Z-ce2530",
+  "org.scalablytyped" %%% "mimos" % "3.0-dt-20200515Z-36c444",
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200521Z-3aabb7",
+  "org.scalablytyped" %%% "podium" % "1.0-dt-20200515Z-9090cb",
+  "org.scalablytyped" %%% "qs" % "6.9-dt-20200519Z-7ad812",
+  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-cd197c",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20200519Z-9da187",
+  "org.scalablytyped" %%% "shot" % "4.0-dt-20200515Z-5c9084",
+  "org.scalablytyped" %%% "std" % "3.9-18cbeb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

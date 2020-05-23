@@ -72,7 +72,7 @@ object IScatter {
     itemInstancing: js.Any = null,
     label: js.Any = null,
     labelField: js.Any = null,
-    labelOverflowPadding: Int | Double = null,
+    labelOverflowPadding: js.UndefOr[Double] = js.undefined,
     listeners: js.Any = null,
     marker: js.Any = null,
     markerSubStyle: js.Any = null,
@@ -200,7 +200,7 @@ object IScatter {
     if (itemInstancing != null) __obj.updateDynamic("itemInstancing")(itemInstancing.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelField != null) __obj.updateDynamic("labelField")(labelField.asInstanceOf[js.Any])
-    if (labelOverflowPadding != null) __obj.updateDynamic("labelOverflowPadding")(labelOverflowPadding.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelOverflowPadding)) __obj.updateDynamic("labelOverflowPadding")(labelOverflowPadding.get.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
     if (markerSubStyle != null) __obj.updateDynamic("markerSubStyle")(markerSubStyle.asInstanceOf[js.Any])
@@ -249,8 +249,8 @@ object IScatter {
     if (setXField != null) __obj.updateDynamic("setXField")(js.Any.fromFunction1(setXField))
     if (setYAxis != null) __obj.updateDynamic("setYAxis")(js.Any.fromFunction1(setYAxis))
     if (setYField != null) __obj.updateDynamic("setYField")(js.Any.fromFunction1(setYField))
-    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

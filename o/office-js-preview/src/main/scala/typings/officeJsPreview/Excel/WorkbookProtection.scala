@@ -1,9 +1,9 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.WorkbookProtectionData
 import typings.officeJsPreview.Excel.Interfaces.WorkbookProtectionLoadOptions
 import typings.officeJsPreview.OfficeExtension.ClientObject
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,15 +14,14 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.7]
   */
-@JSGlobal("Excel.WorkbookProtection")
 @js.native
-class WorkbookProtection () extends ClientObject {
+trait WorkbookProtection extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_WorkbookProtection: RequestContext = js.native
   /**
     *
-    * Indicates if the workbook is protected. Read-Only.
+    * Specifies if the workbook is protected.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -34,7 +33,7 @@ class WorkbookProtection () extends ClientObject {
     */
   def load(): WorkbookProtection = js.native
   def load(options: WorkbookProtectionLoadOptions): WorkbookProtection = js.native
-  def load(propertyNamesAndPaths: AnonExpand): WorkbookProtection = js.native
+  def load(propertyNamesAndPaths: Expand): WorkbookProtection = js.native
   def load(propertyNames: String): WorkbookProtection = js.native
   def load(propertyNames: js.Array[String]): WorkbookProtection = js.native
   /**

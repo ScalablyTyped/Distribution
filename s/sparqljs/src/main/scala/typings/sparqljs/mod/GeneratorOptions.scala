@@ -12,7 +12,7 @@ object GeneratorOptions {
   @scala.inline
   def apply(allPrefixes: js.UndefOr[Boolean] = js.undefined): GeneratorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allPrefixes)) __obj.updateDynamic("allPrefixes")(allPrefixes.asInstanceOf[js.Any])
+    if (!js.isUndefined(allPrefixes)) __obj.updateDynamic("allPrefixes")(allPrefixes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeneratorOptions]
   }
 }

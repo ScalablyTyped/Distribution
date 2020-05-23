@@ -67,20 +67,9 @@ object File {
     readSync: () => String,
     relPath: String,
     toVinyl: () => typings.vinyl.mod.File,
-    isAsset: js.UndefOr[scala.Nothing] = js.undefined,
-    isCollection: js.UndefOr[scala.Nothing] = js.undefined,
-    isComponent: js.UndefOr[scala.Nothing] = js.undefined,
-    isDoc: js.UndefOr[scala.Nothing] = js.undefined,
-    isVariant: js.UndefOr[scala.Nothing] = js.undefined,
     stat: Stats = null
   ): File = {
-    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], contents = contents.asInstanceOf[js.Any], cwd = cwd.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], editorMode = editorMode.asInstanceOf[js.Any], editorScope = editorScope.asInstanceOf[js.Any], ext = ext.asInstanceOf[js.Any], getContent = js.Any.fromFunction0(getContent), getContentSync = js.Any.fromFunction0(getContentSync), getContext = js.Any.fromFunction0(getContext), githubColor = githubColor.asInstanceOf[js.Any], handle = handle.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isBinary = isBinary.asInstanceOf[js.Any], isFile = isFile.asInstanceOf[js.Any], isImage = isImage.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any], mime = mime.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], read = js.Any.fromFunction0(read), readSync = js.Any.fromFunction0(readSync), relPath = relPath.asInstanceOf[js.Any], toVinyl = js.Any.fromFunction0(toVinyl))
-    if (!js.isUndefined(isAsset)) __obj.updateDynamic("isAsset")(isAsset.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCollection)) __obj.updateDynamic("isCollection")(isCollection.asInstanceOf[js.Any])
-    if (!js.isUndefined(isComponent)) __obj.updateDynamic("isComponent")(isComponent.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDoc)) __obj.updateDynamic("isDoc")(isDoc.asInstanceOf[js.Any])
-    if (!js.isUndefined(isVariant)) __obj.updateDynamic("isVariant")(isVariant.asInstanceOf[js.Any])
-    if (stat != null) __obj.updateDynamic("stat")(stat.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], contents = contents.asInstanceOf[js.Any], cwd = cwd.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], editorMode = editorMode.asInstanceOf[js.Any], editorScope = editorScope.asInstanceOf[js.Any], ext = ext.asInstanceOf[js.Any], getContent = js.Any.fromFunction0(getContent), getContentSync = js.Any.fromFunction0(getContentSync), getContext = js.Any.fromFunction0(getContext), githubColor = githubColor.asInstanceOf[js.Any], handle = handle.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isBinary = isBinary.asInstanceOf[js.Any], isFile = isFile.asInstanceOf[js.Any], isImage = isImage.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any], mime = mime.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], read = js.Any.fromFunction0(read), readSync = js.Any.fromFunction0(readSync), relPath = relPath.asInstanceOf[js.Any], toVinyl = js.Any.fromFunction0(toVinyl), stat = stat.asInstanceOf[js.Any])
     __obj.asInstanceOf[File]
   }
 }

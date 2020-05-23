@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.saxes.mod.AttributeEventForOptions because Already inherited */ trait SaxesAttributePlain extends SaxesAttribute {
   /**
     * The attribute's name.

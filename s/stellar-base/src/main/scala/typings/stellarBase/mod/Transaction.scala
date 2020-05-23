@@ -1,7 +1,7 @@
 package typings.stellarBase.mod
 
 import typings.node.Buffer
-import typings.stellarBase.AnonMaxTime
+import typings.stellarBase.anon.MaxTime
 import typings.stellarBase.mod.xdr.DecoratedSignature
 import typings.stellarBase.mod.xdr.TransactionEnvelope
 import scala.scalajs.js
@@ -22,7 +22,7 @@ class Transaction[TMemo /* <: Memo[MemoType] */, TOps /* <: js.Array[Operation] 
   var sequence: String = js.native
   var signatures: js.Array[DecoratedSignature] = js.native
   var source: String = js.native
-  var timeBounds: js.UndefOr[AnonMaxTime] = js.native
+  var timeBounds: js.UndefOr[MaxTime] = js.native
   def addSignature(publicKey: String, signature: String): Unit = js.native
   def getKeypairSignature(keypair: Keypair): String = js.native
   def hash(): Buffer = js.native

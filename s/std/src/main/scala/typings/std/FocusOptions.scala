@@ -12,7 +12,7 @@ object FocusOptions {
   @scala.inline
   def apply(preventScroll: js.UndefOr[scala.Boolean] = js.undefined): FocusOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(preventScroll)) __obj.updateDynamic("preventScroll")(preventScroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventScroll)) __obj.updateDynamic("preventScroll")(preventScroll.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FocusOptions]
   }
 }

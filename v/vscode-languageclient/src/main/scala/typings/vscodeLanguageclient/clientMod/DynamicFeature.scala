@@ -30,7 +30,6 @@ trait DynamicFeature[RO] extends js.Object {
     * @param capabilities The client capabilities to fill.
     */
   def fillClientCapabilities(capabilities: ClientCapabilities): Unit = js.native
-  def initialize(capabilities: ServerCapabilities[_]): Unit = js.native
   /**
     * Initialize the feature. This method is called on a feature instance
     * when the client has successfully received the initalize request from
@@ -41,6 +40,7 @@ trait DynamicFeature[RO] extends js.Object {
     * @param documentSelector the document selector pass to the client's constuctor.
     *  May be `undefined` if the client was created without a selector.
     */
+  def initialize(capabilities: ServerCapabilities[_]): Unit = js.native
   def initialize(
     capabilities: ServerCapabilities[_],
     documentSelector: typings.vscodeLanguageserverProtocol.protocolMod.DocumentSelector

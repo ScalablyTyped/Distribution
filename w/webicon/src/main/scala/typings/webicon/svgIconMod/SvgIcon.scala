@@ -19,12 +19,12 @@ object SvgIcon {
   @scala.inline
   def apply(
     iconIdParser: (/* id */ String, /* params */ js.Array[String]) => String = null,
-    iconSize: Int | Double = null,
+    iconSize: js.UndefOr[Double] = js.undefined,
     viewBox: String = null
   ): SvgIcon = {
     val __obj = js.Dynamic.literal()
     if (iconIdParser != null) __obj.updateDynamic("iconIdParser")(js.Any.fromFunction2(iconIdParser))
-    if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(iconSize)) __obj.updateDynamic("iconSize")(iconSize.get.asInstanceOf[js.Any])
     if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox.asInstanceOf[js.Any])
     __obj.asInstanceOf[SvgIcon]
   }

@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "amqp-connection-manager"
-version := "2.0-dt-20200331Z-dccd67"
-scalaVersion := "2.13.1"
+version := "2.0-dt-20200515Z-2de208"
+scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "amqplib" % "0.5-dt-20200225Z-91dd15",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20200302Z-5cd42f",
-  "org.scalablytyped" %%% "node" % "13.13-dt-20200417Z-f3d81d",
-  "org.scalablytyped" %%% "std" % "3.8-9b2470")
+  "org.scalablytyped" %%% "amqplib" % "0.5-dt-20200515Z-10df82",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20200520Z-32ab28",
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200521Z-3aabb7",
+  "org.scalablytyped" %%% "std" % "3.9-18cbeb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

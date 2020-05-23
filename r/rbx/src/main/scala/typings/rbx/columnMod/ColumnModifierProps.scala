@@ -60,7 +60,7 @@ object ColumnModifierProps {
     if (desktop != null) __obj.updateDynamic("desktop")(desktop.asInstanceOf[js.Any])
     if (fullhd != null) __obj.updateDynamic("fullhd")(fullhd.asInstanceOf[js.Any])
     if (mobile != null) __obj.updateDynamic("mobile")(mobile.asInstanceOf[js.Any])
-    if (!js.isUndefined(narrow)) __obj.updateDynamic("narrow")(narrow.asInstanceOf[js.Any])
+    if (!js.isUndefined(narrow)) __obj.updateDynamic("narrow")(narrow.get.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (tablet != null) __obj.updateDynamic("tablet")(tablet.asInstanceOf[js.Any])

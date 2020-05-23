@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait FreeDrawingBrush extends js.Object {
   /**
-  	 * Can be any regular color value.
-  	 */
+    * Can be any regular color value.
+    */
   var color: String
   /**
-  	 * Brush width measured in pixels.
-  	 */
+    * Brush width measured in pixels.
+    */
   var width: Double
 }
 

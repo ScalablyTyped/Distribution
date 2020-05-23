@@ -10,56 +10,56 @@ trait IBoundMomentum extends IAbstract {
   /** [Config Option] (Object) */
   var bounce: js.UndefOr[js.Any] = js.undefined
   /** [Method] Returns the value of bounce
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getBounce: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of maxMomentumValue
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMaxMomentumValue: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of minMomentumValue
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMinMomentumValue: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of minVelocity
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMinVelocity: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of momentum
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getMomentum: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of startVelocity
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getStartVelocity: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Config Option] (Number) */
   var minVelocity: js.UndefOr[Double] = js.undefined
   /** [Config Option] (Object) */
   var momentum: js.UndefOr[js.Any] = js.undefined
   /** [Method] Sets the value of bounce
-  		* @param bounce Object The new value.
-  		*/
+    * @param bounce Object The new value.
+    */
   var setBounce: js.UndefOr[js.Function1[/* bounce */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of maxMomentumValue
-  		* @param maxMomentumValue Number The new value.
-  		*/
+    * @param maxMomentumValue Number The new value.
+    */
   var setMaxMomentumValue: js.UndefOr[js.Function1[/* maxMomentumValue */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of minMomentumValue
-  		* @param minMomentumValue Number The new value.
-  		*/
+    * @param minMomentumValue Number The new value.
+    */
   var setMinMomentumValue: js.UndefOr[js.Function1[/* minMomentumValue */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of minVelocity
-  		* @param minVelocity Number The new value.
-  		*/
+    * @param minVelocity Number The new value.
+    */
   var setMinVelocity: js.UndefOr[js.Function1[/* minVelocity */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of momentum
-  		* @param momentum Object The new value.
-  		*/
+    * @param momentum Object The new value.
+    */
   var setMomentum: js.UndefOr[js.Function1[/* momentum */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of startVelocity
-  		* @param startVelocity Number The new value.
-  		*/
+    * @param startVelocity Number The new value.
+    */
   var setStartVelocity: js.UndefOr[js.Function1[/* startVelocity */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Config Option] (Number) */
   var startVelocity: js.UndefOr[Double] = js.undefined
@@ -88,7 +88,7 @@ object IBoundMomentum {
     getStartVelocity: () => Double = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    minVelocity: Int | Double = null,
+    minVelocity: js.UndefOr[Double] = js.undefined,
     mixins: js.Any = null,
     momentum: js.Any = null,
     platformConfig: js.Any = null,
@@ -102,7 +102,7 @@ object IBoundMomentum {
     setStartValue: /* startValue */ js.UndefOr[Double] => Unit = null,
     setStartVelocity: /* startVelocity */ js.UndefOr[Double] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
-    startVelocity: Int | Double = null,
+    startVelocity: js.UndefOr[Double] = js.undefined,
     statics: js.Any = null,
     uses: Array = null
   ): IBoundMomentum = {
@@ -127,7 +127,7 @@ object IBoundMomentum {
     if (getStartVelocity != null) __obj.updateDynamic("getStartVelocity")(js.Any.fromFunction0(getStartVelocity))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (minVelocity != null) __obj.updateDynamic("minVelocity")(minVelocity.asInstanceOf[js.Any])
+    if (!js.isUndefined(minVelocity)) __obj.updateDynamic("minVelocity")(minVelocity.get.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (momentum != null) __obj.updateDynamic("momentum")(momentum.asInstanceOf[js.Any])
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
@@ -140,8 +140,8 @@ object IBoundMomentum {
     if (setStartTime != null) __obj.updateDynamic("setStartTime")(js.Any.fromFunction1(setStartTime))
     if (setStartValue != null) __obj.updateDynamic("setStartValue")(js.Any.fromFunction1(setStartValue))
     if (setStartVelocity != null) __obj.updateDynamic("setStartVelocity")(js.Any.fromFunction1(setStartVelocity))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
-    if (startVelocity != null) __obj.updateDynamic("startVelocity")(startVelocity.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startVelocity)) __obj.updateDynamic("startVelocity")(startVelocity.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBoundMomentum]

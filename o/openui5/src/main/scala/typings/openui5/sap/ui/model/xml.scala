@@ -8,12 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object xml extends js.Object {
   @js.native
-  class XMLModel protected () extends ClientModel {
-    /**
-      * Constructor for a new XMLModel.
-      * @param oData either the URL where to load the XML from or a XML
-      */
-    def this(oData: js.Any) = this()
+  trait XMLModel extends ClientModel {
     /**
       * Serializes the current XML data of the model into a string.
       */

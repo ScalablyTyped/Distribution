@@ -1,6 +1,6 @@
 package typings.aceDiff.mod
 
-import typings.aceDiff.AnonLeft
+import typings.aceDiff.anon.Left
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait AceDiff extends js.Object {
   def destroy(): Unit
   def diff(): Unit
-  def getEditors(): AnonLeft
+  def getEditors(): Left
   def getNumDiffs(): Double
   def setOptions(options: AceDiffOpts): Unit
 }
@@ -18,7 +18,7 @@ object AceDiff {
   def apply(
     destroy: () => Unit,
     diff: () => Unit,
-    getEditors: () => AnonLeft,
+    getEditors: () => Left,
     getNumDiffs: () => Double,
     setOptions: AceDiffOpts => Unit
   ): AceDiff = {

@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonInTangents
+import typings.cesium.anon.InTangents
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "HermiteSpline")
 @js.native
 class HermiteSpline protected () extends js.Object {
-  def this(options: AnonInTangents) = this()
+  def this(options: InTangents) = this()
   var inTangents: js.Array[Cartesian3] = js.native
   var outTangents: js.Array[Cartesian3] = js.native
   var points: js.Array[Cartesian3] = js.native

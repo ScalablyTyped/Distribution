@@ -8,9 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Taxonomy.Term")
 @js.native
-class Term () extends TermSetItem {
+trait Term extends TermSetItem {
   def copy(doCopyChildren: Boolean): Term = js.native
   def createLabel(labelName: String, lcid: Double, isDefault: Boolean): Label = js.native
   def deleteAllLocalCustomProperties(): Unit = js.native

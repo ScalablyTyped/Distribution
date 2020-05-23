@@ -58,7 +58,7 @@ trait SimpleMarkerSymbolProperties extends MarkerSymbolProperties {
 object SimpleMarkerSymbolProperties {
   @scala.inline
   def apply(
-    angle: Int | Double = null,
+    angle: js.UndefOr[Double] = js.undefined,
     color: Color_ | js.Array[Double] | String = null,
     outline: SimpleLineSymbolProperties = null,
     path: String = null,
@@ -69,7 +69,7 @@ object SimpleMarkerSymbolProperties {
     yoffset: Double | String = null
   ): SimpleMarkerSymbolProperties = {
     val __obj = js.Dynamic.literal()
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])

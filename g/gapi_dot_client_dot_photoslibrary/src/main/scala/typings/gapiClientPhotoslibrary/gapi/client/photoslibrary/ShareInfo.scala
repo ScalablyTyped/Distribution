@@ -37,8 +37,8 @@ object ShareInfo {
     sharedAlbumOptions: SharedAlbumOptions = null
   ): ShareInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isJoined)) __obj.updateDynamic("isJoined")(isJoined.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOwned)) __obj.updateDynamic("isOwned")(isOwned.asInstanceOf[js.Any])
+    if (!js.isUndefined(isJoined)) __obj.updateDynamic("isJoined")(isJoined.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOwned)) __obj.updateDynamic("isOwned")(isOwned.get.asInstanceOf[js.Any])
     if (shareToken != null) __obj.updateDynamic("shareToken")(shareToken.asInstanceOf[js.Any])
     if (shareableUrl != null) __obj.updateDynamic("shareableUrl")(shareableUrl.asInstanceOf[js.Any])
     if (sharedAlbumOptions != null) __obj.updateDynamic("sharedAlbumOptions")(sharedAlbumOptions.asInstanceOf[js.Any])

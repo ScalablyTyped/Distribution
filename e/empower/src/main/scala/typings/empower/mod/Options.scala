@@ -20,10 +20,10 @@ object Options {
     saveContextOnRethrow: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(destructive)) __obj.updateDynamic("destructive")(destructive.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifyMessageOnRethrow)) __obj.updateDynamic("modifyMessageOnRethrow")(modifyMessageOnRethrow.asInstanceOf[js.Any])
+    if (!js.isUndefined(destructive)) __obj.updateDynamic("destructive")(destructive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(modifyMessageOnRethrow)) __obj.updateDynamic("modifyMessageOnRethrow")(modifyMessageOnRethrow.get.asInstanceOf[js.Any])
     if (patterns != null) __obj.updateDynamic("patterns")(patterns.asInstanceOf[js.Any])
-    if (!js.isUndefined(saveContextOnRethrow)) __obj.updateDynamic("saveContextOnRethrow")(saveContextOnRethrow.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveContextOnRethrow)) __obj.updateDynamic("saveContextOnRethrow")(saveContextOnRethrow.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

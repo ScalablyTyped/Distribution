@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.CLEARFLAG_DEPTH
-  * @type {number}
-  * @description Clear the depth buffer.
+  * Clear the depth buffer.
   */
 @JSImport("playcanvas", "CLEARFLAG_DEPTH")
 @js.native

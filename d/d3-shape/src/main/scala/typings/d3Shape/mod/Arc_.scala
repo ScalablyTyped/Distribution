@@ -161,6 +161,23 @@ trait Arc_[This, Datum] extends js.Object {
     * @param radius Constant radius.
     */
   def outerRadius(radius: Double): this.type = js.native
+  /**
+    * Sets the pad angle to the specified number and returns this arc generator.
+    *
+    * The pad angle is converted to a fixed linear distance separating adjacent arcs, defined as padRadius * padAngle. This distance is subtracted equally from the start and end of the arc.
+    * If the arc forms a complete circle or annulus, as when |endAngle - startAngle| ≥ τ, the pad angle is ignored. If the inner radius or angular span is small relative to the pad angle,
+    * it may not be possible to maintain parallel edges between adjacent arcs. In this case, the inner edge of the arc may collapse to a point, similar to a circular sector.
+    * For this reason, padding is typically only applied to annular sectors (i.e., when innerRadius is positive).
+    *
+    * The recommended minimum inner radius when using padding is outerRadius * padAngle / sin(θ), where θ is the angular span of the smallest arc before padding.
+    * For example, if the outer radius is 200 pixels and the pad angle is 0.02 radians, a reasonable θ is 0.04 radians, and a reasonable inner radius is 100 pixels.
+    *
+    * Often, the pad angle is not set directly on the arc generator, but is instead computed by the pie generator so as to ensure that the area of padded arcs is proportional to their value;
+    * see pie.padAngle. See the pie padding animation for illustration.
+    * If you apply a constant pad angle to the arc generator directly, it tends to subtract disproportionately from smaller arcs, introducing distortion.
+    *
+    * @param angle Constant angle in radians.
+    */
   def padAngle(): this.type = js.native
   /**
     * Sets the pad angle to the specified function and returns this arc generator.
@@ -181,23 +198,6 @@ trait Arc_[This, Datum] extends js.Object {
     * receives the same arguments that were passed into the arc generator.
     */
   def padAngle(angle: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, js.UndefOr[Double]]): this.type = js.native
-  /**
-    * Sets the pad angle to the specified number and returns this arc generator.
-    *
-    * The pad angle is converted to a fixed linear distance separating adjacent arcs, defined as padRadius * padAngle. This distance is subtracted equally from the start and end of the arc.
-    * If the arc forms a complete circle or annulus, as when |endAngle - startAngle| ≥ τ, the pad angle is ignored. If the inner radius or angular span is small relative to the pad angle,
-    * it may not be possible to maintain parallel edges between adjacent arcs. In this case, the inner edge of the arc may collapse to a point, similar to a circular sector.
-    * For this reason, padding is typically only applied to annular sectors (i.e., when innerRadius is positive).
-    *
-    * The recommended minimum inner radius when using padding is outerRadius * padAngle / sin(θ), where θ is the angular span of the smallest arc before padding.
-    * For example, if the outer radius is 200 pixels and the pad angle is 0.02 radians, a reasonable θ is 0.04 radians, and a reasonable inner radius is 100 pixels.
-    *
-    * Often, the pad angle is not set directly on the arc generator, but is instead computed by the pie generator so as to ensure that the area of padded arcs is proportional to their value;
-    * see pie.padAngle. See the pie padding animation for illustration.
-    * If you apply a constant pad angle to the arc generator directly, it tends to subtract disproportionately from smaller arcs, introducing distortion.
-    *
-    * @param angle Constant angle in radians.
-    */
   def padAngle(angle: Double): this.type = js.native
   /**
     * Returns the current pad angle accessor, which defaults to a function returning the padAngle property

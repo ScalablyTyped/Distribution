@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.View")
 @js.native
-class View () extends ClientObject {
+trait View extends ClientObject {
   def deleteObject(): Unit = js.native
   def get_aggregations(): String = js.native
   def get_aggregationsStatus(): String = js.native

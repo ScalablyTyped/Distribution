@@ -48,7 +48,7 @@ object IExpandedMonarchLanguageAction {
   def apply(
     bracket: String = null,
     cases: js.Object = null,
-    goBack: Int | Double = null,
+    goBack: js.UndefOr[Double] = js.undefined,
     group: js.Array[IMonarchLanguageAction] = null,
     log: String = null,
     next: String = null,
@@ -59,7 +59,7 @@ object IExpandedMonarchLanguageAction {
     val __obj = js.Dynamic.literal()
     if (bracket != null) __obj.updateDynamic("bracket")(bracket.asInstanceOf[js.Any])
     if (cases != null) __obj.updateDynamic("cases")(cases.asInstanceOf[js.Any])
-    if (goBack != null) __obj.updateDynamic("goBack")(goBack.asInstanceOf[js.Any])
+    if (!js.isUndefined(goBack)) __obj.updateDynamic("goBack")(goBack.get.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
     if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])

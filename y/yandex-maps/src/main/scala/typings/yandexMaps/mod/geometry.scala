@@ -1,6 +1,6 @@
 package typings.yandexMaps.mod
 
-import typings.yandexMaps.AnonCoordRendering
+import typings.yandexMaps.anon.CoordRendering
 import typings.yandexMaps.yandexMapsStrings.evenOdd
 import typings.yandexMaps.yandexMapsStrings.nonZero
 import scala.scalajs.js
@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 @JSImport("yandex-maps", "geometry")
 @js.native
 object geometry extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.yandexMaps.mod.IFreezable because var conflicts: events. Inlined freeze, isFrozen, unfreeze
   - typings.yandexMaps.mod.ILineStringGeometryAccess because var conflicts: events. Inlined get, getChildGeometry, getClosest, getCoordinates, getLength, insert, remove, set, setCoordinates, splice */ @js.native
   class LineString () extends IGeometry {
     def this(coordinates: js.Array[js.Array[Double]]) = this()
-    def this(coordinates: js.Array[js.Array[Double]], options: AnonCoordRendering) = this()
+    def this(coordinates: js.Array[js.Array[Double]], options: CoordRendering) = this()
     /* CompleteClass */
     override var events: IEventManager = js.native
     def add(types: String, callback: js.Function1[/* event */ js.Object | IEvent, Unit]): this.type = js.native
@@ -96,7 +96,7 @@ object geometry extends js.Object {
     override def getType(): String = js.native
   }
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.yandexMaps.mod.IFreezable because var conflicts: events. Inlined freeze, isFrozen, unfreeze
   - typings.yandexMaps.mod.IPolygonGeometryAccess because var conflicts: events. Inlined contains, get, getChildGeometry, getClosest, getCoordinates, getFillRule, getLength, insert, remove, set, setCoordinates, setFillRule, splice */ @js.native
   class Polygon () extends IGeometry {
@@ -174,7 +174,7 @@ object geometry extends js.Object {
   
   @js.native
   object base extends js.Object {
-    /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+    /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
     - typings.yandexMaps.mod.IFreezable because var conflicts: events. Inlined freeze, isFrozen, unfreeze
     - typings.yandexMaps.mod.ILineStringGeometryAccess because var conflicts: events. Inlined get, getChildGeometry, getClosest, getCoordinates, getLength, insert, remove, set, setCoordinates, splice */ @js.native
     class LineString () extends IBaseGeometry {

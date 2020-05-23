@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 
 trait Connection extends ConnectionInfo {
   /**
-  			 * A unique identifier for the connection
-  			 */
+    * A unique identifier for the connection
+    */
   var connectionId: String
   /**
-  			 * The name of the provider managing the connection (e.g. MSSQL)
-  			 */
+    * The name of the provider managing the connection (e.g. MSSQL)
+    */
   var providerName: String
 }
 

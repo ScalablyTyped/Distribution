@@ -1,6 +1,6 @@
 package typings.jupyterlabUiComponents.labiconMod.LabIcon
 
-import typings.luminoVirtualdom.AnonAttrs
+import typings.luminoVirtualdom.anon.Attrs
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,7 +25,7 @@ trait IOptions extends js.Object {
     * A string containing the raw contents of an svg file.
     */
   var svgstr: String
-  var unrender: js.UndefOr[js.Function2[/* host */ HTMLElement, /* options */ js.UndefOr[AnonAttrs], Unit]] = js.undefined
+  var unrender: js.UndefOr[js.Function2[/* host */ HTMLElement, /* options */ js.UndefOr[Attrs], Unit]] = js.undefined
 }
 
 object IOptions {
@@ -34,7 +34,7 @@ object IOptions {
     name: String,
     svgstr: String,
     render: /* host */ HTMLElement => Unit = null,
-    unrender: (/* host */ HTMLElement, /* options */ js.UndefOr[AnonAttrs]) => Unit = null
+    unrender: (/* host */ HTMLElement, /* options */ js.UndefOr[Attrs]) => Unit = null
   ): IOptions = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], svgstr = svgstr.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`track-error`
 import typings.arcgisJsApi.arcgisJsApiStrings.track
@@ -97,8 +96,4 @@ trait Track
     */
   def stop(): Unit = js.native
 }
-
-@JSGlobal("__esri.Track")
-@js.native
-object Track extends TopLevel[TrackConstructor]
 

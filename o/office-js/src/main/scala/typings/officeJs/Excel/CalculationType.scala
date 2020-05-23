@@ -1,6 +1,5 @@
 package typings.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,17 +33,6 @@ object CalculationType extends js.Object {
     */
   @js.native
   sealed trait recalculate extends CalculationType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[CalculationType with String] = js.native
-  /* "Full" */ @js.native
-  object full extends TopLevel[full with String]
-  
-  /* "FullRebuild" */ @js.native
-  object fullRebuild extends TopLevel[fullRebuild with String]
-  
-  /* "Recalculate" */ @js.native
-  object recalculate extends TopLevel[recalculate with String]
   
 }
 

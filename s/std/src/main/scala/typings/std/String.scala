@@ -1,8 +1,12 @@
 package typings.std
 
 import org.scalablytyped.runtime.NumberDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Intl.CollatorOptions
+import typings.std.anon.Match
+import typings.std.anon.Replace
+import typings.std.anon.Search
+import typings.std.anon.Split
+import typings.std.anon.`0`
 import typings.std.stdStrings.NFC
 import typings.std.stdStrings.NFD
 import typings.std.stdStrings.NFKC
@@ -105,10 +109,11 @@ trait String
   def localeCompare(that: java.lang.String, locales: js.Array[java.lang.String]): Double = js.native
   def localeCompare(that: java.lang.String, locales: js.Array[java.lang.String], options: CollatorOptions): Double = js.native
   /**
-    * Matches a string an object that supports being matched against, and returns an array containing the results of that search.
+    * Matches a string or an object that supports being matched against, and returns an array
+    * containing the results of that search, or null if no matches are found.
     * @param matcher An object that supports being matched against.
     */
-  def `match`(matcher: AnonMatch): RegExpMatchArray | Null = js.native
+  def `match`(matcher: Match): RegExpMatchArray | Null = js.native
   /**
     * Matches a string with a regular expression, and returns an array containing the results of that search.
     * @param regexp A variable name or string literal containing the regular expression pattern and flags.
@@ -190,13 +195,9 @@ trait String
     searchValue: java.lang.String,
     replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
   ): java.lang.String = js.native
-  /**
-    * Replaces text in a string, using an object that supports replacement within a string.
-    * @param searchValue A object can search for and replace matches within a string.
-    * @param replacer A function that returns the replacement text.
-    */
+  def replace(searchValue: RegExp, replaceValue: java.lang.String): java.lang.String = js.native
   def replace(
-    searchValue: Anon0,
+    searchValue: RegExp,
     replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
   ): java.lang.String = js.native
   /**
@@ -204,9 +205,33 @@ trait String
     * @param searchValue A object can search for and replace matches within a string.
     * @param replaceValue A string containing the text to replace for every successful match of searchValue in this string.
     */
-  def replace(searchValue: AnonReplace, replaceValue: java.lang.String): java.lang.String = js.native
-  def replace(searchValue: RegExp, replaceValue: java.lang.String): java.lang.String = js.native
+  def replace(searchValue: Replace, replaceValue: java.lang.String): java.lang.String = js.native
+  /**
+    * Replaces text in a string, using an object that supports replacement within a string.
+    * @param searchValue A object can search for and replace matches within a string.
+    * @param replacer A function that returns the replacement text.
+    */
   def replace(
+    searchValue: `0`,
+    replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
+  ): java.lang.String = js.native
+  /**
+    * Replace all instances of a substring in a string, using a regular expression or search string.
+    * @param searchValue A string to search for.
+    * @param replaceValue A string containing the text to replace for every successful match of searchValue in this string.
+    */
+  def replaceAll(searchValue: java.lang.String, replaceValue: java.lang.String): java.lang.String = js.native
+  /**
+    * Replace all instances of a substring in a string, using a regular expression or search string.
+    * @param searchValue A string to search for.
+    * @param replacer A function that returns the replacement text.
+    */
+  def replaceAll(
+    searchValue: java.lang.String,
+    replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
+  ): java.lang.String = js.native
+  def replaceAll(searchValue: RegExp, replaceValue: java.lang.String): java.lang.String = js.native
+  def replaceAll(
     searchValue: RegExp,
     replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
   ): java.lang.String = js.native
@@ -220,7 +245,7 @@ trait String
     * Finds the first substring match in a regular expression search.
     * @param searcher An object which supports searching within a string.
     */
-  def search(searcher: AnonSearch): Double = js.native
+  def search(searcher: Search): Double = js.native
   /**
     * Returns a section of a string.
     * @param start The index to the beginning of the specified portion of stringObj.
@@ -246,8 +271,8 @@ trait String
     * @param splitter An object that can split a string.
     * @param limit A value used to limit the number of elements returned in the array.
     */
-  def split(splitter: AnonSplit): js.Array[java.lang.String] = js.native
-  def split(splitter: AnonSplit, limit: Double): js.Array[java.lang.String] = js.native
+  def split(splitter: Split): js.Array[java.lang.String] = js.native
+  def split(splitter: Split, limit: Double): js.Array[java.lang.String] = js.native
   /**
     * Returns true if the sequence of elements of searchString converted to a String is the
     * same as the corresponding elements of this object (converted to a String) starting at
@@ -300,11 +325,4 @@ trait String
   /** Removes the leading white space and line terminator characters from a string. */
   def trimStart(): java.lang.String = js.native
 }
-
-/**
-  * Allows manipulation and formatting of text strings and determination and location of substrings within strings.
-  */
-@JSGlobal("String")
-@js.native
-object String extends TopLevel[StringConstructor]
 

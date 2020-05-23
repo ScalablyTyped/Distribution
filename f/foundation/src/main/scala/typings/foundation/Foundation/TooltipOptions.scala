@@ -21,7 +21,7 @@ object TooltipOptions {
     additional_inheritable_classes: js.Array[String] = null,
     append_to: String = null,
     disable_for_touch: js.UndefOr[Boolean] = js.undefined,
-    hover_delay: Int | Double = null,
+    hover_delay: js.UndefOr[Double] = js.undefined,
     show_on: String = null,
     tip_template: (/* selector */ String, /* content */ String) => String = null,
     tooltip_class: String = null,
@@ -30,8 +30,8 @@ object TooltipOptions {
     val __obj = js.Dynamic.literal()
     if (additional_inheritable_classes != null) __obj.updateDynamic("additional_inheritable_classes")(additional_inheritable_classes.asInstanceOf[js.Any])
     if (append_to != null) __obj.updateDynamic("append_to")(append_to.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_for_touch)) __obj.updateDynamic("disable_for_touch")(disable_for_touch.asInstanceOf[js.Any])
-    if (hover_delay != null) __obj.updateDynamic("hover_delay")(hover_delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable_for_touch)) __obj.updateDynamic("disable_for_touch")(disable_for_touch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hover_delay)) __obj.updateDynamic("hover_delay")(hover_delay.get.asInstanceOf[js.Any])
     if (show_on != null) __obj.updateDynamic("show_on")(show_on.asInstanceOf[js.Any])
     if (tip_template != null) __obj.updateDynamic("tip_template")(js.Any.fromFunction2(tip_template))
     if (tooltip_class != null) __obj.updateDynamic("tooltip_class")(tooltip_class.asInstanceOf[js.Any])

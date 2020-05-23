@@ -46,7 +46,7 @@ object DescribeReservedCacheNodesMessage {
     CacheNodeType: String = null,
     Duration: String = null,
     Marker: String = null,
-    MaxRecords: Int | scala.Double = null,
+    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
     OfferingType: String = null,
     ProductDescription: String = null,
     ReservedCacheNodeId: String = null,
@@ -56,7 +56,7 @@ object DescribeReservedCacheNodesMessage {
     if (CacheNodeType != null) __obj.updateDynamic("CacheNodeType")(CacheNodeType.asInstanceOf[js.Any])
     if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     if (OfferingType != null) __obj.updateDynamic("OfferingType")(OfferingType.asInstanceOf[js.Any])
     if (ProductDescription != null) __obj.updateDynamic("ProductDescription")(ProductDescription.asInstanceOf[js.Any])
     if (ReservedCacheNodeId != null) __obj.updateDynamic("ReservedCacheNodeId")(ReservedCacheNodeId.asInstanceOf[js.Any])

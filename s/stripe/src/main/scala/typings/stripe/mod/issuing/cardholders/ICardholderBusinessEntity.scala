@@ -15,7 +15,7 @@ object ICardholderBusinessEntity {
   @scala.inline
   def apply(tax_id_provided: js.UndefOr[Boolean] = js.undefined): ICardholderBusinessEntity = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(tax_id_provided)) __obj.updateDynamic("tax_id_provided")(tax_id_provided.asInstanceOf[js.Any])
+    if (!js.isUndefined(tax_id_provided)) __obj.updateDynamic("tax_id_provided")(tax_id_provided.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICardholderBusinessEntity]
   }
 }

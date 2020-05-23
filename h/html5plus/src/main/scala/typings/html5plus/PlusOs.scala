@@ -25,11 +25,11 @@ trait PlusOs extends js.Object {
     * 系统的名称
     * 获取当前操作系统的名称，字符串类型数据。
     * - iOS: 
-    * 	iOS系统。
-    * 								
+    *     iOS系统。
+    *                                 
     * - Android: 
-    * 	Android系统。
-    * 								
+    *     Android系统。
+    *                                 
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
@@ -38,11 +38,11 @@ trait PlusOs extends js.Object {
     * 系统的供应商信息
     * 获取当前操作系统的供应商名称，字符串类型数据。
     * - Apple: 
-    * 	iOS设备，包括iPhone、iPad、iTouch。
-    * 								
+    *     iOS设备，包括iPhone、iPad、iTouch。
+    *                                 
     * - Google: 
-    * 	Android设备。
-    * 								
+    *     Android设备。
+    *                                 
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */

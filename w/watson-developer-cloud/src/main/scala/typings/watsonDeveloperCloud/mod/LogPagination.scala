@@ -16,9 +16,9 @@ trait LogPagination extends js.Object {
 
 object LogPagination {
   @scala.inline
-  def apply(matched: Int | Double = null, next_cursor: String = null, next_url: String = null): LogPagination = {
+  def apply(matched: js.UndefOr[Double] = js.undefined, next_cursor: String = null, next_url: String = null): LogPagination = {
     val __obj = js.Dynamic.literal()
-    if (matched != null) __obj.updateDynamic("matched")(matched.asInstanceOf[js.Any])
+    if (!js.isUndefined(matched)) __obj.updateDynamic("matched")(matched.get.asInstanceOf[js.Any])
     if (next_cursor != null) __obj.updateDynamic("next_cursor")(next_cursor.asInstanceOf[js.Any])
     if (next_url != null) __obj.updateDynamic("next_url")(next_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogPagination]

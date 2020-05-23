@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object ExtendedExecutionRevokedReason extends js.Object {
   /** Background execution is revoked due to system resources. */
   @js.native
   sealed trait systemPolicy extends ExtendedExecutionRevokedReason
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ExtendedExecutionRevokedReason with Double] = js.native
-  /* 0 */ @js.native
-  object resumed extends TopLevel[resumed with Double]
-  
-  /* 1 */ @js.native
-  object systemPolicy extends TopLevel[systemPolicy with Double]
   
 }
 

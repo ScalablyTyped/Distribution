@@ -1,6 +1,6 @@
 package typings.ipAddress.mod
 
-import typings.ipAddress.AnonGroupIndividual
+import typings.ipAddress.anon.GroupIndividual
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ trait TeredoProperties extends js.Object {
   var client4: Address4
   var coneNat: Boolean
   var flags: String
-  var microsoft: AnonGroupIndividual
+  var microsoft: GroupIndividual
   var prefix: String
   var server4: Address4
   var udpPort: String
@@ -21,7 +21,7 @@ object TeredoProperties {
     client4: Address4,
     coneNat: Boolean,
     flags: String,
-    microsoft: AnonGroupIndividual,
+    microsoft: GroupIndividual,
     prefix: String,
     server4: Address4,
     udpPort: String

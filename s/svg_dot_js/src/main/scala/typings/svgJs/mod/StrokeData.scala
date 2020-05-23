@@ -21,22 +21,22 @@ object StrokeData {
   def apply(
     color: String = null,
     dasharray: String = null,
-    dashoffset: Int | Double = null,
+    dashoffset: js.UndefOr[Double] = js.undefined,
     linecap: String = null,
     linejoin: String = null,
-    miterlimit: Int | Double = null,
-    opacity: Int | Double = null,
-    width: Int | Double = null
+    miterlimit: js.UndefOr[Double] = js.undefined,
+    opacity: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): StrokeData = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (dasharray != null) __obj.updateDynamic("dasharray")(dasharray.asInstanceOf[js.Any])
-    if (dashoffset != null) __obj.updateDynamic("dashoffset")(dashoffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(dashoffset)) __obj.updateDynamic("dashoffset")(dashoffset.get.asInstanceOf[js.Any])
     if (linecap != null) __obj.updateDynamic("linecap")(linecap.asInstanceOf[js.Any])
     if (linejoin != null) __obj.updateDynamic("linejoin")(linejoin.asInstanceOf[js.Any])
-    if (miterlimit != null) __obj.updateDynamic("miterlimit")(miterlimit.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(miterlimit)) __obj.updateDynamic("miterlimit")(miterlimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrokeData]
   }
 }

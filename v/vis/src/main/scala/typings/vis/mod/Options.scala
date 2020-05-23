@@ -44,8 +44,8 @@ object Options {
     width: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickToUse)) __obj.updateDynamic("clickToUse")(clickToUse.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickToUse)) __obj.updateDynamic("clickToUse")(clickToUse.get.asInstanceOf[js.Any])
     if (configure != null) __obj.updateDynamic("configure")(configure.asInstanceOf[js.Any])
     if (edges != null) __obj.updateDynamic("edges")(edges.asInstanceOf[js.Any])
     if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])

@@ -14,10 +14,8 @@ trait LimitType extends js.Object
 
 object LimitType {
   @scala.inline
-  def First: F = this.cast("F")
+  def First: F = "F".asInstanceOf[F]
   @scala.inline
-  def Last: L = this.cast("L")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Last: L = "L".asInstanceOf[L]
 }
 

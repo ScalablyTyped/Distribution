@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ant-design/pro-layout/lib/locales", JSImport.Namespace)
 @js.native
 object localesMod extends js.Object {
-  /* Rewritten from type alias, can be one of: 
+  /* keyof @ant-design/pro-layout.anon.EnUS */ /* Rewritten from type alias, can be one of: 
     - typings.antDesignProLayout.antDesignProLayoutStrings.`zh-CN`
     - typings.antDesignProLayout.antDesignProLayoutStrings.`zh-TW`
     - typings.antDesignProLayout.antDesignProLayoutStrings.`en-US`

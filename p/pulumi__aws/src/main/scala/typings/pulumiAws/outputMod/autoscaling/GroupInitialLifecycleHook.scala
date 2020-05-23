@@ -24,13 +24,13 @@ object GroupInitialLifecycleHook {
     defaultResult: String,
     lifecycleTransition: String,
     name: String,
-    heartbeatTimeout: Int | Double = null,
+    heartbeatTimeout: js.UndefOr[Double] = js.undefined,
     notificationMetadata: String = null,
     notificationTargetArn: String = null,
     roleArn: String = null
   ): GroupInitialLifecycleHook = {
     val __obj = js.Dynamic.literal(defaultResult = defaultResult.asInstanceOf[js.Any], lifecycleTransition = lifecycleTransition.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (heartbeatTimeout != null) __obj.updateDynamic("heartbeatTimeout")(heartbeatTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(heartbeatTimeout)) __obj.updateDynamic("heartbeatTimeout")(heartbeatTimeout.get.asInstanceOf[js.Any])
     if (notificationMetadata != null) __obj.updateDynamic("notificationMetadata")(notificationMetadata.asInstanceOf[js.Any])
     if (notificationTargetArn != null) __obj.updateDynamic("notificationTargetArn")(notificationTargetArn.asInstanceOf[js.Any])
     if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])

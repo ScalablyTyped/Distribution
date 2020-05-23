@@ -1,6 +1,6 @@
 package typings.easyXapiSupertest.NodeJS
 
-import typings.easyXapiSupertest.AnonEnd
+import typings.easyXapiSupertest.anon.End
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ trait ReadableStream extends EventEmitter {
   var readable: Boolean = js.native
   def pause(): Unit = js.native
   def pipe[T /* <: WritableStream */](destination: T): T = js.native
-  def pipe[T /* <: WritableStream */](destination: T, options: AnonEnd): T = js.native
+  def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
   def read(): String | Buffer = js.native
   def read(size: Double): String | Buffer = js.native
   def resume(): Unit = js.native

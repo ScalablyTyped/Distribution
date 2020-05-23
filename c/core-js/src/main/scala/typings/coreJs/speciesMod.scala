@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/fn/symbol/species", JSImport.Namespace)
 @js.native
 object speciesMod
-  extends TopLevel[js.Symbol]
+  extends TopLevel[js.Any]
 

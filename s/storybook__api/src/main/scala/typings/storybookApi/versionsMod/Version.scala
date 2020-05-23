@@ -13,7 +13,7 @@ trait Version
 
 object Version {
   @scala.inline
-  def apply(version: String, StringDictionary: /* key */ StringDictionary[js.Any] = null, info: String = null): Version = {
+  def apply(version: String, StringDictionary: /* name */ StringDictionary[js.Any] = null, info: String = null): Version = {
     val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])

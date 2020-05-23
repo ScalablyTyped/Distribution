@@ -1,11 +1,11 @@
 package typings.officeJs.Word
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
 import typings.officeJs.Word.Interfaces.DocumentPropertiesData
 import typings.officeJs.Word.Interfaces.DocumentPropertiesLoadOptions
 import typings.officeJs.Word.Interfaces.DocumentPropertiesUpdateData
+import typings.officeJs.anon.Expand
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,9 +17,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: WordApi 1.3]
   */
-@JSGlobal("Word.DocumentProperties")
 @js.native
-class DocumentProperties () extends ClientObject {
+trait DocumentProperties extends ClientObject {
   /**
     *
     * Gets the application name of the document. Read only.
@@ -167,8 +166,8 @@ class DocumentProperties () extends ClientObject {
   def load(): DocumentProperties = js.native
   def load(option: String): DocumentProperties = js.native
   def load(option: js.Array[String]): DocumentProperties = js.native
-  def load(option: AnonExpand): DocumentProperties = js.native
   def load(option: DocumentPropertiesLoadOptions): DocumentProperties = js.native
+  def load(option: Expand): DocumentProperties = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: DocumentProperties): Unit = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.

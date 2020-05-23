@@ -18,18 +18,16 @@ object InsightsServiceAccountResponseNodesItem {
   def apply(
     __typename: String = null,
     data_points: js.Array[InsightsServiceAccountResponseDataPointsItem] = null,
-    delta: js.UndefOr[scala.Nothing] = js.undefined,
     graph_name: String = null,
     organic: InsightsServiceAccountResponseOrganic = null,
-    total: Int | Double = null
+    total: js.UndefOr[Double] = js.undefined
   ): InsightsServiceAccountResponseNodesItem = {
     val __obj = js.Dynamic.literal()
     if (__typename != null) __obj.updateDynamic("__typename")(__typename.asInstanceOf[js.Any])
     if (data_points != null) __obj.updateDynamic("data_points")(data_points.asInstanceOf[js.Any])
-    if (!js.isUndefined(delta)) __obj.updateDynamic("delta")(delta.asInstanceOf[js.Any])
     if (graph_name != null) __obj.updateDynamic("graph_name")(graph_name.asInstanceOf[js.Any])
     if (organic != null) __obj.updateDynamic("organic")(organic.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightsServiceAccountResponseNodesItem]
   }
 }

@@ -60,18 +60,18 @@ trait DownloadQuery extends js.Object {
 object DownloadQuery {
   @scala.inline
   def apply(
-    bytesReceived: Int | Double = null,
+    bytesReceived: js.UndefOr[Double] = js.undefined,
     danger: String = null,
     endTime: String = null,
     endedAfter: String = null,
     endedBefore: String = null,
-    error: Int | Double = null,
+    error: js.UndefOr[Double] = js.undefined,
     exists: js.UndefOr[Boolean] = js.undefined,
-    fileSize: Int | Double = null,
+    fileSize: js.UndefOr[Double] = js.undefined,
     filename: String = null,
     filenameRegex: String = null,
-    id: Int | Double = null,
-    limit: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
+    limit: js.UndefOr[Double] = js.undefined,
     mime: String = null,
     orderBy: js.Array[String] = null,
     paused: js.UndefOr[Boolean] = js.undefined,
@@ -80,36 +80,36 @@ object DownloadQuery {
     startedAfter: String = null,
     startedBefore: String = null,
     state: String = null,
-    totalBytes: Int | Double = null,
-    totalBytesGreater: Int | Double = null,
-    totalBytesLess: Int | Double = null,
+    totalBytes: js.UndefOr[Double] = js.undefined,
+    totalBytesGreater: js.UndefOr[Double] = js.undefined,
+    totalBytesLess: js.UndefOr[Double] = js.undefined,
     url: String = null,
     urlRegex: String = null
   ): DownloadQuery = {
     val __obj = js.Dynamic.literal()
-    if (bytesReceived != null) __obj.updateDynamic("bytesReceived")(bytesReceived.asInstanceOf[js.Any])
+    if (!js.isUndefined(bytesReceived)) __obj.updateDynamic("bytesReceived")(bytesReceived.get.asInstanceOf[js.Any])
     if (danger != null) __obj.updateDynamic("danger")(danger.asInstanceOf[js.Any])
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
     if (endedAfter != null) __obj.updateDynamic("endedAfter")(endedAfter.asInstanceOf[js.Any])
     if (endedBefore != null) __obj.updateDynamic("endedBefore")(endedBefore.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (!js.isUndefined(exists)) __obj.updateDynamic("exists")(exists.asInstanceOf[js.Any])
-    if (fileSize != null) __obj.updateDynamic("fileSize")(fileSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exists)) __obj.updateDynamic("exists")(exists.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fileSize)) __obj.updateDynamic("fileSize")(fileSize.get.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (filenameRegex != null) __obj.updateDynamic("filenameRegex")(filenameRegex.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (mime != null) __obj.updateDynamic("mime")(mime.asInstanceOf[js.Any])
     if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused.asInstanceOf[js.Any])
+    if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused.get.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     if (startedAfter != null) __obj.updateDynamic("startedAfter")(startedAfter.asInstanceOf[js.Any])
     if (startedBefore != null) __obj.updateDynamic("startedBefore")(startedBefore.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (totalBytes != null) __obj.updateDynamic("totalBytes")(totalBytes.asInstanceOf[js.Any])
-    if (totalBytesGreater != null) __obj.updateDynamic("totalBytesGreater")(totalBytesGreater.asInstanceOf[js.Any])
-    if (totalBytesLess != null) __obj.updateDynamic("totalBytesLess")(totalBytesLess.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalBytes)) __obj.updateDynamic("totalBytes")(totalBytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalBytesGreater)) __obj.updateDynamic("totalBytesGreater")(totalBytesGreater.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalBytesLess)) __obj.updateDynamic("totalBytesLess")(totalBytesLess.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (urlRegex != null) __obj.updateDynamic("urlRegex")(urlRegex.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadQuery]

@@ -21,9 +21,9 @@ object EditorSerialization {
   ): EditorSerialization = {
     val __obj = js.Dynamic.literal()
     if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
-    if (!js.isUndefined(entities)) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
-    if (!js.isUndefined(scripts)) __obj.updateDynamic("scripts")(scripts.asInstanceOf[js.Any])
-    if (!js.isUndefined(semantic)) __obj.updateDynamic("semantic")(semantic.asInstanceOf[js.Any])
+    if (!js.isUndefined(entities)) __obj.updateDynamic("entities")(entities.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scripts)) __obj.updateDynamic("scripts")(scripts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(semantic)) __obj.updateDynamic("semantic")(semantic.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorSerialization]
   }
 }

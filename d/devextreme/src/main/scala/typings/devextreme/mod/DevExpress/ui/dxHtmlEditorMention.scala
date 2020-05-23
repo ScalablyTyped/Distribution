@@ -1,10 +1,10 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.AnonId
+import typings.devextreme.anon.Id
 import typings.devextreme.mod.DevExpress.core.dxElement
 import typings.devextreme.mod.DevExpress.data.DataSource
 import typings.devextreme.mod.DevExpress.data.DataSourceOptions
-import typings.devextreme.mod._Global_.JQuery
+import typings.devextreme.mod.global.JQuery
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,7 +34,7 @@ trait dxHtmlEditorMention extends js.Object {
   var searchTimeout: js.UndefOr[Double] = js.undefined
   /** @name dxHtmlEditorMention.template */
   var template: js.UndefOr[
-    typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* mentionData */ AnonId, /* contentElement */ dxElement, String | Element | JQuery])
+    typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* mentionData */ Id, /* contentElement */ dxElement, String | Element | JQuery])
   ] = js.undefined
   /** @name dxHtmlEditorMention.valueExpr */
   var valueExpr: js.UndefOr[String | js.Function] = js.undefined
@@ -52,10 +52,10 @@ object dxHtmlEditorMention {
       String | Element | JQuery
     ]) = null,
     marker: String = null,
-    minSearchLength: Int | Double = null,
+    minSearchLength: js.UndefOr[Double] = js.undefined,
     searchExpr: String | js.Function | (js.Array[String | js.Function]) = null,
-    searchTimeout: Int | Double = null,
-    template: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* mentionData */ AnonId, /* contentElement */ dxElement, String | Element | JQuery]) = null,
+    searchTimeout: js.UndefOr[Double] = js.undefined,
+    template: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* mentionData */ Id, /* contentElement */ dxElement, String | Element | JQuery]) = null,
     valueExpr: String | js.Function = null
   ): dxHtmlEditorMention = {
     val __obj = js.Dynamic.literal()
@@ -63,9 +63,9 @@ object dxHtmlEditorMention {
     if (displayExpr != null) __obj.updateDynamic("displayExpr")(displayExpr.asInstanceOf[js.Any])
     if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(itemTemplate.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (minSearchLength != null) __obj.updateDynamic("minSearchLength")(minSearchLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSearchLength)) __obj.updateDynamic("minSearchLength")(minSearchLength.get.asInstanceOf[js.Any])
     if (searchExpr != null) __obj.updateDynamic("searchExpr")(searchExpr.asInstanceOf[js.Any])
-    if (searchTimeout != null) __obj.updateDynamic("searchTimeout")(searchTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(searchTimeout)) __obj.updateDynamic("searchTimeout")(searchTimeout.get.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (valueExpr != null) __obj.updateDynamic("valueExpr")(valueExpr.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxHtmlEditorMention]

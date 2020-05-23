@@ -12,13 +12,13 @@ trait ShadowProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
 
 object ShadowProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](
-    boxShadow: ResponsiveValue[BoxShadowProperty | Double, ThemeType] = null,
-    textShadow: ResponsiveValue[TextShadowProperty | Double, ThemeType] = null
+  def apply[ThemeType](
+    boxShadow: js.UndefOr[Null | (ResponsiveValue[BoxShadowProperty | Double, ThemeType])] = js.undefined,
+    textShadow: js.UndefOr[Null | (ResponsiveValue[TextShadowProperty | Double, ThemeType])] = js.undefined
   ): ShadowProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
-    if (boxShadow != null) __obj.updateDynamic("boxShadow")(boxShadow.asInstanceOf[js.Any])
-    if (textShadow != null) __obj.updateDynamic("textShadow")(textShadow.asInstanceOf[js.Any])
+    if (!js.isUndefined(boxShadow)) __obj.updateDynamic("boxShadow")(boxShadow.asInstanceOf[js.Any])
+    if (!js.isUndefined(textShadow)) __obj.updateDynamic("textShadow")(textShadow.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShadowProps[ThemeType]]
   }
 }

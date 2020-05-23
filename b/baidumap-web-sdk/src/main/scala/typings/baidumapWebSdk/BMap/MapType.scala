@@ -4,19 +4,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BMap.MapType")
-@js.native
-class MapType protected () extends js.Object {
-  def this(name: String, layers: js.Array[TileLayer]) = this()
-  def this(name: String, layers: TileLayer) = this()
-  def this(name: String, layers: js.Array[TileLayer], opts: MapTypeOptions) = this()
-  def this(name: String, layers: TileLayer, opts: MapTypeOptions) = this()
-  def getMaxZoom(): Double = js.native
-  def getMinZoom(): Double = js.native
-  def getName(): String = js.native
-  def getProjection(): Projection = js.native
-  def getTextColor(): String = js.native
-  def getTileLayer(): TileLayer = js.native
-  def getTips(): String = js.native
+trait MapType extends js.Object {
+  def getMaxZoom(): Double
+  def getMinZoom(): Double
+  def getName(): String
+  def getProjection(): Projection
+  def getTextColor(): String
+  def getTileLayer(): TileLayer
+  def getTips(): String
+}
+
+object MapType {
+  @scala.inline
+  def apply(
+    getMaxZoom: () => Double,
+    getMinZoom: () => Double,
+    getName: () => String,
+    getProjection: () => Projection,
+    getTextColor: () => String,
+    getTileLayer: () => TileLayer,
+    getTips: () => String
+  ): MapType = {
+    val __obj = js.Dynamic.literal(getMaxZoom = js.Any.fromFunction0(getMaxZoom), getMinZoom = js.Any.fromFunction0(getMinZoom), getName = js.Any.fromFunction0(getName), getProjection = js.Any.fromFunction0(getProjection), getTextColor = js.Any.fromFunction0(getTextColor), getTileLayer = js.Any.fromFunction0(getTileLayer), getTips = js.Any.fromFunction0(getTips))
+    __obj.asInstanceOf[MapType]
+  }
 }
 

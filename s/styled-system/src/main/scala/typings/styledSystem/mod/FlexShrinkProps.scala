@@ -17,9 +17,9 @@ trait FlexShrinkProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.
 
 object FlexShrinkProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](flexShrink: ResponsiveValue[GlobalsNumber, ThemeType] = null): FlexShrinkProps[ThemeType] = {
+  def apply[ThemeType](flexShrink: js.UndefOr[Null | (ResponsiveValue[GlobalsNumber, ThemeType])] = js.undefined): FlexShrinkProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
-    if (flexShrink != null) __obj.updateDynamic("flexShrink")(flexShrink.asInstanceOf[js.Any])
+    if (!js.isUndefined(flexShrink)) __obj.updateDynamic("flexShrink")(flexShrink.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlexShrinkProps[ThemeType]]
   }
 }

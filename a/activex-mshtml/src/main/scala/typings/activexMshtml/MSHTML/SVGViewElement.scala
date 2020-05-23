@@ -4,19 +4,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.SVGViewElement")
-@js.native
-class SVGViewElement protected () extends js.Object {
+trait SVGViewElement extends js.Object {
   @JSName("MSHTML.SVGViewElement_typekey")
-  var MSHTMLDotSVGViewElement_typekey: SVGViewElement = js.native
-  val externalResourcesRequired: SVGAnimatedBoolean = js.native
-  var focusable: SVGAnimatedEnumeration = js.native
-  var ownerSVGElement: ISVGSVGElement = js.native
-  var preserveAspectRatio: SVGAnimatedPreserveAspectRatio = js.native
-  val viewBox: SVGAnimatedRect = js.native
-  var viewTarget: SVGStringList = js.native
-  var viewportElement: ISVGElement = js.native
-  var xmlbase: String = js.native
-  val zoomAndPan: Double = js.native
+  var MSHTMLDotSVGViewElement_typekey: SVGViewElement
+  val externalResourcesRequired: SVGAnimatedBoolean
+  var focusable: SVGAnimatedEnumeration
+  var ownerSVGElement: ISVGSVGElement
+  var preserveAspectRatio: SVGAnimatedPreserveAspectRatio
+  val viewBox: SVGAnimatedRect
+  var viewTarget: SVGStringList
+  var viewportElement: ISVGElement
+  var xmlbase: String
+  val zoomAndPan: Double
+}
+
+object SVGViewElement {
+  @scala.inline
+  def apply(
+    MSHTMLDotSVGViewElement_typekey: SVGViewElement,
+    externalResourcesRequired: SVGAnimatedBoolean,
+    focusable: SVGAnimatedEnumeration,
+    ownerSVGElement: ISVGSVGElement,
+    preserveAspectRatio: SVGAnimatedPreserveAspectRatio,
+    viewBox: SVGAnimatedRect,
+    viewTarget: SVGStringList,
+    viewportElement: ISVGElement,
+    xmlbase: String,
+    zoomAndPan: Double
+  ): SVGViewElement = {
+    val __obj = js.Dynamic.literal(externalResourcesRequired = externalResourcesRequired.asInstanceOf[js.Any], focusable = focusable.asInstanceOf[js.Any], ownerSVGElement = ownerSVGElement.asInstanceOf[js.Any], preserveAspectRatio = preserveAspectRatio.asInstanceOf[js.Any], viewBox = viewBox.asInstanceOf[js.Any], viewTarget = viewTarget.asInstanceOf[js.Any], viewportElement = viewportElement.asInstanceOf[js.Any], xmlbase = xmlbase.asInstanceOf[js.Any], zoomAndPan = zoomAndPan.asInstanceOf[js.Any])
+    __obj.updateDynamic("MSHTML.SVGViewElement_typekey")(MSHTMLDotSVGViewElement_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SVGViewElement]
+  }
 }
 

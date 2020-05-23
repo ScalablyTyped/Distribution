@@ -27,8 +27,7 @@ object loggerFactoryMod extends js.Object {
     var logger: js.Any = js.native
     var loggers: js.Any = js.native
     var print: js.Any = js.native
-    def genericLog(levelToLog: Levels, category: String, label: js.UndefOr[scala.Nothing], content: js.Any): Unit = js.native
-    def genericLog(levelToLog: Levels, category: String, label: String, content: js.Any): Unit = js.native
+    def genericLog(levelToLog: Levels, category: String, label: js.UndefOr[String], content: js.Any): Unit = js.native
     def getLogger(category: String): Logger = js.native
     def getLogger(category: String, label: String): Logger = js.native
   }

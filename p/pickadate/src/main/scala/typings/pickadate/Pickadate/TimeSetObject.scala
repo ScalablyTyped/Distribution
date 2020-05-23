@@ -19,7 +19,7 @@ object TimeSetObject {
     disable: js.Any = null,
     enable: js.Any = null,
     highlight: js.Any = null,
-    interval: Int | Double = null,
+    interval: js.UndefOr[Double] = js.undefined,
     max: js.Any = null,
     min: js.Any = null,
     select: js.Any = null,
@@ -30,7 +30,7 @@ object TimeSetObject {
     if (disable != null) __obj.updateDynamic("disable")(disable.asInstanceOf[js.Any])
     if (enable != null) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
     if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])

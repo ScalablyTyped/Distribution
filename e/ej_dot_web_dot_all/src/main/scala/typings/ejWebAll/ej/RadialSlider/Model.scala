@@ -97,46 +97,46 @@ object Model {
     cssClass: String = null,
     enableAnimation: js.UndefOr[Boolean] = js.undefined,
     enableRoundOff: js.UndefOr[Boolean] = js.undefined,
-    endAngle: Int | Double = null,
+    endAngle: js.UndefOr[Double] = js.undefined,
     `inline`: js.UndefOr[Boolean] = js.undefined,
     innerCircleImageClass: String = null,
     innerCircleImageUrl: String = null,
-    labelSpace: Int | Double = null,
+    labelSpace: js.UndefOr[Double] = js.undefined,
     locale: String = null,
     mouseover: /* e */ MouseoverEventArgs => Unit = null,
-    radius: Int | Double = null,
+    radius: js.UndefOr[Double] = js.undefined,
     showInnerCircle: js.UndefOr[Boolean] = js.undefined,
     slide: /* e */ SlideEventArgs => Unit = null,
     start: /* e */ StartEventArgs => Unit = null,
-    startAngle: Int | Double = null,
+    startAngle: js.UndefOr[Double] = js.undefined,
     stop: /* e */ StopEventArgs => Unit = null,
-    strokeWidth: Int | Double = null,
+    strokeWidth: js.UndefOr[Double] = js.undefined,
     ticks: js.Array[_] = null,
-    value: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoOpen)) __obj.updateDynamic("autoOpen")(autoOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoOpen)) __obj.updateDynamic("autoOpen")(autoOpen.get.asInstanceOf[js.Any])
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRoundOff)) __obj.updateDynamic("enableRoundOff")(enableRoundOff.asInstanceOf[js.Any])
-    if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRoundOff)) __obj.updateDynamic("enableRoundOff")(enableRoundOff.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(endAngle)) __obj.updateDynamic("endAngle")(endAngle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
     if (innerCircleImageClass != null) __obj.updateDynamic("innerCircleImageClass")(innerCircleImageClass.asInstanceOf[js.Any])
     if (innerCircleImageUrl != null) __obj.updateDynamic("innerCircleImageUrl")(innerCircleImageUrl.asInstanceOf[js.Any])
-    if (labelSpace != null) __obj.updateDynamic("labelSpace")(labelSpace.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelSpace)) __obj.updateDynamic("labelSpace")(labelSpace.get.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (mouseover != null) __obj.updateDynamic("mouseover")(js.Any.fromFunction1(mouseover))
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInnerCircle)) __obj.updateDynamic("showInnerCircle")(showInnerCircle.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInnerCircle)) __obj.updateDynamic("showInnerCircle")(showInnerCircle.get.asInstanceOf[js.Any])
     if (slide != null) __obj.updateDynamic("slide")(js.Any.fromFunction1(slide))
     if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
-    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(startAngle)) __obj.updateDynamic("startAngle")(startAngle.get.asInstanceOf[js.Any])
     if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction1(stop))
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(strokeWidth)) __obj.updateDynamic("strokeWidth")(strokeWidth.get.asInstanceOf[js.Any])
     if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
 }

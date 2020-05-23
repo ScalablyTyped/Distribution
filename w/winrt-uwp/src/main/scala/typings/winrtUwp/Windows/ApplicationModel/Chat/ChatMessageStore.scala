@@ -13,9 +13,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides the methods and properties to read, manage and send messages. An application gets access to the message store using the static ChatMessageManager class . */
-@JSGlobal("Windows.ApplicationModel.Chat.ChatMessageStore")
 @js.native
-abstract class ChatMessageStore () extends js.Object {
+trait ChatMessageStore extends js.Object {
   /** Gets a ChatMessageChangeTracker class object for the message store. A message change tracker allows an application to monitor changes to messages in the message store. */
   var changeTracker: ChatMessageChangeTracker = js.native
   /** An event that occurs when a message in the message store is changed. */

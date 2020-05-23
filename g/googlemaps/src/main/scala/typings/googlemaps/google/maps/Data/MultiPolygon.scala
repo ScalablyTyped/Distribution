@@ -1,17 +1,27 @@
 package typings.googlemaps.google.maps.Data
 
 import typings.googlemaps.google.maps.LatLng
-import typings.googlemaps.google.maps.LatLngLiteral
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.maps.Data.MultiPolygon")
-@js.native
-class MultiPolygon protected () extends Geometry {
-  def this(elements: js.Array[Polygon | (js.Array[LinearRing | (js.Array[LatLng | LatLngLiteral])])]) = this()
-  def getArray(): js.Array[Polygon] = js.native
-  def getAt(n: Double): Polygon = js.native
-  def getLength(): Double = js.native
+trait MultiPolygon extends Geometry {
+  def getArray(): js.Array[Polygon]
+  def getAt(n: Double): Polygon
+  def getLength(): Double
+}
+
+object MultiPolygon {
+  @scala.inline
+  def apply(
+    forEachLatLng: js.Function1[/* latLng */ LatLng, Unit] => Unit,
+    getArray: () => js.Array[Polygon],
+    getAt: Double => Polygon,
+    getLength: () => Double,
+    getType: () => String
+  ): MultiPolygon = {
+    val __obj = js.Dynamic.literal(forEachLatLng = js.Any.fromFunction1(forEachLatLng), getArray = js.Any.fromFunction0(getArray), getAt = js.Any.fromFunction1(getAt), getLength = js.Any.fromFunction0(getLength), getType = js.Any.fromFunction0(getType))
+    __obj.asInstanceOf[MultiPolygon]
+  }
 }
 

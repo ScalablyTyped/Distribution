@@ -38,7 +38,7 @@ object LookupEventsRequest {
     EndTime: Date = null,
     EventCategory: EventCategory = null,
     LookupAttributes: LookupAttributesList = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: NextToken = null,
     StartTime: Date = null
   ): LookupEventsRequest = {
@@ -46,7 +46,7 @@ object LookupEventsRequest {
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
     if (EventCategory != null) __obj.updateDynamic("EventCategory")(EventCategory.asInstanceOf[js.Any])
     if (LookupAttributes != null) __obj.updateDynamic("LookupAttributes")(LookupAttributes.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[LookupEventsRequest]

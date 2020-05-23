@@ -1,6 +1,6 @@
 package typings.jupyterlabApputils.hoverboxMod.HoverBox
 
-import typings.jupyterlabApputils.AnonHorizontal
+import typings.jupyterlabApputils.anon.Horizontal
 import typings.jupyterlabApputils.jupyterlabApputilsStrings.above
 import typings.jupyterlabApputils.jupyterlabApputilsStrings.below
 import typings.jupyterlabApputils.jupyterlabApputilsStrings.forceAbove
@@ -61,7 +61,7 @@ trait IOptions extends js.Object {
     * the cursor, the `vertical` offset accepts `above` and `below` values for
     * the different render modes.
     */
-  var offset: js.UndefOr[AnonHorizontal] = js.undefined
+  var offset: js.UndefOr[Horizontal] = js.undefined
   /**
     * If space is available both above and below the anchor, denote which
     * location is privileged. Use forceBelow and forceAbove to mandate where
@@ -86,7 +86,7 @@ object IOptions {
     maxHeight: Double,
     minHeight: Double,
     node: HTMLElement,
-    offset: AnonHorizontal = null,
+    offset: Horizontal = null,
     privilege: above | below | forceAbove | forceBelow = null,
     style: CSSStyleDeclaration = null
   ): IOptions = {

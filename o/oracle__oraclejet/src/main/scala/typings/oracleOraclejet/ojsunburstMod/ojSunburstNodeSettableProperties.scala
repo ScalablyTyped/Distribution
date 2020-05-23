@@ -54,7 +54,7 @@ object ojSunburstNodeSettableProperties {
   def apply(
     value: Double,
     borderColor: String = null,
-    borderWidth: Int | Double = null,
+    borderWidth: js.UndefOr[Double] = js.undefined,
     categories: js.Array[String] = null,
     color: String = null,
     drilling: on | off | inherit = null,
@@ -63,7 +63,7 @@ object ojSunburstNodeSettableProperties {
     labelHalign: inner | outer | center = null,
     labelStyle: js.Object = null,
     pattern: smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none = null,
-    radius: Int | Double = null,
+    radius: js.UndefOr[Double] = js.undefined,
     selectable: off | auto = null,
     shortDesc: String = null,
     showDisclosure: on | off | inherit = null,
@@ -72,7 +72,7 @@ object ojSunburstNodeSettableProperties {
   ): ojSunburstNodeSettableProperties = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
     if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (drilling != null) __obj.updateDynamic("drilling")(drilling.asInstanceOf[js.Any])
@@ -81,7 +81,7 @@ object ojSunburstNodeSettableProperties {
     if (labelHalign != null) __obj.updateDynamic("labelHalign")(labelHalign.asInstanceOf[js.Any])
     if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
     if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc.asInstanceOf[js.Any])
     if (showDisclosure != null) __obj.updateDynamic("showDisclosure")(showDisclosure.asInstanceOf[js.Any])

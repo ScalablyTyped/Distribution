@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`private`
 import typings.arcgisJsApi.arcgisJsApiStrings.anonymous
 import typings.arcgisJsApi.arcgisJsApiStrings.auto
@@ -565,8 +564,4 @@ trait Portal
   def queryUsers(queryParams: PortalQueryParamsProperties, options: PortalQueryUsersOptions): js.Promise[PortalQueryResult] = js.native
   def queryUsers(queryParams: PortalQueryParams, options: PortalQueryUsersOptions): js.Promise[PortalQueryResult] = js.native
 }
-
-@JSGlobal("__esri.Portal")
-@js.native
-object Portal extends TopLevel[PortalConstructor]
 

@@ -35,7 +35,7 @@ package object distMod {
   type EveryRest[R] = scala.Boolean | typings.esfxTypeModel.esfxTypeModelBooleans.`false`
   /* Rewritten from type alias, can be one of: 
     - scala.Null
-    - `js.undefined`
+    - js.UndefOr[scala.Nothing]
     - typings.esfxTypeModel.esfxTypeModelBooleans.`false`
     - typings.esfxTypeModel.esfxTypeModelNumbers.`0`
     - typings.esfxTypeModel.esfxTypeModelStrings._empty

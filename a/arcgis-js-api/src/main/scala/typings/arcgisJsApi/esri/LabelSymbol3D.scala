@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`label-3d`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,8 +32,4 @@ trait LabelSymbol3D
     */
   var verticalOffset: LabelSymbol3DVerticalOffset = js.native
 }
-
-@JSGlobal("__esri.LabelSymbol3D")
-@js.native
-object LabelSymbol3D extends TopLevel[LabelSymbol3DConstructor]
 

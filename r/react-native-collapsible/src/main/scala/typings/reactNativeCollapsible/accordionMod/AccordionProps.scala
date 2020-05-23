@@ -127,30 +127,30 @@ object AccordionProps {
     renderHeader: (T, Double, Boolean, js.Array[T]) => ReactElement,
     sections: js.Array[T],
     align: top | center | bottom = null,
-    containerStyle: StyleProp[ViewStyle] = null,
+    containerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     easing: EasingMode | js.Any = null,
     expandFromBottom: js.UndefOr[Boolean] = js.undefined,
     expandMultiple: js.UndefOr[Boolean] = js.undefined,
     renderFooter: (/* content */ T, /* index */ Double, /* isActive */ Boolean, /* sections */ js.Array[T]) => ReactElement = null,
     renderSectionTitle: (/* content */ T, /* index */ Double, /* isActive */ Boolean, /* sections */ js.Array[T]) => ReactElement = null,
-    sectionContainerStyle: StyleProp[ViewStyle] = null,
+    sectionContainerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     touchableComponent: ComponentClass[js.Object, ComponentState] = null,
     touchableProps: js.Object = null,
     underlayColor: String = null
   ): AccordionProps[T] = {
     val __obj = js.Dynamic.literal(activeSections = activeSections.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), renderContent = js.Any.fromFunction4(renderContent), renderHeader = js.Any.fromFunction4(renderHeader), sections = sections.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(containerStyle)) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandFromBottom)) __obj.updateDynamic("expandFromBottom")(expandFromBottom.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandMultiple)) __obj.updateDynamic("expandMultiple")(expandMultiple.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandFromBottom)) __obj.updateDynamic("expandFromBottom")(expandFromBottom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandMultiple)) __obj.updateDynamic("expandMultiple")(expandMultiple.get.asInstanceOf[js.Any])
     if (renderFooter != null) __obj.updateDynamic("renderFooter")(js.Any.fromFunction4(renderFooter))
     if (renderSectionTitle != null) __obj.updateDynamic("renderSectionTitle")(js.Any.fromFunction4(renderSectionTitle))
-    if (sectionContainerStyle != null) __obj.updateDynamic("sectionContainerStyle")(sectionContainerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(sectionContainerStyle)) __obj.updateDynamic("sectionContainerStyle")(sectionContainerStyle.asInstanceOf[js.Any])
     if (touchableComponent != null) __obj.updateDynamic("touchableComponent")(touchableComponent.asInstanceOf[js.Any])
     if (touchableProps != null) __obj.updateDynamic("touchableProps")(touchableProps.asInstanceOf[js.Any])
     if (underlayColor != null) __obj.updateDynamic("underlayColor")(underlayColor.asInstanceOf[js.Any])

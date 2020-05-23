@@ -11,9 +11,8 @@ import scala.scalajs.js.annotation._
 /**
   * This class represents the base class for UI controls on the map.
   */
-@JSGlobal("H.ui.Control")
 @js.native
-class Control () extends Container {
+trait Control extends Container {
   /**
     * This method returns this control&#x27;s layout alignment.
     * @returns {H.ui.LayoutAlignment} - the control&#x27;s current layout alignment

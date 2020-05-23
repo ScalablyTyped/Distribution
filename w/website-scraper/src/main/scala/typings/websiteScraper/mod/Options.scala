@@ -30,30 +30,30 @@ object Options {
     defaultFilename: String = null,
     filenameGenerator: String = null,
     ignoreErrors: js.UndefOr[Boolean] = js.undefined,
-    maxDepth: Int | Double = null,
-    maxRecursiveDepth: Int | Double = null,
+    maxDepth: js.UndefOr[Double] = js.undefined,
+    maxRecursiveDepth: js.UndefOr[Double] = js.undefined,
     plugins: js.Array[js.Object] = null,
     prettifyUrls: js.UndefOr[Boolean] = js.undefined,
     recursive: js.UndefOr[Boolean] = js.undefined,
     request: RequestOptions = null,
-    requestConcurrency: Int | Double = null,
+    requestConcurrency: js.UndefOr[Double] = js.undefined,
     sources: js.Array[Source] = null,
-    subdirectories: js.Array[SubDirectory] = null,
+    subdirectories: js.UndefOr[Null | js.Array[SubDirectory]] = js.undefined,
     urlFilter: /* url */ String => Boolean = null
   ): Options = {
     val __obj = js.Dynamic.literal(directory = directory.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any])
     if (defaultFilename != null) __obj.updateDynamic("defaultFilename")(defaultFilename.asInstanceOf[js.Any])
     if (filenameGenerator != null) __obj.updateDynamic("filenameGenerator")(filenameGenerator.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors.asInstanceOf[js.Any])
-    if (maxDepth != null) __obj.updateDynamic("maxDepth")(maxDepth.asInstanceOf[js.Any])
-    if (maxRecursiveDepth != null) __obj.updateDynamic("maxRecursiveDepth")(maxRecursiveDepth.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDepth)) __obj.updateDynamic("maxDepth")(maxDepth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRecursiveDepth)) __obj.updateDynamic("maxRecursiveDepth")(maxRecursiveDepth.get.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettifyUrls)) __obj.updateDynamic("prettifyUrls")(prettifyUrls.asInstanceOf[js.Any])
-    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettifyUrls)) __obj.updateDynamic("prettifyUrls")(prettifyUrls.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.get.asInstanceOf[js.Any])
     if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
-    if (requestConcurrency != null) __obj.updateDynamic("requestConcurrency")(requestConcurrency.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestConcurrency)) __obj.updateDynamic("requestConcurrency")(requestConcurrency.get.asInstanceOf[js.Any])
     if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
-    if (subdirectories != null) __obj.updateDynamic("subdirectories")(subdirectories.asInstanceOf[js.Any])
+    if (!js.isUndefined(subdirectories)) __obj.updateDynamic("subdirectories")(subdirectories.asInstanceOf[js.Any])
     if (urlFilter != null) __obj.updateDynamic("urlFilter")(js.Any.fromFunction1(urlFilter))
     __obj.asInstanceOf[Options]
   }

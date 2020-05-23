@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/core/query", "ArrayContainsAnyFilter")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/core/query", "ArrayContainsAnyFilter")
 @js.native
 class ArrayContainsAnyFilter protected () extends FieldFilter {
   def this(

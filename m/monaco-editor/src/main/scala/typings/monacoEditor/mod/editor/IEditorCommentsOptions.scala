@@ -16,7 +16,7 @@ object IEditorCommentsOptions {
   @scala.inline
   def apply(insertSpace: js.UndefOr[Boolean] = js.undefined): IEditorCommentsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(insertSpace)) __obj.updateDynamic("insertSpace")(insertSpace.asInstanceOf[js.Any])
+    if (!js.isUndefined(insertSpace)) __obj.updateDynamic("insertSpace")(insertSpace.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditorCommentsOptions]
   }
 }

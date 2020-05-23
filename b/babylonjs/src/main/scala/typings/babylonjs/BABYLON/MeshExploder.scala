@@ -4,16 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.MeshExploder")
 @js.native
-class MeshExploder protected () extends js.Object {
-  /**
-    * Explodes meshes from a center mesh.
-    * @param meshes The meshes to explode.
-    * @param centerMesh The mesh to be center of explosion.
-    */
-  def this(meshes: js.Array[Mesh]) = this()
-  def this(meshes: js.Array[Mesh], centerMesh: Mesh) = this()
+trait MeshExploder extends js.Object {
   var _centerMesh: js.Any = js.native
   var _centerPosition: js.Any = js.native
   var _meshes: js.Any = js.native

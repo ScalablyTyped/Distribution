@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,8 +37,4 @@ trait Environment extends Accessor {
     */
   var starsEnabled: Boolean = js.native
 }
-
-@JSGlobal("__esri.Environment")
-@js.native
-object Environment extends TopLevel[EnvironmentConstructor]
 

@@ -32,8 +32,8 @@ trait Config[SV /* <: js.Object */] extends js.Object {
 
 object Config {
   @scala.inline
-  def apply[SV /* <: js.Object */](
-    acquireConnectionTimeout: Int | Double = null,
+  def apply[SV](
+    acquireConnectionTimeout: js.UndefOr[Double] = js.undefined,
     asyncStackTraces: js.UndefOr[Boolean] = js.undefined,
     client: String | (Instantiable1[/* config */ Config[js.Any], Client]) = null,
     connection: String | StaticConnectionConfig | ConnectionConfigProvider = null,
@@ -50,11 +50,11 @@ object Config {
     wrapIdentifier: (/* value */ String, /* origImpl */ js.Function1[/* value */ String, String], /* queryContext */ js.Any) => String = null
   ): Config[SV] = {
     val __obj = js.Dynamic.literal()
-    if (acquireConnectionTimeout != null) __obj.updateDynamic("acquireConnectionTimeout")(acquireConnectionTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(asyncStackTraces)) __obj.updateDynamic("asyncStackTraces")(asyncStackTraces.asInstanceOf[js.Any])
+    if (!js.isUndefined(acquireConnectionTimeout)) __obj.updateDynamic("acquireConnectionTimeout")(acquireConnectionTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(asyncStackTraces)) __obj.updateDynamic("asyncStackTraces")(asyncStackTraces.get.asInstanceOf[js.Any])
     if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
     if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (dialect != null) __obj.updateDynamic("dialect")(dialect.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
     if (migrations != null) __obj.updateDynamic("migrations")(migrations.asInstanceOf[js.Any])
@@ -62,7 +62,7 @@ object Config {
     if (postProcessResponse != null) __obj.updateDynamic("postProcessResponse")(js.Any.fromFunction2(postProcessResponse))
     if (searchPath != null) __obj.updateDynamic("searchPath")(searchPath.asInstanceOf[js.Any])
     if (seeds != null) __obj.updateDynamic("seeds")(seeds.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNullAsDefault)) __obj.updateDynamic("useNullAsDefault")(useNullAsDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNullAsDefault)) __obj.updateDynamic("useNullAsDefault")(useNullAsDefault.get.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     if (wrapIdentifier != null) __obj.updateDynamic("wrapIdentifier")(js.Any.fromFunction3(wrapIdentifier))
     __obj.asInstanceOf[Config[SV]]

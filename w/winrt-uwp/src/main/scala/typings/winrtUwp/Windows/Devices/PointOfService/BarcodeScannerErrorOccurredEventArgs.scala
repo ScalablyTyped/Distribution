@@ -5,14 +5,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides data for the ErrorOccurred event. */
-@JSGlobal("Windows.Devices.PointOfService.BarcodeScannerErrorOccurredEventArgs")
-@js.native
-abstract class BarcodeScannerErrorOccurredEventArgs () extends js.Object {
+trait BarcodeScannerErrorOccurredEventArgs extends js.Object {
   /** Gets the data associated with the ErrorOccurred event. */
-  var errorData: UnifiedPosErrorData = js.native
+  var errorData: UnifiedPosErrorData
   /** Indicates whether it is worthwhile to make another attempt at the operation. */
-  var isRetriable: Boolean = js.native
+  var isRetriable: Boolean
   /** Gets any data that was successfully read. */
-  var partialInputData: BarcodeScannerReport = js.native
+  var partialInputData: BarcodeScannerReport
+}
+
+object BarcodeScannerErrorOccurredEventArgs {
+  @scala.inline
+  def apply(errorData: UnifiedPosErrorData, isRetriable: Boolean, partialInputData: BarcodeScannerReport): BarcodeScannerErrorOccurredEventArgs = {
+    val __obj = js.Dynamic.literal(errorData = errorData.asInstanceOf[js.Any], isRetriable = isRetriable.asInstanceOf[js.Any], partialInputData = partialInputData.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BarcodeScannerErrorOccurredEventArgs]
+  }
 }
 

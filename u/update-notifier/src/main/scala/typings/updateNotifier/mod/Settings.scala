@@ -30,15 +30,15 @@ object Settings {
     packageVersion: String = null,
     pkg: Package = null,
     shouldNotifyInNpmScript: js.UndefOr[Boolean] = js.undefined,
-    updateCheckInterval: Int | Double = null
+    updateCheckInterval: js.UndefOr[Double] = js.undefined
   ): Settings = {
     val __obj = js.Dynamic.literal()
     if (distTag != null) __obj.updateDynamic("distTag")(distTag.asInstanceOf[js.Any])
     if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
     if (packageVersion != null) __obj.updateDynamic("packageVersion")(packageVersion.asInstanceOf[js.Any])
     if (pkg != null) __obj.updateDynamic("pkg")(pkg.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldNotifyInNpmScript)) __obj.updateDynamic("shouldNotifyInNpmScript")(shouldNotifyInNpmScript.asInstanceOf[js.Any])
-    if (updateCheckInterval != null) __obj.updateDynamic("updateCheckInterval")(updateCheckInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldNotifyInNpmScript)) __obj.updateDynamic("shouldNotifyInNpmScript")(shouldNotifyInNpmScript.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateCheckInterval)) __obj.updateDynamic("updateCheckInterval")(updateCheckInterval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
 }

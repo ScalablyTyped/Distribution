@@ -1,6 +1,5 @@
 package typings.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,14 +26,6 @@ object PrintOrder extends js.Object {
     */
   @js.native
   sealed trait overThenDown extends PrintOrder
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[PrintOrder with String] = js.native
-  /* "DownThenOver" */ @js.native
-  object downThenOver extends TopLevel[downThenOver with String]
-  
-  /* "OverThenDown" */ @js.native
-  object overThenDown extends TopLevel[overThenDown with String]
   
 }
 

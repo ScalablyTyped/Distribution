@@ -1,17 +1,17 @@
 package typings.antd.layoutLayoutMod
 
-import typings.antd.AnonAddSider
+import typings.antd.anon.AddSider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LayoutContextProps extends js.Object {
-  var siderHook: AnonAddSider
+  var siderHook: AddSider
 }
 
 object LayoutContextProps {
   @scala.inline
-  def apply(siderHook: AnonAddSider): LayoutContextProps = {
+  def apply(siderHook: AddSider): LayoutContextProps = {
     val __obj = js.Dynamic.literal(siderHook = siderHook.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutContextProps]
   }

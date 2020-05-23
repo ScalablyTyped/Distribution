@@ -40,11 +40,11 @@ object OverlayTriggerProps {
     animation: js.Any = null,
     children: ReactNode = null,
     container: js.Any = null,
-    containerPadding: Int | Double = null,
+    containerPadding: js.UndefOr[Double] = js.undefined,
     defaultOverlayShown: js.UndefOr[Boolean] = js.undefined,
-    delay: Int | Double = null,
-    delayHide: Int | Double = null,
-    delayShow: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
+    delayHide: js.UndefOr[Double] = js.undefined,
+    delayShow: js.UndefOr[Double] = js.undefined,
     key: Key = null,
     onEnter: js.Function = null,
     onEntered: js.Function = null,
@@ -53,7 +53,7 @@ object OverlayTriggerProps {
     onExited: js.Function = null,
     onExiting: js.Function = null,
     placement: String = null,
-    ref: LegacyRef[OverlayTrigger] = null,
+    ref: js.UndefOr[Null | LegacyRef[OverlayTrigger]] = js.undefined,
     rootClose: js.UndefOr[Boolean] = js.undefined,
     trigger: String | js.Array[String] = null
   ): OverlayTriggerProps = {
@@ -61,11 +61,11 @@ object OverlayTriggerProps {
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (containerPadding != null) __obj.updateDynamic("containerPadding")(containerPadding.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultOverlayShown)) __obj.updateDynamic("defaultOverlayShown")(defaultOverlayShown.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (delayHide != null) __obj.updateDynamic("delayHide")(delayHide.asInstanceOf[js.Any])
-    if (delayShow != null) __obj.updateDynamic("delayShow")(delayShow.asInstanceOf[js.Any])
+    if (!js.isUndefined(containerPadding)) __obj.updateDynamic("containerPadding")(containerPadding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultOverlayShown)) __obj.updateDynamic("defaultOverlayShown")(defaultOverlayShown.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayHide)) __obj.updateDynamic("delayHide")(delayHide.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayShow)) __obj.updateDynamic("delayShow")(delayShow.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter.asInstanceOf[js.Any])
     if (onEntered != null) __obj.updateDynamic("onEntered")(onEntered.asInstanceOf[js.Any])
@@ -74,8 +74,8 @@ object OverlayTriggerProps {
     if (onExited != null) __obj.updateDynamic("onExited")(onExited.asInstanceOf[js.Any])
     if (onExiting != null) __obj.updateDynamic("onExiting")(onExiting.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (!js.isUndefined(rootClose)) __obj.updateDynamic("rootClose")(rootClose.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootClose)) __obj.updateDynamic("rootClose")(rootClose.get.asInstanceOf[js.Any])
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverlayTriggerProps]
   }

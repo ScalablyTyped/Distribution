@@ -62,7 +62,7 @@ trait PivotDateFilter extends js.Object {
   var comparator: js.UndefOr[FilterDatetime] = js.undefined
   /**
     *
-    * Indicates the condition for the filter, which defines the necessary filtering criteria.
+    * Specifies the condition for the filter, which defines the necessary filtering criteria.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -114,10 +114,10 @@ object PivotDateFilter {
   ): PivotDateFilter = {
     val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any])
     if (comparator != null) __obj.updateDynamic("comparator")(comparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.asInstanceOf[js.Any])
+    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.get.asInstanceOf[js.Any])
     if (lowerBound != null) __obj.updateDynamic("lowerBound")(lowerBound.asInstanceOf[js.Any])
     if (upperBound != null) __obj.updateDynamic("upperBound")(upperBound.asInstanceOf[js.Any])
-    if (!js.isUndefined(wholeDays)) __obj.updateDynamic("wholeDays")(wholeDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(wholeDays)) __obj.updateDynamic("wholeDays")(wholeDays.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotDateFilter]
   }
 }

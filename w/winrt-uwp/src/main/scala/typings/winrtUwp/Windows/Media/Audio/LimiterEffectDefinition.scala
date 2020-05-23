@@ -6,21 +6,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a limiter effect definition supported by the audio graph. */
-@JSGlobal("Windows.Media.Audio.LimiterEffectDefinition")
-@js.native
-class LimiterEffectDefinition protected () extends js.Object {
-  /**
-    * Initializes a new instance of the LimiterEffectDefinition class.
-    * @param audioGraph The AudioGraph with which the effect will be used. Using effects outside of the audio graph it was created with is not supported.
-    */
-  def this(audioGraph: AudioGraph) = this()
+trait LimiterEffectDefinition extends js.Object {
   /** Gets the activatable class ID for the limiter effect definition object. */
-  var activatableClassId: String = js.native
+  var activatableClassId: String
   /** Gets or sets the loudness included in the limiter effect definition. */
-  var loudness: Double = js.native
+  var loudness: Double
   /** Gets the properties supported by the limiter effect definition. */
-  var properties: IPropertySet = js.native
+  var properties: IPropertySet
   /** Gets or sets the release included in the limiter effect definition. */
-  var release: Double = js.native
+  var release: Double
+}
+
+object LimiterEffectDefinition {
+  @scala.inline
+  def apply(activatableClassId: String, loudness: Double, properties: IPropertySet, release: Double): LimiterEffectDefinition = {
+    val __obj = js.Dynamic.literal(activatableClassId = activatableClassId.asInstanceOf[js.Any], loudness = loudness.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LimiterEffectDefinition]
+  }
 }
 

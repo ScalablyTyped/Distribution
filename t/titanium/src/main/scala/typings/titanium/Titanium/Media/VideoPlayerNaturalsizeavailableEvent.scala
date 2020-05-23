@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the natural size of the current movie is determined.
-		 */
+  * Fired when the natural size of the current movie is determined.
+  */
 trait VideoPlayerNaturalsizeavailableEvent extends VideoPlayerBaseEvent {
   /**
-  			 * Current value of the [naturalSize](Titanium.Media.VideoPlayer.naturalSize) property.
-  			 */
+    * Current value of the [naturalSize](Titanium.Media.VideoPlayer.naturalSize) property.
+    */
   var naturalSize: Double
 }
 

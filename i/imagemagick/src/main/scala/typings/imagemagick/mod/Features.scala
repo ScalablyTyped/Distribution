@@ -14,16 +14,16 @@ trait Features extends js.Object {
 object Features {
   @scala.inline
   def apply(
-    depth: Int | Double = null,
+    depth: js.UndefOr[Double] = js.undefined,
     format: String = null,
-    height: Int | Double = null,
-    width: Int | Double = null
+    height: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): Features = {
     val __obj = js.Dynamic.literal()
-    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Features]
   }
 }

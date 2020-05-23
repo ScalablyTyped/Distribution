@@ -36,12 +36,7 @@ object UserInfo {
     name: String = null,
     twitter: String = null
   ): UserInfo = {
-    val __obj = js.Dynamic.literal()
-    if (avatar != null) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (github != null) __obj.updateDynamic("github")(github.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (twitter != null) __obj.updateDynamic("twitter")(twitter.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(avatar = avatar.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], github = github.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], twitter = twitter.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserInfo]
   }
 }

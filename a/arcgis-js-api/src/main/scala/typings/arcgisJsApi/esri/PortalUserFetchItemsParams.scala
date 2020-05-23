@@ -54,17 +54,17 @@ object PortalUserFetchItemsParams {
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     folder: PortalFolder = null,
-    num: Int | Double = null,
+    num: js.UndefOr[Double] = js.undefined,
     sortField: String = null,
     sortOrder: String = null,
-    start: Int | Double = null
+    start: js.UndefOr[Double] = js.undefined
   ): PortalUserFetchItemsParams = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (folder != null) __obj.updateDynamic("folder")(folder.asInstanceOf[js.Any])
-    if (num != null) __obj.updateDynamic("num")(num.asInstanceOf[js.Any])
+    if (!js.isUndefined(num)) __obj.updateDynamic("num")(num.get.asInstanceOf[js.Any])
     if (sortField != null) __obj.updateDynamic("sortField")(sortField.asInstanceOf[js.Any])
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortalUserFetchItemsParams]
   }
 }

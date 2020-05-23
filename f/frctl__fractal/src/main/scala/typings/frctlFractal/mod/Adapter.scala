@@ -1,6 +1,6 @@
 package typings.frctlFractal.mod
 
-import typings.frctlFractal.AnonContent
+import typings.frctlFractal.anon.Content
 import typings.frctlFractal.mod.fractal.core.entities.EntitySource
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
@@ -13,7 +13,7 @@ abstract class Adapter[TEngine] protected () extends EventEmitter {
   def this(engine: TEngine, source: EntitySource[_, _]) = this()
   var _source: EntitySource[_, _] = js.native
   val engine: TEngine = js.native
-  val views: js.Array[AnonContent] = js.native
+  val views: js.Array[Content] = js.native
   /* protected */ def _resolve[T](value: T): js.Promise[T] = js.native
   /* protected */ def _resolve[T](value: js.Thenable[T]): js.Promise[T] = js.native
   def getReferencesForView(handle: String): js.Array[_] = js.native

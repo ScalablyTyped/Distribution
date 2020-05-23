@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait IHelmetContentSecurityPolicyConfiguration extends js.Object {
   var browserSniff: js.UndefOr[Boolean] = js.undefined
-  var directives: js.UndefOr[IHelmetContentSecurityPolicyDirectives] = js.undefined
+  var directives: IHelmetContentSecurityPolicyDirectives
   var disableAndroid: js.UndefOr[Boolean] = js.undefined
   var loose: js.UndefOr[Boolean] = js.undefined
   var reportOnly: js.UndefOr[
@@ -22,20 +22,19 @@ trait IHelmetContentSecurityPolicyConfiguration extends js.Object {
 object IHelmetContentSecurityPolicyConfiguration {
   @scala.inline
   def apply(
+    directives: IHelmetContentSecurityPolicyDirectives,
     browserSniff: js.UndefOr[Boolean] = js.undefined,
-    directives: IHelmetContentSecurityPolicyDirectives = null,
     disableAndroid: js.UndefOr[Boolean] = js.undefined,
     loose: js.UndefOr[Boolean] = js.undefined,
     reportOnly: Boolean | (js.Function2[/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], Boolean]) = null,
     setAllHeaders: js.UndefOr[Boolean] = js.undefined
   ): IHelmetContentSecurityPolicyConfiguration = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(browserSniff)) __obj.updateDynamic("browserSniff")(browserSniff.asInstanceOf[js.Any])
-    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableAndroid)) __obj.updateDynamic("disableAndroid")(disableAndroid.asInstanceOf[js.Any])
-    if (!js.isUndefined(loose)) __obj.updateDynamic("loose")(loose.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(directives = directives.asInstanceOf[js.Any])
+    if (!js.isUndefined(browserSniff)) __obj.updateDynamic("browserSniff")(browserSniff.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableAndroid)) __obj.updateDynamic("disableAndroid")(disableAndroid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loose)) __obj.updateDynamic("loose")(loose.get.asInstanceOf[js.Any])
     if (reportOnly != null) __obj.updateDynamic("reportOnly")(reportOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(setAllHeaders)) __obj.updateDynamic("setAllHeaders")(setAllHeaders.asInstanceOf[js.Any])
+    if (!js.isUndefined(setAllHeaders)) __obj.updateDynamic("setAllHeaders")(setAllHeaders.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHelmetContentSecurityPolicyConfiguration]
   }
 }

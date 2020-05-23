@@ -35,16 +35,16 @@ object PrintOptions {
     brace_style: collapse | expand | `end-expand` = null,
     indent_char: String = null,
     indent_scripts: keep | separate | normal = null,
-    indent_size: Int | Double = null,
-    max_char: Int | Double = null,
+    indent_size: js.UndefOr[Double] = js.undefined,
+    max_char: js.UndefOr[Double] = js.undefined,
     unformatted: js.Array[String] = null
   ): PrintOptions = {
     val __obj = js.Dynamic.literal()
     if (brace_style != null) __obj.updateDynamic("brace_style")(brace_style.asInstanceOf[js.Any])
     if (indent_char != null) __obj.updateDynamic("indent_char")(indent_char.asInstanceOf[js.Any])
     if (indent_scripts != null) __obj.updateDynamic("indent_scripts")(indent_scripts.asInstanceOf[js.Any])
-    if (indent_size != null) __obj.updateDynamic("indent_size")(indent_size.asInstanceOf[js.Any])
-    if (max_char != null) __obj.updateDynamic("max_char")(max_char.asInstanceOf[js.Any])
+    if (!js.isUndefined(indent_size)) __obj.updateDynamic("indent_size")(indent_size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max_char)) __obj.updateDynamic("max_char")(max_char.get.asInstanceOf[js.Any])
     if (unformatted != null) __obj.updateDynamic("unformatted")(unformatted.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintOptions]
   }

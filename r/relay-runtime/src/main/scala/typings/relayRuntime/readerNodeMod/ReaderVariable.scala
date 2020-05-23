@@ -14,9 +14,9 @@ trait ReaderVariable extends ReaderArgument {
 
 object ReaderVariable {
   @scala.inline
-  def apply(kind: String, name: String, variableName: String, `type`: String = null): ReaderVariable = {
+  def apply(kind: String, name: String, variableName: String, `type`: js.UndefOr[Null | String] = js.undefined): ReaderVariable = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], variableName = variableName.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReaderVariable]
   }
 }

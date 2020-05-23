@@ -39,7 +39,7 @@ object ProxyOptions {
     if (proxyRes != null) __obj.updateDynamic("proxyRes")(proxyRes.asInstanceOf[js.Any])
     if (reqHeaders != null) __obj.updateDynamic("reqHeaders")(js.Any.fromFunction1(reqHeaders))
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (!js.isUndefined(ws)) __obj.updateDynamic("ws")(ws.asInstanceOf[js.Any])
+    if (!js.isUndefined(ws)) __obj.updateDynamic("ws")(ws.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxyOptions]
   }
 }

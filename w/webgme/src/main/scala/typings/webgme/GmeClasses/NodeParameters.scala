@@ -21,11 +21,16 @@ trait NodeParameters extends js.Object {
 
 object NodeParameters {
   @scala.inline
-  def apply(base: Node = null, guid: GUID = null, parent: Node = null, relid: RelId = null): NodeParameters = {
+  def apply(
+    base: js.UndefOr[Null | Node] = js.undefined,
+    guid: GUID = null,
+    parent: js.UndefOr[Null | Node] = js.undefined,
+    relid: RelId = null
+  ): NodeParameters = {
     val __obj = js.Dynamic.literal()
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (!js.isUndefined(base)) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
     if (guid != null) __obj.updateDynamic("guid")(guid.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     if (relid != null) __obj.updateDynamic("relid")(relid.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeParameters]
   }

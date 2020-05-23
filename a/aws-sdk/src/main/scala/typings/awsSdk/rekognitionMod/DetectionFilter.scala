@@ -23,14 +23,14 @@ trait DetectionFilter extends js.Object {
 object DetectionFilter {
   @scala.inline
   def apply(
-    MinBoundingBoxHeight: Int | Double = null,
-    MinBoundingBoxWidth: Int | Double = null,
-    MinConfidence: Int | Double = null
+    MinBoundingBoxHeight: js.UndefOr[BoundingBoxHeight] = js.undefined,
+    MinBoundingBoxWidth: js.UndefOr[BoundingBoxWidth] = js.undefined,
+    MinConfidence: js.UndefOr[Percent] = js.undefined
   ): DetectionFilter = {
     val __obj = js.Dynamic.literal()
-    if (MinBoundingBoxHeight != null) __obj.updateDynamic("MinBoundingBoxHeight")(MinBoundingBoxHeight.asInstanceOf[js.Any])
-    if (MinBoundingBoxWidth != null) __obj.updateDynamic("MinBoundingBoxWidth")(MinBoundingBoxWidth.asInstanceOf[js.Any])
-    if (MinConfidence != null) __obj.updateDynamic("MinConfidence")(MinConfidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinBoundingBoxHeight)) __obj.updateDynamic("MinBoundingBoxHeight")(MinBoundingBoxHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinBoundingBoxWidth)) __obj.updateDynamic("MinBoundingBoxWidth")(MinBoundingBoxWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinConfidence)) __obj.updateDynamic("MinConfidence")(MinConfidence.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectionFilter]
   }
 }

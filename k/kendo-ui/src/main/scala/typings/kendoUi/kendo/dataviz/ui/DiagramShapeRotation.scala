@@ -10,9 +10,9 @@ trait DiagramShapeRotation extends js.Object {
 
 object DiagramShapeRotation {
   @scala.inline
-  def apply(angle: Int | Double = null): DiagramShapeRotation = {
+  def apply(angle: js.UndefOr[Double] = js.undefined): DiagramShapeRotation = {
     val __obj = js.Dynamic.literal()
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramShapeRotation]
   }
 }

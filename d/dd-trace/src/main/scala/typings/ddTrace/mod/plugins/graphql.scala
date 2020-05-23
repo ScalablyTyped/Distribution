@@ -69,7 +69,7 @@ object graphql {
   def apply(
     analytics: Boolean | Double | (StringDictionary[Boolean | Double]) = null,
     collapse: js.UndefOr[Boolean] = js.undefined,
-    depth: Int | Double = null,
+    depth: js.UndefOr[Double] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
     service: String = null,
     signature: js.UndefOr[Boolean] = js.undefined,
@@ -77,11 +77,11 @@ object graphql {
   ): graphql = {
     val __obj = js.Dynamic.literal()
     if (analytics != null) __obj.updateDynamic("analytics")(analytics.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapse)) __obj.updateDynamic("collapse")(collapse.asInstanceOf[js.Any])
-    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapse)) __obj.updateDynamic("collapse")(collapse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
-    if (!js.isUndefined(signature)) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
+    if (!js.isUndefined(signature)) __obj.updateDynamic("signature")(signature.get.asInstanceOf[js.Any])
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[graphql]
   }

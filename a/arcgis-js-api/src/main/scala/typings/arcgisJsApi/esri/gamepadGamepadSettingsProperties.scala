@@ -53,7 +53,7 @@ object gamepadGamepadSettingsProperties {
   ): gamepadGamepadSettingsProperties = {
     val __obj = js.Dynamic.literal()
     if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (tiltDirection != null) __obj.updateDynamic("tiltDirection")(tiltDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[gamepadGamepadSettingsProperties]

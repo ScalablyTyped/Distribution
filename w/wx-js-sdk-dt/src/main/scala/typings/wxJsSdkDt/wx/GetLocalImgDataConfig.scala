@@ -1,6 +1,6 @@
 package typings.wxJsSdkDt.wx
 
-import typings.wxJsSdkDt.AnonLocalData
+import typings.wxJsSdkDt.anon.LocalData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,14 +14,14 @@ trait GetLocalImgDataConfig extends WxBaseRequestConfig {
     * 成功后的回调, localData是图片的base64数据，可以用img标签显示
     */
   @JSName("success")
-  def success_MGetLocalImgDataConfig(res: AnonLocalData): Unit
+  def success_MGetLocalImgDataConfig(res: LocalData): Unit
 }
 
 object GetLocalImgDataConfig {
   @scala.inline
   def apply(
     localId: String,
-    success: AnonLocalData => Unit,
+    success: LocalData => Unit,
     cancel: () => Unit = null,
     complete: /* res */ js.UndefOr[js.Any] => Unit = null,
     fail: /* error */ js.UndefOr[js.Any] => Unit = null

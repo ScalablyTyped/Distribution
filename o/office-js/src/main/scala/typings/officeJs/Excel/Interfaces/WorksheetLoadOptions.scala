@@ -33,7 +33,7 @@ trait WorksheetLoadOptions extends js.Object {
   var charts: js.UndefOr[ChartCollectionLoadOptions] = js.undefined
   /**
     *
-    * Gets or sets the enableCalculation property of the worksheet.
+    * Determines if Excel should recalculate the worksheet when necessary.
     True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
     *
     * [Api set: ExcelApi 1.9]
@@ -41,7 +41,7 @@ trait WorksheetLoadOptions extends js.Object {
   var enableCalculation: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved. Read-only.
+    * Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -76,30 +76,28 @@ trait WorksheetLoadOptions extends js.Object {
   var protection: js.UndefOr[WorksheetProtectionLoadOptions] = js.undefined
   /**
     *
-    * Gets or sets the worksheet's gridlines flag.
-    This flag determines whether gridlines are visible to the user.
+    * Specifies if gridlines are visible to the user.
     *
     * [Api set: ExcelApi 1.8]
     */
   var showGridlines: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Gets or sets the worksheet's headings flag.
-    This flag determines whether headings are visible to the user.
+    * Specifies if headings are visible to the user.
     *
     * [Api set: ExcelApi 1.8]
     */
   var showHeadings: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.
+    * Returns the standard (default) height of all the rows in the worksheet, in points.
     *
     * [Api set: ExcelApi 1.7]
     */
   var standardHeight: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns or sets the standard (default) width of all the columns in the worksheet.
+    * Specifies the standard (default) width of all the columns in the worksheet.
     One unit of column width is equal to the width of one character in the Normal style. For proportional fonts, the width of the character 0 (zero) is used.
     *
     * [Api set: ExcelApi 1.7]
@@ -107,7 +105,7 @@ trait WorksheetLoadOptions extends js.Object {
   var standardWidth: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Gets or sets the worksheet tab color.
+    * The tab color of the worksheet.
     When retrieving the tab color, if the worksheet is invisible, the value will be null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned. Otherwise, the property will be set to a color, in the form "#123456"
     When setting the color, use an empty-string to set an "auto" color, or a real color otherwise.
     *
@@ -151,22 +149,22 @@ object WorksheetLoadOptions {
     visibility: js.UndefOr[Boolean] = js.undefined
   ): WorksheetLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
     if (autoFilter != null) __obj.updateDynamic("autoFilter")(autoFilter.asInstanceOf[js.Any])
     if (charts != null) __obj.updateDynamic("charts")(charts.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCalculation)) __obj.updateDynamic("enableCalculation")(enableCalculation.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCalculation)) __obj.updateDynamic("enableCalculation")(enableCalculation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.get.asInstanceOf[js.Any])
     if (pageLayout != null) __obj.updateDynamic("pageLayout")(pageLayout.asInstanceOf[js.Any])
-    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.get.asInstanceOf[js.Any])
     if (protection != null) __obj.updateDynamic("protection")(protection.asInstanceOf[js.Any])
-    if (!js.isUndefined(showGridlines)) __obj.updateDynamic("showGridlines")(showGridlines.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHeadings)) __obj.updateDynamic("showHeadings")(showHeadings.asInstanceOf[js.Any])
-    if (!js.isUndefined(standardHeight)) __obj.updateDynamic("standardHeight")(standardHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(standardWidth)) __obj.updateDynamic("standardWidth")(standardWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabColor)) __obj.updateDynamic("tabColor")(tabColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(showGridlines)) __obj.updateDynamic("showGridlines")(showGridlines.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHeadings)) __obj.updateDynamic("showHeadings")(showHeadings.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(standardHeight)) __obj.updateDynamic("standardHeight")(standardHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(standardWidth)) __obj.updateDynamic("standardWidth")(standardWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabColor)) __obj.updateDynamic("tabColor")(tabColor.get.asInstanceOf[js.Any])
     if (tables != null) __obj.updateDynamic("tables")(tables.asInstanceOf[js.Any])
-    if (!js.isUndefined(visibility)) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
+    if (!js.isUndefined(visibility)) __obj.updateDynamic("visibility")(visibility.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorksheetLoadOptions]
   }
 }

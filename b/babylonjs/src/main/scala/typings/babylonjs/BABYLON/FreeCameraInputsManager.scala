@@ -7,14 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Interface representing a free camera inputs manager
   */
-@JSGlobal("BABYLON.FreeCameraInputsManager")
 @js.native
-class FreeCameraInputsManager protected () extends CameraInputsManager[FreeCamera] {
-  /**
-    * Instantiates a new FreeCameraInputsManager.
-    * @param camera Defines the camera the inputs belong to
-    */
-  def this(camera: FreeCamera) = this()
+trait FreeCameraInputsManager extends CameraInputsManager[FreeCamera] {
   /**
     * @hidden
     */

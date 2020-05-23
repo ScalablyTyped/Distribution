@@ -25,22 +25,22 @@ trait SubscriptionSession extends EventEmitter {
   @JSName("on")
   def on_invalidcontent(
     event: invalid_content,
-    listener: js.Function3[/* err */ Error, /* message */ Message, /* ackOrNackFn */ js.Any, Unit]
+    listener: js.Function3[/* err */ Error, /* message */ Message, /* ackOrNackFn */ AckOrNack, Unit]
   ): this.type = js.native
   @JSName("on")
   def on_message(
     event: message,
-    listener: js.Function3[/* message */ Message, /* content */ js.Any, /* ackOrNackFn */ js.Any, Unit]
+    listener: js.Function3[/* message */ Message, /* content */ js.Any, /* ackOrNackFn */ AckOrNack, Unit]
   ): this.type = js.native
   @JSName("on")
   def on_redeliverieserror(
     event: redeliveries_error,
-    listener: js.Function3[/* err */ Error, /* message */ Message, /* ackOrNackFn */ js.Any, Unit]
+    listener: js.Function3[/* err */ Error, /* message */ Message, /* ackOrNackFn */ AckOrNack, Unit]
   ): this.type = js.native
   @JSName("on")
   def on_redeliveriesexceeded(
     event: redeliveries_exceeded,
-    listener: js.Function3[/* err */ Error, /* message */ Message, /* ackOrNackFn */ js.Any, Unit]
+    listener: js.Function3[/* err */ Error, /* message */ Message, /* ackOrNackFn */ AckOrNack, Unit]
   ): this.type = js.native
 }
 

@@ -26,8 +26,8 @@ object MetadataObject {
     val __obj = js.Dynamic.literal(xmlName = xmlName.asInstanceOf[js.Any])
     if (childXmlNames != null) __obj.updateDynamic("childXmlNames")(childXmlNames.asInstanceOf[js.Any])
     if (directoryName != null) __obj.updateDynamic("directoryName")(directoryName.asInstanceOf[js.Any])
-    if (!js.isUndefined(inFolder)) __obj.updateDynamic("inFolder")(inFolder.asInstanceOf[js.Any])
-    if (!js.isUndefined(metaFile)) __obj.updateDynamic("metaFile")(metaFile.asInstanceOf[js.Any])
+    if (!js.isUndefined(inFolder)) __obj.updateDynamic("inFolder")(inFolder.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(metaFile)) __obj.updateDynamic("metaFile")(metaFile.get.asInstanceOf[js.Any])
     if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetadataObject]
   }

@@ -20,10 +20,10 @@ trait SourceAndDestination extends js.Object {
 
 object SourceAndDestination {
   @scala.inline
-  def apply(dimension: String = null, fillLength: Int | Double = null, source: GridRange = null): SourceAndDestination = {
+  def apply(dimension: String = null, fillLength: js.UndefOr[Double] = js.undefined, source: GridRange = null): SourceAndDestination = {
     val __obj = js.Dynamic.literal()
     if (dimension != null) __obj.updateDynamic("dimension")(dimension.asInstanceOf[js.Any])
-    if (fillLength != null) __obj.updateDynamic("fillLength")(fillLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(fillLength)) __obj.updateDynamic("fillLength")(fillLength.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceAndDestination]
   }

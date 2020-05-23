@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Shell Browser Window. */
-@JSGlobal("SHDocVw.ShellBrowserWindow")
 @js.native
-class ShellBrowserWindow protected () extends js.Object {
+trait ShellBrowserWindow extends js.Object {
   /** Controls whether address bar is shown */
   var AddressBar: Boolean = js.native
   /** Returns the application automation object if accessible, this automation object otherwise.. */

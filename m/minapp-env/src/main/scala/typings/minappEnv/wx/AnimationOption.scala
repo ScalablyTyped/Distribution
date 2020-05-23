@@ -24,9 +24,12 @@ trait AnimationOption extends js.Object {
 
 object AnimationOption {
   @scala.inline
-  def apply(duration: Int | Double = null, timingFunc: linear | easeIn | easeOut | easeInOut = null): AnimationOption = {
+  def apply(
+    duration: js.UndefOr[Double] = js.undefined,
+    timingFunc: linear | easeIn | easeOut | easeInOut = null
+  ): AnimationOption = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (timingFunc != null) __obj.updateDynamic("timingFunc")(timingFunc.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationOption]
   }

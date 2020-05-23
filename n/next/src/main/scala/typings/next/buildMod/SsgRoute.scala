@@ -14,8 +14,7 @@ trait SsgRoute extends js.Object {
 object SsgRoute {
   @scala.inline
   def apply(dataRoute: String, initialRevalidateSeconds: Double | `false`, srcRoute: String = null): SsgRoute = {
-    val __obj = js.Dynamic.literal(dataRoute = dataRoute.asInstanceOf[js.Any], initialRevalidateSeconds = initialRevalidateSeconds.asInstanceOf[js.Any])
-    if (srcRoute != null) __obj.updateDynamic("srcRoute")(srcRoute.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dataRoute = dataRoute.asInstanceOf[js.Any], initialRevalidateSeconds = initialRevalidateSeconds.asInstanceOf[js.Any], srcRoute = srcRoute.asInstanceOf[js.Any])
     __obj.asInstanceOf[SsgRoute]
   }
 }

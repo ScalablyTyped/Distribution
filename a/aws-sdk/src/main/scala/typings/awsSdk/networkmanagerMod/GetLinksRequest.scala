@@ -41,7 +41,7 @@ object GetLinksRequest {
   def apply(
     GlobalNetworkId: String,
     LinkIds: StringList = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: String = null,
     Provider: String = null,
     SiteId: String = null,
@@ -49,7 +49,7 @@ object GetLinksRequest {
   ): GetLinksRequest = {
     val __obj = js.Dynamic.literal(GlobalNetworkId = GlobalNetworkId.asInstanceOf[js.Any])
     if (LinkIds != null) __obj.updateDynamic("LinkIds")(LinkIds.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (Provider != null) __obj.updateDynamic("Provider")(Provider.asInstanceOf[js.Any])
     if (SiteId != null) __obj.updateDynamic("SiteId")(SiteId.asInstanceOf[js.Any])

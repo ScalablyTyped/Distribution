@@ -17,6 +17,9 @@ object seamlessImmutableStrings {
   sealed trait ImmutableObjectMixin extends js.Object
   
   @js.native
+  sealed trait asMutable extends js.Object
+  
+  @js.native
   sealed trait concat extends js.Object
   
   @js.native
@@ -121,6 +124,8 @@ object seamlessImmutableStrings {
   def ImmutableObject: ImmutableObject = "ImmutableObject".asInstanceOf[ImmutableObject]
   @scala.inline
   def ImmutableObjectMixin: ImmutableObjectMixin = "ImmutableObjectMixin".asInstanceOf[ImmutableObjectMixin]
+  @scala.inline
+  def asMutable: asMutable = "asMutable".asInstanceOf[asMutable]
   @scala.inline
   def concat: concat = "concat".asInstanceOf[concat]
   @scala.inline

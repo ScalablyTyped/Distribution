@@ -22,7 +22,7 @@ object Config {
     val __obj = js.Dynamic.literal()
     if (confirmIcon != null) __obj.updateDynamic("confirmIcon")(confirmIcon.asInstanceOf[js.Any])
     if (confirmText != null) __obj.updateDynamic("confirmText")(confirmText.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAlways)) __obj.updateDynamic("showAlways")(showAlways.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAlways)) __obj.updateDynamic("showAlways")(showAlways.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }

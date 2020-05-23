@@ -4,10 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.DataTransfer.OperationCompletedEventArgs")
-@js.native
-class OperationCompletedEventArgs () extends IOperationCompletedEventArgs {
-  /* CompleteClass */
-  override var operation: DataPackageOperation = js.native
+trait OperationCompletedEventArgs extends IOperationCompletedEventArgs
+
+object OperationCompletedEventArgs {
+  @scala.inline
+  def apply(operation: DataPackageOperation): OperationCompletedEventArgs = {
+    val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OperationCompletedEventArgs]
+  }
 }
 

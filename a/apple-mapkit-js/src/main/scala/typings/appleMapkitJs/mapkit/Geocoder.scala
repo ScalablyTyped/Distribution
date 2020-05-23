@@ -1,6 +1,6 @@
 package typings.appleMapkitJs.mapkit
 
-import typings.appleMapkitJs.PickGeocoderConstructorOp
+import typings.appleMapkitJs.anon.PickGeocoderConstructorOp
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,14 +10,8 @@ import scala.scalajs.js.annotation._
   * A geocoder that converts human-readable addresses to geographic coordinates
   * and vice versa.
   */
-@JSGlobal("mapkit.Geocoder")
 @js.native
-/**
-  * Initialize a geocoder object and set optional language and user location
-  * properties.
-  */
-class Geocoder () extends js.Object {
-  def this(options: GeocoderConstructorOptions) = this()
+trait Geocoder extends js.Object {
   /**
     * A Boolean value that indicates whether the geocoder should return results
     * near the user's current location.

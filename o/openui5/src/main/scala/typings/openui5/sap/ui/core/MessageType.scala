@@ -1,6 +1,5 @@
 package typings.openui5.sap.ui.core
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,23 +27,6 @@ object MessageType extends js.Object {
   
   @js.native
   sealed trait Warning extends MessageType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MessageType with Double] = js.native
-  /* 0 */ @js.native
-  object Error extends TopLevel[Error with Double]
-  
-  /* 1 */ @js.native
-  object Information extends TopLevel[Information with Double]
-  
-  /* 2 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 3 */ @js.native
-  object Success extends TopLevel[Success with Double]
-  
-  /* 4 */ @js.native
-  object Warning extends TopLevel[Warning with Double]
   
 }
 

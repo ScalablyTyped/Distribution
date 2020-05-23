@@ -1,6 +1,6 @@
 package typings.azdata.mod
 
-import typings.azdata.AnonDark
+import typings.azdata.anon.Dark
 import typings.vscode.mod.Uri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation._
 
 trait ComponentWithIcon extends js.Object {
   /**
-  		 * @deprecated This will be moved to `ComponentWithIconProperties`
-  		 */
+    * @deprecated This will be moved to `ComponentWithIconProperties`
+    */
   var iconHeight: js.UndefOr[Double | String] = js.undefined
   /**
-  		 * @deprecated This will be moved to `ComponentWithIconProperties`
-  		 */
-  var iconPath: js.UndefOr[String | Uri | AnonDark] = js.undefined
+    * @deprecated This will be moved to `ComponentWithIconProperties`
+    */
+  var iconPath: js.UndefOr[String | Uri | Dark] = js.undefined
   /**
-  		 * @deprecated This will be moved to `ComponentWithIconProperties`
-  		 */
+    * @deprecated This will be moved to `ComponentWithIconProperties`
+    */
   var iconWidth: js.UndefOr[Double | String] = js.undefined
 }
 
@@ -25,7 +25,7 @@ object ComponentWithIcon {
   @scala.inline
   def apply(
     iconHeight: Double | String = null,
-    iconPath: String | Uri | AnonDark = null,
+    iconPath: String | Uri | Dark = null,
     iconWidth: Double | String = null
   ): ComponentWithIcon = {
     val __obj = js.Dynamic.literal()

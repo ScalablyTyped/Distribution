@@ -75,7 +75,7 @@ object TranscriptionJob {
     LanguageCode: LanguageCode = null,
     Media: Media = null,
     MediaFormat: MediaFormat = null,
-    MediaSampleRateHertz: Int | Double = null,
+    MediaSampleRateHertz: js.UndefOr[MediaSampleRateHertz] = js.undefined,
     Settings: Settings = null,
     StartTime: DateTime = null,
     Transcript: Transcript = null,
@@ -91,7 +91,7 @@ object TranscriptionJob {
     if (LanguageCode != null) __obj.updateDynamic("LanguageCode")(LanguageCode.asInstanceOf[js.Any])
     if (Media != null) __obj.updateDynamic("Media")(Media.asInstanceOf[js.Any])
     if (MediaFormat != null) __obj.updateDynamic("MediaFormat")(MediaFormat.asInstanceOf[js.Any])
-    if (MediaSampleRateHertz != null) __obj.updateDynamic("MediaSampleRateHertz")(MediaSampleRateHertz.asInstanceOf[js.Any])
+    if (!js.isUndefined(MediaSampleRateHertz)) __obj.updateDynamic("MediaSampleRateHertz")(MediaSampleRateHertz.get.asInstanceOf[js.Any])
     if (Settings != null) __obj.updateDynamic("Settings")(Settings.asInstanceOf[js.Any])
     if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
     if (Transcript != null) __obj.updateDynamic("Transcript")(Transcript.asInstanceOf[js.Any])

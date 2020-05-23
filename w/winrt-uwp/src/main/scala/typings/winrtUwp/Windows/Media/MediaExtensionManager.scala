@@ -6,10 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Registers a media parser or codec. */
-@JSGlobal("Windows.Media.MediaExtensionManager")
 @js.native
-/** Creates a new MediaExtensionManager object that is used to register a media parser or codec. */
-class MediaExtensionManager () extends js.Object {
+trait MediaExtensionManager extends js.Object {
   /**
     * Registers an audio decoder for the specified input and output media types.
     * @param activatableClassId The class identifier of the activatable runtime class of the audio decoder. The runtime class must implement the IMediaExtension interface.

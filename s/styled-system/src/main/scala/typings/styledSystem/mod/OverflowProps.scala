@@ -33,15 +33,15 @@ trait OverflowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Ob
 
 object OverflowProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](
-    overflow: ResponsiveValue[OverflowProperty, ThemeType] = null,
-    overflowX: ResponsiveValue[OverflowXProperty, ThemeType] = null,
-    overflowY: ResponsiveValue[OverflowYProperty, ThemeType] = null
+  def apply[ThemeType](
+    overflow: js.UndefOr[Null | (ResponsiveValue[OverflowProperty, ThemeType])] = js.undefined,
+    overflowX: js.UndefOr[Null | (ResponsiveValue[OverflowXProperty, ThemeType])] = js.undefined,
+    overflowY: js.UndefOr[Null | (ResponsiveValue[OverflowYProperty, ThemeType])] = js.undefined
   ): OverflowProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
-    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (overflowX != null) __obj.updateDynamic("overflowX")(overflowX.asInstanceOf[js.Any])
-    if (overflowY != null) __obj.updateDynamic("overflowY")(overflowY.asInstanceOf[js.Any])
+    if (!js.isUndefined(overflow)) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
+    if (!js.isUndefined(overflowX)) __obj.updateDynamic("overflowX")(overflowX.asInstanceOf[js.Any])
+    if (!js.isUndefined(overflowY)) __obj.updateDynamic("overflowY")(overflowY.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverflowProps[ThemeType]]
   }
 }

@@ -1,7 +1,7 @@
 package typings.sequelize.mod
 
-import typings.sequelize.AnonClone
-import typings.sequelize.AnonSkip
+import typings.sequelize.anon.Clone
+import typings.sequelize.anon.Skip
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -104,8 +104,8 @@ trait Instance[TAttributes] extends js.Object {
     * @param options.plain If set to true, included instances will be returned as plain objects
     */
   def get(key: /* keyof TAttributes */ String): js.Any = js.native
-  def get(key: /* keyof TAttributes */ String, options: AnonClone): js.Any = js.native
-  def get(options: AnonClone): TAttributes = js.native
+  def get(key: /* keyof TAttributes */ String, options: Clone): js.Any = js.native
+  def get(options: Clone): TAttributes = js.native
   /**
     * Get the value of the underlying data value
     */
@@ -257,7 +257,7 @@ trait Instance[TAttributes] extends js.Object {
     * @param options.skip An array of strings. All properties that are in this array will not be validated
     */
   def validate(): typings.bluebird.mod.^[ValidationError] = js.native
-  def validate(options: AnonSkip): typings.bluebird.mod.^[ValidationError] = js.native
+  def validate(options: Skip): typings.bluebird.mod.^[ValidationError] = js.native
   /**
     * Get an object representing the query for this instance, use with `options.where`
     */

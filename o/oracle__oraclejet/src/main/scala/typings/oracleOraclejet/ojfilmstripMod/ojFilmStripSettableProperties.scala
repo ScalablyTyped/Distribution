@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojfilmstripMod
 
-import typings.oracleOraclejet.AnonId
-import typings.oracleOraclejet.AnonLabelAccArrowNextPage
+import typings.oracleOraclejet.anon.Id
+import typings.oracleOraclejet.anon.LabelAccArrowNextPage
 import typings.oracleOraclejet.mod.baseComponentSettableProperties
 import typings.oracleOraclejet.oracleOraclejetStrings.adjacent
 import typings.oracleOraclejet.oracleOraclejetStrings.auto
@@ -20,12 +20,12 @@ import scala.scalajs.js.annotation._
 trait ojFilmStripSettableProperties extends baseComponentSettableProperties {
   var arrowPlacement: adjacent | overlay
   var arrowVisibility: visible | hidden | hover | auto
-  var currentItem: AnonId
+  var currentItem: Id
   var looping: off | page
   var maxItemsPerPage: Double
   var orientation: horizontal | vertical
   @JSName("translations")
-  var translations_ojFilmStripSettableProperties: AnonLabelAccArrowNextPage
+  var translations_ojFilmStripSettableProperties: LabelAccArrowNextPage
 }
 
 object ojFilmStripSettableProperties {
@@ -33,11 +33,11 @@ object ojFilmStripSettableProperties {
   def apply(
     arrowPlacement: adjacent | overlay,
     arrowVisibility: visible | hidden | hover | auto,
-    currentItem: AnonId,
+    currentItem: Id,
     looping: off | page,
     maxItemsPerPage: Double,
     orientation: horizontal | vertical,
-    translations: AnonLabelAccArrowNextPage
+    translations: LabelAccArrowNextPage
   ): ojFilmStripSettableProperties = {
     val __obj = js.Dynamic.literal(arrowPlacement = arrowPlacement.asInstanceOf[js.Any], arrowVisibility = arrowVisibility.asInstanceOf[js.Any], currentItem = currentItem.asInstanceOf[js.Any], looping = looping.asInstanceOf[js.Any], maxItemsPerPage = maxItemsPerPage.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojFilmStripSettableProperties]

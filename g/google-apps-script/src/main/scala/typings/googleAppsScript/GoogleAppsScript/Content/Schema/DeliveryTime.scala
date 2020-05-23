@@ -19,19 +19,19 @@ object DeliveryTime {
   def apply(
     cutoffTime: CutoffTime = null,
     holidayCutoffs: js.Array[HolidayCutoff] = null,
-    maxHandlingTimeInDays: Int | Double = null,
-    maxTransitTimeInDays: Int | Double = null,
-    minHandlingTimeInDays: Int | Double = null,
-    minTransitTimeInDays: Int | Double = null,
+    maxHandlingTimeInDays: js.UndefOr[Double] = js.undefined,
+    maxTransitTimeInDays: js.UndefOr[Double] = js.undefined,
+    minHandlingTimeInDays: js.UndefOr[Double] = js.undefined,
+    minTransitTimeInDays: js.UndefOr[Double] = js.undefined,
     transitTimeTable: TransitTable = null
   ): DeliveryTime = {
     val __obj = js.Dynamic.literal()
     if (cutoffTime != null) __obj.updateDynamic("cutoffTime")(cutoffTime.asInstanceOf[js.Any])
     if (holidayCutoffs != null) __obj.updateDynamic("holidayCutoffs")(holidayCutoffs.asInstanceOf[js.Any])
-    if (maxHandlingTimeInDays != null) __obj.updateDynamic("maxHandlingTimeInDays")(maxHandlingTimeInDays.asInstanceOf[js.Any])
-    if (maxTransitTimeInDays != null) __obj.updateDynamic("maxTransitTimeInDays")(maxTransitTimeInDays.asInstanceOf[js.Any])
-    if (minHandlingTimeInDays != null) __obj.updateDynamic("minHandlingTimeInDays")(minHandlingTimeInDays.asInstanceOf[js.Any])
-    if (minTransitTimeInDays != null) __obj.updateDynamic("minTransitTimeInDays")(minTransitTimeInDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHandlingTimeInDays)) __obj.updateDynamic("maxHandlingTimeInDays")(maxHandlingTimeInDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTransitTimeInDays)) __obj.updateDynamic("maxTransitTimeInDays")(maxTransitTimeInDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minHandlingTimeInDays)) __obj.updateDynamic("minHandlingTimeInDays")(minHandlingTimeInDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minTransitTimeInDays)) __obj.updateDynamic("minTransitTimeInDays")(minTransitTimeInDays.get.asInstanceOf[js.Any])
     if (transitTimeTable != null) __obj.updateDynamic("transitTimeTable")(transitTimeTable.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeliveryTime]
   }

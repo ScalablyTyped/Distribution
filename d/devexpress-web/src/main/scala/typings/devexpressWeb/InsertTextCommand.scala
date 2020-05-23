@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A command to insert text at the current position in the document.
   */
-@JSGlobal("InsertTextCommand")
 @js.native
-class InsertTextCommand () extends CommandWithSimpleStateBase {
+trait InsertTextCommand extends CommandWithSimpleStateBase {
   /**
     * Executes the InsertTextCommand command with the specified parameters. true if the command has been successfully executed; false if the command execution has failed.
     * @param text A string value specifying a text to insert.

@@ -59,9 +59,9 @@ trait ServiceQuota extends js.Object {
 object ServiceQuota {
   @scala.inline
   def apply(
-    Adjustable: js.UndefOr[Boolean] = js.undefined,
+    Adjustable: js.UndefOr[QuotaAdjustable] = js.undefined,
     ErrorReason: ErrorReason = null,
-    GlobalQuota: js.UndefOr[Boolean] = js.undefined,
+    GlobalQuota: js.UndefOr[GlobalQuota] = js.undefined,
     Period: QuotaPeriod = null,
     QuotaArn: QuotaArn = null,
     QuotaCode: QuotaCode = null,
@@ -70,12 +70,12 @@ object ServiceQuota {
     ServiceName: ServiceName = null,
     Unit: QuotaUnit = null,
     UsageMetric: MetricInfo = null,
-    Value: Int | Double = null
+    Value: js.UndefOr[QuotaValue] = js.undefined
   ): ServiceQuota = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Adjustable)) __obj.updateDynamic("Adjustable")(Adjustable.asInstanceOf[js.Any])
+    if (!js.isUndefined(Adjustable)) __obj.updateDynamic("Adjustable")(Adjustable.get.asInstanceOf[js.Any])
     if (ErrorReason != null) __obj.updateDynamic("ErrorReason")(ErrorReason.asInstanceOf[js.Any])
-    if (!js.isUndefined(GlobalQuota)) __obj.updateDynamic("GlobalQuota")(GlobalQuota.asInstanceOf[js.Any])
+    if (!js.isUndefined(GlobalQuota)) __obj.updateDynamic("GlobalQuota")(GlobalQuota.get.asInstanceOf[js.Any])
     if (Period != null) __obj.updateDynamic("Period")(Period.asInstanceOf[js.Any])
     if (QuotaArn != null) __obj.updateDynamic("QuotaArn")(QuotaArn.asInstanceOf[js.Any])
     if (QuotaCode != null) __obj.updateDynamic("QuotaCode")(QuotaCode.asInstanceOf[js.Any])
@@ -84,7 +84,7 @@ object ServiceQuota {
     if (ServiceName != null) __obj.updateDynamic("ServiceName")(ServiceName.asInstanceOf[js.Any])
     if (Unit != null) __obj.updateDynamic("Unit")(Unit.asInstanceOf[js.Any])
     if (UsageMetric != null) __obj.updateDynamic("UsageMetric")(UsageMetric.asInstanceOf[js.Any])
-    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
+    if (!js.isUndefined(Value)) __obj.updateDynamic("Value")(Value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceQuota]
   }
 }

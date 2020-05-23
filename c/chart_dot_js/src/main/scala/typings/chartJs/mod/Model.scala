@@ -51,25 +51,23 @@ object Model {
     x: Double,
     y: Double,
     borderAlign: BorderAlignment = null,
-    borderWidth: Int | Double = null,
-    circumference: Int | Double = null,
-    endAngle: Int | Double = null,
-    innerRadius: Int | Double = null,
-    outerRadius: Int | Double = null,
+    borderWidth: js.UndefOr[Double] = js.undefined,
+    circumference: js.UndefOr[Double] = js.undefined,
+    endAngle: js.UndefOr[Double] = js.undefined,
+    innerRadius: js.UndefOr[Double] = js.undefined,
+    outerRadius: js.UndefOr[Double] = js.undefined,
     skip: js.UndefOr[Boolean] = js.undefined,
-    startAngle: Int | Double = null,
-    steppedLine: js.UndefOr[scala.Nothing] = js.undefined
+    startAngle: js.UndefOr[Double] = js.undefined
   ): Model = {
     val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], borderColor = borderColor.asInstanceOf[js.Any], controlPointNextX = controlPointNextX.asInstanceOf[js.Any], controlPointNextY = controlPointNextY.asInstanceOf[js.Any], controlPointPreviousX = controlPointPreviousX.asInstanceOf[js.Any], controlPointPreviousY = controlPointPreviousY.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], hitRadius = hitRadius.asInstanceOf[js.Any], pointStyle = pointStyle.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], tension = tension.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     if (borderAlign != null) __obj.updateDynamic("borderAlign")(borderAlign.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (circumference != null) __obj.updateDynamic("circumference")(circumference.asInstanceOf[js.Any])
-    if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])
-    if (innerRadius != null) __obj.updateDynamic("innerRadius")(innerRadius.asInstanceOf[js.Any])
-    if (outerRadius != null) __obj.updateDynamic("outerRadius")(outerRadius.asInstanceOf[js.Any])
-    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
-    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
-    if (!js.isUndefined(steppedLine)) __obj.updateDynamic("steppedLine")(steppedLine.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(circumference)) __obj.updateDynamic("circumference")(circumference.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(endAngle)) __obj.updateDynamic("endAngle")(endAngle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(innerRadius)) __obj.updateDynamic("innerRadius")(innerRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(outerRadius)) __obj.updateDynamic("outerRadius")(outerRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startAngle)) __obj.updateDynamic("startAngle")(startAngle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
 }

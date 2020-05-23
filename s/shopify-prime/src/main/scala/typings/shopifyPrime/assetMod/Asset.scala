@@ -51,8 +51,8 @@ object Asset {
     created_at: String = null,
     key: String = null,
     public_url: String = null,
-    size: Int | Double = null,
-    theme_id: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
+    theme_id: js.UndefOr[Double] = js.undefined,
     updated_at: String = null,
     value: String = null
   ): Asset = {
@@ -62,8 +62,8 @@ object Asset {
     if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (public_url != null) __obj.updateDynamic("public_url")(public_url.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (theme_id != null) __obj.updateDynamic("theme_id")(theme_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(theme_id)) __obj.updateDynamic("theme_id")(theme_id.get.asInstanceOf[js.Any])
     if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Asset]

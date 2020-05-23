@@ -58,8 +58,8 @@ object PlaceRadarRequest {
     radius: Double,
     keyword: String = null,
     language: String = null,
-    maxprice: Int | Double = null,
-    minprice: Int | Double = null,
+    maxprice: js.UndefOr[Double] = js.undefined,
+    minprice: js.UndefOr[Double] = js.undefined,
     name: String = null,
     opennow: js.UndefOr[Boolean] = js.undefined,
     `type`: AddressType = null
@@ -67,10 +67,10 @@ object PlaceRadarRequest {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any])
     if (keyword != null) __obj.updateDynamic("keyword")(keyword.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (maxprice != null) __obj.updateDynamic("maxprice")(maxprice.asInstanceOf[js.Any])
-    if (minprice != null) __obj.updateDynamic("minprice")(minprice.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxprice)) __obj.updateDynamic("maxprice")(maxprice.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minprice)) __obj.updateDynamic("minprice")(minprice.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(opennow)) __obj.updateDynamic("opennow")(opennow.asInstanceOf[js.Any])
+    if (!js.isUndefined(opennow)) __obj.updateDynamic("opennow")(opennow.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaceRadarRequest]
   }

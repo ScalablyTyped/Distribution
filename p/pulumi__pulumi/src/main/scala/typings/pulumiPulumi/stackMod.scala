@@ -1,8 +1,8 @@
 package typings.pulumiPulumi
 
+import typings.pulumiPulumi.anon.Init
 import typings.pulumiPulumi.outputMod.Inputs
 import typings.pulumiPulumi.outputMod.Output_
-import typings.pulumiPulumi.pulumiPulumiStrings.pulumiColonpulumiColonStack
 import typings.pulumiPulumi.resourceMod.ComponentResource
 import typings.pulumiPulumi.resourceMod.ResourceTransformation
 import scala.scalajs.js
@@ -28,10 +28,10 @@ object stackMod extends js.Object {
       *
       * @param init The callback to run in the context of this Pulumi stack
       */
-    def initialize(args: AnonInit): js.Promise[Inputs] = js.native
+    def initialize(args: Init): js.Promise[Inputs] = js.native
   }
   
-  val rootPulumiStackTypeName: pulumiColonpulumiColonStack = js.native
+  val rootPulumiStackTypeName: /* "pulumi:pulumi:Stack" */ String = js.native
   def getStackResource(): js.UndefOr[Stack] = js.native
   def registerStackTransformation(t: ResourceTransformation): Unit = js.native
   def runInPulumiStack(init: js.Function0[js.Promise[_]]): js.Promise[js.UndefOr[Inputs]] = js.native

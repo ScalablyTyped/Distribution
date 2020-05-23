@@ -1,6 +1,7 @@
 package typings.xhrMock
 
 import typings.std.RegExp
+import typings.xhrMock.anon.Instantiable
 import typings.xhrMock.typesMod.ErrorCallbackEvent
 import typings.xhrMock.typesMod.Mock
 import typings.xhrMock.typesMod.MockFunction
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation._
 object xhrmockMod extends js.Object {
   @js.native
   class XHRMock () extends js.Object {
-    var RealXMLHttpRequest: AnonInstantiable = js.native
+    var RealXMLHttpRequest: Instantiable = js.native
     def delete(url: String, mock: Mock): XHRMock = js.native
     def delete(url: RegExp, mock: Mock): XHRMock = js.native
     def error(callback: js.Function1[/* event */ ErrorCallbackEvent, Unit]): XHRMock = js.native

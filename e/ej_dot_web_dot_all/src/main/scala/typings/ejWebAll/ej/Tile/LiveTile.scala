@@ -44,16 +44,16 @@ object LiveTile {
     imageUrl: js.Array[_] = null,
     text: js.Array[_] = null,
     `type`: liveTileType | String = null,
-    updateInterval: Int | Double = null
+    updateInterval: js.UndefOr[Double] = js.undefined
   ): LiveTile = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (imageClass != null) __obj.updateDynamic("imageClass")(imageClass.asInstanceOf[js.Any])
     if (imageTemplateId != null) __obj.updateDynamic("imageTemplateId")(imageTemplateId.asInstanceOf[js.Any])
     if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (updateInterval != null) __obj.updateDynamic("updateInterval")(updateInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateInterval)) __obj.updateDynamic("updateInterval")(updateInterval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveTile]
   }
 }

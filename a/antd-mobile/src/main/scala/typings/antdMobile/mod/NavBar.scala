@@ -1,6 +1,6 @@
 package typings.antdMobile.mod
 
-import typings.antdMobile.AnonMode
+import typings.antdMobile.anon.Mode
 import typings.antdMobile.navBarMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,6 @@ class NavBar () extends default
 @JSImport("antd-mobile", "NavBar")
 @js.native
 object NavBar extends js.Object {
-  var defaultProps: AnonMode = js.native
+  var defaultProps: Mode = js.native
 }
 

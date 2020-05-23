@@ -35,11 +35,16 @@ trait SetQueueAttributesOptions extends BaseOptions {
 
 object SetQueueAttributesOptions {
   @scala.inline
-  def apply(qname: String, delay: Int | Double = null, maxsize: Int | Double = null, vt: Int | Double = null): SetQueueAttributesOptions = {
+  def apply(
+    qname: String,
+    delay: js.UndefOr[Double] = js.undefined,
+    maxsize: js.UndefOr[Double] = js.undefined,
+    vt: js.UndefOr[Double] = js.undefined
+  ): SetQueueAttributesOptions = {
     val __obj = js.Dynamic.literal(qname = qname.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (maxsize != null) __obj.updateDynamic("maxsize")(maxsize.asInstanceOf[js.Any])
-    if (vt != null) __obj.updateDynamic("vt")(vt.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxsize)) __obj.updateDynamic("maxsize")(maxsize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(vt)) __obj.updateDynamic("vt")(vt.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetQueueAttributesOptions]
   }
 }

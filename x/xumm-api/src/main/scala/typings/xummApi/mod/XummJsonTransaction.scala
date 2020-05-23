@@ -14,7 +14,7 @@ object XummJsonTransaction {
   @scala.inline
   def apply(
     TransactionType: XummTransactionType | XrplTransactionType,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null
   ): XummJsonTransaction = {
     val __obj = js.Dynamic.literal(TransactionType = TransactionType.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

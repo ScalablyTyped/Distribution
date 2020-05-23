@@ -24,42 +24,42 @@ trait PannerOptions extends AudioNodeOptions {
 object PannerOptions {
   @scala.inline
   def apply(
-    channelCount: Int | Double = null,
+    channelCount: js.UndefOr[Double] = js.undefined,
     channelCountMode: ChannelCountMode = null,
     channelInterpretation: ChannelInterpretation = null,
-    coneInnerAngle: Int | Double = null,
-    coneOuterAngle: Int | Double = null,
-    coneOuterGain: Int | Double = null,
+    coneInnerAngle: js.UndefOr[Double] = js.undefined,
+    coneOuterAngle: js.UndefOr[Double] = js.undefined,
+    coneOuterGain: js.UndefOr[Double] = js.undefined,
     distanceModel: DistanceModelType = null,
-    maxDistance: Int | Double = null,
-    orientationX: Int | Double = null,
-    orientationY: Int | Double = null,
-    orientationZ: Int | Double = null,
+    maxDistance: js.UndefOr[Double] = js.undefined,
+    orientationX: js.UndefOr[Double] = js.undefined,
+    orientationY: js.UndefOr[Double] = js.undefined,
+    orientationZ: js.UndefOr[Double] = js.undefined,
     panningModel: PanningModelType = null,
-    positionX: Int | Double = null,
-    positionY: Int | Double = null,
-    positionZ: Int | Double = null,
-    refDistance: Int | Double = null,
-    rolloffFactor: Int | Double = null
+    positionX: js.UndefOr[Double] = js.undefined,
+    positionY: js.UndefOr[Double] = js.undefined,
+    positionZ: js.UndefOr[Double] = js.undefined,
+    refDistance: js.UndefOr[Double] = js.undefined,
+    rolloffFactor: js.UndefOr[Double] = js.undefined
   ): PannerOptions = {
     val __obj = js.Dynamic.literal()
-    if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(channelCount)) __obj.updateDynamic("channelCount")(channelCount.get.asInstanceOf[js.Any])
     if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
     if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
-    if (coneInnerAngle != null) __obj.updateDynamic("coneInnerAngle")(coneInnerAngle.asInstanceOf[js.Any])
-    if (coneOuterAngle != null) __obj.updateDynamic("coneOuterAngle")(coneOuterAngle.asInstanceOf[js.Any])
-    if (coneOuterGain != null) __obj.updateDynamic("coneOuterGain")(coneOuterGain.asInstanceOf[js.Any])
+    if (!js.isUndefined(coneInnerAngle)) __obj.updateDynamic("coneInnerAngle")(coneInnerAngle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(coneOuterAngle)) __obj.updateDynamic("coneOuterAngle")(coneOuterAngle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(coneOuterGain)) __obj.updateDynamic("coneOuterGain")(coneOuterGain.get.asInstanceOf[js.Any])
     if (distanceModel != null) __obj.updateDynamic("distanceModel")(distanceModel.asInstanceOf[js.Any])
-    if (maxDistance != null) __obj.updateDynamic("maxDistance")(maxDistance.asInstanceOf[js.Any])
-    if (orientationX != null) __obj.updateDynamic("orientationX")(orientationX.asInstanceOf[js.Any])
-    if (orientationY != null) __obj.updateDynamic("orientationY")(orientationY.asInstanceOf[js.Any])
-    if (orientationZ != null) __obj.updateDynamic("orientationZ")(orientationZ.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDistance)) __obj.updateDynamic("maxDistance")(maxDistance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(orientationX)) __obj.updateDynamic("orientationX")(orientationX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(orientationY)) __obj.updateDynamic("orientationY")(orientationY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(orientationZ)) __obj.updateDynamic("orientationZ")(orientationZ.get.asInstanceOf[js.Any])
     if (panningModel != null) __obj.updateDynamic("panningModel")(panningModel.asInstanceOf[js.Any])
-    if (positionX != null) __obj.updateDynamic("positionX")(positionX.asInstanceOf[js.Any])
-    if (positionY != null) __obj.updateDynamic("positionY")(positionY.asInstanceOf[js.Any])
-    if (positionZ != null) __obj.updateDynamic("positionZ")(positionZ.asInstanceOf[js.Any])
-    if (refDistance != null) __obj.updateDynamic("refDistance")(refDistance.asInstanceOf[js.Any])
-    if (rolloffFactor != null) __obj.updateDynamic("rolloffFactor")(rolloffFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(positionX)) __obj.updateDynamic("positionX")(positionX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(positionY)) __obj.updateDynamic("positionY")(positionY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(positionZ)) __obj.updateDynamic("positionZ")(positionZ.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(refDistance)) __obj.updateDynamic("refDistance")(refDistance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rolloffFactor)) __obj.updateDynamic("rolloffFactor")(rolloffFactor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PannerOptions]
   }
 }

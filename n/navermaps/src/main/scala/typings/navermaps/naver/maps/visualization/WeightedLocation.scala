@@ -5,14 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("naver.maps.visualization.WeightedLocation")
-@js.native
-class WeightedLocation protected () extends js.Object {
-  def this(lat: Double, lng: Double) = this()
-  def this(lat: Double, lng: Double, weight: Double) = this()
-  def getLocation(): LatLng = js.native
-  def getWeight(): Double = js.native
-  def lat(): Double = js.native
-  def lng(): Double = js.native
+trait WeightedLocation extends js.Object {
+  def getLocation(): LatLng
+  def getWeight(): Double
+  def lat(): Double
+  def lng(): Double
+}
+
+object WeightedLocation {
+  @scala.inline
+  def apply(getLocation: () => LatLng, getWeight: () => Double, lat: () => Double, lng: () => Double): WeightedLocation = {
+    val __obj = js.Dynamic.literal(getLocation = js.Any.fromFunction0(getLocation), getWeight = js.Any.fromFunction0(getWeight), lat = js.Any.fromFunction0(lat), lng = js.Any.fromFunction0(lng))
+    __obj.asInstanceOf[WeightedLocation]
+  }
 }
 

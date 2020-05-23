@@ -9,21 +9,21 @@ import scala.scalajs.js.annotation._
 
 trait IAbstract extends IObservable {
   /** [Method] Returns the value of src
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getSrc: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
-  		* @param object Object The Observable whose events this object is to relay.
-  		* @param events String/Array/Object Array of event names to relay.
-  		* @returns Ext.mixin.Observable this
-  		*/
+    * @param object Object The Observable whose events this object is to relay.
+    * @param events String/Array/Object Array of event names to relay.
+    * @returns Ext.mixin.Observable this
+    */
   @JSName("relayEvents")
   var relayEvents_IAbstract: js.UndefOr[
     js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
   ] = js.undefined
   /** [Method] Sets the value of src
-  		* @param src Object The new value.
-  		*/
+    * @param src Object The new value.
+    */
   var setSrc: js.UndefOr[js.Function1[/* src */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -127,7 +127,7 @@ object IAbstract {
     if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(js.Any.fromFunction1(setBubbleEvents))
     if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
     if (setSrc != null) __obj.updateDynamic("setSrc")(js.Any.fromFunction1(setSrc))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))

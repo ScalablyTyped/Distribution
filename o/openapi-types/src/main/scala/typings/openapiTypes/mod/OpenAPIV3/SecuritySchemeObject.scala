@@ -1,6 +1,6 @@
 package typings.openapiTypes.mod.OpenAPIV3
 
-import typings.openapiTypes.AnonAuthorizationCode
+import typings.openapiTypes.anon.AuthorizationCode
 import typings.openapiTypes.openapiTypesStrings.apiKey
 import typings.openapiTypes.openapiTypesStrings.http
 import typings.openapiTypes.openapiTypesStrings.oauth2
@@ -34,7 +34,7 @@ object SecuritySchemeObject {
     __obj.asInstanceOf[SecuritySchemeObject]
   }
   @scala.inline
-  def OAuth2SecurityScheme(flows: AnonAuthorizationCode, `type`: oauth2): SecuritySchemeObject = {
+  def OAuth2SecurityScheme(flows: AuthorizationCode, `type`: oauth2): SecuritySchemeObject = {
     val __obj = js.Dynamic.literal(flows = flows.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecuritySchemeObject]

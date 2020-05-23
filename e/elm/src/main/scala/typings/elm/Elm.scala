@@ -1,6 +1,5 @@
 package typings.elm
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,8 +14,4 @@ trait Elm extends js.Object {
   def worker[P](elmModule: ElmModule[P]): ElmComponent[P] = js.native
   def worker[P](elmModule: ElmModule[P], initialValues: js.Object): ElmComponent[P] = js.native
 }
-
-@JSGlobal("Elm")
-@js.native
-object Elm extends TopLevel[Elm]
 

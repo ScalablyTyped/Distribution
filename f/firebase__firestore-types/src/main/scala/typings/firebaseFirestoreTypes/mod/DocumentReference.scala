@@ -1,8 +1,7 @@
 package typings.firebaseFirestoreTypes.mod
 
-import typings.firebaseFirestoreTypes.AnonError
-import typings.firebaseFirestoreTypes.AnonNext
-import typings.std.Error
+import typings.firebaseFirestoreTypes.anon.Error
+import typings.firebaseFirestoreTypes.anon.Next
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,28 +18,28 @@ class DocumentReference[T] protected () extends js.Object {
   def get(): js.Promise[DocumentSnapshot[T]] = js.native
   def get(options: GetOptions): js.Promise[DocumentSnapshot[T]] = js.native
   def isEqual(other: DocumentReference[T]): Boolean = js.native
-  def onSnapshot(observer: AnonError[T]): js.Function0[Unit] = js.native
+  def onSnapshot(observer: Error[T]): js.Function0[Unit] = js.native
   def onSnapshot(onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit]): js.Function0[Unit] = js.native
   def onSnapshot(
     onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit],
-    onError: js.Function1[/* error */ Error, Unit]
+    onError: js.Function1[/* error */ typings.std.Error, Unit]
   ): js.Function0[Unit] = js.native
   def onSnapshot(
     onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit],
-    onError: js.Function1[/* error */ Error, Unit],
+    onError: js.Function1[/* error */ typings.std.Error, Unit],
     onCompletion: js.Function0[Unit]
   ): js.Function0[Unit] = js.native
-  def onSnapshot(options: SnapshotListenOptions, observer: AnonNext[T]): js.Function0[Unit] = js.native
+  def onSnapshot(options: SnapshotListenOptions, observer: Next[T]): js.Function0[Unit] = js.native
   def onSnapshot(options: SnapshotListenOptions, onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit]): js.Function0[Unit] = js.native
   def onSnapshot(
     options: SnapshotListenOptions,
     onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit],
-    onError: js.Function1[/* error */ Error, Unit]
+    onError: js.Function1[/* error */ typings.std.Error, Unit]
   ): js.Function0[Unit] = js.native
   def onSnapshot(
     options: SnapshotListenOptions,
     onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit],
-    onError: js.Function1[/* error */ Error, Unit],
+    onError: js.Function1[/* error */ typings.std.Error, Unit],
     onCompletion: js.Function0[Unit]
   ): js.Function0[Unit] = js.native
   def set(data: T): js.Promise[Unit] = js.native

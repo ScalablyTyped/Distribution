@@ -1,6 +1,6 @@
 package typings.antdMobile.mod
 
-import typings.antdMobile.AnonAutoClose
+import typings.antdMobile.anon.AutoClose
 import typings.antdMobile.swipeActionMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,6 @@ class SwipeAction () extends default
 @JSImport("antd-mobile", "SwipeAction")
 @js.native
 object SwipeAction extends js.Object {
-  var defaultProps: AnonAutoClose = js.native
+  var defaultProps: AutoClose = js.native
 }
 

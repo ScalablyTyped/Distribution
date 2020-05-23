@@ -25,13 +25,13 @@ object Route_ {
     name: String,
     `type`: String,
     check: js.UndefOr[Boolean] = js.undefined,
-    statusCode: Int | Double = null
+    statusCode: js.UndefOr[Double] = js.undefined
   ): Route_ = {
     val __obj = js.Dynamic.literal(fn = js.Any.fromFunction4(fn), name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("match")(js.Any.fromFunction1(`match`))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(check)) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(check)) __obj.updateDynamic("check")(check.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusCode)) __obj.updateDynamic("statusCode")(statusCode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Route_]
   }
 }

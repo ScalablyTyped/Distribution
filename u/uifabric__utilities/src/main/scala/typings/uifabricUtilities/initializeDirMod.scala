@@ -1,6 +1,6 @@
 package typings.uifabricUtilities
 
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object initializeDirMod extends js.Object {
   def initializeDir(): Unit = js.native
-  def initializeDir(win: Window_): Unit = js.native
+  def initializeDir(win: Window): Unit = js.native
 }
 

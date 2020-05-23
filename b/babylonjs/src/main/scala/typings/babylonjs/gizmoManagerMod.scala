@@ -1,6 +1,7 @@
 package typings.babylonjs
 
 import typings.babylonjs.abstractMeshMod.AbstractMesh
+import typings.babylonjs.anon.BoundingBoxGizmo
 import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.sceneMod.IDisposable
 import typings.babylonjs.sceneMod.Scene
@@ -40,7 +41,7 @@ object gizmoManagerMod extends js.Object {
     /**
       * Gizmo's created by the gizmo manager, gizmo will be null until gizmo has been enabled for the first time
       */
-    var gizmos: AnonBoundingBoxGizmo = js.native
+    var gizmos: BoundingBoxGizmo = js.native
     /** Fires an event when the manager is attached to a mesh */
     var onAttachedToMeshObservable: Observable[Nullable[AbstractMesh]] = js.native
     var scene: js.Any = js.native

@@ -1,7 +1,6 @@
 package typings.terminalKit.screenBufferHDMod
 
-import typings.terminalKit.AnonBlending
-import typings.terminalKit.AnonShrinkAnonWidth
+import typings.terminalKit.anon.ShrinkWidth
 import typings.terminalKit.screenBufferMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("terminal-kit/ScreenBufferHD", JSImport.Namespace)
 @js.native
 class ^ protected () extends ScreenBufferHD {
-  def this(options: AnonBlending) = this()
+  def this(options: typings.terminalKit.anon.Blending) = this()
   def this(options: Options) = this()
 }
 
@@ -23,7 +22,7 @@ object ^ extends js.Object {
   ): Unit = js.native
   def loadImage(
     url: String,
-    options: AnonShrinkAnonWidth,
+    options: ShrinkWidth,
     callback: js.Function2[/* error */ js.Any, /* image */ ScreenBufferHD, Unit]
   ): Unit = js.native
 }

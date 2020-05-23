@@ -3,7 +3,7 @@ package typings.wavesurferJs.mod
 import typings.std.AudioContext
 import typings.std.HTMLElement
 import typings.std.ScriptProcessorNode
-import typings.wavesurferJs.AnonInstantiable
+import typings.wavesurferJs.anon.Instantiable
 import typings.wavesurferJs.wavesurferJsStrings.MediaElement
 import typings.wavesurferJs.wavesurferJsStrings.MediaElementWebAudio
 import typings.wavesurferJs.wavesurferJsStrings.WebAudio
@@ -47,7 +47,7 @@ trait WaveSurferParams extends js.Object {
   var plugins: js.UndefOr[js.Array[PluginDefinition]] = js.undefined
   var progressColor: js.UndefOr[String] = js.undefined
   var removeMediaElementOnDestroy: js.UndefOr[Boolean] = js.undefined
-  var renderer: js.UndefOr[AnonInstantiable] = js.undefined
+  var renderer: js.UndefOr[Instantiable] = js.undefined
   var responsive: js.UndefOr[Boolean | Double] = js.undefined
   var rtl: js.UndefOr[Boolean] = js.undefined
   var scrollParent: js.UndefOr[Boolean] = js.undefined
@@ -62,89 +62,89 @@ object WaveSurferParams {
   def apply(
     container: String | HTMLElement,
     audioContext: AudioContext = null,
-    audioRate: Int | Double = null,
+    audioRate: js.UndefOr[Double] = js.undefined,
     audioScriptProcessor: ScriptProcessorNode = null,
     autoCenter: js.UndefOr[Boolean] = js.undefined,
     autoCenterImmediately: js.UndefOr[Boolean] = js.undefined,
-    autoCenterRate: Int | Double = null,
+    autoCenterRate: js.UndefOr[Double] = js.undefined,
     backend: WebAudio | MediaElement | MediaElementWebAudio = null,
     backgroundColor: String = null,
-    barGap: Int | Double = null,
-    barHeight: Int | Double = null,
-    barMinHeight: Int | Double = null,
-    barRadius: Int | Double = null,
-    barWidth: Int | Double = null,
+    barGap: js.UndefOr[Double] = js.undefined,
+    barHeight: js.UndefOr[Double] = js.undefined,
+    barMinHeight: js.UndefOr[Double] = js.undefined,
+    barRadius: js.UndefOr[Double] = js.undefined,
+    barWidth: js.UndefOr[Double] = js.undefined,
     closeAudioContext: js.UndefOr[Boolean] = js.undefined,
     cursorColor: String = null,
-    cursorWidth: Int | Double = null,
+    cursorWidth: js.UndefOr[Double] = js.undefined,
     drawingContextAttributes: js.Object = null,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     fillParent: js.UndefOr[Boolean] = js.undefined,
     forceDecode: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     hideScrollbar: js.UndefOr[Boolean] = js.undefined,
     interact: js.UndefOr[Boolean] = js.undefined,
     loopSelection: js.UndefOr[Boolean] = js.undefined,
-    maxCanvasWidth: Int | Double = null,
+    maxCanvasWidth: js.UndefOr[Double] = js.undefined,
     mediaControls: js.UndefOr[Boolean] = js.undefined,
     mediaType: String = null,
-    minPxPerSec: Int | Double = null,
+    minPxPerSec: js.UndefOr[Double] = js.undefined,
     normalize: js.UndefOr[Boolean] = js.undefined,
     partialRender: js.UndefOr[Boolean] = js.undefined,
-    pixelRatio: Int | Double = null,
+    pixelRatio: js.UndefOr[Double] = js.undefined,
     plugins: js.Array[PluginDefinition] = null,
     progressColor: String = null,
     removeMediaElementOnDestroy: js.UndefOr[Boolean] = js.undefined,
-    renderer: AnonInstantiable = null,
+    renderer: Instantiable = null,
     responsive: Boolean | Double = null,
     rtl: js.UndefOr[Boolean] = js.undefined,
     scrollParent: js.UndefOr[Boolean] = js.undefined,
-    skipLength: Int | Double = null,
+    skipLength: js.UndefOr[Double] = js.undefined,
     splitChannels: js.UndefOr[Boolean] = js.undefined,
     waveColor: String = null,
     xhr: XHROptions = null
   ): WaveSurferParams = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
     if (audioContext != null) __obj.updateDynamic("audioContext")(audioContext.asInstanceOf[js.Any])
-    if (audioRate != null) __obj.updateDynamic("audioRate")(audioRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(audioRate)) __obj.updateDynamic("audioRate")(audioRate.get.asInstanceOf[js.Any])
     if (audioScriptProcessor != null) __obj.updateDynamic("audioScriptProcessor")(audioScriptProcessor.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoCenter)) __obj.updateDynamic("autoCenter")(autoCenter.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoCenterImmediately)) __obj.updateDynamic("autoCenterImmediately")(autoCenterImmediately.asInstanceOf[js.Any])
-    if (autoCenterRate != null) __obj.updateDynamic("autoCenterRate")(autoCenterRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCenter)) __obj.updateDynamic("autoCenter")(autoCenter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCenterImmediately)) __obj.updateDynamic("autoCenterImmediately")(autoCenterImmediately.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCenterRate)) __obj.updateDynamic("autoCenterRate")(autoCenterRate.get.asInstanceOf[js.Any])
     if (backend != null) __obj.updateDynamic("backend")(backend.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (barGap != null) __obj.updateDynamic("barGap")(barGap.asInstanceOf[js.Any])
-    if (barHeight != null) __obj.updateDynamic("barHeight")(barHeight.asInstanceOf[js.Any])
-    if (barMinHeight != null) __obj.updateDynamic("barMinHeight")(barMinHeight.asInstanceOf[js.Any])
-    if (barRadius != null) __obj.updateDynamic("barRadius")(barRadius.asInstanceOf[js.Any])
-    if (barWidth != null) __obj.updateDynamic("barWidth")(barWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeAudioContext)) __obj.updateDynamic("closeAudioContext")(closeAudioContext.asInstanceOf[js.Any])
+    if (!js.isUndefined(barGap)) __obj.updateDynamic("barGap")(barGap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(barHeight)) __obj.updateDynamic("barHeight")(barHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(barMinHeight)) __obj.updateDynamic("barMinHeight")(barMinHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(barRadius)) __obj.updateDynamic("barRadius")(barRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(barWidth)) __obj.updateDynamic("barWidth")(barWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeAudioContext)) __obj.updateDynamic("closeAudioContext")(closeAudioContext.get.asInstanceOf[js.Any])
     if (cursorColor != null) __obj.updateDynamic("cursorColor")(cursorColor.asInstanceOf[js.Any])
-    if (cursorWidth != null) __obj.updateDynamic("cursorWidth")(cursorWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(cursorWidth)) __obj.updateDynamic("cursorWidth")(cursorWidth.get.asInstanceOf[js.Any])
     if (drawingContextAttributes != null) __obj.updateDynamic("drawingContextAttributes")(drawingContextAttributes.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(fillParent)) __obj.updateDynamic("fillParent")(fillParent.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceDecode)) __obj.updateDynamic("forceDecode")(forceDecode.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideScrollbar)) __obj.updateDynamic("hideScrollbar")(hideScrollbar.asInstanceOf[js.Any])
-    if (!js.isUndefined(interact)) __obj.updateDynamic("interact")(interact.asInstanceOf[js.Any])
-    if (!js.isUndefined(loopSelection)) __obj.updateDynamic("loopSelection")(loopSelection.asInstanceOf[js.Any])
-    if (maxCanvasWidth != null) __obj.updateDynamic("maxCanvasWidth")(maxCanvasWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(mediaControls)) __obj.updateDynamic("mediaControls")(mediaControls.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fillParent)) __obj.updateDynamic("fillParent")(fillParent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceDecode)) __obj.updateDynamic("forceDecode")(forceDecode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideScrollbar)) __obj.updateDynamic("hideScrollbar")(hideScrollbar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(interact)) __obj.updateDynamic("interact")(interact.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loopSelection)) __obj.updateDynamic("loopSelection")(loopSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxCanvasWidth)) __obj.updateDynamic("maxCanvasWidth")(maxCanvasWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mediaControls)) __obj.updateDynamic("mediaControls")(mediaControls.get.asInstanceOf[js.Any])
     if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
-    if (minPxPerSec != null) __obj.updateDynamic("minPxPerSec")(minPxPerSec.asInstanceOf[js.Any])
-    if (!js.isUndefined(normalize)) __obj.updateDynamic("normalize")(normalize.asInstanceOf[js.Any])
-    if (!js.isUndefined(partialRender)) __obj.updateDynamic("partialRender")(partialRender.asInstanceOf[js.Any])
-    if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(minPxPerSec)) __obj.updateDynamic("minPxPerSec")(minPxPerSec.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(normalize)) __obj.updateDynamic("normalize")(normalize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(partialRender)) __obj.updateDynamic("partialRender")(partialRender.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pixelRatio)) __obj.updateDynamic("pixelRatio")(pixelRatio.get.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     if (progressColor != null) __obj.updateDynamic("progressColor")(progressColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeMediaElementOnDestroy)) __obj.updateDynamic("removeMediaElementOnDestroy")(removeMediaElementOnDestroy.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeMediaElementOnDestroy)) __obj.updateDynamic("removeMediaElementOnDestroy")(removeMediaElementOnDestroy.get.asInstanceOf[js.Any])
     if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
     if (responsive != null) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollParent)) __obj.updateDynamic("scrollParent")(scrollParent.asInstanceOf[js.Any])
-    if (skipLength != null) __obj.updateDynamic("skipLength")(skipLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(splitChannels)) __obj.updateDynamic("splitChannels")(splitChannels.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollParent)) __obj.updateDynamic("scrollParent")(scrollParent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipLength)) __obj.updateDynamic("skipLength")(skipLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(splitChannels)) __obj.updateDynamic("splitChannels")(splitChannels.get.asInstanceOf[js.Any])
     if (waveColor != null) __obj.updateDynamic("waveColor")(waveColor.asInstanceOf[js.Any])
     if (xhr != null) __obj.updateDynamic("xhr")(xhr.asInstanceOf[js.Any])
     __obj.asInstanceOf[WaveSurferParams]

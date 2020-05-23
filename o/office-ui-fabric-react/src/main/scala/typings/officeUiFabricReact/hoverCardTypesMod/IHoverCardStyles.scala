@@ -14,9 +14,9 @@ trait IHoverCardStyles extends js.Object {
 
 object IHoverCardStyles {
   @scala.inline
-  def apply(host: IStyle = null): IHoverCardStyles = {
+  def apply(host: js.UndefOr[Null | IStyle] = js.undefined): IHoverCardStyles = {
     val __obj = js.Dynamic.literal()
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (!js.isUndefined(host)) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHoverCardStyles]
   }
 }

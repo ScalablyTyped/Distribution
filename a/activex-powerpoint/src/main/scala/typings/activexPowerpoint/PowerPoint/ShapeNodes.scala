@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.ShapeNodes")
 @js.native
-class ShapeNodes protected () extends js.Object {
+trait ShapeNodes extends js.Object {
   val Application: js.Any = js.native
   val Count: Double = js.native
   val Creator: Double = js.native

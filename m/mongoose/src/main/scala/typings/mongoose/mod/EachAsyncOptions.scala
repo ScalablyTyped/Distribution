@@ -11,9 +11,9 @@ trait EachAsyncOptions extends js.Object {
 
 object EachAsyncOptions {
   @scala.inline
-  def apply(parallel: Int | Double = null): EachAsyncOptions = {
+  def apply(parallel: js.UndefOr[Double] = js.undefined): EachAsyncOptions = {
     val __obj = js.Dynamic.literal()
-    if (parallel != null) __obj.updateDynamic("parallel")(parallel.asInstanceOf[js.Any])
+    if (!js.isUndefined(parallel)) __obj.updateDynamic("parallel")(parallel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EachAsyncOptions]
   }
 }

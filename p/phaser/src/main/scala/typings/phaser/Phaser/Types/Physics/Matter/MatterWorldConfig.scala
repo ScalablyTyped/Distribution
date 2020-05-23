@@ -150,69 +150,69 @@ object MatterWorldConfig {
   @scala.inline
   def apply(
     autoUpdate: js.UndefOr[Boolean] = js.undefined,
-    constraintIterations: Int | Double = null,
-    correction: Int | Double = null,
+    constraintIterations: js.UndefOr[Double] = js.undefined,
+    correction: js.UndefOr[Double] = js.undefined,
     debug: Boolean | MatterDebugConfig = null,
     enableSleeping: js.UndefOr[Boolean] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
-    frictionNormalMultiplier: Int | Double = null,
+    frictionNormalMultiplier: js.UndefOr[Double] = js.undefined,
     getDelta: js.Function = null,
     gravity: Vector2Like | Boolean = null,
     pluginsDotattractors: js.UndefOr[Boolean] = js.undefined,
     pluginsDotcollisionevents: js.UndefOr[Boolean] = js.undefined,
     pluginsDotwrap: js.UndefOr[Boolean] = js.undefined,
-    positionDampen: Int | Double = null,
-    positionIterations: Int | Double = null,
-    positionWarming: Int | Double = null,
-    restingThresh: Int | Double = null,
-    restingThreshTangent: Int | Double = null,
+    positionDampen: js.UndefOr[Double] = js.undefined,
+    positionIterations: js.UndefOr[Double] = js.undefined,
+    positionWarming: js.UndefOr[Double] = js.undefined,
+    restingThresh: js.UndefOr[Double] = js.undefined,
+    restingThreshTangent: js.UndefOr[Double] = js.undefined,
     runner: MatterRunnerConfig = null,
     setBounds: js.Object | Boolean = null,
     setBoundsDotbottom: js.UndefOr[Boolean] = js.undefined,
-    setBoundsDotheight: Int | Double = null,
+    setBoundsDotheight: js.UndefOr[Double] = js.undefined,
     setBoundsDotleft: js.UndefOr[Boolean] = js.undefined,
     setBoundsDotright: js.UndefOr[Boolean] = js.undefined,
-    setBoundsDotthickness: Int | Double = null,
+    setBoundsDotthickness: js.UndefOr[Double] = js.undefined,
     setBoundsDottop: js.UndefOr[Boolean] = js.undefined,
-    setBoundsDotwidth: Int | Double = null,
-    setBoundsDotx: Int | Double = null,
-    setBoundsDoty: Int | Double = null,
-    timingDottimeScale: Int | Double = null,
-    timingDottimestamp: Int | Double = null,
-    velocityIterations: Int | Double = null
+    setBoundsDotwidth: js.UndefOr[Double] = js.undefined,
+    setBoundsDotx: js.UndefOr[Double] = js.undefined,
+    setBoundsDoty: js.UndefOr[Double] = js.undefined,
+    timingDottimeScale: js.UndefOr[Double] = js.undefined,
+    timingDottimestamp: js.UndefOr[Double] = js.undefined,
+    velocityIterations: js.UndefOr[Double] = js.undefined
   ): MatterWorldConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoUpdate)) __obj.updateDynamic("autoUpdate")(autoUpdate.asInstanceOf[js.Any])
-    if (constraintIterations != null) __obj.updateDynamic("constraintIterations")(constraintIterations.asInstanceOf[js.Any])
-    if (correction != null) __obj.updateDynamic("correction")(correction.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoUpdate)) __obj.updateDynamic("autoUpdate")(autoUpdate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(constraintIterations)) __obj.updateDynamic("constraintIterations")(constraintIterations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(correction)) __obj.updateDynamic("correction")(correction.get.asInstanceOf[js.Any])
     if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSleeping)) __obj.updateDynamic("enableSleeping")(enableSleeping.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (frictionNormalMultiplier != null) __obj.updateDynamic("frictionNormalMultiplier")(frictionNormalMultiplier.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSleeping)) __obj.updateDynamic("enableSleeping")(enableSleeping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(frictionNormalMultiplier)) __obj.updateDynamic("frictionNormalMultiplier")(frictionNormalMultiplier.get.asInstanceOf[js.Any])
     if (getDelta != null) __obj.updateDynamic("getDelta")(getDelta.asInstanceOf[js.Any])
     if (gravity != null) __obj.updateDynamic("gravity")(gravity.asInstanceOf[js.Any])
-    if (!js.isUndefined(pluginsDotattractors)) __obj.updateDynamic("plugins.attractors")(pluginsDotattractors.asInstanceOf[js.Any])
-    if (!js.isUndefined(pluginsDotcollisionevents)) __obj.updateDynamic("plugins.collisionevents")(pluginsDotcollisionevents.asInstanceOf[js.Any])
-    if (!js.isUndefined(pluginsDotwrap)) __obj.updateDynamic("plugins.wrap")(pluginsDotwrap.asInstanceOf[js.Any])
-    if (positionDampen != null) __obj.updateDynamic("positionDampen")(positionDampen.asInstanceOf[js.Any])
-    if (positionIterations != null) __obj.updateDynamic("positionIterations")(positionIterations.asInstanceOf[js.Any])
-    if (positionWarming != null) __obj.updateDynamic("positionWarming")(positionWarming.asInstanceOf[js.Any])
-    if (restingThresh != null) __obj.updateDynamic("restingThresh")(restingThresh.asInstanceOf[js.Any])
-    if (restingThreshTangent != null) __obj.updateDynamic("restingThreshTangent")(restingThreshTangent.asInstanceOf[js.Any])
+    if (!js.isUndefined(pluginsDotattractors)) __obj.updateDynamic("plugins.attractors")(pluginsDotattractors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pluginsDotcollisionevents)) __obj.updateDynamic("plugins.collisionevents")(pluginsDotcollisionevents.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pluginsDotwrap)) __obj.updateDynamic("plugins.wrap")(pluginsDotwrap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(positionDampen)) __obj.updateDynamic("positionDampen")(positionDampen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(positionIterations)) __obj.updateDynamic("positionIterations")(positionIterations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(positionWarming)) __obj.updateDynamic("positionWarming")(positionWarming.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(restingThresh)) __obj.updateDynamic("restingThresh")(restingThresh.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(restingThreshTangent)) __obj.updateDynamic("restingThreshTangent")(restingThreshTangent.get.asInstanceOf[js.Any])
     if (runner != null) __obj.updateDynamic("runner")(runner.asInstanceOf[js.Any])
     if (setBounds != null) __obj.updateDynamic("setBounds")(setBounds.asInstanceOf[js.Any])
-    if (!js.isUndefined(setBoundsDotbottom)) __obj.updateDynamic("setBounds.bottom")(setBoundsDotbottom.asInstanceOf[js.Any])
-    if (setBoundsDotheight != null) __obj.updateDynamic("setBounds.height")(setBoundsDotheight.asInstanceOf[js.Any])
-    if (!js.isUndefined(setBoundsDotleft)) __obj.updateDynamic("setBounds.left")(setBoundsDotleft.asInstanceOf[js.Any])
-    if (!js.isUndefined(setBoundsDotright)) __obj.updateDynamic("setBounds.right")(setBoundsDotright.asInstanceOf[js.Any])
-    if (setBoundsDotthickness != null) __obj.updateDynamic("setBounds.thickness")(setBoundsDotthickness.asInstanceOf[js.Any])
-    if (!js.isUndefined(setBoundsDottop)) __obj.updateDynamic("setBounds.top")(setBoundsDottop.asInstanceOf[js.Any])
-    if (setBoundsDotwidth != null) __obj.updateDynamic("setBounds.width")(setBoundsDotwidth.asInstanceOf[js.Any])
-    if (setBoundsDotx != null) __obj.updateDynamic("setBounds.x")(setBoundsDotx.asInstanceOf[js.Any])
-    if (setBoundsDoty != null) __obj.updateDynamic("setBounds.y")(setBoundsDoty.asInstanceOf[js.Any])
-    if (timingDottimeScale != null) __obj.updateDynamic("timing.timeScale")(timingDottimeScale.asInstanceOf[js.Any])
-    if (timingDottimestamp != null) __obj.updateDynamic("timing.timestamp")(timingDottimestamp.asInstanceOf[js.Any])
-    if (velocityIterations != null) __obj.updateDynamic("velocityIterations")(velocityIterations.asInstanceOf[js.Any])
+    if (!js.isUndefined(setBoundsDotbottom)) __obj.updateDynamic("setBounds.bottom")(setBoundsDotbottom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setBoundsDotheight)) __obj.updateDynamic("setBounds.height")(setBoundsDotheight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setBoundsDotleft)) __obj.updateDynamic("setBounds.left")(setBoundsDotleft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setBoundsDotright)) __obj.updateDynamic("setBounds.right")(setBoundsDotright.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setBoundsDotthickness)) __obj.updateDynamic("setBounds.thickness")(setBoundsDotthickness.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setBoundsDottop)) __obj.updateDynamic("setBounds.top")(setBoundsDottop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setBoundsDotwidth)) __obj.updateDynamic("setBounds.width")(setBoundsDotwidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setBoundsDotx)) __obj.updateDynamic("setBounds.x")(setBoundsDotx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setBoundsDoty)) __obj.updateDynamic("setBounds.y")(setBoundsDoty.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timingDottimeScale)) __obj.updateDynamic("timing.timeScale")(timingDottimeScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timingDottimestamp)) __obj.updateDynamic("timing.timestamp")(timingDottimestamp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(velocityIterations)) __obj.updateDynamic("velocityIterations")(velocityIterations.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatterWorldConfig]
   }
 }

@@ -10,9 +10,9 @@ trait AppPackageVersion extends js.Object {
 
 object AppPackageVersion {
   @scala.inline
-  def apply(version: Int | Double = null): AppPackageVersion = {
+  def apply(version: js.UndefOr[Double] = js.undefined): AppPackageVersion = {
     val __obj = js.Dynamic.literal()
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppPackageVersion]
   }
 }

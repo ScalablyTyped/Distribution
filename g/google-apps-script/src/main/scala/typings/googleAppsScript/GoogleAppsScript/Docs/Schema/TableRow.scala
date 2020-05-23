@@ -17,8 +17,8 @@ trait TableRow extends js.Object {
 object TableRow {
   @scala.inline
   def apply(
-    endIndex: Int | Double = null,
-    startIndex: Int | Double = null,
+    endIndex: js.UndefOr[Double] = js.undefined,
+    startIndex: js.UndefOr[Double] = js.undefined,
     suggestedDeletionIds: js.Array[String] = null,
     suggestedInsertionIds: js.Array[String] = null,
     suggestedTableRowStyleChanges: js.Object = null,
@@ -26,8 +26,8 @@ object TableRow {
     tableRowStyle: TableRowStyle = null
   ): TableRow = {
     val __obj = js.Dynamic.literal()
-    if (endIndex != null) __obj.updateDynamic("endIndex")(endIndex.asInstanceOf[js.Any])
-    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(endIndex)) __obj.updateDynamic("endIndex")(endIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
     if (suggestedDeletionIds != null) __obj.updateDynamic("suggestedDeletionIds")(suggestedDeletionIds.asInstanceOf[js.Any])
     if (suggestedInsertionIds != null) __obj.updateDynamic("suggestedInsertionIds")(suggestedInsertionIds.asInstanceOf[js.Any])
     if (suggestedTableRowStyleChanges != null) __obj.updateDynamic("suggestedTableRowStyleChanges")(suggestedTableRowStyleChanges.asInstanceOf[js.Any])

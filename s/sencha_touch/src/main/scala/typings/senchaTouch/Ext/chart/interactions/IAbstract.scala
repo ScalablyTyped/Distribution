@@ -4,7 +4,7 @@ import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.IClass
 import typings.senchaTouch.Ext.chart.IAbstractChart
 import typings.senchaTouch.Ext.mixin.IObservable
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,51 +17,51 @@ trait IAbstract extends IObservable {
   /** [Config Option] (String) */
   var gesture: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of chart
-  		* @returns Ext.chart.AbstractChart
-  		*/
+    * @returns Ext.chart.AbstractChart
+    */
   var getChart: js.UndefOr[js.Function0[IAbstractChart]] = js.undefined
   /** [Method] Returns the value of enabled
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getEnabled: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of gesture
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getGesture: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Find and return a single series item corresponding to the given event or null if no matching item is found
-  		* @param e Event
-  		* @returns Object the item object or null if none found.
-  		*/
-  var getItemForEvent: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event_], _]] = js.undefined
+    * @param e Event
+    * @returns Object the item object or null if none found.
+    */
+  var getItemForEvent: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], _]] = js.undefined
   /** [Method] Find and return all series items corresponding to the given event
-  		* @param e Event
-  		* @returns Array array of matching item objects
-  		*/
-  var getItemsForEvent: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event_], Array]] = js.undefined
+    * @param e Event
+    * @returns Array array of matching item objects
+    */
+  var getItemsForEvent: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], Array]] = js.undefined
   /** [Method] A method to be implemented by subclasses where all event attachment should occur  */
   var initialize: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Placeholder method  */
   var onGesture: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
-  		* @param object Object The Observable whose events this object is to relay.
-  		* @param events String/Array/Object Array of event names to relay.
-  		* @returns Ext.mixin.Observable this
-  		*/
+    * @param object Object The Observable whose events this object is to relay.
+    * @param events String/Array/Object Array of event names to relay.
+    * @returns Ext.mixin.Observable this
+    */
   @JSName("relayEvents")
   var relayEvents_IAbstract: js.UndefOr[
     js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
   ] = js.undefined
   /** [Method] Sets the value of chart
-  		* @param chart Ext.chart.AbstractChart The new value.
-  		*/
+    * @param chart Ext.chart.AbstractChart The new value.
+    */
   var setChart: js.UndefOr[js.Function1[/* chart */ js.UndefOr[IAbstractChart], Unit]] = js.undefined
   /** [Method] Sets the value of enabled
-  		* @param enabled Boolean The new value.
-  		*/
+    * @param enabled Boolean The new value.
+    */
   var setEnabled: js.UndefOr[js.Function1[/* enabled */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of gesture
-  		* @param gesture String The new value.
-  		*/
+    * @param gesture String The new value.
+    */
   var setGesture: js.UndefOr[js.Function1[/* gesture */ js.UndefOr[String], Unit]] = js.undefined
   /** [Property] (Number) */
   var throttleGap: js.UndefOr[Double] = js.undefined
@@ -97,8 +97,8 @@ object IAbstract {
     getGesture: () => String = null,
     getId: () => _ = null,
     getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    getItemForEvent: /* e */ js.UndefOr[Event_] => _ = null,
-    getItemsForEvent: /* e */ js.UndefOr[Event_] => Array = null,
+    getItemForEvent: /* e */ js.UndefOr[Event] => _ = null,
+    getItemsForEvent: /* e */ js.UndefOr[Event] => Array = null,
     getListeners: () => _ = null,
     hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     inheritableStatics: js.Any = null,
@@ -128,7 +128,7 @@ object IAbstract {
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     suspendEvents: () => Unit = null,
-    throttleGap: Int | Double = null,
+    throttleGap: js.UndefOr[Double] = js.undefined,
     un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
@@ -151,7 +151,7 @@ object IAbstract {
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (fireAction != null) __obj.updateDynamic("fireAction")(js.Any.fromFunction4(fireAction))
     if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
@@ -190,10 +190,10 @@ object IAbstract {
     if (setEnabled != null) __obj.updateDynamic("setEnabled")(js.Any.fromFunction1(setEnabled))
     if (setGesture != null) __obj.updateDynamic("setGesture")(js.Any.fromFunction1(setGesture))
     if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
-    if (throttleGap != null) __obj.updateDynamic("throttleGap")(throttleGap.asInstanceOf[js.Any])
+    if (!js.isUndefined(throttleGap)) __obj.updateDynamic("throttleGap")(throttleGap.get.asInstanceOf[js.Any])
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
     if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
     if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))

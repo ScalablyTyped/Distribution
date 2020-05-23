@@ -68,7 +68,7 @@ object Js2SvgOptions {
     doctypeEnd: String = null,
     doctypeStart: String = null,
     encodeEntity: /* char */ js.UndefOr[String] => String = null,
-    indent: Int | Double = null,
+    indent: js.UndefOr[Double] = js.undefined,
     pretty: js.UndefOr[Boolean] = js.undefined,
     procInstEnd: String = null,
     procInstStart: String = null,
@@ -94,8 +94,8 @@ object Js2SvgOptions {
     if (doctypeEnd != null) __obj.updateDynamic("doctypeEnd")(doctypeEnd.asInstanceOf[js.Any])
     if (doctypeStart != null) __obj.updateDynamic("doctypeStart")(doctypeStart.asInstanceOf[js.Any])
     if (encodeEntity != null) __obj.updateDynamic("encodeEntity")(js.Any.fromFunction1(encodeEntity))
-    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])
+    if (!js.isUndefined(indent)) __obj.updateDynamic("indent")(indent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.get.asInstanceOf[js.Any])
     if (procInstEnd != null) __obj.updateDynamic("procInstEnd")(procInstEnd.asInstanceOf[js.Any])
     if (procInstStart != null) __obj.updateDynamic("procInstStart")(procInstStart.asInstanceOf[js.Any])
     if (regEntities != null) __obj.updateDynamic("regEntities")(regEntities.asInstanceOf[js.Any])
@@ -108,7 +108,7 @@ object Js2SvgOptions {
     if (tagShortStart != null) __obj.updateDynamic("tagShortStart")(tagShortStart.asInstanceOf[js.Any])
     if (textEnd != null) __obj.updateDynamic("textEnd")(textEnd.asInstanceOf[js.Any])
     if (textStart != null) __obj.updateDynamic("textStart")(textStart.asInstanceOf[js.Any])
-    if (!js.isUndefined(useShortTags)) __obj.updateDynamic("useShortTags")(useShortTags.asInstanceOf[js.Any])
+    if (!js.isUndefined(useShortTags)) __obj.updateDynamic("useShortTags")(useShortTags.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Js2SvgOptions]
   }
 }

@@ -1,5 +1,6 @@
 package typings.ionicUtilsStream.mod
 
+import typings.node.BufferEncoding
 import typings.node.streamMod.Readable
 import typings.node.streamMod.ReadableOptions
 import typings.std.Error
@@ -16,30 +17,30 @@ trait ReadableStreamBufferOptions extends ReadableOptions {
 object ReadableStreamBufferOptions {
   @scala.inline
   def apply(
-    allocSize: Int | Double = null,
+    allocSize: js.UndefOr[Double] = js.undefined,
     autoDestroy: js.UndefOr[Boolean] = js.undefined,
-    chunkSize: Int | Double = null,
+    chunkSize: js.UndefOr[Double] = js.undefined,
     destroy: js.ThisFunction2[
       /* this */ Readable, 
       /* error */ Error | Null, 
       /* callback */ js.Function1[/* error */ Error | Null, Unit], 
       Unit
     ] = null,
-    encoding: String = null,
-    growSize: Int | Double = null,
-    highWaterMark: Int | Double = null,
+    encoding: BufferEncoding = null,
+    growSize: js.UndefOr[Double] = js.undefined,
+    highWaterMark: js.UndefOr[Double] = js.undefined,
     objectMode: js.UndefOr[Boolean] = js.undefined,
     read: js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit] = null
   ): ReadableStreamBufferOptions = {
     val __obj = js.Dynamic.literal()
-    if (allocSize != null) __obj.updateDynamic("allocSize")(allocSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy.asInstanceOf[js.Any])
-    if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(allocSize)) __obj.updateDynamic("allocSize")(allocSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(chunkSize)) __obj.updateDynamic("chunkSize")(chunkSize.get.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (growSize != null) __obj.updateDynamic("growSize")(growSize.asInstanceOf[js.Any])
-    if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
-    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(growSize)) __obj.updateDynamic("growSize")(growSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(highWaterMark)) __obj.updateDynamic("highWaterMark")(highWaterMark.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.get.asInstanceOf[js.Any])
     if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadableStreamBufferOptions]
   }

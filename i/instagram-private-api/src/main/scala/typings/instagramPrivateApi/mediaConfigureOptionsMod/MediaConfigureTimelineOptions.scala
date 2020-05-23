@@ -1,7 +1,7 @@
 package typings.instagramPrivateApi.mediaConfigureOptionsMod
 
-import typings.instagramPrivateApi.AnonCroporiginalsize
-import typings.instagramPrivateApi.AnonSourceheight
+import typings.instagramPrivateApi.anon.Croporiginalsize
+import typings.instagramPrivateApi.anon.Sourceheight
 import typings.instagramPrivateApi.instagramPrivateApiStrings.`0`
 import typings.instagramPrivateApi.instagramPrivateApiStrings.`1`
 import typings.instagramPrivateApi.postingOptionsMod.PostingUsertags
@@ -34,10 +34,10 @@ object MediaConfigureTimelineOptions {
     date_time_original: String = null,
     device_id: String = null,
     disable_comments: js.UndefOr[Boolean] = js.undefined,
-    edits: AnonCroporiginalsize = null,
-    extra: AnonSourceheight = null,
+    edits: Croporiginalsize = null,
+    extra: Sourceheight = null,
     geotag_enabled: `1` | `0` = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     location: MediaLocation | String = null,
     media_folder: String = null,
     media_latitude: String = null,
@@ -49,7 +49,7 @@ object MediaConfigureTimelineOptions {
     source_type: String = null,
     timezone_offset: String = null,
     usertags: PostingUsertags | String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): MediaConfigureTimelineOptions = {
     val __obj = js.Dynamic.literal(upload_id = upload_id.asInstanceOf[js.Any])
     if (camera_make != null) __obj.updateDynamic("camera_make")(camera_make.asInstanceOf[js.Any])
@@ -59,11 +59,11 @@ object MediaConfigureTimelineOptions {
     if (date_time_digitalized != null) __obj.updateDynamic("date_time_digitalized")(date_time_digitalized.asInstanceOf[js.Any])
     if (date_time_original != null) __obj.updateDynamic("date_time_original")(date_time_original.asInstanceOf[js.Any])
     if (device_id != null) __obj.updateDynamic("device_id")(device_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_comments)) __obj.updateDynamic("disable_comments")(disable_comments.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable_comments)) __obj.updateDynamic("disable_comments")(disable_comments.get.asInstanceOf[js.Any])
     if (edits != null) __obj.updateDynamic("edits")(edits.asInstanceOf[js.Any])
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
     if (geotag_enabled != null) __obj.updateDynamic("geotag_enabled")(geotag_enabled.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (media_folder != null) __obj.updateDynamic("media_folder")(media_folder.asInstanceOf[js.Any])
     if (media_latitude != null) __obj.updateDynamic("media_latitude")(media_latitude.asInstanceOf[js.Any])
@@ -75,7 +75,7 @@ object MediaConfigureTimelineOptions {
     if (source_type != null) __obj.updateDynamic("source_type")(source_type.asInstanceOf[js.Any])
     if (timezone_offset != null) __obj.updateDynamic("timezone_offset")(timezone_offset.asInstanceOf[js.Any])
     if (usertags != null) __obj.updateDynamic("usertags")(usertags.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaConfigureTimelineOptions]
   }
 }

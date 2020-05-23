@@ -1,7 +1,7 @@
 package typings.easyXHeaders.tlsMod
 
-import typings.easyXHeaders.AnonAddress
-import typings.easyXHeaders.AnonName
+import typings.easyXHeaders.anon.Address
+import typings.easyXHeaders.anon.Name
 import typings.easyXHeaders.streamMod.Duplex
 import typings.std.Error
 import scala.scalajs.js
@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ClearTextStream extends Duplex {
-  var address: AnonAddress = js.native
+  var address: Address = js.native
   var authorizationError: Error = js.native
   var authorized: Boolean = js.native
-  var getCipher: AnonName = js.native
+  var getCipher: Name = js.native
   var remoteAddress: String = js.native
   var remotePort: Double = js.native
   def getPeerCertificate(): js.Any = js.native

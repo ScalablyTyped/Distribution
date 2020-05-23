@@ -13,7 +13,7 @@ package object vnodeMod {
     - java.lang.String
     - scala.Boolean
     - scala.Null
-    - `js.undefined`
+    - js.UndefOr[scala.Nothing]
     - typings.vue.vnodeMod.ScopedSlotReturnArray
   */
   type ScopedSlotReturnValue = js.UndefOr[

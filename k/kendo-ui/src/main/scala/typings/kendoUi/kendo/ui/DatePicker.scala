@@ -2,16 +2,12 @@ package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.JQuery
 import typings.std.Date
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.DatePicker")
 @js.native
-class DatePicker protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: DatePickerOptions) = this()
+trait DatePicker extends Widget {
   @JSName("options")
   var options_DatePicker: DatePickerOptions = js.native
   var wrapper: JQuery = js.native
@@ -29,13 +25,5 @@ class DatePicker protected () extends Widget {
   def value(): Date = js.native
   def value(value: String): Unit = js.native
   def value(value: Date): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.DatePicker")
-@js.native
-object DatePicker extends js.Object {
-  var fn: DatePicker = js.native
-  def extend(proto: js.Object): DatePicker = js.native
 }
 

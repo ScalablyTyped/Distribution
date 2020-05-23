@@ -1,6 +1,5 @@
 package typings.sharepoint.CUI
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,17 +18,6 @@ object ImgContainerType extends js.Object {
   
   @js.native
   sealed trait span extends ImgContainerType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ImgContainerType with Double] = js.native
-  /* 2 */ @js.native
-  object anchor extends TopLevel[anchor with Double]
-  
-  /* 0 */ @js.native
-  object div extends TopLevel[div with Double]
-  
-  /* 1 */ @js.native
-  object span extends TopLevel[span with Double]
   
 }
 

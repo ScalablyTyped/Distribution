@@ -77,12 +77,12 @@ object NotebookCollectionLoadOptions {
     sections: SectionCollectionLoadOptions = null
   ): NotebookCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(baseUrl)) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(clientUrl)) __obj.updateDynamic("clientUrl")(clientUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isVirtual)) __obj.updateDynamic("isVirtual")(isVirtual.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(baseUrl)) __obj.updateDynamic("baseUrl")(baseUrl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientUrl)) __obj.updateDynamic("clientUrl")(clientUrl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isVirtual)) __obj.updateDynamic("isVirtual")(isVirtual.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.get.asInstanceOf[js.Any])
     if (sectionGroups != null) __obj.updateDynamic("sectionGroups")(sectionGroups.asInstanceOf[js.Any])
     if (sections != null) __obj.updateDynamic("sections")(sections.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotebookCollectionLoadOptions]

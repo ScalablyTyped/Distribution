@@ -89,7 +89,7 @@ object SpotInstanceRequest {
   def apply(
     ActualBlockHourlyPrice: String = null,
     AvailabilityZoneGroup: String = null,
-    BlockDurationMinutes: Int | scala.Double = null,
+    BlockDurationMinutes: js.UndefOr[Integer] = js.undefined,
     CreateTime: DateTime = null,
     Fault: SpotInstanceStateFault = null,
     InstanceId: InstanceId = null,
@@ -110,7 +110,7 @@ object SpotInstanceRequest {
     val __obj = js.Dynamic.literal()
     if (ActualBlockHourlyPrice != null) __obj.updateDynamic("ActualBlockHourlyPrice")(ActualBlockHourlyPrice.asInstanceOf[js.Any])
     if (AvailabilityZoneGroup != null) __obj.updateDynamic("AvailabilityZoneGroup")(AvailabilityZoneGroup.asInstanceOf[js.Any])
-    if (BlockDurationMinutes != null) __obj.updateDynamic("BlockDurationMinutes")(BlockDurationMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(BlockDurationMinutes)) __obj.updateDynamic("BlockDurationMinutes")(BlockDurationMinutes.get.asInstanceOf[js.Any])
     if (CreateTime != null) __obj.updateDynamic("CreateTime")(CreateTime.asInstanceOf[js.Any])
     if (Fault != null) __obj.updateDynamic("Fault")(Fault.asInstanceOf[js.Any])
     if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])

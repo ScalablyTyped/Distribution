@@ -1,6 +1,6 @@
 package typings.mongodb.mod
 
-import typings.mongodb.AnonGeometry
+import typings.mongodb.anon.Geometry
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -38,7 +38,7 @@ trait QuerySelector[T] extends js.Object {
   // Geospatial
   // TODO: define better types for geo queries
   @JSName("$geoIntersects")
-  var $geoIntersects: js.UndefOr[AnonGeometry] = js.undefined
+  var $geoIntersects: js.UndefOr[Geometry] = js.undefined
   @JSName("$geoWithin")
   var $geoWithin: js.UndefOr[js.Object] = js.undefined
   @JSName("$gt")
@@ -90,7 +90,7 @@ object QuerySelector {
     $eq: T = null,
     $exists: js.UndefOr[Boolean] = js.undefined,
     $expr: js.Any = null,
-    $geoIntersects: AnonGeometry = null,
+    $geoIntersects: Geometry = null,
     $geoWithin: js.Object = null,
     $gt: T = null,
     $gte: T = null,
@@ -98,7 +98,7 @@ object QuerySelector {
     $jsonSchema: js.Any = null,
     $lt: T = null,
     $lte: T = null,
-    $maxDistance: Int | scala.Double = null,
+    $maxDistance: js.UndefOr[scala.Double] = js.undefined,
     $mod: js.Tuple2[scala.Double, scala.Double] = null,
     $ne: T = null,
     $near: js.Object = null,
@@ -107,7 +107,7 @@ object QuerySelector {
     $not: QuerySelector[T] | RegExp = null,
     $options: String = null,
     $regex: RegExp | String = null,
-    $size: Int | scala.Double = null,
+    $size: js.UndefOr[scala.Double] = js.undefined,
     $type: BSONType | BSONTypeAlias = null
   ): QuerySelector[T] = {
     val __obj = js.Dynamic.literal()
@@ -118,7 +118,7 @@ object QuerySelector {
     if ($bitsAnySet != null) __obj.updateDynamic("$bitsAnySet")($bitsAnySet.asInstanceOf[js.Any])
     if ($elemMatch != null) __obj.updateDynamic("$elemMatch")($elemMatch.asInstanceOf[js.Any])
     if ($eq != null) __obj.updateDynamic("$eq")($eq.asInstanceOf[js.Any])
-    if (!js.isUndefined($exists)) __obj.updateDynamic("$exists")($exists.asInstanceOf[js.Any])
+    if (!js.isUndefined($exists)) __obj.updateDynamic("$exists")($exists.get.asInstanceOf[js.Any])
     if ($expr != null) __obj.updateDynamic("$expr")($expr.asInstanceOf[js.Any])
     if ($geoIntersects != null) __obj.updateDynamic("$geoIntersects")($geoIntersects.asInstanceOf[js.Any])
     if ($geoWithin != null) __obj.updateDynamic("$geoWithin")($geoWithin.asInstanceOf[js.Any])
@@ -128,7 +128,7 @@ object QuerySelector {
     if ($jsonSchema != null) __obj.updateDynamic("$jsonSchema")($jsonSchema.asInstanceOf[js.Any])
     if ($lt != null) __obj.updateDynamic("$lt")($lt.asInstanceOf[js.Any])
     if ($lte != null) __obj.updateDynamic("$lte")($lte.asInstanceOf[js.Any])
-    if ($maxDistance != null) __obj.updateDynamic("$maxDistance")($maxDistance.asInstanceOf[js.Any])
+    if (!js.isUndefined($maxDistance)) __obj.updateDynamic("$maxDistance")($maxDistance.get.asInstanceOf[js.Any])
     if ($mod != null) __obj.updateDynamic("$mod")($mod.asInstanceOf[js.Any])
     if ($ne != null) __obj.updateDynamic("$ne")($ne.asInstanceOf[js.Any])
     if ($near != null) __obj.updateDynamic("$near")($near.asInstanceOf[js.Any])
@@ -137,7 +137,7 @@ object QuerySelector {
     if ($not != null) __obj.updateDynamic("$not")($not.asInstanceOf[js.Any])
     if ($options != null) __obj.updateDynamic("$options")($options.asInstanceOf[js.Any])
     if ($regex != null) __obj.updateDynamic("$regex")($regex.asInstanceOf[js.Any])
-    if ($size != null) __obj.updateDynamic("$size")($size.asInstanceOf[js.Any])
+    if (!js.isUndefined($size)) __obj.updateDynamic("$size")($size.get.asInstanceOf[js.Any])
     if ($type != null) __obj.updateDynamic("$type")($type.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuerySelector[T]]
   }

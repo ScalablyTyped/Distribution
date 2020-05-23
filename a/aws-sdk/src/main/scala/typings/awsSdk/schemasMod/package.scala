@@ -29,9 +29,7 @@ package object schemasMod {
     - java.lang.String
   */
   type apiVersion = typings.awsSdk.schemasMod._apiVersion | java.lang.String
-  type boolean = scala.Boolean
   type integer = scala.Double
-  type integerMin1Max29000 = scala.Double
   type listOfDiscovererSummary = js.Array[typings.awsSdk.schemasMod.DiscovererSummary]
   type listOfGetDiscoveredSchemaVersionItemInput = js.Array[typings.awsSdk.schemasMod.GetDiscoveredSchemaVersionItemInput]
   type listOfRegistrySummary = js.Array[typings.awsSdk.schemasMod.RegistrySummary]
@@ -45,7 +43,6 @@ package object schemasMod {
   type stringMin0Max256 = java.lang.String
   type stringMin0Max36 = java.lang.String
   type stringMin1Max100000 = java.lang.String
-  type stringMin1Max1600 = java.lang.String
   type stringMin20Max1600 = java.lang.String
   type timestampIso8601 = typings.std.Date
 }

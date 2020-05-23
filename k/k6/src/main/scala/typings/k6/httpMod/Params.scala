@@ -34,10 +34,10 @@ object Params {
     cookies: StringDictionary[ParamsCookieValue] = null,
     headers: StringDictionary[String] = null,
     jar: CookieJar_ = null,
-    redirects: Int | Double = null,
+    redirects: js.UndefOr[Double] = js.undefined,
     responseType: ResponseType = null,
     tags: StringDictionary[String] = null,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): Params = {
     val __obj = js.Dynamic.literal()
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
@@ -45,10 +45,10 @@ object Params {
     if (cookies != null) __obj.updateDynamic("cookies")(cookies.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (jar != null) __obj.updateDynamic("jar")(jar.asInstanceOf[js.Any])
-    if (redirects != null) __obj.updateDynamic("redirects")(redirects.asInstanceOf[js.Any])
+    if (!js.isUndefined(redirects)) __obj.updateDynamic("redirects")(redirects.get.asInstanceOf[js.Any])
     if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Params]
   }
 }

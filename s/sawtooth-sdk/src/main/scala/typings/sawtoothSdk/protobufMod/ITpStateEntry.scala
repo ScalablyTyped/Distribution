@@ -14,10 +14,13 @@ trait ITpStateEntry extends js.Object {
 
 object ITpStateEntry {
   @scala.inline
-  def apply(address: String = null, data: Uint8Array = null): ITpStateEntry = {
+  def apply(
+    address: js.UndefOr[Null | String] = js.undefined,
+    data: js.UndefOr[Null | Uint8Array] = js.undefined
+  ): ITpStateEntry = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(address)) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (!js.isUndefined(data)) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITpStateEntry]
   }
 }

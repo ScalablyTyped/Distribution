@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Scanners
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object ImageScannerAutoCroppingMode extends js.Object {
   /** Scan a single scan region into individual, separate images. */
   @js.native
   sealed trait singleRegion extends ImageScannerAutoCroppingMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ImageScannerAutoCroppingMode with Double] = js.native
-  /* 0 */ @js.native
-  object disabled extends TopLevel[disabled with Double]
-  
-  /* 2 */ @js.native
-  object multipleRegion extends TopLevel[multipleRegion with Double]
-  
-  /* 1 */ @js.native
-  object singleRegion extends TopLevel[singleRegion with Double]
   
 }
 

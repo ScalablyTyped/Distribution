@@ -8,7 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("google-gax", "createByteLengthFunction")
 @js.native
 object createByteLengthFunction
-  extends TopLevel[
-      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GrpcClient.createByteLengthFunction */ js.Any
-    ]
+  extends TopLevel[js.Any]
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for convict
 
-Typings are for version 4.2
+Typings are for version 5.2
 
 ## Library description:
 Featureful configuration management library for Node.js (nested structure, schema validation, etc.)

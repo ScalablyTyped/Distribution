@@ -1,9 +1,9 @@
 package typings.antdMobile.cardMod
 
-import typings.antdMobile.AnonFull
-import typings.antdMobile.TypeofCardBody
-import typings.antdMobile.TypeofCardFooter
-import typings.antdMobile.TypeofCardHeader
+import typings.antdMobile.anon.Full
+import typings.antdMobile.anon.TypeofCardBody
+import typings.antdMobile.anon.TypeofCardFooter
+import typings.antdMobile.anon.TypeofCardHeader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,6 +19,6 @@ object default extends js.Object {
   var Body: TypeofCardBody = js.native
   var Footer: TypeofCardFooter = js.native
   var Header: TypeofCardHeader = js.native
-  var defaultProps: AnonFull = js.native
+  var defaultProps: Full = js.native
 }
 

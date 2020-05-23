@@ -22,10 +22,10 @@ trait ListAliasesRequest extends js.Object {
 
 object ListAliasesRequest {
   @scala.inline
-  def apply(KeyId: KeyIdType = null, Limit: Int | Double = null, Marker: MarkerType = null): ListAliasesRequest = {
+  def apply(KeyId: KeyIdType = null, Limit: js.UndefOr[LimitType] = js.undefined, Marker: MarkerType = null): ListAliasesRequest = {
     val __obj = js.Dynamic.literal()
     if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAliasesRequest]
   }

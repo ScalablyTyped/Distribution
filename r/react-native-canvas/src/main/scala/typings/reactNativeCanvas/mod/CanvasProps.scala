@@ -20,12 +20,12 @@ object CanvasProps {
     ref: (js.Function1[/* canvas */ Canvas, _]) | RefObject[Canvas],
     baseUrl: String = null,
     originWhitelist: js.Array[String] = null,
-    style: StyleProp[ViewStyle] = null
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined
   ): CanvasProps = {
     val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any])
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
     if (originWhitelist != null) __obj.updateDynamic("originWhitelist")(originWhitelist.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanvasProps]
   }
 }

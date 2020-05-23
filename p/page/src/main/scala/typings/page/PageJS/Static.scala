@@ -1,6 +1,6 @@
 package typings.page.PageJS
 
-import typings.page.PartialOptions
+import typings.page.anon.PartialOptions
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

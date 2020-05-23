@@ -22,9 +22,9 @@ trait GetIntrospectionSchemaRequest extends js.Object {
 
 object GetIntrospectionSchemaRequest {
   @scala.inline
-  def apply(apiId: String, format: OutputType, includeDirectives: js.UndefOr[scala.Boolean] = js.undefined): GetIntrospectionSchemaRequest = {
+  def apply(apiId: String, format: OutputType, includeDirectives: js.UndefOr[BooleanValue] = js.undefined): GetIntrospectionSchemaRequest = {
     val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeDirectives)) __obj.updateDynamic("includeDirectives")(includeDirectives.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeDirectives)) __obj.updateDynamic("includeDirectives")(includeDirectives.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetIntrospectionSchemaRequest]
   }
 }

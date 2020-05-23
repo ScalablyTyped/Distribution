@@ -11,10 +11,10 @@ trait CompassOptions extends js.Object {
 
 object CompassOptions {
   @scala.inline
-  def apply(filter: Int | Double = null, frequency: Int | Double = null): CompassOptions = {
+  def apply(filter: js.UndefOr[Double] = js.undefined, frequency: js.UndefOr[Double] = js.undefined): CompassOptions = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(frequency)) __obj.updateDynamic("frequency")(frequency.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompassOptions]
   }
 }

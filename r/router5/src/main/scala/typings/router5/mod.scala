@@ -2,6 +2,7 @@ package typings.router5
 
 import typings.routeNode.routeNodeMod.Route
 import typings.routeNode.routeNodeMod.RouteNodeOptions
+import typings.router5.anon.PartialOptions
 import typings.router5.constantsMod.Constants_
 import typings.router5.constantsMod.ErrorCodes_
 import typings.router5.routerMod.DefaultDependencies

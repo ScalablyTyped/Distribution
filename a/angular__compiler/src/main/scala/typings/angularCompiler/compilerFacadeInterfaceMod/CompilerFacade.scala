@@ -1,6 +1,6 @@
 package typings.angularCompiler.compilerFacadeInterfaceMod
 
-import typings.angularCompiler.AnonInstantiableResourceLoader
+import typings.angularCompiler.anon.InstantiableResourceLoader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait CompilerFacade extends js.Object {
   var R3FactoryTarget: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof R3FactoryTarget */ js.Any
   var R3ResolvedDependencyType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof R3ResolvedDependencyType */ js.Any
-  var ResourceLoader: AnonInstantiableResourceLoader
+  var ResourceLoader: InstantiableResourceLoader
   def compileComponent(angularCoreEnv: CoreEnvironment, sourceMapUrl: String, meta: R3ComponentMetadataFacade): js.Any
   def compileDirective(angularCoreEnv: CoreEnvironment, sourceMapUrl: String, meta: R3DirectiveMetadataFacade): js.Any
   def compileFactory(angularCoreEnv: CoreEnvironment, sourceMapUrl: String, meta: R3FactoryDefMetadataFacade): js.Any
@@ -24,7 +24,7 @@ object CompilerFacade {
   def apply(
     R3FactoryTarget: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof R3FactoryTarget */ js.Any,
     R3ResolvedDependencyType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof R3ResolvedDependencyType */ js.Any,
-    ResourceLoader: AnonInstantiableResourceLoader,
+    ResourceLoader: InstantiableResourceLoader,
     compileComponent: (CoreEnvironment, String, R3ComponentMetadataFacade) => js.Any,
     compileDirective: (CoreEnvironment, String, R3DirectiveMetadataFacade) => js.Any,
     compileFactory: (CoreEnvironment, String, R3FactoryDefMetadataFacade) => js.Any,

@@ -27,7 +27,7 @@ object Options {
     engineAddr: String = null,
     legacyApply: js.UndefOr[Boolean] = js.undefined,
     monitorAddr: String = null,
-    parallel: Int | Double = null,
+    parallel: js.UndefOr[Double] = js.undefined,
     project: String = null,
     queryMode: js.UndefOr[Boolean] = js.undefined,
     stack: String = null,
@@ -35,16 +35,16 @@ object Options {
     testModeEnabled: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun.get.asInstanceOf[js.Any])
     if (engineAddr != null) __obj.updateDynamic("engineAddr")(engineAddr.asInstanceOf[js.Any])
-    if (!js.isUndefined(legacyApply)) __obj.updateDynamic("legacyApply")(legacyApply.asInstanceOf[js.Any])
+    if (!js.isUndefined(legacyApply)) __obj.updateDynamic("legacyApply")(legacyApply.get.asInstanceOf[js.Any])
     if (monitorAddr != null) __obj.updateDynamic("monitorAddr")(monitorAddr.asInstanceOf[js.Any])
-    if (parallel != null) __obj.updateDynamic("parallel")(parallel.asInstanceOf[js.Any])
+    if (!js.isUndefined(parallel)) __obj.updateDynamic("parallel")(parallel.get.asInstanceOf[js.Any])
     if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
-    if (!js.isUndefined(queryMode)) __obj.updateDynamic("queryMode")(queryMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(queryMode)) __obj.updateDynamic("queryMode")(queryMode.get.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     if (syncDir != null) __obj.updateDynamic("syncDir")(syncDir.asInstanceOf[js.Any])
-    if (!js.isUndefined(testModeEnabled)) __obj.updateDynamic("testModeEnabled")(testModeEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(testModeEnabled)) __obj.updateDynamic("testModeEnabled")(testModeEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

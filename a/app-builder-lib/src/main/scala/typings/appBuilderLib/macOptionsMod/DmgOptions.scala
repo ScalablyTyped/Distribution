@@ -81,36 +81,36 @@ trait DmgOptions extends TargetSpecificOptions {
 object DmgOptions {
   @scala.inline
   def apply(
-    artifactName: String = null,
-    background: String = null,
-    backgroundColor: String = null,
+    artifactName: js.UndefOr[Null | String] = js.undefined,
+    background: js.UndefOr[Null | String] = js.undefined,
+    backgroundColor: js.UndefOr[Null | String] = js.undefined,
     contents: js.Array[DmgContent] = null,
     format: UDRW | UDRO | UDCO | UDZO | UDBZ | ULFO = null,
-    icon: String = null,
-    iconSize: Int | Double = null,
-    iconTextSize: Int | Double = null,
+    icon: js.UndefOr[Null | String] = js.undefined,
+    iconSize: js.UndefOr[Null | Double] = js.undefined,
+    iconTextSize: js.UndefOr[Null | Double] = js.undefined,
     internetEnabled: js.UndefOr[Boolean] = js.undefined,
-    publish: Publish = null,
+    publish: js.UndefOr[Null | Publish] = js.undefined,
     sign: js.UndefOr[Boolean] = js.undefined,
-    title: String = null,
+    title: js.UndefOr[Null | String] = js.undefined,
     window: DmgWindow = null,
     writeUpdateInfo: js.UndefOr[Boolean] = js.undefined
   ): DmgOptions = {
     val __obj = js.Dynamic.literal()
-    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(artifactName)) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
+    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (!js.isUndefined(backgroundColor)) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (contents != null) __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
-    if (iconTextSize != null) __obj.updateDynamic("iconTextSize")(iconTextSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(internetEnabled)) __obj.updateDynamic("internetEnabled")(internetEnabled.asInstanceOf[js.Any])
-    if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
-    if (!js.isUndefined(sign)) __obj.updateDynamic("sign")(sign.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(iconSize)) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(iconTextSize)) __obj.updateDynamic("iconTextSize")(iconTextSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(internetEnabled)) __obj.updateDynamic("internetEnabled")(internetEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(publish)) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
+    if (!js.isUndefined(sign)) __obj.updateDynamic("sign")(sign.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
-    if (!js.isUndefined(writeUpdateInfo)) __obj.updateDynamic("writeUpdateInfo")(writeUpdateInfo.asInstanceOf[js.Any])
+    if (!js.isUndefined(writeUpdateInfo)) __obj.updateDynamic("writeUpdateInfo")(writeUpdateInfo.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DmgOptions]
   }
 }

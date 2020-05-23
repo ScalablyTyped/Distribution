@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Base
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -176,8 +175,4 @@ trait Date extends js.Object {
   /** Returns a date converted to a string using Universal Coordinated Time (UTC). */
   def toUTCString(): String = js.native
 }
-
-@JSGlobal("GoogleAppsScript.Base.Date")
-@js.native
-object Date extends TopLevel[DateConstructor]
 

@@ -27,12 +27,12 @@ object RequestPaymentOptions {
   @scala.inline
   def apply(
     pattern_id: String,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    amount: Int | Double = null,
-    amount_due: Int | Double = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    amount: js.UndefOr[Double] = js.undefined,
+    amount_due: js.UndefOr[Double] = js.undefined,
     codepro: js.UndefOr[Boolean] = js.undefined,
     comment: String = null,
-    expire_period: Int | Double = null,
+    expire_period: js.UndefOr[Double] = js.undefined,
     hold_for_pickup: js.UndefOr[Boolean] = js.undefined,
     label: String = null,
     message: String = null,
@@ -44,17 +44,17 @@ object RequestPaymentOptions {
   ): RequestPaymentOptions = {
     val __obj = js.Dynamic.literal(pattern_id = pattern_id.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (amount_due != null) __obj.updateDynamic("amount_due")(amount_due.asInstanceOf[js.Any])
-    if (!js.isUndefined(codepro)) __obj.updateDynamic("codepro")(codepro.asInstanceOf[js.Any])
+    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(amount_due)) __obj.updateDynamic("amount_due")(amount_due.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(codepro)) __obj.updateDynamic("codepro")(codepro.get.asInstanceOf[js.Any])
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (expire_period != null) __obj.updateDynamic("expire_period")(expire_period.asInstanceOf[js.Any])
-    if (!js.isUndefined(hold_for_pickup)) __obj.updateDynamic("hold_for_pickup")(hold_for_pickup.asInstanceOf[js.Any])
+    if (!js.isUndefined(expire_period)) __obj.updateDynamic("expire_period")(expire_period.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hold_for_pickup)) __obj.updateDynamic("hold_for_pickup")(hold_for_pickup.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (`phone-number` != null) __obj.updateDynamic("phone-number")(`phone-number`.asInstanceOf[js.Any])
     if (test_card != null) __obj.updateDynamic("test_card")(test_card.asInstanceOf[js.Any])
-    if (!js.isUndefined(test_payment)) __obj.updateDynamic("test_payment")(test_payment.asInstanceOf[js.Any])
+    if (!js.isUndefined(test_payment)) __obj.updateDynamic("test_payment")(test_payment.get.asInstanceOf[js.Any])
     if (test_result != null) __obj.updateDynamic("test_result")(test_result.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestPaymentOptions]

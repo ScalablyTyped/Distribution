@@ -89,9 +89,9 @@ object OptionsBottomTabs {
     backgroundColor: Color = null,
     barStyle: default | black = null,
     currentTabId: String = null,
-    currentTabIndex: Int | Double = null,
+    currentTabIndex: js.UndefOr[Double] = js.undefined,
     drawBehind: js.UndefOr[Boolean] = js.undefined,
-    elevation: Int | Double = null,
+    elevation: js.UndefOr[AndroidDensityNumber] = js.undefined,
     hideShadow: js.UndefOr[Boolean] = js.undefined,
     preferLargeIcons: js.UndefOr[Boolean] = js.undefined,
     tabsAttachMode: together | afterInitialTab | onSwitchToTab = null,
@@ -101,20 +101,20 @@ object OptionsBottomTabs {
     visible: js.UndefOr[Boolean] = js.undefined
   ): OptionsBottomTabs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (barStyle != null) __obj.updateDynamic("barStyle")(barStyle.asInstanceOf[js.Any])
     if (currentTabId != null) __obj.updateDynamic("currentTabId")(currentTabId.asInstanceOf[js.Any])
-    if (currentTabIndex != null) __obj.updateDynamic("currentTabIndex")(currentTabIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawBehind)) __obj.updateDynamic("drawBehind")(drawBehind.asInstanceOf[js.Any])
-    if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideShadow)) __obj.updateDynamic("hideShadow")(hideShadow.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferLargeIcons)) __obj.updateDynamic("preferLargeIcons")(preferLargeIcons.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentTabIndex)) __obj.updateDynamic("currentTabIndex")(currentTabIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawBehind)) __obj.updateDynamic("drawBehind")(drawBehind.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(elevation)) __obj.updateDynamic("elevation")(elevation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideShadow)) __obj.updateDynamic("hideShadow")(hideShadow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferLargeIcons)) __obj.updateDynamic("preferLargeIcons")(preferLargeIcons.get.asInstanceOf[js.Any])
     if (tabsAttachMode != null) __obj.updateDynamic("tabsAttachMode")(tabsAttachMode.asInstanceOf[js.Any])
     if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
     if (titleDisplayMode != null) __obj.updateDynamic("titleDisplayMode")(titleDisplayMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsBottomTabs]
   }
 }

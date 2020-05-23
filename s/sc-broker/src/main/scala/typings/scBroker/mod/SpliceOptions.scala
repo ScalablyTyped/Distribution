@@ -15,18 +15,18 @@ trait SpliceOptions extends js.Object {
 object SpliceOptions {
   @scala.inline
   def apply(
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     getValue: js.UndefOr[Boolean] = js.undefined,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     items: js.Array[_] = null,
     noAck: js.UndefOr[Boolean] = js.undefined
   ): SpliceOptions = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (!js.isUndefined(getValue)) __obj.updateDynamic("getValue")(getValue.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(getValue)) __obj.updateDynamic("getValue")(getValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (!js.isUndefined(noAck)) __obj.updateDynamic("noAck")(noAck.asInstanceOf[js.Any])
+    if (!js.isUndefined(noAck)) __obj.updateDynamic("noAck")(noAck.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpliceOptions]
   }
 }

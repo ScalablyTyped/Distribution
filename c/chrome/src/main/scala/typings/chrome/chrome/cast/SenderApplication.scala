@@ -4,17 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("chrome.cast.SenderApplication")
-@js.native
-class SenderApplication protected () extends js.Object {
-  /**
-    * @param {!chrome.cast.SenderPlatform} platform
-    * @constructor
-    * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.SenderApplication
-    */
-  def this(platform: SenderPlatform) = this()
-  var packageId: js.UndefOr[String] = js.native
-  var platform: SenderPlatform = js.native
-  var url: js.UndefOr[String] = js.native
+trait SenderApplication extends js.Object {
+  var packageId: js.UndefOr[String] = js.undefined
+  var platform: SenderPlatform
+  var url: js.UndefOr[String] = js.undefined
+}
+
+object SenderApplication {
+  @scala.inline
+  def apply(platform: SenderPlatform, packageId: String = null, url: String = null): SenderApplication = {
+    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
+    if (packageId != null) __obj.updateDynamic("packageId")(packageId.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SenderApplication]
+  }
 }
 

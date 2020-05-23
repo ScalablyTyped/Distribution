@@ -1,13 +1,11 @@
 package typings.googleDriveRealtimeApi.gapi.drive.realtime
 
-import typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.EditableString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("gapi.drive.realtime.CollaborativeString")
 @js.native
-class CollaborativeString () extends CollaborativeObject {
+trait CollaborativeString extends CollaborativeObject {
   // The length of the string. Read only.
   var length: Double = js.native
   // The text of this collaborative string. Reading from this property is equivalent to calling getText(). Writing to this property is equivalent to calling setText().
@@ -27,12 +25,5 @@ class CollaborativeString () extends CollaborativeObject {
   // current string contents and the new contents so that the string will be modified using the minimum number
   // of text inserts and deletes possible to change the current contents to the newly-specified contents.
   def setText(text: String): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("gapi.drive.realtime.CollaborativeString")
-@js.native
-object CollaborativeString extends js.Object {
-  var `type`: EditableString = js.native
 }
 

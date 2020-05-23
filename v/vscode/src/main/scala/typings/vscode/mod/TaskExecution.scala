@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait TaskExecution extends js.Object {
   /**
-  		 * The task that got started.
-  		 */
+    * The task that got started.
+    */
   var task: Task
   /**
-  		 * Terminates the task execution.
-  		 */
+    * Terminates the task execution.
+    */
   def terminate(): Unit
 }
 

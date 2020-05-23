@@ -12,9 +12,9 @@ trait INodeList extends js.Object {
 
 object INodeList {
   @scala.inline
-  def apply(value: js.Array[String] = null): INodeList = {
+  def apply(value: js.UndefOr[Null | js.Array[String]] = js.undefined): INodeList = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[INodeList]
   }
 }

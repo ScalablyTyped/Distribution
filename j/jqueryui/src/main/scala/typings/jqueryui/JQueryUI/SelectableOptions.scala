@@ -1,10 +1,10 @@
 package typings.jqueryui.JQueryUI
 
 import typings.jquery.JQueryEventObject
-import typings.jqueryui.AnonSelected
-import typings.jqueryui.AnonSelecting
-import typings.jqueryui.AnonUnselected
-import typings.jqueryui.AnonUnselecting
+import typings.jqueryui.anon.Selected
+import typings.jqueryui.anon.Selecting
+import typings.jqueryui.anon.Unselected
+import typings.jqueryui.anon.Unselecting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,24 +25,24 @@ object SelectableOptions {
   def apply(
     autoRefresh: js.UndefOr[Boolean] = js.undefined,
     cancel: String = null,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    distance: Int | Double = null,
+    distance: js.UndefOr[Double] = js.undefined,
     filter: String = null,
-    selected: (/* event */ JQueryEventObject, /* ui */ AnonSelected) => Unit = null,
-    selecting: (/* event */ JQueryEventObject, /* ui */ AnonSelecting) => Unit = null,
+    selected: (/* event */ JQueryEventObject, /* ui */ Selected) => Unit = null,
+    selecting: (/* event */ JQueryEventObject, /* ui */ Selecting) => Unit = null,
     start: (/* event */ JQueryEventObject, /* ui */ js.Any) => Unit = null,
     stop: (/* event */ JQueryEventObject, /* ui */ js.Any) => Unit = null,
     tolerance: String = null,
-    unselected: (/* event */ JQueryEventObject, /* ui */ AnonUnselected) => Unit = null,
-    unselecting: (/* event */ JQueryEventObject, /* ui */ AnonUnselecting) => Unit = null
+    unselected: (/* event */ JQueryEventObject, /* ui */ Unselected) => Unit = null,
+    unselecting: (/* event */ JQueryEventObject, /* ui */ Unselecting) => Unit = null
   ): SelectableOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoRefresh)) __obj.updateDynamic("autoRefresh")(autoRefresh.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoRefresh)) __obj.updateDynamic("autoRefresh")(autoRefresh.get.asInstanceOf[js.Any])
     if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (selected != null) __obj.updateDynamic("selected")(js.Any.fromFunction2(selected))
     if (selecting != null) __obj.updateDynamic("selecting")(js.Any.fromFunction2(selecting))

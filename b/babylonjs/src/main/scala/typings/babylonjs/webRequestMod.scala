@@ -13,10 +13,10 @@ import typings.babylonjs.iWebRequestMod.IWebRequest
 import typings.babylonjs.typesMod.Nullable
 import typings.std.AddEventListenerOptions
 import typings.std.BodyInit
-import typings.std.Document_
+import typings.std.Document
+import typings.std.Event
 import typings.std.EventListenerOptions
 import typings.std.EventTarget
-import typings.std.Event_
 import typings.std.ProgressEvent
 import typings.std.XMLHttpRequest
 import typings.std.XMLHttpRequestEventTarget
@@ -155,20 +155,17 @@ object webRequestMod extends js.Object {
     ): Unit = js.native
     /** @hidden */
     @JSName("addEventListener")
-    def addEventListener_readystatechange(
-      `type`: readystatechange,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ Event_, _]
-    ): Unit = js.native
+    def addEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ Event, _]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_readystatechange(
       `type`: readystatechange,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ Event_, _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ Event, _],
       options: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_readystatechange(
       `type`: readystatechange,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ Event_, _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ Event, _],
       options: AddEventListenerOptions
     ): Unit = js.native
     @JSName("addEventListener")
@@ -315,20 +312,17 @@ object webRequestMod extends js.Object {
     ): Unit = js.native
     /** @hidden */
     @JSName("removeEventListener")
-    def removeEventListener_readystatechange(
-      `type`: readystatechange,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ Event_, _]
-    ): Unit = js.native
+    def removeEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ Event, _]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_readystatechange(
       `type`: readystatechange,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ Event_, _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ Event, _],
       options: Boolean
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_readystatechange(
       `type`: readystatechange,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ Event_, _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ Event, _],
       options: EventListenerOptions
     ): Unit = js.native
     @JSName("removeEventListener")
@@ -372,7 +366,7 @@ object webRequestMod extends js.Object {
       */
     def send(): Unit = js.native
     def send(body: BodyInit): Unit = js.native
-    def send(body: Document_): Unit = js.native
+    def send(body: Document): Unit = js.native
     /**
       * Sets the value of a request header.
       * @param name The name of the header whose value is to be set

@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation._
 
 object algoliaClientCommonStrings {
   @js.native
-  sealed trait `4Dot1Dot0` extends js.Object
-  
-  @js.native
   sealed trait CreateClient extends js.Object
   
   @js.native
@@ -44,8 +41,6 @@ object algoliaClientCommonStrings {
   @js.native
   sealed trait userAgent extends js.Object
   
-  @scala.inline
-  def `4Dot1Dot0`: `4Dot1Dot0` = "4.1.0".asInstanceOf[`4Dot1Dot0`]
   @scala.inline
   def CreateClient: CreateClient = "CreateClient".asInstanceOf[CreateClient]
   @scala.inline

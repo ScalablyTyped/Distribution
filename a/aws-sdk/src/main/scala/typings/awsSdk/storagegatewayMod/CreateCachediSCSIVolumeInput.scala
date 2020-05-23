@@ -12,11 +12,11 @@ trait CreateCachediSCSIVolumeInput extends js.Object {
   var ClientToken: typings.awsSdk.storagegatewayMod.ClientToken = js.native
   var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN = js.native
   /**
-    * True to use Amazon S3 server side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional.
+    * True to use Amazon S3 server-side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional.
     */
   var KMSEncrypted: js.UndefOr[Boolean] = js.native
   /**
-    * The Amazon Resource Name (ARN) of the AWS KMS key used for Amazon S3 server side encryption. This value can only be set when KMSEncrypted is true. Optional.
+    * The Amazon Resource Name (ARN) of the AWS KMS key used for Amazon S3 server-side encryption. This value can only be set when KMSEncrypted is true. Optional.
     */
   var KMSKey: js.UndefOr[typings.awsSdk.storagegatewayMod.KMSKey] = js.native
   /**
@@ -53,14 +53,14 @@ object CreateCachediSCSIVolumeInput {
     NetworkInterfaceId: NetworkInterfaceId,
     TargetName: TargetName,
     VolumeSizeInBytes: long,
-    KMSEncrypted: js.UndefOr[scala.Boolean] = js.undefined,
+    KMSEncrypted: js.UndefOr[Boolean] = js.undefined,
     KMSKey: KMSKey = null,
     SnapshotId: SnapshotId = null,
     SourceVolumeARN: VolumeARN = null,
     Tags: Tags = null
   ): CreateCachediSCSIVolumeInput = {
     val __obj = js.Dynamic.literal(ClientToken = ClientToken.asInstanceOf[js.Any], GatewayARN = GatewayARN.asInstanceOf[js.Any], NetworkInterfaceId = NetworkInterfaceId.asInstanceOf[js.Any], TargetName = TargetName.asInstanceOf[js.Any], VolumeSizeInBytes = VolumeSizeInBytes.asInstanceOf[js.Any])
-    if (!js.isUndefined(KMSEncrypted)) __obj.updateDynamic("KMSEncrypted")(KMSEncrypted.asInstanceOf[js.Any])
+    if (!js.isUndefined(KMSEncrypted)) __obj.updateDynamic("KMSEncrypted")(KMSEncrypted.get.asInstanceOf[js.Any])
     if (KMSKey != null) __obj.updateDynamic("KMSKey")(KMSKey.asInstanceOf[js.Any])
     if (SnapshotId != null) __obj.updateDynamic("SnapshotId")(SnapshotId.asInstanceOf[js.Any])
     if (SourceVolumeARN != null) __obj.updateDynamic("SourceVolumeARN")(SourceVolumeARN.asInstanceOf[js.Any])

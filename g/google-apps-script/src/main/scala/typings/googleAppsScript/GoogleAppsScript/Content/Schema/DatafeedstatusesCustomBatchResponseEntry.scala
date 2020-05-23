@@ -12,9 +12,13 @@ trait DatafeedstatusesCustomBatchResponseEntry extends js.Object {
 
 object DatafeedstatusesCustomBatchResponseEntry {
   @scala.inline
-  def apply(batchId: Int | Double = null, datafeedStatus: DatafeedStatus = null, errors: Errors = null): DatafeedstatusesCustomBatchResponseEntry = {
+  def apply(
+    batchId: js.UndefOr[Double] = js.undefined,
+    datafeedStatus: DatafeedStatus = null,
+    errors: Errors = null
+  ): DatafeedstatusesCustomBatchResponseEntry = {
     val __obj = js.Dynamic.literal()
-    if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchId)) __obj.updateDynamic("batchId")(batchId.get.asInstanceOf[js.Any])
     if (datafeedStatus != null) __obj.updateDynamic("datafeedStatus")(datafeedStatus.asInstanceOf[js.Any])
     if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatafeedstatusesCustomBatchResponseEntry]

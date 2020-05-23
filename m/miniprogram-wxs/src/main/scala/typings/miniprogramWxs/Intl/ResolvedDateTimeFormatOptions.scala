@@ -43,7 +43,7 @@ object ResolvedDateTimeFormatOptions {
     if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
     if (era != null) __obj.updateDynamic("era")(era.asInstanceOf[js.Any])
     if (hour != null) __obj.updateDynamic("hour")(hour.asInstanceOf[js.Any])
-    if (!js.isUndefined(hour12)) __obj.updateDynamic("hour12")(hour12.asInstanceOf[js.Any])
+    if (!js.isUndefined(hour12)) __obj.updateDynamic("hour12")(hour12.get.asInstanceOf[js.Any])
     if (minute != null) __obj.updateDynamic("minute")(minute.asInstanceOf[js.Any])
     if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
     if (second != null) __obj.updateDynamic("second")(second.asInstanceOf[js.Any])

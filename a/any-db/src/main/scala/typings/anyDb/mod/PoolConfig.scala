@@ -59,22 +59,22 @@ trait PoolConfig extends js.Object {
 object PoolConfig {
   @scala.inline
   def apply(
-    idleTimeout: Int | Double = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
+    idleTimeout: js.UndefOr[Double] = js.undefined,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
     onConnect: (/* connection */ Connection, /* ready */ js.Function2[/* error */ Error, /* result */ Connection, Unit]) => Unit = null,
-    reapInterval: Int | Double = null,
+    reapInterval: js.UndefOr[Double] = js.undefined,
     refreshIdle: js.UndefOr[Boolean] = js.undefined,
     reset: (/* connection */ Connection, /* done */ js.Function1[/* error */ Error, Unit]) => Unit = null,
     shouldDestroyConnection: /* error */ Error => Boolean = null
   ): PoolConfig = {
     val __obj = js.Dynamic.literal()
-    if (idleTimeout != null) __obj.updateDynamic("idleTimeout")(idleTimeout.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(idleTimeout)) __obj.updateDynamic("idleTimeout")(idleTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     if (onConnect != null) __obj.updateDynamic("onConnect")(js.Any.fromFunction2(onConnect))
-    if (reapInterval != null) __obj.updateDynamic("reapInterval")(reapInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(refreshIdle)) __obj.updateDynamic("refreshIdle")(refreshIdle.asInstanceOf[js.Any])
+    if (!js.isUndefined(reapInterval)) __obj.updateDynamic("reapInterval")(reapInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshIdle)) __obj.updateDynamic("refreshIdle")(refreshIdle.get.asInstanceOf[js.Any])
     if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction2(reset))
     if (shouldDestroyConnection != null) __obj.updateDynamic("shouldDestroyConnection")(js.Any.fromFunction1(shouldDestroyConnection))
     __obj.asInstanceOf[PoolConfig]

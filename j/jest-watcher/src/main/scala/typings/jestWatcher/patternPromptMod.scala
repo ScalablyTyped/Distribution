@@ -1,5 +1,6 @@
 package typings.jestWatcher
 
+import typings.jestWatcher.anon.Header
 import typings.jestWatcher.typesMod.ScrollOptions
 import typings.node.NodeJS.WritableStream
 import scala.scalajs.js
@@ -17,11 +18,7 @@ object patternPromptMod extends js.Object {
     var _prompt: typings.jestWatcher.promptMod.default = js.native
     /* protected */ def _onChange(_pattern: String, _options: ScrollOptions): Unit = js.native
     def run(onSuccess: js.Function1[/* value */ String, Unit], onCancel: js.Function0[Unit]): Unit = js.native
-    def run(
-      onSuccess: js.Function1[/* value */ String, Unit],
-      onCancel: js.Function0[Unit],
-      options: AnonHeader
-    ): Unit = js.native
+    def run(onSuccess: js.Function1[/* value */ String, Unit], onCancel: js.Function0[Unit], options: Header): Unit = js.native
   }
   
   @js.native

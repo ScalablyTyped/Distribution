@@ -6,13 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Map
-@JSGlobal("naver.maps.Map")
 @js.native
-class Map protected () extends KVO {
-  def this(mapDiv: String) = this()
-  def this(mapDiv: HTMLElement) = this()
-  def this(mapDiv: String, mapOptions: MapOptions) = this()
-  def this(mapDiv: HTMLElement, mapOptions: MapOptions) = this()
+trait Map extends KVO {
   var controls: js.Any = js.native
   var data: js.Any = js.native
   var layers: js.Any = js.native

@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.AnonAdjustPitch
+import typings.babylonjs.anon.AdjustPitch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,7 +37,7 @@ class BoneLookController protected ()
     mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
     bone: typings.babylonjs.boneMod.Bone,
     target: typings.babylonjs.mathVectorMod.Vector3,
-    options: AnonAdjustPitch
+    options: AdjustPitch
   ) = this()
 }
 

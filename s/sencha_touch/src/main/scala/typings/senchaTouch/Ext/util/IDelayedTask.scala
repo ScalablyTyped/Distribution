@@ -11,11 +11,11 @@ trait IDelayedTask extends IBase {
   /** [Method] Cancel the last queued timeout */
   var cancel: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Cancels any pending timeout and queues a new one
-  		* @param delay Number The milliseconds to delay
-  		* @param newFn Function Overrides the original function passed when instantiated.
-  		* @param newScope Object Overrides the original scope passed when instantiated. Remember that if no scope is specified, this will refer to the browser window.
-  		* @param newArgs Array Overrides the original args passed when instantiated.
-  		*/
+    * @param delay Number The milliseconds to delay
+    * @param newFn Function Overrides the original function passed when instantiated.
+    * @param newScope Object Overrides the original scope passed when instantiated. Remember that if no scope is specified, this will refer to the browser window.
+    * @param newArgs Array Overrides the original args passed when instantiated.
+    */
   var delay: js.UndefOr[
     js.Function4[
       /* delay */ js.UndefOr[Double], 
@@ -26,44 +26,44 @@ trait IDelayedTask extends IBase {
     ]
   ] = js.undefined
   /** [Method] Returns the value of args
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getArgs: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of delay
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getDelay: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of fn
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getFn: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of interval
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getInterval: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of scope
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getScope: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Sets the value of args
-  		* @param args Object The new value.
-  		*/
+    * @param args Object The new value.
+    */
   var setArgs: js.UndefOr[js.Function1[/* args */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of delay
-  		* @param delay Object The new value.
-  		*/
+    * @param delay Object The new value.
+    */
   var setDelay: js.UndefOr[js.Function1[/* delay */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of fn
-  		* @param fn Object The new value.
-  		*/
+    * @param fn Object The new value.
+    */
   var setFn: js.UndefOr[js.Function1[/* fn */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of interval
-  		* @param interval Object The new value.
-  		*/
+    * @param interval Object The new value.
+    */
   var setInterval: js.UndefOr[js.Function1[/* interval */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of scope
-  		* @param scope Object The new value.
-  		*/
+    * @param scope Object The new value.
+    */
   var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -127,7 +127,7 @@ object IDelayedTask {
     if (setFn != null) __obj.updateDynamic("setFn")(js.Any.fromFunction1(setFn))
     if (setInterval != null) __obj.updateDynamic("setInterval")(js.Any.fromFunction1(setInterval))
     if (setScope != null) __obj.updateDynamic("setScope")(js.Any.fromFunction1(setScope))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDelayedTask]

@@ -58,104 +58,104 @@ trait SchedulerDataConfig extends js.Object {
 object SchedulerDataConfig {
   @scala.inline
   def apply(
-    agendaMaxEventWidth: Int | Double = null,
-    agendaResourceTableWidth: Int | Double = null,
+    agendaMaxEventWidth: js.UndefOr[Double] = js.undefined,
+    agendaResourceTableWidth: js.UndefOr[Double] = js.undefined,
     calendarPopoverEnabled: js.UndefOr[Boolean] = js.undefined,
     checkConflict: js.UndefOr[Boolean] = js.undefined,
     creatable: js.UndefOr[Boolean] = js.undefined,
     crossResourceMove: js.UndefOr[Boolean] = js.undefined,
-    dayCellWidth: Int | Double = null,
-    dayMaxEvents: Int | Double = null,
-    dayResourceTableWidth: Int | Double = null,
-    dayStartFrom: Int | Double = null,
-    dayStopTo: Int | Double = null,
+    dayCellWidth: js.UndefOr[Double] = js.undefined,
+    dayMaxEvents: js.UndefOr[Double] = js.undefined,
+    dayResourceTableWidth: js.UndefOr[Double] = js.undefined,
+    dayStartFrom: js.UndefOr[Double] = js.undefined,
+    dayStopTo: js.UndefOr[Double] = js.undefined,
     defaultEventBgColor: String = null,
     displayWeekend: js.UndefOr[Boolean] = js.undefined,
     endResizable: js.UndefOr[Boolean] = js.undefined,
-    eventItemHeight: Int | Double = null,
-    eventItemLineHeight: Int | Double = null,
+    eventItemHeight: js.UndefOr[Double] = js.undefined,
+    eventItemLineHeight: js.UndefOr[Double] = js.undefined,
     eventItemPopoverEnabled: js.UndefOr[Boolean] = js.undefined,
     headerEnabled: js.UndefOr[Boolean] = js.undefined,
-    minuteStep: Int | Double = null,
-    monthCellWidth: Int | Double = null,
-    monthMaxEvents: Int | Double = null,
-    monthResourceTableWidth: Int | Double = null,
+    minuteStep: js.UndefOr[Double] = js.undefined,
+    monthCellWidth: js.UndefOr[Double] = js.undefined,
+    monthMaxEvents: js.UndefOr[Double] = js.undefined,
+    monthResourceTableWidth: js.UndefOr[Double] = js.undefined,
     movable: js.UndefOr[Boolean] = js.undefined,
-    nonAgendaSlotMinHeight: Int | Double = null,
+    nonAgendaSlotMinHeight: js.UndefOr[Double] = js.undefined,
     nonWorkingTimeBodyBgColor: String = null,
     nonWorkingTimeHeadBgColor: String = null,
     nonWorkingTimeHeadColor: String = null,
-    quarterCellWidth: Int | Double = null,
-    quarterMaxEvents: Int | Double = null,
-    quarterResourceTableWidth: Int | Double = null,
+    quarterCellWidth: js.UndefOr[Double] = js.undefined,
+    quarterMaxEvents: js.UndefOr[Double] = js.undefined,
+    quarterResourceTableWidth: js.UndefOr[Double] = js.undefined,
     recurringEventsEnabled: js.UndefOr[Boolean] = js.undefined,
     relativeMove: js.UndefOr[Boolean] = js.undefined,
     resourceName: String = null,
-    schedulerMaxHeight: Int | Double = null,
+    schedulerMaxHeight: js.UndefOr[Double] = js.undefined,
     schedulerWidth: Double | String = null,
     scrollToSpecialMomentEnabled: js.UndefOr[Boolean] = js.undefined,
     selectedAreaColor: String = null,
     startResizable: js.UndefOr[Boolean] = js.undefined,
     summaryColor: String = null,
     summaryPos: SummaryPos = null,
-    tableHeaderHeight: Int | Double = null,
+    tableHeaderHeight: js.UndefOr[Double] = js.undefined,
     views: js.Array[View] = null,
-    weekCellWidth: Int | Double = null,
-    weekMaxEvents: Int | Double = null,
-    weekResourceTableWidth: Int | Double = null,
-    yearCellWidth: Int | Double = null,
-    yearMaxEvents: Int | Double = null,
-    yearResourceTableWidth: Int | Double = null
+    weekCellWidth: js.UndefOr[Double] = js.undefined,
+    weekMaxEvents: js.UndefOr[Double] = js.undefined,
+    weekResourceTableWidth: js.UndefOr[Double] = js.undefined,
+    yearCellWidth: js.UndefOr[Double] = js.undefined,
+    yearMaxEvents: js.UndefOr[Double] = js.undefined,
+    yearResourceTableWidth: js.UndefOr[Double] = js.undefined
   ): SchedulerDataConfig = {
     val __obj = js.Dynamic.literal()
-    if (agendaMaxEventWidth != null) __obj.updateDynamic("agendaMaxEventWidth")(agendaMaxEventWidth.asInstanceOf[js.Any])
-    if (agendaResourceTableWidth != null) __obj.updateDynamic("agendaResourceTableWidth")(agendaResourceTableWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(calendarPopoverEnabled)) __obj.updateDynamic("calendarPopoverEnabled")(calendarPopoverEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(checkConflict)) __obj.updateDynamic("checkConflict")(checkConflict.asInstanceOf[js.Any])
-    if (!js.isUndefined(creatable)) __obj.updateDynamic("creatable")(creatable.asInstanceOf[js.Any])
-    if (!js.isUndefined(crossResourceMove)) __obj.updateDynamic("crossResourceMove")(crossResourceMove.asInstanceOf[js.Any])
-    if (dayCellWidth != null) __obj.updateDynamic("dayCellWidth")(dayCellWidth.asInstanceOf[js.Any])
-    if (dayMaxEvents != null) __obj.updateDynamic("dayMaxEvents")(dayMaxEvents.asInstanceOf[js.Any])
-    if (dayResourceTableWidth != null) __obj.updateDynamic("dayResourceTableWidth")(dayResourceTableWidth.asInstanceOf[js.Any])
-    if (dayStartFrom != null) __obj.updateDynamic("dayStartFrom")(dayStartFrom.asInstanceOf[js.Any])
-    if (dayStopTo != null) __obj.updateDynamic("dayStopTo")(dayStopTo.asInstanceOf[js.Any])
+    if (!js.isUndefined(agendaMaxEventWidth)) __obj.updateDynamic("agendaMaxEventWidth")(agendaMaxEventWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(agendaResourceTableWidth)) __obj.updateDynamic("agendaResourceTableWidth")(agendaResourceTableWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(calendarPopoverEnabled)) __obj.updateDynamic("calendarPopoverEnabled")(calendarPopoverEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkConflict)) __obj.updateDynamic("checkConflict")(checkConflict.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(creatable)) __obj.updateDynamic("creatable")(creatable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(crossResourceMove)) __obj.updateDynamic("crossResourceMove")(crossResourceMove.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dayCellWidth)) __obj.updateDynamic("dayCellWidth")(dayCellWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dayMaxEvents)) __obj.updateDynamic("dayMaxEvents")(dayMaxEvents.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dayResourceTableWidth)) __obj.updateDynamic("dayResourceTableWidth")(dayResourceTableWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dayStartFrom)) __obj.updateDynamic("dayStartFrom")(dayStartFrom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dayStopTo)) __obj.updateDynamic("dayStopTo")(dayStopTo.get.asInstanceOf[js.Any])
     if (defaultEventBgColor != null) __obj.updateDynamic("defaultEventBgColor")(defaultEventBgColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayWeekend)) __obj.updateDynamic("displayWeekend")(displayWeekend.asInstanceOf[js.Any])
-    if (!js.isUndefined(endResizable)) __obj.updateDynamic("endResizable")(endResizable.asInstanceOf[js.Any])
-    if (eventItemHeight != null) __obj.updateDynamic("eventItemHeight")(eventItemHeight.asInstanceOf[js.Any])
-    if (eventItemLineHeight != null) __obj.updateDynamic("eventItemLineHeight")(eventItemLineHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(eventItemPopoverEnabled)) __obj.updateDynamic("eventItemPopoverEnabled")(eventItemPopoverEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(headerEnabled)) __obj.updateDynamic("headerEnabled")(headerEnabled.asInstanceOf[js.Any])
-    if (minuteStep != null) __obj.updateDynamic("minuteStep")(minuteStep.asInstanceOf[js.Any])
-    if (monthCellWidth != null) __obj.updateDynamic("monthCellWidth")(monthCellWidth.asInstanceOf[js.Any])
-    if (monthMaxEvents != null) __obj.updateDynamic("monthMaxEvents")(monthMaxEvents.asInstanceOf[js.Any])
-    if (monthResourceTableWidth != null) __obj.updateDynamic("monthResourceTableWidth")(monthResourceTableWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(movable)) __obj.updateDynamic("movable")(movable.asInstanceOf[js.Any])
-    if (nonAgendaSlotMinHeight != null) __obj.updateDynamic("nonAgendaSlotMinHeight")(nonAgendaSlotMinHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayWeekend)) __obj.updateDynamic("displayWeekend")(displayWeekend.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(endResizable)) __obj.updateDynamic("endResizable")(endResizable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(eventItemHeight)) __obj.updateDynamic("eventItemHeight")(eventItemHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(eventItemLineHeight)) __obj.updateDynamic("eventItemLineHeight")(eventItemLineHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(eventItemPopoverEnabled)) __obj.updateDynamic("eventItemPopoverEnabled")(eventItemPopoverEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerEnabled)) __obj.updateDynamic("headerEnabled")(headerEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minuteStep)) __obj.updateDynamic("minuteStep")(minuteStep.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(monthCellWidth)) __obj.updateDynamic("monthCellWidth")(monthCellWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(monthMaxEvents)) __obj.updateDynamic("monthMaxEvents")(monthMaxEvents.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(monthResourceTableWidth)) __obj.updateDynamic("monthResourceTableWidth")(monthResourceTableWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(movable)) __obj.updateDynamic("movable")(movable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nonAgendaSlotMinHeight)) __obj.updateDynamic("nonAgendaSlotMinHeight")(nonAgendaSlotMinHeight.get.asInstanceOf[js.Any])
     if (nonWorkingTimeBodyBgColor != null) __obj.updateDynamic("nonWorkingTimeBodyBgColor")(nonWorkingTimeBodyBgColor.asInstanceOf[js.Any])
     if (nonWorkingTimeHeadBgColor != null) __obj.updateDynamic("nonWorkingTimeHeadBgColor")(nonWorkingTimeHeadBgColor.asInstanceOf[js.Any])
     if (nonWorkingTimeHeadColor != null) __obj.updateDynamic("nonWorkingTimeHeadColor")(nonWorkingTimeHeadColor.asInstanceOf[js.Any])
-    if (quarterCellWidth != null) __obj.updateDynamic("quarterCellWidth")(quarterCellWidth.asInstanceOf[js.Any])
-    if (quarterMaxEvents != null) __obj.updateDynamic("quarterMaxEvents")(quarterMaxEvents.asInstanceOf[js.Any])
-    if (quarterResourceTableWidth != null) __obj.updateDynamic("quarterResourceTableWidth")(quarterResourceTableWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(recurringEventsEnabled)) __obj.updateDynamic("recurringEventsEnabled")(recurringEventsEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(relativeMove)) __obj.updateDynamic("relativeMove")(relativeMove.asInstanceOf[js.Any])
+    if (!js.isUndefined(quarterCellWidth)) __obj.updateDynamic("quarterCellWidth")(quarterCellWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quarterMaxEvents)) __obj.updateDynamic("quarterMaxEvents")(quarterMaxEvents.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quarterResourceTableWidth)) __obj.updateDynamic("quarterResourceTableWidth")(quarterResourceTableWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(recurringEventsEnabled)) __obj.updateDynamic("recurringEventsEnabled")(recurringEventsEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(relativeMove)) __obj.updateDynamic("relativeMove")(relativeMove.get.asInstanceOf[js.Any])
     if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName.asInstanceOf[js.Any])
-    if (schedulerMaxHeight != null) __obj.updateDynamic("schedulerMaxHeight")(schedulerMaxHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(schedulerMaxHeight)) __obj.updateDynamic("schedulerMaxHeight")(schedulerMaxHeight.get.asInstanceOf[js.Any])
     if (schedulerWidth != null) __obj.updateDynamic("schedulerWidth")(schedulerWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollToSpecialMomentEnabled)) __obj.updateDynamic("scrollToSpecialMomentEnabled")(scrollToSpecialMomentEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollToSpecialMomentEnabled)) __obj.updateDynamic("scrollToSpecialMomentEnabled")(scrollToSpecialMomentEnabled.get.asInstanceOf[js.Any])
     if (selectedAreaColor != null) __obj.updateDynamic("selectedAreaColor")(selectedAreaColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(startResizable)) __obj.updateDynamic("startResizable")(startResizable.asInstanceOf[js.Any])
+    if (!js.isUndefined(startResizable)) __obj.updateDynamic("startResizable")(startResizable.get.asInstanceOf[js.Any])
     if (summaryColor != null) __obj.updateDynamic("summaryColor")(summaryColor.asInstanceOf[js.Any])
     if (summaryPos != null) __obj.updateDynamic("summaryPos")(summaryPos.asInstanceOf[js.Any])
-    if (tableHeaderHeight != null) __obj.updateDynamic("tableHeaderHeight")(tableHeaderHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(tableHeaderHeight)) __obj.updateDynamic("tableHeaderHeight")(tableHeaderHeight.get.asInstanceOf[js.Any])
     if (views != null) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])
-    if (weekCellWidth != null) __obj.updateDynamic("weekCellWidth")(weekCellWidth.asInstanceOf[js.Any])
-    if (weekMaxEvents != null) __obj.updateDynamic("weekMaxEvents")(weekMaxEvents.asInstanceOf[js.Any])
-    if (weekResourceTableWidth != null) __obj.updateDynamic("weekResourceTableWidth")(weekResourceTableWidth.asInstanceOf[js.Any])
-    if (yearCellWidth != null) __obj.updateDynamic("yearCellWidth")(yearCellWidth.asInstanceOf[js.Any])
-    if (yearMaxEvents != null) __obj.updateDynamic("yearMaxEvents")(yearMaxEvents.asInstanceOf[js.Any])
-    if (yearResourceTableWidth != null) __obj.updateDynamic("yearResourceTableWidth")(yearResourceTableWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(weekCellWidth)) __obj.updateDynamic("weekCellWidth")(weekCellWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(weekMaxEvents)) __obj.updateDynamic("weekMaxEvents")(weekMaxEvents.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(weekResourceTableWidth)) __obj.updateDynamic("weekResourceTableWidth")(weekResourceTableWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yearCellWidth)) __obj.updateDynamic("yearCellWidth")(yearCellWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yearMaxEvents)) __obj.updateDynamic("yearMaxEvents")(yearMaxEvents.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yearResourceTableWidth)) __obj.updateDynamic("yearResourceTableWidth")(yearResourceTableWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerDataConfig]
   }
 }

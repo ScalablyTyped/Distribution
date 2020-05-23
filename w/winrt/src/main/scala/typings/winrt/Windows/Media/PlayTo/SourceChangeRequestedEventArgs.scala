@@ -8,28 +8,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Media.PlayTo.SourceChangeRequestedEventArgs")
-@js.native
-class SourceChangeRequestedEventArgs () extends ISourceChangeRequestedEventArgs {
-  /* CompleteClass */
-  override var album: String = js.native
-  /* CompleteClass */
-  override var author: String = js.native
-  /* CompleteClass */
-  override var date: Date = js.native
-  /* CompleteClass */
-  override var description: String = js.native
-  /* CompleteClass */
-  override var genre: String = js.native
-  /* CompleteClass */
-  override var properties: IMapView[String, _] = js.native
-  /* CompleteClass */
-  override var rating: Double = js.native
-  /* CompleteClass */
-  override var stream: IRandomAccessStreamWithContentType = js.native
-  /* CompleteClass */
-  override var thumbnail: IRandomAccessStreamReference = js.native
-  /* CompleteClass */
-  override var title: String = js.native
+trait SourceChangeRequestedEventArgs extends ISourceChangeRequestedEventArgs
+
+object SourceChangeRequestedEventArgs {
+  @scala.inline
+  def apply(
+    album: String,
+    author: String,
+    date: Date,
+    description: String,
+    genre: String,
+    properties: IMapView[String, _],
+    rating: Double,
+    stream: IRandomAccessStreamWithContentType,
+    thumbnail: IRandomAccessStreamReference,
+    title: String
+  ): SourceChangeRequestedEventArgs = {
+    val __obj = js.Dynamic.literal(album = album.asInstanceOf[js.Any], author = author.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], genre = genre.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], rating = rating.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SourceChangeRequestedEventArgs]
+  }
 }
 

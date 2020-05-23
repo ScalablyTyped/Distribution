@@ -26,16 +26,16 @@ trait SerialOptions extends js.Object {
 object SerialOptions {
   @scala.inline
   def apply(
-    baudRate: Int | Double = null,
-    dataBits: Int | Double = null,
-    parity: Int | Double = null,
-    stopBits: Int | Double = null
+    baudRate: js.UndefOr[Double] = js.undefined,
+    dataBits: js.UndefOr[Double] = js.undefined,
+    parity: js.UndefOr[Double] = js.undefined,
+    stopBits: js.UndefOr[Double] = js.undefined
   ): SerialOptions = {
     val __obj = js.Dynamic.literal()
-    if (baudRate != null) __obj.updateDynamic("baudRate")(baudRate.asInstanceOf[js.Any])
-    if (dataBits != null) __obj.updateDynamic("dataBits")(dataBits.asInstanceOf[js.Any])
-    if (parity != null) __obj.updateDynamic("parity")(parity.asInstanceOf[js.Any])
-    if (stopBits != null) __obj.updateDynamic("stopBits")(stopBits.asInstanceOf[js.Any])
+    if (!js.isUndefined(baudRate)) __obj.updateDynamic("baudRate")(baudRate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataBits)) __obj.updateDynamic("dataBits")(dataBits.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(parity)) __obj.updateDynamic("parity")(parity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopBits)) __obj.updateDynamic("stopBits")(stopBits.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SerialOptions]
   }
 }

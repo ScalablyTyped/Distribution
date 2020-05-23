@@ -69,7 +69,7 @@ object IListObjectDef {
     val __obj = js.Dynamic.literal(qAutoSortByState = qAutoSortByState.asInstanceOf[js.Any], qDef = qDef.asInstanceOf[js.Any], qInitialDataFetch = qInitialDataFetch.asInstanceOf[js.Any], qLibraryId = qLibraryId.asInstanceOf[js.Any], qStateName = qStateName.asInstanceOf[js.Any])
     if (qExpressions != null) __obj.updateDynamic("qExpressions")(qExpressions.asInstanceOf[js.Any])
     if (qFrequencyMode != null) __obj.updateDynamic("qFrequencyMode")(qFrequencyMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(qShowAlternatives)) __obj.updateDynamic("qShowAlternatives")(qShowAlternatives.asInstanceOf[js.Any])
+    if (!js.isUndefined(qShowAlternatives)) __obj.updateDynamic("qShowAlternatives")(qShowAlternatives.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListObjectDef]
   }
 }

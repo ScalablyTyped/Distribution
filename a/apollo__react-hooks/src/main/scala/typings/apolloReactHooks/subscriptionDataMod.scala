@@ -1,6 +1,8 @@
 package typings.apolloReactHooks
 
 import typings.apolloReactCommon.typesMod.SubscriptionResult
+import typings.apolloReactHooks.anon.Data
+import typings.apolloReactHooks.anon.Options
 import typings.apolloReactHooks.operationDataMod.OperationData
 import typings.apolloReactHooks.typesMod.SubscriptionOptions
 import scala.scalajs.js
@@ -12,7 +14,7 @@ import scala.scalajs.js.annotation._
 object subscriptionDataMod extends js.Object {
   @js.native
   class SubscriptionData[TData, TVariables] protected () extends OperationData[SubscriptionOptions[TData, TVariables]] {
-    def this(hasOptionsContextSetResult: AnonOptions[TData, TVariables]) = this()
+    def this(hasOptionsContextSetResult: Options[TData, TVariables]) = this()
     var completeSubscription: js.Any = js.native
     var currentObservable: js.Any = js.native
     var endSubscription: js.Any = js.native
@@ -24,7 +26,7 @@ object subscriptionDataMod extends js.Object {
     var updateError: js.Any = js.native
     var updateResult: js.Any = js.native
     def afterExecute(): Unit = js.native
-    def execute(result: SubscriptionResult[TData]): AnonData[TVariables, TData] = js.native
+    def execute(result: SubscriptionResult[TData]): Data[TVariables, TData] = js.native
   }
   
 }

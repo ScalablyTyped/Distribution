@@ -20,7 +20,7 @@ object MUIDataTableHead {
   def apply(
     classes: js.Object = null,
     columns: js.Array[MUIDataTableColumnDef] = null,
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     data: js.Array[_] = null,
     options: js.Object = null,
     page: js.Any = null,
@@ -30,7 +30,7 @@ object MUIDataTableHead {
     val __obj = js.Dynamic.literal()
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])

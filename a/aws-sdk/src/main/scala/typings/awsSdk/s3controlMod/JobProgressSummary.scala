@@ -23,14 +23,14 @@ trait JobProgressSummary extends js.Object {
 object JobProgressSummary {
   @scala.inline
   def apply(
-    NumberOfTasksFailed: Int | Double = null,
-    NumberOfTasksSucceeded: Int | Double = null,
-    TotalNumberOfTasks: Int | Double = null
+    NumberOfTasksFailed: js.UndefOr[JobNumberOfTasksFailed] = js.undefined,
+    NumberOfTasksSucceeded: js.UndefOr[JobNumberOfTasksSucceeded] = js.undefined,
+    TotalNumberOfTasks: js.UndefOr[JobTotalNumberOfTasks] = js.undefined
   ): JobProgressSummary = {
     val __obj = js.Dynamic.literal()
-    if (NumberOfTasksFailed != null) __obj.updateDynamic("NumberOfTasksFailed")(NumberOfTasksFailed.asInstanceOf[js.Any])
-    if (NumberOfTasksSucceeded != null) __obj.updateDynamic("NumberOfTasksSucceeded")(NumberOfTasksSucceeded.asInstanceOf[js.Any])
-    if (TotalNumberOfTasks != null) __obj.updateDynamic("TotalNumberOfTasks")(TotalNumberOfTasks.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfTasksFailed)) __obj.updateDynamic("NumberOfTasksFailed")(NumberOfTasksFailed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfTasksSucceeded)) __obj.updateDynamic("NumberOfTasksSucceeded")(NumberOfTasksSucceeded.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalNumberOfTasks)) __obj.updateDynamic("TotalNumberOfTasks")(TotalNumberOfTasks.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobProgressSummary]
   }
 }

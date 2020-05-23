@@ -1,6 +1,6 @@
 package typings.jsmediatags.chunkedFileDataMod
 
-import typings.jsmediatags.AnonEndIx
+import typings.jsmediatags.anon.EndIx
 import typings.jsmediatags.typesMod.DataType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ class default () extends ChunkedFileData {
   /* CompleteClass */
   override def _concatData(dataA: DataType, dataB: DataType): DataType = js.native
   /* CompleteClass */
-  override def _getChunkRange(offsetStart: Double, offsetEnd: Double): AnonEndIx = js.native
+  override def _getChunkRange(offsetStart: Double, offsetEnd: Double): EndIx = js.native
   /* CompleteClass */
   override def _sliceData(data: DataType, begin: Double, end: Double): DataType = js.native
   /* CompleteClass */

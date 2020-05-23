@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-apps-script-oauth2
 
-Typings are for version 24.0
+Typings are for version 38.0
 
 
 

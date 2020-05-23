@@ -17,7 +17,7 @@ object ConcurrentOptions {
   @scala.inline
   def apply(enabled: js.UndefOr[Boolean] = js.undefined): ConcurrentOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConcurrentOptions]
   }
 }

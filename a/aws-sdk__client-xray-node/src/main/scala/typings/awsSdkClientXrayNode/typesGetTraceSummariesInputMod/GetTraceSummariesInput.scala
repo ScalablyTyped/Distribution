@@ -55,7 +55,7 @@ object GetTraceSummariesInput {
     StartTime: Date | String | Double,
     $abortSignal: AbortSignal = null,
     $httpOptions: NodeHttpOptions = null,
-    $maxRetries: Int | Double = null,
+    $maxRetries: js.UndefOr[Double] = js.undefined,
     FilterExpression: String = null,
     NextToken: String = null,
     Sampling: js.UndefOr[Boolean] = js.undefined
@@ -63,10 +63,10 @@ object GetTraceSummariesInput {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
     if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
     if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
-    if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined($maxRetries)) __obj.updateDynamic("$maxRetries")($maxRetries.get.asInstanceOf[js.Any])
     if (FilterExpression != null) __obj.updateDynamic("FilterExpression")(FilterExpression.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(Sampling)) __obj.updateDynamic("Sampling")(Sampling.asInstanceOf[js.Any])
+    if (!js.isUndefined(Sampling)) __obj.updateDynamic("Sampling")(Sampling.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTraceSummariesInput]
   }
 }

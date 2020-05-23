@@ -1,6 +1,6 @@
 package typings.tinymce.mod.ui
 
-import typings.jquery.JQuery_
+import typings.jquery.JQuery
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Control () extends js.Object {
   @JSName("$el")
-  var $el: JQuery_[HTMLElement] = js.native
+  var $el: JQuery[HTMLElement] = js.native
   var settings: ControlSettings = js.native
   def active(state: Boolean): Unit = js.native
   def disabled(state: Boolean): Unit = js.native

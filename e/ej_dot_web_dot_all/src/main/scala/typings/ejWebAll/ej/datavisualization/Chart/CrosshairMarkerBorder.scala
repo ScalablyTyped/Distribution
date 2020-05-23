@@ -13,9 +13,9 @@ trait CrosshairMarkerBorder extends js.Object {
 
 object CrosshairMarkerBorder {
   @scala.inline
-  def apply(width: Int | Double = null): CrosshairMarkerBorder = {
+  def apply(width: js.UndefOr[Double] = js.undefined): CrosshairMarkerBorder = {
     val __obj = js.Dynamic.literal()
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrosshairMarkerBorder]
   }
 }

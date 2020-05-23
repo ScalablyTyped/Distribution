@@ -14,7 +14,3 @@ trait Symbol extends js.Object {
   val toStringTag: java.lang.String = js.native
 }
 
-@JSGlobal("Symbol")
-@js.native
-object Symbol extends SymbolConstructor
-

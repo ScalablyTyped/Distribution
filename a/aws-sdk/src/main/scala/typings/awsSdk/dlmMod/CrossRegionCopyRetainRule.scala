@@ -18,9 +18,9 @@ trait CrossRegionCopyRetainRule extends js.Object {
 
 object CrossRegionCopyRetainRule {
   @scala.inline
-  def apply(Interval: Int | Double = null, IntervalUnit: RetentionIntervalUnitValues = null): CrossRegionCopyRetainRule = {
+  def apply(Interval: js.UndefOr[Interval] = js.undefined, IntervalUnit: RetentionIntervalUnitValues = null): CrossRegionCopyRetainRule = {
     val __obj = js.Dynamic.literal()
-    if (Interval != null) __obj.updateDynamic("Interval")(Interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(Interval)) __obj.updateDynamic("Interval")(Interval.get.asInstanceOf[js.Any])
     if (IntervalUnit != null) __obj.updateDynamic("IntervalUnit")(IntervalUnit.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrossRegionCopyRetainRule]
   }

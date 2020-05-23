@@ -1,6 +1,6 @@
 package typings.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 
-import typings.angularUiBootstrap.AnonDate
+import typings.angularUiBootstrap.anon.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -63,7 +63,7 @@ trait IDatepickerPopupConfig extends IDatepickerConfig {
   /**
     * Allows overriding of the default format for html5 date inputs.
     */
-  var html5Types: js.UndefOr[AnonDate] = js.undefined
+  var html5Types: js.UndefOr[Date] = js.undefined
   /**
     * Whether to focus the datepicker popup upon opening.
     *
@@ -105,29 +105,29 @@ object IDatepickerPopupConfig {
     formatMonth: String = null,
     formatMonthTitle: String = null,
     formatYear: String = null,
-    html5Types: AnonDate = null,
+    html5Types: Date = null,
     initDate: js.Any = null,
     maxDate: js.Any = null,
     maxMode: String = null,
     minDate: js.Any = null,
     minMode: String = null,
-    monthColumns: Int | Double = null,
+    monthColumns: js.UndefOr[Double] = js.undefined,
     ngModelOptions: IDropdownConfigNgOptions = null,
     onOpenFocus: js.UndefOr[Boolean] = js.undefined,
     placement: String = null,
     shortcutPropagation: js.UndefOr[Boolean] = js.undefined,
     showButtonBar: js.UndefOr[Boolean] = js.undefined,
     showWeeks: js.UndefOr[Boolean] = js.undefined,
-    startingDay: Int | Double = null,
-    yearColumns: Int | Double = null,
-    yearRange: Int | Double = null,
-    yearRows: Int | Double = null
+    startingDay: js.UndefOr[Double] = js.undefined,
+    yearColumns: js.UndefOr[Double] = js.undefined,
+    yearRange: js.UndefOr[Double] = js.undefined,
+    yearRows: js.UndefOr[Double] = js.undefined
   ): IDatepickerPopupConfig = {
     val __obj = js.Dynamic.literal()
     if (altInputFormats != null) __obj.updateDynamic("altInputFormats")(altInputFormats.asInstanceOf[js.Any])
-    if (!js.isUndefined(appendToBody)) __obj.updateDynamic("appendToBody")(appendToBody.asInstanceOf[js.Any])
+    if (!js.isUndefined(appendToBody)) __obj.updateDynamic("appendToBody")(appendToBody.get.asInstanceOf[js.Any])
     if (clearText != null) __obj.updateDynamic("clearText")(clearText.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnDateSelection)) __obj.updateDynamic("closeOnDateSelection")(closeOnDateSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnDateSelection)) __obj.updateDynamic("closeOnDateSelection")(closeOnDateSelection.get.asInstanceOf[js.Any])
     if (closeText != null) __obj.updateDynamic("closeText")(closeText.asInstanceOf[js.Any])
     if (currentText != null) __obj.updateDynamic("currentText")(currentText.asInstanceOf[js.Any])
     if (customClass != null) __obj.updateDynamic("customClass")(js.Any.fromFunction1(customClass))
@@ -148,17 +148,17 @@ object IDatepickerPopupConfig {
     if (maxMode != null) __obj.updateDynamic("maxMode")(maxMode.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
     if (minMode != null) __obj.updateDynamic("minMode")(minMode.asInstanceOf[js.Any])
-    if (monthColumns != null) __obj.updateDynamic("monthColumns")(monthColumns.asInstanceOf[js.Any])
+    if (!js.isUndefined(monthColumns)) __obj.updateDynamic("monthColumns")(monthColumns.get.asInstanceOf[js.Any])
     if (ngModelOptions != null) __obj.updateDynamic("ngModelOptions")(ngModelOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(onOpenFocus)) __obj.updateDynamic("onOpenFocus")(onOpenFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(onOpenFocus)) __obj.updateDynamic("onOpenFocus")(onOpenFocus.get.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (!js.isUndefined(shortcutPropagation)) __obj.updateDynamic("shortcutPropagation")(shortcutPropagation.asInstanceOf[js.Any])
-    if (!js.isUndefined(showButtonBar)) __obj.updateDynamic("showButtonBar")(showButtonBar.asInstanceOf[js.Any])
-    if (!js.isUndefined(showWeeks)) __obj.updateDynamic("showWeeks")(showWeeks.asInstanceOf[js.Any])
-    if (startingDay != null) __obj.updateDynamic("startingDay")(startingDay.asInstanceOf[js.Any])
-    if (yearColumns != null) __obj.updateDynamic("yearColumns")(yearColumns.asInstanceOf[js.Any])
-    if (yearRange != null) __obj.updateDynamic("yearRange")(yearRange.asInstanceOf[js.Any])
-    if (yearRows != null) __obj.updateDynamic("yearRows")(yearRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(shortcutPropagation)) __obj.updateDynamic("shortcutPropagation")(shortcutPropagation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showButtonBar)) __obj.updateDynamic("showButtonBar")(showButtonBar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showWeeks)) __obj.updateDynamic("showWeeks")(showWeeks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startingDay)) __obj.updateDynamic("startingDay")(startingDay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yearColumns)) __obj.updateDynamic("yearColumns")(yearColumns.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yearRange)) __obj.updateDynamic("yearRange")(yearRange.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yearRows)) __obj.updateDynamic("yearRows")(yearRows.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDatepickerPopupConfig]
   }
 }

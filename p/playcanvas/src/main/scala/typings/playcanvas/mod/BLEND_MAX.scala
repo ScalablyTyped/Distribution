@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.BLEND_MAX
-  * @type {number}
-  * @description Maximum color. Check app.graphicsDevice.extBlendMinmax for support.
+  * Maximum color. Check app.graphicsDevice.extBlendMinmax for support.
   */
 @JSImport("playcanvas", "BLEND_MAX")
 @js.native

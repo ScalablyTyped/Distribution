@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 trait LoadingOptions
   extends BaseOptions[js.Any, js.Any] {
   /**
-  		 * 是否显示透明蒙层，防止触摸穿透，默认：false
-  		 */
+    * 是否显示透明蒙层，防止触摸穿透，默认：false
+    */
   var mask: js.UndefOr[Boolean] = js.undefined
   /**
-  		 * 提示的内容
-  		 */
+    * 提示的内容
+    */
   var title: String
 }
 
@@ -28,7 +28,7 @@ object LoadingOptions {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
+    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask.get.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[LoadingOptions]
   }

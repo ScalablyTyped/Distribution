@@ -41,26 +41,26 @@ object ResizeEndEventArgs {
   @scala.inline
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
-    colIndex: Int | Double = null,
+    colIndex: js.UndefOr[Double] = js.undefined,
     model: js.Any = null,
-    newHeight: Int | Double = null,
-    newWidth: Int | Double = null,
-    oldHeight: Int | Double = null,
-    oldWidth: Int | Double = null,
+    newHeight: js.UndefOr[Double] = js.undefined,
+    newWidth: js.UndefOr[Double] = js.undefined,
+    oldHeight: js.UndefOr[Double] = js.undefined,
+    oldWidth: js.UndefOr[Double] = js.undefined,
     reqType: String = null,
-    rowIndex: Int | Double = null,
+    rowIndex: js.UndefOr[Double] = js.undefined,
     `type`: String = null
   ): ResizeEndEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (colIndex != null) __obj.updateDynamic("colIndex")(colIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(colIndex)) __obj.updateDynamic("colIndex")(colIndex.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (newHeight != null) __obj.updateDynamic("newHeight")(newHeight.asInstanceOf[js.Any])
-    if (newWidth != null) __obj.updateDynamic("newWidth")(newWidth.asInstanceOf[js.Any])
-    if (oldHeight != null) __obj.updateDynamic("oldHeight")(oldHeight.asInstanceOf[js.Any])
-    if (oldWidth != null) __obj.updateDynamic("oldWidth")(oldWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(newHeight)) __obj.updateDynamic("newHeight")(newHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(newWidth)) __obj.updateDynamic("newWidth")(newWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(oldHeight)) __obj.updateDynamic("oldHeight")(oldHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(oldWidth)) __obj.updateDynamic("oldWidth")(oldWidth.get.asInstanceOf[js.Any])
     if (reqType != null) __obj.updateDynamic("reqType")(reqType.asInstanceOf[js.Any])
-    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResizeEndEventArgs]
   }

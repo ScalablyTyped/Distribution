@@ -1,6 +1,7 @@
 package typings.apolloEngineReporting
 
 import typings.apolloEngineReporting.agentMod.EngineReportingOptions
+import typings.apolloEngineReporting.anon.RewriteError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ object mod extends js.Object {
   @js.native
   class EngineFederatedTracingExtension[TContext] protected ()
     extends typings.apolloEngineReporting.federatedExtensionMod.EngineFederatedTracingExtension[TContext] {
-    def this(options: AnonRewriteError) = this()
+    def this(options: RewriteError) = this()
   }
   
   @js.native

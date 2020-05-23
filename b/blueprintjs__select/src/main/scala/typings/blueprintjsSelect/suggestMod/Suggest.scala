@@ -1,7 +1,7 @@
 package typings.blueprintjsSelect.suggestMod
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.blueprintjsSelect.PartialISuggestPropsany
+import typings.blueprintjsSelect.anon.PartialISuggestPropsany
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +20,7 @@ class Suggest[T] ()
   var handlePopoverInteraction: js.Any = js.native
   var handlePopoverOpened: js.Any = js.native
   var handlePopoverOpening: js.Any = js.native
-  var input: js.Any = js.native
+  var inputEl: js.Any = js.native
   var maybeResetActiveItemToSelectedItem: js.Any = js.native
   var queryList: js.Any = js.native
   var refHandlers: js.Any = js.native

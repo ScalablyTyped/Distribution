@@ -1,6 +1,6 @@
 package typings.layuiLayer.layer
 
-import typings.jquery.JQuery_
+import typings.jquery.JQuery
 import typings.layuiLayer.layuiLayerBooleans.`false`
 import typings.layuiLayer.layuiLayerNumbers.`-1`
 import typings.layuiLayer.layuiLayerNumbers.`0`
@@ -53,28 +53,28 @@ trait Options extends js.Object {
   var btn: js.UndefOr[String | js.Array[String]] = js.undefined
   //#region 按钮1的回调是yes，而从按钮2开始，则回调为btn2: function(){}，以此类推。
   var btn2: js.UndefOr[
-    js.Function2[/* index */ Index, /* layero */ JQuery_[HTMLElement], `false` | Unit]
+    js.Function2[/* index */ Index, /* layero */ JQuery[HTMLElement], `false` | Unit]
   ] = js.undefined
   var btn3: js.UndefOr[
-    js.Function2[/* index */ Index, /* layero */ JQuery_[HTMLElement], `false` | Unit]
+    js.Function2[/* index */ Index, /* layero */ JQuery[HTMLElement], `false` | Unit]
   ] = js.undefined
   var btn4: js.UndefOr[
-    js.Function2[/* index */ Index, /* layero */ JQuery_[HTMLElement], `false` | Unit]
+    js.Function2[/* index */ Index, /* layero */ JQuery[HTMLElement], `false` | Unit]
   ] = js.undefined
   var btn5: js.UndefOr[
-    js.Function2[/* index */ Index, /* layero */ JQuery_[HTMLElement], `false` | Unit]
+    js.Function2[/* index */ Index, /* layero */ JQuery[HTMLElement], `false` | Unit]
   ] = js.undefined
   var btn6: js.UndefOr[
-    js.Function2[/* index */ Index, /* layero */ JQuery_[HTMLElement], `false` | Unit]
+    js.Function2[/* index */ Index, /* layero */ JQuery[HTMLElement], `false` | Unit]
   ] = js.undefined
   var btn7: js.UndefOr[
-    js.Function2[/* index */ Index, /* layero */ JQuery_[HTMLElement], `false` | Unit]
+    js.Function2[/* index */ Index, /* layero */ JQuery[HTMLElement], `false` | Unit]
   ] = js.undefined
   var btn8: js.UndefOr[
-    js.Function2[/* index */ Index, /* layero */ JQuery_[HTMLElement], `false` | Unit]
+    js.Function2[/* index */ Index, /* layero */ JQuery[HTMLElement], `false` | Unit]
   ] = js.undefined
   var btn9: js.UndefOr[
-    js.Function2[/* index */ Index, /* layero */ JQuery_[HTMLElement], `false` | Unit]
+    js.Function2[/* index */ Index, /* layero */ JQuery[HTMLElement], `false` | Unit]
   ] = js.undefined
   /**
     * 按钮排列
@@ -93,7 +93,7 @@ trait Options extends js.Object {
     * @description 默认会自动触发关闭。如果不想关闭，`return false`
     */
   var cancel: js.UndefOr[
-    js.Function2[/* index */ Index, /* layero */ JQuery_[HTMLElement], `false` | Unit]
+    js.Function2[/* index */ Index, /* layero */ JQuery[HTMLElement], `false` | Unit]
   ] = js.undefined
   /**
     * 关闭按钮
@@ -105,7 +105,7 @@ trait Options extends js.Object {
     * 内容
     * @default ''
     */
-  var content: js.UndefOr[String | HTMLElement | JQuery_[HTMLElement] | (js.Tuple2[String, String])] = js.undefined
+  var content: js.UndefOr[String | HTMLElement | JQuery[HTMLElement] | (js.Tuple2[String, String])] = js.undefined
   /**
     * 层销毁后触发的回调
     * @description 无论是确认还是取消，只要层被销毁了，end都会执行，不携带任何参数。
@@ -126,7 +126,7 @@ trait Options extends js.Object {
     * 最大化后触发的回调
     * @param layero 当前层DOM
     */
-  var full: js.UndefOr[js.Function1[/* layero */ JQuery_[HTMLElement], Unit]] = js.undefined
+  var full: js.UndefOr[js.Function1[/* layero */ JQuery[HTMLElement], Unit]] = js.undefined
   /**
     * 图标
     * 信息框和加载层的私有参数
@@ -168,18 +168,18 @@ trait Options extends js.Object {
     * @param layero 当前层DOM
     * @description `return false` 不执行默认最小化。
     */
-  var min: js.UndefOr[js.Function1[/* layero */ JQuery_[HTMLElement], `false` | Unit]] = js.undefined
+  var min: js.UndefOr[js.Function1[/* layero */ JQuery[HTMLElement], `false` | Unit]] = js.undefined
   /**
     * 触发拖动的元素
     * @default '.layui-layer-title'
     */
-  var move: js.UndefOr[Selector | `false` | JQuery_[HTMLElement]] = js.undefined
+  var move: js.UndefOr[Selector | `false` | JQuery[HTMLElement]] = js.undefined
   /**
     * 拖动完毕后的回调方法
     * @param this 合并的选项
     * @param layero 当前层的DOM对象
     */
-  var moveEnd: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* layero */ JQuery_[HTMLElement], Unit]] = js.undefined
+  var moveEnd: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* layero */ JQuery[HTMLElement], Unit]] = js.undefined
   /**
     * 是否允许拖拽到窗口外
     * @default false
@@ -217,12 +217,12 @@ trait Options extends js.Object {
     * 监听窗口拉伸动作
     * @param layero 当前层的DOM对象
     */
-  var resizing: js.UndefOr[js.Function1[/* layero */ JQuery_[HTMLElement], Unit]] = js.undefined
+  var resizing: js.UndefOr[js.Function1[/* layero */ JQuery[HTMLElement], Unit]] = js.undefined
   /**
     * 还原后触发的回调
     * @param layero 当前层DOM
     */
-  var restore: js.UndefOr[js.Function1[/* layero */ JQuery_[HTMLElement], Unit]] = js.undefined
+  var restore: js.UndefOr[js.Function1[/* layero */ JQuery[HTMLElement], Unit]] = js.undefined
   /**
     * 是否允许浏览器出现滚动条
     * @default true
@@ -255,7 +255,7 @@ trait Options extends js.Object {
     * @param layero 当前层DOM
     * @param index 当前层索引
     */
-  var success: js.UndefOr[js.Function2[/* layero */ JQuery_[HTMLElement], /* index */ Index, Unit]] = js.undefined
+  var success: js.UndefOr[js.Function2[/* layero */ JQuery[HTMLElement], /* index */ Index, Unit]] = js.undefined
   /**
     * 自动关闭所需毫秒
     * @default 0 //不会自动关闭
@@ -299,7 +299,7 @@ trait Options extends js.Object {
     * @param layero 当前层DOM对象
     * @description 如果设定了yes回调，需进行手工关闭，`close(index)`
     */
-  var yes: js.UndefOr[js.Function2[/* index */ Index, /* layero */ JQuery_[HTMLElement], Unit]] = js.undefined
+  var yes: js.UndefOr[js.Function2[/* index */ Index, /* layero */ JQuery[HTMLElement], Unit]] = js.undefined
   /**
     * 层叠顺序
     * @default 19891014
@@ -314,50 +314,50 @@ object Options {
     anim: `-1` | `0` | `1` | `2` | `3` | `4` | `5` | `6` = null,
     area: String | (js.Tuple2[String, String]) = null,
     btn: String | js.Array[String] = null,
-    btn2: (/* index */ Index, /* layero */ JQuery_[HTMLElement]) => `false` | Unit = null,
-    btn3: (/* index */ Index, /* layero */ JQuery_[HTMLElement]) => `false` | Unit = null,
-    btn4: (/* index */ Index, /* layero */ JQuery_[HTMLElement]) => `false` | Unit = null,
-    btn5: (/* index */ Index, /* layero */ JQuery_[HTMLElement]) => `false` | Unit = null,
-    btn6: (/* index */ Index, /* layero */ JQuery_[HTMLElement]) => `false` | Unit = null,
-    btn7: (/* index */ Index, /* layero */ JQuery_[HTMLElement]) => `false` | Unit = null,
-    btn8: (/* index */ Index, /* layero */ JQuery_[HTMLElement]) => `false` | Unit = null,
-    btn9: (/* index */ Index, /* layero */ JQuery_[HTMLElement]) => `false` | Unit = null,
+    btn2: (/* index */ Index, /* layero */ JQuery[HTMLElement]) => `false` | Unit = null,
+    btn3: (/* index */ Index, /* layero */ JQuery[HTMLElement]) => `false` | Unit = null,
+    btn4: (/* index */ Index, /* layero */ JQuery[HTMLElement]) => `false` | Unit = null,
+    btn5: (/* index */ Index, /* layero */ JQuery[HTMLElement]) => `false` | Unit = null,
+    btn6: (/* index */ Index, /* layero */ JQuery[HTMLElement]) => `false` | Unit = null,
+    btn7: (/* index */ Index, /* layero */ JQuery[HTMLElement]) => `false` | Unit = null,
+    btn8: (/* index */ Index, /* layero */ JQuery[HTMLElement]) => `false` | Unit = null,
+    btn9: (/* index */ Index, /* layero */ JQuery[HTMLElement]) => `false` | Unit = null,
     btnAlign: l | c | r = null,
-    cancel: (/* index */ Index, /* layero */ JQuery_[HTMLElement]) => `false` | Unit = null,
+    cancel: (/* index */ Index, /* layero */ JQuery[HTMLElement]) => `false` | Unit = null,
     closeBtn: `0` | `1` | `2` = null,
-    content: String | HTMLElement | JQuery_[HTMLElement] | (js.Tuple2[String, String]) = null,
+    content: String | HTMLElement | JQuery[HTMLElement] | (js.Tuple2[String, String]) = null,
     end: () => Unit = null,
     fix: js.UndefOr[Boolean] = js.undefined,
     fixed: js.UndefOr[Boolean] = js.undefined,
-    full: /* layero */ JQuery_[HTMLElement] => Unit = null,
-    icon: Int | Double = null,
+    full: /* layero */ JQuery[HTMLElement] => Unit = null,
+    icon: js.UndefOr[Double] = js.undefined,
     id: String = null,
     isOutAnim: js.UndefOr[Boolean] = js.undefined,
-    maxHeight: Int | Double = null,
-    maxWidth: Int | Double = null,
+    maxHeight: js.UndefOr[Double] = js.undefined,
+    maxWidth: js.UndefOr[Double] = js.undefined,
     maxmin: js.UndefOr[Boolean] = js.undefined,
-    min: /* layero */ JQuery_[HTMLElement] => `false` | Unit = null,
-    move: Selector | `false` | JQuery_[HTMLElement] = null,
-    moveEnd: js.ThisFunction1[Options, /* layero */ JQuery_[HTMLElement], Unit] = null,
+    min: /* layero */ JQuery[HTMLElement] => `false` | Unit = null,
+    move: Selector | `false` | JQuery[HTMLElement] = null,
+    moveEnd: js.ThisFunction1[Options, /* layero */ JQuery[HTMLElement], Unit] = null,
     moveOut: js.UndefOr[Boolean] = js.undefined,
-    moveType: Int | Double = null,
+    moveType: js.UndefOr[Double] = js.undefined,
     offset: String | (js.Tuple2[String, String]) = null,
     resize: js.UndefOr[Boolean] = js.undefined,
-    resizing: /* layero */ JQuery_[HTMLElement] => Unit = null,
-    restore: /* layero */ JQuery_[HTMLElement] => Unit = null,
+    resizing: /* layero */ JQuery[HTMLElement] => Unit = null,
+    restore: /* layero */ JQuery[HTMLElement] => Unit = null,
     scrollbar: js.UndefOr[Boolean] = js.undefined,
     shade: Double | `false` | (js.Tuple2[Double, String]) = null,
     shadeClose: js.UndefOr[Boolean] = js.undefined,
-    shift: Int | Double = null,
+    shift: js.UndefOr[Double] = js.undefined,
     skin: String = null,
-    success: (/* layero */ JQuery_[HTMLElement], /* index */ Index) => Unit = null,
-    time: Int | Double = null,
+    success: (/* layero */ JQuery[HTMLElement], /* index */ Index) => Unit = null,
+    time: js.UndefOr[Double] = js.undefined,
     tips: Double | (js.Tuple2[Double, String]) = null,
     tipsMore: js.UndefOr[Boolean] = js.undefined,
     title: String | `false` | (js.Tuple2[String, String]) = null,
     `type`: `3` | `2` | `4` | `0` | `1` = null,
-    yes: (/* index */ Index, /* layero */ JQuery_[HTMLElement]) => Unit = null,
-    zIndex: Int | Double = null
+    yes: (/* index */ Index, /* layero */ JQuery[HTMLElement]) => Unit = null,
+    zIndex: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (anim != null) __obj.updateDynamic("anim")(anim.asInstanceOf[js.Any])
@@ -376,37 +376,37 @@ object Options {
     if (closeBtn != null) __obj.updateDynamic("closeBtn")(closeBtn.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(js.Any.fromFunction0(end))
-    if (!js.isUndefined(fix)) __obj.updateDynamic("fix")(fix.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
+    if (!js.isUndefined(fix)) __obj.updateDynamic("fix")(fix.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.get.asInstanceOf[js.Any])
     if (full != null) __obj.updateDynamic("full")(js.Any.fromFunction1(full))
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOutAnim)) __obj.updateDynamic("isOutAnim")(isOutAnim.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxmin)) __obj.updateDynamic("maxmin")(maxmin.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOutAnim)) __obj.updateDynamic("isOutAnim")(isOutAnim.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxmin)) __obj.updateDynamic("maxmin")(maxmin.get.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(js.Any.fromFunction1(min))
     if (move != null) __obj.updateDynamic("move")(move.asInstanceOf[js.Any])
     if (moveEnd != null) __obj.updateDynamic("moveEnd")(moveEnd.asInstanceOf[js.Any])
-    if (!js.isUndefined(moveOut)) __obj.updateDynamic("moveOut")(moveOut.asInstanceOf[js.Any])
-    if (moveType != null) __obj.updateDynamic("moveType")(moveType.asInstanceOf[js.Any])
+    if (!js.isUndefined(moveOut)) __obj.updateDynamic("moveOut")(moveOut.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(moveType)) __obj.updateDynamic("moveType")(moveType.get.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize.asInstanceOf[js.Any])
+    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize.get.asInstanceOf[js.Any])
     if (resizing != null) __obj.updateDynamic("resizing")(js.Any.fromFunction1(resizing))
     if (restore != null) __obj.updateDynamic("restore")(js.Any.fromFunction1(restore))
-    if (!js.isUndefined(scrollbar)) __obj.updateDynamic("scrollbar")(scrollbar.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollbar)) __obj.updateDynamic("scrollbar")(scrollbar.get.asInstanceOf[js.Any])
     if (shade != null) __obj.updateDynamic("shade")(shade.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadeClose)) __obj.updateDynamic("shadeClose")(shadeClose.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadeClose)) __obj.updateDynamic("shadeClose")(shadeClose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shift)) __obj.updateDynamic("shift")(shift.get.asInstanceOf[js.Any])
     if (skin != null) __obj.updateDynamic("skin")(skin.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction2(success))
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (!js.isUndefined(time)) __obj.updateDynamic("time")(time.get.asInstanceOf[js.Any])
     if (tips != null) __obj.updateDynamic("tips")(tips.asInstanceOf[js.Any])
-    if (!js.isUndefined(tipsMore)) __obj.updateDynamic("tipsMore")(tipsMore.asInstanceOf[js.Any])
+    if (!js.isUndefined(tipsMore)) __obj.updateDynamic("tipsMore")(tipsMore.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (yes != null) __obj.updateDynamic("yes")(js.Any.fromFunction2(yes))
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

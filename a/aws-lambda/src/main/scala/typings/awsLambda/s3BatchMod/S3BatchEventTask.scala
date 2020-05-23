@@ -14,8 +14,7 @@ trait S3BatchEventTask extends js.Object {
 object S3BatchEventTask {
   @scala.inline
   def apply(s3BucketArn: String, s3Key: String, taskId: String, s3VersionId: String = null): S3BatchEventTask = {
-    val __obj = js.Dynamic.literal(s3BucketArn = s3BucketArn.asInstanceOf[js.Any], s3Key = s3Key.asInstanceOf[js.Any], taskId = taskId.asInstanceOf[js.Any])
-    if (s3VersionId != null) __obj.updateDynamic("s3VersionId")(s3VersionId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(s3BucketArn = s3BucketArn.asInstanceOf[js.Any], s3Key = s3Key.asInstanceOf[js.Any], taskId = taskId.asInstanceOf[js.Any], s3VersionId = s3VersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3BatchEventTask]
   }
 }

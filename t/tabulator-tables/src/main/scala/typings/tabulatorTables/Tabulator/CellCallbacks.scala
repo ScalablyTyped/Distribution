@@ -1,5 +1,6 @@
 package typings.tabulatorTables.Tabulator
 
+import typings.std.UIEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,20 +41,20 @@ trait CellCallbacks extends js.Object {
 object CellCallbacks {
   @scala.inline
   def apply(
-    cellClick: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
-    cellContext: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
-    cellDblClick: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
-    cellDblTap: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
+    cellClick: (/* e */ UIEvent, /* cell */ CellComponent) => Unit = null,
+    cellContext: (/* e */ UIEvent, /* cell */ CellComponent) => Unit = null,
+    cellDblClick: (/* e */ UIEvent, /* cell */ CellComponent) => Unit = null,
+    cellDblTap: (/* e */ UIEvent, /* cell */ CellComponent) => Unit = null,
     cellEditCancelled: /* cell */ CellComponent => Unit = null,
     cellEdited: /* cell */ CellComponent => Unit = null,
     cellEditing: /* cell */ CellComponent => Unit = null,
-    cellMouseEnter: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
-    cellMouseLeave: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
-    cellMouseMove: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
-    cellMouseOut: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
-    cellMouseOver: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
-    cellTap: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
-    cellTapHold: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null
+    cellMouseEnter: (/* e */ UIEvent, /* cell */ CellComponent) => Unit = null,
+    cellMouseLeave: (/* e */ UIEvent, /* cell */ CellComponent) => Unit = null,
+    cellMouseMove: (/* e */ UIEvent, /* cell */ CellComponent) => Unit = null,
+    cellMouseOut: (/* e */ UIEvent, /* cell */ CellComponent) => Unit = null,
+    cellMouseOver: (/* e */ UIEvent, /* cell */ CellComponent) => Unit = null,
+    cellTap: (/* e */ UIEvent, /* cell */ CellComponent) => Unit = null,
+    cellTapHold: (/* e */ UIEvent, /* cell */ CellComponent) => Unit = null
   ): CellCallbacks = {
     val __obj = js.Dynamic.literal()
     if (cellClick != null) __obj.updateDynamic("cellClick")(js.Any.fromFunction2(cellClick))

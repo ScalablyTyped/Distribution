@@ -1,6 +1,6 @@
 package typings.nano.mod
 
-import typings.nano.AnonDoc
+import typings.nano.anon.Doc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait DocumentSearchResponse[V] extends js.Object {
   // facet range results
   var ranges: js.UndefOr[js.Object] = js.undefined
   //  Array of search results
-  var rows: js.Array[AnonDoc[V]]
+  var rows: js.Array[Doc[V]]
   // Number of documents in the search resykts
   var total_rows: Double
 }
@@ -23,7 +23,7 @@ object DocumentSearchResponse {
   @scala.inline
   def apply[V](
     bookmark: String,
-    rows: js.Array[AnonDoc[V]],
+    rows: js.Array[Doc[V]],
     total_rows: Double,
     counts: js.Object = null,
     highlights: js.Object = null,

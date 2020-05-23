@@ -4,13 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.PostProcessRenderPipelineManager")
 @js.native
-/**
-  * Initializes a PostProcessRenderPipelineManager
-  * @see https://doc.babylonjs.com/how_to/how_to_use_postprocessrenderpipeline
-  */
-class PostProcessRenderPipelineManager () extends js.Object {
+trait PostProcessRenderPipelineManager extends js.Object {
   var _renderPipelines: js.Any = js.native
   /** @hidden */
   def _rebuild(): Unit = js.native

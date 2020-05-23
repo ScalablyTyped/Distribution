@@ -45,7 +45,7 @@ object PlayerVars {
     controls: `0` | `1` | `2` = null,
     disablekb: `0` | `1` = null,
     enablejsapi: `0` | `1` = null,
-    end: Int | Double = null,
+    end: js.UndefOr[Double] = js.undefined,
     fs: `0` | `1` = null,
     hl: String = null,
     iv_load_policy: `1` | `3` = null,
@@ -58,7 +58,7 @@ object PlayerVars {
     playsinline: `0` | `1` = null,
     rel: `0` | `1` = null,
     showinfo: `0` | `1` = null,
-    start: Int | Double = null
+    start: js.UndefOr[Double] = js.undefined
   ): PlayerVars = {
     val __obj = js.Dynamic.literal()
     if (autoplay != null) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
@@ -67,7 +67,7 @@ object PlayerVars {
     if (controls != null) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
     if (disablekb != null) __obj.updateDynamic("disablekb")(disablekb.asInstanceOf[js.Any])
     if (enablejsapi != null) __obj.updateDynamic("enablejsapi")(enablejsapi.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
     if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
     if (hl != null) __obj.updateDynamic("hl")(hl.asInstanceOf[js.Any])
     if (iv_load_policy != null) __obj.updateDynamic("iv_load_policy")(iv_load_policy.asInstanceOf[js.Any])
@@ -80,7 +80,7 @@ object PlayerVars {
     if (playsinline != null) __obj.updateDynamic("playsinline")(playsinline.asInstanceOf[js.Any])
     if (rel != null) __obj.updateDynamic("rel")(rel.asInstanceOf[js.Any])
     if (showinfo != null) __obj.updateDynamic("showinfo")(showinfo.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayerVars]
   }
 }

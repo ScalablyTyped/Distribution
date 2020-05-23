@@ -14,15 +14,15 @@ trait WaitForOptions extends js.Object {
 object WaitForOptions {
   @scala.inline
   def apply(
-    interval: Int | Double = null,
+    interval: js.UndefOr[Double] = js.undefined,
     reverse: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     timeoutMsg: String = null
   ): WaitForOptions = {
     val __obj = js.Dynamic.literal()
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (timeoutMsg != null) __obj.updateDynamic("timeoutMsg")(timeoutMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[WaitForOptions]
   }

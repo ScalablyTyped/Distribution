@@ -7,26 +7,30 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientReportDesigner.CustomizeParameterLookUpSource and ASPxClientWebDocumentViewer.CustomizeParameterLookUpSource events.
   */
-@JSGlobal("ASPxClientCustomizeParameterLookUpSourceEventArgs")
-@js.native
-class ASPxClientCustomizeParameterLookUpSourceEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientCustomizeParameterLookUpSourceEventArgs class with the specified settings.
-    * @param parameter An IParameterDescriptor object that stores information about a parameter. This value is assigned to the ASPxClientCustomizeParameterLookUpSourceEventArgs.parameter property.
-    * @param items An array of IDisplayedValue objects that stores information about look-up parameter values. This value is assigned to the ASPxClientCustomizeParameterLookUpSourceEventArgs.items property.
-    */
-  def this(parameter: ASPxDesignerElementParameterDescriptor, items: js.Array[ASPxDesignerElementEditorItem]) = this()
+trait ASPxClientCustomizeParameterLookUpSourceEventArgs extends ASPxClientEventArgs {
   /**
     * Specifies the data source that provides look-up values for the parameter editor.
     */
-  var dataSource: js.Any = js.native
+  var dataSource: js.Any
   /**
     * Provides access to the collection of look-up parameter values.
     */
-  var items: js.Array[ASPxDesignerElementEditorItem] = js.native
+  var items: js.Array[ASPxDesignerElementEditorItem]
   /**
     * Provides access to an object that stores information about a parameter.
     */
-  var parameter: ASPxDesignerElementParameterDescriptor = js.native
+  var parameter: ASPxDesignerElementParameterDescriptor
+}
+
+object ASPxClientCustomizeParameterLookUpSourceEventArgs {
+  @scala.inline
+  def apply(
+    dataSource: js.Any,
+    items: js.Array[ASPxDesignerElementEditorItem],
+    parameter: ASPxDesignerElementParameterDescriptor
+  ): ASPxClientCustomizeParameterLookUpSourceEventArgs = {
+    val __obj = js.Dynamic.literal(dataSource = dataSource.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], parameter = parameter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientCustomizeParameterLookUpSourceEventArgs]
+  }
 }
 

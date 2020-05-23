@@ -52,7 +52,7 @@ object CacheNodeTypeSpecificParameter {
     ChangeType: ChangeType = null,
     DataType: String = null,
     Description: String = null,
-    IsModifiable: js.UndefOr[scala.Boolean] = js.undefined,
+    IsModifiable: js.UndefOr[Boolean] = js.undefined,
     MinimumEngineVersion: String = null,
     ParameterName: String = null,
     Source: String = null
@@ -63,7 +63,7 @@ object CacheNodeTypeSpecificParameter {
     if (ChangeType != null) __obj.updateDynamic("ChangeType")(ChangeType.asInstanceOf[js.Any])
     if (DataType != null) __obj.updateDynamic("DataType")(DataType.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsModifiable)) __obj.updateDynamic("IsModifiable")(IsModifiable.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsModifiable)) __obj.updateDynamic("IsModifiable")(IsModifiable.get.asInstanceOf[js.Any])
     if (MinimumEngineVersion != null) __obj.updateDynamic("MinimumEngineVersion")(MinimumEngineVersion.asInstanceOf[js.Any])
     if (ParameterName != null) __obj.updateDynamic("ParameterName")(ParameterName.asInstanceOf[js.Any])
     if (Source != null) __obj.updateDynamic("Source")(Source.asInstanceOf[js.Any])

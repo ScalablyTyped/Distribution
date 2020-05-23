@@ -11,20 +11,20 @@ import scala.scalajs.js.annotation._
   */
 trait TwitchExtAuthorized extends js.Object {
   /**
-  	 * Channel ID of the page where the extension is iframe embedded.
-  	 */
+    * Channel ID of the page where the extension is iframe embedded.
+    */
   var channelId: String
   /**
-  	 * Client ID of the extension.
-  	 */
+    * Client ID of the extension.
+    */
   var clientId: String
   /**
-  	 * JWT that should be passed to any EBS call for authentication.
-  	 */
+    * JWT that should be passed to any EBS call for authentication.
+    */
   var token: String
   /**
-  	 * Opaque user ID.
-  	 */
+    * Opaque user ID.
+    */
   var userId: String
 }
 

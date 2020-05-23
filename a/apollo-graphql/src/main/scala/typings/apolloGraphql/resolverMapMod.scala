@@ -1,6 +1,7 @@
 package typings.apolloGraphql
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.apolloGraphql.anon.Requires
 import typings.graphql.definitionMod.GraphQLFieldResolver
 import typings.graphql.mod.GraphQLScalarType
 import scala.scalajs.js
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation._
 object resolverMapMod extends js.Object {
   type GraphQLResolverMap[TContext] = StringDictionary[
     (StringDictionary[
-      AnonRequires[TContext] | Double | (GraphQLFieldResolver[js.Any, TContext, StringDictionary[js.Any]]) | String
+      Double | (GraphQLFieldResolver[js.Any, TContext, StringDictionary[js.Any]]) | Requires[TContext] | String
     ]) | GraphQLScalarType
   ]
 }

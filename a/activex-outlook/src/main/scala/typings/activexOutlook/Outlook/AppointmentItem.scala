@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Outlook.AppointmentItem")
 @js.native
-class AppointmentItem protected () extends js.Object {
+trait AppointmentItem extends js.Object {
   val Actions: typings.activexOutlook.Outlook.Actions = js.native
   var AllDayEvent: Boolean = js.native
   val Application: typings.activexOutlook.Outlook.Application = js.native

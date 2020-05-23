@@ -22,9 +22,13 @@ trait ListTemplatesRequest extends js.Object {
 
 object ListTemplatesRequest {
   @scala.inline
-  def apply(AwsAccountId: AwsAccountId, MaxResults: Int | scala.Double = null, NextToken: String = null): ListTemplatesRequest = {
+  def apply(
+    AwsAccountId: AwsAccountId,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    NextToken: String = null
+  ): ListTemplatesRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTemplatesRequest]
   }

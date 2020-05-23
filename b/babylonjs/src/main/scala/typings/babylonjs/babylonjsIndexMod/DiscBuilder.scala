@@ -1,6 +1,6 @@
 package typings.babylonjs.babylonjsIndexMod
 
-import typings.babylonjs.AnonTessellation
+import typings.babylonjs.anon.Tessellation
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
@@ -30,7 +30,7 @@ object DiscBuilder extends js.Object {
     * @returns the plane polygonal mesh
     * @see https://doc.babylonjs.com/how_to/set_shapes#disc-or-regular-polygon
     */
-  def CreateDisc(name: String, options: AnonTessellation): typings.babylonjs.meshMod.Mesh = js.native
-  def CreateDisc(name: String, options: AnonTessellation, scene: Nullable[Scene]): typings.babylonjs.meshMod.Mesh = js.native
+  def CreateDisc(name: String, options: Tessellation): typings.babylonjs.meshMod.Mesh = js.native
+  def CreateDisc(name: String, options: Tessellation, scene: Nullable[Scene]): typings.babylonjs.meshMod.Mesh = js.native
 }
 

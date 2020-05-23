@@ -10,49 +10,49 @@ import scala.scalajs.js.annotation._
 
 trait IModifier extends IBase {
   /** [Method] Returns the value of next
-  		* @returns Ext.draw.modifier.Modifier
-  		*/
+    * @returns Ext.draw.modifier.Modifier
+    */
   var getNext: js.UndefOr[js.Function0[this.type]] = js.undefined
   /** [Method] Returns the value of previous
-  		* @returns Ext.draw.modifier.Modifier
-  		*/
+    * @returns Ext.draw.modifier.Modifier
+    */
   var getPrevious: js.UndefOr[js.Function0[this.type]] = js.undefined
   /** [Method] Returns the value of sprite
-  		* @returns Ext.draw.sprite.Sprite
-  		*/
+    * @returns Ext.draw.sprite.Sprite
+    */
   var getSprite: js.UndefOr[js.Function0[ISprite]] = js.undefined
   /** [Config Option] (Ext.draw.modifier.Modifier) */
   var next: js.UndefOr[IModifier] = js.undefined
   /** [Method] Invoked when changes need to be popped up to the top
-  		* @param attributes Object The source attributes.
-  		* @param changes Object The changes to be popped up.
-  		*/
+    * @param attributes Object The source attributes.
+    * @param changes Object The changes to be popped up.
+    */
   var popUp: js.UndefOr[
     js.Function2[/* attributes */ js.UndefOr[js.Any], /* changes */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Method] Validate attribute set before use
-  		* @param attr Object The attribute to be validated. Note that it may be already initialized, so do not override properties that have already been used.
-  		*/
+    * @param attr Object The attribute to be validated. Note that it may be already initialized, so do not override properties that have already been used.
+    */
   var prepareAttributes: js.UndefOr[js.Function1[/* attr */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Ext.draw.modifier.Modifier) */
   var previous: js.UndefOr[IModifier] = js.undefined
   /** [Method] Invoked when changes need to be pushed down to the sprite
-  		* @param attr Object The source attributes.
-  		* @param changes Object The changes to make. This object might be changed unexpectedly inside the method.
-  		* @returns Mixed
-  		*/
+    * @param attr Object The source attributes.
+    * @param changes Object The changes to make. This object might be changed unexpectedly inside the method.
+    * @returns Mixed
+    */
   var pushDown: js.UndefOr[js.Function2[/* attr */ js.UndefOr[js.Any], /* changes */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Sets the value of next
-  		* @param next Ext.draw.modifier.Modifier The new value.
-  		*/
+    * @param next Ext.draw.modifier.Modifier The new value.
+    */
   var setNext: js.UndefOr[js.Function1[/* next */ js.UndefOr[this.type], Unit]] = js.undefined
   /** [Method] Sets the value of previous
-  		* @param previous Ext.draw.modifier.Modifier The new value.
-  		*/
+    * @param previous Ext.draw.modifier.Modifier The new value.
+    */
   var setPrevious: js.UndefOr[js.Function1[/* previous */ js.UndefOr[this.type], Unit]] = js.undefined
   /** [Method] Sets the value of sprite
-  		* @param sprite Ext.draw.sprite.Sprite The new value.
-  		*/
+    * @param sprite Ext.draw.sprite.Sprite The new value.
+    */
   var setSprite: js.UndefOr[js.Function1[/* sprite */ js.UndefOr[ISprite], Unit]] = js.undefined
   /** [Config Option] (Ext.draw.sprite.Sprite) */
   var sprite: js.UndefOr[ISprite] = js.undefined
@@ -117,7 +117,7 @@ object IModifier {
     if (setNext != null) __obj.updateDynamic("setNext")(js.Any.fromFunction1(setNext))
     if (setPrevious != null) __obj.updateDynamic("setPrevious")(js.Any.fromFunction1(setPrevious))
     if (setSprite != null) __obj.updateDynamic("setSprite")(js.Any.fromFunction1(setSprite))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (sprite != null) __obj.updateDynamic("sprite")(sprite.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])

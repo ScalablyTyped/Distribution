@@ -1,6 +1,6 @@
 package typings.reactVirtualized.esCellMeasurerMod
 
-import typings.reactVirtualized.AnonIndex
+import typings.reactVirtualized.anon.Index
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ class CellMeasurerCache () extends CellMeasurerCacheInterface {
   val defaultWidth: Double = js.native
   def clear(rowIndex: Double, columnIndex: Double): Unit = js.native
   def clearAll(): Unit = js.native
-  def columnWidth(params: AnonIndex): Double = js.native
-  def rowHeight(params: AnonIndex): Double = js.native
+  def columnWidth(params: Index): Double = js.native
+  def rowHeight(params: Index): Double = js.native
 }
 

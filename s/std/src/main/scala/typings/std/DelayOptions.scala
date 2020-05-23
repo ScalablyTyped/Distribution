@@ -12,18 +12,18 @@ trait DelayOptions extends AudioNodeOptions {
 object DelayOptions {
   @scala.inline
   def apply(
-    channelCount: Int | Double = null,
+    channelCount: js.UndefOr[Double] = js.undefined,
     channelCountMode: ChannelCountMode = null,
     channelInterpretation: ChannelInterpretation = null,
-    delayTime: Int | Double = null,
-    maxDelayTime: Int | Double = null
+    delayTime: js.UndefOr[Double] = js.undefined,
+    maxDelayTime: js.UndefOr[Double] = js.undefined
   ): DelayOptions = {
     val __obj = js.Dynamic.literal()
-    if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(channelCount)) __obj.updateDynamic("channelCount")(channelCount.get.asInstanceOf[js.Any])
     if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
     if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
-    if (delayTime != null) __obj.updateDynamic("delayTime")(delayTime.asInstanceOf[js.Any])
-    if (maxDelayTime != null) __obj.updateDynamic("maxDelayTime")(maxDelayTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayTime)) __obj.updateDynamic("delayTime")(delayTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDelayTime)) __obj.updateDynamic("maxDelayTime")(maxDelayTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DelayOptions]
   }
 }

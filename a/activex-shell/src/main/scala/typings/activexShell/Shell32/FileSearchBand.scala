@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** FileSearchBand Class */
-@JSGlobal("Shell32.FileSearchBand")
 @js.native
-class FileSearchBand protected () extends js.Object {
+trait FileSearchBand extends js.Object {
   /** Retrieve the file from which the search was restored. */
   val QueryFile: js.Any = js.native
   /** Get the search scope */

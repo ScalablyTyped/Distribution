@@ -10,21 +10,21 @@ import scala.scalajs.js.annotation._
   */
 trait textFieldSelectedParams extends js.Object {
   /**
-  	 * Number of characters selected.
-  	 */
+    * Number of characters selected.
+    */
   var length: js.UndefOr[Double] = js.undefined
   /**
-  	 * Starting position of selected text.
-  	 */
+    * Starting position of selected text.
+    */
   var location: js.UndefOr[Double] = js.undefined
 }
 
 object textFieldSelectedParams {
   @scala.inline
-  def apply(length: Int | Double = null, location: Int | Double = null): textFieldSelectedParams = {
+  def apply(length: js.UndefOr[Double] = js.undefined, location: js.UndefOr[Double] = js.undefined): textFieldSelectedParams = {
     val __obj = js.Dynamic.literal()
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(location)) __obj.updateDynamic("location")(location.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[textFieldSelectedParams]
   }
 }

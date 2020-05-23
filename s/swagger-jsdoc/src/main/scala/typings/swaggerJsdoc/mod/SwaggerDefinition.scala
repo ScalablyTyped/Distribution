@@ -18,7 +18,7 @@ object SwaggerDefinition {
   @scala.inline
   def apply(
     info: ApiInformation,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     basePath: String = null,
     host: String = null,
     openapi: String = null,

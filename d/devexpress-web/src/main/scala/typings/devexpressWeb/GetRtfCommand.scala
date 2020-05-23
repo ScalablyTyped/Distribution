@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A command to receive a document's content in RTF format.
   */
-@JSGlobal("GetRtfCommand")
 @js.native
-class GetRtfCommand () extends CommandWithSimpleStateBase {
+trait GetRtfCommand extends CommandWithSimpleStateBase {
   /**
     * Executes the GetRtfCommand command with the specified parameters. true if the command has been successfully executed; false if the command execution has failed.
     * @param interval An object specifying the required interval in the specified sub-document.

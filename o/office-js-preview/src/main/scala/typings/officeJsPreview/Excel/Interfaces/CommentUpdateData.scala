@@ -8,17 +8,16 @@ import scala.scalajs.js.annotation._
 trait CommentUpdateData extends js.Object {
   /**
     *
-    * Gets or sets the comment's content. The string is plain text.
+    * The comment's content. The string is plain text.
     *
     * [Api set: ExcelApi 1.10]
     */
   var content: js.UndefOr[String] = js.undefined
   /**
     *
-    * Gets or sets the comment thread status. A value of "true" means the comment thread is in the resolved state.
+    * The comment thread status. A value of "true" means the comment thread is resolved.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.11]
     */
   var resolved: js.UndefOr[Boolean] = js.undefined
 }
@@ -28,7 +27,7 @@ object CommentUpdateData {
   def apply(content: String = null, resolved: js.UndefOr[Boolean] = js.undefined): CommentUpdateData = {
     val __obj = js.Dynamic.literal()
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(resolved)) __obj.updateDynamic("resolved")(resolved.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolved)) __obj.updateDynamic("resolved")(resolved.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentUpdateData]
   }
 }

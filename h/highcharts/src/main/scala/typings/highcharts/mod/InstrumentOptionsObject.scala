@@ -43,14 +43,14 @@ object InstrumentOptionsObject {
     allowedFrequencies: js.Array[Double] = null,
     id: String = null,
     oscillator: typings.highcharts.sonificationMod.highchartsAugmentingMod.OscillatorOptionsObject = null,
-    playCallbackInterval: Int | Double = null,
+    playCallbackInterval: js.UndefOr[Double] = js.undefined,
     `type`: String = null
   ): InstrumentOptionsObject = {
     val __obj = js.Dynamic.literal()
     if (allowedFrequencies != null) __obj.updateDynamic("allowedFrequencies")(allowedFrequencies.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (oscillator != null) __obj.updateDynamic("oscillator")(oscillator.asInstanceOf[js.Any])
-    if (playCallbackInterval != null) __obj.updateDynamic("playCallbackInterval")(playCallbackInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(playCallbackInterval)) __obj.updateDynamic("playCallbackInterval")(playCallbackInterval.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstrumentOptionsObject]
   }

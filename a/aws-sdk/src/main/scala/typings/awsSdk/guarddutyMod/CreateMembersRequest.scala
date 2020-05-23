@@ -11,7 +11,7 @@ trait CreateMembersRequest extends js.Object {
     */
   var AccountDetails: typings.awsSdk.guarddutyMod.AccountDetails = js.native
   /**
-    * The unique ID of the detector of the GuardDuty account with which you want to associate member accounts.
+    * The unique ID of the detector of the GuardDuty account that you want to associate member accounts with.
     */
   var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
 }

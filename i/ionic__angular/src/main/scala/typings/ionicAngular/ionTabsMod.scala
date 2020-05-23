@@ -1,6 +1,7 @@
 package typings.ionicAngular
 
 import typings.angularCore.mod.EventEmitter
+import typings.ionicAngular.anon.Tab
 import typings.ionicAngular.ionRouterOutletMod.IonRouterOutlet
 import typings.ionicAngular.navControllerMod.NavController
 import typings.ionicAngular.proxiesMod.IonTabBar
@@ -15,8 +16,8 @@ object ionTabsMod extends js.Object {
   @js.native
   class IonTabs protected () extends js.Object {
     def this(navCtrl: NavController) = this()
-    var ionTabsDidChange: EventEmitter[AnonTab] = js.native
-    var ionTabsWillChange: EventEmitter[AnonTab] = js.native
+    var ionTabsDidChange: EventEmitter[Tab] = js.native
+    var ionTabsWillChange: EventEmitter[Tab] = js.native
     var navCtrl: js.Any = js.native
     var outlet: IonRouterOutlet = js.native
     var tabBar: js.UndefOr[IonTabBar] = js.native

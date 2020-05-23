@@ -1,6 +1,6 @@
 package typings.multimap.mod
 
-import typings.multimap.AnonIterator
+import typings.multimap.anon.Iterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,7 +45,7 @@ trait Multimap extends js.Object {
   /**
     * @return all the keys in the map
     */
-  def keys(): AnonIterator = js.native
+  def keys(): Iterator = js.native
   /**
     * @param key
     * @param val
@@ -54,6 +54,6 @@ trait Multimap extends js.Object {
   /**
     * @return all the values in the map
     */
-  def values(): AnonIterator = js.native
+  def values(): Iterator = js.native
 }
 

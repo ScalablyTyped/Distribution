@@ -2,7 +2,7 @@ package typings.ionicAngular
 
 import typings.ionicAngular.overlayMod.OverlayBaseController
 import typings.ionicCore.alertInterfaceMod.AlertOptions
-import typings.ionicCore.componentsMod._Global_.HTMLIonAlertElement
+import typings.ionicCore.componentsMod.global.HTMLIonAlertElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

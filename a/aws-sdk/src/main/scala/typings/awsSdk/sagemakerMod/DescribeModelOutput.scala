@@ -48,13 +48,13 @@ object DescribeModelOutput {
     ModelArn: ModelArn,
     ModelName: ModelName,
     Containers: ContainerDefinitionList = null,
-    EnableNetworkIsolation: js.UndefOr[scala.Boolean] = js.undefined,
+    EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined,
     PrimaryContainer: ContainerDefinition = null,
     VpcConfig: VpcConfig = null
   ): DescribeModelOutput = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], ExecutionRoleArn = ExecutionRoleArn.asInstanceOf[js.Any], ModelArn = ModelArn.asInstanceOf[js.Any], ModelName = ModelName.asInstanceOf[js.Any])
     if (Containers != null) __obj.updateDynamic("Containers")(Containers.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableNetworkIsolation)) __obj.updateDynamic("EnableNetworkIsolation")(EnableNetworkIsolation.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableNetworkIsolation)) __obj.updateDynamic("EnableNetworkIsolation")(EnableNetworkIsolation.get.asInstanceOf[js.Any])
     if (PrimaryContainer != null) __obj.updateDynamic("PrimaryContainer")(PrimaryContainer.asInstanceOf[js.Any])
     if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeModelOutput]

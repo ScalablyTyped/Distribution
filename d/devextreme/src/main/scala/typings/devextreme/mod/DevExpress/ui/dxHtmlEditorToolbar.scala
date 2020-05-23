@@ -12,6 +12,7 @@ import typings.devextreme.devextremeStrings.clear
 import typings.devextreme.devextremeStrings.codeBlock
 import typings.devextreme.devextremeStrings.color
 import typings.devextreme.devextremeStrings.decreaseIndent
+import typings.devextreme.devextremeStrings.font
 import typings.devextreme.devextremeStrings.header
 import typings.devextreme.devextremeStrings.image
 import typings.devextreme.devextremeStrings.increaseIndent
@@ -20,13 +21,14 @@ import typings.devextreme.devextremeStrings.link
 import typings.devextreme.devextremeStrings.orderedList
 import typings.devextreme.devextremeStrings.redo
 import typings.devextreme.devextremeStrings.separator
+import typings.devextreme.devextremeStrings.size
 import typings.devextreme.devextremeStrings.strike
 import typings.devextreme.devextremeStrings.subscript
 import typings.devextreme.devextremeStrings.superscript
 import typings.devextreme.devextremeStrings.underline
 import typings.devextreme.devextremeStrings.undo
 import typings.devextreme.devextremeStrings.variable
-import typings.devextreme.mod._Global_.JQuery
+import typings.devextreme.mod.global.JQuery
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -38,7 +40,7 @@ trait dxHtmlEditorToolbar extends js.Object {
   /** @name dxHtmlEditorToolbar.items */
   var items: js.UndefOr[
     js.Array[
-      dxHtmlEditorToolbarItem | background | bold | color | italic | link | image | strike | subscript | superscript | underline | blockquote | header | increaseIndent | decreaseIndent | orderedList | bulletList | alignLeft | alignCenter | alignRight | alignJustify | codeBlock | variable | separator | undo | redo | clear
+      dxHtmlEditorToolbarItem | background | bold | color | font | italic | link | image | size | strike | subscript | superscript | underline | blockquote | header | increaseIndent | decreaseIndent | orderedList | bulletList | alignLeft | alignCenter | alignRight | alignJustify | codeBlock | variable | separator | undo | redo | clear
     ]
   ] = js.undefined
 }
@@ -48,7 +50,7 @@ object dxHtmlEditorToolbar {
   def apply(
     container: String | Element | JQuery = null,
     items: js.Array[
-      dxHtmlEditorToolbarItem | background | bold | color | italic | link | image | strike | subscript | superscript | underline | blockquote | header | increaseIndent | decreaseIndent | orderedList | bulletList | alignLeft | alignCenter | alignRight | alignJustify | codeBlock | variable | separator | undo | redo | clear
+      dxHtmlEditorToolbarItem | background | bold | color | font | italic | link | image | size | strike | subscript | superscript | underline | blockquote | header | increaseIndent | decreaseIndent | orderedList | bulletList | alignLeft | alignCenter | alignRight | alignJustify | codeBlock | variable | separator | undo | redo | clear
     ] = null
   ): dxHtmlEditorToolbar = {
     val __obj = js.Dynamic.literal()

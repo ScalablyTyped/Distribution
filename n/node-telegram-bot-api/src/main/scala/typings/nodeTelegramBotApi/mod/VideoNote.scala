@@ -16,11 +16,11 @@ object VideoNote {
     duration: Double,
     file_id: String,
     length: Double,
-    file_size: Int | Double = null,
+    file_size: js.UndefOr[Double] = js.undefined,
     thumb: PhotoSize = null
   ): VideoNote = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], file_id = file_id.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
-    if (file_size != null) __obj.updateDynamic("file_size")(file_size.asInstanceOf[js.Any])
+    if (!js.isUndefined(file_size)) __obj.updateDynamic("file_size")(file_size.get.asInstanceOf[js.Any])
     if (thumb != null) __obj.updateDynamic("thumb")(thumb.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoNote]
   }

@@ -13,47 +13,40 @@ import scala.scalajs.js.annotation._
   * @author Jeongho Nam <http://samchon.org>
   */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.Entity * / any */ @JSGlobal("bws.packer.InstanceForm")
-@js.native
-/**
-  * Default Constructor.
-  */
-class InstanceForm () extends js.Object {
-  def this(instance: Instance) = this()
-  def this(instance: Instance, count: Double) = this()
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.Entity * / any */ trait InstanceForm extends js.Object {
   @JSName("$count")
-  var $count: String = js.native
+  var $count: String
   @JSName("$height")
-  var $height: String = js.native
+  var $height: String
   @JSName("$length")
-  var $length: String = js.native
+  var $length: String
   @JSName("$name")
-  var $name: String = js.native
+  var $name: String
   @JSName("$width")
-  var $width: String = js.native
+  var $width: String
   /**
     * Repeated count of the {@link instance}.
     */
-  var count: js.Any = js.native
+  var count: js.Any
   /**
     * A duplicated Instance.
     */
-  var instance: js.Any = js.native
+  var instance: js.Any
   /**
     * @inheritdoc
     */
-  def TAG(): String = js.native
+  def TAG(): String
   /**
     * @inheritdoc
     */
   def construct(
     xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
-  ): Unit = js.native
-  /* private */ def createInstance(xml: js.Any): js.Any = js.native
-  def getCount(): Double = js.native
-  def getInstance(): Instance = js.native
-  def key(): js.Any = js.native
-  def setCount(`val`: Double): Unit = js.native
+  ): Unit
+  /* private */ def createInstance(xml: js.Any): js.Any
+  def getCount(): Double
+  def getInstance(): Instance
+  def key(): js.Any
+  def setCount(`val`: Double): Unit
   /**
     * <p> Repeated {@link instance} to {@link InstanceArray}.
     *
@@ -64,10 +57,35 @@ class InstanceForm () extends js.Object {
     *
     * @return An array of instance containing repeated {@link instance}.
     */
-  def toInstanceArray(): InstanceArray = js.native
+  def toInstanceArray(): InstanceArray
   /**
     * @inheritdoc
     */
-  def toXML(): js.Any = js.native
+  def toXML(): js.Any
+}
+
+object InstanceForm {
+  @scala.inline
+  def apply(
+    $count: String,
+    $height: String,
+    $length: String,
+    $name: String,
+    $width: String,
+    TAG: () => String,
+    construct: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Unit,
+    count: js.Any,
+    createInstance: js.Any => js.Any,
+    getCount: () => Double,
+    getInstance: () => Instance,
+    instance: js.Any,
+    key: () => js.Any,
+    setCount: Double => Unit,
+    toInstanceArray: () => InstanceArray,
+    toXML: () => js.Any
+  ): InstanceForm = {
+    val __obj = js.Dynamic.literal($count = $count.asInstanceOf[js.Any], $height = $height.asInstanceOf[js.Any], $length = $length.asInstanceOf[js.Any], $name = $name.asInstanceOf[js.Any], $width = $width.asInstanceOf[js.Any], TAG = js.Any.fromFunction0(TAG), construct = js.Any.fromFunction1(construct), count = count.asInstanceOf[js.Any], createInstance = js.Any.fromFunction1(createInstance), getCount = js.Any.fromFunction0(getCount), getInstance = js.Any.fromFunction0(getInstance), instance = instance.asInstanceOf[js.Any], key = js.Any.fromFunction0(key), setCount = js.Any.fromFunction1(setCount), toInstanceArray = js.Any.fromFunction0(toInstanceArray), toXML = js.Any.fromFunction0(toXML))
+    __obj.asInstanceOf[InstanceForm]
+  }
 }
 

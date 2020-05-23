@@ -20,7 +20,7 @@ object SpreadsheetSheetFilterColumn {
   def apply(
     criteria: js.Array[SpreadsheetSheetFilterColumnCriteriaItem] = null,
     filter: String = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     logic: String = null,
     `type`: String = null,
     value: Double | String | Date = null,
@@ -29,7 +29,7 @@ object SpreadsheetSheetFilterColumn {
     val __obj = js.Dynamic.literal()
     if (criteria != null) __obj.updateDynamic("criteria")(criteria.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (logic != null) __obj.updateDynamic("logic")(logic.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

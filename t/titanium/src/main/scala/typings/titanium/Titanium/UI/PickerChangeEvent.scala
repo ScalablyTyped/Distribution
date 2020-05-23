@@ -5,41 +5,41 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the value of any column's row is changed.
-		 */
+  * Fired when the value of any column's row is changed.
+  */
 trait PickerChangeEvent extends PickerBaseEvent {
   /**
-  			 * The column object. On iOS, only applicable to <Titanium.UI.PICKER_TYPE_PLAIN>
-  			 * picker types.
-  			 */
+    * The column object. On iOS, only applicable to <Titanium.UI.PICKER_TYPE_PLAIN>
+    * picker types.
+    */
   var column: PickerColumn
   /**
-  			 * Selected column index. On iOS, only applicable to <Titanium.UI.PICKER_TYPE_PLAIN>
-  			 * picker types.
-  			 */
+    * Selected column index. On iOS, only applicable to <Titanium.UI.PICKER_TYPE_PLAIN>
+    * picker types.
+    */
   var columnIndex: Double
   /**
-  			 * The selected duration in milliseconds. Applicable to <Titanium.UI.PICKER_TYPE_COUNT_DOWN_TIMER> picker types.
-  			 */
+    * The selected duration in milliseconds. Applicable to <Titanium.UI.PICKER_TYPE_COUNT_DOWN_TIMER> picker types.
+    */
   var countDownDuration: Double
   /**
-  			 * The row object. On iOS, only applicable to <Titanium.UI.PICKER_TYPE_PLAIN> picker types.
-  			 */
+    * The row object. On iOS, only applicable to <Titanium.UI.PICKER_TYPE_PLAIN> picker types.
+    */
   var row: PickerRow
   /**
-  			 * Selected row index. On iOS, only applicable to <Titanium.UI.PICKER_TYPE_PLAIN>
-  			 * picker types.
-  			 */
+    * Selected row index. On iOS, only applicable to <Titanium.UI.PICKER_TYPE_PLAIN>
+    * picker types.
+    */
   var rowIndex: Double
   /**
-  			 * Array of selected values, one element per column in the picker. Applicable to
-  			 * <Titanium.UI.PICKER_TYPE_PLAIN> picker types.
-  			 */
+    * Array of selected values, one element per column in the picker. Applicable to
+    * <Titanium.UI.PICKER_TYPE_PLAIN> picker types.
+    */
   var selectedValue: js.Array[String]
   /**
-  			 * The selected value. Applicable to date/time pickers only. This property is read-only
-  			 * on Android.
-  			 */
+    * The selected value. Applicable to date/time pickers only. This property is read-only
+    * on Android.
+    */
   var value: String
 }
 

@@ -5,6 +5,7 @@ import typings.mendixmodelsdk.domainmodelsMod.StructureVersionInfo
 import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
+import typings.mendixmodelsdk.restMod.rest.ODataKeyPart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,7 +40,34 @@ object LongAttributeType extends js.Object {
     * Creates and returns a new LongAttributeType instance in the SDK and on the server.
     * The new LongAttributeType will be automatically stored in the 'type' property
     * of the parent Attribute element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  6.0.0 to 8.8.0
     */
   def createIn(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.Attribute): typings.mendixmodelsdk.domainmodelsMod.domainmodels.LongAttributeType = js.native
+  /**
+    * Creates and returns a new LongAttributeType instance in the SDK and on the server.
+    * The new LongAttributeType will be automatically stored in the 'type' property
+    * of the parent Attribute element passed as argument.
+    */
+  def createInAttributeUnderType(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.Attribute): typings.mendixmodelsdk.domainmodelsMod.domainmodels.LongAttributeType = js.native
+  /**
+    * Creates and returns a new LongAttributeType instance in the SDK and on the server.
+    * The new LongAttributeType will be automatically stored in the 'type' property
+    * of the parent EntityKeyPart element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.9.0 and higher
+    */
+  def createInEntityKeyPartUnderType(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.EntityKeyPart): typings.mendixmodelsdk.domainmodelsMod.domainmodels.LongAttributeType = js.native
+  /**
+    * Creates and returns a new LongAttributeType instance in the SDK and on the server.
+    * The new LongAttributeType will be automatically stored in the 'type' property
+    * of the parent rest.ODataKeyPart element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.9.0 and higher
+    */
+  def createInODataKeyPartUnderType(container: ODataKeyPart): typings.mendixmodelsdk.domainmodelsMod.domainmodels.LongAttributeType = js.native
 }
 

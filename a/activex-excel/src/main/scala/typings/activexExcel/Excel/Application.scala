@@ -29,9 +29,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.Application")
 @js.native
-class Application protected () extends js.Object {
+trait Application extends js.Object {
   @JSName("ActiveCell")
   val ActiveCell_Original: Range = js.native
   val ActiveChart: Chart = js.native
@@ -620,7 +619,6 @@ class Application protected () extends js.Object {
   def RecordMacro(BasicCode: _empty, XlmCode: _empty): Unit = js.native
   def RegisterXLL(Filename: String): Boolean = js.native
   def RegisteredFunctions(): SafeArray[_] | Null = js.native
-  def RegisteredFunctions(Index1: js.UndefOr[scala.Nothing], Index2: String): SafeArray[_] | Null = js.native
   def RegisteredFunctions(Index1: String): SafeArray[_] | Null = js.native
   def RegisteredFunctions(Index1: String, Index2: String): SafeArray[_] | Null = js.native
   def Repeat(): Unit = js.native

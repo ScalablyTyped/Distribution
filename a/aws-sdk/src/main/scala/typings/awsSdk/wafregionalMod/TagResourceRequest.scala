@@ -6,7 +6,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TagResourceRequest extends js.Object {
+  /**
+    * 
+    */
   var ResourceARN: ResourceArn = js.native
+  /**
+    * 
+    */
   var Tags: TagList = js.native
 }
 

@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ASPxDesignerReportDialogBase")
 @js.native
-class ASPxDesignerReportDialogBase () extends js.Object {
+trait ASPxDesignerReportDialogBase extends js.Object {
   var buttons: js.Array[_] = js.native
   @JSName("height")
   var height_Original: KnockoutObservable[_] = js.native

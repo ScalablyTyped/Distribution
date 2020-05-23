@@ -13,10 +13,10 @@ trait Follower extends js.Object {
 
 object Follower {
   @scala.inline
-  def apply(action: String, user_email: String = null, user_id: Int | Double = null): Follower = {
+  def apply(action: String, user_email: String = null, user_id: js.UndefOr[ZendeskID] = js.undefined): Follower = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
     if (user_email != null) __obj.updateDynamic("user_email")(user_email.asInstanceOf[js.Any])
-    if (user_id != null) __obj.updateDynamic("user_id")(user_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(user_id)) __obj.updateDynamic("user_id")(user_id.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Follower]
   }
 }

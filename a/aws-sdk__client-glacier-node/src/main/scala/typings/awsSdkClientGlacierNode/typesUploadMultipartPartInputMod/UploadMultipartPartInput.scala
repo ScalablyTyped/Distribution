@@ -60,7 +60,7 @@ object UploadMultipartPartInput {
     vaultName: String,
     $abortSignal: AbortSignal = null,
     $httpOptions: NodeHttpOptions = null,
-    $maxRetries: Int | Double = null,
+    $maxRetries: js.UndefOr[Double] = js.undefined,
     body: ArrayBuffer | ArrayBufferView | String | StreamType = null,
     checksum: String = null,
     range: String = null
@@ -68,7 +68,7 @@ object UploadMultipartPartInput {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], uploadId = uploadId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
     if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
     if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
-    if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined($maxRetries)) __obj.updateDynamic("$maxRetries")($maxRetries.get.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (checksum != null) __obj.updateDynamic("checksum")(checksum.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])

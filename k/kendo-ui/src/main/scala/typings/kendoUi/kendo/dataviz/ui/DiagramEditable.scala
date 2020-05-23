@@ -28,7 +28,7 @@ object DiagramEditable {
     val __obj = js.Dynamic.literal()
     if (connectionTemplate != null) __obj.updateDynamic("connectionTemplate")(connectionTemplate.asInstanceOf[js.Any])
     if (drag != null) __obj.updateDynamic("drag")(drag.asInstanceOf[js.Any])
-    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
+    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove.get.asInstanceOf[js.Any])
     if (resize != null) __obj.updateDynamic("resize")(resize.asInstanceOf[js.Any])
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
     if (shapeTemplate != null) __obj.updateDynamic("shapeTemplate")(shapeTemplate.asInstanceOf[js.Any])

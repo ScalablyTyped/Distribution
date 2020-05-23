@@ -18,10 +18,10 @@ trait WhiteSpaceProps extends WhiteSpacePropsType {
 
 object WhiteSpaceProps {
   @scala.inline
-  def apply(size: xs | sm | md | lg | xl = null, style: StyleProp[ViewStyle] = null): WhiteSpaceProps = {
+  def apply(size: xs | sm | md | lg | xl = null, style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined): WhiteSpaceProps = {
     val __obj = js.Dynamic.literal()
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[WhiteSpaceProps]
   }
 }

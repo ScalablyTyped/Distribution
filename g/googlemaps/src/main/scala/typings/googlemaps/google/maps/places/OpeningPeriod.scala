@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// TODO rename to PlaceOpeningHoursPeriod https://developers.google.com/maps/documentation/javascript/reference/places-service#PlaceOpeningHoursPeriod
 trait OpeningPeriod extends js.Object {
   var close: js.UndefOr[OpeningHoursTime] = js.undefined
   var open: OpeningHoursTime

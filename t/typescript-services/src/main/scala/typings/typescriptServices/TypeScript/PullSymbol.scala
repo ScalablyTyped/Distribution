@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.PullSymbol")
 @js.native
-class PullSymbol protected () extends js.Object {
-  def this(name: String, declKind: PullElementKind) = this()
+trait PullSymbol extends js.Object {
   var _container: js.Any = js.native
   var _declarations: js.Any = js.native
   var _docComments: js.Any = js.native
@@ -146,31 +144,5 @@ class PullSymbol protected () extends js.Object {
   def startResolving(): Unit = js.native
   def toString(scopeSymbol: PullSymbol): String = js.native
   def toString(scopeSymbol: PullSymbol, useConstraintInName: Boolean): String = js.native
-}
-
-/* static members */
-@JSGlobal("TypeScript.PullSymbol")
-@js.native
-object PullSymbol extends js.Object {
-  def _isExternalModuleReferenceAlias(aliasSymbol: PullTypeAliasSymbol): Boolean = js.native
-  /* private */ def getDefaultConstructorSymbolForDocComments(classSymbol: js.Any): js.Any = js.native
-  def getIsExternallyVisible(
-    symbol: PullSymbol,
-    fromIsExternallyVisibleSymbol: PullSymbol,
-    inIsExternallyVisibleSymbols: js.Array[PullSymbol]
-  ): Boolean = js.native
-  def getTypeParameterString(typars: js.Array[PullTypeSymbol]): String = js.native
-  def getTypeParameterString(typars: js.Array[PullTypeSymbol], scopeSymbol: PullSymbol): String = js.native
-  def getTypeParameterString(typars: js.Array[PullTypeSymbol], scopeSymbol: PullSymbol, useContraintInName: Boolean): String = js.native
-  def getTypeParameterStringEx(typeParameters: js.Array[PullTypeSymbol]): MemberNameArray = js.native
-  def getTypeParameterStringEx(typeParameters: js.Array[PullTypeSymbol], scopeSymbol: PullSymbol): MemberNameArray = js.native
-  def getTypeParameterStringEx(typeParameters: js.Array[PullTypeSymbol], scopeSymbol: PullSymbol, getTypeParamMarkerInfo: Boolean): MemberNameArray = js.native
-  def getTypeParameterStringEx(
-    typeParameters: js.Array[PullTypeSymbol],
-    scopeSymbol: PullSymbol,
-    getTypeParamMarkerInfo: Boolean,
-    useContraintInName: Boolean
-  ): MemberNameArray = js.native
-  /* private */ def unqualifiedNameReferencesDifferentSymbolInScope(symbol: js.Any, scopePath: js.Any, endScopePathIndex: js.Any): js.Any = js.native
 }
 

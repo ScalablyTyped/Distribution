@@ -10,9 +10,9 @@ trait RingBufferOptions extends js.Object {
 
 object RingBufferOptions {
   @scala.inline
-  def apply(limit: Int | Double = null): RingBufferOptions = {
+  def apply(limit: js.UndefOr[Double] = js.undefined): RingBufferOptions = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RingBufferOptions]
   }
 }

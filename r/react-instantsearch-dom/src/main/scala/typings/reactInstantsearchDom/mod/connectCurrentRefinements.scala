@@ -4,7 +4,7 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
 import typings.react.mod.StatelessComponent
-import typings.reactInstantsearchCore.PartialCurrentRefinements
+import typings.reactInstantsearchCore.anon.PartialCurrentRefinements
 import typings.reactInstantsearchCore.mod.ConnectedComponentClass
 import typings.reactInstantsearchCore.mod.CurrentRefinementsExposed
 import typings.reactInstantsearchCore.mod.CurrentRefinementsProvided

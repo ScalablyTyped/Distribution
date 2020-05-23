@@ -1,19 +1,19 @@
 package typings.yandexMaps.mod
 
-import typings.yandexMaps.AnonChildren
+import typings.yandexMaps.anon.Children
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.yandexMaps.mod.IEventEmitter because Already inherited
 - typings.yandexMaps.mod.IParentOnMap because Already inherited
 - typings.yandexMaps.mod.ICustomizable because Already inherited
 - typings.yandexMaps.mod.IGeoObjectCollection because var conflicts: events, options. Inlined add, add, each, each, get, getBounds, getIterator, getLength, getPixelBounds, indexOf, remove, removeAll, set, splice */ @JSImport("yandex-maps", "GeoObjectCollection")
 @js.native
 class GeoObjectCollection () extends IGeoObject {
-  def this(feature: AnonChildren) = this()
-  def this(feature: AnonChildren, options: js.Object) = this()
+  def this(feature: Children) = this()
+  def this(feature: Children, options: js.Object) = this()
   /* CompleteClass */
   override var events: IEventManager = js.native
   def add(child: IGeoObject): this.type = js.native

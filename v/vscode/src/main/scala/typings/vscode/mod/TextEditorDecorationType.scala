@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait TextEditorDecorationType extends js.Object {
   /**
-  		 * Internal representation of the handle.
-  		 */
+    * Internal representation of the handle.
+    */
   val key: String
   /**
-  		 * Remove this decoration type and all decorations on all text editors using it.
-  		 */
+    * Remove this decoration type and all decorations on all text editors using it.
+    */
   def dispose(): Unit
 }
 

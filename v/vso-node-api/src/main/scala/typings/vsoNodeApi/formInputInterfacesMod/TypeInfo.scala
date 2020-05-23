@@ -1,9 +1,9 @@
 package typings.vsoNodeApi.formInputInterfacesMod
 
-import typings.vsoNodeApi.AnonEnumValuesAnonCheckBox
-import typings.vsoNodeApi.AnonEnumValuesAnonEquals
-import typings.vsoNodeApi.AnonEnumValuesAnonNumber
-import typings.vsoNodeApi.AnonFields
+import typings.vsoNodeApi.anon.EnumValuesCheckBox
+import typings.vsoNodeApi.anon.EnumValuesEquals
+import typings.vsoNodeApi.anon.EnumValuesNumber
+import typings.vsoNodeApi.anon.Fields
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,16 +11,16 @@ import scala.scalajs.js.annotation._
 @JSImport("vso-node-api/interfaces/common/FormInputInterfaces", "TypeInfo")
 @js.native
 object TypeInfo extends js.Object {
-  var InputDataType: AnonEnumValuesAnonNumber = js.native
-  var InputDescriptor: AnonFields = js.native
-  var InputFilter: AnonFields = js.native
-  var InputFilterCondition: AnonFields = js.native
-  var InputFilterOperator: AnonEnumValuesAnonEquals = js.native
-  var InputMode: AnonEnumValuesAnonCheckBox = js.native
-  var InputValidation: AnonFields = js.native
-  var InputValue: AnonFields = js.native
-  var InputValues: AnonFields = js.native
-  var InputValuesError: AnonFields = js.native
-  var InputValuesQuery: AnonFields = js.native
+  var InputDataType: EnumValuesNumber = js.native
+  var InputDescriptor: Fields = js.native
+  var InputFilter: Fields = js.native
+  var InputFilterCondition: Fields = js.native
+  var InputFilterOperator: EnumValuesEquals = js.native
+  var InputMode: EnumValuesCheckBox = js.native
+  var InputValidation: Fields = js.native
+  var InputValue: Fields = js.native
+  var InputValues: Fields = js.native
+  var InputValuesError: Fields = js.native
+  var InputValuesQuery: Fields = js.native
 }
 

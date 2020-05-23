@@ -72,7 +72,7 @@ object StrictGridColumnProps {
     if (largeScreen != null) __obj.updateDynamic("largeScreen")(largeScreen.asInstanceOf[js.Any])
     if (mobile != null) __obj.updateDynamic("mobile")(mobile.asInstanceOf[js.Any])
     if (only != null) __obj.updateDynamic("only")(only.asInstanceOf[js.Any])
-    if (!js.isUndefined(stretched)) __obj.updateDynamic("stretched")(stretched.asInstanceOf[js.Any])
+    if (!js.isUndefined(stretched)) __obj.updateDynamic("stretched")(stretched.get.asInstanceOf[js.Any])
     if (tablet != null) __obj.updateDynamic("tablet")(tablet.asInstanceOf[js.Any])
     if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
     if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])

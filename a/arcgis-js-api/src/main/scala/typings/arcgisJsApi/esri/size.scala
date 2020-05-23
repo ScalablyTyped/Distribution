@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -163,7 +162,16 @@ trait size extends js.Object {
   def createVisualVariables(params: sizeCreateVisualVariablesParams): js.Promise[sizeVisualVariableResult]
 }
 
-@JSGlobal("__esri.size")
-@js.native
-object size extends TopLevel[size]
+object size {
+  @scala.inline
+  def apply(
+    createAgeRenderer: sizeCreateAgeRendererParams => js.Promise[sizeAgeRendererResult],
+    createClassBreaksRenderer: sizeCreateClassBreaksRendererParams => js.Promise[sizeClassBreaksRendererResult],
+    createContinuousRenderer: sizeCreateContinuousRendererParams => js.Promise[sizeContinuousRendererResult],
+    createVisualVariables: sizeCreateVisualVariablesParams => js.Promise[sizeVisualVariableResult]
+  ): size = {
+    val __obj = js.Dynamic.literal(createAgeRenderer = js.Any.fromFunction1(createAgeRenderer), createClassBreaksRenderer = js.Any.fromFunction1(createClassBreaksRenderer), createContinuousRenderer = js.Any.fromFunction1(createContinuousRenderer), createVisualVariables = js.Any.fromFunction1(createVisualVariables))
+    __obj.asInstanceOf[size]
+  }
+}
 

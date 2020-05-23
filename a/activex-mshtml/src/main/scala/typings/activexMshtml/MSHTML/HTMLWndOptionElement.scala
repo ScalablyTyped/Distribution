@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLWndOptionElement")
 @js.native
-class HTMLWndOptionElement protected () extends js.Object {
+trait HTMLWndOptionElement extends js.Object {
   @JSName("MSHTML.HTMLWndOptionElement_typekey")
   var MSHTMLDotHTMLWndOptionElement_typekey: HTMLWndOptionElement = js.native
   var accessKey: String = js.native

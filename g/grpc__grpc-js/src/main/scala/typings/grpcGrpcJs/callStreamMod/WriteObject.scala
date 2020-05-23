@@ -12,9 +12,9 @@ trait WriteObject extends js.Object {
 
 object WriteObject {
   @scala.inline
-  def apply(message: Buffer, flags: Int | Double = null): WriteObject = {
+  def apply(message: Buffer, flags: js.UndefOr[Double] = js.undefined): WriteObject = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
+    if (!js.isUndefined(flags)) __obj.updateDynamic("flags")(flags.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteObject]
   }
 }

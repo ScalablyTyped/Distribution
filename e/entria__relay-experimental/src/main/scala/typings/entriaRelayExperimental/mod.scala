@@ -1,6 +1,8 @@
 package typings.entriaRelayExperimental
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.entriaRelayExperimental.anon.FetchKey
+import typings.entriaRelayExperimental.anon.NetworkCacheConfig
 import typings.entriaRelayExperimental.relayEnvironmentProviderMod.Props
 import typings.entriaRelayExperimental.useFragmentMod.NonNullableArrayFragmentReturn
 import typings.entriaRelayExperimental.useFragmentMod.NonNullableFragmentReturn
@@ -8,7 +10,7 @@ import typings.entriaRelayExperimental.useFragmentMod.NullableArrayFragmentRetur
 import typings.entriaRelayExperimental.useFragmentMod.NullableFragmentReturn
 import typings.entriaRelayExperimental.useLegacyPaginationFragmentMod.ReturnTypePaginationFragment
 import typings.entriaRelayExperimental.useRefetchableFragmentMod.ReturnTypeRefetchableFragment
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.relayRuntime.mod.Observable
 import typings.relayRuntime.relayModernGraphQLTagMod.GraphQLTaggedNode
 import typings.relayRuntime.relayRuntimeTypesMod.OperationType
@@ -34,7 +36,7 @@ object mod extends js.Object {
     environment: Environment,
     query: GraphQLTaggedNode,
     variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any,
-    options: AnonNetworkCacheConfig
+    options: NetworkCacheConfig
   ): Observable[
     /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any
   ] = js.native
@@ -58,7 +60,7 @@ object mod extends js.Object {
     typings.entriaRelayExperimental.useLegacyPaginationFragmentMod.NonNullableFragmentReturn[TKey] with typings.entriaRelayExperimental.useLegacyPaginationFragmentMod.NullableFragmentReturn[TKey]
   ] = js.native
   def useQuery[TQuery /* <: OperationType */](gqlQuery: GraphQLTaggedNode): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = js.native
-  def useQuery[TQuery /* <: OperationType */](gqlQuery: GraphQLTaggedNode, variables: Null, options: AnonFetchKey): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = js.native
+  def useQuery[TQuery /* <: OperationType */](gqlQuery: GraphQLTaggedNode, variables: Null, options: FetchKey): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = js.native
   @JSName("useQuery")
   def useQuery_variables[TQuery /* <: OperationType */](
     gqlQuery: GraphQLTaggedNode,
@@ -68,7 +70,7 @@ object mod extends js.Object {
   def useQuery_variables[TQuery /* <: OperationType */](
     gqlQuery: GraphQLTaggedNode,
     variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any,
-    options: AnonFetchKey
+    options: FetchKey
   ): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = js.native
   def useRefetchableFragment[TQuery /* <: OperationType */, TKey /* <: StringDictionary[js.Any] | Null */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): ReturnTypeRefetchableFragment[TQuery, TKey] = js.native
   def useRelayEnvironment(): Environment = js.native

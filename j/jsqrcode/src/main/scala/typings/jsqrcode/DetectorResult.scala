@@ -4,12 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DetectorResult")
-@js.native
-class DetectorResult protected () extends js.Object {
-  def this(bits: BitMatrix, points: js.Tuple3[DetectorResult, DetectorResult, DetectorResult]) = this()
-  def this(bits: BitMatrix, points: js.Tuple4[DetectorResult, DetectorResult, DetectorResult, DetectorResult]) = this()
-  var bits: BitMatrix = js.native
-  var points: (js.Tuple3[DetectorResult, DetectorResult, DetectorResult]) | (js.Tuple4[DetectorResult, DetectorResult, DetectorResult, DetectorResult]) = js.native
+trait DetectorResult extends js.Object {
+  var bits: BitMatrix
+  var points: (js.Tuple3[DetectorResult, DetectorResult, DetectorResult]) | (js.Tuple4[DetectorResult, DetectorResult, DetectorResult, DetectorResult])
+}
+
+object DetectorResult {
+  @scala.inline
+  def apply(
+    bits: BitMatrix,
+    points: (js.Tuple3[DetectorResult, DetectorResult, DetectorResult]) | (js.Tuple4[DetectorResult, DetectorResult, DetectorResult, DetectorResult])
+  ): DetectorResult = {
+    val __obj = js.Dynamic.literal(bits = bits.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DetectorResult]
+  }
 }
 

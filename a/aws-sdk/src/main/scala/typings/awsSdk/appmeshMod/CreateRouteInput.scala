@@ -37,8 +37,8 @@ trait CreateRouteInput extends js.Object {
     */
   var tags: js.UndefOr[TagList] = js.native
   /**
-    * The name of the virtual router in which to create the route. If the virtual router is in a shared mesh,
-    then you must be the owner of the virtual router resource.
+    * The name of the virtual router in which to create the route. If the virtual router is in
+    a shared mesh, then you must be the owner of the virtual router resource.
     */
   var virtualRouterName: ResourceName = js.native
 }

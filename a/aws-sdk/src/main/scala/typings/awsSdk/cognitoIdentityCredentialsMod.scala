@@ -1,5 +1,6 @@
 package typings.awsSdk
 
+import typings.awsSdk.anon.LoginId
 import typings.awsSdk.cognitoIdentityCredentialsMod.CognitoIdentityCredentials.CognitoIdentityOptions
 import typings.awsSdk.cognitoidentityMod.GetCredentialsForIdentityResponse
 import typings.awsSdk.cognitoidentityMod.GetIdInput
@@ -55,7 +56,7 @@ object cognitoIdentityCredentialsMod extends js.Object {
     trait CognitoIdentityCredentialsInputs extends js.Object
     
     type ClientConfiguration = ConfigurationOptions
-    type CognitoIdentityOptions = CognitoIdentityCredentialsInputs with AnonLoginId
+    type CognitoIdentityOptions = CognitoIdentityCredentialsInputs with LoginId
   }
   
 }

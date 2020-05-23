@@ -10,7 +10,7 @@ object createClassDeclaration extends js.Object {
   def apply(
     decorators: js.UndefOr[js.Array[Decorator]],
     modifiers: js.UndefOr[js.Array[Modifier]],
-    name: js.UndefOr[java.lang.String | Identifier],
+    name: js.UndefOr[Identifier | java.lang.String],
     typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
     heritageClauses: js.UndefOr[js.Array[HeritageClause]],
     members: js.Array[ClassElement]

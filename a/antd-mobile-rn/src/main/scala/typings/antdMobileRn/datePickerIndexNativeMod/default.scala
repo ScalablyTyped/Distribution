@@ -1,7 +1,7 @@
 package typings.antdMobileRn.datePickerIndexNativeMod
 
-import typings.antdMobileRn.AnonAntLocale
-import typings.antdMobileRn.AnonMinuteStep
+import typings.antdMobileRn.anon.AntLocale
+import typings.antdMobileRn.anon.MinuteStep
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ class default () extends DatePicker
 @JSImport("antd-mobile-rn/lib/date-picker/index.native", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var contextTypes: AnonAntLocale = js.native
-  var defaultProps: AnonMinuteStep = js.native
+  var contextTypes: AntLocale = js.native
+  var defaultProps: MinuteStep = js.native
 }
 

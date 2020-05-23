@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,7 +30,11 @@ trait scheduling extends js.Object {
   def schedule(callback: js.Function): js.Any
 }
 
-@JSGlobal("__esri.scheduling")
-@js.native
-object scheduling extends TopLevel[scheduling]
+object scheduling {
+  @scala.inline
+  def apply(addFrameTask: PhaseCallbacks => FrameTaskHandle, schedule: js.Function => js.Any): scheduling = {
+    val __obj = js.Dynamic.literal(addFrameTask = js.Any.fromFunction1(addFrameTask), schedule = js.Any.fromFunction1(schedule))
+    __obj.asInstanceOf[scheduling]
+  }
+}
 

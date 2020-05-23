@@ -1,6 +1,8 @@
 package typings.vegaTooltip
 
 import typings.std.MouseEvent
+import typings.vegaTooltip.anon.Height
+import typings.vegaTooltip.anon.X
 import typings.vegaTooltip.defaultsMod.Options
 import typings.vegaTypings.mod.View
 import scala.scalajs.js
@@ -22,7 +24,7 @@ object mod extends js.Object {
   }
   
   val version: String = js.native
-  def calculatePosition(event: MouseEvent, tooltipBox: AnonHeight, offsetX: Double, offsetY: Double): AnonX = js.native
+  def calculatePosition(event: MouseEvent, tooltipBox: Height, offsetX: Double, offsetY: Double): X = js.native
   def createDefaultStyle(id: String): String = js.native
   def default(view: View): typings.vegaTooltip.handlerMod.Handler = js.native
   def default(view: View, opt: Options): typings.vegaTooltip.handlerMod.Handler = js.native

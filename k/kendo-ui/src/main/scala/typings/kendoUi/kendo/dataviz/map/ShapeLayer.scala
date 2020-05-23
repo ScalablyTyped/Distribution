@@ -5,13 +5,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.dataviz.map.ShapeLayer")
-@js.native
-class ShapeLayer protected () extends Layer_ {
-  def this(map: Map) = this()
-  def this(map: Map, options: ShapeLayerOptions) = this()
+trait ShapeLayer extends Layer_ {
   @JSName("options")
-  var options_ShapeLayer: ShapeLayerOptions = js.native
-  def setDataSource(): Unit = js.native
+  var options_ShapeLayer: ShapeLayerOptions
+  def setDataSource(): Unit
+}
+
+object ShapeLayer {
+  @scala.inline
+  def apply(
+    hide: () => Unit,
+    map: Map,
+    options: ShapeLayerOptions,
+    setDataSource: () => Unit,
+    show: () => Unit
+  ): ShapeLayer = {
+    val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), map = map.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], setDataSource = js.Any.fromFunction0(setDataSource), show = js.Any.fromFunction0(show))
+    __obj.asInstanceOf[ShapeLayer]
+  }
 }
 

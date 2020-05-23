@@ -1,6 +1,6 @@
 package typings.antdMobileRn.mod
 
-import typings.antdMobileRn.AnonDisabled
+import typings.antdMobileRn.anon.Disabled
 import typings.antdMobileRn.buttonIndexNativeMod.ButtonProps
 import typings.antdMobileRn.buttonIndexNativeMod.default
 import scala.scalajs.js
@@ -17,6 +17,6 @@ class Button protected () extends default {
 @JSImport("antd-mobile-rn", "Button")
 @js.native
 object Button extends js.Object {
-  var defaultProps: AnonDisabled = js.native
+  var defaultProps: Disabled = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.apolloClient.storeMod
 
-import typings.apolloClient.AnonMutationResult
+import typings.apolloClient.anon.MutationResult
 import typings.apolloClient.queriesMod.QueryStoreValue
 import typings.apolloClient.typesMod.MutationQueryReducer
 import typings.std.Record
@@ -17,7 +17,7 @@ object QueryWithUpdater {
   @scala.inline
   def apply(
     query: QueryStoreValue,
-    updater: (/* previousResult */ Record[String, js.Any], /* options */ AnonMutationResult[js.Object]) => Record[String, js.Any]
+    updater: (/* previousResult */ Record[String, js.Any], /* options */ MutationResult[js.Object]) => Record[String, js.Any]
   ): QueryWithUpdater = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], updater = js.Any.fromFunction2(updater))
     __obj.asInstanceOf[QueryWithUpdater]

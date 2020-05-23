@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Provides members related to Batch Edit Mode.
   */
-@JSGlobal("ASPxClientTreeListBatchEditApi")
 @js.native
-class ASPxClientTreeListBatchEditApi () extends js.Object {
+trait ASPxClientTreeListBatchEditApi extends js.Object {
   /**
     * Adds a new node when ASPxTreeList is in Batch Edit mode.
     * @param parentNodeKey A string value representing a parent node key.

@@ -25,10 +25,8 @@ import scala.scalajs.js.annotation._
 trait ProfilerFeature extends js.Object
 
 object ProfilerFeature {
-  @JSName("java")
   @scala.inline
   def java_ : typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.java_ = "java".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.java_]
-  @JSName("js")
   @scala.inline
   def js_ : typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.js_ = "js".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.js_]
   @scala.inline

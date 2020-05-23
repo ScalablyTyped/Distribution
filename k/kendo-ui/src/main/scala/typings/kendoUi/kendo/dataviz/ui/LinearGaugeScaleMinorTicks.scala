@@ -15,15 +15,15 @@ object LinearGaugeScaleMinorTicks {
   @scala.inline
   def apply(
     color: String = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): LinearGaugeScaleMinorTicks = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinearGaugeScaleMinorTicks]
   }
 }

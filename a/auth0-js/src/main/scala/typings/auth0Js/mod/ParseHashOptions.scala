@@ -23,8 +23,8 @@ object ParseHashOptions {
     state: String = null
   ): ParseHashOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(__enableIdPInitiatedLogin)) __obj.updateDynamic("__enableIdPInitiatedLogin")(__enableIdPInitiatedLogin.asInstanceOf[js.Any])
-    if (!js.isUndefined(_idTokenVerification)) __obj.updateDynamic("_idTokenVerification")(_idTokenVerification.asInstanceOf[js.Any])
+    if (!js.isUndefined(__enableIdPInitiatedLogin)) __obj.updateDynamic("__enableIdPInitiatedLogin")(__enableIdPInitiatedLogin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(_idTokenVerification)) __obj.updateDynamic("_idTokenVerification")(_idTokenVerification.get.asInstanceOf[js.Any])
     if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
     if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])

@@ -37,7 +37,7 @@ object LoadEventArgs {
   ): LoadEventArgs = {
     val __obj = js.Dynamic.literal()
     if (Model != null) __obj.updateDynamic("Model")(Model.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement.asInstanceOf[js.Any])

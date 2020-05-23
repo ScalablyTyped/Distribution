@@ -1,7 +1,7 @@
 package typings.jupyterlabExtensionmanager.companionsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jupyterlabExtensionmanager.AnonDisplayname
+import typings.jupyterlabExtensionmanager.anon.Displayname
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,14 +10,14 @@ trait IKernelInstallInfo extends IInstallInfo {
   /**
     * A specification of which kernels the current install info applies to.
     */
-  var kernel_spec: AnonDisplayname
+  var kernel_spec: Displayname
 }
 
 object IKernelInstallInfo {
   @scala.inline
   def apply(
     base: IInstallInfoEntry,
-    kernel_spec: AnonDisplayname,
+    kernel_spec: Displayname,
     managers: js.Array[String],
     overrides: StringDictionary[js.UndefOr[IInstallInfoEntry]] = null
   ): IKernelInstallInfo = {

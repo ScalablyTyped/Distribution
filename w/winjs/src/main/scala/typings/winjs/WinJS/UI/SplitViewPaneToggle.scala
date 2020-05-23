@@ -1,6 +1,6 @@
 package typings.winjs.WinJS.UI
 
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLButtonElement
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -10,17 +10,8 @@ import scala.scalajs.js.annotation._
 /**
   * Displays a button which is used for opening and closing a SplitView's pane.
   **/
-@JSGlobal("WinJS.UI.SplitViewPaneToggle")
 @js.native
-/**
-  * Creates a new SplitViewPaneToggle.
-  * @constructor
-  * @param element The DOM element hosts the new SplitViewPaneToggle.
-  * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-  **/
-class SplitViewPaneToggle () extends js.Object {
-  def this(element: HTMLButtonElement) = this()
-  def this(element: HTMLButtonElement, options: js.Any) = this()
+trait SplitViewPaneToggle extends js.Object {
   /**
     * Gets the DOM element that hosts the SplitViewPaneToggle control.
     **/
@@ -53,7 +44,7 @@ class SplitViewPaneToggle () extends js.Object {
     * Raised when the SplitViewPaneToggle is invoked.
     * @param eventInfo An object that contains information about the event.
     **/
-  def oninvoked(eventInfo: Event_): Unit = js.native
+  def oninvoked(eventInfo: Event): Unit = js.native
   /**
     * Removes an event handler that the addEventListener method registered.
     * @param eventName The name of the event that the event handler is registered for.
@@ -62,15 +53,5 @@ class SplitViewPaneToggle () extends js.Object {
     **/
   def removeEventListener(eventName: String, eventCallback: js.Function): Unit = js.native
   def removeEventListener(eventName: String, eventCallback: js.Function, useCapture: Boolean): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("WinJS.UI.SplitViewPaneToggle")
-@js.native
-object SplitViewPaneToggle extends js.Object {
-  /**
-    * Indicates that the object is compatibile with declarative processing.
-    **/
-  var supportedForProcessing: Boolean = js.native
 }
 

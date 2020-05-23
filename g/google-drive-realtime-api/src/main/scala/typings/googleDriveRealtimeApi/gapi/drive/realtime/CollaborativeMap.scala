@@ -1,13 +1,11 @@
 package typings.googleDriveRealtimeApi.gapi.drive.realtime
 
-import typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("gapi.drive.realtime.CollaborativeMap")
 @js.native
-class CollaborativeMap[V] () extends CollaborativeObject {
+trait CollaborativeMap[V] extends CollaborativeObject {
   var size: Double = js.native
   // Removes all entries.
   def clear(): Unit = js.native
@@ -33,12 +31,5 @@ class CollaborativeMap[V] () extends CollaborativeObject {
   // Returns an array containing a copy of the values in this map. Modifications to the returned array
   // do not modify this collaborative map.
   def values(): js.Array[V] = js.native
-}
-
-/* static members */
-@JSGlobal("gapi.drive.realtime.CollaborativeMap")
-@js.native
-object CollaborativeMap extends js.Object {
-  var `type`: Map = js.native
 }
 

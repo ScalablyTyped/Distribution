@@ -13,9 +13,12 @@ trait IClientSortControls extends js.Object {
 
 object IClientSortControls {
   @scala.inline
-  def apply(keys: js.Array[String] = null, reverse: js.UndefOr[Boolean] = js.undefined): IClientSortControls = {
+  def apply(
+    keys: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    reverse: js.UndefOr[Null | Boolean] = js.undefined
+  ): IClientSortControls = {
     val __obj = js.Dynamic.literal()
-    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
+    if (!js.isUndefined(keys)) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
     if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientSortControls]
   }

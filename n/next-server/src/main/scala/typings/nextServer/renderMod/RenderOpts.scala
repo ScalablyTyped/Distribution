@@ -1,7 +1,7 @@
 package typings.nextServer.renderMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.nextServer.AnonErrorError
+import typings.nextServer.anon.ErrorError
 import typings.nextServer.getPageFilesMod.BuildManifest
 import typings.nextServer.libUtilsMod.AppType
 import typings.nextServer.libUtilsMod.DocumentType
@@ -17,7 +17,7 @@ trait RenderOpts extends js.Object {
   var App: AppType
   var Component: ComponentType[js.Object]
   var Document: DocumentType
-  var ErrorDebug: js.UndefOr[ComponentType[AnonErrorError]] = js.undefined
+  var ErrorDebug: js.UndefOr[ComponentType[ErrorError]] = js.undefined
   var ampBindInitData: Boolean
   var ampMode: js.UndefOr[js.Any] = js.undefined
   var ampPath: js.UndefOr[String] = js.undefined
@@ -58,14 +58,14 @@ object RenderOpts {
     pageConfig: PageConfig,
     reactLoadableManifest: ReactLoadableManifest,
     staticMarkup: Boolean,
-    ErrorDebug: ComponentType[AnonErrorError] = null,
+    ErrorDebug: ComponentType[ErrorError] = null,
     ampMode: js.Any = null,
     ampPath: String = null,
     ampValidator: (/* html */ String, /* pathname */ String) => js.Promise[Unit] = null,
     assetPrefix: String = null,
     dataOnly: js.UndefOr[Boolean] = js.undefined,
     dev: js.UndefOr[Boolean] = js.undefined,
-    err: Error = null,
+    err: js.UndefOr[Null | Error] = js.undefined,
     hybridAmp: js.UndefOr[Boolean] = js.undefined,
     inAmpMode: js.UndefOr[Boolean] = js.undefined,
     nextExport: js.UndefOr[Boolean] = js.undefined,
@@ -78,14 +78,14 @@ object RenderOpts {
     if (ampPath != null) __obj.updateDynamic("ampPath")(ampPath.asInstanceOf[js.Any])
     if (ampValidator != null) __obj.updateDynamic("ampValidator")(js.Any.fromFunction2(ampValidator))
     if (assetPrefix != null) __obj.updateDynamic("assetPrefix")(assetPrefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(dataOnly)) __obj.updateDynamic("dataOnly")(dataOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(dev)) __obj.updateDynamic("dev")(dev.asInstanceOf[js.Any])
-    if (err != null) __obj.updateDynamic("err")(err.asInstanceOf[js.Any])
-    if (!js.isUndefined(hybridAmp)) __obj.updateDynamic("hybridAmp")(hybridAmp.asInstanceOf[js.Any])
-    if (!js.isUndefined(inAmpMode)) __obj.updateDynamic("inAmpMode")(inAmpMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(nextExport)) __obj.updateDynamic("nextExport")(nextExport.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataOnly)) __obj.updateDynamic("dataOnly")(dataOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dev)) __obj.updateDynamic("dev")(dev.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(err)) __obj.updateDynamic("err")(err.asInstanceOf[js.Any])
+    if (!js.isUndefined(hybridAmp)) __obj.updateDynamic("hybridAmp")(hybridAmp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inAmpMode)) __obj.updateDynamic("inAmpMode")(inAmpMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nextExport)) __obj.updateDynamic("nextExport")(nextExport.get.asInstanceOf[js.Any])
     if (runtimeConfig != null) __obj.updateDynamic("runtimeConfig")(runtimeConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(skeleton)) __obj.updateDynamic("skeleton")(skeleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(skeleton)) __obj.updateDynamic("skeleton")(skeleton.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderOpts]
   }
 }

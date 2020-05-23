@@ -29,11 +29,11 @@ object CopyClusterSnapshotMessage {
   def apply(
     SourceSnapshotIdentifier: String,
     TargetSnapshotIdentifier: String,
-    ManualSnapshotRetentionPeriod: Int | scala.Double = null,
+    ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
     SourceSnapshotClusterIdentifier: String = null
   ): CopyClusterSnapshotMessage = {
     val __obj = js.Dynamic.literal(SourceSnapshotIdentifier = SourceSnapshotIdentifier.asInstanceOf[js.Any], TargetSnapshotIdentifier = TargetSnapshotIdentifier.asInstanceOf[js.Any])
-    if (ManualSnapshotRetentionPeriod != null) __obj.updateDynamic("ManualSnapshotRetentionPeriod")(ManualSnapshotRetentionPeriod.asInstanceOf[js.Any])
+    if (!js.isUndefined(ManualSnapshotRetentionPeriod)) __obj.updateDynamic("ManualSnapshotRetentionPeriod")(ManualSnapshotRetentionPeriod.get.asInstanceOf[js.Any])
     if (SourceSnapshotClusterIdentifier != null) __obj.updateDynamic("SourceSnapshotClusterIdentifier")(SourceSnapshotClusterIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyClusterSnapshotMessage]
   }

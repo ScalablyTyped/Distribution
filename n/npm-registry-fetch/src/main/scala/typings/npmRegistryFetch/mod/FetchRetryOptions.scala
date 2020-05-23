@@ -38,16 +38,16 @@ trait FetchRetryOptions extends js.Object {
 object FetchRetryOptions {
   @scala.inline
   def apply(
-    fetchRetries: Int | Double = null,
-    fetchRetryFactor: Int | Double = null,
-    fetchRetryMaxtimeout: Int | Double = null,
-    fetchRetryMintimeout: Int | Double = null
+    fetchRetries: js.UndefOr[Double] = js.undefined,
+    fetchRetryFactor: js.UndefOr[Double] = js.undefined,
+    fetchRetryMaxtimeout: js.UndefOr[Double] = js.undefined,
+    fetchRetryMintimeout: js.UndefOr[Double] = js.undefined
   ): FetchRetryOptions = {
     val __obj = js.Dynamic.literal()
-    if (fetchRetries != null) __obj.updateDynamic("fetchRetries")(fetchRetries.asInstanceOf[js.Any])
-    if (fetchRetryFactor != null) __obj.updateDynamic("fetchRetryFactor")(fetchRetryFactor.asInstanceOf[js.Any])
-    if (fetchRetryMaxtimeout != null) __obj.updateDynamic("fetchRetryMaxtimeout")(fetchRetryMaxtimeout.asInstanceOf[js.Any])
-    if (fetchRetryMintimeout != null) __obj.updateDynamic("fetchRetryMintimeout")(fetchRetryMintimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetchRetries)) __obj.updateDynamic("fetchRetries")(fetchRetries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetchRetryFactor)) __obj.updateDynamic("fetchRetryFactor")(fetchRetryFactor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetchRetryMaxtimeout)) __obj.updateDynamic("fetchRetryMaxtimeout")(fetchRetryMaxtimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetchRetryMintimeout)) __obj.updateDynamic("fetchRetryMintimeout")(fetchRetryMintimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchRetryOptions]
   }
 }

@@ -84,11 +84,11 @@ object CreateLaunchConfigurationType {
   @scala.inline
   def apply(
     LaunchConfigurationName: XmlStringMaxLen255,
-    AssociatePublicIpAddress: js.UndefOr[Boolean] = js.undefined,
+    AssociatePublicIpAddress: js.UndefOr[AssociatePublicIpAddress] = js.undefined,
     BlockDeviceMappings: BlockDeviceMappings = null,
     ClassicLinkVPCId: XmlStringMaxLen255 = null,
     ClassicLinkVPCSecurityGroups: ClassicLinkVPCSecurityGroups = null,
-    EbsOptimized: js.UndefOr[Boolean] = js.undefined,
+    EbsOptimized: js.UndefOr[EbsOptimized] = js.undefined,
     IamInstanceProfile: XmlStringMaxLen1600 = null,
     ImageId: XmlStringMaxLen255 = null,
     InstanceId: XmlStringMaxLen19 = null,
@@ -103,11 +103,11 @@ object CreateLaunchConfigurationType {
     UserData: XmlStringUserData = null
   ): CreateLaunchConfigurationType = {
     val __obj = js.Dynamic.literal(LaunchConfigurationName = LaunchConfigurationName.asInstanceOf[js.Any])
-    if (!js.isUndefined(AssociatePublicIpAddress)) __obj.updateDynamic("AssociatePublicIpAddress")(AssociatePublicIpAddress.asInstanceOf[js.Any])
+    if (!js.isUndefined(AssociatePublicIpAddress)) __obj.updateDynamic("AssociatePublicIpAddress")(AssociatePublicIpAddress.get.asInstanceOf[js.Any])
     if (BlockDeviceMappings != null) __obj.updateDynamic("BlockDeviceMappings")(BlockDeviceMappings.asInstanceOf[js.Any])
     if (ClassicLinkVPCId != null) __obj.updateDynamic("ClassicLinkVPCId")(ClassicLinkVPCId.asInstanceOf[js.Any])
     if (ClassicLinkVPCSecurityGroups != null) __obj.updateDynamic("ClassicLinkVPCSecurityGroups")(ClassicLinkVPCSecurityGroups.asInstanceOf[js.Any])
-    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.asInstanceOf[js.Any])
+    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.get.asInstanceOf[js.Any])
     if (IamInstanceProfile != null) __obj.updateDynamic("IamInstanceProfile")(IamInstanceProfile.asInstanceOf[js.Any])
     if (ImageId != null) __obj.updateDynamic("ImageId")(ImageId.asInstanceOf[js.Any])
     if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])

@@ -41,9 +41,9 @@ object SummaryRow {
     titleColumn: String = null
   ): SummaryRow = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(showCaptionSummary)) __obj.updateDynamic("showCaptionSummary")(showCaptionSummary.asInstanceOf[js.Any])
-    if (!js.isUndefined(showGroupSummary)) __obj.updateDynamic("showGroupSummary")(showGroupSummary.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTotalSummary)) __obj.updateDynamic("showTotalSummary")(showTotalSummary.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCaptionSummary)) __obj.updateDynamic("showCaptionSummary")(showCaptionSummary.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showGroupSummary)) __obj.updateDynamic("showGroupSummary")(showGroupSummary.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTotalSummary)) __obj.updateDynamic("showTotalSummary")(showTotalSummary.get.asInstanceOf[js.Any])
     if (summaryColumns != null) __obj.updateDynamic("summaryColumns")(summaryColumns.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (titleColumn != null) __obj.updateDynamic("titleColumn")(titleColumn.asInstanceOf[js.Any])

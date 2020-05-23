@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +27,6 @@ trait HTMLEmbedElement extends HTMLElement {
     * Sets or retrieves the width of the object.
     */
   var width: java.lang.String = js.native
-  def getSVGDocument(): Document_ | Null = js.native
+  def getSVGDocument(): Document | Null = js.native
 }
-
-@JSGlobal("HTMLEmbedElement")
-@js.native
-object HTMLEmbedElement extends Instantiable0[HTMLEmbedElement]
 

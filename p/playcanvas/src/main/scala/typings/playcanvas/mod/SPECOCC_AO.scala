@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.SPECOCC_AO
-  * @type {number}
-  * @description Use AO directly to occlude specular.
+  * Use AO directly to occlude specular.
   */
 @JSImport("playcanvas", "SPECOCC_AO")
 @js.native

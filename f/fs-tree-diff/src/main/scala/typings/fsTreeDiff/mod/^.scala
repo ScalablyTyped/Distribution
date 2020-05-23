@@ -1,6 +1,6 @@
 package typings.fsTreeDiff.mod
 
-import typings.fsTreeDiff.AnonEntries
+import typings.fsTreeDiff.anon.Entries
 import typings.fsTreeDiff.entryMod.BaseEntry
 import typings.fsTreeDiff.entryMod.DefaultEntry
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fs-tree-diff", JSImport.Namespace)
 @js.native
 class ^[T /* <: BaseEntry */] () extends FSTree[T] {
-  def this(options: AnonEntries[T]) = this()
+  def this(options: Entries[T]) = this()
 }
 
 @JSImport("fs-tree-diff", JSImport.Namespace)

@@ -18,8 +18,8 @@ object NestedFieldsInterface {
     repeated: js.UndefOr[Boolean] = js.undefined
   ): NestedFieldsInterface = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
-    if (!js.isUndefined(repeated)) __obj.updateDynamic("repeated")(repeated.asInstanceOf[js.Any])
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeated)) __obj.updateDynamic("repeated")(repeated.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NestedFieldsInterface]
   }
 }

@@ -1,7 +1,7 @@
 package typings.doubleclickGpt.googletag
 
-import typings.doubleclickGpt.AnonChangeCorrelator
-import typings.doubleclickGpt.AnonRestrictDataProcessing
+import typings.doubleclickGpt.anon.ChangeCorrelator
+import typings.doubleclickGpt.anon.RestrictDataProcessing
 import typings.doubleclickGpt.doubleclickGptNumbers.`0`
 import typings.doubleclickGpt.doubleclickGptNumbers.`1`
 import typings.std.Element
@@ -39,7 +39,7 @@ trait PubAdsService extends Service {
   def getTargetingKeys(): js.Array[String] = js.native
   def refresh(): Unit = js.native
   def refresh(opt_slots: js.Array[Slot]): Unit = js.native
-  def refresh(opt_slots: js.Array[Slot], opt_options: AnonChangeCorrelator): Unit = js.native
+  def refresh(opt_slots: js.Array[Slot], opt_options: ChangeCorrelator): Unit = js.native
   def set(key: String, value: String): PubAdsService = js.native
   def setCategoryExclusion(categoryExclusion: String): PubAdsService = js.native
   def setCentering(centerAds: Boolean): Unit = js.native
@@ -51,7 +51,7 @@ trait PubAdsService extends Service {
   def setLocation(latitudeOrAddress: Double): PubAdsService = js.native
   def setLocation(latitudeOrAddress: Double, opt_longitude: Double): PubAdsService = js.native
   def setLocation(latitudeOrAddress: Double, opt_longitude: Double, opt_radius: Double): PubAdsService = js.native
-  def setPrivacySettings(settings: AnonRestrictDataProcessing): Slot = js.native
+  def setPrivacySettings(settings: RestrictDataProcessing): Slot = js.native
   def setPublisherProvidedId(ppid: String): PubAdsService = js.native
   @JSName("setRequestNonPersonalizedAds")
   def setRequestNonPersonalizedAds_0(nonPersonalizedAds: `0`): PubAdsService = js.native

@@ -14,10 +14,13 @@ trait IContextualizedTypeStats extends js.Object {
 
 object IContextualizedTypeStats {
   @scala.inline
-  def apply(context: IStatsContext = null, perTypeStat: StringDictionary[ITypeStat] = null): IContextualizedTypeStats = {
+  def apply(
+    context: js.UndefOr[Null | IStatsContext] = js.undefined,
+    perTypeStat: js.UndefOr[Null | StringDictionary[ITypeStat]] = js.undefined
+  ): IContextualizedTypeStats = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (perTypeStat != null) __obj.updateDynamic("perTypeStat")(perTypeStat.asInstanceOf[js.Any])
+    if (!js.isUndefined(context)) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (!js.isUndefined(perTypeStat)) __obj.updateDynamic("perTypeStat")(perTypeStat.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContextualizedTypeStats]
   }
 }

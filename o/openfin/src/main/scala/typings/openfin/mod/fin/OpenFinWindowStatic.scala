@@ -3,7 +3,7 @@ package typings.openfin.mod.fin
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
-import typings.openfin.AnonHttpResponseCode
+import typings.openfin.anon.HttpResponseCode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,12 +27,12 @@ trait OpenFinWindowStatic
 Instantiable1[/* options */ WindowOption, OpenFinWindow]
      with Instantiable2[
       /* options */ WindowOption, 
-      /* callback */ js.Function1[/* successObj */ AnonHttpResponseCode, Unit], 
+      /* callback */ js.Function1[/* successObj */ HttpResponseCode, Unit], 
       OpenFinWindow
     ]
      with Instantiable3[
       /* options */ WindowOption, 
-      /* callback */ js.Function1[/* successObj */ AnonHttpResponseCode, Unit], 
+      /* callback */ js.Function1[/* successObj */ HttpResponseCode, Unit], 
       /* errorCallback */ js.Function2[/* reason */ String, /* errorObj */ NetworkErrorInfo, Unit], 
       OpenFinWindow
     ] {

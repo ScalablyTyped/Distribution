@@ -17,15 +17,11 @@ object DependencyInfo {
   def apply(
     pkgPath: String,
     installedVersion: String = null,
-    isInstalled: js.UndefOr[Boolean] = js.undefined,
-    isValid: js.UndefOr[Boolean] = js.undefined,
+    isInstalled: Boolean = null.asInstanceOf[Boolean],
+    isValid: Boolean = null.asInstanceOf[Boolean],
     supportedRange: String = null
   ): DependencyInfo = {
-    val __obj = js.Dynamic.literal(pkgPath = pkgPath.asInstanceOf[js.Any])
-    if (installedVersion != null) __obj.updateDynamic("installedVersion")(installedVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInstalled)) __obj.updateDynamic("isInstalled")(isInstalled.asInstanceOf[js.Any])
-    if (!js.isUndefined(isValid)) __obj.updateDynamic("isValid")(isValid.asInstanceOf[js.Any])
-    if (supportedRange != null) __obj.updateDynamic("supportedRange")(supportedRange.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(pkgPath = pkgPath.asInstanceOf[js.Any], installedVersion = installedVersion.asInstanceOf[js.Any], isInstalled = isInstalled.asInstanceOf[js.Any], isValid = isValid.asInstanceOf[js.Any], supportedRange = supportedRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[DependencyInfo]
   }
 }

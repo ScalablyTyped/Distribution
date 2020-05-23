@@ -16,14 +16,14 @@ object RadialGaugePointerItem {
   def apply(
     cap: RadialGaugePointerItemCap = null,
     color: String = null,
-    length: Int | Double = null,
-    value: Int | Double = null
+    length: js.UndefOr[Double] = js.undefined,
+    value: js.UndefOr[Double] = js.undefined
   ): RadialGaugePointerItem = {
     val __obj = js.Dynamic.literal()
     if (cap != null) __obj.updateDynamic("cap")(cap.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadialGaugePointerItem]
   }
 }

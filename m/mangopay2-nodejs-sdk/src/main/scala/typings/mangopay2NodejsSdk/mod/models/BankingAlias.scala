@@ -1,6 +1,6 @@
 package typings.mangopay2NodejsSdk.mod.models
 
-import typings.mangopay2NodejsSdk.PartialBankingAliasData
+import typings.mangopay2NodejsSdk.anon.PartialBankingAliasData
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.IBAN
 import typings.mangopay2NodejsSdk.mod.bankingAlias.BankingAliasType
 import typings.mangopay2NodejsSdk.mod.bankingAlias.IBANBankingAliasData

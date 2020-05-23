@@ -29,12 +29,12 @@ object DescribeJobExecutionRequest {
   def apply(
     jobId: DescribeJobExecutionJobId,
     thingName: ThingName,
-    executionNumber: Int | Double = null,
-    includeJobDocument: js.UndefOr[Boolean] = js.undefined
+    executionNumber: js.UndefOr[ExecutionNumber] = js.undefined,
+    includeJobDocument: js.UndefOr[IncludeJobDocument] = js.undefined
   ): DescribeJobExecutionRequest = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], thingName = thingName.asInstanceOf[js.Any])
-    if (executionNumber != null) __obj.updateDynamic("executionNumber")(executionNumber.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeJobDocument)) __obj.updateDynamic("includeJobDocument")(includeJobDocument.asInstanceOf[js.Any])
+    if (!js.isUndefined(executionNumber)) __obj.updateDynamic("executionNumber")(executionNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeJobDocument)) __obj.updateDynamic("includeJobDocument")(includeJobDocument.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeJobExecutionRequest]
   }
 }

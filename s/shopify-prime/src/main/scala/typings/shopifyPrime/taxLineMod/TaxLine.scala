@@ -24,16 +24,16 @@ object TaxLine {
   @scala.inline
   def apply(
     admin_graphql_api_id: String = null,
-    id: Int | Double = null,
-    price: Int | Double = null,
-    rate: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
+    price: js.UndefOr[Double] = js.undefined,
+    rate: js.UndefOr[Double] = js.undefined,
     title: String = null
   ): TaxLine = {
     val __obj = js.Dynamic.literal()
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
-    if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(price)) __obj.updateDynamic("price")(price.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rate)) __obj.updateDynamic("rate")(rate.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaxLine]
   }

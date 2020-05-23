@@ -190,8 +190,8 @@ object InfoWindowOptions {
     fontSize: String = null,
     map: Map[Element] = null,
     marker: Marker = null,
-    maxHeight: Int | Double = null,
-    maxWidth: Int | Double = null,
+    maxHeight: js.UndefOr[Double] = js.undefined,
+    maxWidth: js.UndefOr[Double] = js.undefined,
     offset: Offset = null,
     openOnMarkerClick: js.UndefOr[Boolean] = js.undefined,
     padding: String = null,
@@ -208,26 +208,26 @@ object InfoWindowOptions {
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
     if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeButtonMarkup)) __obj.updateDynamic("closeButtonMarkup")(closeButtonMarkup.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnMapClick)) __obj.updateDynamic("closeOnMapClick")(closeOnMapClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeWhenOthersOpen)) __obj.updateDynamic("closeWhenOthersOpen")(closeWhenOthersOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeButtonMarkup)) __obj.updateDynamic("closeButtonMarkup")(closeButtonMarkup.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnMapClick)) __obj.updateDynamic("closeOnMapClick")(closeOnMapClick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeWhenOthersOpen)) __obj.updateDynamic("closeWhenOthersOpen")(closeWhenOthersOpen.get.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (edgeOffset != null) __obj.updateDynamic("edgeOffset")(edgeOffset.asInstanceOf[js.Any])
     if (fontColor != null) __obj.updateDynamic("fontColor")(fontColor.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(openOnMarkerClick)) __obj.updateDynamic("openOnMarkerClick")(openOnMarkerClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(openOnMarkerClick)) __obj.updateDynamic("openOnMarkerClick")(openOnMarkerClick.get.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (!js.isUndefined(panOnOpen)) __obj.updateDynamic("panOnOpen")(panOnOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(panOnOpen)) __obj.updateDynamic("panOnOpen")(panOnOpen.get.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (pointer != null) __obj.updateDynamic("pointer")(pointer.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton.get.asInstanceOf[js.Any])
     if (wrapperClass != null) __obj.updateDynamic("wrapperClass")(wrapperClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[InfoWindowOptions]
   }

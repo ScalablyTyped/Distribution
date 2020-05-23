@@ -19,24 +19,24 @@ trait SpreadsheetInsertSheetOptions extends js.Object {
 object SpreadsheetInsertSheetOptions {
   @scala.inline
   def apply(
-    columnWidth: Int | Double = null,
-    columns: Int | Double = null,
+    columnWidth: js.UndefOr[Double] = js.undefined,
+    columns: js.UndefOr[Double] = js.undefined,
     data: js.Any = null,
     dataSource: DataSource = null,
-    headerHeight: Int | Double = null,
-    headerWidth: Int | Double = null,
-    rowHeight: Int | Double = null,
-    rows: Int | Double = null
+    headerHeight: js.UndefOr[Double] = js.undefined,
+    headerWidth: js.UndefOr[Double] = js.undefined,
+    rowHeight: js.UndefOr[Double] = js.undefined,
+    rows: js.UndefOr[Double] = js.undefined
   ): SpreadsheetInsertSheetOptions = {
     val __obj = js.Dynamic.literal()
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnWidth)) __obj.updateDynamic("columnWidth")(columnWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (headerHeight != null) __obj.updateDynamic("headerHeight")(headerHeight.asInstanceOf[js.Any])
-    if (headerWidth != null) __obj.updateDynamic("headerWidth")(headerWidth.asInstanceOf[js.Any])
-    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerHeight)) __obj.updateDynamic("headerHeight")(headerHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerWidth)) __obj.updateDynamic("headerWidth")(headerWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowHeight)) __obj.updateDynamic("rowHeight")(rowHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetInsertSheetOptions]
   }
 }

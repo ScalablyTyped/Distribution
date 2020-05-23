@@ -1,7 +1,7 @@
 package typings.babylonjs.abstractMeshMod
 
-import typings.babylonjs.AnonInd
-import typings.babylonjs.AnonX
+import typings.babylonjs.anon.Ind
+import typings.babylonjs.anon.X
 import typings.babylonjs.mathVectorMod.Matrix
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.typesMod.IndicesArray
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 /** @hidden */
 trait FacetDataStorage extends js.Object {
   var bbSize: Vector3
-  var depthSortedFacets: js.Array[AnonInd]
+  var depthSortedFacets: js.Array[Ind]
   var depthSortedIndices: IndicesArray
   var facetDataEnabled: Boolean
   var facetDepthSort: Boolean
@@ -27,21 +27,21 @@ trait FacetDataStorage extends js.Object {
   var invertedMatrix: Matrix
   var partitioningBBoxRatio: Double
   var partitioningSubdivisions: Double
-  var subDiv: AnonX
-  def facetDepthSortFunction(f1: AnonInd, f2: AnonInd): Double
+  var subDiv: X
+  def facetDepthSortFunction(f1: Ind, f2: Ind): Double
 }
 
 object FacetDataStorage {
   @scala.inline
   def apply(
     bbSize: Vector3,
-    depthSortedFacets: js.Array[AnonInd],
+    depthSortedFacets: js.Array[Ind],
     depthSortedIndices: IndicesArray,
     facetDataEnabled: Boolean,
     facetDepthSort: Boolean,
     facetDepthSortEnabled: Boolean,
     facetDepthSortFrom: Vector3,
-    facetDepthSortFunction: (AnonInd, AnonInd) => Double,
+    facetDepthSortFunction: (Ind, Ind) => Double,
     facetDepthSortOrigin: Vector3,
     facetNb: Double,
     facetNormals: js.Array[Vector3],
@@ -51,7 +51,7 @@ object FacetDataStorage {
     invertedMatrix: Matrix,
     partitioningBBoxRatio: Double,
     partitioningSubdivisions: Double,
-    subDiv: AnonX
+    subDiv: X
   ): FacetDataStorage = {
     val __obj = js.Dynamic.literal(bbSize = bbSize.asInstanceOf[js.Any], depthSortedFacets = depthSortedFacets.asInstanceOf[js.Any], depthSortedIndices = depthSortedIndices.asInstanceOf[js.Any], facetDataEnabled = facetDataEnabled.asInstanceOf[js.Any], facetDepthSort = facetDepthSort.asInstanceOf[js.Any], facetDepthSortEnabled = facetDepthSortEnabled.asInstanceOf[js.Any], facetDepthSortFrom = facetDepthSortFrom.asInstanceOf[js.Any], facetDepthSortFunction = js.Any.fromFunction2(facetDepthSortFunction), facetDepthSortOrigin = facetDepthSortOrigin.asInstanceOf[js.Any], facetNb = facetNb.asInstanceOf[js.Any], facetNormals = facetNormals.asInstanceOf[js.Any], facetParameters = facetParameters.asInstanceOf[js.Any], facetPartitioning = facetPartitioning.asInstanceOf[js.Any], facetPositions = facetPositions.asInstanceOf[js.Any], invertedMatrix = invertedMatrix.asInstanceOf[js.Any], partitioningBBoxRatio = partitioningBBoxRatio.asInstanceOf[js.Any], partitioningSubdivisions = partitioningSubdivisions.asInstanceOf[js.Any], subDiv = subDiv.asInstanceOf[js.Any])
     __obj.asInstanceOf[FacetDataStorage]

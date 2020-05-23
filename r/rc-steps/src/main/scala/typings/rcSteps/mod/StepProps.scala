@@ -1,6 +1,6 @@
 package typings.rcSteps.mod
 
-import typings.rcSteps.AnonError
+import typings.rcSteps.anon.Error
 import typings.rcSteps.rcStepsStrings.error
 import typings.rcSteps.rcStepsStrings.finish
 import typings.rcSteps.rcStepsStrings.process
@@ -20,7 +20,7 @@ trait StepProps extends js.Object {
   var disabled: js.UndefOr[Boolean] = js.undefined
   var icon: js.UndefOr[ReactNode] = js.undefined
   var iconPrefix: js.UndefOr[String] = js.undefined
-  var icons: js.UndefOr[AnonError] = js.undefined
+  var icons: js.UndefOr[Error] = js.undefined
   var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   var onStepClick: js.UndefOr[js.Function1[/* stepIndex */ Double, Unit]] = js.undefined
   // The following are undocumented upstream, but listed in PropTypes
@@ -40,7 +40,7 @@ object StepProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     icon: ReactNode = null,
     iconPrefix: String = null,
-    icons: AnonError = null,
+    icons: Error = null,
     onClick: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     onStepClick: /* stepIndex */ Double => Unit = null,
     prefixCls: String = null,
@@ -53,14 +53,14 @@ object StepProps {
   ): StepProps = {
     val __obj = js.Dynamic.literal()
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (iconPrefix != null) __obj.updateDynamic("iconPrefix")(iconPrefix.asInstanceOf[js.Any])
     if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onStepClick != null) __obj.updateDynamic("onStepClick")(js.Any.fromFunction1(onStepClick))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(progressDot)) __obj.updateDynamic("progressDot")(progressDot.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressDot)) __obj.updateDynamic("progressDot")(progressDot.get.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (subTitle != null) __obj.updateDynamic("subTitle")(subTitle.asInstanceOf[js.Any])

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object scanQRCode extends js.Object {
   /**
-  	 * 调起微信扫一扫接口
-  	 */
+    * 调起微信扫一扫接口
+    */
   def apply(params: IscanQRCode): Unit = js.native
 }
 

@@ -29,11 +29,11 @@ object ListThingRegistrationTaskReportsRequest {
   def apply(
     reportType: ReportType,
     taskId: TaskId,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[RegistryMaxResults] = js.undefined,
     nextToken: NextToken = null
   ): ListThingRegistrationTaskReportsRequest = {
     val __obj = js.Dynamic.literal(reportType = reportType.asInstanceOf[js.Any], taskId = taskId.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListThingRegistrationTaskReportsRequest]
   }

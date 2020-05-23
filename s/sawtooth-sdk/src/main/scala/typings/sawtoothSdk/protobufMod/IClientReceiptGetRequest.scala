@@ -11,9 +11,9 @@ trait IClientReceiptGetRequest extends js.Object {
 
 object IClientReceiptGetRequest {
   @scala.inline
-  def apply(transactionIds: js.Array[String] = null): IClientReceiptGetRequest = {
+  def apply(transactionIds: js.UndefOr[Null | js.Array[String]] = js.undefined): IClientReceiptGetRequest = {
     val __obj = js.Dynamic.literal()
-    if (transactionIds != null) __obj.updateDynamic("transactionIds")(transactionIds.asInstanceOf[js.Any])
+    if (!js.isUndefined(transactionIds)) __obj.updateDynamic("transactionIds")(transactionIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientReceiptGetRequest]
   }
 }

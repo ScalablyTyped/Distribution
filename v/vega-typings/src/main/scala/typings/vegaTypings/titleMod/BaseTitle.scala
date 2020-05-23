@@ -14,6 +14,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BaseTitle extends js.Object {
+  // ---------- Shared Text Properties ----------
   /**
     * Horizontal text alignment for title text. One of `"left"`, `"center"`, or `"right"`.
     */
@@ -26,10 +27,19 @@ trait BaseTitle extends js.Object {
     * Angle in degrees of title and subtitle text.
     */
   var angle: js.UndefOr[NumberValue] = js.undefined
+  // ---------- ARIA ----------
+  /**
+    * A boolean flag indicating if [ARIA attributes](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) should be included (SVG output only).
+    * If `false`, the "aria-hidden" attribute will be set on the output SVG group, removing the title from the ARIA accessibility tree.
+    *
+    * __Default value:__ `true`
+    */
+  var aria: js.UndefOr[Boolean] = js.undefined
   /**
     * Vertical text baseline for title and subtitle text. One of `"alphabetic"` (default), `"top"`, `"middle"`, `"bottom"`, `"line-top"`, or `"line-bottom"`. The `"line-top"` and `"line-bottom"` values operate similarly to `"top"` and `"bottom"`, but are calculated relative to the *lineHeight* rather than *fontSize* alone.
     */
   var baseline: js.UndefOr[TextBaselineValue] = js.undefined
+  // ---------- Title Text ----------
   /**
     * Text color for title text.
     */
@@ -83,6 +93,7 @@ trait BaseTitle extends js.Object {
     * Default title orientation (`"top"`, `"bottom"`, `"left"`, or `"right"`)
     */
   var orient: js.UndefOr[TitleOrient | SignalRef] = js.undefined
+  // ---------- Subtitle Text ----------
   /**
     * Text color for subtitle text.
     */
@@ -114,16 +125,26 @@ trait BaseTitle extends js.Object {
     * The padding in pixels between title and subtitle text.
     */
   var subtitlePadding: js.UndefOr[NumberValue] = js.undefined
+  /**
+    * 	The integer z-index indicating the layering of the title group relative to other axis, mark, and legend groups.
+    *
+    * __Default value:__ `0`.
+    *
+    * @TJS-type integer
+    * @minimum 0
+    */
+  var zindex: js.UndefOr[Double] = js.undefined
 }
 
 object BaseTitle {
   @scala.inline
   def apply(
     align: AlignValue = null,
-    anchor: AnchorValue = null,
+    anchor: js.UndefOr[Null | AnchorValue] = js.undefined,
     angle: NumberValue = null,
+    aria: js.UndefOr[Boolean] = js.undefined,
     baseline: TextBaselineValue = null,
-    color: ColorValue = null,
+    color: js.UndefOr[Null | ColorValue] = js.undefined,
     dx: NumberValue = null,
     dy: NumberValue = null,
     font: StringValue = null,
@@ -135,20 +156,22 @@ object BaseTitle {
     lineHeight: NumberValue = null,
     offset: NumberValue = null,
     orient: TitleOrient | SignalRef = null,
-    subtitleColor: ColorValue = null,
+    subtitleColor: js.UndefOr[Null | ColorValue] = js.undefined,
     subtitleFont: StringValue = null,
     subtitleFontSize: NumberValue = null,
     subtitleFontStyle: FontStyleValue = null,
     subtitleFontWeight: FontWeightValue = null,
     subtitleLineHeight: NumberValue = null,
-    subtitlePadding: NumberValue = null
+    subtitlePadding: NumberValue = null,
+    zindex: js.UndefOr[Double] = js.undefined
   ): BaseTitle = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
+    if (!js.isUndefined(anchor)) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (!js.isUndefined(aria)) __obj.updateDynamic("aria")(aria.get.asInstanceOf[js.Any])
     if (baseline != null) __obj.updateDynamic("baseline")(baseline.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
     if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
@@ -160,13 +183,14 @@ object BaseTitle {
     if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (orient != null) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])
-    if (subtitleColor != null) __obj.updateDynamic("subtitleColor")(subtitleColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(subtitleColor)) __obj.updateDynamic("subtitleColor")(subtitleColor.asInstanceOf[js.Any])
     if (subtitleFont != null) __obj.updateDynamic("subtitleFont")(subtitleFont.asInstanceOf[js.Any])
     if (subtitleFontSize != null) __obj.updateDynamic("subtitleFontSize")(subtitleFontSize.asInstanceOf[js.Any])
     if (subtitleFontStyle != null) __obj.updateDynamic("subtitleFontStyle")(subtitleFontStyle.asInstanceOf[js.Any])
     if (subtitleFontWeight != null) __obj.updateDynamic("subtitleFontWeight")(subtitleFontWeight.asInstanceOf[js.Any])
     if (subtitleLineHeight != null) __obj.updateDynamic("subtitleLineHeight")(subtitleLineHeight.asInstanceOf[js.Any])
     if (subtitlePadding != null) __obj.updateDynamic("subtitlePadding")(subtitlePadding.asInstanceOf[js.Any])
+    if (!js.isUndefined(zindex)) __obj.updateDynamic("zindex")(zindex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseTitle]
   }
 }

@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.Diagram
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object TextWrapping extends js.Object {
   //Enables Line-break at normal word break points with longer word overflows
   @js.native
   sealed trait WrapWithOverflow extends TextWrapping
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TextWrapping with Double] = js.native
-  /* 0 */ @js.native
-  object NoWrap extends TopLevel[NoWrap with Double]
-  
-  /* 1 */ @js.native
-  object Wrap extends TopLevel[Wrap with Double]
-  
-  /* 2 */ @js.native
-  object WrapWithOverflow extends TopLevel[WrapWithOverflow with Double]
   
 }
 

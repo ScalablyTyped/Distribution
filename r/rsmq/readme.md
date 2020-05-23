@@ -1,7 +1,7 @@
 
 # Scala.js typings for rsmq
 
-Typings are for version 0.12.0
+Typings are for version 0.12.2
 
 ## Library description:
 A really simple message queue based on Redis

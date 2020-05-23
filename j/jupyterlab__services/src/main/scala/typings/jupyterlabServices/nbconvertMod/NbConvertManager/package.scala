@@ -11,5 +11,5 @@ package object NbConvertManager {
   type IExportFormats = /**
     * The list of supported export formats.
     */
-  org.scalablytyped.runtime.StringDictionary[typings.jupyterlabServices.AnonOutputmimetype]
+  org.scalablytyped.runtime.StringDictionary[typings.jupyterlabServices.anon.Outputmimetype]
 }

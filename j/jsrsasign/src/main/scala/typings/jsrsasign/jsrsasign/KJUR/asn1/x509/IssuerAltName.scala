@@ -1,6 +1,5 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
-import typings.jsrsasign.ArrayParamUriParamcritica
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,11 +32,28 @@ import scala.scalajs.js.annotation._
   *   array: [{uri: 'http://aaa.com/'}, {uri: 'http://bbb.com/'}]
   * });
   */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.IssuerAltName")
-@js.native
-class IssuerAltName () extends Extension {
-  def this(params: ArrayParamUriParamcritica) = this()
-  def getExtnValueHex(): String = js.native
-  def setNameArray(paramsArray: js.Array[UriParam]): Unit = js.native
+trait IssuerAltName extends Extension {
+  def getExtnValueHex(): String
+  def setNameArray(paramsArray: js.Array[UriParam]): Unit
+}
+
+object IssuerAltName {
+  @scala.inline
+  def apply(
+    getEncodedHex: () => String,
+    getExtnValueHex: () => String,
+    getFreshValueHex: () => String,
+    getLengthHexFromValue: () => String,
+    getValueHex: () => String,
+    hL: String,
+    hT: String,
+    hTLV: String,
+    hV: String,
+    isModified: String,
+    setNameArray: js.Array[UriParam] => Unit
+  ): IssuerAltName = {
+    val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex), getExtnValueHex = js.Any.fromFunction0(getExtnValueHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setNameArray = js.Any.fromFunction1(setNameArray))
+    __obj.asInstanceOf[IssuerAltName]
+  }
 }
 

@@ -49,7 +49,7 @@ class Connection protected () extends EventEmitter {
     * Commit a transaction.
     * There should be an active transaction. That is, beginTransaction should have been previously called.
     * @param callback The callback is called when the request to commit the transaction has completed, either successfully or with an error. If an error occured then err will describe the error.
-    * 					As only one request at a time may be executed on a connection, another request should not be initiated until this callback is called.
+    *                     As only one request at a time may be executed on a connection, another request should not be initiated until this callback is called.
     */
   def commitTransaction(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
   /**
@@ -132,19 +132,19 @@ class Connection protected () extends EventEmitter {
   /**
     * Reset the connection to its initial state. Can be useful for connection pool implementations.
     * @param callback The callback is called when the connection reset has completed, either successfully or with an error. If an error occured then err will describe the error.
-    * 					As only one request at a time may be executed on a connection, another request should not be initiated until this callback is called.
+    *                     As only one request at a time may be executed on a connection, another request should not be initiated until this callback is called.
     */
   def reset(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
   /**
     * Rollback a transaction. There should be an active transaction. That is, beginTransaction should have been previously called.
     * @param callback The callback is called when the request to rollback the transaction has completed, either successfully or with an error. If an error occured then err will describe the error.
-    * 						As only one request at a time may be executed on a connection, another request should not be initiated until this callback is called.
+    *                         As only one request at a time may be executed on a connection, another request should not be initiated until this callback is called.
     */
   def rollbackTransaction(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
   /**
     * Set a savepoint within a transaction. There should be an active transaction. That is, beginTransaction should have been previously called.
     * @param callback The callback is called when the request to set a savepoint within the transaction has completed, either successfully or with an error. If an error occured then err will describe the error.
-    * 					As only one request at a time may be executed on a connection, another request should not be initiated until this callback is called.
+    *                     As only one request at a time may be executed on a connection, another request should not be initiated until this callback is called.
     */
   def saveTransaction(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
   /**
@@ -154,7 +154,7 @@ class Connection protected () extends EventEmitter {
     *                  If an error occured, then err will describe the error. If no error occured, the callback should perform its work and eventually call done with an error or null
     *                  (to trigger a transaction rollback or a transaction commit) and an additional completion callback that will be called when the request to rollback or commit the current transaction
     *                  has completed, either successfully or with an error. Additional arguments given to done will be passed through to this callback.
-    * 					As only one request at a time may be executed on a connection, another request should not be initiated until this callback is called.
+    *                     As only one request at a time may be executed on a connection, another request should not be initiated until this callback is called.
     * @param name A string representing a name to associate with the transaction. Optional, and defaults to an empty string. In case of a nested transaction, naming the transaction name has no effect.
     * @param isolationLevel The isolation level that the transaction is to be run with.
     */

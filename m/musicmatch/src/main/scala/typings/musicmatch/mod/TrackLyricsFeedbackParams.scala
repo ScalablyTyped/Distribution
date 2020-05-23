@@ -22,13 +22,13 @@ object TrackLyricsFeedbackParams {
   @scala.inline
   def apply(
     feedback: wrong_lyrics | wrong_attribution | bad_characters | lines_too_long | wrong_verses | wrong_formatting = null,
-    lyrics_id: Int | Double = null,
-    track_id: Int | Double = null
+    lyrics_id: js.UndefOr[Double] = js.undefined,
+    track_id: js.UndefOr[Double] = js.undefined
   ): TrackLyricsFeedbackParams = {
     val __obj = js.Dynamic.literal()
     if (feedback != null) __obj.updateDynamic("feedback")(feedback.asInstanceOf[js.Any])
-    if (lyrics_id != null) __obj.updateDynamic("lyrics_id")(lyrics_id.asInstanceOf[js.Any])
-    if (track_id != null) __obj.updateDynamic("track_id")(track_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(lyrics_id)) __obj.updateDynamic("lyrics_id")(lyrics_id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(track_id)) __obj.updateDynamic("track_id")(track_id.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackLyricsFeedbackParams]
   }
 }

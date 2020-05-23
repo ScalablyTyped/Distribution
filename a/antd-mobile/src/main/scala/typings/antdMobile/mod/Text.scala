@@ -1,6 +1,6 @@
 package typings.antdMobile.mod
 
-import typings.antdMobile.AnonComponent
+import typings.antdMobile.anon.Component
 import typings.antdMobile.textMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,6 @@ class Text () extends default
 @JSImport("antd-mobile", "Text")
 @js.native
 object Text extends js.Object {
-  var defaultProps: AnonComponent = js.native
+  var defaultProps: Component = js.native
 }
 

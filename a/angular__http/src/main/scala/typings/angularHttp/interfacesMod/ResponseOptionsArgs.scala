@@ -21,20 +21,20 @@ trait ResponseOptionsArgs extends js.Object {
 object ResponseOptionsArgs {
   @scala.inline
   def apply(
-    body: String | js.Object | FormData | ArrayBuffer | Blob = null,
-    headers: Headers = null,
-    status: Int | Double = null,
-    statusText: String = null,
-    `type`: ResponseType = null,
-    url: String = null
+    body: js.UndefOr[Null | String | js.Object | FormData | ArrayBuffer | Blob] = js.undefined,
+    headers: js.UndefOr[Null | Headers] = js.undefined,
+    status: js.UndefOr[Null | Double] = js.undefined,
+    statusText: js.UndefOr[Null | String] = js.undefined,
+    `type`: js.UndefOr[Null | ResponseType] = js.undefined,
+    url: js.UndefOr[Null | String] = js.undefined
   ): ResponseOptionsArgs = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusText != null) __obj.updateDynamic("statusText")(statusText.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (!js.isUndefined(body)) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (!js.isUndefined(headers)) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusText)) __obj.updateDynamic("statusText")(statusText.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(url)) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseOptionsArgs]
   }
 }

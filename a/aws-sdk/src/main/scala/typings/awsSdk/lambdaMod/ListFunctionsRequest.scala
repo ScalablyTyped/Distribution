@@ -30,13 +30,13 @@ object ListFunctionsRequest {
     FunctionVersion: FunctionVersion = null,
     Marker: String = null,
     MasterRegion: MasterRegion = null,
-    MaxItems: Int | Double = null
+    MaxItems: js.UndefOr[MaxListItems] = js.undefined
   ): ListFunctionsRequest = {
     val __obj = js.Dynamic.literal()
     if (FunctionVersion != null) __obj.updateDynamic("FunctionVersion")(FunctionVersion.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     if (MasterRegion != null) __obj.updateDynamic("MasterRegion")(MasterRegion.asInstanceOf[js.Any])
-    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListFunctionsRequest]
   }
 }

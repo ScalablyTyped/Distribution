@@ -1,0 +1,99 @@
+package typings.ipp.mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.ipp.ippStrings.`chamber-humidity`
+  - typings.ipp.ippStrings.`chamber-temperature`
+  - typings.ipp.ippStrings.`confirmation-sheet-print`
+  - typings.ipp.ippStrings.copies
+  - typings.ipp.ippStrings.`cover-back`
+  - typings.ipp.ippStrings.`cover-front`
+  - typings.ipp.ippStrings.`cover-sheet-info`
+  - typings.ipp.ippStrings.`destination-uris`
+  - typings.ipp.ippStrings.finishings
+  - typings.ipp.ippStrings.`finishings-col`
+  - typings.ipp.ippStrings.`font-name-requested`
+  - typings.ipp.ippStrings.`font-size-requested`
+  - typings.ipp.ippStrings.`force-front-side`
+  - typings.ipp.ippStrings.`imposition-template`
+  - typings.ipp.ippStrings.`insert-sheet`
+  - typings.ipp.ippStrings.`job-account-id`
+  - typings.ipp.ippStrings.`job-account-type`
+  - typings.ipp.ippStrings.`job-accounting-sheets`
+  - typings.ipp.ippStrings.`job-accounting-user-id`
+  - typings.ipp.ippStrings.`job-cancel-after`
+  - typings.ipp.ippStrings.`job-copies`
+  - typings.ipp.ippStrings.`job-cover-back`
+  - typings.ipp.ippStrings.`job-cover-front`
+  - typings.ipp.ippStrings.`job-delay-output-until`
+  - typings.ipp.ippStrings.`job-delay-output-until-time`
+  - typings.ipp.ippStrings.`job-error-action`
+  - typings.ipp.ippStrings.`job-error-sheet`
+  - typings.ipp.ippStrings.`job-finishings`
+  - typings.ipp.ippStrings.`job-finishings-col`
+  - typings.ipp.ippStrings.`job-hold-until`
+  - typings.ipp.ippStrings.`job-hold-until-time`
+  - typings.ipp.ippStrings.`job-message-to-operator`
+  - typings.ipp.ippStrings.`job-pages-per-set`
+  - typings.ipp.ippStrings.`job-phone-number`
+  - typings.ipp.ippStrings.`job-priority`
+  - typings.ipp.ippStrings.`job-recipient-name`
+  - typings.ipp.ippStrings.`job-retain-until`
+  - typings.ipp.ippStrings.`job-retain-until-interval`
+  - typings.ipp.ippStrings.`job-retain-until-time`
+  - typings.ipp.ippStrings.`job-save-disposition`
+  - typings.ipp.ippStrings.`job-sheet-message`
+  - typings.ipp.ippStrings.`job-sheets`
+  - typings.ipp.ippStrings.`job-sheets-col`
+  - typings.ipp.ippStrings.`materials-col`
+  - typings.ipp.ippStrings.media
+  - typings.ipp.ippStrings.`media-col`
+  - typings.ipp.ippStrings.`media-input-tray-check`
+  - typings.ipp.ippStrings.`multiple-document-handling`
+  - typings.ipp.ippStrings.`multiple-object-handling`
+  - typings.ipp.ippStrings.`number-of-retries`
+  - typings.ipp.ippStrings.`number-up`
+  - typings.ipp.ippStrings.`orientation-requested`
+  - typings.ipp.ippStrings.`output-bin`
+  - typings.ipp.ippStrings.`output-device`
+  - typings.ipp.ippStrings.overrides
+  - typings.ipp.ippStrings.`page-delivery`
+  - typings.ipp.ippStrings.`page-order-received`
+  - typings.ipp.ippStrings.`page-ranges`
+  - typings.ipp.ippStrings.`pages-per-subset`
+  - typings.ipp.ippStrings.`pclm-source-resolution`
+  - typings.ipp.ippStrings.`pdl-init-file`
+  - typings.ipp.ippStrings.`platform-temperature`
+  - typings.ipp.ippStrings.`presentation-direction-number-up`
+  - typings.ipp.ippStrings.`print-accuracy`
+  - typings.ipp.ippStrings.`print-base`
+  - typings.ipp.ippStrings.`print-color-mode`
+  - typings.ipp.ippStrings.`print-content-optimize`
+  - typings.ipp.ippStrings.`print-objects`
+  - typings.ipp.ippStrings.`print-quality`
+  - typings.ipp.ippStrings.`print-rendering-intent`
+  - typings.ipp.ippStrings.`print-scaling`
+  - typings.ipp.ippStrings.`print-supports`
+  - typings.ipp.ippStrings.`printer-resolution`
+  - typings.ipp.ippStrings.`proof-print`
+  - typings.ipp.ippStrings.`retry-interval`
+  - typings.ipp.ippStrings.`retry-time-out`
+  - typings.ipp.ippStrings.`separator-sheets`
+  - typings.ipp.ippStrings.sides
+  - typings.ipp.ippStrings.`x-image-position`
+  - typings.ipp.ippStrings.`x-image-shift`
+  - typings.ipp.ippStrings.`x-side1-image-shift`
+  - typings.ipp.ippStrings.`x-side2-image-shift`
+  - typings.ipp.ippStrings.`y-image-position`
+  - typings.ipp.ippStrings.`y-image-shift`
+  - typings.ipp.ippStrings.`y-side1-image-shift`
+  - typings.ipp.ippStrings.`y-side2-image-shift`
+  - typings.ipp.ippStrings.`document-copies`
+  - typings.ipp.ippStrings.`document-numbers`
+  - typings.ipp.ippStrings.pages
+*/
+trait Overrides extends js.Object
+

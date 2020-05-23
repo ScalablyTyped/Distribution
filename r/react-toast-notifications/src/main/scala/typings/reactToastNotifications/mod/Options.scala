@@ -18,7 +18,7 @@ object Options {
     onDismiss: /* id */ String => Unit = null
   ): Options = {
     val __obj = js.Dynamic.literal(appearance = appearance.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoDismiss)) __obj.updateDynamic("autoDismiss")(autoDismiss.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoDismiss)) __obj.updateDynamic("autoDismiss")(autoDismiss.get.asInstanceOf[js.Any])
     if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction1(onDismiss))
     __obj.asInstanceOf[Options]
   }

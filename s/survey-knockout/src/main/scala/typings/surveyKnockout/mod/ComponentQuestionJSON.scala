@@ -11,6 +11,8 @@ class ComponentQuestionJSON protected () extends js.Object {
   val isComposite: Boolean = js.native
   var json: js.Any = js.native
   var name: String = js.native
+  def onAfterRender(question: Question, htmlElement: js.Any): Unit = js.native
+  def onAfterRenderContentElement(question: Question, element: Question, htmlElement: js.Any): Unit = js.native
   def onCreated(question: Question): Unit = js.native
   def onInit(): Unit = js.native
   def onItemValuePropertyChanged(question: Question, item: ItemValue, propertyName: String, name: String, newValue: js.Any): Unit = js.native

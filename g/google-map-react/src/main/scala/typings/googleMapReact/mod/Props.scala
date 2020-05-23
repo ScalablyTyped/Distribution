@@ -1,6 +1,6 @@
 package typings.googleMapReact.mod
 
-import typings.googleMapReact.AnonMap
+import typings.googleMapReact.anon.Map
 import typings.react.mod.HTMLProps
 import typings.std.HTMLDivElement
 import scala.scalajs.js
@@ -39,7 +39,7 @@ trait Props extends js.Object {
   var onClick: js.UndefOr[js.Function1[/* value */ ClickEventValue, _]] = js.undefined
   var onDrag: js.UndefOr[js.Function1[/* map */ js.Any, Unit]] = js.undefined
   var onDragEnd: js.UndefOr[js.Function1[/* map */ js.Any, Unit]] = js.undefined
-  var onGoogleApiLoaded: js.UndefOr[js.Function1[/* maps */ AnonMap, Unit]] = js.undefined
+  var onGoogleApiLoaded: js.UndefOr[js.Function1[/* maps */ Map, Unit]] = js.undefined
   var onMapTypeIdChange: js.UndefOr[js.Function1[/* args */ js.Any, Unit]] = js.undefined
   var onTilesLoaded: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onZoomAnimationEnd: js.UndefOr[js.Function1[/* args */ js.Any, Unit]] = js.undefined
@@ -59,13 +59,13 @@ object Props {
     center: Coords = null,
     debounced: js.UndefOr[Boolean] = js.undefined,
     defaultCenter: Coords = null,
-    defaultZoom: Int | Double = null,
+    defaultZoom: js.UndefOr[Double] = js.undefined,
     distanceToMouse: (/* pt */ Point, /* mousePos */ Point, /* markerProps */ js.UndefOr[js.Object]) => Double = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
     googleMapLoader: /* bootstrapURLKeys */ js.Any => Unit = null,
     heatmap: Heatmap = null,
     heatmapLibrary: js.UndefOr[Boolean] = js.undefined,
-    hoverDistance: Int | Double = null,
+    hoverDistance: js.UndefOr[Double] = js.undefined,
     layerTypes: js.Array[String] = null,
     margin: js.Array[_] = null,
     onChange: /* value */ ChangeEventValue => _ = null,
@@ -78,7 +78,7 @@ object Props {
     onClick: /* value */ ClickEventValue => _ = null,
     onDrag: /* map */ js.Any => Unit = null,
     onDragEnd: /* map */ js.Any => Unit = null,
-    onGoogleApiLoaded: /* maps */ AnonMap => Unit = null,
+    onGoogleApiLoaded: /* maps */ Map => Unit = null,
     onMapTypeIdChange: /* args */ js.Any => Unit = null,
     onTilesLoaded: () => Unit = null,
     onZoomAnimationEnd: /* args */ js.Any => Unit = null,
@@ -88,20 +88,20 @@ object Props {
     shouldUnregisterMapOnUnmount: js.UndefOr[Boolean] = js.undefined,
     style: HTMLProps[HTMLDivElement] = null,
     yesIWantToUseGoogleMapApiInternals: js.UndefOr[Boolean] = js.undefined,
-    zoom: Int | Double = null
+    zoom: js.UndefOr[Double] = js.undefined
   ): Props = {
     val __obj = js.Dynamic.literal()
     if (bootstrapURLKeys != null) __obj.updateDynamic("bootstrapURLKeys")(bootstrapURLKeys.asInstanceOf[js.Any])
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (!js.isUndefined(debounced)) __obj.updateDynamic("debounced")(debounced.asInstanceOf[js.Any])
+    if (!js.isUndefined(debounced)) __obj.updateDynamic("debounced")(debounced.get.asInstanceOf[js.Any])
     if (defaultCenter != null) __obj.updateDynamic("defaultCenter")(defaultCenter.asInstanceOf[js.Any])
-    if (defaultZoom != null) __obj.updateDynamic("defaultZoom")(defaultZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultZoom)) __obj.updateDynamic("defaultZoom")(defaultZoom.get.asInstanceOf[js.Any])
     if (distanceToMouse != null) __obj.updateDynamic("distanceToMouse")(js.Any.fromFunction3(distanceToMouse))
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
     if (googleMapLoader != null) __obj.updateDynamic("googleMapLoader")(js.Any.fromFunction1(googleMapLoader))
     if (heatmap != null) __obj.updateDynamic("heatmap")(heatmap.asInstanceOf[js.Any])
-    if (!js.isUndefined(heatmapLibrary)) __obj.updateDynamic("heatmapLibrary")(heatmapLibrary.asInstanceOf[js.Any])
-    if (hoverDistance != null) __obj.updateDynamic("hoverDistance")(hoverDistance.asInstanceOf[js.Any])
+    if (!js.isUndefined(heatmapLibrary)) __obj.updateDynamic("heatmapLibrary")(heatmapLibrary.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverDistance)) __obj.updateDynamic("hoverDistance")(hoverDistance.get.asInstanceOf[js.Any])
     if (layerTypes != null) __obj.updateDynamic("layerTypes")(layerTypes.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
@@ -120,11 +120,11 @@ object Props {
     if (onZoomAnimationEnd != null) __obj.updateDynamic("onZoomAnimationEnd")(js.Any.fromFunction1(onZoomAnimationEnd))
     if (onZoomAnimationStart != null) __obj.updateDynamic("onZoomAnimationStart")(js.Any.fromFunction1(onZoomAnimationStart))
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetBoundsOnResize)) __obj.updateDynamic("resetBoundsOnResize")(resetBoundsOnResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldUnregisterMapOnUnmount)) __obj.updateDynamic("shouldUnregisterMapOnUnmount")(shouldUnregisterMapOnUnmount.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetBoundsOnResize)) __obj.updateDynamic("resetBoundsOnResize")(resetBoundsOnResize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldUnregisterMapOnUnmount)) __obj.updateDynamic("shouldUnregisterMapOnUnmount")(shouldUnregisterMapOnUnmount.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(yesIWantToUseGoogleMapApiInternals)) __obj.updateDynamic("yesIWantToUseGoogleMapApiInternals")(yesIWantToUseGoogleMapApiInternals.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(yesIWantToUseGoogleMapApiInternals)) __obj.updateDynamic("yesIWantToUseGoogleMapApiInternals")(yesIWantToUseGoogleMapApiInternals.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

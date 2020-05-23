@@ -10,9 +10,9 @@ trait PlaylistOptions extends js.Object {
 
 object PlaylistOptions {
   @scala.inline
-  def apply(width: Int | Double = null): PlaylistOptions = {
+  def apply(width: js.UndefOr[Double] = js.undefined): PlaylistOptions = {
     val __obj = js.Dynamic.literal()
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaylistOptions]
   }
 }

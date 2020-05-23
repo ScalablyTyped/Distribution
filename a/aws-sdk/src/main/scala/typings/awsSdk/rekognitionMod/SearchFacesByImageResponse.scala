@@ -30,13 +30,13 @@ object SearchFacesByImageResponse {
     FaceMatches: FaceMatchList = null,
     FaceModelVersion: String = null,
     SearchedFaceBoundingBox: BoundingBox = null,
-    SearchedFaceConfidence: Int | Double = null
+    SearchedFaceConfidence: js.UndefOr[Percent] = js.undefined
   ): SearchFacesByImageResponse = {
     val __obj = js.Dynamic.literal()
     if (FaceMatches != null) __obj.updateDynamic("FaceMatches")(FaceMatches.asInstanceOf[js.Any])
     if (FaceModelVersion != null) __obj.updateDynamic("FaceModelVersion")(FaceModelVersion.asInstanceOf[js.Any])
     if (SearchedFaceBoundingBox != null) __obj.updateDynamic("SearchedFaceBoundingBox")(SearchedFaceBoundingBox.asInstanceOf[js.Any])
-    if (SearchedFaceConfidence != null) __obj.updateDynamic("SearchedFaceConfidence")(SearchedFaceConfidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(SearchedFaceConfidence)) __obj.updateDynamic("SearchedFaceConfidence")(SearchedFaceConfidence.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchFacesByImageResponse]
   }
 }

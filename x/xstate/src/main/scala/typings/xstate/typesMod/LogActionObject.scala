@@ -10,7 +10,7 @@ trait LogActionObject[TContext, TEvent /* <: EventObject */] extends LogAction[T
 
 object LogActionObject {
   @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](
+  def apply[TContext, TEvent](
     expr: String | (LogExpr[TContext, TEvent]),
     `type`: String,
     value: js.Any,

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/compiler/src/compiler", "HOST_ATTR")
 @js.native
-object HOST_ATTR extends TopLevel[String]
+object HOST_ATTR extends TopLevel[/* "\\uE500" */ String]
 

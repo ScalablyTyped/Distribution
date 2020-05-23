@@ -27,13 +27,13 @@ object CreateMeetingRoomConfiguration {
     EndOfMeetingReminder: CreateEndOfMeetingReminder = null,
     InstantBooking: CreateInstantBooking = null,
     RequireCheckIn: CreateRequireCheckIn = null,
-    RoomUtilizationMetricsEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    RoomUtilizationMetricsEnabled: js.UndefOr[Boolean] = js.undefined
   ): CreateMeetingRoomConfiguration = {
     val __obj = js.Dynamic.literal()
     if (EndOfMeetingReminder != null) __obj.updateDynamic("EndOfMeetingReminder")(EndOfMeetingReminder.asInstanceOf[js.Any])
     if (InstantBooking != null) __obj.updateDynamic("InstantBooking")(InstantBooking.asInstanceOf[js.Any])
     if (RequireCheckIn != null) __obj.updateDynamic("RequireCheckIn")(RequireCheckIn.asInstanceOf[js.Any])
-    if (!js.isUndefined(RoomUtilizationMetricsEnabled)) __obj.updateDynamic("RoomUtilizationMetricsEnabled")(RoomUtilizationMetricsEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(RoomUtilizationMetricsEnabled)) __obj.updateDynamic("RoomUtilizationMetricsEnabled")(RoomUtilizationMetricsEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateMeetingRoomConfiguration]
   }
 }

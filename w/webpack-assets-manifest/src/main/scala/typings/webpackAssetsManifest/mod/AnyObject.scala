@@ -17,7 +17,7 @@ object AnyObject {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    StringDictionary: /* index */ StringDictionary[js.Any] = null
+    StringDictionary: /* key */ StringDictionary[js.Any] = null
   ): AnyObject = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

@@ -23,7 +23,7 @@ trait PatchComplianceData extends js.Object {
     */
   var Severity: PatchSeverity = js.native
   /**
-    * The state of the patch on the instance, such as INSTALLED or FAILED. For descriptions of each patch state, see About Patch Compliance in the AWS Systems Manager User Guide.
+    * The state of the patch on the instance, such as INSTALLED or FAILED. For descriptions of each patch state, see About patch compliance in the AWS Systems Manager User Guide.
     */
   var State: PatchComplianceDataState = js.native
   /**

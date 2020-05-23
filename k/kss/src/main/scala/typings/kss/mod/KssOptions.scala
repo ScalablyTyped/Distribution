@@ -32,14 +32,14 @@ object KssOptions {
   ): KssOptions = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     if (builder != null) __obj.updateDynamic("builder")(builder.asInstanceOf[js.Any])
-    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone.asInstanceOf[js.Any])
+    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone.get.asInstanceOf[js.Any])
     if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
-    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.get.asInstanceOf[js.Any])
     if (logErrorFunction != null) __obj.updateDynamic("logErrorFunction")(js.Any.fromFunction1(logErrorFunction))
-    if (!js.isUndefined(markdown)) __obj.updateDynamic("markdown")(markdown.asInstanceOf[js.Any])
+    if (!js.isUndefined(markdown)) __obj.updateDynamic("markdown")(markdown.get.asInstanceOf[js.Any])
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[KssOptions]
   }
 }

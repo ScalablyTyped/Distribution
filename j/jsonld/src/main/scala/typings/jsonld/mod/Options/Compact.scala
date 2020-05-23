@@ -39,18 +39,18 @@ object Compact {
     skipExpansion: js.UndefOr[Boolean] = js.undefined
   ): Compact = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(appropriate)) __obj.updateDynamic("appropriate")(appropriate.asInstanceOf[js.Any])
+    if (!js.isUndefined(appropriate)) __obj.updateDynamic("appropriate")(appropriate.get.asInstanceOf[js.Any])
     if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (!js.isUndefined(compactArrays)) __obj.updateDynamic("compactArrays")(compactArrays.asInstanceOf[js.Any])
-    if (!js.isUndefined(compactToRelative)) __obj.updateDynamic("compactToRelative")(compactToRelative.asInstanceOf[js.Any])
+    if (!js.isUndefined(compactArrays)) __obj.updateDynamic("compactArrays")(compactArrays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(compactToRelative)) __obj.updateDynamic("compactToRelative")(compactToRelative.get.asInstanceOf[js.Any])
     if (compactionMap != null) __obj.updateDynamic("compactionMap")(js.Any.fromFunction1(compactionMap))
     if (documentLoader != null) __obj.updateDynamic("documentLoader")(js.Any.fromFunction2(documentLoader))
     if (expandContext != null) __obj.updateDynamic("expandContext")(expandContext.asInstanceOf[js.Any])
-    if (!js.isUndefined(expansion)) __obj.updateDynamic("expansion")(expansion.asInstanceOf[js.Any])
+    if (!js.isUndefined(expansion)) __obj.updateDynamic("expansion")(expansion.get.asInstanceOf[js.Any])
     if (expansionMap != null) __obj.updateDynamic("expansionMap")(js.Any.fromFunction1(expansionMap))
-    if (!js.isUndefined(framing)) __obj.updateDynamic("framing")(framing.asInstanceOf[js.Any])
-    if (!js.isUndefined(graph)) __obj.updateDynamic("graph")(graph.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipExpansion)) __obj.updateDynamic("skipExpansion")(skipExpansion.asInstanceOf[js.Any])
+    if (!js.isUndefined(framing)) __obj.updateDynamic("framing")(framing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(graph)) __obj.updateDynamic("graph")(graph.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipExpansion)) __obj.updateDynamic("skipExpansion")(skipExpansion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Compact]
   }
 }

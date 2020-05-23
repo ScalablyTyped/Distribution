@@ -20,7 +20,7 @@ object RawIndexMap {
   ): RawIndexMap = {
     val __obj = js.Dynamic.literal(sections = sections.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipValidation)) __obj.updateDynamic("skipValidation")(skipValidation.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipValidation)) __obj.updateDynamic("skipValidation")(skipValidation.get.asInstanceOf[js.Any])
     if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot.asInstanceOf[js.Any])
     __obj.asInstanceOf[RawIndexMap]
   }

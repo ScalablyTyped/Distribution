@@ -13,8 +13,7 @@ trait RawMessage extends js.Object {
 object RawMessage {
   @scala.inline
   def apply(attributes: Record[String, Pattern], value: Pattern = null): RawMessage = {
-    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[RawMessage]
   }
 }

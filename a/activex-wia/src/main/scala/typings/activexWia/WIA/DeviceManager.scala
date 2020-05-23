@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation._
   * The DeviceManager control is an invisible-at-runtime control that manages the imaging devices connected to the computer. A DeviceManager control can
   * be created using "WIA.DeviceManager" in a call to CreateObject or by dropping a DeviceManager on a form.
   */
-@JSGlobal("WIA.DeviceManager")
 @js.native
-class DeviceManager protected () extends js.Object {
+trait DeviceManager extends js.Object {
   /** A collection of all imaging devices connected to this computer */
   @JSName("DeviceInfos")
   val DeviceInfos_Original: DeviceInfos = js.native

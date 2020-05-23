@@ -34,29 +34,29 @@ object Point {
     idx: Double,
     name: String,
     annotation: Annotation = null,
-    x: Int | Double = null,
-    xval: Int | Double = null,
-    y: Int | Double = null,
-    y_bottom: Int | Double = null,
-    y_stacked: Int | Double = null,
-    y_top: Int | Double = null,
-    yval: Int | Double = null,
-    yval_minus: Int | Double = null,
-    yval_plus: Int | Double = null,
-    yval_stacked: Int | Double = null
+    x: js.UndefOr[Double] = js.undefined,
+    xval: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined,
+    y_bottom: js.UndefOr[Double] = js.undefined,
+    y_stacked: js.UndefOr[Double] = js.undefined,
+    y_top: js.UndefOr[Double] = js.undefined,
+    yval: js.UndefOr[Double] = js.undefined,
+    yval_minus: js.UndefOr[Double] = js.undefined,
+    yval_plus: js.UndefOr[Double] = js.undefined,
+    yval_stacked: js.UndefOr[Double] = js.undefined
   ): Point = {
     val __obj = js.Dynamic.literal(idx = idx.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (annotation != null) __obj.updateDynamic("annotation")(annotation.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (xval != null) __obj.updateDynamic("xval")(xval.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    if (y_bottom != null) __obj.updateDynamic("y_bottom")(y_bottom.asInstanceOf[js.Any])
-    if (y_stacked != null) __obj.updateDynamic("y_stacked")(y_stacked.asInstanceOf[js.Any])
-    if (y_top != null) __obj.updateDynamic("y_top")(y_top.asInstanceOf[js.Any])
-    if (yval != null) __obj.updateDynamic("yval")(yval.asInstanceOf[js.Any])
-    if (yval_minus != null) __obj.updateDynamic("yval_minus")(yval_minus.asInstanceOf[js.Any])
-    if (yval_plus != null) __obj.updateDynamic("yval_plus")(yval_plus.asInstanceOf[js.Any])
-    if (yval_stacked != null) __obj.updateDynamic("yval_stacked")(yval_stacked.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xval)) __obj.updateDynamic("xval")(xval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y_bottom)) __obj.updateDynamic("y_bottom")(y_bottom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y_stacked)) __obj.updateDynamic("y_stacked")(y_stacked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y_top)) __obj.updateDynamic("y_top")(y_top.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yval)) __obj.updateDynamic("yval")(yval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yval_minus)) __obj.updateDynamic("yval_minus")(yval_minus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yval_plus)) __obj.updateDynamic("yval_plus")(yval_plus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yval_stacked)) __obj.updateDynamic("yval_stacked")(yval_stacked.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Point]
   }
 }

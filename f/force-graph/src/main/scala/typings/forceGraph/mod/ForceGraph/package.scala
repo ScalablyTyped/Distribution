@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ForceGraph {
-  type ForceFn = js.Function1[/* node */ typings.forceGraph.AnonX, scala.Double]
+  type ForceFn = js.Function1[/* node */ typings.forceGraph.anon.X, scala.Double]
   type LinkAccessorFn[T] = js.Function1[/* link */ typings.forceGraph.mod.ForceGraph.GraphLinkObject, T]
   type LinkCanvasCallbackFn = js.Function3[
     /* link */ typings.forceGraph.mod.ForceGraph.GraphLinkObject, 

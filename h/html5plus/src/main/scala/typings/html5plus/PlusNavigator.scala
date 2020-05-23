@@ -40,8 +40,8 @@ trait PlusNavigator extends js.Object {
   /**
     * 关闭应用启动界面
     * 很多情况下，应用启动后需要一段时间加载数据，为了避免界面显示空白内容，提高用户体验效果，这时可显示启动界面。
-    * 	等数据加载完成后再关闭启动界面进入应用，通常可在应用首界面加载数据完成并更新显示内容后调用此方法。
-    * 	注意：HBuilder7.1版本后启动界面不调用此方法超过6秒后会自动关闭。
+    *     等数据加载完成后再关闭启动界面进入应用，通常可在应用首界面加载数据完成并更新显示内容后调用此方法。
+    *     注意：HBuilder7.1版本后启动界面不调用此方法超过6秒后会自动关闭。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
@@ -114,7 +114,7 @@ trait PlusNavigator extends js.Object {
   /**
     * 判断当前应用是否切换到后台
     * 在多应用运行环境（如流应用）中，启动一个新应用时，之前运行的应用将会自动切换到后台运行，此时plus.navigator.isBackground()返回状态只为true。
-    * 	注意：此状态不是5+应用切换到系统后台的状态，而是在同一apk中同时运行多个应用时被切换到后台的状态。
+    *     注意：此状态不是5+应用切换到系统后台的状态，而是在同一apk中同时运行多个应用时被切换到后台的状态。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
@@ -128,7 +128,7 @@ trait PlusNavigator extends js.Object {
   /**
     * 判断当前是否为沉浸式状态栏模式
     * 如果当前应用采用沉浸式状态栏则返回true，否则返回false。
-    * 	注意：如果当前系统版本不支持沉浸式状态栏也返回false。
+    *     注意：如果当前系统版本不支持沉浸式状态栏也返回false。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
@@ -136,7 +136,7 @@ trait PlusNavigator extends js.Object {
   /**
     * 判断应用当前是否输出日志
     * 日志包括应用原生层内部跟踪日志（ADB、LogCat工具可获取的日志）及JS层跟踪日志（console.log输出的日志）。
-    * 	开启日志在一定程度上会降低程序的性能，通常建议在正式发布时关闭日志输出，在调试时开启日志输出（此时可以通过工具ADB、LogCat获取分析日志）。
+    *     开启日志在一定程度上会降低程序的性能，通常建议在正式发布时关闭日志输出，在调试时开启日志输出（此时可以通过工具ADB、LogCat获取分析日志）。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
@@ -180,8 +180,8 @@ trait PlusNavigator extends js.Object {
   /**
     * 设置应用是否输出日志
     * 设置应用是否输出日志信息，默认关闭输出日志功能。
-    * 	日志包括应用原生层内部跟踪日志（ADB、LogCat工具可获取的日志）及JS层跟踪日志（console.log输出的日志）。
-    * 	开启日志在一定程度上会降低程序的性能，通常建议在正式发布时关闭日志输出，在调试时开启日志输出（此时可以通过工具ADB、LogCat获取分析日志）。
+    *     日志包括应用原生层内部跟踪日志（ADB、LogCat工具可获取的日志）及JS层跟踪日志（console.log输出的日志）。
+    *     开启日志在一定程度上会降低程序的性能，通常建议在正式发布时关闭日志输出，在调试时开启日志输出（此时可以通过工具ADB、LogCat获取分析日志）。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
@@ -190,7 +190,7 @@ trait PlusNavigator extends js.Object {
   /**
     * 设置系统状态栏背景颜色
     * 设置应用在前台运行时系统状态栏的背景颜色，默认使用系统状态栏默认背景色（有系统状态栏样式决定）。
-    * 	注意：为了有更好的兼容性，避免设置接近白色或黑色的颜色值。
+    *     注意：为了有更好的兼容性，避免设置接近白色或黑色的颜色值。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
@@ -199,7 +199,7 @@ trait PlusNavigator extends js.Object {
   /**
     * 设置系统状态栏样式
     * 设置应用在前台运行时系统状态栏的样式，默认值可通过manifest.json文件的plus-&gt;statusbar-&gt;style配置。
-    * 	注意：此操作是应用全局配置，调用的Webview窗口关闭后仍然生效。
+    *     注意：此操作是应用全局配置，调用的Webview窗口关闭后仍然生效。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
@@ -208,7 +208,7 @@ trait PlusNavigator extends js.Object {
   /**
     * 设置userAgent值
     * 设置应用通过navigator.userAgent获取的值，及所有发起Http请求时提交的userAgent值。
-    * 	如果要设置启动页面的userAgent值则需要在manifest.json中进行配置。
+    *     如果要设置启动页面的userAgent值则需要在manifest.json中进行配置。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
@@ -218,7 +218,7 @@ trait PlusNavigator extends js.Object {
   /**
     * 更新程序启动界面
     * 可设置启动界面显示的图片（仅支持本地文件路径，如果是网络资源可先通过plus.downloader.*下载到本地），
-    * 	更新启动界面后程序下次启动时生效。
+    *     更新启动界面后程序下次启动时生效。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */

@@ -27,9 +27,9 @@ object InlineQueryResultMpeg4Gif {
     `type`: mpeg4_gif,
     caption: String = null,
     input_message_content: InputMessageContent = null,
-    mpeg4_duration: Int | Double = null,
-    mpeg4_height: Int | Double = null,
-    mpeg4_width: Int | Double = null,
+    mpeg4_duration: js.UndefOr[Double] = js.undefined,
+    mpeg4_height: js.UndefOr[Double] = js.undefined,
+    mpeg4_width: js.UndefOr[Double] = js.undefined,
     reply_markup: InlineKeyboardMarkup = null,
     thumb_url: String = null,
     title: String = null
@@ -38,9 +38,9 @@ object InlineQueryResultMpeg4Gif {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
     if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content.asInstanceOf[js.Any])
-    if (mpeg4_duration != null) __obj.updateDynamic("mpeg4_duration")(mpeg4_duration.asInstanceOf[js.Any])
-    if (mpeg4_height != null) __obj.updateDynamic("mpeg4_height")(mpeg4_height.asInstanceOf[js.Any])
-    if (mpeg4_width != null) __obj.updateDynamic("mpeg4_width")(mpeg4_width.asInstanceOf[js.Any])
+    if (!js.isUndefined(mpeg4_duration)) __obj.updateDynamic("mpeg4_duration")(mpeg4_duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mpeg4_height)) __obj.updateDynamic("mpeg4_height")(mpeg4_height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mpeg4_width)) __obj.updateDynamic("mpeg4_width")(mpeg4_width.get.asInstanceOf[js.Any])
     if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
     if (thumb_url != null) __obj.updateDynamic("thumb_url")(thumb_url.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

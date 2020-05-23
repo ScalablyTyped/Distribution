@@ -68,47 +68,29 @@ object ResponseModel {
     url: String,
     verified: Boolean,
     alias: String = null,
-    custom_role_id: Int | Double = null,
-    default_group_id: Int | Double = null,
+    custom_role_id: Double = null.asInstanceOf[Double],
+    default_group_id: Double = null.asInstanceOf[Double],
     details: String = null,
     email: String = null,
     external_id: String = null,
     last_login_at: String = null,
     locale: String = null,
-    locale_id: Int | Double = null,
+    locale_id: Double = null.asInstanceOf[Double],
     notes: String = null,
-    organization_id: Int | Double = null,
+    organization_id: Double = null.asInstanceOf[Double],
     phone: String = null,
     photo: Model = null,
-    shared_phone_number: js.UndefOr[Boolean] = js.undefined,
+    shared_phone_number: Boolean = null.asInstanceOf[Boolean],
     signature: String = null,
-    tags: js.Array[_] = null,
+    tags: js.UndefOr[Null | js.Array[_]] = js.undefined,
     ticket_restriction: TicketRestriction = null,
     time_zone: String = null,
     updated_at: String = null,
-    user_fields: js.Object = null
+    user_fields: js.UndefOr[Null | js.Object] = js.undefined
   ): ResponseModel = {
-    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], chat_only = chat_only.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], moderator = moderator.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], only_private_comments = only_private_comments.asInstanceOf[js.Any], report_csv = report_csv.asInstanceOf[js.Any], restricted_agent = restricted_agent.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], role_type = role_type.asInstanceOf[js.Any], shared = shared.asInstanceOf[js.Any], shared_agent = shared_agent.asInstanceOf[js.Any], suspended = suspended.asInstanceOf[js.Any], two_factor_auth_enabled = two_factor_auth_enabled.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any])
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (custom_role_id != null) __obj.updateDynamic("custom_role_id")(custom_role_id.asInstanceOf[js.Any])
-    if (default_group_id != null) __obj.updateDynamic("default_group_id")(default_group_id.asInstanceOf[js.Any])
-    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (external_id != null) __obj.updateDynamic("external_id")(external_id.asInstanceOf[js.Any])
-    if (last_login_at != null) __obj.updateDynamic("last_login_at")(last_login_at.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (locale_id != null) __obj.updateDynamic("locale_id")(locale_id.asInstanceOf[js.Any])
-    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
-    if (organization_id != null) __obj.updateDynamic("organization_id")(organization_id.asInstanceOf[js.Any])
-    if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
-    if (photo != null) __obj.updateDynamic("photo")(photo.asInstanceOf[js.Any])
-    if (!js.isUndefined(shared_phone_number)) __obj.updateDynamic("shared_phone_number")(shared_phone_number.asInstanceOf[js.Any])
-    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (ticket_restriction != null) __obj.updateDynamic("ticket_restriction")(ticket_restriction.asInstanceOf[js.Any])
-    if (time_zone != null) __obj.updateDynamic("time_zone")(time_zone.asInstanceOf[js.Any])
-    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
-    if (user_fields != null) __obj.updateDynamic("user_fields")(user_fields.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], chat_only = chat_only.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], moderator = moderator.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], only_private_comments = only_private_comments.asInstanceOf[js.Any], report_csv = report_csv.asInstanceOf[js.Any], restricted_agent = restricted_agent.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], role_type = role_type.asInstanceOf[js.Any], shared = shared.asInstanceOf[js.Any], shared_agent = shared_agent.asInstanceOf[js.Any], suspended = suspended.asInstanceOf[js.Any], two_factor_auth_enabled = two_factor_auth_enabled.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any], alias = alias.asInstanceOf[js.Any], custom_role_id = custom_role_id.asInstanceOf[js.Any], default_group_id = default_group_id.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], external_id = external_id.asInstanceOf[js.Any], last_login_at = last_login_at.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], locale_id = locale_id.asInstanceOf[js.Any], notes = notes.asInstanceOf[js.Any], organization_id = organization_id.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], photo = photo.asInstanceOf[js.Any], shared_phone_number = shared_phone_number.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], ticket_restriction = ticket_restriction.asInstanceOf[js.Any], time_zone = time_zone.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any])
+    if (!js.isUndefined(tags)) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (!js.isUndefined(user_fields)) __obj.updateDynamic("user_fields")(user_fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseModel]
   }
 }

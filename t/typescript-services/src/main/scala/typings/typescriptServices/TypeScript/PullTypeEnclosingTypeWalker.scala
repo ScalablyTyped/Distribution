@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.PullTypeEnclosingTypeWalker")
 @js.native
-class PullTypeEnclosingTypeWalker () extends js.Object {
+trait PullTypeEnclosingTypeWalker extends js.Object {
   var enclosingTypeWalkerState: js.Any = js.native
   def _canWalkStructure(): Boolean = js.native
   def _getCurrentSymbol(): PullSymbol = js.native
@@ -43,13 +42,5 @@ class PullTypeEnclosingTypeWalker () extends js.Object {
   def walkSignature(kind: PullElementKind, index: Double): Unit = js.native
   def walkTypeArgument(index: Double): Unit = js.native
   def walkTypeParameterConstraint(index: Double): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("TypeScript.PullTypeEnclosingTypeWalker")
-@js.native
-object PullTypeEnclosingTypeWalker extends js.Object {
-  var _defaultEnclosingTypeWalkerState: js.Any = js.native
-  var _nonGenericEnclosingTypeWalkerState: js.Any = js.native
 }
 

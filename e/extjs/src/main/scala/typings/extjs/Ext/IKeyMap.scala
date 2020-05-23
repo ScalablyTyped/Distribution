@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation._
 
 trait IKeyMap extends IBase {
   /** [Method] Add a new binding to this KeyMap
-  		* @param binding Object/Object[] A single KeyMap config or an array of configs. The following config object properties are supported:
-  		*/
+    * @param binding Object/Object[] A single KeyMap config or an array of configs. The following config object properties are supported:
+    */
   var addBinding: js.UndefOr[js.Function1[/* binding */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Object/Object[][]) */
   var binding: js.UndefOr[js.Any] = js.undefined
   /** [Method] Destroys the KeyMap instance and removes all handlers
-  		* @param removeTarget Boolean True to also remove the target
-  		*/
+    * @param removeTarget Boolean True to also remove the target
+    */
   var destroy: js.UndefOr[js.Function1[/* removeTarget */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Disable this KeyMap */
   var disable: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -24,14 +24,14 @@ trait IKeyMap extends IBase {
   /** [Config Option] (Boolean) */
   var ignoreInputFields: js.UndefOr[Boolean] = js.undefined
   /** [Method] Returns true if this KeyMap is enabled
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var isEnabled: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Shorthand for adding a single key listener
-  		* @param key Number/Number[]/Object Either the numeric key code, array of key codes or an object with the following options: {key: (number or array), shift: (true/false), ctrl: (true/false), alt: (true/false)}
-  		* @param fn Function The function to call
-  		* @param scope Object The scope (this reference) in which the function is executed. Defaults to the browser window.
-  		*/
+    * @param key Number/Number[]/Object Either the numeric key code, array of key codes or an object with the following options: {key: (number or array), shift: (true/false), ctrl: (true/false), alt: (true/false)}
+    * @param fn Function The function to call
+    * @param scope Object The scope (this reference) in which the function is executed. Defaults to the browser window.
+    */
   var on: js.UndefOr[
     js.Function3[
       /* key */ js.UndefOr[js.Any], 
@@ -45,20 +45,20 @@ trait IKeyMap extends IBase {
   /** [Config Option] (Object) */
   var processEventScope: js.UndefOr[js.Any] = js.undefined
   /** [Method] Remove a binding from this KeyMap
-  		* @param binding Object See for options
-  		*/
+    * @param binding Object See for options
+    */
   var removeBinding: js.UndefOr[js.Function1[/* binding */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Convenience function for setting disabled enabled by boolean
-  		* @param disabled Boolean
-  		*/
+    * @param disabled Boolean
+    */
   var setDisabled: js.UndefOr[js.Function1[/* disabled */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Config Option] (Ext.Component/Ext.Element/HTMLElement/String) */
   var target: js.UndefOr[js.Any] = js.undefined
   /** [Method] Shorthand for removing a single key listener
-  		* @param key Number/Number[]/Object Either the numeric key code, array of key codes or an object with the following options: {key: (number or array), shift: (true/false), ctrl: (true/false), alt: (true/false)}
-  		* @param fn Function The function to call
-  		* @param scope Object The scope (this reference) in which the function is executed. Defaults to the browser window.
-  		*/
+    * @param key Number/Number[]/Object Either the numeric key code, array of key codes or an object with the following options: {key: (number or array), shift: (true/false), ctrl: (true/false), alt: (true/false)}
+    * @param fn Function The function to call
+    * @param scope Object The scope (this reference) in which the function is executed. Defaults to the browser window.
+    */
   var un: js.UndefOr[
     js.Function3[
       /* key */ js.UndefOr[js.Any], 
@@ -119,7 +119,7 @@ object IKeyMap {
     if (eventName != null) __obj.updateDynamic("eventName")(eventName.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (!js.isUndefined(ignoreInputFields)) __obj.updateDynamic("ignoreInputFields")(ignoreInputFields.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreInputFields)) __obj.updateDynamic("ignoreInputFields")(ignoreInputFields.get.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (isEnabled != null) __obj.updateDynamic("isEnabled")(js.Any.fromFunction0(isEnabled))
@@ -131,7 +131,7 @@ object IKeyMap {
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setDisabled != null) __obj.updateDynamic("setDisabled")(js.Any.fromFunction1(setDisabled))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction3(un))

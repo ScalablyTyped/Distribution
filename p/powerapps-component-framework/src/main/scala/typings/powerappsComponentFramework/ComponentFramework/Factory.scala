@@ -6,16 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * The interface for the context.factory
-	 */
+  * The interface for the context.factory
+  */
 trait Factory extends js.Object {
   /**
-  		 * Gets the popup service which help create Popup and manage Popup easily
-  		 */
+    * Gets the popup service which help create Popup and manage Popup easily
+    */
   def getPopupService(): PopupService
   /**
-  		 * Requests re-rendering of the control with updated data.
-  		 */
+    * Requests re-rendering of the control with updated data.
+    */
   def requestRender(): Unit
 }
 

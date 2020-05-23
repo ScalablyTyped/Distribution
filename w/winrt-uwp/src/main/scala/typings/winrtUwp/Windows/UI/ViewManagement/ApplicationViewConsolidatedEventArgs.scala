@@ -5,10 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains the results of a window (app view) consolidation operation. */
-@JSGlobal("Windows.UI.ViewManagement.ApplicationViewConsolidatedEventArgs")
-@js.native
-abstract class ApplicationViewConsolidatedEventArgs () extends js.Object {
+trait ApplicationViewConsolidatedEventArgs extends js.Object {
   /** Indicates whether the window consolidation was user- or system-initiated. */
-  var isUserInitiated: Boolean = js.native
+  var isUserInitiated: Boolean
+}
+
+object ApplicationViewConsolidatedEventArgs {
+  @scala.inline
+  def apply(isUserInitiated: Boolean): ApplicationViewConsolidatedEventArgs = {
+    val __obj = js.Dynamic.literal(isUserInitiated = isUserInitiated.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ApplicationViewConsolidatedEventArgs]
+  }
 }
 

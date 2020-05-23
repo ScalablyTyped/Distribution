@@ -1,11 +1,15 @@
 package typings.eggLogger.mod
 
+import typings.eggLogger.eggLoggerStrings.duplicate
+import typings.eggLogger.eggLoggerStrings.ignore
+import typings.eggLogger.eggLoggerStrings.redirect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EggLoggerOptions extends LoggerOptions {
   var buffer: js.UndefOr[Boolean] = js.undefined
+  var concentrateError: js.UndefOr[duplicate | redirect | ignore] = js.undefined
   var contextFormatter: js.UndefOr[js.Function1[/* meta */ js.UndefOr[js.Object], String]] = js.undefined
   var eol: js.UndefOr[String] = js.undefined
   var file: String
@@ -20,6 +24,7 @@ object EggLoggerOptions {
     file: String,
     allowDebugAtProd: js.UndefOr[Boolean] = js.undefined,
     buffer: js.UndefOr[Boolean] = js.undefined,
+    concentrateError: duplicate | redirect | ignore = null,
     consoleLevel: LoggerLevel = null,
     contextFormatter: /* meta */ js.UndefOr[js.Object] => String = null,
     encoding: String = null,
@@ -30,8 +35,9 @@ object EggLoggerOptions {
     outputJSON: js.UndefOr[Boolean] = js.undefined
   ): EggLoggerOptions = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDebugAtProd)) __obj.updateDynamic("allowDebugAtProd")(allowDebugAtProd.asInstanceOf[js.Any])
-    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDebugAtProd)) __obj.updateDynamic("allowDebugAtProd")(allowDebugAtProd.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.get.asInstanceOf[js.Any])
+    if (concentrateError != null) __obj.updateDynamic("concentrateError")(concentrateError.asInstanceOf[js.Any])
     if (consoleLevel != null) __obj.updateDynamic("consoleLevel")(consoleLevel.asInstanceOf[js.Any])
     if (contextFormatter != null) __obj.updateDynamic("contextFormatter")(js.Any.fromFunction1(contextFormatter))
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
@@ -39,7 +45,7 @@ object EggLoggerOptions {
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
     if (jsonFile != null) __obj.updateDynamic("jsonFile")(jsonFile.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (!js.isUndefined(outputJSON)) __obj.updateDynamic("outputJSON")(outputJSON.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputJSON)) __obj.updateDynamic("outputJSON")(outputJSON.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EggLoggerOptions]
   }
 }

@@ -22,19 +22,23 @@ trait PaddingTopProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.
 
 object PaddingTopProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](
-    paddingTop: ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
-      ThemeType
-    ] = null,
-    pt: ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
-      ThemeType
-    ] = null
+  def apply[ThemeType](
+    paddingTop: js.UndefOr[
+      Null | (ResponsiveValue[
+        ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
+        ThemeType
+      ])
+    ] = js.undefined,
+    pt: js.UndefOr[
+      Null | (ResponsiveValue[
+        ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
+        ThemeType
+      ])
+    ] = js.undefined
   ): PaddingTopProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
-    if (paddingTop != null) __obj.updateDynamic("paddingTop")(paddingTop.asInstanceOf[js.Any])
-    if (pt != null) __obj.updateDynamic("pt")(pt.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingTop)) __obj.updateDynamic("paddingTop")(paddingTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(pt)) __obj.updateDynamic("pt")(pt.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaddingTopProps[ThemeType]]
   }
 }

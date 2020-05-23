@@ -99,7 +99,7 @@ object Options {
     group: String = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     implies: String | js.Array[String] | (StringDictionary[String | js.Array[String]]) = null,
-    nargs: Int | Double = null,
+    nargs: js.UndefOr[Double] = js.undefined,
     normalize: js.UndefOr[Boolean] = js.undefined,
     number: js.UndefOr[Boolean] = js.undefined,
     require: Boolean | String = null,
@@ -111,14 +111,14 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (!js.isUndefined(array)) __obj.updateDynamic("array")(array.asInstanceOf[js.Any])
-    if (!js.isUndefined(boolean)) __obj.updateDynamic("boolean")(boolean.asInstanceOf[js.Any])
+    if (!js.isUndefined(array)) __obj.updateDynamic("array")(array.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(boolean)) __obj.updateDynamic("boolean")(boolean.get.asInstanceOf[js.Any])
     if (choices != null) __obj.updateDynamic("choices")(choices.asInstanceOf[js.Any])
     if (coerce != null) __obj.updateDynamic("coerce")(js.Any.fromFunction1(coerce))
-    if (!js.isUndefined(config)) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (!js.isUndefined(config)) __obj.updateDynamic("config")(config.get.asInstanceOf[js.Any])
     if (configParser != null) __obj.updateDynamic("configParser")(js.Any.fromFunction1(configParser))
     if (conflicts != null) __obj.updateDynamic("conflicts")(conflicts.asInstanceOf[js.Any])
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (defaultDescription != null) __obj.updateDynamic("defaultDescription")(defaultDescription.asInstanceOf[js.Any])
     if (demand != null) __obj.updateDynamic("demand")(demand.asInstanceOf[js.Any])
@@ -126,18 +126,18 @@ object Options {
     if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
     if (describe != null) __obj.updateDynamic("describe")(describe.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.get.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (implies != null) __obj.updateDynamic("implies")(implies.asInstanceOf[js.Any])
-    if (nargs != null) __obj.updateDynamic("nargs")(nargs.asInstanceOf[js.Any])
-    if (!js.isUndefined(normalize)) __obj.updateDynamic("normalize")(normalize.asInstanceOf[js.Any])
-    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (!js.isUndefined(nargs)) __obj.updateDynamic("nargs")(nargs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(normalize)) __obj.updateDynamic("normalize")(normalize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number.get.asInstanceOf[js.Any])
     if (require != null) __obj.updateDynamic("require")(require.asInstanceOf[js.Any])
     if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
-    if (!js.isUndefined(requiresArg)) __obj.updateDynamic("requiresArg")(requiresArg.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipValidation)) __obj.updateDynamic("skipValidation")(skipValidation.asInstanceOf[js.Any])
-    if (!js.isUndefined(string)) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
+    if (!js.isUndefined(requiresArg)) __obj.updateDynamic("requiresArg")(requiresArg.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipValidation)) __obj.updateDynamic("skipValidation")(skipValidation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(string)) __obj.updateDynamic("string")(string.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

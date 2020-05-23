@@ -1,5 +1,6 @@
 package typings.ionicReact
 
+import typings.ionicReact.anon.Instantiable
 import typings.ionicReact.ionLifeCycleContextMod.LifeCycleCallback
 import typings.react.mod.ComponentType
 import scala.scalajs.js
@@ -17,6 +18,6 @@ object lifecycleMod extends js.Object {
   def useIonViewWillEnter(callback: LifeCycleCallback, deps: js.Array[_]): Unit = js.native
   def useIonViewWillLeave(callback: LifeCycleCallback): Unit = js.native
   def useIonViewWillLeave(callback: LifeCycleCallback, deps: js.Array[_]): Unit = js.native
-  def withIonLifeCycle(WrappedComponent: ComponentType[_]): AnonInstantiable = js.native
+  def withIonLifeCycle(WrappedComponent: ComponentType[_]): Instantiable = js.native
 }
 

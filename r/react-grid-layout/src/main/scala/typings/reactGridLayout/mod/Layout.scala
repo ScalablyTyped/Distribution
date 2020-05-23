@@ -70,22 +70,22 @@ object Layout {
     y: Double,
     isDraggable: js.UndefOr[Boolean] = js.undefined,
     isResizable: js.UndefOr[Boolean] = js.undefined,
-    maxH: Int | Double = null,
-    maxW: Int | Double = null,
-    minH: Int | Double = null,
-    minW: Int | Double = null,
+    maxH: js.UndefOr[Double] = js.undefined,
+    maxW: js.UndefOr[Double] = js.undefined,
+    minH: js.UndefOr[Double] = js.undefined,
+    minW: js.UndefOr[Double] = js.undefined,
     moved: js.UndefOr[Boolean] = js.undefined,
     static: js.UndefOr[Boolean] = js.undefined
   ): Layout = {
     val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDraggable)) __obj.updateDynamic("isDraggable")(isDraggable.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResizable)) __obj.updateDynamic("isResizable")(isResizable.asInstanceOf[js.Any])
-    if (maxH != null) __obj.updateDynamic("maxH")(maxH.asInstanceOf[js.Any])
-    if (maxW != null) __obj.updateDynamic("maxW")(maxW.asInstanceOf[js.Any])
-    if (minH != null) __obj.updateDynamic("minH")(minH.asInstanceOf[js.Any])
-    if (minW != null) __obj.updateDynamic("minW")(minW.asInstanceOf[js.Any])
-    if (!js.isUndefined(moved)) __obj.updateDynamic("moved")(moved.asInstanceOf[js.Any])
-    if (!js.isUndefined(static)) __obj.updateDynamic("static")(static.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDraggable)) __obj.updateDynamic("isDraggable")(isDraggable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResizable)) __obj.updateDynamic("isResizable")(isResizable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxH)) __obj.updateDynamic("maxH")(maxH.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxW)) __obj.updateDynamic("maxW")(maxW.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minH)) __obj.updateDynamic("minH")(minH.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minW)) __obj.updateDynamic("minW")(minW.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(moved)) __obj.updateDynamic("moved")(moved.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(static)) __obj.updateDynamic("static")(static.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Layout]
   }
 }

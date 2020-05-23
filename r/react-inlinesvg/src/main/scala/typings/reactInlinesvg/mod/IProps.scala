@@ -30,12 +30,12 @@ object IProps {
   @scala.inline
   def apply(
     src: String,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     baseURL: String = null,
     cacheRequests: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     description: String = null,
-    innerRef: Ref[HTMLElement] = null,
+    innerRef: js.UndefOr[Null | Ref[HTMLElement]] = js.undefined,
     loader: ReactNode = null,
     onError: /* error */ InlineSVGError | IFetchError => Unit = null,
     onLoad: (/* src */ String, /* isCached */ Boolean) => Unit = null,
@@ -47,17 +47,17 @@ object IProps {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (baseURL != null) __obj.updateDynamic("baseURL")(baseURL.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheRequests)) __obj.updateDynamic("cacheRequests")(cacheRequests.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheRequests)) __obj.updateDynamic("cacheRequests")(cacheRequests.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(innerRef)) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (loader != null) __obj.updateDynamic("loader")(loader.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction2(onLoad))
     if (preProcessor != null) __obj.updateDynamic("preProcessor")(js.Any.fromFunction1(preProcessor))
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (uniqueHash != null) __obj.updateDynamic("uniqueHash")(uniqueHash.asInstanceOf[js.Any])
-    if (!js.isUndefined(uniquifyIDs)) __obj.updateDynamic("uniquifyIDs")(uniquifyIDs.asInstanceOf[js.Any])
+    if (!js.isUndefined(uniquifyIDs)) __obj.updateDynamic("uniquifyIDs")(uniquifyIDs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProps]
   }
 }

@@ -1,6 +1,6 @@
 package typings.strophe.mod
 
-import typings.std.Document_
+import typings.std.Document
 import typings.std.Element
 import typings.std.Text
 import typings.strophe.mod.Strophe.ConnectionOptions
@@ -380,7 +380,7 @@ object stropheAugmentingMod extends js.Object {
     *  Returns:
     *    The currently used DOM document.
     */
-  def xmlGenerator(): Document_ = js.native
+  def xmlGenerator(): Document = js.native
   /** Function: xmlHtmlNode
     *  Creates an XML DOM html node.
     *
@@ -390,7 +390,7 @@ object stropheAugmentingMod extends js.Object {
     *  Returns:
     *    A new XML DOM text node.
     */
-  def xmlHtmlNode(html: String): Document_ = js.native
+  def xmlHtmlNode(html: String): Document = js.native
   /** Function: xmlTextNode
     *  Creates an XML DOM text node.
     *

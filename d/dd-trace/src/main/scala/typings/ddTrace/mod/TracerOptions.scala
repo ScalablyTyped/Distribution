@@ -1,9 +1,9 @@
 package typings.ddTrace.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ddTrace.AnonB3
-import typings.ddTrace.AnonDebug
-import typings.ddTrace.AnonPort
+import typings.ddTrace.anon.B3
+import typings.ddTrace.anon.Debug
+import typings.ddTrace.anon.Port
 import typings.ddTrace.ddTraceStrings.async_hooks
 import typings.ddTrace.ddTraceStrings.debug
 import typings.ddTrace.ddTraceStrings.error
@@ -30,7 +30,7 @@ trait TracerOptions extends js.Object {
   /**
     * Options specific for the Dogstatsd agent.
     */
-  var dogstatsd: js.UndefOr[AnonPort] = js.undefined
+  var dogstatsd: js.UndefOr[Port] = js.undefined
   /**
     * Whether to enable the tracer.
     * @default true
@@ -44,7 +44,7 @@ trait TracerOptions extends js.Object {
     * Experimental features can be enabled all at once by using true or individually using key / value pairs.
     * @default {}
     */
-  var experimental: js.UndefOr[Boolean | AnonB3] = js.undefined
+  var experimental: js.UndefOr[Boolean | B3] = js.undefined
   /**
     * Interval in milliseconds at which the tracer will submit traces to the agent.
     * @default 2000
@@ -71,7 +71,7 @@ trait TracerOptions extends js.Object {
     * should support debug() and error() methods
     * see https://datadog.github.io/dd-trace-js/#custom-logging
     */
-  var logger: js.UndefOr[AnonDebug] = js.undefined
+  var logger: js.UndefOr[Debug] = js.undefined
   /**
     * If false, require a parent in order to trace.
     * @default true
@@ -135,21 +135,21 @@ object TracerOptions {
     analytics: js.UndefOr[Boolean] = js.undefined,
     clientToken: String = null,
     debug: js.UndefOr[Boolean] = js.undefined,
-    dogstatsd: AnonPort = null,
+    dogstatsd: Port = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     env: String = null,
-    experimental: Boolean | AnonB3 = null,
-    flushInterval: Int | Double = null,
+    experimental: Boolean | B3 = null,
+    flushInterval: js.UndefOr[Double] = js.undefined,
     hostname: String = null,
     logInjection: js.UndefOr[Boolean] = js.undefined,
     logLevel: error | debug = null,
-    logger: AnonDebug = null,
+    logger: Debug = null,
     orphanable: js.UndefOr[Boolean] = js.undefined,
     plugins: js.UndefOr[Boolean] = js.undefined,
     port: Double | String = null,
     reportHostname: js.UndefOr[Boolean] = js.undefined,
     runtimeMetrics: js.UndefOr[Boolean] = js.undefined,
-    sampleRate: Int | Double = null,
+    sampleRate: js.UndefOr[Double] = js.undefined,
     scope: async_hooks | noop = null,
     service: String = null,
     tags: StringDictionary[js.Any] = null,
@@ -157,28 +157,28 @@ object TracerOptions {
     url: String = null
   ): TracerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(analytics)) __obj.updateDynamic("analytics")(analytics.asInstanceOf[js.Any])
+    if (!js.isUndefined(analytics)) __obj.updateDynamic("analytics")(analytics.get.asInstanceOf[js.Any])
     if (clientToken != null) __obj.updateDynamic("clientToken")(clientToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (dogstatsd != null) __obj.updateDynamic("dogstatsd")(dogstatsd.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (experimental != null) __obj.updateDynamic("experimental")(experimental.asInstanceOf[js.Any])
-    if (flushInterval != null) __obj.updateDynamic("flushInterval")(flushInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(flushInterval)) __obj.updateDynamic("flushInterval")(flushInterval.get.asInstanceOf[js.Any])
     if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
-    if (!js.isUndefined(logInjection)) __obj.updateDynamic("logInjection")(logInjection.asInstanceOf[js.Any])
+    if (!js.isUndefined(logInjection)) __obj.updateDynamic("logInjection")(logInjection.get.asInstanceOf[js.Any])
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
-    if (!js.isUndefined(orphanable)) __obj.updateDynamic("orphanable")(orphanable.asInstanceOf[js.Any])
-    if (!js.isUndefined(plugins)) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
+    if (!js.isUndefined(orphanable)) __obj.updateDynamic("orphanable")(orphanable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(plugins)) __obj.updateDynamic("plugins")(plugins.get.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(reportHostname)) __obj.updateDynamic("reportHostname")(reportHostname.asInstanceOf[js.Any])
-    if (!js.isUndefined(runtimeMetrics)) __obj.updateDynamic("runtimeMetrics")(runtimeMetrics.asInstanceOf[js.Any])
-    if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(reportHostname)) __obj.updateDynamic("reportHostname")(reportHostname.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(runtimeMetrics)) __obj.updateDynamic("runtimeMetrics")(runtimeMetrics.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampleRate)) __obj.updateDynamic("sampleRate")(sampleRate.get.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackAsyncScope)) __obj.updateDynamic("trackAsyncScope")(trackAsyncScope.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackAsyncScope)) __obj.updateDynamic("trackAsyncScope")(trackAsyncScope.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[TracerOptions]
   }

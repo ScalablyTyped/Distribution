@@ -1,22 +1,22 @@
 package typings.workboxBuild.typesMod
 
-import typings.workboxBuild.AnonChannelName
-import typings.workboxBuild.AnonHeaders
-import typings.workboxBuild.AnonMaxAgeSeconds
-import typings.workboxBuild.AnonName
+import typings.workboxBuild.anon.ChannelName
+import typings.workboxBuild.anon.Headers
+import typings.workboxBuild.anon.MaxAgeSeconds
+import typings.workboxBuild.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RuntimeCachingEntryOptions extends js.Object {
-  var backgroundSync: js.UndefOr[AnonName] = js.undefined
-  var broadcastUpdate: js.UndefOr[AnonChannelName] = js.undefined
+  var backgroundSync: js.UndefOr[Name] = js.undefined
+  var broadcastUpdate: js.UndefOr[ChannelName] = js.undefined
   /**
     * The `cacheName` to use when constructing one of the [Workbox strategy classes](https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-strategies.html).
     */
   var cacheName: js.UndefOr[String] = js.undefined
-  var cacheableResponse: js.UndefOr[AnonHeaders] = js.undefined
-  var expiration: js.UndefOr[AnonMaxAgeSeconds] = js.undefined
+  var cacheableResponse: js.UndefOr[Headers] = js.undefined
+  var expiration: js.UndefOr[MaxAgeSeconds] = js.undefined
   /**
     * The `fetchOptions` property value to use when constructing one of the
     * [Workbox strategy classes](https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-strategies.html).
@@ -43,14 +43,14 @@ trait RuntimeCachingEntryOptions extends js.Object {
 object RuntimeCachingEntryOptions {
   @scala.inline
   def apply(
-    backgroundSync: AnonName = null,
-    broadcastUpdate: AnonChannelName = null,
+    backgroundSync: Name = null,
+    broadcastUpdate: ChannelName = null,
     cacheName: String = null,
-    cacheableResponse: AnonHeaders = null,
-    expiration: AnonMaxAgeSeconds = null,
+    cacheableResponse: Headers = null,
+    expiration: MaxAgeSeconds = null,
     fetchOptions: js.Object = null,
     matchOptions: js.Object = null,
-    networkTimeoutSeconds: Int | Double = null,
+    networkTimeoutSeconds: js.UndefOr[Double] = js.undefined,
     plugins: js.Array[js.Object] = null
   ): RuntimeCachingEntryOptions = {
     val __obj = js.Dynamic.literal()
@@ -61,7 +61,7 @@ object RuntimeCachingEntryOptions {
     if (expiration != null) __obj.updateDynamic("expiration")(expiration.asInstanceOf[js.Any])
     if (fetchOptions != null) __obj.updateDynamic("fetchOptions")(fetchOptions.asInstanceOf[js.Any])
     if (matchOptions != null) __obj.updateDynamic("matchOptions")(matchOptions.asInstanceOf[js.Any])
-    if (networkTimeoutSeconds != null) __obj.updateDynamic("networkTimeoutSeconds")(networkTimeoutSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(networkTimeoutSeconds)) __obj.updateDynamic("networkTimeoutSeconds")(networkTimeoutSeconds.get.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuntimeCachingEntryOptions]
   }

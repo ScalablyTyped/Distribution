@@ -1,7 +1,7 @@
 package typings.inputmask.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.inputmask.AnonBack
+import typings.inputmask.anon.Back
 import typings.inputmask.inputmaskStrings.number
 import typings.inputmask.inputmaskStrings.text
 import typings.std.KeyboardEvent
@@ -280,7 +280,7 @@ trait Options extends js.Object {
     *
     * @default { front: "-", back: "" }
     */
-  var negationSymbol: js.UndefOr[AnonBack] = js.undefined
+  var negationSymbol: js.UndefOr[Back] = js.undefined
   /**
     * Disable value property patching
     *
@@ -561,7 +561,7 @@ object Options {
     escapeChar: String = null,
     greedy: js.UndefOr[Boolean] = js.undefined,
     groupSeparator: String = null,
-    groupSize: Int | Double = null,
+    groupSize: js.UndefOr[Double] = js.undefined,
     groupmarker: Range = null,
     ignorables: js.Array[Double] = null,
     importDataAttributes: js.UndefOr[Boolean] = js.undefined,
@@ -573,11 +573,11 @@ object Options {
     integerOptional: js.UndefOr[Boolean] = js.undefined,
     isComplete: (/* buffer */ js.Array[String], /* opts */ Options) => Boolean = null,
     jitMasking: js.UndefOr[Boolean] = js.undefined,
-    keepStatic: js.UndefOr[Boolean] = js.undefined,
+    keepStatic: js.UndefOr[Null | Boolean] = js.undefined,
     mask: String | js.Array[String] | (js.Function1[Options, String | js.Array[String]]) = null,
     max: String = null,
     min: String = null,
-    negationSymbol: AnonBack = null,
+    negationSymbol: Back = null,
     noValuePatching: js.UndefOr[Boolean] = js.undefined,
     nullable: js.UndefOr[Boolean] = js.undefined,
     numericInput: js.UndefOr[Boolean] = js.undefined,
@@ -609,7 +609,7 @@ object Options {
     showMaskOnHover: js.UndefOr[Boolean] = js.undefined,
     skipOptionalPartCharacter: String = null,
     staticDefinitionSymbol: String = null,
-    step: Int | Double = null,
+    step: js.UndefOr[Double] = js.undefined,
     suffix: String = null,
     supportsInputType: js.Array[String] = null,
     tabThrough: js.UndefOr[Boolean] = js.undefined,
@@ -618,43 +618,43 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowMinus)) __obj.updateDynamic("allowMinus")(allowMinus.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowMinus)) __obj.updateDynamic("allowMinus")(allowMinus.get.asInstanceOf[js.Any])
     if (alternatormarker != null) __obj.updateDynamic("alternatormarker")(alternatormarker.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoGroup)) __obj.updateDynamic("autoGroup")(autoGroup.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoUnmask)) __obj.updateDynamic("autoUnmask")(autoUnmask.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoGroup)) __obj.updateDynamic("autoGroup")(autoGroup.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoUnmask)) __obj.updateDynamic("autoUnmask")(autoUnmask.get.asInstanceOf[js.Any])
     if (casing != null) __obj.updateDynamic("casing")(casing.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearIncomplete)) __obj.updateDynamic("clearIncomplete")(clearIncomplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearMaskOnLostFocus)) __obj.updateDynamic("clearMaskOnLostFocus")(clearMaskOnLostFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorMask)) __obj.updateDynamic("colorMask")(colorMask.asInstanceOf[js.Any])
-    if (!js.isUndefined(decimalProtect)) __obj.updateDynamic("decimalProtect")(decimalProtect.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearIncomplete)) __obj.updateDynamic("clearIncomplete")(clearIncomplete.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearMaskOnLostFocus)) __obj.updateDynamic("clearMaskOnLostFocus")(clearMaskOnLostFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorMask)) __obj.updateDynamic("colorMask")(colorMask.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(decimalProtect)) __obj.updateDynamic("decimalProtect")(decimalProtect.get.asInstanceOf[js.Any])
     if (definitions != null) __obj.updateDynamic("definitions")(definitions.asInstanceOf[js.Any])
     if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
-    if (!js.isUndefined(digitsOptional)) __obj.updateDynamic("digitsOptional")(digitsOptional.asInstanceOf[js.Any])
-    if (!js.isUndefined(disablePredictiveText)) __obj.updateDynamic("disablePredictiveText")(disablePredictiveText.asInstanceOf[js.Any])
-    if (!js.isUndefined(enforceDigitsOnBlur)) __obj.updateDynamic("enforceDigitsOnBlur")(enforceDigitsOnBlur.asInstanceOf[js.Any])
+    if (!js.isUndefined(digitsOptional)) __obj.updateDynamic("digitsOptional")(digitsOptional.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disablePredictiveText)) __obj.updateDynamic("disablePredictiveText")(disablePredictiveText.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enforceDigitsOnBlur)) __obj.updateDynamic("enforceDigitsOnBlur")(enforceDigitsOnBlur.get.asInstanceOf[js.Any])
     if (escapeChar != null) __obj.updateDynamic("escapeChar")(escapeChar.asInstanceOf[js.Any])
-    if (!js.isUndefined(greedy)) __obj.updateDynamic("greedy")(greedy.asInstanceOf[js.Any])
+    if (!js.isUndefined(greedy)) __obj.updateDynamic("greedy")(greedy.get.asInstanceOf[js.Any])
     if (groupSeparator != null) __obj.updateDynamic("groupSeparator")(groupSeparator.asInstanceOf[js.Any])
-    if (groupSize != null) __obj.updateDynamic("groupSize")(groupSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupSize)) __obj.updateDynamic("groupSize")(groupSize.get.asInstanceOf[js.Any])
     if (groupmarker != null) __obj.updateDynamic("groupmarker")(groupmarker.asInstanceOf[js.Any])
     if (ignorables != null) __obj.updateDynamic("ignorables")(ignorables.asInstanceOf[js.Any])
-    if (!js.isUndefined(importDataAttributes)) __obj.updateDynamic("importDataAttributes")(importDataAttributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(importDataAttributes)) __obj.updateDynamic("importDataAttributes")(importDataAttributes.get.asInstanceOf[js.Any])
     if (inputFormat != null) __obj.updateDynamic("inputFormat")(inputFormat.asInstanceOf[js.Any])
     if (inputType != null) __obj.updateDynamic("inputType")(inputType.asInstanceOf[js.Any])
     if (inputmode != null) __obj.updateDynamic("inputmode")(inputmode.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertMode)) __obj.updateDynamic("insertMode")(insertMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(insertMode)) __obj.updateDynamic("insertMode")(insertMode.get.asInstanceOf[js.Any])
     if (integerDigits != null) __obj.updateDynamic("integerDigits")(integerDigits.asInstanceOf[js.Any])
-    if (!js.isUndefined(integerOptional)) __obj.updateDynamic("integerOptional")(integerOptional.asInstanceOf[js.Any])
+    if (!js.isUndefined(integerOptional)) __obj.updateDynamic("integerOptional")(integerOptional.get.asInstanceOf[js.Any])
     if (isComplete != null) __obj.updateDynamic("isComplete")(js.Any.fromFunction2(isComplete))
-    if (!js.isUndefined(jitMasking)) __obj.updateDynamic("jitMasking")(jitMasking.asInstanceOf[js.Any])
+    if (!js.isUndefined(jitMasking)) __obj.updateDynamic("jitMasking")(jitMasking.get.asInstanceOf[js.Any])
     if (!js.isUndefined(keepStatic)) __obj.updateDynamic("keepStatic")(keepStatic.asInstanceOf[js.Any])
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (negationSymbol != null) __obj.updateDynamic("negationSymbol")(negationSymbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(noValuePatching)) __obj.updateDynamic("noValuePatching")(noValuePatching.asInstanceOf[js.Any])
-    if (!js.isUndefined(nullable)) __obj.updateDynamic("nullable")(nullable.asInstanceOf[js.Any])
-    if (!js.isUndefined(numericInput)) __obj.updateDynamic("numericInput")(numericInput.asInstanceOf[js.Any])
+    if (!js.isUndefined(noValuePatching)) __obj.updateDynamic("noValuePatching")(noValuePatching.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nullable)) __obj.updateDynamic("nullable")(nullable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numericInput)) __obj.updateDynamic("numericInput")(numericInput.get.asInstanceOf[js.Any])
     if (onBeforeMask != null) __obj.updateDynamic("onBeforeMask")(js.Any.fromFunction2(onBeforeMask))
     if (onBeforePaste != null) __obj.updateDynamic("onBeforePaste")(js.Any.fromFunction2(onBeforePaste))
     if (onBeforeWrite != null) __obj.updateDynamic("onBeforeWrite")(js.Any.fromFunction4(onBeforeWrite))
@@ -668,27 +668,27 @@ object Options {
     if (outputFormat != null) __obj.updateDynamic("outputFormat")(outputFormat.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (positionCaretOnClick != null) __obj.updateDynamic("positionCaretOnClick")(positionCaretOnClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(positionCaretOnTab)) __obj.updateDynamic("positionCaretOnTab")(positionCaretOnTab.asInstanceOf[js.Any])
+    if (!js.isUndefined(positionCaretOnTab)) __obj.updateDynamic("positionCaretOnTab")(positionCaretOnTab.get.asInstanceOf[js.Any])
     if (postValidation != null) __obj.updateDynamic("postValidation")(js.Any.fromFunction4(postValidation))
     if (preValidation != null) __obj.updateDynamic("preValidation")(js.Any.fromFunction5(preValidation))
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (quantifiermarker != null) __obj.updateDynamic("quantifiermarker")(quantifiermarker.asInstanceOf[js.Any])
     if (radixPoint != null) __obj.updateDynamic("radixPoint")(radixPoint.asInstanceOf[js.Any])
     if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeMaskOnSubmit)) __obj.updateDynamic("removeMaskOnSubmit")(removeMaskOnSubmit.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeMaskOnSubmit)) __obj.updateDynamic("removeMaskOnSubmit")(removeMaskOnSubmit.get.asInstanceOf[js.Any])
     if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
-    if (!js.isUndefined(rightAlign)) __obj.updateDynamic("rightAlign")(rightAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(shiftPositions)) __obj.updateDynamic("shiftPositions")(shiftPositions.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMaskOnFocus)) __obj.updateDynamic("showMaskOnFocus")(showMaskOnFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMaskOnHover)) __obj.updateDynamic("showMaskOnHover")(showMaskOnHover.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightAlign)) __obj.updateDynamic("rightAlign")(rightAlign.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shiftPositions)) __obj.updateDynamic("shiftPositions")(shiftPositions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMaskOnFocus)) __obj.updateDynamic("showMaskOnFocus")(showMaskOnFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMaskOnHover)) __obj.updateDynamic("showMaskOnHover")(showMaskOnHover.get.asInstanceOf[js.Any])
     if (skipOptionalPartCharacter != null) __obj.updateDynamic("skipOptionalPartCharacter")(skipOptionalPartCharacter.asInstanceOf[js.Any])
     if (staticDefinitionSymbol != null) __obj.updateDynamic("staticDefinitionSymbol")(staticDefinitionSymbol.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
     if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     if (supportsInputType != null) __obj.updateDynamic("supportsInputType")(supportsInputType.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabThrough)) __obj.updateDynamic("tabThrough")(tabThrough.asInstanceOf[js.Any])
-    if (!js.isUndefined(undoOnEscape)) __obj.updateDynamic("undoOnEscape")(undoOnEscape.asInstanceOf[js.Any])
-    if (!js.isUndefined(unmaskAsNumber)) __obj.updateDynamic("unmaskAsNumber")(unmaskAsNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabThrough)) __obj.updateDynamic("tabThrough")(tabThrough.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(undoOnEscape)) __obj.updateDynamic("undoOnEscape")(undoOnEscape.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unmaskAsNumber)) __obj.updateDynamic("unmaskAsNumber")(unmaskAsNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

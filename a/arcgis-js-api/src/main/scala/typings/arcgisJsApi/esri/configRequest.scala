@@ -108,22 +108,22 @@ object configRequest {
     propertyIsEnumerable: PropertyKey => Boolean,
     httpsDomains: js.Array[String] = null,
     interceptors: js.Array[RequestInterceptor] = null,
-    maxUrlLength: Int | Double = null,
+    maxUrlLength: js.UndefOr[Double] = js.undefined,
     proxyRules: js.Array[configRequestProxyRules] = null,
     proxyUrl: String = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     trustedServers: js.Array[String] = null,
     useIdentity: js.UndefOr[Boolean] = js.undefined
   ): configRequest = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (httpsDomains != null) __obj.updateDynamic("httpsDomains")(httpsDomains.asInstanceOf[js.Any])
     if (interceptors != null) __obj.updateDynamic("interceptors")(interceptors.asInstanceOf[js.Any])
-    if (maxUrlLength != null) __obj.updateDynamic("maxUrlLength")(maxUrlLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxUrlLength)) __obj.updateDynamic("maxUrlLength")(maxUrlLength.get.asInstanceOf[js.Any])
     if (proxyRules != null) __obj.updateDynamic("proxyRules")(proxyRules.asInstanceOf[js.Any])
     if (proxyUrl != null) __obj.updateDynamic("proxyUrl")(proxyUrl.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (trustedServers != null) __obj.updateDynamic("trustedServers")(trustedServers.asInstanceOf[js.Any])
-    if (!js.isUndefined(useIdentity)) __obj.updateDynamic("useIdentity")(useIdentity.asInstanceOf[js.Any])
+    if (!js.isUndefined(useIdentity)) __obj.updateDynamic("useIdentity")(useIdentity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[configRequest]
   }
 }

@@ -18,14 +18,14 @@ object Options {
     fileMustExist: js.UndefOr[Boolean] = js.undefined,
     memory: js.UndefOr[Boolean] = js.undefined,
     readonly: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     verbose: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fileMustExist)) __obj.updateDynamic("fileMustExist")(fileMustExist.asInstanceOf[js.Any])
-    if (!js.isUndefined(memory)) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(fileMustExist)) __obj.updateDynamic("fileMustExist")(fileMustExist.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(memory)) __obj.updateDynamic("memory")(memory.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (verbose != null) __obj.updateDynamic("verbose")(js.Any.fromFunction2(verbose))
     __obj.asInstanceOf[Options]
   }

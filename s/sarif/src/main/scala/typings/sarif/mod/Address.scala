@@ -51,28 +51,28 @@ trait Address extends js.Object {
 object Address {
   @scala.inline
   def apply(
-    absoluteAddress: Int | Double = null,
+    absoluteAddress: js.UndefOr[Double] = js.undefined,
     fullyQualifiedName: String = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     kind: String = null,
-    length: Int | Double = null,
+    length: js.UndefOr[Double] = js.undefined,
     name: String = null,
-    offsetFromParent: Int | Double = null,
-    parentIndex: Int | Double = null,
+    offsetFromParent: js.UndefOr[Double] = js.undefined,
+    parentIndex: js.UndefOr[Double] = js.undefined,
     properties: PropertyBag = null,
-    relativeAddress: Int | Double = null
+    relativeAddress: js.UndefOr[Double] = js.undefined
   ): Address = {
     val __obj = js.Dynamic.literal()
-    if (absoluteAddress != null) __obj.updateDynamic("absoluteAddress")(absoluteAddress.asInstanceOf[js.Any])
+    if (!js.isUndefined(absoluteAddress)) __obj.updateDynamic("absoluteAddress")(absoluteAddress.get.asInstanceOf[js.Any])
     if (fullyQualifiedName != null) __obj.updateDynamic("fullyQualifiedName")(fullyQualifiedName.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (offsetFromParent != null) __obj.updateDynamic("offsetFromParent")(offsetFromParent.asInstanceOf[js.Any])
-    if (parentIndex != null) __obj.updateDynamic("parentIndex")(parentIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetFromParent)) __obj.updateDynamic("offsetFromParent")(offsetFromParent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(parentIndex)) __obj.updateDynamic("parentIndex")(parentIndex.get.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (relativeAddress != null) __obj.updateDynamic("relativeAddress")(relativeAddress.asInstanceOf[js.Any])
+    if (!js.isUndefined(relativeAddress)) __obj.updateDynamic("relativeAddress")(relativeAddress.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Address]
   }
 }

@@ -22,10 +22,10 @@ trait BucketLifecycleRuleTransition extends js.Object {
 
 object BucketLifecycleRuleTransition {
   @scala.inline
-  def apply(storageClass: String, date: String = null, days: Int | Double = null): BucketLifecycleRuleTransition = {
+  def apply(storageClass: String, date: String = null, days: js.UndefOr[Double] = js.undefined): BucketLifecycleRuleTransition = {
     val __obj = js.Dynamic.literal(storageClass = storageClass.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
+    if (!js.isUndefined(days)) __obj.updateDynamic("days")(days.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketLifecycleRuleTransition]
   }
 }

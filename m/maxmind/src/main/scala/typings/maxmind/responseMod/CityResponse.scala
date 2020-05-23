@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.maxmind.responseMod.Response because Already inherited */ trait CityResponse extends CountryResponse {
   val city: js.UndefOr[CityRecord] = js.undefined
   val location: js.UndefOr[LocationRecord] = js.undefined

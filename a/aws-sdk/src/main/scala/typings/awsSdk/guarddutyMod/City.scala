@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait City extends js.Object {
   /**
-    * City name of the remote IP address.
+    * The city name of the remote IP address.
     */
   var CityName: js.UndefOr[String] = js.native
 }

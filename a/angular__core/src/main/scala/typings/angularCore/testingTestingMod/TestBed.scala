@@ -1,10 +1,10 @@
 package typings.angularCore.testingTestingMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.angularCore.AnonDeps
-import typings.angularCore.AnonProviders
-import typings.angularCore.AnonUseFactory
-import typings.angularCore.AnonUseValue
+import typings.angularCore.anon.Deps
+import typings.angularCore.anon.Providers
+import typings.angularCore.anon.UseFactory
+import typings.angularCore.anon.UseValue
 import typings.angularCore.mod.AbstractType
 import typings.angularCore.mod.Component
 import typings.angularCore.mod.Directive
@@ -23,7 +23,7 @@ trait TestBed extends js.Object {
   var ngModule: Type[_] | js.Array[Type[_]] = js.native
   var platform: PlatformRef = js.native
   def compileComponents(): js.Promise[_] = js.native
-  def configureCompiler(config: AnonProviders): Unit = js.native
+  def configureCompiler(config: Providers): Unit = js.native
   def configureTestingModule(moduleDef: TestModuleMetadata): Unit = js.native
   def createComponent[T](component: Type[T]): ComponentFixture[T] = js.native
   def execute(tokens: js.Array[_], fn: js.Function): js.Any = js.native
@@ -78,9 +78,9 @@ trait TestBed extends js.Object {
   /**
     * Overwrites all providers for the given token with the given provider definition.
     */
-  def overrideProvider(token: js.Any, provider: AnonDeps): Unit = js.native
-  def overrideProvider(token: js.Any, provider: AnonUseFactory): Unit = js.native
-  def overrideProvider(token: js.Any, provider: AnonUseValue): Unit = js.native
+  def overrideProvider(token: js.Any, provider: Deps): Unit = js.native
+  def overrideProvider(token: js.Any, provider: UseFactory): Unit = js.native
+  def overrideProvider(token: js.Any, provider: UseValue): Unit = js.native
   def overrideTemplateUsingTestingModule(component: Type[_], template: String): Unit = js.native
   /**
     * Reset the providers for the test injector.

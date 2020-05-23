@@ -23,12 +23,12 @@ trait SizeableOptions extends Sizeable {
 object SizeableOptions {
   @scala.inline
   def apply(
-    iconSize: Int | Double = null,
+    iconSize: js.UndefOr[Double] = js.undefined,
     size: /* import warning: importer.ImportType#apply Failed type conversion: this['iconSize'] */ js.Any = null,
     svgIconSize: /* import warning: importer.ImportType#apply Failed type conversion: this['iconSize'] */ js.Any = null
   ): SizeableOptions = {
     val __obj = js.Dynamic.literal()
-    if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(iconSize)) __obj.updateDynamic("iconSize")(iconSize.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (svgIconSize != null) __obj.updateDynamic("svgIconSize")(svgIconSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeableOptions]

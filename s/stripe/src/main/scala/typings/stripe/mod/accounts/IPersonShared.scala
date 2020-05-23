@@ -1,7 +1,7 @@
 package typings.stripe.mod.accounts
 
-import typings.stripe.AnonDay
-import typings.stripe.AnonDirector
+import typings.stripe.anon.Day
+import typings.stripe.anon.Director
 import typings.stripe.mod.IAddress
 import typings.stripe.mod.IAddressKana
 import typings.stripe.mod.IAddressKanji
@@ -31,7 +31,7 @@ trait IPersonShared extends js.Object {
   /**
     * The person’s date of birth.
     */
-  var dob: js.UndefOr[AnonDay] = js.undefined
+  var dob: js.UndefOr[Day] = js.undefined
   /**
     * The person’s email address.
     */
@@ -75,7 +75,7 @@ trait IPersonShared extends js.Object {
   /**
     * Describes the person’s relationship to the account.
     */
-  var relationship: js.UndefOr[AnonDirector] = js.undefined
+  var relationship: js.UndefOr[Director] = js.undefined
 }
 
 object IPersonShared {
@@ -85,7 +85,7 @@ object IPersonShared {
     address: IAddress = null,
     address_kana: IAddressKana = null,
     address_kanji: IAddressKanji = null,
-    dob: AnonDay = null,
+    dob: Day = null,
     email: String = null,
     first_name: String = null,
     first_name_kana: String = null,
@@ -96,7 +96,7 @@ object IPersonShared {
     last_name_kanji: String = null,
     maiden_name: String = null,
     phone: String = null,
-    relationship: AnonDirector = null
+    relationship: Director = null
   ): IPersonShared = {
     val __obj = js.Dynamic.literal()
     if (account != null) __obj.updateDynamic("account")(account.asInstanceOf[js.Any])

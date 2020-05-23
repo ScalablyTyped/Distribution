@@ -14,7 +14,7 @@ package object modifiersMod {
     - typings.reactDayPicker.modifiersMod.BeforeAfterModifier
     - typings.reactDayPicker.modifiersMod.DaysOfWeekModifier
     - typings.reactDayPicker.modifiersMod.FunctionModifier
-    - `js.undefined`
+    - js.UndefOr[scala.Nothing]
   */
   type Modifier = js.UndefOr[
     typings.reactDayPicker.modifiersMod._Modifier | typings.std.Date | typings.reactDayPicker.modifiersMod.FunctionModifier

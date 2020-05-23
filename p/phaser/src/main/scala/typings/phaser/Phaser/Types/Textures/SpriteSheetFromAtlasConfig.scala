@@ -46,18 +46,18 @@ object SpriteSheetFromAtlasConfig {
     atlas: String,
     frame: String,
     frameWidth: integer,
-    endFrame: Int | Double = null,
-    frameHeight: Int | Double = null,
-    margin: Int | Double = null,
-    spacing: Int | Double = null,
-    startFrame: Int | Double = null
+    endFrame: js.UndefOr[integer] = js.undefined,
+    frameHeight: js.UndefOr[integer] = js.undefined,
+    margin: js.UndefOr[integer] = js.undefined,
+    spacing: js.UndefOr[integer] = js.undefined,
+    startFrame: js.UndefOr[integer] = js.undefined
   ): SpriteSheetFromAtlasConfig = {
     val __obj = js.Dynamic.literal(atlas = atlas.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], frameWidth = frameWidth.asInstanceOf[js.Any])
-    if (endFrame != null) __obj.updateDynamic("endFrame")(endFrame.asInstanceOf[js.Any])
-    if (frameHeight != null) __obj.updateDynamic("frameHeight")(frameHeight.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
-    if (startFrame != null) __obj.updateDynamic("startFrame")(startFrame.asInstanceOf[js.Any])
+    if (!js.isUndefined(endFrame)) __obj.updateDynamic("endFrame")(endFrame.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(frameHeight)) __obj.updateDynamic("frameHeight")(frameHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spacing)) __obj.updateDynamic("spacing")(spacing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startFrame)) __obj.updateDynamic("startFrame")(startFrame.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpriteSheetFromAtlasConfig]
   }
 }

@@ -1,7 +1,7 @@
 package typings.babelTraverse.mod
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.babelTraverse.AnonConfident
+import typings.babelTraverse.anon.Confident
 import typings.babelTypes.mod.FlowType
 import typings.babelTypes.mod.Function
 import typings.babelTypes.mod.Statement
@@ -425,7 +425,7 @@ class NodePath[T] protected () extends js.Object {
     *   t.evaluate(parse("!true")) // { confident: true, value: false }
     *   t.evaluate(parse("foo + foo")) // { confident: false, value: undefined }
     */
-  def evaluate(): AnonConfident = js.native
+  def evaluate(): Confident = js.native
   // ------------------------- evaluation -------------------------
   /**
     * Walk the input `node` and statically evaluate if it's truthy.
@@ -941,12 +941,11 @@ class NodePath[T] protected () extends js.Object {
     * into expressions. This method retains completion records which is
     * extremely important to retain original semantics.
     */
-  def replaceExpressionWithStatements(nodes: js.Array[Node]): Node = js.native
-  def replaceInline(nodes: js.Array[Node]): Unit = js.native
-  def replaceInline(nodes: Node): Unit = js.native
+  def replaceExpressionWithStatements[Nodes /* <: js.Array[Node] */](nodes: Nodes): NodePaths[Nodes] = js.native
+  def replaceInline[Nodes /* <: Node | js.Array[Node] */](nodes: Nodes): NodePaths[Nodes] = js.native
   /** Replace the current node with another. */
-  def replaceWith(replacement: Node): Unit = js.native
-  def replaceWith(replacement: NodePath[Node]): Unit = js.native
+  def replaceWith[T /* <: Node */](replacement: T): js.Array[NodePath[T]] = js.native
+  def replaceWith[T /* <: Node */](replacement: NodePath[T]): js.Array[NodePath[T]] = js.native
   // ------------------------- replacement -------------------------
   /**
     * Replace a node with an array of multiple. This method performs the following steps:
@@ -963,7 +962,7 @@ class NodePath[T] protected () extends js.Object {
     * transforming ASTs is an antipattern and SHOULD NOT be encouraged. Even if it's
     * easier to use, your transforms will be extremely brittle.
     */
-  def replaceWithSourceString(replacement: js.Any): Unit = js.native
+  def replaceWithSourceString(replacement: js.Any): js.Array[NodePath[Node]] = js.native
   def set(key: String, node: Node): Unit = js.native
   def setContext(context: TraversalContext): NodePath[T] = js.native
   def setData(key: String, `val`: js.Any): js.Any = js.native

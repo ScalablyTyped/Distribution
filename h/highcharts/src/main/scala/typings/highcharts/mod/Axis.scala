@@ -34,10 +34,10 @@ class Axis protected () extends js.Object {
     * @param chart
     *        The Chart instance to apply the axis on.
     *
-    * @param options
+    * @param userOptions
     *        Axis options.
     */
-  def this(chart: Chart_, options: AxisOptions) = this()
+  def this(chart: Chart_, userOptions: AxisOptions) = this()
   /**
     * If categories are present for the axis, names are used instead of numbers
     * for that axis.
@@ -155,6 +155,9 @@ class Axis protected () extends js.Object {
     * the label. In apps, use the labels.formatter instead, except when a
     * modification is needed.
     *
+    * @param this
+    *        Formatter context of axis label.
+    *
     * @return The formatted label content.
     */
   def defaultLabelFormatter(): String = js.native
@@ -266,6 +269,12 @@ class Axis protected () extends js.Object {
   def hideCrosshair(): Unit = js.native
   /**
     * Overrideable function to initialize the axis.
+    *
+    * @param chart
+    *        The Chart instance to apply the axis on.
+    *
+    * @param userOptions
+    *        Axis options.
     *
     * @fires Highcharts.Axis#afterInit
     * @fires Highcharts.Axis#init
@@ -403,18 +412,6 @@ class Axis protected () extends js.Object {
     eventArguments: js.Any
   ): Unit = js.native
   /**
-    * Set predefined left+width and top+height (inverted) for yAxes. This
-    * method modifies options param.
-    *
-    * @param axisPosition
-    *        ['left', 'width', 'height', 'top'] or ['top', 'height',
-    *        'width', 'left'] for an inverted chart.
-    *
-    * @param options
-    *        Highcharts.Axis#options.
-    */
-  def setParallelPosition(axisPosition: js.Array[String], options: AxisOptions): Unit = js.native
-  /**
     * Now we have computed the normalized tickInterval, get the tick positions
     *
     * @fires Highcharts.Axis#afterSetTickPositions
@@ -451,14 +448,14 @@ class Axis protected () extends js.Object {
     * @param pixel
     *        The pixel value coordinate.
     *
-    * @param paneCoordiantes
+    * @param paneCoordinates
     *        Whether the input pixel is relative to the chart or just the
     *        axis/pane itself.
     *
     * @return The axis value.
     */
   def toValue(pixel: Double): Double = js.native
-  def toValue(pixel: Double, paneCoordiantes: Boolean): Double = js.native
+  def toValue(pixel: Double, paneCoordinates: Boolean): Double = js.native
   /**
     * Update an axis object with a new set of options. The options are merged
     * with the existing options, so only new or altered options need to be

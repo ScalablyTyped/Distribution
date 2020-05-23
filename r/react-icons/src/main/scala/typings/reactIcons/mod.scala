@@ -1,7 +1,8 @@
 package typings.reactIcons
 
 import typings.react.mod.Context
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
+import typings.reactIcons.anon.IconBasePropsattrundefine
 import typings.reactIcons.iconBaseMod.IconBaseProps
 import typings.reactIcons.iconBaseMod.IconTree
 import typings.reactIcons.iconsManifestMod.IconManifest

@@ -1,6 +1,6 @@
 package typings.svgJs.mod
 
-import typings.svgJs.AnonX
+import typings.svgJs.anon.X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,6 +16,6 @@ trait Path extends Shape {
   def marker(position: String, width: Double, height: Double): Marker = js.native
   def marker(position: String, width: Double, height: Double, block: js.Function1[/* marker */ Marker, Unit]): Marker = js.native
   def plot(d: PathArrayAlias): this.type = js.native
-  def pointAt(length: Double): AnonX = js.native
+  def pointAt(length: Double): X = js.native
 }
 

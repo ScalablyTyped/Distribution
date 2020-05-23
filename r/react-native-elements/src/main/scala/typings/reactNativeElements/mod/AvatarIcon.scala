@@ -14,18 +14,18 @@ object AvatarIcon {
   @scala.inline
   def apply(
     color: String = null,
-    iconStyle: StyleProp[TextStyle] = null,
+    iconStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
     name: String = null,
-    size: Int | Double = null,
-    style: StyleProp[TextStyle] = null,
+    size: js.UndefOr[Double] = js.undefined,
+    style: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
     `type`: IconType = null
   ): AvatarIcon = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(iconStyle)) __obj.updateDynamic("iconStyle")(iconStyle.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AvatarIcon]
   }

@@ -30,18 +30,18 @@ trait ChooseVideoSuccess extends js.Object {
 object ChooseVideoSuccess {
   @scala.inline
   def apply(
-    duration: Int | Double = null,
-    height: Int | Double = null,
-    size: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
+    size: js.UndefOr[Double] = js.undefined,
     tempFilePath: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): ChooseVideoSuccess = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (tempFilePath != null) __obj.updateDynamic("tempFilePath")(tempFilePath.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChooseVideoSuccess]
   }
 }

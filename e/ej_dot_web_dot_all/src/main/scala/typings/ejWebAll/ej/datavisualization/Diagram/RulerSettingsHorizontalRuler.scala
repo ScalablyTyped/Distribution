@@ -39,20 +39,20 @@ object RulerSettingsHorizontalRuler {
   @scala.inline
   def apply(
     arrangeTick: js.Any = null,
-    interval: Int | Double = null,
-    length: Int | Double = null,
+    interval: js.UndefOr[Double] = js.undefined,
+    length: js.UndefOr[Double] = js.undefined,
     markerColor: String = null,
-    segmentWidth: Int | Double = null,
-    thickness: Int | Double = null,
+    segmentWidth: js.UndefOr[Double] = js.undefined,
+    thickness: js.UndefOr[Double] = js.undefined,
     tickAlignment: TickAlignment | String = null
   ): RulerSettingsHorizontalRuler = {
     val __obj = js.Dynamic.literal()
     if (arrangeTick != null) __obj.updateDynamic("arrangeTick")(arrangeTick.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
     if (markerColor != null) __obj.updateDynamic("markerColor")(markerColor.asInstanceOf[js.Any])
-    if (segmentWidth != null) __obj.updateDynamic("segmentWidth")(segmentWidth.asInstanceOf[js.Any])
-    if (thickness != null) __obj.updateDynamic("thickness")(thickness.asInstanceOf[js.Any])
+    if (!js.isUndefined(segmentWidth)) __obj.updateDynamic("segmentWidth")(segmentWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(thickness)) __obj.updateDynamic("thickness")(thickness.get.asInstanceOf[js.Any])
     if (tickAlignment != null) __obj.updateDynamic("tickAlignment")(tickAlignment.asInstanceOf[js.Any])
     __obj.asInstanceOf[RulerSettingsHorizontalRuler]
   }

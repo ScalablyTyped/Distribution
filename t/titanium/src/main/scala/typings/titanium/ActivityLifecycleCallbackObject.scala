@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
   */
 trait ActivityLifecycleCallbackObject extends js.Object {
   /**
-  	 * The Activity firing the callback.
-  	 */
+    * The Activity firing the callback.
+    */
   var source: js.UndefOr[Activity] = js.undefined
 }
 

@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * A command to toggle centered paragraph alignment on and off.
   */
-@JSGlobal("ToggleParagraphAlignmentCenterCommand")
-@js.native
-class ToggleParagraphAlignmentCenterCommand () extends CommandWithBooleanStateBase {
+trait ToggleParagraphAlignmentCenterCommand extends CommandWithBooleanStateBase {
   /**
     * Executes the ToggleParagraphAlignmentCenterCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
+}
+
+object ToggleParagraphAlignmentCenterCommand {
+  @scala.inline
+  def apply(execute: () => Boolean, getState: () => CommandState[Boolean]): ToggleParagraphAlignmentCenterCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
+    __obj.asInstanceOf[ToggleParagraphAlignmentCenterCommand]
+  }
 }
 

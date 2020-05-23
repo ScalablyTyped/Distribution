@@ -191,7 +191,7 @@ object PopupProperties {
     location: PointProperties = null,
     maxInlineActions: Double | js.Any = null,
     promises: js.Array[js.Promise[_]] = null,
-    selectedFeatureIndex: Int | Double = null,
+    selectedFeatureIndex: js.UndefOr[Double] = js.undefined,
     spinnerEnabled: js.UndefOr[Boolean] = js.undefined,
     title: String = null,
     view: MapViewProperties | SceneViewProperties = null,
@@ -202,31 +202,31 @@ object PopupProperties {
     val __obj = js.Dynamic.literal()
     if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoCloseEnabled)) __obj.updateDynamic("autoCloseEnabled")(autoCloseEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoOpenEnabled)) __obj.updateDynamic("autoOpenEnabled")(autoOpenEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapseEnabled)) __obj.updateDynamic("collapseEnabled")(collapseEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCloseEnabled)) __obj.updateDynamic("autoCloseEnabled")(autoCloseEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoOpenEnabled)) __obj.updateDynamic("autoOpenEnabled")(autoOpenEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapseEnabled)) __obj.updateDynamic("collapseEnabled")(collapseEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.get.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultPopupTemplateEnabled)) __obj.updateDynamic("defaultPopupTemplateEnabled")(defaultPopupTemplateEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
-    if (!js.isUndefined(dockEnabled)) __obj.updateDynamic("dockEnabled")(dockEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultPopupTemplateEnabled)) __obj.updateDynamic("defaultPopupTemplateEnabled")(defaultPopupTemplateEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dockEnabled)) __obj.updateDynamic("dockEnabled")(dockEnabled.get.asInstanceOf[js.Any])
     if (dockOptions != null) __obj.updateDynamic("dockOptions")(dockOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(featureNavigationEnabled)) __obj.updateDynamic("featureNavigationEnabled")(featureNavigationEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(featureNavigationEnabled)) __obj.updateDynamic("featureNavigationEnabled")(featureNavigationEnabled.get.asInstanceOf[js.Any])
     if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
     if (goToOverride != null) __obj.updateDynamic("goToOverride")(js.Any.fromFunction2(goToOverride))
-    if (!js.isUndefined(highlightEnabled)) __obj.updateDynamic("highlightEnabled")(highlightEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightEnabled)) __obj.updateDynamic("highlightEnabled")(highlightEnabled.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (maxInlineActions != null) __obj.updateDynamic("maxInlineActions")(maxInlineActions.asInstanceOf[js.Any])
     if (promises != null) __obj.updateDynamic("promises")(promises.asInstanceOf[js.Any])
-    if (selectedFeatureIndex != null) __obj.updateDynamic("selectedFeatureIndex")(selectedFeatureIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(spinnerEnabled)) __obj.updateDynamic("spinnerEnabled")(spinnerEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedFeatureIndex)) __obj.updateDynamic("selectedFeatureIndex")(selectedFeatureIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spinnerEnabled)) __obj.updateDynamic("spinnerEnabled")(spinnerEnabled.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     if (visibleElements != null) __obj.updateDynamic("visibleElements")(visibleElements.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupProperties]
   }

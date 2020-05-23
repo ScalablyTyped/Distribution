@@ -18,10 +18,10 @@ trait RandomSplitEntry extends js.Object {
 
 object RandomSplitEntry {
   @scala.inline
-  def apply(NextActivity: string = null, Percentage: Int | Double = null): RandomSplitEntry = {
+  def apply(NextActivity: string = null, Percentage: js.UndefOr[integer] = js.undefined): RandomSplitEntry = {
     val __obj = js.Dynamic.literal()
     if (NextActivity != null) __obj.updateDynamic("NextActivity")(NextActivity.asInstanceOf[js.Any])
-    if (Percentage != null) __obj.updateDynamic("Percentage")(Percentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(Percentage)) __obj.updateDynamic("Percentage")(Percentage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RandomSplitEntry]
   }
 }

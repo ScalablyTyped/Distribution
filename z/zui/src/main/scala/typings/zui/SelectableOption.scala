@@ -22,7 +22,7 @@ object SelectableOption {
   def apply(
     clickBehavior: String = null,
     finish: /* e */ js.UndefOr[SelectableEvent] => Unit = null,
-    ignoreVal: Int | Double = null,
+    ignoreVal: js.UndefOr[Double] = js.undefined,
     mouseButton: String = null,
     rangeStyle: String | js.Object = null,
     select: /* e */ js.UndefOr[SelectableEvent] => Unit = null,
@@ -34,7 +34,7 @@ object SelectableOption {
     val __obj = js.Dynamic.literal()
     if (clickBehavior != null) __obj.updateDynamic("clickBehavior")(clickBehavior.asInstanceOf[js.Any])
     if (finish != null) __obj.updateDynamic("finish")(js.Any.fromFunction1(finish))
-    if (ignoreVal != null) __obj.updateDynamic("ignoreVal")(ignoreVal.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreVal)) __obj.updateDynamic("ignoreVal")(ignoreVal.get.asInstanceOf[js.Any])
     if (mouseButton != null) __obj.updateDynamic("mouseButton")(mouseButton.asInstanceOf[js.Any])
     if (rangeStyle != null) __obj.updateDynamic("rangeStyle")(rangeStyle.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))

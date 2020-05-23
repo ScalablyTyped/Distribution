@@ -51,11 +51,11 @@ object Opts {
     unknown: /* arg */ String => Boolean = null
   ): Opts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(`--`)) __obj.updateDynamic("--")(`--`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`--`)) __obj.updateDynamic("--")(`--`.get.asInstanceOf[js.Any])
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (boolean != null) __obj.updateDynamic("boolean")(boolean.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopEarly)) __obj.updateDynamic("stopEarly")(stopEarly.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopEarly)) __obj.updateDynamic("stopEarly")(stopEarly.get.asInstanceOf[js.Any])
     if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
     if (unknown != null) __obj.updateDynamic("unknown")(js.Any.fromFunction1(unknown))
     __obj.asInstanceOf[Opts]

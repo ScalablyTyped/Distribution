@@ -2,6 +2,8 @@ package typings.urqlCore
 
 import typings.graphql.astMod.DocumentNode
 import typings.std.Error
+import typings.urqlCore.anon.Context
+import typings.urqlCore.anon.NetworkError
 import typings.urqlCore.typesMod.GraphQLRequest
 import typings.urqlCore.typesMod.Operation
 import typings.urqlCore.typesMod.OperationDebugMeta
@@ -18,10 +20,10 @@ object utilsMod extends js.Object {
   @js.native
   class CombinedError protected ()
     extends typings.urqlCore.errorMod.CombinedError {
-    def this(hasNetworkErrorGraphQLErrorsResponse: AnonNetworkError) = this()
+    def this(hasNetworkErrorGraphQLErrorsResponse: NetworkError) = this()
   }
   
-  def addMetadata(source: Operation, meta: OperationDebugMeta): AnonContext = js.native
+  def addMetadata(source: Operation, meta: OperationDebugMeta): Context = js.native
   def collectTypesFromResponse(response: js.Object): js.Array[String] = js.native
   def createRequest(q: String): GraphQLRequest = js.native
   def createRequest(q: String, vars: js.Object): GraphQLRequest = js.native

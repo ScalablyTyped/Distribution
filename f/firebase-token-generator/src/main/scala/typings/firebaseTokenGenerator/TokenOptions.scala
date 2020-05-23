@@ -18,18 +18,18 @@ object TokenOptions {
   def apply(
     admin: js.UndefOr[Boolean] = js.undefined,
     debug: js.UndefOr[Boolean] = js.undefined,
-    expires: Int | Double = null,
-    iat: Int | Double = null,
-    notBefore: Int | Double = null,
+    expires: js.UndefOr[Double] = js.undefined,
+    iat: js.UndefOr[Double] = js.undefined,
+    notBefore: js.UndefOr[Double] = js.undefined,
     simulate: js.UndefOr[Boolean] = js.undefined
   ): TokenOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(admin)) __obj.updateDynamic("admin")(admin.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (iat != null) __obj.updateDynamic("iat")(iat.asInstanceOf[js.Any])
-    if (notBefore != null) __obj.updateDynamic("notBefore")(notBefore.asInstanceOf[js.Any])
-    if (!js.isUndefined(simulate)) __obj.updateDynamic("simulate")(simulate.asInstanceOf[js.Any])
+    if (!js.isUndefined(admin)) __obj.updateDynamic("admin")(admin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expires)) __obj.updateDynamic("expires")(expires.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(iat)) __obj.updateDynamic("iat")(iat.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(notBefore)) __obj.updateDynamic("notBefore")(notBefore.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(simulate)) __obj.updateDynamic("simulate")(simulate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenOptions]
   }
 }

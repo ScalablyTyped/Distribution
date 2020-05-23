@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapRadioButton")
 @js.native
-class BootstrapRadioButton () extends BootstrapClientEdit {
+trait BootstrapRadioButton extends BootstrapClientEdit {
   def getCheckState(): String = js.native
   def getChecked(): Boolean = js.native
   def getText(): String = js.native

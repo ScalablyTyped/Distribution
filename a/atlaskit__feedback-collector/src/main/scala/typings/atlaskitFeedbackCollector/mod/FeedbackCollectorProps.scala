@@ -83,8 +83,8 @@ object FeedbackCollectorProps {
     onSubmit: () => Unit = null,
     summaryDefaultValue: FieldValueType = null,
     summaryFieldId: String = null,
-    summaryTruncateLength: Int | Double = null,
-    timeoutOnSubmit: Int | Double = null,
+    summaryTruncateLength: js.UndefOr[Double] = js.undefined,
+    timeoutOnSubmit: js.UndefOr[Double] = js.undefined,
     typeBugDefaultValue: FieldValueType = null,
     typeCommentDefaultValue: FieldValueType = null,
     typeEmptyDefaultValue: FieldValueType = null,
@@ -108,8 +108,8 @@ object FeedbackCollectorProps {
     if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction0(onSubmit))
     if (summaryDefaultValue != null) __obj.updateDynamic("summaryDefaultValue")(summaryDefaultValue.asInstanceOf[js.Any])
     if (summaryFieldId != null) __obj.updateDynamic("summaryFieldId")(summaryFieldId.asInstanceOf[js.Any])
-    if (summaryTruncateLength != null) __obj.updateDynamic("summaryTruncateLength")(summaryTruncateLength.asInstanceOf[js.Any])
-    if (timeoutOnSubmit != null) __obj.updateDynamic("timeoutOnSubmit")(timeoutOnSubmit.asInstanceOf[js.Any])
+    if (!js.isUndefined(summaryTruncateLength)) __obj.updateDynamic("summaryTruncateLength")(summaryTruncateLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutOnSubmit)) __obj.updateDynamic("timeoutOnSubmit")(timeoutOnSubmit.get.asInstanceOf[js.Any])
     if (typeBugDefaultValue != null) __obj.updateDynamic("typeBugDefaultValue")(typeBugDefaultValue.asInstanceOf[js.Any])
     if (typeCommentDefaultValue != null) __obj.updateDynamic("typeCommentDefaultValue")(typeCommentDefaultValue.asInstanceOf[js.Any])
     if (typeEmptyDefaultValue != null) __obj.updateDynamic("typeEmptyDefaultValue")(typeEmptyDefaultValue.asInstanceOf[js.Any])

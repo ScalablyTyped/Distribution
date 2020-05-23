@@ -1,6 +1,6 @@
 package typings.jupyterlabServices.messagesMod
 
-import typings.jupyterlabServices.AnonName
+import typings.jupyterlabServices.anon.Name
 import typings.jupyterlabServices.jupyterlabServicesStrings.iopub
 import typings.jupyterlabServices.jupyterlabServicesStrings.stream
 import typings.luminoCoreutils.jsonMod.JSONObject
@@ -14,14 +14,14 @@ trait IStreamMsg
   extends IIOPubMessage[stream]
      with _Message {
   @JSName("content")
-  var content_IStreamMsg: AnonName
+  var content_IStreamMsg: Name
 }
 
 object IStreamMsg {
   @scala.inline
   def apply(
     channel: iopub,
-    content: AnonName,
+    content: Name,
     header: IHeader[stream],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,

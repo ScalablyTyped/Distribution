@@ -19,14 +19,14 @@ object BindRadioSelect {
   def apply(
     input: radio | select,
     options: js.Array[_],
-    debounce: Int | Double = null,
+    debounce: js.UndefOr[Double] = js.undefined,
     element: Element = null,
     labels: js.Array[String] = null,
     name: String = null,
     `type`: String = null
   ): BindRadioSelect = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
-    if (debounce != null) __obj.updateDynamic("debounce")(debounce.asInstanceOf[js.Any])
+    if (!js.isUndefined(debounce)) __obj.updateDynamic("debounce")(debounce.get.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

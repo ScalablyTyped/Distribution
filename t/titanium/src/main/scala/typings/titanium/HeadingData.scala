@@ -9,54 +9,54 @@ import scala.scalajs.js.annotation._
   */
 trait HeadingData extends js.Object {
   /**
-  	 * Accuracy of the compass heading, in platform-specific units.
-  	 */
+    * Accuracy of the compass heading, in platform-specific units.
+    */
   var accuracy: js.UndefOr[Double] = js.undefined
   /**
-  	 * Declination in degrees from magnetic North.
-  	 */
+    * Declination in degrees from magnetic North.
+    */
   var magneticHeading: js.UndefOr[Double] = js.undefined
   /**
-  	 * Timestamp for the heading data, in milliseconds.
-  	 */
+    * Timestamp for the heading data, in milliseconds.
+    */
   var timestamp: js.UndefOr[Double] = js.undefined
   /**
-  	 * Declination in degrees from true North.
-  	 */
+    * Declination in degrees from true North.
+    */
   var trueHeading: js.UndefOr[Double] = js.undefined
   /**
-  	 * Raw geomagnetic data for the X axis.
-  	 */
+    * Raw geomagnetic data for the X axis.
+    */
   var x: js.UndefOr[Double] = js.undefined
   /**
-  	 * Raw geomagnetic data for the Y axis.
-  	 */
+    * Raw geomagnetic data for the Y axis.
+    */
   var y: js.UndefOr[Double] = js.undefined
   /**
-  	 * Raw geomagnetic data for the Z axis.
-  	 */
+    * Raw geomagnetic data for the Z axis.
+    */
   var z: js.UndefOr[Double] = js.undefined
 }
 
 object HeadingData {
   @scala.inline
   def apply(
-    accuracy: Int | Double = null,
-    magneticHeading: Int | Double = null,
-    timestamp: Int | Double = null,
-    trueHeading: Int | Double = null,
-    x: Int | Double = null,
-    y: Int | Double = null,
-    z: Int | Double = null
+    accuracy: js.UndefOr[Double] = js.undefined,
+    magneticHeading: js.UndefOr[Double] = js.undefined,
+    timestamp: js.UndefOr[Double] = js.undefined,
+    trueHeading: js.UndefOr[Double] = js.undefined,
+    x: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined,
+    z: js.UndefOr[Double] = js.undefined
   ): HeadingData = {
     val __obj = js.Dynamic.literal()
-    if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy.asInstanceOf[js.Any])
-    if (magneticHeading != null) __obj.updateDynamic("magneticHeading")(magneticHeading.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
-    if (trueHeading != null) __obj.updateDynamic("trueHeading")(trueHeading.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    if (!js.isUndefined(accuracy)) __obj.updateDynamic("accuracy")(accuracy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(magneticHeading)) __obj.updateDynamic("magneticHeading")(magneticHeading.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trueHeading)) __obj.updateDynamic("trueHeading")(trueHeading.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeadingData]
   }
 }

@@ -1,7 +1,7 @@
 package typings.babylonjs.miscIndexMod
 
-import typings.babylonjs.AnonCrossOrigin
 import typings.babylonjs.ImageBitmap
+import typings.babylonjs.anon.CrossOrigin
 import typings.babylonjs.fileRequestMod.IFileRequest
 import typings.babylonjs.iofflineproviderMod.IOfflineProvider
 import typings.babylonjs.typesMod.Nullable
@@ -265,7 +265,7 @@ object FileTools extends js.Object {
     * @param url define the url we are trying
     * @param element define the dom element where to configure the cors policy
     */
-  def SetCorsBehavior(url: String, element: AnonCrossOrigin): Unit = js.native
-  def SetCorsBehavior(url: js.Array[String], element: AnonCrossOrigin): Unit = js.native
+  def SetCorsBehavior(url: String, element: CrossOrigin): Unit = js.native
+  def SetCorsBehavior(url: js.Array[String], element: CrossOrigin): Unit = js.native
 }
 

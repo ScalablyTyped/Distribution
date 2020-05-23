@@ -4,7 +4,6 @@ import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityState
-import typings.reactNative.mod.AccessibilityStates
 import typings.reactNative.mod.AccessibilityTrait
 import typings.reactNative.mod.AccessibilityValue
 import typings.reactNative.mod.GestureResponderEvent
@@ -26,7 +25,7 @@ import typings.reactNative.reactNativeStrings.polite
 import typings.reactNative.reactNativeStrings.radiobutton_checked
 import typings.reactNative.reactNativeStrings.radiobutton_unchecked
 import typings.reactNative.reactNativeStrings.yes
-import typings.reactNativeMaterialKit.AnonChecked
+import typings.reactNativeMaterialKit.anon.Checked
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +33,7 @@ import scala.scalajs.js.annotation._
 trait MKSwitchProperties extends TouchableWithoutFeedbackProps {
   var checked: js.UndefOr[Boolean] = js.undefined
   var offColor: js.UndefOr[String] = js.undefined
-  var onCheckedChange: js.UndefOr[js.Function1[/* opts */ AnonChecked, Unit]] = js.undefined
+  var onCheckedChange: js.UndefOr[js.Function1[/* opts */ Checked, Unit]] = js.undefined
   var onColor: js.UndefOr[String] = js.undefined
   var rippleAniDuration: js.UndefOr[Double] = js.undefined
   var rippleColor: js.UndefOr[String] = js.undefined
@@ -58,15 +57,14 @@ object MKSwitchProperties {
     accessibilityLiveRegion: none | polite | assertive = null,
     accessibilityRole: AccessibilityRole = null,
     accessibilityState: AccessibilityState = null,
-    accessibilityStates: js.Array[AccessibilityStates] = null,
     accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
     accessibilityValue: AccessibilityValue = null,
     accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined,
     accessible: js.UndefOr[Boolean] = js.undefined,
     checked: js.UndefOr[Boolean] = js.undefined,
-    delayLongPress: Int | Double = null,
-    delayPressIn: Int | Double = null,
-    delayPressOut: Int | Double = null,
+    delayLongPress: js.UndefOr[Double] = js.undefined,
+    delayPressIn: js.UndefOr[Double] = js.undefined,
+    delayPressOut: js.UndefOr[Double] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
     hitSlop: Insets = null,
@@ -76,7 +74,7 @@ object MKSwitchProperties {
     onAccessibilityEscape: () => Unit = null,
     onAccessibilityTap: () => Unit = null,
     onBlur: /* e */ NativeSyntheticEvent[TargetedEvent] => Unit = null,
-    onCheckedChange: /* opts */ AnonChecked => Unit = null,
+    onCheckedChange: /* opts */ Checked => Unit = null,
     onColor: String = null,
     onFocus: /* e */ NativeSyntheticEvent[TargetedEvent] => Unit = null,
     onLayout: /* event */ LayoutChangeEvent => Unit = null,
@@ -86,39 +84,38 @@ object MKSwitchProperties {
     onPressIn: /* event */ GestureResponderEvent => Unit = null,
     onPressOut: /* event */ GestureResponderEvent => Unit = null,
     pressRetentionOffset: Insets = null,
-    rippleAniDuration: Int | Double = null,
+    rippleAniDuration: js.UndefOr[Double] = js.undefined,
     rippleColor: String = null,
-    style: StyleProp[ViewStyle] = null,
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     testID: String = null,
-    thumbAniDuration: Int | Double = null,
+    thumbAniDuration: js.UndefOr[Double] = js.undefined,
     thumbOffColor: String = null,
     thumbOnColor: String = null,
-    thumbRadius: Int | Double = null,
-    trackLength: Int | Double = null,
-    trackSize: Int | Double = null,
+    thumbRadius: js.UndefOr[Double] = js.undefined,
+    trackLength: js.UndefOr[Double] = js.undefined,
+    trackSize: js.UndefOr[Double] = js.undefined,
     tvParallaxProperties: TVParallaxProperties = null
   ): MKSwitchProperties = {
     val __obj = js.Dynamic.literal()
     if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions.asInstanceOf[js.Any])
     if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden.get.asInstanceOf[js.Any])
     if (accessibilityHint != null) __obj.updateDynamic("accessibilityHint")(accessibilityHint.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityIgnoresInvertColors)) __obj.updateDynamic("accessibilityIgnoresInvertColors")(accessibilityIgnoresInvertColors.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessibilityIgnoresInvertColors)) __obj.updateDynamic("accessibilityIgnoresInvertColors")(accessibilityIgnoresInvertColors.get.asInstanceOf[js.Any])
     if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
     if (accessibilityLiveRegion != null) __obj.updateDynamic("accessibilityLiveRegion")(accessibilityLiveRegion.asInstanceOf[js.Any])
     if (accessibilityRole != null) __obj.updateDynamic("accessibilityRole")(accessibilityRole.asInstanceOf[js.Any])
     if (accessibilityState != null) __obj.updateDynamic("accessibilityState")(accessibilityState.asInstanceOf[js.Any])
-    if (accessibilityStates != null) __obj.updateDynamic("accessibilityStates")(accessibilityStates.asInstanceOf[js.Any])
     if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
     if (accessibilityValue != null) __obj.updateDynamic("accessibilityValue")(accessibilityValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.asInstanceOf[js.Any])
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
-    if (delayLongPress != null) __obj.updateDynamic("delayLongPress")(delayLongPress.asInstanceOf[js.Any])
-    if (delayPressIn != null) __obj.updateDynamic("delayPressIn")(delayPressIn.asInstanceOf[js.Any])
-    if (delayPressOut != null) __obj.updateDynamic("delayPressOut")(delayPressOut.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayLongPress)) __obj.updateDynamic("delayLongPress")(delayLongPress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayPressIn)) __obj.updateDynamic("delayPressIn")(delayPressIn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayPressOut)) __obj.updateDynamic("delayPressOut")(delayPressOut.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.get.asInstanceOf[js.Any])
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
     if (offColor != null) __obj.updateDynamic("offColor")(offColor.asInstanceOf[js.Any])
@@ -136,16 +133,16 @@ object MKSwitchProperties {
     if (onPressIn != null) __obj.updateDynamic("onPressIn")(js.Any.fromFunction1(onPressIn))
     if (onPressOut != null) __obj.updateDynamic("onPressOut")(js.Any.fromFunction1(onPressOut))
     if (pressRetentionOffset != null) __obj.updateDynamic("pressRetentionOffset")(pressRetentionOffset.asInstanceOf[js.Any])
-    if (rippleAniDuration != null) __obj.updateDynamic("rippleAniDuration")(rippleAniDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(rippleAniDuration)) __obj.updateDynamic("rippleAniDuration")(rippleAniDuration.get.asInstanceOf[js.Any])
     if (rippleColor != null) __obj.updateDynamic("rippleColor")(rippleColor.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
-    if (thumbAniDuration != null) __obj.updateDynamic("thumbAniDuration")(thumbAniDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(thumbAniDuration)) __obj.updateDynamic("thumbAniDuration")(thumbAniDuration.get.asInstanceOf[js.Any])
     if (thumbOffColor != null) __obj.updateDynamic("thumbOffColor")(thumbOffColor.asInstanceOf[js.Any])
     if (thumbOnColor != null) __obj.updateDynamic("thumbOnColor")(thumbOnColor.asInstanceOf[js.Any])
-    if (thumbRadius != null) __obj.updateDynamic("thumbRadius")(thumbRadius.asInstanceOf[js.Any])
-    if (trackLength != null) __obj.updateDynamic("trackLength")(trackLength.asInstanceOf[js.Any])
-    if (trackSize != null) __obj.updateDynamic("trackSize")(trackSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(thumbRadius)) __obj.updateDynamic("thumbRadius")(thumbRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackLength)) __obj.updateDynamic("trackLength")(trackLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackSize)) __obj.updateDynamic("trackSize")(trackSize.get.asInstanceOf[js.Any])
     if (tvParallaxProperties != null) __obj.updateDynamic("tvParallaxProperties")(tvParallaxProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[MKSwitchProperties]
   }

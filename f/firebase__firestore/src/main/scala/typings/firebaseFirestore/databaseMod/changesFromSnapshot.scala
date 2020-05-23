@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/api/database", "changesFromSnapshot")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/api/database", "changesFromSnapshot")
 @js.native
 object changesFromSnapshot extends js.Object {
   def apply[T](firestore: Firestore, includeMetadataChanges: Boolean, snapshot: ViewSnapshot): js.Array[DocumentChange[T]] = js.native

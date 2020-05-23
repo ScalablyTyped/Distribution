@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,7 +43,17 @@ trait GeolocationPositioning extends js.Object {
   var view: MapView | SceneView
 }
 
-@JSGlobal("__esri.GeolocationPositioning")
-@js.native
-object GeolocationPositioning extends TopLevel[GeolocationPositioningConstructor]
+object GeolocationPositioning {
+  @scala.inline
+  def apply(
+    geolocationOptions: js.Any,
+    goToLocationEnabled: Boolean,
+    graphic: Graphic,
+    scale: Double,
+    view: MapView | SceneView
+  ): GeolocationPositioning = {
+    val __obj = js.Dynamic.literal(geolocationOptions = geolocationOptions.asInstanceOf[js.Any], goToLocationEnabled = goToLocationEnabled.asInstanceOf[js.Any], graphic = graphic.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GeolocationPositioning]
+  }
+}
 

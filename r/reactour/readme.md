@@ -1,7 +1,7 @@
 
 # Scala.js typings for reactour
 
-Typings are for version 1.13
+Typings are for version 1.17
 
 ## Library description:
 Tourist Guide into your React Components

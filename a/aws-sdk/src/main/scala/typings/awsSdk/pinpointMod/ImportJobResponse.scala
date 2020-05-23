@@ -69,22 +69,22 @@ object ImportJobResponse {
     Id: string,
     JobStatus: JobStatus,
     Type: string,
-    CompletedPieces: Int | Double = null,
+    CompletedPieces: js.UndefOr[integer] = js.undefined,
     CompletionDate: string = null,
-    FailedPieces: Int | Double = null,
+    FailedPieces: js.UndefOr[integer] = js.undefined,
     Failures: ListOfString = null,
-    TotalFailures: Int | Double = null,
-    TotalPieces: Int | Double = null,
-    TotalProcessed: Int | Double = null
+    TotalFailures: js.UndefOr[integer] = js.undefined,
+    TotalPieces: js.UndefOr[integer] = js.undefined,
+    TotalProcessed: js.UndefOr[integer] = js.undefined
   ): ImportJobResponse = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], Definition = Definition.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], JobStatus = JobStatus.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-    if (CompletedPieces != null) __obj.updateDynamic("CompletedPieces")(CompletedPieces.asInstanceOf[js.Any])
+    if (!js.isUndefined(CompletedPieces)) __obj.updateDynamic("CompletedPieces")(CompletedPieces.get.asInstanceOf[js.Any])
     if (CompletionDate != null) __obj.updateDynamic("CompletionDate")(CompletionDate.asInstanceOf[js.Any])
-    if (FailedPieces != null) __obj.updateDynamic("FailedPieces")(FailedPieces.asInstanceOf[js.Any])
+    if (!js.isUndefined(FailedPieces)) __obj.updateDynamic("FailedPieces")(FailedPieces.get.asInstanceOf[js.Any])
     if (Failures != null) __obj.updateDynamic("Failures")(Failures.asInstanceOf[js.Any])
-    if (TotalFailures != null) __obj.updateDynamic("TotalFailures")(TotalFailures.asInstanceOf[js.Any])
-    if (TotalPieces != null) __obj.updateDynamic("TotalPieces")(TotalPieces.asInstanceOf[js.Any])
-    if (TotalProcessed != null) __obj.updateDynamic("TotalProcessed")(TotalProcessed.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalFailures)) __obj.updateDynamic("TotalFailures")(TotalFailures.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalPieces)) __obj.updateDynamic("TotalPieces")(TotalPieces.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalProcessed)) __obj.updateDynamic("TotalProcessed")(TotalProcessed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportJobResponse]
   }
 }

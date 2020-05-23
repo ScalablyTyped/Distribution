@@ -7,9 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.datalayout")
 @js.native
-class datalayout () extends baseview {
+trait datalayout extends baseview {
   @JSName("config")
   var config_datalayout: datalayoutConfig = js.native
   var data: DataStore = js.native

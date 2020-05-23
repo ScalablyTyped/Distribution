@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object stopSearchBeacons extends js.Object {
   /**
-  	 * 关闭查找周边ibeacon设备接口
-  	 */
+    * 关闭查找周边ibeacon设备接口
+    */
   def apply(params: IstopSearchBeacons): Unit = js.native
 }
 

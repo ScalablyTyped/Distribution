@@ -1,6 +1,6 @@
 package typings.argparse.mod
 
-import typings.argparse.Anon0
+import typings.argparse.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait ArgumentParserOptions extends js.Object {
   var debug: js.UndefOr[Boolean] = js.undefined
   var description: js.UndefOr[String] = js.undefined
   var epilog: js.UndefOr[String] = js.undefined
-  var formatterClass: js.UndefOr[Anon0] = js.undefined
+  var formatterClass: js.UndefOr[`0`] = js.undefined
   var parents: js.UndefOr[js.Array[ArgumentParser]] = js.undefined
   var prefixChars: js.UndefOr[String] = js.undefined
   var prog: js.UndefOr[String] = js.undefined
@@ -27,7 +27,7 @@ object ArgumentParserOptions {
     debug: js.UndefOr[Boolean] = js.undefined,
     description: String = null,
     epilog: String = null,
-    formatterClass: Anon0 = null,
+    formatterClass: `0` = null,
     parents: js.Array[ArgumentParser] = null,
     prefixChars: String = null,
     prog: String = null,
@@ -35,9 +35,9 @@ object ArgumentParserOptions {
     version: String = null
   ): ArgumentParserOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addHelp)) __obj.updateDynamic("addHelp")(addHelp.asInstanceOf[js.Any])
+    if (!js.isUndefined(addHelp)) __obj.updateDynamic("addHelp")(addHelp.get.asInstanceOf[js.Any])
     if (argumentDefault != null) __obj.updateDynamic("argumentDefault")(argumentDefault.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (epilog != null) __obj.updateDynamic("epilog")(epilog.asInstanceOf[js.Any])
     if (formatterClass != null) __obj.updateDynamic("formatterClass")(formatterClass.asInstanceOf[js.Any])

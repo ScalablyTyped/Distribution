@@ -1,5 +1,8 @@
 package typings.reactPose
 
+import typings.reactPose.anon.EnterAfterExit
+import typings.reactPose.anon.FlipMove
+import typings.reactPose.anon.PartialState
 import typings.reactPose.posedMod.Posed
 import typings.reactPose.transitionTypesMod.Props
 import typings.reactPose.transitionTypesMod.State
@@ -22,13 +25,13 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object PoseGroup extends js.Object {
-    var defaultProps: AnonFlipMove = js.native
+    var defaultProps: FlipMove = js.native
   }
   
   /* static members */
   @js.native
   object Transition extends js.Object {
-    var defaultProps: AnonEnterAfterExit = js.native
+    var defaultProps: EnterAfterExit = js.native
     def getDerivedStateFromProps(props: Props, state: State): PartialState = js.native
   }
   

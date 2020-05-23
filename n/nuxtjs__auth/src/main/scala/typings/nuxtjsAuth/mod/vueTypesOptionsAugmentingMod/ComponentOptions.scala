@@ -11,7 +11,7 @@ trait ComponentOptions[V /* <: Vue */] extends js.Object {
 
 object ComponentOptions {
   @scala.inline
-  def apply[V /* <: Vue */](auth: Boolean | String = null): ComponentOptions[V] = {
+  def apply[V](auth: Boolean | String = null): ComponentOptions[V] = {
     val __obj = js.Dynamic.literal()
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentOptions[V]]

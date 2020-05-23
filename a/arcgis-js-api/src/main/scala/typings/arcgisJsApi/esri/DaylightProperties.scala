@@ -52,7 +52,7 @@ object DaylightProperties {
     destroyed: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     label: String = null,
-    playSpeedMultiplier: Int | Double = null,
+    playSpeedMultiplier: js.UndefOr[Double] = js.undefined,
     view: SceneViewProperties = null,
     viewModel: DaylightViewModelProperties = null,
     visibleElements: DaylightVisibleElements = null
@@ -60,10 +60,10 @@ object DaylightProperties {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (dateOrSeason != null) __obj.updateDynamic("dateOrSeason")(dateOrSeason.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (playSpeedMultiplier != null) __obj.updateDynamic("playSpeedMultiplier")(playSpeedMultiplier.asInstanceOf[js.Any])
+    if (!js.isUndefined(playSpeedMultiplier)) __obj.updateDynamic("playSpeedMultiplier")(playSpeedMultiplier.get.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
     if (visibleElements != null) __obj.updateDynamic("visibleElements")(visibleElements.asInstanceOf[js.Any])

@@ -3,7 +3,7 @@ package typings.reactPose.typesMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.popmotionPose.typesMod.DomPopmotionConfig
 import typings.popmotionPose.typesMod.DomPopmotionPoser
-import typings.reactPose.AnonCurrent
+import typings.reactPose.anon.Current
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait PoseElementInternalProps
   var getInitialPoseFromParent: js.UndefOr[js.Function0[CurrentPose | Unit]] = js.undefined
   var getParentPoseConfig: js.UndefOr[js.Function0[DomPopmotionConfig]] = js.undefined
   var initialPose: js.UndefOr[CurrentPose] = js.undefined
-  var innerRef: js.UndefOr[AnonCurrent | RefFunc] = js.undefined
+  var innerRef: js.UndefOr[Current | RefFunc] = js.undefined
   var onPoseComplete: js.UndefOr[js.Function1[/* pose */ CurrentPose, _]] = js.undefined
   var onUnmount: js.UndefOr[js.Function1[/* child */ DomPopmotionPoser, _]] = js.undefined
   var onValueChange: js.UndefOr[StringDictionary[js.Function1[/* v */ js.Any, _]]] = js.undefined
@@ -32,13 +32,13 @@ object PoseElementInternalProps {
   def apply(
     elementType: js.Any,
     poseConfig: DomPopmotionConfig | ConfigFactory,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     _pose: CurrentPose = null,
     children: js.Any = null,
     getInitialPoseFromParent: () => CurrentPose | Unit = null,
     getParentPoseConfig: () => DomPopmotionConfig = null,
     initialPose: CurrentPose = null,
-    innerRef: AnonCurrent | RefFunc = null,
+    innerRef: Current | RefFunc = null,
     onPoseComplete: /* pose */ CurrentPose => _ = null,
     onUnmount: /* child */ DomPopmotionPoser => _ = null,
     onValueChange: StringDictionary[js.Function1[/* v */ js.Any, _]] = null,
@@ -59,7 +59,7 @@ object PoseElementInternalProps {
     if (onValueChange != null) __obj.updateDynamic("onValueChange")(onValueChange.asInstanceOf[js.Any])
     if (pose != null) __obj.updateDynamic("pose")(pose.asInstanceOf[js.Any])
     if (registerChild != null) __obj.updateDynamic("registerChild")(js.Any.fromFunction1(registerChild))
-    if (!js.isUndefined(withParent)) __obj.updateDynamic("withParent")(withParent.asInstanceOf[js.Any])
+    if (!js.isUndefined(withParent)) __obj.updateDynamic("withParent")(withParent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PoseElementInternalProps]
   }
 }

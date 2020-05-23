@@ -1,6 +1,5 @@
 package typings.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,20 +24,6 @@ object RangeCopyType extends js.Object {
   
   @js.native
   sealed trait values extends RangeCopyType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[RangeCopyType with String] = js.native
-  /* "All" */ @js.native
-  object all extends TopLevel[all with String]
-  
-  /* "Formats" */ @js.native
-  object formats extends TopLevel[formats with String]
-  
-  /* "Formulas" */ @js.native
-  object formulas extends TopLevel[formulas with String]
-  
-  /* "Values" */ @js.native
-  object values extends TopLevel[values with String]
   
 }
 

@@ -26,12 +26,12 @@ trait Literal
     * The text value, unescaped, without language or type (example: Brad Pitt).
     */
   var value: String = js.native
-  def equals(): Boolean = js.native
   /**
     * @param other The term to compare with.
     * @return True if and only if other has termType "Literal"
     *                   and the same `value`, `language`, and `datatype`.
     */
+  def equals(): Boolean = js.native
   def equals(other: Term): Boolean = js.native
 }
 

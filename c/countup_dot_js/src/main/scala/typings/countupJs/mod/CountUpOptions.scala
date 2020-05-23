@@ -27,35 +27,35 @@ object CountUpOptions {
   @scala.inline
   def apply(
     decimal: String = null,
-    decimalPlaces: Int | Double = null,
-    duration: Int | Double = null,
+    decimalPlaces: js.UndefOr[Double] = js.undefined,
+    duration: js.UndefOr[Double] = js.undefined,
     easingFn: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double = null,
     formattingFn: /* n */ Double => String = null,
     numerals: js.Array[String] = null,
     prefix: String = null,
     separator: String = null,
-    smartEasingAmount: Int | Double = null,
-    smartEasingThreshold: Int | Double = null,
-    startVal: Int | Double = null,
+    smartEasingAmount: js.UndefOr[Double] = js.undefined,
+    smartEasingThreshold: js.UndefOr[Double] = js.undefined,
+    startVal: js.UndefOr[Double] = js.undefined,
     suffix: String = null,
     useEasing: js.UndefOr[Boolean] = js.undefined,
     useGrouping: js.UndefOr[Boolean] = js.undefined
   ): CountUpOptions = {
     val __obj = js.Dynamic.literal()
     if (decimal != null) __obj.updateDynamic("decimal")(decimal.asInstanceOf[js.Any])
-    if (decimalPlaces != null) __obj.updateDynamic("decimalPlaces")(decimalPlaces.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(decimalPlaces)) __obj.updateDynamic("decimalPlaces")(decimalPlaces.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easingFn != null) __obj.updateDynamic("easingFn")(js.Any.fromFunction4(easingFn))
     if (formattingFn != null) __obj.updateDynamic("formattingFn")(js.Any.fromFunction1(formattingFn))
     if (numerals != null) __obj.updateDynamic("numerals")(numerals.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (smartEasingAmount != null) __obj.updateDynamic("smartEasingAmount")(smartEasingAmount.asInstanceOf[js.Any])
-    if (smartEasingThreshold != null) __obj.updateDynamic("smartEasingThreshold")(smartEasingThreshold.asInstanceOf[js.Any])
-    if (startVal != null) __obj.updateDynamic("startVal")(startVal.asInstanceOf[js.Any])
+    if (!js.isUndefined(smartEasingAmount)) __obj.updateDynamic("smartEasingAmount")(smartEasingAmount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(smartEasingThreshold)) __obj.updateDynamic("smartEasingThreshold")(smartEasingThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startVal)) __obj.updateDynamic("startVal")(startVal.get.asInstanceOf[js.Any])
     if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
-    if (!js.isUndefined(useEasing)) __obj.updateDynamic("useEasing")(useEasing.asInstanceOf[js.Any])
-    if (!js.isUndefined(useGrouping)) __obj.updateDynamic("useGrouping")(useGrouping.asInstanceOf[js.Any])
+    if (!js.isUndefined(useEasing)) __obj.updateDynamic("useEasing")(useEasing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useGrouping)) __obj.updateDynamic("useGrouping")(useGrouping.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CountUpOptions]
   }
 }

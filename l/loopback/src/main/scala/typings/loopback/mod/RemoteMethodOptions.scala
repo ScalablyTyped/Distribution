@@ -72,7 +72,7 @@ object RemoteMethodOptions {
     if (accepts != null) __obj.updateDynamic("accepts")(accepts.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (http != null) __obj.updateDynamic("http")(http.asInstanceOf[js.Any])
-    if (!js.isUndefined(isStatic)) __obj.updateDynamic("isStatic")(isStatic.asInstanceOf[js.Any])
+    if (!js.isUndefined(isStatic)) __obj.updateDynamic("isStatic")(isStatic.get.asInstanceOf[js.Any])
     if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
     if (returns != null) __obj.updateDynamic("returns")(returns.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteMethodOptions]

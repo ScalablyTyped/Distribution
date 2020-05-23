@@ -1,8 +1,8 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.AnonDashSize
-import typings.babylonjs.AnonInstance
-import typings.babylonjs.AnonPoints
+import typings.babylonjs.anon.DashSize
+import typings.babylonjs.anon.Instance
+import typings.babylonjs.anon.Points
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,8 +35,8 @@ object LinesBuilder extends js.Object {
     * @returns the dashed line mesh
     * @see https://doc.babylonjs.com/how_to/parametric_shapes#dashed-lines
     */
-  def CreateDashedLines(name: String, options: AnonDashSize): typings.babylonjs.linesMeshMod.LinesMesh = js.native
-  def CreateDashedLines(name: String, options: AnonDashSize, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.linesMeshMod.LinesMesh = js.native
+  def CreateDashedLines(name: String, options: DashSize): typings.babylonjs.linesMeshMod.LinesMesh = js.native
+  def CreateDashedLines(name: String, options: DashSize, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.linesMeshMod.LinesMesh = js.native
   /**
     * Creates a line system mesh. A line system is a pool of many lines gathered in a single mesh
     * * A line system mesh is considered as a parametric shape since it has no predefined original shape. Its shape is determined by the passed array of lines as an input parameter
@@ -54,7 +54,7 @@ object LinesBuilder extends js.Object {
     * @param scene defines the hosting scene
     * @returns a new line system mesh
     */
-  def CreateLineSystem(name: String, options: AnonInstance, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.linesMeshMod.LinesMesh = js.native
+  def CreateLineSystem(name: String, options: Instance, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.linesMeshMod.LinesMesh = js.native
   /**
     * Creates a line mesh
     * A line mesh is considered as a parametric shape since it has no predefined original shape. Its shape is determined by the passed array of points as an input parameter
@@ -71,7 +71,7 @@ object LinesBuilder extends js.Object {
     * @param scene defines the hosting scene
     * @returns a new line mesh
     */
-  def CreateLines(name: String, options: AnonPoints): typings.babylonjs.linesMeshMod.LinesMesh = js.native
-  def CreateLines(name: String, options: AnonPoints, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.linesMeshMod.LinesMesh = js.native
+  def CreateLines(name: String, options: Points): typings.babylonjs.linesMeshMod.LinesMesh = js.native
+  def CreateLines(name: String, options: Points, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.linesMeshMod.LinesMesh = js.native
 }
 

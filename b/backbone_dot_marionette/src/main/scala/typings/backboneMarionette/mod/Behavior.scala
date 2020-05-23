@@ -2,8 +2,8 @@ package typings.backboneMarionette.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import typings.backboneMarionette.AnonDictindex
-import typings.jquery.JQuery_
+import typings.backboneMarionette.anon.Dictindex
+import typings.jquery.JQuery
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,12 +17,12 @@ class Behavior () extends Object {
     * $el is a direct proxy of the view's el cached as a jQuery selector.
     */
   @JSName("$el")
-  var $el: JQuery_[HTMLElement] = js.native
+  var $el: JQuery[HTMLElement] = js.native
   /**
     * The behaviors key allows a behavior to group multiple behaviors
     * together.
     */
-  var behaviors: (js.Array[AnonDictindex | Behavior]) | (StringDictionary[Instantiable1[js.UndefOr[/* options */ js.Any], Behavior]]) = js.native
+  var behaviors: (js.Array[Behavior | Dictindex]) | (StringDictionary[Instantiable1[js.UndefOr[/* options */ js.Any], Behavior]]) = js.native
   /**
     * collectionEvents will respond to the view's collection events.
     */
@@ -63,10 +63,10 @@ class Behavior () extends Object {
     * $ is a direct proxy of the views $ lookup method.
     */
   @JSName("$")
-  def $(selector: js.Any): JQuery_[HTMLElement] = js.native
+  def $(selector: js.Any): JQuery[HTMLElement] = js.native
   /**
     * Get handle on UI element defined in ui hash
     */
-  def getUI(ui: String): JQuery_[HTMLElement] = js.native
+  def getUI(ui: String): JQuery[HTMLElement] = js.native
 }
 

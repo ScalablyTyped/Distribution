@@ -4,15 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Microsoft.Maps.Point")
 @js.native
-class Point protected () extends js.Object {
-  /**
-    * @constructor
-    * @param x The x coordinate.
-    * @param y The y coordinate.
-    */
-  def this(x: Double, y: Double) = this()
+trait Point extends js.Object {
   /** The x coordinate */
   var x: Double = js.native
   /** The y coordinate */

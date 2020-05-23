@@ -1,7 +1,7 @@
 package typings.color.mod
 
-import typings.color.AnonAlpha
-import typings.color.AnonDictkey
+import typings.color.anon.Alpha
+import typings.color.anon.Dictkey
 import typings.color.colorStrings.AA
 import typings.color.colorStrings.AAA
 import typings.color.colorStrings._empty
@@ -66,7 +66,7 @@ trait Color[T /* <: ColorParam */] extends js.Object {
   def mix(mixinColor: Color[ColorParam]): Color[ColorParam] = js.native
   def mix(mixinColor: Color[ColorParam], weight: Double): Color[ColorParam] = js.native
   def negate(): Color[ColorParam] = js.native
-  def `object`(): AnonDictkey = js.native
+  def `object`(): Dictkey = js.native
   def opaquer(ratio: Double): Color[ColorParam] = js.native
   def percentString(): String = js.native
   def percentString(places: Double): String = js.native
@@ -86,7 +86,7 @@ trait Color[T /* <: ColorParam */] extends js.Object {
   def string(places: Double): String = js.native
   def toJSON(): Color[T] = js.native
   def unitArray(): js.Array[Double] = js.native
-  def unitObject(): AnonAlpha = js.native
+  def unitObject(): Alpha = js.native
   def value(): Double = js.native
   def value(`val`: Double): Color[ColorParam] = js.native
   def wblack(): Double = js.native

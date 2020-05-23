@@ -3,18 +3,12 @@ package typings.phaser.spine.webgl
 import typings.phaser.spine.ArrayLike
 import typings.phaser.spine.Color
 import typings.phaser.spine.Disposable
-import typings.std.WebGLRenderingContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("spine.webgl.ShapeRenderer")
 @js.native
-class ShapeRenderer protected () extends Disposable {
-  def this(context: ManagedWebGLRenderingContext) = this()
-  def this(context: WebGLRenderingContext) = this()
-  def this(context: ManagedWebGLRenderingContext, maxVertices: Double) = this()
-  def this(context: WebGLRenderingContext, maxVertices: Double) = this()
+trait ShapeRenderer extends Disposable {
   var check: js.Any = js.native
   var color: js.Any = js.native
   var context: js.Any = js.native
@@ -55,8 +49,6 @@ class ShapeRenderer protected () extends Disposable {
     segments: Double,
     color: Color
   ): Unit = js.native
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
   def end(): Unit = js.native
   def line(x: Double, y: Double, x2: Double, y2: Double): Unit = js.native
   def line(x: Double, y: Double, x2: Double, y2: Double, color: Color): Unit = js.native

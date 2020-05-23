@@ -2,7 +2,7 @@ package typings.googleGax.grpcMod
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.googleAuthLibrary.mod.GoogleAuth
-import typings.googleGax.AnonEncode
+import typings.googleGax.anon.Encode
 import typings.googleGax.gaxMod.ClientConfig
 import typings.grpcGrpcJs.makeClientMod.GrpcObject
 import typings.grpcProtoLoader.mod.Options
@@ -119,6 +119,6 @@ object GrpcClient extends js.Object {
     * @return {function(Object):number} - a function to compute the byte length
     *   for an object.
     */
-  def createByteLengthFunction(message: AnonEncode): js.Function1[/* obj */ js.Object, Double] = js.native
+  def createByteLengthFunction(message: Encode): js.Function1[/* obj */ js.Object, Double] = js.native
 }
 

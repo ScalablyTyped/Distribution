@@ -1,7 +1,7 @@
 package typings.typesettable.mod
 
-import typings.typesettable.KinIXAlignnumber
-import typings.typesettable.KinIYAlignnumber
+import typings.typesettable.anon.KinIXAlignnumber
+import typings.typesettable.anon.KinIYAlignnumber
 import typings.typesettable.contextsMod.IPenFactoryContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`

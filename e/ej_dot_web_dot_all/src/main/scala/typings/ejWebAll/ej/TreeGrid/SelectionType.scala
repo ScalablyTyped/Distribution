@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.TreeGrid
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object SelectionType extends js.Object {
   ///you can select a single row.
   @js.native
   sealed trait Single extends SelectionType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SelectionType with Double] = js.native
-  /* 2 */ @js.native
-  object Checkbox extends TopLevel[Checkbox with Double]
-  
-  /* 1 */ @js.native
-  object Multiple extends TopLevel[Multiple with Double]
-  
-  /* 0 */ @js.native
-  object Single extends TopLevel[Single with Double]
   
 }
 

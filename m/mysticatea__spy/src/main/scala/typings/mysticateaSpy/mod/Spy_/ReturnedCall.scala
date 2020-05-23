@@ -18,16 +18,16 @@ trait ReturnedCall[T /* <: js.Function1[/* repeated */ js.Any, _] */] extends Ca
 
 object ReturnedCall {
   @scala.inline
-  def apply[T /* <: js.Function1[/* repeated */ js.Any, _] */](
+  def apply[T](
     arguments: Parameters[T],
     `return`: ReturnType[T],
     `type`: `return`,
-    `this`: js.UndefOr[scala.Nothing] = js.undefined
+    `this`: js.UndefOr[This[T]] = js.undefined
   ): ReturnedCall[T] = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any])
     __obj.updateDynamic("return")(`return`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`this`)) __obj.updateDynamic("this")(`this`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`this`)) __obj.updateDynamic("this")(`this`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnedCall[T]]
   }
 }

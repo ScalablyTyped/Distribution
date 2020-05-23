@@ -45,19 +45,19 @@ object DescribeScheduledInstanceAvailabilityRequest {
   def apply(
     FirstSlotStartTimeRange: SlotDateTimeRangeRequest,
     Recurrence: ScheduledInstanceRecurrenceRequest,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     Filters: FilterList = null,
-    MaxResults: Int | scala.Double = null,
-    MaxSlotDurationInHours: Int | scala.Double = null,
-    MinSlotDurationInHours: Int | scala.Double = null,
+    MaxResults: js.UndefOr[DescribeScheduledInstanceAvailabilityMaxResults] = js.undefined,
+    MaxSlotDurationInHours: js.UndefOr[Integer] = js.undefined,
+    MinSlotDurationInHours: js.UndefOr[Integer] = js.undefined,
     NextToken: String = null
   ): DescribeScheduledInstanceAvailabilityRequest = {
     val __obj = js.Dynamic.literal(FirstSlotStartTimeRange = FirstSlotStartTimeRange.asInstanceOf[js.Any], Recurrence = Recurrence.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
-    if (MaxSlotDurationInHours != null) __obj.updateDynamic("MaxSlotDurationInHours")(MaxSlotDurationInHours.asInstanceOf[js.Any])
-    if (MinSlotDurationInHours != null) __obj.updateDynamic("MinSlotDurationInHours")(MinSlotDurationInHours.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxSlotDurationInHours)) __obj.updateDynamic("MaxSlotDurationInHours")(MaxSlotDurationInHours.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinSlotDurationInHours)) __obj.updateDynamic("MinSlotDurationInHours")(MinSlotDurationInHours.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeScheduledInstanceAvailabilityRequest]
   }

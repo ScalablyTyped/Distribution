@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -286,8 +285,4 @@ trait watchUtils extends js.Object {
   def whenUndefinedOnce(obj: Accessor, propertyName: js.Array[String]): PromisedWatchHandle = js.native
   def whenUndefinedOnce(obj: Accessor, propertyName: js.Array[String], callback: WatchCallback): PromisedWatchHandle = js.native
 }
-
-@JSGlobal("__esri.watchUtils")
-@js.native
-object watchUtils extends TopLevel[watchUtils]
 

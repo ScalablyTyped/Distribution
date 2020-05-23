@@ -1,6 +1,6 @@
 package typings.phoenix.mod
 
-import typings.phoenix.PartialSocketConnectOptio
+import typings.phoenix.anon.PartialSocketConnectOptio
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

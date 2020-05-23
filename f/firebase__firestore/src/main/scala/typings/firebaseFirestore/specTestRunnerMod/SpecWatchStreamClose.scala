@@ -13,7 +13,6 @@ object SpecWatchStreamClose {
   @scala.inline
   def apply(error: SpecError, runBackoffTimer: Boolean): SpecWatchStreamClose = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], runBackoffTimer = runBackoffTimer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SpecWatchStreamClose]
   }
 }

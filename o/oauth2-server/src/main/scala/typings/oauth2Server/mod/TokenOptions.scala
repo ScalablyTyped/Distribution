@@ -36,19 +36,19 @@ trait TokenOptions extends js.Object {
 object TokenOptions {
   @scala.inline
   def apply(
-    accessTokenLifetime: Int | Double = null,
+    accessTokenLifetime: js.UndefOr[Double] = js.undefined,
     allowExtendedTokenAttributes: js.UndefOr[Boolean] = js.undefined,
     alwaysIssueNewRefreshToken: js.UndefOr[Boolean] = js.undefined,
     extendedGrantTypes: StringDictionary[Instantiable1[/* options */ TokenOptions, AbstractGrantType]] = null,
-    refreshTokenLifetime: Int | Double = null,
+    refreshTokenLifetime: js.UndefOr[Double] = js.undefined,
     requireClientAuthentication: js.Object = null
   ): TokenOptions = {
     val __obj = js.Dynamic.literal()
-    if (accessTokenLifetime != null) __obj.updateDynamic("accessTokenLifetime")(accessTokenLifetime.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowExtendedTokenAttributes)) __obj.updateDynamic("allowExtendedTokenAttributes")(allowExtendedTokenAttributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(alwaysIssueNewRefreshToken)) __obj.updateDynamic("alwaysIssueNewRefreshToken")(alwaysIssueNewRefreshToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessTokenLifetime)) __obj.updateDynamic("accessTokenLifetime")(accessTokenLifetime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowExtendedTokenAttributes)) __obj.updateDynamic("allowExtendedTokenAttributes")(allowExtendedTokenAttributes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysIssueNewRefreshToken)) __obj.updateDynamic("alwaysIssueNewRefreshToken")(alwaysIssueNewRefreshToken.get.asInstanceOf[js.Any])
     if (extendedGrantTypes != null) __obj.updateDynamic("extendedGrantTypes")(extendedGrantTypes.asInstanceOf[js.Any])
-    if (refreshTokenLifetime != null) __obj.updateDynamic("refreshTokenLifetime")(refreshTokenLifetime.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshTokenLifetime)) __obj.updateDynamic("refreshTokenLifetime")(refreshTokenLifetime.get.asInstanceOf[js.Any])
     if (requireClientAuthentication != null) __obj.updateDynamic("requireClientAuthentication")(requireClientAuthentication.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenOptions]
   }

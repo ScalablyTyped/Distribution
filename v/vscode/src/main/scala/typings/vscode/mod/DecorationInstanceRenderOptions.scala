@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait DecorationInstanceRenderOptions extends ThemableDecorationInstanceRenderOptions {
   /**
-  		 * Overwrite options for dark themes.
-  		 */
+    * Overwrite options for dark themes.
+    */
   var dark: js.UndefOr[ThemableDecorationInstanceRenderOptions] = js.undefined
   /**
-  		 * Overwrite options for light themes.
-  		 */
+    * Overwrite options for light themes.
+    */
   var light: js.UndefOr[ThemableDecorationInstanceRenderOptions] = js.undefined
 }
 

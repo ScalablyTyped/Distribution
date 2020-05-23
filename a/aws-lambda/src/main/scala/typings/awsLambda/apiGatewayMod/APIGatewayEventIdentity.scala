@@ -39,20 +39,7 @@ object APIGatewayEventIdentity {
     userAgent: String = null,
     userArn: String = null
   ): APIGatewayEventIdentity = {
-    val __obj = js.Dynamic.literal(sourceIp = sourceIp.asInstanceOf[js.Any])
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey.asInstanceOf[js.Any])
-    if (apiKeyId != null) __obj.updateDynamic("apiKeyId")(apiKeyId.asInstanceOf[js.Any])
-    if (caller != null) __obj.updateDynamic("caller")(caller.asInstanceOf[js.Any])
-    if (cognitoAuthenticationProvider != null) __obj.updateDynamic("cognitoAuthenticationProvider")(cognitoAuthenticationProvider.asInstanceOf[js.Any])
-    if (cognitoAuthenticationType != null) __obj.updateDynamic("cognitoAuthenticationType")(cognitoAuthenticationType.asInstanceOf[js.Any])
-    if (cognitoIdentityId != null) __obj.updateDynamic("cognitoIdentityId")(cognitoIdentityId.asInstanceOf[js.Any])
-    if (cognitoIdentityPoolId != null) __obj.updateDynamic("cognitoIdentityPoolId")(cognitoIdentityPoolId.asInstanceOf[js.Any])
-    if (principalOrgId != null) __obj.updateDynamic("principalOrgId")(principalOrgId.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
-    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
-    if (userArn != null) __obj.updateDynamic("userArn")(userArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(sourceIp = sourceIp.asInstanceOf[js.Any], accessKey = accessKey.asInstanceOf[js.Any], accountId = accountId.asInstanceOf[js.Any], apiKey = apiKey.asInstanceOf[js.Any], apiKeyId = apiKeyId.asInstanceOf[js.Any], caller = caller.asInstanceOf[js.Any], cognitoAuthenticationProvider = cognitoAuthenticationProvider.asInstanceOf[js.Any], cognitoAuthenticationType = cognitoAuthenticationType.asInstanceOf[js.Any], cognitoIdentityId = cognitoIdentityId.asInstanceOf[js.Any], cognitoIdentityPoolId = cognitoIdentityPoolId.asInstanceOf[js.Any], principalOrgId = principalOrgId.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], userAgent = userAgent.asInstanceOf[js.Any], userArn = userArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[APIGatewayEventIdentity]
   }
 }

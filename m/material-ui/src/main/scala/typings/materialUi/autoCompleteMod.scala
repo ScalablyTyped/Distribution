@@ -1,6 +1,8 @@
 package typings.materialUi
 
+import typings.materialUi.MaterialUI.AutoCompleteProps
 import typings.materialUi.MaterialUI.Menus.MenuItem
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +12,7 @@ import scala.scalajs.js.annotation._
 object autoCompleteMod extends js.Object {
   @js.native
   class AutoComplete ()
-    extends typings.materialUi.MaterialUI.AutoComplete
+    extends Component[AutoCompleteProps[js.Any], js.Object, js.Any]
   
   @js.native
   class default () extends AutoComplete

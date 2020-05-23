@@ -31,7 +31,7 @@ object CodeAction {
     if (diagnostics != null) __obj.updateDynamic("diagnostics")(diagnostics.asInstanceOf[js.Any])
     if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (edit != null) __obj.updateDynamic("edit")(edit.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPreferred)) __obj.updateDynamic("isPreferred")(isPreferred.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPreferred)) __obj.updateDynamic("isPreferred")(isPreferred.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeAction]
   }

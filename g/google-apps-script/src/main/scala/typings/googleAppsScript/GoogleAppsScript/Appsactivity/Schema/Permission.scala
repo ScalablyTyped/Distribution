@@ -29,7 +29,7 @@ object Permission {
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
-    if (!js.isUndefined(withLink)) __obj.updateDynamic("withLink")(withLink.asInstanceOf[js.Any])
+    if (!js.isUndefined(withLink)) __obj.updateDynamic("withLink")(withLink.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Permission]
   }
 }

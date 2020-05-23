@@ -15,7 +15,7 @@ trait SinkMap[InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter
 
 object SinkMap {
   @scala.inline
-  def apply[InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */](
+  def apply[InputStream, OutputStream](
     find: String => Sink[InputStream, OutputStream],
     `import`: (String, js.Any, js.Any) => js.Any,
     list: () => js.Array[String],

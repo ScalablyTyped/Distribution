@@ -39,7 +39,7 @@ object AuthorizedCertificate {
   def apply(
     certificateRawData: CertificateRawData = null,
     displayName: String = null,
-    domainMappingsCount: Int | Double = null,
+    domainMappingsCount: js.UndefOr[Double] = js.undefined,
     domainNames: js.Array[String] = null,
     expireTime: String = null,
     id: String = null,
@@ -49,7 +49,7 @@ object AuthorizedCertificate {
     val __obj = js.Dynamic.literal()
     if (certificateRawData != null) __obj.updateDynamic("certificateRawData")(certificateRawData.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (domainMappingsCount != null) __obj.updateDynamic("domainMappingsCount")(domainMappingsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(domainMappingsCount)) __obj.updateDynamic("domainMappingsCount")(domainMappingsCount.get.asInstanceOf[js.Any])
     if (domainNames != null) __obj.updateDynamic("domainNames")(domainNames.asInstanceOf[js.Any])
     if (expireTime != null) __obj.updateDynamic("expireTime")(expireTime.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

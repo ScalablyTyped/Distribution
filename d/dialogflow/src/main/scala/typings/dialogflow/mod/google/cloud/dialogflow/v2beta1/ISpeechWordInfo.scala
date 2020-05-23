@@ -20,16 +20,16 @@ trait ISpeechWordInfo extends js.Object {
 object ISpeechWordInfo {
   @scala.inline
   def apply(
-    confidence: Int | Double = null,
-    endOffset: IDuration = null,
-    startOffset: IDuration = null,
-    word: String = null
+    confidence: js.UndefOr[Null | Double] = js.undefined,
+    endOffset: js.UndefOr[Null | IDuration] = js.undefined,
+    startOffset: js.UndefOr[Null | IDuration] = js.undefined,
+    word: js.UndefOr[Null | String] = js.undefined
   ): ISpeechWordInfo = {
     val __obj = js.Dynamic.literal()
-    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
-    if (endOffset != null) __obj.updateDynamic("endOffset")(endOffset.asInstanceOf[js.Any])
-    if (startOffset != null) __obj.updateDynamic("startOffset")(startOffset.asInstanceOf[js.Any])
-    if (word != null) __obj.updateDynamic("word")(word.asInstanceOf[js.Any])
+    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(endOffset)) __obj.updateDynamic("endOffset")(endOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(startOffset)) __obj.updateDynamic("startOffset")(startOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(word)) __obj.updateDynamic("word")(word.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISpeechWordInfo]
   }
 }

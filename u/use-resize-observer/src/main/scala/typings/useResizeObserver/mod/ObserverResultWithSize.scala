@@ -13,10 +13,14 @@ trait ObserverResultWithSize[TElement] extends js.Object {
 
 object ObserverResultWithSize {
   @scala.inline
-  def apply[TElement](ref: RefObject[TElement], height: Int | Double = null, width: Int | Double = null): ObserverResultWithSize[TElement] = {
+  def apply[TElement](
+    ref: RefObject[TElement],
+    height: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
+  ): ObserverResultWithSize[TElement] = {
     val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObserverResultWithSize[TElement]]
   }
 }

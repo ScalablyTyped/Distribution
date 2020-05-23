@@ -1,6 +1,6 @@
 package typings.snabbdom.attachtoMod
 
-import typings.snabbdom.attributesMod._Global_.Element
+import typings.snabbdom.attributesMod.global.Element
 import typings.snabbdom.vnodeMod.VNode_
 import scala.scalajs.js
 import scala.scalajs.js.`|`

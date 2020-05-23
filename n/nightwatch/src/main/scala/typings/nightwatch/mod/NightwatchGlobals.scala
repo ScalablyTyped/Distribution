@@ -41,17 +41,17 @@ object NightwatchGlobals {
   @scala.inline
   def apply(
     abortOnAssertionFailure: js.UndefOr[Boolean] = js.undefined,
-    asyncHookTimeout: Int | Double = null,
+    asyncHookTimeout: js.UndefOr[Double] = js.undefined,
     throwOnMultipleElementsReturned: js.UndefOr[Boolean] = js.undefined,
-    waitForConditionPollInterval: Int | Double = null,
-    waitForConditionTimeout: Int | Double = null
+    waitForConditionPollInterval: js.UndefOr[Double] = js.undefined,
+    waitForConditionTimeout: js.UndefOr[Double] = js.undefined
   ): NightwatchGlobals = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(abortOnAssertionFailure)) __obj.updateDynamic("abortOnAssertionFailure")(abortOnAssertionFailure.asInstanceOf[js.Any])
-    if (asyncHookTimeout != null) __obj.updateDynamic("asyncHookTimeout")(asyncHookTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(throwOnMultipleElementsReturned)) __obj.updateDynamic("throwOnMultipleElementsReturned")(throwOnMultipleElementsReturned.asInstanceOf[js.Any])
-    if (waitForConditionPollInterval != null) __obj.updateDynamic("waitForConditionPollInterval")(waitForConditionPollInterval.asInstanceOf[js.Any])
-    if (waitForConditionTimeout != null) __obj.updateDynamic("waitForConditionTimeout")(waitForConditionTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(abortOnAssertionFailure)) __obj.updateDynamic("abortOnAssertionFailure")(abortOnAssertionFailure.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(asyncHookTimeout)) __obj.updateDynamic("asyncHookTimeout")(asyncHookTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(throwOnMultipleElementsReturned)) __obj.updateDynamic("throwOnMultipleElementsReturned")(throwOnMultipleElementsReturned.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForConditionPollInterval)) __obj.updateDynamic("waitForConditionPollInterval")(waitForConditionPollInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForConditionTimeout)) __obj.updateDynamic("waitForConditionTimeout")(waitForConditionTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NightwatchGlobals]
   }
 }

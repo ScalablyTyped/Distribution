@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.ChartDataLabelFormatData
 import typings.officeJsPreview.Excel.Interfaces.ChartDataLabelFormatLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.ChartDataLabelFormatUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,12 +16,11 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
-@JSGlobal("Excel.ChartDataLabelFormat")
 @js.native
-class ChartDataLabelFormat () extends ClientObject {
+trait ChartDataLabelFormat extends ClientObject {
   /**
     *
-    * Represents the border format, which includes color, linestyle, and weight. Read-only.
+    * Represents the border format, which includes color, linestyle, and weight.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -31,14 +30,14 @@ class ChartDataLabelFormat () extends ClientObject {
   var context_ChartDataLabelFormat: RequestContext = js.native
   /**
     *
-    * Represents the fill format of the current chart data label. Read-only.
+    * Represents the fill format of the current chart data label.
     *
     * [Api set: ExcelApi 1.1]
     */
   val fill: ChartFill = js.native
   /**
     *
-    * Represents the font attributes (font name, font size, color, etc.) for a chart data label. Read-only.
+    * Represents the font attributes (font name, font size, color, etc.) for a chart data label.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -50,7 +49,7 @@ class ChartDataLabelFormat () extends ClientObject {
     */
   def load(): ChartDataLabelFormat = js.native
   def load(options: ChartDataLabelFormatLoadOptions): ChartDataLabelFormat = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ChartDataLabelFormat = js.native
+  def load(propertyNamesAndPaths: Expand): ChartDataLabelFormat = js.native
   def load(propertyNames: String): ChartDataLabelFormat = js.native
   def load(propertyNames: js.Array[String]): ChartDataLabelFormat = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

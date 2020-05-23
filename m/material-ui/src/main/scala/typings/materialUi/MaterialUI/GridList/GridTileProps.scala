@@ -37,10 +37,10 @@ object GridTileProps {
   def apply(
     actionIcon: ReactElement = null,
     actionPosition: left | right = null,
-    cols: Int | Double = null,
+    cols: js.UndefOr[Double] = js.undefined,
     containerElement: String | ReactElement | (ComponentClass[_, ComponentState]) = null,
     onClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
-    rows: Int | Double = null,
+    rows: js.UndefOr[Double] = js.undefined,
     style: CSSProperties = null,
     subtitle: ReactNode = null,
     subtitleStyle: CSSProperties = null,
@@ -52,10 +52,10 @@ object GridTileProps {
     val __obj = js.Dynamic.literal()
     if (actionIcon != null) __obj.updateDynamic("actionIcon")(actionIcon.asInstanceOf[js.Any])
     if (actionPosition != null) __obj.updateDynamic("actionPosition")(actionPosition.asInstanceOf[js.Any])
-    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
+    if (!js.isUndefined(cols)) __obj.updateDynamic("cols")(cols.get.asInstanceOf[js.Any])
     if (containerElement != null) __obj.updateDynamic("containerElement")(containerElement.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
     if (subtitleStyle != null) __obj.updateDynamic("subtitleStyle")(subtitleStyle.asInstanceOf[js.Any])

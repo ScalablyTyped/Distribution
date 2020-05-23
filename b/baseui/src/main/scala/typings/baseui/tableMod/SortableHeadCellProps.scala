@@ -1,6 +1,6 @@
 package typings.baseui.tableMod
 
-import typings.baseui.AnonHeadCell
+import typings.baseui.anon.HeadCell
 import typings.baseui.baseuiStrings.ASC
 import typings.baseui.baseuiStrings.DESC
 import typings.react.mod.ReactNode
@@ -14,7 +14,7 @@ trait SortableHeadCellProps extends js.Object {
   var disabled: js.UndefOr[Boolean] = js.undefined
   var fillClickTarget: js.UndefOr[Boolean] = js.undefined
   var onSort: js.UndefOr[js.Function0[_]] = js.undefined
-  var overrides: js.UndefOr[AnonHeadCell] = js.undefined
+  var overrides: js.UndefOr[HeadCell] = js.undefined
   var title: String
 }
 
@@ -27,13 +27,12 @@ object SortableHeadCellProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     fillClickTarget: js.UndefOr[Boolean] = js.undefined,
     onSort: () => _ = null,
-    overrides: AnonHeadCell = null
+    overrides: HeadCell = null
   ): SortableHeadCellProps = {
-    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(fillClickTarget)) __obj.updateDynamic("fillClickTarget")(fillClickTarget.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fillClickTarget)) __obj.updateDynamic("fillClickTarget")(fillClickTarget.get.asInstanceOf[js.Any])
     if (onSort != null) __obj.updateDynamic("onSort")(js.Any.fromFunction0(onSort))
     if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortableHeadCellProps]

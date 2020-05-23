@@ -13,15 +13,8 @@ import scala.scalajs.js.annotation._
   * You do not need to instantiate this class directly, it will be created when you use the
   * `getLeaderboard()` method of the main plugin.
   */
-@JSGlobal("Phaser.FacebookInstantGamesLeaderboard")
 @js.native
-class FacebookInstantGamesLeaderboard protected () extends EventEmitter {
-  /**
-    * 
-    * @param plugin A reference to the Facebook Instant Games Plugin.
-    * @param data An Instant Game leaderboard instance.
-    */
-  def this(plugin: FacebookInstantGamesPlugin, data: js.Any) = this()
+trait FacebookInstantGamesLeaderboard extends EventEmitter {
   /**
     * The ID of the context that the leaderboard is associated with, or null if the leaderboard is not tied to a particular context.
     */

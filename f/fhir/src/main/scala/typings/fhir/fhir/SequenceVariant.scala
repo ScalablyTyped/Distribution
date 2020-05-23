@@ -65,14 +65,14 @@ object SequenceVariant {
     _referenceAllele: Element = null,
     _start: Element = null,
     cigar: String = null,
-    end: Int | Double = null,
+    end: js.UndefOr[integer] = js.undefined,
     extension: js.Array[Extension] = null,
     fhir_comments: js.Array[String] = null,
     id: String = null,
     modifierExtension: js.Array[Extension] = null,
     observedAllele: String = null,
     referenceAllele: String = null,
-    start: Int | Double = null,
+    start: js.UndefOr[integer] = js.undefined,
     variantPointer: Reference = null
   ): SequenceVariant = {
     val __obj = js.Dynamic.literal()
@@ -84,14 +84,14 @@ object SequenceVariant {
     if (_referenceAllele != null) __obj.updateDynamic("_referenceAllele")(_referenceAllele.asInstanceOf[js.Any])
     if (_start != null) __obj.updateDynamic("_start")(_start.asInstanceOf[js.Any])
     if (cigar != null) __obj.updateDynamic("cigar")(cigar.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     if (observedAllele != null) __obj.updateDynamic("observedAllele")(observedAllele.asInstanceOf[js.Any])
     if (referenceAllele != null) __obj.updateDynamic("referenceAllele")(referenceAllele.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     if (variantPointer != null) __obj.updateDynamic("variantPointer")(variantPointer.asInstanceOf[js.Any])
     __obj.asInstanceOf[SequenceVariant]
   }

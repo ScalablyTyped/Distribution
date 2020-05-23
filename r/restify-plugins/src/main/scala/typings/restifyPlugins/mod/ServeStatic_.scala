@@ -27,18 +27,18 @@ object ServeStatic_ {
     file: String = null,
     gzip: js.UndefOr[Boolean] = js.undefined,
     `match`: js.Any = null,
-    maxAge: Int | Double = null
+    maxAge: js.UndefOr[Double] = js.undefined
   ): ServeStatic_ = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(appendRequestPath)) __obj.updateDynamic("appendRequestPath")(appendRequestPath.asInstanceOf[js.Any])
+    if (!js.isUndefined(appendRequestPath)) __obj.updateDynamic("appendRequestPath")(appendRequestPath.get.asInstanceOf[js.Any])
     if (charSet != null) __obj.updateDynamic("charSet")(charSet.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (directory != null) __obj.updateDynamic("directory")(directory.asInstanceOf[js.Any])
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (!js.isUndefined(gzip)) __obj.updateDynamic("gzip")(gzip.asInstanceOf[js.Any])
+    if (!js.isUndefined(gzip)) __obj.updateDynamic("gzip")(gzip.get.asInstanceOf[js.Any])
     if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
-    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAge)) __obj.updateDynamic("maxAge")(maxAge.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServeStatic_]
   }
 }

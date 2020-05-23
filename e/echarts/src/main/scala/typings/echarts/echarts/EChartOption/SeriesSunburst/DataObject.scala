@@ -1,8 +1,8 @@
 package typings.echarts.echarts.EChartOption.SeriesSunburst
 
-import typings.echarts.AnonBorderType
-import typings.echarts.AnonLabelAnonMinAngle
-import typings.echarts.AnonMinAngle
+import typings.echarts.anon.BorderType
+import typings.echarts.anon.LabelMinAngle
+import typings.echarts.anon.MinAngle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay
     */
-  var downplay: js.UndefOr[AnonLabelAnonMinAngle] = js.undefined
+  var downplay: js.UndefOr[LabelMinAngle] = js.undefined
   /**
     * Item style when mouse is hovering. See
     * [highlightPolicy](https://echarts.apache.org/en/option.html#series-sunburst.highlightPolicy)
@@ -35,7 +35,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.data.emphasis
     */
-  var emphasis: js.UndefOr[AnonLabelAnonMinAngle] = js.undefined
+  var emphasis: js.UndefOr[LabelMinAngle] = js.undefined
   /**
     * Item style when mouse is hovering related items. See
     * [highlightPolicy](https://echarts.apache.org/en/option.html#series-sunburst.highlightPolicy)
@@ -44,7 +44,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.data.highlight
     */
-  var highlight: js.UndefOr[AnonLabelAnonMinAngle] = js.undefined
+  var highlight: js.UndefOr[LabelMinAngle] = js.undefined
   /**
     * Style of Sunburst sectors.
     *
@@ -80,7 +80,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.data.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderType] = js.undefined
+  var itemStyle: js.UndefOr[BorderType] = js.undefined
   /**
     * `label` sets the text style for every sectors.
     *
@@ -102,7 +102,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.data.label
     */
-  var label: js.UndefOr[AnonMinAngle] = js.undefined
+  var label: js.UndefOr[MinAngle] = js.undefined
   /**
     * Link address that redirects to when this sector is clicked.
     * Only useful when
@@ -151,15 +151,15 @@ object DataObject {
   @scala.inline
   def apply(
     children: js.Array[DataObject] = null,
-    downplay: AnonLabelAnonMinAngle = null,
-    emphasis: AnonLabelAnonMinAngle = null,
-    highlight: AnonLabelAnonMinAngle = null,
-    itemStyle: AnonBorderType = null,
-    label: AnonMinAngle = null,
+    downplay: LabelMinAngle = null,
+    emphasis: LabelMinAngle = null,
+    highlight: LabelMinAngle = null,
+    itemStyle: BorderType = null,
+    label: MinAngle = null,
     link: String = null,
     name: String = null,
     target: String = null,
-    value: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined
   ): DataObject = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
@@ -171,7 +171,7 @@ object DataObject {
     if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataObject]
   }
 }

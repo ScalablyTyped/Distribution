@@ -35,10 +35,10 @@ object SortOptions {
     set: js.UndefOr[Boolean] = js.undefined
   ): SortOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(array)) __obj.updateDynamic("array")(array.asInstanceOf[js.Any])
-    if (!js.isUndefined(map)) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (!js.isUndefined(`object`)) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (!js.isUndefined(set)) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
+    if (!js.isUndefined(array)) __obj.updateDynamic("array")(array.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(map)) __obj.updateDynamic("map")(map.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`object`)) __obj.updateDynamic("object")(`object`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(set)) __obj.updateDynamic("set")(set.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortOptions]
   }
 }

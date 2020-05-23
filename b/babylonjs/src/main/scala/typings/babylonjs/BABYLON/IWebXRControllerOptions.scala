@@ -29,8 +29,8 @@ object IWebXRControllerOptions {
     forceControllerProfile: String = null
   ): IWebXRControllerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableMotionControllerAnimation)) __obj.updateDynamic("disableMotionControllerAnimation")(disableMotionControllerAnimation.asInstanceOf[js.Any])
-    if (!js.isUndefined(doNotLoadControllerMesh)) __obj.updateDynamic("doNotLoadControllerMesh")(doNotLoadControllerMesh.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableMotionControllerAnimation)) __obj.updateDynamic("disableMotionControllerAnimation")(disableMotionControllerAnimation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(doNotLoadControllerMesh)) __obj.updateDynamic("doNotLoadControllerMesh")(doNotLoadControllerMesh.get.asInstanceOf[js.Any])
     if (forceControllerProfile != null) __obj.updateDynamic("forceControllerProfile")(forceControllerProfile.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWebXRControllerOptions]
   }

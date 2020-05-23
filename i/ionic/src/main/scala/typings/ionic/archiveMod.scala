@@ -3,9 +3,9 @@ package typings.ionic
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
 import typings.std.Error
-import typings.tar.CreateOptionsFileOptionss
-import typings.tar.ExtractOptionsFileOptions
-import typings.tar.ListOptionsFileOptionssyn
+import typings.tar.anon.CreateOptionsFileOptionss
+import typings.tar.anon.ExtractOptionsFileOptions
+import typings.tar.anon.ListOptionsFileOptionssyn
 import typings.tar.mod.CreateOptions
 import typings.tar.mod.ExtractOptions
 import typings.tar.mod.FileOptions
@@ -53,27 +53,21 @@ object archiveMod extends js.Object {
     def extract(options: ExtractOptions with FileOptions): js.Promise[Unit] = js.native
     def extract(
       options: ExtractOptions with FileOptions,
-      fileList: js.UndefOr[scala.Nothing],
+      fileList: js.UndefOr[js.Array[String]],
       callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
     ): Unit = js.native
     def extract(options: ExtractOptions with FileOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
-    def extract(
-      options: ExtractOptions with FileOptions,
-      fileList: js.Array[String],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Unit = js.native
     def extract(options: ExtractOptionsFileOptions): Unit = js.native
     def extract(options: ExtractOptionsFileOptions, fileList: js.Array[String]): Unit = js.native
-    @JSName("extract")
-    def extract_Writable(options: ExtractOptions): Writable = js.native
-    @JSName("extract")
-    def extract_Writable(options: ExtractOptions, fileList: js.Array[String]): Writable = js.native
-    @JSName("extract")
-    def extract_Writable(
+    def extract(
       options: ExtractOptions,
       fileList: js.Array[String],
       callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
     ): Writable = js.native
+    @JSName("extract")
+    def extract_Writable(options: ExtractOptions): Writable = js.native
+    @JSName("extract")
+    def extract_Writable(options: ExtractOptions, fileList: js.Array[String]): Writable = js.native
     def list(): Writable = js.native
     def list(options: ListOptions with FileOptions): js.Promise[Unit] = js.native
     def list(options: ListOptions with FileOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
@@ -91,27 +85,17 @@ object archiveMod extends js.Object {
     def replace(options: ReplaceOptions): js.Promise[Unit] = js.native
     def replace(
       options: ReplaceOptions,
-      fileList: js.UndefOr[scala.Nothing],
+      fileList: js.UndefOr[js.Array[String]],
       callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
     ): js.Promise[Unit] = js.native
     def replace(options: ReplaceOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
-    def replace(
-      options: ReplaceOptions,
-      fileList: js.Array[String],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): js.Promise[Unit] = js.native
     def update(options: ReplaceOptions): js.Promise[Unit] = js.native
     def update(
       options: ReplaceOptions,
-      fileList: js.UndefOr[scala.Nothing],
+      fileList: js.UndefOr[js.Array[String]],
       callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
     ): js.Promise[Unit] = js.native
     def update(options: ReplaceOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
-    def update(
-      options: ReplaceOptions,
-      fileList: js.Array[String],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): js.Promise[Unit] = js.native
     @js.native
     object c extends js.Object {
       def apply(options: CreateOptions with FileOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
@@ -179,15 +163,10 @@ object archiveMod extends js.Object {
       def apply(options: ReplaceOptions): js.Promise[Unit] = js.native
       def apply(
         options: ReplaceOptions,
-        fileList: js.UndefOr[scala.Nothing],
+        fileList: js.UndefOr[js.Array[String]],
         callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
       ): js.Promise[Unit] = js.native
       def apply(options: ReplaceOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
-      def apply(
-        options: ReplaceOptions,
-        fileList: js.Array[String],
-        callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-      ): js.Promise[Unit] = js.native
     }
     
     @js.native
@@ -256,15 +235,10 @@ object archiveMod extends js.Object {
       def apply(options: ReplaceOptions): js.Promise[Unit] = js.native
       def apply(
         options: ReplaceOptions,
-        fileList: js.UndefOr[scala.Nothing],
+        fileList: js.UndefOr[js.Array[String]],
         callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
       ): js.Promise[Unit] = js.native
       def apply(options: ReplaceOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
-      def apply(
-        options: ReplaceOptions,
-        fileList: js.Array[String],
-        callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-      ): js.Promise[Unit] = js.native
     }
     
     @js.native
@@ -272,17 +246,17 @@ object archiveMod extends js.Object {
       def apply(options: ExtractOptions with FileOptions): js.Promise[Unit] = js.native
       def apply(
         options: ExtractOptions with FileOptions,
-        fileList: js.UndefOr[scala.Nothing],
+        fileList: js.UndefOr[js.Array[String]],
         callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
       ): Unit = js.native
       def apply(options: ExtractOptions with FileOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
-      def apply(
-        options: ExtractOptions with FileOptions,
-        fileList: js.Array[String],
-        callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-      ): Unit = js.native
       def apply(options: ExtractOptionsFileOptions): Unit = js.native
       def apply(options: ExtractOptionsFileOptions, fileList: js.Array[String]): Unit = js.native
+      def apply(
+        options: ExtractOptions,
+        fileList: js.Array[String],
+        callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      ): Writable = js.native
     }
     
   }

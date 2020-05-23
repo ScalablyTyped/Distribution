@@ -4,7 +4,5 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Ribbon.SaveConflictHandler")
-@js.native
-class SaveConflictHandler () extends js.Object
+trait SaveConflictHandler extends js.Object
 

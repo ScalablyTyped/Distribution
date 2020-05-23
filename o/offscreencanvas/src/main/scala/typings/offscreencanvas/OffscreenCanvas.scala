@@ -1,6 +1,6 @@
 package typings.offscreencanvas
 
-import org.scalablytyped.runtime.Instantiable2
+import typings.offscreencanvas.anon.Quality
 import typings.offscreencanvas.offscreencanvasStrings.`2d`
 import typings.offscreencanvas.offscreencanvasStrings.bitmaprenderer
 import typings.offscreencanvas.offscreencanvasStrings.webgl
@@ -25,7 +25,7 @@ trait OffscreenCanvas extends EventTarget {
   var height: Double = js.native
   var width: Double = js.native
   def convertToBlob(): js.Promise[Blob] = js.native
-  def convertToBlob(options: AnonQuality): js.Promise[Blob] = js.native
+  def convertToBlob(options: Quality): js.Promise[Blob] = js.native
   @JSName("getContext")
   def getContext_2d(contextId: `2d`): OffscreenCanvasRenderingContext2D | Null = js.native
   @JSName("getContext")
@@ -44,8 +44,4 @@ trait OffscreenCanvas extends EventTarget {
   def getContext_webgl2(contextId: webgl2, contextAttributes: WebGLContextAttributes): WebGL2RenderingContext | Null = js.native
   def transferToImageBitmap(): ImageBitmap = js.native
 }
-
-@JSGlobal("OffscreenCanvas")
-@js.native
-object OffscreenCanvas extends Instantiable2[/* width */ Double, /* height */ Double, OffscreenCanvas]
 

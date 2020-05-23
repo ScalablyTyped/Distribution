@@ -3,7 +3,7 @@ package typings.storybookUi
 import typings.emotionStyledBase.mod.StyledComponent
 import typings.react.mod.DetailedHTMLProps
 import typings.react.mod.HTMLAttributes
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
 import typings.storybookTheming.typesMod.Theme
 import scala.scalajs.js

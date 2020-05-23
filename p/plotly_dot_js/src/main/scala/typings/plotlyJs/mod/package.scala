@@ -17,7 +17,7 @@ package object mod {
   ])
   type ColorScale = java.lang.String | (js.Array[java.lang.String | (js.Tuple2[scala.Double, java.lang.String])])
   type Datum = java.lang.String | scala.Double | typings.std.Date | scala.Null
-  type ErrorBar = typings.plotlyJs.PartialErrorOptions with (typings.plotlyJs.AnonType | typings.plotlyJs.AnonArray)
+  type ErrorBar = typings.plotlyJs.anon.PartialErrorOptions with (typings.plotlyJs.anon.Type | typings.plotlyJs.anon.Array)
   type MarkerSymbol = java.lang.String | scala.Double | (js.Array[java.lang.String | scala.Double])
   type PlotRestyleEvent = js.Tuple2[js.Any, js.Array[scala.Double]]
   type Root = java.lang.String | typings.std.HTMLElement

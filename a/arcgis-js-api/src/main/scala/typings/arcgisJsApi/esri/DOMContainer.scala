@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -71,7 +70,21 @@ trait DOMContainer extends js.Object {
   val width: Double
 }
 
-@JSGlobal("__esri.DOMContainer")
-@js.native
-object DOMContainer extends TopLevel[DOMContainerConstructor]
+object DOMContainer {
+  @scala.inline
+  def apply(
+    container: HTMLDivElement,
+    focused: Boolean,
+    height: Double,
+    popup: Popup,
+    resizing: Boolean,
+    size: js.Array[Double],
+    suspended: Boolean,
+    ui: DefaultUI,
+    width: Double
+  ): DOMContainer = {
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], resizing = resizing.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], suspended = suspended.asInstanceOf[js.Any], ui = ui.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DOMContainer]
+  }
+}
 

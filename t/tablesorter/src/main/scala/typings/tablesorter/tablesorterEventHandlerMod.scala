@@ -1,6 +1,6 @@
 package typings.tablesorter
 
-import typings.jquery.JQuery_.TriggeredEvent
+import typings.jquery.JQuery.TriggeredEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

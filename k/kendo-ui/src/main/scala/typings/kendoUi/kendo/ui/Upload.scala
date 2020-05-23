@@ -1,16 +1,12 @@
 package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.JQuery
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.Upload")
 @js.native
-class Upload protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: UploadOptions) = this()
+trait Upload extends Widget {
   @JSName("options")
   var options_Upload: UploadOptions = js.native
   var wrapper: JQuery = js.native
@@ -29,13 +25,5 @@ class Upload protected () extends Widget {
   def resume(li: JQuery): Unit = js.native
   def toggle(enable: Boolean): Unit = js.native
   def upload(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.Upload")
-@js.native
-object Upload extends js.Object {
-  var fn: Upload = js.native
-  def extend(proto: js.Object): Upload = js.native
 }
 

@@ -68,17 +68,17 @@ object BudgetCostTypes {
     useBlended: js.UndefOr[Boolean] = js.undefined
   ): BudgetCostTypes = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeCredit)) __obj.updateDynamic("includeCredit")(includeCredit.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeDiscount)) __obj.updateDynamic("includeDiscount")(includeDiscount.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeOtherSubscription)) __obj.updateDynamic("includeOtherSubscription")(includeOtherSubscription.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeRecurring)) __obj.updateDynamic("includeRecurring")(includeRecurring.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeRefund)) __obj.updateDynamic("includeRefund")(includeRefund.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeSubscription)) __obj.updateDynamic("includeSubscription")(includeSubscription.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeSupport)) __obj.updateDynamic("includeSupport")(includeSupport.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeTax)) __obj.updateDynamic("includeTax")(includeTax.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeUpfront)) __obj.updateDynamic("includeUpfront")(includeUpfront.asInstanceOf[js.Any])
-    if (!js.isUndefined(useAmortized)) __obj.updateDynamic("useAmortized")(useAmortized.asInstanceOf[js.Any])
-    if (!js.isUndefined(useBlended)) __obj.updateDynamic("useBlended")(useBlended.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeCredit)) __obj.updateDynamic("includeCredit")(includeCredit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeDiscount)) __obj.updateDynamic("includeDiscount")(includeDiscount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeOtherSubscription)) __obj.updateDynamic("includeOtherSubscription")(includeOtherSubscription.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeRecurring)) __obj.updateDynamic("includeRecurring")(includeRecurring.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeRefund)) __obj.updateDynamic("includeRefund")(includeRefund.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeSubscription)) __obj.updateDynamic("includeSubscription")(includeSubscription.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeSupport)) __obj.updateDynamic("includeSupport")(includeSupport.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeTax)) __obj.updateDynamic("includeTax")(includeTax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeUpfront)) __obj.updateDynamic("includeUpfront")(includeUpfront.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useAmortized)) __obj.updateDynamic("useAmortized")(useAmortized.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useBlended)) __obj.updateDynamic("useBlended")(useBlended.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BudgetCostTypes]
   }
 }

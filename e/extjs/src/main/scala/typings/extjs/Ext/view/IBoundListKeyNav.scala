@@ -12,12 +12,12 @@ trait IBoundListKeyNav extends IKeyNav {
   /** [Config Option] (Ext.view.BoundList) */
   var boundList: js.UndefOr[IBoundList] = js.undefined
   /** [Method] Highlights the item at the given index
-  		* @param index Number
-  		*/
+    * @param index Number
+    */
   var highlightAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Triggers selection of the currently highlighted item according to the behavior of the configured SelectionModel
-  		* @param e Object
-  		*/
+    * @param e Object
+    */
   var selectHighlighted: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -68,14 +68,14 @@ object IBoundListKeyNav {
     if (defaultEventAction != null) __obj.updateDynamic("defaultEventAction")(defaultEventAction.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (disable != null) __obj.updateDynamic("disable")(js.Any.fromFunction0(disable))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (enable != null) __obj.updateDynamic("enable")(js.Any.fromFunction0(enable))
     if (eventName != null) __obj.updateDynamic("eventName")(eventName.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceKeyDown)) __obj.updateDynamic("forceKeyDown")(forceKeyDown.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceKeyDown)) __obj.updateDynamic("forceKeyDown")(forceKeyDown.get.asInstanceOf[js.Any])
     if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
     if (highlightAt != null) __obj.updateDynamic("highlightAt")(js.Any.fromFunction1(highlightAt))
-    if (!js.isUndefined(ignoreInputFields)) __obj.updateDynamic("ignoreInputFields")(ignoreInputFields.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreInputFields)) __obj.updateDynamic("ignoreInputFields")(ignoreInputFields.get.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (keyMap != null) __obj.updateDynamic("keyMap")(keyMap.asInstanceOf[js.Any])
@@ -86,7 +86,7 @@ object IBoundListKeyNav {
     if (selectHighlighted != null) __obj.updateDynamic("selectHighlighted")(js.Any.fromFunction1(selectHighlighted))
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setDisabled != null) __obj.updateDynamic("setDisabled")(js.Any.fromFunction1(setDisabled))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])

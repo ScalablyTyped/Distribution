@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@jupyterlab/htmlviewer", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.luminoDisposable.mod.IDisposable because Already inherited
   - typings.luminoMessaging.mod.IMessageHandler because Already inherited
   - typings.luminoDisposable.mod.IObservableDisposable because Already inherited

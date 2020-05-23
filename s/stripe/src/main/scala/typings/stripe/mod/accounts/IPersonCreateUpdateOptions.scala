@@ -1,8 +1,8 @@
 package typings.stripe.mod.accounts
 
-import typings.stripe.AnonDay
-import typings.stripe.AnonDirector
-import typings.stripe.AnonDocument
+import typings.stripe.anon.Day
+import typings.stripe.anon.Director
+import typings.stripe.anon.Document
 import typings.stripe.mod.IAddress
 import typings.stripe.mod.IAddressKana
 import typings.stripe.mod.IAddressKanji
@@ -38,7 +38,7 @@ trait IPersonCreateUpdateOptions extends IPersonShared {
   /**
     * The person’s verification document information.
     */
-  var verification: js.UndefOr[AnonDocument] = js.undefined
+  var verification: js.UndefOr[Document] = js.undefined
 }
 
 object IPersonCreateUpdateOptions {
@@ -48,7 +48,7 @@ object IPersonCreateUpdateOptions {
     address: IAddress = null,
     address_kana: IAddressKana = null,
     address_kanji: IAddressKanji = null,
-    dob: AnonDay = null,
+    dob: Day = null,
     email: String = null,
     first_name: String = null,
     first_name_kana: String = null,
@@ -62,9 +62,9 @@ object IPersonCreateUpdateOptions {
     metadata: IOptionsMetadata = null,
     person_token: String = null,
     phone: String = null,
-    relationship: AnonDirector = null,
+    relationship: Director = null,
     ssn_last_4: String = null,
-    verification: AnonDocument = null
+    verification: Document = null
   ): IPersonCreateUpdateOptions = {
     val __obj = js.Dynamic.literal()
     if (account != null) __obj.updateDynamic("account")(account.asInstanceOf[js.Any])

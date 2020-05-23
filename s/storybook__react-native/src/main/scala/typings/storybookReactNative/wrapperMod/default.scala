@@ -1,6 +1,6 @@
 package typings.storybookReactNative.wrapperMod
 
-import typings.storybookReactNative.AnonAddonSelected
+import typings.storybookReactNative.anon.AddonSelected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends Wrapper
 @JSImport("@storybook/react-native/dist/preview/components/OnDeviceUI/addons/wrapper", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonAddonSelected = js.native
+  var defaultProps: AddonSelected = js.native
 }
 

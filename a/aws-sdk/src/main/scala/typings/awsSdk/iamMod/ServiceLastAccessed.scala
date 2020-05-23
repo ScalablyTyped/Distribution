@@ -35,12 +35,12 @@ object ServiceLastAccessed {
     ServiceNamespace: serviceNamespaceType,
     LastAuthenticated: dateType = null,
     LastAuthenticatedEntity: arnType = null,
-    TotalAuthenticatedEntities: Int | Double = null
+    TotalAuthenticatedEntities: js.UndefOr[integerType] = js.undefined
   ): ServiceLastAccessed = {
     val __obj = js.Dynamic.literal(ServiceName = ServiceName.asInstanceOf[js.Any], ServiceNamespace = ServiceNamespace.asInstanceOf[js.Any])
     if (LastAuthenticated != null) __obj.updateDynamic("LastAuthenticated")(LastAuthenticated.asInstanceOf[js.Any])
     if (LastAuthenticatedEntity != null) __obj.updateDynamic("LastAuthenticatedEntity")(LastAuthenticatedEntity.asInstanceOf[js.Any])
-    if (TotalAuthenticatedEntities != null) __obj.updateDynamic("TotalAuthenticatedEntities")(TotalAuthenticatedEntities.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalAuthenticatedEntities)) __obj.updateDynamic("TotalAuthenticatedEntities")(TotalAuthenticatedEntities.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceLastAccessed]
   }
 }

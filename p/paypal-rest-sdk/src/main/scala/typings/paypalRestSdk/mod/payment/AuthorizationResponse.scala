@@ -24,7 +24,7 @@ object AuthorizationResponse {
     id: String,
     update_time: String,
     valid_until: String,
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     create_time: String = null,
     fmf_details: FraudManagementFiltersDetails = null,
     links: js.Array[Link] = null,
@@ -37,10 +37,10 @@ object AuthorizationResponse {
     receipt_id: String = null,
     reference_id: String = null,
     state: String = null,
-    total_count: Int | Double = null
+    total_count: js.UndefOr[Double] = js.undefined
   ): AuthorizationResponse = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], httpStatusCode = httpStatusCode.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], update_time = update_time.asInstanceOf[js.Any], valid_until = valid_until.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (create_time != null) __obj.updateDynamic("create_time")(create_time.asInstanceOf[js.Any])
     if (fmf_details != null) __obj.updateDynamic("fmf_details")(fmf_details.asInstanceOf[js.Any])
     if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
@@ -53,7 +53,7 @@ object AuthorizationResponse {
     if (receipt_id != null) __obj.updateDynamic("receipt_id")(receipt_id.asInstanceOf[js.Any])
     if (reference_id != null) __obj.updateDynamic("reference_id")(reference_id.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (total_count != null) __obj.updateDynamic("total_count")(total_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(total_count)) __obj.updateDynamic("total_count")(total_count.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizationResponse]
   }
 }

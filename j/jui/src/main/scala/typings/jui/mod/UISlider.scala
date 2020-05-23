@@ -1,6 +1,6 @@
 package typings.jui.mod
 
-import typings.jui.AnonFormat
+import typings.jui.anon.Format
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UISlider extends js.Object {
   def apply(selector: js.Any): this.type = js.native
-  def apply(selector: js.Any, options: AnonFormat): this.type = js.native
+  def apply(selector: js.Any, options: Format): this.type = js.native
   /**
     * get FromHandle's value
     *

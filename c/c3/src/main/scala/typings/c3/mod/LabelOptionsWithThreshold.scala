@@ -19,13 +19,13 @@ object LabelOptionsWithThreshold {
     format: (/* value */ Double, /* ratio */ Double, /* id */ String) => String | Double = null,
     ratio: js.Any = null,
     show: js.UndefOr[Boolean] = js.undefined,
-    threshold: Int | Double = null
+    threshold: js.UndefOr[Double] = js.undefined
   ): LabelOptionsWithThreshold = {
     val __obj = js.Dynamic.literal()
     if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction3(format))
     if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelOptionsWithThreshold]
   }
 }

@@ -1,6 +1,6 @@
 package typings.escpos.mod
 
-import typings.escpos.AnonEncoding
+import typings.escpos.anon.Encoding
 import typings.escpos.escposNumbers.`1`
 import typings.escpos.escposNumbers.`2`
 import typings.escpos.escposNumbers.`3`
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Screen protected () extends js.Object {
   def this(adapter: Adapter) = this()
-  def this(adapter: Adapter, options: AnonEncoding) = this()
+  def this(adapter: Adapter, options: Encoding) = this()
   /**
     * Set status confirmation for DTR signal
     */

@@ -60,7 +60,7 @@ object TwitterTweetWidgetOptions {
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (cards != null) __obj.updateDynamic("cards")(cards.asInstanceOf[js.Any])
     if (conversation != null) __obj.updateDynamic("conversation")(conversation.asInstanceOf[js.Any])
-    if (!js.isUndefined(dnt)) __obj.updateDynamic("dnt")(dnt.asInstanceOf[js.Any])
+    if (!js.isUndefined(dnt)) __obj.updateDynamic("dnt")(dnt.get.asInstanceOf[js.Any])
     if (hashtags != null) __obj.updateDynamic("hashtags")(hashtags.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (linkColor != null) __obj.updateDynamic("linkColor")(linkColor.asInstanceOf[js.Any])

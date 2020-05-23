@@ -21,11 +21,11 @@ object ProximityObject {
     radius: Double,
     radiusUnits: RadiusUnits,
     address: AddressObject = null,
-    bidModifier: Int | Double = null
+    bidModifier: js.UndefOr[Double] = js.undefined
   ): ProximityObject = {
     val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], radiusUnits = radiusUnits.asInstanceOf[js.Any])
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (bidModifier != null) __obj.updateDynamic("bidModifier")(bidModifier.asInstanceOf[js.Any])
+    if (!js.isUndefined(bidModifier)) __obj.updateDynamic("bidModifier")(bidModifier.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProximityObject]
   }
 }

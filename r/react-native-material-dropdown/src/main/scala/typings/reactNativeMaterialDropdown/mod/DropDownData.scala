@@ -1,6 +1,6 @@
 package typings.reactNativeMaterialDropdown.mod
 
-import typings.reactNativeMaterialDropdown.PartialDropDownPropsAbsoluteRTLLayout
+import typings.reactNativeMaterialDropdown.anon.PartialDropDownPropsAbsoluteRTLLayout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

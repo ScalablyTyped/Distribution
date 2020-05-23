@@ -12,11 +12,15 @@ trait IHorizontalLine extends js.Object {
 
 object IHorizontalLine {
   @scala.inline
-  def apply(color: String = null, lineWidth: Int | Double = null, value: Int | Double = null): IHorizontalLine = {
+  def apply(
+    color: String = null,
+    lineWidth: js.UndefOr[Double] = js.undefined,
+    value: js.UndefOr[Double] = js.undefined
+  ): IHorizontalLine = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHorizontalLine]
   }
 }

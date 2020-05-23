@@ -16,8 +16,8 @@ object KnobManagerOptions {
     escapeHTML: js.UndefOr[Boolean] = js.undefined
   ): KnobManagerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableDebounce)) __obj.updateDynamic("disableDebounce")(disableDebounce.asInstanceOf[js.Any])
-    if (!js.isUndefined(escapeHTML)) __obj.updateDynamic("escapeHTML")(escapeHTML.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableDebounce)) __obj.updateDynamic("disableDebounce")(disableDebounce.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(escapeHTML)) __obj.updateDynamic("escapeHTML")(escapeHTML.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnobManagerOptions]
   }
 }

@@ -1,6 +1,5 @@
 package typings.tensorflowTfjsLayers.activationsMod
 
-import typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.selu
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +13,6 @@ class Selu () extends Activation
 @js.native
 object Selu extends js.Object {
   /** @nocollapse */
-  val className: selu = js.native
+  val className: /* "selu" */ String = js.native
 }
 

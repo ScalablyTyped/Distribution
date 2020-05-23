@@ -18,11 +18,11 @@ object PermList {
     permnegated: Double,
     permskip: Double,
     permvalue: Double,
-    permid: Int | Double = null,
+    permid: js.UndefOr[Double] = js.undefined,
     permsid: String = null
   ): PermList = {
     val __obj = js.Dynamic.literal(permnegated = permnegated.asInstanceOf[js.Any], permskip = permskip.asInstanceOf[js.Any], permvalue = permvalue.asInstanceOf[js.Any])
-    if (permid != null) __obj.updateDynamic("permid")(permid.asInstanceOf[js.Any])
+    if (!js.isUndefined(permid)) __obj.updateDynamic("permid")(permid.get.asInstanceOf[js.Any])
     if (permsid != null) __obj.updateDynamic("permsid")(permsid.asInstanceOf[js.Any])
     __obj.asInstanceOf[PermList]
   }

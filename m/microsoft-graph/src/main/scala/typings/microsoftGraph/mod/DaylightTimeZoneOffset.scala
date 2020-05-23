@@ -12,20 +12,20 @@ trait DaylightTimeZoneOffset extends StandardTimeZoneOffset {
 object DaylightTimeZoneOffset {
   @scala.inline
   def apply(
-    dayOccurrence: Int | Double = null,
+    dayOccurrence: js.UndefOr[Double] = js.undefined,
     dayOfWeek: DayOfWeek = null,
-    daylightBias: Int | Double = null,
-    month: Int | Double = null,
+    daylightBias: js.UndefOr[Double] = js.undefined,
+    month: js.UndefOr[Double] = js.undefined,
     time: String = null,
-    year: Int | Double = null
+    year: js.UndefOr[Double] = js.undefined
   ): DaylightTimeZoneOffset = {
     val __obj = js.Dynamic.literal()
-    if (dayOccurrence != null) __obj.updateDynamic("dayOccurrence")(dayOccurrence.asInstanceOf[js.Any])
+    if (!js.isUndefined(dayOccurrence)) __obj.updateDynamic("dayOccurrence")(dayOccurrence.get.asInstanceOf[js.Any])
     if (dayOfWeek != null) __obj.updateDynamic("dayOfWeek")(dayOfWeek.asInstanceOf[js.Any])
-    if (daylightBias != null) __obj.updateDynamic("daylightBias")(daylightBias.asInstanceOf[js.Any])
-    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
+    if (!js.isUndefined(daylightBias)) __obj.updateDynamic("daylightBias")(daylightBias.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(month)) __obj.updateDynamic("month")(month.get.asInstanceOf[js.Any])
     if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
-    if (year != null) __obj.updateDynamic("year")(year.asInstanceOf[js.Any])
+    if (!js.isUndefined(year)) __obj.updateDynamic("year")(year.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DaylightTimeZoneOffset]
   }
 }

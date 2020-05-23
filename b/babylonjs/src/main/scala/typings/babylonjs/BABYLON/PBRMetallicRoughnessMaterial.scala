@@ -4,16 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.PBRMetallicRoughnessMaterial")
 @js.native
-class PBRMetallicRoughnessMaterial protected () extends PBRBaseSimpleMaterial {
-  /**
-    * Instantiates a new PBRMetalRoughnessMaterial instance.
-    *
-    * @param name The material name
-    * @param scene The scene the material will be use in.
-    */
-  def this(name: String, scene: Scene) = this()
+trait PBRMetallicRoughnessMaterial extends PBRBaseSimpleMaterial {
   /**
     * The base color has two different interpretations depending on the value of metalness.
     * When the material is a metal, the base color is the specific measured reflectance value
@@ -41,15 +33,5 @@ class PBRMetallicRoughnessMaterial protected () extends PBRBaseSimpleMaterial {
     * Can also be used to scale the roughness values of the metallic texture.
     */
   var roughness: Double = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.PBRMetallicRoughnessMaterial")
-@js.native
-object PBRMetallicRoughnessMaterial extends js.Object {
-  /**
-    * Parses a JSON object correponding to the serialize function.
-    */
-  def Parse(source: js.Any, scene: Scene, rootUrl: String): PBRMetallicRoughnessMaterial = js.native
 }
 

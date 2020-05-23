@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.IMsoLegend")
 @js.native
-class IMsoLegend protected () extends js.Object {
+trait IMsoLegend extends js.Object {
   val Application: js.Any = js.native
   var AutoScaleFont: js.Any = js.native
   val Border: IMsoBorder = js.native

@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ResizeObserver")
 @js.native
-class ResizeObserver protected () extends js.Object {
-  def this(callback: ResizeObserverCallback) = this()
+trait ResizeObserver extends js.Object {
   def disconnect(): Unit = js.native
   def observe(target: Element): Unit = js.native
   def observe(target: Element, options: ResizeObserverOptions): Unit = js.native

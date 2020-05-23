@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.CardService
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object LoadIndicator extends js.Object {
   
   @js.native
   sealed trait SPINNER extends LoadIndicator
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[LoadIndicator with Double] = js.native
-  /* 1 */ @js.native
-  object NONE extends TopLevel[NONE with Double]
-  
-  /* 0 */ @js.native
-  object SPINNER extends TopLevel[SPINNER with Double]
   
 }
 

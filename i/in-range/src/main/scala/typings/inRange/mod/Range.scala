@@ -18,9 +18,9 @@ trait Range extends js.Object {
 
 object Range {
   @scala.inline
-  def apply(end: Double, start: Int | Double = null): Range = {
+  def apply(end: Double, start: js.UndefOr[Double] = js.undefined): Range = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Range]
   }
 }

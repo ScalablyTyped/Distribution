@@ -25,11 +25,11 @@ object StartInstancesRequest {
   def apply(
     InstanceIds: InstanceIdStringList,
     AdditionalInfo: String = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined
   ): StartInstancesRequest = {
     val __obj = js.Dynamic.literal(InstanceIds = InstanceIds.asInstanceOf[js.Any])
     if (AdditionalInfo != null) __obj.updateDynamic("AdditionalInfo")(AdditionalInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartInstancesRequest]
   }
 }

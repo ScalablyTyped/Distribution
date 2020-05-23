@@ -12,7 +12,7 @@ object venmoCreateOptions {
   @scala.inline
   def apply(allowNewBrowserTab: js.UndefOr[Boolean] = js.undefined): venmoCreateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowNewBrowserTab)) __obj.updateDynamic("allowNewBrowserTab")(allowNewBrowserTab.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowNewBrowserTab)) __obj.updateDynamic("allowNewBrowserTab")(allowNewBrowserTab.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[venmoCreateOptions]
   }
 }

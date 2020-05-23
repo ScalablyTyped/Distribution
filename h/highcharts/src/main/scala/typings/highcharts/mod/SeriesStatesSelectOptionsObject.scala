@@ -56,22 +56,22 @@ object SeriesStatesSelectOptionsObject {
   def apply(
     animation: Boolean | AnimationOptionsObject = null,
     borderColor: String | ColorString | GradientColorObject | PatternObject = null,
-    borderWidth: Int | Double = null,
+    borderWidth: js.UndefOr[Double] = js.undefined,
     color: String | ColorString | GradientColorObject | PatternObject = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
-    halo: SeriesStatesHoverHaloOptionsObject = null,
-    lineWidth: Int | Double = null,
-    lineWidthPlus: Int | Double = null
+    halo: js.UndefOr[Null | SeriesStatesHoverHaloOptionsObject] = js.undefined,
+    lineWidth: js.UndefOr[Double] = js.undefined,
+    lineWidthPlus: js.UndefOr[Double] = js.undefined
   ): SeriesStatesSelectOptionsObject = {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (halo != null) __obj.updateDynamic("halo")(halo.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (lineWidthPlus != null) __obj.updateDynamic("lineWidthPlus")(lineWidthPlus.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(halo)) __obj.updateDynamic("halo")(halo.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidthPlus)) __obj.updateDynamic("lineWidthPlus")(lineWidthPlus.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesStatesSelectOptionsObject]
   }
 }

@@ -44,8 +44,8 @@ object GraphTraversal {
     immutableState: StringDictionary[MultiformatMessageString] = null,
     initialState: StringDictionary[MultiformatMessageString] = null,
     properties: PropertyBag = null,
-    resultGraphIndex: Int | Double = null,
-    runGraphIndex: Int | Double = null
+    resultGraphIndex: js.UndefOr[Double] = js.undefined,
+    runGraphIndex: js.UndefOr[Double] = js.undefined
   ): GraphTraversal = {
     val __obj = js.Dynamic.literal()
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
@@ -53,8 +53,8 @@ object GraphTraversal {
     if (immutableState != null) __obj.updateDynamic("immutableState")(immutableState.asInstanceOf[js.Any])
     if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (resultGraphIndex != null) __obj.updateDynamic("resultGraphIndex")(resultGraphIndex.asInstanceOf[js.Any])
-    if (runGraphIndex != null) __obj.updateDynamic("runGraphIndex")(runGraphIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(resultGraphIndex)) __obj.updateDynamic("resultGraphIndex")(resultGraphIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(runGraphIndex)) __obj.updateDynamic("runGraphIndex")(runGraphIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphTraversal]
   }
 }

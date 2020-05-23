@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.CommandBarComboBox")
 @js.native
-class CommandBarComboBox protected () extends js.Object {
+trait CommandBarComboBox extends js.Object {
   val Application: js.Any = js.native
   var BeginGroup: Boolean = js.native
   val BuiltIn: Boolean = js.native

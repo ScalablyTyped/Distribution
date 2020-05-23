@@ -59,7 +59,7 @@ object MaintenanceWindowTaskTaskInvocationParametersRunCommandParameters {
     outputS3KeyPrefix: String = null,
     parameters: js.Array[MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter] = null,
     serviceRoleArn: String = null,
-    timeoutSeconds: Int | Double = null
+    timeoutSeconds: js.UndefOr[Double] = js.undefined
   ): MaintenanceWindowTaskTaskInvocationParametersRunCommandParameters = {
     val __obj = js.Dynamic.literal()
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
@@ -70,7 +70,7 @@ object MaintenanceWindowTaskTaskInvocationParametersRunCommandParameters {
     if (outputS3KeyPrefix != null) __obj.updateDynamic("outputS3KeyPrefix")(outputS3KeyPrefix.asInstanceOf[js.Any])
     if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     if (serviceRoleArn != null) __obj.updateDynamic("serviceRoleArn")(serviceRoleArn.asInstanceOf[js.Any])
-    if (timeoutSeconds != null) __obj.updateDynamic("timeoutSeconds")(timeoutSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutSeconds)) __obj.updateDynamic("timeoutSeconds")(timeoutSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaintenanceWindowTaskTaskInvocationParametersRunCommandParameters]
   }
 }

@@ -5,17 +5,19 @@ import typings.mendixmodelsdk.domainmodelsMod.StructureVersionInfo
 import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
+import typings.mendixmodelsdk.restMod.rest.ODataKeyPart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAttributeType because Already inherited
 - typings.mendixmodelsdk.domainmodelsMod.domainmodels.INumericAttributeTypeBase because Already inherited
-- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IIntegerAttributeTypeBase because var conflicts: containerAsAttribute, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.IntegerAttributeTypeBase")
+- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IIntegerAttributeTypeBase because var conflicts: containerAsAttribute, containerAsEntityKeyPart, containerAsODataKeyPart, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.IntegerAttributeTypeBase")
 @js.native
 abstract class IntegerAttributeTypeBase protected () extends NumericAttributeTypeBase {
   def this(
@@ -30,6 +32,10 @@ abstract class IntegerAttributeTypeBase protected () extends NumericAttributeTyp
   var model_FIntegerAttributeTypeBase: IModel = js.native
   @JSName("containerAsAttribute")
   def containerAsAttribute_MIntegerAttributeTypeBase: Attribute = js.native
+  @JSName("containerAsEntityKeyPart")
+  def containerAsEntityKeyPart_MIntegerAttributeTypeBase: EntityKeyPart = js.native
+  @JSName("containerAsODataKeyPart")
+  def containerAsODataKeyPart_MIntegerAttributeTypeBase: ODataKeyPart = js.native
 }
 
 /* static members */

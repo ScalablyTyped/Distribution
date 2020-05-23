@@ -1,14 +1,14 @@
 package typings.electron.mod.remote
 
-import typings.electron.Electron.TouchBarGroup
 import typings.electron.Electron.TouchBarGroupConstructorOptions
+import typings.node.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("electron", "remote.TouchBarGroup")
 @js.native
-class TouchBarGroupCls protected () extends TouchBarGroup {
+class TouchBarGroupCls protected () extends EventEmitter {
   // Docs: http://electronjs.org/docs/api/touch-bar-group
   /**
     * TouchBarGroup

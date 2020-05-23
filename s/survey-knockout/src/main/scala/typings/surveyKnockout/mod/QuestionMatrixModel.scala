@@ -1,5 +1,6 @@
 package typings.surveyKnockout.mod
 
+import typings.surveyKnockout.anon.Calculations
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +18,10 @@ class QuestionMatrixModel protected ()
     * Returns true, if there is at least one row.
     */
   val hasRows: Boolean = js.native
+  /**
+    * Set this property to true to hide the question if there is no visible rows in the matrix.
+    */
+  var hideIfRowsEmpty: Boolean = js.native
   /**
     * Set this property to true, if you want a user to answer all rows.
     */
@@ -36,6 +41,7 @@ class QuestionMatrixModel protected ()
   override def getLocale(): String = js.native
   /* CompleteClass */
   override def getMarkdownHtml(text: String): String = js.native
+  def getPlainData(options: Calculations): js.Any = js.native
   /* CompleteClass */
   override def getProcessedText(text: String): String = js.native
   /* CompleteClass */

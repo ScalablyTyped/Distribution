@@ -5,30 +5,59 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.Font")
-@js.native
-class Font protected () extends js.Object {
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
-  var AutoRotateNumbers: MsoTriState = js.native
-  var BaselineOffset: Double = js.native
-  var Bold: MsoTriState = js.native
-  val Color: ColorFormat = js.native
-  val Embeddable: MsoTriState = js.native
-  val Embedded: MsoTriState = js.native
-  var Emboss: MsoTriState = js.native
-  var Italic: MsoTriState = js.native
-  var Name: String = js.native
-  var NameAscii: String = js.native
-  var NameComplexScript: String = js.native
-  var NameFarEast: String = js.native
-  var NameOther: String = js.native
-  val Parent: js.Any = js.native
+trait Font extends js.Object {
+  val Application: typings.activexPowerpoint.PowerPoint.Application
+  var AutoRotateNumbers: MsoTriState
+  var BaselineOffset: Double
+  var Bold: MsoTriState
+  val Color: ColorFormat
+  val Embeddable: MsoTriState
+  val Embedded: MsoTriState
+  var Emboss: MsoTriState
+  var Italic: MsoTriState
+  var Name: String
+  var NameAscii: String
+  var NameComplexScript: String
+  var NameFarEast: String
+  var NameOther: String
+  val Parent: js.Any
   @JSName("PowerPoint.Font_typekey")
-  var PowerPointDotFont_typekey: Font = js.native
-  var Shadow: MsoTriState = js.native
-  var Size: Double = js.native
-  var Subscript: MsoTriState = js.native
-  var Superscript: MsoTriState = js.native
-  var Underline: MsoTriState = js.native
+  var PowerPointDotFont_typekey: Font
+  var Shadow: MsoTriState
+  var Size: Double
+  var Subscript: MsoTriState
+  var Superscript: MsoTriState
+  var Underline: MsoTriState
+}
+
+object Font {
+  @scala.inline
+  def apply(
+    Application: Application,
+    AutoRotateNumbers: MsoTriState,
+    BaselineOffset: Double,
+    Bold: MsoTriState,
+    Color: ColorFormat,
+    Embeddable: MsoTriState,
+    Embedded: MsoTriState,
+    Emboss: MsoTriState,
+    Italic: MsoTriState,
+    Name: String,
+    NameAscii: String,
+    NameComplexScript: String,
+    NameFarEast: String,
+    NameOther: String,
+    Parent: js.Any,
+    PowerPointDotFont_typekey: Font,
+    Shadow: MsoTriState,
+    Size: Double,
+    Subscript: MsoTriState,
+    Superscript: MsoTriState,
+    Underline: MsoTriState
+  ): Font = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], AutoRotateNumbers = AutoRotateNumbers.asInstanceOf[js.Any], BaselineOffset = BaselineOffset.asInstanceOf[js.Any], Bold = Bold.asInstanceOf[js.Any], Color = Color.asInstanceOf[js.Any], Embeddable = Embeddable.asInstanceOf[js.Any], Embedded = Embedded.asInstanceOf[js.Any], Emboss = Emboss.asInstanceOf[js.Any], Italic = Italic.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], NameAscii = NameAscii.asInstanceOf[js.Any], NameComplexScript = NameComplexScript.asInstanceOf[js.Any], NameFarEast = NameFarEast.asInstanceOf[js.Any], NameOther = NameOther.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Shadow = Shadow.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any], Subscript = Subscript.asInstanceOf[js.Any], Superscript = Superscript.asInstanceOf[js.Any], Underline = Underline.asInstanceOf[js.Any])
+    __obj.updateDynamic("PowerPoint.Font_typekey")(PowerPointDotFont_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Font]
+  }
 }
 

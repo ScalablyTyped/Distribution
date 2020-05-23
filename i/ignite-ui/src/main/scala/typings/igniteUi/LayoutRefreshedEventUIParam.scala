@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait LayoutRefreshedEventUIParam extends js.Object {
   /**
-  	 * Used to get a reference to the splitter instance.
-  	 */
+    * Used to get a reference to the splitter instance.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 

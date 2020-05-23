@@ -5,20 +5,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the service has been resolved (or errored). If successful, the [socket](Titanium.Network.BonjourService.socket) property should now be available.
-		 */
+  * Fired when the service has been resolved (or errored). If successful, the [socket](Titanium.Network.BonjourService.socket) property should now be available.
+  */
 trait BonjourServiceResolveEvent extends BonjourServiceBaseEvent {
   /**
-  			 * Error code
-  			 */
+    * Error code
+    */
   var code: Double
   /**
-  			 * Error message
-  			 */
+    * Error message
+    */
   var error: String
   /**
-  			 * Reports if the resolve operation was successful
-  			 */
+    * Reports if the resolve operation was successful
+    */
   var success: Boolean
 }
 

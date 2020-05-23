@@ -1,6 +1,6 @@
 package typings.loopback.mod
 
-import typings.loopback.AnonIncludeDisabled
+import typings.loopback.anon.IncludeDisabled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,7 +37,7 @@ class SharedClass protected () extends js.Object {
   def disableMethod(fn: String, isStatic: Boolean): Unit = js.native
   /**
     * Disable a sharedMethod with the given static or prototype method name.
-    * @param {string} methodName	The method name
+    * @param {string} methodName    The method name
     */
   def disableMethodByName(methodName: String): Unit = js.native
   /**
@@ -64,7 +64,7 @@ class SharedClass protected () extends js.Object {
     * @param {any} options
     * @return {any[]} An array of shared methods SharedMethod[]
     */
-  def methods(options: AnonIncludeDisabled): js.Array[_] = js.native
+  def methods(options: IncludeDisabled): js.Array[_] = js.native
   /**
     * Define a shared method resolver for dynamically defining methods.
     * ```

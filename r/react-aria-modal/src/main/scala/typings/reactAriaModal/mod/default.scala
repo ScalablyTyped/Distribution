@@ -2,8 +2,8 @@ package typings.reactAriaModal.mod
 
 import typings.react.mod.Component
 import typings.react.mod.ReactType
-import typings.reactAriaModal.PickAriaModalPropstitleId
-import typings.reactAriaModal.PickAriaModalPropstitleTe
+import typings.reactAriaModal.anon.PickAriaModalPropstitleId
+import typings.reactAriaModal.anon.PickAriaModalPropstitleTe
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

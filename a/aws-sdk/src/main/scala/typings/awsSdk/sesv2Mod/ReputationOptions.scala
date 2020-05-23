@@ -20,11 +20,11 @@ object ReputationOptions {
   @scala.inline
   def apply(
     LastFreshStart: LastFreshStart = null,
-    ReputationMetricsEnabled: js.UndefOr[Boolean] = js.undefined
+    ReputationMetricsEnabled: js.UndefOr[Enabled] = js.undefined
   ): ReputationOptions = {
     val __obj = js.Dynamic.literal()
     if (LastFreshStart != null) __obj.updateDynamic("LastFreshStart")(LastFreshStart.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReputationMetricsEnabled)) __obj.updateDynamic("ReputationMetricsEnabled")(ReputationMetricsEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReputationMetricsEnabled)) __obj.updateDynamic("ReputationMetricsEnabled")(ReputationMetricsEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReputationOptions]
   }
 }

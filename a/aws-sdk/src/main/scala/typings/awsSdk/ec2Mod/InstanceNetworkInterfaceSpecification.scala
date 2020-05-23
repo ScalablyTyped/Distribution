@@ -63,33 +63,33 @@ trait InstanceNetworkInterfaceSpecification extends js.Object {
 object InstanceNetworkInterfaceSpecification {
   @scala.inline
   def apply(
-    AssociatePublicIpAddress: js.UndefOr[scala.Boolean] = js.undefined,
-    DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined,
+    AssociatePublicIpAddress: js.UndefOr[Boolean] = js.undefined,
+    DeleteOnTermination: js.UndefOr[Boolean] = js.undefined,
     Description: String = null,
-    DeviceIndex: Int | scala.Double = null,
+    DeviceIndex: js.UndefOr[Integer] = js.undefined,
     Groups: SecurityGroupIdStringList = null,
     InterfaceType: String = null,
-    Ipv6AddressCount: Int | scala.Double = null,
+    Ipv6AddressCount: js.UndefOr[Integer] = js.undefined,
     Ipv6Addresses: InstanceIpv6AddressList = null,
     NetworkInterfaceId: String = null,
     PrivateIpAddress: String = null,
     PrivateIpAddresses: PrivateIpAddressSpecificationList = null,
-    SecondaryPrivateIpAddressCount: Int | scala.Double = null,
+    SecondaryPrivateIpAddressCount: js.UndefOr[Integer] = js.undefined,
     SubnetId: String = null
   ): InstanceNetworkInterfaceSpecification = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AssociatePublicIpAddress)) __obj.updateDynamic("AssociatePublicIpAddress")(AssociatePublicIpAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeleteOnTermination)) __obj.updateDynamic("DeleteOnTermination")(DeleteOnTermination.asInstanceOf[js.Any])
+    if (!js.isUndefined(AssociatePublicIpAddress)) __obj.updateDynamic("AssociatePublicIpAddress")(AssociatePublicIpAddress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeleteOnTermination)) __obj.updateDynamic("DeleteOnTermination")(DeleteOnTermination.get.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (DeviceIndex != null) __obj.updateDynamic("DeviceIndex")(DeviceIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeviceIndex)) __obj.updateDynamic("DeviceIndex")(DeviceIndex.get.asInstanceOf[js.Any])
     if (Groups != null) __obj.updateDynamic("Groups")(Groups.asInstanceOf[js.Any])
     if (InterfaceType != null) __obj.updateDynamic("InterfaceType")(InterfaceType.asInstanceOf[js.Any])
-    if (Ipv6AddressCount != null) __obj.updateDynamic("Ipv6AddressCount")(Ipv6AddressCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(Ipv6AddressCount)) __obj.updateDynamic("Ipv6AddressCount")(Ipv6AddressCount.get.asInstanceOf[js.Any])
     if (Ipv6Addresses != null) __obj.updateDynamic("Ipv6Addresses")(Ipv6Addresses.asInstanceOf[js.Any])
     if (NetworkInterfaceId != null) __obj.updateDynamic("NetworkInterfaceId")(NetworkInterfaceId.asInstanceOf[js.Any])
     if (PrivateIpAddress != null) __obj.updateDynamic("PrivateIpAddress")(PrivateIpAddress.asInstanceOf[js.Any])
     if (PrivateIpAddresses != null) __obj.updateDynamic("PrivateIpAddresses")(PrivateIpAddresses.asInstanceOf[js.Any])
-    if (SecondaryPrivateIpAddressCount != null) __obj.updateDynamic("SecondaryPrivateIpAddressCount")(SecondaryPrivateIpAddressCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(SecondaryPrivateIpAddressCount)) __obj.updateDynamic("SecondaryPrivateIpAddressCount")(SecondaryPrivateIpAddressCount.get.asInstanceOf[js.Any])
     if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceNetworkInterfaceSpecification]
   }

@@ -11,9 +11,9 @@ trait ModelOptions extends js.Object {
 
 object ModelOptions {
   @scala.inline
-  def apply(session: ClientSession = null): ModelOptions = {
+  def apply(session: js.UndefOr[Null | ClientSession] = js.undefined): ModelOptions = {
     val __obj = js.Dynamic.literal()
-    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
+    if (!js.isUndefined(session)) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelOptions]
   }
 }

@@ -19,16 +19,16 @@ trait IExpr extends js.Object {
 object IExpr {
   @scala.inline
   def apply(
-    description: String = null,
-    expression: String = null,
-    location: String = null,
-    title: String = null
+    description: js.UndefOr[Null | String] = js.undefined,
+    expression: js.UndefOr[Null | String] = js.undefined,
+    location: js.UndefOr[Null | String] = js.undefined,
+    title: js.UndefOr[Null | String] = js.undefined
   ): IExpr = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(expression)) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
+    if (!js.isUndefined(location)) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExpr]
   }
 }

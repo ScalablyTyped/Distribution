@@ -28,10 +28,10 @@ object ChannelAuditDetails {
     overallGoodStanding: js.UndefOr[Boolean] = js.undefined
   ): ChannelAuditDetails = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(communityGuidelinesGoodStanding)) __obj.updateDynamic("communityGuidelinesGoodStanding")(communityGuidelinesGoodStanding.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentIdClaimsGoodStanding)) __obj.updateDynamic("contentIdClaimsGoodStanding")(contentIdClaimsGoodStanding.asInstanceOf[js.Any])
-    if (!js.isUndefined(copyrightStrikesGoodStanding)) __obj.updateDynamic("copyrightStrikesGoodStanding")(copyrightStrikesGoodStanding.asInstanceOf[js.Any])
-    if (!js.isUndefined(overallGoodStanding)) __obj.updateDynamic("overallGoodStanding")(overallGoodStanding.asInstanceOf[js.Any])
+    if (!js.isUndefined(communityGuidelinesGoodStanding)) __obj.updateDynamic("communityGuidelinesGoodStanding")(communityGuidelinesGoodStanding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentIdClaimsGoodStanding)) __obj.updateDynamic("contentIdClaimsGoodStanding")(contentIdClaimsGoodStanding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(copyrightStrikesGoodStanding)) __obj.updateDynamic("copyrightStrikesGoodStanding")(copyrightStrikesGoodStanding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overallGoodStanding)) __obj.updateDynamic("overallGoodStanding")(overallGoodStanding.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelAuditDetails]
   }
 }

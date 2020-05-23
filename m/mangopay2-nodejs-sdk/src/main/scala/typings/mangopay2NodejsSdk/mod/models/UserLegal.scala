@@ -1,6 +1,6 @@
 package typings.mangopay2NodejsSdk.mod.models
 
-import typings.mangopay2NodejsSdk.MakeKeysRequiredPartialUs
+import typings.mangopay2NodejsSdk.anon.MakeKeysRequiredPartialUs
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LEGAL
 import typings.mangopay2NodejsSdk.mod.Timestamp
 import typings.mangopay2NodejsSdk.mod.address.AddressType

@@ -232,14 +232,14 @@ object Group {
     threads: js.Array[ConversationThread] = null,
     transitiveMemberOf: js.Array[DirectoryObject] = null,
     transitiveMembers: js.Array[DirectoryObject] = null,
-    unseenCount: Int | Double = null,
+    unseenCount: js.UndefOr[Double] = js.undefined,
     visibility: String = null
   ): Group = {
     val __obj = js.Dynamic.literal()
     if (acceptedSenders != null) __obj.updateDynamic("acceptedSenders")(acceptedSenders.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowExternalSenders)) __obj.updateDynamic("allowExternalSenders")(allowExternalSenders.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowExternalSenders)) __obj.updateDynamic("allowExternalSenders")(allowExternalSenders.get.asInstanceOf[js.Any])
     if (assignedLicenses != null) __obj.updateDynamic("assignedLicenses")(assignedLicenses.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoSubscribeNewMembers)) __obj.updateDynamic("autoSubscribeNewMembers")(autoSubscribeNewMembers.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoSubscribeNewMembers)) __obj.updateDynamic("autoSubscribeNewMembers")(autoSubscribeNewMembers.get.asInstanceOf[js.Any])
     if (calendar != null) __obj.updateDynamic("calendar")(calendar.asInstanceOf[js.Any])
     if (calendarView != null) __obj.updateDynamic("calendarView")(calendarView.asInstanceOf[js.Any])
     if (classification != null) __obj.updateDynamic("classification")(classification.asInstanceOf[js.Any])
@@ -255,13 +255,13 @@ object Group {
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (groupLifecyclePolicies != null) __obj.updateDynamic("groupLifecyclePolicies")(groupLifecyclePolicies.asInstanceOf[js.Any])
     if (groupTypes != null) __obj.updateDynamic("groupTypes")(groupTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasMembersWithLicenseErrors)) __obj.updateDynamic("hasMembersWithLicenseErrors")(hasMembersWithLicenseErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasMembersWithLicenseErrors)) __obj.updateDynamic("hasMembersWithLicenseErrors")(hasMembersWithLicenseErrors.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isArchived)) __obj.updateDynamic("isArchived")(isArchived.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSubscribedByMail)) __obj.updateDynamic("isSubscribedByMail")(isSubscribedByMail.asInstanceOf[js.Any])
+    if (!js.isUndefined(isArchived)) __obj.updateDynamic("isArchived")(isArchived.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSubscribedByMail)) __obj.updateDynamic("isSubscribedByMail")(isSubscribedByMail.get.asInstanceOf[js.Any])
     if (licenseProcessingState != null) __obj.updateDynamic("licenseProcessingState")(licenseProcessingState.asInstanceOf[js.Any])
     if (mail != null) __obj.updateDynamic("mail")(mail.asInstanceOf[js.Any])
-    if (!js.isUndefined(mailEnabled)) __obj.updateDynamic("mailEnabled")(mailEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(mailEnabled)) __obj.updateDynamic("mailEnabled")(mailEnabled.get.asInstanceOf[js.Any])
     if (mailNickname != null) __obj.updateDynamic("mailNickname")(mailNickname.asInstanceOf[js.Any])
     if (memberOf != null) __obj.updateDynamic("memberOf")(memberOf.asInstanceOf[js.Any])
     if (members != null) __obj.updateDynamic("members")(members.asInstanceOf[js.Any])
@@ -269,7 +269,7 @@ object Group {
     if (onPremisesLastSyncDateTime != null) __obj.updateDynamic("onPremisesLastSyncDateTime")(onPremisesLastSyncDateTime.asInstanceOf[js.Any])
     if (onPremisesProvisioningErrors != null) __obj.updateDynamic("onPremisesProvisioningErrors")(onPremisesProvisioningErrors.asInstanceOf[js.Any])
     if (onPremisesSecurityIdentifier != null) __obj.updateDynamic("onPremisesSecurityIdentifier")(onPremisesSecurityIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(onPremisesSyncEnabled)) __obj.updateDynamic("onPremisesSyncEnabled")(onPremisesSyncEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(onPremisesSyncEnabled)) __obj.updateDynamic("onPremisesSyncEnabled")(onPremisesSyncEnabled.get.asInstanceOf[js.Any])
     if (onenote != null) __obj.updateDynamic("onenote")(onenote.asInstanceOf[js.Any])
     if (owners != null) __obj.updateDynamic("owners")(owners.asInstanceOf[js.Any])
     if (photo != null) __obj.updateDynamic("photo")(photo.asInstanceOf[js.Any])
@@ -279,14 +279,14 @@ object Group {
     if (proxyAddresses != null) __obj.updateDynamic("proxyAddresses")(proxyAddresses.asInstanceOf[js.Any])
     if (rejectedSenders != null) __obj.updateDynamic("rejectedSenders")(rejectedSenders.asInstanceOf[js.Any])
     if (renewedDateTime != null) __obj.updateDynamic("renewedDateTime")(renewedDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(securityEnabled)) __obj.updateDynamic("securityEnabled")(securityEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(securityEnabled)) __obj.updateDynamic("securityEnabled")(securityEnabled.get.asInstanceOf[js.Any])
     if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
     if (sites != null) __obj.updateDynamic("sites")(sites.asInstanceOf[js.Any])
     if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])
     if (threads != null) __obj.updateDynamic("threads")(threads.asInstanceOf[js.Any])
     if (transitiveMemberOf != null) __obj.updateDynamic("transitiveMemberOf")(transitiveMemberOf.asInstanceOf[js.Any])
     if (transitiveMembers != null) __obj.updateDynamic("transitiveMembers")(transitiveMembers.asInstanceOf[js.Any])
-    if (unseenCount != null) __obj.updateDynamic("unseenCount")(unseenCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(unseenCount)) __obj.updateDynamic("unseenCount")(unseenCount.get.asInstanceOf[js.Any])
     if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[Group]
   }

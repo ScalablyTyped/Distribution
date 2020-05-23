@@ -1,7 +1,6 @@
 package typings.openapiFramework.typesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.openapiFramework.AnonString
 import typings.openapiSecurityHandler.mod.SecurityHandlers
 import typings.openapiTypes.mod.OpenAPIV2.Document
 import typings.std.RegExp
@@ -25,7 +24,7 @@ object OpenAPIFrameworkConstructorArgs {
     dependencies: StringDictionary[js.Any] = null,
     enableObjectCoercion: js.UndefOr[Boolean] = js.undefined,
     errorTransformer: (/* has0 */ js.Object, /* has1 */ js.Object) => js.Object = null,
-    externalSchemas: AnonString = null,
+    externalSchemas: typings.openapiFramework.anon.String = null,
     logger: Logger = null,
     operations: StringDictionary[js.Function1[/* repeated */ js.Any, _]] = null,
     pathSecurity: js.Array[PathSecurityTuple] = null,
@@ -39,7 +38,7 @@ object OpenAPIFrameworkConstructorArgs {
     val __obj = js.Dynamic.literal(apiDoc = apiDoc.asInstanceOf[js.Any], featureType = featureType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (customFormats != null) __obj.updateDynamic("customFormats")(customFormats.asInstanceOf[js.Any])
     if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableObjectCoercion)) __obj.updateDynamic("enableObjectCoercion")(enableObjectCoercion.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableObjectCoercion)) __obj.updateDynamic("enableObjectCoercion")(enableObjectCoercion.get.asInstanceOf[js.Any])
     if (errorTransformer != null) __obj.updateDynamic("errorTransformer")(js.Any.fromFunction2(errorTransformer))
     if (externalSchemas != null) __obj.updateDynamic("externalSchemas")(externalSchemas.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
@@ -50,7 +49,7 @@ object OpenAPIFrameworkConstructorArgs {
     if (routesGlob != null) __obj.updateDynamic("routesGlob")(routesGlob.asInstanceOf[js.Any])
     if (routesIndexFileRegExp != null) __obj.updateDynamic("routesIndexFileRegExp")(routesIndexFileRegExp.asInstanceOf[js.Any])
     if (securityHandlers != null) __obj.updateDynamic("securityHandlers")(securityHandlers.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateApiDoc)) __obj.updateDynamic("validateApiDoc")(validateApiDoc.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateApiDoc)) __obj.updateDynamic("validateApiDoc")(validateApiDoc.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenAPIFrameworkConstructorArgs]
   }
 }

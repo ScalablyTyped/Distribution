@@ -14,7 +14,7 @@ object PivotOptions {
   def apply(query: js.Function | js.Any = null, require: js.UndefOr[Boolean] = js.undefined): PivotOptions = {
     val __obj = js.Dynamic.literal()
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (!js.isUndefined(require)) __obj.updateDynamic("require")(require.asInstanceOf[js.Any])
+    if (!js.isUndefined(require)) __obj.updateDynamic("require")(require.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotOptions]
   }
 }

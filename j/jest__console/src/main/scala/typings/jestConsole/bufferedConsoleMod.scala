@@ -5,7 +5,7 @@ import typings.jestConsole.typesMod.LogEntry
 import typings.jestConsole.typesMod.LogMessage
 import typings.jestConsole.typesMod.LogType
 import typings.jestSourceMap.typesMod.SourceMapRegistry
-import typings.std.Console_
+import typings.std.Console
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object bufferedConsoleMod extends js.Object {
   @js.native
-  trait BufferedConsole extends Console_ {
+  trait BufferedConsole extends Console {
     var _buffer: js.Any = js.native
     var _counters: js.Any = js.native
     var _getSourceMaps: js.Any = js.native
@@ -25,10 +25,18 @@ object bufferedConsoleMod extends js.Object {
     def assert(value: js.Any): Unit = js.native
     def assert(value: js.Any, message: String): Unit = js.native
     def assert(value: js.Any, message: Error): Unit = js.native
-    def countReset(): Unit = js.native
-    def countReset(label: String): Unit = js.native
+    def debug(firstArg: js.Any, rest: js.Any*): Unit = js.native
+    def dir(firstArg: js.Any, rest: js.Any*): Unit = js.native
     def dirxml(firstArg: js.Any, rest: js.Any*): Unit = js.native
+    def error(firstArg: js.Any, rest: js.Any*): Unit = js.native
     def getBuffer(): js.UndefOr[js.Array[LogEntry]] = js.native
+    def group(): Unit = js.native
+    def group(title: String, rest: js.Any*): Unit = js.native
+    def groupCollapsed(): Unit = js.native
+    def groupCollapsed(title: String, rest: js.Any*): Unit = js.native
+    def info(firstArg: js.Any, rest: js.Any*): Unit = js.native
+    def log(firstArg: js.Any, rest: js.Any*): Unit = js.native
+    def warn(firstArg: js.Any, rest: js.Any*): Unit = js.native
   }
   
   @js.native

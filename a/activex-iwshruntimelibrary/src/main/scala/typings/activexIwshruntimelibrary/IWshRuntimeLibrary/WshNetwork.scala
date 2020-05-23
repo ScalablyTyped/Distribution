@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Network Object */
-@JSGlobal("IWshRuntimeLibrary.WshNetwork")
 @js.native
-class WshNetwork protected () extends js.Object {
+trait WshNetwork extends js.Object {
   val ComputerName: String = js.native
   @JSName("IWshRuntimeLibrary.WshNetwork_typekey")
   var IWshRuntimeLibraryDotWshNetwork_typekey: WshNetwork = js.native

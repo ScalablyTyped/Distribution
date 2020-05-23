@@ -71,7 +71,7 @@ trait GetEvaluationOutput extends js.Object {
 object GetEvaluationOutput {
   @scala.inline
   def apply(
-    ComputeTime: Int | Double = null,
+    ComputeTime: js.UndefOr[LongType] = js.undefined,
     CreatedAt: EpochTime = null,
     CreatedByIamUser: AwsUserArn = null,
     EvaluationDataSourceId: EntityId = null,
@@ -88,7 +88,7 @@ object GetEvaluationOutput {
     Status: EntityStatus = null
   ): GetEvaluationOutput = {
     val __obj = js.Dynamic.literal()
-    if (ComputeTime != null) __obj.updateDynamic("ComputeTime")(ComputeTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(ComputeTime)) __obj.updateDynamic("ComputeTime")(ComputeTime.get.asInstanceOf[js.Any])
     if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
     if (CreatedByIamUser != null) __obj.updateDynamic("CreatedByIamUser")(CreatedByIamUser.asInstanceOf[js.Any])
     if (EvaluationDataSourceId != null) __obj.updateDynamic("EvaluationDataSourceId")(EvaluationDataSourceId.asInstanceOf[js.Any])

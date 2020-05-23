@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.PublishObject")
 @js.native
-class PublishObject protected () extends js.Object {
+trait PublishObject extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   var AutoRepublish: Boolean = js.native
   val Creator: XlCreator = js.native

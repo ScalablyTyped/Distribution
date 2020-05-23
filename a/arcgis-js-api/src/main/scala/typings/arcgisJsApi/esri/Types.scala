@@ -13,7 +13,7 @@ trait Types[T /* <: Base */, Base] extends js.Object {
 
 object Types {
   @scala.inline
-  def apply[T /* <: Base */, Base](
+  def apply[T, Base](
     base: Constructor[Base] | js.Function,
     key: String | (js.Function1[/* obj */ js.Any, String]),
     typeMap: HashMap[Constructor[T]]

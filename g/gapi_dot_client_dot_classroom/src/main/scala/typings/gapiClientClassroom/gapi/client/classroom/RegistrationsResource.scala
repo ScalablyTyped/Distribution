@@ -1,16 +1,16 @@
 package typings.gapiClientClassroom.gapi.client.classroom
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientClassroom.AnonKeyOauthtoken
-import typings.gapiClientClassroom.AnonRegistrationId
-import typings.gapiClientClassroom.AnonUploadTypeUploadprotocol
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientClassroom.anon.KeyOauthtoken
+import typings.gapiClientClassroom.anon.RegistrationId
+import typings.gapiClientClassroom.anon.UploadTypeUploadprotocol
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait RegistrationsResource extends js.Object {
-  def create(request: AnonKeyOauthtoken, body: Registration): Request_[Registration] = js.native
+  def create(request: KeyOauthtoken, body: Registration): Request[Registration] = js.native
   /**
     * Creates a `Registration`, causing Classroom to start sending notifications
     * from the provided `feed` to the destination provided in `cloudPubSubTopic`.
@@ -44,11 +44,12 @@ trait RegistrationsResource extends js.Object {
     * &#42; the specified `cloudPubsubTopic` cannot be located, or Classroom has
     * not been granted permission to publish to it.
     */
-  def create(request: AnonUploadTypeUploadprotocol): Request_[Registration] = js.native
+  def create(request: UploadTypeUploadprotocol): Request[Registration] = js.native
   /**
     * Deletes a `Registration`, causing Classroom to stop sending notifications
     * for that `Registration`.
     */
-  def delete(request: AnonRegistrationId): Request_[js.Object] = js.native
+  def delete(): Request[js.Object] = js.native
+  def delete(request: RegistrationId): Request[js.Object] = js.native
 }
 

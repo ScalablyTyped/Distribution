@@ -1,6 +1,6 @@
 package typings.pMemoize.mod
 
-import typings.mem.AnonData
+import typings.mem.anon.Data
 import typings.mem.mod.CacheStorage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ trait Options[ArgumentsType /* <: js.Array[_] */, CacheKeyType, ReturnType] exte
   		@default new Map()
   		@example new WeakMap()
   		*/
-  val cache: js.UndefOr[CacheStorage[CacheKeyType, AnonData[ReturnType]]] = js.undefined
+  val cache: js.UndefOr[CacheStorage[CacheKeyType, Data[ReturnType]]] = js.undefined
   /**
   		Determines the cache key for storing the result based on the function arguments. By default, __only the first argument is considered__ and it only works with [primitives](https://developer.mozilla.org/en-US/docs/Glossary/Primitive).
   		A `cacheKey` function can return any type supported by `Map` (or whatever structure you use in the `cache` option).
@@ -46,17 +46,17 @@ trait Options[ArgumentsType /* <: js.Array[_] */, CacheKeyType, ReturnType] exte
 
 object Options {
   @scala.inline
-  def apply[ArgumentsType /* <: js.Array[_] */, CacheKeyType, ReturnType](
-    cache: CacheStorage[CacheKeyType, AnonData[ReturnType]] = null,
+  def apply[ArgumentsType, CacheKeyType, ReturnType](
+    cache: CacheStorage[CacheKeyType, Data[ReturnType]] = null,
     cacheKey: /* arguments */ ArgumentsType => CacheKeyType = null,
     cachePromiseRejection: js.UndefOr[Boolean] = js.undefined,
-    maxAge: Int | Double = null
+    maxAge: js.UndefOr[Double] = js.undefined
   ): Options[ArgumentsType, CacheKeyType, ReturnType] = {
     val __obj = js.Dynamic.literal()
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (cacheKey != null) __obj.updateDynamic("cacheKey")(js.Any.fromFunction1(cacheKey))
-    if (!js.isUndefined(cachePromiseRejection)) __obj.updateDynamic("cachePromiseRejection")(cachePromiseRejection.asInstanceOf[js.Any])
-    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
+    if (!js.isUndefined(cachePromiseRejection)) __obj.updateDynamic("cachePromiseRejection")(cachePromiseRejection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAge)) __obj.updateDynamic("maxAge")(maxAge.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[ArgumentsType, CacheKeyType, ReturnType]]
   }
 }

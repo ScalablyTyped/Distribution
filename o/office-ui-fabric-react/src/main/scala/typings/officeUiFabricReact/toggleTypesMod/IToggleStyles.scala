@@ -33,20 +33,20 @@ trait IToggleStyles extends js.Object {
 object IToggleStyles {
   @scala.inline
   def apply(
-    container: IStyle = null,
-    label: IStyle = null,
-    pill: IStyle = null,
-    root: IStyle = null,
-    text: IStyle = null,
-    thumb: IStyle = null
+    container: js.UndefOr[Null | IStyle] = js.undefined,
+    label: js.UndefOr[Null | IStyle] = js.undefined,
+    pill: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined,
+    text: js.UndefOr[Null | IStyle] = js.undefined,
+    thumb: js.UndefOr[Null | IStyle] = js.undefined
   ): IToggleStyles = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (pill != null) __obj.updateDynamic("pill")(pill.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (thumb != null) __obj.updateDynamic("thumb")(thumb.asInstanceOf[js.Any])
+    if (!js.isUndefined(container)) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(label)) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (!js.isUndefined(pill)) __obj.updateDynamic("pill")(pill.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (!js.isUndefined(thumb)) __obj.updateDynamic("thumb")(thumb.asInstanceOf[js.Any])
     __obj.asInstanceOf[IToggleStyles]
   }
 }

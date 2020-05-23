@@ -15,11 +15,15 @@ trait BeanstalkdSpawnOptions extends js.Object {
 
 object BeanstalkdSpawnOptions {
   @scala.inline
-  def apply(delay: Int | Double = null, priority: Int | Double = null, timeout: Int | Double = null): BeanstalkdSpawnOptions = {
+  def apply(
+    delay: js.UndefOr[Double] = js.undefined,
+    priority: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined
+  ): BeanstalkdSpawnOptions = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeanstalkdSpawnOptions]
   }
 }

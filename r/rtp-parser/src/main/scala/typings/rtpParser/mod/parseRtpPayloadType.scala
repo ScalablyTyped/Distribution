@@ -1,7 +1,7 @@
 package typings.rtpParser.mod
 
-import typings.rtpParser.Anon1
-import typings.rtpParser.AnonName
+import typings.rtpParser.anon.Name
+import typings.rtpParser.anon.`1`
 import typings.rtpParser.rtpParserNumbers.`100`
 import typings.rtpParser.rtpParserNumbers.`101`
 import typings.rtpParser.rtpParserNumbers.`102`
@@ -43,10 +43,10 @@ import scala.scalajs.js.annotation._
 object parseRtpPayloadType extends js.Object {
   def apply(
     payloadType: `96` | `97` | `98` | `99` | `100` | `101` | `102` | `103` | `104` | `105` | `106` | `107` | `108` | `109` | `110` | `111` | `112` | `113` | `114` | `115` | `116` | `117` | `118` | `119` | `120` | `121` | `122` | `123` | `124` | `125` | `126` | `127`
-  ): AnonName = js.native
+  ): Name = js.native
   def apply(
     payloadType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 56 */ js.Any
-  ): Anon1 = js.native
+  ): `1` = js.native
   def apply(payloadType: Double): ParsedRTPType = js.native
 }
 

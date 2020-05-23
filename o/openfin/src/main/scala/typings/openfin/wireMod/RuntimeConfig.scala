@@ -28,7 +28,7 @@ object RuntimeConfig {
     if (fallbackVersion != null) __obj.updateDynamic("fallbackVersion")(fallbackVersion.asInstanceOf[js.Any])
     if (rvmDir != null) __obj.updateDynamic("rvmDir")(rvmDir.asInstanceOf[js.Any])
     if (securityRealm != null) __obj.updateDynamic("securityRealm")(securityRealm.asInstanceOf[js.Any])
-    if (!js.isUndefined(verboseLogging)) __obj.updateDynamic("verboseLogging")(verboseLogging.asInstanceOf[js.Any])
+    if (!js.isUndefined(verboseLogging)) __obj.updateDynamic("verboseLogging")(verboseLogging.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuntimeConfig]
   }
 }

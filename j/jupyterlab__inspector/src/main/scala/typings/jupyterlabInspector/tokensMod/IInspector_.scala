@@ -15,8 +15,7 @@ trait IInspector_ extends js.Object {
 object IInspector_ {
   @scala.inline
   def apply(source: IInspectable = null): IInspector_ = {
-    val __obj = js.Dynamic.literal()
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInspector_]
   }
 }

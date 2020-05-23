@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.SPECULAR_BLINN
-  * @type {number}
-  * @description Energy-conserving Blinn-Phong.
+  * Energy-conserving Blinn-Phong.
   */
 @JSImport("playcanvas", "SPECULAR_BLINN")
 @js.native

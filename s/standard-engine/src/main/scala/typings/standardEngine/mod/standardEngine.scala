@@ -15,11 +15,9 @@ object standardEngine extends js.Object {
       * An opts object may be provided
       */
     def lintFiles(files: String, callback: LintCallback): Unit = js.native
-    def lintFiles(files: String, opts: js.UndefOr[scala.Nothing], callback: LintCallback): Unit = js.native
-    def lintFiles(files: String, opts: LintFilesOptions, callback: LintCallback): Unit = js.native
+    def lintFiles(files: String, opts: js.UndefOr[LintFilesOptions], callback: LintCallback): Unit = js.native
     def lintFiles(files: js.Array[String], callback: LintCallback): Unit = js.native
-    def lintFiles(files: js.Array[String], opts: js.UndefOr[scala.Nothing], callback: LintCallback): Unit = js.native
-    def lintFiles(files: js.Array[String], opts: LintFilesOptions, callback: LintCallback): Unit = js.native
+    def lintFiles(files: js.Array[String], opts: js.UndefOr[LintFilesOptions], callback: LintCallback): Unit = js.native
     def lintText(text: String, callback: LintCallback): Unit = js.native
     def lintText(text: String, opts: LintTextOptions, callback: LintCallback): Unit = js.native
     /**

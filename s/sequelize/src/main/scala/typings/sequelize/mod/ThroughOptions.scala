@@ -33,7 +33,7 @@ object ThroughOptions {
   def apply(model: Model[_, _, _], scope: AssociationScope = null, unique: js.UndefOr[Boolean] = js.undefined): ThroughOptions = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
+    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThroughOptions]
   }
 }

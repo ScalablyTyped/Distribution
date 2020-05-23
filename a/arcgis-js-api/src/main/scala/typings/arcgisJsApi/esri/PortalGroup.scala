@@ -1,7 +1,7 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`private`
+import typings.arcgisJsApi.arcgisJsApiStrings.org_
 import typings.arcgisJsApi.arcgisJsApiStrings.public
 import typings.std.Date
 import scala.scalajs.js
@@ -15,7 +15,7 @@ trait PortalGroup extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalGroup.html#access)
     */
-  var access: `private` | typings.arcgisJsApi.arcgisJsApiStrings.org | public = js.native
+  var access: `private` | org_ | public = js.native
   /**
     * The date the group was created.
     *
@@ -138,8 +138,4 @@ trait PortalGroup extends Accessor {
   def queryItems(queryParams: PortalQueryParamsProperties, options: PortalGroupQueryItemsOptions): js.Promise[PortalQueryResult] = js.native
   def queryItems(queryParams: PortalQueryParams, options: PortalGroupQueryItemsOptions): js.Promise[PortalQueryResult] = js.native
 }
-
-@JSGlobal("__esri.PortalGroup")
-@js.native
-object PortalGroup extends TopLevel[PortalGroupConstructor]
 

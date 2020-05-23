@@ -30,9 +30,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.Document")
 @js.native
-class Document protected () extends js.Object {
+trait Document extends js.Object {
   val ActiveTheme: String = js.native
   val ActiveThemeDisplayName: String = js.native
   val ActiveWindow: Window = js.native

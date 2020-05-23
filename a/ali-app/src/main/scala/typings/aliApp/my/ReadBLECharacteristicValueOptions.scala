@@ -1,6 +1,6 @@
 package typings.aliApp.my
 
-import typings.aliApp.characteristiccharacteris
+import typings.aliApp.anon.characteristiccharacteris
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation._
 trait ReadBLECharacteristicValueOptions
   extends BaseOptions[js.Any, js.Any] {
   /**
-  		 * 蓝牙特征值的 uuid
-  		 */
+    * 蓝牙特征值的 uuid
+    */
   var characteristicId: String
   /**
-  		 * 蓝牙设备 id，参考 device 对象
-  		 */
+    * 蓝牙设备 id，参考 device 对象
+    */
   var deviceId: String
   /**
-  		 * 蓝牙特征值对应服务的 uuid
-  		 */
+    * 蓝牙特征值对应服务的 uuid
+    */
   var serviceId: String
   @JSName("success")
   def success_MReadBLECharacteristicValueOptions(res: characteristiccharacteris): Unit

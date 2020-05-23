@@ -4,24 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.SpriteMap")
 @js.native
-class SpriteMap protected () extends ISpriteMap {
-  /**
-    * Creates a new SpriteMap
-    * @param name defines the SpriteMaps Name
-    * @param atlasJSON is the JSON file that controls the Sprites Frames and Meta
-    * @param spriteSheet is the Texture that the Sprites are on.
-    * @param options a basic deployment configuration
-    * @param scene The Scene that the map is deployed on
-    */
-  def this(
-    name: String,
-    atlasJSON: ISpriteJSONAtlas,
-    spriteSheet: Texture,
-    options: ISpriteMapOptions,
-    scene: Scene
-  ) = this()
+trait SpriteMap extends ISpriteMap {
   /** Texture Buffer of Float32 that holds Animation Data*/
   var _animationMap: js.Any = js.native
   /**
@@ -62,26 +46,6 @@ class SpriteMap protected () extends ISpriteMap {
   var _tileMaps: js.Any = js.native
   /** Systems Time Ticker*/
   var _time: js.Any = js.native
-  /**
-    * The JSON Array file from a https://www.codeandweb.com/texturepacker export.  Or similar structure.
-    */
-  /* CompleteClass */
-  override var atlasJSON: ISpriteJSONAtlas = js.native
-  /**
-    * String name of the SpriteMap.
-    */
-  /* CompleteClass */
-  override var name: String = js.native
-  /**
-    * The parameters to initialize the SpriteMap with.
-    */
-  /* CompleteClass */
-  override var options: ISpriteMapOptions = js.native
-  /**
-    * Texture of the SpriteMap.
-    */
-  /* CompleteClass */
-  override var spriteSheet: Texture = js.native
   /** Public Sprite Storage array, parsed from atlasJSON */
   var sprites: js.Array[ISpriteJSONSprite] = js.native
   /**
@@ -102,25 +66,16 @@ class SpriteMap protected () extends ISpriteMap {
   def animationMap: RawTexture = js.native
   /** Sets the AnimationMap*/
   def animationMap(v: RawTexture): js.Any = js.native
-  def changeTiles(_layer: js.UndefOr[scala.Nothing], pos: js.Array[Vector2]): Unit = js.native
-  def changeTiles(_layer: js.UndefOr[scala.Nothing], pos: js.Array[Vector2], tile: Double): Unit = js.native
-  def changeTiles(_layer: js.UndefOr[scala.Nothing], pos: Vector2): Unit = js.native
-  def changeTiles(_layer: js.UndefOr[scala.Nothing], pos: Vector2, tile: Double): Unit = js.native
-  def changeTiles(_layer: Double, pos: js.Array[Vector2]): Unit = js.native
-  def changeTiles(_layer: Double, pos: js.Array[Vector2], tile: Double): Unit = js.native
+  def changeTiles(_layer: js.UndefOr[Double], pos: js.Array[Vector2]): Unit = js.native
+  def changeTiles(_layer: js.UndefOr[Double], pos: js.Array[Vector2], tile: Double): Unit = js.native
   /**
     * Modifies the data of the tileMaps
     * @param _layer is the ID of the layer you want to edit on the SpriteMap
     * @param pos is the iVector2 Coordinates of the Tile
     * @param tile The SpriteIndex of the new Tile
     */
-  def changeTiles(_layer: Double, pos: Vector2): Unit = js.native
-  def changeTiles(_layer: Double, pos: Vector2, tile: Double): Unit = js.native
-  /**
-    * Releases all held resources
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
+  def changeTiles(_layer: js.UndefOr[Double], pos: Vector2): Unit = js.native
+  def changeTiles(_layer: js.UndefOr[Double], pos: Vector2, tile: Double): Unit = js.native
   /**
     * Gets the UV location of the mouse over the SpriteMap.
     * @returns Vector2 the UV position of the mouse interaction

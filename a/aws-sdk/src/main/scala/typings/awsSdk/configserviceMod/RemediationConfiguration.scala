@@ -63,24 +63,24 @@ object RemediationConfiguration {
     TargetId: StringWithCharLimit256,
     TargetType: RemediationTargetType,
     Arn: StringWithCharLimit1024 = null,
-    Automatic: js.UndefOr[scala.Boolean] = js.undefined,
+    Automatic: js.UndefOr[Boolean] = js.undefined,
     CreatedByService: StringWithCharLimit1024 = null,
     ExecutionControls: ExecutionControls = null,
-    MaximumAutomaticAttempts: Int | Double = null,
+    MaximumAutomaticAttempts: js.UndefOr[AutoRemediationAttempts] = js.undefined,
     Parameters: RemediationParameters = null,
     ResourceType: String = null,
-    RetryAttemptSeconds: Int | Double = null,
+    RetryAttemptSeconds: js.UndefOr[AutoRemediationAttemptSeconds] = js.undefined,
     TargetVersion: String = null
   ): RemediationConfiguration = {
     val __obj = js.Dynamic.literal(ConfigRuleName = ConfigRuleName.asInstanceOf[js.Any], TargetId = TargetId.asInstanceOf[js.Any], TargetType = TargetType.asInstanceOf[js.Any])
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (!js.isUndefined(Automatic)) __obj.updateDynamic("Automatic")(Automatic.asInstanceOf[js.Any])
+    if (!js.isUndefined(Automatic)) __obj.updateDynamic("Automatic")(Automatic.get.asInstanceOf[js.Any])
     if (CreatedByService != null) __obj.updateDynamic("CreatedByService")(CreatedByService.asInstanceOf[js.Any])
     if (ExecutionControls != null) __obj.updateDynamic("ExecutionControls")(ExecutionControls.asInstanceOf[js.Any])
-    if (MaximumAutomaticAttempts != null) __obj.updateDynamic("MaximumAutomaticAttempts")(MaximumAutomaticAttempts.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaximumAutomaticAttempts)) __obj.updateDynamic("MaximumAutomaticAttempts")(MaximumAutomaticAttempts.get.asInstanceOf[js.Any])
     if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
     if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
-    if (RetryAttemptSeconds != null) __obj.updateDynamic("RetryAttemptSeconds")(RetryAttemptSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(RetryAttemptSeconds)) __obj.updateDynamic("RetryAttemptSeconds")(RetryAttemptSeconds.get.asInstanceOf[js.Any])
     if (TargetVersion != null) __obj.updateDynamic("TargetVersion")(TargetVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemediationConfiguration]
   }

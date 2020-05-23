@@ -4,34 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PIXI.spine.core.Color")
-@js.native
-class Color () extends js.Object {
-  def this(r: Double) = this()
-  def this(r: Double, g: Double) = this()
-  def this(r: Double, g: Double, b: Double) = this()
-  def this(r: Double, g: Double, b: Double, a: Double) = this()
-  var a: Double = js.native
-  var b: Double = js.native
-  var g: Double = js.native
-  var r: Double = js.native
-  def add(r: Double, g: Double, b: Double, a: Double): this.type = js.native
-  def clamp(): this.type = js.native
-  def set(r: Double, g: Double, b: Double, a: Double): this.type = js.native
-  def setFromColor(c: Color): this.type = js.native
-  def setFromString(hex: String): this.type = js.native
+trait Color extends js.Object {
+  var a: Double
+  var b: Double
+  var g: Double
+  var r: Double
+  def add(r: Double, g: Double, b: Double, a: Double): this.type
+  def clamp(): this.type
+  def set(r: Double, g: Double, b: Double, a: Double): this.type
+  def setFromColor(c: Color): this.type
+  def setFromString(hex: String): this.type
 }
 
-/* static members */
-@JSGlobal("PIXI.spine.core.Color")
-@js.native
-object Color extends js.Object {
-  var BLUE: Color = js.native
-  var GREEN: Color = js.native
-  var MAGENTA: Color = js.native
-  var RED: Color = js.native
-  var WHITE: Color = js.native
-  def rgb888ToColor(color: Color, value: Double): Unit = js.native
-  def rgba8888ToColor(color: Color, value: Double): Unit = js.native
+object Color {
+  @scala.inline
+  def apply(
+    a: Double,
+    add: (Double, Double, Double, Double) => Color,
+    b: Double,
+    clamp: () => Color,
+    g: Double,
+    r: Double,
+    set: (Double, Double, Double, Double) => Color,
+    setFromColor: Color => Color,
+    setFromString: String => Color
+  ): Color = {
+    val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], add = js.Any.fromFunction4(add), b = b.asInstanceOf[js.Any], clamp = js.Any.fromFunction0(clamp), g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], set = js.Any.fromFunction4(set), setFromColor = js.Any.fromFunction1(setFromColor), setFromString = js.Any.fromFunction1(setFromString))
+    __obj.asInstanceOf[Color]
+  }
 }
 

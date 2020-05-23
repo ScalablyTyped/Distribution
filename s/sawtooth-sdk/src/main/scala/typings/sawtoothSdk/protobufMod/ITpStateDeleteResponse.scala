@@ -14,10 +14,13 @@ trait ITpStateDeleteResponse extends js.Object {
 
 object ITpStateDeleteResponse {
   @scala.inline
-  def apply(addresses: js.Array[String] = null, status: Status = null): ITpStateDeleteResponse = {
+  def apply(
+    addresses: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    status: js.UndefOr[Null | Status] = js.undefined
+  ): ITpStateDeleteResponse = {
     val __obj = js.Dynamic.literal()
-    if (addresses != null) __obj.updateDynamic("addresses")(addresses.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(addresses)) __obj.updateDynamic("addresses")(addresses.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITpStateDeleteResponse]
   }
 }

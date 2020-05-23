@@ -23,7 +23,7 @@ object StreamOptions {
   ): StreamOptions = {
     val __obj = js.Dynamic.literal()
     if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
-    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.asInstanceOf[js.Any])
+    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamOptions]
   }
 }

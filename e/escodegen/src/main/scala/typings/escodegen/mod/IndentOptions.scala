@@ -23,12 +23,12 @@ object IndentOptions {
   @scala.inline
   def apply(
     adjustMultilineComment: js.UndefOr[Boolean] = js.undefined,
-    base: Int | Double = null,
+    base: js.UndefOr[Double] = js.undefined,
     style: String = null
   ): IndentOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(adjustMultilineComment)) __obj.updateDynamic("adjustMultilineComment")(adjustMultilineComment.asInstanceOf[js.Any])
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (!js.isUndefined(adjustMultilineComment)) __obj.updateDynamic("adjustMultilineComment")(adjustMultilineComment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(base)) __obj.updateDynamic("base")(base.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndentOptions]
   }

@@ -1,5 +1,6 @@
 package typings.shopifyPrime
 
+import typings.shopifyPrime.anon.titlestringproductidnumbe
 import typings.shopifyPrime.infrastructureMod.BaseService
 import typings.shopifyPrime.optionsBaseMod.FieldOptions
 import typings.shopifyPrime.optionsProductCollectionMod.CollectionListOptions

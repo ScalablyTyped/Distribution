@@ -1,6 +1,6 @@
 package typings.jupyterlabServices.sessionSessionMod.ISessionConnection
 
-import typings.jupyterlabServices.OmitIOptionsmodelusername
+import typings.jupyterlabServices.anon.OmitIOptionsmodelusername
 import typings.jupyterlabServices.kernelKernelMod.IKernelConnection
 import typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings
 import typings.jupyterlabServices.sessionSessionMod.IModel

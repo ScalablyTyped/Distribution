@@ -1,6 +1,6 @@
 package typings.baiduApp.swan
 
-import typings.baiduApp.AnonDuration
+import typings.baiduApp.anon.Duration
 import typings.baiduApp.baiduAppStrings.Numbersign000000
 import typings.baiduApp.baiduAppStrings.Numbersignffffff
 import scala.scalajs.js
@@ -10,16 +10,16 @@ import scala.scalajs.js.annotation._
 trait SetNavigationBarColorOptions
   extends BaseOptions[js.Any, js.Any] {
   /**
-  		 * 动画效果
-  		 */
-  var animation: js.UndefOr[AnonDuration] = js.undefined
+    * 动画效果
+    */
+  var animation: js.UndefOr[Duration] = js.undefined
   /**
-  		 * 背景颜色值，有效值为十六进制颜色
-  		 */
+    * 背景颜色值，有效值为十六进制颜色
+    */
   var backgroundColor: String
   /**
-  		 * 前景颜色值，包括按钮、标题、状态栏的颜色，仅支持 #ffffff 和 #000000
-  		 */
+    * 前景颜色值，包括按钮、标题、状态栏的颜色，仅支持 #ffffff 和 #000000
+    */
   var frontColor: Numbersignffffff | Numbersign000000
 }
 
@@ -28,7 +28,7 @@ object SetNavigationBarColorOptions {
   def apply(
     backgroundColor: String,
     frontColor: Numbersignffffff | Numbersign000000,
-    animation: AnonDuration = null,
+    animation: Duration = null,
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
     success: js.Any => Unit = null

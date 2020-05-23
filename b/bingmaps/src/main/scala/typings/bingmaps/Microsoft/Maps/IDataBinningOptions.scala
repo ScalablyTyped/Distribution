@@ -53,7 +53,7 @@ object IDataBinningOptions {
     dataBinType: DataBinType = null,
     distanceUnits: DistanceUnits = null,
     polygonOptions: IPolygonOptions = null,
-    radius: Int | Double = null,
+    radius: js.UndefOr[Double] = js.undefined,
     scaleCallback: (/* binInfo */ IDataBinInfo, /* min */ IDataBinMetrics, /* max */ IDataBinMetrics) => Double = null
   ): IDataBinningOptions = {
     val __obj = js.Dynamic.literal()
@@ -62,7 +62,7 @@ object IDataBinningOptions {
     if (dataBinType != null) __obj.updateDynamic("dataBinType")(dataBinType.asInstanceOf[js.Any])
     if (distanceUnits != null) __obj.updateDynamic("distanceUnits")(distanceUnits.asInstanceOf[js.Any])
     if (polygonOptions != null) __obj.updateDynamic("polygonOptions")(polygonOptions.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     if (scaleCallback != null) __obj.updateDynamic("scaleCallback")(js.Any.fromFunction3(scaleCallback))
     __obj.asInstanceOf[IDataBinningOptions]
   }

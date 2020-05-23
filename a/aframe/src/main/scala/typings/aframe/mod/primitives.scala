@@ -1,6 +1,5 @@
 package typings.aframe.mod
 
-import typings.aframe.AnonDefaultComponents
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object primitives extends js.Object {
   var primitives: ObjectMap[Entity[ObjectMap[Component[_, System[_]]]]] = js.native
-  def getMeshMixin(): AnonDefaultComponents = js.native
+  def getMeshMixin(): typings.aframe.anon.DefaultComponents = js.native
 }
 

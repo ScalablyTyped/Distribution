@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * 用于菜品识别，即对于输入的一张图片（可正常解码，且长宽比适宜），输出图
-		 * 片的菜品名称、卡路里信息、置信度。
-		 */
+  * 用于菜品识别，即对于输入的一张图片（可正常解码，且长宽比适宜），输出图
+  * 片的菜品名称、卡路里信息、置信度。
+  */
 trait dishClassifyOptions
   extends BaseOptions[js.Any, js.Any] {
    // 图像资源地址
@@ -27,16 +27,16 @@ object dishClassifyOptions {
     image: String,
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
-    filter_threshold: Int | Double = null,
+    filter_threshold: js.UndefOr[Double] = js.undefined,
     success: /* res */ dishClassifyResponse => Unit = null,
-    top_num: Int | Double = null
+    top_num: js.UndefOr[Double] = js.undefined
   ): dishClassifyOptions = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (filter_threshold != null) __obj.updateDynamic("filter_threshold")(filter_threshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_threshold)) __obj.updateDynamic("filter_threshold")(filter_threshold.get.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
-    if (top_num != null) __obj.updateDynamic("top_num")(top_num.asInstanceOf[js.Any])
+    if (!js.isUndefined(top_num)) __obj.updateDynamic("top_num")(top_num.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dishClassifyOptions]
   }
 }

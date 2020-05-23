@@ -21,13 +21,13 @@ object StartOptions {
     additionalData: String = null,
     iv: ByteBuffer | js.Array[Byte] | Bytes = null,
     tag: ByteStringBuffer = null,
-    tagLength: Int | Double = null
+    tagLength: js.UndefOr[Double] = js.undefined
   ): StartOptions = {
     val __obj = js.Dynamic.literal()
     if (additionalData != null) __obj.updateDynamic("additionalData")(additionalData.asInstanceOf[js.Any])
     if (iv != null) __obj.updateDynamic("iv")(iv.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (tagLength != null) __obj.updateDynamic("tagLength")(tagLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(tagLength)) __obj.updateDynamic("tagLength")(tagLength.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartOptions]
   }
 }

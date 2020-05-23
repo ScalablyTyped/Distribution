@@ -44,19 +44,19 @@ trait BorderStyleProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js
 
 object BorderStyleProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](
-    borderBottomStyle: ResponsiveValue[BorderBottomStyleProperty, ThemeType] = null,
-    borderLeftStyle: ResponsiveValue[BorderLeftStyleProperty, ThemeType] = null,
-    borderRightStyle: ResponsiveValue[BorderRightStyleProperty, ThemeType] = null,
-    borderStyle: ResponsiveValue[BorderStyleProperty, ThemeType] = null,
-    borderTopStyle: ResponsiveValue[BorderTopStyleProperty, ThemeType] = null
+  def apply[ThemeType](
+    borderBottomStyle: js.UndefOr[Null | (ResponsiveValue[BorderBottomStyleProperty, ThemeType])] = js.undefined,
+    borderLeftStyle: js.UndefOr[Null | (ResponsiveValue[BorderLeftStyleProperty, ThemeType])] = js.undefined,
+    borderRightStyle: js.UndefOr[Null | (ResponsiveValue[BorderRightStyleProperty, ThemeType])] = js.undefined,
+    borderStyle: js.UndefOr[Null | (ResponsiveValue[BorderStyleProperty, ThemeType])] = js.undefined,
+    borderTopStyle: js.UndefOr[Null | (ResponsiveValue[BorderTopStyleProperty, ThemeType])] = js.undefined
   ): BorderStyleProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
-    if (borderBottomStyle != null) __obj.updateDynamic("borderBottomStyle")(borderBottomStyle.asInstanceOf[js.Any])
-    if (borderLeftStyle != null) __obj.updateDynamic("borderLeftStyle")(borderLeftStyle.asInstanceOf[js.Any])
-    if (borderRightStyle != null) __obj.updateDynamic("borderRightStyle")(borderRightStyle.asInstanceOf[js.Any])
-    if (borderStyle != null) __obj.updateDynamic("borderStyle")(borderStyle.asInstanceOf[js.Any])
-    if (borderTopStyle != null) __obj.updateDynamic("borderTopStyle")(borderTopStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderBottomStyle)) __obj.updateDynamic("borderBottomStyle")(borderBottomStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderLeftStyle)) __obj.updateDynamic("borderLeftStyle")(borderLeftStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderRightStyle)) __obj.updateDynamic("borderRightStyle")(borderRightStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderStyle)) __obj.updateDynamic("borderStyle")(borderStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderTopStyle)) __obj.updateDynamic("borderTopStyle")(borderTopStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[BorderStyleProps[ThemeType]]
   }
 }

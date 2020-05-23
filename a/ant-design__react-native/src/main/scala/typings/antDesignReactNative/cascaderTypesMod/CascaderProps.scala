@@ -24,27 +24,27 @@ object CascaderProps {
   @scala.inline
   def apply(
     data: js.Array[CascaderDataItem],
-    cols: Int | Double = null,
+    cols: js.UndefOr[Double] = js.undefined,
     defaultValue: CascaderValue = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    indicatorStyle: StyleProp[ViewStyle] = null,
+    indicatorStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     onChange: /* value */ CascaderValue => Unit = null,
     onScrollChange: /* value */ CascaderValue => Unit = null,
-    pickerItemStyle: StyleProp[ViewStyle] = null,
+    pickerItemStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     rootNativeProps: js.Object = null,
-    style: StyleProp[ViewStyle] = null,
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     value: CascaderValue = null
   ): CascaderProps = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
+    if (!js.isUndefined(cols)) __obj.updateDynamic("cols")(cols.get.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (indicatorStyle != null) __obj.updateDynamic("indicatorStyle")(indicatorStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(indicatorStyle)) __obj.updateDynamic("indicatorStyle")(indicatorStyle.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onScrollChange != null) __obj.updateDynamic("onScrollChange")(js.Any.fromFunction1(onScrollChange))
-    if (pickerItemStyle != null) __obj.updateDynamic("pickerItemStyle")(pickerItemStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(pickerItemStyle)) __obj.updateDynamic("pickerItemStyle")(pickerItemStyle.asInstanceOf[js.Any])
     if (rootNativeProps != null) __obj.updateDynamic("rootNativeProps")(rootNativeProps.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CascaderProps]
   }

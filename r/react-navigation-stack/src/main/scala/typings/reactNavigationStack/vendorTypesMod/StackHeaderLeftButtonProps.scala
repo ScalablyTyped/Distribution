@@ -2,7 +2,7 @@ package typings.reactNavigationStack.vendorTypesMod
 
 import typings.react.mod.ReactNode
 import typings.reactNative.mod.LayoutChangeEvent
-import typings.reactNavigationStack.AnonTintColorString
+import typings.reactNavigationStack.anon.TintColorString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait StackHeaderLeftButtonProps extends js.Object {
   /**
     * Function which returns a React Element to display custom image in header's back button.
     */
-  var backImage: js.UndefOr[js.Function1[/* props */ AnonTintColorString, ReactNode]] = js.undefined
+  var backImage: js.UndefOr[js.Function1[/* props */ TintColorString, ReactNode]] = js.undefined
   /**
     * Whether it's possible to navigate back in stack.
     */
@@ -37,7 +37,7 @@ trait StackHeaderLeftButtonProps extends js.Object {
     * Style object for the label.
     */
   var labelStyle: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<react-native.react-native.Animated.AnimatedComponent<react-native.react-native.Text>>['style'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<react-native.react-native.Animated.AnimatedComponent<new (): react-native.react-native.Text>>['style'] */ js.Any
   ] = js.undefined
   /**
     * Whether the label text is visible.
@@ -80,11 +80,11 @@ object StackHeaderLeftButtonProps {
   def apply(
     accessibilityLabel: String = null,
     allowFontScaling: js.UndefOr[Boolean] = js.undefined,
-    backImage: /* props */ AnonTintColorString => ReactNode = null,
+    backImage: /* props */ TintColorString => ReactNode = null,
     canGoBack: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     label: String = null,
-    labelStyle: /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<react-native.react-native.Animated.AnimatedComponent<react-native.react-native.Text>>['style'] */ js.Any = null,
+    labelStyle: /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<react-native.react-native.Animated.AnimatedComponent<new (): react-native.react-native.Text>>['style'] */ js.Any = null,
     labelVisible: js.UndefOr[Boolean] = js.undefined,
     onLabelLayout: /* e */ LayoutChangeEvent => Unit = null,
     onPress: () => Unit = null,
@@ -96,13 +96,13 @@ object StackHeaderLeftButtonProps {
   ): StackHeaderLeftButtonProps = {
     val __obj = js.Dynamic.literal()
     if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFontScaling)) __obj.updateDynamic("allowFontScaling")(allowFontScaling.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFontScaling)) __obj.updateDynamic("allowFontScaling")(allowFontScaling.get.asInstanceOf[js.Any])
     if (backImage != null) __obj.updateDynamic("backImage")(js.Any.fromFunction1(backImage))
-    if (!js.isUndefined(canGoBack)) __obj.updateDynamic("canGoBack")(canGoBack.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(canGoBack)) __obj.updateDynamic("canGoBack")(canGoBack.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(labelVisible)) __obj.updateDynamic("labelVisible")(labelVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelVisible)) __obj.updateDynamic("labelVisible")(labelVisible.get.asInstanceOf[js.Any])
     if (onLabelLayout != null) __obj.updateDynamic("onLabelLayout")(js.Any.fromFunction1(onLabelLayout))
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
     if (pressColorAndroid != null) __obj.updateDynamic("pressColorAndroid")(pressColorAndroid.asInstanceOf[js.Any])

@@ -15,7 +15,7 @@ object ConnectOptions {
   def apply(payload: js.Any = null, wait: js.UndefOr[Boolean] = js.undefined): ConnectOptions = {
     val __obj = js.Dynamic.literal()
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
+    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectOptions]
   }
 }

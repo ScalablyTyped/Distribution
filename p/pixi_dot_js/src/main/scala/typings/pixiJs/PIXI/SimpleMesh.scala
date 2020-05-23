@@ -1,7 +1,6 @@
 package typings.pixiJs.PIXI
 
 import typings.std.Float32Array
-import typings.std.Uint16Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,20 +13,8 @@ import scala.scalajs.js.annotation._
   * @extends PIXI.Mesh
   * @memberof PIXI
   */
-@JSGlobal("PIXI.SimpleMesh")
 @js.native
-class SimpleMesh () extends Mesh {
-  def this(texture: Texture) = this()
-  def this(texture: Texture, vertices: Float32Array) = this()
-  def this(texture: Texture, vertices: Float32Array, uvs: Float32Array) = this()
-  def this(texture: Texture, vertices: Float32Array, uvs: Float32Array, indices: Uint16Array) = this()
-  def this(
-    texture: Texture,
-    vertices: Float32Array,
-    uvs: Float32Array,
-    indices: Uint16Array,
-    drawMode: Double
-  ) = this()
+trait SimpleMesh extends Mesh {
   /**
     * upload vertices buffer each frame
     * @member {boolean} PIXI.SimpleMesh#autoUpdate

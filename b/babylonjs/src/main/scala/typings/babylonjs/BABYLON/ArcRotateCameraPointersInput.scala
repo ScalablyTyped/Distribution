@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.ArcRotateCameraPointersInput")
 @js.native
-class ArcRotateCameraPointersInput () extends BaseCameraPointersInput {
+trait ArcRotateCameraPointersInput extends BaseCameraPointersInput {
   var _isPanClick: js.Any = js.native
   var _isPinching: js.Any = js.native
   var _twoFingerActivityCount: js.Any = js.native

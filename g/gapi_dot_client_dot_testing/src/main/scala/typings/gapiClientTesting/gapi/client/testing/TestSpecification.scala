@@ -56,9 +56,9 @@ object TestSpecification {
     if (androidInstrumentationTest != null) __obj.updateDynamic("androidInstrumentationTest")(androidInstrumentationTest.asInstanceOf[js.Any])
     if (androidRoboTest != null) __obj.updateDynamic("androidRoboTest")(androidRoboTest.asInstanceOf[js.Any])
     if (androidTestLoop != null) __obj.updateDynamic("androidTestLoop")(androidTestLoop.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoGoogleLogin)) __obj.updateDynamic("autoGoogleLogin")(autoGoogleLogin.asInstanceOf[js.Any])
-    if (!js.isUndefined(disablePerformanceMetrics)) __obj.updateDynamic("disablePerformanceMetrics")(disablePerformanceMetrics.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableVideoRecording)) __obj.updateDynamic("disableVideoRecording")(disableVideoRecording.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoGoogleLogin)) __obj.updateDynamic("autoGoogleLogin")(autoGoogleLogin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disablePerformanceMetrics)) __obj.updateDynamic("disablePerformanceMetrics")(disablePerformanceMetrics.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableVideoRecording)) __obj.updateDynamic("disableVideoRecording")(disableVideoRecording.get.asInstanceOf[js.Any])
     if (testSetup != null) __obj.updateDynamic("testSetup")(testSetup.asInstanceOf[js.Any])
     if (testTimeout != null) __obj.updateDynamic("testTimeout")(testTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestSpecification]

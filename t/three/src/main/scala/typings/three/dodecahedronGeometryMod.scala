@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.anon.Detail
 import typings.three.geometryMod.Geometry
 import typings.three.polyhedronGeometryMod.PolyhedronBufferGeometry
 import scala.scalajs.js
@@ -19,7 +20,7 @@ object dodecahedronGeometryMod extends js.Object {
   class DodecahedronGeometry () extends Geometry {
     def this(radius: Double) = this()
     def this(radius: Double, detail: Double) = this()
-    var parameters: AnonDetail = js.native
+    var parameters: Detail = js.native
   }
   
 }

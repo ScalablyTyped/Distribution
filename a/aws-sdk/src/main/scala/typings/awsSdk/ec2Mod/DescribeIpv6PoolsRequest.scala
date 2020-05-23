@@ -31,16 +31,16 @@ trait DescribeIpv6PoolsRequest extends js.Object {
 object DescribeIpv6PoolsRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     Filters: FilterList = null,
-    MaxResults: Int | scala.Double = null,
+    MaxResults: js.UndefOr[Ipv6PoolMaxResults] = js.undefined,
     NextToken: NextToken = null,
     PoolIds: Ipv6PoolIdList = null
   ): DescribeIpv6PoolsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (PoolIds != null) __obj.updateDynamic("PoolIds")(PoolIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeIpv6PoolsRequest]

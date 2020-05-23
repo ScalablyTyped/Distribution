@@ -1,6 +1,6 @@
 package typings.luaparse.astMod
 
-import typings.luaparse.AnonEnd
+import typings.luaparse.anon.End
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ object IfStatement {
   def apply(
     clauses: js.Array[IfClause | ElseifClause | ElseClause],
     `type`: typings.luaparse.luaparseStrings.IfStatement,
-    loc: AnonEnd = null
+    loc: End = null
   ): IfStatement = {
     val __obj = js.Dynamic.literal(clauses = clauses.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 package typings.gaeaModel.FitGaea
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.gaeaModel.AnonCurrentUnit
+import typings.gaeaModel.anon.CurrentUnit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,7 +43,7 @@ trait ComponentPropsGaeaEdit extends js.Object {
   /**
     * 控制 number 单位
     */
-  var number: js.UndefOr[AnonCurrentUnit] = js.undefined
+  var number: js.UndefOr[CurrentUnit] = js.undefined
   /**
     * 当 editor 为 selector 时的数组配置
     */
@@ -65,7 +65,7 @@ object ComponentPropsGaeaEdit {
     array: js.Array[ComponentPropsOptionsArrayValue] = null,
     emptyValue: js.Any = null,
     instance: js.Array[StringDictionary[ComponentPropsOptionValue]] = null,
-    number: AnonCurrentUnit = null,
+    number: CurrentUnit = null,
     selector: js.Array[ComponentPropsOptionsSelector] = null,
     `type`: String = null
   ): ComponentPropsGaeaEdit = {

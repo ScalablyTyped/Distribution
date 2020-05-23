@@ -1,6 +1,6 @@
 package typings.antdMobileRn.segmentedIosMod
 
-import typings.antdMobileRn.AnonSelectedIndex
+import typings.antdMobileRn.anon.SelectedIndex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends SegmentedControl
 @JSImport("antd-mobile-rn/lib/segmented-control/segmented.ios", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonSelectedIndex = js.native
+  var defaultProps: SelectedIndex = js.native
 }
 

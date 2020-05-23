@@ -1,6 +1,6 @@
 package typings.antd.popconfirmMod
 
-import typings.antd.buttonButtonMod.ButtonType
+import typings.antd.buttonButtonMod.LegacyButtonType
 import typings.antd.buttonButtonMod.NativeButtonProps
 import typings.antd.getRenderPropValueMod.RenderFunction
 import typings.antd.placementsMod.AdjustOverflow
@@ -22,7 +22,7 @@ trait PopconfirmProps extends AbstractTooltipProps {
   var icon: js.UndefOr[ReactNode] = js.undefined
   var okButtonProps: js.UndefOr[NativeButtonProps] = js.undefined
   var okText: js.UndefOr[ReactNode] = js.undefined
-  var okType: js.UndefOr[ButtonType] = js.undefined
+  var okType: js.UndefOr[LegacyButtonType] = js.undefined
   var onCancel: js.UndefOr[
     js.Function1[/* e */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], Unit]
   ] = js.undefined
@@ -53,7 +53,7 @@ object PopconfirmProps {
     icon: ReactNode = null,
     okButtonProps: NativeButtonProps = null,
     okText: ReactNode = null,
-    okType: ButtonType = null,
+    okType: LegacyButtonType = null,
     onCancel: /* e */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]] => Unit = null,
     onConfirm: /* e */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]] => Unit = null,
     onVisibleChange: (/* visible */ Boolean, /* e */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]]) => Unit = null,
@@ -63,13 +63,13 @@ object PopconfirmProps {
     title: ReactNode | RenderFunction = null
   ): PopconfirmProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arrowPointAtCenter)) __obj.updateDynamic("arrowPointAtCenter")(arrowPointAtCenter.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrowPointAtCenter)) __obj.updateDynamic("arrowPointAtCenter")(arrowPointAtCenter.get.asInstanceOf[js.Any])
     if (autoAdjustOverflow != null) __obj.updateDynamic("autoAdjustOverflow")(autoAdjustOverflow.asInstanceOf[js.Any])
     if (builtinPlacements != null) __obj.updateDynamic("builtinPlacements")(builtinPlacements.asInstanceOf[js.Any])
     if (cancelButtonProps != null) __obj.updateDynamic("cancelButtonProps")(cancelButtonProps.asInstanceOf[js.Any])
     if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (okButtonProps != null) __obj.updateDynamic("okButtonProps")(okButtonProps.asInstanceOf[js.Any])

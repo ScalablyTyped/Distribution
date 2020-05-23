@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the timed metadata was encountered most recently within the media as it plays.
-		 */
+  * Fired when the timed metadata was encountered most recently within the media as it plays.
+  */
 trait AudioPlayerMetadataEvent extends AudioPlayerBaseEvent {
   /**
-  			 * An array of metadata items containing relevant information about the current media item.
-  			 */
+    * An array of metadata items containing relevant information about the current media item.
+    */
   var items: js.Array[TiMetadataItemType]
 }
 

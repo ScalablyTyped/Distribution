@@ -28,12 +28,12 @@ object UpdateSecurityGroupRuleDescriptionsIngressRequest {
   @scala.inline
   def apply(
     IpPermissions: IpPermissionList,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     GroupId: SecurityGroupId = null,
     GroupName: SecurityGroupName = null
   ): UpdateSecurityGroupRuleDescriptionsIngressRequest = {
     val __obj = js.Dynamic.literal(IpPermissions = IpPermissions.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (GroupId != null) __obj.updateDynamic("GroupId")(GroupId.asInstanceOf[js.Any])
     if (GroupName != null) __obj.updateDynamic("GroupName")(GroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSecurityGroupRuleDescriptionsIngressRequest]

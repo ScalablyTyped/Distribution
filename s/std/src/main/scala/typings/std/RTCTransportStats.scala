@@ -21,8 +21,8 @@ object RTCTransportStats {
     timestamp: Double,
     `type`: RTCStatsType,
     activeConnection: js.UndefOr[scala.Boolean] = js.undefined,
-    bytesReceived: Int | Double = null,
-    bytesSent: Int | Double = null,
+    bytesReceived: js.UndefOr[Double] = js.undefined,
+    bytesSent: js.UndefOr[Double] = js.undefined,
     localCertificateId: java.lang.String = null,
     remoteCertificateId: java.lang.String = null,
     rtcpTransportStatsId: java.lang.String = null,
@@ -30,9 +30,9 @@ object RTCTransportStats {
   ): RTCTransportStats = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeConnection)) __obj.updateDynamic("activeConnection")(activeConnection.asInstanceOf[js.Any])
-    if (bytesReceived != null) __obj.updateDynamic("bytesReceived")(bytesReceived.asInstanceOf[js.Any])
-    if (bytesSent != null) __obj.updateDynamic("bytesSent")(bytesSent.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeConnection)) __obj.updateDynamic("activeConnection")(activeConnection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bytesReceived)) __obj.updateDynamic("bytesReceived")(bytesReceived.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bytesSent)) __obj.updateDynamic("bytesSent")(bytesSent.get.asInstanceOf[js.Any])
     if (localCertificateId != null) __obj.updateDynamic("localCertificateId")(localCertificateId.asInstanceOf[js.Any])
     if (remoteCertificateId != null) __obj.updateDynamic("remoteCertificateId")(remoteCertificateId.asInstanceOf[js.Any])
     if (rtcpTransportStatsId != null) __obj.updateDynamic("rtcpTransportStatsId")(rtcpTransportStatsId.asInstanceOf[js.Any])

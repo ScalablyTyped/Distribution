@@ -30,7 +30,7 @@ trait ReactNativeThemedStyledComponentsModule[T /* <: js.Object */, U /* <: js.O
 
 object ReactNativeThemedStyledComponentsModule {
   @scala.inline
-  def apply[T /* <: js.Object */, U /* <: js.Object */](
+  def apply[T, U](
     ThemeConsumer: Consumer[T],
     ThemeContext: Context[T],
     ThemeProvider: ThemeProviderComponent[T, U],

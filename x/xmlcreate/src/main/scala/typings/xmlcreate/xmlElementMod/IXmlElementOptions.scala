@@ -39,8 +39,8 @@ object IXmlElementOptions {
     useSelfClosingTagIfEmpty: js.UndefOr[Boolean] = js.undefined
   ): IXmlElementOptions = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (!js.isUndefined(replaceInvalidCharsInName)) __obj.updateDynamic("replaceInvalidCharsInName")(replaceInvalidCharsInName.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSelfClosingTagIfEmpty)) __obj.updateDynamic("useSelfClosingTagIfEmpty")(useSelfClosingTagIfEmpty.asInstanceOf[js.Any])
+    if (!js.isUndefined(replaceInvalidCharsInName)) __obj.updateDynamic("replaceInvalidCharsInName")(replaceInvalidCharsInName.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSelfClosingTagIfEmpty)) __obj.updateDynamic("useSelfClosingTagIfEmpty")(useSelfClosingTagIfEmpty.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IXmlElementOptions]
   }
 }

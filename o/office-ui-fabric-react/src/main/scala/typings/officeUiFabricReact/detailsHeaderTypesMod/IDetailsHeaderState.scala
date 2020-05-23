@@ -21,9 +21,9 @@ object IDetailsHeaderState {
   ): IDetailsHeaderState = {
     val __obj = js.Dynamic.literal()
     if (columnResizeDetails != null) __obj.updateDynamic("columnResizeDetails")(columnResizeDetails.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAllCollapsed)) __obj.updateDynamic("isAllCollapsed")(isAllCollapsed.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAllSelected)) __obj.updateDynamic("isAllSelected")(isAllSelected.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSizing)) __obj.updateDynamic("isSizing")(isSizing.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAllCollapsed)) __obj.updateDynamic("isAllCollapsed")(isAllCollapsed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAllSelected)) __obj.updateDynamic("isAllSelected")(isAllSelected.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSizing)) __obj.updateDynamic("isSizing")(isSizing.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetailsHeaderState]
   }
 }

@@ -12,11 +12,15 @@ trait SparklineSeriesItemConnectors extends js.Object {
 
 object SparklineSeriesItemConnectors {
   @scala.inline
-  def apply(color: String = null, padding: Int | Double = null, width: Int | Double = null): SparklineSeriesItemConnectors = {
+  def apply(
+    color: String = null,
+    padding: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
+  ): SparklineSeriesItemConnectors = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparklineSeriesItemConnectors]
   }
 }

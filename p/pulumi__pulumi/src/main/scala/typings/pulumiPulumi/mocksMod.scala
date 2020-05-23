@@ -1,5 +1,6 @@
 package typings.pulumiPulumi
 
+import typings.pulumiPulumi.anon.Id
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -41,9 +42,9 @@ object mocksMod extends js.Object {
       * @param provider: If provided, the identifier of the provider instnace being used to manage this resource.
       * @param id_: If provided, the physical identifier of an existing resource to read or import.
       */
-    def newResource(`type`: String, name: String, inputs: js.Any): AnonId = js.native
-    def newResource(`type`: String, name: String, inputs: js.Any, provider: String): AnonId = js.native
-    def newResource(`type`: String, name: String, inputs: js.Any, provider: String, id: String): AnonId = js.native
+    def newResource(`type`: String, name: String, inputs: js.Any): Id = js.native
+    def newResource(`type`: String, name: String, inputs: js.Any, provider: String): Id = js.native
+    def newResource(`type`: String, name: String, inputs: js.Any, provider: String, id: String): Id = js.native
   }
   
   def setMocks(mocks: Mocks): Unit = js.native

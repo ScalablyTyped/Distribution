@@ -15,16 +15,16 @@ trait PatchOptions extends LinesOptions {
 object PatchOptions {
   @scala.inline
   def apply(
-    context: Int | Double = null,
+    context: js.UndefOr[Double] = js.undefined,
     ignoreCase: js.UndefOr[Boolean] = js.undefined,
     ignoreWhitespace: js.UndefOr[Boolean] = js.undefined,
     newlineIsToken: js.UndefOr[Boolean] = js.undefined
   ): PatchOptions = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreWhitespace)) __obj.updateDynamic("ignoreWhitespace")(ignoreWhitespace.asInstanceOf[js.Any])
-    if (!js.isUndefined(newlineIsToken)) __obj.updateDynamic("newlineIsToken")(newlineIsToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(context)) __obj.updateDynamic("context")(context.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreWhitespace)) __obj.updateDynamic("ignoreWhitespace")(ignoreWhitespace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(newlineIsToken)) __obj.updateDynamic("newlineIsToken")(newlineIsToken.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchOptions]
   }
 }

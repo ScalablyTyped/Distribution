@@ -1,6 +1,15 @@
 package typings.wordpressCompose
 
 import org.scalablytyped.runtime.TopLevel
+import typings.react.mod.ComponentClass
+import typings.react.mod.ComponentState
+import typings.react.mod.ComponentType
+import typings.react.mod.FC
+import typings.std.Omit
+import typings.wordpressCompose.anon.kinkeyofWindowEventMapstr
+import typings.wordpressCompose.wordpressComposeStrings.instanceId
+import typings.wordpressCompose.wordpressComposeStrings.setState
+import typings.wordpressCompose.wordpressComposeStrings.setTimeout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,40 +20,28 @@ object mod extends js.Object {
   // tslint:disable:no-unnecessary-generics
   // prettier-ignore
   def createHigherOrderComponent[EP](
-    mapComponentToEnhancedComponent: js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<any> */ /* component */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<any> */ _
-    ],
+    mapComponentToEnhancedComponent: js.Function1[/* component */ ComponentType[_], ComponentType[_]],
     modifierName: String
-  ): js.Function1[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<any> */ /* component */ js.Any, 
-    _
-  ] = js.native
-  def ifCondition[P](predicate: js.Function1[/* props */ P, Boolean]): js.Function1[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<P> */ /* component */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FC<P> */ _
-  ] = js.native
+  ): js.Function1[/* component */ ComponentType[_], ComponentType[Omit[_, /* keyof EP */ String]]] = js.native
+  def ifCondition[P](predicate: js.Function1[/* props */ P, Boolean]): js.Function1[/* component */ ComponentType[P], FC[P]] = js.native
   // prettier-ignore
-  def pure[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<any> */ js.Any */](component: T): js.Any = js.native
+  def pure[T /* <: ComponentType[_] */](component: T): ComponentType[_] = js.native
   def useMediaQuery(query: String): Boolean = js.native
   def useReducedMotion(): Boolean = js.native
   // prettier-ignore
-  def withGlobalEvents(eventMapper: kinkeyofWindowEventMapstr): js.Function1[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentClass<any> */ /* component */ js.Any, 
-    _
-  ] = js.native
+  def withGlobalEvents(eventMapper: kinkeyofWindowEventMapstr): js.Function1[/* component */ ComponentClass[_, ComponentState], ComponentType[_]] = js.native
   // prettier-ignore
-  def withInstanceId[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<any> */ js.Any */](wrapped: T): js.Any = js.native
+  def withInstanceId[T /* <: ComponentType[_] */](wrapped: T): ComponentType[Omit[_, instanceId]] = js.native
   // prettier-ignore
-  def withSafeTimeout[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<any> */ js.Any */](component: T): js.Any = js.native
+  def withSafeTimeout[T /* <: ComponentType[_] */](component: T): ComponentType[Omit[_, setTimeout]] = js.native
   // prettier-ignore
   def withState[SP /* <: js.Object */](
     initialState: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof SP ]: SP[k]}
     */ typings.wordpressCompose.wordpressComposeStrings.withState with TopLevel[SP]
   ): js.Function1[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<any> */ /* component */ js.Any, 
-    _
+    /* component */ ComponentType[_], 
+    ComponentClass[Omit[_, (/* keyof SP */ String) | setState], SP]
   ] = js.native
 }
 

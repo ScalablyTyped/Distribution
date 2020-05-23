@@ -1,7 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,10 +18,4 @@ trait AudioContext extends BaseAudioContext {
   def resume(): js.Promise[Unit] = js.native
   def suspend(): js.Promise[Unit] = js.native
 }
-
-@JSGlobal("AudioContext")
-@js.native
-object AudioContext
-  extends Instantiable0[AudioContext]
-     with Instantiable1[/* contextOptions */ AudioContextOptions, AudioContext]
 

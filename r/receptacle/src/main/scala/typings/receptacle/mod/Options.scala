@@ -18,13 +18,13 @@ object Options {
     id: Double | String = null,
     items: js.Array[Items[T]] = null,
     lastModified: Date = null,
-    max: Int | Double = null
+    max: js.UndefOr[Double] = js.undefined
   ): Options[T] = {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[T]]
   }
 }

@@ -37,13 +37,13 @@ object ListDataSourceSyncJobsRequest {
   def apply(
     Id: DataSourceId,
     IndexId: IndexId,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResultsIntegerForListDataSourceSyncJobsRequest] = js.undefined,
     NextToken: NextToken = null,
     StartTimeFilter: TimeRange = null,
     StatusFilter: DataSourceSyncJobStatus = null
   ): ListDataSourceSyncJobsRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], IndexId = IndexId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (StartTimeFilter != null) __obj.updateDynamic("StartTimeFilter")(StartTimeFilter.asInstanceOf[js.Any])
     if (StatusFilter != null) __obj.updateDynamic("StatusFilter")(StatusFilter.asInstanceOf[js.Any])

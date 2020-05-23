@@ -1,6 +1,5 @@
 package typings.winjs.WinJS.UI
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,20 +36,6 @@ object EditError extends js.Object {
     **/
   @js.native
   sealed trait notPermitted extends EditError
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EditError with Double] = js.native
-  /* 1 */ @js.native
-  object canceled extends TopLevel[canceled with Double]
-  
-  /* 3 */ @js.native
-  object noLongerMeaningful extends TopLevel[noLongerMeaningful with Double]
-  
-  /* 0 */ @js.native
-  object noResponse extends TopLevel[noResponse with Double]
-  
-  /* 2 */ @js.native
-  object notPermitted extends TopLevel[notPermitted with Double]
   
 }
 

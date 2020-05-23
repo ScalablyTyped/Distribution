@@ -1,10 +1,10 @@
 package typings.jspdf.mod
 
-import typings.jspdf.AnonAlign
-import typings.jspdf.AnonArc
-import typings.jspdf.AnonCollections
-import typings.jspdf.AnonGetContext
-import typings.jspdf.AnonReturnPromise
+import typings.jspdf.anon.Align
+import typings.jspdf.anon.Arc
+import typings.jspdf.anon.Collections
+import typings.jspdf.anon.GetContext
+import typings.jspdf.anon.ReturnPromise
 import typings.jspdf.jspdfStrings.l
 import typings.jspdf.jspdfStrings.landscape
 import typings.jspdf.jspdfStrings.p
@@ -22,14 +22,14 @@ trait jsPDF extends js.Object {
   // jsPDF plugin: Annotations
   var annotationPlugin: js.Any = js.native
   // jsPDF plugin: Canvas
-  var canvas: AnonGetContext = js.native
+  var canvas: GetContext = js.native
   // jsPDF plugin: addImage
   var color_spaces: js.Any = js.native
   // jsPDF plugin: Context2D
-  var context2d: AnonArc = js.native
+  var context2d: Arc = js.native
   var decode: js.Any = js.native
   var image_compression: js.Any = js.native
-  var internal: AnonCollections = js.native
+  var internal: Collections = js.native
   var version: String = js.native
   def addFileToVFS(filename: String, filecontent: String): jsPDF = js.native
   def addFont(postScriptName: String, fontName: String, fontStyle: String): String = js.native
@@ -226,7 +226,7 @@ trait jsPDF extends js.Object {
   def roundedRect(x: Double, y: Double, w: Double, h: Double, rx: Double, ry: Double, style: String): jsPDF = js.native
   def sHashCode(str: String): js.Any = js.native
   def save(filename: String): Unit = js.native
-  def save(filename: String, options: AnonReturnPromise): js.Promise[_] = js.native
+  def save(filename: String, options: ReturnPromise): js.Promise[_] = js.native
   def setDisplayMode(): jsPDF = js.native
   def setDisplayMode(zoom: String): jsPDF = js.native
   def setDisplayMode(zoom: String, layout: String): jsPDF = js.native
@@ -262,7 +262,7 @@ trait jsPDF extends js.Object {
   def splitTextToSize(text: String, maxlen: Double): js.Any = js.native
   def splitTextToSize(text: String, maxlen: Double, options: js.Any): js.Any = js.native
   def supportsArrayBuffer(): Boolean = js.native
-  def table(x: Double, y: Double, data: js.Any, headers: js.Array[AnonAlign], config: js.Any): jsPDF = js.native
+  def table(x: Double, y: Double, data: js.Any, headers: js.Array[Align], config: js.Any): jsPDF = js.native
   def text(text: js.Any, x: js.Any, y: js.Any): jsPDF = js.native
   def text(text: js.Any, x: js.Any, y: js.Any, flags: js.Any): jsPDF = js.native
   def text(text: js.Any, x: js.Any, y: js.Any, flags: js.Any, angle: js.Any): jsPDF = js.native

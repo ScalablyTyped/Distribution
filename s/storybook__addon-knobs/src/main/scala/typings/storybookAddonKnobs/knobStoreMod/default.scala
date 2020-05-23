@@ -2,8 +2,8 @@ package typings.storybookAddonKnobs.knobStoreMod
 
 import typings.std.Partial
 import typings.std.Record
-import typings.storybookAddonKnobs.AnonDefaultValue
-import typings.storybookAddonKnobs.typeanygroupIdstringundef
+import typings.storybookAddonKnobs.anon.DefaultValue
+import typings.storybookAddonKnobs.anon.typeanygroupIdstringundef
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ class default () extends KnobStore {
   /* CompleteClass */
   override var store: Record[String, KnobStoreKnob] = js.native
   /* CompleteClass */
-  override def get(key: String): typeanygroupIdstringundef | AnonDefaultValue = js.native
+  override def get(key: String): typeanygroupIdstringundef | DefaultValue = js.native
   /* CompleteClass */
   override def getAll(): Record[String, KnobStoreKnob] = js.native
   /* CompleteClass */

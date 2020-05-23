@@ -1,24 +1,15 @@
 package typings.amapJsApi.AMap
 
-import typings.amapJsApi.AnonX
+import typings.amapJsApi.anon.X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.Pixel")
 @js.native
-class Pixel protected () extends js.Object {
-  /**
-    * 像素坐标，确定地图上的一个像素点
-    * @param x 横轴坐标
-    * @param y 纵轴坐标
-    * @param round 是否四舍五入
-    */
-  def this(x: Double, y: Double) = this()
-  def this(x: Double, y: Double, round: Boolean) = this()
+trait Pixel extends js.Object {
   // internal
-  def add(offset: AnonX): Pixel = js.native
-  def add(offset: AnonX, round: Boolean): Pixel = js.native
+  def add(offset: X): Pixel = js.native
+  def add(offset: X, round: Boolean): Pixel = js.native
   def direction(): Null | Double = js.native
   /**
     * 当前像素坐标与传入像素坐标是否相等

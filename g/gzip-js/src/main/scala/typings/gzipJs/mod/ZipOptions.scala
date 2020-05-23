@@ -12,11 +12,15 @@ trait ZipOptions extends js.Object {
 
 object ZipOptions {
   @scala.inline
-  def apply(level: Int | Double = null, name: String = null, timestamp: Int | Double = null): ZipOptions = {
+  def apply(
+    level: js.UndefOr[Double] = js.undefined,
+    name: String = null,
+    timestamp: js.UndefOr[Double] = js.undefined
+  ): ZipOptions = {
     val __obj = js.Dynamic.literal()
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZipOptions]
   }
 }

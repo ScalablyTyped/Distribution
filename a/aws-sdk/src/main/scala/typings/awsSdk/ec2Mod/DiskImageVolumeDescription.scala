@@ -18,10 +18,10 @@ trait DiskImageVolumeDescription extends js.Object {
 
 object DiskImageVolumeDescription {
   @scala.inline
-  def apply(Id: String = null, Size: Int | scala.Double = null): DiskImageVolumeDescription = {
+  def apply(Id: String = null, Size: js.UndefOr[Long] = js.undefined): DiskImageVolumeDescription = {
     val __obj = js.Dynamic.literal()
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Size != null) __obj.updateDynamic("Size")(Size.asInstanceOf[js.Any])
+    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiskImageVolumeDescription]
   }
 }

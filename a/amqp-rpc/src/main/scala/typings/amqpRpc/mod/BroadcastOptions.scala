@@ -17,13 +17,13 @@ object BroadcastOptions {
     context: js.Any = null,
     onComplete: js.Any = null,
     onResponse: js.Any = null,
-    ttl: Int | Double = null
+    ttl: js.UndefOr[Double] = js.undefined
   ): BroadcastOptions = {
     val __obj = js.Dynamic.literal()
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete.asInstanceOf[js.Any])
     if (onResponse != null) __obj.updateDynamic("onResponse")(onResponse.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BroadcastOptions]
   }
 }

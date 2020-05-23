@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,15 +53,5 @@ trait SVGFEColorMatrixElement
     callback: EventListenerOrEventListenerObject,
     options: EventListenerOptions
   ): Unit = js.native
-}
-
-@JSGlobal("SVGFEColorMatrixElement")
-@js.native
-object SVGFEColorMatrixElement extends Instantiable0[SVGFEColorMatrixElement] {
-  val SVG_FECOLORMATRIX_TYPE_HUEROTATE: Double = js.native
-  val SVG_FECOLORMATRIX_TYPE_LUMINANCETOALPHA: Double = js.native
-  val SVG_FECOLORMATRIX_TYPE_MATRIX: Double = js.native
-  val SVG_FECOLORMATRIX_TYPE_SATURATE: Double = js.native
-  val SVG_FECOLORMATRIX_TYPE_UNKNOWN: Double = js.native
 }
 

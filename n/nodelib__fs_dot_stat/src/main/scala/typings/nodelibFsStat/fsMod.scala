@@ -2,6 +2,9 @@ package typings.nodelibFsStat
 
 import typings.node.fsMod.PathLike
 import typings.node.fsMod.Stats
+import typings.nodelibFsStat.anon.PartialFileSystemAdapter
+import typings.nodelibFsStat.anon.Typeoflstat
+import typings.nodelibFsStat.anon.Typeofstat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

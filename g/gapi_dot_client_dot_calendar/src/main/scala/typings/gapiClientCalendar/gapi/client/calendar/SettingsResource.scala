@@ -1,30 +1,22 @@
 package typings.gapiClientCalendar.gapi.client.calendar
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientCalendar.AnonPageToken
-import typings.gapiClientCalendar.AnonSetting
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientCalendar.anon.KeyMaxResults
+import typings.gapiClientCalendar.anon.SyncToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SettingsResource extends js.Object {
   /** Returns a single user setting. */
-  def get(request: AnonSetting): Request_[Setting]
+  def get(): Request[Setting] = js.native
+  def get(request: typings.gapiClientCalendar.anon.Setting): Request[Setting] = js.native
   /** Returns all user settings for the authenticated user. */
-  def list(request: AnonPageToken): Request_[Settings]
+  def list(): Request[Settings] = js.native
+  def list(request: SyncToken): Request[Settings] = js.native
   /** Watch for changes to Settings resources. */
-  def watch(request: AnonPageToken): Request_[Channel]
-}
-
-object SettingsResource {
-  @scala.inline
-  def apply(
-    get: AnonSetting => Request_[Setting],
-    list: AnonPageToken => Request_[Settings],
-    watch: AnonPageToken => Request_[Channel]
-  ): SettingsResource = {
-    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), watch = js.Any.fromFunction1(watch))
-    __obj.asInstanceOf[SettingsResource]
-  }
+  def watch(request: KeyMaxResults): Request[Channel] = js.native
+  def watch(request: SyncToken, body: Channel): Request[Channel] = js.native
 }
 

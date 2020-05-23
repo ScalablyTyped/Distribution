@@ -17,8 +17,7 @@ trait ILayoutConfig extends js.Object {
 object ILayoutConfig {
   @scala.inline
   def apply(main: AreaConfig = null): ILayoutConfig = {
-    val __obj = js.Dynamic.literal()
-    if (main != null) __obj.updateDynamic("main")(main.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(main = main.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILayoutConfig]
   }
 }

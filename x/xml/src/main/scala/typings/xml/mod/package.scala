@@ -8,9 +8,9 @@ package object mod {
   type XmlAtom = java.lang.String | scala.Double | scala.Boolean | scala.Null
   type XmlAttrs = org.scalablytyped.runtime.StringDictionary[typings.xml.mod.XmlAtom]
   /* Rewritten from type alias, can be one of: 
-    - typings.xml.AnonAttr
-    - typings.xml.AnonCdata
-    - typings.xml.AnonAttrCdata
+    - typings.xml.anon.Attr
+    - typings.xml.anon.Cdata
+    - typings.xml.anon.AttrCdata
     - typings.xml.mod.XmlAtom
     - js.Array[typings.xml.mod.XmlAtom]
     - typings.xml.mod.XmlDescArray

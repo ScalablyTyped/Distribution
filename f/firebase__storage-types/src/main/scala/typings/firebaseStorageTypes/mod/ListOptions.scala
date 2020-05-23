@@ -11,10 +11,13 @@ trait ListOptions extends js.Object {
 
 object ListOptions {
   @scala.inline
-  def apply(maxResults: Int | Double = null, pageToken: String = null): ListOptions = {
+  def apply(
+    maxResults: js.UndefOr[Null | Double] = js.undefined,
+    pageToken: js.UndefOr[Null | String] = js.undefined
+  ): ListOptions = {
     val __obj = js.Dynamic.literal()
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageToken)) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOptions]
   }
 }

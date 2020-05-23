@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.OldHTMLDocument")
 @js.native
-class OldHTMLDocument protected () extends js.Object {
+trait OldHTMLDocument extends js.Object {
   @JSName("MSHTML.OldHTMLDocument_typekey")
   var MSHTMLDotOldHTMLDocument_typekey: OldHTMLDocument = js.native
   val Script: js.Any = js.native

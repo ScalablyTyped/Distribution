@@ -75,7 +75,7 @@ object TestScriptMetadataCapability {
     _required: Element = null,
     _validated: Element = null,
     description: String = null,
-    destination: Int | Double = null,
+    destination: js.UndefOr[integer] = js.undefined,
     extension: js.Array[Extension] = null,
     fhir_comments: js.Array[String] = null,
     id: String = null,
@@ -95,15 +95,15 @@ object TestScriptMetadataCapability {
     if (_required != null) __obj.updateDynamic("_required")(_required.asInstanceOf[js.Any])
     if (_validated != null) __obj.updateDynamic("_validated")(_validated.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    if (!js.isUndefined(destination)) __obj.updateDynamic("destination")(destination.get.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
-    if (!js.isUndefined(validated)) __obj.updateDynamic("validated")(validated.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(validated)) __obj.updateDynamic("validated")(validated.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestScriptMetadataCapability]
   }
 }

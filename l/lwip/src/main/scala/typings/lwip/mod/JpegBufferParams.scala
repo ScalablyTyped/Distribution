@@ -10,9 +10,9 @@ trait JpegBufferParams extends js.Object {
 
 object JpegBufferParams {
   @scala.inline
-  def apply(quality: Int | Double = null): JpegBufferParams = {
+  def apply(quality: js.UndefOr[Double] = js.undefined): JpegBufferParams = {
     val __obj = js.Dynamic.literal()
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JpegBufferParams]
   }
 }

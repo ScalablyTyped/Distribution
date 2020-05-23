@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable1
 import typings.std.stdNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +14,11 @@ trait CountQueuingStrategy
   def size_MCountQueuingStrategy(chunk: js.Any): `1`
 }
 
-@JSGlobal("CountQueuingStrategy")
-@js.native
-object CountQueuingStrategy extends Instantiable1[/* options */ AnonHighWaterMark, CountQueuingStrategy]
+object CountQueuingStrategy {
+  @scala.inline
+  def apply(highWaterMark: Double, size: js.Any => `1`): CountQueuingStrategy = {
+    val __obj = js.Dynamic.literal(highWaterMark = highWaterMark.asInstanceOf[js.Any], size = js.Any.fromFunction1(size))
+    __obj.asInstanceOf[CountQueuingStrategy]
+  }
+}
 

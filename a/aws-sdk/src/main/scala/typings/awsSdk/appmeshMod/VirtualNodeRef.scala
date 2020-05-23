@@ -10,6 +10,8 @@ trait VirtualNodeRef extends js.Object {
     * The full Amazon Resource Name (ARN) for the virtual node.
     */
   var arn: Arn = js.native
+  var createdAt: Timestamp = js.native
+  var lastUpdatedAt: Timestamp = js.native
   /**
     * The name of the service mesh that the virtual node resides in.
     */
@@ -21,9 +23,10 @@ trait VirtualNodeRef extends js.Object {
   var meshOwner: AccountId = js.native
   /**
     * The AWS IAM account ID of the resource owner. If the account ID is not your own, then it's
-    the ID of the mesh owner, or another account that the mesh is shared with. For more information about mesh sharing, see Working with Shared Meshes.
+    the ID of the mesh owner or of another account that the mesh is shared with. For more information about mesh sharing, see Working with Shared Meshes.
     */
   var resourceOwner: AccountId = js.native
+  var version: Long = js.native
   /**
     * The name of the virtual node.
     */
@@ -34,12 +37,15 @@ object VirtualNodeRef {
   @scala.inline
   def apply(
     arn: Arn,
+    createdAt: Timestamp,
+    lastUpdatedAt: Timestamp,
     meshName: ResourceName,
     meshOwner: AccountId,
     resourceOwner: AccountId,
+    version: Long,
     virtualNodeName: ResourceName
   ): VirtualNodeRef = {
-    val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], meshName = meshName.asInstanceOf[js.Any], meshOwner = meshOwner.asInstanceOf[js.Any], resourceOwner = resourceOwner.asInstanceOf[js.Any], virtualNodeName = virtualNodeName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], lastUpdatedAt = lastUpdatedAt.asInstanceOf[js.Any], meshName = meshName.asInstanceOf[js.Any], meshOwner = meshOwner.asInstanceOf[js.Any], resourceOwner = resourceOwner.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], virtualNodeName = virtualNodeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualNodeRef]
   }
 }

@@ -31,7 +31,7 @@ object ServiceOptions {
     projectId: String = null,
     promise: PromiseConstructor = null,
     scopes: String | js.Array[String] = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     token: String = null
   ): ServiceOptions = {
     val __obj = js.Dynamic.literal()
@@ -44,7 +44,7 @@ object ServiceOptions {
     if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
     if (promise != null) __obj.updateDynamic("promise")(promise.asInstanceOf[js.Any])
     if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceOptions]
   }

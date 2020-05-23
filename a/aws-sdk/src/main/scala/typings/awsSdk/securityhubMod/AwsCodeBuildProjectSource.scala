@@ -15,7 +15,7 @@ trait AwsCodeBuildProjectSource extends js.Object {
     */
   var InsecureSsl: js.UndefOr[Boolean] = js.native
   /**
-    * Information about the location of the source code to be built. Valid values include:   For source code settings that are specified in the source action of a pipeline in AWS CodePipeline, location should not be specified. If it is specified, AWS CodePipeline ignores it. This is because AWS CodePipeline uses the settings in a pipeline's source action instead of this value.   For source code in an AWS CodeCommit repository, the HTTPS clone URL to the repository that contains the source code and the buildspec file (for example, https://git-codecommit.region-ID.amazonaws.com/v1/repos/repo-name ).   For source code in an S3 input bucket, one of the following.   The path to the ZIP file that contains the source code (for example, bucket-name/path/to/object-name.zip).    The path to the folder that contains the source code (for example, bucket-name/path/to/source-code/folder/).     For source code in a GitHub repository, the HTTPS clone URL to the repository that contains the source and the buildspec file.   For source code in a Bitbucket repository, the HTTPS clone URL to the repository that contains the source and the buildspec file.   
+    * Information about the location of the source code to be built. Valid values include:   For source code settings that are specified in the source action of a pipeline in AWS CodePipeline, location should not be specified. If it is specified, AWS CodePipeline ignores it. This is because AWS CodePipeline uses the settings in a pipeline's source action instead of this value.   For source code in an AWS CodeCommit repository, the HTTPS clone URL to the repository that contains the source code and the build spec file (for example, https://git-codecommit.region-ID.amazonaws.com/v1/repos/repo-name ).   For source code in an S3 input bucket, one of the following.   The path to the ZIP file that contains the source code (for example, bucket-name/path/to/object-name.zip).    The path to the folder that contains the source code (for example, bucket-name/path/to/source-code/folder/).     For source code in a GitHub repository, the HTTPS clone URL to the repository that contains the source and the build spec file.   For source code in a Bitbucket repository, the HTTPS clone URL to the repository that contains the source and the build spec file.   
     */
   var Location: js.UndefOr[NonEmptyString] = js.native
   /**
@@ -27,14 +27,14 @@ trait AwsCodeBuildProjectSource extends js.Object {
 object AwsCodeBuildProjectSource {
   @scala.inline
   def apply(
-    GitCloneDepth: Int | scala.Double = null,
-    InsecureSsl: js.UndefOr[scala.Boolean] = js.undefined,
+    GitCloneDepth: js.UndefOr[Integer] = js.undefined,
+    InsecureSsl: js.UndefOr[Boolean] = js.undefined,
     Location: NonEmptyString = null,
     Type: NonEmptyString = null
   ): AwsCodeBuildProjectSource = {
     val __obj = js.Dynamic.literal()
-    if (GitCloneDepth != null) __obj.updateDynamic("GitCloneDepth")(GitCloneDepth.asInstanceOf[js.Any])
-    if (!js.isUndefined(InsecureSsl)) __obj.updateDynamic("InsecureSsl")(InsecureSsl.asInstanceOf[js.Any])
+    if (!js.isUndefined(GitCloneDepth)) __obj.updateDynamic("GitCloneDepth")(GitCloneDepth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(InsecureSsl)) __obj.updateDynamic("InsecureSsl")(InsecureSsl.get.asInstanceOf[js.Any])
     if (Location != null) __obj.updateDynamic("Location")(Location.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsCodeBuildProjectSource]

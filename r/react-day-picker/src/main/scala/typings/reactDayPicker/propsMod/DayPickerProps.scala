@@ -12,8 +12,8 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.SFC
 import typings.react.mod.TouchEvent
-import typings.reactDayPicker.AnonNextMonth
-import typings.reactDayPicker.PartialModifiers
+import typings.reactDayPicker.anon.NextMonth
+import typings.reactDayPicker.anon.PartialModifiers
 import typings.reactDayPicker.classNamesMod.ClassNames
 import typings.reactDayPicker.localeUtilsMod.LocaleUtils
 import typings.reactDayPicker.modifiersMod.DayModifiers
@@ -40,7 +40,7 @@ trait DayPickerProps extends js.Object {
   var fixedWeeks: js.UndefOr[Boolean] = js.undefined
   var fromMonth: js.UndefOr[Date] = js.undefined
   var initialMonth: js.UndefOr[Date] = js.undefined
-  var labels: js.UndefOr[AnonNextMonth] = js.undefined
+  var labels: js.UndefOr[NextMonth] = js.undefined
   var locale: js.UndefOr[String] = js.undefined
   var localeUtils: js.UndefOr[LocaleUtils] = js.undefined
   var modifiers: js.UndefOr[PartialModifiers] = js.undefined
@@ -159,11 +159,11 @@ object DayPickerProps {
     dir: String = null,
     disabledDays: Modifier | js.Array[Modifier] = null,
     enableOutsideDaysClick: js.UndefOr[Boolean] = js.undefined,
-    firstDayOfWeek: Int | Double = null,
+    firstDayOfWeek: js.UndefOr[Double] = js.undefined,
     fixedWeeks: js.UndefOr[Boolean] = js.undefined,
     fromMonth: Date = null,
     initialMonth: Date = null,
-    labels: AnonNextMonth = null,
+    labels: NextMonth = null,
     locale: String = null,
     localeUtils: LocaleUtils = null,
     modifiers: PartialModifiers = null,
@@ -171,7 +171,7 @@ object DayPickerProps {
     month: Date = null,
     months: js.Array[String] = null,
     navbarElement: ReactElement | (ComponentClass[NavbarElementProps, ComponentState]) | SFC[NavbarElementProps] = null,
-    numberOfMonths: Int | Double = null,
+    numberOfMonths: js.UndefOr[Double] = js.undefined,
     onBlur: /* e */ FocusEvent[HTMLDivElement] => Unit = null,
     onCaptionClick: (/* month */ Date, /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent]) => Unit = null,
     onDayClick: (/* day */ Date, /* modifiers */ DayModifiers, /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent]) => Unit = null,
@@ -195,7 +195,7 @@ object DayPickerProps {
     showOutsideDays: js.UndefOr[Boolean] = js.undefined,
     showWeekDays: js.UndefOr[Boolean] = js.undefined,
     showWeekNumbers: js.UndefOr[Boolean] = js.undefined,
-    tabIndex: Int | Double = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
     toMonth: Date = null,
     todayButton: String = null,
     weekdayElement: ReactElement | (ComponentClass[WeekdayElementProps, ComponentState]) | SFC[WeekdayElementProps] = null,
@@ -203,16 +203,16 @@ object DayPickerProps {
     weekdaysShort: js.Array[String] = null
   ): DayPickerProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canChangeMonth)) __obj.updateDynamic("canChangeMonth")(canChangeMonth.asInstanceOf[js.Any])
+    if (!js.isUndefined(canChangeMonth)) __obj.updateDynamic("canChangeMonth")(canChangeMonth.get.asInstanceOf[js.Any])
     if (captionElement != null) __obj.updateDynamic("captionElement")(captionElement.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (classNames != null) __obj.updateDynamic("classNames")(classNames.asInstanceOf[js.Any])
     if (containerProps != null) __obj.updateDynamic("containerProps")(containerProps.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (disabledDays != null) __obj.updateDynamic("disabledDays")(disabledDays.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableOutsideDaysClick)) __obj.updateDynamic("enableOutsideDaysClick")(enableOutsideDaysClick.asInstanceOf[js.Any])
-    if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedWeeks)) __obj.updateDynamic("fixedWeeks")(fixedWeeks.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableOutsideDaysClick)) __obj.updateDynamic("enableOutsideDaysClick")(enableOutsideDaysClick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstDayOfWeek)) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedWeeks)) __obj.updateDynamic("fixedWeeks")(fixedWeeks.get.asInstanceOf[js.Any])
     if (fromMonth != null) __obj.updateDynamic("fromMonth")(fromMonth.asInstanceOf[js.Any])
     if (initialMonth != null) __obj.updateDynamic("initialMonth")(initialMonth.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
@@ -223,7 +223,7 @@ object DayPickerProps {
     if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
     if (months != null) __obj.updateDynamic("months")(months.asInstanceOf[js.Any])
     if (navbarElement != null) __obj.updateDynamic("navbarElement")(navbarElement.asInstanceOf[js.Any])
-    if (numberOfMonths != null) __obj.updateDynamic("numberOfMonths")(numberOfMonths.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfMonths)) __obj.updateDynamic("numberOfMonths")(numberOfMonths.get.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onCaptionClick != null) __obj.updateDynamic("onCaptionClick")(js.Any.fromFunction2(onCaptionClick))
     if (onDayClick != null) __obj.updateDynamic("onDayClick")(js.Any.fromFunction3(onDayClick))
@@ -239,15 +239,15 @@ object DayPickerProps {
     if (onMonthChange != null) __obj.updateDynamic("onMonthChange")(js.Any.fromFunction1(onMonthChange))
     if (onTodayButtonClick != null) __obj.updateDynamic("onTodayButtonClick")(js.Any.fromFunction3(onTodayButtonClick))
     if (onWeekClick != null) __obj.updateDynamic("onWeekClick")(js.Any.fromFunction3(onWeekClick))
-    if (!js.isUndefined(pagedNavigation)) __obj.updateDynamic("pagedNavigation")(pagedNavigation.asInstanceOf[js.Any])
+    if (!js.isUndefined(pagedNavigation)) __obj.updateDynamic("pagedNavigation")(pagedNavigation.get.asInstanceOf[js.Any])
     if (renderDay != null) __obj.updateDynamic("renderDay")(js.Any.fromFunction2(renderDay))
     if (renderWeek != null) __obj.updateDynamic("renderWeek")(js.Any.fromFunction3(renderWeek))
-    if (!js.isUndefined(reverseMonths)) __obj.updateDynamic("reverseMonths")(reverseMonths.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverseMonths)) __obj.updateDynamic("reverseMonths")(reverseMonths.get.asInstanceOf[js.Any])
     if (selectedDays != null) __obj.updateDynamic("selectedDays")(selectedDays.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOutsideDays)) __obj.updateDynamic("showOutsideDays")(showOutsideDays.asInstanceOf[js.Any])
-    if (!js.isUndefined(showWeekDays)) __obj.updateDynamic("showWeekDays")(showWeekDays.asInstanceOf[js.Any])
-    if (!js.isUndefined(showWeekNumbers)) __obj.updateDynamic("showWeekNumbers")(showWeekNumbers.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOutsideDays)) __obj.updateDynamic("showOutsideDays")(showOutsideDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showWeekDays)) __obj.updateDynamic("showWeekDays")(showWeekDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showWeekNumbers)) __obj.updateDynamic("showWeekNumbers")(showWeekNumbers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     if (toMonth != null) __obj.updateDynamic("toMonth")(toMonth.asInstanceOf[js.Any])
     if (todayButton != null) __obj.updateDynamic("todayButton")(todayButton.asInstanceOf[js.Any])
     if (weekdayElement != null) __obj.updateDynamic("weekdayElement")(weekdayElement.asInstanceOf[js.Any])

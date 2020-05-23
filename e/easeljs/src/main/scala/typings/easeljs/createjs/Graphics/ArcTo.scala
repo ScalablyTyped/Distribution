@@ -1,0 +1,23 @@
+package typings.easeljs.createjs.Graphics
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ArcTo extends js.Object {
+  var radius: Double
+  // properties
+  var x1: Double
+  var x2: Double
+  var y1: Double
+  var y2: Double
+}
+
+object ArcTo {
+  @scala.inline
+  def apply(radius: Double, x1: Double, x2: Double, y1: Double, y2: Double): ArcTo = {
+    val __obj = js.Dynamic.literal(radius = radius.asInstanceOf[js.Any], x1 = x1.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y1 = y1.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ArcTo]
+  }
+}
+

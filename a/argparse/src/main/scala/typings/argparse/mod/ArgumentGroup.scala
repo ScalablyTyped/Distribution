@@ -1,6 +1,6 @@
 package typings.argparse.mod
 
-import typings.argparse.AnonRequired
+import typings.argparse.anon.Required
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ class ArgumentGroup () extends js.Object {
   def addArgumentGroup(): ArgumentGroup = js.native
   def addArgumentGroup(options: ArgumentGroupOptions): ArgumentGroup = js.native
   def addMutuallyExclusiveGroup(): ArgumentGroup = js.native
-  def addMutuallyExclusiveGroup(options: AnonRequired): ArgumentGroup = js.native
+  def addMutuallyExclusiveGroup(options: Required): ArgumentGroup = js.native
   def getDefault(dest: String): js.Any = js.native
   def setDefaults(): Unit = js.native
   def setDefaults(options: js.Object): Unit = js.native

@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * expects the end of the stream.
-	 */
+  * expects the end of the stream.
+  */
 @JSImport("parsimmon", "eof")
 @js.native
 object eof

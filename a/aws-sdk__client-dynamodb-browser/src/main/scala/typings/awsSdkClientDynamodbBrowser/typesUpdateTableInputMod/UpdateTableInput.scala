@@ -67,7 +67,7 @@ object UpdateTableInput {
     TableName: String,
     $abortSignal: AbortSignal = null,
     $httpOptions: BrowserHttpOptions = null,
-    $maxRetries: Int | Double = null,
+    $maxRetries: js.UndefOr[Double] = js.undefined,
     AttributeDefinitions: js.Array[AttributeDefinition] | Iterable[AttributeDefinition] = null,
     GlobalSecondaryIndexUpdates: js.Array[GlobalSecondaryIndexUpdate] | Iterable[GlobalSecondaryIndexUpdate] = null,
     ProvisionedThroughput: ProvisionedThroughput = null,
@@ -77,7 +77,7 @@ object UpdateTableInput {
     val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
     if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
     if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
-    if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined($maxRetries)) __obj.updateDynamic("$maxRetries")($maxRetries.get.asInstanceOf[js.Any])
     if (AttributeDefinitions != null) __obj.updateDynamic("AttributeDefinitions")(AttributeDefinitions.asInstanceOf[js.Any])
     if (GlobalSecondaryIndexUpdates != null) __obj.updateDynamic("GlobalSecondaryIndexUpdates")(GlobalSecondaryIndexUpdates.asInstanceOf[js.Any])
     if (ProvisionedThroughput != null) __obj.updateDynamic("ProvisionedThroughput")(ProvisionedThroughput.asInstanceOf[js.Any])

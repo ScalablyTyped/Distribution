@@ -1,7 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Geolocation
 
-import typings.std.Date
-import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.TypedEventHandler
@@ -13,10 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides access to the current geographic location. */
-@JSGlobal("Windows.Devices.Geolocation.Geolocator")
 @js.native
-/** Initializes a new Geolocator object. */
-class Geolocator () extends js.Object {
+trait Geolocator extends js.Object {
   /** The accuracy level at which the Geolocator provides location updates. */
   var desiredAccuracy: PositionAccuracy = js.native
   /** Gets or sets the desired accuracy in meters for data returned from the location service. */
@@ -59,29 +55,5 @@ class Geolocator () extends js.Object {
   def removeEventListener_positionchanged(`type`: positionchanged, listener: TypedEventHandler[Geolocator, PositionChangedEventArgs]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_statuschanged(`type`: statuschanged, listener: TypedEventHandler[Geolocator, StatusChangedEventArgs]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Devices.Geolocation.Geolocator")
-@js.native
-object Geolocator extends js.Object {
-  /**
-    * Starts an asynchronous operation to retrieve the location history of the device.
-    * @param startTime Represents the beginning of the time span for which positions are to be returned.
-    * @return Positions (of type Geoposition ) that were collected during the specified time span.
-    */
-  def getGeopositionHistoryAsync(startTime: Date): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
-  /**
-    * Starts an asynchronous operation to retrieve the location history of the device.
-    * @param startTime Represents the beginning of the time span for which positions are to be returned.
-    * @param duration Represents the length of time after startTime for which positions are to be returned.
-    * @return Positions (of type Geoposition ) that were collected during the specified time span.
-    */
-  def getGeopositionHistoryAsync(startTime: Date, duration: Double): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
-  /**
-    * Requests permission to access location data.
-    * @return A GeolocationAccessStatus that indicates if permission to location data has been granted.
-    */
-  def requestAccessAsync(): IPromiseWithIAsyncOperation[GeolocationAccessStatus] = js.native
 }
 

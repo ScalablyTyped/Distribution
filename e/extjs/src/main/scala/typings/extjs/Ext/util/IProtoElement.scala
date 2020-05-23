@@ -9,31 +9,31 @@ import scala.scalajs.js.annotation._
 
 trait IProtoElement extends IBase {
   /** [Method] Adds class to the element
-  		* @param cls String One or more classnames separated with spaces.
-  		* @returns Ext.util.ProtoElement this
-  		*/
+    * @param cls String One or more classnames separated with spaces.
+    * @returns Ext.util.ProtoElement this
+    */
   var addCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], this.type]] = js.undefined
   /** [Property] (String) */
   var clsProp: js.UndefOr[String] = js.undefined
   /** [Method] Indicates that the current state of the object has been flushed to the DOM so we need to track any subsequent changes */
   var flush: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] True if the element has given class
-  		* @param cls String
-  		* @returns Boolean
-  		*/
+    * @param cls String
+    * @returns Boolean
+    */
   var hasCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], Boolean]] = js.undefined
   /** [Method] Removes class from the element
-  		* @param cls String One or more classnames separated with spaces.
-  		* @returns Ext.util.ProtoElement this
-  		*/
+    * @param cls String One or more classnames separated with spaces.
+    * @returns Ext.util.ProtoElement this
+    */
   var removeCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], this.type]] = js.undefined
   /** [Property] (String) */
   var removedProp: js.UndefOr[String] = js.undefined
   /** [Method] Adds styles to the element
-  		* @param prop String/Object The style property to be set, or an object of multiple styles.
-  		* @param value String The value to apply to the given property.
-  		* @returns Ext.util.ProtoElement this
-  		*/
+    * @param prop String/Object The style property to be set, or an object of multiple styles.
+    * @param value String The value to apply to the given property.
+    * @returns Ext.util.ProtoElement this
+    */
   var setStyle: js.UndefOr[
     js.Function2[/* prop */ js.UndefOr[js.Any], /* value */ js.UndefOr[String], this.type]
   ] = js.undefined
@@ -42,9 +42,9 @@ trait IProtoElement extends IBase {
   /** [Property] (String) */
   var styleProp: js.UndefOr[String] = js.undefined
   /** [Method] Writes style and class properties to given object
-  		* @param to Object
-  		* @returns Object to
-  		*/
+    * @param to Object
+    * @returns Object to
+    */
   var writeTo: js.UndefOr[js.Function1[/* to */ js.UndefOr[js.Any], _]] = js.undefined
 }
 
@@ -99,9 +99,9 @@ object IProtoElement {
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setStyle != null) __obj.updateDynamic("setStyle")(js.Any.fromFunction2(setStyle))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (!js.isUndefined(styleIsText)) __obj.updateDynamic("styleIsText")(styleIsText.asInstanceOf[js.Any])
+    if (!js.isUndefined(styleIsText)) __obj.updateDynamic("styleIsText")(styleIsText.get.asInstanceOf[js.Any])
     if (styleProp != null) __obj.updateDynamic("styleProp")(styleProp.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     if (writeTo != null) __obj.updateDynamic("writeTo")(js.Any.fromFunction1(writeTo))

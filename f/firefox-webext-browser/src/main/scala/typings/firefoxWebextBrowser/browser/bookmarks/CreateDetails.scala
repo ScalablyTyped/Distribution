@@ -18,14 +18,14 @@ trait CreateDetails extends js.Object {
 object CreateDetails {
   @scala.inline
   def apply(
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     parentId: String = null,
     title: String = null,
     `type`: BookmarkTreeNodeType = null,
     url: String = null
   ): CreateDetails = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

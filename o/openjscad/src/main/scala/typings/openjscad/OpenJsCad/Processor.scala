@@ -1,16 +1,11 @@
 package typings.openjscad.OpenJsCad
 
-import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("OpenJsCad.Processor")
 @js.native
-class Processor protected () extends js.Object {
-  def this(containerdiv: HTMLDivElement) = this()
-  def this(containerdiv: HTMLDivElement, options: ProcessorOptions) = this()
-  def this(containerdiv: HTMLDivElement, options: ProcessorOptions, onchange: EventHandler) = this()
+trait Processor extends js.Object {
   var abortbutton: js.Any = js.native
   var containerdiv: js.Any = js.native
   var controldiv: js.Any = js.native
@@ -80,14 +75,5 @@ class Processor protected () extends js.Object {
   def supportedFormatsForCurrentObject(): js.Array[String] = js.native
   def toggleDrawOption(str: js.Any): Boolean = js.native
   def updateDownloadLink(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("OpenJsCad.Processor")
-@js.native
-object Processor extends js.Object {
-  var heightDefault: js.Any = js.native
-  var widthDefault: js.Any = js.native
-  def convertToSolid(obj: js.Any): js.Any = js.native
 }
 

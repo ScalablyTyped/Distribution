@@ -27,13 +27,13 @@ trait DeleteBGPPeerRequest extends js.Object {
 object DeleteBGPPeerRequest {
   @scala.inline
   def apply(
-    asn: Int | Double = null,
+    asn: js.UndefOr[ASN] = js.undefined,
     bgpPeerId: BGPPeerId = null,
     customerAddress: CustomerAddress = null,
     virtualInterfaceId: VirtualInterfaceId = null
   ): DeleteBGPPeerRequest = {
     val __obj = js.Dynamic.literal()
-    if (asn != null) __obj.updateDynamic("asn")(asn.asInstanceOf[js.Any])
+    if (!js.isUndefined(asn)) __obj.updateDynamic("asn")(asn.get.asInstanceOf[js.Any])
     if (bgpPeerId != null) __obj.updateDynamic("bgpPeerId")(bgpPeerId.asInstanceOf[js.Any])
     if (customerAddress != null) __obj.updateDynamic("customerAddress")(customerAddress.asInstanceOf[js.Any])
     if (virtualInterfaceId != null) __obj.updateDynamic("virtualInterfaceId")(virtualInterfaceId.asInstanceOf[js.Any])

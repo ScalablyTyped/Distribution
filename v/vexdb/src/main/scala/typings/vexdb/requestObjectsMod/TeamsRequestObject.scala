@@ -29,8 +29,8 @@ object TeamsRequestObject {
     country: StringRequest = null,
     grade: StringRequest = null,
     is_registered: NumberRequest = null,
-    limit_number: Int | Double = null,
-    limit_start: Int | Double = null,
+    limit_number: js.UndefOr[Double] = js.undefined,
+    limit_start: js.UndefOr[Double] = js.undefined,
     number: StringRequest = null,
     organisation: StringRequest = null,
     program: StringRequest = null,
@@ -46,14 +46,14 @@ object TeamsRequestObject {
     if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
     if (grade != null) __obj.updateDynamic("grade")(grade.asInstanceOf[js.Any])
     if (is_registered != null) __obj.updateDynamic("is_registered")(is_registered.asInstanceOf[js.Any])
-    if (limit_number != null) __obj.updateDynamic("limit_number")(limit_number.asInstanceOf[js.Any])
-    if (limit_start != null) __obj.updateDynamic("limit_start")(limit_start.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit_number)) __obj.updateDynamic("limit_number")(limit_number.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit_start)) __obj.updateDynamic("limit_start")(limit_start.get.asInstanceOf[js.Any])
     if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
     if (organisation != null) __obj.updateDynamic("organisation")(organisation.asInstanceOf[js.Any])
     if (program != null) __obj.updateDynamic("program")(program.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (robot_name != null) __obj.updateDynamic("robot_name")(robot_name.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.asInstanceOf[js.Any])
+    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.get.asInstanceOf[js.Any])
     if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
     if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])
     if (team_name != null) __obj.updateDynamic("team_name")(team_name.asInstanceOf[js.Any])

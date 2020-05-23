@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.ArrayBuffer
 import typings.std.File
 import typings.std.RequestInit
+import typings.tensorflowTfjsCore.anon.Data
 import typings.tensorflowTfjsCore.routerRegistryMod.IORouter
 import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensor
 import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
@@ -77,10 +78,10 @@ object ioMod extends js.Object {
     */
   def copyModel(sourceURL: String, destURL: String): js.Promise[ModelArtifactsInfo] = js.native
   def decodeWeights(buffer: ArrayBuffer, specs: js.Array[WeightsManifestEntry]): NamedTensorMap = js.native
-  def encodeWeights(tensors: js.Array[NamedTensor]): js.Promise[AnonData] = js.native
-  def encodeWeights(tensors: js.Array[NamedTensor], group: WeightGroup): js.Promise[AnonData] = js.native
-  def encodeWeights(tensors: NamedTensorMap): js.Promise[AnonData] = js.native
-  def encodeWeights(tensors: NamedTensorMap, group: WeightGroup): js.Promise[AnonData] = js.native
+  def encodeWeights(tensors: js.Array[NamedTensor]): js.Promise[Data] = js.native
+  def encodeWeights(tensors: js.Array[NamedTensor], group: WeightGroup): js.Promise[Data] = js.native
+  def encodeWeights(tensors: NamedTensorMap): js.Promise[Data] = js.native
+  def encodeWeights(tensors: NamedTensorMap, group: WeightGroup): js.Promise[Data] = js.native
   def fromMemory(modelArtifacts: js.Object): IOHandler = js.native
   def fromMemory(modelArtifacts: js.Object, weightSpecs: js.Array[WeightsManifestEntry]): IOHandler = js.native
   def fromMemory(modelArtifacts: js.Object, weightSpecs: js.Array[WeightsManifestEntry], weightData: ArrayBuffer): IOHandler = js.native

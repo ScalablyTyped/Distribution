@@ -16,17 +16,17 @@ object TransformOptions {
   @scala.inline
   def apply(
     groups: js.Array[String] = null,
-    since: Int | Double = null,
+    since: js.UndefOr[Double] = js.undefined,
     toClassOnly: js.UndefOr[Boolean] = js.undefined,
     toPlainOnly: js.UndefOr[Boolean] = js.undefined,
-    until: Int | Double = null
+    until: js.UndefOr[Double] = js.undefined
   ): TransformOptions = {
     val __obj = js.Dynamic.literal()
     if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
-    if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
-    if (!js.isUndefined(toClassOnly)) __obj.updateDynamic("toClassOnly")(toClassOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(toPlainOnly)) __obj.updateDynamic("toPlainOnly")(toPlainOnly.asInstanceOf[js.Any])
-    if (until != null) __obj.updateDynamic("until")(until.asInstanceOf[js.Any])
+    if (!js.isUndefined(since)) __obj.updateDynamic("since")(since.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(toClassOnly)) __obj.updateDynamic("toClassOnly")(toClassOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(toPlainOnly)) __obj.updateDynamic("toPlainOnly")(toPlainOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(until)) __obj.updateDynamic("until")(until.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformOptions]
   }
 }

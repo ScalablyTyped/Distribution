@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object diag
   extends TopLevel[
       js.Function1[
-        /* x */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
+        /* input */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
         Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
       ]
     ]

@@ -5,22 +5,15 @@ import typings.amapJsApi.AMap.EventEmitter
 import typings.amapJsApi.AMap.Lang
 import typings.amapJsApi.AMap.LocationValue
 import typings.amapJsApi.AMap.Polygon
-import typings.amapJsApiPlaceSearch.AMap.PlaceSearch.Options
 import typings.amapJsApiPlaceSearch.AMap.PlaceSearch.SearchResult
 import typings.amapJsApiPlaceSearch.AMap.PlaceSearch.SearchStatus
-import typings.amapJsApiPlaceSearch.AnonId
+import typings.amapJsApiPlaceSearch.anon.Id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.PlaceSearch")
 @js.native
-/**
-  * 地点搜索服务
-  * @param options 选项
-  */
-class PlaceSearch_ () extends EventEmitter {
-  def this(options: Options) = this()
+trait PlaceSearch_ extends EventEmitter {
   /**
     * 清除搜索结果
     */
@@ -30,7 +23,7 @@ class PlaceSearch_ () extends EventEmitter {
     * 唤起高德地图客户端POI详情页
     * @param obj 唤起参数
     */
-  def detailOnAMAP(obj: AnonId): Unit = js.native
+  def detailOnAMAP(obj: Id): Unit = js.native
   /**
     * 根据POIID 查询POI 详细信息
     * @param POIID POIID
@@ -50,7 +43,7 @@ class PlaceSearch_ () extends EventEmitter {
     * 唤起高德地图客户端marker页
     * @param obj 唤起参数
     */
-  def poiOnAMAP(obj: AnonId): Unit = js.native
+  def poiOnAMAP(obj: Id): Unit = js.native
   /**
     * 根据关键字搜索
     * @param keyword 根据关键字搜索

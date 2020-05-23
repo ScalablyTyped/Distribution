@@ -36,8 +36,8 @@ object DeviceDetail {
     if (browser != null) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
     if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCompliant)) __obj.updateDynamic("isCompliant")(isCompliant.asInstanceOf[js.Any])
-    if (!js.isUndefined(isManaged)) __obj.updateDynamic("isManaged")(isManaged.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCompliant)) __obj.updateDynamic("isCompliant")(isCompliant.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isManaged)) __obj.updateDynamic("isManaged")(isManaged.get.asInstanceOf[js.Any])
     if (operatingSystem != null) __obj.updateDynamic("operatingSystem")(operatingSystem.asInstanceOf[js.Any])
     if (trustType != null) __obj.updateDynamic("trustType")(trustType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceDetail]

@@ -1,6 +1,6 @@
 package typings.reactNativeMaterialKit.mod
 
-import typings.reactNativeMaterialKit.AnonAmber
+import typings.reactNativeMaterialKit.anon.Amber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,7 +31,7 @@ trait MKColorStatic extends js.Object {
   var Teal: String
   var Transparent: String
   var Yellow: String
-  var default: AnonAmber
+  var default: Amber
   var palette_blue_400: String
   var palette_green_500: String
   var palette_red_500: String
@@ -66,7 +66,7 @@ object MKColorStatic {
     Teal: String,
     Transparent: String,
     Yellow: String,
-    default: AnonAmber,
+    default: Amber,
     palette_blue_400: String,
     palette_green_500: String,
     palette_red_500: String,

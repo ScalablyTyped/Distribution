@@ -1,6 +1,6 @@
 package typings.cometd.mod
 
-import typings.cometd.AnonHosts
+import typings.cometd.anon.Hosts
 import typings.cometd.cometdBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,7 +29,7 @@ object SuccessfulHandshakeMessage {
     successful: `true`,
     supportedConnectionTypes: js.Array[ConnectionType],
     version: String,
-    advice: AnonHosts = null,
+    advice: Hosts = null,
     authSuccessful: `true` = null,
     connectionType: ConnectionType = null,
     data: js.Any = null,

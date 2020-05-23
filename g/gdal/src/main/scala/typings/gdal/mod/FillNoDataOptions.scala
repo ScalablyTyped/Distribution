@@ -17,11 +17,11 @@ object FillNoDataOptions {
     searchDist: Double,
     src: RasterBand,
     mask: RasterBand = null,
-    smoothingIterations: Int | Double = null
+    smoothingIterations: js.UndefOr[Double] = js.undefined
   ): FillNoDataOptions = {
     val __obj = js.Dynamic.literal(searchDist = searchDist.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (smoothingIterations != null) __obj.updateDynamic("smoothingIterations")(smoothingIterations.asInstanceOf[js.Any])
+    if (!js.isUndefined(smoothingIterations)) __obj.updateDynamic("smoothingIterations")(smoothingIterations.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FillNoDataOptions]
   }
 }

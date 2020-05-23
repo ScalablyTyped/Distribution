@@ -15,13 +15,13 @@ object GridFSBucketOpenUploadStreamOptions {
   @scala.inline
   def apply(
     aliases: js.Array[String] = null,
-    chunkSizeBytes: Int | scala.Double = null,
+    chunkSizeBytes: js.UndefOr[scala.Double] = js.undefined,
     contentType: String = null,
     metadata: js.Object = null
   ): GridFSBucketOpenUploadStreamOptions = {
     val __obj = js.Dynamic.literal()
     if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
-    if (chunkSizeBytes != null) __obj.updateDynamic("chunkSizeBytes")(chunkSizeBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(chunkSizeBytes)) __obj.updateDynamic("chunkSizeBytes")(chunkSizeBytes.get.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridFSBucketOpenUploadStreamOptions]

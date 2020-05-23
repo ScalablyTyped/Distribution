@@ -11,6 +11,7 @@ trait LocaleSpecification
 // put in the locale object so it can be used by locale functions
 /* x */ StringDictionary[js.Any] {
   var calendar: js.UndefOr[CalendarSpec] = js.undefined
+  var eras: js.UndefOr[js.Array[EraSpec]] = js.undefined
   var invalidDate: js.UndefOr[String] = js.undefined
   var isPM: js.UndefOr[js.Function1[/* input */ String, Boolean]] = js.undefined
   var longDateFormat: js.UndefOr[LongDateFormatSpec] = js.undefined
@@ -32,10 +33,9 @@ trait LocaleSpecification
 object LocaleSpecification {
   @scala.inline
   def apply(
-    StringDictionary: // Allow anything: in general any property that is passed as locale spec is
-  // put in the locale object so it can be used by locale functions
-  /* x */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     calendar: CalendarSpec = null,
+    eras: js.Array[EraSpec] = null,
     invalidDate: String = null,
     isPM: /* input */ String => Boolean = null,
     longDateFormat: LongDateFormatSpec = null,
@@ -54,6 +54,7 @@ object LocaleSpecification {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (calendar != null) __obj.updateDynamic("calendar")(calendar.asInstanceOf[js.Any])
+    if (eras != null) __obj.updateDynamic("eras")(eras.asInstanceOf[js.Any])
     if (invalidDate != null) __obj.updateDynamic("invalidDate")(invalidDate.asInstanceOf[js.Any])
     if (isPM != null) __obj.updateDynamic("isPM")(js.Any.fromFunction1(isPM))
     if (longDateFormat != null) __obj.updateDynamic("longDateFormat")(longDateFormat.asInstanceOf[js.Any])

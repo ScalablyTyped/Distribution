@@ -12,7 +12,7 @@ object TableEditingOptions {
   @scala.inline
   def apply(allowTableNodeSelection: js.UndefOr[Boolean] = js.undefined): TableEditingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowTableNodeSelection)) __obj.updateDynamic("allowTableNodeSelection")(allowTableNodeSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowTableNodeSelection)) __obj.updateDynamic("allowTableNodeSelection")(allowTableNodeSelection.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableEditingOptions]
   }
 }

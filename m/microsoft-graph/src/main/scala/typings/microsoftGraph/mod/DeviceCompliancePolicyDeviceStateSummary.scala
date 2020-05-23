@@ -28,28 +28,28 @@ trait DeviceCompliancePolicyDeviceStateSummary extends Entity {
 object DeviceCompliancePolicyDeviceStateSummary {
   @scala.inline
   def apply(
-    compliantDeviceCount: Int | Double = null,
-    configManagerCount: Int | Double = null,
-    conflictDeviceCount: Int | Double = null,
-    errorDeviceCount: Int | Double = null,
+    compliantDeviceCount: js.UndefOr[Double] = js.undefined,
+    configManagerCount: js.UndefOr[Double] = js.undefined,
+    conflictDeviceCount: js.UndefOr[Double] = js.undefined,
+    errorDeviceCount: js.UndefOr[Double] = js.undefined,
     id: String = null,
-    inGracePeriodCount: Int | Double = null,
-    nonCompliantDeviceCount: Int | Double = null,
-    notApplicableDeviceCount: Int | Double = null,
-    remediatedDeviceCount: Int | Double = null,
-    unknownDeviceCount: Int | Double = null
+    inGracePeriodCount: js.UndefOr[Double] = js.undefined,
+    nonCompliantDeviceCount: js.UndefOr[Double] = js.undefined,
+    notApplicableDeviceCount: js.UndefOr[Double] = js.undefined,
+    remediatedDeviceCount: js.UndefOr[Double] = js.undefined,
+    unknownDeviceCount: js.UndefOr[Double] = js.undefined
   ): DeviceCompliancePolicyDeviceStateSummary = {
     val __obj = js.Dynamic.literal()
-    if (compliantDeviceCount != null) __obj.updateDynamic("compliantDeviceCount")(compliantDeviceCount.asInstanceOf[js.Any])
-    if (configManagerCount != null) __obj.updateDynamic("configManagerCount")(configManagerCount.asInstanceOf[js.Any])
-    if (conflictDeviceCount != null) __obj.updateDynamic("conflictDeviceCount")(conflictDeviceCount.asInstanceOf[js.Any])
-    if (errorDeviceCount != null) __obj.updateDynamic("errorDeviceCount")(errorDeviceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(compliantDeviceCount)) __obj.updateDynamic("compliantDeviceCount")(compliantDeviceCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(configManagerCount)) __obj.updateDynamic("configManagerCount")(configManagerCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(conflictDeviceCount)) __obj.updateDynamic("conflictDeviceCount")(conflictDeviceCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorDeviceCount)) __obj.updateDynamic("errorDeviceCount")(errorDeviceCount.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inGracePeriodCount != null) __obj.updateDynamic("inGracePeriodCount")(inGracePeriodCount.asInstanceOf[js.Any])
-    if (nonCompliantDeviceCount != null) __obj.updateDynamic("nonCompliantDeviceCount")(nonCompliantDeviceCount.asInstanceOf[js.Any])
-    if (notApplicableDeviceCount != null) __obj.updateDynamic("notApplicableDeviceCount")(notApplicableDeviceCount.asInstanceOf[js.Any])
-    if (remediatedDeviceCount != null) __obj.updateDynamic("remediatedDeviceCount")(remediatedDeviceCount.asInstanceOf[js.Any])
-    if (unknownDeviceCount != null) __obj.updateDynamic("unknownDeviceCount")(unknownDeviceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(inGracePeriodCount)) __obj.updateDynamic("inGracePeriodCount")(inGracePeriodCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nonCompliantDeviceCount)) __obj.updateDynamic("nonCompliantDeviceCount")(nonCompliantDeviceCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(notApplicableDeviceCount)) __obj.updateDynamic("notApplicableDeviceCount")(notApplicableDeviceCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(remediatedDeviceCount)) __obj.updateDynamic("remediatedDeviceCount")(remediatedDeviceCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unknownDeviceCount)) __obj.updateDynamic("unknownDeviceCount")(unknownDeviceCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceCompliancePolicyDeviceStateSummary]
   }
 }

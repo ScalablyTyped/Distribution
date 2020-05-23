@@ -1,124 +1,85 @@
 package typings.firebaseFirestore
 
-import typings.firebaseFirestore.coreViewSnapshotMod.ChangeType
-import typings.firebaseFirestore.coreViewSnapshotMod.SyncState
-import typings.firebaseFirestore.modelFieldValueMod.TypeOrder
-import typings.firebaseFirestore.modelMutationMod.MutationType
-import typings.firebaseFirestore.remoteConnectivityMonitorMod.NetworkStatus
-import typings.firebaseFirestore.remoteWatchChangeMod.WatchTargetChangeState
+import typings.firebaseFirestore.connectivityMonitorMod.NetworkStatus
+import typings.firebaseFirestore.mutationMod.MutationType
+import typings.firebaseFirestore.objectValueMod.TypeOrder
 import typings.firebaseFirestore.targetDataMod.TargetPurpose
 import typings.firebaseFirestore.typesMod.OnlineStateSource
+import typings.firebaseFirestore.userDataReaderMod.UserDataSource
+import typings.firebaseFirestore.viewSnapshotMod.ChangeType
+import typings.firebaseFirestore.viewSnapshotMod.SyncState
+import typings.firebaseFirestore.watchChangeMod.WatchTargetChangeState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object firebaseFirestoreNumbers {
   @js.native
-  sealed trait `-1` extends js.Object
-  
-  @js.native
   sealed trait `0`
     extends ChangeType
-       with typings.firebaseFirestore.viewSnapshotMod.ChangeType
        with MutationType
-       with typings.firebaseFirestore.mutationMod.MutationType
        with NetworkStatus
-       with typings.firebaseFirestore.connectivityMonitorMod.NetworkStatus
        with OnlineStateSource
-       with typings.firebaseFirestore.coreTypesMod.OnlineStateSource
        with SyncState
-       with typings.firebaseFirestore.viewSnapshotMod.SyncState
        with TargetPurpose
-       with typings.firebaseFirestore.localTargetDataMod.TargetPurpose
        with TypeOrder
-       with typings.firebaseFirestore.srcModelFieldValueMod.TypeOrder
+       with UserDataSource
        with WatchTargetChangeState
-       with typings.firebaseFirestore.watchChangeMod.WatchTargetChangeState
   
   @js.native
   sealed trait `1`
     extends ChangeType
-       with typings.firebaseFirestore.viewSnapshotMod.ChangeType
        with MutationType
-       with typings.firebaseFirestore.mutationMod.MutationType
        with NetworkStatus
-       with typings.firebaseFirestore.connectivityMonitorMod.NetworkStatus
        with OnlineStateSource
-       with typings.firebaseFirestore.coreTypesMod.OnlineStateSource
        with SyncState
-       with typings.firebaseFirestore.viewSnapshotMod.SyncState
        with TargetPurpose
-       with typings.firebaseFirestore.localTargetDataMod.TargetPurpose
        with TypeOrder
-       with typings.firebaseFirestore.srcModelFieldValueMod.TypeOrder
+       with UserDataSource
        with WatchTargetChangeState
-       with typings.firebaseFirestore.watchChangeMod.WatchTargetChangeState
   
   @js.native
-  sealed trait `10`
-    extends TypeOrder
-       with typings.firebaseFirestore.srcModelFieldValueMod.TypeOrder
+  sealed trait `10` extends TypeOrder
   
   @js.native
   sealed trait `2`
     extends ChangeType
-       with typings.firebaseFirestore.viewSnapshotMod.ChangeType
        with MutationType
-       with typings.firebaseFirestore.mutationMod.MutationType
        with TargetPurpose
-       with typings.firebaseFirestore.localTargetDataMod.TargetPurpose
        with TypeOrder
-       with typings.firebaseFirestore.srcModelFieldValueMod.TypeOrder
+       with UserDataSource
        with WatchTargetChangeState
-       with typings.firebaseFirestore.watchChangeMod.WatchTargetChangeState
   
   @js.native
   sealed trait `3`
     extends ChangeType
-       with typings.firebaseFirestore.viewSnapshotMod.ChangeType
        with MutationType
-       with typings.firebaseFirestore.mutationMod.MutationType
        with TypeOrder
-       with typings.firebaseFirestore.srcModelFieldValueMod.TypeOrder
+       with UserDataSource
        with WatchTargetChangeState
-       with typings.firebaseFirestore.watchChangeMod.WatchTargetChangeState
   
   @js.native
   sealed trait `4`
     extends MutationType
-       with typings.firebaseFirestore.mutationMod.MutationType
        with TypeOrder
-       with typings.firebaseFirestore.srcModelFieldValueMod.TypeOrder
+       with UserDataSource
        with WatchTargetChangeState
-       with typings.firebaseFirestore.watchChangeMod.WatchTargetChangeState
   
   @js.native
-  sealed trait `5`
-    extends TypeOrder
-       with typings.firebaseFirestore.srcModelFieldValueMod.TypeOrder
+  sealed trait `5` extends TypeOrder
   
   @js.native
-  sealed trait `6`
-    extends TypeOrder
-       with typings.firebaseFirestore.srcModelFieldValueMod.TypeOrder
+  sealed trait `6` extends TypeOrder
   
   @js.native
-  sealed trait `7`
-    extends TypeOrder
-       with typings.firebaseFirestore.srcModelFieldValueMod.TypeOrder
+  sealed trait `7` extends TypeOrder
   
   @js.native
-  sealed trait `8`
-    extends TypeOrder
-       with typings.firebaseFirestore.srcModelFieldValueMod.TypeOrder
+  sealed trait `8` extends TypeOrder
   
   @js.native
-  sealed trait `9`
-    extends TypeOrder
-       with typings.firebaseFirestore.srcModelFieldValueMod.TypeOrder
+  sealed trait `9` extends TypeOrder
   
-  @scala.inline
-  def `-1`: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   @scala.inline

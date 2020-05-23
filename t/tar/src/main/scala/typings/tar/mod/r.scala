@@ -11,14 +11,9 @@ object r extends js.Object {
   def apply(options: ReplaceOptions): js.Promise[Unit] = js.native
   def apply(
     options: ReplaceOptions,
-    fileList: js.UndefOr[scala.Nothing],
+    fileList: js.UndefOr[js.Array[String]],
     callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
   ): js.Promise[Unit] = js.native
   def apply(options: ReplaceOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
-  def apply(
-    options: ReplaceOptions,
-    fileList: js.Array[String],
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): js.Promise[Unit] = js.native
 }
 

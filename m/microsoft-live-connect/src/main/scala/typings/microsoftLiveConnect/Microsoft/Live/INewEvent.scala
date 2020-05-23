@@ -76,15 +76,15 @@ object INewEvent {
     end_time: js.Any = null,
     is_all_day_event: js.UndefOr[Boolean] = js.undefined,
     location: String = null,
-    reminder_time: Int | Double = null,
+    reminder_time: js.UndefOr[Double] = js.undefined,
     visibility: String = null
   ): INewEvent = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], start_time = start_time.asInstanceOf[js.Any])
     if (availability != null) __obj.updateDynamic("availability")(availability.asInstanceOf[js.Any])
     if (end_time != null) __obj.updateDynamic("end_time")(end_time.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_all_day_event)) __obj.updateDynamic("is_all_day_event")(is_all_day_event.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_all_day_event)) __obj.updateDynamic("is_all_day_event")(is_all_day_event.get.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (reminder_time != null) __obj.updateDynamic("reminder_time")(reminder_time.asInstanceOf[js.Any])
+    if (!js.isUndefined(reminder_time)) __obj.updateDynamic("reminder_time")(reminder_time.get.asInstanceOf[js.Any])
     if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[INewEvent]
   }

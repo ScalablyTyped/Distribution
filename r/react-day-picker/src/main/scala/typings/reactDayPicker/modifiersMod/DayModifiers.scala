@@ -14,14 +14,14 @@ trait DayModifiers
 object DayModifiers {
   @scala.inline
   def apply(
-    StringDictionary: /* other */ StringDictionary[js.UndefOr[Boolean]] = null,
+    StringDictionary: /* integration */ StringDictionary[js.UndefOr[Boolean]] = null,
     outside: js.UndefOr[Boolean] = js.undefined,
     today: js.UndefOr[Boolean] = js.undefined
   ): DayModifiers = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(outside)) __obj.updateDynamic("outside")(outside.asInstanceOf[js.Any])
-    if (!js.isUndefined(today)) __obj.updateDynamic("today")(today.asInstanceOf[js.Any])
+    if (!js.isUndefined(outside)) __obj.updateDynamic("outside")(outside.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(today)) __obj.updateDynamic("today")(today.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DayModifiers]
   }
 }

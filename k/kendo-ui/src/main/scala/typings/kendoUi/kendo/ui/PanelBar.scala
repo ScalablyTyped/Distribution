@@ -7,11 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.PanelBar")
 @js.native
-class PanelBar protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: PanelBarOptions) = this()
+trait PanelBar extends Widget {
   @JSName("options")
   var options_PanelBar: PanelBarOptions = js.native
   var wrapper: JQuery = js.native
@@ -80,13 +77,5 @@ class PanelBar protected () extends Widget {
   def select(element: Element): Unit = js.native
   @JSName("select")
   def select_Unit(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.PanelBar")
-@js.native
-object PanelBar extends js.Object {
-  var fn: PanelBar = js.native
-  def extend(proto: js.Object): PanelBar = js.native
 }
 

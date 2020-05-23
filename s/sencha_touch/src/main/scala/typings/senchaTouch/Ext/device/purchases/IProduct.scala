@@ -12,17 +12,17 @@ import scala.scalajs.js.annotation._
 
 trait IProduct extends IModel {
   /** [Method] Returns the value of fields
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   @JSName("getFields")
   var getFields_IProduct: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Will attempt to purchase this product
-  		* @param config Object
-  		*/
+    * @param config Object
+    */
   var purchase: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of fields
-  		* @param fields Array The new value.
-  		*/
+    * @param fields Array The new value.
+    */
   @JSName("setFields")
   var setFields_IProduct: js.UndefOr[js.Function1[/* fields */ js.UndefOr[Array], Unit]] = js.undefined
 }
@@ -166,8 +166,8 @@ object IProduct {
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (copy != null) __obj.updateDynamic("copy")(js.Any.fromFunction1(copy))
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (!js.isUndefined(dirty)) __obj.updateDynamic("dirty")(dirty.asInstanceOf[js.Any])
-    if (!js.isUndefined(editing)) __obj.updateDynamic("editing")(editing.asInstanceOf[js.Any])
+    if (!js.isUndefined(dirty)) __obj.updateDynamic("dirty")(dirty.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(editing)) __obj.updateDynamic("editing")(editing.get.asInstanceOf[js.Any])
     if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
     if (endEdit != null) __obj.updateDynamic("endEdit")(js.Any.fromFunction2(endEdit))
     if (erase != null) __obj.updateDynamic("erase")(js.Any.fromFunction2(erase))
@@ -213,7 +213,7 @@ object IProduct {
     if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5(on))
     if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4(onAfter))
     if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4(onBefore))
-    if (!js.isUndefined(phantom)) __obj.updateDynamic("phantom")(phantom.asInstanceOf[js.Any])
+    if (!js.isUndefined(phantom)) __obj.updateDynamic("phantom")(phantom.get.asInstanceOf[js.Any])
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     if (purchase != null) __obj.updateDynamic("purchase")(js.Any.fromFunction1(purchase))
@@ -245,7 +245,7 @@ object IProduct {
     if (setProxy != null) __obj.updateDynamic("setProxy")(js.Any.fromFunction1(setProxy))
     if (setUseCache != null) __obj.updateDynamic("setUseCache")(js.Any.fromFunction1(setUseCache))
     if (setValidations != null) __obj.updateDynamic("setValidations")(js.Any.fromFunction1(setValidations))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (stores != null) __obj.updateDynamic("stores")(stores.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
@@ -254,7 +254,7 @@ object IProduct {
     if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
     if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))
     if (unjoin != null) __obj.updateDynamic("unjoin")(js.Any.fromFunction1(unjoin))
-    if (!js.isUndefined(useCache)) __obj.updateDynamic("useCache")(useCache.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCache)) __obj.updateDynamic("useCache")(useCache.get.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction0(validate))
     if (validations != null) __obj.updateDynamic("validations")(validations.asInstanceOf[js.Any])

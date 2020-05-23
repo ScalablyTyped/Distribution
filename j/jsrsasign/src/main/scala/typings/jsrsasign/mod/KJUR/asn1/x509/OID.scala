@@ -1,8 +1,8 @@
 package typings.jsrsasign.mod.KJUR.asn1.x509
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jsrsasign.AnonAnyExtendedKeyUsage
-import typings.jsrsasign.AnonBusinessCategory
+import typings.jsrsasign.anon.AnyExtendedKeyUsage
+import typings.jsrsasign.anon.BusinessCategory
 import typings.jsrsasign.jsrsasign.KJUR.asn1.DERObjectIdentifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -38,9 +38,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object OID extends js.Object {
   /** for short attribute type name and oid (ex. 'C' and '2.5.4.6') */
-  val atype2oidList: AnonBusinessCategory = js.native
+  val atype2oidList: BusinessCategory = js.native
   /** for oid name and oid (ex. 'keyUsage' and '2.5.29.15') */
-  val name2oidList: AnonAnyExtendedKeyUsage = js.native
+  val name2oidList: AnyExtendedKeyUsage = js.native
   /** for caching name and DERObjectIdentifier object */
   val objCache: StringDictionary[DERObjectIdentifier] = js.native
   /**

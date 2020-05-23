@@ -1,7 +1,7 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.PartialConfig
-import typings.plotlyJs.PartialLayout
+import typings.plotlyJs.anon.PartialConfig
+import typings.plotlyJs.anon.PartialLayout
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

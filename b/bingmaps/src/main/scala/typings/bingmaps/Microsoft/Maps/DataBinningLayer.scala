@@ -4,16 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Microsoft.Maps.DataBinningLayer")
 @js.native
-/**
-  * Initializes the data binning layer.
-  * @param pushpins The array of pushpins that are used to generate the data bins.
-  * @param options The options used for calculating and rendering the data bins.
-  */
-class DataBinningLayer () extends Layer {
-  def this(pushpins: js.Array[Pushpin]) = this()
-  def this(pushpins: js.Array[Pushpin], options: IDataBinningOptions) = this()
+trait DataBinningLayer extends Layer {
   /**
     * Gets the options used for calculating and rendering the data bins.
     * @returns The options used for calculating and rendering the data bins.

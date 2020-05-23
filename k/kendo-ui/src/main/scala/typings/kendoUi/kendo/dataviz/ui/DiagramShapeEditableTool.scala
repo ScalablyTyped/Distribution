@@ -11,10 +11,10 @@ trait DiagramShapeEditableTool extends js.Object {
 
 object DiagramShapeEditableTool {
   @scala.inline
-  def apply(name: String = null, step: Int | Double = null): DiagramShapeEditableTool = {
+  def apply(name: String = null, step: js.UndefOr[Double] = js.undefined): DiagramShapeEditableTool = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramShapeEditableTool]
   }
 }

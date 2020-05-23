@@ -28,10 +28,10 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (atime != null) __obj.updateDynamic("atime")(atime.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeAfter)) __obj.updateDynamic("closeAfter")(closeAfter.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeAfter)) __obj.updateDynamic("closeAfter")(closeAfter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
     if (mtime != null) __obj.updateDynamic("mtime")(mtime.asInstanceOf[js.Any])
-    if (!js.isUndefined(nocreate)) __obj.updateDynamic("nocreate")(nocreate.asInstanceOf[js.Any])
+    if (!js.isUndefined(nocreate)) __obj.updateDynamic("nocreate")(nocreate.get.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

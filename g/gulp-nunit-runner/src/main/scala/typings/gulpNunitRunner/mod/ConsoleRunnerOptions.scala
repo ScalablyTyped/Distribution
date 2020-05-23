@@ -157,60 +157,60 @@ object ConsoleRunnerOptions {
     result: String = null,
     run: js.Array[String] = null,
     runlist: String = null,
-    seed: Int | Double = null,
+    seed: js.UndefOr[Double] = js.undefined,
     shadowcopy: js.UndefOr[Boolean] = js.undefined,
     stoponerror: js.UndefOr[Boolean] = js.undefined,
     teamcity: js.UndefOr[Boolean] = js.undefined,
     test: js.Array[String] = null,
     testist: String = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     trace: String = null,
     verbose: js.UndefOr[Boolean] = js.undefined,
     wait: js.UndefOr[Boolean] = js.undefined,
     work: String = null,
-    workers: Int | Double = null,
+    workers: js.UndefOr[Double] = js.undefined,
     x86: js.UndefOr[Boolean] = js.undefined
   ): ConsoleRunnerOptions = {
     val __obj = js.Dynamic.literal()
     if (apartment != null) __obj.updateDynamic("apartment")(apartment.asInstanceOf[js.Any])
     if (basepath != null) __obj.updateDynamic("basepath")(basepath.asInstanceOf[js.Any])
-    if (!js.isUndefined(cleanup)) __obj.updateDynamic("cleanup")(cleanup.asInstanceOf[js.Any])
+    if (!js.isUndefined(cleanup)) __obj.updateDynamic("cleanup")(cleanup.get.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (!js.isUndefined(`dispose-runners`)) __obj.updateDynamic("dispose-runners")(`dispose-runners`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`dispose-runners`)) __obj.updateDynamic("dispose-runners")(`dispose-runners`.get.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (err != null) __obj.updateDynamic("err")(err.asInstanceOf[js.Any])
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
     if (explore != null) __obj.updateDynamic("explore")(explore.asInstanceOf[js.Any])
     if (framework != null) __obj.updateDynamic("framework")(framework.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (!js.isUndefined(labels)) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (!js.isUndefined(nocolor)) __obj.updateDynamic("nocolor")(nocolor.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodots)) __obj.updateDynamic("nodots")(nodots.asInstanceOf[js.Any])
-    if (!js.isUndefined(noheader)) __obj.updateDynamic("noheader")(noheader.asInstanceOf[js.Any])
-    if (!js.isUndefined(nologo)) __obj.updateDynamic("nologo")(nologo.asInstanceOf[js.Any])
-    if (!js.isUndefined(noresult)) __obj.updateDynamic("noresult")(noresult.asInstanceOf[js.Any])
-    if (!js.isUndefined(noshadow)) __obj.updateDynamic("noshadow")(noshadow.asInstanceOf[js.Any])
-    if (!js.isUndefined(nothread)) __obj.updateDynamic("nothread")(nothread.asInstanceOf[js.Any])
+    if (!js.isUndefined(labels)) __obj.updateDynamic("labels")(labels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nocolor)) __obj.updateDynamic("nocolor")(nocolor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodots)) __obj.updateDynamic("nodots")(nodots.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noheader)) __obj.updateDynamic("noheader")(noheader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nologo)) __obj.updateDynamic("nologo")(nologo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noresult)) __obj.updateDynamic("noresult")(noresult.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noshadow)) __obj.updateDynamic("noshadow")(noshadow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nothread)) __obj.updateDynamic("nothread")(nothread.get.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
-    if (!js.isUndefined(pause)) __obj.updateDynamic("pause")(pause.asInstanceOf[js.Any])
+    if (!js.isUndefined(pause)) __obj.updateDynamic("pause")(pause.get.asInstanceOf[js.Any])
     if (privatebinpath != null) __obj.updateDynamic("privatebinpath")(privatebinpath.asInstanceOf[js.Any])
     if (process != null) __obj.updateDynamic("process")(process.asInstanceOf[js.Any])
     if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     if (run != null) __obj.updateDynamic("run")(run.asInstanceOf[js.Any])
     if (runlist != null) __obj.updateDynamic("runlist")(runlist.asInstanceOf[js.Any])
-    if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadowcopy)) __obj.updateDynamic("shadowcopy")(shadowcopy.asInstanceOf[js.Any])
-    if (!js.isUndefined(stoponerror)) __obj.updateDynamic("stoponerror")(stoponerror.asInstanceOf[js.Any])
-    if (!js.isUndefined(teamcity)) __obj.updateDynamic("teamcity")(teamcity.asInstanceOf[js.Any])
+    if (!js.isUndefined(seed)) __obj.updateDynamic("seed")(seed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadowcopy)) __obj.updateDynamic("shadowcopy")(shadowcopy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stoponerror)) __obj.updateDynamic("stoponerror")(stoponerror.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(teamcity)) __obj.updateDynamic("teamcity")(teamcity.get.asInstanceOf[js.Any])
     if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
     if (testist != null) __obj.updateDynamic("testist")(testist.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (trace != null) __obj.updateDynamic("trace")(trace.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
-    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait.get.asInstanceOf[js.Any])
     if (work != null) __obj.updateDynamic("work")(work.asInstanceOf[js.Any])
-    if (workers != null) __obj.updateDynamic("workers")(workers.asInstanceOf[js.Any])
-    if (!js.isUndefined(x86)) __obj.updateDynamic("x86")(x86.asInstanceOf[js.Any])
+    if (!js.isUndefined(workers)) __obj.updateDynamic("workers")(workers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(x86)) __obj.updateDynamic("x86")(x86.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsoleRunnerOptions]
   }
 }

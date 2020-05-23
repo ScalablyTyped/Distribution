@@ -7,19 +7,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.ColorFormat")
-@js.native
-class ColorFormat protected () extends js.Object {
-  val Application: js.Any = js.native
-  var Brightness: Double = js.native
-  val Creator: Double = js.native
-  var ObjectThemeColor: MsoThemeColorIndex = js.native
-  val Parent: js.Any = js.native
+trait ColorFormat extends js.Object {
+  val Application: js.Any
+  var Brightness: Double
+  val Creator: Double
+  var ObjectThemeColor: MsoThemeColorIndex
+  val Parent: js.Any
   @JSName("PowerPoint.ColorFormat_typekey")
-  var PowerPointDotColorFormat_typekey: ColorFormat = js.native
-  var RGB: MsoRGBType = js.native
-  var SchemeColor: PpColorSchemeIndex = js.native
-  var TintAndShade: Double = js.native
-  val Type: MsoColorType = js.native
+  var PowerPointDotColorFormat_typekey: ColorFormat
+  var RGB: MsoRGBType
+  var SchemeColor: PpColorSchemeIndex
+  var TintAndShade: Double
+  val Type: MsoColorType
+}
+
+object ColorFormat {
+  @scala.inline
+  def apply(
+    Application: js.Any,
+    Brightness: Double,
+    Creator: Double,
+    ObjectThemeColor: MsoThemeColorIndex,
+    Parent: js.Any,
+    PowerPointDotColorFormat_typekey: ColorFormat,
+    RGB: MsoRGBType,
+    SchemeColor: PpColorSchemeIndex,
+    TintAndShade: Double,
+    Type: MsoColorType
+  ): ColorFormat = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Brightness = Brightness.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], ObjectThemeColor = ObjectThemeColor.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], RGB = RGB.asInstanceOf[js.Any], SchemeColor = SchemeColor.asInstanceOf[js.Any], TintAndShade = TintAndShade.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
+    __obj.updateDynamic("PowerPoint.ColorFormat_typekey")(PowerPointDotColorFormat_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ColorFormat]
+  }
 }
 

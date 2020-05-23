@@ -1,10 +1,12 @@
 package typings.awsSdk.configMod
 
-import typings.awsSdk.ConfigurationOptionskeyst
+import org.scalablytyped.runtime.Instantiable1
+import typings.awsSdk.anon.ConfigurationOptionskeyst
 import typings.awsSdk.awsSdkBooleans.`false`
 import typings.awsSdk.awsSdkBooleans.`true`
 import typings.awsSdk.errorMod.AWSError
 import typings.std.PromiseConstructor
+import typings.std.global.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +22,19 @@ class ConfigBase () extends ConfigurationOptions {
   /**
     * Gets the promise dependency the SDK will use wherever Promises are returned.
     */
-  def getPromisesDependency(): PromiseConstructor | Unit = js.native
+  def getPromisesDependency(): (PromiseConstructor with (Instantiable1[
+    /* executor */ js.Function2[
+      /* resolve */ js.Function1[
+        /* value */ js.UndefOr[
+          (/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any) | (js.Thenable[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any])
+        ], 
+        Unit
+      ], 
+      /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
+      Unit
+    ], 
+    Promise[js.Object]
+  ])) | Unit = js.native
   /**
     * Loads configuration data from a JSON file into this config object.
     * Loading configuration willr eset all existing configuration on the object.

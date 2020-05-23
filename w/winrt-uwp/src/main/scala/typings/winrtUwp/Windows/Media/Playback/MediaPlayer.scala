@@ -25,9 +25,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides access to media playback functionality such as play, pause, fast-forward, rewind, and volume. */
-@JSGlobal("Windows.Media.Playback.MediaPlayer")
 @js.native
-abstract class MediaPlayer () extends js.Object {
+trait MediaPlayer extends js.Object {
   /** Gets or sets the type of audio that is currently being played. */
   var audioCategory: MediaPlayerAudioCategory = js.native
   /** Gets or sets a value that describes the primary usage of the device that is being used to play back audio. */

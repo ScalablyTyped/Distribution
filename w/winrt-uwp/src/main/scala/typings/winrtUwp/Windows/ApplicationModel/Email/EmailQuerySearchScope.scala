@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object EmailQuerySearchScope extends js.Object {
   /** Query the entire email message collection contained on the email server. */
   @js.native
   sealed trait server extends EmailQuerySearchScope
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EmailQuerySearchScope with Double] = js.native
-  /* 0 */ @js.native
-  object local extends TopLevel[local with Double]
-  
-  /* 1 */ @js.native
-  object server extends TopLevel[server with Double]
   
 }
 

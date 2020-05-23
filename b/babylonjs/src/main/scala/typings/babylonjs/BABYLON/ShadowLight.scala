@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.ShadowLight")
 @js.native
-abstract class ShadowLight () extends IShadowLight {
+trait ShadowLight extends IShadowLight {
   var _direction: Vector3 = js.native
   var _needProjectionMatrixCompute: js.Any = js.native
   var _position: Vector3 = js.native

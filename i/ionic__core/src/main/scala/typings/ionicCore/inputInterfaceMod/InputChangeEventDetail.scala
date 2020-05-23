@@ -10,9 +10,9 @@ trait InputChangeEventDetail extends js.Object {
 
 object InputChangeEventDetail {
   @scala.inline
-  def apply(value: String = null): InputChangeEventDetail = {
+  def apply(value: js.UndefOr[Null | String] = js.undefined): InputChangeEventDetail = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputChangeEventDetail]
   }
 }

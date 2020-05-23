@@ -6,10 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides data when content protection has been revoked. */
-@JSGlobal("Windows.Security.EnterpriseData.ProtectedContentRevokedEventArgs")
-@js.native
-abstract class ProtectedContentRevokedEventArgs () extends js.Object {
+trait ProtectedContentRevokedEventArgs extends js.Object {
   /** Contains the enterprise identities for which content protection has been revoked. */
-  var identities: IVectorView[String] = js.native
+  var identities: IVectorView[String]
+}
+
+object ProtectedContentRevokedEventArgs {
+  @scala.inline
+  def apply(identities: IVectorView[String]): ProtectedContentRevokedEventArgs = {
+    val __obj = js.Dynamic.literal(identities = identities.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ProtectedContentRevokedEventArgs]
+  }
 }
 

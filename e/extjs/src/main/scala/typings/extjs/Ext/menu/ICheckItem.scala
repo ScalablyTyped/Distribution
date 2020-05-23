@@ -24,9 +24,9 @@ trait ICheckItem extends IItem {
   /** [Config Option] (Object) */
   var scope: js.UndefOr[js.Any] = js.undefined
   /** [Method] Sets the checked state of the item
-  		* @param checked Boolean True to check, false to uncheck
-  		* @param suppressEvents Boolean True to prevent firing the checkchange events.
-  		*/
+    * @param checked Boolean True to check, false to uncheck
+    * @param suppressEvents Boolean True to prevent firing the checkchange events.
+    */
   var setChecked: js.UndefOr[
     js.Function2[/* checked */ js.UndefOr[Boolean], /* suppressEvents */ js.UndefOr[Boolean], Unit]
   ] = js.undefined
@@ -52,9 +52,9 @@ object ICheckItem {
   ): ICheckItem = {
     val __obj = js.Dynamic.literal()
     if (IItem != null) js.Dynamic.global.Object.assign(__obj, IItem)
-    if (!js.isUndefined(checkChangeDisabled)) __obj.updateDynamic("checkChangeDisabled")(checkChangeDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkChangeDisabled)) __obj.updateDynamic("checkChangeDisabled")(checkChangeDisabled.get.asInstanceOf[js.Any])
     if (checkHandler != null) __obj.updateDynamic("checkHandler")(checkHandler.asInstanceOf[js.Any])
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
     if (checkedCls != null) __obj.updateDynamic("checkedCls")(checkedCls.asInstanceOf[js.Any])
     if (disableCheckChange != null) __obj.updateDynamic("disableCheckChange")(js.Any.fromFunction0(disableCheckChange))
     if (enableCheckChange != null) __obj.updateDynamic("enableCheckChange")(js.Any.fromFunction0(enableCheckChange))

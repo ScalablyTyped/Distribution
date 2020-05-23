@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   - typings.braftEditor.braftEditorStrings.link
   - typings.braftEditor.braftEditorStrings.size
   - typings.braftEditor.braftEditorStrings.remove
-  - typings.braftEditor.AnonOnClick
+  - typings.braftEditor.anon.OnClick
 */
 trait ImageControlType extends js.Object
 

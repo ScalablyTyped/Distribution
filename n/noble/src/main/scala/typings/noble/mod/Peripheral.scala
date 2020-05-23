@@ -65,6 +65,15 @@ class Peripheral () extends EventEmitter {
   def on_rssiUpdate(event: rssiUpdate, listener: js.Function1[/* rssi */ Double, Unit]): this.type = js.native
   @JSName("on")
   def on_servicesDiscover(event: servicesDiscover, listener: js.Function1[/* services */ js.Array[Service], Unit]): this.type = js.native
+  def once(event: String, listener: js.Function): this.type = js.native
+  @JSName("once")
+  def once_connect(event: connect, listener: js.Function1[/* error */ String, Unit]): this.type = js.native
+  @JSName("once")
+  def once_disconnect(event: disconnect, listener: js.Function1[/* error */ String, Unit]): this.type = js.native
+  @JSName("once")
+  def once_rssiUpdate(event: rssiUpdate, listener: js.Function1[/* rssi */ Double, Unit]): this.type = js.native
+  @JSName("once")
+  def once_servicesDiscover(event: servicesDiscover, listener: js.Function1[/* services */ js.Array[Service], Unit]): this.type = js.native
   def readHandle(handle: Buffer, callback: js.Function2[/* error */ String, /* data */ Buffer, Unit]): Unit = js.native
   def updateRssi(): Unit = js.native
   def updateRssi(callback: js.Function2[/* error */ String, /* rssi */ Double, Unit]): Unit = js.native

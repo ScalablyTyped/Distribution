@@ -8,10 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Media.Core.MediaBinder")
 @js.native
-/** Initializes a new instance of the MediaBinder class. */
-class MediaBinder () extends js.Object {
+trait MediaBinder extends js.Object {
   /** Occurs when a media player is ready for the media content to be bound to a MediaSource . Use the handler for this to set the media content for the source by calling SetStream , SetStreamReference , or SetUri . */
   @JSName("onbinding")
   var onbinding_Original: TypedEventHandler[MediaBinder, MediaBindingEventArgs] = js.native

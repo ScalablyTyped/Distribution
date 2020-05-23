@@ -12,10 +12,10 @@ trait IEnumValueDescriptorProto extends js.Object {
 
 object IEnumValueDescriptorProto {
   @scala.inline
-  def apply(name: String = null, number: Int | Double = null, options: js.Any = null): IEnumValueDescriptorProto = {
+  def apply(name: String = null, number: js.UndefOr[Double] = js.undefined, options: js.Any = null): IEnumValueDescriptorProto = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number.get.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEnumValueDescriptorProto]
   }

@@ -36,11 +36,11 @@ class NgForOf[T, U /* <: NgIterable[T] */] protected () extends DoCheck {
     */
   /* CompleteClass */
   override def ngDoCheck(): Unit = js.native
-  def ngForOf(): js.Any = js.native
   /**
     * The value of the iterable expression, which can be used as a
     * [template input variable](guide/structural-directives#template-input-variable).
     */
+  def ngForOf(): js.Any = js.native
   def ngForOf(ngForOf: U with NgIterable[T]): js.Any = js.native
   /**
     * A reference to the template that is stamped out for each item in the iterable.

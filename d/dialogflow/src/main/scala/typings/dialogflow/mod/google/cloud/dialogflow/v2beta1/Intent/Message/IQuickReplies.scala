@@ -14,10 +14,13 @@ trait IQuickReplies extends js.Object {
 
 object IQuickReplies {
   @scala.inline
-  def apply(quickReplies: js.Array[String] = null, title: String = null): IQuickReplies = {
+  def apply(
+    quickReplies: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    title: js.UndefOr[Null | String] = js.undefined
+  ): IQuickReplies = {
     val __obj = js.Dynamic.literal()
-    if (quickReplies != null) __obj.updateDynamic("quickReplies")(quickReplies.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(quickReplies)) __obj.updateDynamic("quickReplies")(quickReplies.asInstanceOf[js.Any])
+    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IQuickReplies]
   }
 }

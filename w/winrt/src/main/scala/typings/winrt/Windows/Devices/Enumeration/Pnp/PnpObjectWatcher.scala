@@ -5,24 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Devices.Enumeration.Pnp.PnpObjectWatcher")
-@js.native
-class PnpObjectWatcher () extends IPnpObjectWatcher {
-  /* CompleteClass */
-  override var onadded: js.Any = js.native
-  /* CompleteClass */
-  override var onenumerationcompleted: js.Any = js.native
-  /* CompleteClass */
-  override var onremoved: js.Any = js.native
-  /* CompleteClass */
-  override var onstopped: js.Any = js.native
-  /* CompleteClass */
-  override var onupdated: js.Any = js.native
-  /* CompleteClass */
-  override var status: DeviceWatcherStatus = js.native
-  /* CompleteClass */
-  override def start(): Unit = js.native
-  /* CompleteClass */
-  override def stop(): Unit = js.native
+trait PnpObjectWatcher extends IPnpObjectWatcher
+
+object PnpObjectWatcher {
+  @scala.inline
+  def apply(
+    onadded: js.Any,
+    onenumerationcompleted: js.Any,
+    onremoved: js.Any,
+    onstopped: js.Any,
+    onupdated: js.Any,
+    start: () => Unit,
+    status: DeviceWatcherStatus,
+    stop: () => Unit
+  ): PnpObjectWatcher = {
+    val __obj = js.Dynamic.literal(onadded = onadded.asInstanceOf[js.Any], onenumerationcompleted = onenumerationcompleted.asInstanceOf[js.Any], onremoved = onremoved.asInstanceOf[js.Any], onstopped = onstopped.asInstanceOf[js.Any], onupdated = onupdated.asInstanceOf[js.Any], start = js.Any.fromFunction0(start), status = status.asInstanceOf[js.Any], stop = js.Any.fromFunction0(stop))
+    __obj.asInstanceOf[PnpObjectWatcher]
+  }
 }
 

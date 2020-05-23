@@ -1,6 +1,5 @@
 package typings.prosemirrorModel.mod
 
-import typings.prosemirrorModel.AnonNode
 import typings.prosemirrorModel.prosemirrorModelStrings.full
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +19,7 @@ trait ParseOptions[S /* <: Schema[_, _] */] extends js.Object {
     * that holds the document position. DOM positions that are not
     * in the parsed content will not be written to.
     */
-  var findPositions: js.UndefOr[js.Array[AnonNode] | Null] = js.undefined
+  var findPositions: js.UndefOr[js.Array[typings.prosemirrorModel.anon.Node] | Null] = js.undefined
   /**
     * The child node index to start parsing from.
     */
@@ -51,23 +50,23 @@ trait ParseOptions[S /* <: Schema[_, _] */] extends js.Object {
 
 object ParseOptions {
   @scala.inline
-  def apply[S /* <: Schema[_, _] */](
-    context: ResolvedPos[S] = null,
-    findPositions: js.Array[AnonNode] = null,
-    from: Int | Double = null,
-    preserveWhitespace: Boolean | full = null,
-    to: Int | Double = null,
-    topMatch: ContentMatch[_] = null,
-    topNode: ProsemirrorNode[S] = null
+  def apply[S](
+    context: js.UndefOr[Null | ResolvedPos[S]] = js.undefined,
+    findPositions: js.UndefOr[Null | js.Array[typings.prosemirrorModel.anon.Node]] = js.undefined,
+    from: js.UndefOr[Null | Double] = js.undefined,
+    preserveWhitespace: js.UndefOr[Null | Boolean | full] = js.undefined,
+    to: js.UndefOr[Null | Double] = js.undefined,
+    topMatch: js.UndefOr[Null | ContentMatch[_]] = js.undefined,
+    topNode: js.UndefOr[Null | ProsemirrorNode[S]] = js.undefined
   ): ParseOptions[S] = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (findPositions != null) __obj.updateDynamic("findPositions")(findPositions.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (preserveWhitespace != null) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
-    if (topMatch != null) __obj.updateDynamic("topMatch")(topMatch.asInstanceOf[js.Any])
-    if (topNode != null) __obj.updateDynamic("topNode")(topNode.asInstanceOf[js.Any])
+    if (!js.isUndefined(context)) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (!js.isUndefined(findPositions)) __obj.updateDynamic("findPositions")(findPositions.asInstanceOf[js.Any])
+    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveWhitespace)) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace.asInstanceOf[js.Any])
+    if (!js.isUndefined(to)) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (!js.isUndefined(topMatch)) __obj.updateDynamic("topMatch")(topMatch.asInstanceOf[js.Any])
+    if (!js.isUndefined(topNode)) __obj.updateDynamic("topNode")(topNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseOptions[S]]
   }
 }

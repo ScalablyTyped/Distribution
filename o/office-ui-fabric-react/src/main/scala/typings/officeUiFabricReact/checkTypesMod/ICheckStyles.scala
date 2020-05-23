@@ -28,12 +28,17 @@ trait ICheckStyles extends js.Object {
 
 object ICheckStyles {
   @scala.inline
-  def apply(check: IStyle = null, checkHost: IStyle = null, circle: IStyle = null, root: IStyle = null): ICheckStyles = {
+  def apply(
+    check: js.UndefOr[Null | IStyle] = js.undefined,
+    checkHost: js.UndefOr[Null | IStyle] = js.undefined,
+    circle: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined
+  ): ICheckStyles = {
     val __obj = js.Dynamic.literal()
-    if (check != null) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
-    if (checkHost != null) __obj.updateDynamic("checkHost")(checkHost.asInstanceOf[js.Any])
-    if (circle != null) __obj.updateDynamic("circle")(circle.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(check)) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkHost)) __obj.updateDynamic("checkHost")(checkHost.asInstanceOf[js.Any])
+    if (!js.isUndefined(circle)) __obj.updateDynamic("circle")(circle.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICheckStyles]
   }
 }

@@ -1,6 +1,6 @@
 package typings.motorHat.mod
 
-import typings.motorHat.AnonW1
+import typings.motorHat.anon.W1
 import typings.motorHat.motorHatNumbers.`16`
 import typings.motorHat.motorHatNumbers.`8`
 import typings.motorHat.motorHatStrings.double
@@ -24,7 +24,7 @@ trait StepperOptions extends js.Object {
   /**
     * Pin definition for the motor
     */
-  var pins: AnonW1
+  var pins: W1
   /**
     * Pulses per second
     */
@@ -54,25 +54,25 @@ trait StepperOptions extends js.Object {
 object StepperOptions {
   @scala.inline
   def apply(
-    pins: AnonW1,
+    pins: W1,
     pwm: js.Object,
-    current: Int | Double = null,
-    frequency: Int | Double = null,
+    current: js.UndefOr[Double] = js.undefined,
+    frequency: js.UndefOr[Double] = js.undefined,
     microsteps: `8` | `16` = null,
-    pps: Int | Double = null,
-    rpm: Int | Double = null,
-    sps: Int | Double = null,
-    steps: Int | Double = null,
+    pps: js.UndefOr[Double] = js.undefined,
+    rpm: js.UndefOr[Double] = js.undefined,
+    sps: js.UndefOr[Double] = js.undefined,
+    steps: js.UndefOr[Double] = js.undefined,
     style: single | double | interleaved | microstep = null
   ): StepperOptions = {
     val __obj = js.Dynamic.literal(pins = pins.asInstanceOf[js.Any], pwm = pwm.asInstanceOf[js.Any])
-    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
-    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
+    if (!js.isUndefined(current)) __obj.updateDynamic("current")(current.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(frequency)) __obj.updateDynamic("frequency")(frequency.get.asInstanceOf[js.Any])
     if (microsteps != null) __obj.updateDynamic("microsteps")(microsteps.asInstanceOf[js.Any])
-    if (pps != null) __obj.updateDynamic("pps")(pps.asInstanceOf[js.Any])
-    if (rpm != null) __obj.updateDynamic("rpm")(rpm.asInstanceOf[js.Any])
-    if (sps != null) __obj.updateDynamic("sps")(sps.asInstanceOf[js.Any])
-    if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
+    if (!js.isUndefined(pps)) __obj.updateDynamic("pps")(pps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rpm)) __obj.updateDynamic("rpm")(rpm.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sps)) __obj.updateDynamic("sps")(sps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(steps)) __obj.updateDynamic("steps")(steps.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepperOptions]
   }

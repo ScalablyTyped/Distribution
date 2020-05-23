@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.IAssistance")
 @js.native
-class IAssistance protected () extends js.Object {
+trait IAssistance extends js.Object {
   @JSName("Office.IAssistance_typekey")
   var OfficeDotIAssistance_typekey: IAssistance = js.native
   /** ClearDefaultContext Method */

@@ -13,10 +13,10 @@ trait IStackStyles extends js.Object {
 
 object IStackStyles {
   @scala.inline
-  def apply(inner: IStyle = null, root: IStyle = null): IStackStyles = {
+  def apply(inner: js.UndefOr[Null | IStyle] = js.undefined, root: js.UndefOr[Null | IStyle] = js.undefined): IStackStyles = {
     val __obj = js.Dynamic.literal()
-    if (inner != null) __obj.updateDynamic("inner")(inner.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(inner)) __obj.updateDynamic("inner")(inner.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStackStyles]
   }
 }

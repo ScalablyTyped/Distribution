@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.Input
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -83,62 +82,6 @@ object GestureSettings extends js.Object {
   /** Enable support for the tap gesture. */
   @js.native
   sealed trait tap extends GestureSettings
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[GestureSettings with Double] = js.native
-  /* 16 */ @js.native
-  object crossSlide extends TopLevel[crossSlide with Double]
-  
-  /* 2 */ @js.native
-  object doubleTap extends TopLevel[doubleTap with Double]
-  
-  /* 6 */ @js.native
-  object drag extends TopLevel[drag with Double]
-  
-  /* 3 */ @js.native
-  object hold extends TopLevel[hold with Double]
-  
-  /* 4 */ @js.native
-  object holdWithMouse extends TopLevel[holdWithMouse with Double]
-  
-  /* 17 */ @js.native
-  object manipulationMultipleFingerPanning extends TopLevel[manipulationMultipleFingerPanning with Double]
-  
-  /* 11 */ @js.native
-  object manipulationRotate extends TopLevel[manipulationRotate with Double]
-  
-  /* 14 */ @js.native
-  object manipulationRotateInertia extends TopLevel[manipulationRotateInertia with Double]
-  
-  /* 12 */ @js.native
-  object manipulationScale extends TopLevel[manipulationScale with Double]
-  
-  /* 15 */ @js.native
-  object manipulationScaleInertia extends TopLevel[manipulationScaleInertia with Double]
-  
-  /* 13 */ @js.native
-  object manipulationTranslateInertia extends TopLevel[manipulationTranslateInertia with Double]
-  
-  /* 9 */ @js.native
-  object manipulationTranslateRailsX extends TopLevel[manipulationTranslateRailsX with Double]
-  
-  /* 10 */ @js.native
-  object manipulationTranslateRailsY extends TopLevel[manipulationTranslateRailsY with Double]
-  
-  /* 7 */ @js.native
-  object manipulationTranslateX extends TopLevel[manipulationTranslateX with Double]
-  
-  /* 8 */ @js.native
-  object manipulationTranslateY extends TopLevel[manipulationTranslateY with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 5 */ @js.native
-  object rightTap extends TopLevel[rightTap with Double]
-  
-  /* 1 */ @js.native
-  object tap extends TopLevel[tap with Double]
   
 }
 

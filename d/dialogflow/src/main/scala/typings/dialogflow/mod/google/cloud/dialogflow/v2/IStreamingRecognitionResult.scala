@@ -27,20 +27,22 @@ trait IStreamingRecognitionResult extends js.Object {
 object IStreamingRecognitionResult {
   @scala.inline
   def apply(
-    confidence: Int | Double = null,
-    isFinal: js.UndefOr[Boolean] = js.undefined,
-    messageType: MessageType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.StreamingRecognitionResult.MessageType * / any */ String) = null,
-    speechEndOffset: IDuration = null,
-    speechWordInfo: js.Array[ISpeechWordInfo] = null,
-    transcript: String = null
+    confidence: js.UndefOr[Null | Double] = js.undefined,
+    isFinal: js.UndefOr[Null | Boolean] = js.undefined,
+    messageType: js.UndefOr[
+      Null | MessageType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.StreamingRecognitionResult.MessageType * / any */ String)
+    ] = js.undefined,
+    speechEndOffset: js.UndefOr[Null | IDuration] = js.undefined,
+    speechWordInfo: js.UndefOr[Null | js.Array[ISpeechWordInfo]] = js.undefined,
+    transcript: js.UndefOr[Null | String] = js.undefined
   ): IStreamingRecognitionResult = {
     val __obj = js.Dynamic.literal()
-    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
     if (!js.isUndefined(isFinal)) __obj.updateDynamic("isFinal")(isFinal.asInstanceOf[js.Any])
-    if (messageType != null) __obj.updateDynamic("messageType")(messageType.asInstanceOf[js.Any])
-    if (speechEndOffset != null) __obj.updateDynamic("speechEndOffset")(speechEndOffset.asInstanceOf[js.Any])
-    if (speechWordInfo != null) __obj.updateDynamic("speechWordInfo")(speechWordInfo.asInstanceOf[js.Any])
-    if (transcript != null) __obj.updateDynamic("transcript")(transcript.asInstanceOf[js.Any])
+    if (!js.isUndefined(messageType)) __obj.updateDynamic("messageType")(messageType.asInstanceOf[js.Any])
+    if (!js.isUndefined(speechEndOffset)) __obj.updateDynamic("speechEndOffset")(speechEndOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(speechWordInfo)) __obj.updateDynamic("speechWordInfo")(speechWordInfo.asInstanceOf[js.Any])
+    if (!js.isUndefined(transcript)) __obj.updateDynamic("transcript")(transcript.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStreamingRecognitionResult]
   }
 }

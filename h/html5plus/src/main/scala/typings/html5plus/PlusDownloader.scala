@@ -70,7 +70,7 @@ trait PlusDownloader extends js.Object {
   /**
     * 开始所有下载任务
     * 开始所有处于为开始调度或暂停状态的下载任务。
-    * 	若下载任务数超过可并发处理的总数，超出的任务处于调度状态（等待下载），当有任务完成时根据调度状态任务的优先级选择任务开始下载。
+    *     若下载任务数超过可并发处理的总数，超出的任务处于调度状态（等待下载），当有任务完成时根据调度状态任务的优先级选择任务开始下载。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */

@@ -76,19 +76,19 @@ object SharedDecorationOptions {
     onlyEmpty: js.UndefOr[Boolean] = js.undefined,
     onlyHead: js.UndefOr[Boolean] = js.undefined,
     onlyNonEmpty: js.UndefOr[Boolean] = js.undefined,
-    order: Int | Double = null,
+    order: js.UndefOr[Double] = js.undefined,
     position: head | tail | before | after = null,
     style: js.Object = null
   ): SharedDecorationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(avoidOverflow)) __obj.updateDynamic("avoidOverflow")(avoidOverflow.asInstanceOf[js.Any])
+    if (!js.isUndefined(avoidOverflow)) __obj.updateDynamic("avoidOverflow")(avoidOverflow.get.asInstanceOf[js.Any])
     if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
     if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (!js.isUndefined(omitEmptyLastRow)) __obj.updateDynamic("omitEmptyLastRow")(omitEmptyLastRow.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyEmpty)) __obj.updateDynamic("onlyEmpty")(onlyEmpty.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyHead)) __obj.updateDynamic("onlyHead")(onlyHead.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyNonEmpty)) __obj.updateDynamic("onlyNonEmpty")(onlyNonEmpty.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (!js.isUndefined(omitEmptyLastRow)) __obj.updateDynamic("omitEmptyLastRow")(omitEmptyLastRow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyEmpty)) __obj.updateDynamic("onlyEmpty")(onlyEmpty.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyHead)) __obj.updateDynamic("onlyHead")(onlyHead.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyNonEmpty)) __obj.updateDynamic("onlyNonEmpty")(onlyNonEmpty.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(order)) __obj.updateDynamic("order")(order.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedDecorationOptions]

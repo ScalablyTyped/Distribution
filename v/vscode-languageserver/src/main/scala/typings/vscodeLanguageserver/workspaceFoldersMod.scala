@@ -17,7 +17,7 @@ object workspaceFoldersMod extends js.Object {
   trait WorkspaceFolders extends js.Object {
     @JSName("onDidChangeWorkspaceFolders")
     var onDidChangeWorkspaceFolders_Original: Event[WorkspaceFoldersChangeEvent] = js.native
-    def getWorkspaceFolders(): Thenable[js.Array[WorkspaceFolder] | Null] = js.native
+    def getWorkspaceFolders(): js.Promise[js.Array[WorkspaceFolder] | Null] = js.native
     def onDidChangeWorkspaceFolders(listener: js.Function1[/* e */ WorkspaceFoldersChangeEvent, _]): Disposable = js.native
     def onDidChangeWorkspaceFolders(listener: js.Function1[/* e */ WorkspaceFoldersChangeEvent, _], thisArgs: js.Any): Disposable = js.native
     def onDidChangeWorkspaceFolders(

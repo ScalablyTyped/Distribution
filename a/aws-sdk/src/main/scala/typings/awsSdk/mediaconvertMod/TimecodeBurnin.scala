@@ -23,12 +23,12 @@ trait TimecodeBurnin extends js.Object {
 object TimecodeBurnin {
   @scala.inline
   def apply(
-    FontSize: Int | Double = null,
+    FontSize: js.UndefOr[integerMin10Max48] = js.undefined,
     Position: TimecodeBurninPosition = null,
     Prefix: stringPattern = null
   ): TimecodeBurnin = {
     val __obj = js.Dynamic.literal()
-    if (FontSize != null) __obj.updateDynamic("FontSize")(FontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(FontSize)) __obj.updateDynamic("FontSize")(FontSize.get.asInstanceOf[js.Any])
     if (Position != null) __obj.updateDynamic("Position")(Position.asInstanceOf[js.Any])
     if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimecodeBurnin]

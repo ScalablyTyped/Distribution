@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Sms
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -71,53 +70,6 @@ object SmsBroadcastType extends js.Object {
   /** An unknown broadcast type. */
   @js.native
   sealed trait other extends SmsBroadcastType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SmsBroadcastType with Double] = js.native
-  /* 4 */ @js.native
-  object cmasAmber extends TopLevel[cmasAmber with Double]
-  
-  /* 2 */ @js.native
-  object cmasExtreme extends TopLevel[cmasExtreme with Double]
-  
-  /* 1 */ @js.native
-  object cmasPresidential extends TopLevel[cmasPresidential with Double]
-  
-  /* 3 */ @js.native
-  object cmasSevere extends TopLevel[cmasSevere with Double]
-  
-  /* 5 */ @js.native
-  object cmasTest extends TopLevel[cmasTest with Double]
-  
-  /* 11 */ @js.native
-  object etwsEarthquake extends TopLevel[etwsEarthquake with Double]
-  
-  /* 12 */ @js.native
-  object etwsTsunami extends TopLevel[etwsTsunami with Double]
-  
-  /* 13 */ @js.native
-  object etwsTsunamiAndEarthquake extends TopLevel[etwsTsunamiAndEarthquake with Double]
-  
-  /* 6 */ @js.native
-  object euAlert1 extends TopLevel[euAlert1 with Double]
-  
-  /* 7 */ @js.native
-  object euAlert2 extends TopLevel[euAlert2 with Double]
-  
-  /* 8 */ @js.native
-  object euAlert3 extends TopLevel[euAlert3 with Double]
-  
-  /* 9 */ @js.native
-  object euAlertAmber extends TopLevel[euAlertAmber with Double]
-  
-  /* 10 */ @js.native
-  object euAlertInfo extends TopLevel[euAlertInfo with Double]
-  
-  /* 14 */ @js.native
-  object latAlertLocal extends TopLevel[latAlertLocal with Double]
-  
-  /* 0 */ @js.native
-  object other extends TopLevel[other with Double]
   
 }
 

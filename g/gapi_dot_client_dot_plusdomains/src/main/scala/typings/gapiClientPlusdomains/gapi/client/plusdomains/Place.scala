@@ -1,14 +1,14 @@
 package typings.gapiClientPlusdomains.gapi.client.plusdomains
 
-import typings.gapiClientPlusdomains.AnonFormattedString
-import typings.gapiClientPlusdomains.AnonLatitude
+import typings.gapiClientPlusdomains.anon.FormattedString
+import typings.gapiClientPlusdomains.anon.Latitude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Place extends js.Object {
   /** The physical address of the place. */
-  var address: js.UndefOr[AnonFormattedString] = js.undefined
+  var address: js.UndefOr[FormattedString] = js.undefined
   /** The display name of the place. */
   var displayName: js.UndefOr[String] = js.undefined
   /** The id of the place. */
@@ -16,17 +16,17 @@ trait Place extends js.Object {
   /** Identifies this resource as a place. Value: "plus#place". */
   var kind: js.UndefOr[String] = js.undefined
   /** The position of the place. */
-  var position: js.UndefOr[AnonLatitude] = js.undefined
+  var position: js.UndefOr[Latitude] = js.undefined
 }
 
 object Place {
   @scala.inline
   def apply(
-    address: AnonFormattedString = null,
+    address: FormattedString = null,
     displayName: String = null,
     id: String = null,
     kind: String = null,
-    position: AnonLatitude = null
+    position: Latitude = null
   ): Place = {
     val __obj = js.Dynamic.literal()
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])

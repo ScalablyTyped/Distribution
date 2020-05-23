@@ -14,8 +14,7 @@ object mod extends js.Object {
   def sizeOf(format: String): Double = js.native
   def unpack(format: String, data: Buffer): js.Array[DataType] = js.native
   def unpack(format: String, data: Buffer, checkBounds: Boolean): js.Array[DataType] = js.native
-  def unpackFrom(format: String, data: Buffer, checkBounds: js.UndefOr[scala.Nothing], position: Double): DataType = js.native
-  def unpackFrom(format: String, data: Buffer, checkBounds: Boolean, position: Double): DataType = js.native
+  def unpackFrom(format: String, data: Buffer, checkBounds: js.UndefOr[Boolean], position: Double): DataType = js.native
   type DataType = Double | Long | String | Boolean
 }
 

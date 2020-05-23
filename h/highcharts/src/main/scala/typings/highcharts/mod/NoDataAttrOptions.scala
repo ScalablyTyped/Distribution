@@ -10,9 +10,9 @@ trait NoDataAttrOptions extends js.Object {
 
 object NoDataAttrOptions {
   @scala.inline
-  def apply(zIndex: Int | Double = null): NoDataAttrOptions = {
+  def apply(zIndex: js.UndefOr[Double] = js.undefined): NoDataAttrOptions = {
     val __obj = js.Dynamic.literal()
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoDataAttrOptions]
   }
 }

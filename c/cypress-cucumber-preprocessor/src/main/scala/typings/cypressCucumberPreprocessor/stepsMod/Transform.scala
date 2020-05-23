@@ -26,9 +26,9 @@ object Transform {
   ): Transform = {
     val __obj = js.Dynamic.literal(regexp = regexp.asInstanceOf[js.Any], transformer = js.Any.fromFunction1(transformer))
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferForRegexpMatch)) __obj.updateDynamic("preferForRegexpMatch")(preferForRegexpMatch.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferForRegexpMatch)) __obj.updateDynamic("preferForRegexpMatch")(preferForRegexpMatch.get.asInstanceOf[js.Any])
     if (typeName != null) __obj.updateDynamic("typeName")(typeName.asInstanceOf[js.Any])
-    if (!js.isUndefined(useForSnippets)) __obj.updateDynamic("useForSnippets")(useForSnippets.asInstanceOf[js.Any])
+    if (!js.isUndefined(useForSnippets)) __obj.updateDynamic("useForSnippets")(useForSnippets.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transform]
   }
 }

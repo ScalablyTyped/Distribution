@@ -33,7 +33,7 @@ trait ILocalHexBlock extends js.Object {
   /**
     * Convertion for the block to JSON object
     * @returns {*}
-  	     */
+    */
   def toJSON(): js.Any = js.native
 }
 

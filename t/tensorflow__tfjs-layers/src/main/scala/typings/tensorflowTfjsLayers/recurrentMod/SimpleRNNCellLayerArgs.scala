@@ -87,11 +87,11 @@ object SimpleRNNCellLayerArgs {
     units: Double,
     activation: ActivationIdentifier = null,
     batchInputShape: Shape = null,
-    batchSize: Int | Double = null,
+    batchSize: js.UndefOr[Double] = js.undefined,
     biasConstraint: ConstraintIdentifier | Constraint = null,
     biasInitializer: InitializerIdentifier | Initializer = null,
     biasRegularizer: RegularizerIdentifier | Regularizer = null,
-    dropout: Int | Double = null,
+    dropout: js.UndefOr[Double] = js.undefined,
     dtype: DataType = null,
     inputDType: DataType = null,
     inputShape: Shape = null,
@@ -100,7 +100,7 @@ object SimpleRNNCellLayerArgs {
     kernelRegularizer: RegularizerIdentifier | Regularizer = null,
     name: String = null,
     recurrentConstraint: ConstraintIdentifier | Constraint = null,
-    recurrentDropout: Int | Double = null,
+    recurrentDropout: js.UndefOr[Double] = js.undefined,
     recurrentInitializer: InitializerIdentifier | Initializer = null,
     recurrentRegularizer: RegularizerIdentifier | Regularizer = null,
     trainable: js.UndefOr[Boolean] = js.undefined,
@@ -110,11 +110,11 @@ object SimpleRNNCellLayerArgs {
     val __obj = js.Dynamic.literal(units = units.asInstanceOf[js.Any])
     if (activation != null) __obj.updateDynamic("activation")(activation.asInstanceOf[js.Any])
     if (batchInputShape != null) __obj.updateDynamic("batchInputShape")(batchInputShape.asInstanceOf[js.Any])
-    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
     if (biasConstraint != null) __obj.updateDynamic("biasConstraint")(biasConstraint.asInstanceOf[js.Any])
     if (biasInitializer != null) __obj.updateDynamic("biasInitializer")(biasInitializer.asInstanceOf[js.Any])
     if (biasRegularizer != null) __obj.updateDynamic("biasRegularizer")(biasRegularizer.asInstanceOf[js.Any])
-    if (dropout != null) __obj.updateDynamic("dropout")(dropout.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropout)) __obj.updateDynamic("dropout")(dropout.get.asInstanceOf[js.Any])
     if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
     if (inputDType != null) __obj.updateDynamic("inputDType")(inputDType.asInstanceOf[js.Any])
     if (inputShape != null) __obj.updateDynamic("inputShape")(inputShape.asInstanceOf[js.Any])
@@ -123,11 +123,11 @@ object SimpleRNNCellLayerArgs {
     if (kernelRegularizer != null) __obj.updateDynamic("kernelRegularizer")(kernelRegularizer.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (recurrentConstraint != null) __obj.updateDynamic("recurrentConstraint")(recurrentConstraint.asInstanceOf[js.Any])
-    if (recurrentDropout != null) __obj.updateDynamic("recurrentDropout")(recurrentDropout.asInstanceOf[js.Any])
+    if (!js.isUndefined(recurrentDropout)) __obj.updateDynamic("recurrentDropout")(recurrentDropout.get.asInstanceOf[js.Any])
     if (recurrentInitializer != null) __obj.updateDynamic("recurrentInitializer")(recurrentInitializer.asInstanceOf[js.Any])
     if (recurrentRegularizer != null) __obj.updateDynamic("recurrentRegularizer")(recurrentRegularizer.asInstanceOf[js.Any])
-    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable.asInstanceOf[js.Any])
-    if (!js.isUndefined(useBias)) __obj.updateDynamic("useBias")(useBias.asInstanceOf[js.Any])
+    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useBias)) __obj.updateDynamic("useBias")(useBias.get.asInstanceOf[js.Any])
     if (weights != null) __obj.updateDynamic("weights")(weights.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleRNNCellLayerArgs]
   }

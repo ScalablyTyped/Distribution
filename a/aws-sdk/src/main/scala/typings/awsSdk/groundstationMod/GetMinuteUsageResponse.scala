@@ -31,18 +31,18 @@ trait GetMinuteUsageResponse extends js.Object {
 object GetMinuteUsageResponse {
   @scala.inline
   def apply(
-    estimatedMinutesRemaining: Int | scala.Double = null,
-    isReservedMinutesCustomer: js.UndefOr[scala.Boolean] = js.undefined,
-    totalReservedMinuteAllocation: Int | scala.Double = null,
-    totalScheduledMinutes: Int | scala.Double = null,
-    upcomingMinutesScheduled: Int | scala.Double = null
+    estimatedMinutesRemaining: js.UndefOr[Integer] = js.undefined,
+    isReservedMinutesCustomer: js.UndefOr[Boolean] = js.undefined,
+    totalReservedMinuteAllocation: js.UndefOr[Integer] = js.undefined,
+    totalScheduledMinutes: js.UndefOr[Integer] = js.undefined,
+    upcomingMinutesScheduled: js.UndefOr[Integer] = js.undefined
   ): GetMinuteUsageResponse = {
     val __obj = js.Dynamic.literal()
-    if (estimatedMinutesRemaining != null) __obj.updateDynamic("estimatedMinutesRemaining")(estimatedMinutesRemaining.asInstanceOf[js.Any])
-    if (!js.isUndefined(isReservedMinutesCustomer)) __obj.updateDynamic("isReservedMinutesCustomer")(isReservedMinutesCustomer.asInstanceOf[js.Any])
-    if (totalReservedMinuteAllocation != null) __obj.updateDynamic("totalReservedMinuteAllocation")(totalReservedMinuteAllocation.asInstanceOf[js.Any])
-    if (totalScheduledMinutes != null) __obj.updateDynamic("totalScheduledMinutes")(totalScheduledMinutes.asInstanceOf[js.Any])
-    if (upcomingMinutesScheduled != null) __obj.updateDynamic("upcomingMinutesScheduled")(upcomingMinutesScheduled.asInstanceOf[js.Any])
+    if (!js.isUndefined(estimatedMinutesRemaining)) __obj.updateDynamic("estimatedMinutesRemaining")(estimatedMinutesRemaining.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isReservedMinutesCustomer)) __obj.updateDynamic("isReservedMinutesCustomer")(isReservedMinutesCustomer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalReservedMinuteAllocation)) __obj.updateDynamic("totalReservedMinuteAllocation")(totalReservedMinuteAllocation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalScheduledMinutes)) __obj.updateDynamic("totalScheduledMinutes")(totalScheduledMinutes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(upcomingMinutesScheduled)) __obj.updateDynamic("upcomingMinutesScheduled")(upcomingMinutesScheduled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMinuteUsageResponse]
   }
 }

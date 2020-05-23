@@ -1,0 +1,18 @@
+package typings.sparkpost.anon
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Emailrfc822 extends js.Object {
+  var email_rfc822: String
+}
+
+object Emailrfc822 {
+  @scala.inline
+  def apply(email_rfc822: String): Emailrfc822 = {
+    val __obj = js.Dynamic.literal(email_rfc822 = email_rfc822.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Emailrfc822]
+  }
+}
+

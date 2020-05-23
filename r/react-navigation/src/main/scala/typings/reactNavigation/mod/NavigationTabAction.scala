@@ -39,11 +39,15 @@ object NavigationTabAction {
     __obj.asInstanceOf[NavigationTabAction]
   }
   @scala.inline
-  def NavigationBackAction(`type`: NavigationSlashBACK, immediate: js.UndefOr[Boolean] = js.undefined, key: String = null): NavigationTabAction = {
+  def NavigationBackAction(
+    `type`: NavigationSlashBACK,
+    immediate: js.UndefOr[Boolean] = js.undefined,
+    key: js.UndefOr[Null | String] = js.undefined
+  ): NavigationTabAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationTabAction]
   }
 }

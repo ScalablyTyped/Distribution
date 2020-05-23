@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +13,4 @@ trait HTMLDialogElement extends HTMLElement {
   def show(): Unit = js.native
   def showModal(): Unit = js.native
 }
-
-@JSGlobal("HTMLDialogElement")
-@js.native
-object HTMLDialogElement extends Instantiable0[HTMLDialogElement]
 

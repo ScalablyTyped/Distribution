@@ -15,12 +15,12 @@ trait IPolicyDelta extends js.Object {
 object IPolicyDelta {
   @scala.inline
   def apply(
-    auditConfigDeltas: js.Array[IAuditConfigDelta] = null,
-    bindingDeltas: js.Array[IBindingDelta] = null
+    auditConfigDeltas: js.UndefOr[Null | js.Array[IAuditConfigDelta]] = js.undefined,
+    bindingDeltas: js.UndefOr[Null | js.Array[IBindingDelta]] = js.undefined
   ): IPolicyDelta = {
     val __obj = js.Dynamic.literal()
-    if (auditConfigDeltas != null) __obj.updateDynamic("auditConfigDeltas")(auditConfigDeltas.asInstanceOf[js.Any])
-    if (bindingDeltas != null) __obj.updateDynamic("bindingDeltas")(bindingDeltas.asInstanceOf[js.Any])
+    if (!js.isUndefined(auditConfigDeltas)) __obj.updateDynamic("auditConfigDeltas")(auditConfigDeltas.asInstanceOf[js.Any])
+    if (!js.isUndefined(bindingDeltas)) __obj.updateDynamic("bindingDeltas")(bindingDeltas.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPolicyDelta]
   }
 }

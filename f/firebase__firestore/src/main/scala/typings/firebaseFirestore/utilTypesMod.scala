@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/util/types", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/util/types", JSImport.Namespace)
 @js.native
 object utilTypesMod extends js.Object {
   def isNegativeZero(value: Double): Boolean = js.native

@@ -25,11 +25,11 @@ object DataServiceOptions {
   ): DataServiceOptions = {
     val __obj = js.Dynamic.literal()
     if (adapterName != null) __obj.updateDynamic("adapterName")(adapterName.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasServerMetadata)) __obj.updateDynamic("hasServerMetadata")(hasServerMetadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasServerMetadata)) __obj.updateDynamic("hasServerMetadata")(hasServerMetadata.get.asInstanceOf[js.Any])
     if (jsonResultsAdapter != null) __obj.updateDynamic("jsonResultsAdapter")(jsonResultsAdapter.asInstanceOf[js.Any])
     if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
     if (uriBuilderName != null) __obj.updateDynamic("uriBuilderName")(uriBuilderName.asInstanceOf[js.Any])
-    if (!js.isUndefined(useJsonp)) __obj.updateDynamic("useJsonp")(useJsonp.asInstanceOf[js.Any])
+    if (!js.isUndefined(useJsonp)) __obj.updateDynamic("useJsonp")(useJsonp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataServiceOptions]
   }
 }

@@ -18,9 +18,9 @@ trait DeletePlacementGroupRequest extends js.Object {
 
 object DeletePlacementGroupRequest {
   @scala.inline
-  def apply(GroupName: PlacementGroupName, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeletePlacementGroupRequest = {
+  def apply(GroupName: PlacementGroupName, DryRun: js.UndefOr[Boolean] = js.undefined): DeletePlacementGroupRequest = {
     val __obj = js.Dynamic.literal(GroupName = GroupName.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePlacementGroupRequest]
   }
 }

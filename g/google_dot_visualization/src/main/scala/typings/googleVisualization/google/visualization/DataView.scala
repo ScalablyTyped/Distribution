@@ -1,20 +1,17 @@
 package typings.googleVisualization.google.visualization
 
-import typings.googleVisualization.AnonMax
+import typings.googleVisualization.anon.Max
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.visualization.DataView")
 @js.native
-class DataView protected () extends js.Object {
-  def this(data: DataTable) = this()
-  def this(data: DataView) = this()
+trait DataView extends js.Object {
   def getColumnId(columnIndex: Double): String = js.native
   def getColumnLabel(columnIndex: Double): String = js.native
   def getColumnPattern(columnIndex: Double): String = js.native
   def getColumnProperty(columnIndex: Double, name: String): js.Any = js.native
-  def getColumnRange(columnIndex: Double): AnonMax = js.native
+  def getColumnRange(columnIndex: Double): Max = js.native
   def getColumnType(columnIndex: Double): String = js.native
   def getDistinctValues(columnIndex: Double): js.Array[_] = js.native
   def getFilteredRows(filters: js.Array[DataTableCellFilter]): js.Array[Double] = js.native

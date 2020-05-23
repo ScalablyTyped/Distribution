@@ -4,10 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("JsGraphs.KruskalMST")
-@js.native
-class KruskalMST protected () extends js.Object {
-  def this(G: WeightedGraph) = this()
-  var mst: js.Array[Edge] = js.native
+trait KruskalMST extends js.Object {
+  var mst: js.Array[Edge]
+}
+
+object KruskalMST {
+  @scala.inline
+  def apply(mst: js.Array[Edge]): KruskalMST = {
+    val __obj = js.Dynamic.literal(mst = mst.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KruskalMST]
+  }
 }
 

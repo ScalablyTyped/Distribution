@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * 用于检测一张车辆图片的具体车型，即对于输入的一张图片（可正常解码，且长
-		 * 宽比适宜），输出图片的车辆品牌及型号、颜色及年份、位置信息。
-		 */
+  * 用于检测一张车辆图片的具体车型，即对于输入的一张图片（可正常解码，且长
+  * 宽比适宜），输出图片的车辆品牌及型号、颜色及年份、位置信息。
+  */
 trait carClassifyOptions
   extends BaseOptions[js.Any, js.Any] {
    // 图像资源地址
@@ -29,14 +29,14 @@ object carClassifyOptions {
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
     success: /* res */ carClassifyResponse => Unit = null,
-    top_num: Int | Double = null
+    top_num: js.UndefOr[Double] = js.undefined
   ): carClassifyOptions = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
     if (color_result != null) __obj.updateDynamic("color_result")(color_result.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
-    if (top_num != null) __obj.updateDynamic("top_num")(top_num.asInstanceOf[js.Any])
+    if (!js.isUndefined(top_num)) __obj.updateDynamic("top_num")(top_num.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[carClassifyOptions]
   }
 }

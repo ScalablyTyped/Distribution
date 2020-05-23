@@ -42,7 +42,7 @@ object SigningPlatform {
   def apply(
     category: Category = null,
     displayName: String = null,
-    maxSizeInMB: Int | Double = null,
+    maxSizeInMB: js.UndefOr[MaxSizeInMB] = js.undefined,
     partner: String = null,
     platformId: String = null,
     signingConfiguration: SigningConfiguration = null,
@@ -52,7 +52,7 @@ object SigningPlatform {
     val __obj = js.Dynamic.literal()
     if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (maxSizeInMB != null) __obj.updateDynamic("maxSizeInMB")(maxSizeInMB.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSizeInMB)) __obj.updateDynamic("maxSizeInMB")(maxSizeInMB.get.asInstanceOf[js.Any])
     if (partner != null) __obj.updateDynamic("partner")(partner.asInstanceOf[js.Any])
     if (platformId != null) __obj.updateDynamic("platformId")(platformId.asInstanceOf[js.Any])
     if (signingConfiguration != null) __obj.updateDynamic("signingConfiguration")(signingConfiguration.asInstanceOf[js.Any])

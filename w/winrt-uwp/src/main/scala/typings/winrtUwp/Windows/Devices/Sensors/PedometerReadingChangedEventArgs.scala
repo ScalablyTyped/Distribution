@@ -5,10 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides data for the pedometer reading–changed event. */
-@JSGlobal("Windows.Devices.Sensors.PedometerReadingChangedEventArgs")
-@js.native
-abstract class PedometerReadingChangedEventArgs () extends js.Object {
+trait PedometerReadingChangedEventArgs extends js.Object {
   /** Gets the most recent pedometer reading. */
-  var reading: PedometerReading = js.native
+  var reading: PedometerReading
+}
+
+object PedometerReadingChangedEventArgs {
+  @scala.inline
+  def apply(reading: PedometerReading): PedometerReadingChangedEventArgs = {
+    val __obj = js.Dynamic.literal(reading = reading.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PedometerReadingChangedEventArgs]
+  }
 }
 

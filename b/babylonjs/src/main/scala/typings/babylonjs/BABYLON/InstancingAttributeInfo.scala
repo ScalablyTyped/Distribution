@@ -45,16 +45,16 @@ object InstancingAttributeInfo {
     attributeName: String,
     attributeSize: Double,
     offset: Double,
-    attributeType: Int | Double = null,
-    divisor: Int | Double = null,
-    index: Int | Double = null,
+    attributeType: js.UndefOr[Double] = js.undefined,
+    divisor: js.UndefOr[Double] = js.undefined,
+    index: js.UndefOr[Double] = js.undefined,
     normalized: js.UndefOr[Boolean] = js.undefined
   ): InstancingAttributeInfo = {
     val __obj = js.Dynamic.literal(attributeName = attributeName.asInstanceOf[js.Any], attributeSize = attributeSize.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
-    if (attributeType != null) __obj.updateDynamic("attributeType")(attributeType.asInstanceOf[js.Any])
-    if (divisor != null) __obj.updateDynamic("divisor")(divisor.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(normalized)) __obj.updateDynamic("normalized")(normalized.asInstanceOf[js.Any])
+    if (!js.isUndefined(attributeType)) __obj.updateDynamic("attributeType")(attributeType.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(divisor)) __obj.updateDynamic("divisor")(divisor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(normalized)) __obj.updateDynamic("normalized")(normalized.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstancingAttributeInfo]
   }
 }

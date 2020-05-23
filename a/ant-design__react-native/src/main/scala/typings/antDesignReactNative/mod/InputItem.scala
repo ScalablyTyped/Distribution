@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.mod
 
-import typings.antDesignReactNative.AnonClear
+import typings.antDesignReactNative.anon.Clear
 import typings.antDesignReactNative.inputItemMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,6 @@ class InputItem () extends default
 @JSImport("@ant-design/react-native", "InputItem")
 @js.native
 object InputItem extends js.Object {
-  var defaultProps: AnonClear = js.native
+  var defaultProps: Clear = js.native
 }
 

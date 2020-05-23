@@ -17,9 +17,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapDateEdit")
 @js.native
-class BootstrapDateEdit () extends BootstrapClientEdit {
+trait BootstrapDateEdit extends BootstrapClientEdit {
   def adjustDropDownWindow(): Unit = js.native
   def getButtonVisible(number: Double): Boolean = js.native
   def getCalendar(): BootstrapCalendar | Null = js.native

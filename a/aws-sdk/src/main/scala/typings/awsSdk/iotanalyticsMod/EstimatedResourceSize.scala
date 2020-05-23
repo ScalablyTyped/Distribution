@@ -18,10 +18,10 @@ trait EstimatedResourceSize extends js.Object {
 
 object EstimatedResourceSize {
   @scala.inline
-  def apply(estimatedOn: Timestamp = null, estimatedSizeInBytes: Int | Double = null): EstimatedResourceSize = {
+  def apply(estimatedOn: Timestamp = null, estimatedSizeInBytes: js.UndefOr[SizeInBytes] = js.undefined): EstimatedResourceSize = {
     val __obj = js.Dynamic.literal()
     if (estimatedOn != null) __obj.updateDynamic("estimatedOn")(estimatedOn.asInstanceOf[js.Any])
-    if (estimatedSizeInBytes != null) __obj.updateDynamic("estimatedSizeInBytes")(estimatedSizeInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(estimatedSizeInBytes)) __obj.updateDynamic("estimatedSizeInBytes")(estimatedSizeInBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EstimatedResourceSize]
   }
 }

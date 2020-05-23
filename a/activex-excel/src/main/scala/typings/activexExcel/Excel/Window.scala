@@ -8,9 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.Window")
 @js.native
-class Window protected () extends js.Object {
+trait Window extends js.Object {
   @JSName("ActiveCell")
   val ActiveCell_Original: Range = js.native
   val ActiveChart: Chart = js.native

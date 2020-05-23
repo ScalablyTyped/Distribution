@@ -54,9 +54,9 @@ object SignOptions {
     streaming: web | node | `false` = null
   ): SignOptions = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], privateKeys = privateKeys.asInstanceOf[js.Any])
-    if (!js.isUndefined(armor)) __obj.updateDynamic("armor")(armor.asInstanceOf[js.Any])
+    if (!js.isUndefined(armor)) __obj.updateDynamic("armor")(armor.get.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached.asInstanceOf[js.Any])
+    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached.get.asInstanceOf[js.Any])
     if (fromUserIds != null) __obj.updateDynamic("fromUserIds")(fromUserIds.asInstanceOf[js.Any])
     if (streaming != null) __obj.updateDynamic("streaming")(streaming.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignOptions]

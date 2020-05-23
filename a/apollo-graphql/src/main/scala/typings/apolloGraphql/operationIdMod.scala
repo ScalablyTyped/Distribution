@@ -1,5 +1,6 @@
 package typings.apolloGraphql
 
+import typings.apolloGraphql.anon.PreserveStringAndNumericLiterals
 import typings.graphql.astMod.DocumentNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,6 +13,6 @@ object operationIdMod extends js.Object {
   def defaultOperationRegistrySignature(ast: DocumentNode, operationName: String): String = js.native
   def operationHash(operation: String): String = js.native
   def operationRegistrySignature(ast: DocumentNode, operationName: String): String = js.native
-  def operationRegistrySignature(ast: DocumentNode, operationName: String, options: AnonPreserveStringAndNumericLiterals): String = js.native
+  def operationRegistrySignature(ast: DocumentNode, operationName: String, options: PreserveStringAndNumericLiterals): String = js.native
 }
 

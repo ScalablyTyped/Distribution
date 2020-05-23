@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.NLerpBlock")
 @js.native
-class NLerpBlock protected () extends NodeMaterialBlock {
-  /**
-    * Creates a new NLerpBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait NLerpBlock extends NodeMaterialBlock {
   /**
     * Gets the gradient operand input component
     */

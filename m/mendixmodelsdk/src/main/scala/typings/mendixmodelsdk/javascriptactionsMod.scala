@@ -60,7 +60,8 @@ object javascriptactionsMod extends js.Object {
       * In version 8.0.0: removed experimental
       * In version 7.21.0: introduced
       */
-    /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+    /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+    - typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
     - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
     - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
     - typings.mendixmodelsdk.unitsMod.IAbstractUnit because Already inherited
@@ -88,7 +89,8 @@ object javascriptactionsMod extends js.Object {
       * In version 8.0.0: removed experimental
       * In version 7.21.0: introduced
       */
-    /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+    /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+    - typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
     - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
     - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
     - typings.mendixmodelsdk.elementsMod.IByNameReferrable because Already inherited
@@ -113,7 +115,8 @@ object javascriptactionsMod extends js.Object {
     /**
       * In version 8.4.0: introduced
       */
-    /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+    /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+    - typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
     - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
     - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
     - typings.mendixmodelsdk.elementsMod.IElement because Already inherited

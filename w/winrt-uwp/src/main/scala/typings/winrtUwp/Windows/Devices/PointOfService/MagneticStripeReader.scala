@@ -12,9 +12,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the magnetic stripe reader device. */
-@JSGlobal("Windows.Devices.PointOfService.MagneticStripeReader")
 @js.native
-abstract class MagneticStripeReader () extends js.Object {
+trait MagneticStripeReader extends js.Object {
   /** Gets the capabilities of the magnetic stripe reader. */
   var capabilities: MagneticStripeReaderCapabilities = js.native
   /** Device authentication protocol supported by the magnetic stripe reader. */
@@ -62,27 +61,5 @@ abstract class MagneticStripeReader () extends js.Object {
     * @return IBuffer representing the requested statistics.
     */
   def retrieveStatisticsAsync(statisticsCategories: IIterable[String]): IPromiseWithIAsyncOperation[IBuffer] = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Devices.PointOfService.MagneticStripeReader")
-@js.native
-object MagneticStripeReader extends js.Object {
-  /**
-    * Creates a MagneticStripeReader object from DeviceInformation.Id .
-    * @param deviceId The DeviceInformation.Id that identifies a specific magnetic stripe reader, which can be retrieved from the DeviceId property.
-    * @return The magnetic stripe reader specified by the unique device identifier. Returns a null object in the following cases:
-    */
-  def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[MagneticStripeReader] = js.native
-  /**
-    * Returns the first magnetic stripe reader found.
-    * @return The first magnetic stripe reader found. Returns a null object in the following cases:
-    */
-  def getDefaultAsync(): IPromiseWithIAsyncOperation[MagneticStripeReader] = js.native
-  /**
-    * Returns an Advanced Query Syntax (AQS) string that is used to enumerate available magnetic stripe readers.
-    * @return An Advanced Query Syntax (AQS) string that is used to enumerate available magnetic stripe readers.
-    */
-  def getDeviceSelector(): String = js.native
 }
 

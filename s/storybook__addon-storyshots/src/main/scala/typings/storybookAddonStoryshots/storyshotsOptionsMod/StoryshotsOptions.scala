@@ -61,7 +61,7 @@ object StoryshotsOptions {
     test: (/* story */ js.Any, /* context */ js.Any, /* renderTree */ RenderTree, /* options */ js.UndefOr[js.Any]) => _ = null
   ): StoryshotsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(asyncJest)) __obj.updateDynamic("asyncJest")(asyncJest.asInstanceOf[js.Any])
+    if (!js.isUndefined(asyncJest)) __obj.updateDynamic("asyncJest")(asyncJest.get.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(js.Any.fromFunction1(config))
     if (configPath != null) __obj.updateDynamic("configPath")(configPath.asInstanceOf[js.Any])
     if (framework != null) __obj.updateDynamic("framework")(framework.asInstanceOf[js.Any])

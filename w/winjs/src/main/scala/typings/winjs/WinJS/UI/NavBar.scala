@@ -1,6 +1,6 @@
 package typings.winjs.WinJS.UI
 
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,18 +9,8 @@ import scala.scalajs.js.annotation._
 /**
   * Displays NavBarCommands in an overlayed navigation pane that opens and closes at the top or bottom of the main view.
   **/
-@JSGlobal("WinJS.UI.NavBar")
 @js.native
-//#region Constructors
-/**
-  * Creates a new NavBar.
-  * @constructor
-  * @param element The DOM element that will host the new NavBar.
-  * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-  **/
-class NavBar () extends js.Object {
-  def this(element: HTMLElement) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+trait NavBar extends js.Object {
   //#endregion Methods
   //#region Properties
   /**
@@ -91,27 +81,27 @@ class NavBar () extends js.Object {
     * Occurs immediately after the NavBar is closed.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onafterclose(eventInfo: Event_): Unit = js.native
+  def onafterclose(eventInfo: Event): Unit = js.native
   /**
     * Raised after the NavBar is opened.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onafteropen(eventInfo: Event_): Unit = js.native
+  def onafteropen(eventInfo: Event): Unit = js.native
   /**
     * Raised just before the NavBar is closed.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onbeforeclose(eventInfo: Event_): Unit = js.native
+  def onbeforeclose(eventInfo: Event): Unit = js.native
   /**
     * Occurs before a closed NavBar is opened.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onbeforeopen(eventInfo: Event_): Unit = js.native
+  def onbeforeopen(eventInfo: Event): Unit = js.native
   /**
     * Occurs after the NavBar has finished processing its child elements.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onchildrenprocessed(eventInfo: Event_): Unit = js.native
+  def onchildrenprocessed(eventInfo: Event): Unit = js.native
   /**
     * Opens the NavBar
     **/
@@ -138,19 +128,5 @@ class NavBar () extends js.Object {
     **/
   def showOnlyCommands(commands: js.Array[_]): Unit = js.native
   def showOnlyCommands(commands: js.Array[_], immediate: Boolean): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("WinJS.UI.NavBar")
-@js.native
-object NavBar extends js.Object {
-  /**
-    * This object supports the WinJS infrastructure and is not intended to be used directly from your code.
-    **/
-  var isDeclarativeControlContainer: js.Any = js.native
-  /**
-    * Indicates that the object is compatibile with declarative processing.
-    **/
-  var supportedForProcessing: Boolean = js.native
 }
 

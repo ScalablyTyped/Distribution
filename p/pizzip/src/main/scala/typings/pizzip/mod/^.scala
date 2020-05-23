@@ -1,6 +1,6 @@
 package typings.pizzip.mod
 
-import typings.pizzip.AnonArraybuffer
+import typings.pizzip.anon.Arraybuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,6 +26,6 @@ object ^ extends js.Object {
     * If the browser supports them, PizZip can take advantage of some "new" features : ArrayBuffer, Blob, Uint8Array.
     * To know if PizZip can use them, you can check the PizZip.support object.
     */
-  var support: AnonArraybuffer = js.native
+  var support: Arraybuffer = js.native
 }
 

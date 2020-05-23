@@ -22,9 +22,9 @@ trait GetModelsRequest extends js.Object {
 
 object GetModelsRequest {
   @scala.inline
-  def apply(restApiId: String, limit: Int | scala.Double = null, position: String = null): GetModelsRequest = {
+  def apply(restApiId: String, limit: js.UndefOr[NullableInteger] = js.undefined, position: String = null): GetModelsRequest = {
     val __obj = js.Dynamic.literal(restApiId = restApiId.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetModelsRequest]
   }

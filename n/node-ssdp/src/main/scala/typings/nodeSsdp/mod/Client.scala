@@ -25,15 +25,15 @@ class Client () extends Base {
   ): this.type = js.native
   def search(serviceType: String): Unit | js.Promise[Unit] = js.native
   /**
-  	 * Start the listener for multicast notifications from SSDP devices
-  	 * @param cb callback to socket.bind
-  	 * @returns promise when socket.bind is ready
-  	 */
+    * Start the listener for multicast notifications from SSDP devices
+    * @param cb callback to socket.bind
+    * @returns promise when socket.bind is ready
+    */
   def start(): js.Promise[Unit] = js.native
   def start(cb: js.Function1[/* error */ Error, Unit]): js.Promise[Unit] = js.native
   /**
-  	 * Close UDP socket.
-  	 */
+    * Close UDP socket.
+    */
   def stop(): Unit = js.native
 }
 

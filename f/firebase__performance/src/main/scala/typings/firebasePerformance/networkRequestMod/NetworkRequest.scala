@@ -22,25 +22,25 @@ object NetworkRequest {
   def apply(
     url: String,
     httpMethod: HttpMethod = null,
-    httpResponseCode: Int | Double = null,
-    requestPayloadBytes: Int | Double = null,
+    httpResponseCode: js.UndefOr[Double] = js.undefined,
+    requestPayloadBytes: js.UndefOr[Double] = js.undefined,
     responseContentType: String = null,
-    responsePayloadBytes: Int | Double = null,
-    startTimeUs: Int | Double = null,
-    timeToRequestCompletedUs: Int | Double = null,
-    timeToResponseCompletedUs: Int | Double = null,
-    timeToResponseInitiatedUs: Int | Double = null
+    responsePayloadBytes: js.UndefOr[Double] = js.undefined,
+    startTimeUs: js.UndefOr[Double] = js.undefined,
+    timeToRequestCompletedUs: js.UndefOr[Double] = js.undefined,
+    timeToResponseCompletedUs: js.UndefOr[Double] = js.undefined,
+    timeToResponseInitiatedUs: js.UndefOr[Double] = js.undefined
   ): NetworkRequest = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (httpMethod != null) __obj.updateDynamic("httpMethod")(httpMethod.asInstanceOf[js.Any])
-    if (httpResponseCode != null) __obj.updateDynamic("httpResponseCode")(httpResponseCode.asInstanceOf[js.Any])
-    if (requestPayloadBytes != null) __obj.updateDynamic("requestPayloadBytes")(requestPayloadBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(httpResponseCode)) __obj.updateDynamic("httpResponseCode")(httpResponseCode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestPayloadBytes)) __obj.updateDynamic("requestPayloadBytes")(requestPayloadBytes.get.asInstanceOf[js.Any])
     if (responseContentType != null) __obj.updateDynamic("responseContentType")(responseContentType.asInstanceOf[js.Any])
-    if (responsePayloadBytes != null) __obj.updateDynamic("responsePayloadBytes")(responsePayloadBytes.asInstanceOf[js.Any])
-    if (startTimeUs != null) __obj.updateDynamic("startTimeUs")(startTimeUs.asInstanceOf[js.Any])
-    if (timeToRequestCompletedUs != null) __obj.updateDynamic("timeToRequestCompletedUs")(timeToRequestCompletedUs.asInstanceOf[js.Any])
-    if (timeToResponseCompletedUs != null) __obj.updateDynamic("timeToResponseCompletedUs")(timeToResponseCompletedUs.asInstanceOf[js.Any])
-    if (timeToResponseInitiatedUs != null) __obj.updateDynamic("timeToResponseInitiatedUs")(timeToResponseInitiatedUs.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsePayloadBytes)) __obj.updateDynamic("responsePayloadBytes")(responsePayloadBytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startTimeUs)) __obj.updateDynamic("startTimeUs")(startTimeUs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeToRequestCompletedUs)) __obj.updateDynamic("timeToRequestCompletedUs")(timeToRequestCompletedUs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeToResponseCompletedUs)) __obj.updateDynamic("timeToResponseCompletedUs")(timeToResponseCompletedUs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeToResponseInitiatedUs)) __obj.updateDynamic("timeToResponseInitiatedUs")(timeToResponseInitiatedUs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkRequest]
   }
 }

@@ -3,6 +3,8 @@ package typings.rmcPicker
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
+import typings.rmcPicker.anon.ComponentDidUpdate
+import typings.rmcPicker.anon.ComponentWillMount
 import typings.rmcPicker.pickerMixinMod.IItemProps
 import typings.rmcPicker.pickerTypesMod.IPickerProps
 import scala.scalajs.js
@@ -13,12 +15,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object indexNativeMod extends js.Object {
   @js.native
-  class Popup protected () extends AnonComponentWillMount {
+  class Popup protected () extends ComponentWillMount {
     def this(props: js.Any) = this()
   }
   
   @js.native
-  class default () extends AnonComponentDidUpdate {
+  class default () extends ComponentDidUpdate {
     def this(props: IPickerProps) = this()
     def this(props: IPickerProps, context: js.Any) = this()
   }
@@ -26,15 +28,15 @@ object indexNativeMod extends js.Object {
   val PopupStyles: js.Any = js.native
   @js.native
   object Popup
-    extends Instantiable1[/* props */ js.Any, AnonComponentWillMount] {
+    extends Instantiable1[/* props */ js.Any, ComponentWillMount] {
     var defaultProps: js.Any = js.native
   }
   
   @js.native
   object default
-    extends Instantiable0[AnonComponentDidUpdate]
-       with Instantiable1[/* props */ IPickerProps, AnonComponentDidUpdate]
-       with Instantiable2[/* props */ IPickerProps, /* context */ js.Any, AnonComponentDidUpdate] {
+    extends Instantiable0[ComponentDidUpdate]
+       with Instantiable1[/* props */ IPickerProps, ComponentDidUpdate]
+       with Instantiable2[/* props */ IPickerProps, /* context */ js.Any, ComponentDidUpdate] {
     def Item(_props: IItemProps): js.Any = js.native
   }
   

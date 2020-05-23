@@ -18,10 +18,10 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(limit: Int | Double = null, sampleInterval: Int | Double = null): Options = {
+  def apply(limit: js.UndefOr[Double] = js.undefined, sampleInterval: js.UndefOr[Double] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (sampleInterval != null) __obj.updateDynamic("sampleInterval")(sampleInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampleInterval)) __obj.updateDynamic("sampleInterval")(sampleInterval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

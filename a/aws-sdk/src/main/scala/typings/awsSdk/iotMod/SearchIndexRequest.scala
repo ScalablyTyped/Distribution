@@ -33,13 +33,13 @@ object SearchIndexRequest {
   def apply(
     queryString: QueryString,
     indexName: IndexName = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[QueryMaxResults] = js.undefined,
     nextToken: NextToken = null,
     queryVersion: QueryVersion = null
   ): SearchIndexRequest = {
     val __obj = js.Dynamic.literal(queryString = queryString.asInstanceOf[js.Any])
     if (indexName != null) __obj.updateDynamic("indexName")(indexName.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (queryVersion != null) __obj.updateDynamic("queryVersion")(queryVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchIndexRequest]

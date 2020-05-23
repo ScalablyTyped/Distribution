@@ -48,14 +48,14 @@ object ModelJSON {
   @scala.inline
   def apply(
     weightsManifest: WeightsManifestConfig,
-    convertedBy: String = null,
+    convertedBy: js.UndefOr[Null | String] = js.undefined,
     format: String = null,
     generatedBy: String = null,
     trainingConfig: TrainingConfig = null,
     userDefinedMetadata: js.Object = null
   ): ModelJSON = {
     val __obj = js.Dynamic.literal(weightsManifest = weightsManifest.asInstanceOf[js.Any])
-    if (convertedBy != null) __obj.updateDynamic("convertedBy")(convertedBy.asInstanceOf[js.Any])
+    if (!js.isUndefined(convertedBy)) __obj.updateDynamic("convertedBy")(convertedBy.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (generatedBy != null) __obj.updateDynamic("generatedBy")(generatedBy.asInstanceOf[js.Any])
     if (trainingConfig != null) __obj.updateDynamic("trainingConfig")(trainingConfig.asInstanceOf[js.Any])

@@ -1,9 +1,9 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.AnonBorderType
-import typings.echarts.AnonExtraCssText
-import typings.echarts.AnonLabelAnonTextShadowColor
-import typings.echarts.AnonTextShadowBlur
+import typings.echarts.anon.BorderType
+import typings.echarts.anon.ExtraCssText
+import typings.echarts.anon.LabelTextShadowColor
+import typings.echarts.anon.TextShadowBlur
 import typings.echarts.echarts.EChartOption.SeriesThemeRiver.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -206,7 +206,7 @@ trait SeriesThemeRiver_ extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis
     */
-  var emphasis: js.UndefOr[AnonLabelAnonTextShadowColor] = js.undefined
+  var emphasis: js.UndefOr[LabelTextShadowColor] = js.undefined
   /**
     * Height of thmemRiver component.
     *
@@ -233,7 +233,7 @@ trait SeriesThemeRiver_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderType] = js.undefined
+  var itemStyle: js.UndefOr[BorderType] = js.undefined
   /**
     * `label` describes style of text labels with which each ribbon-shape
     * river branch corresponds in theme river.
@@ -241,7 +241,7 @@ trait SeriesThemeRiver_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.label
     */
-  var label: js.UndefOr[AnonTextShadowBlur] = js.undefined
+  var label: js.UndefOr[TextShadowBlur] = js.undefined
   /**
     * Distance between thmemRiver component and the left side of the
     * container.
@@ -286,7 +286,7 @@ trait SeriesThemeRiver_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.tooltip
     */
-  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
   /**
     * Distance between thmemRiver component and the top side of the
     * container.
@@ -361,20 +361,20 @@ object SeriesThemeRiver_ {
     data: js.Array[
       (js.Array[Unit | Double | String | DataObject]) | DataObject | Double | String | Unit
     ] = null,
-    emphasis: AnonLabelAnonTextShadowColor = null,
+    emphasis: LabelTextShadowColor = null,
     height: Double | String = null,
     id: String = null,
-    itemStyle: AnonBorderType = null,
-    label: AnonTextShadowBlur = null,
+    itemStyle: BorderType = null,
+    label: TextShadowBlur = null,
     left: Double | String = null,
     right: Double | String = null,
-    singleAxisIndex: Int | Double = null,
-    tooltip: AnonExtraCssText = null,
+    singleAxisIndex: js.UndefOr[Double] = js.undefined,
+    tooltip: ExtraCssText = null,
     top: Double | String = null,
     `type`: String = null,
     width: Double | String = null,
-    z: Int | Double = null,
-    zlevel: Int | Double = null
+    z: js.UndefOr[Double] = js.undefined,
+    zlevel: js.UndefOr[Double] = js.undefined
   ): SeriesThemeRiver_ = {
     val __obj = js.Dynamic.literal()
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
@@ -388,13 +388,13 @@ object SeriesThemeRiver_ {
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (singleAxisIndex != null) __obj.updateDynamic("singleAxisIndex")(singleAxisIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleAxisIndex)) __obj.updateDynamic("singleAxisIndex")(singleAxisIndex.get.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
-    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zlevel)) __obj.updateDynamic("zlevel")(zlevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesThemeRiver_]
   }
 }

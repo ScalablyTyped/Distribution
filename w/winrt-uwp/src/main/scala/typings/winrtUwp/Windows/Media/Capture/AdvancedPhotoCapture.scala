@@ -12,9 +12,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides methods for capturing photos using system-provided computational photography techniques. */
-@JSGlobal("Windows.Media.Capture.AdvancedPhotoCapture")
 @js.native
-abstract class AdvancedPhotoCapture () extends js.Object {
+trait AdvancedPhotoCapture extends js.Object {
   /** Occurs when all of the frames required for the advanced photo capture have been captured. */
   @JSName("onallphotoscaptured")
   var onallphotoscaptured_Original: TypedEventHandler[AdvancedPhotoCapture, _] = js.native

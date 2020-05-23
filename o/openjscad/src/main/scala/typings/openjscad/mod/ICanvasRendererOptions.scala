@@ -18,7 +18,7 @@ object ICanvasRendererOptions {
   @scala.inline
   def apply(alpha: js.UndefOr[Boolean] = js.undefined, canvas: HTMLCanvasElement = null): ICanvasRendererOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
     if (canvas != null) __obj.updateDynamic("canvas")(canvas.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICanvasRendererOptions]
   }

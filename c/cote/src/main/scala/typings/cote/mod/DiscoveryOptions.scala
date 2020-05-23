@@ -70,34 +70,34 @@ object DiscoveryOptions {
   def apply(
     address: String = null,
     broadcast: String = null,
-    checkInterval: Int | Double = null,
+    checkInterval: js.UndefOr[Double] = js.undefined,
     disableScreen: js.UndefOr[Boolean] = js.undefined,
-    helloInterval: Int | Double = null,
+    helloInterval: js.UndefOr[Double] = js.undefined,
     helloLogsEnabled: js.UndefOr[Boolean] = js.undefined,
     ignoreProcess: js.UndefOr[Boolean] = js.undefined,
     log: js.UndefOr[Boolean] = js.undefined,
-    masterTimeout: Int | Double = null,
+    masterTimeout: js.UndefOr[Double] = js.undefined,
     monitor: js.UndefOr[Boolean] = js.undefined,
     multicast: String = null,
-    nodeTimeout: Int | Double = null,
-    statusInterval: Int | Double = null,
+    nodeTimeout: js.UndefOr[Double] = js.undefined,
+    statusInterval: js.UndefOr[Double] = js.undefined,
     statusLogsEnabled: js.UndefOr[Boolean] = js.undefined
   ): DiscoveryOptions = {
     val __obj = js.Dynamic.literal()
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     if (broadcast != null) __obj.updateDynamic("broadcast")(broadcast.asInstanceOf[js.Any])
-    if (checkInterval != null) __obj.updateDynamic("checkInterval")(checkInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableScreen)) __obj.updateDynamic("disableScreen")(disableScreen.asInstanceOf[js.Any])
-    if (helloInterval != null) __obj.updateDynamic("helloInterval")(helloInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(helloLogsEnabled)) __obj.updateDynamic("helloLogsEnabled")(helloLogsEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreProcess)) __obj.updateDynamic("ignoreProcess")(ignoreProcess.asInstanceOf[js.Any])
-    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
-    if (masterTimeout != null) __obj.updateDynamic("masterTimeout")(masterTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(monitor)) __obj.updateDynamic("monitor")(monitor.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkInterval)) __obj.updateDynamic("checkInterval")(checkInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableScreen)) __obj.updateDynamic("disableScreen")(disableScreen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(helloInterval)) __obj.updateDynamic("helloInterval")(helloInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(helloLogsEnabled)) __obj.updateDynamic("helloLogsEnabled")(helloLogsEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreProcess)) __obj.updateDynamic("ignoreProcess")(ignoreProcess.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(masterTimeout)) __obj.updateDynamic("masterTimeout")(masterTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(monitor)) __obj.updateDynamic("monitor")(monitor.get.asInstanceOf[js.Any])
     if (multicast != null) __obj.updateDynamic("multicast")(multicast.asInstanceOf[js.Any])
-    if (nodeTimeout != null) __obj.updateDynamic("nodeTimeout")(nodeTimeout.asInstanceOf[js.Any])
-    if (statusInterval != null) __obj.updateDynamic("statusInterval")(statusInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(statusLogsEnabled)) __obj.updateDynamic("statusLogsEnabled")(statusLogsEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeTimeout)) __obj.updateDynamic("nodeTimeout")(nodeTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusInterval)) __obj.updateDynamic("statusInterval")(statusInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusLogsEnabled)) __obj.updateDynamic("statusLogsEnabled")(statusLogsEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiscoveryOptions]
   }
 }

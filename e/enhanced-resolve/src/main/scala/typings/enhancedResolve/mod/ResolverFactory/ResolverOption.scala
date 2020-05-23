@@ -57,8 +57,8 @@ object ResolverOption {
     if (aliasFields != null) __obj.updateDynamic("aliasFields")(aliasFields.asInstanceOf[js.Any])
     if (cachePredicate != null) __obj.updateDynamic("cachePredicate")(js.Any.fromFunction1(cachePredicate))
     if (descriptionFiles != null) __obj.updateDynamic("descriptionFiles")(descriptionFiles.asInstanceOf[js.Any])
-    if (!js.isUndefined(enforceExtension)) __obj.updateDynamic("enforceExtension")(enforceExtension.asInstanceOf[js.Any])
-    if (!js.isUndefined(enforceModuleExtension)) __obj.updateDynamic("enforceModuleExtension")(enforceModuleExtension.asInstanceOf[js.Any])
+    if (!js.isUndefined(enforceExtension)) __obj.updateDynamic("enforceExtension")(enforceExtension.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enforceModuleExtension)) __obj.updateDynamic("enforceModuleExtension")(enforceModuleExtension.get.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (fileSystem != null) __obj.updateDynamic("fileSystem")(fileSystem.asInstanceOf[js.Any])
     if (mainFields != null) __obj.updateDynamic("mainFields")(mainFields.asInstanceOf[js.Any])
@@ -66,11 +66,11 @@ object ResolverOption {
     if (moduleExtensions != null) __obj.updateDynamic("moduleExtensions")(moduleExtensions.asInstanceOf[js.Any])
     if (modules != null) __obj.updateDynamic("modules")(modules.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (!js.isUndefined(resolveToContext)) __obj.updateDynamic("resolveToContext")(resolveToContext.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolveToContext)) __obj.updateDynamic("resolveToContext")(resolveToContext.get.asInstanceOf[js.Any])
     if (resolver != null) __obj.updateDynamic("resolver")(resolver.asInstanceOf[js.Any])
     if (symlinks != null) __obj.updateDynamic("symlinks")(symlinks.asInstanceOf[js.Any])
     if (unsafeCache != null) __obj.updateDynamic("unsafeCache")(unsafeCache.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSyncFileSystemCalls)) __obj.updateDynamic("useSyncFileSystemCalls")(useSyncFileSystemCalls.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSyncFileSystemCalls)) __obj.updateDynamic("useSyncFileSystemCalls")(useSyncFileSystemCalls.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolverOption]
   }
 }

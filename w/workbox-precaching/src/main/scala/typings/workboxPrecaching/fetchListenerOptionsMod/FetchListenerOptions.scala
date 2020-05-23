@@ -2,7 +2,7 @@ package typings.workboxPrecaching.fetchListenerOptionsMod
 
 import typings.std.RegExp
 import typings.std.URL
-import typings.workboxPrecaching.AnonUrl
+import typings.workboxPrecaching.anon.Url
 import typings.workboxPrecaching.urlmanipulationMod.URLManipulation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,10 +21,10 @@ object FetchListenerOptions {
     cleanURLs: js.UndefOr[Boolean] = js.undefined,
     directoryIndex: String = null,
     ignoreURLParametersMatching: js.Array[RegExp] = null,
-    urlManipulation: /* url */ AnonUrl => js.Array[URL] = null
+    urlManipulation: /* url */ Url => js.Array[URL] = null
   ): FetchListenerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cleanURLs)) __obj.updateDynamic("cleanURLs")(cleanURLs.asInstanceOf[js.Any])
+    if (!js.isUndefined(cleanURLs)) __obj.updateDynamic("cleanURLs")(cleanURLs.get.asInstanceOf[js.Any])
     if (directoryIndex != null) __obj.updateDynamic("directoryIndex")(directoryIndex.asInstanceOf[js.Any])
     if (ignoreURLParametersMatching != null) __obj.updateDynamic("ignoreURLParametersMatching")(ignoreURLParametersMatching.asInstanceOf[js.Any])
     if (urlManipulation != null) __obj.updateDynamic("urlManipulation")(js.Any.fromFunction1(urlManipulation))

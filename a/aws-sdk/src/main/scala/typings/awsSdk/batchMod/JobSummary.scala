@@ -55,22 +55,22 @@ object JobSummary {
     jobName: String,
     arrayProperties: ArrayPropertiesSummary = null,
     container: ContainerSummary = null,
-    createdAt: Int | Double = null,
+    createdAt: js.UndefOr[Long] = js.undefined,
     nodeProperties: NodePropertiesSummary = null,
-    startedAt: Int | Double = null,
+    startedAt: js.UndefOr[Long] = js.undefined,
     status: JobStatus = null,
     statusReason: String = null,
-    stoppedAt: Int | Double = null
+    stoppedAt: js.UndefOr[Long] = js.undefined
   ): JobSummary = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], jobName = jobName.asInstanceOf[js.Any])
     if (arrayProperties != null) __obj.updateDynamic("arrayProperties")(arrayProperties.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
+    if (!js.isUndefined(createdAt)) __obj.updateDynamic("createdAt")(createdAt.get.asInstanceOf[js.Any])
     if (nodeProperties != null) __obj.updateDynamic("nodeProperties")(nodeProperties.asInstanceOf[js.Any])
-    if (startedAt != null) __obj.updateDynamic("startedAt")(startedAt.asInstanceOf[js.Any])
+    if (!js.isUndefined(startedAt)) __obj.updateDynamic("startedAt")(startedAt.get.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (statusReason != null) __obj.updateDynamic("statusReason")(statusReason.asInstanceOf[js.Any])
-    if (stoppedAt != null) __obj.updateDynamic("stoppedAt")(stoppedAt.asInstanceOf[js.Any])
+    if (!js.isUndefined(stoppedAt)) __obj.updateDynamic("stoppedAt")(stoppedAt.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobSummary]
   }
 }

@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact.basePickerTypesMod
 
 import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionsProps
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -40,7 +40,7 @@ object IBasePickerSuggestionsProps {
     onRenderNoResultFound: (/* props */ js.UndefOr[Unit], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[Unit], Element | Null]]) => Element | Null = null,
     resultsFooter: /* props */ ISuggestionsProps[T] => Element = null,
     resultsFooterFull: /* props */ ISuggestionsProps[T] => Element = null,
-    resultsMaximumNumber: Int | Double = null,
+    resultsMaximumNumber: js.UndefOr[Double] = js.undefined,
     searchForMoreText: String = null,
     searchingText: String = null,
     showForceResolve: () => Boolean = null,
@@ -60,11 +60,11 @@ object IBasePickerSuggestionsProps {
     if (onRenderNoResultFound != null) __obj.updateDynamic("onRenderNoResultFound")(js.Any.fromFunction2(onRenderNoResultFound))
     if (resultsFooter != null) __obj.updateDynamic("resultsFooter")(js.Any.fromFunction1(resultsFooter))
     if (resultsFooterFull != null) __obj.updateDynamic("resultsFooterFull")(js.Any.fromFunction1(resultsFooterFull))
-    if (resultsMaximumNumber != null) __obj.updateDynamic("resultsMaximumNumber")(resultsMaximumNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(resultsMaximumNumber)) __obj.updateDynamic("resultsMaximumNumber")(resultsMaximumNumber.get.asInstanceOf[js.Any])
     if (searchForMoreText != null) __obj.updateDynamic("searchForMoreText")(searchForMoreText.asInstanceOf[js.Any])
     if (searchingText != null) __obj.updateDynamic("searchingText")(searchingText.asInstanceOf[js.Any])
     if (showForceResolve != null) __obj.updateDynamic("showForceResolve")(js.Any.fromFunction0(showForceResolve))
-    if (!js.isUndefined(showRemoveButtons)) __obj.updateDynamic("showRemoveButtons")(showRemoveButtons.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRemoveButtons)) __obj.updateDynamic("showRemoveButtons")(showRemoveButtons.get.asInstanceOf[js.Any])
     if (suggestionsAvailableAlertText != null) __obj.updateDynamic("suggestionsAvailableAlertText")(suggestionsAvailableAlertText.asInstanceOf[js.Any])
     if (suggestionsClassName != null) __obj.updateDynamic("suggestionsClassName")(suggestionsClassName.asInstanceOf[js.Any])
     if (suggestionsContainerAriaLabel != null) __obj.updateDynamic("suggestionsContainerAriaLabel")(suggestionsContainerAriaLabel.asInstanceOf[js.Any])

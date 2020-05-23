@@ -23,9 +23,6 @@ object googleapisCommonStrings {
   sealed trait boolean extends SchemaType
   
   @js.native
-  sealed trait httpsColonSlashSlashoauth2DotgoogleapisDotcomSlashtokeninfo extends js.Object
-  
-  @js.native
   sealed trait int32 extends js.Object
   
   @js.native
@@ -47,8 +44,6 @@ object googleapisCommonStrings {
   def array: array = "array".asInstanceOf[array]
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
-  @scala.inline
-  def httpsColonSlashSlashoauth2DotgoogleapisDotcomSlashtokeninfo: httpsColonSlashSlashoauth2DotgoogleapisDotcomSlashtokeninfo = "https://oauth2.googleapis.com/tokeninfo".asInstanceOf[httpsColonSlashSlashoauth2DotgoogleapisDotcomSlashtokeninfo]
   @scala.inline
   def int32: int32 = "int32".asInstanceOf[int32]
   @scala.inline

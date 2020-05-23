@@ -12,11 +12,11 @@ trait ILeftMouseButtonMagnifierOptions extends js.Object {
 
 object ILeftMouseButtonMagnifierOptions {
   @scala.inline
-  def apply(actionCursor: String = null, cursor: String = null, duration: Int | Double = null): ILeftMouseButtonMagnifierOptions = {
+  def apply(actionCursor: String = null, cursor: String = null, duration: js.UndefOr[Double] = js.undefined): ILeftMouseButtonMagnifierOptions = {
     val __obj = js.Dynamic.literal()
     if (actionCursor != null) __obj.updateDynamic("actionCursor")(actionCursor.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILeftMouseButtonMagnifierOptions]
   }
 }

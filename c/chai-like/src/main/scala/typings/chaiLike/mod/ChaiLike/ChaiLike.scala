@@ -1,6 +1,6 @@
 package typings.chaiLike.mod.ChaiLike
 
-import typings.chai.Chai_.ChaiPlugin
+import typings.chai.Chai.ChaiPlugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

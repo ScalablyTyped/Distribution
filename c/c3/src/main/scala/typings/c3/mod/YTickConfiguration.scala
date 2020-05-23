@@ -14,17 +14,17 @@ trait YTickConfiguration extends TickConfiguration {
 object YTickConfiguration {
   @scala.inline
   def apply(
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     format: /* x */ Double => String | Double = null,
     outer: js.UndefOr[Boolean] = js.undefined,
-    rotate: Int | Double = null,
+    rotate: js.UndefOr[Double] = js.undefined,
     values: js.Array[Double | String] = null
   ): YTickConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction1(format))
-    if (!js.isUndefined(outer)) __obj.updateDynamic("outer")(outer.asInstanceOf[js.Any])
-    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
+    if (!js.isUndefined(outer)) __obj.updateDynamic("outer")(outer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotate)) __obj.updateDynamic("rotate")(rotate.get.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[YTickConfiguration]
   }

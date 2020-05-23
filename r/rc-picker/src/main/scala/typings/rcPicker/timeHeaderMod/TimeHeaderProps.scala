@@ -21,10 +21,10 @@ object TimeHeaderProps {
     generateConfig: GenerateConfig[DateType],
     locale: Locale,
     prefixCls: String,
-    value: DateType = null
+    value: js.UndefOr[Null | DateType] = js.undefined
   ): TimeHeaderProps[DateType] = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeHeaderProps[DateType]]
   }
 }

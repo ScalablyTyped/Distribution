@@ -40,9 +40,9 @@ object NotificationEventAdditionalData {
   ): NotificationEventAdditionalData = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(coldstart)) __obj.updateDynamic("coldstart")(coldstart.asInstanceOf[js.Any])
+    if (!js.isUndefined(coldstart)) __obj.updateDynamic("coldstart")(coldstart.get.asInstanceOf[js.Any])
     if (collapse_key != null) __obj.updateDynamic("collapse_key")(collapse_key.asInstanceOf[js.Any])
-    if (!js.isUndefined(foreground)) __obj.updateDynamic("foreground")(foreground.asInstanceOf[js.Any])
+    if (!js.isUndefined(foreground)) __obj.updateDynamic("foreground")(foreground.get.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (notId != null) __obj.updateDynamic("notId")(notId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationEventAdditionalData]

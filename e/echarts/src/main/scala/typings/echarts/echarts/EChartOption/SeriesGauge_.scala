@@ -1,18 +1,18 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.AnonAnimationDurationUpdate
-import typings.echarts.AnonAnimationEasing
-import typings.echarts.AnonAnimationEasingUpdate
-import typings.echarts.AnonBorderType
-import typings.echarts.AnonExtraCssText
-import typings.echarts.AnonItemStyleAnonBorderType
-import typings.echarts.AnonLengthLineStyle
-import typings.echarts.AnonLengthShow
-import typings.echarts.AnonLineStyleShow
-import typings.echarts.AnonOffsetCenter
-import typings.echarts.AnonRich
-import typings.echarts.AnonSplitNumber
-import typings.echarts.AnonTextBorderColor
+import typings.echarts.anon.AnimationDurationUpdate
+import typings.echarts.anon.AnimationEasing
+import typings.echarts.anon.AnimationEasingUpdate
+import typings.echarts.anon.BorderType
+import typings.echarts.anon.ExtraCssText
+import typings.echarts.anon.ItemStyleBorderType
+import typings.echarts.anon.LengthLineStyle
+import typings.echarts.anon.LengthShow
+import typings.echarts.anon.LineStyleShow
+import typings.echarts.anon.OffsetCenter
+import typings.echarts.anon.Rich
+import typings.echarts.anon.SplitNumber
+import typings.echarts.anon.TextBorderColor
 import typings.echarts.echarts.EChartOption.SeriesGauge.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -132,21 +132,21 @@ trait SeriesGauge_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel
     */
-  var axisLabel: js.UndefOr[AnonRich] = js.undefined
+  var axisLabel: js.UndefOr[Rich] = js.undefined
   /**
     * The related configuration about the axis line of gauge chart.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.axisLine
     */
-  var axisLine: js.UndefOr[AnonLineStyleShow] = js.undefined
+  var axisLine: js.UndefOr[LineStyleShow] = js.undefined
   /**
     * The tick line style.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.axisTick
     */
-  var axisTick: js.UndefOr[AnonSplitNumber] = js.undefined
+  var axisTick: js.UndefOr[SplitNumber] = js.undefined
   /**
     * Whether the scale in gauge chart increases clockwise.
     *
@@ -181,11 +181,11 @@ trait SeriesGauge_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.detail
     */
-  var detail: js.UndefOr[AnonTextBorderColor] = js.undefined
+  var detail: js.UndefOr[TextBorderColor] = js.undefined
   /**
     * @see https://echarts.apache.org/en/option.html#series-gauge.emphasis
     */
-  var emphasis: js.UndefOr[AnonItemStyleAnonBorderType] = js.undefined
+  var emphasis: js.UndefOr[ItemStyleBorderType] = js.undefined
   /**
     * The end angle of gauge chart.
     *
@@ -210,7 +210,7 @@ trait SeriesGauge_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderType] = js.undefined
+  var itemStyle: js.UndefOr[BorderType] = js.undefined
   /**
     * Used to mark an area in chart.
     * For example, mark a time interval.
@@ -218,21 +218,21 @@ trait SeriesGauge_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.markArea
     */
-  var markArea: js.UndefOr[AnonAnimationEasingUpdate] = js.undefined
+  var markArea: js.UndefOr[AnimationEasingUpdate] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.markLine
     */
-  var markLine: js.UndefOr[AnonAnimationEasing] = js.undefined
+  var markLine: js.UndefOr[AnimationEasing] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.markPoint
     */
-  var markPoint: js.UndefOr[AnonAnimationDurationUpdate] = js.undefined
+  var markPoint: js.UndefOr[AnimationDurationUpdate] = js.undefined
   /**
     * The maximum data value which map to
     * [maxAngle](https://echarts.apache.org/en/option.html#series-gauge.maxAngle)
@@ -270,7 +270,7 @@ trait SeriesGauge_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.pointer
     */
-  var pointer: js.UndefOr[AnonLengthShow] = js.undefined
+  var pointer: js.UndefOr[LengthShow] = js.undefined
   /**
     * The radius of gauge chart.
     * It can be a percentage value of the smaller of container half
@@ -290,7 +290,7 @@ trait SeriesGauge_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.splitLine
     */
-  var splitLine: js.UndefOr[AnonLengthLineStyle] = js.undefined
+  var splitLine: js.UndefOr[LengthLineStyle] = js.undefined
   /**
     * The number of split segments of gauge chart scale.
     *
@@ -318,14 +318,14 @@ trait SeriesGauge_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.title
     */
-  var title: js.UndefOr[AnonOffsetCenter] = js.undefined
+  var title: js.UndefOr[OffsetCenter] = js.undefined
   /**
     * tooltip settings in this series.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.tooltip
     */
-  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
   /**
     * @default
     * "gauge"
@@ -344,64 +344,64 @@ object SeriesGauge_ {
     animationDurationUpdate: js.Function | Double = null,
     animationEasing: String = null,
     animationEasingUpdate: String = null,
-    animationThreshold: Int | Double = null,
-    axisLabel: AnonRich = null,
-    axisLine: AnonLineStyleShow = null,
-    axisTick: AnonSplitNumber = null,
+    animationThreshold: js.UndefOr[Double] = js.undefined,
+    axisLabel: Rich = null,
+    axisLine: LineStyleShow = null,
+    axisTick: SplitNumber = null,
     clockwise: js.UndefOr[Boolean] = js.undefined,
     data: js.Array[
       (js.Array[Unit | String | Double | DataObject]) | DataObject | Double | String | Unit
     ] = null,
-    detail: AnonTextBorderColor = null,
-    emphasis: AnonItemStyleAnonBorderType = null,
-    endAngle: Int | Double = null,
+    detail: TextBorderColor = null,
+    emphasis: ItemStyleBorderType = null,
+    endAngle: js.UndefOr[Double] = js.undefined,
     id: String = null,
-    itemStyle: AnonBorderType = null,
-    markArea: AnonAnimationEasingUpdate = null,
-    markLine: AnonAnimationEasing = null,
-    markPoint: AnonAnimationDurationUpdate = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
+    itemStyle: BorderType = null,
+    markArea: AnimationEasingUpdate = null,
+    markLine: AnimationEasing = null,
+    markPoint: AnimationDurationUpdate = null,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
     name: String = null,
-    pointer: AnonLengthShow = null,
+    pointer: LengthShow = null,
     radius: Double | String = null,
-    splitLine: AnonLengthLineStyle = null,
-    splitNumber: Int | Double = null,
-    startAngle: Int | Double = null,
-    title: AnonOffsetCenter = null,
-    tooltip: AnonExtraCssText = null,
+    splitLine: LengthLineStyle = null,
+    splitNumber: js.UndefOr[Double] = js.undefined,
+    startAngle: js.UndefOr[Double] = js.undefined,
+    title: OffsetCenter = null,
+    tooltip: ExtraCssText = null,
     `type`: String = null
   ): SeriesGauge_ = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
     if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
     if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
     if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
     if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate.asInstanceOf[js.Any])
-    if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationThreshold)) __obj.updateDynamic("animationThreshold")(animationThreshold.get.asInstanceOf[js.Any])
     if (axisLabel != null) __obj.updateDynamic("axisLabel")(axisLabel.asInstanceOf[js.Any])
     if (axisLine != null) __obj.updateDynamic("axisLine")(axisLine.asInstanceOf[js.Any])
     if (axisTick != null) __obj.updateDynamic("axisTick")(axisTick.asInstanceOf[js.Any])
-    if (!js.isUndefined(clockwise)) __obj.updateDynamic("clockwise")(clockwise.asInstanceOf[js.Any])
+    if (!js.isUndefined(clockwise)) __obj.updateDynamic("clockwise")(clockwise.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
-    if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(endAngle)) __obj.updateDynamic("endAngle")(endAngle.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
     if (markArea != null) __obj.updateDynamic("markArea")(markArea.asInstanceOf[js.Any])
     if (markLine != null) __obj.updateDynamic("markLine")(markLine.asInstanceOf[js.Any])
     if (markPoint != null) __obj.updateDynamic("markPoint")(markPoint.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (pointer != null) __obj.updateDynamic("pointer")(pointer.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     if (splitLine != null) __obj.updateDynamic("splitLine")(splitLine.asInstanceOf[js.Any])
-    if (splitNumber != null) __obj.updateDynamic("splitNumber")(splitNumber.asInstanceOf[js.Any])
-    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(splitNumber)) __obj.updateDynamic("splitNumber")(splitNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startAngle)) __obj.updateDynamic("startAngle")(startAngle.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

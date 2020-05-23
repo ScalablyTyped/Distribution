@@ -1,6 +1,7 @@
 package typings.ionicCore.componentsMod.LocalJSX
 
 import typings.ionicCore.spinnerConfigsMod.SpinnerTypes
+import typings.ionicCore.typesMod.IonicSafeString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +14,7 @@ trait IonRefresherContent extends js.Object {
   /**
     * The text you want to display when you begin to pull down. `pullingText` can accept either plaintext or HTML as a string. To display characters normally reserved for HTML, they must be escaped. For example `<Ionic>` would become `&lt;Ionic&gt;`  For more information: [Security Documentation](https://ionicframework.com/docs/faq/security)
     */
-  var pullingText: js.UndefOr[String] = js.undefined
+  var pullingText: js.UndefOr[String | IonicSafeString] = js.undefined
   /**
     * An animated SVG spinner that shows when refreshing begins
     */
@@ -21,21 +22,21 @@ trait IonRefresherContent extends js.Object {
   /**
     * The text you want to display when performing a refresh. `refreshingText` can accept either plaintext or HTML as a string. To display characters normally reserved for HTML, they must be escaped. For example `<Ionic>` would become `&lt;Ionic&gt;`  For more information: [Security Documentation](https://ionicframework.com/docs/faq/security)
     */
-  var refreshingText: js.UndefOr[String] = js.undefined
+  var refreshingText: js.UndefOr[String | IonicSafeString] = js.undefined
 }
 
 object IonRefresherContent {
   @scala.inline
   def apply(
-    pullingIcon: SpinnerTypes | String = null,
-    pullingText: String = null,
-    refreshingSpinner: SpinnerTypes = null,
-    refreshingText: String = null
+    pullingIcon: js.UndefOr[Null | SpinnerTypes | String] = js.undefined,
+    pullingText: String | IonicSafeString = null,
+    refreshingSpinner: js.UndefOr[Null | SpinnerTypes] = js.undefined,
+    refreshingText: String | IonicSafeString = null
   ): IonRefresherContent = {
     val __obj = js.Dynamic.literal()
-    if (pullingIcon != null) __obj.updateDynamic("pullingIcon")(pullingIcon.asInstanceOf[js.Any])
+    if (!js.isUndefined(pullingIcon)) __obj.updateDynamic("pullingIcon")(pullingIcon.asInstanceOf[js.Any])
     if (pullingText != null) __obj.updateDynamic("pullingText")(pullingText.asInstanceOf[js.Any])
-    if (refreshingSpinner != null) __obj.updateDynamic("refreshingSpinner")(refreshingSpinner.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshingSpinner)) __obj.updateDynamic("refreshingSpinner")(refreshingSpinner.asInstanceOf[js.Any])
     if (refreshingText != null) __obj.updateDynamic("refreshingText")(refreshingText.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonRefresherContent]
   }

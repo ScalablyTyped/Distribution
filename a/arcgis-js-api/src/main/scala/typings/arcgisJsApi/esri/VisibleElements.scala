@@ -24,7 +24,7 @@ object VisibleElements {
     statusIndicators: js.UndefOr[Boolean] = js.undefined
   ): VisibleElements = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (!js.isUndefined(statusIndicators)) __obj.updateDynamic("statusIndicators")(statusIndicators.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusIndicators)) __obj.updateDynamic("statusIndicators")(statusIndicators.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VisibleElements]
   }
 }

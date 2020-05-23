@@ -23,7 +23,7 @@ object MenuProps {
     id: String,
     className: String = null,
     emptyLabel: String = null,
-    innerRef: LegacyRef[HTMLUListElement] = null,
+    innerRef: js.UndefOr[Null | LegacyRef[HTMLUListElement]] = js.undefined,
     maxHeight: String = null,
     style: CSSProperties = null,
     text: String = null
@@ -31,7 +31,7 @@ object MenuProps {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (emptyLabel != null) __obj.updateDynamic("emptyLabel")(emptyLabel.asInstanceOf[js.Any])
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(innerRef)) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])

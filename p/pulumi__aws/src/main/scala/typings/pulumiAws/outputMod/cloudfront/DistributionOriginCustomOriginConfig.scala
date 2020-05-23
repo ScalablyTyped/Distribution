@@ -42,12 +42,12 @@ object DistributionOriginCustomOriginConfig {
     httpsPort: Double,
     originProtocolPolicy: String,
     originSslProtocols: js.Array[String],
-    originKeepaliveTimeout: Int | Double = null,
-    originReadTimeout: Int | Double = null
+    originKeepaliveTimeout: js.UndefOr[Double] = js.undefined,
+    originReadTimeout: js.UndefOr[Double] = js.undefined
   ): DistributionOriginCustomOriginConfig = {
     val __obj = js.Dynamic.literal(httpPort = httpPort.asInstanceOf[js.Any], httpsPort = httpsPort.asInstanceOf[js.Any], originProtocolPolicy = originProtocolPolicy.asInstanceOf[js.Any], originSslProtocols = originSslProtocols.asInstanceOf[js.Any])
-    if (originKeepaliveTimeout != null) __obj.updateDynamic("originKeepaliveTimeout")(originKeepaliveTimeout.asInstanceOf[js.Any])
-    if (originReadTimeout != null) __obj.updateDynamic("originReadTimeout")(originReadTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(originKeepaliveTimeout)) __obj.updateDynamic("originKeepaliveTimeout")(originKeepaliveTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(originReadTimeout)) __obj.updateDynamic("originReadTimeout")(originReadTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionOriginCustomOriginConfig]
   }
 }

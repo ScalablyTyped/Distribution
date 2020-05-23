@@ -37,13 +37,13 @@ trait PathFollower extends js.Object {
     * Pauses this PathFollower. It will still continue to render, but it will remain motionless at the
     * point on the Path at which you paused it.
     */
-  def pauseFollow(): typings.phaser.Phaser.GameObjects.PathFollower = js.native
+  def pauseFollow(): this.type = js.native
   /**
     * Resumes a previously paused PathFollower.
     * 
     * If the PathFollower was not paused this has no effect.
     */
-  def resumeFollow(): typings.phaser.Phaser.GameObjects.PathFollower = js.native
+  def resumeFollow(): this.type = js.native
   /**
     * Set the Path that this PathFollower should follow.
     * 
@@ -51,34 +51,34 @@ trait PathFollower extends js.Object {
     * @param path The Path this PathFollower is following. It can only follow one Path at a time.
     * @param config Settings for the PathFollower.
     */
-  def setPath(path: Path): typings.phaser.Phaser.GameObjects.PathFollower = js.native
-  def setPath(path: Path, config: Double): typings.phaser.Phaser.GameObjects.PathFollower = js.native
-  def setPath(path: Path, config: PathConfig): typings.phaser.Phaser.GameObjects.PathFollower = js.native
-  def setPath(path: Path, config: NumberTweenBuilderConfig): typings.phaser.Phaser.GameObjects.PathFollower = js.native
+  def setPath(path: Path): this.type = js.native
+  def setPath(path: Path, config: Double): this.type = js.native
+  def setPath(path: Path, config: PathConfig): this.type = js.native
+  def setPath(path: Path, config: NumberTweenBuilderConfig): this.type = js.native
   /**
     * Set whether the PathFollower should automatically rotate to point in the direction of the Path.
     * @param value Whether the PathFollower should automatically rotate to point in the direction of the Path.
     * @param offset Rotation offset in degrees. Default 0.
     */
-  def setRotateToPath(value: Boolean): typings.phaser.Phaser.GameObjects.PathFollower = js.native
-  def setRotateToPath(value: Boolean, offset: Double): typings.phaser.Phaser.GameObjects.PathFollower = js.native
+  def setRotateToPath(value: Boolean): this.type = js.native
+  def setRotateToPath(value: Boolean, offset: Double): this.type = js.native
   /**
     * Starts this PathFollower following its given Path.
     * @param config The duration of the follow, or a PathFollower config object. Default {}.
     * @param startAt Optional start position of the follow, between 0 and 1. Default 0.
     */
-  def startFollow(): typings.phaser.Phaser.GameObjects.PathFollower = js.native
-  def startFollow(config: Double): typings.phaser.Phaser.GameObjects.PathFollower = js.native
-  def startFollow(config: Double, startAt: Double): typings.phaser.Phaser.GameObjects.PathFollower = js.native
-  def startFollow(config: PathConfig): typings.phaser.Phaser.GameObjects.PathFollower = js.native
-  def startFollow(config: PathConfig, startAt: Double): typings.phaser.Phaser.GameObjects.PathFollower = js.native
-  def startFollow(config: NumberTweenBuilderConfig): typings.phaser.Phaser.GameObjects.PathFollower = js.native
-  def startFollow(config: NumberTweenBuilderConfig, startAt: Double): typings.phaser.Phaser.GameObjects.PathFollower = js.native
+  def startFollow(): this.type = js.native
+  def startFollow(config: Double): this.type = js.native
+  def startFollow(config: Double, startAt: Double): this.type = js.native
+  def startFollow(config: PathConfig): this.type = js.native
+  def startFollow(config: PathConfig, startAt: Double): this.type = js.native
+  def startFollow(config: NumberTweenBuilderConfig): this.type = js.native
+  def startFollow(config: NumberTweenBuilderConfig, startAt: Double): this.type = js.native
   /**
     * Stops this PathFollower from following the path any longer.
     * 
     * This will invoke any 'stop' conditions that may exist on the Path, or for the follower.
     */
-  def stopFollow(): typings.phaser.Phaser.GameObjects.PathFollower = js.native
+  def stopFollow(): this.type = js.native
 }
 

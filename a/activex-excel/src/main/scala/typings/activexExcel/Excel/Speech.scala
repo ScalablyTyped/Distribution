@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.Speech")
 @js.native
-class Speech protected () extends js.Object {
+trait Speech extends js.Object {
   var Direction: XlSpeakDirection = js.native
   @JSName("Excel.Speech_typekey")
   var ExcelDotSpeech_typekey: Speech = js.native

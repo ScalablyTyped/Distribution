@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Custom
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object IOControlBufferingMethod extends js.Object {
   /** Neither. */
   @js.native
   sealed trait neither extends IOControlBufferingMethod
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[IOControlBufferingMethod with Double] = js.native
-  /* 0 */ @js.native
-  object buffered extends TopLevel[buffered with Double]
-  
-  /* 1 */ @js.native
-  object directInput extends TopLevel[directInput with Double]
-  
-  /* 2 */ @js.native
-  object directOutput extends TopLevel[directOutput with Double]
-  
-  /* 3 */ @js.native
-  object neither extends TopLevel[neither with Double]
   
 }
 

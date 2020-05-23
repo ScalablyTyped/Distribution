@@ -5,24 +5,39 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("chrome.cast.media.PhotoMediaMetadata")
-@js.native
-/**
-  * @constructor
-  * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.PhotoMediaMetadata
-  */
-class PhotoMediaMetadata () extends js.Object {
-  var artist: String = js.native
-  var creationDateTime: String = js.native
-  var height: Double = js.native
-  var images: js.Array[Image] = js.native
-  var latitude: Double = js.native
-  var location: String = js.native
-  var longitude: Double = js.native
-  var metadataType: MetadataType = js.native
-  var title: String = js.native
+trait PhotoMediaMetadata extends js.Object {
+  var artist: String
+  var creationDateTime: String
+  var height: Double
+  var images: js.Array[Image]
+  var latitude: Double
+  var location: String
+  var longitude: Double
+  var metadataType: MetadataType
+  var title: String
   /** @deprecated. Use metadataType instead. */
-  var `type`: MetadataType = js.native
-  var width: Double = js.native
+  var `type`: MetadataType
+  var width: Double
+}
+
+object PhotoMediaMetadata {
+  @scala.inline
+  def apply(
+    artist: String,
+    creationDateTime: String,
+    height: Double,
+    images: js.Array[Image],
+    latitude: Double,
+    location: String,
+    longitude: Double,
+    metadataType: MetadataType,
+    title: String,
+    `type`: MetadataType,
+    width: Double
+  ): PhotoMediaMetadata = {
+    val __obj = js.Dynamic.literal(artist = artist.asInstanceOf[js.Any], creationDateTime = creationDateTime.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], metadataType = metadataType.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PhotoMediaMetadata]
+  }
 }
 

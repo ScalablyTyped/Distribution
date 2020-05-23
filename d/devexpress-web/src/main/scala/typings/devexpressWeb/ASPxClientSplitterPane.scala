@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a client-side equivalent of the splitter's SplitterPane object.
   */
-@JSGlobal("ASPxClientSplitterPane")
 @js.native
-class ASPxClientSplitterPane () extends js.Object {
+trait ASPxClientSplitterPane extends js.Object {
   /**
     * Gets the index of the current pane within the pane collection to which it belongs.
     */

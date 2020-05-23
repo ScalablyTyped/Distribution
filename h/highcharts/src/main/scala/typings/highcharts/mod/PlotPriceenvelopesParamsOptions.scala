@@ -32,16 +32,16 @@ trait PlotPriceenvelopesParamsOptions extends js.Object {
 object PlotPriceenvelopesParamsOptions {
   @scala.inline
   def apply(
-    bottomBand: Int | Double = null,
-    index: Int | Double = null,
-    period: Int | Double = null,
-    topBand: Int | Double = null
+    bottomBand: js.UndefOr[Double] = js.undefined,
+    index: js.UndefOr[Double] = js.undefined,
+    period: js.UndefOr[Double] = js.undefined,
+    topBand: js.UndefOr[Double] = js.undefined
   ): PlotPriceenvelopesParamsOptions = {
     val __obj = js.Dynamic.literal()
-    if (bottomBand != null) __obj.updateDynamic("bottomBand")(bottomBand.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (topBand != null) __obj.updateDynamic("topBand")(topBand.asInstanceOf[js.Any])
+    if (!js.isUndefined(bottomBand)) __obj.updateDynamic("bottomBand")(bottomBand.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(period)) __obj.updateDynamic("period")(period.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(topBand)) __obj.updateDynamic("topBand")(topBand.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotPriceenvelopesParamsOptions]
   }
 }

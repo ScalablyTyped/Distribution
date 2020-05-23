@@ -7,9 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** A collection of phone call history entries. */
-@JSGlobal("Windows.ApplicationModel.Calls.PhoneCallHistoryStore")
 @js.native
-abstract class PhoneCallHistoryStore () extends js.Object {
+trait PhoneCallHistoryStore extends js.Object {
   /**
     * Deletes entries in the store.
     * @param callHistoryEntries The entries to delete.

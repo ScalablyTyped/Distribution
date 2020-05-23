@@ -1,7 +1,7 @@
 package typings.baseui.datepickerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.baseui.StatefulDatepickerPropsCa
+import typings.baseui.anon.StatefulDatepickerPropsCa
 import typings.react.mod.FC
 import scala.scalajs.js
 import scala.scalajs.js.`|`

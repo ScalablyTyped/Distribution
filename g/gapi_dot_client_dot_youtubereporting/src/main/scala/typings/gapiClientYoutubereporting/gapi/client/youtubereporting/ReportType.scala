@@ -31,7 +31,7 @@ object ReportType {
     if (deprecateTime != null) __obj.updateDynamic("deprecateTime")(deprecateTime.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(systemManaged)) __obj.updateDynamic("systemManaged")(systemManaged.asInstanceOf[js.Any])
+    if (!js.isUndefined(systemManaged)) __obj.updateDynamic("systemManaged")(systemManaged.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportType]
   }
 }

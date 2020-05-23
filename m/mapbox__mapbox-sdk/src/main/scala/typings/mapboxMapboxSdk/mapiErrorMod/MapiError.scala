@@ -36,13 +36,13 @@ object MapiError {
     `type`: String,
     body: js.Any = null,
     message: String = null,
-    statusCode: Int | Double = null
+    statusCode: js.UndefOr[Double] = js.undefined
   ): MapiError = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusCode)) __obj.updateDynamic("statusCode")(statusCode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapiError]
   }
 }

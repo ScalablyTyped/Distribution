@@ -5,20 +5,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the device detects a swipe gesture against the view.
-		 */
+  * Fired when the device detects a swipe gesture against the view.
+  */
 trait ProgressBarSwipeEvent extends ProgressBarBaseEvent {
   /**
-  			 * Direction of the swipe--either 'left', 'right', 'up', or 'down'.
-  			 */
+    * Direction of the swipe--either 'left', 'right', 'up', or 'down'.
+    */
   var direction: String
   /**
-  			 * X coordinate of the event's endpoint from the `source` view's coordinate system.
-  			 */
+    * X coordinate of the event's endpoint from the `source` view's coordinate system.
+    */
   var x: Double
   /**
-  			 * Y coordinate of the event's endpoint from the `source` view's coordinate system.
-  			 */
+    * Y coordinate of the event's endpoint from the `source` view's coordinate system.
+    */
   var y: Double
 }
 

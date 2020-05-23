@@ -1,11 +1,11 @@
 package typings.tablesorter
 
-import typings.jquery.JQuery_.Ajax.SuccessCallback
-import typings.jquery.JQuery_.Ajax.SuccessTextStatus
-import typings.jquery.JQuery_.jqXHR
+import typings.jquery.JQuery.Ajax.SuccessCallback
+import typings.jquery.JQuery.Ajax.SuccessTextStatus
+import typings.jquery.JQuery.jqXHR
 import typings.std.RegExp
-import typings.tablesorter.mod._Global_.HTMLElement
-import typings.tablesorter.mod._Global_.JQuery
+import typings.tablesorter.mod.global.HTMLElement
+import typings.tablesorter.mod.global.JQuery
 import typings.tablesorter.pagerConfigurationMod.PagerConfiguration
 import typings.tablesorter.pagerDataPartMod.PagerDataPart
 import typings.tablesorter.pagerMemoryMod.PagerMemory

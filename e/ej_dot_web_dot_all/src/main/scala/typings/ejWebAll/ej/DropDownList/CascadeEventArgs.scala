@@ -36,11 +36,11 @@ object CascadeEventArgs {
     `type`: String = null
   ): CascadeEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (cascadeModel != null) __obj.updateDynamic("cascadeModel")(cascadeModel.asInstanceOf[js.Any])
     if (cascadeValue != null) __obj.updateDynamic("cascadeValue")(cascadeValue.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (!js.isUndefined(requiresDefaultFilter)) __obj.updateDynamic("requiresDefaultFilter")(requiresDefaultFilter.asInstanceOf[js.Any])
+    if (!js.isUndefined(requiresDefaultFilter)) __obj.updateDynamic("requiresDefaultFilter")(requiresDefaultFilter.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CascadeEventArgs]
   }

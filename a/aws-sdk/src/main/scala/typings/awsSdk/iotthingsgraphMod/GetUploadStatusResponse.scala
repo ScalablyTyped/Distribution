@@ -45,13 +45,13 @@ object GetUploadStatusResponse {
     failureReason: StringList = null,
     namespaceArn: Arn = null,
     namespaceName: NamespaceName = null,
-    namespaceVersion: Int | Double = null
+    namespaceVersion: js.UndefOr[Version] = js.undefined
   ): GetUploadStatusResponse = {
     val __obj = js.Dynamic.literal(createdDate = createdDate.asInstanceOf[js.Any], uploadId = uploadId.asInstanceOf[js.Any], uploadStatus = uploadStatus.asInstanceOf[js.Any])
     if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason.asInstanceOf[js.Any])
     if (namespaceArn != null) __obj.updateDynamic("namespaceArn")(namespaceArn.asInstanceOf[js.Any])
     if (namespaceName != null) __obj.updateDynamic("namespaceName")(namespaceName.asInstanceOf[js.Any])
-    if (namespaceVersion != null) __obj.updateDynamic("namespaceVersion")(namespaceVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(namespaceVersion)) __obj.updateDynamic("namespaceVersion")(namespaceVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUploadStatusResponse]
   }
 }

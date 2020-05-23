@@ -41,15 +41,15 @@ object OptionsLayout {
     direction: rtl | ltr = null,
     fitSystemWindows: js.UndefOr[Boolean] = js.undefined,
     orientation: js.Array[LayoutOrientation] = null,
-    topMargin: Int | Double = null
+    topMargin: js.UndefOr[Double] = js.undefined
   ): OptionsLayout = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (componentBackgroundColor != null) __obj.updateDynamic("componentBackgroundColor")(componentBackgroundColor.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(fitSystemWindows)) __obj.updateDynamic("fitSystemWindows")(fitSystemWindows.asInstanceOf[js.Any])
+    if (!js.isUndefined(fitSystemWindows)) __obj.updateDynamic("fitSystemWindows")(fitSystemWindows.get.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (topMargin != null) __obj.updateDynamic("topMargin")(topMargin.asInstanceOf[js.Any])
+    if (!js.isUndefined(topMargin)) __obj.updateDynamic("topMargin")(topMargin.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsLayout]
   }
 }

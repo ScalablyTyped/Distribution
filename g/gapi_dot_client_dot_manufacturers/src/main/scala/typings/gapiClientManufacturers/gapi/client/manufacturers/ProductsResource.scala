@@ -1,15 +1,15 @@
 package typings.gapiClientManufacturers.gapi.client.manufacturers
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientManufacturers.AnonAccesstoken
-import typings.gapiClientManufacturers.AnonAlt
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientManufacturers.anon.Accesstoken
+import typings.gapiClientManufacturers.anon.Alt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ProductsResource extends js.Object {
   /** Deletes the product from a Manufacturer Center account. */
-  def delete(request: AnonAccesstoken): Request_[js.Object]
+  def delete(request: Accesstoken): Request[js.Object]
   /**
     * Gets the product from a Manufacturer Center account, including product
     * issues.
@@ -19,9 +19,9 @@ trait ProductsResource extends js.Object {
     * available once the product has been processed, other issues may take days
     * to appear.
     */
-  def get(request: AnonAccesstoken): Request_[Product]
+  def get(request: Accesstoken): Request[Product]
   /** Lists all the products in a Manufacturer Center account. */
-  def list(request: AnonAlt): Request_[ListProductsResponse]
+  def list(request: Alt): Request[ListProductsResponse]
   /**
     * Inserts or updates the product in a Manufacturer Center account.
     *
@@ -36,16 +36,16 @@ trait ProductsResource extends js.Object {
     * retrieved. Until then, new products will be unavailable, and retrieval
     * of updated products will return the original state of the product.
     */
-  def update(request: AnonAccesstoken): Request_[Product]
+  def update(request: Accesstoken): Request[Product]
 }
 
 object ProductsResource {
   @scala.inline
   def apply(
-    delete: AnonAccesstoken => Request_[js.Object],
-    get: AnonAccesstoken => Request_[Product],
-    list: AnonAlt => Request_[ListProductsResponse],
-    update: AnonAccesstoken => Request_[Product]
+    delete: Accesstoken => Request[js.Object],
+    get: Accesstoken => Request[Product],
+    list: Alt => Request[ListProductsResponse],
+    update: Accesstoken => Request[Product]
   ): ProductsResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
     __obj.asInstanceOf[ProductsResource]

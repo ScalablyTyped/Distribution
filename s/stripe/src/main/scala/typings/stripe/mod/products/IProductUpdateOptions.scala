@@ -74,7 +74,7 @@ object IProductUpdateOptions {
     url: String = null
   ): IProductUpdateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
     if (deactivate_on != null) __obj.updateDynamic("deactivate_on")(deactivate_on.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
@@ -84,7 +84,7 @@ object IProductUpdateOptions {
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (package_dimensions != null) __obj.updateDynamic("package_dimensions")(package_dimensions.asInstanceOf[js.Any])
-    if (!js.isUndefined(shippable)) __obj.updateDynamic("shippable")(shippable.asInstanceOf[js.Any])
+    if (!js.isUndefined(shippable)) __obj.updateDynamic("shippable")(shippable.get.asInstanceOf[js.Any])
     if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProductUpdateOptions]

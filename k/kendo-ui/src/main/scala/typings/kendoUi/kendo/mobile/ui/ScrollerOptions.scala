@@ -25,7 +25,7 @@ object ScrollerOptions {
     messages: ScrollerMessages = null,
     name: String = null,
     pull: /* e */ ScrollerEvent => Unit = null,
-    pullOffset: Int | Double = null,
+    pullOffset: js.UndefOr[Double] = js.undefined,
     pullToRefresh: js.UndefOr[Boolean] = js.undefined,
     resize: /* e */ ScrollerEvent => Unit = null,
     scroll: /* e */ ScrollerScrollEvent => Unit = null,
@@ -34,17 +34,17 @@ object ScrollerOptions {
     zoom: js.UndefOr[Boolean] = js.undefined
   ): ScrollerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(elastic)) __obj.updateDynamic("elastic")(elastic.asInstanceOf[js.Any])
+    if (!js.isUndefined(elastic)) __obj.updateDynamic("elastic")(elastic.get.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (pull != null) __obj.updateDynamic("pull")(js.Any.fromFunction1(pull))
-    if (pullOffset != null) __obj.updateDynamic("pullOffset")(pullOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(pullToRefresh)) __obj.updateDynamic("pullToRefresh")(pullToRefresh.asInstanceOf[js.Any])
+    if (!js.isUndefined(pullOffset)) __obj.updateDynamic("pullOffset")(pullOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pullToRefresh)) __obj.updateDynamic("pullToRefresh")(pullToRefresh.get.asInstanceOf[js.Any])
     if (resize != null) __obj.updateDynamic("resize")(js.Any.fromFunction1(resize))
     if (scroll != null) __obj.updateDynamic("scroll")(js.Any.fromFunction1(scroll))
-    if (!js.isUndefined(useNative)) __obj.updateDynamic("useNative")(useNative.asInstanceOf[js.Any])
-    if (!js.isUndefined(visibleScrollHints)) __obj.updateDynamic("visibleScrollHints")(visibleScrollHints.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNative)) __obj.updateDynamic("useNative")(useNative.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visibleScrollHints)) __obj.updateDynamic("visibleScrollHints")(visibleScrollHints.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollerOptions]
   }
 }

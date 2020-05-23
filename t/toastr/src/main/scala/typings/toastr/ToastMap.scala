@@ -6,24 +6,24 @@ import scala.scalajs.js.annotation._
 
 trait ToastMap extends js.Object {
   /**
-  	 * The toast icon class.
-  	 */
+    * The toast icon class.
+    */
   var iconClass: String
   /**
-  	 * The toast message.
-  	 */
+    * The toast message.
+    */
   var message: String
   /**
-  	 * Any override options specified when the toast was created.
-  	 */
+    * Any override options specified when the toast was created.
+    */
   var optionsOverride: js.UndefOr[ToastrOptions] = js.undefined
   /**
-  	 * The toast title.
-  	 */
+    * The toast title.
+    */
   var title: js.UndefOr[String] = js.undefined
   /**
-  	 * The toast type.
-  	 */
+    * The toast type.
+    */
   var `type`: ToastrType
 }
 

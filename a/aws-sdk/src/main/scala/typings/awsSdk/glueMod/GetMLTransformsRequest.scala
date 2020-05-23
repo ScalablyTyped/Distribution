@@ -28,13 +28,13 @@ object GetMLTransformsRequest {
   @scala.inline
   def apply(
     Filter: TransformFilterCriteria = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[PageSize] = js.undefined,
     NextToken: PaginationToken = null,
     Sort: TransformSortCriteria = null
   ): GetMLTransformsRequest = {
     val __obj = js.Dynamic.literal()
     if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (Sort != null) __obj.updateDynamic("Sort")(Sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMLTransformsRequest]

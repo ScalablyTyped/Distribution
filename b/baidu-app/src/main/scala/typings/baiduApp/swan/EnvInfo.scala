@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation._
 
 trait EnvInfo extends js.Object {
   var appKey: String
-  	// 智能小程序 App Key	2.0.28
+      // 智能小程序 App Key    2.0.28
   var appName: String
-  	// 智能小程序名称
+      // 智能小程序名称
   var lastAppURL: String
-  	// 基础库版本
+      // 基础库版本
   var scheme: String
-  	// 智能小程序最近一次打开的调起协议
+      // 智能小程序最近一次打开的调起协议
   var sdkVersion: String
 }
 

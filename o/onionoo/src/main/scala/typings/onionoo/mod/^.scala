@@ -1,7 +1,7 @@
 package typings.onionoo.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.onionoo.InstancePartialEndpoints
+import typings.onionoo.anon.InstancePartialEndpoints
 import typings.onionoo.mod.Onionoo.OptionsWithEndpoints
 import scala.scalajs.js
 import scala.scalajs.js.`|`

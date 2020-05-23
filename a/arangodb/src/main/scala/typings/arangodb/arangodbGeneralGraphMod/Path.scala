@@ -15,7 +15,7 @@ trait Path[A /* <: js.Object */, B /* <: js.Object */, E /* <: js.Object */, V /
 
 object Path {
   @scala.inline
-  def apply[A /* <: js.Object */, B /* <: js.Object */, E /* <: js.Object */, V /* <: js.Object */](
+  def apply[A, B, E, V](
     destination: Document[B],
     edges: js.Array[Edge[E]],
     source: Document[A],

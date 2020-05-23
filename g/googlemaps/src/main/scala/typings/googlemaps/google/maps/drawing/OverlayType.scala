@@ -1,6 +1,5 @@
 package typings.googlemaps.google.maps.drawing
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,23 +49,6 @@ object OverlayType extends js.Object {
     */
   @js.native
   sealed trait RECTANGLE extends OverlayType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[OverlayType with String] = js.native
-  /* "circle" */ @js.native
-  object CIRCLE extends TopLevel[CIRCLE with String]
-  
-  /* "marker" */ @js.native
-  object MARKER extends TopLevel[MARKER with String]
-  
-  /* "polygon" */ @js.native
-  object POLYGON extends TopLevel[POLYGON with String]
-  
-  /* "polyline" */ @js.native
-  object POLYLINE extends TopLevel[POLYLINE with String]
-  
-  /* "rectangle" */ @js.native
-  object RECTANGLE extends TopLevel[RECTANGLE with String]
   
 }
 

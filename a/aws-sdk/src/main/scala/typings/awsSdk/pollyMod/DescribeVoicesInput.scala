@@ -28,13 +28,13 @@ object DescribeVoicesInput {
   @scala.inline
   def apply(
     Engine: Engine = null,
-    IncludeAdditionalLanguageCodes: js.UndefOr[Boolean] = js.undefined,
+    IncludeAdditionalLanguageCodes: js.UndefOr[IncludeAdditionalLanguageCodes] = js.undefined,
     LanguageCode: LanguageCode = null,
     NextToken: NextToken = null
   ): DescribeVoicesInput = {
     val __obj = js.Dynamic.literal()
     if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeAdditionalLanguageCodes)) __obj.updateDynamic("IncludeAdditionalLanguageCodes")(IncludeAdditionalLanguageCodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeAdditionalLanguageCodes)) __obj.updateDynamic("IncludeAdditionalLanguageCodes")(IncludeAdditionalLanguageCodes.get.asInstanceOf[js.Any])
     if (LanguageCode != null) __obj.updateDynamic("LanguageCode")(LanguageCode.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeVoicesInput]

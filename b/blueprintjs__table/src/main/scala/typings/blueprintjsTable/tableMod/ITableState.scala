@@ -78,8 +78,8 @@ object ITableState {
     horizontalGuides: js.Array[Double] = null,
     isLayoutLocked: js.UndefOr[Boolean] = js.undefined,
     isReordering: js.UndefOr[Boolean] = js.undefined,
-    numFrozenColumnsClamped: Int | Double = null,
-    numFrozenRowsClamped: Int | Double = null,
+    numFrozenColumnsClamped: js.UndefOr[Double] = js.undefined,
+    numFrozenRowsClamped: js.UndefOr[Double] = js.undefined,
     rowHeights: js.Array[Double] = null,
     selectedRegions: js.Array[IRegion] = null,
     verticalGuides: js.Array[Double] = null,
@@ -89,10 +89,10 @@ object ITableState {
     if (columnWidths != null) __obj.updateDynamic("columnWidths")(columnWidths.asInstanceOf[js.Any])
     if (focusedCell != null) __obj.updateDynamic("focusedCell")(focusedCell.asInstanceOf[js.Any])
     if (horizontalGuides != null) __obj.updateDynamic("horizontalGuides")(horizontalGuides.asInstanceOf[js.Any])
-    if (!js.isUndefined(isLayoutLocked)) __obj.updateDynamic("isLayoutLocked")(isLayoutLocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(isReordering)) __obj.updateDynamic("isReordering")(isReordering.asInstanceOf[js.Any])
-    if (numFrozenColumnsClamped != null) __obj.updateDynamic("numFrozenColumnsClamped")(numFrozenColumnsClamped.asInstanceOf[js.Any])
-    if (numFrozenRowsClamped != null) __obj.updateDynamic("numFrozenRowsClamped")(numFrozenRowsClamped.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLayoutLocked)) __obj.updateDynamic("isLayoutLocked")(isLayoutLocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isReordering)) __obj.updateDynamic("isReordering")(isReordering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numFrozenColumnsClamped)) __obj.updateDynamic("numFrozenColumnsClamped")(numFrozenColumnsClamped.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numFrozenRowsClamped)) __obj.updateDynamic("numFrozenRowsClamped")(numFrozenRowsClamped.get.asInstanceOf[js.Any])
     if (rowHeights != null) __obj.updateDynamic("rowHeights")(rowHeights.asInstanceOf[js.Any])
     if (selectedRegions != null) __obj.updateDynamic("selectedRegions")(selectedRegions.asInstanceOf[js.Any])
     if (verticalGuides != null) __obj.updateDynamic("verticalGuides")(verticalGuides.asInstanceOf[js.Any])

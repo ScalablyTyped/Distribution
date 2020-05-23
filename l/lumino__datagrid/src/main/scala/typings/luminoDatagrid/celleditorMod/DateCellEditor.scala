@@ -1,6 +1,6 @@
 package typings.luminoDatagrid.celleditorMod
 
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,6 +20,6 @@ class DateCellEditor () extends CellEditor {
     *
     * @param event - The DOM event sent to the editor.
     */
-  def handleEvent(event: Event_): Unit = js.native
+  def handleEvent(event: Event): Unit = js.native
 }
 

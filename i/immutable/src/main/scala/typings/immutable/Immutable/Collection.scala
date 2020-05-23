@@ -3,7 +3,6 @@ package typings.immutable.Immutable
 import org.scalablytyped.runtime.StringDictionary
 import typings.immutable.Immutable.Seq.Indexed
 import typings.immutable.Immutable.Seq.Keyed
-import typings.immutable.Immutable.Seq.Set
 import typings.std.Iterable
 import typings.std.IterableIterator
 import scala.scalajs.js
@@ -780,11 +779,11 @@ trait Collection[K, V] extends ValueObject {
     * Note: This is equivalent to `Set(this)`, but provided to allow for
     * chained expressions.
     */
-  def toSet(): Set_[V] = js.native
+  def toSet(): Set[V] = js.native
   /**
     * Returns a Seq.Set of the values of this Collection, discarding keys.
     */
-  def toSetSeq(): Set[V] = js.native
+  def toSetSeq(): typings.immutable.Immutable.Seq.Set[V] = js.native
   /**
     * Converts this Collection to a Stack, discarding keys. Throws if values
     * are not hashable.
@@ -1110,41 +1109,6 @@ object Collection extends js.Object {
       predicate: js.Function3[/* value */ T, /* key */ T, /* iter */ this.type, /* is F */ Boolean],
       context: js.Any
     ): typings.immutable.Immutable.Collection.Set[F] = js.native
-  }
-  
-  def apply[I /* <: Collection[_, _] */](collection: I): I = js.native
-  def apply[T](collection: Iterable[T]): typings.immutable.Immutable.Collection.Indexed[T] = js.native
-  def apply[V](obj: StringDictionary[V]): typings.immutable.Immutable.Collection.Keyed[String, V] = js.native
-  /**
-    * @deprecated use `const { isAssociative } = require('immutable')`
-    */
-  def isAssociative(maybeAssociative: js.Any): Boolean = js.native
-  /**
-    * @deprecated use `const { isIndexed } = require('immutable')`
-    */
-  def isIndexed(maybeIndexed: js.Any): /* is immutable.Immutable.Collection.Indexed<any> */ Boolean = js.native
-  /**
-    * @deprecated use `const { isKeyed } = require('immutable')`
-    */
-  def isKeyed(maybeKeyed: js.Any): /* is immutable.Immutable.Collection.Keyed<any, any> */ Boolean = js.native
-  /**
-    * @deprecated use `const { isOrdered } = require('immutable')`
-    */
-  def isOrdered(maybeOrdered: js.Any): Boolean = js.native
-  @js.native
-  object Indexed extends js.Object {
-    def apply[T](collection: Iterable[T]): typings.immutable.Immutable.Collection.Indexed[T] = js.native
-  }
-  
-  @js.native
-  object Keyed extends js.Object {
-    def apply[V](obj: StringDictionary[V]): typings.immutable.Immutable.Collection.Keyed[String, V] = js.native
-    def apply[K, V](collection: Iterable[js.Tuple2[K, V]]): typings.immutable.Immutable.Collection.Keyed[K, V] = js.native
-  }
-  
-  @js.native
-  object Set extends js.Object {
-    def apply[T](collection: Iterable[T]): typings.immutable.Immutable.Collection.Set[T] = js.native
   }
   
 }

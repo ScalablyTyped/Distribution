@@ -25,11 +25,16 @@ trait AccessibilityValue extends js.Object {
 
 object AccessibilityValue {
   @scala.inline
-  def apply(max: Int | Double = null, min: Int | Double = null, now: Int | Double = null, text: String = null): AccessibilityValue = {
+  def apply(
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
+    now: js.UndefOr[Double] = js.undefined,
+    text: String = null
+  ): AccessibilityValue = {
     val __obj = js.Dynamic.literal()
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (now != null) __obj.updateDynamic("now")(now.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(now)) __obj.updateDynamic("now")(now.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessibilityValue]
   }

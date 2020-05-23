@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.maps.KmlLayer")
 @js.native
-class KmlLayer () extends MVCObject {
-  def this(opts: KmlLayerOptions) = this()
+trait KmlLayer extends MVCObject {
   def getDefaultViewport(): LatLngBounds = js.native
   def getMap(): Map[Element] = js.native
   def getMetadata(): KmlLayerMetadata = js.native

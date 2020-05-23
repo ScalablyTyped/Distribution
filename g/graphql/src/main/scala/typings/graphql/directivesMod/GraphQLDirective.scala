@@ -1,6 +1,6 @@
 package typings.graphql.directivesMod
 
-import typings.graphql.GraphQLDirectiveConfigarg
+import typings.graphql.anon.GraphQLDirectiveConfigarg
 import typings.graphql.astMod.DirectiveDefinitionNode
 import typings.graphql.definitionMod.GraphQLArgument
 import typings.graphql.directiveLocationMod.DirectiveLocationEnum

@@ -56,9 +56,9 @@ object LoadOptions {
     searchOperation: String = null,
     searchValue: js.Any = null,
     select: js.Any = null,
-    skip: Int | Double = null,
+    skip: js.UndefOr[Double] = js.undefined,
     sort: js.Any = null,
-    take: Int | Double = null,
+    take: js.UndefOr[Double] = js.undefined,
     totalSummary: js.Any = null,
     userData: js.Any = null
   ): LoadOptions = {
@@ -69,15 +69,15 @@ object LoadOptions {
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (groupSummary != null) __obj.updateDynamic("groupSummary")(groupSummary.asInstanceOf[js.Any])
     if (parentIds != null) __obj.updateDynamic("parentIds")(parentIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireGroupCount)) __obj.updateDynamic("requireGroupCount")(requireGroupCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireTotalCount)) __obj.updateDynamic("requireTotalCount")(requireTotalCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireGroupCount)) __obj.updateDynamic("requireGroupCount")(requireGroupCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireTotalCount)) __obj.updateDynamic("requireTotalCount")(requireTotalCount.get.asInstanceOf[js.Any])
     if (searchExpr != null) __obj.updateDynamic("searchExpr")(searchExpr.asInstanceOf[js.Any])
     if (searchOperation != null) __obj.updateDynamic("searchOperation")(searchOperation.asInstanceOf[js.Any])
     if (searchValue != null) __obj.updateDynamic("searchValue")(searchValue.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
-    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (take != null) __obj.updateDynamic("take")(take.asInstanceOf[js.Any])
+    if (!js.isUndefined(take)) __obj.updateDynamic("take")(take.get.asInstanceOf[js.Any])
     if (totalSummary != null) __obj.updateDynamic("totalSummary")(totalSummary.asInstanceOf[js.Any])
     if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadOptions]

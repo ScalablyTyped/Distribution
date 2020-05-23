@@ -16,10 +16,10 @@ trait WingBlankProps extends WingBlankPropsType {
 
 object WingBlankProps {
   @scala.inline
-  def apply(size: sm | md | lg = null, style: StyleProp[ViewStyle] = null): WingBlankProps = {
+  def apply(size: sm | md | lg = null, style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined): WingBlankProps = {
     val __obj = js.Dynamic.literal()
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[WingBlankProps]
   }
 }

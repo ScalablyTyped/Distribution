@@ -1,9 +1,9 @@
 package typings.gapiClientGenomics.gapi.client.genomics
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientGenomics.AnonAccesstoken
-import typings.gapiClientGenomics.AnonUpdateMask
-import typings.gapiClientGenomics.AnonUploadType
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientGenomics.anon.Accesstoken
+import typings.gapiClientGenomics.anon.UpdateMask
+import typings.gapiClientGenomics.anon.UploadType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait VariantsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def create(request: AnonAccesstoken): Request_[Variant]
+  def create(request: Accesstoken): Request[Variant]
   /**
     * Deletes a variant.
     *
@@ -24,7 +24,7 @@ trait VariantsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def delete(request: AnonUploadType): Request_[js.Object]
+  def delete(request: UploadType): Request[js.Object]
   /**
     * Gets a variant by ID.
     *
@@ -32,7 +32,7 @@ trait VariantsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def get(request: AnonUploadType): Request_[Variant]
+  def get(request: UploadType): Request[Variant]
   /**
     * Creates variant data by asynchronously importing the provided information.
     *
@@ -53,7 +53,7 @@ trait VariantsResource extends js.Object {
     * call-specific context.
     * Imported VCF headers are appended to the metadata already in a variant set.
     */
-  def `import`(request: AnonAccesstoken): Request_[Operation]
+  def `import`(request: Accesstoken): Request[Operation]
   /**
     * Merges the given variants with existing variants.
     *
@@ -147,7 +147,7 @@ trait VariantsResource extends js.Object {
     * This may be the desired outcome, but it is up to the user to determine if
     * if that is indeed the case.
     */
-  def merge(request: AnonAccesstoken): Request_[js.Object]
+  def merge(request: Accesstoken): Request[js.Object]
   /**
     * Updates a variant.
     *
@@ -158,7 +158,7 @@ trait VariantsResource extends js.Object {
     * This method supports patch semantics. Returns the modified variant without
     * its calls.
     */
-  def patch(request: AnonUpdateMask): Request_[Variant]
+  def patch(request: UpdateMask): Request[Variant]
   /**
     * Gets a list of variants matching the criteria.
     *
@@ -169,19 +169,19 @@ trait VariantsResource extends js.Object {
     * Implements
     * [GlobalAllianceApi.searchVariants](https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/variantmethods.avdl#L126).
     */
-  def search(request: AnonAccesstoken): Request_[SearchVariantsResponse]
+  def search(request: Accesstoken): Request[SearchVariantsResponse]
 }
 
 object VariantsResource {
   @scala.inline
   def apply(
-    create: AnonAccesstoken => Request_[Variant],
-    delete: AnonUploadType => Request_[js.Object],
-    get: AnonUploadType => Request_[Variant],
-    `import`: AnonAccesstoken => Request_[Operation],
-    merge: AnonAccesstoken => Request_[js.Object],
-    patch: AnonUpdateMask => Request_[Variant],
-    search: AnonAccesstoken => Request_[SearchVariantsResponse]
+    create: Accesstoken => Request[Variant],
+    delete: UploadType => Request[js.Object],
+    get: UploadType => Request[Variant],
+    `import`: Accesstoken => Request[Operation],
+    merge: Accesstoken => Request[js.Object],
+    patch: UpdateMask => Request[Variant],
+    search: Accesstoken => Request[SearchVariantsResponse]
   ): VariantsResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), merge = js.Any.fromFunction1(merge), patch = js.Any.fromFunction1(patch), search = js.Any.fromFunction1(search))
     __obj.updateDynamic("import")(js.Any.fromFunction1(`import`))

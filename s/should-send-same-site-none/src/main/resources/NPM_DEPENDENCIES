@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "should-send-same-site-none" : "2.0.4"
+      "should-send-same-site-none" : "2.0.5"
     }
   ],
   "test-dependencies" : [
     {
-      "should-send-same-site-none" : "2.0.4"
+      "should-send-same-site-none" : "2.0.5"
     }
   ],
   "compile-devDependencies" : [

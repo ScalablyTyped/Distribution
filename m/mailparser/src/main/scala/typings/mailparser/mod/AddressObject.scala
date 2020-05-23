@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
   */
 trait AddressObject extends _HeaderValue {
   /**
-  	 * A formatted address string for HTML context.
-  	 */
+    * A formatted address string for HTML context.
+    */
   var html: String
   /**
-  	 * A formatted address string for plaintext context.
-  	 */
+    * A formatted address string for plaintext context.
+    */
   var text: String
   /**
-  	 * An array with address details.
-  	 */
+    * An array with address details.
+    */
   var value: js.Array[EmailAddress]
 }
 

@@ -1,8 +1,8 @@
 package typings.angularCore.testingTestingMod
 
-import typings.angularCore.AnonDeps
-import typings.angularCore.AnonProviders
-import typings.angularCore.AnonUseValue
+import typings.angularCore.anon.Deps
+import typings.angularCore.anon.Providers
+import typings.angularCore.anon.UseValue
 import typings.angularCore.mod.AbstractType
 import typings.angularCore.mod.Component
 import typings.angularCore.mod.Directive
@@ -50,7 +50,7 @@ object ɵangularPackagesCoreTestingTestingB extends js.Object {
     * as fetching urls is asynchronous.
     */
   def compileComponents(): js.Promise[_] = js.native
-  def configureCompiler(config: AnonProviders): TestBedStatic = js.native
+  def configureCompiler(config: Providers): TestBedStatic = js.native
   /**
     * Allows overriding default providers, directives, pipes, modules of the test injector,
     * which are defined in test_injector.js
@@ -106,8 +106,8 @@ object ɵangularPackagesCoreTestingTestingB extends js.Object {
   def overrideDirective(directive: Type[_], `override`: MetadataOverride[Directive]): TestBedStatic = js.native
   def overrideModule(ngModule: Type[_], `override`: MetadataOverride[NgModule]): TestBedStatic = js.native
   def overridePipe(pipe: Type[_], `override`: MetadataOverride[Pipe]): TestBedStatic = js.native
-  def overrideProvider(token: js.Any, provider: AnonDeps): TestBedStatic = js.native
-  def overrideProvider(token: js.Any, provider: AnonUseValue): TestBedStatic = js.native
+  def overrideProvider(token: js.Any, provider: Deps): TestBedStatic = js.native
+  def overrideProvider(token: js.Any, provider: UseValue): TestBedStatic = js.native
   def overrideTemplate(component: Type[_], template: String): TestBedStatic = js.native
   /**
     * Overrides the template of the given component, compiling the template

@@ -1,7 +1,5 @@
 package typings.antDesignReactNative
 
-import typings.antDesignReactNative.antDesignReactNativeStrings.List
-import typings.antDesignReactNative.antDesignReactNativeStrings.`List Example`
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +15,7 @@ object listDemoBasicMod extends js.Object {
   @js.native
   class default () extends BasicListExample
   
-  val description: `List Example` = js.native
-  val title: List = js.native
+  val description: /* "List Example" */ String = js.native
+  val title: /* "List" */ String = js.native
 }
 

@@ -27,10 +27,10 @@ object RegisterOptions {
     ctx: EventEmitter = null,
     dc: String = null,
     id: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     stale: js.UndefOr[Boolean] = js.undefined,
     tags: js.Array[String] = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     token: String = null,
     wait: String = null,
     wan: js.UndefOr[Boolean] = js.undefined
@@ -39,17 +39,17 @@ object RegisterOptions {
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     if (check != null) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
     if (checks != null) __obj.updateDynamic("checks")(checks.asInstanceOf[js.Any])
-    if (!js.isUndefined(consistent)) __obj.updateDynamic("consistent")(consistent.asInstanceOf[js.Any])
+    if (!js.isUndefined(consistent)) __obj.updateDynamic("consistent")(consistent.get.asInstanceOf[js.Any])
     if (ctx != null) __obj.updateDynamic("ctx")(ctx.asInstanceOf[js.Any])
     if (dc != null) __obj.updateDynamic("dc")(dc.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(stale)) __obj.updateDynamic("stale")(stale.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stale)) __obj.updateDynamic("stale")(stale.get.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     if (wait != null) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
-    if (!js.isUndefined(wan)) __obj.updateDynamic("wan")(wan.asInstanceOf[js.Any])
+    if (!js.isUndefined(wan)) __obj.updateDynamic("wan")(wan.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterOptions]
   }
 }

@@ -52,23 +52,23 @@ object Source {
     filter: Boolean | (js.Function2[/* item */ js.UndefOr[js.Any], /* displayKey */ js.UndefOr[String], Boolean]) = null,
     matcher: (/* item */ js.UndefOr[js.Any], /* displayKey */ js.UndefOr[String]) => Boolean = null,
     maxLength: `false` | Double = null,
-    minLength: Int | Double = null,
+    minLength: js.UndefOr[Double] = js.undefined,
     template: String | (js.Function2[/* query */ js.UndefOr[String], /* item */ js.UndefOr[js.Any], String]) = null,
-    ttl: Int | Double = null
+    ttl: js.UndefOr[Double] = js.undefined
   ): Source = {
     val __obj = js.Dynamic.literal()
     if (ajax != null) __obj.updateDynamic("ajax")(ajax.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (!js.isUndefined(compression)) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
+    if (!js.isUndefined(compression)) __obj.updateDynamic("compression")(compression.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (!js.isUndefined(dynamic)) __obj.updateDynamic("dynamic")(dynamic.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamic)) __obj.updateDynamic("dynamic")(dynamic.get.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (matcher != null) __obj.updateDynamic("matcher")(js.Any.fromFunction2(matcher))
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(minLength)) __obj.updateDynamic("minLength")(minLength.get.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source]
   }
 }

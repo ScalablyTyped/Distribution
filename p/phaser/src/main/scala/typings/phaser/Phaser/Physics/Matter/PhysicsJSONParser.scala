@@ -1,7 +1,5 @@
 package typings.phaser.Phaser.Physics.Matter
 
-import typings.phaser.MatterJS.BodyType
-import typings.phaser.Phaser.Types.Physics.Matter.MatterBodyConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,15 +44,5 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("Phaser.Physics.Matter.PhysicsJSONParser")
 @js.native
-object PhysicsJSONParser extends js.Object {
-  /**
-    * Parses a body element from the given JSON data.
-    * @param x The horizontal world location of the body.
-    * @param y The vertical world location of the body.
-    * @param config The body configuration data.
-    * @param options An optional Body configuration object that is used to set initial Body properties on creation.
-    */
-  def parseBody(x: Double, y: Double, config: js.Object): BodyType = js.native
-  def parseBody(x: Double, y: Double, config: js.Object, options: MatterBodyConfig): BodyType = js.native
-}
+object PhysicsJSONParser extends js.Object
 

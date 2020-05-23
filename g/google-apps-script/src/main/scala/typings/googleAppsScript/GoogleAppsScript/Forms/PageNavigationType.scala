@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Forms
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,20 +48,6 @@ object PageNavigationType extends js.Object {
   
   @js.native
   sealed trait SUBMIT extends PageNavigationType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PageNavigationType with Double] = js.native
-  /* 0 */ @js.native
-  object CONTINUE extends TopLevel[CONTINUE with Double]
-  
-  /* 1 */ @js.native
-  object GO_TO_PAGE extends TopLevel[GO_TO_PAGE with Double]
-  
-  /* 2 */ @js.native
-  object RESTART extends TopLevel[RESTART with Double]
-  
-  /* 3 */ @js.native
-  object SUBMIT extends TopLevel[SUBMIT with Double]
   
 }
 

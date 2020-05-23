@@ -13,8 +13,7 @@ trait RouterState extends js.Object {
 object RouterState {
   @scala.inline
   def apply(location: Location[LocationState] = null): RouterState = {
-    val __obj = js.Dynamic.literal()
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouterState]
   }
 }

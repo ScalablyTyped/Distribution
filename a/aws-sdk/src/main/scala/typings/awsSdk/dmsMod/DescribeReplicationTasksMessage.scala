@@ -29,14 +29,14 @@ object DescribeReplicationTasksMessage {
   def apply(
     Filters: FilterList = null,
     Marker: String = null,
-    MaxRecords: Int | Double = null,
-    WithoutSettings: js.UndefOr[scala.Boolean] = js.undefined
+    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
+    WithoutSettings: js.UndefOr[BooleanOptional] = js.undefined
   ): DescribeReplicationTasksMessage = {
     val __obj = js.Dynamic.literal()
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
-    if (!js.isUndefined(WithoutSettings)) __obj.updateDynamic("WithoutSettings")(WithoutSettings.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(WithoutSettings)) __obj.updateDynamic("WithoutSettings")(WithoutSettings.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeReplicationTasksMessage]
   }
 }

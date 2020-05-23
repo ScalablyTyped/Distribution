@@ -1,14 +1,11 @@
 package typings.amapJsApi.AMap
 
-import typings.amapJsApi.AMap.Overlay.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.Overlay")
 @js.native
-abstract class Overlay_[ExtraData] () extends EventEmitter {
-  def this(options: Options[_]) = this()
+trait Overlay_[ExtraData] extends EventEmitter {
   /**
     * 获取自定义数据
     */

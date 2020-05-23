@@ -1,0 +1,21 @@
+package typings.angularCompiler.anon
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait UsesOnChanges extends js.Object {
+  /**
+    * Whether the directive uses NgOnChanges.
+    */
+  var usesOnChanges: Boolean
+}
+
+object UsesOnChanges {
+  @scala.inline
+  def apply(usesOnChanges: Boolean): UsesOnChanges = {
+    val __obj = js.Dynamic.literal(usesOnChanges = usesOnChanges.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UsesOnChanges]
+  }
+}
+

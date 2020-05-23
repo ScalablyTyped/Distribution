@@ -1,6 +1,6 @@
 package typings.topo.mod
 
-import typings.topo.AnonAfter
+import typings.topo.anon.After
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,9 +26,9 @@ trait Topo[TNode, TGroup] extends js.Object {
     * @returns an array of the topologically sorted nodes.
     */
   def add(nodes: TNode): js.Array[TNode] = js.native
-  def add(nodes: TNode, options: AnonAfter[TGroup]): js.Array[TNode] = js.native
+  def add(nodes: TNode, options: After[TGroup]): js.Array[TNode] = js.native
   def add(nodes: js.Array[TNode]): js.Array[TNode] = js.native
-  def add(nodes: js.Array[TNode], options: AnonAfter[TGroup]): js.Array[TNode] = js.native
+  def add(nodes: js.Array[TNode], options: After[TGroup]): js.Array[TNode] = js.native
   def merge(others: js.Array[Topo[TNode, TGroup]]): js.Array[TNode] = js.native
   /**
     * Merges another `Topo` object into the current object.

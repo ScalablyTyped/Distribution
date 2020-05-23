@@ -5,11 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.dataviz.drawing.LinearGradient")
 @js.native
-class LinearGradient ()
+trait LinearGradient
   extends typings.kendoUi.kendo.drawing.Gradient {
-  def this(options: LinearGradientOptions) = this()
   @JSName("options")
   var options_LinearGradient: LinearGradientOptions = js.native
   def end(): Point = js.native

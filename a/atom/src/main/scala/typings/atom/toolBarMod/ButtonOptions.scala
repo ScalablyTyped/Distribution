@@ -1,8 +1,8 @@
 package typings.atom.toolBarMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atom.AnonClass
-import typings.atom.AnonItem
+import typings.atom.anon.Class
+import typings.atom.anon.Item
 import typings.atom.atomStrings.devicon
 import typings.atom.atomStrings.fa
 import typings.atom.atomStrings.fab
@@ -124,7 +124,7 @@ trait ButtonOptions extends js.Object {
   /** (optional)
     * The tooltip option may be a string or an object that is passed to Atom's TooltipManager
     */
-  var tooltip: js.UndefOr[String | AnonItem | AnonClass] = js.undefined
+  var tooltip: js.UndefOr[String | Item | Class] = js.undefined
 }
 
 object ButtonOptions {
@@ -138,19 +138,19 @@ object ButtonOptions {
     html: js.UndefOr[Boolean] = js.undefined,
     icon: String = null,
     iconset: ion | fa | fab | fi | icomoon | devicon | mdi = null,
-    priority: Int | Double = null,
+    priority: js.UndefOr[Double] = js.undefined,
     text: String = null,
-    tooltip: String | AnonItem | AnonClass = null
+    tooltip: String | Item | Class = null
   ): ButtonOptions = {
     val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any])
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (iconset != null) __obj.updateDynamic("iconset")(iconset.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonOptions]

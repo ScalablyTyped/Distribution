@@ -32,17 +32,17 @@ object FilteredLogEvent {
   @scala.inline
   def apply(
     eventId: EventId = null,
-    ingestionTime: Int | Double = null,
+    ingestionTime: js.UndefOr[Timestamp] = js.undefined,
     logStreamName: LogStreamName = null,
     message: EventMessage = null,
-    timestamp: Int | Double = null
+    timestamp: js.UndefOr[Timestamp] = js.undefined
   ): FilteredLogEvent = {
     val __obj = js.Dynamic.literal()
     if (eventId != null) __obj.updateDynamic("eventId")(eventId.asInstanceOf[js.Any])
-    if (ingestionTime != null) __obj.updateDynamic("ingestionTime")(ingestionTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(ingestionTime)) __obj.updateDynamic("ingestionTime")(ingestionTime.get.asInstanceOf[js.Any])
     if (logStreamName != null) __obj.updateDynamic("logStreamName")(logStreamName.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilteredLogEvent]
   }
 }

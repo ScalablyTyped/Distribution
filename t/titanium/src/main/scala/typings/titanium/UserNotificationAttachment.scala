@@ -11,17 +11,17 @@ import scala.scalajs.js.annotation._
   */
 trait UserNotificationAttachment extends js.Object {
   /**
-  	 * The identifier of this attachment.
-  	 */
+    * The identifier of this attachment.
+    */
   var identifier: java.lang.String
   /**
-  	 * An additional dictionary of options to provide.
-  	 */
+    * An additional dictionary of options to provide.
+    */
   var options: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * The URL to the attachment's data. If you have obtained this attachment from
-  	 * the notification-center then the URL will be security-scoped.
-  	 */
+    * The URL to the attachment's data. If you have obtained this attachment from
+    * the notification-center then the URL will be security-scoped.
+    */
   var url: java.lang.String
 }
 

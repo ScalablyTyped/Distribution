@@ -13,7 +13,7 @@ object IGridRow {
   @scala.inline
   def apply(enableCellEdit: js.UndefOr[Boolean] = js.undefined): IGridRow = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableCellEdit)) __obj.updateDynamic("enableCellEdit")(enableCellEdit.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCellEdit)) __obj.updateDynamic("enableCellEdit")(enableCellEdit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridRow]
   }
 }

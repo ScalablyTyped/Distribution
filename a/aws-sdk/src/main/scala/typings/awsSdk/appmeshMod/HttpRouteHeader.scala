@@ -22,13 +22,9 @@ trait HttpRouteHeader extends js.Object {
 
 object HttpRouteHeader {
   @scala.inline
-  def apply(
-    name: HeaderName,
-    invert: js.UndefOr[scala.Boolean] = js.undefined,
-    `match`: HeaderMatchMethod = null
-  ): HttpRouteHeader = {
+  def apply(name: HeaderName, invert: js.UndefOr[Boolean] = js.undefined, `match`: HeaderMatchMethod = null): HttpRouteHeader = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (!js.isUndefined(invert)) __obj.updateDynamic("invert")(invert.asInstanceOf[js.Any])
+    if (!js.isUndefined(invert)) __obj.updateDynamic("invert")(invert.get.asInstanceOf[js.Any])
     if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpRouteHeader]
   }

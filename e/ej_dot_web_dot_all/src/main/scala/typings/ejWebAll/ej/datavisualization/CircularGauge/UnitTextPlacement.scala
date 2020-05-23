@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.CircularGauge
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,14 +17,6 @@ object UnitTextPlacement extends js.Object {
   //string
   @js.native
   sealed trait Front extends UnitTextPlacement
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UnitTextPlacement with Double] = js.native
-  /* 0 */ @js.native
-  object Back extends TopLevel[Back with Double]
-  
-  /* 1 */ @js.native
-  object Front extends TopLevel[Front with Double]
   
 }
 

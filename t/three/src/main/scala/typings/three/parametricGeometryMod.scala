@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.anon.Func
 import typings.three.bufferGeometryMod.BufferGeometry
 import typings.three.geometryMod.Geometry
 import typings.three.vector3Mod.Vector3
@@ -17,7 +18,7 @@ object parametricGeometryMod extends js.Object {
       slices: Double,
       stacks: Double
     ) = this()
-    var parameters: AnonFunc = js.native
+    var parameters: Func = js.native
   }
   
   @js.native
@@ -27,7 +28,7 @@ object parametricGeometryMod extends js.Object {
       slices: Double,
       stacks: Double
     ) = this()
-    var parameters: AnonFunc = js.native
+    var parameters: Func = js.native
   }
   
 }

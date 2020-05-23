@@ -70,6 +70,21 @@ package object pinpointMod {
   */
   type Duration = typings.awsSdk.pinpointMod._Duration | java.lang.String
   /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.GCM
+    - typings.awsSdk.awsSdkStrings.APNS
+    - typings.awsSdk.awsSdkStrings.APNS_SANDBOX
+    - typings.awsSdk.awsSdkStrings.APNS_VOIP
+    - typings.awsSdk.awsSdkStrings.APNS_VOIP_SANDBOX
+    - typings.awsSdk.awsSdkStrings.ADM
+    - typings.awsSdk.awsSdkStrings.SMS
+    - typings.awsSdk.awsSdkStrings.VOICE
+    - typings.awsSdk.awsSdkStrings.EMAIL
+    - typings.awsSdk.awsSdkStrings.BAIDU
+    - typings.awsSdk.awsSdkStrings.CUSTOM
+    - java.lang.String
+  */
+  type EndpointTypesElement = typings.awsSdk.pinpointMod._EndpointTypesElement | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.SYSTEM
     - typings.awsSdk.awsSdkStrings.ENDPOINT
     - java.lang.String
@@ -116,6 +131,7 @@ package object pinpointMod {
   type ListOfCampaignResponse = js.Array[typings.awsSdk.pinpointMod.CampaignResponse]
   type ListOfEndpointBatchItem = js.Array[typings.awsSdk.pinpointMod.EndpointBatchItem]
   type ListOfEndpointResponse = js.Array[typings.awsSdk.pinpointMod.EndpointResponse]
+  type ListOfEndpointTypesElement = js.Array[typings.awsSdk.pinpointMod.EndpointTypesElement]
   type ListOfExportJobResponse = js.Array[typings.awsSdk.pinpointMod.ExportJobResponse]
   type ListOfImportJobResponse = js.Array[typings.awsSdk.pinpointMod.ImportJobResponse]
   type ListOfJourneyResponse = js.Array[typings.awsSdk.pinpointMod.JourneyResponse]

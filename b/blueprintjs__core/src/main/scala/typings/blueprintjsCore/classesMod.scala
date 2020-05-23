@@ -97,6 +97,7 @@ object classesMod extends js.Object {
   val INPUT_ACTION: String = js.native
   val INPUT_GHOST: String = js.native
   val INPUT_GROUP: String = js.native
+  val INPUT_LEFT_CONTAINER: String = js.native
   val INTENT_DANGER: String = js.native
   val INTENT_PRIMARY: String = js.native
   val INTENT_SUCCESS: String = js.native

@@ -29,17 +29,17 @@ object SourceOptionsWebCrawl {
     allow_untrusted_certificate: js.UndefOr[Boolean] = js.undefined,
     crawl_speed: String = null,
     limit_to_starting_hosts: js.UndefOr[Boolean] = js.undefined,
-    maximum_hops: Int | Double = null,
+    maximum_hops: js.UndefOr[Double] = js.undefined,
     override_robots_txt: js.UndefOr[Boolean] = js.undefined,
-    request_timeout: Int | Double = null
+    request_timeout: js.UndefOr[Double] = js.undefined
   ): SourceOptionsWebCrawl = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (!js.isUndefined(allow_untrusted_certificate)) __obj.updateDynamic("allow_untrusted_certificate")(allow_untrusted_certificate.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow_untrusted_certificate)) __obj.updateDynamic("allow_untrusted_certificate")(allow_untrusted_certificate.get.asInstanceOf[js.Any])
     if (crawl_speed != null) __obj.updateDynamic("crawl_speed")(crawl_speed.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit_to_starting_hosts)) __obj.updateDynamic("limit_to_starting_hosts")(limit_to_starting_hosts.asInstanceOf[js.Any])
-    if (maximum_hops != null) __obj.updateDynamic("maximum_hops")(maximum_hops.asInstanceOf[js.Any])
-    if (!js.isUndefined(override_robots_txt)) __obj.updateDynamic("override_robots_txt")(override_robots_txt.asInstanceOf[js.Any])
-    if (request_timeout != null) __obj.updateDynamic("request_timeout")(request_timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit_to_starting_hosts)) __obj.updateDynamic("limit_to_starting_hosts")(limit_to_starting_hosts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximum_hops)) __obj.updateDynamic("maximum_hops")(maximum_hops.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(override_robots_txt)) __obj.updateDynamic("override_robots_txt")(override_robots_txt.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(request_timeout)) __obj.updateDynamic("request_timeout")(request_timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceOptionsWebCrawl]
   }
 }

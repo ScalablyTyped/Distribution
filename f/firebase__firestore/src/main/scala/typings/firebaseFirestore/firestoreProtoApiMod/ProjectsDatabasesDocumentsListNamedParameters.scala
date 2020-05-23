@@ -41,7 +41,7 @@ object ProjectsDatabasesDocumentsListNamedParameters {
     maskFieldPaths: js.Array[String] = null,
     oauth_token: String = null,
     orderBy: String = null,
-    pageSize: Int | Double = null,
+    pageSize: js.UndefOr[Double] = js.undefined,
     pageToken: String = null,
     pp: js.UndefOr[Boolean] = js.undefined,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
@@ -63,13 +63,13 @@ object ProjectsDatabasesDocumentsListNamedParameters {
     if (maskFieldPaths != null) __obj.updateDynamic("maskFieldPaths")(maskFieldPaths.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(pp)) __obj.updateDynamic("pp")(pp.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(pp)) __obj.updateDynamic("pp")(pp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (readTime != null) __obj.updateDynamic("readTime")(readTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMissing)) __obj.updateDynamic("showMissing")(showMissing.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMissing)) __obj.updateDynamic("showMissing")(showMissing.get.asInstanceOf[js.Any])
     if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType.asInstanceOf[js.Any])
     if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol.asInstanceOf[js.Any])

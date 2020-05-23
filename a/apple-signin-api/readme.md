@@ -1,7 +1,7 @@
 
 # Scala.js typings for apple-signin-api
 
-Typings are for version 1.4
+Typings are for version 1.5
 
 
 

@@ -10,9 +10,9 @@ trait ShadowedComponent extends js.Object {
 
 object ShadowedComponent {
   @scala.inline
-  def apply(shadow: Int | Double = null): ShadowedComponent = {
+  def apply(shadow: js.UndefOr[Double] = js.undefined): ShadowedComponent = {
     val __obj = js.Dynamic.literal()
-    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShadowedComponent]
   }
 }

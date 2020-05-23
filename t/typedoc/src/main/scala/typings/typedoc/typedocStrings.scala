@@ -7,22 +7,10 @@ import scala.scalajs.js.annotation._
 
 object typedocStrings {
   @js.native
-  sealed trait `0Dot8` extends js.Object
-  
-  @js.native
-  sealed trait `3Dot8` extends js.Object
-  
-  @js.native
   sealed trait BindOption extends js.Object
   
   @js.native
   sealed trait S extends js.Object
-  
-  @js.native
-  sealed trait arguments extends js.Object
-  
-  @js.native
-  sealed trait array extends js.Object
   
   @js.native
   sealed trait boolean extends js.Object
@@ -115,25 +103,16 @@ object typedocStrings {
   sealed trait incremental extends IgnoredTsOptionKeys
   
   @js.native
-  sealed trait indexedAccess extends js.Object
-  
-  @js.native
   sealed trait inlineSources extends IgnoredTsOptionKeys
   
   @js.native
   sealed trait inputFiles extends js.Object
   
   @js.native
-  sealed trait intrinsic extends js.Object
-  
-  @js.native
   sealed trait js_ extends js.Object
   
   @js.native
   sealed trait json extends js.Object
-  
-  @js.native
-  sealed trait keyof extends js.Object
   
   @js.native
   sealed trait list extends js.Object
@@ -172,19 +151,7 @@ object typedocStrings {
   sealed trait plugin extends js.Object
   
   @js.native
-  sealed trait predicate extends js.Object
-  
-  @js.native
-  sealed trait query extends js.Object
-  
-  @js.native
   sealed trait readme extends js.Object
-  
-  @js.native
-  sealed trait reference extends js.Object
-  
-  @js.native
-  sealed trait reflection extends js.Object
   
   @js.native
   sealed trait removeComments extends IgnoredTsOptionKeys
@@ -194,9 +161,6 @@ object typedocStrings {
   
   @js.native
   sealed trait string extends js.Object
-  
-  @js.native
-  sealed trait stringLiteral extends js.Object
   
   @js.native
   sealed trait theme extends js.Object
@@ -211,32 +175,15 @@ object typedocStrings {
   sealed trait tsconfig extends js.Object
   
   @js.native
-  sealed trait tuple extends js.Object
-  
-  @js.native
-  sealed trait typeOperator extends js.Object
-  
-  @js.native
-  sealed trait unknown extends js.Object
-  
-  @js.native
   sealed trait version extends IgnoredTsOptionKeys
   
   @js.native
   sealed trait watch extends IgnoredTsOptionKeys
   
   @scala.inline
-  def `0Dot8`: `0Dot8` = "0.8".asInstanceOf[`0Dot8`]
-  @scala.inline
-  def `3Dot8`: `3Dot8` = "3.8".asInstanceOf[`3Dot8`]
-  @scala.inline
   def BindOption: BindOption = "BindOption".asInstanceOf[BindOption]
   @scala.inline
   def S: S = "S".asInstanceOf[S]
-  @scala.inline
-  def arguments: arguments = "arguments".asInstanceOf[arguments]
-  @scala.inline
-  def array: array = "array".asInstanceOf[array]
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   @scala.inline
@@ -298,19 +245,13 @@ object typedocStrings {
   @scala.inline
   def incremental: incremental = "incremental".asInstanceOf[incremental]
   @scala.inline
-  def indexedAccess: indexedAccess = "indexedAccess".asInstanceOf[indexedAccess]
-  @scala.inline
   def inlineSources: inlineSources = "inlineSources".asInstanceOf[inlineSources]
   @scala.inline
   def inputFiles: inputFiles = "inputFiles".asInstanceOf[inputFiles]
   @scala.inline
-  def intrinsic: intrinsic = "intrinsic".asInstanceOf[intrinsic]
-  @scala.inline
   def js_ : js_ = "js".asInstanceOf[js_]
   @scala.inline
   def json: json = "json".asInstanceOf[json]
-  @scala.inline
-  def keyof: keyof = "keyof".asInstanceOf[keyof]
   @scala.inline
   def list: list = "list".asInstanceOf[list]
   @scala.inline
@@ -336,23 +277,13 @@ object typedocStrings {
   @scala.inline
   def plugin: plugin = "plugin".asInstanceOf[plugin]
   @scala.inline
-  def predicate: predicate = "predicate".asInstanceOf[predicate]
-  @scala.inline
-  def query: query = "query".asInstanceOf[query]
-  @scala.inline
   def readme: readme = "readme".asInstanceOf[readme]
-  @scala.inline
-  def reference: reference = "reference".asInstanceOf[reference]
-  @scala.inline
-  def reflection: reflection = "reflection".asInstanceOf[reflection]
   @scala.inline
   def removeComments: removeComments = "removeComments".asInstanceOf[removeComments]
   @scala.inline
   def sourceMap: sourceMap = "sourceMap".asInstanceOf[sourceMap]
   @scala.inline
   def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def stringLiteral: stringLiteral = "stringLiteral".asInstanceOf[stringLiteral]
   @scala.inline
   def theme: theme = "theme".asInstanceOf[theme]
   @scala.inline
@@ -361,12 +292,6 @@ object typedocStrings {
   def tsBuildInfoFile: tsBuildInfoFile = "tsBuildInfoFile".asInstanceOf[tsBuildInfoFile]
   @scala.inline
   def tsconfig: tsconfig = "tsconfig".asInstanceOf[tsconfig]
-  @scala.inline
-  def tuple: tuple = "tuple".asInstanceOf[tuple]
-  @scala.inline
-  def typeOperator: typeOperator = "typeOperator".asInstanceOf[typeOperator]
-  @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
   @scala.inline
   def version: version = "version".asInstanceOf[version]
   @scala.inline

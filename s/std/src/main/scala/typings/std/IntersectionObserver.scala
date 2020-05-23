@@ -1,7 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,13 +15,19 @@ trait IntersectionObserver extends js.Object {
   def unobserve(target: Element): Unit
 }
 
-@JSGlobal("IntersectionObserver")
-@js.native
-object IntersectionObserver
-  extends Instantiable1[/* callback */ IntersectionObserverCallback, IntersectionObserver]
-     with Instantiable2[
-      /* callback */ IntersectionObserverCallback, 
-      /* options */ IntersectionObserverInit, 
-      IntersectionObserver
-    ]
+object IntersectionObserver {
+  @scala.inline
+  def apply(
+    disconnect: () => Unit,
+    observe: Element => Unit,
+    rootMargin: java.lang.String,
+    takeRecords: () => js.Array[IntersectionObserverEntry],
+    thresholds: js.Array[Double],
+    unobserve: Element => Unit,
+    root: Element = null
+  ): IntersectionObserver = {
+    val __obj = js.Dynamic.literal(disconnect = js.Any.fromFunction0(disconnect), observe = js.Any.fromFunction1(observe), rootMargin = rootMargin.asInstanceOf[js.Any], takeRecords = js.Any.fromFunction0(takeRecords), thresholds = thresholds.asInstanceOf[js.Any], unobserve = js.Any.fromFunction1(unobserve), root = root.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IntersectionObserver]
+  }
+}
 

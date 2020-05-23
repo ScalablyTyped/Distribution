@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait IgTimePickerItemsDelta
   extends /**
-	 * Option for IgTimePickerItemsDelta
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   var hours: js.UndefOr[Double] = js.undefined
   var minutes: js.UndefOr[Double] = js.undefined
@@ -17,17 +17,14 @@ trait IgTimePickerItemsDelta
 object IgTimePickerItemsDelta {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for IgTimePickerItemsDelta
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    hours: Int | Double = null,
-    minutes: Int | Double = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    hours: js.UndefOr[Double] = js.undefined,
+    minutes: js.UndefOr[Double] = js.undefined
   ): IgTimePickerItemsDelta = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (hours != null) __obj.updateDynamic("hours")(hours.asInstanceOf[js.Any])
-    if (minutes != null) __obj.updateDynamic("minutes")(minutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(hours)) __obj.updateDynamic("hours")(hours.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minutes)) __obj.updateDynamic("minutes")(minutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgTimePickerItemsDelta]
   }
 }

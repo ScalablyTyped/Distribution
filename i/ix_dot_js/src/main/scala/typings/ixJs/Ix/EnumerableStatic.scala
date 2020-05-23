@@ -44,7 +44,7 @@ trait EnumerableStatic
   def ifThen[T](condition: js.Function0[Boolean], thenSource: Enumerable[T]): Enumerable[T] = js.native
   def ifThen[T](condition: js.Function0[Boolean], thenSource: Enumerable[T], elseSource: Enumerable[T]): Enumerable[T] = js.native
   def onErrorResumeNext[T](sources: Enumerable[T]*): Enumerable[T] = js.native
-  	// alias for <IE9
+      // alias for <IE9
   def range(start: Double, count: Double): Enumerable[Double] = js.native
   def repeat[T](value: T): Enumerable[T] = js.native
   def repeat[T](value: T, repeatCount: Double): Enumerable[T] = js.native

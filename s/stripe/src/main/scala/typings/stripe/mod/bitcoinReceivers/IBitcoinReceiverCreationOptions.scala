@@ -43,7 +43,7 @@ object IBitcoinReceiverCreationOptions {
     if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(refund_mispayments)) __obj.updateDynamic("refund_mispayments")(refund_mispayments.asInstanceOf[js.Any])
+    if (!js.isUndefined(refund_mispayments)) __obj.updateDynamic("refund_mispayments")(refund_mispayments.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBitcoinReceiverCreationOptions]
   }
 }

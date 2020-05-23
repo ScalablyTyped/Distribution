@@ -25,12 +25,12 @@ object ListAliasesResponse {
   def apply(
     Aliases: AliasList = null,
     NextMarker: MarkerType = null,
-    Truncated: js.UndefOr[Boolean] = js.undefined
+    Truncated: js.UndefOr[BooleanType] = js.undefined
   ): ListAliasesResponse = {
     val __obj = js.Dynamic.literal()
     if (Aliases != null) __obj.updateDynamic("Aliases")(Aliases.asInstanceOf[js.Any])
     if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker.asInstanceOf[js.Any])
-    if (!js.isUndefined(Truncated)) __obj.updateDynamic("Truncated")(Truncated.asInstanceOf[js.Any])
+    if (!js.isUndefined(Truncated)) __obj.updateDynamic("Truncated")(Truncated.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAliasesResponse]
   }
 }

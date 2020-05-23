@@ -61,7 +61,7 @@ object JumpListItem {
   def apply(
     args: String = null,
     description: String = null,
-    iconIndex: Int | Double = null,
+    iconIndex: js.UndefOr[Double] = js.undefined,
     iconPath: String = null,
     path: String = null,
     program: String = null,
@@ -72,7 +72,7 @@ object JumpListItem {
     val __obj = js.Dynamic.literal()
     if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (iconIndex != null) __obj.updateDynamic("iconIndex")(iconIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(iconIndex)) __obj.updateDynamic("iconIndex")(iconIndex.get.asInstanceOf[js.Any])
     if (iconPath != null) __obj.updateDynamic("iconPath")(iconPath.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (program != null) __obj.updateDynamic("program")(program.asInstanceOf[js.Any])

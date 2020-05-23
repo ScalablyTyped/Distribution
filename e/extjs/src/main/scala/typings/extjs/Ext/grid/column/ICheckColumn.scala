@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation._
 
 trait ICheckColumn extends IColumn {
   /** [Method] Disables this CheckColumn
-  		* @param silent Boolean
-  		*/
+    * @param silent Boolean
+    */
   @JSName("onDisable")
   var onDisable_ICheckColumn: js.UndefOr[js.Function1[/* silent */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Enables this CheckColumn
-  		* @param silent Boolean
-  		*/
+    * @param silent Boolean
+    */
   @JSName("onEnable")
   var onEnable_ICheckColumn: js.UndefOr[js.Function1[/* silent */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Config Option] (Boolean) */
@@ -31,7 +31,7 @@ object ICheckColumn {
     if (IColumn != null) js.Dynamic.global.Object.assign(__obj, IColumn)
     if (onDisable != null) __obj.updateDynamic("onDisable")(js.Any.fromFunction1(onDisable))
     if (onEnable != null) __obj.updateDynamic("onEnable")(js.Any.fromFunction1(onEnable))
-    if (!js.isUndefined(stopSelection)) __obj.updateDynamic("stopSelection")(stopSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopSelection)) __obj.updateDynamic("stopSelection")(stopSelection.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICheckColumn]
   }
 }

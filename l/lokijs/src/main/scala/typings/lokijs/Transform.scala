@@ -48,7 +48,7 @@ object Transform {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (dataOptions != null) __obj.updateDynamic("dataOptions")(dataOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(desc)) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
+    if (!js.isUndefined(desc)) __obj.updateDynamic("desc")(desc.get.asInstanceOf[js.Any])
     if (joinData != null) __obj.updateDynamic("joinData")(joinData.asInstanceOf[js.Any])
     if (leftJoinKey != null) __obj.updateDynamic("leftJoinKey")(leftJoinKey.asInstanceOf[js.Any])
     if (mapFun != null) __obj.updateDynamic("mapFun")(mapFun.asInstanceOf[js.Any])

@@ -22,11 +22,15 @@ trait DescribeDataSourceResponse extends js.Object {
 
 object DescribeDataSourceResponse {
   @scala.inline
-  def apply(DataSource: DataSource = null, RequestId: String = null, Status: Int | scala.Double = null): DescribeDataSourceResponse = {
+  def apply(
+    DataSource: DataSource = null,
+    RequestId: String = null,
+    Status: js.UndefOr[StatusCode] = js.undefined
+  ): DescribeDataSourceResponse = {
     val __obj = js.Dynamic.literal()
     if (DataSource != null) __obj.updateDynamic("DataSource")(DataSource.asInstanceOf[js.Any])
     if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
+    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDataSourceResponse]
   }
 }

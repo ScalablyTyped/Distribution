@@ -18,7 +18,7 @@ trait ComposerParameters[S̤t̤a̤m̤p̤ /* <: StampSignature */] extends js.Obj
 
 object ComposerParameters {
   @scala.inline
-  def apply[S̤t̤a̤m̤p̤ /* <: StampSignature */](composables: js.Array[Composable], stamp: S̤t̤a̤m̤p̤): ComposerParameters[S̤t̤a̤m̤p̤] = {
+  def apply[S̤t̤a̤m̤p̤](composables: js.Array[Composable], stamp: S̤t̤a̤m̤p̤): ComposerParameters[S̤t̤a̤m̤p̤] = {
     val __obj = js.Dynamic.literal(composables = composables.asInstanceOf[js.Any], stamp = stamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComposerParameters[S̤t̤a̤m̤p̤]]
   }

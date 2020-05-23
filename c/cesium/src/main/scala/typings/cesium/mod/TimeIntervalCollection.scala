@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonIsStopIncluded
+import typings.cesium.anon.IsStopIncluded
 import typings.cesium.mod.TimeInterval.DataComparer
 import typings.cesium.mod.TimeInterval.MergeCallback
 import scala.scalajs.js
@@ -26,7 +26,7 @@ class TimeIntervalCollection () extends js.Object {
   def equals(right: TimeIntervalCollection, dataComparer: DataComparer): Boolean = js.native
   def findDataForIntervalContainingDate(date: JulianDate): js.Any = js.native
   def findInterval(): TimeInterval = js.native
-  def findInterval(options: AnonIsStopIncluded): TimeInterval = js.native
+  def findInterval(options: IsStopIncluded): TimeInterval = js.native
   def findIntervalContainingDate(date: JulianDate): js.UndefOr[TimeInterval] = js.native
   def get(index: Double): TimeInterval = js.native
   def indexOf(date: JulianDate): Double = js.native

@@ -50,7 +50,7 @@ object CounterUpdate {
     boolean: js.UndefOr[Boolean] = js.undefined,
     cumulative: js.UndefOr[Boolean] = js.undefined,
     distribution: DistributionUpdate = null,
-    floatingPoint: Int | Double = null,
+    floatingPoint: js.UndefOr[Double] = js.undefined,
     floatingPointList: FloatingPointList = null,
     floatingPointMean: FloatingPointMean = null,
     integer: SplitInt64 = null,
@@ -63,10 +63,10 @@ object CounterUpdate {
     structuredNameAndMetadata: CounterStructuredNameAndMetadata = null
   ): CounterUpdate = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(boolean)) __obj.updateDynamic("boolean")(boolean.asInstanceOf[js.Any])
-    if (!js.isUndefined(cumulative)) __obj.updateDynamic("cumulative")(cumulative.asInstanceOf[js.Any])
+    if (!js.isUndefined(boolean)) __obj.updateDynamic("boolean")(boolean.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cumulative)) __obj.updateDynamic("cumulative")(cumulative.get.asInstanceOf[js.Any])
     if (distribution != null) __obj.updateDynamic("distribution")(distribution.asInstanceOf[js.Any])
-    if (floatingPoint != null) __obj.updateDynamic("floatingPoint")(floatingPoint.asInstanceOf[js.Any])
+    if (!js.isUndefined(floatingPoint)) __obj.updateDynamic("floatingPoint")(floatingPoint.get.asInstanceOf[js.Any])
     if (floatingPointList != null) __obj.updateDynamic("floatingPointList")(floatingPointList.asInstanceOf[js.Any])
     if (floatingPointMean != null) __obj.updateDynamic("floatingPointMean")(floatingPointMean.asInstanceOf[js.Any])
     if (integer != null) __obj.updateDynamic("integer")(integer.asInstanceOf[js.Any])

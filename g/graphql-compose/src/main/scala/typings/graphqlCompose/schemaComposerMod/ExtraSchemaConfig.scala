@@ -16,14 +16,14 @@ trait ExtraSchemaConfig extends js.Object {
 object ExtraSchemaConfig {
   @scala.inline
   def apply(
-    astNode: SchemaDefinitionNode = null,
-    directives: js.Array[GraphQLDirective] = null,
-    types: js.Array[GraphQLNamedType] = null
+    astNode: js.UndefOr[Null | SchemaDefinitionNode] = js.undefined,
+    directives: js.UndefOr[Null | js.Array[GraphQLDirective]] = js.undefined,
+    types: js.UndefOr[Null | js.Array[GraphQLNamedType]] = js.undefined
   ): ExtraSchemaConfig = {
     val __obj = js.Dynamic.literal()
-    if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
-    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
-    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
+    if (!js.isUndefined(astNode)) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
+    if (!js.isUndefined(directives)) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
+    if (!js.isUndefined(types)) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtraSchemaConfig]
   }
 }

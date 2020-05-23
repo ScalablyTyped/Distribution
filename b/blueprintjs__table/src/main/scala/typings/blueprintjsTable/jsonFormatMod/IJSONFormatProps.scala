@@ -32,26 +32,26 @@ object IJSONFormatProps {
     detectTruncation: js.UndefOr[Boolean] = js.undefined,
     measureByApproxOptions: ITrucatedFormateMeasureByApproximateOptions = null,
     omitQuotesOnStrings: js.UndefOr[Boolean] = js.undefined,
-    parentCellHeight: Int | Double = null,
-    parentCellWidth: Int | Double = null,
+    parentCellHeight: js.UndefOr[Double] = js.undefined,
+    parentCellWidth: js.UndefOr[Double] = js.undefined,
     preformatted: js.UndefOr[Boolean] = js.undefined,
     showPopover: TruncatedPopoverMode = null,
     stringify: /* obj */ js.Any => String = null,
-    truncateLength: Int | Double = null,
+    truncateLength: js.UndefOr[Double] = js.undefined,
     truncationSuffix: String = null
   ): IJSONFormatProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(detectTruncation)) __obj.updateDynamic("detectTruncation")(detectTruncation.asInstanceOf[js.Any])
+    if (!js.isUndefined(detectTruncation)) __obj.updateDynamic("detectTruncation")(detectTruncation.get.asInstanceOf[js.Any])
     if (measureByApproxOptions != null) __obj.updateDynamic("measureByApproxOptions")(measureByApproxOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(omitQuotesOnStrings)) __obj.updateDynamic("omitQuotesOnStrings")(omitQuotesOnStrings.asInstanceOf[js.Any])
-    if (parentCellHeight != null) __obj.updateDynamic("parentCellHeight")(parentCellHeight.asInstanceOf[js.Any])
-    if (parentCellWidth != null) __obj.updateDynamic("parentCellWidth")(parentCellWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(preformatted)) __obj.updateDynamic("preformatted")(preformatted.asInstanceOf[js.Any])
+    if (!js.isUndefined(omitQuotesOnStrings)) __obj.updateDynamic("omitQuotesOnStrings")(omitQuotesOnStrings.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(parentCellHeight)) __obj.updateDynamic("parentCellHeight")(parentCellHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(parentCellWidth)) __obj.updateDynamic("parentCellWidth")(parentCellWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preformatted)) __obj.updateDynamic("preformatted")(preformatted.get.asInstanceOf[js.Any])
     if (showPopover != null) __obj.updateDynamic("showPopover")(showPopover.asInstanceOf[js.Any])
     if (stringify != null) __obj.updateDynamic("stringify")(js.Any.fromFunction1(stringify))
-    if (truncateLength != null) __obj.updateDynamic("truncateLength")(truncateLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(truncateLength)) __obj.updateDynamic("truncateLength")(truncateLength.get.asInstanceOf[js.Any])
     if (truncationSuffix != null) __obj.updateDynamic("truncationSuffix")(truncationSuffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[IJSONFormatProps]
   }

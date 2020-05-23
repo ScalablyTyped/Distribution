@@ -58,7 +58,7 @@ object UnmarshalledCampaignResponse {
     CreationDate: String = null,
     DefaultState: UnmarshalledCampaignState = null,
     Description: String = null,
-    HoldoutPercent: Int | Double = null,
+    HoldoutPercent: js.UndefOr[Double] = js.undefined,
     Hook: UnmarshalledCampaignHook = null,
     Id: String = null,
     IsPaused: js.UndefOr[Boolean] = js.undefined,
@@ -68,11 +68,11 @@ object UnmarshalledCampaignResponse {
     Name: String = null,
     Schedule: UnmarshalledSchedule = null,
     SegmentId: String = null,
-    SegmentVersion: Int | Double = null,
+    SegmentVersion: js.UndefOr[Double] = js.undefined,
     State: UnmarshalledCampaignState = null,
     TreatmentDescription: String = null,
     TreatmentName: String = null,
-    Version: Int | Double = null
+    Version: js.UndefOr[Double] = js.undefined
   ): UnmarshalledCampaignResponse = {
     val __obj = js.Dynamic.literal()
     if (AdditionalTreatments != null) __obj.updateDynamic("AdditionalTreatments")(AdditionalTreatments.asInstanceOf[js.Any])
@@ -80,21 +80,21 @@ object UnmarshalledCampaignResponse {
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
     if (DefaultState != null) __obj.updateDynamic("DefaultState")(DefaultState.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (HoldoutPercent != null) __obj.updateDynamic("HoldoutPercent")(HoldoutPercent.asInstanceOf[js.Any])
+    if (!js.isUndefined(HoldoutPercent)) __obj.updateDynamic("HoldoutPercent")(HoldoutPercent.get.asInstanceOf[js.Any])
     if (Hook != null) __obj.updateDynamic("Hook")(Hook.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsPaused)) __obj.updateDynamic("IsPaused")(IsPaused.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsPaused)) __obj.updateDynamic("IsPaused")(IsPaused.get.asInstanceOf[js.Any])
     if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate.asInstanceOf[js.Any])
     if (Limits != null) __obj.updateDynamic("Limits")(Limits.asInstanceOf[js.Any])
     if (MessageConfiguration != null) __obj.updateDynamic("MessageConfiguration")(MessageConfiguration.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule.asInstanceOf[js.Any])
     if (SegmentId != null) __obj.updateDynamic("SegmentId")(SegmentId.asInstanceOf[js.Any])
-    if (SegmentVersion != null) __obj.updateDynamic("SegmentVersion")(SegmentVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(SegmentVersion)) __obj.updateDynamic("SegmentVersion")(SegmentVersion.get.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     if (TreatmentDescription != null) __obj.updateDynamic("TreatmentDescription")(TreatmentDescription.asInstanceOf[js.Any])
     if (TreatmentName != null) __obj.updateDynamic("TreatmentName")(TreatmentName.asInstanceOf[js.Any])
-    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
+    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledCampaignResponse]
   }
 }

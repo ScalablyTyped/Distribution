@@ -1,6 +1,6 @@
 package typings.blueprintjsTable
 
-import typings.blueprintjsTable.draggableMod.IDragHandler
+import typings.blueprintjsTable.dragTypesMod.IDragHandler
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import scala.scalajs.js

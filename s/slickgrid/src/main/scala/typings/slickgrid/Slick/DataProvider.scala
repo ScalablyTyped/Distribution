@@ -6,24 +6,24 @@ import scala.scalajs.js.annotation._
 
 trait DataProvider[T /* <: SlickData */] extends js.Object {
   /**
-  		 * Returns the metadata for the item at a given index (optional).
-  		 * @param index
-  		 */
+    * Returns the metadata for the item at a given index (optional).
+    * @param index
+    */
   var getItemMetadata: js.UndefOr[js.Function1[/* index */ Double, RowMetadata[T]]] = js.undefined
   /**
-  		 * Returns the item at a given index.
-  		 * @param index
-  		 */
+    * Returns the item at a given index.
+    * @param index
+    */
   def getItem(index: Double): T
   /**
-  		 * Returns the number of data items in the set.
-  		 */
+    * Returns the number of data items in the set.
+    */
   def getLength(): Double
 }
 
 object DataProvider {
   @scala.inline
-  def apply[T /* <: SlickData */](
+  def apply[T](
     getItem: Double => T,
     getLength: () => Double,
     getItemMetadata: /* index */ Double => RowMetadata[T] = null

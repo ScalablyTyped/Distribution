@@ -21,9 +21,8 @@ object R3InjectorMetadataFacade {
     `type`: js.Any,
     deps: js.Array[R3DependencyMetadataFacade] = null
   ): R3InjectorMetadataFacade = {
-    val __obj = js.Dynamic.literal(imports = imports.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], providers = providers.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(imports = imports.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], providers = providers.asInstanceOf[js.Any], deps = deps.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3InjectorMetadataFacade]
   }
 }

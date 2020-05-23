@@ -37,13 +37,13 @@ object PortalQueryResultProperties {
     nextQueryParams: PortalQueryParamsProperties = null,
     queryParams: PortalQueryParamsProperties = null,
     results: js.Array[_] = null,
-    total: Int | Double = null
+    total: js.UndefOr[Double] = js.undefined
   ): PortalQueryResultProperties = {
     val __obj = js.Dynamic.literal()
     if (nextQueryParams != null) __obj.updateDynamic("nextQueryParams")(nextQueryParams.asInstanceOf[js.Any])
     if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortalQueryResultProperties]
   }
 }

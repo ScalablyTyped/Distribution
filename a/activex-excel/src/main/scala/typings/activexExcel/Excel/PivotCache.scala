@@ -9,9 +9,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.PivotCache")
 @js.native
-class PivotCache protected () extends js.Object {
+trait PivotCache extends js.Object {
   val ADOConnection: Connection = js.native
   val Application: typings.activexExcel.Excel.Application = js.native
   var BackgroundQuery: Boolean = js.native

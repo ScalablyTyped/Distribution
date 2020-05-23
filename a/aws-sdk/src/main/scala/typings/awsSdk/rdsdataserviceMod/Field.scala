@@ -41,19 +41,19 @@ object Field {
   def apply(
     arrayValue: ArrayValue = null,
     blobValue: _Blob = null,
-    booleanValue: js.UndefOr[scala.Boolean] = js.undefined,
-    doubleValue: Int | Double = null,
-    isNull: js.UndefOr[scala.Boolean] = js.undefined,
-    longValue: Int | Double = null,
+    booleanValue: js.UndefOr[BoxedBoolean] = js.undefined,
+    doubleValue: js.UndefOr[BoxedDouble] = js.undefined,
+    isNull: js.UndefOr[BoxedBoolean] = js.undefined,
+    longValue: js.UndefOr[BoxedLong] = js.undefined,
     stringValue: String = null
   ): Field = {
     val __obj = js.Dynamic.literal()
     if (arrayValue != null) __obj.updateDynamic("arrayValue")(arrayValue.asInstanceOf[js.Any])
     if (blobValue != null) __obj.updateDynamic("blobValue")(blobValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(booleanValue)) __obj.updateDynamic("booleanValue")(booleanValue.asInstanceOf[js.Any])
-    if (doubleValue != null) __obj.updateDynamic("doubleValue")(doubleValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(isNull)) __obj.updateDynamic("isNull")(isNull.asInstanceOf[js.Any])
-    if (longValue != null) __obj.updateDynamic("longValue")(longValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(booleanValue)) __obj.updateDynamic("booleanValue")(booleanValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleValue)) __obj.updateDynamic("doubleValue")(doubleValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNull)) __obj.updateDynamic("isNull")(isNull.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(longValue)) __obj.updateDynamic("longValue")(longValue.get.asInstanceOf[js.Any])
     if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Field]
   }

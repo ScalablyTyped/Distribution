@@ -1,5 +1,6 @@
 package typings.bip174
 
+import typings.bip174.anon.Decode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("bip174/src/lib/converter/shared/witnessScript", JSImport.Namespace)
 @js.native
 object witnessScriptMod extends js.Object {
-  def makeConverter(TYPE_BYTE: Double): AnonDecode = js.native
+  def makeConverter(TYPE_BYTE: Double): Decode = js.native
 }
 

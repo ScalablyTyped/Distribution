@@ -1,6 +1,6 @@
 package typings.classValidator.validatorOptionsMod
 
-import typings.classValidator.AnonTarget
+import typings.classValidator.anon.Target
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,7 +38,7 @@ trait ValidatorOptions extends js.Object {
   /**
     * ValidationError special options.
     */
-  var validationError: js.UndefOr[AnonTarget] = js.undefined
+  var validationError: js.UndefOr[Target] = js.undefined
   /**
     * If set to true validator will strip validated object of any properties that do not have any decorators.
     *
@@ -57,19 +57,19 @@ object ValidatorOptions {
     skipMissingProperties: js.UndefOr[Boolean] = js.undefined,
     skipNullProperties: js.UndefOr[Boolean] = js.undefined,
     skipUndefinedProperties: js.UndefOr[Boolean] = js.undefined,
-    validationError: AnonTarget = null,
+    validationError: Target = null,
     whitelist: js.UndefOr[Boolean] = js.undefined
   ): ValidatorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dismissDefaultMessages)) __obj.updateDynamic("dismissDefaultMessages")(dismissDefaultMessages.asInstanceOf[js.Any])
-    if (!js.isUndefined(forbidNonWhitelisted)) __obj.updateDynamic("forbidNonWhitelisted")(forbidNonWhitelisted.asInstanceOf[js.Any])
-    if (!js.isUndefined(forbidUnknownValues)) __obj.updateDynamic("forbidUnknownValues")(forbidUnknownValues.asInstanceOf[js.Any])
+    if (!js.isUndefined(dismissDefaultMessages)) __obj.updateDynamic("dismissDefaultMessages")(dismissDefaultMessages.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forbidNonWhitelisted)) __obj.updateDynamic("forbidNonWhitelisted")(forbidNonWhitelisted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forbidUnknownValues)) __obj.updateDynamic("forbidUnknownValues")(forbidUnknownValues.get.asInstanceOf[js.Any])
     if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipMissingProperties)) __obj.updateDynamic("skipMissingProperties")(skipMissingProperties.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipNullProperties)) __obj.updateDynamic("skipNullProperties")(skipNullProperties.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipUndefinedProperties)) __obj.updateDynamic("skipUndefinedProperties")(skipUndefinedProperties.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipMissingProperties)) __obj.updateDynamic("skipMissingProperties")(skipMissingProperties.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipNullProperties)) __obj.updateDynamic("skipNullProperties")(skipNullProperties.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipUndefinedProperties)) __obj.updateDynamic("skipUndefinedProperties")(skipUndefinedProperties.get.asInstanceOf[js.Any])
     if (validationError != null) __obj.updateDynamic("validationError")(validationError.asInstanceOf[js.Any])
-    if (!js.isUndefined(whitelist)) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
+    if (!js.isUndefined(whitelist)) __obj.updateDynamic("whitelist")(whitelist.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidatorOptions]
   }
 }

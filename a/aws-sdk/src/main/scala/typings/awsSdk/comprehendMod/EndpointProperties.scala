@@ -44,8 +44,8 @@ object EndpointProperties {
   @scala.inline
   def apply(
     CreationTime: Timestamp = null,
-    CurrentInferenceUnits: Int | scala.Double = null,
-    DesiredInferenceUnits: Int | scala.Double = null,
+    CurrentInferenceUnits: js.UndefOr[InferenceUnitsInteger] = js.undefined,
+    DesiredInferenceUnits: js.UndefOr[InferenceUnitsInteger] = js.undefined,
     EndpointArn: ComprehendEndpointArn = null,
     LastModifiedTime: Timestamp = null,
     Message: AnyLengthString = null,
@@ -54,8 +54,8 @@ object EndpointProperties {
   ): EndpointProperties = {
     val __obj = js.Dynamic.literal()
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (CurrentInferenceUnits != null) __obj.updateDynamic("CurrentInferenceUnits")(CurrentInferenceUnits.asInstanceOf[js.Any])
-    if (DesiredInferenceUnits != null) __obj.updateDynamic("DesiredInferenceUnits")(DesiredInferenceUnits.asInstanceOf[js.Any])
+    if (!js.isUndefined(CurrentInferenceUnits)) __obj.updateDynamic("CurrentInferenceUnits")(CurrentInferenceUnits.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DesiredInferenceUnits)) __obj.updateDynamic("DesiredInferenceUnits")(DesiredInferenceUnits.get.asInstanceOf[js.Any])
     if (EndpointArn != null) __obj.updateDynamic("EndpointArn")(EndpointArn.asInstanceOf[js.Any])
     if (LastModifiedTime != null) __obj.updateDynamic("LastModifiedTime")(LastModifiedTime.asInstanceOf[js.Any])
     if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])

@@ -9,10 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class EngineReportingAgent[TContext] () extends js.Object {
   def this(options: EngineReportingOptions[TContext]) = this()
-  var apiKey: js.Any = js.native
+  val apiKey: js.Any = js.native
   var getTraceSignature: js.Any = js.native
+  var graphVariant: js.Any = js.native
   var logger: js.Any = js.native
-  var options: js.Any = js.native
+  val options: js.Any = js.native
   var reportHeaders: js.Any = js.native
   var reportSizes: js.Any = js.native
   var reportTimer: js.Any = js.native
@@ -20,7 +21,7 @@ class EngineReportingAgent[TContext] () extends js.Object {
   var resetReport: js.Any = js.native
   var sendAllReportsAndReportErrors: js.Any = js.native
   var sendReportAndReportErrors: js.Any = js.native
-  var sendReportsImmediately: js.UndefOr[js.Any] = js.native
+  val sendReportsImmediately: js.UndefOr[js.Any] = js.native
   var signalHandlers: js.Any = js.native
   var signatureCache: js.Any = js.native
   var stopped: js.Any = js.native

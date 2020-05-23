@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AccessKeyDetails extends js.Object {
   /**
-    * Access key ID of the user.
+    * The access key ID of the user.
     */
   var AccessKeyId: js.UndefOr[String] = js.native
   /**

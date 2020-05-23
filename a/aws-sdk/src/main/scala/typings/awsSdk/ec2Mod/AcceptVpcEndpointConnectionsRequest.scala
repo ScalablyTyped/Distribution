@@ -25,10 +25,10 @@ object AcceptVpcEndpointConnectionsRequest {
   def apply(
     ServiceId: VpcEndpointServiceId,
     VpcEndpointIds: VpcEndpointIdList,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined
   ): AcceptVpcEndpointConnectionsRequest = {
     val __obj = js.Dynamic.literal(ServiceId = ServiceId.asInstanceOf[js.Any], VpcEndpointIds = VpcEndpointIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceptVpcEndpointConnectionsRequest]
   }
 }

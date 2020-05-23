@@ -12,9 +12,6 @@ object apolloServerCoreStrings {
   sealed trait RecursivePartial extends js.Object
   
   @js.native
-  sealed trait apqColon extends js.Object
-  
-  @js.native
   sealed trait cache extends js.Object
   
   @js.native
@@ -24,8 +21,6 @@ object apolloServerCoreStrings {
   def Mutable: Mutable = "Mutable".asInstanceOf[Mutable]
   @scala.inline
   def RecursivePartial: RecursivePartial = "RecursivePartial".asInstanceOf[RecursivePartial]
-  @scala.inline
-  def apqColon: apqColon = "apq:".asInstanceOf[apqColon]
   @scala.inline
   def cache: cache = "cache".asInstanceOf[cache]
   @scala.inline

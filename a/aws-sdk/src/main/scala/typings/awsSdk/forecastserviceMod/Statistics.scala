@@ -43,24 +43,24 @@ trait Statistics extends js.Object {
 object Statistics {
   @scala.inline
   def apply(
-    Avg: Int | scala.Double = null,
-    Count: Int | scala.Double = null,
-    CountDistinct: Int | scala.Double = null,
-    CountNan: Int | scala.Double = null,
-    CountNull: Int | scala.Double = null,
+    Avg: js.UndefOr[Double] = js.undefined,
+    Count: js.UndefOr[Integer] = js.undefined,
+    CountDistinct: js.UndefOr[Integer] = js.undefined,
+    CountNan: js.UndefOr[Integer] = js.undefined,
+    CountNull: js.UndefOr[Integer] = js.undefined,
     Max: String = null,
     Min: String = null,
-    Stddev: Int | scala.Double = null
+    Stddev: js.UndefOr[Double] = js.undefined
   ): Statistics = {
     val __obj = js.Dynamic.literal()
-    if (Avg != null) __obj.updateDynamic("Avg")(Avg.asInstanceOf[js.Any])
-    if (Count != null) __obj.updateDynamic("Count")(Count.asInstanceOf[js.Any])
-    if (CountDistinct != null) __obj.updateDynamic("CountDistinct")(CountDistinct.asInstanceOf[js.Any])
-    if (CountNan != null) __obj.updateDynamic("CountNan")(CountNan.asInstanceOf[js.Any])
-    if (CountNull != null) __obj.updateDynamic("CountNull")(CountNull.asInstanceOf[js.Any])
+    if (!js.isUndefined(Avg)) __obj.updateDynamic("Avg")(Avg.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(CountDistinct)) __obj.updateDynamic("CountDistinct")(CountDistinct.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(CountNan)) __obj.updateDynamic("CountNan")(CountNan.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(CountNull)) __obj.updateDynamic("CountNull")(CountNull.get.asInstanceOf[js.Any])
     if (Max != null) __obj.updateDynamic("Max")(Max.asInstanceOf[js.Any])
     if (Min != null) __obj.updateDynamic("Min")(Min.asInstanceOf[js.Any])
-    if (Stddev != null) __obj.updateDynamic("Stddev")(Stddev.asInstanceOf[js.Any])
+    if (!js.isUndefined(Stddev)) __obj.updateDynamic("Stddev")(Stddev.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Statistics]
   }
 }

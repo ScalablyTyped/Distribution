@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type CommandRegistryListener[TargetType /* <: typings.std.EventTarget */] = typings.atom.AnonDescription[TargetType] | (js.Function1[
+  type CommandRegistryListener[TargetType /* <: typings.std.EventTarget */] = typings.atom.anon.Description[TargetType] | (js.Function1[
     /* event */ typings.atom.mod.CommandEvent[TargetType], 
     scala.Unit | js.Promise[scala.Unit]
   ])

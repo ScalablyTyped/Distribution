@@ -12,9 +12,9 @@ trait DialogContentProps extends js.Object {
 
 object DialogContentProps {
   @scala.inline
-  def apply(style: StyleProp[ViewStyle] = null): DialogContentProps = {
+  def apply(style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined): DialogContentProps = {
     val __obj = js.Dynamic.literal()
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogContentProps]
   }
 }

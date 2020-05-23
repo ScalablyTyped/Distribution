@@ -33,12 +33,12 @@ object Options {
   def apply(
     heteronym: js.UndefOr[Boolean] = js.undefined,
     segment: js.UndefOr[Boolean] = js.undefined,
-    style: Int | Double = null
+    style: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(heteronym)) __obj.updateDynamic("heteronym")(heteronym.asInstanceOf[js.Any])
-    if (!js.isUndefined(segment)) __obj.updateDynamic("segment")(segment.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(heteronym)) __obj.updateDynamic("heteronym")(heteronym.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(segment)) __obj.updateDynamic("segment")(segment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

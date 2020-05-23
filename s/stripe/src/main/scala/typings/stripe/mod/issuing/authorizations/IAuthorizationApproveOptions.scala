@@ -19,9 +19,9 @@ trait IAuthorizationApproveOptions extends js.Object {
 
 object IAuthorizationApproveOptions {
   @scala.inline
-  def apply(held_amount: Int | Double = null, metadata: IOptionsMetadata = null): IAuthorizationApproveOptions = {
+  def apply(held_amount: js.UndefOr[Double] = js.undefined, metadata: IOptionsMetadata = null): IAuthorizationApproveOptions = {
     val __obj = js.Dynamic.literal()
-    if (held_amount != null) __obj.updateDynamic("held_amount")(held_amount.asInstanceOf[js.Any])
+    if (!js.isUndefined(held_amount)) __obj.updateDynamic("held_amount")(held_amount.get.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAuthorizationApproveOptions]
   }

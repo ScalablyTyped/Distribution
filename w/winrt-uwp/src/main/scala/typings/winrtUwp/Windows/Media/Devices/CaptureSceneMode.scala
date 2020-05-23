@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Devices
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -63,47 +62,6 @@ object CaptureSceneMode extends js.Object {
   /** Indicates that the captured framed is optimized for sunset photos. */
   @js.native
   sealed trait sunset extends CaptureSceneMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CaptureSceneMode with Double] = js.native
-  /* 0 */ @js.native
-  object auto extends TopLevel[auto with Double]
-  
-  /* 12 */ @js.native
-  object backlit extends TopLevel[backlit with Double]
-  
-  /* 7 */ @js.native
-  object beach extends TopLevel[beach with Double]
-  
-  /* 9 */ @js.native
-  object candlelight extends TopLevel[candlelight with Double]
-  
-  /* 10 */ @js.native
-  object landscape extends TopLevel[landscape with Double]
-  
-  /* 2 */ @js.native
-  object `macro` extends TopLevel[`macro` with Double]
-  
-  /* 1 */ @js.native
-  object manual extends TopLevel[manual with Double]
-  
-  /* 6 */ @js.native
-  object night extends TopLevel[night with Double]
-  
-  /* 11 */ @js.native
-  object nightPortrait extends TopLevel[nightPortrait with Double]
-  
-  /* 3 */ @js.native
-  object portrait extends TopLevel[portrait with Double]
-  
-  /* 5 */ @js.native
-  object snow extends TopLevel[snow with Double]
-  
-  /* 4 */ @js.native
-  object sport extends TopLevel[sport with Double]
-  
-  /* 8 */ @js.native
-  object sunset extends TopLevel[sunset with Double]
   
 }
 

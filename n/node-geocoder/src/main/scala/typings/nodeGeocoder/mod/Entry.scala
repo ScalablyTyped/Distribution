@@ -1,20 +1,20 @@
 package typings.nodeGeocoder.mod
 
-import typings.nodeGeocoder.AnonConfidence
-import typings.nodeGeocoder.AnonLevel1long
+import typings.nodeGeocoder.anon.Confidence
+import typings.nodeGeocoder.anon.Level1long
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Entry extends js.Object {
-  var administrativeLevels: js.UndefOr[AnonLevel1long] = js.undefined
+  var administrativeLevels: js.UndefOr[Level1long] = js.undefined
   var building: js.UndefOr[String] = js.undefined
   var city: js.UndefOr[String] = js.undefined
   var country: js.UndefOr[String] = js.undefined
   var countryCode: js.UndefOr[String] = js.undefined
   var county: js.UndefOr[String] = js.undefined
   var district: js.UndefOr[String] = js.undefined
-  var extra: js.UndefOr[AnonConfidence] = js.undefined
+  var extra: js.UndefOr[Confidence] = js.undefined
   var formattedAddress: js.UndefOr[String] = js.undefined
   var latitude: js.UndefOr[Double] = js.undefined
   var longitude: js.UndefOr[Double] = js.undefined
@@ -29,17 +29,17 @@ trait Entry extends js.Object {
 object Entry {
   @scala.inline
   def apply(
-    administrativeLevels: AnonLevel1long = null,
+    administrativeLevels: Level1long = null,
     building: String = null,
     city: String = null,
     country: String = null,
     countryCode: String = null,
     county: String = null,
     district: String = null,
-    extra: AnonConfidence = null,
+    extra: Confidence = null,
     formattedAddress: String = null,
-    latitude: Int | Double = null,
-    longitude: Int | Double = null,
+    latitude: js.UndefOr[Double] = js.undefined,
+    longitude: js.UndefOr[Double] = js.undefined,
     provider: String = null,
     state: String = null,
     stateCode: String = null,
@@ -57,8 +57,8 @@ object Entry {
     if (district != null) __obj.updateDynamic("district")(district.asInstanceOf[js.Any])
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
     if (formattedAddress != null) __obj.updateDynamic("formattedAddress")(formattedAddress.asInstanceOf[js.Any])
-    if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
-    if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
+    if (!js.isUndefined(latitude)) __obj.updateDynamic("latitude")(latitude.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(longitude)) __obj.updateDynamic("longitude")(longitude.get.asInstanceOf[js.Any])
     if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (stateCode != null) __obj.updateDynamic("stateCode")(stateCode.asInstanceOf[js.Any])

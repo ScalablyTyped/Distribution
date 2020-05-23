@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/util/input_validation", "validateArrayElements")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/util/input_validation", "validateArrayElements")
 @js.native
 object validateArrayElements extends js.Object {
   def apply[T](

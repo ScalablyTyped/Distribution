@@ -43,7 +43,7 @@ object LogQueryResponseResult {
     collection_id: String = null,
     created_timestamp: String = null,
     customer_id: String = null,
-    display_rank: Int | Double = null,
+    display_rank: js.UndefOr[Double] = js.undefined,
     document_id: String = null,
     document_results: LogQueryResponseResultDocuments = null,
     document_type: String = null,
@@ -59,7 +59,7 @@ object LogQueryResponseResult {
     if (collection_id != null) __obj.updateDynamic("collection_id")(collection_id.asInstanceOf[js.Any])
     if (created_timestamp != null) __obj.updateDynamic("created_timestamp")(created_timestamp.asInstanceOf[js.Any])
     if (customer_id != null) __obj.updateDynamic("customer_id")(customer_id.asInstanceOf[js.Any])
-    if (display_rank != null) __obj.updateDynamic("display_rank")(display_rank.asInstanceOf[js.Any])
+    if (!js.isUndefined(display_rank)) __obj.updateDynamic("display_rank")(display_rank.get.asInstanceOf[js.Any])
     if (document_id != null) __obj.updateDynamic("document_id")(document_id.asInstanceOf[js.Any])
     if (document_results != null) __obj.updateDynamic("document_results")(document_results.asInstanceOf[js.Any])
     if (document_type != null) __obj.updateDynamic("document_type")(document_type.asInstanceOf[js.Any])

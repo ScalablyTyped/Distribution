@@ -11,10 +11,8 @@ import scala.scalajs.js.annotation._
   * base class for ASN.1 DER Generalized/UTCTime class
   * @param params associative array of parameters (ex. {'str': '130430235959Z'})
   */
-@JSGlobal("jsrsasign.KJUR.asn1.DERAbstractTime")
 @js.native
-class DERAbstractTime protected () extends ASN1Object {
-  def this(params: StringParam) = this()
+trait DERAbstractTime extends ASN1Object {
   @JSName("formatDate")
   /* private */ def formatDate_gen(dateObject: Date, `type`: gen, withMillis: Boolean): String = js.native
   /**

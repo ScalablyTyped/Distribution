@@ -43,6 +43,9 @@ class QuestionSelectBase protected () extends Question {
     */
   val enabledChoices: js.Array[ItemValue] = js.native
   val hasColumns: Boolean = js.native
+  /**
+    * Set this property to true to hide the question if there is no visible choices.
+    */
   var hideIfChoicesEmpty: Boolean = js.native
   /**
     * Returns true if a user select the 'other' item.

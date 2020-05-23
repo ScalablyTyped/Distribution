@@ -1,13 +1,13 @@
 package typings.knockout.KnockoutComponentTypes
 
-import typings.knockout.AnonElement
+import typings.knockout.anon.Element
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Definition extends js.Object {
-  var createViewModel: js.UndefOr[js.Function2[/* params */ js.Any, /* options */ AnonElement, _]] = js.undefined
+  var createViewModel: js.UndefOr[js.Function2[/* params */ js.Any, /* options */ Element, _]] = js.undefined
   var template: js.Array[Node]
 }
 
@@ -15,7 +15,7 @@ object Definition {
   @scala.inline
   def apply(
     template: js.Array[Node],
-    createViewModel: (/* params */ js.Any, /* options */ AnonElement) => _ = null
+    createViewModel: (/* params */ js.Any, /* options */ Element) => _ = null
   ): Definition = {
     val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
     if (createViewModel != null) __obj.updateDynamic("createViewModel")(js.Any.fromFunction2(createViewModel))

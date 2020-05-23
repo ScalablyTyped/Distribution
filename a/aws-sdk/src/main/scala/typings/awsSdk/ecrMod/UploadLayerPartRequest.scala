@@ -11,11 +11,11 @@ trait UploadLayerPartRequest extends js.Object {
     */
   var layerPartBlob: LayerPartBlob = js.native
   /**
-    * The integer value of the first byte of the layer part.
+    * The position of the first byte of the layer part witin the overall image layer.
     */
   var partFirstByte: PartSize = js.native
   /**
-    * The integer value of the last byte of the layer part.
+    * The position of the last byte of the layer part within the overall image layer.
     */
   var partLastByte: PartSize = js.native
   /**

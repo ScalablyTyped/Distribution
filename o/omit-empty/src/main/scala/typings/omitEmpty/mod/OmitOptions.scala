@@ -12,7 +12,7 @@ object OmitOptions {
   @scala.inline
   def apply(omitZero: js.UndefOr[Boolean] = js.undefined): OmitOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(omitZero)) __obj.updateDynamic("omitZero")(omitZero.asInstanceOf[js.Any])
+    if (!js.isUndefined(omitZero)) __obj.updateDynamic("omitZero")(omitZero.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmitOptions]
   }
 }

@@ -19,7 +19,7 @@ object Options {
   def apply(content: String | HTMLElement = null, visible: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

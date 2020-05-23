@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.SlicerStyleData
 import typings.officeJsPreview.Excel.Interfaces.SlicerStyleLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.SlicerStyleUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +16,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.10]
   */
-@JSGlobal("Excel.SlicerStyle")
 @js.native
-class SlicerStyle () extends ClientObject {
+trait SlicerStyle extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_SlicerStyle: RequestContext = js.native
@@ -31,7 +30,7 @@ class SlicerStyle () extends ClientObject {
   var name: String = js.native
   /**
     *
-    * Specifies whether this SlicerStyle object is read-only. Read-only.
+    * Specifies if this SlicerStyle object is read-only.
     *
     * [Api set: ExcelApi 1.10]
     */
@@ -56,7 +55,7 @@ class SlicerStyle () extends ClientObject {
     */
   def load(): SlicerStyle = js.native
   def load(options: SlicerStyleLoadOptions): SlicerStyle = js.native
-  def load(propertyNamesAndPaths: AnonExpand): SlicerStyle = js.native
+  def load(propertyNamesAndPaths: Expand): SlicerStyle = js.native
   def load(propertyNames: String): SlicerStyle = js.native
   def load(propertyNames: js.Array[String]): SlicerStyle = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.

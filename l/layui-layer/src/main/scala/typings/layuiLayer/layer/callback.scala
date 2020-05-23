@@ -1,6 +1,6 @@
 package typings.layuiLayer.layer
 
-import typings.jquery.JQuery_
+import typings.jquery.JQuery
 import typings.layuiLayer.layuiLayerBooleans.`false`
 import typings.std.HTMLElement
 import typings.std.NonNullable
@@ -13,13 +13,13 @@ import scala.scalajs.js.annotation._
 object callback extends js.Object {
   type Cancel = NonNullable[
     js.UndefOr[
-      js.Function2[/* index */ Index, /* layero */ JQuery_[HTMLElement], `false` | Unit]
+      js.Function2[/* index */ Index, /* layero */ JQuery[HTMLElement], `false` | Unit]
     ]
   ]
   type End = NonNullable[js.UndefOr[js.Function0[Unit]]]
-  type Prompt = js.Function3[/* value */ String, /* index */ Index, /* elem */ JQuery_[HTMLElement], Unit]
+  type Prompt = js.Function3[/* value */ String, /* index */ Index, /* elem */ JQuery[HTMLElement], Unit]
   type Yes = NonNullable[
-    js.UndefOr[js.Function2[/* index */ Index, /* layero */ JQuery_[HTMLElement], Unit]]
+    js.UndefOr[js.Function2[/* index */ Index, /* layero */ JQuery[HTMLElement], Unit]]
   ]
 }
 

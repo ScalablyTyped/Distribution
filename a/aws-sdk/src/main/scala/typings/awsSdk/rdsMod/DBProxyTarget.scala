@@ -40,7 +40,7 @@ object DBProxyTarget {
   @scala.inline
   def apply(
     Endpoint: String = null,
-    Port: Int | scala.Double = null,
+    Port: js.UndefOr[Integer] = js.undefined,
     RdsResourceId: String = null,
     TargetArn: String = null,
     TargetHealth: TargetHealth = null,
@@ -49,7 +49,7 @@ object DBProxyTarget {
   ): DBProxyTarget = {
     val __obj = js.Dynamic.literal()
     if (Endpoint != null) __obj.updateDynamic("Endpoint")(Endpoint.asInstanceOf[js.Any])
-    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
+    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
     if (RdsResourceId != null) __obj.updateDynamic("RdsResourceId")(RdsResourceId.asInstanceOf[js.Any])
     if (TargetArn != null) __obj.updateDynamic("TargetArn")(TargetArn.asInstanceOf[js.Any])
     if (TargetHealth != null) __obj.updateDynamic("TargetHealth")(TargetHealth.asInstanceOf[js.Any])

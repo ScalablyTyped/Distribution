@@ -1,14 +1,14 @@
 package typings.builderUtilRuntime
 
+import typings.builderUtilRuntime.anon.Format
+import typings.builderUtilRuntime.anon.Variant
 import typings.builderUtilRuntime.builderUtilRuntimeBooleans.`false`
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.DELETE
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.GET
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.PUT
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.base64
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.hex
-import typings.builderUtilRuntime.builderUtilRuntimeStrings.installerDotexe
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.latin1
-import typings.builderUtilRuntime.builderUtilRuntimeStrings.packageDot7z
 import typings.builderUtilRuntime.progressCallbackTransformMod.ProgressInfo
 import typings.builderUtilRuntime.publishOptionsMod.GithubOptions
 import typings.builderUtilRuntime.publishOptionsMod.PublishConfiguration
@@ -81,8 +81,8 @@ object mod extends js.Object {
     def this(name: String) = this()
   }
   
-  val CURRENT_APP_INSTALLER_FILE_NAME: installerDotexe = js.native
-  val CURRENT_APP_PACKAGE_FILE_NAME: packageDot7z = js.native
+  val CURRENT_APP_INSTALLER_FILE_NAME: /* "installer.exe" */ String = js.native
+  val CURRENT_APP_PACKAGE_FILE_NAME: /* "package.7z" */ String = js.native
   def asArray[T](): js.Array[T] = js.native
   def asArray[T](v: T): js.Array[T] = js.native
   def asArray[T](v: js.Array[T]): js.Array[T] = js.native
@@ -124,10 +124,10 @@ object mod extends js.Object {
   @js.native
   object UUID extends js.Object {
     val OID: Buffer = js.native
-    def check(uuid: String): `false` | AnonFormat | AnonVariant = js.native
-    def check(uuid: String, offset: Double): `false` | AnonFormat | AnonVariant = js.native
-    def check(uuid: Buffer): `false` | AnonFormat | AnonVariant = js.native
-    def check(uuid: Buffer, offset: Double): `false` | AnonFormat | AnonVariant = js.native
+    def check(uuid: String): `false` | Format | Variant = js.native
+    def check(uuid: String, offset: Double): `false` | Format | Variant = js.native
+    def check(uuid: Buffer): `false` | Format | Variant = js.native
+    def check(uuid: Buffer, offset: Double): `false` | Format | Variant = js.native
     def parse(input: String): Buffer = js.native
     def v5(name: String, namespace: Buffer): js.Any = js.native
     def v5(name: Buffer, namespace: Buffer): js.Any = js.native

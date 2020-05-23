@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Outlook.TaskRequestAcceptItem")
 @js.native
-class TaskRequestAcceptItem protected () extends js.Object {
+trait TaskRequestAcceptItem extends js.Object {
   val Actions: typings.activexOutlook.Outlook.Actions = js.native
   val Application: typings.activexOutlook.Outlook.Application = js.native
   val Attachments: typings.activexOutlook.Outlook.Attachments = js.native

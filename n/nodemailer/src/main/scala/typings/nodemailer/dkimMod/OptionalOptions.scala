@@ -22,14 +22,14 @@ object OptionalOptions {
   @scala.inline
   def apply(
     cacheDir: String | `false` = null,
-    cacheTreshold: Int | Double = null,
+    cacheTreshold: js.UndefOr[Double] = js.undefined,
     hashAlgo: String = null,
     headerFieldNames: String = null,
     skipFields: String = null
   ): OptionalOptions = {
     val __obj = js.Dynamic.literal()
     if (cacheDir != null) __obj.updateDynamic("cacheDir")(cacheDir.asInstanceOf[js.Any])
-    if (cacheTreshold != null) __obj.updateDynamic("cacheTreshold")(cacheTreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheTreshold)) __obj.updateDynamic("cacheTreshold")(cacheTreshold.get.asInstanceOf[js.Any])
     if (hashAlgo != null) __obj.updateDynamic("hashAlgo")(hashAlgo.asInstanceOf[js.Any])
     if (headerFieldNames != null) __obj.updateDynamic("headerFieldNames")(headerFieldNames.asInstanceOf[js.Any])
     if (skipFields != null) __obj.updateDynamic("skipFields")(skipFields.asInstanceOf[js.Any])

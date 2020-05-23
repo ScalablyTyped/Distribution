@@ -2,16 +2,13 @@ package typings.ckeditor.CKEDITOR.ui
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.ckeditor.CKEDITOR.dom.element
-import typings.ckeditor.CKEDITOR.editor
 import typings.ckeditor.CKEDITOR.ui.panel.block
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CKEDITOR.ui.floatPanel")
 @js.native
-class floatPanel protected () extends js.Object {
-  def this(editor: editor, parentElement: element, definition: StringDictionary[js.Any], level: Double) = this()
+trait floatPanel extends js.Object {
   def addBlock(name: String, block: StringDictionary[js.Any]): Unit = js.native
   def addListBlock(name: String, multiSelect: Boolean): Unit = js.native
   def allowBlur(allow: Boolean): Unit = js.native

@@ -12,11 +12,15 @@ trait RecentlyPlayedParameterObject extends js.Object {
 
 object RecentlyPlayedParameterObject {
   @scala.inline
-  def apply(after: Int | Double = null, before: Int | Double = null, limit: Int | Double = null): RecentlyPlayedParameterObject = {
+  def apply(
+    after: js.UndefOr[Double] = js.undefined,
+    before: js.UndefOr[Double] = js.undefined,
+    limit: js.UndefOr[Double] = js.undefined
+  ): RecentlyPlayedParameterObject = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(after)) __obj.updateDynamic("after")(after.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(before)) __obj.updateDynamic("before")(before.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecentlyPlayedParameterObject]
   }
 }

@@ -13,7 +13,7 @@ object Prompt {
   @scala.inline
   def apply(prompt: String, echo: js.UndefOr[Boolean] = js.undefined): Prompt = {
     val __obj = js.Dynamic.literal(prompt = prompt.asInstanceOf[js.Any])
-    if (!js.isUndefined(echo)) __obj.updateDynamic("echo")(echo.asInstanceOf[js.Any])
+    if (!js.isUndefined(echo)) __obj.updateDynamic("echo")(echo.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Prompt]
   }
 }

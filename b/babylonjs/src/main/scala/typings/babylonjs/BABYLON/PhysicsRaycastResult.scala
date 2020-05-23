@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.PhysicsRaycastResult")
 @js.native
-class PhysicsRaycastResult () extends js.Object {
+trait PhysicsRaycastResult extends js.Object {
   var _hasHit: js.Any = js.native
   var _hitDistance: js.Any = js.native
   var _hitNormalWorld: js.Any = js.native

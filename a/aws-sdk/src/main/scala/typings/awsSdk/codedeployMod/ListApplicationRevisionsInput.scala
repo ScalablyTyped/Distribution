@@ -11,7 +11,7 @@ trait ListApplicationRevisionsInput extends js.Object {
     */
   var applicationName: ApplicationName = js.native
   /**
-    *  Whether to list revisions based on whether the revision is the target revision of an deployment group:    include: List revisions that are target revisions of a deployment group.   exclude: Do not list revisions that are target revisions of a deployment group.   ignore: List all revisions.  
+    *  Whether to list revisions based on whether the revision is the target revision of a deployment group:     include: List revisions that are target revisions of a deployment group.    exclude: Do not list revisions that are target revisions of a deployment group.    ignore: List all revisions.  
     */
   var deployed: js.UndefOr[ListStateFilterAction] = js.native
   /**
@@ -27,11 +27,11 @@ trait ListApplicationRevisionsInput extends js.Object {
     */
   var s3KeyPrefix: js.UndefOr[S3Key] = js.native
   /**
-    * The column name to use to sort the list results:   registerTime: Sort by the time the revisions were registered with AWS CodeDeploy.   firstUsedTime: Sort by the time the revisions were first used in a deployment.   lastUsedTime: Sort by the time the revisions were last used in a deployment.    If not specified or set to null, the results are returned in an arbitrary order. 
+    * The column name to use to sort the list results:    registerTime: Sort by the time the revisions were registered with AWS CodeDeploy.    firstUsedTime: Sort by the time the revisions were first used in a deployment.    lastUsedTime: Sort by the time the revisions were last used in a deployment.    If not specified or set to null, the results are returned in an arbitrary order. 
     */
   var sortBy: js.UndefOr[ApplicationRevisionSortBy] = js.native
   /**
-    *  The order in which to sort the list results:    ascending: ascending order.   descending: descending order.   If not specified, the results are sorted in ascending order. If set to null, the results are sorted in an arbitrary order.
+    *  The order in which to sort the list results:     ascending: ascending order.    descending: descending order.   If not specified, the results are sorted in ascending order. If set to null, the results are sorted in an arbitrary order.
     */
   var sortOrder: js.UndefOr[SortOrder] = js.native
 }

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.PointOfService
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object PosPrinterMapMode extends js.Object {
   /** 1/1440 of an inch. */
   @js.native
   sealed trait twips extends PosPrinterMapMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PosPrinterMapMode with Double] = js.native
-  /* 0 */ @js.native
-  object dots extends TopLevel[dots with Double]
-  
-  /* 2 */ @js.native
-  object english extends TopLevel[english with Double]
-  
-  /* 3 */ @js.native
-  object metric extends TopLevel[metric with Double]
-  
-  /* 1 */ @js.native
-  object twips extends TopLevel[twips with Double]
   
 }
 

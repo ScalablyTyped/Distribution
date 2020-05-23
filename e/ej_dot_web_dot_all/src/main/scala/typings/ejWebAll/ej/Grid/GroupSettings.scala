@@ -50,12 +50,12 @@ object GroupSettings {
   ): GroupSettings = {
     val __obj = js.Dynamic.literal()
     if (captionFormat != null) __obj.updateDynamic("captionFormat")(captionFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableDropAreaAutoSizing)) __obj.updateDynamic("enableDropAreaAutoSizing")(enableDropAreaAutoSizing.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableDropAreaAutoSizing)) __obj.updateDynamic("enableDropAreaAutoSizing")(enableDropAreaAutoSizing.get.asInstanceOf[js.Any])
     if (groupedColumns != null) __obj.updateDynamic("groupedColumns")(groupedColumns.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDropArea)) __obj.updateDynamic("showDropArea")(showDropArea.asInstanceOf[js.Any])
-    if (!js.isUndefined(showGroupedColumn)) __obj.updateDynamic("showGroupedColumn")(showGroupedColumn.asInstanceOf[js.Any])
-    if (!js.isUndefined(showToggleButton)) __obj.updateDynamic("showToggleButton")(showToggleButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(showUngroupButton)) __obj.updateDynamic("showUngroupButton")(showUngroupButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDropArea)) __obj.updateDynamic("showDropArea")(showDropArea.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showGroupedColumn)) __obj.updateDynamic("showGroupedColumn")(showGroupedColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showToggleButton)) __obj.updateDynamic("showToggleButton")(showToggleButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showUngroupButton)) __obj.updateDynamic("showUngroupButton")(showUngroupButton.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupSettings]
   }
 }

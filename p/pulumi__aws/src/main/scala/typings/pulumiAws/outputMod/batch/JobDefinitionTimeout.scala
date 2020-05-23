@@ -11,9 +11,9 @@ trait JobDefinitionTimeout extends js.Object {
 
 object JobDefinitionTimeout {
   @scala.inline
-  def apply(attemptDurationSeconds: Int | Double = null): JobDefinitionTimeout = {
+  def apply(attemptDurationSeconds: js.UndefOr[Double] = js.undefined): JobDefinitionTimeout = {
     val __obj = js.Dynamic.literal()
-    if (attemptDurationSeconds != null) __obj.updateDynamic("attemptDurationSeconds")(attemptDurationSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(attemptDurationSeconds)) __obj.updateDynamic("attemptDurationSeconds")(attemptDurationSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobDefinitionTimeout]
   }
 }

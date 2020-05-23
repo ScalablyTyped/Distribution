@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-daum-postcode" : "1.8.4"
+      "react-daum-postcode" : "1.9.0"
     }
   ],
   "test-dependencies" : [
     {
-      "react-daum-postcode" : "1.8.4"
+      "react-daum-postcode" : "1.9.0"
     }
   ],
   "compile-devDependencies" : [

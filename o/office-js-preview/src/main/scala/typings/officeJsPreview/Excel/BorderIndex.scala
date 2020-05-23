@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,32 +36,6 @@ object BorderIndex extends js.Object {
   
   @js.native
   sealed trait insideVertical extends BorderIndex
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[BorderIndex with String] = js.native
-  /* "DiagonalDown" */ @js.native
-  object diagonalDown extends TopLevel[diagonalDown with String]
-  
-  /* "DiagonalUp" */ @js.native
-  object diagonalUp extends TopLevel[diagonalUp with String]
-  
-  /* "EdgeBottom" */ @js.native
-  object edgeBottom extends TopLevel[edgeBottom with String]
-  
-  /* "EdgeLeft" */ @js.native
-  object edgeLeft extends TopLevel[edgeLeft with String]
-  
-  /* "EdgeRight" */ @js.native
-  object edgeRight extends TopLevel[edgeRight with String]
-  
-  /* "EdgeTop" */ @js.native
-  object edgeTop extends TopLevel[edgeTop with String]
-  
-  /* "InsideHorizontal" */ @js.native
-  object insideHorizontal extends TopLevel[insideHorizontal with String]
-  
-  /* "InsideVertical" */ @js.native
-  object insideVertical extends TopLevel[insideVertical with String]
   
 }
 

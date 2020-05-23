@@ -37,22 +37,22 @@ object ITimelineDate {
   @scala.inline
   def apply(
     year: Double,
-    day: Int | Double = null,
+    day: js.UndefOr[Double] = js.undefined,
     display_date: String = null,
-    hour: Int | Double = null,
-    millisecond: Int | Double = null,
-    minute: Int | Double = null,
-    month: Int | Double = null,
-    second: Int | Double = null
+    hour: js.UndefOr[Double] = js.undefined,
+    millisecond: js.UndefOr[Double] = js.undefined,
+    minute: js.UndefOr[Double] = js.undefined,
+    month: js.UndefOr[Double] = js.undefined,
+    second: js.UndefOr[Double] = js.undefined
   ): ITimelineDate = {
     val __obj = js.Dynamic.literal(year = year.asInstanceOf[js.Any])
-    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
+    if (!js.isUndefined(day)) __obj.updateDynamic("day")(day.get.asInstanceOf[js.Any])
     if (display_date != null) __obj.updateDynamic("display_date")(display_date.asInstanceOf[js.Any])
-    if (hour != null) __obj.updateDynamic("hour")(hour.asInstanceOf[js.Any])
-    if (millisecond != null) __obj.updateDynamic("millisecond")(millisecond.asInstanceOf[js.Any])
-    if (minute != null) __obj.updateDynamic("minute")(minute.asInstanceOf[js.Any])
-    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
-    if (second != null) __obj.updateDynamic("second")(second.asInstanceOf[js.Any])
+    if (!js.isUndefined(hour)) __obj.updateDynamic("hour")(hour.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(millisecond)) __obj.updateDynamic("millisecond")(millisecond.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minute)) __obj.updateDynamic("minute")(minute.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(month)) __obj.updateDynamic("month")(month.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(second)) __obj.updateDynamic("second")(second.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITimelineDate]
   }
 }

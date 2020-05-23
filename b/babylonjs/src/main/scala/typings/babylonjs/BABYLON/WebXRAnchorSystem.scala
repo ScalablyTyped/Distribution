@@ -7,16 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.WebXRAnchorSystem")
 @js.native
-class WebXRAnchorSystem protected () extends WebXRAbstractFeature {
-  /**
-    * constructs a new anchor system
-    * @param _xrSessionManager an instance of WebXRSessionManager
-    * @param _options configuration object for this feature
-    */
-  def this(_xrSessionManager: WebXRSessionManager) = this()
-  def this(_xrSessionManager: WebXRSessionManager, _options: IWebXRAnchorSystemOptions) = this()
+trait WebXRAnchorSystem extends WebXRAbstractFeature {
   var _enabled: js.Any = js.native
   /**
     * avoiding using Array.find for global support.
@@ -64,21 +56,5 @@ class WebXRAnchorSystem protected () extends WebXRAbstractFeature {
     */
   def setPlaneDetector(planeDetector: WebXRPlaneDetector): Unit = js.native
   def setPlaneDetector(planeDetector: WebXRPlaneDetector, enable: Boolean): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.WebXRAnchorSystem")
-@js.native
-object WebXRAnchorSystem extends js.Object {
-  /**
-    * The module's name
-    */
-  val Name: String = js.native
-  /**
-    * The (Babylon) version of this module.
-    * This is an integer representing the implementation version.
-    * This number does not correspond to the WebXR specs version
-    */
-  val Version: Double = js.native
 }
 

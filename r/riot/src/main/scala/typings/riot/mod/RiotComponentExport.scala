@@ -25,7 +25,7 @@ trait RiotComponentExport[Props, State]
 object RiotComponentExport {
   @scala.inline
   def apply[Props, State](
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     components: StringDictionary[RiotComponentShell[Props, State]] = null,
     onBeforeMount: (/* currentProps */ Props, /* currentState */ State) => Unit = null,
     onBeforeUnmount: (/* currentProps */ Props, /* currentState */ State) => Unit = null,

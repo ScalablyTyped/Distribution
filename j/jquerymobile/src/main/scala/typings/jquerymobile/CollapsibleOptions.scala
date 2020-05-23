@@ -37,7 +37,7 @@ object CollapsibleOptions {
   ): CollapsibleOptions = {
     val __obj = js.Dynamic.literal()
     if (collapseCueText != null) __obj.updateDynamic("collapseCueText")(collapseCueText.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.get.asInstanceOf[js.Any])
     if (collapsedIcon != null) __obj.updateDynamic("collapsedIcon")(collapsedIcon.asInstanceOf[js.Any])
     if (contentTheme != null) __obj.updateDynamic("contentTheme")(contentTheme.asInstanceOf[js.Any])
     if (expandCueText != null) __obj.updateDynamic("expandCueText")(expandCueText.asInstanceOf[js.Any])
@@ -45,8 +45,8 @@ object CollapsibleOptions {
     if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
     if (iconpos != null) __obj.updateDynamic("iconpos")(iconpos.asInstanceOf[js.Any])
     if (initSelector != null) __obj.updateDynamic("initSelector")(initSelector.asInstanceOf[js.Any])
-    if (!js.isUndefined(inset)) __obj.updateDynamic("inset")(inset.asInstanceOf[js.Any])
-    if (!js.isUndefined(mini)) __obj.updateDynamic("mini")(mini.asInstanceOf[js.Any])
+    if (!js.isUndefined(inset)) __obj.updateDynamic("inset")(inset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mini)) __obj.updateDynamic("mini")(mini.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollapsibleOptions]
   }

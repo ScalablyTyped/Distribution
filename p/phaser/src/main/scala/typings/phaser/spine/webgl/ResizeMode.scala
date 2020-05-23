@@ -1,6 +1,5 @@
 package typings.phaser.spine.webgl
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,17 +18,6 @@ object ResizeMode extends js.Object {
   
   @js.native
   sealed trait Stretch extends ResizeMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ResizeMode with Double] = js.native
-  /* 1 */ @js.native
-  object Expand extends TopLevel[Expand with Double]
-  
-  /* 2 */ @js.native
-  object Fit extends TopLevel[Fit with Double]
-  
-  /* 0 */ @js.native
-  object Stretch extends TopLevel[Stretch with Double]
   
 }
 

@@ -1,5 +1,6 @@
 package typings.bcryptjs
 
+import typings.bcryptjs.anon.ReadonlyArrayLikenumber
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

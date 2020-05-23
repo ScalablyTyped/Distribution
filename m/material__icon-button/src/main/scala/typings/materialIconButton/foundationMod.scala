@@ -2,6 +2,9 @@ package typings.materialIconButton
 
 import typings.materialBase.foundationMod.MDCFoundation
 import typings.materialIconButton.adapterMod.MDCIconButtonToggleAdapter
+import typings.materialIconButton.anon.ARIAPRESSED
+import typings.materialIconButton.anon.ICONBUTTONON
+import typings.materialIconButton.anon.PartialMDCIconButtonToggl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,17 +35,17 @@ object foundationMod extends js.Object {
   /* static members */
   @js.native
   object MDCIconButtonToggleFoundation extends js.Object {
-    val cssClasses: AnonICONBUTTONON = js.native
+    val cssClasses: ICONBUTTONON = js.native
     val defaultAdapter: MDCIconButtonToggleAdapter = js.native
-    val strings: AnonARIAPRESSED = js.native
+    val strings: ARIAPRESSED = js.native
   }
   
   /* static members */
   @js.native
   object default extends js.Object {
-    val cssClasses: AnonICONBUTTONON = js.native
+    val cssClasses: ICONBUTTONON = js.native
     val defaultAdapter: MDCIconButtonToggleAdapter = js.native
-    val strings: AnonARIAPRESSED = js.native
+    val strings: ARIAPRESSED = js.native
   }
   
 }

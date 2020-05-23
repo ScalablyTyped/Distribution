@@ -5,22 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.Input.Inking.InkStrokeRenderingSegment")
-@js.native
-class InkStrokeRenderingSegment () extends IInkStrokeRenderingSegment {
-  /* CompleteClass */
-  override var bezierControlPoint1: Point = js.native
-  /* CompleteClass */
-  override var bezierControlPoint2: Point = js.native
-  /* CompleteClass */
-  override var position: Point = js.native
-  /* CompleteClass */
-  override var pressure: Double = js.native
-  /* CompleteClass */
-  override var tiltX: Double = js.native
-  /* CompleteClass */
-  override var tiltY: Double = js.native
-  /* CompleteClass */
-  override var twist: Double = js.native
+trait InkStrokeRenderingSegment extends IInkStrokeRenderingSegment
+
+object InkStrokeRenderingSegment {
+  @scala.inline
+  def apply(
+    bezierControlPoint1: Point,
+    bezierControlPoint2: Point,
+    position: Point,
+    pressure: Double,
+    tiltX: Double,
+    tiltY: Double,
+    twist: Double
+  ): InkStrokeRenderingSegment = {
+    val __obj = js.Dynamic.literal(bezierControlPoint1 = bezierControlPoint1.asInstanceOf[js.Any], bezierControlPoint2 = bezierControlPoint2.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], pressure = pressure.asInstanceOf[js.Any], tiltX = tiltX.asInstanceOf[js.Any], tiltY = tiltY.asInstanceOf[js.Any], twist = twist.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InkStrokeRenderingSegment]
+  }
 }
 

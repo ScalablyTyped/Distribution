@@ -24,9 +24,9 @@ object CompilerOptions {
     val __obj = js.Dynamic.literal()
     if (defaultEncapsulation != null) __obj.updateDynamic("defaultEncapsulation")(defaultEncapsulation.asInstanceOf[js.Any])
     if (missingTranslation != null) __obj.updateDynamic("missingTranslation")(missingTranslation.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveWhitespaces)) __obj.updateDynamic("preserveWhitespaces")(preserveWhitespaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveWhitespaces)) __obj.updateDynamic("preserveWhitespaces")(preserveWhitespaces.get.asInstanceOf[js.Any])
     if (providers != null) __obj.updateDynamic("providers")(providers.asInstanceOf[js.Any])
-    if (!js.isUndefined(useJit)) __obj.updateDynamic("useJit")(useJit.asInstanceOf[js.Any])
+    if (!js.isUndefined(useJit)) __obj.updateDynamic("useJit")(useJit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompilerOptions]
   }
 }

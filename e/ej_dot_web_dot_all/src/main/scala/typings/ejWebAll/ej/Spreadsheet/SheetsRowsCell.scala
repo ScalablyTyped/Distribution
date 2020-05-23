@@ -40,7 +40,7 @@ object SheetsRowsCell {
     comment: SheetsRowsCellsComment = null,
     format: SheetsRowsCellsFormat = null,
     hyperlink: SheetsRowsCellsHyperlink = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     isLocked: js.UndefOr[Boolean] = js.undefined,
     style: SheetsRowsCellsStyle = null,
     value: String = null
@@ -49,8 +49,8 @@ object SheetsRowsCell {
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(isLocked)) __obj.updateDynamic("isLocked")(isLocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLocked)) __obj.updateDynamic("isLocked")(isLocked.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SheetsRowsCell]

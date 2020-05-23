@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Base
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,20 +37,6 @@ object ButtonSet extends js.Object {
   
   @js.native
   sealed trait YES_NO_CANCEL extends ButtonSet
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ButtonSet with Double] = js.native
-  /* 0 */ @js.native
-  object OK extends TopLevel[OK with Double]
-  
-  /* 1 */ @js.native
-  object OK_CANCEL extends TopLevel[OK_CANCEL with Double]
-  
-  /* 2 */ @js.native
-  object YES_NO extends TopLevel[YES_NO with Double]
-  
-  /* 3 */ @js.native
-  object YES_NO_CANCEL extends TopLevel[YES_NO_CANCEL with Double]
   
 }
 

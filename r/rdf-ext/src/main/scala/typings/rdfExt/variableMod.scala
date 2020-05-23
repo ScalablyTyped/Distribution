@@ -1,5 +1,6 @@
 package typings.rdfExt
 
+import typings.rdfExt.anon.TermTypePropType
 import typings.rdfJs.mod.Variable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +12,7 @@ object variableMod extends js.Object {
   @js.native
   trait VariableExt extends Variable {
     def toCanonical(): String = js.native
-    def toJSON(): AnonTermTypePropType = js.native
+    def toJSON(): TermTypePropType = js.native
   }
   
 }

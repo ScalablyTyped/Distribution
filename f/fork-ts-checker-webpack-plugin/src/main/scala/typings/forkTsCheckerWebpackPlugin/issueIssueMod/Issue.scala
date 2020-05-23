@@ -24,15 +24,15 @@ object Issue {
     message: String,
     origin: IssueOrigin,
     severity: IssueSeverity,
-    character: Int | Double = null,
+    character: js.UndefOr[Double] = js.undefined,
     file: String = null,
-    line: Int | Double = null,
+    line: js.UndefOr[Double] = js.undefined,
     stack: String = null
   ): Issue = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any])
-    if (character != null) __obj.updateDynamic("character")(character.asInstanceOf[js.Any])
+    if (!js.isUndefined(character)) __obj.updateDynamic("character")(character.get.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    if (!js.isUndefined(line)) __obj.updateDynamic("line")(line.get.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[Issue]
   }

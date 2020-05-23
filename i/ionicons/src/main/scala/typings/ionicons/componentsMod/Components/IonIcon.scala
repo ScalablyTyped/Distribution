@@ -70,7 +70,7 @@ object IonIcon {
     __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
     if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(flipRtl)) __obj.updateDynamic("flipRtl")(flipRtl.asInstanceOf[js.Any])
+    if (!js.isUndefined(flipRtl)) __obj.updateDynamic("flipRtl")(flipRtl.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (ios != null) __obj.updateDynamic("ios")(ios.asInstanceOf[js.Any])
     if (md != null) __obj.updateDynamic("md")(md.asInstanceOf[js.Any])

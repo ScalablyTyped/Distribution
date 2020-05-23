@@ -16,8 +16,8 @@ trait IBodyRenderOptions extends js.Object {
     */
   var lineWidth: js.UndefOr[Double] = js.undefined
   /*
-  		 * Sets the opacity. 1.0 is fully opaque. 0.0 is fully translucent
-  		 */
+    * Sets the opacity. 1.0 is fully opaque. 0.0 is fully translucent
+    */
   var opacity: js.UndefOr[Double] = js.undefined
   /**
     * An `Object` that defines the sprite properties to use when rendering, if any.
@@ -45,19 +45,19 @@ object IBodyRenderOptions {
   @scala.inline
   def apply(
     fillStyle: String = null,
-    lineWidth: Int | Double = null,
-    opacity: Int | Double = null,
+    lineWidth: js.UndefOr[Double] = js.undefined,
+    opacity: js.UndefOr[Double] = js.undefined,
     sprite: IBodyRenderOptionsSprite = null,
     strokeStyle: String = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): IBodyRenderOptions = {
     val __obj = js.Dynamic.literal()
     if (fillStyle != null) __obj.updateDynamic("fillStyle")(fillStyle.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (sprite != null) __obj.updateDynamic("sprite")(sprite.asInstanceOf[js.Any])
     if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBodyRenderOptions]
   }
 }

@@ -18,16 +18,16 @@ object Source {
   def apply(
     name: String,
     layers: js.Array[String] = null,
-    maxrate: Int | Double = null,
+    maxrate: js.UndefOr[Double] = js.undefined,
     mbtiles: String = null,
     raw: js.UndefOr[Boolean] = js.undefined,
     url: String = null
   ): Source = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
-    if (maxrate != null) __obj.updateDynamic("maxrate")(maxrate.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxrate)) __obj.updateDynamic("maxrate")(maxrate.get.asInstanceOf[js.Any])
     if (mbtiles != null) __obj.updateDynamic("mbtiles")(mbtiles.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source]
   }

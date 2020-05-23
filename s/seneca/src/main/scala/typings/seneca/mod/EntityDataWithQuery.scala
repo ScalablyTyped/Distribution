@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EntityDataWithQuery
-  extends /* entityKey */ StringDictionary[js.Any] {
+  extends /* plugin_name */ StringDictionary[js.Any] {
   var id: js.UndefOr[String] = js.undefined
   @JSName("sort$")
   var sort$: js.UndefOr[js.Any] = js.undefined
@@ -15,7 +15,7 @@ trait EntityDataWithQuery
 object EntityDataWithQuery {
   @scala.inline
   def apply(
-    StringDictionary: /* entityKey */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     id: String = null,
     sort$: js.Any = null
   ): EntityDataWithQuery = {

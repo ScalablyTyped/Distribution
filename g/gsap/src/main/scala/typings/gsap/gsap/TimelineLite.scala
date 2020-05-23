@@ -4,11 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.gsap.gsap.Timeline because Already inherited */ @JSGlobal("gsap.TimelineLite")
-@js.native
-class TimelineLite () extends SimpleTimeline {
-  def this(vars: js.Object) = this()
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.gsap.gsap.Timeline because Already inherited */ @js.native
+trait TimelineLite extends SimpleTimeline {
   /** Adds a label to the timeline, making it easy to mark important positions/times. */
   def addLabel(label: String, position: js.Any): TimelineLite = js.native
   /** Inserts a special callback that pauses playback of the timeline at a particular time or label. */
@@ -202,18 +200,5 @@ class TimelineLite () extends SimpleTimeline {
   /** If true, the timeline's timing mode is frames-based instead of seconds. */
   def useFrames(): Boolean = js.native
   def usesFrames(): Boolean = js.native
-}
-
-/* static members */
-@JSGlobal("gsap.TimelineLite")
-@js.native
-object TimelineLite extends js.Object {
-  /**
-    * Seamlessly transfers all tweens, timelines, and [optionally] delayed calls from the root timeline into a new TimelineLite so that you can perform advanced tasks on a seemingly global
-    * basis without affecting tweens/timelines that you create after the export.
-    */
-  def exportRoot(): TimelineLite = js.native
-  def exportRoot(vars: js.Object): TimelineLite = js.native
-  def exportRoot(vars: js.Object, omitDelayedCalls: Boolean): TimelineLite = js.native
 }
 

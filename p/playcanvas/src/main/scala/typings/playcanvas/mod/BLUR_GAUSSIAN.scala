@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.BLUR_GAUSSIAN
-  * @type {number}
-  * @description Gaussian filter. May look smoother than box, but requires more samples.
+  * Gaussian filter. May look smoother than box, but requires more samples.
   */
 @JSImport("playcanvas", "BLUR_GAUSSIAN")
 @js.native

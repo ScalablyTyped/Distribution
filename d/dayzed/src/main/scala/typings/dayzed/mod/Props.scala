@@ -37,8 +37,8 @@ object Props {
     firstDayOfWeek: `0` | `1` | `2` | `3` | `4` | `5` | `6` = null,
     maxDate: Date = null,
     minDate: Date = null,
-    monthsToDisplay: Int | Double = null,
-    offset: Int | Double = null,
+    monthsToDisplay: js.UndefOr[Double] = js.undefined,
+    offset: js.UndefOr[Double] = js.undefined,
     onOffsetChanged: /* offset */ Double => Unit = null,
     render: /* renderProps */ RenderProps => ReactNode = null,
     selected: Date | js.Array[Date] = null,
@@ -50,12 +50,12 @@ object Props {
     if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (monthsToDisplay != null) __obj.updateDynamic("monthsToDisplay")(monthsToDisplay.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(monthsToDisplay)) __obj.updateDynamic("monthsToDisplay")(monthsToDisplay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (onOffsetChanged != null) __obj.updateDynamic("onOffsetChanged")(js.Any.fromFunction1(onOffsetChanged))
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOutsideDays)) __obj.updateDynamic("showOutsideDays")(showOutsideDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOutsideDays)) __obj.updateDynamic("showOutsideDays")(showOutsideDays.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

@@ -11,46 +11,46 @@ trait IHistory extends IObservable {
   /** [Config Option] (Array) */
   var actions: js.UndefOr[Array] = js.undefined
   /** [Method] Adds an Action to the stack optionally updating the browser s url and firing the change event
-  		* @param action Ext.app.Action The Action to add to the stack.
-  		* @param silent Boolean Cancels the firing of the change event if true.
-  		*/
+    * @param action Ext.app.Action The Action to add to the stack.
+    * @param silent Boolean Cancels the firing of the change event if true.
+    */
   var add: js.UndefOr[
     js.Function2[/* action */ js.UndefOr[IAction], /* silent */ js.UndefOr[Boolean], Unit]
   ] = js.undefined
   /** [Method] Navigate to the previous active action  */
   var back: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Returns the value of actions
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   var getActions: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the value of token
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getToken: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of updateUrl
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getUpdateUrl: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
-  		* @param object Object The Observable whose events this object is to relay.
-  		* @param events String/Array/Object Array of event names to relay.
-  		* @returns Ext.mixin.Observable this
-  		*/
+    * @param object Object The Observable whose events this object is to relay.
+    * @param events String/Array/Object Array of event names to relay.
+    * @returns Ext.mixin.Observable this
+    */
   @JSName("relayEvents")
   var relayEvents_IHistory: js.UndefOr[
     js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
   ] = js.undefined
   /** [Method] Sets the value of actions
-  		* @param actions Array The new value.
-  		*/
+    * @param actions Array The new value.
+    */
   var setActions: js.UndefOr[js.Function1[/* actions */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Sets the value of token
-  		* @param token String The new value.
-  		*/
+    * @param token String The new value.
+    */
   var setToken: js.UndefOr[js.Function1[/* token */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of updateUrl
-  		* @param updateUrl Boolean The new value.
-  		*/
+    * @param updateUrl Boolean The new value.
+    */
   var setUpdateUrl: js.UndefOr[js.Function1[/* updateUrl */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Config Option] (String) */
   var token: js.UndefOr[String] = js.undefined
@@ -174,14 +174,14 @@ object IHistory {
     if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
     if (setToken != null) __obj.updateDynamic("setToken")(js.Any.fromFunction1(setToken))
     if (setUpdateUrl != null) __obj.updateDynamic("setUpdateUrl")(js.Any.fromFunction1(setUpdateUrl))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
     if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
     if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))
-    if (!js.isUndefined(updateUrl)) __obj.updateDynamic("updateUrl")(updateUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateUrl)) __obj.updateDynamic("updateUrl")(updateUrl.get.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHistory]
   }

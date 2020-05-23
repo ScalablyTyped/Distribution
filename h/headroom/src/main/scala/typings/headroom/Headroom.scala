@@ -1,18 +1,18 @@
 package typings.headroom
 
-import typings.std.Element
-import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Headroom")
-@js.native
-class Headroom protected () extends js.Object {
-  def this(element: Element) = this()
-  def this(element: Node) = this()
-  def this(element: Element, options: HeadroomOptions) = this()
-  def this(element: Node, options: HeadroomOptions) = this()
-  def init(): Unit = js.native
+trait Headroom extends js.Object {
+  def init(): Unit
+}
+
+object Headroom {
+  @scala.inline
+  def apply(init: () => Unit): Headroom = {
+    val __obj = js.Dynamic.literal(init = js.Any.fromFunction0(init))
+    __obj.asInstanceOf[Headroom]
+  }
 }
 

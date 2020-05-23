@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ably" : "1.1.24"
+      "ably" : "1.1.25"
     }
   ],
   "test-dependencies" : [
     {
-      "ably" : "1.1.24"
+      "ably" : "1.1.25"
     }
   ],
   "compile-devDependencies" : [

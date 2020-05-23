@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +7,14 @@ import scala.scalajs.js.annotation._
 /** HTMLOptionsCollection is an interface representing a collection of HTML option elements (in document order) and offers methods and properties for traversing the list as well as optionally altering its items. This type is returned solely by the "options" property of select. */
 @js.native
 trait HTMLOptionsCollection extends HTMLCollectionOf[HTMLOptionElement] {
+  /**
+    * Returns the number of elements in the collection.
+    * 
+    * When set to a smaller number, truncates the number of option elements in the corresponding container.
+    * 
+    * When set to a greater number, adds new blank option elements to that container.
+    */
+  var length: Double = js.native
   /**
     * Returns the index of the first selected item, if any, or −1 if there is no selected item.
     * 
@@ -34,8 +41,4 @@ trait HTMLOptionsCollection extends HTMLCollectionOf[HTMLOptionElement] {
     */
   def remove(index: Double): Unit = js.native
 }
-
-@JSGlobal("HTMLOptionsCollection")
-@js.native
-object HTMLOptionsCollection extends Instantiable0[HTMLOptionsCollection]
 

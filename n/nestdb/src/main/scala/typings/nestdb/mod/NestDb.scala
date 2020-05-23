@@ -1,6 +1,6 @@
 package typings.nestdb.mod
 
-import typings.nestdb.AnonNewDoc
+import typings.nestdb.anon.NewDoc
 import typings.nestdb.nestdbStrings.compactionDotdone
 import typings.node.eventsMod.EventEmitter
 import typings.std.Error
@@ -173,7 +173,7 @@ trait NestDb[G] extends EventEmitter {
     * If one update violates a constraint, all changes are rolled back
     */
   def updateIndexes[T /* <: G */](oldDoc: T, newDoc: T): Unit = js.native
-  def updateIndexes[T /* <: G */](updates: js.Array[AnonNewDoc[T, G]]): Unit = js.native
+  def updateIndexes[T /* <: G */](updates: js.Array[NewDoc[T, G]]): Unit = js.native
   /**
     * Update all docs matching query v1.8 signature.
     * For now, very naive implementation (recalculating the whole database)

@@ -1,33 +1,27 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.AnonLoop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @class
-  * @name pc.SpriteAnimationClip
-  * @augments pc.EventHandler
-  * @classdesc Handles playing of sprite animations and loading of relevant sprite assets.
-  * @param {pc.SpriteComponent} component - The sprite component managing this clip.
-  * @param {object} data - Data for the new animation clip.
-  * @param {number} [data.fps] - Frames per second for the animation clip.
-  * @param {object} [data.loop] - Whether to loop the animation clip.
-  * @param {string} [data.name] - The name of the new animation clip.
-  * @param {number} [data.spriteAsset] - The id of the sprite asset that this clip will play.
-  * @property {number} spriteAsset The id of the sprite asset used to play the animation.
-  * @property {pc.Sprite} sprite The current sprite used to play the animation.
-  * @property {number} frame The index of the frame of the {@link pc.Sprite} currently being rendered.
-  * @property {number} time The current time of the animation in seconds.
-  * @property {number} duration The total duration of the animation in seconds.
-  * @property {boolean} isPlaying Whether the animation is currently playing.
-  * @property {boolean} isPaused Whether the animation is currently paused.
+  * Handles playing of sprite animations and loading of relevant sprite assets.
+  * @property spriteAsset - The id of the sprite asset used to play the animation.
+  * @property sprite - The current sprite used to play the animation.
+  * @property frame - The index of the frame of the {@link pc.Sprite} currently being rendered.
+  * @property time - The current time of the animation in seconds.
+  * @property duration - The total duration of the animation in seconds.
+  * @property isPlaying - Whether the animation is currently playing.
+  * @property isPaused - Whether the animation is currently paused.
+  * @param component - The sprite component managing this clip.
+  * @param data - Data for the new animation clip.
+  * @param [data.fps] - Frames per second for the animation clip.
+  * @param [data.loop] - Whether to loop the animation clip.
+  * @param [data.name] - The name of the new animation clip.
+  * @param [data.spriteAsset] - The id of the sprite asset that this clip will play.
   */
-@JSGlobal("pc.SpriteAnimationClip")
 @js.native
-class SpriteAnimationClip protected () extends EventHandler {
-  def this(component: SpriteComponent, data: AnonLoop) = this()
+trait SpriteAnimationClip extends EventHandler {
   /**
     * The total duration of the animation in seconds.
     */
@@ -57,27 +51,19 @@ class SpriteAnimationClip protected () extends EventHandler {
     */
   var time: Double = js.native
   /**
-    * @function
-    * @name pc.SpriteAnimationClip#pause
-    * @description Pauses the animation.
+    * Pauses the animation.
     */
   def pause(): Unit = js.native
   /**
-    * @function
-    * @name pc.SpriteAnimationClip#play
-    * @description Plays the animation. If it's already playing then this does nothing.
+    * Plays the animation. If it's already playing then this does nothing.
     */
   def play(): Unit = js.native
   /**
-    * @function
-    * @name pc.SpriteAnimationClip#resume
-    * @description Resumes the paused animation.
+    * Resumes the paused animation.
     */
   def resume(): Unit = js.native
   /**
-    * @function
-    * @name pc.SpriteAnimationClip#stop
-    * @description Stops the animation and resets the animation to the first frame.
+    * Stops the animation and resets the animation to the first frame.
     */
   def stop(): Unit = js.native
 }

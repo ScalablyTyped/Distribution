@@ -8,19 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class dxSankeyNode ()
   extends typings.devextreme.mod.DevExpress.viz.dxSankeyNode {
-  /** @name dxSankeyNode.label */
-  /* CompleteClass */
-  override var label: String = js.native
-  /** @name dxSankeyNode.linksIn */
-  /* CompleteClass */
-  override var linksIn: js.Array[_] = js.native
-  /** @name dxSankeyNode.linksOut */
-  /* CompleteClass */
-  override var linksOut: js.Array[_] = js.native
-  /** @deprecated */
-  /** @name dxSankeyNode.title */
-  /* CompleteClass */
-  override var title: String = js.native
   /** @name dxSankeyNode.hideTooltip() */
   /* CompleteClass */
   override def hideTooltip(): Unit = js.native

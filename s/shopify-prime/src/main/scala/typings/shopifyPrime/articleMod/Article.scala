@@ -70,11 +70,11 @@ object Article {
   def apply(
     admin_graphql_api_id: String = null,
     author: String = null,
-    blog_id: Int | Double = null,
+    blog_id: js.UndefOr[Double] = js.undefined,
     body_html: String = null,
     created_at: String = null,
     handle: String = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     image: ArticleImage = null,
     published: js.UndefOr[Boolean] = js.undefined,
     published_at: String = null,
@@ -83,25 +83,25 @@ object Article {
     template_suffix: String = null,
     title: String = null,
     updated_at: String = null,
-    user_id: Int | Double = null
+    user_id: js.UndefOr[Double] = js.undefined
   ): Article = {
     val __obj = js.Dynamic.literal()
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
     if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
-    if (blog_id != null) __obj.updateDynamic("blog_id")(blog_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(blog_id)) __obj.updateDynamic("blog_id")(blog_id.get.asInstanceOf[js.Any])
     if (body_html != null) __obj.updateDynamic("body_html")(body_html.asInstanceOf[js.Any])
     if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
     if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (!js.isUndefined(published)) __obj.updateDynamic("published")(published.asInstanceOf[js.Any])
+    if (!js.isUndefined(published)) __obj.updateDynamic("published")(published.get.asInstanceOf[js.Any])
     if (published_at != null) __obj.updateDynamic("published_at")(published_at.asInstanceOf[js.Any])
     if (summary_html != null) __obj.updateDynamic("summary_html")(summary_html.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (template_suffix != null) __obj.updateDynamic("template_suffix")(template_suffix.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
-    if (user_id != null) __obj.updateDynamic("user_id")(user_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(user_id)) __obj.updateDynamic("user_id")(user_id.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Article]
   }
 }

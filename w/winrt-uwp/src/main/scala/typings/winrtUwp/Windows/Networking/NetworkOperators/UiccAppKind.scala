@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.NetworkOperators
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,29 +38,6 @@ object UiccAppKind extends js.Object {
   /** UMTS application. */
   @js.native
   sealed trait usim extends UiccAppKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UiccAppKind with Double] = js.native
-  /* 5 */ @js.native
-  object csim extends TopLevel[csim with Double]
-  
-  /* 6 */ @js.native
-  object isim extends TopLevel[isim with Double]
-  
-  /* 1 */ @js.native
-  object mf extends TopLevel[mf with Double]
-  
-  /* 3 */ @js.native
-  object mfRuim extends TopLevel[mfRuim with Double]
-  
-  /* 2 */ @js.native
-  object mfSim extends TopLevel[mfSim with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
-  /* 4 */ @js.native
-  object usim extends TopLevel[usim with Double]
   
 }
 

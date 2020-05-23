@@ -1,6 +1,8 @@
 package typings.jpm
 
 import typings.jpm.FFAddonSDK.Port
+import typings.jpm.anon.Allow
+import typings.jpm.anon.Script
 import typings.jpm.jpmStrings.error
 import typings.jpm.jpmStrings.message
 import typings.std.Error
@@ -17,7 +19,7 @@ import scala.scalajs.js.annotation._
 object pageWorkerMod extends js.Object {
   @js.native
   trait PageWorker extends js.Object {
-    var allow: js.UndefOr[AnonScript] = js.native
+    var allow: js.UndefOr[Script] = js.native
     var contentScript: js.UndefOr[String | js.Array[String]] = js.native
     var contentScriptFile: js.UndefOr[String | js.Array[String]] = js.native
     var contentURL: js.UndefOr[String] = js.native
@@ -31,6 +33,6 @@ object pageWorkerMod extends js.Object {
     def removeListener(event: String, listener: js.Function): Unit = js.native
   }
   
-  def Page(options: AnonAllow): PageWorker = js.native
+  def Page(options: Allow): PageWorker = js.native
 }
 

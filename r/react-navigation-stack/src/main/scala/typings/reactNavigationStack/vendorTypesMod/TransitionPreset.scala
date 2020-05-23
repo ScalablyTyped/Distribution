@@ -1,6 +1,6 @@
 package typings.reactNavigationStack.vendorTypesMod
 
-import typings.reactNavigationStack.AnonClose
+import typings.reactNavigationStack.anon.Close
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait TransitionPreset extends js.Object {
   /**
     * Object which specifies the animation type (timing or spring) and their options (such as duration for timing).
     */
-  var transitionSpec: AnonClose
+  var transitionSpec: Close
 }
 
 object TransitionPreset {
@@ -30,7 +30,7 @@ object TransitionPreset {
     cardStyleInterpolator: /* props */ StackCardInterpolationProps => StackCardInterpolatedStyle,
     gestureDirection: GestureDirection,
     headerStyleInterpolator: /* props */ StackHeaderInterpolationProps => StackHeaderInterpolatedStyle,
-    transitionSpec: AnonClose
+    transitionSpec: Close
   ): TransitionPreset = {
     val __obj = js.Dynamic.literal(cardStyleInterpolator = js.Any.fromFunction1(cardStyleInterpolator), gestureDirection = gestureDirection.asInstanceOf[js.Any], headerStyleInterpolator = js.Any.fromFunction1(headerStyleInterpolator), transitionSpec = transitionSpec.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitionPreset]

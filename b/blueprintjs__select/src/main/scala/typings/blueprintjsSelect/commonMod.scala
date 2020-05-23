@@ -12,11 +12,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object commonMod extends js.Object {
   def executeItemsEqual[T](): Boolean = js.native
-  def executeItemsEqual[T](itemsEqualProp: js.UndefOr[ItemsEqualProp[T]], itemA: T): Boolean = js.native
-  def executeItemsEqual[T](itemsEqualProp: js.UndefOr[ItemsEqualProp[T]], itemA: T, itemB: T): Boolean = js.native
-  def executeItemsEqual[T](itemsEqualProp: js.UndefOr[ItemsEqualProp[T]], itemA: js.UndefOr[scala.Nothing], itemB: T): Boolean = js.native
-  def executeItemsEqual[T](itemsEqualProp: js.UndefOr[ItemsEqualProp[T]], itemA: Null, itemB: T): Boolean = js.native
   def executeItemsEqual[T](itemsEqualProp: ItemsEqualProp[T]): Boolean = js.native
+  def executeItemsEqual[T](itemsEqualProp: ItemsEqualProp[T], itemA: T): Boolean = js.native
+  def executeItemsEqual[T](itemsEqualProp: ItemsEqualProp[T], itemA: T, itemB: T): Boolean = js.native
+  def executeItemsEqual[T](itemsEqualProp: ItemsEqualProp[T], itemA: Null, itemB: T): Boolean = js.native
   def getActiveItem[T](): T | Null = js.native
   def getActiveItem[T](activeItem: T): T | Null = js.native
   def getActiveItem[T](activeItem: ICreateNewItem): T | Null = js.native

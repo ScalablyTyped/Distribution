@@ -39,7 +39,7 @@ trait PolicyComplianceDetail extends js.Object {
 object PolicyComplianceDetail {
   @scala.inline
   def apply(
-    EvaluationLimitExceeded: js.UndefOr[scala.Boolean] = js.undefined,
+    EvaluationLimitExceeded: js.UndefOr[Boolean] = js.undefined,
     ExpiredAt: TimeStamp = null,
     IssueInfoMap: IssueInfoMap = null,
     MemberAccount: AWSAccountId = null,
@@ -48,7 +48,7 @@ object PolicyComplianceDetail {
     Violators: ComplianceViolators = null
   ): PolicyComplianceDetail = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(EvaluationLimitExceeded)) __obj.updateDynamic("EvaluationLimitExceeded")(EvaluationLimitExceeded.asInstanceOf[js.Any])
+    if (!js.isUndefined(EvaluationLimitExceeded)) __obj.updateDynamic("EvaluationLimitExceeded")(EvaluationLimitExceeded.get.asInstanceOf[js.Any])
     if (ExpiredAt != null) __obj.updateDynamic("ExpiredAt")(ExpiredAt.asInstanceOf[js.Any])
     if (IssueInfoMap != null) __obj.updateDynamic("IssueInfoMap")(IssueInfoMap.asInstanceOf[js.Any])
     if (MemberAccount != null) __obj.updateDynamic("MemberAccount")(MemberAccount.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 package typings.ignoreWalk.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ignoreWalk.AnonFollow
+import typings.ignoreWalk.anon.Follow
 import typings.ignoreWalk.ignoreWalkStrings.done
 import typings.ignoreWalk.ignoreWalkStrings.error
 import typings.node.eventsMod.EventEmitter
@@ -60,6 +60,6 @@ class Walker () extends EventEmitter {
   def start(): this.type = js.native
   def stat(entry: String, file: Boolean, dir: Boolean, the: js.Function0[Unit]): Unit = js.native
   def walker(entry: String, `then`: js.Function0[Unit]): Unit = js.native
-  def walkerOpt(entry: String): AnonFollow = js.native
+  def walkerOpt(entry: String): Follow = js.native
 }
 

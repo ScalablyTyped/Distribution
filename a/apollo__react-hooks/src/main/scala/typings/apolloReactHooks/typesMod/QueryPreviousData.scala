@@ -27,16 +27,16 @@ object QueryPreviousData {
     observableQueryOptions: js.Object = null,
     options: QueryOptions[TData, TVariables] = null,
     query: DocumentNode = null,
-    result: QueryResult[TData, TVariables] = null
+    result: js.UndefOr[Null | (QueryResult[TData, TVariables])] = js.undefined
   ): QueryPreviousData[TData, TVariables] = {
     val __obj = js.Dynamic.literal()
     if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
+    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.get.asInstanceOf[js.Any])
     if (observableQueryOptions != null) __obj.updateDynamic("observableQueryOptions")(observableQueryOptions.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
+    if (!js.isUndefined(result)) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryPreviousData[TData, TVariables]]
   }
 }

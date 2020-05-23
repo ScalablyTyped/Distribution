@@ -40,8 +40,8 @@ object GPGPUProgram {
     val __obj = js.Dynamic.literal(outputShape = outputShape.asInstanceOf[js.Any], userCode = userCode.asInstanceOf[js.Any], variableNames = variableNames.asInstanceOf[js.Any])
     if (outPackingScheme != null) __obj.updateDynamic("outPackingScheme")(outPackingScheme.asInstanceOf[js.Any])
     if (outTexUsage != null) __obj.updateDynamic("outTexUsage")(outTexUsage.asInstanceOf[js.Any])
-    if (!js.isUndefined(packedInputs)) __obj.updateDynamic("packedInputs")(packedInputs.asInstanceOf[js.Any])
-    if (!js.isUndefined(packedOutput)) __obj.updateDynamic("packedOutput")(packedOutput.asInstanceOf[js.Any])
+    if (!js.isUndefined(packedInputs)) __obj.updateDynamic("packedInputs")(packedInputs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(packedOutput)) __obj.updateDynamic("packedOutput")(packedOutput.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GPGPUProgram]
   }
 }

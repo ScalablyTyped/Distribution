@@ -57,8 +57,8 @@ object DeleteMultiplexResponse {
     Id: string = null,
     MultiplexSettings: MultiplexSettings = null,
     Name: string = null,
-    PipelinesRunningCount: Int | Double = null,
-    ProgramCount: Int | Double = null,
+    PipelinesRunningCount: js.UndefOr[integer] = js.undefined,
+    ProgramCount: js.UndefOr[integer] = js.undefined,
     State: MultiplexState = null,
     Tags: Tags = null
   ): DeleteMultiplexResponse = {
@@ -69,8 +69,8 @@ object DeleteMultiplexResponse {
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     if (MultiplexSettings != null) __obj.updateDynamic("MultiplexSettings")(MultiplexSettings.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (PipelinesRunningCount != null) __obj.updateDynamic("PipelinesRunningCount")(PipelinesRunningCount.asInstanceOf[js.Any])
-    if (ProgramCount != null) __obj.updateDynamic("ProgramCount")(ProgramCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(PipelinesRunningCount)) __obj.updateDynamic("PipelinesRunningCount")(PipelinesRunningCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ProgramCount)) __obj.updateDynamic("ProgramCount")(ProgramCount.get.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteMultiplexResponse]

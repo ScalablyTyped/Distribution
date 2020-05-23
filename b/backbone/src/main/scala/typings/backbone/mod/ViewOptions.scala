@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ViewOptions[TModel /* <: Model */] extends js.Object {
+trait ViewOptions[TModel /* <: Model[_, ModelSetOptions] */] extends js.Object {
   var attributes: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   // TODO: quickfix, this can't be fixed easy. The collection does not need to have the same model as the parent view.
@@ -20,7 +20,7 @@ trait ViewOptions[TModel /* <: Model */] extends js.Object {
 
 object ViewOptions {
   @scala.inline
-  def apply[TModel /* <: Model */](
+  def apply[TModel](
     attributes: StringDictionary[js.Any] = null,
     className: String = null,
     collection: Collection[_] = null,

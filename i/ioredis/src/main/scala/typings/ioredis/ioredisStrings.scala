@@ -41,6 +41,9 @@ object ioredisStrings {
   sealed trait OK extends js.Object
   
   @js.native
+  sealed trait RESETSTAT extends js.Object
+  
+  @js.native
   sealed trait REWRITE extends js.Object
   
   @js.native
@@ -60,9 +63,6 @@ object ioredisStrings {
   
   @js.native
   sealed trait TLSv1Dot3 extends SecureVersion
-  
-  @js.native
-  sealed trait Tilde extends js.Object
   
   @js.native
   sealed trait WITHSCORES extends js.Object
@@ -111,6 +111,8 @@ object ioredisStrings {
   @scala.inline
   def OK: OK = "OK".asInstanceOf[OK]
   @scala.inline
+  def RESETSTAT: RESETSTAT = "RESETSTAT".asInstanceOf[RESETSTAT]
+  @scala.inline
   def REWRITE: REWRITE = "REWRITE".asInstanceOf[REWRITE]
   @scala.inline
   def SAVE: SAVE = "SAVE".asInstanceOf[SAVE]
@@ -124,8 +126,6 @@ object ioredisStrings {
   def TLSv1Dot2: TLSv1Dot2 = "TLSv1.2".asInstanceOf[TLSv1Dot2]
   @scala.inline
   def TLSv1Dot3: TLSv1Dot3 = "TLSv1.3".asInstanceOf[TLSv1Dot3]
-  @scala.inline
-  def Tilde: Tilde = "~".asInstanceOf[Tilde]
   @scala.inline
   def WITHSCORES: WITHSCORES = "WITHSCORES".asInstanceOf[WITHSCORES]
   @scala.inline

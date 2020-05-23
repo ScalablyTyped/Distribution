@@ -18,8 +18,8 @@ object KeyboardButton {
     request_location: js.UndefOr[Boolean] = js.undefined
   ): KeyboardButton = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
-    if (!js.isUndefined(request_contact)) __obj.updateDynamic("request_contact")(request_contact.asInstanceOf[js.Any])
-    if (!js.isUndefined(request_location)) __obj.updateDynamic("request_location")(request_location.asInstanceOf[js.Any])
+    if (!js.isUndefined(request_contact)) __obj.updateDynamic("request_contact")(request_contact.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(request_location)) __obj.updateDynamic("request_location")(request_location.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardButton]
   }
 }

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object AppointmentBusyStatus extends js.Object {
   /** The participant is working elsewhere. */
   @js.native
   sealed trait workingElsewhere extends AppointmentBusyStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AppointmentBusyStatus with Double] = js.native
-  /* 0 */ @js.native
-  object busy extends TopLevel[busy with Double]
-  
-  /* 2 */ @js.native
-  object free extends TopLevel[free with Double]
-  
-  /* 3 */ @js.native
-  object outOfOffice extends TopLevel[outOfOffice with Double]
-  
-  /* 1 */ @js.native
-  object tentative extends TopLevel[tentative with Double]
-  
-  /* 4 */ @js.native
-  object workingElsewhere extends TopLevel[workingElsewhere with Double]
   
 }
 

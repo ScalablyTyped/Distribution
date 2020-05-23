@@ -1,7 +1,7 @@
 package typings.reactCreditCards.mod
 
-import typings.reactCreditCards.AnonName
-import typings.reactCreditCards.AnonValid
+import typings.reactCreditCards.anon.Name
+import typings.reactCreditCards.anon.Valid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,10 +13,10 @@ trait ReactCreditCardProps extends js.Object {
   var expiry: String | Double
   var focused: js.UndefOr[Focused] = js.undefined
   var issuer: js.UndefOr[String] = js.undefined
-  var locale: js.UndefOr[AnonValid] = js.undefined
+  var locale: js.UndefOr[Valid] = js.undefined
   var name: String
   var number: String | Double
-  var placeholders: js.UndefOr[AnonName] = js.undefined
+  var placeholders: js.UndefOr[Name] = js.undefined
   var preview: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -31,8 +31,8 @@ object ReactCreditCardProps {
     callback: (/* type */ CallbackArgument, /* isValid */ Boolean) => Unit = null,
     focused: Focused = null,
     issuer: String = null,
-    locale: AnonValid = null,
-    placeholders: AnonName = null,
+    locale: Valid = null,
+    placeholders: Name = null,
     preview: js.UndefOr[Boolean] = js.undefined
   ): ReactCreditCardProps = {
     val __obj = js.Dynamic.literal(cvc = cvc.asInstanceOf[js.Any], expiry = expiry.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
@@ -42,7 +42,7 @@ object ReactCreditCardProps {
     if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (placeholders != null) __obj.updateDynamic("placeholders")(placeholders.asInstanceOf[js.Any])
-    if (!js.isUndefined(preview)) __obj.updateDynamic("preview")(preview.asInstanceOf[js.Any])
+    if (!js.isUndefined(preview)) __obj.updateDynamic("preview")(preview.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactCreditCardProps]
   }
 }

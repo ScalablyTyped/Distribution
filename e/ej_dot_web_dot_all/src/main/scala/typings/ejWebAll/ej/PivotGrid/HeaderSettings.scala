@@ -22,8 +22,8 @@ object HeaderSettings {
     showRowItems: js.UndefOr[Boolean] = js.undefined
   ): HeaderSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(showColumnItems)) __obj.updateDynamic("showColumnItems")(showColumnItems.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRowItems)) __obj.updateDynamic("showRowItems")(showRowItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(showColumnItems)) __obj.updateDynamic("showColumnItems")(showColumnItems.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRowItems)) __obj.updateDynamic("showRowItems")(showRowItems.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderSettings]
   }
 }

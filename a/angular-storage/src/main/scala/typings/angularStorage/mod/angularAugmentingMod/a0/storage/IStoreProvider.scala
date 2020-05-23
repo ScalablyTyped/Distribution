@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait IStoreProvider extends js.Object {
   /**
-  		     * Sets the storage.
-  		     *
-  		     * @param {String} storage - The storage name
-  		     */
+    * Sets the storage.
+    *
+    * @param {String} storage - The storage name
+    */
   def setStore(storage: String): Unit
 }
 

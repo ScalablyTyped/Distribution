@@ -22,7 +22,7 @@ object annotatedCommitMod extends js.Object {
     /**
       * @param repo - repository that contains the given commit
       * @param branchName - name of the (remote) branch
-      * @param remoteUrl - 	url of the remote
+      * @param remoteUrl -     url of the remote
       * @param id - the commit object id of the remote branch
       */
     def fromFetchhead(repo: Repository, branchName: String, remoteUrl: String, id: Oid): js.Promise[AnnotatedCommit] = js.native

@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait IgGridResponsiveMethods extends js.Object {
   /**
-  	 * Destroys the responsive widget.
-  	 */
+    * Destroys the responsive widget.
+    */
   def destroy(): Unit
   /**
-  	 * Returns the currently active responsive mode.
-  	 */
+    * Returns the currently active responsive mode.
+    */
   def getCurrentResponsiveMode(): Unit
 }
 

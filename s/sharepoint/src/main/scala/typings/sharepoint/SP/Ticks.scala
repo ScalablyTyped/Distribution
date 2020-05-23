@@ -4,7 +4,5 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Ticks")
-@js.native
-class Ticks () extends js.Object
+trait Ticks extends js.Object
 

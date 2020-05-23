@@ -59,10 +59,10 @@ trait ServiceDetail extends js.Object {
 object ServiceDetail {
   @scala.inline
   def apply(
-    AcceptanceRequired: js.UndefOr[scala.Boolean] = js.undefined,
+    AcceptanceRequired: js.UndefOr[Boolean] = js.undefined,
     AvailabilityZones: ValueStringList = null,
     BaseEndpointDnsNames: ValueStringList = null,
-    ManagesVpcEndpoints: js.UndefOr[scala.Boolean] = js.undefined,
+    ManagesVpcEndpoints: js.UndefOr[Boolean] = js.undefined,
     Owner: String = null,
     PrivateDnsName: String = null,
     PrivateDnsNameVerificationState: DnsNameState = null,
@@ -70,13 +70,13 @@ object ServiceDetail {
     ServiceName: String = null,
     ServiceType: ServiceTypeDetailSet = null,
     Tags: TagList = null,
-    VpcEndpointPolicySupported: js.UndefOr[scala.Boolean] = js.undefined
+    VpcEndpointPolicySupported: js.UndefOr[Boolean] = js.undefined
   ): ServiceDetail = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AcceptanceRequired)) __obj.updateDynamic("AcceptanceRequired")(AcceptanceRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(AcceptanceRequired)) __obj.updateDynamic("AcceptanceRequired")(AcceptanceRequired.get.asInstanceOf[js.Any])
     if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones.asInstanceOf[js.Any])
     if (BaseEndpointDnsNames != null) __obj.updateDynamic("BaseEndpointDnsNames")(BaseEndpointDnsNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(ManagesVpcEndpoints)) __obj.updateDynamic("ManagesVpcEndpoints")(ManagesVpcEndpoints.asInstanceOf[js.Any])
+    if (!js.isUndefined(ManagesVpcEndpoints)) __obj.updateDynamic("ManagesVpcEndpoints")(ManagesVpcEndpoints.get.asInstanceOf[js.Any])
     if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])
     if (PrivateDnsName != null) __obj.updateDynamic("PrivateDnsName")(PrivateDnsName.asInstanceOf[js.Any])
     if (PrivateDnsNameVerificationState != null) __obj.updateDynamic("PrivateDnsNameVerificationState")(PrivateDnsNameVerificationState.asInstanceOf[js.Any])
@@ -84,7 +84,7 @@ object ServiceDetail {
     if (ServiceName != null) __obj.updateDynamic("ServiceName")(ServiceName.asInstanceOf[js.Any])
     if (ServiceType != null) __obj.updateDynamic("ServiceType")(ServiceType.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(VpcEndpointPolicySupported)) __obj.updateDynamic("VpcEndpointPolicySupported")(VpcEndpointPolicySupported.asInstanceOf[js.Any])
+    if (!js.isUndefined(VpcEndpointPolicySupported)) __obj.updateDynamic("VpcEndpointPolicySupported")(VpcEndpointPolicySupported.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceDetail]
   }
 }

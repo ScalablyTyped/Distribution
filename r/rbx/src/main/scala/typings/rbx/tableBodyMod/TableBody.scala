@@ -1,7 +1,7 @@
 package typings.rbx.tableBodyMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.rbx.PreferHelpersPropsOverrid
+import typings.rbx.anon.PreferHelpersPropsOverrid
 import typings.rbx.exoticMod.ForwardRefAsExoticComponent
 import typings.rbx.rbxStrings.tbody
 import scala.scalajs.js

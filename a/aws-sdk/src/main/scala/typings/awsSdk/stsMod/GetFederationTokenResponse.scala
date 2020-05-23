@@ -25,12 +25,12 @@ object GetFederationTokenResponse {
   def apply(
     Credentials: Credentials = null,
     FederatedUser: FederatedUser = null,
-    PackedPolicySize: Int | Double = null
+    PackedPolicySize: js.UndefOr[nonNegativeIntegerType] = js.undefined
   ): GetFederationTokenResponse = {
     val __obj = js.Dynamic.literal()
     if (Credentials != null) __obj.updateDynamic("Credentials")(Credentials.asInstanceOf[js.Any])
     if (FederatedUser != null) __obj.updateDynamic("FederatedUser")(FederatedUser.asInstanceOf[js.Any])
-    if (PackedPolicySize != null) __obj.updateDynamic("PackedPolicySize")(PackedPolicySize.asInstanceOf[js.Any])
+    if (!js.isUndefined(PackedPolicySize)) __obj.updateDynamic("PackedPolicySize")(PackedPolicySize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFederationTokenResponse]
   }
 }

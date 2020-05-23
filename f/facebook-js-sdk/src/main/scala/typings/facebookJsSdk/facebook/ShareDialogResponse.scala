@@ -10,9 +10,9 @@ trait ShareDialogResponse extends DialogResponse {
 
 object ShareDialogResponse {
   @scala.inline
-  def apply(post_id: String, error_code: Int | Double = null, error_message: String = null): ShareDialogResponse = {
+  def apply(post_id: String, error_code: js.UndefOr[Double] = js.undefined, error_message: String = null): ShareDialogResponse = {
     val __obj = js.Dynamic.literal(post_id = post_id.asInstanceOf[js.Any])
-    if (error_code != null) __obj.updateDynamic("error_code")(error_code.asInstanceOf[js.Any])
+    if (!js.isUndefined(error_code)) __obj.updateDynamic("error_code")(error_code.get.asInstanceOf[js.Any])
     if (error_message != null) __obj.updateDynamic("error_message")(error_message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareDialogResponse]
   }

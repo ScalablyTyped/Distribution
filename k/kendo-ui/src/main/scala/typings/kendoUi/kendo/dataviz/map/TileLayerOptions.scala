@@ -16,13 +16,13 @@ object TileLayerOptions {
   def apply(
     name: String = null,
     subdomains: js.Any = null,
-    tileSize: Int | Double = null,
+    tileSize: js.UndefOr[Double] = js.undefined,
     urlTemplate: String = null
   ): TileLayerOptions = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (subdomains != null) __obj.updateDynamic("subdomains")(subdomains.asInstanceOf[js.Any])
-    if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(tileSize)) __obj.updateDynamic("tileSize")(tileSize.get.asInstanceOf[js.Any])
     if (urlTemplate != null) __obj.updateDynamic("urlTemplate")(urlTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileLayerOptions]
   }

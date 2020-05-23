@@ -33,16 +33,16 @@ object GeoChartOptions {
     defaultColor: String = null,
     displayMode: String = null,
     enableRegionInteractivity: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     keepAspectRatio: js.UndefOr[Boolean] = js.undefined,
     legend: ChartLegend | none = null,
     magnifyingGlass: GeoChartMagnifyingGlass = null,
-    markerOpacity: Int | Double = null,
+    markerOpacity: js.UndefOr[Double] = js.undefined,
     region: String = null,
     resolution: String = null,
     sizeAxis: ChartSizeAxis = null,
     tooltip: ChartTooltip = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): GeoChartOptions = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
@@ -50,17 +50,17 @@ object GeoChartOptions {
     if (datalessRegionColor != null) __obj.updateDynamic("datalessRegionColor")(datalessRegionColor.asInstanceOf[js.Any])
     if (defaultColor != null) __obj.updateDynamic("defaultColor")(defaultColor.asInstanceOf[js.Any])
     if (displayMode != null) __obj.updateDynamic("displayMode")(displayMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRegionInteractivity)) __obj.updateDynamic("enableRegionInteractivity")(enableRegionInteractivity.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepAspectRatio)) __obj.updateDynamic("keepAspectRatio")(keepAspectRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRegionInteractivity)) __obj.updateDynamic("enableRegionInteractivity")(enableRegionInteractivity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepAspectRatio)) __obj.updateDynamic("keepAspectRatio")(keepAspectRatio.get.asInstanceOf[js.Any])
     if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
     if (magnifyingGlass != null) __obj.updateDynamic("magnifyingGlass")(magnifyingGlass.asInstanceOf[js.Any])
-    if (markerOpacity != null) __obj.updateDynamic("markerOpacity")(markerOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerOpacity)) __obj.updateDynamic("markerOpacity")(markerOpacity.get.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
     if (sizeAxis != null) __obj.updateDynamic("sizeAxis")(sizeAxis.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoChartOptions]
   }
 }

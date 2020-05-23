@@ -38,7 +38,7 @@ object DownloadRequest {
     onprogress: RequestEventListener[DownloadProgressResponse] = null,
     ontimeout: () => Unit = null,
     saveAs: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): DownloadRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
@@ -46,8 +46,8 @@ object DownloadRequest {
     if (onload != null) __obj.updateDynamic("onload")(js.Any.fromFunction0(onload))
     if (onprogress != null) __obj.updateDynamic("onprogress")(onprogress.asInstanceOf[js.Any])
     if (ontimeout != null) __obj.updateDynamic("ontimeout")(js.Any.fromFunction0(ontimeout))
-    if (!js.isUndefined(saveAs)) __obj.updateDynamic("saveAs")(saveAs.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveAs)) __obj.updateDynamic("saveAs")(saveAs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadRequest]
   }
 }

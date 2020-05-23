@@ -20,11 +20,11 @@ object EbsConfiguration {
   @scala.inline
   def apply(
     EbsBlockDeviceConfigs: EbsBlockDeviceConfigList = null,
-    EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined
+    EbsOptimized: js.UndefOr[BooleanObject] = js.undefined
   ): EbsConfiguration = {
     val __obj = js.Dynamic.literal()
     if (EbsBlockDeviceConfigs != null) __obj.updateDynamic("EbsBlockDeviceConfigs")(EbsBlockDeviceConfigs.asInstanceOf[js.Any])
-    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.asInstanceOf[js.Any])
+    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EbsConfiguration]
   }
 }

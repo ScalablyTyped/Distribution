@@ -58,25 +58,25 @@ object UpdateMLTransformRequest {
     TransformId: HashString,
     Description: DescriptionString = null,
     GlueVersion: GlueVersionString = null,
-    MaxCapacity: Int | Double = null,
-    MaxRetries: Int | Double = null,
+    MaxCapacity: js.UndefOr[NullableDouble] = js.undefined,
+    MaxRetries: js.UndefOr[NullableInteger] = js.undefined,
     Name: NameString = null,
-    NumberOfWorkers: Int | Double = null,
+    NumberOfWorkers: js.UndefOr[NullableInteger] = js.undefined,
     Parameters: TransformParameters = null,
     Role: RoleString = null,
-    Timeout: Int | Double = null,
+    Timeout: js.UndefOr[Timeout] = js.undefined,
     WorkerType: WorkerType = null
   ): UpdateMLTransformRequest = {
     val __obj = js.Dynamic.literal(TransformId = TransformId.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (GlueVersion != null) __obj.updateDynamic("GlueVersion")(GlueVersion.asInstanceOf[js.Any])
-    if (MaxCapacity != null) __obj.updateDynamic("MaxCapacity")(MaxCapacity.asInstanceOf[js.Any])
-    if (MaxRetries != null) __obj.updateDynamic("MaxRetries")(MaxRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxCapacity)) __obj.updateDynamic("MaxCapacity")(MaxCapacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRetries)) __obj.updateDynamic("MaxRetries")(MaxRetries.get.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (NumberOfWorkers != null) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfWorkers)) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers.get.asInstanceOf[js.Any])
     if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
     if (Role != null) __obj.updateDynamic("Role")(Role.asInstanceOf[js.Any])
-    if (Timeout != null) __obj.updateDynamic("Timeout")(Timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(Timeout)) __obj.updateDynamic("Timeout")(Timeout.get.asInstanceOf[js.Any])
     if (WorkerType != null) __obj.updateDynamic("WorkerType")(WorkerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMLTransformRequest]
   }

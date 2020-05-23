@@ -4,12 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Application.UI.FormsInfo")
-@js.native
-class FormsInfo () extends js.Object {
-  var ContentTypeName: String = js.native
-  var DisplayFormUrl: String = js.native
-  var EditFormUrl: String = js.native
-  var NewFormUrl: String = js.native
+trait FormsInfo extends js.Object {
+  var ContentTypeName: String
+  var DisplayFormUrl: String
+  var EditFormUrl: String
+  var NewFormUrl: String
+}
+
+object FormsInfo {
+  @scala.inline
+  def apply(ContentTypeName: String, DisplayFormUrl: String, EditFormUrl: String, NewFormUrl: String): FormsInfo = {
+    val __obj = js.Dynamic.literal(ContentTypeName = ContentTypeName.asInstanceOf[js.Any], DisplayFormUrl = DisplayFormUrl.asInstanceOf[js.Any], EditFormUrl = EditFormUrl.asInstanceOf[js.Any], NewFormUrl = NewFormUrl.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FormsInfo]
+  }
 }
 

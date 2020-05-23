@@ -29,19 +29,19 @@ object CarouselProps {
     controls: Boolean | arrows | selectors = null,
     fill: js.UndefOr[Boolean] = js.undefined,
     gridArea: GridAreaType = null,
-    initialChild: Int | Double = null,
+    initialChild: js.UndefOr[Double] = js.undefined,
     margin: MarginType = null,
-    play: Int | Double = null
+    play: js.UndefOr[Double] = js.undefined
   ): CarouselProps = {
     val __obj = js.Dynamic.literal()
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle.asInstanceOf[js.Any])
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
     if (controls != null) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.get.asInstanceOf[js.Any])
     if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
-    if (initialChild != null) __obj.updateDynamic("initialChild")(initialChild.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialChild)) __obj.updateDynamic("initialChild")(initialChild.get.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (play != null) __obj.updateDynamic("play")(play.asInstanceOf[js.Any])
+    if (!js.isUndefined(play)) __obj.updateDynamic("play")(play.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CarouselProps]
   }
 }

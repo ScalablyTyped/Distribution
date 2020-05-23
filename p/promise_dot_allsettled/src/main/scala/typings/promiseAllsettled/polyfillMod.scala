@@ -1,5 +1,6 @@
 package typings.promiseAllsettled
 
+import typings.promiseAllsettled.anon.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

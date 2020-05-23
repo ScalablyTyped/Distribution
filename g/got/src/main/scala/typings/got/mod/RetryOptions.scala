@@ -33,14 +33,14 @@ object RetryOptions {
   @scala.inline
   def apply(
     errorCodes: js.Array[String] = null,
-    maxRetryAfter: Int | Double = null,
+    maxRetryAfter: js.UndefOr[Double] = js.undefined,
     methods: js.Array[GET | POST | PUT | HEAD | DELETE | OPTIONS | TRACE] = null,
     retries: Double | RetryFunction = null,
     statusCodes: js.Array[`408` | `413` | `429` | `500` | `502` | `503` | `504`] = null
   ): RetryOptions = {
     val __obj = js.Dynamic.literal()
     if (errorCodes != null) __obj.updateDynamic("errorCodes")(errorCodes.asInstanceOf[js.Any])
-    if (maxRetryAfter != null) __obj.updateDynamic("maxRetryAfter")(maxRetryAfter.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetryAfter)) __obj.updateDynamic("maxRetryAfter")(maxRetryAfter.get.asInstanceOf[js.Any])
     if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
     if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
     if (statusCodes != null) __obj.updateDynamic("statusCodes")(statusCodes.asInstanceOf[js.Any])

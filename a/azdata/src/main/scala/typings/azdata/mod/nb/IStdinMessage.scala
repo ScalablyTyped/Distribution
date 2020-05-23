@@ -1,6 +1,6 @@
 package typings.azdata.mod.nb
 
-import typings.azdata.AnonPassword
+import typings.azdata.anon.Password
 import typings.azdata.azdataStrings.stdin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 trait IStdinMessage extends IMessage {
   var channel: stdin
   @JSName("content")
-  var content_IStdinMessage: AnonPassword
+  var content_IStdinMessage: Password
 }
 
 object IStdinMessage {
   @scala.inline
   def apply(
     channel: stdin,
-    content: AnonPassword,
+    content: Password,
     header: IHeader,
     parent_header: IHeader | js.Object,
     `type`: Channel

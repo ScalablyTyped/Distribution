@@ -15,13 +15,13 @@ object IDesktopNotificationOptions {
   @scala.inline
   def apply(
     autoClose: js.UndefOr[Boolean] = js.undefined,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     showOnPageHidden: js.UndefOr[Boolean] = js.undefined
   ): IDesktopNotificationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOnPageHidden)) __obj.updateDynamic("showOnPageHidden")(showOnPageHidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOnPageHidden)) __obj.updateDynamic("showOnPageHidden")(showOnPageHidden.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDesktopNotificationOptions]
   }
 }

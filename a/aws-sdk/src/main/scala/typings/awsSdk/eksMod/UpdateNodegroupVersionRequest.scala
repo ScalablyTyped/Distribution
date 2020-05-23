@@ -38,13 +38,13 @@ object UpdateNodegroupVersionRequest {
     clusterName: String,
     nodegroupName: String,
     clientRequestToken: String = null,
-    force: js.UndefOr[scala.Boolean] = js.undefined,
+    force: js.UndefOr[Boolean] = js.undefined,
     releaseVersion: String = null,
     version: String = null
   ): UpdateNodegroupVersionRequest = {
     val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any], nodegroupName = nodegroupName.asInstanceOf[js.Any])
     if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
     if (releaseVersion != null) __obj.updateDynamic("releaseVersion")(releaseVersion.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateNodegroupVersionRequest]

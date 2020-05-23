@@ -30,10 +30,10 @@ object UpdateProxySessionRequest {
     Capabilities: CapabilityList,
     ProxySessionId: NonEmptyString128,
     VoiceConnectorId: NonEmptyString128,
-    ExpiryMinutes: Int | Double = null
+    ExpiryMinutes: js.UndefOr[PositiveInteger] = js.undefined
   ): UpdateProxySessionRequest = {
     val __obj = js.Dynamic.literal(Capabilities = Capabilities.asInstanceOf[js.Any], ProxySessionId = ProxySessionId.asInstanceOf[js.Any], VoiceConnectorId = VoiceConnectorId.asInstanceOf[js.Any])
-    if (ExpiryMinutes != null) __obj.updateDynamic("ExpiryMinutes")(ExpiryMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(ExpiryMinutes)) __obj.updateDynamic("ExpiryMinutes")(ExpiryMinutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateProxySessionRequest]
   }
 }

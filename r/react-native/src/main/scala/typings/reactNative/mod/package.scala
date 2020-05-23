@@ -6,9 +6,14 @@ import scala.scalajs.js.annotation._
 
 package object mod {
   type ART = typings.reactNative.mod.ARTStatic
-  type AccessibilityActionEvent = typings.reactNative.mod.NativeSyntheticEvent[typings.reactNative.ReadonlyactionNamestring]
+  type AccessibilityActionEvent = typings.reactNative.mod.NativeSyntheticEvent[typings.reactNative.anon.ReadonlyactionNamestring]
+  type AccessibilityAnnouncementEventName = typings.reactNative.reactNativeStrings.announcementFinished
+  type AccessibilityAnnouncementFinishedEventHandler = js.Function1[
+    /* event */ typings.reactNative.mod.AccessibilityAnnouncementFinishedEvent, 
+    scala.Unit
+  ]
   type AccessibilityChangeEvent = scala.Boolean
-  type AccessibilityEvent = typings.reactNative.mod.AccessibilityChangeEvent | typings.reactNative.mod.AccessibilityAnnoucementFinishedEvent
+  type AccessibilityChangeEventHandler = js.Function1[/* event */ typings.reactNative.mod.AccessibilityChangeEvent, scala.Unit]
   type AccessibilityInfo = typings.reactNative.mod.AccessibilityInfoStatic
   type AccessibilityProperties = typings.reactNative.mod.AccessibilityProps
   type AccessibilityPropertiesAndroid = typings.reactNative.mod.AccessibilityPropsAndroid
@@ -29,7 +34,7 @@ package object mod {
     - typings.reactNative.reactNativeStrings.light
     - typings.reactNative.reactNativeStrings.dark
     - scala.Null
-    - `js.undefined`
+    - js.UndefOr[scala.Nothing]
   */
   type ColorSchemeName = js.UndefOr[typings.reactNative.mod._ColorSchemeName | scala.Null]
   type ComponentProvider = js.Function0[typings.react.mod.ComponentType[js.Any]]
@@ -183,7 +188,7 @@ package object mod {
   type RefreshControlPropertiesAndroid = typings.reactNative.mod.RefreshControlPropsAndroid
   type RefreshControlPropertiesIOS = typings.reactNative.mod.RefreshControlPropsIOS
   /** Keep a brand of 'T' so that calls to `StyleSheet.flatten` can take `RegisteredStyle<T>` and return `T`. */
-  type RegisteredStyle[T] = scala.Double with typings.reactNative.AnonRegisteredStyleBrand[T]
+  type RegisteredStyle[T] = scala.Double with typings.reactNative.anon.RegisteredStyleBrand[T]
   type Runnable = js.Function1[/* appParameters */ js.Any, scala.Unit]
   /**
     * Renders nested content and automatically applies paddings reflect the portion of the view

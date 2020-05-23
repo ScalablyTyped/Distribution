@@ -1,14 +1,14 @@
 package typings.leafletGeosearch.mod
 
-import typings.leafletGeosearch.AnonAdminDistrict
-import typings.leafletGeosearch.BingProviderResultPointca
+import typings.leafletGeosearch.anon.AdminDistrict
+import typings.leafletGeosearch.anon.BingProviderResultPointca
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BingProviderResultRaw extends js.Object {
   var __type: String
-  var address: AnonAdminDistrict
+  var address: AdminDistrict
   var bbox: js.Tuple4[Double, Double, Double, Double]
   var confidence: String
   var entityType: String
@@ -22,7 +22,7 @@ object BingProviderResultRaw {
   @scala.inline
   def apply(
     __type: String,
-    address: AnonAdminDistrict,
+    address: AdminDistrict,
     bbox: js.Tuple4[Double, Double, Double, Double],
     confidence: String,
     entityType: String,

@@ -1,7 +1,7 @@
 package typings.materialUi.MaterialUI.DatePicker
 
-import typings.materialUi.AnonCall
 import typings.materialUi.MaterialUI.propTypes.utils
+import typings.materialUi.anon.Call
 import typings.materialUi.materialUiStrings.`inline`
 import typings.materialUi.materialUiStrings.dialog
 import typings.materialUi.materialUiStrings.landscape
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
 
 trait DatePickerProps extends js.Object {
   // <TextField/> is the element that get the 'other' properties
-  var DateTimeFormat: js.UndefOr[AnonCall] = js.undefined
+  var DateTimeFormat: js.UndefOr[Call] = js.undefined
   var autoOk: js.UndefOr[Boolean] = js.undefined
   var cancelLabel: js.UndefOr[ReactNode] = js.undefined
   // From <TextField />
@@ -76,7 +76,7 @@ trait DatePickerProps extends js.Object {
 object DatePickerProps {
   @scala.inline
   def apply(
-    DateTimeFormat: AnonCall = null,
+    DateTimeFormat: Call = null,
     autoOk: js.UndefOr[Boolean] = js.undefined,
     cancelLabel: ReactNode = null,
     className: String = null,
@@ -88,7 +88,7 @@ object DatePickerProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     errorStyle: CSSProperties = null,
     errorText: ReactNode = null,
-    firstDayOfWeek: Int | Double = null,
+    firstDayOfWeek: js.UndefOr[Double] = js.undefined,
     floatingLabelStyle: CSSProperties = null,
     floatingLabelText: ReactNode = null,
     formatDate: /* date */ Date => String = null,
@@ -112,8 +112,8 @@ object DatePickerProps {
     onKeyDown: KeyboardEvent[js.Object] => Unit = null,
     onShow: () => Unit = null,
     openToYearSelection: js.UndefOr[Boolean] = js.undefined,
-    rows: Int | Double = null,
-    rowsMax: Int | Double = null,
+    rows: js.UndefOr[Double] = js.undefined,
+    rowsMax: js.UndefOr[Double] = js.undefined,
     shouldDisableDate: /* day */ Date => Boolean = null,
     style: CSSProperties = null,
     textFieldStyle: CSSProperties = null,
@@ -127,23 +127,23 @@ object DatePickerProps {
   ): DatePickerProps = {
     val __obj = js.Dynamic.literal()
     if (DateTimeFormat != null) __obj.updateDynamic("DateTimeFormat")(DateTimeFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoOk)) __obj.updateDynamic("autoOk")(autoOk.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoOk)) __obj.updateDynamic("autoOk")(autoOk.get.asInstanceOf[js.Any])
     if (cancelLabel != null) __obj.updateDynamic("cancelLabel")(cancelLabel.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (defaultDate != null) __obj.updateDynamic("defaultDate")(defaultDate.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (dialogContainerStyle != null) __obj.updateDynamic("dialogContainerStyle")(dialogContainerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableYearSelection)) __obj.updateDynamic("disableYearSelection")(disableYearSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableYearSelection)) __obj.updateDynamic("disableYearSelection")(disableYearSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (errorStyle != null) __obj.updateDynamic("errorStyle")(errorStyle.asInstanceOf[js.Any])
     if (errorText != null) __obj.updateDynamic("errorText")(errorText.asInstanceOf[js.Any])
-    if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstDayOfWeek)) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.get.asInstanceOf[js.Any])
     if (floatingLabelStyle != null) __obj.updateDynamic("floatingLabelStyle")(floatingLabelStyle.asInstanceOf[js.Any])
     if (floatingLabelText != null) __obj.updateDynamic("floatingLabelText")(floatingLabelText.asInstanceOf[js.Any])
     if (formatDate != null) __obj.updateDynamic("formatDate")(js.Any.fromFunction1(formatDate))
-    if (!js.isUndefined(fullWidth)) __obj.updateDynamic("fullWidth")(fullWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideCalendarDate)) __obj.updateDynamic("hideCalendarDate")(hideCalendarDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullWidth)) __obj.updateDynamic("fullWidth")(fullWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideCalendarDate)) __obj.updateDynamic("hideCalendarDate")(hideCalendarDate.get.asInstanceOf[js.Any])
     if (hintStyle != null) __obj.updateDynamic("hintStyle")(hintStyle.asInstanceOf[js.Any])
     if (hintText != null) __obj.updateDynamic("hintText")(hintText.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
@@ -161,16 +161,16 @@ object DatePickerProps {
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
-    if (!js.isUndefined(openToYearSelection)) __obj.updateDynamic("openToYearSelection")(openToYearSelection.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (rowsMax != null) __obj.updateDynamic("rowsMax")(rowsMax.asInstanceOf[js.Any])
+    if (!js.isUndefined(openToYearSelection)) __obj.updateDynamic("openToYearSelection")(openToYearSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowsMax)) __obj.updateDynamic("rowsMax")(rowsMax.get.asInstanceOf[js.Any])
     if (shouldDisableDate != null) __obj.updateDynamic("shouldDisableDate")(js.Any.fromFunction1(shouldDisableDate))
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (textFieldStyle != null) __obj.updateDynamic("textFieldStyle")(textFieldStyle.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (underlineDisabledStyle != null) __obj.updateDynamic("underlineDisabledStyle")(underlineDisabledStyle.asInstanceOf[js.Any])
     if (underlineFocusStyle != null) __obj.updateDynamic("underlineFocusStyle")(underlineFocusStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(underlineShow)) __obj.updateDynamic("underlineShow")(underlineShow.asInstanceOf[js.Any])
+    if (!js.isUndefined(underlineShow)) __obj.updateDynamic("underlineShow")(underlineShow.get.asInstanceOf[js.Any])
     if (underlineStyle != null) __obj.updateDynamic("underlineStyle")(underlineStyle.asInstanceOf[js.Any])
     if (utils != null) __obj.updateDynamic("utils")(utils.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

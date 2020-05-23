@@ -20,12 +20,12 @@ object SpeechRecognitionAlternative {
   @scala.inline
   def apply(
     transcript: String,
-    confidence: Int | Double = null,
+    confidence: js.UndefOr[Double] = js.undefined,
     timestamps: js.Array[String] = null,
     word_confidence: js.Array[String] = null
   ): SpeechRecognitionAlternative = {
     val __obj = js.Dynamic.literal(transcript = transcript.asInstanceOf[js.Any])
-    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
     if (timestamps != null) __obj.updateDynamic("timestamps")(timestamps.asInstanceOf[js.Any])
     if (word_confidence != null) __obj.updateDynamic("word_confidence")(word_confidence.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeechRecognitionAlternative]

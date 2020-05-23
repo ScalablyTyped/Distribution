@@ -24,18 +24,18 @@ trait IPubsubMessage extends js.Object {
 object IPubsubMessage {
   @scala.inline
   def apply(
-    attributes: StringDictionary[String] = null,
-    data: Uint8Array = null,
-    messageId: String = null,
-    orderingKey: String = null,
-    publishTime: ITimestamp = null
+    attributes: js.UndefOr[Null | StringDictionary[String]] = js.undefined,
+    data: js.UndefOr[Null | Uint8Array] = js.undefined,
+    messageId: js.UndefOr[Null | String] = js.undefined,
+    orderingKey: js.UndefOr[Null | String] = js.undefined,
+    publishTime: js.UndefOr[Null | ITimestamp] = js.undefined
   ): IPubsubMessage = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    if (orderingKey != null) __obj.updateDynamic("orderingKey")(orderingKey.asInstanceOf[js.Any])
-    if (publishTime != null) __obj.updateDynamic("publishTime")(publishTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(attributes)) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(data)) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(messageId)) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
+    if (!js.isUndefined(orderingKey)) __obj.updateDynamic("orderingKey")(orderingKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(publishTime)) __obj.updateDynamic("publishTime")(publishTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPubsubMessage]
   }
 }

@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,17 +30,6 @@ object ParagraphFirstLineIndent extends js.Object {
     */
   @js.native
   sealed trait None extends ParagraphFirstLineIndent
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ParagraphFirstLineIndent with Double] = js.native
-  /* 2 */ @js.native
-  object Hanging extends TopLevel[Hanging with Double]
-  
-  /* 1 */ @js.native
-  object Indented extends TopLevel[Indented with Double]
-  
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
   
 }
 

@@ -1,6 +1,5 @@
 package typings.ionicDiscover.publisherMod
 
-import typings.ionicDiscover.ionicDiscoverStrings.Slash
 import typings.ionicDiscover.ionicDiscoverStrings.error
 import typings.node.NodeJS.Timer
 import typings.node.dgramMod.Socket
@@ -24,7 +23,7 @@ class Publisher protected ()
   var interval: Double = js.native
   var name: String = js.native
   var namespace: String = js.native
-  val path: Slash = js.native
+  val path: /* "/" */ String = js.native
   var port: Double = js.native
   var running: Boolean = js.native
   var timer: js.UndefOr[Timer] = js.native

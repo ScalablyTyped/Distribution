@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SIPml.Session.Subscribe")
 @js.native
-class Subscribe ()
+trait Subscribe
   extends typings.sipml.SIPml.Session {
   def subscribe(to: String): Double = js.native
   def subscribe(to: String, configuration: Configuration): Double = js.native

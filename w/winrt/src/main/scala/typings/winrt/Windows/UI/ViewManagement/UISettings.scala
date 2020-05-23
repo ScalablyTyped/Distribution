@@ -6,34 +6,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.ViewManagement.UISettings")
-@js.native
-class UISettings () extends IUISettings {
-  /* CompleteClass */
-  override var animationsEnabled: Boolean = js.native
-  /* CompleteClass */
-  override var caretBlinkRate: Double = js.native
-  /* CompleteClass */
-  override var caretBrowsingEnabled: Boolean = js.native
-  /* CompleteClass */
-  override var caretWidth: Double = js.native
-  /* CompleteClass */
-  override var cursorSize: Size = js.native
-  /* CompleteClass */
-  override var doubleClickTime: Double = js.native
-  /* CompleteClass */
-  override var handPreference: HandPreference = js.native
-  /* CompleteClass */
-  override var messageDuration: Double = js.native
-  /* CompleteClass */
-  override var mouseHoverTime: Double = js.native
-  /* CompleteClass */
-  override var scrollBarArrowSize: Size = js.native
-  /* CompleteClass */
-  override var scrollBarSize: Size = js.native
-  /* CompleteClass */
-  override var scrollBarThumbBoxSize: Size = js.native
-  /* CompleteClass */
-  override def uIElementColor(desiredElement: UIElementType): Color = js.native
+trait UISettings extends IUISettings
+
+object UISettings {
+  @scala.inline
+  def apply(
+    animationsEnabled: Boolean,
+    caretBlinkRate: Double,
+    caretBrowsingEnabled: Boolean,
+    caretWidth: Double,
+    cursorSize: Size,
+    doubleClickTime: Double,
+    handPreference: HandPreference,
+    messageDuration: Double,
+    mouseHoverTime: Double,
+    scrollBarArrowSize: Size,
+    scrollBarSize: Size,
+    scrollBarThumbBoxSize: Size,
+    uIElementColor: UIElementType => Color
+  ): UISettings = {
+    val __obj = js.Dynamic.literal(animationsEnabled = animationsEnabled.asInstanceOf[js.Any], caretBlinkRate = caretBlinkRate.asInstanceOf[js.Any], caretBrowsingEnabled = caretBrowsingEnabled.asInstanceOf[js.Any], caretWidth = caretWidth.asInstanceOf[js.Any], cursorSize = cursorSize.asInstanceOf[js.Any], doubleClickTime = doubleClickTime.asInstanceOf[js.Any], handPreference = handPreference.asInstanceOf[js.Any], messageDuration = messageDuration.asInstanceOf[js.Any], mouseHoverTime = mouseHoverTime.asInstanceOf[js.Any], scrollBarArrowSize = scrollBarArrowSize.asInstanceOf[js.Any], scrollBarSize = scrollBarSize.asInstanceOf[js.Any], scrollBarThumbBoxSize = scrollBarThumbBoxSize.asInstanceOf[js.Any], uIElementColor = js.Any.fromFunction1(uIElementColor))
+    __obj.asInstanceOf[UISettings]
+  }
 }
 

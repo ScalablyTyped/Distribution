@@ -1,8 +1,12 @@
 package typings.minappEnv
 
 import org.scalablytyped.runtime.NumberDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.minappEnv.Intl.CollatorOptions
+import typings.minappEnv.anon.Match
+import typings.minappEnv.anon.Replace
+import typings.minappEnv.anon.Search
+import typings.minappEnv.anon.Split
+import typings.minappEnv.anon.`0`
 import typings.minappEnv.minappEnvStrings.NFC
 import typings.minappEnv.minappEnvStrings.NFD
 import typings.minappEnv.minappEnvStrings.NFKC
@@ -108,7 +112,7 @@ trait String
     * Matches a string an object that supports being matched against, and returns an array containing the results of that search.
     * @param matcher An object that supports being matched against.
     */
-  def `match`(matcher: AnonMatch): RegExpMatchArray | Null = js.native
+  def `match`(matcher: Match): RegExpMatchArray | Null = js.native
   /**
     * Matches a string with a regular expression, and returns an array containing the results of that search.
     * @param regexp A variable name or string literal containing the regular expression pattern and flags.
@@ -158,13 +162,9 @@ trait String
     searchValue: java.lang.String,
     replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
   ): java.lang.String = js.native
-  /**
-    * Replaces text in a string, using an object that supports replacement within a string.
-    * @param searchValue A object can search for and replace matches within a string.
-    * @param replacer A function that returns the replacement text.
-    */
+  def replace(searchValue: RegExp, replaceValue: java.lang.String): java.lang.String = js.native
   def replace(
-    searchValue: Anon0,
+    searchValue: RegExp,
     replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
   ): java.lang.String = js.native
   /**
@@ -172,10 +172,14 @@ trait String
     * @param searchValue A object can search for and replace matches within a string.
     * @param replaceValue A string containing the text to replace for every successful match of searchValue in this string.
     */
-  def replace(searchValue: AnonReplace, replaceValue: java.lang.String): java.lang.String = js.native
-  def replace(searchValue: RegExp, replaceValue: java.lang.String): java.lang.String = js.native
+  def replace(searchValue: Replace, replaceValue: java.lang.String): java.lang.String = js.native
+  /**
+    * Replaces text in a string, using an object that supports replacement within a string.
+    * @param searchValue A object can search for and replace matches within a string.
+    * @param replacer A function that returns the replacement text.
+    */
   def replace(
-    searchValue: RegExp,
+    searchValue: `0`,
     replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
   ): java.lang.String = js.native
   /**
@@ -188,7 +192,7 @@ trait String
     * Finds the first substring match in a regular expression search.
     * @param searcher An object which supports searching within a string.
     */
-  def search(searcher: AnonSearch): Double = js.native
+  def search(searcher: Search): Double = js.native
   /**
     * Returns a section of a string.
     * @param start The index to the beginning of the specified portion of stringObj.
@@ -214,8 +218,8 @@ trait String
     * @param splitter An object that can split a string.
     * @param limit A value used to limit the number of elements returned in the array.
     */
-  def split(splitter: AnonSplit): Array[java.lang.String] = js.native
-  def split(splitter: AnonSplit, limit: Double): Array[java.lang.String] = js.native
+  def split(splitter: Split): Array[java.lang.String] = js.native
+  def split(splitter: Split, limit: Double): Array[java.lang.String] = js.native
   /**
     * Returns true if the sequence of elements of searchString converted to a String is the
     * same as the corresponding elements of this object (converted to a String) starting at
@@ -256,11 +260,4 @@ trait String
   /** Removes the leading and trailing white space and line terminator characters from a string. */
   def trim(): java.lang.String = js.native
 }
-
-/**
-  * Allows manipulation and formatting of text strings and determination and location of substrings within strings.
-  */
-@JSGlobal("String")
-@js.native
-object String extends TopLevel[StringConstructor]
 

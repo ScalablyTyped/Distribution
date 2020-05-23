@@ -15,15 +15,15 @@ object CubeEffectOptions {
   @scala.inline
   def apply(
     shadow: js.UndefOr[Boolean] = js.undefined,
-    shadowOffset: Int | Double = null,
-    shadowScale: Int | Double = null,
+    shadowOffset: js.UndefOr[Double] = js.undefined,
+    shadowScale: js.UndefOr[Double] = js.undefined,
     slideShadows: js.UndefOr[Boolean] = js.undefined
   ): CubeEffectOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
-    if (shadowOffset != null) __obj.updateDynamic("shadowOffset")(shadowOffset.asInstanceOf[js.Any])
-    if (shadowScale != null) __obj.updateDynamic("shadowScale")(shadowScale.asInstanceOf[js.Any])
-    if (!js.isUndefined(slideShadows)) __obj.updateDynamic("slideShadows")(slideShadows.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadowOffset)) __obj.updateDynamic("shadowOffset")(shadowOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadowScale)) __obj.updateDynamic("shadowScale")(shadowScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(slideShadows)) __obj.updateDynamic("slideShadows")(slideShadows.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CubeEffectOptions]
   }
 }

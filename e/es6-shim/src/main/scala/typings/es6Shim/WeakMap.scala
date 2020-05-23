@@ -1,6 +1,5 @@
 package typings.es6Shim
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +11,11 @@ trait WeakMap[K /* <: js.Object */, V] extends js.Object {
   def set(key: K, value: V): WeakMap[K, V]
 }
 
-@JSGlobal("WeakMap")
-@js.native
-object WeakMap extends TopLevel[WeakMapConstructor]
+object WeakMap {
+  @scala.inline
+  def apply[K, V](delete: K => Boolean, get: K => js.UndefOr[V], has: K => Boolean, set: (K, V) => WeakMap[K, V]): WeakMap[K, V] = {
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), set = js.Any.fromFunction2(set))
+    __obj.asInstanceOf[WeakMap[K, V]]
+  }
+}
 

@@ -1,6 +1,5 @@
 package typings.sharepoint.Srch
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,17 +18,6 @@ object MessageLevel extends js.Object {
   
   @js.native
   sealed trait warning extends MessageLevel
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MessageLevel with Double] = js.native
-  /* 2 */ @js.native
-  object error extends TopLevel[error with Double]
-  
-  /* 0 */ @js.native
-  object information extends TopLevel[information with Double]
-  
-  /* 1 */ @js.native
-  object warning extends TopLevel[warning with Double]
   
 }
 

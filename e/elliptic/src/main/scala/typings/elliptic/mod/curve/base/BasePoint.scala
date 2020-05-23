@@ -16,14 +16,13 @@ class BasePoint protected () extends js.Object {
   def add(p: BasePoint): BasePoint = js.native
   def dbl(): BasePoint = js.native
   def dblp(k: Double): BasePoint = js.native
-  def encode(enc: js.UndefOr[scala.Nothing], compact: Boolean): js.Array[Double] = js.native
   def encodeCompressed(): js.Array[Double] = js.native
   @JSName("encodeCompressed")
   def encodeCompressed_array(enc: array): js.Array[Double] = js.native
   @JSName("encodeCompressed")
   def encodeCompressed_hex(enc: hex): String = js.native
   @JSName("encode")
-  def encode_array(enc: array, compact: Boolean): js.Array[Double] = js.native
+  def encode_array(enc: js.UndefOr[array], compact: Boolean): js.Array[Double] = js.native
   @JSName("encode")
   def encode_hex(enc: hex, compact: Boolean): String = js.native
   def eq(p: BasePoint): Boolean = js.native

@@ -30,18 +30,18 @@ object SpeakOptions {
   def apply(
     gender: String = null,
     lang: String = null,
-    pitch: Int | Double = null,
-    rate: Int | Double = null,
+    pitch: js.UndefOr[Double] = js.undefined,
+    rate: js.UndefOr[Double] = js.undefined,
     voiceName: String = null,
-    volume: Int | Double = null
+    volume: js.UndefOr[Double] = js.undefined
   ): SpeakOptions = {
     val __obj = js.Dynamic.literal()
     if (gender != null) __obj.updateDynamic("gender")(gender.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
-    if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
+    if (!js.isUndefined(pitch)) __obj.updateDynamic("pitch")(pitch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rate)) __obj.updateDynamic("rate")(rate.get.asInstanceOf[js.Any])
     if (voiceName != null) __obj.updateDynamic("voiceName")(voiceName.asInstanceOf[js.Any])
-    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
+    if (!js.isUndefined(volume)) __obj.updateDynamic("volume")(volume.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeakOptions]
   }
 }

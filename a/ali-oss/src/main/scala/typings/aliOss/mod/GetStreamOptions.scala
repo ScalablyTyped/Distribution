@@ -13,11 +13,11 @@ trait GetStreamOptions extends js.Object {
 
 object GetStreamOptions {
   @scala.inline
-  def apply(headers: js.Object = null, process: String = null, timeout: Int | Double = null): GetStreamOptions = {
+  def apply(headers: js.Object = null, process: String = null, timeout: js.UndefOr[Double] = js.undefined): GetStreamOptions = {
     val __obj = js.Dynamic.literal()
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (process != null) __obj.updateDynamic("process")(process.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStreamOptions]
   }
 }

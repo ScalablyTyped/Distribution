@@ -37,7 +37,7 @@ object BufferedMetricsLoggerOptions {
     apiKey: String = null,
     appKey: String = null,
     defaultTags: js.Array[String] = null,
-    flushIntervalSeconds: Int | Double = null,
+    flushIntervalSeconds: js.UndefOr[Double] = js.undefined,
     host: String = null,
     prefix: String = null
   ): BufferedMetricsLoggerOptions = {
@@ -45,7 +45,7 @@ object BufferedMetricsLoggerOptions {
     if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey.asInstanceOf[js.Any])
     if (appKey != null) __obj.updateDynamic("appKey")(appKey.asInstanceOf[js.Any])
     if (defaultTags != null) __obj.updateDynamic("defaultTags")(defaultTags.asInstanceOf[js.Any])
-    if (flushIntervalSeconds != null) __obj.updateDynamic("flushIntervalSeconds")(flushIntervalSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(flushIntervalSeconds)) __obj.updateDynamic("flushIntervalSeconds")(flushIntervalSeconds.get.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[BufferedMetricsLoggerOptions]

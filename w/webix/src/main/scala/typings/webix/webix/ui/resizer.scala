@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.resizer")
 @js.native
-class resizer () extends baseview {
+trait resizer extends baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
   @JSName("config")

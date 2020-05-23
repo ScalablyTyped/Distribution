@@ -1,23 +1,23 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.AnonAllowFieldDragging
-import typings.devextreme.AnonApplyChangesMode
-import typings.devextreme.AnonArea
-import typings.devextreme.AnonCell
-import typings.devextreme.AnonCollapseAll
-import typings.devextreme.AnonColumnFields
-import typings.devextreme.AnonComponentDxPivotGrid
-import typings.devextreme.AnonComponentElement
-import typings.devextreme.AnonCustomLoad
-import typings.devextreme.AnonElement
-import typings.devextreme.AnonFileNameFormat
-import typings.devextreme.AnonFileNameModel
-import typings.devextreme.AnonIgnoreExcelErrors
-import typings.devextreme.AnonModel
-import typings.devextreme.AnonName
-import typings.devextreme.AnonSearchTimeout
-import typings.devextreme.AnonShowIndicator
-import typings.devextreme.AnonUseNative
+import typings.devextreme.anon.AllowFieldDragging
+import typings.devextreme.anon.ApplyChangesMode
+import typings.devextreme.anon.Area
+import typings.devextreme.anon.Cell
+import typings.devextreme.anon.CollapseAll
+import typings.devextreme.anon.ColumnFields
+import typings.devextreme.anon.ComponentDxPivotGrid
+import typings.devextreme.anon.ComponentElement
+import typings.devextreme.anon.CustomLoad
+import typings.devextreme.anon.Element
+import typings.devextreme.anon.FileNameFormat
+import typings.devextreme.anon.FileNameModel
+import typings.devextreme.anon.IgnoreExcelErrors
+import typings.devextreme.anon.Model
+import typings.devextreme.anon.Name
+import typings.devextreme.anon.SearchTimeout
+import typings.devextreme.anon.ShowIndicator
+import typings.devextreme.anon.UseNative
 import typings.devextreme.devextremeStrings.both
 import typings.devextreme.devextremeStrings.column
 import typings.devextreme.devextremeStrings.columns
@@ -46,33 +46,33 @@ trait dxPivotGridOptions extends WidgetOptions[dxPivotGrid] {
   /** @name dxPivotGrid.Options.dataSource */
   var dataSource: js.UndefOr[js.Array[_] | PivotGridDataSource | PivotGridDataSourceOptions] = js.undefined
   /** @name dxPivotGrid.Options.export */
-  var export: js.UndefOr[AnonIgnoreExcelErrors] = js.undefined
+  var export: js.UndefOr[IgnoreExcelErrors] = js.undefined
   /** @name dxPivotGrid.Options.fieldChooser */
-  var fieldChooser: js.UndefOr[AnonApplyChangesMode] = js.undefined
+  var fieldChooser: js.UndefOr[ApplyChangesMode] = js.undefined
   /** @name dxPivotGrid.Options.fieldPanel */
-  var fieldPanel: js.UndefOr[AnonAllowFieldDragging] = js.undefined
+  var fieldPanel: js.UndefOr[AllowFieldDragging] = js.undefined
   /** @name dxPivotGrid.Options.headerFilter */
-  var headerFilter: js.UndefOr[AnonSearchTimeout] = js.undefined
+  var headerFilter: js.UndefOr[SearchTimeout] = js.undefined
   /** @name dxPivotGrid.Options.hideEmptySummaryCells */
   var hideEmptySummaryCells: js.UndefOr[Boolean] = js.undefined
   /** @name dxPivotGrid.Options.loadPanel */
-  var loadPanel: js.UndefOr[AnonShowIndicator] = js.undefined
+  var loadPanel: js.UndefOr[ShowIndicator] = js.undefined
   /** @name dxPivotGrid.Options.onCellClick */
-  var onCellClick: js.UndefOr[js.Function1[/* e */ AnonArea, _]] = js.undefined
+  var onCellClick: js.UndefOr[js.Function1[/* e */ Area, _]] = js.undefined
   /** @name dxPivotGrid.Options.onCellPrepared */
-  var onCellPrepared: js.UndefOr[js.Function1[/* e */ AnonCell, _]] = js.undefined
+  var onCellPrepared: js.UndefOr[js.Function1[/* e */ Cell, _]] = js.undefined
   /** @name dxPivotGrid.Options.onContextMenuPreparing */
-  var onContextMenuPreparing: js.UndefOr[js.Function1[/* e */ AnonColumnFields, _]] = js.undefined
+  var onContextMenuPreparing: js.UndefOr[js.Function1[/* e */ ColumnFields, _]] = js.undefined
   /** @name dxPivotGrid.Options.onExported */
-  var onExported: js.UndefOr[js.Function1[/* e */ AnonComponentDxPivotGrid, _]] = js.undefined
+  var onExported: js.UndefOr[js.Function1[/* e */ ComponentDxPivotGrid, _]] = js.undefined
   /** @name dxPivotGrid.Options.onExporting */
-  var onExporting: js.UndefOr[js.Function1[/* e */ AnonFileNameModel, _]] = js.undefined
+  var onExporting: js.UndefOr[js.Function1[/* e */ FileNameModel, _]] = js.undefined
   /** @name dxPivotGrid.Options.onFileSaving */
-  var onFileSaving: js.UndefOr[js.Function1[/* e */ AnonFileNameFormat, _]] = js.undefined
+  var onFileSaving: js.UndefOr[js.Function1[/* e */ FileNameFormat, _]] = js.undefined
   /** @name dxPivotGrid.Options.rowHeaderLayout */
   var rowHeaderLayout: js.UndefOr[standard | tree] = js.undefined
   /** @name dxPivotGrid.Options.scrolling */
-  var scrolling: js.UndefOr[AnonUseNative] = js.undefined
+  var scrolling: js.UndefOr[UseNative] = js.undefined
   /** @name dxPivotGrid.Options.showBorders */
   var showBorders: js.UndefOr[Boolean] = js.undefined
   /** @name dxPivotGrid.Options.showColumnGrandTotals */
@@ -86,9 +86,9 @@ trait dxPivotGridOptions extends WidgetOptions[dxPivotGrid] {
   /** @name dxPivotGrid.Options.showTotalsPrior */
   var showTotalsPrior: js.UndefOr[both | columns | none | rows] = js.undefined
   /** @name dxPivotGrid.Options.stateStoring */
-  var stateStoring: js.UndefOr[AnonCustomLoad] = js.undefined
+  var stateStoring: js.UndefOr[CustomLoad] = js.undefined
   /** @name dxPivotGrid.Options.texts */
-  var texts: js.UndefOr[AnonCollapseAll] = js.undefined
+  var texts: js.UndefOr[CollapseAll] = js.undefined
   /** @name dxPivotGrid.Options.wordWrapEnabled */
   var wordWrapEnabled: js.UndefOr[Boolean] = js.undefined
 }
@@ -107,63 +107,63 @@ object dxPivotGridOptions {
     dataSource: js.Array[_] | PivotGridDataSource | PivotGridDataSourceOptions = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     elementAttr: js.Any = null,
-    export: AnonIgnoreExcelErrors = null,
-    fieldChooser: AnonApplyChangesMode = null,
-    fieldPanel: AnonAllowFieldDragging = null,
+    export: IgnoreExcelErrors = null,
+    fieldChooser: ApplyChangesMode = null,
+    fieldPanel: AllowFieldDragging = null,
     focusStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    headerFilter: AnonSearchTimeout = null,
+    headerFilter: SearchTimeout = null,
     height: Double | String | (js.Function0[Double | String]) = null,
     hideEmptySummaryCells: js.UndefOr[Boolean] = js.undefined,
     hint: String = null,
     hoverStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    loadPanel: AnonShowIndicator = null,
-    onCellClick: /* e */ AnonArea => _ = null,
-    onCellPrepared: /* e */ AnonCell => _ = null,
-    onContentReady: /* e */ AnonComponentElement[dxPivotGrid] => _ = null,
-    onContextMenuPreparing: /* e */ AnonColumnFields => _ = null,
-    onDisposing: /* e */ AnonModel[dxPivotGrid] => _ = null,
-    onExported: /* e */ AnonComponentDxPivotGrid => _ = null,
-    onExporting: /* e */ AnonFileNameModel => _ = null,
-    onFileSaving: /* e */ AnonFileNameFormat => _ = null,
-    onInitialized: /* e */ AnonElement[dxPivotGrid] => _ = null,
-    onOptionChanged: /* e */ AnonName[dxPivotGrid] => _ = null,
+    loadPanel: ShowIndicator = null,
+    onCellClick: /* e */ Area => _ = null,
+    onCellPrepared: /* e */ Cell => _ = null,
+    onContentReady: /* e */ ComponentElement[dxPivotGrid] => _ = null,
+    onContextMenuPreparing: /* e */ ColumnFields => _ = null,
+    onDisposing: /* e */ Model[dxPivotGrid] => _ = null,
+    onExported: /* e */ ComponentDxPivotGrid => _ = null,
+    onExporting: /* e */ FileNameModel => _ = null,
+    onFileSaving: /* e */ FileNameFormat => _ = null,
+    onInitialized: /* e */ Element[dxPivotGrid] => _ = null,
+    onOptionChanged: /* e */ Name[dxPivotGrid] => _ = null,
     rowHeaderLayout: standard | tree = null,
     rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    scrolling: AnonUseNative = null,
+    scrolling: UseNative = null,
     showBorders: js.UndefOr[Boolean] = js.undefined,
     showColumnGrandTotals: js.UndefOr[Boolean] = js.undefined,
     showColumnTotals: js.UndefOr[Boolean] = js.undefined,
     showRowGrandTotals: js.UndefOr[Boolean] = js.undefined,
     showRowTotals: js.UndefOr[Boolean] = js.undefined,
     showTotalsPrior: both | columns | none | rows = null,
-    stateStoring: AnonCustomLoad = null,
-    tabIndex: Int | Double = null,
-    texts: AnonCollapseAll = null,
+    stateStoring: CustomLoad = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
+    texts: CollapseAll = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     width: Double | String | (js.Function0[Double | String]) = null,
     wordWrapEnabled: js.UndefOr[Boolean] = js.undefined
   ): dxPivotGridOptions = {
     val __obj = js.Dynamic.literal()
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowExpandAll)) __obj.updateDynamic("allowExpandAll")(allowExpandAll.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSortingBySummary)) __obj.updateDynamic("allowSortingBySummary")(allowSortingBySummary.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowExpandAll)) __obj.updateDynamic("allowExpandAll")(allowExpandAll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSortingBySummary)) __obj.updateDynamic("allowSortingBySummary")(allowSortingBySummary.get.asInstanceOf[js.Any])
     if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
     if (dataFieldArea != null) __obj.updateDynamic("dataFieldArea")(dataFieldArea.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
     if (export != null) __obj.updateDynamic("export")(export.asInstanceOf[js.Any])
     if (fieldChooser != null) __obj.updateDynamic("fieldChooser")(fieldChooser.asInstanceOf[js.Any])
     if (fieldPanel != null) __obj.updateDynamic("fieldPanel")(fieldPanel.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.get.asInstanceOf[js.Any])
     if (headerFilter != null) __obj.updateDynamic("headerFilter")(headerFilter.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideEmptySummaryCells)) __obj.updateDynamic("hideEmptySummaryCells")(hideEmptySummaryCells.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideEmptySummaryCells)) __obj.updateDynamic("hideEmptySummaryCells")(hideEmptySummaryCells.get.asInstanceOf[js.Any])
     if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.get.asInstanceOf[js.Any])
     if (loadPanel != null) __obj.updateDynamic("loadPanel")(loadPanel.asInstanceOf[js.Any])
     if (onCellClick != null) __obj.updateDynamic("onCellClick")(js.Any.fromFunction1(onCellClick))
     if (onCellPrepared != null) __obj.updateDynamic("onCellPrepared")(js.Any.fromFunction1(onCellPrepared))
@@ -176,20 +176,20 @@ object dxPivotGridOptions {
     if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction1(onInitialized))
     if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1(onOptionChanged))
     if (rowHeaderLayout != null) __obj.updateDynamic("rowHeaderLayout")(rowHeaderLayout.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
     if (scrolling != null) __obj.updateDynamic("scrolling")(scrolling.asInstanceOf[js.Any])
-    if (!js.isUndefined(showBorders)) __obj.updateDynamic("showBorders")(showBorders.asInstanceOf[js.Any])
-    if (!js.isUndefined(showColumnGrandTotals)) __obj.updateDynamic("showColumnGrandTotals")(showColumnGrandTotals.asInstanceOf[js.Any])
-    if (!js.isUndefined(showColumnTotals)) __obj.updateDynamic("showColumnTotals")(showColumnTotals.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRowGrandTotals)) __obj.updateDynamic("showRowGrandTotals")(showRowGrandTotals.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRowTotals)) __obj.updateDynamic("showRowTotals")(showRowTotals.asInstanceOf[js.Any])
+    if (!js.isUndefined(showBorders)) __obj.updateDynamic("showBorders")(showBorders.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showColumnGrandTotals)) __obj.updateDynamic("showColumnGrandTotals")(showColumnGrandTotals.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showColumnTotals)) __obj.updateDynamic("showColumnTotals")(showColumnTotals.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRowGrandTotals)) __obj.updateDynamic("showRowGrandTotals")(showRowGrandTotals.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRowTotals)) __obj.updateDynamic("showRowTotals")(showRowTotals.get.asInstanceOf[js.Any])
     if (showTotalsPrior != null) __obj.updateDynamic("showTotalsPrior")(showTotalsPrior.asInstanceOf[js.Any])
     if (stateStoring != null) __obj.updateDynamic("stateStoring")(stateStoring.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     if (texts != null) __obj.updateDynamic("texts")(texts.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(wordWrapEnabled)) __obj.updateDynamic("wordWrapEnabled")(wordWrapEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(wordWrapEnabled)) __obj.updateDynamic("wordWrapEnabled")(wordWrapEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxPivotGridOptions]
   }
 }

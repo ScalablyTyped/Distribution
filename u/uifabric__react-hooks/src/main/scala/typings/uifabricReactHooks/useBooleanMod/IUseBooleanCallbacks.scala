@@ -9,10 +9,7 @@ trait IUseBooleanCallbacks extends js.Object {
   def setFalse(): Unit
   /** Set the value to true. Always has the same identity. */
   def setTrue(): Unit
-  /**
-    * Toggle the value. If `value` is true, this will be the `setFalse` callback.
-    * If `value` is false, this will be the `setTrue` callback.
-    */
+  /** Toggle the value. Always has the same identity. */
   def toggle(): Unit
 }
 

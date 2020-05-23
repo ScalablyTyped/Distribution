@@ -30,48 +30,45 @@ trait ICheckbox extends IBase {
   /** [Config Option] (String) */
   var checkedCls: js.UndefOr[String] = js.undefined
   /** [Method] Returns the checked state of the checkbox
-  		* @returns Boolean True if checked, else false
-  		*/
+    * @returns Boolean True if checked, else false
+    */
   @JSName("getRawValue")
   var getRawValue_ICheckbox: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the checked state of the checkbox
-  		* @returns Boolean True if checked, else false
-  		*/
+    * @returns Boolean True if checked, else false
+    */
   @JSName("getValue")
   var getValue_ICheckbox: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Config Option] (Function) */
   var handler: js.UndefOr[js.Any] = js.undefined
-  /** [Method] Initializes the field s value based on the initial config  */
-  @JSName("initValue")
-  var initValue_ICheckbox: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (String) */
   var inputValue: js.UndefOr[String] = js.undefined
   /** [Method] Resets the field s originalValue property so it matches the current value
-  		* @param fromBoxInGroup Object
-  		*/
+    * @param fromBoxInGroup Object
+    */
   @JSName("resetOriginalValue")
   var resetOriginalValue_ICheckbox: js.UndefOr[js.Function1[/* fromBoxInGroup */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Object) */
   var scope: js.UndefOr[js.Any] = js.undefined
   /** [Method] Sets the boxLabel for this checkbox
-  		* @param boxLabel String The new label
-  		*/
+    * @param boxLabel String The new label
+    */
   var setBoxLabel: js.UndefOr[js.Function1[/* boxLabel */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the checked state of the checkbox
-  		* @param value Boolean/String/Number The following values will check the checkbox: true, 'true', '1', 1, or 'on', as well as a String that matches the inputValue. Any other value will uncheck the checkbox.
-  		* @returns Boolean the new checked state of the checkbox
-  		*/
+    * @param value Boolean/String/Number The following values will check the checkbox: true, 'true', '1', 1, or 'on', as well as a String that matches the inputValue. Any other value will uncheck the checkbox.
+    * @returns Boolean the new checked state of the checkbox
+    */
   @JSName("setRawValue")
   var setRawValue_ICheckbox: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Boolean]] = js.undefined
   /** [Method] Sets the read only state of this field
-  		* @param readOnly Object
-  		*/
+    * @param readOnly Object
+    */
   @JSName("setReadOnly")
   var setReadOnly_ICheckbox: js.UndefOr[js.Function1[/* readOnly */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the checked state of the checkbox and invokes change detection
-  		* @param checked Boolean/String The following values will check the checkbox: true, 'true', '1', or 'on', as well as a String that matches the inputValue. Any other value will uncheck the checkbox.
-  		* @returns Ext.form.field.Checkbox this
-  		*/
+    * @param checked Boolean/String The following values will check the checkbox: true, 'true', '1', or 'on', as well as a String that matches the inputValue. Any other value will uncheck the checkbox.
+    * @returns Ext.form.field.Checkbox this
+    */
   @JSName("setValue")
   var setValue_ICheckbox: js.UndefOr[js.Function1[/* checked */ js.UndefOr[js.Any], this.type]] = js.undefined
   /** [Config Option] (String) */
@@ -96,7 +93,6 @@ object ICheckbox {
     getRawValue: () => Boolean = null,
     getValue: () => Boolean = null,
     handler: js.Any = null,
-    initValue: () => Unit = null,
     inputValue: String = null,
     resetOriginalValue: /* fromBoxInGroup */ js.UndefOr[js.Any] => Unit = null,
     scope: js.Any = null,
@@ -117,12 +113,11 @@ object ICheckbox {
     if (boxLabelAttrTpl != null) __obj.updateDynamic("boxLabelAttrTpl")(boxLabelAttrTpl.asInstanceOf[js.Any])
     if (boxLabelCls != null) __obj.updateDynamic("boxLabelCls")(boxLabelCls.asInstanceOf[js.Any])
     if (boxLabelEl != null) __obj.updateDynamic("boxLabelEl")(boxLabelEl.asInstanceOf[js.Any])
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
     if (checkedCls != null) __obj.updateDynamic("checkedCls")(checkedCls.asInstanceOf[js.Any])
     if (getRawValue != null) __obj.updateDynamic("getRawValue")(js.Any.fromFunction0(getRawValue))
     if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
     if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
-    if (initValue != null) __obj.updateDynamic("initValue")(js.Any.fromFunction0(initValue))
     if (inputValue != null) __obj.updateDynamic("inputValue")(inputValue.asInstanceOf[js.Any])
     if (resetOriginalValue != null) __obj.updateDynamic("resetOriginalValue")(js.Any.fromFunction1(resetOriginalValue))
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])

@@ -24,25 +24,25 @@ object ReadLineOptions {
   def apply(
     input: ReadableStream,
     completer: Completer | AsyncCompleter = null,
-    crlfDelay: Int | Double = null,
-    escapeCodeTimeout: Int | Double = null,
-    historySize: Int | Double = null,
+    crlfDelay: js.UndefOr[Double] = js.undefined,
+    escapeCodeTimeout: js.UndefOr[Double] = js.undefined,
+    historySize: js.UndefOr[Double] = js.undefined,
     output: WritableStream = null,
     prompt: String = null,
     removeHistoryDuplicates: js.UndefOr[Boolean] = js.undefined,
-    tabSize: Int | Double = null,
+    tabSize: js.UndefOr[Double] = js.undefined,
     terminal: js.UndefOr[Boolean] = js.undefined
   ): ReadLineOptions = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
     if (completer != null) __obj.updateDynamic("completer")(completer.asInstanceOf[js.Any])
-    if (crlfDelay != null) __obj.updateDynamic("crlfDelay")(crlfDelay.asInstanceOf[js.Any])
-    if (escapeCodeTimeout != null) __obj.updateDynamic("escapeCodeTimeout")(escapeCodeTimeout.asInstanceOf[js.Any])
-    if (historySize != null) __obj.updateDynamic("historySize")(historySize.asInstanceOf[js.Any])
+    if (!js.isUndefined(crlfDelay)) __obj.updateDynamic("crlfDelay")(crlfDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(escapeCodeTimeout)) __obj.updateDynamic("escapeCodeTimeout")(escapeCodeTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(historySize)) __obj.updateDynamic("historySize")(historySize.get.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeHistoryDuplicates)) __obj.updateDynamic("removeHistoryDuplicates")(removeHistoryDuplicates.asInstanceOf[js.Any])
-    if (tabSize != null) __obj.updateDynamic("tabSize")(tabSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(terminal)) __obj.updateDynamic("terminal")(terminal.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeHistoryDuplicates)) __obj.updateDynamic("removeHistoryDuplicates")(removeHistoryDuplicates.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabSize)) __obj.updateDynamic("tabSize")(tabSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(terminal)) __obj.updateDynamic("terminal")(terminal.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadLineOptions]
   }
 }

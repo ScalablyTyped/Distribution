@@ -1,6 +1,5 @@
 package typings.vfile.mod
 
-import typings.node.BufferEncoding
 import typings.unist.mod.Node
 import typings.unist.mod.Point
 import typings.unist.mod.Position

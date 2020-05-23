@@ -1,6 +1,6 @@
 package typings.luxon.mod
 
-import typings.luxon.AnonSeparator
+import typings.luxon.anon.Separator
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -44,7 +44,7 @@ class Interval () extends js.Object {
   def toDuration(unit: DurationUnit): Duration = js.native
   def toDuration(unit: DurationUnit, options: DiffOptions): Duration = js.native
   def toFormat(dateFormat: String): String = js.native
-  def toFormat(dateFormat: String, options: AnonSeparator): String = js.native
+  def toFormat(dateFormat: String, options: Separator): String = js.native
   def toISO(): String = js.native
   def toISO(options: ToISOTimeOptions): String = js.native
   def toISODate(): String = js.native

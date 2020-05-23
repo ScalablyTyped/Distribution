@@ -23,7 +23,7 @@ trait SplitBoxProps[P /* <: EnhancerProps */] extends js.Object {
 
 object SplitBoxProps {
   @scala.inline
-  def apply[P /* <: EnhancerProps */](
+  def apply[P](
     matchedProps: Pick[
       P, 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 140 */ js.Any

@@ -1,9 +1,9 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.PageBreakData
 import typings.officeJsPreview.Excel.Interfaces.PageBreakLoadOptions
 import typings.officeJsPreview.OfficeExtension.ClientObject
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,12 +11,11 @@ import scala.scalajs.js.annotation._
 /**
   * [Api set: ExcelApi 1.9]
   */
-@JSGlobal("Excel.PageBreak")
 @js.native
-class PageBreak () extends ClientObject {
+trait PageBreak extends ClientObject {
   /**
     *
-    * Represents the column index for the page break
+    * Specifies the column index for the page break
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -26,7 +25,7 @@ class PageBreak () extends ClientObject {
   var context_PageBreak: RequestContext = js.native
   /**
     *
-    * Represents the row index for the page break
+    * Specifies the row index for the page break
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -50,7 +49,7 @@ class PageBreak () extends ClientObject {
     */
   def load(): PageBreak = js.native
   def load(options: PageBreakLoadOptions): PageBreak = js.native
-  def load(propertyNamesAndPaths: AnonExpand): PageBreak = js.native
+  def load(propertyNamesAndPaths: Expand): PageBreak = js.native
   def load(propertyNames: String): PageBreak = js.native
   def load(propertyNames: js.Array[String]): PageBreak = js.native
   /**

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.active
 import typings.arcgisJsApi.arcgisJsApiStrings.circle
@@ -23,9 +22,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.arcgisJsApi.esri.Evented because Inheritance from two classes. Inlined emit, emit, hasEventListener, on, on */ @js.native
-trait SketchViewModel extends Accessor {
+@js.native
+trait SketchViewModel
+  extends Accessor
+     with Evented {
   /**
     * When creating new graphics (for example after [create()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#create) has been called), this property reflects the create tool being used. When updating graphics (for example after [update()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update) has been called), this property reflects the update tool being used. If no create or update operation is in progress, this is `null`.
     *
@@ -172,37 +172,6 @@ trait SketchViewModel extends Accessor {
     *
     */
   def delete(): Unit = js.native
-  /**
-    * Emits an event on the instance. This method should only be used when creating subclasses of this class.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Evented.html#emit)
-    *
-    * @param type The name of the event.
-    * @param event The event payload.
-    *
-    */
-  def emit(`type`: String): Boolean = js.native
-  def emit(`type`: String, event: js.Any): Boolean = js.native
-  /**
-    * Indicates whether there is an event listener on the instance that matches the provided event name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Evented.html#hasEventListener)
-    *
-    * @param type The name of the event.
-    *
-    */
-  def hasEventListener(`type`: String): Boolean = js.native
-  /**
-    * Registers an event handler on the instance. Call this method to hook an event with a listener.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Evented.html#on)
-    *
-    * @param type A event type, or an array of event types, to listen for.
-    * @param listener The function to call when the event is fired.
-    *
-    */
-  def on(`type`: String, listener: EventHandler): IHandle = js.native
-  def on(`type`: js.Array[String], listener: EventHandler): IHandle = js.native
   @JSName("on")
   def on_create(name: create, eventHandler: SketchViewModelCreateEventHandler): IHandle = js.native
   @JSName("on")
@@ -257,8 +226,4 @@ trait SketchViewModel extends Accessor {
   def update(graphics: Graphic): js.Promise[Unit] = js.native
   def update(graphics: Graphic, updateOptions: SketchViewModelUpdateUpdateOptions): js.Promise[Unit] = js.native
 }
-
-@JSGlobal("__esri.SketchViewModel")
-@js.native
-object SketchViewModel extends TopLevel[SketchViewModelConstructor]
 

@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -86,38 +85,6 @@ object DataValidationType extends js.Object {
     */
   @js.native
   sealed trait wholeNumber extends DataValidationType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[DataValidationType with String] = js.native
-  /* "Custom" */ @js.native
-  object custom extends TopLevel[custom with String]
-  
-  /* "Date" */ @js.native
-  object date extends TopLevel[date with String]
-  
-  /* "Decimal" */ @js.native
-  object decimal extends TopLevel[decimal with String]
-  
-  /* "Inconsistent" */ @js.native
-  object inconsistent extends TopLevel[inconsistent with String]
-  
-  /* "List" */ @js.native
-  object list extends TopLevel[list with String]
-  
-  /* "MixedCriteria" */ @js.native
-  object mixedCriteria extends TopLevel[mixedCriteria with String]
-  
-  /* "None" */ @js.native
-  object none extends TopLevel[none with String]
-  
-  /* "TextLength" */ @js.native
-  object textLength extends TopLevel[textLength with String]
-  
-  /* "Time" */ @js.native
-  object time extends TopLevel[time with String]
-  
-  /* "WholeNumber" */ @js.native
-  object wholeNumber extends TopLevel[wholeNumber with String]
   
 }
 

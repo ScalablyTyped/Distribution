@@ -27,7 +27,7 @@ object SaveCsvProps {
     sep: String = null
   ): SaveCsvProps = {
     val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
-    if (!js.isUndefined(bom)) __obj.updateDynamic("bom")(bom.asInstanceOf[js.Any])
+    if (!js.isUndefined(bom)) __obj.updateDynamic("bom")(bom.get.asInstanceOf[js.Any])
     if (eol != null) __obj.updateDynamic("eol")(eol.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
     if (mime != null) __obj.updateDynamic("mime")(mime.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 package typings.rotJs.diggerMod
 
-import typings.rotJs.PartialOptionsCorridorLength
+import typings.rotJs.anon.PartialOptionsCorridorLength
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -13,14 +13,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Defines the content, associated metadata and events, and expiration time of a toast notification. */
-@JSGlobal("Windows.UI.Notifications.ToastNotification")
 @js.native
-class ToastNotification protected () extends js.Object {
-  /**
-    * Creates and initializes a new instance of the ToastNotification .
-    * @param content The XML content that defines the toast notification.
-    */
-  def this(content: XmlDocument) = this()
+trait ToastNotification extends js.Object {
   /** Gets the XML that defines the current toast notification. */
   var content: XmlDocument = js.native
   /** Gets or sets the time after which a toast notification should not be displayed. */

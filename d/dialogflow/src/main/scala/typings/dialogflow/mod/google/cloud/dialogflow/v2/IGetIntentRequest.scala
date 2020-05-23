@@ -19,14 +19,16 @@ trait IGetIntentRequest extends js.Object {
 object IGetIntentRequest {
   @scala.inline
   def apply(
-    intentView: IntentView | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.IntentView * / any */ String) = null,
-    languageCode: String = null,
-    name: String = null
+    intentView: js.UndefOr[
+      Null | IntentView | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.IntentView * / any */ String)
+    ] = js.undefined,
+    languageCode: js.UndefOr[Null | String] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined
   ): IGetIntentRequest = {
     val __obj = js.Dynamic.literal()
-    if (intentView != null) __obj.updateDynamic("intentView")(intentView.asInstanceOf[js.Any])
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(intentView)) __obj.updateDynamic("intentView")(intentView.asInstanceOf[js.Any])
+    if (!js.isUndefined(languageCode)) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGetIntentRequest]
   }
 }

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLFrameSetSite")
 @js.native
-class HTMLFrameSetSite protected () extends js.Object {
+trait HTMLFrameSetSite extends js.Object {
   @JSName("MSHTML.HTMLFrameSetSite_typekey")
   var MSHTMLDotHTMLFrameSetSite_typekey: HTMLFrameSetSite = js.native
   var accessKey: String = js.native

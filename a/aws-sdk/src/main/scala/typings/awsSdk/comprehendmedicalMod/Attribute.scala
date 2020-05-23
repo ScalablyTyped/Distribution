@@ -51,25 +51,25 @@ trait Attribute extends js.Object {
 object Attribute {
   @scala.inline
   def apply(
-    BeginOffset: Int | Double = null,
+    BeginOffset: js.UndefOr[Integer] = js.undefined,
     Category: EntityType = null,
-    EndOffset: Int | Double = null,
-    Id: Int | Double = null,
-    RelationshipScore: Int | Double = null,
+    EndOffset: js.UndefOr[Integer] = js.undefined,
+    Id: js.UndefOr[Integer] = js.undefined,
+    RelationshipScore: js.UndefOr[Float] = js.undefined,
     RelationshipType: RelationshipType = null,
-    Score: Int | Double = null,
+    Score: js.UndefOr[Float] = js.undefined,
     Text: String = null,
     Traits: TraitList = null,
     Type: EntitySubType = null
   ): Attribute = {
     val __obj = js.Dynamic.literal()
-    if (BeginOffset != null) __obj.updateDynamic("BeginOffset")(BeginOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(BeginOffset)) __obj.updateDynamic("BeginOffset")(BeginOffset.get.asInstanceOf[js.Any])
     if (Category != null) __obj.updateDynamic("Category")(Category.asInstanceOf[js.Any])
-    if (EndOffset != null) __obj.updateDynamic("EndOffset")(EndOffset.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (RelationshipScore != null) __obj.updateDynamic("RelationshipScore")(RelationshipScore.asInstanceOf[js.Any])
+    if (!js.isUndefined(EndOffset)) __obj.updateDynamic("EndOffset")(EndOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Id)) __obj.updateDynamic("Id")(Id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RelationshipScore)) __obj.updateDynamic("RelationshipScore")(RelationshipScore.get.asInstanceOf[js.Any])
     if (RelationshipType != null) __obj.updateDynamic("RelationshipType")(RelationshipType.asInstanceOf[js.Any])
-    if (Score != null) __obj.updateDynamic("Score")(Score.asInstanceOf[js.Any])
+    if (!js.isUndefined(Score)) __obj.updateDynamic("Score")(Score.get.asInstanceOf[js.Any])
     if (Text != null) __obj.updateDynamic("Text")(Text.asInstanceOf[js.Any])
     if (Traits != null) __obj.updateDynamic("Traits")(Traits.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])

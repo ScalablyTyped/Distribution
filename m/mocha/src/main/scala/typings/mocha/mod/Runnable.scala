@@ -1,7 +1,7 @@
 package typings.mocha.mod
 
-import typings.mocha.Mocha_.AsyncFunc
-import typings.mocha.Mocha_.Func
+import typings.mocha.Mocha.AsyncFunc
+import typings.mocha.Mocha.Func
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 @JSImport("mocha", "Runnable")
 @js.native
 class Runnable protected ()
-  extends typings.mocha.Mocha_.Runnable {
+  extends typings.mocha.Mocha.Runnable {
   def this(title: String) = this()
   def this(title: String, fn: AsyncFunc) = this()
   def this(title: String, fn: Func) = this()

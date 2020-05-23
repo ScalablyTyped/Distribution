@@ -15,12 +15,12 @@ object BaseModifier {
   def apply(
     enabled: js.UndefOr[Boolean] = js.undefined,
     fn: (/* data */ Data, /* options */ js.Object) => Data = null,
-    order: Int | Double = null
+    order: js.UndefOr[Double] = js.undefined
   ): BaseModifier = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (fn != null) __obj.updateDynamic("fn")(js.Any.fromFunction2(fn))
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (!js.isUndefined(order)) __obj.updateDynamic("order")(order.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseModifier]
   }
 }

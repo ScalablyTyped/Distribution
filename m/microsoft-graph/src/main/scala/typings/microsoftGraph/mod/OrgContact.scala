@@ -65,7 +65,7 @@ object OrgContact {
     if (memberOf != null) __obj.updateDynamic("memberOf")(memberOf.asInstanceOf[js.Any])
     if (onPremisesLastSyncDateTime != null) __obj.updateDynamic("onPremisesLastSyncDateTime")(onPremisesLastSyncDateTime.asInstanceOf[js.Any])
     if (onPremisesProvisioningErrors != null) __obj.updateDynamic("onPremisesProvisioningErrors")(onPremisesProvisioningErrors.asInstanceOf[js.Any])
-    if (!js.isUndefined(onPremisesSyncEnabled)) __obj.updateDynamic("onPremisesSyncEnabled")(onPremisesSyncEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(onPremisesSyncEnabled)) __obj.updateDynamic("onPremisesSyncEnabled")(onPremisesSyncEnabled.get.asInstanceOf[js.Any])
     if (phones != null) __obj.updateDynamic("phones")(phones.asInstanceOf[js.Any])
     if (proxyAddresses != null) __obj.updateDynamic("proxyAddresses")(proxyAddresses.asInstanceOf[js.Any])
     if (surname != null) __obj.updateDynamic("surname")(surname.asInstanceOf[js.Any])

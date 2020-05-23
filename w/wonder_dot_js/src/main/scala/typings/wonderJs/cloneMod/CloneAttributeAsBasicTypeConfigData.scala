@@ -10,9 +10,9 @@ trait CloneAttributeAsBasicTypeConfigData extends js.Object {
 
 object CloneAttributeAsBasicTypeConfigData {
   @scala.inline
-  def apply(order: Int | Double = null): CloneAttributeAsBasicTypeConfigData = {
+  def apply(order: js.UndefOr[Double] = js.undefined): CloneAttributeAsBasicTypeConfigData = {
     val __obj = js.Dynamic.literal()
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (!js.isUndefined(order)) __obj.updateDynamic("order")(order.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloneAttributeAsBasicTypeConfigData]
   }
 }

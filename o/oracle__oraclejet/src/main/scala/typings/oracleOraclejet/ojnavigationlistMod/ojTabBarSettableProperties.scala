@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojnavigationlistMod
 
-import typings.oracleOraclejet.AnonAccessibleReorderAfterItem
-import typings.oracleOraclejet.AnonRendererSelectable
+import typings.oracleOraclejet.anon.AccessibleReorderAfterItem
+import typings.oracleOraclejet.anon.RendererSelectable
 import typings.oracleOraclejet.mod.baseComponentSettableProperties
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.oracleOraclejetStrings.all
@@ -26,12 +26,12 @@ trait ojTabBarSettableProperties[K, D] extends baseComponentSettableProperties {
   var data: (DataProvider[K, D]) | Null
   var display: all | icons
   var edge: top | bottom | start | end
-  var item: AnonRendererSelectable[K, D]
+  var item: RendererSelectable[K, D]
   var overflow: popup | hidden
   var reorderable: enabled | disabled
   var selection: js.Any
   @JSName("translations")
-  var translations_ojTabBarSettableProperties: AnonAccessibleReorderAfterItem
+  var translations_ojTabBarSettableProperties: AccessibleReorderAfterItem
   var truncation: none | progressive
 }
 
@@ -42,16 +42,15 @@ object ojTabBarSettableProperties {
     currentItem: js.Any,
     display: all | icons,
     edge: top | bottom | start | end,
-    item: AnonRendererSelectable[K, D],
+    item: RendererSelectable[K, D],
     overflow: popup | hidden,
     reorderable: enabled | disabled,
     selection: js.Any,
-    translations: AnonAccessibleReorderAfterItem,
+    translations: AccessibleReorderAfterItem,
     truncation: none | progressive,
     data: DataProvider[K, D] = null
   ): ojTabBarSettableProperties[K, D] = {
-    val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any], currentItem = currentItem.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], edge = edge.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], overflow = overflow.asInstanceOf[js.Any], reorderable = reorderable.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], truncation = truncation.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any], currentItem = currentItem.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], edge = edge.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], overflow = overflow.asInstanceOf[js.Any], reorderable = reorderable.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], truncation = truncation.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojTabBarSettableProperties[K, D]]
   }
 }

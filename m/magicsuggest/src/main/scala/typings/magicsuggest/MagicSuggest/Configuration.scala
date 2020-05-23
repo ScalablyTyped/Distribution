@@ -306,14 +306,14 @@ object Configuration {
     inputCfg: js.Any = null,
     invalidCls: String = null,
     matchCase: js.UndefOr[Boolean] = js.undefined,
-    maxDropHeight: Int | Double = null,
-    maxEntryLength: Int | Double = null,
+    maxDropHeight: js.UndefOr[Double] = js.undefined,
+    maxEntryLength: js.UndefOr[Double] = js.undefined,
     maxEntryRenderer: /* v */ js.UndefOr[Double] => Unit = null,
-    maxSelection: Int | Double = null,
+    maxSelection: js.UndefOr[Double] = js.undefined,
     maxSelectionRenderer: /* v */ Double => Unit = null,
-    maxSuggestions: Int | Double = null,
+    maxSuggestions: js.UndefOr[Double] = js.undefined,
     method: String = null,
-    minChars: Int | Double = null,
+    minChars: js.UndefOr[Double] = js.undefined,
     minCharsRenderer: /* v */ Double => Unit = null,
     mode: String = null,
     name: String = null,
@@ -336,7 +336,7 @@ object Configuration {
     strictSuggest: js.UndefOr[Boolean] = js.undefined,
     style: String = null,
     toggleOnClick: js.UndefOr[Boolean] = js.undefined,
-    typeDelay: Int | Double = null,
+    typeDelay: js.UndefOr[Double] = js.undefined,
     useCommaKey: js.UndefOr[Boolean] = js.undefined,
     useTabKey: js.UndefOr[Boolean] = js.undefined,
     useZebraStyle: js.UndefOr[Boolean] = js.undefined,
@@ -347,35 +347,35 @@ object Configuration {
   ): Configuration = {
     val __obj = js.Dynamic.literal()
     if (ajaxConfig != null) __obj.updateDynamic("ajaxConfig")(ajaxConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDuplicates)) __obj.updateDynamic("allowDuplicates")(allowDuplicates.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFreeEntries)) __obj.updateDynamic("allowFreeEntries")(allowFreeEntries.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDuplicates)) __obj.updateDynamic("allowDuplicates")(allowDuplicates.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFreeEntries)) __obj.updateDynamic("allowFreeEntries")(allowFreeEntries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect.get.asInstanceOf[js.Any])
     if (beforeSend != null) __obj.updateDynamic("beforeSend")(js.Any.fromFunction0(beforeSend))
     if (cls != null) __obj.updateDynamic("cls")(cls.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataUrlParams != null) __obj.updateDynamic("dataUrlParams")(dataUrlParams.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (disabledField != null) __obj.updateDynamic("disabledField")(disabledField.asInstanceOf[js.Any])
     if (displayField != null) __obj.updateDynamic("displayField")(displayField.asInstanceOf[js.Any])
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandOnFocus)) __obj.updateDynamic("expandOnFocus")(expandOnFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandOnFocus)) __obj.updateDynamic("expandOnFocus")(expandOnFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.get.asInstanceOf[js.Any])
     if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideTrigger)) __obj.updateDynamic("hideTrigger")(hideTrigger.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideTrigger)) __obj.updateDynamic("hideTrigger")(hideTrigger.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (infoMsgCls != null) __obj.updateDynamic("infoMsgCls")(infoMsgCls.asInstanceOf[js.Any])
     if (inputCfg != null) __obj.updateDynamic("inputCfg")(inputCfg.asInstanceOf[js.Any])
     if (invalidCls != null) __obj.updateDynamic("invalidCls")(invalidCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase.asInstanceOf[js.Any])
-    if (maxDropHeight != null) __obj.updateDynamic("maxDropHeight")(maxDropHeight.asInstanceOf[js.Any])
-    if (maxEntryLength != null) __obj.updateDynamic("maxEntryLength")(maxEntryLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDropHeight)) __obj.updateDynamic("maxDropHeight")(maxDropHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxEntryLength)) __obj.updateDynamic("maxEntryLength")(maxEntryLength.get.asInstanceOf[js.Any])
     if (maxEntryRenderer != null) __obj.updateDynamic("maxEntryRenderer")(js.Any.fromFunction1(maxEntryRenderer))
-    if (maxSelection != null) __obj.updateDynamic("maxSelection")(maxSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSelection)) __obj.updateDynamic("maxSelection")(maxSelection.get.asInstanceOf[js.Any])
     if (maxSelectionRenderer != null) __obj.updateDynamic("maxSelectionRenderer")(js.Any.fromFunction1(maxSelectionRenderer))
-    if (maxSuggestions != null) __obj.updateDynamic("maxSuggestions")(maxSuggestions.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSuggestions)) __obj.updateDynamic("maxSuggestions")(maxSuggestions.get.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (minChars != null) __obj.updateDynamic("minChars")(minChars.asInstanceOf[js.Any])
+    if (!js.isUndefined(minChars)) __obj.updateDynamic("minChars")(minChars.get.asInstanceOf[js.Any])
     if (minCharsRenderer != null) __obj.updateDynamic("minCharsRenderer")(js.Any.fromFunction1(minCharsRenderer))
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
@@ -383,25 +383,25 @@ object Configuration {
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (queryParam != null) __obj.updateDynamic("queryParam")(queryParam.asInstanceOf[js.Any])
     if (renderer != null) __obj.updateDynamic("renderer")(js.Any.fromFunction1(renderer))
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
-    if (!js.isUndefined(resultAsString)) __obj.updateDynamic("resultAsString")(resultAsString.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resultAsString)) __obj.updateDynamic("resultAsString")(resultAsString.get.asInstanceOf[js.Any])
     if (resultAsStringDelimiter != null) __obj.updateDynamic("resultAsStringDelimiter")(resultAsStringDelimiter.asInstanceOf[js.Any])
     if (resultsField != null) __obj.updateDynamic("resultsField")(resultsField.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectFirst)) __obj.updateDynamic("selectFirst")(selectFirst.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectFirst)) __obj.updateDynamic("selectFirst")(selectFirst.get.asInstanceOf[js.Any])
     if (selectionCls != null) __obj.updateDynamic("selectionCls")(selectionCls.asInstanceOf[js.Any])
     if (selectionContainer != null) __obj.updateDynamic("selectionContainer")(selectionContainer.asInstanceOf[js.Any])
     if (selectionPosition != null) __obj.updateDynamic("selectionPosition")(selectionPosition.asInstanceOf[js.Any])
     if (selectionRenderer != null) __obj.updateDynamic("selectionRenderer")(js.Any.fromFunction1(selectionRenderer))
-    if (!js.isUndefined(selectionStacked)) __obj.updateDynamic("selectionStacked")(selectionStacked.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectionStacked)) __obj.updateDynamic("selectionStacked")(selectionStacked.get.asInstanceOf[js.Any])
     if (sortDir != null) __obj.updateDynamic("sortDir")(sortDir.asInstanceOf[js.Any])
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictSuggest)) __obj.updateDynamic("strictSuggest")(strictSuggest.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictSuggest)) __obj.updateDynamic("strictSuggest")(strictSuggest.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(toggleOnClick)) __obj.updateDynamic("toggleOnClick")(toggleOnClick.asInstanceOf[js.Any])
-    if (typeDelay != null) __obj.updateDynamic("typeDelay")(typeDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCommaKey)) __obj.updateDynamic("useCommaKey")(useCommaKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(useTabKey)) __obj.updateDynamic("useTabKey")(useTabKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(useZebraStyle)) __obj.updateDynamic("useZebraStyle")(useZebraStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(toggleOnClick)) __obj.updateDynamic("toggleOnClick")(toggleOnClick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(typeDelay)) __obj.updateDynamic("typeDelay")(typeDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCommaKey)) __obj.updateDynamic("useCommaKey")(useCommaKey.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useTabKey)) __obj.updateDynamic("useTabKey")(useTabKey.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useZebraStyle)) __obj.updateDynamic("useZebraStyle")(useZebraStyle.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (valueField != null) __obj.updateDynamic("valueField")(valueField.asInstanceOf[js.Any])
     if (vregex != null) __obj.updateDynamic("vregex")(vregex.asInstanceOf[js.Any])

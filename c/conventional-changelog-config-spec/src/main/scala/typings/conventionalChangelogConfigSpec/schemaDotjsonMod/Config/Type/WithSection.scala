@@ -20,7 +20,7 @@ object WithSection {
   def apply(section: String, `type`: String, hidden: js.UndefOr[Boolean] = js.undefined): WithSection = {
     val __obj = js.Dynamic.literal(section = section.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithSection]
   }
 }

@@ -11,7 +11,7 @@ trait S3Location extends js.Object {
     */
   var bucket: js.UndefOr[S3Bucket] = js.native
   /**
-    * The file type of the application revision. Must be one of the following:   tar: A tar archive file.   tgz: A compressed tar archive file.   zip: A zip archive file.  
+    * The file type of the application revision. Must be one of the following:    tar: A tar archive file.    tgz: A compressed tar archive file.    zip: A zip archive file.  
     */
   var bundleType: js.UndefOr[BundleType] = js.native
   /**

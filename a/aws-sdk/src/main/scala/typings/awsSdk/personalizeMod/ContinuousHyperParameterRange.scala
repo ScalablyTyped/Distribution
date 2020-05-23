@@ -22,10 +22,14 @@ trait ContinuousHyperParameterRange extends js.Object {
 
 object ContinuousHyperParameterRange {
   @scala.inline
-  def apply(maxValue: Int | Double = null, minValue: Int | Double = null, name: ParameterName = null): ContinuousHyperParameterRange = {
+  def apply(
+    maxValue: js.UndefOr[ContinuousMaxValue] = js.undefined,
+    minValue: js.UndefOr[ContinuousMinValue] = js.undefined,
+    name: ParameterName = null
+  ): ContinuousHyperParameterRange = {
     val __obj = js.Dynamic.literal()
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minValue)) __obj.updateDynamic("minValue")(minValue.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContinuousHyperParameterRange]
   }

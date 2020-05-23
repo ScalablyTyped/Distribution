@@ -1,6 +1,6 @@
 package typings.reactSizeme.mod
 
-import typings.reactSizeme.AnonHeight
+import typings.reactSizeme.anon.Height
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait WithSizeProps extends js.Object {
 
 object WithSizeProps {
   @scala.inline
-  def apply(onSize: /* size */ AnonHeight => Unit = null): WithSizeProps = {
+  def apply(onSize: /* size */ Height => Unit = null): WithSizeProps = {
     val __obj = js.Dynamic.literal()
     if (onSize != null) __obj.updateDynamic("onSize")(js.Any.fromFunction1(onSize))
     __obj.asInstanceOf[WithSizeProps]

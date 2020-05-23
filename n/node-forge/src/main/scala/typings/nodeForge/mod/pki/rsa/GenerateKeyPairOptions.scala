@@ -18,21 +18,21 @@ object GenerateKeyPairOptions {
   @scala.inline
   def apply(
     algorithm: String = null,
-    bits: Int | Double = null,
-    e: Int | Double = null,
+    bits: js.UndefOr[Double] = js.undefined,
+    e: js.UndefOr[Double] = js.undefined,
     prng: js.Any = null,
-    workLoad: Int | Double = null,
+    workLoad: js.UndefOr[Double] = js.undefined,
     workerScript: String = null,
-    workers: Int | Double = null
+    workers: js.UndefOr[Double] = js.undefined
   ): GenerateKeyPairOptions = {
     val __obj = js.Dynamic.literal()
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
-    if (bits != null) __obj.updateDynamic("bits")(bits.asInstanceOf[js.Any])
-    if (e != null) __obj.updateDynamic("e")(e.asInstanceOf[js.Any])
+    if (!js.isUndefined(bits)) __obj.updateDynamic("bits")(bits.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(e)) __obj.updateDynamic("e")(e.get.asInstanceOf[js.Any])
     if (prng != null) __obj.updateDynamic("prng")(prng.asInstanceOf[js.Any])
-    if (workLoad != null) __obj.updateDynamic("workLoad")(workLoad.asInstanceOf[js.Any])
+    if (!js.isUndefined(workLoad)) __obj.updateDynamic("workLoad")(workLoad.get.asInstanceOf[js.Any])
     if (workerScript != null) __obj.updateDynamic("workerScript")(workerScript.asInstanceOf[js.Any])
-    if (workers != null) __obj.updateDynamic("workers")(workers.asInstanceOf[js.Any])
+    if (!js.isUndefined(workers)) __obj.updateDynamic("workers")(workers.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateKeyPairOptions]
   }
 }

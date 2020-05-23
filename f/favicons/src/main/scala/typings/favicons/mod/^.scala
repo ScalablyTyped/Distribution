@@ -1,6 +1,6 @@
 package typings.favicons.mod
 
-import typings.favicons.PartialConfiguration
+import typings.favicons.anon.PartialConfiguration
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

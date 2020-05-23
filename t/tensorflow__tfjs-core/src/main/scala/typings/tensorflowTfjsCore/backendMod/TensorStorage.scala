@@ -1,6 +1,6 @@
 package typings.tensorflowTfjsCore.backendMod
 
-import typings.tensorflowTfjsCore.AnonUnreliable
+import typings.tensorflowTfjsCore.anon.Unreliable
 import typings.tensorflowTfjsCore.distTypesMod.BackendValues
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.tensorMod.DataId
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait TensorStorage extends js.Object {
   def disposeData(dataId: DataId): Unit
-  def memory(): AnonUnreliable
+  def memory(): Unreliable
   def move(dataId: DataId, values: BackendValues, shape: js.Array[Double], dtype: DataType): Unit
   /** Returns number of data ids currently in the storage. */
   def numDataIds(): Double
@@ -23,7 +23,7 @@ object TensorStorage {
   @scala.inline
   def apply(
     disposeData: DataId => Unit,
-    memory: () => AnonUnreliable,
+    memory: () => Unreliable,
     move: (DataId, BackendValues, js.Array[Double], DataType) => Unit,
     numDataIds: () => Double,
     read: DataId => js.Promise[BackendValues],

@@ -20,13 +20,13 @@ object ArrayOperator {
   @scala.inline
   def apply[Type](
     $each: Type,
-    $position: Int | scala.Double = null,
-    $slice: Int | scala.Double = null,
+    $position: js.UndefOr[scala.Double] = js.undefined,
+    $slice: js.UndefOr[scala.Double] = js.undefined,
     $sort: SortValues | (Record[String, SortValues]) = null
   ): ArrayOperator[Type] = {
     val __obj = js.Dynamic.literal($each = $each.asInstanceOf[js.Any])
-    if ($position != null) __obj.updateDynamic("$position")($position.asInstanceOf[js.Any])
-    if ($slice != null) __obj.updateDynamic("$slice")($slice.asInstanceOf[js.Any])
+    if (!js.isUndefined($position)) __obj.updateDynamic("$position")($position.get.asInstanceOf[js.Any])
+    if (!js.isUndefined($slice)) __obj.updateDynamic("$slice")($slice.get.asInstanceOf[js.Any])
     if ($sort != null) __obj.updateDynamic("$sort")($sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayOperator[Type]]
   }

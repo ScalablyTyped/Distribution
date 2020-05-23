@@ -68,8 +68,8 @@ trait PlusGeolocation extends js.Object {
   /**
     * 监听设备位置变化信息
     * 位置信息将通过手机GPS设备或其它信息如IP地址、移动网络信号获取。
-    * 	当位置信息更新后将通过successCB回调函数返回。
-    * 	位置信息获取失败则调用回调函数errorCB。
+    *     当位置信息更新后将通过successCB回调函数返回。
+    *     位置信息获取失败则调用回调函数errorCB。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */

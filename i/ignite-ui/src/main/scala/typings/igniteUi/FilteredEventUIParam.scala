@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait FilteredEventUIParam extends js.Object {
   /**
-  	 * Used to obtain a jquery reference to the rendered filtered elements.
-  	 */
+    * Used to obtain a jquery reference to the rendered filtered elements.
+    */
   var elements: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Used to obtain reference to igCombo.
-  	 */
+    * Used to obtain reference to igCombo.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 

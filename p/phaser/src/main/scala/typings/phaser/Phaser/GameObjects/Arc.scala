@@ -1,6 +1,5 @@
 package typings.phaser.Phaser.GameObjects
 
-import typings.phaser.Phaser.Scene
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,32 +22,8 @@ import scala.scalajs.js.annotation._
   * you to control how smooth the shape renders in WebGL, by controlling the number of iterations
   * that take place during construction.
   */
-@JSGlobal("Phaser.GameObjects.Arc")
 @js.native
-class Arc protected () extends Shape {
-  /**
-    * 
-    * @param scene The Scene to which this Game Object belongs. A Game Object can only belong to one Scene at a time.
-    * @param x The horizontal position of this Game Object in the world. Default 0.
-    * @param y The vertical position of this Game Object in the world. Default 0.
-    * @param radius The radius of the arc. Default 128.
-    * @param startAngle The start angle of the arc, in degrees. Default 0.
-    * @param endAngle The end angle of the arc, in degrees. Default 360.
-    * @param anticlockwise The winding order of the start and end angles. Default false.
-    * @param fillColor The color the arc will be filled with, i.e. 0xff0000 for red.
-    * @param fillAlpha The alpha the arc will be filled with. You can also set the alpha of the overall Shape using its `alpha` property.
-    */
-  def this(
-    scene: Scene,
-    x: js.UndefOr[Double],
-    y: js.UndefOr[Double],
-    radius: js.UndefOr[Double],
-    startAngle: js.UndefOr[integer],
-    endAngle: js.UndefOr[integer],
-    anticlockwise: js.UndefOr[Boolean],
-    fillColor: js.UndefOr[Double],
-    fillAlpha: js.UndefOr[Double]
-  ) = this()
+trait Arc extends Shape {
   /**
     * The winding order of the start and end angles.
     */

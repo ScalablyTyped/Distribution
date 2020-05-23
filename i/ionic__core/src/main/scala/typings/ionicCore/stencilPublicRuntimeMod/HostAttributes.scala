@@ -19,7 +19,7 @@ trait HostAttributes
 object HostAttributes {
   @scala.inline
   def apply(
-    StringDictionary: /* prop */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     `class`: String | StringDictionary[Boolean] = null,
     ref: /* el */ HTMLElement | Null => Unit = null,
     style: StringDictionary[js.UndefOr[String]] = null

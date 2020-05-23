@@ -17,18 +17,18 @@ object ValidateError {
   @scala.inline
   def apply(
     columnName: String = null,
-    columnNumber: Int | Double = null,
-    lineNumber: Int | Double = null,
+    columnNumber: js.UndefOr[Double] = js.undefined,
+    lineNumber: js.UndefOr[Double] = js.undefined,
     message: String = null,
-    messageCode: Int | Double = null,
+    messageCode: js.UndefOr[Double] = js.undefined,
     severity: String = null
   ): ValidateError = {
     val __obj = js.Dynamic.literal()
     if (columnName != null) __obj.updateDynamic("columnName")(columnName.asInstanceOf[js.Any])
-    if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])
-    if (lineNumber != null) __obj.updateDynamic("lineNumber")(lineNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnNumber)) __obj.updateDynamic("columnNumber")(columnNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineNumber)) __obj.updateDynamic("lineNumber")(lineNumber.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (messageCode != null) __obj.updateDynamic("messageCode")(messageCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(messageCode)) __obj.updateDynamic("messageCode")(messageCode.get.asInstanceOf[js.Any])
     if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidateError]
   }

@@ -2,8 +2,6 @@ package typings.dva
 
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
-import typings.dva.dvaStrings.`@@routerSlashCALL_HISTORY_METHOD`
-import typings.dva.dvaStrings.`@@routerSlashLOCATION_CHANGE`
 import typings.dva.dvaStrings.history
 import typings.dva.dvaStrings.location
 import typings.dva.dvaStrings.staticContext
@@ -34,7 +32,6 @@ import typings.reactRouterDom.mod.BrowserRouterProps
 import typings.reactRouterDom.mod.HashRouterProps
 import typings.reactRouterDom.mod.LinkProps
 import typings.reactRouterDom.mod.NavLinkProps
-import typings.reactRouterRedux.AnonRouter
 import typings.reactRouterRedux.mod.ConnectedRouterProps
 import typings.reactRouterRedux.mod.RouterAction
 import typings.reactRouterRedux.mod.RouterState
@@ -119,9 +116,7 @@ object routerMod extends js.Object {
   def useLocation[S](): Location[S] = js.native
   def useParams[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.useParams with TopLevel[js.Any] */](): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ p in keyof Params ]: keyof Params[p] extends undefined? string | undefined : string}
-    */ typings.dva.dvaStrings.useParams with TopLevel[js.Any] = js.native
+    */ typings.dva.dvaStrings.useParams with TopLevel[js.Any] */](): Params = js.native
   def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
     */ typings.dva.dvaStrings.useRouteMatch with TopLevel[js.Any] */](): `match`[Params] = js.native
@@ -135,7 +130,10 @@ object routerMod extends js.Object {
   {[ K in keyof Params ]:? string}
     */ typings.dva.dvaStrings.useRouteMatch with TopLevel[js.Any] */](path: RouteProps): `match`[Params] | Null = js.native
   def withRouter[P /* <: RouteComponentProps[_, StaticContext, LocationState] */, C /* <: ComponentType[P] */](component: C with ComponentType[P]): (ComponentClass[
-    (Omit[P, history | location | typings.dva.dvaStrings.`match` | staticContext]) with WithRouterProps[C], 
+    (Omit[
+      P, 
+      /* keyof react-router.react-router.RouteComponentProps<any, react-router.react-router.StaticContext, history.history.LocationState> */ history | location | typings.dva.dvaStrings.`match` | staticContext
+    ]) with WithRouterProps[C], 
     ComponentState
   ]) with WithRouterStatics[C] = js.native
   @js.native
@@ -144,10 +142,10 @@ object routerMod extends js.Object {
     class ConnectedRouter[State] ()
       extends Component[ConnectedRouterProps[State], js.Object, js.Any]
     
-    val CALL_HISTORY_METHOD: `@@routerSlashCALL_HISTORY_METHOD` = js.native
-    val LOCATION_CHANGE: `@@routerSlashLOCATION_CHANGE` = js.native
+    val CALL_HISTORY_METHOD: /* "@@router/CALL_HISTORY_METHOD" */ String = js.native
+    val LOCATION_CHANGE: /* "@@router/LOCATION_CHANGE" */ String = js.native
     val routerReducer: Reducer[RouterState, AnyAction] = js.native
-    def createMatchSelector(path: String): js.Function1[/* state */ AnonRouter, `match`[js.Object] | Null] = js.native
+    def createMatchSelector(path: String): js.Function1[/* state */ typings.reactRouterRedux.anon.Router, `match`[js.Object] | Null] = js.native
     def go(n: Double): RouterAction = js.native
     def goBack(): RouterAction = js.native
     def goForward(): RouterAction = js.native

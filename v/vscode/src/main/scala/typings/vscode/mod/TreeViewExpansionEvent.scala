@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait TreeViewExpansionEvent[T] extends js.Object {
   /**
-  		 * Element that is expanded or collapsed.
-  		 */
+    * Element that is expanded or collapsed.
+    */
   val element: T
 }
 

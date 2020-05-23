@@ -55,7 +55,7 @@ trait CreateReplicationGroupMessage extends js.Object {
     */
   var KmsKeyId: js.UndefOr[String] = js.native
   /**
-    * A list of node group (shard) configuration options. Each node group (shard) configuration has the following members: PrimaryAvailabilityZone, ReplicaAvailabilityZones, ReplicaCount, and Slots. If you're creating a Redis (cluster mode disabled) or a Redis (cluster mode enabled) replication group, you can use this parameter to individually configure each node group (shard), or you can omit this parameter. However, when seeding a Redis (cluster mode enabled) cluster from a S3 rdb file, you must configure each node group (shard) using this parameter because you must specify the slots for each node group.
+    * A list of node group (shard) configuration options. Each node group (shard) configuration has the following members: PrimaryAvailabilityZone, ReplicaAvailabilityZones, ReplicaCount, and Slots. If you're creating a Redis (cluster mode disabled) or a Redis (cluster mode enabled) replication group, you can use this parameter to individually configure each node group (shard), or you can omit this parameter. However, it is required when seeding a Redis (cluster mode enabled) cluster from a S3 rdb file. You must configure each node group (shard) using this parameter because you must specify the slots for each node group.
     */
   var NodeGroupConfiguration: js.UndefOr[NodeGroupConfigurationList] = js.native
   /**
@@ -133,10 +133,10 @@ object CreateReplicationGroupMessage {
   def apply(
     ReplicationGroupDescription: String,
     ReplicationGroupId: String,
-    AtRestEncryptionEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    AtRestEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined,
     AuthToken: String = null,
-    AutoMinorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
-    AutomaticFailoverEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined,
+    AutomaticFailoverEnabled: js.UndefOr[BooleanOptional] = js.undefined,
     CacheNodeType: String = null,
     CacheParameterGroupName: String = null,
     CacheSecurityGroupNames: CacheSecurityGroupNameList = null,
@@ -147,26 +147,26 @@ object CreateReplicationGroupMessage {
     KmsKeyId: String = null,
     NodeGroupConfiguration: NodeGroupConfigurationList = null,
     NotificationTopicArn: String = null,
-    NumCacheClusters: Int | scala.Double = null,
-    NumNodeGroups: Int | scala.Double = null,
-    Port: Int | scala.Double = null,
+    NumCacheClusters: js.UndefOr[IntegerOptional] = js.undefined,
+    NumNodeGroups: js.UndefOr[IntegerOptional] = js.undefined,
+    Port: js.UndefOr[IntegerOptional] = js.undefined,
     PreferredCacheClusterAZs: AvailabilityZonesList = null,
     PreferredMaintenanceWindow: String = null,
     PrimaryClusterId: String = null,
-    ReplicasPerNodeGroup: Int | scala.Double = null,
+    ReplicasPerNodeGroup: js.UndefOr[IntegerOptional] = js.undefined,
     SecurityGroupIds: SecurityGroupIdsList = null,
     SnapshotArns: SnapshotArnsList = null,
     SnapshotName: String = null,
-    SnapshotRetentionLimit: Int | scala.Double = null,
+    SnapshotRetentionLimit: js.UndefOr[IntegerOptional] = js.undefined,
     SnapshotWindow: String = null,
     Tags: TagList = null,
-    TransitEncryptionEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    TransitEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined
   ): CreateReplicationGroupMessage = {
     val __obj = js.Dynamic.literal(ReplicationGroupDescription = ReplicationGroupDescription.asInstanceOf[js.Any], ReplicationGroupId = ReplicationGroupId.asInstanceOf[js.Any])
-    if (!js.isUndefined(AtRestEncryptionEnabled)) __obj.updateDynamic("AtRestEncryptionEnabled")(AtRestEncryptionEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(AtRestEncryptionEnabled)) __obj.updateDynamic("AtRestEncryptionEnabled")(AtRestEncryptionEnabled.get.asInstanceOf[js.Any])
     if (AuthToken != null) __obj.updateDynamic("AuthToken")(AuthToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutomaticFailoverEnabled)) __obj.updateDynamic("AutomaticFailoverEnabled")(AutomaticFailoverEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutomaticFailoverEnabled)) __obj.updateDynamic("AutomaticFailoverEnabled")(AutomaticFailoverEnabled.get.asInstanceOf[js.Any])
     if (CacheNodeType != null) __obj.updateDynamic("CacheNodeType")(CacheNodeType.asInstanceOf[js.Any])
     if (CacheParameterGroupName != null) __obj.updateDynamic("CacheParameterGroupName")(CacheParameterGroupName.asInstanceOf[js.Any])
     if (CacheSecurityGroupNames != null) __obj.updateDynamic("CacheSecurityGroupNames")(CacheSecurityGroupNames.asInstanceOf[js.Any])
@@ -177,20 +177,20 @@ object CreateReplicationGroupMessage {
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
     if (NodeGroupConfiguration != null) __obj.updateDynamic("NodeGroupConfiguration")(NodeGroupConfiguration.asInstanceOf[js.Any])
     if (NotificationTopicArn != null) __obj.updateDynamic("NotificationTopicArn")(NotificationTopicArn.asInstanceOf[js.Any])
-    if (NumCacheClusters != null) __obj.updateDynamic("NumCacheClusters")(NumCacheClusters.asInstanceOf[js.Any])
-    if (NumNodeGroups != null) __obj.updateDynamic("NumNodeGroups")(NumNodeGroups.asInstanceOf[js.Any])
-    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumCacheClusters)) __obj.updateDynamic("NumCacheClusters")(NumCacheClusters.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumNodeGroups)) __obj.updateDynamic("NumNodeGroups")(NumNodeGroups.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
     if (PreferredCacheClusterAZs != null) __obj.updateDynamic("PreferredCacheClusterAZs")(PreferredCacheClusterAZs.asInstanceOf[js.Any])
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow.asInstanceOf[js.Any])
     if (PrimaryClusterId != null) __obj.updateDynamic("PrimaryClusterId")(PrimaryClusterId.asInstanceOf[js.Any])
-    if (ReplicasPerNodeGroup != null) __obj.updateDynamic("ReplicasPerNodeGroup")(ReplicasPerNodeGroup.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReplicasPerNodeGroup)) __obj.updateDynamic("ReplicasPerNodeGroup")(ReplicasPerNodeGroup.get.asInstanceOf[js.Any])
     if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds.asInstanceOf[js.Any])
     if (SnapshotArns != null) __obj.updateDynamic("SnapshotArns")(SnapshotArns.asInstanceOf[js.Any])
     if (SnapshotName != null) __obj.updateDynamic("SnapshotName")(SnapshotName.asInstanceOf[js.Any])
-    if (SnapshotRetentionLimit != null) __obj.updateDynamic("SnapshotRetentionLimit")(SnapshotRetentionLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(SnapshotRetentionLimit)) __obj.updateDynamic("SnapshotRetentionLimit")(SnapshotRetentionLimit.get.asInstanceOf[js.Any])
     if (SnapshotWindow != null) __obj.updateDynamic("SnapshotWindow")(SnapshotWindow.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(TransitEncryptionEnabled)) __obj.updateDynamic("TransitEncryptionEnabled")(TransitEncryptionEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(TransitEncryptionEnabled)) __obj.updateDynamic("TransitEncryptionEnabled")(TransitEncryptionEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateReplicationGroupMessage]
   }
 }

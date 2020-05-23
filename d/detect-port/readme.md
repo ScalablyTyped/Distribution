@@ -1,7 +1,7 @@
 
 # Scala.js typings for detect-port
 
-Typings are for version 1.1
+Typings are for version 1.3
 
 ## Library description:
 Node.js implementation of port detector

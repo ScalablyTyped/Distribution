@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,8 +19,4 @@ trait PaymentResponse extends js.Object {
   def complete(result: PaymentComplete): js.Promise[Unit] = js.native
   def toJSON(): js.Any = js.native
 }
-
-@JSGlobal("PaymentResponse")
-@js.native
-object PaymentResponse extends Instantiable0[PaymentResponse]
 

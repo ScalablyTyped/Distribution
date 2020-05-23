@@ -14,16 +14,16 @@ trait DuplicateSheetRequest extends js.Object {
 object DuplicateSheetRequest {
   @scala.inline
   def apply(
-    insertSheetIndex: Int | Double = null,
-    newSheetId: Int | Double = null,
+    insertSheetIndex: js.UndefOr[Double] = js.undefined,
+    newSheetId: js.UndefOr[Double] = js.undefined,
     newSheetName: String = null,
-    sourceSheetId: Int | Double = null
+    sourceSheetId: js.UndefOr[Double] = js.undefined
   ): DuplicateSheetRequest = {
     val __obj = js.Dynamic.literal()
-    if (insertSheetIndex != null) __obj.updateDynamic("insertSheetIndex")(insertSheetIndex.asInstanceOf[js.Any])
-    if (newSheetId != null) __obj.updateDynamic("newSheetId")(newSheetId.asInstanceOf[js.Any])
+    if (!js.isUndefined(insertSheetIndex)) __obj.updateDynamic("insertSheetIndex")(insertSheetIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(newSheetId)) __obj.updateDynamic("newSheetId")(newSheetId.get.asInstanceOf[js.Any])
     if (newSheetName != null) __obj.updateDynamic("newSheetName")(newSheetName.asInstanceOf[js.Any])
-    if (sourceSheetId != null) __obj.updateDynamic("sourceSheetId")(sourceSheetId.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceSheetId)) __obj.updateDynamic("sourceSheetId")(sourceSheetId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DuplicateSheetRequest]
   }
 }

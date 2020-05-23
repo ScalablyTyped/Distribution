@@ -30,27 +30,27 @@ object InfoWindowOptions {
     anchorSkew: js.UndefOr[Boolean] = js.undefined,
     backgroundColor: String = null,
     borderColor: String = null,
-    borderWidth: Int | Double = null,
+    borderWidth: js.UndefOr[Double] = js.undefined,
     disableAnchor: js.UndefOr[Boolean] = js.undefined,
     disableAutoPan: js.UndefOr[Boolean] = js.undefined,
-    maxWidth: Int | Double = null,
+    maxWidth: js.UndefOr[Double] = js.undefined,
     pixelOffset: Point | PointLiteral = null,
     position: Coord | CoordLiteral = null,
-    zIndex: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined
   ): InfoWindowOptions = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     if (anchorColor != null) __obj.updateDynamic("anchorColor")(anchorColor.asInstanceOf[js.Any])
     if (anchorSize != null) __obj.updateDynamic("anchorSize")(anchorSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(anchorSkew)) __obj.updateDynamic("anchorSkew")(anchorSkew.asInstanceOf[js.Any])
+    if (!js.isUndefined(anchorSkew)) __obj.updateDynamic("anchorSkew")(anchorSkew.get.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableAnchor)) __obj.updateDynamic("disableAnchor")(disableAnchor.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableAutoPan)) __obj.updateDynamic("disableAutoPan")(disableAutoPan.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableAnchor)) __obj.updateDynamic("disableAnchor")(disableAnchor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableAutoPan)) __obj.updateDynamic("disableAutoPan")(disableAutoPan.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
     if (pixelOffset != null) __obj.updateDynamic("pixelOffset")(pixelOffset.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InfoWindowOptions]
   }
 }

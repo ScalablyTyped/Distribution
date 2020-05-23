@@ -21,13 +21,13 @@ object IntrospectionField {
     isDeprecated: Boolean,
     name: String,
     `type`: IntrospectionOutputTypeRef,
-    deprecationReason: Maybe[String] = null,
-    description: Maybe[String] = null
+    deprecationReason: js.UndefOr[Null | Maybe[String]] = js.undefined,
+    description: js.UndefOr[Null | Maybe[String]] = js.undefined
   ): IntrospectionField = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], isDeprecated = isDeprecated.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(deprecationReason)) __obj.updateDynamic("deprecationReason")(deprecationReason.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionField]
   }
 }

@@ -1,7 +1,7 @@
 package typings.jupyterlabApplication.labMod.JupyterLab
 
-import typings.jupyterlabApplication.AnonMatches
-import typings.jupyterlabApplication.PartialIPaths
+import typings.jupyterlabApplication.anon.Matches
+import typings.jupyterlabApplication.anon.PartialIPaths
 import typings.jupyterlabApplication.shellMod.LabShell
 import typings.jupyterlabApputils.mod.CommandLinker
 import typings.jupyterlabDocregistry.mod.DocumentRegistry
@@ -26,9 +26,9 @@ trait IOptions extends js.Object {
     * A custom renderer for the context menu.
     */
   var contextMenuRenderer: js.UndefOr[IRenderer] = js.undefined
-  var deferred: js.UndefOr[AnonMatches] = js.undefined
+  var deferred: js.UndefOr[Matches] = js.undefined
   var devMode: js.UndefOr[Boolean] = js.undefined
-  var disabled: js.UndefOr[AnonMatches] = js.undefined
+  var disabled: js.UndefOr[Matches] = js.undefined
   /**
     * The document registry instance used by the application.
     */
@@ -61,9 +61,9 @@ object IOptions {
     shell: LabShell,
     commandLinker: CommandLinker = null,
     contextMenuRenderer: IRenderer = null,
-    deferred: AnonMatches = null,
+    deferred: Matches = null,
     devMode: js.UndefOr[Boolean] = js.undefined,
-    disabled: AnonMatches = null,
+    disabled: Matches = null,
     docRegistry: DocumentRegistry = null,
     filesCached: js.UndefOr[Boolean] = js.undefined,
     mimeExtensions: js.Array[IExtensionModule] = null,
@@ -75,10 +75,10 @@ object IOptions {
     if (commandLinker != null) __obj.updateDynamic("commandLinker")(commandLinker.asInstanceOf[js.Any])
     if (contextMenuRenderer != null) __obj.updateDynamic("contextMenuRenderer")(contextMenuRenderer.asInstanceOf[js.Any])
     if (deferred != null) __obj.updateDynamic("deferred")(deferred.asInstanceOf[js.Any])
-    if (!js.isUndefined(devMode)) __obj.updateDynamic("devMode")(devMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(devMode)) __obj.updateDynamic("devMode")(devMode.get.asInstanceOf[js.Any])
     if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (docRegistry != null) __obj.updateDynamic("docRegistry")(docRegistry.asInstanceOf[js.Any])
-    if (!js.isUndefined(filesCached)) __obj.updateDynamic("filesCached")(filesCached.asInstanceOf[js.Any])
+    if (!js.isUndefined(filesCached)) __obj.updateDynamic("filesCached")(filesCached.get.asInstanceOf[js.Any])
     if (mimeExtensions != null) __obj.updateDynamic("mimeExtensions")(mimeExtensions.asInstanceOf[js.Any])
     if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
     if (restored != null) __obj.updateDynamic("restored")(restored.asInstanceOf[js.Any])

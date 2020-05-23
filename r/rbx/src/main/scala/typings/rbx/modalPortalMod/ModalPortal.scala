@@ -1,6 +1,6 @@
 package typings.rbx.modalPortalMod
 
-import typings.rbx.AnonCloseOnBlur
+import typings.rbx.anon.CloseOnBlur
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +22,7 @@ class ModalPortal ()
 @JSImport("rbx/components/modal/modal-portal", "ModalPortal")
 @js.native
 object ModalPortal extends js.Object {
-  var defaultProps: AnonCloseOnBlur = js.native
+  var defaultProps: CloseOnBlur = js.native
   var displayName: String = js.native
 }
 

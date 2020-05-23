@@ -1,13 +1,13 @@
 package typings.easyXapi.mod
 
-import typings.easyXapi.AnonLevel
+import typings.easyXapi.anon.Level
 import typings.express.mod.Application_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Config extends js.Object {
-  var log: AnonLevel
+  var log: Level
   var name: String
   var port: Double
   var root: String
@@ -18,7 +18,7 @@ trait Config extends js.Object {
 object Config {
   @scala.inline
   def apply(
-    log: AnonLevel,
+    log: Level,
     mount: Application_ => Unit,
     name: String,
     port: Double,

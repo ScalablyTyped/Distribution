@@ -88,15 +88,15 @@ object IRefund {
     status: pending | succeeded | failed | canceled,
     description: String = null,
     failure_reason: lost_or_stolen_card | expired_or_canceled_card | unknown_ = null,
-    source_transfer_reversal: String = null,
-    transfer_reversal: String = null
+    source_transfer_reversal: js.UndefOr[Null | String] = js.undefined,
+    transfer_reversal: js.UndefOr[Null | String] = js.undefined
   ): IRefund = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], balance_transaction = balance_transaction.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], receipt_number = receipt_number.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (failure_reason != null) __obj.updateDynamic("failure_reason")(failure_reason.asInstanceOf[js.Any])
-    if (source_transfer_reversal != null) __obj.updateDynamic("source_transfer_reversal")(source_transfer_reversal.asInstanceOf[js.Any])
-    if (transfer_reversal != null) __obj.updateDynamic("transfer_reversal")(transfer_reversal.asInstanceOf[js.Any])
+    if (!js.isUndefined(source_transfer_reversal)) __obj.updateDynamic("source_transfer_reversal")(source_transfer_reversal.asInstanceOf[js.Any])
+    if (!js.isUndefined(transfer_reversal)) __obj.updateDynamic("transfer_reversal")(transfer_reversal.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRefund]
   }
 }

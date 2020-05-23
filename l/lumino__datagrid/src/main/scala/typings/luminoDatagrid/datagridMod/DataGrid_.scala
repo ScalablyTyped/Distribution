@@ -1,7 +1,7 @@
 package typings.luminoDatagrid.datagridMod
 
-import typings.luminoDatagrid.AnonLx
-import typings.luminoDatagrid.AnonVx
+import typings.luminoDatagrid.anon.Lx
+import typings.luminoDatagrid.anon.Vx
 import typings.luminoDatagrid.celleditorcontrollerMod.ICellEditorController
 import typings.luminoDatagrid.datagridMod.DataGrid.CopyConfig
 import typings.luminoDatagrid.datagridMod.DataGrid.DefaultSizes_
@@ -26,7 +26,7 @@ import typings.luminoMessaging.mod.IMessageHandler
 import typings.luminoMessaging.mod.Message
 import typings.luminoWidgets.mod.Widget
 import typings.luminoWidgets.mod.Widget.ResizeMessage
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -575,7 +575,7 @@ class DataGrid_ () extends Widget {
     * called in response to events on the data grid's DOM node. It
     * should not be called directly by user code.
     */
-  def handleEvent(event: Event_): Unit = js.native
+  def handleEvent(event: Event): Unit = js.native
   /**
     * Hit test the viewport for the given client position.
     *
@@ -599,7 +599,7 @@ class DataGrid_ () extends Widget {
     *
     * @returns The local viewport coordinates for the position.
     */
-  def mapToLocal(clientX: Double, clientY: Double): AnonLx = js.native
+  def mapToLocal(clientX: Double, clientY: Double): Lx = js.native
   /**
     * Map a client position to virtual grid coordinates.
     *
@@ -609,7 +609,7 @@ class DataGrid_ () extends Widget {
     *
     * @returns The virtual grid coordinates for the position.
     */
-  def mapToVirtual(clientX: Double, clientY: Double): AnonVx = js.native
+  def mapToVirtual(clientX: Double, clientY: Double): Vx = js.native
   /**
     * Intercept a message sent to a message handler.
     *

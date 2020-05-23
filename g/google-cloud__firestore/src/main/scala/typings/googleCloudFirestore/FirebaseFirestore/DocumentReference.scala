@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("FirebaseFirestore.DocumentReference")
 @js.native
-class DocumentReference[T] protected () extends js.Object {
+trait DocumentReference[T] extends js.Object {
   /**
     * The `Firestore` for the Firestore database (useful for performing
     * transactions, etc.).

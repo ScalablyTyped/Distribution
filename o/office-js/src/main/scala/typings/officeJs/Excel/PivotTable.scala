@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.PivotTableData
 import typings.officeJs.Excel.Interfaces.PivotTableLoadOptions
 import typings.officeJs.Excel.Interfaces.PivotTableUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,9 +17,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.3]
   */
-@JSGlobal("Excel.PivotTable")
 @js.native
-class PivotTable () extends ClientObject {
+trait PivotTable extends ClientObject {
   /**
     *
     * The Column Pivot Hierarchies of the PivotTable.
@@ -39,7 +38,7 @@ class PivotTable () extends ClientObject {
   val dataHierarchies: DataPivotHierarchyCollection = js.native
   /**
     *
-    * Specifies whether the PivotTable allows values in the data body to be edited by the user.
+    * Specifies if the PivotTable allows values in the data body to be edited by the user.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -60,7 +59,7 @@ class PivotTable () extends ClientObject {
   val hierarchies: PivotHierarchyCollection = js.native
   /**
     *
-    * Id of the PivotTable. Read-only.
+    * Id of the PivotTable.
     *
     * [Api set: ExcelApi 1.5]
     */
@@ -88,7 +87,7 @@ class PivotTable () extends ClientObject {
   val rowHierarchies: RowColumnPivotHierarchyCollection = js.native
   /**
     *
-    * Specifies whether the PivotTable uses custom lists when sorting.
+    * Specifies if the PivotTable uses custom lists when sorting.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -113,7 +112,7 @@ class PivotTable () extends ClientObject {
     */
   def load(): PivotTable = js.native
   def load(options: PivotTableLoadOptions): PivotTable = js.native
-  def load(propertyNamesAndPaths: AnonExpand): PivotTable = js.native
+  def load(propertyNamesAndPaths: Expand): PivotTable = js.native
   def load(propertyNames: String): PivotTable = js.native
   def load(propertyNames: js.Array[String]): PivotTable = js.native
   /**

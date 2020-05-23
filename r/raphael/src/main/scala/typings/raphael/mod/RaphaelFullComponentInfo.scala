@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.raphael.mod.RaphaelHslComponentInfo because var conflicts: h, s. Inlined l
 - typings.raphael.mod.RaphaelHsbComponentInfo because var conflicts: b. Inlined h, s */ trait RaphaelFullComponentInfo extends RaphaelRgbComponentInfo {
   /**

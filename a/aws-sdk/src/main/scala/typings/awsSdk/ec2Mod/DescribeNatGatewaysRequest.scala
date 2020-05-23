@@ -31,16 +31,16 @@ trait DescribeNatGatewaysRequest extends js.Object {
 object DescribeNatGatewaysRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     Filter: FilterList = null,
-    MaxResults: Int | scala.Double = null,
+    MaxResults: js.UndefOr[DescribeNatGatewaysMaxResults] = js.undefined,
     NatGatewayIds: NatGatewayIdStringList = null,
     NextToken: String = null
   ): DescribeNatGatewaysRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NatGatewayIds != null) __obj.updateDynamic("NatGatewayIds")(NatGatewayIds.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeNatGatewaysRequest]

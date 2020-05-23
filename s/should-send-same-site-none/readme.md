@@ -1,7 +1,7 @@
 
 # Scala.js typings for should-send-same-site-none
 
-Typings are for version 2.0.4
+Typings are for version 2.0.5
 
 ## Library description:
 A simple utility to detect incompatible user agents for `SameSite=None` cookie attribute

@@ -48,7 +48,7 @@ object WorkerPoolOptions {
   def apply(
     forkArgs: js.Array[String] = null,
     forkOpts: ForkOptions = null,
-    maxWorkers: Int | Double = null,
+    maxWorkers: js.UndefOr[Double] = js.undefined,
     minWorkers: Double | max = null,
     nodeWorker: process | thread | auto = null,
     workerType: auto | web | process | thread = null
@@ -56,7 +56,7 @@ object WorkerPoolOptions {
     val __obj = js.Dynamic.literal()
     if (forkArgs != null) __obj.updateDynamic("forkArgs")(forkArgs.asInstanceOf[js.Any])
     if (forkOpts != null) __obj.updateDynamic("forkOpts")(forkOpts.asInstanceOf[js.Any])
-    if (maxWorkers != null) __obj.updateDynamic("maxWorkers")(maxWorkers.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWorkers)) __obj.updateDynamic("maxWorkers")(maxWorkers.get.asInstanceOf[js.Any])
     if (minWorkers != null) __obj.updateDynamic("minWorkers")(minWorkers.asInstanceOf[js.Any])
     if (nodeWorker != null) __obj.updateDynamic("nodeWorker")(nodeWorker.asInstanceOf[js.Any])
     if (workerType != null) __obj.updateDynamic("workerType")(workerType.asInstanceOf[js.Any])

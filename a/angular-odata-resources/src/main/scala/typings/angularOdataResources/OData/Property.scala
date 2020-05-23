@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("OData.Property")
 @js.native
-class Property protected () extends IExecutable {
-  def this(value: String) = this()
+trait Property extends IExecutable {
   var value: js.Any = js.native
 }
 

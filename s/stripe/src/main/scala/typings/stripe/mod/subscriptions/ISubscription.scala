@@ -1,6 +1,6 @@
 package typings.stripe.mod.subscriptions
 
-import typings.stripe.AnonAmountgte
+import typings.stripe.anon.Amountgte
 import typings.stripe.mod.IList
 import typings.stripe.mod.IMetadata
 import typings.stripe.mod.IResourceObject
@@ -39,7 +39,7 @@ trait ISubscription extends IResourceObject {
   /**
     * Define thresholds at which an invoice will be sent, and the subscription advanced to a new billing period.
     */
-  var billing_thresholds: Null | AnonAmountgte
+  var billing_thresholds: Null | Amountgte
   /**
     * A date in the future at which the subscription will automatically get canceled.
     */
@@ -211,39 +211,26 @@ object ISubscription {
     start: Double,
     start_date: Double,
     status: SubscriptionStatus,
-    application_fee_percent: Int | Double = null,
-    billing_thresholds: AnonAmountgte = null,
-    cancel_at: Int | Double = null,
-    canceled_at: Int | Double = null,
-    days_until_due: Int | Double = null,
+    application_fee_percent: Double = null.asInstanceOf[Double],
+    billing_thresholds: Amountgte = null,
+    cancel_at: Double = null.asInstanceOf[Double],
+    canceled_at: Double = null.asInstanceOf[Double],
+    days_until_due: Double = null.asInstanceOf[Double],
     default_payment_method: String | IPaymentMethod = null,
     default_source: String = null,
     discount: IDiscount = null,
-    ended_at: Int | Double = null,
+    ended_at: Double = null.asInstanceOf[Double],
     latest_invoice: IInvoice | String = null,
-    plan: IPlan = null,
-    quantity: Int | Double = null,
-    tax_percent: Int | Double = null,
-    trial_end: Int | Double = null,
-    trial_start: Int | Double = null
+    plan: js.UndefOr[Null | IPlan] = js.undefined,
+    quantity: js.UndefOr[Double] = js.undefined,
+    tax_percent: Double = null.asInstanceOf[Double],
+    trial_end: Double = null.asInstanceOf[Double],
+    trial_start: Double = null.asInstanceOf[Double]
   ): ISubscription = {
-    val __obj = js.Dynamic.literal(billing = billing.asInstanceOf[js.Any], billing_cycle_anchor = billing_cycle_anchor.asInstanceOf[js.Any], cancel_at_period_end = cancel_at_period_end.asInstanceOf[js.Any], collection_method = collection_method.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], current_period_end = current_period_end.asInstanceOf[js.Any], current_period_start = current_period_start.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], default_tax_rates = default_tax_rates.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], start_date = start_date.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(billing = billing.asInstanceOf[js.Any], billing_cycle_anchor = billing_cycle_anchor.asInstanceOf[js.Any], cancel_at_period_end = cancel_at_period_end.asInstanceOf[js.Any], collection_method = collection_method.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], current_period_end = current_period_end.asInstanceOf[js.Any], current_period_start = current_period_start.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], default_tax_rates = default_tax_rates.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], start_date = start_date.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], application_fee_percent = application_fee_percent.asInstanceOf[js.Any], billing_thresholds = billing_thresholds.asInstanceOf[js.Any], cancel_at = cancel_at.asInstanceOf[js.Any], canceled_at = canceled_at.asInstanceOf[js.Any], days_until_due = days_until_due.asInstanceOf[js.Any], default_payment_method = default_payment_method.asInstanceOf[js.Any], default_source = default_source.asInstanceOf[js.Any], discount = discount.asInstanceOf[js.Any], ended_at = ended_at.asInstanceOf[js.Any], latest_invoice = latest_invoice.asInstanceOf[js.Any], tax_percent = tax_percent.asInstanceOf[js.Any], trial_end = trial_end.asInstanceOf[js.Any], trial_start = trial_start.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (application_fee_percent != null) __obj.updateDynamic("application_fee_percent")(application_fee_percent.asInstanceOf[js.Any])
-    if (billing_thresholds != null) __obj.updateDynamic("billing_thresholds")(billing_thresholds.asInstanceOf[js.Any])
-    if (cancel_at != null) __obj.updateDynamic("cancel_at")(cancel_at.asInstanceOf[js.Any])
-    if (canceled_at != null) __obj.updateDynamic("canceled_at")(canceled_at.asInstanceOf[js.Any])
-    if (days_until_due != null) __obj.updateDynamic("days_until_due")(days_until_due.asInstanceOf[js.Any])
-    if (default_payment_method != null) __obj.updateDynamic("default_payment_method")(default_payment_method.asInstanceOf[js.Any])
-    if (default_source != null) __obj.updateDynamic("default_source")(default_source.asInstanceOf[js.Any])
-    if (discount != null) __obj.updateDynamic("discount")(discount.asInstanceOf[js.Any])
-    if (ended_at != null) __obj.updateDynamic("ended_at")(ended_at.asInstanceOf[js.Any])
-    if (latest_invoice != null) __obj.updateDynamic("latest_invoice")(latest_invoice.asInstanceOf[js.Any])
-    if (plan != null) __obj.updateDynamic("plan")(plan.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
-    if (tax_percent != null) __obj.updateDynamic("tax_percent")(tax_percent.asInstanceOf[js.Any])
-    if (trial_end != null) __obj.updateDynamic("trial_end")(trial_end.asInstanceOf[js.Any])
-    if (trial_start != null) __obj.updateDynamic("trial_start")(trial_start.asInstanceOf[js.Any])
+    if (!js.isUndefined(plan)) __obj.updateDynamic("plan")(plan.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISubscription]
   }
 }

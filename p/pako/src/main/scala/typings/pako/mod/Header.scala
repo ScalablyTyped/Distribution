@@ -21,18 +21,18 @@ object Header {
     extra: js.Array[Double] = null,
     hcrc: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
-    os: Int | Double = null,
+    os: js.UndefOr[Double] = js.undefined,
     text: js.UndefOr[Boolean] = js.undefined,
-    time: Int | Double = null
+    time: js.UndefOr[Double] = js.undefined
   ): Header = {
     val __obj = js.Dynamic.literal()
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
-    if (!js.isUndefined(hcrc)) __obj.updateDynamic("hcrc")(hcrc.asInstanceOf[js.Any])
+    if (!js.isUndefined(hcrc)) __obj.updateDynamic("hcrc")(hcrc.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (os != null) __obj.updateDynamic("os")(os.asInstanceOf[js.Any])
-    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (!js.isUndefined(os)) __obj.updateDynamic("os")(os.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(time)) __obj.updateDynamic("time")(time.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Header]
   }
 }

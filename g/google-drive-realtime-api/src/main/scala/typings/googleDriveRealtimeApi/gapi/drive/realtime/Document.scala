@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("gapi.drive.realtime.Document")
 @js.native
-class Document () extends js.Object {
+trait Document extends js.Object {
   // Whether the document is closed. Read-only; call close() to close the document.
   var isClosed: Boolean = js.native
   // Whether the document is stored in Google Drive. Read-only.

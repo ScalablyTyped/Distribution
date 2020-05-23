@@ -41,19 +41,19 @@ object DeviceEnrollmentWindowsHelloForBusinessConfiguration {
     enhancedBiometricsState: Enablement = null,
     id: String = null,
     lastModifiedDateTime: String = null,
-    pinExpirationInDays: Int | Double = null,
+    pinExpirationInDays: js.UndefOr[Double] = js.undefined,
     pinLowercaseCharactersUsage: WindowsHelloForBusinessPinUsage = null,
-    pinMaximumLength: Int | Double = null,
-    pinMinimumLength: Int | Double = null,
-    pinPreviousBlockCount: Int | Double = null,
+    pinMaximumLength: js.UndefOr[Double] = js.undefined,
+    pinMinimumLength: js.UndefOr[Double] = js.undefined,
+    pinPreviousBlockCount: js.UndefOr[Double] = js.undefined,
     pinSpecialCharactersUsage: WindowsHelloForBusinessPinUsage = null,
     pinUppercaseCharactersUsage: WindowsHelloForBusinessPinUsage = null,
-    priority: Int | Double = null,
+    priority: js.UndefOr[Double] = js.undefined,
     remotePassportEnabled: js.UndefOr[Boolean] = js.undefined,
     securityDeviceRequired: js.UndefOr[Boolean] = js.undefined,
     state: Enablement = null,
     unlockWithBiometricsEnabled: js.UndefOr[Boolean] = js.undefined,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): DeviceEnrollmentWindowsHelloForBusinessConfiguration = {
     val __obj = js.Dynamic.literal()
     if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
@@ -63,19 +63,19 @@ object DeviceEnrollmentWindowsHelloForBusinessConfiguration {
     if (enhancedBiometricsState != null) __obj.updateDynamic("enhancedBiometricsState")(enhancedBiometricsState.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (pinExpirationInDays != null) __obj.updateDynamic("pinExpirationInDays")(pinExpirationInDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(pinExpirationInDays)) __obj.updateDynamic("pinExpirationInDays")(pinExpirationInDays.get.asInstanceOf[js.Any])
     if (pinLowercaseCharactersUsage != null) __obj.updateDynamic("pinLowercaseCharactersUsage")(pinLowercaseCharactersUsage.asInstanceOf[js.Any])
-    if (pinMaximumLength != null) __obj.updateDynamic("pinMaximumLength")(pinMaximumLength.asInstanceOf[js.Any])
-    if (pinMinimumLength != null) __obj.updateDynamic("pinMinimumLength")(pinMinimumLength.asInstanceOf[js.Any])
-    if (pinPreviousBlockCount != null) __obj.updateDynamic("pinPreviousBlockCount")(pinPreviousBlockCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(pinMaximumLength)) __obj.updateDynamic("pinMaximumLength")(pinMaximumLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pinMinimumLength)) __obj.updateDynamic("pinMinimumLength")(pinMinimumLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pinPreviousBlockCount)) __obj.updateDynamic("pinPreviousBlockCount")(pinPreviousBlockCount.get.asInstanceOf[js.Any])
     if (pinSpecialCharactersUsage != null) __obj.updateDynamic("pinSpecialCharactersUsage")(pinSpecialCharactersUsage.asInstanceOf[js.Any])
     if (pinUppercaseCharactersUsage != null) __obj.updateDynamic("pinUppercaseCharactersUsage")(pinUppercaseCharactersUsage.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (!js.isUndefined(remotePassportEnabled)) __obj.updateDynamic("remotePassportEnabled")(remotePassportEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(securityDeviceRequired)) __obj.updateDynamic("securityDeviceRequired")(securityDeviceRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(remotePassportEnabled)) __obj.updateDynamic("remotePassportEnabled")(remotePassportEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(securityDeviceRequired)) __obj.updateDynamic("securityDeviceRequired")(securityDeviceRequired.get.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (!js.isUndefined(unlockWithBiometricsEnabled)) __obj.updateDynamic("unlockWithBiometricsEnabled")(unlockWithBiometricsEnabled.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(unlockWithBiometricsEnabled)) __obj.updateDynamic("unlockWithBiometricsEnabled")(unlockWithBiometricsEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceEnrollmentWindowsHelloForBusinessConfiguration]
   }
 }

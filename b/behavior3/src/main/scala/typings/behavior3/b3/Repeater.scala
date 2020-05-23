@@ -1,6 +1,5 @@
 package typings.behavior3.b3
 
-import typings.behavior3.AnonChildMaxLoop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,16 +10,25 @@ import scala.scalajs.js.annotation._
   * can be defined.
   *
   */
-@JSGlobal("b3.Repeater")
-@js.native
-/**
-  * Creates an instance of MaxTime.
-  *
-  * - **maxLoop** (*Integer*) Maximum number of repetitions. Default to -1 (infinite).
-  * - **child** (*BaseNode*) The child node.
-  *
-  */
-class Repeater () extends Decorator {
-  def this(hasMaxLoopChild: AnonChildMaxLoop) = this()
+trait Repeater extends BaseNode
+
+object Repeater {
+  @scala.inline
+  def apply(
+    _close: Tick => Unit,
+    _enter: Tick => Unit,
+    _execute: Tick => Double,
+    _exit: Tick => Unit,
+    _open: Tick => Unit,
+    _tick: Tick => Double,
+    close: Tick => Unit,
+    enter: Tick => Unit,
+    exit: Tick => Unit,
+    open: Tick => Unit,
+    tick: Tick => Unit
+  ): Repeater = {
+    val __obj = js.Dynamic.literal(_close = js.Any.fromFunction1(_close), _enter = js.Any.fromFunction1(_enter), _execute = js.Any.fromFunction1(_execute), _exit = js.Any.fromFunction1(_exit), _open = js.Any.fromFunction1(_open), _tick = js.Any.fromFunction1(_tick), close = js.Any.fromFunction1(close), enter = js.Any.fromFunction1(enter), exit = js.Any.fromFunction1(exit), open = js.Any.fromFunction1(open), tick = js.Any.fromFunction1(tick))
+    __obj.asInstanceOf[Repeater]
+  }
 }
 

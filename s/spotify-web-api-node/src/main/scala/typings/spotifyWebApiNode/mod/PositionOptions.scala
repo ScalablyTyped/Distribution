@@ -10,9 +10,9 @@ trait PositionOptions extends js.Object {
 
 object PositionOptions {
   @scala.inline
-  def apply(position: Int | Double = null): PositionOptions = {
+  def apply(position: js.UndefOr[Double] = js.undefined): PositionOptions = {
     val __obj = js.Dynamic.literal()
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PositionOptions]
   }
 }

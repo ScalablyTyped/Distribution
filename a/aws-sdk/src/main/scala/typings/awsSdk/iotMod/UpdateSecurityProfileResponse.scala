@@ -60,7 +60,7 @@ object UpdateSecurityProfileResponse {
     securityProfileArn: SecurityProfileArn = null,
     securityProfileDescription: SecurityProfileDescription = null,
     securityProfileName: SecurityProfileName = null,
-    version: Int | Double = null
+    version: js.UndefOr[Version] = js.undefined
   ): UpdateSecurityProfileResponse = {
     val __obj = js.Dynamic.literal()
     if (additionalMetricsToRetain != null) __obj.updateDynamic("additionalMetricsToRetain")(additionalMetricsToRetain.asInstanceOf[js.Any])
@@ -72,7 +72,7 @@ object UpdateSecurityProfileResponse {
     if (securityProfileArn != null) __obj.updateDynamic("securityProfileArn")(securityProfileArn.asInstanceOf[js.Any])
     if (securityProfileDescription != null) __obj.updateDynamic("securityProfileDescription")(securityProfileDescription.asInstanceOf[js.Any])
     if (securityProfileName != null) __obj.updateDynamic("securityProfileName")(securityProfileName.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSecurityProfileResponse]
   }
 }

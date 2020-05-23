@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BackupRule extends js.Object {
   /**
-    * A value in minutes after a backup job is successfully started before it must be completed or it is canceled by AWS Backup. This value is optional.
+    * A value in minutes after a backup job is successfully started before it must be completed or it will be canceled by AWS Backup. This value is optional.
     */
   var CompletionWindowMinutes: js.UndefOr[WindowMinutes] = js.native
   /**
@@ -35,7 +35,7 @@ trait BackupRule extends js.Object {
     */
   var ScheduleExpression: js.UndefOr[CronExpression] = js.native
   /**
-    * An optional value that specifies a period of time in minutes after a backup is scheduled before a job is canceled if it doesn't start successfully.
+    * A value in minutes after a backup is scheduled before a job will be canceled if it doesn't start successfully. This value is optional.
     */
   var StartWindowMinutes: js.UndefOr[WindowMinutes] = js.native
   /**
@@ -49,22 +49,22 @@ object BackupRule {
   def apply(
     RuleName: BackupRuleName,
     TargetBackupVaultName: BackupVaultName,
-    CompletionWindowMinutes: Int | Double = null,
+    CompletionWindowMinutes: js.UndefOr[WindowMinutes] = js.undefined,
     CopyActions: CopyActions = null,
     Lifecycle: Lifecycle = null,
     RecoveryPointTags: Tags = null,
     RuleId: String = null,
     ScheduleExpression: CronExpression = null,
-    StartWindowMinutes: Int | Double = null
+    StartWindowMinutes: js.UndefOr[WindowMinutes] = js.undefined
   ): BackupRule = {
     val __obj = js.Dynamic.literal(RuleName = RuleName.asInstanceOf[js.Any], TargetBackupVaultName = TargetBackupVaultName.asInstanceOf[js.Any])
-    if (CompletionWindowMinutes != null) __obj.updateDynamic("CompletionWindowMinutes")(CompletionWindowMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(CompletionWindowMinutes)) __obj.updateDynamic("CompletionWindowMinutes")(CompletionWindowMinutes.get.asInstanceOf[js.Any])
     if (CopyActions != null) __obj.updateDynamic("CopyActions")(CopyActions.asInstanceOf[js.Any])
     if (Lifecycle != null) __obj.updateDynamic("Lifecycle")(Lifecycle.asInstanceOf[js.Any])
     if (RecoveryPointTags != null) __obj.updateDynamic("RecoveryPointTags")(RecoveryPointTags.asInstanceOf[js.Any])
     if (RuleId != null) __obj.updateDynamic("RuleId")(RuleId.asInstanceOf[js.Any])
     if (ScheduleExpression != null) __obj.updateDynamic("ScheduleExpression")(ScheduleExpression.asInstanceOf[js.Any])
-    if (StartWindowMinutes != null) __obj.updateDynamic("StartWindowMinutes")(StartWindowMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(StartWindowMinutes)) __obj.updateDynamic("StartWindowMinutes")(StartWindowMinutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackupRule]
   }
 }

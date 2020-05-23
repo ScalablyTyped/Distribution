@@ -25,7 +25,7 @@ object PaginationProps {
   @scala.inline
   def apply(
     totalPages: Double,
-    activePage: Int | Double = null,
+    activePage: js.UndefOr[Double] = js.undefined,
     activePageAriaLabel: String = null,
     ariaLabel: String = null,
     followOnlyFirstPage: js.UndefOr[Boolean] = js.undefined,
@@ -35,20 +35,20 @@ object PaginationProps {
     pageAriaLabel: String = null,
     pageHref: /* page */ js.UndefOr[Double] => Unit = null,
     prevButtonText: String = null,
-    tabIndex: Int | Double = null
+    tabIndex: js.UndefOr[Double] = js.undefined
   ): PaginationProps = {
     val __obj = js.Dynamic.literal(totalPages = totalPages.asInstanceOf[js.Any])
-    if (activePage != null) __obj.updateDynamic("activePage")(activePage.asInstanceOf[js.Any])
+    if (!js.isUndefined(activePage)) __obj.updateDynamic("activePage")(activePage.get.asInstanceOf[js.Any])
     if (activePageAriaLabel != null) __obj.updateDynamic("activePageAriaLabel")(activePageAriaLabel.asInstanceOf[js.Any])
     if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(followOnlyFirstPage)) __obj.updateDynamic("followOnlyFirstPage")(followOnlyFirstPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(followOnlyFirstPage)) __obj.updateDynamic("followOnlyFirstPage")(followOnlyFirstPage.get.asInstanceOf[js.Any])
     if (infoFormatter != null) __obj.updateDynamic("infoFormatter")(js.Any.fromFunction2(infoFormatter))
     if (nextButtonText != null) __obj.updateDynamic("nextButtonText")(nextButtonText.asInstanceOf[js.Any])
     if (onPageClick != null) __obj.updateDynamic("onPageClick")(js.Any.fromFunction1(onPageClick))
     if (pageAriaLabel != null) __obj.updateDynamic("pageAriaLabel")(pageAriaLabel.asInstanceOf[js.Any])
     if (pageHref != null) __obj.updateDynamic("pageHref")(js.Any.fromFunction1(pageHref))
     if (prevButtonText != null) __obj.updateDynamic("prevButtonText")(prevButtonText.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationProps]
   }
 }

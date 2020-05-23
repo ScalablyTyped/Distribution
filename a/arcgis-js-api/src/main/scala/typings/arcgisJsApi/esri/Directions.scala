@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -88,8 +87,4 @@ trait Directions
     */
   def zoomToRoute(): Unit = js.native
 }
-
-@JSGlobal("__esri.Directions")
-@js.native
-object Directions extends TopLevel[DirectionsConstructor]
 

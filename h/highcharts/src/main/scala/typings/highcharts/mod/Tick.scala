@@ -46,6 +46,10 @@ class Tick protected () extends js.Object {
     */
   val isLast: js.UndefOr[Boolean] = js.native
   /**
+    * The rendered text label of the tick.
+    */
+  var label: js.UndefOr[SVGElement] = js.native
+  /**
     * The rendered mark of the tick.
     */
   var mark: js.UndefOr[SVGElement] = js.native

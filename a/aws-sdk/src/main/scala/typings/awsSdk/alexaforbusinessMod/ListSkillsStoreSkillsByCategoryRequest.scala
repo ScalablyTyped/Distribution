@@ -22,9 +22,13 @@ trait ListSkillsStoreSkillsByCategoryRequest extends js.Object {
 
 object ListSkillsStoreSkillsByCategoryRequest {
   @scala.inline
-  def apply(CategoryId: CategoryId, MaxResults: Int | Double = null, NextToken: NextToken = null): ListSkillsStoreSkillsByCategoryRequest = {
+  def apply(
+    CategoryId: CategoryId,
+    MaxResults: js.UndefOr[SkillListMaxResults] = js.undefined,
+    NextToken: NextToken = null
+  ): ListSkillsStoreSkillsByCategoryRequest = {
     val __obj = js.Dynamic.literal(CategoryId = CategoryId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSkillsStoreSkillsByCategoryRequest]
   }

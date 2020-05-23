@@ -34,14 +34,14 @@ object CellTower {
     locationAreaCode: Double,
     mobileCountryCode: Double,
     mobileNetworkCode: Double,
-    age: Int | Double = null,
-    signalStrength: Int | Double = null,
-    timingAdvance: Int | Double = null
+    age: js.UndefOr[Double] = js.undefined,
+    signalStrength: js.UndefOr[Double] = js.undefined,
+    timingAdvance: js.UndefOr[Double] = js.undefined
   ): CellTower = {
     val __obj = js.Dynamic.literal(cellId = cellId.asInstanceOf[js.Any], locationAreaCode = locationAreaCode.asInstanceOf[js.Any], mobileCountryCode = mobileCountryCode.asInstanceOf[js.Any], mobileNetworkCode = mobileNetworkCode.asInstanceOf[js.Any])
-    if (age != null) __obj.updateDynamic("age")(age.asInstanceOf[js.Any])
-    if (signalStrength != null) __obj.updateDynamic("signalStrength")(signalStrength.asInstanceOf[js.Any])
-    if (timingAdvance != null) __obj.updateDynamic("timingAdvance")(timingAdvance.asInstanceOf[js.Any])
+    if (!js.isUndefined(age)) __obj.updateDynamic("age")(age.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(signalStrength)) __obj.updateDynamic("signalStrength")(signalStrength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timingAdvance)) __obj.updateDynamic("timingAdvance")(timingAdvance.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellTower]
   }
 }

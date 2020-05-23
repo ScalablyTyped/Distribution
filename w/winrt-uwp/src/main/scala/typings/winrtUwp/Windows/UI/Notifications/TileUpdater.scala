@@ -9,9 +9,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Changes the content of the specific tile that the updater is bound to. */
-@JSGlobal("Windows.UI.Notifications.TileUpdater")
 @js.native
-abstract class TileUpdater () extends js.Object {
+trait TileUpdater extends js.Object {
   /** Gets a value that specifies whether a tile can be updated through notifications. */
   var setting: NotificationSetting = js.native
   /**

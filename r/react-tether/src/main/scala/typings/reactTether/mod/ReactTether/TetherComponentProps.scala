@@ -49,7 +49,7 @@ object TetherComponentProps {
     onRepositioned: () => Unit = null,
     onUpdate: /* data */ UpdateEventData => Unit = null,
     optimizations: js.Any = null,
-    ref: LegacyRef[TetherComponent] = null,
+    ref: js.UndefOr[Null | LegacyRef[TetherComponent]] = js.undefined,
     renderElement: /* ref */ RefObject[Element] => ReactNode = null,
     renderElementTag: String = null,
     renderElementTo: Element | String = null,
@@ -68,14 +68,14 @@ object TetherComponentProps {
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (constraints != null) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (onRepositioned != null) __obj.updateDynamic("onRepositioned")(js.Any.fromFunction0(onRepositioned))
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction1(onUpdate))
     if (optimizations != null) __obj.updateDynamic("optimizations")(optimizations.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (renderElement != null) __obj.updateDynamic("renderElement")(js.Any.fromFunction1(renderElement))
     if (renderElementTag != null) __obj.updateDynamic("renderElementTag")(renderElementTag.asInstanceOf[js.Any])
     if (renderElementTo != null) __obj.updateDynamic("renderElementTo")(renderElementTo.asInstanceOf[js.Any])

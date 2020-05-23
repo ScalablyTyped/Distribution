@@ -13,7 +13,7 @@ import typings.react.mod.Component
 import typings.react.mod.FocusEvent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.RefObject
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement

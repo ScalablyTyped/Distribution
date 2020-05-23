@@ -1,6 +1,7 @@
 package typings.authmosphere
 
 import typings.authmosphere.loggerMod.Logger
+import typings.authmosphere.tokenMod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +13,7 @@ object getTokenInfoMod extends js.Object {
     /* tokenInfoUrl */ String, 
     /* accessToken */ String, 
     /* logger */ js.UndefOr[Logger], 
-    js.Promise[typings.authmosphere.tokenMod.Token[T]]
+    js.Promise[Token[T]]
   ]
 }
 

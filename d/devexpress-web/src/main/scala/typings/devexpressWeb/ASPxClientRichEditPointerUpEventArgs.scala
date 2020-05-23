@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientRichEdit.PointerUp event.
   */
-@JSGlobal("ASPxClientRichEditPointerUpEventArgs")
-@js.native
-class ASPxClientRichEditPointerUpEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientRichEditPointerUpEventArgs object. For internal use only.
-    * @param htmlEvent A DHTML event object that relates to the processed event.
-    * @param handled true if the event is handled and no default processing is required; otherwise false.
-    */
-  def this(htmlEvent: js.Any, handled: js.Any) = this()
+trait ASPxClientRichEditPointerUpEventArgs extends ASPxClientEventArgs {
   /**
     * Gets or sets whether the event is handled manually, so no default processing is required.
     */
-  var handled: Boolean = js.native
+  var handled: Boolean
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: js.Any
+}
+
+object ASPxClientRichEditPointerUpEventArgs {
+  @scala.inline
+  def apply(handled: Boolean, htmlEvent: js.Any): ASPxClientRichEditPointerUpEventArgs = {
+    val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientRichEditPointerUpEventArgs]
+  }
 }
 

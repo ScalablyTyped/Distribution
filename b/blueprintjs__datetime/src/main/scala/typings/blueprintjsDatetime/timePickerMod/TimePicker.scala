@@ -18,9 +18,10 @@ class TimePicker ()
   var getFullStateFromValue: js.Any = js.native
   var getInputBlurHandler: js.Any = js.native
   var getInputChangeHandler: js.Any = js.native
+  var getInputFocusHandler: js.Any = js.native
   var getInputKeyDownHandler: js.Any = js.native
+  var getInputKeyUpHandler: js.Any = js.native
   var handleAmPmChange: js.Any = js.native
-  var handleFocus: js.Any = js.native
   var incrementTime: js.Any = js.native
   var maybeRenderAmPm: js.Any = js.native
   var maybeRenderArrowButton: js.Any = js.native

@@ -1,6 +1,6 @@
 package typings.jsmediatags.xhrFileReaderMod
 
-import typings.jsmediatags.AnonAvoidHeadRequests
+import typings.jsmediatags.anon.AvoidHeadRequests
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ class default protected () extends XhrFileReader {
 @JSImport("jsmediatags/build2/XhrFileReader", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var _config: AnonAvoidHeadRequests = js.native
+  var _config: AvoidHeadRequests = js.native
   def canReadFile(file: js.Any): Boolean = js.native
   def setConfig(config: js.Any): Unit = js.native
 }

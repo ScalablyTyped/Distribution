@@ -57,12 +57,12 @@ object Features {
     sort: js.UndefOr[Boolean] = js.undefined
   ): Features = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(paginate)) __obj.updateDynamic("paginate")(paginate.asInstanceOf[js.Any])
-    if (!js.isUndefined(perPageSelect)) __obj.updateDynamic("perPageSelect")(perPageSelect.asInstanceOf[js.Any])
-    if (!js.isUndefined(pushState)) __obj.updateDynamic("pushState")(pushState.asInstanceOf[js.Any])
-    if (!js.isUndefined(recordCount)) __obj.updateDynamic("recordCount")(recordCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
-    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
+    if (!js.isUndefined(paginate)) __obj.updateDynamic("paginate")(paginate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(perPageSelect)) __obj.updateDynamic("perPageSelect")(perPageSelect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pushState)) __obj.updateDynamic("pushState")(pushState.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(recordCount)) __obj.updateDynamic("recordCount")(recordCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Features]
   }
 }

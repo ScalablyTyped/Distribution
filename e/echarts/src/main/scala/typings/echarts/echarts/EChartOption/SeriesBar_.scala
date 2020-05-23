@@ -1,12 +1,12 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.AnonAnimation
-import typings.echarts.AnonAnimationDelay
-import typings.echarts.AnonAnimationDelayUpdate
-import typings.echarts.AnonBarBorderColor
-import typings.echarts.AnonDictunknownProperty
-import typings.echarts.AnonExtraCssText
-import typings.echarts.AnonItemStyle
+import typings.echarts.anon.Animation
+import typings.echarts.anon.AnimationDelay
+import typings.echarts.anon.AnimationDelayUpdate
+import typings.echarts.anon.BarBorderColor
+import typings.echarts.anon.DictunknownProperty
+import typings.echarts.anon.ExtraCssText
+import typings.echarts.anon.ItemStyle
 import typings.echarts.echarts.EChartOption.SeriesBar.DataObject
 import typings.echarts.echartsStrings.bar
 import scala.scalajs.js
@@ -447,7 +447,7 @@ trait SeriesBar_ extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-bar.emphasis
     */
-  var emphasis: js.UndefOr[AnonItemStyle] = js.undefined
+  var emphasis: js.UndefOr[ItemStyle] = js.undefined
   /**
     * Define what is encoded to for each dimension of `data`.
     * For example:
@@ -501,7 +501,7 @@ trait SeriesBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-bar.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBarBorderColor] = js.undefined
+  var itemStyle: js.UndefOr[BarBorderColor] = js.undefined
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -513,7 +513,7 @@ trait SeriesBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-bar.label
     */
-  var label: js.UndefOr[AnonDictunknownProperty] = js.undefined
+  var label: js.UndefOr[DictunknownProperty] = js.undefined
   /**
     * Whether to enable the optimization of large-scale data.
     * It could be set when large data causes performance problem.
@@ -555,21 +555,21 @@ trait SeriesBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-bar.markArea
     */
-  var markArea: js.UndefOr[AnonAnimationDelayUpdate] = js.undefined
+  var markArea: js.UndefOr[AnimationDelayUpdate] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-bar.markLine
     */
-  var markLine: js.UndefOr[AnonAnimationDelay] = js.undefined
+  var markLine: js.UndefOr[AnimationDelay] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-bar.markPoint
     */
-  var markPoint: js.UndefOr[AnonAnimation] = js.undefined
+  var markPoint: js.UndefOr[Animation] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -659,7 +659,7 @@ trait SeriesBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-bar.tooltip
     */
-  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
   /**
     * @default
     * "bar"
@@ -729,11 +729,11 @@ object SeriesBar_ {
     animationDurationUpdate: js.Function | Double = null,
     animationEasing: String = null,
     animationEasingUpdate: String = null,
-    animationThreshold: Int | Double = null,
+    animationThreshold: js.UndefOr[Double] = js.undefined,
     barCategoryGap: String = null,
     barGap: String = null,
     barMaxWidth: Double | String = null,
-    barMinHeight: Int | Double = null,
+    barMinHeight: js.UndefOr[Double] = js.undefined,
     barMinWidth: Double | String = null,
     barWidth: Double | String = null,
     coordinateSystem: String = null,
@@ -741,75 +741,75 @@ object SeriesBar_ {
     data: js.Array[
       (js.Array[Unit | String | Double | DataObject]) | DataObject | Double | String | Unit
     ] = null,
-    datasetIndex: Int | Double = null,
+    datasetIndex: js.UndefOr[Double] = js.undefined,
     dimensions: js.Array[_] = null,
-    emphasis: AnonItemStyle = null,
+    emphasis: ItemStyle = null,
     encode: js.Object = null,
     id: String = null,
-    itemStyle: AnonBarBorderColor = null,
-    label: AnonDictunknownProperty = null,
+    itemStyle: BarBorderColor = null,
+    label: DictunknownProperty = null,
     large: js.UndefOr[Boolean] = js.undefined,
-    largeThreshold: Int | Double = null,
+    largeThreshold: js.UndefOr[Double] = js.undefined,
     legendHoverLink: js.UndefOr[Boolean] = js.undefined,
-    markArea: AnonAnimationDelayUpdate = null,
-    markLine: AnonAnimationDelay = null,
-    markPoint: AnonAnimation = null,
+    markArea: AnimationDelayUpdate = null,
+    markLine: AnimationDelay = null,
+    markPoint: Animation = null,
     name: String = null,
-    progressive: Int | Double = null,
+    progressive: js.UndefOr[Double] = js.undefined,
     progressiveChunkMode: String = null,
-    progressiveThreshold: Int | Double = null,
+    progressiveThreshold: js.UndefOr[Double] = js.undefined,
     seriesLayoutBy: String = null,
     stack: String = null,
-    tooltip: AnonExtraCssText = null,
+    tooltip: ExtraCssText = null,
     `type`: bar = null,
-    xAxisIndex: Int | Double = null,
-    yAxisIndex: Int | Double = null,
-    z: Int | Double = null,
-    zlevel: Int | Double = null
+    xAxisIndex: js.UndefOr[Double] = js.undefined,
+    yAxisIndex: js.UndefOr[Double] = js.undefined,
+    z: js.UndefOr[Double] = js.undefined,
+    zlevel: js.UndefOr[Double] = js.undefined
   ): SeriesBar_ = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
     if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
     if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
     if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
     if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate.asInstanceOf[js.Any])
-    if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationThreshold)) __obj.updateDynamic("animationThreshold")(animationThreshold.get.asInstanceOf[js.Any])
     if (barCategoryGap != null) __obj.updateDynamic("barCategoryGap")(barCategoryGap.asInstanceOf[js.Any])
     if (barGap != null) __obj.updateDynamic("barGap")(barGap.asInstanceOf[js.Any])
     if (barMaxWidth != null) __obj.updateDynamic("barMaxWidth")(barMaxWidth.asInstanceOf[js.Any])
-    if (barMinHeight != null) __obj.updateDynamic("barMinHeight")(barMinHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(barMinHeight)) __obj.updateDynamic("barMinHeight")(barMinHeight.get.asInstanceOf[js.Any])
     if (barMinWidth != null) __obj.updateDynamic("barMinWidth")(barMinWidth.asInstanceOf[js.Any])
     if (barWidth != null) __obj.updateDynamic("barWidth")(barWidth.asInstanceOf[js.Any])
     if (coordinateSystem != null) __obj.updateDynamic("coordinateSystem")(coordinateSystem.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (datasetIndex != null) __obj.updateDynamic("datasetIndex")(datasetIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(datasetIndex)) __obj.updateDynamic("datasetIndex")(datasetIndex.get.asInstanceOf[js.Any])
     if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
     if (encode != null) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(large)) __obj.updateDynamic("large")(large.asInstanceOf[js.Any])
-    if (largeThreshold != null) __obj.updateDynamic("largeThreshold")(largeThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(legendHoverLink)) __obj.updateDynamic("legendHoverLink")(legendHoverLink.asInstanceOf[js.Any])
+    if (!js.isUndefined(large)) __obj.updateDynamic("large")(large.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(largeThreshold)) __obj.updateDynamic("largeThreshold")(largeThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(legendHoverLink)) __obj.updateDynamic("legendHoverLink")(legendHoverLink.get.asInstanceOf[js.Any])
     if (markArea != null) __obj.updateDynamic("markArea")(markArea.asInstanceOf[js.Any])
     if (markLine != null) __obj.updateDynamic("markLine")(markLine.asInstanceOf[js.Any])
     if (markPoint != null) __obj.updateDynamic("markPoint")(markPoint.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (progressive != null) __obj.updateDynamic("progressive")(progressive.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressive)) __obj.updateDynamic("progressive")(progressive.get.asInstanceOf[js.Any])
     if (progressiveChunkMode != null) __obj.updateDynamic("progressiveChunkMode")(progressiveChunkMode.asInstanceOf[js.Any])
-    if (progressiveThreshold != null) __obj.updateDynamic("progressiveThreshold")(progressiveThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressiveThreshold)) __obj.updateDynamic("progressiveThreshold")(progressiveThreshold.get.asInstanceOf[js.Any])
     if (seriesLayoutBy != null) __obj.updateDynamic("seriesLayoutBy")(seriesLayoutBy.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (xAxisIndex != null) __obj.updateDynamic("xAxisIndex")(xAxisIndex.asInstanceOf[js.Any])
-    if (yAxisIndex != null) __obj.updateDynamic("yAxisIndex")(yAxisIndex.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
-    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(xAxisIndex)) __obj.updateDynamic("xAxisIndex")(xAxisIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yAxisIndex)) __obj.updateDynamic("yAxisIndex")(yAxisIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zlevel)) __obj.updateDynamic("zlevel")(zlevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesBar_]
   }
 }

@@ -7,15 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("expo-asset/build/AssetSourceResolver.web", JSImport.Default)
 @js.native
 class default protected () extends AssetSourceResolver {
-  def this(serverUrl: js.UndefOr[scala.Nothing], jsbundleUrl: js.UndefOr[scala.Nothing], asset: PackagerAsset) = this()
-  def this(serverUrl: js.UndefOr[scala.Nothing], jsbundleUrl: String, asset: PackagerAsset) = this()
-  def this(serverUrl: js.UndefOr[scala.Nothing], jsbundleUrl: Null, asset: PackagerAsset) = this()
-  def this(serverUrl: String, jsbundleUrl: js.UndefOr[scala.Nothing], asset: PackagerAsset) = this()
-  def this(serverUrl: String, jsbundleUrl: String, asset: PackagerAsset) = this()
-  def this(serverUrl: String, jsbundleUrl: Null, asset: PackagerAsset) = this()
-  def this(serverUrl: Null, jsbundleUrl: js.UndefOr[scala.Nothing], asset: PackagerAsset) = this()
-  def this(serverUrl: Null, jsbundleUrl: String, asset: PackagerAsset) = this()
-  def this(serverUrl: Null, jsbundleUrl: Null, asset: PackagerAsset) = this()
+  def this(serverUrl: js.UndefOr[Null | String], jsbundleUrl: js.UndefOr[Null | String], asset: PackagerAsset) = this()
   /* CompleteClass */
   override var asset: PackagerAsset = js.native
   /* CompleteClass */

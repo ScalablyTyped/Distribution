@@ -20,10 +20,10 @@ trait TOTPGenOpt extends js.Object {
 
 object TOTPGenOpt {
   @scala.inline
-  def apply(_t: Int | Double = null, time: Int | Double = null): TOTPGenOpt = {
+  def apply(_t: js.UndefOr[Double] = js.undefined, time: js.UndefOr[Double] = js.undefined): TOTPGenOpt = {
     val __obj = js.Dynamic.literal()
-    if (_t != null) __obj.updateDynamic("_t")(_t.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (!js.isUndefined(_t)) __obj.updateDynamic("_t")(_t.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(time)) __obj.updateDynamic("time")(time.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TOTPGenOpt]
   }
 }

@@ -29,12 +29,12 @@ object MultiplexSettings {
   def apply(
     TransportStreamBitrate: integerMin1000000Max100000000,
     TransportStreamId: integerMin0Max65535,
-    MaximumVideoBufferDelayMilliseconds: Int | Double = null,
-    TransportStreamReservedBitrate: Int | Double = null
+    MaximumVideoBufferDelayMilliseconds: js.UndefOr[integerMin1000Max3000] = js.undefined,
+    TransportStreamReservedBitrate: js.UndefOr[integerMin0Max100000000] = js.undefined
   ): MultiplexSettings = {
     val __obj = js.Dynamic.literal(TransportStreamBitrate = TransportStreamBitrate.asInstanceOf[js.Any], TransportStreamId = TransportStreamId.asInstanceOf[js.Any])
-    if (MaximumVideoBufferDelayMilliseconds != null) __obj.updateDynamic("MaximumVideoBufferDelayMilliseconds")(MaximumVideoBufferDelayMilliseconds.asInstanceOf[js.Any])
-    if (TransportStreamReservedBitrate != null) __obj.updateDynamic("TransportStreamReservedBitrate")(TransportStreamReservedBitrate.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaximumVideoBufferDelayMilliseconds)) __obj.updateDynamic("MaximumVideoBufferDelayMilliseconds")(MaximumVideoBufferDelayMilliseconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TransportStreamReservedBitrate)) __obj.updateDynamic("TransportStreamReservedBitrate")(TransportStreamReservedBitrate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiplexSettings]
   }
 }

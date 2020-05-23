@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A command to start the mail merge process and save the resulting merged document to the server.
   */
-@JSGlobal("MailMergeAndSaveAsCommand")
 @js.native
-class MailMergeAndSaveAsCommand () extends js.Object {
+trait MailMergeAndSaveAsCommand extends js.Object {
   /**
     * Executes the MailMergeAndSaveAsCommand command with the specified parameters. true if the command has been successfully executed; false if the command execution has failed.
     * @param filePath The path to a saved file, or an object that contains the saved file information.

@@ -34,7 +34,7 @@ object mod extends js.Object {
       * A `Cancelable` that is already signaled.
       */
     val canceled: CancelableCancelSignal = js.native
-    val name: typings.esfxCancelable.esfxCancelableStrings.Cancelable = js.native
+    val name: /* "Cancelable" */ String = js.native
     /**
       * A `Cancelable` that can never be signaled.
       */
@@ -48,20 +48,19 @@ object mod extends js.Object {
       * @deprecated Use `Cancelable.hasInstance` instead.
       */
     def isCancelable(value: js.Any): /* is @esfx/cancelable.@esfx/cancelable/dist.Cancelable */ Boolean = js.native
-    def isSignaled(): Boolean = js.native
     /**
       * Determines whether `cancelable` is in the signaled state.
       */
+    def isSignaled(): Boolean = js.native
     def isSignaled(cancelable: typings.esfxCancelable.distMod.Cancelable): Boolean = js.native
-    def subscribe(cancelable: js.UndefOr[scala.Nothing], onSignaled: js.Function0[Unit]): CancelSubscription = js.native
     /**
       * Subscribes to be notified when a `cancelable` becomes signaled.
       */
-    def subscribe(cancelable: typings.esfxCancelable.distMod.Cancelable, onSignaled: js.Function0[Unit]): CancelSubscription = js.native
-    def throwIfSignaled(): Unit = js.native
+    def subscribe(cancelable: js.UndefOr[typings.esfxCancelable.distMod.Cancelable], onSignaled: js.Function0[Unit]): CancelSubscription = js.native
     /**
       * Throws a `CancelError` exception if the provided `cancelable` is in the signaled state.
       */
+    def throwIfSignaled(): Unit = js.native
     def throwIfSignaled(cancelable: typings.esfxCancelable.distMod.Cancelable): Unit = js.native
   }
   
@@ -72,7 +71,7 @@ object mod extends js.Object {
       * A well-known symbol used to define a method to retrieve the `CancelSignal` for an object.
       */
     val cancelSignal: js.Symbol = js.native
-    val name: typings.esfxCancelable.esfxCancelableStrings.CancelableSource = js.native
+    val name: /* "CancelableSource" */ String = js.native
     /**
       * Determines whether a value is a `CancelableSource` object.
       */

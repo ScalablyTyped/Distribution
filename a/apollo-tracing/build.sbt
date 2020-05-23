@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "apollo-tracing"
-version := "0.9.1-15ba47"
-scalaVersion := "2.13.1"
+version := "0.10.1-alpha.0-aa6e14"
+scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.4.4-2f54ec",
-  "org.scalablytyped" %%% "apollo-server-caching" % "0.5.1-b472d8",
-  "org.scalablytyped" %%% "apollo-server-env" % "2.4.3-ece472",
-  "org.scalablytyped" %%% "apollo-server-types" % "0.3.1-aa5127",
-  "org.scalablytyped" %%% "apollo__protobufjs" % "1.0.3-672368",
-  "org.scalablytyped" %%% "graphql" % "14.6.0-d18599",
-  "org.scalablytyped" %%% "graphql-extensions" % "0.11.1-42a53b",
-  "org.scalablytyped" %%% "long" % "4.0.0-dt-20200226Z-571776",
-  "org.scalablytyped" %%% "node" % "13.13-dt-20200417Z-f3d81d",
-  "org.scalablytyped" %%% "std" % "3.8-9b2470")
+  "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.5.1-alpha.1-a99a58",
+  "org.scalablytyped" %%% "apollo-server-caching" % "0.5.1-32d1eb",
+  "org.scalablytyped" %%% "apollo-server-env" % "2.4.4-alpha.0-67b908",
+  "org.scalablytyped" %%% "apollo-server-types" % "0.4.1-alpha.0-2825b8",
+  "org.scalablytyped" %%% "apollo__protobufjs" % "1.0.4-8c68b3",
+  "org.scalablytyped" %%% "graphql" % "14.6.0-2fa9e2",
+  "org.scalablytyped" %%% "graphql-extensions" % "0.12.1-alpha.0-906cc3",
+  "org.scalablytyped" %%% "long" % "4.0.0-dt-20200515Z-3b8d54",
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200521Z-3aabb7",
+  "org.scalablytyped" %%% "std" % "3.9-18cbeb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

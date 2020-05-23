@@ -28,10 +28,7 @@ trait IMainArea extends js.Object {
 object IMainArea {
   @scala.inline
   def apply(currentWidget: Widget = null, dock: ILayoutConfig = null, mode: Mode = null): IMainArea = {
-    val __obj = js.Dynamic.literal()
-    if (currentWidget != null) __obj.updateDynamic("currentWidget")(currentWidget.asInstanceOf[js.Any])
-    if (dock != null) __obj.updateDynamic("dock")(dock.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(currentWidget = currentWidget.asInstanceOf[js.Any], dock = dock.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMainArea]
   }
 }

@@ -15,14 +15,14 @@ object PlotConfig {
   @scala.inline
   def apply(
     format: (/* x */ Double, /* i */ Double) => String = null,
-    height: Int | Double = null,
-    offset: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
+    offset: js.UndefOr[Double] = js.undefined,
     padding: String = null
   ): PlotConfig = {
     val __obj = js.Dynamic.literal()
     if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction2(format))
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotConfig]
   }

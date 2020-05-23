@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.Notifications
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object BadgeTemplateType extends js.Object {
   /** A numerical value from 1 to 99. Values greater than 99 are accepted, but in those cases "99+" is displayed instead of the actual number. In scenarios where your numbers are expected to be greater than 99, you should consider using a glyph instead. */
   @js.native
   sealed trait badgeNumber extends BadgeTemplateType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BadgeTemplateType with Double] = js.native
-  /* 0 */ @js.native
-  object badgeGlyph extends TopLevel[badgeGlyph with Double]
-  
-  /* 1 */ @js.native
-  object badgeNumber extends TopLevel[badgeNumber with Double]
   
 }
 

@@ -55,14 +55,14 @@ object DefaultNetworkAclEgress {
     ruleNo: Double,
     toPort: Double,
     cidrBlock: String = null,
-    icmpCode: Int | Double = null,
-    icmpType: Int | Double = null,
+    icmpCode: js.UndefOr[Double] = js.undefined,
+    icmpType: js.UndefOr[Double] = js.undefined,
     ipv6CidrBlock: String = null
   ): DefaultNetworkAclEgress = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], fromPort = fromPort.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], ruleNo = ruleNo.asInstanceOf[js.Any], toPort = toPort.asInstanceOf[js.Any])
     if (cidrBlock != null) __obj.updateDynamic("cidrBlock")(cidrBlock.asInstanceOf[js.Any])
-    if (icmpCode != null) __obj.updateDynamic("icmpCode")(icmpCode.asInstanceOf[js.Any])
-    if (icmpType != null) __obj.updateDynamic("icmpType")(icmpType.asInstanceOf[js.Any])
+    if (!js.isUndefined(icmpCode)) __obj.updateDynamic("icmpCode")(icmpCode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(icmpType)) __obj.updateDynamic("icmpType")(icmpType.get.asInstanceOf[js.Any])
     if (ipv6CidrBlock != null) __obj.updateDynamic("ipv6CidrBlock")(ipv6CidrBlock.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultNetworkAclEgress]
   }

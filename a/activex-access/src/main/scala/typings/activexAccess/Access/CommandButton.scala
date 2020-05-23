@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.CommandButton")
 @js.native
-class CommandButton protected () extends js.Object {
+trait CommandButton extends js.Object {
   @JSName("Access.CommandButton_typekey")
   var AccessDotCommandButton_typekey: CommandButton = js.native
   var AddColon: Boolean = js.native

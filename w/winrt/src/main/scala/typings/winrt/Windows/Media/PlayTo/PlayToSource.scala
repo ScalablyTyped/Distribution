@@ -4,14 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Media.PlayTo.PlayToSource")
-@js.native
-class PlayToSource () extends IPlayToSource {
-  /* CompleteClass */
-  override var connection: PlayToConnection = js.native
-  /* CompleteClass */
-  override var next: PlayToSource = js.native
-  /* CompleteClass */
-  override def playNext(): Unit = js.native
+trait PlayToSource extends IPlayToSource
+
+object PlayToSource {
+  @scala.inline
+  def apply(connection: PlayToConnection, next: PlayToSource, playNext: () => Unit): PlayToSource = {
+    val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], playNext = js.Any.fromFunction0(playNext))
+    __obj.asInstanceOf[PlayToSource]
+  }
 }
 

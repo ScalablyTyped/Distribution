@@ -65,18 +65,18 @@ object ClassTransformOptions {
     ignoreDecorators: js.UndefOr[Boolean] = js.undefined,
     strategy: excludeAll | exposeAll = null,
     targetMaps: js.Array[TargetMap] = null,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): ClassTransformOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableCircularCheck)) __obj.updateDynamic("enableCircularCheck")(enableCircularCheck.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableImplicitConversion)) __obj.updateDynamic("enableImplicitConversion")(enableImplicitConversion.asInstanceOf[js.Any])
-    if (!js.isUndefined(excludeExtraneousValues)) __obj.updateDynamic("excludeExtraneousValues")(excludeExtraneousValues.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCircularCheck)) __obj.updateDynamic("enableCircularCheck")(enableCircularCheck.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableImplicitConversion)) __obj.updateDynamic("enableImplicitConversion")(enableImplicitConversion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludeExtraneousValues)) __obj.updateDynamic("excludeExtraneousValues")(excludeExtraneousValues.get.asInstanceOf[js.Any])
     if (excludePrefixes != null) __obj.updateDynamic("excludePrefixes")(excludePrefixes.asInstanceOf[js.Any])
     if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreDecorators)) __obj.updateDynamic("ignoreDecorators")(ignoreDecorators.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreDecorators)) __obj.updateDynamic("ignoreDecorators")(ignoreDecorators.get.asInstanceOf[js.Any])
     if (strategy != null) __obj.updateDynamic("strategy")(strategy.asInstanceOf[js.Any])
     if (targetMaps != null) __obj.updateDynamic("targetMaps")(targetMaps.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassTransformOptions]
   }
 }

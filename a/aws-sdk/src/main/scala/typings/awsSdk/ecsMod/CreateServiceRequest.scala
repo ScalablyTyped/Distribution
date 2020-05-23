@@ -101,9 +101,9 @@ object CreateServiceRequest {
     cluster: String = null,
     deploymentConfiguration: DeploymentConfiguration = null,
     deploymentController: DeploymentController = null,
-    desiredCount: Int | scala.Double = null,
-    enableECSManagedTags: js.UndefOr[scala.Boolean] = js.undefined,
-    healthCheckGracePeriodSeconds: Int | scala.Double = null,
+    desiredCount: js.UndefOr[BoxedInteger] = js.undefined,
+    enableECSManagedTags: js.UndefOr[Boolean] = js.undefined,
+    healthCheckGracePeriodSeconds: js.UndefOr[BoxedInteger] = js.undefined,
     launchType: LaunchType = null,
     loadBalancers: LoadBalancers = null,
     networkConfiguration: NetworkConfiguration = null,
@@ -123,9 +123,9 @@ object CreateServiceRequest {
     if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
     if (deploymentConfiguration != null) __obj.updateDynamic("deploymentConfiguration")(deploymentConfiguration.asInstanceOf[js.Any])
     if (deploymentController != null) __obj.updateDynamic("deploymentController")(deploymentController.asInstanceOf[js.Any])
-    if (desiredCount != null) __obj.updateDynamic("desiredCount")(desiredCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableECSManagedTags)) __obj.updateDynamic("enableECSManagedTags")(enableECSManagedTags.asInstanceOf[js.Any])
-    if (healthCheckGracePeriodSeconds != null) __obj.updateDynamic("healthCheckGracePeriodSeconds")(healthCheckGracePeriodSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(desiredCount)) __obj.updateDynamic("desiredCount")(desiredCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableECSManagedTags)) __obj.updateDynamic("enableECSManagedTags")(enableECSManagedTags.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(healthCheckGracePeriodSeconds)) __obj.updateDynamic("healthCheckGracePeriodSeconds")(healthCheckGracePeriodSeconds.get.asInstanceOf[js.Any])
     if (launchType != null) __obj.updateDynamic("launchType")(launchType.asInstanceOf[js.Any])
     if (loadBalancers != null) __obj.updateDynamic("loadBalancers")(loadBalancers.asInstanceOf[js.Any])
     if (networkConfiguration != null) __obj.updateDynamic("networkConfiguration")(networkConfiguration.asInstanceOf[js.Any])

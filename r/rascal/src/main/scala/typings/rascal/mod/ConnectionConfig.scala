@@ -1,7 +1,7 @@
 package typings.rascal.mod
 
-import typings.rascal.AnonDictkey
-import typings.rascal.AnonTimeoutNumber
+import typings.rascal.anon.Dictkey
+import typings.rascal.anon.TimeoutNumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ object ConnectionConfig {
     hostname: String = null,
     loggableUrl: String = null,
     management: ConnectionAttributes = null,
-    options: AnonDictkey = null,
+    options: Dictkey = null,
     password: String = null,
     pathname: String = null,
     port: String | Double = null,
@@ -26,7 +26,7 @@ object ConnectionConfig {
     query: String = null,
     retry: RetryConfig = null,
     slashes: js.UndefOr[Boolean] = js.undefined,
-    socketOptions: AnonTimeoutNumber = null,
+    socketOptions: TimeoutNumber = null,
     url: String = null,
     user: String = null,
     vhost: String = null
@@ -43,7 +43,7 @@ object ConnectionConfig {
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
-    if (!js.isUndefined(slashes)) __obj.updateDynamic("slashes")(slashes.asInstanceOf[js.Any])
+    if (!js.isUndefined(slashes)) __obj.updateDynamic("slashes")(slashes.get.asInstanceOf[js.Any])
     if (socketOptions != null) __obj.updateDynamic("socketOptions")(socketOptions.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])

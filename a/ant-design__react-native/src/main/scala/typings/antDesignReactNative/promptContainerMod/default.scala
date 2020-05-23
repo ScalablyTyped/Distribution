@@ -1,7 +1,7 @@
 package typings.antDesignReactNative.promptContainerMod
 
-import typings.antDesignReactNative.AnonAntLocale
-import typings.antDesignReactNative.AnonType
+import typings.antDesignReactNative.anon.AntLocale
+import typings.antDesignReactNative.anon.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ class default protected () extends PropmptContainer {
 @JSImport("@ant-design/react-native/lib/modal/PromptContainer", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var contextTypes: AnonAntLocale = js.native
-  var defaultProps: AnonType = js.native
+  var contextTypes: AntLocale = js.native
+  var defaultProps: Type = js.native
 }
 

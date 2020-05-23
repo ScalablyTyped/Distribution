@@ -55,8 +55,8 @@ object DeployResult {
     if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
     if (errorStatusCode != null) __obj.updateDynamic("errorStatusCode")(errorStatusCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreWarnings)) __obj.updateDynamic("ignoreWarnings")(ignoreWarnings.asInstanceOf[js.Any])
-    if (!js.isUndefined(rollbackOnError)) __obj.updateDynamic("rollbackOnError")(rollbackOnError.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreWarnings)) __obj.updateDynamic("ignoreWarnings")(ignoreWarnings.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rollbackOnError)) __obj.updateDynamic("rollbackOnError")(rollbackOnError.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeployResult]
   }
 }

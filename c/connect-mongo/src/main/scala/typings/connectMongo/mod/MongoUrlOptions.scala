@@ -16,7 +16,7 @@ object MongoUrlOptions {
     url: String,
     autoReconnect: js.UndefOr[Boolean] = js.undefined,
     autoRemove: String = null,
-    autoRemoveInterval: Int | Double = null,
+    autoRemoveInterval: js.UndefOr[Double] = js.undefined,
     collection: String = null,
     hash: js.UndefOr[Boolean] = js.undefined,
     host: String = null,
@@ -25,25 +25,25 @@ object MongoUrlOptions {
     secret: String = null,
     ssl: js.UndefOr[Boolean] = js.undefined,
     stringify: js.UndefOr[Boolean] = js.undefined,
-    touchAfter: Int | Double = null,
-    ttl: Int | Double = null,
-    w: Int | Double = null
+    touchAfter: js.UndefOr[Double] = js.undefined,
+    ttl: js.UndefOr[Double] = js.undefined,
+    w: js.UndefOr[Double] = js.undefined
   ): MongoUrlOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoReconnect)) __obj.updateDynamic("autoReconnect")(autoReconnect.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoReconnect)) __obj.updateDynamic("autoReconnect")(autoReconnect.get.asInstanceOf[js.Any])
     if (autoRemove != null) __obj.updateDynamic("autoRemove")(autoRemove.asInstanceOf[js.Any])
-    if (autoRemoveInterval != null) __obj.updateDynamic("autoRemoveInterval")(autoRemoveInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoRemoveInterval)) __obj.updateDynamic("autoRemoveInterval")(autoRemoveInterval.get.asInstanceOf[js.Any])
     if (collection != null) __obj.updateDynamic("collection")(collection.asInstanceOf[js.Any])
-    if (!js.isUndefined(hash)) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
+    if (!js.isUndefined(hash)) __obj.updateDynamic("hash")(hash.get.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (mongoOptions != null) __obj.updateDynamic("mongoOptions")(mongoOptions.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (secret != null) __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
-    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
-    if (!js.isUndefined(stringify)) __obj.updateDynamic("stringify")(stringify.asInstanceOf[js.Any])
-    if (touchAfter != null) __obj.updateDynamic("touchAfter")(touchAfter.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
-    if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stringify)) __obj.updateDynamic("stringify")(stringify.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchAfter)) __obj.updateDynamic("touchAfter")(touchAfter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(w)) __obj.updateDynamic("w")(w.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MongoUrlOptions]
   }
 }

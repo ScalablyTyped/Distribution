@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 trait ITemplateColumn
   extends typings.extjs.Ext.grid.column.IColumn {
   /** [Method] When defined this will take precedence over the renderer config
-  		* @param value Object
-  		* @param meta Object
-  		* @param record Object
-  		*/
+    * @param value Object
+    * @param meta Object
+    * @param record Object
+    */
   @JSName("defaultRenderer")
   var defaultRenderer_ITemplateColumn: js.UndefOr[
     js.Function3[

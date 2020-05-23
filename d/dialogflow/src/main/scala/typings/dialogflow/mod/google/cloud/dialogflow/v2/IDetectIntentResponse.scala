@@ -23,18 +23,18 @@ trait IDetectIntentResponse extends js.Object {
 object IDetectIntentResponse {
   @scala.inline
   def apply(
-    outputAudio: Uint8Array | String = null,
-    outputAudioConfig: IOutputAudioConfig = null,
-    queryResult: IQueryResult = null,
-    responseId: String = null,
-    webhookStatus: IStatus = null
+    outputAudio: js.UndefOr[Null | Uint8Array | String] = js.undefined,
+    outputAudioConfig: js.UndefOr[Null | IOutputAudioConfig] = js.undefined,
+    queryResult: js.UndefOr[Null | IQueryResult] = js.undefined,
+    responseId: js.UndefOr[Null | String] = js.undefined,
+    webhookStatus: js.UndefOr[Null | IStatus] = js.undefined
   ): IDetectIntentResponse = {
     val __obj = js.Dynamic.literal()
-    if (outputAudio != null) __obj.updateDynamic("outputAudio")(outputAudio.asInstanceOf[js.Any])
-    if (outputAudioConfig != null) __obj.updateDynamic("outputAudioConfig")(outputAudioConfig.asInstanceOf[js.Any])
-    if (queryResult != null) __obj.updateDynamic("queryResult")(queryResult.asInstanceOf[js.Any])
-    if (responseId != null) __obj.updateDynamic("responseId")(responseId.asInstanceOf[js.Any])
-    if (webhookStatus != null) __obj.updateDynamic("webhookStatus")(webhookStatus.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputAudio)) __obj.updateDynamic("outputAudio")(outputAudio.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputAudioConfig)) __obj.updateDynamic("outputAudioConfig")(outputAudioConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(queryResult)) __obj.updateDynamic("queryResult")(queryResult.asInstanceOf[js.Any])
+    if (!js.isUndefined(responseId)) __obj.updateDynamic("responseId")(responseId.asInstanceOf[js.Any])
+    if (!js.isUndefined(webhookStatus)) __obj.updateDynamic("webhookStatus")(webhookStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetectIntentResponse]
   }
 }

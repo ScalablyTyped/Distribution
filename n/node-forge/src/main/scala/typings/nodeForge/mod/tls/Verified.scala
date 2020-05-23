@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.nodeForge.nodeForgeBooleans.`true`
-  - typings.nodeForge.AnonAlert
+  - typings.nodeForge.anon.Alert
 */
 trait Verified extends js.Object
 

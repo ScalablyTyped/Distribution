@@ -1,6 +1,6 @@
 package typings.popperJs.mod
 
-import typings.popperJs.BaseModifiernamestring
+import typings.popperJs.anon.BaseModifiernamestring
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

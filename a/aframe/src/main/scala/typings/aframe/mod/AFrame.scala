@@ -1,6 +1,6 @@
 package typings.aframe.mod
 
-import typings.aframe.AnonGetMeshMixin
+import typings.aframe.anon.GetMeshMixin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait AFrame extends js.Object {
   var TWEEN: TweenLib
   var components: ObjectMap[ComponentDescriptor[Component[_, System[_]]]]
   var geometries: ObjectMap[GeometryDescriptor[Geometry[_]]]
-  var primitives: AnonGetMeshMixin
+  var primitives: GetMeshMixin
   var scenes: js.Array[Scene]
   var schema: SchemaUtils
   var shaders: ObjectMap[ShaderDescriptor[Shader]]
@@ -40,7 +40,7 @@ object AFrame {
     TWEEN: TweenLib,
     components: ObjectMap[ComponentDescriptor[Component[_, System[_]]]],
     geometries: ObjectMap[GeometryDescriptor[Geometry[_]]],
-    primitives: AnonGetMeshMixin,
+    primitives: GetMeshMixin,
     registerComponent: (String, ComponentDefinition[js.Any]) => ComponentConstructor[js.Any],
     registerElement: (String, js.Object) => Unit,
     registerGeometry: (String, GeometryDefinition[js.Any, _]) => GeometryConstructor[js.Any],

@@ -25,7 +25,7 @@ object SchedulerSelectOptions {
     val __obj = js.Dynamic.literal()
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAllDay)) __obj.updateDynamic("isAllDay")(isAllDay.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAllDay)) __obj.updateDynamic("isAllDay")(isAllDay.get.asInstanceOf[js.Any])
     if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerSelectOptions]

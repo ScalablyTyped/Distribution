@@ -1,7 +1,7 @@
 package typings.fundamentalReact.mod
 
-import typings.fundamentalReact.PartialLocalizationEditor
-import typings.fundamentalReact.WeakValidationMapLocaliza
+import typings.fundamentalReact.anon.PartialLocalizationEditor
+import typings.fundamentalReact.anon.WeakValidationMapLocaliza
 import typings.fundamentalReact.localizationEditorMod.LocalizationEditorProps
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement

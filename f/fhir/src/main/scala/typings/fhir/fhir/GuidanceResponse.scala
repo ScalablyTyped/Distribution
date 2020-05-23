@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * The formal response to a guidance request
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait GuidanceResponse extends DomainResource {
   /**
     * Contains extended information for property 'occurrenceDateTime'.

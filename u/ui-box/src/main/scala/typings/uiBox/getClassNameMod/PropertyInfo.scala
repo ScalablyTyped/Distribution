@@ -27,12 +27,12 @@ object PropertyInfo {
   ): PropertyInfo = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(complexValue)) __obj.updateDynamic("complexValue")(complexValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(complexValue)) __obj.updateDynamic("complexValue")(complexValue.get.asInstanceOf[js.Any])
     if (cssName != null) __obj.updateDynamic("cssName")(cssName.asInstanceOf[js.Any])
     if (defaultUnit != null) __obj.updateDynamic("defaultUnit")(defaultUnit.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPrefixed)) __obj.updateDynamic("isPrefixed")(isPrefixed.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPrefixed)) __obj.updateDynamic("isPrefixed")(isPrefixed.get.asInstanceOf[js.Any])
     if (jsName != null) __obj.updateDynamic("jsName")(jsName.asInstanceOf[js.Any])
-    if (!js.isUndefined(safeValue)) __obj.updateDynamic("safeValue")(safeValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(safeValue)) __obj.updateDynamic("safeValue")(safeValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyInfo]
   }
 }

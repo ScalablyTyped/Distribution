@@ -15,14 +15,14 @@ trait ISliderState extends js.Object {
 object ISliderState {
   @scala.inline
   def apply(
-    labelPrecision: Int | Double = null,
-    tickSize: Int | Double = null,
-    tickSizeRatio: Int | Double = null
+    labelPrecision: js.UndefOr[Double] = js.undefined,
+    tickSize: js.UndefOr[Double] = js.undefined,
+    tickSizeRatio: js.UndefOr[Double] = js.undefined
   ): ISliderState = {
     val __obj = js.Dynamic.literal()
-    if (labelPrecision != null) __obj.updateDynamic("labelPrecision")(labelPrecision.asInstanceOf[js.Any])
-    if (tickSize != null) __obj.updateDynamic("tickSize")(tickSize.asInstanceOf[js.Any])
-    if (tickSizeRatio != null) __obj.updateDynamic("tickSizeRatio")(tickSizeRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelPrecision)) __obj.updateDynamic("labelPrecision")(labelPrecision.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tickSize)) __obj.updateDynamic("tickSize")(tickSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tickSizeRatio)) __obj.updateDynamic("tickSizeRatio")(tickSizeRatio.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISliderState]
   }
 }

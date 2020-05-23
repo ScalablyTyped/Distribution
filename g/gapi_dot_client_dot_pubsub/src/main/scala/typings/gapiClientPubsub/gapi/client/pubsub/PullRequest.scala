@@ -23,10 +23,13 @@ trait PullRequest extends js.Object {
 
 object PullRequest {
   @scala.inline
-  def apply(maxMessages: Int | Double = null, returnImmediately: js.UndefOr[Boolean] = js.undefined): PullRequest = {
+  def apply(
+    maxMessages: js.UndefOr[Double] = js.undefined,
+    returnImmediately: js.UndefOr[Boolean] = js.undefined
+  ): PullRequest = {
     val __obj = js.Dynamic.literal()
-    if (maxMessages != null) __obj.updateDynamic("maxMessages")(maxMessages.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnImmediately)) __obj.updateDynamic("returnImmediately")(returnImmediately.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxMessages)) __obj.updateDynamic("maxMessages")(maxMessages.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnImmediately)) __obj.updateDynamic("returnImmediately")(returnImmediately.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullRequest]
   }
 }

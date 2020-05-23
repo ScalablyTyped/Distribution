@@ -24,19 +24,19 @@ object QueryPassages {
   @scala.inline
   def apply(
     document_id: String = null,
-    end_offset: Int | Double = null,
+    end_offset: js.UndefOr[Double] = js.undefined,
     field: String = null,
-    passage_score: Int | Double = null,
+    passage_score: js.UndefOr[Double] = js.undefined,
     passage_text: String = null,
-    start_offset: Int | Double = null
+    start_offset: js.UndefOr[Double] = js.undefined
   ): QueryPassages = {
     val __obj = js.Dynamic.literal()
     if (document_id != null) __obj.updateDynamic("document_id")(document_id.asInstanceOf[js.Any])
-    if (end_offset != null) __obj.updateDynamic("end_offset")(end_offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(end_offset)) __obj.updateDynamic("end_offset")(end_offset.get.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (passage_score != null) __obj.updateDynamic("passage_score")(passage_score.asInstanceOf[js.Any])
+    if (!js.isUndefined(passage_score)) __obj.updateDynamic("passage_score")(passage_score.get.asInstanceOf[js.Any])
     if (passage_text != null) __obj.updateDynamic("passage_text")(passage_text.asInstanceOf[js.Any])
-    if (start_offset != null) __obj.updateDynamic("start_offset")(start_offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(start_offset)) __obj.updateDynamic("start_offset")(start_offset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryPassages]
   }
 }

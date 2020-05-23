@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.babylonjs.anon.DiameterX
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
@@ -32,8 +33,8 @@ object sphereBuilderMod extends js.Object {
       * @returns the sphere mesh
       * @see https://doc.babylonjs.com/how_to/set_shapes#sphere
       */
-    def CreateSphere(name: String, options: AnonDiameterX): Mesh = js.native
-    def CreateSphere(name: String, options: AnonDiameterX, scene: Nullable[Scene]): Mesh = js.native
+    def CreateSphere(name: String, options: DiameterX): Mesh = js.native
+    def CreateSphere(name: String, options: DiameterX, scene: Nullable[Scene]): Mesh = js.native
   }
   
 }

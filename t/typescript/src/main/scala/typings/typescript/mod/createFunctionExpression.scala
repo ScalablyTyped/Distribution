@@ -10,7 +10,7 @@ object createFunctionExpression extends js.Object {
   def apply(
     modifiers: js.UndefOr[js.Array[Modifier]],
     asteriskToken: js.UndefOr[AsteriskToken],
-    name: js.UndefOr[java.lang.String | Identifier],
+    name: js.UndefOr[Identifier | java.lang.String],
     typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
     parameters: js.UndefOr[js.Array[ParameterDeclaration]],
     `type`: js.UndefOr[TypeNode],

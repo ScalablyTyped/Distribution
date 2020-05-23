@@ -1,8 +1,8 @@
 package typings.devextreme.mod.default.viz
 
-import typings.devextreme.AnonBackgroundColor
-import typings.devextreme.AnonBaseColorSet
-import typings.devextreme.AnonFileName
+import typings.devextreme.anon.BackgroundColor
+import typings.devextreme.anon.BaseColorSet
+import typings.devextreme.anon.FileName
 import typings.devextreme.devextremeStrings.Bright
 import typings.devextreme.devextremeStrings.Carmine
 import typings.devextreme.devextremeStrings.Default
@@ -38,16 +38,16 @@ object ^ extends js.Object {
   /** @name viz.currentTheme(theme) */
   def currentTheme(theme: String): Unit = js.native
   /** @name viz.exportFromMarkup(markup, options) */
-  def exportFromMarkup(markup: String, options: AnonBackgroundColor): Unit = js.native
+  def exportFromMarkup(markup: String, options: BackgroundColor): Unit = js.native
   /** @name viz.exportWidgets(widgetInstances) */
   def exportWidgets(widgetInstances: js.Array[js.Array[DOMComponent]]): Unit = js.native
   /** @name viz.exportWidgets(widgetInstances, options) */
-  def exportWidgets(widgetInstances: js.Array[js.Array[DOMComponent]], options: AnonFileName): Unit = js.native
+  def exportWidgets(widgetInstances: js.Array[js.Array[DOMComponent]], options: FileName): Unit = js.native
   /** @name viz.generateColors(palette, count, options) */
   def generateColors(
     palette: Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office | js.Array[String],
     count: Double,
-    options: AnonBaseColorSet
+    options: BaseColorSet
   ): js.Array[String] = js.native
   /** @name viz.getMarkup(widgetInstances) */
   def getMarkup(widgetInstances: js.Array[DOMComponent]): String = js.native

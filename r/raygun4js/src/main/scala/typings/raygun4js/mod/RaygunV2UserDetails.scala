@@ -45,7 +45,7 @@ object RaygunV2UserDetails {
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
     if (firstName != null) __obj.updateDynamic("firstName")(firstName.asInstanceOf[js.Any])
     if (fullName != null) __obj.updateDynamic("fullName")(fullName.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAnonymous)) __obj.updateDynamic("isAnonymous")(isAnonymous.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAnonymous)) __obj.updateDynamic("isAnonymous")(isAnonymous.get.asInstanceOf[js.Any])
     if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaygunV2UserDetails]
   }

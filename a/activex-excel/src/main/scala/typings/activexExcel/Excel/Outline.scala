@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.Outline")
 @js.native
-class Outline protected () extends js.Object {
+trait Outline extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   var AutomaticStyles: Boolean = js.native
   val Creator: XlCreator = js.native

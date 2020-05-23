@@ -23,7 +23,7 @@ object DropdownOptions {
     align: String = null,
     closed: () => _ = null,
     disabled_class: String = null,
-    hover_timeout: Int | Double = null,
+    hover_timeout: js.UndefOr[Double] = js.undefined,
     is_hover: js.UndefOr[Boolean] = js.undefined,
     mega_class: String = null,
     opened: () => _ = null
@@ -33,8 +33,8 @@ object DropdownOptions {
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (closed != null) __obj.updateDynamic("closed")(js.Any.fromFunction0(closed))
     if (disabled_class != null) __obj.updateDynamic("disabled_class")(disabled_class.asInstanceOf[js.Any])
-    if (hover_timeout != null) __obj.updateDynamic("hover_timeout")(hover_timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_hover)) __obj.updateDynamic("is_hover")(is_hover.asInstanceOf[js.Any])
+    if (!js.isUndefined(hover_timeout)) __obj.updateDynamic("hover_timeout")(hover_timeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_hover)) __obj.updateDynamic("is_hover")(is_hover.get.asInstanceOf[js.Any])
     if (mega_class != null) __obj.updateDynamic("mega_class")(mega_class.asInstanceOf[js.Any])
     if (opened != null) __obj.updateDynamic("opened")(js.Any.fromFunction0(opened))
     __obj.asInstanceOf[DropdownOptions]

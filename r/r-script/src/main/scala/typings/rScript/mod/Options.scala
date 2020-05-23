@@ -41,11 +41,11 @@ object Options {
   def apply(
     Date: ISO8601 | epoch = null,
     POSIXt: string | ISO8601 | epoch | mongo = null,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     auto_unbox: js.UndefOr[Boolean] = js.undefined,
     complex: string | list = null,
     dataframe: rows | colums | values = null,
-    digits: Int | Double = null,
+    digits: js.UndefOr[Double] = js.undefined,
     factor: string | integer = null,
     force: js.UndefOr[Boolean] = js.undefined,
     matrix: rowmajor | columnmajor = null,
@@ -58,16 +58,16 @@ object Options {
     if (Date != null) __obj.updateDynamic("Date")(Date.asInstanceOf[js.Any])
     if (POSIXt != null) __obj.updateDynamic("POSIXt")(POSIXt.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(auto_unbox)) __obj.updateDynamic("auto_unbox")(auto_unbox.asInstanceOf[js.Any])
+    if (!js.isUndefined(auto_unbox)) __obj.updateDynamic("auto_unbox")(auto_unbox.get.asInstanceOf[js.Any])
     if (complex != null) __obj.updateDynamic("complex")(complex.asInstanceOf[js.Any])
     if (dataframe != null) __obj.updateDynamic("dataframe")(dataframe.asInstanceOf[js.Any])
-    if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
+    if (!js.isUndefined(digits)) __obj.updateDynamic("digits")(digits.get.asInstanceOf[js.Any])
     if (factor != null) __obj.updateDynamic("factor")(factor.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
     if (matrix != null) __obj.updateDynamic("matrix")(matrix.asInstanceOf[js.Any])
     if (na != null) __obj.updateDynamic("na")(na.asInstanceOf[js.Any])
     if (`null` != null) __obj.updateDynamic("null")(`null`.asInstanceOf[js.Any])
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])
+    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.get.asInstanceOf[js.Any])
     if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

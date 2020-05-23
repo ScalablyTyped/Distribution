@@ -15,8 +15,8 @@ object LiteralNodeMetadata {
     replacedLiteral: js.UndefOr[Boolean] = js.undefined
   ): LiteralNodeMetadata = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoredNode)) __obj.updateDynamic("ignoredNode")(ignoredNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(replacedLiteral)) __obj.updateDynamic("replacedLiteral")(replacedLiteral.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoredNode)) __obj.updateDynamic("ignoredNode")(ignoredNode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(replacedLiteral)) __obj.updateDynamic("replacedLiteral")(replacedLiteral.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiteralNodeMetadata]
   }
 }

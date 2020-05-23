@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Storage.Provider
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object CachedFileTarget extends js.Object {
   /** Update the remote version of the file. */
   @js.native
   sealed trait remote extends CachedFileTarget
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CachedFileTarget with Double] = js.native
-  /* 0 */ @js.native
-  object local extends TopLevel[local with Double]
-  
-  /* 1 */ @js.native
-  object remote extends TopLevel[remote with Double]
   
 }
 

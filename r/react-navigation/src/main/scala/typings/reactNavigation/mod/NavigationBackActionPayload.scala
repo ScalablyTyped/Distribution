@@ -11,10 +11,10 @@ trait NavigationBackActionPayload extends js.Object {
 
 object NavigationBackActionPayload {
   @scala.inline
-  def apply(immediate: js.UndefOr[Boolean] = js.undefined, key: String = null): NavigationBackActionPayload = {
+  def apply(immediate: js.UndefOr[Boolean] = js.undefined, key: js.UndefOr[Null | String] = js.undefined): NavigationBackActionPayload = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationBackActionPayload]
   }
 }

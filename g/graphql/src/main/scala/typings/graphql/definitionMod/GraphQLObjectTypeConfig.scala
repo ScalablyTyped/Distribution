@@ -25,20 +25,22 @@ object GraphQLObjectTypeConfig {
   def apply[TSource, TContext, TArgs](
     fields: Thunk[GraphQLFieldConfigMap[TSource, TContext, TArgs]],
     name: String,
-    astNode: Maybe[ObjectTypeDefinitionNode] = null,
-    description: Maybe[String] = null,
-    extensionASTNodes: Maybe[js.Array[ObjectTypeExtensionNode]] = null,
-    extensions: Maybe[Record[String, _]] = null,
-    interfaces: Thunk[Maybe[js.Array[GraphQLInterfaceType]]] = null,
-    isTypeOf: (TSource, TContext, /* info */ GraphQLResolveInfo) => PromiseOrValue[Boolean] = null
+    astNode: js.UndefOr[Null | Maybe[ObjectTypeDefinitionNode]] = js.undefined,
+    description: js.UndefOr[Null | Maybe[String]] = js.undefined,
+    extensionASTNodes: js.UndefOr[Null | Maybe[js.Array[ObjectTypeExtensionNode]]] = js.undefined,
+    extensions: js.UndefOr[Null | (Maybe[Record[String, _]])] = js.undefined,
+    interfaces: js.UndefOr[Null | Thunk[Maybe[js.Array[GraphQLInterfaceType]]]] = js.undefined,
+    isTypeOf: js.UndefOr[
+      Null | ((TSource, TContext, /* info */ GraphQLResolveInfo) => PromiseOrValue[Boolean])
+    ] = js.undefined
   ): GraphQLObjectTypeConfig[TSource, TContext, TArgs] = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (extensionASTNodes != null) __obj.updateDynamic("extensionASTNodes")(extensionASTNodes.asInstanceOf[js.Any])
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (interfaces != null) __obj.updateDynamic("interfaces")(interfaces.asInstanceOf[js.Any])
-    if (isTypeOf != null) __obj.updateDynamic("isTypeOf")(js.Any.fromFunction3(isTypeOf))
+    if (!js.isUndefined(astNode)) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(extensionASTNodes)) __obj.updateDynamic("extensionASTNodes")(extensionASTNodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(extensions)) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (!js.isUndefined(interfaces)) __obj.updateDynamic("interfaces")(interfaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTypeOf)) __obj.updateDynamic("isTypeOf")(if (isTypeOf != null) js.Any.fromFunction3(isTypeOf.asInstanceOf[(TSource, TContext, /* info */ GraphQLResolveInfo) => PromiseOrValue[Boolean]]) else null)
     __obj.asInstanceOf[GraphQLObjectTypeConfig[TSource, TContext, TArgs]]
   }
 }

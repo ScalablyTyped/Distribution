@@ -1,13 +1,13 @@
 package typings.actionsOnGoogle.apiV1Mod
 
-import typings.actionsOnGoogle.AnonTypeChallengeType
+import typings.actionsOnGoogle.anon.TypeChallengeType
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SmartHomeV1ExecuteResponseCommands extends js.Object {
-  var challengeNeeded: js.UndefOr[AnonTypeChallengeType] = js.undefined
+  var challengeNeeded: js.UndefOr[TypeChallengeType] = js.undefined
   var debugString: js.UndefOr[String] = js.undefined
   var errorCode: js.UndefOr[SmartHomeV1ExecuteErrors] = js.undefined
   var ids: js.Array[String]
@@ -20,7 +20,7 @@ object SmartHomeV1ExecuteResponseCommands {
   def apply(
     ids: js.Array[String],
     status: SmartHomeV1ExecuteStatus,
-    challengeNeeded: AnonTypeChallengeType = null,
+    challengeNeeded: TypeChallengeType = null,
     debugString: String = null,
     errorCode: SmartHomeV1ExecuteErrors = null,
     states: ApiClientObjectMap[_] = null

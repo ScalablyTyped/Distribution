@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * Fired when the Live Photo playback starts.
-			 */
+  * Fired when the Live Photo playback starts.
+  */
 trait LivePhotoViewStartEvent extends LivePhotoViewBaseEvent {
   /**
-  				 * Returns the `playbackStyle` that was provided to start the playback.
-  				 */
+    * Returns the `playbackStyle` that was provided to start the playback.
+    */
   var playbackStyle: Double
 }
 

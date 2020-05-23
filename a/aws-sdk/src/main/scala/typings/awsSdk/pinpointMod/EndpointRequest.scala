@@ -47,7 +47,7 @@ trait EndpointRequest extends js.Object {
     */
   var RequestId: js.UndefOr[string] = js.native
   /**
-    * One or more custom user attributes that describe the user who's associated with the endpoint.
+    * One or more custom attributes that describe the user who's associated with the endpoint.
     */
   var User: js.UndefOr[EndpointUser] = js.native
 }

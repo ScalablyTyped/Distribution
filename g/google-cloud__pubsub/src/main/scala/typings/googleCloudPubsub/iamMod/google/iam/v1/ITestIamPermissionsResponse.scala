@@ -12,9 +12,9 @@ trait ITestIamPermissionsResponse extends js.Object {
 
 object ITestIamPermissionsResponse {
   @scala.inline
-  def apply(permissions: js.Array[String] = null): ITestIamPermissionsResponse = {
+  def apply(permissions: js.UndefOr[Null | js.Array[String]] = js.undefined): ITestIamPermissionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
+    if (!js.isUndefined(permissions)) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITestIamPermissionsResponse]
   }
 }

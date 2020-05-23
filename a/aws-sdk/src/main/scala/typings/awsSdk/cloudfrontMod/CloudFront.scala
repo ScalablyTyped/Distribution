@@ -1,8 +1,8 @@
 package typings.awsSdk.cloudfrontMod
 
-import typings.awsSdk.GetDistributionRequestwai
-import typings.awsSdk.GetInvalidationRequestwai
-import typings.awsSdk.GetStreamingDistributionR
+import typings.awsSdk.anon.GetDistributionRequestwai
+import typings.awsSdk.anon.GetInvalidationRequestwai
+import typings.awsSdk.anon.GetStreamingDistributionR
 import typings.awsSdk.awsSdkStrings.distributionDeployed
 import typings.awsSdk.awsSdkStrings.invalidationCompleted
 import typings.awsSdk.awsSdkStrings.streamingDistributionDeployed

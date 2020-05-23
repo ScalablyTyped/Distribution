@@ -27,13 +27,13 @@ object HlsPackage {
   def apply(
     HlsManifests: listOfHlsManifest,
     Encryption: HlsEncryption = null,
-    SegmentDurationSeconds: Int | Double = null,
-    UseAudioRenditionGroup: js.UndefOr[Boolean] = js.undefined
+    SegmentDurationSeconds: js.UndefOr[integer] = js.undefined,
+    UseAudioRenditionGroup: js.UndefOr[boolean] = js.undefined
   ): HlsPackage = {
     val __obj = js.Dynamic.literal(HlsManifests = HlsManifests.asInstanceOf[js.Any])
     if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
-    if (SegmentDurationSeconds != null) __obj.updateDynamic("SegmentDurationSeconds")(SegmentDurationSeconds.asInstanceOf[js.Any])
-    if (!js.isUndefined(UseAudioRenditionGroup)) __obj.updateDynamic("UseAudioRenditionGroup")(UseAudioRenditionGroup.asInstanceOf[js.Any])
+    if (!js.isUndefined(SegmentDurationSeconds)) __obj.updateDynamic("SegmentDurationSeconds")(SegmentDurationSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(UseAudioRenditionGroup)) __obj.updateDynamic("UseAudioRenditionGroup")(UseAudioRenditionGroup.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HlsPackage]
   }
 }

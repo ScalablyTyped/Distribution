@@ -29,7 +29,7 @@ object NoticeNativeProps {
     marqueeProps: MarqueeProps = null,
     mode: closable | link = null,
     onPress: () => Unit = null,
-    style: StyleProp[ViewStyle] = null,
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     styles: Partial[NoticeBarStyle] = null
   ): NoticeNativeProps = {
     val __obj = js.Dynamic.literal()
@@ -38,7 +38,7 @@ object NoticeNativeProps {
     if (marqueeProps != null) __obj.updateDynamic("marqueeProps")(marqueeProps.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoticeNativeProps]
   }

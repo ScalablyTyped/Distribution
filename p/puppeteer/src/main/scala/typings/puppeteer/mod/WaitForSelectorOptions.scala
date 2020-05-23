@@ -23,13 +23,13 @@ object WaitForSelectorOptions {
   @scala.inline
   def apply(
     hidden: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined
   ): WaitForSelectorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WaitForSelectorOptions]
   }
 }

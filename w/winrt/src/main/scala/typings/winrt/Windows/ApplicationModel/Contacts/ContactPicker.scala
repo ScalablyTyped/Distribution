@@ -7,18 +7,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.Contacts.ContactPicker")
-@js.native
-class ContactPicker () extends IContactPicker {
-  /* CompleteClass */
-  override var commitButtonText: String = js.native
-  /* CompleteClass */
-  override var desiredFields: IVector[String] = js.native
-  /* CompleteClass */
-  override var selectionMode: ContactSelectionMode = js.native
-  /* CompleteClass */
-  override def pickMultipleContactsAsync(): IAsyncOperation[IVectorView[ContactInformation]] = js.native
-  /* CompleteClass */
-  override def pickSingleContactAsync(): IAsyncOperation[ContactInformation] = js.native
+trait ContactPicker extends IContactPicker
+
+object ContactPicker {
+  @scala.inline
+  def apply(
+    commitButtonText: String,
+    desiredFields: IVector[String],
+    pickMultipleContactsAsync: () => IAsyncOperation[IVectorView[ContactInformation]],
+    pickSingleContactAsync: () => IAsyncOperation[ContactInformation],
+    selectionMode: ContactSelectionMode
+  ): ContactPicker = {
+    val __obj = js.Dynamic.literal(commitButtonText = commitButtonText.asInstanceOf[js.Any], desiredFields = desiredFields.asInstanceOf[js.Any], pickMultipleContactsAsync = js.Any.fromFunction0(pickMultipleContactsAsync), pickSingleContactAsync = js.Any.fromFunction0(pickSingleContactAsync), selectionMode = selectionMode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ContactPicker]
+  }
 }
 

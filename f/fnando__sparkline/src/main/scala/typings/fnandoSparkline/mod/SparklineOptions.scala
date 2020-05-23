@@ -32,18 +32,18 @@ trait SparklineOptions
 object SparklineOptions {
   @scala.inline
   def apply(
-    cursorwidth: Int | Double = null,
+    cursorwidth: js.UndefOr[Double] = js.undefined,
     interactive: js.UndefOr[Boolean] = js.undefined,
     onmousemove: /* event */ MouseEvent => Unit = null,
     onmouseout: /* event */ MouseEvent => Unit = null,
-    spotRadius: Int | Double = null
+    spotRadius: js.UndefOr[Double] = js.undefined
   ): SparklineOptions = {
     val __obj = js.Dynamic.literal()
-    if (cursorwidth != null) __obj.updateDynamic("cursorwidth")(cursorwidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
+    if (!js.isUndefined(cursorwidth)) __obj.updateDynamic("cursorwidth")(cursorwidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.get.asInstanceOf[js.Any])
     if (onmousemove != null) __obj.updateDynamic("onmousemove")(js.Any.fromFunction1(onmousemove))
     if (onmouseout != null) __obj.updateDynamic("onmouseout")(js.Any.fromFunction1(onmouseout))
-    if (spotRadius != null) __obj.updateDynamic("spotRadius")(spotRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(spotRadius)) __obj.updateDynamic("spotRadius")(spotRadius.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparklineOptions]
   }
 }

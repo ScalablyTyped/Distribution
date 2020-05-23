@@ -1,10 +1,10 @@
 package typings.oracledb.mod
 
-import typings.oracledb.AnonAssignmentMethod
-import typings.oracledb.AnonCache
-import typings.oracledb.AnonIndex
-import typings.oracledb.AnonMethod
-import typings.oracledb.AnonName
+import typings.oracledb.anon.AssignmentMethod
+import typings.oracledb.anon.Cache
+import typings.oracledb.anon.Index
+import typings.oracledb.anon.Method
+import typings.oracledb.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,15 +18,15 @@ import scala.scalajs.js.annotation._
   */
 trait SodaMetadata extends js.Object {
   /** Object containing information related to the content column. */
-  var contentColumn: js.UndefOr[AnonCache] = js.undefined
+  var contentColumn: js.UndefOr[Cache] = js.undefined
   /** Object containing information related to the creation time column. */
-  var creationTimeColumn: js.UndefOr[AnonName] = js.undefined
+  var creationTimeColumn: js.UndefOr[Name] = js.undefined
   /** Object containing information related to the key column. */
-  var keyColumn: js.UndefOr[AnonAssignmentMethod] = js.undefined
+  var keyColumn: js.UndefOr[AssignmentMethod] = js.undefined
   /** Object containing information related to the last modified column. */
-  var lastModifiedColumn: js.UndefOr[AnonIndex] = js.undefined
+  var lastModifiedColumn: js.UndefOr[Index] = js.undefined
   /** Object containing information related to the media type column. */
-  var mediaTypeColumn: js.UndefOr[AnonName] = js.undefined
+  var mediaTypeColumn: js.UndefOr[Name] = js.undefined
   /** Specifies whether or not the collection is read-only. */
   var readOnly: js.UndefOr[Boolean] = js.undefined
   /** Name of the Oracle Database schema that owns the table or view to which the collection is mapped. */
@@ -34,7 +34,7 @@ trait SodaMetadata extends js.Object {
   /** Name of the table to which the collection is mapped. */
   var tableName: js.UndefOr[String] = js.undefined
   /** Object containing information related to the version column. */
-  var versionColumn: js.UndefOr[AnonMethod] = js.undefined
+  var versionColumn: js.UndefOr[Method] = js.undefined
   /** Name of the view to which the collection is mapped. */
   var viewName: js.UndefOr[String] = js.undefined
 }
@@ -42,15 +42,15 @@ trait SodaMetadata extends js.Object {
 object SodaMetadata {
   @scala.inline
   def apply(
-    contentColumn: AnonCache = null,
-    creationTimeColumn: AnonName = null,
-    keyColumn: AnonAssignmentMethod = null,
-    lastModifiedColumn: AnonIndex = null,
-    mediaTypeColumn: AnonName = null,
+    contentColumn: Cache = null,
+    creationTimeColumn: Name = null,
+    keyColumn: AssignmentMethod = null,
+    lastModifiedColumn: Index = null,
+    mediaTypeColumn: Name = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     schemaName: String = null,
     tableName: String = null,
-    versionColumn: AnonMethod = null,
+    versionColumn: Method = null,
     viewName: String = null
   ): SodaMetadata = {
     val __obj = js.Dynamic.literal()
@@ -59,7 +59,7 @@ object SodaMetadata {
     if (keyColumn != null) __obj.updateDynamic("keyColumn")(keyColumn.asInstanceOf[js.Any])
     if (lastModifiedColumn != null) __obj.updateDynamic("lastModifiedColumn")(lastModifiedColumn.asInstanceOf[js.Any])
     if (mediaTypeColumn != null) __obj.updateDynamic("mediaTypeColumn")(mediaTypeColumn.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName.asInstanceOf[js.Any])
     if (tableName != null) __obj.updateDynamic("tableName")(tableName.asInstanceOf[js.Any])
     if (versionColumn != null) __obj.updateDynamic("versionColumn")(versionColumn.asInstanceOf[js.Any])

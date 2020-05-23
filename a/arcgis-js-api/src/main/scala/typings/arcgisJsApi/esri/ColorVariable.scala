@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,8 +26,4 @@ trait ColorVariable extends VisualVariable {
   @JSName("type")
   val type_ColorVariable: typings.arcgisJsApi.arcgisJsApiStrings.color = js.native
 }
-
-@JSGlobal("__esri.ColorVariable")
-@js.native
-object ColorVariable extends TopLevel[ColorVariableConstructor]
 

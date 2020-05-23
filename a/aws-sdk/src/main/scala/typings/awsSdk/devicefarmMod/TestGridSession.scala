@@ -36,7 +36,7 @@ object TestGridSession {
   @scala.inline
   def apply(
     arn: DeviceFarmArn = null,
-    billingMinutes: Int | scala.Double = null,
+    billingMinutes: js.UndefOr[Double] = js.undefined,
     created: DateTime = null,
     ended: DateTime = null,
     seleniumProperties: String = null,
@@ -44,7 +44,7 @@ object TestGridSession {
   ): TestGridSession = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (billingMinutes != null) __obj.updateDynamic("billingMinutes")(billingMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(billingMinutes)) __obj.updateDynamic("billingMinutes")(billingMinutes.get.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (ended != null) __obj.updateDynamic("ended")(ended.asInstanceOf[js.Any])
     if (seleniumProperties != null) __obj.updateDynamic("seleniumProperties")(seleniumProperties.asInstanceOf[js.Any])

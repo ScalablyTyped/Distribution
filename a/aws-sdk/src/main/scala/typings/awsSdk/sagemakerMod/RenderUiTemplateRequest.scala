@@ -17,13 +17,14 @@ trait RenderUiTemplateRequest extends js.Object {
   /**
     * A Template object containing the worker UI template to render.
     */
-  var UiTemplate: typings.awsSdk.sagemakerMod.UiTemplate = js.native
+  var UiTemplate: js.UndefOr[typings.awsSdk.sagemakerMod.UiTemplate] = js.native
 }
 
 object RenderUiTemplateRequest {
   @scala.inline
-  def apply(RoleArn: RoleArn, Task: RenderableTask, UiTemplate: UiTemplate): RenderUiTemplateRequest = {
-    val __obj = js.Dynamic.literal(RoleArn = RoleArn.asInstanceOf[js.Any], Task = Task.asInstanceOf[js.Any], UiTemplate = UiTemplate.asInstanceOf[js.Any])
+  def apply(RoleArn: RoleArn, Task: RenderableTask, UiTemplate: UiTemplate = null): RenderUiTemplateRequest = {
+    val __obj = js.Dynamic.literal(RoleArn = RoleArn.asInstanceOf[js.Any], Task = Task.asInstanceOf[js.Any])
+    if (UiTemplate != null) __obj.updateDynamic("UiTemplate")(UiTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderUiTemplateRequest]
   }
 }

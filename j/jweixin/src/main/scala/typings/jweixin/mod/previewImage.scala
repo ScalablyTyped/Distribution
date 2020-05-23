@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object previewImage extends js.Object {
   /**
-  	 * 预览图片接口
-  	 */
+    * 预览图片接口
+    */
   def apply(params: IpreviewImage): Unit = js.native
 }
 

@@ -46,10 +46,10 @@ trait HealthCheck extends js.Object {
 object HealthCheck {
   @scala.inline
   def apply(
-    checkIntervalSec: Int | Double = null,
+    checkIntervalSec: js.UndefOr[Double] = js.undefined,
     creationTimestamp: String = null,
     description: String = null,
-    healthyThreshold: Int | Double = null,
+    healthyThreshold: js.UndefOr[Double] = js.undefined,
     httpHealthCheck: HTTPHealthCheck_ = null,
     httpsHealthCheck: HTTPSHealthCheck_ = null,
     id: String = null,
@@ -58,15 +58,15 @@ object HealthCheck {
     selfLink: String = null,
     sslHealthCheck: SSLHealthCheck = null,
     tcpHealthCheck: TCPHealthCheck = null,
-    timeoutSec: Int | Double = null,
+    timeoutSec: js.UndefOr[Double] = js.undefined,
     `type`: String = null,
-    unhealthyThreshold: Int | Double = null
+    unhealthyThreshold: js.UndefOr[Double] = js.undefined
   ): HealthCheck = {
     val __obj = js.Dynamic.literal()
-    if (checkIntervalSec != null) __obj.updateDynamic("checkIntervalSec")(checkIntervalSec.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkIntervalSec)) __obj.updateDynamic("checkIntervalSec")(checkIntervalSec.get.asInstanceOf[js.Any])
     if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (healthyThreshold != null) __obj.updateDynamic("healthyThreshold")(healthyThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(healthyThreshold)) __obj.updateDynamic("healthyThreshold")(healthyThreshold.get.asInstanceOf[js.Any])
     if (httpHealthCheck != null) __obj.updateDynamic("httpHealthCheck")(httpHealthCheck.asInstanceOf[js.Any])
     if (httpsHealthCheck != null) __obj.updateDynamic("httpsHealthCheck")(httpsHealthCheck.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
@@ -75,9 +75,9 @@ object HealthCheck {
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     if (sslHealthCheck != null) __obj.updateDynamic("sslHealthCheck")(sslHealthCheck.asInstanceOf[js.Any])
     if (tcpHealthCheck != null) __obj.updateDynamic("tcpHealthCheck")(tcpHealthCheck.asInstanceOf[js.Any])
-    if (timeoutSec != null) __obj.updateDynamic("timeoutSec")(timeoutSec.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutSec)) __obj.updateDynamic("timeoutSec")(timeoutSec.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (unhealthyThreshold != null) __obj.updateDynamic("unhealthyThreshold")(unhealthyThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(unhealthyThreshold)) __obj.updateDynamic("unhealthyThreshold")(unhealthyThreshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HealthCheck]
   }
 }

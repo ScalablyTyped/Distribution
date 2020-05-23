@@ -1,7 +1,7 @@
 package typings.awsSdk.elasticacheMod
 
-import typings.awsSdk.DescribeCacheClustersMess
-import typings.awsSdk.DescribeReplicationGroups
+import typings.awsSdk.anon.DescribeCacheClustersMess
+import typings.awsSdk.anon.DescribeReplicationGroups
 import typings.awsSdk.awsSdkStrings.cacheClusterAvailable
 import typings.awsSdk.awsSdkStrings.cacheClusterDeleted
 import typings.awsSdk.awsSdkStrings.replicationGroupAvailable
@@ -151,12 +151,12 @@ trait ElastiCache extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateCacheSubnetGroupResult, Unit]
   ): Request[CreateCacheSubnetGroupResult, AWSError] = js.native
   /**
-    * Global Datastore for Redis offers fully managed, fast, reliable and secure cross-region replication. Using Global Datastore for Redis, you can create cross-region read replica clusters for ElastiCache for Redis to enable low-latency reads and disaster recovery across regions. For more information, see Replication Across Regions Using Global Datastore.    The GlobalReplicationGroupId is the name of the Global Datastore.   The PrimaryReplicationGroupId represents the name of the primary cluster that accepts writes and will replicate updates to the secondary cluster.  
+    * Global Datastore for Redis offers fully managed, fast, reliable and secure cross-region replication. Using Global Datastore for Redis, you can create cross-region read replica clusters for ElastiCache for Redis to enable low-latency reads and disaster recovery across regions. For more information, see Replication Across Regions Using Global Datastore.    The GlobalReplicationGroupIdSuffix is the name of the Global Datastore.   The PrimaryReplicationGroupId represents the name of the primary cluster that accepts writes and will replicate updates to the secondary cluster.  
     */
   def createGlobalReplicationGroup(): Request[CreateGlobalReplicationGroupResult, AWSError] = js.native
   def createGlobalReplicationGroup(callback: js.Function2[/* err */ AWSError, /* data */ CreateGlobalReplicationGroupResult, Unit]): Request[CreateGlobalReplicationGroupResult, AWSError] = js.native
   /**
-    * Global Datastore for Redis offers fully managed, fast, reliable and secure cross-region replication. Using Global Datastore for Redis, you can create cross-region read replica clusters for ElastiCache for Redis to enable low-latency reads and disaster recovery across regions. For more information, see Replication Across Regions Using Global Datastore.    The GlobalReplicationGroupId is the name of the Global Datastore.   The PrimaryReplicationGroupId represents the name of the primary cluster that accepts writes and will replicate updates to the secondary cluster.  
+    * Global Datastore for Redis offers fully managed, fast, reliable and secure cross-region replication. Using Global Datastore for Redis, you can create cross-region read replica clusters for ElastiCache for Redis to enable low-latency reads and disaster recovery across regions. For more information, see Replication Across Regions Using Global Datastore.    The GlobalReplicationGroupIdSuffix is the name of the Global Datastore.   The PrimaryReplicationGroupId represents the name of the primary cluster that accepts writes and will replicate updates to the secondary cluster.  
     */
   def createGlobalReplicationGroup(params: CreateGlobalReplicationGroupMessage): Request[CreateGlobalReplicationGroupResult, AWSError] = js.native
   def createGlobalReplicationGroup(
@@ -278,12 +278,12 @@ trait ElastiCache extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Deleting a Global Datastore is a two-step process:    First, you must DisassociateGlobalReplicationGroup to remove the secondary clusters in the Global Datastore.   Once the Global Datastore contains only the primary cluster, you can use DeleteGlobalReplicationGroup API to delete the Global Datastore while retainining the primary cluster using Retain…= true.   Since the Global Datastore has only a primary cluster, you can delete the Global Datastore while retaining the primary by setting RetainPrimaryCluster=true. When you receive a successful response from this operation, Amazon ElastiCache immediately begins deleting the selected resources; you cannot cancel or revert this operation.  This operation is valid for Redis only. 
+    * Deleting a Global Datastore is a two-step process:    First, you must DisassociateGlobalReplicationGroup to remove the secondary clusters in the Global Datastore.   Once the Global Datastore contains only the primary cluster, you can use DeleteGlobalReplicationGroup API to delete the Global Datastore while retainining the primary cluster using Retain…= true.   Since the Global Datastore has only a primary cluster, you can delete the Global Datastore while retaining the primary by setting RetainPrimaryCluster=true. When you receive a successful response from this operation, Amazon ElastiCache immediately begins deleting the selected resources; you cannot cancel or revert this operation.
     */
   def deleteGlobalReplicationGroup(): Request[DeleteGlobalReplicationGroupResult, AWSError] = js.native
   def deleteGlobalReplicationGroup(callback: js.Function2[/* err */ AWSError, /* data */ DeleteGlobalReplicationGroupResult, Unit]): Request[DeleteGlobalReplicationGroupResult, AWSError] = js.native
   /**
-    * Deleting a Global Datastore is a two-step process:    First, you must DisassociateGlobalReplicationGroup to remove the secondary clusters in the Global Datastore.   Once the Global Datastore contains only the primary cluster, you can use DeleteGlobalReplicationGroup API to delete the Global Datastore while retainining the primary cluster using Retain…= true.   Since the Global Datastore has only a primary cluster, you can delete the Global Datastore while retaining the primary by setting RetainPrimaryCluster=true. When you receive a successful response from this operation, Amazon ElastiCache immediately begins deleting the selected resources; you cannot cancel or revert this operation.  This operation is valid for Redis only. 
+    * Deleting a Global Datastore is a two-step process:    First, you must DisassociateGlobalReplicationGroup to remove the secondary clusters in the Global Datastore.   Once the Global Datastore contains only the primary cluster, you can use DeleteGlobalReplicationGroup API to delete the Global Datastore while retainining the primary cluster using Retain…= true.   Since the Global Datastore has only a primary cluster, you can delete the Global Datastore while retaining the primary by setting RetainPrimaryCluster=true. When you receive a successful response from this operation, Amazon ElastiCache immediately begins deleting the selected resources; you cannot cancel or revert this operation.
     */
   def deleteGlobalReplicationGroup(params: DeleteGlobalReplicationGroupMessage): Request[DeleteGlobalReplicationGroupResult, AWSError] = js.native
   def deleteGlobalReplicationGroup(
@@ -527,12 +527,12 @@ trait ElastiCache extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateGlobalReplicationGroupResult, Unit]
   ): Request[DisassociateGlobalReplicationGroupResult, AWSError] = js.native
   /**
-    * Used to failover the primary region to a selected secondary region.
+    * Used to failover the primary region to a selected secondary region. The selected secondary region will be come primary, and all other clusters will become secondary.
     */
   def failoverGlobalReplicationGroup(): Request[FailoverGlobalReplicationGroupResult, AWSError] = js.native
   def failoverGlobalReplicationGroup(callback: js.Function2[/* err */ AWSError, /* data */ FailoverGlobalReplicationGroupResult, Unit]): Request[FailoverGlobalReplicationGroupResult, AWSError] = js.native
   /**
-    * Used to failover the primary region to a selected secondary region.
+    * Used to failover the primary region to a selected secondary region. The selected secondary region will be come primary, and all other clusters will become secondary.
     */
   def failoverGlobalReplicationGroup(params: FailoverGlobalReplicationGroupMessage): Request[FailoverGlobalReplicationGroupResult, AWSError] = js.native
   def failoverGlobalReplicationGroup(
@@ -654,12 +654,12 @@ trait ElastiCache extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyGlobalReplicationGroupResult, Unit]
   ): Request[ModifyGlobalReplicationGroupResult, AWSError] = js.native
   /**
-    * Modifies the settings for a replication group. For Redis (cluster mode enabled) clusters, this operation cannot be used to change a cluster's node type or engine version. For more information, see:    Scaling for Amazon ElastiCache for Redis (cluster mode enabled) in the ElastiCache User Guide    ModifyReplicationGroupShardConfiguration in the ElastiCache API Reference    This operation is valid for Redis only. 
+    * Modifies the settings for a replication group.    Scaling for Amazon ElastiCache for Redis (cluster mode enabled) in the ElastiCache User Guide    ModifyReplicationGroupShardConfiguration in the ElastiCache API Reference    This operation is valid for Redis only. 
     */
   def modifyReplicationGroup(): Request[ModifyReplicationGroupResult, AWSError] = js.native
   def modifyReplicationGroup(callback: js.Function2[/* err */ AWSError, /* data */ ModifyReplicationGroupResult, Unit]): Request[ModifyReplicationGroupResult, AWSError] = js.native
   /**
-    * Modifies the settings for a replication group. For Redis (cluster mode enabled) clusters, this operation cannot be used to change a cluster's node type or engine version. For more information, see:    Scaling for Amazon ElastiCache for Redis (cluster mode enabled) in the ElastiCache User Guide    ModifyReplicationGroupShardConfiguration in the ElastiCache API Reference    This operation is valid for Redis only. 
+    * Modifies the settings for a replication group.    Scaling for Amazon ElastiCache for Redis (cluster mode enabled) in the ElastiCache User Guide    ModifyReplicationGroupShardConfiguration in the ElastiCache API Reference    This operation is valid for Redis only. 
     */
   def modifyReplicationGroup(params: ModifyReplicationGroupMessage): Request[ModifyReplicationGroupResult, AWSError] = js.native
   def modifyReplicationGroup(
@@ -697,14 +697,14 @@ trait ElastiCache extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PurchaseReservedCacheNodesOfferingResult, Unit]
   ): Request[PurchaseReservedCacheNodesOfferingResult, AWSError] = js.native
   /**
-    * Redistribute slots to ensure unifirom distribution across existing shards in the cluster.
+    * Redistribute slots to ensure uniform distribution across existing shards in the cluster.
     */
   def rebalanceSlotsInGlobalReplicationGroup(): Request[RebalanceSlotsInGlobalReplicationGroupResult, AWSError] = js.native
   def rebalanceSlotsInGlobalReplicationGroup(
     callback: js.Function2[/* err */ AWSError, /* data */ RebalanceSlotsInGlobalReplicationGroupResult, Unit]
   ): Request[RebalanceSlotsInGlobalReplicationGroupResult, AWSError] = js.native
   /**
-    * Redistribute slots to ensure unifirom distribution across existing shards in the cluster.
+    * Redistribute slots to ensure uniform distribution across existing shards in the cluster.
     */
   def rebalanceSlotsInGlobalReplicationGroup(params: RebalanceSlotsInGlobalReplicationGroupMessage): Request[RebalanceSlotsInGlobalReplicationGroupResult, AWSError] = js.native
   def rebalanceSlotsInGlobalReplicationGroup(

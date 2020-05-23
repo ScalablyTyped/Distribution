@@ -1,7 +1,7 @@
 package typings.seen.mod
 
+import typings.std.Event
 import typings.std.EventListener
-import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,13 +19,13 @@ trait MouseEventOptions extends js.Object {
 object MouseEventOptions {
   @scala.inline
   def apply(
-    drag: /* evt */ Event_ => Unit = null,
-    dragEnd: /* evt */ Event_ => Unit = null,
-    dragStart: /* evt */ Event_ => Unit = null,
-    mouseDown: /* evt */ Event_ => Unit = null,
-    mouseMove: /* evt */ Event_ => Unit = null,
-    mouseUp: /* evt */ Event_ => Unit = null,
-    mouseWheel: /* evt */ Event_ => Unit = null
+    drag: /* evt */ Event => Unit = null,
+    dragEnd: /* evt */ Event => Unit = null,
+    dragStart: /* evt */ Event => Unit = null,
+    mouseDown: /* evt */ Event => Unit = null,
+    mouseMove: /* evt */ Event => Unit = null,
+    mouseUp: /* evt */ Event => Unit = null,
+    mouseWheel: /* evt */ Event => Unit = null
   ): MouseEventOptions = {
     val __obj = js.Dynamic.literal()
     if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction1(drag))

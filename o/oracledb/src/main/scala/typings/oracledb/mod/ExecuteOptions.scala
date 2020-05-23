@@ -1,6 +1,6 @@
 package typings.oracledb.mod
 
-import typings.oracledb.AnonType
+import typings.oracledb.anon.Type
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -53,7 +53,7 @@ trait ExecuteOptions extends js.Object {
     *          "HIRE_DETAILS": { type: oracledb.DEFAULT }  // override fetchAsString or fetchAsBuffer
     *      }
     */
-  var fetchInfo: js.UndefOr[Record[String, AnonType]] = js.undefined
+  var fetchInfo: js.UndefOr[Record[String, Type]] = js.undefined
   /**
     * The maximum number of rows that are fetched by a query with connection.execute() when not using a ResultSet.
     * Rows beyond this limit are not fetched from the database. A value of 0 means there is no limit.
@@ -98,20 +98,20 @@ object ExecuteOptions {
   def apply(
     autoCommit: js.UndefOr[Boolean] = js.undefined,
     extendedMetaData: js.UndefOr[Boolean] = js.undefined,
-    fetchArraySize: Int | Double = null,
-    fetchInfo: Record[String, AnonType] = null,
-    maxRows: Int | Double = null,
-    outFormat: Int | Double = null,
+    fetchArraySize: js.UndefOr[Double] = js.undefined,
+    fetchInfo: Record[String, Type] = null,
+    maxRows: js.UndefOr[Double] = js.undefined,
+    outFormat: js.UndefOr[Double] = js.undefined,
     resultSet: js.UndefOr[Boolean] = js.undefined
   ): ExecuteOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoCommit)) __obj.updateDynamic("autoCommit")(autoCommit.asInstanceOf[js.Any])
-    if (!js.isUndefined(extendedMetaData)) __obj.updateDynamic("extendedMetaData")(extendedMetaData.asInstanceOf[js.Any])
-    if (fetchArraySize != null) __obj.updateDynamic("fetchArraySize")(fetchArraySize.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCommit)) __obj.updateDynamic("autoCommit")(autoCommit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(extendedMetaData)) __obj.updateDynamic("extendedMetaData")(extendedMetaData.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetchArraySize)) __obj.updateDynamic("fetchArraySize")(fetchArraySize.get.asInstanceOf[js.Any])
     if (fetchInfo != null) __obj.updateDynamic("fetchInfo")(fetchInfo.asInstanceOf[js.Any])
-    if (maxRows != null) __obj.updateDynamic("maxRows")(maxRows.asInstanceOf[js.Any])
-    if (outFormat != null) __obj.updateDynamic("outFormat")(outFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(resultSet)) __obj.updateDynamic("resultSet")(resultSet.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRows)) __obj.updateDynamic("maxRows")(maxRows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(outFormat)) __obj.updateDynamic("outFormat")(outFormat.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resultSet)) __obj.updateDynamic("resultSet")(resultSet.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteOptions]
   }
 }

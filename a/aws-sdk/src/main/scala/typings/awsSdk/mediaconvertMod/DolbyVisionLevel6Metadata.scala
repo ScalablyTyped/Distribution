@@ -18,10 +18,13 @@ trait DolbyVisionLevel6Metadata extends js.Object {
 
 object DolbyVisionLevel6Metadata {
   @scala.inline
-  def apply(MaxCll: Int | Double = null, MaxFall: Int | Double = null): DolbyVisionLevel6Metadata = {
+  def apply(
+    MaxCll: js.UndefOr[integerMin0Max65535] = js.undefined,
+    MaxFall: js.UndefOr[integerMin0Max65535] = js.undefined
+  ): DolbyVisionLevel6Metadata = {
     val __obj = js.Dynamic.literal()
-    if (MaxCll != null) __obj.updateDynamic("MaxCll")(MaxCll.asInstanceOf[js.Any])
-    if (MaxFall != null) __obj.updateDynamic("MaxFall")(MaxFall.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxCll)) __obj.updateDynamic("MaxCll")(MaxCll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxFall)) __obj.updateDynamic("MaxFall")(MaxFall.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DolbyVisionLevel6Metadata]
   }
 }

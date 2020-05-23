@@ -2,6 +2,7 @@ package typings.awsSdkTypes
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
+import typings.awsSdkTypes.anon.Instantiable
 import typings.awsSdkTypes.awsSdkTypesStrings.ascii
 import typings.awsSdkTypes.awsSdkTypesStrings.latin1
 import typings.awsSdkTypes.awsSdkTypesStrings.utf8
@@ -45,7 +46,7 @@ object cryptoMod extends js.Object {
        with Instantiable1[/* secret */ SourceData, Hash]
   
   type SourceData = String | ArrayBuffer | ArrayBufferView
-  type StreamHasher[StreamType] = js.Function2[/* hashCtor */ AnonInstantiable, /* stream */ StreamType, js.Promise[Uint8Array]]
+  type StreamHasher[StreamType] = js.Function2[/* hashCtor */ Instantiable, /* stream */ StreamType, js.Promise[Uint8Array]]
   type randomValues = js.Function1[/* byteLength */ Double, js.Promise[Uint8Array]]
 }
 

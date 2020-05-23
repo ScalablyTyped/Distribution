@@ -4,7 +4,5 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CUI.Controls.SpinnerCommandProperties")
-@js.native
-class SpinnerCommandProperties () extends js.Object
+trait SpinnerCommandProperties extends js.Object
 

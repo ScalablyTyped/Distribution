@@ -27,15 +27,15 @@ trait WorkgroupConfiguration extends js.Object {
 object WorkgroupConfiguration {
   @scala.inline
   def apply(
-    bytesScannedCutoffPerQuery: Int | Double = null,
+    bytesScannedCutoffPerQuery: js.UndefOr[Double] = js.undefined,
     enforceWorkgroupConfiguration: js.UndefOr[Boolean] = js.undefined,
     publishCloudwatchMetricsEnabled: js.UndefOr[Boolean] = js.undefined,
     resultConfiguration: WorkgroupConfigurationResultConfiguration = null
   ): WorkgroupConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (bytesScannedCutoffPerQuery != null) __obj.updateDynamic("bytesScannedCutoffPerQuery")(bytesScannedCutoffPerQuery.asInstanceOf[js.Any])
-    if (!js.isUndefined(enforceWorkgroupConfiguration)) __obj.updateDynamic("enforceWorkgroupConfiguration")(enforceWorkgroupConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(publishCloudwatchMetricsEnabled)) __obj.updateDynamic("publishCloudwatchMetricsEnabled")(publishCloudwatchMetricsEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(bytesScannedCutoffPerQuery)) __obj.updateDynamic("bytesScannedCutoffPerQuery")(bytesScannedCutoffPerQuery.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enforceWorkgroupConfiguration)) __obj.updateDynamic("enforceWorkgroupConfiguration")(enforceWorkgroupConfiguration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(publishCloudwatchMetricsEnabled)) __obj.updateDynamic("publishCloudwatchMetricsEnabled")(publishCloudwatchMetricsEnabled.get.asInstanceOf[js.Any])
     if (resultConfiguration != null) __obj.updateDynamic("resultConfiguration")(resultConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkgroupConfiguration]
   }

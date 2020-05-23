@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   def apply(input: String): String = js.native
   /**
-  	 * Capitalize each word in a string
-  	 * @param input the string to capitalize
-  	 */
+    * Capitalize each word in a string
+    * @param input the string to capitalize
+    */
   def words(input: String): String = js.native
 }
 

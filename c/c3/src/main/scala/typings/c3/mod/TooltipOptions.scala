@@ -1,8 +1,8 @@
 package typings.c3.mod
 
-import typings.c3.AnonLeft
-import typings.c3.AnonName
-import typings.c3.AnonPositionShow
+import typings.c3.anon.Left
+import typings.c3.anon.Name
+import typings.c3.anon.PositionShow
 import typings.c3.c3Strings.asc
 import typings.c3.c3Strings.desc
 import typings.std.SVGElement
@@ -25,7 +25,7 @@ trait TooltipOptions extends js.Object {
       String
     ]
   ] = js.undefined
-  var format: js.UndefOr[AnonName] = js.undefined
+  var format: js.UndefOr[Name] = js.undefined
   /**
     * Set if tooltip is grouped or not for the data points.
     * Defaults to `true`.
@@ -33,7 +33,7 @@ trait TooltipOptions extends js.Object {
   var grouped: js.UndefOr[Boolean] = js.undefined
   /** Show the tooltips based on the horizontal position of the mouse. */
   var horizontal: js.UndefOr[Boolean] = js.undefined
-  var init: js.UndefOr[AnonPositionShow] = js.undefined
+  var init: js.UndefOr[PositionShow] = js.undefined
   /**
     * Set tooltip values order.
     */
@@ -50,7 +50,7 @@ trait TooltipOptions extends js.Object {
       /* width */ Double, 
       /* height */ Double, 
       /* element */ SVGElement, 
-      AnonLeft
+      Left
     ]
   ] = js.undefined
   /**
@@ -71,30 +71,32 @@ object TooltipOptions {
       /* color */ js.Function1[/* repeated */ js.Any, _], 
       String
     ] = null,
-    format: AnonName = null,
+    format: Name = null,
     grouped: js.UndefOr[Boolean] = js.undefined,
     horizontal: js.UndefOr[Boolean] = js.undefined,
-    init: AnonPositionShow = null,
-    order: desc | asc | js.Array[_] | (js.Function2[/* data1 */ js.Any, /* data2 */ js.Any, Double]) = null,
+    init: PositionShow = null,
+    order: js.UndefOr[
+      Null | desc | asc | js.Array[_] | (js.Function2[/* data1 */ js.Any, /* data2 */ js.Any, Double])
+    ] = js.undefined,
     position: js.ThisFunction4[
       /* this */ ChartInternal, 
       /* data */ Primitive, 
       /* width */ Double, 
       /* height */ Double, 
       /* element */ SVGElement, 
-      AnonLeft
+      Left
     ] = null,
     show: js.UndefOr[Boolean] = js.undefined
   ): TooltipOptions = {
     val __obj = js.Dynamic.literal()
     if (contents != null) __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(grouped)) __obj.updateDynamic("grouped")(grouped.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (!js.isUndefined(grouped)) __obj.updateDynamic("grouped")(grouped.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.get.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (!js.isUndefined(order)) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipOptions]
   }
 }

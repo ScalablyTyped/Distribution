@@ -1,6 +1,5 @@
 package typings.minappEnv
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +24,4 @@ trait Object extends js.Object {
     */
   def propertyIsEnumerable(v: PropertyKey): scala.Boolean = js.native
 }
-
-/**
-  * Provides functionality common to all JavaScript objects.
-  */
-@JSGlobal("Object")
-@js.native
-object Object extends TopLevel[ObjectConstructor]
 

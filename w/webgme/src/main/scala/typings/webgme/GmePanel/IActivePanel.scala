@@ -4,12 +4,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("GmePanel.IActivePanel")
-@js.native
-class IActivePanel () extends js.Object {
-  def getNodeID(): String = js.native
-  def onActivate(): Unit = js.native
-  def onDeactivate(): Unit = js.native
-  def setActive(isActive: Boolean): Unit = js.native
+trait IActivePanel extends js.Object {
+  def getNodeID(): String
+  def onActivate(): Unit
+  def onDeactivate(): Unit
+  def setActive(isActive: Boolean): Unit
+}
+
+object IActivePanel {
+  @scala.inline
+  def apply(
+    getNodeID: () => String,
+    onActivate: () => Unit,
+    onDeactivate: () => Unit,
+    setActive: Boolean => Unit
+  ): IActivePanel = {
+    val __obj = js.Dynamic.literal(getNodeID = js.Any.fromFunction0(getNodeID), onActivate = js.Any.fromFunction0(onActivate), onDeactivate = js.Any.fromFunction0(onDeactivate), setActive = js.Any.fromFunction1(setActive))
+    __obj.asInstanceOf[IActivePanel]
+  }
 }
 

@@ -12,9 +12,8 @@ import scala.scalajs.js.annotation._
   *
   * @constructor LokiEventEmitter
   */
-@JSGlobal("LokiEventEmitter")
 @js.native
-class LokiEventEmitter () extends js.Object {
+trait LokiEventEmitter extends js.Object {
   /**
     * Alias of LokiEventEmitter.prototype.on
     * addListener(eventName, listener) - adds a listener to the queue of callbacks associated to an event

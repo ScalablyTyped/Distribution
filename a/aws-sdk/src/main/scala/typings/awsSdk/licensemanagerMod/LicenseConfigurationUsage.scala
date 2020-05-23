@@ -36,7 +36,7 @@ object LicenseConfigurationUsage {
   @scala.inline
   def apply(
     AssociationTime: DateTime = null,
-    ConsumedLicenses: Int | Double = null,
+    ConsumedLicenses: js.UndefOr[BoxLong] = js.undefined,
     ResourceArn: String = null,
     ResourceOwnerId: String = null,
     ResourceStatus: String = null,
@@ -44,7 +44,7 @@ object LicenseConfigurationUsage {
   ): LicenseConfigurationUsage = {
     val __obj = js.Dynamic.literal()
     if (AssociationTime != null) __obj.updateDynamic("AssociationTime")(AssociationTime.asInstanceOf[js.Any])
-    if (ConsumedLicenses != null) __obj.updateDynamic("ConsumedLicenses")(ConsumedLicenses.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConsumedLicenses)) __obj.updateDynamic("ConsumedLicenses")(ConsumedLicenses.get.asInstanceOf[js.Any])
     if (ResourceArn != null) __obj.updateDynamic("ResourceArn")(ResourceArn.asInstanceOf[js.Any])
     if (ResourceOwnerId != null) __obj.updateDynamic("ResourceOwnerId")(ResourceOwnerId.asInstanceOf[js.Any])
     if (ResourceStatus != null) __obj.updateDynamic("ResourceStatus")(ResourceStatus.asInstanceOf[js.Any])

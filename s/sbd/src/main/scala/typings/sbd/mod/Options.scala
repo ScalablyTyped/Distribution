@@ -29,11 +29,11 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (abbreviations != null) __obj.updateDynamic("abbreviations")(abbreviations.asInstanceOf[js.Any])
     if (allowed_tags != null) __obj.updateDynamic("allowed_tags")(allowed_tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(html_boundaries)) __obj.updateDynamic("html_boundaries")(html_boundaries.asInstanceOf[js.Any])
+    if (!js.isUndefined(html_boundaries)) __obj.updateDynamic("html_boundaries")(html_boundaries.get.asInstanceOf[js.Any])
     if (html_boundaries_tags != null) __obj.updateDynamic("html_boundaries_tags")(html_boundaries_tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(newline_boundaries)) __obj.updateDynamic("newline_boundaries")(newline_boundaries.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserve_whitespace)) __obj.updateDynamic("preserve_whitespace")(preserve_whitespace.asInstanceOf[js.Any])
-    if (!js.isUndefined(sanitize)) __obj.updateDynamic("sanitize")(sanitize.asInstanceOf[js.Any])
+    if (!js.isUndefined(newline_boundaries)) __obj.updateDynamic("newline_boundaries")(newline_boundaries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserve_whitespace)) __obj.updateDynamic("preserve_whitespace")(preserve_whitespace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sanitize)) __obj.updateDynamic("sanitize")(sanitize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

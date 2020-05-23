@@ -23,8 +23,8 @@ package object mod {
   */
   type SystemStyleObject = typings.styledSystemCss.mod._SystemStyleObject | scala.Null
   /* Rewritten from type alias, can be one of: 
-    - typings.styledSystemCss.KinkeyofStandardCSSProper
-    - typings.styledSystemCss.PartialScaleThemeProperti
+    - typings.styledSystemCss.anon.KinkeyofStandardCSSProper
+    - typings.styledSystemCss.anon.PartialScaleThemeProperti
     - typings.styledSystemCss.mod.ThemeBreakPoints
     - org.scalablytyped.runtime.StringDictionary[
   / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @styled-system/css.@styled-system/css.Theme * / js.Object]

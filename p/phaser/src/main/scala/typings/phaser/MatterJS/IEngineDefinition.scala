@@ -70,21 +70,21 @@ trait IEngineDefinition extends js.Object {
 object IEngineDefinition {
   @scala.inline
   def apply(
-    constraintIterations: Int | Double = null,
+    constraintIterations: js.UndefOr[Double] = js.undefined,
     enableSleeping: js.UndefOr[Boolean] = js.undefined,
     grid: Grid = null,
-    positionIterations: Int | Double = null,
+    positionIterations: js.UndefOr[Double] = js.undefined,
     timing: IEngineTimingOptions = null,
-    velocityIterations: Int | Double = null,
+    velocityIterations: js.UndefOr[Double] = js.undefined,
     world: World = null
   ): IEngineDefinition = {
     val __obj = js.Dynamic.literal()
-    if (constraintIterations != null) __obj.updateDynamic("constraintIterations")(constraintIterations.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSleeping)) __obj.updateDynamic("enableSleeping")(enableSleeping.asInstanceOf[js.Any])
+    if (!js.isUndefined(constraintIterations)) __obj.updateDynamic("constraintIterations")(constraintIterations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSleeping)) __obj.updateDynamic("enableSleeping")(enableSleeping.get.asInstanceOf[js.Any])
     if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (positionIterations != null) __obj.updateDynamic("positionIterations")(positionIterations.asInstanceOf[js.Any])
+    if (!js.isUndefined(positionIterations)) __obj.updateDynamic("positionIterations")(positionIterations.get.asInstanceOf[js.Any])
     if (timing != null) __obj.updateDynamic("timing")(timing.asInstanceOf[js.Any])
-    if (velocityIterations != null) __obj.updateDynamic("velocityIterations")(velocityIterations.asInstanceOf[js.Any])
+    if (!js.isUndefined(velocityIterations)) __obj.updateDynamic("velocityIterations")(velocityIterations.get.asInstanceOf[js.Any])
     if (world != null) __obj.updateDynamic("world")(world.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEngineDefinition]
   }

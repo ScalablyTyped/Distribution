@@ -17,9 +17,11 @@ trait BackgroundRepeatProps[ThemeType /* <: Theme[TLengthStyledSystem] */] exten
 
 object BackgroundRepeatProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](backgroundRepeat: ResponsiveValue[BackgroundRepeatProperty, ThemeType] = null): BackgroundRepeatProps[ThemeType] = {
+  def apply[ThemeType](
+    backgroundRepeat: js.UndefOr[Null | (ResponsiveValue[BackgroundRepeatProperty, ThemeType])] = js.undefined
+  ): BackgroundRepeatProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
-    if (backgroundRepeat != null) __obj.updateDynamic("backgroundRepeat")(backgroundRepeat.asInstanceOf[js.Any])
+    if (!js.isUndefined(backgroundRepeat)) __obj.updateDynamic("backgroundRepeat")(backgroundRepeat.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundRepeatProps[ThemeType]]
   }
 }

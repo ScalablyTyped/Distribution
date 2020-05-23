@@ -1,5 +1,6 @@
 package typings.uirouterCore
 
+import typings.uirouterCore.anon.ActivateViews
 import typings.uirouterCore.hookRegistryMod.RegisteredHook
 import typings.uirouterCore.interfaceMod.Disposable
 import typings.uirouterCore.pathNodeMod.PathNode
@@ -62,12 +63,12 @@ object transitionServiceMod extends js.Object {
       *
       * @hidden
       */
-    var _deregisterHookFns: AnonActivateViews = js.native
+    var _deregisterHookFns: ActivateViews = js.native
     /** @hidden The transition hook types, such as `onEnter`, `onStart`, etc */
     var _eventTypes: js.Any = js.native
     /** @hidden */
     var _getEvents: js.Any = js.native
-    /** * @hidden */
+    /** @hidden */
     var _getPathTypes: js.Any = js.native
     /** @internalapi */
     var _pluginapi: TransitionServicePluginAPI = js.native

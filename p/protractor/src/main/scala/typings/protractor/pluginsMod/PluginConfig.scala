@@ -17,7 +17,7 @@ trait PluginConfig
 object PluginConfig {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     _package: String = null,
     `inline`: ProtractorPlugin = null,
     name: String = null,

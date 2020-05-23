@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.clamp
 import typings.arcgisJsApi.arcgisJsApiStrings.mirror
 import typings.arcgisJsApi.arcgisJsApiStrings.repeat
@@ -48,8 +47,4 @@ trait MeshTexture extends Accessor {
     */
   var wrap: clamp | repeat | mirror | SeparableWrapModes = js.native
 }
-
-@JSGlobal("__esri.MeshTexture")
-@js.native
-object MeshTexture extends TopLevel[MeshTextureConstructor]
 

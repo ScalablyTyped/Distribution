@@ -1,6 +1,6 @@
 package typings.xmlJs.mod
 
-import typings.xmlJs.AnonAttributesDeclarationAttributes
+import typings.xmlJs.anon.AttributesDeclarationAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ trait Element extends js.Object {
   var attributes: js.UndefOr[Attributes] = js.undefined
   var cdata: js.UndefOr[String] = js.undefined
   var comment: js.UndefOr[String] = js.undefined
-  var declaration: js.UndefOr[AnonAttributesDeclarationAttributes] = js.undefined
+  var declaration: js.UndefOr[AttributesDeclarationAttributes] = js.undefined
   var doctype: js.UndefOr[String] = js.undefined
   var elements: js.UndefOr[js.Array[Element]] = js.undefined
   var instruction: js.UndefOr[String] = js.undefined
@@ -24,7 +24,7 @@ object Element {
     attributes: Attributes = null,
     cdata: String = null,
     comment: String = null,
-    declaration: AnonAttributesDeclarationAttributes = null,
+    declaration: AttributesDeclarationAttributes = null,
     doctype: String = null,
     elements: js.Array[Element] = null,
     instruction: String = null,

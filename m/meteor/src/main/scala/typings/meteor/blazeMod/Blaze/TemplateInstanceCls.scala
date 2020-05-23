@@ -3,6 +3,7 @@ package typings.meteor.blazeMod.Blaze
 import typings.meteor.Meteor.SubscriptionHandle
 import typings.meteor.Tracker.Computation
 import typings.std.HTMLElement
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation._
 class TemplateInstanceCls protected () extends TemplateInstance {
   def this(view: View) = this()
   /* CompleteClass */
-  override var data: js.Object = js.native
+  override var data: Record[String, _] = js.native
   /* CompleteClass */
   override var firstNode: js.Object = js.native
   /* CompleteClass */

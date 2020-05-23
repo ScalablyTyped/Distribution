@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the client-side equivalent of the ASPxComboBox control.
   */
-@JSGlobal("ASPxClientComboBox")
 @js.native
-class ASPxClientComboBox () extends ASPxClientDropDownEditBase {
+trait ASPxClientComboBox extends ASPxClientDropDownEditBase {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -182,16 +181,5 @@ class ASPxClientComboBox () extends ASPxClientDropDownEditBase {
     */
   def SetSelectedItem(item: ASPxClientListEditItem): Unit = js.native
   def SetText(text: String, applyFilter: Boolean): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("ASPxClientComboBox")
-@js.native
-object ASPxClientComboBox extends js.Object {
-  /**
-    * Converts the specified object to the ASPxClientComboBox type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): ASPxClientComboBox = js.native
 }
 

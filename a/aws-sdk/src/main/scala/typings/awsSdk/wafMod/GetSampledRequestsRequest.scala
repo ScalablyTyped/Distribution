@@ -15,7 +15,7 @@ trait GetSampledRequestsRequest extends js.Object {
     */
   var RuleId: ResourceId = js.native
   /**
-    * The start date and time and the end date and time of the range for which you want GetSampledRequests to return a sample of requests. Specify the date and time in the following format: "2016-09-27T14:50Z". You can specify any time range in the previous three hours.
+    * The start date and time and the end date and time of the range for which you want GetSampledRequests to return a sample of requests. You must specify the times in Coordinated Universal Time (UTC) format. UTC format includes the special designator, Z. For example, "2016-09-27T14:50Z". You can specify any time range in the previous three hours.
     */
   var TimeWindow: typings.awsSdk.wafMod.TimeWindow = js.native
   /**

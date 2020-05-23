@@ -26,34 +26,34 @@ object ISliderOptions {
   def apply(
     binding: js.UndefOr[Boolean] = js.undefined,
     clickSelect: js.UndefOr[Boolean] = js.undefined,
-    decimal: Int | Double = null,
+    decimal: js.UndefOr[Double] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     disabledClass: String = null,
     doubleSided: js.UndefOr[Boolean] = js.undefined,
     draggable: js.UndefOr[Boolean] = js.undefined,
-    end: Int | Double = null,
-    initialEnd: Int | Double = null,
-    initialStart: Int | Double = null,
-    moveTime: Int | Double = null,
-    start: Int | Double = null,
-    step: Int | Double = null,
+    end: js.UndefOr[Double] = js.undefined,
+    initialEnd: js.UndefOr[Double] = js.undefined,
+    initialStart: js.UndefOr[Double] = js.undefined,
+    moveTime: js.UndefOr[Double] = js.undefined,
+    start: js.UndefOr[Double] = js.undefined,
+    step: js.UndefOr[Double] = js.undefined,
     vertical: js.UndefOr[Boolean] = js.undefined
   ): ISliderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(binding)) __obj.updateDynamic("binding")(binding.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickSelect)) __obj.updateDynamic("clickSelect")(clickSelect.asInstanceOf[js.Any])
-    if (decimal != null) __obj.updateDynamic("decimal")(decimal.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(binding)) __obj.updateDynamic("binding")(binding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickSelect)) __obj.updateDynamic("clickSelect")(clickSelect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(decimal)) __obj.updateDynamic("decimal")(decimal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (disabledClass != null) __obj.updateDynamic("disabledClass")(disabledClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(doubleSided)) __obj.updateDynamic("doubleSided")(doubleSided.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (initialEnd != null) __obj.updateDynamic("initialEnd")(initialEnd.asInstanceOf[js.Any])
-    if (initialStart != null) __obj.updateDynamic("initialStart")(initialStart.asInstanceOf[js.Any])
-    if (moveTime != null) __obj.updateDynamic("moveTime")(moveTime.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleSided)) __obj.updateDynamic("doubleSided")(doubleSided.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialEnd)) __obj.updateDynamic("initialEnd")(initialEnd.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialStart)) __obj.updateDynamic("initialStart")(initialStart.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(moveTime)) __obj.updateDynamic("moveTime")(moveTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISliderOptions]
   }
 }

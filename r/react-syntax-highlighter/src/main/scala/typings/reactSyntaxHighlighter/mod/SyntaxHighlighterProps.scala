@@ -24,14 +24,14 @@ trait SyntaxHighlighterProps
 object SyntaxHighlighterProps {
   @scala.inline
   def apply(
-    StringDictionary: /* spread */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     codeTagProps: HTMLProps[HTMLElement] = null,
     customStyle: js.Any = null,
     language: String = null,
     lineNumberStyle: js.Any = null,
     lineProps: lineTagPropsFunction | HTMLProps[HTMLElement] = null,
     showLineNumbers: js.UndefOr[Boolean] = js.undefined,
-    startingLineNumber: Int | Double = null,
+    startingLineNumber: js.UndefOr[Double] = js.undefined,
     style: js.Any = null,
     useInlineStyles: js.UndefOr[Boolean] = js.undefined
   ): SyntaxHighlighterProps = {
@@ -42,10 +42,10 @@ object SyntaxHighlighterProps {
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (lineNumberStyle != null) __obj.updateDynamic("lineNumberStyle")(lineNumberStyle.asInstanceOf[js.Any])
     if (lineProps != null) __obj.updateDynamic("lineProps")(lineProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLineNumbers)) __obj.updateDynamic("showLineNumbers")(showLineNumbers.asInstanceOf[js.Any])
-    if (startingLineNumber != null) __obj.updateDynamic("startingLineNumber")(startingLineNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLineNumbers)) __obj.updateDynamic("showLineNumbers")(showLineNumbers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startingLineNumber)) __obj.updateDynamic("startingLineNumber")(startingLineNumber.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(useInlineStyles)) __obj.updateDynamic("useInlineStyles")(useInlineStyles.asInstanceOf[js.Any])
+    if (!js.isUndefined(useInlineStyles)) __obj.updateDynamic("useInlineStyles")(useInlineStyles.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyntaxHighlighterProps]
   }
 }

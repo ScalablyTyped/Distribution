@@ -90,28 +90,28 @@ object CrittersOptions {
     external: js.UndefOr[Boolean] = js.undefined,
     fonts: js.UndefOr[Boolean] = js.undefined,
     inlineFonts: js.UndefOr[Boolean] = js.undefined,
-    inlineThreshold: Int | Double = null,
+    inlineThreshold: js.UndefOr[Double] = js.undefined,
     keyframes: critical | all | none = null,
     mergeStylesheets: js.UndefOr[Boolean] = js.undefined,
-    minimumExternalSize: Int | Double = null,
+    minimumExternalSize: js.UndefOr[Double] = js.undefined,
     noscriptFallback: js.UndefOr[Boolean] = js.undefined,
     preload: body | media | swap | js_ | `js-lazy` = null,
     preloadFonts: js.UndefOr[Boolean] = js.undefined,
     pruneSource: js.UndefOr[Boolean] = js.undefined
   ): CrittersOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
-    if (!js.isUndefined(external)) __obj.updateDynamic("external")(external.asInstanceOf[js.Any])
-    if (!js.isUndefined(fonts)) __obj.updateDynamic("fonts")(fonts.asInstanceOf[js.Any])
-    if (!js.isUndefined(inlineFonts)) __obj.updateDynamic("inlineFonts")(inlineFonts.asInstanceOf[js.Any])
-    if (inlineThreshold != null) __obj.updateDynamic("inlineThreshold")(inlineThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(external)) __obj.updateDynamic("external")(external.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fonts)) __obj.updateDynamic("fonts")(fonts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inlineFonts)) __obj.updateDynamic("inlineFonts")(inlineFonts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inlineThreshold)) __obj.updateDynamic("inlineThreshold")(inlineThreshold.get.asInstanceOf[js.Any])
     if (keyframes != null) __obj.updateDynamic("keyframes")(keyframes.asInstanceOf[js.Any])
-    if (!js.isUndefined(mergeStylesheets)) __obj.updateDynamic("mergeStylesheets")(mergeStylesheets.asInstanceOf[js.Any])
-    if (minimumExternalSize != null) __obj.updateDynamic("minimumExternalSize")(minimumExternalSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(noscriptFallback)) __obj.updateDynamic("noscriptFallback")(noscriptFallback.asInstanceOf[js.Any])
+    if (!js.isUndefined(mergeStylesheets)) __obj.updateDynamic("mergeStylesheets")(mergeStylesheets.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumExternalSize)) __obj.updateDynamic("minimumExternalSize")(minimumExternalSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noscriptFallback)) __obj.updateDynamic("noscriptFallback")(noscriptFallback.get.asInstanceOf[js.Any])
     if (preload != null) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
-    if (!js.isUndefined(preloadFonts)) __obj.updateDynamic("preloadFonts")(preloadFonts.asInstanceOf[js.Any])
-    if (!js.isUndefined(pruneSource)) __obj.updateDynamic("pruneSource")(pruneSource.asInstanceOf[js.Any])
+    if (!js.isUndefined(preloadFonts)) __obj.updateDynamic("preloadFonts")(preloadFonts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pruneSource)) __obj.updateDynamic("pruneSource")(pruneSource.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrittersOptions]
   }
 }

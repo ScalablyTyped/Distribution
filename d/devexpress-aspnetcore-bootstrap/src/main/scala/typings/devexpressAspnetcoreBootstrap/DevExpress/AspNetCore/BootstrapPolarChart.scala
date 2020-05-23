@@ -22,9 +22,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapPolarChart")
 @js.native
-class BootstrapPolarChart () extends Control {
+trait BootstrapPolarChart extends Control {
   def exportTo(format: String, fileName: String): Unit = js.native
   def getDataSource(): js.Any = js.native
   def getInstance(): js.Any = js.native

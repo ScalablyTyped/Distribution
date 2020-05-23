@@ -11,29 +11,14 @@ import scala.scalajs.js.annotation._
   * @property alt {H.geo.Altitude} - The altitude coordinate.
   * @property ctx {H.geo.AltitudeContext} - The altitude context.
   */
-@JSGlobal("H.geo.Point")
 @js.native
-class Point protected ()
+trait Point
   extends AbstractGeometry
      with IPoint {
-  /**
-    * Constructor
-    * @property lat {H.geo.Latitude} - The latitude coordinate.
-    * @property lng {H.geo.Longitude} - The longitude coordinate.
-    * @property opt_alt {H.geo.Altitude=} - The altitude coordinate.
-    * @property opt_ctx {H.geo.AltitudeContext=} - The altitude context.
-    */
-  def this(lat: Latitude, lng: Longitude) = this()
-  def this(lat: Latitude, lng: Longitude, opt_alt: Altitude) = this()
-  def this(lat: Latitude, lng: Longitude, opt_alt: Altitude, opt_ctx: AltitudeContext) = this()
   @JSName("alt")
   var alt_Point: Altitude = js.native
   @JSName("ctx")
   var ctx_Point: AltitudeContext = js.native
-  /* CompleteClass */
-  override var lat: Latitude = js.native
-  /* CompleteClass */
-  override var lng: Longitude = js.native
   /**
     * To calculate the distance between this point and the supplied other point. The method uses the Haversine formula. The altitude is not considered.
     * @param other {H.geo.IPoint}
@@ -56,28 +41,5 @@ class Point protected ()
     */
   def walk(bearing: Double, distance: Double): Point = js.native
   def walk(bearing: Double, distance: Double, opt_overGreatCircle: Boolean): Point = js.native
-}
-
-/* static members */
-@JSGlobal("H.geo.Point")
-@js.native
-object Point extends js.Object {
-  /**
-    * This method creates a Point instance from a given IPoint object.
-    * @param iPoint {H.geo.IPoint} - The IPoint object to use
-    * @returns {H.geo.Point} - the created Point instance
-    */
-  def fromIPoint(iPoint: IPoint): Point = js.native
-  /**
-    * This method validates the given IPoint. It checks, if lat, lng, alt and ctx have valid types. Additionally the value of the lat property is clamped into a range of -90 ... +90
-    * and the value of the lng property is modulo into a range of -180 ... +180 plus validates the values of the alt and ctx properties
-    * @param point {H.geo.IPoint} - The point to validate
-    * @param opt_caller {Function=} - The caller to use for InvalidArgumentError. If omitted no error is thrown
-    * @param opt_argNr {number=} - The argument number to use for InvalidArgumentError.
-    * @returns {boolean} - if the given point could validate
-    */
-  def validate(point: IPoint): Boolean = js.native
-  def validate(point: IPoint, opt_caller: js.Function0[Unit]): Boolean = js.native
-  def validate(point: IPoint, opt_caller: js.Function0[Unit], opt_argNr: Double): Boolean = js.native
 }
 

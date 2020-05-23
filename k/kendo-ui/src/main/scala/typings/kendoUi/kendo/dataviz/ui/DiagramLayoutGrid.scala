@@ -15,18 +15,18 @@ trait DiagramLayoutGrid extends js.Object {
 object DiagramLayoutGrid {
   @scala.inline
   def apply(
-    componentSpacingX: Int | Double = null,
-    componentSpacingY: Int | Double = null,
-    offsetX: Int | Double = null,
-    offsetY: Int | Double = null,
-    width: Int | Double = null
+    componentSpacingX: js.UndefOr[Double] = js.undefined,
+    componentSpacingY: js.UndefOr[Double] = js.undefined,
+    offsetX: js.UndefOr[Double] = js.undefined,
+    offsetY: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): DiagramLayoutGrid = {
     val __obj = js.Dynamic.literal()
-    if (componentSpacingX != null) __obj.updateDynamic("componentSpacingX")(componentSpacingX.asInstanceOf[js.Any])
-    if (componentSpacingY != null) __obj.updateDynamic("componentSpacingY")(componentSpacingY.asInstanceOf[js.Any])
-    if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX.asInstanceOf[js.Any])
-    if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(componentSpacingX)) __obj.updateDynamic("componentSpacingX")(componentSpacingX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(componentSpacingY)) __obj.updateDynamic("componentSpacingY")(componentSpacingY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetX)) __obj.updateDynamic("offsetX")(offsetX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetY)) __obj.updateDynamic("offsetY")(offsetY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramLayoutGrid]
   }
 }

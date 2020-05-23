@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.Diagram
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,23 +29,6 @@ object PortVisibility extends js.Object {
   //Set the port visibility as Visible
   @js.native
   sealed trait Visible extends PortVisibility
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PortVisibility with Double] = js.native
-  /* 3 */ @js.native
-  object Connect extends TopLevel[Connect with Double]
-  
-  /* 4 */ @js.native
-  object Default extends TopLevel[Default with Double]
-  
-  /* 1 */ @js.native
-  object Hidden extends TopLevel[Hidden with Double]
-  
-  /* 2 */ @js.native
-  object Hover extends TopLevel[Hover with Double]
-  
-  /* 0 */ @js.native
-  object Visible extends TopLevel[Visible with Double]
   
 }
 

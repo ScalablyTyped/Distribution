@@ -11,18 +11,23 @@ import scala.scalajs.js.annotation._
   * @class
   * @memberof PIXI
   */
-@JSGlobal("PIXI.TimeLimiter")
-@js.native
-class TimeLimiter protected () extends js.Object {
-  def this(maxMilliseconds: Double) = this()
+trait TimeLimiter extends js.Object {
   /**
     * Checks to see if another item can be uploaded. This should only be called once per item.
     * @return {boolean} If the item is allowed to be uploaded.
     */
-  def allowedToUpload(): Boolean = js.native
+  def allowedToUpload(): Boolean
   /**
     * Resets any counting properties to start fresh on a new frame.
     */
-  def beginFrame(): Unit = js.native
+  def beginFrame(): Unit
+}
+
+object TimeLimiter {
+  @scala.inline
+  def apply(allowedToUpload: () => Boolean, beginFrame: () => Unit): TimeLimiter = {
+    val __obj = js.Dynamic.literal(allowedToUpload = js.Any.fromFunction0(allowedToUpload), beginFrame = js.Any.fromFunction0(beginFrame))
+    __obj.asInstanceOf[TimeLimiter]
+  }
 }
 

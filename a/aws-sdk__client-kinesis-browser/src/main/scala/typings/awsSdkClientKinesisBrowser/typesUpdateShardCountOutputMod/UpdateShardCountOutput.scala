@@ -30,14 +30,14 @@ object UpdateShardCountOutput {
   @scala.inline
   def apply(
     $metadata: ResponseMetadata,
-    CurrentShardCount: Int | Double = null,
+    CurrentShardCount: js.UndefOr[Double] = js.undefined,
     StreamName: String = null,
-    TargetShardCount: Int | Double = null
+    TargetShardCount: js.UndefOr[Double] = js.undefined
   ): UpdateShardCountOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
-    if (CurrentShardCount != null) __obj.updateDynamic("CurrentShardCount")(CurrentShardCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(CurrentShardCount)) __obj.updateDynamic("CurrentShardCount")(CurrentShardCount.get.asInstanceOf[js.Any])
     if (StreamName != null) __obj.updateDynamic("StreamName")(StreamName.asInstanceOf[js.Any])
-    if (TargetShardCount != null) __obj.updateDynamic("TargetShardCount")(TargetShardCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(TargetShardCount)) __obj.updateDynamic("TargetShardCount")(TargetShardCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateShardCountOutput]
   }
 }

@@ -43,18 +43,18 @@ object FontWarnings {
   def apply(
     HTML: HTMLSnippets = null,
     Message: HTMLMessages = null,
-    fadeoutSteps: Int | Double = null,
-    fadeoutTime: Int | Double = null,
+    fadeoutSteps: js.UndefOr[Double] = js.undefined,
+    fadeoutTime: js.UndefOr[Double] = js.undefined,
     messageStyle: js.Any = null,
-    removeAfter: Int | Double = null
+    removeAfter: js.UndefOr[Double] = js.undefined
   ): FontWarnings = {
     val __obj = js.Dynamic.literal()
     if (HTML != null) __obj.updateDynamic("HTML")(HTML.asInstanceOf[js.Any])
     if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
-    if (fadeoutSteps != null) __obj.updateDynamic("fadeoutSteps")(fadeoutSteps.asInstanceOf[js.Any])
-    if (fadeoutTime != null) __obj.updateDynamic("fadeoutTime")(fadeoutTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(fadeoutSteps)) __obj.updateDynamic("fadeoutSteps")(fadeoutSteps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fadeoutTime)) __obj.updateDynamic("fadeoutTime")(fadeoutTime.get.asInstanceOf[js.Any])
     if (messageStyle != null) __obj.updateDynamic("messageStyle")(messageStyle.asInstanceOf[js.Any])
-    if (removeAfter != null) __obj.updateDynamic("removeAfter")(removeAfter.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeAfter)) __obj.updateDynamic("removeAfter")(removeAfter.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontWarnings]
   }
 }

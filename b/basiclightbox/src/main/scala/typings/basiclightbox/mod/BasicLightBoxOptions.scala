@@ -35,7 +35,7 @@ object BasicLightBoxOptions {
   ): BasicLightBoxOptions = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.asInstanceOf[js.Any])
+    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.get.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
     __obj.asInstanceOf[BasicLightBoxOptions]

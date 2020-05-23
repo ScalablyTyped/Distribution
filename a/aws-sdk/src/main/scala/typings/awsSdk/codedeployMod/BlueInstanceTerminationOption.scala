@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BlueInstanceTerminationOption extends js.Object {
   /**
-    * The action to take on instances in the original environment after a successful blue/green deployment.   TERMINATE: Instances are terminated after a specified wait time.   KEEP_ALIVE: Instances are left running after they are deregistered from the load balancer and removed from the deployment group.  
+    * The action to take on instances in the original environment after a successful blue/green deployment.    TERMINATE: Instances are terminated after a specified wait time.    KEEP_ALIVE: Instances are left running after they are deregistered from the load balancer and removed from the deployment group.  
     */
   var action: js.UndefOr[InstanceAction] = js.native
   /**
@@ -18,10 +18,10 @@ trait BlueInstanceTerminationOption extends js.Object {
 
 object BlueInstanceTerminationOption {
   @scala.inline
-  def apply(action: InstanceAction = null, terminationWaitTimeInMinutes: Int | Double = null): BlueInstanceTerminationOption = {
+  def apply(action: InstanceAction = null, terminationWaitTimeInMinutes: js.UndefOr[Duration] = js.undefined): BlueInstanceTerminationOption = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (terminationWaitTimeInMinutes != null) __obj.updateDynamic("terminationWaitTimeInMinutes")(terminationWaitTimeInMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(terminationWaitTimeInMinutes)) __obj.updateDynamic("terminationWaitTimeInMinutes")(terminationWaitTimeInMinutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlueInstanceTerminationOption]
   }
 }

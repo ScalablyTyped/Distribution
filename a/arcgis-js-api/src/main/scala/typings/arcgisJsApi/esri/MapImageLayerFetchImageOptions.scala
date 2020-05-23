@@ -40,14 +40,14 @@ object MapImageLayerFetchImageOptions {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    pixelRatio: Int | Double = null,
-    rotation: Int | Double = null,
+    pixelRatio: js.UndefOr[Double] = js.undefined,
+    rotation: js.UndefOr[Double] = js.undefined,
     signal: AbortSignal = null,
     timeExtent: js.Any = null
   ): MapImageLayerFetchImageOptions = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (!js.isUndefined(pixelRatio)) __obj.updateDynamic("pixelRatio")(pixelRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
     if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapImageLayerFetchImageOptions]

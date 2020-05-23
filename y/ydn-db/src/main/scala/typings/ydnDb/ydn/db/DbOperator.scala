@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ydn.db.DbOperator")
 @js.native
-class DbOperator () extends js.Object {
+trait DbOperator extends js.Object {
   def add(store_name: String, value: js.Any): Request = js.native
   def add(store_name: String, value: js.Any, key: js.Any): Request = js.native
   def clear(store_name: String): Request = js.native

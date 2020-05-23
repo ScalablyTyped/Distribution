@@ -1,6 +1,6 @@
 package typings.webpack.mod.DllReferencePlugin
 
-import typings.webpack.AnonContent
+import typings.webpack.anon.Content
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait Options extends js.Object {
   /**
     * An object containing `content` and `name`.
     */
-  var manifest: AnonContent | String
+  var manifest: Content | String
   /**
     * The name where the DLL is exposed.
     *
@@ -48,7 +48,7 @@ object Options {
   @scala.inline
   def apply(
     context: String,
-    manifest: AnonContent | String,
+    manifest: Content | String,
     content: js.Any = null,
     name: String = null,
     scope: String = null,

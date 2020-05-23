@@ -39,12 +39,12 @@ object GetFilterResponse {
     FindingCriteria: FindingCriteria,
     Name: FilterName,
     Description: FilterDescription = null,
-    Rank: Int | scala.Double = null,
+    Rank: js.UndefOr[FilterRank] = js.undefined,
     Tags: TagMap = null
   ): GetFilterResponse = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], FindingCriteria = FindingCriteria.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Rank != null) __obj.updateDynamic("Rank")(Rank.asInstanceOf[js.Any])
+    if (!js.isUndefined(Rank)) __obj.updateDynamic("Rank")(Rank.get.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFilterResponse]
   }

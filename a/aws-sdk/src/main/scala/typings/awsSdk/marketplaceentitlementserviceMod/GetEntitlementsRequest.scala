@@ -29,12 +29,12 @@ object GetEntitlementsRequest {
   def apply(
     ProductCode: ProductCode,
     Filter: GetEntitlementFilters = null,
-    MaxResults: Int | scala.Double = null,
+    MaxResults: js.UndefOr[Integer] = js.undefined,
     NextToken: NonEmptyString = null
   ): GetEntitlementsRequest = {
     val __obj = js.Dynamic.literal(ProductCode = ProductCode.asInstanceOf[js.Any])
     if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEntitlementsRequest]
   }

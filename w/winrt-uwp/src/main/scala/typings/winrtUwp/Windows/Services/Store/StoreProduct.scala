@@ -8,9 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a product that is available in the Windows Store. */
-@JSGlobal("Windows.Services.Store.StoreProduct")
 @js.native
-abstract class StoreProduct () extends js.Object {
+trait StoreProduct extends js.Object {
   /** Gets the product description from the Windows Store listing. */
   var description: String = js.native
   /** Gets complete data for the product from the Store in JSON format. */

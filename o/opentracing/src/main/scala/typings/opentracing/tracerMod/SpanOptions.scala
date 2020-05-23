@@ -37,13 +37,13 @@ object SpanOptions {
   def apply(
     childOf: typings.opentracing.spanMod.default | typings.opentracing.spanContextMod.default = null,
     references: js.Array[typings.opentracing.referenceMod.default] = null,
-    startTime: Int | Double = null,
+    startTime: js.UndefOr[Double] = js.undefined,
     tags: StringDictionary[js.Any] = null
   ): SpanOptions = {
     val __obj = js.Dynamic.literal()
     if (childOf != null) __obj.updateDynamic("childOf")(childOf.asInstanceOf[js.Any])
     if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(startTime)) __obj.updateDynamic("startTime")(startTime.get.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpanOptions]
   }

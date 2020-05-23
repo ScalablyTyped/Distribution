@@ -15,14 +15,14 @@ object SpreadsheetSheetRow {
   @scala.inline
   def apply(
     cells: js.Array[SpreadsheetSheetRowCell] = null,
-    height: Int | Double = null,
-    index: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
+    index: js.UndefOr[Double] = js.undefined,
     `type`: String = null
   ): SpreadsheetSheetRow = {
     val __obj = js.Dynamic.literal()
     if (cells != null) __obj.updateDynamic("cells")(cells.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetSheetRow]
   }

@@ -14,7 +14,7 @@ object serveMod extends js.Object {
   @js.native
   class LabCommand () extends ServeCommand
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.ionicCliFramework.definitionsMod.ICommand because Already inherited
   - typings.ionic.definitionsMod.ICommand because Already inherited
   - typings.ionic.definitionsMod.CommandPreRun because var conflicts: env, namespace, project. Inlined preRun */ @js.native

@@ -35,14 +35,14 @@ object TemplateVersionSummary {
     CreatedTime: Timestamp_ = null,
     Description: VersionDescription = null,
     Status: ResourceStatus = null,
-    VersionNumber: Int | scala.Double = null
+    VersionNumber: js.UndefOr[VersionNumber] = js.undefined
   ): TemplateVersionSummary = {
     val __obj = js.Dynamic.literal()
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
     if (CreatedTime != null) __obj.updateDynamic("CreatedTime")(CreatedTime.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (VersionNumber != null) __obj.updateDynamic("VersionNumber")(VersionNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(VersionNumber)) __obj.updateDynamic("VersionNumber")(VersionNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateVersionSummary]
   }
 }

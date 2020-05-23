@@ -9,24 +9,24 @@ trait IMap extends IContainer {
   /** [Config Option] (Ext.util.Geolocation) */
   var geo: js.UndefOr[IGeolocation] = js.undefined
   /** [Method] Returns the value of geo
-  		* @returns Ext.util.Geolocation
-  		*/
+    * @returns Ext.util.Geolocation
+    */
   var getGeo: js.UndefOr[js.Function0[IGeolocation]] = js.undefined
   /** [Method] Returns the value of map
-  		* @returns google.maps.Map
-  		*/
+    * @returns google.maps.Map
+    */
   var getMap: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of mapListeners
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getMapListeners: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the state of the Map
-  		* @returns Object mapOptions
-  		*/
+    * @returns Object mapOptions
+    */
   var getState: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of useCurrentLocation
-  		* @returns Boolean/Ext.util.Geolocation
-  		*/
+    * @returns Boolean/Ext.util.Geolocation
+    */
   var getUseCurrentLocation: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Config Option] (google.maps.Map) */
   var map: js.UndefOr[js.Any] = js.undefined
@@ -39,32 +39,32 @@ trait IMap extends IContainer {
   /** [Config Option] (String) */
   var maskMapCls: js.UndefOr[java.lang.String] = js.undefined
   /** [Method] Sets the value of geo
-  		* @param geo Ext.util.Geolocation The new value.
-  		*/
+    * @param geo Ext.util.Geolocation The new value.
+    */
   var setGeo: js.UndefOr[js.Function1[/* geo */ js.UndefOr[IGeolocation], Unit]] = js.undefined
   /** [Method] Sets the value of map
-  		* @param map google.maps.Map The new value.
-  		*/
+    * @param map google.maps.Map The new value.
+    */
   var setMap: js.UndefOr[js.Function1[/* map */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Moves the map center to the designated coordinates hash of the form  latitude 37 381592 longitude  122 135672
-  		* @param coordinates Object/google.maps.LatLng Object representing the desired Latitude and longitude upon which to center the map.
-  		*/
+    * @param coordinates Object/google.maps.LatLng Object representing the desired Latitude and longitude upon which to center the map.
+    */
   var setMapCenter: js.UndefOr[js.Function1[/* coordinates */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of mapListeners
-  		* @param mapListeners Object The new value.
-  		*/
+    * @param mapListeners Object The new value.
+    */
   var setMapListeners: js.UndefOr[js.Function1[/* mapListeners */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of mapOptions
-  		* @param mapOptions Object The new value.
-  		*/
+    * @param mapOptions Object The new value.
+    */
   var setMapOptions: js.UndefOr[js.Function1[/* mapOptions */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of useCurrentLocation
-  		* @param useCurrentLocation Boolean/Ext.util.Geolocation The new value.
-  		*/
+    * @param useCurrentLocation Boolean/Ext.util.Geolocation The new value.
+    */
   var setUseCurrentLocation: js.UndefOr[js.Function1[/* useCurrentLocation */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Moves the map center to the designated coordinates hash of the form  latitude 37 381592 longitude  122 135672
-  		* @param coordinates Object/google.maps.LatLng Object representing the desired Latitude and longitude upon which to center the map.
-  		*/
+    * @param coordinates Object/google.maps.LatLng Object representing the desired Latitude and longitude upon which to center the map.
+    */
   @JSName("update")
   var update_IMap: js.UndefOr[js.Function1[/* coordinates */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Boolean/Ext.util.Geolocation) */
@@ -106,7 +106,7 @@ object IMap {
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     if (mapListeners != null) __obj.updateDynamic("mapListeners")(mapListeners.asInstanceOf[js.Any])
     if (mapOptions != null) __obj.updateDynamic("mapOptions")(mapOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(maskMap)) __obj.updateDynamic("maskMap")(maskMap.asInstanceOf[js.Any])
+    if (!js.isUndefined(maskMap)) __obj.updateDynamic("maskMap")(maskMap.get.asInstanceOf[js.Any])
     if (maskMapCls != null) __obj.updateDynamic("maskMapCls")(maskMapCls.asInstanceOf[js.Any])
     if (setGeo != null) __obj.updateDynamic("setGeo")(js.Any.fromFunction1(setGeo))
     if (setMap != null) __obj.updateDynamic("setMap")(js.Any.fromFunction1(setMap))

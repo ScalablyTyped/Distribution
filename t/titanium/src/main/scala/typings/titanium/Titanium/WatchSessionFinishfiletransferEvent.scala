@@ -5,28 +5,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * App completed file transfer to watch app.
-	 */
+  * App completed file transfer to watch app.
+  */
 trait WatchSessionFinishfiletransferEvent extends WatchSessionBaseEvent {
   /**
-  		 * Error code if transfer failed.
-  		 */
+    * Error code if transfer failed.
+    */
   var errorCode: Double
   /**
-  		 * URL of the file transferred.
-  		 */
+    * URL of the file transferred.
+    */
   var fileURL: String
   /**
-  		 * Error message if any.
-  		 */
+    * Error message if any.
+    */
   var message: String
   /**
-  		 * meta data of the file transferred.
-  		 */
+    * meta data of the file transferred.
+    */
   var metaData: js.Any
   /**
-  		 * If the transfer was successful.
-  		 */
+    * If the transfer was successful.
+    */
   var success: Boolean
 }
 

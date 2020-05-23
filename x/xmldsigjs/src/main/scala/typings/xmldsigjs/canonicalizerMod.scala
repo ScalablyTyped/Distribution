@@ -1,7 +1,7 @@
 package typings.xmldsigjs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.std.Document_
+import typings.std.Document
 import typings.std.Element
 import typings.std.Node
 import typings.xmlCore.mod.NamespaceManager
@@ -20,7 +20,7 @@ object canonicalizerMod extends js.Object {
     var IsNamespaceInclusive: js.Any = js.native
     var IsNamespaceRendered: js.Any = js.native
     var IsTextNode: js.Any = js.native
-    var document: Document_ = js.native
+    var document: Document = js.native
     var exclusive: Boolean = js.native
     var inclusiveNamespacesPrefixList: js.Array[String] = js.native
     var propagatedNamespaces: NamespaceManager = js.native

@@ -1,6 +1,6 @@
 package typings.antdMobileRn.tabBarItemNativeMod
 
-import typings.antdMobileRn.AnonOnPress
+import typings.antdMobileRn.anon.OnPress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends TabBarItem
 @JSImport("antd-mobile-rn/lib/tab-bar/TabBarItem.native", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonOnPress = js.native
+  var defaultProps: OnPress = js.native
 }
 

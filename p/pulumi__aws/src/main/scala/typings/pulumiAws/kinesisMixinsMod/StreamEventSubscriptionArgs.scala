@@ -34,11 +34,11 @@ object StreamEventSubscriptionArgs {
   @scala.inline
   def apply(
     startingPosition: TRIM_HORIZON | LATEST | AT_TIMESTAMP,
-    batchSize: Int | Double = null,
+    batchSize: js.UndefOr[Double] = js.undefined,
     startingPositionTimestamp: String = null
   ): StreamEventSubscriptionArgs = {
     val __obj = js.Dynamic.literal(startingPosition = startingPosition.asInstanceOf[js.Any])
-    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
     if (startingPositionTimestamp != null) __obj.updateDynamic("startingPositionTimestamp")(startingPositionTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamEventSubscriptionArgs]
   }

@@ -52,10 +52,10 @@ object ScheduledUpdateGroupAction {
   @scala.inline
   def apply(
     AutoScalingGroupName: XmlStringMaxLen255 = null,
-    DesiredCapacity: Int | Double = null,
+    DesiredCapacity: js.UndefOr[AutoScalingGroupDesiredCapacity] = js.undefined,
     EndTime: TimestampType = null,
-    MaxSize: Int | Double = null,
-    MinSize: Int | Double = null,
+    MaxSize: js.UndefOr[AutoScalingGroupMaxSize] = js.undefined,
+    MinSize: js.UndefOr[AutoScalingGroupMinSize] = js.undefined,
     Recurrence: XmlStringMaxLen255 = null,
     ScheduledActionARN: ResourceName = null,
     ScheduledActionName: XmlStringMaxLen255 = null,
@@ -64,10 +64,10 @@ object ScheduledUpdateGroupAction {
   ): ScheduledUpdateGroupAction = {
     val __obj = js.Dynamic.literal()
     if (AutoScalingGroupName != null) __obj.updateDynamic("AutoScalingGroupName")(AutoScalingGroupName.asInstanceOf[js.Any])
-    if (DesiredCapacity != null) __obj.updateDynamic("DesiredCapacity")(DesiredCapacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(DesiredCapacity)) __obj.updateDynamic("DesiredCapacity")(DesiredCapacity.get.asInstanceOf[js.Any])
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (MaxSize != null) __obj.updateDynamic("MaxSize")(MaxSize.asInstanceOf[js.Any])
-    if (MinSize != null) __obj.updateDynamic("MinSize")(MinSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxSize)) __obj.updateDynamic("MaxSize")(MaxSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinSize)) __obj.updateDynamic("MinSize")(MinSize.get.asInstanceOf[js.Any])
     if (Recurrence != null) __obj.updateDynamic("Recurrence")(Recurrence.asInstanceOf[js.Any])
     if (ScheduledActionARN != null) __obj.updateDynamic("ScheduledActionARN")(ScheduledActionARN.asInstanceOf[js.Any])
     if (ScheduledActionName != null) __obj.updateDynamic("ScheduledActionName")(ScheduledActionName.asInstanceOf[js.Any])

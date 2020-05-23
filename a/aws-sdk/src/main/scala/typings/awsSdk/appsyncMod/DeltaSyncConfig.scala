@@ -23,14 +23,14 @@ trait DeltaSyncConfig extends js.Object {
 object DeltaSyncConfig {
   @scala.inline
   def apply(
-    baseTableTTL: Int | Double = null,
+    baseTableTTL: js.UndefOr[Long] = js.undefined,
     deltaSyncTableName: String = null,
-    deltaSyncTableTTL: Int | Double = null
+    deltaSyncTableTTL: js.UndefOr[Long] = js.undefined
   ): DeltaSyncConfig = {
     val __obj = js.Dynamic.literal()
-    if (baseTableTTL != null) __obj.updateDynamic("baseTableTTL")(baseTableTTL.asInstanceOf[js.Any])
+    if (!js.isUndefined(baseTableTTL)) __obj.updateDynamic("baseTableTTL")(baseTableTTL.get.asInstanceOf[js.Any])
     if (deltaSyncTableName != null) __obj.updateDynamic("deltaSyncTableName")(deltaSyncTableName.asInstanceOf[js.Any])
-    if (deltaSyncTableTTL != null) __obj.updateDynamic("deltaSyncTableTTL")(deltaSyncTableTTL.asInstanceOf[js.Any])
+    if (!js.isUndefined(deltaSyncTableTTL)) __obj.updateDynamic("deltaSyncTableTTL")(deltaSyncTableTTL.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeltaSyncConfig]
   }
 }

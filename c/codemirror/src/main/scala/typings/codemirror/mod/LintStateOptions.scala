@@ -30,8 +30,8 @@ object LintStateOptions {
     onUpdateLinting: (/* annotationsNotSorted */ js.Array[Annotation], /* annotations */ js.Array[Annotation], /* codeMirror */ Editor) => Unit = null
   ): LintStateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasGutters)) __obj.updateDynamic("hasGutters")(hasGutters.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasGutters)) __obj.updateDynamic("hasGutters")(hasGutters.get.asInstanceOf[js.Any])
     if (onUpdateLinting != null) __obj.updateDynamic("onUpdateLinting")(js.Any.fromFunction3(onUpdateLinting))
     __obj.asInstanceOf[LintStateOptions]
   }

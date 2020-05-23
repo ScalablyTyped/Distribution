@@ -30,15 +30,15 @@ object GroupItemMetadataProviderOptions {
     totalsFocusable: js.UndefOr[Boolean] = js.undefined
   ): GroupItemMetadataProviderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableExpandCollapse)) __obj.updateDynamic("enableExpandCollapse")(enableExpandCollapse.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableExpandCollapse)) __obj.updateDynamic("enableExpandCollapse")(enableExpandCollapse.get.asInstanceOf[js.Any])
     if (groupCssClass != null) __obj.updateDynamic("groupCssClass")(groupCssClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupFocusable)) __obj.updateDynamic("groupFocusable")(groupFocusable.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupFocusable)) __obj.updateDynamic("groupFocusable")(groupFocusable.get.asInstanceOf[js.Any])
     if (groupTitleCssClass != null) __obj.updateDynamic("groupTitleCssClass")(groupTitleCssClass.asInstanceOf[js.Any])
     if (toggleCollapsedCssClass != null) __obj.updateDynamic("toggleCollapsedCssClass")(toggleCollapsedCssClass.asInstanceOf[js.Any])
     if (toggleCssClass != null) __obj.updateDynamic("toggleCssClass")(toggleCssClass.asInstanceOf[js.Any])
     if (toggleExpandedCssCass != null) __obj.updateDynamic("toggleExpandedCssCass")(toggleExpandedCssCass.asInstanceOf[js.Any])
     if (totalsCssClass != null) __obj.updateDynamic("totalsCssClass")(totalsCssClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(totalsFocusable)) __obj.updateDynamic("totalsFocusable")(totalsFocusable.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalsFocusable)) __obj.updateDynamic("totalsFocusable")(totalsFocusable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupItemMetadataProviderOptions]
   }
 }

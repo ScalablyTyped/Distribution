@@ -13,14 +13,14 @@ object TransformIteratorOptions {
   @scala.inline
   def apply[S](
     autoStart: js.UndefOr[Boolean] = js.undefined,
-    maxBufferSize: Int | Double = null,
+    maxBufferSize: js.UndefOr[Double] = js.undefined,
     optional: js.UndefOr[Boolean] = js.undefined,
     source: AsyncIterator[S] = null
   ): TransformIteratorOptions[S] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.asInstanceOf[js.Any])
-    if (maxBufferSize != null) __obj.updateDynamic("maxBufferSize")(maxBufferSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxBufferSize)) __obj.updateDynamic("maxBufferSize")(maxBufferSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformIteratorOptions[S]]
   }

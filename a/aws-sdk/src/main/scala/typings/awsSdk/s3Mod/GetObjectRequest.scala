@@ -35,7 +35,7 @@ trait GetObjectRequest extends js.Object {
     */
   var PartNumber: js.UndefOr[typings.awsSdk.s3Mod.PartNumber] = js.native
   /**
-    * Downloads the specified range bytes of an object. For more information about the HTTP Range header, see http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.35.
+    * Downloads the specified range bytes of an object. For more information about the HTTP Range header, see https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.35.  Amazon S3 doesn't support retrieving multiple ranges of data per GET request. 
     */
   var Range: js.UndefOr[typings.awsSdk.s3Mod.Range] = js.native
   var RequestPayer: js.UndefOr[typings.awsSdk.s3Mod.RequestPayer] = js.native
@@ -90,7 +90,7 @@ object GetObjectRequest {
     IfModifiedSince: IfModifiedSince = null,
     IfNoneMatch: IfNoneMatch = null,
     IfUnmodifiedSince: IfUnmodifiedSince = null,
-    PartNumber: Int | Double = null,
+    PartNumber: js.UndefOr[PartNumber] = js.undefined,
     Range: Range = null,
     RequestPayer: RequestPayer = null,
     ResponseCacheControl: ResponseCacheControl = null,
@@ -109,7 +109,7 @@ object GetObjectRequest {
     if (IfModifiedSince != null) __obj.updateDynamic("IfModifiedSince")(IfModifiedSince.asInstanceOf[js.Any])
     if (IfNoneMatch != null) __obj.updateDynamic("IfNoneMatch")(IfNoneMatch.asInstanceOf[js.Any])
     if (IfUnmodifiedSince != null) __obj.updateDynamic("IfUnmodifiedSince")(IfUnmodifiedSince.asInstanceOf[js.Any])
-    if (PartNumber != null) __obj.updateDynamic("PartNumber")(PartNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(PartNumber)) __obj.updateDynamic("PartNumber")(PartNumber.get.asInstanceOf[js.Any])
     if (Range != null) __obj.updateDynamic("Range")(Range.asInstanceOf[js.Any])
     if (RequestPayer != null) __obj.updateDynamic("RequestPayer")(RequestPayer.asInstanceOf[js.Any])
     if (ResponseCacheControl != null) __obj.updateDynamic("ResponseCacheControl")(ResponseCacheControl.asInstanceOf[js.Any])

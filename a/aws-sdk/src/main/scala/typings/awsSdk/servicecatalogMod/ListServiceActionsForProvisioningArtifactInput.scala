@@ -34,12 +34,12 @@ object ListServiceActionsForProvisioningArtifactInput {
     ProductId: Id,
     ProvisioningArtifactId: Id,
     AcceptLanguage: AcceptLanguage = null,
-    PageSize: Int | Double = null,
+    PageSize: js.UndefOr[PageSize] = js.undefined,
     PageToken: PageToken = null
   ): ListServiceActionsForProvisioningArtifactInput = {
     val __obj = js.Dynamic.literal(ProductId = ProductId.asInstanceOf[js.Any], ProvisioningArtifactId = ProvisioningArtifactId.asInstanceOf[js.Any])
     if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage.asInstanceOf[js.Any])
-    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize.get.asInstanceOf[js.Any])
     if (PageToken != null) __obj.updateDynamic("PageToken")(PageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListServiceActionsForProvisioningArtifactInput]
   }

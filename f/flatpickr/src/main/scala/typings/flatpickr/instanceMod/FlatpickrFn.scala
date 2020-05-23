@@ -1,8 +1,8 @@
 package typings.flatpickr.instanceMod
 
-import typings.flatpickr.PartialParsedOptions
-import typings.flatpickr.globalsMod._Global_.Date
-import typings.flatpickr.kinkeyCustomLocaledefault
+import typings.flatpickr.anon.PartialParsedOptions
+import typings.flatpickr.anon.kinkeyCustomLocaledefault
+import typings.flatpickr.globalsMod.global.Date
 import typings.flatpickr.localeMod.CustomLocale
 import typings.flatpickr.optionsMod.DateOption
 import typings.flatpickr.optionsMod.Options

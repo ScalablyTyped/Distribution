@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Devices.Sensors.OrientationSensorReading")
-@js.native
-class OrientationSensorReading () extends IOrientationSensorReading {
-  /* CompleteClass */
-  override var quaternion: SensorQuaternion = js.native
-  /* CompleteClass */
-  override var rotationMatrix: SensorRotationMatrix = js.native
-  /* CompleteClass */
-  override var timestamp: Date = js.native
+trait OrientationSensorReading extends IOrientationSensorReading
+
+object OrientationSensorReading {
+  @scala.inline
+  def apply(quaternion: SensorQuaternion, rotationMatrix: SensorRotationMatrix, timestamp: Date): OrientationSensorReading = {
+    val __obj = js.Dynamic.literal(quaternion = quaternion.asInstanceOf[js.Any], rotationMatrix = rotationMatrix.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OrientationSensorReading]
+  }
 }
 

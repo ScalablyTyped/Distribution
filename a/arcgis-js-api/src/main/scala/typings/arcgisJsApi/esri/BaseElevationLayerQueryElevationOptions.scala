@@ -47,13 +47,13 @@ object BaseElevationLayerQueryElevationOptions {
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     demResolution: Double | String = null,
-    noDataValue: Int | Double = null,
+    noDataValue: js.UndefOr[Double] = js.undefined,
     returnSampleInfo: js.UndefOr[Boolean] = js.undefined
   ): BaseElevationLayerQueryElevationOptions = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (demResolution != null) __obj.updateDynamic("demResolution")(demResolution.asInstanceOf[js.Any])
-    if (noDataValue != null) __obj.updateDynamic("noDataValue")(noDataValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnSampleInfo)) __obj.updateDynamic("returnSampleInfo")(returnSampleInfo.asInstanceOf[js.Any])
+    if (!js.isUndefined(noDataValue)) __obj.updateDynamic("noDataValue")(noDataValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnSampleInfo)) __obj.updateDynamic("returnSampleInfo")(returnSampleInfo.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseElevationLayerQueryElevationOptions]
   }
 }

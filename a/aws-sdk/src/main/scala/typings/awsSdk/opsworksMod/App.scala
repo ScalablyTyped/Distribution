@@ -74,7 +74,7 @@ object App {
     DataSources: DataSources = null,
     Description: String = null,
     Domains: Strings = null,
-    EnableSsl: js.UndefOr[scala.Boolean] = js.undefined,
+    EnableSsl: js.UndefOr[Boolean] = js.undefined,
     Environment: EnvironmentVariables = null,
     Name: String = null,
     Shortname: String = null,
@@ -90,7 +90,7 @@ object App {
     if (DataSources != null) __obj.updateDynamic("DataSources")(DataSources.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (Domains != null) __obj.updateDynamic("Domains")(Domains.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableSsl)) __obj.updateDynamic("EnableSsl")(EnableSsl.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableSsl)) __obj.updateDynamic("EnableSsl")(EnableSsl.get.asInstanceOf[js.Any])
     if (Environment != null) __obj.updateDynamic("Environment")(Environment.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (Shortname != null) __obj.updateDynamic("Shortname")(Shortname.asInstanceOf[js.Any])

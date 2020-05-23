@@ -2,6 +2,7 @@ package typings.chance
 
 import typings.chance.Chance.FirstNameNationalities
 import typings.chance.Chance.LastNameNationalities
+import typings.chance.Chance._FalsyType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,6 +46,9 @@ object chanceStrings {
   
   @js.native
   sealed trait Wednesday extends js.Object
+  
+  @js.native
+  sealed trait _empty extends _FalsyType
   
   @js.native
   sealed trait all extends js.Object
@@ -145,6 +149,8 @@ object chanceStrings {
   def Tuesday: Tuesday = "Tuesday".asInstanceOf[Tuesday]
   @scala.inline
   def Wednesday: Wednesday = "Wednesday".asInstanceOf[Wednesday]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline

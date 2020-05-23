@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "chokidar" : "3.3.1"
+      "chokidar" : "3.4.0"
     }
   ],
   "test-dependencies" : [
     {
-      "chokidar" : "3.3.1"
+      "chokidar" : "3.4.0"
     }
   ],
   "compile-devDependencies" : [

@@ -37,14 +37,14 @@ object GoogleIamV1Policy {
     bindings: js.Array[GoogleIamV1Binding] = null,
     etag: String = null,
     iamOwned: js.UndefOr[Boolean] = js.undefined,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): GoogleIamV1Policy = {
     val __obj = js.Dynamic.literal()
     if (auditConfigs != null) __obj.updateDynamic("auditConfigs")(auditConfigs.asInstanceOf[js.Any])
     if (bindings != null) __obj.updateDynamic("bindings")(bindings.asInstanceOf[js.Any])
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (!js.isUndefined(iamOwned)) __obj.updateDynamic("iamOwned")(iamOwned.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(iamOwned)) __obj.updateDynamic("iamOwned")(iamOwned.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleIamV1Policy]
   }
 }

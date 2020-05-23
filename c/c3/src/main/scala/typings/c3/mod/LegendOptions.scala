@@ -1,7 +1,7 @@
 package typings.c3.mod
 
-import typings.c3.AnonAnchor
-import typings.c3.AnonOnclick
+import typings.c3.anon.Anchor
+import typings.c3.anon.Onclick
 import typings.c3.c3Strings.bottom
 import typings.c3.c3Strings.inset
 import typings.c3.c3Strings.right
@@ -23,8 +23,8 @@ trait LegendOptions extends js.Object {
   /**
     * Change inset legend attributes. Ignored unless `legend.position` is `"inset"`.
     */
-  var inset: js.UndefOr[AnonAnchor] = js.undefined
-  var item: js.UndefOr[AnonOnclick] = js.undefined
+  var inset: js.UndefOr[Anchor] = js.undefined
+  var item: js.UndefOr[Onclick] = js.undefined
   /**
     * Padding between legend elements.
     * Defaults to `0`.
@@ -46,20 +46,20 @@ object LegendOptions {
   def apply(
     equally: js.UndefOr[Boolean] = js.undefined,
     hide: Boolean | ArrayOrString = null,
-    inset: AnonAnchor = null,
-    item: AnonOnclick = null,
-    padding: Int | Double = null,
+    inset: Anchor = null,
+    item: Onclick = null,
+    padding: js.UndefOr[Double] = js.undefined,
     position: bottom | right | inset = null,
     show: js.UndefOr[Boolean] = js.undefined
   ): LegendOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(equally)) __obj.updateDynamic("equally")(equally.asInstanceOf[js.Any])
+    if (!js.isUndefined(equally)) __obj.updateDynamic("equally")(equally.get.asInstanceOf[js.Any])
     if (hide != null) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
     if (inset != null) __obj.updateDynamic("inset")(inset.asInstanceOf[js.Any])
     if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendOptions]
   }
 }

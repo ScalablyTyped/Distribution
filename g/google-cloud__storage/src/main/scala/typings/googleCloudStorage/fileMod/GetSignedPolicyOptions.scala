@@ -1,6 +1,6 @@
 package typings.googleCloudStorage.fileMod
 
-import typings.googleCloudStorage.AnonMax
+import typings.googleCloudStorage.anon.Max
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait GetSignedPolicyOptions extends js.Object {
   var acl: js.UndefOr[String] = js.undefined
-  var contentLengthRange: js.UndefOr[AnonMax] = js.undefined
+  var contentLengthRange: js.UndefOr[Max] = js.undefined
   @JSName("equals")
   var equals_FGetSignedPolicyOptions: js.UndefOr[js.Array[js.Array[String] | String]] = js.undefined
   var expires: String | Double | Date
@@ -22,7 +22,7 @@ object GetSignedPolicyOptions {
   def apply(
     expires: String | Double | Date,
     acl: String = null,
-    contentLengthRange: AnonMax = null,
+    contentLengthRange: Max = null,
     equals: js.Array[js.Array[String] | String] = null,
     startsWith: js.Array[js.Array[String] | String] = null,
     successRedirect: String = null,

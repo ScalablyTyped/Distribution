@@ -1,7 +1,7 @@
 package typings.postcssReporter.mod
 
 import typings.postcss.mod.ResultMessage
-import typings.postcssReporter.AnonMessages
+import typings.postcssReporter.anon.Messages
 import typings.postcssReporter.postcssReporterStrings.any
 import typings.postcssReporter.postcssReporterStrings.first
 import typings.postcssReporter.postcssReporterStrings.last
@@ -35,7 +35,7 @@ trait Options extends DefaultOptions {
     * - accepts an object containing a messages array and a source string
     * - returns the string to report
     */
-  var formatter: js.UndefOr[js.Function1[/* input */ AnonMessages, String]] = js.undefined
+  var formatter: js.UndefOr[js.Function1[/* input */ Messages, String]] = js.undefined
   /**
     * If plugins is empty (as it is by default),
     * the reporter will log messages from every PostCSS plugin.
@@ -61,7 +61,7 @@ object Options {
     clearAllMessages: js.UndefOr[Boolean] = js.undefined,
     clearReportedMessages: js.UndefOr[Boolean] = js.undefined,
     filter: /* message */ ResultMessage => Boolean = null,
-    formatter: /* input */ AnonMessages => String = null,
+    formatter: /* input */ Messages => String = null,
     noIcon: js.UndefOr[Boolean] = js.undefined,
     noPlugin: js.UndefOr[Boolean] = js.undefined,
     plugins: js.Array[String] = null,
@@ -70,16 +70,16 @@ object Options {
     throwError: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clearAllMessages)) __obj.updateDynamic("clearAllMessages")(clearAllMessages.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearReportedMessages)) __obj.updateDynamic("clearReportedMessages")(clearReportedMessages.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearAllMessages)) __obj.updateDynamic("clearAllMessages")(clearAllMessages.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearReportedMessages)) __obj.updateDynamic("clearReportedMessages")(clearReportedMessages.get.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
-    if (!js.isUndefined(noIcon)) __obj.updateDynamic("noIcon")(noIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(noPlugin)) __obj.updateDynamic("noPlugin")(noPlugin.asInstanceOf[js.Any])
+    if (!js.isUndefined(noIcon)) __obj.updateDynamic("noIcon")(noIcon.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noPlugin)) __obj.updateDynamic("noPlugin")(noPlugin.get.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     if (positionless != null) __obj.updateDynamic("positionless")(positionless.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortByPosition)) __obj.updateDynamic("sortByPosition")(sortByPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(throwError)) __obj.updateDynamic("throwError")(throwError.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortByPosition)) __obj.updateDynamic("sortByPosition")(sortByPosition.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(throwError)) __obj.updateDynamic("throwError")(throwError.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

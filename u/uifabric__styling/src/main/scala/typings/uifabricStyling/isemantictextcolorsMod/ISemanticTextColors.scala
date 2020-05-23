@@ -102,6 +102,10 @@ trait ISemanticTextColors extends js.Object {
     * This slot was incorrectly named. Use listText instead. */
   var listTextColor: String
   /**
+    * The default color of text in a message bar.
+    */
+  var messageText: String
+  /**
     * Color of text in a primary button
     */
   var primaryButtonText: String
@@ -117,12 +121,12 @@ trait ISemanticTextColors extends js.Object {
     * Color of text in a pressed primary button; i.e. currently being clicked by mouse
     */
   var primaryButtonTextPressed: String
-  /**
-    * The default color of success text on successBackground.
+  /** @deprecated
+    * No longer used. Consider using messageText and/or successIcon instead.
     */
   var successText: String
-  /**
-    * The default color of text on errorBackground, warningBackground, blockingBackground, or successBackground.
+  /** @deprecated
+    * No longer used. Consider using messageText and/or warningIcon instead.
     */
   var warningText: String
 }
@@ -154,6 +158,7 @@ object ISemanticTextColors {
     linkHovered: String,
     listText: String,
     listTextColor: String,
+    messageText: String,
     primaryButtonText: String,
     primaryButtonTextDisabled: String,
     primaryButtonTextHovered: String,
@@ -161,7 +166,7 @@ object ISemanticTextColors {
     successText: String,
     warningText: String
   ): ISemanticTextColors = {
-    val __obj = js.Dynamic.literal(accentButtonText = accentButtonText.asInstanceOf[js.Any], actionLink = actionLink.asInstanceOf[js.Any], actionLinkHovered = actionLinkHovered.asInstanceOf[js.Any], bodySubtext = bodySubtext.asInstanceOf[js.Any], bodyText = bodyText.asInstanceOf[js.Any], bodyTextChecked = bodyTextChecked.asInstanceOf[js.Any], buttonText = buttonText.asInstanceOf[js.Any], buttonTextChecked = buttonTextChecked.asInstanceOf[js.Any], buttonTextCheckedHovered = buttonTextCheckedHovered.asInstanceOf[js.Any], buttonTextDisabled = buttonTextDisabled.asInstanceOf[js.Any], buttonTextHovered = buttonTextHovered.asInstanceOf[js.Any], buttonTextPressed = buttonTextPressed.asInstanceOf[js.Any], disabledBodySubtext = disabledBodySubtext.asInstanceOf[js.Any], disabledBodyText = disabledBodyText.asInstanceOf[js.Any], disabledSubtext = disabledSubtext.asInstanceOf[js.Any], disabledText = disabledText.asInstanceOf[js.Any], errorText = errorText.asInstanceOf[js.Any], inputPlaceholderText = inputPlaceholderText.asInstanceOf[js.Any], inputText = inputText.asInstanceOf[js.Any], inputTextHovered = inputTextHovered.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], linkHovered = linkHovered.asInstanceOf[js.Any], listText = listText.asInstanceOf[js.Any], listTextColor = listTextColor.asInstanceOf[js.Any], primaryButtonText = primaryButtonText.asInstanceOf[js.Any], primaryButtonTextDisabled = primaryButtonTextDisabled.asInstanceOf[js.Any], primaryButtonTextHovered = primaryButtonTextHovered.asInstanceOf[js.Any], primaryButtonTextPressed = primaryButtonTextPressed.asInstanceOf[js.Any], successText = successText.asInstanceOf[js.Any], warningText = warningText.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(accentButtonText = accentButtonText.asInstanceOf[js.Any], actionLink = actionLink.asInstanceOf[js.Any], actionLinkHovered = actionLinkHovered.asInstanceOf[js.Any], bodySubtext = bodySubtext.asInstanceOf[js.Any], bodyText = bodyText.asInstanceOf[js.Any], bodyTextChecked = bodyTextChecked.asInstanceOf[js.Any], buttonText = buttonText.asInstanceOf[js.Any], buttonTextChecked = buttonTextChecked.asInstanceOf[js.Any], buttonTextCheckedHovered = buttonTextCheckedHovered.asInstanceOf[js.Any], buttonTextDisabled = buttonTextDisabled.asInstanceOf[js.Any], buttonTextHovered = buttonTextHovered.asInstanceOf[js.Any], buttonTextPressed = buttonTextPressed.asInstanceOf[js.Any], disabledBodySubtext = disabledBodySubtext.asInstanceOf[js.Any], disabledBodyText = disabledBodyText.asInstanceOf[js.Any], disabledSubtext = disabledSubtext.asInstanceOf[js.Any], disabledText = disabledText.asInstanceOf[js.Any], errorText = errorText.asInstanceOf[js.Any], inputPlaceholderText = inputPlaceholderText.asInstanceOf[js.Any], inputText = inputText.asInstanceOf[js.Any], inputTextHovered = inputTextHovered.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], linkHovered = linkHovered.asInstanceOf[js.Any], listText = listText.asInstanceOf[js.Any], listTextColor = listTextColor.asInstanceOf[js.Any], messageText = messageText.asInstanceOf[js.Any], primaryButtonText = primaryButtonText.asInstanceOf[js.Any], primaryButtonTextDisabled = primaryButtonTextDisabled.asInstanceOf[js.Any], primaryButtonTextHovered = primaryButtonTextHovered.asInstanceOf[js.Any], primaryButtonTextPressed = primaryButtonTextPressed.asInstanceOf[js.Any], successText = successText.asInstanceOf[js.Any], warningText = warningText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISemanticTextColors]
   }
 }

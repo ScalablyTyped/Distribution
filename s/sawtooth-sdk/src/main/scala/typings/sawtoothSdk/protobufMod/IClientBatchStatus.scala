@@ -18,14 +18,14 @@ trait IClientBatchStatus extends js.Object {
 object IClientBatchStatus {
   @scala.inline
   def apply(
-    batchId: String = null,
-    invalidTransactions: js.Array[IInvalidTransaction] = null,
-    status: Status = null
+    batchId: js.UndefOr[Null | String] = js.undefined,
+    invalidTransactions: js.UndefOr[Null | js.Array[IInvalidTransaction]] = js.undefined,
+    status: js.UndefOr[Null | Status] = js.undefined
   ): IClientBatchStatus = {
     val __obj = js.Dynamic.literal()
-    if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
-    if (invalidTransactions != null) __obj.updateDynamic("invalidTransactions")(invalidTransactions.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchId)) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
+    if (!js.isUndefined(invalidTransactions)) __obj.updateDynamic("invalidTransactions")(invalidTransactions.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientBatchStatus]
   }
 }

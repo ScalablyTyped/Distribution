@@ -20,11 +20,11 @@ object CloudWatchOutputConfig {
   @scala.inline
   def apply(
     CloudWatchLogGroupName: CloudWatchLogGroupName = null,
-    CloudWatchOutputEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    CloudWatchOutputEnabled: js.UndefOr[CloudWatchOutputEnabled] = js.undefined
   ): CloudWatchOutputConfig = {
     val __obj = js.Dynamic.literal()
     if (CloudWatchLogGroupName != null) __obj.updateDynamic("CloudWatchLogGroupName")(CloudWatchLogGroupName.asInstanceOf[js.Any])
-    if (!js.isUndefined(CloudWatchOutputEnabled)) __obj.updateDynamic("CloudWatchOutputEnabled")(CloudWatchOutputEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(CloudWatchOutputEnabled)) __obj.updateDynamic("CloudWatchOutputEnabled")(CloudWatchOutputEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudWatchOutputConfig]
   }
 }

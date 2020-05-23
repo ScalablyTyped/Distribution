@@ -57,10 +57,10 @@ object ParseOptions {
     noLocation: js.UndefOr[Boolean] = js.undefined
   ): ParseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowLegacySDLEmptyFields)) __obj.updateDynamic("allowLegacySDLEmptyFields")(allowLegacySDLEmptyFields.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowLegacySDLImplementsInterfaces)) __obj.updateDynamic("allowLegacySDLImplementsInterfaces")(allowLegacySDLImplementsInterfaces.asInstanceOf[js.Any])
-    if (!js.isUndefined(experimentalFragmentVariables)) __obj.updateDynamic("experimentalFragmentVariables")(experimentalFragmentVariables.asInstanceOf[js.Any])
-    if (!js.isUndefined(noLocation)) __obj.updateDynamic("noLocation")(noLocation.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowLegacySDLEmptyFields)) __obj.updateDynamic("allowLegacySDLEmptyFields")(allowLegacySDLEmptyFields.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowLegacySDLImplementsInterfaces)) __obj.updateDynamic("allowLegacySDLImplementsInterfaces")(allowLegacySDLImplementsInterfaces.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(experimentalFragmentVariables)) __obj.updateDynamic("experimentalFragmentVariables")(experimentalFragmentVariables.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noLocation)) __obj.updateDynamic("noLocation")(noLocation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseOptions]
   }
 }

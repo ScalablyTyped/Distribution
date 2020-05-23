@@ -12,11 +12,15 @@ trait ResponseTimeOptions extends js.Object {
 
 object ResponseTimeOptions {
   @scala.inline
-  def apply(digits: Int | Double = null, header: String = null, suffix: js.UndefOr[Boolean] = js.undefined): ResponseTimeOptions = {
+  def apply(
+    digits: js.UndefOr[Double] = js.undefined,
+    header: String = null,
+    suffix: js.UndefOr[Boolean] = js.undefined
+  ): ResponseTimeOptions = {
     val __obj = js.Dynamic.literal()
-    if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
+    if (!js.isUndefined(digits)) __obj.updateDynamic("digits")(digits.get.asInstanceOf[js.Any])
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (!js.isUndefined(suffix)) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
+    if (!js.isUndefined(suffix)) __obj.updateDynamic("suffix")(suffix.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseTimeOptions]
   }
 }

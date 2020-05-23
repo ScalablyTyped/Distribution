@@ -1,7 +1,7 @@
 package typings.audiosprite.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.audiosprite.AnonEnd
+import typings.audiosprite.anon.End
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 trait Result extends js.Object {
   var autoplay: js.UndefOr[String] = js.undefined
   var resources: js.Array[String]
-  var spritemap: StringDictionary[AnonEnd]
+  var spritemap: StringDictionary[End]
 }
 
 object Result {
   @scala.inline
-  def apply(resources: js.Array[String], spritemap: StringDictionary[AnonEnd], autoplay: String = null): Result = {
+  def apply(resources: js.Array[String], spritemap: StringDictionary[End], autoplay: String = null): Result = {
     val __obj = js.Dynamic.literal(resources = resources.asInstanceOf[js.Any], spritemap = spritemap.asInstanceOf[js.Any])
     if (autoplay != null) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]

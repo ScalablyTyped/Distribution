@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Office.MailboxEnums
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,11 +9,11 @@ sealed trait RecurrenceType extends js.Object
 
 /**
   * Specifies the type of recurrence.
-  * 
+  *
   * [Api set: Mailbox 1.7]
   *
   * @remarks
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @JSGlobal("Office.MailboxEnums.RecurrenceType")
@@ -49,23 +48,6 @@ object RecurrenceType extends js.Object {
     */
   @js.native
   sealed trait Yearly extends RecurrenceType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[RecurrenceType with String] = js.native
-  /* "daily" */ @js.native
-  object Daily extends TopLevel[Daily with String]
-  
-  /* "monthly" */ @js.native
-  object Monthly extends TopLevel[Monthly with String]
-  
-  /* "weekday" */ @js.native
-  object Weekday extends TopLevel[Weekday with String]
-  
-  /* "weekly" */ @js.native
-  object Weekly extends TopLevel[Weekly with String]
-  
-  /* "yearly" */ @js.native
-  object Yearly extends TopLevel[Yearly with String]
   
 }
 

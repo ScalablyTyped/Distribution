@@ -37,18 +37,18 @@ object LaunchTemplateOverrides {
   def apply(
     AvailabilityZone: String = null,
     InstanceType: InstanceType = null,
-    Priority: Int | scala.Double = null,
+    Priority: js.UndefOr[Double] = js.undefined,
     SpotPrice: String = null,
     SubnetId: String = null,
-    WeightedCapacity: Int | scala.Double = null
+    WeightedCapacity: js.UndefOr[Double] = js.undefined
   ): LaunchTemplateOverrides = {
     val __obj = js.Dynamic.literal()
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority.get.asInstanceOf[js.Any])
     if (SpotPrice != null) __obj.updateDynamic("SpotPrice")(SpotPrice.asInstanceOf[js.Any])
     if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId.asInstanceOf[js.Any])
-    if (WeightedCapacity != null) __obj.updateDynamic("WeightedCapacity")(WeightedCapacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(WeightedCapacity)) __obj.updateDynamic("WeightedCapacity")(WeightedCapacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchTemplateOverrides]
   }
 }

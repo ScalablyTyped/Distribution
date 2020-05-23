@@ -1,7 +1,7 @@
 package typings.antDesignPro.pageHeaderMod
 
-import typings.antDesignPro.AnonKey
-import typings.antDesignPro.AnonTitle
+import typings.antDesignPro.anon.Key
+import typings.antDesignPro.anon.Title
 import typings.history.mod.Location
 import typings.history.mod.LocationState
 import typings.react.mod.CSSProperties
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 
 trait PageHeaderProps extends js.Object {
   var action: js.UndefOr[ReactNode | String] = js.undefined
-  var breadcrumbList: js.UndefOr[js.Array[AnonTitle]] = js.undefined
+  var breadcrumbList: js.UndefOr[js.Array[Title]] = js.undefined
   var breadcrumbNameMap: js.UndefOr[js.Any] = js.undefined
   var breadcrumbSeparator: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
@@ -31,7 +31,7 @@ trait PageHeaderProps extends js.Object {
   var tabActiveKey: js.UndefOr[String] = js.undefined
   var tabBarExtraContent: js.UndefOr[ReactNode] = js.undefined
   var tabDefaultActiveKey: js.UndefOr[String] = js.undefined
-  var tabList: js.UndefOr[js.Array[AnonKey]] = js.undefined
+  var tabList: js.UndefOr[js.Array[Key]] = js.undefined
   var title: js.UndefOr[ReactNode | String | Double] = js.undefined
   var wide: js.UndefOr[Boolean] = js.undefined
   def itemRender(menuItem: js.Any): ReactNode
@@ -42,7 +42,7 @@ object PageHeaderProps {
   def apply(
     itemRender: js.Any => ReactNode,
     action: ReactNode | String = null,
-    breadcrumbList: js.Array[AnonTitle] = null,
+    breadcrumbList: js.Array[Title] = null,
     breadcrumbNameMap: js.Any = null,
     breadcrumbSeparator: ReactNode = null,
     className: String = null,
@@ -61,7 +61,7 @@ object PageHeaderProps {
     tabActiveKey: String = null,
     tabBarExtraContent: ReactNode = null,
     tabDefaultActiveKey: String = null,
-    tabList: js.Array[AnonKey] = null,
+    tabList: js.Array[Key] = null,
     title: ReactNode | String | Double = null,
     wide: js.UndefOr[Boolean] = js.undefined
   ): PageHeaderProps = {
@@ -73,10 +73,10 @@ object PageHeaderProps {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (extraContent != null) __obj.updateDynamic("extraContent")(extraContent.asInstanceOf[js.Any])
-    if (!js.isUndefined(hiddenBreadcrumb)) __obj.updateDynamic("hiddenBreadcrumb")(hiddenBreadcrumb.asInstanceOf[js.Any])
+    if (!js.isUndefined(hiddenBreadcrumb)) __obj.updateDynamic("hiddenBreadcrumb")(hiddenBreadcrumb.get.asInstanceOf[js.Any])
     if (home != null) __obj.updateDynamic("home")(home.asInstanceOf[js.Any])
     if (linkElement != null) __obj.updateDynamic("linkElement")(linkElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
+    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.get.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
     if (onTabChange != null) __obj.updateDynamic("onTabChange")(js.Any.fromFunction1(onTabChange))
@@ -88,7 +88,7 @@ object PageHeaderProps {
     if (tabDefaultActiveKey != null) __obj.updateDynamic("tabDefaultActiveKey")(tabDefaultActiveKey.asInstanceOf[js.Any])
     if (tabList != null) __obj.updateDynamic("tabList")(tabList.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(wide)) __obj.updateDynamic("wide")(wide.asInstanceOf[js.Any])
+    if (!js.isUndefined(wide)) __obj.updateDynamic("wide")(wide.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageHeaderProps]
   }
 }

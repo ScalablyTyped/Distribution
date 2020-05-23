@@ -18,9 +18,9 @@ trait GetFlowTemplateRequest extends js.Object {
 
 object GetFlowTemplateRequest {
   @scala.inline
-  def apply(id: Urn, revisionNumber: Int | Double = null): GetFlowTemplateRequest = {
+  def apply(id: Urn, revisionNumber: js.UndefOr[Version] = js.undefined): GetFlowTemplateRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    if (revisionNumber != null) __obj.updateDynamic("revisionNumber")(revisionNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(revisionNumber)) __obj.updateDynamic("revisionNumber")(revisionNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFlowTemplateRequest]
   }
 }

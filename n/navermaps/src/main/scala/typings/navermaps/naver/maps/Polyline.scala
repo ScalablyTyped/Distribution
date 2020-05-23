@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("naver.maps.Polyline")
 @js.native
-class Polyline () extends OverlayView {
-  def this(options: PolylineOptions) = this()
+trait Polyline extends OverlayView {
   def getBounds(): Bounds = js.native
   def getClickable(): Boolean = js.native
   def getDistance(): Double = js.native

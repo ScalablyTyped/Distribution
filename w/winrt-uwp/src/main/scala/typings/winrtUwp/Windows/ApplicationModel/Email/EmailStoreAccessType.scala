@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object EmailStoreAccessType extends js.Object {
   /** Full access to all APIs. */
   @js.native
   sealed trait appMailboxesReadWrite extends EmailStoreAccessType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EmailStoreAccessType with Double] = js.native
-  /* 1 */ @js.native
-  object allMailboxesLimitedReadWrite extends TopLevel[allMailboxesLimitedReadWrite with Double]
-  
-  /* 0 */ @js.native
-  object appMailboxesReadWrite extends TopLevel[appMailboxesReadWrite with Double]
   
 }
 

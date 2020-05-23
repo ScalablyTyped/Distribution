@@ -1,5 +1,6 @@
 package typings.minecraftScriptingTypesServer
 
+import typings.minecraftScriptingTypesServer.anon.Rangemax
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,12 +12,12 @@ trait IAttackComponent extends js.Object {
   /**
     * Range of the random amount of damage the melee attack deals. A negative value can heal the entity instead of hurting it
     */
-  var damage: AnonRangemax
+  var damage: Rangemax
 }
 
 object IAttackComponent {
   @scala.inline
-  def apply(damage: AnonRangemax): IAttackComponent = {
+  def apply(damage: Rangemax): IAttackComponent = {
     val __obj = js.Dynamic.literal(damage = damage.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAttackComponent]
   }

@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// TODO rename to PlaceOpeningHours https://developers.google.com/maps/documentation/javascript/reference/places-service#PlaceOpeningHours
 @js.native
 trait OpeningHours extends js.Object {
   /**

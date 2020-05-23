@@ -14,14 +14,14 @@ trait RowSize extends js.Object {
 object RowSize {
   @scala.inline
   def apply(
-    height: Int | Double = null,
-    idx: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
+    idx: js.UndefOr[Double] = js.undefined,
     measure: MeasureObject = null,
     tuple: js.Array[String] = null
   ): RowSize = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (idx != null) __obj.updateDynamic("idx")(idx.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(idx)) __obj.updateDynamic("idx")(idx.get.asInstanceOf[js.Any])
     if (measure != null) __obj.updateDynamic("measure")(measure.asInstanceOf[js.Any])
     if (tuple != null) __obj.updateDynamic("tuple")(tuple.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowSize]

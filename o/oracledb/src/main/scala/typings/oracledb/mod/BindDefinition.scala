@@ -30,11 +30,15 @@ trait BindDefinition extends js.Object {
 
 object BindDefinition {
   @scala.inline
-  def apply(dir: Int | Double = null, maxSize: Int | Double = null, `type`: Int | Double = null): BindDefinition = {
+  def apply(
+    dir: js.UndefOr[Double] = js.undefined,
+    maxSize: js.UndefOr[Double] = js.undefined,
+    `type`: js.UndefOr[Double] = js.undefined
+  ): BindDefinition = {
     val __obj = js.Dynamic.literal()
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(dir)) __obj.updateDynamic("dir")(dir.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSize)) __obj.updateDynamic("maxSize")(maxSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindDefinition]
   }
 }

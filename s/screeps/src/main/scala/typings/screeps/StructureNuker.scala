@@ -1,6 +1,6 @@
 package typings.screeps
 
-import org.scalablytyped.runtime.TopLevel
+import typings.screeps.anon.StoreRESOURCEENERGYRESOURAlloy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,7 +52,32 @@ trait StructureNuker
   def launchNuke(pos: RoomPosition): ScreepsReturnCode
 }
 
-@JSGlobal("StructureNuker")
-@js.native
-object StructureNuker extends TopLevel[StructureNukerConstructor]
+object StructureNuker {
+  @scala.inline
+  def apply(
+    cooldown: Double,
+    destroy: () => ScreepsReturnCode,
+    effects: js.Array[RoomObjectEffect],
+    energy: Double,
+    energyCapacity: Double,
+    ghodium: Double,
+    ghodiumCapacity: Double,
+    hits: Double,
+    hitsMax: Double,
+    id: Id[StructureNuker],
+    isActive: () => Boolean,
+    launchNuke: RoomPosition => ScreepsReturnCode,
+    my: Boolean,
+    notifyWhenAttacked: Boolean => ScreepsReturnCode,
+    pos: RoomPosition,
+    room: Room,
+    store: StoreRESOURCEENERGYRESOURAlloy,
+    structureType: STRUCTURE_NUKER,
+    owner: Owner = null
+  ): StructureNuker = {
+    val __obj = js.Dynamic.literal(cooldown = cooldown.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), effects = effects.asInstanceOf[js.Any], energy = energy.asInstanceOf[js.Any], energyCapacity = energyCapacity.asInstanceOf[js.Any], ghodium = ghodium.asInstanceOf[js.Any], ghodiumCapacity = ghodiumCapacity.asInstanceOf[js.Any], hits = hits.asInstanceOf[js.Any], hitsMax = hitsMax.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isActive = js.Any.fromFunction0(isActive), launchNuke = js.Any.fromFunction1(launchNuke), my = my.asInstanceOf[js.Any], notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), pos = pos.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any], structureType = structureType.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StructureNuker]
+  }
+}
 

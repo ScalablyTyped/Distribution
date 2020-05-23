@@ -23,25 +23,25 @@ object UIkitNavbarOptions {
     align: String = null,
     boundary: String = null,
     `boundary-align`: js.UndefOr[Boolean] = js.undefined,
-    `delay-hide`: Int | Double = null,
-    `delay-show`: Int | Double = null,
+    `delay-hide`: js.UndefOr[Double] = js.undefined,
+    `delay-show`: js.UndefOr[Double] = js.undefined,
     dropbar: js.UndefOr[Boolean] = js.undefined,
     `dropbar-mode`: String = null,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     mode: String = null,
-    offset: Int | Double = null
+    offset: js.UndefOr[Double] = js.undefined
   ): UIkitNavbarOptions = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (boundary != null) __obj.updateDynamic("boundary")(boundary.asInstanceOf[js.Any])
-    if (!js.isUndefined(`boundary-align`)) __obj.updateDynamic("boundary-align")(`boundary-align`.asInstanceOf[js.Any])
-    if (`delay-hide` != null) __obj.updateDynamic("delay-hide")(`delay-hide`.asInstanceOf[js.Any])
-    if (`delay-show` != null) __obj.updateDynamic("delay-show")(`delay-show`.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropbar)) __obj.updateDynamic("dropbar")(dropbar.asInstanceOf[js.Any])
+    if (!js.isUndefined(`boundary-align`)) __obj.updateDynamic("boundary-align")(`boundary-align`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`delay-hide`)) __obj.updateDynamic("delay-hide")(`delay-hide`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`delay-show`)) __obj.updateDynamic("delay-show")(`delay-show`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropbar)) __obj.updateDynamic("dropbar")(dropbar.get.asInstanceOf[js.Any])
     if (`dropbar-mode` != null) __obj.updateDynamic("dropbar-mode")(`dropbar-mode`.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIkitNavbarOptions]
   }
 }

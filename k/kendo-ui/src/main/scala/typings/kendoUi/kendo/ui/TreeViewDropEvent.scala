@@ -33,7 +33,7 @@ object TreeViewDropEvent {
     if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget.asInstanceOf[js.Any])
     if (setValid != null) __obj.updateDynamic("setValid")(setValid.asInstanceOf[js.Any])
     if (sourceNode != null) __obj.updateDynamic("sourceNode")(sourceNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
+    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeViewDropEvent]
   }
 }

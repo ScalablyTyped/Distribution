@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides data for the PairingRequested event. */
-@JSGlobal("Windows.Devices.Enumeration.DevicePairingRequestedEventArgs")
 @js.native
-abstract class DevicePairingRequestedEventArgs () extends js.Object {
+trait DevicePairingRequestedEventArgs extends js.Object {
   /** Gets the DeviceInformation object associated with this pairing request. */
   var deviceInformation: DeviceInformation = js.native
   /** Gets the kind of pairing associated with this pairing event. */

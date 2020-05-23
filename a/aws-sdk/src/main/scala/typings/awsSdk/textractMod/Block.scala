@@ -64,31 +64,31 @@ object Block {
   @scala.inline
   def apply(
     BlockType: BlockType = null,
-    ColumnIndex: Int | Double = null,
-    ColumnSpan: Int | Double = null,
-    Confidence: Int | Double = null,
+    ColumnIndex: js.UndefOr[UInteger] = js.undefined,
+    ColumnSpan: js.UndefOr[UInteger] = js.undefined,
+    Confidence: js.UndefOr[Percent] = js.undefined,
     EntityTypes: EntityTypes = null,
     Geometry: Geometry = null,
     Id: NonEmptyString = null,
-    Page: Int | Double = null,
+    Page: js.UndefOr[UInteger] = js.undefined,
     Relationships: RelationshipList = null,
-    RowIndex: Int | Double = null,
-    RowSpan: Int | Double = null,
+    RowIndex: js.UndefOr[UInteger] = js.undefined,
+    RowSpan: js.UndefOr[UInteger] = js.undefined,
     SelectionStatus: SelectionStatus = null,
     Text: String = null
   ): Block = {
     val __obj = js.Dynamic.literal()
     if (BlockType != null) __obj.updateDynamic("BlockType")(BlockType.asInstanceOf[js.Any])
-    if (ColumnIndex != null) __obj.updateDynamic("ColumnIndex")(ColumnIndex.asInstanceOf[js.Any])
-    if (ColumnSpan != null) __obj.updateDynamic("ColumnSpan")(ColumnSpan.asInstanceOf[js.Any])
-    if (Confidence != null) __obj.updateDynamic("Confidence")(Confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(ColumnIndex)) __obj.updateDynamic("ColumnIndex")(ColumnIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ColumnSpan)) __obj.updateDynamic("ColumnSpan")(ColumnSpan.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence.get.asInstanceOf[js.Any])
     if (EntityTypes != null) __obj.updateDynamic("EntityTypes")(EntityTypes.asInstanceOf[js.Any])
     if (Geometry != null) __obj.updateDynamic("Geometry")(Geometry.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Page != null) __obj.updateDynamic("Page")(Page.asInstanceOf[js.Any])
+    if (!js.isUndefined(Page)) __obj.updateDynamic("Page")(Page.get.asInstanceOf[js.Any])
     if (Relationships != null) __obj.updateDynamic("Relationships")(Relationships.asInstanceOf[js.Any])
-    if (RowIndex != null) __obj.updateDynamic("RowIndex")(RowIndex.asInstanceOf[js.Any])
-    if (RowSpan != null) __obj.updateDynamic("RowSpan")(RowSpan.asInstanceOf[js.Any])
+    if (!js.isUndefined(RowIndex)) __obj.updateDynamic("RowIndex")(RowIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RowSpan)) __obj.updateDynamic("RowSpan")(RowSpan.get.asInstanceOf[js.Any])
     if (SelectionStatus != null) __obj.updateDynamic("SelectionStatus")(SelectionStatus.asInstanceOf[js.Any])
     if (Text != null) __obj.updateDynamic("Text")(Text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Block]

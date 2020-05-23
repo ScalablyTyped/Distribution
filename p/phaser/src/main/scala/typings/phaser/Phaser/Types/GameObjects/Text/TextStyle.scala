@@ -96,44 +96,44 @@ object TextStyle {
   def apply(
     align: String = null,
     backgroundColor: String = null,
-    baselineX: Int | Double = null,
-    baselineY: Int | Double = null,
+    baselineX: js.UndefOr[Double] = js.undefined,
+    baselineY: js.UndefOr[Double] = js.undefined,
     color: String = null,
-    fixedHeight: Int | Double = null,
-    fixedWidth: Int | Double = null,
+    fixedHeight: js.UndefOr[Double] = js.undefined,
+    fixedWidth: js.UndefOr[Double] = js.undefined,
     fontFamily: String = null,
     fontSize: String = null,
     fontStyle: String = null,
-    maxLines: Int | Double = null,
+    maxLines: js.UndefOr[integer] = js.undefined,
     metrics: TextMetrics = null,
     padding: TextPadding = null,
-    resolution: Int | Double = null,
+    resolution: js.UndefOr[Double] = js.undefined,
     rtl: js.UndefOr[Boolean] = js.undefined,
     shadow: TextShadow = null,
     stroke: String = null,
-    strokeThickness: Int | Double = null,
+    strokeThickness: js.UndefOr[Double] = js.undefined,
     testString: String = null,
     wordWrap: TextWordWrap = null
   ): TextStyle = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (baselineX != null) __obj.updateDynamic("baselineX")(baselineX.asInstanceOf[js.Any])
-    if (baselineY != null) __obj.updateDynamic("baselineY")(baselineY.asInstanceOf[js.Any])
+    if (!js.isUndefined(baselineX)) __obj.updateDynamic("baselineX")(baselineX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(baselineY)) __obj.updateDynamic("baselineY")(baselineY.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (fixedHeight != null) __obj.updateDynamic("fixedHeight")(fixedHeight.asInstanceOf[js.Any])
-    if (fixedWidth != null) __obj.updateDynamic("fixedWidth")(fixedWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedHeight)) __obj.updateDynamic("fixedHeight")(fixedHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedWidth)) __obj.updateDynamic("fixedWidth")(fixedWidth.get.asInstanceOf[js.Any])
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (maxLines != null) __obj.updateDynamic("maxLines")(maxLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLines)) __obj.updateDynamic("maxLines")(maxLines.get.asInstanceOf[js.Any])
     if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolution)) __obj.updateDynamic("resolution")(resolution.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.get.asInstanceOf[js.Any])
     if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (strokeThickness != null) __obj.updateDynamic("strokeThickness")(strokeThickness.asInstanceOf[js.Any])
+    if (!js.isUndefined(strokeThickness)) __obj.updateDynamic("strokeThickness")(strokeThickness.get.asInstanceOf[js.Any])
     if (testString != null) __obj.updateDynamic("testString")(testString.asInstanceOf[js.Any])
     if (wordWrap != null) __obj.updateDynamic("wordWrap")(wordWrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextStyle]

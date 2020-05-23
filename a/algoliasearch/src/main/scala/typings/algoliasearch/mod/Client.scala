@@ -1,11 +1,11 @@
 package typings.algoliasearch.mod
 
-import typings.algoliasearch.AnonIndexName
-import typings.algoliasearch.AnonLogs
-import typings.algoliasearch.AnonParams
 import typings.algoliasearch.algoliasearchStrings.rules
 import typings.algoliasearch.algoliasearchStrings.settings
 import typings.algoliasearch.algoliasearchStrings.synonyms
+import typings.algoliasearch.anon.IndexName
+import typings.algoliasearch.anon.Logs
+import typings.algoliasearch.anon.Params
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -106,11 +106,11 @@ trait Client extends js.Object {
   /**
     * Get 1000 last events
     */
-  def getLogs(options: LogsOptions): js.Promise[AnonLogs] = js.native
+  def getLogs(options: LogsOptions): js.Promise[Logs] = js.native
   /**
     * Get 1000 last events
     */
-  def getLogs(options: LogsOptions, cb: js.Function2[/* err */ Error, /* res */ AnonLogs, Unit]): Unit = js.native
+  def getLogs(options: LogsOptions, cb: js.Function2[/* err */ Error, /* res */ Logs, Unit]): Unit = js.native
   /**
     * Initialization of the index
     */
@@ -142,18 +142,15 @@ trait Client extends js.Object {
   /**
     * Query on multiple index
     */
-  def search[T](queries: js.Array[AnonIndexName]): js.Promise[MultiResponse[T]] = js.native
+  def search[T](queries: js.Array[IndexName]): js.Promise[MultiResponse[T]] = js.native
   /**
     * Query on multiple index
     */
-  def search[T](
-    queries: js.Array[AnonIndexName],
-    cb: js.Function2[/* err */ Error, /* res */ MultiResponse[T], Unit]
-  ): Unit = js.native
+  def search[T](queries: js.Array[IndexName], cb: js.Function2[/* err */ Error, /* res */ MultiResponse[T], Unit]): Unit = js.native
   /**
     * Query for facet values of a specific facet
     */
-  def searchForFacetValues(queries: js.Array[AnonParams]): js.Promise[js.Array[typings.algoliasearch.mod.SearchForFacetValues.Response]] = js.native
+  def searchForFacetValues(queries: js.Array[Params]): js.Promise[js.Array[typings.algoliasearch.mod.SearchForFacetValues.Response]] = js.native
   /**
     * Add a header to be sent with all upcoming requests
     */

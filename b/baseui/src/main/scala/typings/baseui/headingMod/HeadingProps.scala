@@ -182,10 +182,10 @@ object HeadingProps {
     placeItems: Responsive[String] = null,
     placeSelf: Responsive[String] = null,
     position: Responsive[Position] = null,
-    ref: Ref[_] = null,
+    ref: js.UndefOr[Null | Ref[_]] = js.undefined,
     right: Responsive[Scale] = null,
     src: String = null,
-    styleLevel: Int | Double = null,
+    styleLevel: js.UndefOr[Double] = js.undefined,
     top: Responsive[Scale] = null,
     width: Responsive[Scale] = null
   ): HeadingProps = {
@@ -247,10 +247,10 @@ object HeadingProps {
     if (placeItems != null) __obj.updateDynamic("placeItems")(placeItems.asInstanceOf[js.Any])
     if (placeSelf != null) __obj.updateDynamic("placeSelf")(placeSelf.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
     if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
-    if (styleLevel != null) __obj.updateDynamic("styleLevel")(styleLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(styleLevel)) __obj.updateDynamic("styleLevel")(styleLevel.get.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeadingProps]

@@ -8,16 +8,14 @@ import scala.scalajs.js.annotation._
   * _Cell in a UITableRow._
   * @see https://docs.scriptable.app/uitablecell
   */
-@JSGlobal("UITableCell")
-@js.native
-class UITableCell () extends js.Object {
+trait UITableCell extends js.Object {
   /**
     * _Whether to dismiss the table when the button is tapped._
     *
     * Defaults to false.
     * @see https://docs.scriptable.app/uitablecell/#dismissontap
     */
-  var dismissOnTap: Boolean = js.native
+  var dismissOnTap: Boolean
   /**
     * _Color of the subtitle._
     *
@@ -25,7 +23,7 @@ class UITableCell () extends js.Object {
     * context the script is running in.
     * @see https://docs.scriptable.app/uitablecell/#subtitlecolor
     */
-  var subtitleColor: Color = js.native
+  var subtitleColor: Color
   /**
     * _Color of the title._
     *
@@ -33,7 +31,7 @@ class UITableCell () extends js.Object {
     * context the script is running in.
     * @see https://docs.scriptable.app/uitablecell/#titlecolor
     */
-  var titleColor: Color = js.native
+  var titleColor: Color
   /**
     * _Relative width of the cell._
     *
@@ -45,75 +43,51 @@ class UITableCell () extends js.Object {
     * three times as wide as A.
     * @see https://docs.scriptable.app/uitablecell/#widthweight
     */
-  var widthWeight: Double = js.native
+  var widthWeight: Double
   /**
     * _Center aligns content._
     *
     * Specifies that content in the cell should be center aligned.
     * @see https://docs.scriptable.app/uitablecell/#-centeraligned
     */
-  def centerAligned(): Unit = js.native
+  def centerAligned(): Unit
   /**
     * _Left aligns content._
     *
     * Specifies that content in the cell should be left aligned.
     * @see https://docs.scriptable.app/uitablecell/#-leftaligned
     */
-  def leftAligned(): Unit = js.native
+  def leftAligned(): Unit
   /**
     * _Called when the button is tapped._
     *
     * Buttons cannot be tapped when the table is presented in Siri.
     * @see https://docs.scriptable.app/uitablecell/#ontap
     */
-  def onTap(): Unit = js.native
+  def onTap(): Unit
   /**
     * _Right aligns content._
     *
     * Specifies that content in the cell should be right aligned.
     * @see https://docs.scriptable.app/uitablecell/#-rightaligned
     */
-  def rightAligned(): Unit = js.native
+  def rightAligned(): Unit
 }
 
-/* static members */
-@JSGlobal("UITableCell")
-@js.native
-object UITableCell extends js.Object {
-  /**
-    * _Constructs a button cell._
-    *
-    * Constructs a new cell that contains a button. Set the `onTap` property to specify an action to performed when the button is tapped.
-    * @param title - Title of the button.
-    * @see https://docs.scriptable.app/uitablecell/#button
-    */
-  def button(title: String): UITableCell = js.native
-  /**
-    * _Constructs an image cell._
-    *
-    * Constructs a new cell containing an image.
-    * @param image - Image to show in the cell.
-    * @see https://docs.scriptable.app/uitablecell/#image
-    */
-  def image(image: Image): UITableCell = js.native
-  /**
-    * _Constructs an image cell._
-    *
-    * Constructs a new cell that loads the image at the specified URL.
-    * @param url - URL to image.
-    * @see https://docs.scriptable.app/uitablecell/#imageaturl
-    */
-  def imageAtURL(url: String): UITableCell = js.native
-  /**
-    * _Constructs a text cell._
-    *
-    * Constructs a new cell containing a text.
-    * @param title - Optional title to show in the cell.
-    * @param subtitle - Optional subtitle shown below the title.
-    * @see https://docs.scriptable.app/uitablecell/#text
-    */
-  def text(): UITableCell = js.native
-  def text(title: String): UITableCell = js.native
-  def text(title: String, subtitle: String): UITableCell = js.native
+object UITableCell {
+  @scala.inline
+  def apply(
+    centerAligned: () => Unit,
+    dismissOnTap: Boolean,
+    leftAligned: () => Unit,
+    onTap: () => Unit,
+    rightAligned: () => Unit,
+    subtitleColor: Color,
+    titleColor: Color,
+    widthWeight: Double
+  ): UITableCell = {
+    val __obj = js.Dynamic.literal(centerAligned = js.Any.fromFunction0(centerAligned), dismissOnTap = dismissOnTap.asInstanceOf[js.Any], leftAligned = js.Any.fromFunction0(leftAligned), onTap = js.Any.fromFunction0(onTap), rightAligned = js.Any.fromFunction0(rightAligned), subtitleColor = subtitleColor.asInstanceOf[js.Any], titleColor = titleColor.asInstanceOf[js.Any], widthWeight = widthWeight.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UITableCell]
+  }
 }
 

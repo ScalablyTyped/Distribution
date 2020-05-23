@@ -1,5 +1,6 @@
 package typings.agGrid
 
+import typings.agGrid.anon.ColId
 import typings.agGrid.columnMod.Column
 import typings.agGrid.eventsMod.ColumnEventType
 import scala.scalajs.js
@@ -22,7 +23,7 @@ object sortControllerMod extends js.Object {
     def getColumnsWithSortingOrdered(): js.Array[Column] = js.native
     /* private */ def getNextSortDirection(column: js.Any): js.Any = js.native
     def getSortForRowController(): js.Array[_] = js.native
-    def getSortModel(): js.Array[AnonColId] = js.native
+    def getSortModel(): js.Array[ColId] = js.native
     def onSortChanged(): Unit = js.native
     def progressSort(column: Column, multiSort: Boolean): Unit = js.native
     def progressSort(column: Column, multiSort: Boolean, source: ColumnEventType): Unit = js.native

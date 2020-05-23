@@ -1,7 +1,7 @@
 
 # Scala.js typings for cli-progress
 
-Typings are for version 3.4
+Typings are for version 3.7
 
 ## Library description:
 easy to use progress-bar for command-line/terminal applications

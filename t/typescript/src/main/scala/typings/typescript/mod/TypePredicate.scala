@@ -17,16 +17,9 @@ trait TypePredicate extends js.Object
 
 object TypePredicate {
   @scala.inline
-  def ThisTypePredicate(
-    kind: This,
-    `type`: Type,
-    parameterIndex: js.UndefOr[scala.Nothing] = js.undefined,
-    parameterName: js.UndefOr[scala.Nothing] = js.undefined
-  ): TypePredicate = {
+  def ThisTypePredicate(kind: This, `type`: Type): TypePredicate = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(parameterIndex)) __obj.updateDynamic("parameterIndex")(parameterIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(parameterName)) __obj.updateDynamic("parameterName")(parameterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypePredicate]
   }
   @scala.inline
@@ -41,15 +34,8 @@ object TypePredicate {
     __obj.asInstanceOf[TypePredicate]
   }
   @scala.inline
-  def AssertsThisTypePredicate(
-    kind: AssertsThis,
-    parameterIndex: js.UndefOr[scala.Nothing] = js.undefined,
-    parameterName: js.UndefOr[scala.Nothing] = js.undefined,
-    `type`: Type = null
-  ): TypePredicate = {
+  def AssertsThisTypePredicate(kind: AssertsThis, `type`: Type = null): TypePredicate = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(parameterIndex)) __obj.updateDynamic("parameterIndex")(parameterIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(parameterName)) __obj.updateDynamic("parameterName")(parameterName.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypePredicate]
   }

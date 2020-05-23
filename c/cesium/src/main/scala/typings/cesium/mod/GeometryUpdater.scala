@@ -1,6 +1,5 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonEntity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "GeometryUpdater")
 @js.native
 class GeometryUpdater protected () extends js.Object {
-  def this(options: AnonEntity) = this()
+  def this(options: typings.cesium.anon.Entity) = this()
   val classificationTypeProperty: Property = js.native
   val entity: Entity = js.native
   val fillEnabled: Boolean = js.native

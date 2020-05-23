@@ -54,7 +54,7 @@ object GetAvailabilityZoneResult {
     filters: js.Array[GetAvailabilityZoneFilter] = null
   ): GetAvailabilityZoneResult = {
     val __obj = js.Dynamic.literal(groupName = groupName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nameSuffix = nameSuffix.asInstanceOf[js.Any], networkBorderGroup = networkBorderGroup.asInstanceOf[js.Any], optInStatus = optInStatus.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], zoneId = zoneId.asInstanceOf[js.Any])
-    if (!js.isUndefined(allAvailabilityZones)) __obj.updateDynamic("allAvailabilityZones")(allAvailabilityZones.asInstanceOf[js.Any])
+    if (!js.isUndefined(allAvailabilityZones)) __obj.updateDynamic("allAvailabilityZones")(allAvailabilityZones.get.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAvailabilityZoneResult]
   }

@@ -77,7 +77,7 @@ object FlowLog {
     LogDestinationType: LogDestinationType = null,
     LogFormat: String = null,
     LogGroupName: String = null,
-    MaxAggregationInterval: Int | scala.Double = null,
+    MaxAggregationInterval: js.UndefOr[Integer] = js.undefined,
     ResourceId: String = null,
     Tags: TagList = null,
     TrafficType: TrafficType = null
@@ -93,7 +93,7 @@ object FlowLog {
     if (LogDestinationType != null) __obj.updateDynamic("LogDestinationType")(LogDestinationType.asInstanceOf[js.Any])
     if (LogFormat != null) __obj.updateDynamic("LogFormat")(LogFormat.asInstanceOf[js.Any])
     if (LogGroupName != null) __obj.updateDynamic("LogGroupName")(LogGroupName.asInstanceOf[js.Any])
-    if (MaxAggregationInterval != null) __obj.updateDynamic("MaxAggregationInterval")(MaxAggregationInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxAggregationInterval)) __obj.updateDynamic("MaxAggregationInterval")(MaxAggregationInterval.get.asInstanceOf[js.Any])
     if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     if (TrafficType != null) __obj.updateDynamic("TrafficType")(TrafficType.asInstanceOf[js.Any])

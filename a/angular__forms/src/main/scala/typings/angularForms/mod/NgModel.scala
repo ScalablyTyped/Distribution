@@ -4,7 +4,7 @@ import typings.angularCore.mod.EventEmitter
 import typings.angularCore.mod.OnChanges
 import typings.angularCore.mod.OnDestroy
 import typings.angularCore.mod.SimpleChanges
-import typings.angularForms.AnonName
+import typings.angularForms.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -64,7 +64,7 @@ class NgModel protected ()
     * Defaults to 'change'. Possible values: `'change'` | `'blur'` | `'submit'`.
     *
     */
-  var options: AnonName = js.native
+  var options: Name = js.native
   /**
     * @description
     * Event emitter for producing the `ngModelChange` event after

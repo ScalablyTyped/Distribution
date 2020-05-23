@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side counterpart of the ListBox and ListBoxFor extensions.
   */
-@JSGlobal("MVCxClientListBox")
 @js.native
-class MVCxClientListBox () extends ASPxClientListBox {
+trait MVCxClientListBox extends ASPxClientListBox {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -22,16 +21,5 @@ class MVCxClientListBox () extends ASPxClientListBox {
     */
   def PerformCallback(data: js.Any): Unit = js.native
   def PerformCallback(data: js.Any, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("MVCxClientListBox")
-@js.native
-object MVCxClientListBox extends js.Object {
-  /**
-    * Converts the specified object to the MVCxClientListBox type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): MVCxClientListBox = js.native
 }
 

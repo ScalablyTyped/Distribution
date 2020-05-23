@@ -4,6 +4,7 @@ import typings.grpcGrpcJs.channelMod.ConnectivityState
 import typings.grpcGrpcJs.channelOptionsMod.ChannelOptions
 import typings.grpcGrpcJs.pickerMod.Picker
 import typings.grpcGrpcJs.subchannelMod.Subchannel
+import typings.grpcGrpcJs.subchannelMod.SubchannelAddress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +15,7 @@ trait ChannelControlHelper extends js.Object {
     * @param subchannelAddress The address to connect to
     * @param subchannelArgs Extra channel arguments specified by the load balancer
     */
-  def createSubchannel(subchannelAddress: String, subchannelArgs: ChannelOptions): Subchannel
+  def createSubchannel(subchannelAddress: SubchannelAddress, subchannelArgs: ChannelOptions): Subchannel
   /**
     * Request new data from the resolver.
     */
@@ -32,12 +33,11 @@ trait ChannelControlHelper extends js.Object {
 object ChannelControlHelper {
   @scala.inline
   def apply(
-    createSubchannel: (String, ChannelOptions) => Subchannel,
+    createSubchannel: (SubchannelAddress, ChannelOptions) => Subchannel,
     requestReresolution: () => Unit,
     updateState: (ConnectivityState, Picker) => Unit
   ): ChannelControlHelper = {
     val __obj = js.Dynamic.literal(createSubchannel = js.Any.fromFunction2(createSubchannel), requestReresolution = js.Any.fromFunction0(requestReresolution), updateState = js.Any.fromFunction2(updateState))
-  
     __obj.asInstanceOf[ChannelControlHelper]
   }
 }

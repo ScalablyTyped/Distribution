@@ -1,6 +1,6 @@
 package typings.angular.mod
 
-import typings.angular.AnonId
+import typings.angular.anon.Id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +27,7 @@ trait ICacheObject extends js.Object {
   /**
     * Retrieve information regarding a particular Cache.
     */
-  def info(): AnonId = js.native
+  def info(): Id = js.native
   /**
     * Inserts a named entry into the Cache object to be retrieved later, and incrementing the size of the cache if the key was not already present in the cache. If behaving like an LRU cache, it will also remove stale entries from the set.
     *

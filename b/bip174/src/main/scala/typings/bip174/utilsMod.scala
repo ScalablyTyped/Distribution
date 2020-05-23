@@ -19,8 +19,7 @@ object utilsMod extends js.Object {
   def addOutputAttributes(outputs: js.Array[PsbtOutput], data: js.Any): Unit = js.native
   def checkForInput(inputs: js.Array[PsbtInput], inputIndex: Double): PsbtInput = js.native
   def checkForOutput(outputs: js.Array[PsbtOutput], outputIndex: Double): PsbtOutput = js.native
-  def checkHasKey(checkKeyVal: KeyValue, keyVals: js.UndefOr[scala.Nothing], enumLength: Double): Unit = js.native
-  def checkHasKey(checkKeyVal: KeyValue, keyVals: js.Array[KeyValue], enumLength: Double): Unit = js.native
+  def checkHasKey(checkKeyVal: KeyValue, keyVals: js.UndefOr[js.Array[KeyValue]], enumLength: Double): Unit = js.native
   def defaultLocktimeSetter(locktime: Double, txBuf: Buffer): Buffer = js.native
   def defaultVersionSetter(version: Double, txBuf: Buffer): Buffer = js.native
   def getEnumLength(myenum: js.Any): Double = js.native

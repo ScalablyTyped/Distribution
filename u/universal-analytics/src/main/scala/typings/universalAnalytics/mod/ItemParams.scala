@@ -74,7 +74,7 @@ trait ItemParams
 object ItemParams {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     ic: String = null,
     in: String = null,
     ip: String | Double = null,

@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.ReportViewer
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,32 +41,6 @@ object ExportOptions extends js.Object {
   ///Specifies the Word property in ExportOptions to get Word option.
   @js.native
   sealed trait Word extends ExportOptions
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ExportOptions with Double] = js.native
-  /* 0 */ @js.native
-  object All extends TopLevel[All with Double]
-  
-  /* 6 */ @js.native
-  object CSV extends TopLevel[CSV with Double]
-  
-  /* 7 */ @js.native
-  object CustomItems extends TopLevel[CustomItems with Double]
-  
-  /* 3 */ @js.native
-  object Excel extends TopLevel[Excel with Double]
-  
-  /* 4 */ @js.native
-  object Html extends TopLevel[Html with Double]
-  
-  /* 5 */ @js.native
-  object PPT extends TopLevel[PPT with Double]
-  
-  /* 1 */ @js.native
-  object Pdf extends TopLevel[Pdf with Double]
-  
-  /* 2 */ @js.native
-  object Word extends TopLevel[Word with Double]
   
 }
 

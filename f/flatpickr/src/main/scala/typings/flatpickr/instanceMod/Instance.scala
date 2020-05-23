@@ -1,17 +1,16 @@
 package typings.flatpickr.instanceMod
 
-import typings.flatpickr.AnonElement
-import typings.flatpickr.AnonGetDaysInMonth
+import typings.flatpickr.anon.Element
+import typings.flatpickr.anon.GetDaysInMonth
+import typings.flatpickr.anon.kinkeyofOptionsOptionsk
 import typings.flatpickr.formattingMod.Formats_
 import typings.flatpickr.formattingMod.RevFormat_
 import typings.flatpickr.formattingMod.TokenRegex_
-import typings.flatpickr.globalsMod._Global_.Date
-import typings.flatpickr.globalsMod._Global_.HTMLElement
-import typings.flatpickr.kinkeyofOptionsOptionsk
+import typings.flatpickr.globalsMod.global.Date
+import typings.flatpickr.globalsMod.global.HTMLElement
 import typings.flatpickr.localeMod.Locale
 import typings.flatpickr.optionsMod.DateOption
 import typings.flatpickr.optionsMod.ParsedOptions
-import typings.std.Element
 import typings.std.FocusEvent
 import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
@@ -23,12 +22,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined flatpickr.flatpickr/dist/types/instance.Elements & flatpickr.flatpickr/dist/types/instance.Formatting & {  minRangeDate ? :flatpickr.flatpickr/dist/types/globals._Global_.Date,   maxRangeDate ? :flatpickr.flatpickr/dist/types/globals._Global_.Date,   now  :flatpickr.flatpickr/dist/types/globals._Global_.Date,   latestSelectedDateObj ? :flatpickr.flatpickr/dist/types/globals._Global_.Date,   _selectedDateObj ? :flatpickr.flatpickr/dist/types/globals._Global_.Date,   selectedDates  :std.Array<flatpickr.flatpickr/dist/types/globals._Global_.Date>,   _initialDate  :flatpickr.flatpickr/dist/types/globals._Global_.Date,   config  :flatpickr.flatpickr/dist/types/options.ParsedOptions,   loadedPlugins  :std.Array<string>,   l10n  :flatpickr.flatpickr/dist/types/locale.Locale,   currentYear  :number,   currentMonth  :number,   isOpen  :boolean,   isMobile  :boolean,   minDateHasTime  :boolean,   maxDateHasTime  :boolean,   showTimeInput  :boolean,   _showTimeInput  :boolean, changeMonth (value : number, isOffset ? : boolean, fromKeyboard ? : boolean): void, changeYear (year : number): void, clear (emitChangeEvent ? : boolean, toInitial ? : boolean): void, close (): void, destroy (): void, isEnabled (date : flatpickr.flatpickr/dist/types/options.DateOption, timeless ? : boolean): boolean, jumpToDate (date ? : flatpickr.flatpickr/dist/types/options.DateOption, triggerChange ? : boolean): void, open (e ? : std.FocusEvent | std.MouseEvent, positionElement ? : flatpickr.flatpickr/dist/types/globals._Global_.HTMLElement): void, redraw (): void, set (option : keyof flatpickr.flatpickr/dist/types/options.Options | {[ k in keyof flatpickr.flatpickr/dist/types/options.Options ]:? flatpickr.flatpickr/dist/types/options.Options[k]}, value ? : any): void, setDate (date : flatpickr.flatpickr/dist/types/options.DateOption | std.Array<flatpickr.flatpickr/dist/types/options.DateOption>, triggerChange ? : boolean, format ? : string): void, toggle (): void, pad (num : string | number): string, parseDate (date : flatpickr.flatpickr/dist/types/globals._Global_.Date | string | number, givenFormat ? : string, timeless ? : boolean): flatpickr.flatpickr/dist/types/globals._Global_.Date | undefined, formatDate (dateObj : flatpickr.flatpickr/dist/types/globals._Global_.Date, frmt : string): string,   _handlers  :std.Array<{  event  :string,   element  :std.Element, handler (e ? : std.Event): void,   options ? :{  capture ? :boolean}}>, _bind <E extends std.Element>(element : E | std.Array<E>, event : string | std.Array<string>, handler : (e ? : any): void): void, _createElement <E extends flatpickr.flatpickr/dist/types/globals._Global_.HTMLElement>(tag : keyof std.HTMLElementTagNameMap, className : string, content ? : string): E, _setHoursFromDate (date : flatpickr.flatpickr/dist/types/globals._Global_.Date): void, _debouncedChange (): void,   __hideNextMonthArrow  :boolean,   __hidePrevMonthArrow  :boolean, _positionCalendar (customPositionElement ? : flatpickr.flatpickr/dist/types/globals._Global_.HTMLElement): void,   utils  :{getDaysInMonth (month ? : number, year ? : number): number}} */
+/* Inlined flatpickr.flatpickr/dist/types/instance.Elements & flatpickr.flatpickr/dist/types/instance.Formatting & {  minRangeDate ? :flatpickr.flatpickr/dist/types/globals.<global>.Date,   maxRangeDate ? :flatpickr.flatpickr/dist/types/globals.<global>.Date,   now  :flatpickr.flatpickr/dist/types/globals.<global>.Date,   latestSelectedDateObj ? :flatpickr.flatpickr/dist/types/globals.<global>.Date,   _selectedDateObj ? :flatpickr.flatpickr/dist/types/globals.<global>.Date,   selectedDates  :std.Array<flatpickr.flatpickr/dist/types/globals.<global>.Date>,   _initialDate  :flatpickr.flatpickr/dist/types/globals.<global>.Date,   config  :flatpickr.flatpickr/dist/types/options.ParsedOptions,   loadedPlugins  :std.Array<string>,   l10n  :flatpickr.flatpickr/dist/types/locale.Locale,   currentYear  :number,   currentMonth  :number,   isOpen  :boolean,   isMobile  :boolean,   minDateHasTime  :boolean,   maxDateHasTime  :boolean,   showTimeInput  :boolean,   _showTimeInput  :boolean, changeMonth (value : number, isOffset ? : boolean, fromKeyboard ? : boolean): void, changeYear (year : number): void, clear (emitChangeEvent ? : boolean, toInitial ? : boolean): void, close (): void, destroy (): void, isEnabled (date : flatpickr.flatpickr/dist/types/options.DateOption, timeless ? : boolean): boolean, jumpToDate (date ? : flatpickr.flatpickr/dist/types/options.DateOption, triggerChange ? : boolean): void, open (e ? : std.FocusEvent | std.MouseEvent, positionElement ? : flatpickr.flatpickr/dist/types/globals.<global>.HTMLElement): void, redraw (): void, set (option : keyof flatpickr.flatpickr/dist/types/options.Options | {[ k in keyof flatpickr.flatpickr/dist/types/options.Options ]:? flatpickr.flatpickr/dist/types/options.Options[k]}, value ? : any): void, setDate (date : flatpickr.flatpickr/dist/types/options.DateOption | std.Array<flatpickr.flatpickr/dist/types/options.DateOption>, triggerChange ? : boolean, format ? : string): void, toggle (): void, pad (num : string | number): string, parseDate (date : flatpickr.flatpickr/dist/types/globals.<global>.Date | string | number, givenFormat ? : string, timeless ? : boolean): flatpickr.flatpickr/dist/types/globals.<global>.Date | undefined, formatDate (dateObj : flatpickr.flatpickr/dist/types/globals.<global>.Date, frmt : string): string,   _handlers  :std.Array<{  event  :string,   element  :std.Element, handler (e ? : std.Event): void,   options ? :{  capture ? :boolean}}>, _bind <E extends std.Element>(element : E | std.Array<E>, event : string | std.Array<string>, handler : (e ? : any): void): void, _createElement <E extends flatpickr.flatpickr/dist/types/globals.<global>.HTMLElement>(tag : keyof std.HTMLElementTagNameMap, className : string, content ? : string): E, _setHoursFromDate (date : flatpickr.flatpickr/dist/types/globals.<global>.Date): void, _debouncedChange (): void,   __hideNextMonthArrow  :boolean,   __hidePrevMonthArrow  :boolean, _positionCalendar (customPositionElement ? : flatpickr.flatpickr/dist/types/globals.<global>.HTMLElement): void,   utils  :{getDaysInMonth (month ? : number, year ? : number): number}} */
 @js.native
 trait Instance extends js.Object {
   var __hideNextMonthArrow: Boolean = js.native
   var __hidePrevMonthArrow: Boolean = js.native
-  var _handlers: js.Array[AnonElement] = js.native
+  var _handlers: js.Array[Element] = js.native
   var _hideNextMonthArrow: Boolean = js.native
   var _hidePrevMonthArrow: Boolean = js.native
   var _initialDate: Date = js.native
@@ -79,15 +78,15 @@ trait Instance extends js.Object {
   var timeContainer: js.UndefOr[HTMLDivElement] = js.native
   var todayDateElem: js.UndefOr[DayElement] = js.native
   var tokenRegex: TokenRegex_ = js.native
-  var utils: AnonGetDaysInMonth = js.native
+  var utils: GetDaysInMonth = js.native
   var weekNumbers: js.UndefOr[HTMLDivElement] = js.native
   var weekWrapper: js.UndefOr[HTMLDivElement] = js.native
   var weekdayContainer: HTMLDivElement = js.native
   var yearElements: js.Array[HTMLInputElement] = js.native
-  def _bind[E /* <: Element */](element: E, event: String, handler: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): Unit = js.native
-  def _bind[E /* <: Element */](element: E, event: js.Array[String], handler: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): Unit = js.native
-  def _bind[E /* <: Element */](element: js.Array[E], event: String, handler: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): Unit = js.native
-  def _bind[E /* <: Element */](
+  def _bind[E /* <: typings.std.Element */](element: E, event: String, handler: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  def _bind[E /* <: typings.std.Element */](element: E, event: js.Array[String], handler: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  def _bind[E /* <: typings.std.Element */](element: js.Array[E], event: String, handler: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  def _bind[E /* <: typings.std.Element */](
     element: js.Array[E],
     event: js.Array[String],
     handler: js.Function1[/* e */ js.UndefOr[js.Any], Unit]

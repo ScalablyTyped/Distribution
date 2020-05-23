@@ -14,8 +14,8 @@ trait PlusMapsOverlay extends js.Object {
   /**
     * 隐藏地图上的覆盖物
     * 常用于地图覆盖物在显示后调用此方法来隐藏。
-    * 		只有添加到地图上的覆盖物才能看到效果；
-    * 		如果覆盖物对象已经在地图上隐藏再调用此方法将无效果。
+    *         只有添加到地图上的覆盖物才能看到效果；
+    *         如果覆盖物对象已经在地图上隐藏再调用此方法将无效果。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
@@ -30,8 +30,8 @@ trait PlusMapsOverlay extends js.Object {
   /**
     * 显示地图上的覆盖物
     * 常用于地图覆盖物在隐藏后调用此方法来显示。
-    * 	只有添加到地图上的覆盖物才能看到效果；
-    * 	如果覆盖物对象已经在地图上显示再调用此方法将无效果。
+    *     只有添加到地图上的覆盖物才能看到效果；
+    *     如果覆盖物对象已经在地图上显示再调用此方法将无效果。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */

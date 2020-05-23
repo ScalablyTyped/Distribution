@@ -2,7 +2,7 @@ package typings.reduxBootstrap.interfacesMod.interfaces
 
 import typings.history.mod.History
 import typings.history.mod.LocationState
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.redux.mod.AnyAction
 import typings.redux.mod.Store
 import scala.scalajs.js

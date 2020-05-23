@@ -11,7 +11,7 @@ trait ConnectionInput extends js.Object {
     */
   var ConnectionProperties: typings.awsSdk.glueMod.ConnectionProperties = js.native
   /**
-    * The type of the connection. Currently, these types are supported:    JDBC - Designates a connection to a database through Java Database Connectivity (JDBC).    MONGODB - Designates a connection to a MongoDB document database.   SFTP is not supported.
+    * The type of the connection. Currently, these types are supported:    JDBC - Designates a connection to a database through Java Database Connectivity (JDBC).    KAFKA - Designates a connection to an Apache Kafka streaming platform.    MONGODB - Designates a connection to a MongoDB document database.   SFTP is not supported.
     */
   var ConnectionType: typings.awsSdk.glueMod.ConnectionType = js.native
   /**

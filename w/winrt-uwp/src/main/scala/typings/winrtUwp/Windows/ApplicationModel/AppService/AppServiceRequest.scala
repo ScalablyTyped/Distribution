@@ -7,16 +7,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a message that the endpoint for one app service sends to another app service. */
-@JSGlobal("Windows.ApplicationModel.AppService.AppServiceRequest")
-@js.native
-abstract class AppServiceRequest () extends js.Object {
+trait AppServiceRequest extends js.Object {
   /** Gets the message that request from the app service contains. */
-  var message: ValueSet = js.native
+  var message: ValueSet
   /**
     * Sends a response to a received request.
     * @param message The message that you want to include in the response.
     * @return An asynchronous operation to send the response.
     */
-  def sendResponseAsync(message: ValueSet): IPromiseWithIAsyncOperation[AppServiceResponseStatus] = js.native
+  def sendResponseAsync(message: ValueSet): IPromiseWithIAsyncOperation[AppServiceResponseStatus]
+}
+
+object AppServiceRequest {
+  @scala.inline
+  def apply(
+    message: ValueSet,
+    sendResponseAsync: ValueSet => IPromiseWithIAsyncOperation[AppServiceResponseStatus]
+  ): AppServiceRequest = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], sendResponseAsync = js.Any.fromFunction1(sendResponseAsync))
+    __obj.asInstanceOf[AppServiceRequest]
+  }
 }
 

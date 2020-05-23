@@ -248,14 +248,14 @@ object ParticleEmitterConfig {
     emitZone: js.Object = null,
     follow: GameObject = null,
     followOffset: js.Object = null,
-    followOffsetDotx: Int | Double = null,
-    followOffsetDoty: Int | Double = null,
+    followOffsetDotx: js.UndefOr[Double] = js.undefined,
+    followOffsetDoty: js.UndefOr[Double] = js.undefined,
     frame: Double | (js.Array[Double | Frame | String]) | String | Frame | ParticleEmitterFrameConfig = null,
-    frequency: Int | Double = null,
-    gravityX: Int | Double = null,
-    gravityY: Int | Double = null,
+    frequency: js.UndefOr[Double] = js.undefined,
+    gravityX: js.UndefOr[Double] = js.undefined,
+    gravityY: js.UndefOr[Double] = js.undefined,
     lifespan: EmitterOpOnEmitType = null,
-    maxParticles: Int | Double = null,
+    maxParticles: js.UndefOr[integer] = js.undefined,
     maxVelocityX: EmitterOpOnEmitType = null,
     maxVelocityY: EmitterOpOnEmitType = null,
     moveToX: EmitterOpOnEmitType = null,
@@ -273,7 +273,7 @@ object ParticleEmitterConfig {
     speed: EmitterOpOnEmitType = null,
     speedX: EmitterOpOnEmitType = null,
     speedY: EmitterOpOnEmitType = null,
-    timeScale: Int | Double = null,
+    timeScale: js.UndefOr[Double] = js.undefined,
     tint: EmitterOpOnEmitType | EmitterOpOnUpdateType = null,
     trackVisible: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
@@ -283,18 +283,18 @@ object ParticleEmitterConfig {
     val __obj = js.Dynamic.literal()
     if (accelerationX != null) __obj.updateDynamic("accelerationX")(accelerationX.asInstanceOf[js.Any])
     if (accelerationY != null) __obj.updateDynamic("accelerationY")(accelerationY.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     if (blendMode != null) __obj.updateDynamic("blendMode")(blendMode.asInstanceOf[js.Any])
     if (bounce != null) __obj.updateDynamic("bounce")(bounce.asInstanceOf[js.Any])
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (callbackScope != null) __obj.updateDynamic("callbackScope")(callbackScope.asInstanceOf[js.Any])
-    if (!js.isUndefined(collideBottom)) __obj.updateDynamic("collideBottom")(collideBottom.asInstanceOf[js.Any])
-    if (!js.isUndefined(collideLeft)) __obj.updateDynamic("collideLeft")(collideLeft.asInstanceOf[js.Any])
-    if (!js.isUndefined(collideRight)) __obj.updateDynamic("collideRight")(collideRight.asInstanceOf[js.Any])
-    if (!js.isUndefined(collideTop)) __obj.updateDynamic("collideTop")(collideTop.asInstanceOf[js.Any])
-    if (!js.isUndefined(deathCallback)) __obj.updateDynamic("deathCallback")(deathCallback.asInstanceOf[js.Any])
+    if (!js.isUndefined(collideBottom)) __obj.updateDynamic("collideBottom")(collideBottom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(collideLeft)) __obj.updateDynamic("collideLeft")(collideLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(collideRight)) __obj.updateDynamic("collideRight")(collideRight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(collideTop)) __obj.updateDynamic("collideTop")(collideTop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deathCallback)) __obj.updateDynamic("deathCallback")(deathCallback.get.asInstanceOf[js.Any])
     if (deathCallbackScope != null) __obj.updateDynamic("deathCallbackScope")(deathCallbackScope.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (emitCallback != null) __obj.updateDynamic("emitCallback")(emitCallback.asInstanceOf[js.Any])
@@ -302,24 +302,24 @@ object ParticleEmitterConfig {
     if (emitZone != null) __obj.updateDynamic("emitZone")(emitZone.asInstanceOf[js.Any])
     if (follow != null) __obj.updateDynamic("follow")(follow.asInstanceOf[js.Any])
     if (followOffset != null) __obj.updateDynamic("followOffset")(followOffset.asInstanceOf[js.Any])
-    if (followOffsetDotx != null) __obj.updateDynamic("followOffset.x")(followOffsetDotx.asInstanceOf[js.Any])
-    if (followOffsetDoty != null) __obj.updateDynamic("followOffset.y")(followOffsetDoty.asInstanceOf[js.Any])
+    if (!js.isUndefined(followOffsetDotx)) __obj.updateDynamic("followOffset.x")(followOffsetDotx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(followOffsetDoty)) __obj.updateDynamic("followOffset.y")(followOffsetDoty.get.asInstanceOf[js.Any])
     if (frame != null) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
-    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
-    if (gravityX != null) __obj.updateDynamic("gravityX")(gravityX.asInstanceOf[js.Any])
-    if (gravityY != null) __obj.updateDynamic("gravityY")(gravityY.asInstanceOf[js.Any])
+    if (!js.isUndefined(frequency)) __obj.updateDynamic("frequency")(frequency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gravityX)) __obj.updateDynamic("gravityX")(gravityX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gravityY)) __obj.updateDynamic("gravityY")(gravityY.get.asInstanceOf[js.Any])
     if (lifespan != null) __obj.updateDynamic("lifespan")(lifespan.asInstanceOf[js.Any])
-    if (maxParticles != null) __obj.updateDynamic("maxParticles")(maxParticles.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxParticles)) __obj.updateDynamic("maxParticles")(maxParticles.get.asInstanceOf[js.Any])
     if (maxVelocityX != null) __obj.updateDynamic("maxVelocityX")(maxVelocityX.asInstanceOf[js.Any])
     if (maxVelocityY != null) __obj.updateDynamic("maxVelocityY")(maxVelocityY.asInstanceOf[js.Any])
     if (moveToX != null) __obj.updateDynamic("moveToX")(moveToX.asInstanceOf[js.Any])
     if (moveToY != null) __obj.updateDynamic("moveToY")(moveToY.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(on)) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
-    if (!js.isUndefined(particleBringToTop)) __obj.updateDynamic("particleBringToTop")(particleBringToTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(on)) __obj.updateDynamic("on")(on.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(particleBringToTop)) __obj.updateDynamic("particleBringToTop")(particleBringToTop.get.asInstanceOf[js.Any])
     if (particleClass != null) __obj.updateDynamic("particleClass")(particleClass.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
-    if (!js.isUndefined(radial)) __obj.updateDynamic("radial")(radial.asInstanceOf[js.Any])
+    if (!js.isUndefined(radial)) __obj.updateDynamic("radial")(radial.get.asInstanceOf[js.Any])
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (scaleX != null) __obj.updateDynamic("scaleX")(scaleX.asInstanceOf[js.Any])
@@ -327,10 +327,10 @@ object ParticleEmitterConfig {
     if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
     if (speedX != null) __obj.updateDynamic("speedX")(speedX.asInstanceOf[js.Any])
     if (speedY != null) __obj.updateDynamic("speedY")(speedY.asInstanceOf[js.Any])
-    if (timeScale != null) __obj.updateDynamic("timeScale")(timeScale.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeScale)) __obj.updateDynamic("timeScale")(timeScale.get.asInstanceOf[js.Any])
     if (tint != null) __obj.updateDynamic("tint")(tint.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackVisible)) __obj.updateDynamic("trackVisible")(trackVisible.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackVisible)) __obj.updateDynamic("trackVisible")(trackVisible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParticleEmitterConfig]

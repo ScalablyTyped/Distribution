@@ -1,6 +1,6 @@
 package typings.awesomplete.mod
 
-import typings.awesomplete.AnonCall
+import typings.awesomplete.anon.Call
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.NodeList
@@ -24,7 +24,7 @@ class ^ protected () extends Awesomplete {
 @js.native
 object ^ extends js.Object {
   @JSName("$")
-  var $_Original: AnonCall = js.native
+  var $_Original: Call = js.native
   var all: js.Array[_] = js.native
   @JSName("$")
   def $(expr: String): String | Element = js.native

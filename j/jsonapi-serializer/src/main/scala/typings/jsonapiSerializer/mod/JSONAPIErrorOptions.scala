@@ -1,7 +1,7 @@
 package typings.jsonapiSerializer.mod
 
-import typings.jsonapiSerializer.AnonAbout
-import typings.jsonapiSerializer.AnonParameter
+import typings.jsonapiSerializer.anon.About
+import typings.jsonapiSerializer.anon.Parameter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,9 +10,9 @@ trait JSONAPIErrorOptions extends js.Object {
   var code: js.UndefOr[String] = js.undefined
   var detail: js.UndefOr[String] = js.undefined
   var id: js.UndefOr[String] = js.undefined
-  var links: js.UndefOr[AnonAbout] = js.undefined
+  var links: js.UndefOr[About] = js.undefined
   var meta: js.UndefOr[js.Any] = js.undefined
-  var source: js.UndefOr[AnonParameter] = js.undefined
+  var source: js.UndefOr[Parameter] = js.undefined
   var status: js.UndefOr[String] = js.undefined
   var title: js.UndefOr[String] = js.undefined
 }
@@ -23,9 +23,9 @@ object JSONAPIErrorOptions {
     code: String = null,
     detail: String = null,
     id: String = null,
-    links: AnonAbout = null,
+    links: About = null,
     meta: js.Any = null,
-    source: AnonParameter = null,
+    source: Parameter = null,
     status: String = null,
     title: String = null
   ): JSONAPIErrorOptions = {

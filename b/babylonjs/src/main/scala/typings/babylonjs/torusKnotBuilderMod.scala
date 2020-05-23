@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.babylonjs.anon.Q
 import typings.babylonjs.meshMod.Mesh
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,7 +30,7 @@ object torusKnotBuilderMod extends js.Object {
       * @returns the torus knot mesh
       * @see  https://doc.babylonjs.com/how_to/set_shapes#torus-knot
       */
-    def CreateTorusKnot(name: String, options: AnonQ, scene: js.Any): Mesh = js.native
+    def CreateTorusKnot(name: String, options: Q, scene: js.Any): Mesh = js.native
   }
   
 }

@@ -29,8 +29,8 @@ object ArrayOptions {
     if (sortCollate != null) __obj.updateDynamic("sortCollate")(sortCollate.asInstanceOf[js.Any])
     if (sortEquivalents != null) __obj.updateDynamic("sortEquivalents")(sortEquivalents.asInstanceOf[js.Any])
     if (sortIgnore != null) __obj.updateDynamic("sortIgnore")(sortIgnore.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortIgnoreCase)) __obj.updateDynamic("sortIgnoreCase")(sortIgnoreCase.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortNatural)) __obj.updateDynamic("sortNatural")(sortNatural.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortIgnoreCase)) __obj.updateDynamic("sortIgnoreCase")(sortIgnoreCase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortNatural)) __obj.updateDynamic("sortNatural")(sortNatural.get.asInstanceOf[js.Any])
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayOptions]
   }

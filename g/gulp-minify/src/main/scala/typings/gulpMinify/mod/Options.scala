@@ -1,8 +1,8 @@
 package typings.gulpMinify.mod
 
-import typings.gulpMinify.AnonAsciionly
-import typings.gulpMinify.AnonBooleans
-import typings.gulpMinify.AnonMin
+import typings.gulpMinify.anon.Asciionly
+import typings.gulpMinify.anon.Booleans
+import typings.gulpMinify.anon.Min
 import typings.gulpMinify.gulpMinifyStrings.all
 import typings.gulpMinify.gulpMinifyStrings.some
 import scala.scalajs.js
@@ -13,7 +13,7 @@ trait Options extends js.Object {
   /**
     * Pass an object to specify custom compressor options. Pass false to skip compression completely.
     */
-  var compress: js.UndefOr[AnonBooleans | Boolean] = js.undefined
+  var compress: js.UndefOr[Booleans | Boolean] = js.undefined
   /**
     * Will not minify files in the dirs.
     */
@@ -21,7 +21,7 @@ trait Options extends js.Object {
   /**
     * An object that specifies output src and minified file extensions.
     */
-  var ext: js.UndefOr[AnonMin] = js.undefined
+  var ext: js.UndefOr[Min] = js.undefined
   /**
     * Will not minify files which matches the pattern.
     */
@@ -37,7 +37,7 @@ trait Options extends js.Object {
   /**
     * Pass an object if you wish to specify additional output options.The defaults are optimized for best compression.
     */
-  var output: js.UndefOr[AnonAsciionly] = js.undefined
+  var output: js.UndefOr[Asciionly] = js.undefined
   /**
     * A convenience option for options.output.comments. Defaults to preserving no comments.
     *
@@ -55,13 +55,13 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    compress: AnonBooleans | Boolean = null,
+    compress: Booleans | Boolean = null,
     exclude: js.Array[String] = null,
-    ext: AnonMin = null,
+    ext: Min = null,
     ignoreFiles: js.Array[String] = null,
     mangle: js.UndefOr[Boolean] = js.undefined,
     noSource: js.UndefOr[Boolean] = js.undefined,
-    output: AnonAsciionly = null,
+    output: Asciionly = null,
     preserveComments: all | some | (js.Function2[/* node */ js.UndefOr[js.Any], /* comment */ js.UndefOr[js.Any], Boolean]) = null
   ): Options = {
     val __obj = js.Dynamic.literal()
@@ -69,8 +69,8 @@ object Options {
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
     if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
     if (ignoreFiles != null) __obj.updateDynamic("ignoreFiles")(ignoreFiles.asInstanceOf[js.Any])
-    if (!js.isUndefined(mangle)) __obj.updateDynamic("mangle")(mangle.asInstanceOf[js.Any])
-    if (!js.isUndefined(noSource)) __obj.updateDynamic("noSource")(noSource.asInstanceOf[js.Any])
+    if (!js.isUndefined(mangle)) __obj.updateDynamic("mangle")(mangle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noSource)) __obj.updateDynamic("noSource")(noSource.get.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     if (preserveComments != null) __obj.updateDynamic("preserveComments")(preserveComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

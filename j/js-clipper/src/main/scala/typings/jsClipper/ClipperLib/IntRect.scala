@@ -4,13 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ClipperLib.IntRect")
-@js.native
-class IntRect () extends js.Object {
-  def this(left: Double, top: Double, right: Double, bottom: Double) = this()
-  var bottom: Double = js.native
-  var left: Double = js.native
-  var right: Double = js.native
-  var top: Double = js.native
+trait IntRect extends js.Object {
+  var bottom: Double
+  var left: Double
+  var right: Double
+  var top: Double
+}
+
+object IntRect {
+  @scala.inline
+  def apply(bottom: Double, left: Double, right: Double, top: Double): IntRect = {
+    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IntRect]
+  }
 }
 

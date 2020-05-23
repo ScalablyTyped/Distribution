@@ -31,28 +31,28 @@ object ChartLineOptions {
     borderCapStyle: String = null,
     borderColor: ChartColor = null,
     borderDash: js.Array[_] = null,
-    borderDashOffset: Int | Double = null,
+    borderDashOffset: js.UndefOr[Double] = js.undefined,
     borderJoinStyle: String = null,
-    borderWidth: Int | Double = null,
+    borderWidth: js.UndefOr[Double] = js.undefined,
     capBezierPoints: js.UndefOr[Boolean] = js.undefined,
     cubicInterpolationMode: default | monotone = null,
     fill: zero | top | bottom | Boolean = null,
     stepped: js.UndefOr[Boolean] = js.undefined,
-    tension: Int | Double = null
+    tension: js.UndefOr[Double] = js.undefined
   ): ChartLineOptions = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (borderCapStyle != null) __obj.updateDynamic("borderCapStyle")(borderCapStyle.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderDash != null) __obj.updateDynamic("borderDash")(borderDash.asInstanceOf[js.Any])
-    if (borderDashOffset != null) __obj.updateDynamic("borderDashOffset")(borderDashOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderDashOffset)) __obj.updateDynamic("borderDashOffset")(borderDashOffset.get.asInstanceOf[js.Any])
     if (borderJoinStyle != null) __obj.updateDynamic("borderJoinStyle")(borderJoinStyle.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(capBezierPoints)) __obj.updateDynamic("capBezierPoints")(capBezierPoints.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(capBezierPoints)) __obj.updateDynamic("capBezierPoints")(capBezierPoints.get.asInstanceOf[js.Any])
     if (cubicInterpolationMode != null) __obj.updateDynamic("cubicInterpolationMode")(cubicInterpolationMode.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (!js.isUndefined(stepped)) __obj.updateDynamic("stepped")(stepped.asInstanceOf[js.Any])
-    if (tension != null) __obj.updateDynamic("tension")(tension.asInstanceOf[js.Any])
+    if (!js.isUndefined(stepped)) __obj.updateDynamic("stepped")(stepped.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tension)) __obj.updateDynamic("tension")(tension.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartLineOptions]
   }
 }

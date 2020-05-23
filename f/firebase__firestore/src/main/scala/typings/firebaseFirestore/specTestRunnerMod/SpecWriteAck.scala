@@ -22,7 +22,7 @@ object SpecWriteAck {
   @scala.inline
   def apply(version: TestSnapshotVersion, keepInQueue: js.UndefOr[Boolean] = js.undefined): SpecWriteAck = {
     val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepInQueue)) __obj.updateDynamic("keepInQueue")(keepInQueue.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepInQueue)) __obj.updateDynamic("keepInQueue")(keepInQueue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpecWriteAck]
   }
 }

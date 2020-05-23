@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait SplitViewLayout extends FlexLayout {
   /**
-  		 * Orientation of the views inside split
-  		 */
+    * Orientation of the views inside split
+    */
   var orientation: String
   /**
-  		 * SplitView height
-  		 */
+    * SplitView height
+    */
   var splitViewHeight: Double | String
 }
 

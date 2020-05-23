@@ -43,7 +43,7 @@ trait CreateKeyRequest extends js.Object {
 object CreateKeyRequest {
   @scala.inline
   def apply(
-    BypassPolicyLockoutSafetyCheck: js.UndefOr[Boolean] = js.undefined,
+    BypassPolicyLockoutSafetyCheck: js.UndefOr[BooleanType] = js.undefined,
     CustomKeyStoreId: CustomKeyStoreIdType = null,
     CustomerMasterKeySpec: CustomerMasterKeySpec = null,
     Description: DescriptionType = null,
@@ -53,7 +53,7 @@ object CreateKeyRequest {
     Tags: TagList = null
   ): CreateKeyRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BypassPolicyLockoutSafetyCheck)) __obj.updateDynamic("BypassPolicyLockoutSafetyCheck")(BypassPolicyLockoutSafetyCheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(BypassPolicyLockoutSafetyCheck)) __obj.updateDynamic("BypassPolicyLockoutSafetyCheck")(BypassPolicyLockoutSafetyCheck.get.asInstanceOf[js.Any])
     if (CustomKeyStoreId != null) __obj.updateDynamic("CustomKeyStoreId")(CustomKeyStoreId.asInstanceOf[js.Any])
     if (CustomerMasterKeySpec != null) __obj.updateDynamic("CustomerMasterKeySpec")(CustomerMasterKeySpec.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])

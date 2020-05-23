@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,8 +19,4 @@ trait HeatmapColorStop extends Accessor {
     */
   var ratio: Double = js.native
 }
-
-@JSGlobal("__esri.HeatmapColorStop")
-@js.native
-object HeatmapColorStop extends TopLevel[HeatmapColorStopConstructor]
 

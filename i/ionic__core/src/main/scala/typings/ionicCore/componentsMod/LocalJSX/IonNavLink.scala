@@ -25,12 +25,12 @@ trait IonNavLink extends js.Object {
 object IonNavLink {
   @scala.inline
   def apply(
-    component: NavComponent = null,
+    component: js.UndefOr[Null | NavComponent] = js.undefined,
     componentProps: ComponentProps[Null] = null,
     routerDirection: RouterDirection = null
   ): IonNavLink = {
     val __obj = js.Dynamic.literal()
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (!js.isUndefined(component)) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (componentProps != null) __obj.updateDynamic("componentProps")(componentProps.asInstanceOf[js.Any])
     if (routerDirection != null) __obj.updateDynamic("routerDirection")(routerDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonNavLink]

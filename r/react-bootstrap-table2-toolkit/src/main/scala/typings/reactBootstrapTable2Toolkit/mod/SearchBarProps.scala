@@ -20,7 +20,7 @@ object SearchBarProps {
   def apply(
     onSearch: String => Unit,
     className: String = null,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     placeholder: String = null,
     searchText: String = null,
     style: CSSProperties = null,
@@ -28,7 +28,7 @@ object SearchBarProps {
   ): SearchBarProps = {
     val __obj = js.Dynamic.literal(onSearch = js.Any.fromFunction1(onSearch))
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (searchText != null) __obj.updateDynamic("searchText")(searchText.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

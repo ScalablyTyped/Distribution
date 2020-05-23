@@ -1,6 +1,6 @@
 package typings.pixiJs.PIXI
 
-import typings.pixiJs.AnonChildren
+import typings.pixiJs.anon.Children
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,15 +23,8 @@ import scala.scalajs.js.annotation._
   * @extends PIXI.Container
   * @memberof PIXI
   */
-@JSGlobal("PIXI.Mesh")
 @js.native
-class Mesh protected () extends Container {
-  def this(geometry: Geometry, shader: MeshMaterial) = this()
-  def this(geometry: Geometry, shader: Shader) = this()
-  def this(geometry: Geometry, shader: MeshMaterial, state: State) = this()
-  def this(geometry: Geometry, shader: Shader, state: State) = this()
-  def this(geometry: Geometry, shader: MeshMaterial, state: State, drawMode: Double) = this()
-  def this(geometry: Geometry, shader: Shader, state: State, drawMode: Double) = this()
+trait Mesh extends Container {
   /**
     * The blend mode to be applied to the Mesh. Apply a value of
     * `PIXI.BLEND_MODES.NORMAL` to reset the blend mode.
@@ -149,20 +142,6 @@ class Mesh protected () extends Container {
     * @return {boolean} the result of the test
     */
   def containsPoint(point: Point): Boolean = js.native
-  def destroy(options: AnonChildren): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("PIXI.Mesh")
-@js.native
-object Mesh extends js.Object {
-  /**
-    * The maximum number of vertices to consider batchable. Generally, the complexity
-    * of the geometry.
-    * @memberof PIXI.Mesh
-    * @static
-    * @member {number} BATCHABLE_SIZE
-    */
-  var BATCHABLE_SIZE: Double = js.native
+  def destroy(options: Children): Unit = js.native
 }
 

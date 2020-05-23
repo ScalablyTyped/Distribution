@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,8 +27,4 @@ trait RasterData
     */
   var url: String = js.native
 }
-
-@JSGlobal("__esri.RasterData")
-@js.native
-object RasterData extends TopLevel[RasterDataConstructor]
 

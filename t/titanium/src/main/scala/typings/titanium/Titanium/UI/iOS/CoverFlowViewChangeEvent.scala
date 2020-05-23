@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * Fired when the user changes the image using a gesture.
-			 */
+  * Fired when the user changes the image using a gesture.
+  */
 trait CoverFlowViewChangeEvent extends CoverFlowViewBaseEvent {
   /**
-  				 * Index of the image that is now visible.
-  				 */
+    * Index of the image that is now visible.
+    */
   var index: Double
   /**
-  				 * Index of the previously-visible image.
-  				 */
+    * Index of the previously-visible image.
+    */
   var previous: Double
 }
 

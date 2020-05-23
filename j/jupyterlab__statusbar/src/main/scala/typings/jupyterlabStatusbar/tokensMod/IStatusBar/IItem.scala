@@ -41,13 +41,13 @@ object IItem {
     activeStateChanged: ISignal[_, Unit] = null,
     align: Alignment = null,
     isActive: () => Boolean = null,
-    rank: Int | Double = null
+    rank: js.UndefOr[Double] = js.undefined
   ): IItem = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
     if (activeStateChanged != null) __obj.updateDynamic("activeStateChanged")(activeStateChanged.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (isActive != null) __obj.updateDynamic("isActive")(js.Any.fromFunction0(isActive))
-    if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
+    if (!js.isUndefined(rank)) __obj.updateDynamic("rank")(rank.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IItem]
   }
 }

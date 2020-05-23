@@ -1,6 +1,6 @@
 package typings.storybookAddonKnobs.panelMod
 
-import typings.storybookAddonKnobs.PickAPIonoffemitgetQueryP
+import typings.storybookAddonKnobs.anon.PickAPIonoffemitgetQueryP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

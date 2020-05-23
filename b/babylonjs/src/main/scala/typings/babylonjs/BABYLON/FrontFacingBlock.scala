@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.FrontFacingBlock")
 @js.native
-class FrontFacingBlock protected () extends NodeMaterialBlock {
-  /**
-    * Creates a new FrontFacingBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait FrontFacingBlock extends NodeMaterialBlock {
   /**
     * Gets the output component
     */

@@ -18,10 +18,10 @@ trait ListConfigurationSetsRequest extends js.Object {
 
 object ListConfigurationSetsRequest {
   @scala.inline
-  def apply(NextToken: NextToken = null, PageSize: Int | Double = null): ListConfigurationSetsRequest = {
+  def apply(NextToken: NextToken = null, PageSize: js.UndefOr[MaxItems] = js.undefined): ListConfigurationSetsRequest = {
     val __obj = js.Dynamic.literal()
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListConfigurationSetsRequest]
   }
 }

@@ -12,9 +12,9 @@ trait NluEnrichmentConcepts extends js.Object {
 
 object NluEnrichmentConcepts {
   @scala.inline
-  def apply(limit: Int | Double = null): NluEnrichmentConcepts = {
+  def apply(limit: js.UndefOr[Double] = js.undefined): NluEnrichmentConcepts = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NluEnrichmentConcepts]
   }
 }

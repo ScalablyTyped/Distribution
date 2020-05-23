@@ -40,14 +40,14 @@ object EcsParameters {
     LaunchType: LaunchType = null,
     NetworkConfiguration: NetworkConfiguration = null,
     PlatformVersion: String = null,
-    TaskCount: Int | Double = null
+    TaskCount: js.UndefOr[LimitMin1] = js.undefined
   ): EcsParameters = {
     val __obj = js.Dynamic.literal(TaskDefinitionArn = TaskDefinitionArn.asInstanceOf[js.Any])
     if (Group != null) __obj.updateDynamic("Group")(Group.asInstanceOf[js.Any])
     if (LaunchType != null) __obj.updateDynamic("LaunchType")(LaunchType.asInstanceOf[js.Any])
     if (NetworkConfiguration != null) __obj.updateDynamic("NetworkConfiguration")(NetworkConfiguration.asInstanceOf[js.Any])
     if (PlatformVersion != null) __obj.updateDynamic("PlatformVersion")(PlatformVersion.asInstanceOf[js.Any])
-    if (TaskCount != null) __obj.updateDynamic("TaskCount")(TaskCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(TaskCount)) __obj.updateDynamic("TaskCount")(TaskCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EcsParameters]
   }
 }

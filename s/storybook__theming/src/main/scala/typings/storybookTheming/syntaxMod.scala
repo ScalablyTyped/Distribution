@@ -1,6 +1,8 @@
 package typings.storybookTheming
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.storybookTheming.anon.Colors
+import typings.storybookTheming.anon.Languagejsontokenboolean
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@storybook/theming/dist/modules/syntax", JSImport.Namespace)
 @js.native
 object syntaxMod extends js.Object {
-  def create(hasColorsMono: AnonColors): AnonLanguagejsontokenboolean = js.native
+  def create(hasColorsMono: Colors): Languagejsontokenboolean = js.native
   @js.native
   object chromeDark extends js.Object {
     var ARROW_ANIMATION_DURATION: String = js.native

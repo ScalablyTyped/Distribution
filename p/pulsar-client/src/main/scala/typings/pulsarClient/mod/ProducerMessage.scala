@@ -37,18 +37,18 @@ object ProducerMessage {
   @scala.inline
   def apply(
     data: Buffer,
-    eventTimestamp: Int | Double = null,
+    eventTimestamp: js.UndefOr[Double] = js.undefined,
     partitionKey: String = null,
     properties: MessageProperties = null,
     replicationClusters: js.Array[String] = null,
-    sequenceId: Int | Double = null
+    sequenceId: js.UndefOr[Double] = js.undefined
   ): ProducerMessage = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (eventTimestamp != null) __obj.updateDynamic("eventTimestamp")(eventTimestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(eventTimestamp)) __obj.updateDynamic("eventTimestamp")(eventTimestamp.get.asInstanceOf[js.Any])
     if (partitionKey != null) __obj.updateDynamic("partitionKey")(partitionKey.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (replicationClusters != null) __obj.updateDynamic("replicationClusters")(replicationClusters.asInstanceOf[js.Any])
-    if (sequenceId != null) __obj.updateDynamic("sequenceId")(sequenceId.asInstanceOf[js.Any])
+    if (!js.isUndefined(sequenceId)) __obj.updateDynamic("sequenceId")(sequenceId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProducerMessage]
   }
 }

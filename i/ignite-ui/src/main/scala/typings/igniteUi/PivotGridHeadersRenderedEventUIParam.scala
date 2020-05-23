@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait PivotGridHeadersRenderedEventUIParam extends js.Object {
   /**
-  	 * Gets a reference to the igGrid widget, which holds the headers.
-  	 */
+    * Gets a reference to the igGrid widget, which holds the headers.
+    */
   var grid: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Gets a reference to the pivot grid.
-  	 */
+    * Gets a reference to the pivot grid.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Gets a reference to the headers table DOM element.
-  	 */
+    * Gets a reference to the headers table DOM element.
+    */
   var table: js.UndefOr[Element] = js.undefined
 }
 

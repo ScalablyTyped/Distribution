@@ -7,20 +7,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Networking.PushNotifications.PushNotificationReceivedEventArgs")
-@js.native
-class PushNotificationReceivedEventArgs () extends IPushNotificationReceivedEventArgs {
-  /* CompleteClass */
-  override var badgeNotification: BadgeNotification = js.native
-  /* CompleteClass */
-  override var cancel: Boolean = js.native
-  /* CompleteClass */
-  override var notificationType: PushNotificationType = js.native
-  /* CompleteClass */
-  override var rawNotification: RawNotification = js.native
-  /* CompleteClass */
-  override var tileNotification: TileNotification = js.native
-  /* CompleteClass */
-  override var toastNotification: ToastNotification = js.native
+trait PushNotificationReceivedEventArgs extends IPushNotificationReceivedEventArgs
+
+object PushNotificationReceivedEventArgs {
+  @scala.inline
+  def apply(
+    badgeNotification: BadgeNotification,
+    cancel: Boolean,
+    notificationType: PushNotificationType,
+    rawNotification: RawNotification,
+    tileNotification: TileNotification,
+    toastNotification: ToastNotification
+  ): PushNotificationReceivedEventArgs = {
+    val __obj = js.Dynamic.literal(badgeNotification = badgeNotification.asInstanceOf[js.Any], cancel = cancel.asInstanceOf[js.Any], notificationType = notificationType.asInstanceOf[js.Any], rawNotification = rawNotification.asInstanceOf[js.Any], tileNotification = tileNotification.asInstanceOf[js.Any], toastNotification = toastNotification.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PushNotificationReceivedEventArgs]
+  }
 }
 

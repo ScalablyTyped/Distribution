@@ -12,11 +12,15 @@ trait Thumbnail extends js.Object {
 
 object Thumbnail {
   @scala.inline
-  def apply(contentUrl: String = null, height: Int | Double = null, width: Int | Double = null): Thumbnail = {
+  def apply(
+    contentUrl: String = null,
+    height: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
+  ): Thumbnail = {
     val __obj = js.Dynamic.literal()
     if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Thumbnail]
   }
 }

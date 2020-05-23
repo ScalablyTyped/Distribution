@@ -1,5 +1,7 @@
 package typings.jqueryPnotify
 
+import typings.jqueryPnotify.anon.Closerhover
+import typings.jqueryPnotify.anon.Nonblock
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +24,7 @@ trait PNotifyOptions extends js.Object {
     * Display the notice when it is created. Turn this off to add notifications to the history without displaying them.
     */
   var auto_display: js.UndefOr[Boolean] = js.undefined
-  var buttons: js.UndefOr[AnonCloserhover] = js.undefined
+  var buttons: js.UndefOr[Closerhover] = js.undefined
   /**
     * Support for PNotifyconfirm options
     */
@@ -67,7 +69,7 @@ trait PNotifyOptions extends js.Object {
     * Reset the hide timer if the mouse moves over the notice.
     */
   var mouse_reset: js.UndefOr[Boolean] = js.undefined
-  var nonblock: js.UndefOr[AnonNonblock] = js.undefined
+  var nonblock: js.UndefOr[Nonblock] = js.undefined
   /**
     * Opacity of the notice.
     */
@@ -125,21 +127,21 @@ object PNotifyOptions {
     animate_speed: String = null,
     animation: String = null,
     auto_display: js.UndefOr[Boolean] = js.undefined,
-    buttons: AnonCloserhover = null,
+    buttons: Closerhover = null,
     confirm: PNotifyconfirm = null,
     cornerclass: String = null,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     hide: js.UndefOr[Boolean] = js.undefined,
     history: js.UndefOr[Boolean] = js.undefined,
     icon: js.Any = null,
     insert_brs: js.UndefOr[Boolean] = js.undefined,
     labels: PNotifyLabel = null,
-    maxonscreen: Int | Double = null,
+    maxonscreen: js.UndefOr[Double] = js.undefined,
     min_height: String = null,
     mouse_reset: js.UndefOr[Boolean] = js.undefined,
-    nonblock: AnonNonblock = null,
-    opacity: Int | Double = null,
-    position_animate_speed: Int | Double = null,
+    nonblock: Nonblock = null,
+    opacity: js.UndefOr[Double] = js.undefined,
+    position_animate_speed: js.UndefOr[Double] = js.undefined,
     remove: js.UndefOr[Boolean] = js.undefined,
     shadow: js.UndefOr[Boolean] = js.undefined,
     stack: PNotifyStack = null,
@@ -155,30 +157,30 @@ object PNotifyOptions {
     if (addclass != null) __obj.updateDynamic("addclass")(addclass.asInstanceOf[js.Any])
     if (animate_speed != null) __obj.updateDynamic("animate_speed")(animate_speed.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (!js.isUndefined(auto_display)) __obj.updateDynamic("auto_display")(auto_display.asInstanceOf[js.Any])
+    if (!js.isUndefined(auto_display)) __obj.updateDynamic("auto_display")(auto_display.get.asInstanceOf[js.Any])
     if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
     if (confirm != null) __obj.updateDynamic("confirm")(confirm.asInstanceOf[js.Any])
     if (cornerclass != null) __obj.updateDynamic("cornerclass")(cornerclass.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
-    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(insert_brs)) __obj.updateDynamic("insert_brs")(insert_brs.asInstanceOf[js.Any])
+    if (!js.isUndefined(insert_brs)) __obj.updateDynamic("insert_brs")(insert_brs.get.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (maxonscreen != null) __obj.updateDynamic("maxonscreen")(maxonscreen.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxonscreen)) __obj.updateDynamic("maxonscreen")(maxonscreen.get.asInstanceOf[js.Any])
     if (min_height != null) __obj.updateDynamic("min_height")(min_height.asInstanceOf[js.Any])
-    if (!js.isUndefined(mouse_reset)) __obj.updateDynamic("mouse_reset")(mouse_reset.asInstanceOf[js.Any])
+    if (!js.isUndefined(mouse_reset)) __obj.updateDynamic("mouse_reset")(mouse_reset.get.asInstanceOf[js.Any])
     if (nonblock != null) __obj.updateDynamic("nonblock")(nonblock.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (position_animate_speed != null) __obj.updateDynamic("position_animate_speed")(position_animate_speed.asInstanceOf[js.Any])
-    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(position_animate_speed)) __obj.updateDynamic("position_animate_speed")(position_animate_speed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow.get.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     if (styling != null) __obj.updateDynamic("styling")(styling.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(text_escape)) __obj.updateDynamic("text_escape")(text_escape.asInstanceOf[js.Any])
+    if (!js.isUndefined(text_escape)) __obj.updateDynamic("text_escape")(text_escape.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(title_escape)) __obj.updateDynamic("title_escape")(title_escape.asInstanceOf[js.Any])
+    if (!js.isUndefined(title_escape)) __obj.updateDynamic("title_escape")(title_escape.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PNotifyOptions]

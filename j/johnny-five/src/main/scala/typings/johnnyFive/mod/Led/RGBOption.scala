@@ -15,7 +15,7 @@ object RGBOption {
   def apply(pins: js.Array[Double], controller: String = null, isAnode: js.UndefOr[Boolean] = js.undefined): RGBOption = {
     val __obj = js.Dynamic.literal(pins = pins.asInstanceOf[js.Any])
     if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAnode)) __obj.updateDynamic("isAnode")(isAnode.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAnode)) __obj.updateDynamic("isAnode")(isAnode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RGBOption]
   }
 }

@@ -39,7 +39,7 @@ object JobConfiguration {
   ): JobConfiguration = {
     val __obj = js.Dynamic.literal()
     if (copy != null) __obj.updateDynamic("copy")(copy.asInstanceOf[js.Any])
-    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun.get.asInstanceOf[js.Any])
     if (extract != null) __obj.updateDynamic("extract")(extract.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (load != null) __obj.updateDynamic("load")(load.asInstanceOf[js.Any])

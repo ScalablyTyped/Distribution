@@ -20,13 +20,13 @@ object Value {
     replacements: js.Array[js.UndefOr[js.Array[Format]]],
     text: String,
     activeFormats: js.Array[Format] = null,
-    end: Int | Double = null,
-    start: Int | Double = null
+    end: js.UndefOr[Double] = js.undefined,
+    start: js.UndefOr[Double] = js.undefined
   ): Value = {
     val __obj = js.Dynamic.literal(formats = formats.asInstanceOf[js.Any], replacements = replacements.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     if (activeFormats != null) __obj.updateDynamic("activeFormats")(activeFormats.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value]
   }
 }

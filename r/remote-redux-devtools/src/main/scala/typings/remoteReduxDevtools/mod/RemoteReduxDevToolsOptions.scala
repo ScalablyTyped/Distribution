@@ -116,9 +116,9 @@ object RemoteReduxDevToolsOptions {
     actionsWhitelist: String | js.Array[String] = null,
     hostname: String = null,
     id: String = null,
-    maxAge: Int | Double = null,
+    maxAge: js.UndefOr[Double] = js.undefined,
     name: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     realtime: js.UndefOr[Boolean] = js.undefined,
     secure: js.UndefOr[Boolean] = js.undefined,
     sendOn: String | js.Array[String] = null,
@@ -139,18 +139,18 @@ object RemoteReduxDevToolsOptions {
     if (actionsWhitelist != null) __obj.updateDynamic("actionsWhitelist")(actionsWhitelist.asInstanceOf[js.Any])
     if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAge)) __obj.updateDynamic("maxAge")(maxAge.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(realtime)) __obj.updateDynamic("realtime")(realtime.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(realtime)) __obj.updateDynamic("realtime")(realtime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.get.asInstanceOf[js.Any])
     if (sendOn != null) __obj.updateDynamic("sendOn")(sendOn.asInstanceOf[js.Any])
     if (sendOnError != null) __obj.updateDynamic("sendOnError")(sendOnError.asInstanceOf[js.Any])
     if (sendTo != null) __obj.updateDynamic("sendTo")(sendTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldCatchErrors)) __obj.updateDynamic("shouldCatchErrors")(shouldCatchErrors.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldHotReload)) __obj.updateDynamic("shouldHotReload")(shouldHotReload.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldRecordChanges)) __obj.updateDynamic("shouldRecordChanges")(shouldRecordChanges.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldStartLocked)) __obj.updateDynamic("shouldStartLocked")(shouldStartLocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldCatchErrors)) __obj.updateDynamic("shouldCatchErrors")(shouldCatchErrors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldHotReload)) __obj.updateDynamic("shouldHotReload")(shouldHotReload.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldRecordChanges)) __obj.updateDynamic("shouldRecordChanges")(shouldRecordChanges.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldStartLocked)) __obj.updateDynamic("shouldStartLocked")(shouldStartLocked.get.asInstanceOf[js.Any])
     if (startOn != null) __obj.updateDynamic("startOn")(startOn.asInstanceOf[js.Any])
     if (stateSanitizer != null) __obj.updateDynamic("stateSanitizer")(js.Any.fromFunction1(stateSanitizer))
     if (stopOn != null) __obj.updateDynamic("stopOn")(stopOn.asInstanceOf[js.Any])

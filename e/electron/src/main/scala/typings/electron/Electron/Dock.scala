@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Electron.Dock")
 @js.native
-class Dock () extends js.Object {
+trait Dock extends js.Object {
   // Docs: http://electronjs.org/docs/api/dock
   /**
     * an ID representing the request.

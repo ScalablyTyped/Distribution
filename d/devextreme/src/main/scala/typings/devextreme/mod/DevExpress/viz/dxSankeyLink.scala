@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait dxSankeyLink extends js.Object {
   /** @name dxSankeyLink.connection */
-  var connection: dxSankeyConnectionInfoObject
+  var connection: js.UndefOr[dxSankeyConnectionInfoObject] = js.undefined
   /** @name dxSankeyLink.hideTooltip() */
   def hideTooltip(): Unit
   /** @name dxSankeyLink.hover(state) */
@@ -20,13 +20,14 @@ trait dxSankeyLink extends js.Object {
 object dxSankeyLink {
   @scala.inline
   def apply(
-    connection: dxSankeyConnectionInfoObject,
     hideTooltip: () => Unit,
     hover: Boolean => Unit,
     isHovered: () => Boolean,
-    showTooltip: () => Unit
+    showTooltip: () => Unit,
+    connection: dxSankeyConnectionInfoObject = null
   ): dxSankeyLink = {
-    val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], hideTooltip = js.Any.fromFunction0(hideTooltip), hover = js.Any.fromFunction1(hover), isHovered = js.Any.fromFunction0(isHovered), showTooltip = js.Any.fromFunction0(showTooltip))
+    val __obj = js.Dynamic.literal(hideTooltip = js.Any.fromFunction0(hideTooltip), hover = js.Any.fromFunction1(hover), isHovered = js.Any.fromFunction0(isHovered), showTooltip = js.Any.fromFunction0(showTooltip))
+    if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxSankeyLink]
   }
 }

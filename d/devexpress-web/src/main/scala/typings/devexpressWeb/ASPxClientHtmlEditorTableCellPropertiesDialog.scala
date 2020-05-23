@@ -7,12 +7,26 @@ import scala.scalajs.js.annotation._
 /**
   * Provides client functionality for the Cell Properties dialog within the ASPxHtmlEditor.
   */
-@JSGlobal("ASPxClientHtmlEditorTableCellPropertiesDialog")
-@js.native
-class ASPxClientHtmlEditorTableCellPropertiesDialog () extends ASPxClientHtmlEditorTableElementPropertiesDialog {
+trait ASPxClientHtmlEditorTableCellPropertiesDialog extends ASPxClientHtmlEditorTableElementPropertiesDialog {
   /**
     * Provides access to the client object of the "Apply to all cells in the table" check box in the Html Editor's Cell Properties dialog.
     */
-  def GetApplyToAllCellsCheckBox(): ASPxClientCheckBox = js.native
+  def GetApplyToAllCellsCheckBox(): ASPxClientCheckBox
+}
+
+object ASPxClientHtmlEditorTableCellPropertiesDialog {
+  @scala.inline
+  def apply(
+    GetApplyToAllCellsCheckBox: () => ASPxClientCheckBox,
+    GetBackgroundColorColorEdit: () => ASPxClientColorEdit,
+    GetCancelButton: () => ASPxClientButton,
+    GetFormLayout: () => ASPxClientFormLayout,
+    GetHorizontalAlignmentComboBox: () => ASPxClientComboBox,
+    GetOkButton: () => ASPxClientButton,
+    GetVerticalAlignmentComboBox: () => ASPxClientComboBox
+  ): ASPxClientHtmlEditorTableCellPropertiesDialog = {
+    val __obj = js.Dynamic.literal(GetApplyToAllCellsCheckBox = js.Any.fromFunction0(GetApplyToAllCellsCheckBox), GetBackgroundColorColorEdit = js.Any.fromFunction0(GetBackgroundColorColorEdit), GetCancelButton = js.Any.fromFunction0(GetCancelButton), GetFormLayout = js.Any.fromFunction0(GetFormLayout), GetHorizontalAlignmentComboBox = js.Any.fromFunction0(GetHorizontalAlignmentComboBox), GetOkButton = js.Any.fromFunction0(GetOkButton), GetVerticalAlignmentComboBox = js.Any.fromFunction0(GetVerticalAlignmentComboBox))
+    __obj.asInstanceOf[ASPxClientHtmlEditorTableCellPropertiesDialog]
+  }
 }
 

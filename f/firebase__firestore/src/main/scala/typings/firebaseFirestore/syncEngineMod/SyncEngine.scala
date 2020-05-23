@@ -2,18 +2,20 @@ package typings.firebaseFirestore.syncEngineMod
 
 import typings.firebaseFirestore.asyncQueueMod.AsyncQueue
 import typings.firebaseFirestore.collectionsMod.DocumentKeySet_
+import typings.firebaseFirestore.collectionsMod.MaybeDocumentMap_
 import typings.firebaseFirestore.documentKeyMod.DocumentKey
 import typings.firebaseFirestore.errorMod.FirestoreError
 import typings.firebaseFirestore.localStoreMod.LocalStore
 import typings.firebaseFirestore.mutationBatchMod.MutationBatchResult
 import typings.firebaseFirestore.mutationMod.Mutation
+import typings.firebaseFirestore.objMapMod.ObjectMap
 import typings.firebaseFirestore.promiseMod.Deferred
 import typings.firebaseFirestore.queryMod.Query
+import typings.firebaseFirestore.referenceSetMod.ReferenceSet
 import typings.firebaseFirestore.remoteEventMod.RemoteEvent
 import typings.firebaseFirestore.remoteStoreMod.RemoteStore
 import typings.firebaseFirestore.remoteSyncerMod.RemoteSyncer
 import typings.firebaseFirestore.sharedClientStateMod.SharedClientState
-import typings.firebaseFirestore.sharedClientStateSyncerMod.SharedClientStateSyncer
 import typings.firebaseFirestore.sortedMapMod.SortedMap
 import typings.firebaseFirestore.transactionMod.Transaction
 import typings.firebaseFirestore.typesMod.BatchId
@@ -21,15 +23,17 @@ import typings.firebaseFirestore.typesMod.OnlineState
 import typings.firebaseFirestore.typesMod.OnlineStateSource
 import typings.firebaseFirestore.typesMod.TargetId
 import typings.firebaseFirestore.userMod.User
+import typings.firebaseFirestore.viewMod.LimboDocumentChange
+import typings.firebaseFirestore.viewSnapshotMod.ViewSnapshot
+import typings.std.Error
+import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/core/sync_engine", "SyncEngine")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/core/sync_engine", "SyncEngine")
 @js.native
-class SyncEngine protected ()
-  extends RemoteSyncer
-     with SharedClientStateSyncer {
+class SyncEngine protected () extends RemoteSyncer {
   def this(
     localStore: LocalStore,
     remoteStore: RemoteStore,
@@ -41,41 +45,28 @@ class SyncEngine protected ()
     * Keeps track of the information about an active limbo resolution for each
     * active target ID that was started for the purpose of limbo resolution.
     */
-  var activeLimboResolutionsByTarget: js.Any = js.native
+  var activeLimboResolutionsByTarget: Map[Double, LimboResolution] = js.native
   /**
     * Keeps track of the target ID for each document that is in limbo with an
     * active target.
     */
-  var activeLimboTargetsByKey: js.Any = js.native
+  var activeLimboTargetsByKey: SortedMap[DocumentKey, Double] = js.native
   var addMutationCallback: js.Any = js.native
-  var assertSubscribed: js.Any = js.native
   var currentUser: js.Any = js.native
-  var emitNewSnapsAndNotifyLocalStore: js.Any = js.native
   /**
     * The keys of documents that are in limbo for which we haven't yet started a
     * limbo resolution query.
     */
   var enqueuedLimboResolutions: js.Any = js.native
-  /**
-    * Registers a view for a previously unknown query and computes its initial
-    * snapshot.
-    */
-  var initializeViewAndComputeSnapshot: js.Any = js.native
-  var isPrimary: js.Any = js.native
-  var limboDocumentRefs: js.Any = js.native
+  var limboDocumentRefs: ReferenceSet = js.native
   var limboTargetIdGenerator: js.Any = js.native
-  var localStore: js.Any = js.native
+  var localStore: LocalStore = js.native
   var maxConcurrentLimboResolutions: js.Any = js.native
   /** Stores user completion handlers, indexed by User and BatchId. */
   var mutationUserCallbacks: js.Any = js.native
   var onlineState: js.Any = js.native
   /** Stores user callbacks waiting for all pending writes to be acknowledged. */
   var pendingWritesCallbacks: js.Any = js.native
-  /**
-    * Resolves or rejects the user callback for the given batch and then discards
-    * it.
-    */
-  var processUserCallback: js.Any = js.native
   /**
     * Starts listens for documents in limbo that are enqueued for resolution,
     * subject to a maximum number of concurrent resolutions.
@@ -85,52 +76,26 @@ class SyncEngine protected ()
     * behavior as seen in https://github.com/firebase/firebase-js-sdk/issues/2683.
     */
   var pumpEnqueuedLimboResolutions: js.Any = js.native
-  var queriesByTarget: js.Any = js.native
-  var queryViewsByQuery: js.Any = js.native
+  var queriesByTarget: Map[Double, js.Array[Query]] = js.native
+  var queryViewsByQuery: ObjectMap[Query, QueryView] = js.native
   /** Reject all outstanding callbacks waiting for pending writes to complete. */
   var rejectOutstandingPendingWritesCallbacks: js.Any = js.native
-  var remoteStore: js.Any = js.native
-  var removeAndCleanupTarget: js.Any = js.native
+  var remoteStore: RemoteStore = js.native
   var removeLimboTarget: js.Any = js.native
-  var resetLimboDocuments: js.Any = js.native
-  var sharedClientState: js.Any = js.native
-  var syncEngineListener: js.Any = js.native
-  /**
-    * Reconcile the query views of the provided query targets with the state from
-    * persistence. Raises snapshots for any changes that affect the local
-    * client and returns the updated state of all target's query data.
-    */
-  var synchronizeQueryViewsAndRaiseSnapshots: js.Any = js.native
-  /**
-    * Reconcile the list of synced documents in an existing view with those
-    * from persistence.
-    */
-  var synchronizeViewAndComputeSnapshot: js.Any = js.native
-  /**
-    * Creates a `Query` object from the specified `Target`. There is no way to
-    * obtain the original `Query`, so we synthesize a `Query` from the `Target`
-    * object.
-    *
-    * The synthesized result might be different from the original `Query`, but
-    * since the synthesized `Query` should return the same results as the
-    * original one (only the presentation of results might differ), the potential
-    * difference will not cause issues.
-    */
-  var synthesizeTargetToQuery: js.Any = js.native
+  var sharedClientState: SharedClientState = js.native
+  var syncEngineListener: SyncEngineListener | Null = js.native
   var trackLimboChange: js.Any = js.native
   /**
     * Triggers the callbacks that are waiting for this batch id to get acknowledged by server,
     * if there are any.
     */
   var triggerPendingWritesCallbacks: js.Any = js.native
-  var updateTrackedLimbos: js.Any = js.native
   def activeLimboDocumentResolutions(): SortedMap[DocumentKey, TargetId] = js.native
   /**
     * Applies an OnlineState change to the sync engine and notifies any views of
     * the change.
     */
   def applyOnlineStateChange(onlineState: OnlineState, source: OnlineStateSource): Unit = js.native
-  def applyPrimaryState(isPrimary: Boolean): js.Promise[Unit] = js.native
   /**
     * Applies one remote event to the sync engine, notifying any views of the
     * changes, and releasing any pending mutation batches that would become
@@ -145,7 +110,10 @@ class SyncEngine protected ()
     */
   /* CompleteClass */
   override def applySuccessfulWrite(result: MutationBatchResult): js.Promise[Unit] = js.native
+  /* protected */ def assertSubscribed(fnName: String): Unit = js.native
   def disableNetwork(): js.Promise[Unit] = js.native
+  /* protected */ def emitNewSnapsAndNotifyLocalStore(changes: MaybeDocumentMap_): js.Promise[Unit] = js.native
+  /* protected */ def emitNewSnapsAndNotifyLocalStore(changes: MaybeDocumentMap_, remoteEvent: RemoteEvent): js.Promise[Unit] = js.native
   def enableNetwork(): js.Promise[Unit] = js.native
   def enqueuedLimboDocumentResolutions(): js.Array[DocumentKey] = js.native
   /**
@@ -156,13 +124,24 @@ class SyncEngine protected ()
   /* CompleteClass */
   override def getRemoteKeysForTarget(targetId: TargetId): DocumentKeySet_ = js.native
   def handleCredentialChange(user: User): js.Promise[Unit] = js.native
-  def isPrimaryClient(): Boolean = js.native
+  /**
+    * Registers a view for a previously unknown query and computes its initial
+    * snapshot.
+    */
+  /* protected */ def initializeViewAndComputeSnapshot(query: Query, targetId: TargetId, current: Boolean): js.Promise[ViewSnapshot] = js.native
+  def isPrimaryClient: Boolean = js.native
   /**
     * Initiates the new listen, resolves promise when listen enqueued to the
     * server. All the subsequent view snapshots or errors are sent to the
-    * subscribed handlers. Returns the targetId of the query.
+    * subscribed handlers. Returns the initial snapshot.
     */
-  def listen(query: Query): js.Promise[TargetId] = js.native
+  def listen(query: Query): js.Promise[ViewSnapshot] = js.native
+  /* protected */ def processUserCallback(batchId: BatchId): Unit = js.native
+  /**
+    * Resolves or rejects the user callback for the given batch and then discards
+    * it.
+    */
+  /* protected */ def processUserCallback(batchId: BatchId, error: Error): Unit = js.native
   /**
     * Registers a user callback that resolves when all pending mutations at the moment of calling
     * are acknowledged .
@@ -187,6 +166,8 @@ class SyncEngine protected ()
     */
   /* CompleteClass */
   override def rejectListen(targetId: TargetId, error: FirestoreError): js.Promise[Unit] = js.native
+  /* protected */ def removeAndCleanupTarget(targetId: Double): Unit = js.native
+  /* protected */ def removeAndCleanupTarget(targetId: Double, error: Error): Unit = js.native
   /**
     * Takes an updateFunction in which a set of reads and writes can be performed
     * atomically. In the updateFunction, the client can read and write values
@@ -213,6 +194,7 @@ class SyncEngine protected ()
   def subscribe(syncEngineListener: SyncEngineListener): Unit = js.native
   /** Stops listening to the query. */
   def unlisten(query: Query): js.Promise[Unit] = js.native
+  /* protected */ def updateTrackedLimbos(targetId: TargetId, limboChanges: js.Array[LimboDocumentChange]): Unit = js.native
   /**
     * Initiates the write of local mutation batch which involves adding the
     * writes to the mutation queue, notifying the remote store about new

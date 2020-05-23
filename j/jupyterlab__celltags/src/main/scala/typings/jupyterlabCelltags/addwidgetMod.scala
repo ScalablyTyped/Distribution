@@ -2,7 +2,7 @@ package typings.jupyterlabCelltags
 
 import typings.jupyterlabCelltags.toolMod.TagTool
 import typings.luminoWidgets.mod.Widget
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,7 +53,7 @@ object addwidgetMod extends js.Object {
       * called in response to events on the dock panel's node. It should
       * not be called directly by user code.
       */
-    def handleEvent(event: Event_): Unit = js.native
+    def handleEvent(event: Event): Unit = js.native
     /**
       * Handle `after-attach` messages for the widget.
       */

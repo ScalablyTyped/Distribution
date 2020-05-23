@@ -1,6 +1,6 @@
 package typings.storybookAddonKnobs.numberMod
 
-import typings.storybookAddonKnobs.AnonKnobValidator
+import typings.storybookAddonKnobs.anon.KnobValidator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ class default () extends NumberType
 @js.native
 object default extends js.Object {
   var defaultProps: NumberTypeProps = js.native
-  var propTypes: AnonKnobValidator = js.native
+  var propTypes: KnobValidator = js.native
   def deserialize(value: String): Double | Null = js.native
   def serialize(): String = js.native
   def serialize(value: Double): String = js.native

@@ -20,9 +20,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.DoCmd")
 @js.native
-class DoCmd protected () extends js.Object {
+trait DoCmd extends js.Object {
   @JSName("Access.DoCmd_typekey")
   var AccessDotDoCmd_typekey: DoCmd = js.native
   def AddMenu(MenuName: String, MenuMacroName: String): Unit = js.native
@@ -381,9 +380,8 @@ class DoCmd protected () extends js.Object {
   def RunSQL(SQLStatement: String, UseTransaction: Boolean): Unit = js.native
   def RunSavedImportExport(SavedImportExportName: String): Unit = js.native
   def Save(): Unit = js.native
-  def Save(ObjectType: js.UndefOr[scala.Nothing], ObjectName: String): Unit = js.native
   /** @param ObjectType [ObjectType=-1] */
-  def Save(ObjectType: AcObjectType, ObjectName: String): Unit = js.native
+  def Save(ObjectType: js.UndefOr[AcObjectType], ObjectName: String): Unit = js.native
   /**
     * @param ObjectType [ObjectType=-1]
     * @param Record [Record=2]
@@ -395,9 +393,7 @@ class DoCmd protected () extends js.Object {
   def SearchForRecord(ObjectType: AcDataObjectType, ObjectName: String, Record: AcRecord, WhereCondition: String): Unit = js.native
   def SelectObject(ObjectType: AcObjectType, ObjectName: String): Unit = js.native
   @JSName("SelectObject")
-  def SelectObject_true(ObjectType: AcObjectType, ObjectName: js.UndefOr[scala.Nothing], InDatabaseWindow: `true`): Unit = js.native
-  @JSName("SelectObject")
-  def SelectObject_true(ObjectType: AcObjectType, ObjectName: String, InDatabaseWindow: `true`): Unit = js.native
+  def SelectObject_true(ObjectType: AcObjectType, ObjectName: js.UndefOr[String], InDatabaseWindow: `true`): Unit = js.native
   /** @param ObjectType [ObjectType=-1] */
   def SendObject(
     ObjectType: js.UndefOr[AcSendObjectType],

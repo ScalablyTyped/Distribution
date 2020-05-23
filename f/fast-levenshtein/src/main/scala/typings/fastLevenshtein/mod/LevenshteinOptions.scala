@@ -12,7 +12,7 @@ object LevenshteinOptions {
   @scala.inline
   def apply(useCollator: js.UndefOr[Boolean] = js.undefined): LevenshteinOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(useCollator)) __obj.updateDynamic("useCollator")(useCollator.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCollator)) __obj.updateDynamic("useCollator")(useCollator.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LevenshteinOptions]
   }
 }

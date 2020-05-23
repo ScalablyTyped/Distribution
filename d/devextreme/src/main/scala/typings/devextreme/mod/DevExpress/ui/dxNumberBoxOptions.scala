@@ -1,11 +1,11 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.AnonComponentElement
-import typings.devextreme.AnonElement
-import typings.devextreme.AnonElementEventJQueryEvent
-import typings.devextreme.AnonJQueryEvent
-import typings.devextreme.AnonModel
-import typings.devextreme.AnonName
+import typings.devextreme.anon.ComponentElement
+import typings.devextreme.anon.Element
+import typings.devextreme.anon.ElementEventJQueryEvent
+import typings.devextreme.anon.JQueryEvent
+import typings.devextreme.anon.Model
+import typings.devextreme.anon.Name
 import typings.devextreme.devextremeStrings.always
 import typings.devextreme.devextremeStrings.auto
 import typings.devextreme.devextremeStrings.clear
@@ -70,26 +70,26 @@ object dxNumberBoxOptions {
     maskChar: String = null,
     maskInvalidMessage: String = null,
     maskRules: js.Any = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
     mode: number | text | tel = null,
     name: String = null,
-    onChange: /* e */ AnonElementEventJQueryEvent[dxNumberBox] => _ = null,
-    onContentReady: /* e */ AnonComponentElement[dxNumberBox] => _ = null,
-    onCopy: /* e */ AnonElementEventJQueryEvent[dxNumberBox] => _ = null,
-    onCut: /* e */ AnonElementEventJQueryEvent[dxNumberBox] => _ = null,
-    onDisposing: /* e */ AnonModel[dxNumberBox] => _ = null,
-    onEnterKey: /* e */ AnonElementEventJQueryEvent[dxNumberBox] => _ = null,
-    onFocusIn: /* e */ AnonElementEventJQueryEvent[dxNumberBox] => _ = null,
-    onFocusOut: /* e */ AnonElementEventJQueryEvent[dxNumberBox] => _ = null,
-    onInitialized: /* e */ AnonElement[dxNumberBox] => _ = null,
-    onInput: /* e */ AnonElementEventJQueryEvent[dxNumberBox] => _ = null,
-    onKeyDown: /* e */ AnonElementEventJQueryEvent[dxNumberBox] => _ = null,
-    onKeyPress: /* e */ AnonElementEventJQueryEvent[dxNumberBox] => _ = null,
-    onKeyUp: /* e */ AnonElementEventJQueryEvent[dxNumberBox] => _ = null,
-    onOptionChanged: /* e */ AnonName[dxNumberBox] => _ = null,
-    onPaste: /* e */ AnonElementEventJQueryEvent[dxNumberBox] => _ = null,
-    onValueChanged: /* e */ AnonJQueryEvent[dxNumberBox] => _ = null,
+    onChange: /* e */ ElementEventJQueryEvent[dxNumberBox] => _ = null,
+    onContentReady: /* e */ ComponentElement[dxNumberBox] => _ = null,
+    onCopy: /* e */ ElementEventJQueryEvent[dxNumberBox] => _ = null,
+    onCut: /* e */ ElementEventJQueryEvent[dxNumberBox] => _ = null,
+    onDisposing: /* e */ Model[dxNumberBox] => _ = null,
+    onEnterKey: /* e */ ElementEventJQueryEvent[dxNumberBox] => _ = null,
+    onFocusIn: /* e */ ElementEventJQueryEvent[dxNumberBox] => _ = null,
+    onFocusOut: /* e */ ElementEventJQueryEvent[dxNumberBox] => _ = null,
+    onInitialized: /* e */ Element[dxNumberBox] => _ = null,
+    onInput: /* e */ ElementEventJQueryEvent[dxNumberBox] => _ = null,
+    onKeyDown: /* e */ ElementEventJQueryEvent[dxNumberBox] => _ = null,
+    onKeyPress: /* e */ ElementEventJQueryEvent[dxNumberBox] => _ = null,
+    onKeyUp: /* e */ ElementEventJQueryEvent[dxNumberBox] => _ = null,
+    onOptionChanged: /* e */ Name[dxNumberBox] => _ = null,
+    onPaste: /* e */ ElementEventJQueryEvent[dxNumberBox] => _ = null,
+    onValueChanged: /* e */ JQueryEvent[dxNumberBox] => _ = null,
     placeholder: String = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     rtlEnabled: js.UndefOr[Boolean] = js.undefined,
@@ -97,9 +97,9 @@ object dxNumberBoxOptions {
     showMaskMode: always | onFocus = null,
     showSpinButtons: js.UndefOr[Boolean] = js.undefined,
     spellcheck: js.UndefOr[Boolean] = js.undefined,
-    step: Int | Double = null,
+    step: js.UndefOr[Double] = js.undefined,
     stylingMode: outlined | underlined | filled = null,
-    tabIndex: Int | Double = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
     text: String = null,
     useLargeSpinButtons: js.UndefOr[Boolean] = js.undefined,
     useMaskedValue: js.UndefOr[Boolean] = js.undefined,
@@ -107,32 +107,32 @@ object dxNumberBoxOptions {
     validationErrors: js.Array[_] = null,
     validationMessageMode: always | auto = null,
     validationStatus: valid | invalid | pending = null,
-    value: Int | Double = null,
+    value: js.UndefOr[Double] = js.undefined,
     valueChangeEvent: String = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     width: Double | String | (js.Function0[Double | String]) = null
   ): dxNumberBoxOptions = {
     val __obj = js.Dynamic.literal()
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.get.asInstanceOf[js.Any])
     if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
     if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.get.asInstanceOf[js.Any])
     if (inputAttr != null) __obj.updateDynamic("inputAttr")(inputAttr.asInstanceOf[js.Any])
     if (invalidValueMessage != null) __obj.updateDynamic("invalidValueMessage")(invalidValueMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(isValid)) __obj.updateDynamic("isValid")(isValid.asInstanceOf[js.Any])
+    if (!js.isUndefined(isValid)) __obj.updateDynamic("isValid")(isValid.get.asInstanceOf[js.Any])
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
     if (maskChar != null) __obj.updateDynamic("maskChar")(maskChar.asInstanceOf[js.Any])
     if (maskInvalidMessage != null) __obj.updateDynamic("maskInvalidMessage")(maskInvalidMessage.asInstanceOf[js.Any])
     if (maskRules != null) __obj.updateDynamic("maskRules")(maskRules.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
@@ -152,25 +152,25 @@ object dxNumberBoxOptions {
     if (onPaste != null) __obj.updateDynamic("onPaste")(js.Any.fromFunction1(onPaste))
     if (onValueChanged != null) __obj.updateDynamic("onValueChanged")(js.Any.fromFunction1(onValueChanged))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(showClearButton)) __obj.updateDynamic("showClearButton")(showClearButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showClearButton)) __obj.updateDynamic("showClearButton")(showClearButton.get.asInstanceOf[js.Any])
     if (showMaskMode != null) __obj.updateDynamic("showMaskMode")(showMaskMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSpinButtons)) __obj.updateDynamic("showSpinButtons")(showSpinButtons.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSpinButtons)) __obj.updateDynamic("showSpinButtons")(showSpinButtons.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
     if (stylingMode != null) __obj.updateDynamic("stylingMode")(stylingMode.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(useLargeSpinButtons)) __obj.updateDynamic("useLargeSpinButtons")(useLargeSpinButtons.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMaskedValue)) __obj.updateDynamic("useMaskedValue")(useMaskedValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(useLargeSpinButtons)) __obj.updateDynamic("useLargeSpinButtons")(useLargeSpinButtons.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useMaskedValue)) __obj.updateDynamic("useMaskedValue")(useMaskedValue.get.asInstanceOf[js.Any])
     if (validationError != null) __obj.updateDynamic("validationError")(validationError.asInstanceOf[js.Any])
     if (validationErrors != null) __obj.updateDynamic("validationErrors")(validationErrors.asInstanceOf[js.Any])
     if (validationMessageMode != null) __obj.updateDynamic("validationMessageMode")(validationMessageMode.asInstanceOf[js.Any])
     if (validationStatus != null) __obj.updateDynamic("validationStatus")(validationStatus.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     if (valueChangeEvent != null) __obj.updateDynamic("valueChangeEvent")(valueChangeEvent.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxNumberBoxOptions]
   }

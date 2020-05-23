@@ -68,7 +68,7 @@ object AppOptions {
   @scala.inline
   def apply(
     credential: Credential = null,
-    databaseAuthVariableOverride: js.Object = null,
+    databaseAuthVariableOverride: js.UndefOr[Null | js.Object] = js.undefined,
     databaseURL: String = null,
     httpAgent: Agent = null,
     projectId: String = null,
@@ -77,7 +77,7 @@ object AppOptions {
   ): AppOptions = {
     val __obj = js.Dynamic.literal()
     if (credential != null) __obj.updateDynamic("credential")(credential.asInstanceOf[js.Any])
-    if (databaseAuthVariableOverride != null) __obj.updateDynamic("databaseAuthVariableOverride")(databaseAuthVariableOverride.asInstanceOf[js.Any])
+    if (!js.isUndefined(databaseAuthVariableOverride)) __obj.updateDynamic("databaseAuthVariableOverride")(databaseAuthVariableOverride.asInstanceOf[js.Any])
     if (databaseURL != null) __obj.updateDynamic("databaseURL")(databaseURL.asInstanceOf[js.Any])
     if (httpAgent != null) __obj.updateDynamic("httpAgent")(httpAgent.asInstanceOf[js.Any])
     if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])

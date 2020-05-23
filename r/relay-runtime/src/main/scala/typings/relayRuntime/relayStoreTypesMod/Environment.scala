@@ -1,8 +1,8 @@
 package typings.relayRuntime.relayStoreTypesMod
 
-import typings.relayRuntime.AnonCacheConfig
-import typings.relayRuntime.AnonOperation
-import typings.relayRuntime.AnonSource
+import typings.relayRuntime.anon.CacheConfig
+import typings.relayRuntime.anon.Operation
+import typings.relayRuntime.anon.Source
 import typings.relayRuntime.relayNetworkTypesMod.GraphQLResponse
 import typings.relayRuntime.relayNetworkTypesMod.Network
 import typings.relayRuntime.relayNetworkTypesMod.PayloadData
@@ -56,7 +56,7 @@ trait Environment extends js.Object {
     * Note: Observables are lazy, so calling this method will do nothing until
     * the result is subscribed to: environment.execute({...}).subscribe({...}).
     */
-  def execute(config: AnonCacheConfig): RelayObservable[GraphQLResponse] = js.native
+  def execute(config: CacheConfig): RelayObservable[GraphQLResponse] = js.native
   /**
     * Returns an Observable of GraphQLResponse resulting from executing the
     * provided Mutation operation, the result of which is then normalized and
@@ -67,7 +67,7 @@ trait Environment extends js.Object {
     * the result is subscribed to:
     * environment.executeMutation({...}).subscribe({...}).
     */
-  def executeMutation(hasOperationOptimisticUpdaterOptimisticResponseUpdaterUploadables: AnonOperation): RelayObservable[GraphQLResponse] = js.native
+  def executeMutation(hasOperationOptimisticUpdaterOptimisticResponseUpdaterUploadables: Operation): RelayObservable[GraphQLResponse] = js.native
   /**
     * Returns an Observable of GraphQLResponse resulting from executing the
     * provided Query or Subscription operation responses, the result of which is
@@ -77,7 +77,7 @@ trait Environment extends js.Object {
     * the result is subscribed to:
     * environment.executeWithSource({...}).subscribe({...}).
     */
-  def executeWithSource(hasOperationSource: AnonSource): RelayObservable[GraphQLResponse] = js.native
+  def executeWithSource(hasOperationSource: Source): RelayObservable[GraphQLResponse] = js.native
   /**
     * Get the environment's internal Network.
     */

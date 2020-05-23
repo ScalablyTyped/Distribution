@@ -1,6 +1,6 @@
 package typings.aliApp.my
 
-import typings.aliApp.AnonLatitude
+import typings.aliApp.anon.Latitude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait GetCenterLocationOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")
-  var success_GetCenterLocationOptions: js.UndefOr[js.Function1[/* res */ AnonLatitude, Unit]] = js.undefined
+  var success_GetCenterLocationOptions: js.UndefOr[js.Function1[/* res */ Latitude, Unit]] = js.undefined
 }
 
 object GetCenterLocationOptions {
@@ -18,7 +18,7 @@ object GetCenterLocationOptions {
   def apply(
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
-    success: /* res */ AnonLatitude => Unit = null
+    success: /* res */ Latitude => Unit = null
   ): GetCenterLocationOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))

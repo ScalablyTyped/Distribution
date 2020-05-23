@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.chalk.mod.Chalk
 import typings.npmlog.mod.Logger
 import typings.std.TemplateStringsArray
+import typings.storybookNodeLogger.anon.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -146,7 +147,7 @@ object mod extends js.Object {
     def plain(message: String): Unit = js.native
     def setLevel(): Unit = js.native
     def setLevel(level: String): Unit = js.native
-    def trace(hasMessageTime: AnonMessage): Unit = js.native
+    def trace(hasMessageTime: Message): Unit = js.native
     def warn(message: String): Unit = js.native
   }
   

@@ -1,5 +1,8 @@
 package typings.instagramPrivateApi
 
+import typings.instagramPrivateApi.anon.BroadcastId_
+import typings.instagramPrivateApi.anon.LastFetchTs
+import typings.instagramPrivateApi.anon.Message
 import typings.instagramPrivateApi.liveAddToPostResponseMod.LiveAddToPostResponse
 import typings.instagramPrivateApi.liveCommentsResponseMod.LiveCommentsResponseRootObject
 import typings.instagramPrivateApi.liveCreateBroadcastResponseMod.LiveCreateBroadcastResponseRootObject
@@ -26,14 +29,14 @@ object liveRepositoryMod extends js.Object {
     def activateQuestion(broadcastId: String, questionId: String): js.Promise[_] = js.native
     def addToPostLive(broadcastId: String): js.Promise[LiveAddToPostResponse] = js.native
     def comment(broadcastId: String, message: String): js.Promise[_] = js.native
-    def create(hasPreviewHeightPreviewWidthMessage: AnonMessage): js.Promise[LiveCreateBroadcastResponseRootObject] = js.native
+    def create(hasPreviewHeightPreviewWidthMessage: Message): js.Promise[LiveCreateBroadcastResponseRootObject] = js.native
     def createQuestion(broadcastId: String, question: String): js.Promise[_] = js.native
     def deactivateQuestion(broadcastId: String, questionId: String): js.Promise[_] = js.native
     def endBroadcast(broadcastId: String): js.Promise[_] = js.native
     def endBroadcast(broadcastId: String, endAfterCopyrightWarning: Boolean): js.Promise[_] = js.native
-    def getComment(hasBroadcastIdCommentsRequestedLastCommentTs: AnonBroadcastId_): js.Promise[LiveCommentsResponseRootObject] = js.native
+    def getComment(hasBroadcastIdCommentsRequestedLastCommentTs: BroadcastId_): js.Promise[LiveCommentsResponseRootObject] = js.native
     def getFinalViewerList(broadcastId: String): js.Promise[LiveFinalViewersResponseRootObject] = js.native
-    def getJoinRequestCounts(hasBroadcastIdLastTotalCountLastSeenTsLastFetchTs: AnonLastFetchTs): js.Promise[LiveJoinRequestCountsResponseRootObject] = js.native
+    def getJoinRequestCounts(hasBroadcastIdLastTotalCountLastSeenTsLastFetchTs: LastFetchTs): js.Promise[LiveJoinRequestCountsResponseRootObject] = js.native
     def getLikeCount(broadcastId: String): js.Promise[LiveLikeCountResponseRootObject] = js.native
     def getLikeCount(broadcastId: String, likeTs: String): js.Promise[LiveLikeCountResponseRootObject] = js.native
     def getLikeCount(broadcastId: String, likeTs: Double): js.Promise[LiveLikeCountResponseRootObject] = js.native

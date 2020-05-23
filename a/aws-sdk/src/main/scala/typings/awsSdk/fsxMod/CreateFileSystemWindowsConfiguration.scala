@@ -46,8 +46,8 @@ object CreateFileSystemWindowsConfiguration {
   def apply(
     ThroughputCapacity: MegabytesPerSecond,
     ActiveDirectoryId: DirectoryId = null,
-    AutomaticBackupRetentionDays: Int | Double = null,
-    CopyTagsToBackups: js.UndefOr[Boolean] = js.undefined,
+    AutomaticBackupRetentionDays: js.UndefOr[AutomaticBackupRetentionDays] = js.undefined,
+    CopyTagsToBackups: js.UndefOr[Flag] = js.undefined,
     DailyAutomaticBackupStartTime: DailyTime = null,
     DeploymentType: WindowsDeploymentType = null,
     PreferredSubnetId: SubnetId = null,
@@ -56,8 +56,8 @@ object CreateFileSystemWindowsConfiguration {
   ): CreateFileSystemWindowsConfiguration = {
     val __obj = js.Dynamic.literal(ThroughputCapacity = ThroughputCapacity.asInstanceOf[js.Any])
     if (ActiveDirectoryId != null) __obj.updateDynamic("ActiveDirectoryId")(ActiveDirectoryId.asInstanceOf[js.Any])
-    if (AutomaticBackupRetentionDays != null) __obj.updateDynamic("AutomaticBackupRetentionDays")(AutomaticBackupRetentionDays.asInstanceOf[js.Any])
-    if (!js.isUndefined(CopyTagsToBackups)) __obj.updateDynamic("CopyTagsToBackups")(CopyTagsToBackups.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutomaticBackupRetentionDays)) __obj.updateDynamic("AutomaticBackupRetentionDays")(AutomaticBackupRetentionDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(CopyTagsToBackups)) __obj.updateDynamic("CopyTagsToBackups")(CopyTagsToBackups.get.asInstanceOf[js.Any])
     if (DailyAutomaticBackupStartTime != null) __obj.updateDynamic("DailyAutomaticBackupStartTime")(DailyAutomaticBackupStartTime.asInstanceOf[js.Any])
     if (DeploymentType != null) __obj.updateDynamic("DeploymentType")(DeploymentType.asInstanceOf[js.Any])
     if (PreferredSubnetId != null) __obj.updateDynamic("PreferredSubnetId")(PreferredSubnetId.asInstanceOf[js.Any])

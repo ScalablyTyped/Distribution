@@ -4,20 +4,21 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.backbone.mod.Collection
 import typings.backbone.mod.EventsHash
 import typings.backbone.mod.Model
+import typings.backbone.mod.ModelSetOptions
 import typings.backbone.mod.View
 import typings.backbone.mod.ViewOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LayoutOptions[TModel /* <: Model */] extends ViewOptions[TModel] {
+trait LayoutOptions[TModel /* <: Model[_, ModelSetOptions] */] extends ViewOptions[TModel] {
   var template: js.UndefOr[String] = js.undefined
   var views: js.UndefOr[StringDictionary[View[TModel]]] = js.undefined
 }
 
 object LayoutOptions {
   @scala.inline
-  def apply[TModel /* <: Model */](
+  def apply[TModel](
     attributes: StringDictionary[js.Any] = null,
     className: String = null,
     collection: Collection[_] = null,

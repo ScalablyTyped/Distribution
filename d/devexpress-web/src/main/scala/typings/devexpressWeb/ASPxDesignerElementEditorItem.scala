@@ -4,10 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ASPxDesignerElementEditorItem")
-@js.native
-class ASPxDesignerElementEditorItem () extends js.Object {
-  var displayValue: String = js.native
-  var value: js.Any = js.native
+trait ASPxDesignerElementEditorItem extends js.Object {
+  var displayValue: String
+  var value: js.Any
+}
+
+object ASPxDesignerElementEditorItem {
+  @scala.inline
+  def apply(displayValue: String, value: js.Any): ASPxDesignerElementEditorItem = {
+    val __obj = js.Dynamic.literal(displayValue = displayValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxDesignerElementEditorItem]
+  }
 }
 

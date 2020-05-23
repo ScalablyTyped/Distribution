@@ -30,11 +30,11 @@ object UpdateTeamMemberRequest {
     projectId: ProjectId,
     userArn: UserArn,
     projectRole: Role = null,
-    remoteAccessAllowed: js.UndefOr[Boolean] = js.undefined
+    remoteAccessAllowed: js.UndefOr[RemoteAccessAllowed] = js.undefined
   ): UpdateTeamMemberRequest = {
     val __obj = js.Dynamic.literal(projectId = projectId.asInstanceOf[js.Any], userArn = userArn.asInstanceOf[js.Any])
     if (projectRole != null) __obj.updateDynamic("projectRole")(projectRole.asInstanceOf[js.Any])
-    if (!js.isUndefined(remoteAccessAllowed)) __obj.updateDynamic("remoteAccessAllowed")(remoteAccessAllowed.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteAccessAllowed)) __obj.updateDynamic("remoteAccessAllowed")(remoteAccessAllowed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTeamMemberRequest]
   }
 }

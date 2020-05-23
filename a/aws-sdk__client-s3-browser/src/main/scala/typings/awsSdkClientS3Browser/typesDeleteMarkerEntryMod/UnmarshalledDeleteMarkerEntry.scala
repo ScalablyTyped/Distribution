@@ -29,7 +29,7 @@ object UnmarshalledDeleteMarkerEntry {
     VersionId: String = null
   ): UnmarshalledDeleteMarkerEntry = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(IsLatest)) __obj.updateDynamic("IsLatest")(IsLatest.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsLatest)) __obj.updateDynamic("IsLatest")(IsLatest.get.asInstanceOf[js.Any])
     if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
     if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
     if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])

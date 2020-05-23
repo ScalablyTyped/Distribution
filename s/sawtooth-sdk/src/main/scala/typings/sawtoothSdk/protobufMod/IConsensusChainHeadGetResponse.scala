@@ -14,10 +14,13 @@ trait IConsensusChainHeadGetResponse extends js.Object {
 
 object IConsensusChainHeadGetResponse {
   @scala.inline
-  def apply(block: IConsensusBlock = null, status: Status = null): IConsensusChainHeadGetResponse = {
+  def apply(
+    block: js.UndefOr[Null | IConsensusBlock] = js.undefined,
+    status: js.UndefOr[Null | Status] = js.undefined
+  ): IConsensusChainHeadGetResponse = {
     val __obj = js.Dynamic.literal()
-    if (block != null) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConsensusChainHeadGetResponse]
   }
 }

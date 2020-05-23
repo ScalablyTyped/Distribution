@@ -36,16 +36,16 @@ object Viewport {
   def apply(
     height: Double,
     width: Double,
-    deviceScaleFactor: Int | Double = null,
+    deviceScaleFactor: js.UndefOr[Double] = js.undefined,
     hasTouch: js.UndefOr[Boolean] = js.undefined,
     isLandscape: js.UndefOr[Boolean] = js.undefined,
     isMobile: js.UndefOr[Boolean] = js.undefined
   ): Viewport = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (deviceScaleFactor != null) __obj.updateDynamic("deviceScaleFactor")(deviceScaleFactor.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasTouch)) __obj.updateDynamic("hasTouch")(hasTouch.asInstanceOf[js.Any])
-    if (!js.isUndefined(isLandscape)) __obj.updateDynamic("isLandscape")(isLandscape.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMobile)) __obj.updateDynamic("isMobile")(isMobile.asInstanceOf[js.Any])
+    if (!js.isUndefined(deviceScaleFactor)) __obj.updateDynamic("deviceScaleFactor")(deviceScaleFactor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasTouch)) __obj.updateDynamic("hasTouch")(hasTouch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLandscape)) __obj.updateDynamic("isLandscape")(isLandscape.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMobile)) __obj.updateDynamic("isMobile")(isMobile.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Viewport]
   }
 }

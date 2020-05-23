@@ -12,9 +12,9 @@ trait IListValue extends js.Object {
 
 object IListValue {
   @scala.inline
-  def apply(values: js.Array[IValue] = null): IListValue = {
+  def apply(values: js.UndefOr[Null | js.Array[IValue]] = js.undefined): IListValue = {
     val __obj = js.Dynamic.literal()
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
+    if (!js.isUndefined(values)) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListValue]
   }
 }

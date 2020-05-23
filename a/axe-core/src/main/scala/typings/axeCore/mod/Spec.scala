@@ -1,13 +1,13 @@
 package typings.axeCore.mod
 
-import typings.axeCore.AnonApplication
+import typings.axeCore.anon.Application
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Spec extends js.Object {
   var axeVersion: js.UndefOr[String] = js.undefined
-  var branding: js.UndefOr[AnonApplication] = js.undefined
+  var branding: js.UndefOr[Application] = js.undefined
   var checks: js.UndefOr[js.Array[Check]] = js.undefined
   var locale: js.UndefOr[Locale] = js.undefined
   var reporter: js.UndefOr[ReporterVersion] = js.undefined
@@ -18,7 +18,7 @@ object Spec {
   @scala.inline
   def apply(
     axeVersion: String = null,
-    branding: AnonApplication = null,
+    branding: Application = null,
     checks: js.Array[Check] = null,
     locale: Locale = null,
     reporter: ReporterVersion = null,

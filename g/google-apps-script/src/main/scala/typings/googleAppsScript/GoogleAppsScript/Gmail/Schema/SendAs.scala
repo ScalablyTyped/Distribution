@@ -31,13 +31,13 @@ object SendAs {
   ): SendAs = {
     val __obj = js.Dynamic.literal()
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPrimary)) __obj.updateDynamic("isPrimary")(isPrimary.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPrimary)) __obj.updateDynamic("isPrimary")(isPrimary.get.asInstanceOf[js.Any])
     if (replyToAddress != null) __obj.updateDynamic("replyToAddress")(replyToAddress.asInstanceOf[js.Any])
     if (sendAsEmail != null) __obj.updateDynamic("sendAsEmail")(sendAsEmail.asInstanceOf[js.Any])
     if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
     if (smtpMsa != null) __obj.updateDynamic("smtpMsa")(smtpMsa.asInstanceOf[js.Any])
-    if (!js.isUndefined(treatAsAlias)) __obj.updateDynamic("treatAsAlias")(treatAsAlias.asInstanceOf[js.Any])
+    if (!js.isUndefined(treatAsAlias)) __obj.updateDynamic("treatAsAlias")(treatAsAlias.get.asInstanceOf[js.Any])
     if (verificationStatus != null) __obj.updateDynamic("verificationStatus")(verificationStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendAs]
   }

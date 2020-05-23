@@ -10,10 +10,10 @@ trait ColgroupHTMLAttributes[T] extends HTMLAttributes[T] {
 
 object ColgroupHTMLAttributes {
   @scala.inline
-  def apply[T](HTMLAttributes: HTMLAttributes[T] = null, span: Int | Double = null): ColgroupHTMLAttributes[T] = {
+  def apply[T](HTMLAttributes: HTMLAttributes[T] = null, span: js.UndefOr[Double] = js.undefined): ColgroupHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     if (HTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
-    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
+    if (!js.isUndefined(span)) __obj.updateDynamic("span")(span.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColgroupHTMLAttributes[T]]
   }
 }

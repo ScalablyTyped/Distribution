@@ -12,9 +12,9 @@ trait IMessageStoragePolicy extends js.Object {
 
 object IMessageStoragePolicy {
   @scala.inline
-  def apply(allowedPersistenceRegions: js.Array[String] = null): IMessageStoragePolicy = {
+  def apply(allowedPersistenceRegions: js.UndefOr[Null | js.Array[String]] = js.undefined): IMessageStoragePolicy = {
     val __obj = js.Dynamic.literal()
-    if (allowedPersistenceRegions != null) __obj.updateDynamic("allowedPersistenceRegions")(allowedPersistenceRegions.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowedPersistenceRegions)) __obj.updateDynamic("allowedPersistenceRegions")(allowedPersistenceRegions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMessageStoragePolicy]
   }
 }

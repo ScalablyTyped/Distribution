@@ -14,7 +14,6 @@ object DocumentSizeEntry {
   @scala.inline
   def apply(maybeDocument: MaybeDocument, size: Double): DocumentSizeEntry = {
     val __obj = js.Dynamic.literal(maybeDocument = maybeDocument.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DocumentSizeEntry]
   }
 }

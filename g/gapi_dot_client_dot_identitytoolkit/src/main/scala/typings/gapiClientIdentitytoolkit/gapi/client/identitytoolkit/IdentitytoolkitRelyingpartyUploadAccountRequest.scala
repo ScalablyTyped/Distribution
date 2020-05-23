@@ -36,14 +36,14 @@ object IdentitytoolkitRelyingpartyUploadAccountRequest {
   @scala.inline
   def apply(
     allowOverwrite: js.UndefOr[Boolean] = js.undefined,
-    blockSize: Int | Double = null,
-    cpuMemCost: Int | Double = null,
+    blockSize: js.UndefOr[Double] = js.undefined,
+    cpuMemCost: js.UndefOr[Double] = js.undefined,
     delegatedProjectNumber: String = null,
-    dkLen: Int | Double = null,
+    dkLen: js.UndefOr[Double] = js.undefined,
     hashAlgorithm: String = null,
-    memoryCost: Int | Double = null,
-    parallelization: Int | Double = null,
-    rounds: Int | Double = null,
+    memoryCost: js.UndefOr[Double] = js.undefined,
+    parallelization: js.UndefOr[Double] = js.undefined,
+    rounds: js.UndefOr[Double] = js.undefined,
     saltSeparator: String = null,
     sanityCheck: js.UndefOr[Boolean] = js.undefined,
     signerKey: String = null,
@@ -51,17 +51,17 @@ object IdentitytoolkitRelyingpartyUploadAccountRequest {
     users: js.Array[UserInfo] = null
   ): IdentitytoolkitRelyingpartyUploadAccountRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowOverwrite)) __obj.updateDynamic("allowOverwrite")(allowOverwrite.asInstanceOf[js.Any])
-    if (blockSize != null) __obj.updateDynamic("blockSize")(blockSize.asInstanceOf[js.Any])
-    if (cpuMemCost != null) __obj.updateDynamic("cpuMemCost")(cpuMemCost.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowOverwrite)) __obj.updateDynamic("allowOverwrite")(allowOverwrite.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockSize)) __obj.updateDynamic("blockSize")(blockSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cpuMemCost)) __obj.updateDynamic("cpuMemCost")(cpuMemCost.get.asInstanceOf[js.Any])
     if (delegatedProjectNumber != null) __obj.updateDynamic("delegatedProjectNumber")(delegatedProjectNumber.asInstanceOf[js.Any])
-    if (dkLen != null) __obj.updateDynamic("dkLen")(dkLen.asInstanceOf[js.Any])
+    if (!js.isUndefined(dkLen)) __obj.updateDynamic("dkLen")(dkLen.get.asInstanceOf[js.Any])
     if (hashAlgorithm != null) __obj.updateDynamic("hashAlgorithm")(hashAlgorithm.asInstanceOf[js.Any])
-    if (memoryCost != null) __obj.updateDynamic("memoryCost")(memoryCost.asInstanceOf[js.Any])
-    if (parallelization != null) __obj.updateDynamic("parallelization")(parallelization.asInstanceOf[js.Any])
-    if (rounds != null) __obj.updateDynamic("rounds")(rounds.asInstanceOf[js.Any])
+    if (!js.isUndefined(memoryCost)) __obj.updateDynamic("memoryCost")(memoryCost.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(parallelization)) __obj.updateDynamic("parallelization")(parallelization.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rounds)) __obj.updateDynamic("rounds")(rounds.get.asInstanceOf[js.Any])
     if (saltSeparator != null) __obj.updateDynamic("saltSeparator")(saltSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(sanityCheck)) __obj.updateDynamic("sanityCheck")(sanityCheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(sanityCheck)) __obj.updateDynamic("sanityCheck")(sanityCheck.get.asInstanceOf[js.Any])
     if (signerKey != null) __obj.updateDynamic("signerKey")(signerKey.asInstanceOf[js.Any])
     if (targetProjectId != null) __obj.updateDynamic("targetProjectId")(targetProjectId.asInstanceOf[js.Any])
     if (users != null) __obj.updateDynamic("users")(users.asInstanceOf[js.Any])

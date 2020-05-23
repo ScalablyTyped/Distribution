@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.Polygon")
 @js.native
-class Polygon () extends EventBindable {
-  def this(options: PolygonOptions) = this()
+trait Polygon extends EventBindable {
   def contains(point: LngLat): Boolean = js.native
   def getArea(): Double = js.native
   def getBounds(): Bounds = js.native

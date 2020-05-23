@@ -1,6 +1,6 @@
 package typings.images.mod
 
-import typings.images.AnonHeight
+import typings.images.anon.Height
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,7 +28,7 @@ class ImagesStatic () extends js.Object {
   def save(file: String, `type`: SupportType, config: ImagesConfig): Unit = js.native
   def setGCThreshold(value: Double): Unit = js.native
   def setLimit(width: Double, height: Double): Unit = js.native
-  def size(): AnonHeight = js.native
+  def size(): Height = js.native
   def size(width: Double): ImagesStatic = js.native
   def size(width: Double, height: Double): ImagesStatic = js.native
   def width(): Double = js.native

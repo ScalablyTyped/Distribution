@@ -1,7 +1,7 @@
 package typings.elasticElasticsearch.mod
 
-import typings.elasticElasticsearch.AnonALIVE
-import typings.elasticElasticsearch.AnonDATA_
+import typings.elasticElasticsearch.anon.ALIVE
+import typings.elasticElasticsearch.anon.DATA_
 import typings.elasticElasticsearch.connectionMod.ConnectionOptions
 import typings.elasticElasticsearch.connectionMod.default
 import scala.scalajs.js
@@ -18,7 +18,7 @@ class Connection () extends default {
 @JSImport("@elastic/elasticsearch", "Connection")
 @js.native
 object Connection extends js.Object {
-  var roles: AnonDATA_ = js.native
-  var statuses: AnonALIVE = js.native
+  var roles: DATA_ = js.native
+  var statuses: ALIVE = js.native
 }
 

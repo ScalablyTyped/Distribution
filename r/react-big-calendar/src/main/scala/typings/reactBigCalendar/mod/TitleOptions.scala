@@ -15,7 +15,7 @@ object TitleOptions {
   @scala.inline
   def apply(
     formats: js.Array[DateFormat],
-    StringDictionary: /* propName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     culture: String = null
   ): TitleOptions = {
     val __obj = js.Dynamic.literal(formats = formats.asInstanceOf[js.Any])

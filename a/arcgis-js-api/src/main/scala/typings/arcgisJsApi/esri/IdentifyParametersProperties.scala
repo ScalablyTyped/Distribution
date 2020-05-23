@@ -134,40 +134,40 @@ trait IdentifyParametersProperties extends js.Object {
 object IdentifyParametersProperties {
   @scala.inline
   def apply(
-    dpi: Int | Double = null,
+    dpi: js.UndefOr[Double] = js.undefined,
     geometry: GeometryProperties = null,
-    geometryPrecision: Int | Double = null,
-    height: Int | Double = null,
+    geometryPrecision: js.UndefOr[Double] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
     layerIds: js.Array[Double] = null,
     layerOption: top | visible | all = null,
     mapExtent: ExtentProperties = null,
-    maxAllowableOffset: Int | Double = null,
+    maxAllowableOffset: js.UndefOr[Double] = js.undefined,
     returnFieldName: js.UndefOr[Boolean] = js.undefined,
     returnGeometry: js.UndefOr[Boolean] = js.undefined,
     returnM: js.UndefOr[Boolean] = js.undefined,
     returnUnformattedValues: js.UndefOr[Boolean] = js.undefined,
     returnZ: js.UndefOr[Boolean] = js.undefined,
     spatialReference: SpatialReferenceProperties = null,
-    tolerance: Int | Double = null,
-    width: Int | Double = null
+    tolerance: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): IdentifyParametersProperties = {
     val __obj = js.Dynamic.literal()
-    if (dpi != null) __obj.updateDynamic("dpi")(dpi.asInstanceOf[js.Any])
+    if (!js.isUndefined(dpi)) __obj.updateDynamic("dpi")(dpi.get.asInstanceOf[js.Any])
     if (geometry != null) __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
-    if (geometryPrecision != null) __obj.updateDynamic("geometryPrecision")(geometryPrecision.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(geometryPrecision)) __obj.updateDynamic("geometryPrecision")(geometryPrecision.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (layerIds != null) __obj.updateDynamic("layerIds")(layerIds.asInstanceOf[js.Any])
     if (layerOption != null) __obj.updateDynamic("layerOption")(layerOption.asInstanceOf[js.Any])
     if (mapExtent != null) __obj.updateDynamic("mapExtent")(mapExtent.asInstanceOf[js.Any])
-    if (maxAllowableOffset != null) __obj.updateDynamic("maxAllowableOffset")(maxAllowableOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnFieldName)) __obj.updateDynamic("returnFieldName")(returnFieldName.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnGeometry)) __obj.updateDynamic("returnGeometry")(returnGeometry.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnM)) __obj.updateDynamic("returnM")(returnM.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnUnformattedValues)) __obj.updateDynamic("returnUnformattedValues")(returnUnformattedValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnZ)) __obj.updateDynamic("returnZ")(returnZ.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAllowableOffset)) __obj.updateDynamic("maxAllowableOffset")(maxAllowableOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnFieldName)) __obj.updateDynamic("returnFieldName")(returnFieldName.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnGeometry)) __obj.updateDynamic("returnGeometry")(returnGeometry.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnM)) __obj.updateDynamic("returnM")(returnM.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnUnformattedValues)) __obj.updateDynamic("returnUnformattedValues")(returnUnformattedValues.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnZ)) __obj.updateDynamic("returnZ")(returnZ.get.asInstanceOf[js.Any])
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
-    if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(tolerance)) __obj.updateDynamic("tolerance")(tolerance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentifyParametersProperties]
   }
 }

@@ -5,10 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CKEDITOR.plugins.widget.widgetselection")
-@js.native
-class widgetselection () extends js.Object {
-  def addFillers(editable: editable): Boolean = js.native
-  def removeFillers(editable: editable): Unit = js.native
+trait widgetselection extends js.Object {
+  def addFillers(editable: editable): Boolean
+  def removeFillers(editable: editable): Unit
+}
+
+object widgetselection {
+  @scala.inline
+  def apply(addFillers: editable => Boolean, removeFillers: editable => Unit): widgetselection = {
+    val __obj = js.Dynamic.literal(addFillers = js.Any.fromFunction1(addFillers), removeFillers = js.Any.fromFunction1(removeFillers))
+    __obj.asInstanceOf[widgetselection]
+  }
 }
 

@@ -31,9 +31,9 @@ object IComputedValueOptions {
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (equals != null) __obj.updateDynamic("equals")(js.Any.fromFunction2(equals))
     if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction0(get))
-    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(requiresReaction)) __obj.updateDynamic("requiresReaction")(requiresReaction.asInstanceOf[js.Any])
+    if (!js.isUndefined(requiresReaction)) __obj.updateDynamic("requiresReaction")(requiresReaction.get.asInstanceOf[js.Any])
     if (set != null) __obj.updateDynamic("set")(js.Any.fromFunction1(set))
     __obj.asInstanceOf[IComputedValueOptions[T]]
   }

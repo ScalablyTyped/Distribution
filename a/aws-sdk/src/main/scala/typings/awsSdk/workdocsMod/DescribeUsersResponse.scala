@@ -24,12 +24,12 @@ object DescribeUsersResponse {
   @scala.inline
   def apply(
     Marker: PageMarkerType = null,
-    TotalNumberOfUsers: Int | Double = null,
+    TotalNumberOfUsers: js.UndefOr[SizeType] = js.undefined,
     Users: OrganizationUserList = null
   ): DescribeUsersResponse = {
     val __obj = js.Dynamic.literal()
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (TotalNumberOfUsers != null) __obj.updateDynamic("TotalNumberOfUsers")(TotalNumberOfUsers.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalNumberOfUsers)) __obj.updateDynamic("TotalNumberOfUsers")(TotalNumberOfUsers.get.asInstanceOf[js.Any])
     if (Users != null) __obj.updateDynamic("Users")(Users.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeUsersResponse]
   }

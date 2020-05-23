@@ -59,26 +59,26 @@ object JQueryTinyCarouselOptions {
     axis: String = null,
     callback: (/* element */ HTMLElement, /* index */ Double) => Unit = null,
     controls: js.UndefOr[Boolean] = js.undefined,
-    display: Int | Double = null,
-    duration: Int | Double = null,
+    display: js.UndefOr[Double] = js.undefined,
+    duration: js.UndefOr[Double] = js.undefined,
     interval: js.UndefOr[Boolean] = js.undefined,
-    intervaltime: Int | Double = null,
+    intervaltime: js.UndefOr[Double] = js.undefined,
     pager: js.UndefOr[Boolean] = js.undefined,
     rewind: js.UndefOr[Boolean] = js.undefined,
-    start: Int | Double = null
+    start: js.UndefOr[Double] = js.undefined
   ): JQueryTinyCarouselOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
     if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
-    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (intervaltime != null) __obj.updateDynamic("intervaltime")(intervaltime.asInstanceOf[js.Any])
-    if (!js.isUndefined(pager)) __obj.updateDynamic("pager")(pager.asInstanceOf[js.Any])
-    if (!js.isUndefined(rewind)) __obj.updateDynamic("rewind")(rewind.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(intervaltime)) __obj.updateDynamic("intervaltime")(intervaltime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pager)) __obj.updateDynamic("pager")(pager.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rewind)) __obj.updateDynamic("rewind")(rewind.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryTinyCarouselOptions]
   }
 }

@@ -75,18 +75,18 @@ object MapNavigationOptions {
     enableMouseWheelZoom: js.UndefOr[Boolean] = js.undefined,
     enableTouchZoom: js.UndefOr[Boolean] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
-    mouseWheelSensitivity: Int | Double = null
+    mouseWheelSensitivity: js.UndefOr[Double] = js.undefined
   ): MapNavigationOptions = {
     val __obj = js.Dynamic.literal()
     if (buttonOptions != null) __obj.updateDynamic("buttonOptions")(buttonOptions.asInstanceOf[js.Any])
     if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableButtons)) __obj.updateDynamic("enableButtons")(enableButtons.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableDoubleClickZoom)) __obj.updateDynamic("enableDoubleClickZoom")(enableDoubleClickZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableDoubleClickZoomTo)) __obj.updateDynamic("enableDoubleClickZoomTo")(enableDoubleClickZoomTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableMouseWheelZoom)) __obj.updateDynamic("enableMouseWheelZoom")(enableMouseWheelZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTouchZoom)) __obj.updateDynamic("enableTouchZoom")(enableTouchZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (mouseWheelSensitivity != null) __obj.updateDynamic("mouseWheelSensitivity")(mouseWheelSensitivity.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableButtons)) __obj.updateDynamic("enableButtons")(enableButtons.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableDoubleClickZoom)) __obj.updateDynamic("enableDoubleClickZoom")(enableDoubleClickZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableDoubleClickZoomTo)) __obj.updateDynamic("enableDoubleClickZoomTo")(enableDoubleClickZoomTo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableMouseWheelZoom)) __obj.updateDynamic("enableMouseWheelZoom")(enableMouseWheelZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTouchZoom)) __obj.updateDynamic("enableTouchZoom")(enableTouchZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mouseWheelSensitivity)) __obj.updateDynamic("mouseWheelSensitivity")(mouseWheelSensitivity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapNavigationOptions]
   }
 }

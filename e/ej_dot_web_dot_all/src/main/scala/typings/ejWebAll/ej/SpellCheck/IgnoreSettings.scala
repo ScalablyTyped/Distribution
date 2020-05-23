@@ -43,11 +43,11 @@ object IgnoreSettings {
   ): IgnoreSettings = {
     val __obj = js.Dynamic.literal()
     if (ignoreAlphaNumericWords != null) __obj.updateDynamic("ignoreAlphaNumericWords")(ignoreAlphaNumericWords.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreEmailAddress)) __obj.updateDynamic("ignoreEmailAddress")(ignoreEmailAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreFileNames)) __obj.updateDynamic("ignoreFileNames")(ignoreFileNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreMixedCaseWords)) __obj.updateDynamic("ignoreMixedCaseWords")(ignoreMixedCaseWords.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUpperCase)) __obj.updateDynamic("ignoreUpperCase")(ignoreUpperCase.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUrl)) __obj.updateDynamic("ignoreUrl")(ignoreUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreEmailAddress)) __obj.updateDynamic("ignoreEmailAddress")(ignoreEmailAddress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreFileNames)) __obj.updateDynamic("ignoreFileNames")(ignoreFileNames.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreMixedCaseWords)) __obj.updateDynamic("ignoreMixedCaseWords")(ignoreMixedCaseWords.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUpperCase)) __obj.updateDynamic("ignoreUpperCase")(ignoreUpperCase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUrl)) __obj.updateDynamic("ignoreUrl")(ignoreUrl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgnoreSettings]
   }
 }

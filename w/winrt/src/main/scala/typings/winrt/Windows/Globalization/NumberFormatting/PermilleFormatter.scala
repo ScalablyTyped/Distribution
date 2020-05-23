@@ -1,50 +1,38 @@
 package typings.winrt.Windows.Globalization.NumberFormatting
 
-import typings.winrt.Windows.Foundation.Collections.IIterable
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Globalization.NumberFormatting.PermilleFormatter")
-@js.native
-class PermilleFormatter ()
+trait PermilleFormatter
   extends INumberFormatterOptions
      with INumberFormatter
      with INumberFormatter2
-     with INumberParser {
-  def this(languages: IIterable[String], geographicRegion: String) = this()
-  /* CompleteClass */
-  override var fractionDigits: Double = js.native
-  /* CompleteClass */
-  override var geographicRegion: String = js.native
-  /* CompleteClass */
-  override var integerDigits: Double = js.native
-  /* CompleteClass */
-  override var isDecimalPointAlwaysDisplayed: Boolean = js.native
-  /* CompleteClass */
-  override var isGrouped: Boolean = js.native
-  /* CompleteClass */
-  override var languages: IVectorView[String] = js.native
-  /* CompleteClass */
-  override var numeralSystem: String = js.native
-  /* CompleteClass */
-  override var resolvedGeographicRegion: String = js.native
-  /* CompleteClass */
-  override var resolvedLanguage: String = js.native
-  /* CompleteClass */
-  override def format(value: Double): String = js.native
-  /* CompleteClass */
-  override def formatDouble(value: Double): String = js.native
-  /* CompleteClass */
-  override def formatInt(value: Double): String = js.native
-  /* CompleteClass */
-  override def formatUInt(value: Double): String = js.native
-  /* CompleteClass */
-  override def parseDouble(text: String): Double = js.native
-  /* CompleteClass */
-  override def parseInt(text: String): Double = js.native
-  /* CompleteClass */
-  override def parseUInt(text: String): Double = js.native
+     with INumberParser
+
+object PermilleFormatter {
+  @scala.inline
+  def apply(
+    format: Double => String,
+    formatDouble: Double => String,
+    formatInt: Double => String,
+    formatUInt: Double => String,
+    fractionDigits: Double,
+    geographicRegion: String,
+    integerDigits: Double,
+    isDecimalPointAlwaysDisplayed: Boolean,
+    isGrouped: Boolean,
+    languages: IVectorView[String],
+    numeralSystem: String,
+    parseDouble: String => Double,
+    parseInt: String => Double,
+    parseUInt: String => Double,
+    resolvedGeographicRegion: String,
+    resolvedLanguage: String
+  ): PermilleFormatter = {
+    val __obj = js.Dynamic.literal(format = js.Any.fromFunction1(format), formatDouble = js.Any.fromFunction1(formatDouble), formatInt = js.Any.fromFunction1(formatInt), formatUInt = js.Any.fromFunction1(formatUInt), fractionDigits = fractionDigits.asInstanceOf[js.Any], geographicRegion = geographicRegion.asInstanceOf[js.Any], integerDigits = integerDigits.asInstanceOf[js.Any], isDecimalPointAlwaysDisplayed = isDecimalPointAlwaysDisplayed.asInstanceOf[js.Any], isGrouped = isGrouped.asInstanceOf[js.Any], languages = languages.asInstanceOf[js.Any], numeralSystem = numeralSystem.asInstanceOf[js.Any], parseDouble = js.Any.fromFunction1(parseDouble), parseInt = js.Any.fromFunction1(parseInt), parseUInt = js.Any.fromFunction1(parseUInt), resolvedGeographicRegion = resolvedGeographicRegion.asInstanceOf[js.Any], resolvedLanguage = resolvedLanguage.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PermilleFormatter]
+  }
 }
 

@@ -1,11 +1,11 @@
 package typings.antDesignReactNative.defaultTabBarMod
 
-import typings.antDesignReactNative.AnonActiveTab
-import typings.antDesignReactNative.AnonTab
+import typings.antDesignReactNative.anon.ActiveTab
+import typings.antDesignReactNative.anon.Tab
 import typings.antDesignReactNative.libStyleMod.Theme
 import typings.antDesignReactNative.tabsPropsTypeMod.TabData
 import typings.react.mod.Component
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.ScrollView
 import scala.scalajs.js
@@ -28,7 +28,7 @@ class DefaultTabBar protected ()
   def onContainerLayout(e: LayoutChangeEvent): Unit = js.native
   def onPress(index: Double): Unit = js.native
   def onTabContainerLayout(e: LayoutChangeEvent): Unit = js.native
-  def renderTab(tab: TabData, index: Double, width: Double, onLayoutHandler: js.Any, styles: AnonTab, theme: Theme): Element = js.native
+  def renderTab(tab: TabData, index: Double, width: Double, onLayoutHandler: js.Any, styles: Tab, theme: Theme): Element = js.native
   def updateTabPanel(position: Double, pageOffset: Double): Unit = js.native
   def updateTabUnderline(position: Double, pageOffset: Double, tabCount: Double): Unit = js.native
   def updateView(offset: js.Any): Unit = js.native
@@ -38,6 +38,6 @@ class DefaultTabBar protected ()
 @JSImport("@ant-design/react-native/lib/tabs/DefaultTabBar", "DefaultTabBar")
 @js.native
 object DefaultTabBar extends js.Object {
-  var defaultProps: AnonActiveTab = js.native
+  var defaultProps: ActiveTab = js.native
 }
 

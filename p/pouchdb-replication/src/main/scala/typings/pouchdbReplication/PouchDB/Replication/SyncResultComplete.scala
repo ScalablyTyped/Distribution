@@ -11,7 +11,7 @@ trait SyncResultComplete[Content /* <: js.Object */] extends js.Object {
 
 object SyncResultComplete {
   @scala.inline
-  def apply[Content /* <: js.Object */](pull: ReplicationResultComplete[Content] = null, push: ReplicationResultComplete[Content] = null): SyncResultComplete[Content] = {
+  def apply[Content](pull: ReplicationResultComplete[Content] = null, push: ReplicationResultComplete[Content] = null): SyncResultComplete[Content] = {
     val __obj = js.Dynamic.literal()
     if (pull != null) __obj.updateDynamic("pull")(pull.asInstanceOf[js.Any])
     if (push != null) __obj.updateDynamic("push")(push.asInstanceOf[js.Any])

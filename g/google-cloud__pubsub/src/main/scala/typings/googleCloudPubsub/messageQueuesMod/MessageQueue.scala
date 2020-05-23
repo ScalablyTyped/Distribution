@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 abstract class MessageQueue protected () extends js.Object {
   def this(sub: Subscriber) = this()
   def this(sub: Subscriber, options: BatchOptions) = this()
+  var _onDrain: js.UndefOr[DeferredPromise[Unit]] = js.native
   var _onFlush: js.UndefOr[DeferredPromise[Unit]] = js.native
   var _options: BatchOptions = js.native
   var _requests: QueuedMessages = js.native
@@ -25,6 +26,7 @@ abstract class MessageQueue protected () extends js.Object {
     * @private
     */
   val maxMilliseconds: Double = js.native
+  var numInFlightRequests: Double = js.native
   var numPendingRequests: Double = js.native
   /* protected */ def _sendBatch(batch: QueuedMessages): js.Promise[Unit] = js.native
   /**
@@ -41,6 +43,10 @@ abstract class MessageQueue protected () extends js.Object {
     * @private
     */
   def flush(): js.Promise[Unit] = js.native
+  /**
+    * Returns a promise that resolves when all in-flight messages have settled.
+    */
+  def onDrain(): js.Promise[Unit] = js.native
   /**
     * Returns a promise that resolves after the next flush occurs.
     *

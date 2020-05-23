@@ -1,20 +1,21 @@
 package typings.reactTransitionGroup.transitionMod
 
-import typings.reactTransitionGroup.AnonAppear
+import typings.react.mod.Ref
+import typings.reactTransitionGroup.anon.Appear
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TimeoutProps
-  extends BaseTransitionProps
-     with TransitionProps {
+trait TimeoutProps[RefElement /* <: js.UndefOr[HTMLElement] */]
+  extends BaseTransitionProps[RefElement]
+     with TransitionProps[RefElement] {
   /**
     * Add a custom transition end trigger. Called with the transitioning DOM
     * node and a done callback. Allows for more fine grained transition end
     * logic. Note: Timeouts are still used as a fallback if provided.
     */
-  var addEndListener: js.UndefOr[EndHandler] = js.undefined
+  var addEndListener: js.UndefOr[EndHandler[RefElement]] = js.undefined
   /**
     * The duration of the transition, in milliseconds. Required unless addEndListener is provided.
     *
@@ -34,38 +35,40 @@ trait TimeoutProps
     * - enter defaults to `0`
     * - exit defaults to `0`
     */
-  var timeout: Double | AnonAppear
+  var timeout: Double | Appear
 }
 
 object TimeoutProps {
   @scala.inline
-  def apply(
-    timeout: Double | AnonAppear,
-    addEndListener: (/* node */ HTMLElement, /* done */ js.Function0[Unit]) => Unit = null,
+  def apply[RefElement](
+    timeout: Double | Appear,
+    addEndListener: EndHandler[RefElement] = null,
     children: TransitionChildren = null,
     in: js.UndefOr[Boolean] = js.undefined,
     mountOnEnter: js.UndefOr[Boolean] = js.undefined,
-    onEnter: (/* node */ HTMLElement, /* isAppearing */ Boolean) => Unit = null,
-    onEntered: (/* node */ HTMLElement, /* isAppearing */ Boolean) => Unit = null,
-    onEntering: (/* node */ HTMLElement, /* isAppearing */ Boolean) => Unit = null,
-    onExit: /* node */ HTMLElement => Unit = null,
-    onExited: /* node */ HTMLElement => Unit = null,
-    onExiting: /* node */ HTMLElement => Unit = null,
+    nodeRef: js.UndefOr[Null | Ref[RefElement]] = js.undefined,
+    onEnter: EnterHandler[RefElement] = null,
+    onEntered: EnterHandler[RefElement] = null,
+    onEntering: EnterHandler[RefElement] = null,
+    onExit: ExitHandler[RefElement] = null,
+    onExited: ExitHandler[RefElement] = null,
+    onExiting: ExitHandler[RefElement] = null,
     unmountOnExit: js.UndefOr[Boolean] = js.undefined
-  ): TimeoutProps = {
+  ): TimeoutProps[RefElement] = {
     val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
-    if (addEndListener != null) __obj.updateDynamic("addEndListener")(js.Any.fromFunction2(addEndListener))
+    if (addEndListener != null) __obj.updateDynamic("addEndListener")(addEndListener.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(in)) __obj.updateDynamic("in")(in.asInstanceOf[js.Any])
-    if (!js.isUndefined(mountOnEnter)) __obj.updateDynamic("mountOnEnter")(mountOnEnter.asInstanceOf[js.Any])
-    if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction2(onEnter))
-    if (onEntered != null) __obj.updateDynamic("onEntered")(js.Any.fromFunction2(onEntered))
-    if (onEntering != null) __obj.updateDynamic("onEntering")(js.Any.fromFunction2(onEntering))
-    if (onExit != null) __obj.updateDynamic("onExit")(js.Any.fromFunction1(onExit))
-    if (onExited != null) __obj.updateDynamic("onExited")(js.Any.fromFunction1(onExited))
-    if (onExiting != null) __obj.updateDynamic("onExiting")(js.Any.fromFunction1(onExiting))
-    if (!js.isUndefined(unmountOnExit)) __obj.updateDynamic("unmountOnExit")(unmountOnExit.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TimeoutProps]
+    if (!js.isUndefined(in)) __obj.updateDynamic("in")(in.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mountOnEnter)) __obj.updateDynamic("mountOnEnter")(mountOnEnter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeRef)) __obj.updateDynamic("nodeRef")(nodeRef.asInstanceOf[js.Any])
+    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter.asInstanceOf[js.Any])
+    if (onEntered != null) __obj.updateDynamic("onEntered")(onEntered.asInstanceOf[js.Any])
+    if (onEntering != null) __obj.updateDynamic("onEntering")(onEntering.asInstanceOf[js.Any])
+    if (onExit != null) __obj.updateDynamic("onExit")(onExit.asInstanceOf[js.Any])
+    if (onExited != null) __obj.updateDynamic("onExited")(onExited.asInstanceOf[js.Any])
+    if (onExiting != null) __obj.updateDynamic("onExiting")(onExiting.asInstanceOf[js.Any])
+    if (!js.isUndefined(unmountOnExit)) __obj.updateDynamic("unmountOnExit")(unmountOnExit.get.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TimeoutProps[RefElement]]
   }
 }
 

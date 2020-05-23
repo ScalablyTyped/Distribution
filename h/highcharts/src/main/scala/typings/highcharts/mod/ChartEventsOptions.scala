@@ -1,6 +1,6 @@
 package typings.highcharts.mod
 
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -119,8 +119,8 @@ object ChartEventsOptions {
   @scala.inline
   def apply(
     addSeries: ChartAddSeriesCallbackFunction = null,
-    afterPrint: (/* chart */ Chart_, /* event */ Event_) => Unit = null,
-    beforePrint: (/* chart */ Chart_, /* event */ Event_) => Unit = null,
+    afterPrint: (/* chart */ Chart_, /* event */ Event) => Unit = null,
+    beforePrint: (/* chart */ Chart_, /* event */ Event) => Unit = null,
     click: ChartClickCallbackFunction = null,
     drilldown: DrilldownCallbackFunction = null,
     drillup: DrillupCallbackFunction = null,

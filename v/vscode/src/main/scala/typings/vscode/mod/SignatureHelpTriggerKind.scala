@@ -12,20 +12,20 @@ sealed trait SignatureHelpTriggerKind extends js.Object
 @js.native
 object SignatureHelpTriggerKind extends js.Object {
   /**
-  		 * Signature help was triggered by the cursor moving or by the document content changing.
-  		 */
+    * Signature help was triggered by the cursor moving or by the document content changing.
+    */
   @js.native
   sealed trait ContentChange extends SignatureHelpTriggerKind
   
   /**
-  		 * Signature help was invoked manually by the user or by a command.
-  		 */
+    * Signature help was invoked manually by the user or by a command.
+    */
   @js.native
   sealed trait Invoke extends SignatureHelpTriggerKind
   
   /**
-  		 * Signature help was triggered by a trigger character.
-  		 */
+    * Signature help was triggered by a trigger character.
+    */
   @js.native
   sealed trait TriggerCharacter extends SignatureHelpTriggerKind
   

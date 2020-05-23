@@ -62,7 +62,7 @@ trait TransactionParams
 object TransactionParams {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     p: String = null,
     ta: String = null,
     ti: String = null,

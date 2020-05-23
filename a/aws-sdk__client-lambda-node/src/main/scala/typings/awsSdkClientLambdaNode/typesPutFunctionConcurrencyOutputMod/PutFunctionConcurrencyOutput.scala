@@ -20,9 +20,9 @@ trait PutFunctionConcurrencyOutput extends OutputTypesUnion {
 
 object PutFunctionConcurrencyOutput {
   @scala.inline
-  def apply($metadata: ResponseMetadata, ReservedConcurrentExecutions: Int | Double = null): PutFunctionConcurrencyOutput = {
+  def apply($metadata: ResponseMetadata, ReservedConcurrentExecutions: js.UndefOr[Double] = js.undefined): PutFunctionConcurrencyOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
-    if (ReservedConcurrentExecutions != null) __obj.updateDynamic("ReservedConcurrentExecutions")(ReservedConcurrentExecutions.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReservedConcurrentExecutions)) __obj.updateDynamic("ReservedConcurrentExecutions")(ReservedConcurrentExecutions.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutFunctionConcurrencyOutput]
   }
 }

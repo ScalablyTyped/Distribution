@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.CurrentData")
 @js.native
-class CurrentData protected () extends js.Object {
+trait CurrentData extends js.Object {
   @JSName("Access.CurrentData_typekey")
   var AccessDotCurrentData_typekey: CurrentData = js.native
   @JSName("AllDatabaseDiagrams")

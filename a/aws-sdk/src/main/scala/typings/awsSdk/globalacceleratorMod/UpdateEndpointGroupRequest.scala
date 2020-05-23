@@ -45,21 +45,21 @@ object UpdateEndpointGroupRequest {
   def apply(
     EndpointGroupArn: GenericString,
     EndpointConfigurations: EndpointConfigurations = null,
-    HealthCheckIntervalSeconds: Int | Double = null,
+    HealthCheckIntervalSeconds: js.UndefOr[HealthCheckIntervalSeconds] = js.undefined,
     HealthCheckPath: GenericString = null,
-    HealthCheckPort: Int | Double = null,
+    HealthCheckPort: js.UndefOr[HealthCheckPort] = js.undefined,
     HealthCheckProtocol: HealthCheckProtocol = null,
-    ThresholdCount: Int | Double = null,
-    TrafficDialPercentage: Int | Double = null
+    ThresholdCount: js.UndefOr[ThresholdCount] = js.undefined,
+    TrafficDialPercentage: js.UndefOr[TrafficDialPercentage] = js.undefined
   ): UpdateEndpointGroupRequest = {
     val __obj = js.Dynamic.literal(EndpointGroupArn = EndpointGroupArn.asInstanceOf[js.Any])
     if (EndpointConfigurations != null) __obj.updateDynamic("EndpointConfigurations")(EndpointConfigurations.asInstanceOf[js.Any])
-    if (HealthCheckIntervalSeconds != null) __obj.updateDynamic("HealthCheckIntervalSeconds")(HealthCheckIntervalSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(HealthCheckIntervalSeconds)) __obj.updateDynamic("HealthCheckIntervalSeconds")(HealthCheckIntervalSeconds.get.asInstanceOf[js.Any])
     if (HealthCheckPath != null) __obj.updateDynamic("HealthCheckPath")(HealthCheckPath.asInstanceOf[js.Any])
-    if (HealthCheckPort != null) __obj.updateDynamic("HealthCheckPort")(HealthCheckPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(HealthCheckPort)) __obj.updateDynamic("HealthCheckPort")(HealthCheckPort.get.asInstanceOf[js.Any])
     if (HealthCheckProtocol != null) __obj.updateDynamic("HealthCheckProtocol")(HealthCheckProtocol.asInstanceOf[js.Any])
-    if (ThresholdCount != null) __obj.updateDynamic("ThresholdCount")(ThresholdCount.asInstanceOf[js.Any])
-    if (TrafficDialPercentage != null) __obj.updateDynamic("TrafficDialPercentage")(TrafficDialPercentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(ThresholdCount)) __obj.updateDynamic("ThresholdCount")(ThresholdCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TrafficDialPercentage)) __obj.updateDynamic("TrafficDialPercentage")(TrafficDialPercentage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEndpointGroupRequest]
   }
 }

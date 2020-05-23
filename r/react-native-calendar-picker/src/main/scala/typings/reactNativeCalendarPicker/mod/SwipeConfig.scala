@@ -11,10 +11,13 @@ trait SwipeConfig extends js.Object {
 
 object SwipeConfig {
   @scala.inline
-  def apply(directionalOffsetThreshold: Int | Double = null, velocityThreshold: Int | Double = null): SwipeConfig = {
+  def apply(
+    directionalOffsetThreshold: js.UndefOr[Double] = js.undefined,
+    velocityThreshold: js.UndefOr[Double] = js.undefined
+  ): SwipeConfig = {
     val __obj = js.Dynamic.literal()
-    if (directionalOffsetThreshold != null) __obj.updateDynamic("directionalOffsetThreshold")(directionalOffsetThreshold.asInstanceOf[js.Any])
-    if (velocityThreshold != null) __obj.updateDynamic("velocityThreshold")(velocityThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(directionalOffsetThreshold)) __obj.updateDynamic("directionalOffsetThreshold")(directionalOffsetThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(velocityThreshold)) __obj.updateDynamic("velocityThreshold")(velocityThreshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwipeConfig]
   }
 }

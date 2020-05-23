@@ -1,6 +1,7 @@
 package typings.openfin
 
 import typings.node.eventsMod.EventEmitter
+import typings.openfin.anon.SubscriberAdded
 import typings.openfin.baseMod.Base
 import typings.openfin.identityMod.Identity
 import typings.openfin.transportMod.Message
@@ -25,7 +26,7 @@ object interappbusMod extends js.Object {
     var Channel: typings.openfin.interappbusChannelMod.Channel = js.native
     var emitSubscriverEvent: js.Any = js.native
     var emitter: EventEmitter = js.native
-    var events: AnonSubscriberAdded = js.native
+    var events: SubscriberAdded = js.native
     var on: js.Any = js.native
     var processMessage: js.Any = js.native
     var refCounter: js.Any = js.native

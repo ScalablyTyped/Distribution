@@ -45,11 +45,11 @@ object BackupDetails {
     BackupStatus: BackupStatus,
     BackupType: BackupType,
     BackupExpiryDateTime: Date = null,
-    BackupSizeBytes: Int | scala.Double = null
+    BackupSizeBytes: js.UndefOr[BackupSizeBytes] = js.undefined
   ): BackupDetails = {
     val __obj = js.Dynamic.literal(BackupArn = BackupArn.asInstanceOf[js.Any], BackupCreationDateTime = BackupCreationDateTime.asInstanceOf[js.Any], BackupName = BackupName.asInstanceOf[js.Any], BackupStatus = BackupStatus.asInstanceOf[js.Any], BackupType = BackupType.asInstanceOf[js.Any])
     if (BackupExpiryDateTime != null) __obj.updateDynamic("BackupExpiryDateTime")(BackupExpiryDateTime.asInstanceOf[js.Any])
-    if (BackupSizeBytes != null) __obj.updateDynamic("BackupSizeBytes")(BackupSizeBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(BackupSizeBytes)) __obj.updateDynamic("BackupSizeBytes")(BackupSizeBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackupDetails]
   }
 }

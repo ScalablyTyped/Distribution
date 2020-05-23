@@ -1,6 +1,6 @@
 package typings.nivoBar.mod
 
-import typings.nivoBar.AnonId
+import typings.nivoBar.anon.Id
 import typings.nivoCore.mod.Theme
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
@@ -15,7 +15,7 @@ trait BarItemProps extends js.Object {
   var borderRadius: Double
   var borderWidth: Double
   var color: String
-  var data: AnonId
+  var data: Id
   var height: Double
   var label: String
   var labelColor: String
@@ -38,7 +38,7 @@ object BarItemProps {
     borderRadius: Double,
     borderWidth: Double,
     color: String,
-    data: AnonId,
+    data: Id,
     height: Double,
     hideTooltip: () => Unit,
     label: String,

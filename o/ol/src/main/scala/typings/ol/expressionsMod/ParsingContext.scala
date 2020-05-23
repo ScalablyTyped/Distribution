@@ -21,7 +21,7 @@ object ParsingContext {
     inFragmentShader: js.UndefOr[Boolean] = js.undefined
   ): ParsingContext = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], stringLiteralsMap = stringLiteralsMap.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
-    if (!js.isUndefined(inFragmentShader)) __obj.updateDynamic("inFragmentShader")(inFragmentShader.asInstanceOf[js.Any])
+    if (!js.isUndefined(inFragmentShader)) __obj.updateDynamic("inFragmentShader")(inFragmentShader.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsingContext]
   }
 }

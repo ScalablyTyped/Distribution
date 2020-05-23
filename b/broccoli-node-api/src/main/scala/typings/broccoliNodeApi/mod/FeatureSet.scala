@@ -15,16 +15,16 @@ trait FeatureSet
 object FeatureSet {
   @scala.inline
   def apply(
-    StringDictionary: /* feature */ StringDictionary[js.UndefOr[Boolean]] = null,
+    StringDictionary: /* integration */ StringDictionary[js.UndefOr[Boolean]] = null,
     needsCacheFlag: js.UndefOr[Boolean] = js.undefined,
     persistentOutputFlag: js.UndefOr[Boolean] = js.undefined,
     sourceDirectories: js.UndefOr[Boolean] = js.undefined
   ): FeatureSet = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(needsCacheFlag)) __obj.updateDynamic("needsCacheFlag")(needsCacheFlag.asInstanceOf[js.Any])
-    if (!js.isUndefined(persistentOutputFlag)) __obj.updateDynamic("persistentOutputFlag")(persistentOutputFlag.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceDirectories)) __obj.updateDynamic("sourceDirectories")(sourceDirectories.asInstanceOf[js.Any])
+    if (!js.isUndefined(needsCacheFlag)) __obj.updateDynamic("needsCacheFlag")(needsCacheFlag.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistentOutputFlag)) __obj.updateDynamic("persistentOutputFlag")(persistentOutputFlag.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceDirectories)) __obj.updateDynamic("sourceDirectories")(sourceDirectories.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureSet]
   }
 }

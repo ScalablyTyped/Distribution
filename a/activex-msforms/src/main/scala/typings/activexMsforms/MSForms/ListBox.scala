@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSForms.ListBox")
 @js.native
-class ListBox protected () extends js.Object {
+trait ListBox extends js.Object {
   var BackColor: Double = js.native
   var BorderColor: Double = js.native
   var BorderStyle: fmBorderStyle = js.native

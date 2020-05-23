@@ -16,7 +16,7 @@ object ILinear {
   @scala.inline
   def apply(
     Defines: js.Any = null,
-    The: Int | Double = null,
+    The: js.UndefOr[Double] = js.undefined,
     alias: Array = null,
     alternateClassName: js.Any = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
@@ -39,7 +39,7 @@ object ILinear {
   ): ILinear = {
     val __obj = js.Dynamic.literal()
     if (Defines != null) __obj.updateDynamic("Defines")(Defines.asInstanceOf[js.Any])
-    if (The != null) __obj.updateDynamic("The")(The.asInstanceOf[js.Any])
+    if (!js.isUndefined(The)) __obj.updateDynamic("The")(The.get.asInstanceOf[js.Any])
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
@@ -56,7 +56,7 @@ object ILinear {
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILinear]

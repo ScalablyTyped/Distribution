@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Definition of interface Folder version 3 */
-@JSGlobal("Shell32.Folder3")
 @js.native
-class Folder3 protected () extends js.Object {
+trait Folder3 extends js.Object {
   /** Get Application object */
   val Application: js.Any = js.native
   /** Should the WebView barricade be shown? */

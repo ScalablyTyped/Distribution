@@ -51,7 +51,7 @@ object MultiViewCalendarOptions {
     showViewHeader: js.UndefOr[Boolean] = js.undefined,
     start: String = null,
     value: Date = null,
-    views: Int | Double = null,
+    views: js.UndefOr[Double] = js.undefined,
     weekNumber: js.UndefOr[Boolean] = js.undefined
   ): MultiViewCalendarOptions = {
     val __obj = js.Dynamic.literal()
@@ -71,11 +71,11 @@ object MultiViewCalendarOptions {
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (selectDates != null) __obj.updateDynamic("selectDates")(selectDates.asInstanceOf[js.Any])
     if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (!js.isUndefined(showViewHeader)) __obj.updateDynamic("showViewHeader")(showViewHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(showViewHeader)) __obj.updateDynamic("showViewHeader")(showViewHeader.get.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (views != null) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])
-    if (!js.isUndefined(weekNumber)) __obj.updateDynamic("weekNumber")(weekNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(views)) __obj.updateDynamic("views")(views.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(weekNumber)) __obj.updateDynamic("weekNumber")(weekNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiViewCalendarOptions]
   }
 }

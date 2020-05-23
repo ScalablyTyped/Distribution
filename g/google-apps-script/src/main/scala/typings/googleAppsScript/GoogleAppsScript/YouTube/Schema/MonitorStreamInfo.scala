@@ -13,14 +13,14 @@ trait MonitorStreamInfo extends js.Object {
 object MonitorStreamInfo {
   @scala.inline
   def apply(
-    broadcastStreamDelayMs: Int | Double = null,
+    broadcastStreamDelayMs: js.UndefOr[Double] = js.undefined,
     embedHtml: String = null,
     enableMonitorStream: js.UndefOr[Boolean] = js.undefined
   ): MonitorStreamInfo = {
     val __obj = js.Dynamic.literal()
-    if (broadcastStreamDelayMs != null) __obj.updateDynamic("broadcastStreamDelayMs")(broadcastStreamDelayMs.asInstanceOf[js.Any])
+    if (!js.isUndefined(broadcastStreamDelayMs)) __obj.updateDynamic("broadcastStreamDelayMs")(broadcastStreamDelayMs.get.asInstanceOf[js.Any])
     if (embedHtml != null) __obj.updateDynamic("embedHtml")(embedHtml.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableMonitorStream)) __obj.updateDynamic("enableMonitorStream")(enableMonitorStream.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableMonitorStream)) __obj.updateDynamic("enableMonitorStream")(enableMonitorStream.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonitorStreamInfo]
   }
 }

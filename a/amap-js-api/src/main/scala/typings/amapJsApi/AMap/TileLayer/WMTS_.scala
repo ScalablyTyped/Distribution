@@ -5,14 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.TileLayer.WMTS")
 @js.native
-class WMTS_ protected () extends Flexible {
-  /**
-    * WMTS图层
-    * @param options 图层选项
-    */
-  def this(options: typings.amapJsApi.AMap.TileLayer.WMTS.Options) = this()
+trait WMTS_
+  extends typings.amapJsApi.AMap.TileLayer {
   /**
     * 返回OGC标准的WMTS getTile接口的参数
     */

@@ -65,7 +65,7 @@ object GraphqlApi {
     tags: TagMap = null,
     uris: MapOfStringToString = null,
     userPoolConfig: UserPoolConfig = null,
-    xrayEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    xrayEnabled: js.UndefOr[Boolean] = js.undefined
   ): GraphqlApi = {
     val __obj = js.Dynamic.literal()
     if (additionalAuthenticationProviders != null) __obj.updateDynamic("additionalAuthenticationProviders")(additionalAuthenticationProviders.asInstanceOf[js.Any])
@@ -78,7 +78,7 @@ object GraphqlApi {
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (uris != null) __obj.updateDynamic("uris")(uris.asInstanceOf[js.Any])
     if (userPoolConfig != null) __obj.updateDynamic("userPoolConfig")(userPoolConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(xrayEnabled)) __obj.updateDynamic("xrayEnabled")(xrayEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(xrayEnabled)) __obj.updateDynamic("xrayEnabled")(xrayEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphqlApi]
   }
 }

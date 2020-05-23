@@ -18,12 +18,12 @@ object AdamaxOptimizerConfig {
     beta1: Double,
     beta2: Double,
     learning_rate: Double,
-    decay: Int | Double = null,
-    epsilon: Int | Double = null
+    decay: js.UndefOr[Double] = js.undefined,
+    epsilon: js.UndefOr[Double] = js.undefined
   ): AdamaxOptimizerConfig = {
     val __obj = js.Dynamic.literal(beta1 = beta1.asInstanceOf[js.Any], beta2 = beta2.asInstanceOf[js.Any], learning_rate = learning_rate.asInstanceOf[js.Any])
-    if (decay != null) __obj.updateDynamic("decay")(decay.asInstanceOf[js.Any])
-    if (epsilon != null) __obj.updateDynamic("epsilon")(epsilon.asInstanceOf[js.Any])
+    if (!js.isUndefined(decay)) __obj.updateDynamic("decay")(decay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(epsilon)) __obj.updateDynamic("epsilon")(epsilon.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdamaxOptimizerConfig]
   }
 }

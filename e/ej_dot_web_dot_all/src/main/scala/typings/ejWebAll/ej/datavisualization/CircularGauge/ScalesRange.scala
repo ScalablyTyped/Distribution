@@ -60,30 +60,30 @@ object ScalesRange {
   def apply(
     backgroundColor: String = null,
     border: ScalesRangesBorder = null,
-    distanceFromScale: Int | Double = null,
-    endValue: Int | Double = null,
-    endWidth: Int | Double = null,
+    distanceFromScale: js.UndefOr[Double] = js.undefined,
+    endValue: js.UndefOr[Double] = js.undefined,
+    endWidth: js.UndefOr[Double] = js.undefined,
     gradients: js.Any = null,
     legendText: String = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     placement: Placement | String = null,
-    size: Int | Double = null,
-    startValue: Int | Double = null,
-    startWidth: Int | Double = null
+    size: js.UndefOr[Double] = js.undefined,
+    startValue: js.UndefOr[Double] = js.undefined,
+    startWidth: js.UndefOr[Double] = js.undefined
   ): ScalesRange = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (distanceFromScale != null) __obj.updateDynamic("distanceFromScale")(distanceFromScale.asInstanceOf[js.Any])
-    if (endValue != null) __obj.updateDynamic("endValue")(endValue.asInstanceOf[js.Any])
-    if (endWidth != null) __obj.updateDynamic("endWidth")(endWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(distanceFromScale)) __obj.updateDynamic("distanceFromScale")(distanceFromScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(endValue)) __obj.updateDynamic("endValue")(endValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(endWidth)) __obj.updateDynamic("endWidth")(endWidth.get.asInstanceOf[js.Any])
     if (gradients != null) __obj.updateDynamic("gradients")(gradients.asInstanceOf[js.Any])
     if (legendText != null) __obj.updateDynamic("legendText")(legendText.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (startValue != null) __obj.updateDynamic("startValue")(startValue.asInstanceOf[js.Any])
-    if (startWidth != null) __obj.updateDynamic("startWidth")(startWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startValue)) __obj.updateDynamic("startValue")(startValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startWidth)) __obj.updateDynamic("startWidth")(startWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalesRange]
   }
 }

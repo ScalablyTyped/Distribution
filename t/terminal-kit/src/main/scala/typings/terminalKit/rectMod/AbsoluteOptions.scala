@@ -13,10 +13,15 @@ trait AbsoluteOptions extends Options {
 
 object AbsoluteOptions {
   @scala.inline
-  def apply(height: Double, width: Double, x: Int | Double = null, y: Int | Double = null): AbsoluteOptions = {
+  def apply(
+    height: Double,
+    width: Double,
+    x: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined
+  ): AbsoluteOptions = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbsoluteOptions]
   }
 }

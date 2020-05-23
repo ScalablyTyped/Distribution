@@ -51,23 +51,23 @@ object TotpVerifyOptions {
     secret: String,
     token: String,
     algorithm: Algorithm = null,
-    counter: Int | Double = null,
-    digits: Int | Double = null,
+    counter: js.UndefOr[Double] = js.undefined,
+    digits: js.UndefOr[Double] = js.undefined,
     encoding: Encoding = null,
-    epoch: Int | Double = null,
-    step: Int | Double = null,
-    time: Int | Double = null,
-    window: Int | Double = null
+    epoch: js.UndefOr[Double] = js.undefined,
+    step: js.UndefOr[Double] = js.undefined,
+    time: js.UndefOr[Double] = js.undefined,
+    window: js.UndefOr[Double] = js.undefined
   ): TotpVerifyOptions = {
     val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
-    if (counter != null) __obj.updateDynamic("counter")(counter.asInstanceOf[js.Any])
-    if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
+    if (!js.isUndefined(counter)) __obj.updateDynamic("counter")(counter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(digits)) __obj.updateDynamic("digits")(digits.get.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (epoch != null) __obj.updateDynamic("epoch")(epoch.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
-    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
+    if (!js.isUndefined(epoch)) __obj.updateDynamic("epoch")(epoch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(time)) __obj.updateDynamic("time")(time.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(window)) __obj.updateDynamic("window")(window.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TotpVerifyOptions]
   }
 }

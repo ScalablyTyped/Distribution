@@ -31,18 +31,18 @@ trait OrderCancelOptions extends js.Object {
 object OrderCancelOptions {
   @scala.inline
   def apply(
-    amount: Int | Double = null,
+    amount: js.UndefOr[Double] = js.undefined,
     email: js.UndefOr[Boolean] = js.undefined,
     reason: OrderCancelReason = null,
     refund: js.Any = null,
     restock: js.UndefOr[Boolean] = js.undefined
   ): OrderCancelOptions = {
     val __obj = js.Dynamic.literal()
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (!js.isUndefined(email)) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(email)) __obj.updateDynamic("email")(email.get.asInstanceOf[js.Any])
     if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     if (refund != null) __obj.updateDynamic("refund")(refund.asInstanceOf[js.Any])
-    if (!js.isUndefined(restock)) __obj.updateDynamic("restock")(restock.asInstanceOf[js.Any])
+    if (!js.isUndefined(restock)) __obj.updateDynamic("restock")(restock.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderCancelOptions]
   }
 }

@@ -21,11 +21,10 @@ object BrowserDetails {
   def apply(
     browser: (`Not a browserDot`) | (`Not a supported browserDot`) | firefox | chrome | safari | edge,
     supportsUnifiedPlan: js.UndefOr[Boolean] = js.undefined,
-    version: Int | Double = null
+    version: Double = null.asInstanceOf[Double]
   ): BrowserDetails = {
-    val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsUnifiedPlan)) __obj.updateDynamic("supportsUnifiedPlan")(supportsUnifiedPlan.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsUnifiedPlan)) __obj.updateDynamic("supportsUnifiedPlan")(supportsUnifiedPlan.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrowserDetails]
   }
 }

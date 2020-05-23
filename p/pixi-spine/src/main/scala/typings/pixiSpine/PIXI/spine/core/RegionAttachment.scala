@@ -4,72 +4,51 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PIXI.spine.core.RegionAttachment")
-@js.native
-class RegionAttachment protected () extends Attachment {
-  def this(name: String) = this()
-  var color: Color = js.native
-  var height: Double = js.native
-  var offset: ArrayLike[Double] = js.native
-  var path: String = js.native
-  var region: TextureRegion = js.native
-  var rendererObject: js.Any = js.native
-  var rotation: Double = js.native
-  var scaleX: Double = js.native
-  var scaleY: Double = js.native
-  var tempColor: Color = js.native
-  var uvs: ArrayLike[Double] = js.native
-  var width: Double = js.native
-  var x: Double = js.native
-  var y: Double = js.native
-  def computeWorldVertices(bone: Bone, worldVertices: ArrayLike[Double], offset: Double, stride: Double): Unit = js.native
-  def setRegion(region: TextureRegion): Unit = js.native
-  def updateOffset(): Unit = js.native
+trait RegionAttachment extends Attachment {
+  var color: Color
+  var height: Double
+  var offset: ArrayLike[Double]
+  var path: String
+  var region: TextureRegion
+  var rendererObject: js.Any
+  var rotation: Double
+  var scaleX: Double
+  var scaleY: Double
+  var tempColor: Color
+  var uvs: ArrayLike[Double]
+  var width: Double
+  var x: Double
+  var y: Double
+  def computeWorldVertices(bone: Bone, worldVertices: ArrayLike[Double], offset: Double, stride: Double): Unit
+  def setRegion(region: TextureRegion): Unit
+  def updateOffset(): Unit
 }
 
-/* static members */
-@JSGlobal("PIXI.spine.core.RegionAttachment")
-@js.native
-object RegionAttachment extends js.Object {
-  var C1A: Double = js.native
-  var C1B: Double = js.native
-  var C1G: Double = js.native
-  var C1R: Double = js.native
-  var C2A: Double = js.native
-  var C2B: Double = js.native
-  var C2G: Double = js.native
-  var C2R: Double = js.native
-  var C3A: Double = js.native
-  var C3B: Double = js.native
-  var C3G: Double = js.native
-  var C3R: Double = js.native
-  var C4A: Double = js.native
-  var C4B: Double = js.native
-  var C4G: Double = js.native
-  var C4R: Double = js.native
-  var OX1: Double = js.native
-  var OX2: Double = js.native
-  var OX3: Double = js.native
-  var OX4: Double = js.native
-  var OY1: Double = js.native
-  var OY2: Double = js.native
-  var OY3: Double = js.native
-  var OY4: Double = js.native
-  var U1: Double = js.native
-  var U2: Double = js.native
-  var U3: Double = js.native
-  var U4: Double = js.native
-  var V1: Double = js.native
-  var V2: Double = js.native
-  var V3: Double = js.native
-  var V4: Double = js.native
-  var X1: Double = js.native
-  var X2: Double = js.native
-  var X3: Double = js.native
-  var X4: Double = js.native
-  var Y1: Double = js.native
-  var Y2: Double = js.native
-  var Y3: Double = js.native
-  var Y4: Double = js.native
+object RegionAttachment {
+  @scala.inline
+  def apply(
+    color: Color,
+    computeWorldVertices: (Bone, ArrayLike[Double], Double, Double) => Unit,
+    copy: () => Attachment,
+    height: Double,
+    name: String,
+    offset: ArrayLike[Double],
+    path: String,
+    region: TextureRegion,
+    rendererObject: js.Any,
+    rotation: Double,
+    scaleX: Double,
+    scaleY: Double,
+    setRegion: TextureRegion => Unit,
+    tempColor: Color,
+    updateOffset: () => Unit,
+    uvs: ArrayLike[Double],
+    width: Double,
+    x: Double,
+    y: Double
+  ): RegionAttachment = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], computeWorldVertices = js.Any.fromFunction4(computeWorldVertices), copy = js.Any.fromFunction0(copy), height = height.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], rendererObject = rendererObject.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scaleX = scaleX.asInstanceOf[js.Any], scaleY = scaleY.asInstanceOf[js.Any], setRegion = js.Any.fromFunction1(setRegion), tempColor = tempColor.asInstanceOf[js.Any], updateOffset = js.Any.fromFunction0(updateOffset), uvs = uvs.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RegionAttachment]
+  }
 }
 

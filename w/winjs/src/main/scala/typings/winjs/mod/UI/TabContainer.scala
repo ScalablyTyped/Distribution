@@ -21,6 +21,25 @@ class TabContainer protected ()
     **/
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: js.Any) = this()
+  //#endregion Methods
+  //#region Properties
+  /**
+    * Gets or sets the child DOM element that receives tab focus.
+    **/
+  /* CompleteClass */
+  override var childFocus: HTMLElement = js.native
+  /**
+    * Gets or sets the tab index of this container.
+    **/
+  /* CompleteClass */
+  override var tabIndex: Double = js.native
+  //#endregion Constructors
+  //#region Methods
+  /**
+    * Releases resources held by this TabContainer. Call this method when the TabContainer is no longer needed. After calling this method, the TabContainer becomes unusable.
+    **/
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
 }
 
 /* static members */

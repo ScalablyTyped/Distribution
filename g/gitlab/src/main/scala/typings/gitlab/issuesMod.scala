@@ -1,5 +1,7 @@
 package typings.gitlab
 
+import typings.gitlab.anon.GroupId
+import typings.gitlab.anon.ProjectId
 import typings.gitlab.infrastructureMod.BaseService
 import typings.gitlab.requestHelperMod.BaseRequestOptions
 import typings.gitlab.requestHelperMod.GetResponse
@@ -23,7 +25,7 @@ object issuesMod extends js.Object {
     def addTimeEstimate(projectId: Double, issueId: Double, duration: String): js.Promise[js.Object] = js.native
     def addTimeEstimate(projectId: Double, issueId: Double, duration: String, options: Sudo): js.Promise[js.Object] = js.native
     def all(): js.Promise[GetResponse] = js.native
-    def all(hasProjectIdGroupIdOptions: (AnonProjectId | AnonGroupId | js.Object) with PaginatedRequestOptions): js.Promise[GetResponse] = js.native
+    def all(hasProjectIdGroupIdOptions: (ProjectId | GroupId | js.Object) with PaginatedRequestOptions): js.Promise[GetResponse] = js.native
     def create(projectId: String): js.Promise[js.Object] = js.native
     def create(projectId: String, options: BaseRequestOptions): js.Promise[js.Object] = js.native
     def create(projectId: Double): js.Promise[js.Object] = js.native

@@ -19,16 +19,16 @@ trait IListEntityTypesRequest extends js.Object {
 object IListEntityTypesRequest {
   @scala.inline
   def apply(
-    languageCode: String = null,
-    pageSize: Int | Double = null,
-    pageToken: String = null,
-    parent: String = null
+    languageCode: js.UndefOr[Null | String] = js.undefined,
+    pageSize: js.UndefOr[Null | Double] = js.undefined,
+    pageToken: js.UndefOr[Null | String] = js.undefined,
+    parent: js.UndefOr[Null | String] = js.undefined
   ): IListEntityTypesRequest = {
     val __obj = js.Dynamic.literal()
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(languageCode)) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageToken)) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListEntityTypesRequest]
   }
 }

@@ -1,7 +1,7 @@
 package typings.storybookComponents.tabsMod
 
 import typings.react.mod.ReactNode
-import typings.storybookComponents.AnonOnSelect
+import typings.storybookComponents.anon.OnSelect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TabsProps extends js.Object {
   var absolute: js.UndefOr[Boolean] = js.native
-  var actions: js.UndefOr[AnonOnSelect] = js.native
+  var actions: js.UndefOr[OnSelect] = js.native
   var backgroundColor: js.UndefOr[String] = js.native
   var bordered: js.UndefOr[Boolean] = js.native
   var id: js.UndefOr[String] = js.native
@@ -21,7 +21,7 @@ object TabsProps {
   @scala.inline
   def apply(
     absolute: js.UndefOr[Boolean] = js.undefined,
-    actions: AnonOnSelect = null,
+    actions: OnSelect = null,
     backgroundColor: String = null,
     bordered: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
@@ -29,10 +29,10 @@ object TabsProps {
     tools: ReactNode = null
   ): TabsProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(absolute)) __obj.updateDynamic("absolute")(absolute.asInstanceOf[js.Any])
+    if (!js.isUndefined(absolute)) __obj.updateDynamic("absolute")(absolute.get.asInstanceOf[js.Any])
     if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.asInstanceOf[js.Any])
+    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     if (tools != null) __obj.updateDynamic("tools")(tools.asInstanceOf[js.Any])

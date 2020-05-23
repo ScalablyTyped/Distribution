@@ -15,7 +15,7 @@ object ExecuteCommandOptions {
   @scala.inline
   def apply(commands: js.Array[String], workDoneProgress: js.UndefOr[Boolean] = js.undefined): ExecuteCommandOptions = {
     val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any])
-    if (!js.isUndefined(workDoneProgress)) __obj.updateDynamic("workDoneProgress")(workDoneProgress.asInstanceOf[js.Any])
+    if (!js.isUndefined(workDoneProgress)) __obj.updateDynamic("workDoneProgress")(workDoneProgress.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteCommandOptions]
   }
 }

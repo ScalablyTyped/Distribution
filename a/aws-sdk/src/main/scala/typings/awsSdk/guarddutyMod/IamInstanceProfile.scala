@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IamInstanceProfile extends js.Object {
   /**
-    * AWS EC2 instance profile ARN.
+    * The profile ARN of the EC2 instance.
     */
   var Arn: js.UndefOr[String] = js.native
   /**
-    * AWS EC2 instance profile ID.
+    * The profile ID of the EC2 instance.
     */
   var Id: js.UndefOr[String] = js.native
 }

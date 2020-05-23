@@ -32,7 +32,7 @@ object BeforeBatchDeleteEventArgs {
     primaryKey: js.Any = null,
     row: js.Any = null,
     rowData: js.Any = null,
-    rowIndex: Int | Double = null,
+    rowIndex: js.UndefOr[Double] = js.undefined,
     `type`: String = null
   ): BeforeBatchDeleteEventArgs = {
     val __obj = js.Dynamic.literal()
@@ -40,7 +40,7 @@ object BeforeBatchDeleteEventArgs {
     if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey.asInstanceOf[js.Any])
     if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
     if (rowData != null) __obj.updateDynamic("rowData")(rowData.asInstanceOf[js.Any])
-    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeforeBatchDeleteEventArgs]
   }

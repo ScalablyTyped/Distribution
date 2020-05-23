@@ -315,7 +315,7 @@ package object lightsailMod {
     - typings.awsSdk.awsSdkStrings.Kilobytes
     - typings.awsSdk.awsSdkStrings.Megabytes
     - typings.awsSdk.awsSdkStrings.Gigabytes
-    - typings.awsSdk.awsSdkStrings.Terabytes
+    - typings.awsSdk.awsSdkStrings.Terabytes_
     - typings.awsSdk.awsSdkStrings.Bits_
     - typings.awsSdk.awsSdkStrings.Kilobits
     - typings.awsSdk.awsSdkStrings.Megabits
@@ -342,6 +342,7 @@ package object lightsailMod {
     - typings.awsSdk.awsSdkStrings.tcp_
     - typings.awsSdk.awsSdkStrings.all__
     - typings.awsSdk.awsSdkStrings.udp_
+    - typings.awsSdk.awsSdkStrings.icmp
     - java.lang.String
   */
   type NetworkProtocol = typings.awsSdk.lightsailMod._NetworkProtocol | java.lang.String

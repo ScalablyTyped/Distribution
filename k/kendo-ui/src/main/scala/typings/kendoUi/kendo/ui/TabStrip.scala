@@ -8,11 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.TabStrip")
 @js.native
-class TabStrip protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: TabStripOptions) = this()
+trait TabStrip extends Widget {
   var dataSource: DataSource = js.native
   @JSName("options")
   var options_TabStrip: TabStripOptions = js.native
@@ -70,13 +67,5 @@ class TabStrip protected () extends Widget {
   def select(element: Element): Unit = js.native
   def setDataSource(dataSource: js.Any): Unit = js.native
   def setDataSource(dataSource: DataSource): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.TabStrip")
-@js.native
-object TabStrip extends js.Object {
-  var fn: TabStrip = js.native
-  def extend(proto: js.Object): TabStrip = js.native
 }
 

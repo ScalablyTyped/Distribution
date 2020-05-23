@@ -4,11 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.ICanvasTextMetrics")
-@js.native
-class ICanvasTextMetrics protected () extends js.Object {
+trait ICanvasTextMetrics extends js.Object {
   @JSName("MSHTML.ICanvasTextMetrics_typekey")
-  var MSHTMLDotICanvasTextMetrics_typekey: ICanvasTextMetrics = js.native
-  val width: Double = js.native
+  var MSHTMLDotICanvasTextMetrics_typekey: ICanvasTextMetrics
+  val width: Double
+}
+
+object ICanvasTextMetrics {
+  @scala.inline
+  def apply(MSHTMLDotICanvasTextMetrics_typekey: ICanvasTextMetrics, width: Double): ICanvasTextMetrics = {
+    val __obj = js.Dynamic.literal(width = width.asInstanceOf[js.Any])
+    __obj.updateDynamic("MSHTML.ICanvasTextMetrics_typekey")(MSHTMLDotICanvasTextMetrics_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ICanvasTextMetrics]
+  }
 }
 

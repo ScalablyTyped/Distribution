@@ -21,7 +21,7 @@ object GetPolyfillStringOptions {
     val __obj = js.Dynamic.literal(uaString = uaString.asInstanceOf[js.Any])
     if (excludes != null) __obj.updateDynamic("excludes")(excludes.asInstanceOf[js.Any])
     if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
-    if (!js.isUndefined(minify)) __obj.updateDynamic("minify")(minify.asInstanceOf[js.Any])
+    if (!js.isUndefined(minify)) __obj.updateDynamic("minify")(minify.get.asInstanceOf[js.Any])
     if (unknown != null) __obj.updateDynamic("unknown")(unknown.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPolyfillStringOptions]
   }

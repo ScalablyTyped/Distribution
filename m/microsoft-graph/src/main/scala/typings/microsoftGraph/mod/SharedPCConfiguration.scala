@@ -59,18 +59,18 @@ object SharedPCConfiguration {
     displayName: String = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
-    idleTimeBeforeSleepInSeconds: Int | Double = null,
+    idleTimeBeforeSleepInSeconds: js.UndefOr[Double] = js.undefined,
     kioskAppDisplayName: String = null,
     kioskAppUserModelId: String = null,
     lastModifiedDateTime: String = null,
     maintenanceStartTime: String = null,
     userStatusOverview: DeviceConfigurationUserOverview = null,
     userStatuses: js.Array[DeviceConfigurationUserStatus] = null,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): SharedPCConfiguration = {
     val __obj = js.Dynamic.literal()
     if (accountManagerPolicy != null) __obj.updateDynamic("accountManagerPolicy")(accountManagerPolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowLocalStorage)) __obj.updateDynamic("allowLocalStorage")(allowLocalStorage.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowLocalStorage)) __obj.updateDynamic("allowLocalStorage")(allowLocalStorage.get.asInstanceOf[js.Any])
     if (allowedAccounts != null) __obj.updateDynamic("allowedAccounts")(allowedAccounts.asInstanceOf[js.Any])
     if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
     if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
@@ -78,21 +78,21 @@ object SharedPCConfiguration {
     if (deviceSettingStateSummaries != null) __obj.updateDynamic("deviceSettingStateSummaries")(deviceSettingStateSummaries.asInstanceOf[js.Any])
     if (deviceStatusOverview != null) __obj.updateDynamic("deviceStatusOverview")(deviceStatusOverview.asInstanceOf[js.Any])
     if (deviceStatuses != null) __obj.updateDynamic("deviceStatuses")(deviceStatuses.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableAccountManager)) __obj.updateDynamic("disableAccountManager")(disableAccountManager.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableEduPolicies)) __obj.updateDynamic("disableEduPolicies")(disableEduPolicies.asInstanceOf[js.Any])
-    if (!js.isUndefined(disablePowerPolicies)) __obj.updateDynamic("disablePowerPolicies")(disablePowerPolicies.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableSignInOnResume)) __obj.updateDynamic("disableSignInOnResume")(disableSignInOnResume.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableAccountManager)) __obj.updateDynamic("disableAccountManager")(disableAccountManager.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableEduPolicies)) __obj.updateDynamic("disableEduPolicies")(disableEduPolicies.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disablePowerPolicies)) __obj.updateDynamic("disablePowerPolicies")(disablePowerPolicies.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableSignInOnResume)) __obj.updateDynamic("disableSignInOnResume")(disableSignInOnResume.get.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (idleTimeBeforeSleepInSeconds != null) __obj.updateDynamic("idleTimeBeforeSleepInSeconds")(idleTimeBeforeSleepInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(idleTimeBeforeSleepInSeconds)) __obj.updateDynamic("idleTimeBeforeSleepInSeconds")(idleTimeBeforeSleepInSeconds.get.asInstanceOf[js.Any])
     if (kioskAppDisplayName != null) __obj.updateDynamic("kioskAppDisplayName")(kioskAppDisplayName.asInstanceOf[js.Any])
     if (kioskAppUserModelId != null) __obj.updateDynamic("kioskAppUserModelId")(kioskAppUserModelId.asInstanceOf[js.Any])
     if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
     if (maintenanceStartTime != null) __obj.updateDynamic("maintenanceStartTime")(maintenanceStartTime.asInstanceOf[js.Any])
     if (userStatusOverview != null) __obj.updateDynamic("userStatusOverview")(userStatusOverview.asInstanceOf[js.Any])
     if (userStatuses != null) __obj.updateDynamic("userStatuses")(userStatuses.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedPCConfiguration]
   }
 }

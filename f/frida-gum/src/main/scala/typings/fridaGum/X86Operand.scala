@@ -1,5 +1,6 @@
 package typings.fridaGum
 
+import typings.fridaGum.anon.Base
 import typings.fridaGum.fridaGumStrings.imm
 import typings.fridaGum.fridaGumStrings.mem
 import typings.fridaGum.fridaGumStrings.reg
@@ -22,13 +23,13 @@ object X86Operand {
     __obj.asInstanceOf[X86Operand]
   }
   @scala.inline
-  def X86ImmOperand(size: Double, `type`: imm, value: Double | Int64_): X86Operand = {
+  def X86ImmOperand(size: Double, `type`: imm, value: Double | Int64): X86Operand = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[X86Operand]
   }
   @scala.inline
-  def X86MemOperand(size: Double, `type`: mem, value: AnonBase): X86Operand = {
+  def X86MemOperand(size: Double, `type`: mem, value: Base): X86Operand = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[X86Operand]

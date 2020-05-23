@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.CustomConditionalFormatData
 import typings.officeJsPreview.Excel.Interfaces.CustomConditionalFormatLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.CustomConditionalFormatUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,22 +16,21 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.6]
   */
-@JSGlobal("Excel.CustomConditionalFormat")
 @js.native
-class CustomConditionalFormat () extends ClientObject {
+trait CustomConditionalFormat extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_CustomConditionalFormat: RequestContext = js.native
   /**
     *
-    * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
+    * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
     *
     * [Api set: ExcelApi 1.6]
     */
   val format: ConditionalRangeFormat = js.native
   /**
     *
-    * Represents the Rule object on this conditional format. Read-only.
+    * Specifies the Rule object on this conditional format.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -43,7 +42,7 @@ class CustomConditionalFormat () extends ClientObject {
     */
   def load(): CustomConditionalFormat = js.native
   def load(options: CustomConditionalFormatLoadOptions): CustomConditionalFormat = js.native
-  def load(propertyNamesAndPaths: AnonExpand): CustomConditionalFormat = js.native
+  def load(propertyNamesAndPaths: Expand): CustomConditionalFormat = js.native
   def load(propertyNames: String): CustomConditionalFormat = js.native
   def load(propertyNames: js.Array[String]): CustomConditionalFormat = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

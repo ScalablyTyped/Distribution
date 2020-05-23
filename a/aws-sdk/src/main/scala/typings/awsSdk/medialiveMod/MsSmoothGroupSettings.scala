@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MsSmoothGroupSettings extends js.Object {
   /**
-    * The value of the "Acquisition Point Identity" element used in each message placed in the sparse track.  Only enabled if sparseTrackType is not "none".
+    * The ID to include in each message in the sparse track. Ignored if sparseTrackType is NONE.
     */
   var AcquisitionPointId: js.UndefOr[string] = js.native
   /**
@@ -72,7 +72,10 @@ trait MsSmoothGroupSettings extends js.Object {
     */
   var SendDelayMs: js.UndefOr[integerMin0Max10000] = js.native
   /**
-    * If set to scte35, use incoming SCTE-35 messages to generate a sparse track in this group of MS-Smooth outputs.
+    * Identifies the type of data to place in the sparse track:
+  - SCTE35: Insert SCTE-35 messages from the source content. With each message, insert an IDR frame to start a new segment.
+  - SCTE35_WITHOUT_SEGMENTATION: Insert SCTE-35 messages from the source content. With each message, insert an IDR frame but don't start a new segment.
+  - NONE: Don't generate a sparse track for any outputs in this output group.
     */
   var SparseTrackType: js.UndefOr[SmoothGroupSparseTrackType] = js.native
   /**
@@ -98,17 +101,17 @@ object MsSmoothGroupSettings {
     AcquisitionPointId: string = null,
     AudioOnlyTimecodeControl: SmoothGroupAudioOnlyTimecodeControl = null,
     CertificateMode: SmoothGroupCertificateMode = null,
-    ConnectionRetryInterval: Int | Double = null,
+    ConnectionRetryInterval: js.UndefOr[integerMin0] = js.undefined,
     EventId: string = null,
     EventIdMode: SmoothGroupEventIdMode = null,
     EventStopBehavior: SmoothGroupEventStopBehavior = null,
-    FilecacheDuration: Int | Double = null,
-    FragmentLength: Int | Double = null,
+    FilecacheDuration: js.UndefOr[integerMin0] = js.undefined,
+    FragmentLength: js.UndefOr[integerMin1] = js.undefined,
     InputLossAction: InputLossActionForMsSmoothOut = null,
-    NumRetries: Int | Double = null,
-    RestartDelay: Int | Double = null,
+    NumRetries: js.UndefOr[integerMin0] = js.undefined,
+    RestartDelay: js.UndefOr[integerMin0] = js.undefined,
     SegmentationMode: SmoothGroupSegmentationMode = null,
-    SendDelayMs: Int | Double = null,
+    SendDelayMs: js.UndefOr[integerMin0Max10000] = js.undefined,
     SparseTrackType: SmoothGroupSparseTrackType = null,
     StreamManifestBehavior: SmoothGroupStreamManifestBehavior = null,
     TimestampOffset: string = null,
@@ -118,17 +121,17 @@ object MsSmoothGroupSettings {
     if (AcquisitionPointId != null) __obj.updateDynamic("AcquisitionPointId")(AcquisitionPointId.asInstanceOf[js.Any])
     if (AudioOnlyTimecodeControl != null) __obj.updateDynamic("AudioOnlyTimecodeControl")(AudioOnlyTimecodeControl.asInstanceOf[js.Any])
     if (CertificateMode != null) __obj.updateDynamic("CertificateMode")(CertificateMode.asInstanceOf[js.Any])
-    if (ConnectionRetryInterval != null) __obj.updateDynamic("ConnectionRetryInterval")(ConnectionRetryInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConnectionRetryInterval)) __obj.updateDynamic("ConnectionRetryInterval")(ConnectionRetryInterval.get.asInstanceOf[js.Any])
     if (EventId != null) __obj.updateDynamic("EventId")(EventId.asInstanceOf[js.Any])
     if (EventIdMode != null) __obj.updateDynamic("EventIdMode")(EventIdMode.asInstanceOf[js.Any])
     if (EventStopBehavior != null) __obj.updateDynamic("EventStopBehavior")(EventStopBehavior.asInstanceOf[js.Any])
-    if (FilecacheDuration != null) __obj.updateDynamic("FilecacheDuration")(FilecacheDuration.asInstanceOf[js.Any])
-    if (FragmentLength != null) __obj.updateDynamic("FragmentLength")(FragmentLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(FilecacheDuration)) __obj.updateDynamic("FilecacheDuration")(FilecacheDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(FragmentLength)) __obj.updateDynamic("FragmentLength")(FragmentLength.get.asInstanceOf[js.Any])
     if (InputLossAction != null) __obj.updateDynamic("InputLossAction")(InputLossAction.asInstanceOf[js.Any])
-    if (NumRetries != null) __obj.updateDynamic("NumRetries")(NumRetries.asInstanceOf[js.Any])
-    if (RestartDelay != null) __obj.updateDynamic("RestartDelay")(RestartDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumRetries)) __obj.updateDynamic("NumRetries")(NumRetries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RestartDelay)) __obj.updateDynamic("RestartDelay")(RestartDelay.get.asInstanceOf[js.Any])
     if (SegmentationMode != null) __obj.updateDynamic("SegmentationMode")(SegmentationMode.asInstanceOf[js.Any])
-    if (SendDelayMs != null) __obj.updateDynamic("SendDelayMs")(SendDelayMs.asInstanceOf[js.Any])
+    if (!js.isUndefined(SendDelayMs)) __obj.updateDynamic("SendDelayMs")(SendDelayMs.get.asInstanceOf[js.Any])
     if (SparseTrackType != null) __obj.updateDynamic("SparseTrackType")(SparseTrackType.asInstanceOf[js.Any])
     if (StreamManifestBehavior != null) __obj.updateDynamic("StreamManifestBehavior")(StreamManifestBehavior.asInstanceOf[js.Any])
     if (TimestampOffset != null) __obj.updateDynamic("TimestampOffset")(TimestampOffset.asInstanceOf[js.Any])

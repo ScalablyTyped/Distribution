@@ -1,6 +1,6 @@
 package typings.reactReconciler.mod
 
-import typings.reactReconciler.AnonStringRef
+import typings.reactReconciler.anon.StringRef
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -69,7 +69,7 @@ trait Fiber extends js.Object {
   var pendingProps: js.Any
   // The ref last used to attach this node.
   // I'll avoid adding an owner field for prod and model that as functions.
-  var ref: Null | ((js.Function1[/* handle */ js.Any, Unit]) with AnonStringRef) | RefObject
+  var ref: Null | ((js.Function1[/* handle */ js.Any, Unit]) with StringRef) | RefObject
   // Conceptual aliases
   // parent : Instance -> return The parent happens to be the same as the
   // return fiber since we've merged the fiber and instance.
@@ -122,12 +122,12 @@ object Fiber {
     stateNode: js.Any,
     tag: WorkTag,
     `type`: js.Any,
-    _debugID: Int | Double = null,
+    _debugID: js.UndefOr[Double] = js.undefined,
     _debugIsCurrentlyTiming: js.UndefOr[Boolean] = js.undefined,
-    _debugOwner: Fiber = null,
-    _debugSource: Source = null,
-    actualDuration: Int | Double = null,
-    actualStartTime: Int | Double = null,
+    _debugOwner: js.UndefOr[Null | Fiber] = js.undefined,
+    _debugSource: js.UndefOr[Null | Source] = js.undefined,
+    actualDuration: js.UndefOr[Double] = js.undefined,
+    actualStartTime: js.UndefOr[Double] = js.undefined,
     alternate: Fiber = null,
     child: Fiber = null,
     firstContextDependency: ContextDependency[_] = null,
@@ -135,34 +135,24 @@ object Fiber {
     key: String = null,
     lastEffect: Fiber = null,
     nextEffect: Fiber = null,
-    ref: ((js.Function1[/* handle */ js.Any, Unit]) with AnonStringRef) | RefObject = null,
+    ref: ((js.Function1[/* handle */ js.Any, Unit]) with StringRef) | RefObject = null,
     `return`: Fiber = null,
-    selfBaseDuration: Int | Double = null,
+    selfBaseDuration: js.UndefOr[Double] = js.undefined,
     sibling: Fiber = null,
-    treeBaseDuration: Int | Double = null,
+    treeBaseDuration: js.UndefOr[Double] = js.undefined,
     updateQueue: UpdateQueue[_] = null
   ): Fiber = {
-    val __obj = js.Dynamic.literal(childExpirationTime = childExpirationTime.asInstanceOf[js.Any], effectTag = effectTag.asInstanceOf[js.Any], elementType = elementType.asInstanceOf[js.Any], expirationTime = expirationTime.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], memoizedProps = memoizedProps.asInstanceOf[js.Any], memoizedState = memoizedState.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], pendingProps = pendingProps.asInstanceOf[js.Any], stateNode = stateNode.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(childExpirationTime = childExpirationTime.asInstanceOf[js.Any], effectTag = effectTag.asInstanceOf[js.Any], elementType = elementType.asInstanceOf[js.Any], expirationTime = expirationTime.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], memoizedProps = memoizedProps.asInstanceOf[js.Any], memoizedState = memoizedState.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], pendingProps = pendingProps.asInstanceOf[js.Any], stateNode = stateNode.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], alternate = alternate.asInstanceOf[js.Any], child = child.asInstanceOf[js.Any], firstContextDependency = firstContextDependency.asInstanceOf[js.Any], firstEffect = firstEffect.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], lastEffect = lastEffect.asInstanceOf[js.Any], nextEffect = nextEffect.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], sibling = sibling.asInstanceOf[js.Any], updateQueue = updateQueue.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (_debugID != null) __obj.updateDynamic("_debugID")(_debugID.asInstanceOf[js.Any])
-    if (!js.isUndefined(_debugIsCurrentlyTiming)) __obj.updateDynamic("_debugIsCurrentlyTiming")(_debugIsCurrentlyTiming.asInstanceOf[js.Any])
-    if (_debugOwner != null) __obj.updateDynamic("_debugOwner")(_debugOwner.asInstanceOf[js.Any])
-    if (_debugSource != null) __obj.updateDynamic("_debugSource")(_debugSource.asInstanceOf[js.Any])
-    if (actualDuration != null) __obj.updateDynamic("actualDuration")(actualDuration.asInstanceOf[js.Any])
-    if (actualStartTime != null) __obj.updateDynamic("actualStartTime")(actualStartTime.asInstanceOf[js.Any])
-    if (alternate != null) __obj.updateDynamic("alternate")(alternate.asInstanceOf[js.Any])
-    if (child != null) __obj.updateDynamic("child")(child.asInstanceOf[js.Any])
-    if (firstContextDependency != null) __obj.updateDynamic("firstContextDependency")(firstContextDependency.asInstanceOf[js.Any])
-    if (firstEffect != null) __obj.updateDynamic("firstEffect")(firstEffect.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (lastEffect != null) __obj.updateDynamic("lastEffect")(lastEffect.asInstanceOf[js.Any])
-    if (nextEffect != null) __obj.updateDynamic("nextEffect")(nextEffect.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (`return` != null) __obj.updateDynamic("return")(`return`.asInstanceOf[js.Any])
-    if (selfBaseDuration != null) __obj.updateDynamic("selfBaseDuration")(selfBaseDuration.asInstanceOf[js.Any])
-    if (sibling != null) __obj.updateDynamic("sibling")(sibling.asInstanceOf[js.Any])
-    if (treeBaseDuration != null) __obj.updateDynamic("treeBaseDuration")(treeBaseDuration.asInstanceOf[js.Any])
-    if (updateQueue != null) __obj.updateDynamic("updateQueue")(updateQueue.asInstanceOf[js.Any])
+    if (!js.isUndefined(_debugID)) __obj.updateDynamic("_debugID")(_debugID.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(_debugIsCurrentlyTiming)) __obj.updateDynamic("_debugIsCurrentlyTiming")(_debugIsCurrentlyTiming.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(_debugOwner)) __obj.updateDynamic("_debugOwner")(_debugOwner.asInstanceOf[js.Any])
+    if (!js.isUndefined(_debugSource)) __obj.updateDynamic("_debugSource")(_debugSource.asInstanceOf[js.Any])
+    if (!js.isUndefined(actualDuration)) __obj.updateDynamic("actualDuration")(actualDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(actualStartTime)) __obj.updateDynamic("actualStartTime")(actualStartTime.get.asInstanceOf[js.Any])
+    __obj.updateDynamic("return")(`return`.asInstanceOf[js.Any])
+    if (!js.isUndefined(selfBaseDuration)) __obj.updateDynamic("selfBaseDuration")(selfBaseDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(treeBaseDuration)) __obj.updateDynamic("treeBaseDuration")(treeBaseDuration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fiber]
   }
 }

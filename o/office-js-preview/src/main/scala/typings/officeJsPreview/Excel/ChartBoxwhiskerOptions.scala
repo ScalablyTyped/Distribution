@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.ChartBoxwhiskerOptionsData
 import typings.officeJsPreview.Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.Exclusive
 import typings.officeJsPreview.officeJsPreviewStrings.Inclusive
 import scala.scalajs.js
@@ -18,43 +18,42 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
-@JSGlobal("Excel.ChartBoxwhiskerOptions")
 @js.native
-class ChartBoxwhiskerOptions () extends ClientObject {
+trait ChartBoxwhiskerOptions extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_ChartBoxwhiskerOptions: RequestContext = js.native
   /**
     *
-    * Returns or sets the quartile calculation type of a box and whisker chart. Read/Write.
+    * Specifies if the quartile calculation type of a box and whisker chart.
     *
     * [Api set: ExcelApi 1.9]
     */
   var quartileCalculation: ChartBoxQuartileCalculation | Inclusive | Exclusive = js.native
   /**
     *
-    * Specifies whether or not the inner points are shown in a box and whisker chart. Read/Write.
+    * Specifies if inner points are shown in a box and whisker chart.
     *
     * [Api set: ExcelApi 1.9]
     */
   var showInnerPoints: Boolean = js.native
   /**
     *
-    * Specifies whether or not the mean line is shown in a box and whisker chart. Read/Write.
+    * Specifies if the mean line is shown in a box and whisker chart.
     *
     * [Api set: ExcelApi 1.9]
     */
   var showMeanLine: Boolean = js.native
   /**
     *
-    * Specifies whether or not the mean marker is shown in a box and whisker chart. Read/Write.
+    * Specifies if the mean marker is shown in a box and whisker chart.
     *
     * [Api set: ExcelApi 1.9]
     */
   var showMeanMarker: Boolean = js.native
   /**
     *
-    * Specifies whether or not outlier points are shown in a box and whisker chart. Read/Write.
+    * Specifies if outlier points are shown in a box and whisker chart.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -66,7 +65,7 @@ class ChartBoxwhiskerOptions () extends ClientObject {
     */
   def load(): ChartBoxwhiskerOptions = js.native
   def load(options: ChartBoxwhiskerOptionsLoadOptions): ChartBoxwhiskerOptions = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ChartBoxwhiskerOptions = js.native
+  def load(propertyNamesAndPaths: Expand): ChartBoxwhiskerOptions = js.native
   def load(propertyNames: String): ChartBoxwhiskerOptions = js.native
   def load(propertyNames: js.Array[String]): ChartBoxwhiskerOptions = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

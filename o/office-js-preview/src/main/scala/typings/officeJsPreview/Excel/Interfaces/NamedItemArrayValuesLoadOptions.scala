@@ -40,9 +40,9 @@ object NamedItemArrayValuesLoadOptions {
     values: js.UndefOr[Boolean] = js.undefined
   ): NamedItemArrayValuesLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(types)) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
-    if (!js.isUndefined(values)) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(types)) __obj.updateDynamic("types")(types.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(values)) __obj.updateDynamic("values")(values.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamedItemArrayValuesLoadOptions]
   }
 }

@@ -135,14 +135,14 @@ object VisionPrescriptionDispense {
     _power: Element = null,
     _prism: Element = null,
     _sphere: Element = null,
-    add: Int | Double = null,
-    axis: Int | Double = null,
-    backCurve: Int | Double = null,
+    add: js.UndefOr[decimal] = js.undefined,
+    axis: js.UndefOr[integer] = js.undefined,
+    backCurve: js.UndefOr[decimal] = js.undefined,
     base: code = null,
     brand: String = null,
     color: String = null,
-    cylinder: Int | Double = null,
-    diameter: Int | Double = null,
+    cylinder: js.UndefOr[decimal] = js.undefined,
+    diameter: js.UndefOr[decimal] = js.undefined,
     duration: Quantity = null,
     extension: js.Array[Extension] = null,
     eye: code = null,
@@ -150,10 +150,10 @@ object VisionPrescriptionDispense {
     id: String = null,
     modifierExtension: js.Array[Extension] = null,
     note: js.Array[Annotation] = null,
-    power: Int | Double = null,
-    prism: Int | Double = null,
+    power: js.UndefOr[decimal] = js.undefined,
+    prism: js.UndefOr[decimal] = js.undefined,
     product: CodeableConcept = null,
-    sphere: Int | Double = null
+    sphere: js.UndefOr[decimal] = js.undefined
   ): VisionPrescriptionDispense = {
     val __obj = js.Dynamic.literal()
     if (_add != null) __obj.updateDynamic("_add")(_add.asInstanceOf[js.Any])
@@ -170,14 +170,14 @@ object VisionPrescriptionDispense {
     if (_power != null) __obj.updateDynamic("_power")(_power.asInstanceOf[js.Any])
     if (_prism != null) __obj.updateDynamic("_prism")(_prism.asInstanceOf[js.Any])
     if (_sphere != null) __obj.updateDynamic("_sphere")(_sphere.asInstanceOf[js.Any])
-    if (add != null) __obj.updateDynamic("add")(add.asInstanceOf[js.Any])
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (backCurve != null) __obj.updateDynamic("backCurve")(backCurve.asInstanceOf[js.Any])
+    if (!js.isUndefined(add)) __obj.updateDynamic("add")(add.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(axis)) __obj.updateDynamic("axis")(axis.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(backCurve)) __obj.updateDynamic("backCurve")(backCurve.get.asInstanceOf[js.Any])
     if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
     if (brand != null) __obj.updateDynamic("brand")(brand.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (cylinder != null) __obj.updateDynamic("cylinder")(cylinder.asInstanceOf[js.Any])
-    if (diameter != null) __obj.updateDynamic("diameter")(diameter.asInstanceOf[js.Any])
+    if (!js.isUndefined(cylinder)) __obj.updateDynamic("cylinder")(cylinder.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(diameter)) __obj.updateDynamic("diameter")(diameter.get.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (eye != null) __obj.updateDynamic("eye")(eye.asInstanceOf[js.Any])
@@ -185,10 +185,10 @@ object VisionPrescriptionDispense {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
-    if (power != null) __obj.updateDynamic("power")(power.asInstanceOf[js.Any])
-    if (prism != null) __obj.updateDynamic("prism")(prism.asInstanceOf[js.Any])
+    if (!js.isUndefined(power)) __obj.updateDynamic("power")(power.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(prism)) __obj.updateDynamic("prism")(prism.get.asInstanceOf[js.Any])
     if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
-    if (sphere != null) __obj.updateDynamic("sphere")(sphere.asInstanceOf[js.Any])
+    if (!js.isUndefined(sphere)) __obj.updateDynamic("sphere")(sphere.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VisionPrescriptionDispense]
   }
 }

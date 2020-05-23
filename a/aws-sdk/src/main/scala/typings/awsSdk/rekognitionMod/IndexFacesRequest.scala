@@ -39,13 +39,13 @@ object IndexFacesRequest {
     Image: Image,
     DetectionAttributes: Attributes = null,
     ExternalImageId: ExternalImageId = null,
-    MaxFaces: Int | Double = null,
+    MaxFaces: js.UndefOr[MaxFacesToIndex] = js.undefined,
     QualityFilter: QualityFilter = null
   ): IndexFacesRequest = {
     val __obj = js.Dynamic.literal(CollectionId = CollectionId.asInstanceOf[js.Any], Image = Image.asInstanceOf[js.Any])
     if (DetectionAttributes != null) __obj.updateDynamic("DetectionAttributes")(DetectionAttributes.asInstanceOf[js.Any])
     if (ExternalImageId != null) __obj.updateDynamic("ExternalImageId")(ExternalImageId.asInstanceOf[js.Any])
-    if (MaxFaces != null) __obj.updateDynamic("MaxFaces")(MaxFaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxFaces)) __obj.updateDynamic("MaxFaces")(MaxFaces.get.asInstanceOf[js.Any])
     if (QualityFilter != null) __obj.updateDynamic("QualityFilter")(QualityFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexFacesRequest]
   }

@@ -10,9 +10,9 @@ trait ITip
   /** [Config Option] (String) */
   var align: js.UndefOr[String] = js.undefined
   /** [Method] Used to create the text that appears in the Tip s body
-  		* @param thumb Ext.slider.Thumb The Thumb that the Tip is attached to
-  		* @returns String The text to display in the tip
-  		*/
+    * @param thumb Ext.slider.Thumb The Thumb that the Tip is attached to
+    * @returns String The text to display in the tip
+    */
   var getText: js.UndefOr[js.Function1[/* thumb */ js.UndefOr[IThumb], String]] = js.undefined
   /** [Config Option] (Array) */
   var offsets: js.UndefOr[Array] = js.undefined

@@ -1,8 +1,8 @@
 package typings.oracleOraclejet.ojdiagramMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.AnonIconAnonShape
-import typings.oracleOraclejet.AnonOpacity
+import typings.oracleOraclejet.anon.IconShape
+import typings.oracleOraclejet.anon.Opacity
 import typings.oracleOraclejet.oracleOraclejetStrings.auto
 import typings.oracleOraclejet.oracleOraclejetStrings.connected
 import typings.oracleOraclejet.oracleOraclejetStrings.disjoint
@@ -18,10 +18,10 @@ trait ojDiagramNodeSettablePropertiesLenient
   extends /* key */ StringDictionary[js.Any] {
   var categories: js.UndefOr[js.Array[String]] = js.undefined
   var descendantsConnectivity: js.UndefOr[connected | disjoint | unknown] = js.undefined
-  var icon: js.UndefOr[AnonOpacity] = js.undefined
+  var icon: js.UndefOr[Opacity] = js.undefined
   var label: js.UndefOr[String] = js.undefined
   var labelStyle: js.UndefOr[js.Object] = js.undefined
-  var overview: js.UndefOr[AnonIconAnonShape] = js.undefined
+  var overview: js.UndefOr[IconShape] = js.undefined
   var selectable: js.UndefOr[auto | off] = js.undefined
   var shortDesc: js.UndefOr[String] = js.undefined
   var showDisclosure: js.UndefOr[on | off] = js.undefined
@@ -30,13 +30,13 @@ trait ojDiagramNodeSettablePropertiesLenient
 object ojDiagramNodeSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     categories: js.Array[String] = null,
     descendantsConnectivity: connected | disjoint | unknown = null,
-    icon: AnonOpacity = null,
+    icon: Opacity = null,
     label: String = null,
     labelStyle: js.Object = null,
-    overview: AnonIconAnonShape = null,
+    overview: IconShape = null,
     selectable: auto | off = null,
     shortDesc: String = null,
     showDisclosure: on | off = null

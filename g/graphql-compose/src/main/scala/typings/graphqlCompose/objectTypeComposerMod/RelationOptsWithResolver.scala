@@ -20,15 +20,15 @@ object RelationOptsWithResolver {
   def apply[TRelationSource, TSource, TContext, TArgs](
     resolver: Thunk[Resolver[TRelationSource, TContext, TArgs, _]],
     catchErrors: js.UndefOr[Boolean] = js.undefined,
-    deprecationReason: String = null,
-    description: String = null,
+    deprecationReason: js.UndefOr[Null | String] = js.undefined,
+    description: js.UndefOr[Null | String] = js.undefined,
     prepareArgs: RelationArgsMapper[TSource, TContext, TArgs] = null,
     projection: js.Object = null
   ): RelationOptsWithResolver[TRelationSource, TSource, TContext, TArgs] = {
     val __obj = js.Dynamic.literal(resolver = resolver.asInstanceOf[js.Any])
-    if (!js.isUndefined(catchErrors)) __obj.updateDynamic("catchErrors")(catchErrors.asInstanceOf[js.Any])
-    if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(catchErrors)) __obj.updateDynamic("catchErrors")(catchErrors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deprecationReason)) __obj.updateDynamic("deprecationReason")(deprecationReason.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (prepareArgs != null) __obj.updateDynamic("prepareArgs")(prepareArgs.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelationOptsWithResolver[TRelationSource, TSource, TContext, TArgs]]

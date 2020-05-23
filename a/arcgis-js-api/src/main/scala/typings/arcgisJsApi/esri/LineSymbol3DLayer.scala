@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.bevel
 import typings.arcgisJsApi.arcgisJsApiStrings.butt
 import typings.arcgisJsApi.arcgisJsApiStrings.line
@@ -68,8 +67,4 @@ trait LineSymbol3DLayer
   @JSName("type")
   val type_LineSymbol3DLayer: line = js.native
 }
-
-@JSGlobal("__esri.LineSymbol3DLayer")
-@js.native
-object LineSymbol3DLayer extends TopLevel[LineSymbol3DLayerConstructor]
 

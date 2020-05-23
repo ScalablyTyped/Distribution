@@ -1,6 +1,7 @@
 package typings.typedGithubApi
 
 import typings.moment.mod.Moment
+import typings.typedGithubApi.anon.Admin
 import typings.typedGithubApi.githubRefMod.OptionsOrRef
 import typings.typedGithubApi.interfacesUserMod.UserSummary
 import typings.typedGithubApi.repositoryMod.Repository
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typed-github-api/dist/repository", JSImport.Namespace)
 @js.native
 object distRepositoryMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.typedGithubApi.interfacesRepositoryMod.RepositoryRef because Already inherited
   - typings.typedGithubApi.interfacesRepositoryMod.Repository because var conflicts: owner. Inlined id, fullName, description, isPrivate, isFork, htmlUri, homePage, language, forksCount, starGazersCount, watchersCount, size, defaultBranch, openIssuesCount, topics, hasIssues, hasWiki, hasPages, hasDownloads, pushed, created, updated, permissions, allowRebasemerge, allowSquashMerge, allowMergeCommit, subscribersCount, networkCount */ @js.native
   class RepositoryClass protected () extends RepositoryRefClass {
@@ -39,7 +40,7 @@ object distRepositoryMod extends js.Object {
     var openIssuesCount: Double = js.native
     @JSName("owner")
     var owner_RepositoryClass: UserSummary = js.native
-    var permissions: AnonAdmin = js.native
+    var permissions: Admin = js.native
     var pushed: Moment = js.native
     var size: Double = js.native
     var starGazersCount: Double = js.native

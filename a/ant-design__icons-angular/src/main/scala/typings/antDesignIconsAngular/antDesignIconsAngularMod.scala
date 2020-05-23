@@ -5,7 +5,6 @@ import typings.angularCore.mod.ElementRef
 import typings.angularCore.mod.Renderer2
 import typings.angularCore.mod.RendererFactory2
 import typings.angularPlatformBrowser.mod.DomSanitizer
-import typings.antDesignIconsAngular.antDesignIconsAngularStrings.`[@ant-designSlashicons-angular]Colon`
 import typings.antDesignIconsAngular.typesMod.IconDefinition
 import typings.antDesignIconsAngular.typesMod.Manifest
 import typings.antDesignIconsAngular.typesMod.ThemeType
@@ -43,7 +42,7 @@ object antDesignIconsAngularMod extends js.Object {
     ) = this()
   }
   
-  val ANT_ICON_ANGULAR_CONSOLE_PREFIX: `[@ant-designSlashicons-angular]Colon` = js.native
+  val ANT_ICON_ANGULAR_CONSOLE_PREFIX: /* "[@ant-design/icons-angular]:" */ String = js.native
   val manifest: Manifest = js.native
   def DynamicLoadingTimeoutError(): Error = js.native
   def HttpModuleNotImport(): Null = js.native

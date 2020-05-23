@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`label-3d`
 import typings.arcgisJsApi.arcgisJsApiStrings.`line-3d`
 import typings.arcgisJsApi.arcgisJsApiStrings.`mesh-3d`
@@ -32,8 +31,4 @@ trait Symbol3D extends Symbol {
   @JSName("type")
   val type_Symbol3D: `point-3d` | `line-3d` | `polygon-3d` | `mesh-3d` | `label-3d` = js.native
 }
-
-@JSGlobal("__esri.Symbol3D")
-@js.native
-object Symbol3D extends TopLevel[Symbol3DConstructor]
 

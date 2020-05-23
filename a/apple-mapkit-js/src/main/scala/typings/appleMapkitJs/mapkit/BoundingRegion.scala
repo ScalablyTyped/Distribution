@@ -8,42 +8,45 @@ import scala.scalajs.js.annotation._
   * A rectangular area on a map, defined by coordinates of the rectangle's
   * northeast and southwest corners.
   */
-@JSGlobal("mapkit.BoundingRegion")
-@js.native
-class BoundingRegion protected () extends js.Object {
-  /**
-    * Creates a rectangular bounding region defined by the latitude and
-    * longitude coordinates of the rectangle's northeast and southwest corners.
-    *
-    * @param northLatitude The north latitude of the bounding region.
-    * @param eastLongitude The east longitude of the bounding region.
-    * @param southLatitude The south latitude of the bounding region.
-    * @param westLongitude The west longitude of the bounding region.
-    */
-  def this(northLatitude: Double, eastLongitude: Double, southLatitude: Double, westLongitude: Double) = this()
+trait BoundingRegion extends js.Object {
   /**
     * The east longitude of the bounding region.
     */
-  var eastLongitude: Double = js.native
+  var eastLongitude: Double
   /**
     * The north latitude of the bounding region.
     */
-  var northLatitude: Double = js.native
+  var northLatitude: Double
   /**
     * The south latitude of the bounding region.
     */
-  var southLatitude: Double = js.native
+  var southLatitude: Double
   /**
     * The west longitude of the bounding region.
     */
-  var westLongitude: Double = js.native
+  var westLongitude: Double
   /**
     * Returns a copy of the calling bounding region.
     */
-  def copy(): BoundingRegion = js.native
+  def copy(): BoundingRegion
   /**
     * Returns the coordinate region that corresponds to the calling bounding region.
     */
-  def toCoordinateRegion(): CoordinateRegion = js.native
+  def toCoordinateRegion(): CoordinateRegion
+}
+
+object BoundingRegion {
+  @scala.inline
+  def apply(
+    copy: () => BoundingRegion,
+    eastLongitude: Double,
+    northLatitude: Double,
+    southLatitude: Double,
+    toCoordinateRegion: () => CoordinateRegion,
+    westLongitude: Double
+  ): BoundingRegion = {
+    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), eastLongitude = eastLongitude.asInstanceOf[js.Any], northLatitude = northLatitude.asInstanceOf[js.Any], southLatitude = southLatitude.asInstanceOf[js.Any], toCoordinateRegion = js.Any.fromFunction0(toCoordinateRegion), westLongitude = westLongitude.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BoundingRegion]
+  }
 }
 

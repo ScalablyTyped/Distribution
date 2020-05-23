@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object preactMod {
   type DefaultParams = org.scalablytyped.runtime.StringDictionary[java.lang.String]
-  type LinkProps = typings.wouter.OmitHTMLAttributesEventTa with typings.wouter.preactMod.NavigationalProps
+  type LinkProps = typings.wouter.anon.OmitHTMLAttributesEventTa with typings.wouter.preactMod.NavigationalProps
   type LocationHook = js.Function1[
     /* options */ js.UndefOr[typings.wouter.preactMod.LocationHookOptions], 
     typings.wouter.preactMod.LocationTuple

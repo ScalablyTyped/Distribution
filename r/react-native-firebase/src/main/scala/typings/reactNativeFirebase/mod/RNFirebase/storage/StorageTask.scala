@@ -1,6 +1,6 @@
 package typings.reactNativeFirebase.mod.RNFirebase.storage
 
-import typings.reactNativeFirebase.AnonComplete
+import typings.reactNativeFirebase.anon.Complete
 import typings.reactNativeFirebase.mod.RNFirebase.ErrorHandler
 import typings.reactNativeFirebase.mod.RNFirebase.Handler
 import typings.std.Promise
@@ -17,7 +17,7 @@ trait StorageTask[T] extends Promise[T] {
   def on(event: TaskEvent, next: Handler[T]): js.Function0[Unit] = js.native
   def on(event: TaskEvent, next: Handler[T], error: ErrorHandler): js.Function0[Unit] = js.native
   def on(event: TaskEvent, next: Handler[T], error: ErrorHandler, complete: Handler[T]): js.Function0[Unit] = js.native
-  def on(event: TaskEvent, observer: AnonComplete[T]): js.Function0[Unit] = js.native
+  def on(event: TaskEvent, observer: Complete[T]): js.Function0[Unit] = js.native
   /**
     * Not supported by react-native-firebase
     */

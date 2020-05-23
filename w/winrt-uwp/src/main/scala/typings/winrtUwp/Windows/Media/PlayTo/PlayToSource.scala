@@ -6,16 +6,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a media element to connect to a Play To target. */
-@JSGlobal("Windows.Media.PlayTo.PlayToSource")
-@js.native
-abstract class PlayToSource () extends js.Object {
+trait PlayToSource extends js.Object {
   /** Gets the connection to the Play To target. */
-  var connection: PlayToConnection = js.native
+  var connection: PlayToConnection
   /** Gets or sets the next Play To source element. */
-  var next: PlayToSource = js.native
+  var next: PlayToSource
   /** Specifies a preferred Uniform Resource Identifier (URI) for the media stream, such as a cloud based media server, used is used for Play To by reference. */
-  var preferredSourceUri: Uri = js.native
+  var preferredSourceUri: Uri
   /** Connects the next Play To source element to the Play To target. */
-  def playNext(): Unit = js.native
+  def playNext(): Unit
+}
+
+object PlayToSource {
+  @scala.inline
+  def apply(connection: PlayToConnection, next: PlayToSource, playNext: () => Unit, preferredSourceUri: Uri): PlayToSource = {
+    val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], playNext = js.Any.fromFunction0(playNext), preferredSourceUri = preferredSourceUri.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlayToSource]
+  }
 }
 

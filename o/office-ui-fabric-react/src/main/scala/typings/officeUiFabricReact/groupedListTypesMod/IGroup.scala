@@ -77,18 +77,18 @@ object IGroup {
     isDropEnabled: js.UndefOr[Boolean] = js.undefined,
     isSelected: js.UndefOr[Boolean] = js.undefined,
     isShowingAll: js.UndefOr[Boolean] = js.undefined,
-    level: Int | Double = null
+    level: js.UndefOr[Double] = js.undefined
   ): IGroup = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], startIndex = startIndex.asInstanceOf[js.Any])
     if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasMoreData)) __obj.updateDynamic("hasMoreData")(hasMoreData.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCollapsed)) __obj.updateDynamic("isCollapsed")(isCollapsed.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDropEnabled)) __obj.updateDynamic("isDropEnabled")(isDropEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.asInstanceOf[js.Any])
-    if (!js.isUndefined(isShowingAll)) __obj.updateDynamic("isShowingAll")(isShowingAll.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasMoreData)) __obj.updateDynamic("hasMoreData")(hasMoreData.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCollapsed)) __obj.updateDynamic("isCollapsed")(isCollapsed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDropEnabled)) __obj.updateDynamic("isDropEnabled")(isDropEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isShowingAll)) __obj.updateDynamic("isShowingAll")(isShowingAll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGroup]
   }
 }

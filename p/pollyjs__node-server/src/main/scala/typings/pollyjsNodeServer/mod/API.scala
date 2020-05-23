@@ -1,6 +1,6 @@
 package typings.pollyjsNodeServer.mod
 
-import typings.pollyjsNodeServer.PickConfigrecordingsDir
+import typings.pollyjsNodeServer.anon.PickConfigrecordingsDir
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

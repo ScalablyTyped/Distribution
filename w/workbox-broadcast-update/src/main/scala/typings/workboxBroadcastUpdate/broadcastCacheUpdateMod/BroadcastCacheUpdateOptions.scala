@@ -14,12 +14,12 @@ object BroadcastCacheUpdateOptions {
   @scala.inline
   def apply(
     channelName: String = null,
-    deferNoticationTimeout: Int | Double = null,
+    deferNoticationTimeout: js.UndefOr[Double] = js.undefined,
     headersToCheck: js.Array[String] = null
   ): BroadcastCacheUpdateOptions = {
     val __obj = js.Dynamic.literal()
     if (channelName != null) __obj.updateDynamic("channelName")(channelName.asInstanceOf[js.Any])
-    if (deferNoticationTimeout != null) __obj.updateDynamic("deferNoticationTimeout")(deferNoticationTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(deferNoticationTimeout)) __obj.updateDynamic("deferNoticationTimeout")(deferNoticationTimeout.get.asInstanceOf[js.Any])
     if (headersToCheck != null) __obj.updateDynamic("headersToCheck")(headersToCheck.asInstanceOf[js.Any])
     __obj.asInstanceOf[BroadcastCacheUpdateOptions]
   }

@@ -1,13 +1,13 @@
 package typings.babylonjs.instancedMeshMod.babylonjsMeshesMeshAugmentingMod
 
-import typings.babylonjs.AnonData
+import typings.babylonjs.anon.Data
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Mesh extends js.Object {
   /** @hidden */
-  var _userInstancedBuffersStorage: AnonData
+  var _userInstancedBuffersStorage: Data
   /**
     * Register a custom buffer that will be instanced
     * @see https://doc.babylonjs.com/how_to/how_to_use_instances#custom-buffers
@@ -19,7 +19,7 @@ trait Mesh extends js.Object {
 
 object Mesh {
   @scala.inline
-  def apply(_userInstancedBuffersStorage: AnonData, registerInstancedBuffer: (String, Double) => Unit): Mesh = {
+  def apply(_userInstancedBuffersStorage: Data, registerInstancedBuffer: (String, Double) => Unit): Mesh = {
     val __obj = js.Dynamic.literal(_userInstancedBuffersStorage = _userInstancedBuffersStorage.asInstanceOf[js.Any], registerInstancedBuffer = js.Any.fromFunction2(registerInstancedBuffer))
     __obj.asInstanceOf[Mesh]
   }

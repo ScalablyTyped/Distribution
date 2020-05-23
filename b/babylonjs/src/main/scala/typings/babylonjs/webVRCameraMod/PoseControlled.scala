@@ -50,9 +50,8 @@ object PoseControlled {
     devicePosition: Vector3 = null,
     rawPose: Nullable[DevicePose] = null
   ): PoseControlled = {
-    val __obj = js.Dynamic.literal(deviceRotationQuaternion = deviceRotationQuaternion.asInstanceOf[js.Any], deviceScaleFactor = deviceScaleFactor.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], rotationQuaternion = rotationQuaternion.asInstanceOf[js.Any], updateFromDevice = js.Any.fromFunction1(updateFromDevice))
+    val __obj = js.Dynamic.literal(deviceRotationQuaternion = deviceRotationQuaternion.asInstanceOf[js.Any], deviceScaleFactor = deviceScaleFactor.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], rotationQuaternion = rotationQuaternion.asInstanceOf[js.Any], updateFromDevice = js.Any.fromFunction1(updateFromDevice), rawPose = rawPose.asInstanceOf[js.Any])
     if (devicePosition != null) __obj.updateDynamic("devicePosition")(devicePosition.asInstanceOf[js.Any])
-    if (rawPose != null) __obj.updateDynamic("rawPose")(rawPose.asInstanceOf[js.Any])
     __obj.asInstanceOf[PoseControlled]
   }
 }

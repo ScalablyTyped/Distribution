@@ -1,6 +1,19 @@
 package typings.storybookAddonKnobs
 
 import typings.react.mod.ComponentType
+import typings.storybookAddonKnobs.anon.Deserialize
+import typings.storybookAddonKnobs.anon.FunctionComponentBooleanT
+import typings.storybookAddonKnobs.anon.FunctionComponentButtonTy
+import typings.storybookAddonKnobs.anon.FunctionComponentFilesTyp
+import typings.storybookAddonKnobs.anon.FunctionComponentOptionsT
+import typings.storybookAddonKnobs.anon.FunctionComponentSelectTy
+import typings.storybookAddonKnobs.anon.TypeofArrayType
+import typings.storybookAddonKnobs.anon.TypeofColorType
+import typings.storybookAddonKnobs.anon.TypeofDateType
+import typings.storybookAddonKnobs.anon.TypeofNumberType
+import typings.storybookAddonKnobs.anon.TypeofObjectType
+import typings.storybookAddonKnobs.anon.TypeofRadiosType
+import typings.storybookAddonKnobs.anon.TypeofTextType
 import typings.storybookAddonKnobs.storybookAddonKnobsStrings.`object`
 import typings.storybookAddonKnobs.storybookAddonKnobsStrings.array
 import typings.storybookAddonKnobs.storybookAddonKnobsStrings.boolean
@@ -20,7 +33,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@storybook/addon-knobs/dist/components/types", JSImport.Namespace)
 @js.native
 object typesMod extends js.Object {
-  /* Rewritten from type alias, can be one of: 
+  /* keyof @storybook/addon-knobs.anon.Array */ /* Rewritten from type alias, can be one of: 
     - typings.storybookAddonKnobs.storybookAddonKnobsStrings.text
     - typings.storybookAddonKnobs.storybookAddonKnobsStrings.number
     - typings.storybookAddonKnobs.storybookAddonKnobsStrings.color
@@ -55,6 +68,6 @@ object typesMod extends js.Object {
     var text: TypeofTextType = js.native
   }
   
-  type KnobControlType = ComponentType[_] with AnonDeserialize
+  type KnobControlType = ComponentType[_] with Deserialize
 }
 

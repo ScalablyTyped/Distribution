@@ -1,44 +1,44 @@
 package typings.reactBootstrapTable.mod
 
-import typings.reactBootstrapTable.AnonPageList
+import typings.reactBootstrapTable.anon.PageList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PaginationPanelProps extends js.Object {
   /**
-  	 * The basic components for the pagination panel, provided here so that you have the option to use some of them
-  	 * if you don't want to customize all of them.
-  	 */
-  var components: AnonPageList
+    * The basic components for the pagination panel, provided here so that you have the option to use some of them
+    * if you don't want to customize all of them.
+    */
+  var components: PageList
   /**
-  	 * Current page number
-  	 */
+    * Current page number
+    */
   var currPage: Double
   /**
-  	 * Index number for the first page of data.
-  	 * Comes from Options.pageStartIndex.
-  	 */
+    * Index number for the first page of data.
+    * Comes from Options.pageStartIndex.
+    */
   var pageStartIndex: Double
   /**
-  	 * Current number of rows to show per page
-  	 */
+    * Current number of rows to show per page
+    */
   var sizePerPage: Double
   /**
-  	 * Choices for size per page dropdown component
-  	 */
+    * Choices for size per page dropdown component
+    */
   var sizePerPageList: SizePerPageList
   /**
-  	 * Callback function to use to change page.
-  	 */
+    * Callback function to use to change page.
+    */
   def changePage(pageNum: Double): Unit
   /**
-  	 * Callback function to use to set a new size per page.
-  	 */
+    * Callback function to use to set a new size per page.
+    */
   def changeSizePerPage(sizePerPage: Double): Unit
   /**
-  	 * Callback function to trigger the toggle on sizePerPage dropdown button
-  	 */
+    * Callback function to trigger the toggle on sizePerPage dropdown button
+    */
   def toggleDropDown(): Unit
 }
 
@@ -47,7 +47,7 @@ object PaginationPanelProps {
   def apply(
     changePage: Double => Unit,
     changeSizePerPage: Double => Unit,
-    components: AnonPageList,
+    components: PageList,
     currPage: Double,
     pageStartIndex: Double,
     sizePerPage: Double,

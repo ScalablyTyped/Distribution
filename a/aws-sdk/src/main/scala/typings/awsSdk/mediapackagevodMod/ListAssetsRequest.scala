@@ -22,9 +22,13 @@ trait ListAssetsRequest extends js.Object {
 
 object ListAssetsRequest {
   @scala.inline
-  def apply(MaxResults: Int | Double = null, NextToken: string = null, PackagingGroupId: string = null): ListAssetsRequest = {
+  def apply(
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    NextToken: string = null,
+    PackagingGroupId: string = null
+  ): ListAssetsRequest = {
     val __obj = js.Dynamic.literal()
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (PackagingGroupId != null) __obj.updateDynamic("PackagingGroupId")(PackagingGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAssetsRequest]

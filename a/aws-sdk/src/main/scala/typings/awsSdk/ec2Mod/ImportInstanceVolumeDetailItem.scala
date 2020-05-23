@@ -40,7 +40,7 @@ object ImportInstanceVolumeDetailItem {
   @scala.inline
   def apply(
     AvailabilityZone: String = null,
-    BytesConverted: Int | scala.Double = null,
+    BytesConverted: js.UndefOr[Long] = js.undefined,
     Description: String = null,
     Image: DiskImageDescription = null,
     Status: String = null,
@@ -49,7 +49,7 @@ object ImportInstanceVolumeDetailItem {
   ): ImportInstanceVolumeDetailItem = {
     val __obj = js.Dynamic.literal()
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (BytesConverted != null) __obj.updateDynamic("BytesConverted")(BytesConverted.asInstanceOf[js.Any])
+    if (!js.isUndefined(BytesConverted)) __obj.updateDynamic("BytesConverted")(BytesConverted.get.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (Image != null) __obj.updateDynamic("Image")(Image.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])

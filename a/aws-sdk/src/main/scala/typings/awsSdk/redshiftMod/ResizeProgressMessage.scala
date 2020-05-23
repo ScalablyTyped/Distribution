@@ -75,40 +75,40 @@ trait ResizeProgressMessage extends js.Object {
 object ResizeProgressMessage {
   @scala.inline
   def apply(
-    AvgResizeRateInMegaBytesPerSecond: Int | scala.Double = null,
-    DataTransferProgressPercent: Int | scala.Double = null,
-    ElapsedTimeInSeconds: Int | scala.Double = null,
-    EstimatedTimeToCompletionInSeconds: Int | scala.Double = null,
+    AvgResizeRateInMegaBytesPerSecond: js.UndefOr[DoubleOptional] = js.undefined,
+    DataTransferProgressPercent: js.UndefOr[DoubleOptional] = js.undefined,
+    ElapsedTimeInSeconds: js.UndefOr[LongOptional] = js.undefined,
+    EstimatedTimeToCompletionInSeconds: js.UndefOr[LongOptional] = js.undefined,
     ImportTablesCompleted: ImportTablesCompleted = null,
     ImportTablesInProgress: ImportTablesInProgress = null,
     ImportTablesNotStarted: ImportTablesNotStarted = null,
     Message: String = null,
-    ProgressInMegaBytes: Int | scala.Double = null,
+    ProgressInMegaBytes: js.UndefOr[LongOptional] = js.undefined,
     ResizeType: String = null,
     Status: String = null,
     TargetClusterType: String = null,
     TargetEncryptionType: String = null,
     TargetNodeType: String = null,
-    TargetNumberOfNodes: Int | scala.Double = null,
-    TotalResizeDataInMegaBytes: Int | scala.Double = null
+    TargetNumberOfNodes: js.UndefOr[IntegerOptional] = js.undefined,
+    TotalResizeDataInMegaBytes: js.UndefOr[LongOptional] = js.undefined
   ): ResizeProgressMessage = {
     val __obj = js.Dynamic.literal()
-    if (AvgResizeRateInMegaBytesPerSecond != null) __obj.updateDynamic("AvgResizeRateInMegaBytesPerSecond")(AvgResizeRateInMegaBytesPerSecond.asInstanceOf[js.Any])
-    if (DataTransferProgressPercent != null) __obj.updateDynamic("DataTransferProgressPercent")(DataTransferProgressPercent.asInstanceOf[js.Any])
-    if (ElapsedTimeInSeconds != null) __obj.updateDynamic("ElapsedTimeInSeconds")(ElapsedTimeInSeconds.asInstanceOf[js.Any])
-    if (EstimatedTimeToCompletionInSeconds != null) __obj.updateDynamic("EstimatedTimeToCompletionInSeconds")(EstimatedTimeToCompletionInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(AvgResizeRateInMegaBytesPerSecond)) __obj.updateDynamic("AvgResizeRateInMegaBytesPerSecond")(AvgResizeRateInMegaBytesPerSecond.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DataTransferProgressPercent)) __obj.updateDynamic("DataTransferProgressPercent")(DataTransferProgressPercent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ElapsedTimeInSeconds)) __obj.updateDynamic("ElapsedTimeInSeconds")(ElapsedTimeInSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EstimatedTimeToCompletionInSeconds)) __obj.updateDynamic("EstimatedTimeToCompletionInSeconds")(EstimatedTimeToCompletionInSeconds.get.asInstanceOf[js.Any])
     if (ImportTablesCompleted != null) __obj.updateDynamic("ImportTablesCompleted")(ImportTablesCompleted.asInstanceOf[js.Any])
     if (ImportTablesInProgress != null) __obj.updateDynamic("ImportTablesInProgress")(ImportTablesInProgress.asInstanceOf[js.Any])
     if (ImportTablesNotStarted != null) __obj.updateDynamic("ImportTablesNotStarted")(ImportTablesNotStarted.asInstanceOf[js.Any])
     if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
-    if (ProgressInMegaBytes != null) __obj.updateDynamic("ProgressInMegaBytes")(ProgressInMegaBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(ProgressInMegaBytes)) __obj.updateDynamic("ProgressInMegaBytes")(ProgressInMegaBytes.get.asInstanceOf[js.Any])
     if (ResizeType != null) __obj.updateDynamic("ResizeType")(ResizeType.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (TargetClusterType != null) __obj.updateDynamic("TargetClusterType")(TargetClusterType.asInstanceOf[js.Any])
     if (TargetEncryptionType != null) __obj.updateDynamic("TargetEncryptionType")(TargetEncryptionType.asInstanceOf[js.Any])
     if (TargetNodeType != null) __obj.updateDynamic("TargetNodeType")(TargetNodeType.asInstanceOf[js.Any])
-    if (TargetNumberOfNodes != null) __obj.updateDynamic("TargetNumberOfNodes")(TargetNumberOfNodes.asInstanceOf[js.Any])
-    if (TotalResizeDataInMegaBytes != null) __obj.updateDynamic("TotalResizeDataInMegaBytes")(TotalResizeDataInMegaBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(TargetNumberOfNodes)) __obj.updateDynamic("TargetNumberOfNodes")(TargetNumberOfNodes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalResizeDataInMegaBytes)) __obj.updateDynamic("TotalResizeDataInMegaBytes")(TotalResizeDataInMegaBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResizeProgressMessage]
   }
 }

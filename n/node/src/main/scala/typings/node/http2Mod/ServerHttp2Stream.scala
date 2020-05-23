@@ -1,7 +1,7 @@
 package typings.node.http2Mod
 
-import typings.node.fsMod.promises.FileHandle
 import typings.node.httpMod.OutgoingHttpHeaders
+import typings.node.promisesMod.FileHandle
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

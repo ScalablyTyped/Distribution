@@ -499,7 +499,7 @@ object SVGAttributes {
     style: StringDictionary[js.UndefOr[String]] = null,
     surfaceScale: Double | String = null,
     systemLanguage: Double | String = null,
-    tabIndex: Int | Double = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
     tableValues: Double | String = null,
     target: String = null,
     targetX: Double | String = null,
@@ -755,7 +755,7 @@ object SVGAttributes {
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (surfaceScale != null) __obj.updateDynamic("surfaceScale")(surfaceScale.asInstanceOf[js.Any])
     if (systemLanguage != null) __obj.updateDynamic("systemLanguage")(systemLanguage.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     if (tableValues != null) __obj.updateDynamic("tableValues")(tableValues.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (targetX != null) __obj.updateDynamic("targetX")(targetX.asInstanceOf[js.Any])

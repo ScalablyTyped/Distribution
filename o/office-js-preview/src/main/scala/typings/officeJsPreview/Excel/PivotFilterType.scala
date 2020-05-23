@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,23 +53,6 @@ object PivotFilterType extends js.Object {
     */
   @js.native
   sealed trait value extends PivotFilterType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[PivotFilterType with String] = js.native
-  /* "Date" */ @js.native
-  object date extends TopLevel[date with String]
-  
-  /* "Label" */ @js.native
-  object label extends TopLevel[label with String]
-  
-  /* "Manual" */ @js.native
-  object manual extends TopLevel[manual with String]
-  
-  /* "Unknown" */ @js.native
-  object unknown extends TopLevel[unknown with String]
-  
-  /* "Value" */ @js.native
-  object value extends TopLevel[value with String]
   
 }
 

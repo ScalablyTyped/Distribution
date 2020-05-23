@@ -5,16 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.Input.MouseWheelParameters")
-@js.native
-class MouseWheelParameters () extends IMouseWheelParameters {
-  /* CompleteClass */
-  override var charTranslation: Point = js.native
-  /* CompleteClass */
-  override var deltaRotationAngle: Double = js.native
-  /* CompleteClass */
-  override var deltaScale: Double = js.native
-  /* CompleteClass */
-  override var pageTranslation: Point = js.native
+trait MouseWheelParameters extends IMouseWheelParameters
+
+object MouseWheelParameters {
+  @scala.inline
+  def apply(charTranslation: Point, deltaRotationAngle: Double, deltaScale: Double, pageTranslation: Point): MouseWheelParameters = {
+    val __obj = js.Dynamic.literal(charTranslation = charTranslation.asInstanceOf[js.Any], deltaRotationAngle = deltaRotationAngle.asInstanceOf[js.Any], deltaScale = deltaScale.asInstanceOf[js.Any], pageTranslation = pageTranslation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MouseWheelParameters]
+  }
 }
 

@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.PivotHierarchyData
 import typings.officeJs.Excel.Interfaces.PivotHierarchyLoadOptions
 import typings.officeJs.Excel.Interfaces.PivotHierarchyUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +16,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.8]
   */
-@JSGlobal("Excel.PivotHierarchy")
 @js.native
-class PivotHierarchy () extends ClientObject {
+trait PivotHierarchy extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_PivotHierarchy: RequestContext = js.native
@@ -50,7 +49,7 @@ class PivotHierarchy () extends ClientObject {
     */
   def load(): PivotHierarchy = js.native
   def load(options: PivotHierarchyLoadOptions): PivotHierarchy = js.native
-  def load(propertyNamesAndPaths: AnonExpand): PivotHierarchy = js.native
+  def load(propertyNamesAndPaths: Expand): PivotHierarchy = js.native
   def load(propertyNames: String): PivotHierarchy = js.native
   def load(propertyNames: js.Array[String]): PivotHierarchy = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.

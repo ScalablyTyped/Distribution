@@ -1,13 +1,11 @@
 package typings.kiiCloudSdk.KiiCloud
 
-import typings.kiiCloudSdk.Anon28
-import typings.kiiCloudSdk.Anon29
-import typings.kiiCloudSdk.Anon30
-import typings.kiiCloudSdk.Anon31
-import typings.kiiCloudSdk.Anon5
-import typings.kiiCloudSdk.Anon6
-import typings.kiiCloudSdk.Anon7
-import typings.kiiCloudSdk.AnonSuccess
+import typings.kiiCloudSdk.anon.`1`
+import typings.kiiCloudSdk.anon.`25`
+import typings.kiiCloudSdk.anon.`26`
+import typings.kiiCloudSdk.anon.`27`
+import typings.kiiCloudSdk.anon.`28`
+import typings.kiiCloudSdk.anon.`4`
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,9 +14,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a Thing object
   */
-@JSGlobal("KiiCloud.KiiThing")
 @js.native
-class KiiThing () extends KiiACLSubject {
+trait KiiThing extends KiiACLSubject {
   /**
     * of this thing.
     * For details refer to {@link KiiThing.register}
@@ -81,7 +78,7 @@ class KiiThing () extends KiiACLSubject {
     *     );
     */
   def deleteThing(): js.Promise[KiiThing] = js.native
-  def deleteThing(callbacks: Anon5): js.Promise[KiiThing] = js.native
+  def deleteThing(callbacks: `1`): js.Promise[KiiThing] = js.native
   /**
     * Disable the thing.
     * <br>This API is authorized by owner of thing.
@@ -132,7 +129,7 @@ class KiiThing () extends KiiACLSubject {
     *     );
     */
   def disable(): js.Promise[KiiThing] = js.native
-  def disable(callbacks: Anon5): js.Promise[KiiThing] = js.native
+  def disable(callbacks: `1`): js.Promise[KiiThing] = js.native
   /**
     * Enable the thing.
     * <br>This API is authorized by owner of thing.
@@ -183,7 +180,7 @@ class KiiThing () extends KiiACLSubject {
     *     );
     */
   def enable(): js.Promise[KiiThing] = js.native
-  def enable(callbacks: Anon5): js.Promise[KiiThing] = js.native
+  def enable(callbacks: `1`): js.Promise[KiiThing] = js.native
   /**
     * Creates a reference to a encrypted bucket for this thing
     *
@@ -241,7 +238,7 @@ class KiiThing () extends KiiACLSubject {
     */
   def isOnline(): Boolean = js.native
   def isOwner(owner: KiiGroup): js.Promise[js.Tuple3[KiiThing, KiiGroup, Boolean]] = js.native
-  def isOwner(owner: KiiGroup, callbacks: Anon29): js.Promise[js.Tuple3[KiiThing, KiiGroup, Boolean]] = js.native
+  def isOwner(owner: KiiGroup, callbacks: `26`): js.Promise[js.Tuple3[KiiThing, KiiGroup, Boolean]] = js.native
   /**
     * Check if user/ group is owner of the thing.
     * <br>This API is authorized by owner of thing.
@@ -307,7 +304,7 @@ class KiiThing () extends KiiACLSubject {
     *     );
     */
   def isOwner(owner: KiiUser): js.Promise[js.Tuple3[KiiThing, KiiUser, Boolean]] = js.native
-  def isOwner(owner: KiiUser, callbacks: Anon28): js.Promise[js.Tuple3[KiiThing, KiiUser, Boolean]] = js.native
+  def isOwner(owner: KiiUser, callbacks: `25`): js.Promise[js.Tuple3[KiiThing, KiiUser, Boolean]] = js.native
   /**
     * Gets a list of topics in this thing scope
     *
@@ -375,8 +372,8 @@ class KiiThing () extends KiiACLSubject {
     *     );
     */
   def listTopics(): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
-  def listTopics(callbacks: AnonSuccess): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
-  def listTopics(callbacks: AnonSuccess, paginationKey: String): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
+  def listTopics(callbacks: `4`): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
+  def listTopics(callbacks: `4`, paginationKey: String): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
   /**
     * Instantiate push subscription for this thing.
     *
@@ -428,9 +425,9 @@ class KiiThing () extends KiiACLSubject {
     *     );
     */
   def refresh(): js.Promise[KiiThing] = js.native
-  def refresh(callbacks: Anon5): js.Promise[KiiThing] = js.native
+  def refresh(callbacks: `1`): js.Promise[KiiThing] = js.native
   def registerOwner(owner: KiiGroup): js.Promise[js.Tuple2[KiiThing, KiiGroup]] = js.native
-  def registerOwner(owner: KiiGroup, callbacks: Anon31): js.Promise[js.Tuple2[KiiThing, KiiGroup]] = js.native
+  def registerOwner(owner: KiiGroup, callbacks: `28`): js.Promise[js.Tuple2[KiiThing, KiiGroup]] = js.native
   /**
     * Register user/group as owner of this thing.
     * <br>Need user login before execute this API.
@@ -484,7 +481,7 @@ class KiiThing () extends KiiACLSubject {
     *     );
     */
   def registerOwner(owner: KiiUser): js.Promise[js.Tuple2[KiiThing, KiiUser]] = js.native
-  def registerOwner(owner: KiiUser, callbacks: Anon30): js.Promise[js.Tuple2[KiiThing, KiiUser]] = js.native
+  def registerOwner(owner: KiiUser, callbacks: `27`): js.Promise[js.Tuple2[KiiThing, KiiUser]] = js.native
   /**
     * Instantiate topic belongs to this thing.
     *
@@ -494,7 +491,7 @@ class KiiThing () extends KiiACLSubject {
     */
   def topicWithName(topicName: String): KiiTopic = js.native
   def unregisterOwner(owner: KiiGroup): js.Promise[js.Tuple2[KiiThing, KiiGroup]] = js.native
-  def unregisterOwner(owner: KiiGroup, callbacks: Anon31): js.Promise[js.Tuple2[KiiThing, KiiGroup]] = js.native
+  def unregisterOwner(owner: KiiGroup, callbacks: `28`): js.Promise[js.Tuple2[KiiThing, KiiGroup]] = js.native
   /**
     * Remove ownership of thing from specified user/group.
     * <br>This API is authorized by owner of thing.
@@ -547,7 +544,7 @@ class KiiThing () extends KiiACLSubject {
     *     );
     */
   def unregisterOwner(owner: KiiUser): js.Promise[js.Tuple2[KiiThing, KiiUser]] = js.native
-  def unregisterOwner(owner: KiiUser, callbacks: Anon30): js.Promise[js.Tuple2[KiiThing, KiiUser]] = js.native
+  def unregisterOwner(owner: KiiUser, callbacks: `27`): js.Promise[js.Tuple2[KiiThing, KiiUser]] = js.native
   /**
     * Update registered thing information in Kii Cloud
     * <br>This API is authorized by owner of thing.
@@ -605,287 +602,6 @@ class KiiThing () extends KiiACLSubject {
     *     );
     */
   def update(): js.Promise[KiiThing] = js.native
-  def update(callbacks: Anon5): js.Promise[KiiThing] = js.native
-}
-
-/* static members */
-@JSGlobal("KiiCloud.KiiThing")
-@js.native
-object KiiThing extends js.Object {
-  /**
-    * Load thing with thing id given by Kii Cloud.
-    * <br>This API is authorized by owner of thing.
-    * <br>Need user login who owns this thing before execute this API.
-    * <br>To let users to own Thing, please call {@link KiiThing#registerOwner}
-    * <br>Note: if you obtain thing instance from {@link KiiAppAdminContext},
-    * API is authorized by app admin.<br>
-    *
-    * thing id can be obtained by {@link thingID}
-    *
-    * @param thingID registered thing id.
-    * @param callbacks object holds callback functions.
-    *
-    * @return return promise object.
-    *   <ul>
-    *     <li>fulfill callback function: function(thing). thing is a KiiThing instance.</li>
-    *     <li>reject callback function: function(error). error is an Error instance.
-    *       <ul>
-    *         <li>error.message</li>
-    *       </ul>
-    *     </li>
-    *   </ul>
-    *
-    * @example
-    *     // example to use callbacks directly
-    *     KiiThing.loadWithThingID("thing-xxxx-yyyy",{
-    *         success: function(thing) {
-    *             // Load succeeded.
-    *         },
-    *         failure: function(error) {
-    *             // Handle error.
-    *         }
-    *     });
-    *
-    *     // example to use Promise
-    *     KiiThing.loadWithVendorThingID("thing-xxxx-yyyy").then(
-    *         function(thing) {
-    *             // Load succeeded.
-    *         },
-    *         function(error) {
-    *             // Handle error.
-    *         }
-    *     );
-    */
-  def loadWithThingID(thingID: String): js.Promise[KiiThing] = js.native
-  def loadWithThingID(thingID: String, callbacks: Anon5): js.Promise[KiiThing] = js.native
-  /**
-    * Load thing with given vendor thing id.
-    * <br>This API is authorized by owner of thing.
-    * <br>Need user login who owns this thing before execute this API.
-    * <br>To let users to own Thing, please call {@link KiiThing#registerOwner}
-    * <br>Note: if you obtain thing instance from {@link KiiAppAdminContext},
-    * API is authorized by app admin.<br>
-    *
-    * @param vendorThingID registered vendor thing id.
-    * @param callbacks object holds callback functions.
-    *
-    * @return return promise object.
-    *   <ul>
-    *     <li>fulfill callback function: function(thing). thing is a KiiThing instance.</li>
-    *     <li>reject callback function: function(error). error is an Error instance.
-    *       <ul>
-    *         <li>error.message</li>
-    *       </ul>
-    *     </li>
-    *   </ul>
-    *
-    * @example
-    *     // example to use callbacks directly
-    *     KiiThing.loadWithVendorThingID("thing-xxxx-yyyy",{
-    *         success: function(thing) {
-    *             // Load succeeded.
-    *         },
-    *         failure: function(error) {
-    *             // Handle error.
-    *         }
-    *     });
-    *
-    *     // example to use Promise
-    *     KiiThing.loadWithVendorThingID("thing-xxxx-yyyy").then(
-    *         function(thing) {
-    *             // Load succeeded.
-    *         },
-    *         function(error) {
-    *             // Handle error.
-    *         }
-    *     );
-    */
-  def loadWithVendorThingID(vendorThingID: String): js.Promise[KiiThing] = js.native
-  def loadWithVendorThingID(vendorThingID: String, callbacks: Anon5): js.Promise[KiiThing] = js.native
-  /**
-    * Register thing in KiiCloud.<br>
-    * This API doesnt require users login Anonymous user can register thing.
-    * <br>
-    * Propertis started with '_' in the fields is reserved by Kii Cloud.<br>
-    * Those properties are indexed in Kii Cloud storage.<br>
-    * Properties not started with '_' is custom properties defined by developer.<br>
-    * Custom properties are not indexed in KiiCloud storage.<br>
-    * Following properties are readonly and ignored on creation/{@link #update} of thing.<br>
-    * '_thingID', '_created', '_accessToken' <br>
-    * Following properties are readonly after creation and will be ignored on {@link #update} of thing.<br>
-    * '_vendorThingID', '_password'<br>
-    * As Property prefixed with '_' is reserved by Kii Cloud,
-    * properties other than ones described in the parameter secion
-    * and '_layoutPosition' are ignored on creation/{@link #update} of thing.<br>
-    * Those ignored properties won't be removed from fields object passed as argument.
-    * However it won't be reflected to fields object property of created/updated Thing.
-    *
-    * @param fields of the thing to be registered.
-    * @param callbacks object holds callback functions.
-    *
-    * @return return promise object.
-    *   <ul>
-    *     <li>fulfill callback function: function(thing). thing is a KiiThing instance.</li>
-    *     <li>reject callback function: function(error). error is an Error instance.
-    *       <ul>
-    *         <li>error.target is the KiiThing instance.</li>
-    *         <li>error.message</li>
-    *       </ul>
-    *     </li>
-    *   </ul>
-    *
-    * @example
-    *     // example to use callbacks directly
-    *     KiiThing.register(
-    *         {
-    *             _vendorThingID: "thing-XXXX-YYYY-ZZZZZ",
-    *             _password: "thing-password",
-    *             _thingType: "thermometer",
-    *             yourCustomObj: // Arbitrary key can be used.
-    *             { // Object, Array, Number, String can be used. Should be compatible with JSON.
-    *                 yourCustomKey1: "value",
-    *                 yourCustomKey2: 100
-    *             }
-    *         },
-    *         {
-    *             success: function(thing) {
-    *                 // Register Thing succeeded.
-    *             },
-    *             failure: function(error) {
-    *                 // Handle error.
-    *             }
-    *         }
-    *     );
-    *
-    *     // example to use Promise
-    *     KiiThing.register(
-    *         {
-    *             _vendorThingID: "thing-XXXX-YYYY-ZZZZZ",
-    *             _password: "thing-password",
-    *             _thingType: "thermometer",
-    *             yourCustomObj: // Arbitrary key can be used.
-    *             { // Object, Array, Number, String can be used. Should be compatible with JSON.
-    *                 yourCustomKey1: "value",
-    *                 yourCustomKey2: 100
-    *             }
-    *         }
-    *     ).then(
-    *         function(thing) {
-    *             // Register Thing succeeded.
-    *         },
-    *         function(error) {
-    *             // Handle error.
-    *         }
-    *     );
-    */
-  def register(fields: KiiThingFields): js.Promise[KiiThing] = js.native
-  def register(fields: KiiThingFields, callbacks: Anon5): js.Promise[KiiThing] = js.native
-  def registerOwnerWithThingID(thingID: String, owner: KiiGroup): js.Promise[KiiGroup] = js.native
-  def registerOwnerWithThingID(thingID: String, owner: KiiGroup, callbacks: Anon7): js.Promise[KiiGroup] = js.native
-  /**
-    * Register user/group as owner of specified thing.
-    * <br>Need user login before execute this API.
-    * <br>Note: if you obtain thing instance from {@link KiiAppAdminContext},
-    * API is authorized by app admin.<br>
-    *
-    * @param thingID The ID of thing
-    * @param owner instance of KiiUser/KiiGroup to be registered as owner.
-    * @param callbacks object holds callback functions.
-    *
-    * @return return promise object.
-    *   <ul>
-    *     <li>fulfill callback function: function(params). params is an Array instance.
-    *       <ul>
-    *         <li>params[0] is a KiiUser/KiiGroup instance.</li>
-    *       </ul>
-    *     </li>
-    *     <li>reject callback function: function(error). error is an Error instance.
-    *       <ul>
-    *         <li>error.message</li>
-    *       </ul>
-    *     </li>
-    *   </ul>
-    *
-    * @example
-    *     // example to use callbacks directly
-    *     // assume thing/group is already registered.
-    *     var group = KiiGroup.groupWithURI("kiicloud://groups/xxxyyyy");
-    *     KiiThing.registerOwnerWithThingID("th.xxxx-yyyy-zzzz", group, {
-    *         success: function(group) {
-    *             // Register owner succeeded.
-    *         },
-    *         failure: function(error) {
-    *             // Handle error.
-    *         }
-    *     });
-    *
-    *     // example to use Promise
-    *     // assume thing/group is already registered.
-    *     var group = KiiGroup.groupWithURI("kiicloud://groups/xxxyyyy");
-    *     KiiThing.registerOwnerWithThingID("th.xxxx-yyyy-zzzz", group).then(
-    *         function(params) {
-    *             // Register owner succeeded.
-    *             var group = params[0];
-    *         },
-    *         function(error) {
-    *             // Handle error.
-    *         }
-    *     );
-    */
-  def registerOwnerWithThingID(thingID: String, owner: KiiUser): js.Promise[KiiUser] = js.native
-  def registerOwnerWithThingID(thingID: String, owner: KiiUser, callbacks: Anon6): js.Promise[KiiUser] = js.native
-  def registerOwnerWithVendorThingID(vendorThingID: String, owner: KiiGroup): js.Promise[KiiGroup] = js.native
-  def registerOwnerWithVendorThingID(vendorThingID: String, owner: KiiGroup, callbacks: Anon7): js.Promise[KiiGroup] = js.native
-  /**
-    * Register user/group as owner of specified thing.
-    * <br>Need user login before execute this API.
-    * <br>Note: if you obtain thing instance from {@link KiiAppAdminContext},
-    * API is authorized by app admin.<br>
-    *
-    * @param vendorThingID The vendor thing ID of thing
-    * @param owner instance of KiiUser/KiiGroup to be registered as owner.
-    * @param callbacks object holds callback functions.
-    *
-    * @return return promise object.
-    *   <ul>
-    *     <li>fulfill callback function: function(params). params is an Array instance.
-    *       <ul>
-    *         <li>params[0] is a KiiUser/KiiGroup instance.</li>
-    *       </ul>
-    *     </li>
-    *     <li>reject callback function: function(error). error is an Error instance.
-    *       <ul>
-    *         <li>error.message</li>
-    *       </ul>
-    *     </li>
-    *   </ul>
-    *
-    * @example
-    *     // example to use callbacks directly
-    *     // assume thing/group is already registered.
-    *     var group = KiiGroup.groupWithURI("kiicloud://groups/xxxyyyy");
-    *     KiiThing.registerOwnerWithVendorThingID("xxxx-yyyy-zzzz", group, {
-    *         success: function(group) {
-    *             // Register owner succeeded.
-    *         },
-    *         failure: function(error) {
-    *             // Handle error.
-    *         }
-    *     });
-    *
-    *     // example to use Promise
-    *     // assume thing/group is already registered.
-    *     var group = KiiGroup.groupWithURI("kiicloud://groups/xxxyyyy");
-    *     KiiThing.registerOwnerWithVendorThingID("xxxx-yyyy-zzzz", group).then(
-    *         function(group) {
-    *             // Register owner succeeded.
-    *         },
-    *         function(error) {
-    *             // Handle error.
-    *         }
-    *     );
-    */
-  def registerOwnerWithVendorThingID(vendorThingID: String, owner: KiiUser): js.Promise[KiiUser] = js.native
-  def registerOwnerWithVendorThingID(vendorThingID: String, owner: KiiUser, callbacks: Anon6): js.Promise[KiiUser] = js.native
+  def update(callbacks: `1`): js.Promise[KiiThing] = js.native
 }
 

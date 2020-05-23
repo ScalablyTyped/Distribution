@@ -19,7 +19,7 @@ object ServiceClientOptions {
   ): ServiceClientOptions = {
     val __obj = js.Dynamic.literal()
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(noRetryPolicy)) __obj.updateDynamic("noRetryPolicy")(noRetryPolicy.asInstanceOf[js.Any])
+    if (!js.isUndefined(noRetryPolicy)) __obj.updateDynamic("noRetryPolicy")(noRetryPolicy.get.asInstanceOf[js.Any])
     if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceClientOptions]
   }

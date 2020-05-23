@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.stripe.mod.IObject because Already inherited
 - typings.stripe.mod.IResourceObject because Already inherited
 - typings.stripe.mod.tokens.ITokenBase because Already inherited

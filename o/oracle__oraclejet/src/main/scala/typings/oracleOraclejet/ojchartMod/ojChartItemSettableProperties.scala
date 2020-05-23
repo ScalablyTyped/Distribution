@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojchartMod
 
-import typings.oracleOraclejet.AnonMedianSvgStyle
+import typings.oracleOraclejet.anon.MedianSvgStyle
 import typings.oracleOraclejet.mod.JetSettableProperties
 import typings.oracleOraclejet.oracleOraclejetStrings.aboveMarker
 import typings.oracleOraclejet.oracleOraclejetStrings.afterMarker
@@ -42,7 +42,7 @@ import scala.scalajs.js.annotation._
 trait ojChartItemSettableProperties extends JetSettableProperties {
   var borderColor: js.UndefOr[String] = js.undefined
   var borderWidth: js.UndefOr[Double] = js.undefined
-  var boxPlot: js.UndefOr[AnonMedianSvgStyle] = js.undefined
+  var boxPlot: js.UndefOr[MedianSvgStyle] = js.undefined
   var categories: js.UndefOr[js.Array[String]] = js.undefined
   var close: js.UndefOr[Double] = js.undefined
   var color: js.UndefOr[String] = js.undefined
@@ -90,26 +90,26 @@ object ojChartItemSettableProperties {
     groupId: js.Array[String | Double],
     seriesId: String | Double,
     borderColor: String = null,
-    borderWidth: Int | Double = null,
-    boxPlot: AnonMedianSvgStyle = null,
+    borderWidth: js.UndefOr[Double] = js.undefined,
+    boxPlot: MedianSvgStyle = null,
     categories: js.Array[String] = null,
-    close: Int | Double = null,
+    close: js.UndefOr[Double] = js.undefined,
     color: String = null,
     drilling: on | off | inherit = null,
-    high: Int | Double = null,
+    high: js.UndefOr[Double] = js.undefined,
     items: js.Array[Double | js.Object] = null,
     label: String | js.Array[String] = null,
     labelPosition: center | outsideSlice | aboveMarker | belowMarker | beforeMarker | afterMarker | insideBarEdge | outsideBarEdge | none | auto = null,
     labelStyle: js.Object | js.Array[js.Object] = null,
-    low: Int | Double = null,
+    low: js.UndefOr[Double] = js.undefined,
     markerDisplayed: on | off | auto = null,
     markerShape: circle | diamond | human | plus | square | star | triangleDown | triangleUp | auto | String = null,
-    markerSize: Int | Double = null,
-    open: Int | Double = null,
+    markerSize: js.UndefOr[Double] = js.undefined,
+    open: js.UndefOr[Double] = js.undefined,
     pattern: smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | auto = null,
-    q1: Int | Double = null,
-    q2: Int | Double = null,
-    q3: Int | Double = null,
+    q1: js.UndefOr[Double] = js.undefined,
+    q2: js.UndefOr[Double] = js.undefined,
+    q3: js.UndefOr[Double] = js.undefined,
     shortDesc: String = null,
     source: String = null,
     sourceHover: String = null,
@@ -117,35 +117,35 @@ object ojChartItemSettableProperties {
     sourceSelected: String = null,
     svgClassName: String = null,
     svgStyle: js.Object = null,
-    targetValue: Int | Double = null,
-    value: Int | Double = null,
-    volume: Int | Double = null,
+    targetValue: js.UndefOr[Double] = js.undefined,
+    value: js.UndefOr[Double] = js.undefined,
+    volume: js.UndefOr[Double] = js.undefined,
     x: Double | String = null,
-    y: Int | Double = null,
-    z: Int | Double = null
+    y: js.UndefOr[Double] = js.undefined,
+    z: js.UndefOr[Double] = js.undefined
   ): ojChartItemSettableProperties = {
     val __obj = js.Dynamic.literal(groupId = groupId.asInstanceOf[js.Any], seriesId = seriesId.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
     if (boxPlot != null) __obj.updateDynamic("boxPlot")(boxPlot.asInstanceOf[js.Any])
     if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
-    if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
+    if (!js.isUndefined(close)) __obj.updateDynamic("close")(close.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (drilling != null) __obj.updateDynamic("drilling")(drilling.asInstanceOf[js.Any])
-    if (high != null) __obj.updateDynamic("high")(high.asInstanceOf[js.Any])
+    if (!js.isUndefined(high)) __obj.updateDynamic("high")(high.get.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
     if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
-    if (low != null) __obj.updateDynamic("low")(low.asInstanceOf[js.Any])
+    if (!js.isUndefined(low)) __obj.updateDynamic("low")(low.get.asInstanceOf[js.Any])
     if (markerDisplayed != null) __obj.updateDynamic("markerDisplayed")(markerDisplayed.asInstanceOf[js.Any])
     if (markerShape != null) __obj.updateDynamic("markerShape")(markerShape.asInstanceOf[js.Any])
-    if (markerSize != null) __obj.updateDynamic("markerSize")(markerSize.asInstanceOf[js.Any])
-    if (open != null) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerSize)) __obj.updateDynamic("markerSize")(markerSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (q1 != null) __obj.updateDynamic("q1")(q1.asInstanceOf[js.Any])
-    if (q2 != null) __obj.updateDynamic("q2")(q2.asInstanceOf[js.Any])
-    if (q3 != null) __obj.updateDynamic("q3")(q3.asInstanceOf[js.Any])
+    if (!js.isUndefined(q1)) __obj.updateDynamic("q1")(q1.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(q2)) __obj.updateDynamic("q2")(q2.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(q3)) __obj.updateDynamic("q3")(q3.get.asInstanceOf[js.Any])
     if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (sourceHover != null) __obj.updateDynamic("sourceHover")(sourceHover.asInstanceOf[js.Any])
@@ -153,12 +153,12 @@ object ojChartItemSettableProperties {
     if (sourceSelected != null) __obj.updateDynamic("sourceSelected")(sourceSelected.asInstanceOf[js.Any])
     if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName.asInstanceOf[js.Any])
     if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle.asInstanceOf[js.Any])
-    if (targetValue != null) __obj.updateDynamic("targetValue")(targetValue.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetValue)) __obj.updateDynamic("targetValue")(targetValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(volume)) __obj.updateDynamic("volume")(volume.get.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojChartItemSettableProperties]
   }
 }

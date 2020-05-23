@@ -37,7 +37,7 @@ object EpisodeOfCareDiagnosis {
     fhir_comments: js.Array[String] = null,
     id: String = null,
     modifierExtension: js.Array[Extension] = null,
-    rank: Int | Double = null,
+    rank: js.UndefOr[positiveInt] = js.undefined,
     role: CodeableConcept = null
   ): EpisodeOfCareDiagnosis = {
     val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any])
@@ -48,7 +48,7 @@ object EpisodeOfCareDiagnosis {
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
+    if (!js.isUndefined(rank)) __obj.updateDynamic("rank")(rank.get.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[EpisodeOfCareDiagnosis]
   }

@@ -1,18 +1,17 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.AnonAddedItems
-import typings.devextreme.AnonBaseSize
-import typings.devextreme.AnonComponentElement
-import typings.devextreme.AnonElement
-import typings.devextreme.AnonEvent
-import typings.devextreme.AnonItemData
-import typings.devextreme.AnonItemElement
-import typings.devextreme.AnonModel
-import typings.devextreme.AnonName
+import typings.devextreme.anon.AddedItems
+import typings.devextreme.anon.BaseSize
+import typings.devextreme.anon.ComponentElement
+import typings.devextreme.anon.Event
+import typings.devextreme.anon.ItemData
+import typings.devextreme.anon.ItemElement
+import typings.devextreme.anon.Model
+import typings.devextreme.anon.Name
 import typings.devextreme.mod.DevExpress.core.dxElement
 import typings.devextreme.mod.DevExpress.data.DataSource
 import typings.devextreme.mod.DevExpress.data.DataSourceOptions
-import typings.devextreme.mod._Global_.JQuery
+import typings.devextreme.mod.global.JQuery
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +19,7 @@ import scala.scalajs.js.annotation._
 
 trait dxResponsiveBoxOptions extends CollectionWidgetOptions[dxResponsiveBox] {
   /** @name dxResponsiveBox.Options.cols */
-  var cols: js.UndefOr[js.Array[AnonBaseSize]] = js.undefined
+  var cols: js.UndefOr[js.Array[BaseSize]] = js.undefined
   /** @name dxResponsiveBox.Options.dataSource */
   @JSName("dataSource")
   var dataSource_dxResponsiveBoxOptions: js.UndefOr[
@@ -30,7 +29,7 @@ trait dxResponsiveBoxOptions extends CollectionWidgetOptions[dxResponsiveBox] {
   @JSName("items")
   var items_dxResponsiveBoxOptions: js.UndefOr[js.Array[String | dxResponsiveBoxItem | _]] = js.undefined
   /** @name dxResponsiveBox.Options.rows */
-  var rows: js.UndefOr[js.Array[AnonBaseSize]] = js.undefined
+  var rows: js.UndefOr[js.Array[BaseSize]] = js.undefined
   /** @name dxResponsiveBox.Options.screenByWidth */
   var screenByWidth: js.UndefOr[js.Function] = js.undefined
   /** @name dxResponsiveBox.Options.singleColumnScreen */
@@ -43,7 +42,7 @@ object dxResponsiveBoxOptions {
     accessKey: String = null,
     activeStateEnabled: js.UndefOr[Boolean] = js.undefined,
     bindingOptions: js.Any = null,
-    cols: js.Array[AnonBaseSize] = null,
+    cols: js.Array[BaseSize] = null,
     dataSource: String | (js.Array[String | dxResponsiveBoxItem | _]) | DataSource | DataSourceOptions = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     elementAttr: js.Any = null,
@@ -51,7 +50,7 @@ object dxResponsiveBoxOptions {
     height: Double | String | (js.Function0[Double | String]) = null,
     hint: String = null,
     hoverStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    itemHoldTimeout: Int | Double = null,
+    itemHoldTimeout: js.UndefOr[Double] = js.undefined,
     itemTemplate: typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* itemData */ js.Any, 
       /* itemIndex */ Double, 
@@ -61,40 +60,40 @@ object dxResponsiveBoxOptions {
     items: js.Array[String | dxResponsiveBoxItem | _] = null,
     keyExpr: String | js.Function = null,
     noDataText: String = null,
-    onContentReady: /* e */ AnonComponentElement[dxResponsiveBox] => _ = null,
-    onDisposing: /* e */ AnonModel[dxResponsiveBox] => _ = null,
-    onInitialized: /* e */ AnonElement[dxResponsiveBox] => _ = null,
-    onItemClick: (js.Function1[/* e */ AnonEvent[dxResponsiveBox], _]) | String = null,
-    onItemContextMenu: /* e */ AnonEvent[dxResponsiveBox] => _ = null,
-    onItemHold: /* e */ AnonItemData[dxResponsiveBox] => _ = null,
-    onItemRendered: /* e */ AnonItemElement[dxResponsiveBox] => _ = null,
-    onOptionChanged: /* e */ AnonName[dxResponsiveBox] => _ = null,
-    onSelectionChanged: /* e */ AnonAddedItems[dxResponsiveBox] => _ = null,
-    rows: js.Array[AnonBaseSize] = null,
+    onContentReady: /* e */ ComponentElement[dxResponsiveBox] => _ = null,
+    onDisposing: /* e */ Model[dxResponsiveBox] => _ = null,
+    onInitialized: /* e */ typings.devextreme.anon.Element[dxResponsiveBox] => _ = null,
+    onItemClick: (js.Function1[/* e */ Event[dxResponsiveBox], _]) | String = null,
+    onItemContextMenu: /* e */ Event[dxResponsiveBox] => _ = null,
+    onItemHold: /* e */ ItemData[dxResponsiveBox] => _ = null,
+    onItemRendered: /* e */ ItemElement[dxResponsiveBox] => _ = null,
+    onOptionChanged: /* e */ Name[dxResponsiveBox] => _ = null,
+    onSelectionChanged: /* e */ AddedItems[dxResponsiveBox] => _ = null,
+    rows: js.Array[BaseSize] = null,
     rtlEnabled: js.UndefOr[Boolean] = js.undefined,
     screenByWidth: js.Function = null,
-    selectedIndex: Int | Double = null,
+    selectedIndex: js.UndefOr[Double] = js.undefined,
     selectedItem: js.Any = null,
     selectedItemKeys: js.Array[_] = null,
     selectedItems: js.Array[_] = null,
     singleColumnScreen: String = null,
-    tabIndex: Int | Double = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
     width: Double | String | (js.Function0[Double | String]) = null
   ): dxResponsiveBoxOptions = {
     val __obj = js.Dynamic.literal()
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.get.asInstanceOf[js.Any])
     if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
     if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.asInstanceOf[js.Any])
-    if (itemHoldTimeout != null) __obj.updateDynamic("itemHoldTimeout")(itemHoldTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemHoldTimeout)) __obj.updateDynamic("itemHoldTimeout")(itemHoldTimeout.get.asInstanceOf[js.Any])
     if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(itemTemplate.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (keyExpr != null) __obj.updateDynamic("keyExpr")(keyExpr.asInstanceOf[js.Any])
@@ -109,15 +108,15 @@ object dxResponsiveBoxOptions {
     if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1(onOptionChanged))
     if (onSelectionChanged != null) __obj.updateDynamic("onSelectionChanged")(js.Any.fromFunction1(onSelectionChanged))
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
     if (screenByWidth != null) __obj.updateDynamic("screenByWidth")(screenByWidth.asInstanceOf[js.Any])
-    if (selectedIndex != null) __obj.updateDynamic("selectedIndex")(selectedIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedIndex)) __obj.updateDynamic("selectedIndex")(selectedIndex.get.asInstanceOf[js.Any])
     if (selectedItem != null) __obj.updateDynamic("selectedItem")(selectedItem.asInstanceOf[js.Any])
     if (selectedItemKeys != null) __obj.updateDynamic("selectedItemKeys")(selectedItemKeys.asInstanceOf[js.Any])
     if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems.asInstanceOf[js.Any])
     if (singleColumnScreen != null) __obj.updateDynamic("singleColumnScreen")(singleColumnScreen.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxResponsiveBoxOptions]
   }

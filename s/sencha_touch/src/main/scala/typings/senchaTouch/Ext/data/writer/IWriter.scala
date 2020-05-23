@@ -10,32 +10,32 @@ import scala.scalajs.js.annotation._
 
 trait IWriter extends IBase {
   /** [Method] Returns the value of nameProperty
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getNameProperty: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Formats the data for each record before sending it to the server
-  		* @param record Object The record that we are writing to the server.
-  		* @returns Object An object literal of name/value keys to be written to the server. By default this method returns the data property on the record.
-  		*/
+    * @param record Object The record that we are writing to the server.
+    * @returns Object An object literal of name/value keys to be written to the server. By default this method returns the data property on the record.
+    */
   var getRecordData: js.UndefOr[js.Function1[/* record */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Returns the value of writeAllFields
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getWriteAllFields: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Config Option] (String) */
   var nameProperty: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of nameProperty
-  		* @param nameProperty String The new value.
-  		*/
+    * @param nameProperty String The new value.
+    */
   var setNameProperty: js.UndefOr[js.Function1[/* nameProperty */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of writeAllFields
-  		* @param writeAllFields Boolean The new value.
-  		*/
+    * @param writeAllFields Boolean The new value.
+    */
   var setWriteAllFields: js.UndefOr[js.Function1[/* writeAllFields */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Prepares a Proxy s Ext data Request object
-  		* @param request Ext.data.Request The request object.
-  		* @returns Ext.data.Request The modified request object.
-  		*/
+    * @param request Ext.data.Request The request object.
+    * @returns Ext.data.Request The modified request object.
+    */
   var write: js.UndefOr[js.Function1[/* request */ js.UndefOr[IRequest], IRequest]] = js.undefined
   /** [Config Option] (Boolean) */
   var writeAllFields: js.UndefOr[Boolean] = js.undefined
@@ -91,11 +91,11 @@ object IWriter {
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setNameProperty != null) __obj.updateDynamic("setNameProperty")(js.Any.fromFunction1(setNameProperty))
     if (setWriteAllFields != null) __obj.updateDynamic("setWriteAllFields")(js.Any.fromFunction1(setWriteAllFields))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     if (write != null) __obj.updateDynamic("write")(js.Any.fromFunction1(write))
-    if (!js.isUndefined(writeAllFields)) __obj.updateDynamic("writeAllFields")(writeAllFields.asInstanceOf[js.Any])
+    if (!js.isUndefined(writeAllFields)) __obj.updateDynamic("writeAllFields")(writeAllFields.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWriter]
   }
 }

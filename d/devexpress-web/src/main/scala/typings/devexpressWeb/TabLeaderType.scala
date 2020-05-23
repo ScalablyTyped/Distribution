@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,29 +54,6 @@ object TabLeaderType extends js.Object {
     */
   @js.native
   sealed trait Underline extends TabLeaderType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TabLeaderType with Double] = js.native
-  /* 1 */ @js.native
-  object Dots extends TopLevel[Dots with Double]
-  
-  /* 6 */ @js.native
-  object EqualSign extends TopLevel[EqualSign with Double]
-  
-  /* 3 */ @js.native
-  object Hyphens extends TopLevel[Hyphens with Double]
-  
-  /* 2 */ @js.native
-  object MiddleDots extends TopLevel[MiddleDots with Double]
-  
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 5 */ @js.native
-  object ThickLine extends TopLevel[ThickLine with Double]
-  
-  /* 4 */ @js.native
-  object Underline extends TopLevel[Underline with Double]
   
 }
 

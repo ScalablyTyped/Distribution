@@ -1,9 +1,10 @@
 package typings.elasticElasticsearch.mod
 
-import typings.elasticElasticsearch.AnonData
+import typings.elasticElasticsearch.anon.Data
 import typings.elasticElasticsearch.connectionMod.AgentOptions
 import typings.node.tlsMod.ConnectionOptions
 import typings.node.urlMod.URL_
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,9 +12,9 @@ import scala.scalajs.js.annotation._
 // /Extend API
 trait NodeOptions extends js.Object {
   var agent: js.UndefOr[AgentOptions] = js.undefined
-  var headers: js.UndefOr[anyObject] = js.undefined
+  var headers: js.UndefOr[Record[String, _]] = js.undefined
   var id: js.UndefOr[String] = js.undefined
-  var roles: js.UndefOr[AnonData] = js.undefined
+  var roles: js.UndefOr[Data] = js.undefined
   var ssl: js.UndefOr[ConnectionOptions] = js.undefined
   var url: URL_
 }
@@ -23,9 +24,9 @@ object NodeOptions {
   def apply(
     url: URL_,
     agent: AgentOptions = null,
-    headers: anyObject = null,
+    headers: Record[String, _] = null,
     id: String = null,
-    roles: AnonData = null,
+    roles: Data = null,
     ssl: ConnectionOptions = null
   ): NodeOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])

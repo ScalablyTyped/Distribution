@@ -14,10 +14,12 @@ trait IClientBlockGetByNumRequest extends js.Object {
 object IClientBlockGetByNumRequest {
   @scala.inline
   def apply(
-    blockNum: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) = null
+    blockNum: js.UndefOr[
+      Null | Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
+    ] = js.undefined
   ): IClientBlockGetByNumRequest = {
     val __obj = js.Dynamic.literal()
-    if (blockNum != null) __obj.updateDynamic("blockNum")(blockNum.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockNum)) __obj.updateDynamic("blockNum")(blockNum.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientBlockGetByNumRequest]
   }
 }

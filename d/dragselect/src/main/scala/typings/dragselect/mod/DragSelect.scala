@@ -1,8 +1,8 @@
 package typings.dragselect.mod
 
-import typings.dragselect.AnonBottom
-import typings.dragselect.AnonX
-import typings.dragselect.AnonY
+import typings.dragselect.anon.Bottom
+import typings.dragselect.anon.X
+import typings.dragselect.anon.Y
 import typings.dragselect.dragselectBooleans.`false`
 import typings.dragselect.dragselectStrings.altKey
 import typings.dragselect.dragselectStrings.bottom
@@ -13,7 +13,7 @@ import typings.dragselect.dragselectStrings.right
 import typings.dragselect.dragselectStrings.shiftKey
 import typings.dragselect.dragselectStrings.top
 import typings.std.ArrayLike
-import typings.std.Document_
+import typings.std.Document
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.std.SVGElement
@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DragSelect extends js.Object {
-  var area: HTMLElement | SVGElement | Document_ = js.native
+  var area: HTMLElement | SVGElement | Document = js.native
   var autoScrollSpeed: Double = js.native
   var customStyles: Boolean = js.native
   var hoverClass: String = js.native
@@ -87,19 +87,19 @@ trait DragSelect extends js.Object {
     */
   def clearSelection(): js.Array[HTMLElement | SVGElement] = js.native
   def clearSelection(triggerCallback: Boolean): js.Array[HTMLElement | SVGElement] = js.native
-  def getAreaRect(area: Document_): AnonBottom = js.native
+  def getAreaRect(area: Document): Bottom = js.native
   /**
     * Returns the top/left/bottom/right/width/height
     * values of a node. If Area is document then everything
     * except the sizes will be nulled.
     * @param area
     */
-  def getAreaRect(area: HTMLElement): AnonBottom = js.native
-  def getAreaRect(area: SVGElement): AnonBottom = js.native
+  def getAreaRect(area: HTMLElement): Bottom = js.native
+  def getAreaRect(area: SVGElement): Bottom = js.native
   /**
     * Returns the last seen position of the cursor/selector
     */
-  def getCurrentCursorPosition(): AnonX = js.native
+  def getCurrentCursorPosition(): X = js.native
   /**
     * Returns cursor x, y position based on event object
     * Will be relative to an area including the scroll unless advised otherwise
@@ -108,50 +108,50 @@ trait DragSelect extends js.Object {
     * @param [ignoreScroll] if true, the scroll will be ignored
     * @return cursor { x/y }
     */
-  def getCursorPos(): AnonX = js.native
-  def getCursorPos(event: MouseEvent): AnonX = js.native
-  def getCursorPos(event: MouseEvent, _area: HTMLElement): AnonX = js.native
-  def getCursorPos(event: MouseEvent, _area: HTMLElement, ignoreScroll: Boolean): AnonX = js.native
-  def getCursorPos(event: MouseEvent, _area: SVGElement): AnonX = js.native
-  def getCursorPos(event: MouseEvent, _area: SVGElement, ignoreScroll: Boolean): AnonX = js.native
-  def getCursorPos(event: TouchEvent): AnonX = js.native
-  def getCursorPos(event: TouchEvent, _area: HTMLElement): AnonX = js.native
-  def getCursorPos(event: TouchEvent, _area: HTMLElement, ignoreScroll: Boolean): AnonX = js.native
-  def getCursorPos(event: TouchEvent, _area: SVGElement): AnonX = js.native
-  def getCursorPos(event: TouchEvent, _area: SVGElement, ignoreScroll: Boolean): AnonX = js.native
+  def getCursorPos(): X = js.native
+  def getCursorPos(event: MouseEvent): X = js.native
+  def getCursorPos(event: MouseEvent, _area: HTMLElement): X = js.native
+  def getCursorPos(event: MouseEvent, _area: HTMLElement, ignoreScroll: Boolean): X = js.native
+  def getCursorPos(event: MouseEvent, _area: SVGElement): X = js.native
+  def getCursorPos(event: MouseEvent, _area: SVGElement, ignoreScroll: Boolean): X = js.native
+  def getCursorPos(event: TouchEvent): X = js.native
+  def getCursorPos(event: TouchEvent, _area: HTMLElement): X = js.native
+  def getCursorPos(event: TouchEvent, _area: HTMLElement, ignoreScroll: Boolean): X = js.native
+  def getCursorPos(event: TouchEvent, _area: SVGElement): X = js.native
+  def getCursorPos(event: TouchEvent, _area: SVGElement, ignoreScroll: Boolean): X = js.native
   @JSName("getCursorPos")
-  def getCursorPos_false(event: MouseEvent, _area: `false`): AnonX = js.native
+  def getCursorPos_false(event: MouseEvent, _area: `false`): X = js.native
   @JSName("getCursorPos")
-  def getCursorPos_false(event: MouseEvent, _area: `false`, ignoreScroll: Boolean): AnonX = js.native
+  def getCursorPos_false(event: MouseEvent, _area: `false`, ignoreScroll: Boolean): X = js.native
   @JSName("getCursorPos")
-  def getCursorPos_false(event: TouchEvent, _area: `false`): AnonX = js.native
+  def getCursorPos_false(event: TouchEvent, _area: `false`): X = js.native
   @JSName("getCursorPos")
-  def getCursorPos_false(event: TouchEvent, _area: `false`, ignoreScroll: Boolean): AnonX = js.native
+  def getCursorPos_false(event: TouchEvent, _area: `false`, ignoreScroll: Boolean): X = js.native
   /**
     * Returns the cursor position difference between start and now
     * If usePreviousCursorDifference is passed,
     * it will output the cursor position difference between the previous selection and now
     * @param [usePreviousCursorDifference]
     */
-  def getCursorPositionDifference(): AnonX = js.native
-  def getCursorPositionDifference(usePreviousCursorDifference: Boolean): AnonX = js.native
+  def getCursorPositionDifference(): X = js.native
+  def getCursorPositionDifference(usePreviousCursorDifference: Boolean): X = js.native
   /**
     * Returns the starting/initial position of the cursor/selector
     */
-  def getInitialCursorPosition(): AnonX = js.native
+  def getInitialCursorPosition(): X = js.native
   /**
     * Returns the previous position of the cursor/selector
     */
-  def getPreviousCursorPosition(): AnonX = js.native
+  def getPreviousCursorPosition(): X = js.native
   /**
     * Returns the current x, y scroll value of a container
     * If container has no scroll it will return 0
     * @param [area]
     * @return scroll X/Y
     */
-  def getScroll(): AnonY = js.native
-  def getScroll(area: HTMLElement): AnonY = js.native
-  def getScroll(area: SVGElement): AnonY = js.native
+  def getScroll(): Y = js.native
+  def getScroll(area: HTMLElement): Y = js.native
+  def getScroll(area: SVGElement): Y = js.native
   /**
     * Gets all nodes that can be selected
     * @return this.selectables
@@ -161,17 +161,13 @@ trait DragSelect extends js.Object {
     * Returns the current selected nodes
     */
   def getSelection(): js.Array[HTMLElement | SVGElement] = js.native
-  def isCursorNearEdge(event: js.UndefOr[scala.Nothing], area: HTMLElement): `false` | left | right | top | bottom = js.native
-  def isCursorNearEdge(event: js.UndefOr[scala.Nothing], area: SVGElement): `false` | left | right | top | bottom = js.native
   /**
     * Check if the selector is near an edge of the area
     * @param [event] event object.
     * @param area the area.
     */
-  def isCursorNearEdge(event: MouseEvent, area: HTMLElement): `false` | left | right | top | bottom = js.native
-  def isCursorNearEdge(event: MouseEvent, area: SVGElement): `false` | left | right | top | bottom = js.native
-  def isCursorNearEdge(event: TouchEvent, area: HTMLElement): `false` | left | right | top | bottom = js.native
-  def isCursorNearEdge(event: TouchEvent, area: SVGElement): `false` | left | right | top | bottom = js.native
+  def isCursorNearEdge(event: js.UndefOr[MouseEvent | TouchEvent], area: HTMLElement): `false` | left | right | top | bottom = js.native
+  def isCursorNearEdge(event: js.UndefOr[MouseEvent | TouchEvent], area: SVGElement): `false` | left | right | top | bottom = js.native
   def moveCallback(event: MouseEvent): Unit = js.native
   def moveCallback(event: TouchEvent): Unit = js.native
   def moveStartCallback(event: MouseEvent): Unit = js.native

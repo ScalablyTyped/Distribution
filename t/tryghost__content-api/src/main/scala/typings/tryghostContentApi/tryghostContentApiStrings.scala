@@ -18,19 +18,16 @@ object tryghostContentApiStrings {
   sealed trait countDotposts extends IncludeParam
   
   @js.native
-  sealed trait draft extends TagVisibility
+  sealed trait html extends FormatParam
   
   @js.native
-  sealed trait html extends FormatParam
+  sealed trait internal extends TagVisibility
   
   @js.native
   sealed trait plaintext extends FormatParam
   
   @js.native
   sealed trait public extends TagVisibility
-  
-  @js.native
-  sealed trait scheduled extends TagVisibility
   
   @js.native
   sealed trait tags extends IncludeParam
@@ -48,15 +45,13 @@ object tryghostContentApiStrings {
   @scala.inline
   def countDotposts: countDotposts = "count.posts".asInstanceOf[countDotposts]
   @scala.inline
-  def draft: draft = "draft".asInstanceOf[draft]
-  @scala.inline
   def html: html = "html".asInstanceOf[html]
+  @scala.inline
+  def internal: internal = "internal".asInstanceOf[internal]
   @scala.inline
   def plaintext: plaintext = "plaintext".asInstanceOf[plaintext]
   @scala.inline
   def public: public = "public".asInstanceOf[public]
-  @scala.inline
-  def scheduled: scheduled = "scheduled".asInstanceOf[scheduled]
   @scala.inline
   def tags: tags = "tags".asInstanceOf[tags]
   @scala.inline

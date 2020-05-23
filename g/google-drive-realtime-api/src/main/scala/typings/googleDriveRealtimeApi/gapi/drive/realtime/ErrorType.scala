@@ -21,53 +21,32 @@ import scala.scalajs.js.annotation._
 */
 trait ErrorType extends js.Object
 
-@JSGlobal("gapi.drive.realtime.ErrorType")
-@js.native
-object ErrorType extends js.Object {
-  // An internal error occurred in the Drive Realtime API client.
-  var CLIENT_ERROR: ErrorType = js.native
-  // Another user created the document's initial state after
-  // gapi.drive.realtime.load was called but before the local
-  // creation was saved.
-  var CONCURRENT_CREATION: ErrorType = js.native
-  // A network error occurred on a request to the
-  // Realtime API server for a request which can not be
-  // retried. The document may no longer be used after
-  // this error has occurred. This error can only be
-  // corrected by reloading the document.
-  var FATAL_NETWORK_ERROR: ErrorType = js.native
-  // The user associated with the provided OAuth token
-  // is not authorized to access the provided document
-  // ID.
-  var FORBIDDEN: ErrorType = js.native
-  // A compound operation was still open at the end of a
-  // synchronous block. Compound operations must always
-  // be ended in the same synchronous block that they
-  // are started.
-  var INVALID_COMPOUND_OPERATION: ErrorType = js.native
-  // The provided JSON element does not have the
-  // expected type.
-  var INVALID_ELEMENT_TYPE: ErrorType = js.native
-  // The user tried to decode a brix model that
-  // contained invalid json.
-  var INVALID_JSON_SYNTAX: ErrorType = js.native
-  // The user tried to decode a brix model that was
-  // missing a neccessary property.
-  var MISSING_PROPERTY: ErrorType = js.native
-  // The provided document ID could not be found.
-  var NOT_FOUND: ErrorType = js.native
-  // The user does not have permission to edit the
-  // document.
-  var NO_WRITE_PERMISSION: ErrorType = js.native
-  // An internal error occurred in the Drive Realtime
-  // API server.
-  var SERVER_ERROR: ErrorType = js.native
-  // The provided OAuth token is no longer valid and
-  // must be refreshed.
-  var TOKEN_REFRESH_REQUIRED: ErrorType = js.native
-  // The provided JSON element has the correct JSON type
-  // but does not have the correct expected Realtime
-  // type.
-  var UNEXPECTED_ELEMENT: ErrorType = js.native
+object ErrorType {
+  @scala.inline
+  def client_error: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.client_error = "client_error".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.client_error]
+  @scala.inline
+  def concurrent_creation: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.concurrent_creation = "concurrent_creation".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.concurrent_creation]
+  @scala.inline
+  def fatal_network_error: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.fatal_network_error = "fatal_network_error".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.fatal_network_error]
+  @scala.inline
+  def forbidden: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.forbidden = "forbidden".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.forbidden]
+  @scala.inline
+  def invalid_compound_operation: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.invalid_compound_operation = "invalid_compound_operation".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.invalid_compound_operation]
+  @scala.inline
+  def invalid_element_type: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.invalid_element_type = "invalid_element_type".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.invalid_element_type]
+  @scala.inline
+  def invalid_json_syntax: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.invalid_json_syntax = "invalid_json_syntax".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.invalid_json_syntax]
+  @scala.inline
+  def missing_property: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.missing_property = "missing_property".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.missing_property]
+  @scala.inline
+  def no_write_permission: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.no_write_permission = "no_write_permission".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.no_write_permission]
+  @scala.inline
+  def not_found: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.not_found = "not_found".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.not_found]
+  @scala.inline
+  def server_error: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.server_error = "server_error".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.server_error]
+  @scala.inline
+  def token_refresh_required: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.token_refresh_required = "token_refresh_required".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.token_refresh_required]
+  @scala.inline
+  def unexpected_element: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.unexpected_element = "unexpected_element".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.unexpected_element]
 }
 

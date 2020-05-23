@@ -33,11 +33,11 @@ object FancyBoxSlideShow {
     stop: () => Unit,
     toggle: () => Unit,
     $button: JQuery = null,
-    timer: Int | Double = null
+    timer: js.UndefOr[Double] = js.undefined
   ): FancyBoxSlideShow = {
     val __obj = js.Dynamic.literal($progress = $progress.asInstanceOf[js.Any], clear = js.Any.fromFunction0(clear), init = js.Any.fromFunction0(init), instance = instance.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any], set = js.Any.fromFunction1(set), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop), toggle = js.Any.fromFunction0(toggle))
     if ($button != null) __obj.updateDynamic("$button")($button.asInstanceOf[js.Any])
-    if (timer != null) __obj.updateDynamic("timer")(timer.asInstanceOf[js.Any])
+    if (!js.isUndefined(timer)) __obj.updateDynamic("timer")(timer.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FancyBoxSlideShow]
   }
 }

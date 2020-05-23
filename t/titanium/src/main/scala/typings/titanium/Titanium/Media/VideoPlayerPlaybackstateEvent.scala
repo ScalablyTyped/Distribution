@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the [playbackState](Titanium.Media.VideoPlayer.playbackState) changes.
-		 */
+  * Fired when the [playbackState](Titanium.Media.VideoPlayer.playbackState) changes.
+  */
 trait VideoPlayerPlaybackstateEvent extends VideoPlayerBaseEvent {
   /**
-  			 * Current value of the [playbackState](Titanium.Media.VideoPlayer.playbackState) property.
-  			 */
+    * Current value of the [playbackState](Titanium.Media.VideoPlayer.playbackState) property.
+    */
   var playbackState: Double
 }
 

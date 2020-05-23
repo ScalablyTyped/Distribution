@@ -1,19 +1,19 @@
 package typings.gapiClientPhotoslibrary.gapi.client.photoslibrary
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientPhotoslibrary.AnonKey
-import typings.gapiClientPhotoslibrary.AnonMediaItemId
-import typings.gapiClientPhotoslibrary.AnonMediaItemIds
-import typings.gapiClientPhotoslibrary.AnonPageSize
-import typings.gapiClientPhotoslibrary.AnonQuotaUser
-import typings.gapiClientPhotoslibrary.AnonResource
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientPhotoslibrary.anon.Key
+import typings.gapiClientPhotoslibrary.anon.MediaItemId
+import typings.gapiClientPhotoslibrary.anon.MediaItemIds
+import typings.gapiClientPhotoslibrary.anon.PageSize
+import typings.gapiClientPhotoslibrary.anon.QuotaUser
+import typings.gapiClientPhotoslibrary.anon.Resource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait MediaItemsResource extends js.Object {
-  def batchCreate(request: AnonKey, body: BatchCreateMediaItemsRequest): Request_[BatchCreateMediaItemsResponse] = js.native
+  def batchCreate(request: Key, body: BatchCreateMediaItemsRequest): Request[BatchCreateMediaItemsResponse] = js.native
   /**
     * Creates one or more media items in a user's Google Photos library.
     *
@@ -35,17 +35,17 @@ trait MediaItemsResource extends js.Object {
     * owner, you are not allowed to position the media item. Doing so will result
     * in a `BAD REQUEST` error.
     */
-  def batchCreate(request: AnonQuotaUser): Request_[BatchCreateMediaItemsResponse] = js.native
+  def batchCreate(request: QuotaUser): Request[BatchCreateMediaItemsResponse] = js.native
   /**
     * Returns the list of media items for the specified media item identifiers.
     * Items are returned in the same order as the supplied identifiers.
     */
-  def batchGet(request: AnonMediaItemIds): Request_[BatchGetMediaItemsResponse] = js.native
+  def batchGet(request: MediaItemIds): Request[BatchGetMediaItemsResponse] = js.native
   /** Returns the media item for the specified media item identifier. */
-  def get(request: AnonMediaItemId): Request_[MediaItem] = js.native
+  def get(request: MediaItemId): Request[MediaItem] = js.native
   /** List all media items from a user's Google Photos library. */
-  def list(request: AnonPageSize): Request_[ListMediaItemsResponse] = js.native
-  def search(request: AnonKey, body: SearchMediaItemsRequest): Request_[SearchMediaItemsResponse] = js.native
+  def list(request: PageSize): Request[ListMediaItemsResponse] = js.native
+  def search(request: Key, body: SearchMediaItemsRequest): Request[SearchMediaItemsResponse] = js.native
   /**
     * Searches for media items in a user's Google Photos library.
     * If no filters are set, then all media items in the user's library are
@@ -55,6 +55,6 @@ trait MediaItemsResource extends js.Object {
     * user's library are listed. If you set both the album and the filters, the
     * request results in an error.
     */
-  def search(request: AnonResource): Request_[SearchMediaItemsResponse] = js.native
+  def search(request: Resource): Request[SearchMediaItemsResponse] = js.native
 }
 

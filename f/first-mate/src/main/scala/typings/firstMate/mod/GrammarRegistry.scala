@@ -1,7 +1,7 @@
 package typings.firstMate.mod
 
 import typings.eventKit.mod.Disposable
-import typings.firstMate.AnonMaxLineLength
+import typings.firstMate.anon.MaxLineLength
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("first-mate", "GrammarRegistry")
 @js.native
 class GrammarRegistry () extends js.Object {
-  def this(options: AnonMaxLineLength) = this()
+  def this(options: MaxLineLength) = this()
   var maxLineLength: Double = js.native
   var maxTokensPerLine: Double = js.native
   /**

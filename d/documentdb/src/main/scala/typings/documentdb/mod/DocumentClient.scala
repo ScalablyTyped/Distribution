@@ -102,7 +102,7 @@ class DocumentClient protected () extends js.Object {
     * @param documentsFeedOrDatabaseLink    - The self-link of the collection.
     * @param document          - Represents the body of the document. Can contain any number of user defined properties.
     * @param [options]         - The request options.
-    * @param callback 			- The callback for the request.
+    * @param callback             - The callback for the request.
     */
   def createDocument[TDocument](
     documentsFeedOrDatabaseLink: String,

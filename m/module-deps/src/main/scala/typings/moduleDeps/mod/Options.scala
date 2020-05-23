@@ -110,7 +110,7 @@ trait Options
 object Options {
   @scala.inline
   def apply(
-    StringDictionary: /* prop */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     basedir: String = null,
     cache: StringDictionary[js.Any] = null,
     detect: /* source */ String => js.Array[String] = null,
@@ -147,7 +147,7 @@ object Options {
     if (fileCache != null) __obj.updateDynamic("fileCache")(fileCache.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (globalTransform != null) __obj.updateDynamic("globalTransform")(globalTransform.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreMissing)) __obj.updateDynamic("ignoreMissing")(ignoreMissing.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreMissing)) __obj.updateDynamic("ignoreMissing")(ignoreMissing.get.asInstanceOf[js.Any])
     if (modules != null) __obj.updateDynamic("modules")(modules.asInstanceOf[js.Any])
     if (noParse != null) __obj.updateDynamic("noParse")(noParse.asInstanceOf[js.Any])
     if (packageCache != null) __obj.updateDynamic("packageCache")(packageCache.asInstanceOf[js.Any])

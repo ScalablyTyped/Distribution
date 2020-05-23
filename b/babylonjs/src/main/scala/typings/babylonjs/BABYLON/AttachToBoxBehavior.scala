@@ -4,51 +4,51 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.AttachToBoxBehavior")
-@js.native
-class AttachToBoxBehavior protected () extends Behavior[Mesh] {
-  /**
-    * Creates the AttachToBoxBehavior, used to attach UI to the closest face of the box to a camera
-    * @param ui The transform node that should be attched to the mesh
-    */
-  def this(ui: TransformNode) = this()
-  var _closestFace: js.Any = js.native
-  var _faceVectors: js.Any = js.native
-  var _lookAtTmpMatrix: js.Any = js.native
-  var _lookAtToRef: js.Any = js.native
-  var _onRenderObserver: js.Any = js.native
-  var _scene: js.Any = js.native
-  var _target: js.Any = js.native
-  var _tmpMatrix: js.Any = js.native
-  var _tmpVector: js.Any = js.native
-  var _zeroVector: js.Any = js.native
+trait AttachToBoxBehavior extends Behavior[Mesh] {
+  var _closestFace: js.Any
+  var _faceVectors: js.Any
+  var _lookAtTmpMatrix: js.Any
+  var _lookAtToRef: js.Any
+  var _onRenderObserver: js.Any
+  var _scene: js.Any
+  var _target: js.Any
+  var _tmpMatrix: js.Any
+  var _tmpVector: js.Any
+  var _zeroVector: js.Any
   /**
     * The distance from the bottom of the face that the UI should be attached to (default: 0.15)
     */
-  var distanceAwayFromBottomOfFace: Double = js.native
+  var distanceAwayFromBottomOfFace: Double
   /**
     * The distance away from the face of the mesh that the UI should be attached to (default: 0.15)
     */
-  var distanceAwayFromFace: Double = js.native
-  /** gets or sets behavior's name */
-  /* CompleteClass */
-  override var name: String = js.native
-  var ui: js.Any = js.native
-  /**
-    * Called when the behavior is attached to a target
-    * @param target defines the target where the behavior is attached to
-    */
-  /* CompleteClass */
-  override def attach(target: Mesh): Unit = js.native
-  /**
-    * Called when the behavior is detached from its target
-    */
-  /* CompleteClass */
-  override def detach(): Unit = js.native
-  /**
-    * Function called when the behavior needs to be initialized (after attaching it to a target)
-    */
-  /* CompleteClass */
-  override def init(): Unit = js.native
+  var distanceAwayFromFace: Double
+  var ui: js.Any
+}
+
+object AttachToBoxBehavior {
+  @scala.inline
+  def apply(
+    _closestFace: js.Any,
+    _faceVectors: js.Any,
+    _lookAtTmpMatrix: js.Any,
+    _lookAtToRef: js.Any,
+    _onRenderObserver: js.Any,
+    _scene: js.Any,
+    _target: js.Any,
+    _tmpMatrix: js.Any,
+    _tmpVector: js.Any,
+    _zeroVector: js.Any,
+    attach: Mesh => Unit,
+    detach: () => Unit,
+    distanceAwayFromBottomOfFace: Double,
+    distanceAwayFromFace: Double,
+    init: () => Unit,
+    name: String,
+    ui: js.Any
+  ): AttachToBoxBehavior = {
+    val __obj = js.Dynamic.literal(_closestFace = _closestFace.asInstanceOf[js.Any], _faceVectors = _faceVectors.asInstanceOf[js.Any], _lookAtTmpMatrix = _lookAtTmpMatrix.asInstanceOf[js.Any], _lookAtToRef = _lookAtToRef.asInstanceOf[js.Any], _onRenderObserver = _onRenderObserver.asInstanceOf[js.Any], _scene = _scene.asInstanceOf[js.Any], _target = _target.asInstanceOf[js.Any], _tmpMatrix = _tmpMatrix.asInstanceOf[js.Any], _tmpVector = _tmpVector.asInstanceOf[js.Any], _zeroVector = _zeroVector.asInstanceOf[js.Any], attach = js.Any.fromFunction1(attach), detach = js.Any.fromFunction0(detach), distanceAwayFromBottomOfFace = distanceAwayFromBottomOfFace.asInstanceOf[js.Any], distanceAwayFromFace = distanceAwayFromFace.asInstanceOf[js.Any], init = js.Any.fromFunction0(init), name = name.asInstanceOf[js.Any], ui = ui.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AttachToBoxBehavior]
+  }
 }
 

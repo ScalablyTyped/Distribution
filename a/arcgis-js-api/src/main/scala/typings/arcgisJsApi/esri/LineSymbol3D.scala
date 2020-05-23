@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`line-3d`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,8 +20,4 @@ trait LineSymbol3D
   @JSName("type")
   val type_LineSymbol3D: `line-3d` = js.native
 }
-
-@JSGlobal("__esri.LineSymbol3D")
-@js.native
-object LineSymbol3D extends TopLevel[LineSymbol3DConstructor]
 

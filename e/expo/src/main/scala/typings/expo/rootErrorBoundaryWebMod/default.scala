@@ -1,6 +1,6 @@
 package typings.expo.rootErrorBoundaryWebMod
 
-import typings.expo.AnonError
+import typings.expo.anon.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends RootErrorBoundary
 @JSImport("expo/build/launch/RootErrorBoundary.web", JSImport.Default)
 @js.native
 object default extends js.Object {
-  def getDerivedStateFromError(error: js.Any): AnonError = js.native
+  def getDerivedStateFromError(error: js.Any): Error = js.native
 }
 

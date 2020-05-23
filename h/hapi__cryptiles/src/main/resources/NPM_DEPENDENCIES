@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@hapi/cryptiles" : "5.0.0"
+      "@hapi/cryptiles" : "5.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@hapi/cryptiles" : "5.0.0"
+      "@hapi/cryptiles" : "5.1.0"
     }
   ],
   "compile-devDependencies" : [

@@ -30,13 +30,13 @@ object TemporaryCredential {
     InstanceId: String = null,
     Password: String = null,
     Username: String = null,
-    ValidForInMinutes: Int | scala.Double = null
+    ValidForInMinutes: js.UndefOr[Integer] = js.undefined
   ): TemporaryCredential = {
     val __obj = js.Dynamic.literal()
     if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
     if (Password != null) __obj.updateDynamic("Password")(Password.asInstanceOf[js.Any])
     if (Username != null) __obj.updateDynamic("Username")(Username.asInstanceOf[js.Any])
-    if (ValidForInMinutes != null) __obj.updateDynamic("ValidForInMinutes")(ValidForInMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(ValidForInMinutes)) __obj.updateDynamic("ValidForInMinutes")(ValidForInMinutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemporaryCredential]
   }
 }

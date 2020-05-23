@@ -97,29 +97,29 @@ trait ChartTrendlineUpdateData extends js.Object {
 object ChartTrendlineUpdateData {
   @scala.inline
   def apply(
-    backwardPeriod: Int | Double = null,
+    backwardPeriod: js.UndefOr[Double] = js.undefined,
     format: ChartTrendlineFormatUpdateData = null,
-    forwardPeriod: Int | Double = null,
+    forwardPeriod: js.UndefOr[Double] = js.undefined,
     intercept: js.Any = null,
     label: ChartTrendlineLabelUpdateData = null,
-    movingAveragePeriod: Int | Double = null,
+    movingAveragePeriod: js.UndefOr[Double] = js.undefined,
     name: String = null,
-    polynomialOrder: Int | Double = null,
+    polynomialOrder: js.UndefOr[Double] = js.undefined,
     showEquation: js.UndefOr[Boolean] = js.undefined,
     showRSquared: js.UndefOr[Boolean] = js.undefined,
     `type`: ChartTrendlineType | Linear | Exponential | Logarithmic | MovingAverage | Polynomial | Power = null
   ): ChartTrendlineUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (backwardPeriod != null) __obj.updateDynamic("backwardPeriod")(backwardPeriod.asInstanceOf[js.Any])
+    if (!js.isUndefined(backwardPeriod)) __obj.updateDynamic("backwardPeriod")(backwardPeriod.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (forwardPeriod != null) __obj.updateDynamic("forwardPeriod")(forwardPeriod.asInstanceOf[js.Any])
+    if (!js.isUndefined(forwardPeriod)) __obj.updateDynamic("forwardPeriod")(forwardPeriod.get.asInstanceOf[js.Any])
     if (intercept != null) __obj.updateDynamic("intercept")(intercept.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (movingAveragePeriod != null) __obj.updateDynamic("movingAveragePeriod")(movingAveragePeriod.asInstanceOf[js.Any])
+    if (!js.isUndefined(movingAveragePeriod)) __obj.updateDynamic("movingAveragePeriod")(movingAveragePeriod.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (polynomialOrder != null) __obj.updateDynamic("polynomialOrder")(polynomialOrder.asInstanceOf[js.Any])
-    if (!js.isUndefined(showEquation)) __obj.updateDynamic("showEquation")(showEquation.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRSquared)) __obj.updateDynamic("showRSquared")(showRSquared.asInstanceOf[js.Any])
+    if (!js.isUndefined(polynomialOrder)) __obj.updateDynamic("polynomialOrder")(polynomialOrder.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showEquation)) __obj.updateDynamic("showEquation")(showEquation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRSquared)) __obj.updateDynamic("showRSquared")(showRSquared.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartTrendlineUpdateData]
   }

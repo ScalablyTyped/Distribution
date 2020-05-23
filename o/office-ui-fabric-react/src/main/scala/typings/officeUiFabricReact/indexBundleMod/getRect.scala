@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact.indexBundleMod
 
 import typings.std.HTMLElement
-import typings.std.Window_
+import typings.std.Window
 import typings.uifabricUtilities.irectangleMod.IRectangle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
 object getRect extends js.Object {
   def apply(): js.UndefOr[IRectangle] = js.native
   def apply(element: HTMLElement): js.UndefOr[IRectangle] = js.native
-  def apply(element: Window_): js.UndefOr[IRectangle] = js.native
+  def apply(element: Window): js.UndefOr[IRectangle] = js.native
 }
 

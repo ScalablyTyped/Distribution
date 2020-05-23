@@ -14,16 +14,16 @@ trait TracerOptions extends js.Object {
 object TracerOptions {
   @scala.inline
   def apply(
-    fields: Fields = null,
+    fields: js.UndefOr[Null | Fields] = js.undefined,
     noStream: js.UndefOr[Boolean] = js.undefined,
-    objectMode: js.UndefOr[Boolean] = js.undefined,
-    parent: Tracer = null
+    objectMode: js.UndefOr[Null | Boolean] = js.undefined,
+    parent: js.UndefOr[Null | Tracer] = js.undefined
   ): TracerOptions = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(noStream)) __obj.updateDynamic("noStream")(noStream.asInstanceOf[js.Any])
+    if (!js.isUndefined(fields)) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (!js.isUndefined(noStream)) __obj.updateDynamic("noStream")(noStream.get.asInstanceOf[js.Any])
     if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[TracerOptions]
   }
 }

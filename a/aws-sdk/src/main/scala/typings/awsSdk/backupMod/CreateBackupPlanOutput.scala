@@ -19,7 +19,7 @@ trait CreateBackupPlanOutput extends js.Object {
     */
   var CreationDate: js.UndefOr[timestamp] = js.native
   /**
-    * Unique, randomly generated, Unicode, UTF-8 encoded strings that are at most 1024 bytes long. They cannot be edited.
+    * Unique, randomly generated, Unicode, UTF-8 encoded strings that are at most 1,024 bytes long. They cannot be edited.
     */
   var VersionId: js.UndefOr[String] = js.native
 }

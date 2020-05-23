@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,14 +45,5 @@ trait Range extends AbstractRange {
   def setStartAfter(node: Node): Unit = js.native
   def setStartBefore(node: Node): Unit = js.native
   def surroundContents(newParent: Node): Unit = js.native
-}
-
-@JSGlobal("Range")
-@js.native
-object Range extends Instantiable0[Range] {
-  val END_TO_END: Double = js.native
-  val END_TO_START: Double = js.native
-  val START_TO_END: Double = js.native
-  val START_TO_START: Double = js.native
 }
 

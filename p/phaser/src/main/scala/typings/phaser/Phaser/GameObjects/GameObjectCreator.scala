@@ -27,14 +27,8 @@ import scala.scalajs.js.annotation._
   * Game Objects directly register themselves with the Creator and inject their own creation
   * methods into the class.
   */
-@JSGlobal("Phaser.GameObjects.GameObjectCreator")
 @js.native
-class GameObjectCreator protected () extends js.Object {
-  /**
-    * 
-    * @param scene The Scene to which this Game Object Factory belongs.
-    */
-  def this(scene: Scene) = this()
+trait GameObjectCreator extends js.Object {
   /**
     * A reference to the Scene Display List.
     */
@@ -149,6 +143,15 @@ class GameObjectCreator protected () extends js.Object {
     */
   def renderTexture(config: RenderTextureConfig): RenderTexture = js.native
   def renderTexture(config: RenderTextureConfig, addToScene: Boolean): RenderTexture = js.native
+  /**
+    * Creates a new Rope Game Object and returns it.
+    * 
+    * Note: This method will only be available if the Rope Game Object and WebGL support have been built into Phaser.
+    * @param config The configuration object this Game Object will use to create itself.
+    * @param addToScene Add this Game Object to the Scene after creating it? If set this argument overrides the `add` property in the config object.
+    */
+  def rope(config: js.Object): Rope = js.native
+  def rope(config: js.Object, addToScene: Boolean): Rope = js.native
   /**
     * Creates a new Shader Game Object and returns it.
     * 

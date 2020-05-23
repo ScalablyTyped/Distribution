@@ -33,46 +33,46 @@ object MarkdownAbstractSyntaxTree {
   def apply(
     `type`: String,
     align: js.Array[AlignType] = null,
-    alt: String = null,
-    checked: js.UndefOr[Boolean] = js.undefined,
+    alt: js.UndefOr[Null | String] = js.undefined,
+    checked: js.UndefOr[Null | Boolean] = js.undefined,
     children: js.Array[MarkdownAbstractSyntaxTree] = null,
     data: StringDictionary[js.Any] = null,
-    depth: Int | Double = null,
-    height: Int | Double = null,
+    depth: js.UndefOr[Double] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
     identifier: String = null,
-    index: Int | Double = null,
-    lang: String = null,
+    index: js.UndefOr[Double] = js.undefined,
+    lang: js.UndefOr[Null | String] = js.undefined,
     loose: js.UndefOr[Boolean] = js.undefined,
     ordered: js.UndefOr[Boolean] = js.undefined,
     position: Position = null,
     referenceType: ReferenceType = null,
-    start: Int | Double = null,
-    title: String = null,
+    start: js.UndefOr[Null | Double] = js.undefined,
+    title: js.UndefOr[Null | String] = js.undefined,
     url: String = null,
     value: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): MarkdownAbstractSyntaxTree = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (!js.isUndefined(alt)) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (!js.isUndefined(loose)) __obj.updateDynamic("loose")(loose.asInstanceOf[js.Any])
-    if (!js.isUndefined(ordered)) __obj.updateDynamic("ordered")(ordered.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lang)) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
+    if (!js.isUndefined(loose)) __obj.updateDynamic("loose")(loose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ordered)) __obj.updateDynamic("ordered")(ordered.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (referenceType != null) __obj.updateDynamic("referenceType")(referenceType.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkdownAbstractSyntaxTree]
   }
 }

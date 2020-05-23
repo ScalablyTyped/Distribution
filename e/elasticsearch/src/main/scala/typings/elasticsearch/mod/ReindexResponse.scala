@@ -1,6 +1,6 @@
 package typings.elasticsearch.mod
 
-import typings.elasticsearch.AnonBulk
+import typings.elasticsearch.anon.Bulk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ object ReindexResponse {
     failures: js.Array[_],
     noops: Double,
     requests_per_second: Double,
-    retries: AnonBulk,
+    retries: Bulk,
     throttled_millis: Double,
     throttled_until_millis: Double,
     timed_out: Boolean,

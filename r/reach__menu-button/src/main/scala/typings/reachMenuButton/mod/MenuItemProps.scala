@@ -1,6 +1,6 @@
 package typings.reachMenuButton.mod
 
-import typings.reachMenuButton.PartialState
+import typings.reachMenuButton.anon.PartialState
 import typings.reachMenuButton.reachMenuButtonStrings.`additions text`
 import typings.reachMenuButton.reachMenuButtonStrings.`inline`
 import typings.reachMenuButton.reachMenuButtonStrings.additions
@@ -46,7 +46,7 @@ import typings.reachMenuButton.reachMenuButtonStrings.tree
 import typings.reachMenuButton.reachMenuButtonStrings.url
 import typings.reachMenuButton.reachMenuButtonStrings.vertical
 import typings.reachMenuButton.reachMenuButtonStrings.yes
-import typings.react.AnonHtml
+import typings.react.anon.Html
 import typings.react.mod.AnimationEventHandler
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
@@ -302,7 +302,7 @@ trait MenuItemProps extends js.Object {
   var controls: js.UndefOr[Boolean] = js.native
   var coords: js.UndefOr[String] = js.native
   var crossOrigin: js.UndefOr[String] = js.native
-  var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.native
+  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
   var data: js.UndefOr[String] = js.native
   var datatype: js.UndefOr[String] = js.native
   var dateTime: js.UndefOr[String] = js.native

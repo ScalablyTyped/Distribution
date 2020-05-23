@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -89,8 +88,4 @@ trait Graphic
     */
   def setAttribute(name: String, newValue: js.Any): Unit = js.native
 }
-
-@JSGlobal("__esri.Graphic")
-@js.native
-object Graphic extends TopLevel[GraphicConstructor]
 

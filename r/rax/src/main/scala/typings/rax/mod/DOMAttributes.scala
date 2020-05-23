@@ -1,8 +1,8 @@
 package typings.rax.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.rax.AnonHtml
-import typings.std.Event_
+import typings.rax.anon.Html
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait DOMAttributes[T]
   extends // weex
 /* key */ StringDictionary[js.Any] {
   var children: js.UndefOr[RaxNode] = js.undefined
-  var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.undefined
+  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
   // Media Events
   var onAbort: js.UndefOr[RaxEventHandler[T]] = js.undefined
   var onAbortCapture: js.UndefOr[RaxEventHandler[T]] = js.undefined
@@ -198,12 +198,11 @@ trait DOMAttributes[T]
 object DOMAttributes {
   @scala.inline
   def apply[T](
-    StringDictionary: // weex
-  /* key */ StringDictionary[js.Any] = null,
-    children: RaxNode = null,
-    dangerouslySetInnerHTML: AnonHtml = null,
-    onAbort: SyntheticEvent[T, Event_] => Unit = null,
-    onAbortCapture: SyntheticEvent[T, Event_] => Unit = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    children: js.UndefOr[Null | RaxNode] = js.undefined,
+    dangerouslySetInnerHTML: Html = null,
+    onAbort: SyntheticEvent[T, Event] => Unit = null,
+    onAbortCapture: SyntheticEvent[T, Event] => Unit = null,
     onAnimationEnd: AnimationEvent[T] => Unit = null,
     onAnimationEndCapture: AnimationEvent[T] => Unit = null,
     onAnimationIteration: AnimationEvent[T] => Unit = null,
@@ -217,10 +216,10 @@ object DOMAttributes {
     onBeforeInputCapture: FormEvent[T] => Unit = null,
     onBlur: FocusEvent[T] => Unit = null,
     onBlurCapture: FocusEvent[T] => Unit = null,
-    onCanPlay: SyntheticEvent[T, Event_] => Unit = null,
-    onCanPlayCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onCanPlayThrough: SyntheticEvent[T, Event_] => Unit = null,
-    onCanPlayThroughCapture: SyntheticEvent[T, Event_] => Unit = null,
+    onCanPlay: SyntheticEvent[T, Event] => Unit = null,
+    onCanPlayCapture: SyntheticEvent[T, Event] => Unit = null,
+    onCanPlayThrough: SyntheticEvent[T, Event] => Unit = null,
+    onCanPlayThroughCapture: SyntheticEvent[T, Event] => Unit = null,
     onChange: FormEvent[T] => Unit = null,
     onChangeCapture: FormEvent[T] => Unit = null,
     onClick: MouseEvent[T, NativeMouseEvent] => Unit = null,
@@ -256,16 +255,16 @@ object DOMAttributes {
     onDragStartCapture: DragEvent[T] => Unit = null,
     onDrop: DragEvent[T] => Unit = null,
     onDropCapture: DragEvent[T] => Unit = null,
-    onDurationChange: SyntheticEvent[T, Event_] => Unit = null,
-    onDurationChangeCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onEmptied: SyntheticEvent[T, Event_] => Unit = null,
-    onEmptiedCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onEncrypted: SyntheticEvent[T, Event_] => Unit = null,
-    onEncryptedCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onEnded: SyntheticEvent[T, Event_] => Unit = null,
-    onEndedCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onError: SyntheticEvent[T, Event_] => Unit = null,
-    onErrorCapture: SyntheticEvent[T, Event_] => Unit = null,
+    onDurationChange: SyntheticEvent[T, Event] => Unit = null,
+    onDurationChangeCapture: SyntheticEvent[T, Event] => Unit = null,
+    onEmptied: SyntheticEvent[T, Event] => Unit = null,
+    onEmptiedCapture: SyntheticEvent[T, Event] => Unit = null,
+    onEncrypted: SyntheticEvent[T, Event] => Unit = null,
+    onEncryptedCapture: SyntheticEvent[T, Event] => Unit = null,
+    onEnded: SyntheticEvent[T, Event] => Unit = null,
+    onEndedCapture: SyntheticEvent[T, Event] => Unit = null,
+    onError: SyntheticEvent[T, Event] => Unit = null,
+    onErrorCapture: SyntheticEvent[T, Event] => Unit = null,
     onFocus: FocusEvent[T] => Unit = null,
     onFocusCapture: FocusEvent[T] => Unit = null,
     onGotPointerCapture: PointerEvent[T] => Unit = null,
@@ -280,14 +279,14 @@ object DOMAttributes {
     onKeyPressCapture: KeyboardEvent[T] => Unit = null,
     onKeyUp: KeyboardEvent[T] => Unit = null,
     onKeyUpCapture: KeyboardEvent[T] => Unit = null,
-    onLoad: SyntheticEvent[T, Event_] => Unit = null,
-    onLoadCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onLoadStart: SyntheticEvent[T, Event_] => Unit = null,
-    onLoadStartCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onLoadedData: SyntheticEvent[T, Event_] => Unit = null,
-    onLoadedDataCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onLoadedMetadata: SyntheticEvent[T, Event_] => Unit = null,
-    onLoadedMetadataCapture: SyntheticEvent[T, Event_] => Unit = null,
+    onLoad: SyntheticEvent[T, Event] => Unit = null,
+    onLoadCapture: SyntheticEvent[T, Event] => Unit = null,
+    onLoadStart: SyntheticEvent[T, Event] => Unit = null,
+    onLoadStartCapture: SyntheticEvent[T, Event] => Unit = null,
+    onLoadedData: SyntheticEvent[T, Event] => Unit = null,
+    onLoadedDataCapture: SyntheticEvent[T, Event] => Unit = null,
+    onLoadedMetadata: SyntheticEvent[T, Event] => Unit = null,
+    onLoadedMetadataCapture: SyntheticEvent[T, Event] => Unit = null,
     onLongpress: MouseEvent[T, NativeMouseEvent] => Unit = null,
     onLostPointerCapture: PointerEvent[T] => Unit = null,
     onLostPointerCaptureCapture: PointerEvent[T] => Unit = null,
@@ -305,12 +304,12 @@ object DOMAttributes {
     onMouseUpCapture: MouseEvent[T, NativeMouseEvent] => Unit = null,
     onPaste: ClipboardEvent[T] => Unit = null,
     onPasteCapture: ClipboardEvent[T] => Unit = null,
-    onPause: SyntheticEvent[T, Event_] => Unit = null,
-    onPauseCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onPlay: SyntheticEvent[T, Event_] => Unit = null,
-    onPlayCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onPlaying: SyntheticEvent[T, Event_] => Unit = null,
-    onPlayingCapture: SyntheticEvent[T, Event_] => Unit = null,
+    onPause: SyntheticEvent[T, Event] => Unit = null,
+    onPauseCapture: SyntheticEvent[T, Event] => Unit = null,
+    onPlay: SyntheticEvent[T, Event] => Unit = null,
+    onPlayCapture: SyntheticEvent[T, Event] => Unit = null,
+    onPlaying: SyntheticEvent[T, Event] => Unit = null,
+    onPlayingCapture: SyntheticEvent[T, Event] => Unit = null,
     onPointerCancel: PointerEvent[T] => Unit = null,
     onPointerCancelCapture: PointerEvent[T] => Unit = null,
     onPointerDown: PointerEvent[T] => Unit = null,
@@ -327,28 +326,28 @@ object DOMAttributes {
     onPointerOverCapture: PointerEvent[T] => Unit = null,
     onPointerUp: PointerEvent[T] => Unit = null,
     onPointerUpCapture: PointerEvent[T] => Unit = null,
-    onProgress: SyntheticEvent[T, Event_] => Unit = null,
-    onProgressCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onRateChange: SyntheticEvent[T, Event_] => Unit = null,
-    onRateChangeCapture: SyntheticEvent[T, Event_] => Unit = null,
+    onProgress: SyntheticEvent[T, Event] => Unit = null,
+    onProgressCapture: SyntheticEvent[T, Event] => Unit = null,
+    onRateChange: SyntheticEvent[T, Event] => Unit = null,
+    onRateChangeCapture: SyntheticEvent[T, Event] => Unit = null,
     onReset: FormEvent[T] => Unit = null,
     onResetCapture: FormEvent[T] => Unit = null,
     onScroll: UIEvent[T] => Unit = null,
     onScrollCapture: UIEvent[T] => Unit = null,
-    onSeeked: SyntheticEvent[T, Event_] => Unit = null,
-    onSeekedCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onSeeking: SyntheticEvent[T, Event_] => Unit = null,
-    onSeekingCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onSelect: SyntheticEvent[T, Event_] => Unit = null,
-    onSelectCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onStalled: SyntheticEvent[T, Event_] => Unit = null,
-    onStalledCapture: SyntheticEvent[T, Event_] => Unit = null,
+    onSeeked: SyntheticEvent[T, Event] => Unit = null,
+    onSeekedCapture: SyntheticEvent[T, Event] => Unit = null,
+    onSeeking: SyntheticEvent[T, Event] => Unit = null,
+    onSeekingCapture: SyntheticEvent[T, Event] => Unit = null,
+    onSelect: SyntheticEvent[T, Event] => Unit = null,
+    onSelectCapture: SyntheticEvent[T, Event] => Unit = null,
+    onStalled: SyntheticEvent[T, Event] => Unit = null,
+    onStalledCapture: SyntheticEvent[T, Event] => Unit = null,
     onSubmit: FormEvent[T] => Unit = null,
     onSubmitCapture: FormEvent[T] => Unit = null,
-    onSuspend: SyntheticEvent[T, Event_] => Unit = null,
-    onSuspendCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onTimeUpdate: SyntheticEvent[T, Event_] => Unit = null,
-    onTimeUpdateCapture: SyntheticEvent[T, Event_] => Unit = null,
+    onSuspend: SyntheticEvent[T, Event] => Unit = null,
+    onSuspendCapture: SyntheticEvent[T, Event] => Unit = null,
+    onTimeUpdate: SyntheticEvent[T, Event] => Unit = null,
+    onTimeUpdateCapture: SyntheticEvent[T, Event] => Unit = null,
     onTouchCancel: TouchEvent[T] => Unit = null,
     onTouchCancelCapture: TouchEvent[T] => Unit = null,
     onTouchEnd: TouchEvent[T] => Unit = null,
@@ -359,16 +358,16 @@ object DOMAttributes {
     onTouchStartCapture: TouchEvent[T] => Unit = null,
     onTransitionEnd: TransitionEvent[T] => Unit = null,
     onTransitionEndCapture: TransitionEvent[T] => Unit = null,
-    onVolumeChange: SyntheticEvent[T, Event_] => Unit = null,
-    onVolumeChangeCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onWaiting: SyntheticEvent[T, Event_] => Unit = null,
-    onWaitingCapture: SyntheticEvent[T, Event_] => Unit = null,
+    onVolumeChange: SyntheticEvent[T, Event] => Unit = null,
+    onVolumeChangeCapture: SyntheticEvent[T, Event] => Unit = null,
+    onWaiting: SyntheticEvent[T, Event] => Unit = null,
+    onWaitingCapture: SyntheticEvent[T, Event] => Unit = null,
     onWheel: WheelEvent[T] => Unit = null,
     onWheelCapture: WheelEvent[T] => Unit = null
   ): DOMAttributes[T] = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(children)) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1(onAbort))
     if (onAbortCapture != null) __obj.updateDynamic("onAbortCapture")(js.Any.fromFunction1(onAbortCapture))

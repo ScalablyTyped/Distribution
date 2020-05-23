@@ -1,6 +1,5 @@
 package typings.ace.AceAjax
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -69,7 +68,25 @@ trait Split extends js.Object {
   def setTheme(theme: String): Unit
 }
 
-@JSGlobal("AceAjax.Split")
-@js.native
-object Split extends Instantiable0[Split]
+object Split {
+  @scala.inline
+  def apply(
+    blur: () => Unit,
+    focus: () => Unit,
+    forEach: (js.Function, String) => Unit,
+    getCurrentEditor: () => Editor,
+    getEditor: Double => Unit,
+    getOrientation: () => Double,
+    getSplits: () => Double,
+    resize: () => Unit,
+    setFontSize: Double => Unit,
+    setKeyboardHandler: String => Unit,
+    setOrientation: Double => Unit,
+    setSession: (IEditSession, Double) => Unit,
+    setTheme: String => Unit
+  ): Split = {
+    val __obj = js.Dynamic.literal(blur = js.Any.fromFunction0(blur), focus = js.Any.fromFunction0(focus), forEach = js.Any.fromFunction2(forEach), getCurrentEditor = js.Any.fromFunction0(getCurrentEditor), getEditor = js.Any.fromFunction1(getEditor), getOrientation = js.Any.fromFunction0(getOrientation), getSplits = js.Any.fromFunction0(getSplits), resize = js.Any.fromFunction0(resize), setFontSize = js.Any.fromFunction1(setFontSize), setKeyboardHandler = js.Any.fromFunction1(setKeyboardHandler), setOrientation = js.Any.fromFunction1(setOrientation), setSession = js.Any.fromFunction2(setSession), setTheme = js.Any.fromFunction1(setTheme))
+    __obj.asInstanceOf[Split]
+  }
+}
 

@@ -32,7 +32,7 @@ object ISequentialIdGenerator {
     mixins: js.Any = null,
     prefix: String = null,
     requires: Array = null,
-    seed: Int | Double = null,
+    seed: js.UndefOr[Double] = js.undefined,
     self: IClass = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
@@ -51,13 +51,13 @@ object ISequentialIdGenerator {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(isGenerator)) __obj.updateDynamic("isGenerator")(isGenerator.asInstanceOf[js.Any])
+    if (!js.isUndefined(isGenerator)) __obj.updateDynamic("isGenerator")(isGenerator.get.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
-    if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
+    if (!js.isUndefined(seed)) __obj.updateDynamic("seed")(seed.get.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISequentialIdGenerator]

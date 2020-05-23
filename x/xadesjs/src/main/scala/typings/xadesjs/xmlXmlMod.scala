@@ -1,5 +1,7 @@
 package typings.xadesjs
 
+import typings.xadesjs.anon.AllDataObjectsTimeStamp
+import typings.xadesjs.anon.Encoding
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,9 +11,9 @@ import scala.scalajs.js.annotation._
 object xmlXmlMod extends js.Object {
   @js.native
   object XmlXades extends js.Object {
-    var AttributeNames: AnonEncoding = js.native
+    var AttributeNames: Encoding = js.native
     var DefaultPrefix: String = js.native
-    var ElementNames: AnonAllDataObjectsTimeStamp = js.native
+    var ElementNames: AllDataObjectsTimeStamp = js.native
     /**
       * The XAdES XML namespace URI
       */

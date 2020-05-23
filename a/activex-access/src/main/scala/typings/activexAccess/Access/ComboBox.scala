@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.ComboBox")
 @js.native
-class ComboBox protected () extends js.Object {
+trait ComboBox extends js.Object {
   @JSName("Access.ComboBox_typekey")
   var AccessDotComboBox_typekey: ComboBox = js.native
   var AddColon: Boolean = js.native

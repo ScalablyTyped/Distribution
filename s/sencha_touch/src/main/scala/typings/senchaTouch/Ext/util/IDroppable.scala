@@ -19,8 +19,8 @@ trait IDroppable
   /** [Method] Enable the Droppable target  */
   var enable: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Returns the value of baseCls
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getBaseCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (String) */
   var group: js.UndefOr[String] = js.undefined
@@ -29,18 +29,18 @@ trait IDroppable
   /** [Config Option] (String) */
   var invalidCls: js.UndefOr[String] = js.undefined
   /** [Method] Method to determine whether this Component is currently disabled
-  		* @returns Boolean the disabled state of this Component.
-  		*/
+    * @returns Boolean the disabled state of this Component.
+    */
   var isDisabled: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Method to determine whether this Droppable is currently monitoring drag operations of Draggables
-  		* @returns Boolean the monitoring state of this Droppable
-  		*/
+    * @returns Boolean the monitoring state of this Droppable
+    */
   var isMonitoring: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
-  		* @param object Object The Observable whose events this object is to relay.
-  		* @param events String/Array/Object Array of event names to relay.
-  		* @returns Ext.mixin.Observable this
-  		*/
+    * @param object Object The Observable whose events this object is to relay.
+    * @param events String/Array/Object Array of event names to relay.
+    * @returns Ext.mixin.Observable this
+    */
   @JSName("relayEvents")
   var relayEvents_IDroppable: js.UndefOr[
     js.Function2[
@@ -50,8 +50,8 @@ trait IDroppable
     ]
   ] = js.undefined
   /** [Method] Sets the value of baseCls
-  		* @param baseCls String The new value.
-  		*/
+    * @param baseCls String The new value.
+    */
   var setBaseCls: js.UndefOr[js.Function1[/* baseCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (String) */
   var validDropMode: js.UndefOr[String] = js.undefined
@@ -141,7 +141,7 @@ object IDroppable {
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (disable != null) __obj.updateDynamic("disable")(js.Any.fromFunction0(disable))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (enable != null) __obj.updateDynamic("enable")(js.Any.fromFunction0(enable))
     if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
@@ -178,7 +178,7 @@ object IDroppable {
     if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
     if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(js.Any.fromFunction1(setBubbleEvents))
     if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))

@@ -110,7 +110,7 @@ object DescribeNotebookInstanceOutput {
     SecurityGroups: SecurityGroupIds = null,
     SubnetId: SubnetId = null,
     Url: NotebookInstanceUrl = null,
-    VolumeSizeInGB: Int | Double = null
+    VolumeSizeInGB: js.UndefOr[NotebookInstanceVolumeSizeInGB] = js.undefined
   ): DescribeNotebookInstanceOutput = {
     val __obj = js.Dynamic.literal()
     if (AcceleratorTypes != null) __obj.updateDynamic("AcceleratorTypes")(AcceleratorTypes.asInstanceOf[js.Any])
@@ -132,7 +132,7 @@ object DescribeNotebookInstanceOutput {
     if (SecurityGroups != null) __obj.updateDynamic("SecurityGroups")(SecurityGroups.asInstanceOf[js.Any])
     if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId.asInstanceOf[js.Any])
     if (Url != null) __obj.updateDynamic("Url")(Url.asInstanceOf[js.Any])
-    if (VolumeSizeInGB != null) __obj.updateDynamic("VolumeSizeInGB")(VolumeSizeInGB.asInstanceOf[js.Any])
+    if (!js.isUndefined(VolumeSizeInGB)) __obj.updateDynamic("VolumeSizeInGB")(VolumeSizeInGB.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeNotebookInstanceOutput]
   }
 }

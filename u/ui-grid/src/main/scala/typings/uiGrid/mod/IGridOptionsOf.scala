@@ -359,12 +359,12 @@ trait IGridOptionsOf[TEntity]
 object IGridOptionsOf {
   @scala.inline
   def apply[TEntity](
-    aggregationCalcThrottle: Int | Double = null,
+    aggregationCalcThrottle: js.UndefOr[Double] = js.undefined,
     appScopeProvider: IScope | js.Object = null,
     cellEditableCondition: js.Any | (js.Function1[/* $scope */ IScope, Boolean]) = null,
     columnDefs: js.Array[IColumnDefOf[TEntity]] = null,
-    columnFooterHeight: Int | Double = null,
-    columnVirtualizationThreshold: Int | Double = null,
+    columnFooterHeight: js.UndefOr[Double] = js.undefined,
+    columnVirtualizationThreshold: js.UndefOr[Double] = js.undefined,
     data: js.Array[TEntity] | String = null,
     editableCellTemplate: String = null,
     enableCellEdit: js.UndefOr[Boolean] = js.undefined,
@@ -395,11 +395,11 @@ object IGridOptionsOf {
     enableSorting: js.UndefOr[Boolean] = js.undefined,
     enableTreeView: js.UndefOr[Boolean] = js.undefined,
     enableVerticalScrollbar: Boolean | Double = null,
-    excessColumns: Int | Double = null,
-    excessRows: Int | Double = null,
+    excessColumns: js.UndefOr[Double] = js.undefined,
+    excessRows: js.UndefOr[Double] = js.undefined,
     excludeProperties: js.Array[String] = null,
-    expandableRowHeaderWidth: Int | Double = null,
-    expandableRowHeight: Int | Double = null,
+    expandableRowHeaderWidth: js.UndefOr[Double] = js.undefined,
+    expandableRowHeight: js.UndefOr[Double] = js.undefined,
     expandableRowScope: IScope | js.Object = null,
     expandableRowTemplate: String = null,
     exporterAllDataFn: () => IPromise[js.Array[TEntity]] = null,
@@ -411,7 +411,7 @@ object IGridOptionsOf {
     exporterHeaderFilterUseName: js.UndefOr[Boolean] = js.undefined,
     exporterMenuCsv: js.UndefOr[Boolean] = js.undefined,
     exporterMenuExcel: js.UndefOr[Boolean] = js.undefined,
-    exporterMenuItemOrder: Int | Double = null,
+    exporterMenuItemOrder: js.UndefOr[Double] = js.undefined,
     exporterMenuLabel: String = null,
     exporterMenuPdf: js.UndefOr[Boolean] = js.undefined,
     exporterOlderExcelCompatibility: js.UndefOr[Boolean] = js.undefined,
@@ -420,7 +420,7 @@ object IGridOptionsOf {
     exporterPdfFilename: String = null,
     exporterPdfFooter: String | js.Any | (js.Function2[/* currentPage */ Double, /* pageCount */ Double, String]) = null,
     exporterPdfHeader: String | js.Any | (js.Function2[/* currentPage */ Double, /* pageCount */ Double, String]) = null,
-    exporterPdfMaxGridWidth: Int | Double = null,
+    exporterPdfMaxGridWidth: js.UndefOr[Double] = js.undefined,
     exporterPdfOrientation: String = null,
     exporterPdfPageSize: String = null,
     exporterPdfTableHeaderStyle: js.Any = null,
@@ -436,7 +436,7 @@ object IGridOptionsOf {
     groupingNullLabel: String = null,
     groupingShowCounts: js.UndefOr[Boolean] = js.undefined,
     headerTemplate: String = null,
-    horizontalScrollThreshold: Int | Double = null,
+    horizontalScrollThreshold: js.UndefOr[Double] = js.undefined,
     importerDataAddCallback: (/* grid */ IGridInstanceOf[TEntity], /* newObjects */ js.Array[TEntity]) => Unit = null,
     importerErrorCallback: (/* grid */ IGridInstanceOf[TEntity], /* errorKey */ String, /* consoleMessage */ String, /* context */ js.Any) => Unit = null,
     importerHeaderFilter: /* displayName */ String => String = null,
@@ -445,24 +445,24 @@ object IGridOptionsOf {
     importerProcessHeaders: (/* grid */ IGridInstanceOf[TEntity], /* headerArray */ js.Array[String]) => js.Array[String] = null,
     importerShowMenu: js.UndefOr[Boolean] = js.undefined,
     infiniteScrollDown: js.UndefOr[Boolean] = js.undefined,
-    infiniteScrollRowsFromEnd: Int | Double = null,
+    infiniteScrollRowsFromEnd: js.UndefOr[Double] = js.undefined,
     infiniteScrollUp: js.UndefOr[Boolean] = js.undefined,
     isRowSelectable: /* row */ typings.uiGrid.mod.selection.IGridRow => Boolean = null,
-    maxVisibleColumnCount: Int | Double = null,
-    minRowsToShow: Int | Double = null,
-    minimumColumnSize: Int | Double = null,
+    maxVisibleColumnCount: js.UndefOr[Double] = js.undefined,
+    minRowsToShow: js.UndefOr[Double] = js.undefined,
+    minimumColumnSize: js.UndefOr[Double] = js.undefined,
     modifierKeysToMultiSelect: js.UndefOr[Boolean] = js.undefined,
     modifierKeysToMultiSelectCells: js.UndefOr[Boolean] = js.undefined,
     multiSelect: js.UndefOr[Boolean] = js.undefined,
     noUnselect: js.UndefOr[Boolean] = js.undefined,
     onRegisterApi: /* gridApi */ IGridApiOf[TEntity] => Unit = null,
-    paginationCurrentPage: Int | Double = null,
-    paginationPageSize: Int | Double = null,
+    paginationCurrentPage: js.UndefOr[Double] = js.undefined,
+    paginationPageSize: js.UndefOr[Double] = js.undefined,
     paginationPageSizes: js.Array[Double] = null,
     paginationTemplate: String = null,
-    rowEditWaitInterval: Int | Double = null,
+    rowEditWaitInterval: js.UndefOr[Double] = js.undefined,
     rowEquality: (/* entityA */ TEntity, /* entityB */ TEntity) => Boolean = null,
-    rowHeight: Int | Double = null,
+    rowHeight: js.UndefOr[Double] = js.undefined,
     rowIdentity: /* row */ IGridRowOf[TEntity] => _ = null,
     rowTemplate: String = null,
     saveFilter: js.UndefOr[Boolean] = js.undefined,
@@ -478,67 +478,67 @@ object IGridOptionsOf {
     saveTreeView: js.UndefOr[Boolean] = js.undefined,
     saveVisible: js.UndefOr[Boolean] = js.undefined,
     saveWidths: js.UndefOr[Boolean] = js.undefined,
-    scrollDebounce: Int | Double = null,
-    scrollThreshold: Int | Double = null,
-    selectionRowHeaderWidth: Int | Double = null,
+    scrollDebounce: js.UndefOr[Double] = js.undefined,
+    scrollThreshold: js.UndefOr[Double] = js.undefined,
+    selectionRowHeaderWidth: js.UndefOr[Double] = js.undefined,
     showColumnFooter: js.UndefOr[Boolean] = js.undefined,
     showGridFooter: js.UndefOr[Boolean] = js.undefined,
     showHeader: js.UndefOr[Boolean] = js.undefined,
     showTreeExpandNoChildren: js.UndefOr[Boolean] = js.undefined,
     showTreeRowHeader: js.UndefOr[Boolean] = js.undefined,
-    totalItems: Int | Double = null,
+    totalItems: js.UndefOr[Double] = js.undefined,
     treeCustomAggregations: StringDictionary[IGridTreeBaseCustomAggregation[TEntity]] = null,
-    treeIndent: Int | Double = null,
+    treeIndent: js.UndefOr[Double] = js.undefined,
     treeRowHeaderAlwaysVisible: js.UndefOr[Boolean] = js.undefined,
-    treeRowHeaderBaseWidth: Int | Double = null,
+    treeRowHeaderBaseWidth: js.UndefOr[Double] = js.undefined,
     useExternalFiltering: js.UndefOr[Boolean] = js.undefined,
     useExternalPagination: js.UndefOr[Boolean] = js.undefined,
     useExternalSorting: js.UndefOr[Boolean] = js.undefined,
-    virtualizationThreshold: Int | Double = null,
-    wheelScrollThrottle: Int | Double = null
+    virtualizationThreshold: js.UndefOr[Double] = js.undefined,
+    wheelScrollThrottle: js.UndefOr[Double] = js.undefined
   ): IGridOptionsOf[TEntity] = {
     val __obj = js.Dynamic.literal()
-    if (aggregationCalcThrottle != null) __obj.updateDynamic("aggregationCalcThrottle")(aggregationCalcThrottle.asInstanceOf[js.Any])
+    if (!js.isUndefined(aggregationCalcThrottle)) __obj.updateDynamic("aggregationCalcThrottle")(aggregationCalcThrottle.get.asInstanceOf[js.Any])
     if (appScopeProvider != null) __obj.updateDynamic("appScopeProvider")(appScopeProvider.asInstanceOf[js.Any])
     if (cellEditableCondition != null) __obj.updateDynamic("cellEditableCondition")(cellEditableCondition.asInstanceOf[js.Any])
     if (columnDefs != null) __obj.updateDynamic("columnDefs")(columnDefs.asInstanceOf[js.Any])
-    if (columnFooterHeight != null) __obj.updateDynamic("columnFooterHeight")(columnFooterHeight.asInstanceOf[js.Any])
-    if (columnVirtualizationThreshold != null) __obj.updateDynamic("columnVirtualizationThreshold")(columnVirtualizationThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnFooterHeight)) __obj.updateDynamic("columnFooterHeight")(columnFooterHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnVirtualizationThreshold)) __obj.updateDynamic("columnVirtualizationThreshold")(columnVirtualizationThreshold.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (editableCellTemplate != null) __obj.updateDynamic("editableCellTemplate")(editableCellTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCellEdit)) __obj.updateDynamic("enableCellEdit")(enableCellEdit.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCellEditOnFocus)) __obj.updateDynamic("enableCellEditOnFocus")(enableCellEditOnFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableColumnMenus)) __obj.updateDynamic("enableColumnMenus")(enableColumnMenus.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableColumnMoving)) __obj.updateDynamic("enableColumnMoving")(enableColumnMoving.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableColumnResizing)) __obj.updateDynamic("enableColumnResizing")(enableColumnResizing.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableExpandable)) __obj.updateDynamic("enableExpandable")(enableExpandable.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableExpandableRowHeader)) __obj.updateDynamic("enableExpandableRowHeader")(enableExpandableRowHeader.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableFiltering)) __obj.updateDynamic("enableFiltering")(enableFiltering.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableFooterTotalSelected)) __obj.updateDynamic("enableFooterTotalSelected")(enableFooterTotalSelected.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableFullRowSelection)) __obj.updateDynamic("enableFullRowSelection")(enableFullRowSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGridMenu)) __obj.updateDynamic("enableGridMenu")(enableGridMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGroupHeaderSelection)) __obj.updateDynamic("enableGroupHeaderSelection")(enableGroupHeaderSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGrouping)) __obj.updateDynamic("enableGrouping")(enableGrouping.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCellEdit)) __obj.updateDynamic("enableCellEdit")(enableCellEdit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCellEditOnFocus)) __obj.updateDynamic("enableCellEditOnFocus")(enableCellEditOnFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableColumnMenus)) __obj.updateDynamic("enableColumnMenus")(enableColumnMenus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableColumnMoving)) __obj.updateDynamic("enableColumnMoving")(enableColumnMoving.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableColumnResizing)) __obj.updateDynamic("enableColumnResizing")(enableColumnResizing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableExpandable)) __obj.updateDynamic("enableExpandable")(enableExpandable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableExpandableRowHeader)) __obj.updateDynamic("enableExpandableRowHeader")(enableExpandableRowHeader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableFiltering)) __obj.updateDynamic("enableFiltering")(enableFiltering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableFooterTotalSelected)) __obj.updateDynamic("enableFooterTotalSelected")(enableFooterTotalSelected.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableFullRowSelection)) __obj.updateDynamic("enableFullRowSelection")(enableFullRowSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGridMenu)) __obj.updateDynamic("enableGridMenu")(enableGridMenu.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGroupHeaderSelection)) __obj.updateDynamic("enableGroupHeaderSelection")(enableGroupHeaderSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGrouping)) __obj.updateDynamic("enableGrouping")(enableGrouping.get.asInstanceOf[js.Any])
     if (enableHorizontalScrollbar != null) __obj.updateDynamic("enableHorizontalScrollbar")(enableHorizontalScrollbar.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableImporter)) __obj.updateDynamic("enableImporter")(enableImporter.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableInfiniteScroll)) __obj.updateDynamic("enableInfiniteScroll")(enableInfiniteScroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableMinHeightCheck)) __obj.updateDynamic("enableMinHeightCheck")(enableMinHeightCheck.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePagination)) __obj.updateDynamic("enablePagination")(enablePagination.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePaginationControls)) __obj.updateDynamic("enablePaginationControls")(enablePaginationControls.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePinning)) __obj.updateDynamic("enablePinning")(enablePinning.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRowHashing)) __obj.updateDynamic("enableRowHashing")(enableRowHashing.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRowHeaderSelection)) __obj.updateDynamic("enableRowHeaderSelection")(enableRowHeaderSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRowSelection)) __obj.updateDynamic("enableRowSelection")(enableRowSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSelectAll)) __obj.updateDynamic("enableSelectAll")(enableSelectAll.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSelectionBatchEvent)) __obj.updateDynamic("enableSelectionBatchEvent")(enableSelectionBatchEvent.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSorting)) __obj.updateDynamic("enableSorting")(enableSorting.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTreeView)) __obj.updateDynamic("enableTreeView")(enableTreeView.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableImporter)) __obj.updateDynamic("enableImporter")(enableImporter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableInfiniteScroll)) __obj.updateDynamic("enableInfiniteScroll")(enableInfiniteScroll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableMinHeightCheck)) __obj.updateDynamic("enableMinHeightCheck")(enableMinHeightCheck.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePagination)) __obj.updateDynamic("enablePagination")(enablePagination.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePaginationControls)) __obj.updateDynamic("enablePaginationControls")(enablePaginationControls.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePinning)) __obj.updateDynamic("enablePinning")(enablePinning.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRowHashing)) __obj.updateDynamic("enableRowHashing")(enableRowHashing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRowHeaderSelection)) __obj.updateDynamic("enableRowHeaderSelection")(enableRowHeaderSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRowSelection)) __obj.updateDynamic("enableRowSelection")(enableRowSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSelectAll)) __obj.updateDynamic("enableSelectAll")(enableSelectAll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSelectionBatchEvent)) __obj.updateDynamic("enableSelectionBatchEvent")(enableSelectionBatchEvent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSorting)) __obj.updateDynamic("enableSorting")(enableSorting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTreeView)) __obj.updateDynamic("enableTreeView")(enableTreeView.get.asInstanceOf[js.Any])
     if (enableVerticalScrollbar != null) __obj.updateDynamic("enableVerticalScrollbar")(enableVerticalScrollbar.asInstanceOf[js.Any])
-    if (excessColumns != null) __obj.updateDynamic("excessColumns")(excessColumns.asInstanceOf[js.Any])
-    if (excessRows != null) __obj.updateDynamic("excessRows")(excessRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(excessColumns)) __obj.updateDynamic("excessColumns")(excessColumns.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(excessRows)) __obj.updateDynamic("excessRows")(excessRows.get.asInstanceOf[js.Any])
     if (excludeProperties != null) __obj.updateDynamic("excludeProperties")(excludeProperties.asInstanceOf[js.Any])
-    if (expandableRowHeaderWidth != null) __obj.updateDynamic("expandableRowHeaderWidth")(expandableRowHeaderWidth.asInstanceOf[js.Any])
-    if (expandableRowHeight != null) __obj.updateDynamic("expandableRowHeight")(expandableRowHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandableRowHeaderWidth)) __obj.updateDynamic("expandableRowHeaderWidth")(expandableRowHeaderWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandableRowHeight)) __obj.updateDynamic("expandableRowHeight")(expandableRowHeight.get.asInstanceOf[js.Any])
     if (expandableRowScope != null) __obj.updateDynamic("expandableRowScope")(expandableRowScope.asInstanceOf[js.Any])
     if (expandableRowTemplate != null) __obj.updateDynamic("expandableRowTemplate")(expandableRowTemplate.asInstanceOf[js.Any])
     if (exporterAllDataFn != null) __obj.updateDynamic("exporterAllDataFn")(js.Any.fromFunction0(exporterAllDataFn))
@@ -547,94 +547,94 @@ object IGridOptionsOf {
     if (exporterCsvFilename != null) __obj.updateDynamic("exporterCsvFilename")(exporterCsvFilename.asInstanceOf[js.Any])
     if (exporterFieldCallback != null) __obj.updateDynamic("exporterFieldCallback")(js.Any.fromFunction4(exporterFieldCallback))
     if (exporterHeaderFilter != null) __obj.updateDynamic("exporterHeaderFilter")(js.Any.fromFunction1(exporterHeaderFilter))
-    if (!js.isUndefined(exporterHeaderFilterUseName)) __obj.updateDynamic("exporterHeaderFilterUseName")(exporterHeaderFilterUseName.asInstanceOf[js.Any])
-    if (!js.isUndefined(exporterMenuCsv)) __obj.updateDynamic("exporterMenuCsv")(exporterMenuCsv.asInstanceOf[js.Any])
-    if (!js.isUndefined(exporterMenuExcel)) __obj.updateDynamic("exporterMenuExcel")(exporterMenuExcel.asInstanceOf[js.Any])
-    if (exporterMenuItemOrder != null) __obj.updateDynamic("exporterMenuItemOrder")(exporterMenuItemOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(exporterHeaderFilterUseName)) __obj.updateDynamic("exporterHeaderFilterUseName")(exporterHeaderFilterUseName.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exporterMenuCsv)) __obj.updateDynamic("exporterMenuCsv")(exporterMenuCsv.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exporterMenuExcel)) __obj.updateDynamic("exporterMenuExcel")(exporterMenuExcel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exporterMenuItemOrder)) __obj.updateDynamic("exporterMenuItemOrder")(exporterMenuItemOrder.get.asInstanceOf[js.Any])
     if (exporterMenuLabel != null) __obj.updateDynamic("exporterMenuLabel")(exporterMenuLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(exporterMenuPdf)) __obj.updateDynamic("exporterMenuPdf")(exporterMenuPdf.asInstanceOf[js.Any])
-    if (!js.isUndefined(exporterOlderExcelCompatibility)) __obj.updateDynamic("exporterOlderExcelCompatibility")(exporterOlderExcelCompatibility.asInstanceOf[js.Any])
+    if (!js.isUndefined(exporterMenuPdf)) __obj.updateDynamic("exporterMenuPdf")(exporterMenuPdf.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exporterOlderExcelCompatibility)) __obj.updateDynamic("exporterOlderExcelCompatibility")(exporterOlderExcelCompatibility.get.asInstanceOf[js.Any])
     if (exporterPdfCustomFormatter != null) __obj.updateDynamic("exporterPdfCustomFormatter")(js.Any.fromFunction1(exporterPdfCustomFormatter))
     if (exporterPdfDefaultStyle != null) __obj.updateDynamic("exporterPdfDefaultStyle")(exporterPdfDefaultStyle.asInstanceOf[js.Any])
     if (exporterPdfFilename != null) __obj.updateDynamic("exporterPdfFilename")(exporterPdfFilename.asInstanceOf[js.Any])
     if (exporterPdfFooter != null) __obj.updateDynamic("exporterPdfFooter")(exporterPdfFooter.asInstanceOf[js.Any])
     if (exporterPdfHeader != null) __obj.updateDynamic("exporterPdfHeader")(exporterPdfHeader.asInstanceOf[js.Any])
-    if (exporterPdfMaxGridWidth != null) __obj.updateDynamic("exporterPdfMaxGridWidth")(exporterPdfMaxGridWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(exporterPdfMaxGridWidth)) __obj.updateDynamic("exporterPdfMaxGridWidth")(exporterPdfMaxGridWidth.get.asInstanceOf[js.Any])
     if (exporterPdfOrientation != null) __obj.updateDynamic("exporterPdfOrientation")(exporterPdfOrientation.asInstanceOf[js.Any])
     if (exporterPdfPageSize != null) __obj.updateDynamic("exporterPdfPageSize")(exporterPdfPageSize.asInstanceOf[js.Any])
     if (exporterPdfTableHeaderStyle != null) __obj.updateDynamic("exporterPdfTableHeaderStyle")(exporterPdfTableHeaderStyle.asInstanceOf[js.Any])
     if (exporterPdfTableLayout != null) __obj.updateDynamic("exporterPdfTableLayout")(exporterPdfTableLayout.asInstanceOf[js.Any])
     if (exporterPdfTableStyle != null) __obj.updateDynamic("exporterPdfTableStyle")(exporterPdfTableStyle.asInstanceOf[js.Any])
     if (exporterSuppressColumns != null) __obj.updateDynamic("exporterSuppressColumns")(exporterSuppressColumns.asInstanceOf[js.Any])
-    if (!js.isUndefined(exporterSuppressMenu)) __obj.updateDynamic("exporterSuppressMenu")(exporterSuppressMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(fastWatch)) __obj.updateDynamic("fastWatch")(fastWatch.asInstanceOf[js.Any])
-    if (!js.isUndefined(flatEntityAccess)) __obj.updateDynamic("flatEntityAccess")(flatEntityAccess.asInstanceOf[js.Any])
+    if (!js.isUndefined(exporterSuppressMenu)) __obj.updateDynamic("exporterSuppressMenu")(exporterSuppressMenu.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fastWatch)) __obj.updateDynamic("fastWatch")(fastWatch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flatEntityAccess)) __obj.updateDynamic("flatEntityAccess")(flatEntityAccess.get.asInstanceOf[js.Any])
     if (footerTemplate != null) __obj.updateDynamic("footerTemplate")(footerTemplate.asInstanceOf[js.Any])
     if (getRowIdentity != null) __obj.updateDynamic("getRowIdentity")(js.Any.fromFunction1(getRowIdentity))
     if (gridFooterTemplate != null) __obj.updateDynamic("gridFooterTemplate")(gridFooterTemplate.asInstanceOf[js.Any])
     if (groupingNullLabel != null) __obj.updateDynamic("groupingNullLabel")(groupingNullLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupingShowCounts)) __obj.updateDynamic("groupingShowCounts")(groupingShowCounts.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupingShowCounts)) __obj.updateDynamic("groupingShowCounts")(groupingShowCounts.get.asInstanceOf[js.Any])
     if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate.asInstanceOf[js.Any])
-    if (horizontalScrollThreshold != null) __obj.updateDynamic("horizontalScrollThreshold")(horizontalScrollThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalScrollThreshold)) __obj.updateDynamic("horizontalScrollThreshold")(horizontalScrollThreshold.get.asInstanceOf[js.Any])
     if (importerDataAddCallback != null) __obj.updateDynamic("importerDataAddCallback")(js.Any.fromFunction2(importerDataAddCallback))
     if (importerErrorCallback != null) __obj.updateDynamic("importerErrorCallback")(js.Any.fromFunction4(importerErrorCallback))
     if (importerHeaderFilter != null) __obj.updateDynamic("importerHeaderFilter")(js.Any.fromFunction1(importerHeaderFilter))
     if (importerNewObject != null) __obj.updateDynamic("importerNewObject")(importerNewObject.asInstanceOf[js.Any])
     if (importerObjectCallback != null) __obj.updateDynamic("importerObjectCallback")(js.Any.fromFunction2(importerObjectCallback))
     if (importerProcessHeaders != null) __obj.updateDynamic("importerProcessHeaders")(js.Any.fromFunction2(importerProcessHeaders))
-    if (!js.isUndefined(importerShowMenu)) __obj.updateDynamic("importerShowMenu")(importerShowMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(infiniteScrollDown)) __obj.updateDynamic("infiniteScrollDown")(infiniteScrollDown.asInstanceOf[js.Any])
-    if (infiniteScrollRowsFromEnd != null) __obj.updateDynamic("infiniteScrollRowsFromEnd")(infiniteScrollRowsFromEnd.asInstanceOf[js.Any])
-    if (!js.isUndefined(infiniteScrollUp)) __obj.updateDynamic("infiniteScrollUp")(infiniteScrollUp.asInstanceOf[js.Any])
+    if (!js.isUndefined(importerShowMenu)) __obj.updateDynamic("importerShowMenu")(importerShowMenu.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(infiniteScrollDown)) __obj.updateDynamic("infiniteScrollDown")(infiniteScrollDown.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(infiniteScrollRowsFromEnd)) __obj.updateDynamic("infiniteScrollRowsFromEnd")(infiniteScrollRowsFromEnd.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(infiniteScrollUp)) __obj.updateDynamic("infiniteScrollUp")(infiniteScrollUp.get.asInstanceOf[js.Any])
     if (isRowSelectable != null) __obj.updateDynamic("isRowSelectable")(js.Any.fromFunction1(isRowSelectable))
-    if (maxVisibleColumnCount != null) __obj.updateDynamic("maxVisibleColumnCount")(maxVisibleColumnCount.asInstanceOf[js.Any])
-    if (minRowsToShow != null) __obj.updateDynamic("minRowsToShow")(minRowsToShow.asInstanceOf[js.Any])
-    if (minimumColumnSize != null) __obj.updateDynamic("minimumColumnSize")(minimumColumnSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierKeysToMultiSelect)) __obj.updateDynamic("modifierKeysToMultiSelect")(modifierKeysToMultiSelect.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierKeysToMultiSelectCells)) __obj.updateDynamic("modifierKeysToMultiSelectCells")(modifierKeysToMultiSelectCells.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect.asInstanceOf[js.Any])
-    if (!js.isUndefined(noUnselect)) __obj.updateDynamic("noUnselect")(noUnselect.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxVisibleColumnCount)) __obj.updateDynamic("maxVisibleColumnCount")(maxVisibleColumnCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minRowsToShow)) __obj.updateDynamic("minRowsToShow")(minRowsToShow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumColumnSize)) __obj.updateDynamic("minimumColumnSize")(minimumColumnSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(modifierKeysToMultiSelect)) __obj.updateDynamic("modifierKeysToMultiSelect")(modifierKeysToMultiSelect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(modifierKeysToMultiSelectCells)) __obj.updateDynamic("modifierKeysToMultiSelectCells")(modifierKeysToMultiSelectCells.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noUnselect)) __obj.updateDynamic("noUnselect")(noUnselect.get.asInstanceOf[js.Any])
     if (onRegisterApi != null) __obj.updateDynamic("onRegisterApi")(js.Any.fromFunction1(onRegisterApi))
-    if (paginationCurrentPage != null) __obj.updateDynamic("paginationCurrentPage")(paginationCurrentPage.asInstanceOf[js.Any])
-    if (paginationPageSize != null) __obj.updateDynamic("paginationPageSize")(paginationPageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(paginationCurrentPage)) __obj.updateDynamic("paginationCurrentPage")(paginationCurrentPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(paginationPageSize)) __obj.updateDynamic("paginationPageSize")(paginationPageSize.get.asInstanceOf[js.Any])
     if (paginationPageSizes != null) __obj.updateDynamic("paginationPageSizes")(paginationPageSizes.asInstanceOf[js.Any])
     if (paginationTemplate != null) __obj.updateDynamic("paginationTemplate")(paginationTemplate.asInstanceOf[js.Any])
-    if (rowEditWaitInterval != null) __obj.updateDynamic("rowEditWaitInterval")(rowEditWaitInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowEditWaitInterval)) __obj.updateDynamic("rowEditWaitInterval")(rowEditWaitInterval.get.asInstanceOf[js.Any])
     if (rowEquality != null) __obj.updateDynamic("rowEquality")(js.Any.fromFunction2(rowEquality))
-    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowHeight)) __obj.updateDynamic("rowHeight")(rowHeight.get.asInstanceOf[js.Any])
     if (rowIdentity != null) __obj.updateDynamic("rowIdentity")(js.Any.fromFunction1(rowIdentity))
     if (rowTemplate != null) __obj.updateDynamic("rowTemplate")(rowTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(saveFilter)) __obj.updateDynamic("saveFilter")(saveFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(saveFocus)) __obj.updateDynamic("saveFocus")(saveFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(saveGrouping)) __obj.updateDynamic("saveGrouping")(saveGrouping.asInstanceOf[js.Any])
-    if (!js.isUndefined(saveGroupingExpandedStates)) __obj.updateDynamic("saveGroupingExpandedStates")(saveGroupingExpandedStates.asInstanceOf[js.Any])
-    if (!js.isUndefined(saveOrder)) __obj.updateDynamic("saveOrder")(saveOrder.asInstanceOf[js.Any])
-    if (!js.isUndefined(savePinning)) __obj.updateDynamic("savePinning")(savePinning.asInstanceOf[js.Any])
-    if (!js.isUndefined(saveRowIdentity)) __obj.updateDynamic("saveRowIdentity")(saveRowIdentity.asInstanceOf[js.Any])
-    if (!js.isUndefined(saveScroll)) __obj.updateDynamic("saveScroll")(saveScroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(saveSelection)) __obj.updateDynamic("saveSelection")(saveSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(saveSort)) __obj.updateDynamic("saveSort")(saveSort.asInstanceOf[js.Any])
-    if (!js.isUndefined(saveTreeView)) __obj.updateDynamic("saveTreeView")(saveTreeView.asInstanceOf[js.Any])
-    if (!js.isUndefined(saveVisible)) __obj.updateDynamic("saveVisible")(saveVisible.asInstanceOf[js.Any])
-    if (!js.isUndefined(saveWidths)) __obj.updateDynamic("saveWidths")(saveWidths.asInstanceOf[js.Any])
-    if (scrollDebounce != null) __obj.updateDynamic("scrollDebounce")(scrollDebounce.asInstanceOf[js.Any])
-    if (scrollThreshold != null) __obj.updateDynamic("scrollThreshold")(scrollThreshold.asInstanceOf[js.Any])
-    if (selectionRowHeaderWidth != null) __obj.updateDynamic("selectionRowHeaderWidth")(selectionRowHeaderWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(showColumnFooter)) __obj.updateDynamic("showColumnFooter")(showColumnFooter.asInstanceOf[js.Any])
-    if (!js.isUndefined(showGridFooter)) __obj.updateDynamic("showGridFooter")(showGridFooter.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTreeExpandNoChildren)) __obj.updateDynamic("showTreeExpandNoChildren")(showTreeExpandNoChildren.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTreeRowHeader)) __obj.updateDynamic("showTreeRowHeader")(showTreeRowHeader.asInstanceOf[js.Any])
-    if (totalItems != null) __obj.updateDynamic("totalItems")(totalItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveFilter)) __obj.updateDynamic("saveFilter")(saveFilter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveFocus)) __obj.updateDynamic("saveFocus")(saveFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveGrouping)) __obj.updateDynamic("saveGrouping")(saveGrouping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveGroupingExpandedStates)) __obj.updateDynamic("saveGroupingExpandedStates")(saveGroupingExpandedStates.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveOrder)) __obj.updateDynamic("saveOrder")(saveOrder.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(savePinning)) __obj.updateDynamic("savePinning")(savePinning.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveRowIdentity)) __obj.updateDynamic("saveRowIdentity")(saveRowIdentity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveScroll)) __obj.updateDynamic("saveScroll")(saveScroll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveSelection)) __obj.updateDynamic("saveSelection")(saveSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveSort)) __obj.updateDynamic("saveSort")(saveSort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveTreeView)) __obj.updateDynamic("saveTreeView")(saveTreeView.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveVisible)) __obj.updateDynamic("saveVisible")(saveVisible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveWidths)) __obj.updateDynamic("saveWidths")(saveWidths.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollDebounce)) __obj.updateDynamic("scrollDebounce")(scrollDebounce.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollThreshold)) __obj.updateDynamic("scrollThreshold")(scrollThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectionRowHeaderWidth)) __obj.updateDynamic("selectionRowHeaderWidth")(selectionRowHeaderWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showColumnFooter)) __obj.updateDynamic("showColumnFooter")(showColumnFooter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showGridFooter)) __obj.updateDynamic("showGridFooter")(showGridFooter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTreeExpandNoChildren)) __obj.updateDynamic("showTreeExpandNoChildren")(showTreeExpandNoChildren.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTreeRowHeader)) __obj.updateDynamic("showTreeRowHeader")(showTreeRowHeader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalItems)) __obj.updateDynamic("totalItems")(totalItems.get.asInstanceOf[js.Any])
     if (treeCustomAggregations != null) __obj.updateDynamic("treeCustomAggregations")(treeCustomAggregations.asInstanceOf[js.Any])
-    if (treeIndent != null) __obj.updateDynamic("treeIndent")(treeIndent.asInstanceOf[js.Any])
-    if (!js.isUndefined(treeRowHeaderAlwaysVisible)) __obj.updateDynamic("treeRowHeaderAlwaysVisible")(treeRowHeaderAlwaysVisible.asInstanceOf[js.Any])
-    if (treeRowHeaderBaseWidth != null) __obj.updateDynamic("treeRowHeaderBaseWidth")(treeRowHeaderBaseWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(useExternalFiltering)) __obj.updateDynamic("useExternalFiltering")(useExternalFiltering.asInstanceOf[js.Any])
-    if (!js.isUndefined(useExternalPagination)) __obj.updateDynamic("useExternalPagination")(useExternalPagination.asInstanceOf[js.Any])
-    if (!js.isUndefined(useExternalSorting)) __obj.updateDynamic("useExternalSorting")(useExternalSorting.asInstanceOf[js.Any])
-    if (virtualizationThreshold != null) __obj.updateDynamic("virtualizationThreshold")(virtualizationThreshold.asInstanceOf[js.Any])
-    if (wheelScrollThrottle != null) __obj.updateDynamic("wheelScrollThrottle")(wheelScrollThrottle.asInstanceOf[js.Any])
+    if (!js.isUndefined(treeIndent)) __obj.updateDynamic("treeIndent")(treeIndent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(treeRowHeaderAlwaysVisible)) __obj.updateDynamic("treeRowHeaderAlwaysVisible")(treeRowHeaderAlwaysVisible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(treeRowHeaderBaseWidth)) __obj.updateDynamic("treeRowHeaderBaseWidth")(treeRowHeaderBaseWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useExternalFiltering)) __obj.updateDynamic("useExternalFiltering")(useExternalFiltering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useExternalPagination)) __obj.updateDynamic("useExternalPagination")(useExternalPagination.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useExternalSorting)) __obj.updateDynamic("useExternalSorting")(useExternalSorting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(virtualizationThreshold)) __obj.updateDynamic("virtualizationThreshold")(virtualizationThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wheelScrollThrottle)) __obj.updateDynamic("wheelScrollThrottle")(wheelScrollThrottle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridOptionsOf[TEntity]]
   }
 }

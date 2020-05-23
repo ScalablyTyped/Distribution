@@ -14,10 +14,10 @@ trait IClientBatchGetResponse extends js.Object {
 
 object IClientBatchGetResponse {
   @scala.inline
-  def apply(batch: IBatch = null, status: Status = null): IClientBatchGetResponse = {
+  def apply(batch: js.UndefOr[Null | IBatch] = js.undefined, status: js.UndefOr[Null | Status] = js.undefined): IClientBatchGetResponse = {
     val __obj = js.Dynamic.literal()
-    if (batch != null) __obj.updateDynamic("batch")(batch.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(batch)) __obj.updateDynamic("batch")(batch.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientBatchGetResponse]
   }
 }

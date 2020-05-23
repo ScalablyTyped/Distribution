@@ -1,6 +1,8 @@
 package typings.bytebuffer.mod
 
-import typings.bytebuffer.AnonLength
+import typings.bytebuffer.anon.Length
+import typings.bytebuffer.anon.LengthValue
+import typings.bytebuffer.anon.Value
 import typings.long.mod.Long
 import typings.node.Buffer
 import typings.std.ArrayBuffer
@@ -189,7 +191,7 @@ trait ByteBuffer extends js.Object {
     * Reads a NULL-terminated UTF8 encoded string. For this to work the string read must not contain any NULL characters itself.
     */
   def readCString(): String = js.native
-  def readCString(offset: Double): String = js.native
+  def readCString(offset: Double): Length = js.native
   /**
     * Reads a 64bit float. This is an alias of ByteBuffer#readFloat64.
     */
@@ -213,8 +215,8 @@ trait ByteBuffer extends js.Object {
   /**
     * Reads a length as uint32 prefixed UTF8 encoded string.
     */
-  def readIString(): String | AnonLength = js.native
-  def readIString(offset: Double): String | AnonLength = js.native
+  def readIString(): String = js.native
+  def readIString(offset: Double): Length = js.native
   /**
     * Reads a 32bit signed integer.This is an alias of ByteBuffer#readInt32.
     */
@@ -255,13 +257,13 @@ trait ByteBuffer extends js.Object {
     */
   def readString(length: Double): String = js.native
   def readString(length: Double, metrics: Double): String = js.native
-  def readString(length: Double, metrics: Double, offset: Double): String = js.native
+  def readString(length: Double, metrics: Double, offset: Double): Length = js.native
   /**
     * Reads an UTF8 encoded string.
     */
-  def readUTF8String(chars: Double): String | AnonLength = js.native
-  def readUTF8String(chars: Double, metrics: Double): String | AnonLength = js.native
-  def readUTF8String(chars: Double, metrics: Double, offset: Double): String | AnonLength = js.native
+  def readUTF8String(chars: Double): String = js.native
+  def readUTF8String(chars: Double, metrics: Double): String = js.native
+  def readUTF8String(chars: Double, metrics: Double, offset: Double): Length = js.native
   /**
     * Reads a 16bit unsigned integer.
     */
@@ -286,27 +288,27 @@ trait ByteBuffer extends js.Object {
     * Reads a length as varint32 prefixed UTF8 encoded string.
     */
   def readVString(): String = js.native
-  def readVString(offset: Double): String = js.native
+  def readVString(offset: Double): Length = js.native
   /**
     * Reads a 32bit base 128 variable-length integer.
     */
   def readVarint32(): Double = js.native
-  def readVarint32(offset: Double): Double = js.native
+  def readVarint32(offset: Double): Value = js.native
   /**
     * Reads a zig-zag encoded 32bit base 128 variable-length integer.
     */
   def readVarint32ZigZag(): Double = js.native
-  def readVarint32ZigZag(offset: Double): Double = js.native
+  def readVarint32ZigZag(offset: Double): Value = js.native
   /**
     * Reads a 64bit base 128 variable-length integer. Requires Long.js.
     */
   def readVarint64(): Long = js.native
-  def readVarint64(offset: Double): Long = js.native
+  def readVarint64(offset: Double): LengthValue = js.native
   /**
     * Reads a zig-zag encoded 64bit base 128 variable-length integer. Requires Long.js.
     */
   def readVarint64ZigZag(): Long = js.native
-  def readVarint64ZigZag(offset: Double): Long = js.native
+  def readVarint64ZigZag(offset: Double): LengthValue = js.native
   /**
     * Gets the number of remaining readable bytes. Contents are the bytes between ByteBuffer#offset and ByteBuffer#limit, so this returns limit - offset.
     */
@@ -485,13 +487,15 @@ trait ByteBuffer extends js.Object {
   /**
     * Writes an UTF8 encoded string. This is an alias of ByteBuffer#writeUTF8String.
     */
-  def writeString(str: String): ByteBuffer | Double = js.native
-  def writeString(str: String, offset: Double): ByteBuffer | Double = js.native
+  def writeString(str: String): ByteBuffer = js.native
+  def writeString(str: String, offset: Double): Double = js.native
+  def writeUTF8String(str: String): Double = js.native
+  def writeUTF8String(str: String, offset: Double): Double = js.native
   /**
     * Writes an UTF8 encoded string.
     */
-  def writeUTF8String(str: String): ByteBuffer | Double = js.native
-  def writeUTF8String(str: String, offset: Double): ByteBuffer | Double = js.native
+  @JSName("writeUTF8String")
+  def writeUTF8String_ByteBuffer(str: String): ByteBuffer = js.native
   /**
     * Writes a 16bit unsigned integer.
     */
@@ -517,31 +521,31 @@ trait ByteBuffer extends js.Object {
   /**
     * Writes a length as varint32 prefixed UTF8 encoded string.
     */
-  def writeVString(str: String): ByteBuffer | Double = js.native
-  def writeVString(str: String, offset: Double): ByteBuffer | Double = js.native
+  def writeVString(str: String): ByteBuffer = js.native
+  def writeVString(str: String, offset: Double): Double = js.native
   /**
     * Writes a 32bit base 128 variable-length integer.
     */
-  def writeVarint32(value: Double): ByteBuffer | Double = js.native
-  def writeVarint32(value: Double, offset: Double): ByteBuffer | Double = js.native
+  def writeVarint32(value: Double): ByteBuffer = js.native
+  def writeVarint32(value: Double, offset: Double): Double = js.native
   /**
     * Writes a zig-zag encoded 32bit base 128 variable-length integer.
     */
-  def writeVarint32ZigZag(value: Double): ByteBuffer | Double = js.native
-  def writeVarint32ZigZag(value: Double, offset: Double): ByteBuffer | Double = js.native
+  def writeVarint32ZigZag(value: Double): ByteBuffer = js.native
+  def writeVarint32ZigZag(value: Double, offset: Double): Double = js.native
   /**
     * Writes a 64bit base 128 variable-length integer.
     */
   def writeVarint64(value: Double): ByteBuffer = js.native
-  def writeVarint64(value: Double, offset: Double): ByteBuffer = js.native
+  def writeVarint64(value: Double, offset: Double): Double = js.native
   def writeVarint64(value: Long): ByteBuffer = js.native
-  def writeVarint64(value: Long, offset: Double): ByteBuffer = js.native
+  def writeVarint64(value: Long, offset: Double): Double = js.native
   /**
     * Writes a zig-zag encoded 64bit base 128 variable-length integer.
     */
-  def writeVarint64ZigZag(value: Double): ByteBuffer | Double = js.native
-  def writeVarint64ZigZag(value: Double, offset: Double): ByteBuffer | Double = js.native
-  def writeVarint64ZigZag(value: Long): ByteBuffer | Double = js.native
-  def writeVarint64ZigZag(value: Long, offset: Double): ByteBuffer | Double = js.native
+  def writeVarint64ZigZag(value: Double): ByteBuffer = js.native
+  def writeVarint64ZigZag(value: Double, offset: Double): Double = js.native
+  def writeVarint64ZigZag(value: Long): ByteBuffer = js.native
+  def writeVarint64ZigZag(value: Long, offset: Double): Double = js.native
 }
 

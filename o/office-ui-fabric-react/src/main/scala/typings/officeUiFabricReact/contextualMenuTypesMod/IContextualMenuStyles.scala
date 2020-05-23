@@ -36,18 +36,18 @@ object IContextualMenuStyles {
   @scala.inline
   def apply(
     subComponentStyles: IContextualMenuSubComponentStyles,
-    container: IStyle = null,
-    header: IStyle = null,
-    list: IStyle = null,
-    root: IStyle = null,
-    title: IStyle = null
+    container: js.UndefOr[Null | IStyle] = js.undefined,
+    header: js.UndefOr[Null | IStyle] = js.undefined,
+    list: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined,
+    title: js.UndefOr[Null | IStyle] = js.undefined
   ): IContextualMenuStyles = {
     val __obj = js.Dynamic.literal(subComponentStyles = subComponentStyles.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(container)) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (!js.isUndefined(list)) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContextualMenuStyles]
   }
 }

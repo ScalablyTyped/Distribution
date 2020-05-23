@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`value-change`
 import typings.arcgisJsApi.arcgisJsApiStrings.submit
@@ -70,8 +69,4 @@ trait FeatureForm extends Widget_ {
     */
   def submit(): Unit = js.native
 }
-
-@JSGlobal("__esri.FeatureForm")
-@js.native
-object FeatureForm extends TopLevel[FeatureFormConstructor]
 

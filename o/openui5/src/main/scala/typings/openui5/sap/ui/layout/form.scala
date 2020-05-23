@@ -1,6 +1,5 @@
 package typings.openui5.sap.ui.layout
 
-import org.scalablytyped.runtime.TopLevel
 import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.Element
 import typings.openui5.sap.ui.core.LayoutData
@@ -14,17 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object form extends js.Object {
   @js.native
-  class Form protected () extends Control {
-    /**
-      * Constructor for a new sap.ui.layout.form.Form.Accepts an object literal <code>mSettings</code> that
-      * defines initialproperty values, aggregated and associated objects as well as event handlers.See
-      * {@link sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the
-      * settings object.
-      * @param sId id for the new control, generated automatically if no id is given
-      * @param mSettings initial settings for the new control
-      */
-    def this(sId: String) = this()
-    def this(sId: String, mSettings: js.Any) = this()
+  trait Form extends Control {
     /**
       * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
       * @since 1.28.0
@@ -197,17 +186,7 @@ object form extends js.Object {
   }
   
   @js.native
-  class FormContainer protected () extends Element {
-    /**
-      * Constructor for a new sap.ui.layout.form.FormContainer.Accepts an object literal
-      * <code>mSettings</code> that defines initialproperty values, aggregated and associated objects as
-      * well as event handlers.See {@link sap.ui.base.ManagedObject#constructor} for a general description
-      * of the syntax of the settings object.
-      * @param sId Id for the new control, generated automatically if no id is given
-      * @param mSettings initial settings for the new control
-      */
-    def this(sId: String) = this()
-    def this(sId: String, mSettings: js.Any) = this()
+  trait FormContainer extends Element {
     /**
       * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
       * @since 1.36.0
@@ -374,17 +353,7 @@ object form extends js.Object {
   }
   
   @js.native
-  class FormElement protected () extends Element {
-    /**
-      * Constructor for a new sap.ui.layout.form.FormElement.Accepts an object literal
-      * <code>mSettings</code> that defines initialproperty values, aggregated and associated objects as
-      * well as event handlers.See {@link sap.ui.base.ManagedObject#constructor} for a general description
-      * of the syntax of the settings object.
-      * @param sId Id for the new control, generated automatically if no id is given
-      * @param mSettings initial settings for the new control
-      */
-    def this(sId: String) = this()
-    def this(sId: String, mSettings: js.Any) = this()
+  trait FormElement extends Element {
     /**
       * Adds some field to the aggregation <code>fields</code>.
       * @param oField the field to add; if empty, nothing is inserted
@@ -478,17 +447,7 @@ object form extends js.Object {
   }
   
   @js.native
-  class FormLayout protected () extends Control {
-    /**
-      * Constructor for a new sap.ui.layout.form.FormLayout.Accepts an object literal <code>mSettings</code>
-      * that defines initialproperty values, aggregated and associated objects as well as event handlers.See
-      * {@link sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the
-      * settings object.
-      * @param sId Id for the new control, generated automatically if no id is given
-      * @param mSettings initial settings for the new control
-      */
-    def this(sId: String) = this()
-    def this(sId: String, mSettings: js.Any) = this()
+  trait FormLayout extends Control {
     /**
       * Gets current value of property <code>backgroundDesign</code>.Specifies the background color of the
       * <code>Form</code> content.The visualization of the different options depends on the used
@@ -510,17 +469,7 @@ object form extends js.Object {
   }
   
   @js.native
-  class GridContainerData protected () extends LayoutData {
-    /**
-      * Constructor for a new sap.ui.layout.form.GridContainerData.Accepts an object literal
-      * <code>mSettings</code> that defines initialproperty values, aggregated and associated objects as
-      * well as event handlers.See {@link sap.ui.base.ManagedObject#constructor} for a general description
-      * of the syntax of the settings object.
-      * @param sId Id for the new control, generated automatically if no id is given
-      * @param mSettings initial settings for the new control
-      */
-    def this(sId: String) = this()
-    def this(sId: String, mSettings: js.Any) = this()
+  trait GridContainerData extends LayoutData {
     /**
       * Gets current value of property <code>halfGrid</code>.If set, the container takes half the width of
       * the <code>Form</code> (8 cells), if not it takes the full width (16 cells).If the
@@ -543,17 +492,7 @@ object form extends js.Object {
   }
   
   @js.native
-  class GridElementData protected () extends LayoutData {
-    /**
-      * Constructor for a new sap.ui.layout.form.GridElementData.Accepts an object literal
-      * <code>mSettings</code> that defines initialproperty values, aggregated and associated objects as
-      * well as event handlers.See {@link sap.ui.base.ManagedObject#constructor} for a general description
-      * of the syntax of the settings object.
-      * @param sId Id for the new control, generated automatically if no id is given
-      * @param mSettings initial settings for the new control
-      */
-    def this(sId: String) = this()
-    def this(sId: String, mSettings: js.Any) = this()
+  trait GridElementData extends LayoutData {
     /**
       * Gets current value of property <code>hCells</code>.Number of cells in horizontal direction.If set to
       * "auto" the size is determined by the number of fields and the available cells. For labels the auto
@@ -592,17 +531,7 @@ object form extends js.Object {
   }
   
   @js.native
-  class GridLayout protected () extends FormLayout {
-    /**
-      * Constructor for a new sap.ui.layout.form.GridLayout.Accepts an object literal <code>mSettings</code>
-      * that defines initialproperty values, aggregated and associated objects as well as event handlers.See
-      * {@link sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the
-      * settings object.
-      * @param sId Id for the new control, generated automatically if no id is given
-      * @param mSettings initial settings for the new control
-      */
-    def this(sId: String) = this()
-    def this(sId: String, mSettings: js.Any) = this()
+  trait GridLayout extends FormLayout {
     /**
       * Gets current value of property <code>singleColumn</code>.If set, the grid renders only one
       * <code>FormContainer</code> per column. That means one <code>FormContainer</code> is below the other.
@@ -626,17 +555,7 @@ object form extends js.Object {
   }
   
   @js.native
-  class ResponsiveGridLayout protected () extends FormLayout {
-    /**
-      * Constructor for a new <code>sap.ui.layout.form.ResponsiveGridLayout</code>.Accepts an object literal
-      * <code>mSettings</code> that defines initialproperty values, aggregated and associated objects as
-      * well as event handlers.See {@link sap.ui.base.ManagedObject#constructor} for a general description
-      * of the syntax of the settings object.
-      * @param sId ID for the new control, generated automatically if no ID is given
-      * @param mSettings Initial settings for the new control
-      */
-    def this(sId: String) = this()
-    def this(sId: String, mSettings: js.Any) = this()
+  trait ResponsiveGridLayout extends FormLayout {
     /**
       * Gets current value of property <code>adjustLabelSpan</code>.If set, the usage of
       * <code>labelSpanL</code> and <code>labelSpanM</code> are dependent on the number of
@@ -944,28 +863,10 @@ object form extends js.Object {
   }
   
   @js.native
-  class ResponsiveLayout protected () extends FormLayout {
-    /**
-      * Constructor for a new sap.ui.layout.form.ResponsiveLayout.
-      * @param sId Id for the new control, generated automatically if no id is given
-      * @param mSettings initial settings for the new control
-      */
-    def this(sId: String) = this()
-    def this(sId: String, mSettings: js.Any) = this()
-  }
+  trait ResponsiveLayout extends FormLayout
   
   @js.native
-  class SimpleForm protected () extends Control {
-    /**
-      * Constructor for a new sap.ui.layout.form.SimpleForm.Accepts an object literal <code>mSettings</code>
-      * that defines initialproperty values, aggregated and associated objects as well as event handlers.See
-      * {@link sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the
-      * settings object.
-      * @param sId ID for the new control, generated automatically if no ID is given
-      * @param mSettings Initial settings for the new control
-      */
-    def this(sId: String) = this()
-    def this(sId: String, mSettings: js.Any) = this()
+  trait SimpleForm extends Control {
     /**
       * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
       * @since 1.32.0
@@ -1587,22 +1488,6 @@ object form extends js.Object {
     
     @js.native
     sealed trait ResponsiveLayout extends SimpleFormLayout
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[SimpleFormLayout with Double] = js.native
-    /* 0 */ @js.native
-    object GridLayout
-      extends TopLevel[typings.openui5.sap.ui.layout.form.SimpleFormLayout.GridLayout with Double]
-    
-    /* 1 */ @js.native
-    object ResponsiveGridLayout
-      extends TopLevel[
-              typings.openui5.sap.ui.layout.form.SimpleFormLayout.ResponsiveGridLayout with Double
-            ]
-    
-    /* 2 */ @js.native
-    object ResponsiveLayout
-      extends TopLevel[typings.openui5.sap.ui.layout.form.SimpleFormLayout.ResponsiveLayout with Double]
     
   }
   

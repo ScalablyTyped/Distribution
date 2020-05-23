@@ -2,9 +2,7 @@ package typings.winrtUwp.Windows.Storage
 
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
-import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.TypedEventHandler
-import typings.winrtUwp.Windows.System.User
 import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.datachanged
 import scala.scalajs.js
@@ -12,9 +10,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides access to the application data store. Application data consists of files and settings that are either local, roaming, or temporary. */
-@JSGlobal("Windows.Storage.ApplicationData")
 @js.native
-abstract class ApplicationData () extends js.Object {
+trait ApplicationData extends js.Object {
   /** Gets the folder in the local app data store where you can save files that are not included in backup and restore. */
   var localCacheFolder: StorageFolder = js.native
   /** Gets the root folder in the local app data store. */
@@ -76,19 +73,5 @@ abstract class ApplicationData () extends js.Object {
   def setVersionAsync(desiredVersion: Double, handler: ApplicationDataSetVersionHandler): IPromiseWithIAsyncAction = js.native
   /** Sends a DataChanged | datachanged event to all registered event handlers. */
   def signalDataChanged(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Storage.ApplicationData")
-@js.native
-object ApplicationData extends js.Object {
-  /** Provides access to the app data store associated with the app's app package. */
-  var current: ApplicationData = js.native
-  /**
-    * Static method that returns the ApplicationData for a User .
-    * @param user The User for which the ApplicationData is returned.
-    * @return When this method completes, it returns the requested ApplicationData object.
-    */
-  def getForUserAsync(user: User): IPromiseWithIAsyncOperation[ApplicationData] = js.native
 }
 

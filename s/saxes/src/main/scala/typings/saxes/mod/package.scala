@@ -12,10 +12,10 @@ package object mod {
   type DoctypeHandler = js.Function1[/* doctype */ java.lang.String, scala.Unit]
   type EndHandler = js.Function0[scala.Unit]
   type ErrorHandler = js.Function1[/* err */ typings.std.Error, scala.Unit]
-  type EventNameToHandler[O, N /* <: typings.saxes.mod.EventName */] = /* import warning: importer.ImportType#apply Failed type conversion: saxes.AnonAttribute<O>[N] */ js.Any
+  type EventNameToHandler[O, N /* <: typings.saxes.mod.EventName */] = /* import warning: importer.ImportType#apply Failed type conversion: saxes.anon.Attribute<O>[N] */ js.Any
   type OpenTagHandler[O] = js.Function1[/* tag */ typings.saxes.mod.TagForOptions[O], scala.Unit]
   type OpenTagStartHandler[O] = js.Function1[/* tag */ typings.saxes.mod.StartTagForOptions[O], scala.Unit]
-  type PIHandler = js.Function1[/* data */ typings.saxes.AnonBody, scala.Unit]
+  type PIHandler = js.Function1[/* data */ typings.saxes.anon.Body, scala.Unit]
   type ReadyHandler = js.Function0[scala.Unit]
   type ResolvePrefix = js.Function1[/* prefix */ java.lang.String, js.UndefOr[java.lang.String]]
   type SaxesOptions = typings.saxes.mod.CommonOptions with typings.saxes.mod.NSOptions with typings.saxes.mod.XMLVersionOptions

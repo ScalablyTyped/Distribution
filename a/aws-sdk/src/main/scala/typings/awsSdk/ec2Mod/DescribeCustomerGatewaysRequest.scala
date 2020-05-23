@@ -24,12 +24,12 @@ object DescribeCustomerGatewaysRequest {
   @scala.inline
   def apply(
     CustomerGatewayIds: CustomerGatewayIdStringList = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     Filters: FilterList = null
   ): DescribeCustomerGatewaysRequest = {
     val __obj = js.Dynamic.literal()
     if (CustomerGatewayIds != null) __obj.updateDynamic("CustomerGatewayIds")(CustomerGatewayIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCustomerGatewaysRequest]
   }

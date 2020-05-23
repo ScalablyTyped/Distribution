@@ -23,21 +23,21 @@ object SFCBlock {
     attrs: Record[String, String],
     content: String,
     `type`: String,
-    end: Int | Double = null,
+    end: js.UndefOr[Double] = js.undefined,
     lang: String = null,
     module: String | Boolean = null,
     scoped: js.UndefOr[Boolean] = js.undefined,
     src: String = null,
-    start: Int | Double = null
+    start: js.UndefOr[Double] = js.undefined
   ): SFCBlock = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (module != null) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
-    if (!js.isUndefined(scoped)) __obj.updateDynamic("scoped")(scoped.asInstanceOf[js.Any])
+    if (!js.isUndefined(scoped)) __obj.updateDynamic("scoped")(scoped.get.asInstanceOf[js.Any])
     if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SFCBlock]
   }
 }

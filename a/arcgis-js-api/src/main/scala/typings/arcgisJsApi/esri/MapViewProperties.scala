@@ -107,14 +107,14 @@ object MapViewProperties {
     padding: ViewPadding = null,
     popup: PopupProperties = null,
     resizeAlign: center | left | right | top | bottom | `top-left` | `top-right` | `bottom-left` | `bottom-right` = null,
-    rotation: Int | Double = null,
-    scale: Int | Double = null,
+    rotation: js.UndefOr[Double] = js.undefined,
+    scale: js.UndefOr[Double] = js.undefined,
     spatialReference: SpatialReferenceProperties = null,
     timeExtent: TimeExtentProperties = null,
     ui: DefaultUIProperties = null,
     viewpoint: ViewpointProperties = null,
     widthBreakpoint: xsmall | small | medium | large | xlarge = null,
-    zoom: Int | Double = null
+    zoom: js.UndefOr[Double] = js.undefined
   ): MapViewProperties = {
     val __obj = js.Dynamic.literal()
     if (allLayerViews != null) __obj.updateDynamic("allLayerViews")(allLayerViews.asInstanceOf[js.Any])
@@ -135,14 +135,14 @@ object MapViewProperties {
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (popup != null) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
     if (resizeAlign != null) __obj.updateDynamic("resizeAlign")(resizeAlign.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
     if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent.asInstanceOf[js.Any])
     if (ui != null) __obj.updateDynamic("ui")(ui.asInstanceOf[js.Any])
     if (viewpoint != null) __obj.updateDynamic("viewpoint")(viewpoint.asInstanceOf[js.Any])
     if (widthBreakpoint != null) __obj.updateDynamic("widthBreakpoint")(widthBreakpoint.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapViewProperties]
   }
 }

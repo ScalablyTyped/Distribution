@@ -1,7 +1,7 @@
 
 # Scala.js typings for stringify-entities
 
-Typings are for version 3.0.0
+Typings are for version 3.0.1
 
 ## Library description:
 Encode HTML character references and character entities

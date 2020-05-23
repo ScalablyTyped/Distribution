@@ -15,13 +15,13 @@ object MotionProps {
   @scala.inline
   def apply(
     animate: js.UndefOr[Boolean] = js.undefined,
-    motionDamping: Int | Double = null,
-    motionStiffness: Int | Double = null
+    motionDamping: js.UndefOr[Double] = js.undefined,
+    motionStiffness: js.UndefOr[Double] = js.undefined
   ): MotionProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (motionDamping != null) __obj.updateDynamic("motionDamping")(motionDamping.asInstanceOf[js.Any])
-    if (motionStiffness != null) __obj.updateDynamic("motionStiffness")(motionStiffness.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(motionDamping)) __obj.updateDynamic("motionDamping")(motionDamping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(motionStiffness)) __obj.updateDynamic("motionStiffness")(motionStiffness.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MotionProps]
   }
 }

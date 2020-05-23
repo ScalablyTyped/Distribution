@@ -39,7 +39,7 @@ object OptionsTopBarSubtitle {
     alignment: center = null,
     color: Color = null,
     fontFamily: FontFamily = null,
-    fontSize: Int | Double = null,
+    fontSize: js.UndefOr[Double] = js.undefined,
     fontWeight: FontWeight = null,
     text: String = null
   ): OptionsTopBarSubtitle = {
@@ -47,7 +47,7 @@ object OptionsTopBarSubtitle {
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsTopBarSubtitle]

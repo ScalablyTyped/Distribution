@@ -69,8 +69,8 @@ object RequestedServiceQuotaChange {
   def apply(
     CaseId: CustomerServiceEngagementId = null,
     Created: DateTime = null,
-    DesiredValue: Int | Double = null,
-    GlobalQuota: js.UndefOr[Boolean] = js.undefined,
+    DesiredValue: js.UndefOr[QuotaValue] = js.undefined,
+    GlobalQuota: js.UndefOr[GlobalQuota] = js.undefined,
     Id: RequestId = null,
     LastUpdated: DateTime = null,
     QuotaArn: QuotaArn = null,
@@ -85,8 +85,8 @@ object RequestedServiceQuotaChange {
     val __obj = js.Dynamic.literal()
     if (CaseId != null) __obj.updateDynamic("CaseId")(CaseId.asInstanceOf[js.Any])
     if (Created != null) __obj.updateDynamic("Created")(Created.asInstanceOf[js.Any])
-    if (DesiredValue != null) __obj.updateDynamic("DesiredValue")(DesiredValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(GlobalQuota)) __obj.updateDynamic("GlobalQuota")(GlobalQuota.asInstanceOf[js.Any])
+    if (!js.isUndefined(DesiredValue)) __obj.updateDynamic("DesiredValue")(DesiredValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(GlobalQuota)) __obj.updateDynamic("GlobalQuota")(GlobalQuota.get.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     if (LastUpdated != null) __obj.updateDynamic("LastUpdated")(LastUpdated.asInstanceOf[js.Any])
     if (QuotaArn != null) __obj.updateDynamic("QuotaArn")(QuotaArn.asInstanceOf[js.Any])

@@ -36,7 +36,7 @@ object BuildPhase {
   @scala.inline
   def apply(
     contexts: PhaseContexts = null,
-    durationInSeconds: Int | Double = null,
+    durationInSeconds: js.UndefOr[WrapperLong] = js.undefined,
     endTime: Timestamp = null,
     phaseStatus: StatusType = null,
     phaseType: BuildPhaseType = null,
@@ -44,7 +44,7 @@ object BuildPhase {
   ): BuildPhase = {
     val __obj = js.Dynamic.literal()
     if (contexts != null) __obj.updateDynamic("contexts")(contexts.asInstanceOf[js.Any])
-    if (durationInSeconds != null) __obj.updateDynamic("durationInSeconds")(durationInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(durationInSeconds)) __obj.updateDynamic("durationInSeconds")(durationInSeconds.get.asInstanceOf[js.Any])
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
     if (phaseStatus != null) __obj.updateDynamic("phaseStatus")(phaseStatus.asInstanceOf[js.Any])
     if (phaseType != null) __obj.updateDynamic("phaseType")(phaseType.asInstanceOf[js.Any])

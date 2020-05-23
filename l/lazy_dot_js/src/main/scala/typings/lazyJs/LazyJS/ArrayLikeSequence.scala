@@ -21,7 +21,5 @@ trait ArrayLikeSequence[T] extends Sequence[T] {
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 @JSGlobal("LazyJS.ArrayLikeSequence")
 @js.native
-object ArrayLikeSequence extends js.Object {
-  def define(methodName: js.Array[String], overrides: js.Any): js.Function = js.native
-}
+object ArrayLikeSequence extends js.Object
 

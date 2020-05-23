@@ -10,29 +10,29 @@ import scala.scalajs.js.annotation._
 
 trait IAbstract extends IBase {
   /** [Method] Broadcast a message intent to look for receivers who can respond to it
-  		* @param message String
-  		* @returns Ext.Promise A promise which provides an array of objects upon fulfilled. Each object contains information about a receiver, with 'id', 'name' and 'icon' keys.
-  		*/
+    * @param message String
+    * @returns Ext.Promise A promise which provides an array of objects upon fulfilled. Each object contains information about a receiver, with 'id', 'name' and 'icon' keys.
+    */
   var broadcast: js.UndefOr[js.Function1[/* message */ js.UndefOr[String], IPromise]] = js.undefined
   /** [Method] Create a connection to another application with the given id
-  		* @param receiverId String The id of the application to connect to. Get this id from broadcast
-  		* @returns Ext.Promise
-  		*/
+    * @param receiverId String The id of the application to connect to. Get this id from broadcast
+    * @returns Ext.Promise
+    */
   var connect: js.UndefOr[js.Function1[/* receiverId */ js.UndefOr[String], IPromise]] = js.undefined
   /** [Method] Assign the callback to handle new connection
-  		* @param callback Function
-  		*/
+    * @param callback Function
+    */
   var onConnect: js.UndefOr[js.Function1[/* callback */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Assign the callback to handling incoming messages
-  		* @param callback Function
-  		*/
+    * @param callback Function
+    */
   var onMessage: js.UndefOr[js.Function1[/* callback */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Send a message
-  		* @param receiverId String The id of the application to connect to. Get this id from broadcast
-  		* @param message * The message to send, can be an object, as long as it is JSON-able.
-  		* @param foreground Boolean Whether or not to bring the receiver app to the foreground
-  		* @returns Ext.Promise
-  		*/
+    * @param receiverId String The id of the application to connect to. Get this id from broadcast
+    * @param message * The message to send, can be an object, as long as it is JSON-able.
+    * @param foreground Boolean Whether or not to bring the receiver app to the foreground
+    * @returns Ext.Promise
+    */
   var send: js.UndefOr[
     js.Function3[
       /* receiverId */ js.UndefOr[String], 
@@ -89,7 +89,7 @@ object IAbstract {
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (send != null) __obj.updateDynamic("send")(js.Any.fromFunction3(send))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAbstract]

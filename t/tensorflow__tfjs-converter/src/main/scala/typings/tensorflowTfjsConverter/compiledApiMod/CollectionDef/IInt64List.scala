@@ -12,9 +12,9 @@ trait IInt64List extends js.Object {
 
 object IInt64List {
   @scala.inline
-  def apply(value: js.Array[Double | String] = null): IInt64List = {
+  def apply(value: js.UndefOr[Null | (js.Array[Double | String])] = js.undefined): IInt64List = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInt64List]
   }
 }

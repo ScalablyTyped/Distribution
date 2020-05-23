@@ -19,12 +19,12 @@ import scala.scalajs.js.annotation._
   * @param comp
   *        The component class
   *
-  * @return	The newly registered component
+  * @return    The newly registered component
   */
 @JSImport("video.js", "registerComponent")
 @js.native
 object registerComponent
   extends TopLevel[
-      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Component.registerComponent */ js.Any
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.getPlugin */ js.Any
     ]
 

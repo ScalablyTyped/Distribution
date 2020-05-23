@@ -4,10 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Media.PlayTo.PlayToSourceRequestedEventArgs")
-@js.native
-class PlayToSourceRequestedEventArgs () extends IPlayToSourceRequestedEventArgs {
-  /* CompleteClass */
-  override var sourceRequest: PlayToSourceRequest = js.native
+trait PlayToSourceRequestedEventArgs extends IPlayToSourceRequestedEventArgs
+
+object PlayToSourceRequestedEventArgs {
+  @scala.inline
+  def apply(sourceRequest: PlayToSourceRequest): PlayToSourceRequestedEventArgs = {
+    val __obj = js.Dynamic.literal(sourceRequest = sourceRequest.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlayToSourceRequestedEventArgs]
+  }
 }
 

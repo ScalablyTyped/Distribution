@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.XboxLive
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,29 +38,6 @@ object XboxLiveEndpointPairState extends js.Object {
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native
   sealed trait remoteEndpointTerminating extends XboxLiveEndpointPairState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[XboxLiveEndpointPairState with Double] = js.native
-  /* 2 */ @js.native
-  object creatingInbound extends TopLevel[creatingInbound with Double]
-  
-  /* 1 */ @js.native
-  object creatingOutbound extends TopLevel[creatingOutbound with Double]
-  
-  /* 6 */ @js.native
-  object deleted extends TopLevel[deleted with Double]
-  
-  /* 4 */ @js.native
-  object deletingLocally extends TopLevel[deletingLocally with Double]
-  
-  /* 0 */ @js.native
-  object invalid extends TopLevel[invalid with Double]
-  
-  /* 3 */ @js.native
-  object ready extends TopLevel[ready with Double]
-  
-  /* 5 */ @js.native
-  object remoteEndpointTerminating extends TopLevel[remoteEndpointTerminating with Double]
   
 }
 

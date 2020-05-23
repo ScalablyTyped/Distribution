@@ -1,9 +1,9 @@
 package typings.oracleOraclejet.ojmodelMod
 
-import typings.oracleOraclejet.AnonAttrs
-import typings.oracleOraclejet.AnonDictpropNameError
-import typings.oracleOraclejet.AnonInitialize
-import typings.oracleOraclejet.AnonWait
+import typings.oracleOraclejet.anon.Attrs
+import typings.oracleOraclejet.anon.DictpropNameError
+import typings.oracleOraclejet.anon.Initialize
+import typings.oracleOraclejet.anon.Wait
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,9 +32,9 @@ class Model () extends js.Object {
   def clear(): Model | Boolean = js.native
   def clear(options: js.Object): Model | Boolean = js.native
   def destroy(): Boolean = js.native
-  def destroy(options: AnonWait): Boolean = js.native
+  def destroy(options: Wait): Boolean = js.native
   def fetch(): js.Object = js.native
-  def fetch(options: AnonDictpropNameError): js.Object = js.native
+  def fetch(options: DictpropNameError): js.Object = js.native
   def get(property: String): js.Object = js.native
   def has(property: String): Boolean = js.native
   def hasChanged(): Boolean = js.native
@@ -98,7 +98,7 @@ class Model () extends js.Object {
   def previousAttributes(): js.Object = js.native
   def save(): js.Object | Boolean = js.native
   def save(attributes: js.Object): js.Object | Boolean = js.native
-  def save(attributes: js.Object, options: AnonAttrs): js.Object | Boolean = js.native
+  def save(attributes: js.Object, options: Attrs): js.Object | Boolean = js.native
   def set(property: String): Model | Boolean = js.native
   def set(property: String, value: js.Object): Model | Boolean = js.native
   def set(property: String, value: js.Object, options: js.Object): Model | Boolean = js.native
@@ -128,7 +128,7 @@ class Model () extends js.Object {
 @js.native
 object Model extends js.Object {
   def extend(): js.Any = js.native
-  def extend(properties: AnonInitialize): js.Any = js.native
-  def extend(properties: AnonInitialize, classProperties: js.Object): js.Any = js.native
+  def extend(properties: Initialize): js.Any = js.native
+  def extend(properties: Initialize, classProperties: js.Object): js.Any = js.native
 }
 

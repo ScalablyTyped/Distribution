@@ -25,7 +25,7 @@ object DbConnectionConfig {
     name: String = null,
     password: String = null,
     server: OServer = null,
-    sessionId: Int | Double = null,
+    sessionId: js.UndefOr[Double] = js.undefined,
     storage: String = null,
     token: js.Any = null,
     transformers: js.Array[js.Function1[/* item */ ORecord, _]] = null,
@@ -34,16 +34,16 @@ object DbConnectionConfig {
     username: String = null
   ): DbConnectionConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(forcePrepare)) __obj.updateDynamic("forcePrepare")(forcePrepare.asInstanceOf[js.Any])
+    if (!js.isUndefined(forcePrepare)) __obj.updateDynamic("forcePrepare")(forcePrepare.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
-    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId.asInstanceOf[js.Any])
+    if (!js.isUndefined(sessionId)) __obj.updateDynamic("sessionId")(sessionId.get.asInstanceOf[js.Any])
     if (storage != null) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
     if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     if (transformers != null) __obj.updateDynamic("transformers")(transformers.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(useToken)) __obj.updateDynamic("useToken")(useToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(useToken)) __obj.updateDynamic("useToken")(useToken.get.asInstanceOf[js.Any])
     if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[DbConnectionConfig]
   }

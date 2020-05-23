@@ -34,23 +34,23 @@ object NavbarItemContainerModifierProps {
     dropdown: js.UndefOr[Boolean] = js.undefined,
     expanded: js.UndefOr[Boolean] = js.undefined,
     hoverable: js.UndefOr[Boolean] = js.undefined,
-    innerRef: Ref[HTMLElement | SVGElement | ComponentType[js.Object]] = null,
+    innerRef: js.UndefOr[Null | (Ref[HTMLElement | SVGElement | ComponentType[js.Object]])] = js.undefined,
     managed: js.UndefOr[Boolean] = js.undefined,
     onClick: MouseEvent[Element, NativeMouseEvent] => Unit = null,
     tab: js.UndefOr[Boolean] = js.undefined,
     up: js.UndefOr[Boolean] = js.undefined
   ): NavbarItemContainerModifierProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropdown)) __obj.updateDynamic("dropdown")(dropdown.asInstanceOf[js.Any])
-    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverable)) __obj.updateDynamic("hoverable")(hoverable.asInstanceOf[js.Any])
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(managed)) __obj.updateDynamic("managed")(managed.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropdown)) __obj.updateDynamic("dropdown")(dropdown.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverable)) __obj.updateDynamic("hoverable")(hoverable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(innerRef)) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(managed)) __obj.updateDynamic("managed")(managed.get.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (!js.isUndefined(tab)) __obj.updateDynamic("tab")(tab.asInstanceOf[js.Any])
-    if (!js.isUndefined(up)) __obj.updateDynamic("up")(up.asInstanceOf[js.Any])
+    if (!js.isUndefined(tab)) __obj.updateDynamic("tab")(tab.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(up)) __obj.updateDynamic("up")(up.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavbarItemContainerModifierProps]
   }
 }

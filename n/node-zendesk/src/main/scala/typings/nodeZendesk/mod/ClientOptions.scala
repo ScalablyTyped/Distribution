@@ -27,9 +27,9 @@ object ClientOptions {
   ): ClientOptions = {
     val __obj = js.Dynamic.literal(remoteUri = remoteUri.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     if (asUser != null) __obj.updateDynamic("asUser")(asUser.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableGlobalState)) __obj.updateDynamic("disableGlobalState")(disableGlobalState.asInstanceOf[js.Any])
-    if (!js.isUndefined(oauth)) __obj.updateDynamic("oauth")(oauth.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableGlobalState)) __obj.updateDynamic("disableGlobalState")(disableGlobalState.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(oauth)) __obj.updateDynamic("oauth")(oauth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
 }

@@ -43,8 +43,8 @@ object IosVppEBook {
     publishedDateTime: String = null,
     publisher: String = null,
     seller: String = null,
-    totalLicenseCount: Int | Double = null,
-    usedLicenseCount: Int | Double = null,
+    totalLicenseCount: js.UndefOr[Double] = js.undefined,
+    usedLicenseCount: js.UndefOr[Double] = js.undefined,
     userStateSummary: js.Array[UserInstallStateSummary] = null,
     vppOrganizationName: String = null,
     vppTokenId: String = null
@@ -67,8 +67,8 @@ object IosVppEBook {
     if (publishedDateTime != null) __obj.updateDynamic("publishedDateTime")(publishedDateTime.asInstanceOf[js.Any])
     if (publisher != null) __obj.updateDynamic("publisher")(publisher.asInstanceOf[js.Any])
     if (seller != null) __obj.updateDynamic("seller")(seller.asInstanceOf[js.Any])
-    if (totalLicenseCount != null) __obj.updateDynamic("totalLicenseCount")(totalLicenseCount.asInstanceOf[js.Any])
-    if (usedLicenseCount != null) __obj.updateDynamic("usedLicenseCount")(usedLicenseCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalLicenseCount)) __obj.updateDynamic("totalLicenseCount")(totalLicenseCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(usedLicenseCount)) __obj.updateDynamic("usedLicenseCount")(usedLicenseCount.get.asInstanceOf[js.Any])
     if (userStateSummary != null) __obj.updateDynamic("userStateSummary")(userStateSummary.asInstanceOf[js.Any])
     if (vppOrganizationName != null) __obj.updateDynamic("vppOrganizationName")(vppOrganizationName.asInstanceOf[js.Any])
     if (vppTokenId != null) __obj.updateDynamic("vppTokenId")(vppTokenId.asInstanceOf[js.Any])

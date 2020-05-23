@@ -15,10 +15,14 @@ trait VariableUsage extends js.Object {
 
 object VariableUsage {
   @scala.inline
-  def apply(node: VariableNode, defaultValue: Maybe[_] = null, `type`: Maybe[GraphQLInputType] = null): VariableUsage = {
+  def apply(
+    node: VariableNode,
+    defaultValue: js.UndefOr[Null | Maybe[_]] = js.undefined,
+    `type`: js.UndefOr[Null | Maybe[GraphQLInputType]] = js.undefined
+  ): VariableUsage = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VariableUsage]
   }
 }

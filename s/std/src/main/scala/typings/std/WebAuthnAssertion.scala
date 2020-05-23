@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +11,16 @@ trait WebAuthnAssertion extends js.Object {
   val signature: ArrayBuffer
 }
 
-@JSGlobal("WebAuthnAssertion")
-@js.native
-object WebAuthnAssertion extends Instantiable0[WebAuthnAssertion]
+object WebAuthnAssertion {
+  @scala.inline
+  def apply(
+    authenticatorData: ArrayBuffer,
+    clientData: ArrayBuffer,
+    credential: ScopedCredential,
+    signature: ArrayBuffer
+  ): WebAuthnAssertion = {
+    val __obj = js.Dynamic.literal(authenticatorData = authenticatorData.asInstanceOf[js.Any], clientData = clientData.asInstanceOf[js.Any], credential = credential.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebAuthnAssertion]
+  }
+}
 

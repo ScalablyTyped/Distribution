@@ -89,7 +89,7 @@ object ReactImageGalleryProps {
     disableArrowKeys: js.UndefOr[Boolean] = js.undefined,
     disableSwipe: js.UndefOr[Boolean] = js.undefined,
     disableThumbnailScroll: js.UndefOr[Boolean] = js.undefined,
-    flickThreshold: Int | Double = null,
+    flickThreshold: js.UndefOr[Double] = js.undefined,
     indexSeparator: String = null,
     infinite: js.UndefOr[Boolean] = js.undefined,
     isRTL: js.UndefOr[Boolean] = js.undefined,
@@ -123,28 +123,28 @@ object ReactImageGalleryProps {
     showNav: js.UndefOr[Boolean] = js.undefined,
     showPlayButton: js.UndefOr[Boolean] = js.undefined,
     showThumbnails: js.UndefOr[Boolean] = js.undefined,
-    slideDuration: Int | Double = null,
-    slideInterval: Int | Double = null,
+    slideDuration: js.UndefOr[Double] = js.undefined,
+    slideInterval: js.UndefOr[Double] = js.undefined,
     slideOnThumbnailOver: js.UndefOr[Boolean] = js.undefined,
-    startIndex: Int | Double = null,
+    startIndex: js.UndefOr[Double] = js.undefined,
     stopPropagation: js.UndefOr[Boolean] = js.undefined,
-    swipeThreshold: Int | Double = null,
-    swipingTransitionDuration: Int | Double = null,
+    swipeThreshold: js.UndefOr[Double] = js.undefined,
+    swipingTransitionDuration: js.UndefOr[Double] = js.undefined,
     thumbnailPosition: top | right | bottom | left = null,
     useBrowserFullscreen: js.UndefOr[Boolean] = js.undefined,
     useTranslate3D: js.UndefOr[Boolean] = js.undefined
   ): ReactImageGalleryProps = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     if (additionalClass != null) __obj.updateDynamic("additionalClass")(additionalClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableArrowKeys)) __obj.updateDynamic("disableArrowKeys")(disableArrowKeys.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableSwipe)) __obj.updateDynamic("disableSwipe")(disableSwipe.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableThumbnailScroll)) __obj.updateDynamic("disableThumbnailScroll")(disableThumbnailScroll.asInstanceOf[js.Any])
-    if (flickThreshold != null) __obj.updateDynamic("flickThreshold")(flickThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableArrowKeys)) __obj.updateDynamic("disableArrowKeys")(disableArrowKeys.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableSwipe)) __obj.updateDynamic("disableSwipe")(disableSwipe.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableThumbnailScroll)) __obj.updateDynamic("disableThumbnailScroll")(disableThumbnailScroll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flickThreshold)) __obj.updateDynamic("flickThreshold")(flickThreshold.get.asInstanceOf[js.Any])
     if (indexSeparator != null) __obj.updateDynamic("indexSeparator")(indexSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(infinite)) __obj.updateDynamic("infinite")(infinite.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRTL)) __obj.updateDynamic("isRTL")(isRTL.asInstanceOf[js.Any])
-    if (!js.isUndefined(lazyLoad)) __obj.updateDynamic("lazyLoad")(lazyLoad.asInstanceOf[js.Any])
+    if (!js.isUndefined(infinite)) __obj.updateDynamic("infinite")(infinite.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRTL)) __obj.updateDynamic("isRTL")(isRTL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lazyLoad)) __obj.updateDynamic("lazyLoad")(lazyLoad.get.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onErrorImageURL != null) __obj.updateDynamic("onErrorImageURL")(onErrorImageURL.asInstanceOf[js.Any])
     if (onImageError != null) __obj.updateDynamic("onImageError")(js.Any.fromFunction1(onImageError))
@@ -160,7 +160,7 @@ object ReactImageGalleryProps {
     if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
     if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
     if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
-    if (!js.isUndefined(preventDefaultTouchmoveEvent)) __obj.updateDynamic("preventDefaultTouchmoveEvent")(preventDefaultTouchmoveEvent.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventDefaultTouchmoveEvent)) __obj.updateDynamic("preventDefaultTouchmoveEvent")(preventDefaultTouchmoveEvent.get.asInstanceOf[js.Any])
     if (renderCustomControls != null) __obj.updateDynamic("renderCustomControls")(js.Any.fromFunction0(renderCustomControls))
     if (renderFullscreenButton != null) __obj.updateDynamic("renderFullscreenButton")(js.Any.fromFunction2(renderFullscreenButton))
     if (renderItem != null) __obj.updateDynamic("renderItem")(js.Any.fromFunction1(renderItem))
@@ -168,22 +168,22 @@ object ReactImageGalleryProps {
     if (renderPlayPauseButton != null) __obj.updateDynamic("renderPlayPauseButton")(js.Any.fromFunction2(renderPlayPauseButton))
     if (renderRightNav != null) __obj.updateDynamic("renderRightNav")(js.Any.fromFunction2(renderRightNav))
     if (renderThumbInner != null) __obj.updateDynamic("renderThumbInner")(js.Any.fromFunction1(renderThumbInner))
-    if (!js.isUndefined(showBullets)) __obj.updateDynamic("showBullets")(showBullets.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFullscreenButton)) __obj.updateDynamic("showFullscreenButton")(showFullscreenButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(showIndex)) __obj.updateDynamic("showIndex")(showIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNav)) __obj.updateDynamic("showNav")(showNav.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPlayButton)) __obj.updateDynamic("showPlayButton")(showPlayButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(showThumbnails)) __obj.updateDynamic("showThumbnails")(showThumbnails.asInstanceOf[js.Any])
-    if (slideDuration != null) __obj.updateDynamic("slideDuration")(slideDuration.asInstanceOf[js.Any])
-    if (slideInterval != null) __obj.updateDynamic("slideInterval")(slideInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(slideOnThumbnailOver)) __obj.updateDynamic("slideOnThumbnailOver")(slideOnThumbnailOver.asInstanceOf[js.Any])
-    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopPropagation)) __obj.updateDynamic("stopPropagation")(stopPropagation.asInstanceOf[js.Any])
-    if (swipeThreshold != null) __obj.updateDynamic("swipeThreshold")(swipeThreshold.asInstanceOf[js.Any])
-    if (swipingTransitionDuration != null) __obj.updateDynamic("swipingTransitionDuration")(swipingTransitionDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(showBullets)) __obj.updateDynamic("showBullets")(showBullets.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFullscreenButton)) __obj.updateDynamic("showFullscreenButton")(showFullscreenButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showIndex)) __obj.updateDynamic("showIndex")(showIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNav)) __obj.updateDynamic("showNav")(showNav.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPlayButton)) __obj.updateDynamic("showPlayButton")(showPlayButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showThumbnails)) __obj.updateDynamic("showThumbnails")(showThumbnails.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(slideDuration)) __obj.updateDynamic("slideDuration")(slideDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(slideInterval)) __obj.updateDynamic("slideInterval")(slideInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(slideOnThumbnailOver)) __obj.updateDynamic("slideOnThumbnailOver")(slideOnThumbnailOver.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopPropagation)) __obj.updateDynamic("stopPropagation")(stopPropagation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(swipeThreshold)) __obj.updateDynamic("swipeThreshold")(swipeThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(swipingTransitionDuration)) __obj.updateDynamic("swipingTransitionDuration")(swipingTransitionDuration.get.asInstanceOf[js.Any])
     if (thumbnailPosition != null) __obj.updateDynamic("thumbnailPosition")(thumbnailPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(useBrowserFullscreen)) __obj.updateDynamic("useBrowserFullscreen")(useBrowserFullscreen.asInstanceOf[js.Any])
-    if (!js.isUndefined(useTranslate3D)) __obj.updateDynamic("useTranslate3D")(useTranslate3D.asInstanceOf[js.Any])
+    if (!js.isUndefined(useBrowserFullscreen)) __obj.updateDynamic("useBrowserFullscreen")(useBrowserFullscreen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useTranslate3D)) __obj.updateDynamic("useTranslate3D")(useTranslate3D.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactImageGalleryProps]
   }
 }

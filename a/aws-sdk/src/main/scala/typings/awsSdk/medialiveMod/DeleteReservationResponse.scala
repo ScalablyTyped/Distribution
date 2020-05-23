@@ -84,12 +84,12 @@ object DeleteReservationResponse {
   @scala.inline
   def apply(
     Arn: string = null,
-    Count: Int | Double = null,
+    Count: js.UndefOr[integer] = js.undefined,
     CurrencyCode: string = null,
-    Duration: Int | Double = null,
+    Duration: js.UndefOr[integer] = js.undefined,
     DurationUnits: OfferingDurationUnits = null,
     End: string = null,
-    FixedPrice: Int | Double = null,
+    FixedPrice: js.UndefOr[double] = js.undefined,
     Name: string = null,
     OfferingDescription: string = null,
     OfferingId: string = null,
@@ -100,16 +100,16 @@ object DeleteReservationResponse {
     Start: string = null,
     State: ReservationState = null,
     Tags: Tags = null,
-    UsagePrice: Int | Double = null
+    UsagePrice: js.UndefOr[double] = js.undefined
   ): DeleteReservationResponse = {
     val __obj = js.Dynamic.literal()
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (Count != null) __obj.updateDynamic("Count")(Count.asInstanceOf[js.Any])
+    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count.get.asInstanceOf[js.Any])
     if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode.asInstanceOf[js.Any])
-    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration.get.asInstanceOf[js.Any])
     if (DurationUnits != null) __obj.updateDynamic("DurationUnits")(DurationUnits.asInstanceOf[js.Any])
     if (End != null) __obj.updateDynamic("End")(End.asInstanceOf[js.Any])
-    if (FixedPrice != null) __obj.updateDynamic("FixedPrice")(FixedPrice.asInstanceOf[js.Any])
+    if (!js.isUndefined(FixedPrice)) __obj.updateDynamic("FixedPrice")(FixedPrice.get.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (OfferingDescription != null) __obj.updateDynamic("OfferingDescription")(OfferingDescription.asInstanceOf[js.Any])
     if (OfferingId != null) __obj.updateDynamic("OfferingId")(OfferingId.asInstanceOf[js.Any])
@@ -120,7 +120,7 @@ object DeleteReservationResponse {
     if (Start != null) __obj.updateDynamic("Start")(Start.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (UsagePrice != null) __obj.updateDynamic("UsagePrice")(UsagePrice.asInstanceOf[js.Any])
+    if (!js.isUndefined(UsagePrice)) __obj.updateDynamic("UsagePrice")(UsagePrice.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteReservationResponse]
   }
 }

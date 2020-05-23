@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.mod
 
-import typings.antDesignReactNative.AnonSize
+import typings.antDesignReactNative.anon.Size
 import typings.antDesignReactNative.whiteSpaceMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,6 @@ class WhiteSpace () extends default
 @JSImport("@ant-design/react-native", "WhiteSpace")
 @js.native
 object WhiteSpace extends js.Object {
-  var defaultProps: AnonSize = js.native
+  var defaultProps: Size = js.native
 }
 

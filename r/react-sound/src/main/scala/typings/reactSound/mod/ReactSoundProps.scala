@@ -43,14 +43,14 @@ object ReactSoundProps {
     onPlaying: () => Unit = null,
     onResume: () => Unit = null,
     onStop: () => Unit = null,
-    playFromPosition: Int | Double = null,
-    playbackRate: Int | Double = null,
-    position: Int | Double = null,
-    volume: Int | Double = null
+    playFromPosition: js.UndefOr[Double] = js.undefined,
+    playbackRate: js.UndefOr[Double] = js.undefined,
+    position: js.UndefOr[Double] = js.undefined,
+    volume: js.UndefOr[Double] = js.undefined
   ): ReactSoundProps = {
     val __obj = js.Dynamic.literal(playStatus = playStatus.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoLoad)) __obj.updateDynamic("autoLoad")(autoLoad.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoLoad)) __obj.updateDynamic("autoLoad")(autoLoad.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
     if (onBufferChange != null) __obj.updateDynamic("onBufferChange")(js.Any.fromFunction0(onBufferChange))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction0(onError))
     if (onFinishedPlaying != null) __obj.updateDynamic("onFinishedPlaying")(js.Any.fromFunction0(onFinishedPlaying))
@@ -60,10 +60,10 @@ object ReactSoundProps {
     if (onPlaying != null) __obj.updateDynamic("onPlaying")(js.Any.fromFunction0(onPlaying))
     if (onResume != null) __obj.updateDynamic("onResume")(js.Any.fromFunction0(onResume))
     if (onStop != null) __obj.updateDynamic("onStop")(js.Any.fromFunction0(onStop))
-    if (playFromPosition != null) __obj.updateDynamic("playFromPosition")(playFromPosition.asInstanceOf[js.Any])
-    if (playbackRate != null) __obj.updateDynamic("playbackRate")(playbackRate.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
+    if (!js.isUndefined(playFromPosition)) __obj.updateDynamic("playFromPosition")(playFromPosition.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(playbackRate)) __obj.updateDynamic("playbackRate")(playbackRate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(volume)) __obj.updateDynamic("volume")(volume.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactSoundProps]
   }
 }

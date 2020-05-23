@@ -44,15 +44,15 @@ object PointCloudRendererPointSizeAlgorithm {
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     `type`: `fixed-size` | splat,
-    scaleFactor: Int | Double = null,
-    size: Int | Double = null,
+    scaleFactor: js.UndefOr[Double] = js.undefined,
+    size: js.UndefOr[Double] = js.undefined,
     useRealWorldSymbolSizes: js.UndefOr[Boolean] = js.undefined
   ): PointCloudRendererPointSizeAlgorithm = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (scaleFactor != null) __obj.updateDynamic("scaleFactor")(scaleFactor.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(useRealWorldSymbolSizes)) __obj.updateDynamic("useRealWorldSymbolSizes")(useRealWorldSymbolSizes.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleFactor)) __obj.updateDynamic("scaleFactor")(scaleFactor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useRealWorldSymbolSizes)) __obj.updateDynamic("useRealWorldSymbolSizes")(useRealWorldSymbolSizes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointCloudRendererPointSizeAlgorithm]
   }
 }

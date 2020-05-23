@@ -33,7 +33,7 @@ object CreateClientOptions {
     language: Language = null,
     rate: RateOptions = null,
     retryOptions: RetryOptions = null,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): CreateClientOptions = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
@@ -42,7 +42,7 @@ object CreateClientOptions {
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
     if (retryOptions != null) __obj.updateDynamic("retryOptions")(retryOptions.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateClientOptions]
   }
 }

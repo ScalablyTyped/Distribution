@@ -48,12 +48,12 @@ object MutationObserverInit {
   ): MutationObserverInit = {
     val __obj = js.Dynamic.literal()
     if (attributeFilter != null) __obj.updateDynamic("attributeFilter")(attributeFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(attributeOldValue)) __obj.updateDynamic("attributeOldValue")(attributeOldValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(attributes)) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(characterData)) __obj.updateDynamic("characterData")(characterData.asInstanceOf[js.Any])
-    if (!js.isUndefined(characterDataOldValue)) __obj.updateDynamic("characterDataOldValue")(characterDataOldValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(childList)) __obj.updateDynamic("childList")(childList.asInstanceOf[js.Any])
-    if (!js.isUndefined(subtree)) __obj.updateDynamic("subtree")(subtree.asInstanceOf[js.Any])
+    if (!js.isUndefined(attributeOldValue)) __obj.updateDynamic("attributeOldValue")(attributeOldValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(attributes)) __obj.updateDynamic("attributes")(attributes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(characterData)) __obj.updateDynamic("characterData")(characterData.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(characterDataOldValue)) __obj.updateDynamic("characterDataOldValue")(characterDataOldValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(childList)) __obj.updateDynamic("childList")(childList.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(subtree)) __obj.updateDynamic("subtree")(subtree.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationObserverInit]
   }
 }

@@ -16,9 +16,9 @@ trait AnalyticsDataPoint extends js.Object {
 
 object AnalyticsDataPoint {
   @scala.inline
-  def apply(eventCount: Int | Double = null, eventLocations: js.Array[LatLng] = null): AnalyticsDataPoint = {
+  def apply(eventCount: js.UndefOr[Double] = js.undefined, eventLocations: js.Array[LatLng] = null): AnalyticsDataPoint = {
     val __obj = js.Dynamic.literal()
-    if (eventCount != null) __obj.updateDynamic("eventCount")(eventCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(eventCount)) __obj.updateDynamic("eventCount")(eventCount.get.asInstanceOf[js.Any])
     if (eventLocations != null) __obj.updateDynamic("eventLocations")(eventLocations.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsDataPoint]
   }

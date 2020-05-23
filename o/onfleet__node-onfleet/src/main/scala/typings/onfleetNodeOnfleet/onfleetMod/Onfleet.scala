@@ -1,13 +1,13 @@
 package typings.onfleetNodeOnfleet.onfleetMod
 
-import typings.onfleetNodeOnfleet.AnonBaseUrl
+import typings.onfleetNodeOnfleet.anon.BaseUrl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Onfleet extends js.Object {
   var admins: typings.onfleetNodeOnfleet.administratorsMod.^
-  var api: AnonBaseUrl
+  var api: BaseUrl
   var apiKey: String
   var containers: typings.onfleetNodeOnfleet.containersMod.^
   var destinations: typings.onfleetNodeOnfleet.destinationsMod.^
@@ -18,14 +18,14 @@ trait Onfleet extends js.Object {
   var teams: typings.onfleetNodeOnfleet.teamsMod.^
   var webhooks: typings.onfleetNodeOnfleet.webhooksMod.^
   var workers: typings.onfleetNodeOnfleet.workersMod.^
-  def verifyKey(): Boolean
+  def verifyKey(): js.Promise[Boolean]
 }
 
 object Onfleet {
   @scala.inline
   def apply(
     admins: typings.onfleetNodeOnfleet.administratorsMod.^,
-    api: AnonBaseUrl,
+    api: BaseUrl,
     apiKey: String,
     containers: typings.onfleetNodeOnfleet.containersMod.^,
     destinations: typings.onfleetNodeOnfleet.destinationsMod.^,
@@ -34,7 +34,7 @@ object Onfleet {
     recipients: typings.onfleetNodeOnfleet.recipientsMod.^,
     tasks: typings.onfleetNodeOnfleet.tasksMod.^,
     teams: typings.onfleetNodeOnfleet.teamsMod.^,
-    verifyKey: () => Boolean,
+    verifyKey: () => js.Promise[Boolean],
     webhooks: typings.onfleetNodeOnfleet.webhooksMod.^,
     workers: typings.onfleetNodeOnfleet.workersMod.^
   ): Onfleet = {

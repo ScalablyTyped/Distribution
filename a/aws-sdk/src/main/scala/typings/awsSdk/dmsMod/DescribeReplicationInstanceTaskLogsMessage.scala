@@ -22,10 +22,14 @@ trait DescribeReplicationInstanceTaskLogsMessage extends js.Object {
 
 object DescribeReplicationInstanceTaskLogsMessage {
   @scala.inline
-  def apply(ReplicationInstanceArn: String, Marker: String = null, MaxRecords: Int | Double = null): DescribeReplicationInstanceTaskLogsMessage = {
+  def apply(
+    ReplicationInstanceArn: String,
+    Marker: String = null,
+    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
+  ): DescribeReplicationInstanceTaskLogsMessage = {
     val __obj = js.Dynamic.literal(ReplicationInstanceArn = ReplicationInstanceArn.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeReplicationInstanceTaskLogsMessage]
   }
 }

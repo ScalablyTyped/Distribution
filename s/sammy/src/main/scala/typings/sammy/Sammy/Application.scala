@@ -1,6 +1,6 @@
 package typings.sammy.Sammy
 
-import typings.jquery.JQuery_
+import typings.jquery.JQuery
 import typings.std.Error
 import typings.std.HTMLElement
 import typings.std.RegExp
@@ -16,9 +16,9 @@ trait Application extends Object {
   // Features provided by oauth2 plugin
   var oauthorize: String = js.native
   @JSName("$element")
-  def $element(): JQuery_[HTMLElement] = js.native
+  def $element(): JQuery[HTMLElement] = js.native
   @JSName("$element")
-  def $element(selector: String): JQuery_[HTMLElement] = js.native
+  def $element(selector: String): JQuery[HTMLElement] = js.native
   def apply(appFn: js.Function): js.Any = js.native
   def after(callback: js.Function): Application = js.native
   def any(verb: String, path: String, callback: js.Function): Unit = js.native

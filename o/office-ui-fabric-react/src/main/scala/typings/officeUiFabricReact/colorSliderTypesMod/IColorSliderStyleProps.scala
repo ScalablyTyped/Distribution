@@ -29,7 +29,7 @@ object IColorSliderStyleProps {
   ): IColorSliderStyleProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAlpha)) __obj.updateDynamic("isAlpha")(isAlpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAlpha)) __obj.updateDynamic("isAlpha")(isAlpha.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColorSliderStyleProps]
   }

@@ -7,33 +7,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Web.Syndication.SyndicationGenerator")
-@js.native
-class SyndicationGenerator ()
+trait SyndicationGenerator
   extends ISyndicationGenerator
-     with ISyndicationNode {
-  def this(text: String) = this()
-  /* CompleteClass */
-  override var attributeExtensions: IVector[SyndicationAttribute] = js.native
-  /* CompleteClass */
-  override var baseUri: Uri = js.native
-  /* CompleteClass */
-  override var elementExtensions: IVector[ISyndicationNode] = js.native
-  /* CompleteClass */
-  override var language: String = js.native
-  /* CompleteClass */
-  override var nodeName: String = js.native
-  /* CompleteClass */
-  override var nodeNamespace: String = js.native
-  /* CompleteClass */
-  override var nodeValue: String = js.native
-  /* CompleteClass */
-  override var text: String = js.native
-  /* CompleteClass */
-  override var uri: Uri = js.native
-  /* CompleteClass */
-  override var version: String = js.native
-  /* CompleteClass */
-  override def getXmlDocument(format: SyndicationFormat): XmlDocument = js.native
+     with ISyndicationNode
+
+object SyndicationGenerator {
+  @scala.inline
+  def apply(
+    attributeExtensions: IVector[SyndicationAttribute],
+    baseUri: Uri,
+    elementExtensions: IVector[ISyndicationNode],
+    getXmlDocument: SyndicationFormat => XmlDocument,
+    language: String,
+    nodeName: String,
+    nodeNamespace: String,
+    nodeValue: String,
+    text: String,
+    uri: Uri,
+    version: String
+  ): SyndicationGenerator = {
+    val __obj = js.Dynamic.literal(attributeExtensions = attributeExtensions.asInstanceOf[js.Any], baseUri = baseUri.asInstanceOf[js.Any], elementExtensions = elementExtensions.asInstanceOf[js.Any], getXmlDocument = js.Any.fromFunction1(getXmlDocument), language = language.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], nodeNamespace = nodeNamespace.asInstanceOf[js.Any], nodeValue = nodeValue.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SyndicationGenerator]
+  }
 }
 

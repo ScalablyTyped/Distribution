@@ -15,8 +15,8 @@ trait IImg extends IComponent {
   @JSName("onRender")
   var onRender_IImg: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Updates the src of the image
-  		* @param src String
-  		*/
+    * @param src String
+    */
   var setSrc: js.UndefOr[js.Function1[/* src */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   /** [Config Option] (String) */
   var src: js.UndefOr[java.lang.String] = js.undefined

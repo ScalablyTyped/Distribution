@@ -13,11 +13,15 @@ trait SpacedProps extends js.Object {
 
 object SpacedProps {
   @scala.inline
-  def apply(col: Int | Double = null, outer: Double | Boolean = null, row: Int | Double = null): SpacedProps = {
+  def apply(
+    col: js.UndefOr[Double] = js.undefined,
+    outer: Double | Boolean = null,
+    row: js.UndefOr[Double] = js.undefined
+  ): SpacedProps = {
     val __obj = js.Dynamic.literal()
-    if (col != null) __obj.updateDynamic("col")(col.asInstanceOf[js.Any])
+    if (!js.isUndefined(col)) __obj.updateDynamic("col")(col.get.asInstanceOf[js.Any])
     if (outer != null) __obj.updateDynamic("outer")(outer.asInstanceOf[js.Any])
-    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
+    if (!js.isUndefined(row)) __obj.updateDynamic("row")(row.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpacedProps]
   }
 }

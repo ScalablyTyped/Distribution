@@ -32,7 +32,7 @@ object SnapToRoadsRequest {
   @scala.inline
   def apply(path: js.Array[LatLng], interpolate: js.UndefOr[Boolean] = js.undefined): SnapToRoadsRequest = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (!js.isUndefined(interpolate)) __obj.updateDynamic("interpolate")(interpolate.asInstanceOf[js.Any])
+    if (!js.isUndefined(interpolate)) __obj.updateDynamic("interpolate")(interpolate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapToRoadsRequest]
   }
 }

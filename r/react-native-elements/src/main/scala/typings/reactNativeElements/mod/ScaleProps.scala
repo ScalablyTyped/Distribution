@@ -4,7 +4,6 @@ import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityState
-import typings.reactNative.mod.AccessibilityStates
 import typings.reactNative.mod.AccessibilityTrait
 import typings.reactNative.mod.AccessibilityValue
 import typings.reactNative.mod.GestureResponderEvent
@@ -54,18 +53,17 @@ object ScaleProps {
     accessibilityLiveRegion: none | polite | assertive = null,
     accessibilityRole: AccessibilityRole = null,
     accessibilityState: AccessibilityState = null,
-    accessibilityStates: js.Array[AccessibilityStates] = null,
     accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
     accessibilityValue: AccessibilityValue = null,
     accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined,
     accessible: js.UndefOr[Boolean] = js.undefined,
-    activeScale: Int | Double = null,
-    defaultNumber: Int | Double = null,
-    delayLongPress: Int | Double = null,
-    delayPressIn: Int | Double = null,
-    delayPressOut: Int | Double = null,
+    activeScale: js.UndefOr[Double] = js.undefined,
+    defaultNumber: js.UndefOr[Double] = js.undefined,
+    delayLongPress: js.UndefOr[Double] = js.undefined,
+    delayPressIn: js.UndefOr[Double] = js.undefined,
+    delayPressOut: js.UndefOr[Double] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    friction: Int | Double = null,
+    friction: js.UndefOr[Double] = js.undefined,
     hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
     hitSlop: Insets = null,
     importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
@@ -80,13 +78,13 @@ object ScaleProps {
     onPress: /* event */ GestureResponderEvent => Unit = null,
     onPressIn: /* event */ GestureResponderEvent => Unit = null,
     onPressOut: /* event */ GestureResponderEvent => Unit = null,
-    pressInFriction: Int | Double = null,
-    pressInTension: Int | Double = null,
-    pressOutFriction: Int | Double = null,
-    pressOutTension: Int | Double = null,
+    pressInFriction: js.UndefOr[Double] = js.undefined,
+    pressInTension: js.UndefOr[Double] = js.undefined,
+    pressOutFriction: js.UndefOr[Double] = js.undefined,
+    pressOutTension: js.UndefOr[Double] = js.undefined,
     pressRetentionOffset: Insets = null,
-    style: StyleProp[ViewStyle] = null,
-    tension: Int | Double = null,
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    tension: js.UndefOr[Double] = js.undefined,
     testID: String = null,
     tvParallaxProperties: TVParallaxProperties = null,
     useNativeDriver: js.UndefOr[Boolean] = js.undefined
@@ -94,26 +92,25 @@ object ScaleProps {
     val __obj = js.Dynamic.literal()
     if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions.asInstanceOf[js.Any])
     if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden.get.asInstanceOf[js.Any])
     if (accessibilityHint != null) __obj.updateDynamic("accessibilityHint")(accessibilityHint.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityIgnoresInvertColors)) __obj.updateDynamic("accessibilityIgnoresInvertColors")(accessibilityIgnoresInvertColors.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessibilityIgnoresInvertColors)) __obj.updateDynamic("accessibilityIgnoresInvertColors")(accessibilityIgnoresInvertColors.get.asInstanceOf[js.Any])
     if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
     if (accessibilityLiveRegion != null) __obj.updateDynamic("accessibilityLiveRegion")(accessibilityLiveRegion.asInstanceOf[js.Any])
     if (accessibilityRole != null) __obj.updateDynamic("accessibilityRole")(accessibilityRole.asInstanceOf[js.Any])
     if (accessibilityState != null) __obj.updateDynamic("accessibilityState")(accessibilityState.asInstanceOf[js.Any])
-    if (accessibilityStates != null) __obj.updateDynamic("accessibilityStates")(accessibilityStates.asInstanceOf[js.Any])
     if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
     if (accessibilityValue != null) __obj.updateDynamic("accessibilityValue")(accessibilityValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.asInstanceOf[js.Any])
-    if (activeScale != null) __obj.updateDynamic("activeScale")(activeScale.asInstanceOf[js.Any])
-    if (defaultNumber != null) __obj.updateDynamic("defaultNumber")(defaultNumber.asInstanceOf[js.Any])
-    if (delayLongPress != null) __obj.updateDynamic("delayLongPress")(delayLongPress.asInstanceOf[js.Any])
-    if (delayPressIn != null) __obj.updateDynamic("delayPressIn")(delayPressIn.asInstanceOf[js.Any])
-    if (delayPressOut != null) __obj.updateDynamic("delayPressOut")(delayPressOut.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (friction != null) __obj.updateDynamic("friction")(friction.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeScale)) __obj.updateDynamic("activeScale")(activeScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultNumber)) __obj.updateDynamic("defaultNumber")(defaultNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayLongPress)) __obj.updateDynamic("delayLongPress")(delayLongPress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayPressIn)) __obj.updateDynamic("delayPressIn")(delayPressIn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayPressOut)) __obj.updateDynamic("delayPressOut")(delayPressOut.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(friction)) __obj.updateDynamic("friction")(friction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.get.asInstanceOf[js.Any])
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
     if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1(onAccessibilityAction))
@@ -127,16 +124,16 @@ object ScaleProps {
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1(onPress))
     if (onPressIn != null) __obj.updateDynamic("onPressIn")(js.Any.fromFunction1(onPressIn))
     if (onPressOut != null) __obj.updateDynamic("onPressOut")(js.Any.fromFunction1(onPressOut))
-    if (pressInFriction != null) __obj.updateDynamic("pressInFriction")(pressInFriction.asInstanceOf[js.Any])
-    if (pressInTension != null) __obj.updateDynamic("pressInTension")(pressInTension.asInstanceOf[js.Any])
-    if (pressOutFriction != null) __obj.updateDynamic("pressOutFriction")(pressOutFriction.asInstanceOf[js.Any])
-    if (pressOutTension != null) __obj.updateDynamic("pressOutTension")(pressOutTension.asInstanceOf[js.Any])
+    if (!js.isUndefined(pressInFriction)) __obj.updateDynamic("pressInFriction")(pressInFriction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pressInTension)) __obj.updateDynamic("pressInTension")(pressInTension.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pressOutFriction)) __obj.updateDynamic("pressOutFriction")(pressOutFriction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pressOutTension)) __obj.updateDynamic("pressOutTension")(pressOutTension.get.asInstanceOf[js.Any])
     if (pressRetentionOffset != null) __obj.updateDynamic("pressRetentionOffset")(pressRetentionOffset.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tension != null) __obj.updateDynamic("tension")(tension.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(tension)) __obj.updateDynamic("tension")(tension.get.asInstanceOf[js.Any])
     if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
     if (tvParallaxProperties != null) __obj.updateDynamic("tvParallaxProperties")(tvParallaxProperties.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNativeDriver)) __obj.updateDynamic("useNativeDriver")(useNativeDriver.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNativeDriver)) __obj.updateDynamic("useNativeDriver")(useNativeDriver.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleProps]
   }
 }

@@ -64,9 +64,9 @@ object IntuneBrand {
     if (onlineSupportSiteName != null) __obj.updateDynamic("onlineSupportSiteName")(onlineSupportSiteName.asInstanceOf[js.Any])
     if (onlineSupportSiteUrl != null) __obj.updateDynamic("onlineSupportSiteUrl")(onlineSupportSiteUrl.asInstanceOf[js.Any])
     if (privacyUrl != null) __obj.updateDynamic("privacyUrl")(privacyUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDisplayNameNextToLogo)) __obj.updateDynamic("showDisplayNameNextToLogo")(showDisplayNameNextToLogo.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLogo)) __obj.updateDynamic("showLogo")(showLogo.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNameNextToLogo)) __obj.updateDynamic("showNameNextToLogo")(showNameNextToLogo.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDisplayNameNextToLogo)) __obj.updateDynamic("showDisplayNameNextToLogo")(showDisplayNameNextToLogo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLogo)) __obj.updateDynamic("showLogo")(showLogo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNameNextToLogo)) __obj.updateDynamic("showNameNextToLogo")(showNameNextToLogo.get.asInstanceOf[js.Any])
     if (themeColor != null) __obj.updateDynamic("themeColor")(themeColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntuneBrand]
   }

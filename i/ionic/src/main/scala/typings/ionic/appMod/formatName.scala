@@ -1,6 +1,6 @@
 package typings.ionic.appMod
 
-import typings.ionic.PickAppnameorg
+import typings.ionic.anon.PickAppnameorg
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

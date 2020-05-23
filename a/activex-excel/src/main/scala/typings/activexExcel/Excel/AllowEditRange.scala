@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.AllowEditRange")
 @js.native
-class AllowEditRange protected () extends js.Object {
+trait AllowEditRange extends js.Object {
   @JSName("Excel.AllowEditRange_typekey")
   var ExcelDotAllowEditRange_typekey: AllowEditRange = js.native
   @JSName("Range")

@@ -19,7 +19,7 @@ object ArrayOptions {
   ): ArrayOptions[TLeft, TRight] = {
     val __obj = js.Dynamic.literal()
     if (comparator != null) __obj.updateDynamic("comparator")(js.Any.fromFunction2(comparator))
-    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayOptions[TLeft, TRight]]
   }
 }

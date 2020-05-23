@@ -56,7 +56,7 @@ object WindowsUpdateForBusinessConfiguration {
     deviceStatuses: js.Array[DeviceConfigurationDeviceStatus] = null,
     displayName: String = null,
     driversExcluded: js.UndefOr[Boolean] = js.undefined,
-    featureUpdatesDeferralPeriodInDays: Int | Double = null,
+    featureUpdatesDeferralPeriodInDays: js.UndefOr[Double] = js.undefined,
     featureUpdatesPauseExpiryDateTime: String = null,
     featureUpdatesPaused: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
@@ -64,12 +64,12 @@ object WindowsUpdateForBusinessConfiguration {
     lastModifiedDateTime: String = null,
     microsoftUpdateServiceAllowed: js.UndefOr[Boolean] = js.undefined,
     prereleaseFeatures: PrereleaseFeatures = null,
-    qualityUpdatesDeferralPeriodInDays: Int | Double = null,
+    qualityUpdatesDeferralPeriodInDays: js.UndefOr[Double] = js.undefined,
     qualityUpdatesPauseExpiryDateTime: String = null,
     qualityUpdatesPaused: js.UndefOr[Boolean] = js.undefined,
     userStatusOverview: DeviceConfigurationUserOverview = null,
     userStatuses: js.Array[DeviceConfigurationUserStatus] = null,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): WindowsUpdateForBusinessConfiguration = {
     val __obj = js.Dynamic.literal()
     if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
@@ -82,21 +82,21 @@ object WindowsUpdateForBusinessConfiguration {
     if (deviceStatusOverview != null) __obj.updateDynamic("deviceStatusOverview")(deviceStatusOverview.asInstanceOf[js.Any])
     if (deviceStatuses != null) __obj.updateDynamic("deviceStatuses")(deviceStatuses.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(driversExcluded)) __obj.updateDynamic("driversExcluded")(driversExcluded.asInstanceOf[js.Any])
-    if (featureUpdatesDeferralPeriodInDays != null) __obj.updateDynamic("featureUpdatesDeferralPeriodInDays")(featureUpdatesDeferralPeriodInDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(driversExcluded)) __obj.updateDynamic("driversExcluded")(driversExcluded.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(featureUpdatesDeferralPeriodInDays)) __obj.updateDynamic("featureUpdatesDeferralPeriodInDays")(featureUpdatesDeferralPeriodInDays.get.asInstanceOf[js.Any])
     if (featureUpdatesPauseExpiryDateTime != null) __obj.updateDynamic("featureUpdatesPauseExpiryDateTime")(featureUpdatesPauseExpiryDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(featureUpdatesPaused)) __obj.updateDynamic("featureUpdatesPaused")(featureUpdatesPaused.asInstanceOf[js.Any])
+    if (!js.isUndefined(featureUpdatesPaused)) __obj.updateDynamic("featureUpdatesPaused")(featureUpdatesPaused.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (installationSchedule != null) __obj.updateDynamic("installationSchedule")(installationSchedule.asInstanceOf[js.Any])
     if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(microsoftUpdateServiceAllowed)) __obj.updateDynamic("microsoftUpdateServiceAllowed")(microsoftUpdateServiceAllowed.asInstanceOf[js.Any])
+    if (!js.isUndefined(microsoftUpdateServiceAllowed)) __obj.updateDynamic("microsoftUpdateServiceAllowed")(microsoftUpdateServiceAllowed.get.asInstanceOf[js.Any])
     if (prereleaseFeatures != null) __obj.updateDynamic("prereleaseFeatures")(prereleaseFeatures.asInstanceOf[js.Any])
-    if (qualityUpdatesDeferralPeriodInDays != null) __obj.updateDynamic("qualityUpdatesDeferralPeriodInDays")(qualityUpdatesDeferralPeriodInDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(qualityUpdatesDeferralPeriodInDays)) __obj.updateDynamic("qualityUpdatesDeferralPeriodInDays")(qualityUpdatesDeferralPeriodInDays.get.asInstanceOf[js.Any])
     if (qualityUpdatesPauseExpiryDateTime != null) __obj.updateDynamic("qualityUpdatesPauseExpiryDateTime")(qualityUpdatesPauseExpiryDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(qualityUpdatesPaused)) __obj.updateDynamic("qualityUpdatesPaused")(qualityUpdatesPaused.asInstanceOf[js.Any])
+    if (!js.isUndefined(qualityUpdatesPaused)) __obj.updateDynamic("qualityUpdatesPaused")(qualityUpdatesPaused.get.asInstanceOf[js.Any])
     if (userStatusOverview != null) __obj.updateDynamic("userStatusOverview")(userStatusOverview.asInstanceOf[js.Any])
     if (userStatuses != null) __obj.updateDynamic("userStatuses")(userStatuses.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsUpdateForBusinessConfiguration]
   }
 }

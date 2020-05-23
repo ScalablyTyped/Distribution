@@ -10,23 +10,28 @@ import scala.scalajs.js.annotation._
   * @class
   * @memberof PIXI
   */
-@JSGlobal("PIXI.BatchGeometry")
-@js.native
-class BatchGeometry () extends js.Object {
-  def this(_static: Boolean) = this()
+trait BatchGeometry extends js.Object {
   /**
     * Buffer used for position, color, texture IDs
     *
     * @member {PIXI.Buffer} PIXI.BatchGeometry#_buffer
     * @protected
     */
-  var _buffer: Buffer = js.native
+  var _buffer: Buffer
   /**
     * Index buffer data
     *
     * @member {PIXI.Buffer} PIXI.BatchGeometry#_indexBuffer
     * @protected
     */
-  var _indexBuffer: Buffer = js.native
+  var _indexBuffer: Buffer
+}
+
+object BatchGeometry {
+  @scala.inline
+  def apply(_buffer: Buffer, _indexBuffer: Buffer): BatchGeometry = {
+    val __obj = js.Dynamic.literal(_buffer = _buffer.asInstanceOf[js.Any], _indexBuffer = _indexBuffer.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BatchGeometry]
+  }
 }
 

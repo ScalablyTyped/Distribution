@@ -20,13 +20,8 @@ import scala.scalajs.js.annotation._
   * NOTE1: 'params' can be omitted.
   * NOTE2: 'withMillis' property is supported from asn1 1.0.6.
   */
-@JSGlobal("jsrsasign.KJUR.asn1.DERGeneralizedTime")
 @js.native
-class DERGeneralizedTime protected () extends DERAbstractTime {
-  def this(params: String) = this()
-  def this(params: DateParam) = this()
-  def this(params: HexParam) = this()
-  def this(params: StringParam) = this()
+trait DERGeneralizedTime extends DERAbstractTime {
   var withMillis: Boolean = js.native
   /**
     * set value by a Date object

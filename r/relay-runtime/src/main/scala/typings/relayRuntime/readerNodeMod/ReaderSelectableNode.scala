@@ -1,7 +1,7 @@
 package typings.relayRuntime.readerNodeMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.relayRuntime.AnonConnection
+import typings.relayRuntime.anon.Connection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,11 +20,11 @@ object ReaderSelectableNode {
     name: String,
     selections: js.Array[ReaderSelection],
     `type`: String,
-    metadata: AnonConnection = null
+    metadata: js.UndefOr[Null | Connection] = js.undefined
   ): ReaderSelectableNode = {
     val __obj = js.Dynamic.literal(argumentDefinitions = argumentDefinitions.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(metadata)) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReaderSelectableNode]
   }
   @scala.inline
@@ -32,10 +32,10 @@ object ReaderSelectableNode {
     kind: String,
     name: String,
     selections: js.Array[ReaderSelection],
-    metadata: StringDictionary[js.Any] = null
+    metadata: js.UndefOr[Null | StringDictionary[js.Any]] = js.undefined
   ): ReaderSelectableNode = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(metadata)) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReaderSelectableNode]
   }
 }

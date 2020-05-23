@@ -119,7 +119,7 @@ object TimePickerOptions {
     onSelect: (/* timeText */ String, /* inst */ js.Any) => _ = null,
     optionalMinutes: js.UndefOr[Boolean] = js.undefined,
     periodSeparator: String = null,
-    rows: Int | Double = null,
+    rows: js.UndefOr[Double] = js.undefined,
     showAnim: String = null,
     showCloseButton: js.UndefOr[Boolean] = js.undefined,
     showDeselectButton: js.UndefOr[Boolean] = js.undefined,
@@ -154,21 +154,21 @@ object TimePickerOptions {
     if (onHourShow != null) __obj.updateDynamic("onHourShow")(js.Any.fromFunction0(onHourShow))
     if (onMinuteShow != null) __obj.updateDynamic("onMinuteShow")(js.Any.fromFunction0(onMinuteShow))
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2(onSelect))
-    if (!js.isUndefined(optionalMinutes)) __obj.updateDynamic("optionalMinutes")(optionalMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(optionalMinutes)) __obj.updateDynamic("optionalMinutes")(optionalMinutes.get.asInstanceOf[js.Any])
     if (periodSeparator != null) __obj.updateDynamic("periodSeparator")(periodSeparator.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
     if (showAnim != null) __obj.updateDynamic("showAnim")(showAnim.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDeselectButton)) __obj.updateDynamic("showDeselectButton")(showDeselectButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHours)) __obj.updateDynamic("showHours")(showHours.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLeadingZero)) __obj.updateDynamic("showLeadingZero")(showLeadingZero.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMinutes)) __obj.updateDynamic("showMinutes")(showMinutes.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMinutesLeadingZero)) __obj.updateDynamic("showMinutesLeadingZero")(showMinutesLeadingZero.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNowButton)) __obj.updateDynamic("showNowButton")(showNowButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDeselectButton)) __obj.updateDynamic("showDeselectButton")(showDeselectButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHours)) __obj.updateDynamic("showHours")(showHours.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLeadingZero)) __obj.updateDynamic("showLeadingZero")(showLeadingZero.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMinutes)) __obj.updateDynamic("showMinutes")(showMinutes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMinutesLeadingZero)) __obj.updateDynamic("showMinutesLeadingZero")(showMinutesLeadingZero.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNowButton)) __obj.updateDynamic("showNowButton")(showNowButton.get.asInstanceOf[js.Any])
     if (showOn != null) __obj.updateDynamic("showOn")(showOn.asInstanceOf[js.Any])
     if (showOptions != null) __obj.updateDynamic("showOptions")(showOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPeriod)) __obj.updateDynamic("showPeriod")(showPeriod.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPeriodLabels)) __obj.updateDynamic("showPeriodLabels")(showPeriodLabels.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPeriod)) __obj.updateDynamic("showPeriod")(showPeriod.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPeriodLabels)) __obj.updateDynamic("showPeriodLabels")(showPeriodLabels.get.asInstanceOf[js.Any])
     if (timeSeparator != null) __obj.updateDynamic("timeSeparator")(timeSeparator.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimePickerOptions]
   }

@@ -1,5 +1,6 @@
 package typings.lokijs
 
+import typings.lokijs.anon.PageSize
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,19 +23,15 @@ import scala.scalajs.js.annotation._
   * @param [options.delimiter] - allows you to override the default delimeter
   * @constructor LokiPartitioningAdapter
   */
-@JSGlobal("LokiPartitioningAdapter")
-@js.native
-class LokiPartitioningAdapter protected () extends LokiPersistenceAdapter {
-  def this(adapter: LokiPersistenceAdapter) = this()
-  def this(adapter: LokiPersistenceAdapter, options: AnonPageSize) = this()
-  var adapter: LokiPersistenceAdapter | Null = js.native
-  var dbname: String = js.native
-  var dbref: Loki | Null = js.native
-  var dirtyPartitions: js.UndefOr[js.Array[Double]] = js.native
+trait LokiPartitioningAdapter extends LokiPersistenceAdapter {
+  var adapter: LokiPersistenceAdapter | Null
+  var dbname: String
+  var dbref: Loki | Null
+  var dirtyPartitions: js.UndefOr[js.Array[Double]] = js.undefined
   @JSName("mode")
-  var mode_LokiPartitioningAdapter: String = js.native
-  var options: AnonPageSize = js.native
-  var pageIterator: PageIterator | js.Object = js.native
+  var mode_LokiPartitioningAdapter: String
+  var options: PageSize
+  var pageIterator: PageIterator | js.Object
   /**
     * Saves a database by partioning into separate key/value saves.
     * (Loki 'reference mode' persistence adapter interface function)
@@ -44,33 +41,58 @@ class LokiPartitioningAdapter protected () extends LokiPersistenceAdapter {
     * @param callback - adapter callback to return load result to caller
     */
   @JSName("exportDatabase")
-  def exportDatabase_MLokiPartitioningAdapter(dbname: String, dbref: Loki, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
-  /* CompleteClass */
-  override def loadDatabase(dbname: String, callback: js.Function1[/* value */ js.Any, Unit]): Unit = js.native
+  def exportDatabase_MLokiPartitioningAdapter(dbname: String, dbref: Loki, callback: js.Function1[/* err */ Error | Null, Unit]): Unit
   /**
     * Used to sequentially load the next page of collection partition, one at a time.
     *
     * @param callback - adapter callback to return load result to caller
     */
-  def loadNextPage(callback: js.Function0[Unit]): Unit = js.native
+  def loadNextPage(callback: js.Function0[Unit]): Unit
   /**
     * Used to sequentially load each collection partition, one at a time.
     *
     * @param partition - ordinal collection position to load next
     * @param callback - adapter callback to return load result to caller
     */
-  def loadNextPartition(partition: Double, callback: js.Function0[Unit]): Unit = js.native
+  def loadNextPartition(partition: Double, callback: js.Function0[Unit]): Unit
   /**
     * Helper method used internally to generate and save the next page of the current (dirty) partition.
     *
     * @param callback - adapter callback to return load result to caller
     */
-  def saveNextPage(callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+  def saveNextPage(callback: js.Function1[/* err */ Error | Null, Unit]): Unit
   /**
     * Helper method used internally to save each dirty collection, one at a time.
     *
     * @param callback - adapter callback to return load result to caller
     */
-  def saveNextPartition(callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+  def saveNextPartition(callback: js.Function1[/* err */ Error | Null, Unit]): Unit
+}
+
+object LokiPartitioningAdapter {
+  @scala.inline
+  def apply(
+    dbname: String,
+    exportDatabase: (String, Loki, js.Function1[/* err */ Error | Null, Unit]) => Unit,
+    loadDatabase: (String, js.Function1[/* value */ js.Any, Unit]) => Unit,
+    loadNextPage: js.Function0[Unit] => Unit,
+    loadNextPartition: (Double, js.Function0[Unit]) => Unit,
+    mode: String,
+    options: PageSize,
+    pageIterator: PageIterator | js.Object,
+    saveNextPage: js.Function1[/* err */ Error | Null, Unit] => Unit,
+    saveNextPartition: js.Function1[/* err */ Error | Null, Unit] => Unit,
+    adapter: LokiPersistenceAdapter = null,
+    dbref: Loki = null,
+    deleteDatabase: (/* dbnameOrOptions */ js.Any, /* callback */ js.Function2[/* err */ js.UndefOr[Error | Null], /* data */ js.UndefOr[js.Any], Unit]) => Unit = null,
+    dirtyPartitions: js.Array[Double] = null,
+    saveDatabase: (/* dbname */ String, /* dbstring */ js.Any, /* callback */ js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) => Unit = null
+  ): LokiPartitioningAdapter = {
+    val __obj = js.Dynamic.literal(dbname = dbname.asInstanceOf[js.Any], exportDatabase = js.Any.fromFunction3(exportDatabase), loadDatabase = js.Any.fromFunction2(loadDatabase), loadNextPage = js.Any.fromFunction1(loadNextPage), loadNextPartition = js.Any.fromFunction2(loadNextPartition), mode = mode.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], pageIterator = pageIterator.asInstanceOf[js.Any], saveNextPage = js.Any.fromFunction1(saveNextPage), saveNextPartition = js.Any.fromFunction1(saveNextPartition), adapter = adapter.asInstanceOf[js.Any], dbref = dbref.asInstanceOf[js.Any])
+    if (deleteDatabase != null) __obj.updateDynamic("deleteDatabase")(js.Any.fromFunction2(deleteDatabase))
+    if (dirtyPartitions != null) __obj.updateDynamic("dirtyPartitions")(dirtyPartitions.asInstanceOf[js.Any])
+    if (saveDatabase != null) __obj.updateDynamic("saveDatabase")(js.Any.fromFunction3(saveDatabase))
+    __obj.asInstanceOf[LokiPartitioningAdapter]
+  }
 }
 

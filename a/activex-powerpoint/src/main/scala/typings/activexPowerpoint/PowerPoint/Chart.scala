@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.Chart")
 @js.native
-class Chart protected () extends js.Object {
+trait Chart extends js.Object {
   var AlternativeText: String = js.native
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   val Area3DGroup: ChartGroup = js.native

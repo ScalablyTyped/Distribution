@@ -1,6 +1,6 @@
 package typings.rcMenu.subPopupMenuMod
 
-import typings.rcMenu.AnonChildren
+import typings.rcMenu.anon.Children
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("rc-menu/lib/SubPopupMenu", "getActiveKey")
 @js.native
 object getActiveKey extends js.Object {
-  def apply(props: AnonChildren, originalActiveKey: String): String | Double = js.native
+  def apply(props: Children, originalActiveKey: String): String | Double = js.native
 }
 

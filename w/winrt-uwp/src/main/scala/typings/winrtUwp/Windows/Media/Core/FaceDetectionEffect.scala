@@ -10,9 +10,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents an effect that attempts to detect faces in a video stream. */
-@JSGlobal("Windows.Media.Core.FaceDetectionEffect")
 @js.native
-abstract class FaceDetectionEffect () extends js.Object {
+trait FaceDetectionEffect extends js.Object {
   /** Gets or sets the time span for which face detection should be performed. */
   var desiredDetectionInterval: Double = js.native
   /** Gets or sets a value indicating whether face detection is enabled. */

@@ -7,6 +7,21 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Chart extends js.Object {
   /**
+    * Generates a data URL of CSV for local download in the browser. This
+    * is the default action for a click on the 'Download CSV' button.
+    *
+    * See Highcharts.Chart#getCSV to get the CSV data itself.
+    */
+  def downloadCSV(): Unit = js.native
+  /**
+    * Generates a data URL of an XLS document for local download in the
+    * browser. This is the default action for a click on the 'Download XLS'
+    * button.
+    *
+    * See Highcharts.Chart#getTable to get the table data itself.
+    */
+  def downloadXLS(): Unit = js.native
+  /**
     * Export-data module required. Returns the current chart data as a CSV
     * string.
     *

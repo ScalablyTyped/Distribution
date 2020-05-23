@@ -30,17 +30,17 @@ object LockOptions {
     onCompromised: /* err */ Error => _ = null,
     realpath: js.UndefOr[Boolean] = js.undefined,
     retries: Double | OperationOptions = null,
-    stale: Int | Double = null,
-    update: Int | Double = null
+    stale: js.UndefOr[Double] = js.undefined,
+    update: js.UndefOr[Double] = js.undefined
   ): LockOptions = {
     val __obj = js.Dynamic.literal()
     if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
     if (lockfilePath != null) __obj.updateDynamic("lockfilePath")(lockfilePath.asInstanceOf[js.Any])
     if (onCompromised != null) __obj.updateDynamic("onCompromised")(js.Any.fromFunction1(onCompromised))
-    if (!js.isUndefined(realpath)) __obj.updateDynamic("realpath")(realpath.asInstanceOf[js.Any])
+    if (!js.isUndefined(realpath)) __obj.updateDynamic("realpath")(realpath.get.asInstanceOf[js.Any])
     if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
-    if (stale != null) __obj.updateDynamic("stale")(stale.asInstanceOf[js.Any])
-    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
+    if (!js.isUndefined(stale)) __obj.updateDynamic("stale")(stale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LockOptions]
   }
 }

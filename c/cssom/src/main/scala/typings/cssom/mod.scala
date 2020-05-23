@@ -1,24 +1,17 @@
 package typings.cssom
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.cssom.cssomNumbers.`0`
+import typings.cssom.anon.Error
+import typings.cssom.anon.Expression
 import typings.cssom.cssomNumbers.`1001`
-import typings.cssom.cssomNumbers.`10`
-import typings.cssom.cssomNumbers.`11`
 import typings.cssom.cssomNumbers.`12`
 import typings.cssom.cssomNumbers.`13`
-import typings.cssom.cssomNumbers.`14`
-import typings.cssom.cssomNumbers.`15`
-import typings.cssom.cssomNumbers.`16`
 import typings.cssom.cssomNumbers.`1`
-import typings.cssom.cssomNumbers.`2`
 import typings.cssom.cssomNumbers.`3`
 import typings.cssom.cssomNumbers.`4`
 import typings.cssom.cssomNumbers.`5`
-import typings.cssom.cssomNumbers.`6`
 import typings.cssom.cssomNumbers.`7`
 import typings.cssom.cssomNumbers.`8`
-import typings.cssom.cssomNumbers.`9`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -136,7 +129,7 @@ object mod extends js.Object {
   @js.native
   class CSSValueExpression protected () extends CSSValue {
     def this(token: String, idx: Double) = this()
-    def parse(): AnonError | AnonExpression = js.native
+    def parse(): Error | Expression = js.native
   }
   
   @js.native
@@ -165,24 +158,24 @@ object mod extends js.Object {
   @js.native
   object CSSRule extends js.Object {
     /** @deprecated Obsolete */
-    val CHARSET_RULE: `2` = js.native
-    val COUNTER_STYLE_RULE: `11` = js.native
-    val DOCUMENT_RULE: `13` = js.native
-    val FONT_FACE_RULE: `5` = js.native
-    val FONT_FEATURE_VALUES_RULE: `14` = js.native
-    val IMPORT_RULE: `3` = js.native
-    val KEYFRAMES_RULE: `7` = js.native
-    val KEYFRAME_RULE: `8` = js.native
-    val MARGIN_RULE: `9` = js.native
-    val MEDIA_RULE: `4` = js.native
-    val NAMESPACE_RULE: `10` = js.native
-    val PAGE_RULE: `6` = js.native
-    val REGION_STYLE_RULE: `16` = js.native
-    val STYLE_RULE: `1` = js.native
-    val SUPPORTS_RULE: `12` = js.native
+    val CHARSET_RULE: /* 2 */ Double = js.native
+    val COUNTER_STYLE_RULE: /* 11 */ Double = js.native
+    val DOCUMENT_RULE: /* 13 */ Double = js.native
+    val FONT_FACE_RULE: /* 5 */ Double = js.native
+    val FONT_FEATURE_VALUES_RULE: /* 14 */ Double = js.native
+    val IMPORT_RULE: /* 3 */ Double = js.native
+    val KEYFRAMES_RULE: /* 7 */ Double = js.native
+    val KEYFRAME_RULE: /* 8 */ Double = js.native
+    val MARGIN_RULE: /* 9 */ Double = js.native
+    val MEDIA_RULE: /* 4 */ Double = js.native
+    val NAMESPACE_RULE: /* 10 */ Double = js.native
+    val PAGE_RULE: /* 6 */ Double = js.native
+    val REGION_STYLE_RULE: /* 16 */ Double = js.native
+    val STYLE_RULE: /* 1 */ Double = js.native
+    val SUPPORTS_RULE: /* 12 */ Double = js.native
     /** @deprecated Obsolete */
-    val UNKNOWN_RULE: `0` = js.native
-    val VIEWPORT_RULE: `15` = js.native
+    val UNKNOWN_RULE: /* 0 */ Double = js.native
+    val VIEWPORT_RULE: /* 15 */ Double = js.native
   }
   
   /* static members */

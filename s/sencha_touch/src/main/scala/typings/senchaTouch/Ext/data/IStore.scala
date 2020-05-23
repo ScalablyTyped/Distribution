@@ -11,32 +11,32 @@ import scala.scalajs.js.annotation._
 
 trait IStore extends IEvented {
   /** [Method] Adds Model instance to the Store
-  		* @param model Ext.data.Model[]/Ext.data.Model... An array of Model instances or Model configuration objects, or variable number of Model instance or config arguments.
-  		* @returns Ext.data.Model[] The model instances that were added.
-  		*/
+    * @param model Ext.data.Model[]/Ext.data.Model... An array of Model instances or Model configuration objects, or variable number of Model instance or config arguments.
+    * @returns Ext.data.Model[] The model instances that were added.
+    */
   var add: js.UndefOr[js.Function1[/* model */ js.UndefOr[js.Any], Array]] = js.undefined
   /** [Method] Uses the configured reader to convert the data into records and adds it to the Store
-  		* @param data Object[] Array of data to load
-  		*/
+    * @param data Object[] Array of data to load
+    */
   var addData: js.UndefOr[js.Function1[/* data */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] We are using applyData so that we can return nothing and prevent the this data property to be overridden
-  		* @param data Array/Object
-  		*/
+    * @param data Array/Object
+    */
   var applyData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Boolean/Object) */
   var autoLoad: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Boolean) */
   var autoSync: js.UndefOr[Boolean] = js.undefined
   /** [Method] Gets the average value in the store
-  		* @param field String The field in each record you want to get the average for.
-  		* @returns Number The average value, if no items exist, 0.
-  		*/
+    * @param field String The field in each record you want to get the average for.
+    * @returns Number The average value, if no items exist, 0.
+    */
   var average: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], Double]] = js.undefined
   /** [Config Option] (Boolean) */
   var buffered: js.UndefOr[Boolean] = js.undefined
   /** [Method] Reverts to a view of the Record cache with no filtering applied
-  		* @param suppressEvent Boolean true to clear silently without firing the refresh event.
-  		*/
+    * @param suppressEvent Boolean true to clear silently without firing the refresh event.
+    */
   var clearFilter: js.UndefOr[js.Function1[/* suppressEvent */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Config Option] (Boolean) */
   var clearOnPageLoad: js.UndefOr[Boolean] = js.undefined
@@ -47,18 +47,18 @@ trait IStore extends IEvented {
   /** [Config Option] (Boolean) */
   var destroyRemovedRecords: js.UndefOr[Boolean] = js.undefined
   /** [Method] Calls the specified function for each of the Records in the cache
-  		* @param fn Function The function to call. Returning false aborts and exits the iteration.
-  		* @param scope Object The scope (this reference) in which the function is executed. Defaults to the current Record in the iteration.
-  		*/
+    * @param fn Function The function to call. Returning false aborts and exits the iteration.
+    * @param scope Object The scope (this reference) in which the function is executed. Defaults to the current Record in the iteration.
+    */
   var each: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Object[]/Ext.util.Collection) */
   var fields: js.UndefOr[js.Any] = js.undefined
   /** [Method] Filters the loaded set of records by a given set of filters
-  		* @param filters Object[]/Ext.util.Filter[]/String The set of filters to apply to the data. These are stored internally on the store, but the filtering itself is done on the Store's MixedCollection. See MixedCollection's filter method for filter syntax. Alternatively, pass in a property string.
-  		* @param value String value to filter by (only if using a property string as the first argument).
-  		* @param anyMatch Boolean true to allow any match, false to anchor regex beginning with ^.
-  		* @param caseSensitive Boolean true to make the filtering regex case sensitive.
-  		*/
+    * @param filters Object[]/Ext.util.Filter[]/String The set of filters to apply to the data. These are stored internally on the store, but the filtering itself is done on the Store's MixedCollection. See MixedCollection's filter method for filter syntax. Alternatively, pass in a property string.
+    * @param value String value to filter by (only if using a property string as the first argument).
+    * @param anyMatch Boolean true to allow any match, false to anchor regex beginning with ^.
+    * @param caseSensitive Boolean true to make the filtering regex case sensitive.
+    */
   var filter: js.UndefOr[
     js.Function4[
       /* filters */ js.UndefOr[js.Any], 
@@ -69,21 +69,21 @@ trait IStore extends IEvented {
     ]
   ] = js.undefined
   /** [Method] Filter by a function
-  		* @param fn Function The function to be called. It will be passed the following parameters:
-  		* @param scope Object The scope (this reference) in which the function is executed. Defaults to this Store.
-  		*/
+    * @param fn Function The function to be called. It will be passed the following parameters:
+    * @param scope Object The scope (this reference) in which the function is executed. Defaults to this Store.
+    */
   var filterBy: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Object[]) */
   var filters: js.UndefOr[Array] = js.undefined
   /** [Method] Finds the index of the first matching Record in this store by a specific field value
-  		* @param fieldName String The name of the Record field to test.
-  		* @param value String/RegExp Either a string that the field value should begin with, or a RegExp to test against the field.
-  		* @param startIndex Number The index to start searching at.
-  		* @param anyMatch Boolean true to match any part of the string, not just the beginning.
-  		* @param caseSensitive Boolean true for case sensitive comparison.
-  		* @param exactMatch Boolean true to force exact match (^ and $ characters added to the regex).
-  		* @returns Number The matched index or -1
-  		*/
+    * @param fieldName String The name of the Record field to test.
+    * @param value String/RegExp Either a string that the field value should begin with, or a RegExp to test against the field.
+    * @param startIndex Number The index to start searching at.
+    * @param anyMatch Boolean true to match any part of the string, not just the beginning.
+    * @param caseSensitive Boolean true for case sensitive comparison.
+    * @param exactMatch Boolean true to force exact match (^ and $ characters added to the regex).
+    * @returns Number The matched index or -1
+    */
   var find: js.UndefOr[
     js.Function6[
       /* fieldName */ js.UndefOr[String], 
@@ -96,11 +96,11 @@ trait IStore extends IEvented {
     ]
   ] = js.undefined
   /** [Method] Find the index of the first matching Record in this Store by a function
-  		* @param fn Function The function to be called. It will be passed the following parameters:
-  		* @param scope Object The scope (this reference) in which the function is executed. Defaults to this Store.
-  		* @param startIndex Number The index to start searching at.
-  		* @returns Number The matched index or -1.
-  		*/
+    * @param fn Function The function to be called. It will be passed the following parameters:
+    * @param scope Object The scope (this reference) in which the function is executed. Defaults to this Store.
+    * @param startIndex Number The index to start searching at.
+    * @returns Number The matched index or -1.
+    */
   var findBy: js.UndefOr[
     js.Function3[
       /* fn */ js.UndefOr[js.Any], 
@@ -110,11 +110,11 @@ trait IStore extends IEvented {
     ]
   ] = js.undefined
   /** [Method] Finds the index of the first matching Record in this store by a specific field value
-  		* @param fieldName String The name of the Record field to test.
-  		* @param value Object The value to match the field against.
-  		* @param startIndex Number The index to start searching at.
-  		* @returns Number The matched index or -1.
-  		*/
+    * @param fieldName String The name of the Record field to test.
+    * @param value Object The value to match the field against.
+    * @param startIndex Number The index to start searching at.
+    * @returns Number The matched index or -1.
+    */
   var findExact: js.UndefOr[
     js.Function3[
       /* fieldName */ js.UndefOr[String], 
@@ -124,14 +124,14 @@ trait IStore extends IEvented {
     ]
   ] = js.undefined
   /** [Method] Finds the first matching Record in this store by a specific field value
-  		* @param fieldName String The name of the Record field to test.
-  		* @param value String/RegExp Either a string that the field value should begin with, or a RegExp to test against the field.
-  		* @param startIndex Number The index to start searching at.
-  		* @param anyMatch Boolean true to match any part of the string, not just the beginning.
-  		* @param caseSensitive Boolean true for case sensitive comparison.
-  		* @param exactMatch Boolean true to force exact match (^ and $ characters added to the regex).
-  		* @returns Ext.data.Model The matched record or null.
-  		*/
+    * @param fieldName String The name of the Record field to test.
+    * @param value String/RegExp Either a string that the field value should begin with, or a RegExp to test against the field.
+    * @param startIndex Number The index to start searching at.
+    * @param anyMatch Boolean true to match any part of the string, not just the beginning.
+    * @param caseSensitive Boolean true for case sensitive comparison.
+    * @param exactMatch Boolean true to force exact match (^ and $ characters added to the regex).
+    * @returns Ext.data.Model The matched record or null.
+    */
   var findRecord: js.UndefOr[
     js.Function6[
       /* fieldName */ js.UndefOr[String], 
@@ -144,145 +144,145 @@ trait IStore extends IEvented {
     ]
   ] = js.undefined
   /** [Method] Convenience function for getting the first model instance in the store
-  		* @returns Ext.data.Model/undefined The first model instance in the store, or undefined.
-  		*/
+    * @returns Ext.data.Model/undefined The first model instance in the store, or undefined.
+    */
   var first: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Gets the number of all cached records including the ones currently filtered
-  		* @returns Number The number of all Records in the Store's cache.
-  		*/
+    * @returns Number The number of all Records in the Store's cache.
+    */
   var getAllCount: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Get the Record at the specified index
-  		* @param index Number The index of the Record to find.
-  		* @returns Ext.data.Model/undefined The Record at the passed index. Returns undefined if not found.
-  		*/
+    * @param index Number The index of the Record to find.
+    * @returns Ext.data.Model/undefined The Record at the passed index. Returns undefined if not found.
+    */
   var getAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], _]] = js.undefined
   /** [Method] Returns the value of autoLoad
-  		* @returns Boolean/Object
-  		*/
+    * @returns Boolean/Object
+    */
   var getAutoLoad: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of autoSync
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getAutoSync: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of buffered
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getBuffered: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Get the Record with the specified id
-  		* @param id String The id of the Record to find.
-  		* @returns Ext.data.Model/undefined The Record with the passed id. Returns undefined if not found.
-  		*/
+    * @param id String The id of the Record to find.
+    * @returns Ext.data.Model/undefined The Record with the passed id. Returns undefined if not found.
+    */
   var getById: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], _]] = js.undefined
   /** [Method] Returns the value of clearOnPageLoad
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getClearOnPageLoad: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Gets the number of cached records
-  		* @returns Number The number of Records in the Store's cache.
-  		*/
+    * @returns Number The number of Records in the Store's cache.
+    */
   var getCount: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of data
-  		* @returns Object[]/Ext.data.Model[]
-  		*/
+    * @returns Object[]/Ext.data.Model[]
+    */
   var getData: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of destroyRemovedRecords
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getDestroyRemovedRecords: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of fields
-  		* @returns Object[]/Ext.util.Collection
-  		*/
+    * @returns Object[]/Ext.util.Collection
+    */
   var getFields: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of getGroupString
-  		* @returns Function
-  		*/
+    * @returns Function
+    */
   var getGetGroupString: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of groupDir
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getGroupDir: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of groupField
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getGroupField: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (Function) */
   var getGroupString: js.UndefOr[js.Any] = js.undefined
   /** [Method] Returns the value of grouper
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getGrouper: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns an array containing the result of applying the grouper to the records in this store
-  		* @param groupName String Pass in an optional groupName argument to access a specific group as defined by grouper.
-  		* @returns Object/Object[] The grouped data.
-  		*/
+    * @param groupName String Pass in an optional groupName argument to access a specific group as defined by grouper.
+    * @returns Object/Object[] The grouped data.
+    */
   var getGroups: js.UndefOr[js.Function1[/* groupName */ js.UndefOr[String], _]] = js.undefined
   /** [Method] Returns the value of model
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getModel: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of modelDefaults
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getModelDefaults: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns all Model instances that are either currently a phantom e g
-  		* @returns Ext.data.Model[] The Model instances.
-  		*/
+    * @returns Ext.data.Model[] The Model instances.
+    */
   var getNewRecords: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the value of pageSize
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getPageSize: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of params
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getParams: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of plugins
-  		* @returns Object/Array
-  		*/
+    * @returns Object/Array
+    */
   var getPlugins: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of proxy
-  		* @returns String/Ext.data.proxy.Proxy/Object
-  		*/
+    * @returns String/Ext.data.proxy.Proxy/Object
+    */
   var getProxy: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns a range of Records between specified indices
-  		* @param startIndex Number The starting index.
-  		* @param endIndex Number The ending index (defaults to the last Record in the Store).
-  		* @returns Ext.data.Model[] An array of Records.
-  		*/
+    * @param startIndex Number The starting index.
+    * @param endIndex Number The ending index (defaults to the last Record in the Store).
+    * @returns Ext.data.Model[] An array of Records.
+    */
   var getRange: js.UndefOr[
     js.Function2[/* startIndex */ js.UndefOr[Double], /* endIndex */ js.UndefOr[Double], Array]
   ] = js.undefined
   /** [Method] Returns the value of remoteFilter
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getRemoteFilter: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of remoteGroup
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getRemoteGroup: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of remoteSort
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getRemoteSort: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns any records that have been removed from the store but not yet destroyed on the proxy
-  		* @returns Ext.data.Model[] The removed Model instances.
-  		*/
+    * @returns Ext.data.Model[] The removed Model instances.
+    */
   var getRemovedRecords: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the value of storeId
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getStoreId: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of syncRemovedRecords
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getSyncRemovedRecords: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of totalCount
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getTotalCount: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns all Model instances that have been updated in the Store but not yet synchronized with the Proxy
-  		* @returns Ext.data.Model[] The updated Model instances.
-  		*/
+    * @returns Ext.data.Model[] The updated Model instances.
+    */
   var getUpdatedRecords: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Config Option] (String) */
   var groupDir: js.UndefOr[String] = js.undefined
@@ -291,69 +291,69 @@ trait IStore extends IEvented {
   /** [Config Option] (Object) */
   var grouper: js.UndefOr[js.Any] = js.undefined
   /** [Method] Get the index within the cache of the passed Record
-  		* @param record Ext.data.Model The Ext.data.Model object to find.
-  		* @returns Number The index of the passed Record. Returns -1 if not found.
-  		*/
+    * @param record Ext.data.Model The Ext.data.Model object to find.
+    * @returns Number The index of the passed Record. Returns -1 if not found.
+    */
   var indexOf: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], Double]] = js.undefined
   /** [Method] Get the index within the cache of the Record with the passed id
-  		* @param id String The id of the Record to find.
-  		* @returns Number The index of the Record. Returns -1 if not found.
-  		*/
+    * @param id String The id of the Record to find.
+    * @returns Number The index of the Record. Returns -1 if not found.
+    */
   var indexOfId: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Double]] = js.undefined
   /** [Method] Inserts Model instances into the Store at the given index and fires the add event
-  		* @param index Number The start index at which to insert the passed Records.
-  		* @param records Ext.data.Model[] An Array of Ext.data.Model objects to add to the cache.
-  		* @returns Object
-  		*/
+    * @param index Number The start index at which to insert the passed Records.
+    * @param records Ext.data.Model[] An Array of Ext.data.Model objects to add to the cache.
+    * @returns Object
+    */
   var insert: js.UndefOr[js.Function2[/* index */ js.UndefOr[Double], /* records */ js.UndefOr[Array], _]] = js.undefined
   /** [Method] Returns true if the Store is set to autoLoad or is a type which loads upon instantiation
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var isAutoLoading: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns true if this store is currently filtered
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var isFiltered: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] This method tells you if this store has a grouper defined on it
-  		* @returns Boolean true if this store has a grouper defined.
-  		*/
+    * @returns Boolean true if this store has a grouper defined.
+    */
   var isGrouped: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns true if the Store has been loaded
-  		* @returns Boolean true if the Store has been loaded.
-  		*/
+    * @returns Boolean true if the Store has been loaded.
+    */
   var isLoaded: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns true if the Store is currently performing a load operation
-  		* @returns Boolean true if the Store is currently loading.
-  		*/
+    * @returns Boolean true if the Store is currently loading.
+    */
   var isLoading: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns true if this store is currently sorted
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var isSorted: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Convenience function for getting the last model instance in the store
-  		* @returns Ext.data.Model/undefined The last model instance in the store, or undefined.
-  		*/
+    * @returns Ext.data.Model/undefined The last model instance in the store, or undefined.
+    */
   var last: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Loads data into the Store via the configured proxy
-  		* @param options Object/Function config object, passed into the Ext.data.Operation object before loading.
-  		* @param scope Object Scope for the function.
-  		* @returns Object
-  		*/
+    * @param options Object/Function config object, passed into the Ext.data.Operation object before loading.
+    * @param scope Object Scope for the function.
+    * @returns Object
+    */
   var load: js.UndefOr[
     js.Function2[/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], _]
   ] = js.undefined
   /** [Method] Loads an array of data straight into the Store
-  		* @param data Ext.data.Model[]/Object[] Array of data to load. Any non-model instances will be cast into model instances first.
-  		* @param append Boolean true to add the records to the existing records in the store, false to remove the old ones first.
-  		*/
+    * @param data Ext.data.Model[]/Object[] Array of data to load. Any non-model instances will be cast into model instances first.
+    * @param append Boolean true to add the records to the existing records in the store, false to remove the old ones first.
+    */
   var loadData: js.UndefOr[
     js.Function2[/* data */ js.UndefOr[js.Any], /* append */ js.UndefOr[Boolean], Unit]
   ] = js.undefined
   /** [Method] Loads a given page of data by setting the start and limit values appropriately
-  		* @param page Number The number of the page to load.
-  		* @param options Object See options for load.
-  		* @param scope Object
-  		*/
+    * @param page Number The number of the page to load.
+    * @param options Object See options for load.
+    * @param scope Object
+    */
   var loadPage: js.UndefOr[
     js.Function3[
       /* page */ js.UndefOr[Double], 
@@ -363,25 +363,25 @@ trait IStore extends IEvented {
     ]
   ] = js.undefined
   /** [Method] Adds Model instance to the Store
-  		* @param model Ext.data.Model[]/Ext.data.Model... An array of Model instances or Model configuration objects, or variable number of Model instance or config arguments.
-  		* @returns Ext.data.Model[] The model instances that were added.
-  		*/
+    * @param model Ext.data.Model[]/Ext.data.Model... An array of Model instances or Model configuration objects, or variable number of Model instance or config arguments.
+    * @returns Ext.data.Model[] The model instances that were added.
+    */
   var loadRecords: js.UndefOr[js.Function1[/* model */ js.UndefOr[js.Any], Array]] = js.undefined
   /** [Method] Gets the maximum value in the store
-  		* @param field String The field in each record.
-  		* @returns Object/undefined The maximum value, if no items exist, undefined.
-  		*/
+    * @param field String The field in each record.
+    * @returns Object/undefined The maximum value, if no items exist, undefined.
+    */
   var max: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], _]] = js.undefined
   /** [Method] Gets the minimum value in the store
-  		* @param field String The field in each record.
-  		* @returns Object/undefined The minimum value, if no items exist, undefined.
-  		*/
+    * @param field String The field in each record.
+    * @returns Object/undefined The minimum value, if no items exist, undefined.
+    */
   var min: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], _]] = js.undefined
   /** [Config Option] (String) */
   var model: js.UndefOr[String] = js.undefined
   /** [Method] Loads the next page in the current data set
-  		* @param options Object See options for load.
-  		*/
+    * @param options Object See options for load.
+    */
   var nextPage: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Number) */
   var pageSize: js.UndefOr[Double] = js.undefined
@@ -390,16 +390,16 @@ trait IStore extends IEvented {
   /** [Config Option] (Object/Array) */
   var plugins: js.UndefOr[js.Any] = js.undefined
   /** [Method] Loads the previous page in the current data set
-  		* @param options Object See options for load.
-  		*/
+    * @param options Object See options for load.
+    */
   var previousPage: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (String/Ext.data.proxy.Proxy/Object) */
   var proxy: js.UndefOr[js.Any] = js.undefined
   /** [Method] Query the cached records in this Store using a filtering function
-  		* @param fn Function The function to be called. It will be passed the following parameters:
-  		* @param scope Object The scope (this reference) in which the function is executed. Defaults to this Store.
-  		* @returns Ext.util.MixedCollection Returns an Ext.util.MixedCollection of the matched records.
-  		*/
+    * @param fn Function The function to be called. It will be passed the following parameters:
+    * @param scope Object The scope (this reference) in which the function is executed. Defaults to this Store.
+    * @returns Ext.util.MixedCollection Returns an Ext.util.MixedCollection of the matched records.
+    */
   var queryBy: js.UndefOr[
     js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], IMixedCollection]
   ] = js.undefined
@@ -410,123 +410,123 @@ trait IStore extends IEvented {
   /** [Config Option] (Boolean) */
   var remoteSort: js.UndefOr[Boolean] = js.undefined
   /** [Method] Removes the given record from the Store firing the removerecords event passing all the instances that are removed
-  		* @param records Ext.data.Model/Ext.data.Model[] Model instance or array of instances to remove.
-  		*/
+    * @param records Ext.data.Model/Ext.data.Model[] Model instance or array of instances to remove.
+    */
   var remove: js.UndefOr[js.Function1[/* records */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Remove all items from the store
-  		* @param silent Boolean Prevent the clear event from being fired.
-  		*/
+    * @param silent Boolean Prevent the clear event from being fired.
+    */
   var removeAll: js.UndefOr[js.Function1[/* silent */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Removes the model instance at the given index
-  		* @param index Number The record index.
-  		*/
+    * @param index Number The record index.
+    */
   var removeAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of autoLoad
-  		* @param autoLoad Boolean/Object The new value.
-  		*/
+    * @param autoLoad Boolean/Object The new value.
+    */
   var setAutoLoad: js.UndefOr[js.Function1[/* autoLoad */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of autoSync
-  		* @param autoSync Boolean The new value.
-  		*/
+    * @param autoSync Boolean The new value.
+    */
   var setAutoSync: js.UndefOr[js.Function1[/* autoSync */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of buffered
-  		* @param buffered Boolean The new value.
-  		*/
+    * @param buffered Boolean The new value.
+    */
   var setBuffered: js.UndefOr[js.Function1[/* buffered */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of clearOnPageLoad
-  		* @param clearOnPageLoad Boolean The new value.
-  		*/
+    * @param clearOnPageLoad Boolean The new value.
+    */
   var setClearOnPageLoad: js.UndefOr[js.Function1[/* clearOnPageLoad */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of data
-  		* @param data Object[]/Ext.data.Model[] The new value.
-  		*/
+    * @param data Object[]/Ext.data.Model[] The new value.
+    */
   var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of destroyRemovedRecords
-  		* @param destroyRemovedRecords Boolean The new value.
-  		*/
+    * @param destroyRemovedRecords Boolean The new value.
+    */
   var setDestroyRemovedRecords: js.UndefOr[js.Function1[/* destroyRemovedRecords */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of fields
-  		* @param fields Object[]/Ext.util.Collection The new value.
-  		* @returns Object Ext.util.Collection
-  		*/
+    * @param fields Object[]/Ext.util.Collection The new value.
+    * @returns Object Ext.util.Collection
+    */
   var setFields: js.UndefOr[js.Function1[/* fields */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Sets the value of filters
-  		* @param filters Object[] The new value.
-  		*/
+    * @param filters Object[] The new value.
+    */
   var setFilters: js.UndefOr[js.Function1[/* filters */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Sets the value of getGroupString
-  		* @param getGroupString Function The new value.
-  		*/
+    * @param getGroupString Function The new value.
+    */
   var setGetGroupString: js.UndefOr[js.Function1[/* getGroupString */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of groupDir
-  		* @param groupDir String The new value.
-  		*/
+    * @param groupDir String The new value.
+    */
   var setGroupDir: js.UndefOr[js.Function1[/* groupDir */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of groupField
-  		* @param groupField String The new value.
-  		*/
+    * @param groupField String The new value.
+    */
   var setGroupField: js.UndefOr[js.Function1[/* groupField */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of grouper
-  		* @param grouper Object The new value.
-  		*/
+    * @param grouper Object The new value.
+    */
   var setGrouper: js.UndefOr[js.Function1[/* grouper */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of model
-  		* @param model String The new value.
-  		*/
+    * @param model String The new value.
+    */
   var setModel: js.UndefOr[js.Function1[/* model */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of modelDefaults
-  		* @param modelDefaults Object The new value.
-  		*/
+    * @param modelDefaults Object The new value.
+    */
   var setModelDefaults: js.UndefOr[js.Function1[/* modelDefaults */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of pageSize
-  		* @param pageSize Number The new value.
-  		*/
+    * @param pageSize Number The new value.
+    */
   var setPageSize: js.UndefOr[js.Function1[/* pageSize */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of params
-  		* @param params Object The new value.
-  		*/
+    * @param params Object The new value.
+    */
   var setParams: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of plugins
-  		* @param plugins Object/Array The new value.
-  		*/
+    * @param plugins Object/Array The new value.
+    */
   var setPlugins: js.UndefOr[js.Function1[/* plugins */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of proxy
-  		* @param proxy String/Ext.data.proxy.Proxy/Object The new value.
-  		*/
+    * @param proxy String/Ext.data.proxy.Proxy/Object The new value.
+    */
   var setProxy: js.UndefOr[js.Function1[/* proxy */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of remoteFilter
-  		* @param remoteFilter Boolean The new value.
-  		*/
+    * @param remoteFilter Boolean The new value.
+    */
   var setRemoteFilter: js.UndefOr[js.Function1[/* remoteFilter */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of remoteGroup
-  		* @param remoteGroup Boolean The new value.
-  		*/
+    * @param remoteGroup Boolean The new value.
+    */
   var setRemoteGroup: js.UndefOr[js.Function1[/* remoteGroup */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of remoteSort
-  		* @param remoteSort Boolean The new value.
-  		*/
+    * @param remoteSort Boolean The new value.
+    */
   var setRemoteSort: js.UndefOr[js.Function1[/* remoteSort */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of sorters
-  		* @param sorters Object[] The new value.
-  		*/
+    * @param sorters Object[] The new value.
+    */
   var setSorters: js.UndefOr[js.Function1[/* sorters */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Sets the value of storeId
-  		* @param storeId String The new value.
-  		*/
+    * @param storeId String The new value.
+    */
   var setStoreId: js.UndefOr[js.Function1[/* storeId */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of syncRemovedRecords
-  		* @param syncRemovedRecords Boolean The new value.
-  		*/
+    * @param syncRemovedRecords Boolean The new value.
+    */
   var setSyncRemovedRecords: js.UndefOr[js.Function1[/* syncRemovedRecords */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of totalCount
-  		* @param totalCount Number The new value.
-  		*/
+    * @param totalCount Number The new value.
+    */
   var setTotalCount: js.UndefOr[js.Function1[/* totalCount */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sorts the data in the Store by one or more of its properties
-  		* @param sorters String/Ext.util.Sorter[] Either a string name of one of the fields in this Store's configured Model, or an array of sorter configurations.
-  		* @param defaultDirection String The default overall direction to sort the data by.
-  		* @param where String This can be either 'prepend' or 'append'. If you leave this undefined it will clear the current sorters.
-  		*/
+    * @param sorters String/Ext.util.Sorter[] Either a string name of one of the fields in this Store's configured Model, or an array of sorter configurations.
+    * @param defaultDirection String The default overall direction to sort the data by.
+    * @param where String This can be either 'prepend' or 'append'. If you leave this undefined it will clear the current sorters.
+    */
   var sort: js.UndefOr[
     js.Function3[
       /* sorters */ js.UndefOr[js.Any], 
@@ -540,14 +540,14 @@ trait IStore extends IEvented {
   /** [Config Option] (String) */
   var storeId: js.UndefOr[String] = js.undefined
   /** [Method] Sums the value of property for each record between start and end and returns the result
-  		* @param field String The field in each record.
-  		* @returns Number The sum.
-  		*/
+    * @param field String The field in each record.
+    * @returns Number The sum.
+    */
   var sum: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], Double]] = js.undefined
   /** [Method] Synchronizes the Store with its Proxy
-  		* @param options Object
-  		* @returns Object
-  		*/
+    * @param options Object
+    * @returns Object
+    */
   var sync: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Config Option] (Boolean) */
   var syncRemovedRecords: js.UndefOr[Boolean] = js.undefined
@@ -580,7 +580,7 @@ object IStore {
     clearListeners: () => Unit = null,
     clearOnPageLoad: js.UndefOr[Boolean] = js.undefined,
     config: js.Any = null,
-    currentPage: Int | Double = null,
+    currentPage: js.UndefOr[Double] = js.undefined,
     data: js.Any = null,
     destroy: () => Unit = null,
     destroyRemovedRecords: js.UndefOr[Boolean] = js.undefined,
@@ -666,7 +666,7 @@ object IStore {
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    pageSize: Int | Double = null,
+    pageSize: js.UndefOr[Double] = js.undefined,
     params: js.Any = null,
     platformConfig: js.Any = null,
     plugins: js.Any = null,
@@ -722,7 +722,7 @@ object IStore {
     suspendEvents: () => Unit = null,
     sync: /* options */ js.UndefOr[js.Any] => _ = null,
     syncRemovedRecords: js.UndefOr[Boolean] = js.undefined,
-    totalCount: Int | Double = null,
+    totalCount: js.UndefOr[Double] = js.undefined,
     un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
@@ -740,21 +740,21 @@ object IStore {
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
     if (applyData != null) __obj.updateDynamic("applyData")(js.Any.fromFunction1(applyData))
     if (autoLoad != null) __obj.updateDynamic("autoLoad")(autoLoad.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoSync)) __obj.updateDynamic("autoSync")(autoSync.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoSync)) __obj.updateDynamic("autoSync")(autoSync.get.asInstanceOf[js.Any])
     if (average != null) __obj.updateDynamic("average")(js.Any.fromFunction1(average))
     if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(buffered)) __obj.updateDynamic("buffered")(buffered.asInstanceOf[js.Any])
+    if (!js.isUndefined(buffered)) __obj.updateDynamic("buffered")(buffered.get.asInstanceOf[js.Any])
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
     if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
     if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (clearFilter != null) __obj.updateDynamic("clearFilter")(js.Any.fromFunction1(clearFilter))
     if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
-    if (!js.isUndefined(clearOnPageLoad)) __obj.updateDynamic("clearOnPageLoad")(clearOnPageLoad.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearOnPageLoad)) __obj.updateDynamic("clearOnPageLoad")(clearOnPageLoad.get.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentPage)) __obj.updateDynamic("currentPage")(currentPage.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (!js.isUndefined(destroyRemovedRecords)) __obj.updateDynamic("destroyRemovedRecords")(destroyRemovedRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyRemovedRecords)) __obj.updateDynamic("destroyRemovedRecords")(destroyRemovedRecords.get.asInstanceOf[js.Any])
     if (each != null) __obj.updateDynamic("each")(js.Any.fromFunction2(each))
     if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
@@ -837,7 +837,7 @@ object IStore {
     if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5(on))
     if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4(onAfter))
     if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4(onBefore))
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
@@ -845,9 +845,9 @@ object IStore {
     if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     if (queryBy != null) __obj.updateDynamic("queryBy")(js.Any.fromFunction2(queryBy))
     if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction2(relayEvents))
-    if (!js.isUndefined(remoteFilter)) __obj.updateDynamic("remoteFilter")(remoteFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(remoteGroup)) __obj.updateDynamic("remoteGroup")(remoteGroup.asInstanceOf[js.Any])
-    if (!js.isUndefined(remoteSort)) __obj.updateDynamic("remoteSort")(remoteSort.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteFilter)) __obj.updateDynamic("remoteFilter")(remoteFilter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteGroup)) __obj.updateDynamic("remoteGroup")(remoteGroup.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteSort)) __obj.updateDynamic("remoteSort")(remoteSort.get.asInstanceOf[js.Any])
     if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
     if (removeAfterListener != null) __obj.updateDynamic("removeAfterListener")(js.Any.fromFunction4(removeAfterListener))
     if (removeAll != null) __obj.updateDynamic("removeAll")(js.Any.fromFunction1(removeAll))
@@ -884,7 +884,7 @@ object IStore {
     if (setStoreId != null) __obj.updateDynamic("setStoreId")(js.Any.fromFunction1(setStoreId))
     if (setSyncRemovedRecords != null) __obj.updateDynamic("setSyncRemovedRecords")(js.Any.fromFunction1(setSyncRemovedRecords))
     if (setTotalCount != null) __obj.updateDynamic("setTotalCount")(js.Any.fromFunction1(setTotalCount))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction3(sort))
     if (sorters != null) __obj.updateDynamic("sorters")(sorters.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
@@ -892,8 +892,8 @@ object IStore {
     if (sum != null) __obj.updateDynamic("sum")(js.Any.fromFunction1(sum))
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (sync != null) __obj.updateDynamic("sync")(js.Any.fromFunction1(sync))
-    if (!js.isUndefined(syncRemovedRecords)) __obj.updateDynamic("syncRemovedRecords")(syncRemovedRecords.asInstanceOf[js.Any])
-    if (totalCount != null) __obj.updateDynamic("totalCount")(totalCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(syncRemovedRecords)) __obj.updateDynamic("syncRemovedRecords")(syncRemovedRecords.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalCount)) __obj.updateDynamic("totalCount")(totalCount.get.asInstanceOf[js.Any])
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
     if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
     if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))

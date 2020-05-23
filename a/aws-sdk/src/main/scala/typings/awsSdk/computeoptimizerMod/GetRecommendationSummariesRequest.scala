@@ -22,10 +22,14 @@ trait GetRecommendationSummariesRequest extends js.Object {
 
 object GetRecommendationSummariesRequest {
   @scala.inline
-  def apply(accountIds: AccountIds = null, maxResults: Int | Double = null, nextToken: NextToken = null): GetRecommendationSummariesRequest = {
+  def apply(
+    accountIds: AccountIds = null,
+    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    nextToken: NextToken = null
+  ): GetRecommendationSummariesRequest = {
     val __obj = js.Dynamic.literal()
     if (accountIds != null) __obj.updateDynamic("accountIds")(accountIds.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRecommendationSummariesRequest]
   }

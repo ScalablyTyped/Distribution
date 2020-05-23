@@ -11,7 +11,7 @@ trait ApplicationSettingsResource extends js.Object {
     */
   var ApplicationId: string = js.native
   /**
-    * The settings for the AWS Lambda function to use by default as a code hook for campaigns in the application.
+    * The settings for the AWS Lambda function to invoke by default as a code hook for campaigns in the application. You can use this hook to customize segments that are used by campaigns in the application.
     */
   var CampaignHook: js.UndefOr[typings.awsSdk.pinpointMod.CampaignHook] = js.native
   /**
@@ -19,7 +19,7 @@ trait ApplicationSettingsResource extends js.Object {
     */
   var LastModifiedDate: js.UndefOr[string] = js.native
   /**
-    * The default sending limits for campaigns in the application.
+    * The default sending limits for campaigns and journeys in the application.
     */
   var Limits: js.UndefOr[CampaignLimits] = js.native
   /**

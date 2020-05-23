@@ -1,6 +1,5 @@
 package typings.dymoLabelFramework.dymo.label.framework
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object TapeCutMode extends js.Object {
   /** Indicates to print cut marks between labels. */
   @js.native
   sealed trait ChainMarks extends TapeCutMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TapeCutMode with Double] = js.native
-  /* 0 */ @js.native
-  object AutoCut extends TopLevel[AutoCut with Double]
-  
-  /* 1 */ @js.native
-  object ChainMarks extends TopLevel[ChainMarks with Double]
   
 }
 

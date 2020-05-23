@@ -21,8 +21,8 @@ object Options {
   @scala.inline
   def apply(exact: js.UndefOr[Boolean] = js.undefined, includeBoundaries: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeBoundaries)) __obj.updateDynamic("includeBoundaries")(includeBoundaries.asInstanceOf[js.Any])
+    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeBoundaries)) __obj.updateDynamic("includeBoundaries")(includeBoundaries.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

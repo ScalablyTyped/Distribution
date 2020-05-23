@@ -1,7 +1,7 @@
 package typings.hapiJoi.mod
 
-import typings.hapiJoi.AnonBuild
-import typings.hapiJoi.AnonTo
+import typings.hapiJoi.anon.Build
+import typings.hapiJoi.anon.To
 import typings.std.Record
 import typings.std.ThisType
 import scala.scalajs.js
@@ -14,10 +14,10 @@ trait Extension extends js.Object {
   /**
     * undocumented options
     */
-  var cast: js.UndefOr[Record[String, AnonTo]] = js.undefined
+  var cast: js.UndefOr[Record[String, To]] = js.undefined
   var coerce: js.UndefOr[CoerceFunction | CoerceObject] = js.undefined
   var flags: js.UndefOr[Record[String, ExtensionFlag]] = js.undefined
-  var manifest: js.UndefOr[AnonBuild] = js.undefined
+  var manifest: js.UndefOr[Build] = js.undefined
   var messages: js.UndefOr[LanguageMessages | String] = js.undefined
   var modifiers: js.UndefOr[Record[String, js.Function2[/* rule */ _, /* enabled */ js.UndefOr[Boolean], _]]] = js.undefined
   var overrides: js.UndefOr[Record[String, js.Function1[/* value */ _, Schema]]] = js.undefined
@@ -36,10 +36,10 @@ object Extension {
     `type`: String,
     args: /* repeated */ SchemaLike => Schema = null,
     base: Schema = null,
-    cast: Record[String, AnonTo] = null,
+    cast: Record[String, To] = null,
     coerce: CoerceFunction | CoerceObject = null,
     flags: Record[String, ExtensionFlag] = null,
-    manifest: AnonBuild = null,
+    manifest: Build = null,
     messages: LanguageMessages | String = null,
     modifiers: Record[String, js.Function2[/* rule */ _, /* enabled */ js.UndefOr[Boolean], _]] = null,
     overrides: Record[String, js.Function1[/* value */ _, Schema]] = null,

@@ -31,18 +31,18 @@ trait AccountLimit extends js.Object {
 object AccountLimit {
   @scala.inline
   def apply(
-    CodeSizeUnzipped: Int | Double = null,
-    CodeSizeZipped: Int | Double = null,
-    ConcurrentExecutions: Int | Double = null,
-    TotalCodeSize: Int | Double = null,
-    UnreservedConcurrentExecutions: Int | Double = null
+    CodeSizeUnzipped: js.UndefOr[Long] = js.undefined,
+    CodeSizeZipped: js.UndefOr[Long] = js.undefined,
+    ConcurrentExecutions: js.UndefOr[Integer] = js.undefined,
+    TotalCodeSize: js.UndefOr[Long] = js.undefined,
+    UnreservedConcurrentExecutions: js.UndefOr[UnreservedConcurrentExecutions] = js.undefined
   ): AccountLimit = {
     val __obj = js.Dynamic.literal()
-    if (CodeSizeUnzipped != null) __obj.updateDynamic("CodeSizeUnzipped")(CodeSizeUnzipped.asInstanceOf[js.Any])
-    if (CodeSizeZipped != null) __obj.updateDynamic("CodeSizeZipped")(CodeSizeZipped.asInstanceOf[js.Any])
-    if (ConcurrentExecutions != null) __obj.updateDynamic("ConcurrentExecutions")(ConcurrentExecutions.asInstanceOf[js.Any])
-    if (TotalCodeSize != null) __obj.updateDynamic("TotalCodeSize")(TotalCodeSize.asInstanceOf[js.Any])
-    if (UnreservedConcurrentExecutions != null) __obj.updateDynamic("UnreservedConcurrentExecutions")(UnreservedConcurrentExecutions.asInstanceOf[js.Any])
+    if (!js.isUndefined(CodeSizeUnzipped)) __obj.updateDynamic("CodeSizeUnzipped")(CodeSizeUnzipped.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(CodeSizeZipped)) __obj.updateDynamic("CodeSizeZipped")(CodeSizeZipped.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConcurrentExecutions)) __obj.updateDynamic("ConcurrentExecutions")(ConcurrentExecutions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalCodeSize)) __obj.updateDynamic("TotalCodeSize")(TotalCodeSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(UnreservedConcurrentExecutions)) __obj.updateDynamic("UnreservedConcurrentExecutions")(UnreservedConcurrentExecutions.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountLimit]
   }
 }

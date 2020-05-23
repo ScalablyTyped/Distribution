@@ -23,7 +23,7 @@ object mod extends js.Object {
   def apply(path: URL_, options: String): js.Any = js.native
   def apply(path: URL_, options: ReadFileOptions): js.Any = js.native
   type ReadFileOptions = Extract[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<read-json-sync.FnCall>[1] */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<read-json-sync.anon.FnCall>[1] */ js.Any, 
     js.Object
   ]
 }

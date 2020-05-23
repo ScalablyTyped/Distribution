@@ -1,6 +1,8 @@
 package typings.rmcFeedback
 
 import typings.react.mod.Component
+import typings.rmcFeedback.anon.Active
+import typings.rmcFeedback.anon.Disabled
 import typings.rmcFeedback.propTypesMod.ITouchProps
 import typings.rmcFeedback.propTypesMod.ITouchState
 import scala.scalajs.js
@@ -14,7 +16,7 @@ object touchFeedbackMod extends js.Object {
   trait TouchFeedback
     extends Component[ITouchProps, ITouchState, js.Any] {
     @JSName("state")
-    var state_TouchFeedback: AnonActive = js.native
+    var state_TouchFeedback: Active = js.native
     @JSName("componentDidUpdate")
     def componentDidUpdate_MTouchFeedback(): Unit = js.native
     def onMouseDown(e: js.Any): Unit = js.native
@@ -33,7 +35,7 @@ object touchFeedbackMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonDisabled = js.native
+    var defaultProps: Disabled = js.native
   }
   
 }

@@ -71,7 +71,7 @@ object GoogleActionsV2Argument {
     boolValue: js.UndefOr[Boolean] = js.undefined,
     datetimeValue: GoogleActionsV2DateTime = null,
     extension: ApiClientObjectMap[_] = null,
-    floatValue: Int | Double = null,
+    floatValue: js.UndefOr[Double] = js.undefined,
     intValue: String = null,
     name: String = null,
     placeValue: GoogleActionsV2Location = null,
@@ -81,10 +81,10 @@ object GoogleActionsV2Argument {
     textValue: String = null
   ): GoogleActionsV2Argument = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue.get.asInstanceOf[js.Any])
     if (datetimeValue != null) __obj.updateDynamic("datetimeValue")(datetimeValue.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (floatValue != null) __obj.updateDynamic("floatValue")(floatValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(floatValue)) __obj.updateDynamic("floatValue")(floatValue.get.asInstanceOf[js.Any])
     if (intValue != null) __obj.updateDynamic("intValue")(intValue.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (placeValue != null) __obj.updateDynamic("placeValue")(placeValue.asInstanceOf[js.Any])

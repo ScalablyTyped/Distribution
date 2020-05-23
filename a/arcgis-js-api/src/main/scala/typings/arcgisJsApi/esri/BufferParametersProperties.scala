@@ -69,10 +69,10 @@ object BufferParametersProperties {
     val __obj = js.Dynamic.literal()
     if (bufferSpatialReference != null) __obj.updateDynamic("bufferSpatialReference")(bufferSpatialReference.asInstanceOf[js.Any])
     if (distances != null) __obj.updateDynamic("distances")(distances.asInstanceOf[js.Any])
-    if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic.asInstanceOf[js.Any])
+    if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic.get.asInstanceOf[js.Any])
     if (geometries != null) __obj.updateDynamic("geometries")(geometries.asInstanceOf[js.Any])
     if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference.asInstanceOf[js.Any])
-    if (!js.isUndefined(unionResults)) __obj.updateDynamic("unionResults")(unionResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(unionResults)) __obj.updateDynamic("unionResults")(unionResults.get.asInstanceOf[js.Any])
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[BufferParametersProperties]
   }

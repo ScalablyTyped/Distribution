@@ -33,13 +33,13 @@ object fileOptions {
   def apply(
     compress: js.UndefOr[Boolean] = js.undefined,
     forceZip64Format: js.UndefOr[Boolean] = js.undefined,
-    mode: Int | Double = null,
+    mode: js.UndefOr[Double] = js.undefined,
     mtime: Date = null
   ): fileOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceZip64Format)) __obj.updateDynamic("forceZip64Format")(forceZip64Format.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceZip64Format)) __obj.updateDynamic("forceZip64Format")(forceZip64Format.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mode)) __obj.updateDynamic("mode")(mode.get.asInstanceOf[js.Any])
     if (mtime != null) __obj.updateDynamic("mtime")(mtime.asInstanceOf[js.Any])
     __obj.asInstanceOf[fileOptions]
   }

@@ -8,43 +8,30 @@ import scala.scalajs.js.annotation._
 /**
   * Prevents a DOM sub-tree from receiving tab navigations and focus.
   **/
-@JSGlobal("WinJS.UI.TabContainer")
-@js.native
-class TabContainer protected () extends js.Object {
-  //#region Constructors
-  /**
-    * Creates a new TabContainer.
-    * @constructor
-    * @param element The DOM element that hosts the TabContainer control.
-    * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties.
-    **/
-  def this(element: HTMLElement) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+trait TabContainer extends js.Object {
   //#endregion Methods
   //#region Properties
   /**
     * Gets or sets the child DOM element that receives tab focus.
     **/
-  var childFocus: HTMLElement = js.native
+  var childFocus: HTMLElement
   /**
     * Gets or sets the tab index of this container.
     **/
-  var tabIndex: Double = js.native
+  var tabIndex: Double
   //#endregion Constructors
   //#region Methods
   /**
     * Releases resources held by this TabContainer. Call this method when the TabContainer is no longer needed. After calling this method, the TabContainer becomes unusable.
     **/
-  def dispose(): Unit = js.native
+  def dispose(): Unit
 }
 
-/* static members */
-@JSGlobal("WinJS.UI.TabContainer")
-@js.native
-object TabContainer extends js.Object {
-  /**
-    * Indicates that the object is compatibile with declarative processing.
-    **/
-  var supportedForProcessing: Boolean = js.native
+object TabContainer {
+  @scala.inline
+  def apply(childFocus: HTMLElement, dispose: () => Unit, tabIndex: Double): TabContainer = {
+    val __obj = js.Dynamic.literal(childFocus = childFocus.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), tabIndex = tabIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TabContainer]
+  }
 }
 

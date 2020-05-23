@@ -272,6 +272,8 @@ trait State extends js.Object {
   def scenes(start: Double, end: Double): State = js.native
   def screen(): State = js.native
   def segment(clustherThreshold: Double, smoothingThreshold: Double): State = js.native
+  /** change the specified frame. */
+  def selectFrame(frame: Double): State = js.native
   def sepia(): State = js.native
   def set(attribute: String, value: String): State = js.native
   def setDraw(property: String, x: Double, y: Double, method: String): State = js.native

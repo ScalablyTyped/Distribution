@@ -1,7 +1,7 @@
 package typings.stripe.mod.charges
 
-import typings.stripe.AnonAccountnumber
-import typings.stripe.AnonBrand
+import typings.stripe.anon.Accountnumber
+import typings.stripe.anon.Brand
 import typings.stripe.stripeStrings.ach_credit_transfer
 import typings.stripe.stripeStrings.ach_debit
 import typings.stripe.stripeStrings.alipay
@@ -64,7 +64,7 @@ object IPaymentMethodDetails {
     __obj.asInstanceOf[IPaymentMethodDetails]
   }
   @scala.inline
-  def ICardPaymentMethodDetails(card: AnonBrand, `type`: card): IPaymentMethodDetails = {
+  def ICardPaymentMethodDetails(card: Brand, `type`: card): IPaymentMethodDetails = {
     val __obj = js.Dynamic.literal(card = card.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentMethodDetails]
@@ -82,7 +82,7 @@ object IPaymentMethodDetails {
     __obj.asInstanceOf[IPaymentMethodDetails]
   }
   @scala.inline
-  def IAchCreditTransferPaymentMethodDetails(ach_credit_transfer: AnonAccountnumber, `type`: ach_credit_transfer): IPaymentMethodDetails = {
+  def IAchCreditTransferPaymentMethodDetails(ach_credit_transfer: Accountnumber, `type`: ach_credit_transfer): IPaymentMethodDetails = {
     val __obj = js.Dynamic.literal(ach_credit_transfer = ach_credit_transfer.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentMethodDetails]

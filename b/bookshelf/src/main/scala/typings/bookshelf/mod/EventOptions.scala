@@ -12,7 +12,7 @@ object EventOptions {
   @scala.inline
   def apply(silent: js.UndefOr[Boolean] = js.undefined): EventOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventOptions]
   }
 }

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.Top10")
 @js.native
-class Top10 protected () extends js.Object {
+trait Top10 extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   @JSName("AppliesTo")
   val AppliesTo_Original: Range = js.native

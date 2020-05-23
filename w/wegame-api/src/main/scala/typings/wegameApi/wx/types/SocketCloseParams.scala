@@ -21,14 +21,14 @@ trait SocketCloseParams extends js.Object {
 object SocketCloseParams {
   @scala.inline
   def apply(
-    code: Int | Double = null,
+    code: js.UndefOr[Double] = js.undefined,
     complete: () => Unit = null,
     fail: () => Unit = null,
     reason: String = null,
     success: () => Unit = null
   ): SocketCloseParams = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (!js.isUndefined(code)) __obj.updateDynamic("code")(code.get.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])

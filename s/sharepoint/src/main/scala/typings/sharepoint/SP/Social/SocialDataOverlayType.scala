@@ -1,6 +1,5 @@
 package typings.sharepoint.SP.Social
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,14 +16,6 @@ object SocialDataOverlayType extends js.Object {
   
   @js.native
   sealed trait link extends SocialDataOverlayType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SocialDataOverlayType with Double] = js.native
-  /* 1 */ @js.native
-  object actors extends TopLevel[actors with Double]
-  
-  /* 0 */ @js.native
-  object link extends TopLevel[link with Double]
   
 }
 

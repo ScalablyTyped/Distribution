@@ -3,6 +3,7 @@ package typings.reactFauxDom
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ReactElement
+import typings.reactFauxDom.anon.GetPropertyValue
 import typings.reactFauxDom.reactFauxDomStrings.animateFauxDOM
 import typings.reactFauxDom.reactFauxDomStrings.connectFauxDOM
 import typings.reactFauxDom.reactFauxDomStrings.drawFauxDOM
@@ -67,14 +68,14 @@ object mod extends js.Object {
       P, 
       Exclude[
         /* keyof P */ String, 
-        connectFauxDOM | drawFauxDOM | animateFauxDOM | stopAnimatingFauxDOM | isAnimatingFauxDOM
+        /* keyof react-faux-dom.react-faux-dom.ReactFauxDomProps */ connectFauxDOM | drawFauxDOM | animateFauxDOM | stopAnimatingFauxDOM | isAnimatingFauxDOM
       ]
     ], 
     ComponentState
   ] = js.native
   @js.native
   object defaultView extends js.Object {
-    def getComputedStyle(node: Element): AnonGetPropertyValue = js.native
+    def getComputedStyle(node: Element): GetPropertyValue = js.native
   }
   
 }

@@ -14,7 +14,7 @@ trait PlusSpeechSpeechRecoginzeEvents extends js.Object {
   /**
     * 结束语音识别
     * 调用plus.speech.stopRecognize方法结束语音识别或语音识别完成后自动结束时触发。
-    * 	无回调函数参数。
+    *     无回调函数参数。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
     */
@@ -22,7 +22,7 @@ trait PlusSpeechSpeechRecoginzeEvents extends js.Object {
   /**
     * 语音识别错误
     * 语音识别发生错误时触发。
-    * 	回调函数参数event={code:"Number类型，错误编码",message:"String类型，错误描述信息"}。
+    *     回调函数参数event={code:"Number类型，错误编码",message:"String类型，错误描述信息"}。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
     */
@@ -30,7 +30,7 @@ trait PlusSpeechSpeechRecoginzeEvents extends js.Object {
   /**
     * 最终语音识别
     * 返回最终语音识别结果。
-    * 	回调函数参数event={result:"String类型，最佳识别结果",results:"String数组类型，所有候选结果"}。
+    *     回调函数参数event={result:"String类型，最佳识别结果",results:"String数组类型，所有候选结果"}。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
     */
@@ -38,7 +38,7 @@ trait PlusSpeechSpeechRecoginzeEvents extends js.Object {
   /**
     * 临时语音识别结果
     * 返回临时语音识别结果时触发。
-    * 	回调函数参数event={partialResult:"String类型，临时识别结果"}。
+    *     回调函数参数event={partialResult:"String类型，临时识别结果"}。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
     */
@@ -46,7 +46,7 @@ trait PlusSpeechSpeechRecoginzeEvents extends js.Object {
   /**
     * 开始语音识别
     * 调用plus.speech.startRecognize方法开始语音识别时触发。
-    * 	无回调函数参数。
+    *     无回调函数参数。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
     */
@@ -54,7 +54,7 @@ trait PlusSpeechSpeechRecoginzeEvents extends js.Object {
   /**
     * 音量变化
     * 开始语音识别后，麦克风录制到的语音音量变化时触发。
-    * 	回调函数参数event={volume:"Number类型，取值范围0-1"}。
+    *     回调函数参数event={volume:"Number类型，取值范围0-1"}。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
     */

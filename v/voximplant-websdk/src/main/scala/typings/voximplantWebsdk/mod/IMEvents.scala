@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait IMEvents extends js.Object
 
 /**
-	*	VoxImplant.Client Instant Messaging and Presence events
-	*/
+  *    VoxImplant.Client Instant Messaging and Presence events
+  */
 @JSImport("voximplant-websdk", "IMEvents")
 @js.native
 object IMEvents extends js.Object {

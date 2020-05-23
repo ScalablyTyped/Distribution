@@ -1,7 +1,7 @@
 package typings.paypalRestSdk.mod
 
-import typings.paypalRestSdk.AnonCancelurl
-import typings.paypalRestSdk.AnonPaymentmethod
+import typings.paypalRestSdk.anon.Cancelurl
+import typings.paypalRestSdk.anon.Paymentmethod
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +14,8 @@ trait Payment_ extends js.Object {
   var intent: String
   val links: js.UndefOr[js.Array[Link]] = js.undefined
   var note_to_payer: js.UndefOr[String] = js.undefined
-  var payer: AnonPaymentmethod
-  var redirect_urls: js.UndefOr[AnonCancelurl] = js.undefined
+  var payer: Paymentmethod
+  var redirect_urls: js.UndefOr[Cancelurl] = js.undefined
   val state: js.UndefOr[String] = js.undefined
   var transactions: js.Array[Transaction]
   val update_time: js.UndefOr[String] = js.undefined
@@ -25,7 +25,7 @@ object Payment_ {
   @scala.inline
   def apply(
     intent: String,
-    payer: AnonPaymentmethod,
+    payer: Paymentmethod,
     transactions: js.Array[Transaction],
     create_time: String = null,
     experience_profile_id: String = null,
@@ -33,7 +33,7 @@ object Payment_ {
     id: String = null,
     links: js.Array[Link] = null,
     note_to_payer: String = null,
-    redirect_urls: AnonCancelurl = null,
+    redirect_urls: Cancelurl = null,
     state: String = null,
     update_time: String = null
   ): Payment_ = {

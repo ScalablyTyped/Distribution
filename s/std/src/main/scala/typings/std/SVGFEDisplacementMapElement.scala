@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,15 +55,5 @@ trait SVGFEDisplacementMapElement
     callback: EventListenerOrEventListenerObject,
     options: EventListenerOptions
   ): Unit = js.native
-}
-
-@JSGlobal("SVGFEDisplacementMapElement")
-@js.native
-object SVGFEDisplacementMapElement extends Instantiable0[SVGFEDisplacementMapElement] {
-  val SVG_CHANNEL_A: Double = js.native
-  val SVG_CHANNEL_B: Double = js.native
-  val SVG_CHANNEL_G: Double = js.native
-  val SVG_CHANNEL_R: Double = js.native
-  val SVG_CHANNEL_UNKNOWN: Double = js.native
 }
 

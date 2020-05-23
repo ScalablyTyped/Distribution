@@ -39,7 +39,7 @@ object IAuth0ClientOptions {
     val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any])
     if (loginState != null) __obj.updateDynamic("loginState")(loginState.asInstanceOf[js.Any])
     if (loginUrl != null) __obj.updateDynamic("loginUrl")(loginUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(sso)) __obj.updateDynamic("sso")(sso.asInstanceOf[js.Any])
+    if (!js.isUndefined(sso)) __obj.updateDynamic("sso")(sso.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAuth0ClientOptions]
   }
 }

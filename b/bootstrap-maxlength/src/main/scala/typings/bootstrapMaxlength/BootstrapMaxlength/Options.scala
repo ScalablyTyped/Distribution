@@ -144,9 +144,9 @@ object Options {
     warningClass: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowOverMax)) __obj.updateDynamic("allowOverMax")(allowOverMax.asInstanceOf[js.Any])
-    if (!js.isUndefined(alwaysShow)) __obj.updateDynamic("alwaysShow")(alwaysShow.asInstanceOf[js.Any])
-    if (!js.isUndefined(appendToParent)) __obj.updateDynamic("appendToParent")(appendToParent.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowOverMax)) __obj.updateDynamic("allowOverMax")(allowOverMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysShow)) __obj.updateDynamic("alwaysShow")(alwaysShow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(appendToParent)) __obj.updateDynamic("appendToParent")(appendToParent.get.asInstanceOf[js.Any])
     if (customMaxAttribute != null) __obj.updateDynamic("customMaxAttribute")(customMaxAttribute.asInstanceOf[js.Any])
     if (limitReachedClass != null) __obj.updateDynamic("limitReachedClass")(limitReachedClass.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
@@ -154,13 +154,13 @@ object Options {
     if (postText != null) __obj.updateDynamic("postText")(postText.asInstanceOf[js.Any])
     if (preText != null) __obj.updateDynamic("preText")(preText.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCharsTyped)) __obj.updateDynamic("showCharsTyped")(showCharsTyped.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMaxLength)) __obj.updateDynamic("showMaxLength")(showMaxLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOnReady)) __obj.updateDynamic("showOnReady")(showOnReady.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCharsTyped)) __obj.updateDynamic("showCharsTyped")(showCharsTyped.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMaxLength)) __obj.updateDynamic("showMaxLength")(showMaxLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOnReady)) __obj.updateDynamic("showOnReady")(showOnReady.get.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(twoCharLinebreak)) __obj.updateDynamic("twoCharLinebreak")(twoCharLinebreak.asInstanceOf[js.Any])
-    if (!js.isUndefined(utf8)) __obj.updateDynamic("utf8")(utf8.asInstanceOf[js.Any])
-    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
+    if (!js.isUndefined(twoCharLinebreak)) __obj.updateDynamic("twoCharLinebreak")(twoCharLinebreak.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(utf8)) __obj.updateDynamic("utf8")(utf8.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.get.asInstanceOf[js.Any])
     if (warningClass != null) __obj.updateDynamic("warningClass")(warningClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

@@ -98,7 +98,7 @@ object FeedOptions {
     language: String = null,
     managingEditor: String = null,
     pubDate: Date | String = null,
-    ttl: Int | Double = null,
+    ttl: js.UndefOr[Double] = js.undefined,
     webMaster: String = null
   ): FeedOptions = {
     val __obj = js.Dynamic.literal(feed_url = feed_url.asInstanceOf[js.Any], site_url = site_url.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
@@ -114,7 +114,7 @@ object FeedOptions {
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (managingEditor != null) __obj.updateDynamic("managingEditor")(managingEditor.asInstanceOf[js.Any])
     if (pubDate != null) __obj.updateDynamic("pubDate")(pubDate.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
     if (webMaster != null) __obj.updateDynamic("webMaster")(webMaster.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeedOptions]
   }

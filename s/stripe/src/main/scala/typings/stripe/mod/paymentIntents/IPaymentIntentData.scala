@@ -50,9 +50,9 @@ trait IPaymentIntentData extends js.Object {
 object IPaymentIntentData {
   @scala.inline
   def apply(
-    application_fee_amount: Int | Double = null,
+    application_fee_amount: js.UndefOr[Double] = js.undefined,
     capture_method: PaymentIntentDataCaptureMethodOptions = null,
-    description: String = null,
+    description: js.UndefOr[Null | String] = js.undefined,
     metadata: IMetadata = null,
     on_behalf_of: String = null,
     receipt_email: String = null,
@@ -61,9 +61,9 @@ object IPaymentIntentData {
     transfer_data: IPaymentIntentDataTransferDataOptions = null
   ): IPaymentIntentData = {
     val __obj = js.Dynamic.literal()
-    if (application_fee_amount != null) __obj.updateDynamic("application_fee_amount")(application_fee_amount.asInstanceOf[js.Any])
+    if (!js.isUndefined(application_fee_amount)) __obj.updateDynamic("application_fee_amount")(application_fee_amount.get.asInstanceOf[js.Any])
     if (capture_method != null) __obj.updateDynamic("capture_method")(capture_method.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of.asInstanceOf[js.Any])
     if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email.asInstanceOf[js.Any])

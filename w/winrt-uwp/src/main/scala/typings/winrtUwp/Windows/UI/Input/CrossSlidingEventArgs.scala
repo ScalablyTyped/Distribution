@@ -7,14 +7,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains event data for the CrossSliding event. */
-@JSGlobal("Windows.UI.Input.CrossSlidingEventArgs")
-@js.native
-abstract class CrossSlidingEventArgs () extends js.Object {
+trait CrossSlidingEventArgs extends js.Object {
   /** Gets the state of the CrossSliding event. */
-  var crossSlidingState: CrossSlidingState = js.native
+  var crossSlidingState: CrossSlidingState
   /** Gets the device type of the input source. */
-  var pointerDeviceType: PointerDeviceType = js.native
+  var pointerDeviceType: PointerDeviceType
   /** Gets the location of the touch contact. */
-  var position: Point = js.native
+  var position: Point
+}
+
+object CrossSlidingEventArgs {
+  @scala.inline
+  def apply(crossSlidingState: CrossSlidingState, pointerDeviceType: PointerDeviceType, position: Point): CrossSlidingEventArgs = {
+    val __obj = js.Dynamic.literal(crossSlidingState = crossSlidingState.asInstanceOf[js.Any], pointerDeviceType = pointerDeviceType.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CrossSlidingEventArgs]
+  }
 }
 

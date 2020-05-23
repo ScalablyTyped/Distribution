@@ -33,13 +33,13 @@ object SearchLocalGatewayRoutesRequest {
   def apply(
     Filters: FilterList,
     LocalGatewayRouteTableId: LocalGatewayRoutetableId,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
-    MaxResults: Int | scala.Double = null,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: String = null
   ): SearchLocalGatewayRoutesRequest = {
     val __obj = js.Dynamic.literal(Filters = Filters.asInstanceOf[js.Any], LocalGatewayRouteTableId = LocalGatewayRouteTableId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchLocalGatewayRoutesRequest]
   }

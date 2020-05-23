@@ -78,14 +78,14 @@ trait PlannerTask extends Entity {
 object PlannerTask {
   @scala.inline
   def apply(
-    activeChecklistItemCount: Int | Double = null,
+    activeChecklistItemCount: js.UndefOr[Double] = js.undefined,
     appliedCategories: PlannerAppliedCategories = null,
     assignedToTaskBoardFormat: PlannerAssignedToTaskBoardTaskFormat = null,
     assigneePriority: String = null,
     assignments: PlannerAssignments = null,
     bucketId: String = null,
     bucketTaskBoardFormat: PlannerBucketTaskBoardTaskFormat = null,
-    checklistItemCount: Int | Double = null,
+    checklistItemCount: js.UndefOr[Double] = js.undefined,
     completedBy: IdentitySet = null,
     completedDateTime: String = null,
     conversationThreadId: String = null,
@@ -96,23 +96,23 @@ object PlannerTask {
     hasDescription: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     orderHint: String = null,
-    percentComplete: Int | Double = null,
+    percentComplete: js.UndefOr[Double] = js.undefined,
     planId: String = null,
     previewType: PlannerPreviewType = null,
     progressTaskBoardFormat: PlannerProgressTaskBoardTaskFormat = null,
-    referenceCount: Int | Double = null,
+    referenceCount: js.UndefOr[Double] = js.undefined,
     startDateTime: String = null,
     title: String = null
   ): PlannerTask = {
     val __obj = js.Dynamic.literal()
-    if (activeChecklistItemCount != null) __obj.updateDynamic("activeChecklistItemCount")(activeChecklistItemCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeChecklistItemCount)) __obj.updateDynamic("activeChecklistItemCount")(activeChecklistItemCount.get.asInstanceOf[js.Any])
     if (appliedCategories != null) __obj.updateDynamic("appliedCategories")(appliedCategories.asInstanceOf[js.Any])
     if (assignedToTaskBoardFormat != null) __obj.updateDynamic("assignedToTaskBoardFormat")(assignedToTaskBoardFormat.asInstanceOf[js.Any])
     if (assigneePriority != null) __obj.updateDynamic("assigneePriority")(assigneePriority.asInstanceOf[js.Any])
     if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
     if (bucketId != null) __obj.updateDynamic("bucketId")(bucketId.asInstanceOf[js.Any])
     if (bucketTaskBoardFormat != null) __obj.updateDynamic("bucketTaskBoardFormat")(bucketTaskBoardFormat.asInstanceOf[js.Any])
-    if (checklistItemCount != null) __obj.updateDynamic("checklistItemCount")(checklistItemCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(checklistItemCount)) __obj.updateDynamic("checklistItemCount")(checklistItemCount.get.asInstanceOf[js.Any])
     if (completedBy != null) __obj.updateDynamic("completedBy")(completedBy.asInstanceOf[js.Any])
     if (completedDateTime != null) __obj.updateDynamic("completedDateTime")(completedDateTime.asInstanceOf[js.Any])
     if (conversationThreadId != null) __obj.updateDynamic("conversationThreadId")(conversationThreadId.asInstanceOf[js.Any])
@@ -120,14 +120,14 @@ object PlannerTask {
     if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
     if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
     if (dueDateTime != null) __obj.updateDynamic("dueDateTime")(dueDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasDescription)) __obj.updateDynamic("hasDescription")(hasDescription.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasDescription)) __obj.updateDynamic("hasDescription")(hasDescription.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (orderHint != null) __obj.updateDynamic("orderHint")(orderHint.asInstanceOf[js.Any])
-    if (percentComplete != null) __obj.updateDynamic("percentComplete")(percentComplete.asInstanceOf[js.Any])
+    if (!js.isUndefined(percentComplete)) __obj.updateDynamic("percentComplete")(percentComplete.get.asInstanceOf[js.Any])
     if (planId != null) __obj.updateDynamic("planId")(planId.asInstanceOf[js.Any])
     if (previewType != null) __obj.updateDynamic("previewType")(previewType.asInstanceOf[js.Any])
     if (progressTaskBoardFormat != null) __obj.updateDynamic("progressTaskBoardFormat")(progressTaskBoardFormat.asInstanceOf[js.Any])
-    if (referenceCount != null) __obj.updateDynamic("referenceCount")(referenceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(referenceCount)) __obj.updateDynamic("referenceCount")(referenceCount.get.asInstanceOf[js.Any])
     if (startDateTime != null) __obj.updateDynamic("startDateTime")(startDateTime.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlannerTask]

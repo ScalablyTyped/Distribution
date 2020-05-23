@@ -1,6 +1,6 @@
 package typings.fullcalendar.scrollerMod
 
-import typings.fullcalendar.jqueryHooksMod._Global_.JQuery
+import typings.fullcalendar.jqueryHooksMod.global.JQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

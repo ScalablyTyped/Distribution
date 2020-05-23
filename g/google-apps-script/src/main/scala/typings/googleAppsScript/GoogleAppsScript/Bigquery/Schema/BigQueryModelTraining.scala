@@ -11,9 +11,9 @@ trait BigQueryModelTraining extends js.Object {
 
 object BigQueryModelTraining {
   @scala.inline
-  def apply(currentIteration: Int | Double = null, expectedTotalIterations: String = null): BigQueryModelTraining = {
+  def apply(currentIteration: js.UndefOr[Double] = js.undefined, expectedTotalIterations: String = null): BigQueryModelTraining = {
     val __obj = js.Dynamic.literal()
-    if (currentIteration != null) __obj.updateDynamic("currentIteration")(currentIteration.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentIteration)) __obj.updateDynamic("currentIteration")(currentIteration.get.asInstanceOf[js.Any])
     if (expectedTotalIterations != null) __obj.updateDynamic("expectedTotalIterations")(expectedTotalIterations.asInstanceOf[js.Any])
     __obj.asInstanceOf[BigQueryModelTraining]
   }

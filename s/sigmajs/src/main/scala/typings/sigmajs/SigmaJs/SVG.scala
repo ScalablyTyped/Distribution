@@ -1,13 +1,13 @@
 package typings.sigmajs.SigmaJs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sigmajs.AnonDictrenderType
+import typings.sigmajs.anon.DictrenderType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SVG extends js.Object {
-  var edges: AnonDictrenderType
+  var edges: DictrenderType
   var labels: StringDictionary[SVGObject[Node]]
   var nodes: StringDictionary[SVGObject[Node]]
 }
@@ -15,7 +15,7 @@ trait SVG extends js.Object {
 object SVG {
   @scala.inline
   def apply(
-    edges: AnonDictrenderType,
+    edges: DictrenderType,
     labels: StringDictionary[SVGObject[Node]],
     nodes: StringDictionary[SVGObject[Node]]
   ): SVG = {

@@ -1,6 +1,6 @@
 package typings.blessed.mod.Widgets
 
-import typings.blessed.AnonX
+import typings.blessed.anon.X
 import typings.blessed.mod.Widgets.Types.TPosition
 import typings.blessed.mod.Widgets.Types.TTopLeft
 import scala.scalajs.js
@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Coords extends js.Object {
-  var _contentEnd: AnonX
+  var _contentEnd: X
   var base: Double
   var nobot: TPosition
   var noleft: TTopLeft
@@ -23,7 +23,7 @@ trait Coords extends js.Object {
 object Coords {
   @scala.inline
   def apply(
-    _contentEnd: AnonX,
+    _contentEnd: X,
     base: Double,
     nobot: TPosition,
     noleft: TTopLeft,

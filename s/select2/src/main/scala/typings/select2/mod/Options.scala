@@ -1,6 +1,6 @@
 package typings.select2.mod
 
-import typings.select2.mod._Global_.JQuery
+import typings.select2.mod.global.JQuery
 import typings.select2.select2Strings.ltr
 import typings.select2.select2Strings.rtl
 import typings.std.HTMLElement
@@ -109,10 +109,10 @@ object Options {
     insertTag: (/* data */ js.Array[OptionData | IdTextPair], /* tag */ IdTextPair) => Unit = null,
     language: String | Translation = null,
     matcher: (/* params */ SearchOptions, /* data */ OptGroupData | OptionData) => OptGroupData | OptionData | Null = null,
-    maximumInputLength: Int | Double = null,
-    maximumSelectionLength: Int | Double = null,
-    minimumInputLength: Int | Double = null,
-    minimumResultsForSearch: Int | Double = null,
+    maximumInputLength: js.UndefOr[Double] = js.undefined,
+    maximumSelectionLength: js.UndefOr[Double] = js.undefined,
+    minimumInputLength: js.UndefOr[Double] = js.undefined,
+    minimumResultsForSearch: js.UndefOr[Double] = js.undefined,
     multiple: js.UndefOr[Boolean] = js.undefined,
     placeholder: String | IdTextPair = null,
     resultsAdapter: js.Any = null,
@@ -129,20 +129,20 @@ object Options {
   ): Options[Result, RemoteResult] = {
     val __obj = js.Dynamic.literal()
     if (ajax != null) __obj.updateDynamic("ajax")(ajax.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear.get.asInstanceOf[js.Any])
     if (amdBase != null) __obj.updateDynamic("amdBase")(amdBase.asInstanceOf[js.Any])
     if (amdLanguageBase != null) __obj.updateDynamic("amdLanguageBase")(amdLanguageBase.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnSelect)) __obj.updateDynamic("closeOnSelect")(closeOnSelect.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnSelect)) __obj.updateDynamic("closeOnSelect")(closeOnSelect.get.asInstanceOf[js.Any])
     if (containerCss != null) __obj.updateDynamic("containerCss")(containerCss.asInstanceOf[js.Any])
     if (containerCssClass != null) __obj.updateDynamic("containerCssClass")(containerCssClass.asInstanceOf[js.Any])
     if (createTag != null) __obj.updateDynamic("createTag")(js.Any.fromFunction1(createTag))
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataAdapter != null) __obj.updateDynamic("dataAdapter")(dataAdapter.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (dropdownAdapter != null) __obj.updateDynamic("dropdownAdapter")(dropdownAdapter.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropdownAutoWidth)) __obj.updateDynamic("dropdownAutoWidth")(dropdownAutoWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropdownAutoWidth)) __obj.updateDynamic("dropdownAutoWidth")(dropdownAutoWidth.get.asInstanceOf[js.Any])
     if (dropdownCss != null) __obj.updateDynamic("dropdownCss")(dropdownCss.asInstanceOf[js.Any])
     if (dropdownCssClass != null) __obj.updateDynamic("dropdownCssClass")(dropdownCssClass.asInstanceOf[js.Any])
     if (dropdownParent != null) __obj.updateDynamic("dropdownParent")(dropdownParent.asInstanceOf[js.Any])
@@ -151,17 +151,17 @@ object Options {
     if (insertTag != null) __obj.updateDynamic("insertTag")(js.Any.fromFunction2(insertTag))
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (matcher != null) __obj.updateDynamic("matcher")(js.Any.fromFunction2(matcher))
-    if (maximumInputLength != null) __obj.updateDynamic("maximumInputLength")(maximumInputLength.asInstanceOf[js.Any])
-    if (maximumSelectionLength != null) __obj.updateDynamic("maximumSelectionLength")(maximumSelectionLength.asInstanceOf[js.Any])
-    if (minimumInputLength != null) __obj.updateDynamic("minimumInputLength")(minimumInputLength.asInstanceOf[js.Any])
-    if (minimumResultsForSearch != null) __obj.updateDynamic("minimumResultsForSearch")(minimumResultsForSearch.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumInputLength)) __obj.updateDynamic("maximumInputLength")(maximumInputLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumSelectionLength)) __obj.updateDynamic("maximumSelectionLength")(maximumSelectionLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumInputLength)) __obj.updateDynamic("minimumInputLength")(minimumInputLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumResultsForSearch)) __obj.updateDynamic("minimumResultsForSearch")(minimumResultsForSearch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (resultsAdapter != null) __obj.updateDynamic("resultsAdapter")(resultsAdapter.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectOnClose)) __obj.updateDynamic("selectOnClose")(selectOnClose.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectOnClose)) __obj.updateDynamic("selectOnClose")(selectOnClose.get.asInstanceOf[js.Any])
     if (selectionAdapter != null) __obj.updateDynamic("selectionAdapter")(selectionAdapter.asInstanceOf[js.Any])
     if (sorter != null) __obj.updateDynamic("sorter")(js.Any.fromFunction1(sorter))
-    if (!js.isUndefined(tags)) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (!js.isUndefined(tags)) __obj.updateDynamic("tags")(tags.get.asInstanceOf[js.Any])
     if (templateResult != null) __obj.updateDynamic("templateResult")(js.Any.fromFunction1(templateResult))
     if (templateSelection != null) __obj.updateDynamic("templateSelection")(js.Any.fromFunction1(templateSelection))
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])

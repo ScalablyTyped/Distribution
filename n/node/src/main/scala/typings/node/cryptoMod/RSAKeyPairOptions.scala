@@ -1,7 +1,7 @@
 package typings.node.cryptoMod
 
-import typings.node.AnonFormat
-import typings.node.AnonType
+import typings.node.anon.Format
+import typings.node.anon.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,24 +11,24 @@ trait RSAKeyPairOptions[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] exten
     * Key size in bits
     */
   var modulusLength: Double
-  var privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with AnonType
+  var privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with Type
   /**
     * @default 0x10001
     */
   var publicExponent: js.UndefOr[Double] = js.undefined
-  var publicKeyEncoding: AnonFormat[PubF]
+  var publicKeyEncoding: Format[PubF]
 }
 
 object RSAKeyPairOptions {
   @scala.inline
-  def apply[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */](
+  def apply[PubF, PrivF](
     modulusLength: Double,
-    privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with AnonType,
-    publicKeyEncoding: AnonFormat[PubF],
-    publicExponent: Int | Double = null
+    privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with Type,
+    publicKeyEncoding: Format[PubF],
+    publicExponent: js.UndefOr[Double] = js.undefined
   ): RSAKeyPairOptions[PubF, PrivF] = {
     val __obj = js.Dynamic.literal(modulusLength = modulusLength.asInstanceOf[js.Any], privateKeyEncoding = privateKeyEncoding.asInstanceOf[js.Any], publicKeyEncoding = publicKeyEncoding.asInstanceOf[js.Any])
-    if (publicExponent != null) __obj.updateDynamic("publicExponent")(publicExponent.asInstanceOf[js.Any])
+    if (!js.isUndefined(publicExponent)) __obj.updateDynamic("publicExponent")(publicExponent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RSAKeyPairOptions[PubF, PrivF]]
   }
 }

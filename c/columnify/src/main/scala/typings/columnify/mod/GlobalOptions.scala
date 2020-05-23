@@ -1,7 +1,7 @@
 package typings.columnify.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.columnify.PickOptionsminWidthmaxWid
+import typings.columnify.anon.PickOptionsminWidthmaxWid
 import typings.columnify.columnifyStrings.center
 import typings.columnify.columnifyStrings.centre
 import typings.columnify.columnifyStrings.left
@@ -28,9 +28,9 @@ object GlobalOptions {
     config: StringDictionary[Options] = null,
     dataTransform: /* data */ String => String = null,
     headingTransform: /* data */ String => String = null,
-    maxLineWidth: Int | Double = null,
-    maxWidth: Int | Double = null,
-    minWidth: Int | Double = null,
+    maxLineWidth: js.UndefOr[Double] = js.undefined,
+    maxWidth: js.UndefOr[Double] = js.undefined,
+    minWidth: js.UndefOr[Double] = js.undefined,
     paddingChr: String = null,
     preserveNewLines: js.UndefOr[Boolean] = js.undefined,
     showHeaders: js.UndefOr[Boolean] = js.undefined,
@@ -45,13 +45,13 @@ object GlobalOptions {
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (dataTransform != null) __obj.updateDynamic("dataTransform")(js.Any.fromFunction1(dataTransform))
     if (headingTransform != null) __obj.updateDynamic("headingTransform")(js.Any.fromFunction1(headingTransform))
-    if (maxLineWidth != null) __obj.updateDynamic("maxLineWidth")(maxLineWidth.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLineWidth)) __obj.updateDynamic("maxLineWidth")(maxLineWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
     if (paddingChr != null) __obj.updateDynamic("paddingChr")(paddingChr.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveNewLines)) __obj.updateDynamic("preserveNewLines")(preserveNewLines.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHeaders)) __obj.updateDynamic("showHeaders")(showHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(truncate)) __obj.updateDynamic("truncate")(truncate.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveNewLines)) __obj.updateDynamic("preserveNewLines")(preserveNewLines.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHeaders)) __obj.updateDynamic("showHeaders")(showHeaders.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(truncate)) __obj.updateDynamic("truncate")(truncate.get.asInstanceOf[js.Any])
     if (truncateMarker != null) __obj.updateDynamic("truncateMarker")(truncateMarker.asInstanceOf[js.Any])
     if (widths != null) __obj.updateDynamic("widths")(widths.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalOptions]

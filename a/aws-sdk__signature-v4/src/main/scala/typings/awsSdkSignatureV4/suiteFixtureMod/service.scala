@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@aws-sdk/signature-v4/build/suite.fixture", "service")
 @js.native
-object service
-  extends TopLevel[typings.awsSdkSignatureV4.awsSdkSignatureV4Strings.service]
+object service extends TopLevel[/* "service" */ String]
 

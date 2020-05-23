@@ -1,18 +1,17 @@
 package typings.winrtUwp.Windows.Web.Http.Headers
 
 import typings.std.Array
-import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsHttpExpectationHeaderValue
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import typings.winrtUwp.anon.Index
+import typings.winrtUwp.anon.ItemsHttpExpectationHeaderValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the value of the Expect HTTP header on an HTTP request. */
-@JSGlobal("Windows.Web.Http.Headers.HttpExpectationHeaderValueCollection")
 @js.native
-abstract class HttpExpectationHeaderValueCollection () extends Array[HttpExpectationHeaderValue] {
+trait HttpExpectationHeaderValueCollection extends Array[HttpExpectationHeaderValue] {
   /** Gets the number of HttpExpectationHeaderValue objects in the collection. */
   var size: Double = js.native
   /**
@@ -37,13 +36,13 @@ abstract class HttpExpectationHeaderValueCollection () extends Array[HttpExpecta
     * Retrieves the HttpExpectationHeaderValue items that start at the specified index in the collection.
     * @param startIndex The zero-based index of the start of the HttpExpectationHeaderValue items in the HttpExpectationHeaderValueCollection .
     */
-  def getMany(startIndex: Double): AnonItemsHttpExpectationHeaderValue = js.native
+  def getMany(startIndex: Double): ItemsHttpExpectationHeaderValue = js.native
   /**
     * Returns an immutable view of the HttpExpectationHeaderValueCollection .
     * @return The view of the HttpExpectationHeaderValueCollection .
     */
   def getView(): IVectorView[HttpExpectationHeaderValue] = js.native
-  def indexOf(value: HttpExpectationHeaderValue, extra: js.Any*): AnonIndex = js.native
+  def indexOf(value: HttpExpectationHeaderValue, extra: js.Any*): Index = js.native
   /**
     * Determines the index of a specific item in the collection.
     * @param item The object to locate in the collection.

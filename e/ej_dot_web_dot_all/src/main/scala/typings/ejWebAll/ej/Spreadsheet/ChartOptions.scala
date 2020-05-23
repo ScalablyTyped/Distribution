@@ -20,7 +20,7 @@ object ChartOptions {
   @scala.inline
   def apply(enable3D: js.UndefOr[Boolean] = js.undefined, marker: js.Any = null, `type`: String = null): ChartOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enable3D)) __obj.updateDynamic("enable3D")(enable3D.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable3D)) __obj.updateDynamic("enable3D")(enable3D.get.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartOptions]

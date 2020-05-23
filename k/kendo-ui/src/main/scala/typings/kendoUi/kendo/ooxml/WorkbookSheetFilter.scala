@@ -11,10 +11,10 @@ trait WorkbookSheetFilter extends js.Object {
 
 object WorkbookSheetFilter {
   @scala.inline
-  def apply(from: Int | Double = null, to: Int | Double = null): WorkbookSheetFilter = {
+  def apply(from: js.UndefOr[Double] = js.undefined, to: js.UndefOr[Double] = js.undefined): WorkbookSheetFilter = {
     val __obj = js.Dynamic.literal()
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(to)) __obj.updateDynamic("to")(to.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookSheetFilter]
   }
 }

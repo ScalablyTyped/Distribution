@@ -6,11 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("spine.webgl.SkeletonRenderer")
 @js.native
-class SkeletonRenderer protected () extends js.Object {
-  def this(context: ManagedWebGLRenderingContext) = this()
-  def this(context: ManagedWebGLRenderingContext, twoColorTint: Boolean) = this()
+trait SkeletonRenderer extends js.Object {
   var clipper: js.Any = js.native
   var premultipliedAlpha: Boolean = js.native
   var renderable: js.Any = js.native
@@ -27,12 +24,5 @@ class SkeletonRenderer protected () extends js.Object {
   def draw(batcher: PolygonBatcher, skeleton: Skeleton): Unit = js.native
   def draw(batcher: PolygonBatcher, skeleton: Skeleton, slotRangeStart: Double): Unit = js.native
   def draw(batcher: PolygonBatcher, skeleton: Skeleton, slotRangeStart: Double, slotRangeEnd: Double): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("spine.webgl.SkeletonRenderer")
-@js.native
-object SkeletonRenderer extends js.Object {
-  var QUAD_TRIANGLES: js.Array[Double] = js.native
 }
 

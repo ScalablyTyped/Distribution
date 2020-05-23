@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,17 +24,6 @@ object ConditionalDataBarAxisFormat extends js.Object {
   
   @js.native
   sealed trait none extends ConditionalDataBarAxisFormat
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ConditionalDataBarAxisFormat with String] = js.native
-  /* "Automatic" */ @js.native
-  object automatic extends TopLevel[automatic with String]
-  
-  /* "CellMidPoint" */ @js.native
-  object cellMidPoint extends TopLevel[cellMidPoint with String]
-  
-  /* "None" */ @js.native
-  object none extends TopLevel[none with String]
   
 }
 

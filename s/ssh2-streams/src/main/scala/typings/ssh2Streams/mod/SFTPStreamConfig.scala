@@ -23,13 +23,13 @@ object SFTPStreamConfig {
   @scala.inline
   def apply(
     debug: /* information */ String => _ = null,
-    highWaterMark: Int | Double = null,
+    highWaterMark: js.UndefOr[Double] = js.undefined,
     server: js.UndefOr[Boolean] = js.undefined
   ): SFTPStreamConfig = {
     val __obj = js.Dynamic.literal()
     if (debug != null) __obj.updateDynamic("debug")(js.Any.fromFunction1(debug))
-    if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
-    if (!js.isUndefined(server)) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
+    if (!js.isUndefined(highWaterMark)) __obj.updateDynamic("highWaterMark")(highWaterMark.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(server)) __obj.updateDynamic("server")(server.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SFTPStreamConfig]
   }
 }

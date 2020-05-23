@@ -25,30 +25,30 @@ object PartialAttemptOptions {
   def apply[T](
     beforeAttempt: (/* context */ AttemptContext, /* options */ AttemptOptions[T]) => Unit = null,
     calculateDelay: (/* context */ AttemptContext, /* options */ AttemptOptions[T]) => Double = null,
-    delay: Int | Double = null,
-    factor: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
+    factor: js.UndefOr[Double] = js.undefined,
     handleError: (/* err */ js.Any, /* context */ AttemptContext, /* options */ AttemptOptions[T]) => Unit = null,
     handleTimeout: (/* context */ AttemptContext, /* options */ AttemptOptions[T]) => js.Promise[T] = null,
-    initialDelay: Int | Double = null,
+    initialDelay: js.UndefOr[Double] = js.undefined,
     jitter: js.UndefOr[Boolean] = js.undefined,
-    maxAttempts: Int | Double = null,
-    maxDelay: Int | Double = null,
-    minDelay: Int | Double = null,
-    timeout: Int | Double = null
+    maxAttempts: js.UndefOr[Double] = js.undefined,
+    maxDelay: js.UndefOr[Double] = js.undefined,
+    minDelay: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined
   ): PartialAttemptOptions[T] = {
     val __obj = js.Dynamic.literal()
     if (beforeAttempt != null) __obj.updateDynamic("beforeAttempt")(js.Any.fromFunction2(beforeAttempt))
     if (calculateDelay != null) __obj.updateDynamic("calculateDelay")(js.Any.fromFunction2(calculateDelay))
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (factor != null) __obj.updateDynamic("factor")(factor.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(factor)) __obj.updateDynamic("factor")(factor.get.asInstanceOf[js.Any])
     if (handleError != null) __obj.updateDynamic("handleError")(js.Any.fromFunction3(handleError))
     if (handleTimeout != null) __obj.updateDynamic("handleTimeout")(js.Any.fromFunction2(handleTimeout))
-    if (initialDelay != null) __obj.updateDynamic("initialDelay")(initialDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(jitter)) __obj.updateDynamic("jitter")(jitter.asInstanceOf[js.Any])
-    if (maxAttempts != null) __obj.updateDynamic("maxAttempts")(maxAttempts.asInstanceOf[js.Any])
-    if (maxDelay != null) __obj.updateDynamic("maxDelay")(maxDelay.asInstanceOf[js.Any])
-    if (minDelay != null) __obj.updateDynamic("minDelay")(minDelay.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialDelay)) __obj.updateDynamic("initialDelay")(initialDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(jitter)) __obj.updateDynamic("jitter")(jitter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAttempts)) __obj.updateDynamic("maxAttempts")(maxAttempts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDelay)) __obj.updateDynamic("maxDelay")(maxDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minDelay)) __obj.updateDynamic("minDelay")(minDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialAttemptOptions[T]]
   }
 }

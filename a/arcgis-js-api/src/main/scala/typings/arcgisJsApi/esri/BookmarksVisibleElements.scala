@@ -31,8 +31,8 @@ object BookmarksVisibleElements {
     thumbnail: js.UndefOr[Boolean] = js.undefined
   ): BookmarksVisibleElements = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (!js.isUndefined(addBookmark)) __obj.updateDynamic("addBookmark")(addBookmark.asInstanceOf[js.Any])
-    if (!js.isUndefined(thumbnail)) __obj.updateDynamic("thumbnail")(thumbnail.asInstanceOf[js.Any])
+    if (!js.isUndefined(addBookmark)) __obj.updateDynamic("addBookmark")(addBookmark.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(thumbnail)) __obj.updateDynamic("thumbnail")(thumbnail.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BookmarksVisibleElements]
   }
 }

@@ -1,6 +1,7 @@
 package typings.reactNativeNavigation
 
 import typings.reactNative.mod.ComponentProvider
+import typings.reactNativeNavigation.anon.TypeofTouchablePreview
 import typings.reactNativeNavigation.constantsMod.NavigationConstants
 import typings.reactNativeNavigation.eventsRegistryMod.EventsRegistry
 import typings.reactNativeNavigation.layoutMod.Layout

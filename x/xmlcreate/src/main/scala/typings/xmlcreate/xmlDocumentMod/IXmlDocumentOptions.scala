@@ -16,7 +16,7 @@ object IXmlDocumentOptions {
   @scala.inline
   def apply(validation: js.UndefOr[Boolean] = js.undefined): IXmlDocumentOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(validation)) __obj.updateDynamic("validation")(validation.asInstanceOf[js.Any])
+    if (!js.isUndefined(validation)) __obj.updateDynamic("validation")(validation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IXmlDocumentOptions]
   }
 }

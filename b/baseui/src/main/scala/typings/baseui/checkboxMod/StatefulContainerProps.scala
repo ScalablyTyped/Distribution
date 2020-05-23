@@ -9,7 +9,7 @@ import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -40,10 +40,10 @@ object StatefulContainerProps {
     onMouseEnter: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
     onMouseLeave: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
     overrides: CheckboxOverrides = null,
-    stateReducer: (/* stateType */ String, /* nextState */ CheckboxState, /* currentState */ CheckboxState, /* event */ SyntheticEvent[HTMLInputElement, Event_]) => CheckboxState = null
+    stateReducer: (/* stateType */ String, /* nextState */ CheckboxState, /* currentState */ CheckboxState, /* event */ SyntheticEvent[HTMLInputElement, Event]) => CheckboxState = null
   ): StatefulContainerProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))

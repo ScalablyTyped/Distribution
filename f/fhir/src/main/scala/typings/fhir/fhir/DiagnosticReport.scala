@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A Diagnostic report - a combination of request information, atomic results, images, interpretation, as well as formatted reports
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait DiagnosticReport extends DomainResource {
   /**
     * Contains extended information for property 'conclusion'.

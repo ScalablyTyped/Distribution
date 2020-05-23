@@ -16,7 +16,7 @@ trait WorkbookUpdateData extends js.Object {
   var chartDataPointTrack: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Specifies whether or not changes have been made since the workbook was last saved.
+    * Specifies if changes have been made since the workbook was last saved.
     You can set this property to true if you want to close a modified workbook without either saving it or being prompted to save it.
     *
     * [Api set: ExcelApi 1.9]
@@ -48,10 +48,10 @@ object WorkbookUpdateData {
     usePrecisionAsDisplayed: js.UndefOr[Boolean] = js.undefined
   ): WorkbookUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(chartDataPointTrack)) __obj.updateDynamic("chartDataPointTrack")(chartDataPointTrack.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDirty)) __obj.updateDynamic("isDirty")(isDirty.asInstanceOf[js.Any])
+    if (!js.isUndefined(chartDataPointTrack)) __obj.updateDynamic("chartDataPointTrack")(chartDataPointTrack.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDirty)) __obj.updateDynamic("isDirty")(isDirty.get.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePrecisionAsDisplayed)) __obj.updateDynamic("usePrecisionAsDisplayed")(usePrecisionAsDisplayed.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePrecisionAsDisplayed)) __obj.updateDynamic("usePrecisionAsDisplayed")(usePrecisionAsDisplayed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookUpdateData]
   }
 }

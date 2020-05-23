@@ -2,8 +2,8 @@ package typings.singleSpaReact.mod
 
 import typings.react.mod.ComponentClass
 import typings.react.mod.FunctionComponent
-import typings.singleSpaReact.TypeofReact
-import typings.singleSpaReact.TypeofReactDOM
+import typings.singleSpaReact.anon.TypeofReact
+import typings.singleSpaReact.anon.TypeofReactDOM
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,9 +33,9 @@ object Options {
     val __obj = js.Dynamic.literal(React = React.asInstanceOf[js.Any], ReactDOM = ReactDOM.asInstanceOf[js.Any])
     if (domElementGetter != null) __obj.updateDynamic("domElementGetter")(js.Any.fromFunction0(domElementGetter))
     if (loadRootComponent != null) __obj.updateDynamic("loadRootComponent")(js.Any.fromFunction0(loadRootComponent))
-    if (!js.isUndefined(parcelCanUpdate)) __obj.updateDynamic("parcelCanUpdate")(parcelCanUpdate.asInstanceOf[js.Any])
+    if (!js.isUndefined(parcelCanUpdate)) __obj.updateDynamic("parcelCanUpdate")(parcelCanUpdate.get.asInstanceOf[js.Any])
     if (rootComponent != null) __obj.updateDynamic("rootComponent")(rootComponent.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressComponentDidCatchWarning)) __obj.updateDynamic("suppressComponentDidCatchWarning")(suppressComponentDidCatchWarning.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressComponentDidCatchWarning)) __obj.updateDynamic("suppressComponentDidCatchWarning")(suppressComponentDidCatchWarning.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

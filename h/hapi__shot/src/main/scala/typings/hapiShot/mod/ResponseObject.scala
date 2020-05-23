@@ -1,7 +1,7 @@
 package typings.hapiShot.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.hapiShot.AnonReq
+import typings.hapiShot.anon.Req
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ trait ResponseObject extends js.Object {
   /** the payload as a UTF-8 encoded string. */
   var payload: String
   /** an object containing the raw request and response objects where: */
-  var raw: AnonReq
+  var raw: Req
   /** the raw payload as a Buffer. */
   var rawPayload: Buffer
   /** the HTTP status code. */
@@ -29,7 +29,7 @@ object ResponseObject {
   def apply(
     headers: Headers,
     payload: String,
-    raw: AnonReq,
+    raw: Req,
     rawPayload: Buffer,
     statusCode: Double,
     statusMessage: String,

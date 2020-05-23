@@ -54,9 +54,13 @@ trait HandlerOptions extends js.Object {
 
 object HandlerOptions {
   @scala.inline
-  def apply(priority: Int | Double = null, step: Step = null, tags: StringDictionary[js.Any] = null): HandlerOptions = {
+  def apply(
+    priority: js.UndefOr[Double] = js.undefined,
+    step: Step = null,
+    tags: StringDictionary[js.Any] = null
+  ): HandlerOptions = {
     val __obj = js.Dynamic.literal()
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[HandlerOptions]

@@ -34,7 +34,7 @@ object DataPropertyOptions {
     isPartOfKey: js.UndefOr[Boolean] = js.undefined,
     isScalar: js.UndefOr[Boolean] = js.undefined,
     isUnmapped: js.UndefOr[Boolean] = js.undefined,
-    maxLength: Int | Double = null,
+    maxLength: js.UndefOr[Double] = js.undefined,
     name: String = null,
     nameOnServer: String = null,
     validators: js.Array[Validator] = null
@@ -46,11 +46,11 @@ object DataPropertyOptions {
     if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(isNullable)) __obj.updateDynamic("isNullable")(isNullable.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPartOfKey)) __obj.updateDynamic("isPartOfKey")(isPartOfKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(isScalar)) __obj.updateDynamic("isScalar")(isScalar.asInstanceOf[js.Any])
-    if (!js.isUndefined(isUnmapped)) __obj.updateDynamic("isUnmapped")(isUnmapped.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNullable)) __obj.updateDynamic("isNullable")(isNullable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPartOfKey)) __obj.updateDynamic("isPartOfKey")(isPartOfKey.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isScalar)) __obj.updateDynamic("isScalar")(isScalar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isUnmapped)) __obj.updateDynamic("isUnmapped")(isUnmapped.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (nameOnServer != null) __obj.updateDynamic("nameOnServer")(nameOnServer.asInstanceOf[js.Any])
     if (validators != null) __obj.updateDynamic("validators")(validators.asInstanceOf[js.Any])

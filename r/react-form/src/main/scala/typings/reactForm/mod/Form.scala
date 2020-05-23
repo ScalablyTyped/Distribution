@@ -2,9 +2,9 @@ package typings.reactForm.mod
 
 import typings.react.mod.ChildContextProvider
 import typings.react.mod.Component
-import typings.reactForm.AnonFormApiValidator
-import typings.reactForm.FormPropschildrenpropsFor
-import typings.reactForm.ReadonlyPartialFormProps
+import typings.reactForm.anon.FormApiValidator
+import typings.reactForm.anon.FormPropschildrenpropsFor
+import typings.reactForm.anon.ReadonlyPartialFormProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +28,7 @@ class Form ()
 @JSImport("react-form", "Form")
 @js.native
 object Form extends js.Object {
-  var childContextTypes: AnonFormApiValidator = js.native
+  var childContextTypes: FormApiValidator = js.native
   var defaultProps: FormProps = js.native
 }
 

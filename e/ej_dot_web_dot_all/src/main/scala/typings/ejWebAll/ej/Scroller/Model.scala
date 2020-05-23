@@ -90,9 +90,9 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    animationSpeed: Int | Double = null,
+    animationSpeed: js.UndefOr[Double] = js.undefined,
     autoHide: js.UndefOr[Boolean] = js.undefined,
-    buttonSize: Int | Double = null,
+    buttonSize: js.UndefOr[Double] = js.undefined,
     create: /* e */ CreateEventArgs => Unit = null,
     destroy: /* e */ DestroyEventArgs => Unit = null,
     enablePersistence: js.UndefOr[Boolean] = js.undefined,
@@ -100,10 +100,10 @@ object Model {
     enableTouchScroll: js.UndefOr[Boolean] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
     height: Double | String = null,
-    scrollLeft: Int | Double = null,
-    scrollOneStepBy: Int | Double = null,
-    scrollTop: Int | Double = null,
-    scrollerSize: Int | Double = null,
+    scrollLeft: js.UndefOr[Double] = js.undefined,
+    scrollOneStepBy: js.UndefOr[Double] = js.undefined,
+    scrollTop: js.UndefOr[Double] = js.undefined,
+    scrollerSize: js.UndefOr[Double] = js.undefined,
     targetPane: String = null,
     thumbEnd: /* e */ ThumbEndEventArgs => Unit = null,
     thumbMove: /* e */ ThumbMoveEventArgs => Unit = null,
@@ -114,20 +114,20 @@ object Model {
     width: Double | String = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (animationSpeed != null) __obj.updateDynamic("animationSpeed")(animationSpeed.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide.asInstanceOf[js.Any])
-    if (buttonSize != null) __obj.updateDynamic("buttonSize")(buttonSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationSpeed)) __obj.updateDynamic("animationSpeed")(animationSpeed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(buttonSize)) __obj.updateDynamic("buttonSize")(buttonSize.get.asInstanceOf[js.Any])
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
-    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTouchScroll)) __obj.updateDynamic("enableTouchScroll")(enableTouchScroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTouchScroll)) __obj.updateDynamic("enableTouchScroll")(enableTouchScroll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (scrollLeft != null) __obj.updateDynamic("scrollLeft")(scrollLeft.asInstanceOf[js.Any])
-    if (scrollOneStepBy != null) __obj.updateDynamic("scrollOneStepBy")(scrollOneStepBy.asInstanceOf[js.Any])
-    if (scrollTop != null) __obj.updateDynamic("scrollTop")(scrollTop.asInstanceOf[js.Any])
-    if (scrollerSize != null) __obj.updateDynamic("scrollerSize")(scrollerSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollLeft)) __obj.updateDynamic("scrollLeft")(scrollLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollOneStepBy)) __obj.updateDynamic("scrollOneStepBy")(scrollOneStepBy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollTop)) __obj.updateDynamic("scrollTop")(scrollTop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollerSize)) __obj.updateDynamic("scrollerSize")(scrollerSize.get.asInstanceOf[js.Any])
     if (targetPane != null) __obj.updateDynamic("targetPane")(targetPane.asInstanceOf[js.Any])
     if (thumbEnd != null) __obj.updateDynamic("thumbEnd")(js.Any.fromFunction1(thumbEnd))
     if (thumbMove != null) __obj.updateDynamic("thumbMove")(js.Any.fromFunction1(thumbMove))

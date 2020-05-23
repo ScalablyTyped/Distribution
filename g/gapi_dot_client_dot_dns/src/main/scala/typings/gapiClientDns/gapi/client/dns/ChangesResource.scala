@@ -1,28 +1,28 @@
 package typings.gapiClientDns.gapi.client.dns
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientDns.AnonAlt
-import typings.gapiClientDns.AnonChangeId
-import typings.gapiClientDns.AnonFields
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientDns.anon.Alt
+import typings.gapiClientDns.anon.ChangeId
+import typings.gapiClientDns.anon.Fields
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChangesResource extends js.Object {
   /** Atomically update the ResourceRecordSet collection. */
-  def create(request: AnonAlt): Request_[Change]
+  def create(request: Alt): Request[Change]
   /** Fetch the representation of an existing Change. */
-  def get(request: AnonChangeId): Request_[Change]
+  def get(request: ChangeId): Request[Change]
   /** Enumerate Changes to a ResourceRecordSet collection. */
-  def list(request: AnonFields): Request_[ChangesListResponse]
+  def list(request: Fields): Request[ChangesListResponse]
 }
 
 object ChangesResource {
   @scala.inline
   def apply(
-    create: AnonAlt => Request_[Change],
-    get: AnonChangeId => Request_[Change],
-    list: AnonFields => Request_[ChangesListResponse]
+    create: Alt => Request[Change],
+    get: ChangeId => Request[Change],
+    list: Fields => Request[ChangesListResponse]
   ): ChangesResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
     __obj.asInstanceOf[ChangesResource]

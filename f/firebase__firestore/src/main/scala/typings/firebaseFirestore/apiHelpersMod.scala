@@ -8,13 +8,13 @@ import typings.firebaseFirestore.databaseMod.DocumentSnapshot
 import typings.firebaseFirestore.databaseMod.Firestore
 import typings.firebaseFirestore.databaseMod.Query
 import typings.firebaseFirestore.databaseMod.QuerySnapshot
-import typings.firebaseFirestore.modelFieldValueMod.JsonObject
+import typings.firebaseFirestore.objectValueMod.JsonObject
 import typings.firebaseFirestoreTypes.mod.DocumentData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/test/util/api_helpers", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/test/util/api_helpers", JSImport.Namespace)
 @js.native
 object apiHelpersMod extends js.Object {
   @JSName("FIRESTORE")

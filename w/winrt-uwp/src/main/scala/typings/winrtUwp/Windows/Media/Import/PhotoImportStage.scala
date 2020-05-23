@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Import
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object PhotoImportStage extends js.Object {
   /** The photo import process has not started. */
   @js.native
   sealed trait notStarted extends PhotoImportStage
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PhotoImportStage with Double] = js.native
-  /* 3 */ @js.native
-  object deletingImportedItemsFromSource extends TopLevel[deletingImportedItemsFromSource with Double]
-  
-  /* 1 */ @js.native
-  object findingItems extends TopLevel[findingItems with Double]
-  
-  /* 2 */ @js.native
-  object importingItems extends TopLevel[importingItems with Double]
-  
-  /* 0 */ @js.native
-  object notStarted extends TopLevel[notStarted with Double]
   
 }
 

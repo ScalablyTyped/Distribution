@@ -1,6 +1,6 @@
 package typings.grommet.formFieldMod
 
-import typings.grommet.AnonMessage
+import typings.grommet.anon.Message
 import typings.grommet.utilsMod.MarginType
 import typings.grommet.utilsMod.PlaceHolderType
 import typings.react.mod.ReactNode
@@ -24,7 +24,7 @@ trait FormFieldProps extends js.Object {
   var placeholder: js.UndefOr[PlaceHolderType] = js.undefined
   var required: js.UndefOr[Boolean] = js.undefined
   var validate: js.UndefOr[
-    AnonMessage | (js.Function1[/* repeated */ js.Any, _]) | (js.Array[AnonMessage | (js.Function1[/* repeated */ _, _])])
+    Message | (js.Function1[/* repeated */ js.Any, _]) | (js.Array[Message | (js.Function1[/* repeated */ _, _])])
   ] = js.undefined
 }
 
@@ -44,11 +44,11 @@ object FormFieldProps {
     pad: js.UndefOr[Boolean] = js.undefined,
     placeholder: PlaceHolderType = null,
     required: js.UndefOr[Boolean] = js.undefined,
-    validate: AnonMessage | (js.Function1[/* repeated */ js.Any, _]) | (js.Array[AnonMessage | (js.Function1[/* repeated */ _, _])]) = null
+    validate: Message | (js.Function1[/* repeated */ js.Any, _]) | (js.Array[Message | (js.Function1[/* repeated */ _, _])]) = null
   ): FormFieldProps = {
     val __obj = js.Dynamic.literal()
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (help != null) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
     if (htmlFor != null) __obj.updateDynamic("htmlFor")(htmlFor.asInstanceOf[js.Any])
@@ -57,9 +57,9 @@ object FormFieldProps {
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (!js.isUndefined(pad)) __obj.updateDynamic("pad")(pad.asInstanceOf[js.Any])
+    if (!js.isUndefined(pad)) __obj.updateDynamic("pad")(pad.get.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormFieldProps]
   }

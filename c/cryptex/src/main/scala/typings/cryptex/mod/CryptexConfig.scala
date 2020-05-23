@@ -1,6 +1,6 @@
 package typings.cryptex.mod
 
-import typings.cryptex.AnonDataKey
+import typings.cryptex.anon.DataKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait CryptexConfig extends js.Object {
   var algorithm: js.UndefOr[String] = js.undefined
   var keySource: String
-  var keySourceOpts: js.UndefOr[AnonDataKey] = js.undefined
+  var keySourceOpts: js.UndefOr[DataKey] = js.undefined
   var secretEncoding: js.UndefOr[String] = js.undefined
   var secrets: js.Object
 }
@@ -19,7 +19,7 @@ object CryptexConfig {
     keySource: String,
     secrets: js.Object,
     algorithm: String = null,
-    keySourceOpts: AnonDataKey = null,
+    keySourceOpts: DataKey = null,
     secretEncoding: String = null
   ): CryptexConfig = {
     val __obj = js.Dynamic.literal(keySource = keySource.asInstanceOf[js.Any], secrets = secrets.asInstanceOf[js.Any])

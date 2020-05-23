@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait OpenFinPlatform extends js.Object {
+  var Layout: typings.openfin.mod.fin.Layout = js.native
   var identity: Identity = js.native
   def applySnapshot(requestedSnapshot: String): js.Promise[Platform] = js.native
   def applySnapshot(requestedSnapshot: String, options: ApplySnapshotOptions): js.Promise[Platform] = js.native
@@ -20,7 +21,6 @@ trait OpenFinPlatform extends js.Object {
     * @param { ApplySnapshotOptions } [options] Optional parameters to specify whether existing windows should be closed.
     * @return { Promise<Platform> }
     * @tutorial Platform.applySnapshot
-    * @experimental
     */
   def applySnapshot(requestedSnapshot: Snapshot): js.Promise[Platform] = js.native
   def applySnapshot(requestedSnapshot: Snapshot, options: ApplySnapshotOptions): js.Promise[Platform] = js.native
@@ -29,27 +29,24 @@ trait OpenFinPlatform extends js.Object {
     * @param { Identity } viewIdentity View identity
     * @return { Promise<void> }
     * @tutorial Platform.closeView
-    * @experimental
     */
   def closeView(viewIdentity: Identity): js.Promise[Unit] = js.native
   /**
     * Creates a new view and attaches it to a specified target window.
     * @param { View~options } viewOptions View creation options
     * @param { Identity } [target] The window to which the new view is to be attached. If no target, create a view in a new window.
-    * @return { Promise<Identity> }
+    * @return { Promise<View> }
     * @tutorial Platform.createView
-    * @experimental
     */
-  def createView(viewOptions: ViewCreationOptions): js.Promise[Identity] = js.native
-  def createView(viewOptions: ViewCreationOptions, target: Identity): js.Promise[Identity] = js.native
+  def createView(viewOptions: ViewCreationOptions): js.Promise[View] = js.native
+  def createView(viewOptions: ViewCreationOptions, target: Identity): js.Promise[View] = js.native
   /**
     * Creates a new Window.
     * @param { Window~options } options Window creation options
-    * @return { Promise<Identity> }
+    * @return { Promise<_Window> }
     * @tutorial Platform.createWindow
-    * @experimental
     */
-  def createWindow(options: WindowOption): js.Promise[Identity] = js.native
+  def createWindow(options: WindowOption): js.Promise[_Window with Identity] = js.native
   /**
     * Get the context of your current window or view environment that was previously set using {@link Platform#setContext setContext}.
     * The context will be saved in any platform snapshots.  Returns a promise that resolves to the context.
@@ -63,8 +60,7 @@ trait OpenFinPlatform extends js.Object {
     *
     * Can be used to restore an application to a previous state.
     * @return { Promise<Snapshot> }
-    * @tutorial Platform.applySnapshot
-    * @experimental
+    * @tutorial Platform.getSnapshot
     */
   def getSnapshot(): js.Promise[Snapshot] = js.native
   /**
@@ -84,29 +80,27 @@ trait OpenFinPlatform extends js.Object {
     * has wrapped it's current platform. The listener receives the new context as its first argument and the previously context as the
     * second argument.  If the listener returns a truthy value, the View's context will be updated with the new context as if
     * {@link Platform#setContext setContext} was called.  This can only be set once per javascript environment (once per View), and any
-    * subsequent calls to onWindowContextUpdate will error out.  If the listener is successfully set, returns a promise that resolves to
+    * subsequent calls to onWindowContextUpdated will error out.  If the listener is successfully set, returns a promise that resolves to
     * true.
     * @return {Promise.<boolean>}
-    * @tutorial Platform.onWindowContextUpdate
+    * @tutorial Platform.onWindowContextUpdated
     * @experimental
     */
-  def onWindowContextUpdate(listener: js.Function2[/* newContext */ js.Any, /* oldContext */ js.UndefOr[js.Any], _]): js.Promise[Boolean] = js.native
+  def onWindowContextUpdated(listener: js.Function2[/* newContext */ js.Any, /* oldContext */ js.UndefOr[js.Any], _]): js.Promise[Boolean] = js.native
   /**
     * Closes current platform, all its windows, and their views.
     * @return { Promise<void> }
     * @tutorial Platform.quit
-    * @experimental
     */
   def quit(): js.Promise[Unit] = js.native
   /**
     * Reparents a specified view in a new target window.
     * @param { Identity } viewIdentity View identity
     * @param { Identity } target new owner window identity
-    * @return { Promise<Identity> }
+    * @return { Promise<View> }
     * @tutorial Platform.reparentView
-    * @experimental
     */
-  def reparentView(viewIdentity: Identity, target: Identity): js.Promise[Identity] = js.native
+  def reparentView(viewIdentity: Identity, target: Identity): js.Promise[View] = js.native
   /**
     * Set the context of your current window or view environment.  The context will be saved in any platform snapshots.
     * @param {any} context - A field where serializable context data can be stored to be saved in platform snapshots.
@@ -114,6 +108,7 @@ trait OpenFinPlatform extends js.Object {
     * @tutorial Platform.setContext
     * @experimental
     */
+  def setContext(): js.Promise[Unit] = js.native
   def setContext(context: js.Any): js.Promise[Unit] = js.native
 }
 

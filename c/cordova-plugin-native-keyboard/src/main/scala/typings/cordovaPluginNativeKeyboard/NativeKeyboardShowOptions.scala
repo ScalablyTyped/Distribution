@@ -149,7 +149,7 @@ object NativeKeyboardShowOptions {
     counterStyle: String = null,
     keepOpenAfterSubmit: js.UndefOr[Boolean] = js.undefined,
     leftButton: LeftButtonOptions = null,
-    maxChars: Int | Double = null,
+    maxChars: js.UndefOr[Double] = js.undefined,
     onKeyboardDidHide: () => Unit = null,
     onKeyboardDidShow: () => Unit = null,
     onKeyboardWillHide: () => Unit = null,
@@ -168,14 +168,14 @@ object NativeKeyboardShowOptions {
     `type`: String = null
   ): NativeKeyboardShowOptions = {
     val __obj = js.Dynamic.literal(onSubmit = js.Any.fromFunction1(onSubmit))
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
     if (appearance != null) __obj.updateDynamic("appearance")(appearance.asInstanceOf[js.Any])
     if (autoscrollElement != null) __obj.updateDynamic("autoscrollElement")(autoscrollElement.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (counterStyle != null) __obj.updateDynamic("counterStyle")(counterStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepOpenAfterSubmit)) __obj.updateDynamic("keepOpenAfterSubmit")(keepOpenAfterSubmit.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepOpenAfterSubmit)) __obj.updateDynamic("keepOpenAfterSubmit")(keepOpenAfterSubmit.get.asInstanceOf[js.Any])
     if (leftButton != null) __obj.updateDynamic("leftButton")(leftButton.asInstanceOf[js.Any])
-    if (maxChars != null) __obj.updateDynamic("maxChars")(maxChars.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxChars)) __obj.updateDynamic("maxChars")(maxChars.get.asInstanceOf[js.Any])
     if (onKeyboardDidHide != null) __obj.updateDynamic("onKeyboardDidHide")(js.Any.fromFunction0(onKeyboardDidHide))
     if (onKeyboardDidShow != null) __obj.updateDynamic("onKeyboardDidShow")(js.Any.fromFunction0(onKeyboardDidShow))
     if (onKeyboardWillHide != null) __obj.updateDynamic("onKeyboardWillHide")(js.Any.fromFunction0(onKeyboardWillHide))
@@ -184,9 +184,9 @@ object NativeKeyboardShowOptions {
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (placeholderColor != null) __obj.updateDynamic("placeholderColor")(placeholderColor.asInstanceOf[js.Any])
     if (rightButton != null) __obj.updateDynamic("rightButton")(rightButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollToBottomAfterMessengerShows)) __obj.updateDynamic("scrollToBottomAfterMessengerShows")(scrollToBottomAfterMessengerShows.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
-    if (!js.isUndefined(showKeyboard)) __obj.updateDynamic("showKeyboard")(showKeyboard.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollToBottomAfterMessengerShows)) __obj.updateDynamic("scrollToBottomAfterMessengerShows")(scrollToBottomAfterMessengerShows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showKeyboard)) __obj.updateDynamic("showKeyboard")(showKeyboard.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
     if (textViewBackgroundColor != null) __obj.updateDynamic("textViewBackgroundColor")(textViewBackgroundColor.asInstanceOf[js.Any])

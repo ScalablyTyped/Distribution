@@ -15,17 +15,17 @@ object InventoryLevel {
   @scala.inline
   def apply(
     admin_graphql_api_id: String = null,
-    available: Int | Double = null,
-    id: Int | Double = null,
-    inventory_item_id: Int | Double = null,
-    location_id: Int | Double = null
+    available: js.UndefOr[Double] = js.undefined,
+    id: js.UndefOr[Double] = js.undefined,
+    inventory_item_id: js.UndefOr[Double] = js.undefined,
+    location_id: js.UndefOr[Double] = js.undefined
   ): InventoryLevel = {
     val __obj = js.Dynamic.literal()
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
-    if (available != null) __obj.updateDynamic("available")(available.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inventory_item_id != null) __obj.updateDynamic("inventory_item_id")(inventory_item_id.asInstanceOf[js.Any])
-    if (location_id != null) __obj.updateDynamic("location_id")(location_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(available)) __obj.updateDynamic("available")(available.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inventory_item_id)) __obj.updateDynamic("inventory_item_id")(inventory_item_id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(location_id)) __obj.updateDynamic("location_id")(location_id.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InventoryLevel]
   }
 }

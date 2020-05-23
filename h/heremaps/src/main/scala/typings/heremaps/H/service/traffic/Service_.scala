@@ -4,7 +4,6 @@ import typings.heremaps.H.service.AbstractRestService
 import typings.heremaps.H.service.JsonpRequestHandle
 import typings.heremaps.H.service.ServiceParameters
 import typings.heremaps.H.service.ServiceResult
-import typings.heremaps.H.service.traffic.Service.Options
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,14 +13,8 @@ import scala.scalajs.js.annotation._
   * TrafficIncindentsService provides functionality to the low level traffic incidents api Traffic API documentation where it is possible to retrieve traffic incident information on a
   * tile basis
   */
-@JSGlobal("H.service.traffic.Service")
 @js.native
-/**
-  * Constructor
-  * @param opt_options {H.service.Service.Options=}
-  */
-class Service_ () extends AbstractRestService {
-  def this(opt_options: Options) = this()
+trait Service_ extends AbstractRestService {
   /**
     * This method requests traffic incidents based on the service parameters provided.
     * @param serviceParams {H.service.ServiceParameters}

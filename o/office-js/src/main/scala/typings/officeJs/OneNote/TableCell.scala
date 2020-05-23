@@ -1,11 +1,11 @@
 package typings.officeJs.OneNote
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
 import typings.officeJs.OneNote.Interfaces.TableCellData
 import typings.officeJs.OneNote.Interfaces.TableCellLoadOptions
 import typings.officeJs.OneNote.Interfaces.TableCellUpdateData
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +16,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: OneNoteApi 1.1]
   */
-@JSGlobal("OneNote.TableCell")
 @js.native
-class TableCell () extends ClientObject {
+trait TableCell extends ClientObject {
   /**
     *
     * Gets the index of the cell in its row. Read-only.
@@ -130,8 +129,8 @@ class TableCell () extends ClientObject {
   def load(): TableCell = js.native
   def load(option: String): TableCell = js.native
   def load(option: js.Array[String]): TableCell = js.native
-  def load(option: AnonExpand): TableCell = js.native
   def load(option: TableCellLoadOptions): TableCell = js.native
+  def load(option: Expand): TableCell = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *
     * @remarks

@@ -1,9 +1,10 @@
 package typings.formik
 
+import typings.formik.anon.Dirty
 import typings.formik.typesMod.FormikConfig
 import typings.formik.typesMod.FormikErrors
 import typings.formik.typesMod.FormikValues
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +17,7 @@ object formikMod extends js.Object {
   def prepareDataForValidation[T /* <: FormikValues */](values: T): FormikValues = js.native
   def useFormik[Values /* <: FormikValues */](
     hasValidateOnChangeValidateOnBlurValidateOnMountIsInitialValidEnableReinitializeOnSubmitRest: FormikConfig[Values]
-  ): AnonDirty[Values] = js.native
+  ): Dirty[Values] = js.native
   def validateYupSchema[T /* <: FormikValues */](values: T, schema: js.Any): js.Promise[Partial[T]] = js.native
   def validateYupSchema[T /* <: FormikValues */](values: T, schema: js.Any, sync: Boolean): js.Promise[Partial[T]] = js.native
   def validateYupSchema[T /* <: FormikValues */](values: T, schema: js.Any, sync: Boolean, context: js.Any): js.Promise[Partial[T]] = js.native

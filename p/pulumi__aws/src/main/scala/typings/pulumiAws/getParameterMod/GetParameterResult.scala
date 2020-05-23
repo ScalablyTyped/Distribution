@@ -31,7 +31,7 @@ object GetParameterResult {
   ): GetParameterResult = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(withDecryption)) __obj.updateDynamic("withDecryption")(withDecryption.asInstanceOf[js.Any])
+    if (!js.isUndefined(withDecryption)) __obj.updateDynamic("withDecryption")(withDecryption.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetParameterResult]
   }
 }

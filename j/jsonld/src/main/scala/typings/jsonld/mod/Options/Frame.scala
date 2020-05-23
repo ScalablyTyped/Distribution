@@ -25,9 +25,9 @@ object Frame {
   ): Frame = {
     val __obj = js.Dynamic.literal()
     if (embed != null) __obj.updateDynamic("embed")(embed.asInstanceOf[js.Any])
-    if (!js.isUndefined(explicit)) __obj.updateDynamic("explicit")(explicit.asInstanceOf[js.Any])
-    if (!js.isUndefined(omitDefault)) __obj.updateDynamic("omitDefault")(omitDefault.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireAll)) __obj.updateDynamic("requireAll")(requireAll.asInstanceOf[js.Any])
+    if (!js.isUndefined(explicit)) __obj.updateDynamic("explicit")(explicit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(omitDefault)) __obj.updateDynamic("omitDefault")(omitDefault.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireAll)) __obj.updateDynamic("requireAll")(requireAll.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Frame]
   }
 }

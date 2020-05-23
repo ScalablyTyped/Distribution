@@ -17,9 +17,8 @@ import scala.scalajs.js.annotation._
   * @class
   * @memberof PIXI.interaction
   */
-@JSGlobal("PIXI.interaction.InteractionData")
 @js.native
-class InteractionData () extends js.Object {
+trait InteractionData extends js.Object {
   /**
     * Indicates which button was pressed on the mouse or pointer device to trigger the event.
     * @see https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/button

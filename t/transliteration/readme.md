@@ -1,7 +1,7 @@
 
 # Scala.js typings for transliteration
 
-Typings are for version 2.1.8
+Typings are for version 2.1.11
 
 ## Library description:
 Unicode to ACSII transliteration / slugify module for node.js, browser, Web Worker, ReactNative and CLI.

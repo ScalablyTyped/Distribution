@@ -12,9 +12,9 @@ trait IDeleteIntentRequest extends js.Object {
 
 object IDeleteIntentRequest {
   @scala.inline
-  def apply(name: String = null): IDeleteIntentRequest = {
+  def apply(name: js.UndefOr[Null | String] = js.undefined): IDeleteIntentRequest = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDeleteIntentRequest]
   }
 }

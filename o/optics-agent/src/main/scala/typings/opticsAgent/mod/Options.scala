@@ -61,7 +61,7 @@ object Options {
     normalizeQuery: /* graphQLResolveInfo */ js.Any => String = null,
     printReports: js.UndefOr[Boolean] = js.undefined,
     proxyUrl: String = null,
-    reportIntervalMs: Int | Double = null,
+    reportIntervalMs: js.UndefOr[Double] = js.undefined,
     reportTraces: js.UndefOr[Boolean] = js.undefined,
     reportVariables: js.UndefOr[Boolean] = js.undefined,
     shutdownGracefully: js.UndefOr[Boolean] = js.undefined
@@ -70,12 +70,12 @@ object Options {
     if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey.asInstanceOf[js.Any])
     if (endpointUrl != null) __obj.updateDynamic("endpointUrl")(endpointUrl.asInstanceOf[js.Any])
     if (normalizeQuery != null) __obj.updateDynamic("normalizeQuery")(js.Any.fromFunction1(normalizeQuery))
-    if (!js.isUndefined(printReports)) __obj.updateDynamic("printReports")(printReports.asInstanceOf[js.Any])
+    if (!js.isUndefined(printReports)) __obj.updateDynamic("printReports")(printReports.get.asInstanceOf[js.Any])
     if (proxyUrl != null) __obj.updateDynamic("proxyUrl")(proxyUrl.asInstanceOf[js.Any])
-    if (reportIntervalMs != null) __obj.updateDynamic("reportIntervalMs")(reportIntervalMs.asInstanceOf[js.Any])
-    if (!js.isUndefined(reportTraces)) __obj.updateDynamic("reportTraces")(reportTraces.asInstanceOf[js.Any])
-    if (!js.isUndefined(reportVariables)) __obj.updateDynamic("reportVariables")(reportVariables.asInstanceOf[js.Any])
-    if (!js.isUndefined(shutdownGracefully)) __obj.updateDynamic("shutdownGracefully")(shutdownGracefully.asInstanceOf[js.Any])
+    if (!js.isUndefined(reportIntervalMs)) __obj.updateDynamic("reportIntervalMs")(reportIntervalMs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reportTraces)) __obj.updateDynamic("reportTraces")(reportTraces.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reportVariables)) __obj.updateDynamic("reportVariables")(reportVariables.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shutdownGracefully)) __obj.updateDynamic("shutdownGracefully")(shutdownGracefully.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

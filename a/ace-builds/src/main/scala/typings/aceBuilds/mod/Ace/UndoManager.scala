@@ -1,6 +1,6 @@
 package typings.aceBuilds.mod.Ace
 
-import typings.aceBuilds.AnonRev
+import typings.aceBuilds.anon.Rev
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,8 +18,8 @@ trait UndoManager extends js.Object {
   def getDeltas(from: Double): js.Array[Delta] = js.native
   def getDeltas(from: Double, to: Double): js.Array[Delta] = js.native
   def getRevision(): Double = js.native
-  def getSelection(rev: Double): AnonRev = js.native
-  def getSelection(rev: Double, after: Boolean): AnonRev = js.native
+  def getSelection(rev: Double): Rev = js.native
+  def getSelection(rev: Double, after: Boolean): Rev = js.native
   def isAtBookmark(): Boolean = js.native
   def markIgnored(from: Double): Unit = js.native
   def markIgnored(from: Double, to: Double): Unit = js.native

@@ -1,6 +1,6 @@
 package typings.exceljs.mod
 
-import typings.exceljs.AnonLeft
+import typings.exceljs.anon.Left
 import typings.exceljs.exceljsStrings.gradient
 import typings.exceljs.exceljsStrings.path
 import scala.scalajs.js
@@ -12,7 +12,7 @@ trait FillGradientPath extends Fill {
   	 * For 'path' gradient. Specifies the relative coordinates for the start of the path.
   	 * 'left' and 'top' values range from 0 to 1
   	 */
-  var center: AnonLeft
+  var center: Left
   var gradient: path
   /**
   	 * Specifies the gradient colour sequence. Is an array of objects containing position and
@@ -25,7 +25,7 @@ trait FillGradientPath extends Fill {
 
 object FillGradientPath {
   @scala.inline
-  def apply(center: AnonLeft, gradient: path, stops: js.Array[GradientStop], `type`: gradient): FillGradientPath = {
+  def apply(center: Left, gradient: path, stops: js.Array[GradientStop], `type`: gradient): FillGradientPath = {
     val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], gradient = gradient.asInstanceOf[js.Any], stops = stops.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FillGradientPath]

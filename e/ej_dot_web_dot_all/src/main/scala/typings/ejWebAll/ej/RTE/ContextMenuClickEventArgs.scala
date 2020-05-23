@@ -18,10 +18,10 @@ trait ContextMenuClickEventArgs extends js.Object {
 
 object ContextMenuClickEventArgs {
   @scala.inline
-  def apply(element: js.Any = null, selectedItem: Int | Double = null, text: String = null): ContextMenuClickEventArgs = {
+  def apply(element: js.Any = null, selectedItem: js.UndefOr[Double] = js.undefined, text: String = null): ContextMenuClickEventArgs = {
     val __obj = js.Dynamic.literal()
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (selectedItem != null) __obj.updateDynamic("selectedItem")(selectedItem.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedItem)) __obj.updateDynamic("selectedItem")(selectedItem.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextMenuClickEventArgs]
   }

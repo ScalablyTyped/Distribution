@@ -1,6 +1,6 @@
 package typings.vec2.mod
 
-import typings.vec2.AnonX
+import typings.vec2.anon.X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -167,7 +167,7 @@ trait Vec2 extends js.Object {
     * _returns_: `[x, y]`
     */
   def toArray(): js.Array[Double] = js.native
-  def toJSON(): AnonX = js.native
+  def toJSON(): X = js.native
   /**
     * Sets the `x` and `y` of this vector to `0`
     */

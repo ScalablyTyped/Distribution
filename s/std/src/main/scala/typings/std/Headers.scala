@@ -1,7 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,10 +34,4 @@ trait Headers extends js.Object {
     */
   def values(): IterableIterator[java.lang.String] = js.native
 }
-
-@JSGlobal("Headers")
-@js.native
-object Headers
-  extends Instantiable0[Headers]
-     with Instantiable1[/* init */ HeadersInit, Headers]
 

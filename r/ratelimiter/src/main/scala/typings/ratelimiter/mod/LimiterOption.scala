@@ -26,10 +26,15 @@ trait LimiterOption extends js.Object {
 
 object LimiterOption {
   @scala.inline
-  def apply(db: RedisClient, id: String, duration: Int | Double = null, max: Int | Double = null): LimiterOption = {
+  def apply(
+    db: RedisClient,
+    id: String,
+    duration: js.UndefOr[Double] = js.undefined,
+    max: js.UndefOr[Double] = js.undefined
+  ): LimiterOption = {
     val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LimiterOption]
   }
 }

@@ -22,11 +22,15 @@ trait NoiseReducerTemporalFilterSettings extends js.Object {
 
 object NoiseReducerTemporalFilterSettings {
   @scala.inline
-  def apply(AggressiveMode: Int | Double = null, Speed: Int | Double = null, Strength: Int | Double = null): NoiseReducerTemporalFilterSettings = {
+  def apply(
+    AggressiveMode: js.UndefOr[integerMin0Max4] = js.undefined,
+    Speed: js.UndefOr[integerMinNegative1Max3] = js.undefined,
+    Strength: js.UndefOr[integerMin0Max16] = js.undefined
+  ): NoiseReducerTemporalFilterSettings = {
     val __obj = js.Dynamic.literal()
-    if (AggressiveMode != null) __obj.updateDynamic("AggressiveMode")(AggressiveMode.asInstanceOf[js.Any])
-    if (Speed != null) __obj.updateDynamic("Speed")(Speed.asInstanceOf[js.Any])
-    if (Strength != null) __obj.updateDynamic("Strength")(Strength.asInstanceOf[js.Any])
+    if (!js.isUndefined(AggressiveMode)) __obj.updateDynamic("AggressiveMode")(AggressiveMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Speed)) __obj.updateDynamic("Speed")(Speed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Strength)) __obj.updateDynamic("Strength")(Strength.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoiseReducerTemporalFilterSettings]
   }
 }

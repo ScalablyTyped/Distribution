@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rmc-pull-to-refresh" : "1.0.11"
+      "rmc-pull-to-refresh" : "1.0.12"
     }
   ],
   "test-dependencies" : [
     {
-      "rmc-pull-to-refresh" : "1.0.11"
+      "rmc-pull-to-refresh" : "1.0.12"
     }
   ],
   "compile-devDependencies" : [

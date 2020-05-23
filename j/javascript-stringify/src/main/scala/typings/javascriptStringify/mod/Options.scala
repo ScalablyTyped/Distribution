@@ -14,16 +14,16 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    maxDepth: Int | Double = null,
-    maxValues: Int | Double = null,
+    maxDepth: js.UndefOr[Double] = js.undefined,
+    maxValues: js.UndefOr[Double] = js.undefined,
     references: js.UndefOr[Boolean] = js.undefined,
     skipUndefinedProperties: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (maxDepth != null) __obj.updateDynamic("maxDepth")(maxDepth.asInstanceOf[js.Any])
-    if (maxValues != null) __obj.updateDynamic("maxValues")(maxValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(references)) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipUndefinedProperties)) __obj.updateDynamic("skipUndefinedProperties")(skipUndefinedProperties.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDepth)) __obj.updateDynamic("maxDepth")(maxDepth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxValues)) __obj.updateDynamic("maxValues")(maxValues.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(references)) __obj.updateDynamic("references")(references.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipUndefinedProperties)) __obj.updateDynamic("skipUndefinedProperties")(skipUndefinedProperties.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

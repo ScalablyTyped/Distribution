@@ -19,8 +19,10 @@ trait TSTypeAliasDeclaration
 @JSImport("babel-types", "TSTypeAliasDeclaration")
 @js.native
 object TSTypeAliasDeclaration extends js.Object {
-  def apply(id: Identifier_, typeParameters: js.UndefOr[scala.Nothing], typeAnnotation: TSType): TSTypeAliasDeclaration = js.native
-  def apply(id: Identifier_, typeParameters: Null, typeAnnotation: TSType): TSTypeAliasDeclaration = js.native
-  def apply(id: Identifier_, typeParameters: TypeParameterDeclaration_, typeAnnotation: TSType): TSTypeAliasDeclaration = js.native
+  def apply(
+    id: Identifier_,
+    typeParameters: js.UndefOr[Null | TypeParameterDeclaration_],
+    typeAnnotation: TSType
+  ): TSTypeAliasDeclaration = js.native
 }
 

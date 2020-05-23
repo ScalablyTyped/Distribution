@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	*	Chat room
-	*/
+  *    Chat room
+  */
 trait ChatRoom extends js.Object {
   /**
-  		* Chat room id
-  		*/
+    * Chat room id
+    */
   var id: String
   /**
-  		* Chat room password
-  		*/
+    * Chat room password
+    */
   var pass: String
 }
 

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.WebUI
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object PrintContent extends js.Object {
   /** Print a custom page range. */
   @js.native
   sealed trait customPageRange extends PrintContent
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PrintContent with Double] = js.native
-  /* 0 */ @js.native
-  object allPages extends TopLevel[allPages with Double]
-  
-  /* 1 */ @js.native
-  object currentPage extends TopLevel[currentPage with Double]
-  
-  /* 3 */ @js.native
-  object currentSelection extends TopLevel[currentSelection with Double]
-  
-  /* 2 */ @js.native
-  object customPageRange extends TopLevel[customPageRange with Double]
   
 }
 

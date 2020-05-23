@@ -1,7 +1,7 @@
 package typings.popmotionPose
 
+import typings.popmotion.actionTypesMod.ColdSubscription
 import typings.popmotion.mod.Action_
-import typings.popmotion.typesMod.ColdSubscription
 import typings.popmotionPose.libTypesMod.Pose
 import typings.popmotionPose.libTypesMod.PoserState
 import typings.popmotionPose.typesMod.DomPopmotionPoser
@@ -15,16 +15,20 @@ import scala.scalajs.js.annotation._
 @js.native
 object flipMod extends js.Object {
   @js.native
-  class Action ()
-    extends typings.popmotion.actionMod.Action
+  class Action[Sub /* <: ColdSubscription */] ()
+    extends typings.popmotion.actionMod.Action[Sub]
   
   def flipPose(
-    props: PoserState[Value, Action_, ColdSubscription, DomPopmotionPoser],
-    nextPose: Pose[Action_, TransitionDefinition]
-  ): Pose[Action_, TransitionDefinition] = js.native
-  def isFlipPose(flip: Boolean, key: String, state: PoserState[Value, Action_, ColdSubscription, DomPopmotionPoser]): Boolean = js.native
+    props: PoserState[Value, Action_[ColdSubscription], ColdSubscription, DomPopmotionPoser],
+    nextPose: Pose[Action_[ColdSubscription], TransitionDefinition]
+  ): Pose[Action_[ColdSubscription], TransitionDefinition] = js.native
+  def isFlipPose(
+    flip: Boolean,
+    key: String,
+    state: PoserState[Value, Action_[ColdSubscription], ColdSubscription, DomPopmotionPoser]
+  ): Boolean = js.native
   def setValue(
-    hasValuesProps: PoserState[Value, Action_, ColdSubscription, DomPopmotionPoser],
+    hasValuesProps: PoserState[Value, Action_[ColdSubscription], ColdSubscription, DomPopmotionPoser],
     key: String,
     to: js.Any
   ): Unit = js.native

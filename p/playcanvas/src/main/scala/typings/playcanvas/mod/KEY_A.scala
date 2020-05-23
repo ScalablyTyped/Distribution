@@ -5,11 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * @constant
-  * @type {number}
-  * @name pc.KEY_A
-  */
 @JSImport("playcanvas", "KEY_A")
 @js.native
 object KEY_A extends TopLevel[Double]

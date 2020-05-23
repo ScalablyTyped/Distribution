@@ -13,8 +13,7 @@ trait KeyResult extends js.Object {
 object KeyResult {
   @scala.inline
   def apply(keys: js.Array[Key], err: js.Array[Error] = null): KeyResult = {
-    val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any])
-    if (err != null) __obj.updateDynamic("err")(err.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any], err = err.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyResult]
   }
 }

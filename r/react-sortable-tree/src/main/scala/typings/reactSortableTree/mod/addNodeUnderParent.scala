@@ -1,6 +1,6 @@
 package typings.reactSortableTree.mod
 
-import typings.reactSortableTree.FullTreenewNodeTreeItempa
+import typings.reactSortableTree.anon.FullTreenewNodeTreeItempa
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -55,30 +55,30 @@ trait globals extends js.Object {
 object globals {
   @scala.inline
   def apply(
-    alpha: Int | Double = null,
+    alpha: js.UndefOr[Double] = js.undefined,
     `border-color`: String = null,
-    `border-radius`: Int | Double = null,
-    `border-width`: Int | Double = null,
+    `border-radius`: js.UndefOr[Double] = js.undefined,
+    `border-width`: js.UndefOr[Double] = js.undefined,
     `font-color`: String = null,
     `font-family`: String = null,
-    `font-size`: Int | Double = null,
+    `font-size`: js.UndefOr[Double] = js.undefined,
     `font-weight`: String = null,
     `line-color`: String = null,
     `line-style`: String = null,
-    `line-width`: Int | Double = null
+    `line-width`: js.UndefOr[Double] = js.undefined
   ): globals = {
     val __obj = js.Dynamic.literal()
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
     if (`border-color` != null) __obj.updateDynamic("border-color")(`border-color`.asInstanceOf[js.Any])
-    if (`border-radius` != null) __obj.updateDynamic("border-radius")(`border-radius`.asInstanceOf[js.Any])
-    if (`border-width` != null) __obj.updateDynamic("border-width")(`border-width`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`border-radius`)) __obj.updateDynamic("border-radius")(`border-radius`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`border-width`)) __obj.updateDynamic("border-width")(`border-width`.get.asInstanceOf[js.Any])
     if (`font-color` != null) __obj.updateDynamic("font-color")(`font-color`.asInstanceOf[js.Any])
     if (`font-family` != null) __obj.updateDynamic("font-family")(`font-family`.asInstanceOf[js.Any])
-    if (`font-size` != null) __obj.updateDynamic("font-size")(`font-size`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`font-size`)) __obj.updateDynamic("font-size")(`font-size`.get.asInstanceOf[js.Any])
     if (`font-weight` != null) __obj.updateDynamic("font-weight")(`font-weight`.asInstanceOf[js.Any])
     if (`line-color` != null) __obj.updateDynamic("line-color")(`line-color`.asInstanceOf[js.Any])
     if (`line-style` != null) __obj.updateDynamic("line-style")(`line-style`.asInstanceOf[js.Any])
-    if (`line-width` != null) __obj.updateDynamic("line-width")(`line-width`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`line-width`)) __obj.updateDynamic("line-width")(`line-width`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[globals]
   }
 }

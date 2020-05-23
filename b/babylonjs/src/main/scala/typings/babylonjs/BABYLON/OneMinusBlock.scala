@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.OneMinusBlock")
 @js.native
-class OneMinusBlock protected () extends NodeMaterialBlock {
-  /**
-    * Creates a new OneMinusBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait OneMinusBlock extends NodeMaterialBlock {
   /**
     * Gets the input component
     */

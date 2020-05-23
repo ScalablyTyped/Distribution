@@ -7,8 +7,8 @@ import typings.flatpickr.flatpickrStrings.multiple
 import typings.flatpickr.flatpickrStrings.range
 import typings.flatpickr.flatpickrStrings.single
 import typings.flatpickr.flatpickrStrings.time
-import typings.flatpickr.globalsMod._Global_.Date
-import typings.flatpickr.globalsMod._Global_.HTMLElement
+import typings.flatpickr.globalsMod.global.Date
+import typings.flatpickr.globalsMod.global.HTMLElement
 import typings.flatpickr.localeMod.CustomLocale
 import typings.flatpickr.localeMod.Locale
 import typings.flatpickr.localeMod.key

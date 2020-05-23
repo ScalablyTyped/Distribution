@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait HttpRetryPolicy extends js.Object {
   /**
-    * Specify at least one of the following values.
+    * Specify at least one of the following values. 
     
     
     

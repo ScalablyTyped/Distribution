@@ -7,34 +7,41 @@ import scala.scalajs.js.annotation._
 /**
   * Contains settings related to the ASPxClientCommandConsts.INSERTLINK_COMMAND command parameter.
   */
-@JSGlobal("ASPxClientHtmlEditorInsertLinkCommandArguments")
-@js.native
-class ASPxClientHtmlEditorInsertLinkCommandArguments protected () extends ASPxClientHtmlEditorCommandArguments {
-  /**
-    * Initializes a new instance of the ASPxClientHtmlEditorInsertLinkCommandArguments class.
-    * @param htmlEditor An HTML editor in which you want to insert an element.
-    * @param selectedElement An object containing the currently selected element in the HTML editor. This element will be replaced with the inserted link.
-    */
-  def this(htmlEditor: ASPxClientHtmlEditor, selectedElement: js.Any) = this()
+trait ASPxClientHtmlEditorInsertLinkCommandArguments extends ASPxClientHtmlEditorCommandArguments {
   /**
     * Contains the style settings defining the appearance of the target link element.
     */
-  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings = js.native
+  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings
   /**
     * Determines where to open the target link.
     */
-  var target: String = js.native
+  var target: String
   /**
     * Specifiies the text of the target link.
     */
-  var text: String = js.native
+  var text: String
   /**
     * Defines the title of the target link.
     */
-  var title: String = js.native
+  var title: String
   /**
     * Specifies the url of the page the target link goes to.
     */
-  var url: String = js.native
+  var url: String
+}
+
+object ASPxClientHtmlEditorInsertLinkCommandArguments {
+  @scala.inline
+  def apply(
+    selectedElement: js.Any,
+    styleSettings: ASPxClientHtmlEditorCommandStyleSettings,
+    target: String,
+    text: String,
+    title: String,
+    url: String
+  ): ASPxClientHtmlEditorInsertLinkCommandArguments = {
+    val __obj = js.Dynamic.literal(selectedElement = selectedElement.asInstanceOf[js.Any], styleSettings = styleSettings.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientHtmlEditorInsertLinkCommandArguments]
+  }
 }
 

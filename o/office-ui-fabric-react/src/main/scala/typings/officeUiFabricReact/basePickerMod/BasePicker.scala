@@ -16,7 +16,7 @@ import typings.react.mod.Component
 import typings.react.mod.FocusEvent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.RefObject
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
@@ -74,7 +74,7 @@ class BasePicker[T, P /* <: IBasePickerProps[T] */] protected ()
   def UNSAFE_componentWillReceiveProps_MBasePicker(newProps: P): Unit = js.native
   @JSName("UNSAFE_componentWillUpdate")
   def UNSAFE_componentWillUpdate_MBasePicker(newProps: P, newState: IBasePickerState): Unit = js.native
-  /* protected */ def _isFocusZoneInnerKeystroke(ev: KeyboardEvent[HTMLElement]): Boolean = js.native
+  /* protected */ def _shouldFocusZoneEnterInnerZone(ev: KeyboardEvent[HTMLElement]): Boolean = js.native
   /* protected */ def addItem(item: T): Unit = js.native
   /* protected */ def addItemByIndex(index: Double): Unit = js.native
   /* protected */ def canAddItems(): Boolean = js.native

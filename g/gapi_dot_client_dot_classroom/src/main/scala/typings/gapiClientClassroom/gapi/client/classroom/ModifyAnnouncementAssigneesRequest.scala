@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait ModifyAnnouncementAssigneesRequest extends js.Object {
   /**
-    * Mode of the announcement describing whether it will be accessible by all
+    * Mode of the announcement describing whether it is accessible by all
     * students or specified individual students.
     */
   var assigneeMode: js.UndefOr[String] = js.undefined

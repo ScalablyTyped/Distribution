@@ -11,9 +11,9 @@ trait JobDefinitionRetryStrategy extends js.Object {
 
 object JobDefinitionRetryStrategy {
   @scala.inline
-  def apply(attempts: Int | Double = null): JobDefinitionRetryStrategy = {
+  def apply(attempts: js.UndefOr[Double] = js.undefined): JobDefinitionRetryStrategy = {
     val __obj = js.Dynamic.literal()
-    if (attempts != null) __obj.updateDynamic("attempts")(attempts.asInstanceOf[js.Any])
+    if (!js.isUndefined(attempts)) __obj.updateDynamic("attempts")(attempts.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobDefinitionRetryStrategy]
   }
 }

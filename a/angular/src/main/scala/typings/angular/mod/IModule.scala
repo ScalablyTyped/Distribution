@@ -2,7 +2,7 @@ package typings.angular.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.angular.JQLite
-import typings.angular.mod._Global_.Function
+import typings.angular.mod.global.Function
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

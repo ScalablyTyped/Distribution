@@ -11,10 +11,10 @@ trait ConflictingOwnership extends js.Object {
 
 object ConflictingOwnership {
   @scala.inline
-  def apply(owner: String = null, ratio: Int | Double = null): ConflictingOwnership = {
+  def apply(owner: String = null, ratio: js.UndefOr[Double] = js.undefined): ConflictingOwnership = {
     val __obj = js.Dynamic.literal()
     if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
+    if (!js.isUndefined(ratio)) __obj.updateDynamic("ratio")(ratio.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConflictingOwnership]
   }
 }

@@ -20,7 +20,7 @@ object ValidatorComponentProps {
   def apply(
     name: String,
     value: js.Any,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     errorMessages: js.Array[_] | String = null,
     validatorListener: /* isValid */ Boolean => Unit = null,
     validators: js.Array[_] = null,
@@ -31,7 +31,7 @@ object ValidatorComponentProps {
     if (errorMessages != null) __obj.updateDynamic("errorMessages")(errorMessages.asInstanceOf[js.Any])
     if (validatorListener != null) __obj.updateDynamic("validatorListener")(js.Any.fromFunction1(validatorListener))
     if (validators != null) __obj.updateDynamic("validators")(validators.asInstanceOf[js.Any])
-    if (!js.isUndefined(withRequiredValidator)) __obj.updateDynamic("withRequiredValidator")(withRequiredValidator.asInstanceOf[js.Any])
+    if (!js.isUndefined(withRequiredValidator)) __obj.updateDynamic("withRequiredValidator")(withRequiredValidator.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidatorComponentProps]
   }
 }

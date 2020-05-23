@@ -1,12 +1,12 @@
 package typings.adhan.mod
 
-import typings.adhan.AnonAsr
+import typings.adhan.anon.Asr
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Parameter extends js.Object {
-  var adjustments: AnonAsr
+  var adjustments: Asr
   var fajrAngle: Double
   var highLatitudeRule: HighLatitudeRule
   var ishaAngle: Double
@@ -18,7 +18,7 @@ trait Parameter extends js.Object {
 object Parameter {
   @scala.inline
   def apply(
-    adjustments: AnonAsr,
+    adjustments: Asr,
     fajrAngle: Double,
     highLatitudeRule: HighLatitudeRule,
     ishaAngle: Double,

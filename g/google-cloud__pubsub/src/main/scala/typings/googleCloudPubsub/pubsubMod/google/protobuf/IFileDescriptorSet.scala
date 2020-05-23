@@ -12,9 +12,9 @@ trait IFileDescriptorSet extends js.Object {
 
 object IFileDescriptorSet {
   @scala.inline
-  def apply(file: js.Array[IFileDescriptorProto] = null): IFileDescriptorSet = {
+  def apply(file: js.UndefOr[Null | js.Array[IFileDescriptorProto]] = js.undefined): IFileDescriptorSet = {
     val __obj = js.Dynamic.literal()
-    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (!js.isUndefined(file)) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileDescriptorSet]
   }
 }

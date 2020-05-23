@@ -7,6 +7,7 @@ import typings.blueprintjsCore.blueprintjsCoreStrings.submit
 import typings.blueprintjsCore.intentMod.Intent
 import typings.blueprintjsCore.propsMod.IActionProps
 import typings.blueprintjsCore.propsMod.MaybeElement
+import typings.blueprintjsCore.refsMod.IRef
 import typings.blueprintjsIcons.iconNameMod.IconName
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
@@ -31,8 +32,8 @@ trait IButtonProps extends IActionProps {
     * @default Alignment.CENTER
     */
   var alignText: js.UndefOr[Alignment] = js.undefined
-  /** A ref handler that receives the native HTML element backing this component. */
-  var elementRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, _]] = js.undefined
+  /** A ref handler or a ref object that receives the native HTML element backing this component. */
+  var elementRef: js.UndefOr[IRef[_]] = js.undefined
   /** Whether this button should expand to fill its container. */
   var fill: js.UndefOr[Boolean] = js.undefined
   /** Whether this button should use large styles. */
@@ -66,36 +67,36 @@ object IButtonProps {
     alignText: Alignment = null,
     className: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    elementRef: /* ref */ HTMLElement | Null => _ = null,
+    elementRef: IRef[_] = null,
     fill: js.UndefOr[Boolean] = js.undefined,
-    icon: IconName | MaybeElement = null,
+    icon: js.UndefOr[Null | IconName | MaybeElement] = js.undefined,
     intent: Intent = null,
     large: js.UndefOr[Boolean] = js.undefined,
     loading: js.UndefOr[Boolean] = js.undefined,
     minimal: js.UndefOr[Boolean] = js.undefined,
     onClick: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
     outlined: js.UndefOr[Boolean] = js.undefined,
-    rightIcon: IconName | MaybeElement = null,
+    rightIcon: js.UndefOr[Null | IconName | MaybeElement] = js.undefined,
     small: js.UndefOr[Boolean] = js.undefined,
     text: ReactNode = null,
     `type`: submit | reset | button = null
   ): IButtonProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (alignText != null) __obj.updateDynamic("alignText")(alignText.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (elementRef != null) __obj.updateDynamic("elementRef")(js.Any.fromFunction1(elementRef))
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (elementRef != null) __obj.updateDynamic("elementRef")(elementRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
-    if (!js.isUndefined(large)) __obj.updateDynamic("large")(large.asInstanceOf[js.Any])
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimal)) __obj.updateDynamic("minimal")(minimal.asInstanceOf[js.Any])
+    if (!js.isUndefined(large)) __obj.updateDynamic("large")(large.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimal)) __obj.updateDynamic("minimal")(minimal.get.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (!js.isUndefined(outlined)) __obj.updateDynamic("outlined")(outlined.asInstanceOf[js.Any])
-    if (rightIcon != null) __obj.updateDynamic("rightIcon")(rightIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(small)) __obj.updateDynamic("small")(small.asInstanceOf[js.Any])
+    if (!js.isUndefined(outlined)) __obj.updateDynamic("outlined")(outlined.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightIcon)) __obj.updateDynamic("rightIcon")(rightIcon.asInstanceOf[js.Any])
+    if (!js.isUndefined(small)) __obj.updateDynamic("small")(small.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IButtonProps]

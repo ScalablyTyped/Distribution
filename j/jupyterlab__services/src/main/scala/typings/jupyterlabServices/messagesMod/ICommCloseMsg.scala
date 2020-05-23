@@ -1,6 +1,6 @@
 package typings.jupyterlabServices.messagesMod
 
-import typings.jupyterlabServices.AnonCommid
+import typings.jupyterlabServices.anon.Commid
 import typings.jupyterlabServices.jupyterlabServicesStrings.comm_close
 import typings.jupyterlabServices.jupyterlabServicesStrings.iopub
 import typings.jupyterlabServices.jupyterlabServicesStrings.shell
@@ -15,14 +15,14 @@ trait ICommCloseMsg[T /* <: iopub | shell */] extends IMessage[comm_close] {
   @JSName("channel")
   var channel_ICommCloseMsg: T
   @JSName("content")
-  var content_ICommCloseMsg: AnonCommid
+  var content_ICommCloseMsg: Commid
 }
 
 object ICommCloseMsg {
   @scala.inline
-  def apply[T /* <: iopub | shell */](
+  def apply[T](
     channel: T,
-    content: AnonCommid,
+    content: Commid,
     header: IHeader[comm_close],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,

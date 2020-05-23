@@ -20,9 +20,9 @@ object IWallabyFilePattern {
     load: js.UndefOr[Boolean] = js.undefined
   ): IWallabyFilePattern = {
     val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignore)) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(instrument)) __obj.updateDynamic("instrument")(instrument.asInstanceOf[js.Any])
-    if (!js.isUndefined(load)) __obj.updateDynamic("load")(load.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignore)) __obj.updateDynamic("ignore")(ignore.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(instrument)) __obj.updateDynamic("instrument")(instrument.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(load)) __obj.updateDynamic("load")(load.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWallabyFilePattern]
   }
 }

@@ -15,10 +15,13 @@ trait IUpdateSubscriptionRequest extends js.Object {
 
 object IUpdateSubscriptionRequest {
   @scala.inline
-  def apply(subscription: ISubscription = null, updateMask: IFieldMask = null): IUpdateSubscriptionRequest = {
+  def apply(
+    subscription: js.UndefOr[Null | ISubscription] = js.undefined,
+    updateMask: js.UndefOr[Null | IFieldMask] = js.undefined
+  ): IUpdateSubscriptionRequest = {
     val __obj = js.Dynamic.literal()
-    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
-    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscription)) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateMask)) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUpdateSubscriptionRequest]
   }
 }

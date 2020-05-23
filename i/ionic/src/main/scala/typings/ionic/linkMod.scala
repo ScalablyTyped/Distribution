@@ -1,5 +1,6 @@
 package typings.ionic
 
+import typings.ionic.anon.NameString
 import typings.ionic.commandMod.Command
 import typings.ionic.definitionsMod.App
 import typings.ionic.definitionsMod.CommandInstanceInfo
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ionic/commands/link", JSImport.Namespace)
 @js.native
 object linkMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.ionicCliFramework.definitionsMod.ICommand because Already inherited
   - typings.ionic.definitionsMod.ICommand because Already inherited
   - typings.ionic.definitionsMod.CommandPreRun because var conflicts: env, namespace, project. Inlined preRun */ @js.native
@@ -22,7 +23,7 @@ object linkMod extends js.Object {
     def chooseApp(apps: js.Array[App]): js.Promise[String] = js.native
     def confirmGithubRepoExists(): js.Promise[Unit] = js.native
     def connectGithub(app: App, repoId: Double, branches: js.Array[String]): js.Promise[js.UndefOr[String]] = js.native
-    def createApp(hasName: AnonNameString, runinfo: CommandInstanceInfo): js.Promise[String] = js.native
+    def createApp(hasName: NameString, runinfo: CommandInstanceInfo): js.Promise[String] = js.native
     def formatRepoName(fullName: String): String = js.native
     def linkApp(app: App, runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native
     def linkGithub(app: App): js.Promise[js.UndefOr[String]] = js.native

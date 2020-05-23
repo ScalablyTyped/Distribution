@@ -17,7 +17,7 @@ object ReportModifiedEventArgs {
   @scala.inline
   def apply(isModified: js.UndefOr[Boolean] = js.undefined, reportName: String = null): ReportModifiedEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isModified)) __obj.updateDynamic("isModified")(isModified.asInstanceOf[js.Any])
+    if (!js.isUndefined(isModified)) __obj.updateDynamic("isModified")(isModified.get.asInstanceOf[js.Any])
     if (reportName != null) __obj.updateDynamic("reportName")(reportName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportModifiedEventArgs]
   }

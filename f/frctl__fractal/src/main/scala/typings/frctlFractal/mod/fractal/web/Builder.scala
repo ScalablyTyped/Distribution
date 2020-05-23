@@ -1,6 +1,6 @@
 package typings.frctlFractal.mod.fractal.web
 
-import typings.frctlFractal.AnonErrorCount
+import typings.frctlFractal.anon.ErrorCount
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,8 +12,8 @@ class Builder () extends EventEmitter {
   /**
     * @deprecated Use start() instead.
     */
-  def build(): js.Promise[AnonErrorCount] = js.native
-  def start(): js.Promise[AnonErrorCount] = js.native
+  def build(): js.Promise[ErrorCount] = js.native
+  def start(): js.Promise[ErrorCount] = js.native
   def stop(): Unit = js.native
   def use(): Unit = js.native
 }

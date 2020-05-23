@@ -11,9 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a list of Contact objects. */
-@JSGlobal("Windows.ApplicationModel.Contacts.ContactList")
 @js.native
-abstract class ContactList () extends js.Object {
+trait ContactList extends js.Object {
   /** Gets the app's ContactChangeTracker for this ContactList . */
   var changeTracker: ContactChangeTracker = js.native
   /** Gets or puts the name of the ContactList , suitable for display in the user interface. */

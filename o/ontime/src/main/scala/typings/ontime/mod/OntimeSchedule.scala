@@ -67,15 +67,15 @@ object OntimeSchedule {
     keepLast: js.UndefOr[Boolean] = js.undefined,
     log: js.UndefOr[Boolean] = js.undefined,
     single: js.UndefOr[Boolean] = js.undefined,
-    step: Int | Double = null,
+    step: js.UndefOr[Double] = js.undefined,
     utc: js.UndefOr[Boolean] = js.undefined
   ): OntimeSchedule = {
     val __obj = js.Dynamic.literal(cycle = cycle.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepLast)) __obj.updateDynamic("keepLast")(keepLast.asInstanceOf[js.Any])
-    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (!js.isUndefined(utc)) __obj.updateDynamic("utc")(utc.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepLast)) __obj.updateDynamic("keepLast")(keepLast.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(utc)) __obj.updateDynamic("utc")(utc.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OntimeSchedule]
   }
 }

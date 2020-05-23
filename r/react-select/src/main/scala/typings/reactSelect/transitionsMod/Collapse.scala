@@ -2,7 +2,7 @@ package typings.reactSelect.transitionsMod
 
 import typings.react.mod.Component
 import typings.react.mod.Ref
-import typings.reactSelect.AnonExited
+import typings.reactSelect.anon.Exited
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 class Collapse ()
   extends Component[CollapseProps, CollapseState, js.Any] {
   var duration: Double = js.native
-  var transition: AnonExited = js.native
+  var transition: Exited = js.native
   // get base styles
   def getStyle(width: Width): js.Any = js.native
   // get transition styles

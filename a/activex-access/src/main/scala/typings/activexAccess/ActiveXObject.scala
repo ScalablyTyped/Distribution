@@ -183,6 +183,12 @@ import typings.activexAccess.activexAccessStrings.accValue
 import typings.activexAccess.activexAccessStrings.chartObject
 import typings.activexAccess.activexAccessStrings.drawObject
 import typings.activexAccess.activexAccessStrings.pDisp
+import typings.activexAccess.anon.CancelChartObject
+import typings.activexAccess.anon.ChartObject
+import typings.activexAccess.anon.CommandAny
+import typings.activexAccess.anon.DrawObject
+import typings.activexAccess.anon.FieldListKeyAscii
+import typings.activexAccess.anon.PDisp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -193,469 +199,501 @@ trait ActiveXObject extends js.Object {
     obj: FieldList,
     event: DragDrop,
     argNames: js.Tuple5[SourceCtlName, SourceFieldList, SourceRow, X, Y],
-    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ AnonSourceCtlName, Unit]
+    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ typings.activexAccess.anon.SourceCtlName, Unit]
   ): Unit = js.native
   def on(
     obj: FieldList,
     event: FldListCheckItem,
     argNames: js.Array[typings.activexAccess.activexAccessStrings.FieldList],
-    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ AnonFieldList, Unit]
+    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ typings.activexAccess.anon.FieldList, Unit]
   ): Unit = js.native
   def on(
     obj: FieldList,
     event: FldListClick,
     argNames: js.Array[typings.activexAccess.activexAccessStrings.FieldList],
-    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ AnonFieldList, Unit]
+    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ typings.activexAccess.anon.FieldList, Unit]
   ): Unit = js.native
   def on(
     obj: FieldList,
     event: FldListDblClick,
     argNames: js.Array[typings.activexAccess.activexAccessStrings.FieldList],
-    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ AnonFieldList, Unit]
+    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ typings.activexAccess.anon.FieldList, Unit]
   ): Unit = js.native
   def on(
     obj: FieldList,
     event: FldListGotFocus,
     argNames: js.Array[FieldListIndex],
-    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ AnonFieldListIndex, Unit]
+    handler: js.ThisFunction1[
+      /* this */ FieldList, 
+      /* parameter */ typings.activexAccess.anon.FieldListIndex, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: FieldList,
     event: FldListHdrDblClick,
     argNames: js.Array[typings.activexAccess.activexAccessStrings.FieldList],
-    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ AnonFieldList, Unit]
+    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ typings.activexAccess.anon.FieldList, Unit]
   ): Unit = js.native
   def on(
     obj: FieldList,
     event: FldListKeyDown,
     argNames: js.Tuple3[typings.activexAccess.activexAccessStrings.FieldList, KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ AnonShift, Unit]
+    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ typings.activexAccess.anon.Shift, Unit]
   ): Unit = js.native
   def on(
     obj: FieldList,
     event: FldListKeyPress,
     argNames: js.Tuple2[typings.activexAccess.activexAccessStrings.FieldList, KeyAscii],
-    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ AnonFieldListKeyAscii, Unit]
+    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ FieldListKeyAscii, Unit]
   ): Unit = js.native
   def on(
     obj: FieldList,
     event: FldListKeyUp,
     argNames: js.Tuple3[typings.activexAccess.activexAccessStrings.FieldList, KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ AnonShift, Unit]
+    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ typings.activexAccess.anon.Shift, Unit]
   ): Unit = js.native
   def on(
     obj: FieldList,
     event: FldListLostFocus,
     argNames: js.Array[FieldListIndex],
-    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ AnonFieldListIndex, Unit]
+    handler: js.ThisFunction1[
+      /* this */ FieldList, 
+      /* parameter */ typings.activexAccess.anon.FieldListIndex, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: FieldList,
     event: FldListMouseDown,
     argNames: js.Tuple5[typings.activexAccess.activexAccessStrings.FieldList, Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ AnonX, Unit]
+    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ typings.activexAccess.anon.X, Unit]
   ): Unit = js.native
   def on(
     obj: FieldList,
     event: FldListMouseMove,
     argNames: js.Tuple5[typings.activexAccess.activexAccessStrings.FieldList, Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ AnonX, Unit]
+    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ typings.activexAccess.anon.X, Unit]
   ): Unit = js.native
   def on(
     obj: FieldList,
     event: FldListMouseUp,
     argNames: js.Tuple5[typings.activexAccess.activexAccessStrings.FieldList, Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ AnonX, Unit]
+    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ typings.activexAccess.anon.X, Unit]
   ): Unit = js.native
   def on(
     obj: ImexGrid,
     event: ColumnCreated,
     argNames: js.Array[Column],
-    handler: js.ThisFunction1[/* this */ ImexGrid, /* parameter */ AnonColumn, Unit]
+    handler: js.ThisFunction1[/* this */ ImexGrid, /* parameter */ typings.activexAccess.anon.Column, Unit]
   ): Unit = js.native
   def on(
     obj: ImexGrid,
     event: ColumnDeleted,
     argNames: js.Array[Column],
-    handler: js.ThisFunction1[/* this */ ImexGrid, /* parameter */ AnonColumn, Unit]
+    handler: js.ThisFunction1[/* this */ ImexGrid, /* parameter */ typings.activexAccess.anon.Column, Unit]
   ): Unit = js.native
   def on(
     obj: ImexGrid,
     event: ColumnSelected,
     argNames: js.Array[Column],
-    handler: js.ThisFunction1[/* this */ ImexGrid, /* parameter */ AnonColumn, Unit]
+    handler: js.ThisFunction1[/* this */ ImexGrid, /* parameter */ typings.activexAccess.anon.Column, Unit]
   ): Unit = js.native
   def on(
     obj: ImexGrid,
     event: ColumnSized,
     argNames: js.Array[Column],
-    handler: js.ThisFunction1[/* this */ ImexGrid, /* parameter */ AnonColumn, Unit]
+    handler: js.ThisFunction1[/* this */ ImexGrid, /* parameter */ typings.activexAccess.anon.Column, Unit]
   ): Unit = js.native
   def on(
     obj: Attachment,
     event: BeforeUpdate,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ Attachment, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ Attachment, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: Attachment,
     event: DblClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ Attachment, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ Attachment, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: Attachment,
     event: Dirty,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ Attachment, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ Attachment, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: Attachment,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ Attachment, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ Attachment, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: Attachment,
     event: KeyDown,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ Attachment, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[/* this */ Attachment, /* parameter */ typings.activexAccess.anon.KeyCode, Unit]
   ): Unit = js.native
   def on(
     obj: Attachment,
     event: KeyPress,
     argNames: js.Array[KeyAscii],
-    handler: js.ThisFunction1[/* this */ Attachment, /* parameter */ AnonKeyAscii, Unit]
+    handler: js.ThisFunction1[/* this */ Attachment, /* parameter */ typings.activexAccess.anon.KeyAscii, Unit]
   ): Unit = js.native
   def on(
     obj: Attachment,
     event: KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ Attachment, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[/* this */ Attachment, /* parameter */ typings.activexAccess.anon.KeyCode, Unit]
   ): Unit = js.native
   def on(
     obj: Attachment,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ Attachment, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ Attachment, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: Attachment,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ Attachment, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ Attachment, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: Attachment,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ Attachment, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ Attachment, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: BoundObjectFrame,
     event: BeforeUpdate,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ BoundObjectFrame, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ BoundObjectFrame, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: BoundObjectFrame,
     event: DblClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ BoundObjectFrame, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ BoundObjectFrame, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: BoundObjectFrame,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ BoundObjectFrame, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ BoundObjectFrame, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: BoundObjectFrame,
     event: KeyDown,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ BoundObjectFrame, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[
+      /* this */ BoundObjectFrame, 
+      /* parameter */ typings.activexAccess.anon.KeyCode, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: BoundObjectFrame,
     event: KeyPress,
     argNames: js.Array[KeyAscii],
-    handler: js.ThisFunction1[/* this */ BoundObjectFrame, /* parameter */ AnonKeyAscii, Unit]
+    handler: js.ThisFunction1[
+      /* this */ BoundObjectFrame, 
+      /* parameter */ typings.activexAccess.anon.KeyAscii, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: BoundObjectFrame,
     event: KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ BoundObjectFrame, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[
+      /* this */ BoundObjectFrame, 
+      /* parameter */ typings.activexAccess.anon.KeyCode, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: BoundObjectFrame,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ BoundObjectFrame, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ BoundObjectFrame, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: BoundObjectFrame,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ BoundObjectFrame, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ BoundObjectFrame, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: BoundObjectFrame,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ BoundObjectFrame, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ BoundObjectFrame, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: BoundObjectFrame,
     event: Updated,
     argNames: js.Array[Code],
-    handler: js.ThisFunction1[/* this */ BoundObjectFrame, /* parameter */ AnonCode, Unit]
+    handler: js.ThisFunction1[/* this */ BoundObjectFrame, /* parameter */ typings.activexAccess.anon.Code, Unit]
   ): Unit = js.native
   def on(
     obj: CheckBoxInOption,
     event: BeforeUpdate,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ CheckBoxInOption, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ CheckBoxInOption, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: CheckBoxInOption,
     event: DblClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ CheckBoxInOption, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ CheckBoxInOption, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: CheckBoxInOption,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ CheckBoxInOption, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ CheckBoxInOption, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: CheckBoxInOption,
     event: KeyDown,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ CheckBoxInOption, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[
+      /* this */ CheckBoxInOption, 
+      /* parameter */ typings.activexAccess.anon.KeyCode, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: CheckBoxInOption,
     event: KeyPress,
     argNames: js.Array[KeyAscii],
-    handler: js.ThisFunction1[/* this */ CheckBoxInOption, /* parameter */ AnonKeyAscii, Unit]
+    handler: js.ThisFunction1[
+      /* this */ CheckBoxInOption, 
+      /* parameter */ typings.activexAccess.anon.KeyAscii, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: CheckBoxInOption,
     event: KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ CheckBoxInOption, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[
+      /* this */ CheckBoxInOption, 
+      /* parameter */ typings.activexAccess.anon.KeyCode, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: CheckBoxInOption,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ CheckBoxInOption, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ CheckBoxInOption, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: CheckBoxInOption,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ CheckBoxInOption, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ CheckBoxInOption, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: CheckBoxInOption,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ CheckBoxInOption, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ CheckBoxInOption, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: CheckBox,
     event: BeforeUpdate,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ CheckBox, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ CheckBox, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: CheckBox,
     event: DblClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ CheckBox, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ CheckBox, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: CheckBox,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ CheckBox, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ CheckBox, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: CheckBox,
     event: KeyDown,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ CheckBox, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[/* this */ CheckBox, /* parameter */ typings.activexAccess.anon.KeyCode, Unit]
   ): Unit = js.native
   def on(
     obj: CheckBox,
     event: KeyPress,
     argNames: js.Array[KeyAscii],
-    handler: js.ThisFunction1[/* this */ CheckBox, /* parameter */ AnonKeyAscii, Unit]
+    handler: js.ThisFunction1[/* this */ CheckBox, /* parameter */ typings.activexAccess.anon.KeyAscii, Unit]
   ): Unit = js.native
   def on(
     obj: CheckBox,
     event: KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ CheckBox, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[/* this */ CheckBox, /* parameter */ typings.activexAccess.anon.KeyCode, Unit]
   ): Unit = js.native
   def on(
     obj: CheckBox,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ CheckBox, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ CheckBox, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: CheckBox,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ CheckBox, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ CheckBox, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: CheckBox,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ CheckBox, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ CheckBox, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: ComboBox,
     event: BeforeUpdate,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ ComboBox, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ ComboBox, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: ComboBox,
     event: DblClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ ComboBox, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ ComboBox, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: ComboBox,
     event: Dirty,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ ComboBox, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ ComboBox, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: ComboBox,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ ComboBox, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ ComboBox, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: ComboBox,
     event: KeyDown,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ ComboBox, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[/* this */ ComboBox, /* parameter */ typings.activexAccess.anon.KeyCode, Unit]
   ): Unit = js.native
   def on(
     obj: ComboBox,
     event: KeyPress,
     argNames: js.Array[KeyAscii],
-    handler: js.ThisFunction1[/* this */ ComboBox, /* parameter */ AnonKeyAscii, Unit]
+    handler: js.ThisFunction1[/* this */ ComboBox, /* parameter */ typings.activexAccess.anon.KeyAscii, Unit]
   ): Unit = js.native
   def on(
     obj: ComboBox,
     event: KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ ComboBox, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[/* this */ ComboBox, /* parameter */ typings.activexAccess.anon.KeyCode, Unit]
   ): Unit = js.native
   def on(
     obj: ComboBox,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ ComboBox, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ ComboBox, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: ComboBox,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ ComboBox, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ ComboBox, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: ComboBox,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ ComboBox, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ ComboBox, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: ComboBox,
     event: NotInList,
     argNames: js.Tuple2[NewData, Response],
-    handler: js.ThisFunction1[/* this */ ComboBox, /* parameter */ AnonNewData, Unit]
+    handler: js.ThisFunction1[/* this */ ComboBox, /* parameter */ typings.activexAccess.anon.NewData, Unit]
   ): Unit = js.native
   def on(
     obj: ComboBox,
     event: Undo,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ ComboBox, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ ComboBox, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: CommandButton,
     event: DblClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ CommandButton, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ CommandButton, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: CommandButton,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ CommandButton, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ CommandButton, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: CommandButton,
     event: KeyDown,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ CommandButton, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[/* this */ CommandButton, /* parameter */ typings.activexAccess.anon.KeyCode, Unit]
   ): Unit = js.native
   def on(
     obj: CommandButton,
     event: KeyPress,
     argNames: js.Array[KeyAscii],
-    handler: js.ThisFunction1[/* this */ CommandButton, /* parameter */ AnonKeyAscii, Unit]
+    handler: js.ThisFunction1[/* this */ CommandButton, /* parameter */ typings.activexAccess.anon.KeyAscii, Unit]
   ): Unit = js.native
   def on(
     obj: CommandButton,
     event: KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ CommandButton, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[/* this */ CommandButton, /* parameter */ typings.activexAccess.anon.KeyCode, Unit]
   ): Unit = js.native
   def on(
     obj: CommandButton,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ CommandButton, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ CommandButton, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: CommandButton,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ CommandButton, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ CommandButton, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: CommandButton,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ CommandButton, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ CommandButton, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: CustomControl,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ CustomControl, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ CustomControl, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: CustomControl,
     event: Updated,
     argNames: js.Array[Code],
-    handler: js.ThisFunction1[/* this */ CustomControl, /* parameter */ AnonCode, Unit]
+    handler: js.ThisFunction1[/* this */ CustomControl, /* parameter */ typings.activexAccess.anon.Code, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
     event: BeforeInsert | BeforeUpdate | BeginBatchEdit | DblClick | Delete | Dirty | Open | RecordExit | Undo | UndoBatchEdit | Unload,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
@@ -666,691 +704,823 @@ trait ActiveXObject extends js.Object {
     obj: Form,
     event: AfterDelConfirm,
     argNames: js.Array[Status],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonStatus, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.Status, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
     event: AfterFinalRender,
     argNames: js.Array[drawObject],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonDrawObject, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ DrawObject, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
     event: AfterLayout,
     argNames: js.Array[drawObject],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonDrawObject, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ DrawObject, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
     event: AfterRender,
     argNames: js.Tuple2[drawObject, chartObject],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonChartObject, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ ChartObject, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
     event: ApplyFilter,
     argNames: js.Tuple2[Cancel, ApplyType],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonApplyType, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.ApplyType, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
     event: BeforeDelConfirm,
     argNames: js.Tuple2[Cancel, Response],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonResponse, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.Response, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
     event: BeforeRender,
     argNames: js.Tuple3[drawObject, chartObject, Cancel],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonCancelChartObject, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ CancelChartObject, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
     event: BeforeScreenTip,
     argNames: js.Tuple2[ScreenTipText, SourceObject],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonScreenTipText, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.ScreenTipText, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
     event: CommandBeforeExecute,
     argNames: js.Tuple2[Command, Cancel],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonCommand, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.Command, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
     event: CommandChecked,
     argNames: js.Tuple2[Command, Checked],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonChecked, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.Checked, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
     event: CommandEnabled,
     argNames: js.Tuple2[Command, Enabled],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonEnabled, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.Enabled, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
     event: CommandExecute,
     argNames: js.Array[Command],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonCommandAny, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ CommandAny, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
     event: DataChange,
     argNames: js.Array[Reason],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonReason, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.Reason, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
     event: Error,
     argNames: js.Tuple2[DataErr, Response],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonDataErr, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.DataErr, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
     event: Filter,
     argNames: js.Tuple2[Cancel, FilterType],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonFilterType, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.FilterType, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
     event: KeyDown,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.KeyCode, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
     event: KeyPress,
     argNames: js.Array[KeyAscii],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonKeyAscii, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.KeyAscii, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
     event: KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.KeyCode, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
     event: MouseWheel,
     argNames: js.Tuple2[Page, Count],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonCount, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.Count, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
     event: PivotTableChange,
     argNames: js.Array[Reason],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonReason, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.Reason, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
     event: ViewChange,
     argNames: js.Array[Reason],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonReason, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.Reason, Unit]
   ): Unit = js.native
   def on(
     obj: Image,
     event: DblClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ Image, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ Image, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: Image,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ Image, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ Image, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: Image,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ Image, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ Image, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: Image,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ Image, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ Image, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: Label,
     event: DblClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ Label, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ Label, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: Label,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ Label, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ Label, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: Label,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ Label, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ Label, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: Label,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ Label, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ Label, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: ListBox,
     event: BeforeUpdate,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ ListBox, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ ListBox, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: ListBox,
     event: DblClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ ListBox, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ ListBox, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: ListBox,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ ListBox, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ ListBox, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: ListBox,
     event: KeyDown,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ ListBox, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[/* this */ ListBox, /* parameter */ typings.activexAccess.anon.KeyCode, Unit]
   ): Unit = js.native
   def on(
     obj: ListBox,
     event: KeyPress,
     argNames: js.Array[KeyAscii],
-    handler: js.ThisFunction1[/* this */ ListBox, /* parameter */ AnonKeyAscii, Unit]
+    handler: js.ThisFunction1[/* this */ ListBox, /* parameter */ typings.activexAccess.anon.KeyAscii, Unit]
   ): Unit = js.native
   def on(
     obj: ListBox,
     event: KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ ListBox, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[/* this */ ListBox, /* parameter */ typings.activexAccess.anon.KeyCode, Unit]
   ): Unit = js.native
   def on(
     obj: ListBox,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ ListBox, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ ListBox, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: ListBox,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ ListBox, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ ListBox, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: ListBox,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ ListBox, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ ListBox, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: NavigationButton,
     event: DblClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ NavigationButton, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ NavigationButton, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: NavigationButton,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ NavigationButton, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ NavigationButton, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: NavigationButton,
     event: KeyDown,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ NavigationButton, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[
+      /* this */ NavigationButton, 
+      /* parameter */ typings.activexAccess.anon.KeyCode, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: NavigationButton,
     event: KeyPress,
     argNames: js.Array[KeyAscii],
-    handler: js.ThisFunction1[/* this */ NavigationButton, /* parameter */ AnonKeyAscii, Unit]
+    handler: js.ThisFunction1[
+      /* this */ NavigationButton, 
+      /* parameter */ typings.activexAccess.anon.KeyAscii, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: NavigationButton,
     event: KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ NavigationButton, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[
+      /* this */ NavigationButton, 
+      /* parameter */ typings.activexAccess.anon.KeyCode, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: NavigationButton,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ NavigationButton, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ NavigationButton, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: NavigationButton,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ NavigationButton, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ NavigationButton, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: NavigationButton,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ NavigationButton, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ NavigationButton, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: NavigationControl,
     event: BeforeUpdate,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ NavigationControl, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[
+      /* this */ NavigationControl, 
+      /* parameter */ typings.activexAccess.anon.Cancel, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: NavigationControl,
     event: DblClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ NavigationControl, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[
+      /* this */ NavigationControl, 
+      /* parameter */ typings.activexAccess.anon.Cancel, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: NavigationControl,
     event: Dirty,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ NavigationControl, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[
+      /* this */ NavigationControl, 
+      /* parameter */ typings.activexAccess.anon.Cancel, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: NavigationControl,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ NavigationControl, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[
+      /* this */ NavigationControl, 
+      /* parameter */ typings.activexAccess.anon.Cancel, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: NavigationControl,
     event: KeyDown,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ NavigationControl, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[
+      /* this */ NavigationControl, 
+      /* parameter */ typings.activexAccess.anon.KeyCode, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: NavigationControl,
     event: KeyPress,
     argNames: js.Array[KeyAscii],
-    handler: js.ThisFunction1[/* this */ NavigationControl, /* parameter */ AnonKeyAscii, Unit]
+    handler: js.ThisFunction1[
+      /* this */ NavigationControl, 
+      /* parameter */ typings.activexAccess.anon.KeyAscii, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: NavigationControl,
     event: KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ NavigationControl, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[
+      /* this */ NavigationControl, 
+      /* parameter */ typings.activexAccess.anon.KeyCode, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: NavigationControl,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ NavigationControl, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[
+      /* this */ NavigationControl, 
+      /* parameter */ typings.activexAccess.anon.Button, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: NavigationControl,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ NavigationControl, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[
+      /* this */ NavigationControl, 
+      /* parameter */ typings.activexAccess.anon.Button, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: NavigationControl,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ NavigationControl, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[
+      /* this */ NavigationControl, 
+      /* parameter */ typings.activexAccess.anon.Button, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: NavigationControl,
     event: Undo,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ NavigationControl, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[
+      /* this */ NavigationControl, 
+      /* parameter */ typings.activexAccess.anon.Cancel, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: ObjectFrame,
     event: DblClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ ObjectFrame, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ ObjectFrame, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: ObjectFrame,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ ObjectFrame, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ ObjectFrame, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: ObjectFrame,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ ObjectFrame, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ ObjectFrame, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: ObjectFrame,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ ObjectFrame, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ ObjectFrame, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: ObjectFrame,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ ObjectFrame, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ ObjectFrame, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: ObjectFrame,
     event: Updated,
     argNames: js.Array[Code],
-    handler: js.ThisFunction1[/* this */ ObjectFrame, /* parameter */ AnonCode, Unit]
+    handler: js.ThisFunction1[/* this */ ObjectFrame, /* parameter */ typings.activexAccess.anon.Code, Unit]
   ): Unit = js.native
   def on(
     obj: OptionButtonInOption,
     event: BeforeUpdate,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OptionButtonInOption, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[
+      /* this */ OptionButtonInOption, 
+      /* parameter */ typings.activexAccess.anon.Cancel, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: OptionButtonInOption,
     event: DblClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OptionButtonInOption, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[
+      /* this */ OptionButtonInOption, 
+      /* parameter */ typings.activexAccess.anon.Cancel, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: OptionButtonInOption,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OptionButtonInOption, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[
+      /* this */ OptionButtonInOption, 
+      /* parameter */ typings.activexAccess.anon.Cancel, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: OptionButtonInOption,
     event: KeyDown,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ OptionButtonInOption, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[
+      /* this */ OptionButtonInOption, 
+      /* parameter */ typings.activexAccess.anon.KeyCode, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: OptionButtonInOption,
     event: KeyPress,
     argNames: js.Array[KeyAscii],
-    handler: js.ThisFunction1[/* this */ OptionButtonInOption, /* parameter */ AnonKeyAscii, Unit]
+    handler: js.ThisFunction1[
+      /* this */ OptionButtonInOption, 
+      /* parameter */ typings.activexAccess.anon.KeyAscii, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: OptionButtonInOption,
     event: KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ OptionButtonInOption, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[
+      /* this */ OptionButtonInOption, 
+      /* parameter */ typings.activexAccess.anon.KeyCode, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: OptionButtonInOption,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OptionButtonInOption, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[
+      /* this */ OptionButtonInOption, 
+      /* parameter */ typings.activexAccess.anon.Button, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: OptionButtonInOption,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OptionButtonInOption, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[
+      /* this */ OptionButtonInOption, 
+      /* parameter */ typings.activexAccess.anon.Button, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: OptionButtonInOption,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OptionButtonInOption, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[
+      /* this */ OptionButtonInOption, 
+      /* parameter */ typings.activexAccess.anon.Button, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: OptionButton,
     event: BeforeUpdate,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OptionButton, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ OptionButton, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: OptionButton,
     event: DblClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OptionButton, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ OptionButton, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: OptionButton,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OptionButton, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ OptionButton, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: OptionButton,
     event: KeyDown,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ OptionButton, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[/* this */ OptionButton, /* parameter */ typings.activexAccess.anon.KeyCode, Unit]
   ): Unit = js.native
   def on(
     obj: OptionButton,
     event: KeyPress,
     argNames: js.Array[KeyAscii],
-    handler: js.ThisFunction1[/* this */ OptionButton, /* parameter */ AnonKeyAscii, Unit]
+    handler: js.ThisFunction1[/* this */ OptionButton, /* parameter */ typings.activexAccess.anon.KeyAscii, Unit]
   ): Unit = js.native
   def on(
     obj: OptionButton,
     event: KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ OptionButton, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[/* this */ OptionButton, /* parameter */ typings.activexAccess.anon.KeyCode, Unit]
   ): Unit = js.native
   def on(
     obj: OptionButton,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OptionButton, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ OptionButton, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: OptionButton,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OptionButton, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ OptionButton, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: OptionButton,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OptionButton, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ OptionButton, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: OptionGroup,
     event: BeforeUpdate,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OptionGroup, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ OptionGroup, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: OptionGroup,
     event: DblClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OptionGroup, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ OptionGroup, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: OptionGroup,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OptionGroup, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ OptionGroup, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: OptionGroup,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OptionGroup, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ OptionGroup, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: OptionGroup,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OptionGroup, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ OptionGroup, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: OptionGroup,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OptionGroup, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ OptionGroup, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: PageHdrFtrInReport,
     event: DblClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ PageHdrFtrInReport, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[
+      /* this */ PageHdrFtrInReport, 
+      /* parameter */ typings.activexAccess.anon.Cancel, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: PageHdrFtrInReport,
     event: Format,
     argNames: js.Tuple2[Cancel, FormatCount],
-    handler: js.ThisFunction1[/* this */ PageHdrFtrInReport, /* parameter */ AnonFormatCount, Unit]
+    handler: js.ThisFunction1[
+      /* this */ PageHdrFtrInReport, 
+      /* parameter */ typings.activexAccess.anon.FormatCount, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: PageHdrFtrInReport,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ PageHdrFtrInReport, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[
+      /* this */ PageHdrFtrInReport, 
+      /* parameter */ typings.activexAccess.anon.Button, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: PageHdrFtrInReport,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ PageHdrFtrInReport, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[
+      /* this */ PageHdrFtrInReport, 
+      /* parameter */ typings.activexAccess.anon.Button, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: PageHdrFtrInReport,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ PageHdrFtrInReport, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[
+      /* this */ PageHdrFtrInReport, 
+      /* parameter */ typings.activexAccess.anon.Button, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: PageHdrFtrInReport,
     event: Print,
     argNames: js.Tuple2[Cancel, PrintCount],
-    handler: js.ThisFunction1[/* this */ PageHdrFtrInReport, /* parameter */ AnonPrintCount, Unit]
+    handler: js.ThisFunction1[
+      /* this */ PageHdrFtrInReport, 
+      /* parameter */ typings.activexAccess.anon.PrintCount, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: typings.activexAccess.Access.Page,
     event: DblClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ typings.activexAccess.Access.Page, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[
+      /* this */ typings.activexAccess.Access.Page, 
+      /* parameter */ typings.activexAccess.anon.Cancel, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: typings.activexAccess.Access.Page,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ typings.activexAccess.Access.Page, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[
+      /* this */ typings.activexAccess.Access.Page, 
+      /* parameter */ typings.activexAccess.anon.Button, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: typings.activexAccess.Access.Page,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ typings.activexAccess.Access.Page, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[
+      /* this */ typings.activexAccess.Access.Page, 
+      /* parameter */ typings.activexAccess.anon.Button, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: typings.activexAccess.Access.Page,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ typings.activexAccess.Access.Page, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[
+      /* this */ typings.activexAccess.Access.Page, 
+      /* parameter */ typings.activexAccess.anon.Button, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: PaletteButton,
     event: BeforeUpdate,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ PaletteButton, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ PaletteButton, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: PaletteButton,
     event: DblClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ PaletteButton, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ PaletteButton, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: PaletteButton,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ PaletteButton, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ PaletteButton, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: PaletteButton,
     event: KeyDown,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ PaletteButton, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[/* this */ PaletteButton, /* parameter */ typings.activexAccess.anon.KeyCode, Unit]
   ): Unit = js.native
   def on(
     obj: PaletteButton,
     event: KeyPress,
     argNames: js.Array[KeyAscii],
-    handler: js.ThisFunction1[/* this */ PaletteButton, /* parameter */ AnonKeyAscii, Unit]
+    handler: js.ThisFunction1[/* this */ PaletteButton, /* parameter */ typings.activexAccess.anon.KeyAscii, Unit]
   ): Unit = js.native
   def on(
     obj: PaletteButton,
     event: KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ PaletteButton, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[/* this */ PaletteButton, /* parameter */ typings.activexAccess.anon.KeyCode, Unit]
   ): Unit = js.native
   def on(
     obj: PaletteButton,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ PaletteButton, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ PaletteButton, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: PaletteButton,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ PaletteButton, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ PaletteButton, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: PaletteButton,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ PaletteButton, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ PaletteButton, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: Rectangle,
     event: DblClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ Rectangle, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ Rectangle, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: Rectangle,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ Rectangle, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ Rectangle, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: Rectangle,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ Rectangle, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ Rectangle, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: Rectangle,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ Rectangle, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ Rectangle, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: References,
     event: ItemAdded,
     argNames: js.Array[Reference],
-    handler: js.ThisFunction1[/* this */ References, /* parameter */ AnonReference, Unit]
+    handler: js.ThisFunction1[/* this */ References, /* parameter */ typings.activexAccess.anon.Reference, Unit]
   ): Unit = js.native
   def on(
     obj: References,
     event: ItemRemoved,
     argNames: js.Array[Reference],
-    handler: js.ThisFunction1[/* this */ References, /* parameter */ AnonReference, Unit]
+    handler: js.ThisFunction1[/* this */ References, /* parameter */ typings.activexAccess.anon.Reference, Unit]
   ): Unit = js.native
   def on(
     obj: Report,
@@ -1361,457 +1531,549 @@ trait ActiveXObject extends js.Object {
     obj: Report,
     event: ApplyFilter,
     argNames: js.Tuple2[Cancel, ApplyType],
-    handler: js.ThisFunction1[/* this */ Report, /* parameter */ AnonApplyType, Unit]
+    handler: js.ThisFunction1[/* this */ Report, /* parameter */ typings.activexAccess.anon.ApplyType, Unit]
   ): Unit = js.native
   def on(
     obj: Report,
     event: DblClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ Report, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ Report, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: Report,
     event: Error,
     argNames: js.Tuple2[DataErr, Response],
-    handler: js.ThisFunction1[/* this */ Report, /* parameter */ AnonDataErr, Unit]
+    handler: js.ThisFunction1[/* this */ Report, /* parameter */ typings.activexAccess.anon.DataErr, Unit]
   ): Unit = js.native
   def on(
     obj: Report,
     event: Filter,
     argNames: js.Tuple2[Cancel, FilterType],
-    handler: js.ThisFunction1[/* this */ Report, /* parameter */ AnonFilterType, Unit]
+    handler: js.ThisFunction1[/* this */ Report, /* parameter */ typings.activexAccess.anon.FilterType, Unit]
   ): Unit = js.native
   def on(
     obj: Report,
     event: KeyDown,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ Report, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[/* this */ Report, /* parameter */ typings.activexAccess.anon.KeyCode, Unit]
   ): Unit = js.native
   def on(
     obj: Report,
     event: KeyPress,
     argNames: js.Array[KeyAscii],
-    handler: js.ThisFunction1[/* this */ Report, /* parameter */ AnonKeyAscii, Unit]
+    handler: js.ThisFunction1[/* this */ Report, /* parameter */ typings.activexAccess.anon.KeyAscii, Unit]
   ): Unit = js.native
   def on(
     obj: Report,
     event: KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ Report, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[/* this */ Report, /* parameter */ typings.activexAccess.anon.KeyCode, Unit]
   ): Unit = js.native
   def on(
     obj: Report,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ Report, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ Report, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: Report,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ Report, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ Report, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: Report,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ Report, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ Report, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: Report,
     event: MouseWheel,
     argNames: js.Tuple2[Page, Count],
-    handler: js.ThisFunction1[/* this */ Report, /* parameter */ AnonCount, Unit]
+    handler: js.ThisFunction1[/* this */ Report, /* parameter */ typings.activexAccess.anon.Count, Unit]
   ): Unit = js.native
   def on(
     obj: Report,
     event: NoData,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ Report, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ Report, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: Report,
     event: Open,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ Report, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ Report, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: Report,
     event: Unload,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ Report, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ Report, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: SectionInReport,
     event: DblClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ SectionInReport, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ SectionInReport, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: SectionInReport,
     event: Format,
     argNames: js.Tuple2[Cancel, FormatCount],
-    handler: js.ThisFunction1[/* this */ SectionInReport, /* parameter */ AnonFormatCount, Unit]
+    handler: js.ThisFunction1[
+      /* this */ SectionInReport, 
+      /* parameter */ typings.activexAccess.anon.FormatCount, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: SectionInReport,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ SectionInReport, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ SectionInReport, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: SectionInReport,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ SectionInReport, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ SectionInReport, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: SectionInReport,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ SectionInReport, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ SectionInReport, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: SectionInReport,
     event: Print,
     argNames: js.Tuple2[Cancel, PrintCount],
-    handler: js.ThisFunction1[/* this */ SectionInReport, /* parameter */ AnonPrintCount, Unit]
+    handler: js.ThisFunction1[
+      /* this */ SectionInReport, 
+      /* parameter */ typings.activexAccess.anon.PrintCount, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: Section,
     event: DblClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ Section, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ Section, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: Section,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ Section, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ Section, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: Section,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ Section, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ Section, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: Section,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ Section, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ Section, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: SubForm,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ SubForm, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ SubForm, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: SubReport,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ SubReport, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ SubReport, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: TabControl,
     event: DblClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TabControl, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ TabControl, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: TabControl,
     event: KeyDown,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ TabControl, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[/* this */ TabControl, /* parameter */ typings.activexAccess.anon.KeyCode, Unit]
   ): Unit = js.native
   def on(
     obj: TabControl,
     event: KeyPress,
     argNames: js.Array[KeyAscii],
-    handler: js.ThisFunction1[/* this */ TabControl, /* parameter */ AnonKeyAscii, Unit]
+    handler: js.ThisFunction1[/* this */ TabControl, /* parameter */ typings.activexAccess.anon.KeyAscii, Unit]
   ): Unit = js.native
   def on(
     obj: TabControl,
     event: KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ TabControl, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[/* this */ TabControl, /* parameter */ typings.activexAccess.anon.KeyCode, Unit]
   ): Unit = js.native
   def on(
     obj: TabControl,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ TabControl, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ TabControl, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: TabControl,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ TabControl, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ TabControl, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: TabControl,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ TabControl, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ TabControl, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: TextBox,
     event: BeforeUpdate,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TextBox, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ TextBox, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: TextBox,
     event: DblClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TextBox, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ TextBox, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: TextBox,
     event: Dirty,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TextBox, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ TextBox, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: TextBox,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TextBox, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ TextBox, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: TextBox,
     event: KeyDown,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ TextBox, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[/* this */ TextBox, /* parameter */ typings.activexAccess.anon.KeyCode, Unit]
   ): Unit = js.native
   def on(
     obj: TextBox,
     event: KeyPress,
     argNames: js.Array[KeyAscii],
-    handler: js.ThisFunction1[/* this */ TextBox, /* parameter */ AnonKeyAscii, Unit]
+    handler: js.ThisFunction1[/* this */ TextBox, /* parameter */ typings.activexAccess.anon.KeyAscii, Unit]
   ): Unit = js.native
   def on(
     obj: TextBox,
     event: KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ TextBox, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[/* this */ TextBox, /* parameter */ typings.activexAccess.anon.KeyCode, Unit]
   ): Unit = js.native
   def on(
     obj: TextBox,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ TextBox, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ TextBox, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: TextBox,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ TextBox, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ TextBox, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: TextBox,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ TextBox, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ TextBox, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: TextBox,
     event: Undo,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TextBox, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ TextBox, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: ToggleButtonInOption,
     event: BeforeUpdate,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ ToggleButtonInOption, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[
+      /* this */ ToggleButtonInOption, 
+      /* parameter */ typings.activexAccess.anon.Cancel, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: ToggleButtonInOption,
     event: DblClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ ToggleButtonInOption, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[
+      /* this */ ToggleButtonInOption, 
+      /* parameter */ typings.activexAccess.anon.Cancel, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: ToggleButtonInOption,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ ToggleButtonInOption, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[
+      /* this */ ToggleButtonInOption, 
+      /* parameter */ typings.activexAccess.anon.Cancel, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: ToggleButtonInOption,
     event: KeyDown,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ ToggleButtonInOption, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[
+      /* this */ ToggleButtonInOption, 
+      /* parameter */ typings.activexAccess.anon.KeyCode, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: ToggleButtonInOption,
     event: KeyPress,
     argNames: js.Array[KeyAscii],
-    handler: js.ThisFunction1[/* this */ ToggleButtonInOption, /* parameter */ AnonKeyAscii, Unit]
+    handler: js.ThisFunction1[
+      /* this */ ToggleButtonInOption, 
+      /* parameter */ typings.activexAccess.anon.KeyAscii, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: ToggleButtonInOption,
     event: KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ ToggleButtonInOption, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[
+      /* this */ ToggleButtonInOption, 
+      /* parameter */ typings.activexAccess.anon.KeyCode, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: ToggleButtonInOption,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ ToggleButtonInOption, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[
+      /* this */ ToggleButtonInOption, 
+      /* parameter */ typings.activexAccess.anon.Button, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: ToggleButtonInOption,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ ToggleButtonInOption, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[
+      /* this */ ToggleButtonInOption, 
+      /* parameter */ typings.activexAccess.anon.Button, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: ToggleButtonInOption,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ ToggleButtonInOption, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[
+      /* this */ ToggleButtonInOption, 
+      /* parameter */ typings.activexAccess.anon.Button, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: ToggleButton,
     event: BeforeUpdate,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ ToggleButton, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ ToggleButton, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: ToggleButton,
     event: DblClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ ToggleButton, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ ToggleButton, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: ToggleButton,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ ToggleButton, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ ToggleButton, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: ToggleButton,
     event: KeyDown,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ ToggleButton, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[/* this */ ToggleButton, /* parameter */ typings.activexAccess.anon.KeyCode, Unit]
   ): Unit = js.native
   def on(
     obj: ToggleButton,
     event: KeyPress,
     argNames: js.Array[KeyAscii],
-    handler: js.ThisFunction1[/* this */ ToggleButton, /* parameter */ AnonKeyAscii, Unit]
+    handler: js.ThisFunction1[/* this */ ToggleButton, /* parameter */ typings.activexAccess.anon.KeyAscii, Unit]
   ): Unit = js.native
   def on(
     obj: ToggleButton,
     event: KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ ToggleButton, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[/* this */ ToggleButton, /* parameter */ typings.activexAccess.anon.KeyCode, Unit]
   ): Unit = js.native
   def on(
     obj: ToggleButton,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ ToggleButton, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ ToggleButton, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: ToggleButton,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ ToggleButton, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ ToggleButton, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: ToggleButton,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ ToggleButton, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ ToggleButton, /* parameter */ typings.activexAccess.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: WebBrowserControl,
     event: BeforeUpdate,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ WebBrowserControl, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[
+      /* this */ WebBrowserControl, 
+      /* parameter */ typings.activexAccess.anon.Cancel, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: WebBrowserControl,
     event: DblClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ WebBrowserControl, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[
+      /* this */ WebBrowserControl, 
+      /* parameter */ typings.activexAccess.anon.Cancel, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: WebBrowserControl,
     event: Dirty,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ WebBrowserControl, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[
+      /* this */ WebBrowserControl, 
+      /* parameter */ typings.activexAccess.anon.Cancel, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: WebBrowserControl,
     event: DocumentComplete,
     argNames: js.Tuple2[pDisp, URL],
-    handler: js.ThisFunction1[/* this */ WebBrowserControl, /* parameter */ AnonPDisp, Unit]
+    handler: js.ThisFunction1[/* this */ WebBrowserControl, /* parameter */ PDisp, Unit]
   ): Unit = js.native
   def on(
     obj: WebBrowserControl,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ WebBrowserControl, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[
+      /* this */ WebBrowserControl, 
+      /* parameter */ typings.activexAccess.anon.Cancel, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: WebBrowserControl,
     event: KeyDown,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ WebBrowserControl, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[
+      /* this */ WebBrowserControl, 
+      /* parameter */ typings.activexAccess.anon.KeyCode, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: WebBrowserControl,
     event: KeyPress,
     argNames: js.Array[KeyAscii],
-    handler: js.ThisFunction1[/* this */ WebBrowserControl, /* parameter */ AnonKeyAscii, Unit]
+    handler: js.ThisFunction1[
+      /* this */ WebBrowserControl, 
+      /* parameter */ typings.activexAccess.anon.KeyAscii, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: WebBrowserControl,
     event: KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ WebBrowserControl, /* parameter */ AnonKeyCode, Unit]
+    handler: js.ThisFunction1[
+      /* this */ WebBrowserControl, 
+      /* parameter */ typings.activexAccess.anon.KeyCode, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: WebBrowserControl,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ WebBrowserControl, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[
+      /* this */ WebBrowserControl, 
+      /* parameter */ typings.activexAccess.anon.Button, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: WebBrowserControl,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ WebBrowserControl, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[
+      /* this */ WebBrowserControl, 
+      /* parameter */ typings.activexAccess.anon.Button, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: WebBrowserControl,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ WebBrowserControl, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[
+      /* this */ WebBrowserControl, 
+      /* parameter */ typings.activexAccess.anon.Button, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: WebBrowserControl,
     event: NavigateError,
     argNames: js.Tuple5[pDisp, URL, TargetFrameName, StatusCode, Cancel],
-    handler: js.ThisFunction1[/* this */ WebBrowserControl, /* parameter */ AnonStatusCode, Unit]
+    handler: js.ThisFunction1[
+      /* this */ WebBrowserControl, 
+      /* parameter */ typings.activexAccess.anon.StatusCode, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: WebBrowserControl,
     event: ProgressChange,
     argNames: js.Tuple2[Progress, ProgressMax],
-    handler: js.ThisFunction1[/* this */ WebBrowserControl, /* parameter */ AnonProgress, Unit]
+    handler: js.ThisFunction1[
+      /* this */ WebBrowserControl, 
+      /* parameter */ typings.activexAccess.anon.Progress, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: WebBrowserControl,
     event: Updated,
     argNames: js.Array[Code],
-    handler: js.ThisFunction1[/* this */ WebBrowserControl, /* parameter */ AnonCode, Unit]
+    handler: js.ThisFunction1[/* this */ WebBrowserControl, /* parameter */ typings.activexAccess.anon.Code, Unit]
   ): Unit = js.native
   @JSName("on")
   def on_AfterStartup(

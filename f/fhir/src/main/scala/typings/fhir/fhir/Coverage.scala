@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Insurance or medical plan or a payment agreement
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait Coverage extends DomainResource {
   /**
     * Contains extended information for property 'dependent'.
@@ -125,7 +125,7 @@ object Coverage {
     meta: Meta = null,
     modifierExtension: js.Array[Extension] = null,
     network: String = null,
-    order: Int | Double = null,
+    order: js.UndefOr[positiveInt] = js.undefined,
     payor: js.Array[Reference] = null,
     period: Period = null,
     policyHolder: Reference = null,
@@ -162,7 +162,7 @@ object Coverage {
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (!js.isUndefined(order)) __obj.updateDynamic("order")(order.get.asInstanceOf[js.Any])
     if (payor != null) __obj.updateDynamic("payor")(payor.asInstanceOf[js.Any])
     if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
     if (policyHolder != null) __obj.updateDynamic("policyHolder")(policyHolder.asInstanceOf[js.Any])

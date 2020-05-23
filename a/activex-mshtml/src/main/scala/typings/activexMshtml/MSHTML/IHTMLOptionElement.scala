@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.IHTMLOptionElement")
 @js.native
-class IHTMLOptionElement protected () extends js.Object {
+trait IHTMLOptionElement extends js.Object {
   @JSName("MSHTML.IHTMLOptionElement_typekey")
   var MSHTMLDotIHTMLOptionElement_typekey: IHTMLOptionElement = js.native
   var defaultSelected: Boolean = js.native

@@ -13,11 +13,16 @@ trait Event extends js.Object {
 
 object Event {
   @scala.inline
-  def apply(alpha: Double, `type`: EventType, listener: () => Unit = null, stress: Int | Double = null): Event = {
+  def apply(
+    alpha: Double,
+    `type`: EventType,
+    listener: () => Unit = null,
+    stress: js.UndefOr[Double] = js.undefined
+  ): Event = {
     val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (listener != null) __obj.updateDynamic("listener")(js.Any.fromFunction0(listener))
-    if (stress != null) __obj.updateDynamic("stress")(stress.asInstanceOf[js.Any])
+    if (!js.isUndefined(stress)) __obj.updateDynamic("stress")(stress.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }
 }

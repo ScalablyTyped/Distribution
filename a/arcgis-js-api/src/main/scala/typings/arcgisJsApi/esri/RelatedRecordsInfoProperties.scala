@@ -27,7 +27,7 @@ object RelatedRecordsInfoProperties {
   ): RelatedRecordsInfoProperties = {
     val __obj = js.Dynamic.literal()
     if (orderByFields != null) __obj.updateDynamic("orderByFields")(orderByFields.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRelatedRecords)) __obj.updateDynamic("showRelatedRecords")(showRelatedRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRelatedRecords)) __obj.updateDynamic("showRelatedRecords")(showRelatedRecords.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelatedRecordsInfoProperties]
   }
 }

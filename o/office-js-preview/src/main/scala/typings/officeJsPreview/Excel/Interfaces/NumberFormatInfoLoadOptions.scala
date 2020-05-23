@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation._
   *
   * Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.11]
   */
 trait NumberFormatInfoLoadOptions extends js.Object {
   /**
@@ -21,16 +20,14 @@ trait NumberFormatInfoLoadOptions extends js.Object {
     *
     * Gets the string used as the decimal separator for numeric values. This is based on current system settings.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.11]
     */
   var numberDecimalSeparator: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on current system settings.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.11]
     */
   var numberGroupSeparator: js.UndefOr[Boolean] = js.undefined
 }
@@ -43,9 +40,9 @@ object NumberFormatInfoLoadOptions {
     numberGroupSeparator: js.UndefOr[Boolean] = js.undefined
   ): NumberFormatInfoLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberDecimalSeparator)) __obj.updateDynamic("numberDecimalSeparator")(numberDecimalSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberGroupSeparator)) __obj.updateDynamic("numberGroupSeparator")(numberGroupSeparator.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberDecimalSeparator)) __obj.updateDynamic("numberDecimalSeparator")(numberDecimalSeparator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberGroupSeparator)) __obj.updateDynamic("numberGroupSeparator")(numberGroupSeparator.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberFormatInfoLoadOptions]
   }
 }

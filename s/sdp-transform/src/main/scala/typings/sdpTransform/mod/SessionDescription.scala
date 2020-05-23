@@ -1,20 +1,20 @@
 package typings.sdpTransform.mod
 
-import typings.sdpTransform.AnonAddress
-import typings.sdpTransform.AnonAddressTypes
-import typings.sdpTransform.AnonHash
-import typings.sdpTransform.AnonIp
-import typings.sdpTransform.AnonLimit
-import typings.sdpTransform.AnonMids
-import typings.sdpTransform.AnonSemantic
-import typings.sdpTransform.AnonStart
-import typings.sdpTransform.AnonUri
-import typings.sdpTransform.AnonValueString
+import typings.sdpTransform.anon.Address
+import typings.sdpTransform.anon.AddressTypes
+import typings.sdpTransform.anon.Hash
+import typings.sdpTransform.anon.Ip
+import typings.sdpTransform.anon.Limit
+import typings.sdpTransform.anon.Mids
+import typings.sdpTransform.anon.Semantic
+import typings.sdpTransform.anon.Start
+import typings.sdpTransform.anon.Uri
+import typings.sdpTransform.anon.ValueString
+import typings.sdpTransform.anon.typestringportnumberproto
 import typings.sdpTransform.sdpTransformStrings.inactive
 import typings.sdpTransform.sdpTransformStrings.recvonly
 import typings.sdpTransform.sdpTransformStrings.sendonly
 import typings.sdpTransform.sdpTransformStrings.sendrecv
-import typings.sdpTransform.typestringportnumberproto
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,7 +29,7 @@ trait SessionDescription
   // s=
   var name: js.UndefOr[String] = js.undefined
   // o=
-  var origin: js.UndefOr[AnonAddress] = js.undefined
+  var origin: js.UndefOr[Address] = js.undefined
   // p=
   var phone: js.UndefOr[String] = js.undefined
   // r=
@@ -37,7 +37,7 @@ trait SessionDescription
   // z=
   var timezones: js.UndefOr[String] = js.undefined
   // t=0 0
-  var timing: js.UndefOr[AnonStart] = js.undefined
+  var timing: js.UndefOr[Start] = js.undefined
   // u=
   var uri: js.UndefOr[String] = js.undefined
   var version: js.UndefOr[Double] = js.undefined
@@ -47,31 +47,31 @@ object SessionDescription {
   @scala.inline
   def apply(
     media: js.Array[typestringportnumberproto],
-    bandwidth: js.Array[AnonLimit] = null,
-    connection: AnonIp = null,
+    bandwidth: js.Array[Limit] = null,
+    connection: Ip = null,
     control: String = null,
     description: String = null,
     direction: sendrecv | recvonly | sendonly | inactive = null,
     email: String = null,
-    ext: js.Array[AnonUri] = null,
-    fingerprint: AnonHash = null,
-    groups: js.Array[AnonMids] = null,
+    ext: js.Array[Uri] = null,
+    fingerprint: Hash = null,
+    groups: js.Array[Mids] = null,
     iceOptions: String = null,
     icePwd: String = null,
     iceUfrag: String = null,
     icelite: String = null,
-    invalid: js.Array[AnonValueString] = null,
-    msidSemantic: AnonSemantic = null,
+    invalid: js.Array[ValueString] = null,
+    msidSemantic: Semantic = null,
     name: String = null,
-    origin: AnonAddress = null,
+    origin: Address = null,
     phone: String = null,
     repeats: String = null,
     setup: String = null,
-    sourceFilter: AnonAddressTypes = null,
+    sourceFilter: AddressTypes = null,
     timezones: String = null,
-    timing: AnonStart = null,
+    timing: Start = null,
     uri: String = null,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): SessionDescription = {
     val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any])
     if (bandwidth != null) __obj.updateDynamic("bandwidth")(bandwidth.asInstanceOf[js.Any])
@@ -98,7 +98,7 @@ object SessionDescription {
     if (timezones != null) __obj.updateDynamic("timezones")(timezones.asInstanceOf[js.Any])
     if (timing != null) __obj.updateDynamic("timing")(timing.asInstanceOf[js.Any])
     if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionDescription]
   }
 }

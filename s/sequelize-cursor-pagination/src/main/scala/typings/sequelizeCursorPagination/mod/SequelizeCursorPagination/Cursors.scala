@@ -14,9 +14,7 @@ trait Cursors extends js.Object {
 object Cursors {
   @scala.inline
   def apply(hasNext: Boolean, hasPrevious: Boolean, after: String = null, before: String = null): Cursors = {
-    val __obj = js.Dynamic.literal(hasNext = hasNext.asInstanceOf[js.Any], hasPrevious = hasPrevious.asInstanceOf[js.Any])
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(hasNext = hasNext.asInstanceOf[js.Any], hasPrevious = hasPrevious.asInstanceOf[js.Any], after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cursors]
   }
 }

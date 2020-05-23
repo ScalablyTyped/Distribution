@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLAudioElement")
 @js.native
-class HTMLAudioElement protected () extends js.Object {
+trait HTMLAudioElement extends js.Object {
   @JSName("MSHTML.HTMLAudioElement_typekey")
   var MSHTMLDotHTMLAudioElement_typekey: HTMLAudioElement = js.native
   var accessKey: String = js.native

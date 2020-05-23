@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RowDefinitionProps
-  extends // Allow custom plugin props
-/* x */ StringDictionary[js.Any] {
+  extends /* x */ StringDictionary[js.Any] {
   //The column that will be known used to track child data
   //By default this will be "children"
   var childColumnName: js.UndefOr[String] = js.undefined
@@ -21,8 +20,7 @@ trait RowDefinitionProps
 object RowDefinitionProps {
   @scala.inline
   def apply(
-    StringDictionary: // Allow custom plugin props
-  /* x */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     childColumnName: String = null,
     cssClassName: String | (js.Function1[/* props */ js.Any, String]) = null,
     rowKey: String = null

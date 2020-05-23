@@ -15,7 +15,7 @@ object GetConfig {
   @scala.inline
   def apply(autoCreate: js.UndefOr[Boolean] = js.undefined): GetConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoCreate)) __obj.updateDynamic("autoCreate")(autoCreate.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCreate)) __obj.updateDynamic("autoCreate")(autoCreate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConfig]
   }
 }

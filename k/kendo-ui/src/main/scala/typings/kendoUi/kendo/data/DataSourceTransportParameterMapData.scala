@@ -23,22 +23,22 @@ object DataSourceTransportParameterMapData {
     filter: DataSourceParameterMapDataFilter = null,
     group: js.Array[DataSourceParameterMapDataGroup] = null,
     models: js.Array[Model] = null,
-    page: Int | Double = null,
-    pageSize: Int | Double = null,
-    skip: Int | Double = null,
+    page: js.UndefOr[Double] = js.undefined,
+    pageSize: js.UndefOr[Double] = js.undefined,
+    skip: js.UndefOr[Double] = js.undefined,
     sort: js.Array[DataSourceParameterMapDataSort] = null,
-    take: Int | Double = null
+    take: js.UndefOr[Double] = js.undefined
   ): DataSourceTransportParameterMapData = {
     val __obj = js.Dynamic.literal()
     if (aggregate != null) __obj.updateDynamic("aggregate")(aggregate.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (models != null) __obj.updateDynamic("models")(models.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (take != null) __obj.updateDynamic("take")(take.asInstanceOf[js.Any])
+    if (!js.isUndefined(take)) __obj.updateDynamic("take")(take.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceTransportParameterMapData]
   }
 }

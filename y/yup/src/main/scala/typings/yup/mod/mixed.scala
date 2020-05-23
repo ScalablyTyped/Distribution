@@ -1,7 +1,7 @@
 package typings.yup.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.yup.AnonDictkey
+import typings.yup.anon.Dictkey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 // tslint:disable-next-line:no-unnecessary-generics
 class mixed[T] () extends MixedSchema[T] {
-  def this(options: AnonDictkey) = this()
+  def this(options: Dictkey) = this()
 }
 
 @JSImport("yup", "mixed")

@@ -55,23 +55,23 @@ object ModifyClientVpnEndpointRequest {
     ConnectionLogOptions: ConnectionLogOptions = null,
     Description: String = null,
     DnsServers: DnsServersOptionsModifyStructure = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     SecurityGroupIds: ClientVpnSecurityGroupIdSet = null,
     ServerCertificateArn: String = null,
-    SplitTunnel: js.UndefOr[scala.Boolean] = js.undefined,
+    SplitTunnel: js.UndefOr[Boolean] = js.undefined,
     VpcId: VpcId = null,
-    VpnPort: Int | scala.Double = null
+    VpnPort: js.UndefOr[Integer] = js.undefined
   ): ModifyClientVpnEndpointRequest = {
     val __obj = js.Dynamic.literal(ClientVpnEndpointId = ClientVpnEndpointId.asInstanceOf[js.Any])
     if (ConnectionLogOptions != null) __obj.updateDynamic("ConnectionLogOptions")(ConnectionLogOptions.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (DnsServers != null) __obj.updateDynamic("DnsServers")(DnsServers.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds.asInstanceOf[js.Any])
     if (ServerCertificateArn != null) __obj.updateDynamic("ServerCertificateArn")(ServerCertificateArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(SplitTunnel)) __obj.updateDynamic("SplitTunnel")(SplitTunnel.asInstanceOf[js.Any])
+    if (!js.isUndefined(SplitTunnel)) __obj.updateDynamic("SplitTunnel")(SplitTunnel.get.asInstanceOf[js.Any])
     if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
-    if (VpnPort != null) __obj.updateDynamic("VpnPort")(VpnPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(VpnPort)) __obj.updateDynamic("VpnPort")(VpnPort.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyClientVpnEndpointRequest]
   }
 }

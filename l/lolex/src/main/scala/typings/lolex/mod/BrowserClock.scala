@@ -1,8 +1,9 @@
 package typings.lolex.mod
 
-import typings.lolex.AnonNow
-import typings.std.Date
+import org.scalablytyped.runtime.Instantiable1
+import typings.lolex.anon.Now
 import typings.std.DateConstructor
+import typings.std.global.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +18,7 @@ trait BrowserClock extends Clock {
     * Implements the Date object but using this clock to provide the correct time.
     */
   @JSName("Date")
-  var Date_Original: DateConstructor = js.native
+  var Date_Original: DateConstructor with (Instantiable1[/* value */ Double, Date]) = js.native
   /**
     * Maximum number of timers that will be run when calling runAll().
     */
@@ -29,7 +30,7 @@ trait BrowserClock extends Clock {
   /**
     * Mimics performance.now().
     */
-  var performance: AnonNow = js.native
+  var performance: Now = js.native
   /**
     * Implements the Date object but using this clock to provide the correct time.
     */
@@ -155,7 +156,7 @@ trait BrowserClock extends Clock {
     */
   def setSystemTime(): Unit = js.native
   def setSystemTime(now: Double): Unit = js.native
-  def setSystemTime(now: Date): Unit = js.native
+  def setSystemTime(now: typings.std.Date): Unit = js.native
   /**
     * Schedules a callback to be fired once timeout milliseconds have ticked by.
     *

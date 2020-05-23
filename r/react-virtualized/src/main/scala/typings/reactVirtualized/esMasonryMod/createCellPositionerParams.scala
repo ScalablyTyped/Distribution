@@ -18,10 +18,10 @@ object createCellPositionerParams {
     cellMeasurerCache: CellMeasurerCacheInterface,
     columnCount: Double,
     columnWidth: Double,
-    spacer: Int | Double = null
+    spacer: js.UndefOr[Double] = js.undefined
   ): createCellPositionerParams = {
     val __obj = js.Dynamic.literal(cellMeasurerCache = cellMeasurerCache.asInstanceOf[js.Any], columnCount = columnCount.asInstanceOf[js.Any], columnWidth = columnWidth.asInstanceOf[js.Any])
-    if (spacer != null) __obj.updateDynamic("spacer")(spacer.asInstanceOf[js.Any])
+    if (!js.isUndefined(spacer)) __obj.updateDynamic("spacer")(spacer.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[createCellPositionerParams]
   }
 }

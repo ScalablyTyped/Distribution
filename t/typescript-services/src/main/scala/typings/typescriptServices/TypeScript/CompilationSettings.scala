@@ -4,27 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.CompilationSettings")
-@js.native
-class CompilationSettings () extends js.Object {
-  var allowAutomaticSemicolonInsertion: Boolean = js.native
-  var codeGenTarget: LanguageVersion = js.native
-  var codepage: Double = js.native
-  var createFileLog: Boolean = js.native
-  var gatherDiagnostics: Boolean = js.native
-  var generateDeclarationFiles: Boolean = js.native
-  var mapRoot: String = js.native
-  var mapSourceFiles: Boolean = js.native
-  var moduleGenTarget: ModuleGenTarget = js.native
-  var noImplicitAny: Boolean = js.native
-  var noLib: Boolean = js.native
-  var noResolve: Boolean = js.native
-  var outDirOption: String = js.native
-  var outFileOption: String = js.native
-  var propagateEnumConstants: Boolean = js.native
-  var removeComments: Boolean = js.native
-  var sourceRoot: String = js.native
-  var useCaseSensitiveFileResolution: Boolean = js.native
-  var watch: Boolean = js.native
+trait CompilationSettings extends js.Object {
+  var allowAutomaticSemicolonInsertion: Boolean
+  var codeGenTarget: LanguageVersion
+  var codepage: Double
+  var createFileLog: Boolean
+  var gatherDiagnostics: Boolean
+  var generateDeclarationFiles: Boolean
+  var mapRoot: String
+  var mapSourceFiles: Boolean
+  var moduleGenTarget: ModuleGenTarget
+  var noImplicitAny: Boolean
+  var noLib: Boolean
+  var noResolve: Boolean
+  var outDirOption: String
+  var outFileOption: String
+  var propagateEnumConstants: Boolean
+  var removeComments: Boolean
+  var sourceRoot: String
+  var useCaseSensitiveFileResolution: Boolean
+  var watch: Boolean
+}
+
+object CompilationSettings {
+  @scala.inline
+  def apply(
+    allowAutomaticSemicolonInsertion: Boolean,
+    codeGenTarget: LanguageVersion,
+    codepage: Double,
+    createFileLog: Boolean,
+    gatherDiagnostics: Boolean,
+    generateDeclarationFiles: Boolean,
+    mapRoot: String,
+    mapSourceFiles: Boolean,
+    moduleGenTarget: ModuleGenTarget,
+    noImplicitAny: Boolean,
+    noLib: Boolean,
+    noResolve: Boolean,
+    outDirOption: String,
+    outFileOption: String,
+    propagateEnumConstants: Boolean,
+    removeComments: Boolean,
+    sourceRoot: String,
+    useCaseSensitiveFileResolution: Boolean,
+    watch: Boolean
+  ): CompilationSettings = {
+    val __obj = js.Dynamic.literal(allowAutomaticSemicolonInsertion = allowAutomaticSemicolonInsertion.asInstanceOf[js.Any], codeGenTarget = codeGenTarget.asInstanceOf[js.Any], codepage = codepage.asInstanceOf[js.Any], createFileLog = createFileLog.asInstanceOf[js.Any], gatherDiagnostics = gatherDiagnostics.asInstanceOf[js.Any], generateDeclarationFiles = generateDeclarationFiles.asInstanceOf[js.Any], mapRoot = mapRoot.asInstanceOf[js.Any], mapSourceFiles = mapSourceFiles.asInstanceOf[js.Any], moduleGenTarget = moduleGenTarget.asInstanceOf[js.Any], noImplicitAny = noImplicitAny.asInstanceOf[js.Any], noLib = noLib.asInstanceOf[js.Any], noResolve = noResolve.asInstanceOf[js.Any], outDirOption = outDirOption.asInstanceOf[js.Any], outFileOption = outFileOption.asInstanceOf[js.Any], propagateEnumConstants = propagateEnumConstants.asInstanceOf[js.Any], removeComments = removeComments.asInstanceOf[js.Any], sourceRoot = sourceRoot.asInstanceOf[js.Any], useCaseSensitiveFileResolution = useCaseSensitiveFileResolution.asInstanceOf[js.Any], watch = watch.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CompilationSettings]
+  }
 }
 

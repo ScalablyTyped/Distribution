@@ -14,12 +14,17 @@ trait DefFloatObject extends DefObject {
 
 object DefFloatObject {
   @scala.inline
-  def apply(`type`: float, enum: js.Array[Double] = null, max: Int | Double = null, min: Int | Double = null): DefFloatObject = {
+  def apply(
+    `type`: float,
+    enum: js.Array[Double] = null,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined
+  ): DefFloatObject = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (enum != null) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefFloatObject]
   }
 }

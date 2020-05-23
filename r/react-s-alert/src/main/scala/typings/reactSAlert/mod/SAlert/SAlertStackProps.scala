@@ -11,10 +11,10 @@ trait SAlertStackProps extends js.Object {
 
 object SAlertStackProps {
   @scala.inline
-  def apply(limit: Int | Double = null, spacing: Int | Double = null): SAlertStackProps = {
+  def apply(limit: js.UndefOr[Double] = js.undefined, spacing: js.UndefOr[Double] = js.undefined): SAlertStackProps = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spacing)) __obj.updateDynamic("spacing")(spacing.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SAlertStackProps]
   }
 }

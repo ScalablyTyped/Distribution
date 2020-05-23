@@ -22,10 +22,14 @@ trait GetDatabasesRequest extends js.Object {
 
 object GetDatabasesRequest {
   @scala.inline
-  def apply(CatalogId: CatalogIdString = null, MaxResults: Int | Double = null, NextToken: Token = null): GetDatabasesRequest = {
+  def apply(
+    CatalogId: CatalogIdString = null,
+    MaxResults: js.UndefOr[PageSize] = js.undefined,
+    NextToken: Token = null
+  ): GetDatabasesRequest = {
     val __obj = js.Dynamic.literal()
     if (CatalogId != null) __obj.updateDynamic("CatalogId")(CatalogId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDatabasesRequest]
   }

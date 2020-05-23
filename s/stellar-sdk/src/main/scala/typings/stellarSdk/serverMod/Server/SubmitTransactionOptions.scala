@@ -12,7 +12,7 @@ object SubmitTransactionOptions {
   @scala.inline
   def apply(skipMemoRequiredCheck: js.UndefOr[Boolean] = js.undefined): SubmitTransactionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(skipMemoRequiredCheck)) __obj.updateDynamic("skipMemoRequiredCheck")(skipMemoRequiredCheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipMemoRequiredCheck)) __obj.updateDynamic("skipMemoRequiredCheck")(skipMemoRequiredCheck.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubmitTransactionOptions]
   }
 }

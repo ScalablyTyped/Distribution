@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,20 +36,6 @@ object ParagraphAlignment extends js.Object {
     */
   @js.native
   sealed trait Right extends ParagraphAlignment
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ParagraphAlignment with Double] = js.native
-  /* 2 */ @js.native
-  object Center extends TopLevel[Center with Double]
-  
-  /* 3 */ @js.native
-  object Justify extends TopLevel[Justify with Double]
-  
-  /* 0 */ @js.native
-  object Left extends TopLevel[Left with Double]
-  
-  /* 1 */ @js.native
-  object Right extends TopLevel[Right with Double]
   
 }
 

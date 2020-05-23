@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Storage
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object StorageOpenOptions extends js.Object {
   /** No options are specified. */
   @js.native
   sealed trait none extends StorageOpenOptions
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[StorageOpenOptions with Double] = js.native
-  /* 1 */ @js.native
-  object allowOnlyReaders extends TopLevel[allowOnlyReaders with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
   
 }
 

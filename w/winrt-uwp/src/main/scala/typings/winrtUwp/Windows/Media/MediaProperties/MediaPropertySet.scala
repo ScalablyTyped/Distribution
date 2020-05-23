@@ -8,10 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a set of media properties. */
-@JSGlobal("Windows.Media.MediaProperties.MediaPropertySet")
 @js.native
-/** Creates an instance for MediaPropertySet . */
-class MediaPropertySet () extends js.Object {
+trait MediaPropertySet extends js.Object {
   /** Gets the number of items contained in the property set. */
   var size: Double = js.native
   /** Removes all items from the property set. */

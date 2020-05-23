@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation._
 
 trait IDirectProxy extends IServer {
   /** [Method] inherit docs
-  		* @returns String The url
-  		*/
+    * @returns String The url
+    */
   @JSName("buildUrl")
   var buildUrl_IDirectProxy: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (Function/String) */
   var directFn: js.UndefOr[js.Any] = js.undefined
   /** [Method] In ServerProxy subclasses the create read update and destroy methods all pass through to doRequest
-  		* @param operation Object
-  		* @param callback Object
-  		* @param scope Object
-  		*/
+    * @param operation Object
+    * @param callback Object
+    * @param scope Object
+    */
   @JSName("doRequest")
   var doRequest_IDirectProxy: js.UndefOr[
     js.Function3[
@@ -116,7 +116,7 @@ object IDirectProxy {
     statics: js.Any = null,
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     update: () => Unit = null,
     url: String = null,
@@ -132,7 +132,7 @@ object IDirectProxy {
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
     if (api != null) __obj.updateDynamic("api")(api.asInstanceOf[js.Any])
     if (batch != null) __obj.updateDynamic("batch")(js.Any.fromFunction1(batch))
-    if (!js.isUndefined(batchActions)) __obj.updateDynamic("batchActions")(batchActions.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchActions)) __obj.updateDynamic("batchActions")(batchActions.get.asInstanceOf[js.Any])
     if (batchOrder != null) __obj.updateDynamic("batchOrder")(batchOrder.asInstanceOf[js.Any])
     if (buildRequest != null) __obj.updateDynamic("buildRequest")(js.Any.fromFunction1(buildRequest))
     if (buildUrl != null) __obj.updateDynamic("buildUrl")(js.Any.fromFunction0(buildUrl))
@@ -167,20 +167,20 @@ object IDirectProxy {
     if (idParam != null) __obj.updateDynamic("idParam")(idParam.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
-    if (!js.isUndefined(isProxy)) __obj.updateDynamic("isProxy")(isProxy.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSynchronous)) __obj.updateDynamic("isSynchronous")(isSynchronous.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isProxy)) __obj.updateDynamic("isProxy")(isProxy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSynchronous)) __obj.updateDynamic("isSynchronous")(isSynchronous.get.asInstanceOf[js.Any])
     if (limitParam != null) __obj.updateDynamic("limitParam")(limitParam.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
     if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
-    if (!js.isUndefined(noCache)) __obj.updateDynamic("noCache")(noCache.asInstanceOf[js.Any])
+    if (!js.isUndefined(noCache)) __obj.updateDynamic("noCache")(noCache.get.asInstanceOf[js.Any])
     if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction4(on))
     if (pageParam != null) __obj.updateDynamic("pageParam")(pageParam.asInstanceOf[js.Any])
     if (paramOrder != null) __obj.updateDynamic("paramOrder")(paramOrder.asInstanceOf[js.Any])
-    if (!js.isUndefined(paramsAsHash)) __obj.updateDynamic("paramsAsHash")(paramsAsHash.asInstanceOf[js.Any])
+    if (!js.isUndefined(paramsAsHash)) __obj.updateDynamic("paramsAsHash")(paramsAsHash.get.asInstanceOf[js.Any])
     if (read != null) __obj.updateDynamic("read")(js.Any.fromFunction0(read))
     if (reader != null) __obj.updateDynamic("reader")(reader.asInstanceOf[js.Any])
     if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction3(relayEvents))
@@ -194,15 +194,15 @@ object IDirectProxy {
     if (setModel != null) __obj.updateDynamic("setModel")(js.Any.fromFunction2(setModel))
     if (setReader != null) __obj.updateDynamic("setReader")(js.Any.fromFunction1(setReader))
     if (setWriter != null) __obj.updateDynamic("setWriter")(js.Any.fromFunction1(setWriter))
-    if (!js.isUndefined(simpleGroupMode)) __obj.updateDynamic("simpleGroupMode")(simpleGroupMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(simpleSortMode)) __obj.updateDynamic("simpleSortMode")(simpleSortMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(simpleGroupMode)) __obj.updateDynamic("simpleGroupMode")(simpleGroupMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(simpleSortMode)) __obj.updateDynamic("simpleSortMode")(simpleSortMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (sortParam != null) __obj.updateDynamic("sortParam")(sortParam.asInstanceOf[js.Any])
     if (startParam != null) __obj.updateDynamic("startParam")(startParam.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction1(suspendEvents))
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction3(un))
     if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction0(update))
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])

@@ -55,19 +55,19 @@ object ITooltipOptions {
     animation: js.UndefOr[Boolean] = js.undefined,
     appendToBody: js.UndefOr[Boolean] = js.undefined,
     placement: String = null,
-    popupCloseDelay: Int | Double = null,
-    popupDelay: Int | Double = null,
+    popupCloseDelay: js.UndefOr[Double] = js.undefined,
+    popupDelay: js.UndefOr[Double] = js.undefined,
     trigger: String = null,
     useContentExp: js.UndefOr[Boolean] = js.undefined
   ): ITooltipOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (!js.isUndefined(appendToBody)) __obj.updateDynamic("appendToBody")(appendToBody.asInstanceOf[js.Any])
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(appendToBody)) __obj.updateDynamic("appendToBody")(appendToBody.get.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (popupCloseDelay != null) __obj.updateDynamic("popupCloseDelay")(popupCloseDelay.asInstanceOf[js.Any])
-    if (popupDelay != null) __obj.updateDynamic("popupDelay")(popupDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(popupCloseDelay)) __obj.updateDynamic("popupCloseDelay")(popupCloseDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(popupDelay)) __obj.updateDynamic("popupDelay")(popupDelay.get.asInstanceOf[js.Any])
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
-    if (!js.isUndefined(useContentExp)) __obj.updateDynamic("useContentExp")(useContentExp.asInstanceOf[js.Any])
+    if (!js.isUndefined(useContentExp)) __obj.updateDynamic("useContentExp")(useContentExp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITooltipOptions]
   }
 }

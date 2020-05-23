@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.IOmHistory")
 @js.native
-class IOmHistory protected () extends js.Object {
+trait IOmHistory extends js.Object {
   @JSName("MSHTML.IOmHistory_typekey")
   var MSHTMLDotIOmHistory_typekey: IOmHistory = js.native
   val length: Double = js.native

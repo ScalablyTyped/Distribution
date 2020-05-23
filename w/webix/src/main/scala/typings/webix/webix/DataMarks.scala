@@ -1,6 +1,5 @@
 package typings.webix.webix
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,8 +19,4 @@ trait DataMarks extends js.Object {
   def removeCss(id: Double, css: String): Unit = js.native
   def removeCss(id: Double, css: String, silent: Boolean): Unit = js.native
 }
-
-@JSGlobal("webix.DataMarks")
-@js.native
-object DataMarks extends TopLevel[DataMarks]
 

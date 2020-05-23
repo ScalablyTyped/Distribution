@@ -85,10 +85,10 @@ object CreateFunctionRequest {
     Environment: Environment = null,
     KMSKeyArn: KMSKeyArn = null,
     Layers: LayerList = null,
-    MemorySize: Int | Double = null,
-    Publish: js.UndefOr[scala.Boolean] = js.undefined,
+    MemorySize: js.UndefOr[MemorySize] = js.undefined,
+    Publish: js.UndefOr[Boolean] = js.undefined,
     Tags: Tags = null,
-    Timeout: Int | Double = null,
+    Timeout: js.UndefOr[Timeout] = js.undefined,
     TracingConfig: TracingConfig = null,
     VpcConfig: VpcConfig = null
   ): CreateFunctionRequest = {
@@ -98,10 +98,10 @@ object CreateFunctionRequest {
     if (Environment != null) __obj.updateDynamic("Environment")(Environment.asInstanceOf[js.Any])
     if (KMSKeyArn != null) __obj.updateDynamic("KMSKeyArn")(KMSKeyArn.asInstanceOf[js.Any])
     if (Layers != null) __obj.updateDynamic("Layers")(Layers.asInstanceOf[js.Any])
-    if (MemorySize != null) __obj.updateDynamic("MemorySize")(MemorySize.asInstanceOf[js.Any])
-    if (!js.isUndefined(Publish)) __obj.updateDynamic("Publish")(Publish.asInstanceOf[js.Any])
+    if (!js.isUndefined(MemorySize)) __obj.updateDynamic("MemorySize")(MemorySize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Publish)) __obj.updateDynamic("Publish")(Publish.get.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (Timeout != null) __obj.updateDynamic("Timeout")(Timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(Timeout)) __obj.updateDynamic("Timeout")(Timeout.get.asInstanceOf[js.Any])
     if (TracingConfig != null) __obj.updateDynamic("TracingConfig")(TracingConfig.asInstanceOf[js.Any])
     if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFunctionRequest]

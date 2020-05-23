@@ -1,5 +1,6 @@
 package typings.pixiJs.mod
 
+import typings.pixiJs.PIXI.ILoaderPlugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,8 +17,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("pixi.js", "SpritesheetLoader")
 @js.native
-class SpritesheetLoader ()
-  extends typings.pixiJs.PIXI.SpritesheetLoader
+class SpritesheetLoader () extends ILoaderPlugin
 
 /* static members */
 @JSImport("pixi.js", "SpritesheetLoader")

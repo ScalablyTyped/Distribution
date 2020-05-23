@@ -3,7 +3,7 @@ package typings.agGrid.eventsMod
 import typings.agGrid.columnApiMod.ColumnApi
 import typings.agGrid.gridApiMod.GridApi
 import typings.agGrid.rowNodeMod.RowNode
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait RowEvent extends AgGridEvent {
   var context: js.Any
   var data: js.Any
-  var event: js.UndefOr[Event_] = js.undefined
+  var event: js.UndefOr[Event] = js.undefined
   var node: RowNode
   var rowIndex: Double
   var rowPinned: String
@@ -28,7 +28,7 @@ object RowEvent {
     rowIndex: Double,
     rowPinned: String,
     `type`: String,
-    event: Event_ = null
+    event: Event = null
   ): RowEvent = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any], rowPinned = rowPinned.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

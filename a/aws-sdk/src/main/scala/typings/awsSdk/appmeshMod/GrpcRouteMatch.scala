@@ -11,7 +11,8 @@ trait GrpcRouteMatch extends js.Object {
     */
   var metadata: js.UndefOr[GrpcRouteMetadataList] = js.native
   /**
-    * The method name to match from the request. If you specify a name, you must also specify a serviceName.
+    * The method name to match from the request. If you specify a name, you must also specify
+    a serviceName.
     */
   var methodName: js.UndefOr[MethodName] = js.native
   /**

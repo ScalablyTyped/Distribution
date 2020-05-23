@@ -60,13 +60,13 @@ object Options {
     returnFocusOnDeactivate: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clickOutsideDeactivates)) __obj.updateDynamic("clickOutsideDeactivates")(clickOutsideDeactivates.asInstanceOf[js.Any])
-    if (!js.isUndefined(escapeDeactivates)) __obj.updateDynamic("escapeDeactivates")(escapeDeactivates.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickOutsideDeactivates)) __obj.updateDynamic("clickOutsideDeactivates")(clickOutsideDeactivates.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(escapeDeactivates)) __obj.updateDynamic("escapeDeactivates")(escapeDeactivates.get.asInstanceOf[js.Any])
     if (fallbackFocus != null) __obj.updateDynamic("fallbackFocus")(fallbackFocus.asInstanceOf[js.Any])
     if (initialFocus != null) __obj.updateDynamic("initialFocus")(initialFocus.asInstanceOf[js.Any])
     if (onActivate != null) __obj.updateDynamic("onActivate")(js.Any.fromFunction0(onActivate))
     if (onDeactivate != null) __obj.updateDynamic("onDeactivate")(js.Any.fromFunction0(onDeactivate))
-    if (!js.isUndefined(returnFocusOnDeactivate)) __obj.updateDynamic("returnFocusOnDeactivate")(returnFocusOnDeactivate.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnFocusOnDeactivate)) __obj.updateDynamic("returnFocusOnDeactivate")(returnFocusOnDeactivate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

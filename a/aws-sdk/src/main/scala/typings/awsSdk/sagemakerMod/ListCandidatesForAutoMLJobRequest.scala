@@ -41,7 +41,7 @@ object ListCandidatesForAutoMLJobRequest {
   def apply(
     AutoMLJobName: AutoMLJobName,
     CandidateNameEquals: CandidateName = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[AutoMLMaxResults] = js.undefined,
     NextToken: NextToken = null,
     SortBy: CandidateSortBy = null,
     SortOrder: AutoMLSortOrder = null,
@@ -49,7 +49,7 @@ object ListCandidatesForAutoMLJobRequest {
   ): ListCandidatesForAutoMLJobRequest = {
     val __obj = js.Dynamic.literal(AutoMLJobName = AutoMLJobName.asInstanceOf[js.Any])
     if (CandidateNameEquals != null) __obj.updateDynamic("CandidateNameEquals")(CandidateNameEquals.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (SortBy != null) __obj.updateDynamic("SortBy")(SortBy.asInstanceOf[js.Any])
     if (SortOrder != null) __obj.updateDynamic("SortOrder")(SortOrder.asInstanceOf[js.Any])

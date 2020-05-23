@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TrafficRoute extends js.Object {
   /**
-    *  The ARN of one listener. The listener identifies the route between a target group and a load balancer. This is an array of strings with a maximum size of one. 
+    *  The Amazon Resource Name (ARN) of one listener. The listener identifies the route between a target group and a load balancer. This is an array of strings with a maximum size of one. 
     */
   var listenerArns: js.UndefOr[ListenerArnList] = js.native
 }

@@ -14,10 +14,13 @@ trait IRbmSuggestedReply extends js.Object {
 
 object IRbmSuggestedReply {
   @scala.inline
-  def apply(postbackData: String = null, text: String = null): IRbmSuggestedReply = {
+  def apply(
+    postbackData: js.UndefOr[Null | String] = js.undefined,
+    text: js.UndefOr[Null | String] = js.undefined
+  ): IRbmSuggestedReply = {
     val __obj = js.Dynamic.literal()
-    if (postbackData != null) __obj.updateDynamic("postbackData")(postbackData.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (!js.isUndefined(postbackData)) __obj.updateDynamic("postbackData")(postbackData.asInstanceOf[js.Any])
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRbmSuggestedReply]
   }
 }

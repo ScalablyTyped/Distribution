@@ -1,7 +1,7 @@
 package typings.reactOnclickoutside.mod
 
 import typings.react.mod.Component
-import typings.react.mod._Global_.JSX.LibraryManagedAttributes
+import typings.react.mod.global.JSX.LibraryManagedAttributes
 import typings.std.InstanceType
 import scala.scalajs.js
 import scala.scalajs.js.`|`

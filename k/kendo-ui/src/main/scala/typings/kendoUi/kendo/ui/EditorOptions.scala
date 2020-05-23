@@ -59,7 +59,7 @@ object EditorOptions {
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (deserialization != null) __obj.updateDynamic("deserialization")(deserialization.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (!js.isUndefined(encoded)) __obj.updateDynamic("encoded")(encoded.asInstanceOf[js.Any])
+    if (!js.isUndefined(encoded)) __obj.updateDynamic("encoded")(encoded.get.asInstanceOf[js.Any])
     if (execute != null) __obj.updateDynamic("execute")(js.Any.fromFunction1(execute))
     if (fileBrowser != null) __obj.updateDynamic("fileBrowser")(fileBrowser.asInstanceOf[js.Any])
     if (imageBrowser != null) __obj.updateDynamic("imageBrowser")(imageBrowser.asInstanceOf[js.Any])

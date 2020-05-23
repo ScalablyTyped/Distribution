@@ -10,26 +10,26 @@ import scala.scalajs.js.annotation._
 
 trait IQuery extends IBase {
   /** [Method] Returns true if the passed element s match the passed simple selector e g
-  		* @param el String/HTMLElement/Array An element id, element or array of elements
-  		* @param selector String The simple selector to test
-  		* @returns Boolean
-  		*/
+    * @param el String/HTMLElement/Array An element id, element or array of elements
+    * @param selector String The simple selector to test
+    * @returns Boolean
+    */
   var is: js.UndefOr[
     js.Function2[/* el */ js.UndefOr[js.Any], /* selector */ js.UndefOr[String], Boolean]
   ] = js.undefined
   /** [Method] Selects a group of elements
-  		* @param selector String The selector/xpath query (can be a comma separated list of selectors)
-  		* @param root HTMLElement/String The start of the query (defaults to document).
-  		* @returns HTMLElement[] An Array of DOM elements which match the selector. If there are no matches, and empty Array is returned.
-  		*/
+    * @param selector String The selector/xpath query (can be a comma separated list of selectors)
+    * @param root HTMLElement/String The start of the query (defaults to document).
+    * @returns HTMLElement[] An Array of DOM elements which match the selector. If there are no matches, and empty Array is returned.
+    */
   var select: js.UndefOr[
     js.Function2[/* selector */ js.UndefOr[String], /* root */ js.UndefOr[js.Any], Array]
   ] = js.undefined
   /** [Method] Selects a single element
-  		* @param selector String The selector/xpath query
-  		* @param root HTMLElement/String The start of the query (defaults to document).
-  		* @returns HTMLElement The DOM element which matched the selector.
-  		*/
+    * @param selector String The selector/xpath query
+    * @param root HTMLElement/String The start of the query (defaults to document).
+    * @returns HTMLElement The DOM element which matched the selector.
+    */
   var selectNode: js.UndefOr[
     js.Function2[/* selector */ js.UndefOr[String], /* root */ js.UndefOr[js.Any], HTMLElement]
   ] = js.undefined
@@ -77,7 +77,7 @@ object IQuery {
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction2(select))
     if (selectNode != null) __obj.updateDynamic("selectNode")(js.Any.fromFunction2(selectNode))
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IQuery]

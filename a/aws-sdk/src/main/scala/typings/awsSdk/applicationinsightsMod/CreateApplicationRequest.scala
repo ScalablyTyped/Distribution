@@ -32,14 +32,14 @@ object CreateApplicationRequest {
   @scala.inline
   def apply(
     ResourceGroupName: ResourceGroupName,
-    CWEMonitorEnabled: js.UndefOr[Boolean] = js.undefined,
-    OpsCenterEnabled: js.UndefOr[Boolean] = js.undefined,
+    CWEMonitorEnabled: js.UndefOr[CWEMonitorEnabled] = js.undefined,
+    OpsCenterEnabled: js.UndefOr[OpsCenterEnabled] = js.undefined,
     OpsItemSNSTopicArn: OpsItemSNSTopicArn = null,
     Tags: TagList = null
   ): CreateApplicationRequest = {
     val __obj = js.Dynamic.literal(ResourceGroupName = ResourceGroupName.asInstanceOf[js.Any])
-    if (!js.isUndefined(CWEMonitorEnabled)) __obj.updateDynamic("CWEMonitorEnabled")(CWEMonitorEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(OpsCenterEnabled)) __obj.updateDynamic("OpsCenterEnabled")(OpsCenterEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(CWEMonitorEnabled)) __obj.updateDynamic("CWEMonitorEnabled")(CWEMonitorEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(OpsCenterEnabled)) __obj.updateDynamic("OpsCenterEnabled")(OpsCenterEnabled.get.asInstanceOf[js.Any])
     if (OpsItemSNSTopicArn != null) __obj.updateDynamic("OpsItemSNSTopicArn")(OpsItemSNSTopicArn.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateApplicationRequest]

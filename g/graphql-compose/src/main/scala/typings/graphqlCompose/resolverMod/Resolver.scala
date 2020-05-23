@@ -4,9 +4,9 @@ import typings.graphql.definitionMod.GraphQLArgumentConfig
 import typings.graphql.definitionMod.GraphQLFieldConfig
 import typings.graphql.definitionMod.GraphQLInputType
 import typings.graphql.definitionMod.GraphQLOutputType
-import typings.graphqlCompose.AnonParams
-import typings.graphqlCompose.AnonProjection
-import typings.graphqlCompose.PartialComposeArgumentCon
+import typings.graphqlCompose.anon.Params
+import typings.graphqlCompose.anon.PartialComposeArgumentCon
+import typings.graphqlCompose.anon.Projection
 import typings.graphqlCompose.definitionsMod.Extensions
 import typings.graphqlCompose.inputTypeComposerMod.InputTypeComposer
 import typings.graphqlCompose.objectTypeComposerMod.ComposeArgumentConfig
@@ -39,8 +39,8 @@ class Resolver[TSource, TContext, TArgs, TReturn] protected () extends js.Object
   def clone[TNewSource, TNewArgs](opts: ResolverOpts[TNewSource, TContext, TNewArgs, _]): Resolver[TNewSource, TContext, TNewArgs, _] = js.native
   def cloneArg(argName: String, newTypeName: String): this.type = js.native
   def debug(): Resolver[TSource, TContext, TArgs, _] = js.native
-  def debug(filterDotPaths: AnonParams): Resolver[TSource, TContext, TArgs, _] = js.native
-  def debug(filterDotPaths: AnonParams, opts: ResolveDebugOpts): Resolver[TSource, TContext, TArgs, _] = js.native
+  def debug(filterDotPaths: Params): Resolver[TSource, TContext, TArgs, _] = js.native
+  def debug(filterDotPaths: Params, opts: ResolveDebugOpts): Resolver[TSource, TContext, TArgs, _] = js.native
   def debugExecTime(): Resolver[TSource, TContext, TArgs, _] = js.native
   def debugParams(): Resolver[TSource, TContext, TArgs, _] = js.native
   def debugParams(filterPaths: String): Resolver[TSource, TContext, TArgs, _] = js.native
@@ -70,7 +70,7 @@ class Resolver[TSource, TContext, TArgs, TReturn] protected () extends js.Object
     * -----------------------------------------------
     */
   def getFieldConfig(): GraphQLFieldConfig[TSource, TContext, TArgs] = js.native
-  def getFieldConfig(opts: AnonProjection): GraphQLFieldConfig[TSource, TContext, TArgs] = js.native
+  def getFieldConfig(opts: Projection): GraphQLFieldConfig[TSource, TContext, TArgs] = js.native
   def getKind(): ResolverKinds | Unit = js.native
   /**
     * -----------------------------------------------

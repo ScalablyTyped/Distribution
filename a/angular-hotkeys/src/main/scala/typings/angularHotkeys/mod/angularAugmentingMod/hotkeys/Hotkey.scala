@@ -3,7 +3,7 @@ package typings.angularHotkeys.mod.angularAugmentingMod.hotkeys
 import typings.angularHotkeys.angularHotkeysStrings.INPUT
 import typings.angularHotkeys.angularHotkeysStrings.SELECT
 import typings.angularHotkeys.angularHotkeysStrings.TEXTAREA
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +35,13 @@ trait Hotkey extends js.Object {
   /**
     * The function to execute when the key(s) are pressed. Passes along two arguments, event and hotkey
     */
-  def callback(event: Event_, hotkey: Hotkey): Unit
+  def callback(event: Event, hotkey: Hotkey): Unit
 }
 
 object Hotkey {
   @scala.inline
   def apply(
-    callback: (Event_, Hotkey) => Unit,
+    callback: (Event, Hotkey) => Unit,
     combo: String | js.Array[String],
     action: String = null,
     allowIn: js.Array[INPUT | SELECT | TEXTAREA] = null,
@@ -52,7 +52,7 @@ object Hotkey {
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     if (allowIn != null) __obj.updateDynamic("allowIn")(allowIn.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hotkey]
   }
 }

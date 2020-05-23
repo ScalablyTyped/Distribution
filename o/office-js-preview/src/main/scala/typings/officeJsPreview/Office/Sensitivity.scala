@@ -11,46 +11,46 @@ import scala.scalajs.js.annotation._
   * [Api set: Mailbox Preview]
   *
   * @remarks
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-  * 
+  *
   * @beta
-  */    
+  */
 @js.native
 trait Sensitivity extends js.Object {
   /**
     * Gets the value of the appointment sensitivity.
     *
-    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of 
+    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                 type `Office.AsyncResult`.
     *
     * [Api set: Mailbox Preview]
     *
     * @remarks
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-    * 
+    *
     * @beta
     */
   def getAsync(callback: js.Function1[/* asyncResult */ AsyncResult[AppointmentSensitivityType], Unit]): Unit = js.native
   /**
     * Gets the value of the appointment sensitivity.
-    * 
+    *
     * [Api set: Mailbox Preview]
     *
     * @remarks
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-    * 
+    *
     * @param options - An object literal that contains one or more of the following properties.
     *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
-    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of 
+    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                 type `Office.AsyncResult`.
     *
     * @beta
@@ -83,7 +83,7 @@ trait Sensitivity extends js.Object {
     *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object.
-    * 
+    *
     * @beta
     */
   def setAsync(sensitivity: AppointmentSensitivityType): Unit = js.native

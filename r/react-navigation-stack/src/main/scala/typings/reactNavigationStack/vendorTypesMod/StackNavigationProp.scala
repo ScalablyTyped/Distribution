@@ -1,7 +1,7 @@
 package typings.reactNavigationStack.vendorTypesMod
 
-import typings.reactNavigation.AnonKey
-import typings.reactNavigation.AnonParamsP
+import typings.reactNavigation.anon.Key
+import typings.reactNavigation.anon.ParamsP
 import typings.reactNavigation.mod.NavigationAction
 import typings.reactNavigation.mod.NavigationDispatch
 import typings.reactNavigation.mod.NavigationEventCallback
@@ -11,7 +11,7 @@ import typings.reactNavigation.mod.NavigationParams
 import typings.reactNavigation.mod.NavigationRouter
 import typings.reactNavigation.mod.NavigationScreenProp
 import typings.reactNavigation.mod.NavigationState
-import typings.reactNavigationStack.AnonImmediate
+import typings.reactNavigationStack.anon.Immediate
 import typings.reactNavigationStack.reactNavigationStackStrings.refocus
 import typings.std.NonNullable
 import typings.std.Partial
@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
 trait StackNavigationProp[State, Params] extends js.Object {
   var dispatch: NavigationDispatch = js.native
   var router: js.UndefOr[NavigationRouter[NavigationState, js.Object]] = js.native
-  var state: State with AnonParamsP[Params] = js.native
+  var state: State with ParamsP[Params] = js.native
   def addListener(eventName: String, callback: NavigationEventCallback): NavigationEventSubscription = js.native
   def addListener(event: NavigationStackEventName, callback: NavigationEventCallback): NavigationEventSubscription = js.native
   def dangerouslyGetParent(): js.UndefOr[NavigationScreenProp[State, NavigationParams]] = js.native
@@ -44,15 +44,15 @@ trait StackNavigationProp[State, Params] extends js.Object {
   def goBack(routeKey: String): Boolean = js.native
   def isFirstRouteInParent(): Boolean = js.native
   def isFocused(): Boolean = js.native
-  def navigate[T /* <: NavigationParams */](options: AnonKey[T]): Boolean = js.native
+  def navigate[T /* <: NavigationParams */](options: Key[T]): Boolean = js.native
   def navigate[T /* <: NavigationParams */](routeNameOrOptions: String): Boolean = js.native
   def navigate[T /* <: NavigationParams */](routeNameOrOptions: String, params: T): Boolean = js.native
   def navigate[T /* <: NavigationParams */](routeNameOrOptions: String, params: T, action: NavigationAction): Boolean = js.native
   def pop(): Boolean = js.native
   def pop(n: Double): Boolean = js.native
-  def pop(n: Double, params: AnonImmediate): Boolean = js.native
+  def pop(n: Double, params: Immediate): Boolean = js.native
   def popToTop(): Boolean = js.native
-  def popToTop(params: AnonImmediate): Boolean = js.native
+  def popToTop(params: Immediate): Boolean = js.native
   def push(routeName: String): Boolean = js.native
   def push(routeName: String, params: NavigationParams): Boolean = js.native
   def push(routeName: String, params: NavigationParams, action: NavigationNavigateAction): Boolean = js.native

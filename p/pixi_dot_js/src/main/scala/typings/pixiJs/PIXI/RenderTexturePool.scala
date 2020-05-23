@@ -1,6 +1,5 @@
 package typings.pixiJs.PIXI
 
-import typings.pixiJs.AnonScaleMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,10 +16,8 @@ import scala.scalajs.js.annotation._
   * @class
   * @memberof PIXI
   */
-@JSGlobal("PIXI.RenderTexturePool")
 @js.native
-class RenderTexturePool () extends js.Object {
-  def this(textureOptions: AnonScaleMode) = this()
+trait RenderTexturePool extends js.Object {
   /**
     * Allow renderTextures of the same size as screen, not just pow2
     *
@@ -87,18 +84,5 @@ class RenderTexturePool () extends js.Object {
     * @param {PIXI.ISize} size - Initial size of screen
     */
   def setScreenSize(size: ISize): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("PIXI.RenderTexturePool")
-@js.native
-object RenderTexturePool extends js.Object {
-  /**
-    * Key that is used to store fullscreen renderTextures in a pool
-    *
-    * @static
-    * @const {string}
-    */
-  val SCREEN_KEY: String = js.native
 }
 

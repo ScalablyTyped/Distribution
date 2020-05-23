@@ -1,6 +1,5 @@
 package typings.officeJs.Office.MailboxEnums
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,26 +54,6 @@ object DelegatePermissions extends js.Object {
     */
   @js.native
   sealed trait Write extends DelegatePermissions
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DelegatePermissions with Double] = js.native
-  /* 8 */ @js.native
-  object DeleteAll extends TopLevel[DeleteAll with Double]
-  
-  /* 4 */ @js.native
-  object DeleteOwn extends TopLevel[DeleteOwn with Double]
-  
-  /* 32 */ @js.native
-  object EditAll extends TopLevel[EditAll with Double]
-  
-  /* 16 */ @js.native
-  object EditOwn extends TopLevel[EditOwn with Double]
-  
-  /* 1 */ @js.native
-  object Read extends TopLevel[Read with Double]
-  
-  /* 2 */ @js.native
-  object Write extends TopLevel[Write with Double]
   
 }
 

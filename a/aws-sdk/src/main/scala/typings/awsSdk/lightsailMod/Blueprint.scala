@@ -64,7 +64,7 @@ object Blueprint {
     group: NonEmptyString = null,
     isActive: js.UndefOr[Boolean] = js.undefined,
     licenseUrl: String = null,
-    minPower: Int | Double = null,
+    minPower: js.UndefOr[integer] = js.undefined,
     name: ResourceName = null,
     platform: InstancePlatform = null,
     productUrl: String = null,
@@ -76,9 +76,9 @@ object Blueprint {
     if (blueprintId != null) __obj.updateDynamic("blueprintId")(blueprintId.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.asInstanceOf[js.Any])
+    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.get.asInstanceOf[js.Any])
     if (licenseUrl != null) __obj.updateDynamic("licenseUrl")(licenseUrl.asInstanceOf[js.Any])
-    if (minPower != null) __obj.updateDynamic("minPower")(minPower.asInstanceOf[js.Any])
+    if (!js.isUndefined(minPower)) __obj.updateDynamic("minPower")(minPower.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
     if (productUrl != null) __obj.updateDynamic("productUrl")(productUrl.asInstanceOf[js.Any])

@@ -13,9 +13,9 @@ trait Folder extends js.Object {
 
 object Folder {
   @scala.inline
-  def apply(childCount: Int | Double = null, view: FolderView = null): Folder = {
+  def apply(childCount: js.UndefOr[Double] = js.undefined, view: FolderView = null): Folder = {
     val __obj = js.Dynamic.literal()
-    if (childCount != null) __obj.updateDynamic("childCount")(childCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(childCount)) __obj.updateDynamic("childCount")(childCount.get.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[Folder]
   }

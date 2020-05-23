@@ -22,7 +22,7 @@ object StoryContext {
     kind: String,
     name: String,
     parameters: Parameters,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     hooks: HooksContext = null
   ): StoryContext = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])

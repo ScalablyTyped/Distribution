@@ -1,6 +1,5 @@
 package typings.webix.webix
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,8 +11,4 @@ trait BaseBind extends js.Object {
   def bind(target: js.Any, rule: WebixCallback, format: String): Unit = js.native
   def unbind(): Unit = js.native
 }
-
-@JSGlobal("webix.BaseBind")
-@js.native
-object BaseBind extends TopLevel[BaseBind]
 

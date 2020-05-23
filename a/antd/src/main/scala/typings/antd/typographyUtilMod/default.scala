@@ -1,6 +1,6 @@
 package typings.antd.typographyUtilMod
 
-import typings.antd.AnonContent
+import typings.antd.anon.Content
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -16,6 +16,6 @@ object default extends js.Object {
     content: ReactNode,
     fixedContent: js.Array[ReactNode],
     ellipsisStr: String
-  ): AnonContent = js.native
+  ): Content = js.native
 }
 

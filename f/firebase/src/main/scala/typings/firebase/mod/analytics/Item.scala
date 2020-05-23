@@ -48,7 +48,7 @@ object Item {
     creative_slot: String = null,
     discount: Currency = null,
     id: String = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     item_brand: String = null,
     item_category: String = null,
     item_category2: String = null,
@@ -65,7 +65,7 @@ object Item {
     price: Currency = null,
     promotion_id: String = null,
     promotion_name: String = null,
-    quantity: Int | Double = null
+    quantity: js.UndefOr[Double] = js.undefined
   ): Item = {
     val __obj = js.Dynamic.literal()
     if (affiliation != null) __obj.updateDynamic("affiliation")(affiliation.asInstanceOf[js.Any])
@@ -76,7 +76,7 @@ object Item {
     if (creative_slot != null) __obj.updateDynamic("creative_slot")(creative_slot.asInstanceOf[js.Any])
     if (discount != null) __obj.updateDynamic("discount")(discount.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (item_brand != null) __obj.updateDynamic("item_brand")(item_brand.asInstanceOf[js.Any])
     if (item_category != null) __obj.updateDynamic("item_category")(item_category.asInstanceOf[js.Any])
     if (item_category2 != null) __obj.updateDynamic("item_category2")(item_category2.asInstanceOf[js.Any])
@@ -93,7 +93,7 @@ object Item {
     if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
     if (promotion_id != null) __obj.updateDynamic("promotion_id")(promotion_id.asInstanceOf[js.Any])
     if (promotion_name != null) __obj.updateDynamic("promotion_name")(promotion_name.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Item]
   }
 }

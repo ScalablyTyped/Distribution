@@ -1,5 +1,6 @@
 package typings.authmosphere
 
+import typings.authmosphere.anon.Scope
 import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import typings.expressServeStaticCore.mod.Request
@@ -14,7 +15,7 @@ object extendedRequestMod extends js.Object {
   trait ExtendedRequest
     extends Request[ParamsDictionary, js.Any, js.Any, Query] {
     @JSName("$$tokeninfo")
-    var DollarDollartokeninfo: js.UndefOr[AnonScope] = js.native
+    var DollarDollartokeninfo: js.UndefOr[Scope] = js.native
   }
   
 }

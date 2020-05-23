@@ -9,18 +9,8 @@ import scala.scalajs.js.annotation._
 /**
   * A rich input box that provides suggestions as the user types.
   **/
-@JSGlobal("WinJS.UI.AutoSuggestBox")
 @js.native
-//#region Constructors
-/**
-  * Creates a new AutoSuggestBox.
-  * @constructor
-  * @param element The DOM element hosts the new AutoSuggestBox.
-  * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-  **/
-class AutoSuggestBox () extends js.Object {
-  def this(element: HTMLElement) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+trait AutoSuggestBox extends js.Object {
   //#endregion Methods
   //#region Properties
   /**
@@ -108,21 +98,5 @@ class AutoSuggestBox () extends js.Object {
     * @param settings The new settings for local content suggestions.
     **/
   def setLocalContentSuggestionSettings(settings: js.Any): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("WinJS.UI.AutoSuggestBox")
-@js.native
-object AutoSuggestBox extends js.Object {
-  /**
-    * Indicates that the object is compatibile with declarative processing.
-    **/
-  var supportedForProcessing: Boolean = js.native
-  //#endregion Properties
-  /**
-    * Creates the image argument for SearchSuggestionCollection.appendResultSuggestion.
-    * @param url The url of the image.
-    **/
-  def createResultSuggestionImage(url: String): js.Any = js.native
 }
 

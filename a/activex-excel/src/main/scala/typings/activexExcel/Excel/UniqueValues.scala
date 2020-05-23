@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.UniqueValues")
 @js.native
-class UniqueValues protected () extends js.Object {
+trait UniqueValues extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   @JSName("AppliesTo")
   val AppliesTo_Original: Range = js.native

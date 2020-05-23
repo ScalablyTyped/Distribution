@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the video duration is available.
-		 */
+  * Fired when the video duration is available.
+  */
 trait VideoPlayerDurationavailableEvent extends VideoPlayerBaseEvent {
   /**
-  			 * Video duration, in milliseconds.
-  			 */
+    * Video duration, in milliseconds.
+    */
   var duration: Double
 }
 

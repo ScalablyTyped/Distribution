@@ -13,30 +13,30 @@ trait IWallOptions extends IParticleOptions {
 object IWallOptions {
   @scala.inline
   def apply(
-    collisionGroup: Int | Double = null,
-    collisionMask: Int | Double = null,
-    direction: Int | Double = null,
-    friction: Int | Double = null,
-    mass: Int | Double = null,
+    collisionGroup: js.UndefOr[Double] = js.undefined,
+    collisionMask: js.UndefOr[Double] = js.undefined,
+    direction: js.UndefOr[Double] = js.undefined,
+    friction: js.UndefOr[Double] = js.undefined,
+    mass: js.UndefOr[Double] = js.undefined,
     orientation: Quaternion = null,
     position: Vec3 = null,
-    restitution: Int | Double = null,
-    restrictions: Int | Double = null,
+    restitution: js.UndefOr[Double] = js.undefined,
+    restrictions: js.UndefOr[Double] = js.undefined,
     size: js.Array[Double] = null,
-    velocity: Int | Double = null
+    velocity: js.UndefOr[Double] = js.undefined
   ): IWallOptions = {
     val __obj = js.Dynamic.literal()
-    if (collisionGroup != null) __obj.updateDynamic("collisionGroup")(collisionGroup.asInstanceOf[js.Any])
-    if (collisionMask != null) __obj.updateDynamic("collisionMask")(collisionMask.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (friction != null) __obj.updateDynamic("friction")(friction.asInstanceOf[js.Any])
-    if (mass != null) __obj.updateDynamic("mass")(mass.asInstanceOf[js.Any])
+    if (!js.isUndefined(collisionGroup)) __obj.updateDynamic("collisionGroup")(collisionGroup.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(collisionMask)) __obj.updateDynamic("collisionMask")(collisionMask.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(direction)) __obj.updateDynamic("direction")(direction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(friction)) __obj.updateDynamic("friction")(friction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mass)) __obj.updateDynamic("mass")(mass.get.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (restitution != null) __obj.updateDynamic("restitution")(restitution.asInstanceOf[js.Any])
-    if (restrictions != null) __obj.updateDynamic("restrictions")(restrictions.asInstanceOf[js.Any])
+    if (!js.isUndefined(restitution)) __obj.updateDynamic("restitution")(restitution.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(restrictions)) __obj.updateDynamic("restrictions")(restrictions.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (velocity != null) __obj.updateDynamic("velocity")(velocity.asInstanceOf[js.Any])
+    if (!js.isUndefined(velocity)) __obj.updateDynamic("velocity")(velocity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWallOptions]
   }
 }

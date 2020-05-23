@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the web view content is loaded.
-		 */
+  * Fired when the web view content is loaded.
+  */
 trait WebViewLoadEvent extends WebViewBaseEvent {
   /**
-  			 * URL of the web document.
-  			 */
+    * URL of the web document.
+    */
   var url: String
 }
 

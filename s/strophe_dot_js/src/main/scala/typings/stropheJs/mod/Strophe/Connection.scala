@@ -1,7 +1,7 @@
 package typings.stropheJs.mod.Strophe
 
 import typings.std.Element
-import typings.stropheJs.AnonMatchBare
+import typings.stropheJs.anon.MatchBare
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -139,7 +139,7 @@ class Connection protected () extends js.Object {
     `type`: String,
     id: String,
     from: String,
-    options: AnonMatchBare
+    options: MatchBare
   ): js.Any = js.native
   /** Function: addTimedHandler
     *  Add a timed handler to the connection.

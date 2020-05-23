@@ -1,6 +1,6 @@
 package typings.marko.expressMod
 
-import typings.express.FnCall
+import typings.express.anon.FnCall
 import typings.express.mod.Handler
 import typings.qs.mod.IParseOptions
 import scala.scalajs.js

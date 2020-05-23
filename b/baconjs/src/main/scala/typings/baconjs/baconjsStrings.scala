@@ -9,15 +9,10 @@ object baconjsStrings {
   sealed trait `Lessthansignno-moreGreaterthansign` extends js.Object
   
   @js.native
-  sealed trait LessthansignversionGreaterthansign extends js.Object
-  
-  @js.native
   sealed trait ObjectTemplate extends js.Object
   
   @scala.inline
   def `Lessthansignno-moreGreaterthansign`: `Lessthansignno-moreGreaterthansign` = "<no-more>".asInstanceOf[`Lessthansignno-moreGreaterthansign`]
-  @scala.inline
-  def LessthansignversionGreaterthansign: LessthansignversionGreaterthansign = "<version>".asInstanceOf[LessthansignversionGreaterthansign]
   @scala.inline
   def ObjectTemplate: ObjectTemplate = "ObjectTemplate".asInstanceOf[ObjectTemplate]
 }

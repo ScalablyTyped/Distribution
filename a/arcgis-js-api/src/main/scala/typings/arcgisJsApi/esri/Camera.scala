@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,8 +41,4 @@ trait Camera
     */
   var tilt: Double = js.native
 }
-
-@JSGlobal("__esri.Camera")
-@js.native
-object Camera extends TopLevel[CameraConstructor]
 

@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.ViewDirectionBlock")
 @js.native
-class ViewDirectionBlock protected () extends NodeMaterialBlock {
-  /**
-    * Creates a new ViewDirectionBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait ViewDirectionBlock extends NodeMaterialBlock {
   /**
     * Gets the camera position component
     */

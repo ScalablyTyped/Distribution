@@ -1,6 +1,6 @@
 package typings.serviceWorkerMock.mod
 
-import typings.serviceWorkerMock.mod._Global_.WorkerGlobalScope
+import typings.serviceWorkerMock.mod.global.WorkerGlobalScope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

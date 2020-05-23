@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.flexFlexMod
 
-import typings.antDesignReactNative.AnonAlign
+import typings.antDesignReactNative.anon.Align
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +14,6 @@ class default () extends Flex
 @js.native
 object default extends js.Object {
   var Item: js.Any = js.native
-  var defaultProps: AnonAlign = js.native
+  var defaultProps: Align = js.native
 }
 

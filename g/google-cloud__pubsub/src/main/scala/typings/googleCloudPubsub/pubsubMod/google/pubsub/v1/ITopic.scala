@@ -20,16 +20,16 @@ trait ITopic extends js.Object {
 object ITopic {
   @scala.inline
   def apply(
-    kmsKeyName: String = null,
-    labels: StringDictionary[String] = null,
-    messageStoragePolicy: IMessageStoragePolicy = null,
-    name: String = null
+    kmsKeyName: js.UndefOr[Null | String] = js.undefined,
+    labels: js.UndefOr[Null | StringDictionary[String]] = js.undefined,
+    messageStoragePolicy: js.UndefOr[Null | IMessageStoragePolicy] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined
   ): ITopic = {
     val __obj = js.Dynamic.literal()
-    if (kmsKeyName != null) __obj.updateDynamic("kmsKeyName")(kmsKeyName.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (messageStoragePolicy != null) __obj.updateDynamic("messageStoragePolicy")(messageStoragePolicy.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(kmsKeyName)) __obj.updateDynamic("kmsKeyName")(kmsKeyName.asInstanceOf[js.Any])
+    if (!js.isUndefined(labels)) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (!js.isUndefined(messageStoragePolicy)) __obj.updateDynamic("messageStoragePolicy")(messageStoragePolicy.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITopic]
   }
 }

@@ -1,0 +1,54 @@
+package typings.jupyterlabDocregistry.anon
+
+import typings.jupyterlabServices.contentsMod.Contents.ContentType
+import typings.jupyterlabServices.contentsMod.Contents.FileFormat
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Inlined std.Partial<@jupyterlab/services.@jupyterlab/services.Contents.IModel> */
+trait PartialIModelChunk extends js.Object {
+  var chunk: js.UndefOr[Double] = js.undefined
+  var content: js.UndefOr[js.Any] = js.undefined
+  var created: js.UndefOr[String] = js.undefined
+  var format: js.UndefOr[FileFormat] = js.undefined
+  var last_modified: js.UndefOr[String] = js.undefined
+  var mimetype: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
+  var path: js.UndefOr[String] = js.undefined
+  var size: js.UndefOr[Double] = js.undefined
+  var `type`: js.UndefOr[ContentType] = js.undefined
+  var writable: js.UndefOr[Boolean] = js.undefined
+}
+
+object PartialIModelChunk {
+  @scala.inline
+  def apply(
+    chunk: js.UndefOr[Double] = js.undefined,
+    content: js.Any = null,
+    created: String = null,
+    format: FileFormat = null,
+    last_modified: String = null,
+    mimetype: String = null,
+    name: String = null,
+    path: String = null,
+    size: js.UndefOr[Double] = js.undefined,
+    `type`: ContentType = null,
+    writable: js.UndefOr[Boolean] = js.undefined
+  ): PartialIModelChunk = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(chunk)) __obj.updateDynamic("chunk")(chunk.get.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (last_modified != null) __obj.updateDynamic("last_modified")(last_modified.asInstanceOf[js.Any])
+    if (mimetype != null) __obj.updateDynamic("mimetype")(mimetype.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable.get.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PartialIModelChunk]
+  }
+}
+

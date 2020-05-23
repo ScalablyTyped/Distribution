@@ -38,12 +38,12 @@ object StartQueryRequest {
     endTime: Timestamp,
     queryString: QueryString,
     startTime: Timestamp,
-    limit: Int | Double = null,
+    limit: js.UndefOr[EventsLimit] = js.undefined,
     logGroupName: LogGroupName = null,
     logGroupNames: LogGroupNames = null
   ): StartQueryRequest = {
     val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], queryString = queryString.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (logGroupName != null) __obj.updateDynamic("logGroupName")(logGroupName.asInstanceOf[js.Any])
     if (logGroupNames != null) __obj.updateDynamic("logGroupNames")(logGroupNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartQueryRequest]

@@ -1,12 +1,12 @@
 package typings.reactDatagrid.mod.ReactDataGrid
 
-import typings.reactDatagrid.AnonDisabledStyle
+import typings.reactDatagrid.anon.DisabledStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PaginationToolbarProps extends js.Object {
-  var iconProps: AnonDisabledStyle
+  var iconProps: DisabledStyle
   var iconSize: Double
   /**
     * Available page sizes.
@@ -25,7 +25,7 @@ trait PaginationToolbarProps extends js.Object {
 object PaginationToolbarProps {
   @scala.inline
   def apply(
-    iconProps: AnonDisabledStyle,
+    iconProps: DisabledStyle,
     iconSize: Double,
     pageSizes: js.Array[Double],
     showPageSize: Boolean,

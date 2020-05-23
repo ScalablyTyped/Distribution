@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("UncalibratedMagnetometer")
 @js.native
-class UncalibratedMagnetometer () extends Sensor {
-  def this(options: SensorOptions) = this()
+trait UncalibratedMagnetometer extends Sensor {
   val x: js.UndefOr[Double] = js.native
   val xBias: js.UndefOr[Double] = js.native
   val y: js.UndefOr[Double] = js.native

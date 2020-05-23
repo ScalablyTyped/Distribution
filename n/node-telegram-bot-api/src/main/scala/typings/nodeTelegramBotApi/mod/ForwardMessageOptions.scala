@@ -12,7 +12,7 @@ object ForwardMessageOptions {
   @scala.inline
   def apply(disable_notification: js.UndefOr[Boolean] = js.undefined): ForwardMessageOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disable_notification)) __obj.updateDynamic("disable_notification")(disable_notification.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable_notification)) __obj.updateDynamic("disable_notification")(disable_notification.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForwardMessageOptions]
   }
 }

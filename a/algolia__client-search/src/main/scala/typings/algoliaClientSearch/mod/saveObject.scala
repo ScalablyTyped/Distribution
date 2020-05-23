@@ -1,6 +1,6 @@
 package typings.algoliaClientSearch.mod
 
-import typings.algoliaClientSearch.ReadonlyWaitablePromiseSaFinally
+import typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseSaFinally
 import typings.algoliaTransporter.mod.RequestOptions
 import typings.std.Record
 import scala.scalajs.js

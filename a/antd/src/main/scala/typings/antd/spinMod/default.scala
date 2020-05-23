@@ -1,6 +1,6 @@
 package typings.antd.spinMod
 
-import typings.antd.AnonSpinning
+import typings.antd.anon.Spinning
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ class default protected () extends Spin {
 @JSImport("antd/lib/spin", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonSpinning = js.native
+  var defaultProps: Spinning = js.native
   def setDefaultIndicator(indicator: ReactNode): Unit = js.native
 }
 

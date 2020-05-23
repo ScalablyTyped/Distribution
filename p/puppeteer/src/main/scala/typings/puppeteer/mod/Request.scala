@@ -1,6 +1,6 @@
 package typings.puppeteer.mod
 
-import typings.puppeteer.AnonErrorText
+import typings.puppeteer.anon.ErrorText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +24,7 @@ trait Request extends js.Object {
   /**
     * @returns An object if the request failed, null otherwise.
     */
-  def failure(): AnonErrorText | Null = js.native
+  def failure(): ErrorText | Null = js.native
   /**
     * @returns The `Frame` object that initiated the request, or `null` if navigating to error pages
     */

@@ -17,5 +17,17 @@ class TypeInfo protected ()
     minChar: Double,
     limChar: Double
   ) = this()
+  /* CompleteClass */
+  override var docComment: String = js.native
+  /* CompleteClass */
+  override var fullSymbolName: String = js.native
+  /* CompleteClass */
+  override var kind: String = js.native
+  /* CompleteClass */
+  override var limChar: Double = js.native
+  /* CompleteClass */
+  override var memberName: MemberName = js.native
+  /* CompleteClass */
+  override var minChar: Double = js.native
 }
 

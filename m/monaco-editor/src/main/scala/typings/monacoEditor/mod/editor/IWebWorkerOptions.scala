@@ -41,7 +41,7 @@ object IWebWorkerOptions {
     val __obj = js.Dynamic.literal(moduleId = moduleId.asInstanceOf[js.Any])
     if (createData != null) __obj.updateDynamic("createData")(createData.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepIdleModels)) __obj.updateDynamic("keepIdleModels")(keepIdleModels.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepIdleModels)) __obj.updateDynamic("keepIdleModels")(keepIdleModels.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWebWorkerOptions]
   }

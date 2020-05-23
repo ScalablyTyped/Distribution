@@ -51,16 +51,16 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    depth: Int | Double = null,
+    depth: js.UndefOr[Double] = js.undefined,
     errorHandling: Boolean | (js.Function2[/* error */ js.Any, /* element */ Element, Unit]) = null,
-    selectorMaxLength: Int | Double = null,
-    specificityThreshold: Int | Double = null
+    selectorMaxLength: js.UndefOr[Double] = js.undefined,
+    specificityThreshold: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
     if (errorHandling != null) __obj.updateDynamic("errorHandling")(errorHandling.asInstanceOf[js.Any])
-    if (selectorMaxLength != null) __obj.updateDynamic("selectorMaxLength")(selectorMaxLength.asInstanceOf[js.Any])
-    if (specificityThreshold != null) __obj.updateDynamic("specificityThreshold")(specificityThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectorMaxLength)) __obj.updateDynamic("selectorMaxLength")(selectorMaxLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(specificityThreshold)) __obj.updateDynamic("specificityThreshold")(specificityThreshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

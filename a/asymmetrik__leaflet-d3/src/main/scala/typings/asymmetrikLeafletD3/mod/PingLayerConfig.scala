@@ -14,14 +14,14 @@ trait PingLayerConfig extends js.Object {
 object PingLayerConfig {
   @scala.inline
   def apply(
-    duration: Int | Double = null,
-    fps: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
+    fps: js.UndefOr[Double] = js.undefined,
     opacityRange: js.Array[Double] = null,
     radiusRange: js.Array[Double] = null
   ): PingLayerConfig = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (fps != null) __obj.updateDynamic("fps")(fps.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fps)) __obj.updateDynamic("fps")(fps.get.asInstanceOf[js.Any])
     if (opacityRange != null) __obj.updateDynamic("opacityRange")(opacityRange.asInstanceOf[js.Any])
     if (radiusRange != null) __obj.updateDynamic("radiusRange")(radiusRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[PingLayerConfig]

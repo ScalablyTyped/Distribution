@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,17 +36,6 @@ object Placement extends js.Object {
     */
   @js.native
   sealed trait twoCell extends Placement
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[Placement with String] = js.native
-  /* "Absolute" */ @js.native
-  object absolute extends TopLevel[absolute with String]
-  
-  /* "OneCell" */ @js.native
-  object oneCell extends TopLevel[oneCell with String]
-  
-  /* "TwoCell" */ @js.native
-  object twoCell extends TopLevel[twoCell with String]
   
 }
 

@@ -1,13 +1,13 @@
 package typings.commonErrors.mod
 
-import typings.std.URIErrorConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("common-errors", "URIError")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.URIError * / any */ @JSImport("common-errors", "URIError")
 @js.native
-class URIError protected () extends URIErrorConstructor {
+class URIError protected () extends js.Object {
   /**
     * @param message     any message
     * @param inner_error the Error instance that caused the current error.

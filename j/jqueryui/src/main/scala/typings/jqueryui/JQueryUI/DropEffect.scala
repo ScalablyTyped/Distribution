@@ -10,9 +10,9 @@ trait DropEffect extends js.Object {
 
 object DropEffect {
   @scala.inline
-  def apply(direction: Int | Double = null): DropEffect = {
+  def apply(direction: js.UndefOr[Double] = js.undefined): DropEffect = {
     val __obj = js.Dynamic.literal()
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (!js.isUndefined(direction)) __obj.updateDynamic("direction")(direction.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropEffect]
   }
 }

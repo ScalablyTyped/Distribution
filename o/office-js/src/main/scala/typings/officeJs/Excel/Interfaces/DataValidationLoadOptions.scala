@@ -26,7 +26,7 @@ trait DataValidationLoadOptions extends js.Object {
   var errorAlert: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Ignore blanks: no data validation will be performed on blank cells, it defaults to true.
+    * Specifies if data validation will be performed on blank cells, it defaults to true.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -75,13 +75,13 @@ object DataValidationLoadOptions {
     valid: js.UndefOr[Boolean] = js.undefined
   ): DataValidationLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(errorAlert)) __obj.updateDynamic("errorAlert")(errorAlert.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreBlanks)) __obj.updateDynamic("ignoreBlanks")(ignoreBlanks.asInstanceOf[js.Any])
-    if (!js.isUndefined(prompt)) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
-    if (!js.isUndefined(rule)) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorAlert)) __obj.updateDynamic("errorAlert")(errorAlert.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreBlanks)) __obj.updateDynamic("ignoreBlanks")(ignoreBlanks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(prompt)) __obj.updateDynamic("prompt")(prompt.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rule)) __obj.updateDynamic("rule")(rule.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataValidationLoadOptions]
   }
 }

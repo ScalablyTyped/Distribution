@@ -1,7 +1,7 @@
 package typings.jupyterlabServices.sessionSessionMod
 
-import typings.jupyterlabServices.OmitIOptionsconnectToKern
-import typings.jupyterlabServices.OmitIOptionsmodelconnectT
+import typings.jupyterlabServices.anon.OmitIOptionsconnectToKern
+import typings.jupyterlabServices.anon.OmitIOptionsmodelconnectT
 import typings.jupyterlabServices.mod.ServerConnection.NetworkError
 import typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings
 import typings.luminoAlgorithm.iterMod.IIterator

@@ -1,7 +1,7 @@
 package typings.reactVirtualized.mod
 
-import typings.reactVirtualized.AnonClassName
-import typings.reactVirtualized.AnonDisableHeader
+import typings.reactVirtualized.anon.ClassName
+import typings.reactVirtualized.anon.DisableHeader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ class Table ()
 @JSImport("react-virtualized", "Table")
 @js.native
 object Table extends js.Object {
-  var defaultProps: AnonDisableHeader = js.native
-  var propTypes: AnonClassName = js.native
+  var defaultProps: DisableHeader = js.native
+  var propTypes: ClassName = js.native
 }
 

@@ -20,7 +20,7 @@ trait Popup
   def getMaskElement(): js.Any = js.native
   def getMaskTransitionName(): js.UndefOr[String | js.Object] = js.native
   def getPopupDomNode(): Element = js.native
-  def getPopupElement(): typings.react.mod._Global_.JSX.Element = js.native
+  def getPopupElement(): typings.react.mod.global.JSX.Element = js.native
   def getTarget(): js.Any = js.native
   def getTransitionName(): js.UndefOr[String | js.Object] = js.native
   def getZIndexStyle(): js.Any = js.native

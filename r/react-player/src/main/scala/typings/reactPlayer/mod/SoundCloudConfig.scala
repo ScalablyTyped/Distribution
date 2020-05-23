@@ -14,7 +14,7 @@ object SoundCloudConfig {
   def apply(options: js.Object = null, preload: js.UndefOr[Boolean] = js.undefined): SoundCloudConfig = {
     val __obj = js.Dynamic.literal()
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
+    if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SoundCloudConfig]
   }
 }

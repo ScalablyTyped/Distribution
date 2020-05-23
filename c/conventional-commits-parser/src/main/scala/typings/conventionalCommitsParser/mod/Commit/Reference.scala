@@ -35,10 +35,7 @@ object Reference {
     owner: Field = null,
     repository: Field = null
   ): Reference = {
-    val __obj = js.Dynamic.literal(issue = issue.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (repository != null) __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(issue = issue.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], action = action.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reference]
   }
 }

@@ -1,10 +1,10 @@
 package typings.echarts.echarts.EChartOption.SeriesPie
 
-import typings.echarts.AnonBorderType
-import typings.echarts.AnonExtraCssText
-import typings.echarts.AnonLabelAnonPadding
-import typings.echarts.AnonLineHeight
-import typings.echarts.AnonSmooth
+import typings.echarts.anon.BorderType
+import typings.echarts.anon.ExtraCssText
+import typings.echarts.anon.LabelPadding
+import typings.echarts.anon.LineHeight
+import typings.echarts.anon.Smooth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait DataObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis
     */
-  var emphasis: js.UndefOr[AnonLabelAnonPadding] = js.undefined
+  var emphasis: js.UndefOr[LabelPadding] = js.undefined
   /**
     * Graphic style of , `emphasis` is the style when it is highlighted,
     * like being hovered by mouse, or highlighted via legend connect.
@@ -21,21 +21,21 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.data.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderType] = js.undefined
+  var itemStyle: js.UndefOr[BorderType] = js.undefined
   /**
     * The label configuration of a single sector.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.data.label
     */
-  var label: js.UndefOr[AnonLineHeight] = js.undefined
+  var label: js.UndefOr[LineHeight] = js.undefined
   /**
     * The style of visual guide line.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.data.labelLine
     */
-  var labelLine: js.UndefOr[AnonSmooth] = js.undefined
+  var labelLine: js.UndefOr[Smooth] = js.undefined
   /**
     * The name of data item.
     *
@@ -56,7 +56,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.data.tooltip
     */
-  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
   /**
     * Data value.
     *
@@ -69,14 +69,14 @@ trait DataObject extends js.Object {
 object DataObject {
   @scala.inline
   def apply(
-    emphasis: AnonLabelAnonPadding = null,
-    itemStyle: AnonBorderType = null,
-    label: AnonLineHeight = null,
-    labelLine: AnonSmooth = null,
+    emphasis: LabelPadding = null,
+    itemStyle: BorderType = null,
+    label: LineHeight = null,
+    labelLine: Smooth = null,
     name: String = null,
     selected: js.UndefOr[Boolean] = js.undefined,
-    tooltip: AnonExtraCssText = null,
-    value: Int | Double = null
+    tooltip: ExtraCssText = null,
+    value: js.UndefOr[Double] = js.undefined
   ): DataObject = {
     val __obj = js.Dynamic.literal()
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
@@ -84,9 +84,9 @@ object DataObject {
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelLine != null) __obj.updateDynamic("labelLine")(labelLine.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataObject]
   }
 }

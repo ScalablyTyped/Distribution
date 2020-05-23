@@ -32,10 +32,10 @@ object DebugOptions {
     token: js.UndefOr[Boolean] = js.undefined
   ): DebugOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(data)) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(packet)) __obj.updateDynamic("packet")(packet.asInstanceOf[js.Any])
-    if (!js.isUndefined(payload)) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (!js.isUndefined(token)) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (!js.isUndefined(data)) __obj.updateDynamic("data")(data.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(packet)) __obj.updateDynamic("packet")(packet.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(payload)) __obj.updateDynamic("payload")(payload.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(token)) __obj.updateDynamic("token")(token.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebugOptions]
   }
 }

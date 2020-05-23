@@ -2164,6 +2164,19 @@ trait Iot extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ RegisterCertificateResponse, Unit]
   ): Request[RegisterCertificateResponse, AWSError] = js.native
   /**
+    * Register a certificate that does not have a certificate authority (CA).
+    */
+  def registerCertificateWithoutCA(): Request[RegisterCertificateWithoutCAResponse, AWSError] = js.native
+  def registerCertificateWithoutCA(callback: js.Function2[/* err */ AWSError, /* data */ RegisterCertificateWithoutCAResponse, Unit]): Request[RegisterCertificateWithoutCAResponse, AWSError] = js.native
+  /**
+    * Register a certificate that does not have a certificate authority (CA).
+    */
+  def registerCertificateWithoutCA(params: RegisterCertificateWithoutCARequest): Request[RegisterCertificateWithoutCAResponse, AWSError] = js.native
+  def registerCertificateWithoutCA(
+    params: RegisterCertificateWithoutCARequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RegisterCertificateWithoutCAResponse, Unit]
+  ): Request[RegisterCertificateWithoutCAResponse, AWSError] = js.native
+  /**
     * Provisions a thing in the device registry. RegisterThing calls other AWS IoT control plane APIs. These calls might exceed your account level  AWS IoT Throttling Limits and cause throttle errors. Please contact AWS Customer Support to raise your throttling limits if necessary.
     */
   def registerThing(): Request[RegisterThingResponse, AWSError] = js.native

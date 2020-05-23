@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("stellar-sdk", "MemoHash")
 @js.native
-object MemoHash
-  extends TopLevel[typings.stellarSdk.stellarSdkStrings.hash]
+object MemoHash extends TopLevel[/* "hash" */ String]
 

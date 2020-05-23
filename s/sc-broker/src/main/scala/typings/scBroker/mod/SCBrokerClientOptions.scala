@@ -21,24 +21,24 @@ object SCBrokerClientOptions {
   def apply(
     autoReconnect: js.UndefOr[Boolean] = js.undefined,
     autoReconnectOptions: AutoReconnectOptions = null,
-    connectRetryErrorThreshold: Int | Double = null,
+    connectRetryErrorThreshold: js.UndefOr[Double] = js.undefined,
     host: String = null,
-    port: Int | Double = null,
-    pubSubBatchDuration: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
+    pubSubBatchDuration: js.UndefOr[Double] = js.undefined,
     secretKey: String = null,
     socketPath: String = null,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): SCBrokerClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoReconnect)) __obj.updateDynamic("autoReconnect")(autoReconnect.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoReconnect)) __obj.updateDynamic("autoReconnect")(autoReconnect.get.asInstanceOf[js.Any])
     if (autoReconnectOptions != null) __obj.updateDynamic("autoReconnectOptions")(autoReconnectOptions.asInstanceOf[js.Any])
-    if (connectRetryErrorThreshold != null) __obj.updateDynamic("connectRetryErrorThreshold")(connectRetryErrorThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectRetryErrorThreshold)) __obj.updateDynamic("connectRetryErrorThreshold")(connectRetryErrorThreshold.get.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (pubSubBatchDuration != null) __obj.updateDynamic("pubSubBatchDuration")(pubSubBatchDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pubSubBatchDuration)) __obj.updateDynamic("pubSubBatchDuration")(pubSubBatchDuration.get.asInstanceOf[js.Any])
     if (secretKey != null) __obj.updateDynamic("secretKey")(secretKey.asInstanceOf[js.Any])
     if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SCBrokerClientOptions]
   }
 }

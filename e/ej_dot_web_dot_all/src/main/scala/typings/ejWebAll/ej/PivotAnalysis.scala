@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,14 +26,6 @@ object PivotAnalysis extends js.Object {
     @js.native
     sealed trait Include extends FilterType
     
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[FilterType with Double] = js.native
-    /* 0 */ @js.native
-    object Exclude extends TopLevel[Exclude with Double]
-    
-    /* 1 */ @js.native
-    object Include extends TopLevel[Include with Double]
-    
   }
   
   @js.native
@@ -50,17 +41,6 @@ object PivotAnalysis extends js.Object {
     //Displays the members without sorting in default order.
     @js.native
     sealed trait None extends SortOrder
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[SortOrder with Double] = js.native
-    /* 0 */ @js.native
-    object Ascending extends TopLevel[Ascending with Double]
-    
-    /* 1 */ @js.native
-    object Descending extends TopLevel[Descending with Double]
-    
-    /* 2 */ @js.native
-    object None extends TopLevel[None with Double]
     
   }
   
@@ -85,23 +65,6 @@ object PivotAnalysis extends js.Object {
     //Calculates the summary as the total of all values.
     @js.native
     sealed trait Sum extends SummaryType
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[SummaryType with Double] = js.native
-    /* 1 */ @js.native
-    object Average extends TopLevel[Average with Double]
-    
-    /* 2 */ @js.native
-    object Count extends TopLevel[Count with Double]
-    
-    /* 4 */ @js.native
-    object Max extends TopLevel[Max with Double]
-    
-    /* 3 */ @js.native
-    object Min extends TopLevel[Min with Double]
-    
-    /* 0 */ @js.native
-    object Sum extends TopLevel[Sum with Double]
     
   }
   

@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.indexBundleMod
 
-import typings.officeUiFabricReact.AnonDescription
+import typings.officeUiFabricReact.anon.Description
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +14,6 @@ class ProgressIndicatorBase ()
 @JSImport("office-ui-fabric-react/lib/index.bundle", "ProgressIndicatorBase")
 @js.native
 object ProgressIndicatorBase extends js.Object {
-  var defaultProps: AnonDescription = js.native
+  var defaultProps: Description = js.native
 }
 

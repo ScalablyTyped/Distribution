@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "snyk-go-plugin" : "1.14.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "snyk-go-plugin" : "1.14.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

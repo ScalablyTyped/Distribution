@@ -1,8 +1,8 @@
 package typings.wonderJs.viewMod
 
 import typings.std.WebGLRenderingContext
-import typings.wonderJs.AnonX
-import typings.wonderJs.AnonY
+import typings.wonderJs.anon.X
+import typings.wonderJs.anon.Y
 import typings.wonderJs.mainDataMod.ContextConfigData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,9 +17,9 @@ class ViewWebGL protected () extends IView {
   /* CompleteClass */
   override var height: Double = js.native
   /* CompleteClass */
-  override var offset: AnonY = js.native
+  override var offset: Y = js.native
   @JSName("offset")
-  val offset_ViewWebGL: AnonX = js.native
+  val offset_ViewWebGL: X = js.native
   /* CompleteClass */
   override var styleHeight: String = js.native
   /* CompleteClass */

@@ -20,16 +20,16 @@ trait IAuditConfigDelta extends js.Object {
 object IAuditConfigDelta {
   @scala.inline
   def apply(
-    action: Action = null,
-    exemptedMember: String = null,
-    logType: String = null,
-    service: String = null
+    action: js.UndefOr[Null | Action] = js.undefined,
+    exemptedMember: js.UndefOr[Null | String] = js.undefined,
+    logType: js.UndefOr[Null | String] = js.undefined,
+    service: js.UndefOr[Null | String] = js.undefined
   ): IAuditConfigDelta = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (exemptedMember != null) __obj.updateDynamic("exemptedMember")(exemptedMember.asInstanceOf[js.Any])
-    if (logType != null) __obj.updateDynamic("logType")(logType.asInstanceOf[js.Any])
-    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
+    if (!js.isUndefined(action)) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (!js.isUndefined(exemptedMember)) __obj.updateDynamic("exemptedMember")(exemptedMember.asInstanceOf[js.Any])
+    if (!js.isUndefined(logType)) __obj.updateDynamic("logType")(logType.asInstanceOf[js.Any])
+    if (!js.isUndefined(service)) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAuditConfigDelta]
   }
 }

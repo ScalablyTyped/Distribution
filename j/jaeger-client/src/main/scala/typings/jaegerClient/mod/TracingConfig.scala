@@ -24,12 +24,12 @@ object TracingConfig {
     traceId128bit: js.UndefOr[Boolean] = js.undefined
   ): TracingConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable.get.asInstanceOf[js.Any])
     if (reporter != null) __obj.updateDynamic("reporter")(reporter.asInstanceOf[js.Any])
     if (sampler != null) __obj.updateDynamic("sampler")(sampler.asInstanceOf[js.Any])
     if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
-    if (!js.isUndefined(shareRpcSpan)) __obj.updateDynamic("shareRpcSpan")(shareRpcSpan.asInstanceOf[js.Any])
-    if (!js.isUndefined(traceId128bit)) __obj.updateDynamic("traceId128bit")(traceId128bit.asInstanceOf[js.Any])
+    if (!js.isUndefined(shareRpcSpan)) __obj.updateDynamic("shareRpcSpan")(shareRpcSpan.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(traceId128bit)) __obj.updateDynamic("traceId128bit")(traceId128bit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TracingConfig]
   }
 }

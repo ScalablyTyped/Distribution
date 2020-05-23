@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Graphics.Printing3D
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object Printing3DMeshVerificationMode extends js.Object {
   /** Return results upon finding the first failure. */
   @js.native
   sealed trait findFirstError extends Printing3DMeshVerificationMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Printing3DMeshVerificationMode with Double] = js.native
-  /* 1 */ @js.native
-  object findAllErrors extends TopLevel[findAllErrors with Double]
-  
-  /* 0 */ @js.native
-  object findFirstError extends TopLevel[findFirstError with Double]
   
 }
 

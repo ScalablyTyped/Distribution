@@ -2,136 +2,200 @@ package typings.typescriptServices.TypeScript.Services.Formatting
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange
-import typings.typescriptServices.TypeScript.SyntaxKind
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.Services.Formatting.Rules")
-@js.native
-class Rules ()
+trait Rules
   extends /* name */ StringDictionary[js.Any] {
-  var ControlOpenBraceLeftTokenRange: TokenRange = js.native
-  var FunctionOpenBraceLeftTokenRange: TokenRange = js.native
-  var HighPriorityCommonRules: js.Array[Rule] = js.native
-  var IgnoreAfterLineComment: Rule = js.native
-  var IgnoreBeforeComment: Rule = js.native
-  var LowPriorityCommonRules: js.Array[Rule] = js.native
-  var NewLineAfterOpenBraceInBlockContext: Rule = js.native
-  var NewLineBeforeCloseBraceInBlockContext: Rule = js.native
-  var NewLineBeforeOpenBraceInControl: Rule = js.native
-  var NewLineBeforeOpenBraceInFunction: Rule = js.native
-  var NewLineBeforeOpenBraceInTypeScriptDeclWithBlock: Rule = js.native
-  var NoSpaceAfterAnonymousFunctionKeyword: Rule = js.native
-  var NoSpaceAfterBinaryOperator: Rule = js.native
-  var NoSpaceAfterCloseAngularBracket: Rule = js.native
-  var NoSpaceAfterCloseBrace: Rule = js.native
-  var NoSpaceAfterCloseBracket: Rule = js.native
-  var NoSpaceAfterComma: Rule = js.native
-  var NoSpaceAfterConstructor: Rule = js.native
-  var NoSpaceAfterDot: Rule = js.native
-  var NoSpaceAfterEllipsis: Rule = js.native
-  var NoSpaceAfterKeywordInControl: Rule = js.native
-  var NoSpaceAfterModuleImport: Rule = js.native
-  var NoSpaceAfterOpenAngularBracket: Rule = js.native
-  var NoSpaceAfterOpenBracket: Rule = js.native
-  var NoSpaceAfterOpenParen: Rule = js.native
-  var NoSpaceAfterOptionalParameters: Rule = js.native
-  var NoSpaceAfterSemicolonInFor: Rule = js.native
-  var NoSpaceAfterUnaryPredecrementOperator: Rule = js.native
-  var NoSpaceAfterUnaryPrefixOperator: Rule = js.native
-  var NoSpaceAfterUnaryPreincrementOperator: Rule = js.native
-  var NoSpaceBeforeBinaryOperator: Rule = js.native
-  var NoSpaceBeforeCloseAngularBracket: Rule = js.native
-  var NoSpaceBeforeCloseBracket: Rule = js.native
-  var NoSpaceBeforeCloseParen: Rule = js.native
-  var NoSpaceBeforeColon: Rule = js.native
-  var NoSpaceBeforeComma: Rule = js.native
-  var NoSpaceBeforeDot: Rule = js.native
-  var NoSpaceBeforeOpenAngularBracket: Rule = js.native
-  var NoSpaceBeforeOpenBracket: Rule = js.native
-  var NoSpaceBeforeOpenParenInFuncCall: Rule = js.native
-  var NoSpaceBeforeOpenParenInFuncDecl: Rule = js.native
-  var NoSpaceBeforeQMark: Rule = js.native
-  var NoSpaceBeforeSemicolon: Rule = js.native
-  var NoSpaceBeforeUnaryPostdecrementOperator: Rule = js.native
-  var NoSpaceBeforeUnaryPostincrementOperator: Rule = js.native
-  var NoSpaceBetweenCloseParenAndAngularBracket: Rule = js.native
-  var NoSpaceBetweenEmptyBraceBrackets: Rule = js.native
-  var NoSpaceBetweenEmptyInterfaceBraceBrackets: Rule = js.native
-  var NoSpaceBetweenParens: Rule = js.native
-  var NoSpaceBetweenReturnAndSemicolon: Rule = js.native
-  var SpaceAfterAddWhenFollowedByPreincrement: Rule = js.native
-  var SpaceAfterAddWhenFollowedByUnaryPlus: Rule = js.native
-  var SpaceAfterAnonymousFunctionKeyword: Rule = js.native
-  var SpaceAfterArrow: Rule = js.native
-  var SpaceAfterBinaryKeywordOperator: Rule = js.native
-  var SpaceAfterBinaryOperator: Rule = js.native
-  var SpaceAfterCertainKeywords: Rule = js.native
-  var SpaceAfterCertainTypeScriptKeywords: Rule = js.native
-  var SpaceAfterCloseBrace: Rule = js.native
-  var SpaceAfterColon: Rule = js.native
-  var SpaceAfterComma: Rule = js.native
-  var SpaceAfterFunctionInFuncDecl: Rule = js.native
-  var SpaceAfterGetSetInMember: Rule = js.native
-  var SpaceAfterKeywordInControl: Rule = js.native
-  var SpaceAfterModuleName: Rule = js.native
-  var SpaceAfterOpenBrace: Rule = js.native
-  var SpaceAfterOpenParen: Rule = js.native
-  var SpaceAfterPostdecrementWhenFollowedBySubtract: Rule = js.native
-  var SpaceAfterPostincrementWhenFollowedByAdd: Rule = js.native
-  var SpaceAfterQMark: Rule = js.native
-  var SpaceAfterSemicolon: Rule = js.native
-  var SpaceAfterSemicolonInFor: Rule = js.native
-  var SpaceAfterSubtractWhenFollowedByPredecrement: Rule = js.native
-  var SpaceAfterSubtractWhenFollowedByUnaryMinus: Rule = js.native
-  var SpaceAfterTryFinally: Rule = js.native
-  var SpaceAfterVoidOperator: Rule = js.native
-  var SpaceBeforeBinaryKeywordOperator: Rule = js.native
-  var SpaceBeforeBinaryOperator: Rule = js.native
-  var SpaceBeforeCertainTypeScriptKeywords: Rule = js.native
-  var SpaceBeforeCloseBrace: Rule = js.native
-  var SpaceBeforeCloseParen: Rule = js.native
-  var SpaceBeforeOpenBraceInControl: Rule = js.native
-  var SpaceBeforeOpenBraceInFunction: Rule = js.native
-  var SpaceBeforeOpenBraceInTypeScriptDeclWithBlock: Rule = js.native
-  var SpaceBetweenCloseBraceAndElse: Rule = js.native
-  var SpaceBetweenCloseBraceAndWhile: Rule = js.native
-  var SpaceBetweenStatements: Rule = js.native
-  var TypeScriptOpenBraceLeftTokenRange: TokenRange = js.native
-  def getRuleName(rule: Rule): js.Any = js.native
+  var ControlOpenBraceLeftTokenRange: TokenRange
+  var FunctionOpenBraceLeftTokenRange: TokenRange
+  var HighPriorityCommonRules: js.Array[Rule]
+  var IgnoreAfterLineComment: Rule
+  var IgnoreBeforeComment: Rule
+  var LowPriorityCommonRules: js.Array[Rule]
+  var NewLineAfterOpenBraceInBlockContext: Rule
+  var NewLineBeforeCloseBraceInBlockContext: Rule
+  var NewLineBeforeOpenBraceInControl: Rule
+  var NewLineBeforeOpenBraceInFunction: Rule
+  var NewLineBeforeOpenBraceInTypeScriptDeclWithBlock: Rule
+  var NoSpaceAfterAnonymousFunctionKeyword: Rule
+  var NoSpaceAfterBinaryOperator: Rule
+  var NoSpaceAfterCloseAngularBracket: Rule
+  var NoSpaceAfterCloseBrace: Rule
+  var NoSpaceAfterCloseBracket: Rule
+  var NoSpaceAfterComma: Rule
+  var NoSpaceAfterConstructor: Rule
+  var NoSpaceAfterDot: Rule
+  var NoSpaceAfterEllipsis: Rule
+  var NoSpaceAfterKeywordInControl: Rule
+  var NoSpaceAfterModuleImport: Rule
+  var NoSpaceAfterOpenAngularBracket: Rule
+  var NoSpaceAfterOpenBracket: Rule
+  var NoSpaceAfterOpenParen: Rule
+  var NoSpaceAfterOptionalParameters: Rule
+  var NoSpaceAfterSemicolonInFor: Rule
+  var NoSpaceAfterUnaryPredecrementOperator: Rule
+  var NoSpaceAfterUnaryPrefixOperator: Rule
+  var NoSpaceAfterUnaryPreincrementOperator: Rule
+  var NoSpaceBeforeBinaryOperator: Rule
+  var NoSpaceBeforeCloseAngularBracket: Rule
+  var NoSpaceBeforeCloseBracket: Rule
+  var NoSpaceBeforeCloseParen: Rule
+  var NoSpaceBeforeColon: Rule
+  var NoSpaceBeforeComma: Rule
+  var NoSpaceBeforeDot: Rule
+  var NoSpaceBeforeOpenAngularBracket: Rule
+  var NoSpaceBeforeOpenBracket: Rule
+  var NoSpaceBeforeOpenParenInFuncCall: Rule
+  var NoSpaceBeforeOpenParenInFuncDecl: Rule
+  var NoSpaceBeforeQMark: Rule
+  var NoSpaceBeforeSemicolon: Rule
+  var NoSpaceBeforeUnaryPostdecrementOperator: Rule
+  var NoSpaceBeforeUnaryPostincrementOperator: Rule
+  var NoSpaceBetweenCloseParenAndAngularBracket: Rule
+  var NoSpaceBetweenEmptyBraceBrackets: Rule
+  var NoSpaceBetweenEmptyInterfaceBraceBrackets: Rule
+  var NoSpaceBetweenParens: Rule
+  var NoSpaceBetweenReturnAndSemicolon: Rule
+  var SpaceAfterAddWhenFollowedByPreincrement: Rule
+  var SpaceAfterAddWhenFollowedByUnaryPlus: Rule
+  var SpaceAfterAnonymousFunctionKeyword: Rule
+  var SpaceAfterArrow: Rule
+  var SpaceAfterBinaryKeywordOperator: Rule
+  var SpaceAfterBinaryOperator: Rule
+  var SpaceAfterCertainKeywords: Rule
+  var SpaceAfterCertainTypeScriptKeywords: Rule
+  var SpaceAfterCloseBrace: Rule
+  var SpaceAfterColon: Rule
+  var SpaceAfterComma: Rule
+  var SpaceAfterFunctionInFuncDecl: Rule
+  var SpaceAfterGetSetInMember: Rule
+  var SpaceAfterKeywordInControl: Rule
+  var SpaceAfterModuleName: Rule
+  var SpaceAfterOpenBrace: Rule
+  var SpaceAfterOpenParen: Rule
+  var SpaceAfterPostdecrementWhenFollowedBySubtract: Rule
+  var SpaceAfterPostincrementWhenFollowedByAdd: Rule
+  var SpaceAfterQMark: Rule
+  var SpaceAfterSemicolon: Rule
+  var SpaceAfterSemicolonInFor: Rule
+  var SpaceAfterSubtractWhenFollowedByPredecrement: Rule
+  var SpaceAfterSubtractWhenFollowedByUnaryMinus: Rule
+  var SpaceAfterTryFinally: Rule
+  var SpaceAfterVoidOperator: Rule
+  var SpaceBeforeBinaryKeywordOperator: Rule
+  var SpaceBeforeBinaryOperator: Rule
+  var SpaceBeforeCertainTypeScriptKeywords: Rule
+  var SpaceBeforeCloseBrace: Rule
+  var SpaceBeforeCloseParen: Rule
+  var SpaceBeforeOpenBraceInControl: Rule
+  var SpaceBeforeOpenBraceInFunction: Rule
+  var SpaceBeforeOpenBraceInTypeScriptDeclWithBlock: Rule
+  var SpaceBetweenCloseBraceAndElse: Rule
+  var SpaceBetweenCloseBraceAndWhile: Rule
+  var SpaceBetweenStatements: Rule
+  var TypeScriptOpenBraceLeftTokenRange: TokenRange
+  def getRuleName(rule: Rule): js.Any
 }
 
-/* static members */
-@JSGlobal("TypeScript.Services.Formatting.Rules")
-@js.native
-object Rules extends js.Object {
-  def IsAfterCodeBlockContext(context: FormattingContext): Boolean = js.native
-  def IsBeforeBlockContext(context: FormattingContext): Boolean = js.native
-  def IsBeforeMultilineBlockContext(context: FormattingContext): Boolean = js.native
-  def IsBinaryOpContext(context: FormattingContext): Boolean = js.native
-  def IsBlockContext(context: FormattingContext): Boolean = js.native
-  def IsControlDeclContext(context: FormattingContext): Boolean = js.native
-  def IsForContext(context: FormattingContext): Boolean = js.native
-  def IsFunctionCallContext(context: FormattingContext): Boolean = js.native
-  def IsFunctionCallOrNewContext(context: FormattingContext): Boolean = js.native
-  def IsFunctionDeclContext(context: FormattingContext): Boolean = js.native
-  def IsModuleDeclContext(context: FormattingContext): Boolean = js.native
-  def IsMultilineBlockContext(context: FormattingContext): Boolean = js.native
-  def IsNewContext(context: FormattingContext): Boolean = js.native
-  def IsNotBinaryOpContext(context: FormattingContext): Boolean = js.native
-  def IsNotForContext(context: FormattingContext): Boolean = js.native
-  def IsNotFormatOnEnter(context: FormattingContext): Boolean = js.native
-  def IsObjectContext(context: FormattingContext): Boolean = js.native
-  def IsObjectTypeContext(context: FormattingContext): Boolean = js.native
-  def IsSameLineTokenContext(context: FormattingContext): Boolean = js.native
-  def IsSameLineTokenOrBeforeMultilineBlockContext(context: FormattingContext): Boolean = js.native
-  def IsSingleLineBlockContext(context: FormattingContext): Boolean = js.native
-  def IsTypeArgumentOrParameter(tokenKind: SyntaxKind, parentKind: SyntaxKind): Boolean = js.native
-  def IsTypeArgumentOrParameterContext(context: FormattingContext): Boolean = js.native
-  def IsTypeScriptDeclWithBlockContext(context: FormattingContext): Boolean = js.native
-  def IsVoidOpContext(context: FormattingContext): Boolean = js.native
-  def NodeIsBlockContext(node: IndentationNodeContext): Boolean = js.native
-  def NodeIsTypeScriptDeclWithBlockContext(node: IndentationNodeContext): Boolean = js.native
+object Rules {
+  @scala.inline
+  def apply(
+    ControlOpenBraceLeftTokenRange: TokenRange,
+    FunctionOpenBraceLeftTokenRange: TokenRange,
+    HighPriorityCommonRules: js.Array[Rule],
+    IgnoreAfterLineComment: Rule,
+    IgnoreBeforeComment: Rule,
+    LowPriorityCommonRules: js.Array[Rule],
+    NewLineAfterOpenBraceInBlockContext: Rule,
+    NewLineBeforeCloseBraceInBlockContext: Rule,
+    NewLineBeforeOpenBraceInControl: Rule,
+    NewLineBeforeOpenBraceInFunction: Rule,
+    NewLineBeforeOpenBraceInTypeScriptDeclWithBlock: Rule,
+    NoSpaceAfterAnonymousFunctionKeyword: Rule,
+    NoSpaceAfterBinaryOperator: Rule,
+    NoSpaceAfterCloseAngularBracket: Rule,
+    NoSpaceAfterCloseBrace: Rule,
+    NoSpaceAfterCloseBracket: Rule,
+    NoSpaceAfterComma: Rule,
+    NoSpaceAfterConstructor: Rule,
+    NoSpaceAfterDot: Rule,
+    NoSpaceAfterEllipsis: Rule,
+    NoSpaceAfterKeywordInControl: Rule,
+    NoSpaceAfterModuleImport: Rule,
+    NoSpaceAfterOpenAngularBracket: Rule,
+    NoSpaceAfterOpenBracket: Rule,
+    NoSpaceAfterOpenParen: Rule,
+    NoSpaceAfterOptionalParameters: Rule,
+    NoSpaceAfterSemicolonInFor: Rule,
+    NoSpaceAfterUnaryPredecrementOperator: Rule,
+    NoSpaceAfterUnaryPrefixOperator: Rule,
+    NoSpaceAfterUnaryPreincrementOperator: Rule,
+    NoSpaceBeforeBinaryOperator: Rule,
+    NoSpaceBeforeCloseAngularBracket: Rule,
+    NoSpaceBeforeCloseBracket: Rule,
+    NoSpaceBeforeCloseParen: Rule,
+    NoSpaceBeforeColon: Rule,
+    NoSpaceBeforeComma: Rule,
+    NoSpaceBeforeDot: Rule,
+    NoSpaceBeforeOpenAngularBracket: Rule,
+    NoSpaceBeforeOpenBracket: Rule,
+    NoSpaceBeforeOpenParenInFuncCall: Rule,
+    NoSpaceBeforeOpenParenInFuncDecl: Rule,
+    NoSpaceBeforeQMark: Rule,
+    NoSpaceBeforeSemicolon: Rule,
+    NoSpaceBeforeUnaryPostdecrementOperator: Rule,
+    NoSpaceBeforeUnaryPostincrementOperator: Rule,
+    NoSpaceBetweenCloseParenAndAngularBracket: Rule,
+    NoSpaceBetweenEmptyBraceBrackets: Rule,
+    NoSpaceBetweenEmptyInterfaceBraceBrackets: Rule,
+    NoSpaceBetweenParens: Rule,
+    NoSpaceBetweenReturnAndSemicolon: Rule,
+    SpaceAfterAddWhenFollowedByPreincrement: Rule,
+    SpaceAfterAddWhenFollowedByUnaryPlus: Rule,
+    SpaceAfterAnonymousFunctionKeyword: Rule,
+    SpaceAfterArrow: Rule,
+    SpaceAfterBinaryKeywordOperator: Rule,
+    SpaceAfterBinaryOperator: Rule,
+    SpaceAfterCertainKeywords: Rule,
+    SpaceAfterCertainTypeScriptKeywords: Rule,
+    SpaceAfterCloseBrace: Rule,
+    SpaceAfterColon: Rule,
+    SpaceAfterComma: Rule,
+    SpaceAfterFunctionInFuncDecl: Rule,
+    SpaceAfterGetSetInMember: Rule,
+    SpaceAfterKeywordInControl: Rule,
+    SpaceAfterModuleName: Rule,
+    SpaceAfterOpenBrace: Rule,
+    SpaceAfterOpenParen: Rule,
+    SpaceAfterPostdecrementWhenFollowedBySubtract: Rule,
+    SpaceAfterPostincrementWhenFollowedByAdd: Rule,
+    SpaceAfterQMark: Rule,
+    SpaceAfterSemicolon: Rule,
+    SpaceAfterSemicolonInFor: Rule,
+    SpaceAfterSubtractWhenFollowedByPredecrement: Rule,
+    SpaceAfterSubtractWhenFollowedByUnaryMinus: Rule,
+    SpaceAfterTryFinally: Rule,
+    SpaceAfterVoidOperator: Rule,
+    SpaceBeforeBinaryKeywordOperator: Rule,
+    SpaceBeforeBinaryOperator: Rule,
+    SpaceBeforeCertainTypeScriptKeywords: Rule,
+    SpaceBeforeCloseBrace: Rule,
+    SpaceBeforeCloseParen: Rule,
+    SpaceBeforeOpenBraceInControl: Rule,
+    SpaceBeforeOpenBraceInFunction: Rule,
+    SpaceBeforeOpenBraceInTypeScriptDeclWithBlock: Rule,
+    SpaceBetweenCloseBraceAndElse: Rule,
+    SpaceBetweenCloseBraceAndWhile: Rule,
+    SpaceBetweenStatements: Rule,
+    TypeScriptOpenBraceLeftTokenRange: TokenRange,
+    getRuleName: Rule => js.Any,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null
+  ): Rules = {
+    val __obj = js.Dynamic.literal(ControlOpenBraceLeftTokenRange = ControlOpenBraceLeftTokenRange.asInstanceOf[js.Any], FunctionOpenBraceLeftTokenRange = FunctionOpenBraceLeftTokenRange.asInstanceOf[js.Any], HighPriorityCommonRules = HighPriorityCommonRules.asInstanceOf[js.Any], IgnoreAfterLineComment = IgnoreAfterLineComment.asInstanceOf[js.Any], IgnoreBeforeComment = IgnoreBeforeComment.asInstanceOf[js.Any], LowPriorityCommonRules = LowPriorityCommonRules.asInstanceOf[js.Any], NewLineAfterOpenBraceInBlockContext = NewLineAfterOpenBraceInBlockContext.asInstanceOf[js.Any], NewLineBeforeCloseBraceInBlockContext = NewLineBeforeCloseBraceInBlockContext.asInstanceOf[js.Any], NewLineBeforeOpenBraceInControl = NewLineBeforeOpenBraceInControl.asInstanceOf[js.Any], NewLineBeforeOpenBraceInFunction = NewLineBeforeOpenBraceInFunction.asInstanceOf[js.Any], NewLineBeforeOpenBraceInTypeScriptDeclWithBlock = NewLineBeforeOpenBraceInTypeScriptDeclWithBlock.asInstanceOf[js.Any], NoSpaceAfterAnonymousFunctionKeyword = NoSpaceAfterAnonymousFunctionKeyword.asInstanceOf[js.Any], NoSpaceAfterBinaryOperator = NoSpaceAfterBinaryOperator.asInstanceOf[js.Any], NoSpaceAfterCloseAngularBracket = NoSpaceAfterCloseAngularBracket.asInstanceOf[js.Any], NoSpaceAfterCloseBrace = NoSpaceAfterCloseBrace.asInstanceOf[js.Any], NoSpaceAfterCloseBracket = NoSpaceAfterCloseBracket.asInstanceOf[js.Any], NoSpaceAfterComma = NoSpaceAfterComma.asInstanceOf[js.Any], NoSpaceAfterConstructor = NoSpaceAfterConstructor.asInstanceOf[js.Any], NoSpaceAfterDot = NoSpaceAfterDot.asInstanceOf[js.Any], NoSpaceAfterEllipsis = NoSpaceAfterEllipsis.asInstanceOf[js.Any], NoSpaceAfterKeywordInControl = NoSpaceAfterKeywordInControl.asInstanceOf[js.Any], NoSpaceAfterModuleImport = NoSpaceAfterModuleImport.asInstanceOf[js.Any], NoSpaceAfterOpenAngularBracket = NoSpaceAfterOpenAngularBracket.asInstanceOf[js.Any], NoSpaceAfterOpenBracket = NoSpaceAfterOpenBracket.asInstanceOf[js.Any], NoSpaceAfterOpenParen = NoSpaceAfterOpenParen.asInstanceOf[js.Any], NoSpaceAfterOptionalParameters = NoSpaceAfterOptionalParameters.asInstanceOf[js.Any], NoSpaceAfterSemicolonInFor = NoSpaceAfterSemicolonInFor.asInstanceOf[js.Any], NoSpaceAfterUnaryPredecrementOperator = NoSpaceAfterUnaryPredecrementOperator.asInstanceOf[js.Any], NoSpaceAfterUnaryPrefixOperator = NoSpaceAfterUnaryPrefixOperator.asInstanceOf[js.Any], NoSpaceAfterUnaryPreincrementOperator = NoSpaceAfterUnaryPreincrementOperator.asInstanceOf[js.Any], NoSpaceBeforeBinaryOperator = NoSpaceBeforeBinaryOperator.asInstanceOf[js.Any], NoSpaceBeforeCloseAngularBracket = NoSpaceBeforeCloseAngularBracket.asInstanceOf[js.Any], NoSpaceBeforeCloseBracket = NoSpaceBeforeCloseBracket.asInstanceOf[js.Any], NoSpaceBeforeCloseParen = NoSpaceBeforeCloseParen.asInstanceOf[js.Any], NoSpaceBeforeColon = NoSpaceBeforeColon.asInstanceOf[js.Any], NoSpaceBeforeComma = NoSpaceBeforeComma.asInstanceOf[js.Any], NoSpaceBeforeDot = NoSpaceBeforeDot.asInstanceOf[js.Any], NoSpaceBeforeOpenAngularBracket = NoSpaceBeforeOpenAngularBracket.asInstanceOf[js.Any], NoSpaceBeforeOpenBracket = NoSpaceBeforeOpenBracket.asInstanceOf[js.Any], NoSpaceBeforeOpenParenInFuncCall = NoSpaceBeforeOpenParenInFuncCall.asInstanceOf[js.Any], NoSpaceBeforeOpenParenInFuncDecl = NoSpaceBeforeOpenParenInFuncDecl.asInstanceOf[js.Any], NoSpaceBeforeQMark = NoSpaceBeforeQMark.asInstanceOf[js.Any], NoSpaceBeforeSemicolon = NoSpaceBeforeSemicolon.asInstanceOf[js.Any], NoSpaceBeforeUnaryPostdecrementOperator = NoSpaceBeforeUnaryPostdecrementOperator.asInstanceOf[js.Any], NoSpaceBeforeUnaryPostincrementOperator = NoSpaceBeforeUnaryPostincrementOperator.asInstanceOf[js.Any], NoSpaceBetweenCloseParenAndAngularBracket = NoSpaceBetweenCloseParenAndAngularBracket.asInstanceOf[js.Any], NoSpaceBetweenEmptyBraceBrackets = NoSpaceBetweenEmptyBraceBrackets.asInstanceOf[js.Any], NoSpaceBetweenEmptyInterfaceBraceBrackets = NoSpaceBetweenEmptyInterfaceBraceBrackets.asInstanceOf[js.Any], NoSpaceBetweenParens = NoSpaceBetweenParens.asInstanceOf[js.Any], NoSpaceBetweenReturnAndSemicolon = NoSpaceBetweenReturnAndSemicolon.asInstanceOf[js.Any], SpaceAfterAddWhenFollowedByPreincrement = SpaceAfterAddWhenFollowedByPreincrement.asInstanceOf[js.Any], SpaceAfterAddWhenFollowedByUnaryPlus = SpaceAfterAddWhenFollowedByUnaryPlus.asInstanceOf[js.Any], SpaceAfterAnonymousFunctionKeyword = SpaceAfterAnonymousFunctionKeyword.asInstanceOf[js.Any], SpaceAfterArrow = SpaceAfterArrow.asInstanceOf[js.Any], SpaceAfterBinaryKeywordOperator = SpaceAfterBinaryKeywordOperator.asInstanceOf[js.Any], SpaceAfterBinaryOperator = SpaceAfterBinaryOperator.asInstanceOf[js.Any], SpaceAfterCertainKeywords = SpaceAfterCertainKeywords.asInstanceOf[js.Any], SpaceAfterCertainTypeScriptKeywords = SpaceAfterCertainTypeScriptKeywords.asInstanceOf[js.Any], SpaceAfterCloseBrace = SpaceAfterCloseBrace.asInstanceOf[js.Any], SpaceAfterColon = SpaceAfterColon.asInstanceOf[js.Any], SpaceAfterComma = SpaceAfterComma.asInstanceOf[js.Any], SpaceAfterFunctionInFuncDecl = SpaceAfterFunctionInFuncDecl.asInstanceOf[js.Any], SpaceAfterGetSetInMember = SpaceAfterGetSetInMember.asInstanceOf[js.Any], SpaceAfterKeywordInControl = SpaceAfterKeywordInControl.asInstanceOf[js.Any], SpaceAfterModuleName = SpaceAfterModuleName.asInstanceOf[js.Any], SpaceAfterOpenBrace = SpaceAfterOpenBrace.asInstanceOf[js.Any], SpaceAfterOpenParen = SpaceAfterOpenParen.asInstanceOf[js.Any], SpaceAfterPostdecrementWhenFollowedBySubtract = SpaceAfterPostdecrementWhenFollowedBySubtract.asInstanceOf[js.Any], SpaceAfterPostincrementWhenFollowedByAdd = SpaceAfterPostincrementWhenFollowedByAdd.asInstanceOf[js.Any], SpaceAfterQMark = SpaceAfterQMark.asInstanceOf[js.Any], SpaceAfterSemicolon = SpaceAfterSemicolon.asInstanceOf[js.Any], SpaceAfterSemicolonInFor = SpaceAfterSemicolonInFor.asInstanceOf[js.Any], SpaceAfterSubtractWhenFollowedByPredecrement = SpaceAfterSubtractWhenFollowedByPredecrement.asInstanceOf[js.Any], SpaceAfterSubtractWhenFollowedByUnaryMinus = SpaceAfterSubtractWhenFollowedByUnaryMinus.asInstanceOf[js.Any], SpaceAfterTryFinally = SpaceAfterTryFinally.asInstanceOf[js.Any], SpaceAfterVoidOperator = SpaceAfterVoidOperator.asInstanceOf[js.Any], SpaceBeforeBinaryKeywordOperator = SpaceBeforeBinaryKeywordOperator.asInstanceOf[js.Any], SpaceBeforeBinaryOperator = SpaceBeforeBinaryOperator.asInstanceOf[js.Any], SpaceBeforeCertainTypeScriptKeywords = SpaceBeforeCertainTypeScriptKeywords.asInstanceOf[js.Any], SpaceBeforeCloseBrace = SpaceBeforeCloseBrace.asInstanceOf[js.Any], SpaceBeforeCloseParen = SpaceBeforeCloseParen.asInstanceOf[js.Any], SpaceBeforeOpenBraceInControl = SpaceBeforeOpenBraceInControl.asInstanceOf[js.Any], SpaceBeforeOpenBraceInFunction = SpaceBeforeOpenBraceInFunction.asInstanceOf[js.Any], SpaceBeforeOpenBraceInTypeScriptDeclWithBlock = SpaceBeforeOpenBraceInTypeScriptDeclWithBlock.asInstanceOf[js.Any], SpaceBetweenCloseBraceAndElse = SpaceBetweenCloseBraceAndElse.asInstanceOf[js.Any], SpaceBetweenCloseBraceAndWhile = SpaceBetweenCloseBraceAndWhile.asInstanceOf[js.Any], SpaceBetweenStatements = SpaceBetweenStatements.asInstanceOf[js.Any], TypeScriptOpenBraceLeftTokenRange = TypeScriptOpenBraceLeftTokenRange.asInstanceOf[js.Any], getRuleName = js.Any.fromFunction1(getRuleName))
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Rules]
+  }
 }
 

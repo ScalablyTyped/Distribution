@@ -16,20 +16,20 @@ trait AudioBufferSourceOptions extends js.Object {
 object AudioBufferSourceOptions {
   @scala.inline
   def apply(
-    buffer: AudioBuffer = null,
-    detune: Int | Double = null,
+    buffer: js.UndefOr[Null | AudioBuffer] = js.undefined,
+    detune: js.UndefOr[Double] = js.undefined,
     loop: js.UndefOr[scala.Boolean] = js.undefined,
-    loopEnd: Int | Double = null,
-    loopStart: Int | Double = null,
-    playbackRate: Int | Double = null
+    loopEnd: js.UndefOr[Double] = js.undefined,
+    loopStart: js.UndefOr[Double] = js.undefined,
+    playbackRate: js.UndefOr[Double] = js.undefined
   ): AudioBufferSourceOptions = {
     val __obj = js.Dynamic.literal()
-    if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
-    if (detune != null) __obj.updateDynamic("detune")(detune.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (loopEnd != null) __obj.updateDynamic("loopEnd")(loopEnd.asInstanceOf[js.Any])
-    if (loopStart != null) __obj.updateDynamic("loopStart")(loopStart.asInstanceOf[js.Any])
-    if (playbackRate != null) __obj.updateDynamic("playbackRate")(playbackRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(detune)) __obj.updateDynamic("detune")(detune.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loopEnd)) __obj.updateDynamic("loopEnd")(loopEnd.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loopStart)) __obj.updateDynamic("loopStart")(loopStart.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(playbackRate)) __obj.updateDynamic("playbackRate")(playbackRate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioBufferSourceOptions]
   }
 }

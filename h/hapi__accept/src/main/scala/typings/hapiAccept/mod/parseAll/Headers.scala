@@ -16,7 +16,7 @@ trait Headers
 object Headers {
   @scala.inline
   def apply(
-    StringDictionary: /* header */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     accept: String = null,
     `accept-charset`: String = null,
     `accept-encoding`: String = null,

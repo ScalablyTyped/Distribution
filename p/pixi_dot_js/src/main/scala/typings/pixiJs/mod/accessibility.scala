@@ -1,5 +1,6 @@
 package typings.pixiJs.mod
 
+import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,6 +31,55 @@ object accessibility extends js.Object {
   class AccessibilityManager protected ()
     extends typings.pixiJs.PIXI.accessibility.AccessibilityManager {
     def this(renderer: typings.pixiJs.PIXI.Renderer) = this()
+    /**
+      * Setting this to true will visually show the divs.
+      *
+      * @type {boolean}
+      */
+    /* CompleteClass */
+    override var debug: Boolean = js.native
+    /**
+      * A flag
+      * @type {boolean}
+      * @readonly
+      */
+    /* CompleteClass */
+    override val isActive: Boolean = js.native
+    /**
+      * A flag
+      * @type {boolean}
+      * @readonly
+      */
+    /* CompleteClass */
+    override val isMobileAccessibility: Boolean = js.native
+    /**
+      * The renderer this accessibility manager works for.
+      *
+      * @member {PIXI.AbstractRenderer} PIXI.accessibility.AccessibilityManager#renderer
+      */
+    /* CompleteClass */
+    override var renderer: typings.pixiJs.PIXI.AbstractRenderer = js.native
+    /**
+      * Adjust the hit area based on the bounds of a display object
+      *
+      * @param {PIXI.Rectangle} hitArea - Bounds of the child
+      */
+    /* CompleteClass */
+    override def capHitArea(hitArea: typings.pixiJs.PIXI.Rectangle): Unit = js.native
+    /**
+      * Destroys the accessibility manager
+      *
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    /**
+      * private function that will visually add the information to the
+      * accessability div
+      *
+      * @param {HTMLDivElement} div
+      */
+    /* CompleteClass */
+    override def updateDebugHTML(div: HTMLDivElement): Unit = js.native
   }
   
 }

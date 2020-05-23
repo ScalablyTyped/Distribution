@@ -27,7 +27,7 @@ object StatisticProps {
     decimalSeparator: String = null,
     formatter: Formatter = null,
     groupSeparator: String = null,
-    precision: Int | Double = null,
+    precision: js.UndefOr[Double] = js.undefined,
     prefix: ReactNode = null,
     prefixCls: String = null,
     style: CSSProperties = null,
@@ -42,7 +42,7 @@ object StatisticProps {
     if (decimalSeparator != null) __obj.updateDynamic("decimalSeparator")(decimalSeparator.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
     if (groupSeparator != null) __obj.updateDynamic("groupSeparator")(groupSeparator.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

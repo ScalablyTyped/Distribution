@@ -3,7 +3,7 @@ package typings.luminoDragdrop.mod
 import typings.luminoCoreutils.mod.MimeData
 import typings.luminoDisposable.mod.IDisposable
 import typings.luminoDragdrop.mod.Drag.IOptions
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -135,7 +135,7 @@ class Drag_ protected () extends IDisposable {
     * called in response to events on the document. It should not be
     * called directly by user code.
     */
-  def handleEvent(event: Event_): Unit = js.native
+  def handleEvent(event: Event): Unit = js.native
   /**
     * Start the drag operation at the specified client position.
     *

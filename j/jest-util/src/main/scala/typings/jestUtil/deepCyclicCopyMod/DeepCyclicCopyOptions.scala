@@ -15,7 +15,7 @@ object DeepCyclicCopyOptions {
   def apply(blacklist: Set[String] = null, keepPrototype: js.UndefOr[Boolean] = js.undefined): DeepCyclicCopyOptions = {
     val __obj = js.Dynamic.literal()
     if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepPrototype)) __obj.updateDynamic("keepPrototype")(keepPrototype.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepPrototype)) __obj.updateDynamic("keepPrototype")(keepPrototype.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeepCyclicCopyOptions]
   }
 }

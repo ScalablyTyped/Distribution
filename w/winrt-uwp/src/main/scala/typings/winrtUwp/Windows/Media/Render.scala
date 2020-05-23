@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -62,44 +61,6 @@ object Render extends js.Object {
     /** Audio is speech. */
     @js.native
     sealed trait speech extends AudioRenderCategory
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[AudioRenderCategory with Double] = js.native
-    /* 4 */ @js.native
-    object alerts extends TopLevel[alerts with Double]
-    
-    /* 2 */ @js.native
-    object backgroundCapableMedia extends TopLevel[backgroundCapableMedia with Double]
-    
-    /* 3 */ @js.native
-    object communications extends TopLevel[communications with Double]
-    
-    /* 1 */ @js.native
-    object foregroundOnlyMedia extends TopLevel[foregroundOnlyMedia with Double]
-    
-    /* 8 */ @js.native
-    object gameChat extends TopLevel[gameChat with Double]
-    
-    /* 6 */ @js.native
-    object gameEffects extends TopLevel[gameEffects with Double]
-    
-    /* 7 */ @js.native
-    object gameMedia extends TopLevel[gameMedia with Double]
-    
-    /* 11 */ @js.native
-    object media extends TopLevel[media with Double]
-    
-    /* 10 */ @js.native
-    object movie extends TopLevel[movie with Double]
-    
-    /* 0 */ @js.native
-    object other extends TopLevel[other with Double]
-    
-    /* 5 */ @js.native
-    object soundEffects extends TopLevel[soundEffects with Double]
-    
-    /* 9 */ @js.native
-    object speech extends TopLevel[speech with Double]
     
   }
   

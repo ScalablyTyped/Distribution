@@ -1,8 +1,8 @@
 package typings.primereact.toggleButtonMod
 
-import typings.primereact.AnonTargetAnonNameType
+import typings.primereact.anon.TargetNameType
 import typings.primereact.tooltipOptionsMod.TooltipOptions
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,9 +14,9 @@ trait ToggleButtonProps extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   var offIcon: js.UndefOr[String] = js.undefined
   var offLabel: js.UndefOr[String] = js.undefined
-  var onBlur: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ AnonTargetAnonNameType, Unit]] = js.undefined
-  var onFocus: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
+  var onBlur: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ TargetNameType, Unit]] = js.undefined
+  var onFocus: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   var onIcon: js.UndefOr[String] = js.undefined
   var onLabel: js.UndefOr[String] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
@@ -34,19 +34,19 @@ object ToggleButtonProps {
     id: String = null,
     offIcon: String = null,
     offLabel: String = null,
-    onBlur: /* event */ Event_ => Unit = null,
-    onChange: /* e */ AnonTargetAnonNameType => Unit = null,
-    onFocus: /* event */ Event_ => Unit = null,
+    onBlur: /* event */ Event => Unit = null,
+    onChange: /* e */ TargetNameType => Unit = null,
+    onFocus: /* event */ Event => Unit = null,
     onIcon: String = null,
     onLabel: String = null,
     style: js.Object = null,
-    tabIndex: Int | Double = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
     tooltip: js.Any = null,
     tooltipOptions: TooltipOptions = null
   ): ToggleButtonProps = {
     val __obj = js.Dynamic.literal()
     if (ariaLabelledBy != null) __obj.updateDynamic("ariaLabelledBy")(ariaLabelledBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (offIcon != null) __obj.updateDynamic("offIcon")(offIcon.asInstanceOf[js.Any])
@@ -57,7 +57,7 @@ object ToggleButtonProps {
     if (onIcon != null) __obj.updateDynamic("onIcon")(onIcon.asInstanceOf[js.Any])
     if (onLabel != null) __obj.updateDynamic("onLabel")(onLabel.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (tooltipOptions != null) __obj.updateDynamic("tooltipOptions")(tooltipOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToggleButtonProps]

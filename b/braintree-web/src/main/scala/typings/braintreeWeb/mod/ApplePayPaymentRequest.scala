@@ -1,6 +1,6 @@
 package typings.braintreeWeb.mod
 
-import typings.braintreeWeb.AnonLabel
+import typings.braintreeWeb.anon.Label
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,7 +41,7 @@ trait ApplePayPaymentRequest extends js.Object {
   var shippingMethods: js.UndefOr[js.Any] = js.undefined
   var shippingType: js.UndefOr[js.Any] = js.undefined
   var supportedNetworks: js.Array[String]
-  var total: AnonLabel
+  var total: Label
 }
 
 object ApplePayPaymentRequest {
@@ -51,7 +51,7 @@ object ApplePayPaymentRequest {
     currencyCode: String,
     merchantCapabilities: js.Array[String],
     supportedNetworks: js.Array[String],
-    total: AnonLabel,
+    total: Label,
     billingContact: js.Any = null,
     requiredBillingContactFields: js.Any = null,
     requiredShippingContactFields: js.Any = null,

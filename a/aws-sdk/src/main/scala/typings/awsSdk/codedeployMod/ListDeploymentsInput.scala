@@ -19,7 +19,11 @@ trait ListDeploymentsInput extends js.Object {
     */
   var deploymentGroupName: js.UndefOr[DeploymentGroupName] = js.native
   /**
-    * A subset of deployments to list by status:   Created: Include created deployments in the resulting list.   Queued: Include queued deployments in the resulting list.   In Progress: Include in-progress deployments in the resulting list.   Succeeded: Include successful deployments in the resulting list.   Failed: Include failed deployments in the resulting list.   Stopped: Include stopped deployments in the resulting list.  
+    * The unique ID of an external resource for returning deployments linked to the external resource.
+    */
+  var externalId: js.UndefOr[ExternalId] = js.native
+  /**
+    * A subset of deployments to list by status:    Created: Include created deployments in the resulting list.    Queued: Include queued deployments in the resulting list.    In Progress: Include in-progress deployments in the resulting list.    Succeeded: Include successful deployments in the resulting list.    Failed: Include failed deployments in the resulting list.    Stopped: Include stopped deployments in the resulting list.  
     */
   var includeOnlyStatuses: js.UndefOr[DeploymentStatusList] = js.native
   /**
@@ -34,6 +38,7 @@ object ListDeploymentsInput {
     applicationName: ApplicationName = null,
     createTimeRange: TimeRange = null,
     deploymentGroupName: DeploymentGroupName = null,
+    externalId: ExternalId = null,
     includeOnlyStatuses: DeploymentStatusList = null,
     nextToken: NextToken = null
   ): ListDeploymentsInput = {
@@ -41,6 +46,7 @@ object ListDeploymentsInput {
     if (applicationName != null) __obj.updateDynamic("applicationName")(applicationName.asInstanceOf[js.Any])
     if (createTimeRange != null) __obj.updateDynamic("createTimeRange")(createTimeRange.asInstanceOf[js.Any])
     if (deploymentGroupName != null) __obj.updateDynamic("deploymentGroupName")(deploymentGroupName.asInstanceOf[js.Any])
+    if (externalId != null) __obj.updateDynamic("externalId")(externalId.asInstanceOf[js.Any])
     if (includeOnlyStatuses != null) __obj.updateDynamic("includeOnlyStatuses")(includeOnlyStatuses.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDeploymentsInput]

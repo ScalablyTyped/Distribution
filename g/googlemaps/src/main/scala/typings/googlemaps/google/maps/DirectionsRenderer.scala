@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.maps.DirectionsRenderer")
 @js.native
-class DirectionsRenderer () extends MVCObject {
-  def this(opts: DirectionsRendererOptions) = this()
+trait DirectionsRenderer extends MVCObject {
   def getDirections(): DirectionsResult = js.native
   def getMap(): Map[Element] = js.native
   def getPanel(): Element = js.native

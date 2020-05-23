@@ -27,7 +27,7 @@ trait Service extends js.Object {
     */
   var DnsConfig: js.UndefOr[typings.awsSdk.servicediscoveryMod.DnsConfig] = js.native
   /**
-    *  Public DNS namespaces only. A complex type that contains settings for an optional health check. If you specify settings for a health check, AWS Cloud Map associates the health check with the records that you specify in DnsConfig. For information about the charges for health checks, see Amazon Route 53 Pricing.
+    *  Public DNS and HTTP namespaces only. A complex type that contains settings for an optional health check. If you specify settings for a health check, AWS Cloud Map associates the health check with the records that you specify in DnsConfig. For information about the charges for health checks, see Amazon Route 53 Pricing.
     */
   var HealthCheckConfig: js.UndefOr[typings.awsSdk.servicediscoveryMod.HealthCheckConfig] = js.native
   /**
@@ -39,7 +39,7 @@ trait Service extends js.Object {
     */
   var Id: js.UndefOr[ResourceId] = js.native
   /**
-    * The number of instances that are currently associated with the service. Instances that were previously associated with the service but that have been deleted are not included in the count.
+    * The number of instances that are currently associated with the service. Instances that were previously associated with the service but that have been deleted are not included in the count. The count might not reflect pending registrations and deregistrations.
     */
   var InstanceCount: js.UndefOr[ResourceCount] = js.native
   /**
@@ -63,7 +63,7 @@ object Service {
     HealthCheckConfig: HealthCheckConfig = null,
     HealthCheckCustomConfig: HealthCheckCustomConfig = null,
     Id: ResourceId = null,
-    InstanceCount: Int | Double = null,
+    InstanceCount: js.UndefOr[ResourceCount] = js.undefined,
     Name: ServiceName = null,
     NamespaceId: ResourceId = null
   ): Service = {
@@ -76,7 +76,7 @@ object Service {
     if (HealthCheckConfig != null) __obj.updateDynamic("HealthCheckConfig")(HealthCheckConfig.asInstanceOf[js.Any])
     if (HealthCheckCustomConfig != null) __obj.updateDynamic("HealthCheckCustomConfig")(HealthCheckCustomConfig.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (InstanceCount != null) __obj.updateDynamic("InstanceCount")(InstanceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount.get.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (NamespaceId != null) __obj.updateDynamic("NamespaceId")(NamespaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Service]

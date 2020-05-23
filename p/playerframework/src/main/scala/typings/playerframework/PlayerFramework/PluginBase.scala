@@ -5,16 +5,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PlayerFramework.PluginBase")
-@js.native
-class PluginBase () extends js.Object {
-  var currentMediaSource: MediaSource = js.native
-  var isActive: Boolean = js.native
-  var isEnabled: Boolean = js.native
-  var isLoaded: Boolean = js.native
-  var mediaPlayer: MediaPlayer = js.native
-  def load(): Unit = js.native
-  def unload(): Unit = js.native
-  def update(mediaSource: MediaSource): Unit = js.native
+trait PluginBase extends js.Object {
+  var currentMediaSource: MediaSource
+  var isActive: Boolean
+  var isEnabled: Boolean
+  var isLoaded: Boolean
+  var mediaPlayer: MediaPlayer
+  def load(): Unit
+  def unload(): Unit
+  def update(mediaSource: MediaSource): Unit
+}
+
+object PluginBase {
+  @scala.inline
+  def apply(
+    currentMediaSource: MediaSource,
+    isActive: Boolean,
+    isEnabled: Boolean,
+    isLoaded: Boolean,
+    load: () => Unit,
+    mediaPlayer: MediaPlayer,
+    unload: () => Unit,
+    update: MediaSource => Unit
+  ): PluginBase = {
+    val __obj = js.Dynamic.literal(currentMediaSource = currentMediaSource.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], isLoaded = isLoaded.asInstanceOf[js.Any], load = js.Any.fromFunction0(load), mediaPlayer = mediaPlayer.asInstanceOf[js.Any], unload = js.Any.fromFunction0(unload), update = js.Any.fromFunction1(update))
+    __obj.asInstanceOf[PluginBase]
+  }
 }
 

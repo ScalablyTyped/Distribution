@@ -18,16 +18,16 @@ trait ILayer extends IElement {
   /** [Config Option] (String) */
   var hideMode: js.UndefOr[java.lang.String] = js.undefined
   /** [Method] overridden Element method
-  		* @param x Object
-  		* @param y Object
-  		* @param width Object
-  		* @param height Object
-  		* @param animate Object
-  		* @param duration Object
-  		* @param callback Object
-  		* @param easing Object
-  		* @returns Ext.dom.Element this
-  		*/
+    * @param x Object
+    * @param y Object
+    * @param width Object
+    * @param height Object
+    * @param animate Object
+    * @param duration Object
+    * @param callback Object
+    * @param easing Object
+    * @returns Ext.dom.Element this
+    */
   @JSName("setBounds")
   var setBounds_ILayer: js.UndefOr[
     js.Function8[
@@ -43,13 +43,13 @@ trait ILayer extends IElement {
     ]
   ] = js.undefined
   /** [Method] overridden Element method
-  		* @param h Object
-  		* @param animate Object
-  		* @param duration Object
-  		* @param callback Object
-  		* @param easing Object
-  		* @returns Ext.dom.Element this
-  		*/
+    * @param h Object
+    * @param animate Object
+    * @param duration Object
+    * @param callback Object
+    * @param easing Object
+    * @returns Ext.dom.Element this
+    */
   @JSName("setHeight")
   var setHeight_ILayer: js.UndefOr[
     js.Function5[
@@ -62,10 +62,10 @@ trait ILayer extends IElement {
     ]
   ] = js.undefined
   /** [Method] Sets the element s left and top positions directly using CSS style Defined in override Ext dom Element_position
-  		* @param left Object
-  		* @param top Object
-  		* @returns Ext.dom.Element this
-  		*/
+    * @param left Object
+    * @param top Object
+    * @returns Ext.dom.Element this
+    */
   @JSName("setLeftTop")
   var setLeftTop_ILayer: js.UndefOr[
     js.Function2[
@@ -75,20 +75,20 @@ trait ILayer extends IElement {
     ]
   ] = js.undefined
   /** [Method] overridden Element method
-  		* @param left Object
-  		* @returns Ext.dom.Element this
-  		*/
+    * @param left Object
+    * @returns Ext.dom.Element this
+    */
   @JSName("setLeft")
   var setLeft_ILayer: js.UndefOr[js.Function1[/* left */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.undefined
   /** [Method] overridden Element method
-  		* @param w Object
-  		* @param h Object
-  		* @param animate Object
-  		* @param duration Object
-  		* @param callback Object
-  		* @param easing Object
-  		* @returns Ext.dom.Element this
-  		*/
+    * @param w Object
+    * @param h Object
+    * @param animate Object
+    * @param duration Object
+    * @param callback Object
+    * @param easing Object
+    * @returns Ext.dom.Element this
+    */
   @JSName("setSize")
   var setSize_ILayer: js.UndefOr[
     js.Function6[
@@ -102,19 +102,19 @@ trait ILayer extends IElement {
     ]
   ] = js.undefined
   /** [Method] Sets the element s top position directly using CSS style instead of setY
-  		* @param top Object
-  		* @returns Ext.dom.Element this
-  		*/
+    * @param top Object
+    * @returns Ext.dom.Element this
+    */
   @JSName("setTop")
   var setTop_ILayer: js.UndefOr[js.Function1[/* top */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.undefined
   /** [Method] overridden Element method
-  		* @param visible Object
-  		* @param animate Object
-  		* @param duration Object
-  		* @param callback Object
-  		* @param easing Object
-  		* @returns Ext.dom.Element this
-  		*/
+    * @param visible Object
+    * @param animate Object
+    * @param duration Object
+    * @param callback Object
+    * @param easing Object
+    * @returns Ext.dom.Element this
+    */
   @JSName("setVisible")
   var setVisible_ILayer: js.UndefOr[
     js.Function5[
@@ -127,13 +127,13 @@ trait ILayer extends IElement {
     ]
   ] = js.undefined
   /** [Method] overridden Element method
-  		* @param w Object
-  		* @param animate Object
-  		* @param duration Object
-  		* @param callback Object
-  		* @param easing Object
-  		* @returns Ext.dom.Element this
-  		*/
+    * @param w Object
+    * @param animate Object
+    * @param duration Object
+    * @param callback Object
+    * @param easing Object
+    * @returns Ext.dom.Element this
+    */
   @JSName("setWidth")
   var setWidth_ILayer: js.UndefOr[
     js.Function5[
@@ -146,9 +146,9 @@ trait ILayer extends IElement {
     ]
   ] = js.undefined
   /** [Method] Sets the z index of this layer and adjusts any shadow and shim z indexes
-  		* @param zindex Number The new z-index to set
-  		* @returns Ext.Layer The Layer
-  		*/
+    * @param zindex Number The new z-index to set
+    * @returns Ext.Layer The Layer
+    */
   var setZIndex: js.UndefOr[js.Function1[/* zindex */ js.UndefOr[Double], this.type]] = js.undefined
   /** [Config Option] (String/Boolean) */
   var shadow: js.UndefOr[js.Any] = js.undefined
@@ -167,10 +167,10 @@ trait ILayer extends IElement {
 object ILayer {
   @scala.inline
   def apply(
-    ASCLASS: Int | Double = null,
-    DISPLAY: Int | Double = null,
-    OFFSETS: Int | Double = null,
-    VISIBILITY: Int | Double = null,
+    ASCLASS: js.UndefOr[Double] = js.undefined,
+    DISPLAY: js.UndefOr[Double] = js.undefined,
+    OFFSETS: js.UndefOr[Double] = js.undefined,
+    VISIBILITY: js.UndefOr[Double] = js.undefined,
     addCls: /* className */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.IElement = null,
     addClsOnClick: (/* className */ js.UndefOr[java.lang.String], /* testFn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => ILayer = null,
     addClsOnFocus: (/* className */ js.UndefOr[java.lang.String], /* testFn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => ILayer = null,
@@ -343,7 +343,7 @@ object ILayer {
     setWidth: (/* w */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], /* duration */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* easing */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.IElement = null,
     setZIndex: /* zindex */ js.UndefOr[Double] => ILayer = null,
     shadow: js.Any = null,
-    shadowOffset: Int | Double = null,
+    shadowOffset: js.UndefOr[Double] = js.undefined,
     shift: /* options */ js.UndefOr[js.Any] => ILayer = null,
     shim: js.UndefOr[Boolean] = js.undefined,
     show: /* animate */ js.UndefOr[js.Any] => ILayer = null,
@@ -365,13 +365,13 @@ object ILayer {
     uses: Array = null,
     visibilityCls: java.lang.String = null,
     wrap: (/* config */ js.UndefOr[js.Any], /* returnDom */ js.UndefOr[Boolean], /* selector */ js.UndefOr[java.lang.String]) => _ = null,
-    zindex: Int | Double = null
+    zindex: js.UndefOr[Double] = js.undefined
   ): ILayer = {
     val __obj = js.Dynamic.literal()
-    if (ASCLASS != null) __obj.updateDynamic("ASCLASS")(ASCLASS.asInstanceOf[js.Any])
-    if (DISPLAY != null) __obj.updateDynamic("DISPLAY")(DISPLAY.asInstanceOf[js.Any])
-    if (OFFSETS != null) __obj.updateDynamic("OFFSETS")(OFFSETS.asInstanceOf[js.Any])
-    if (VISIBILITY != null) __obj.updateDynamic("VISIBILITY")(VISIBILITY.asInstanceOf[js.Any])
+    if (!js.isUndefined(ASCLASS)) __obj.updateDynamic("ASCLASS")(ASCLASS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DISPLAY)) __obj.updateDynamic("DISPLAY")(DISPLAY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(OFFSETS)) __obj.updateDynamic("OFFSETS")(OFFSETS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(VISIBILITY)) __obj.updateDynamic("VISIBILITY")(VISIBILITY.get.asInstanceOf[js.Any])
     if (addCls != null) __obj.updateDynamic("addCls")(js.Any.fromFunction1(addCls))
     if (addClsOnClick != null) __obj.updateDynamic("addClsOnClick")(js.Any.fromFunction3(addClsOnClick))
     if (addClsOnFocus != null) __obj.updateDynamic("addClsOnFocus")(js.Any.fromFunction3(addClsOnFocus))
@@ -385,7 +385,7 @@ object ILayer {
     if (appendChild != null) __obj.updateDynamic("appendChild")(js.Any.fromFunction2(appendChild))
     if (appendTo != null) __obj.updateDynamic("appendTo")(js.Any.fromFunction1(appendTo))
     if (applyStyles != null) __obj.updateDynamic("applyStyles")(js.Any.fromFunction1(applyStyles))
-    if (!js.isUndefined(autoBoxAdjust)) __obj.updateDynamic("autoBoxAdjust")(autoBoxAdjust.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoBoxAdjust)) __obj.updateDynamic("autoBoxAdjust")(autoBoxAdjust.get.asInstanceOf[js.Any])
     if (blur != null) __obj.updateDynamic("blur")(js.Any.fromFunction0(blur))
     if (boxWrap != null) __obj.updateDynamic("boxWrap")(js.Any.fromFunction1(boxWrap))
     if (cacheScrollValues != null) __obj.updateDynamic("cacheScrollValues")(js.Any.fromFunction0(cacheScrollValues))
@@ -401,7 +401,7 @@ object ILayer {
     if (clip != null) __obj.updateDynamic("clip")(js.Any.fromFunction0(clip))
     if (cls != null) __obj.updateDynamic("cls")(cls.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (!js.isUndefined(constrain)) __obj.updateDynamic("constrain")(constrain.asInstanceOf[js.Any])
+    if (!js.isUndefined(constrain)) __obj.updateDynamic("constrain")(constrain.get.asInstanceOf[js.Any])
     if (contains != null) __obj.updateDynamic("contains")(js.Any.fromFunction1(contains))
     if (createChild != null) __obj.updateDynamic("createChild")(js.Any.fromFunction3(createChild))
     if (createProxy != null) __obj.updateDynamic("createProxy")(js.Any.fromFunction3(createProxy))
@@ -544,11 +544,11 @@ object ILayer {
     if (setWidth != null) __obj.updateDynamic("setWidth")(js.Any.fromFunction5(setWidth))
     if (setZIndex != null) __obj.updateDynamic("setZIndex")(js.Any.fromFunction1(setZIndex))
     if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
-    if (shadowOffset != null) __obj.updateDynamic("shadowOffset")(shadowOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadowOffset)) __obj.updateDynamic("shadowOffset")(shadowOffset.get.asInstanceOf[js.Any])
     if (shift != null) __obj.updateDynamic("shift")(js.Any.fromFunction1(shift))
-    if (!js.isUndefined(shim)) __obj.updateDynamic("shim")(shim.asInstanceOf[js.Any])
+    if (!js.isUndefined(shim)) __obj.updateDynamic("shim")(shim.get.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (slideIn != null) __obj.updateDynamic("slideIn")(js.Any.fromFunction2(slideIn))
     if (slideOut != null) __obj.updateDynamic("slideOut")(js.Any.fromFunction2(slideOut))
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
@@ -562,11 +562,11 @@ object ILayer {
     if (unselectable != null) __obj.updateDynamic("unselectable")(js.Any.fromFunction0(unselectable))
     if (up != null) __obj.updateDynamic("up")(js.Any.fromFunction3(up))
     if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction3(update))
-    if (!js.isUndefined(useDisplay)) __obj.updateDynamic("useDisplay")(useDisplay.asInstanceOf[js.Any])
+    if (!js.isUndefined(useDisplay)) __obj.updateDynamic("useDisplay")(useDisplay.get.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     if (visibilityCls != null) __obj.updateDynamic("visibilityCls")(visibilityCls.asInstanceOf[js.Any])
     if (wrap != null) __obj.updateDynamic("wrap")(js.Any.fromFunction3(wrap))
-    if (zindex != null) __obj.updateDynamic("zindex")(zindex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zindex)) __obj.updateDynamic("zindex")(zindex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILayer]
   }
 }

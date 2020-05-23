@@ -1,7 +1,7 @@
 package typings.xmlbuilder.mod
 
-import typings.xmlbuilder.AnonNData
-import typings.xmlbuilder.AnonPubID
+import typings.xmlbuilder.anon.NData
+import typings.xmlbuilder.anon.PubID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -73,7 +73,8 @@ class XMLDocType () extends js.Object {
     * @returns the DOCTYPE node
     */
   def cdata(value: String): XMLDocType = js.native
-  def com(value: String): XMLDocType = js.native
+  @JSName("com")
+  def com_(value: String): XMLDocType = js.native
   /**
     * Creates a new comment child and appends it to the list of child
     * nodes.
@@ -116,7 +117,7 @@ class XMLDocType () extends js.Object {
   def end(options: XMLToStringOptions): String = js.native
   def end(options: XMLWriter): String = js.native
   def ent(name: String, value: String): XMLDocType = js.native
-  def ent(name: String, value: AnonNData): XMLDocType = js.native
+  def ent(name: String, value: NData): XMLDocType = js.native
   /**
     * Creates a general entity declaration.
     * 
@@ -128,7 +129,7 @@ class XMLDocType () extends js.Object {
     * @returns the DOCTYPE node
     */
   def entity(name: String, value: String): XMLDocType = js.native
-  def entity(name: String, value: AnonNData): XMLDocType = js.native
+  def entity(name: String, value: NData): XMLDocType = js.native
   def ins(array: js.Array[_]): XMLDocType = js.native
   def ins(obj: js.Object): XMLDocType = js.native
   def ins(target: String, value: js.Any): XMLDocType = js.native
@@ -146,7 +147,7 @@ class XMLDocType () extends js.Object {
     * @returns the DOCTYPE node
     */
   def instruction(target: String, value: js.Any): XMLDocType = js.native
-  def not(name: String, value: AnonPubID): XMLDocType = js.native
+  def not(name: String, value: PubID): XMLDocType = js.native
   /**
     * Creates a notation declaration.
     * 
@@ -157,7 +158,7 @@ class XMLDocType () extends js.Object {
     * 
     * @returns the DOCTYPE node
     */
-  def notation(name: String, value: AnonPubID): XMLDocType = js.native
+  def notation(name: String, value: PubID): XMLDocType = js.native
   /**
     * Creates a parameter entity declaration.
     * 
@@ -169,9 +170,9 @@ class XMLDocType () extends js.Object {
     * @returns the DOCTYPE node
     */
   def pEntity(name: String, value: String): XMLDocType = js.native
-  def pEntity(name: String, value: AnonPubID): XMLDocType = js.native
+  def pEntity(name: String, value: PubID): XMLDocType = js.native
   def pent(name: String, value: String): XMLDocType = js.native
-  def pent(name: String, value: AnonPubID): XMLDocType = js.native
+  def pent(name: String, value: PubID): XMLDocType = js.native
   /**
     * Returns the root element node.
     * 

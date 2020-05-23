@@ -23,14 +23,14 @@ object TextSearchRequest {
     query: String,
     bounds: LatLngBounds | LatLngBoundsLiteral = null,
     location: LatLng | LatLngLiteral = null,
-    radius: Int | Double = null,
+    radius: js.UndefOr[Double] = js.undefined,
     `type`: String = null,
     types: js.Array[String] = null
   ): TextSearchRequest = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextSearchRequest]

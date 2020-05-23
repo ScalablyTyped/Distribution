@@ -2,8 +2,8 @@ package typings.objection.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.knex.mod.Knex
-import typings.objection.TypeofModel
-import typings.objection.TypeofQueryBuilder
+import typings.objection.anon.TypeofModel
+import typings.objection.anon.TypeofQueryBuilder
 import typings.std.Error
 import typings.std.RegExp
 import scala.scalajs.js

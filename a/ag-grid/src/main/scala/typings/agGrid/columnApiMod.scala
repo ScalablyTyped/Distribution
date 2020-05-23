@@ -1,5 +1,6 @@
 package typings.agGrid
 
+import typings.agGrid.anon.GroupId
 import typings.agGrid.colDefMod.ColDef
 import typings.agGrid.colDefMod.ColGroupDef
 import typings.agGrid.columnControllerMod.ColumnState
@@ -45,7 +46,7 @@ object columnApiMod extends js.Object {
     def getColumn(key: js.Any): Column = js.native
     def getColumnGroup(name: String): ColumnGroup = js.native
     def getColumnGroup(name: String, instanceId: Double): ColumnGroup = js.native
-    def getColumnGroupState(): js.Array[AnonGroupId] = js.native
+    def getColumnGroupState(): js.Array[GroupId] = js.native
     def getColumnState(): js.Array[ColumnState] = js.native
     def getDisplayNameForCol(column: js.Any): String = js.native
     def getDisplayNameForColumn(column: Column, location: String): String = js.native
@@ -94,7 +95,7 @@ object columnApiMod extends js.Object {
     def setColumnAggFunction(column: Column, aggFunc: String): Unit = js.native
     def setColumnGroupOpened(group: String, newValue: Boolean): Unit = js.native
     def setColumnGroupOpened(group: OriginalColumnGroup, newValue: Boolean): Unit = js.native
-    def setColumnGroupState(stateItems: js.Array[AnonGroupId]): Unit = js.native
+    def setColumnGroupState(stateItems: js.Array[GroupId]): Unit = js.native
     def setColumnPinned(key: String, pinned: String): Unit = js.native
     def setColumnPinned(key: Column, pinned: String): Unit = js.native
     def setColumnState(columnState: js.Array[ColumnState]): Boolean = js.native

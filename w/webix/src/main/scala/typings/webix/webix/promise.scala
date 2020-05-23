@@ -1,7 +1,6 @@
 package typings.webix.webix
 
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,8 +21,4 @@ trait promise
   def reject(value: js.Any): js.Promise[_] = js.native
   def resolve(value: js.Any): js.Promise[_] = js.native
 }
-
-@JSGlobal("webix.promise")
-@js.native
-object promise extends TopLevel[promise]
 

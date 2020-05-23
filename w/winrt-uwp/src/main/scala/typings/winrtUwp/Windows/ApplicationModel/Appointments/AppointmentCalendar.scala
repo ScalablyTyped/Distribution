@@ -11,9 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a calendar with appointments. */
-@JSGlobal("Windows.ApplicationModel.Appointments.AppointmentCalendar")
 @js.native
-abstract class AppointmentCalendar () extends js.Object {
+trait AppointmentCalendar extends js.Object {
   /** Gets or sets a Boolean value that indicates if the calendar supports cancelling meetings. */
   var canCancelMeetings: Boolean = js.native
   /** Gets or sets a Boolean value that indicates if the calendar supports creating or updating appointments. */

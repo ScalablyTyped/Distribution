@@ -1,6 +1,6 @@
 package typings.nunjucks.mod
 
-import typings.nunjucks.AnonAutoescape
+import typings.nunjucks.anon.Autoescape
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ class Environment () extends js.Object {
   def this(loader: js.Array[ILoader], opts: ConfigureOptions) = this()
   def this(loader: Null, opts: ConfigureOptions) = this()
   def this(loader: ILoader, opts: ConfigureOptions) = this()
-  var options: AnonAutoescape = js.native
+  var options: Autoescape = js.native
   def addExtension(name: String, ext: Extension): Environment = js.native
   def addFilter(name: String, func: js.Function1[/* repeated */ js.Any, _]): Environment = js.native
   def addFilter(name: String, func: js.Function1[/* repeated */ js.Any, _], async: Boolean): Environment = js.native

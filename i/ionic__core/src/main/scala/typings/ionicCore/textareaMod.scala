@@ -1,8 +1,22 @@
 package typings.ionicCore
 
+import typings.ionicCore.ionicCoreStrings.decimal
+import typings.ionicCore.ionicCoreStrings.done
+import typings.ionicCore.ionicCoreStrings.email
+import typings.ionicCore.ionicCoreStrings.enter
+import typings.ionicCore.ionicCoreStrings.go
 import typings.ionicCore.ionicCoreStrings.hard
+import typings.ionicCore.ionicCoreStrings.next
+import typings.ionicCore.ionicCoreStrings.none
+import typings.ionicCore.ionicCoreStrings.numeric
 import typings.ionicCore.ionicCoreStrings.off
+import typings.ionicCore.ionicCoreStrings.previous
+import typings.ionicCore.ionicCoreStrings.search
+import typings.ionicCore.ionicCoreStrings.send
 import typings.ionicCore.ionicCoreStrings.soft
+import typings.ionicCore.ionicCoreStrings.tel
+import typings.ionicCore.ionicCoreStrings.text
+import typings.ionicCore.ionicCoreStrings.url
 import typings.ionicCore.mod.Color
 import typings.ionicCore.mod.StyleEventDetail
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
@@ -61,11 +75,23 @@ object textareaMod extends js.Object {
     var disabled: Boolean = js.native
     var el: HTMLElement = js.native
     var emitStyle: js.Any = js.native
+    /**
+      * A hint to the browser for which enter key to display.
+      * Possible values: `"enter"`, `"done"`, `"go"`, `"next"`,
+      * `"previous"`, `"search"`, and `"send"`.
+      */
+    var enterkeyhint: js.UndefOr[enter | done | go | next | previous | search | send] = js.native
     var focusChange: js.Any = js.native
     var getValue: js.Any = js.native
     var hasFocus: Boolean = js.native
     var hasValue: js.Any = js.native
     var inputId: js.Any = js.native
+    /**
+      * A hint to the browser for which keyboard to display.
+      * Possible values: `"none"`, `"text"`, `"tel"`, `"url"`,
+      * `"email"`, `"numeric"`, `"decimal"`, and `"search"`.
+      */
+    var inputmode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
     /**
       * Emitted when the input loses focus.
       */

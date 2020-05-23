@@ -14,12 +14,17 @@ trait CreateConnectionInput extends js.Object {
     * The name of the external provider where your third-party code repository is configured. Currently, the valid provider type is Bitbucket.
     */
   var ProviderType: typings.awsSdk.codestarconnectionsMod.ProviderType = js.native
+  /**
+    * The key-value pair to use when tagging the resource.
+    */
+  var Tags: js.UndefOr[TagList] = js.native
 }
 
 object CreateConnectionInput {
   @scala.inline
-  def apply(ConnectionName: ConnectionName, ProviderType: ProviderType): CreateConnectionInput = {
+  def apply(ConnectionName: ConnectionName, ProviderType: ProviderType, Tags: TagList = null): CreateConnectionInput = {
     val __obj = js.Dynamic.literal(ConnectionName = ConnectionName.asInstanceOf[js.Any], ProviderType = ProviderType.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateConnectionInput]
   }
 }

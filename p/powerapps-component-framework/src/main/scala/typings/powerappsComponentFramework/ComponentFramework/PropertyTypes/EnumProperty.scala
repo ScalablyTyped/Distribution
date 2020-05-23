@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Property Interface for context.parameters.[property_key], when property manifest type is Enum
-		 */
+  * Property Interface for context.parameters.[property_key], when property manifest type is Enum
+  */
 trait EnumProperty[EnumType] extends js.Object {
   var raw: EnumType
   var `type`: String

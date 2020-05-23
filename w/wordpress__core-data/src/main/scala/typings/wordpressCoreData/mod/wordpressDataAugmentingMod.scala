@@ -1,7 +1,7 @@
 package typings.wordpressCoreData.mod
 
-import typings.wordpressCoreData.TypeofimportedActions
-import typings.wordpressCoreData.TypeofimportedSelectors
+import typings.wordpressCoreData.anon.TypeofimportedActions
+import typings.wordpressCoreData.anon.TypeofimportedSelectors
 import typings.wordpressCoreData.wordpressCoreDataStrings.core
 import scala.scalajs.js
 import scala.scalajs.js.`|`

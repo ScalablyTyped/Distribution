@@ -31,10 +31,10 @@ trait WebGLRenderTargetOptions extends js.Object {
 object WebGLRenderTargetOptions {
   @scala.inline
   def apply(
-    anisotropy: Int | Double = null,
+    anisotropy: js.UndefOr[Double] = js.undefined,
     depthBuffer: js.UndefOr[Boolean] = js.undefined,
     depthTexture: DepthTexture = null,
-    format: Int | Double = null,
+    format: js.UndefOr[Double] = js.undefined,
     generateMipmaps: js.UndefOr[Boolean] = js.undefined,
     magFilter: TextureFilter = null,
     minFilter: TextureFilter = null,
@@ -44,14 +44,14 @@ object WebGLRenderTargetOptions {
     wrapT: Wrapping = null
   ): WebGLRenderTargetOptions = {
     val __obj = js.Dynamic.literal()
-    if (anisotropy != null) __obj.updateDynamic("anisotropy")(anisotropy.asInstanceOf[js.Any])
-    if (!js.isUndefined(depthBuffer)) __obj.updateDynamic("depthBuffer")(depthBuffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(anisotropy)) __obj.updateDynamic("anisotropy")(anisotropy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(depthBuffer)) __obj.updateDynamic("depthBuffer")(depthBuffer.get.asInstanceOf[js.Any])
     if (depthTexture != null) __obj.updateDynamic("depthTexture")(depthTexture.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(generateMipmaps)) __obj.updateDynamic("generateMipmaps")(generateMipmaps.asInstanceOf[js.Any])
+    if (!js.isUndefined(format)) __obj.updateDynamic("format")(format.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(generateMipmaps)) __obj.updateDynamic("generateMipmaps")(generateMipmaps.get.asInstanceOf[js.Any])
     if (magFilter != null) __obj.updateDynamic("magFilter")(magFilter.asInstanceOf[js.Any])
     if (minFilter != null) __obj.updateDynamic("minFilter")(minFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(stencilBuffer)) __obj.updateDynamic("stencilBuffer")(stencilBuffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(stencilBuffer)) __obj.updateDynamic("stencilBuffer")(stencilBuffer.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (wrapS != null) __obj.updateDynamic("wrapS")(wrapS.asInstanceOf[js.Any])
     if (wrapT != null) __obj.updateDynamic("wrapT")(wrapT.asInstanceOf[js.Any])

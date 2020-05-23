@@ -1,18 +1,11 @@
 package typings.ejWebAll.ej
 
-import typings.ejWebAll.JQuery
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.TagCloud")
 @js.native
-class TagCloud_ protected () extends Widget_ {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.TagCloud.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.TagCloud.Model) = this()
+trait TagCloud_ extends Widget_ {
   var defaults: typings.ejWebAll.ej.TagCloud.Model = js.native
   @JSName("model")
   var model_TagCloud_ : typings.ejWebAll.ej.TagCloud.Model = js.native

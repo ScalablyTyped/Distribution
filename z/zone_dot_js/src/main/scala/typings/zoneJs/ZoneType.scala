@@ -44,8 +44,7 @@ object ZoneType {
     root: Zone,
     currentTask: Task = null
   ): ZoneType = {
-    val __obj = js.Dynamic.literal(__load_patch = js.Any.fromFunction2(__load_patch), __symbol__ = js.Any.fromFunction1(__symbol__), assertZonePatched = js.Any.fromFunction0(assertZonePatched), current = current.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
-    if (currentTask != null) __obj.updateDynamic("currentTask")(currentTask.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(__load_patch = js.Any.fromFunction2(__load_patch), __symbol__ = js.Any.fromFunction1(__symbol__), assertZonePatched = js.Any.fromFunction0(assertZonePatched), current = current.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], currentTask = currentTask.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoneType]
   }
 }

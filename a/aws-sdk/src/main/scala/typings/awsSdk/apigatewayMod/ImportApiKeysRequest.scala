@@ -22,9 +22,9 @@ trait ImportApiKeysRequest extends js.Object {
 
 object ImportApiKeysRequest {
   @scala.inline
-  def apply(body: _Blob, format: ApiKeysFormat, failOnWarnings: js.UndefOr[scala.Boolean] = js.undefined): ImportApiKeysRequest = {
+  def apply(body: _Blob, format: ApiKeysFormat, failOnWarnings: js.UndefOr[Boolean] = js.undefined): ImportApiKeysRequest = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
-    if (!js.isUndefined(failOnWarnings)) __obj.updateDynamic("failOnWarnings")(failOnWarnings.asInstanceOf[js.Any])
+    if (!js.isUndefined(failOnWarnings)) __obj.updateDynamic("failOnWarnings")(failOnWarnings.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportApiKeysRequest]
   }
 }

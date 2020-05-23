@@ -21,8 +21,7 @@ object SelectState {
     isPseudoFocused: Boolean,
     activeDescendant: String = null
   ): SelectState = {
-    val __obj = js.Dynamic.literal(inputValue = inputValue.asInstanceOf[js.Any], isFocused = isFocused.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], isPseudoFocused = isPseudoFocused.asInstanceOf[js.Any])
-    if (activeDescendant != null) __obj.updateDynamic("activeDescendant")(activeDescendant.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(inputValue = inputValue.asInstanceOf[js.Any], isFocused = isFocused.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], isPseudoFocused = isPseudoFocused.asInstanceOf[js.Any], activeDescendant = activeDescendant.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectState]
   }
 }

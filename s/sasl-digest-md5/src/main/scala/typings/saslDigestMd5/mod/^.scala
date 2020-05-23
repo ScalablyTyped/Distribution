@@ -1,7 +1,7 @@
 package typings.saslDigestMd5.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.saslDigestMd5.TypeofDigestMd5Mechanism
+import typings.saslDigestMd5.anon.TypeofDigestMd5Mechanism
 import typings.saslDigestMd5.saslDigestMd5Booleans.`false`
 import typings.saslDigestMd5.saslDigestMd5Strings.`DIGEST-MD5`
 import scala.scalajs.js

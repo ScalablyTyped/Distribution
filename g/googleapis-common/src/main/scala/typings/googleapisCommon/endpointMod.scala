@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("googleapis-common/build/src/endpoint", JSImport.Namespace)
 @js.native
 object endpointMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - org.scalablytyped.runtime.StringDictionary because Already inherited */ @js.native
   class Endpoint protected ()
     extends Target

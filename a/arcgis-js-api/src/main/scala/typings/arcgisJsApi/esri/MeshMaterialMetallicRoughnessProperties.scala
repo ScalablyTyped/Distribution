@@ -63,32 +63,32 @@ trait MeshMaterialMetallicRoughnessProperties extends MeshMaterialProperties {
 object MeshMaterialMetallicRoughnessProperties {
   @scala.inline
   def apply(
-    alphaCutoff: Int | Double = null,
+    alphaCutoff: js.UndefOr[Double] = js.undefined,
     alphaMode: auto | blend | opaque | mask = null,
     color: Color_ | js.Array[Double] | String = null,
     colorTexture: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String = null,
     doubleSided: js.UndefOr[Boolean] = js.undefined,
     emissiveColor: Color_ | js.Array[Double] | String = null,
     emissiveTexture: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String = null,
-    metallic: Int | Double = null,
+    metallic: js.UndefOr[Double] = js.undefined,
     metallicRoughnessTexture: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String = null,
     normalTexture: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String = null,
     occlusionTexture: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String = null,
-    roughness: Int | Double = null
+    roughness: js.UndefOr[Double] = js.undefined
   ): MeshMaterialMetallicRoughnessProperties = {
     val __obj = js.Dynamic.literal()
-    if (alphaCutoff != null) __obj.updateDynamic("alphaCutoff")(alphaCutoff.asInstanceOf[js.Any])
+    if (!js.isUndefined(alphaCutoff)) __obj.updateDynamic("alphaCutoff")(alphaCutoff.get.asInstanceOf[js.Any])
     if (alphaMode != null) __obj.updateDynamic("alphaMode")(alphaMode.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (colorTexture != null) __obj.updateDynamic("colorTexture")(colorTexture.asInstanceOf[js.Any])
-    if (!js.isUndefined(doubleSided)) __obj.updateDynamic("doubleSided")(doubleSided.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleSided)) __obj.updateDynamic("doubleSided")(doubleSided.get.asInstanceOf[js.Any])
     if (emissiveColor != null) __obj.updateDynamic("emissiveColor")(emissiveColor.asInstanceOf[js.Any])
     if (emissiveTexture != null) __obj.updateDynamic("emissiveTexture")(emissiveTexture.asInstanceOf[js.Any])
-    if (metallic != null) __obj.updateDynamic("metallic")(metallic.asInstanceOf[js.Any])
+    if (!js.isUndefined(metallic)) __obj.updateDynamic("metallic")(metallic.get.asInstanceOf[js.Any])
     if (metallicRoughnessTexture != null) __obj.updateDynamic("metallicRoughnessTexture")(metallicRoughnessTexture.asInstanceOf[js.Any])
     if (normalTexture != null) __obj.updateDynamic("normalTexture")(normalTexture.asInstanceOf[js.Any])
     if (occlusionTexture != null) __obj.updateDynamic("occlusionTexture")(occlusionTexture.asInstanceOf[js.Any])
-    if (roughness != null) __obj.updateDynamic("roughness")(roughness.asInstanceOf[js.Any])
+    if (!js.isUndefined(roughness)) __obj.updateDynamic("roughness")(roughness.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeshMaterialMetallicRoughnessProperties]
   }
 }

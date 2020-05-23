@@ -1300,12 +1300,12 @@ trait Pinpoint extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateEmailTemplateResponse, Unit]
   ): Request[UpdateEmailTemplateResponse, AWSError] = js.native
   /**
-    * Creates a new endpoint for an application or updates the settings and attributes of an existing endpoint for an application. You can also use this operation to define custom attributes (Attributes, Metrics, and UserAttributes properties) for an endpoint.
+    * Creates a new endpoint for an application or updates the settings and attributes of an existing endpoint for an application. You can also use this operation to define custom attributes for an endpoint. If an update includes one or more values for a custom attribute, Amazon Pinpoint replaces (overwrites) any existing values with the new values.
     */
   def updateEndpoint(): Request[UpdateEndpointResponse, AWSError] = js.native
   def updateEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ UpdateEndpointResponse, Unit]): Request[UpdateEndpointResponse, AWSError] = js.native
   /**
-    * Creates a new endpoint for an application or updates the settings and attributes of an existing endpoint for an application. You can also use this operation to define custom attributes (Attributes, Metrics, and UserAttributes properties) for an endpoint.
+    * Creates a new endpoint for an application or updates the settings and attributes of an existing endpoint for an application. You can also use this operation to define custom attributes for an endpoint. If an update includes one or more values for a custom attribute, Amazon Pinpoint replaces (overwrites) any existing values with the new values.
     */
   def updateEndpoint(params: UpdateEndpointRequest): Request[UpdateEndpointResponse, AWSError] = js.native
   def updateEndpoint(
@@ -1313,12 +1313,12 @@ trait Pinpoint extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateEndpointResponse, Unit]
   ): Request[UpdateEndpointResponse, AWSError] = js.native
   /**
-    *  Creates a new batch of endpoints for an application or updates the settings and attributes of a batch of existing endpoints for an application. You can also use this operation to define custom attributes (Attributes, Metrics, and UserAttributes properties) for a batch of endpoints.
+    * Creates a new batch of endpoints for an application or updates the settings and attributes of a batch of existing endpoints for an application. You can also use this operation to define custom attributes for a batch of endpoints. If an update includes one or more values for a custom attribute, Amazon Pinpoint replaces (overwrites) any existing values with the new values.
     */
   def updateEndpointsBatch(): Request[UpdateEndpointsBatchResponse, AWSError] = js.native
   def updateEndpointsBatch(callback: js.Function2[/* err */ AWSError, /* data */ UpdateEndpointsBatchResponse, Unit]): Request[UpdateEndpointsBatchResponse, AWSError] = js.native
   /**
-    *  Creates a new batch of endpoints for an application or updates the settings and attributes of a batch of existing endpoints for an application. You can also use this operation to define custom attributes (Attributes, Metrics, and UserAttributes properties) for a batch of endpoints.
+    * Creates a new batch of endpoints for an application or updates the settings and attributes of a batch of existing endpoints for an application. You can also use this operation to define custom attributes for a batch of endpoints. If an update includes one or more values for a custom attribute, Amazon Pinpoint replaces (overwrites) any existing values with the new values.
     */
   def updateEndpointsBatch(params: UpdateEndpointsBatchRequest): Request[UpdateEndpointsBatchResponse, AWSError] = js.native
   def updateEndpointsBatch(

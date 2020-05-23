@@ -1,7 +1,7 @@
 package typings.reduxTestkit.mod
 
 import typings.redux.mod.AnyAction
-import typings.reduxTestkit.ReducerTestkitwithStatest
+import typings.reduxTestkit.anon.ReducerTestkitwithStatest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

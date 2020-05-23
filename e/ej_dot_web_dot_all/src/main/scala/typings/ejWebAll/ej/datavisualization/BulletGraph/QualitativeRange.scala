@@ -21,10 +21,14 @@ trait QualitativeRange extends js.Object {
 
 object QualitativeRange {
   @scala.inline
-  def apply(rangeEnd: Int | Double = null, rangeOpacity: Int | Double = null, rangeStroke: String = null): QualitativeRange = {
+  def apply(
+    rangeEnd: js.UndefOr[Double] = js.undefined,
+    rangeOpacity: js.UndefOr[Double] = js.undefined,
+    rangeStroke: String = null
+  ): QualitativeRange = {
     val __obj = js.Dynamic.literal()
-    if (rangeEnd != null) __obj.updateDynamic("rangeEnd")(rangeEnd.asInstanceOf[js.Any])
-    if (rangeOpacity != null) __obj.updateDynamic("rangeOpacity")(rangeOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(rangeEnd)) __obj.updateDynamic("rangeEnd")(rangeEnd.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rangeOpacity)) __obj.updateDynamic("rangeOpacity")(rangeOpacity.get.asInstanceOf[js.Any])
     if (rangeStroke != null) __obj.updateDynamic("rangeStroke")(rangeStroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[QualitativeRange]
   }

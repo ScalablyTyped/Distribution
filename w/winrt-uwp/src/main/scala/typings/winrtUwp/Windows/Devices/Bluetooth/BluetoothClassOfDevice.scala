@@ -5,40 +5,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides functionality to determine the Bluetooth Class Of Device (Bluetooth COD) information for a device. */
-@JSGlobal("Windows.Devices.Bluetooth.BluetoothClassOfDevice")
-@js.native
-abstract class BluetoothClassOfDevice () extends js.Object {
+trait BluetoothClassOfDevice extends js.Object {
   /** Gets the Major Class code of the Bluetooth device. */
-  var majorClass: BluetoothMajorClass = js.native
+  var majorClass: BluetoothMajorClass
   /** Gets the Minor Class code of the device. */
-  var minorClass: BluetoothMinorClass = js.native
+  var minorClass: BluetoothMinorClass
   /** Gets the Bluetooth Class Of Device information, represented as an integer value. */
-  var rawValue: Double = js.native
+  var rawValue: Double
   /** Gets the service capabilities of the device. */
-  var serviceCapabilities: BluetoothServiceCapabilities = js.native
+  var serviceCapabilities: BluetoothServiceCapabilities
 }
 
-/* static members */
-@JSGlobal("Windows.Devices.Bluetooth.BluetoothClassOfDevice")
-@js.native
-object BluetoothClassOfDevice extends js.Object {
-  /**
-    * Creates a BluetoothClassOfDevice object by supplying values for BluetoothMajorClass , BluetoothMinorClass and BluetoothClassOfDevice.
-    * @param majorClass One of the enumeration values that specifies the device's main function.
-    * @param minorClass One of the enumeration values that specifies the minor class value to be used.
-    * @param serviceCapabilities One of the enumeration values that specifies the service the device supports.
-    * @return A BluetoothClassOfDevice object.
-    */
-  def fromParts(
+object BluetoothClassOfDevice {
+  @scala.inline
+  def apply(
     majorClass: BluetoothMajorClass,
     minorClass: BluetoothMinorClass,
+    rawValue: Double,
     serviceCapabilities: BluetoothServiceCapabilities
-  ): BluetoothClassOfDevice = js.native
-  /**
-    * Creates a BluetoothClassOfDevice object from a raw integer value representing the Major Class, Minor Class and Service Capabilities of the device.
-    * @param rawValue The raw integer value from which to create the BluetoothClassOfDevice object.
-    * @return A BluetoothClassOfDevice object.
-    */
-  def fromRawValue(rawValue: Double): BluetoothClassOfDevice = js.native
+  ): BluetoothClassOfDevice = {
+    val __obj = js.Dynamic.literal(majorClass = majorClass.asInstanceOf[js.Any], minorClass = minorClass.asInstanceOf[js.Any], rawValue = rawValue.asInstanceOf[js.Any], serviceCapabilities = serviceCapabilities.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BluetoothClassOfDevice]
+  }
 }
 

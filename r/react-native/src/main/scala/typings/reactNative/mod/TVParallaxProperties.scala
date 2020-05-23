@@ -43,23 +43,23 @@ object TVParallaxProperties {
   @scala.inline
   def apply(
     enabled: js.UndefOr[Boolean] = js.undefined,
-    magnification: Int | Double = null,
-    pressDelay: Int | Double = null,
-    pressDuration: Int | Double = null,
-    pressMagnification: Int | Double = null,
-    shiftDistanceX: Int | Double = null,
-    shiftDistanceY: Int | Double = null,
-    tiltAngle: Int | Double = null
+    magnification: js.UndefOr[Double] = js.undefined,
+    pressDelay: js.UndefOr[Double] = js.undefined,
+    pressDuration: js.UndefOr[Double] = js.undefined,
+    pressMagnification: js.UndefOr[Double] = js.undefined,
+    shiftDistanceX: js.UndefOr[Double] = js.undefined,
+    shiftDistanceY: js.UndefOr[Double] = js.undefined,
+    tiltAngle: js.UndefOr[Double] = js.undefined
   ): TVParallaxProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (magnification != null) __obj.updateDynamic("magnification")(magnification.asInstanceOf[js.Any])
-    if (pressDelay != null) __obj.updateDynamic("pressDelay")(pressDelay.asInstanceOf[js.Any])
-    if (pressDuration != null) __obj.updateDynamic("pressDuration")(pressDuration.asInstanceOf[js.Any])
-    if (pressMagnification != null) __obj.updateDynamic("pressMagnification")(pressMagnification.asInstanceOf[js.Any])
-    if (shiftDistanceX != null) __obj.updateDynamic("shiftDistanceX")(shiftDistanceX.asInstanceOf[js.Any])
-    if (shiftDistanceY != null) __obj.updateDynamic("shiftDistanceY")(shiftDistanceY.asInstanceOf[js.Any])
-    if (tiltAngle != null) __obj.updateDynamic("tiltAngle")(tiltAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(magnification)) __obj.updateDynamic("magnification")(magnification.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pressDelay)) __obj.updateDynamic("pressDelay")(pressDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pressDuration)) __obj.updateDynamic("pressDuration")(pressDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pressMagnification)) __obj.updateDynamic("pressMagnification")(pressMagnification.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shiftDistanceX)) __obj.updateDynamic("shiftDistanceX")(shiftDistanceX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shiftDistanceY)) __obj.updateDynamic("shiftDistanceY")(shiftDistanceY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tiltAngle)) __obj.updateDynamic("tiltAngle")(tiltAngle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TVParallaxProperties]
   }
 }

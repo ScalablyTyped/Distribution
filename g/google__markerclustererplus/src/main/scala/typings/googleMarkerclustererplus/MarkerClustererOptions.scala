@@ -130,39 +130,39 @@ object MarkerClustererOptions {
   @scala.inline
   def apply(
     averageCenter: js.UndefOr[Boolean] = js.undefined,
-    batchSize: Int | Double = null,
-    batchSizeIE: Int | Double = null,
+    batchSize: js.UndefOr[Double] = js.undefined,
+    batchSizeIE: js.UndefOr[Double] = js.undefined,
     calculator: (/* markers */ js.Array[Marker], /* clusterIconStylesCount */ Double) => ClusterIconInfo = null,
     clusterClass: java.lang.String = null,
     enableRetinaIcons: js.UndefOr[Boolean] = js.undefined,
-    gridSize: Int | Double = null,
+    gridSize: js.UndefOr[Double] = js.undefined,
     ignoreHidden: js.UndefOr[Boolean] = js.undefined,
     imageExtension: java.lang.String = null,
     imagePath: java.lang.String = null,
     imageSizes: js.Array[Double] = null,
-    maxZoom: Int | Double = null,
-    minimumClusterSize: Int | Double = null,
+    maxZoom: js.UndefOr[Double] = js.undefined,
+    minimumClusterSize: js.UndefOr[Double] = js.undefined,
     styles: js.Array[ClusterIconStyle] = null,
     title: java.lang.String = null,
     zoomOnClick: js.UndefOr[Boolean] = js.undefined
   ): MarkerClustererOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(averageCenter)) __obj.updateDynamic("averageCenter")(averageCenter.asInstanceOf[js.Any])
-    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
-    if (batchSizeIE != null) __obj.updateDynamic("batchSizeIE")(batchSizeIE.asInstanceOf[js.Any])
+    if (!js.isUndefined(averageCenter)) __obj.updateDynamic("averageCenter")(averageCenter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchSizeIE)) __obj.updateDynamic("batchSizeIE")(batchSizeIE.get.asInstanceOf[js.Any])
     if (calculator != null) __obj.updateDynamic("calculator")(js.Any.fromFunction2(calculator))
     if (clusterClass != null) __obj.updateDynamic("clusterClass")(clusterClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRetinaIcons)) __obj.updateDynamic("enableRetinaIcons")(enableRetinaIcons.asInstanceOf[js.Any])
-    if (gridSize != null) __obj.updateDynamic("gridSize")(gridSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreHidden)) __obj.updateDynamic("ignoreHidden")(ignoreHidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRetinaIcons)) __obj.updateDynamic("enableRetinaIcons")(enableRetinaIcons.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridSize)) __obj.updateDynamic("gridSize")(gridSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreHidden)) __obj.updateDynamic("ignoreHidden")(ignoreHidden.get.asInstanceOf[js.Any])
     if (imageExtension != null) __obj.updateDynamic("imageExtension")(imageExtension.asInstanceOf[js.Any])
     if (imagePath != null) __obj.updateDynamic("imagePath")(imagePath.asInstanceOf[js.Any])
     if (imageSizes != null) __obj.updateDynamic("imageSizes")(imageSizes.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minimumClusterSize != null) __obj.updateDynamic("minimumClusterSize")(minimumClusterSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumClusterSize)) __obj.updateDynamic("minimumClusterSize")(minimumClusterSize.get.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomOnClick)) __obj.updateDynamic("zoomOnClick")(zoomOnClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomOnClick)) __obj.updateDynamic("zoomOnClick")(zoomOnClick.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerClustererOptions]
   }
 }

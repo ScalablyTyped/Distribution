@@ -15,7 +15,7 @@ trait CustomAnimation[T] extends /* progress */ NumberDictionary[T] {
 object CustomAnimation {
   @scala.inline
   def apply[T](
-    NumberDictionary: /* progress */ NumberDictionary[T] = null,
+    NumberDictionary: /* n */ NumberDictionary[T] = null,
     easing: Easing = null,
     from: T = null,
     style: T = null,

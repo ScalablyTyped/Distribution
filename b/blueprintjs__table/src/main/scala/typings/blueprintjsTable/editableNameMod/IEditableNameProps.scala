@@ -42,7 +42,7 @@ object IEditableNameProps {
   @scala.inline
   def apply(
     className: String = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     intent: Intent = null,
     name: String = null,
     onCancel: (/* value */ String, /* columnIndex */ js.UndefOr[Double]) => Unit = null,
@@ -51,7 +51,7 @@ object IEditableNameProps {
   ): IEditableNameProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction2(onCancel))

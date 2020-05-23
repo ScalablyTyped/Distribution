@@ -1,10 +1,10 @@
 package typings.zapierPlatformCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.zapierPlatformCore.AnonId
-import typings.zapierPlatformCore.AnonIsFillingDynamicDropdown
-import typings.zapierPlatformCore.PartialmethodHttpMethodqu
-import typings.zapierPlatformCore.PartialmethodHttpMethodquContent
+import typings.zapierPlatformCore.anon.Id
+import typings.zapierPlatformCore.anon.IsFillingDynamicDropdown
+import typings.zapierPlatformCore.anon.PartialmethodHttpMethodqu
+import typings.zapierPlatformCore.anon.PartialmethodHttpMethodquContent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,9 +14,9 @@ trait Bundle[InputData] extends js.Object {
   var cleanedRequest: js.UndefOr[PartialmethodHttpMethodquContent | js.Any] = js.undefined
   var inputData: InputData
   var inputDataRaw: StringDictionary[String]
-  var meta: AnonIsFillingDynamicDropdown
+  var meta: IsFillingDynamicDropdown
   var rawRequest: js.UndefOr[PartialmethodHttpMethodqu] = js.undefined
-  var subscribeData: js.UndefOr[AnonId] = js.undefined
+  var subscribeData: js.UndefOr[Id] = js.undefined
   var targetUrl: js.UndefOr[String] = js.undefined
 }
 
@@ -26,10 +26,10 @@ object Bundle {
     authData: StringDictionary[String],
     inputData: InputData,
     inputDataRaw: StringDictionary[String],
-    meta: AnonIsFillingDynamicDropdown,
+    meta: IsFillingDynamicDropdown,
     cleanedRequest: PartialmethodHttpMethodquContent | js.Any = null,
     rawRequest: PartialmethodHttpMethodqu = null,
-    subscribeData: AnonId = null,
+    subscribeData: Id = null,
     targetUrl: String = null
   ): Bundle[InputData] = {
     val __obj = js.Dynamic.literal(authData = authData.asInstanceOf[js.Any], inputData = inputData.asInstanceOf[js.Any], inputDataRaw = inputDataRaw.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])

@@ -1,8 +1,8 @@
 package typings.babylonjs.animatableMod
 
-import typings.babylonjs.AnonAnimations
-import typings.babylonjs.AnonOriginalValue
 import typings.babylonjs.animationMod.Animation
+import typings.babylonjs.anon.Animations
+import typings.babylonjs.anon.OriginalValue
 import typings.babylonjs.mathVectorMod.Quaternion
 import typings.babylonjs.nodeMod.Node
 import typings.babylonjs.runtimeAnimationMod.RuntimeAnimation
@@ -24,9 +24,9 @@ object babylonjsSceneAugmentingMod extends js.Object {
     /** @hidden */
     def _processLateAnimationBindings(): Unit = js.native
     /** @hidden */
-    def _processLateAnimationBindingsForMatrices(holder: AnonAnimations): js.Any = js.native
+    def _processLateAnimationBindingsForMatrices(holder: Animations): js.Any = js.native
     /** @hidden */
-    def _processLateAnimationBindingsForQuaternions(holder: AnonOriginalValue, refQuaternion: Quaternion): Quaternion = js.native
+    def _processLateAnimationBindingsForQuaternions(holder: OriginalValue, refQuaternion: Quaternion): Quaternion = js.native
     /** @hidden */
     def _registerTargetForLateAnimationBinding(runtimeAnimation: RuntimeAnimation, originalValue: js.Any): Unit = js.native
     /**

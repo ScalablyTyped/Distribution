@@ -49,21 +49,21 @@ object MakeAuthenticatedRequestFactoryConfig {
     email: String = null,
     keyFile: String = null,
     keyFilename: String = null,
-    maxRetries: Int | Double = null,
+    maxRetries: js.UndefOr[Double] = js.undefined,
     projectId: String = null,
     scopes: String | js.Array[String] = null,
     stream: Duplexify = null
   ): MakeAuthenticatedRequestFactoryConfig = {
     val __obj = js.Dynamic.literal()
     if (authClient != null) __obj.updateDynamic("authClient")(authClient.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoRetry)) __obj.updateDynamic("autoRetry")(autoRetry.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoRetry)) __obj.updateDynamic("autoRetry")(autoRetry.get.asInstanceOf[js.Any])
     if (clientOptions != null) __obj.updateDynamic("clientOptions")(clientOptions.asInstanceOf[js.Any])
     if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
-    if (!js.isUndefined(customEndpoint)) __obj.updateDynamic("customEndpoint")(customEndpoint.asInstanceOf[js.Any])
+    if (!js.isUndefined(customEndpoint)) __obj.updateDynamic("customEndpoint")(customEndpoint.get.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
     if (keyFile != null) __obj.updateDynamic("keyFile")(keyFile.asInstanceOf[js.Any])
     if (keyFilename != null) __obj.updateDynamic("keyFilename")(keyFilename.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
     if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
     if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
     if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])

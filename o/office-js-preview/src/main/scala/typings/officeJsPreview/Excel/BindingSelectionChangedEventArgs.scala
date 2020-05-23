@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   *
   * Provides information about the selection that raised the "SelectionChanged" event.
-  * 
-  * **Note**: If multiple, discontiguous cells are selected, 
+  *
+  * **Note**: If multiple, discontiguous cells are selected,
   * `Binding.onSelectionChanged` only reports row and column information for one selection.
   * Use `Worksheet.onSelectionChanged` for multiple selected ranges.
   *

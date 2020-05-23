@@ -1,12 +1,12 @@
 package typings.serverless.mod
 
-import typings.serverless.AnonLog
+import typings.serverless.anon.Log
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Serverless extends js.Object {
-  var cli: AnonLog
+  var cli: Log
   var config: Config
   var pluginManager: typings.serverless.pluginManagerMod.^
   var serverlessDirPath: String
@@ -24,7 +24,7 @@ trait Serverless extends js.Object {
 object Serverless {
   @scala.inline
   def apply(
-    cli: AnonLog,
+    cli: Log,
     config: Config,
     getProvider: String => typings.serverless.awsProviderMod.^,
     getVersion: () => String,

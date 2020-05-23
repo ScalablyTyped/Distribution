@@ -1,6 +1,6 @@
 package typings.ibmDb.mod
 
-import typings.ibmDb.AnonParams
+import typings.ibmDb.anon.Params
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,8 @@ class Database () extends Options {
   var conn: js.UndefOr[ODBCConnection] = js.native
   @JSName("connectTimeout")
   var connectTimeout_Database: Double | Null = js.native
-  var connected: Boolean = js.native
+  @JSName("connected")
+  var connected_Database: Boolean = js.native
   @JSName("fetchMode")
   var fetchMode_Database: Double | Null = js.native
   @JSName("odbc")
@@ -163,23 +164,23 @@ class Database () extends Options {
   def query(query: String, cb: js.Function2[/* err */ Error, /* res */ js.Array[_], Unit]): Unit = js.native
   def query(query: String, params: js.Array[_]): js.Promise[js.Array[_]] = js.native
   def query(query: String, params: js.Array[_], cb: js.Function2[/* err */ Error, /* res */ js.Array[_], Unit]): Unit = js.native
-  def query(query: AnonParams): js.Promise[js.Array[_]] = js.native
-  def query(query: AnonParams, cb: js.Function2[/* err */ Error, /* res */ js.Array[_], Unit]): Unit = js.native
-  def query(query: AnonParams, params: js.Array[_]): js.Promise[js.Array[_]] = js.native
+  def query(query: Params): js.Promise[js.Array[_]] = js.native
+  def query(query: Params, cb: js.Function2[/* err */ Error, /* res */ js.Array[_], Unit]): Unit = js.native
+  def query(query: Params, params: js.Array[_]): js.Promise[js.Array[_]] = js.native
   def queryResult(query: String): js.Promise[ODBCResult] = js.native
   def queryResult(query: String, cb: js.Function2[/* err */ Error, /* res */ ODBCResult, Unit]): Unit = js.native
   def queryResult(query: String, params: js.Array[_]): js.Promise[ODBCResult] = js.native
   def queryResult(query: String, params: js.Array[_], cb: js.Function2[/* err */ Error, /* res */ ODBCResult, Unit]): Unit = js.native
-  def queryResult(query: AnonParams, cb: js.Function2[/* err */ Error, /* res */ ODBCResult, Unit]): Unit = js.native
+  def queryResult(query: Params, cb: js.Function2[/* err */ Error, /* res */ ODBCResult, Unit]): Unit = js.native
   def queryResultSync(query: String): ODBCResult = js.native
   def queryResultSync(query: String, params: js.Array[_]): ODBCResult = js.native
-  def queryResultSync(query: AnonParams): ODBCResult = js.native
-  def queryResultSync(query: AnonParams, params: js.Array[_]): ODBCResult = js.native
+  def queryResultSync(query: Params): ODBCResult = js.native
+  def queryResultSync(query: Params, params: js.Array[_]): ODBCResult = js.native
   def queryStream(sql: String, params: js.Array[_]): js.Any = js.native
   def querySync(query: String): js.Array[_] = js.native
   def querySync(query: String, params: js.Array[_]): js.Array[_] = js.native
-  def querySync(query: AnonParams): js.Array[_] = js.native
-  def querySync(query: AnonParams, params: js.Array[_]): js.Array[_] = js.native
+  def querySync(query: Params): js.Array[_] = js.native
+  def querySync(query: Params, params: js.Array[_]): js.Array[_] = js.native
   def rollbackTransaction(): js.Promise[Unit] = js.native
   def rollbackTransaction(cb: js.Function2[/* err */ Error, /* res */ js.Any, Unit]): Unit = js.native
   def rollbackTransactionSync(): Database = js.native

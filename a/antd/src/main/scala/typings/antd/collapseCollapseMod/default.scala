@@ -1,7 +1,7 @@
 package typings.antd.collapseCollapseMod
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.antd.AnonBordered
+import typings.antd.anon.Bordered
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class default () extends Collapse
 @js.native
 object default extends js.Object {
   var Panel: Instantiable0[typings.antd.collapsePanelMod.default] = js.native
-  var defaultProps: AnonBordered = js.native
+  var defaultProps: Bordered = js.native
 }
 

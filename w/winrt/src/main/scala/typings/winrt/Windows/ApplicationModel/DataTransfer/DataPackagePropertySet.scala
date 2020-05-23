@@ -10,36 +10,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.DataTransfer.DataPackagePropertySet")
-@js.native
-class DataPackagePropertySet () extends IDataPackagePropertySet {
-  /* CompleteClass */
-  override var applicationListingUri: Uri = js.native
-  /* CompleteClass */
-  override var applicationName: String = js.native
-  /* CompleteClass */
-  override var description: String = js.native
-  /* CompleteClass */
-  override var fileTypes: IVector[String] = js.native
-  /* CompleteClass */
-  override var size: Double = js.native
-  /* CompleteClass */
-  override var thumbnail: IRandomAccessStreamReference = js.native
-  /* CompleteClass */
-  override var title: String = js.native
-  /* CompleteClass */
-  override def clear(): Unit = js.native
-  /* CompleteClass */
-  override def first(): IIterator[IKeyValuePair[String, js.Any]] = js.native
-  /* CompleteClass */
-  override def getView(): IMapView[String, js.Any] = js.native
-  /* CompleteClass */
-  override def hasKey(key: String): Boolean = js.native
-  /* CompleteClass */
-  override def insert(key: String, value: js.Any): Boolean = js.native
-  /* CompleteClass */
-  override def lookup(key: String): js.Any = js.native
-  /* CompleteClass */
-  override def remove(key: String): Unit = js.native
+trait DataPackagePropertySet extends IDataPackagePropertySet
+
+object DataPackagePropertySet {
+  @scala.inline
+  def apply(
+    applicationListingUri: Uri,
+    applicationName: String,
+    clear: () => Unit,
+    description: String,
+    fileTypes: IVector[String],
+    first: () => IIterator[IKeyValuePair[String, js.Any]],
+    getView: () => IMapView[String, js.Any],
+    hasKey: String => Boolean,
+    insert: (String, js.Any) => Boolean,
+    lookup: String => js.Any,
+    remove: String => Unit,
+    size: Double,
+    thumbnail: IRandomAccessStreamReference,
+    title: String
+  ): DataPackagePropertySet = {
+    val __obj = js.Dynamic.literal(applicationListingUri = applicationListingUri.asInstanceOf[js.Any], applicationName = applicationName.asInstanceOf[js.Any], clear = js.Any.fromFunction0(clear), description = description.asInstanceOf[js.Any], fileTypes = fileTypes.asInstanceOf[js.Any], first = js.Any.fromFunction0(first), getView = js.Any.fromFunction0(getView), hasKey = js.Any.fromFunction1(hasKey), insert = js.Any.fromFunction2(insert), lookup = js.Any.fromFunction1(lookup), remove = js.Any.fromFunction1(remove), size = size.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataPackagePropertySet]
+  }
 }
 

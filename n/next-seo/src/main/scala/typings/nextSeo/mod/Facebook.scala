@@ -10,9 +10,9 @@ trait Facebook extends js.Object {
 
 object Facebook {
   @scala.inline
-  def apply(appId: Int | Double = null): Facebook = {
+  def apply(appId: js.UndefOr[Double] = js.undefined): Facebook = {
     val __obj = js.Dynamic.literal()
-    if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
+    if (!js.isUndefined(appId)) __obj.updateDynamic("appId")(appId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Facebook]
   }
 }

@@ -5,28 +5,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Interface of input argument 'options' in context.device.captureImage
-		 */
+  * Interface of input argument 'options' in context.device.captureImage
+  */
 trait CaptureImageOptions extends js.Object {
   /**
-  			 * Indicates whether to edit the image before saving.
-  			 */
+    * Indicates whether to edit the image before saving.
+    */
   var allowEdit: Boolean
   /**
-  			 * Height of the image to capture.
-  			 */
+    * Height of the image to capture.
+    */
   var height: Double
   /**
-  			 * Indicates whether to capture image using the front camera of the device.
-  			 */
+    * Indicates whether to capture image using the front camera of the device.
+    */
   var preferFrontCamera: Boolean
   /**
-  			 * Quality of the image file in percentage.
-  			 */
+    * Quality of the image file in percentage.
+    */
   var quality: Double
   /**
-  			 * Width of the image to capture.
-  			 */
+    * Width of the image to capture.
+    */
   var width: Double
 }
 

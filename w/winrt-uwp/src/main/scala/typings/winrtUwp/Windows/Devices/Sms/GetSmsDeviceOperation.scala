@@ -9,9 +9,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Retrieves an SmsDevice object asynchronously. */
-@JSGlobal("Windows.Devices.Sms.GetSmsDeviceOperation")
 @js.native
-abstract class GetSmsDeviceOperation () extends js.Object {
+trait GetSmsDeviceOperation extends js.Object {
   /** Specifies whether the asynchronous SmsDevice object retrieval operation has completed or not. */
   @JSName("completed")
   var completed_Original: AsyncOperationCompletedHandler[SmsDevice] = js.native

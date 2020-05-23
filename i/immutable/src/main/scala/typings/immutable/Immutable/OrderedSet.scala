@@ -1,13 +1,11 @@
 package typings.immutable.Immutable
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait OrderedSet[T] extends Set_[T] {
+trait OrderedSet[T] extends Set[T] {
   /**
     * Returns a new OrderedSet with only the values for which the `predicate`
     * function returns true.
@@ -71,26 +69,5 @@ trait OrderedSet[T] extends Set_[T] {
     otherCollection: Collection[_, U],
     thirdCollection: Collection[_, V]
   ): OrderedSet[Z] = js.native
-}
-
-@JSGlobal("Immutable.OrderedSet")
-@js.native
-object OrderedSet extends js.Object {
-  def apply(): OrderedSet[_] = js.native
-  def apply[T](collection: Iterable[T]): OrderedSet[T] = js.native
-  def fromKeys(obj: StringDictionary[js.Any]): OrderedSet[String] = js.native
-  /**
-    * `OrderedSet.fromKeys()` creates a new immutable OrderedSet containing
-    * the keys from this Collection or JavaScript Object.
-    */
-  def fromKeys[T](iter: Collection[T, _]): OrderedSet[T] = js.native
-  /**
-    * True if the provided value is an OrderedSet.
-    */
-  def isOrderedSet(maybeOrderedSet: js.Any): Boolean = js.native
-  /**
-    * Creates a new OrderedSet containing `values`.
-    */
-  def of[T](values: T*): OrderedSet[T] = js.native
 }
 

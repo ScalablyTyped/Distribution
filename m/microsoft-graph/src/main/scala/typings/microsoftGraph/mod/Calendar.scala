@@ -64,9 +64,9 @@ object Calendar {
   ): Calendar = {
     val __obj = js.Dynamic.literal()
     if (calendarView != null) __obj.updateDynamic("calendarView")(calendarView.asInstanceOf[js.Any])
-    if (!js.isUndefined(canEdit)) __obj.updateDynamic("canEdit")(canEdit.asInstanceOf[js.Any])
-    if (!js.isUndefined(canShare)) __obj.updateDynamic("canShare")(canShare.asInstanceOf[js.Any])
-    if (!js.isUndefined(canViewPrivateItems)) __obj.updateDynamic("canViewPrivateItems")(canViewPrivateItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(canEdit)) __obj.updateDynamic("canEdit")(canEdit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(canShare)) __obj.updateDynamic("canShare")(canShare.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(canViewPrivateItems)) __obj.updateDynamic("canViewPrivateItems")(canViewPrivateItems.get.asInstanceOf[js.Any])
     if (changeKey != null) __obj.updateDynamic("changeKey")(changeKey.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])

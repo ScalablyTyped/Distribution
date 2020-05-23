@@ -1,6 +1,6 @@
 package typings.sinon.mod
 
-import typings.sinon.PartialSinonFakeServerOpt
+import typings.sinon.anon.PartialSinonFakeServerOpt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

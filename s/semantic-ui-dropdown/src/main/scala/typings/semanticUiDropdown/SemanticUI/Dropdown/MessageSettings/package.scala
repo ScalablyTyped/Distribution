@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object MessageSettings {
-  type Param = (typings.semanticUiDropdown.PickImpladdResult | typings.semanticUiDropdown.PickImplcount | typings.semanticUiDropdown.PickImplmaxSelectionsMaxSelections | typings.semanticUiDropdown.PickImplnoResults) with typings.semanticUiDropdown.PartialPickImplkeyofImplAddResult
+  type Param = (typings.semanticUiDropdown.anon.PickImpladdResult | typings.semanticUiDropdown.anon.PickImplcount | typings.semanticUiDropdown.anon.PickImplmaxSelectionsMaxSelections | typings.semanticUiDropdown.anon.PickImplnoResults) with typings.semanticUiDropdown.anon.PartialPickImplkeyofImplAddResult
 }

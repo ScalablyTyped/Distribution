@@ -30,18 +30,20 @@ object GraphQLUnionTypeConfig {
   def apply[TSource, TContext](
     name: String,
     types: Thunk[js.Array[GraphQLObjectType[_, _, StringDictionary[_]]]],
-    astNode: Maybe[UnionTypeDefinitionNode] = null,
-    description: Maybe[String] = null,
-    extensionASTNodes: Maybe[js.Array[UnionTypeExtensionNode]] = null,
-    extensions: Maybe[Record[String, _]] = null,
-    resolveType: (TSource, TContext, /* info */ GraphQLResolveInfo, /* abstractType */ GraphQLAbstractType) => PromiseOrValue[Maybe[(GraphQLObjectType[TSource, TContext, StringDictionary[_]]) | String]] = null
+    astNode: js.UndefOr[Null | Maybe[UnionTypeDefinitionNode]] = js.undefined,
+    description: js.UndefOr[Null | Maybe[String]] = js.undefined,
+    extensionASTNodes: js.UndefOr[Null | Maybe[js.Array[UnionTypeExtensionNode]]] = js.undefined,
+    extensions: js.UndefOr[Null | (Maybe[Record[String, _]])] = js.undefined,
+    resolveType: js.UndefOr[
+      Null | ((TSource, TContext, /* info */ GraphQLResolveInfo, /* abstractType */ GraphQLAbstractType) => PromiseOrValue[Maybe[(GraphQLObjectType[TSource, TContext, StringDictionary[_]]) | String]])
+    ] = js.undefined
   ): GraphQLUnionTypeConfig[TSource, TContext] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
-    if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (extensionASTNodes != null) __obj.updateDynamic("extensionASTNodes")(extensionASTNodes.asInstanceOf[js.Any])
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (resolveType != null) __obj.updateDynamic("resolveType")(js.Any.fromFunction4(resolveType))
+    if (!js.isUndefined(astNode)) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(extensionASTNodes)) __obj.updateDynamic("extensionASTNodes")(extensionASTNodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(extensions)) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolveType)) __obj.updateDynamic("resolveType")(if (resolveType != null) js.Any.fromFunction4(resolveType.asInstanceOf[(TSource, TContext, /* info */ GraphQLResolveInfo, /* abstractType */ GraphQLAbstractType) => PromiseOrValue[Maybe[(GraphQLObjectType[TSource, TContext, StringDictionary[_]]) | String]]]) else null)
     __obj.asInstanceOf[GraphQLUnionTypeConfig[TSource, TContext]]
   }
 }

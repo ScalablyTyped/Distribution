@@ -1,6 +1,6 @@
 package typings.angularCore.mod
 
-import typings.angularCore.FnCall
+import typings.angularCore.anon.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

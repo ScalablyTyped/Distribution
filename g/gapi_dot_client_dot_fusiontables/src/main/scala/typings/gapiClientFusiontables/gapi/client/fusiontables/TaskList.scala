@@ -21,13 +21,13 @@ object TaskList {
     items: js.Array[Task] = null,
     kind: String = null,
     nextPageToken: String = null,
-    totalItems: Int | Double = null
+    totalItems: js.UndefOr[Double] = js.undefined
   ): TaskList = {
     val __obj = js.Dynamic.literal()
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (totalItems != null) __obj.updateDynamic("totalItems")(totalItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalItems)) __obj.updateDynamic("totalItems")(totalItems.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskList]
   }
 }

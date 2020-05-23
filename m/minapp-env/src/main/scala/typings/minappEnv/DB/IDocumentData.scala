@@ -12,7 +12,7 @@ trait IDocumentData
 
 object IDocumentData {
   @scala.inline
-  def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null, _id: DocumentId = null): IDocumentData = {
+  def apply(StringDictionary: /* name */ StringDictionary[js.Any] = null, _id: DocumentId = null): IDocumentData = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])

@@ -67,32 +67,32 @@ trait Cluster extends js.Object {
 object Cluster {
   @scala.inline
   def apply(
-    activeServicesCount: Int | scala.Double = null,
+    activeServicesCount: js.UndefOr[Integer] = js.undefined,
     attachments: Attachments = null,
     attachmentsStatus: String = null,
     capacityProviders: StringList = null,
     clusterArn: String = null,
     clusterName: String = null,
     defaultCapacityProviderStrategy: CapacityProviderStrategy = null,
-    pendingTasksCount: Int | scala.Double = null,
-    registeredContainerInstancesCount: Int | scala.Double = null,
-    runningTasksCount: Int | scala.Double = null,
+    pendingTasksCount: js.UndefOr[Integer] = js.undefined,
+    registeredContainerInstancesCount: js.UndefOr[Integer] = js.undefined,
+    runningTasksCount: js.UndefOr[Integer] = js.undefined,
     settings: ClusterSettings = null,
     statistics: Statistics = null,
     status: String = null,
     tags: Tags = null
   ): Cluster = {
     val __obj = js.Dynamic.literal()
-    if (activeServicesCount != null) __obj.updateDynamic("activeServicesCount")(activeServicesCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeServicesCount)) __obj.updateDynamic("activeServicesCount")(activeServicesCount.get.asInstanceOf[js.Any])
     if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
     if (attachmentsStatus != null) __obj.updateDynamic("attachmentsStatus")(attachmentsStatus.asInstanceOf[js.Any])
     if (capacityProviders != null) __obj.updateDynamic("capacityProviders")(capacityProviders.asInstanceOf[js.Any])
     if (clusterArn != null) __obj.updateDynamic("clusterArn")(clusterArn.asInstanceOf[js.Any])
     if (clusterName != null) __obj.updateDynamic("clusterName")(clusterName.asInstanceOf[js.Any])
     if (defaultCapacityProviderStrategy != null) __obj.updateDynamic("defaultCapacityProviderStrategy")(defaultCapacityProviderStrategy.asInstanceOf[js.Any])
-    if (pendingTasksCount != null) __obj.updateDynamic("pendingTasksCount")(pendingTasksCount.asInstanceOf[js.Any])
-    if (registeredContainerInstancesCount != null) __obj.updateDynamic("registeredContainerInstancesCount")(registeredContainerInstancesCount.asInstanceOf[js.Any])
-    if (runningTasksCount != null) __obj.updateDynamic("runningTasksCount")(runningTasksCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(pendingTasksCount)) __obj.updateDynamic("pendingTasksCount")(pendingTasksCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(registeredContainerInstancesCount)) __obj.updateDynamic("registeredContainerInstancesCount")(registeredContainerInstancesCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(runningTasksCount)) __obj.updateDynamic("runningTasksCount")(runningTasksCount.get.asInstanceOf[js.Any])
     if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
     if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])

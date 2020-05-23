@@ -16,20 +16,20 @@ trait DecayProps extends js.Object {
 object DecayProps {
   @scala.inline
   def apply(
-    from: Int | Double = null,
+    from: js.UndefOr[Double] = js.undefined,
     modifyTarget: /* v */ Double => Double = null,
-    power: Int | Double = null,
-    restDelta: Int | Double = null,
-    timeConstant: Int | Double = null,
-    velocity: Int | Double = null
+    power: js.UndefOr[Double] = js.undefined,
+    restDelta: js.UndefOr[Double] = js.undefined,
+    timeConstant: js.UndefOr[Double] = js.undefined,
+    velocity: js.UndefOr[Double] = js.undefined
   ): DecayProps = {
     val __obj = js.Dynamic.literal()
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.get.asInstanceOf[js.Any])
     if (modifyTarget != null) __obj.updateDynamic("modifyTarget")(js.Any.fromFunction1(modifyTarget))
-    if (power != null) __obj.updateDynamic("power")(power.asInstanceOf[js.Any])
-    if (restDelta != null) __obj.updateDynamic("restDelta")(restDelta.asInstanceOf[js.Any])
-    if (timeConstant != null) __obj.updateDynamic("timeConstant")(timeConstant.asInstanceOf[js.Any])
-    if (velocity != null) __obj.updateDynamic("velocity")(velocity.asInstanceOf[js.Any])
+    if (!js.isUndefined(power)) __obj.updateDynamic("power")(power.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(restDelta)) __obj.updateDynamic("restDelta")(restDelta.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeConstant)) __obj.updateDynamic("timeConstant")(timeConstant.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(velocity)) __obj.updateDynamic("velocity")(velocity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecayProps]
   }
 }

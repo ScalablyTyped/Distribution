@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/util/sorted_map", "SortedMapIterator")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/util/sorted_map", "SortedMapIterator")
 @js.native
 class SortedMapIterator[K, V] protected () extends js.Object {
   def this(node: LLRBEmptyNode[K, V], startKey: K, comparator: Comparator[K], isReverse: Boolean) = this()

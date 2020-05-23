@@ -15,7 +15,7 @@ trait StoreDefinition
 object StoreDefinition {
   @scala.inline
   def apply(
-    StringDictionary: /* propertyName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     getInitialState: js.Function = null,
     init: js.Function = null,
     listenables: js.Array[_] = null

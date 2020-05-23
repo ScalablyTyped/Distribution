@@ -1,6 +1,6 @@
 package typings.googleGax.mod
 
-import typings.googleAuthLibrary.TypeofClassDefaultTransporter
+import typings.googleAuthLibrary.anon.TypeofDefaultTransporter
 import typings.googleAuthLibrary.googleauthMod.GoogleAuthOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,6 +20,6 @@ object GoogleAuth extends js.Object {
   /**
     * Export DefaultTransporter as a static property of the class.
     */
-  var DefaultTransporter: TypeofClassDefaultTransporter = js.native
+  var DefaultTransporter: TypeofDefaultTransporter = js.native
 }
 

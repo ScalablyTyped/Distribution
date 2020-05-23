@@ -1,8 +1,8 @@
 package typings.kosCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.kosCore.AnonPayload
-import typings.kosCore.AnonPayloadAnonParam
+import typings.kosCore.anon.Payload
+import typings.kosCore.anon.PayloadParam
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait KosModel[T] extends js.Object {
     js.Function3[
       /* dispatch */ js.UndefOr[KosDispatch], 
       /* getState */ js.UndefOr[GetKosState[T]], 
-      /* action */ js.UndefOr[AnonPayload[T]], 
+      /* action */ js.UndefOr[Payload[T]], 
       Unit
     ]
   ]
@@ -24,12 +24,12 @@ trait KosModel[T] extends js.Object {
   ] = js.undefined
   var initial: T
   var namespace: String
-  var reducers: StringDictionary[js.Function2[/* state */ T, /* hasPayload */ AnonPayload[T], Unit]]
+  var reducers: StringDictionary[js.Function2[/* state */ T, /* hasPayload */ Payload[T], Unit]]
   var setup: js.UndefOr[
     js.Function3[
       /* dispatch */ KosDispatch, 
       /* getState */ GetKosState[T], 
-      /* action */ AnonPayloadAnonParam, 
+      /* action */ PayloadParam, 
       Unit
     ]
   ] = js.undefined
@@ -42,15 +42,15 @@ object KosModel {
       js.Function3[
         /* dispatch */ js.UndefOr[KosDispatch], 
         /* getState */ js.UndefOr[GetKosState[T]], 
-        /* action */ js.UndefOr[AnonPayload[T]], 
+        /* action */ js.UndefOr[Payload[T]], 
         Unit
       ]
     ],
     initial: T,
     namespace: String,
-    reducers: StringDictionary[js.Function2[/* state */ T, /* hasPayload */ AnonPayload[T], Unit]],
+    reducers: StringDictionary[js.Function2[/* state */ T, /* hasPayload */ Payload[T], Unit]],
     getAsync: /* key */ String => js.Function2[/* dispatch */ KosDispatch, /* getState */ js.UndefOr[GetKosState[_]], Unit] = null,
-    setup: (/* dispatch */ KosDispatch, /* getState */ GetKosState[T], /* action */ AnonPayloadAnonParam) => Unit = null
+    setup: (/* dispatch */ KosDispatch, /* getState */ GetKosState[T], /* action */ PayloadParam) => Unit = null
   ): KosModel[T] = {
     val __obj = js.Dynamic.literal(asyncs = asyncs.asInstanceOf[js.Any], initial = initial.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], reducers = reducers.asInstanceOf[js.Any])
     if (getAsync != null) __obj.updateDynamic("getAsync")(js.Any.fromFunction1(getAsync))

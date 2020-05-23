@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +11,11 @@ trait GamepadButton extends js.Object {
   val value: Double
 }
 
-@JSGlobal("GamepadButton")
-@js.native
-object GamepadButton extends Instantiable0[GamepadButton]
+object GamepadButton {
+  @scala.inline
+  def apply(pressed: scala.Boolean, touched: scala.Boolean, value: Double): GamepadButton = {
+    val __obj = js.Dynamic.literal(pressed = pressed.asInstanceOf[js.Any], touched = touched.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GamepadButton]
+  }
+}
 

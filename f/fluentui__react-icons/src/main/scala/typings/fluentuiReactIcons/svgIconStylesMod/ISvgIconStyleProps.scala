@@ -1,6 +1,6 @@
 package typings.fluentuiReactIcons.svgIconStylesMod
 
-import typings.fluentuiReactIcons.PartialISvgIconStyles
+import typings.fluentuiReactIcons.anon.PartialISvgIconStyles
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

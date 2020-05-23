@@ -1,6 +1,6 @@
 package typings.fullcalendar.mod
 
-import typings.fullcalendar.AnonCache
+import typings.fullcalendar.anon.Cache
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ class JsonFeedEventSource ()
 @JSImport("fullcalendar", "JsonFeedEventSource")
 @js.native
 object JsonFeedEventSource extends js.Object {
-  var AJAX_DEFAULTS: AnonCache = js.native
+  var AJAX_DEFAULTS: Cache = js.native
   def parse(rawInput: js.Any, calendar: js.Any): js.Any = js.native
 }
 

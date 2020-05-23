@@ -33,14 +33,14 @@ object StreamLayerPurgeOptions {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    age: Int | Double = null,
-    displayCount: Int | Double = null,
-    maxObservations: Int | Double = null
+    age: js.UndefOr[Double] = js.undefined,
+    displayCount: js.UndefOr[Double] = js.undefined,
+    maxObservations: js.UndefOr[Double] = js.undefined
   ): StreamLayerPurgeOptions = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (age != null) __obj.updateDynamic("age")(age.asInstanceOf[js.Any])
-    if (displayCount != null) __obj.updateDynamic("displayCount")(displayCount.asInstanceOf[js.Any])
-    if (maxObservations != null) __obj.updateDynamic("maxObservations")(maxObservations.asInstanceOf[js.Any])
+    if (!js.isUndefined(age)) __obj.updateDynamic("age")(age.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayCount)) __obj.updateDynamic("displayCount")(displayCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxObservations)) __obj.updateDynamic("maxObservations")(maxObservations.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamLayerPurgeOptions]
   }
 }

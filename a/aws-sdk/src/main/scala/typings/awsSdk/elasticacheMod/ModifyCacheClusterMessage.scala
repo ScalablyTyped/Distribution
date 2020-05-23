@@ -89,10 +89,10 @@ object ModifyCacheClusterMessage {
   def apply(
     CacheClusterId: String,
     AZMode: AZMode = null,
-    ApplyImmediately: js.UndefOr[scala.Boolean] = js.undefined,
+    ApplyImmediately: js.UndefOr[Boolean] = js.undefined,
     AuthToken: String = null,
     AuthTokenUpdateStrategy: AuthTokenUpdateStrategyType = null,
-    AutoMinorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
+    AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined,
     CacheNodeIdsToRemove: CacheNodeIdsList = null,
     CacheNodeType: String = null,
     CacheParameterGroupName: String = null,
@@ -101,18 +101,18 @@ object ModifyCacheClusterMessage {
     NewAvailabilityZones: PreferredAvailabilityZoneList = null,
     NotificationTopicArn: String = null,
     NotificationTopicStatus: String = null,
-    NumCacheNodes: Int | scala.Double = null,
+    NumCacheNodes: js.UndefOr[IntegerOptional] = js.undefined,
     PreferredMaintenanceWindow: String = null,
     SecurityGroupIds: SecurityGroupIdsList = null,
-    SnapshotRetentionLimit: Int | scala.Double = null,
+    SnapshotRetentionLimit: js.UndefOr[IntegerOptional] = js.undefined,
     SnapshotWindow: String = null
   ): ModifyCacheClusterMessage = {
     val __obj = js.Dynamic.literal(CacheClusterId = CacheClusterId.asInstanceOf[js.Any])
     if (AZMode != null) __obj.updateDynamic("AZMode")(AZMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(ApplyImmediately)) __obj.updateDynamic("ApplyImmediately")(ApplyImmediately.asInstanceOf[js.Any])
+    if (!js.isUndefined(ApplyImmediately)) __obj.updateDynamic("ApplyImmediately")(ApplyImmediately.get.asInstanceOf[js.Any])
     if (AuthToken != null) __obj.updateDynamic("AuthToken")(AuthToken.asInstanceOf[js.Any])
     if (AuthTokenUpdateStrategy != null) __obj.updateDynamic("AuthTokenUpdateStrategy")(AuthTokenUpdateStrategy.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade.get.asInstanceOf[js.Any])
     if (CacheNodeIdsToRemove != null) __obj.updateDynamic("CacheNodeIdsToRemove")(CacheNodeIdsToRemove.asInstanceOf[js.Any])
     if (CacheNodeType != null) __obj.updateDynamic("CacheNodeType")(CacheNodeType.asInstanceOf[js.Any])
     if (CacheParameterGroupName != null) __obj.updateDynamic("CacheParameterGroupName")(CacheParameterGroupName.asInstanceOf[js.Any])
@@ -121,10 +121,10 @@ object ModifyCacheClusterMessage {
     if (NewAvailabilityZones != null) __obj.updateDynamic("NewAvailabilityZones")(NewAvailabilityZones.asInstanceOf[js.Any])
     if (NotificationTopicArn != null) __obj.updateDynamic("NotificationTopicArn")(NotificationTopicArn.asInstanceOf[js.Any])
     if (NotificationTopicStatus != null) __obj.updateDynamic("NotificationTopicStatus")(NotificationTopicStatus.asInstanceOf[js.Any])
-    if (NumCacheNodes != null) __obj.updateDynamic("NumCacheNodes")(NumCacheNodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumCacheNodes)) __obj.updateDynamic("NumCacheNodes")(NumCacheNodes.get.asInstanceOf[js.Any])
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow.asInstanceOf[js.Any])
     if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds.asInstanceOf[js.Any])
-    if (SnapshotRetentionLimit != null) __obj.updateDynamic("SnapshotRetentionLimit")(SnapshotRetentionLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(SnapshotRetentionLimit)) __obj.updateDynamic("SnapshotRetentionLimit")(SnapshotRetentionLimit.get.asInstanceOf[js.Any])
     if (SnapshotWindow != null) __obj.updateDynamic("SnapshotWindow")(SnapshotWindow.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyCacheClusterMessage]
   }

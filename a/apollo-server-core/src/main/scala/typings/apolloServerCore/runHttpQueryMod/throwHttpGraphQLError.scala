@@ -1,6 +1,6 @@
 package typings.apolloServerCore.runHttpQueryMod
 
-import typings.apolloServerCore.PickdefaultRecordstringan
+import typings.apolloServerCore.anon.PickdefaultRecordstringan
 import typings.std.Error
 import typings.std.Record
 import scala.scalajs.js

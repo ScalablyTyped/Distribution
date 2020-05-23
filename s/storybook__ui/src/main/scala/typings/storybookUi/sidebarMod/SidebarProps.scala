@@ -22,8 +22,8 @@ object SidebarProps {
     storyId: String = null
   ): SidebarProps = {
     val __obj = js.Dynamic.literal(menu = menu.asInstanceOf[js.Any], stories = stories.asInstanceOf[js.Any])
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    if (!js.isUndefined(menuHighlighted)) __obj.updateDynamic("menuHighlighted")(menuHighlighted.asInstanceOf[js.Any])
+    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(menuHighlighted)) __obj.updateDynamic("menuHighlighted")(menuHighlighted.get.asInstanceOf[js.Any])
     if (storyId != null) __obj.updateDynamic("storyId")(storyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SidebarProps]
   }

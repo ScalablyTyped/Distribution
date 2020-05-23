@@ -12,7 +12,7 @@ object Props {
   @scala.inline
   def apply(autoHideSplash: js.UndefOr[Boolean] = js.undefined): Props = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoHideSplash)) __obj.updateDynamic("autoHideSplash")(autoHideSplash.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHideSplash)) __obj.updateDynamic("autoHideSplash")(autoHideSplash.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

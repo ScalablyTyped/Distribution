@@ -1,12 +1,11 @@
 package typings.firebaseFirestore
 
-import typings.firebaseFirestore.sortedMapMod.SortedMap
 import typings.firebaseFirestore.sortedMapMod.SortedMapIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/util/sorted_set", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/util/sorted_set", JSImport.Namespace)
 @js.native
 object sortedSetMod extends js.Object {
   @js.native
@@ -38,7 +37,7 @@ object sortedSetMod extends js.Object {
     def isEmpty(): Boolean = js.native
     def isEqual(other: SortedSet[T]): Boolean = js.native
     def last(): T | Null = js.native
-    def size(): Double = js.native
+    def size: Double = js.native
     def toArray(): js.Array[T] = js.native
     def unionWith(other: SortedSet[T]): SortedSet[T] = js.native
   }
@@ -49,16 +48,6 @@ object sortedSetMod extends js.Object {
     var iter: js.Any = js.native
     def getNext(): T = js.native
     def hasNext(): Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object SortedSet extends js.Object {
-    /**
-      * Creates a SortedSet from the keys of the map.
-      * This is currently implemented as an O(n) copy.
-      */
-    def fromMapKeys[K, V](map: SortedMap[K, V]): SortedSet[K] = js.native
   }
   
 }

@@ -1,21 +1,20 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.AnonComponentDropInsideItem
-import typings.devextreme.AnonDropInsideItemElement
-import typings.devextreme.AnonElement
-import typings.devextreme.AnonFromComponentFromData
-import typings.devextreme.AnonFromDataFromIndex
-import typings.devextreme.AnonFromIndexItemData
-import typings.devextreme.AnonModel
-import typings.devextreme.AnonName
-import typings.devextreme.AnonY
+import typings.devextreme.anon.ComponentDropInsideItem
+import typings.devextreme.anon.DropInsideItemElement
+import typings.devextreme.anon.FromComponentFromData
+import typings.devextreme.anon.FromDataFromIndex
+import typings.devextreme.anon.FromIndexItemData
+import typings.devextreme.anon.Model
+import typings.devextreme.anon.Name
+import typings.devextreme.anon.Y
 import typings.devextreme.devextremeStrings.both
 import typings.devextreme.devextremeStrings.horizontal
 import typings.devextreme.devextremeStrings.indicate
 import typings.devextreme.devextremeStrings.push
 import typings.devextreme.devextremeStrings.vertical
 import typings.devextreme.mod.DevExpress.core.dxElement
-import typings.devextreme.mod._Global_.JQuery
+import typings.devextreme.mod.global.JQuery
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,7 +28,7 @@ trait dxSortableOptions extends DraggableBaseOptions[dxSortable] {
   /** @name dxSortable.Options.dragTemplate */
   var dragTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[
-      /* dragInfo */ AnonFromIndexItemData, 
+      /* dragInfo */ FromIndexItemData, 
       /* containerElement */ dxElement, 
       String | Element | JQuery
     ])
@@ -43,19 +42,19 @@ trait dxSortableOptions extends DraggableBaseOptions[dxSortable] {
   /** @name dxSortable.Options.moveItemOnDrop */
   var moveItemOnDrop: js.UndefOr[Boolean] = js.undefined
   /** @name dxSortable.Options.onAdd */
-  var onAdd: js.UndefOr[js.Function1[/* e */ AnonComponentDropInsideItem, _]] = js.undefined
+  var onAdd: js.UndefOr[js.Function1[/* e */ ComponentDropInsideItem, _]] = js.undefined
   /** @name dxSortable.Options.onDragChange */
-  var onDragChange: js.UndefOr[js.Function1[/* e */ AnonDropInsideItemElement, _]] = js.undefined
+  var onDragChange: js.UndefOr[js.Function1[/* e */ DropInsideItemElement, _]] = js.undefined
   /** @name dxSortable.Options.onDragEnd */
-  var onDragEnd: js.UndefOr[js.Function1[/* e */ AnonDropInsideItemElement, _]] = js.undefined
+  var onDragEnd: js.UndefOr[js.Function1[/* e */ DropInsideItemElement, _]] = js.undefined
   /** @name dxSortable.Options.onDragMove */
-  var onDragMove: js.UndefOr[js.Function1[/* e */ AnonDropInsideItemElement, _]] = js.undefined
+  var onDragMove: js.UndefOr[js.Function1[/* e */ DropInsideItemElement, _]] = js.undefined
   /** @name dxSortable.Options.onDragStart */
-  var onDragStart: js.UndefOr[js.Function1[/* e */ AnonFromDataFromIndex, _]] = js.undefined
+  var onDragStart: js.UndefOr[js.Function1[/* e */ FromDataFromIndex, _]] = js.undefined
   /** @name dxSortable.Options.onRemove */
-  var onRemove: js.UndefOr[js.Function1[/* e */ AnonFromComponentFromData, _]] = js.undefined
+  var onRemove: js.UndefOr[js.Function1[/* e */ FromComponentFromData, _]] = js.undefined
   /** @name dxSortable.Options.onReorder */
-  var onReorder: js.UndefOr[js.Function1[/* e */ AnonComponentDropInsideItem, _]] = js.undefined
+  var onReorder: js.UndefOr[js.Function1[/* e */ ComponentDropInsideItem, _]] = js.undefined
 }
 
 object dxSortableOptions {
@@ -67,11 +66,11 @@ object dxSortableOptions {
     bindingOptions: js.Any = null,
     boundary: String | Element | JQuery = null,
     container: String | Element | JQuery = null,
-    cursorOffset: String | AnonY = null,
+    cursorOffset: String | Y = null,
     data: js.Any = null,
     dragDirection: both | horizontal | vertical = null,
     dragTemplate: typings.devextreme.mod.DevExpress.core.template | (js.Function2[
-      /* dragInfo */ AnonFromIndexItemData, 
+      /* dragInfo */ FromIndexItemData, 
       /* containerElement */ dxElement, 
       String | Element | JQuery
     ]) = null,
@@ -83,25 +82,25 @@ object dxSortableOptions {
     height: Double | String | (js.Function0[Double | String]) = null,
     itemOrientation: horizontal | vertical = null,
     moveItemOnDrop: js.UndefOr[Boolean] = js.undefined,
-    onAdd: /* e */ AnonComponentDropInsideItem => _ = null,
-    onDisposing: /* e */ AnonModel[dxSortable] => _ = null,
-    onDragChange: /* e */ AnonDropInsideItemElement => _ = null,
-    onDragEnd: /* e */ AnonDropInsideItemElement => _ = null,
-    onDragMove: /* e */ AnonDropInsideItemElement => _ = null,
-    onDragStart: /* e */ AnonFromDataFromIndex => _ = null,
-    onInitialized: /* e */ AnonElement[dxSortable] => _ = null,
-    onOptionChanged: /* e */ AnonName[dxSortable] => _ = null,
-    onRemove: /* e */ AnonFromComponentFromData => _ = null,
-    onReorder: /* e */ AnonComponentDropInsideItem => _ = null,
+    onAdd: /* e */ ComponentDropInsideItem => _ = null,
+    onDisposing: /* e */ Model[dxSortable] => _ = null,
+    onDragChange: /* e */ DropInsideItemElement => _ = null,
+    onDragEnd: /* e */ DropInsideItemElement => _ = null,
+    onDragMove: /* e */ DropInsideItemElement => _ = null,
+    onDragStart: /* e */ FromDataFromIndex => _ = null,
+    onInitialized: /* e */ typings.devextreme.anon.Element[dxSortable] => _ = null,
+    onOptionChanged: /* e */ Name[dxSortable] => _ = null,
+    onRemove: /* e */ FromComponentFromData => _ = null,
+    onReorder: /* e */ ComponentDropInsideItem => _ = null,
     rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    scrollSensitivity: Int | Double = null,
-    scrollSpeed: Int | Double = null,
+    scrollSensitivity: js.UndefOr[Double] = js.undefined,
+    scrollSpeed: js.UndefOr[Double] = js.undefined,
     width: Double | String | (js.Function0[Double | String]) = null
   ): dxSortableOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDropInsideItem)) __obj.updateDynamic("allowDropInsideItem")(allowDropInsideItem.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowReordering)) __obj.updateDynamic("allowReordering")(allowReordering.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoScroll)) __obj.updateDynamic("autoScroll")(autoScroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDropInsideItem)) __obj.updateDynamic("allowDropInsideItem")(allowDropInsideItem.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowReordering)) __obj.updateDynamic("allowReordering")(allowReordering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoScroll)) __obj.updateDynamic("autoScroll")(autoScroll.get.asInstanceOf[js.Any])
     if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
     if (boundary != null) __obj.updateDynamic("boundary")(boundary.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
@@ -116,7 +115,7 @@ object dxSortableOptions {
     if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (itemOrientation != null) __obj.updateDynamic("itemOrientation")(itemOrientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(moveItemOnDrop)) __obj.updateDynamic("moveItemOnDrop")(moveItemOnDrop.asInstanceOf[js.Any])
+    if (!js.isUndefined(moveItemOnDrop)) __obj.updateDynamic("moveItemOnDrop")(moveItemOnDrop.get.asInstanceOf[js.Any])
     if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction1(onAdd))
     if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1(onDisposing))
     if (onDragChange != null) __obj.updateDynamic("onDragChange")(js.Any.fromFunction1(onDragChange))
@@ -127,9 +126,9 @@ object dxSortableOptions {
     if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1(onOptionChanged))
     if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction1(onRemove))
     if (onReorder != null) __obj.updateDynamic("onReorder")(js.Any.fromFunction1(onReorder))
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
-    if (scrollSensitivity != null) __obj.updateDynamic("scrollSensitivity")(scrollSensitivity.asInstanceOf[js.Any])
-    if (scrollSpeed != null) __obj.updateDynamic("scrollSpeed")(scrollSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollSensitivity)) __obj.updateDynamic("scrollSensitivity")(scrollSensitivity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollSpeed)) __obj.updateDynamic("scrollSpeed")(scrollSpeed.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxSortableOptions]
   }

@@ -19,9 +19,9 @@ trait ZipInfo extends js.Object {
 
 object ZipInfo {
   @scala.inline
-  def apply(filesCount: Int | Double = null, sourceUrl: String = null): ZipInfo = {
+  def apply(filesCount: js.UndefOr[Double] = js.undefined, sourceUrl: String = null): ZipInfo = {
     val __obj = js.Dynamic.literal()
-    if (filesCount != null) __obj.updateDynamic("filesCount")(filesCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(filesCount)) __obj.updateDynamic("filesCount")(filesCount.get.asInstanceOf[js.Any])
     if (sourceUrl != null) __obj.updateDynamic("sourceUrl")(sourceUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZipInfo]
   }

@@ -11,9 +11,9 @@ trait DeleteDuplicatesResponse extends js.Object {
 
 object DeleteDuplicatesResponse {
   @scala.inline
-  def apply(duplicatesRemovedCount: Int | Double = null): DeleteDuplicatesResponse = {
+  def apply(duplicatesRemovedCount: js.UndefOr[Double] = js.undefined): DeleteDuplicatesResponse = {
     val __obj = js.Dynamic.literal()
-    if (duplicatesRemovedCount != null) __obj.updateDynamic("duplicatesRemovedCount")(duplicatesRemovedCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(duplicatesRemovedCount)) __obj.updateDynamic("duplicatesRemovedCount")(duplicatesRemovedCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDuplicatesResponse]
   }
 }

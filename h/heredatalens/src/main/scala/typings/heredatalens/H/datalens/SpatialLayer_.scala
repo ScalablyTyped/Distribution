@@ -1,6 +1,5 @@
 package typings.heredatalens.H.datalens
 
-import typings.heredatalens.H.datalens.SpatialLayer.Options
 import typings.heredatalens.H.datalens.SpatialLayer.StyleState
 import typings.heremaps.H.map.Object
 import typings.heremaps.H.map.layer.TileLayer
@@ -12,16 +11,8 @@ import scala.scalajs.js.annotation._
   * Renders vector tiles using data-driven styles
   * This layer binds the spatial data and user data, all provided by the Data Lens REST API. The layer renders geometry features using data-driven styles.
   */
-@JSGlobal("H.datalens.SpatialLayer")
 @js.native
-class SpatialLayer_ protected () extends TileLayer {
-  /**
-    * Constructor
-    * @param dataProvider - Source of tiled data (pass in null if data come from feature properties)
-    * @param spatialProvider - Source of geometry data
-    * @param options - Configuration for data processing and rendering
-    */
-  def this(dataProvider: Provider, spatialProvider: SpatialTileProvider, options: Options) = this()
+trait SpatialLayer_ extends TileLayer {
   /**
     * Forces re-rendering of the layer. When the callbacks passed to the layer options are not pure functions, you can call this method to force re-rendering.
     */

@@ -1,7 +1,7 @@
 package typings.babylonjs.nodeMaterialMod
 
-import typings.babylonjs.PartialINodeMaterialOptio
 import typings.babylonjs.abstractMeshMod.AbstractMesh
+import typings.babylonjs.anon.PartialINodeMaterialOptio
 import typings.babylonjs.imageProcessingConfigurationMod.ImageProcessingConfiguration
 import typings.babylonjs.inputBlockMod.InputBlock
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock

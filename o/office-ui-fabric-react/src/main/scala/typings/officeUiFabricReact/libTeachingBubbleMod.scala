@@ -1,5 +1,7 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.anon.CalloutProps
+import typings.officeUiFabricReact.anon.HasCondensedHeadline
 import typings.officeUiFabricReact.teachingBubbleTypesMod.ITeachingBubbleProps
 import typings.react.mod.FunctionComponent
 import scala.scalajs.js
@@ -26,13 +28,13 @@ object libTeachingBubbleMod extends js.Object {
   /* static members */
   @js.native
   object TeachingBubbleBase extends js.Object {
-    var defaultProps: AnonCalloutProps = js.native
+    var defaultProps: CalloutProps = js.native
   }
   
   /* static members */
   @js.native
   object TeachingBubbleContentBase extends js.Object {
-    var defaultProps: AnonHasCondensedHeadline = js.native
+    var defaultProps: HasCondensedHeadline = js.native
   }
   
 }

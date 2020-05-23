@@ -4,7 +4,5 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CUI.Controls.GalleryButtonCommandProperties")
-@js.native
-class GalleryButtonCommandProperties () extends js.Object
+trait GalleryButtonCommandProperties extends js.Object
 

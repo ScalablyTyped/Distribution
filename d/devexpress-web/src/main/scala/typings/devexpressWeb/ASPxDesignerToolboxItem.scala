@@ -4,15 +4,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ASPxDesignerToolboxItem")
-@js.native
-class ASPxDesignerToolboxItem () extends js.Object {
-  var defaultVal: js.Any = js.native
-  var info: js.Array[ASPxDesignerElementSerializationInfo] = js.native
-  var isToolboxItem: Boolean = js.native
-  var popularProperties: js.Array[String] = js.native
-  var surfaceType: js.Any = js.native
-  var toolboxIndex: Double = js.native
-  var `type`: js.Any = js.native
+trait ASPxDesignerToolboxItem extends js.Object {
+  var defaultVal: js.Any
+  var info: js.Array[ASPxDesignerElementSerializationInfo]
+  var isToolboxItem: Boolean
+  var popularProperties: js.Array[String]
+  var surfaceType: js.Any
+  var toolboxIndex: Double
+  var `type`: js.Any
+}
+
+object ASPxDesignerToolboxItem {
+  @scala.inline
+  def apply(
+    defaultVal: js.Any,
+    info: js.Array[ASPxDesignerElementSerializationInfo],
+    isToolboxItem: Boolean,
+    popularProperties: js.Array[String],
+    surfaceType: js.Any,
+    toolboxIndex: Double,
+    `type`: js.Any
+  ): ASPxDesignerToolboxItem = {
+    val __obj = js.Dynamic.literal(defaultVal = defaultVal.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], isToolboxItem = isToolboxItem.asInstanceOf[js.Any], popularProperties = popularProperties.asInstanceOf[js.Any], surfaceType = surfaceType.asInstanceOf[js.Any], toolboxIndex = toolboxIndex.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxDesignerToolboxItem]
+  }
 }
 

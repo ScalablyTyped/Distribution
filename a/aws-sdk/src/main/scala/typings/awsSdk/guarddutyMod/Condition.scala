@@ -11,7 +11,7 @@ trait Condition extends js.Object {
     */
   var Eq: js.UndefOr[typings.awsSdk.guarddutyMod.Eq] = js.native
   /**
-    * Represents an equal condition to be applied to a single field when querying for findings.
+    * Represents an equal  condition to be applied to a single field when querying for findings.
     */
   var Equals: js.UndefOr[typings.awsSdk.guarddutyMod.Equals] = js.native
   /**
@@ -19,7 +19,7 @@ trait Condition extends js.Object {
     */
   var GreaterThan: js.UndefOr[Long] = js.native
   /**
-    * Represents a greater than equal condition to be applied to a single field when querying for findings.
+    * Represents a greater than or equal condition to be applied to a single field when querying for findings.
     */
   var GreaterThanOrEqual: js.UndefOr[Long] = js.native
   /**
@@ -27,7 +27,7 @@ trait Condition extends js.Object {
     */
   var Gt: js.UndefOr[Integer] = js.native
   /**
-    * Represents a greater than equal condition to be applied to a single field when querying for findings.
+    * Represents a greater than or equal condition to be applied to a single field when querying for findings.
     */
   var Gte: js.UndefOr[Integer] = js.native
   /**
@@ -35,7 +35,7 @@ trait Condition extends js.Object {
     */
   var LessThan: js.UndefOr[Long] = js.native
   /**
-    * Represents a less than equal condition to be applied to a single field when querying for findings.
+    * Represents a less than or equal condition to be applied to a single field when querying for findings.
     */
   var LessThanOrEqual: js.UndefOr[Long] = js.native
   /**
@@ -43,7 +43,7 @@ trait Condition extends js.Object {
     */
   var Lt: js.UndefOr[Integer] = js.native
   /**
-    * Represents a less than equal condition to be applied to a single field when querying for findings.
+    * Represents a less than or equal condition to be applied to a single field when querying for findings.
     */
   var Lte: js.UndefOr[Integer] = js.native
   /**
@@ -51,7 +51,7 @@ trait Condition extends js.Object {
     */
   var Neq: js.UndefOr[typings.awsSdk.guarddutyMod.Neq] = js.native
   /**
-    * Represents an not equal condition to be applied to a single field when querying for findings.
+    * Represents a not equal  condition to be applied to a single field when querying for findings.
     */
   var NotEquals: js.UndefOr[typings.awsSdk.guarddutyMod.NotEquals] = js.native
 }
@@ -61,28 +61,28 @@ object Condition {
   def apply(
     Eq: Eq = null,
     Equals: Equals = null,
-    GreaterThan: Int | scala.Double = null,
-    GreaterThanOrEqual: Int | scala.Double = null,
-    Gt: Int | scala.Double = null,
-    Gte: Int | scala.Double = null,
-    LessThan: Int | scala.Double = null,
-    LessThanOrEqual: Int | scala.Double = null,
-    Lt: Int | scala.Double = null,
-    Lte: Int | scala.Double = null,
+    GreaterThan: js.UndefOr[Long] = js.undefined,
+    GreaterThanOrEqual: js.UndefOr[Long] = js.undefined,
+    Gt: js.UndefOr[Integer] = js.undefined,
+    Gte: js.UndefOr[Integer] = js.undefined,
+    LessThan: js.UndefOr[Long] = js.undefined,
+    LessThanOrEqual: js.UndefOr[Long] = js.undefined,
+    Lt: js.UndefOr[Integer] = js.undefined,
+    Lte: js.UndefOr[Integer] = js.undefined,
     Neq: Neq = null,
     NotEquals: NotEquals = null
   ): Condition = {
     val __obj = js.Dynamic.literal()
     if (Eq != null) __obj.updateDynamic("Eq")(Eq.asInstanceOf[js.Any])
     if (Equals != null) __obj.updateDynamic("Equals")(Equals.asInstanceOf[js.Any])
-    if (GreaterThan != null) __obj.updateDynamic("GreaterThan")(GreaterThan.asInstanceOf[js.Any])
-    if (GreaterThanOrEqual != null) __obj.updateDynamic("GreaterThanOrEqual")(GreaterThanOrEqual.asInstanceOf[js.Any])
-    if (Gt != null) __obj.updateDynamic("Gt")(Gt.asInstanceOf[js.Any])
-    if (Gte != null) __obj.updateDynamic("Gte")(Gte.asInstanceOf[js.Any])
-    if (LessThan != null) __obj.updateDynamic("LessThan")(LessThan.asInstanceOf[js.Any])
-    if (LessThanOrEqual != null) __obj.updateDynamic("LessThanOrEqual")(LessThanOrEqual.asInstanceOf[js.Any])
-    if (Lt != null) __obj.updateDynamic("Lt")(Lt.asInstanceOf[js.Any])
-    if (Lte != null) __obj.updateDynamic("Lte")(Lte.asInstanceOf[js.Any])
+    if (!js.isUndefined(GreaterThan)) __obj.updateDynamic("GreaterThan")(GreaterThan.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(GreaterThanOrEqual)) __obj.updateDynamic("GreaterThanOrEqual")(GreaterThanOrEqual.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Gt)) __obj.updateDynamic("Gt")(Gt.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Gte)) __obj.updateDynamic("Gte")(Gte.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(LessThan)) __obj.updateDynamic("LessThan")(LessThan.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(LessThanOrEqual)) __obj.updateDynamic("LessThanOrEqual")(LessThanOrEqual.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Lt)) __obj.updateDynamic("Lt")(Lt.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Lte)) __obj.updateDynamic("Lte")(Lte.get.asInstanceOf[js.Any])
     if (Neq != null) __obj.updateDynamic("Neq")(Neq.asInstanceOf[js.Any])
     if (NotEquals != null) __obj.updateDynamic("NotEquals")(NotEquals.asInstanceOf[js.Any])
     __obj.asInstanceOf[Condition]

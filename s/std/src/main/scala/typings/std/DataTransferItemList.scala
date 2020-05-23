@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.NumberDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,8 +29,4 @@ trait DataTransferItemList extends /* name */ NumberDictionary[DataTransferItem]
     */
   def remove(index: Double): Unit = js.native
 }
-
-@JSGlobal("DataTransferItemList")
-@js.native
-object DataTransferItemList extends Instantiable0[DataTransferItemList]
 

@@ -1,9 +1,9 @@
 package typings.gapiClientAnalytics.gapi.client.analytics
 
-import typings.gapiClientAnalytics.AnonComparisonValue
-import typings.gapiClientAnalytics.AnonEventConditions
-import typings.gapiClientAnalytics.AnonFirstStepRequired
-import typings.gapiClientAnalytics.AnonHref
+import typings.gapiClientAnalytics.anon.ComparisonValue
+import typings.gapiClientAnalytics.anon.EventConditions
+import typings.gapiClientAnalytics.anon.FirstStepRequired
+import typings.gapiClientAnalytics.anon.Href
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait Goal extends js.Object {
   /** Time this goal was created. */
   var created: js.UndefOr[String] = js.undefined
   /** Details for the goal of the type EVENT. */
-  var eventDetails: js.UndefOr[AnonEventConditions] = js.undefined
+  var eventDetails: js.UndefOr[EventConditions] = js.undefined
   /** Goal ID. */
   var id: js.UndefOr[String] = js.undefined
   /** Internal ID for the web property to which this goal belongs. */
@@ -26,7 +26,7 @@ trait Goal extends js.Object {
   /** Goal name. */
   var name: js.UndefOr[String] = js.undefined
   /** Parent link for a goal. Points to the view (profile) to which this goal belongs. */
-  var parentLink: js.UndefOr[AnonHref] = js.undefined
+  var parentLink: js.UndefOr[Href] = js.undefined
   /** View (Profile) ID to which this goal belongs. */
   var profileId: js.UndefOr[String] = js.undefined
   /** Link for this goal. */
@@ -36,13 +36,13 @@ trait Goal extends js.Object {
   /** Time this goal was last modified. */
   var updated: js.UndefOr[String] = js.undefined
   /** Details for the goal of the type URL_DESTINATION. */
-  var urlDestinationDetails: js.UndefOr[AnonFirstStepRequired] = js.undefined
+  var urlDestinationDetails: js.UndefOr[FirstStepRequired] = js.undefined
   /** Goal value. */
   var value: js.UndefOr[Double] = js.undefined
   /** Details for the goal of the type VISIT_NUM_PAGES. */
-  var visitNumPagesDetails: js.UndefOr[AnonComparisonValue] = js.undefined
+  var visitNumPagesDetails: js.UndefOr[ComparisonValue] = js.undefined
   /** Details for the goal of the type VISIT_TIME_ON_SITE. */
-  var visitTimeOnSiteDetails: js.UndefOr[AnonComparisonValue] = js.undefined
+  var visitTimeOnSiteDetails: js.UndefOr[ComparisonValue] = js.undefined
   /** Web property ID to which this goal belongs. The web property ID is of the form UA-XXXXX-YY. */
   var webPropertyId: js.UndefOr[String] = js.undefined
 }
@@ -53,25 +53,25 @@ object Goal {
     accountId: String = null,
     active: js.UndefOr[Boolean] = js.undefined,
     created: String = null,
-    eventDetails: AnonEventConditions = null,
+    eventDetails: EventConditions = null,
     id: String = null,
     internalWebPropertyId: String = null,
     kind: String = null,
     name: String = null,
-    parentLink: AnonHref = null,
+    parentLink: Href = null,
     profileId: String = null,
     selfLink: String = null,
     `type`: String = null,
     updated: String = null,
-    urlDestinationDetails: AnonFirstStepRequired = null,
-    value: Int | Double = null,
-    visitNumPagesDetails: AnonComparisonValue = null,
-    visitTimeOnSiteDetails: AnonComparisonValue = null,
+    urlDestinationDetails: FirstStepRequired = null,
+    value: js.UndefOr[Double] = js.undefined,
+    visitNumPagesDetails: ComparisonValue = null,
+    visitTimeOnSiteDetails: ComparisonValue = null,
     webPropertyId: String = null
   ): Goal = {
     val __obj = js.Dynamic.literal()
     if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (eventDetails != null) __obj.updateDynamic("eventDetails")(eventDetails.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
@@ -84,7 +84,7 @@ object Goal {
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     if (urlDestinationDetails != null) __obj.updateDynamic("urlDestinationDetails")(urlDestinationDetails.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     if (visitNumPagesDetails != null) __obj.updateDynamic("visitNumPagesDetails")(visitNumPagesDetails.asInstanceOf[js.Any])
     if (visitTimeOnSiteDetails != null) __obj.updateDynamic("visitTimeOnSiteDetails")(visitTimeOnSiteDetails.asInstanceOf[js.Any])
     if (webPropertyId != null) __obj.updateDynamic("webPropertyId")(webPropertyId.asInstanceOf[js.Any])

@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,33 +60,6 @@ object FloatingObjectVerticalPositionType extends js.Object {
     */
   @js.native
   sealed trait TopMargin extends FloatingObjectVerticalPositionType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FloatingObjectVerticalPositionType with Double] = js.native
-  /* 5 */ @js.native
-  object BottomMargin extends TopLevel[BottomMargin with Double]
-  
-  /* 6 */ @js.native
-  object InsideMargin extends TopLevel[InsideMargin with Double]
-  
-  /* 1 */ @js.native
-  object Line extends TopLevel[Line with Double]
-  
-  /* 3 */ @js.native
-  object Margin extends TopLevel[Margin with Double]
-  
-  /* 7 */ @js.native
-  object OutsideMargin extends TopLevel[OutsideMargin with Double]
-  
-  /* 0 */ @js.native
-  object Page extends TopLevel[Page with Double]
-  
-  /* 2 */ @js.native
-  object Paragraph
-    extends TopLevel[typings.devexpressWeb.FloatingObjectVerticalPositionType.Paragraph with Double]
-  
-  /* 4 */ @js.native
-  object TopMargin extends TopLevel[TopMargin with Double]
   
 }
 

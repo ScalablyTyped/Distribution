@@ -53,8 +53,8 @@ object SecureScoreControlProfile {
     id: String = null,
     implementationCost: String = null,
     lastModifiedDateTime: String = null,
-    maxScore: Int | Double = null,
-    rank: Int | Double = null,
+    maxScore: js.UndefOr[Double] = js.undefined,
+    rank: js.UndefOr[Double] = js.undefined,
     remediation: String = null,
     remediationImpact: String = null,
     service: String = null,
@@ -71,12 +71,12 @@ object SecureScoreControlProfile {
     if (complianceInformation != null) __obj.updateDynamic("complianceInformation")(complianceInformation.asInstanceOf[js.Any])
     if (controlCategory != null) __obj.updateDynamic("controlCategory")(controlCategory.asInstanceOf[js.Any])
     if (controlStateUpdates != null) __obj.updateDynamic("controlStateUpdates")(controlStateUpdates.asInstanceOf[js.Any])
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
+    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (implementationCost != null) __obj.updateDynamic("implementationCost")(implementationCost.asInstanceOf[js.Any])
     if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (maxScore != null) __obj.updateDynamic("maxScore")(maxScore.asInstanceOf[js.Any])
-    if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxScore)) __obj.updateDynamic("maxScore")(maxScore.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rank)) __obj.updateDynamic("rank")(rank.get.asInstanceOf[js.Any])
     if (remediation != null) __obj.updateDynamic("remediation")(remediation.asInstanceOf[js.Any])
     if (remediationImpact != null) __obj.updateDynamic("remediationImpact")(remediationImpact.asInstanceOf[js.Any])
     if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])

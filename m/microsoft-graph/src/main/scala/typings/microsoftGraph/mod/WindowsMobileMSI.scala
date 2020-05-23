@@ -44,7 +44,7 @@ object WindowsMobileMSI {
     productVersion: String = null,
     publisher: String = null,
     publishingState: MobileAppPublishingState = null,
-    size: Int | Double = null
+    size: js.UndefOr[Double] = js.undefined
   ): WindowsMobileMSI = {
     val __obj = js.Dynamic.literal()
     if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
@@ -58,9 +58,9 @@ object WindowsMobileMSI {
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreVersionDetection)) __obj.updateDynamic("ignoreVersionDetection")(ignoreVersionDetection.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreVersionDetection)) __obj.updateDynamic("ignoreVersionDetection")(ignoreVersionDetection.get.asInstanceOf[js.Any])
     if (informationUrl != null) __obj.updateDynamic("informationUrl")(informationUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFeatured)) __obj.updateDynamic("isFeatured")(isFeatured.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFeatured)) __obj.updateDynamic("isFeatured")(isFeatured.get.asInstanceOf[js.Any])
     if (largeIcon != null) __obj.updateDynamic("largeIcon")(largeIcon.asInstanceOf[js.Any])
     if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
     if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
@@ -70,7 +70,7 @@ object WindowsMobileMSI {
     if (productVersion != null) __obj.updateDynamic("productVersion")(productVersion.asInstanceOf[js.Any])
     if (publisher != null) __obj.updateDynamic("publisher")(publisher.asInstanceOf[js.Any])
     if (publishingState != null) __obj.updateDynamic("publishingState")(publishingState.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsMobileMSI]
   }
 }

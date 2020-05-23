@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/util/node_api", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/util/node_api", JSImport.Namespace)
 @js.native
 object nodeApiMod extends js.Object {
   def nodePromise[R](action: js.Function1[/* callback */ NodeCallback[R], Unit]): js.Promise[R] = js.native

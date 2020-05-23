@@ -6,23 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a video effect definition. */
-@JSGlobal("Windows.Media.Effects.VideoEffectDefinition")
-@js.native
-class VideoEffectDefinition protected () extends js.Object {
-  /**
-    * Creates a new VideoEffectDefinition object with the specified activatable class ID.
-    * @param activatableClassId The activatable class ID of the video effect definition.
-    */
-  def this(activatableClassId: String) = this()
-  /**
-    * Creates a new VideoEffectDefinition object with the specified activatable class ID, configuring the object with the specified settings.
-    * @param activatableClassId The activatable class ID of the video effect definition.
-    * @param props Configuration properties for the specified video effect definition.
-    */
-  def this(activatableClassId: String, props: IPropertySet) = this()
+trait VideoEffectDefinition extends js.Object {
   /** Gets the activatable class ID of the video effect definition. */
-  var activatableClassId: String = js.native
+  var activatableClassId: String
   /** Gets the set of properties for configuring the VideoEffectDefinition object. */
-  var properties: IPropertySet = js.native
+  var properties: IPropertySet
+}
+
+object VideoEffectDefinition {
+  @scala.inline
+  def apply(activatableClassId: String, properties: IPropertySet): VideoEffectDefinition = {
+    val __obj = js.Dynamic.literal(activatableClassId = activatableClassId.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VideoEffectDefinition]
+  }
 }
 

@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,17 @@ trait PerformanceEntry extends js.Object {
   def toJSON(): js.Any
 }
 
-@JSGlobal("PerformanceEntry")
-@js.native
-object PerformanceEntry extends Instantiable0[PerformanceEntry]
+object PerformanceEntry {
+  @scala.inline
+  def apply(
+    duration: Double,
+    entryType: java.lang.String,
+    name: java.lang.String,
+    startTime: Double,
+    toJSON: () => js.Any
+  ): PerformanceEntry = {
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], entryType = entryType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
+    __obj.asInstanceOf[PerformanceEntry]
+  }
+}
 

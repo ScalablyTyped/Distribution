@@ -1,6 +1,6 @@
 package typings.log4js.mod
 
-import typings.log4js.AnonWorker
+import typings.log4js.anon.Worker
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait LoggingEvent extends js.Object {
   var categoryName: String
-  var cluster: js.UndefOr[AnonWorker] = js.undefined
+  var cluster: js.UndefOr[Worker] = js.undefined
   var context: js.Any
   	// level of message
   var data: js.Array[_]
@@ -28,7 +28,7 @@ object LoggingEvent {
     level: Level,
     pid: Double,
     startTime: Date,
-    cluster: AnonWorker = null
+    cluster: Worker = null
   ): LoggingEvent = {
     val __obj = js.Dynamic.literal(categoryName = categoryName.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
     if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])

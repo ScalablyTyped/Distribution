@@ -24,7 +24,7 @@ object APIGatewayProxyResult {
   ): APIGatewayProxyResult = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBase64Encoded)) __obj.updateDynamic("isBase64Encoded")(isBase64Encoded.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBase64Encoded)) __obj.updateDynamic("isBase64Encoded")(isBase64Encoded.get.asInstanceOf[js.Any])
     if (multiValueHeaders != null) __obj.updateDynamic("multiValueHeaders")(multiValueHeaders.asInstanceOf[js.Any])
     __obj.asInstanceOf[APIGatewayProxyResult]
   }

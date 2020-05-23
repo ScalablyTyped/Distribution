@@ -1,6 +1,6 @@
 package typings.sipJs.apiMod
 
-import typings.sipJs.PartialUserAgentOptions
+import typings.sipJs.anon.PartialUserAgentOptions
 import typings.sipJs.coreMod.URI
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,6 +1,5 @@
 package typings.tensorflowTfjsLayers.activationsMod
 
-import typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.tanh
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +13,6 @@ class Tanh () extends Activation
 @js.native
 object Tanh extends js.Object {
   /** @nocollapse */
-  val className: tanh = js.native
+  val className: /* "tanh" */ String = js.native
 }
 

@@ -14,9 +14,16 @@ trait UnscopedEmitHelper extends EmitHelper {
 
 object UnscopedEmitHelper {
   @scala.inline
-  def apply(name: java.lang.String, scoped: `false`, text: java.lang.String, priority: Int | Double = null): UnscopedEmitHelper = {
+  def apply(
+    name: java.lang.String,
+    scoped: `false`,
+    text: java.lang.String,
+    dependencies: js.Array[EmitHelper] = null,
+    priority: js.UndefOr[Double] = js.undefined
+  ): UnscopedEmitHelper = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], scoped = scoped.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnscopedEmitHelper]
   }
 }

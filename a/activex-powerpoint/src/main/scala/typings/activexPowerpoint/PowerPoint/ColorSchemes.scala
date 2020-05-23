@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.ColorSchemes")
 @js.native
-class ColorSchemes protected () extends js.Object {
+trait ColorSchemes extends js.Object {
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   val Count: Double = js.native
   val Parent: js.Any = js.native

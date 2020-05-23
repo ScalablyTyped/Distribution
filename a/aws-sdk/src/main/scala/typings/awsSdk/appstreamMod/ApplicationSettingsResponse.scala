@@ -23,12 +23,12 @@ trait ApplicationSettingsResponse extends js.Object {
 object ApplicationSettingsResponse {
   @scala.inline
   def apply(
-    Enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    Enabled: js.UndefOr[Boolean] = js.undefined,
     S3BucketName: String = null,
     SettingsGroup: SettingsGroup = null
   ): ApplicationSettingsResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     if (S3BucketName != null) __obj.updateDynamic("S3BucketName")(S3BucketName.asInstanceOf[js.Any])
     if (SettingsGroup != null) __obj.updateDynamic("SettingsGroup")(SettingsGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationSettingsResponse]

@@ -1,9 +1,8 @@
 package typings.reactNativeCommunityCli.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.reactNativeCommunityCli.AnonAssets
-import typings.reactNativeCommunityCli.AnonDictname
-import typings.reactNativeCommunityCli.AnonPlatforms
+import typings.reactNativeCommunityCli.anon.Assets
+import typings.reactNativeCommunityCli.anon.Dictname
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,11 +14,11 @@ trait Config_ extends js.Object {
   // An array of commands that are present in 3rd party packages
   var commands: js.Array[Command]
   // Map of the dependencies that are present in the project
-  var dependencies: StringDictionary[AnonAssets]
+  var dependencies: StringDictionary[Assets]
   // Haste configuration resolved based on available plugins
-  var haste: AnonPlatforms
+  var haste: typings.reactNativeCommunityCli.anon.Platforms
   // Map of available platforms (built-ins and dynamically loaded)
-  var platforms: AnonDictname
+  var platforms: Dictname
   // Object that contains configuration for a project (null, when platform not available)
   var project: Record[String, _]
   // Path to React Native source
@@ -33,9 +32,9 @@ object Config_ {
   def apply(
     assets: js.Array[String],
     commands: js.Array[Command],
-    dependencies: StringDictionary[AnonAssets],
-    haste: AnonPlatforms,
-    platforms: AnonDictname,
+    dependencies: StringDictionary[Assets],
+    haste: typings.reactNativeCommunityCli.anon.Platforms,
+    platforms: Dictname,
     project: Record[String, _],
     reactNativePath: String,
     root: String

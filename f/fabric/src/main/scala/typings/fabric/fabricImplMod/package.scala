@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object fabricImplMod {
-  type IGradientOptionsColorStops = js.Array[typings.fabric.AnonColor]
+  type IGradientOptionsColorStops = js.Array[typings.fabric.anon.Color]
   type ITriangleOptions = typings.fabric.fabricImplMod.IObjectOptions
   type IUtilAminEaseFunction = js.Function4[
     /* t */ scala.Double, 

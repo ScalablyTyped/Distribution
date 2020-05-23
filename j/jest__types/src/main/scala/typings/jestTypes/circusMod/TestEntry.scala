@@ -27,18 +27,18 @@ object TestEntry {
     mode: TestMode,
     name: TestName,
     parent: DescribeBlock,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Null | Double] = js.undefined,
     fn: /* done */ js.UndefOr[typings.jestTypes.globalMod.DoneFn] => js.UndefOr[js.Promise[js.Any] | Unit] = null,
-    startedAt: Int | Double = null,
-    status: TestStatus = null,
-    timeout: Int | Double = null
+    startedAt: js.UndefOr[Null | Double] = js.undefined,
+    status: js.UndefOr[Null | TestStatus] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined
   ): TestEntry = {
     val __obj = js.Dynamic.literal(asyncError = asyncError.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], invocations = invocations.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (fn != null) __obj.updateDynamic("fn")(js.Any.fromFunction1(fn))
-    if (startedAt != null) __obj.updateDynamic("startedAt")(startedAt.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(startedAt)) __obj.updateDynamic("startedAt")(startedAt.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestEntry]
   }
 }

@@ -11,20 +11,20 @@ import scala.scalajs.js.annotation._
   */
 trait CreateStreamArgs extends js.Object {
   /**
-  	 * Mode to open the stream in.
-  	 */
+    * Mode to open the stream in.
+    */
   var mode: js.UndefOr[Double] = js.undefined
   /**
-  	 * Object that the stream will read from or write to.
-  	 */
+    * Object that the stream will read from or write to.
+    */
   var source: js.UndefOr[Blob | Buffer] = js.undefined
 }
 
 object CreateStreamArgs {
   @scala.inline
-  def apply(mode: Int | Double = null, source: Blob | Buffer = null): CreateStreamArgs = {
+  def apply(mode: js.UndefOr[Double] = js.undefined, source: Blob | Buffer = null): CreateStreamArgs = {
     val __obj = js.Dynamic.literal()
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(mode)) __obj.updateDynamic("mode")(mode.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateStreamArgs]
   }

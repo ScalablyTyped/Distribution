@@ -18,9 +18,9 @@ trait GetLogGroupFieldsRequest extends js.Object {
 
 object GetLogGroupFieldsRequest {
   @scala.inline
-  def apply(logGroupName: LogGroupName, time: Int | Double = null): GetLogGroupFieldsRequest = {
+  def apply(logGroupName: LogGroupName, time: js.UndefOr[Timestamp] = js.undefined): GetLogGroupFieldsRequest = {
     val __obj = js.Dynamic.literal(logGroupName = logGroupName.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (!js.isUndefined(time)) __obj.updateDynamic("time")(time.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLogGroupFieldsRequest]
   }
 }

@@ -289,7 +289,7 @@ object TestScriptSetupActionAssert {
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (minimumId != null) __obj.updateDynamic("minimumId")(minimumId.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigationLinks)) __obj.updateDynamic("navigationLinks")(navigationLinks.asInstanceOf[js.Any])
+    if (!js.isUndefined(navigationLinks)) __obj.updateDynamic("navigationLinks")(navigationLinks.get.asInstanceOf[js.Any])
     if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (requestMethod != null) __obj.updateDynamic("requestMethod")(requestMethod.asInstanceOf[js.Any])
@@ -302,7 +302,7 @@ object TestScriptSetupActionAssert {
     if (sourceId != null) __obj.updateDynamic("sourceId")(sourceId.asInstanceOf[js.Any])
     if (validateProfileId != null) __obj.updateDynamic("validateProfileId")(validateProfileId.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(warningOnly)) __obj.updateDynamic("warningOnly")(warningOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(warningOnly)) __obj.updateDynamic("warningOnly")(warningOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestScriptSetupActionAssert]
   }
 }

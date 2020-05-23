@@ -18,8 +18,7 @@ object ConnectData {
     processPendingSubscriptions: () => Unit,
     authToken: js.Object = null
   ): ConnectData = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isAuthenticated = isAuthenticated.asInstanceOf[js.Any], pingTimeout = pingTimeout.asInstanceOf[js.Any], processPendingSubscriptions = js.Any.fromFunction0(processPendingSubscriptions))
-    if (authToken != null) __obj.updateDynamic("authToken")(authToken.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isAuthenticated = isAuthenticated.asInstanceOf[js.Any], pingTimeout = pingTimeout.asInstanceOf[js.Any], processPendingSubscriptions = js.Any.fromFunction0(processPendingSubscriptions), authToken = authToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectData]
   }
 }

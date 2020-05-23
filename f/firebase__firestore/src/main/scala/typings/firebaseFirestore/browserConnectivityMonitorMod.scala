@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/platform_browser/browser_connectivity_monitor", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/platform_browser/browser_connectivity_monitor", JSImport.Namespace)
 @js.native
 object browserConnectivityMonitorMod extends js.Object {
   @js.native

@@ -13,12 +13,10 @@ trait MutationBatchState extends js.Object
 
 object MutationBatchState {
   @scala.inline
-  def acknowledged: typings.firebaseFirestore.firebaseFirestoreStrings.acknowledged = this.cast("acknowledged")
+  def acknowledged: typings.firebaseFirestore.firebaseFirestoreStrings.acknowledged = "acknowledged".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.acknowledged]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def pending: typings.firebaseFirestore.firebaseFirestoreStrings.pending = "pending".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.pending]
   @scala.inline
-  def pending: typings.firebaseFirestore.firebaseFirestoreStrings.pending = this.cast("pending")
-  @scala.inline
-  def rejected: typings.firebaseFirestore.firebaseFirestoreStrings.rejected = this.cast("rejected")
+  def rejected: typings.firebaseFirestore.firebaseFirestoreStrings.rejected = "rejected".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.rejected]
 }
 

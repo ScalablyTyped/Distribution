@@ -1,6 +1,5 @@
 package typings.screeps
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -71,7 +70,42 @@ trait StructureController
   def unclaim(): ScreepsReturnCode
 }
 
-@JSGlobal("StructureController")
-@js.native
-object StructureController extends TopLevel[StructureControllerConstructor]
+object StructureController {
+  @scala.inline
+  def apply(
+    activateSafeMode: () => ScreepsReturnCode,
+    destroy: () => ScreepsReturnCode,
+    effects: js.Array[RoomObjectEffect],
+    hits: Double,
+    hitsMax: Double,
+    id: Id[StructureController],
+    isActive: () => Boolean,
+    isPowerEnabled: Boolean,
+    level: Double,
+    my: Boolean,
+    notifyWhenAttacked: Boolean => ScreepsReturnCode,
+    pos: RoomPosition,
+    progress: Double,
+    progressTotal: Double,
+    room: Room,
+    safeModeAvailable: Double,
+    structureType: STRUCTURE_CONTROLLER,
+    ticksToDowngrade: Double,
+    unclaim: () => ScreepsReturnCode,
+    upgradeBlocked: Double,
+    owner: Owner = null,
+    reservation: ReservationDefinition = null,
+    safeMode: js.UndefOr[Double] = js.undefined,
+    safeModeCooldown: js.UndefOr[Double] = js.undefined,
+    sign: SignDefinition = null
+  ): StructureController = {
+    val __obj = js.Dynamic.literal(activateSafeMode = js.Any.fromFunction0(activateSafeMode), destroy = js.Any.fromFunction0(destroy), effects = effects.asInstanceOf[js.Any], hits = hits.asInstanceOf[js.Any], hitsMax = hitsMax.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isActive = js.Any.fromFunction0(isActive), isPowerEnabled = isPowerEnabled.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], my = my.asInstanceOf[js.Any], notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), pos = pos.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], progressTotal = progressTotal.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], safeModeAvailable = safeModeAvailable.asInstanceOf[js.Any], structureType = structureType.asInstanceOf[js.Any], ticksToDowngrade = ticksToDowngrade.asInstanceOf[js.Any], unclaim = js.Any.fromFunction0(unclaim), upgradeBlocked = upgradeBlocked.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (reservation != null) __obj.updateDynamic("reservation")(reservation.asInstanceOf[js.Any])
+    if (!js.isUndefined(safeMode)) __obj.updateDynamic("safeMode")(safeMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(safeModeCooldown)) __obj.updateDynamic("safeModeCooldown")(safeModeCooldown.get.asInstanceOf[js.Any])
+    if (sign != null) __obj.updateDynamic("sign")(sign.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StructureController]
+  }
+}
 

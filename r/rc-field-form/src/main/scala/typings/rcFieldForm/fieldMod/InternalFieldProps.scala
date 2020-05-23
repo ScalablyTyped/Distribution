@@ -27,6 +27,8 @@ trait InternalFieldProps extends js.Object {
     */
   var dependencies: js.UndefOr[js.Array[NamePath]] = js.undefined
   var getValueFromEvent: js.UndefOr[js.Function1[/* args */ EventArgs, StoreValue]] = js.undefined
+  var getValueProps: js.UndefOr[js.Function1[/* value */ StoreValue, js.Object]] = js.undefined
+  var initialValue: js.UndefOr[js.Any] = js.undefined
   var messageVariables: js.UndefOr[Record[String, String]] = js.undefined
   var name: js.UndefOr[InternalNamePath] = js.undefined
   var normalize: js.UndefOr[
@@ -47,6 +49,8 @@ object InternalFieldProps {
     children: ReactElement | (js.Function3[/* control */ ChildProps, /* meta */ Meta, /* form */ FormInstance, ReactNode]) = null,
     dependencies: js.Array[NamePath] = null,
     getValueFromEvent: /* args */ EventArgs => StoreValue = null,
+    getValueProps: /* value */ StoreValue => js.Object = null,
+    initialValue: js.Any = null,
     messageVariables: Record[String, String] = null,
     name: InternalNamePath = null,
     normalize: (/* value */ StoreValue, /* prevValue */ StoreValue, /* allValues */ Store) => StoreValue = null,
@@ -62,6 +66,8 @@ object InternalFieldProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
     if (getValueFromEvent != null) __obj.updateDynamic("getValueFromEvent")(js.Any.fromFunction1(getValueFromEvent))
+    if (getValueProps != null) __obj.updateDynamic("getValueProps")(js.Any.fromFunction1(getValueProps))
+    if (initialValue != null) __obj.updateDynamic("initialValue")(initialValue.asInstanceOf[js.Any])
     if (messageVariables != null) __obj.updateDynamic("messageVariables")(messageVariables.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (normalize != null) __obj.updateDynamic("normalize")(js.Any.fromFunction3(normalize))
@@ -69,7 +75,7 @@ object InternalFieldProps {
     if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     if (shouldUpdate != null) __obj.updateDynamic("shouldUpdate")(shouldUpdate.asInstanceOf[js.Any])
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateFirst)) __obj.updateDynamic("validateFirst")(validateFirst.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateFirst)) __obj.updateDynamic("validateFirst")(validateFirst.get.asInstanceOf[js.Any])
     if (validateTrigger != null) __obj.updateDynamic("validateTrigger")(validateTrigger.asInstanceOf[js.Any])
     if (valuePropName != null) __obj.updateDynamic("valuePropName")(valuePropName.asInstanceOf[js.Any])
     __obj.asInstanceOf[InternalFieldProps]

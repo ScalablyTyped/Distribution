@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,8 +45,4 @@ trait ProjectParameters extends Accessor {
     */
   def toJSON(): js.Any = js.native
 }
-
-@JSGlobal("__esri.ProjectParameters")
-@js.native
-object ProjectParameters extends TopLevel[ProjectParametersConstructor]
 

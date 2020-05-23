@@ -1,7 +1,7 @@
 package typings.ioredis.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ioredis.AnonLua
+import typings.ioredis.anon.Lua
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ class ^ () extends Redis {
   /* CompleteClass */
   override def createBuiltinCommand(commandName: String): js.Object = js.native
   /* CompleteClass */
-  override def defineCommand(name: String, definition: AnonLua): Unit = js.native
+  override def defineCommand(name: String, definition: Lua): Unit = js.native
   /* CompleteClass */
   override def getBuiltinCommands(): js.Array[String] = js.native
   /* CompleteClass */

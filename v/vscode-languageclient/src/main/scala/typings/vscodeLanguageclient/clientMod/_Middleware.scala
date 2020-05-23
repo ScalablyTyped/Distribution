@@ -10,8 +10,8 @@ import typings.vscode.mod.TextDocumentChangeEvent
 import typings.vscode.mod.TextDocumentWillSaveEvent
 import typings.vscode.mod.Uri
 import typings.vscodeJsonrpc.Thenable
-import typings.vscodeLanguageclient.AnonIncludeDeclaration
-import typings.vscodeLanguageclient.AnonPlaceholder
+import typings.vscodeLanguageclient.anon.IncludeDeclaration
+import typings.vscodeLanguageclient.anon.Placeholder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,7 +46,7 @@ trait _Middleware extends js.Object {
       /* position */ typings.vscode.mod.Position, 
       /* token */ typings.vscode.mod.CancellationToken, 
       /* next */ PrepareRenameSignature, 
-      ProviderResult[typings.vscode.mod.Range | AnonPlaceholder]
+      ProviderResult[typings.vscode.mod.Range | Placeholder]
     ]
   ] = js.undefined
   var provideCodeActions: js.UndefOr[
@@ -168,7 +168,7 @@ trait _Middleware extends js.Object {
       /* this */ Unit, 
       /* document */ typings.vscode.mod.TextDocument, 
       /* position */ typings.vscode.mod.Position, 
-      /* options */ AnonIncludeDeclaration, 
+      /* options */ IncludeDeclaration, 
       /* token */ typings.vscode.mod.CancellationToken, 
       /* next */ ProvideReferencesSignature, 
       ProviderResult[js.Array[typings.vscode.mod.Location]]
@@ -266,7 +266,7 @@ object _Middleware {
       /* position */ typings.vscode.mod.Position, 
       /* token */ typings.vscode.mod.CancellationToken, 
       /* next */ PrepareRenameSignature, 
-      ProviderResult[typings.vscode.mod.Range | AnonPlaceholder]
+      ProviderResult[typings.vscode.mod.Range | Placeholder]
     ] = null,
     provideCodeActions: js.ThisFunction5[
       /* this */ Unit, 
@@ -364,7 +364,7 @@ object _Middleware {
       /* this */ Unit, 
       /* document */ typings.vscode.mod.TextDocument, 
       /* position */ typings.vscode.mod.Position, 
-      /* options */ AnonIncludeDeclaration, 
+      /* options */ IncludeDeclaration, 
       /* token */ typings.vscode.mod.CancellationToken, 
       /* next */ ProvideReferencesSignature, 
       ProviderResult[js.Array[typings.vscode.mod.Location]]

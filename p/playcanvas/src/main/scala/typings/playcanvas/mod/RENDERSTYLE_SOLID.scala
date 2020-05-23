@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.RENDERSTYLE_SOLID
-  * @type {number}
-  * @description Render mesh instance as solid geometry.
+  * Render mesh instance as solid geometry.
   */
 @JSImport("playcanvas", "RENDERSTYLE_SOLID")
 @js.native

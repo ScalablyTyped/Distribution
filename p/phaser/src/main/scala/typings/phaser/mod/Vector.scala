@@ -17,7 +17,12 @@ import scala.scalajs.js.annotation._
 @JSImport("matter", "Vector")
 @js.native
 class Vector ()
-  extends typings.phaser.MatterJS.Vector
+  extends typings.phaser.MatterJS.Vector {
+  /* CompleteClass */
+  override var x: Double = js.native
+  /* CompleteClass */
+  override var y: Double = js.native
+}
 
 /* static members */
 @JSImport("matter", "Vector")

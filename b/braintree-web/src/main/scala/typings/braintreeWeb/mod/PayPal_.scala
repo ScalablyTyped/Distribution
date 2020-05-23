@@ -1,7 +1,7 @@
 package typings.braintreeWeb.mod
 
-import typings.braintreeWeb.AnonAmount
-import typings.braintreeWeb.AnonClient
+import typings.braintreeWeb.anon.Amount
+import typings.braintreeWeb.anon.Client
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,8 +33,8 @@ trait PayPal_ extends js.Object {
     * });
     * @returns {void}
     */
-  def create(options: AnonClient): js.Promise[PayPal_] = js.native
-  def create(options: AnonClient, callback: callback): Unit = js.native
+  def create(options: Client): js.Promise[PayPal_] = js.native
+  def create(options: Client, callback: callback): Unit = js.native
   /**
     * Cleanly tear down anything set up by {@link module:braintree-web/paypal.create|create}.
     * @public
@@ -138,7 +138,7 @@ trait PayPal_ extends js.Object {
     * });
     * @returns {PayPal~tokenizeReturn} A handle to close the PayPal checkout frame.
     */
-  def tokenize(options: AnonAmount): js.Promise[PayPalTokenizeReturn] = js.native
-  def tokenize(options: AnonAmount, callback: callback): PayPalTokenizeReturn = js.native
+  def tokenize(options: Amount): js.Promise[PayPalTokenizeReturn] = js.native
+  def tokenize(options: Amount, callback: callback): PayPalTokenizeReturn = js.native
 }
 

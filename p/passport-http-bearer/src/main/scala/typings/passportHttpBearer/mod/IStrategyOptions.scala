@@ -18,7 +18,7 @@ object IStrategyOptions {
     scope: String | js.Array[String] = null
   ): IStrategyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(passReqToCallback)) __obj.updateDynamic("passReqToCallback")(passReqToCallback.asInstanceOf[js.Any])
+    if (!js.isUndefined(passReqToCallback)) __obj.updateDynamic("passReqToCallback")(passReqToCallback.get.asInstanceOf[js.Any])
     if (realm != null) __obj.updateDynamic("realm")(realm.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStrategyOptions]

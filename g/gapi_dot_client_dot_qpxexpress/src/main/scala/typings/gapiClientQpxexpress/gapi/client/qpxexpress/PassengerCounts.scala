@@ -22,20 +22,20 @@ trait PassengerCounts extends js.Object {
 object PassengerCounts {
   @scala.inline
   def apply(
-    adultCount: Int | Double = null,
-    childCount: Int | Double = null,
-    infantInLapCount: Int | Double = null,
-    infantInSeatCount: Int | Double = null,
+    adultCount: js.UndefOr[Double] = js.undefined,
+    childCount: js.UndefOr[Double] = js.undefined,
+    infantInLapCount: js.UndefOr[Double] = js.undefined,
+    infantInSeatCount: js.UndefOr[Double] = js.undefined,
     kind: String = null,
-    seniorCount: Int | Double = null
+    seniorCount: js.UndefOr[Double] = js.undefined
   ): PassengerCounts = {
     val __obj = js.Dynamic.literal()
-    if (adultCount != null) __obj.updateDynamic("adultCount")(adultCount.asInstanceOf[js.Any])
-    if (childCount != null) __obj.updateDynamic("childCount")(childCount.asInstanceOf[js.Any])
-    if (infantInLapCount != null) __obj.updateDynamic("infantInLapCount")(infantInLapCount.asInstanceOf[js.Any])
-    if (infantInSeatCount != null) __obj.updateDynamic("infantInSeatCount")(infantInSeatCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(adultCount)) __obj.updateDynamic("adultCount")(adultCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(childCount)) __obj.updateDynamic("childCount")(childCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(infantInLapCount)) __obj.updateDynamic("infantInLapCount")(infantInLapCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(infantInSeatCount)) __obj.updateDynamic("infantInSeatCount")(infantInSeatCount.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (seniorCount != null) __obj.updateDynamic("seniorCount")(seniorCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(seniorCount)) __obj.updateDynamic("seniorCount")(seniorCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PassengerCounts]
   }
 }

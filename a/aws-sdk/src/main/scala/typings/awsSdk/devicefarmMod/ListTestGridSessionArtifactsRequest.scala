@@ -28,12 +28,12 @@ object ListTestGridSessionArtifactsRequest {
   @scala.inline
   def apply(
     sessionArn: DeviceFarmArn,
-    maxResult: Int | scala.Double = null,
+    maxResult: js.UndefOr[MaxPageSize] = js.undefined,
     nextToken: PaginationToken = null,
     `type`: TestGridSessionArtifactCategory = null
   ): ListTestGridSessionArtifactsRequest = {
     val __obj = js.Dynamic.literal(sessionArn = sessionArn.asInstanceOf[js.Any])
-    if (maxResult != null) __obj.updateDynamic("maxResult")(maxResult.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResult)) __obj.updateDynamic("maxResult")(maxResult.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTestGridSessionArtifactsRequest]

@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.window")
 @js.native
-class window () extends baseview {
+trait window extends baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
   @JSName("config")

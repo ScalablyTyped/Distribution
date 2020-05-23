@@ -1,7 +1,7 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.PartialFont
-import typings.plotlyJs.PartialRangeSelectorButto
+import typings.plotlyJs.anon.PartialFont
+import typings.plotlyJs.anon.PartialRangeSelectorButto
 import typings.plotlyJs.plotlyJsStrings.auto
 import typings.plotlyJs.plotlyJsStrings.bottom
 import typings.plotlyJs.plotlyJsStrings.center

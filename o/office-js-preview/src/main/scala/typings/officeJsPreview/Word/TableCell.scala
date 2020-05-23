@@ -1,12 +1,12 @@
 package typings.officeJsPreview.Word
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
 import typings.officeJsPreview.Word.Interfaces.TableCellData
 import typings.officeJsPreview.Word.Interfaces.TableCellLoadOptions
 import typings.officeJsPreview.Word.Interfaces.TableCellUpdateData
+import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.After
 import typings.officeJsPreview.officeJsPreviewStrings.All
 import typings.officeJsPreview.officeJsPreviewStrings.Before
@@ -36,9 +36,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: WordApi 1.3]
   */
-@JSGlobal("Word.TableCell")
 @js.native
-class TableCell () extends ClientObject {
+trait TableCell extends ClientObject {
   /**
     *
     * Gets the body object of the cell. Read-only.
@@ -309,8 +308,8 @@ class TableCell () extends ClientObject {
   def load(): TableCell = js.native
   def load(option: String): TableCell = js.native
   def load(option: js.Array[String]): TableCell = js.native
-  def load(option: AnonExpand): TableCell = js.native
   def load(option: TableCellLoadOptions): TableCell = js.native
+  def load(option: Expand): TableCell = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *
     * @remarks

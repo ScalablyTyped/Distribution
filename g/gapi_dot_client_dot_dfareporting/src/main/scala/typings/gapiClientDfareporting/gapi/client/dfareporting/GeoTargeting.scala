@@ -51,7 +51,7 @@ object GeoTargeting {
     val __obj = js.Dynamic.literal()
     if (cities != null) __obj.updateDynamic("cities")(cities.asInstanceOf[js.Any])
     if (countries != null) __obj.updateDynamic("countries")(countries.asInstanceOf[js.Any])
-    if (!js.isUndefined(excludeCountries)) __obj.updateDynamic("excludeCountries")(excludeCountries.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludeCountries)) __obj.updateDynamic("excludeCountries")(excludeCountries.get.asInstanceOf[js.Any])
     if (metros != null) __obj.updateDynamic("metros")(metros.asInstanceOf[js.Any])
     if (postalCodes != null) __obj.updateDynamic("postalCodes")(postalCodes.asInstanceOf[js.Any])
     if (regions != null) __obj.updateDynamic("regions")(regions.asInstanceOf[js.Any])

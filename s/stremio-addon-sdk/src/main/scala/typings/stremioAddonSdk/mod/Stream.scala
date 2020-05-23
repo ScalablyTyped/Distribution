@@ -1,6 +1,6 @@
 package typings.stremioAddonSdk.mod
 
-import typings.stremioAddonSdk.AnonCountryWhitelist
+import typings.stremioAddonSdk.anon.CountryWhitelist
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * It may be torrent info hash, HTTP URL, etc.
   */
 trait Stream extends js.Object {
-  var behaviorHints: js.UndefOr[AnonCountryWhitelist] = js.undefined
+  var behaviorHints: js.UndefOr[CountryWhitelist] = js.undefined
   /**
     * Meta Link or an external URL to the video, which should be opened in a browser (webpage).
     *
@@ -59,9 +59,9 @@ trait Stream extends js.Object {
 object Stream {
   @scala.inline
   def apply(
-    behaviorHints: AnonCountryWhitelist = null,
+    behaviorHints: CountryWhitelist = null,
     externalUrl: String = null,
-    fileIdx: Int | Double = null,
+    fileIdx: js.UndefOr[Double] = js.undefined,
     infoHash: String = null,
     name: String = null,
     subtitles: js.Array[Subtitle] = null,
@@ -72,7 +72,7 @@ object Stream {
     val __obj = js.Dynamic.literal()
     if (behaviorHints != null) __obj.updateDynamic("behaviorHints")(behaviorHints.asInstanceOf[js.Any])
     if (externalUrl != null) __obj.updateDynamic("externalUrl")(externalUrl.asInstanceOf[js.Any])
-    if (fileIdx != null) __obj.updateDynamic("fileIdx")(fileIdx.asInstanceOf[js.Any])
+    if (!js.isUndefined(fileIdx)) __obj.updateDynamic("fileIdx")(fileIdx.get.asInstanceOf[js.Any])
     if (infoHash != null) __obj.updateDynamic("infoHash")(infoHash.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (subtitles != null) __obj.updateDynamic("subtitles")(subtitles.asInstanceOf[js.Any])

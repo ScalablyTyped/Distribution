@@ -19,19 +19,9 @@ trait DataTypeToTypeMap extends js.Object {
 
 object DataTypeToTypeMap {
   @scala.inline
-  def apply(
-    `8`: String,
-    b: Double,
-    d: Date,
-    f: Double,
-    i: Double,
-    s: String,
-    u: Double,
-    m: js.UndefOr[scala.Nothing] = js.undefined
-  ): DataTypeToTypeMap = {
+  def apply(`8`: String, b: Double, d: Date, f: Double, i: Double, s: String, u: Double): DataTypeToTypeMap = {
     val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any])
     __obj.updateDynamic("8")(`8`.asInstanceOf[js.Any])
-    if (!js.isUndefined(m)) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTypeToTypeMap]
   }
 }

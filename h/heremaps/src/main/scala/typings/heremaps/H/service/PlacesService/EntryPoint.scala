@@ -1,6 +1,5 @@
 package typings.heremaps.H.service.PlacesService
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,26 +30,6 @@ object EntryPoint extends js.Object {
   
   @js.native
   sealed trait SUGGEST extends EntryPoint
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EntryPoint with Double] = js.native
-  /* 3 */ @js.native
-  object AROUND extends TopLevel[AROUND with Double]
-  
-  /* 5 */ @js.native
-  object CATEGORIES extends TopLevel[CATEGORIES with Double]
-  
-  /* 2 */ @js.native
-  object EXPLORE extends TopLevel[EXPLORE with Double]
-  
-  /* 4 */ @js.native
-  object HERE extends TopLevel[HERE with Double]
-  
-  /* 0 */ @js.native
-  object SEARCH extends TopLevel[SEARCH with Double]
-  
-  /* 1 */ @js.native
-  object SUGGEST extends TopLevel[SUGGEST with Double]
   
 }
 

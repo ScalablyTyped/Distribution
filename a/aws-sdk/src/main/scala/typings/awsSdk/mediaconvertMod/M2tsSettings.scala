@@ -156,79 +156,79 @@ object M2tsSettings {
   @scala.inline
   def apply(
     AudioBufferModel: M2tsAudioBufferModel = null,
-    AudioFramesPerPes: Int | Double = null,
+    AudioFramesPerPes: js.UndefOr[integerMin0Max2147483647] = js.undefined,
     AudioPids: listOfIntegerMin32Max8182 = null,
-    Bitrate: Int | Double = null,
+    Bitrate: js.UndefOr[integerMin0Max2147483647] = js.undefined,
     BufferModel: M2tsBufferModel = null,
     DvbNitSettings: DvbNitSettings = null,
     DvbSdtSettings: DvbSdtSettings = null,
     DvbSubPids: listOfIntegerMin32Max8182 = null,
     DvbTdtSettings: DvbTdtSettings = null,
-    DvbTeletextPid: Int | Double = null,
+    DvbTeletextPid: js.UndefOr[integerMin32Max8182] = js.undefined,
     EbpAudioInterval: M2tsEbpAudioInterval = null,
     EbpPlacement: M2tsEbpPlacement = null,
     EsRateInPes: M2tsEsRateInPes = null,
     ForceTsVideoEbpOrder: M2tsForceTsVideoEbpOrder = null,
-    FragmentTime: Int | Double = null,
-    MaxPcrInterval: Int | Double = null,
-    MinEbpInterval: Int | Double = null,
+    FragmentTime: js.UndefOr[doubleMin0] = js.undefined,
+    MaxPcrInterval: js.UndefOr[integerMin0Max500] = js.undefined,
+    MinEbpInterval: js.UndefOr[integerMin0Max10000] = js.undefined,
     NielsenId3: M2tsNielsenId3 = null,
-    NullPacketBitrate: Int | Double = null,
-    PatInterval: Int | Double = null,
+    NullPacketBitrate: js.UndefOr[doubleMin0] = js.undefined,
+    PatInterval: js.UndefOr[integerMin0Max1000] = js.undefined,
     PcrControl: M2tsPcrControl = null,
-    PcrPid: Int | Double = null,
-    PmtInterval: Int | Double = null,
-    PmtPid: Int | Double = null,
-    PrivateMetadataPid: Int | Double = null,
-    ProgramNumber: Int | Double = null,
+    PcrPid: js.UndefOr[integerMin32Max8182] = js.undefined,
+    PmtInterval: js.UndefOr[integerMin0Max1000] = js.undefined,
+    PmtPid: js.UndefOr[integerMin32Max8182] = js.undefined,
+    PrivateMetadataPid: js.UndefOr[integerMin32Max8182] = js.undefined,
+    ProgramNumber: js.UndefOr[integerMin0Max65535] = js.undefined,
     RateMode: M2tsRateMode = null,
     Scte35Esam: M2tsScte35Esam = null,
-    Scte35Pid: Int | Double = null,
+    Scte35Pid: js.UndefOr[integerMin32Max8182] = js.undefined,
     Scte35Source: M2tsScte35Source = null,
     SegmentationMarkers: M2tsSegmentationMarkers = null,
     SegmentationStyle: M2tsSegmentationStyle = null,
-    SegmentationTime: Int | Double = null,
-    TimedMetadataPid: Int | Double = null,
-    TransportStreamId: Int | Double = null,
-    VideoPid: Int | Double = null
+    SegmentationTime: js.UndefOr[doubleMin0] = js.undefined,
+    TimedMetadataPid: js.UndefOr[integerMin32Max8182] = js.undefined,
+    TransportStreamId: js.UndefOr[integerMin0Max65535] = js.undefined,
+    VideoPid: js.UndefOr[integerMin32Max8182] = js.undefined
   ): M2tsSettings = {
     val __obj = js.Dynamic.literal()
     if (AudioBufferModel != null) __obj.updateDynamic("AudioBufferModel")(AudioBufferModel.asInstanceOf[js.Any])
-    if (AudioFramesPerPes != null) __obj.updateDynamic("AudioFramesPerPes")(AudioFramesPerPes.asInstanceOf[js.Any])
+    if (!js.isUndefined(AudioFramesPerPes)) __obj.updateDynamic("AudioFramesPerPes")(AudioFramesPerPes.get.asInstanceOf[js.Any])
     if (AudioPids != null) __obj.updateDynamic("AudioPids")(AudioPids.asInstanceOf[js.Any])
-    if (Bitrate != null) __obj.updateDynamic("Bitrate")(Bitrate.asInstanceOf[js.Any])
+    if (!js.isUndefined(Bitrate)) __obj.updateDynamic("Bitrate")(Bitrate.get.asInstanceOf[js.Any])
     if (BufferModel != null) __obj.updateDynamic("BufferModel")(BufferModel.asInstanceOf[js.Any])
     if (DvbNitSettings != null) __obj.updateDynamic("DvbNitSettings")(DvbNitSettings.asInstanceOf[js.Any])
     if (DvbSdtSettings != null) __obj.updateDynamic("DvbSdtSettings")(DvbSdtSettings.asInstanceOf[js.Any])
     if (DvbSubPids != null) __obj.updateDynamic("DvbSubPids")(DvbSubPids.asInstanceOf[js.Any])
     if (DvbTdtSettings != null) __obj.updateDynamic("DvbTdtSettings")(DvbTdtSettings.asInstanceOf[js.Any])
-    if (DvbTeletextPid != null) __obj.updateDynamic("DvbTeletextPid")(DvbTeletextPid.asInstanceOf[js.Any])
+    if (!js.isUndefined(DvbTeletextPid)) __obj.updateDynamic("DvbTeletextPid")(DvbTeletextPid.get.asInstanceOf[js.Any])
     if (EbpAudioInterval != null) __obj.updateDynamic("EbpAudioInterval")(EbpAudioInterval.asInstanceOf[js.Any])
     if (EbpPlacement != null) __obj.updateDynamic("EbpPlacement")(EbpPlacement.asInstanceOf[js.Any])
     if (EsRateInPes != null) __obj.updateDynamic("EsRateInPes")(EsRateInPes.asInstanceOf[js.Any])
     if (ForceTsVideoEbpOrder != null) __obj.updateDynamic("ForceTsVideoEbpOrder")(ForceTsVideoEbpOrder.asInstanceOf[js.Any])
-    if (FragmentTime != null) __obj.updateDynamic("FragmentTime")(FragmentTime.asInstanceOf[js.Any])
-    if (MaxPcrInterval != null) __obj.updateDynamic("MaxPcrInterval")(MaxPcrInterval.asInstanceOf[js.Any])
-    if (MinEbpInterval != null) __obj.updateDynamic("MinEbpInterval")(MinEbpInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(FragmentTime)) __obj.updateDynamic("FragmentTime")(FragmentTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxPcrInterval)) __obj.updateDynamic("MaxPcrInterval")(MaxPcrInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinEbpInterval)) __obj.updateDynamic("MinEbpInterval")(MinEbpInterval.get.asInstanceOf[js.Any])
     if (NielsenId3 != null) __obj.updateDynamic("NielsenId3")(NielsenId3.asInstanceOf[js.Any])
-    if (NullPacketBitrate != null) __obj.updateDynamic("NullPacketBitrate")(NullPacketBitrate.asInstanceOf[js.Any])
-    if (PatInterval != null) __obj.updateDynamic("PatInterval")(PatInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(NullPacketBitrate)) __obj.updateDynamic("NullPacketBitrate")(NullPacketBitrate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(PatInterval)) __obj.updateDynamic("PatInterval")(PatInterval.get.asInstanceOf[js.Any])
     if (PcrControl != null) __obj.updateDynamic("PcrControl")(PcrControl.asInstanceOf[js.Any])
-    if (PcrPid != null) __obj.updateDynamic("PcrPid")(PcrPid.asInstanceOf[js.Any])
-    if (PmtInterval != null) __obj.updateDynamic("PmtInterval")(PmtInterval.asInstanceOf[js.Any])
-    if (PmtPid != null) __obj.updateDynamic("PmtPid")(PmtPid.asInstanceOf[js.Any])
-    if (PrivateMetadataPid != null) __obj.updateDynamic("PrivateMetadataPid")(PrivateMetadataPid.asInstanceOf[js.Any])
-    if (ProgramNumber != null) __obj.updateDynamic("ProgramNumber")(ProgramNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(PcrPid)) __obj.updateDynamic("PcrPid")(PcrPid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(PmtInterval)) __obj.updateDynamic("PmtInterval")(PmtInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(PmtPid)) __obj.updateDynamic("PmtPid")(PmtPid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(PrivateMetadataPid)) __obj.updateDynamic("PrivateMetadataPid")(PrivateMetadataPid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ProgramNumber)) __obj.updateDynamic("ProgramNumber")(ProgramNumber.get.asInstanceOf[js.Any])
     if (RateMode != null) __obj.updateDynamic("RateMode")(RateMode.asInstanceOf[js.Any])
     if (Scte35Esam != null) __obj.updateDynamic("Scte35Esam")(Scte35Esam.asInstanceOf[js.Any])
-    if (Scte35Pid != null) __obj.updateDynamic("Scte35Pid")(Scte35Pid.asInstanceOf[js.Any])
+    if (!js.isUndefined(Scte35Pid)) __obj.updateDynamic("Scte35Pid")(Scte35Pid.get.asInstanceOf[js.Any])
     if (Scte35Source != null) __obj.updateDynamic("Scte35Source")(Scte35Source.asInstanceOf[js.Any])
     if (SegmentationMarkers != null) __obj.updateDynamic("SegmentationMarkers")(SegmentationMarkers.asInstanceOf[js.Any])
     if (SegmentationStyle != null) __obj.updateDynamic("SegmentationStyle")(SegmentationStyle.asInstanceOf[js.Any])
-    if (SegmentationTime != null) __obj.updateDynamic("SegmentationTime")(SegmentationTime.asInstanceOf[js.Any])
-    if (TimedMetadataPid != null) __obj.updateDynamic("TimedMetadataPid")(TimedMetadataPid.asInstanceOf[js.Any])
-    if (TransportStreamId != null) __obj.updateDynamic("TransportStreamId")(TransportStreamId.asInstanceOf[js.Any])
-    if (VideoPid != null) __obj.updateDynamic("VideoPid")(VideoPid.asInstanceOf[js.Any])
+    if (!js.isUndefined(SegmentationTime)) __obj.updateDynamic("SegmentationTime")(SegmentationTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TimedMetadataPid)) __obj.updateDynamic("TimedMetadataPid")(TimedMetadataPid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TransportStreamId)) __obj.updateDynamic("TransportStreamId")(TransportStreamId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(VideoPid)) __obj.updateDynamic("VideoPid")(VideoPid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[M2tsSettings]
   }
 }

@@ -24,14 +24,14 @@ object HueProps {
     direction: horizontal | vertical = null,
     key: Key = null,
     pointer: ReactNode = null,
-    ref: LegacyRef[Hue] = null
+    ref: js.UndefOr[Null | LegacyRef[Hue]] = js.undefined
   ): HueProps = {
     val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange))
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (pointer != null) __obj.updateDynamic("pointer")(pointer.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[HueProps]
   }
 }

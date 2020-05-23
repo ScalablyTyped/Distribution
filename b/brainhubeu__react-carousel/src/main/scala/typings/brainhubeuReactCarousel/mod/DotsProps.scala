@@ -15,18 +15,18 @@ trait DotsProps extends js.Object {
 object DotsProps {
   @scala.inline
   def apply(
-    number: Int | Double = null,
+    number: js.UndefOr[Double] = js.undefined,
     onChange: /* value */ Double => Unit = null,
     rtl: js.UndefOr[Boolean] = js.undefined,
     thumbnails: js.Array[ImgProps] = null,
-    value: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined
   ): DotsProps = {
     val __obj = js.Dynamic.literal()
-    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number.get.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.get.asInstanceOf[js.Any])
     if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DotsProps]
   }
 }

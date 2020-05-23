@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonInnerRadii
+import typings.cesium.anon.InnerRadii
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "EllipsoidGeometry")
 @js.native
 class EllipsoidGeometry () extends Packable {
-  def this(options: AnonInnerRadii) = this()
+  def this(options: InnerRadii) = this()
 }
 
 /* static members */

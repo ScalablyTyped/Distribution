@@ -2,8 +2,9 @@ package typings.urqlCore.clientMod
 
 import typings.graphql.astMod.DocumentNode
 import typings.std.RequestInit
-import typings.urqlCore.FnCall
-import typings.urqlCore.PartialOperationContext
+import typings.urqlCore.anon.FnCall
+import typings.urqlCore.anon.PartialOperationContext
+import typings.urqlCore.typesMod.DebugEvent
 import typings.urqlCore.typesMod.GraphQLRequest
 import typings.urqlCore.typesMod.Operation
 import typings.urqlCore.typesMod.OperationResult
@@ -12,6 +13,7 @@ import typings.urqlCore.typesMod.PromisifiedSource
 import typings.urqlCore.typesMod.RequestPolicy
 import typings.wonka.wonkaTypesGenMod.sinkT
 import typings.wonka.wonkaTypesGenMod.sourceT
+import typings.wonka.wonkaTypesGenMod.subscriptionT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,6 +38,9 @@ class Client protected () extends js.Object {
   var requestPolicy: RequestPolicy = js.native
   @JSName("results$")
   var results$_Original: sourceT[OperationResult[_]] = js.native
+  var subscribeToDebugTarget: js.UndefOr[
+    js.Function1[/* onEvent */ js.Function1[/* e */ DebugEvent[String], Unit], subscriptionT]
+  ] = js.native
   var suspense: Boolean = js.native
   var url: String = js.native
   def createRequestOperation(`type`: OperationType, request: GraphQLRequest): Operation = js.native

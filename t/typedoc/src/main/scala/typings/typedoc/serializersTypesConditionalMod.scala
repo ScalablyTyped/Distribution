@@ -1,5 +1,6 @@
 package typings.typedoc
 
+import typings.typedoc.anon.PickConditionalTypetypeTy
 import typings.typedoc.modelsMod.ConditionalType
 import typings.typedoc.serializationComponentsMod.TypeSerializerComponent
 import scala.scalajs.js

@@ -2,21 +2,14 @@ package typings.amapJsApiAutocomplete.AMap
 
 import typings.amapJsApi.AMap.EventEmitter
 import typings.amapJsApi.AMap.Lang
-import typings.amapJsApiAutocomplete.AMap.Autocomplete.Options
 import typings.amapJsApiAutocomplete.AMap.Autocomplete.SearchResult
 import typings.amapJsApiAutocomplete.AMap.Autocomplete.SearchStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.Autocomplete")
 @js.native
-/**
-  * 输入提示，根据输入关键字提示匹配信息
-  * @param options 选项
-  */
-class Autocomplete_ () extends EventEmitter {
-  def this(options: Options) = this()
+trait Autocomplete_ extends EventEmitter {
   /**
     * 返回查询语言
     */

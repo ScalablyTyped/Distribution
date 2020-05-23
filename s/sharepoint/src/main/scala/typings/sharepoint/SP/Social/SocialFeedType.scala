@@ -1,6 +1,5 @@
 package typings.sharepoint.SP.Social
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,23 +25,6 @@ object SocialFeedType extends js.Object {
   
   @js.native
   sealed trait timeline extends SocialFeedType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SocialFeedType with Double] = js.native
-  /* 4 */ @js.native
-  object everyone extends TopLevel[everyone with Double]
-  
-  /* 3 */ @js.native
-  object likes extends TopLevel[likes with Double]
-  
-  /* 1 */ @js.native
-  object news extends TopLevel[news with Double]
-  
-  /* 0 */ @js.native
-  object personal extends TopLevel[personal with Double]
-  
-  /* 2 */ @js.native
-  object timeline extends TopLevel[timeline with Double]
   
 }
 

@@ -34,7 +34,7 @@ object Options {
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferConst)) __obj.updateDynamic("preferConst")(preferConst.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferConst)) __obj.updateDynamic("preferConst")(preferConst.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

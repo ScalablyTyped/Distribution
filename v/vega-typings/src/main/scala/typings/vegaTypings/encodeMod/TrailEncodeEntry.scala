@@ -14,9 +14,13 @@ trait TrailEncodeEntry
 object TrailEncodeEntry {
   @scala.inline
   def apply(
+    aria: ProductionRule[BooleanValueRef] = null,
+    ariaRole: ProductionRule[StringValueRef] = null,
+    ariaRoleDescription: ProductionRule[StringValueRef] = null,
     blend: ProductionRule[ScaledValueRef[Blend]] = null,
     cursor: ProductionRule[ScaledValueRef[Cursor]] = null,
     defined: ProductionRule[BooleanValueRef] = null,
+    description: ProductionRule[StringValueRef] = null,
     fill: ProductionRule[ColorValueRef] = null,
     fillOpacity: ProductionRule[NumericValueRef] = null,
     height: ProductionRule[NumericValueRef] = null,
@@ -40,9 +44,13 @@ object TrailEncodeEntry {
     zindex: ProductionRule[NumericValueRef] = null
   ): TrailEncodeEntry = {
     val __obj = js.Dynamic.literal()
+    if (aria != null) __obj.updateDynamic("aria")(aria.asInstanceOf[js.Any])
+    if (ariaRole != null) __obj.updateDynamic("ariaRole")(ariaRole.asInstanceOf[js.Any])
+    if (ariaRoleDescription != null) __obj.updateDynamic("ariaRoleDescription")(ariaRoleDescription.asInstanceOf[js.Any])
     if (blend != null) __obj.updateDynamic("blend")(blend.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (defined != null) __obj.updateDynamic("defined")(defined.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])

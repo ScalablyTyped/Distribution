@@ -20,7 +20,7 @@ object ProcedureInvocationData {
     parameters: js.Array[_] = null
   ): ProcedureInvocationData = {
     val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any], procedure = procedure.asInstanceOf[js.Any])
-    if (!js.isUndefined(compressResponse)) __obj.updateDynamic("compressResponse")(compressResponse.asInstanceOf[js.Any])
+    if (!js.isUndefined(compressResponse)) __obj.updateDynamic("compressResponse")(compressResponse.get.asInstanceOf[js.Any])
     if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcedureInvocationData]
   }

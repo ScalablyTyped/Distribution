@@ -11,9 +11,9 @@ trait CustomDimension extends js.Object {
 
 object CustomDimension {
   @scala.inline
-  def apply(index: Int | Double = null, value: String = null): CustomDimension = {
+  def apply(index: js.UndefOr[Double] = js.undefined, value: String = null): CustomDimension = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomDimension]
   }

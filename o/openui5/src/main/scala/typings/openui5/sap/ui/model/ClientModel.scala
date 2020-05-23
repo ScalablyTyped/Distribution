@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.model.ClientModel")
 @js.native
-abstract class ClientModel protected () extends Model {
-  /**
-    * Constructor for a new ClientModel.
-    * @param oData URL where to load the data from
-    */
-  def this(oData: js.Any) = this()
+trait ClientModel extends Model {
   /**
     * Force no caching.
     * @param bForceNoCache whether to force not to cache
@@ -24,7 +18,7 @@ abstract class ClientModel protected () extends Model {
   def getData(): Unit = js.native
   /**
     * update all bindings
-    * @param bForceUpdate true/false: Default = false. If set to false an update					will only be done
+    * @param bForceUpdate true/false: Default = false. If set to false an update                    will only be done
     * when the value of a binding changed.
     */
   def updateBindings(bForceUpdate: Boolean): Unit = js.native

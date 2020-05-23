@@ -23,14 +23,14 @@ trait EntityTypesEvaluationMetrics extends js.Object {
 object EntityTypesEvaluationMetrics {
   @scala.inline
   def apply(
-    F1Score: Int | scala.Double = null,
-    Precision: Int | scala.Double = null,
-    Recall: Int | scala.Double = null
+    F1Score: js.UndefOr[Double] = js.undefined,
+    Precision: js.UndefOr[Double] = js.undefined,
+    Recall: js.UndefOr[Double] = js.undefined
   ): EntityTypesEvaluationMetrics = {
     val __obj = js.Dynamic.literal()
-    if (F1Score != null) __obj.updateDynamic("F1Score")(F1Score.asInstanceOf[js.Any])
-    if (Precision != null) __obj.updateDynamic("Precision")(Precision.asInstanceOf[js.Any])
-    if (Recall != null) __obj.updateDynamic("Recall")(Recall.asInstanceOf[js.Any])
+    if (!js.isUndefined(F1Score)) __obj.updateDynamic("F1Score")(F1Score.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Precision)) __obj.updateDynamic("Precision")(Precision.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Recall)) __obj.updateDynamic("Recall")(Recall.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityTypesEvaluationMetrics]
   }
 }

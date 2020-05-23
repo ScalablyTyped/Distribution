@@ -12,9 +12,8 @@ import scala.scalajs.js.annotation._
   * @memberof PIXI
   * @extends PIXI.Geometry
   */
-@JSGlobal("PIXI.QuadUv")
 @js.native
-class QuadUv () extends Geometry {
+trait QuadUv extends Geometry {
   /**
     * The Uvs of the quad
     *

@@ -12,7 +12,7 @@ trait PanelFiltersProps
 
 object PanelFiltersProps {
   @scala.inline
-  def apply(StringDictionary: /* x */ StringDictionary[js.Any] = null, className: String = null): PanelFiltersProps = {
+  def apply(StringDictionary: /* name */ StringDictionary[js.Any] = null, className: String = null): PanelFiltersProps = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])

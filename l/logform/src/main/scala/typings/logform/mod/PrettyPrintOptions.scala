@@ -18,10 +18,10 @@ trait PrettyPrintOptions extends js.Object {
 
 object PrettyPrintOptions {
   @scala.inline
-  def apply(colorize: js.UndefOr[Boolean] = js.undefined, depth: Int | Double = null): PrettyPrintOptions = {
+  def apply(colorize: js.UndefOr[Boolean] = js.undefined, depth: js.UndefOr[Double] = js.undefined): PrettyPrintOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(colorize)) __obj.updateDynamic("colorize")(colorize.asInstanceOf[js.Any])
-    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorize)) __obj.updateDynamic("colorize")(colorize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrettyPrintOptions]
   }
 }

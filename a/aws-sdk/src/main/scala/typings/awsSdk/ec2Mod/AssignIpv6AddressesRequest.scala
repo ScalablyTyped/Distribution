@@ -24,11 +24,11 @@ object AssignIpv6AddressesRequest {
   @scala.inline
   def apply(
     NetworkInterfaceId: NetworkInterfaceId,
-    Ipv6AddressCount: Int | scala.Double = null,
+    Ipv6AddressCount: js.UndefOr[Integer] = js.undefined,
     Ipv6Addresses: Ipv6AddressList = null
   ): AssignIpv6AddressesRequest = {
     val __obj = js.Dynamic.literal(NetworkInterfaceId = NetworkInterfaceId.asInstanceOf[js.Any])
-    if (Ipv6AddressCount != null) __obj.updateDynamic("Ipv6AddressCount")(Ipv6AddressCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(Ipv6AddressCount)) __obj.updateDynamic("Ipv6AddressCount")(Ipv6AddressCount.get.asInstanceOf[js.Any])
     if (Ipv6Addresses != null) __obj.updateDynamic("Ipv6Addresses")(Ipv6Addresses.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssignIpv6AddressesRequest]
   }

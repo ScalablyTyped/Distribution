@@ -8,9 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a network connection, which includes either the currently connected network or prior network connections. Provides information about the connection status and connectivity statistics. */
-@JSGlobal("Windows.Networking.Connectivity.ConnectionProfile")
 @js.native
-abstract class ConnectionProfile () extends js.Object {
+trait ConnectionProfile extends js.Object {
   /** Gets a value that indicates if connection profile is a WLAN (WiFi) connection. This determines whether or not WlanConnectionProfileDetails is null. */
   var isWlanConnectionProfile: Boolean = js.native
   /** Gets a value that indicates if connection profile is a WWAN (mobile) connection. This determines whether or not WwanConnectionProfileDetails is null. */

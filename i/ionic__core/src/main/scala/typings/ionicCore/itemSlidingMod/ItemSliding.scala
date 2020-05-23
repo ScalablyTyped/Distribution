@@ -1,6 +1,6 @@
 package typings.ionicCore.itemSlidingMod
 
-import typings.ionicCore.componentsMod._Global_.HTMLIonItemSlidingElement
+import typings.ionicCore.componentsMod.global.HTMLIonItemSlidingElement
 import typings.ionicCore.mod.Side
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
@@ -72,12 +72,12 @@ class ItemSliding () extends ComponentInterface {
     * the width of the options.
     */
   def getSlidingRatio(): js.Promise[Double] = js.native
-  def open(): js.Promise[Unit] = js.native
   /**
     * Open the sliding item.
     *
     * @param side The side of the options to open. If a side is not provided, it will open the first set of options it finds within the item.
     */
+  def open(): js.Promise[Unit] = js.native
   def open(side: Side): js.Promise[Unit] = js.native
   @JSName("render")
   def render_MItemSliding(): js.Any = js.native

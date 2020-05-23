@@ -14,5 +14,11 @@ class Recorded protected ()
     value: js.Any,
     equalityComparer: js.Function2[/* x */ js.Any, /* y */ js.Any, Boolean]
   ) = this()
+  /* CompleteClass */
+  override var time: Double = js.native
+  /* CompleteClass */
+  override var value: js.Any = js.native
+  /* CompleteClass */
+  override def equals(other: typings.rxLiteTesting.Rx.Recorded): Boolean = js.native
 }
 

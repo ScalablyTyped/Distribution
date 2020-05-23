@@ -1,7 +1,7 @@
 package typings.apolloEnv
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.apolloEnv.arrayMod._Global_.Array
+import typings.apolloEnv.arrayMod.global.Array
 import typings.node.NodeJS.Dict
 import typings.node.urlMod.URL_
 import typings.std.Iterable

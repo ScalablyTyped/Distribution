@@ -11,13 +11,8 @@ import scala.scalajs.js.annotation._
   * @class
   * @memberof PIXI
   */
-@JSGlobal("PIXI.Rectangle")
 @js.native
-class Rectangle () extends js.Object {
-  def this(x: Double) = this()
-  def this(x: Double, y: Double) = this()
-  def this(x: Double, y: Double, width: Double) = this()
-  def this(x: Double, y: Double, width: Double, height: Double) = this()
+trait Rectangle extends js.Object {
   /**
     * returns the bottom edge of the rectangle
     *
@@ -128,20 +123,5 @@ class Rectangle () extends js.Object {
   def pad(): Rectangle = js.native
   def pad(paddingX: Double): Rectangle = js.native
   def pad(paddingX: Double, paddingY: Double): Rectangle = js.native
-}
-
-/* static members */
-@JSGlobal("PIXI.Rectangle")
-@js.native
-object Rectangle extends js.Object {
-  /**
-    * A constant empty rectangle.
-    *
-    * @static
-    * @constant
-    * @member {PIXI.Rectangle}
-    * @return {PIXI.Rectangle} An empty rectangle
-    */
-  var EMPTY: Rectangle = js.native
 }
 

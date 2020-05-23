@@ -25,9 +25,13 @@ trait MemoryInfo extends js.Object {
 
 object MemoryInfo {
   @scala.inline
-  def apply(peakWorkingSetSize: Double, workingSetSize: Double, privateBytes: Int | Double = null): MemoryInfo = {
+  def apply(
+    peakWorkingSetSize: Double,
+    workingSetSize: Double,
+    privateBytes: js.UndefOr[Double] = js.undefined
+  ): MemoryInfo = {
     val __obj = js.Dynamic.literal(peakWorkingSetSize = peakWorkingSetSize.asInstanceOf[js.Any], workingSetSize = workingSetSize.asInstanceOf[js.Any])
-    if (privateBytes != null) __obj.updateDynamic("privateBytes")(privateBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(privateBytes)) __obj.updateDynamic("privateBytes")(privateBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemoryInfo]
   }
 }

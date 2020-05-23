@@ -31,30 +31,30 @@ object IndicesClearCacheParams {
     ignore: Double | js.Array[Double] = null,
     ignoreUnavailable: js.UndefOr[Boolean] = js.undefined,
     index: NameList = null,
-    maxRetries: Int | Double = null,
+    maxRetries: js.UndefOr[Double] = js.undefined,
     method: String = null,
     query: js.UndefOr[Boolean] = js.undefined,
     recycler: js.UndefOr[Boolean] = js.undefined,
     request: js.UndefOr[Boolean] = js.undefined,
-    requestTimeout: Int | Double = null
+    requestTimeout: js.UndefOr[Double] = js.undefined
   ): IndicesClearCacheParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowNoIndices)) __obj.updateDynamic("allowNoIndices")(allowNoIndices.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowNoIndices)) __obj.updateDynamic("allowNoIndices")(allowNoIndices.get.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (expandWildcards != null) __obj.updateDynamic("expandWildcards")(expandWildcards.asInstanceOf[js.Any])
-    if (!js.isUndefined(fieldData)) __obj.updateDynamic("fieldData")(fieldData.asInstanceOf[js.Any])
-    if (!js.isUndefined(fielddata)) __obj.updateDynamic("fielddata")(fielddata.asInstanceOf[js.Any])
+    if (!js.isUndefined(fieldData)) __obj.updateDynamic("fieldData")(fieldData.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fielddata)) __obj.updateDynamic("fielddata")(fielddata.get.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUnavailable)) __obj.updateDynamic("ignoreUnavailable")(ignoreUnavailable.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUnavailable)) __obj.updateDynamic("ignoreUnavailable")(ignoreUnavailable.get.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(query)) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (!js.isUndefined(recycler)) __obj.updateDynamic("recycler")(recycler.asInstanceOf[js.Any])
-    if (!js.isUndefined(request)) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
-    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(query)) __obj.updateDynamic("query")(query.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(recycler)) __obj.updateDynamic("recycler")(recycler.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(request)) __obj.updateDynamic("request")(request.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestTimeout)) __obj.updateDynamic("requestTimeout")(requestTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndicesClearCacheParams]
   }
 }

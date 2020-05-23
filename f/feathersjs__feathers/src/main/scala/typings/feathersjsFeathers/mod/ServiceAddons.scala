@@ -1,6 +1,6 @@
 package typings.feathersjsFeathers.mod
 
-import typings.feathersjsFeathers.PartialHooksObject
+import typings.feathersjsFeathers.anon.PartialHooksObject
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`

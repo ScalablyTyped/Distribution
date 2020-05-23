@@ -4,25 +4,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.EffectWrapper")
-@js.native
-class EffectWrapper protected () extends js.Object {
-  /**
-    * Creates an effect to be renderer
-    * @param creationOptions options to create the effect
-    */
-  def this(creationOptions: EffectWrapperCreationOptions) = this()
+trait EffectWrapper extends js.Object {
   /**
     * The underlying effect
     */
-  var effect: Effect = js.native
+  var effect: Effect
   /**
     * Event that is fired right before the effect is drawn (should be used to update uniforms)
     */
-  var onApplyObservable: Observable[js.Object] = js.native
+  var onApplyObservable: Observable[js.Object]
   /**
     * Disposes of the effect wrapper
     */
-  def dispose(): Unit = js.native
+  def dispose(): Unit
+}
+
+object EffectWrapper {
+  @scala.inline
+  def apply(dispose: () => Unit, effect: Effect, onApplyObservable: Observable[js.Object]): EffectWrapper = {
+    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), effect = effect.asInstanceOf[js.Any], onApplyObservable = onApplyObservable.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EffectWrapper]
+  }
 }
 

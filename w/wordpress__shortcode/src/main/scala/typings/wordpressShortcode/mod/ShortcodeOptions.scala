@@ -1,6 +1,6 @@
 package typings.wordpressShortcode.mod
 
-import typings.wordpressShortcode.PartialShortcodeAttrs
+import typings.wordpressShortcode.anon.PartialShortcodeAttrs
 import typings.wordpressShortcode.wordpressShortcodeStrings.`self-closing`
 import typings.wordpressShortcode.wordpressShortcodeStrings.closed
 import typings.wordpressShortcode.wordpressShortcodeStrings.single

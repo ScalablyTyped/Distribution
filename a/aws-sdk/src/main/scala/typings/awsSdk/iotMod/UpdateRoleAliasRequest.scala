@@ -22,9 +22,13 @@ trait UpdateRoleAliasRequest extends js.Object {
 
 object UpdateRoleAliasRequest {
   @scala.inline
-  def apply(roleAlias: RoleAlias, credentialDurationSeconds: Int | Double = null, roleArn: RoleArn = null): UpdateRoleAliasRequest = {
+  def apply(
+    roleAlias: RoleAlias,
+    credentialDurationSeconds: js.UndefOr[CredentialDurationSeconds] = js.undefined,
+    roleArn: RoleArn = null
+  ): UpdateRoleAliasRequest = {
     val __obj = js.Dynamic.literal(roleAlias = roleAlias.asInstanceOf[js.Any])
-    if (credentialDurationSeconds != null) __obj.updateDynamic("credentialDurationSeconds")(credentialDurationSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(credentialDurationSeconds)) __obj.updateDynamic("credentialDurationSeconds")(credentialDurationSeconds.get.asInstanceOf[js.Any])
     if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRoleAliasRequest]
   }

@@ -14,7 +14,6 @@ object ActiveTargetSpec {
   @scala.inline
   def apply(queries: js.Array[SpecQuery], resumeToken: String): ActiveTargetSpec = {
     val __obj = js.Dynamic.literal(queries = queries.asInstanceOf[js.Any], resumeToken = resumeToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ActiveTargetSpec]
   }
 }

@@ -32,16 +32,16 @@ object FlipsnapOptions {
   def apply(
     disable3d: js.UndefOr[Boolean] = js.undefined,
     disableTouch: js.UndefOr[Boolean] = js.undefined,
-    distance: Int | Double = null,
-    maxPoint: Int | Double = null,
-    transitionDuration: Int | Double = null
+    distance: js.UndefOr[Double] = js.undefined,
+    maxPoint: js.UndefOr[Double] = js.undefined,
+    transitionDuration: js.UndefOr[Double] = js.undefined
   ): FlipsnapOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disable3d)) __obj.updateDynamic("disable3d")(disable3d.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableTouch)) __obj.updateDynamic("disableTouch")(disableTouch.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (maxPoint != null) __obj.updateDynamic("maxPoint")(maxPoint.asInstanceOf[js.Any])
-    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable3d)) __obj.updateDynamic("disable3d")(disable3d.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableTouch)) __obj.updateDynamic("disableTouch")(disableTouch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPoint)) __obj.updateDynamic("maxPoint")(maxPoint.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitionDuration)) __obj.updateDynamic("transitionDuration")(transitionDuration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlipsnapOptions]
   }
 }

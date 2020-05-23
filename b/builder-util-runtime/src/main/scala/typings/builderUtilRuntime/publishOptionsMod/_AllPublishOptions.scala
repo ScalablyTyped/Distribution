@@ -31,72 +31,72 @@ object _AllPublishOptions {
     name: String,
     provider: spaces,
     region: String,
-    acl: `private` | `public-read` = null,
-    channel: String = null,
-    path: String = null,
+    acl: js.UndefOr[Null | `private` | `public-read`] = js.undefined,
+    channel: js.UndefOr[Null | String] = js.undefined,
+    path: js.UndefOr[Null | String] = js.undefined,
     publishAutoUpdate: js.UndefOr[Boolean] = js.undefined,
-    publisherName: js.Array[String] = null,
+    publisherName: js.UndefOr[Null | js.Array[String]] = js.undefined,
     requestHeaders: OutgoingHttpHeaders = null,
-    updaterCacheDirName: String = null
+    updaterCacheDirName: js.UndefOr[Null | String] = js.undefined
   ): _AllPublishOptions = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
-    if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
-    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.asInstanceOf[js.Any])
-    if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
+    if (!js.isUndefined(acl)) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
+    if (!js.isUndefined(channel)) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
+    if (!js.isUndefined(path)) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(publisherName)) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
     if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
-    if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
+    if (!js.isUndefined(updaterCacheDirName)) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
     __obj.asInstanceOf[_AllPublishOptions]
   }
   @scala.inline
   def GenericServerOptions(
     provider: generic,
     url: String,
-    channel: String = null,
+    channel: js.UndefOr[Null | String] = js.undefined,
     publishAutoUpdate: js.UndefOr[Boolean] = js.undefined,
-    publisherName: js.Array[String] = null,
+    publisherName: js.UndefOr[Null | js.Array[String]] = js.undefined,
     requestHeaders: OutgoingHttpHeaders = null,
-    updaterCacheDirName: String = null,
+    updaterCacheDirName: js.UndefOr[Null | String] = js.undefined,
     useMultipleRangeRequest: js.UndefOr[Boolean] = js.undefined
   ): _AllPublishOptions = {
     val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
-    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.asInstanceOf[js.Any])
-    if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
+    if (!js.isUndefined(channel)) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
+    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(publisherName)) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
     if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
-    if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMultipleRangeRequest)) __obj.updateDynamic("useMultipleRangeRequest")(useMultipleRangeRequest.asInstanceOf[js.Any])
+    if (!js.isUndefined(updaterCacheDirName)) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
+    if (!js.isUndefined(useMultipleRangeRequest)) __obj.updateDynamic("useMultipleRangeRequest")(useMultipleRangeRequest.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[_AllPublishOptions]
   }
   @scala.inline
   def S3Options(
     bucket: String,
     provider: s3,
-    acl: `private` | `public-read` = null,
-    channel: String = null,
-    encryption: AES256 | awsColonkms = null,
-    endpoint: String = null,
-    path: String = null,
+    acl: js.UndefOr[Null | `private` | `public-read`] = js.undefined,
+    channel: js.UndefOr[Null | String] = js.undefined,
+    encryption: js.UndefOr[Null | AES256 | awsColonkms] = js.undefined,
+    endpoint: js.UndefOr[Null | String] = js.undefined,
+    path: js.UndefOr[Null | String] = js.undefined,
     publishAutoUpdate: js.UndefOr[Boolean] = js.undefined,
-    publisherName: js.Array[String] = null,
-    region: String = null,
+    publisherName: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    region: js.UndefOr[Null | String] = js.undefined,
     requestHeaders: OutgoingHttpHeaders = null,
-    storageClass: STANDARD | REDUCED_REDUNDANCY | STANDARD_IA = null,
-    updaterCacheDirName: String = null
+    storageClass: js.UndefOr[Null | STANDARD | REDUCED_REDUNDANCY | STANDARD_IA] = js.undefined,
+    updaterCacheDirName: js.UndefOr[Null | String] = js.undefined
   ): _AllPublishOptions = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
-    if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
-    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
-    if (encryption != null) __obj.updateDynamic("encryption")(encryption.asInstanceOf[js.Any])
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.asInstanceOf[js.Any])
-    if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (!js.isUndefined(acl)) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
+    if (!js.isUndefined(channel)) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
+    if (!js.isUndefined(encryption)) __obj.updateDynamic("encryption")(encryption.asInstanceOf[js.Any])
+    if (!js.isUndefined(endpoint)) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    if (!js.isUndefined(path)) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(publisherName)) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
+    if (!js.isUndefined(region)) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
-    if (storageClass != null) __obj.updateDynamic("storageClass")(storageClass.asInstanceOf[js.Any])
-    if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
+    if (!js.isUndefined(storageClass)) __obj.updateDynamic("storageClass")(storageClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(updaterCacheDirName)) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
     __obj.asInstanceOf[_AllPublishOptions]
   }
   @scala.inline
@@ -104,76 +104,76 @@ object _AllPublishOptions {
     provider: PublishProvider,
     StringDictionary: /* index */ StringDictionary[js.Any] = null,
     publishAutoUpdate: js.UndefOr[Boolean] = js.undefined,
-    publisherName: js.Array[String] = null,
+    publisherName: js.UndefOr[Null | js.Array[String]] = js.undefined,
     requestHeaders: OutgoingHttpHeaders = null,
-    updaterCacheDirName: String = null
+    updaterCacheDirName: js.UndefOr[Null | String] = js.undefined
   ): _AllPublishOptions = {
     val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.asInstanceOf[js.Any])
-    if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
+    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(publisherName)) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
     if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
-    if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
+    if (!js.isUndefined(updaterCacheDirName)) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
     __obj.asInstanceOf[_AllPublishOptions]
   }
   @scala.inline
   def GithubOptions(
     provider: github,
-    host: String = null,
-    owner: String = null,
-    `private`: js.UndefOr[Boolean] = js.undefined,
-    protocol: https | http = null,
+    host: js.UndefOr[Null | String] = js.undefined,
+    owner: js.UndefOr[Null | String] = js.undefined,
+    `private`: js.UndefOr[Null | Boolean] = js.undefined,
+    protocol: js.UndefOr[Null | https | http] = js.undefined,
     publishAutoUpdate: js.UndefOr[Boolean] = js.undefined,
-    publisherName: js.Array[String] = null,
-    releaseType: draft | prerelease | release = null,
-    repo: String = null,
+    publisherName: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    releaseType: js.UndefOr[Null | draft | prerelease | release] = js.undefined,
+    repo: js.UndefOr[Null | String] = js.undefined,
     requestHeaders: OutgoingHttpHeaders = null,
-    token: String = null,
-    updaterCacheDirName: String = null,
+    token: js.UndefOr[Null | String] = js.undefined,
+    updaterCacheDirName: js.UndefOr[Null | String] = js.undefined,
     vPrefixedTagName: js.UndefOr[Boolean] = js.undefined
   ): _AllPublishOptions = {
     val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (!js.isUndefined(host)) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (!js.isUndefined(owner)) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.asInstanceOf[js.Any])
-    if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
-    if (releaseType != null) __obj.updateDynamic("releaseType")(releaseType.asInstanceOf[js.Any])
-    if (repo != null) __obj.updateDynamic("repo")(repo.asInstanceOf[js.Any])
+    if (!js.isUndefined(protocol)) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(publisherName)) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
+    if (!js.isUndefined(releaseType)) __obj.updateDynamic("releaseType")(releaseType.asInstanceOf[js.Any])
+    if (!js.isUndefined(repo)) __obj.updateDynamic("repo")(repo.asInstanceOf[js.Any])
     if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
-    if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
-    if (!js.isUndefined(vPrefixedTagName)) __obj.updateDynamic("vPrefixedTagName")(vPrefixedTagName.asInstanceOf[js.Any])
+    if (!js.isUndefined(token)) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (!js.isUndefined(updaterCacheDirName)) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
+    if (!js.isUndefined(vPrefixedTagName)) __obj.updateDynamic("vPrefixedTagName")(vPrefixedTagName.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[_AllPublishOptions]
   }
   @scala.inline
   def BintrayOptions(
     provider: bintray,
-    _package: String = null,
-    component: String = null,
-    distribution: String = null,
-    owner: String = null,
+    _package: js.UndefOr[Null | String] = js.undefined,
+    component: js.UndefOr[Null | String] = js.undefined,
+    distribution: js.UndefOr[Null | String] = js.undefined,
+    owner: js.UndefOr[Null | String] = js.undefined,
     publishAutoUpdate: js.UndefOr[Boolean] = js.undefined,
-    publisherName: js.Array[String] = null,
-    repo: String = null,
+    publisherName: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    repo: js.UndefOr[Null | String] = js.undefined,
     requestHeaders: OutgoingHttpHeaders = null,
-    token: String = null,
-    updaterCacheDirName: String = null,
-    user: String = null
+    token: js.UndefOr[Null | String] = js.undefined,
+    updaterCacheDirName: js.UndefOr[Null | String] = js.undefined,
+    user: js.UndefOr[Null | String] = js.undefined
   ): _AllPublishOptions = {
     val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
-    if (_package != null) __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (distribution != null) __obj.updateDynamic("distribution")(distribution.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.asInstanceOf[js.Any])
-    if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
-    if (repo != null) __obj.updateDynamic("repo")(repo.asInstanceOf[js.Any])
+    if (!js.isUndefined(_package)) __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
+    if (!js.isUndefined(component)) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (!js.isUndefined(distribution)) __obj.updateDynamic("distribution")(distribution.asInstanceOf[js.Any])
+    if (!js.isUndefined(owner)) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(publisherName)) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
+    if (!js.isUndefined(repo)) __obj.updateDynamic("repo")(repo.asInstanceOf[js.Any])
     if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
-    if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
+    if (!js.isUndefined(token)) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (!js.isUndefined(updaterCacheDirName)) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
+    if (!js.isUndefined(user)) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[_AllPublishOptions]
   }
 }

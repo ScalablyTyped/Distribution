@@ -1,5 +1,6 @@
 package typings.carbonLayout
 
+import typings.carbonLayout.anon.Columns
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +28,11 @@ object mod extends js.Object {
   
   @js.native
   object breakpoints extends js.Object {
-    var lg: AnonColumns = js.native
-    var max: AnonColumns = js.native
-    var md: AnonColumns = js.native
-    var sm: AnonColumns = js.native
-    var xlg: AnonColumns = js.native
+    var lg: Columns = js.native
+    var max: Columns = js.native
+    var md: Columns = js.native
+    var sm: Columns = js.native
+    var xlg: Columns = js.native
   }
   
   @js.native

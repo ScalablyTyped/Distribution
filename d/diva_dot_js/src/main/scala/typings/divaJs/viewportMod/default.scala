@@ -1,6 +1,6 @@
 package typings.divaJs.viewportMod
 
-import typings.divaJs.AnonIntersectionTolerance
+import typings.divaJs.anon.IntersectionTolerance
 import typings.divaJs.interfacesMod.Dimensions
 import typings.divaJs.interfacesMod.Region
 import typings.std.HTMLElement
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default protected () extends Viewport {
   def this(outer: HTMLElement) = this()
-  def this(outer: HTMLElement, options: AnonIntersectionTolerance) = this()
+  def this(outer: HTMLElement, options: IntersectionTolerance) = this()
   /* CompleteClass */
   override var bottom: Double = js.native
   /* CompleteClass */

@@ -43,13 +43,13 @@ object CreateImageRequest {
     imageRecipeArn: ImageRecipeArn,
     infrastructureConfigurationArn: InfrastructureConfigurationArn,
     distributionConfigurationArn: DistributionConfigurationArn = null,
-    enhancedImageMetadataEnabled: js.UndefOr[Boolean] = js.undefined,
+    enhancedImageMetadataEnabled: js.UndefOr[NullableBoolean] = js.undefined,
     imageTestsConfiguration: ImageTestsConfiguration = null,
     tags: TagMap = null
   ): CreateImageRequest = {
     val __obj = js.Dynamic.literal(clientToken = clientToken.asInstanceOf[js.Any], imageRecipeArn = imageRecipeArn.asInstanceOf[js.Any], infrastructureConfigurationArn = infrastructureConfigurationArn.asInstanceOf[js.Any])
     if (distributionConfigurationArn != null) __obj.updateDynamic("distributionConfigurationArn")(distributionConfigurationArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(enhancedImageMetadataEnabled)) __obj.updateDynamic("enhancedImageMetadataEnabled")(enhancedImageMetadataEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enhancedImageMetadataEnabled)) __obj.updateDynamic("enhancedImageMetadataEnabled")(enhancedImageMetadataEnabled.get.asInstanceOf[js.Any])
     if (imageTestsConfiguration != null) __obj.updateDynamic("imageTestsConfiguration")(imageTestsConfiguration.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateImageRequest]

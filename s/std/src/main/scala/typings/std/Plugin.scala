@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.NumberDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,8 +32,4 @@ trait Plugin extends /* index */ NumberDictionary[MimeType] {
   def item(index: Double): MimeType | Null = js.native
   def namedItem(name: java.lang.String): MimeType | Null = js.native
 }
-
-@JSGlobal("Plugin")
-@js.native
-object Plugin extends Instantiable0[Plugin]
 

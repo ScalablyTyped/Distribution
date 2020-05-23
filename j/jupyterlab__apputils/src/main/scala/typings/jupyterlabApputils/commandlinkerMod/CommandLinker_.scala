@@ -4,7 +4,7 @@ import typings.jupyterlabApputils.commandlinkerMod.CommandLinker.IOptions
 import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
 import typings.luminoDisposable.mod.IDisposable
 import typings.luminoVirtualdom.mod.ElementDataset
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -91,7 +91,7 @@ class CommandLinker_ protected () extends IDisposable {
     * called in response to events on the panel's DOM node. It should
     * not be called directly by user code.
     */
-  def handleEvent(event: Event_): Unit = js.native
+  def handleEvent(event: Event): Unit = js.native
   /**
     * Test whether the linker is disposed.
     */

@@ -10,11 +10,15 @@ trait ChartArtistsParams extends Pageable {
 
 object ChartArtistsParams {
   @scala.inline
-  def apply(country: String = null, page: Int | Double = null, page_size: Int | Double = null): ChartArtistsParams = {
+  def apply(
+    country: String = null,
+    page: js.UndefOr[Double] = js.undefined,
+    page_size: js.UndefOr[Double] = js.undefined
+  ): ChartArtistsParams = {
     val __obj = js.Dynamic.literal()
     if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (page_size != null) __obj.updateDynamic("page_size")(page_size.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(page_size)) __obj.updateDynamic("page_size")(page_size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartArtistsParams]
   }
 }

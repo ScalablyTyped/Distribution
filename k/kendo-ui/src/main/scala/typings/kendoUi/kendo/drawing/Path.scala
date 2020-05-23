@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.drawing.Path")
 @js.native
-class Path () extends Element {
-  def this(options: PathOptions) = this()
+trait Path extends Element {
   @JSName("options")
   var options_Path: PathOptions = js.native
   var segments: js.Any = js.native
@@ -38,19 +36,5 @@ class Path () extends Element {
   def stroke(color: String): Path = js.native
   def stroke(color: String, width: Double): Path = js.native
   def stroke(color: String, width: Double, opacity: Double): Path = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.drawing.Path")
-@js.native
-object Path extends js.Object {
-  def fromArc(arc: typings.kendoUi.kendo.geometry.Arc): Path = js.native
-  def fromArc(arc: typings.kendoUi.kendo.geometry.Arc, options: js.Any): Path = js.native
-  def fromPoints(points: js.Any): Path = js.native
-  def fromPoints(points: js.Any, options: js.Any): Path = js.native
-  def fromRect(rect: typings.kendoUi.kendo.geometry.Rect): Path = js.native
-  def fromRect(rect: typings.kendoUi.kendo.geometry.Rect, options: js.Any): Path = js.native
-  def parse(svgPath: String): MultiPath = js.native
-  def parse(svgPath: String, options: js.Any): MultiPath = js.native
 }
 

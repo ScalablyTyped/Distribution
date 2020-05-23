@@ -1,10 +1,10 @@
 package typings.vsoNodeApi.coreInterfacesMod
 
-import typings.vsoNodeApi.AnonEnumValuesAnonAdded
-import typings.vsoNodeApi.AnonEnumValuesAnonAzureSubscription
-import typings.vsoNodeApi.AnonEnumValuesAnonGit
-import typings.vsoNodeApi.AnonEnumValuesAnonInherited
-import typings.vsoNodeApi.AnonEnumValuesAnonOrganization
+import typings.vsoNodeApi.anon.EnumValuesAdded
+import typings.vsoNodeApi.anon.EnumValuesAzureSubscription
+import typings.vsoNodeApi.anon.EnumValuesGit
+import typings.vsoNodeApi.anon.EnumValuesInherited
+import typings.vsoNodeApi.anon.EnumValuesOrganization
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,14 +12,14 @@ import scala.scalajs.js.annotation._
 @JSImport("vso-node-api/interfaces/CoreInterfaces", "TypeInfo")
 @js.native
 object TypeInfo extends js.Object {
-  var ConnectedServiceKind: AnonEnumValuesAnonAzureSubscription = js.native
+  var ConnectedServiceKind: EnumValuesAzureSubscription = js.native
   var Process: js.Any = js.native
-  var ProcessType: AnonEnumValuesAnonInherited = js.native
-  var ProjectChangeType: AnonEnumValuesAnonAdded = js.native
+  var ProcessType: EnumValuesInherited = js.native
+  var ProjectChangeType: EnumValuesAdded = js.native
   var ProjectInfo: js.Any = js.native
   var ProjectMessage: js.Any = js.native
-  var ProjectVisibility: AnonEnumValuesAnonOrganization = js.native
-  var SourceControlTypes: AnonEnumValuesAnonGit = js.native
+  var ProjectVisibility: EnumValuesOrganization = js.native
+  var SourceControlTypes: EnumValuesGit = js.native
   var TeamProject: js.Any = js.native
   var TeamProjectReference: js.Any = js.native
   var TemporaryDataCreatedDTO: js.Any = js.native

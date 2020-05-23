@@ -4,17 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.Footnote")
-@js.native
-class Footnote protected () extends js.Object {
-  val Application: typings.activexWord.Word.Application = js.native
-  val Creator: Double = js.native
-  val Index: Double = js.native
-  val Parent: js.Any = js.native
-  val Range: typings.activexWord.Word.Range = js.native
-  val Reference: typings.activexWord.Word.Range = js.native
+trait Footnote extends js.Object {
+  val Application: typings.activexWord.Word.Application
+  val Creator: Double
+  val Index: Double
+  val Parent: js.Any
+  val Range: typings.activexWord.Word.Range
+  val Reference: typings.activexWord.Word.Range
   @JSName("Word.Footnote_typekey")
-  var WordDotFootnote_typekey: Footnote = js.native
-  def Delete(): Unit = js.native
+  var WordDotFootnote_typekey: Footnote
+  def Delete(): Unit
+}
+
+object Footnote {
+  @scala.inline
+  def apply(
+    Application: Application,
+    Creator: Double,
+    Delete: () => Unit,
+    Index: Double,
+    Parent: js.Any,
+    Range: Range,
+    Reference: Range,
+    WordDotFootnote_typekey: Footnote
+  ): Footnote = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Index = Index.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Range = Range.asInstanceOf[js.Any], Reference = Reference.asInstanceOf[js.Any])
+    __obj.updateDynamic("Word.Footnote_typekey")(WordDotFootnote_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Footnote]
+  }
 }
 

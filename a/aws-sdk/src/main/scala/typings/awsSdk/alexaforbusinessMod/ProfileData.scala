@@ -49,7 +49,7 @@ object ProfileData {
   def apply(
     Address: Address = null,
     DistanceUnit: DistanceUnit = null,
-    IsDefault: js.UndefOr[scala.Boolean] = js.undefined,
+    IsDefault: js.UndefOr[Boolean] = js.undefined,
     Locale: DeviceLocale = null,
     ProfileArn: Arn = null,
     ProfileName: ProfileName = null,
@@ -60,7 +60,7 @@ object ProfileData {
     val __obj = js.Dynamic.literal()
     if (Address != null) __obj.updateDynamic("Address")(Address.asInstanceOf[js.Any])
     if (DistanceUnit != null) __obj.updateDynamic("DistanceUnit")(DistanceUnit.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsDefault)) __obj.updateDynamic("IsDefault")(IsDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsDefault)) __obj.updateDynamic("IsDefault")(IsDefault.get.asInstanceOf[js.Any])
     if (Locale != null) __obj.updateDynamic("Locale")(Locale.asInstanceOf[js.Any])
     if (ProfileArn != null) __obj.updateDynamic("ProfileArn")(ProfileArn.asInstanceOf[js.Any])
     if (ProfileName != null) __obj.updateDynamic("ProfileName")(ProfileName.asInstanceOf[js.Any])

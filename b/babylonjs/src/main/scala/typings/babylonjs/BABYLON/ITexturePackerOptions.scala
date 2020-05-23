@@ -62,32 +62,32 @@ trait ITexturePackerOptions extends js.Object {
 object ITexturePackerOptions {
   @scala.inline
   def apply(
-    colnum: Int | Double = null,
+    colnum: js.UndefOr[Double] = js.undefined,
     customFillColor: String = null,
     disposeSources: js.UndefOr[Boolean] = js.undefined,
     fillBlanks: js.UndefOr[Boolean] = js.undefined,
-    frameSize: Int | Double = null,
-    layout: Int | Double = null,
+    frameSize: js.UndefOr[Double] = js.undefined,
+    layout: js.UndefOr[Double] = js.undefined,
     map: js.Array[String] = null,
     paddingColor: Color3 | Color4 = null,
-    paddingMode: Int | Double = null,
-    paddingRatio: Int | Double = null,
+    paddingMode: js.UndefOr[Double] = js.undefined,
+    paddingRatio: js.UndefOr[Double] = js.undefined,
     updateInputMeshes: js.UndefOr[Boolean] = js.undefined,
     uvsIn: String = null,
     uvsOut: String = null
   ): ITexturePackerOptions = {
     val __obj = js.Dynamic.literal()
-    if (colnum != null) __obj.updateDynamic("colnum")(colnum.asInstanceOf[js.Any])
+    if (!js.isUndefined(colnum)) __obj.updateDynamic("colnum")(colnum.get.asInstanceOf[js.Any])
     if (customFillColor != null) __obj.updateDynamic("customFillColor")(customFillColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(disposeSources)) __obj.updateDynamic("disposeSources")(disposeSources.asInstanceOf[js.Any])
-    if (!js.isUndefined(fillBlanks)) __obj.updateDynamic("fillBlanks")(fillBlanks.asInstanceOf[js.Any])
-    if (frameSize != null) __obj.updateDynamic("frameSize")(frameSize.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
+    if (!js.isUndefined(disposeSources)) __obj.updateDynamic("disposeSources")(disposeSources.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fillBlanks)) __obj.updateDynamic("fillBlanks")(fillBlanks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(frameSize)) __obj.updateDynamic("frameSize")(frameSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(layout)) __obj.updateDynamic("layout")(layout.get.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     if (paddingColor != null) __obj.updateDynamic("paddingColor")(paddingColor.asInstanceOf[js.Any])
-    if (paddingMode != null) __obj.updateDynamic("paddingMode")(paddingMode.asInstanceOf[js.Any])
-    if (paddingRatio != null) __obj.updateDynamic("paddingRatio")(paddingRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateInputMeshes)) __obj.updateDynamic("updateInputMeshes")(updateInputMeshes.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingMode)) __obj.updateDynamic("paddingMode")(paddingMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingRatio)) __obj.updateDynamic("paddingRatio")(paddingRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateInputMeshes)) __obj.updateDynamic("updateInputMeshes")(updateInputMeshes.get.asInstanceOf[js.Any])
     if (uvsIn != null) __obj.updateDynamic("uvsIn")(uvsIn.asInstanceOf[js.Any])
     if (uvsOut != null) __obj.updateDynamic("uvsOut")(uvsOut.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITexturePackerOptions]

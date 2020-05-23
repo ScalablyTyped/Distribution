@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation._
 
 /**
   * Represents the time zone of the recurrence.
-  * 
+  *
   * [Api set: Mailbox 1.7]
-  * 
+  *
   * @remarks
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 trait RecurrenceTimeZone extends js.Object {
@@ -30,10 +30,10 @@ object RecurrenceTimeZone {
   @scala.inline
   def apply(
     name: typings.officeJsPreview.Office.MailboxEnums.RecurrenceTimeZone | String,
-    offset: Int | Double = null
+    offset: js.UndefOr[Double] = js.undefined
   ): RecurrenceTimeZone = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecurrenceTimeZone]
   }
 }

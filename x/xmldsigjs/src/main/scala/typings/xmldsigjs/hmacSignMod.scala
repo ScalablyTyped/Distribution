@@ -1,10 +1,6 @@
 package typings.xmldsigjs
 
 import typings.xmldsigjs.algorithmMod.SignatureAlgorithm
-import typings.xmldsigjs.xmldsigjsStrings.`httpColonSlashSlashwwwDotw3DotorgSlash2000Slash09SlashxmldsigNumbersignhmac-sha1`
-import typings.xmldsigjs.xmldsigjsStrings.`httpColonSlashSlashwwwDotw3DotorgSlash2001Slash04Slashxmldsig-moreNumbersignhmac-sha256`
-import typings.xmldsigjs.xmldsigjsStrings.`httpColonSlashSlashwwwDotw3DotorgSlash2001Slash04Slashxmldsig-moreNumbersignhmac-sha384`
-import typings.xmldsigjs.xmldsigjsStrings.`httpColonSlashSlashwwwDotw3DotorgSlash2001Slash04Slashxmldsig-moreNumbersignhmac-sha512`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,10 +20,10 @@ object hmacSignMod extends js.Object {
   @js.native
   class HmacSha512 () extends SignatureAlgorithm
   
-  val HMAC: typings.xmldsigjs.xmldsigjsStrings.HMAC = js.native
-  val HMAC_SHA1_NAMESPACE: `httpColonSlashSlashwwwDotw3DotorgSlash2000Slash09SlashxmldsigNumbersignhmac-sha1` = js.native
-  val HMAC_SHA256_NAMESPACE: `httpColonSlashSlashwwwDotw3DotorgSlash2001Slash04Slashxmldsig-moreNumbersignhmac-sha256` = js.native
-  val HMAC_SHA384_NAMESPACE: `httpColonSlashSlashwwwDotw3DotorgSlash2001Slash04Slashxmldsig-moreNumbersignhmac-sha384` = js.native
-  val HMAC_SHA512_NAMESPACE: `httpColonSlashSlashwwwDotw3DotorgSlash2001Slash04Slashxmldsig-moreNumbersignhmac-sha512` = js.native
+  val HMAC: /* "HMAC" */ String = js.native
+  val HMAC_SHA1_NAMESPACE: /* "http://www.w3.org/2000/09/xmldsig#hmac-sha1" */ String = js.native
+  val HMAC_SHA256_NAMESPACE: /* "http://www.w3.org/2001/04/xmldsig-more#hmac-sha256" */ String = js.native
+  val HMAC_SHA384_NAMESPACE: /* "http://www.w3.org/2001/04/xmldsig-more#hmac-sha384" */ String = js.native
+  val HMAC_SHA512_NAMESPACE: /* "http://www.w3.org/2001/04/xmldsig-more#hmac-sha512" */ String = js.native
 }
 

@@ -56,27 +56,27 @@ object PrimaryYAxisStripLine {
   def apply(
     borderColor: String = null,
     color: String = null,
-    end: Int | Double = null,
+    end: js.UndefOr[Double] = js.undefined,
     font: PrimaryYAxisStripLineFont = null,
-    start: Int | Double = null,
+    start: js.UndefOr[Double] = js.undefined,
     startFromAxis: js.UndefOr[Boolean] = js.undefined,
     text: String = null,
     textAlignment: TextAlignment | String = null,
     visible: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null,
+    width: js.UndefOr[Double] = js.undefined,
     zIndex: ZIndex | String = null
   ): PrimaryYAxisStripLine = {
     val __obj = js.Dynamic.literal()
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (!js.isUndefined(startFromAxis)) __obj.updateDynamic("startFromAxis")(startFromAxis.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startFromAxis)) __obj.updateDynamic("startFromAxis")(startFromAxis.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (textAlignment != null) __obj.updateDynamic("textAlignment")(textAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrimaryYAxisStripLine]
   }

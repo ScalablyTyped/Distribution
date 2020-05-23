@@ -1,6 +1,6 @@
 package typings.reactNativeNavigation.optionsMod
 
-import typings.reactNativeNavigation.AnonAlignment
+import typings.reactNativeNavigation.anon.Alignment
 import typings.reactNativeNavigation.reactNativeNavigationStrings.center
 import typings.reactNativeNavigation.reactNativeNavigationStrings.fill
 import scala.scalajs.js
@@ -20,7 +20,7 @@ trait OptionsTopBarTitle extends js.Object {
   /**
     * Custom component as the title view
     */
-  var component: js.UndefOr[AnonAlignment] = js.undefined
+  var component: js.UndefOr[Alignment] = js.undefined
   /**
     * Title font family
     *
@@ -52,11 +52,11 @@ object OptionsTopBarTitle {
   def apply(
     alignment: center | fill = null,
     color: Color = null,
-    component: AnonAlignment = null,
+    component: Alignment = null,
     fontFamily: FontFamily = null,
-    fontSize: Int | Double = null,
+    fontSize: js.UndefOr[Double] = js.undefined,
     fontWeight: FontWeight = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     text: String = null
   ): OptionsTopBarTitle = {
     val __obj = js.Dynamic.literal()
@@ -64,9 +64,9 @@ object OptionsTopBarTitle {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsTopBarTitle]
   }

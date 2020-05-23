@@ -34,16 +34,16 @@ object IListViewItem {
   @scala.inline
   def apply(
     hasFocus: js.UndefOr[Boolean] = js.undefined,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     key: String = null,
     showFocus: js.UndefOr[Boolean] = js.undefined,
     `type`: ObjectType = null
   ): IListViewItem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasFocus)) __obj.updateDynamic("hasFocus")(hasFocus.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasFocus)) __obj.updateDynamic("hasFocus")(hasFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFocus)) __obj.updateDynamic("showFocus")(showFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFocus)) __obj.updateDynamic("showFocus")(showFocus.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListViewItem]
   }

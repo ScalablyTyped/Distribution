@@ -11,6 +11,6 @@ package object datepickerMod {
     /* currentState */ typings.baseui.datepickerMod.ContainerState, 
     typings.baseui.datepickerMod.ContainerState
   ]
-  type StatefulDatepickerProps[T] = T with typings.baseui.datepickerMod.StatefulContainerProps[T] with typings.baseui.AnonChildren[T]
-  type onChange = js.Function1[/* args */ typings.baseui.AnonDate, js.Any]
+  type StatefulDatepickerProps[T] = T with typings.baseui.datepickerMod.StatefulContainerProps[T] with typings.baseui.anon.Children[T]
+  type onChange = js.Function1[/* args */ typings.baseui.anon.Date, js.Any]
 }

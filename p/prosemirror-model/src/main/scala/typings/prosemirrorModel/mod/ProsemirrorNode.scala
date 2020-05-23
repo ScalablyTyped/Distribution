@@ -1,7 +1,7 @@
 package typings.prosemirrorModel.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.prosemirrorModel.AnonIndex
+import typings.prosemirrorModel.anon.Index
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -145,13 +145,13 @@ trait ProsemirrorNode[S /* <: Schema[_, _] */] extends js.Object {
     * and return it along with its index and offset relative to this
     * node.
     */
-  def childAfter(pos: Double): AnonIndex[S] = js.native
+  def childAfter(pos: Double): Index[S] = js.native
   /**
     * Find the (direct) child node before the given offset, if any,
     * and return it along with its index and offset relative to this
     * node.
     */
-  def childBefore(pos: Double): AnonIndex[S] = js.native
+  def childBefore(pos: Double): Index[S] = js.native
   /**
     * Get the content match in this node at the given index.
     */

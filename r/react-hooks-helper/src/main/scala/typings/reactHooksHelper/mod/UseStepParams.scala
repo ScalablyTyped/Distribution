@@ -14,12 +14,12 @@ object UseStepParams {
   @scala.inline
   def apply(
     steps: js.Array[String] | Double,
-    autoAdvanceDuration: Int | Double = null,
-    initialStep: Int | Double = null
+    autoAdvanceDuration: js.UndefOr[Double] = js.undefined,
+    initialStep: js.UndefOr[Double] = js.undefined
   ): UseStepParams = {
     val __obj = js.Dynamic.literal(steps = steps.asInstanceOf[js.Any])
-    if (autoAdvanceDuration != null) __obj.updateDynamic("autoAdvanceDuration")(autoAdvanceDuration.asInstanceOf[js.Any])
-    if (initialStep != null) __obj.updateDynamic("initialStep")(initialStep.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoAdvanceDuration)) __obj.updateDynamic("autoAdvanceDuration")(autoAdvanceDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialStep)) __obj.updateDynamic("initialStep")(initialStep.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseStepParams]
   }
 }

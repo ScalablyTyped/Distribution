@@ -13,7 +13,7 @@ trait WalkOptionsVisit[NodeType /* <: CssNode */] extends js.Object {
 
 object WalkOptionsVisit {
   @scala.inline
-  def apply[NodeType /* <: CssNode */](
+  def apply[NodeType](
     visit: /* import warning: importer.ImportType#apply Failed type conversion: NodeType['type'] */ js.Any,
     enter: EnterOrLeaveFn[NodeType] = null,
     leave: EnterOrLeaveFn[NodeType] = null,
@@ -22,7 +22,7 @@ object WalkOptionsVisit {
     val __obj = js.Dynamic.literal(visit = visit.asInstanceOf[js.Any])
     if (enter != null) __obj.updateDynamic("enter")(enter.asInstanceOf[js.Any])
     if (leave != null) __obj.updateDynamic("leave")(leave.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WalkOptionsVisit[NodeType]]
   }
 }

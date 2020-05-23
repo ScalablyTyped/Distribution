@@ -15,15 +15,15 @@ object QueueOptions {
   @scala.inline
   def apply(
     deadQueue: Queue = null,
-    delay: Int | Double = null,
-    maxRetries: Int | Double = null,
-    visibility: Int | Double = null
+    delay: js.UndefOr[Double] = js.undefined,
+    maxRetries: js.UndefOr[Double] = js.undefined,
+    visibility: js.UndefOr[Double] = js.undefined
   ): QueueOptions = {
     val __obj = js.Dynamic.literal()
     if (deadQueue != null) __obj.updateDynamic("deadQueue")(deadQueue.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visibility)) __obj.updateDynamic("visibility")(visibility.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueueOptions]
   }
 }

@@ -15,11 +15,15 @@ trait IGossipBatchByTransactionIdRequest extends js.Object {
 
 object IGossipBatchByTransactionIdRequest {
   @scala.inline
-  def apply(ids: js.Array[String] = null, nonce: String = null, timeToLive: Int | Double = null): IGossipBatchByTransactionIdRequest = {
+  def apply(
+    ids: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    nonce: js.UndefOr[Null | String] = js.undefined,
+    timeToLive: js.UndefOr[Null | Double] = js.undefined
+  ): IGossipBatchByTransactionIdRequest = {
     val __obj = js.Dynamic.literal()
-    if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
-    if (timeToLive != null) __obj.updateDynamic("timeToLive")(timeToLive.asInstanceOf[js.Any])
+    if (!js.isUndefined(ids)) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
+    if (!js.isUndefined(nonce)) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeToLive)) __obj.updateDynamic("timeToLive")(timeToLive.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGossipBatchByTransactionIdRequest]
   }
 }

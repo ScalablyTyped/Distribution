@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/indexeddb_schema", "DbNoDocument")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbNoDocument")
 @js.native
 class DbNoDocument protected () extends js.Object {
   def this(path: js.Array[String], readTime: DbTimestamp) = this()

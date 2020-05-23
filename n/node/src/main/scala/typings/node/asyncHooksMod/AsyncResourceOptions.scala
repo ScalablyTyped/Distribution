@@ -22,10 +22,13 @@ trait AsyncResourceOptions extends js.Object {
 
 object AsyncResourceOptions {
   @scala.inline
-  def apply(requireManualDestroy: js.UndefOr[Boolean] = js.undefined, triggerAsyncId: Int | Double = null): AsyncResourceOptions = {
+  def apply(
+    requireManualDestroy: js.UndefOr[Boolean] = js.undefined,
+    triggerAsyncId: js.UndefOr[Double] = js.undefined
+  ): AsyncResourceOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(requireManualDestroy)) __obj.updateDynamic("requireManualDestroy")(requireManualDestroy.asInstanceOf[js.Any])
-    if (triggerAsyncId != null) __obj.updateDynamic("triggerAsyncId")(triggerAsyncId.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireManualDestroy)) __obj.updateDynamic("requireManualDestroy")(requireManualDestroy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(triggerAsyncId)) __obj.updateDynamic("triggerAsyncId")(triggerAsyncId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncResourceOptions]
   }
 }

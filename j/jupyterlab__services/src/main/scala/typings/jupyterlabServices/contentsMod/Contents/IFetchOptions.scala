@@ -28,7 +28,7 @@ object IFetchOptions {
   @scala.inline
   def apply(content: js.UndefOr[Boolean] = js.undefined, format: FileFormat = null, `type`: ContentType = null): IFetchOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(content)) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(content)) __obj.updateDynamic("content")(content.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFetchOptions]

@@ -4,12 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("createjs.Text")
 @js.native
-class Text () extends DisplayObject {
-  def this(text: String) = this()
-  def this(text: String, font: String) = this()
-  def this(text: String, font: String, color: String) = this()
+trait Text extends DisplayObject {
   // properties
   var color: String = js.native
   var font: String = js.native

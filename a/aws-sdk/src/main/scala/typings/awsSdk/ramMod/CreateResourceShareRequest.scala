@@ -40,7 +40,7 @@ object CreateResourceShareRequest {
   @scala.inline
   def apply(
     name: String,
-    allowExternalPrincipals: js.UndefOr[scala.Boolean] = js.undefined,
+    allowExternalPrincipals: js.UndefOr[Boolean] = js.undefined,
     clientToken: String = null,
     permissionArns: PermissionArnList = null,
     principals: PrincipalArnOrIdList = null,
@@ -48,7 +48,7 @@ object CreateResourceShareRequest {
     tags: TagList = null
   ): CreateResourceShareRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowExternalPrincipals)) __obj.updateDynamic("allowExternalPrincipals")(allowExternalPrincipals.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowExternalPrincipals)) __obj.updateDynamic("allowExternalPrincipals")(allowExternalPrincipals.get.asInstanceOf[js.Any])
     if (clientToken != null) __obj.updateDynamic("clientToken")(clientToken.asInstanceOf[js.Any])
     if (permissionArns != null) __obj.updateDynamic("permissionArns")(permissionArns.asInstanceOf[js.Any])
     if (principals != null) __obj.updateDynamic("principals")(principals.asInstanceOf[js.Any])

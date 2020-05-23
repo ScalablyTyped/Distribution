@@ -1,7 +1,7 @@
 package typings.json8Patch.mod
 
-import typings.json8Patch.Anon0
-import typings.json8Patch.AnonReversible
+import typings.json8Patch.anon.Reversible
+import typings.json8Patch.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object apply extends js.Object {
   def apply(doc: js.Any, patch: JsonPatch): ApplyResult = js.native
-  def apply(doc: js.Any, patch: JsonPatch, options: Anon0): ApplyResultWithRevert = js.native
-  def apply(doc: js.Any, patch: JsonPatch, options: AnonReversible): ApplyResult = js.native
+  def apply(doc: js.Any, patch: JsonPatch, options: Reversible): ApplyResult = js.native
+  def apply(doc: js.Any, patch: JsonPatch, options: `0`): ApplyResultWithRevert = js.native
 }
 

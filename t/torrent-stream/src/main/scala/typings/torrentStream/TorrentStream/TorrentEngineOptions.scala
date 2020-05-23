@@ -27,26 +27,26 @@ trait TorrentEngineOptions extends js.Object {
 object TorrentEngineOptions {
   @scala.inline
   def apply(
-    connections: Int | Double = null,
+    connections: js.UndefOr[Double] = js.undefined,
     dht: js.UndefOr[Boolean] = js.undefined,
     path: String = null,
     storage: js.Any = null,
     tmp: String = null,
     tracker: js.UndefOr[Boolean] = js.undefined,
     trackers: js.Array[String] = null,
-    uploads: Int | Double = null,
+    uploads: js.UndefOr[Double] = js.undefined,
     verify: js.UndefOr[Boolean] = js.undefined
   ): TorrentEngineOptions = {
     val __obj = js.Dynamic.literal()
-    if (connections != null) __obj.updateDynamic("connections")(connections.asInstanceOf[js.Any])
-    if (!js.isUndefined(dht)) __obj.updateDynamic("dht")(dht.asInstanceOf[js.Any])
+    if (!js.isUndefined(connections)) __obj.updateDynamic("connections")(connections.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dht)) __obj.updateDynamic("dht")(dht.get.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (storage != null) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
     if (tmp != null) __obj.updateDynamic("tmp")(tmp.asInstanceOf[js.Any])
-    if (!js.isUndefined(tracker)) __obj.updateDynamic("tracker")(tracker.asInstanceOf[js.Any])
+    if (!js.isUndefined(tracker)) __obj.updateDynamic("tracker")(tracker.get.asInstanceOf[js.Any])
     if (trackers != null) __obj.updateDynamic("trackers")(trackers.asInstanceOf[js.Any])
-    if (uploads != null) __obj.updateDynamic("uploads")(uploads.asInstanceOf[js.Any])
-    if (!js.isUndefined(verify)) __obj.updateDynamic("verify")(verify.asInstanceOf[js.Any])
+    if (!js.isUndefined(uploads)) __obj.updateDynamic("uploads")(uploads.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verify)) __obj.updateDynamic("verify")(verify.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TorrentEngineOptions]
   }
 }

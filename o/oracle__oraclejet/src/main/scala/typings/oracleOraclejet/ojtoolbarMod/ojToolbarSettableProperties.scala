@@ -15,8 +15,7 @@ trait ojToolbarSettableProperties extends baseComponentSettableProperties {
 object ojToolbarSettableProperties {
   @scala.inline
   def apply(chroming: full | half | outlined, translations: js.Object = null): ojToolbarSettableProperties = {
-    val __obj = js.Dynamic.literal(chroming = chroming.asInstanceOf[js.Any])
-    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(chroming = chroming.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojToolbarSettableProperties]
   }
 }

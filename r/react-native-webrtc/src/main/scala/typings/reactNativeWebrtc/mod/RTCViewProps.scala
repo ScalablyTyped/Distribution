@@ -22,13 +22,13 @@ object RTCViewProps {
     mirror: js.UndefOr[Boolean] = js.undefined,
     objectFit: contain | cover = null,
     style: ViewStyle = null,
-    zOrder: Int | Double = null
+    zOrder: js.UndefOr[Double] = js.undefined
   ): RTCViewProps = {
     val __obj = js.Dynamic.literal(streamURL = streamURL.asInstanceOf[js.Any])
-    if (!js.isUndefined(mirror)) __obj.updateDynamic("mirror")(mirror.asInstanceOf[js.Any])
+    if (!js.isUndefined(mirror)) __obj.updateDynamic("mirror")(mirror.get.asInstanceOf[js.Any])
     if (objectFit != null) __obj.updateDynamic("objectFit")(objectFit.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (zOrder != null) __obj.updateDynamic("zOrder")(zOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(zOrder)) __obj.updateDynamic("zOrder")(zOrder.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCViewProps]
   }
 }

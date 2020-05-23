@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation._
 
 trait IInner extends IBase {
   /** [Method] Returns the value of container
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getContainer: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of sizeState
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getSizeState: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Sets the value of container
-  		* @param container Object The new value.
-  		*/
+    * @param container Object The new value.
+    */
   var setContainer: js.UndefOr[js.Function1[/* container */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of sizeState
-  		* @param sizeState Object The new value.
-  		*/
+    * @param sizeState Object The new value.
+    */
   var setSizeState: js.UndefOr[js.Function1[/* sizeState */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -70,7 +70,7 @@ object IInner {
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setContainer != null) __obj.updateDynamic("setContainer")(js.Any.fromFunction1(setContainer))
     if (setSizeState != null) __obj.updateDynamic("setSizeState")(js.Any.fromFunction1(setSizeState))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInner]

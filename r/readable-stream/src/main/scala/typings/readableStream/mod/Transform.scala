@@ -1,13 +1,14 @@
 package typings.readableStream.mod
 
+import typings.node.BufferEncoding
 import typings.node.streamMod.TransformCallback
-import typings.readableStream.AnonAfterTransform
+import typings.readableStream.anon.AfterTransform
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.node.NodeJS.EventEmitter because Already inherited
 - typings.node.eventsMod.EventEmitter because Already inherited
 - typings.node.NodeJS.EventEmitter because Already inherited
@@ -21,13 +22,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class Transform () extends Duplex {
   def this(options: TransformOptions) = this()
-  var _transformState: AnonAfterTransform = js.native
+  var _transformState: AfterTransform = js.native
   def _flush(
     callback: (js.Function2[/* error */ js.UndefOr[Error], /* data */ js.UndefOr[js.Any], Unit]) | TransformCallback
   ): Unit = js.native
   def _transform(
     chunk: js.Any,
-    encoding: String,
+    encoding: BufferEncoding,
     callback: (js.Function2[/* error */ js.UndefOr[Error], /* data */ js.UndefOr[js.Any], Unit]) | TransformCallback
   ): Unit = js.native
 }

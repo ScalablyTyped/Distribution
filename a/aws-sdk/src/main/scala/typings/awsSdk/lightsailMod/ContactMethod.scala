@@ -32,7 +32,7 @@ trait ContactMethod extends js.Object {
     */
   var resourceType: js.UndefOr[ResourceType] = js.native
   /**
-    * The current status of the contact method. A contact method has the following possible status:    PendingVerification — The contact method has not yet been verified, and the verification has not yet expired.    Valid — The contact method has been verified.    InValid — An attempt was made to verify the contact method, but the verification has expired.  
+    * The current status of the contact method. A contact method has the following possible status:    PendingVerification - The contact method has not yet been verified, and the verification has not yet expired.    Valid - The contact method has been verified.    InValid - An attempt was made to verify the contact method, but the verification has expired.  
     */
   var status: js.UndefOr[ContactMethodStatus] = js.native
   /**

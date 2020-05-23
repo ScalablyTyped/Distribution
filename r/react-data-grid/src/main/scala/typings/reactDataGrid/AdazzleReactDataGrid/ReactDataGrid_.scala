@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AdazzleReactDataGrid.ReactDataGrid")
 @js.native
-class ReactDataGrid_[T] ()
+trait ReactDataGrid_[T]
   extends Component[GridProps[T], js.Object, js.Any] {
   /**
     * Opens the editor for the cell (idx) in the given row (rowIdx). If the column is not editable then nothing will happen.

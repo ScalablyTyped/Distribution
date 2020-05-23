@@ -17,11 +17,11 @@ object ConnectionStateChange {
     current: ConnectionState,
     previous: ConnectionState,
     reason: ErrorInfo = null,
-    retryIn: Int | Double = null
+    retryIn: js.UndefOr[Double] = js.undefined
   ): ConnectionStateChange = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], previous = previous.asInstanceOf[js.Any])
     if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
-    if (retryIn != null) __obj.updateDynamic("retryIn")(retryIn.asInstanceOf[js.Any])
+    if (!js.isUndefined(retryIn)) __obj.updateDynamic("retryIn")(retryIn.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionStateChange]
   }
 }

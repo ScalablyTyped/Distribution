@@ -1,6 +1,6 @@
 package typings.angularForms.mod
 
-import typings.angularForms.AnonEmitEvent
+import typings.angularForms.anon.EmitEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -153,7 +153,7 @@ class FormArray protected () extends AbstractControl {
     * updateValueAndValidity} method.
     */
   def patchValue(value: js.Array[_]): Unit = js.native
-  def patchValue(value: js.Array[_], options: AnonEmitEvent): Unit = js.native
+  def patchValue(value: js.Array[_], options: EmitEvent): Unit = js.native
   /**
     * Insert a new `AbstractControl` at the end of the array.
     *
@@ -166,7 +166,7 @@ class FormArray protected () extends AbstractControl {
     * @param index Index in the array to remove the control
     */
   def removeAt(index: Double): Unit = js.native
-  def reset(value: js.Any, options: AnonEmitEvent): Unit = js.native
+  def reset(value: js.Any, options: EmitEvent): Unit = js.native
   /**
     * Replace an existing control.
     *
@@ -210,6 +210,6 @@ class FormArray protected () extends AbstractControl {
     * updateValueAndValidity} method.
     */
   def setValue(value: js.Array[_]): Unit = js.native
-  def setValue(value: js.Array[_], options: AnonEmitEvent): Unit = js.native
+  def setValue(value: js.Array[_], options: EmitEvent): Unit = js.native
 }
 

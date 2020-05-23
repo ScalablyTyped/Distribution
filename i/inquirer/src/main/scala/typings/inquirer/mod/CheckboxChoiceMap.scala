@@ -16,7 +16,7 @@ trait CheckboxChoiceMap[T /* <: Answers */] extends BaseChoiceMap[T] {
 
 object CheckboxChoiceMap {
   @scala.inline
-  def apply[T /* <: Answers */](
+  def apply[T](
     CheckboxChoiceOptions: CheckboxChoiceOptions[T],
     Choice: typings.inquirer.choiceMod.^[T],
     ChoiceOptions: ChoiceOptions[T],

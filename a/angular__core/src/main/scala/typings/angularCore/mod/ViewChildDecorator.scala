@@ -2,7 +2,7 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.angularCore.AnonRead
+import typings.angularCore.anon.Read
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,13 +15,13 @@ trait ViewChildDecorator
     ]
      with Instantiable2[
       (/* selector */ js.Function) | (/* selector */ String) | (/* selector */ Type[js.Any]), 
-      /* opts */ AnonRead, 
+      /* opts */ Read, 
       ViewChild
     ] {
   def apply(selector: String): js.Any = js.native
-  def apply(selector: String, opts: AnonRead): js.Any = js.native
+  def apply(selector: String, opts: Read): js.Any = js.native
   def apply(selector: js.Function): js.Any = js.native
-  def apply(selector: js.Function, opts: AnonRead): js.Any = js.native
+  def apply(selector: js.Function, opts: Read): js.Any = js.native
   /**
     * @description
     * Property decorator that configures a view query.
@@ -61,6 +61,6 @@ trait ViewChildDecorator
     * @Annotation
     */
   def apply(selector: Type[_]): js.Any = js.native
-  def apply(selector: Type[_], opts: AnonRead): js.Any = js.native
+  def apply(selector: Type[_], opts: Read): js.Any = js.native
 }
 

@@ -15,16 +15,16 @@ trait ParallelCollectionScanOptions extends js.Object {
 object ParallelCollectionScanOptions {
   @scala.inline
   def apply(
-    batchSize: Int | scala.Double = null,
-    numCursors: Int | scala.Double = null,
+    batchSize: js.UndefOr[scala.Double] = js.undefined,
+    numCursors: js.UndefOr[scala.Double] = js.undefined,
     raw: js.UndefOr[Boolean] = js.undefined,
     readPreference: ReadPreferenceOrMode = null,
     session: ClientSession = null
   ): ParallelCollectionScanOptions = {
     val __obj = js.Dynamic.literal()
-    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
-    if (numCursors != null) __obj.updateDynamic("numCursors")(numCursors.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numCursors)) __obj.updateDynamic("numCursors")(numCursors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.get.asInstanceOf[js.Any])
     if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParallelCollectionScanOptions]

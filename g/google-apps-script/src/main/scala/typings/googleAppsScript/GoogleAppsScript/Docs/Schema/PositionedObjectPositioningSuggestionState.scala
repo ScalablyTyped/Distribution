@@ -18,9 +18,9 @@ object PositionedObjectPositioningSuggestionState {
     topOffsetSuggested: js.UndefOr[Boolean] = js.undefined
   ): PositionedObjectPositioningSuggestionState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(layoutSuggested)) __obj.updateDynamic("layoutSuggested")(layoutSuggested.asInstanceOf[js.Any])
-    if (!js.isUndefined(leftOffsetSuggested)) __obj.updateDynamic("leftOffsetSuggested")(leftOffsetSuggested.asInstanceOf[js.Any])
-    if (!js.isUndefined(topOffsetSuggested)) __obj.updateDynamic("topOffsetSuggested")(topOffsetSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(layoutSuggested)) __obj.updateDynamic("layoutSuggested")(layoutSuggested.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(leftOffsetSuggested)) __obj.updateDynamic("leftOffsetSuggested")(leftOffsetSuggested.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(topOffsetSuggested)) __obj.updateDynamic("topOffsetSuggested")(topOffsetSuggested.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PositionedObjectPositioningSuggestionState]
   }
 }

@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListTagsForResourceRequest extends js.Object {
   /**
-    * The ARN of the Elastic Inference Accelerator to list the tags for.
+    *  The ARN of the Elastic Inference Accelerator to list the tags for. 
     */
-  var resourceArn: ResourceARN = js.native
+  var resourceArn: ResourceARN_ = js.native
 }
 
 object ListTagsForResourceRequest {
   @scala.inline
-  def apply(resourceArn: ResourceARN): ListTagsForResourceRequest = {
+  def apply(resourceArn: ResourceARN_): ListTagsForResourceRequest = {
     val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagsForResourceRequest]
   }

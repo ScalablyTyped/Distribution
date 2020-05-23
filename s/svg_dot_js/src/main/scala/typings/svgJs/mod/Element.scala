@@ -2,11 +2,10 @@ package typings.svgJs.mod
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.std.CustomEvent
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
-import typings.svgJs.AnonColor
-import typings.svgJs.AnonDelay
-import typings.svgJs.AnonX
+import typings.svgJs.anon.Delay
+import typings.svgJs.anon.X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +33,7 @@ trait Element
   def animate(duration: Double): Animation = js.native
   def animate(duration: Double, ease: String): Animation = js.native
   def animate(duration: Double, ease: String, delay: Double): Animation = js.native
-  def animate(info: AnonDelay): Animation = js.native
+  def animate(info: Delay): Animation = js.native
   def attr(): js.Object = js.native
   def attr(name: String): js.Any = js.native
   def attr(name: String, value: js.Any): this.type = js.native
@@ -63,14 +62,14 @@ trait Element
   def doc(): Parent = js.native
   def dx(x: NumberAlias): this.type = js.native
   def dy(y: NumberAlias): this.type = js.native
-  def event(): Event_ | CustomEvent[_] = js.native
+  def event(): Event | CustomEvent[_] = js.native
   def fill(color: String): this.type = js.native
-  def fill(fill: AnonColor): this.type = js.native
+  def fill(fill: typings.svgJs.anon.Color): this.type = js.native
   def fill(image: Image): this.type = js.native
   def fill(pattern: Element): this.type = js.native
   def fire(event: String): this.type = js.native
   def fire(event: String, data: js.Any): this.type = js.native
-  def fire(event: Event_): this.type = js.native
+  def fire(event: Event): this.type = js.native
   def flip(): this.type = js.native
   def flip(a: String): this.type = js.native
   def flip(a: String, offset: Double): this.type = js.native
@@ -116,7 +115,7 @@ trait Element
   def parent(`type`: ParentTypeAlias): Parent | HTMLElement = js.native
   def parents(): js.Array[Parent] = js.native
   def point(): Point = js.native
-  def point(position: AnonX): Point = js.native
+  def point(position: X): Point = js.native
   def point(position: ArrayPoint): Point = js.native
   def point(x: Double, y: Double): Point = js.native
   def position(): Double = js.native

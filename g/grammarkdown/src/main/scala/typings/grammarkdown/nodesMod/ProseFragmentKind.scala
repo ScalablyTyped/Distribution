@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Rewritten from type alias, can be one of: 
+/* keyof grammarkdown.grammarkdown/dist/nodes.ProseFragmentTypes */ /* Rewritten from type alias, can be one of: 
   - typings.grammarkdown.grammarkdownStrings.`52`
   - typings.grammarkdown.grammarkdownStrings.`49`
   - typings.grammarkdown.grammarkdownStrings.`50`

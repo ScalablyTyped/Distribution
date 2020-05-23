@@ -28,9 +28,9 @@ trait PlusKeyKeyEvent extends js.Object {
 
 object PlusKeyKeyEvent {
   @scala.inline
-  def apply(keyCode: Int | Double = null, keyType: PlusKeyKeyType = null): PlusKeyKeyEvent = {
+  def apply(keyCode: js.UndefOr[Double] = js.undefined, keyType: PlusKeyKeyType = null): PlusKeyKeyEvent = {
     val __obj = js.Dynamic.literal()
-    if (keyCode != null) __obj.updateDynamic("keyCode")(keyCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyCode)) __obj.updateDynamic("keyCode")(keyCode.get.asInstanceOf[js.Any])
     if (keyType != null) __obj.updateDynamic("keyType")(keyType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusKeyKeyEvent]
   }

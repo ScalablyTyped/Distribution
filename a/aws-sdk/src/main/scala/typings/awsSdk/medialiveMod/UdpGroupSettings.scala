@@ -25,12 +25,12 @@ object UdpGroupSettings {
   def apply(
     InputLossAction: InputLossActionForUdpOut = null,
     TimedMetadataId3Frame: UdpTimedMetadataId3Frame = null,
-    TimedMetadataId3Period: Int | Double = null
+    TimedMetadataId3Period: js.UndefOr[integerMin0] = js.undefined
   ): UdpGroupSettings = {
     val __obj = js.Dynamic.literal()
     if (InputLossAction != null) __obj.updateDynamic("InputLossAction")(InputLossAction.asInstanceOf[js.Any])
     if (TimedMetadataId3Frame != null) __obj.updateDynamic("TimedMetadataId3Frame")(TimedMetadataId3Frame.asInstanceOf[js.Any])
-    if (TimedMetadataId3Period != null) __obj.updateDynamic("TimedMetadataId3Period")(TimedMetadataId3Period.asInstanceOf[js.Any])
+    if (!js.isUndefined(TimedMetadataId3Period)) __obj.updateDynamic("TimedMetadataId3Period")(TimedMetadataId3Period.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UdpGroupSettings]
   }
 }

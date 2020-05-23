@@ -39,19 +39,19 @@ trait Ac3Settings extends js.Object {
 object Ac3Settings {
   @scala.inline
   def apply(
-    Bitrate: Int | Double = null,
+    Bitrate: js.UndefOr[double] = js.undefined,
     BitstreamMode: Ac3BitstreamMode = null,
     CodingMode: Ac3CodingMode = null,
-    Dialnorm: Int | Double = null,
+    Dialnorm: js.UndefOr[integerMin1Max31] = js.undefined,
     DrcProfile: Ac3DrcProfile = null,
     LfeFilter: Ac3LfeFilter = null,
     MetadataControl: Ac3MetadataControl = null
   ): Ac3Settings = {
     val __obj = js.Dynamic.literal()
-    if (Bitrate != null) __obj.updateDynamic("Bitrate")(Bitrate.asInstanceOf[js.Any])
+    if (!js.isUndefined(Bitrate)) __obj.updateDynamic("Bitrate")(Bitrate.get.asInstanceOf[js.Any])
     if (BitstreamMode != null) __obj.updateDynamic("BitstreamMode")(BitstreamMode.asInstanceOf[js.Any])
     if (CodingMode != null) __obj.updateDynamic("CodingMode")(CodingMode.asInstanceOf[js.Any])
-    if (Dialnorm != null) __obj.updateDynamic("Dialnorm")(Dialnorm.asInstanceOf[js.Any])
+    if (!js.isUndefined(Dialnorm)) __obj.updateDynamic("Dialnorm")(Dialnorm.get.asInstanceOf[js.Any])
     if (DrcProfile != null) __obj.updateDynamic("DrcProfile")(DrcProfile.asInstanceOf[js.Any])
     if (LfeFilter != null) __obj.updateDynamic("LfeFilter")(LfeFilter.asInstanceOf[js.Any])
     if (MetadataControl != null) __obj.updateDynamic("MetadataControl")(MetadataControl.asInstanceOf[js.Any])

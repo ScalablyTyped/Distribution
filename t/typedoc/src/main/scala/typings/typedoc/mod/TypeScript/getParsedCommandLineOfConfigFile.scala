@@ -2,6 +2,7 @@ package typings.typedoc.mod.TypeScript
 
 import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.ExtendedConfigCacheEntry
+import typings.typescript.mod.FileExtensionInfo
 import typings.typescript.mod.Map
 import typings.typescript.mod.ParseConfigFileHost
 import typings.typescript.mod.ParsedCommandLine
@@ -26,6 +27,14 @@ object getParsedCommandLineOfConfigFile extends js.Object {
     host: ParseConfigFileHost,
     extendedConfigCache: Map[ExtendedConfigCacheEntry],
     watchOptionsToExtend: WatchOptions
+  ): js.UndefOr[ParsedCommandLine] = js.native
+  def apply(
+    configFileName: String,
+    optionsToExtend: CompilerOptions,
+    host: ParseConfigFileHost,
+    extendedConfigCache: Map[ExtendedConfigCacheEntry],
+    watchOptionsToExtend: WatchOptions,
+    extraFileExtensions: js.Array[FileExtensionInfo]
   ): js.UndefOr[ParsedCommandLine] = js.native
 }
 

@@ -2,16 +2,13 @@ package typings.sharepoint.SP.WorkflowServices
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.sharepoint.SP.ClientObject
-import typings.sharepoint.SP.ClientRuntimeContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a workflow definition and associated properties. */
-@JSGlobal("SP.WorkflowServices.WorkflowDefinition")
 @js.native
-class WorkflowDefinition protected () extends ClientObject {
-  def this(context: ClientRuntimeContext) = this()
+trait WorkflowDefinition extends ClientObject {
   /** Url of the association form */
   def get_associationUrl(): String = js.native
   def get_description(): String = js.native

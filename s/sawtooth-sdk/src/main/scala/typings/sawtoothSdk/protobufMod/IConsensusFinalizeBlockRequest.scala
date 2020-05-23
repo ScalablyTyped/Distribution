@@ -12,9 +12,9 @@ trait IConsensusFinalizeBlockRequest extends js.Object {
 
 object IConsensusFinalizeBlockRequest {
   @scala.inline
-  def apply(data: Uint8Array = null): IConsensusFinalizeBlockRequest = {
+  def apply(data: js.UndefOr[Null | Uint8Array] = js.undefined): IConsensusFinalizeBlockRequest = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(data)) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConsensusFinalizeBlockRequest]
   }
 }

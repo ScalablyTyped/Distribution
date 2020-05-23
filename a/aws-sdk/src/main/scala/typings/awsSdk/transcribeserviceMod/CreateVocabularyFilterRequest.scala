@@ -15,7 +15,7 @@ trait CreateVocabularyFilterRequest extends js.Object {
     */
   var VocabularyFilterFileUri: js.UndefOr[Uri] = js.native
   /**
-    * The vocabulary filter name. The name must be unique within the account that contains it.
+    * The vocabulary filter name. The name must be unique within the account that contains it.If you try to create a vocabulary filter with the same name as a previous vocabulary filter you will receive a ConflictException error.
     */
   var VocabularyFilterName: typings.awsSdk.transcribeserviceMod.VocabularyFilterName = js.native
   /**

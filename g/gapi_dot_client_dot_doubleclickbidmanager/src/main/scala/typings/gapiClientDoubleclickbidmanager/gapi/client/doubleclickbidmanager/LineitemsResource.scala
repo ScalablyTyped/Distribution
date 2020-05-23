@@ -1,23 +1,23 @@
 package typings.gapiClientDoubleclickbidmanager.gapi.client.doubleclickbidmanager
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientDoubleclickbidmanager.AnonAlt
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientDoubleclickbidmanager.anon.Alt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LineitemsResource extends js.Object {
   /** Retrieves line items in CSV format. */
-  def downloadlineitems(request: AnonAlt): Request_[DownloadLineItemsResponse]
+  def downloadlineitems(request: Alt): Request[DownloadLineItemsResponse]
   /** Uploads line items in CSV format. */
-  def uploadlineitems(request: AnonAlt): Request_[UploadLineItemsResponse]
+  def uploadlineitems(request: Alt): Request[UploadLineItemsResponse]
 }
 
 object LineitemsResource {
   @scala.inline
   def apply(
-    downloadlineitems: AnonAlt => Request_[DownloadLineItemsResponse],
-    uploadlineitems: AnonAlt => Request_[UploadLineItemsResponse]
+    downloadlineitems: Alt => Request[DownloadLineItemsResponse],
+    uploadlineitems: Alt => Request[UploadLineItemsResponse]
   ): LineitemsResource = {
     val __obj = js.Dynamic.literal(downloadlineitems = js.Any.fromFunction1(downloadlineitems), uploadlineitems = js.Any.fromFunction1(uploadlineitems))
     __obj.asInstanceOf[LineitemsResource]

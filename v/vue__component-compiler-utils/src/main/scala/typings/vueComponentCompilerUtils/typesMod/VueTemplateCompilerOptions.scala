@@ -25,7 +25,7 @@ object VueTemplateCompilerOptions {
     val __obj = js.Dynamic.literal()
     if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
     if (modules != null) __obj.updateDynamic("modules")(modules.asInstanceOf[js.Any])
-    if (!js.isUndefined(outputSourceRange)) __obj.updateDynamic("outputSourceRange")(outputSourceRange.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputSourceRange)) __obj.updateDynamic("outputSourceRange")(outputSourceRange.get.asInstanceOf[js.Any])
     if (whitespace != null) __obj.updateDynamic("whitespace")(whitespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[VueTemplateCompilerOptions]
   }

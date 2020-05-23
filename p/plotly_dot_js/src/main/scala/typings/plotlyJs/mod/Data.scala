@@ -1,16 +1,16 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.AnonEnd
-import typings.plotlyJs.PartialDataTitle
-import typings.plotlyJs.PartialDelta
-import typings.plotlyJs.PartialFont
-import typings.plotlyJs.PartialGauge
-import typings.plotlyJs.PartialHoverLabel
-import typings.plotlyJs.PartialPlotMarker
-import typings.plotlyJs.PartialPlotNumber
-import typings.plotlyJs.PartialScatterLine
-import typings.plotlyJs.PartialScatterMarkerLine
-import typings.plotlyJs.Partialrowsnumbercolumnsn
+import typings.plotlyJs.anon.End
+import typings.plotlyJs.anon.PartialDataTitle
+import typings.plotlyJs.anon.PartialDelta
+import typings.plotlyJs.anon.PartialFont
+import typings.plotlyJs.anon.PartialGauge
+import typings.plotlyJs.anon.PartialHoverLabel
+import typings.plotlyJs.anon.PartialPlotMarker
+import typings.plotlyJs.anon.PartialPlotNumber
+import typings.plotlyJs.anon.PartialScatterLine
+import typings.plotlyJs.anon.PartialScatterMarkerLine
+import typings.plotlyJs.anon.Partialrowsnumbercolumnsn
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsStrings.`bottom center`
 import typings.plotlyJs.plotlyJsStrings.`bottom left`
@@ -57,6 +57,7 @@ import typings.plotlyJs.plotlyJsStrings.numberPlussigndelta
 import typings.plotlyJs.plotlyJsStrings.outside
 import typings.plotlyJs.plotlyJsStrings.percent
 import typings.plotlyJs.plotlyJsStrings.points
+import typings.plotlyJs.plotlyJsStrings.remainder
 import typings.plotlyJs.plotlyJsStrings.sd
 import typings.plotlyJs.plotlyJsStrings.skip
 import typings.plotlyJs.plotlyJsStrings.spline
@@ -71,6 +72,7 @@ import typings.plotlyJs.plotlyJsStrings.tonext
 import typings.plotlyJs.plotlyJsStrings.tonextx
 import typings.plotlyJs.plotlyJsStrings.tonexty
 import typings.plotlyJs.plotlyJsStrings.toself
+import typings.plotlyJs.plotlyJsStrings.total
 import typings.plotlyJs.plotlyJsStrings.tozerox
 import typings.plotlyJs.plotlyJsStrings.tozeroy
 import typings.plotlyJs.plotlyJsStrings.v
@@ -116,6 +118,7 @@ import scala.scalajs.js.annotation._
 trait Data extends js.Object {
   var autobinx: js.UndefOr[Boolean] = js.undefined
   var boxmean: js.UndefOr[Boolean | sd] = js.undefined
+  var branchvalues: js.UndefOr[total | remainder] = js.undefined
   var colorscale: js.UndefOr[ColorScale] = js.undefined
   var connectgaps: js.UndefOr[Boolean] = js.undefined
   var customdata: js.UndefOr[js.Array[Datum]] = js.undefined
@@ -136,6 +139,7 @@ trait Data extends js.Object {
   var hovertemplate: js.UndefOr[String | js.Array[String]] = js.undefined
   var hovertext: js.UndefOr[String | js.Array[String]] = js.undefined
   var labels: js.UndefOr[js.Array[Datum]] = js.undefined
+  var lat: js.UndefOr[js.Array[Datum]] = js.undefined
   var legendgroup: js.UndefOr[String] = js.undefined
   var line: js.UndefOr[PartialScatterLine] = js.undefined
   @JSName("line.color")
@@ -150,6 +154,7 @@ trait Data extends js.Object {
   var lineDotsmoothing: js.UndefOr[Double] = js.undefined
   @JSName("line.width")
   var lineDotwidth: js.UndefOr[Double] = js.undefined
+  var lon: js.UndefOr[js.Array[Datum]] = js.undefined
   var marker: js.UndefOr[PartialPlotMarker] = js.undefined
   @JSName("marker.color")
   var markerDotcolor: js.UndefOr[Color] = js.undefined
@@ -221,7 +226,7 @@ trait Data extends js.Object {
   var width: js.UndefOr[Double | js.Array[Double]] = js.undefined
   var x: js.UndefOr[(js.Array[js.Array[Datum] | Datum]) | TypedArray] = js.undefined
   var xaxis: js.UndefOr[String] = js.undefined
-  var xbins: js.UndefOr[AnonEnd] = js.undefined
+  var xbins: js.UndefOr[End] = js.undefined
   var xgap: js.UndefOr[Double] = js.undefined
   var xy: js.UndefOr[Float32Array] = js.undefined
   var y: js.UndefOr[(js.Array[js.Array[Datum] | Datum]) | TypedArray] = js.undefined
@@ -236,6 +241,7 @@ object Data {
   def apply(
     autobinx: js.UndefOr[Boolean] = js.undefined,
     boxmean: Boolean | sd = null,
+    branchvalues: total | remainder = null,
     colorscale: ColorScale = null,
     connectgaps: js.UndefOr[Boolean] = js.undefined,
     customdata: js.Array[Datum] = null,
@@ -247,21 +253,23 @@ object Data {
     fill: none | tozeroy | tozerox | tonexty | tonextx | toself | tonext = null,
     fillcolor: String = null,
     gauge: PartialGauge = null,
-    hole: Int | Double = null,
+    hole: js.UndefOr[Double] = js.undefined,
     hoverinfo: all | name | none | skip | text | x | xPlussigntext | xPlussignname | xPlussigny | xPlussignyPlussigntext | xPlussignyPlussignname | xPlussignyPlussignz | xPlussignyPlussignzPlussigntext | xPlussignyPlussignzPlussignname | yPlussignname | yPlussignx | yPlussigntext | yPlussignxPlussigntext | yPlussignxPlussignname | yPlussignz | yPlussignzPlussigntext | yPlussignzPlussignname | yPlussignxPlussignz | yPlussignxPlussignzPlussigntext | yPlussignxPlussignzPlussignname | zPlussignx | zPlussignxPlussigntext | zPlussignxPlussignname | zPlussignyPlussignx | zPlussignyPlussignxPlussigntext | zPlussignyPlussignxPlussignname | zPlussignxPlussigny | zPlussignxPlussignyPlussigntext | zPlussignxPlussignyPlussignname = null,
     hoverlabel: PartialHoverLabel = null,
     hoveron: points | fills = null,
     hovertemplate: String | js.Array[String] = null,
     hovertext: String | js.Array[String] = null,
     labels: js.Array[Datum] = null,
+    lat: js.Array[Datum] = null,
     legendgroup: String = null,
     line: PartialScatterLine = null,
     lineDotcolor: Color = null,
     lineDotdash: Dash = null,
     lineDotshape: linear | spline | hv | vh | hvh | vhv = null,
     lineDotsimplify: js.UndefOr[Boolean] = js.undefined,
-    lineDotsmoothing: Int | Double = null,
-    lineDotwidth: Int | Double = null,
+    lineDotsmoothing: js.UndefOr[Double] = js.undefined,
+    lineDotwidth: js.UndefOr[Double] = js.undefined,
+    lon: js.Array[Datum] = null,
     marker: PartialPlotMarker = null,
     markerDotcolor: Color = null,
     markerDotcolorbar: js.Object = null,
@@ -269,27 +277,27 @@ object Data {
     markerDotline: PartialScatterMarkerLine = null,
     markerDotlineDotcolor: Color = null,
     markerDotlineDotcolorscale: ColorScale | js.Array[ColorScale] = null,
-    markerDotmaxdisplayed: Int | Double = null,
+    markerDotmaxdisplayed: js.UndefOr[Double] = js.undefined,
     markerDotopacity: Double | js.Array[Double] = null,
-    markerDotpadDotb: Int | Double = null,
-    markerDotpadDotl: Int | Double = null,
-    markerDotpadDotr: Int | Double = null,
-    markerDotpadDott: Int | Double = null,
+    markerDotpadDotb: js.UndefOr[Double] = js.undefined,
+    markerDotpadDotl: js.UndefOr[Double] = js.undefined,
+    markerDotpadDotr: js.UndefOr[Double] = js.undefined,
+    markerDotpadDott: js.UndefOr[Double] = js.undefined,
     markerDotshowscale: js.UndefOr[Boolean] = js.undefined,
     markerDotsize: Double | (js.Array[js.Array[Double] | Double]) = null,
-    markerDotsizemax: Int | Double = null,
-    markerDotsizemin: Int | Double = null,
+    markerDotsizemax: js.UndefOr[Double] = js.undefined,
+    markerDotsizemin: js.UndefOr[Double] = js.undefined,
     markerDotsizemode: diameter | area = null,
-    markerDotsizeref: Int | Double = null,
+    markerDotsizeref: js.UndefOr[Double] = js.undefined,
     markerDotsymbol: MarkerSymbol | js.Array[MarkerSymbol] = null,
     mode: lines | markers | text | linesPlussignmarkers | textPlussignmarkers | textPlussignlines | textPlussignlinesPlussignmarkers | none | gauge | number | delta | numberPlussigndelta | gaugePlussignnumber | gaugePlussignnumberPlussigndelta | gaugePlussigndelta = null,
     name: String = null,
     number: PartialPlotNumber = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     orientation: v | h = null,
     parents: js.Array[String] = null,
     r: js.Array[Datum] = null,
-    rotation: Int | Double = null,
+    rotation: js.UndefOr[Double] = js.undefined,
     showlegend: js.UndefOr[Boolean] = js.undefined,
     showscale: js.UndefOr[Boolean] = js.undefined,
     stackgroup: String = null,
@@ -302,26 +310,27 @@ object Data {
     transforms: js.Array[DataTransform] = null,
     transpose: js.UndefOr[Boolean] = js.undefined,
     `type`: PlotType = null,
-    value: Int | Double = null,
+    value: js.UndefOr[Double] = js.undefined,
     values: js.Array[Datum] = null,
     visible: Boolean | legendonly = null,
     width: Double | js.Array[Double] = null,
     x: (js.Array[js.Array[Datum] | Datum]) | TypedArray = null,
     xaxis: String = null,
-    xbins: AnonEnd = null,
-    xgap: Int | Double = null,
+    xbins: End = null,
+    xgap: js.UndefOr[Double] = js.undefined,
     xy: Float32Array = null,
     y: (js.Array[js.Array[Datum] | Datum]) | TypedArray = null,
     yaxis: String = null,
-    ygap: Int | Double = null,
+    ygap: js.UndefOr[Double] = js.undefined,
     z: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray = null,
     zsmooth: fast | best | `false` = null
   ): Data = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autobinx)) __obj.updateDynamic("autobinx")(autobinx.asInstanceOf[js.Any])
+    if (!js.isUndefined(autobinx)) __obj.updateDynamic("autobinx")(autobinx.get.asInstanceOf[js.Any])
     if (boxmean != null) __obj.updateDynamic("boxmean")(boxmean.asInstanceOf[js.Any])
+    if (branchvalues != null) __obj.updateDynamic("branchvalues")(branchvalues.asInstanceOf[js.Any])
     if (colorscale != null) __obj.updateDynamic("colorscale")(colorscale.asInstanceOf[js.Any])
-    if (!js.isUndefined(connectgaps)) __obj.updateDynamic("connectgaps")(connectgaps.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectgaps)) __obj.updateDynamic("connectgaps")(connectgaps.get.asInstanceOf[js.Any])
     if (customdata != null) __obj.updateDynamic("customdata")(customdata.asInstanceOf[js.Any])
     if (delta != null) __obj.updateDynamic("delta")(delta.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
@@ -331,21 +340,23 @@ object Data {
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fillcolor != null) __obj.updateDynamic("fillcolor")(fillcolor.asInstanceOf[js.Any])
     if (gauge != null) __obj.updateDynamic("gauge")(gauge.asInstanceOf[js.Any])
-    if (hole != null) __obj.updateDynamic("hole")(hole.asInstanceOf[js.Any])
+    if (!js.isUndefined(hole)) __obj.updateDynamic("hole")(hole.get.asInstanceOf[js.Any])
     if (hoverinfo != null) __obj.updateDynamic("hoverinfo")(hoverinfo.asInstanceOf[js.Any])
     if (hoverlabel != null) __obj.updateDynamic("hoverlabel")(hoverlabel.asInstanceOf[js.Any])
     if (hoveron != null) __obj.updateDynamic("hoveron")(hoveron.asInstanceOf[js.Any])
     if (hovertemplate != null) __obj.updateDynamic("hovertemplate")(hovertemplate.asInstanceOf[js.Any])
     if (hovertext != null) __obj.updateDynamic("hovertext")(hovertext.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (lat != null) __obj.updateDynamic("lat")(lat.asInstanceOf[js.Any])
     if (legendgroup != null) __obj.updateDynamic("legendgroup")(legendgroup.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     if (lineDotcolor != null) __obj.updateDynamic("line.color")(lineDotcolor.asInstanceOf[js.Any])
     if (lineDotdash != null) __obj.updateDynamic("line.dash")(lineDotdash.asInstanceOf[js.Any])
     if (lineDotshape != null) __obj.updateDynamic("line.shape")(lineDotshape.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineDotsimplify)) __obj.updateDynamic("line.simplify")(lineDotsimplify.asInstanceOf[js.Any])
-    if (lineDotsmoothing != null) __obj.updateDynamic("line.smoothing")(lineDotsmoothing.asInstanceOf[js.Any])
-    if (lineDotwidth != null) __obj.updateDynamic("line.width")(lineDotwidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineDotsimplify)) __obj.updateDynamic("line.simplify")(lineDotsimplify.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineDotsmoothing)) __obj.updateDynamic("line.smoothing")(lineDotsmoothing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineDotwidth)) __obj.updateDynamic("line.width")(lineDotwidth.get.asInstanceOf[js.Any])
+    if (lon != null) __obj.updateDynamic("lon")(lon.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
     if (markerDotcolor != null) __obj.updateDynamic("marker.color")(markerDotcolor.asInstanceOf[js.Any])
     if (markerDotcolorbar != null) __obj.updateDynamic("marker.colorbar")(markerDotcolorbar.asInstanceOf[js.Any])
@@ -353,29 +364,29 @@ object Data {
     if (markerDotline != null) __obj.updateDynamic("marker.line")(markerDotline.asInstanceOf[js.Any])
     if (markerDotlineDotcolor != null) __obj.updateDynamic("marker.line.color")(markerDotlineDotcolor.asInstanceOf[js.Any])
     if (markerDotlineDotcolorscale != null) __obj.updateDynamic("marker.line.colorscale")(markerDotlineDotcolorscale.asInstanceOf[js.Any])
-    if (markerDotmaxdisplayed != null) __obj.updateDynamic("marker.maxdisplayed")(markerDotmaxdisplayed.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerDotmaxdisplayed)) __obj.updateDynamic("marker.maxdisplayed")(markerDotmaxdisplayed.get.asInstanceOf[js.Any])
     if (markerDotopacity != null) __obj.updateDynamic("marker.opacity")(markerDotopacity.asInstanceOf[js.Any])
-    if (markerDotpadDotb != null) __obj.updateDynamic("marker.pad.b")(markerDotpadDotb.asInstanceOf[js.Any])
-    if (markerDotpadDotl != null) __obj.updateDynamic("marker.pad.l")(markerDotpadDotl.asInstanceOf[js.Any])
-    if (markerDotpadDotr != null) __obj.updateDynamic("marker.pad.r")(markerDotpadDotr.asInstanceOf[js.Any])
-    if (markerDotpadDott != null) __obj.updateDynamic("marker.pad.t")(markerDotpadDott.asInstanceOf[js.Any])
-    if (!js.isUndefined(markerDotshowscale)) __obj.updateDynamic("marker.showscale")(markerDotshowscale.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerDotpadDotb)) __obj.updateDynamic("marker.pad.b")(markerDotpadDotb.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerDotpadDotl)) __obj.updateDynamic("marker.pad.l")(markerDotpadDotl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerDotpadDotr)) __obj.updateDynamic("marker.pad.r")(markerDotpadDotr.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerDotpadDott)) __obj.updateDynamic("marker.pad.t")(markerDotpadDott.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerDotshowscale)) __obj.updateDynamic("marker.showscale")(markerDotshowscale.get.asInstanceOf[js.Any])
     if (markerDotsize != null) __obj.updateDynamic("marker.size")(markerDotsize.asInstanceOf[js.Any])
-    if (markerDotsizemax != null) __obj.updateDynamic("marker.sizemax")(markerDotsizemax.asInstanceOf[js.Any])
-    if (markerDotsizemin != null) __obj.updateDynamic("marker.sizemin")(markerDotsizemin.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerDotsizemax)) __obj.updateDynamic("marker.sizemax")(markerDotsizemax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerDotsizemin)) __obj.updateDynamic("marker.sizemin")(markerDotsizemin.get.asInstanceOf[js.Any])
     if (markerDotsizemode != null) __obj.updateDynamic("marker.sizemode")(markerDotsizemode.asInstanceOf[js.Any])
-    if (markerDotsizeref != null) __obj.updateDynamic("marker.sizeref")(markerDotsizeref.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerDotsizeref)) __obj.updateDynamic("marker.sizeref")(markerDotsizeref.get.asInstanceOf[js.Any])
     if (markerDotsymbol != null) __obj.updateDynamic("marker.symbol")(markerDotsymbol.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (parents != null) __obj.updateDynamic("parents")(parents.asInstanceOf[js.Any])
     if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (!js.isUndefined(showlegend)) __obj.updateDynamic("showlegend")(showlegend.asInstanceOf[js.Any])
-    if (!js.isUndefined(showscale)) __obj.updateDynamic("showscale")(showscale.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showlegend)) __obj.updateDynamic("showlegend")(showlegend.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showscale)) __obj.updateDynamic("showscale")(showscale.get.asInstanceOf[js.Any])
     if (stackgroup != null) __obj.updateDynamic("stackgroup")(stackgroup.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (textfont != null) __obj.updateDynamic("textfont")(textfont.asInstanceOf[js.Any])
@@ -384,20 +395,20 @@ object Data {
     if (theta != null) __obj.updateDynamic("theta")(theta.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (transforms != null) __obj.updateDynamic("transforms")(transforms.asInstanceOf[js.Any])
-    if (!js.isUndefined(transpose)) __obj.updateDynamic("transpose")(transpose.asInstanceOf[js.Any])
+    if (!js.isUndefined(transpose)) __obj.updateDynamic("transpose")(transpose.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     if (visible != null) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (xaxis != null) __obj.updateDynamic("xaxis")(xaxis.asInstanceOf[js.Any])
     if (xbins != null) __obj.updateDynamic("xbins")(xbins.asInstanceOf[js.Any])
-    if (xgap != null) __obj.updateDynamic("xgap")(xgap.asInstanceOf[js.Any])
+    if (!js.isUndefined(xgap)) __obj.updateDynamic("xgap")(xgap.get.asInstanceOf[js.Any])
     if (xy != null) __obj.updateDynamic("xy")(xy.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     if (yaxis != null) __obj.updateDynamic("yaxis")(yaxis.asInstanceOf[js.Any])
-    if (ygap != null) __obj.updateDynamic("ygap")(ygap.asInstanceOf[js.Any])
+    if (!js.isUndefined(ygap)) __obj.updateDynamic("ygap")(ygap.get.asInstanceOf[js.Any])
     if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
     if (zsmooth != null) __obj.updateDynamic("zsmooth")(zsmooth.asInstanceOf[js.Any])
     __obj.asInstanceOf[Data]

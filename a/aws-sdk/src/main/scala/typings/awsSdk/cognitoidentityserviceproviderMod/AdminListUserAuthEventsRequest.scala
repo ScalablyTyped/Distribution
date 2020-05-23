@@ -29,11 +29,11 @@ object AdminListUserAuthEventsRequest {
   def apply(
     UserPoolId: UserPoolIdType,
     Username: UsernameType,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[QueryLimitType] = js.undefined,
     NextToken: PaginationKey = null
   ): AdminListUserAuthEventsRequest = {
     val __obj = js.Dynamic.literal(UserPoolId = UserPoolId.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminListUserAuthEventsRequest]
   }

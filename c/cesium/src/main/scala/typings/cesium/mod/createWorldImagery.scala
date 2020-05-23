@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonStyle
+import typings.cesium.anon.Style
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object createWorldImagery extends js.Object {
   def apply(): IonImageryProvider = js.native
-  def apply(options: AnonStyle): IonImageryProvider = js.native
+  def apply(options: Style): IonImageryProvider = js.native
 }
 

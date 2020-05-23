@@ -28,14 +28,14 @@ object HexdumpOptions {
   def apply(
     ansi: js.UndefOr[Boolean] = js.undefined,
     header: js.UndefOr[Boolean] = js.undefined,
-    length: Int | Double = null,
-    offset: Int | Double = null
+    length: js.UndefOr[Double] = js.undefined,
+    offset: js.UndefOr[Double] = js.undefined
   ): HexdumpOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ansi)) __obj.updateDynamic("ansi")(ansi.asInstanceOf[js.Any])
-    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(ansi)) __obj.updateDynamic("ansi")(ansi.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HexdumpOptions]
   }
 }

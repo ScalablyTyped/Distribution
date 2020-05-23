@@ -5,19 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.Core.AnimationMetrics.AnimationDescription")
-@js.native
-class AnimationDescription protected () extends IAnimationDescription {
-  def this(effect: AnimationEffect, target: AnimationEffectTarget) = this()
-  /* CompleteClass */
-  override var animations: IVectorView[IPropertyAnimation] = js.native
-  /* CompleteClass */
-  override var delayLimit: Double = js.native
-  /* CompleteClass */
-  override var staggerDelay: Double = js.native
-  /* CompleteClass */
-  override var staggerDelayFactor: Double = js.native
-  /* CompleteClass */
-  override var zOrder: Double = js.native
+trait AnimationDescription extends IAnimationDescription
+
+object AnimationDescription {
+  @scala.inline
+  def apply(
+    animations: IVectorView[IPropertyAnimation],
+    delayLimit: Double,
+    staggerDelay: Double,
+    staggerDelayFactor: Double,
+    zOrder: Double
+  ): AnimationDescription = {
+    val __obj = js.Dynamic.literal(animations = animations.asInstanceOf[js.Any], delayLimit = delayLimit.asInstanceOf[js.Any], staggerDelay = staggerDelay.asInstanceOf[js.Any], staggerDelayFactor = staggerDelayFactor.asInstanceOf[js.Any], zOrder = zOrder.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnimationDescription]
+  }
 }
 

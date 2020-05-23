@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 trait LoadingComponentBuilder extends ComponentBuilder[LoadingComponent] {
   /**
-  		 * Set the component wrapped by the LoadingComponent
-  		 * @param component The component to wrap
-  		 */
+    * Set the component wrapped by the LoadingComponent
+    * @param component The component to wrap
+    */
   def withItem(component: Component): LoadingComponentBuilder
 }
 

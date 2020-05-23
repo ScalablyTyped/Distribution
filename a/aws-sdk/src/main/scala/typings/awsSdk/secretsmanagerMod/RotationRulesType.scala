@@ -14,9 +14,9 @@ trait RotationRulesType extends js.Object {
 
 object RotationRulesType {
   @scala.inline
-  def apply(AutomaticallyAfterDays: Int | Double = null): RotationRulesType = {
+  def apply(AutomaticallyAfterDays: js.UndefOr[AutomaticallyRotateAfterDaysType] = js.undefined): RotationRulesType = {
     val __obj = js.Dynamic.literal()
-    if (AutomaticallyAfterDays != null) __obj.updateDynamic("AutomaticallyAfterDays")(AutomaticallyAfterDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutomaticallyAfterDays)) __obj.updateDynamic("AutomaticallyAfterDays")(AutomaticallyAfterDays.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RotationRulesType]
   }
 }

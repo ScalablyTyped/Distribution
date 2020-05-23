@@ -1,7 +1,7 @@
 package typings.swig.mod
 
 import typings.std.Error
-import typings.swig.Typeofloaders
+import typings.swig.anon.Typeofloaders
 import typings.swig.mod.lexer.TYPES
 import typings.swig.mod.parser.ParseReturn
 import scala.scalajs.js

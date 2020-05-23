@@ -31,13 +31,13 @@ object Options {
   def apply(
     async: js.UndefOr[Boolean] = js.undefined,
     defer: js.UndefOr[Boolean] = js.undefined,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     fn: js.Function | String = null,
     id: String = null,
-    initCount: Int | Double = null,
-    maxTime: Int | Double = null,
-    minSamples: Int | Double = null,
-    minTime: Int | Double = null,
+    initCount: js.UndefOr[Double] = js.undefined,
+    maxTime: js.UndefOr[Double] = js.undefined,
+    minSamples: js.UndefOr[Double] = js.undefined,
+    minTime: js.UndefOr[Double] = js.undefined,
     name: String = null,
     onAbort: js.Function = null,
     onComplete: js.Function = null,
@@ -50,15 +50,15 @@ object Options {
     teardown: js.Function | String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
-    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (fn != null) __obj.updateDynamic("fn")(fn.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (initCount != null) __obj.updateDynamic("initCount")(initCount.asInstanceOf[js.Any])
-    if (maxTime != null) __obj.updateDynamic("maxTime")(maxTime.asInstanceOf[js.Any])
-    if (minSamples != null) __obj.updateDynamic("minSamples")(minSamples.asInstanceOf[js.Any])
-    if (minTime != null) __obj.updateDynamic("minTime")(minTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(initCount)) __obj.updateDynamic("initCount")(initCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTime)) __obj.updateDynamic("maxTime")(maxTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSamples)) __obj.updateDynamic("minSamples")(minSamples.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minTime)) __obj.updateDynamic("minTime")(minTime.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onAbort != null) __obj.updateDynamic("onAbort")(onAbort.asInstanceOf[js.Any])
     if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete.asInstanceOf[js.Any])
@@ -66,7 +66,7 @@ object Options {
     if (onError != null) __obj.updateDynamic("onError")(onError.asInstanceOf[js.Any])
     if (onReset != null) __obj.updateDynamic("onReset")(onReset.asInstanceOf[js.Any])
     if (onStart != null) __obj.updateDynamic("onStart")(onStart.asInstanceOf[js.Any])
-    if (!js.isUndefined(queued)) __obj.updateDynamic("queued")(queued.asInstanceOf[js.Any])
+    if (!js.isUndefined(queued)) __obj.updateDynamic("queued")(queued.get.asInstanceOf[js.Any])
     if (setup != null) __obj.updateDynamic("setup")(setup.asInstanceOf[js.Any])
     if (teardown != null) __obj.updateDynamic("teardown")(teardown.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

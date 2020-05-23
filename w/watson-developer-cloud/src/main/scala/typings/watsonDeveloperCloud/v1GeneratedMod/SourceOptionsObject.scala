@@ -14,9 +14,9 @@ trait SourceOptionsObject extends js.Object {
 
 object SourceOptionsObject {
   @scala.inline
-  def apply(name: String, limit: Int | Double = null): SourceOptionsObject = {
+  def apply(name: String, limit: js.UndefOr[Double] = js.undefined): SourceOptionsObject = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceOptionsObject]
   }
 }

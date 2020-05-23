@@ -16,14 +16,14 @@ object SearchQuery {
   def apply(
     expand: js.Array[String] = null,
     fields: js.Array[String] = null,
-    maxResults: Int | Double = null,
-    startAt: Int | Double = null
+    maxResults: js.UndefOr[Double] = js.undefined,
+    startAt: js.UndefOr[Double] = js.undefined
   ): SearchQuery = {
     val __obj = js.Dynamic.literal()
     if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
-    if (startAt != null) __obj.updateDynamic("startAt")(startAt.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startAt)) __obj.updateDynamic("startAt")(startAt.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchQuery]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UntagResourceRequest extends js.Object {
   /**
-    * This is the value of the resource that will have the tag removed. An Amazon Resource Name (ARN) is an identifier for a specific AWS resource, such as a server, user, or role.
+    * The value of the resource that will have the tag removed. An Amazon Resource Name (ARN) is an identifier for a specific AWS resource, such as a server, user, or role.
     */
   var Arn: typings.awsSdk.transferMod.Arn = js.native
   /**

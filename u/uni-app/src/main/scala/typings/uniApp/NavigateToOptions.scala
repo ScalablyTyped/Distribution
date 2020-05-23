@@ -56,7 +56,7 @@ trait NavigateToOptions extends js.Object {
 object NavigateToOptions {
   @scala.inline
   def apply(
-    animationDuration: Int | Double = null,
+    animationDuration: js.UndefOr[Double] = js.undefined,
     animationType: auto | none | `slide-in-right` | `slide-in-left` | `slide-in-top` | `slide-in-bottom` | `fade-in` | `zoom-out` | `zoom-fade-out` | `pop-in` = null,
     complete: () => Unit = null,
     fail: () => Unit = null,
@@ -64,7 +64,7 @@ object NavigateToOptions {
     url: String = null
   ): NavigateToOptions = {
     val __obj = js.Dynamic.literal()
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
     if (animationType != null) __obj.updateDynamic("animationType")(animationType.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))

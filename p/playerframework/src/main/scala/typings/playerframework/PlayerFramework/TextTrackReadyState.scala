@@ -1,6 +1,5 @@
 package typings.playerframework.PlayerFramework
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,42 +11,28 @@ sealed trait TextTrackReadyState extends js.Object
 @js.native
 object TextTrackReadyState extends js.Object {
   /**
-  		* The track failed to load.
-  		*/
+    * The track failed to load.
+    */
   @js.native
   sealed trait error extends TextTrackReadyState
   
   /**
-  		* The track is loaded.
-  		*/
+    * The track is loaded.
+    */
   @js.native
   sealed trait loaded extends TextTrackReadyState
   
   /**
-  		* The track is currently loading.
-  		*/
+    * The track is currently loading.
+    */
   @js.native
   sealed trait loading extends TextTrackReadyState
   
   /**
-  		* The track is unloaded.
-  		*/
+    * The track is unloaded.
+    */
   @js.native
   sealed trait none extends TextTrackReadyState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TextTrackReadyState with Double] = js.native
-  /* 3 */ @js.native
-  object error extends TopLevel[error with Double]
-  
-  /* 2 */ @js.native
-  object loaded extends TopLevel[loaded with Double]
-  
-  /* 1 */ @js.native
-  object loading extends TopLevel[loading with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
   
 }
 

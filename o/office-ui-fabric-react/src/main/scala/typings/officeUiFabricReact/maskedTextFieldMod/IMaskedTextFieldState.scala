@@ -18,9 +18,9 @@ trait IMaskedTextFieldState extends js.Object {
 
 object IMaskedTextFieldState {
   @scala.inline
-  def apply(displayValue: String, maskCursorPosition: Int | Double = null): IMaskedTextFieldState = {
+  def apply(displayValue: String, maskCursorPosition: js.UndefOr[Double] = js.undefined): IMaskedTextFieldState = {
     val __obj = js.Dynamic.literal(displayValue = displayValue.asInstanceOf[js.Any])
-    if (maskCursorPosition != null) __obj.updateDynamic("maskCursorPosition")(maskCursorPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(maskCursorPosition)) __obj.updateDynamic("maskCursorPosition")(maskCursorPosition.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMaskedTextFieldState]
   }
 }

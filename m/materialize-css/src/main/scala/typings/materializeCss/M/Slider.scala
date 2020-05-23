@@ -1,54 +1,47 @@
 package typings.materializeCss.M
 
-import typings.materializeCss.MElements
-import typings.materializeCss.PartialSliderOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("M.Slider")
-@js.native
-class Slider () extends Component[SliderOptions] {
+trait Slider extends Component[SliderOptions] {
   /**
     * Index of current slide
     */
-  var activeIndex: Double = js.native
+  var activeIndex: Double
   /**
     * Move to next slider
     */
-  def next(): Unit = js.native
+  def next(): Unit
   /**
     * Pause slider autoslide
     */
-  def pause(): Unit = js.native
+  def pause(): Unit
   /**
     * Move to prev slider
     */
-  def prev(): Unit = js.native
+  def prev(): Unit
   /**
     * Start slider autoslide
     */
-  def start(): Unit = js.native
+  def start(): Unit
 }
 
-/* static members */
-@JSGlobal("M.Slider")
-@js.native
-object Slider extends js.Object {
-  /**
-    * Get Instance
-    */
-  def getInstance(elem: Element): Slider = js.native
-  /**
-    * Init Sliders
-    */
-  def init(els: MElements): js.Array[Slider] = js.native
-  def init(els: MElements, options: PartialSliderOptions): js.Array[Slider] = js.native
-  /**
-    * Init Slider
-    */
-  def init(els: Element): Slider = js.native
-  def init(els: Element, options: PartialSliderOptions): Slider = js.native
+object Slider {
+  @scala.inline
+  def apply(
+    activeIndex: Double,
+    destroy: () => Unit,
+    el: Element,
+    next: () => Unit,
+    options: SliderOptions,
+    pause: () => Unit,
+    prev: () => Unit,
+    start: () => Unit
+  ): Slider = {
+    val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), el = el.asInstanceOf[js.Any], next = js.Any.fromFunction0(next), options = options.asInstanceOf[js.Any], pause = js.Any.fromFunction0(pause), prev = js.Any.fromFunction0(prev), start = js.Any.fromFunction0(start))
+    __obj.asInstanceOf[Slider]
+  }
 }
 

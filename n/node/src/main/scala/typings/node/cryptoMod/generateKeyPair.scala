@@ -1,7 +1,7 @@
 package typings.node.cryptoMod
 
-import typings.node.AnonPrivateKey
 import typings.node.Buffer
+import typings.node.anon.PrivateKey
 import typings.node.nodeStrings.der
 import typings.node.nodeStrings.dsa
 import typings.node.nodeStrings.ec
@@ -61,11 +61,11 @@ object generateKeyPair extends js.Object {
     ]
   ): Unit = js.native
   @JSName("__promisify__")
-  def promisify(`type`: dsa, options: DSAKeyPairOptions[der | pem, der | pem]): js.Promise[AnonPrivateKey] = js.native
+  def promisify(`type`: dsa, options: DSAKeyPairOptions[der | pem, der | pem]): js.Promise[PrivateKey] = js.native
   @JSName("__promisify__")
-  def promisify(`type`: ec, options: ECKeyPairOptions[der | pem, der | pem]): js.Promise[AnonPrivateKey] = js.native
+  def promisify(`type`: ec, options: ECKeyPairOptions[der | pem, der | pem]): js.Promise[PrivateKey] = js.native
   @JSName("__promisify__")
-  def promisify(`type`: rsa, options: RSAKeyPairOptions[der | pem, der | pem]): js.Promise[AnonPrivateKey] = js.native
+  def promisify(`type`: rsa, options: RSAKeyPairOptions[der | pem, der | pem]): js.Promise[PrivateKey] = js.native
   @JSName("__promisify__")
   def promisify_dsa(`type`: dsa, options: DSAKeyPairKeyObjectOptions): js.Promise[KeyPairKeyObjectResult] = js.native
   @JSName("__promisify__")

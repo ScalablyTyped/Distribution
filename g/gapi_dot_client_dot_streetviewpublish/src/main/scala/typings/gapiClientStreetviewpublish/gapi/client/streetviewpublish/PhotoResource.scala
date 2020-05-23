@@ -1,10 +1,10 @@
 package typings.gapiClientStreetviewpublish.gapi.client.streetviewpublish
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientStreetviewpublish.AnonAccesstoken
-import typings.gapiClientStreetviewpublish.AnonAlt
-import typings.gapiClientStreetviewpublish.AnonBearertoken
-import typings.gapiClientStreetviewpublish.AnonCallback
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientStreetviewpublish.anon.Accesstoken
+import typings.gapiClientStreetviewpublish.anon.Alt
+import typings.gapiClientStreetviewpublish.anon.Bearertoken
+import typings.gapiClientStreetviewpublish.anon.Callback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,7 +31,7 @@ trait PhotoResource extends js.Object {
     * &#42; google.rpc.Code.RESOURCE_EXHAUSTED if the account has reached the
     * storage limit.
     */
-  def create(request: AnonAccesstoken): Request_[Photo]
+  def create(request: Accesstoken): Request[Photo]
   /**
     * Deletes a Photo and its metadata.
     *
@@ -41,7 +41,7 @@ trait PhotoResource extends js.Object {
     * create the requested photo.
     * &#42; google.rpc.Code.NOT_FOUND if the photo ID does not exist.
     */
-  def delete(request: AnonAlt): Request_[js.Object]
+  def delete(request: Alt): Request[js.Object]
   /**
     * Gets the metadata of the specified
     * Photo.
@@ -53,7 +53,7 @@ trait PhotoResource extends js.Object {
     * &#42; google.rpc.Code.NOT_FOUND if the requested
     * Photo does not exist.
     */
-  def get(request: AnonBearertoken): Request_[Photo]
+  def get(request: Bearertoken): Request[Photo]
   /**
     * Creates an upload session to start uploading photo bytes. The upload URL of
     * the returned UploadRef is used to
@@ -75,7 +75,7 @@ trait PhotoResource extends js.Object {
     * CreatePhoto
     * to create the Photo object entry.
     */
-  def startUpload(request: AnonAccesstoken): Request_[UploadRef]
+  def startUpload(request: Accesstoken): Request[UploadRef]
   /**
     * Updates the metadata of a Photo, such
     * as pose, place association, connections, etc. Changing the pixels of a
@@ -98,17 +98,17 @@ trait PhotoResource extends js.Object {
     * &#42; google.rpc.Code.INVALID_ARGUMENT if the request is malformed.
     * &#42; google.rpc.Code.NOT_FOUND if the requested photo does not exist.
     */
-  def update(request: AnonCallback): Request_[Photo]
+  def update(request: Callback): Request[Photo]
 }
 
 object PhotoResource {
   @scala.inline
   def apply(
-    create: AnonAccesstoken => Request_[Photo],
-    delete: AnonAlt => Request_[js.Object],
-    get: AnonBearertoken => Request_[Photo],
-    startUpload: AnonAccesstoken => Request_[UploadRef],
-    update: AnonCallback => Request_[Photo]
+    create: Accesstoken => Request[Photo],
+    delete: Alt => Request[js.Object],
+    get: Bearertoken => Request[Photo],
+    startUpload: Accesstoken => Request[UploadRef],
+    update: Callback => Request[Photo]
   ): PhotoResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), startUpload = js.Any.fromFunction1(startUpload), update = js.Any.fromFunction1(update))
     __obj.asInstanceOf[PhotoResource]

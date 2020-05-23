@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("detox/runners/jest/specReporter", JSImport.Namespace)
 @js.native
-object ^ extends TopLevel[JasmineSpecReporter]
+object ^ extends TopLevel[SpecReporter]
 

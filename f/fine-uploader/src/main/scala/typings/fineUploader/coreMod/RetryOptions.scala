@@ -34,15 +34,15 @@ trait RetryOptions extends js.Object {
 object RetryOptions {
   @scala.inline
   def apply(
-    autoAttemptDelay: Int | Double = null,
+    autoAttemptDelay: js.UndefOr[Double] = js.undefined,
     enableAuto: js.UndefOr[Boolean] = js.undefined,
-    maxAutoAttempts: Int | Double = null,
+    maxAutoAttempts: js.UndefOr[Double] = js.undefined,
     preventRetryResponseProperty: String = null
   ): RetryOptions = {
     val __obj = js.Dynamic.literal()
-    if (autoAttemptDelay != null) __obj.updateDynamic("autoAttemptDelay")(autoAttemptDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAuto)) __obj.updateDynamic("enableAuto")(enableAuto.asInstanceOf[js.Any])
-    if (maxAutoAttempts != null) __obj.updateDynamic("maxAutoAttempts")(maxAutoAttempts.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoAttemptDelay)) __obj.updateDynamic("autoAttemptDelay")(autoAttemptDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAuto)) __obj.updateDynamic("enableAuto")(enableAuto.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAutoAttempts)) __obj.updateDynamic("maxAutoAttempts")(maxAutoAttempts.get.asInstanceOf[js.Any])
     if (preventRetryResponseProperty != null) __obj.updateDynamic("preventRetryResponseProperty")(preventRetryResponseProperty.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetryOptions]
   }

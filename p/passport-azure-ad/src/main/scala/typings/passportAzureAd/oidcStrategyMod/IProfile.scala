@@ -1,6 +1,6 @@
 package typings.passportAzureAd.oidcStrategyMod
 
-import typings.passportAzureAd.AnonFamilyName
+import typings.passportAzureAd.anon.FamilyName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait IProfile extends js.Object {
   var _raw: js.UndefOr[String] = js.undefined
   var displayName: js.UndefOr[String] = js.undefined
   var emails: js.UndefOr[js.Any] = js.undefined
-  var name: js.UndefOr[AnonFamilyName] = js.undefined
+  var name: js.UndefOr[FamilyName] = js.undefined
   var oid: js.UndefOr[String] = js.undefined
   var sub: js.UndefOr[String] = js.undefined
   var upn: js.UndefOr[String] = js.undefined
@@ -23,7 +23,7 @@ object IProfile {
     _raw: String = null,
     displayName: String = null,
     emails: js.Any = null,
-    name: AnonFamilyName = null,
+    name: FamilyName = null,
     oid: String = null,
     sub: String = null,
     upn: String = null

@@ -1,8 +1,7 @@
 package typings.forkTsCheckerWebpackPlugin.mod
 
-import typings.forkTsCheckerWebpackPlugin.PartialOptions
-import typings.forkTsCheckerWebpackPlugin.RecordForkTsCheckerHooksS
-import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginNumbers.`2048`
+import typings.forkTsCheckerWebpackPlugin.anon.PartialOptions
+import typings.forkTsCheckerWebpackPlugin.anon.RecordForkTsCheckerHooksS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -138,7 +137,7 @@ class ^ () extends ForkTsCheckerWebpackPlugin {
 @JSImport("fork-ts-checker-webpack-plugin", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val DEFAULT_MEMORY_LIMIT: `2048` = js.native
+  val DEFAULT_MEMORY_LIMIT: /* 2048 */ Double = js.native
   var prepareVueOptions: js.Any = js.native
   def getCompilerHooks(compiler: js.Any): RecordForkTsCheckerHooksS = js.native
 }

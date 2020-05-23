@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "nookies" : "2.2.2"
+      "nookies" : "2.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "nookies" : "2.2.2"
+      "nookies" : "2.3.0"
     }
   ],
   "compile-devDependencies" : [

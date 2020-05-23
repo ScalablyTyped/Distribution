@@ -13,10 +13,13 @@ trait RequestUtilization extends js.Object {
 
 object RequestUtilization {
   @scala.inline
-  def apply(targetConcurrentRequests: Int | Double = null, targetRequestCountPerSecond: Int | Double = null): RequestUtilization = {
+  def apply(
+    targetConcurrentRequests: js.UndefOr[Double] = js.undefined,
+    targetRequestCountPerSecond: js.UndefOr[Double] = js.undefined
+  ): RequestUtilization = {
     val __obj = js.Dynamic.literal()
-    if (targetConcurrentRequests != null) __obj.updateDynamic("targetConcurrentRequests")(targetConcurrentRequests.asInstanceOf[js.Any])
-    if (targetRequestCountPerSecond != null) __obj.updateDynamic("targetRequestCountPerSecond")(targetRequestCountPerSecond.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetConcurrentRequests)) __obj.updateDynamic("targetConcurrentRequests")(targetConcurrentRequests.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetRequestCountPerSecond)) __obj.updateDynamic("targetRequestCountPerSecond")(targetRequestCountPerSecond.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestUtilization]
   }
 }

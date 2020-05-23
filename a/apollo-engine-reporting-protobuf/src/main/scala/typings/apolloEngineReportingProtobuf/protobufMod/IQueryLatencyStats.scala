@@ -34,32 +34,32 @@ trait IQueryLatencyStats extends js.Object {
 object IQueryLatencyStats {
   @scala.inline
   def apply(
-    cacheHits: Int | Double = null,
-    cacheLatencyCount: js.Array[Double] = null,
-    forbiddenOperationCount: Int | Double = null,
-    latencyCount: js.Array[Double] = null,
-    persistedQueryHits: Int | Double = null,
-    persistedQueryMisses: Int | Double = null,
-    privateCacheTtlCount: js.Array[Double] = null,
-    publicCacheTtlCount: js.Array[Double] = null,
-    registeredOperationCount: Int | Double = null,
-    requestCount: Int | Double = null,
-    requestsWithErrorsCount: Int | Double = null,
-    rootErrorStats: IPathErrorStats = null
+    cacheHits: js.UndefOr[Null | Double] = js.undefined,
+    cacheLatencyCount: js.UndefOr[Null | js.Array[Double]] = js.undefined,
+    forbiddenOperationCount: js.UndefOr[Null | Double] = js.undefined,
+    latencyCount: js.UndefOr[Null | js.Array[Double]] = js.undefined,
+    persistedQueryHits: js.UndefOr[Null | Double] = js.undefined,
+    persistedQueryMisses: js.UndefOr[Null | Double] = js.undefined,
+    privateCacheTtlCount: js.UndefOr[Null | js.Array[Double]] = js.undefined,
+    publicCacheTtlCount: js.UndefOr[Null | js.Array[Double]] = js.undefined,
+    registeredOperationCount: js.UndefOr[Null | Double] = js.undefined,
+    requestCount: js.UndefOr[Null | Double] = js.undefined,
+    requestsWithErrorsCount: js.UndefOr[Null | Double] = js.undefined,
+    rootErrorStats: js.UndefOr[Null | IPathErrorStats] = js.undefined
   ): IQueryLatencyStats = {
     val __obj = js.Dynamic.literal()
-    if (cacheHits != null) __obj.updateDynamic("cacheHits")(cacheHits.asInstanceOf[js.Any])
-    if (cacheLatencyCount != null) __obj.updateDynamic("cacheLatencyCount")(cacheLatencyCount.asInstanceOf[js.Any])
-    if (forbiddenOperationCount != null) __obj.updateDynamic("forbiddenOperationCount")(forbiddenOperationCount.asInstanceOf[js.Any])
-    if (latencyCount != null) __obj.updateDynamic("latencyCount")(latencyCount.asInstanceOf[js.Any])
-    if (persistedQueryHits != null) __obj.updateDynamic("persistedQueryHits")(persistedQueryHits.asInstanceOf[js.Any])
-    if (persistedQueryMisses != null) __obj.updateDynamic("persistedQueryMisses")(persistedQueryMisses.asInstanceOf[js.Any])
-    if (privateCacheTtlCount != null) __obj.updateDynamic("privateCacheTtlCount")(privateCacheTtlCount.asInstanceOf[js.Any])
-    if (publicCacheTtlCount != null) __obj.updateDynamic("publicCacheTtlCount")(publicCacheTtlCount.asInstanceOf[js.Any])
-    if (registeredOperationCount != null) __obj.updateDynamic("registeredOperationCount")(registeredOperationCount.asInstanceOf[js.Any])
-    if (requestCount != null) __obj.updateDynamic("requestCount")(requestCount.asInstanceOf[js.Any])
-    if (requestsWithErrorsCount != null) __obj.updateDynamic("requestsWithErrorsCount")(requestsWithErrorsCount.asInstanceOf[js.Any])
-    if (rootErrorStats != null) __obj.updateDynamic("rootErrorStats")(rootErrorStats.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheHits)) __obj.updateDynamic("cacheHits")(cacheHits.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheLatencyCount)) __obj.updateDynamic("cacheLatencyCount")(cacheLatencyCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(forbiddenOperationCount)) __obj.updateDynamic("forbiddenOperationCount")(forbiddenOperationCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(latencyCount)) __obj.updateDynamic("latencyCount")(latencyCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistedQueryHits)) __obj.updateDynamic("persistedQueryHits")(persistedQueryHits.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistedQueryMisses)) __obj.updateDynamic("persistedQueryMisses")(persistedQueryMisses.asInstanceOf[js.Any])
+    if (!js.isUndefined(privateCacheTtlCount)) __obj.updateDynamic("privateCacheTtlCount")(privateCacheTtlCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(publicCacheTtlCount)) __obj.updateDynamic("publicCacheTtlCount")(publicCacheTtlCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(registeredOperationCount)) __obj.updateDynamic("registeredOperationCount")(registeredOperationCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestCount)) __obj.updateDynamic("requestCount")(requestCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestsWithErrorsCount)) __obj.updateDynamic("requestsWithErrorsCount")(requestsWithErrorsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootErrorStats)) __obj.updateDynamic("rootErrorStats")(rootErrorStats.asInstanceOf[js.Any])
     __obj.asInstanceOf[IQueryLatencyStats]
   }
 }

@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.checksuggest")
 @js.native
-class checksuggest () extends baseview {
+trait checksuggest extends baseview {
   @JSName("$enterKey")
   var $enterKey_Original: WebixCallback = js.native
   @JSName("$scope")

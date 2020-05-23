@@ -2,7 +2,7 @@ package typings.reactBootstrapTableNext.mod
 
 import typings.react.mod.SyntheticEvent
 import typings.std.Element
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,11 +19,11 @@ trait RowEventHandlerProps[T] extends js.Object {
 object RowEventHandlerProps {
   @scala.inline
   def apply[T](
-    onClick: (/* e */ SyntheticEvent[Element, Event_], T, /* rowIndex */ Double) => Unit = null,
-    onContextMenu: (/* e */ SyntheticEvent[Element, Event_], T, /* rowIndex */ Double) => Unit = null,
-    onDoubleClick: (/* e */ SyntheticEvent[Element, Event_], T, /* rowIndex */ Double) => Unit = null,
-    onMouseEnter: (/* e */ SyntheticEvent[Element, Event_], T, /* rowIndex */ Double) => Unit = null,
-    onMouseLeave: (/* e */ SyntheticEvent[Element, Event_], T, /* rowIndex */ Double) => Unit = null
+    onClick: (/* e */ SyntheticEvent[Element, Event], T, /* rowIndex */ Double) => Unit = null,
+    onContextMenu: (/* e */ SyntheticEvent[Element, Event], T, /* rowIndex */ Double) => Unit = null,
+    onDoubleClick: (/* e */ SyntheticEvent[Element, Event], T, /* rowIndex */ Double) => Unit = null,
+    onMouseEnter: (/* e */ SyntheticEvent[Element, Event], T, /* rowIndex */ Double) => Unit = null,
+    onMouseLeave: (/* e */ SyntheticEvent[Element, Event], T, /* rowIndex */ Double) => Unit = null
   ): RowEventHandlerProps[T] = {
     val __obj = js.Dynamic.literal()
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction3(onClick))

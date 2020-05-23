@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ADODB.Connection")
 @js.native
-class Connection protected () extends js.Object {
+trait Connection extends js.Object {
   @JSName("ADODB.Connection_typekey")
   var ADODBDotConnection_typekey: Connection = js.native
   /** Sum of one or more of the values in the **XactAttributeEnum** enum */

@@ -5,7 +5,7 @@ import typings.react.mod.ChangeEventHandler
 import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import scala.scalajs.js
@@ -43,7 +43,7 @@ trait IQueryListRendererProps[T] extends js.Object {
     * perhaps because the user clicked it.
     */
   def handleItemSelect(item: T): Unit = js.native
-  def handleItemSelect(item: T, event: SyntheticEvent[HTMLElement, Event_]): Unit = js.native
+  def handleItemSelect(item: T, event: SyntheticEvent[HTMLElement, Event]): Unit = js.native
   /**
     * Handler that should be invoked when the user pastes one or more values.
     *

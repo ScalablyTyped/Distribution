@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.anon.RequiredPickIShimmeredDet
 import typings.officeUiFabricReact.shimmeredDetailsListTypesMod.IShimmeredDetailsListStyles
 import scala.scalajs.js
 import scala.scalajs.js.`|`

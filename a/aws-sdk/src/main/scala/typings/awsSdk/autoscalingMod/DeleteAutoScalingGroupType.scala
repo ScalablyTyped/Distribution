@@ -18,9 +18,9 @@ trait DeleteAutoScalingGroupType extends js.Object {
 
 object DeleteAutoScalingGroupType {
   @scala.inline
-  def apply(AutoScalingGroupName: ResourceName, ForceDelete: js.UndefOr[Boolean] = js.undefined): DeleteAutoScalingGroupType = {
+  def apply(AutoScalingGroupName: ResourceName, ForceDelete: js.UndefOr[ForceDelete] = js.undefined): DeleteAutoScalingGroupType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any])
-    if (!js.isUndefined(ForceDelete)) __obj.updateDynamic("ForceDelete")(ForceDelete.asInstanceOf[js.Any])
+    if (!js.isUndefined(ForceDelete)) __obj.updateDynamic("ForceDelete")(ForceDelete.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAutoScalingGroupType]
   }
 }

@@ -12,9 +12,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.2]
   */
-@JSGlobal("Excel.Functions")
 @js.native
-class Functions () extends ClientObject {
+trait Functions extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Functions: RequestContext = js.native

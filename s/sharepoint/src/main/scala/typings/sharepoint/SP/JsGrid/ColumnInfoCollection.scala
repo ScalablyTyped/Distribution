@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.JsGrid.ColumnInfoCollection")
 @js.native
-class ColumnInfoCollection protected () extends js.Object {
-  def this(colInfoArray: js.Array[_]) = this()
+trait ColumnInfoCollection extends js.Object {
   def AppendColumn(colInfo: js.Any): Unit = js.native
   def GetColumnArray(): js.Array[_] = js.native
   def GetColumnArray(bVisibleOnly: Boolean): js.Array[_] = js.native

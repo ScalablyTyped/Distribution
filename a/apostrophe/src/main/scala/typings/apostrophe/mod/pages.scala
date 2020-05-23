@@ -1,6 +1,6 @@
 package typings.apostrophe.mod
 
-import typings.apostrophe.AnonId
+import typings.apostrophe.anon.Id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("apostrophe", "pages")
 @js.native
 object pages extends js.Object {
-  var page: AnonId = js.native
+  var page: Id = js.native
 }
 

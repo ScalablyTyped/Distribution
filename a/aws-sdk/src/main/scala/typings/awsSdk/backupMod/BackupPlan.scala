@@ -11,7 +11,7 @@ trait BackupPlan extends js.Object {
     */
   var BackupPlanName: typings.awsSdk.backupMod.BackupPlanName = js.native
   /**
-    * An array of BackupRule objects, each of which specifies a scheduled task that is used to back up a selection of resources.
+    * An array of BackupRule objects, each of which specifies a scheduled task that is used to back up a selection of resources. 
     */
   var Rules: BackupRules = js.native
 }

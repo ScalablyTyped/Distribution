@@ -16,7 +16,7 @@ class Creatable[OptionType /* <: OptionTypeBase */] ()
   var select: Ref[_] = js.native
   def blur(): Unit = js.native
   def focus(): Unit = js.native
-  def onChange(newValue: ValueType[OptionType], actionMeta: ActionMeta): Unit = js.native
+  def onChange(newValue: ValueType[OptionType], actionMeta: ActionMeta[OptionType]): Unit = js.native
 }
 
 /* static members */

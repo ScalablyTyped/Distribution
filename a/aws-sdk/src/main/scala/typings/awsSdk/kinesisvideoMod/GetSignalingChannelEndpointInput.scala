@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetSignalingChannelEndpointInput extends js.Object {
   /**
-    * The ARN of the signalling channel for which you want to get an endpoint.
+    * The Amazon Resource Name (ARN) of the signalling channel for which you want to get an endpoint.
     */
   var ChannelARN: ResourceARN = js.native
   /**

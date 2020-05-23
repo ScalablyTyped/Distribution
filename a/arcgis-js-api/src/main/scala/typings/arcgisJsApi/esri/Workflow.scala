@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -101,8 +100,4 @@ trait Workflow extends Accessor {
     */
   def start(): Unit = js.native
 }
-
-@JSGlobal("__esri.Workflow")
-@js.native
-object Workflow extends TopLevel[WorkflowConstructor]
 

@@ -2,7 +2,7 @@ package typings.officeUiFabricReact.listTypesMod
 
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.Ref
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -38,9 +38,7 @@ object IListOnRenderRootProps {
     rootRef: Ref[HTMLDivElement] = null,
     surfaceElement: Element = null
   ): IListOnRenderRootProps[T] = {
-    val __obj = js.Dynamic.literal(divProps = divProps.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any])
-    if (rootRef != null) __obj.updateDynamic("rootRef")(rootRef.asInstanceOf[js.Any])
-    if (surfaceElement != null) __obj.updateDynamic("surfaceElement")(surfaceElement.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(divProps = divProps.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], rootRef = rootRef.asInstanceOf[js.Any], surfaceElement = surfaceElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListOnRenderRootProps[T]]
   }
 }

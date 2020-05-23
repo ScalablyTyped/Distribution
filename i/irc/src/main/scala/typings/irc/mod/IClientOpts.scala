@@ -121,11 +121,11 @@ object IClientOpts {
     debug: js.UndefOr[Boolean] = js.undefined,
     encoding: String = null,
     floodProtection: js.UndefOr[Boolean] = js.undefined,
-    floodProtectionDelay: Int | Double = null,
+    floodProtectionDelay: js.UndefOr[Double] = js.undefined,
     localAddress: String = null,
-    messageSplit: Int | Double = null,
+    messageSplit: js.UndefOr[Double] = js.undefined,
     password: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     realName: String = null,
     sasl: js.UndefOr[Boolean] = js.undefined,
     secure: Boolean | SecureContext = null,
@@ -135,25 +135,25 @@ object IClientOpts {
     userName: String = null
   ): IClientOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoConnect)) __obj.updateDynamic("autoConnect")(autoConnect.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoRejoin)) __obj.updateDynamic("autoRejoin")(autoRejoin.asInstanceOf[js.Any])
-    if (!js.isUndefined(certExpired)) __obj.updateDynamic("certExpired")(certExpired.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoConnect)) __obj.updateDynamic("autoConnect")(autoConnect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoRejoin)) __obj.updateDynamic("autoRejoin")(autoRejoin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(certExpired)) __obj.updateDynamic("certExpired")(certExpired.get.asInstanceOf[js.Any])
     if (channelPrefixes != null) __obj.updateDynamic("channelPrefixes")(channelPrefixes.asInstanceOf[js.Any])
     if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(floodProtection)) __obj.updateDynamic("floodProtection")(floodProtection.asInstanceOf[js.Any])
-    if (floodProtectionDelay != null) __obj.updateDynamic("floodProtectionDelay")(floodProtectionDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(floodProtection)) __obj.updateDynamic("floodProtection")(floodProtection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(floodProtectionDelay)) __obj.updateDynamic("floodProtectionDelay")(floodProtectionDelay.get.asInstanceOf[js.Any])
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
-    if (messageSplit != null) __obj.updateDynamic("messageSplit")(messageSplit.asInstanceOf[js.Any])
+    if (!js.isUndefined(messageSplit)) __obj.updateDynamic("messageSplit")(messageSplit.get.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (realName != null) __obj.updateDynamic("realName")(realName.asInstanceOf[js.Any])
-    if (!js.isUndefined(sasl)) __obj.updateDynamic("sasl")(sasl.asInstanceOf[js.Any])
+    if (!js.isUndefined(sasl)) __obj.updateDynamic("sasl")(sasl.get.asInstanceOf[js.Any])
     if (secure != null) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
-    if (!js.isUndefined(selfSigned)) __obj.updateDynamic("selfSigned")(selfSigned.asInstanceOf[js.Any])
-    if (!js.isUndefined(showErrors)) __obj.updateDynamic("showErrors")(showErrors.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripColors)) __obj.updateDynamic("stripColors")(stripColors.asInstanceOf[js.Any])
+    if (!js.isUndefined(selfSigned)) __obj.updateDynamic("selfSigned")(selfSigned.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showErrors)) __obj.updateDynamic("showErrors")(showErrors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripColors)) __obj.updateDynamic("stripColors")(stripColors.get.asInstanceOf[js.Any])
     if (userName != null) __obj.updateDynamic("userName")(userName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientOpts]
   }

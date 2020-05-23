@@ -7,21 +7,21 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ResourceSpec extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) of the environment.
-    */
-  var EnvironmentArn: js.UndefOr[typings.awsSdk.sagemakerMod.EnvironmentArn] = js.native
-  /**
     * The instance type.
     */
   var InstanceType: js.UndefOr[AppInstanceType] = js.native
+  /**
+    * The Amazon Resource Name (ARN) of the SageMaker image created on the instance.
+    */
+  var SageMakerImageArn: js.UndefOr[typings.awsSdk.sagemakerMod.SageMakerImageArn] = js.native
 }
 
 object ResourceSpec {
   @scala.inline
-  def apply(EnvironmentArn: EnvironmentArn = null, InstanceType: AppInstanceType = null): ResourceSpec = {
+  def apply(InstanceType: AppInstanceType = null, SageMakerImageArn: SageMakerImageArn = null): ResourceSpec = {
     val __obj = js.Dynamic.literal()
-    if (EnvironmentArn != null) __obj.updateDynamic("EnvironmentArn")(EnvironmentArn.asInstanceOf[js.Any])
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
+    if (SageMakerImageArn != null) __obj.updateDynamic("SageMakerImageArn")(SageMakerImageArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceSpec]
   }
 }

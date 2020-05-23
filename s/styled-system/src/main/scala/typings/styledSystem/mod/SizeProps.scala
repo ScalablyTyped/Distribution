@@ -10,9 +10,9 @@ trait SizeProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends js.
 
 object SizeProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](size: ResponsiveValue[TVal, ThemeType] = null): SizeProps[ThemeType, TVal] = {
+  def apply[ThemeType, TVal](size: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): SizeProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeProps[ThemeType, TVal]]
   }
 }

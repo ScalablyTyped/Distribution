@@ -46,6 +46,9 @@ object reactNavigationStackStrings {
   sealed trait `horizontal-inverted` extends GestureDirection
   
   @js.native
+  sealed trait key extends js.Object
+  
+  @js.native
   sealed trait left extends js.Object
   
   @js.native
@@ -126,6 +129,8 @@ object reactNavigationStackStrings {
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   @scala.inline
   def `horizontal-inverted`: `horizontal-inverted` = "horizontal-inverted".asInstanceOf[`horizontal-inverted`]
+  @scala.inline
+  def key: key = "key".asInstanceOf[key]
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline

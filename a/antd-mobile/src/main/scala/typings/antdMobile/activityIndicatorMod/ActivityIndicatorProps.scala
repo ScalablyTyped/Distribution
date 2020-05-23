@@ -23,12 +23,12 @@ object ActivityIndicatorProps {
     toast: js.UndefOr[Boolean] = js.undefined
   ): ActivityIndicatorProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animating)) __obj.updateDynamic("animating")(animating.asInstanceOf[js.Any])
+    if (!js.isUndefined(animating)) __obj.updateDynamic("animating")(animating.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(toast)) __obj.updateDynamic("toast")(toast.asInstanceOf[js.Any])
+    if (!js.isUndefined(toast)) __obj.updateDynamic("toast")(toast.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityIndicatorProps]
   }
 }

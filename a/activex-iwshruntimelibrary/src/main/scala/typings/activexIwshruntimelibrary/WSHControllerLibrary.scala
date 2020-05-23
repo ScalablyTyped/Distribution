@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object WSHControllerLibrary extends js.Object {
   @js.native
-  class WSHController protected () extends js.Object {
+  trait WSHController extends js.Object {
     @JSName("WSHControllerLibrary.WSHController_typekey")
     var WSHControllerLibraryDotWSHController_typekey: WSHController = js.native
     def CreateScript(Command: String): js.Any = js.native

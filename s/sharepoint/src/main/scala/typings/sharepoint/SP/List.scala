@@ -7,9 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a list on a SharePoint Web site. */
-@JSGlobal("SP.List")
 @js.native
-class List[T] () extends SecurableObject {
+trait List[T] extends SecurableObject {
   /** Creates a new list item in the list. */
   def addItem(parameters: ListItemCreationInformation): ListItem[T] = js.native
   /** Deletes the list. */

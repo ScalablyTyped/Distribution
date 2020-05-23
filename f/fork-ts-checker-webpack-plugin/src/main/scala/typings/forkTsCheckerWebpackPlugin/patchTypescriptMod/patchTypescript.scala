@@ -1,6 +1,6 @@
 package typings.forkTsCheckerWebpackPlugin.patchTypescriptMod
 
-import typings.forkTsCheckerWebpackPlugin.Typeofts
+import typings.forkTsCheckerWebpackPlugin.anon.Typeofts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

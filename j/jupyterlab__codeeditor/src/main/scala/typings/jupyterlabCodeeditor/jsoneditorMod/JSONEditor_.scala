@@ -5,7 +5,7 @@ import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IModel
 import typings.jupyterlabCodeeditor.jsoneditorMod.JSONEditor.IOptions
 import typings.jupyterlabObservables.observablejsonMod.IObservableJSON
 import typings.luminoWidgets.mod.Widget
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLSpanElement
 import scala.scalajs.js
@@ -82,7 +82,7 @@ class JSONEditor_ protected () extends Widget {
     * called in response to events on the notebook panel's node. It should
     * not be called directly by user code.
     */
-  def handleEvent(event: Event_): Unit = js.native
+  def handleEvent(event: Event): Unit = js.native
   /**
     * Get whether the editor is dirty.
     */

@@ -25,8 +25,8 @@ package object mod {
   type EventPlugin[T /* <: typings.ractive.mod.Ractive[T] */] = js.ThisFunction2[
     /* this */ T, 
     /* node */ typings.std.HTMLElement, 
-    /* fire */ js.Function1[/* event */ typings.std.Event_, scala.Unit], 
-    typings.ractive.AnonTeardown
+    /* fire */ js.Function1[/* event */ typings.std.Event, scala.Unit], 
+    typings.ractive.anon.Teardown
   ]
   type Helper = js.ThisFunction1[
     /* this */ typings.ractive.mod.Ractive[typings.ractive.mod.Ractive[js.Any]], 

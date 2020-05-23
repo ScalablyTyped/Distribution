@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RegisterThingResponse extends js.Object {
   /**
-    * .
+    * The certificate data, in PEM format.
     */
   var certificatePem: js.UndefOr[CertificatePem] = js.native
   /**

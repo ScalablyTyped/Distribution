@@ -13,9 +13,9 @@ trait AdamOptimizerConfig extends js.Object {
 
 object AdamOptimizerConfig {
   @scala.inline
-  def apply(beta1: Double, beta2: Double, learning_rate: Double, epsilon: Int | Double = null): AdamOptimizerConfig = {
+  def apply(beta1: Double, beta2: Double, learning_rate: Double, epsilon: js.UndefOr[Double] = js.undefined): AdamOptimizerConfig = {
     val __obj = js.Dynamic.literal(beta1 = beta1.asInstanceOf[js.Any], beta2 = beta2.asInstanceOf[js.Any], learning_rate = learning_rate.asInstanceOf[js.Any])
-    if (epsilon != null) __obj.updateDynamic("epsilon")(epsilon.asInstanceOf[js.Any])
+    if (!js.isUndefined(epsilon)) __obj.updateDynamic("epsilon")(epsilon.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdamOptimizerConfig]
   }
 }

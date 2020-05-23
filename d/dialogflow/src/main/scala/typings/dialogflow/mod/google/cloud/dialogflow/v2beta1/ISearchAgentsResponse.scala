@@ -14,10 +14,13 @@ trait ISearchAgentsResponse extends js.Object {
 
 object ISearchAgentsResponse {
   @scala.inline
-  def apply(agents: js.Array[IAgent] = null, nextPageToken: String = null): ISearchAgentsResponse = {
+  def apply(
+    agents: js.UndefOr[Null | js.Array[IAgent]] = js.undefined,
+    nextPageToken: js.UndefOr[Null | String] = js.undefined
+  ): ISearchAgentsResponse = {
     val __obj = js.Dynamic.literal()
-    if (agents != null) __obj.updateDynamic("agents")(agents.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(agents)) __obj.updateDynamic("agents")(agents.asInstanceOf[js.Any])
+    if (!js.isUndefined(nextPageToken)) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISearchAgentsResponse]
   }
 }

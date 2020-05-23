@@ -1,6 +1,6 @@
 package typings.reactNativeSvgCharts.mod
 
-import typings.reactNativeSvgCharts.PartialLineProps
+import typings.reactNativeSvgCharts.anon.PartialLineProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ object GridProps {
     y: /* t */ T => Double = null
   ): GridProps[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(belowChart)) __obj.updateDynamic("belowChart")(belowChart.asInstanceOf[js.Any])
+    if (!js.isUndefined(belowChart)) __obj.updateDynamic("belowChart")(belowChart.get.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (svg != null) __obj.updateDynamic("svg")(svg.asInstanceOf[js.Any])
     if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])

@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a client-side equivalent of the BootstrapCallbackPanel control.
   */
-@JSGlobal("BootstrapClientCallbackPanel")
 @js.native
-class BootstrapClientCallbackPanel () extends ASPxClientControl {
+trait BootstrapClientCallbackPanel extends ASPxClientControl {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */

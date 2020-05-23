@@ -17,10 +17,10 @@ trait IsByteLengthOptions extends js.Object {
 
 object IsByteLengthOptions {
   @scala.inline
-  def apply(max: Int | Double = null, min: Int | Double = null): IsByteLengthOptions = {
+  def apply(max: js.UndefOr[Double] = js.undefined, min: js.UndefOr[Double] = js.undefined): IsByteLengthOptions = {
     val __obj = js.Dynamic.literal()
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsByteLengthOptions]
   }
 }

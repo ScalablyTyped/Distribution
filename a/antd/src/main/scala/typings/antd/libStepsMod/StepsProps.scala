@@ -33,10 +33,10 @@ object StepsProps {
   @scala.inline
   def apply(
     className: String = null,
-    current: Int | Double = null,
+    current: js.UndefOr[Double] = js.undefined,
     direction: horizontal | vertical = null,
     iconPrefix: String = null,
-    initial: Int | Double = null,
+    initial: js.UndefOr[Double] = js.undefined,
     labelPlacement: horizontal | vertical = null,
     onChange: /* current */ Double => Unit = null,
     prefixCls: String = null,
@@ -48,10 +48,10 @@ object StepsProps {
   ): StepsProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
+    if (!js.isUndefined(current)) __obj.updateDynamic("current")(current.get.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (iconPrefix != null) __obj.updateDynamic("iconPrefix")(iconPrefix.asInstanceOf[js.Any])
-    if (initial != null) __obj.updateDynamic("initial")(initial.asInstanceOf[js.Any])
+    if (!js.isUndefined(initial)) __obj.updateDynamic("initial")(initial.get.asInstanceOf[js.Any])
     if (labelPlacement != null) __obj.updateDynamic("labelPlacement")(labelPlacement.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])

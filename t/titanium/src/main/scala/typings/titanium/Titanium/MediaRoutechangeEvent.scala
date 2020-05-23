@@ -6,20 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * Fired when an audio line type change is detected.
-	 */
+  * Fired when an audio line type change is detected.
+  */
 trait MediaRoutechangeEvent extends MediaBaseEvent {
   /**
-  		 * Returns a description of the current route, consisting of zero or more input ports and zero or more output ports.
-  		 */
+    * Returns a description of the current route, consisting of zero or more input ports and zero or more output ports.
+    */
   var currentRoute: RouteDescription
   /**
-  		 * Returns a description of the old route, consisting of zero or more input ports and zero or more output ports.
-  		 */
+    * Returns a description of the old route, consisting of zero or more input ports and zero or more output ports.
+    */
   var oldRoute: RouteDescription
   /**
-  		 * The reason for route change.
-  		 */
+    * The reason for route change.
+    */
   var reason: String
 }
 

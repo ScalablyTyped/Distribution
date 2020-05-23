@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CANNON.AABB")
 @js.native
-class AABB () extends js.Object {
-  def this(options: IAABBOptions) = this()
+trait AABB extends js.Object {
   var lowerBound: Vec3 = js.native
   var upperBound: Vec3 = js.native
   def copy(aabb: AABB): Unit = js.native

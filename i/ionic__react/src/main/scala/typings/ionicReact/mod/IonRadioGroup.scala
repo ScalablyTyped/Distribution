@@ -1,7 +1,7 @@
 package typings.ionicReact.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ionicReact.IonRadioGroupPickHTMLAttr
+import typings.ionicReact.anon.IonRadioGroupPickHTMLAttr
 import typings.react.mod.ForwardRefExoticComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

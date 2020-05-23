@@ -1,6 +1,6 @@
 package typings.aliApp.my
 
-import typings.aliApp.AnonResultCode
+import typings.aliApp.anon.ResultCode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 //#region 小程序唤起支付 https://docs.alipay.com/mini/api/openapi-pay
 trait TradePayOptions
   extends BaseOptions[js.Any, js.Any] {
-  	// 接入小程序支付时传入此参数。此参数为支付宝交易号
+      // 接入小程序支付时传入此参数。此参数为支付宝交易号
   @JSName("success")
-  var success_TradePayOptions: js.UndefOr[js.Function1[/* res */ AnonResultCode, Unit]] = js.undefined
+  var success_TradePayOptions: js.UndefOr[js.Function1[/* res */ ResultCode, Unit]] = js.undefined
   var tradeNO: js.UndefOr[String] = js.undefined
 }
 
@@ -20,7 +20,7 @@ object TradePayOptions {
   def apply(
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
-    success: /* res */ AnonResultCode => Unit = null,
+    success: /* res */ ResultCode => Unit = null,
     tradeNO: String = null
   ): TradePayOptions = {
     val __obj = js.Dynamic.literal()

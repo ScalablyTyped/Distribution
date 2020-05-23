@@ -58,7 +58,7 @@ object TdOptions {
     instanceName: String = null,
     isBackground: js.UndefOr[Boolean] = js.undefined,
     jsLogVerbosityLevel: error | warning | info | log | debug = null,
-    logVerbosityLevel: Int | Double = null,
+    logVerbosityLevel: js.UndefOr[Double] = js.undefined,
     mode: auto | asmjs | wasm = null,
     onUpdate: /* update */ TdObject => _ = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
@@ -66,13 +66,13 @@ object TdOptions {
   ): TdOptions = {
     val __obj = js.Dynamic.literal()
     if (instanceName != null) __obj.updateDynamic("instanceName")(instanceName.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBackground)) __obj.updateDynamic("isBackground")(isBackground.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBackground)) __obj.updateDynamic("isBackground")(isBackground.get.asInstanceOf[js.Any])
     if (jsLogVerbosityLevel != null) __obj.updateDynamic("jsLogVerbosityLevel")(jsLogVerbosityLevel.asInstanceOf[js.Any])
-    if (logVerbosityLevel != null) __obj.updateDynamic("logVerbosityLevel")(logVerbosityLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(logVerbosityLevel)) __obj.updateDynamic("logVerbosityLevel")(logVerbosityLevel.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction1(onUpdate))
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(useDatabase)) __obj.updateDynamic("useDatabase")(useDatabase.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useDatabase)) __obj.updateDynamic("useDatabase")(useDatabase.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TdOptions]
   }
 }

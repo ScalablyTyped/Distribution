@@ -39,7 +39,7 @@ trait AwsSecurityFindingFilters extends js.Object {
     */
   var FirstObservedAt: js.UndefOr[DateFilterList] = js.native
   /**
-    * The identifier for the solution-specific component (a discrete unit of logic) that generated a finding. In various security-findings providers' solutions, this generator can be called a rule, a check, a detector, a plug-in, etc.
+    * The identifier for the solution-specific component (a discrete unit of logic) that generated a finding. In various security-findings providers' solutions, this generator can be called a rule, a check, a detector, a plugin, etc.
     */
   var GeneratorId: js.UndefOr[StringFilterList] = js.native
   /**

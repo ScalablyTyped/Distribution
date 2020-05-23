@@ -27,9 +27,9 @@ object UpgradeAcousticModelParams {
   ): UpgradeAcousticModelParams = {
     val __obj = js.Dynamic.literal(customization_id = customization_id.asInstanceOf[js.Any])
     if (custom_language_model_id != null) __obj.updateDynamic("custom_language_model_id")(custom_language_model_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpgradeAcousticModelParams]
   }
 }

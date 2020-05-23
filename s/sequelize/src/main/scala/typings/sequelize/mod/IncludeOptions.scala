@@ -1,6 +1,6 @@
 package typings.sequelize.mod
 
-import typings.sequelize.AnonExclude
+import typings.sequelize.anon.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ trait IncludeOptions extends js.Object {
   /**
     * A list of attributes to select from the child model
     */
-  var attributes: js.UndefOr[FindOptionsAttributesArray | AnonExclude] = js.undefined
+  var attributes: js.UndefOr[FindOptionsAttributesArray | Exclude] = js.undefined
   /**
     * Load further nested related models
     */
@@ -67,7 +67,7 @@ object IncludeOptions {
     all: Boolean | String = null,
     as: String = null,
     association: IncludeAssociation | String = null,
-    attributes: FindOptionsAttributesArray | AnonExclude = null,
+    attributes: FindOptionsAttributesArray | Exclude = null,
     include: js.Array[(Model[_, _, _]) | IncludeOptions] = null,
     model: Model[_, _, _] = null,
     nested: js.UndefOr[Boolean] = js.undefined,
@@ -84,10 +84,10 @@ object IncludeOptions {
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (!js.isUndefined(nested)) __obj.updateDynamic("nested")(nested.asInstanceOf[js.Any])
-    if (!js.isUndefined(paranoid)) __obj.updateDynamic("paranoid")(paranoid.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
-    if (!js.isUndefined(separate)) __obj.updateDynamic("separate")(separate.asInstanceOf[js.Any])
+    if (!js.isUndefined(nested)) __obj.updateDynamic("nested")(nested.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(paranoid)) __obj.updateDynamic("paranoid")(paranoid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(separate)) __obj.updateDynamic("separate")(separate.get.asInstanceOf[js.Any])
     if (through != null) __obj.updateDynamic("through")(through.asInstanceOf[js.Any])
     if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncludeOptions]

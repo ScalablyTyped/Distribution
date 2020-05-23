@@ -28,7 +28,7 @@ trait CourseWork extends js.Object {
     * Whether this course work item is associated with the Developer Console
     * project making the request.
     *
-    * See google.classroom.Work.CreateCourseWork for more
+    * See CreateCourseWork for more
     * details.
     *
     * Read-only.
@@ -79,7 +79,7 @@ trait CourseWork extends js.Object {
     * Identifiers of students with access to the coursework.
     * This field is set only if `assigneeMode` is `INDIVIDUAL_STUDENTS`.
     * If the `assigneeMode` is `INDIVIDUAL_STUDENTS`, then only students
-    * specified in this field will be assigned the coursework.
+    * specified in this field are assigned the coursework.
     */
   var individualStudentsOptions: js.UndefOr[IndividualStudentsOptions] = js.undefined
   /**
@@ -156,7 +156,7 @@ object CourseWork {
     id: String = null,
     individualStudentsOptions: IndividualStudentsOptions = null,
     materials: js.Array[Material] = null,
-    maxPoints: Int | Double = null,
+    maxPoints: js.UndefOr[Double] = js.undefined,
     multipleChoiceQuestion: MultipleChoiceQuestion = null,
     scheduledTime: String = null,
     state: String = null,
@@ -170,7 +170,7 @@ object CourseWork {
     if (alternateLink != null) __obj.updateDynamic("alternateLink")(alternateLink.asInstanceOf[js.Any])
     if (assigneeMode != null) __obj.updateDynamic("assigneeMode")(assigneeMode.asInstanceOf[js.Any])
     if (assignment != null) __obj.updateDynamic("assignment")(assignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(associatedWithDeveloper)) __obj.updateDynamic("associatedWithDeveloper")(associatedWithDeveloper.asInstanceOf[js.Any])
+    if (!js.isUndefined(associatedWithDeveloper)) __obj.updateDynamic("associatedWithDeveloper")(associatedWithDeveloper.get.asInstanceOf[js.Any])
     if (courseId != null) __obj.updateDynamic("courseId")(courseId.asInstanceOf[js.Any])
     if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
     if (creatorUserId != null) __obj.updateDynamic("creatorUserId")(creatorUserId.asInstanceOf[js.Any])
@@ -180,7 +180,7 @@ object CourseWork {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (individualStudentsOptions != null) __obj.updateDynamic("individualStudentsOptions")(individualStudentsOptions.asInstanceOf[js.Any])
     if (materials != null) __obj.updateDynamic("materials")(materials.asInstanceOf[js.Any])
-    if (maxPoints != null) __obj.updateDynamic("maxPoints")(maxPoints.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPoints)) __obj.updateDynamic("maxPoints")(maxPoints.get.asInstanceOf[js.Any])
     if (multipleChoiceQuestion != null) __obj.updateDynamic("multipleChoiceQuestion")(multipleChoiceQuestion.asInstanceOf[js.Any])
     if (scheduledTime != null) __obj.updateDynamic("scheduledTime")(scheduledTime.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])

@@ -6,10 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CKEDITOR.htmlParser.element")
 @js.native
-class element protected () extends node {
-  def this(name: String, attributes: StringDictionary[String]) = this()
+trait element extends node {
   var attributes: StringDictionary[String] = js.native
   var children: js.Array[node] = js.native
   var name: String = js.native

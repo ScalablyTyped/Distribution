@@ -1,7 +1,7 @@
 package typings.ionic.snapshotMod
 
-import typings.ionic.AnonIdString
-import typings.ionic.PartialPaginateArgsResponGuard
+import typings.ionic.anon.IdString
+import typings.ionic.anon.PartialPaginateArgsResponGuard
 import typings.ionic.definitionsMod.IClient
 import typings.ionic.definitionsMod.IPaginator
 import typings.ionic.definitionsMod.PaginatorState
@@ -21,7 +21,7 @@ class SnapshotClient protected ()
      with ResourceClientLoad[Snapshot]
      with ResourceClientPaginate[Snapshot] {
   def this(hasClientAppToken: SnapshotClientDeps) = this()
-  var app: AnonIdString = js.native
+  var app: IdString = js.native
   var client: IClient = js.native
   var token: String = js.native
   def load(id: String): js.Promise[Snapshot] = js.native

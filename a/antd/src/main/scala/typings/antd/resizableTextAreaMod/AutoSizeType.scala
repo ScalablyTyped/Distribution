@@ -11,10 +11,10 @@ trait AutoSizeType extends js.Object {
 
 object AutoSizeType {
   @scala.inline
-  def apply(maxRows: Int | Double = null, minRows: Int | Double = null): AutoSizeType = {
+  def apply(maxRows: js.UndefOr[Double] = js.undefined, minRows: js.UndefOr[Double] = js.undefined): AutoSizeType = {
     val __obj = js.Dynamic.literal()
-    if (maxRows != null) __obj.updateDynamic("maxRows")(maxRows.asInstanceOf[js.Any])
-    if (minRows != null) __obj.updateDynamic("minRows")(minRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRows)) __obj.updateDynamic("maxRows")(maxRows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minRows)) __obj.updateDynamic("minRows")(minRows.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoSizeType]
   }
 }

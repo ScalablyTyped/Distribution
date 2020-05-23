@@ -19,7 +19,7 @@ object IWebXRHitTestOptions {
   @scala.inline
   def apply(testOnPointerDownOnly: js.UndefOr[Boolean] = js.undefined, worldParentNode: TransformNode = null): IWebXRHitTestOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(testOnPointerDownOnly)) __obj.updateDynamic("testOnPointerDownOnly")(testOnPointerDownOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(testOnPointerDownOnly)) __obj.updateDynamic("testOnPointerDownOnly")(testOnPointerDownOnly.get.asInstanceOf[js.Any])
     if (worldParentNode != null) __obj.updateDynamic("worldParentNode")(worldParentNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWebXRHitTestOptions]
   }

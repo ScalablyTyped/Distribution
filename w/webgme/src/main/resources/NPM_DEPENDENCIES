@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "webgme" : "2.40.1"
+      "webgme" : "2.41.1"
     }
   ],
   "test-dependencies" : [
     {
-      "webgme" : "2.40.1"
+      "webgme" : "2.41.1"
     }
   ],
   "compile-devDependencies" : [

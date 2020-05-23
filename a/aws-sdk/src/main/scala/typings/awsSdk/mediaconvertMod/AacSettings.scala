@@ -48,23 +48,23 @@ object AacSettings {
   @scala.inline
   def apply(
     AudioDescriptionBroadcasterMix: AacAudioDescriptionBroadcasterMix = null,
-    Bitrate: Int | Double = null,
+    Bitrate: js.UndefOr[integerMin6000Max1024000] = js.undefined,
     CodecProfile: AacCodecProfile = null,
     CodingMode: AacCodingMode = null,
     RateControlMode: AacRateControlMode = null,
     RawFormat: AacRawFormat = null,
-    SampleRate: Int | Double = null,
+    SampleRate: js.UndefOr[integerMin8000Max96000] = js.undefined,
     Specification: AacSpecification = null,
     VbrQuality: AacVbrQuality = null
   ): AacSettings = {
     val __obj = js.Dynamic.literal()
     if (AudioDescriptionBroadcasterMix != null) __obj.updateDynamic("AudioDescriptionBroadcasterMix")(AudioDescriptionBroadcasterMix.asInstanceOf[js.Any])
-    if (Bitrate != null) __obj.updateDynamic("Bitrate")(Bitrate.asInstanceOf[js.Any])
+    if (!js.isUndefined(Bitrate)) __obj.updateDynamic("Bitrate")(Bitrate.get.asInstanceOf[js.Any])
     if (CodecProfile != null) __obj.updateDynamic("CodecProfile")(CodecProfile.asInstanceOf[js.Any])
     if (CodingMode != null) __obj.updateDynamic("CodingMode")(CodingMode.asInstanceOf[js.Any])
     if (RateControlMode != null) __obj.updateDynamic("RateControlMode")(RateControlMode.asInstanceOf[js.Any])
     if (RawFormat != null) __obj.updateDynamic("RawFormat")(RawFormat.asInstanceOf[js.Any])
-    if (SampleRate != null) __obj.updateDynamic("SampleRate")(SampleRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(SampleRate)) __obj.updateDynamic("SampleRate")(SampleRate.get.asInstanceOf[js.Any])
     if (Specification != null) __obj.updateDynamic("Specification")(Specification.asInstanceOf[js.Any])
     if (VbrQuality != null) __obj.updateDynamic("VbrQuality")(VbrQuality.asInstanceOf[js.Any])
     __obj.asInstanceOf[AacSettings]

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object mod {
   type CacheCallback = js.Function2[
     /* err */ typings.std.Error | scala.Null, 
-    /* res */ js.UndefOr[typings.moduleDeps.AnonDeps], 
+    /* res */ js.UndefOr[typings.moduleDeps.anon.Deps], 
     scala.Unit
   ]
   /**

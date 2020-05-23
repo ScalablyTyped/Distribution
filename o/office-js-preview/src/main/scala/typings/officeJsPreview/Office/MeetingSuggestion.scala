@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation._
   * begin and end. The values are in the default time zone specified for the current user.
   *
   * @remarks
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
   */
 trait MeetingSuggestion extends js.Object {

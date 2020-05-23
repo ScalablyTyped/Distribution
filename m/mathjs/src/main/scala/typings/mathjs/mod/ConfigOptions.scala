@@ -16,19 +16,19 @@ trait ConfigOptions extends js.Object {
 object ConfigOptions {
   @scala.inline
   def apply(
-    epsilon: Int | Double = null,
+    epsilon: js.UndefOr[Double] = js.undefined,
     matrix: String = null,
     number: String = null,
     parenthesis: String = null,
-    precision: Int | Double = null,
+    precision: js.UndefOr[Double] = js.undefined,
     randomSeed: String = null
   ): ConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (epsilon != null) __obj.updateDynamic("epsilon")(epsilon.asInstanceOf[js.Any])
+    if (!js.isUndefined(epsilon)) __obj.updateDynamic("epsilon")(epsilon.get.asInstanceOf[js.Any])
     if (matrix != null) __obj.updateDynamic("matrix")(matrix.asInstanceOf[js.Any])
     if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
     if (parenthesis != null) __obj.updateDynamic("parenthesis")(parenthesis.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
     if (randomSeed != null) __obj.updateDynamic("randomSeed")(randomSeed.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]
   }

@@ -17,7 +17,7 @@ package object mod {
     - typings.oauth2Server.oauth2ServerNumbers.`0`
     - typings.oauth2Server.oauth2ServerBooleans.`false`
     - scala.Null
-    - `js.undefined`
+    - js.UndefOr[scala.Nothing]
   */
   type Falsey = js.UndefOr[typings.oauth2Server.mod._Falsey | scala.Null]
   /**

@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
   - typings.antd.antdStrings.primary
   - typings.antd.antdStrings.ghost
   - typings.antd.antdStrings.dashed
-  - typings.antd.antdStrings.danger
   - typings.antd.antdStrings.link
 */
-trait ButtonType extends js.Object
+trait ButtonType extends LegacyButtonType
 

@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.ViewManagement.ActivationViewSwitcher")
 @js.native
-abstract class ActivationViewSwitcher () extends js.Object {
+trait ActivationViewSwitcher extends js.Object {
   var isViewPresentedOnActivationVirtualDesktop: js.Any = js.native
   /**
     * Shows the view in a new standalone window.

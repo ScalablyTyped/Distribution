@@ -7,14 +7,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.relayRuntime.AnonArgs
-  - typings.relayRuntime.AnonConnectionID
+  - typings.relayRuntime.anon.Args
+  - typings.relayRuntime.anon.ConnectionID
 */
 trait ConnectionInternalEvent extends js.Object
 
 object ConnectionInternalEvent {
   @scala.inline
-  def AnonArgs(
+  def Args(
     args: Variables,
     connectionID: ConnectionID,
     edgeIDs: js.Array[String],
@@ -26,9 +26,9 @@ object ConnectionInternalEvent {
     __obj.asInstanceOf[ConnectionInternalEvent]
   }
   @scala.inline
-  def AnonConnectionID(
+  def ConnectionID(
     args: Variables,
-    connectionID: ConnectionID,
+    connectionID: typings.relayRuntime.relayConnectionMod.ConnectionID,
     edgeID: String,
     kind: String,
     request: RequestDescriptor

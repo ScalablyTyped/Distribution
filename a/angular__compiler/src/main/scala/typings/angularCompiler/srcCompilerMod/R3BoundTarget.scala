@@ -1,6 +1,6 @@
 package typings.angularCompiler.srcCompilerMod
 
-import typings.angularCompiler.AnonDirective
+import typings.angularCompiler.anon.Directive
 import typings.angularCompiler.r3AstMod.BoundAttribute
 import typings.angularCompiler.r3AstMod.BoundEvent
 import typings.angularCompiler.r3AstMod.Reference
@@ -28,7 +28,7 @@ class R3BoundTarget[DirectiveT /* <: DirectiveMeta */] protected ()
       ],
     references: Map[
         BoundAttribute | BoundEvent | Reference | TextAttribute, 
-        AnonDirective[DirectiveT] | typings.angularCompiler.r3AstMod.Element | Template
+        Directive[DirectiveT] | typings.angularCompiler.r3AstMod.Element | Template
       ],
     exprTargets: Map[typings.angularCompiler.astMod.AST, Reference | Variable],
     symbols: Map[Reference | Variable, Template],

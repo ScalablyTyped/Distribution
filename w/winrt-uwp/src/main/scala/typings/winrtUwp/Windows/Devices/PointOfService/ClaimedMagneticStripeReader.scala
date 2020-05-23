@@ -18,9 +18,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the claimed magnetic stripe reader. */
-@JSGlobal("Windows.Devices.PointOfService.ClaimedMagneticStripeReader")
 @js.native
-abstract class ClaimedMagneticStripeReader () extends js.Object {
+trait ClaimedMagneticStripeReader extends js.Object {
   /** Gets or sets the MagneticStripeReaderEncryptionAlgorithms that will be used to encrypt the track data. */
   var dataEncryptionAlgorithm: Double = js.native
    /* unmapped return type */ /** Gets the DeviceInformation.Id of the claimed magnetic stripe reader. */

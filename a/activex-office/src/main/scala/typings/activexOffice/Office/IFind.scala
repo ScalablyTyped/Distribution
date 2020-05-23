@@ -6,9 +6,8 @@ import scala.scalajs.js.annotation._
 
 /** For Macintosh only */
 // tslint:disable-next-line:interface-name
-@JSGlobal("Office.IFind")
 @js.native
-class IFind protected () extends js.Object {
+trait IFind extends js.Object {
   var Author: String = js.native
   var DateCreatedFrom: js.Any = js.native
   var DateCreatedTo: js.Any = js.native

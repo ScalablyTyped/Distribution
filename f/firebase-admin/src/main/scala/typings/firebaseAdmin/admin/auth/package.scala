@@ -8,5 +8,5 @@ package object auth {
   /**
     * Interface representing the properties to set on a new tenant.
     */
-  type CreateTenantRequest = typings.firebaseAdmin.admin.auth.UpdateTenantRequest
+  type CreateTenantRequest = typings.firebaseAdmin.authMod.admin.auth.UpdateTenantRequest
 }

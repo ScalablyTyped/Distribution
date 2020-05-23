@@ -6,14 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-@JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult")
-@js.native
-abstract class XboxLiveQualityOfServicePrivatePayloadResult () extends js.Object {
+trait XboxLiveQualityOfServicePrivatePayloadResult extends js.Object {
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var deviceAddress: XboxLiveDeviceAddress = js.native
+  var deviceAddress: XboxLiveDeviceAddress
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var status: XboxLiveQualityOfServiceMeasurementStatus = js.native
+  var status: XboxLiveQualityOfServiceMeasurementStatus
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var value: IBuffer = js.native
+  var value: IBuffer
+}
+
+object XboxLiveQualityOfServicePrivatePayloadResult {
+  @scala.inline
+  def apply(
+    deviceAddress: XboxLiveDeviceAddress,
+    status: XboxLiveQualityOfServiceMeasurementStatus,
+    value: IBuffer
+  ): XboxLiveQualityOfServicePrivatePayloadResult = {
+    val __obj = js.Dynamic.literal(deviceAddress = deviceAddress.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[XboxLiveQualityOfServicePrivatePayloadResult]
+  }
 }
 

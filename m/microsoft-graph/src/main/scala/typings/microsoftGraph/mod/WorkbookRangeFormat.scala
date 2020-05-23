@@ -38,27 +38,27 @@ object WorkbookRangeFormat {
   @scala.inline
   def apply(
     borders: js.Array[WorkbookRangeBorder] = null,
-    columnWidth: Int | Double = null,
+    columnWidth: js.UndefOr[Double] = js.undefined,
     fill: WorkbookRangeFill = null,
     font: WorkbookRangeFont = null,
     horizontalAlignment: String = null,
     id: String = null,
     protection: WorkbookFormatProtection = null,
-    rowHeight: Int | Double = null,
+    rowHeight: js.UndefOr[Double] = js.undefined,
     verticalAlignment: String = null,
     wrapText: js.UndefOr[Boolean] = js.undefined
   ): WorkbookRangeFormat = {
     val __obj = js.Dynamic.literal()
     if (borders != null) __obj.updateDynamic("borders")(borders.asInstanceOf[js.Any])
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnWidth)) __obj.updateDynamic("columnWidth")(columnWidth.get.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (protection != null) __obj.updateDynamic("protection")(protection.asInstanceOf[js.Any])
-    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowHeight)) __obj.updateDynamic("rowHeight")(rowHeight.get.asInstanceOf[js.Any])
     if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapText)) __obj.updateDynamic("wrapText")(wrapText.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapText)) __obj.updateDynamic("wrapText")(wrapText.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookRangeFormat]
   }
 }

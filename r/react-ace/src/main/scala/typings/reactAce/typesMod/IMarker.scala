@@ -27,7 +27,7 @@ object IMarker {
   ): IMarker = {
     val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], endCol = endCol.asInstanceOf[js.Any], endRow = endRow.asInstanceOf[js.Any], startCol = startCol.asInstanceOf[js.Any], startRow = startRow.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(inFront)) __obj.updateDynamic("inFront")(inFront.asInstanceOf[js.Any])
+    if (!js.isUndefined(inFront)) __obj.updateDynamic("inFront")(inFront.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMarker]
   }
 }

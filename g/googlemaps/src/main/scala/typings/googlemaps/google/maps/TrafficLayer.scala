@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.maps.TrafficLayer")
 @js.native
-class TrafficLayer () extends MVCObject {
-  def this(opts: TrafficLayerOptions) = this()
+trait TrafficLayer extends MVCObject {
   def getMap(): Map[Element] = js.native
   def setMap(): Unit = js.native
   def setMap(map: Map[Element]): Unit = js.native

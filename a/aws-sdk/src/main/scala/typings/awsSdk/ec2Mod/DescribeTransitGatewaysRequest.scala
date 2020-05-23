@@ -31,16 +31,16 @@ trait DescribeTransitGatewaysRequest extends js.Object {
 object DescribeTransitGatewaysRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     Filters: FilterList = null,
-    MaxResults: Int | scala.Double = null,
+    MaxResults: js.UndefOr[TransitGatewayMaxResults] = js.undefined,
     NextToken: String = null,
     TransitGatewayIds: TransitGatewayIdStringList = null
   ): DescribeTransitGatewaysRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (TransitGatewayIds != null) __obj.updateDynamic("TransitGatewayIds")(TransitGatewayIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTransitGatewaysRequest]

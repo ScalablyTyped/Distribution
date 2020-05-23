@@ -37,9 +37,9 @@ object Layer {
     filter: js.Array[_] = null,
     interactive: js.UndefOr[Boolean] = js.undefined,
     layout: AnyLayout = null,
-    maxzoom: Int | Double = null,
+    maxzoom: js.UndefOr[Double] = js.undefined,
     metadata: js.Any = null,
-    minzoom: Int | Double = null,
+    minzoom: js.UndefOr[Double] = js.undefined,
     paint: AnyPaint = null,
     ref: String = null,
     source: String | AnySourceData = null,
@@ -48,11 +48,11 @@ object Layer {
   ): Layer = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
+    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.get.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (maxzoom != null) __obj.updateDynamic("maxzoom")(maxzoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxzoom)) __obj.updateDynamic("maxzoom")(maxzoom.get.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (minzoom != null) __obj.updateDynamic("minzoom")(minzoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(minzoom)) __obj.updateDynamic("minzoom")(minzoom.get.asInstanceOf[js.Any])
     if (paint != null) __obj.updateDynamic("paint")(paint.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])

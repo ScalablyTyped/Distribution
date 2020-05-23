@@ -34,38 +34,38 @@ trait ExifOptions extends js.Object {
 object ExifOptions {
   @scala.inline
   def apply(
-    agfaMaxEntries: Int | Double = null,
-    epsonMaxEntries: Int | Double = null,
+    agfaMaxEntries: js.UndefOr[Double] = js.undefined,
+    epsonMaxEntries: js.UndefOr[Double] = js.undefined,
     fixThumbnailOffset: js.UndefOr[Boolean] = js.undefined,
-    fujifilmMaxEntries: Int | Double = null,
-    ifd0MaxEntries: Int | Double = null,
-    ifd1MaxEntries: Int | Double = null,
+    fujifilmMaxEntries: js.UndefOr[Double] = js.undefined,
+    ifd0MaxEntries: js.UndefOr[Double] = js.undefined,
+    ifd1MaxEntries: js.UndefOr[Double] = js.undefined,
     image: String | Buffer = null,
-    maxEntries: Int | Double = null,
-    maxGpsEntries: Int | Double = null,
-    maxInteroperabilityEntries: Int | Double = null,
+    maxEntries: js.UndefOr[Double] = js.undefined,
+    maxGpsEntries: js.UndefOr[Double] = js.undefined,
+    maxInteroperabilityEntries: js.UndefOr[Double] = js.undefined,
     noPadding: js.UndefOr[Boolean] = js.undefined,
-    olympusMaxEntries: Int | Double = null,
-    panasonicMaxEntries: Int | Double = null,
-    sanyoMaxEntries: Int | Double = null,
-    tiffOffsets: Int | Double = null
+    olympusMaxEntries: js.UndefOr[Double] = js.undefined,
+    panasonicMaxEntries: js.UndefOr[Double] = js.undefined,
+    sanyoMaxEntries: js.UndefOr[Double] = js.undefined,
+    tiffOffsets: js.UndefOr[Double] = js.undefined
   ): ExifOptions = {
     val __obj = js.Dynamic.literal()
-    if (agfaMaxEntries != null) __obj.updateDynamic("agfaMaxEntries")(agfaMaxEntries.asInstanceOf[js.Any])
-    if (epsonMaxEntries != null) __obj.updateDynamic("epsonMaxEntries")(epsonMaxEntries.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixThumbnailOffset)) __obj.updateDynamic("fixThumbnailOffset")(fixThumbnailOffset.asInstanceOf[js.Any])
-    if (fujifilmMaxEntries != null) __obj.updateDynamic("fujifilmMaxEntries")(fujifilmMaxEntries.asInstanceOf[js.Any])
-    if (ifd0MaxEntries != null) __obj.updateDynamic("ifd0MaxEntries")(ifd0MaxEntries.asInstanceOf[js.Any])
-    if (ifd1MaxEntries != null) __obj.updateDynamic("ifd1MaxEntries")(ifd1MaxEntries.asInstanceOf[js.Any])
+    if (!js.isUndefined(agfaMaxEntries)) __obj.updateDynamic("agfaMaxEntries")(agfaMaxEntries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(epsonMaxEntries)) __obj.updateDynamic("epsonMaxEntries")(epsonMaxEntries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixThumbnailOffset)) __obj.updateDynamic("fixThumbnailOffset")(fixThumbnailOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fujifilmMaxEntries)) __obj.updateDynamic("fujifilmMaxEntries")(fujifilmMaxEntries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ifd0MaxEntries)) __obj.updateDynamic("ifd0MaxEntries")(ifd0MaxEntries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ifd1MaxEntries)) __obj.updateDynamic("ifd1MaxEntries")(ifd1MaxEntries.get.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (maxEntries != null) __obj.updateDynamic("maxEntries")(maxEntries.asInstanceOf[js.Any])
-    if (maxGpsEntries != null) __obj.updateDynamic("maxGpsEntries")(maxGpsEntries.asInstanceOf[js.Any])
-    if (maxInteroperabilityEntries != null) __obj.updateDynamic("maxInteroperabilityEntries")(maxInteroperabilityEntries.asInstanceOf[js.Any])
-    if (!js.isUndefined(noPadding)) __obj.updateDynamic("noPadding")(noPadding.asInstanceOf[js.Any])
-    if (olympusMaxEntries != null) __obj.updateDynamic("olympusMaxEntries")(olympusMaxEntries.asInstanceOf[js.Any])
-    if (panasonicMaxEntries != null) __obj.updateDynamic("panasonicMaxEntries")(panasonicMaxEntries.asInstanceOf[js.Any])
-    if (sanyoMaxEntries != null) __obj.updateDynamic("sanyoMaxEntries")(sanyoMaxEntries.asInstanceOf[js.Any])
-    if (tiffOffsets != null) __obj.updateDynamic("tiffOffsets")(tiffOffsets.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxEntries)) __obj.updateDynamic("maxEntries")(maxEntries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxGpsEntries)) __obj.updateDynamic("maxGpsEntries")(maxGpsEntries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxInteroperabilityEntries)) __obj.updateDynamic("maxInteroperabilityEntries")(maxInteroperabilityEntries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noPadding)) __obj.updateDynamic("noPadding")(noPadding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(olympusMaxEntries)) __obj.updateDynamic("olympusMaxEntries")(olympusMaxEntries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(panasonicMaxEntries)) __obj.updateDynamic("panasonicMaxEntries")(panasonicMaxEntries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sanyoMaxEntries)) __obj.updateDynamic("sanyoMaxEntries")(sanyoMaxEntries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tiffOffsets)) __obj.updateDynamic("tiffOffsets")(tiffOffsets.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExifOptions]
   }
 }

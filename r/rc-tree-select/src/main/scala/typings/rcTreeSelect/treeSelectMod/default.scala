@@ -14,9 +14,9 @@ class default[ValueType] () extends TreeSelect[ValueType]
 @JSImport("rc-tree-select/lib/TreeSelect", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var SHOW_ALL: typings.rcTreeSelect.rcTreeSelectStrings.SHOW_ALL = js.native
-  var SHOW_CHILD: typings.rcTreeSelect.rcTreeSelectStrings.SHOW_CHILD = js.native
-  var SHOW_PARENT: typings.rcTreeSelect.rcTreeSelectStrings.SHOW_PARENT = js.native
+  var SHOW_ALL: /* "SHOW_ALL" */ String = js.native
+  var SHOW_CHILD: /* "SHOW_CHILD" */ String = js.native
+  var SHOW_PARENT: /* "SHOW_PARENT" */ String = js.native
   var TreeNode: FC[TreeNodeProps] = js.native
 }
 

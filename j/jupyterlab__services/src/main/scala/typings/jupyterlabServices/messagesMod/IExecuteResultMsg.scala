@@ -1,6 +1,6 @@
 package typings.jupyterlabServices.messagesMod
 
-import typings.jupyterlabServices.AnonTransient
+import typings.jupyterlabServices.anon.Transient
 import typings.jupyterlabServices.jupyterlabServicesStrings.execute_result
 import typings.jupyterlabServices.jupyterlabServicesStrings.iopub
 import typings.luminoCoreutils.jsonMod.JSONObject
@@ -14,14 +14,14 @@ trait IExecuteResultMsg
   extends IIOPubMessage[execute_result]
      with _Message {
   @JSName("content")
-  var content_IExecuteResultMsg: AnonTransient
+  var content_IExecuteResultMsg: Transient
 }
 
 object IExecuteResultMsg {
   @scala.inline
   def apply(
     channel: iopub,
-    content: AnonTransient,
+    content: Transient,
     header: IHeader[execute_result],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,

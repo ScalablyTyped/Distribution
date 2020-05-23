@@ -1,13 +1,13 @@
 package typings.handsontable.mod.Handsontable.plugins
 
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Storage extends js.Object {
   var prefix: String
-  var rootWindow: Window_
+  var rootWindow: Window
   var savedKeys: js.Array[String]
   def clearSavedKeys(): Unit
   def loadSavedKeys(): Unit
@@ -25,7 +25,7 @@ object Storage {
     loadValue: (String, js.Object) => js.Any,
     prefix: String,
     resetAll: () => Unit,
-    rootWindow: Window_,
+    rootWindow: Window,
     saveSavedKeys: () => Unit,
     saveValue: (String, js.Any) => Unit,
     savedKeys: js.Array[String]

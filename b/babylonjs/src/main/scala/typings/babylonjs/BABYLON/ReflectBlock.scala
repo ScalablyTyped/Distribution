@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.ReflectBlock")
 @js.native
-class ReflectBlock protected () extends NodeMaterialBlock {
-  /**
-    * Creates a new ReflectBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait ReflectBlock extends NodeMaterialBlock {
   /**
     * Gets the incident component
     */

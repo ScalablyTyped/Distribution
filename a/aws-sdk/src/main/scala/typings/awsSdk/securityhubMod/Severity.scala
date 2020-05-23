@@ -15,7 +15,11 @@ trait Severity extends js.Object {
     */
   var Normalized: js.UndefOr[Integer] = js.native
   /**
-    * The native severity as defined by the AWS service or integrated partner product that generated the finding.
+    * The native severity from the finding product that generated the finding.
+    */
+  var Original: js.UndefOr[NonEmptyString] = js.native
+  /**
+    * Deprecated. This attribute is being deprecated. Instead of providing Product, provide Original. The native severity as defined by the AWS service or integrated partner product that generated the finding.
     */
   var Product: js.UndefOr[Double] = js.native
 }
@@ -24,13 +28,15 @@ object Severity {
   @scala.inline
   def apply(
     Label: SeverityLabel = null,
-    Normalized: Int | scala.Double = null,
-    Product: Int | scala.Double = null
+    Normalized: js.UndefOr[Integer] = js.undefined,
+    Original: NonEmptyString = null,
+    Product: js.UndefOr[Double] = js.undefined
   ): Severity = {
     val __obj = js.Dynamic.literal()
     if (Label != null) __obj.updateDynamic("Label")(Label.asInstanceOf[js.Any])
-    if (Normalized != null) __obj.updateDynamic("Normalized")(Normalized.asInstanceOf[js.Any])
-    if (Product != null) __obj.updateDynamic("Product")(Product.asInstanceOf[js.Any])
+    if (!js.isUndefined(Normalized)) __obj.updateDynamic("Normalized")(Normalized.get.asInstanceOf[js.Any])
+    if (Original != null) __obj.updateDynamic("Original")(Original.asInstanceOf[js.Any])
+    if (!js.isUndefined(Product)) __obj.updateDynamic("Product")(Product.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Severity]
   }
 }

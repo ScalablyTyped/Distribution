@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonHeight
+import typings.cesium.anon.Height
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "EllipseGeometry")
 @js.native
 class EllipseGeometry protected () extends Packable {
-  def this(options: AnonHeight) = this()
+  def this(options: Height) = this()
 }
 
 /* static members */

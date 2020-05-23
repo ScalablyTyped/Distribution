@@ -62,7 +62,7 @@ object PLoadingOptions {
     if (containerAttrs != null) __obj.updateDynamic("containerAttrs")(containerAttrs.asInstanceOf[js.Any])
     if (containerClass != null) __obj.updateDynamic("containerClass")(containerClass.asInstanceOf[js.Any])
     if (containerHTML != null) __obj.updateDynamic("containerHTML")(containerHTML.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyAfterHide)) __obj.updateDynamic("destroyAfterHide")(destroyAfterHide.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyAfterHide)) __obj.updateDynamic("destroyAfterHide")(destroyAfterHide.get.asInstanceOf[js.Any])
     if (hideAnimation != null) __obj.updateDynamic("hideAnimation")(js.Any.fromFunction1(hideAnimation))
     if (idPrefix != null) __obj.updateDynamic("idPrefix")(idPrefix.asInstanceOf[js.Any])
     if (maskColor != null) __obj.updateDynamic("maskColor")(maskColor.asInstanceOf[js.Any])

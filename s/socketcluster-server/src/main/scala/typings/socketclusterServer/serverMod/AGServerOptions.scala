@@ -110,61 +110,61 @@ trait AGServerOptions
 object AGServerOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* additionalOptions */ StringDictionary[js.Any] = null,
-    ackTimeout: Int | Double = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    ackTimeout: js.UndefOr[Double] = js.undefined,
     allowClientPublish: js.UndefOr[Boolean] = js.undefined,
     authAlgorithm: String = null,
-    authDefaultExpiry: Int | Double = null,
+    authDefaultExpiry: js.UndefOr[Double] = js.undefined,
     authEngine: SCAuthEngine = null,
     authKey: Secret = null,
     authPrivateKey: Secret = null,
     authPublicKey: Secret = null,
     authVerifyAlgorithms: js.Array[String] = null,
-    batchInterval: Int | Double = null,
+    batchInterval: js.UndefOr[Double] = js.undefined,
     batchOnHandshake: js.UndefOr[Boolean] = js.undefined,
-    batchOnHandshakeDuration: Int | Double = null,
+    batchOnHandshakeDuration: js.UndefOr[Double] = js.undefined,
     cloneData: js.UndefOr[Boolean] = js.undefined,
     codecEngine: CodecEngine = null,
-    handshakeTimeout: Int | Double = null,
+    handshakeTimeout: js.UndefOr[Double] = js.undefined,
     httpServer: Server = null,
     middlewareEmitFailures: js.UndefOr[Boolean] = js.undefined,
     origins: String = null,
     path: String = null,
     perMessageDeflate: Boolean | js.Object = null,
-    pingInterval: Int | Double = null,
-    pingTimeout: Int | Double = null,
+    pingInterval: js.UndefOr[Double] = js.undefined,
+    pingTimeout: js.UndefOr[Double] = js.undefined,
     protocolVersion: `1` | `2` = null,
-    socketChannelLimit: Int | Double = null,
+    socketChannelLimit: js.UndefOr[Double] = js.undefined,
     socketStreamCleanupMode: kill | close = null,
     wsEngine: js.Any = null,
     wsEngineServerOptions: ClientOptions = null
   ): AGServerOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (ackTimeout != null) __obj.updateDynamic("ackTimeout")(ackTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowClientPublish)) __obj.updateDynamic("allowClientPublish")(allowClientPublish.asInstanceOf[js.Any])
+    if (!js.isUndefined(ackTimeout)) __obj.updateDynamic("ackTimeout")(ackTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowClientPublish)) __obj.updateDynamic("allowClientPublish")(allowClientPublish.get.asInstanceOf[js.Any])
     if (authAlgorithm != null) __obj.updateDynamic("authAlgorithm")(authAlgorithm.asInstanceOf[js.Any])
-    if (authDefaultExpiry != null) __obj.updateDynamic("authDefaultExpiry")(authDefaultExpiry.asInstanceOf[js.Any])
+    if (!js.isUndefined(authDefaultExpiry)) __obj.updateDynamic("authDefaultExpiry")(authDefaultExpiry.get.asInstanceOf[js.Any])
     if (authEngine != null) __obj.updateDynamic("authEngine")(authEngine.asInstanceOf[js.Any])
     if (authKey != null) __obj.updateDynamic("authKey")(authKey.asInstanceOf[js.Any])
     if (authPrivateKey != null) __obj.updateDynamic("authPrivateKey")(authPrivateKey.asInstanceOf[js.Any])
     if (authPublicKey != null) __obj.updateDynamic("authPublicKey")(authPublicKey.asInstanceOf[js.Any])
     if (authVerifyAlgorithms != null) __obj.updateDynamic("authVerifyAlgorithms")(authVerifyAlgorithms.asInstanceOf[js.Any])
-    if (batchInterval != null) __obj.updateDynamic("batchInterval")(batchInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(batchOnHandshake)) __obj.updateDynamic("batchOnHandshake")(batchOnHandshake.asInstanceOf[js.Any])
-    if (batchOnHandshakeDuration != null) __obj.updateDynamic("batchOnHandshakeDuration")(batchOnHandshakeDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(cloneData)) __obj.updateDynamic("cloneData")(cloneData.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchInterval)) __obj.updateDynamic("batchInterval")(batchInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchOnHandshake)) __obj.updateDynamic("batchOnHandshake")(batchOnHandshake.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchOnHandshakeDuration)) __obj.updateDynamic("batchOnHandshakeDuration")(batchOnHandshakeDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cloneData)) __obj.updateDynamic("cloneData")(cloneData.get.asInstanceOf[js.Any])
     if (codecEngine != null) __obj.updateDynamic("codecEngine")(codecEngine.asInstanceOf[js.Any])
-    if (handshakeTimeout != null) __obj.updateDynamic("handshakeTimeout")(handshakeTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(handshakeTimeout)) __obj.updateDynamic("handshakeTimeout")(handshakeTimeout.get.asInstanceOf[js.Any])
     if (httpServer != null) __obj.updateDynamic("httpServer")(httpServer.asInstanceOf[js.Any])
-    if (!js.isUndefined(middlewareEmitFailures)) __obj.updateDynamic("middlewareEmitFailures")(middlewareEmitFailures.asInstanceOf[js.Any])
+    if (!js.isUndefined(middlewareEmitFailures)) __obj.updateDynamic("middlewareEmitFailures")(middlewareEmitFailures.get.asInstanceOf[js.Any])
     if (origins != null) __obj.updateDynamic("origins")(origins.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (perMessageDeflate != null) __obj.updateDynamic("perMessageDeflate")(perMessageDeflate.asInstanceOf[js.Any])
-    if (pingInterval != null) __obj.updateDynamic("pingInterval")(pingInterval.asInstanceOf[js.Any])
-    if (pingTimeout != null) __obj.updateDynamic("pingTimeout")(pingTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(pingInterval)) __obj.updateDynamic("pingInterval")(pingInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pingTimeout)) __obj.updateDynamic("pingTimeout")(pingTimeout.get.asInstanceOf[js.Any])
     if (protocolVersion != null) __obj.updateDynamic("protocolVersion")(protocolVersion.asInstanceOf[js.Any])
-    if (socketChannelLimit != null) __obj.updateDynamic("socketChannelLimit")(socketChannelLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(socketChannelLimit)) __obj.updateDynamic("socketChannelLimit")(socketChannelLimit.get.asInstanceOf[js.Any])
     if (socketStreamCleanupMode != null) __obj.updateDynamic("socketStreamCleanupMode")(socketStreamCleanupMode.asInstanceOf[js.Any])
     if (wsEngine != null) __obj.updateDynamic("wsEngine")(wsEngine.asInstanceOf[js.Any])
     if (wsEngineServerOptions != null) __obj.updateDynamic("wsEngineServerOptions")(wsEngineServerOptions.asInstanceOf[js.Any])

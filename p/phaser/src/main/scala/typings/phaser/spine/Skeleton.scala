@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("spine.Skeleton")
 @js.native
-class Skeleton protected () extends js.Object {
-  def this(data: SkeletonData) = this()
+trait Skeleton extends js.Object {
   var _updateCache: js.Array[Updatable] = js.native
   var bones: js.Array[Bone] = js.native
   var color: Color = js.native

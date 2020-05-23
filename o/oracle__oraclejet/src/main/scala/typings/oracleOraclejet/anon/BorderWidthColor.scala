@@ -1,0 +1,78 @@
+package typings.oracleOraclejet.anon
+
+import typings.oracleOraclejet.oracleOraclejetStrings.circle
+import typings.oracleOraclejet.oracleOraclejetStrings.diamond
+import typings.oracleOraclejet.oracleOraclejetStrings.ellipse
+import typings.oracleOraclejet.oracleOraclejetStrings.human
+import typings.oracleOraclejet.oracleOraclejetStrings.largeChecker
+import typings.oracleOraclejet.oracleOraclejetStrings.largeCrosshatch
+import typings.oracleOraclejet.oracleOraclejetStrings.largeDiagonalLeft
+import typings.oracleOraclejet.oracleOraclejetStrings.largeDiagonalRight
+import typings.oracleOraclejet.oracleOraclejetStrings.largeDiamond
+import typings.oracleOraclejet.oracleOraclejetStrings.largeTriangle
+import typings.oracleOraclejet.oracleOraclejetStrings.none
+import typings.oracleOraclejet.oracleOraclejetStrings.plus
+import typings.oracleOraclejet.oracleOraclejetStrings.rectangle
+import typings.oracleOraclejet.oracleOraclejetStrings.smallChecker
+import typings.oracleOraclejet.oracleOraclejetStrings.smallCrosshatch
+import typings.oracleOraclejet.oracleOraclejetStrings.smallDiagonalLeft
+import typings.oracleOraclejet.oracleOraclejetStrings.smallDiagonalRight
+import typings.oracleOraclejet.oracleOraclejetStrings.smallDiamond
+import typings.oracleOraclejet.oracleOraclejetStrings.smallTriangle
+import typings.oracleOraclejet.oracleOraclejetStrings.square
+import typings.oracleOraclejet.oracleOraclejetStrings.star
+import typings.oracleOraclejet.oracleOraclejetStrings.triangleDown
+import typings.oracleOraclejet.oracleOraclejetStrings.triangleUp
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait BorderWidthColor extends js.Object {
+  var borderColor: js.UndefOr[String] = js.undefined
+  var borderRadius: js.UndefOr[String] = js.undefined
+  var borderWidth: Double
+  var color: js.UndefOr[String] = js.undefined
+  var height: js.UndefOr[Double | Null] = js.undefined
+  var opacity: Double
+  var pattern: js.UndefOr[
+    largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none | smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle
+  ] = js.undefined
+  var shape: js.UndefOr[
+    circle | diamond | ellipse | human | plus | rectangle | square | star | triangleDown | triangleUp | String
+  ] = js.undefined
+  var source: js.UndefOr[String | Null] = js.undefined
+  var svgClassName: String
+  var svgStyle: js.UndefOr[js.Object | Null] = js.undefined
+  var width: js.UndefOr[Double | Null] = js.undefined
+}
+
+object BorderWidthColor {
+  @scala.inline
+  def apply(
+    borderWidth: Double,
+    opacity: Double,
+    svgClassName: String,
+    borderColor: String = null,
+    borderRadius: String = null,
+    color: String = null,
+    height: js.UndefOr[Null | Double] = js.undefined,
+    pattern: largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none | smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle = null,
+    shape: circle | diamond | ellipse | human | plus | rectangle | square | star | triangleDown | triangleUp | String = null,
+    source: js.UndefOr[Null | String] = js.undefined,
+    svgStyle: js.UndefOr[Null | js.Object] = js.undefined,
+    width: js.UndefOr[Null | Double] = js.undefined
+  ): BorderWidthColor = {
+    val __obj = js.Dynamic.literal(borderWidth = borderWidth.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], svgClassName = svgClassName.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+    if (!js.isUndefined(source)) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (!js.isUndefined(svgStyle)) __obj.updateDynamic("svgStyle")(svgStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BorderWidthColor]
+  }
+}
+

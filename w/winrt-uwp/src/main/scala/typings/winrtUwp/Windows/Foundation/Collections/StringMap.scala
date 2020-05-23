@@ -8,10 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** An associative collection, also known as a map or a dictionary. */
-@JSGlobal("Windows.Foundation.Collections.StringMap")
 @js.native
-/** Creates and initializes a new instance of the StringMap. */
-class StringMap () extends js.Object {
+trait StringMap extends js.Object {
   /** Occurs when the contents of the map change. */
   @JSName("onmapchanged")
   var onmapchanged_Original: MapChangedEventHandler[String, String] = js.native

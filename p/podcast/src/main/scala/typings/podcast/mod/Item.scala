@@ -46,17 +46,17 @@ object Item {
     enclosure: ItemEnclosure = null,
     guid: String = null,
     itunesAuthor: String = null,
-    itunesDuration: Int | Double = null,
-    itunesEpisode: Int | Double = null,
+    itunesDuration: js.UndefOr[Double] = js.undefined,
+    itunesEpisode: js.UndefOr[Double] = js.undefined,
     itunesEpisodeType: full | trailer | bonus = null,
     itunesExplicit: js.UndefOr[Boolean] = js.undefined,
     itunesImage: String = null,
-    itunesSeason: Int | Double = null,
+    itunesSeason: js.UndefOr[Double] = js.undefined,
     itunesSubtitle: String = null,
     itunesSummary: String = null,
     itunesTitle: String = null,
-    lat: Int | Double = null,
-    long: Int | Double = null,
+    lat: js.UndefOr[Double] = js.undefined,
+    long: js.UndefOr[Double] = js.undefined,
     title: String = null
   ): Item = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
@@ -68,17 +68,17 @@ object Item {
     if (enclosure != null) __obj.updateDynamic("enclosure")(enclosure.asInstanceOf[js.Any])
     if (guid != null) __obj.updateDynamic("guid")(guid.asInstanceOf[js.Any])
     if (itunesAuthor != null) __obj.updateDynamic("itunesAuthor")(itunesAuthor.asInstanceOf[js.Any])
-    if (itunesDuration != null) __obj.updateDynamic("itunesDuration")(itunesDuration.asInstanceOf[js.Any])
-    if (itunesEpisode != null) __obj.updateDynamic("itunesEpisode")(itunesEpisode.asInstanceOf[js.Any])
+    if (!js.isUndefined(itunesDuration)) __obj.updateDynamic("itunesDuration")(itunesDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(itunesEpisode)) __obj.updateDynamic("itunesEpisode")(itunesEpisode.get.asInstanceOf[js.Any])
     if (itunesEpisodeType != null) __obj.updateDynamic("itunesEpisodeType")(itunesEpisodeType.asInstanceOf[js.Any])
-    if (!js.isUndefined(itunesExplicit)) __obj.updateDynamic("itunesExplicit")(itunesExplicit.asInstanceOf[js.Any])
+    if (!js.isUndefined(itunesExplicit)) __obj.updateDynamic("itunesExplicit")(itunesExplicit.get.asInstanceOf[js.Any])
     if (itunesImage != null) __obj.updateDynamic("itunesImage")(itunesImage.asInstanceOf[js.Any])
-    if (itunesSeason != null) __obj.updateDynamic("itunesSeason")(itunesSeason.asInstanceOf[js.Any])
+    if (!js.isUndefined(itunesSeason)) __obj.updateDynamic("itunesSeason")(itunesSeason.get.asInstanceOf[js.Any])
     if (itunesSubtitle != null) __obj.updateDynamic("itunesSubtitle")(itunesSubtitle.asInstanceOf[js.Any])
     if (itunesSummary != null) __obj.updateDynamic("itunesSummary")(itunesSummary.asInstanceOf[js.Any])
     if (itunesTitle != null) __obj.updateDynamic("itunesTitle")(itunesTitle.asInstanceOf[js.Any])
-    if (lat != null) __obj.updateDynamic("lat")(lat.asInstanceOf[js.Any])
-    if (long != null) __obj.updateDynamic("long")(long.asInstanceOf[js.Any])
+    if (!js.isUndefined(lat)) __obj.updateDynamic("lat")(lat.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(long)) __obj.updateDynamic("long")(long.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Item]
   }

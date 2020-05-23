@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 object outputFileSync extends js.Object {
   def apply(file: String, data: js.Any): Unit = js.native
   def apply(file: String, data: js.Any, options: String): Unit = js.native
-  def apply(file: String, data: js.Any, options: typings.node.fsMod.WriteFileOptions): Unit = js.native
+  def apply(file: String, data: js.Any, options: WriteFileOptions): Unit = js.native
 }
 

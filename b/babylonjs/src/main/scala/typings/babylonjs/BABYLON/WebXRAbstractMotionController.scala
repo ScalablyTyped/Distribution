@@ -1,47 +1,13 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.AnonFilename
 import typings.babylonjs.XRFrame
+import typings.babylonjs.anon.Filename
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.WebXRAbstractMotionController")
 @js.native
-abstract class WebXRAbstractMotionController protected () extends IDisposable {
-  /**
-    * constructs a new abstract motion controller
-    * @param scene the scene to which the model of the controller will be added
-    * @param layout The profile layout to load
-    * @param gamepadObject The gamepad object correlating to this controller
-    * @param handness handness (left/right/none) of this controller
-    * @param _doNotLoadControllerMesh set this flag to ignore the mesh loading
-    */
-  def this(
-    scene: Scene,
-    layout: IMotionControllerLayout,
-    /**
-    * The gamepad object correlating to this controller
-    */
-  gamepadObject: IMinimalMotionControllerObject,
-    /**
-    * handness (left/right/none) of this controller
-    */
-  handness: MotionControllerHandness
-  ) = this()
-  def this(
-    scene: Scene,
-    layout: IMotionControllerLayout,
-    /**
-    * The gamepad object correlating to this controller
-    */
-  gamepadObject: IMinimalMotionControllerObject,
-    /**
-    * handness (left/right/none) of this controller
-    */
-  handness: MotionControllerHandness,
-    _doNotLoadControllerMesh: Boolean
-  ) = this()
+trait WebXRAbstractMotionController extends IDisposable {
   var _getGenericFilenameAndPath: js.Any = js.native
   var _getGenericParentMesh: js.Any = js.native
   var _initComponent: js.Any = js.native
@@ -82,7 +48,7 @@ abstract class WebXRAbstractMotionController protected () extends IDisposable {
     * Get the filename and path for this controller's model
     * @returns a map of filename and path
     */
-  /* protected */ def _getFilenameAndPath(): AnonFilename = js.native
+  /* protected */ def _getFilenameAndPath(): Filename = js.native
   /* protected */ def _getImmediateChildByName(node: AbstractMesh, name: String): AbstractMesh = js.native
   /**
     * This function is called before the mesh is loaded. It checks for loading constraints.
@@ -115,11 +81,6 @@ abstract class WebXRAbstractMotionController protected () extends IDisposable {
     * @param xrFrame the current xrFrame
     */
   /* protected */ def _updateModel(xrFrame: XRFrame): Unit = js.native
-  /**
-    * Releases all held resources
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
   /**
     * Returns all components of specific type
     * @param type the type to search for

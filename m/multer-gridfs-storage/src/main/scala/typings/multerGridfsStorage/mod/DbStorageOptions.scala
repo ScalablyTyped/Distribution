@@ -4,7 +4,7 @@ import typings.mongodb.mod.Db
 import typings.mongodb.mod.MongoClient
 import typings.mongoose.mod.Connection_
 import typings.mongoose.mod.Mongoose
-import typings.multerGridfsStorage.mod._Global_.Express.Multer.File
+import typings.multerGridfsStorage.mod.global.Express.Multer.File
 import typings.std.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`

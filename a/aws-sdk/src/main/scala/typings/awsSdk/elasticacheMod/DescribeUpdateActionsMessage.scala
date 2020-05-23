@@ -54,24 +54,24 @@ object DescribeUpdateActionsMessage {
     CacheClusterIds: CacheClusterIdList = null,
     Engine: String = null,
     Marker: String = null,
-    MaxRecords: Int | scala.Double = null,
+    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
     ReplicationGroupIds: ReplicationGroupIdList = null,
     ServiceUpdateName: String = null,
     ServiceUpdateStatus: ServiceUpdateStatusList = null,
     ServiceUpdateTimeRange: TimeRangeFilter = null,
-    ShowNodeLevelUpdateStatus: js.UndefOr[scala.Boolean] = js.undefined,
+    ShowNodeLevelUpdateStatus: js.UndefOr[BooleanOptional] = js.undefined,
     UpdateActionStatus: UpdateActionStatusList = null
   ): DescribeUpdateActionsMessage = {
     val __obj = js.Dynamic.literal()
     if (CacheClusterIds != null) __obj.updateDynamic("CacheClusterIds")(CacheClusterIds.asInstanceOf[js.Any])
     if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     if (ReplicationGroupIds != null) __obj.updateDynamic("ReplicationGroupIds")(ReplicationGroupIds.asInstanceOf[js.Any])
     if (ServiceUpdateName != null) __obj.updateDynamic("ServiceUpdateName")(ServiceUpdateName.asInstanceOf[js.Any])
     if (ServiceUpdateStatus != null) __obj.updateDynamic("ServiceUpdateStatus")(ServiceUpdateStatus.asInstanceOf[js.Any])
     if (ServiceUpdateTimeRange != null) __obj.updateDynamic("ServiceUpdateTimeRange")(ServiceUpdateTimeRange.asInstanceOf[js.Any])
-    if (!js.isUndefined(ShowNodeLevelUpdateStatus)) __obj.updateDynamic("ShowNodeLevelUpdateStatus")(ShowNodeLevelUpdateStatus.asInstanceOf[js.Any])
+    if (!js.isUndefined(ShowNodeLevelUpdateStatus)) __obj.updateDynamic("ShowNodeLevelUpdateStatus")(ShowNodeLevelUpdateStatus.get.asInstanceOf[js.Any])
     if (UpdateActionStatus != null) __obj.updateDynamic("UpdateActionStatus")(UpdateActionStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeUpdateActionsMessage]
   }

@@ -16,16 +16,16 @@ object MethodConfig {
   @scala.inline
   def apply(
     name: js.Array[MethodConfigName],
-    maxRequestBytes: Int | Double = null,
-    maxResponseBytes: Int | Double = null,
+    maxRequestBytes: js.UndefOr[Double] = js.undefined,
+    maxResponseBytes: js.UndefOr[Double] = js.undefined,
     timeout: String = null,
     waitForReady: js.UndefOr[Boolean] = js.undefined
   ): MethodConfig = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (maxRequestBytes != null) __obj.updateDynamic("maxRequestBytes")(maxRequestBytes.asInstanceOf[js.Any])
-    if (maxResponseBytes != null) __obj.updateDynamic("maxResponseBytes")(maxResponseBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRequestBytes)) __obj.updateDynamic("maxRequestBytes")(maxRequestBytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResponseBytes)) __obj.updateDynamic("maxResponseBytes")(maxResponseBytes.get.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForReady)) __obj.updateDynamic("waitForReady")(waitForReady.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForReady)) __obj.updateDynamic("waitForReady")(waitForReady.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MethodConfig]
   }
 }

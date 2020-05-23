@@ -1,9 +1,9 @@
 package typings.c3.mod
 
-import typings.c3.AnonMin
+import typings.c3.anon.Min
 import typings.c3.c3Strings.drag
 import typings.c3.c3Strings.scroll
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,7 +38,7 @@ trait ZoomOptions extends js.Object {
   /**
     * Set callback that is called when zooming starts. Specified function receives the zoom event.
     */
-  var onzoomstart: js.UndefOr[js.ThisFunction1[/* this */ ChartAPI, /* event */ Event_, Unit]] = js.undefined
+  var onzoomstart: js.UndefOr[js.ThisFunction1[/* this */ ChartAPI, /* event */ Event, Unit]] = js.undefined
   var priveleged: js.UndefOr[Boolean] = js.undefined
   /**
     * Enable to rescale after zooming. If true set, y domain will be updated according to the zoomed region.
@@ -48,7 +48,7 @@ trait ZoomOptions extends js.Object {
     * Set interaction type for zooming
     */
   var `type`: js.UndefOr[scroll | drag] = js.undefined
-  var x: js.UndefOr[AnonMin] = js.undefined
+  var x: js.UndefOr[Min] = js.undefined
 }
 
 object ZoomOptions {
@@ -60,22 +60,22 @@ object ZoomOptions {
     initialRange: Domain = null,
     onzoom: js.ThisFunction1[/* this */ ChartAPI, /* domain */ Domain, Unit] = null,
     onzoomend: js.ThisFunction1[/* this */ ChartAPI, /* domain */ Domain, Unit] = null,
-    onzoomstart: js.ThisFunction1[/* this */ ChartAPI, /* event */ Event_, Unit] = null,
+    onzoomstart: js.ThisFunction1[/* this */ ChartAPI, /* event */ Event, Unit] = null,
     priveleged: js.UndefOr[Boolean] = js.undefined,
     rescale: js.UndefOr[Boolean] = js.undefined,
     `type`: scroll | drag = null,
-    x: AnonMin = null
+    x: Min = null
   ): ZoomOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableDefaultBehavior)) __obj.updateDynamic("disableDefaultBehavior")(disableDefaultBehavior.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableDefaultBehavior)) __obj.updateDynamic("disableDefaultBehavior")(disableDefaultBehavior.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
     if (initialRange != null) __obj.updateDynamic("initialRange")(initialRange.asInstanceOf[js.Any])
     if (onzoom != null) __obj.updateDynamic("onzoom")(onzoom.asInstanceOf[js.Any])
     if (onzoomend != null) __obj.updateDynamic("onzoomend")(onzoomend.asInstanceOf[js.Any])
     if (onzoomstart != null) __obj.updateDynamic("onzoomstart")(onzoomstart.asInstanceOf[js.Any])
-    if (!js.isUndefined(priveleged)) __obj.updateDynamic("priveleged")(priveleged.asInstanceOf[js.Any])
-    if (!js.isUndefined(rescale)) __obj.updateDynamic("rescale")(rescale.asInstanceOf[js.Any])
+    if (!js.isUndefined(priveleged)) __obj.updateDynamic("priveleged")(priveleged.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rescale)) __obj.updateDynamic("rescale")(rescale.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomOptions]

@@ -1,7 +1,7 @@
 
 # Scala.js typings for spotify-web-api-js
 
-Typings are for version 1.2.0
+Typings are for version 1.4.0
 
 ## Library description:
 A client-side JS wrapper for the Spotify Web API

@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientGridView.CustomButtonClick event.
   */
-@JSGlobal("ASPxClientGridViewCustomButtonEventArgs")
-@js.native
-class ASPxClientGridViewCustomButtonEventArgs protected () extends ASPxClientProcessingModeEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientGridViewCustomButtonEventArgs class.
-    * @param visibleIndex An integer value that identifies the row whose custom button has been clicked. This value is assigned to the ASPxClientGridViewCustomButtonEventArgs.visibleIndex property.
-    * @param buttonID An integer value that identifies the clicked custom button. This value is assigned to the ASPxClientGridViewCustomButtonEventArgs.buttonID property.
-    */
-  def this(visibleIndex: Double, buttonID: String) = this()
+trait ASPxClientGridViewCustomButtonEventArgs extends ASPxClientProcessingModeEventArgs {
   /**
     * Gets the value that identifies the custom button.
     */
-  var buttonID: String = js.native
+  var buttonID: String
   /**
     * Gets the value that identifies the row whose custom button has been clicked.
     */
-  var visibleIndex: Double = js.native
+  var visibleIndex: Double
+}
+
+object ASPxClientGridViewCustomButtonEventArgs {
+  @scala.inline
+  def apply(buttonID: String, processOnServer: Boolean, visibleIndex: Double): ASPxClientGridViewCustomButtonEventArgs = {
+    val __obj = js.Dynamic.literal(buttonID = buttonID.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientGridViewCustomButtonEventArgs]
+  }
 }
 

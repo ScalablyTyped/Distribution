@@ -16,16 +16,15 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
-@JSGlobal("Excel.GroupShapeCollection")
 @js.native
-class GroupShapeCollection () extends ClientObject {
+trait GroupShapeCollection extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_GroupShapeCollection: RequestContext = js.native
   /** Gets the loaded child items in this collection. */
   val items: js.Array[Shape] = js.native
   /**
-    * Returns the number of shapes in the shape group. Read-only.
+    * Returns the number of shapes in the shape group.
     *
     * [Api set: ExcelApi 1.9]
     */

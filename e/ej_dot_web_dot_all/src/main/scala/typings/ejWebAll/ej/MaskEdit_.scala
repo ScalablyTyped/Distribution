@@ -1,18 +1,11 @@
 package typings.ejWebAll.ej
 
-import typings.ejWebAll.JQuery
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.MaskEdit")
 @js.native
-class MaskEdit_ protected () extends Widget_ {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.MaskEdit.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.MaskEdit.Model) = this()
+trait MaskEdit_ extends Widget_ {
   var defaults: typings.ejWebAll.ej.MaskEdit.Model = js.native
   @JSName("model")
   var model_MaskEdit_ : typings.ejWebAll.ej.MaskEdit.Model = js.native

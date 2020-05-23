@@ -11,13 +11,11 @@ sealed trait ConstrainMode extends js.Object
 @JSImport("office-ui-fabric-react/lib/components/DetailsList/DetailsList.types", "ConstrainMode")
 @js.native
 object ConstrainMode extends js.Object {
-  /**
-    * If specified, constrains the list to the given layout space.
-    */
+  /** Constrains the list to the given layout space. */
   @js.native
   sealed trait horizontalConstrained extends ConstrainMode
   
-  /** If specified, lets the content grow which allows the page to manage scrolling. */
+  /** Lets the content grow which allows the page to manage scrolling. */
   @js.native
   sealed trait unconstrained extends ConstrainMode
   

@@ -39,7 +39,7 @@ object ConnectionAdvancedParameters {
     if (_serverSslCertificate != null) __obj.updateDynamic("_serverSslCertificate")(_serverSslCertificate.asInstanceOf[js.Any])
     if (databaseName != null) __obj.updateDynamic("databaseName")(databaseName.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (!js.isUndefined(useJDBCCompliantTimeZoneShift)) __obj.updateDynamic("useJDBCCompliantTimeZoneShift")(useJDBCCompliantTimeZoneShift.asInstanceOf[js.Any])
+    if (!js.isUndefined(useJDBCCompliantTimeZoneShift)) __obj.updateDynamic("useJDBCCompliantTimeZoneShift")(useJDBCCompliantTimeZoneShift.get.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionAdvancedParameters]
   }

@@ -14,11 +14,11 @@ object CompactOptions {
   @scala.inline
   def apply(
     fetch: (/* url */ String | Request, /* opts */ js.UndefOr[RequestInit]) => js.Promise[typings.std.Response] = null,
-    interval: Int | Double = null
+    interval: js.UndefOr[Double] = js.undefined
   ): CompactOptions = {
     val __obj = js.Dynamic.literal()
     if (fetch != null) __obj.updateDynamic("fetch")(js.Any.fromFunction2(fetch))
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompactOptions]
   }
 }

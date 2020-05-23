@@ -1,5 +1,6 @@
 package typings.formatjsIntlRelativetimeformat
 
+import typings.formatjsIntlRelativetimeformat.anon.PickIntlRelativeTimeForma
 import typings.formatjsIntlRelativetimeformat.coreMod.IntlRelativeTimeFormatOptions
 import typings.formatjsIntlUtils.relativeTimeTypesMod.RelativeTimeLocaleData
 import typings.formatjsIntlUtils.relativeTimeTypesMod.UnpackedLocaleFieldsData

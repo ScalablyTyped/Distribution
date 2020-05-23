@@ -13,10 +13,10 @@ trait SideInputId extends js.Object {
 
 object SideInputId {
   @scala.inline
-  def apply(declaringStepName: String = null, inputIndex: Int | Double = null): SideInputId = {
+  def apply(declaringStepName: String = null, inputIndex: js.UndefOr[Double] = js.undefined): SideInputId = {
     val __obj = js.Dynamic.literal()
     if (declaringStepName != null) __obj.updateDynamic("declaringStepName")(declaringStepName.asInstanceOf[js.Any])
-    if (inputIndex != null) __obj.updateDynamic("inputIndex")(inputIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputIndex)) __obj.updateDynamic("inputIndex")(inputIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SideInputId]
   }
 }

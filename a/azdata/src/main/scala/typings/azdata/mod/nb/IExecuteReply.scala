@@ -14,9 +14,8 @@ trait IExecuteReply extends js.Object {
 
 object IExecuteReply {
   @scala.inline
-  def apply(status: ok | error | abort, execution_count: Int | Double = null): IExecuteReply = {
-    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
-    if (execution_count != null) __obj.updateDynamic("execution_count")(execution_count.asInstanceOf[js.Any])
+  def apply(status: ok | error | abort, execution_count: Double = null.asInstanceOf[Double]): IExecuteReply = {
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], execution_count = execution_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExecuteReply]
   }
 }

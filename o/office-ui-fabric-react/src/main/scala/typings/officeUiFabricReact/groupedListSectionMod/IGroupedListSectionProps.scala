@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.groupedListSectionMod
 
-import typings.officeUiFabricReact.AnonCallback
+import typings.officeUiFabricReact.anon.Callback
 import typings.officeUiFabricReact.dragdropInterfacesMod.IDragDropEvents
 import typings.officeUiFabricReact.dragdropInterfacesMod.IDragDropHelper
 import typings.officeUiFabricReact.groupFooterTypesMod.IGroupFooterProps
@@ -35,7 +35,7 @@ trait IGroupedListSectionProps extends ClassAttributes[GroupedListSection] {
   /** helper to manage drag/drop across item rows and groups */
   var dragDropHelper: js.UndefOr[IDragDropHelper] = js.native
   /** Event names and corresponding callbacks that will be registered to the group and the rendered elements */
-  var eventsToRegister: js.UndefOr[js.Array[AnonCallback]] = js.native
+  var eventsToRegister: js.UndefOr[js.Array[Callback]] = js.native
   /** Information to pass in to the group footer. */
   var footerProps: js.UndefOr[IGroupFooterProps] = js.native
   /** Grouping item limit. */

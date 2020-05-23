@@ -39,7 +39,7 @@ object IContextualMenuState {
     if (contextualMenuItems != null) __obj.updateDynamic("contextualMenuItems")(contextualMenuItems.asInstanceOf[js.Any])
     if (contextualMenuTarget != null) __obj.updateDynamic("contextualMenuTarget")(contextualMenuTarget.asInstanceOf[js.Any])
     if (dismissedMenuItemKey != null) __obj.updateDynamic("dismissedMenuItemKey")(dismissedMenuItemKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandedByMouseClick)) __obj.updateDynamic("expandedByMouseClick")(expandedByMouseClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandedByMouseClick)) __obj.updateDynamic("expandedByMouseClick")(expandedByMouseClick.get.asInstanceOf[js.Any])
     if (expandedMenuItemKey != null) __obj.updateDynamic("expandedMenuItemKey")(expandedMenuItemKey.asInstanceOf[js.Any])
     if (positions != null) __obj.updateDynamic("positions")(positions.asInstanceOf[js.Any])
     if (slideDirectionalClassName != null) __obj.updateDynamic("slideDirectionalClassName")(slideDirectionalClassName.asInstanceOf[js.Any])

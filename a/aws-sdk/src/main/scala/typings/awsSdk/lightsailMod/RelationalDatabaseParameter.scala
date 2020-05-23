@@ -58,7 +58,7 @@ object RelationalDatabaseParameter {
     if (applyType != null) __obj.updateDynamic("applyType")(applyType.asInstanceOf[js.Any])
     if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(isModifiable)) __obj.updateDynamic("isModifiable")(isModifiable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isModifiable)) __obj.updateDynamic("isModifiable")(isModifiable.get.asInstanceOf[js.Any])
     if (parameterName != null) __obj.updateDynamic("parameterName")(parameterName.asInstanceOf[js.Any])
     if (parameterValue != null) __obj.updateDynamic("parameterValue")(parameterValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelationalDatabaseParameter]

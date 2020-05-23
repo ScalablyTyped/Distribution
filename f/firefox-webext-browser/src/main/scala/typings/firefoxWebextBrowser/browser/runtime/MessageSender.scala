@@ -36,14 +36,14 @@ trait MessageSender extends js.Object {
 object MessageSender {
   @scala.inline
   def apply(
-    frameId: Int | Double = null,
+    frameId: js.UndefOr[Double] = js.undefined,
     id: String = null,
     tab: Tab = null,
     tlsChannelId: String = null,
     url: String = null
   ): MessageSender = {
     val __obj = js.Dynamic.literal()
-    if (frameId != null) __obj.updateDynamic("frameId")(frameId.asInstanceOf[js.Any])
+    if (!js.isUndefined(frameId)) __obj.updateDynamic("frameId")(frameId.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (tab != null) __obj.updateDynamic("tab")(tab.asInstanceOf[js.Any])
     if (tlsChannelId != null) __obj.updateDynamic("tlsChannelId")(tlsChannelId.asInstanceOf[js.Any])

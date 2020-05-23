@@ -45,7 +45,7 @@ object DashboardVersion {
     Errors: DashboardErrorList = null,
     SourceEntityArn: Arn = null,
     Status: ResourceStatus = null,
-    VersionNumber: Int | scala.Double = null
+    VersionNumber: js.UndefOr[VersionNumber] = js.undefined
   ): DashboardVersion = {
     val __obj = js.Dynamic.literal()
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
@@ -54,7 +54,7 @@ object DashboardVersion {
     if (Errors != null) __obj.updateDynamic("Errors")(Errors.asInstanceOf[js.Any])
     if (SourceEntityArn != null) __obj.updateDynamic("SourceEntityArn")(SourceEntityArn.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (VersionNumber != null) __obj.updateDynamic("VersionNumber")(VersionNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(VersionNumber)) __obj.updateDynamic("VersionNumber")(VersionNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DashboardVersion]
   }
 }

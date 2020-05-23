@@ -1,9 +1,9 @@
 package typings.oracleOraclejet.ojthematicmapMod
 
-import typings.oracleOraclejet.Anon25
-import typings.oracleOraclejet.AnonAreaSvgStyle
-import typings.oracleOraclejet.AnonGeo
-import typings.oracleOraclejet.AnonInsertSVGElement
+import typings.oracleOraclejet.anon.AreaSvgStyle
+import typings.oracleOraclejet.anon.Geo
+import typings.oracleOraclejet.anon.InsertSVGElement
+import typings.oracleOraclejet.anon.`25`
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponentEventMap
@@ -28,8 +28,8 @@ import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
 import typings.std.ErrorEvent
+import typings.std.Event
 import typings.std.EventTarget
-import typings.std.Event_
 import typings.std.FocusEvent
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
@@ -50,35 +50,35 @@ trait ojThematicMapEventMap[K1, K2, K3, D1, D2, D3] extends dvtBaseComponentEven
   var areaDataChanged: JetElementCustomEvent[(DataProvider[K1, D1]) | Null]
   var asChanged: JetElementCustomEvent[String]
   var focusRendererChanged: JetElementCustomEvent[
-    (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null
+    (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
   ]
   var hiddenCategoriesChanged: JetElementCustomEvent[js.Array[String]]
   var highlightMatchChanged: JetElementCustomEvent[any | all]
   var highlightedCategoriesChanged: JetElementCustomEvent[js.Array[String]]
   var hoverBehaviorChanged: JetElementCustomEvent[dim | none]
   var hoverRendererChanged: JetElementCustomEvent[
-    (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null
+    (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
   ]
   var initialZoomingChanged: JetElementCustomEvent[auto | none]
   var isolatedItemChanged: JetElementCustomEvent[K1]
   var labelDisplayChanged: JetElementCustomEvent[on | off | auto]
   var labelTypeChanged: JetElementCustomEvent[long | short]
   var linkDataChanged: JetElementCustomEvent[(DataProvider[K2, D2]) | Null]
-  var mapProviderChanged: JetElementCustomEvent[AnonGeo]
+  var mapProviderChanged: JetElementCustomEvent[Geo]
   var markerDataChanged: JetElementCustomEvent[(DataProvider[K3, D3]) | Null]
   var markerZoomBehaviorChanged: JetElementCustomEvent[zoom | fixed]
   var maxZoomChanged: JetElementCustomEvent[Double]
   var panningChanged: JetElementCustomEvent[auto | none]
   var rendererChanged: JetElementCustomEvent[
-    (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null
+    (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
   ]
   var selectionChanged: JetElementCustomEvent[js.Array[K1 | K2 | K3]]
   var selectionModeChanged: JetElementCustomEvent[single | multiple | none]
   var selectionRendererChanged: JetElementCustomEvent[
-    (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null
+    (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
   ]
-  var styleDefaultsChanged: JetElementCustomEvent[AnonAreaSvgStyle]
-  var tooltipChanged: JetElementCustomEvent[Anon25[K1, K2, K3, D1, D2, D3]]
+  var styleDefaultsChanged: JetElementCustomEvent[AreaSvgStyle]
+  var tooltipChanged: JetElementCustomEvent[`25`[K1, K2, K3, D1, D2, D3]]
   var tooltipDisplayChanged: JetElementCustomEvent[auto | labelAndShortDesc | none | shortDesc]
   var touchResponseChanged: JetElementCustomEvent[touchStart | auto]
   var zoomingChanged: JetElementCustomEvent[auto | none]
@@ -98,48 +98,48 @@ object ojThematicMapEventMap {
     asChanged: JetElementCustomEvent[String],
     auxclick: MouseEvent,
     blur: FocusEvent,
-    cancel: Event_,
-    canplay: Event_,
-    canplaythrough: Event_,
-    change: Event_,
+    cancel: Event,
+    canplay: Event,
+    canplaythrough: Event,
+    change: Event,
     click: MouseEvent,
-    close: Event_,
+    close: Event,
     contextmenu: MouseEvent,
     copy: ClipboardEvent,
-    cuechange: Event_,
+    cuechange: Event,
     cut: ClipboardEvent,
     dblclick: MouseEvent,
     drag: DragEvent,
     dragend: DragEvent,
     dragenter: DragEvent,
-    dragexit: Event_,
+    dragexit: Event,
     dragleave: DragEvent,
     dragover: DragEvent,
     dragstart: DragEvent,
     drop: DragEvent,
-    durationchange: Event_,
-    emptied: Event_,
-    ended: Event_,
+    durationchange: Event,
+    emptied: Event,
+    ended: Event,
     error: ErrorEvent,
     focus: FocusEvent,
     focusRendererChanged: JetElementCustomEvent[
-      (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null
+      (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
     ],
     focusin: FocusEvent,
     focusout: FocusEvent,
-    fullscreenchange: Event_,
-    fullscreenerror: Event_,
+    fullscreenchange: Event,
+    fullscreenerror: Event,
     gotpointercapture: PointerEvent,
     hiddenCategoriesChanged: JetElementCustomEvent[js.Array[String]],
     highlightMatchChanged: JetElementCustomEvent[any | all],
     highlightedCategoriesChanged: JetElementCustomEvent[js.Array[String]],
     hoverBehaviorChanged: JetElementCustomEvent[dim | none],
     hoverRendererChanged: JetElementCustomEvent[
-      (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null
+      (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
     ],
     initialZoomingChanged: JetElementCustomEvent[auto | none],
-    input: Event_,
-    invalid: Event_,
+    input: Event,
+    invalid: Event,
     isolatedItemChanged: JetElementCustomEvent[K1],
     keydown: KeyboardEvent,
     keypress: KeyboardEvent,
@@ -147,12 +147,12 @@ object ojThematicMapEventMap {
     labelDisplayChanged: JetElementCustomEvent[on | off | auto],
     labelTypeChanged: JetElementCustomEvent[long | short],
     linkDataChanged: JetElementCustomEvent[(DataProvider[K2, D2]) | Null],
-    load: Event_,
-    loadeddata: Event_,
-    loadedmetadata: Event_,
-    loadstart: Event_,
+    load: Event,
+    loadeddata: Event,
+    loadedmetadata: Event,
+    loadstart: Event,
     lostpointercapture: PointerEvent,
-    mapProviderChanged: JetElementCustomEvent[AnonGeo],
+    mapProviderChanged: JetElementCustomEvent[Geo],
     markerDataChanged: JetElementCustomEvent[(DataProvider[K3, D3]) | Null],
     markerZoomBehaviorChanged: JetElementCustomEvent[zoom | fixed],
     maxZoomChanged: JetElementCustomEvent[Double],
@@ -165,9 +165,9 @@ object ojThematicMapEventMap {
     mouseup: MouseEvent,
     panningChanged: JetElementCustomEvent[auto | none],
     paste: ClipboardEvent,
-    pause: Event_,
-    play: Event_,
-    playing: Event_,
+    pause: Event,
+    play: Event,
+    playing: Event,
     pointercancel: PointerEvent,
     pointerdown: PointerEvent,
     pointerenter: PointerEvent,
@@ -177,31 +177,31 @@ object ojThematicMapEventMap {
     pointerover: PointerEvent,
     pointerup: PointerEvent,
     progress: ProgressEvent[EventTarget],
-    ratechange: Event_,
+    ratechange: Event,
     rendererChanged: JetElementCustomEvent[
-      (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null
+      (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
     ],
-    reset: Event_,
+    reset: Event,
     resize: UIEvent,
-    scroll: Event_,
+    scroll: Event,
     securitypolicyviolation: SecurityPolicyViolationEvent,
-    seeked: Event_,
-    seeking: Event_,
-    select: Event_,
+    seeked: Event,
+    seeking: Event,
+    select: Event,
     selectionChanged: JetElementCustomEvent[js.Array[K1 | K2 | K3]],
     selectionModeChanged: JetElementCustomEvent[single | multiple | none],
     selectionRendererChanged: JetElementCustomEvent[
-      (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null
+      (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
     ],
-    selectionchange: Event_,
-    selectstart: Event_,
-    stalled: Event_,
-    styleDefaultsChanged: JetElementCustomEvent[AnonAreaSvgStyle],
-    submit: Event_,
-    suspend: Event_,
-    timeupdate: Event_,
-    toggle: Event_,
-    tooltipChanged: JetElementCustomEvent[Anon25[K1, K2, K3, D1, D2, D3]],
+    selectionchange: Event,
+    selectstart: Event,
+    stalled: Event,
+    styleDefaultsChanged: JetElementCustomEvent[AreaSvgStyle],
+    submit: Event,
+    suspend: Event,
+    timeupdate: Event,
+    toggle: Event,
+    tooltipChanged: JetElementCustomEvent[`25`[K1, K2, K3, D1, D2, D3]],
     tooltipDisplayChanged: JetElementCustomEvent[auto | labelAndShortDesc | none | shortDesc],
     touchResponseChanged: JetElementCustomEvent[touchStart | auto],
     touchcancel: TouchEvent,
@@ -214,8 +214,8 @@ object ojThematicMapEventMap {
     transitionrun: TransitionEvent,
     transitionstart: TransitionEvent,
     translationsChanged: JetElementCustomEvent[js.Object | Null],
-    volumechange: Event_,
-    waiting: Event_,
+    volumechange: Event,
+    waiting: Event,
     wheel: WheelEvent,
     zoomingChanged: JetElementCustomEvent[auto | none]
   ): ojThematicMapEventMap[K1, K2, K3, D1, D2, D3] = {

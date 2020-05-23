@@ -14,14 +14,14 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    defaultDirMode: Int | Double = null,
-    defaultFileMode: Int | Double = null,
+    defaultDirMode: js.UndefOr[Double] = js.undefined,
+    defaultFileMode: js.UndefOr[Double] = js.undefined,
     dir: String = null,
     onEntry: (/* entry */ js.Any, /* zipfile */ js.Any) => Unit = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (defaultDirMode != null) __obj.updateDynamic("defaultDirMode")(defaultDirMode.asInstanceOf[js.Any])
-    if (defaultFileMode != null) __obj.updateDynamic("defaultFileMode")(defaultFileMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultDirMode)) __obj.updateDynamic("defaultDirMode")(defaultDirMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultFileMode)) __obj.updateDynamic("defaultFileMode")(defaultFileMode.get.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (onEntry != null) __obj.updateDynamic("onEntry")(js.Any.fromFunction2(onEntry))
     __obj.asInstanceOf[Options]

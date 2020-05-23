@@ -5,18 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Devices.Geolocation.CivicAddress")
-@js.native
-class CivicAddress () extends ICivicAddress {
-  /* CompleteClass */
-  override var city: String = js.native
-  /* CompleteClass */
-  override var country: String = js.native
-  /* CompleteClass */
-  override var postalCode: String = js.native
-  /* CompleteClass */
-  override var state: String = js.native
-  /* CompleteClass */
-  override var timestamp: Date = js.native
+trait CivicAddress extends ICivicAddress
+
+object CivicAddress {
+  @scala.inline
+  def apply(city: String, country: String, postalCode: String, state: String, timestamp: Date): CivicAddress = {
+    val __obj = js.Dynamic.literal(city = city.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CivicAddress]
+  }
 }
 

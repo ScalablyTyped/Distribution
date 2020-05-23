@@ -1,6 +1,6 @@
 package typings.ionicStorage.storageMod
 
-import typings.ionicStorage.AnonDbKey
+import typings.ionicStorage.anon.DbKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/storage/storage", "getDefaultConfig")
 @js.native
 object getDefaultConfig extends js.Object {
-  def apply(): AnonDbKey = js.native
+  def apply(): DbKey = js.native
 }
 

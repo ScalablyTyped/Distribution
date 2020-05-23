@@ -24,12 +24,12 @@ object StyleObject {
     underline: js.UndefOr[Boolean] = js.undefined
   ): StyleObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bell)) __obj.updateDynamic("bell")(bell.asInstanceOf[js.Any])
+    if (!js.isUndefined(bell)) __obj.updateDynamic("bell")(bell.get.asInstanceOf[js.Any])
     if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
+    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.get.asInstanceOf[js.Any])
     if (fg != null) __obj.updateDynamic("fg")(fg.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverse)) __obj.updateDynamic("inverse")(inverse.asInstanceOf[js.Any])
-    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
+    if (!js.isUndefined(inverse)) __obj.updateDynamic("inverse")(inverse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleObject]
   }
 }

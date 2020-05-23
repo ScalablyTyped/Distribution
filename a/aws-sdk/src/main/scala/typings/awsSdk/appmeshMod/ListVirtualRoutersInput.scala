@@ -39,12 +39,12 @@ object ListVirtualRoutersInput {
   @scala.inline
   def apply(
     meshName: ResourceName,
-    limit: Int | Double = null,
+    limit: js.UndefOr[ListVirtualRoutersLimit] = js.undefined,
     meshOwner: AccountId = null,
     nextToken: String = null
   ): ListVirtualRoutersInput = {
     val __obj = js.Dynamic.literal(meshName = meshName.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (meshOwner != null) __obj.updateDynamic("meshOwner")(meshOwner.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListVirtualRoutersInput]

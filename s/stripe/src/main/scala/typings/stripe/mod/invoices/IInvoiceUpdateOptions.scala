@@ -1,7 +1,7 @@
 package typings.stripe.mod.invoices
 
 import typings.std.Date
-import typings.stripe.AnonName
+import typings.stripe.anon.Name
 import typings.stripe.mod.IDataOptionsWithMetadata
 import typings.stripe.mod.IOptionsMetadata
 import scala.scalajs.js
@@ -28,7 +28,7 @@ trait IInvoiceUpdateOptions extends IDataOptionsWithMetadata {
   /**
     * A list of up to 4 custom fields to be displayed on the invoice.
     */
-  var custom_fields: js.UndefOr[js.Array[AnonName]] = js.undefined
+  var custom_fields: js.UndefOr[js.Array[Name]] = js.undefined
   /**
     * The number of days from which the invoice is created until it is due. Only valid for
     * invoices where billing=send_invoice. This field can only be updated on draft
@@ -74,38 +74,38 @@ trait IInvoiceUpdateOptions extends IDataOptionsWithMetadata {
 object IInvoiceUpdateOptions {
   @scala.inline
   def apply(
-    application_fee: Int | Double = null,
+    application_fee: js.UndefOr[Double] = js.undefined,
     auto_advance: js.UndefOr[Boolean] = js.undefined,
     closed: js.UndefOr[Boolean] = js.undefined,
-    custom_fields: js.Array[AnonName] = null,
-    days_until_due: Int | Double = null,
+    custom_fields: js.Array[Name] = null,
+    days_until_due: js.UndefOr[Double] = js.undefined,
     default_source: String = null,
     description: String = null,
     due_date: Date | Double = null,
     expand: js.Array[String] = null,
-    footer: String = null,
+    footer: js.UndefOr[Null | String] = js.undefined,
     forgiven: js.UndefOr[Boolean] = js.undefined,
     include: js.Array[String] = null,
     metadata: IOptionsMetadata = null,
     statement_descriptor: String = null,
-    tax_percent: Int | Double = null
+    tax_percent: js.UndefOr[Double] = js.undefined
   ): IInvoiceUpdateOptions = {
     val __obj = js.Dynamic.literal()
-    if (application_fee != null) __obj.updateDynamic("application_fee")(application_fee.asInstanceOf[js.Any])
-    if (!js.isUndefined(auto_advance)) __obj.updateDynamic("auto_advance")(auto_advance.asInstanceOf[js.Any])
-    if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed.asInstanceOf[js.Any])
+    if (!js.isUndefined(application_fee)) __obj.updateDynamic("application_fee")(application_fee.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(auto_advance)) __obj.updateDynamic("auto_advance")(auto_advance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed.get.asInstanceOf[js.Any])
     if (custom_fields != null) __obj.updateDynamic("custom_fields")(custom_fields.asInstanceOf[js.Any])
-    if (days_until_due != null) __obj.updateDynamic("days_until_due")(days_until_due.asInstanceOf[js.Any])
+    if (!js.isUndefined(days_until_due)) __obj.updateDynamic("days_until_due")(days_until_due.get.asInstanceOf[js.Any])
     if (default_source != null) __obj.updateDynamic("default_source")(default_source.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (due_date != null) __obj.updateDynamic("due_date")(due_date.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
-    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
-    if (!js.isUndefined(forgiven)) __obj.updateDynamic("forgiven")(forgiven.asInstanceOf[js.Any])
+    if (!js.isUndefined(footer)) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (!js.isUndefined(forgiven)) __obj.updateDynamic("forgiven")(forgiven.get.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor.asInstanceOf[js.Any])
-    if (tax_percent != null) __obj.updateDynamic("tax_percent")(tax_percent.asInstanceOf[js.Any])
+    if (!js.isUndefined(tax_percent)) __obj.updateDynamic("tax_percent")(tax_percent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInvoiceUpdateOptions]
   }
 }

@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side equivalent of the ASPxFloatingActionButton object.
   */
-@JSGlobal("ASPxClientFloatingActionButton")
 @js.native
-class ASPxClientFloatingActionButton () extends ASPxClientControl {
+trait ASPxClientFloatingActionButton extends ASPxClientControl {
   /**
     * Occurs when the end user collapses the action group.
     */

@@ -1,7 +1,7 @@
 package typings.reactLazylog.searchBarMod
 
 import typings.react.mod.Component
-import typings.reactLazylog.PartialSearchBarProps
+import typings.reactLazylog.anon.PartialSearchBarProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

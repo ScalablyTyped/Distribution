@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.HeatMap
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object Horizontal extends js.Object {
   //Used to display the tooltip horizontally on right side of rows/columns
   @js.native
   sealed trait Right extends Horizontal
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Horizontal with Double] = js.native
-  /* 1 */ @js.native
-  object Center extends TopLevel[Center with Double]
-  
-  /* 0 */ @js.native
-  object Left extends TopLevel[Left with Double]
-  
-  /* 2 */ @js.native
-  object Right extends TopLevel[Right with Double]
   
 }
 

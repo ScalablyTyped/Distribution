@@ -14,8 +14,7 @@ trait IOverlayWidgetPosition extends js.Object {
 object IOverlayWidgetPosition {
   @scala.inline
   def apply(preference: OverlayWidgetPositionPreference = null): IOverlayWidgetPosition = {
-    val __obj = js.Dynamic.literal()
-    if (preference != null) __obj.updateDynamic("preference")(preference.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(preference = preference.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOverlayWidgetPosition]
   }
 }

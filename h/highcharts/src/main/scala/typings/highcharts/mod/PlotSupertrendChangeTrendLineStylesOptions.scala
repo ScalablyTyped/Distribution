@@ -22,11 +22,15 @@ trait PlotSupertrendChangeTrendLineStylesOptions extends js.Object {
 
 object PlotSupertrendChangeTrendLineStylesOptions {
   @scala.inline
-  def apply(dashStyle: DashStyleValue = null, lineColor: ColorString = null, lineWidth: Int | Double = null): PlotSupertrendChangeTrendLineStylesOptions = {
+  def apply(
+    dashStyle: DashStyleValue = null,
+    lineColor: ColorString = null,
+    lineWidth: js.UndefOr[Double] = js.undefined
+  ): PlotSupertrendChangeTrendLineStylesOptions = {
     val __obj = js.Dynamic.literal()
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
     if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotSupertrendChangeTrendLineStylesOptions]
   }
 }

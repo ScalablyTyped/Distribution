@@ -20,15 +20,15 @@ object AccountInsightsOptions {
     activityTab: js.UndefOr[Boolean] = js.undefined,
     audienceTab: js.UndefOr[Boolean] = js.undefined,
     contentTab: js.UndefOr[Boolean] = js.undefined,
-    gridMediaSize: Int | Double = null,
+    gridMediaSize: js.UndefOr[Double] = js.undefined,
     userId: String = null
   ): AccountInsightsOptions = {
     val __obj = js.Dynamic.literal()
     if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(activityTab)) __obj.updateDynamic("activityTab")(activityTab.asInstanceOf[js.Any])
-    if (!js.isUndefined(audienceTab)) __obj.updateDynamic("audienceTab")(audienceTab.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentTab)) __obj.updateDynamic("contentTab")(contentTab.asInstanceOf[js.Any])
-    if (gridMediaSize != null) __obj.updateDynamic("gridMediaSize")(gridMediaSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(activityTab)) __obj.updateDynamic("activityTab")(activityTab.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(audienceTab)) __obj.updateDynamic("audienceTab")(audienceTab.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentTab)) __obj.updateDynamic("contentTab")(contentTab.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridMediaSize)) __obj.updateDynamic("gridMediaSize")(gridMediaSize.get.asInstanceOf[js.Any])
     if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountInsightsOptions]
   }

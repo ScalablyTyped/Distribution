@@ -11,8 +11,6 @@ import typings.storybookAddonKnobs.optionsMod.OptionsTypeKnobValue
 import typings.storybookAddonKnobs.optionsMod.OptionsTypeOptionsProp
 import typings.storybookAddonKnobs.radioMod.RadiosTypeOptionsProp
 import typings.storybookAddonKnobs.selectMod.SelectTypeOptionsProp
-import typings.storybookAddonKnobs.storybookAddonKnobsStrings.knobs
-import typings.storybookAddonKnobs.storybookAddonKnobsStrings.storybookjsSlashknobs
 import typings.storybookAddonKnobs.typeDefsMod.Knob
 import typings.storybookAddonKnobs.typesMod.KnobType
 import scala.scalajs.js
@@ -22,11 +20,11 @@ import scala.scalajs.js.annotation._
 @JSImport("@storybook/addon-knobs", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  val ADDON_ID: storybookjsSlashknobs = js.native
+  val ADDON_ID: /* "storybookjs/knobs" */ String = js.native
   val CHANGE: String = js.native
   val CLICK: String = js.native
   val PANEL_ID: String = js.native
-  val PARAM_KEY: knobs = js.native
+  val PARAM_KEY: /* "knobs" */ String = js.native
   val RESET: String = js.native
   val SET: String = js.native
   val SET_OPTIONS: String = js.native

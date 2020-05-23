@@ -1,19 +1,13 @@
 package typings.antd.mod
 
-import typings.antd.AnonDot
-import typings.antd.badgeMod.default
+import org.scalablytyped.runtime.TopLevel
+import typings.antd.badgeMod.BadgeProps
+import typings.react.mod.FC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("antd", "Badge")
 @js.native
-class Badge () extends default
-
-/* static members */
-@JSImport("antd", "Badge")
-@js.native
-object Badge extends js.Object {
-  var defaultProps: AnonDot = js.native
-}
+object Badge extends TopLevel[FC[BadgeProps]]
 

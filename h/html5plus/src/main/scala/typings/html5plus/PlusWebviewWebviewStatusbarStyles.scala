@@ -14,7 +14,7 @@ trait PlusWebviewWebviewStatusbarStyles extends js.Object {
   /**
     * 系统状态栏区域背景颜色
     * 颜色值格式为"#RRGGBB"，如"#FF0000"表示为红色背景。
-    * 	默认值为应用manifest.json中plus-&gt;statusbar-&gt;background属性配置的值，如果未配置此属性值，则使用系统默认状态栏的背景颜色。
+    *     默认值为应用manifest.json中plus-&gt;statusbar-&gt;background属性配置的值，如果未配置此属性值，则使用系统默认状态栏的背景颜色。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */

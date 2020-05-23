@@ -17,7 +17,7 @@ trait EditorTool extends js.Object {
 object EditorTool {
   @scala.inline
   def apply(
-    columns: Int | Double = null,
+    columns: js.UndefOr[Double] = js.undefined,
     exec: js.Function = null,
     items: js.Array[EditorToolItem] = null,
     name: String = null,
@@ -26,7 +26,7 @@ object EditorTool {
     tooltip: String = null
   ): EditorTool = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns.get.asInstanceOf[js.Any])
     if (exec != null) __obj.updateDynamic("exec")(exec.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

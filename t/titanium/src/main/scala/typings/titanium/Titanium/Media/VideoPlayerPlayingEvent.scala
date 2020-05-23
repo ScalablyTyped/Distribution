@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the currently playing movie changes.
-		 */
+  * Fired when the currently playing movie changes.
+  */
 trait VideoPlayerPlayingEvent extends VideoPlayerBaseEvent {
   /**
-  			 * URL of the media.
-  			 */
+    * URL of the media.
+    */
   var url: String
 }
 

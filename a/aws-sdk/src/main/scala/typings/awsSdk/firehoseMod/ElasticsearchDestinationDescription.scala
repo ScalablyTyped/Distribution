@@ -54,6 +54,10 @@ trait ElasticsearchDestinationDescription extends js.Object {
     * The Elasticsearch type name. This applies to Elasticsearch 6.x and lower versions. For Elasticsearch 7.x, there's no value for TypeName.
     */
   var TypeName: js.UndefOr[ElasticsearchTypeName] = js.native
+  /**
+    * The details of the VPC of the Amazon ES destination.
+    */
+  var VpcConfigurationDescription: js.UndefOr[typings.awsSdk.firehoseMod.VpcConfigurationDescription] = js.native
 }
 
 object ElasticsearchDestinationDescription {
@@ -70,7 +74,8 @@ object ElasticsearchDestinationDescription {
     RoleARN: RoleARN = null,
     S3BackupMode: ElasticsearchS3BackupMode = null,
     S3DestinationDescription: S3DestinationDescription = null,
-    TypeName: ElasticsearchTypeName = null
+    TypeName: ElasticsearchTypeName = null,
+    VpcConfigurationDescription: VpcConfigurationDescription = null
   ): ElasticsearchDestinationDescription = {
     val __obj = js.Dynamic.literal()
     if (BufferingHints != null) __obj.updateDynamic("BufferingHints")(BufferingHints.asInstanceOf[js.Any])
@@ -85,6 +90,7 @@ object ElasticsearchDestinationDescription {
     if (S3BackupMode != null) __obj.updateDynamic("S3BackupMode")(S3BackupMode.asInstanceOf[js.Any])
     if (S3DestinationDescription != null) __obj.updateDynamic("S3DestinationDescription")(S3DestinationDescription.asInstanceOf[js.Any])
     if (TypeName != null) __obj.updateDynamic("TypeName")(TypeName.asInstanceOf[js.Any])
+    if (VpcConfigurationDescription != null) __obj.updateDynamic("VpcConfigurationDescription")(VpcConfigurationDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElasticsearchDestinationDescription]
   }
 }

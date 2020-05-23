@@ -5,8 +5,8 @@ import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
 import typings.node.fsMod.Stats
-import typings.vinyl.AnonContents
-import typings.vinyl.AnonEnd
+import typings.vinyl.anon.Contents
+import typings.vinyl.anon.End
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -180,7 +180,7 @@ trait File
     */
   var symlink: String | Null = js.native
   def clone(opts: Boolean): this.type = js.native
-  def clone(opts: AnonContents): this.type = js.native
+  def clone(opts: Contents): this.type = js.native
   /**
     * Returns a formatted-string interpretation of the Vinyl object.
     * Automatically called by node's `console.log`.
@@ -231,6 +231,6 @@ trait File
     * If file.contents is null, it will do nothing.
     */
   def pipe[T /* <: WritableStream */](stream: T): T = js.native
-  def pipe[T /* <: WritableStream */](stream: T, opts: AnonEnd): T = js.native
+  def pipe[T /* <: WritableStream */](stream: T, opts: End): T = js.native
 }
 

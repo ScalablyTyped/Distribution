@@ -40,10 +40,10 @@ object CreateBatchInferenceJobRequest {
     jobOutput: BatchInferenceJobOutput,
     roleArn: RoleArn,
     solutionVersionArn: Arn,
-    numResults: Int | Double = null
+    numResults: js.UndefOr[NumBatchResults] = js.undefined
   ): CreateBatchInferenceJobRequest = {
     val __obj = js.Dynamic.literal(jobInput = jobInput.asInstanceOf[js.Any], jobName = jobName.asInstanceOf[js.Any], jobOutput = jobOutput.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], solutionVersionArn = solutionVersionArn.asInstanceOf[js.Any])
-    if (numResults != null) __obj.updateDynamic("numResults")(numResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(numResults)) __obj.updateDynamic("numResults")(numResults.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBatchInferenceJobRequest]
   }
 }

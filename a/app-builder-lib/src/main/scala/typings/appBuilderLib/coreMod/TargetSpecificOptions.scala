@@ -14,10 +14,13 @@ trait TargetSpecificOptions extends js.Object {
 
 object TargetSpecificOptions {
   @scala.inline
-  def apply(artifactName: String = null, publish: Publish = null): TargetSpecificOptions = {
+  def apply(
+    artifactName: js.UndefOr[Null | String] = js.undefined,
+    publish: js.UndefOr[Null | Publish] = js.undefined
+  ): TargetSpecificOptions = {
     val __obj = js.Dynamic.literal()
-    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
-    if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
+    if (!js.isUndefined(artifactName)) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
+    if (!js.isUndefined(publish)) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetSpecificOptions]
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("yup", "array")
 @js.native
 class array ()
-  extends ArraySchema[js.Object]
+  extends NotRequiredArraySchema[js.Object]
 
 @JSImport("yup", "array")
 @js.native

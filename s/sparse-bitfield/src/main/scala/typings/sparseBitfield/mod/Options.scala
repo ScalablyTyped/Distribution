@@ -35,17 +35,17 @@ object Options {
   @scala.inline
   def apply(
     buffer: Buffer = null,
-    pageOffset: Int | Double = null,
-    pageSize: Int | Double = null,
+    pageOffset: js.UndefOr[Double] = js.undefined,
+    pageSize: js.UndefOr[Double] = js.undefined,
     pages: PagerInstance = null,
     trackUpdates: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
-    if (pageOffset != null) __obj.updateDynamic("pageOffset")(pageOffset.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageOffset)) __obj.updateDynamic("pageOffset")(pageOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackUpdates)) __obj.updateDynamic("trackUpdates")(trackUpdates.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackUpdates)) __obj.updateDynamic("trackUpdates")(trackUpdates.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -9,9 +9,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Commits data in a buffer to a backing store. */
-@JSGlobal("Windows.Storage.Streams.DataWriterStoreOperation")
 @js.native
-abstract class DataWriterStoreOperation () extends js.Object {
+trait DataWriterStoreOperation extends js.Object {
   /** Gets or sets the handler to call when the data store operation is complete. */
   @JSName("completed")
   var completed_Original: AsyncOperationCompletedHandler[Double] = js.native

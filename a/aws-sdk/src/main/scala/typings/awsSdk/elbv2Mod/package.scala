@@ -99,7 +99,7 @@ package object elbv2Mod {
   type LoadBalancerNames = js.Array[typings.awsSdk.elbv2Mod.LoadBalancerName]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`internet-facing`
-    - typings.awsSdk.awsSdkStrings.internal
+    - typings.awsSdk.awsSdkStrings.internal_
     - java.lang.String
   */
   type LoadBalancerSchemeEnum = typings.awsSdk.elbv2Mod._LoadBalancerSchemeEnum | java.lang.String

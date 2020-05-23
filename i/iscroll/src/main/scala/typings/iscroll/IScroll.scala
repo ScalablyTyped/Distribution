@@ -5,13 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("IScroll")
 @js.native
-class IScroll protected () extends js.Object {
-  def this(element: String) = this()
-  def this(element: HTMLElement) = this()
-  def this(element: String, options: IScrollOptions) = this()
-  def this(element: HTMLElement, options: IScrollOptions) = this()
+trait IScroll extends js.Object {
   var scale: Double = js.native
   var x: Double = js.native
   var y: Double = js.native

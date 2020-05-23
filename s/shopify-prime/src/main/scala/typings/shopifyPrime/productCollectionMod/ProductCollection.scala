@@ -1,6 +1,6 @@
 package typings.shopifyPrime.productCollectionMod
 
-import typings.shopifyPrime.AnonAttachment
+import typings.shopifyPrime.anon.Attachment
 import typings.shopifyPrime.baseMod.ShopifyObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +21,7 @@ trait ProductCollection extends ShopifyObject {
     * - attachment: An image attached to a shop's theme returned as Base64-encoded binary data.
     * - src: Source URL that specifies the location of the image.
     */
-  var image: js.UndefOr[AnonAttachment] = js.undefined
+  var image: js.UndefOr[Attachment] = js.undefined
   /**
     * This can have two different types of values, depending on whether the collection has been published (i.e., made visible to customers):
     * - If the collection is published, this value is the date and time when it was published. The API returns this value in ISO 8601 format.
@@ -66,8 +66,8 @@ object ProductCollection {
     admin_graphql_api_id: String = null,
     body_html: String = null,
     handle: String = null,
-    id: Int | Double = null,
-    image: AnonAttachment = null,
+    id: js.UndefOr[Double] = js.undefined,
+    image: Attachment = null,
     published_at: String = null,
     published_scope: String = null,
     sort_order: String = null,
@@ -79,7 +79,7 @@ object ProductCollection {
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
     if (body_html != null) __obj.updateDynamic("body_html")(body_html.asInstanceOf[js.Any])
     if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (published_at != null) __obj.updateDynamic("published_at")(published_at.asInstanceOf[js.Any])
     if (published_scope != null) __obj.updateDynamic("published_scope")(published_scope.asInstanceOf[js.Any])

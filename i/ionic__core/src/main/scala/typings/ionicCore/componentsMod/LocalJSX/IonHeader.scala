@@ -28,7 +28,7 @@ object IonHeader {
     val __obj = js.Dynamic.literal()
     if (collapse != null) __obj.updateDynamic("collapse")(collapse.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent.asInstanceOf[js.Any])
+    if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonHeader]
   }
 }

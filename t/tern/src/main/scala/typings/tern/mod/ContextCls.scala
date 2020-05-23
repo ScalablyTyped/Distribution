@@ -1,8 +1,8 @@
 package typings.tern.mod
 
-import typings.tern.Primnamebool
-import typings.tern.Primnamenumber
-import typings.tern.Primnamestring
+import typings.tern.anon.Primnamebool
+import typings.tern.anon.Primnamenumber
+import typings.tern.anon.Primnamestring
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

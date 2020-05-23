@@ -32,7 +32,8 @@ package object mod {
   type ExtractIdType[TSchema] = typings.bson.mod.ObjectId | (typings.std.Exclude[js.Any, js.Object])
   type FieldUpdates[TSchema] = typings.std.Partial[TSchema] with org.scalablytyped.runtime.StringDictionary[js.Any]
   type FilterQuery[T] = typings.mongodb.mongodbStrings.FilterQuery with org.scalablytyped.runtime.TopLevel[T] with typings.mongodb.mod.RootQuerySelector[T]
-  type GridFSBucketErrorCallback = js.Function1[/* err */ js.UndefOr[typings.mongodb.mod.MongoError], scala.Unit]
+  type FlattenIfArray[T] = T
+  type GridFSBucketErrorCallback = typings.mongodb.mod.MongoCallback[scala.Unit]
   type GridFSBucketWriteStreamId = java.lang.String | scala.Double | js.Object | typings.bson.mod.ObjectId
   type IteratorCallback[T] = js.Function1[/* doc */ T, scala.Unit]
   /** Update Query */
@@ -51,8 +52,7 @@ package object mod {
   // We can use TypeScript Omit once minimum required TypeScript Version is above 3.5
   type Omit[T, K] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
   type OnlyFieldsOfType[TSchema, FieldType, AssignableType] = (typings.mongodb.mod.AcceptedFields[TSchema, FieldType, AssignableType]) with (typings.mongodb.mod.NotAcceptedFields[TSchema, FieldType]) with typings.mongodb.mod.DotAndArrayNotation[AssignableType]
-  // this makes _id optional
-  type OptionalId[TSchema /* <: typings.mongodb.Anon2 */] = typings.mongodb.mod.WithId[TSchema] | ((typings.mongodb.mod.EnhancedOmit[TSchema, typings.mongodb.mongodbStrings._id]) with typings.mongodb.Anon3[TSchema])
+  type OptionalId[TSchema /* <: typings.mongodb.anon.IdAny */] = typings.mongodb.mod.WithId[TSchema] | ((typings.mongodb.mod.EnhancedOmit[TSchema, typings.mongodb.mongodbStrings._id]) with typings.mongodb.anon.IdExtractIdType[TSchema])
   type PullAllOperator[TSchema] = typings.mongodb.mongodbStrings.PullAllOperator with org.scalablytyped.runtime.TopLevel[TSchema] with (typings.mongodb.mod.NotAcceptedFields[TSchema, js.Array[_]]) with org.scalablytyped.runtime.StringDictionary[js.Array[_]]
   type PullOperator[TSchema] = typings.mongodb.mongodbStrings.PullOperator with org.scalablytyped.runtime.TopLevel[js.Any] with (typings.mongodb.mod.NotAcceptedFields[TSchema, js.Array[_]]) with (org.scalablytyped.runtime.StringDictionary[typings.mongodb.mod.QuerySelector[_] | js.Any])
   type PushOperator[TSchema] = typings.mongodb.mongodbStrings.PushOperator with org.scalablytyped.runtime.TopLevel[js.Any] with (typings.mongodb.mod.NotAcceptedFields[TSchema, js.Array[_]]) with (org.scalablytyped.runtime.StringDictionary[typings.mongodb.mod.ArrayOperator[_] | js.Any])
@@ -65,8 +65,8 @@ package object mod {
   type RegExpForString[T] = T | typings.std.RegExp
   type SetFields[TSchema] = typings.mongodb.mongodbStrings.SetFields with org.scalablytyped.runtime.TopLevel[js.Any] with (typings.mongodb.mod.NotAcceptedFields[TSchema, js.UndefOr[js.Array[_]]]) with (org.scalablytyped.runtime.StringDictionary[typings.mongodb.mod.AddToSetOperators[_] | js.Any])
   type Unpacked[Type] = Type
-  // this adds _id as a required property
-  type WithId[TSchema] = (typings.mongodb.mod.EnhancedOmit[TSchema, typings.mongodb.mongodbStrings._id]) with typings.mongodb.Anon4[TSchema]
+  type UpdateOptionalId[T] = T | typings.mongodb.mod.OptionalId[T]
+  type WithId[TSchema] = (typings.mongodb.mod.EnhancedOmit[TSchema, typings.mongodb.mongodbStrings._id]) with typings.mongodb.anon.`0`[TSchema]
   type WithTransactionCallback[T] = js.Function1[/* session */ typings.mongodb.mod.ClientSession, js.Promise[T]]
   type log = js.Function2[
     /* message */ js.UndefOr[java.lang.String], 

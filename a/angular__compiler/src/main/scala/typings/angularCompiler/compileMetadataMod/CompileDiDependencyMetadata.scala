@@ -28,12 +28,12 @@ object CompileDiDependencyMetadata {
     value: js.Any = null
   ): CompileDiDependencyMetadata = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isAttribute)) __obj.updateDynamic("isAttribute")(isAttribute.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHost)) __obj.updateDynamic("isHost")(isHost.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOptional)) __obj.updateDynamic("isOptional")(isOptional.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSelf)) __obj.updateDynamic("isSelf")(isSelf.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSkipSelf)) __obj.updateDynamic("isSkipSelf")(isSkipSelf.asInstanceOf[js.Any])
-    if (!js.isUndefined(isValue)) __obj.updateDynamic("isValue")(isValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAttribute)) __obj.updateDynamic("isAttribute")(isAttribute.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHost)) __obj.updateDynamic("isHost")(isHost.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOptional)) __obj.updateDynamic("isOptional")(isOptional.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSelf)) __obj.updateDynamic("isSelf")(isSelf.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSkipSelf)) __obj.updateDynamic("isSkipSelf")(isSkipSelf.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isValue)) __obj.updateDynamic("isValue")(isValue.get.asInstanceOf[js.Any])
     if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompileDiDependencyMetadata]

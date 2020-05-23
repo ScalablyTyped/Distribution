@@ -1,9 +1,9 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.NumberFormatInfoData
 import typings.officeJsPreview.Excel.Interfaces.NumberFormatInfoLoadOptions
 import typings.officeJsPreview.OfficeExtension.ClientObject
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,12 +12,10 @@ import scala.scalajs.js.annotation._
   *
   * Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.11]
   */
-@JSGlobal("Excel.NumberFormatInfo")
 @js.native
-class NumberFormatInfo () extends ClientObject {
+trait NumberFormatInfo extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_NumberFormatInfo: RequestContext = js.native
@@ -25,16 +23,14 @@ class NumberFormatInfo () extends ClientObject {
     *
     * Gets the string used as the decimal separator for numeric values. This is based on current system settings.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.11]
     */
   val numberDecimalSeparator: String = js.native
   /**
     *
     * Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on current system settings.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.11]
     */
   val numberGroupSeparator: String = js.native
   /**
@@ -44,7 +40,7 @@ class NumberFormatInfo () extends ClientObject {
     */
   def load(): NumberFormatInfo = js.native
   def load(options: NumberFormatInfoLoadOptions): NumberFormatInfo = js.native
-  def load(propertyNamesAndPaths: AnonExpand): NumberFormatInfo = js.native
+  def load(propertyNamesAndPaths: Expand): NumberFormatInfo = js.native
   def load(propertyNames: String): NumberFormatInfo = js.native
   def load(propertyNames: js.Array[String]): NumberFormatInfo = js.native
   /**

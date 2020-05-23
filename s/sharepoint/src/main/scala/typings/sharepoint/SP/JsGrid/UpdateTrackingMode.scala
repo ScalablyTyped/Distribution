@@ -1,6 +1,5 @@
 package typings.sharepoint.SP.JsGrid
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,17 +20,6 @@ object UpdateTrackingMode extends js.Object {
    // 3,
   @js.native
   sealed trait PropLocalized extends UpdateTrackingMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UpdateTrackingMode with Double] = js.native
-  /* 2 */ @js.native
-  object PropBoth extends TopLevel[PropBoth with Double]
-  
-  /* 0 */ @js.native
-  object PropData extends TopLevel[PropData with Double]
-  
-  /* 1 */ @js.native
-  object PropLocalized extends TopLevel[PropLocalized with Double]
   
 }
 

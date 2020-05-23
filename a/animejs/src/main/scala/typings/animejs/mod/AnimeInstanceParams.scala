@@ -26,7 +26,7 @@ object AnimeInstanceParams {
     update: /* anim */ AnimeInstance => Unit = null
   ): AnimeInstanceParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.get.asInstanceOf[js.Any])
     if (begin != null) __obj.updateDynamic("begin")(js.Any.fromFunction1(begin))
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (changeBegin != null) __obj.updateDynamic("changeBegin")(js.Any.fromFunction1(changeBegin))

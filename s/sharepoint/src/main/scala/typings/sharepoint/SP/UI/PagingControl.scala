@@ -1,33 +1,38 @@
 package typings.sharepoint.SP.UI
 
-import typings.sharepoint.AnonDisabled
-import typings.sharepoint.AnonNext
 import typings.std.HTMLSpanElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.UI.PagingControl")
-@js.native
-class PagingControl protected () extends js.Object {
-  def this(id: String) = this()
-  def getButtonState(buttonId: Double): Double = js.native
-  def get_innerContent(): HTMLSpanElement = js.native
-  def get_innerContentClass(): String = js.native
-  def onNext(): Unit = js.native
+trait PagingControl extends js.Object {
+  def getButtonState(buttonId: Double): Double
+  def get_innerContent(): HTMLSpanElement
+  def get_innerContentClass(): String
+  def onNext(): Unit
   /**Should override*/
-  def onPrev(): Unit = js.native
-  def onWindowResized(): Unit = js.native
-  def postRender(): Unit = js.native
-  def render(innerContent: String): String = js.native
-  def setButtonState(buttonId: Double, state: Double): Unit = js.native
+  def onPrev(): Unit
+  def onWindowResized(): Unit
+  def postRender(): Unit
+  def render(innerContent: String): String
+  def setButtonState(buttonId: Double, state: Double): Unit
 }
 
-/* static members */
-@JSGlobal("SP.UI.PagingControl")
-@js.native
-object PagingControl extends js.Object {
-  var ButtonIDs: AnonNext = js.native
-  var ButtonState: AnonDisabled = js.native
+object PagingControl {
+  @scala.inline
+  def apply(
+    getButtonState: Double => Double,
+    get_innerContent: () => HTMLSpanElement,
+    get_innerContentClass: () => String,
+    onNext: () => Unit,
+    onPrev: () => Unit,
+    onWindowResized: () => Unit,
+    postRender: () => Unit,
+    render: String => String,
+    setButtonState: (Double, Double) => Unit
+  ): PagingControl = {
+    val __obj = js.Dynamic.literal(getButtonState = js.Any.fromFunction1(getButtonState), get_innerContent = js.Any.fromFunction0(get_innerContent), get_innerContentClass = js.Any.fromFunction0(get_innerContentClass), onNext = js.Any.fromFunction0(onNext), onPrev = js.Any.fromFunction0(onPrev), onWindowResized = js.Any.fromFunction0(onWindowResized), postRender = js.Any.fromFunction0(postRender), render = js.Any.fromFunction1(render), setButtonState = js.Any.fromFunction2(setButtonState))
+    __obj.asInstanceOf[PagingControl]
+  }
 }
 

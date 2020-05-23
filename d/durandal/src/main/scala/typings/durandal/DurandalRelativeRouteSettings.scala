@@ -21,7 +21,7 @@ object DurandalRelativeRouteSettings {
   ): DurandalRelativeRouteSettings = {
     val __obj = js.Dynamic.literal()
     if (dynamicHash != null) __obj.updateDynamic("dynamicHash")(dynamicHash.asInstanceOf[js.Any])
-    if (!js.isUndefined(fromParent)) __obj.updateDynamic("fromParent")(fromParent.asInstanceOf[js.Any])
+    if (!js.isUndefined(fromParent)) __obj.updateDynamic("fromParent")(fromParent.get.asInstanceOf[js.Any])
     if (moduleId != null) __obj.updateDynamic("moduleId")(moduleId.asInstanceOf[js.Any])
     if (route != null) __obj.updateDynamic("route")(route.asInstanceOf[js.Any])
     __obj.asInstanceOf[DurandalRelativeRouteSettings]

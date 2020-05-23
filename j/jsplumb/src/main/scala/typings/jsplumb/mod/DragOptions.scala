@@ -21,7 +21,7 @@ object DragOptions {
     drag: /* params */ DragEventCallbackOptions => Unit = null,
     start: /* params */ DragEventCallbackOptions => Unit = null,
     stop: /* params */ DragEventCallbackOptions => Unit = null,
-    zIndex: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined
   ): DragOptions = {
     val __obj = js.Dynamic.literal()
     if (containment != null) __obj.updateDynamic("containment")(containment.asInstanceOf[js.Any])
@@ -29,7 +29,7 @@ object DragOptions {
     if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction1(drag))
     if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
     if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction1(stop))
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragOptions]
   }
 }

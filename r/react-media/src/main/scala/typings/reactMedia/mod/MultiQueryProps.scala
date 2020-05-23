@@ -2,7 +2,7 @@ package typings.reactMedia.mod
 
 import typings.react.mod.ReactNode
 import typings.std.Partial
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait MultiQueryProps[Queries] extends js.Object {
   var onChange: js.UndefOr[js.Function1[/* matches */ QueryResults[Queries], Unit]] = js.undefined
   var queries: Queries
   var render: js.UndefOr[js.Function0[ReactNode]] = js.undefined
-  var targetWindow: js.UndefOr[Window_] = js.undefined
+  var targetWindow: js.UndefOr[Window] = js.undefined
 }
 
 object MultiQueryProps {
@@ -25,7 +25,7 @@ object MultiQueryProps {
     defaultMatches: Partial[QueryResults[Queries]] = null,
     onChange: /* matches */ QueryResults[Queries] => Unit = null,
     render: () => ReactNode = null,
-    targetWindow: Window_ = null
+    targetWindow: Window = null
   ): MultiQueryProps[Queries] = {
     val __obj = js.Dynamic.literal(queries = queries.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

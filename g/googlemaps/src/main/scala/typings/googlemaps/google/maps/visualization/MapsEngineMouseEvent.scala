@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// TODO find source documentation
 trait MapsEngineMouseEvent extends js.Object {
   var featureId: js.UndefOr[String] = js.undefined
   var infoWindowHtml: js.UndefOr[String] = js.undefined

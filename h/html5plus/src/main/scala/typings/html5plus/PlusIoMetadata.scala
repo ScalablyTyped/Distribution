@@ -44,16 +44,16 @@ trait PlusIoMetadata extends js.Object {
 object PlusIoMetadata {
   @scala.inline
   def apply(
-    directoryCount: Int | Double = null,
-    fileCount: Int | Double = null,
+    directoryCount: js.UndefOr[Double] = js.undefined,
+    fileCount: js.UndefOr[Double] = js.undefined,
     modificationTime: Date = null,
-    size: Int | Double = null
+    size: js.UndefOr[Double] = js.undefined
   ): PlusIoMetadata = {
     val __obj = js.Dynamic.literal()
-    if (directoryCount != null) __obj.updateDynamic("directoryCount")(directoryCount.asInstanceOf[js.Any])
-    if (fileCount != null) __obj.updateDynamic("fileCount")(fileCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(directoryCount)) __obj.updateDynamic("directoryCount")(directoryCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fileCount)) __obj.updateDynamic("fileCount")(fileCount.get.asInstanceOf[js.Any])
     if (modificationTime != null) __obj.updateDynamic("modificationTime")(modificationTime.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusIoMetadata]
   }
 }

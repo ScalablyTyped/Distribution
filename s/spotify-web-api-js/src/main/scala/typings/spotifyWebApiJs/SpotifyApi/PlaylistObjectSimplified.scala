@@ -1,6 +1,6 @@
 package typings.spotifyWebApiJs.SpotifyApi
 
-import typings.spotifyWebApiJs.AnonHref
+import typings.spotifyWebApiJs.anon.Href
 import typings.spotifyWebApiJs.spotifyWebApiJsStrings.playlist
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * [](https://developer.spotify.com/web-api/object-model/)
   */
 trait PlaylistObjectSimplified extends PlaylistBaseObject {
-  var tracks: AnonHref
+  var tracks: Href
 }
 
 object PlaylistObjectSimplified {
@@ -26,7 +26,7 @@ object PlaylistObjectSimplified {
     owner: UserObjectPublic,
     public: Boolean,
     snapshot_id: String,
-    tracks: AnonHref,
+    tracks: Href,
     `type`: playlist,
     uri: String
   ): PlaylistObjectSimplified = {

@@ -97,34 +97,34 @@ object ChartAxisOptions {
   def apply(
     lineColor: String = null,
     lineDashType: DashType = null,
-    lineThickness: Int | Double = null,
-    margin: Int | Double = null,
-    maximum: Int | Double = null,
-    minimum: Int | Double = null,
+    lineThickness: js.UndefOr[Double] = js.undefined,
+    margin: js.UndefOr[Double] = js.undefined,
+    maximum: js.UndefOr[Double] = js.undefined,
+    minimum: js.UndefOr[Double] = js.undefined,
     title: String = null,
     titleFontColor: String = null,
     titleFontFamily: String = null,
-    titleFontSize: Int | Double = null,
+    titleFontSize: js.UndefOr[Double] = js.undefined,
     titleFontStyle: String = null,
     titleFontWeight: String = null,
-    viewportMaximum: Int | Double = null,
-    viewportMinimum: Int | Double = null
+    viewportMaximum: js.UndefOr[Double] = js.undefined,
+    viewportMinimum: js.UndefOr[Double] = js.undefined
   ): ChartAxisOptions = {
     val __obj = js.Dynamic.literal()
     if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
     if (lineDashType != null) __obj.updateDynamic("lineDashType")(lineDashType.asInstanceOf[js.Any])
-    if (lineThickness != null) __obj.updateDynamic("lineThickness")(lineThickness.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
-    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineThickness)) __obj.updateDynamic("lineThickness")(lineThickness.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximum)) __obj.updateDynamic("maximum")(maximum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimum)) __obj.updateDynamic("minimum")(minimum.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (titleFontColor != null) __obj.updateDynamic("titleFontColor")(titleFontColor.asInstanceOf[js.Any])
     if (titleFontFamily != null) __obj.updateDynamic("titleFontFamily")(titleFontFamily.asInstanceOf[js.Any])
-    if (titleFontSize != null) __obj.updateDynamic("titleFontSize")(titleFontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(titleFontSize)) __obj.updateDynamic("titleFontSize")(titleFontSize.get.asInstanceOf[js.Any])
     if (titleFontStyle != null) __obj.updateDynamic("titleFontStyle")(titleFontStyle.asInstanceOf[js.Any])
     if (titleFontWeight != null) __obj.updateDynamic("titleFontWeight")(titleFontWeight.asInstanceOf[js.Any])
-    if (viewportMaximum != null) __obj.updateDynamic("viewportMaximum")(viewportMaximum.asInstanceOf[js.Any])
-    if (viewportMinimum != null) __obj.updateDynamic("viewportMinimum")(viewportMinimum.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewportMaximum)) __obj.updateDynamic("viewportMaximum")(viewportMaximum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewportMinimum)) __obj.updateDynamic("viewportMinimum")(viewportMinimum.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartAxisOptions]
   }
 }

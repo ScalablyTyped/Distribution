@@ -19,16 +19,16 @@ trait ITensorInfo extends js.Object {
 object ITensorInfo {
   @scala.inline
   def apply(
-    cooSparse: ICooSparse = null,
-    dtype: DataType = null,
-    name: String = null,
-    tensorShape: ITensorShape = null
+    cooSparse: js.UndefOr[Null | ICooSparse] = js.undefined,
+    dtype: js.UndefOr[Null | DataType] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined,
+    tensorShape: js.UndefOr[Null | ITensorShape] = js.undefined
   ): ITensorInfo = {
     val __obj = js.Dynamic.literal()
-    if (cooSparse != null) __obj.updateDynamic("cooSparse")(cooSparse.asInstanceOf[js.Any])
-    if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (tensorShape != null) __obj.updateDynamic("tensorShape")(tensorShape.asInstanceOf[js.Any])
+    if (!js.isUndefined(cooSparse)) __obj.updateDynamic("cooSparse")(cooSparse.asInstanceOf[js.Any])
+    if (!js.isUndefined(dtype)) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(tensorShape)) __obj.updateDynamic("tensorShape")(tensorShape.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITensorInfo]
   }
 }

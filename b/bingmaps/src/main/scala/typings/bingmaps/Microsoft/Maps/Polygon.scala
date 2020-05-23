@@ -4,23 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Microsoft.Maps.Polygon")
 @js.native
-class Polygon protected () extends IPrimitive {
-  /**
-    * @constructor
-    * @param rings A Location array for basic polygon with single outer perimeter,
-    * or an array of Location arrays for advanced polygon (multi-polygon, polygon with holes, or combination of polygons).
-    * @param options Options used to customize polygon.
-    */
-  def this(rings: js.Array[js.Array[Location] | Location]) = this()
-  def this(rings: js.Array[js.Array[Location] | Location], options: IPolygonOptions) = this()
-  /**
-    * Gets the css cursor value when the primitive has events on it.
-    * @returns css cursor string when primitive has events on it.
-    */
-  /* CompleteClass */
-  override def getCursor(): String = js.native
+trait Polygon extends IPrimitive {
   /**
     * Gets the fill color of the inside of the polygon. Will be string or Color object depending on the the what method was used in the pushpin options.
     * @returns The fill color of the inside of the polygon.
@@ -57,12 +42,6 @@ class Polygon protected () extends IPrimitive {
     */
   def getStrokeThickness(): Double = js.native
   /**
-    * Gets whether the primitive is visible.
-    * @returns A boolean indicating whether the primitive is visible or not.
-    */
-  /* CompleteClass */
-  override def getVisible(): Boolean = js.native
-  /**
     * Sets locations (single ring) of the polygon. (for V7 compatability)
     * @param locations A Location[] that defines the only ring of the polygon
     */
@@ -72,12 +51,6 @@ class Polygon protected () extends IPrimitive {
     * @param options The IPolygonOptions object containing the options to customize the polygon.
     */
   def setOptions(options: IPolygonOptions): Unit = js.native
-  /**
-    * Sets the options for customizing the IPrimitive.
-    * @param options The options for customizing the IPrimitive.
-    */
-  /* CompleteClass */
-  override def setOptions(options: IPrimitiveOptions): Unit = js.native
   /**
     * Sets rings of the polygon.
     * @param rings A Location[][] where each Location[] defines a ring of the polygon.

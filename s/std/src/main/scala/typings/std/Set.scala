@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,8 +31,4 @@ trait Set[T] extends js.Object {
     */
   def values(): IterableIterator[T] = js.native
 }
-
-@JSGlobal("Set")
-@js.native
-object Set extends TopLevel[SetConstructor]
 

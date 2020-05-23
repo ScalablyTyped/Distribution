@@ -1,13 +1,13 @@
 package typings.tablesorter.tablesorterConfigurationMod
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.jquery.JQuery_.Selector
+import typings.jquery.JQuery.Selector
 import typings.tablesorter.coreThemeMod.CoreTheme
 import typings.tablesorter.emptySortingMod.EmptySorting
 import typings.tablesorter.globalizeSettingsMod.GlobalizeSettings
 import typings.tablesorter.initializationEventHandlerMod.InitializationEventHandler
 import typings.tablesorter.mappedSettingsMod.MappedSettings
-import typings.tablesorter.mod._Global_.JQuery
+import typings.tablesorter.mod.global.JQuery
 import typings.tablesorter.numberSorterMod.NumberSorter
 import typings.tablesorter.relativeSortDefinitionMod.RelativeSortDefinition
 import typings.tablesorter.renderHeaderEventHandlerMod.RenderHeaderEventHandler
@@ -367,7 +367,7 @@ object TablesorterConfiguration {
     cssProcessing: String = null,
     data: js.Object | js.Array[js.Array[_]] = null,
     dateFormat: String = null,
-    dateRange: Int | Double = null,
+    dateRange: js.UndefOr[Double] = js.undefined,
     debug: Boolean | String = null,
     delayInit: js.UndefOr[Boolean] = js.undefined,
     duplicateSpan: js.UndefOr[Boolean] = js.undefined,
@@ -417,8 +417,8 @@ object TablesorterConfiguration {
     widthFixed: js.UndefOr[Boolean] = js.undefined
   ): TablesorterConfiguration[TElement] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancelSelection)) __obj.updateDynamic("cancelSelection")(cancelSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(cehckboxVisible)) __obj.updateDynamic("cehckboxVisible")(cehckboxVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelSelection)) __obj.updateDynamic("cancelSelection")(cancelSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cehckboxVisible)) __obj.updateDynamic("cehckboxVisible")(cehckboxVisible.get.asInstanceOf[js.Any])
     if (checkboxClass != null) __obj.updateDynamic("checkboxClass")(checkboxClass.asInstanceOf[js.Any])
     if (cssAsc != null) __obj.updateDynamic("cssAsc")(cssAsc.asInstanceOf[js.Any])
     if (cssChildRow != null) __obj.updateDynamic("cssChildRow")(cssChildRow.asInstanceOf[js.Any])
@@ -437,18 +437,18 @@ object TablesorterConfiguration {
     if (cssProcessing != null) __obj.updateDynamic("cssProcessing")(cssProcessing.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
-    if (dateRange != null) __obj.updateDynamic("dateRange")(dateRange.asInstanceOf[js.Any])
+    if (!js.isUndefined(dateRange)) __obj.updateDynamic("dateRange")(dateRange.get.asInstanceOf[js.Any])
     if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (!js.isUndefined(delayInit)) __obj.updateDynamic("delayInit")(delayInit.asInstanceOf[js.Any])
-    if (!js.isUndefined(duplicateSpan)) __obj.updateDynamic("duplicateSpan")(duplicateSpan.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayInit)) __obj.updateDynamic("delayInit")(delayInit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duplicateSpan)) __obj.updateDynamic("duplicateSpan")(duplicateSpan.get.asInstanceOf[js.Any])
     if (emptyTo != null) __obj.updateDynamic("emptyTo")(emptyTo.asInstanceOf[js.Any])
     if (globalize != null) __obj.updateDynamic("globalize")(globalize.asInstanceOf[js.Any])
     if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreChildRow)) __obj.updateDynamic("ignoreChildRow")(ignoreChildRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreChildRow)) __obj.updateDynamic("ignoreChildRow")(ignoreChildRow.get.asInstanceOf[js.Any])
     if (imgAttr != null) __obj.updateDynamic("imgAttr")(imgAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(initWidgets)) __obj.updateDynamic("initWidgets")(initWidgets.asInstanceOf[js.Any])
+    if (!js.isUndefined(initWidgets)) __obj.updateDynamic("initWidgets")(initWidgets.get.asInstanceOf[js.Any])
     if (initialized != null) __obj.updateDynamic("initialized")(js.Any.fromFunction1(initialized))
     if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
     if (numberSorter != null) __obj.updateDynamic("numberSorter")(js.Any.fromFunction4(numberSorter))
@@ -457,34 +457,34 @@ object TablesorterConfiguration {
     if (pointerClick != null) __obj.updateDynamic("pointerClick")(pointerClick.asInstanceOf[js.Any])
     if (pointerDown != null) __obj.updateDynamic("pointerDown")(pointerDown.asInstanceOf[js.Any])
     if (pointerUp != null) __obj.updateDynamic("pointerUp")(pointerUp.asInstanceOf[js.Any])
-    if (!js.isUndefined(resort)) __obj.updateDynamic("resort")(resort.asInstanceOf[js.Any])
+    if (!js.isUndefined(resort)) __obj.updateDynamic("resort")(resort.get.asInstanceOf[js.Any])
     if (selectorHeaders != null) __obj.updateDynamic("selectorHeaders")(selectorHeaders.asInstanceOf[js.Any])
     if (selectorRemove != null) __obj.updateDynamic("selectorRemove")(selectorRemove.asInstanceOf[js.Any])
     if (selectorSort != null) __obj.updateDynamic("selectorSort")(selectorSort.asInstanceOf[js.Any])
-    if (!js.isUndefined(serverSideSorting)) __obj.updateDynamic("serverSideSorting")(serverSideSorting.asInstanceOf[js.Any])
-    if (!js.isUndefined(showProcessing)) __obj.updateDynamic("showProcessing")(showProcessing.asInstanceOf[js.Any])
+    if (!js.isUndefined(serverSideSorting)) __obj.updateDynamic("serverSideSorting")(serverSideSorting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showProcessing)) __obj.updateDynamic("showProcessing")(showProcessing.get.asInstanceOf[js.Any])
     if (sortAppend != null) __obj.updateDynamic("sortAppend")(sortAppend.asInstanceOf[js.Any])
     if (sortForce != null) __obj.updateDynamic("sortForce")(sortForce.asInstanceOf[js.Any])
     if (sortInitialOrder != null) __obj.updateDynamic("sortInitialOrder")(sortInitialOrder.asInstanceOf[js.Any])
     if (sortList != null) __obj.updateDynamic("sortList")(sortList.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortLocaleCompare)) __obj.updateDynamic("sortLocaleCompare")(sortLocaleCompare.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortLocaleCompare)) __obj.updateDynamic("sortLocaleCompare")(sortLocaleCompare.get.asInstanceOf[js.Any])
     if (sortMultiSortKey != null) __obj.updateDynamic("sortMultiSortKey")(sortMultiSortKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortReset)) __obj.updateDynamic("sortReset")(sortReset.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortReset)) __obj.updateDynamic("sortReset")(sortReset.get.asInstanceOf[js.Any])
     if (sortResetKey != null) __obj.updateDynamic("sortResetKey")(sortResetKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortRestart)) __obj.updateDynamic("sortRestart")(sortRestart.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortStable)) __obj.updateDynamic("sortStable")(sortStable.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortRestart)) __obj.updateDynamic("sortRestart")(sortRestart.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortStable)) __obj.updateDynamic("sortStable")(sortStable.get.asInstanceOf[js.Any])
     if (stringTo != null) __obj.updateDynamic("stringTo")(stringTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     if (tableClass != null) __obj.updateDynamic("tableClass")(tableClass.asInstanceOf[js.Any])
     if (textAttribute != null) __obj.updateDynamic("textAttribute")(textAttribute.asInstanceOf[js.Any])
     if (textExtraction != null) __obj.updateDynamic("textExtraction")(textExtraction.asInstanceOf[js.Any])
     if (textSorter != null) __obj.updateDynamic("textSorter")(textSorter.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(usNumberFormat)) __obj.updateDynamic("usNumberFormat")(usNumberFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(usNumberFormat)) __obj.updateDynamic("usNumberFormat")(usNumberFormat.get.asInstanceOf[js.Any])
     if (widgetClass != null) __obj.updateDynamic("widgetClass")(widgetClass.asInstanceOf[js.Any])
     if (widgetOptions != null) __obj.updateDynamic("widgetOptions")(widgetOptions.asInstanceOf[js.Any])
     if (widgets != null) __obj.updateDynamic("widgets")(widgets.asInstanceOf[js.Any])
-    if (!js.isUndefined(widthFixed)) __obj.updateDynamic("widthFixed")(widthFixed.asInstanceOf[js.Any])
+    if (!js.isUndefined(widthFixed)) __obj.updateDynamic("widthFixed")(widthFixed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TablesorterConfiguration[TElement]]
   }
 }

@@ -11,9 +11,9 @@ trait IDocumentCardLocationStyles extends js.Object {
 
 object IDocumentCardLocationStyles {
   @scala.inline
-  def apply(root: IStyle = null): IDocumentCardLocationStyles = {
+  def apply(root: js.UndefOr[Null | IStyle] = js.undefined): IDocumentCardLocationStyles = {
     val __obj = js.Dynamic.literal()
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDocumentCardLocationStyles]
   }
 }

@@ -1,6 +1,6 @@
 package typings.braftEditor.mod
 
-import typings.braftEditor.AnonFamily
+import typings.braftEditor.anon.Family
 import typings.braftEditor.braftEditorStrings.`vi-vn`
 import typings.braftEditor.braftEditorStrings.`zh-hant`
 import typings.braftEditor.braftEditorStrings.center
@@ -45,7 +45,7 @@ trait BraftEditorProps extends js.Object {
   var excludeControls: js.UndefOr[js.Array[BuiltInControlType]] = js.undefined
   var extendControls: js.UndefOr[js.Array[ExtendControlType]] = js.undefined
   var fixPlaceholder: js.UndefOr[Boolean] = js.undefined
-  var fontFamilies: js.UndefOr[js.Array[AnonFamily]] = js.undefined
+  var fontFamilies: js.UndefOr[js.Array[Family]] = js.undefined
   var fontSizes: js.UndefOr[js.Array[Double]] = js.undefined
   var handleBeforeInput: js.UndefOr[js.Function] = js.undefined
   var handleDroppedFiles: js.UndefOr[js.Function] = js.undefined
@@ -104,7 +104,7 @@ object BraftEditorProps {
     excludeControls: js.Array[BuiltInControlType] = null,
     extendControls: js.Array[ExtendControlType] = null,
     fixPlaceholder: js.UndefOr[Boolean] = js.undefined,
-    fontFamilies: js.Array[AnonFamily] = null,
+    fontFamilies: js.Array[Family] = null,
     fontSizes: js.Array[Double] = null,
     handleBeforeInput: js.Function = null,
     handleDroppedFiles: js.Function = null,
@@ -138,7 +138,7 @@ object BraftEditorProps {
     value: EditorState = null
   ): BraftEditorProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowInsertLinkText)) __obj.updateDynamic("allowInsertLinkText")(allowInsertLinkText.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowInsertLinkText)) __obj.updateDynamic("allowInsertLinkText")(allowInsertLinkText.get.asInstanceOf[js.Any])
     if (blockRenderMap != null) __obj.updateDynamic("blockRenderMap")(blockRenderMap.asInstanceOf[js.Any])
     if (blockRendererFn != null) __obj.updateDynamic("blockRendererFn")(blockRendererFn.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
@@ -157,7 +157,7 @@ object BraftEditorProps {
     if (emojis != null) __obj.updateDynamic("emojis")(emojis.asInstanceOf[js.Any])
     if (excludeControls != null) __obj.updateDynamic("excludeControls")(excludeControls.asInstanceOf[js.Any])
     if (extendControls != null) __obj.updateDynamic("extendControls")(extendControls.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixPlaceholder)) __obj.updateDynamic("fixPlaceholder")(fixPlaceholder.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixPlaceholder)) __obj.updateDynamic("fixPlaceholder")(fixPlaceholder.get.asInstanceOf[js.Any])
     if (fontFamilies != null) __obj.updateDynamic("fontFamilies")(fontFamilies.asInstanceOf[js.Any])
     if (fontSizes != null) __obj.updateDynamic("fontSizes")(fontSizes.asInstanceOf[js.Any])
     if (handleBeforeInput != null) __obj.updateDynamic("handleBeforeInput")(handleBeforeInput.asInstanceOf[js.Any])
@@ -170,8 +170,8 @@ object BraftEditorProps {
     if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (imageControls != null) __obj.updateDynamic("imageControls")(imageControls.asInstanceOf[js.Any])
-    if (!js.isUndefined(imageEqualRatio)) __obj.updateDynamic("imageEqualRatio")(imageEqualRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(imageResizable)) __obj.updateDynamic("imageResizable")(imageResizable.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageEqualRatio)) __obj.updateDynamic("imageEqualRatio")(imageEqualRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageResizable)) __obj.updateDynamic("imageResizable")(imageResizable.get.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (letterSpacings != null) __obj.updateDynamic("letterSpacings")(letterSpacings.asInstanceOf[js.Any])
     if (lineHeights != null) __obj.updateDynamic("lineHeights")(lineHeights.asInstanceOf[js.Any])
@@ -184,11 +184,11 @@ object BraftEditorProps {
     if (onSave != null) __obj.updateDynamic("onSave")(onSave.asInstanceOf[js.Any])
     if (onTab != null) __obj.updateDynamic("onTab")(onTab.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripPastedStyles)) __obj.updateDynamic("stripPastedStyles")(stripPastedStyles.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripPastedStyles)) __obj.updateDynamic("stripPastedStyles")(stripPastedStyles.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (textAligns != null) __obj.updateDynamic("textAligns")(textAligns.asInstanceOf[js.Any])
-    if (!js.isUndefined(textBackgroundColor)) __obj.updateDynamic("textBackgroundColor")(textBackgroundColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(textBackgroundColor)) __obj.updateDynamic("textBackgroundColor")(textBackgroundColor.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[BraftEditorProps]
   }

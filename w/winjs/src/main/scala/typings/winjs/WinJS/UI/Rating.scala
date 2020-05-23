@@ -1,7 +1,7 @@
 package typings.winjs.WinJS.UI
 
 import typings.std.CustomEvent
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,18 +10,8 @@ import scala.scalajs.js.annotation._
 /**
   * Lets the user rate something by clicking an icon that represents a rating. The Rating control can display three types of ratings: an average rating, a tentative rating, and the user's rating.
   **/
-@JSGlobal("WinJS.UI.Rating")
 @js.native
-//#region Constructors
-/**
-  * Creates a new Rating.
-  * @constructor
-  * @param element The DOM element hosts the new Rating.
-  * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the cancel event, add a property named "oncancel" to the options object and set its value to the event handler.
-  **/
-class Rating () extends js.Object {
-  def this(element: HTMLElement) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+trait Rating extends js.Object {
   //#endregion Methods
   //#region Properties
   /**
@@ -72,7 +62,7 @@ class Rating () extends js.Object {
     * Raised when the user finishes interacting with the rating control without committing a tentative rating.
     * @param eventInfo An object that contains information about the event.
     **/
-  def oncancel(eventInfo: Event_): Unit = js.native
+  def oncancel(eventInfo: Event): Unit = js.native
   /**
     * Raised when the user commits a change to the userRating.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.tentativeRating.
@@ -91,15 +81,5 @@ class Rating () extends js.Object {
     **/
   def removeEventListener(eventName: String, eventCallback: js.Function): Unit = js.native
   def removeEventListener(eventName: String, eventCallback: js.Function, useCapture: Boolean): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("WinJS.UI.Rating")
-@js.native
-object Rating extends js.Object {
-  /**
-    * Indicates that the object is compatibile with declarative processing.
-    **/
-  var supportedForProcessing: Boolean = js.native
 }
 

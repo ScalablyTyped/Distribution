@@ -4,7 +4,5 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Foundation.Metadata.GCPressureAttribute")
-@js.native
-class GCPressureAttribute () extends js.Object
+trait GCPressureAttribute extends js.Object
 

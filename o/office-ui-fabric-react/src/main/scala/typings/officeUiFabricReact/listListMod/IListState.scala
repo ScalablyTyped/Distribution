@@ -16,12 +16,12 @@ object IListState {
   @scala.inline
   def apply[T](
     isScrolling: js.UndefOr[Boolean] = js.undefined,
-    measureVersion: Int | Double = null,
+    measureVersion: js.UndefOr[Double] = js.undefined,
     pages: js.Array[IPage[T]] = null
   ): IListState[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isScrolling)) __obj.updateDynamic("isScrolling")(isScrolling.asInstanceOf[js.Any])
-    if (measureVersion != null) __obj.updateDynamic("measureVersion")(measureVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(isScrolling)) __obj.updateDynamic("isScrolling")(isScrolling.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(measureVersion)) __obj.updateDynamic("measureVersion")(measureVersion.get.asInstanceOf[js.Any])
     if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListState[T]]
   }

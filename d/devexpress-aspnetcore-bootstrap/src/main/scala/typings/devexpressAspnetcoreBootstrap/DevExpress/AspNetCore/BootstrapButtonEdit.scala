@@ -10,9 +10,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapButtonEdit")
 @js.native
-class BootstrapButtonEdit () extends BootstrapClientEdit {
+trait BootstrapButtonEdit extends BootstrapClientEdit {
   def getButtonVisible(number: Double): Boolean = js.native
   def getCaretPosition(): Double = js.native
   def getText(): String = js.native

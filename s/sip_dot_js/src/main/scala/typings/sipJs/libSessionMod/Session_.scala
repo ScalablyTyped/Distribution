@@ -24,16 +24,16 @@ import typings.sipJs.referContextMod.ReferServerContext
 import typings.sipJs.sessionDtmfMod.DTMF
 import typings.sipJs.sipJsStrings.`SessionDescriptionHandler-created`
 import typings.sipJs.sipJsStrings.accepted
-import typings.sipJs.sipJsStrings.ack_
-import typings.sipJs.sipJsStrings.bye_
-import typings.sipJs.sipJsStrings.cancel_
+import typings.sipJs.sipJsStrings.ack
+import typings.sipJs.sipJsStrings.bye
+import typings.sipJs.sipJsStrings.cancel
 import typings.sipJs.sipJsStrings.confirmed
 import typings.sipJs.sipJsStrings.connecting
 import typings.sipJs.sipJsStrings.dialog
 import typings.sipJs.sipJsStrings.directionChanged
 import typings.sipJs.sipJsStrings.dtmf
 import typings.sipJs.sipJsStrings.failed
-import typings.sipJs.sipJsStrings.notify_
+import typings.sipJs.sipJsStrings.notify
 import typings.sipJs.sipJsStrings.progress
 import typings.sipJs.sipJsStrings.referAccepted
 import typings.sipJs.sipJsStrings.referInviteSent
@@ -112,9 +112,7 @@ abstract class Session_ protected () extends EventEmitter {
   def dtmf(tones: Double): this.type = js.native
   def dtmf(tones: Double, options: DtmfOptions): this.type = js.native
   /* protected */ def errorListener(args: js.Any*): Unit = js.native
-  /* protected */ def failed(response: js.UndefOr[scala.Nothing], cause: String): this.type = js.native
-  /* protected */ def failed(response: IncomingRequestMessage, cause: String): this.type = js.native
-  /* protected */ def failed(response: IncomingResponseMessage, cause: String): this.type = js.native
+  /* protected */ def failed(response: js.UndefOr[IncomingRequestMessage | IncomingResponseMessage], cause: String): this.type = js.native
   def hold(): Unit = js.native
   def hold(options: SessionDescriptionHandlerOptions): Unit = js.native
   def hold(options: SessionDescriptionHandlerOptions, modifiers: SessionDescriptionHandlerModifiers): Unit = js.native
@@ -134,11 +132,11 @@ abstract class Session_ protected () extends EventEmitter {
   @JSName("on")
   def on_accepted(event: accepted, listener: js.Function2[/* response */ js.Any, /* cause */ causes, Unit]): this.type = js.native
   @JSName("on")
-  def on_ack(event: ack_, listener: js.Function1[/* request */ js.Any, Unit]): this.type = js.native
+  def on_ack(event: ack, listener: js.Function1[/* request */ js.Any, Unit]): this.type = js.native
   @JSName("on")
-  def on_bye(event: bye_, listener: js.Function1[/* request */ js.Any, Unit]): this.type = js.native
+  def on_bye(event: bye, listener: js.Function1[/* request */ js.Any, Unit]): this.type = js.native
   @JSName("on")
-  def on_cancel(event: cancel_, listener: js.Function0[Unit]): this.type = js.native
+  def on_cancel(event: cancel, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_confirmed(event: confirmed, listener: js.Function1[/* request */ js.Any, Unit]): this.type = js.native
   @JSName("on")
@@ -158,7 +156,7 @@ abstract class Session_ protected () extends EventEmitter {
     listener: js.Function2[/* response */ js.UndefOr[js.Any], /* cause */ js.UndefOr[causes], Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_notify(event: notify_, listener: js.Function1[/* request */ js.Any, Unit]): this.type = js.native
+  def on_notify(event: notify, listener: js.Function1[/* request */ js.Any, Unit]): this.type = js.native
   @JSName("on")
   def on_progress(
     event: progress,

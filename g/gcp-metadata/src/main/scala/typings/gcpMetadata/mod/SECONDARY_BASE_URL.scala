@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("gcp-metadata", "SECONDARY_BASE_URL")
 @js.native
-object SECONDARY_BASE_URL extends TopLevel[String]
+object SECONDARY_BASE_URL
+  extends TopLevel[/* "http://metadata.google.internal." */ String]
 

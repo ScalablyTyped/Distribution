@@ -1,6 +1,6 @@
 package typings.antd.passwordMod
 
-import typings.antd.AnonAction
+import typings.antd.anon.Action
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends Password
 @JSImport("antd/lib/input/Password", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonAction = js.native
+  var defaultProps: Action = js.native
 }
 

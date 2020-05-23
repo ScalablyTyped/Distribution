@@ -1,6 +1,6 @@
 package typings.arangodb.queuesMod
 
-import typings.arangodb.DocumentJob
+import typings.arangodb.anon.DocumentJob
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,9 +23,9 @@ object JobOptions {
     backOff: (js.Function1[/* failureCount */ Double, Double]) | Double = null,
     delayUntil: Double | Date = null,
     failure: (/* result */ js.Any, /* jobData */ js.Any, /* job */ DocumentJob) => Unit = null,
-    maxFailures: Int | Double = null,
-    repeatDelay: Int | Double = null,
-    repeatTimes: Int | Double = null,
+    maxFailures: js.UndefOr[Double] = js.undefined,
+    repeatDelay: js.UndefOr[Double] = js.undefined,
+    repeatTimes: js.UndefOr[Double] = js.undefined,
     repeatUntil: Double | Date = null,
     success: (/* result */ js.Any, /* jobData */ js.Any, /* job */ DocumentJob) => Unit = null
   ): JobOptions = {
@@ -33,9 +33,9 @@ object JobOptions {
     if (backOff != null) __obj.updateDynamic("backOff")(backOff.asInstanceOf[js.Any])
     if (delayUntil != null) __obj.updateDynamic("delayUntil")(delayUntil.asInstanceOf[js.Any])
     if (failure != null) __obj.updateDynamic("failure")(js.Any.fromFunction3(failure))
-    if (maxFailures != null) __obj.updateDynamic("maxFailures")(maxFailures.asInstanceOf[js.Any])
-    if (repeatDelay != null) __obj.updateDynamic("repeatDelay")(repeatDelay.asInstanceOf[js.Any])
-    if (repeatTimes != null) __obj.updateDynamic("repeatTimes")(repeatTimes.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFailures)) __obj.updateDynamic("maxFailures")(maxFailures.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeatDelay)) __obj.updateDynamic("repeatDelay")(repeatDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeatTimes)) __obj.updateDynamic("repeatTimes")(repeatTimes.get.asInstanceOf[js.Any])
     if (repeatUntil != null) __obj.updateDynamic("repeatUntil")(repeatUntil.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction3(success))
     __obj.asInstanceOf[JobOptions]

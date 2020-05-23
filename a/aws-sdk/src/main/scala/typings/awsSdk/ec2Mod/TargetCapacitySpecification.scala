@@ -28,15 +28,15 @@ object TargetCapacitySpecification {
   @scala.inline
   def apply(
     DefaultTargetCapacityType: DefaultTargetCapacityType = null,
-    OnDemandTargetCapacity: Int | scala.Double = null,
-    SpotTargetCapacity: Int | scala.Double = null,
-    TotalTargetCapacity: Int | scala.Double = null
+    OnDemandTargetCapacity: js.UndefOr[Integer] = js.undefined,
+    SpotTargetCapacity: js.UndefOr[Integer] = js.undefined,
+    TotalTargetCapacity: js.UndefOr[Integer] = js.undefined
   ): TargetCapacitySpecification = {
     val __obj = js.Dynamic.literal()
     if (DefaultTargetCapacityType != null) __obj.updateDynamic("DefaultTargetCapacityType")(DefaultTargetCapacityType.asInstanceOf[js.Any])
-    if (OnDemandTargetCapacity != null) __obj.updateDynamic("OnDemandTargetCapacity")(OnDemandTargetCapacity.asInstanceOf[js.Any])
-    if (SpotTargetCapacity != null) __obj.updateDynamic("SpotTargetCapacity")(SpotTargetCapacity.asInstanceOf[js.Any])
-    if (TotalTargetCapacity != null) __obj.updateDynamic("TotalTargetCapacity")(TotalTargetCapacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(OnDemandTargetCapacity)) __obj.updateDynamic("OnDemandTargetCapacity")(OnDemandTargetCapacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SpotTargetCapacity)) __obj.updateDynamic("SpotTargetCapacity")(SpotTargetCapacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalTargetCapacity)) __obj.updateDynamic("TotalTargetCapacity")(TotalTargetCapacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetCapacitySpecification]
   }
 }

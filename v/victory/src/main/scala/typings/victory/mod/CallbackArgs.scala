@@ -1,6 +1,6 @@
 package typings.victory.mod
 
-import typings.victory.AnonXY
+import typings.victory.anon.XY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,14 +16,14 @@ trait CallbackArgs extends js.Object {
   var active: Boolean
   var datum: js.Any
   var horizontal: Boolean
-  var scale: js.UndefOr[AnonXY] = js.undefined
+  var scale: js.UndefOr[XY] = js.undefined
   var x: Double
   var y: Double
 }
 
 object CallbackArgs {
   @scala.inline
-  def apply(active: Boolean, datum: js.Any, horizontal: Boolean, x: Double, y: Double, scale: AnonXY = null): CallbackArgs = {
+  def apply(active: Boolean, datum: js.Any, horizontal: Boolean, x: Double, y: Double, scale: XY = null): CallbackArgs = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], datum = datum.asInstanceOf[js.Any], horizontal = horizontal.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallbackArgs]

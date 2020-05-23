@@ -39,21 +39,19 @@ object Namespace extends js.Object {
     * @throws {TypeError} If arguments are invalid
     */
   def fromJSON(name: String, json: StringDictionary[js.Any]): typings.protobufjs.mod.Namespace = js.native
-  def isReservedId(reserved: js.UndefOr[scala.Nothing], id: Double): Boolean = js.native
   /**
     * Tests if the specified id is reserved.
     * @param reserved Array of reserved ranges and names
     * @param id Id to test
     * @returns `true` if reserved, otherwise `false`
     */
-  def isReservedId(reserved: js.Array[js.Array[Double] | String], id: Double): Boolean = js.native
-  def isReservedName(reserved: js.UndefOr[scala.Nothing], name: String): Boolean = js.native
+  def isReservedId(reserved: js.UndefOr[js.Array[js.Array[Double] | String]], id: Double): Boolean = js.native
   /**
     * Tests if the specified name is reserved.
     * @param reserved Array of reserved ranges and names
     * @param name Name to test
     * @returns `true` if reserved, otherwise `false`
     */
-  def isReservedName(reserved: js.Array[js.Array[Double] | String], name: String): Boolean = js.native
+  def isReservedName(reserved: js.UndefOr[js.Array[js.Array[Double] | String]], name: String): Boolean = js.native
 }
 

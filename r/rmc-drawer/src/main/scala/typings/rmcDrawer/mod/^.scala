@@ -1,7 +1,7 @@
 package typings.rmcDrawer.mod
 
 import typings.react.mod.Component
-import typings.rmcDrawer.PartialDrawerProps
+import typings.rmcDrawer.anon.PartialDrawerProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

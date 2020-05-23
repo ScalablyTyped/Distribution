@@ -32,14 +32,14 @@ object S3ReportExportConfig {
   @scala.inline
   def apply(
     bucket: NonEmptyString = null,
-    encryptionDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    encryptionDisabled: js.UndefOr[WrapperBoolean] = js.undefined,
     encryptionKey: NonEmptyString = null,
     packaging: ReportPackagingType = null,
     path: String = null
   ): S3ReportExportConfig = {
     val __obj = js.Dynamic.literal()
     if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
-    if (!js.isUndefined(encryptionDisabled)) __obj.updateDynamic("encryptionDisabled")(encryptionDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(encryptionDisabled)) __obj.updateDynamic("encryptionDisabled")(encryptionDisabled.get.asInstanceOf[js.Any])
     if (encryptionKey != null) __obj.updateDynamic("encryptionKey")(encryptionKey.asInstanceOf[js.Any])
     if (packaging != null) __obj.updateDynamic("packaging")(packaging.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])

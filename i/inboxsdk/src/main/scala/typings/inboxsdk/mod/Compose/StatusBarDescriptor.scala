@@ -11,10 +11,10 @@ trait StatusBarDescriptor extends js.Object {
 
 object StatusBarDescriptor {
   @scala.inline
-  def apply(height: Int | Double = null, orderHint: Int | Double = null): StatusBarDescriptor = {
+  def apply(height: js.UndefOr[Double] = js.undefined, orderHint: js.UndefOr[Double] = js.undefined): StatusBarDescriptor = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (orderHint != null) __obj.updateDynamic("orderHint")(orderHint.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(orderHint)) __obj.updateDynamic("orderHint")(orderHint.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatusBarDescriptor]
   }
 }

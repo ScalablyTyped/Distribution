@@ -26,9 +26,9 @@ object AlignedElement {
   ): AlignedElement = {
     val __obj = js.Dynamic.literal()
     if (element_pair != null) __obj.updateDynamic("element_pair")(element_pair.asInstanceOf[js.Any])
-    if (!js.isUndefined(identical_text)) __obj.updateDynamic("identical_text")(identical_text.asInstanceOf[js.Any])
+    if (!js.isUndefined(identical_text)) __obj.updateDynamic("identical_text")(identical_text.get.asInstanceOf[js.Any])
     if (provenance_ids != null) __obj.updateDynamic("provenance_ids")(provenance_ids.asInstanceOf[js.Any])
-    if (!js.isUndefined(significant_elements)) __obj.updateDynamic("significant_elements")(significant_elements.asInstanceOf[js.Any])
+    if (!js.isUndefined(significant_elements)) __obj.updateDynamic("significant_elements")(significant_elements.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlignedElement]
   }
 }

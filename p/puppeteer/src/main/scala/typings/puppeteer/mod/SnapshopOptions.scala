@@ -22,7 +22,7 @@ object SnapshopOptions {
   @scala.inline
   def apply(interestingOnly: js.UndefOr[Boolean] = js.undefined, root: ElementHandle[Element] = null): SnapshopOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(interestingOnly)) __obj.updateDynamic("interestingOnly")(interestingOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(interestingOnly)) __obj.updateDynamic("interestingOnly")(interestingOnly.get.asInstanceOf[js.Any])
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshopOptions]
   }

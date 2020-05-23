@@ -4,17 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.ASTSpan")
-@js.native
-class ASTSpan protected () extends IASTSpan {
-  def this(_start: Double, _end: Double) = this()
-  /* CompleteClass */
-  override var _end: Double = js.native
-  /* CompleteClass */
-  override var _start: Double = js.native
-  /* CompleteClass */
-  override def end(): Double = js.native
-  /* CompleteClass */
-  override def start(): Double = js.native
+trait ASTSpan extends IASTSpan
+
+object ASTSpan {
+  @scala.inline
+  def apply(_end: Double, _start: Double, end: () => Double, start: () => Double): ASTSpan = {
+    val __obj = js.Dynamic.literal(_end = _end.asInstanceOf[js.Any], _start = _start.asInstanceOf[js.Any], end = js.Any.fromFunction0(end), start = js.Any.fromFunction0(start))
+    __obj.asInstanceOf[ASTSpan]
+  }
 }
 

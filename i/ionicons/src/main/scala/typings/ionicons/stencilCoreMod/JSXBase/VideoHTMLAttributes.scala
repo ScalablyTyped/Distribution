@@ -5,7 +5,7 @@ import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.CompositionEvent
 import typings.std.DragEvent
-import typings.std.Event_
+import typings.std.Event
 import typings.std.FocusEvent
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
@@ -75,7 +75,7 @@ object VideoHTMLAttributes {
     mediaGroup: String = null,
     mediagroup: String = null,
     muted: js.UndefOr[Boolean] = js.undefined,
-    onAbort: /* event */ Event_ => Unit = null,
+    onAbort: /* event */ Event => Unit = null,
     onAnimationEnd: /* event */ AnimationEvent => Unit = null,
     onAnimationEndCapture: /* event */ AnimationEvent => Unit = null,
     onAnimationIteration: /* event */ AnimationEvent => Unit = null,
@@ -85,10 +85,10 @@ object VideoHTMLAttributes {
     onAuxClick: /* event */ MouseEvent => Unit = null,
     onBlur: /* event */ FocusEvent => Unit = null,
     onBlurCapture: /* event */ FocusEvent => Unit = null,
-    onCanPlay: /* event */ Event_ => Unit = null,
-    onCanPlayThrough: /* event */ Event_ => Unit = null,
-    onChange: /* event */ Event_ => Unit = null,
-    onChangeCapture: /* event */ Event_ => Unit = null,
+    onCanPlay: /* event */ Event => Unit = null,
+    onCanPlayThrough: /* event */ Event => Unit = null,
+    onChange: /* event */ Event => Unit = null,
+    onChangeCapture: /* event */ Event => Unit = null,
     onClick: /* event */ MouseEvent => Unit = null,
     onClickCapture: /* event */ MouseEvent => Unit = null,
     onCompositionEnd: /* event */ CompositionEvent => Unit = null,
@@ -121,32 +121,32 @@ object VideoHTMLAttributes {
     onDragStartCapture: /* event */ DragEvent => Unit = null,
     onDrop: /* event */ DragEvent => Unit = null,
     onDropCapture: /* event */ DragEvent => Unit = null,
-    onDurationChange: /* event */ Event_ => Unit = null,
-    onEmptied: /* event */ Event_ => Unit = null,
-    onEnded: /* event */ Event_ => Unit = null,
-    onError: /* event */ Event_ => Unit = null,
-    onErrorCapture: /* event */ Event_ => Unit = null,
+    onDurationChange: /* event */ Event => Unit = null,
+    onEmptied: /* event */ Event => Unit = null,
+    onEnded: /* event */ Event => Unit = null,
+    onError: /* event */ Event => Unit = null,
+    onErrorCapture: /* event */ Event => Unit = null,
     onFocus: /* event */ FocusEvent => Unit = null,
     onFocusCapture: /* event */ FocusEvent => Unit = null,
     onGotPointerCapture: /* event */ PointerEvent => Unit = null,
     onGotPointerCaptureCapture: /* event */ PointerEvent => Unit = null,
-    onInput: /* event */ Event_ => Unit = null,
-    onInputCapture: /* event */ Event_ => Unit = null,
-    onInterruptBegin: /* event */ Event_ => Unit = null,
-    onInterruptEnd: /* event */ Event_ => Unit = null,
-    onInvalid: /* event */ Event_ => Unit = null,
-    onInvalidCapture: /* event */ Event_ => Unit = null,
+    onInput: /* event */ Event => Unit = null,
+    onInputCapture: /* event */ Event => Unit = null,
+    onInterruptBegin: /* event */ Event => Unit = null,
+    onInterruptEnd: /* event */ Event => Unit = null,
+    onInvalid: /* event */ Event => Unit = null,
+    onInvalidCapture: /* event */ Event => Unit = null,
     onKeyDown: /* event */ KeyboardEvent => Unit = null,
     onKeyDownCapture: /* event */ KeyboardEvent => Unit = null,
     onKeyPress: /* event */ KeyboardEvent => Unit = null,
     onKeyPressCapture: /* event */ KeyboardEvent => Unit = null,
     onKeyUp: /* event */ KeyboardEvent => Unit = null,
     onKeyUpCapture: /* event */ KeyboardEvent => Unit = null,
-    onLoad: /* event */ Event_ => Unit = null,
-    onLoadCapture: /* event */ Event_ => Unit = null,
-    onLoadStart: /* event */ Event_ => Unit = null,
-    onLoadedData: /* event */ Event_ => Unit = null,
-    onLoadedMetaData: /* event */ Event_ => Unit = null,
+    onLoad: /* event */ Event => Unit = null,
+    onLoadCapture: /* event */ Event => Unit = null,
+    onLoadStart: /* event */ Event => Unit = null,
+    onLoadedData: /* event */ Event => Unit = null,
+    onLoadedMetaData: /* event */ Event => Unit = null,
     onLostPointerCapture: /* event */ PointerEvent => Unit = null,
     onLostPointerCaptureCapture: /* event */ PointerEvent => Unit = null,
     onMouseDown: /* event */ MouseEvent => Unit = null,
@@ -161,12 +161,12 @@ object VideoHTMLAttributes {
     onMouseOverCapture: /* event */ MouseEvent => Unit = null,
     onMouseUp: /* event */ MouseEvent => Unit = null,
     onMouseUpCapture: /* event */ MouseEvent => Unit = null,
-    onMozAudioAvailable: /* event */ Event_ => Unit = null,
+    onMozAudioAvailable: /* event */ Event => Unit = null,
     onPaste: /* event */ ClipboardEvent => Unit = null,
     onPasteCapture: /* event */ ClipboardEvent => Unit = null,
-    onPause: /* event */ Event_ => Unit = null,
-    onPlay: /* event */ Event_ => Unit = null,
-    onPlaying: /* event */ Event_ => Unit = null,
+    onPause: /* event */ Event => Unit = null,
+    onPlay: /* event */ Event => Unit = null,
+    onPlaying: /* event */ Event => Unit = null,
     onPointerCancel: /* event */ PointerEvent => Unit = null,
     onPointerCancelCapture: /* event */ PointerEvent => Unit = null,
     onPointerDown: /* event */ PointerEvent => Unit = null,
@@ -183,19 +183,19 @@ object VideoHTMLAttributes {
     onPointerOverCapture: /* event */ PointerEvent => Unit = null,
     onPointerUp: /* event */ PointerEvent => Unit = null,
     onPointerUpCapture: /* event */ PointerEvent => Unit = null,
-    onProgress: /* event */ Event_ => Unit = null,
-    onRateChange: /* event */ Event_ => Unit = null,
-    onReset: /* event */ Event_ => Unit = null,
-    onResetCapture: /* event */ Event_ => Unit = null,
+    onProgress: /* event */ Event => Unit = null,
+    onRateChange: /* event */ Event => Unit = null,
+    onReset: /* event */ Event => Unit = null,
+    onResetCapture: /* event */ Event => Unit = null,
     onScroll: /* event */ UIEvent => Unit = null,
     onScrollCapture: /* event */ UIEvent => Unit = null,
-    onSeeked: /* event */ Event_ => Unit = null,
-    onSeeking: /* event */ Event_ => Unit = null,
-    onStalled: /* event */ Event_ => Unit = null,
-    onSubmit: /* event */ Event_ => Unit = null,
-    onSubmitCapture: /* event */ Event_ => Unit = null,
-    onSuspend: /* event */ Event_ => Unit = null,
-    onTimeUpdate: /* event */ Event_ => Unit = null,
+    onSeeked: /* event */ Event => Unit = null,
+    onSeeking: /* event */ Event => Unit = null,
+    onStalled: /* event */ Event => Unit = null,
+    onSubmit: /* event */ Event => Unit = null,
+    onSubmitCapture: /* event */ Event => Unit = null,
+    onSuspend: /* event */ Event => Unit = null,
+    onTimeUpdate: /* event */ Event => Unit = null,
     onTouchCancel: /* event */ TouchEvent => Unit = null,
     onTouchCancelCapture: /* event */ TouchEvent => Unit = null,
     onTouchEnd: /* event */ TouchEvent => Unit = null,
@@ -206,8 +206,8 @@ object VideoHTMLAttributes {
     onTouchStartCapture: /* event */ TouchEvent => Unit = null,
     onTransitionEnd: /* event */ TransitionEvent => Unit = null,
     onTransitionEndCapture: /* event */ TransitionEvent => Unit = null,
-    onVolumeChange: /* event */ Event_ => Unit = null,
-    onWaiting: /* event */ Event_ => Unit = null,
+    onVolumeChange: /* event */ Event => Unit = null,
+    onWaiting: /* event */ Event => Unit = null,
     onWheel: /* event */ WheelEvent => Unit = null,
     onWheelCapture: /* event */ WheelEvent => Unit = null,
     part: String = null,
@@ -221,7 +221,7 @@ object VideoHTMLAttributes {
     radiogroup: String = null,
     ref: /* elm */ js.UndefOr[T] => Unit = null,
     resource: String = null,
-    results: Int | Double = null,
+    results: js.UndefOr[Double] = js.undefined,
     role: String = null,
     security: String = null,
     slot: String = null,
@@ -229,7 +229,7 @@ object VideoHTMLAttributes {
     spellcheck: Boolean | String = null,
     src: String = null,
     style: StringDictionary[js.UndefOr[String]] = null,
-    tabIndex: Int | Double = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
     tabindex: Double | String = null,
     title: String = null,
     typeof: String = null,
@@ -242,7 +242,7 @@ object VideoHTMLAttributes {
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
     if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
     if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay.get.asInstanceOf[js.Any])
     if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
     if (autocapitalize != null) __obj.updateDynamic("autocapitalize")(autocapitalize.asInstanceOf[js.Any])
     if (autocorrect != null) __obj.updateDynamic("autocorrect")(autocorrect.asInstanceOf[js.Any])
@@ -254,14 +254,14 @@ object VideoHTMLAttributes {
     if (contenteditable != null) __obj.updateDynamic("contenteditable")(contenteditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (contextmenu != null) __obj.updateDynamic("contextmenu")(contextmenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
+    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.get.asInstanceOf[js.Any])
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
     if (crossorigin != null) __obj.updateDynamic("crossorigin")(crossorigin.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
     if (innerHTML != null) __obj.updateDynamic("innerHTML")(innerHTML.asInstanceOf[js.Any])
@@ -271,19 +271,19 @@ object VideoHTMLAttributes {
     if (itemID != null) __obj.updateDynamic("itemID")(itemID.asInstanceOf[js.Any])
     if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp.asInstanceOf[js.Any])
     if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.get.asInstanceOf[js.Any])
     if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
     if (itemid != null) __obj.updateDynamic("itemid")(itemid.asInstanceOf[js.Any])
     if (itemprop != null) __obj.updateDynamic("itemprop")(itemprop.asInstanceOf[js.Any])
     if (itemref != null) __obj.updateDynamic("itemref")(itemref.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemscope)) __obj.updateDynamic("itemscope")(itemscope.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemscope)) __obj.updateDynamic("itemscope")(itemscope.get.asInstanceOf[js.Any])
     if (itemtype != null) __obj.updateDynamic("itemtype")(itemtype.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
     if (mediaGroup != null) __obj.updateDynamic("mediaGroup")(mediaGroup.asInstanceOf[js.Any])
     if (mediagroup != null) __obj.updateDynamic("mediagroup")(mediagroup.asInstanceOf[js.Any])
-    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.asInstanceOf[js.Any])
+    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.get.asInstanceOf[js.Any])
     if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1(onAbort))
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
     if (onAnimationEndCapture != null) __obj.updateDynamic("onAnimationEndCapture")(js.Any.fromFunction1(onAnimationEndCapture))
@@ -420,7 +420,7 @@ object VideoHTMLAttributes {
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
     if (onWheelCapture != null) __obj.updateDynamic("onWheelCapture")(js.Any.fromFunction1(onWheelCapture))
     if (part != null) __obj.updateDynamic("part")(part.asInstanceOf[js.Any])
-    if (!js.isUndefined(playsInline)) __obj.updateDynamic("playsInline")(playsInline.asInstanceOf[js.Any])
+    if (!js.isUndefined(playsInline)) __obj.updateDynamic("playsInline")(playsInline.get.asInstanceOf[js.Any])
     if (playsinline != null) __obj.updateDynamic("playsinline")(playsinline.asInstanceOf[js.Any])
     if (poster != null) __obj.updateDynamic("poster")(poster.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
@@ -430,19 +430,19 @@ object VideoHTMLAttributes {
     if (radiogroup != null) __obj.updateDynamic("radiogroup")(radiogroup.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(js.Any.fromFunction1(ref))
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
+    if (!js.isUndefined(results)) __obj.updateDynamic("results")(results.get.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
     if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.get.asInstanceOf[js.Any])
     if (spellcheck != null) __obj.updateDynamic("spellcheck")(spellcheck.asInstanceOf[js.Any])
     if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     if (tabindex != null) __obj.updateDynamic("tabindex")(tabindex.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
-    if (!js.isUndefined(unselectable)) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
+    if (!js.isUndefined(unselectable)) __obj.updateDynamic("unselectable")(unselectable.get.asInstanceOf[js.Any])
     if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoHTMLAttributes[T]]

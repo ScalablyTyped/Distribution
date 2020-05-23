@@ -27,9 +27,36 @@ object userRefMod extends js.Object {
     def getRepository(name: String): RepositoryRef = js.native
     def loadAsync(): js.Promise[User | Null] = js.native
     def loadRepositoriesAsync(): js.Promise[js.Array[Repository]] = js.native
-    def loadRepositoriesAsync(_type: all | owner | member): js.Promise[js.Array[Repository]] = js.native
-    def loadRepositoriesAsync(_type: all | owner | member, _sort: created | updated | pushed | full_name): js.Promise[js.Array[Repository]] = js.native
-    def loadRepositoriesAsync(_type: all | owner | member, _sort: created | updated | pushed | full_name, _ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: all, _sort: created): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: all, _sort: created, _ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: all, _sort: full_name): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: all, _sort: full_name, _ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: all, _sort: pushed): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: all, _sort: pushed, _ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: all, _sort: updated): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: all, _sort: updated, _ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: member, _sort: created): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: member, _sort: created, _ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: member, _sort: full_name): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: member, _sort: full_name, _ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: member, _sort: pushed): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: member, _sort: pushed, _ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: member, _sort: updated): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: member, _sort: updated, _ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: owner, _sort: created): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: owner, _sort: created, _ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: owner, _sort: full_name): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: owner, _sort: full_name, _ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: owner, _sort: pushed): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: owner, _sort: pushed, _ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: owner, _sort: updated): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: owner, _sort: updated, _ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
+    @JSName("loadRepositoriesAsync")
+    def loadRepositoriesAsync_all(_type: all): js.Promise[js.Array[Repository]] = js.native
+    @JSName("loadRepositoriesAsync")
+    def loadRepositoriesAsync_member(_type: member): js.Promise[js.Array[Repository]] = js.native
+    @JSName("loadRepositoriesAsync")
+    def loadRepositoriesAsync_owner(_type: owner): js.Promise[js.Array[Repository]] = js.native
   }
   
 }

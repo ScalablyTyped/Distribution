@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation._
 @js.native
 object objectMethod_get extends js.Object {
   def apply(
-    kind: get,
+    kind: js.UndefOr[get],
     key: js.Any,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_
   ): ObjectMethod_ = js.native
   def apply(
-    kind: get,
+    kind: js.UndefOr[get],
     key: js.Any,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,
     computed: Boolean
   ): ObjectMethod_ = js.native
   def apply(
-    kind: get,
+    kind: js.UndefOr[get],
     key: js.Any,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,
@@ -30,7 +30,7 @@ object objectMethod_get extends js.Object {
     generator: Boolean
   ): ObjectMethod_ = js.native
   def apply(
-    kind: get,
+    kind: js.UndefOr[get],
     key: js.Any,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,

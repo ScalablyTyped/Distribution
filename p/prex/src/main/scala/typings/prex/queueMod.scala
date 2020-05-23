@@ -19,12 +19,6 @@ object queueMod extends js.Object {
     var _available: js.Any = js.native
     var _pending: js.Any = js.native
     /**
-      * Gets the number of entries in the queue.
-      * When positive, indicates the number of entries available to get.
-      * When negative, indicates the number of requests waiting to be fulfilled.
-      */
-    val size: Double = js.native
-    /**
       * Removes and returns a Promise for the first value in the queue. If the queue is empty,
       * returns a Promise for the next value to be added to the queue.
       */
@@ -37,6 +31,12 @@ object queueMod extends js.Object {
       */
     def put(value: T): Unit = js.native
     def put(value: js.Thenable[T]): Unit = js.native
+    /**
+      * Gets the number of entries in the queue.
+      * When positive, indicates the number of entries available to get.
+      * When negative, indicates the number of requests waiting to be fulfilled.
+      */
+    def size: Double = js.native
   }
   
 }

@@ -61,12 +61,12 @@ object AxisCrosshairLabelOptions {
     align: AlignValue = null,
     backgroundColor: ColorString | GradientColorObject | PatternObject = null,
     borderColor: ColorString | GradientColorObject | PatternObject = null,
-    borderRadius: Int | Double = null,
-    borderWidth: Int | Double = null,
+    borderRadius: js.UndefOr[Double] = js.undefined,
+    borderWidth: js.UndefOr[Double] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
     format: String = null,
     formatter: XAxisCrosshairLabelFormatterCallbackFunction = null,
-    padding: Int | Double = null,
+    padding: js.UndefOr[Double] = js.undefined,
     shape: String = null,
     style: CSSObject = null
   ): AxisCrosshairLabelOptions = {
@@ -74,12 +74,12 @@ object AxisCrosshairLabelOptions {
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderRadius)) __obj.updateDynamic("borderRadius")(borderRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[AxisCrosshairLabelOptions]

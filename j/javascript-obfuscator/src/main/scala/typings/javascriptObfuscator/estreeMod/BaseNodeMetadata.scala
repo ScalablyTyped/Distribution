@@ -12,7 +12,7 @@ object BaseNodeMetadata {
   @scala.inline
   def apply(ignoredNode: js.UndefOr[Boolean] = js.undefined): BaseNodeMetadata = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoredNode)) __obj.updateDynamic("ignoredNode")(ignoredNode.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoredNode)) __obj.updateDynamic("ignoredNode")(ignoredNode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseNodeMetadata]
   }
 }

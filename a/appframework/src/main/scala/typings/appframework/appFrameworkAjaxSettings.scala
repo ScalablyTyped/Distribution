@@ -41,7 +41,7 @@ object appFrameworkAjaxSettings {
     error: (/* xhr */ XMLHttpRequest, /* errorType */ String, /* error */ Error) => Unit = null,
     headers: js.Any = null,
     success: (/* data */ js.Any, /* status */ String, /* xhr */ XMLHttpRequest) => Unit = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     `type`: String = null,
     url: String = null
   ): appFrameworkAjaxSettings = {
@@ -50,13 +50,13 @@ object appFrameworkAjaxSettings {
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction2(complete))
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (!js.isUndefined(crossDomain)) __obj.updateDynamic("crossDomain")(crossDomain.asInstanceOf[js.Any])
+    if (!js.isUndefined(crossDomain)) __obj.updateDynamic("crossDomain")(crossDomain.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction3(error))
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction3(success))
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[appFrameworkAjaxSettings]

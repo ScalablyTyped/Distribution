@@ -16,7 +16,7 @@ object IsVpcPeeredResult {
   @scala.inline
   def apply(isPeered: js.UndefOr[Boolean] = js.undefined): IsVpcPeeredResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isPeered)) __obj.updateDynamic("isPeered")(isPeered.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPeered)) __obj.updateDynamic("isPeered")(isPeered.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsVpcPeeredResult]
   }
 }

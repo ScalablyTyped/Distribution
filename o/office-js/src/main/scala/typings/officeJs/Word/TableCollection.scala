@@ -15,9 +15,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: WordApi 1.3]
   */
-@JSGlobal("Word.TableCollection")
 @js.native
-class TableCollection () extends ClientObject {
+trait TableCollection extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_TableCollection: RequestContext = js.native

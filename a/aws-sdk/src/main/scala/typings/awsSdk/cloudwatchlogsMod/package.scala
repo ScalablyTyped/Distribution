@@ -79,8 +79,12 @@ package object cloudwatchlogsMod {
   type Percentage = scala.Double
   type PolicyDocument = java.lang.String
   type PolicyName = java.lang.String
+  type QueryDefinitionList = js.Array[typings.awsSdk.cloudwatchlogsMod.QueryDefinition]
+  type QueryDefinitionName = java.lang.String
+  type QueryDefinitionString = java.lang.String
   type QueryId = java.lang.String
   type QueryInfoList = js.Array[typings.awsSdk.cloudwatchlogsMod.QueryInfo]
+  type QueryListMaxResults = scala.Double
   type QueryResults = js.Array[typings.awsSdk.cloudwatchlogsMod.ResultRows]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.Scheduled_

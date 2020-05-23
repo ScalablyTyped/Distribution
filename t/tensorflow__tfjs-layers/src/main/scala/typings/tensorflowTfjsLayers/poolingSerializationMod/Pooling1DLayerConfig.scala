@@ -18,7 +18,7 @@ object Pooling1DLayerConfig {
   @scala.inline
   def apply(
     batch_input_shape: Shape = null,
-    batch_size: Int | Double = null,
+    batch_size: js.UndefOr[Double] = js.undefined,
     dtype: DataType = null,
     input_dtype: DataType = null,
     input_shape: Shape = null,
@@ -30,7 +30,7 @@ object Pooling1DLayerConfig {
   ): Pooling1DLayerConfig = {
     val __obj = js.Dynamic.literal()
     if (batch_input_shape != null) __obj.updateDynamic("batch_input_shape")(batch_input_shape.asInstanceOf[js.Any])
-    if (batch_size != null) __obj.updateDynamic("batch_size")(batch_size.asInstanceOf[js.Any])
+    if (!js.isUndefined(batch_size)) __obj.updateDynamic("batch_size")(batch_size.get.asInstanceOf[js.Any])
     if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
     if (input_dtype != null) __obj.updateDynamic("input_dtype")(input_dtype.asInstanceOf[js.Any])
     if (input_shape != null) __obj.updateDynamic("input_shape")(input_shape.asInstanceOf[js.Any])
@@ -38,7 +38,7 @@ object Pooling1DLayerConfig {
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (pool_size != null) __obj.updateDynamic("pool_size")(pool_size.asInstanceOf[js.Any])
     if (strides != null) __obj.updateDynamic("strides")(strides.asInstanceOf[js.Any])
-    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable.asInstanceOf[js.Any])
+    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pooling1DLayerConfig]
   }
 }

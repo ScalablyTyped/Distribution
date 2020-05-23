@@ -45,7 +45,7 @@ object Boom {
     stack: String = null
   ): Boom[Data] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], isBoom = isBoom.asInstanceOf[js.Any], isServer = isServer.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], reformat = js.Any.fromFunction0(reformat), typeof = js.Any.fromFunction0(typeof))
-    if (!js.isUndefined(isMissing)) __obj.updateDynamic("isMissing")(isMissing.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMissing)) __obj.updateDynamic("isMissing")(isMissing.get.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[Boom[Data]]
   }

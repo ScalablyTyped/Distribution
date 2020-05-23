@@ -1,7 +1,7 @@
 package typings.reactTable.mod
 
-import typings.reactTable.PartialTableToggleAllRows
-import typings.reactTable.PartialTableToggleRowsSel
+import typings.reactTable.anon.PartialTableToggleAllRows
+import typings.reactTable.anon.PartialTableToggleRowsSel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait UseRowSelectHooks[D /* <: js.Object */] extends js.Object {
 
 object UseRowSelectHooks {
   @scala.inline
-  def apply[D /* <: js.Object */](
+  def apply[D](
     getToggleAllRowsSelectedProps: js.Array[
       PropGetter[D, TableToggleAllRowsSelectedProps, scala.Nothing, PartialTableToggleAllRows]
     ],

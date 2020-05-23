@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("naver.maps.Ellipse")
 @js.native
-class Ellipse () extends OverlayView {
-  def this(options: EllipseOptions) = this()
+trait Ellipse extends OverlayView {
   def getAreaSize(): Double = js.native
   def getBounds(): Bounds = js.native
   def getClickable(): Boolean = js.native

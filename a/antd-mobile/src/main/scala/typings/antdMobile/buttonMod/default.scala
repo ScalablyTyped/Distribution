@@ -1,6 +1,6 @@
 package typings.antdMobile.buttonMod
 
-import typings.antdMobile.AnonActiveStyle
+import typings.antdMobile.anon.ActiveStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends Button
 @JSImport("antd-mobile/lib/button", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonActiveStyle = js.native
+  var defaultProps: ActiveStyle = js.native
 }
 

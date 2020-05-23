@@ -11,9 +11,9 @@ trait FlowNodeBase extends js.Object {
 
 object FlowNodeBase {
   @scala.inline
-  def apply(flags: FlowFlags, id: Int | Double = null): FlowNodeBase = {
+  def apply(flags: FlowFlags, id: js.UndefOr[Double] = js.undefined): FlowNodeBase = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowNodeBase]
   }
 }

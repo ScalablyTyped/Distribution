@@ -32,19 +32,19 @@ trait DescribeMaintenanceStartTimeOutput extends js.Object {
 object DescribeMaintenanceStartTimeOutput {
   @scala.inline
   def apply(
-    DayOfMonth: Int | Double = null,
-    DayOfWeek: Int | Double = null,
+    DayOfMonth: js.UndefOr[DayOfMonth] = js.undefined,
+    DayOfWeek: js.UndefOr[DayOfWeek] = js.undefined,
     GatewayARN: GatewayARN = null,
-    HourOfDay: Int | Double = null,
-    MinuteOfHour: Int | Double = null,
+    HourOfDay: js.UndefOr[HourOfDay] = js.undefined,
+    MinuteOfHour: js.UndefOr[MinuteOfHour] = js.undefined,
     Timezone: GatewayTimezone = null
   ): DescribeMaintenanceStartTimeOutput = {
     val __obj = js.Dynamic.literal()
-    if (DayOfMonth != null) __obj.updateDynamic("DayOfMonth")(DayOfMonth.asInstanceOf[js.Any])
-    if (DayOfWeek != null) __obj.updateDynamic("DayOfWeek")(DayOfWeek.asInstanceOf[js.Any])
+    if (!js.isUndefined(DayOfMonth)) __obj.updateDynamic("DayOfMonth")(DayOfMonth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DayOfWeek)) __obj.updateDynamic("DayOfWeek")(DayOfWeek.get.asInstanceOf[js.Any])
     if (GatewayARN != null) __obj.updateDynamic("GatewayARN")(GatewayARN.asInstanceOf[js.Any])
-    if (HourOfDay != null) __obj.updateDynamic("HourOfDay")(HourOfDay.asInstanceOf[js.Any])
-    if (MinuteOfHour != null) __obj.updateDynamic("MinuteOfHour")(MinuteOfHour.asInstanceOf[js.Any])
+    if (!js.isUndefined(HourOfDay)) __obj.updateDynamic("HourOfDay")(HourOfDay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinuteOfHour)) __obj.updateDynamic("MinuteOfHour")(MinuteOfHour.get.asInstanceOf[js.Any])
     if (Timezone != null) __obj.updateDynamic("Timezone")(Timezone.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeMaintenanceStartTimeOutput]
   }

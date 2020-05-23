@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.PointOfService
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object PosPrinterStatusKind extends js.Object {
   /** The printer is online. */
   @js.native
   sealed trait online extends PosPrinterStatusKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PosPrinterStatusKind with Double] = js.native
-  /* 4 */ @js.native
-  object extended extends TopLevel[extended with Double]
-  
-  /* 1 */ @js.native
-  object off extends TopLevel[off with Double]
-  
-  /* 3 */ @js.native
-  object offOrOffline extends TopLevel[offOrOffline with Double]
-  
-  /* 2 */ @js.native
-  object offline extends TopLevel[offline with Double]
-  
-  /* 0 */ @js.native
-  object online extends TopLevel[online with Double]
   
 }
 

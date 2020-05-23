@@ -3,6 +3,7 @@ package typings.dateIoDateFns
 import org.scalablytyped.runtime.TopLevel
 import typings.dateIoCore.mod.DateIOFormats
 import typings.dateIoCore.mod.IUtils
+import typings.dateIoDateFns.anon.Formats
 import typings.dateIoDateFns.dateIoDateFnsStrings.AM
 import typings.dateIoDateFns.dateIoDateFnsStrings.PM
 import typings.dateIoDateFns.dateIoDateFnsStrings.am_
@@ -33,7 +34,7 @@ object dateFnsUtilsMod extends js.Object {
   
   @js.native
   class default () extends DateFnsUtils {
-    def this(hasLocaleFormats: AnonFormats) = this()
+    def this(hasLocaleFormats: Formats) = this()
   }
   
 }

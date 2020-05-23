@@ -1,6 +1,6 @@
 package typings.estree.mod
 
-import typings.estree.AnonFlags
+import typings.estree.anon.Flags
 import typings.estree.estreeBooleans.`true`
 import typings.std.RegExp
 import scala.scalajs.js
@@ -43,14 +43,14 @@ object Expression {
     right: Expression,
     `type`: typings.estree.estreeStrings.AssignmentExpression,
     leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
+    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): Expression = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
@@ -61,14 +61,14 @@ object Expression {
     tag: Expression,
     `type`: typings.estree.estreeStrings.TaggedTemplateExpression,
     leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
+    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): Expression = {
     val __obj = js.Dynamic.literal(quasi = quasi.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
@@ -77,20 +77,19 @@ object Expression {
   def SimpleLiteral(
     `type`: typings.estree.estreeStrings.Literal,
     leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
+    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
     range: js.Tuple2[Double, Double] = null,
     raw: String = null,
     trailingComments: js.Array[Comment] = null,
     value: String | Boolean | Double = null
   ): Expression = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
   @scala.inline
@@ -102,16 +101,16 @@ object Expression {
     async: js.UndefOr[Boolean] = js.undefined,
     generator: js.UndefOr[Boolean] = js.undefined,
     leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
+    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): Expression = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
-    if (!js.isUndefined(generator)) __obj.updateDynamic("generator")(generator.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(generator)) __obj.updateDynamic("generator")(generator.get.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
@@ -123,37 +122,37 @@ object Expression {
     test: Expression,
     `type`: typings.estree.estreeStrings.ConditionalExpression,
     leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
+    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): Expression = {
     val __obj = js.Dynamic.literal(alternate = alternate.asInstanceOf[js.Any], consequent = consequent.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
   @scala.inline
   def RegExpLiteral(
-    regex: AnonFlags,
+    regex: Flags,
     `type`: typings.estree.estreeStrings.Literal,
     leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
+    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
     range: js.Tuple2[Double, Double] = null,
     raw: String = null,
     trailingComments: js.Array[Comment] = null,
-    value: RegExp = null
+    value: js.UndefOr[Null | RegExp] = js.undefined
   ): Expression = {
     val __obj = js.Dynamic.literal(regex = regex.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
   @scala.inline
@@ -161,14 +160,14 @@ object Expression {
     name: String,
     `type`: typings.estree.estreeStrings.Identifier,
     leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
+    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): Expression = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
@@ -179,14 +178,14 @@ object Expression {
     property: Identifier,
     `type`: typings.estree.estreeStrings.MetaProperty,
     leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
+    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): Expression = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
@@ -198,19 +197,19 @@ object Expression {
     `type`: typings.estree.estreeStrings.FunctionExpression,
     async: js.UndefOr[Boolean] = js.undefined,
     generator: js.UndefOr[Boolean] = js.undefined,
-    id: Identifier = null,
+    id: js.UndefOr[Null | Identifier] = js.undefined,
     leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
+    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): Expression = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
-    if (!js.isUndefined(generator)) __obj.updateDynamic("generator")(generator.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(generator)) __obj.updateDynamic("generator")(generator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
@@ -220,14 +219,14 @@ object Expression {
     properties: js.Array[Property | SpreadElement],
     `type`: typings.estree.estreeStrings.ObjectExpression,
     leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
+    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): Expression = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
@@ -237,14 +236,14 @@ object Expression {
     elements: js.Array[Expression | SpreadElement],
     `type`: typings.estree.estreeStrings.ArrayExpression,
     leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
+    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): Expression = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
@@ -256,14 +255,14 @@ object Expression {
     prefix: Boolean,
     `type`: typings.estree.estreeStrings.UpdateExpression,
     leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
+    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): Expression = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
@@ -274,14 +273,14 @@ object Expression {
     callee: Expression | Super,
     `type`: typings.estree.estreeStrings.NewExpression,
     leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
+    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): Expression = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
@@ -290,17 +289,17 @@ object Expression {
   def YieldExpression(
     delegate: Boolean,
     `type`: typings.estree.estreeStrings.YieldExpression,
-    argument: Expression = null,
+    argument: js.UndefOr[Null | Expression] = js.undefined,
     leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
+    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): Expression = {
     val __obj = js.Dynamic.literal(delegate = delegate.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (argument != null) __obj.updateDynamic("argument")(argument.asInstanceOf[js.Any])
+    if (!js.isUndefined(argument)) __obj.updateDynamic("argument")(argument.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
@@ -312,14 +311,14 @@ object Expression {
     right: Expression,
     `type`: typings.estree.estreeStrings.BinaryExpression,
     leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
+    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): Expression = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
@@ -330,14 +329,14 @@ object Expression {
     quasis: js.Array[TemplateElement],
     `type`: typings.estree.estreeStrings.TemplateLiteral,
     leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
+    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): Expression = {
     val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any], quasis = quasis.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
@@ -348,14 +347,14 @@ object Expression {
     callee: Expression | Super,
     `type`: typings.estree.estreeStrings.CallExpression,
     leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
+    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): Expression = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
@@ -364,20 +363,20 @@ object Expression {
   def ClassExpression(
     body: ClassBody,
     `type`: typings.estree.estreeStrings.ClassExpression,
-    id: Identifier = null,
+    id: js.UndefOr[Null | Identifier] = js.undefined,
     leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
+    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
     range: js.Tuple2[Double, Double] = null,
-    superClass: Expression = null,
+    superClass: js.UndefOr[Null | Expression] = js.undefined,
     trailingComments: js.Array[Comment] = null
   ): Expression = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (superClass != null) __obj.updateDynamic("superClass")(superClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(superClass)) __obj.updateDynamic("superClass")(superClass.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
@@ -388,7 +387,7 @@ object Expression {
     property: Expression,
     `type`: typings.estree.estreeStrings.MemberExpression,
     leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
+    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): Expression = {
@@ -396,7 +395,7 @@ object Expression {
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
@@ -406,14 +405,14 @@ object Expression {
     expressions: js.Array[Expression],
     `type`: typings.estree.estreeStrings.SequenceExpression,
     leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
+    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): Expression = {
     val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
@@ -423,14 +422,14 @@ object Expression {
     source: Expression,
     `type`: typings.estree.estreeStrings.ImportExpression,
     leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
+    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): Expression = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
@@ -442,14 +441,14 @@ object Expression {
     prefix: `true`,
     `type`: typings.estree.estreeStrings.UnaryExpression,
     leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
+    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): Expression = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
@@ -459,14 +458,14 @@ object Expression {
     argument: Expression,
     `type`: typings.estree.estreeStrings.AwaitExpression,
     leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
+    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): Expression = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
@@ -478,14 +477,14 @@ object Expression {
     right: Expression,
     `type`: typings.estree.estreeStrings.LogicalExpression,
     leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
+    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): Expression = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
@@ -494,14 +493,14 @@ object Expression {
   def ThisExpression(
     `type`: typings.estree.estreeStrings.ThisExpression,
     leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
+    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): Expression = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]

@@ -14,29 +14,8 @@ import scala.scalajs.js.annotation._
 object updateIndexSignature extends js.Object {
   def apply(
     node: IndexSignatureDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.UndefOr[scala.Nothing],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): IndexSignatureDeclaration = js.native
-  def apply(
-    node: IndexSignatureDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[Modifier],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): IndexSignatureDeclaration = js.native
-  def apply(
-    node: IndexSignatureDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): IndexSignatureDeclaration = js.native
-  def apply(
-    node: IndexSignatureDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    decorators: js.UndefOr[js.Array[Decorator]],
+    modifiers: js.UndefOr[js.Array[Modifier]],
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode
   ): IndexSignatureDeclaration = js.native

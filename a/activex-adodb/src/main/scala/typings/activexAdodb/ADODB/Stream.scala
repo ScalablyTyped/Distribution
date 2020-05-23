@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ADODB.Stream")
 @js.native
-class Stream protected () extends js.Object {
+trait Stream extends js.Object {
   @JSName("ADODB.Stream_typekey")
   var ADODBDotStream_typekey: Stream = js.native
   var Charset: String = js.native

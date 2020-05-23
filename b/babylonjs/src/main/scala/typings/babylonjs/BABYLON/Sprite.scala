@@ -4,16 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.Sprite")
 @js.native
-class Sprite protected () extends js.Object {
-  /**
-    * Creates a new Sprite
-    * @param name defines the name
-    * @param manager defines the manager
-    */
-  def this(/** defines the name */
-  name: String, manager: ISpriteManager) = this()
+trait Sprite extends js.Object {
   var _animationStarted: js.Any = js.native
   var _delay: js.Any = js.native
   var _direction: js.Any = js.native

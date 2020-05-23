@@ -30,14 +30,14 @@ object PlotGaugePivotOptions {
   def apply(
     backgroundColor: ColorString | GradientColorObject | PatternObject = null,
     borderColor: ColorString | GradientColorObject | PatternObject = null,
-    borderWidth: Int | Double = null,
-    radius: Int | Double = null
+    borderWidth: js.UndefOr[Double] = js.undefined,
+    radius: js.UndefOr[Double] = js.undefined
   ): PlotGaugePivotOptions = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotGaugePivotOptions]
   }
 }

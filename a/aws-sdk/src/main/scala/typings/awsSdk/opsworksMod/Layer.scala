@@ -105,8 +105,8 @@ object Layer {
   def apply(
     Arn: String = null,
     Attributes: LayerAttributes = null,
-    AutoAssignElasticIps: js.UndefOr[scala.Boolean] = js.undefined,
-    AutoAssignPublicIps: js.UndefOr[scala.Boolean] = js.undefined,
+    AutoAssignElasticIps: js.UndefOr[Boolean] = js.undefined,
+    AutoAssignPublicIps: js.UndefOr[Boolean] = js.undefined,
     CloudWatchLogsConfiguration: CloudWatchLogsConfiguration = null,
     CreatedAt: DateTime = null,
     CustomInstanceProfileArn: String = null,
@@ -115,8 +115,8 @@ object Layer {
     CustomSecurityGroupIds: Strings = null,
     DefaultRecipes: Recipes = null,
     DefaultSecurityGroupNames: Strings = null,
-    EnableAutoHealing: js.UndefOr[scala.Boolean] = js.undefined,
-    InstallUpdatesOnBoot: js.UndefOr[scala.Boolean] = js.undefined,
+    EnableAutoHealing: js.UndefOr[Boolean] = js.undefined,
+    InstallUpdatesOnBoot: js.UndefOr[Boolean] = js.undefined,
     LayerId: String = null,
     LifecycleEventConfiguration: LifecycleEventConfiguration = null,
     Name: String = null,
@@ -124,14 +124,14 @@ object Layer {
     Shortname: String = null,
     StackId: String = null,
     Type: LayerType = null,
-    UseEbsOptimizedInstances: js.UndefOr[scala.Boolean] = js.undefined,
+    UseEbsOptimizedInstances: js.UndefOr[Boolean] = js.undefined,
     VolumeConfigurations: VolumeConfigurations = null
   ): Layer = {
     val __obj = js.Dynamic.literal()
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
     if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoAssignElasticIps)) __obj.updateDynamic("AutoAssignElasticIps")(AutoAssignElasticIps.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoAssignPublicIps)) __obj.updateDynamic("AutoAssignPublicIps")(AutoAssignPublicIps.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoAssignElasticIps)) __obj.updateDynamic("AutoAssignElasticIps")(AutoAssignElasticIps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoAssignPublicIps)) __obj.updateDynamic("AutoAssignPublicIps")(AutoAssignPublicIps.get.asInstanceOf[js.Any])
     if (CloudWatchLogsConfiguration != null) __obj.updateDynamic("CloudWatchLogsConfiguration")(CloudWatchLogsConfiguration.asInstanceOf[js.Any])
     if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
     if (CustomInstanceProfileArn != null) __obj.updateDynamic("CustomInstanceProfileArn")(CustomInstanceProfileArn.asInstanceOf[js.Any])
@@ -140,8 +140,8 @@ object Layer {
     if (CustomSecurityGroupIds != null) __obj.updateDynamic("CustomSecurityGroupIds")(CustomSecurityGroupIds.asInstanceOf[js.Any])
     if (DefaultRecipes != null) __obj.updateDynamic("DefaultRecipes")(DefaultRecipes.asInstanceOf[js.Any])
     if (DefaultSecurityGroupNames != null) __obj.updateDynamic("DefaultSecurityGroupNames")(DefaultSecurityGroupNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableAutoHealing)) __obj.updateDynamic("EnableAutoHealing")(EnableAutoHealing.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstallUpdatesOnBoot)) __obj.updateDynamic("InstallUpdatesOnBoot")(InstallUpdatesOnBoot.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableAutoHealing)) __obj.updateDynamic("EnableAutoHealing")(EnableAutoHealing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstallUpdatesOnBoot)) __obj.updateDynamic("InstallUpdatesOnBoot")(InstallUpdatesOnBoot.get.asInstanceOf[js.Any])
     if (LayerId != null) __obj.updateDynamic("LayerId")(LayerId.asInstanceOf[js.Any])
     if (LifecycleEventConfiguration != null) __obj.updateDynamic("LifecycleEventConfiguration")(LifecycleEventConfiguration.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
@@ -149,7 +149,7 @@ object Layer {
     if (Shortname != null) __obj.updateDynamic("Shortname")(Shortname.asInstanceOf[js.Any])
     if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
-    if (!js.isUndefined(UseEbsOptimizedInstances)) __obj.updateDynamic("UseEbsOptimizedInstances")(UseEbsOptimizedInstances.asInstanceOf[js.Any])
+    if (!js.isUndefined(UseEbsOptimizedInstances)) __obj.updateDynamic("UseEbsOptimizedInstances")(UseEbsOptimizedInstances.get.asInstanceOf[js.Any])
     if (VolumeConfigurations != null) __obj.updateDynamic("VolumeConfigurations")(VolumeConfigurations.asInstanceOf[js.Any])
     __obj.asInstanceOf[Layer]
   }

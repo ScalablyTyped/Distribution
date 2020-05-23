@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.AppInstanceErrorDetails")
 @js.native
-class AppInstanceErrorDetails () extends ClientObject {
+trait AppInstanceErrorDetails extends ClientObject {
   def get_correlationId(): Guid = js.native
   def get_errorDetail(): String = js.native
   def get_errorType(): AppInstanceErrorType = js.native

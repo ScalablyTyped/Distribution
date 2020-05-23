@@ -14,9 +14,12 @@ trait ITensorShape extends js.Object {
 
 object ITensorShape {
   @scala.inline
-  def apply(dim: js.Array[IDim] = null, unknownRank: js.UndefOr[Boolean] = js.undefined): ITensorShape = {
+  def apply(
+    dim: js.UndefOr[Null | js.Array[IDim]] = js.undefined,
+    unknownRank: js.UndefOr[Null | Boolean] = js.undefined
+  ): ITensorShape = {
     val __obj = js.Dynamic.literal()
-    if (dim != null) __obj.updateDynamic("dim")(dim.asInstanceOf[js.Any])
+    if (!js.isUndefined(dim)) __obj.updateDynamic("dim")(dim.asInstanceOf[js.Any])
     if (!js.isUndefined(unknownRank)) __obj.updateDynamic("unknownRank")(unknownRank.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITensorShape]
   }

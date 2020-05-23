@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/fn/symbol/is-concat-spreadable", JSImport.Namespace)
 @js.native
 object symbolIsConcatSpreadableMod
-  extends TopLevel[js.Symbol]
+  extends TopLevel[js.Any]
 

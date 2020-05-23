@@ -21,9 +21,9 @@ object PrinterOptions {
   ): PrinterOptions = {
     val __obj = js.Dynamic.literal()
     if (newLine != null) __obj.updateDynamic("newLine")(newLine.asInstanceOf[js.Any])
-    if (!js.isUndefined(noEmitHelpers)) __obj.updateDynamic("noEmitHelpers")(noEmitHelpers.asInstanceOf[js.Any])
-    if (!js.isUndefined(omitTrailingSemicolon)) __obj.updateDynamic("omitTrailingSemicolon")(omitTrailingSemicolon.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeComments)) __obj.updateDynamic("removeComments")(removeComments.asInstanceOf[js.Any])
+    if (!js.isUndefined(noEmitHelpers)) __obj.updateDynamic("noEmitHelpers")(noEmitHelpers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(omitTrailingSemicolon)) __obj.updateDynamic("omitTrailingSemicolon")(omitTrailingSemicolon.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeComments)) __obj.updateDynamic("removeComments")(removeComments.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrinterOptions]
   }
 }

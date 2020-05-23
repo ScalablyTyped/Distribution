@@ -28,13 +28,13 @@ object DescribeEcsClustersRequest {
   @scala.inline
   def apply(
     EcsClusterArns: Strings = null,
-    MaxResults: Int | scala.Double = null,
+    MaxResults: js.UndefOr[Integer] = js.undefined,
     NextToken: String = null,
     StackId: String = null
   ): DescribeEcsClustersRequest = {
     val __obj = js.Dynamic.literal()
     if (EcsClusterArns != null) __obj.updateDynamic("EcsClusterArns")(EcsClusterArns.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEcsClustersRequest]

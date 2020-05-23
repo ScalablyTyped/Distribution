@@ -12,9 +12,9 @@ trait IConsensusInitializeBlockRequest extends js.Object {
 
 object IConsensusInitializeBlockRequest {
   @scala.inline
-  def apply(previousId: Uint8Array = null): IConsensusInitializeBlockRequest = {
+  def apply(previousId: js.UndefOr[Null | Uint8Array] = js.undefined): IConsensusInitializeBlockRequest = {
     val __obj = js.Dynamic.literal()
-    if (previousId != null) __obj.updateDynamic("previousId")(previousId.asInstanceOf[js.Any])
+    if (!js.isUndefined(previousId)) __obj.updateDynamic("previousId")(previousId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConsensusInitializeBlockRequest]
   }
 }

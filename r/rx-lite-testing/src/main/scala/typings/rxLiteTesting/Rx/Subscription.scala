@@ -4,11 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Rx.Subscription")
-@js.native
-class Subscription protected () extends js.Object {
-  def this(subscribeAt: Double) = this()
-  def this(subscribeAt: Double, unsubscribeAt: Double) = this()
-  def equals(other: Subscription): Boolean = js.native
+trait Subscription extends js.Object {
+  def equals(other: Subscription): Boolean
+}
+
+object Subscription {
+  @scala.inline
+  def apply(equals: Subscription => Boolean): Subscription = {
+    val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals))
+    __obj.asInstanceOf[Subscription]
+  }
 }
 

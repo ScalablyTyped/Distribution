@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/test/integration/util/events_accumulator", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/test/integration/util/events_accumulator", JSImport.Namespace)
 @js.native
 object eventsAccumulatorMod extends js.Object {
   @js.native

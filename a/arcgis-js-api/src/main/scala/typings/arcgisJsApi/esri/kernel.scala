@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +20,11 @@ trait kernel extends js.Object {
   val version: String
 }
 
-@JSGlobal("__esri.kernel")
-@js.native
-object kernel extends TopLevel[kernel]
+object kernel {
+  @scala.inline
+  def apply(version: String): kernel = {
+    val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[kernel]
+  }
+}
 

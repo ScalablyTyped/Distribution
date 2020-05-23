@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Class protected () extends FirebaseClient {
   /**
-  	 * Creates a new FirebaseClient given the provided configuration
-  	 */
+    * Creates a new FirebaseClient given the provided configuration
+    */
   def this(config: FirebaseConfig) = this()
 }
 

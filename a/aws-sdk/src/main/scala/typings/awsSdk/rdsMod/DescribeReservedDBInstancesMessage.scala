@@ -60,8 +60,8 @@ object DescribeReservedDBInstancesMessage {
     Filters: FilterList = null,
     LeaseId: String = null,
     Marker: String = null,
-    MaxRecords: Int | scala.Double = null,
-    MultiAZ: js.UndefOr[scala.Boolean] = js.undefined,
+    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
+    MultiAZ: js.UndefOr[BooleanOptional] = js.undefined,
     OfferingType: String = null,
     ProductDescription: String = null,
     ReservedDBInstanceId: String = null,
@@ -73,8 +73,8 @@ object DescribeReservedDBInstancesMessage {
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
     if (LeaseId != null) __obj.updateDynamic("LeaseId")(LeaseId.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
-    if (!js.isUndefined(MultiAZ)) __obj.updateDynamic("MultiAZ")(MultiAZ.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MultiAZ)) __obj.updateDynamic("MultiAZ")(MultiAZ.get.asInstanceOf[js.Any])
     if (OfferingType != null) __obj.updateDynamic("OfferingType")(OfferingType.asInstanceOf[js.Any])
     if (ProductDescription != null) __obj.updateDynamic("ProductDescription")(ProductDescription.asInstanceOf[js.Any])
     if (ReservedDBInstanceId != null) __obj.updateDynamic("ReservedDBInstanceId")(ReservedDBInstanceId.asInstanceOf[js.Any])

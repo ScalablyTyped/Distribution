@@ -32,7 +32,7 @@ object GlobalPlugin {
     mapping: String = null
   ): GlobalPlugin = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (mapping != null) __obj.updateDynamic("mapping")(mapping.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalPlugin]
   }

@@ -39,7 +39,7 @@ object DescribeOptionGroupsMessage {
     Filters: FilterList = null,
     MajorEngineVersion: String = null,
     Marker: String = null,
-    MaxRecords: Int | scala.Double = null,
+    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
     OptionGroupName: String = null
   ): DescribeOptionGroupsMessage = {
     val __obj = js.Dynamic.literal()
@@ -47,7 +47,7 @@ object DescribeOptionGroupsMessage {
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
     if (MajorEngineVersion != null) __obj.updateDynamic("MajorEngineVersion")(MajorEngineVersion.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     if (OptionGroupName != null) __obj.updateDynamic("OptionGroupName")(OptionGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeOptionGroupsMessage]
   }

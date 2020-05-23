@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.SmartTag")
 @js.native
-class SmartTag protected () extends js.Object {
+trait SmartTag extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
   val DownloadURL: String = js.native

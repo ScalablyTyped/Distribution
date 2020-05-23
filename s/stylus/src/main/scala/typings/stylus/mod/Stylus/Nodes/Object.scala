@@ -1,6 +1,6 @@
 package typings.stylus.mod.Stylus.Nodes
 
-import typings.stylus.AnonColumn
+import typings.stylus.anon.Column
 import typings.stylus.mod.Stylus.Dictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -47,7 +47,7 @@ object Object {
     toBlock: () => java.lang.String,
     toBoolean: () => Boolean,
     toExpression: () => Expression,
-    toJSON: () => AnonColumn,
+    toJSON: () => Column,
     vals: Dictionary[Node]
   ): Object = {
     val __obj = js.Dynamic.literal(coerce = js.Any.fromFunction1(coerce), column = column.asInstanceOf[js.Any], eval = js.Any.fromFunction0(eval), filename = filename.asInstanceOf[js.Any], first = first.asInstanceOf[js.Any], get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), hash = hash.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], operate = js.Any.fromFunction2(operate), set = js.Any.fromFunction2(set), shouldCoerce = js.Any.fromFunction1(shouldCoerce), toBlock = js.Any.fromFunction0(toBlock), toBoolean = js.Any.fromFunction0(toBoolean), toExpression = js.Any.fromFunction0(toExpression), toJSON = js.Any.fromFunction0(toJSON), vals = vals.asInstanceOf[js.Any])

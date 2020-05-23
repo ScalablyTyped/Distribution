@@ -3,8 +3,8 @@ package typings.luminoVirtualdom.mod
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
 import typings.std.ErrorEvent
+import typings.std.Event
 import typings.std.EventTarget
-import typings.std.Event_
 import typings.std.FocusEvent
 import typings.std.HTMLElement
 import typings.std.KeyboardEvent
@@ -23,13 +23,13 @@ trait ElementEventAttrs extends js.Object {
   val onabort: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, _]] = js.undefined
   val onauxclick: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]] = js.undefined
   val onblur: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ FocusEvent, _]] = js.undefined
-  val oncanplay: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _]] = js.undefined
-  val oncanplaythrough: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _]] = js.undefined
-  val onchange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _]] = js.undefined
+  val oncanplay: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
+  val oncanplaythrough: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
+  val onchange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
   val onclick: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]] = js.undefined
   val oncontextmenu: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]] = js.undefined
   val oncopy: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, _]] = js.undefined
-  val oncuechange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _]] = js.undefined
+  val oncuechange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
   val oncut: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, _]] = js.undefined
   val ondblclick: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]] = js.undefined
   val ondrag: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _]] = js.undefined
@@ -40,21 +40,21 @@ trait ElementEventAttrs extends js.Object {
   val ondragover: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _]] = js.undefined
   val ondragstart: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _]] = js.undefined
   val ondrop: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _]] = js.undefined
-  val ondurationchange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _]] = js.undefined
-  val onemptied: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _]] = js.undefined
+  val ondurationchange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
+  val onemptied: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
   val onended: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MediaStreamErrorEvent, _]] = js.undefined
   val onerror: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ErrorEvent, _]] = js.undefined
   val onfocus: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ FocusEvent, _]] = js.undefined
-  val oninput: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _]] = js.undefined
-  val oninvalid: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _]] = js.undefined
+  val oninput: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
+  val oninvalid: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
   val onkeydown: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, _]] = js.undefined
   val onkeypress: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, _]] = js.undefined
   val onkeyup: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, _]] = js.undefined
-  val onload: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _]] = js.undefined
-  val onloadeddata: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _]] = js.undefined
-  val onloadedmetadata: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _]] = js.undefined
-  val onloadend: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _]] = js.undefined
-  val onloadstart: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _]] = js.undefined
+  val onload: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
+  val onloadeddata: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
+  val onloadedmetadata: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
+  val onloadend: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
+  val onloadstart: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
   val onmousedown: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]] = js.undefined
   val onmouseenter: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]] = js.undefined
   val onmouseleave: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]] = js.undefined
@@ -64,9 +64,9 @@ trait ElementEventAttrs extends js.Object {
   val onmouseup: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]] = js.undefined
   val onmousewheel: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ WheelEvent, _]] = js.undefined
   val onpaste: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, _]] = js.undefined
-  val onpause: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _]] = js.undefined
-  val onplay: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _]] = js.undefined
-  val onplaying: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _]] = js.undefined
+  val onpause: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
+  val onplay: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
+  val onplaying: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
   val onpointercancel: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]] = js.undefined
   val onpointerdown: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]] = js.undefined
   val onpointerenter: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]] = js.undefined
@@ -78,19 +78,19 @@ trait ElementEventAttrs extends js.Object {
   val onprogress: js.UndefOr[
     js.ThisFunction1[/* this */ HTMLElement, /* event */ ProgressEvent[EventTarget], _]
   ] = js.undefined
-  val onratechange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _]] = js.undefined
-  val onreset: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _]] = js.undefined
+  val onratechange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
+  val onreset: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
   val onscroll: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, _]] = js.undefined
-  val onseeked: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _]] = js.undefined
-  val onseeking: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _]] = js.undefined
+  val onseeked: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
+  val onseeking: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
   val onselect: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, _]] = js.undefined
-  val onselectstart: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _]] = js.undefined
-  val onstalled: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _]] = js.undefined
-  val onsubmit: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _]] = js.undefined
-  val onsuspend: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _]] = js.undefined
-  val ontimeupdate: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _]] = js.undefined
-  val onvolumechange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _]] = js.undefined
-  val onwaiting: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _]] = js.undefined
+  val onselectstart: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
+  val onstalled: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
+  val onsubmit: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
+  val onsuspend: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
+  val ontimeupdate: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
+  val onvolumechange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
+  val onwaiting: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
 }
 
 object ElementEventAttrs {
@@ -99,13 +99,13 @@ object ElementEventAttrs {
     onabort: js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, _] = null,
     onauxclick: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _] = null,
     onblur: js.ThisFunction1[/* this */ HTMLElement, /* event */ FocusEvent, _] = null,
-    oncanplay: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _] = null,
-    oncanplaythrough: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _] = null,
-    onchange: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _] = null,
+    oncanplay: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
+    oncanplaythrough: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
+    onchange: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
     onclick: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _] = null,
     oncontextmenu: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _] = null,
     oncopy: js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, _] = null,
-    oncuechange: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _] = null,
+    oncuechange: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
     oncut: js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, _] = null,
     ondblclick: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _] = null,
     ondrag: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _] = null,
@@ -116,21 +116,21 @@ object ElementEventAttrs {
     ondragover: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _] = null,
     ondragstart: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _] = null,
     ondrop: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _] = null,
-    ondurationchange: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _] = null,
-    onemptied: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _] = null,
+    ondurationchange: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
+    onemptied: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
     onended: js.ThisFunction1[/* this */ HTMLElement, /* event */ MediaStreamErrorEvent, _] = null,
     onerror: js.ThisFunction1[/* this */ HTMLElement, /* event */ ErrorEvent, _] = null,
     onfocus: js.ThisFunction1[/* this */ HTMLElement, /* event */ FocusEvent, _] = null,
-    oninput: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _] = null,
-    oninvalid: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _] = null,
+    oninput: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
+    oninvalid: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
     onkeydown: js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, _] = null,
     onkeypress: js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, _] = null,
     onkeyup: js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, _] = null,
-    onload: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _] = null,
-    onloadeddata: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _] = null,
-    onloadedmetadata: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _] = null,
-    onloadend: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _] = null,
-    onloadstart: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _] = null,
+    onload: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
+    onloadeddata: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
+    onloadedmetadata: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
+    onloadend: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
+    onloadstart: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
     onmousedown: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _] = null,
     onmouseenter: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _] = null,
     onmouseleave: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _] = null,
@@ -140,9 +140,9 @@ object ElementEventAttrs {
     onmouseup: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _] = null,
     onmousewheel: js.ThisFunction1[/* this */ HTMLElement, /* event */ WheelEvent, _] = null,
     onpaste: js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, _] = null,
-    onpause: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _] = null,
-    onplay: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _] = null,
-    onplaying: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _] = null,
+    onpause: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
+    onplay: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
+    onplaying: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
     onpointercancel: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _] = null,
     onpointerdown: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _] = null,
     onpointerenter: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _] = null,
@@ -152,19 +152,19 @@ object ElementEventAttrs {
     onpointerover: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _] = null,
     onpointerup: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _] = null,
     onprogress: js.ThisFunction1[/* this */ HTMLElement, /* event */ ProgressEvent[EventTarget], _] = null,
-    onratechange: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _] = null,
-    onreset: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _] = null,
+    onratechange: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
+    onreset: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
     onscroll: js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, _] = null,
-    onseeked: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _] = null,
-    onseeking: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _] = null,
+    onseeked: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
+    onseeking: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
     onselect: js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, _] = null,
-    onselectstart: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _] = null,
-    onstalled: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _] = null,
-    onsubmit: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _] = null,
-    onsuspend: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _] = null,
-    ontimeupdate: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _] = null,
-    onvolumechange: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _] = null,
-    onwaiting: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, _] = null
+    onselectstart: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
+    onstalled: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
+    onsubmit: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
+    onsuspend: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
+    ontimeupdate: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
+    onvolumechange: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
+    onwaiting: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null
   ): ElementEventAttrs = {
     val __obj = js.Dynamic.literal()
     if (onabort != null) __obj.updateDynamic("onabort")(onabort.asInstanceOf[js.Any])

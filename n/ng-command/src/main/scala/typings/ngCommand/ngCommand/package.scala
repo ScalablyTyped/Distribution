@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 package object ngCommand {
   /**
-  	* Command factory which creates instances of @see ICommand.
-  	*/
+    * Command factory which creates instances of @see ICommand.
+    */
   type ICommandFactory = js.Function3[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IScope */ /* $scope */ js.Any, 
     /* execute */ js.Function0[

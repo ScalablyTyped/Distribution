@@ -19,8 +19,8 @@ object UslugOptions {
   ): UslugOptions = {
     val __obj = js.Dynamic.literal()
     if (allowedChars != null) __obj.updateDynamic("allowedChars")(allowedChars.asInstanceOf[js.Any])
-    if (!js.isUndefined(lower)) __obj.updateDynamic("lower")(lower.asInstanceOf[js.Any])
-    if (!js.isUndefined(spaces)) __obj.updateDynamic("spaces")(spaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(lower)) __obj.updateDynamic("lower")(lower.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spaces)) __obj.updateDynamic("spaces")(spaces.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UslugOptions]
   }
 }

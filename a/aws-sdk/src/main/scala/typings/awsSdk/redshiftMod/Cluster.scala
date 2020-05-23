@@ -195,8 +195,8 @@ trait Cluster extends js.Object {
 object Cluster {
   @scala.inline
   def apply(
-    AllowVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
-    AutomatedSnapshotRetentionPeriod: Int | scala.Double = null,
+    AllowVersionUpgrade: js.UndefOr[Boolean] = js.undefined,
+    AutomatedSnapshotRetentionPeriod: js.UndefOr[Integer] = js.undefined,
     AvailabilityZone: String = null,
     ClusterAvailabilityStatus: String = null,
     ClusterCreateTime: TStamp = null,
@@ -215,25 +215,25 @@ object Cluster {
     DeferredMaintenanceWindows: DeferredMaintenanceWindowsList = null,
     ElasticIpStatus: ElasticIpStatus = null,
     ElasticResizeNumberOfNodeOptions: String = null,
-    Encrypted: js.UndefOr[scala.Boolean] = js.undefined,
+    Encrypted: js.UndefOr[Boolean] = js.undefined,
     Endpoint: Endpoint = null,
-    EnhancedVpcRouting: js.UndefOr[scala.Boolean] = js.undefined,
+    EnhancedVpcRouting: js.UndefOr[Boolean] = js.undefined,
     ExpectedNextSnapshotScheduleTime: TStamp = null,
     ExpectedNextSnapshotScheduleTimeStatus: String = null,
     HsmStatus: HsmStatus = null,
     IamRoles: ClusterIamRoleList = null,
     KmsKeyId: String = null,
     MaintenanceTrackName: String = null,
-    ManualSnapshotRetentionPeriod: Int | scala.Double = null,
+    ManualSnapshotRetentionPeriod: js.UndefOr[Integer] = js.undefined,
     MasterUsername: String = null,
     ModifyStatus: String = null,
     NextMaintenanceWindowStartTime: TStamp = null,
     NodeType: String = null,
-    NumberOfNodes: Int | scala.Double = null,
+    NumberOfNodes: js.UndefOr[Integer] = js.undefined,
     PendingActions: PendingActionsList = null,
     PendingModifiedValues: PendingModifiedValues = null,
     PreferredMaintenanceWindow: String = null,
-    PubliclyAccessible: js.UndefOr[scala.Boolean] = js.undefined,
+    PubliclyAccessible: js.UndefOr[Boolean] = js.undefined,
     ResizeInfo: ResizeInfo = null,
     RestoreStatus: RestoreStatus = null,
     SnapshotScheduleIdentifier: String = null,
@@ -243,8 +243,8 @@ object Cluster {
     VpcSecurityGroups: VpcSecurityGroupMembershipList = null
   ): Cluster = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllowVersionUpgrade)) __obj.updateDynamic("AllowVersionUpgrade")(AllowVersionUpgrade.asInstanceOf[js.Any])
-    if (AutomatedSnapshotRetentionPeriod != null) __obj.updateDynamic("AutomatedSnapshotRetentionPeriod")(AutomatedSnapshotRetentionPeriod.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllowVersionUpgrade)) __obj.updateDynamic("AllowVersionUpgrade")(AllowVersionUpgrade.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutomatedSnapshotRetentionPeriod)) __obj.updateDynamic("AutomatedSnapshotRetentionPeriod")(AutomatedSnapshotRetentionPeriod.get.asInstanceOf[js.Any])
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
     if (ClusterAvailabilityStatus != null) __obj.updateDynamic("ClusterAvailabilityStatus")(ClusterAvailabilityStatus.asInstanceOf[js.Any])
     if (ClusterCreateTime != null) __obj.updateDynamic("ClusterCreateTime")(ClusterCreateTime.asInstanceOf[js.Any])
@@ -263,25 +263,25 @@ object Cluster {
     if (DeferredMaintenanceWindows != null) __obj.updateDynamic("DeferredMaintenanceWindows")(DeferredMaintenanceWindows.asInstanceOf[js.Any])
     if (ElasticIpStatus != null) __obj.updateDynamic("ElasticIpStatus")(ElasticIpStatus.asInstanceOf[js.Any])
     if (ElasticResizeNumberOfNodeOptions != null) __obj.updateDynamic("ElasticResizeNumberOfNodeOptions")(ElasticResizeNumberOfNodeOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.asInstanceOf[js.Any])
+    if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.get.asInstanceOf[js.Any])
     if (Endpoint != null) __obj.updateDynamic("Endpoint")(Endpoint.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnhancedVpcRouting)) __obj.updateDynamic("EnhancedVpcRouting")(EnhancedVpcRouting.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnhancedVpcRouting)) __obj.updateDynamic("EnhancedVpcRouting")(EnhancedVpcRouting.get.asInstanceOf[js.Any])
     if (ExpectedNextSnapshotScheduleTime != null) __obj.updateDynamic("ExpectedNextSnapshotScheduleTime")(ExpectedNextSnapshotScheduleTime.asInstanceOf[js.Any])
     if (ExpectedNextSnapshotScheduleTimeStatus != null) __obj.updateDynamic("ExpectedNextSnapshotScheduleTimeStatus")(ExpectedNextSnapshotScheduleTimeStatus.asInstanceOf[js.Any])
     if (HsmStatus != null) __obj.updateDynamic("HsmStatus")(HsmStatus.asInstanceOf[js.Any])
     if (IamRoles != null) __obj.updateDynamic("IamRoles")(IamRoles.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
     if (MaintenanceTrackName != null) __obj.updateDynamic("MaintenanceTrackName")(MaintenanceTrackName.asInstanceOf[js.Any])
-    if (ManualSnapshotRetentionPeriod != null) __obj.updateDynamic("ManualSnapshotRetentionPeriod")(ManualSnapshotRetentionPeriod.asInstanceOf[js.Any])
+    if (!js.isUndefined(ManualSnapshotRetentionPeriod)) __obj.updateDynamic("ManualSnapshotRetentionPeriod")(ManualSnapshotRetentionPeriod.get.asInstanceOf[js.Any])
     if (MasterUsername != null) __obj.updateDynamic("MasterUsername")(MasterUsername.asInstanceOf[js.Any])
     if (ModifyStatus != null) __obj.updateDynamic("ModifyStatus")(ModifyStatus.asInstanceOf[js.Any])
     if (NextMaintenanceWindowStartTime != null) __obj.updateDynamic("NextMaintenanceWindowStartTime")(NextMaintenanceWindowStartTime.asInstanceOf[js.Any])
     if (NodeType != null) __obj.updateDynamic("NodeType")(NodeType.asInstanceOf[js.Any])
-    if (NumberOfNodes != null) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfNodes)) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes.get.asInstanceOf[js.Any])
     if (PendingActions != null) __obj.updateDynamic("PendingActions")(PendingActions.asInstanceOf[js.Any])
     if (PendingModifiedValues != null) __obj.updateDynamic("PendingModifiedValues")(PendingModifiedValues.asInstanceOf[js.Any])
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow.asInstanceOf[js.Any])
-    if (!js.isUndefined(PubliclyAccessible)) __obj.updateDynamic("PubliclyAccessible")(PubliclyAccessible.asInstanceOf[js.Any])
+    if (!js.isUndefined(PubliclyAccessible)) __obj.updateDynamic("PubliclyAccessible")(PubliclyAccessible.get.asInstanceOf[js.Any])
     if (ResizeInfo != null) __obj.updateDynamic("ResizeInfo")(ResizeInfo.asInstanceOf[js.Any])
     if (RestoreStatus != null) __obj.updateDynamic("RestoreStatus")(RestoreStatus.asInstanceOf[js.Any])
     if (SnapshotScheduleIdentifier != null) __obj.updateDynamic("SnapshotScheduleIdentifier")(SnapshotScheduleIdentifier.asInstanceOf[js.Any])

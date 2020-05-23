@@ -1,6 +1,6 @@
 package typings.relayRuntime.relayQueryResponseCacheMod
 
-import typings.relayRuntime.AnonSize
+import typings.relayRuntime.anon.Size
 import typings.relayRuntime.relayNetworkTypesMod.GraphQLResponse
 import typings.relayRuntime.relayRuntimeTypesMod.Variables
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("relay-runtime/lib/network/RelayQueryResponseCache", JSImport.Default)
 @js.native
 class default protected () extends RelayQueryResponseCache {
-  def this(config: AnonSize) = this()
+  def this(config: Size) = this()
   /* CompleteClass */
   override def clear(): Unit = js.native
   /* CompleteClass */

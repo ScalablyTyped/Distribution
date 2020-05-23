@@ -1,8 +1,8 @@
 package typings.stripeV3.stripe.elements
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.stripeV3.AnonBase
-import typings.stripeV3.AnonComplete
+import typings.stripeV3.anon.Base
+import typings.stripeV3.anon.Complete
 import typings.stripeV3.stripe.paymentRequest.StripePaymentRequest
 import typings.stripeV3.stripeV3Strings.default
 import typings.stripeV3.stripeV3Strings.solid
@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ElementsOptions extends js.Object {
-  var classes: js.UndefOr[AnonBase] = js.undefined
+  var classes: js.UndefOr[Base] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   var hideIcon: js.UndefOr[Boolean] = js.undefined
   var hidePostalCode: js.UndefOr[Boolean] = js.undefined
@@ -19,7 +19,7 @@ trait ElementsOptions extends js.Object {
   var paymentRequest: js.UndefOr[StripePaymentRequest] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var placeholderCountry: js.UndefOr[String] = js.undefined
-  var style: js.UndefOr[AnonComplete] = js.undefined
+  var style: js.UndefOr[Complete] = js.undefined
   var supportedCountries: js.UndefOr[js.Array[String]] = js.undefined
   var value: js.UndefOr[String | StringDictionary[String]] = js.undefined
 }
@@ -27,7 +27,7 @@ trait ElementsOptions extends js.Object {
 object ElementsOptions {
   @scala.inline
   def apply(
-    classes: AnonBase = null,
+    classes: Base = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     hideIcon: js.UndefOr[Boolean] = js.undefined,
     hidePostalCode: js.UndefOr[Boolean] = js.undefined,
@@ -35,15 +35,15 @@ object ElementsOptions {
     paymentRequest: StripePaymentRequest = null,
     placeholder: String = null,
     placeholderCountry: String = null,
-    style: AnonComplete = null,
+    style: Complete = null,
     supportedCountries: js.Array[String] = null,
     value: String | StringDictionary[String] = null
   ): ElementsOptions = {
     val __obj = js.Dynamic.literal()
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideIcon)) __obj.updateDynamic("hideIcon")(hideIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidePostalCode)) __obj.updateDynamic("hidePostalCode")(hidePostalCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideIcon)) __obj.updateDynamic("hideIcon")(hideIcon.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidePostalCode)) __obj.updateDynamic("hidePostalCode")(hidePostalCode.get.asInstanceOf[js.Any])
     if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle.asInstanceOf[js.Any])
     if (paymentRequest != null) __obj.updateDynamic("paymentRequest")(paymentRequest.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])

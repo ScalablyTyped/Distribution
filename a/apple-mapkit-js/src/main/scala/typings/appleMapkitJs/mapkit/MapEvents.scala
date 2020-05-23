@@ -1,21 +1,19 @@
 package typings.appleMapkitJs.mapkit
 
-import typings.appleMapkitJs.AnonAnnotation
-import typings.appleMapkitJs.AnonAnnotationAnnotation
-import typings.appleMapkitJs.AnonCode
-import typings.appleMapkitJs.AnonCoordinate
-import typings.appleMapkitJs.AnonTimestamp
+import typings.appleMapkitJs.anon.AnnotationAnnotation
+import typings.appleMapkitJs.anon.Code
+import typings.appleMapkitJs.anon.Timestamp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // prettier-ignore
 trait MapEvents[T] extends js.Object {
-  var deselect: EventBase[T] with AnonAnnotation
+  var deselect: EventBase[T] with typings.appleMapkitJs.anon.Annotation
   var `double-tap`: EventBase[T]
-  var `drag-end`: EventBase[T] with AnonAnnotationAnnotation
-  var `drag-start`: EventBase[T] with AnonAnnotationAnnotation
-  var dragging: EventBase[T] with AnonCoordinate
+  var `drag-end`: EventBase[T] with AnnotationAnnotation
+  var `drag-start`: EventBase[T] with AnnotationAnnotation
+  var dragging: EventBase[T] with typings.appleMapkitJs.anon.Coordinate
   var `long-press`: EventBase[T]
   var `map-type-change`: EventBase[T]
   var `region-change-end`: EventBase[T]
@@ -23,11 +21,11 @@ trait MapEvents[T] extends js.Object {
   var `scroll-end`: EventBase[T]
   var `scroll-start`: EventBase[T]
   // Annotation Events
-  var select: EventBase[T] with AnonAnnotation
+  var select: EventBase[T] with typings.appleMapkitJs.anon.Annotation
   var `single-tap`: EventBase[T]
   // User Location Events
-  var `user-location-change`: EventBase[T] with AnonTimestamp
-  var `user-location-error`: EventBase[T] with AnonCode
+  var `user-location-change`: EventBase[T] with Timestamp
+  var `user-location-error`: EventBase[T] with Code
   var `zoom-end`: EventBase[T]
   var `zoom-start`: EventBase[T]
 }
@@ -35,21 +33,21 @@ trait MapEvents[T] extends js.Object {
 object MapEvents {
   @scala.inline
   def apply[T](
-    deselect: EventBase[T] with AnonAnnotation,
+    deselect: EventBase[T] with typings.appleMapkitJs.anon.Annotation,
     `double-tap`: EventBase[T],
-    `drag-end`: EventBase[T] with AnonAnnotationAnnotation,
-    `drag-start`: EventBase[T] with AnonAnnotationAnnotation,
-    dragging: EventBase[T] with AnonCoordinate,
+    `drag-end`: EventBase[T] with AnnotationAnnotation,
+    `drag-start`: EventBase[T] with AnnotationAnnotation,
+    dragging: EventBase[T] with typings.appleMapkitJs.anon.Coordinate,
     `long-press`: EventBase[T],
     `map-type-change`: EventBase[T],
     `region-change-end`: EventBase[T],
     `region-change-start`: EventBase[T],
     `scroll-end`: EventBase[T],
     `scroll-start`: EventBase[T],
-    select: EventBase[T] with AnonAnnotation,
+    select: EventBase[T] with typings.appleMapkitJs.anon.Annotation,
     `single-tap`: EventBase[T],
-    `user-location-change`: EventBase[T] with AnonTimestamp,
-    `user-location-error`: EventBase[T] with AnonCode,
+    `user-location-change`: EventBase[T] with Timestamp,
+    `user-location-error`: EventBase[T] with Code,
     `zoom-end`: EventBase[T],
     `zoom-start`: EventBase[T]
   ): MapEvents[T] = {

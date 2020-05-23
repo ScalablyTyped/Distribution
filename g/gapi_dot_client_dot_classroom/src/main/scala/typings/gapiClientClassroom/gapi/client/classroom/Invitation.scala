@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// tslint:disable-next-line:interface-name
 trait Invitation extends js.Object {
   /** Identifier of the course to invite the user to. */
   var courseId: js.UndefOr[String] = js.undefined

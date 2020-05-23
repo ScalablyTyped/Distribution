@@ -17,7 +17,7 @@ object QueryOptions {
     val __obj = js.Dynamic.literal()
     if (baseKey != null) __obj.updateDynamic("baseKey")(baseKey.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(noAck)) __obj.updateDynamic("noAck")(noAck.asInstanceOf[js.Any])
+    if (!js.isUndefined(noAck)) __obj.updateDynamic("noAck")(noAck.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOptions]
   }
 }

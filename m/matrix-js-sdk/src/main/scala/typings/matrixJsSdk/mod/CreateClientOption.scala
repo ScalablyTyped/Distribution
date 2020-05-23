@@ -1,7 +1,7 @@
 package typings.matrixJsSdk.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.matrixJsSdk.AnonGetAccessToken
+import typings.matrixJsSdk.anon.GetAccessToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait CreateClientOption extends js.Object {
   var fallbackICEServerAllowed: js.UndefOr[Boolean] = js.undefined
   var forceTURN: js.UndefOr[Boolean] = js.undefined
   var idBaseUrl: js.UndefOr[String] = js.undefined
-  var identityServer: js.UndefOr[AnonGetAccessToken] = js.undefined
+  var identityServer: js.UndefOr[GetAccessToken] = js.undefined
   var localTimeoutMs: js.UndefOr[Double] = js.undefined
   var queryParams: js.UndefOr[js.Any] = js.undefined
   var request: js.UndefOr[js.Any] = js.undefined
@@ -41,8 +41,8 @@ object CreateClientOption {
     fallbackICEServerAllowed: js.UndefOr[Boolean] = js.undefined,
     forceTURN: js.UndefOr[Boolean] = js.undefined,
     idBaseUrl: String = null,
-    identityServer: AnonGetAccessToken = null,
-    localTimeoutMs: Int | Double = null,
+    identityServer: GetAccessToken = null,
+    localTimeoutMs: js.UndefOr[Double] = js.undefined,
     queryParams: js.Any = null,
     request: js.Any = null,
     scheduler: MatrixScheduler = null,
@@ -60,18 +60,18 @@ object CreateClientOption {
     if (cryptoStore != null) __obj.updateDynamic("cryptoStore")(cryptoStore.asInstanceOf[js.Any])
     if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
     if (deviceToImport != null) __obj.updateDynamic("deviceToImport")(deviceToImport.asInstanceOf[js.Any])
-    if (!js.isUndefined(fallbackICEServerAllowed)) __obj.updateDynamic("fallbackICEServerAllowed")(fallbackICEServerAllowed.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceTURN)) __obj.updateDynamic("forceTURN")(forceTURN.asInstanceOf[js.Any])
+    if (!js.isUndefined(fallbackICEServerAllowed)) __obj.updateDynamic("fallbackICEServerAllowed")(fallbackICEServerAllowed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceTURN)) __obj.updateDynamic("forceTURN")(forceTURN.get.asInstanceOf[js.Any])
     if (idBaseUrl != null) __obj.updateDynamic("idBaseUrl")(idBaseUrl.asInstanceOf[js.Any])
     if (identityServer != null) __obj.updateDynamic("identityServer")(identityServer.asInstanceOf[js.Any])
-    if (localTimeoutMs != null) __obj.updateDynamic("localTimeoutMs")(localTimeoutMs.asInstanceOf[js.Any])
+    if (!js.isUndefined(localTimeoutMs)) __obj.updateDynamic("localTimeoutMs")(localTimeoutMs.get.asInstanceOf[js.Any])
     if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
     if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
     if (scheduler != null) __obj.updateDynamic("scheduler")(scheduler.asInstanceOf[js.Any])
     if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
-    if (!js.isUndefined(timelineSupport)) __obj.updateDynamic("timelineSupport")(timelineSupport.asInstanceOf[js.Any])
-    if (!js.isUndefined(unstableClientRelationAggregation)) __obj.updateDynamic("unstableClientRelationAggregation")(unstableClientRelationAggregation.asInstanceOf[js.Any])
-    if (!js.isUndefined(useAuthorizationHeader)) __obj.updateDynamic("useAuthorizationHeader")(useAuthorizationHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(timelineSupport)) __obj.updateDynamic("timelineSupport")(timelineSupport.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unstableClientRelationAggregation)) __obj.updateDynamic("unstableClientRelationAggregation")(unstableClientRelationAggregation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useAuthorizationHeader)) __obj.updateDynamic("useAuthorizationHeader")(useAuthorizationHeader.get.asInstanceOf[js.Any])
     if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     if (verificationMethods != null) __obj.updateDynamic("verificationMethods")(verificationMethods.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateClientOption]

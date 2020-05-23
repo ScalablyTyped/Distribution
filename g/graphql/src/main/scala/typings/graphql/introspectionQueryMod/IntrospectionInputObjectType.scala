@@ -21,10 +21,10 @@ object IntrospectionInputObjectType {
     inputFields: js.Array[IntrospectionInputValue],
     kind: INPUT_OBJECT,
     name: String,
-    description: Maybe[String] = null
+    description: js.UndefOr[Null | Maybe[String]] = js.undefined
   ): IntrospectionInputObjectType = {
     val __obj = js.Dynamic.literal(inputFields = inputFields.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionInputObjectType]
   }
 }

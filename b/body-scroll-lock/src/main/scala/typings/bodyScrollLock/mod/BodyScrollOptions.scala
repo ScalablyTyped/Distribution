@@ -19,7 +19,7 @@ object BodyScrollOptions {
   ): BodyScrollOptions = {
     val __obj = js.Dynamic.literal()
     if (allowTouchMove != null) __obj.updateDynamic("allowTouchMove")(js.Any.fromFunction1(allowTouchMove))
-    if (!js.isUndefined(reserveScrollBarGap)) __obj.updateDynamic("reserveScrollBarGap")(reserveScrollBarGap.asInstanceOf[js.Any])
+    if (!js.isUndefined(reserveScrollBarGap)) __obj.updateDynamic("reserveScrollBarGap")(reserveScrollBarGap.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BodyScrollOptions]
   }
 }

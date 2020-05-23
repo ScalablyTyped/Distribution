@@ -110,20 +110,20 @@ object ConfigurationOptions {
     stopEventPropagationAfterIgnoring: js.UndefOr[Boolean] = js.undefined
   ): ConfigurationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowCombinationSubmatches)) __obj.updateDynamic("allowCombinationSubmatches")(allowCombinationSubmatches.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCombinationSubmatches)) __obj.updateDynamic("allowCombinationSubmatches")(allowCombinationSubmatches.get.asInstanceOf[js.Any])
     if (customKeyCodes != null) __obj.updateDynamic("customKeyCodes")(customKeyCodes.asInstanceOf[js.Any])
     if (defaultComponent != null) __obj.updateDynamic("defaultComponent")(defaultComponent.asInstanceOf[js.Any])
     if (defaultKeyEvent != null) __obj.updateDynamic("defaultKeyEvent")(defaultKeyEvent.asInstanceOf[js.Any])
     if (defaultTabIndex != null) __obj.updateDynamic("defaultTabIndex")(defaultTabIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableHardSequences)) __obj.updateDynamic("enableHardSequences")(enableHardSequences.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableHardSequences)) __obj.updateDynamic("enableHardSequences")(enableHardSequences.get.asInstanceOf[js.Any])
     if (ignoreEventsCondition != null) __obj.updateDynamic("ignoreEventsCondition")(js.Any.fromFunction1(ignoreEventsCondition))
-    if (!js.isUndefined(ignoreKeymapAndHandlerChangesByDefault)) __obj.updateDynamic("ignoreKeymapAndHandlerChangesByDefault")(ignoreKeymapAndHandlerChangesByDefault.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreRepeatedEventsWhenKeyHeldDown)) __obj.updateDynamic("ignoreRepeatedEventsWhenKeyHeldDown")(ignoreRepeatedEventsWhenKeyHeldDown.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreKeymapAndHandlerChangesByDefault)) __obj.updateDynamic("ignoreKeymapAndHandlerChangesByDefault")(ignoreKeymapAndHandlerChangesByDefault.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreRepeatedEventsWhenKeyHeldDown)) __obj.updateDynamic("ignoreRepeatedEventsWhenKeyHeldDown")(ignoreRepeatedEventsWhenKeyHeldDown.get.asInstanceOf[js.Any])
     if (ignoreTags != null) __obj.updateDynamic("ignoreTags")(ignoreTags.asInstanceOf[js.Any])
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(simulateMissingKeyPressEvents)) __obj.updateDynamic("simulateMissingKeyPressEvents")(simulateMissingKeyPressEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopEventPropagationAfterHandling)) __obj.updateDynamic("stopEventPropagationAfterHandling")(stopEventPropagationAfterHandling.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopEventPropagationAfterIgnoring)) __obj.updateDynamic("stopEventPropagationAfterIgnoring")(stopEventPropagationAfterIgnoring.asInstanceOf[js.Any])
+    if (!js.isUndefined(simulateMissingKeyPressEvents)) __obj.updateDynamic("simulateMissingKeyPressEvents")(simulateMissingKeyPressEvents.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopEventPropagationAfterHandling)) __obj.updateDynamic("stopEventPropagationAfterHandling")(stopEventPropagationAfterHandling.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopEventPropagationAfterIgnoring)) __obj.updateDynamic("stopEventPropagationAfterIgnoring")(stopEventPropagationAfterIgnoring.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationOptions]
   }
 }

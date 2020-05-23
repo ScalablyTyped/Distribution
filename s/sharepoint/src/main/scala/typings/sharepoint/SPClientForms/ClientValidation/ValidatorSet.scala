@@ -4,9 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SPClientForms.ClientValidation.ValidatorSet")
-@js.native
-class ValidatorSet () extends js.Object {
-  def RegisterValidator(validator: IValidator): Unit = js.native
+trait ValidatorSet extends js.Object {
+  def RegisterValidator(validator: IValidator): Unit
+}
+
+object ValidatorSet {
+  @scala.inline
+  def apply(RegisterValidator: IValidator => Unit): ValidatorSet = {
+    val __obj = js.Dynamic.literal(RegisterValidator = js.Any.fromFunction1(RegisterValidator))
+    __obj.asInstanceOf[ValidatorSet]
+  }
 }
 

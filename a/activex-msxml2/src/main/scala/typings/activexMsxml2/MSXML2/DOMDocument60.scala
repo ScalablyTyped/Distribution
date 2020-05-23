@@ -13,9 +13,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** W3C-DOM XML Document 6.0 (Apartment) */
-@JSGlobal("MSXML2.DOMDocument60")
 @js.native
-class DOMDocument60 protected () extends js.Object {
+trait DOMDocument60 extends js.Object {
   @JSName("MSXML2.DOMDocument60_typekey")
   var MSXML2DotDOMDocument60_typekey: DOMDocument60 = js.native
   /** flag for asynchronous download */

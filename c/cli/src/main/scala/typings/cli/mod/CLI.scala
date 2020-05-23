@@ -1,7 +1,7 @@
 package typings.cli.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.cli.Anon0
+import typings.cli.anon.`0`
 import typings.node.NodeJS.WritableStream
 import typings.std.Date
 import scala.scalajs.js
@@ -58,9 +58,9 @@ trait CLI extends js.Object {
   def output(): Unit = js.native
   def output(message: js.Any, optionalParams: js.Any*): Unit = js.native
   def parse(): js.Any = js.native
-  def parse(opts: StringDictionary[Anon0]): js.Any = js.native
-  def parse(opts: StringDictionary[Anon0], commands: js.Array[String]): js.Any = js.native
-  def parse(opts: StringDictionary[Anon0], commands: StringDictionary[String]): js.Any = js.native
+  def parse(opts: StringDictionary[`0`]): js.Any = js.native
+  def parse(opts: StringDictionary[`0`], commands: js.Array[String]): js.Any = js.native
+  def parse(opts: StringDictionary[`0`], commands: StringDictionary[String]): js.Any = js.native
   def parsePackageJson(): Unit = js.native
   def parsePackageJson(path: String): Unit = js.native
   def progress(progress: Double): Unit = js.native

@@ -1,6 +1,8 @@
 package typings.cassandraDriver
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.cassandraDriver.anon.LogErroredRequests
+import typings.cassandraDriver.anon.ParamsQuery
 import typings.cassandraDriver.mod.ExecutionOptions
 import typings.cassandraDriver.mod.Host
 import typings.std.Error
@@ -15,7 +17,7 @@ object trackerMod extends js.Object {
   object tracker extends js.Object {
     @js.native
     class RequestLogger protected () extends RequestTracker {
-      def this(options: AnonLogErroredRequests) = this()
+      def this(options: LogErroredRequests) = this()
     }
     
     @js.native
@@ -49,7 +51,7 @@ object trackerMod extends js.Object {
       ): Unit = js.native
       def onError(
         host: Host,
-        query: js.Array[AnonParamsQuery],
+        query: js.Array[ParamsQuery],
         parameters: js.Array[_],
         executionOptions: ExecutionOptions,
         requestLength: Double,
@@ -58,7 +60,7 @@ object trackerMod extends js.Object {
       ): Unit = js.native
       def onError(
         host: Host,
-        query: js.Array[AnonParamsQuery],
+        query: js.Array[ParamsQuery],
         parameters: StringDictionary[js.Any],
         executionOptions: ExecutionOptions,
         requestLength: Double,
@@ -67,7 +69,7 @@ object trackerMod extends js.Object {
       ): Unit = js.native
       def onError(
         host: Host,
-        query: js.Array[AnonParamsQuery],
+        query: js.Array[ParamsQuery],
         parameters: Null,
         executionOptions: ExecutionOptions,
         requestLength: Double,
@@ -103,7 +105,7 @@ object trackerMod extends js.Object {
       ): Unit = js.native
       def onSuccess(
         host: Host,
-        query: js.Array[AnonParamsQuery],
+        query: js.Array[ParamsQuery],
         parameters: js.Array[_],
         executionOptions: ExecutionOptions,
         requestLength: Double,
@@ -112,7 +114,7 @@ object trackerMod extends js.Object {
       ): Unit = js.native
       def onSuccess(
         host: Host,
-        query: js.Array[AnonParamsQuery],
+        query: js.Array[ParamsQuery],
         parameters: StringDictionary[js.Any],
         executionOptions: ExecutionOptions,
         requestLength: Double,
@@ -121,7 +123,7 @@ object trackerMod extends js.Object {
       ): Unit = js.native
       def onSuccess(
         host: Host,
-        query: js.Array[AnonParamsQuery],
+        query: js.Array[ParamsQuery],
         parameters: Null,
         executionOptions: ExecutionOptions,
         requestLength: Double,

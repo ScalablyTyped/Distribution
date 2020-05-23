@@ -62,18 +62,18 @@ object Props {
     offset: String = null,
     onFlippedChange: (/* flipped */ Boolean, /* actualPosition */ CSSPositionType, /* originalPosition */ CSSPositionType) => Unit = null,
     position: PositionType = null,
-    zIndex: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined
   ): Props = {
     val __obj = js.Dynamic.literal()
     if (autoFlip != null) __obj.updateDynamic("autoFlip")(autoFlip.asInstanceOf[js.Any])
     if (boundariesElement != null) __obj.updateDynamic("boundariesElement")(boundariesElement.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(lockScroll)) __obj.updateDynamic("lockScroll")(lockScroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockScroll)) __obj.updateDynamic("lockScroll")(lockScroll.get.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (onFlippedChange != null) __obj.updateDynamic("onFlippedChange")(js.Any.fromFunction3(onFlippedChange))
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

@@ -31,28 +31,28 @@ trait INode extends js.Object {
 object INode {
   @scala.inline
   def apply(
-    cachePolicy: ICachePolicy = null,
-    child: js.Array[INode] = null,
-    endTime: Int | Double = null,
-    error: js.Array[IError] = null,
-    index: Int | Double = null,
-    originalFieldName: String = null,
-    parentType: String = null,
-    responseName: String = null,
-    startTime: Int | Double = null,
-    `type`: String = null
+    cachePolicy: js.UndefOr[Null | ICachePolicy] = js.undefined,
+    child: js.UndefOr[Null | js.Array[INode]] = js.undefined,
+    endTime: js.UndefOr[Null | Double] = js.undefined,
+    error: js.UndefOr[Null | js.Array[IError]] = js.undefined,
+    index: js.UndefOr[Null | Double] = js.undefined,
+    originalFieldName: js.UndefOr[Null | String] = js.undefined,
+    parentType: js.UndefOr[Null | String] = js.undefined,
+    responseName: js.UndefOr[Null | String] = js.undefined,
+    startTime: js.UndefOr[Null | Double] = js.undefined,
+    `type`: js.UndefOr[Null | String] = js.undefined
   ): INode = {
     val __obj = js.Dynamic.literal()
-    if (cachePolicy != null) __obj.updateDynamic("cachePolicy")(cachePolicy.asInstanceOf[js.Any])
-    if (child != null) __obj.updateDynamic("child")(child.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (originalFieldName != null) __obj.updateDynamic("originalFieldName")(originalFieldName.asInstanceOf[js.Any])
-    if (parentType != null) __obj.updateDynamic("parentType")(parentType.asInstanceOf[js.Any])
-    if (responseName != null) __obj.updateDynamic("responseName")(responseName.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(cachePolicy)) __obj.updateDynamic("cachePolicy")(cachePolicy.asInstanceOf[js.Any])
+    if (!js.isUndefined(child)) __obj.updateDynamic("child")(child.asInstanceOf[js.Any])
+    if (!js.isUndefined(endTime)) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(originalFieldName)) __obj.updateDynamic("originalFieldName")(originalFieldName.asInstanceOf[js.Any])
+    if (!js.isUndefined(parentType)) __obj.updateDynamic("parentType")(parentType.asInstanceOf[js.Any])
+    if (!js.isUndefined(responseName)) __obj.updateDynamic("responseName")(responseName.asInstanceOf[js.Any])
+    if (!js.isUndefined(startTime)) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[INode]
   }
 }

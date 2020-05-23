@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.VoiceCommands
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,32 +42,6 @@ object VoiceCommandContentTileType extends js.Object {
   /** Item title with up to three lines of text. */
   @js.native
   sealed trait titleWithText extends VoiceCommandContentTileType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VoiceCommandContentTileType with Double] = js.native
-  /* 0 */ @js.native
-  object titleOnly extends TopLevel[titleOnly with Double]
-  
-  /* 6 */ @js.native
-  object titleWith280x140Icon extends TopLevel[titleWith280x140Icon with Double]
-  
-  /* 7 */ @js.native
-  object titleWith280x140IconAndText extends TopLevel[titleWith280x140IconAndText with Double]
-  
-  /* 2 */ @js.native
-  object titleWith68x68Icon extends TopLevel[titleWith68x68Icon with Double]
-  
-  /* 3 */ @js.native
-  object titleWith68x68IconAndText extends TopLevel[titleWith68x68IconAndText with Double]
-  
-  /* 4 */ @js.native
-  object titleWith68x92Icon extends TopLevel[titleWith68x92Icon with Double]
-  
-  /* 5 */ @js.native
-  object titleWith68x92IconAndText extends TopLevel[titleWith68x92IconAndText with Double]
-  
-  /* 1 */ @js.native
-  object titleWithText extends TopLevel[titleWithText with Double]
   
 }
 

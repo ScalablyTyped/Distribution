@@ -38,7 +38,7 @@ object MemberSummary {
     CreationDate: Timestamp = null,
     Description: DescriptionString = null,
     Id: ResourceIdString = null,
-    IsOwned: js.UndefOr[Boolean] = js.undefined,
+    IsOwned: js.UndefOr[IsOwned] = js.undefined,
     Name: NetworkMemberNameString = null,
     Status: MemberStatus = null
   ): MemberSummary = {
@@ -46,7 +46,7 @@ object MemberSummary {
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsOwned)) __obj.updateDynamic("IsOwned")(IsOwned.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsOwned)) __obj.updateDynamic("IsOwned")(IsOwned.get.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemberSummary]

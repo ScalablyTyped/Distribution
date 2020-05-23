@@ -10,18 +10,18 @@ import scala.scalajs.js.annotation._
 // #region Test functions
 trait BaseInterface extends js.Object {
   /**
-  		 * The detected Mocha interface.
-  		 *
-  		 * @default "bdd"
-  		 */
+    * The detected Mocha interface.
+    *
+    * @default "bdd"
+    */
   var detectedInterface: bdd | tdd | qunit
   /**
-  		 * Triggers root suite execution.
-  		 *
-  		 * - _Only available if flag `--delay` is passed to Mocha._
-  		 *
-  		 * @see https://mochajs.org/api/global.html#runWithSuite
-  		 */
+    * Triggers root suite execution.
+    *
+    * - _Only available if flag `--delay` is passed to Mocha._
+    *
+    * @see https://mochajs.org/api/global.html#runWithSuite
+    */
   def run(): Unit
 }
 

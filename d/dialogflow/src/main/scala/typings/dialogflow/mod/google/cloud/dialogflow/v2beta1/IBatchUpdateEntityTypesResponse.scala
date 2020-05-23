@@ -12,9 +12,9 @@ trait IBatchUpdateEntityTypesResponse extends js.Object {
 
 object IBatchUpdateEntityTypesResponse {
   @scala.inline
-  def apply(entityTypes: js.Array[IEntityType] = null): IBatchUpdateEntityTypesResponse = {
+  def apply(entityTypes: js.UndefOr[Null | js.Array[IEntityType]] = js.undefined): IBatchUpdateEntityTypesResponse = {
     val __obj = js.Dynamic.literal()
-    if (entityTypes != null) __obj.updateDynamic("entityTypes")(entityTypes.asInstanceOf[js.Any])
+    if (!js.isUndefined(entityTypes)) __obj.updateDynamic("entityTypes")(entityTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBatchUpdateEntityTypesResponse]
   }
 }

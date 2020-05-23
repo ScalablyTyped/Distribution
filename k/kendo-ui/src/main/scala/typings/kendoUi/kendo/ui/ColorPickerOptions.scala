@@ -29,7 +29,7 @@ object ColorPickerOptions {
     change: /* e */ ColorPickerChangeEvent => Unit = null,
     clearButton: js.UndefOr[Boolean] = js.undefined,
     close: /* e */ ColorPickerEvent => Unit = null,
-    columns: Int | Double = null,
+    columns: js.UndefOr[Double] = js.undefined,
     messages: ColorPickerMessages = null,
     name: String = null,
     opacity: js.UndefOr[Boolean] = js.undefined,
@@ -42,17 +42,17 @@ object ColorPickerOptions {
     value: String = null
   ): ColorPickerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(buttons)) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
+    if (!js.isUndefined(buttons)) __obj.updateDynamic("buttons")(buttons.get.asInstanceOf[js.Any])
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (!js.isUndefined(clearButton)) __obj.updateDynamic("clearButton")(clearButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearButton)) __obj.updateDynamic("clearButton")(clearButton.get.asInstanceOf[js.Any])
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns.get.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
     if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
-    if (!js.isUndefined(preview)) __obj.updateDynamic("preview")(preview.asInstanceOf[js.Any])
+    if (!js.isUndefined(preview)) __obj.updateDynamic("preview")(preview.get.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
     if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
     if (toolIcon != null) __obj.updateDynamic("toolIcon")(toolIcon.asInstanceOf[js.Any])

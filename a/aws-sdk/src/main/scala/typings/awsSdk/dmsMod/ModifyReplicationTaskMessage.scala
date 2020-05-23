@@ -31,13 +31,17 @@ trait ModifyReplicationTaskMessage extends js.Object {
     */
   var ReplicationTaskIdentifier: js.UndefOr[String] = js.native
   /**
-    * JSON file that contains settings for the task, such as target metadata settings.
+    * JSON file that contains settings for the task, such as task metadata settings.
     */
   var ReplicationTaskSettings: js.UndefOr[String] = js.native
   /**
     * When using the AWS CLI or boto3, provide the path of the JSON file that contains the table mappings. Precede the path with file://. When working with the DMS API, provide the JSON as the parameter value, for example: --table-mappings file://mappingfile.json 
     */
   var TableMappings: js.UndefOr[String] = js.native
+  /**
+    * Supplemental information that the task requires to migrate the data for certain source and target endpoints. For more information, see Specifying Supplemental Data for Task Settings in the AWS Database Migration User Guide. 
+    */
+  var TaskData: js.UndefOr[String] = js.native
 }
 
 object ModifyReplicationTaskMessage {
@@ -50,7 +54,8 @@ object ModifyReplicationTaskMessage {
     MigrationType: MigrationTypeValue = null,
     ReplicationTaskIdentifier: String = null,
     ReplicationTaskSettings: String = null,
-    TableMappings: String = null
+    TableMappings: String = null,
+    TaskData: String = null
   ): ModifyReplicationTaskMessage = {
     val __obj = js.Dynamic.literal(ReplicationTaskArn = ReplicationTaskArn.asInstanceOf[js.Any])
     if (CdcStartPosition != null) __obj.updateDynamic("CdcStartPosition")(CdcStartPosition.asInstanceOf[js.Any])
@@ -60,6 +65,7 @@ object ModifyReplicationTaskMessage {
     if (ReplicationTaskIdentifier != null) __obj.updateDynamic("ReplicationTaskIdentifier")(ReplicationTaskIdentifier.asInstanceOf[js.Any])
     if (ReplicationTaskSettings != null) __obj.updateDynamic("ReplicationTaskSettings")(ReplicationTaskSettings.asInstanceOf[js.Any])
     if (TableMappings != null) __obj.updateDynamic("TableMappings")(TableMappings.asInstanceOf[js.Any])
+    if (TaskData != null) __obj.updateDynamic("TaskData")(TaskData.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyReplicationTaskMessage]
   }
 }

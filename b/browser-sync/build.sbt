@@ -1,19 +1,20 @@
 organization := "org.scalablytyped"
 name := "browser-sync"
-version := "2.26-dt-20200226Z-959b1c"
-scalaVersion := "2.13.1"
+version := "2.26-dt-20200515Z-f71bfd"
+scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "chokidar" % "3.3.1-80b43c",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20200415Z-afdfd2",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20191126Z-cd6086",
-  "org.scalablytyped" %%% "node" % "13.13-dt-20200417Z-f3d81d",
-  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-0a8d6e",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20200227Z-c88828",
-  "org.scalablytyped" %%% "std" % "3.8-9b2470")
+  "org.scalablytyped" %%% "chokidar" % "3.4.0-81d9ae",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20200515Z-c2bfc2",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20200515Z-593c89",
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200521Z-3aabb7",
+  "org.scalablytyped" %%% "qs" % "6.9-dt-20200519Z-7ad812",
+  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-cd197c",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20200519Z-9da187",
+  "org.scalablytyped" %%% "std" % "3.9-18cbeb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

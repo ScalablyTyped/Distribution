@@ -4,24 +4,39 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("chrome.cast.media.TextTrackStyle")
-@js.native
-/**
-  * @constructor
-  * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.TextTrackStyle
-  */
-class TextTrackStyle () extends js.Object {
-  var backgroundColor: String = js.native
-  var customData: js.Object = js.native
-  var edgeColor: String = js.native
-  var edgeType: TextTrackEdgeType = js.native
-  var fontFamily: String = js.native
-  var fontGenericFamily: TextTrackFontGenericFamily = js.native
-  var fontScale: Double = js.native
-  var fontStyle: TextTrackFontStyle = js.native
-  var foregroundColor: String = js.native
-  var windowColor: String = js.native
-  var windowRoundedCornerRadius: Double = js.native
-  var windowType: TextTrackWindowType = js.native
+trait TextTrackStyle extends js.Object {
+  var backgroundColor: String
+  var customData: js.Object
+  var edgeColor: String
+  var edgeType: TextTrackEdgeType
+  var fontFamily: String
+  var fontGenericFamily: TextTrackFontGenericFamily
+  var fontScale: Double
+  var fontStyle: TextTrackFontStyle
+  var foregroundColor: String
+  var windowColor: String
+  var windowRoundedCornerRadius: Double
+  var windowType: TextTrackWindowType
+}
+
+object TextTrackStyle {
+  @scala.inline
+  def apply(
+    backgroundColor: String,
+    customData: js.Object,
+    edgeColor: String,
+    edgeType: TextTrackEdgeType,
+    fontFamily: String,
+    fontGenericFamily: TextTrackFontGenericFamily,
+    fontScale: Double,
+    fontStyle: TextTrackFontStyle,
+    foregroundColor: String,
+    windowColor: String,
+    windowRoundedCornerRadius: Double,
+    windowType: TextTrackWindowType
+  ): TextTrackStyle = {
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], customData = customData.asInstanceOf[js.Any], edgeColor = edgeColor.asInstanceOf[js.Any], edgeType = edgeType.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontGenericFamily = fontGenericFamily.asInstanceOf[js.Any], fontScale = fontScale.asInstanceOf[js.Any], fontStyle = fontStyle.asInstanceOf[js.Any], foregroundColor = foregroundColor.asInstanceOf[js.Any], windowColor = windowColor.asInstanceOf[js.Any], windowRoundedCornerRadius = windowRoundedCornerRadius.asInstanceOf[js.Any], windowType = windowType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TextTrackStyle]
+  }
 }
 

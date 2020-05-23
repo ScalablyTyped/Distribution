@@ -10,9 +10,9 @@ trait IRatingState extends js.Object {
 
 object IRatingState {
   @scala.inline
-  def apply(rating: Int | Double = null): IRatingState = {
+  def apply(rating: js.UndefOr[Null | Double] = js.undefined): IRatingState = {
     val __obj = js.Dynamic.literal()
-    if (rating != null) __obj.updateDynamic("rating")(rating.asInstanceOf[js.Any])
+    if (!js.isUndefined(rating)) __obj.updateDynamic("rating")(rating.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRatingState]
   }
 }

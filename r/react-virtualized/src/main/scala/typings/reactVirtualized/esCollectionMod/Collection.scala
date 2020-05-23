@@ -2,10 +2,10 @@ package typings.reactVirtualized.esCollectionMod
 
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
-import typings.reactVirtualized.AnonAlign
-import typings.reactVirtualized.AnonArialabel
-import typings.reactVirtualized.AnonCellGroupRenderer
-import typings.reactVirtualized.isScrollingbooleanSizeInf
+import typings.reactVirtualized.anon.Align
+import typings.reactVirtualized.anon.Arialabel
+import typings.reactVirtualized.anon.CellGroupRenderer
+import typings.reactVirtualized.anon.isScrollingbooleanSizeInf
 import typings.reactVirtualized.mod.ScrollPosition
 import typings.reactVirtualized.mod.SizeInfo
 import scala.scalajs.js
@@ -26,7 +26,7 @@ class Collection ()
   /**
     * Calculates the minimum amount of change from the current scroll position to ensure the specified cell is (fully) visible.
     */
-  def getScrollPositionForCell(params: AnonAlign): ScrollPosition = js.native
+  def getScrollPositionForCell(params: Align): ScrollPosition = js.native
   def getTotalSize(): SizeInfo = js.native
   /** See Collection#recomputeCellSizesAndPositions */
   def recomputeCellSizesAndPositions(): Unit = js.native
@@ -36,7 +36,7 @@ class Collection ()
 @JSImport("react-virtualized/dist/es/Collection", "Collection")
 @js.native
 object Collection extends js.Object {
-  var defaultProps: AnonCellGroupRenderer = js.native
-  var propTypes: AnonArialabel = js.native
+  var defaultProps: CellGroupRenderer = js.native
+  var propTypes: Arialabel = js.native
 }
 

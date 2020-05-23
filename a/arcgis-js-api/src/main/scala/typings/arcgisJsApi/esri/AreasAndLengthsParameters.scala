@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`nautical-miles`
 import typings.arcgisJsApi.arcgisJsApiStrings.`preserve-shape`
 import typings.arcgisJsApi.arcgisJsApiStrings.`square-feet`
@@ -57,8 +56,4 @@ trait AreasAndLengthsParameters
     */
   var polygons: js.Array[Polygon] = js.native
 }
-
-@JSGlobal("__esri.AreasAndLengthsParameters")
-@js.native
-object AreasAndLengthsParameters extends TopLevel[AreasAndLengthsParametersConstructor]
 

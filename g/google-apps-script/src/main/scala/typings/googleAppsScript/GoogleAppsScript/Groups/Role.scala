@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Groups
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,23 +31,6 @@ object Role extends js.Object {
   
   @js.native
   sealed trait PENDING extends Role
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Role with Double] = js.native
-  /* 3 */ @js.native
-  object INVITED extends TopLevel[INVITED with Double]
-  
-  /* 1 */ @js.native
-  object MANAGER extends TopLevel[MANAGER with Double]
-  
-  /* 2 */ @js.native
-  object MEMBER extends TopLevel[MEMBER with Double]
-  
-  /* 0 */ @js.native
-  object OWNER extends TopLevel[OWNER with Double]
-  
-  /* 4 */ @js.native
-  object PENDING extends TopLevel[PENDING with Double]
   
 }
 

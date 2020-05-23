@@ -16,10 +16,10 @@ trait MessageContextGlobalSystem extends js.Object {
 
 object MessageContextGlobalSystem {
   @scala.inline
-  def apply(timezone: String = null, turn_count: Int | Double = null, user_id: String = null): MessageContextGlobalSystem = {
+  def apply(timezone: String = null, turn_count: js.UndefOr[Double] = js.undefined, user_id: String = null): MessageContextGlobalSystem = {
     val __obj = js.Dynamic.literal()
     if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
-    if (turn_count != null) __obj.updateDynamic("turn_count")(turn_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(turn_count)) __obj.updateDynamic("turn_count")(turn_count.get.asInstanceOf[js.Any])
     if (user_id != null) __obj.updateDynamic("user_id")(user_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageContextGlobalSystem]
   }

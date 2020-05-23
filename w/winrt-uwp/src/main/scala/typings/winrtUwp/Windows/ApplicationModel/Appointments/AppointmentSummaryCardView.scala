@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object AppointmentSummaryCardView extends js.Object {
   /** The appointment summary card is displayed by the system. */
   @js.native
   sealed trait system extends AppointmentSummaryCardView
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AppointmentSummaryCardView with Double] = js.native
-  /* 1 */ @js.native
-  object app extends TopLevel[app with Double]
-  
-  /* 0 */ @js.native
-  object system extends TopLevel[system with Double]
   
 }
 

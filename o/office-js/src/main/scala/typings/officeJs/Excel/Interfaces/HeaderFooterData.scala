@@ -8,48 +8,48 @@ import scala.scalajs.js.annotation._
 trait HeaderFooterData extends js.Object {
   /**
     *
-    * Gets or sets the center footer of the worksheet.
-    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+    * The center footer of the worksheet.
+    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
     * [Api set: ExcelApi 1.9]
     */
   var centerFooter: js.UndefOr[String] = js.undefined
   /**
     *
-    * Gets or sets the center header of the worksheet.
-    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+    * The center header of the worksheet.
+    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
     * [Api set: ExcelApi 1.9]
     */
   var centerHeader: js.UndefOr[String] = js.undefined
   /**
     *
-    * Gets or sets the left footer of the worksheet.
-    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+    * The left footer of the worksheet.
+    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
     * [Api set: ExcelApi 1.9]
     */
   var leftFooter: js.UndefOr[String] = js.undefined
   /**
     *
-    * Gets or sets the left header of the worksheet.
-    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+    * The left header of the worksheet.
+    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
     * [Api set: ExcelApi 1.9]
     */
   var leftHeader: js.UndefOr[String] = js.undefined
   /**
     *
-    * Gets or sets the right footer of the worksheet.
-    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+    * The right footer of the worksheet.
+    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
     * [Api set: ExcelApi 1.9]
     */
   var rightFooter: js.UndefOr[String] = js.undefined
   /**
     *
-    * Gets or sets the right header of the worksheet.
-    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+    * The right header of the worksheet.
+    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
     * [Api set: ExcelApi 1.9]
     */

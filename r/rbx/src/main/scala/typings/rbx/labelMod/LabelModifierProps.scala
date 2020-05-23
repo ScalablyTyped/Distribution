@@ -16,7 +16,7 @@ object LabelModifierProps {
   @scala.inline
   def apply(disabled: js.UndefOr[Boolean] = js.undefined, size: small | medium | large = null): LabelModifierProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelModifierProps]
   }

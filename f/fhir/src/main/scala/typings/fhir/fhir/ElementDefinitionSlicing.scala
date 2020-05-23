@@ -65,7 +65,7 @@ object ElementDefinitionSlicing {
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(ordered)) __obj.updateDynamic("ordered")(ordered.asInstanceOf[js.Any])
+    if (!js.isUndefined(ordered)) __obj.updateDynamic("ordered")(ordered.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementDefinitionSlicing]
   }
 }

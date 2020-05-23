@@ -1,7 +1,7 @@
 package typings.ionicCore
 
 import typings.ionicCore.actionSheetInterfaceMod.ActionSheetButton
-import typings.ionicCore.componentsMod._Global_.HTMLIonActionSheetElement
+import typings.ionicCore.componentsMod.global.HTMLIonActionSheetElement
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.overlaysInterfaceMod.OverlayInterface
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface

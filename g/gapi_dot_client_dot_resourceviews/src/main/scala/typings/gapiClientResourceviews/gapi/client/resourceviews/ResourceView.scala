@@ -45,7 +45,7 @@ object ResourceView {
     network: String = null,
     resources: js.Array[String] = null,
     selfLink: String = null,
-    size: Int | Double = null
+    size: js.UndefOr[Double] = js.undefined
   ): ResourceView = {
     val __obj = js.Dynamic.literal()
     if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
@@ -59,7 +59,7 @@ object ResourceView {
     if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
     if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceView]
   }
 }

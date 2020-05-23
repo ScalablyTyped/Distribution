@@ -2,7 +2,7 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
-import typings.mongodb.AnonType
+import typings.mongodb.anon.Type
 import typings.mongodb.mongodbBooleans.`true`
 import typings.mongodb.mongodbNumbers.`-1`
 import typings.mongodb.mongodbNumbers.`1`
@@ -23,7 +23,7 @@ trait UpdateQuery[TSchema] extends js.Object {
   ] = js.undefined
   /** https://docs.mongodb.com/manual/reference/operator/update-field/ */
   @JSName("$currentDate")
-  var $currentDate: js.UndefOr[OnlyFieldsOfType[TSchema, Date, `true` | AnonType]] = js.undefined
+  var $currentDate: js.UndefOr[OnlyFieldsOfType[TSchema, Date, `true` | Type]] = js.undefined
   @JSName("$inc")
   var $inc: js.UndefOr[OnlyFieldsOfType[TSchema, js.UndefOr[scala.Double], js.UndefOr[scala.Double]]] = js.undefined
   @JSName("$max")
@@ -55,7 +55,7 @@ object UpdateQuery {
   def apply[TSchema](
     $addToSet: SetFields[TSchema] = null,
     $bit: StringDictionary[typings.mongodb.mongodbStrings.UpdateQuery with TopLevel[js.Any]] = null,
-    $currentDate: OnlyFieldsOfType[TSchema, Date, `true` | AnonType] = null,
+    $currentDate: OnlyFieldsOfType[TSchema, Date, `true` | Type] = null,
     $inc: OnlyFieldsOfType[TSchema, js.UndefOr[scala.Double], js.UndefOr[scala.Double]] = null,
     $max: MatchKeysAndValues[TSchema] = null,
     $min: MatchKeysAndValues[TSchema] = null,

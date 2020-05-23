@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Core
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,32 +42,6 @@ object MediaStreamSourceErrorStatus extends js.Object {
   /** The application does not support the media storage format or media encoding format. */
   @js.native
   sealed trait unsupportedMediaFormat extends MediaStreamSourceErrorStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MediaStreamSourceErrorStatus with Double] = js.native
-  /* 4 */ @js.native
-  object connectionToServerLost extends TopLevel[connectionToServerLost with Double]
-  
-  /* 6 */ @js.native
-  object decodeError extends TopLevel[decodeError with Double]
-  
-  /* 3 */ @js.native
-  object failedToConnectToServer extends TopLevel[failedToConnectToServer with Double]
-  
-  /* 2 */ @js.native
-  object failedToOpenFile extends TopLevel[failedToOpenFile with Double]
-  
-  /* 0 */ @js.native
-  object other extends TopLevel[other with Double]
-  
-  /* 1 */ @js.native
-  object outOfMemory extends TopLevel[outOfMemory with Double]
-  
-  /* 5 */ @js.native
-  object unspecifiedNetworkError extends TopLevel[unspecifiedNetworkError with Double]
-  
-  /* 7 */ @js.native
-  object unsupportedMediaFormat extends TopLevel[unsupportedMediaFormat with Double]
   
 }
 

@@ -1,7 +1,7 @@
 package typings.karmaViewport.viewportMod
 
-import typings.karmaViewport.ReadonlyViewportConfigura
-import typings.karmaViewport.adapterMod._Global_.Window
+import typings.karmaViewport.adapterMod.global.Window
+import typings.karmaViewport.anon.ReadonlyViewportConfigura
 import typings.std.HTMLIFrameElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -15,14 +15,14 @@ object BounceOptions {
   @scala.inline
   def apply(
     resolution: Double,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     easing: /* t */ Double => Double = null,
-    start: Int | Double = null
+    start: js.UndefOr[Double] = js.undefined
   ): BounceOptions = {
     val __obj = js.Dynamic.literal(resolution = resolution.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(js.Any.fromFunction1(easing))
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BounceOptions]
   }
 }

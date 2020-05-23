@@ -11,9 +11,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.SlideRange")
 @js.native
-class SlideRange protected () extends js.Object {
+trait SlideRange extends js.Object {
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   val Background: ShapeRange = js.native
   var BackgroundStyle: MsoBackgroundStyleIndex = js.native

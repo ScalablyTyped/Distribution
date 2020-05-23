@@ -4,51 +4,35 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.EasingFunction")
-@js.native
-class EasingFunction () extends IEasingFunction {
-  var _easingMode: js.Any = js.native
-  /**
-    * Given an input gradient between 0 and 1, this returns the corrseponding value
-    * of the easing function.
-    * The link below provides some of the most common examples of easing functions.
-    * @see https://easings.net/
-    * @param gradient Defines the value between 0 and 1 we want the easing value for
-    * @returns the corresponding value on the curve defined by the easing function
-    */
-  /* CompleteClass */
-  override def ease(gradient: Double): Double = js.native
+trait EasingFunction extends IEasingFunction {
+  var _easingMode: js.Any
   /**
     * @hidden
     */
-  def easeInCore(gradient: Double): Double = js.native
+  def easeInCore(gradient: Double): Double
   /**
     * Gets the current easing mode.
     * @returns the easing mode
     */
-  def getEasingMode(): Double = js.native
+  def getEasingMode(): Double
   /**
     * Sets the easing mode of the current function.
     * @param easingMode Defines the willing mode (EASINGMODE_EASEIN, EASINGMODE_EASEOUT or EASINGMODE_EASEINOUT)
     */
-  def setEasingMode(easingMode: Double): Unit = js.native
+  def setEasingMode(easingMode: Double): Unit
 }
 
-/* static members */
-@JSGlobal("BABYLON.EasingFunction")
-@js.native
-object EasingFunction extends js.Object {
-  /**
-    * Interpolation follows the mathematical formula associated with the easing function.
-    */
-  val EASINGMODE_EASEIN: Double = js.native
-  /**
-    * Interpolation uses EaseIn for the first half of the animation and EaseOut for the second half.
-    */
-  val EASINGMODE_EASEINOUT: Double = js.native
-  /**
-    * Interpolation follows 100% interpolation minus the output of the formula associated with the easing function.
-    */
-  val EASINGMODE_EASEOUT: Double = js.native
+object EasingFunction {
+  @scala.inline
+  def apply(
+    _easingMode: js.Any,
+    ease: Double => Double,
+    easeInCore: Double => Double,
+    getEasingMode: () => Double,
+    setEasingMode: Double => Unit
+  ): EasingFunction = {
+    val __obj = js.Dynamic.literal(_easingMode = _easingMode.asInstanceOf[js.Any], ease = js.Any.fromFunction1(ease), easeInCore = js.Any.fromFunction1(easeInCore), getEasingMode = js.Any.fromFunction0(getEasingMode), setEasingMode = js.Any.fromFunction1(setEasingMode))
+    __obj.asInstanceOf[EasingFunction]
+  }
 }
 

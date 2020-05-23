@@ -72,7 +72,7 @@ trait FeatureFilterProperties extends js.Object {
 object FeatureFilterProperties {
   @scala.inline
   def apply(
-    distance: Int | Double = null,
+    distance: js.UndefOr[Double] = js.undefined,
     geometry: GeometryProperties = null,
     objectIds: js.Array[Double] = null,
     spatialRelationship: String = null,
@@ -81,7 +81,7 @@ object FeatureFilterProperties {
     where: String = null
   ): FeatureFilterProperties = {
     val __obj = js.Dynamic.literal()
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
     if (geometry != null) __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
     if (objectIds != null) __obj.updateDynamic("objectIds")(objectIds.asInstanceOf[js.Any])
     if (spatialRelationship != null) __obj.updateDynamic("spatialRelationship")(spatialRelationship.asInstanceOf[js.Any])

@@ -6,28 +6,28 @@ import scala.scalajs.js.annotation._
 
 trait EditRowEndedEventUIParam extends js.Object {
   /**
-  	 * Gets the old value for the column with the specified key.
-  	 */
+    * Gets the old value for the column with the specified key.
+    */
   var oldValues: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Gets a reference to GridUpdating.
-  	 */
+    * Gets a reference to GridUpdating.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Check if the edit mode is for adding a new row.
-  	 */
+    * Check if the edit mode is for adding a new row.
+    */
   var rowAdding: js.UndefOr[Boolean] = js.undefined
   /**
-  	 * Gets the row's PK value.
-  	 */
+    * Gets the row's PK value.
+    */
   var rowID: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Check if any of the values is changed which will cause update in the data source.
-  	 */
+    * Check if any of the values is changed which will cause update in the data source.
+    */
   var update: js.UndefOr[Boolean] = js.undefined
   /**
-  	 * Gets the new value for the column with the specified key.
-  	 */
+    * Gets the new value for the column with the specified key.
+    */
   var values: js.UndefOr[js.Any] = js.undefined
 }
 
@@ -44,9 +44,9 @@ object EditRowEndedEventUIParam {
     val __obj = js.Dynamic.literal()
     if (oldValues != null) __obj.updateDynamic("oldValues")(oldValues.asInstanceOf[js.Any])
     if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowAdding)) __obj.updateDynamic("rowAdding")(rowAdding.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowAdding)) __obj.updateDynamic("rowAdding")(rowAdding.get.asInstanceOf[js.Any])
     if (rowID != null) __obj.updateDynamic("rowID")(rowID.asInstanceOf[js.Any])
-    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
+    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update.get.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditRowEndedEventUIParam]
   }

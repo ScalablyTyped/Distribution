@@ -17,20 +17,20 @@ trait RTCDataChannelInit extends js.Object {
 object RTCDataChannelInit {
   @scala.inline
   def apply(
-    id: Int | Double = null,
-    maxPacketLifeTime: Int | Double = null,
-    maxRetransmits: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
+    maxPacketLifeTime: js.UndefOr[Double] = js.undefined,
+    maxRetransmits: js.UndefOr[Double] = js.undefined,
     negotiated: js.UndefOr[scala.Boolean] = js.undefined,
     ordered: js.UndefOr[scala.Boolean] = js.undefined,
     priority: RTCPriorityType = null,
     protocol: java.lang.String = null
   ): RTCDataChannelInit = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (maxPacketLifeTime != null) __obj.updateDynamic("maxPacketLifeTime")(maxPacketLifeTime.asInstanceOf[js.Any])
-    if (maxRetransmits != null) __obj.updateDynamic("maxRetransmits")(maxRetransmits.asInstanceOf[js.Any])
-    if (!js.isUndefined(negotiated)) __obj.updateDynamic("negotiated")(negotiated.asInstanceOf[js.Any])
-    if (!js.isUndefined(ordered)) __obj.updateDynamic("ordered")(ordered.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPacketLifeTime)) __obj.updateDynamic("maxPacketLifeTime")(maxPacketLifeTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetransmits)) __obj.updateDynamic("maxRetransmits")(maxRetransmits.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(negotiated)) __obj.updateDynamic("negotiated")(negotiated.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ordered)) __obj.updateDynamic("ordered")(ordered.get.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCDataChannelInit]

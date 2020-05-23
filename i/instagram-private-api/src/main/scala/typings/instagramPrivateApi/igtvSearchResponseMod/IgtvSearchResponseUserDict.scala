@@ -50,13 +50,13 @@ object IgtvSearchResponseUserDict {
     total_igtv_videos: Double,
     username: String,
     external_lynx_url: String = null,
-    geo_media_count: Int | Double = null,
+    geo_media_count: js.UndefOr[Double] = js.undefined,
     has_biography_translation: js.UndefOr[Boolean] = js.undefined
   ): IgtvSearchResponseUserDict = {
     val __obj = js.Dynamic.literal(biography = biography.asInstanceOf[js.Any], biography_with_entities = biography_with_entities.asInstanceOf[js.Any], external_url = external_url.asInstanceOf[js.Any], follower_count = follower_count.asInstanceOf[js.Any], following_count = following_count.asInstanceOf[js.Any], following_tag_count = following_tag_count.asInstanceOf[js.Any], friendship_status = friendship_status.asInstanceOf[js.Any], full_name = full_name.asInstanceOf[js.Any], has_anonymous_profile_picture = has_anonymous_profile_picture.asInstanceOf[js.Any], has_igtv_series = has_igtv_series.asInstanceOf[js.Any], is_private = is_private.asInstanceOf[js.Any], is_verified = is_verified.asInstanceOf[js.Any], media_count = media_count.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], profile_pic_id = profile_pic_id.asInstanceOf[js.Any], profile_pic_url = profile_pic_url.asInstanceOf[js.Any], total_igtv_videos = total_igtv_videos.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     if (external_lynx_url != null) __obj.updateDynamic("external_lynx_url")(external_lynx_url.asInstanceOf[js.Any])
-    if (geo_media_count != null) __obj.updateDynamic("geo_media_count")(geo_media_count.asInstanceOf[js.Any])
-    if (!js.isUndefined(has_biography_translation)) __obj.updateDynamic("has_biography_translation")(has_biography_translation.asInstanceOf[js.Any])
+    if (!js.isUndefined(geo_media_count)) __obj.updateDynamic("geo_media_count")(geo_media_count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(has_biography_translation)) __obj.updateDynamic("has_biography_translation")(has_biography_translation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgtvSearchResponseUserDict]
   }
 }

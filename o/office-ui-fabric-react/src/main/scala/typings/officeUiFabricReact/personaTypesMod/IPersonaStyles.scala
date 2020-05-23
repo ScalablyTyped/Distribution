@@ -18,22 +18,22 @@ trait IPersonaStyles extends js.Object {
 object IPersonaStyles {
   @scala.inline
   def apply(
-    details: IStyle = null,
-    optionalText: IStyle = null,
-    primaryText: IStyle = null,
-    root: IStyle = null,
-    secondaryText: IStyle = null,
-    tertiaryText: IStyle = null,
-    textContent: IStyle = null
+    details: js.UndefOr[Null | IStyle] = js.undefined,
+    optionalText: js.UndefOr[Null | IStyle] = js.undefined,
+    primaryText: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined,
+    secondaryText: js.UndefOr[Null | IStyle] = js.undefined,
+    tertiaryText: js.UndefOr[Null | IStyle] = js.undefined,
+    textContent: js.UndefOr[Null | IStyle] = js.undefined
   ): IPersonaStyles = {
     val __obj = js.Dynamic.literal()
-    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
-    if (optionalText != null) __obj.updateDynamic("optionalText")(optionalText.asInstanceOf[js.Any])
-    if (primaryText != null) __obj.updateDynamic("primaryText")(primaryText.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (secondaryText != null) __obj.updateDynamic("secondaryText")(secondaryText.asInstanceOf[js.Any])
-    if (tertiaryText != null) __obj.updateDynamic("tertiaryText")(tertiaryText.asInstanceOf[js.Any])
-    if (textContent != null) __obj.updateDynamic("textContent")(textContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(details)) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
+    if (!js.isUndefined(optionalText)) __obj.updateDynamic("optionalText")(optionalText.asInstanceOf[js.Any])
+    if (!js.isUndefined(primaryText)) __obj.updateDynamic("primaryText")(primaryText.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(secondaryText)) __obj.updateDynamic("secondaryText")(secondaryText.asInstanceOf[js.Any])
+    if (!js.isUndefined(tertiaryText)) __obj.updateDynamic("tertiaryText")(tertiaryText.asInstanceOf[js.Any])
+    if (!js.isUndefined(textContent)) __obj.updateDynamic("textContent")(textContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPersonaStyles]
   }
 }

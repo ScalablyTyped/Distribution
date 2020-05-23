@@ -4,10 +4,10 @@ import typings.codemirror.mod.Position
 import typings.jupyterlabApputils.mainareawidgetMod.MainAreaWidget.IOptions
 import typings.jupyterlabApputils.toolbarMod.Toolbar
 import typings.jupyterlabCodemirror.mod.CodeMirrorEditor
+import typings.jupyterlabDocumentsearch.anon.Editor
 import typings.jupyterlabDocumentsearch.interfacesMod.IFiltersType
 import typings.jupyterlabDocumentsearch.interfacesMod.ISearchMatch
 import typings.jupyterlabDocumentsearch.interfacesMod.ISearchProvider
-import typings.jupyterlabDocumentsearch.jupyterlabDocumentsearchBooleans.`false`
 import typings.jupyterlabFileeditor.mod.FileEditor
 import typings.luminoAlgorithm.iterMod.IIterator
 import typings.luminoMessaging.mod.Message
@@ -59,7 +59,7 @@ object codemirrorsearchproviderMod extends js.Object {
       */
     var _updateTitle: js.Any = js.native
     @JSName("content")
-    var content_FCMMainAreaWidget: AnonEditor = js.native
+    var content_FCMMainAreaWidget: Editor = js.native
     /**
       * The dataset for the widget's DOM node.
       */
@@ -470,13 +470,6 @@ object codemirrorsearchproviderMod extends js.Object {
       */
     /* CompleteClass */
     override val isReadOnly: Boolean = js.native
-    /**
-      * Set to true if the widget under search is read-only, false
-      * if it is editable.  Will be used to determine whether to show
-      * the replace option.
-      */
-    @JSName("isReadOnly")
-    val isReadOnly_CodeMirrorSearchProvider: `false` = js.native
     /**
       * Set whether or not the CodemirrorSearchProvider will wrap to the beginning
       * or end of the document on invocations of highlightNext or highlightPrevious, respectively

@@ -16,11 +16,15 @@ trait MetricTokenAggregationResult extends js.Object {
 
 object MetricTokenAggregationResult {
   @scala.inline
-  def apply(event_rate: Int | Double = null, key: String = null, matching_results: Int | Double = null): MetricTokenAggregationResult = {
+  def apply(
+    event_rate: js.UndefOr[Double] = js.undefined,
+    key: String = null,
+    matching_results: js.UndefOr[Double] = js.undefined
+  ): MetricTokenAggregationResult = {
     val __obj = js.Dynamic.literal()
-    if (event_rate != null) __obj.updateDynamic("event_rate")(event_rate.asInstanceOf[js.Any])
+    if (!js.isUndefined(event_rate)) __obj.updateDynamic("event_rate")(event_rate.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (matching_results != null) __obj.updateDynamic("matching_results")(matching_results.asInstanceOf[js.Any])
+    if (!js.isUndefined(matching_results)) __obj.updateDynamic("matching_results")(matching_results.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricTokenAggregationResult]
   }
 }

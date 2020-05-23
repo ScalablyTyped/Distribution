@@ -18,9 +18,9 @@ trait DeleteBillingGroupRequest extends js.Object {
 
 object DeleteBillingGroupRequest {
   @scala.inline
-  def apply(billingGroupName: BillingGroupName, expectedVersion: Int | Double = null): DeleteBillingGroupRequest = {
+  def apply(billingGroupName: BillingGroupName, expectedVersion: js.UndefOr[OptionalVersion] = js.undefined): DeleteBillingGroupRequest = {
     val __obj = js.Dynamic.literal(billingGroupName = billingGroupName.asInstanceOf[js.Any])
-    if (expectedVersion != null) __obj.updateDynamic("expectedVersion")(expectedVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(expectedVersion)) __obj.updateDynamic("expectedVersion")(expectedVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBillingGroupRequest]
   }
 }

@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.typescript.mod.TextRange because Already inherited
 - typings.typescript.mod.Node because Already inherited
 - typings.typescript.mod.LiteralLikeNode because var conflicts: decorators, end, flags, kind, modifiers, parent, pos. Inlined text, isUnterminated, hasExtendedUnicodeEscape */ @js.native

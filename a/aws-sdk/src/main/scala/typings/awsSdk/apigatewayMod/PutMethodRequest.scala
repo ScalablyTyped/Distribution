@@ -59,7 +59,7 @@ object PutMethodRequest {
     httpMethod: String,
     resourceId: String,
     restApiId: String,
-    apiKeyRequired: js.UndefOr[scala.Boolean] = js.undefined,
+    apiKeyRequired: js.UndefOr[Boolean] = js.undefined,
     authorizationScopes: ListOfString = null,
     authorizerId: String = null,
     operationName: String = null,
@@ -68,7 +68,7 @@ object PutMethodRequest {
     requestValidatorId: String = null
   ): PutMethodRequest = {
     val __obj = js.Dynamic.literal(authorizationType = authorizationType.asInstanceOf[js.Any], httpMethod = httpMethod.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
-    if (!js.isUndefined(apiKeyRequired)) __obj.updateDynamic("apiKeyRequired")(apiKeyRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(apiKeyRequired)) __obj.updateDynamic("apiKeyRequired")(apiKeyRequired.get.asInstanceOf[js.Any])
     if (authorizationScopes != null) __obj.updateDynamic("authorizationScopes")(authorizationScopes.asInstanceOf[js.Any])
     if (authorizerId != null) __obj.updateDynamic("authorizerId")(authorizerId.asInstanceOf[js.Any])
     if (operationName != null) __obj.updateDynamic("operationName")(operationName.asInstanceOf[js.Any])

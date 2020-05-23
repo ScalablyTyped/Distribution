@@ -11,10 +11,10 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(batchSize: Int | Double = null, highWaterMark: Int | Double = null): Options = {
+  def apply(batchSize: js.UndefOr[Double] = js.undefined, highWaterMark: js.UndefOr[Double] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
-    if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(highWaterMark)) __obj.updateDynamic("highWaterMark")(highWaterMark.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

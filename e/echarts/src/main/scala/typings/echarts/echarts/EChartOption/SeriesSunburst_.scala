@@ -1,9 +1,9 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.AnonBorderType
-import typings.echarts.AnonDownplay
-import typings.echarts.AnonLabelAnonMinAngle
-import typings.echarts.AnonMinAngle
+import typings.echarts.anon.BorderType
+import typings.echarts.anon.Downplay
+import typings.echarts.anon.LabelMinAngle
+import typings.echarts.anon.MinAngle
 import typings.echarts.echarts.EChartOption.SeriesSunburst.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -172,7 +172,7 @@ trait SeriesSunburst_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.downplay
     */
-  var downplay: js.UndefOr[AnonLabelAnonMinAngle] = js.undefined
+  var downplay: js.UndefOr[LabelMinAngle] = js.undefined
   /**
     * Item style when mouse is hovering. See
     * [highlightPolicy](https://echarts.apache.org/en/option.html#series-sunburst.highlightPolicy)
@@ -181,7 +181,7 @@ trait SeriesSunburst_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.emphasis
     */
-  var emphasis: js.UndefOr[AnonLabelAnonMinAngle] = js.undefined
+  var emphasis: js.UndefOr[LabelMinAngle] = js.undefined
   /**
     * Item style when mouse is hovering related items. See
     * [highlightPolicy](https://echarts.apache.org/en/option.html#series-sunburst.highlightPolicy)
@@ -190,7 +190,7 @@ trait SeriesSunburst_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.highlight
     */
-  var highlight: js.UndefOr[AnonLabelAnonMinAngle] = js.undefined
+  var highlight: js.UndefOr[LabelMinAngle] = js.undefined
   /**
     * When mouse hovers a sector, the sector is emphasized.
     * **If `highlightPolicy` is set to be `'descendant'`, then the
@@ -267,7 +267,7 @@ trait SeriesSunburst_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderType] = js.undefined
+  var itemStyle: js.UndefOr[BorderType] = js.undefined
   /**
     * `label` sets the text style for every sectors.
     *
@@ -289,7 +289,7 @@ trait SeriesSunburst_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.label
     */
-  var label: js.UndefOr[AnonMinAngle] = js.undefined
+  var label: js.UndefOr[MinAngle] = js.undefined
   /**
     * **Multiple levels**
     *
@@ -311,7 +311,7 @@ trait SeriesSunburst_ extends js.Object {
     * []
     * @see https://echarts.apache.org/en/option.html#series-sunburst.levels
     */
-  var levels: js.UndefOr[AnonDownplay] = js.undefined
+  var levels: js.UndefOr[Downplay] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -430,35 +430,35 @@ object SeriesSunburst_ {
     animationDurationUpdate: js.Function | Double = null,
     animationEasing: String = null,
     animationEasingUpdate: String = null,
-    animationThreshold: Int | Double = null,
+    animationThreshold: js.UndefOr[Double] = js.undefined,
     center: js.Array[_] = null,
     data: js.Array[DataObject] = null,
-    downplay: AnonLabelAnonMinAngle = null,
-    emphasis: AnonLabelAnonMinAngle = null,
-    highlight: AnonLabelAnonMinAngle = null,
+    downplay: LabelMinAngle = null,
+    emphasis: LabelMinAngle = null,
+    highlight: LabelMinAngle = null,
     highlightPolicy: String = null,
     id: String = null,
-    itemStyle: AnonBorderType = null,
-    label: AnonMinAngle = null,
-    levels: AnonDownplay = null,
+    itemStyle: BorderType = null,
+    label: MinAngle = null,
+    levels: Downplay = null,
     name: String = null,
     nodeClick: Boolean | String = null,
     radius: js.Array[_] | Double | String = null,
     renderLabelForZeroData: js.UndefOr[Boolean] = js.undefined,
     sort: js.Function | String = null,
     `type`: String = null,
-    z: Int | Double = null,
-    zlevel: Int | Double = null
+    z: js.UndefOr[Double] = js.undefined,
+    zlevel: js.UndefOr[Double] = js.undefined
   ): SeriesSunburst_ = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
     if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
     if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
     if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
     if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate.asInstanceOf[js.Any])
-    if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationThreshold)) __obj.updateDynamic("animationThreshold")(animationThreshold.get.asInstanceOf[js.Any])
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (downplay != null) __obj.updateDynamic("downplay")(downplay.asInstanceOf[js.Any])
@@ -472,11 +472,11 @@ object SeriesSunburst_ {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (nodeClick != null) __obj.updateDynamic("nodeClick")(nodeClick.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderLabelForZeroData)) __obj.updateDynamic("renderLabelForZeroData")(renderLabelForZeroData.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderLabelForZeroData)) __obj.updateDynamic("renderLabelForZeroData")(renderLabelForZeroData.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
-    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zlevel)) __obj.updateDynamic("zlevel")(zlevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesSunburst_]
   }
 }

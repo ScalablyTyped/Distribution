@@ -1,6 +1,6 @@
 package typings.powerAssert.mod
 
-import typings.powerAssert.TypeofpowerAssert
+import typings.powerAssert.anon.TypeofpowerAssert
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

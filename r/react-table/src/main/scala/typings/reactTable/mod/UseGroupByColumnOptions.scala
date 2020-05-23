@@ -15,7 +15,7 @@ trait UseGroupByColumnOptions[D /* <: js.Object */] extends js.Object {
 
 object UseGroupByColumnOptions {
   @scala.inline
-  def apply[D /* <: js.Object */](
+  def apply[D](
     Aggregated: Renderer[CellProps[D, _]] = null,
     aggregate: Aggregator[D] = null,
     defaultCanGroupBy: js.UndefOr[Boolean] = js.undefined,
@@ -25,9 +25,9 @@ object UseGroupByColumnOptions {
     val __obj = js.Dynamic.literal()
     if (Aggregated != null) __obj.updateDynamic("Aggregated")(Aggregated.asInstanceOf[js.Any])
     if (aggregate != null) __obj.updateDynamic("aggregate")(aggregate.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultCanGroupBy)) __obj.updateDynamic("defaultCanGroupBy")(defaultCanGroupBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableGroupBy)) __obj.updateDynamic("disableGroupBy")(disableGroupBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupByBoundary)) __obj.updateDynamic("groupByBoundary")(groupByBoundary.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultCanGroupBy)) __obj.updateDynamic("defaultCanGroupBy")(defaultCanGroupBy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableGroupBy)) __obj.updateDynamic("disableGroupBy")(disableGroupBy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupByBoundary)) __obj.updateDynamic("groupByBoundary")(groupByBoundary.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseGroupByColumnOptions[D]]
   }
 }

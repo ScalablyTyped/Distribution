@@ -18,7 +18,7 @@ object GenericClientOptions {
   @scala.inline
   def apply(deprecatedArgumentOrder: js.UndefOr[Boolean] = js.undefined): GenericClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deprecatedArgumentOrder)) __obj.updateDynamic("deprecatedArgumentOrder")(deprecatedArgumentOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(deprecatedArgumentOrder)) __obj.updateDynamic("deprecatedArgumentOrder")(deprecatedArgumentOrder.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenericClientOptions]
   }
 }

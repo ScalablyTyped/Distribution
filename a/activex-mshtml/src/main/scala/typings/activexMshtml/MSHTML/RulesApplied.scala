@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.RulesApplied")
 @js.native
-class RulesApplied protected () extends js.Object {
+trait RulesApplied extends js.Object {
   @JSName("MSHTML.RulesApplied_typekey")
   var MSHTMLDotRulesApplied_typekey: RulesApplied = js.native
   @JSName("appliedRules")

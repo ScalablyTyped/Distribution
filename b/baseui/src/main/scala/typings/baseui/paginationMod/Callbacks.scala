@@ -1,23 +1,23 @@
 package typings.baseui.paginationMod
 
-import typings.baseui.AnonEventAny
-import typings.baseui.AnonNextPage
+import typings.baseui.anon.EventAny
+import typings.baseui.anon.NextPage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Callbacks extends js.Object {
-  var onNextClick: js.UndefOr[js.Function1[/* args */ AnonEventAny, _]] = js.undefined
-  var onPageChange: js.UndefOr[js.Function1[/* args */ AnonNextPage, _]] = js.undefined
-  var onPrevClick: js.UndefOr[js.Function1[/* args */ AnonEventAny, _]] = js.undefined
+  var onNextClick: js.UndefOr[js.Function1[/* args */ EventAny, _]] = js.undefined
+  var onPageChange: js.UndefOr[js.Function1[/* args */ NextPage, _]] = js.undefined
+  var onPrevClick: js.UndefOr[js.Function1[/* args */ EventAny, _]] = js.undefined
 }
 
 object Callbacks {
   @scala.inline
   def apply(
-    onNextClick: /* args */ AnonEventAny => _ = null,
-    onPageChange: /* args */ AnonNextPage => _ = null,
-    onPrevClick: /* args */ AnonEventAny => _ = null
+    onNextClick: /* args */ EventAny => _ = null,
+    onPageChange: /* args */ NextPage => _ = null,
+    onPrevClick: /* args */ EventAny => _ = null
   ): Callbacks = {
     val __obj = js.Dynamic.literal()
     if (onNextClick != null) __obj.updateDynamic("onNextClick")(js.Any.fromFunction1(onNextClick))

@@ -1,8 +1,8 @@
 package typings.echarts.echarts.EChartOption.SeriesLines
 
-import typings.echarts.AnonFontStyle
-import typings.echarts.AnonLineStyleAnonShadowColor
-import typings.echarts.AnonShadowColor
+import typings.echarts.anon.FontStyle
+import typings.echarts.anon.LineStyleShadowColor
+import typings.echarts.anon.ShadowColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,18 +23,18 @@ trait DataObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis
     */
-  var emphasis: js.UndefOr[AnonLineStyleAnonShadowColor] = js.undefined
+  var emphasis: js.UndefOr[LineStyleShadowColor] = js.undefined
   /**
     * @see https://echarts.apache.org/en/option.html#series-lines.data.label
     */
-  var label: js.UndefOr[AnonFontStyle] = js.undefined
+  var label: js.UndefOr[FontStyle] = js.undefined
   /**
     * The line style of this data item.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.data.lineStyle
     */
-  var lineStyle: js.UndefOr[AnonShadowColor] = js.undefined
+  var lineStyle: js.UndefOr[ShadowColor] = js.undefined
   /**
     * the name of data.
     *
@@ -48,9 +48,9 @@ object DataObject {
   @scala.inline
   def apply(
     coords: js.Array[_] = null,
-    emphasis: AnonLineStyleAnonShadowColor = null,
-    label: AnonFontStyle = null,
-    lineStyle: AnonShadowColor = null,
+    emphasis: LineStyleShadowColor = null,
+    label: FontStyle = null,
+    lineStyle: ShadowColor = null,
     name: String = null
   ): DataObject = {
     val __obj = js.Dynamic.literal()

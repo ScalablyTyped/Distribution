@@ -1,6 +1,6 @@
 package typings.cathoQuantum.tooltipMod
 
-import typings.cathoQuantum.AnonBaseFontSizeColors
+import typings.cathoQuantum.anon.BaseFontSizeColors
 import typings.cathoQuantum.cathoQuantumStrings.bottom
 import typings.cathoQuantum.cathoQuantumStrings.left
 import typings.cathoQuantum.cathoQuantumStrings.right
@@ -14,7 +14,7 @@ trait TooltipProps extends js.Object {
   var children: js.Array[ReactNode] | ReactNode
   var placement: js.UndefOr[top | right | bottom | left] = js.undefined
   var text: String
-  var theme: js.UndefOr[AnonBaseFontSizeColors] = js.undefined
+  var theme: js.UndefOr[BaseFontSizeColors] = js.undefined
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -24,14 +24,14 @@ object TooltipProps {
     text: String,
     children: js.Array[ReactNode] | ReactNode = null,
     placement: top | right | bottom | left = null,
-    theme: AnonBaseFontSizeColors = null,
+    theme: BaseFontSizeColors = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): TooltipProps = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipProps]
   }
 }

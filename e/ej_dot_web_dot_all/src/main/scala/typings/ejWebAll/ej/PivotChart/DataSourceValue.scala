@@ -43,7 +43,7 @@ object DataSourceValue {
     if (fieldCaption != null) __obj.updateDynamic("fieldCaption")(fieldCaption.asInstanceOf[js.Any])
     if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
     if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCalculatedField)) __obj.updateDynamic("isCalculatedField")(isCalculatedField.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCalculatedField)) __obj.updateDynamic("isCalculatedField")(isCalculatedField.get.asInstanceOf[js.Any])
     if (measures != null) __obj.updateDynamic("measures")(measures.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceValue]
   }

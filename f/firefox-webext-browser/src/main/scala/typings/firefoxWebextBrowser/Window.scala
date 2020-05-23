@@ -1,5 +1,6 @@
 package typings.firefoxWebextBrowser
 
+import typings.firefoxWebextBrowser.anon.Typeofbrowser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

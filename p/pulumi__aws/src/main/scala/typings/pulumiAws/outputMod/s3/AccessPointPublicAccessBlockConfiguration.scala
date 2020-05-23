@@ -39,10 +39,10 @@ object AccessPointPublicAccessBlockConfiguration {
     restrictPublicBuckets: js.UndefOr[Boolean] = js.undefined
   ): AccessPointPublicAccessBlockConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(blockPublicAcls)) __obj.updateDynamic("blockPublicAcls")(blockPublicAcls.asInstanceOf[js.Any])
-    if (!js.isUndefined(blockPublicPolicy)) __obj.updateDynamic("blockPublicPolicy")(blockPublicPolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignorePublicAcls)) __obj.updateDynamic("ignorePublicAcls")(ignorePublicAcls.asInstanceOf[js.Any])
-    if (!js.isUndefined(restrictPublicBuckets)) __obj.updateDynamic("restrictPublicBuckets")(restrictPublicBuckets.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockPublicAcls)) __obj.updateDynamic("blockPublicAcls")(blockPublicAcls.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockPublicPolicy)) __obj.updateDynamic("blockPublicPolicy")(blockPublicPolicy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignorePublicAcls)) __obj.updateDynamic("ignorePublicAcls")(ignorePublicAcls.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(restrictPublicBuckets)) __obj.updateDynamic("restrictPublicBuckets")(restrictPublicBuckets.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessPointPublicAccessBlockConfiguration]
   }
 }

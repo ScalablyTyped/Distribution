@@ -22,9 +22,9 @@ trait ListClusterJobsRequest extends js.Object {
 
 object ListClusterJobsRequest {
   @scala.inline
-  def apply(ClusterId: ClusterId, MaxResults: Int | Double = null, NextToken: String = null): ListClusterJobsRequest = {
+  def apply(ClusterId: ClusterId, MaxResults: js.UndefOr[ListLimit] = js.undefined, NextToken: String = null): ListClusterJobsRequest = {
     val __obj = js.Dynamic.literal(ClusterId = ClusterId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListClusterJobsRequest]
   }

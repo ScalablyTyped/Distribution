@@ -29,14 +29,14 @@ object Auth0Result {
   def apply(
     accessToken: String = null,
     appState: js.Any = null,
-    expiresIn: Int | Double = null,
+    expiresIn: js.UndefOr[Double] = js.undefined,
     idToken: String = null,
     refreshToken: String = null
   ): Auth0Result = {
     val __obj = js.Dynamic.literal()
     if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
     if (appState != null) __obj.updateDynamic("appState")(appState.asInstanceOf[js.Any])
-    if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn.asInstanceOf[js.Any])
+    if (!js.isUndefined(expiresIn)) __obj.updateDynamic("expiresIn")(expiresIn.get.asInstanceOf[js.Any])
     if (idToken != null) __obj.updateDynamic("idToken")(idToken.asInstanceOf[js.Any])
     if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[Auth0Result]

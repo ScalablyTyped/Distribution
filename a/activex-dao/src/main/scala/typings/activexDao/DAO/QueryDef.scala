@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DAO.QueryDef")
 @js.native
-class QueryDef protected () extends js.Object {
+trait QueryDef extends js.Object {
   var CacheSize: Double = js.native
   var Connect: String = js.native
   @JSName("DAO.QueryDef_typekey")

@@ -48,11 +48,11 @@ object MiddlewaresOptions {
     static: String = null
   ): MiddlewaresOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bodyParser)) __obj.updateDynamic("bodyParser")(bodyParser.asInstanceOf[js.Any])
-    if (!js.isUndefined(logger)) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
-    if (!js.isUndefined(noCors)) __obj.updateDynamic("noCors")(noCors.asInstanceOf[js.Any])
-    if (!js.isUndefined(noGzip)) __obj.updateDynamic("noGzip")(noGzip.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(bodyParser)) __obj.updateDynamic("bodyParser")(bodyParser.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(logger)) __obj.updateDynamic("logger")(logger.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noCors)) __obj.updateDynamic("noCors")(noCors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noGzip)) __obj.updateDynamic("noGzip")(noGzip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     if (static != null) __obj.updateDynamic("static")(static.asInstanceOf[js.Any])
     __obj.asInstanceOf[MiddlewaresOptions]
   }

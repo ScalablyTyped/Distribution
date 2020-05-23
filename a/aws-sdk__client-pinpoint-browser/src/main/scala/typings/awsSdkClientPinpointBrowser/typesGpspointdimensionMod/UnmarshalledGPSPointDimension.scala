@@ -15,10 +15,13 @@ trait UnmarshalledGPSPointDimension extends GPSPointDimension {
 
 object UnmarshalledGPSPointDimension {
   @scala.inline
-  def apply(Coordinates: UnmarshalledGPSCoordinates = null, RangeInKilometers: Int | Double = null): UnmarshalledGPSPointDimension = {
+  def apply(
+    Coordinates: UnmarshalledGPSCoordinates = null,
+    RangeInKilometers: js.UndefOr[Double] = js.undefined
+  ): UnmarshalledGPSPointDimension = {
     val __obj = js.Dynamic.literal()
     if (Coordinates != null) __obj.updateDynamic("Coordinates")(Coordinates.asInstanceOf[js.Any])
-    if (RangeInKilometers != null) __obj.updateDynamic("RangeInKilometers")(RangeInKilometers.asInstanceOf[js.Any])
+    if (!js.isUndefined(RangeInKilometers)) __obj.updateDynamic("RangeInKilometers")(RangeInKilometers.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledGPSPointDimension]
   }
 }

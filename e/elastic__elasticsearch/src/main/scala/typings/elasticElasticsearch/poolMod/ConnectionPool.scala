@@ -1,6 +1,6 @@
 package typings.elasticElasticsearch.poolMod
 
-import typings.elasticElasticsearch.AnonNone
+import typings.elasticElasticsearch.anon.None
 import typings.elasticElasticsearch.connectionMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,6 +34,6 @@ class ConnectionPool () extends BaseConnectionPool {
 @JSImport("@elastic/elasticsearch/lib/pool", "ConnectionPool")
 @js.native
 object ConnectionPool extends js.Object {
-  var resurrectStrategies: AnonNone = js.native
+  var resurrectStrategies: None = js.native
 }
 

@@ -4,15 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("USBAlternateInterface")
-@js.native
-class USBAlternateInterface protected () extends js.Object {
-  def this(deviceInterface: USBInterface, alternateSetting: Double) = this()
-  val alternateSetting: Double = js.native
-  val endpoints: js.Array[USBEndpoint] = js.native
-  val interfaceClass: Double = js.native
-  val interfaceName: js.UndefOr[String] = js.native
-  val interfaceProtocol: Double = js.native
-  val interfaceSubclass: Double = js.native
+trait USBAlternateInterface extends js.Object {
+  val alternateSetting: Double
+  val endpoints: js.Array[USBEndpoint]
+  val interfaceClass: Double
+  val interfaceName: js.UndefOr[String] = js.undefined
+  val interfaceProtocol: Double
+  val interfaceSubclass: Double
+}
+
+object USBAlternateInterface {
+  @scala.inline
+  def apply(
+    alternateSetting: Double,
+    endpoints: js.Array[USBEndpoint],
+    interfaceClass: Double,
+    interfaceProtocol: Double,
+    interfaceSubclass: Double,
+    interfaceName: String = null
+  ): USBAlternateInterface = {
+    val __obj = js.Dynamic.literal(alternateSetting = alternateSetting.asInstanceOf[js.Any], endpoints = endpoints.asInstanceOf[js.Any], interfaceClass = interfaceClass.asInstanceOf[js.Any], interfaceProtocol = interfaceProtocol.asInstanceOf[js.Any], interfaceSubclass = interfaceSubclass.asInstanceOf[js.Any])
+    if (interfaceName != null) __obj.updateDynamic("interfaceName")(interfaceName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[USBAlternateInterface]
+  }
 }
 

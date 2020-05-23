@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** The ImageProcess object manages the filter chain. An ImageProcess object can be created using "WIA.ImageProcess" in a call to CreateObject. */
-@JSGlobal("WIA.ImageProcess")
 @js.native
-class ImageProcess protected () extends js.Object {
+trait ImageProcess extends js.Object {
   /** A collection of all available filters */
   @JSName("FilterInfos")
   val FilterInfos_Original: FilterInfos = js.native

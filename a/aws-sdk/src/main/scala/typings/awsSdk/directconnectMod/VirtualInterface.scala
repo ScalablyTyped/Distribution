@@ -109,8 +109,8 @@ object VirtualInterface {
   def apply(
     addressFamily: AddressFamily = null,
     amazonAddress: AmazonAddress = null,
-    amazonSideAsn: Int | Double = null,
-    asn: Int | Double = null,
+    amazonSideAsn: js.UndefOr[LongAsn] = js.undefined,
+    asn: js.UndefOr[ASN] = js.undefined,
     authKey: BGPAuthKey = null,
     awsDeviceV2: AwsDeviceV2 = null,
     bgpPeers: BGPPeerList = null,
@@ -118,9 +118,9 @@ object VirtualInterface {
     customerAddress: CustomerAddress = null,
     customerRouterConfig: RouterConfig = null,
     directConnectGatewayId: DirectConnectGatewayId = null,
-    jumboFrameCapable: js.UndefOr[Boolean] = js.undefined,
+    jumboFrameCapable: js.UndefOr[JumboFrameCapable] = js.undefined,
     location: LocationCode = null,
-    mtu: Int | Double = null,
+    mtu: js.UndefOr[MTU] = js.undefined,
     ownerAccount: OwnerAccount = null,
     region: Region = null,
     routeFilterPrefixes: RouteFilterPrefixList = null,
@@ -130,13 +130,13 @@ object VirtualInterface {
     virtualInterfaceName: VirtualInterfaceName = null,
     virtualInterfaceState: VirtualInterfaceState = null,
     virtualInterfaceType: VirtualInterfaceType = null,
-    vlan: Int | Double = null
+    vlan: js.UndefOr[VLAN] = js.undefined
   ): VirtualInterface = {
     val __obj = js.Dynamic.literal()
     if (addressFamily != null) __obj.updateDynamic("addressFamily")(addressFamily.asInstanceOf[js.Any])
     if (amazonAddress != null) __obj.updateDynamic("amazonAddress")(amazonAddress.asInstanceOf[js.Any])
-    if (amazonSideAsn != null) __obj.updateDynamic("amazonSideAsn")(amazonSideAsn.asInstanceOf[js.Any])
-    if (asn != null) __obj.updateDynamic("asn")(asn.asInstanceOf[js.Any])
+    if (!js.isUndefined(amazonSideAsn)) __obj.updateDynamic("amazonSideAsn")(amazonSideAsn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(asn)) __obj.updateDynamic("asn")(asn.get.asInstanceOf[js.Any])
     if (authKey != null) __obj.updateDynamic("authKey")(authKey.asInstanceOf[js.Any])
     if (awsDeviceV2 != null) __obj.updateDynamic("awsDeviceV2")(awsDeviceV2.asInstanceOf[js.Any])
     if (bgpPeers != null) __obj.updateDynamic("bgpPeers")(bgpPeers.asInstanceOf[js.Any])
@@ -144,9 +144,9 @@ object VirtualInterface {
     if (customerAddress != null) __obj.updateDynamic("customerAddress")(customerAddress.asInstanceOf[js.Any])
     if (customerRouterConfig != null) __obj.updateDynamic("customerRouterConfig")(customerRouterConfig.asInstanceOf[js.Any])
     if (directConnectGatewayId != null) __obj.updateDynamic("directConnectGatewayId")(directConnectGatewayId.asInstanceOf[js.Any])
-    if (!js.isUndefined(jumboFrameCapable)) __obj.updateDynamic("jumboFrameCapable")(jumboFrameCapable.asInstanceOf[js.Any])
+    if (!js.isUndefined(jumboFrameCapable)) __obj.updateDynamic("jumboFrameCapable")(jumboFrameCapable.get.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (mtu != null) __obj.updateDynamic("mtu")(mtu.asInstanceOf[js.Any])
+    if (!js.isUndefined(mtu)) __obj.updateDynamic("mtu")(mtu.get.asInstanceOf[js.Any])
     if (ownerAccount != null) __obj.updateDynamic("ownerAccount")(ownerAccount.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (routeFilterPrefixes != null) __obj.updateDynamic("routeFilterPrefixes")(routeFilterPrefixes.asInstanceOf[js.Any])
@@ -156,7 +156,7 @@ object VirtualInterface {
     if (virtualInterfaceName != null) __obj.updateDynamic("virtualInterfaceName")(virtualInterfaceName.asInstanceOf[js.Any])
     if (virtualInterfaceState != null) __obj.updateDynamic("virtualInterfaceState")(virtualInterfaceState.asInstanceOf[js.Any])
     if (virtualInterfaceType != null) __obj.updateDynamic("virtualInterfaceType")(virtualInterfaceType.asInstanceOf[js.Any])
-    if (vlan != null) __obj.updateDynamic("vlan")(vlan.asInstanceOf[js.Any])
+    if (!js.isUndefined(vlan)) __obj.updateDynamic("vlan")(vlan.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualInterface]
   }
 }

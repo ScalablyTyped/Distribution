@@ -19,7 +19,7 @@ trait ReimportApiRequest extends js.Object {
     */
   var Body: string = js.native
   /**
-    * Specifies whether to rollback the API creation (true) or not (false) when a warning is encountered. The default value is false.
+    * Specifies whether to rollback the API creation when a warning is encountered. By default, API creation continues if a warning is encountered.
     */
   var FailOnWarnings: js.UndefOr[boolean] = js.native
 }
@@ -30,11 +30,11 @@ object ReimportApiRequest {
     ApiId: string,
     Body: string,
     Basepath: string = null,
-    FailOnWarnings: js.UndefOr[Boolean] = js.undefined
+    FailOnWarnings: js.UndefOr[boolean] = js.undefined
   ): ReimportApiRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], Body = Body.asInstanceOf[js.Any])
     if (Basepath != null) __obj.updateDynamic("Basepath")(Basepath.asInstanceOf[js.Any])
-    if (!js.isUndefined(FailOnWarnings)) __obj.updateDynamic("FailOnWarnings")(FailOnWarnings.asInstanceOf[js.Any])
+    if (!js.isUndefined(FailOnWarnings)) __obj.updateDynamic("FailOnWarnings")(FailOnWarnings.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReimportApiRequest]
   }
 }

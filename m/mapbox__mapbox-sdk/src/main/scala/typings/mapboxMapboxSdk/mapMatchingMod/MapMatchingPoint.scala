@@ -33,16 +33,16 @@ object MapMatchingPoint {
     coordinates: LngLatLike,
     approach: DirectionsApproach = null,
     isWaypoint: js.UndefOr[Boolean] = js.undefined,
-    radius: Int | Double = null,
+    radius: js.UndefOr[Double] = js.undefined,
     timestamp: String | Double | Date = null,
     waypointName: js.UndefOr[Boolean] = js.undefined
   ): MapMatchingPoint = {
     val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
     if (approach != null) __obj.updateDynamic("approach")(approach.asInstanceOf[js.Any])
-    if (!js.isUndefined(isWaypoint)) __obj.updateDynamic("isWaypoint")(isWaypoint.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(isWaypoint)) __obj.updateDynamic("isWaypoint")(isWaypoint.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
-    if (!js.isUndefined(waypointName)) __obj.updateDynamic("waypointName")(waypointName.asInstanceOf[js.Any])
+    if (!js.isUndefined(waypointName)) __obj.updateDynamic("waypointName")(waypointName.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapMatchingPoint]
   }
 }

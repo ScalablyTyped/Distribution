@@ -24,12 +24,12 @@ object ExecutionDetails {
   @scala.inline
   def apply(
     externalExecutionId: ExecutionId = null,
-    percentComplete: Int | Double = null,
+    percentComplete: js.UndefOr[Percentage] = js.undefined,
     summary: ExecutionSummary = null
   ): ExecutionDetails = {
     val __obj = js.Dynamic.literal()
     if (externalExecutionId != null) __obj.updateDynamic("externalExecutionId")(externalExecutionId.asInstanceOf[js.Any])
-    if (percentComplete != null) __obj.updateDynamic("percentComplete")(percentComplete.asInstanceOf[js.Any])
+    if (!js.isUndefined(percentComplete)) __obj.updateDynamic("percentComplete")(percentComplete.get.asInstanceOf[js.Any])
     if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutionDetails]
   }

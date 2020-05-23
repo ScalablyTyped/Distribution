@@ -78,13 +78,13 @@ object DirectionsFeatureSetProperties {
     routeName: String = null,
     spatialReference: SpatialReferenceProperties = null,
     strings: js.Array[_] = null,
-    totalDriveTime: Int | Double = null,
-    totalLength: Int | Double = null,
-    totalTime: Int | Double = null
+    totalDriveTime: js.UndefOr[Double] = js.undefined,
+    totalLength: js.UndefOr[Double] = js.undefined,
+    totalTime: js.UndefOr[Double] = js.undefined
   ): DirectionsFeatureSetProperties = {
     val __obj = js.Dynamic.literal()
     if (displayFieldName != null) __obj.updateDynamic("displayFieldName")(displayFieldName.asInstanceOf[js.Any])
-    if (!js.isUndefined(exceededTransferLimit)) __obj.updateDynamic("exceededTransferLimit")(exceededTransferLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(exceededTransferLimit)) __obj.updateDynamic("exceededTransferLimit")(exceededTransferLimit.get.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
     if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
@@ -95,9 +95,9 @@ object DirectionsFeatureSetProperties {
     if (routeName != null) __obj.updateDynamic("routeName")(routeName.asInstanceOf[js.Any])
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
     if (strings != null) __obj.updateDynamic("strings")(strings.asInstanceOf[js.Any])
-    if (totalDriveTime != null) __obj.updateDynamic("totalDriveTime")(totalDriveTime.asInstanceOf[js.Any])
-    if (totalLength != null) __obj.updateDynamic("totalLength")(totalLength.asInstanceOf[js.Any])
-    if (totalTime != null) __obj.updateDynamic("totalTime")(totalTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalDriveTime)) __obj.updateDynamic("totalDriveTime")(totalDriveTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalLength)) __obj.updateDynamic("totalLength")(totalLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalTime)) __obj.updateDynamic("totalTime")(totalTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionsFeatureSetProperties]
   }
 }

@@ -1,6 +1,6 @@
 package typings.fuzzySearch.mod
 
-import typings.fuzzySearch.RequiredOptions
+import typings.fuzzySearch.anon.RequiredOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

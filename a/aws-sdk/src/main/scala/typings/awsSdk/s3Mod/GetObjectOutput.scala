@@ -112,7 +112,7 @@ trait GetObjectOutput extends js.Object {
     */
   var ServerSideEncryption: js.UndefOr[typings.awsSdk.s3Mod.ServerSideEncryption] = js.native
   /**
-    * Provides storage class information of the object. Amazon S3 returns this header for all objects except for Standard storage class objects.
+    * Provides storage class information of the object. Amazon S3 returns this header for all objects except for S3 Standard storage class objects.
     */
   var StorageClass: js.UndefOr[typings.awsSdk.s3Mod.StorageClass] = js.native
   /**
@@ -138,20 +138,20 @@ object GetObjectOutput {
     ContentDisposition: ContentDisposition = null,
     ContentEncoding: ContentEncoding = null,
     ContentLanguage: ContentLanguage = null,
-    ContentLength: Int | Double = null,
+    ContentLength: js.UndefOr[ContentLength] = js.undefined,
     ContentRange: ContentRange = null,
     ContentType: ContentType = null,
-    DeleteMarker: js.UndefOr[Boolean] = js.undefined,
+    DeleteMarker: js.UndefOr[DeleteMarker] = js.undefined,
     ETag: ETag = null,
     Expiration: Expiration = null,
     Expires: Expires = null,
     LastModified: LastModified = null,
     Metadata: Metadata = null,
-    MissingMeta: Int | Double = null,
+    MissingMeta: js.UndefOr[MissingMeta] = js.undefined,
     ObjectLockLegalHoldStatus: ObjectLockLegalHoldStatus = null,
     ObjectLockMode: ObjectLockMode = null,
     ObjectLockRetainUntilDate: ObjectLockRetainUntilDate = null,
-    PartsCount: Int | Double = null,
+    PartsCount: js.UndefOr[PartsCount] = js.undefined,
     ReplicationStatus: ReplicationStatus = null,
     RequestCharged: RequestCharged = null,
     Restore: Restore = null,
@@ -160,7 +160,7 @@ object GetObjectOutput {
     SSEKMSKeyId: SSEKMSKeyId = null,
     ServerSideEncryption: ServerSideEncryption = null,
     StorageClass: StorageClass = null,
-    TagCount: Int | Double = null,
+    TagCount: js.UndefOr[TagCount] = js.undefined,
     VersionId: ObjectVersionId = null,
     WebsiteRedirectLocation: WebsiteRedirectLocation = null
   ): GetObjectOutput = {
@@ -171,20 +171,20 @@ object GetObjectOutput {
     if (ContentDisposition != null) __obj.updateDynamic("ContentDisposition")(ContentDisposition.asInstanceOf[js.Any])
     if (ContentEncoding != null) __obj.updateDynamic("ContentEncoding")(ContentEncoding.asInstanceOf[js.Any])
     if (ContentLanguage != null) __obj.updateDynamic("ContentLanguage")(ContentLanguage.asInstanceOf[js.Any])
-    if (ContentLength != null) __obj.updateDynamic("ContentLength")(ContentLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(ContentLength)) __obj.updateDynamic("ContentLength")(ContentLength.get.asInstanceOf[js.Any])
     if (ContentRange != null) __obj.updateDynamic("ContentRange")(ContentRange.asInstanceOf[js.Any])
     if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeleteMarker)) __obj.updateDynamic("DeleteMarker")(DeleteMarker.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeleteMarker)) __obj.updateDynamic("DeleteMarker")(DeleteMarker.get.asInstanceOf[js.Any])
     if (ETag != null) __obj.updateDynamic("ETag")(ETag.asInstanceOf[js.Any])
     if (Expiration != null) __obj.updateDynamic("Expiration")(Expiration.asInstanceOf[js.Any])
     if (Expires != null) __obj.updateDynamic("Expires")(Expires.asInstanceOf[js.Any])
     if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
     if (Metadata != null) __obj.updateDynamic("Metadata")(Metadata.asInstanceOf[js.Any])
-    if (MissingMeta != null) __obj.updateDynamic("MissingMeta")(MissingMeta.asInstanceOf[js.Any])
+    if (!js.isUndefined(MissingMeta)) __obj.updateDynamic("MissingMeta")(MissingMeta.get.asInstanceOf[js.Any])
     if (ObjectLockLegalHoldStatus != null) __obj.updateDynamic("ObjectLockLegalHoldStatus")(ObjectLockLegalHoldStatus.asInstanceOf[js.Any])
     if (ObjectLockMode != null) __obj.updateDynamic("ObjectLockMode")(ObjectLockMode.asInstanceOf[js.Any])
     if (ObjectLockRetainUntilDate != null) __obj.updateDynamic("ObjectLockRetainUntilDate")(ObjectLockRetainUntilDate.asInstanceOf[js.Any])
-    if (PartsCount != null) __obj.updateDynamic("PartsCount")(PartsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(PartsCount)) __obj.updateDynamic("PartsCount")(PartsCount.get.asInstanceOf[js.Any])
     if (ReplicationStatus != null) __obj.updateDynamic("ReplicationStatus")(ReplicationStatus.asInstanceOf[js.Any])
     if (RequestCharged != null) __obj.updateDynamic("RequestCharged")(RequestCharged.asInstanceOf[js.Any])
     if (Restore != null) __obj.updateDynamic("Restore")(Restore.asInstanceOf[js.Any])
@@ -193,7 +193,7 @@ object GetObjectOutput {
     if (SSEKMSKeyId != null) __obj.updateDynamic("SSEKMSKeyId")(SSEKMSKeyId.asInstanceOf[js.Any])
     if (ServerSideEncryption != null) __obj.updateDynamic("ServerSideEncryption")(ServerSideEncryption.asInstanceOf[js.Any])
     if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])
-    if (TagCount != null) __obj.updateDynamic("TagCount")(TagCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(TagCount)) __obj.updateDynamic("TagCount")(TagCount.get.asInstanceOf[js.Any])
     if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
     if (WebsiteRedirectLocation != null) __obj.updateDynamic("WebsiteRedirectLocation")(WebsiteRedirectLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectOutput]

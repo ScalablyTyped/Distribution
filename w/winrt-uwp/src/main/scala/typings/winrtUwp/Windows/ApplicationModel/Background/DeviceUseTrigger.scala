@@ -6,10 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents an event that a Windows Runtime app can trigger to initiate a long-running operation with a device or sensor. */
-@JSGlobal("Windows.ApplicationModel.Background.DeviceUseTrigger")
 @js.native
-/** Constructor for DeviceUseTrigger . Takes no parameters. */
-class DeviceUseTrigger () extends js.Object {
+trait DeviceUseTrigger extends js.Object {
   /**
     * Triggers the background task and returns a DeviceTriggerResult indicating success or failure of the trigger request. Takes the DeviceInformation.ID of the device or sensor that the background task will access.
     * @param deviceId The DeviceInformation.ID of the device or sensor that the background task will access.

@@ -20,12 +20,12 @@ trait DeleteObjectOutput extends js.Object {
 object DeleteObjectOutput {
   @scala.inline
   def apply(
-    DeleteMarker: js.UndefOr[Boolean] = js.undefined,
+    DeleteMarker: js.UndefOr[DeleteMarker] = js.undefined,
     RequestCharged: RequestCharged = null,
     VersionId: ObjectVersionId = null
   ): DeleteObjectOutput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DeleteMarker)) __obj.updateDynamic("DeleteMarker")(DeleteMarker.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeleteMarker)) __obj.updateDynamic("DeleteMarker")(DeleteMarker.get.asInstanceOf[js.Any])
     if (RequestCharged != null) __obj.updateDynamic("RequestCharged")(RequestCharged.asInstanceOf[js.Any])
     if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteObjectOutput]

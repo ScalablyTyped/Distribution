@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object mod {
   type HistoryListener = js.Function1[/* parameter */ typings.reachRouter.mod.HistoryListenerParameter, scala.Unit]
-  type HistoryLocation = typings.reachRouter.mod.WindowLocation with typings.reachRouter.AnonState
+  type HistoryLocation = typings.reachRouter.mod.WindowLocation[typings.history.mod.LocationState] with typings.reachRouter.anon.State
   type HistoryUnsubscribe = js.Function0[scala.Unit]
   type Link[TState] = typings.react.mod.ForwardRefExoticComponent[
     typings.react.mod.PropsWithoutRef[typings.reachRouter.mod.LinkProps[TState]] with typings.react.mod.RefAttributes[typings.std.HTMLAnchorElement]
@@ -17,6 +17,6 @@ package object mod {
     typings.react.mod.ReactNode
   ]
   type Omit[T, K] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
-  type RouteComponentProps[TParams] = typings.std.Partial[TParams] with typings.reachRouter.AnonDefault
-  type WindowLocation = typings.std.Location_ with typings.history.mod.Location[typings.history.mod.LocationState]
+  type RouteComponentProps[TParams] = typings.std.Partial[TParams] with typings.reachRouter.anon.Default
+  type WindowLocation[S] = typings.std.Location with typings.history.mod.Location[S]
 }

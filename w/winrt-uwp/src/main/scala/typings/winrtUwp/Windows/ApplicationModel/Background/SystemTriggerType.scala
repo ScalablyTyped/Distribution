@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Background
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -71,53 +70,6 @@ object SystemTriggerType extends js.Object {
   /** The background task is triggered when the user becomes present. */
   @js.native
   sealed trait userPresent extends SystemTriggerType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SystemTriggerType with Double] = js.native
-  /* 13 */ @js.native
-  object backgroundWorkCostChange extends TopLevel[backgroundWorkCostChange with Double]
-  
-  /* 5 */ @js.native
-  object controlChannelReset extends TopLevel[controlChannelReset with Double]
-  
-  /* 6 */ @js.native
-  object internetAvailable extends TopLevel[internetAvailable with Double]
-  
-  /* 0 */ @js.native
-  object invalid extends TopLevel[invalid with Double]
-  
-  /* 9 */ @js.native
-  object lockScreenApplicationAdded extends TopLevel[lockScreenApplicationAdded with Double]
-  
-  /* 10 */ @js.native
-  object lockScreenApplicationRemoved extends TopLevel[lockScreenApplicationRemoved with Double]
-  
-  /* 4 */ @js.native
-  object networkStateChange extends TopLevel[networkStateChange with Double]
-  
-  /* 12 */ @js.native
-  object onlineIdConnectedStateChange extends TopLevel[onlineIdConnectedStateChange with Double]
-  
-  /* 14 */ @js.native
-  object powerStateChange extends TopLevel[powerStateChange with Double]
-  
-  /* 8 */ @js.native
-  object servicingComplete extends TopLevel[servicingComplete with Double]
-  
-  /* 7 */ @js.native
-  object sessionConnected extends TopLevel[sessionConnected with Double]
-  
-  /* 1 */ @js.native
-  object smsReceived extends TopLevel[smsReceived with Double]
-  
-  /* 11 */ @js.native
-  object timeZoneChange extends TopLevel[timeZoneChange with Double]
-  
-  /* 3 */ @js.native
-  object userAway extends TopLevel[userAway with Double]
-  
-  /* 2 */ @js.native
-  object userPresent extends TopLevel[userPresent with Double]
   
 }
 

@@ -1,17 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Resources.Core
 
 import typings.std.Array
-import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsResourceCandidate
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
+import typings.winrtUwp.anon.Index
+import typings.winrtUwp.anon.ItemsResourceCandidate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a collection of ResourceCandidate objects. */
-@JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceCandidateVectorView")
 @js.native
-abstract class ResourceCandidateVectorView () extends Array[ResourceCandidate] {
+trait ResourceCandidateVectorView extends Array[ResourceCandidate] {
   /** Gets the number of ResourceCandidate objects in the set. */
   var size: Double = js.native
   /**
@@ -29,8 +28,8 @@ abstract class ResourceCandidateVectorView () extends Array[ResourceCandidate] {
     * Returns the ResourceCandidate objects that start at the specified index in the set.
     * @param startIndex The zero-based index of the start of the ResourceCandidate objects in the set to return.
     */
-  def getMany(startIndex: Double): AnonItemsResourceCandidate = js.native
-  def indexOf(value: ResourceCandidate, extra: js.Any*): AnonIndex = js.native
+  def getMany(startIndex: Double): ItemsResourceCandidate = js.native
+  def indexOf(value: ResourceCandidate, extra: js.Any*): Index = js.native
   /* hack */
   @JSName("indexOf")
   def indexOf_Double(searchElement: ResourceCandidate): Double = js.native

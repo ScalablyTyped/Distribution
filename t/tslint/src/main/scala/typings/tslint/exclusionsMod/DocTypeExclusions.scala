@@ -14,7 +14,7 @@ object DocTypeExclusions {
   @scala.inline
   def apply(requirements: js.Array[Exclusion[_]], overloadsSeparateDocs: js.UndefOr[Boolean] = js.undefined): DocTypeExclusions = {
     val __obj = js.Dynamic.literal(requirements = requirements.asInstanceOf[js.Any])
-    if (!js.isUndefined(overloadsSeparateDocs)) __obj.updateDynamic("overloadsSeparateDocs")(overloadsSeparateDocs.asInstanceOf[js.Any])
+    if (!js.isUndefined(overloadsSeparateDocs)) __obj.updateDynamic("overloadsSeparateDocs")(overloadsSeparateDocs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocTypeExclusions]
   }
 }

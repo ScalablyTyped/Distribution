@@ -1,7 +1,7 @@
 
 # Scala.js typings for git-rev-sync
 
-Typings are for version 1.12
+Typings are for version 2.0
 
 ## Library description:
 Synchronously get the current git commit hash, tag, or branch

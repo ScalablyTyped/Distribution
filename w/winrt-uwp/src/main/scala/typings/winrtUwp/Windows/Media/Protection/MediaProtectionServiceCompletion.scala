@@ -5,13 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains a method that indicates whether a protection service has completed successfully. */
-@JSGlobal("Windows.Media.Protection.MediaProtectionServiceCompletion")
-@js.native
-abstract class MediaProtectionServiceCompletion () extends js.Object {
+trait MediaProtectionServiceCompletion extends js.Object {
   /**
     * Indicates whether a protection service has completed successfully.
     * @param success Indicates the successful completion of a protection service.
     */
-  def complete(success: Boolean): Unit = js.native
+  def complete(success: Boolean): Unit
+}
+
+object MediaProtectionServiceCompletion {
+  @scala.inline
+  def apply(complete: Boolean => Unit): MediaProtectionServiceCompletion = {
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete))
+    __obj.asInstanceOf[MediaProtectionServiceCompletion]
+  }
 }
 

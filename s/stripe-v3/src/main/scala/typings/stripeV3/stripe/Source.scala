@@ -1,9 +1,9 @@
 package typings.stripeV3.stripe
 
-import typings.stripeV3.AnonAddress
-import typings.stripeV3.AnonAuthenticated
-import typings.stripeV3.AnonBankcode
-import typings.stripeV3.AnonStatus
+import typings.stripeV3.anon.Address
+import typings.stripeV3.anon.Authenticated
+import typings.stripeV3.anon.Bankcode
+import typings.stripeV3.anon.Status
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,11 +14,11 @@ trait Source extends js.Object {
   var created: Double
   var currency: String
   var id: String
-  var owner: AnonAddress
-  var redirect: js.UndefOr[AnonStatus] = js.undefined
-  var sepa_debit: js.UndefOr[AnonBankcode] = js.undefined
+  var owner: Address
+  var redirect: js.UndefOr[Status] = js.undefined
+  var sepa_debit: js.UndefOr[Bankcode] = js.undefined
   var status: js.UndefOr[String] = js.undefined
-  var three_d_secure: js.UndefOr[AnonAuthenticated] = js.undefined
+  var three_d_secure: js.UndefOr[Authenticated] = js.undefined
 }
 
 object Source {
@@ -28,12 +28,12 @@ object Source {
     created: Double,
     currency: String,
     id: String,
-    owner: AnonAddress,
+    owner: Address,
     card: Card = null,
-    redirect: AnonStatus = null,
-    sepa_debit: AnonBankcode = null,
+    redirect: Status = null,
+    sepa_debit: Bankcode = null,
     status: String = null,
-    three_d_secure: AnonAuthenticated = null
+    three_d_secure: Authenticated = null
   ): Source = {
     val __obj = js.Dynamic.literal(client_secret = client_secret.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any])
     if (card != null) __obj.updateDynamic("card")(card.asInstanceOf[js.Any])

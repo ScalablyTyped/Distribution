@@ -2,7 +2,7 @@ package typings.reactNavigationStack.cardContainerMod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.MemoExoticComponent
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ object default
   extends TopLevel[
       MemoExoticComponent[
         js.Function1[
-          /* hasActiveCardOverlayCardOverlayEnabledCardShadowEnabledCardStyleCardStyleInterpolatorClosingGestureFocusedGestureDirectionGestureEnabledGestureResponseDistanceGestureVelocityImpactGetPreviousRouteGetFocusedRouteHeaderModeHeaderShownHeaderStyleInterpolatorHeaderTransparentHeaderHeightOnHeaderHeightChangeIndexLayoutOnCloseRouteOnOpenRouteOnPageChangeCancelOnPageChangeConfirmOnPageChangeStartOnTransitionEndOnTransitionStartPreviousSceneRenderHeaderRenderSceneSafeAreaInsetBottomSafeAreaInsetLeftSafeAreaInsetRightSafeAreaInsetTopSceneTransitionSpec */ Props, 
+          /* hasActiveCardOverlayCardOverlayEnabledCardShadowEnabledCardStyleCardStyleInterpolatorClosingGestureFocusedGestureDirectionGestureEnabledGestureResponseDistanceGestureVelocityImpactGetPreviousRouteGetFocusedRouteModeHeaderModeHeaderShownHeaderStyleInterpolatorHeaderTransparentHeaderHeightOnHeaderHeightChangeIndexLayoutOnCloseRouteOnOpenRouteOnPageChangeCancelOnPageChangeConfirmOnPageChangeStartOnTransitionEndOnTransitionStartPreviousSceneRenderHeaderRenderSceneSafeAreaInsetBottomSafeAreaInsetLeftSafeAreaInsetRightSafeAreaInsetTopSceneTransitionSpec */ Props, 
           Element
         ]
       ]

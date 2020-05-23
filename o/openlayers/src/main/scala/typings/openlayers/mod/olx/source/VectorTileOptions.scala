@@ -47,7 +47,7 @@ object VectorTileOptions {
   @scala.inline
   def apply(
     attributions: AttributionLike = null,
-    cacheSize: Int | Double = null,
+    cacheSize: js.UndefOr[Double] = js.undefined,
     format: Feature = null,
     logo: String | LogoOptions = null,
     overlaps: js.UndefOr[Boolean] = js.undefined,
@@ -63,10 +63,10 @@ object VectorTileOptions {
   ): VectorTileOptions = {
     val __obj = js.Dynamic.literal()
     if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
-    if (cacheSize != null) __obj.updateDynamic("cacheSize")(cacheSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheSize)) __obj.updateDynamic("cacheSize")(cacheSize.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
-    if (!js.isUndefined(overlaps)) __obj.updateDynamic("overlaps")(overlaps.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlaps)) __obj.updateDynamic("overlaps")(overlaps.get.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (tileClass != null) __obj.updateDynamic("tileClass")(js.Any.fromFunction6(tileClass))
@@ -75,7 +75,7 @@ object VectorTileOptions {
     if (tileUrlFunction != null) __obj.updateDynamic("tileUrlFunction")(js.Any.fromFunction3(tileUrlFunction))
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VectorTileOptions]
   }
 }

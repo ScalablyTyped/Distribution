@@ -1,6 +1,6 @@
 package typings.reactFlipMove.mod.FlipMove
 
-import typings.reactFlipMove.PartialCSSStyleDeclaratio
+import typings.reactFlipMove.anon.PartialCSSStyleDeclaratio
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

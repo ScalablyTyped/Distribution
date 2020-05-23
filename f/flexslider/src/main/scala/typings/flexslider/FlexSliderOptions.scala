@@ -107,7 +107,7 @@ object FlexSliderOptions {
     after: /* slider */ SliderObject => _ = null,
     animation: String = null,
     animationLoop: js.UndefOr[Boolean] = js.undefined,
-    animationSpeed: Int | Double = null,
+    animationSpeed: js.UndefOr[Double] = js.undefined,
     asNavFor: String = null,
     before: /* slider */ SliderObject => _ = null,
     controlNav: js.Any = null,
@@ -116,15 +116,15 @@ object FlexSliderOptions {
     directionNav: js.UndefOr[Boolean] = js.undefined,
     easing: String = null,
     end: /* slider */ SliderObject => _ = null,
-    initDelay: Int | Double = null,
-    itemMargin: Int | Double = null,
-    itemWidth: Int | Double = null,
+    initDelay: js.UndefOr[Double] = js.undefined,
+    itemMargin: js.UndefOr[Double] = js.undefined,
+    itemWidth: js.UndefOr[Double] = js.undefined,
     keyboard: js.UndefOr[Boolean] = js.undefined,
     manualControls: String = null,
-    maxItems: Int | Double = null,
-    minItems: Int | Double = null,
+    maxItems: js.UndefOr[Double] = js.undefined,
+    minItems: js.UndefOr[Double] = js.undefined,
     mousewheel: js.UndefOr[Boolean] = js.undefined,
-    move: Int | Double = null,
+    move: js.UndefOr[Double] = js.undefined,
     multipleKeyboard: js.UndefOr[Boolean] = js.undefined,
     namespace: String = null,
     nextText: String = null,
@@ -139,10 +139,10 @@ object FlexSliderOptions {
     reverse: js.UndefOr[Boolean] = js.undefined,
     selector: String = null,
     slideshow: js.UndefOr[Boolean] = js.undefined,
-    slideshowSpeed: Int | Double = null,
+    slideshowSpeed: js.UndefOr[Double] = js.undefined,
     smoothHeight: js.UndefOr[Boolean] = js.undefined,
     start: /* slider */ SliderObject => _ = null,
-    startAt: Int | Double = null,
+    startAt: js.UndefOr[Double] = js.undefined,
     sync: String = null,
     touch: js.UndefOr[Boolean] = js.undefined,
     useCSS: js.UndefOr[Boolean] = js.undefined,
@@ -152,47 +152,47 @@ object FlexSliderOptions {
     if (added != null) __obj.updateDynamic("added")(js.Any.fromFunction1(added))
     if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction1(after))
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationLoop)) __obj.updateDynamic("animationLoop")(animationLoop.asInstanceOf[js.Any])
-    if (animationSpeed != null) __obj.updateDynamic("animationSpeed")(animationSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationLoop)) __obj.updateDynamic("animationLoop")(animationLoop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationSpeed)) __obj.updateDynamic("animationSpeed")(animationSpeed.get.asInstanceOf[js.Any])
     if (asNavFor != null) __obj.updateDynamic("asNavFor")(asNavFor.asInstanceOf[js.Any])
     if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction1(before))
     if (controlNav != null) __obj.updateDynamic("controlNav")(controlNav.asInstanceOf[js.Any])
     if (controlsContainer != null) __obj.updateDynamic("controlsContainer")(controlsContainer.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(directionNav)) __obj.updateDynamic("directionNav")(directionNav.asInstanceOf[js.Any])
+    if (!js.isUndefined(directionNav)) __obj.updateDynamic("directionNav")(directionNav.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(js.Any.fromFunction1(end))
-    if (initDelay != null) __obj.updateDynamic("initDelay")(initDelay.asInstanceOf[js.Any])
-    if (itemMargin != null) __obj.updateDynamic("itemMargin")(itemMargin.asInstanceOf[js.Any])
-    if (itemWidth != null) __obj.updateDynamic("itemWidth")(itemWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
+    if (!js.isUndefined(initDelay)) __obj.updateDynamic("initDelay")(initDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemMargin)) __obj.updateDynamic("itemMargin")(itemMargin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemWidth)) __obj.updateDynamic("itemWidth")(itemWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.get.asInstanceOf[js.Any])
     if (manualControls != null) __obj.updateDynamic("manualControls")(manualControls.asInstanceOf[js.Any])
-    if (maxItems != null) __obj.updateDynamic("maxItems")(maxItems.asInstanceOf[js.Any])
-    if (minItems != null) __obj.updateDynamic("minItems")(minItems.asInstanceOf[js.Any])
-    if (!js.isUndefined(mousewheel)) __obj.updateDynamic("mousewheel")(mousewheel.asInstanceOf[js.Any])
-    if (move != null) __obj.updateDynamic("move")(move.asInstanceOf[js.Any])
-    if (!js.isUndefined(multipleKeyboard)) __obj.updateDynamic("multipleKeyboard")(multipleKeyboard.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxItems)) __obj.updateDynamic("maxItems")(maxItems.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minItems)) __obj.updateDynamic("minItems")(minItems.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mousewheel)) __obj.updateDynamic("mousewheel")(mousewheel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(move)) __obj.updateDynamic("move")(move.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multipleKeyboard)) __obj.updateDynamic("multipleKeyboard")(multipleKeyboard.get.asInstanceOf[js.Any])
     if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
     if (nextText != null) __obj.updateDynamic("nextText")(nextText.asInstanceOf[js.Any])
-    if (!js.isUndefined(pauseOnAction)) __obj.updateDynamic("pauseOnAction")(pauseOnAction.asInstanceOf[js.Any])
-    if (!js.isUndefined(pauseOnHover)) __obj.updateDynamic("pauseOnHover")(pauseOnHover.asInstanceOf[js.Any])
-    if (!js.isUndefined(pausePlay)) __obj.updateDynamic("pausePlay")(pausePlay.asInstanceOf[js.Any])
+    if (!js.isUndefined(pauseOnAction)) __obj.updateDynamic("pauseOnAction")(pauseOnAction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pauseOnHover)) __obj.updateDynamic("pauseOnHover")(pauseOnHover.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pausePlay)) __obj.updateDynamic("pausePlay")(pausePlay.get.asInstanceOf[js.Any])
     if (pauseText != null) __obj.updateDynamic("pauseText")(pauseText.asInstanceOf[js.Any])
     if (playText != null) __obj.updateDynamic("playText")(playText.asInstanceOf[js.Any])
     if (prevText != null) __obj.updateDynamic("prevText")(prevText.asInstanceOf[js.Any])
-    if (!js.isUndefined(randomize)) __obj.updateDynamic("randomize")(randomize.asInstanceOf[js.Any])
+    if (!js.isUndefined(randomize)) __obj.updateDynamic("randomize")(randomize.get.asInstanceOf[js.Any])
     if (removed != null) __obj.updateDynamic("removed")(js.Any.fromFunction1(removed))
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.get.asInstanceOf[js.Any])
     if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (!js.isUndefined(slideshow)) __obj.updateDynamic("slideshow")(slideshow.asInstanceOf[js.Any])
-    if (slideshowSpeed != null) __obj.updateDynamic("slideshowSpeed")(slideshowSpeed.asInstanceOf[js.Any])
-    if (!js.isUndefined(smoothHeight)) __obj.updateDynamic("smoothHeight")(smoothHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(slideshow)) __obj.updateDynamic("slideshow")(slideshow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(slideshowSpeed)) __obj.updateDynamic("slideshowSpeed")(slideshowSpeed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(smoothHeight)) __obj.updateDynamic("smoothHeight")(smoothHeight.get.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
-    if (startAt != null) __obj.updateDynamic("startAt")(startAt.asInstanceOf[js.Any])
+    if (!js.isUndefined(startAt)) __obj.updateDynamic("startAt")(startAt.get.asInstanceOf[js.Any])
     if (sync != null) __obj.updateDynamic("sync")(sync.asInstanceOf[js.Any])
-    if (!js.isUndefined(touch)) __obj.updateDynamic("touch")(touch.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCSS)) __obj.updateDynamic("useCSS")(useCSS.asInstanceOf[js.Any])
-    if (!js.isUndefined(video)) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
+    if (!js.isUndefined(touch)) __obj.updateDynamic("touch")(touch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCSS)) __obj.updateDynamic("useCSS")(useCSS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(video)) __obj.updateDynamic("video")(video.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlexSliderOptions]
   }
 }

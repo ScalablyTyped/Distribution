@@ -1,6 +1,6 @@
 package typings.highcharts.mod
 
-import typings.highcharts.PartialAnnotationControlP
+import typings.highcharts.anon.PartialAnnotationControlP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

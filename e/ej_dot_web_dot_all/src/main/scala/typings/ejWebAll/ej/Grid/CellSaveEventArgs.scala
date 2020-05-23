@@ -51,7 +51,7 @@ object CellSaveEventArgs {
     if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
     if (columnName != null) __obj.updateDynamic("columnName")(columnName.asInstanceOf[js.Any])
     if (columnObject != null) __obj.updateDynamic("columnObject")(columnObject.asInstanceOf[js.Any])
-    if (!js.isUndefined(isForeignKey)) __obj.updateDynamic("isForeignKey")(isForeignKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(isForeignKey)) __obj.updateDynamic("isForeignKey")(isForeignKey.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (previousValue != null) __obj.updateDynamic("previousValue")(previousValue.asInstanceOf[js.Any])
     if (rowData != null) __obj.updateDynamic("rowData")(rowData.asInstanceOf[js.Any])

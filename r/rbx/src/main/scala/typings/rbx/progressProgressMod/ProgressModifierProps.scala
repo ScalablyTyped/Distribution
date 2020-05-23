@@ -30,15 +30,15 @@ object ProgressModifierProps {
   @scala.inline
   def apply(
     color: primary | success | info | warning | danger | light | dark | white | black | link = null,
-    max: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
     size: small | medium | large = null,
-    value: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined
   ): ProgressModifierProps = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressModifierProps]
   }
 }

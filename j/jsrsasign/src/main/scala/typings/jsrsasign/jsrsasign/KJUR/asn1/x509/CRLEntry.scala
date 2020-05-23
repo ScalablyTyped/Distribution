@@ -1,6 +1,5 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
-import typings.jsrsasign.AnonSn
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
 import typings.jsrsasign.jsrsasign.KJUR.asn1.IntegerParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
@@ -20,23 +19,40 @@ import scala.scalajs.js.annotation._
   * //     crlEntryExtensions      Extensions OPTIONAL
   * //                             -- if present, version MUST be v2 }
   */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.CRLEntry")
-@js.native
-class CRLEntry () extends ASN1Object {
-  def this(params: AnonSn) = this()
+trait CRLEntry extends ASN1Object {
   /**
     * set DERInteger parameter for serial number of revoked certificate
     * @param intParam DERInteger parameter for certificate serial number
     * @example
     * entry.setCertSerial({'int': 3});
     */
-  def setCertSerial(intParam: IntegerParam): Unit = js.native
+  def setCertSerial(intParam: IntegerParam): Unit
   /**
     * set Time parameter for revocation date
     * @param timeParam Time parameter for revocation date
     * @example
     * entry.setRevocationDate({'str': '130508235959Z'});
     */
-  def setRevocationDate(timeParam: StringParam): Unit = js.native
+  def setRevocationDate(timeParam: StringParam): Unit
+}
+
+object CRLEntry {
+  @scala.inline
+  def apply(
+    getEncodedHex: () => String,
+    getFreshValueHex: () => String,
+    getLengthHexFromValue: () => String,
+    getValueHex: () => String,
+    hL: String,
+    hT: String,
+    hTLV: String,
+    hV: String,
+    isModified: String,
+    setCertSerial: IntegerParam => Unit,
+    setRevocationDate: StringParam => Unit
+  ): CRLEntry = {
+    val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setCertSerial = js.Any.fromFunction1(setCertSerial), setRevocationDate = js.Any.fromFunction1(setRevocationDate))
+    __obj.asInstanceOf[CRLEntry]
+  }
 }
 

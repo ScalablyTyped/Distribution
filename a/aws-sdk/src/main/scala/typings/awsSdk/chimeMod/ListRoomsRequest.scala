@@ -28,12 +28,12 @@ object ListRoomsRequest {
   @scala.inline
   def apply(
     AccountId: NonEmptyString,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[ResultMax] = js.undefined,
     MemberId: String = null,
     NextToken: String = null
   ): ListRoomsRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (MemberId != null) __obj.updateDynamic("MemberId")(MemberId.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRoomsRequest]

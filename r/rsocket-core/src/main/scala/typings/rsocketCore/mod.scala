@@ -1,12 +1,7 @@
 package typings.rsocketCore
 
 import typings.node.Buffer
-import typings.rsocketCore.rsocketCoreNumbers.`0`
-import typings.rsocketCore.rsocketCoreNumbers.`1023`
-import typings.rsocketCore.rsocketCoreNumbers.`10`
-import typings.rsocketCore.rsocketCoreNumbers.`2147483647`
-import typings.rsocketCore.rsocketCoreNumbers.`255`
-import typings.rsocketCore.rsocketCoreNumbers.`65535`
+import typings.rsocketCore.anon.ErrorsourceErrorSource
 import typings.rsocketCore.rsocketbufferutilsMod.Encoding
 import typings.rsocketCore.rsocketclientMod.ClientConfig
 import typings.rsocketCore.rsocketclientMod.default
@@ -111,9 +106,9 @@ object mod extends js.Object {
   val AUDIO_VORBIS: typings.rsocketCore.wellKnownMimeTypeMod.WellKnownMimeType = js.native
   val BufferEncoder: Encoder[Buffer] = js.native
   val BufferEncoders: Encoders[Buffer] = js.native
-  val CONNECTION_STREAM_ID: `0` = js.native
-  val FLAGS_MASK: `1023` = js.native
-  val FRAME_TYPE_OFFFSET: `10` = js.native
+  val CONNECTION_STREAM_ID: /* 0 */ Double = js.native
+  val FLAGS_MASK: /* 1023 */ Double = js.native
+  val FRAME_TYPE_OFFFSET: /* 10 */ Double = js.native
   val IMAGE_BMP: typings.rsocketCore.wellKnownMimeTypeMod.WellKnownMimeType = js.native
   val IMAGE_GIG: typings.rsocketCore.wellKnownMimeTypeMod.WellKnownMimeType = js.native
   val IMAGE_HEIC: typings.rsocketCore.wellKnownMimeTypeMod.WellKnownMimeType = js.native
@@ -125,13 +120,13 @@ object mod extends js.Object {
   val IMAGE_TIFF: typings.rsocketCore.wellKnownMimeTypeMod.WellKnownMimeType = js.native
   val IdentitySerializer: Serializer[Encodable] = js.native
   val JsonSerializer: Serializer[js.Any] = js.native
-  val MAX_CODE: `2147483647` = js.native
-  val MAX_KEEPALIVE: `2147483647` = js.native
-  val MAX_LIFETIME: `2147483647` = js.native
-  val MAX_MIME_LENGTH: `255` = js.native
-  val MAX_RESUME_LENGTH: `65535` = js.native
-  val MAX_STREAM_ID: `2147483647` = js.native
-  val MAX_VERSION: `65535` = js.native
+  val MAX_CODE: /* 2147483647 */ Double = js.native
+  val MAX_KEEPALIVE: /* 2147483647 */ Double = js.native
+  val MAX_LIFETIME: /* 2147483647 */ Double = js.native
+  val MAX_MIME_LENGTH: /* 255 */ Double = js.native
+  val MAX_RESUME_LENGTH: /* 65535 */ Double = js.native
+  val MAX_STREAM_ID: /* 2147483647 */ Double = js.native
+  val MAX_VERSION: /* 65535 */ Double = js.native
   val MESSAGE_RSOCKET_COMPOSITE_METADATA: typings.rsocketCore.wellKnownMimeTypeMod.WellKnownMimeType = js.native
   val MESSAGE_RSOCKET_ROUTING: typings.rsocketCore.wellKnownMimeTypeMod.WellKnownMimeType = js.native
   val MESSAGE_RSOCKET_TRACING_ZIPKIN: typings.rsocketCore.wellKnownMimeTypeMod.WellKnownMimeType = js.native

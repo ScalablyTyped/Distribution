@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.NumberDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,8 +12,4 @@ trait DOMRectList extends /* index */ NumberDictionary[DOMRect] {
   val length: Double = js.native
   def item(index: Double): DOMRect | Null = js.native
 }
-
-@JSGlobal("DOMRectList")
-@js.native
-object DOMRectList extends Instantiable0[DOMRectList]
 

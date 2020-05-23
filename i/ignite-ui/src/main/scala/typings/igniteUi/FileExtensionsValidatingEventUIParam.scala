@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation._
 
 trait FileExtensionsValidatingEventUIParam extends js.Object {
   /**
-  	 * Gets the file extension.
-  	 */
+    * Gets the file extension.
+    */
   var fileExtension: js.UndefOr[String] = js.undefined
   /**
-  	 * Gets the full file name.
-  	 */
+    * Gets the full file name.
+    */
   var fileName: js.UndefOr[String] = js.undefined
   /**
-  	 * Gets the the igUpload widget object.
-  	 */
+    * Gets the the igUpload widget object.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 

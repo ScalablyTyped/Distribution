@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.Table")
 @js.native
-class Table protected () extends js.Object {
+trait Table extends js.Object {
   var AlternativeText: String = js.native
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   val Background: TableBackground = js.native

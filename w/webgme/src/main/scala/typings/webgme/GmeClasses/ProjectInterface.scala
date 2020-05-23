@@ -2,7 +2,7 @@ package typings.webgme.GmeClasses
 
 import typings.webgme.Core.DataObject
 import typings.webgme.Core.ObjectHash
-import typings.webgme.Global.GmeLogger
+import typings.webgme.Global_.GmeLogger
 import typings.webgme.GmeCommon.Dictionary
 import typings.webgme.GmeCommon.LoadObject
 import typings.webgme.GmeCommon.MetadataHash

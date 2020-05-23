@@ -21,13 +21,13 @@ object QueryRelationsRelationship {
   def apply(
     arguments: js.Array[QueryRelationsArgument] = null,
     evidence: js.Array[QueryEvidence] = null,
-    frequency: Int | Double = null,
+    frequency: js.UndefOr[Double] = js.undefined,
     `type`: String = null
   ): QueryRelationsRelationship = {
     val __obj = js.Dynamic.literal()
     if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
     if (evidence != null) __obj.updateDynamic("evidence")(evidence.asInstanceOf[js.Any])
-    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
+    if (!js.isUndefined(frequency)) __obj.updateDynamic("frequency")(frequency.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryRelationsRelationship]
   }

@@ -20,10 +20,10 @@ object XmlOptions {
     trimmed: js.UndefOr[Boolean] = js.undefined
   ): XmlOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(compressed)) __obj.updateDynamic("compressed")(compressed.asInstanceOf[js.Any])
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveWhitespace)) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace.asInstanceOf[js.Any])
-    if (!js.isUndefined(trimmed)) __obj.updateDynamic("trimmed")(trimmed.asInstanceOf[js.Any])
+    if (!js.isUndefined(compressed)) __obj.updateDynamic("compressed")(compressed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveWhitespace)) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trimmed)) __obj.updateDynamic("trimmed")(trimmed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[XmlOptions]
   }
 }

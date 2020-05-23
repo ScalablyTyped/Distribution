@@ -27,7 +27,7 @@ object ConcatOptions {
     videos: js.Array[String],
     audio: String = null,
     cleanupFrames: js.UndefOr[Boolean] = js.undefined,
-    concurrency: Int | Double = null,
+    concurrency: js.UndefOr[Double] = js.undefined,
     frameFormat: jpg | png | raw = null,
     log: /* stdout */ String => Unit = null,
     tempDir: String = null,
@@ -36,8 +36,8 @@ object ConcatOptions {
   ): ConcatOptions = {
     val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any], videos = videos.asInstanceOf[js.Any])
     if (audio != null) __obj.updateDynamic("audio")(audio.asInstanceOf[js.Any])
-    if (!js.isUndefined(cleanupFrames)) __obj.updateDynamic("cleanupFrames")(cleanupFrames.asInstanceOf[js.Any])
-    if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
+    if (!js.isUndefined(cleanupFrames)) __obj.updateDynamic("cleanupFrames")(cleanupFrames.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(concurrency)) __obj.updateDynamic("concurrency")(concurrency.get.asInstanceOf[js.Any])
     if (frameFormat != null) __obj.updateDynamic("frameFormat")(frameFormat.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(js.Any.fromFunction1(log))
     if (tempDir != null) __obj.updateDynamic("tempDir")(tempDir.asInstanceOf[js.Any])

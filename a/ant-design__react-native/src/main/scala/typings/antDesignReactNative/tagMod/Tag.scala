@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.tagMod
 
-import typings.antDesignReactNative.AnonActiveText
+import typings.antDesignReactNative.anon.ActiveText
 import typings.react.mod.Component
 import typings.reactNative.mod.View
 import scala.scalajs.js
@@ -15,8 +15,8 @@ trait Tag
   def componentWillReceiveProps_MTag(nextProps: TagNativeProps): Unit = js.native
   def handleLongPress(): Unit = js.native
   def onPress(): Unit = js.native
-  def onPressIn(styles: AnonActiveText): js.Function0[Unit] = js.native
-  def onPressOut(styles: AnonActiveText): js.Function0[Unit] = js.native
+  def onPressIn(styles: ActiveText): js.Function0[Unit] = js.native
+  def onPressOut(styles: ActiveText): js.Function0[Unit] = js.native
   def onTagClose(): Unit = js.native
 }
 

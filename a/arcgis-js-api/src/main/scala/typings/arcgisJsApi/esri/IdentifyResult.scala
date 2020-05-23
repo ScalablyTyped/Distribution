@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,8 +33,4 @@ trait IdentifyResult
     */
   var layerName: String = js.native
 }
-
-@JSGlobal("__esri.IdentifyResult")
-@js.native
-object IdentifyResult extends TopLevel[IdentifyResultConstructor]
 

@@ -2,7 +2,7 @@ package typings.reactPlacesAutocomplete.mod
 
 import typings.googlemaps.google.maps.places.PredictionSubstring
 import typings.googlemaps.google.maps.places.PredictionTerm
-import typings.reactPlacesAutocomplete.AnonMainText
+import typings.reactPlacesAutocomplete.anon.MainText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait Suggestion extends js.Object {
   var active: Boolean
   var description: String
-  var formattedSuggestion: AnonMainText
+  var formattedSuggestion: MainText
   var id: String
   var index: Double
   var matchedSubstrings: js.Array[PredictionSubstring]
@@ -24,7 +24,7 @@ object Suggestion {
   def apply(
     active: Boolean,
     description: String,
-    formattedSuggestion: AnonMainText,
+    formattedSuggestion: MainText,
     id: String,
     index: Double,
     matchedSubstrings: js.Array[PredictionSubstring],

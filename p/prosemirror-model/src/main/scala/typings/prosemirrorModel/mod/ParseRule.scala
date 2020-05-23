@@ -123,36 +123,38 @@ trait ParseRule extends js.Object {
 object ParseRule {
   @scala.inline
   def apply(
-    attrs: StringDictionary[js.Any] = null,
-    contentElement: String | (js.Function1[/* p */ typings.std.Node, typings.std.Node]) = null,
-    context: String = null,
-    getAttrs: /* p */ typings.std.Node | String => js.UndefOr[StringDictionary[_] | `false` | Null] = null,
-    getContent: (/* p */ typings.std.Node, /* schema */ js.Any) => Fragment[_] = null,
-    ignore: js.UndefOr[Boolean] = js.undefined,
-    mark: String = null,
-    namespace: String = null,
-    node: String = null,
-    preserveWhitespace: Boolean | full = null,
-    priority: Int | Double = null,
-    skip: js.UndefOr[Boolean] = js.undefined,
-    style: String = null,
-    tag: String = null
+    attrs: js.UndefOr[Null | StringDictionary[js.Any]] = js.undefined,
+    contentElement: js.UndefOr[Null | String | (js.Function1[/* p */ typings.std.Node, typings.std.Node])] = js.undefined,
+    context: js.UndefOr[Null | String] = js.undefined,
+    getAttrs: js.UndefOr[
+      Null | (/* p */ typings.std.Node | String => js.UndefOr[StringDictionary[_] | `false` | Null])
+    ] = js.undefined,
+    getContent: js.UndefOr[Null | ((/* p */ typings.std.Node, /* schema */ js.Any) => Fragment[_])] = js.undefined,
+    ignore: js.UndefOr[Null | Boolean] = js.undefined,
+    mark: js.UndefOr[Null | String] = js.undefined,
+    namespace: js.UndefOr[Null | String] = js.undefined,
+    node: js.UndefOr[Null | String] = js.undefined,
+    preserveWhitespace: js.UndefOr[Null | Boolean | full] = js.undefined,
+    priority: js.UndefOr[Null | Double] = js.undefined,
+    skip: js.UndefOr[Null | Boolean] = js.undefined,
+    style: js.UndefOr[Null | String] = js.undefined,
+    tag: js.UndefOr[Null | String] = js.undefined
   ): ParseRule = {
     val __obj = js.Dynamic.literal()
-    if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
-    if (contentElement != null) __obj.updateDynamic("contentElement")(contentElement.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (getAttrs != null) __obj.updateDynamic("getAttrs")(js.Any.fromFunction1(getAttrs))
-    if (getContent != null) __obj.updateDynamic("getContent")(js.Any.fromFunction2(getContent))
+    if (!js.isUndefined(attrs)) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentElement)) __obj.updateDynamic("contentElement")(contentElement.asInstanceOf[js.Any])
+    if (!js.isUndefined(context)) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (!js.isUndefined(getAttrs)) __obj.updateDynamic("getAttrs")(if (getAttrs != null) js.Any.fromFunction1(getAttrs.asInstanceOf[/* p */ typings.std.Node | String => js.UndefOr[StringDictionary[_] | `false` | Null]]) else null)
+    if (!js.isUndefined(getContent)) __obj.updateDynamic("getContent")(if (getContent != null) js.Any.fromFunction2(getContent.asInstanceOf[(/* p */ typings.std.Node, /* schema */ js.Any) => Fragment[_]]) else null)
     if (!js.isUndefined(ignore)) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (mark != null) __obj.updateDynamic("mark")(mark.asInstanceOf[js.Any])
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
-    if (preserveWhitespace != null) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(mark)) __obj.updateDynamic("mark")(mark.asInstanceOf[js.Any])
+    if (!js.isUndefined(namespace)) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
+    if (!js.isUndefined(node)) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveWhitespace)) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(tag)) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseRule]
   }
 }

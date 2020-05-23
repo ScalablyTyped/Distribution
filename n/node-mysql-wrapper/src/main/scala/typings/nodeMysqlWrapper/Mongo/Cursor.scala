@@ -1,6 +1,5 @@
 package typings.nodeMysqlWrapper.Mongo
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,8 +21,4 @@ trait Cursor[T] extends js.Object {
   def observe(callbacks: js.Object): js.Any = js.native
   def observeChanges(callbacks: js.Object): js.Any = js.native
 }
-
-@JSGlobal("Mongo.Cursor")
-@js.native
-object Cursor extends TopLevel[CursorStatic]
 

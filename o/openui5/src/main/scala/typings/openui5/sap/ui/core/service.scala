@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object service extends js.Object {
   @js.native
-  abstract class Service () extends Object {
+  trait Service extends Object {
     /**
       * Cleans up the service instance before destruction.Applications must not call this hook method
       * directly, it is called by theframework when the service is {@link #destroy destroyed}.Subclasses of
@@ -33,7 +33,7 @@ object service extends js.Object {
   }
   
   @js.native
-  class ServiceFactory () extends Object {
+  trait ServiceFactory extends Object {
     /**
       * Creates a new instance of a service. When used as a generic service factoryby providing a service
       * constructor function it will create a new serviceinstance otherwise the function will fail. For

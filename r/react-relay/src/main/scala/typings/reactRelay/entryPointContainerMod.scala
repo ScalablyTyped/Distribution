@@ -2,6 +2,7 @@ package typings.reactRelay
 
 import typings.react.mod.ClassicElement
 import typings.react.mod.ElementType
+import typings.reactRelay.anon.EntryPointReference
 import typings.reactRelay.entryPointTypesMod.EntryPointComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object entryPointContainerMod extends js.Object {
   def EntryPointContainer[TPreloadedQueries /* <: js.Object */, TPreloadedNestedEntryPoints /* <: js.Object */, TRuntimeProps /* <: js.Object */, TExtraProps, TEntryPointComponent /* <: EntryPointComponent[TPreloadedQueries, TPreloadedNestedEntryPoints, TRuntimeProps, TExtraProps] */](
-    hasEntryPointReferenceProps: AnonEntryPointReference[
+    hasEntryPointReferenceProps: EntryPointReference[
       TEntryPointComponent, 
       TRuntimeProps, 
       TPreloadedQueries, 

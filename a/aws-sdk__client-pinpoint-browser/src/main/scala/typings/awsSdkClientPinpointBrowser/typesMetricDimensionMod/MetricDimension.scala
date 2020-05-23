@@ -17,10 +17,10 @@ trait MetricDimension extends js.Object {
 
 object MetricDimension {
   @scala.inline
-  def apply(ComparisonOperator: String = null, Value: Int | Double = null): MetricDimension = {
+  def apply(ComparisonOperator: String = null, Value: js.UndefOr[Double] = js.undefined): MetricDimension = {
     val __obj = js.Dynamic.literal()
     if (ComparisonOperator != null) __obj.updateDynamic("ComparisonOperator")(ComparisonOperator.asInstanceOf[js.Any])
-    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
+    if (!js.isUndefined(Value)) __obj.updateDynamic("Value")(Value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricDimension]
   }
 }

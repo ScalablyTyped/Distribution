@@ -1,8 +1,9 @@
 package typings.aureliaPal.mod
 
-import typings.aureliaPal.AnonInstantiableElement
-import typings.aureliaPal.AnonInstantiableNodeList
-import typings.aureliaPal.AnonInstantiableSVGElement
+import org.scalablytyped.runtime.Instantiable0
+import typings.aureliaPal.anon.InstantiableElement
+import typings.aureliaPal.anon.InstantiableNodeList
+import typings.aureliaPal.anon.InstantiableSVGElement
 import typings.std.Attr
 import typings.std.CSSStyleDeclaration
 import typings.std.Comment
@@ -10,8 +11,8 @@ import typings.std.CustomEvent
 import typings.std.CustomEventInit
 import typings.std.DocumentFragment
 import typings.std.Element
+import typings.std.Event
 import typings.std.EventListenerOrEventListenerObject
-import typings.std.Event_
 import typings.std.HTMLElement
 import typings.std.HTMLTemplateElement
 import typings.std.MutationObserver
@@ -27,15 +28,15 @@ trait Dom extends js.Object {
   /**
     * The global DOM Element type.
     */
-  var Element: AnonInstantiableElement = js.native
+  var Element: InstantiableElement with Instantiable0[typings.std.global.Element] = js.native
   /**
     * The global DOM NodeList type.
     */
-  var NodeList: AnonInstantiableNodeList = js.native
+  var NodeList: InstantiableNodeList with Instantiable0[typings.std.global.NodeList] = js.native
   /**
     * The global DOM SVGElement type.
     */
-  var SVGElement: AnonInstantiableSVGElement = js.native
+  var SVGElement: InstantiableSVGElement with Instantiable0[typings.std.global.SVGElement] = js.native
   /**
     * The document's active/focused element.
     */
@@ -127,7 +128,7 @@ trait Dom extends js.Object {
     * Dispatches an event on the document.
     * @param evt The event to dispatch.
     */
-  def dispatchEvent(evt: Event_): Unit = js.native
+  def dispatchEvent(evt: Event): Unit = js.native
   /**
     * Gives the values of all the CSS properties of an element after applying the active stylesheets and resolving any basic computation those values may contain.
     * @param element The Element for which to get the computed style.

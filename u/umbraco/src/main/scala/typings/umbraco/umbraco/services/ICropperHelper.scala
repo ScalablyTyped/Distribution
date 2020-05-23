@@ -11,14 +11,14 @@ import scala.scalajs.js.annotation._
   */
 trait ICropperHelper extends js.Object {
   /**
-  		* @ngdoc method
-  		* @name umbraco.services.cropperHelper#configuration
-  		* @methodOf umbraco.services.cropperHelper
-  		*
-  		* @description
-  		* Returns a collection of plugins available to the tinyMCE editor
-  		*
-  		*/
+    * @ngdoc method
+    * @name umbraco.services.cropperHelper#configuration
+    * @methodOf umbraco.services.cropperHelper
+    *
+    * @description
+    * Returns a collection of plugins available to the tinyMCE editor
+    *
+    */
   def configuration(mediaTypeAlias: String): js.Any
 }
 

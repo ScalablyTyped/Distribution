@@ -11,19 +11,19 @@ trait IDataWriter extends IBase {
   /** [Config Option] (String) */
   var dateFormat: js.UndefOr[String] = js.undefined
   /** [Method] Formats the data for each record before sending it to the server
-  		* @param record Ext.data.Model The record that we are writing to the server.
-  		* @param operation Ext.data.Operation An operation object.
-  		* @returns Object An object literal of name/value keys to be written to the server. By default this method returns the data property on the record.
-  		*/
+    * @param record Ext.data.Model The record that we are writing to the server.
+    * @param operation Ext.data.Operation An operation object.
+    * @returns Object An object literal of name/value keys to be written to the server. By default this method returns the data property on the record.
+    */
   var getRecordData: js.UndefOr[
     js.Function2[/* record */ js.UndefOr[IModel], /* operation */ js.UndefOr[IOperation], _]
   ] = js.undefined
   /** [Config Option] (String) */
   var nameProperty: js.UndefOr[String] = js.undefined
   /** [Method] Prepares a Proxy s Ext data Request object
-  		* @param request Ext.data.Request The request object
-  		* @returns Ext.data.Request The modified request object
-  		*/
+    * @param request Ext.data.Request The request object
+    * @returns Ext.data.Request The modified request object
+    */
   var write: js.UndefOr[js.Function1[/* request */ js.UndefOr[IRequest], IRequest]] = js.undefined
   /** [Config Option] (Boolean) */
   var writeAllFields: js.UndefOr[Boolean] = js.undefined
@@ -74,12 +74,12 @@ object IDataWriter {
     if (nameProperty != null) __obj.updateDynamic("nameProperty")(nameProperty.asInstanceOf[js.Any])
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     if (write != null) __obj.updateDynamic("write")(js.Any.fromFunction1(write))
-    if (!js.isUndefined(writeAllFields)) __obj.updateDynamic("writeAllFields")(writeAllFields.asInstanceOf[js.Any])
-    if (!js.isUndefined(writeRecordId)) __obj.updateDynamic("writeRecordId")(writeRecordId.asInstanceOf[js.Any])
+    if (!js.isUndefined(writeAllFields)) __obj.updateDynamic("writeAllFields")(writeAllFields.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(writeRecordId)) __obj.updateDynamic("writeRecordId")(writeRecordId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDataWriter]
   }
 }

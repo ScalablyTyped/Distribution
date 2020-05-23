@@ -1,13 +1,13 @@
 package typings.gatsby.mod
 
-import typings.gatsby.AnonEmail
+import typings.gatsby.anon.Email
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PackageJson extends js.Object {
-  var author: js.UndefOr[String | AnonEmail] = js.undefined
+  var author: js.UndefOr[String | Email] = js.undefined
   var bundledDependencies: js.UndefOr[js.Array[String]] = js.undefined
   var dependencies: js.UndefOr[Record[String, String]] = js.undefined
   var description: js.UndefOr[String] = js.undefined
@@ -24,7 +24,7 @@ trait PackageJson extends js.Object {
 object PackageJson {
   @scala.inline
   def apply(
-    author: String | AnonEmail = null,
+    author: String | Email = null,
     bundledDependencies: js.Array[String] = null,
     dependencies: Record[String, String] = null,
     description: String = null,

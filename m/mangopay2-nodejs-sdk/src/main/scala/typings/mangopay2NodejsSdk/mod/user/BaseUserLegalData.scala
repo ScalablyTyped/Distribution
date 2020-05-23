@@ -35,7 +35,7 @@ object BaseUserLegalData {
     HeadquartersAddress: AddressType = null,
     LegalPersonType: LegalPersonType = null,
     LegalRepresentativeAddress: AddressType = null,
-    LegalRepresentativeBirthday: Int | Double = null,
+    LegalRepresentativeBirthday: js.UndefOr[Timestamp] = js.undefined,
     LegalRepresentativeCountryOfResidence: CountryISO = null,
     LegalRepresentativeEmail: String = null,
     LegalRepresentativeFirstName: String = null,
@@ -50,7 +50,7 @@ object BaseUserLegalData {
     if (HeadquartersAddress != null) __obj.updateDynamic("HeadquartersAddress")(HeadquartersAddress.asInstanceOf[js.Any])
     if (LegalPersonType != null) __obj.updateDynamic("LegalPersonType")(LegalPersonType.asInstanceOf[js.Any])
     if (LegalRepresentativeAddress != null) __obj.updateDynamic("LegalRepresentativeAddress")(LegalRepresentativeAddress.asInstanceOf[js.Any])
-    if (LegalRepresentativeBirthday != null) __obj.updateDynamic("LegalRepresentativeBirthday")(LegalRepresentativeBirthday.asInstanceOf[js.Any])
+    if (!js.isUndefined(LegalRepresentativeBirthday)) __obj.updateDynamic("LegalRepresentativeBirthday")(LegalRepresentativeBirthday.get.asInstanceOf[js.Any])
     if (LegalRepresentativeCountryOfResidence != null) __obj.updateDynamic("LegalRepresentativeCountryOfResidence")(LegalRepresentativeCountryOfResidence.asInstanceOf[js.Any])
     if (LegalRepresentativeEmail != null) __obj.updateDynamic("LegalRepresentativeEmail")(LegalRepresentativeEmail.asInstanceOf[js.Any])
     if (LegalRepresentativeFirstName != null) __obj.updateDynamic("LegalRepresentativeFirstName")(LegalRepresentativeFirstName.asInstanceOf[js.Any])

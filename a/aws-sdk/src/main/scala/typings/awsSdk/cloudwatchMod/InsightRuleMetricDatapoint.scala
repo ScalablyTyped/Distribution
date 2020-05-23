@@ -44,22 +44,22 @@ object InsightRuleMetricDatapoint {
   @scala.inline
   def apply(
     Timestamp: Timestamp,
-    Average: Int | Double = null,
-    MaxContributorValue: Int | Double = null,
-    Maximum: Int | Double = null,
-    Minimum: Int | Double = null,
-    SampleCount: Int | Double = null,
-    Sum: Int | Double = null,
-    UniqueContributors: Int | Double = null
+    Average: js.UndefOr[InsightRuleUnboundDouble] = js.undefined,
+    MaxContributorValue: js.UndefOr[InsightRuleUnboundDouble] = js.undefined,
+    Maximum: js.UndefOr[InsightRuleUnboundDouble] = js.undefined,
+    Minimum: js.UndefOr[InsightRuleUnboundDouble] = js.undefined,
+    SampleCount: js.UndefOr[InsightRuleUnboundDouble] = js.undefined,
+    Sum: js.UndefOr[InsightRuleUnboundDouble] = js.undefined,
+    UniqueContributors: js.UndefOr[InsightRuleUnboundDouble] = js.undefined
   ): InsightRuleMetricDatapoint = {
     val __obj = js.Dynamic.literal(Timestamp = Timestamp.asInstanceOf[js.Any])
-    if (Average != null) __obj.updateDynamic("Average")(Average.asInstanceOf[js.Any])
-    if (MaxContributorValue != null) __obj.updateDynamic("MaxContributorValue")(MaxContributorValue.asInstanceOf[js.Any])
-    if (Maximum != null) __obj.updateDynamic("Maximum")(Maximum.asInstanceOf[js.Any])
-    if (Minimum != null) __obj.updateDynamic("Minimum")(Minimum.asInstanceOf[js.Any])
-    if (SampleCount != null) __obj.updateDynamic("SampleCount")(SampleCount.asInstanceOf[js.Any])
-    if (Sum != null) __obj.updateDynamic("Sum")(Sum.asInstanceOf[js.Any])
-    if (UniqueContributors != null) __obj.updateDynamic("UniqueContributors")(UniqueContributors.asInstanceOf[js.Any])
+    if (!js.isUndefined(Average)) __obj.updateDynamic("Average")(Average.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxContributorValue)) __obj.updateDynamic("MaxContributorValue")(MaxContributorValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Maximum)) __obj.updateDynamic("Maximum")(Maximum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Minimum)) __obj.updateDynamic("Minimum")(Minimum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SampleCount)) __obj.updateDynamic("SampleCount")(SampleCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Sum)) __obj.updateDynamic("Sum")(Sum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(UniqueContributors)) __obj.updateDynamic("UniqueContributors")(UniqueContributors.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightRuleMetricDatapoint]
   }
 }

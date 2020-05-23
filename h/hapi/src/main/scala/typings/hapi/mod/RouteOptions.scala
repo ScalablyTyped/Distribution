@@ -1,11 +1,10 @@
 package typings.hapi.mod
 
-import typings.hapi.AnonCollect
-import typings.hapi.AnonFailAction
-import typings.hapi.AnonRelativeTo
-import typings.hapi.AnonServer
+import typings.hapi.anon.Collect
+import typings.hapi.anon.FailAction
+import typings.hapi.anon.RelativeTo
+import typings.hapi.anon.keyinRouteRequestExtTypeR
 import typings.hapi.hapiBooleans.`false`
-import typings.hapi.keyinRouteRequestExtTypeR
 import typings.hapi.mod.Json.StringifyArguments
 import typings.hapi.mod.Lifecycle.Method
 import typings.hapi.mod.Util.Dictionary
@@ -91,7 +90,7 @@ trait RouteOptions extends js.Object {
     * * relativeTo - determines the folder relative paths are resolved against.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsfiles)
     */
-  var files: js.UndefOr[AnonRelativeTo] = js.undefined
+  var files: js.UndefOr[RelativeTo] = js.undefined
   /**
     * Default value: none.
     * The route handler function performs the main business logic of the route and sets the response. handler can be assigned:
@@ -139,7 +138,7 @@ trait RouteOptions extends js.Object {
     * collect - if true, request-level logs (both internal and application) are collected and accessible via request.logs.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionslog)
     */
-  var log: js.UndefOr[AnonCollect] = js.undefined
+  var log: js.UndefOr[Collect] = js.undefined
   /**
     * Default value: none.
     * Route notes used for generating documentation (string or array of strings).
@@ -194,7 +193,7 @@ trait RouteOptions extends js.Object {
     * errors. Defaults to 'error' (return a Bad Request (400) error response).
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsstate)
     */
-  var state: js.UndefOr[AnonFailAction] = js.undefined
+  var state: js.UndefOr[FailAction] = js.undefined
   /**
     * Default value: none.
     * Route tags used for generating documentation (array of strings).
@@ -207,7 +206,7 @@ trait RouteOptions extends js.Object {
     * Timeouts for processing durations.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionstimeout)
     */
-  var timeout: js.UndefOr[AnonServer] = js.undefined
+  var timeout: js.UndefOr[typings.hapi.anon.Server] = js.undefined
   /**
     * Default value: { headers: true, params: true, query: true, payload: true, failAction: 'error' }.
     * Request input validation rules for various request components.
@@ -221,34 +220,34 @@ object RouteOptions {
   def apply(
     app: RouteOptionsApp = null,
     auth: `false` | String | RouteOptionsAccess = null,
-    bind: js.Object = null,
+    bind: js.UndefOr[Null | js.Object] = js.undefined,
     cache: `false` | RouteOptionsCache = null,
     compression: Dictionary[RouteCompressionEncoderSettings] = null,
     cors: Boolean | RouteOptionsCors = null,
     description: String = null,
     ext: keyinRouteRequestExtTypeR = null,
-    files: AnonRelativeTo = null,
+    files: RelativeTo = null,
     handler: Method | js.Object = null,
     id: String = null,
     isInternal: js.UndefOr[Boolean] = js.undefined,
     json: StringifyArguments = null,
     jsonp: String = null,
-    log: AnonCollect = null,
+    log: Collect = null,
     notes: String | js.Array[String] = null,
     payload: RouteOptionsPayload = null,
     plugins: PluginSpecificConfiguration = null,
     pre: RouteOptionsPreArray = null,
     response: RouteOptionsResponse = null,
     security: RouteOptionsSecure = null,
-    state: AnonFailAction = null,
+    state: FailAction = null,
     tags: js.Array[String] = null,
-    timeout: AnonServer = null,
+    timeout: typings.hapi.anon.Server = null,
     validate: RouteOptionsValidate = null
   ): RouteOptions = {
     val __obj = js.Dynamic.literal()
     if (app != null) __obj.updateDynamic("app")(app.asInstanceOf[js.Any])
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (bind != null) __obj.updateDynamic("bind")(bind.asInstanceOf[js.Any])
+    if (!js.isUndefined(bind)) __obj.updateDynamic("bind")(bind.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
     if (cors != null) __obj.updateDynamic("cors")(cors.asInstanceOf[js.Any])
@@ -257,7 +256,7 @@ object RouteOptions {
     if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
     if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInternal)) __obj.updateDynamic("isInternal")(isInternal.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInternal)) __obj.updateDynamic("isInternal")(isInternal.get.asInstanceOf[js.Any])
     if (json != null) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
     if (jsonp != null) __obj.updateDynamic("jsonp")(jsonp.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])

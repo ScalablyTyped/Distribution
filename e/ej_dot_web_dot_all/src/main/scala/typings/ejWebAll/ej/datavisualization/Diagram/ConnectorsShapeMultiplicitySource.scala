@@ -22,14 +22,14 @@ trait ConnectorsShapeMultiplicitySource extends js.Object {
 object ConnectorsShapeMultiplicitySource {
   @scala.inline
   def apply(
-    lowerBounds: Int | Double = null,
+    lowerBounds: js.UndefOr[Double] = js.undefined,
     optional: js.UndefOr[Boolean] = js.undefined,
-    upperBounds: Int | Double = null
+    upperBounds: js.UndefOr[Double] = js.undefined
   ): ConnectorsShapeMultiplicitySource = {
     val __obj = js.Dynamic.literal()
-    if (lowerBounds != null) __obj.updateDynamic("lowerBounds")(lowerBounds.asInstanceOf[js.Any])
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
-    if (upperBounds != null) __obj.updateDynamic("upperBounds")(upperBounds.asInstanceOf[js.Any])
+    if (!js.isUndefined(lowerBounds)) __obj.updateDynamic("lowerBounds")(lowerBounds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(upperBounds)) __obj.updateDynamic("upperBounds")(upperBounds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectorsShapeMultiplicitySource]
   }
 }

@@ -12,9 +12,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.ChartFillFormat")
 @js.native
-class ChartFillFormat protected () extends js.Object {
+trait ChartFillFormat extends js.Object {
   val Application: js.Any = js.native
   val BackColor: ChartColorFormat = js.native
   val Creator: Double = js.native

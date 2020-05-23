@@ -10,9 +10,9 @@ trait ReplaceAllTextResponse extends js.Object {
 
 object ReplaceAllTextResponse {
   @scala.inline
-  def apply(occurrencesChanged: Int | Double = null): ReplaceAllTextResponse = {
+  def apply(occurrencesChanged: js.UndefOr[Double] = js.undefined): ReplaceAllTextResponse = {
     val __obj = js.Dynamic.literal()
-    if (occurrencesChanged != null) __obj.updateDynamic("occurrencesChanged")(occurrencesChanged.asInstanceOf[js.Any])
+    if (!js.isUndefined(occurrencesChanged)) __obj.updateDynamic("occurrencesChanged")(occurrencesChanged.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceAllTextResponse]
   }
 }

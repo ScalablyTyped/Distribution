@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -41,7 +40,16 @@ trait Widgette extends js.Object {
   def on(`type`: String, listener: js.Function): js.Any
 }
 
-@JSGlobal("__esri.Widgette")
-@js.native
-object Widgette extends TopLevel[WidgetteConstructor]
+object Widgette {
+  @scala.inline
+  def apply(
+    container: String | HTMLElement,
+    destroy: () => Unit,
+    on: (String, js.Function) => js.Any,
+    visible: Boolean
+  ): Widgette = {
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), on = js.Any.fromFunction2(on), visible = visible.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Widgette]
+  }
+}
 

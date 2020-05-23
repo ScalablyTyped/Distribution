@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.panelTypesMod
 
-import typings.officeUiFabricReact.PartialIButtonStyles
+import typings.officeUiFabricReact.anon.PartialIButtonStyles
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

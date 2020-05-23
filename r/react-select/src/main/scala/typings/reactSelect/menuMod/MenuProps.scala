@@ -38,10 +38,10 @@ trait MenuProps[OptionType /* <: OptionTypeBase */] extends js.Object {
   def clearValue(): Unit = js.native
   def cx(): String | Unit = js.native
   def cx(a: String): String | Unit = js.native
-  def cx(a: String, b: js.UndefOr[ClassNamesState], c: String): String | Unit = js.native
   def cx(a: String, b: ClassNamesState): String | Unit = js.native
-  def cx(a: Null, b: js.UndefOr[ClassNamesState], c: String): String | Unit = js.native
+  def cx(a: String, b: ClassNamesState, c: String): String | Unit = js.native
   def cx(a: Null, b: ClassNamesState): String | Unit = js.native
+  def cx(a: Null, b: ClassNamesState, c: String): String | Unit = js.native
   /** Callback to update the portal after possible flip. */
   def getPortalPlacement(state: MenuState): Unit = js.native
   /*

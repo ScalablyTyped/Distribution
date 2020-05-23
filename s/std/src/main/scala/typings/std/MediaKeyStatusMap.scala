@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,8 +23,4 @@ trait MediaKeyStatusMap extends js.Object {
   def keys(): IterableIterator[BufferSource] = js.native
   def values(): IterableIterator[MediaKeyStatus] = js.native
 }
-
-@JSGlobal("MediaKeyStatusMap")
-@js.native
-object MediaKeyStatusMap extends Instantiable0[MediaKeyStatusMap]
 

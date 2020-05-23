@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,8 +37,4 @@ trait ColorSliderViewModel extends SmartMappingSliderViewModel {
     */
   def getStopInfo(): js.Array[ColorSliderViewModelStopInfo] = js.native
 }
-
-@JSGlobal("__esri.ColorSliderViewModel")
-@js.native
-object ColorSliderViewModel extends TopLevel[ColorSliderViewModelConstructor]
 

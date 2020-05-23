@@ -22,11 +22,11 @@ object CropPropertiesSuggestionState {
     offsetTopSuggested: js.UndefOr[Boolean] = js.undefined
   ): CropPropertiesSuggestionState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(angleSuggested)) __obj.updateDynamic("angleSuggested")(angleSuggested.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetBottomSuggested)) __obj.updateDynamic("offsetBottomSuggested")(offsetBottomSuggested.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetLeftSuggested)) __obj.updateDynamic("offsetLeftSuggested")(offsetLeftSuggested.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetRightSuggested)) __obj.updateDynamic("offsetRightSuggested")(offsetRightSuggested.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetTopSuggested)) __obj.updateDynamic("offsetTopSuggested")(offsetTopSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(angleSuggested)) __obj.updateDynamic("angleSuggested")(angleSuggested.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetBottomSuggested)) __obj.updateDynamic("offsetBottomSuggested")(offsetBottomSuggested.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetLeftSuggested)) __obj.updateDynamic("offsetLeftSuggested")(offsetLeftSuggested.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetRightSuggested)) __obj.updateDynamic("offsetRightSuggested")(offsetRightSuggested.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetTopSuggested)) __obj.updateDynamic("offsetTopSuggested")(offsetTopSuggested.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CropPropertiesSuggestionState]
   }
 }

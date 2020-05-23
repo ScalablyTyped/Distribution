@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Foundation.Diagnostics
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object CausalityTraceLevel extends js.Object {
   /** Indicates operations that influence causality but are likely to be less interesting for developers, including actions like registering progress delegates. */
   @js.native
   sealed trait verbose extends CausalityTraceLevel
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CausalityTraceLevel with Double] = js.native
-  /* 1 */ @js.native
-  object important extends TopLevel[important with Double]
-  
-  /* 0 */ @js.native
-  object required extends TopLevel[required with Double]
-  
-  /* 2 */ @js.native
-  object verbose extends TopLevel[verbose with Double]
   
 }
 

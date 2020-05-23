@@ -86,25 +86,25 @@ object TableCellData {
   @scala.inline
   def apply(
     body: BodyData = null,
-    cellIndex: Int | Double = null,
-    columnWidth: Int | Double = null,
+    cellIndex: js.UndefOr[Double] = js.undefined,
+    columnWidth: js.UndefOr[Double] = js.undefined,
     horizontalAlignment: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified = null,
-    rowIndex: Int | Double = null,
+    rowIndex: js.UndefOr[Double] = js.undefined,
     shadingColor: String = null,
     value: String = null,
     verticalAlignment: VerticalAlignment | Mixed | Top | Center | Bottom = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): TableCellData = {
     val __obj = js.Dynamic.literal()
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (cellIndex != null) __obj.updateDynamic("cellIndex")(cellIndex.asInstanceOf[js.Any])
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellIndex)) __obj.updateDynamic("cellIndex")(cellIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnWidth)) __obj.updateDynamic("columnWidth")(columnWidth.get.asInstanceOf[js.Any])
     if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.get.asInstanceOf[js.Any])
     if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableCellData]
   }
 }

@@ -75,7 +75,7 @@ object DrilldownOptions {
     val __obj = js.Dynamic.literal()
     if (activeAxisLabelStyle != null) __obj.updateDynamic("activeAxisLabelStyle")(activeAxisLabelStyle.asInstanceOf[js.Any])
     if (activeDataLabelStyle != null) __obj.updateDynamic("activeDataLabelStyle")(activeDataLabelStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowPointDrilldown)) __obj.updateDynamic("allowPointDrilldown")(allowPointDrilldown.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowPointDrilldown)) __obj.updateDynamic("allowPointDrilldown")(allowPointDrilldown.get.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (drillUpButton != null) __obj.updateDynamic("drillUpButton")(drillUpButton.asInstanceOf[js.Any])
     if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])

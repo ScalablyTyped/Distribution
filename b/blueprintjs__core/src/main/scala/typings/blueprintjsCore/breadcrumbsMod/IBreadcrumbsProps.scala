@@ -1,11 +1,11 @@
 package typings.blueprintjsCore.breadcrumbsMod
 
-import typings.blueprintjsCore.PartialIOverflowListProps
+import typings.blueprintjsCore.anon.PartialIOverflowListProps
 import typings.blueprintjsCore.boundaryMod.Boundary
 import typings.blueprintjsCore.breadcrumbMod.IBreadcrumbProps
 import typings.blueprintjsCore.popoverMod.IPopoverProps
 import typings.blueprintjsCore.propsMod.IProps
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,7 +61,7 @@ object IBreadcrumbsProps {
     className: String = null,
     collapseFrom: Boundary = null,
     currentBreadcrumbRenderer: /* props */ IBreadcrumbProps => Element = null,
-    minVisibleItems: Int | Double = null,
+    minVisibleItems: js.UndefOr[Double] = js.undefined,
     overflowListProps: PartialIOverflowListProps = null,
     popoverProps: IPopoverProps = null
   ): IBreadcrumbsProps = {
@@ -70,7 +70,7 @@ object IBreadcrumbsProps {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (collapseFrom != null) __obj.updateDynamic("collapseFrom")(collapseFrom.asInstanceOf[js.Any])
     if (currentBreadcrumbRenderer != null) __obj.updateDynamic("currentBreadcrumbRenderer")(js.Any.fromFunction1(currentBreadcrumbRenderer))
-    if (minVisibleItems != null) __obj.updateDynamic("minVisibleItems")(minVisibleItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(minVisibleItems)) __obj.updateDynamic("minVisibleItems")(minVisibleItems.get.asInstanceOf[js.Any])
     if (overflowListProps != null) __obj.updateDynamic("overflowListProps")(overflowListProps.asInstanceOf[js.Any])
     if (popoverProps != null) __obj.updateDynamic("popoverProps")(popoverProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBreadcrumbsProps]

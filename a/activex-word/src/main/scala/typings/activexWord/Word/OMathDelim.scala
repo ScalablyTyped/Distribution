@@ -4,21 +4,41 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.OMathDelim")
-@js.native
-class OMathDelim protected () extends js.Object {
-  val Application: typings.activexWord.Word.Application = js.native
-  var BegChar: Double = js.native
-  val Creator: Double = js.native
-  val E: OMathArgs = js.native
-  var EndChar: Double = js.native
-  var Grow: Boolean = js.native
-  var NoLeftChar: Boolean = js.native
-  var NoRightChar: Boolean = js.native
-  val Parent: js.Any = js.native
-  var SepChar: Double = js.native
-  var Shape: WdOMathShapeType = js.native
+trait OMathDelim extends js.Object {
+  val Application: typings.activexWord.Word.Application
+  var BegChar: Double
+  val Creator: Double
+  val E: OMathArgs
+  var EndChar: Double
+  var Grow: Boolean
+  var NoLeftChar: Boolean
+  var NoRightChar: Boolean
+  val Parent: js.Any
+  var SepChar: Double
+  var Shape: WdOMathShapeType
   @JSName("Word.OMathDelim_typekey")
-  var WordDotOMathDelim_typekey: OMathDelim = js.native
+  var WordDotOMathDelim_typekey: OMathDelim
+}
+
+object OMathDelim {
+  @scala.inline
+  def apply(
+    Application: Application,
+    BegChar: Double,
+    Creator: Double,
+    E: OMathArgs,
+    EndChar: Double,
+    Grow: Boolean,
+    NoLeftChar: Boolean,
+    NoRightChar: Boolean,
+    Parent: js.Any,
+    SepChar: Double,
+    Shape: WdOMathShapeType,
+    WordDotOMathDelim_typekey: OMathDelim
+  ): OMathDelim = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], BegChar = BegChar.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], E = E.asInstanceOf[js.Any], EndChar = EndChar.asInstanceOf[js.Any], Grow = Grow.asInstanceOf[js.Any], NoLeftChar = NoLeftChar.asInstanceOf[js.Any], NoRightChar = NoRightChar.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], SepChar = SepChar.asInstanceOf[js.Any], Shape = Shape.asInstanceOf[js.Any])
+    __obj.updateDynamic("Word.OMathDelim_typekey")(WordDotOMathDelim_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OMathDelim]
+  }
 }
 

@@ -48,20 +48,20 @@ object GetOrganizationsAccessReportResponse {
     JobStatus: jobStatusType,
     AccessDetails: AccessDetails = null,
     ErrorDetails: ErrorDetails = null,
-    IsTruncated: js.UndefOr[Boolean] = js.undefined,
+    IsTruncated: js.UndefOr[booleanType] = js.undefined,
     JobCompletionDate: dateType = null,
     Marker: markerType = null,
-    NumberOfServicesAccessible: Int | Double = null,
-    NumberOfServicesNotAccessed: Int | Double = null
+    NumberOfServicesAccessible: js.UndefOr[integerType] = js.undefined,
+    NumberOfServicesNotAccessed: js.UndefOr[integerType] = js.undefined
   ): GetOrganizationsAccessReportResponse = {
     val __obj = js.Dynamic.literal(JobCreationDate = JobCreationDate.asInstanceOf[js.Any], JobStatus = JobStatus.asInstanceOf[js.Any])
     if (AccessDetails != null) __obj.updateDynamic("AccessDetails")(AccessDetails.asInstanceOf[js.Any])
     if (ErrorDetails != null) __obj.updateDynamic("ErrorDetails")(ErrorDetails.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.get.asInstanceOf[js.Any])
     if (JobCompletionDate != null) __obj.updateDynamic("JobCompletionDate")(JobCompletionDate.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (NumberOfServicesAccessible != null) __obj.updateDynamic("NumberOfServicesAccessible")(NumberOfServicesAccessible.asInstanceOf[js.Any])
-    if (NumberOfServicesNotAccessed != null) __obj.updateDynamic("NumberOfServicesNotAccessed")(NumberOfServicesNotAccessed.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfServicesAccessible)) __obj.updateDynamic("NumberOfServicesAccessible")(NumberOfServicesAccessible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfServicesNotAccessed)) __obj.updateDynamic("NumberOfServicesNotAccessed")(NumberOfServicesNotAccessed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOrganizationsAccessReportResponse]
   }
 }

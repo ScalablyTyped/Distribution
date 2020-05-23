@@ -213,6 +213,9 @@ object tabulatorTablesStrings {
   sealed trait hours extends js.Object
   
   @js.native
+  sealed trait hover extends js.Object
+  
+  @js.native
   sealed trait html
     extends DownloadType
        with _Formatter
@@ -558,6 +561,8 @@ object tabulatorTablesStrings {
   def highlight: highlight = "highlight".asInstanceOf[highlight]
   @scala.inline
   def hours: hours = "hours".asInstanceOf[hours]
+  @scala.inline
+  def hover: hover = "hover".asInstanceOf[hover]
   @scala.inline
   def html: html = "html".asInstanceOf[html]
   @scala.inline

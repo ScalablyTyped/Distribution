@@ -7,9 +7,9 @@ import typings.node.Buffer
 import typings.node.http2Mod.Http2ServerRequest
 import typings.node.httpMod.IncomingMessage
 import typings.node.urlMod.URL_
-import typings.openidClient.AnonBody
-import typings.openidClient.AnonBodyDELETE
-import typings.openidClient.AnonBodyGET
+import typings.openidClient.anon.Body
+import typings.openidClient.anon.Headers
+import typings.openidClient.anon.Params
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,6 +20,7 @@ class Client protected ()
   extends /* key */ StringDictionary[js.Any] {
   def this(metadata: ClientMetadata) = this()
   def this(metadata: ClientMetadata, jwks: JSONWebKeySet) = this()
+  def this(metadata: ClientMetadata, jwks: JSONWebKeySet, options: ClientOptions) = this()
   var metadata: ClientMetadata = js.native
   var static: js.Any = js.native
   /**
@@ -28,18 +29,6 @@ class Client protected ()
     */
   def authorizationUrl(): String = js.native
   def authorizationUrl(parameters: AuthorizationParameters): String = js.native
-  def callback(redirectUri: js.UndefOr[scala.Nothing], parameters: CallbackParamsType): js.Promise[TokenSet] = js.native
-  def callback(
-    redirectUri: js.UndefOr[scala.Nothing],
-    parameters: CallbackParamsType,
-    checks: OpenIDCallbackChecks
-  ): js.Promise[TokenSet] = js.native
-  def callback(
-    redirectUri: js.UndefOr[scala.Nothing],
-    parameters: CallbackParamsType,
-    checks: OpenIDCallbackChecks,
-    extras: CallbackExtras
-  ): js.Promise[TokenSet] = js.native
   /**
     * Performs the callback for Authorization Server's authorization response.
     * @param redirectUri redirect_uri used for the authorization request
@@ -47,10 +36,10 @@ class Client protected ()
     * @param checks checks to perform on the Authorization Response
     * @param extras add extra parameters to the Token Endpoint Request and/or Client Authentication JWT Assertion
     */
-  def callback(redirectUri: String, parameters: CallbackParamsType): js.Promise[TokenSet] = js.native
-  def callback(redirectUri: String, parameters: CallbackParamsType, checks: OpenIDCallbackChecks): js.Promise[TokenSet] = js.native
+  def callback(redirectUri: js.UndefOr[String], parameters: CallbackParamsType): js.Promise[TokenSet] = js.native
+  def callback(redirectUri: js.UndefOr[String], parameters: CallbackParamsType, checks: OpenIDCallbackChecks): js.Promise[TokenSet] = js.native
   def callback(
-    redirectUri: String,
+    redirectUri: js.UndefOr[String],
     parameters: CallbackParamsType,
     checks: OpenIDCallbackChecks,
     extras: CallbackExtras
@@ -92,18 +81,6 @@ class Client protected ()
   def introspect(token: String): js.Promise[IntrospectionResponse] = js.native
   def introspect(token: String, tokenTypeHint: TokenTypeHint): js.Promise[IntrospectionResponse] = js.native
   def introspect(token: String, tokenTypeHint: TokenTypeHint, extras: IntrospectExtras): js.Promise[IntrospectionResponse] = js.native
-  def oauthCallback(redirectUri: js.UndefOr[scala.Nothing], parameters: CallbackParamsType): js.Promise[TokenSet] = js.native
-  def oauthCallback(
-    redirectUri: js.UndefOr[scala.Nothing],
-    parameters: CallbackParamsType,
-    checks: OAuthCallbackChecks
-  ): js.Promise[TokenSet] = js.native
-  def oauthCallback(
-    redirectUri: js.UndefOr[scala.Nothing],
-    parameters: CallbackParamsType,
-    checks: OAuthCallbackChecks,
-    extras: CallbackExtras
-  ): js.Promise[TokenSet] = js.native
   /**
     * Pure OAuth 2.0 version of callback().
     * @param redirectUri redirect_uri used for the authorization request
@@ -111,10 +88,10 @@ class Client protected ()
     * @param checks checks to perform on the Authorization Response
     * @param extras add extra parameters to the Token Endpoint Request and/or Client Authentication JWT Assertion
     */
-  def oauthCallback(redirectUri: String, parameters: CallbackParamsType): js.Promise[TokenSet] = js.native
-  def oauthCallback(redirectUri: String, parameters: CallbackParamsType, checks: OAuthCallbackChecks): js.Promise[TokenSet] = js.native
+  def oauthCallback(redirectUri: js.UndefOr[String], parameters: CallbackParamsType): js.Promise[TokenSet] = js.native
+  def oauthCallback(redirectUri: js.UndefOr[String], parameters: CallbackParamsType, checks: OAuthCallbackChecks): js.Promise[TokenSet] = js.native
   def oauthCallback(
-    redirectUri: String,
+    redirectUri: js.UndefOr[String],
     parameters: CallbackParamsType,
     checks: OAuthCallbackChecks,
     extras: CallbackExtras
@@ -136,7 +113,7 @@ class Client protected ()
     */
   def requestObject(payload: RequestObjectPayload): js.Promise[String] = js.native
   def requestResource(resourceUrl: String, accessToken: String): GotPromise[Buffer] = js.native
-  def requestResource(resourceUrl: String, accessToken: String, options: AnonBodyDELETE): GotPromise[Buffer] = js.native
+  def requestResource(resourceUrl: String, accessToken: String, options: Body): GotPromise[Buffer] = js.native
   /**
     * Fetches an arbitrary resource with the provided Access Token in an Authorization header.
     *
@@ -146,18 +123,18 @@ class Client protected ()
     * @param options Options for the request.
     */
   def requestResource(resourceUrl: String, accessToken: TokenSet): GotPromise[Buffer] = js.native
-  def requestResource(resourceUrl: String, accessToken: TokenSet, options: AnonBodyDELETE): GotPromise[Buffer] = js.native
+  def requestResource(resourceUrl: String, accessToken: TokenSet, options: Body): GotPromise[Buffer] = js.native
   def requestResource(resourceUrl: URL_, accessToken: String): GotPromise[Buffer] = js.native
-  def requestResource(resourceUrl: URL_, accessToken: String, options: AnonBodyDELETE): GotPromise[Buffer] = js.native
+  def requestResource(resourceUrl: URL_, accessToken: String, options: Body): GotPromise[Buffer] = js.native
   def requestResource(resourceUrl: URL_, accessToken: TokenSet): GotPromise[Buffer] = js.native
-  def requestResource(resourceUrl: URL_, accessToken: TokenSet, options: AnonBodyDELETE): GotPromise[Buffer] = js.native
+  def requestResource(resourceUrl: URL_, accessToken: TokenSet, options: Body): GotPromise[Buffer] = js.native
   def resource(resourceUrl: String, accessToken: String): GotPromise[Buffer] = js.native
-  def resource(resourceUrl: String, accessToken: String, options: AnonBodyGET): GotPromise[Buffer] = js.native
+  def resource(resourceUrl: String, accessToken: String, options: Headers): GotPromise[Buffer] = js.native
   /**
     * @deprecated in favor of client.requestResource
     */
   def resource(resourceUrl: String, accessToken: TokenSet): GotPromise[Buffer] = js.native
-  def resource(resourceUrl: String, accessToken: TokenSet, options: AnonBodyGET): GotPromise[Buffer] = js.native
+  def resource(resourceUrl: String, accessToken: TokenSet, options: Headers): GotPromise[Buffer] = js.native
   /**
     * Revokes a token at the Authorization Server's revocation_endpoint.
     */
@@ -165,7 +142,7 @@ class Client protected ()
   def revoke(token: String, tokenTypeHint: TokenTypeHint): js.Promise[js.UndefOr[scala.Nothing]] = js.native
   def revoke(token: String, tokenTypeHint: TokenTypeHint, extras: RevokeExtras): js.Promise[js.UndefOr[scala.Nothing]] = js.native
   def userinfo(accessToken: String): js.Promise[UserinfoResponse] = js.native
-  def userinfo(accessToken: String, options: AnonBody): js.Promise[UserinfoResponse] = js.native
+  def userinfo(accessToken: String, options: Params): js.Promise[UserinfoResponse] = js.native
   /**
     * Fetches the OIDC userinfo response with the provided Access Token. Also handles signed and/or
     * encrypted userinfo responses. When TokenSet is provided as an argument the userinfo sub property
@@ -176,7 +153,7 @@ class Client protected ()
     * @param options Options for the UserInfo request.
     */
   def userinfo(accessToken: TokenSet): js.Promise[UserinfoResponse] = js.native
-  def userinfo(accessToken: TokenSet, options: AnonBody): js.Promise[UserinfoResponse] = js.native
+  def userinfo(accessToken: TokenSet, options: Params): js.Promise[UserinfoResponse] = js.native
 }
 
 /* static members */
@@ -185,7 +162,13 @@ class Client protected ()
 object Client extends js.Object {
   def fromUri(registrationClientUri: String, registrationAccessToken: String): js.Promise[Client] = js.native
   def fromUri(registrationClientUri: String, registrationAccessToken: String, jwks: JSONWebKeySet): js.Promise[Client] = js.native
+  def fromUri(
+    registrationClientUri: String,
+    registrationAccessToken: String,
+    jwks: JSONWebKeySet,
+    clientOptions: ClientOptions
+  ): js.Promise[Client] = js.native
   def register(metadata: js.Object): js.Promise[Client] = js.native
-  def register(metadata: js.Object, other: RegisterOther): js.Promise[Client] = js.native
+  def register(metadata: js.Object, other: RegisterOther with ClientOptions): js.Promise[Client] = js.native
 }
 

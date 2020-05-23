@@ -1,8 +1,8 @@
 package typings.go.mod
 
-import typings.go.AnonBackground
-import typings.go.AnonDocument
-import typings.std.Event_
+import typings.go.anon.Background
+import typings.go.anon.Document
+import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLImageElement
 import typings.std.SVGElement
@@ -563,13 +563,13 @@ class Diagram () extends js.Object {
     * @param {Object=} properties For details see the argument description of .makeImageData.
     */
   def makeImage(): HTMLImageElement = js.native
-  def makeImage(properties: AnonBackground): HTMLImageElement = js.native
+  def makeImage(properties: Background): HTMLImageElement = js.native
   /**
     * Create a bitmap of the current Diagram encoded as a base64 string.
     * @param {Object=} properties a JavaScript object detailing optional arguments for image creation, to be passed to makeImageData.
     */
   def makeImageData(): String = js.native
-  def makeImageData(properties: AnonBackground): String = js.native
+  def makeImageData(properties: Background): String = js.native
   /**
     * Create an SVGElement that contains a SVG rendering of the current Diagram.
     * By default this method returns a snapshot of the visible diagram, but optional arguments give more options.
@@ -577,7 +577,7 @@ class Diagram () extends js.Object {
     * @return {SVGElement}
     */
   def makeSvg(): SVGElement = js.native
-  def makeSvg(properties: AnonDocument): SVGElement = js.native
+  def makeSvg(properties: Document): SVGElement = js.native
     // undocumented
   def maybeUpdate(): Unit = js.native
   /**Gets or sets the function to execute when the user is dragging the selection in the background of the Diagram during a DraggingTool drag-and-drop, not over any GraphObjects.*/
@@ -693,11 +693,11 @@ class Diagram () extends js.Object {
     // undocumented
   def setRenderingHint(name: String, `val`: js.Any): Unit = js.native
     // undocumented
-  def simulatedMouseMove(e: Event_, modelpt: Point): Boolean = js.native
-  def simulatedMouseMove(e: Event_, modelpt: Point, overdiag: Diagram): Boolean = js.native
+  def simulatedMouseMove(e: Event, modelpt: Point): Boolean = js.native
+  def simulatedMouseMove(e: Event, modelpt: Point, overdiag: Diagram): Boolean = js.native
     // undocumented
-  def simulatedMouseUp(e: Event_, other: Diagram, modelpt: Point): Boolean = js.native
-  def simulatedMouseUp(e: Event_, other: Diagram, modelpt: Point, curdiag: Diagram): Boolean = js.native
+  def simulatedMouseUp(e: Event, other: Diagram, modelpt: Point): Boolean = js.native
+  def simulatedMouseUp(e: Event, other: Diagram, modelpt: Point, curdiag: Diagram): Boolean = js.native
   /**
     * Begin a transaction, where the changes are held by a Transaction object in the UndoManager.
     * This just calls UndoManager.startTransaction.

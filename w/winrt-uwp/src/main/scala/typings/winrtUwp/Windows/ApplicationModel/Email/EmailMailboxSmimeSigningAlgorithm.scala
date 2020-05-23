@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object EmailMailboxSmimeSigningAlgorithm extends js.Object {
   /** Use Secure Hash Algorithm 1 (160-bit). */
   @js.native
   sealed trait sha1 extends EmailMailboxSmimeSigningAlgorithm
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EmailMailboxSmimeSigningAlgorithm with Double] = js.native
-  /* 0 */ @js.native
-  object any extends TopLevel[any with Double]
-  
-  /* 2 */ @js.native
-  object md5 extends TopLevel[md5 with Double]
-  
-  /* 1 */ @js.native
-  object sha1 extends TopLevel[sha1 with Double]
   
 }
 

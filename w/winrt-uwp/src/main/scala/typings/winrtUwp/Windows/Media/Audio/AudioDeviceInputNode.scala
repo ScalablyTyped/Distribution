@@ -10,9 +10,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents an audio device input node. */
-@JSGlobal("Windows.Media.Audio.AudioDeviceInputNode")
 @js.native
-abstract class AudioDeviceInputNode () extends js.Object {
+trait AudioDeviceInputNode extends js.Object {
   /** Gets or sets a value indicating if the audio device input node consumes input. */
   var consumeInput: Boolean = js.native
   /** Gets information about the audio device. */

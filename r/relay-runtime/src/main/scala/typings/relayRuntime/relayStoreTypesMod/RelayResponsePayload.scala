@@ -19,18 +19,18 @@ object RelayResponsePayload {
   @scala.inline
   def apply(
     source: MutableRecordSource,
-    connectionEvents: js.Array[ConnectionInternalEvent] = null,
-    errors: js.Array[PayloadError] = null,
-    fieldPayloads: js.Array[HandleFieldPayload] = null,
-    incrementalPlaceholders: js.Array[IncrementalDataPlaceholder] = null,
-    moduleImportPayloads: js.Array[ModuleImportPayload] = null
+    connectionEvents: js.UndefOr[Null | js.Array[ConnectionInternalEvent]] = js.undefined,
+    errors: js.UndefOr[Null | js.Array[PayloadError]] = js.undefined,
+    fieldPayloads: js.UndefOr[Null | js.Array[HandleFieldPayload]] = js.undefined,
+    incrementalPlaceholders: js.UndefOr[Null | js.Array[IncrementalDataPlaceholder]] = js.undefined,
+    moduleImportPayloads: js.UndefOr[Null | js.Array[ModuleImportPayload]] = js.undefined
   ): RelayResponsePayload = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
-    if (connectionEvents != null) __obj.updateDynamic("connectionEvents")(connectionEvents.asInstanceOf[js.Any])
-    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
-    if (fieldPayloads != null) __obj.updateDynamic("fieldPayloads")(fieldPayloads.asInstanceOf[js.Any])
-    if (incrementalPlaceholders != null) __obj.updateDynamic("incrementalPlaceholders")(incrementalPlaceholders.asInstanceOf[js.Any])
-    if (moduleImportPayloads != null) __obj.updateDynamic("moduleImportPayloads")(moduleImportPayloads.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectionEvents)) __obj.updateDynamic("connectionEvents")(connectionEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(errors)) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (!js.isUndefined(fieldPayloads)) __obj.updateDynamic("fieldPayloads")(fieldPayloads.asInstanceOf[js.Any])
+    if (!js.isUndefined(incrementalPlaceholders)) __obj.updateDynamic("incrementalPlaceholders")(incrementalPlaceholders.asInstanceOf[js.Any])
+    if (!js.isUndefined(moduleImportPayloads)) __obj.updateDynamic("moduleImportPayloads")(moduleImportPayloads.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelayResponsePayload]
   }
 }

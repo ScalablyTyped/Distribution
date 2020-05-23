@@ -1,6 +1,6 @@
 package typings.elasticsearch.mod
 
-import typings.elasticsearch.AnonBulk
+import typings.elasticsearch.anon.Bulk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait ReindexResponseBase extends js.Object {
   var deleted: Double
   var noops: Double
   var requests_per_second: Double
-  var retries: AnonBulk
+  var retries: Bulk
   var throttled_millis: Double
   var throttled_until_millis: Double
   var total: Double
@@ -25,7 +25,7 @@ object ReindexResponseBase {
     deleted: Double,
     noops: Double,
     requests_per_second: Double,
-    retries: AnonBulk,
+    retries: Bulk,
     throttled_millis: Double,
     throttled_until_millis: Double,
     total: Double,

@@ -29,15 +29,15 @@ object GeoLocationEllipse {
   @scala.inline
   def apply(
     center: GeoLocationPoint = null,
-    orientation: Int | Double = null,
-    semiMajorAxis: Int | Double = null,
-    semiMinorAxis: Int | Double = null
+    orientation: js.UndefOr[Double] = js.undefined,
+    semiMajorAxis: js.UndefOr[Double] = js.undefined,
+    semiMinorAxis: js.UndefOr[Double] = js.undefined
   ): GeoLocationEllipse = {
     val __obj = js.Dynamic.literal()
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (semiMajorAxis != null) __obj.updateDynamic("semiMajorAxis")(semiMajorAxis.asInstanceOf[js.Any])
-    if (semiMinorAxis != null) __obj.updateDynamic("semiMinorAxis")(semiMinorAxis.asInstanceOf[js.Any])
+    if (!js.isUndefined(orientation)) __obj.updateDynamic("orientation")(orientation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(semiMajorAxis)) __obj.updateDynamic("semiMajorAxis")(semiMajorAxis.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(semiMinorAxis)) __obj.updateDynamic("semiMinorAxis")(semiMinorAxis.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoLocationEllipse]
   }
 }

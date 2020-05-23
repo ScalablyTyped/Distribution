@@ -20,14 +20,14 @@ object Header {
     http_request: Request = null,
     id: String = null,
     notification_ctx_id: String = null,
-    payload_size: Int | Double = null,
+    payload_size: js.UndefOr[Double] = js.undefined,
     payload_type: String = null
   ): Header = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
     if (http_request != null) __obj.updateDynamic("http_request")(http_request.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (notification_ctx_id != null) __obj.updateDynamic("notification_ctx_id")(notification_ctx_id.asInstanceOf[js.Any])
-    if (payload_size != null) __obj.updateDynamic("payload_size")(payload_size.asInstanceOf[js.Any])
+    if (!js.isUndefined(payload_size)) __obj.updateDynamic("payload_size")(payload_size.get.asInstanceOf[js.Any])
     if (payload_type != null) __obj.updateDynamic("payload_type")(payload_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Header]
   }

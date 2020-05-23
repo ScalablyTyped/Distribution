@@ -1,10 +1,10 @@
 package typings.babylonjs.materialMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.babylonjs.PartialIMaterialCompilati
 import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.animatableInterfaceMod.IAnimatable
 import typings.babylonjs.animationMod.Animation
+import typings.babylonjs.anon.PartialIMaterialCompilati
 import typings.babylonjs.baseTextureMod.BaseTexture
 import typings.babylonjs.effectMod.Effect
 import typings.babylonjs.iInspectableMod.IInspectable

@@ -76,7 +76,7 @@ object Option {
     hidden: js.UndefOr[Boolean] = js.undefined,
     list: js.UndefOr[Boolean] = js.undefined,
     metavar: String = null,
-    position: Int | Double = null,
+    position: js.UndefOr[Double] = js.undefined,
     required: js.UndefOr[Boolean] = js.undefined,
     string: String = null,
     `type`: String = null
@@ -86,14 +86,14 @@ object Option {
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
     if (choices != null) __obj.updateDynamic("choices")(choices.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (!js.isUndefined(flag)) __obj.updateDynamic("flag")(flag.asInstanceOf[js.Any])
+    if (!js.isUndefined(flag)) __obj.updateDynamic("flag")(flag.get.asInstanceOf[js.Any])
     if (full != null) __obj.updateDynamic("full")(full.asInstanceOf[js.Any])
     if (help != null) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(list)) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(list)) __obj.updateDynamic("list")(list.get.asInstanceOf[js.Any])
     if (metavar != null) __obj.updateDynamic("metavar")(metavar.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
     if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Option]

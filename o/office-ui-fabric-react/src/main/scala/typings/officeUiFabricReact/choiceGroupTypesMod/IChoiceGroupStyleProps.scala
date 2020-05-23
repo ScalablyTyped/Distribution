@@ -20,7 +20,7 @@ object IChoiceGroupStyleProps {
   ): IChoiceGroupStyleProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(optionsContainIconOrImage)) __obj.updateDynamic("optionsContainIconOrImage")(optionsContainIconOrImage.asInstanceOf[js.Any])
+    if (!js.isUndefined(optionsContainIconOrImage)) __obj.updateDynamic("optionsContainIconOrImage")(optionsContainIconOrImage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChoiceGroupStyleProps]
   }
 }

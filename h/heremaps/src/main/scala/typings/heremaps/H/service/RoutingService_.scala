@@ -1,6 +1,5 @@
 package typings.heremaps.H.service
 
-import typings.heremaps.H.service.RoutingService.Options
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,14 +9,8 @@ import scala.scalajs.js.annotation._
   * This class encapsulates the Routing REST API as a service stub. An instance of this class can be retrieved by calling the factory method on a platform instance.
   * H.service.Platform#getRoutingService.
   */
-@JSGlobal("H.service.RoutingService")
 @js.native
-/**
-  * Constructor
-  * @param opt_options {H.service.RoutingService.Options=}
-  */
-class RoutingService_ () extends AbstractRestService {
-  def this(opt_options: Options) = this()
+trait RoutingService_ extends AbstractRestService {
   /**
     * This method sends a "calculateroute" request to Routing REST API and calls the onResult callback function once the service response was received - providing a
     * H.service.ServiceResult object - or the onError callback if a communication error occured.

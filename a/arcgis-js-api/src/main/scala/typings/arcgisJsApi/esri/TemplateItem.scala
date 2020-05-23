@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -47,8 +46,4 @@ trait TemplateItem extends Accessor {
     */
   def fetchThumbnail(): js.Promise[_] = js.native
 }
-
-@JSGlobal("__esri.TemplateItem")
-@js.native
-object TemplateItem extends TopLevel[TemplateItemConstructor]
 

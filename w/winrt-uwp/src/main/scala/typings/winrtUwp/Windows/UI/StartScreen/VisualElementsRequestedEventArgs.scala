@@ -5,10 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Passed to the SecondaryTile.VisualElementsRequested event handler to provide the visual elements details. */
-@JSGlobal("Windows.UI.StartScreen.VisualElementsRequestedEventArgs")
-@js.native
-abstract class VisualElementsRequestedEventArgs () extends js.Object {
+trait VisualElementsRequestedEventArgs extends js.Object {
   /** Gets the VisualElementsRequest object for the event. */
-  var request: VisualElementsRequest = js.native
+  var request: VisualElementsRequest
+}
+
+object VisualElementsRequestedEventArgs {
+  @scala.inline
+  def apply(request: VisualElementsRequest): VisualElementsRequestedEventArgs = {
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VisualElementsRequestedEventArgs]
+  }
 }
 

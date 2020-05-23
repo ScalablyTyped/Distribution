@@ -1,5 +1,7 @@
 package typings.graphqlReact
 
+import typings.graphqlReact.anon.Cache
+import typings.graphqlReact.anon.LoadOnMount
 import typings.graphqlReact.mod.GraphQLOperationStatus
 import typings.react.mod.Context
 import typings.react.mod.ReactNode
@@ -13,7 +15,7 @@ object universalMod extends js.Object {
   @js.native
   class GraphQL ()
     extends typings.graphqlReact.mod.GraphQL {
-    def this(options: AnonCache) = this()
+    def this(options: Cache) = this()
   }
   
   val GraphQLContext: Context[typings.graphqlReact.mod.GraphQL] = js.native
@@ -24,6 +26,6 @@ object universalMod extends js.Object {
     node: ReactNode,
     render: js.Function1[/* element */ ReactNode, String]
   ): Unit = js.native
-  def useGraphQL[T, V](options: AnonLoadOnMount[V]): GraphQLOperationStatus[T] = js.native
+  def useGraphQL[T, V](options: LoadOnMount[V]): GraphQLOperationStatus[T] = js.native
 }
 

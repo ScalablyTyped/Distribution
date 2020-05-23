@@ -1,8 +1,8 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.AnonAllowClearing
-import typings.devextreme.AnonGroupInterval
-import typings.devextreme.AnonSearchMode
+import typings.devextreme.anon.AllowClearing
+import typings.devextreme.anon.GroupInterval
+import typings.devextreme.anon.SearchMode
 import typings.devextreme.devextremeStrings.Equalssign
 import typings.devextreme.devextremeStrings.Greaterthansign
 import typings.devextreme.devextremeStrings.GreaterthansignEqualssign
@@ -27,8 +27,8 @@ import typings.devextreme.devextremeStrings.number
 import typings.devextreme.devextremeStrings.right
 import typings.devextreme.devextremeStrings.startswith
 import typings.devextreme.devextremeStrings.string_
-import typings.devextreme.mod._Global_.JQueryPromise
-import typings.devextreme.mod._Global_.Promise
+import typings.devextreme.mod.global.JQueryPromise
+import typings.devextreme.mod.global.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -74,7 +74,7 @@ trait GridBaseColumn extends js.Object {
   /** @name GridBaseColumn.cssClass */
   var cssClass: js.UndefOr[String] = js.undefined
   /** @name GridBaseColumn.customizeText */
-  var customizeText: js.UndefOr[js.Function1[/* cellInfo */ AnonGroupInterval, String]] = js.undefined
+  var customizeText: js.UndefOr[js.Function1[/* cellInfo */ GroupInterval, String]] = js.undefined
   /** @name GridBaseColumn.dataField */
   var dataField: js.UndefOr[String] = js.undefined
   /** @name GridBaseColumn.dataType */
@@ -106,13 +106,13 @@ trait GridBaseColumn extends js.Object {
   /** @name GridBaseColumn.format */
   var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
   /** @name GridBaseColumn.headerFilter */
-  var headerFilter: js.UndefOr[AnonSearchMode] = js.undefined
+  var headerFilter: js.UndefOr[SearchMode] = js.undefined
   /** @name GridBaseColumn.hidingPriority */
   var hidingPriority: js.UndefOr[Double] = js.undefined
   /** @name GridBaseColumn.isBand */
   var isBand: js.UndefOr[Boolean] = js.undefined
   /** @name GridBaseColumn.lookup */
-  var lookup: js.UndefOr[AnonAllowClearing] = js.undefined
+  var lookup: js.UndefOr[AllowClearing] = js.undefined
   /** @name GridBaseColumn.minWidth */
   var minWidth: js.UndefOr[Double] = js.undefined
   /** @name GridBaseColumn.name */
@@ -179,7 +179,7 @@ object GridBaseColumn {
     calculateSortValue: String | (js.Function1[/* rowData */ js.Any, _]) = null,
     caption: String = null,
     cssClass: String = null,
-    customizeText: /* cellInfo */ AnonGroupInterval => String = null,
+    customizeText: /* cellInfo */ GroupInterval => String = null,
     dataField: String = null,
     dataType: string_ | number | date | boolean_ | `object` | datetime = null,
     editorOptions: js.Any = null,
@@ -195,19 +195,19 @@ object GridBaseColumn {
     fixedPosition: left | right = null,
     formItem: dxFormSimpleItem = null,
     format: format = null,
-    headerFilter: AnonSearchMode = null,
-    hidingPriority: Int | Double = null,
+    headerFilter: SearchMode = null,
+    hidingPriority: js.UndefOr[Double] = js.undefined,
     isBand: js.UndefOr[Boolean] = js.undefined,
-    lookup: AnonAllowClearing = null,
-    minWidth: Int | Double = null,
+    lookup: AllowClearing = null,
+    minWidth: js.UndefOr[Double] = js.undefined,
     name: String = null,
-    ownerBand: Int | Double = null,
+    ownerBand: js.UndefOr[Double] = js.undefined,
     renderAsync: js.UndefOr[Boolean] = js.undefined,
     selectedFilterOperation: Lessthansign | LessthansignEqualssign | LessthansignGreaterthansign | Equalssign | Greaterthansign | GreaterthansignEqualssign | between | contains | endswith | notcontains | startswith = null,
     setCellValue: (/* newData */ js.Any, /* value */ js.Any, /* currentRowData */ js.Any) => Unit | Promise[Unit] | JQueryPromise[Unit] = null,
     showEditorAlways: js.UndefOr[Boolean] = js.undefined,
     showInColumnChooser: js.UndefOr[Boolean] = js.undefined,
-    sortIndex: Int | Double = null,
+    sortIndex: js.UndefOr[Double] = js.undefined,
     sortOrder: asc | desc = null,
     sortingMethod: (/* value1 */ js.Any, /* value2 */ js.Any) => Double = null,
     trueText: String = null,
@@ -215,20 +215,20 @@ object GridBaseColumn {
       RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
     ] = null,
     visible: js.UndefOr[Boolean] = js.undefined,
-    visibleIndex: Int | Double = null,
+    visibleIndex: js.UndefOr[Double] = js.undefined,
     width: Double | String = null
   ): GridBaseColumn = {
     val __obj = js.Dynamic.literal()
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowEditing)) __obj.updateDynamic("allowEditing")(allowEditing.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFixing)) __obj.updateDynamic("allowFixing")(allowFixing.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowHeaderFiltering)) __obj.updateDynamic("allowHeaderFiltering")(allowHeaderFiltering.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowHiding)) __obj.updateDynamic("allowHiding")(allowHiding.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowReordering)) __obj.updateDynamic("allowReordering")(allowReordering.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowResizing)) __obj.updateDynamic("allowResizing")(allowResizing.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSearch)) __obj.updateDynamic("allowSearch")(allowSearch.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowEditing)) __obj.updateDynamic("allowEditing")(allowEditing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFixing)) __obj.updateDynamic("allowFixing")(allowFixing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowHeaderFiltering)) __obj.updateDynamic("allowHeaderFiltering")(allowHeaderFiltering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowHiding)) __obj.updateDynamic("allowHiding")(allowHiding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowReordering)) __obj.updateDynamic("allowReordering")(allowReordering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowResizing)) __obj.updateDynamic("allowResizing")(allowResizing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSearch)) __obj.updateDynamic("allowSearch")(allowSearch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting.get.asInstanceOf[js.Any])
     if (calculateCellValue != null) __obj.updateDynamic("calculateCellValue")(js.Any.fromFunction1(calculateCellValue))
     if (calculateDisplayValue != null) __obj.updateDynamic("calculateDisplayValue")(calculateDisplayValue.asInstanceOf[js.Any])
     if (calculateFilterExpression != null) __obj.updateDynamic("calculateFilterExpression")(js.Any.fromFunction3(calculateFilterExpression))
@@ -239,35 +239,35 @@ object GridBaseColumn {
     if (dataField != null) __obj.updateDynamic("dataField")(dataField.asInstanceOf[js.Any])
     if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
     if (editorOptions != null) __obj.updateDynamic("editorOptions")(editorOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(encodeHtml)) __obj.updateDynamic("encodeHtml")(encodeHtml.asInstanceOf[js.Any])
+    if (!js.isUndefined(encodeHtml)) __obj.updateDynamic("encodeHtml")(encodeHtml.get.asInstanceOf[js.Any])
     if (falseText != null) __obj.updateDynamic("falseText")(falseText.asInstanceOf[js.Any])
     if (filterOperations != null) __obj.updateDynamic("filterOperations")(filterOperations.asInstanceOf[js.Any])
     if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
     if (filterValue != null) __obj.updateDynamic("filterValue")(filterValue.asInstanceOf[js.Any])
     if (filterValues != null) __obj.updateDynamic("filterValues")(filterValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.get.asInstanceOf[js.Any])
     if (fixedPosition != null) __obj.updateDynamic("fixedPosition")(fixedPosition.asInstanceOf[js.Any])
     if (formItem != null) __obj.updateDynamic("formItem")(formItem.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (headerFilter != null) __obj.updateDynamic("headerFilter")(headerFilter.asInstanceOf[js.Any])
-    if (hidingPriority != null) __obj.updateDynamic("hidingPriority")(hidingPriority.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBand)) __obj.updateDynamic("isBand")(isBand.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidingPriority)) __obj.updateDynamic("hidingPriority")(hidingPriority.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBand)) __obj.updateDynamic("isBand")(isBand.get.asInstanceOf[js.Any])
     if (lookup != null) __obj.updateDynamic("lookup")(lookup.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (ownerBand != null) __obj.updateDynamic("ownerBand")(ownerBand.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderAsync)) __obj.updateDynamic("renderAsync")(renderAsync.asInstanceOf[js.Any])
+    if (!js.isUndefined(ownerBand)) __obj.updateDynamic("ownerBand")(ownerBand.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderAsync)) __obj.updateDynamic("renderAsync")(renderAsync.get.asInstanceOf[js.Any])
     if (selectedFilterOperation != null) __obj.updateDynamic("selectedFilterOperation")(selectedFilterOperation.asInstanceOf[js.Any])
     if (setCellValue != null) __obj.updateDynamic("setCellValue")(js.Any.fromFunction3(setCellValue))
-    if (!js.isUndefined(showEditorAlways)) __obj.updateDynamic("showEditorAlways")(showEditorAlways.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInColumnChooser)) __obj.updateDynamic("showInColumnChooser")(showInColumnChooser.asInstanceOf[js.Any])
-    if (sortIndex != null) __obj.updateDynamic("sortIndex")(sortIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(showEditorAlways)) __obj.updateDynamic("showEditorAlways")(showEditorAlways.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInColumnChooser)) __obj.updateDynamic("showInColumnChooser")(showInColumnChooser.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortIndex)) __obj.updateDynamic("sortIndex")(sortIndex.get.asInstanceOf[js.Any])
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     if (sortingMethod != null) __obj.updateDynamic("sortingMethod")(js.Any.fromFunction2(sortingMethod))
     if (trueText != null) __obj.updateDynamic("trueText")(trueText.asInstanceOf[js.Any])
     if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (visibleIndex != null) __obj.updateDynamic("visibleIndex")(visibleIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visibleIndex)) __obj.updateDynamic("visibleIndex")(visibleIndex.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridBaseColumn]
   }

@@ -19,16 +19,16 @@ trait DocumentCounts extends js.Object {
 object DocumentCounts {
   @scala.inline
   def apply(
-    available: Int | Double = null,
-    failed: Int | Double = null,
-    pending: Int | Double = null,
-    processing: Int | Double = null
+    available: js.UndefOr[Double] = js.undefined,
+    failed: js.UndefOr[Double] = js.undefined,
+    pending: js.UndefOr[Double] = js.undefined,
+    processing: js.UndefOr[Double] = js.undefined
   ): DocumentCounts = {
     val __obj = js.Dynamic.literal()
-    if (available != null) __obj.updateDynamic("available")(available.asInstanceOf[js.Any])
-    if (failed != null) __obj.updateDynamic("failed")(failed.asInstanceOf[js.Any])
-    if (pending != null) __obj.updateDynamic("pending")(pending.asInstanceOf[js.Any])
-    if (processing != null) __obj.updateDynamic("processing")(processing.asInstanceOf[js.Any])
+    if (!js.isUndefined(available)) __obj.updateDynamic("available")(available.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(failed)) __obj.updateDynamic("failed")(failed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pending)) __obj.updateDynamic("pending")(pending.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(processing)) __obj.updateDynamic("processing")(processing.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentCounts]
   }
 }

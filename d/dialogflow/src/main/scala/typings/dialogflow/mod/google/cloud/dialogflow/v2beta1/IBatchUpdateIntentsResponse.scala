@@ -12,9 +12,9 @@ trait IBatchUpdateIntentsResponse extends js.Object {
 
 object IBatchUpdateIntentsResponse {
   @scala.inline
-  def apply(intents: js.Array[IIntent] = null): IBatchUpdateIntentsResponse = {
+  def apply(intents: js.UndefOr[Null | js.Array[IIntent]] = js.undefined): IBatchUpdateIntentsResponse = {
     val __obj = js.Dynamic.literal()
-    if (intents != null) __obj.updateDynamic("intents")(intents.asInstanceOf[js.Any])
+    if (!js.isUndefined(intents)) __obj.updateDynamic("intents")(intents.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBatchUpdateIntentsResponse]
   }
 }

@@ -14,9 +14,14 @@ trait EffectOptions extends js.Object {
 
 object EffectOptions {
   @scala.inline
-  def apply(complete: js.Function, effect: String, duration: Int | Double = null, easing: String = null): EffectOptions = {
+  def apply(
+    complete: js.Function,
+    effect: String,
+    duration: js.UndefOr[Double] = js.undefined,
+    easing: String = null
+  ): EffectOptions = {
     val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any], effect = effect.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     __obj.asInstanceOf[EffectOptions]
   }

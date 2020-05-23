@@ -1,7 +1,7 @@
 package typings.reactNativeMaterialUi.mod
 
-import typings.react.mod._Global_.JSX.Element
-import typings.reactNativeMaterialUi.AnonActive
+import typings.react.mod.global.JSX.Element
+import typings.reactNativeMaterialUi.anon.Active
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait BottomNavigationAction extends js.Object {
   var key: js.UndefOr[String] = js.undefined
   var label: js.UndefOr[String] = js.undefined
   var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var style: js.UndefOr[AnonActive] = js.undefined
+  var style: js.UndefOr[Active] = js.undefined
   var testID: js.UndefOr[String] = js.undefined
 }
 
@@ -26,11 +26,11 @@ object BottomNavigationAction {
     key: String = null,
     label: String = null,
     onPress: () => Unit = null,
-    style: AnonActive = null,
+    style: Active = null,
     testID: String = null
   ): BottomNavigationAction = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))

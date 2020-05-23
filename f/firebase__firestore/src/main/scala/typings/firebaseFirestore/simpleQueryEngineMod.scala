@@ -12,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/simple_query_engine", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/simple_query_engine", JSImport.Namespace)
 @js.native
 object simpleQueryEngineMod extends js.Object {
   @js.native

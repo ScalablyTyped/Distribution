@@ -57,7 +57,7 @@ object SparklineSeriesItem {
     data: js.Any = null,
     explodeField: String = null,
     field: String = null,
-    gap: Int | Double = null,
+    gap: js.UndefOr[Double] = js.undefined,
     highlight: SparklineSeriesItemHighlight = null,
     labels: SparklineSeriesItemLabels = null,
     line: String | SparklineSeriesItemLine = null,
@@ -66,20 +66,20 @@ object SparklineSeriesItem {
     name: String = null,
     negativeColor: String = null,
     notes: SparklineSeriesItemNotes = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     overlay: SparklineSeriesItemOverlay = null,
-    padding: Int | Double = null,
-    size: Int | Double = null,
-    spacing: Int | Double = null,
+    padding: js.UndefOr[Double] = js.undefined,
+    size: js.UndefOr[Double] = js.undefined,
+    spacing: js.UndefOr[Double] = js.undefined,
     stack: Boolean | String | SparklineSeriesItemStack = null,
-    startAngle: Int | Double = null,
+    startAngle: js.UndefOr[Double] = js.undefined,
     style: String = null,
     target: SparklineSeriesItemTarget = null,
     targetField: String = null,
     tooltip: SparklineSeriesItemTooltip = null,
     `type`: String = null,
-    width: Int | Double = null,
-    zIndex: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined,
+    zIndex: js.UndefOr[Double] = js.undefined
   ): SparklineSeriesItem = {
     val __obj = js.Dynamic.literal()
     if (aggregate != null) __obj.updateDynamic("aggregate")(aggregate.asInstanceOf[js.Any])
@@ -94,7 +94,7 @@ object SparklineSeriesItem {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (explodeField != null) __obj.updateDynamic("explodeField")(explodeField.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
+    if (!js.isUndefined(gap)) __obj.updateDynamic("gap")(gap.get.asInstanceOf[js.Any])
     if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
@@ -103,20 +103,20 @@ object SparklineSeriesItem {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (negativeColor != null) __obj.updateDynamic("negativeColor")(negativeColor.asInstanceOf[js.Any])
     if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spacing)) __obj.updateDynamic("spacing")(spacing.get.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(startAngle)) __obj.updateDynamic("startAngle")(startAngle.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (targetField != null) __obj.updateDynamic("targetField")(targetField.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparklineSeriesItem]
   }
 }

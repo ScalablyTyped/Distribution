@@ -1,7 +1,5 @@
 package typings.ace.AceAjax
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -184,13 +182,41 @@ trait Document extends js.Object {
   def setValue(text: String): Unit
 }
 
-@JSGlobal("AceAjax.Document")
-@js.native
-object Document
-  extends /**
-  * Creates a new `Document`. If `text` is included, the `Document` contains those strings; otherwise, it's empty.
-  * @param text The starting text
-  **/
-Instantiable0[Document]
-     with Instantiable1[(/* text */ js.Array[String]) | (/* text */ String), Document]
+object Document {
+  @scala.inline
+  def apply(
+    applyDeltas: js.Array[Delta] => Unit,
+    createAnchor: (Double, Double) => Unit,
+    getAllLines: () => js.Array[String],
+    getLength: () => Double,
+    getLine: Double => String,
+    getLines: (Double, Double) => js.Array[String],
+    getNewLineCharacter: () => String,
+    getNewLineMode: () => String,
+    getTextRange: Range => String,
+    getValue: () => String,
+    indexToPosition: (Double, Double) => Position,
+    insert: (Position, String) => js.Any,
+    insertFullLines: (Double, js.Array[String]) => js.Any,
+    insertInLine: (js.Any, String) => js.Any,
+    insertLines: (Double, js.Array[String]) => js.Any,
+    insertMergedLines: (Double, js.Array[String]) => js.Any,
+    insertNewLine: Position => js.Any,
+    isNewLine: String => Boolean,
+    on: (String, js.Function1[/* e */ js.Any, _]) => Unit,
+    positionToIndex: (Position, Double) => Double,
+    remove: Range => js.Any,
+    removeFullLines: (Double, Double) => js.Array[String],
+    removeInLine: (Double, Double, Double) => js.Any,
+    removeLines: (Double, Double) => js.Array[String],
+    removeNewLine: Double => Unit,
+    replace: (Range, String) => js.Any,
+    revertDeltas: js.Array[Delta] => Unit,
+    setNewLineMode: String => Unit,
+    setValue: String => Unit
+  ): Document = {
+    val __obj = js.Dynamic.literal(applyDeltas = js.Any.fromFunction1(applyDeltas), createAnchor = js.Any.fromFunction2(createAnchor), getAllLines = js.Any.fromFunction0(getAllLines), getLength = js.Any.fromFunction0(getLength), getLine = js.Any.fromFunction1(getLine), getLines = js.Any.fromFunction2(getLines), getNewLineCharacter = js.Any.fromFunction0(getNewLineCharacter), getNewLineMode = js.Any.fromFunction0(getNewLineMode), getTextRange = js.Any.fromFunction1(getTextRange), getValue = js.Any.fromFunction0(getValue), indexToPosition = js.Any.fromFunction2(indexToPosition), insert = js.Any.fromFunction2(insert), insertFullLines = js.Any.fromFunction2(insertFullLines), insertInLine = js.Any.fromFunction2(insertInLine), insertLines = js.Any.fromFunction2(insertLines), insertMergedLines = js.Any.fromFunction2(insertMergedLines), insertNewLine = js.Any.fromFunction1(insertNewLine), isNewLine = js.Any.fromFunction1(isNewLine), on = js.Any.fromFunction2(on), positionToIndex = js.Any.fromFunction2(positionToIndex), remove = js.Any.fromFunction1(remove), removeFullLines = js.Any.fromFunction2(removeFullLines), removeInLine = js.Any.fromFunction3(removeInLine), removeLines = js.Any.fromFunction2(removeLines), removeNewLine = js.Any.fromFunction1(removeNewLine), replace = js.Any.fromFunction2(replace), revertDeltas = js.Any.fromFunction1(revertDeltas), setNewLineMode = js.Any.fromFunction1(setNewLineMode), setValue = js.Any.fromFunction1(setValue))
+    __obj.asInstanceOf[Document]
+  }
+}
 

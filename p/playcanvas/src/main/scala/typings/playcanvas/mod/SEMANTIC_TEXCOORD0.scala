@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.SEMANTIC_TEXCOORD0
-  * @type {string}
-  * @description Vertex attribute to be treated as a texture coordinate (set 0).
+  * Vertex attribute to be treated as a texture coordinate (set 0).
   */
 @JSImport("playcanvas", "SEMANTIC_TEXCOORD0")
 @js.native

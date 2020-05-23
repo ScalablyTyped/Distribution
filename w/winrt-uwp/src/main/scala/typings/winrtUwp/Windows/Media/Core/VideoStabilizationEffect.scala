@@ -13,9 +13,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents an effect that stabilizes a video stream. */
-@JSGlobal("Windows.Media.Core.VideoStabilizationEffect")
 @js.native
-abstract class VideoStabilizationEffect () extends js.Object {
+trait VideoStabilizationEffect extends js.Object {
   /** Gets or sets a value indicating whether video stabilization is enabled. */
   var enabled: Boolean = js.native
   /** Occurs when the value of the VideoStabilizationEffect::Enabled property changes. */

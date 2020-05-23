@@ -18,10 +18,10 @@ trait PercentPair extends js.Object {
 
 object PercentPair {
   @scala.inline
-  def apply(percent: Int | Double = null, value: Int | Double = null): PercentPair = {
+  def apply(percent: js.UndefOr[Percent] = js.undefined, value: js.UndefOr[PercentValue] = js.undefined): PercentPair = {
     val __obj = js.Dynamic.literal()
-    if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(percent)) __obj.updateDynamic("percent")(percent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PercentPair]
   }
 }

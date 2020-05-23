@@ -12,7 +12,7 @@ trait UpdateCostCategoryDefinitionRequest extends js.Object {
   var CostCategoryArn: Arn = js.native
   var RuleVersion: CostCategoryRuleVersion = js.native
   /**
-    *  UpdateCostCategoryDefinition supports dimensions, Tags, and nested expressions. Currently the only dimensions supported is LINKED_ACCOUNT. Root level OR is not supported. We recommend you create a separate rule instead. Rules are processed in order. If there are multiple rules that match the line item, then the first rule to match is used to determine that Cost Category value. 
+    * The Expression object used to categorize costs. For more information, see CostCategoryRule . 
     */
   var Rules: CostCategoryRulesList = js.native
 }

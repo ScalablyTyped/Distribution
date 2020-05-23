@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * A command to merge the selected table cells.
   */
-@JSGlobal("MergeTableCellsCommand")
-@js.native
-class MergeTableCellsCommand () extends CommandWithSimpleStateBase {
+trait MergeTableCellsCommand extends CommandWithSimpleStateBase {
   /**
     * Executes the MergeTableCellsCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
+}
+
+object MergeTableCellsCommand {
+  @scala.inline
+  def apply(execute: () => Boolean, getState: () => SimpleCommandState): MergeTableCellsCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
+    __obj.asInstanceOf[MergeTableCellsCommand]
+  }
 }
 

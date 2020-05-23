@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 trait GiraffeObject extends js.Object {
   var afterDispose: js.UndefOr[js.Function0[js.Any]] = js.undefined
   var afterInitialize: js.UndefOr[js.Function0[js.Any]] = js.undefined
-  var app: App_
+  var app: App
   var appEvents: js.UndefOr[StringMap] = js.undefined
   var beforeDispose: js.UndefOr[js.Function0[js.Any]] = js.undefined
   var beforeInitialize: js.UndefOr[js.Function0[js.Any]] = js.undefined
   var dataEvents: js.UndefOr[StringMap] = js.undefined
-  var defaultOptions: js.UndefOr[DefaultOptions_] = js.undefined
+  var defaultOptions: js.UndefOr[DefaultOptions] = js.undefined
   var dispose: js.UndefOr[js.Function0[js.Any]] = js.undefined
   var initialize: js.UndefOr[js.Function0[js.Any]] = js.undefined
 }
@@ -20,14 +20,14 @@ trait GiraffeObject extends js.Object {
 object GiraffeObject {
   @scala.inline
   def apply(
-    app: App_,
+    app: App,
     afterDispose: () => js.Any = null,
     afterInitialize: () => js.Any = null,
     appEvents: StringMap = null,
     beforeDispose: () => js.Any = null,
     beforeInitialize: () => js.Any = null,
     dataEvents: StringMap = null,
-    defaultOptions: DefaultOptions_ = null,
+    defaultOptions: DefaultOptions = null,
     dispose: () => js.Any = null,
     initialize: () => js.Any = null
   ): GiraffeObject = {

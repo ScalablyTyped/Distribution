@@ -13,9 +13,9 @@ trait OnKeyboardHeightChangeResult extends js.Object {
 
 object OnKeyboardHeightChangeResult {
   @scala.inline
-  def apply(height: Int | Double = null): OnKeyboardHeightChangeResult = {
+  def apply(height: js.UndefOr[Double] = js.undefined): OnKeyboardHeightChangeResult = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnKeyboardHeightChangeResult]
   }
 }

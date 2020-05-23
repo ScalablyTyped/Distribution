@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.PIXELFORMAT_A8
-  * @type {number}
-  * @description 8-bit alpha.
+  * 8-bit alpha.
   */
 @JSImport("playcanvas", "PIXELFORMAT_A8")
 @js.native

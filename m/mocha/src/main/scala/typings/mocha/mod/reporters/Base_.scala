@@ -1,11 +1,13 @@
 package typings.mocha.mod.reporters
 
-import typings.mocha.Mocha_.IRunner
-import typings.mocha.Mocha_.MochaOptions
-import typings.mocha.Mocha_.Runner
-import typings.mocha.Mocha_.Test_
-import typings.mocha.Mocha_.reporters.Base_.ColorMap
-import typings.mocha.Mocha_.reporters.Base_.SymbolMap
+import typings.mocha.Mocha.IRunner
+import typings.mocha.Mocha.MochaOptions
+import typings.mocha.Mocha.Runner
+import typings.mocha.Mocha.Stats
+import typings.mocha.Mocha.Test
+import typings.mocha.Mocha.reporters.Base
+import typings.mocha.Mocha.reporters.Base.ColorMap
+import typings.mocha.Mocha.reporters.Base.SymbolMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,13 +22,34 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("mocha", "reporters.Base")
 @js.native
-class Base_ protected ()
-  extends typings.mocha.Mocha_.reporters.Base_ {
+class Base_ protected () extends Base {
   /** @deprecated Use the overload that accepts `Mocha.Runner` instead. */
   def this(runner: IRunner) = this()
   def this(runner: Runner) = this()
   def this(runner: IRunner, options: MochaOptions) = this()
   def this(runner: Runner, options: MochaOptions) = this()
+  /**
+    * Test failures
+    */
+  /* CompleteClass */
+  override var failures: js.Array[Test] = js.native
+  /**
+    * The configured runner
+    */
+  /* CompleteClass */
+  override var runner: Runner = js.native
+  /**
+    * Test run statistics
+    */
+  /* CompleteClass */
+  override var stats: Stats = js.native
+  /**
+    * Output common epilogue used by many of the bundled reporters.
+    *
+    * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+    */
+  /* CompleteClass */
+  override def epilogue(): Unit = js.native
 }
 
 @JSImport("mocha", "reporters.Base")
@@ -73,7 +96,7 @@ object Base_ extends js.Object {
     *
     * @see https://mochajs.org/api/Mocha.reporters.Base.html#.exports.list1
     */
-  def list(failures: js.Array[Test_]): Unit = js.native
+  def list(failures: js.Array[Test]): Unit = js.native
   /**
     * ANSI TTY control sequences common among reporters.
     *

@@ -22,10 +22,14 @@ trait ListApplicationStatesRequest extends js.Object {
 
 object ListApplicationStatesRequest {
   @scala.inline
-  def apply(ApplicationIds: ApplicationIds = null, MaxResults: Int | Double = null, NextToken: Token = null): ListApplicationStatesRequest = {
+  def apply(
+    ApplicationIds: ApplicationIds = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    NextToken: Token = null
+  ): ListApplicationStatesRequest = {
     val __obj = js.Dynamic.literal()
     if (ApplicationIds != null) __obj.updateDynamic("ApplicationIds")(ApplicationIds.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListApplicationStatesRequest]
   }

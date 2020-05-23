@@ -1,10 +1,10 @@
 package typings.gapiClientCloudtasks.gapi.client.cloudtasks
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientCloudtasks.AnonAccesstoken
-import typings.gapiClientCloudtasks.AnonAlt
-import typings.gapiClientCloudtasks.AnonBearertoken
-import typings.gapiClientCloudtasks.AnonCallback
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientCloudtasks.anon.Accesstoken
+import typings.gapiClientCloudtasks.anon.Alt
+import typings.gapiClientCloudtasks.anon.Bearertoken
+import typings.gapiClientCloudtasks.anon.Callback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +24,7 @@ trait TasksResource extends js.Object {
     * not be returned by a later CloudTasks.PullTasks,
     * CloudTasks.GetTask, or CloudTasks.ListTasks.
     */
-  def acknowledge(request: AnonAccesstoken): Request_[js.Object]
+  def acknowledge(request: Accesstoken): Request[js.Object]
   /**
     * Cancel a pull task's lease.
     *
@@ -32,7 +32,7 @@ trait TasksResource extends js.Object {
     * by setting Task.schedule_time to now. This will make the task
     * available to be leased to the next caller of CloudTasks.PullTasks.
     */
-  def cancelLease(request: AnonAccesstoken): Request_[Task]
+  def cancelLease(request: Accesstoken): Request[Task]
   /**
     * Creates a task and adds it to a queue.
     *
@@ -48,7 +48,7 @@ trait TasksResource extends js.Object {
     * &#42; For [pull queues](google.cloud.tasks.v2beta2.PullTarget), this
     * the maximum task size is 1MB.
     */
-  def create(request: AnonAlt): Request_[Task]
+  def create(request: Alt): Request[Task]
   /**
     * Deletes a task.
     *
@@ -56,9 +56,9 @@ trait TasksResource extends js.Object {
     * cannot be deleted if it has completed successfully or permanently
     * failed.
     */
-  def delete(request: AnonAccesstoken): Request_[js.Object]
+  def delete(request: Accesstoken): Request[js.Object]
   /** Gets a task. */
-  def get(request: AnonBearertoken): Request_[Task]
+  def get(request: Bearertoken): Request[Task]
   /**
     * Lists the tasks in a queue.
     *
@@ -67,7 +67,7 @@ trait TasksResource extends js.Object {
     * considerations; ListTasksRequest.response_view controls the
     * subset of information which is returned.
     */
-  def list(request: AnonCallback): Request_[ListTasksResponse]
+  def list(request: Callback): Request[ListTasksResponse]
   /**
     * Pulls tasks from a pull queue and acquires a lease on them for a
     * specified PullTasksRequest.lease_duration.
@@ -87,7 +87,7 @@ trait TasksResource extends js.Object {
     * is exceeded. google.rpc.Code.RESOURCE_EXHAUSTED is also returned when
     * RateLimits.max_tasks_dispatched_per_second is exceeded.
     */
-  def pull(request: AnonAccesstoken): Request_[PullTasksResponse]
+  def pull(request: Accesstoken): Request[PullTasksResponse]
   /**
     * Renew the current lease of a pull task.
     *
@@ -95,7 +95,7 @@ trait TasksResource extends js.Object {
     * duration, starting from now. The new task lease will be
     * returned in Task.schedule_time.
     */
-  def renewLease(request: AnonAccesstoken): Request_[Task]
+  def renewLease(request: Accesstoken): Request[Task]
   /**
     * Forces a task to run now.
     *
@@ -123,21 +123,21 @@ trait TasksResource extends js.Object {
     * CloudTasks.RunTask is called on task that is dispatched or
     * already running.
     */
-  def run(request: AnonAccesstoken): Request_[Task]
+  def run(request: Accesstoken): Request[Task]
 }
 
 object TasksResource {
   @scala.inline
   def apply(
-    acknowledge: AnonAccesstoken => Request_[js.Object],
-    cancelLease: AnonAccesstoken => Request_[Task],
-    create: AnonAlt => Request_[Task],
-    delete: AnonAccesstoken => Request_[js.Object],
-    get: AnonBearertoken => Request_[Task],
-    list: AnonCallback => Request_[ListTasksResponse],
-    pull: AnonAccesstoken => Request_[PullTasksResponse],
-    renewLease: AnonAccesstoken => Request_[Task],
-    run: AnonAccesstoken => Request_[Task]
+    acknowledge: Accesstoken => Request[js.Object],
+    cancelLease: Accesstoken => Request[Task],
+    create: Alt => Request[Task],
+    delete: Accesstoken => Request[js.Object],
+    get: Bearertoken => Request[Task],
+    list: Callback => Request[ListTasksResponse],
+    pull: Accesstoken => Request[PullTasksResponse],
+    renewLease: Accesstoken => Request[Task],
+    run: Accesstoken => Request[Task]
   ): TasksResource = {
     val __obj = js.Dynamic.literal(acknowledge = js.Any.fromFunction1(acknowledge), cancelLease = js.Any.fromFunction1(cancelLease), create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), pull = js.Any.fromFunction1(pull), renewLease = js.Any.fromFunction1(renewLease), run = js.Any.fromFunction1(run))
     __obj.asInstanceOf[TasksResource]

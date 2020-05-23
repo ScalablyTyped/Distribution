@@ -30,6 +30,9 @@ object cytoscapeStrings {
   sealed trait auto extends js.Object
   
   @js.native
+  sealed trait barrel extends NodeShape
+  
+  @js.native
   sealed trait base64 extends js.Object
   
   @js.native
@@ -49,6 +52,9 @@ object cytoscapeStrings {
   
   @js.native
   sealed trait bottom extends js.Object
+  
+  @js.native
+  sealed trait `bottom-round-rectangle` extends NodeShape
   
   @js.native
   sealed trait box extends UserInputDeviceEventNameExt
@@ -90,6 +96,9 @@ object cytoscapeStrings {
   sealed trait completed extends js.Object
   
   @js.native
+  sealed trait `concave-hexagon` extends NodeShape
+  
+  @js.native
   sealed trait concentric extends js.Object
   
   @js.native
@@ -103,6 +112,9 @@ object cytoscapeStrings {
   
   @js.native
   sealed trait `cubic-bezier` extends TransitionTimingFunction
+  
+  @js.native
+  sealed trait `cut-rectangle` extends NodeShape
   
   @js.native
   sealed trait cxtdrag extends UserInputDeviceEventNameExt
@@ -453,6 +465,9 @@ object cytoscapeStrings {
   sealed trait style extends CollectionEventName
   
   @js.native
+  sealed trait tag extends NodeShape
+  
+  @js.native
   sealed trait tap extends UserInputDeviceEventNameExt
   
   @js.native
@@ -559,6 +574,8 @@ object cytoscapeStrings {
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
+  def barrel: barrel = "barrel".asInstanceOf[barrel]
+  @scala.inline
   def base64: base64 = "base64".asInstanceOf[base64]
   @scala.inline
   def base64uri: base64uri = "base64uri".asInstanceOf[base64uri]
@@ -572,6 +589,8 @@ object cytoscapeStrings {
   def bolder: bolder = "bolder".asInstanceOf[bolder]
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
+  def `bottom-round-rectangle`: `bottom-round-rectangle` = "bottom-round-rectangle".asInstanceOf[`bottom-round-rectangle`]
   @scala.inline
   def box: box = "box".asInstanceOf[box]
   @scala.inline
@@ -599,6 +618,8 @@ object cytoscapeStrings {
   @scala.inline
   def completed: completed = "completed".asInstanceOf[completed]
   @scala.inline
+  def `concave-hexagon`: `concave-hexagon` = "concave-hexagon".asInstanceOf[`concave-hexagon`]
+  @scala.inline
   def concentric: concentric = "concentric".asInstanceOf[concentric]
   @scala.inline
   def contain: contain = "contain".asInstanceOf[contain]
@@ -608,6 +629,8 @@ object cytoscapeStrings {
   def cover: cover = "cover".asInstanceOf[cover]
   @scala.inline
   def `cubic-bezier`: `cubic-bezier` = "cubic-bezier".asInstanceOf[`cubic-bezier`]
+  @scala.inline
+  def `cut-rectangle`: `cut-rectangle` = "cut-rectangle".asInstanceOf[`cut-rectangle`]
   @scala.inline
   def cxtdrag: cxtdrag = "cxtdrag".asInstanceOf[cxtdrag]
   @scala.inline
@@ -836,6 +859,8 @@ object cytoscapeStrings {
   def straight: straight = "straight".asInstanceOf[straight]
   @scala.inline
   def style: style = "style".asInstanceOf[style]
+  @scala.inline
+  def tag: tag = "tag".asInstanceOf[tag]
   @scala.inline
   def tap: tap = "tap".asInstanceOf[tap]
   @scala.inline

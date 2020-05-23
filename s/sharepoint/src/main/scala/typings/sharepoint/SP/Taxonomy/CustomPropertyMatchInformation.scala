@@ -1,15 +1,12 @@
 package typings.sharepoint.SP.Taxonomy
 
-import typings.sharepoint.SP.ClientContext
 import typings.sharepoint.SP.ClientObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Taxonomy.CustomPropertyMatchInformation")
 @js.native
-class CustomPropertyMatchInformation protected () extends ClientObject {
-  def this(context: ClientContext) = this()
+trait CustomPropertyMatchInformation extends ClientObject {
   def get_customPropertyName(): String = js.native
   def get_customPropertyValue(): String = js.native
   def get_resultCollectionSize(): Double = js.native

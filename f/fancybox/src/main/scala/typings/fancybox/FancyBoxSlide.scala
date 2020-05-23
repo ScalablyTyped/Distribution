@@ -50,8 +50,8 @@ object FancyBoxSlide {
     $thumb: JQuery = null,
     contentSource: String = null,
     contentType: String = null,
-    forcedDuration: Int | Double = null,
-    index: Int | Double = null,
+    forcedDuration: js.UndefOr[Double] = js.undefined,
+    index: js.UndefOr[Double] = js.undefined,
     opts: FancyBoxOptions = null,
     thumb: js.Any = null,
     `type`: image | `inline` | ajax | iframe | html = null
@@ -65,8 +65,8 @@ object FancyBoxSlide {
     if ($thumb != null) __obj.updateDynamic("$thumb")($thumb.asInstanceOf[js.Any])
     if (contentSource != null) __obj.updateDynamic("contentSource")(contentSource.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (forcedDuration != null) __obj.updateDynamic("forcedDuration")(forcedDuration.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(forcedDuration)) __obj.updateDynamic("forcedDuration")(forcedDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (opts != null) __obj.updateDynamic("opts")(opts.asInstanceOf[js.Any])
     if (thumb != null) __obj.updateDynamic("thumb")(thumb.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

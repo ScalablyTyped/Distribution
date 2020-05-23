@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Calls.Background
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,26 +34,6 @@ object PhoneTriggerType extends js.Object {
   /** The system received a new voice mail message or the voice mail count went to 0. */
   @js.native
   sealed trait newVoicemailMessage extends PhoneTriggerType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PhoneTriggerType with Double] = js.native
-  /* 3 */ @js.native
-  object airplaneModeDisabledForEmergencyCall extends TopLevel[airplaneModeDisabledForEmergencyCall with Double]
-  
-  /* 5 */ @js.native
-  object callBlocked extends TopLevel[callBlocked with Double]
-  
-  /* 1 */ @js.native
-  object callHistoryChanged extends TopLevel[callHistoryChanged with Double]
-  
-  /* 4 */ @js.native
-  object callOriginDataRequest extends TopLevel[callOriginDataRequest with Double]
-  
-  /* 2 */ @js.native
-  object lineChanged extends TopLevel[lineChanged with Double]
-  
-  /* 0 */ @js.native
-  object newVoicemailMessage extends TopLevel[newVoicemailMessage with Double]
   
 }
 

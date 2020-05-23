@@ -20,13 +20,13 @@ trait ConfigMetadata
 object ConfigMetadata {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    contentLength: Int | Double = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    contentLength: js.UndefOr[Double] = js.undefined,
     contentType: String = null
   ): ConfigMetadata = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (contentLength != null) __obj.updateDynamic("contentLength")(contentLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentLength)) __obj.updateDynamic("contentLength")(contentLength.get.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigMetadata]
   }

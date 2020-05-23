@@ -131,7 +131,7 @@ object MosaicRuleProperties {
     where: String = null
   ): MosaicRuleProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ascending)) __obj.updateDynamic("ascending")(ascending.asInstanceOf[js.Any])
+    if (!js.isUndefined(ascending)) __obj.updateDynamic("ascending")(ascending.get.asInstanceOf[js.Any])
     if (itemRenderingRule != null) __obj.updateDynamic("itemRenderingRule")(itemRenderingRule.asInstanceOf[js.Any])
     if (lockRasterIds != null) __obj.updateDynamic("lockRasterIds")(lockRasterIds.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])

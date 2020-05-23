@@ -17,6 +17,7 @@ package object firehoseMod {
     - typings.awsSdk.awsSdkStrings.GZIP
     - typings.awsSdk.awsSdkStrings.ZIP
     - typings.awsSdk.awsSdkStrings.Snappy_
+    - typings.awsSdk.awsSdkStrings.HADOOP_SNAPPY
     - java.lang.String
   */
   type CompressionFormat = typings.awsSdk.firehoseMod._CompressionFormat | java.lang.String
@@ -44,6 +45,13 @@ package object firehoseMod {
     - typings.awsSdk.awsSdkStrings.INVALID_KMS_KEY
     - typings.awsSdk.awsSdkStrings.KMS_KEY_NOT_FOUND
     - typings.awsSdk.awsSdkStrings.KMS_OPT_IN_REQUIRED
+    - typings.awsSdk.awsSdkStrings.CREATE_ENI_FAILED
+    - typings.awsSdk.awsSdkStrings.DELETE_ENI_FAILED
+    - typings.awsSdk.awsSdkStrings.SUBNET_NOT_FOUND
+    - typings.awsSdk.awsSdkStrings.SECURITY_GROUP_NOT_FOUND
+    - typings.awsSdk.awsSdkStrings.ENI_ACCESS_DENIED
+    - typings.awsSdk.awsSdkStrings.SUBNET_ACCESS_DENIED
+    - typings.awsSdk.awsSdkStrings.SECURITY_GROUP_ACCESS_DENIED
     - typings.awsSdk.awsSdkStrings.UNKNOWN_ERROR
     - java.lang.String
   */
@@ -184,6 +192,7 @@ package object firehoseMod {
     - java.lang.String
   */
   type S3BackupMode = typings.awsSdk.firehoseMod._S3BackupMode | java.lang.String
+  type SecurityGroupIdList = js.Array[typings.awsSdk.firehoseMod.NonEmptyStringWithoutWhitespace]
   type SizeInMBs = scala.Double
   type SplunkRetryDurationInSeconds = scala.Double
   /* Rewritten from type alias, can be one of: 
@@ -192,6 +201,7 @@ package object firehoseMod {
     - java.lang.String
   */
   type SplunkS3BackupMode = typings.awsSdk.firehoseMod._SplunkS3BackupMode | java.lang.String
+  type SubnetIdList = js.Array[typings.awsSdk.firehoseMod.NonEmptyStringWithoutWhitespace]
   type TagDeliveryStreamInputTagList = js.Array[typings.awsSdk.firehoseMod.Tag]
   type TagKey = java.lang.String
   type TagKeyList = js.Array[typings.awsSdk.firehoseMod.TagKey]

@@ -23,7 +23,7 @@ object highlightResultValueInterface {
     fullyHighlighted: js.UndefOr[Boolean] = js.undefined
   ): highlightResultValueInterface = {
     val __obj = js.Dynamic.literal(matchLevel = matchLevel.asInstanceOf[js.Any], matchedWords = matchedWords.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullyHighlighted)) __obj.updateDynamic("fullyHighlighted")(fullyHighlighted.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullyHighlighted)) __obj.updateDynamic("fullyHighlighted")(fullyHighlighted.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[highlightResultValueInterface]
   }
 }

@@ -1,7 +1,7 @@
 package typings.gapiClientProximitybeacon.gapi.client.proximitybeacon
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientProximitybeacon.AnonAccesstoken
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientProximitybeacon.anon.Accesstoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,12 +16,12 @@ trait V1beta1Resource extends js.Object {
     * prepared to refresh this key when they encounter an error registering an
     * Eddystone-EID beacon.
     */
-  def getEidparams(request: AnonAccesstoken): Request_[EphemeralIdRegistrationParams]
+  def getEidparams(request: Accesstoken): Request[EphemeralIdRegistrationParams]
 }
 
 object V1beta1Resource {
   @scala.inline
-  def apply(getEidparams: AnonAccesstoken => Request_[EphemeralIdRegistrationParams]): V1beta1Resource = {
+  def apply(getEidparams: Accesstoken => Request[EphemeralIdRegistrationParams]): V1beta1Resource = {
     val __obj = js.Dynamic.literal(getEidparams = js.Any.fromFunction1(getEidparams))
     __obj.asInstanceOf[V1beta1Resource]
   }

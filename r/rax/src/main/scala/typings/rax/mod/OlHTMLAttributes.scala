@@ -20,13 +20,13 @@ object OlHTMLAttributes {
   def apply[T](
     HTMLAttributes: HTMLAttributes[T] = null,
     reversed: js.UndefOr[Boolean] = js.undefined,
-    start: Int | Double = null,
+    start: js.UndefOr[Double] = js.undefined,
     `type`: `1` | a_ | A | i_ | I = null
   ): OlHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     if (HTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
-    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OlHTMLAttributes[T]]
   }

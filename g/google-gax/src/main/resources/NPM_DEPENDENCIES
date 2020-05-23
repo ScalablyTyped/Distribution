@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "google-gax" : "1.7.5"
+      "google-gax" : "1.14.2"
     }
   ],
   "test-dependencies" : [
     {
-      "google-gax" : "1.7.5"
+      "google-gax" : "1.14.2"
     }
   ],
   "compile-devDependencies" : [

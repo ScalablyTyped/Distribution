@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.anon.Indices
 import typings.three.bufferGeometryMod.BufferGeometry
 import typings.three.geometryMod.Geometry
 import scala.scalajs.js
@@ -14,7 +15,7 @@ object polyhedronGeometryMod extends js.Object {
     def this(vertices: js.Array[Double], indices: js.Array[Double]) = this()
     def this(vertices: js.Array[Double], indices: js.Array[Double], radius: Double) = this()
     def this(vertices: js.Array[Double], indices: js.Array[Double], radius: Double, detail: Double) = this()
-    var parameters: AnonIndices = js.native
+    var parameters: Indices = js.native
   }
   
   @js.native
@@ -22,7 +23,7 @@ object polyhedronGeometryMod extends js.Object {
     def this(vertices: js.Array[Double], indices: js.Array[Double]) = this()
     def this(vertices: js.Array[Double], indices: js.Array[Double], radius: Double) = this()
     def this(vertices: js.Array[Double], indices: js.Array[Double], radius: Double, detail: Double) = this()
-    var parameters: AnonIndices = js.native
+    var parameters: Indices = js.native
   }
   
 }

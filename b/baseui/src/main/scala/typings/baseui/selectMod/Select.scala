@@ -1,15 +1,15 @@
 package typings.baseui.selectMod
 
-import typings.baseui.AnonClearable
-import typings.baseui.AnonItemOption
-import typings.baseui.AnonOptionOption
-import typings.baseui.AnonOptionState
+import typings.baseui.anon.Clearable
+import typings.baseui.anon.ItemOption
+import typings.baseui.anon.OptionOption
+import typings.baseui.anon.OptionState
 import typings.dateFns.Locale
 import typings.react.mod.Component
 import typings.react.mod.FocusEvent
 import typings.react.mod.FormEvent
 import typings.react.mod.ReactNode
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import typings.std.KeyboardEvent
@@ -31,11 +31,11 @@ class Select ()
   def filterOption(): Value = js.native
   def filterOption(excludeOptions: Value): Value = js.native
   def focus(): Unit = js.native
-  def getOptionLabel(locale: Locale, hasOption: AnonOptionState): ReactNode = js.native
-  def getSharedProps(): AnonClearable = js.native
+  def getOptionLabel(locale: Locale, hasOption: OptionState): ReactNode = js.native
+  def getSharedProps(): Clearable = js.native
   def getValueArray(value: Value): js.Array[Option] = js.native
-  def getValueLabel(hasOption: AnonOptionOption): ReactNode = js.native
-  def handleBlur(event: Event_): Unit = js.native
+  def getValueLabel(hasOption: OptionOption): ReactNode = js.native
+  def handleBlur(event: Event): Unit = js.native
   def handleClick(event: MouseEvent): Unit = js.native
   def handleClick(event: TouchEvent): Unit = js.native
   def handleClickOutside(event: MouseEvent): Unit = js.native
@@ -55,7 +55,7 @@ class Select ()
   def renderLoading(): ReactNode = js.native
   def renderSearch(): ReactNode = js.native
   def renderValue(valueArray: Value, isOpen: Boolean, locale: Locale): ReactNode = js.native
-  def selectValue(hasItem: AnonItemOption): Unit = js.native
+  def selectValue(hasItem: ItemOption): Unit = js.native
   def setValue(value: Value, option: Option, `type`: ChangeAction): Unit = js.native
 }
 

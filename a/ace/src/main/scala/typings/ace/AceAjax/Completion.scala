@@ -22,16 +22,16 @@ object Completion {
     value: String,
     caption: String = null,
     docHTML: String = null,
-    exactMatch: Int | Double = null,
-    score: Int | Double = null,
+    exactMatch: js.UndefOr[Double] = js.undefined,
+    score: js.UndefOr[Double] = js.undefined,
     snippet: js.Any = null,
     `type`: String = null
   ): Completion = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
     if (docHTML != null) __obj.updateDynamic("docHTML")(docHTML.asInstanceOf[js.Any])
-    if (exactMatch != null) __obj.updateDynamic("exactMatch")(exactMatch.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (!js.isUndefined(exactMatch)) __obj.updateDynamic("exactMatch")(exactMatch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     if (snippet != null) __obj.updateDynamic("snippet")(snippet.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Completion]

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.sketch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,8 +14,4 @@ trait SketchEdges3D extends Edges3D {
     */
   var `type`: sketch = js.native
 }
-
-@JSGlobal("__esri.SketchEdges3D")
-@js.native
-object SketchEdges3D extends TopLevel[SketchEdges3DConstructor]
 

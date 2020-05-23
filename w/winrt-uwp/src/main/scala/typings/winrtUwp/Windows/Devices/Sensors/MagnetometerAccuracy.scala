@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Sensors
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object MagnetometerAccuracy extends js.Object {
   /** The actual and reported values have a high degree of inaccuracy. */
   @js.native
   sealed trait unreliable extends MagnetometerAccuracy
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MagnetometerAccuracy with Double] = js.native
-  /* 2 */ @js.native
-  object approximate extends TopLevel[approximate with Double]
-  
-  /* 3 */ @js.native
-  object high extends TopLevel[high with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
-  /* 1 */ @js.native
-  object unreliable extends TopLevel[unreliable with Double]
   
 }
 

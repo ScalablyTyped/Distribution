@@ -12,9 +12,9 @@ trait ITrainAgentRequest extends js.Object {
 
 object ITrainAgentRequest {
   @scala.inline
-  def apply(parent: String = null): ITrainAgentRequest = {
+  def apply(parent: js.UndefOr[Null | String] = js.undefined): ITrainAgentRequest = {
     val __obj = js.Dynamic.literal()
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITrainAgentRequest]
   }
 }

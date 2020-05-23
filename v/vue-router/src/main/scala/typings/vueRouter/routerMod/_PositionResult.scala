@@ -13,7 +13,7 @@ object _PositionResult {
     __obj.asInstanceOf[_PositionResult]
   }
   @scala.inline
-  def AnonOffset(selector: String, offset: Position = null): _PositionResult = {
+  def Offset(selector: String, offset: Position = null): _PositionResult = {
     val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[_PositionResult]

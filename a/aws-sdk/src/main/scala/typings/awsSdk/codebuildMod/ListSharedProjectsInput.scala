@@ -27,13 +27,13 @@ trait ListSharedProjectsInput extends js.Object {
 object ListSharedProjectsInput {
   @scala.inline
   def apply(
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[PageSize] = js.undefined,
     nextToken: NonEmptyString = null,
     sortBy: SharedResourceSortByType = null,
     sortOrder: SortOrderType = null
   ): ListSharedProjectsInput = {
     val __obj = js.Dynamic.literal()
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy.asInstanceOf[js.Any])
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])

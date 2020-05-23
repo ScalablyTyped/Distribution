@@ -18,14 +18,14 @@ trait ImageLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns the format of the image. Read-only.
+    * Returns the format of the image.
     *
     * [Api set: ExcelApi 1.9]
     */
   var format: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the shape identifier for the image object. Read-only.
+    * Specifies the shape identifier for the image object.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -48,9 +48,9 @@ object ImageLoadOptions {
     shape: ShapeLoadOptions = null
   ): ImageLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(format)) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(format)) __obj.updateDynamic("format")(format.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageLoadOptions]
   }

@@ -35,9 +35,9 @@ object SparklineCategoryAxisItemLabels {
     margin: Double | js.Any = null,
     mirror: js.UndefOr[Boolean] = js.undefined,
     padding: Double | js.Any = null,
-    rotation: Int | Double = null,
-    skip: Int | Double = null,
-    step: Int | Double = null,
+    rotation: js.UndefOr[Double] = js.undefined,
+    skip: js.UndefOr[Double] = js.undefined,
+    step: js.UndefOr[Double] = js.undefined,
     template: String | js.Function = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): SparklineCategoryAxisItemLabels = {
@@ -50,13 +50,13 @@ object SparklineCategoryAxisItemLabels {
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (!js.isUndefined(mirror)) __obj.updateDynamic("mirror")(mirror.asInstanceOf[js.Any])
+    if (!js.isUndefined(mirror)) __obj.updateDynamic("mirror")(mirror.get.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparklineCategoryAxisItemLabels]
   }
 }

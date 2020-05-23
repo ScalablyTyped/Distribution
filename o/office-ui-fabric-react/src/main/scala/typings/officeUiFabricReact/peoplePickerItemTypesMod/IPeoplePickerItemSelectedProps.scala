@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.peoplePickerItemTypesMod
 
-import typings.officeUiFabricReact.IPersonaPropsValidationSt
+import typings.officeUiFabricReact.anon.IPersonaPropsValidationSt
 import typings.officeUiFabricReact.pickerItemTypesMod.IPickerItemProps
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricStyling.ithemeMod.ITheme
@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSharedProps because var conflicts: className. Inlined theme */ trait IPeoplePickerItemSelectedProps extends IPickerItemProps[IPersonaPropsValidationSt] {
   /** Call to provide customized styling that will layer on top of the variant rules. */
   var styles: js.UndefOr[

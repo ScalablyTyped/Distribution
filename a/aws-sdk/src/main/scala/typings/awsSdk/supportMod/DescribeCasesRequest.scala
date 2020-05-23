@@ -51,10 +51,10 @@ object DescribeCasesRequest {
     beforeTime: BeforeTime = null,
     caseIdList: CaseIdList = null,
     displayId: DisplayId = null,
-    includeCommunications: js.UndefOr[scala.Boolean] = js.undefined,
-    includeResolvedCases: js.UndefOr[scala.Boolean] = js.undefined,
+    includeCommunications: js.UndefOr[IncludeCommunications] = js.undefined,
+    includeResolvedCases: js.UndefOr[IncludeResolvedCases] = js.undefined,
     language: Language = null,
-    maxResults: Int | scala.Double = null,
+    maxResults: js.UndefOr[MaxResults] = js.undefined,
     nextToken: NextToken = null
   ): DescribeCasesRequest = {
     val __obj = js.Dynamic.literal()
@@ -62,10 +62,10 @@ object DescribeCasesRequest {
     if (beforeTime != null) __obj.updateDynamic("beforeTime")(beforeTime.asInstanceOf[js.Any])
     if (caseIdList != null) __obj.updateDynamic("caseIdList")(caseIdList.asInstanceOf[js.Any])
     if (displayId != null) __obj.updateDynamic("displayId")(displayId.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeCommunications)) __obj.updateDynamic("includeCommunications")(includeCommunications.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeResolvedCases)) __obj.updateDynamic("includeResolvedCases")(includeResolvedCases.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeCommunications)) __obj.updateDynamic("includeCommunications")(includeCommunications.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeResolvedCases)) __obj.updateDynamic("includeResolvedCases")(includeResolvedCases.get.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCasesRequest]
   }

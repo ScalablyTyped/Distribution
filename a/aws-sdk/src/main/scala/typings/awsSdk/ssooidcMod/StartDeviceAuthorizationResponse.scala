@@ -36,16 +36,16 @@ object StartDeviceAuthorizationResponse {
   @scala.inline
   def apply(
     deviceCode: DeviceCode = null,
-    expiresIn: Int | Double = null,
-    interval: Int | Double = null,
+    expiresIn: js.UndefOr[ExpirationInSeconds] = js.undefined,
+    interval: js.UndefOr[IntervalInSeconds] = js.undefined,
     userCode: UserCode = null,
     verificationUri: URI = null,
     verificationUriComplete: URI = null
   ): StartDeviceAuthorizationResponse = {
     val __obj = js.Dynamic.literal()
     if (deviceCode != null) __obj.updateDynamic("deviceCode")(deviceCode.asInstanceOf[js.Any])
-    if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(expiresIn)) __obj.updateDynamic("expiresIn")(expiresIn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
     if (userCode != null) __obj.updateDynamic("userCode")(userCode.asInstanceOf[js.Any])
     if (verificationUri != null) __obj.updateDynamic("verificationUri")(verificationUri.asInstanceOf[js.Any])
     if (verificationUriComplete != null) __obj.updateDynamic("verificationUriComplete")(verificationUriComplete.asInstanceOf[js.Any])

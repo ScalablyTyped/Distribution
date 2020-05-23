@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Globalization.DateTimeFormatting
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object DayOfWeekFormat extends js.Object {
   /** Do not display the day of the week. */
   @js.native
   sealed trait none extends DayOfWeekFormat
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DayOfWeekFormat with Double] = js.native
-  /* 2 */ @js.native
-  object abbreviated extends TopLevel[abbreviated with Double]
-  
-  /* 1 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 3 */ @js.native
-  object full extends TopLevel[full with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
   
 }
 

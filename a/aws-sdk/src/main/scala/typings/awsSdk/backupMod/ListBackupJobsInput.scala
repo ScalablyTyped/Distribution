@@ -49,7 +49,7 @@ object ListBackupJobsInput {
     ByResourceArn: ARN = null,
     ByResourceType: ResourceType = null,
     ByState: BackupJobState = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: String = null
   ): ListBackupJobsInput = {
     val __obj = js.Dynamic.literal()
@@ -59,7 +59,7 @@ object ListBackupJobsInput {
     if (ByResourceArn != null) __obj.updateDynamic("ByResourceArn")(ByResourceArn.asInstanceOf[js.Any])
     if (ByResourceType != null) __obj.updateDynamic("ByResourceType")(ByResourceType.asInstanceOf[js.Any])
     if (ByState != null) __obj.updateDynamic("ByState")(ByState.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBackupJobsInput]
   }

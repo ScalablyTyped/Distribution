@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -58,8 +57,4 @@ trait ClosestFacilitySolveResult
     */
   var routes: js.Array[Graphic] = js.native
 }
-
-@JSGlobal("__esri.ClosestFacilitySolveResult")
-@js.native
-object ClosestFacilitySolveResult extends TopLevel[ClosestFacilitySolveResultConstructor]
 

@@ -2,7 +2,7 @@ package typings.reactToolbox.layoutLayoutMod
 
 import typings.react.mod.CSSProperties
 import typings.react.mod.Key
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.reactToolbox.componentsMod.ReactToolbox.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`

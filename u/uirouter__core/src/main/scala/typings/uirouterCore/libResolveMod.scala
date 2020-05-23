@@ -1,5 +1,7 @@
 package typings.uirouterCore
 
+import typings.uirouterCore.anon.EAGER
+import typings.uirouterCore.anon.NOWAIT
 import typings.uirouterCore.pathNodeMod.PathNode
 import typings.uirouterCore.resolveInterfaceMod.ResolvableLiteral
 import typings.uirouterCore.resolveInterfaceMod.ResolvePolicy
@@ -58,8 +60,8 @@ object libResolveMod extends js.Object {
   
   @js.native
   object resolvePolicies extends js.Object {
-    var async: AnonNOWAIT = js.native
-    var when: AnonEAGER = js.native
+    var async: NOWAIT = js.native
+    var when: EAGER = js.native
   }
   
 }

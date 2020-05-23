@@ -70,24 +70,24 @@ object JobFlowInstancesDetail {
     Ec2SubnetId: XmlStringMaxLen256 = null,
     HadoopVersion: XmlStringMaxLen256 = null,
     InstanceGroups: InstanceGroupDetailList = null,
-    KeepJobFlowAliveWhenNoSteps: js.UndefOr[scala.Boolean] = js.undefined,
+    KeepJobFlowAliveWhenNoSteps: js.UndefOr[Boolean] = js.undefined,
     MasterInstanceId: XmlString = null,
     MasterPublicDnsName: XmlString = null,
-    NormalizedInstanceHours: Int | Double = null,
+    NormalizedInstanceHours: js.UndefOr[Integer] = js.undefined,
     Placement: PlacementType = null,
-    TerminationProtected: js.UndefOr[scala.Boolean] = js.undefined
+    TerminationProtected: js.UndefOr[Boolean] = js.undefined
   ): JobFlowInstancesDetail = {
     val __obj = js.Dynamic.literal(InstanceCount = InstanceCount.asInstanceOf[js.Any], MasterInstanceType = MasterInstanceType.asInstanceOf[js.Any], SlaveInstanceType = SlaveInstanceType.asInstanceOf[js.Any])
     if (Ec2KeyName != null) __obj.updateDynamic("Ec2KeyName")(Ec2KeyName.asInstanceOf[js.Any])
     if (Ec2SubnetId != null) __obj.updateDynamic("Ec2SubnetId")(Ec2SubnetId.asInstanceOf[js.Any])
     if (HadoopVersion != null) __obj.updateDynamic("HadoopVersion")(HadoopVersion.asInstanceOf[js.Any])
     if (InstanceGroups != null) __obj.updateDynamic("InstanceGroups")(InstanceGroups.asInstanceOf[js.Any])
-    if (!js.isUndefined(KeepJobFlowAliveWhenNoSteps)) __obj.updateDynamic("KeepJobFlowAliveWhenNoSteps")(KeepJobFlowAliveWhenNoSteps.asInstanceOf[js.Any])
+    if (!js.isUndefined(KeepJobFlowAliveWhenNoSteps)) __obj.updateDynamic("KeepJobFlowAliveWhenNoSteps")(KeepJobFlowAliveWhenNoSteps.get.asInstanceOf[js.Any])
     if (MasterInstanceId != null) __obj.updateDynamic("MasterInstanceId")(MasterInstanceId.asInstanceOf[js.Any])
     if (MasterPublicDnsName != null) __obj.updateDynamic("MasterPublicDnsName")(MasterPublicDnsName.asInstanceOf[js.Any])
-    if (NormalizedInstanceHours != null) __obj.updateDynamic("NormalizedInstanceHours")(NormalizedInstanceHours.asInstanceOf[js.Any])
+    if (!js.isUndefined(NormalizedInstanceHours)) __obj.updateDynamic("NormalizedInstanceHours")(NormalizedInstanceHours.get.asInstanceOf[js.Any])
     if (Placement != null) __obj.updateDynamic("Placement")(Placement.asInstanceOf[js.Any])
-    if (!js.isUndefined(TerminationProtected)) __obj.updateDynamic("TerminationProtected")(TerminationProtected.asInstanceOf[js.Any])
+    if (!js.isUndefined(TerminationProtected)) __obj.updateDynamic("TerminationProtected")(TerminationProtected.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobFlowInstancesDetail]
   }
 }

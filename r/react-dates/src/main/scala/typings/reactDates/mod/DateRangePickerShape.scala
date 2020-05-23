@@ -1,9 +1,9 @@
 package typings.reactDates.mod
 
-import typings.react.mod._Global_.JSX.Element
-import typings.reactDates.AnonEndDate
-import typings.reactDates.AnonIsVisible
-import typings.reactDates.AnonStartDate
+import typings.react.mod.global.JSX.Element
+import typings.reactDates.anon.EndDate
+import typings.reactDates.anon.IsVisible
+import typings.reactDates.anon.StartDate
 import typings.reactDates.mod.momentPropTypes.momentObj
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -51,7 +51,7 @@ trait DateRangePickerShape extends js.Object {
   var navPrev: js.UndefOr[String | Element] = js.native
   var noBorder: js.UndefOr[Boolean] = js.native
   var numberOfMonths: js.UndefOr[Double] = js.native
-  var onClose: js.UndefOr[js.Function1[/* final */ AnonStartDate, Unit]] = js.native
+  var onClose: js.UndefOr[js.Function1[/* final */ StartDate, Unit]] = js.native
   var onNextMonthClick: js.UndefOr[js.Function1[/* newCurrentMonth */ momentObj, Unit]] = js.native
   var onPrevMonthClick: js.UndefOr[js.Function1[/* newCurrentMonth */ momentObj, Unit]] = js.native
   var openDirection: js.UndefOr[OpenDirectionShape] = js.native
@@ -63,7 +63,7 @@ trait DateRangePickerShape extends js.Object {
   var renderCalendarDay: js.UndefOr[js.Function1[/* day */ momentObj, String | Element]] = js.native
   var renderCalendarInfo: js.UndefOr[js.Function0[String | Element]] = js.native
   var renderDayContents: js.UndefOr[js.Function1[/* day */ momentObj, String | Element]] = js.native
-  var renderMonthElement: js.UndefOr[js.Function1[/* props */ AnonIsVisible, String | Element]] = js.native
+  var renderMonthElement: js.UndefOr[js.Function1[/* props */ IsVisible, String | Element]] = js.native
   // calendar presentation and interaction related props
   var renderMonthText: js.UndefOr[js.Function1[/* day */ momentObj, String | Element]] = js.native
   var reopenPickerOnClearDates: js.UndefOr[Boolean] = js.native
@@ -83,7 +83,7 @@ trait DateRangePickerShape extends js.Object {
   var weekDayFormat: js.UndefOr[String] = js.native
   var withFullScreenPortal: js.UndefOr[Boolean] = js.native
   var withPortal: js.UndefOr[Boolean] = js.native
-  def onDatesChange(arg: AnonEndDate): Unit = js.native
+  def onDatesChange(arg: EndDate): Unit = js.native
   def onFocusChange(): Unit = js.native
   def onFocusChange(arg: FocusedInputShape): Unit = js.native
 }

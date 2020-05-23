@@ -1,5 +1,6 @@
 package typings.antdMobile
 
+import typings.antdMobile.anon.Animated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +15,7 @@ object modalMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonAnimated = js.native
+    var defaultProps: Animated = js.native
   }
   
 }

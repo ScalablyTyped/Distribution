@@ -18,10 +18,10 @@ trait Resolution extends js.Object {
 
 object Resolution {
   @scala.inline
-  def apply(height: Int | scala.Double = null, width: Int | scala.Double = null): Resolution = {
+  def apply(height: js.UndefOr[Integer] = js.undefined, width: js.UndefOr[Integer] = js.undefined): Resolution = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resolution]
   }
 }

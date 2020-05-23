@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.ConditionalRangeBorderData
 import typings.officeJsPreview.Excel.Interfaces.ConditionalRangeBorderLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.ConditionalRangeBorderUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.Continuous
 import typings.officeJsPreview.officeJsPreviewStrings.Dash
 import typings.officeJsPreview.officeJsPreviewStrings.DashDot
@@ -26,12 +26,11 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.6]
   */
-@JSGlobal("Excel.ConditionalRangeBorder")
 @js.native
-class ConditionalRangeBorder () extends ClientObject {
+trait ConditionalRangeBorder extends ClientObject {
   /**
     *
-    * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+    * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -41,7 +40,7 @@ class ConditionalRangeBorder () extends ClientObject {
   var context_ConditionalRangeBorder: RequestContext = js.native
   /**
     *
-    * Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details. Read-only.
+    * Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -60,7 +59,7 @@ class ConditionalRangeBorder () extends ClientObject {
     */
   def load(): ConditionalRangeBorder = js.native
   def load(options: ConditionalRangeBorderLoadOptions): ConditionalRangeBorder = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ConditionalRangeBorder = js.native
+  def load(propertyNamesAndPaths: Expand): ConditionalRangeBorder = js.native
   def load(propertyNames: String): ConditionalRangeBorder = js.native
   def load(propertyNames: js.Array[String]): ConditionalRangeBorder = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

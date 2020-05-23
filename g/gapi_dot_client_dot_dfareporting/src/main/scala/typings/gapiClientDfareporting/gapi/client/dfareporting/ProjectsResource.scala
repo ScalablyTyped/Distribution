@@ -1,22 +1,22 @@
 package typings.gapiClientDfareporting.gapi.client.dfareporting
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientDfareporting.AnonFields
-import typings.gapiClientDfareporting.AnonSearchString
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientDfareporting.anon.Fields
+import typings.gapiClientDfareporting.anon.SearchString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ProjectsResource extends js.Object {
   /** Gets one project by ID. */
-  def get(request: AnonFields): Request_[Project]
+  def get(request: Fields): Request[Project]
   /** Retrieves a list of projects, possibly filtered. This method supports paging. */
-  def list(request: AnonSearchString): Request_[ProjectsListResponse]
+  def list(request: SearchString): Request[ProjectsListResponse]
 }
 
 object ProjectsResource {
   @scala.inline
-  def apply(get: AnonFields => Request_[Project], list: AnonSearchString => Request_[ProjectsListResponse]): ProjectsResource = {
+  def apply(get: Fields => Request[Project], list: SearchString => Request[ProjectsListResponse]): ProjectsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
     __obj.asInstanceOf[ProjectsResource]
   }

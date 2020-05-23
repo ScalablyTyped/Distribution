@@ -14,9 +14,9 @@ trait FlinkRunConfiguration extends js.Object {
 
 object FlinkRunConfiguration {
   @scala.inline
-  def apply(AllowNonRestoredState: js.UndefOr[Boolean] = js.undefined): FlinkRunConfiguration = {
+  def apply(AllowNonRestoredState: js.UndefOr[BooleanObject] = js.undefined): FlinkRunConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllowNonRestoredState)) __obj.updateDynamic("AllowNonRestoredState")(AllowNonRestoredState.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllowNonRestoredState)) __obj.updateDynamic("AllowNonRestoredState")(AllowNonRestoredState.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlinkRunConfiguration]
   }
 }

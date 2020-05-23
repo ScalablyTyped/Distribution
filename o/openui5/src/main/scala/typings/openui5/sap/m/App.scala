@@ -4,19 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.m.App")
 @js.native
-class App protected () extends NavContainer {
-  /**
-    * Constructor for a new App.Accepts an object literal <code>mSettings</code> that defines
-    * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
-    * sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the settings
-    * object.
-    * @param sId id for the new control, generated automatically if no id is given
-    * @param mSettings initial settings for the new control
-    */
-  def this(sId: String) = this()
-  def this(sId: String, mSettings: js.Any) = this()
+trait App extends NavContainer {
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>orientationChange</code> event of this
     * <code>sap.m.App</code>.When called, the context of the event handler (its <code>this</code>) will be

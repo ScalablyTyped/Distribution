@@ -20,28 +20,28 @@ trait WebMercatorViewportOptions extends js.Object {
 object WebMercatorViewportOptions {
   @scala.inline
   def apply(
-    altitude: Int | Double = null,
-    bearing: Int | Double = null,
-    farZMultiplier: Int | Double = null,
-    height: Int | Double = null,
-    latitude: Int | Double = null,
-    longitude: Int | Double = null,
-    nearZMultiplier: Int | Double = null,
-    pitch: Int | Double = null,
-    width: Int | Double = null,
-    zoom: Int | Double = null
+    altitude: js.UndefOr[Double] = js.undefined,
+    bearing: js.UndefOr[Double] = js.undefined,
+    farZMultiplier: js.UndefOr[Double] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
+    latitude: js.UndefOr[Double] = js.undefined,
+    longitude: js.UndefOr[Double] = js.undefined,
+    nearZMultiplier: js.UndefOr[Double] = js.undefined,
+    pitch: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined,
+    zoom: js.UndefOr[Double] = js.undefined
   ): WebMercatorViewportOptions = {
     val __obj = js.Dynamic.literal()
-    if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
-    if (bearing != null) __obj.updateDynamic("bearing")(bearing.asInstanceOf[js.Any])
-    if (farZMultiplier != null) __obj.updateDynamic("farZMultiplier")(farZMultiplier.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
-    if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
-    if (nearZMultiplier != null) __obj.updateDynamic("nearZMultiplier")(nearZMultiplier.asInstanceOf[js.Any])
-    if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bearing)) __obj.updateDynamic("bearing")(bearing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(farZMultiplier)) __obj.updateDynamic("farZMultiplier")(farZMultiplier.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(latitude)) __obj.updateDynamic("latitude")(latitude.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(longitude)) __obj.updateDynamic("longitude")(longitude.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nearZMultiplier)) __obj.updateDynamic("nearZMultiplier")(nearZMultiplier.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pitch)) __obj.updateDynamic("pitch")(pitch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebMercatorViewportOptions]
   }
 }

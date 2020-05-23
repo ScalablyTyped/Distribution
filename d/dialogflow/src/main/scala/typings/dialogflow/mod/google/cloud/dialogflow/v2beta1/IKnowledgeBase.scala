@@ -16,11 +16,15 @@ trait IKnowledgeBase extends js.Object {
 
 object IKnowledgeBase {
   @scala.inline
-  def apply(displayName: String = null, languageCode: String = null, name: String = null): IKnowledgeBase = {
+  def apply(
+    displayName: js.UndefOr[Null | String] = js.undefined,
+    languageCode: js.UndefOr[Null | String] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined
+  ): IKnowledgeBase = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayName)) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (!js.isUndefined(languageCode)) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKnowledgeBase]
   }
 }

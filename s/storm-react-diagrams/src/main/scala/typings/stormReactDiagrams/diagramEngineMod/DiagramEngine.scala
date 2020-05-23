@@ -2,14 +2,14 @@ package typings.stormReactDiagrams.diagramEngineMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Element
-import typings.stormReactDiagrams.AnonHAdjustmentFactor
-import typings.stormReactDiagrams.AnonHeight
-import typings.stormReactDiagrams.AnonWidth
-import typings.stormReactDiagrams.AnonX
 import typings.stormReactDiagrams.abstractLabelFactoryMod.AbstractLabelFactory
 import typings.stormReactDiagrams.abstractLinkFactoryMod.AbstractLinkFactory
 import typings.stormReactDiagrams.abstractNodeFactoryMod.AbstractNodeFactory
 import typings.stormReactDiagrams.abstractPortFactoryMod.AbstractPortFactory
+import typings.stormReactDiagrams.anon.HAdjustmentFactor
+import typings.stormReactDiagrams.anon.Height
+import typings.stormReactDiagrams.anon.Width
+import typings.stormReactDiagrams.anon.X
 import typings.stormReactDiagrams.baseEntityMod.BaseEntity
 import typings.stormReactDiagrams.baseEntityMod.BaseListener
 import typings.stormReactDiagrams.baseModelMod.BaseModel
@@ -45,13 +45,13 @@ class DiagramEngine () extends BaseEntity[DiagramEngineListener] {
     * Despite being a long method, we simply iterate over all three collections (nodes, ports and points)
     * to find the highest X and Y dimensions, so we can build the matrix large enough to contain all elements.
     */
-  def calculateMatrixDimensions(): AnonHAdjustmentFactor = js.native
+  def calculateMatrixDimensions(): HAdjustmentFactor = js.native
   def calculateRoutingMatrix(): Unit = js.native
   def canEntityRepaint(baseModel: BaseModel[BaseEntity[BaseListener[_]], BaseModelListener]): Boolean = js.native
   def clearRepaintEntities(): Unit = js.native
   def enableRepaintEntities(entities: js.Array[BaseModel[BaseEntity[BaseListener[_]], BaseModelListener]]): Unit = js.native
-  def generateWidgetForLink(link: LinkModel[LinkModelListener]): typings.react.mod._Global_.JSX.Element | Null = js.native
-  def generateWidgetForNode(node: NodeModel): typings.react.mod._Global_.JSX.Element | Null = js.native
+  def generateWidgetForLink(link: LinkModel[LinkModelListener]): typings.react.mod.global.JSX.Element | Null = js.native
+  def generateWidgetForNode(node: NodeModel): typings.react.mod.global.JSX.Element | Null = js.native
   /**
     * A representation of the canvas in the following format:
     *
@@ -80,19 +80,19 @@ class DiagramEngine () extends BaseEntity[DiagramEngineListener] {
     * Determine the width and height of the node passed in.
     * It currently assumes nodes have a rectangular shape, can be overriden for customised shapes.
     */
-  def getNodeDimensions(node: NodeModel): AnonWidth = js.native
+  def getNodeDimensions(node: NodeModel): Width = js.native
   def getNodeElement(node: NodeModel): Element = js.native
   def getNodeFactories(): StringDictionary[AbstractNodeFactory[NodeModel]] = js.native
   def getNodeFactory(`type`: String): AbstractNodeFactory[NodeModel] = js.native
   def getNodePortElement(port: PortModel): js.Any = js.native
-  def getPortCenter(port: PortModel): AnonX = js.native
+  def getPortCenter(port: PortModel): X = js.native
   /**
     * Calculate rectangular coordinates of the port passed in.
     */
-  def getPortCoords(port: PortModel): AnonHeight = js.native
+  def getPortCoords(port: PortModel): Height = js.native
   def getPortFactory(`type`: String): AbstractPortFactory[PortModel] = js.native
-  def getRelativeMousePoint(event: js.Any): AnonX = js.native
-  def getRelativePoint(x: js.Any, y: js.Any): AnonX = js.native
+  def getRelativeMousePoint(event: js.Any): X = js.native
+  def getRelativePoint(x: js.Any, y: js.Any): X = js.native
   /**
     * A representation of the canvas in the following format:
     *

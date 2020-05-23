@@ -14,7 +14,7 @@ object SchedulerGroup {
   @scala.inline
   def apply(date: js.UndefOr[Boolean] = js.undefined, orientation: String = null, resources: js.Any = null): SchedulerGroup = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(date)) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (!js.isUndefined(date)) __obj.updateDynamic("date")(date.get.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerGroup]

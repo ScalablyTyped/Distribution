@@ -74,7 +74,7 @@ object ScheduledInstance {
     AvailabilityZone: String = null,
     CreateDate: DateTime = null,
     HourlyPrice: String = null,
-    InstanceCount: Int | scala.Double = null,
+    InstanceCount: js.UndefOr[Integer] = js.undefined,
     InstanceType: String = null,
     NetworkPlatform: String = null,
     NextSlotStartTime: DateTime = null,
@@ -82,16 +82,16 @@ object ScheduledInstance {
     PreviousSlotEndTime: DateTime = null,
     Recurrence: ScheduledInstanceRecurrence = null,
     ScheduledInstanceId: String = null,
-    SlotDurationInHours: Int | scala.Double = null,
+    SlotDurationInHours: js.UndefOr[Integer] = js.undefined,
     TermEndDate: DateTime = null,
     TermStartDate: DateTime = null,
-    TotalScheduledInstanceHours: Int | scala.Double = null
+    TotalScheduledInstanceHours: js.UndefOr[Integer] = js.undefined
   ): ScheduledInstance = {
     val __obj = js.Dynamic.literal()
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
     if (CreateDate != null) __obj.updateDynamic("CreateDate")(CreateDate.asInstanceOf[js.Any])
     if (HourlyPrice != null) __obj.updateDynamic("HourlyPrice")(HourlyPrice.asInstanceOf[js.Any])
-    if (InstanceCount != null) __obj.updateDynamic("InstanceCount")(InstanceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount.get.asInstanceOf[js.Any])
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
     if (NetworkPlatform != null) __obj.updateDynamic("NetworkPlatform")(NetworkPlatform.asInstanceOf[js.Any])
     if (NextSlotStartTime != null) __obj.updateDynamic("NextSlotStartTime")(NextSlotStartTime.asInstanceOf[js.Any])
@@ -99,10 +99,10 @@ object ScheduledInstance {
     if (PreviousSlotEndTime != null) __obj.updateDynamic("PreviousSlotEndTime")(PreviousSlotEndTime.asInstanceOf[js.Any])
     if (Recurrence != null) __obj.updateDynamic("Recurrence")(Recurrence.asInstanceOf[js.Any])
     if (ScheduledInstanceId != null) __obj.updateDynamic("ScheduledInstanceId")(ScheduledInstanceId.asInstanceOf[js.Any])
-    if (SlotDurationInHours != null) __obj.updateDynamic("SlotDurationInHours")(SlotDurationInHours.asInstanceOf[js.Any])
+    if (!js.isUndefined(SlotDurationInHours)) __obj.updateDynamic("SlotDurationInHours")(SlotDurationInHours.get.asInstanceOf[js.Any])
     if (TermEndDate != null) __obj.updateDynamic("TermEndDate")(TermEndDate.asInstanceOf[js.Any])
     if (TermStartDate != null) __obj.updateDynamic("TermStartDate")(TermStartDate.asInstanceOf[js.Any])
-    if (TotalScheduledInstanceHours != null) __obj.updateDynamic("TotalScheduledInstanceHours")(TotalScheduledInstanceHours.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalScheduledInstanceHours)) __obj.updateDynamic("TotalScheduledInstanceHours")(TotalScheduledInstanceHours.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduledInstance]
   }
 }

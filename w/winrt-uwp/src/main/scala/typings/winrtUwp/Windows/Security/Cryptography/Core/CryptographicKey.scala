@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a symmetric key or an asymmetric key pair. */
-@JSGlobal("Windows.Security.Cryptography.Core.CryptographicKey")
 @js.native
-abstract class CryptographicKey () extends js.Object {
+trait CryptographicKey extends js.Object {
   /** Gets the size, in bits, of the key. */
   var keySize: Double = js.native
   /**

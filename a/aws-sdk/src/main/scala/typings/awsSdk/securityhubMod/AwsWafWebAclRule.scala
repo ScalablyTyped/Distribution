@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AwsWafWebAclRule extends js.Object {
   /**
-    * Specifies the action that CloudFront or AWS WAF takes when a web request matches the conditions in the Rule. 
+    * Specifies the action that CloudFront or AWS WAF takes when a web request matches the conditions in the rule. 
     */
   var Action: js.UndefOr[WafAction] = js.native
   /**
@@ -19,11 +19,11 @@ trait AwsWafWebAclRule extends js.Object {
     */
   var OverrideAction: js.UndefOr[WafOverrideAction] = js.native
   /**
-    * Specifies the order in which the Rules in a WebACL are evaluated. Rules with a lower value for Priority are evaluated before Rules with a higher value. The value must be a unique integer. If you add multiple Rules to a WebACL, the values do not need to be consecutive.
+    * Specifies the order in which the rules in a WebACL are evaluated. Rules with a lower value for Priority are evaluated before rules with a higher value. The value must be a unique integer. If you add multiple rules to a WebACL, the values do not need to be consecutive.
     */
   var Priority: js.UndefOr[Integer] = js.native
   /**
-    * The identifier for a Rule.
+    * The identifier for a rule.
     */
   var RuleId: js.UndefOr[NonEmptyString] = js.native
   /**
@@ -38,7 +38,7 @@ object AwsWafWebAclRule {
     Action: WafAction = null,
     ExcludedRules: WafExcludedRuleList = null,
     OverrideAction: WafOverrideAction = null,
-    Priority: Int | scala.Double = null,
+    Priority: js.UndefOr[Integer] = js.undefined,
     RuleId: NonEmptyString = null,
     Type: NonEmptyString = null
   ): AwsWafWebAclRule = {
@@ -46,7 +46,7 @@ object AwsWafWebAclRule {
     if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
     if (ExcludedRules != null) __obj.updateDynamic("ExcludedRules")(ExcludedRules.asInstanceOf[js.Any])
     if (OverrideAction != null) __obj.updateDynamic("OverrideAction")(OverrideAction.asInstanceOf[js.Any])
-    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority.get.asInstanceOf[js.Any])
     if (RuleId != null) __obj.updateDynamic("RuleId")(RuleId.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsWafWebAclRule]

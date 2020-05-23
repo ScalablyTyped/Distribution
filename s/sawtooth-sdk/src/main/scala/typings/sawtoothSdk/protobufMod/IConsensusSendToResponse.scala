@@ -12,9 +12,9 @@ trait IConsensusSendToResponse extends js.Object {
 
 object IConsensusSendToResponse {
   @scala.inline
-  def apply(status: Status = null): IConsensusSendToResponse = {
+  def apply(status: js.UndefOr[Null | Status] = js.undefined): IConsensusSendToResponse = {
     val __obj = js.Dynamic.literal()
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConsensusSendToResponse]
   }
 }

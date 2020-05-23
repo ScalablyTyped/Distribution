@@ -33,12 +33,12 @@ object CreateUserRequest {
   def apply(
     BrokerId: string,
     Username: string,
-    ConsoleAccess: js.UndefOr[Boolean] = js.undefined,
+    ConsoleAccess: js.UndefOr[boolean] = js.undefined,
     Groups: listOfString = null,
     Password: string = null
   ): CreateUserRequest = {
     val __obj = js.Dynamic.literal(BrokerId = BrokerId.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConsoleAccess)) __obj.updateDynamic("ConsoleAccess")(ConsoleAccess.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConsoleAccess)) __obj.updateDynamic("ConsoleAccess")(ConsoleAccess.get.asInstanceOf[js.Any])
     if (Groups != null) __obj.updateDynamic("Groups")(Groups.asInstanceOf[js.Any])
     if (Password != null) __obj.updateDynamic("Password")(Password.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateUserRequest]

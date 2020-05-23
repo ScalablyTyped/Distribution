@@ -4,28 +4,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("spine.SwirlEffect")
-@js.native
-class SwirlEffect protected () extends VertexEffect {
-  def this(radius: Double) = this()
-  var angle: Double = js.native
-  var centerX: Double = js.native
-  var centerY: Double = js.native
-  var radius: Double = js.native
-  var worldX: js.Any = js.native
-  var worldY: js.Any = js.native
-  /* CompleteClass */
-  override def begin(skeleton: Skeleton): Unit = js.native
-  /* CompleteClass */
-  override def end(): Unit = js.native
-  /* CompleteClass */
-  override def transform(position: Vector2, uv: Vector2, light: Color, dark: Color): Unit = js.native
+trait SwirlEffect extends VertexEffect {
+  var angle: Double
+  var centerX: Double
+  var centerY: Double
+  var radius: Double
+  var worldX: js.Any
+  var worldY: js.Any
 }
 
-/* static members */
-@JSGlobal("spine.SwirlEffect")
-@js.native
-object SwirlEffect extends js.Object {
-  var interpolation: PowOut = js.native
+object SwirlEffect {
+  @scala.inline
+  def apply(
+    angle: Double,
+    begin: Skeleton => Unit,
+    centerX: Double,
+    centerY: Double,
+    end: () => Unit,
+    radius: Double,
+    transform: (Vector2, Vector2, Color, Color) => Unit,
+    worldX: js.Any,
+    worldY: js.Any
+  ): SwirlEffect = {
+    val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], begin = js.Any.fromFunction1(begin), centerX = centerX.asInstanceOf[js.Any], centerY = centerY.asInstanceOf[js.Any], end = js.Any.fromFunction0(end), radius = radius.asInstanceOf[js.Any], transform = js.Any.fromFunction4(transform), worldX = worldX.asInstanceOf[js.Any], worldY = worldY.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SwirlEffect]
+  }
 }
 

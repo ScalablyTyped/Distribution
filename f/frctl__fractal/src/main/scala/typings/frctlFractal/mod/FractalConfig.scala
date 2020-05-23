@@ -1,12 +1,12 @@
 package typings.frctlFractal.mod
 
-import typings.frctlFractal.AnonAuthor
+import typings.frctlFractal.anon.Author
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FractalConfig extends js.Object {
-  var project: js.UndefOr[AnonAuthor] = js.undefined
+  var project: js.UndefOr[Author] = js.undefined
   @JSName("project.author")
   var projectDotauthor: js.UndefOr[String] = js.undefined
   @JSName("project.title")
@@ -18,7 +18,7 @@ trait FractalConfig extends js.Object {
 object FractalConfig {
   @scala.inline
   def apply(
-    project: AnonAuthor = null,
+    project: Author = null,
     projectDotauthor: String = null,
     projectDottitle: String = null,
     projectDotversion: String = null

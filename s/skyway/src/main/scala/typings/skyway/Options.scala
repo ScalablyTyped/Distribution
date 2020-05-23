@@ -19,14 +19,14 @@ object Options {
     key: String,
     config: RTCConfiguration = null,
     credential: Credential = null,
-    debug: Int | Double = null,
+    debug: js.UndefOr[Double] = js.undefined,
     turn: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (credential != null) __obj.updateDynamic("credential")(credential.asInstanceOf[js.Any])
-    if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (!js.isUndefined(turn)) __obj.updateDynamic("turn")(turn.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(turn)) __obj.updateDynamic("turn")(turn.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -60,13 +60,13 @@ object CodecOptions {
     useraw: js.UndefOr[Boolean] = js.undefined
   ): CodecOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(binarraybuffer)) __obj.updateDynamic("binarraybuffer")(binarraybuffer.asInstanceOf[js.Any])
-    if (!js.isUndefined(int64)) __obj.updateDynamic("int64")(int64.asInstanceOf[js.Any])
-    if (!js.isUndefined(preset)) __obj.updateDynamic("preset")(preset.asInstanceOf[js.Any])
-    if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe.asInstanceOf[js.Any])
-    if (!js.isUndefined(uint8array)) __obj.updateDynamic("uint8array")(uint8array.asInstanceOf[js.Any])
-    if (!js.isUndefined(usemap)) __obj.updateDynamic("usemap")(usemap.asInstanceOf[js.Any])
-    if (!js.isUndefined(useraw)) __obj.updateDynamic("useraw")(useraw.asInstanceOf[js.Any])
+    if (!js.isUndefined(binarraybuffer)) __obj.updateDynamic("binarraybuffer")(binarraybuffer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(int64)) __obj.updateDynamic("int64")(int64.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preset)) __obj.updateDynamic("preset")(preset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(uint8array)) __obj.updateDynamic("uint8array")(uint8array.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(usemap)) __obj.updateDynamic("usemap")(usemap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useraw)) __obj.updateDynamic("useraw")(useraw.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodecOptions]
   }
 }

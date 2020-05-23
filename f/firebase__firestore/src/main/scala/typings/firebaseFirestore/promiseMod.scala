@@ -1,17 +1,25 @@
 package typings.firebaseFirestore
 
 import typings.std.Error
-import typings.std.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/util/promise", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/util/promise", JSImport.Namespace)
 @js.native
 object promiseMod extends js.Object {
   @js.native
-  trait CancelablePromise[T] extends Promise[T] {
+  trait CancelablePromise[T] extends js.Object {
     def cancel(): Unit = js.native
+    def `catch`[TResult](): js.Promise[T | TResult] = js.native
+    def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): js.Promise[T | TResult] = js.native
+    def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](
+      onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]],
+      onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
+    ): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
   }
   
   @js.native

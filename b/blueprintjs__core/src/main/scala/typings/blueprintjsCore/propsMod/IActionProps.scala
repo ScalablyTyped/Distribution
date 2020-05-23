@@ -28,15 +28,15 @@ object IActionProps {
   def apply(
     className: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    icon: IconName | MaybeElement = null,
+    icon: js.UndefOr[Null | IconName | MaybeElement] = js.undefined,
     intent: Intent = null,
     onClick: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
     text: ReactNode = null
   ): IActionProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])

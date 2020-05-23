@@ -1,6 +1,6 @@
 package typings.useSidecar.configMod
 
-import typings.useSidecar.PartialIConfig
+import typings.useSidecar.anon.PartialIConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

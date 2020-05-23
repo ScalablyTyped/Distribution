@@ -17,10 +17,10 @@ trait PlotIkhSenkouSpanBStylesOptions extends js.Object {
 
 object PlotIkhSenkouSpanBStylesOptions {
   @scala.inline
-  def apply(lineColor: ColorString = null, lineWidth: Int | Double = null): PlotIkhSenkouSpanBStylesOptions = {
+  def apply(lineColor: ColorString = null, lineWidth: js.UndefOr[Double] = js.undefined): PlotIkhSenkouSpanBStylesOptions = {
     val __obj = js.Dynamic.literal()
     if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotIkhSenkouSpanBStylesOptions]
   }
 }

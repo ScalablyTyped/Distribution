@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a client-side equivalent of the ASPxDataView object.
   */
-@JSGlobal("ASPxClientDataView")
 @js.native
-class ASPxClientDataView () extends ASPxClientControl {
+trait ASPxClientDataView extends ASPxClientControl {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -67,16 +66,5 @@ class ASPxClientDataView () extends ASPxClientControl {
     * @param pageSize An integer value that specifies the page size.
     */
   def SetPageSize(pageSize: Double): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("ASPxClientDataView")
-@js.native
-object ASPxClientDataView extends js.Object {
-  /**
-    * Converts the specified object to the ASPxClientDataView type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): ASPxClientDataView = js.native
 }
 

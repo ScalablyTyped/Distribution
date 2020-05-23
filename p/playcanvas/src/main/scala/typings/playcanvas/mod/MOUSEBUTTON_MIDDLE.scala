@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @type {number}
-  * @name pc.MOUSEBUTTON_MIDDLE
-  * @description The middle mouse button.
+  * The middle mouse button.
   */
 @JSImport("playcanvas", "MOUSEBUTTON_MIDDLE")
 @js.native

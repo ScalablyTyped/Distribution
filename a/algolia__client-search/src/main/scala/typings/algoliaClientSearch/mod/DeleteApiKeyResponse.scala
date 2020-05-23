@@ -8,7 +8,7 @@ trait DeleteApiKeyResponse extends js.Object {
   /**
     * The date when the api key was deleted.
     */
-  val deletedAt: String
+  var deletedAt: String
 }
 
 object DeleteApiKeyResponse {

@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when there's an error.
-		 */
+  * Fired when there's an error.
+  */
 trait AudioPlayerErrorEvent extends AudioPlayerBaseEvent {
   /**
-  			 * Error code. Different between android and iOS.
-  			 */
+    * Error code. Different between android and iOS.
+    */
   var code: Double
   /**
-  			 * Error message.
-  			 */
+    * Error message.
+    */
   var error: String
 }
 

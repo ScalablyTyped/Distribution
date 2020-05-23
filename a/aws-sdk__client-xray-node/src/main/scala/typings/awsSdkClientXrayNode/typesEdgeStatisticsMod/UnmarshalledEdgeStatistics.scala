@@ -24,16 +24,16 @@ object UnmarshalledEdgeStatistics {
   def apply(
     ErrorStatistics: UnmarshalledErrorStatistics = null,
     FaultStatistics: UnmarshalledFaultStatistics = null,
-    OkCount: Int | Double = null,
-    TotalCount: Int | Double = null,
-    TotalResponseTime: Int | Double = null
+    OkCount: js.UndefOr[Double] = js.undefined,
+    TotalCount: js.UndefOr[Double] = js.undefined,
+    TotalResponseTime: js.UndefOr[Double] = js.undefined
   ): UnmarshalledEdgeStatistics = {
     val __obj = js.Dynamic.literal()
     if (ErrorStatistics != null) __obj.updateDynamic("ErrorStatistics")(ErrorStatistics.asInstanceOf[js.Any])
     if (FaultStatistics != null) __obj.updateDynamic("FaultStatistics")(FaultStatistics.asInstanceOf[js.Any])
-    if (OkCount != null) __obj.updateDynamic("OkCount")(OkCount.asInstanceOf[js.Any])
-    if (TotalCount != null) __obj.updateDynamic("TotalCount")(TotalCount.asInstanceOf[js.Any])
-    if (TotalResponseTime != null) __obj.updateDynamic("TotalResponseTime")(TotalResponseTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(OkCount)) __obj.updateDynamic("OkCount")(OkCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalCount)) __obj.updateDynamic("TotalCount")(TotalCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalResponseTime)) __obj.updateDynamic("TotalResponseTime")(TotalResponseTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledEdgeStatistics]
   }
 }

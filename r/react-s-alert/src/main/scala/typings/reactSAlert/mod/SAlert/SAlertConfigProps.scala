@@ -26,7 +26,7 @@ object SAlertConfigProps {
     customFields: js.Object = null,
     effect: String = null,
     html: js.UndefOr[Boolean] = js.undefined,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     onClose: () => Unit = null,
     onShow: () => Unit = null,
     position: String = null,
@@ -38,8 +38,8 @@ object SAlertConfigProps {
     if (contentTemplate != null) __obj.updateDynamic("contentTemplate")(js.Any.fromFunction1(contentTemplate))
     if (customFields != null) __obj.updateDynamic("customFields")(customFields.asInstanceOf[js.Any])
     if (effect != null) __obj.updateDynamic("effect")(effect.asInstanceOf[js.Any])
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])

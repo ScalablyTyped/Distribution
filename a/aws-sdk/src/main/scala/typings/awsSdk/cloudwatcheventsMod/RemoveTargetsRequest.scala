@@ -30,11 +30,11 @@ object RemoveTargetsRequest {
     Ids: TargetIdList,
     Rule: RuleName,
     EventBusName: EventBusName = null,
-    Force: js.UndefOr[scala.Boolean] = js.undefined
+    Force: js.UndefOr[Boolean] = js.undefined
   ): RemoveTargetsRequest = {
     val __obj = js.Dynamic.literal(Ids = Ids.asInstanceOf[js.Any], Rule = Rule.asInstanceOf[js.Any])
     if (EventBusName != null) __obj.updateDynamic("EventBusName")(EventBusName.asInstanceOf[js.Any])
-    if (!js.isUndefined(Force)) __obj.updateDynamic("Force")(Force.asInstanceOf[js.Any])
+    if (!js.isUndefined(Force)) __obj.updateDynamic("Force")(Force.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveTargetsRequest]
   }
 }

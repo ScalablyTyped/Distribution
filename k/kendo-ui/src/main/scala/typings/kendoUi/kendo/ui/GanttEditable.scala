@@ -34,17 +34,17 @@ object GanttEditable {
     update: js.UndefOr[Boolean] = js.undefined
   ): GanttEditable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(confirmation)) __obj.updateDynamic("confirmation")(confirmation.asInstanceOf[js.Any])
-    if (!js.isUndefined(create)) __obj.updateDynamic("create")(create.asInstanceOf[js.Any])
-    if (!js.isUndefined(dependencyCreate)) __obj.updateDynamic("dependencyCreate")(dependencyCreate.asInstanceOf[js.Any])
-    if (!js.isUndefined(dependencyDestroy)) __obj.updateDynamic("dependencyDestroy")(dependencyDestroy.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroy)) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragPercentComplete)) __obj.updateDynamic("dragPercentComplete")(dragPercentComplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(move)) __obj.updateDynamic("move")(move.asInstanceOf[js.Any])
-    if (!js.isUndefined(reorder)) __obj.updateDynamic("reorder")(reorder.asInstanceOf[js.Any])
-    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize.asInstanceOf[js.Any])
+    if (!js.isUndefined(confirmation)) __obj.updateDynamic("confirmation")(confirmation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(create)) __obj.updateDynamic("create")(create.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dependencyCreate)) __obj.updateDynamic("dependencyCreate")(dependencyCreate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dependencyDestroy)) __obj.updateDynamic("dependencyDestroy")(dependencyDestroy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroy)) __obj.updateDynamic("destroy")(destroy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragPercentComplete)) __obj.updateDynamic("dragPercentComplete")(dragPercentComplete.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(move)) __obj.updateDynamic("move")(move.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reorder)) __obj.updateDynamic("reorder")(reorder.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize.get.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
+    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttEditable]
   }
 }

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.remarkable.libMod._Token because Already inherited */ trait TRCloseToken extends TagToken {
   @JSName("type")
   var type_TRCloseToken: tr_close

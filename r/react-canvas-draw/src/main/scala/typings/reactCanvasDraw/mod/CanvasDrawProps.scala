@@ -31,7 +31,7 @@ object CanvasDrawProps {
   def apply(
     backgroundColor: String = null,
     brushColor: String = null,
-    brushRadius: Int | Double = null,
+    brushRadius: js.UndefOr[Double] = js.undefined,
     canvasHeight: Double | String = null,
     canvasWidth: Double | String = null,
     catenaryColor: String = null,
@@ -42,29 +42,29 @@ object CanvasDrawProps {
     hideInterface: js.UndefOr[Boolean] = js.undefined,
     imgSrc: String = null,
     immediateLoading: js.UndefOr[Boolean] = js.undefined,
-    lazyRadius: Int | Double = null,
-    loadTimeOffset: Int | Double = null,
-    onChange: /* canvas */ CanvasDraw => Unit = null,
+    lazyRadius: js.UndefOr[Double] = js.undefined,
+    loadTimeOffset: js.UndefOr[Double] = js.undefined,
+    onChange: js.UndefOr[Null | (/* canvas */ CanvasDraw => Unit)] = js.undefined,
     saveData: String = null,
     style: CSSProperties = null
   ): CanvasDrawProps = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (brushColor != null) __obj.updateDynamic("brushColor")(brushColor.asInstanceOf[js.Any])
-    if (brushRadius != null) __obj.updateDynamic("brushRadius")(brushRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(brushRadius)) __obj.updateDynamic("brushRadius")(brushRadius.get.asInstanceOf[js.Any])
     if (canvasHeight != null) __obj.updateDynamic("canvasHeight")(canvasHeight.asInstanceOf[js.Any])
     if (canvasWidth != null) __obj.updateDynamic("canvasWidth")(canvasWidth.asInstanceOf[js.Any])
     if (catenaryColor != null) __obj.updateDynamic("catenaryColor")(catenaryColor.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (gridColor != null) __obj.updateDynamic("gridColor")(gridColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideGrid)) __obj.updateDynamic("hideGrid")(hideGrid.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideInterface)) __obj.updateDynamic("hideInterface")(hideInterface.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideGrid)) __obj.updateDynamic("hideGrid")(hideGrid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideInterface)) __obj.updateDynamic("hideInterface")(hideInterface.get.asInstanceOf[js.Any])
     if (imgSrc != null) __obj.updateDynamic("imgSrc")(imgSrc.asInstanceOf[js.Any])
-    if (!js.isUndefined(immediateLoading)) __obj.updateDynamic("immediateLoading")(immediateLoading.asInstanceOf[js.Any])
-    if (lazyRadius != null) __obj.updateDynamic("lazyRadius")(lazyRadius.asInstanceOf[js.Any])
-    if (loadTimeOffset != null) __obj.updateDynamic("loadTimeOffset")(loadTimeOffset.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (!js.isUndefined(immediateLoading)) __obj.updateDynamic("immediateLoading")(immediateLoading.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lazyRadius)) __obj.updateDynamic("lazyRadius")(lazyRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loadTimeOffset)) __obj.updateDynamic("loadTimeOffset")(loadTimeOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(onChange)) __obj.updateDynamic("onChange")(if (onChange != null) js.Any.fromFunction1(onChange.asInstanceOf[/* canvas */ CanvasDraw => Unit]) else null)
     if (saveData != null) __obj.updateDynamic("saveData")(saveData.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanvasDrawProps]

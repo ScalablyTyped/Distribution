@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("createjs.Timeline")
 @js.native
-class Timeline () extends AbstractTween {
-  def this(props: TimelineProps) = this()
+trait Timeline extends AbstractTween {
   // properties
   var tweens: js.Array[Tween] = js.native
   // method

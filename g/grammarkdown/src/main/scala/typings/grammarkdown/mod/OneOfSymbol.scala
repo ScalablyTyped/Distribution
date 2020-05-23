@@ -18,11 +18,6 @@ class OneOfSymbol protected ()
   ) = this()
   def this(
     oneKeyword: typings.grammarkdown.nodesMod.Token[OneKeyword],
-    ofKeyword: js.UndefOr[scala.Nothing],
-    symbols: js.Array[LexicalSymbol]
-  ) = this()
-  def this(
-    oneKeyword: typings.grammarkdown.nodesMod.Token[OneKeyword],
     ofKeyword: typings.grammarkdown.nodesMod.Token[OfKeyword],
     symbols: js.Array[LexicalSymbol]
   ) = this()

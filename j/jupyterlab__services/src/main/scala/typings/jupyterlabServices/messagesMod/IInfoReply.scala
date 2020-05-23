@@ -1,6 +1,6 @@
 package typings.jupyterlabServices.messagesMod
 
-import typings.jupyterlabServices.AnonText
+import typings.jupyterlabServices.anon.Text
 import typings.jupyterlabServices.jupyterlabServicesStrings.ok
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait IInfoReply extends IReplyOkContent {
   var banner: String
-  var help_links: js.Array[AnonText]
+  var help_links: js.Array[Text]
   var implementation: String
   var implementation_version: String
   var language_info: ILanguageInfo
@@ -19,7 +19,7 @@ object IInfoReply {
   @scala.inline
   def apply(
     banner: String,
-    help_links: js.Array[AnonText],
+    help_links: js.Array[Text],
     implementation: String,
     implementation_version: String,
     language_info: ILanguageInfo,

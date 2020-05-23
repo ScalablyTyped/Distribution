@@ -34,35 +34,35 @@ object TooltipOptions {
     contentLoad: /* e */ TooltipEvent => Unit = null,
     error: /* e */ TooltipErrorEvent => Unit = null,
     filter: String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     hide: /* e */ TooltipEvent => Unit = null,
     iframe: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     position: String = null,
     requestStart: /* e */ TooltipRequestStartEvent => Unit = null,
     show: /* e */ TooltipEvent => Unit = null,
-    showAfter: Int | Double = null,
+    showAfter: js.UndefOr[Double] = js.undefined,
     showOn: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): TooltipOptions = {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide.asInstanceOf[js.Any])
-    if (!js.isUndefined(callout)) __obj.updateDynamic("callout")(callout.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(callout)) __obj.updateDynamic("callout")(callout.get.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (contentLoad != null) __obj.updateDynamic("contentLoad")(js.Any.fromFunction1(contentLoad))
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction1(hide))
-    if (!js.isUndefined(iframe)) __obj.updateDynamic("iframe")(iframe.asInstanceOf[js.Any])
+    if (!js.isUndefined(iframe)) __obj.updateDynamic("iframe")(iframe.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (requestStart != null) __obj.updateDynamic("requestStart")(js.Any.fromFunction1(requestStart))
     if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
-    if (showAfter != null) __obj.updateDynamic("showAfter")(showAfter.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAfter)) __obj.updateDynamic("showAfter")(showAfter.get.asInstanceOf[js.Any])
     if (showOn != null) __obj.updateDynamic("showOn")(showOn.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipOptions]
   }
 }

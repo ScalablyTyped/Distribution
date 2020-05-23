@@ -44,23 +44,23 @@ object GetRandomPasswordRequest {
   @scala.inline
   def apply(
     ExcludeCharacters: ExcludeCharactersType = null,
-    ExcludeLowercase: js.UndefOr[Boolean] = js.undefined,
-    ExcludeNumbers: js.UndefOr[Boolean] = js.undefined,
-    ExcludePunctuation: js.UndefOr[Boolean] = js.undefined,
-    ExcludeUppercase: js.UndefOr[Boolean] = js.undefined,
-    IncludeSpace: js.UndefOr[Boolean] = js.undefined,
-    PasswordLength: Int | Double = null,
-    RequireEachIncludedType: js.UndefOr[Boolean] = js.undefined
+    ExcludeLowercase: js.UndefOr[ExcludeLowercaseType] = js.undefined,
+    ExcludeNumbers: js.UndefOr[ExcludeNumbersType] = js.undefined,
+    ExcludePunctuation: js.UndefOr[ExcludePunctuationType] = js.undefined,
+    ExcludeUppercase: js.UndefOr[ExcludeUppercaseType] = js.undefined,
+    IncludeSpace: js.UndefOr[IncludeSpaceType] = js.undefined,
+    PasswordLength: js.UndefOr[PasswordLengthType] = js.undefined,
+    RequireEachIncludedType: js.UndefOr[RequireEachIncludedTypeType] = js.undefined
   ): GetRandomPasswordRequest = {
     val __obj = js.Dynamic.literal()
     if (ExcludeCharacters != null) __obj.updateDynamic("ExcludeCharacters")(ExcludeCharacters.asInstanceOf[js.Any])
-    if (!js.isUndefined(ExcludeLowercase)) __obj.updateDynamic("ExcludeLowercase")(ExcludeLowercase.asInstanceOf[js.Any])
-    if (!js.isUndefined(ExcludeNumbers)) __obj.updateDynamic("ExcludeNumbers")(ExcludeNumbers.asInstanceOf[js.Any])
-    if (!js.isUndefined(ExcludePunctuation)) __obj.updateDynamic("ExcludePunctuation")(ExcludePunctuation.asInstanceOf[js.Any])
-    if (!js.isUndefined(ExcludeUppercase)) __obj.updateDynamic("ExcludeUppercase")(ExcludeUppercase.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeSpace)) __obj.updateDynamic("IncludeSpace")(IncludeSpace.asInstanceOf[js.Any])
-    if (PasswordLength != null) __obj.updateDynamic("PasswordLength")(PasswordLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequireEachIncludedType)) __obj.updateDynamic("RequireEachIncludedType")(RequireEachIncludedType.asInstanceOf[js.Any])
+    if (!js.isUndefined(ExcludeLowercase)) __obj.updateDynamic("ExcludeLowercase")(ExcludeLowercase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ExcludeNumbers)) __obj.updateDynamic("ExcludeNumbers")(ExcludeNumbers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ExcludePunctuation)) __obj.updateDynamic("ExcludePunctuation")(ExcludePunctuation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ExcludeUppercase)) __obj.updateDynamic("ExcludeUppercase")(ExcludeUppercase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeSpace)) __obj.updateDynamic("IncludeSpace")(IncludeSpace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(PasswordLength)) __obj.updateDynamic("PasswordLength")(PasswordLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RequireEachIncludedType)) __obj.updateDynamic("RequireEachIncludedType")(RequireEachIncludedType.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRandomPasswordRequest]
   }
 }

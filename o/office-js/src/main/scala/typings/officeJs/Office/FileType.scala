@@ -1,6 +1,5 @@
 package typings.officeJs.Office
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,17 +31,6 @@ object FileType extends js.Object {
     */
   @js.native
   sealed trait Text extends FileType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FileType with Double] = js.native
-  /* 1 */ @js.native
-  object Compressed extends TopLevel[Compressed with Double]
-  
-  /* 2 */ @js.native
-  object Pdf extends TopLevel[Pdf with Double]
-  
-  /* 0 */ @js.native
-  object Text extends TopLevel[Text with Double]
   
 }
 

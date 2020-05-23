@@ -1,7 +1,6 @@
 package typings.blockingProxy
 
 import typings.blockingProxy.angularWaitBarrierMod.AngularWaitBarrier
-import typings.blockingProxy.blockingProxyStrings.bpproxy
 import typings.blockingProxy.highlightDelayBarrierMod.HighlightDelayBarrier
 import typings.blockingProxy.webdriverLoggerMod.WebDriverLogger
 import typings.node.httpMod.IncomingMessage
@@ -43,7 +42,7 @@ object blockingproxyMod extends js.Object {
     def setWaitParams(rootEl: js.Any): Unit = js.native
   }
   
-  val BP_PREFIX: bpproxy = js.native
+  val BP_PREFIX: /* "bpproxy" */ String = js.native
   /* static members */
   @js.native
   object BlockingProxy extends js.Object {

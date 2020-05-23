@@ -26,7 +26,6 @@ object ConnectivityMonitor {
   @scala.inline
   def apply(addCallback: ConnectivityMonitorCallback => Unit, shutdown: () => Unit): ConnectivityMonitor = {
     val __obj = js.Dynamic.literal(addCallback = js.Any.fromFunction1(addCallback), shutdown = js.Any.fromFunction0(shutdown))
-  
     __obj.asInstanceOf[ConnectivityMonitor]
   }
 }

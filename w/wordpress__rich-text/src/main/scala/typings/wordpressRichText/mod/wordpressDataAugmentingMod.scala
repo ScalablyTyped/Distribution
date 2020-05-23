@@ -1,7 +1,7 @@
 package typings.wordpressRichText.mod
 
-import typings.wordpressRichText.TypeofimportedActions
-import typings.wordpressRichText.TypeofimportedSelectors
+import typings.wordpressRichText.anon.TypeofimportedActions
+import typings.wordpressRichText.anon.TypeofimportedSelectors
 import typings.wordpressRichText.wordpressRichTextStrings.`coreSlashrich-text`
 import scala.scalajs.js
 import scala.scalajs.js.`|`

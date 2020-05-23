@@ -19,14 +19,14 @@ object ScaleLineOptions {
   @scala.inline
   def apply(
     className: String = null,
-    minWidth: Int | Double = null,
+    minWidth: js.UndefOr[Double] = js.undefined,
     render: /* event */ MapEvent => _ = null,
     target: Element = null,
     units: Units | String = null
   ): ScaleLineOptions = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])

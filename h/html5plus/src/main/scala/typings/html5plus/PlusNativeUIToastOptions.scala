@@ -69,9 +69,9 @@ trait PlusNativeUIToastOptions extends js.Object {
   /**
     * 提示消息框上显示的样式
     * 可取值：
-    * 	"block"表示图标与文字分两行显示，上面显示图标，下面显示文字；
-    * 	"inline"表示图标与文字在同一行显示，左边显示图标，右边显示文字。
-    * 	默认值为"block"。
+    *     "block"表示图标与文字分两行显示，上面显示图标，下面显示文字；
+    *     "inline"表示图标与文字在同一行显示，左边显示图标，右边显示文字。
+    *     默认值为"block"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
@@ -79,15 +79,15 @@ trait PlusNativeUIToastOptions extends js.Object {
   /**
     * 提示消息框上显示的文本类型
     * 可取值：
-    * 		"text" - 显示的消息内容为文本字符串；
-    * 		"richtext" - 显示的消息内容为富文本内容。
-    * 	默认值为"text"。
-    * 	当type为"text"时，富文本使用html的部分标签，具体标签如下：
-    * 	图片标签&lt;img src="图片资源url地址" width="图片显示的宽度" height="图片显示的高度" onclick="console.log('clicked img')"&gt;&lt;/img&gt;；
-    * 	字体标签&lt;font color="字体颜色"&gt;&lt;/font&gt;，内容在一行显示不下时自动换行，行高默认为字体的1.2倍；
-    * 	换行标签&lt;br/&gt;；
-    * 	链接标签&lt;a onclick="console.log('clicked a')"&gt;链接地址&lt;/a&gt;。
-    * 	如示例“&lt;img onclick="console.log('clicked img')" src="http://img-cdn-qiniu.dcloud.net.cn/icon2.png"/&gt;&lt;a onclick="console.log(clicked a)"&gt;链接地址&lt;/a&gt;”。
+    *         "text" - 显示的消息内容为文本字符串；
+    *         "richtext" - 显示的消息内容为富文本内容。
+    *     默认值为"text"。
+    *     当type为"text"时，富文本使用html的部分标签，具体标签如下：
+    *     图片标签&lt;img src="图片资源url地址" width="图片显示的宽度" height="图片显示的高度" onclick="console.log('clicked img')"&gt;&lt;/img&gt;；
+    *     字体标签&lt;font color="字体颜色"&gt;&lt;/font&gt;，内容在一行显示不下时自动换行，行高默认为字体的1.2倍；
+    *     换行标签&lt;br/&gt;；
+    *     链接标签&lt;a onclick="console.log('clicked a')"&gt;链接地址&lt;/a&gt;。
+    *     如示例“&lt;img onclick="console.log('clicked img')" src="http://img-cdn-qiniu.dcloud.net.cn/icon2.png"/&gt;&lt;a onclick="console.log(clicked a)"&gt;链接地址&lt;/a&gt;”。
     * - text: 文本字符串
     * - richtext: 富文本内容
     * 

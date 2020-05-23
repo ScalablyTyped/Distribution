@@ -105,7 +105,7 @@ class FeatureLayer_ protected () extends Layer {
   def getFeature(id: String): Layer = js.native
   def getFeature(id: Double): Layer = js.native
   /**
-    * 	Returns the current time range as an array like [from, to]
+    *     Returns the current time range as an array like [from, to]
     */
   def getTimeRange(): js.Array[Date] = js.native
   /**
@@ -136,7 +136,7 @@ class FeatureLayer_ protected () extends Layer {
     */
   def refresh(): this.type = js.native
   /**
-    * 	Given the ID of a feature, reset that feature to the original style.
+    *     Given the ID of a feature, reset that feature to the original style.
     */
   def resetStyle(): this.type = js.native
   def setFeatureStyle(id: String, style: StyleCallback): this.type = js.native

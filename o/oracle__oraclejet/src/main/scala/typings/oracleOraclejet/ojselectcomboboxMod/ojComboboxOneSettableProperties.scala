@@ -1,12 +1,12 @@
 package typings.oracleOraclejet.ojselectcomboboxMod
 
-import typings.oracleOraclejet.AnonChildren
-import typings.oracleOraclejet.AnonClass
-import typings.oracleOraclejet.AnonConverterHint
-import typings.oracleOraclejet.AnonDefinition
-import typings.oracleOraclejet.AnonFilterFurther
-import typings.oracleOraclejet.AnonInstruction
-import typings.oracleOraclejet.AnonLabelValue
+import typings.oracleOraclejet.anon.Children
+import typings.oracleOraclejet.anon.Class
+import typings.oracleOraclejet.anon.ConverterHint
+import typings.oracleOraclejet.anon.Definition
+import typings.oracleOraclejet.anon.FilterFurther
+import typings.oracleOraclejet.anon.Instruction
+import typings.oracleOraclejet.anon.LabelValue
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojeditablevalueMod.editableValueSettableProperties
 import typings.oracleOraclejet.ojmessagingMod.^
@@ -37,16 +37,16 @@ trait ojComboboxOneSettableProperties[K, D]
   var options: (js.Array[
     typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Optgroup
   ]) | (DataProvider[K, D]) | Null
-  var optionsKeys: AnonChildren
-  var pickerAttributes: AnonClass
+  var optionsKeys: Children
+  var pickerAttributes: Class
   var placeholder: String | Null
   val rawValue: String | Null
   var readOnly: Boolean
   var required: Boolean
   @JSName("translations")
-  var translations_ojComboboxOneSettableProperties: AnonFilterFurther
+  var translations_ojComboboxOneSettableProperties: FilterFurther
   var validators: (js.Array[Validator[_] | RegisteredValidator]) | Null
-  var valueOption: AnonLabelValue
+  var valueOption: LabelValue
 }
 
 object ojComboboxOneSettableProperties {
@@ -54,24 +54,24 @@ object ojComboboxOneSettableProperties {
   def apply[K, D](
     asyncValidators: js.Array[AsyncValidator[_]],
     disabled: Boolean,
-    displayOptions: AnonConverterHint,
+    displayOptions: ConverterHint,
     filterOnOpen: none | rawValue,
-    help: AnonInstruction,
-    helpHints: AnonDefinition,
+    help: Instruction,
+    helpHints: Definition,
     labelHint: String,
     messagesCustom: js.Array[^],
     minLength: Double,
-    optionsKeys: AnonChildren,
-    pickerAttributes: AnonClass,
+    optionsKeys: Children,
+    pickerAttributes: Class,
     readOnly: Boolean,
     required: Boolean,
-    translations: AnonFilterFurther,
+    translations: FilterFurther,
     valid: valid | pending | invalidHidden | invalidShown,
     value: js.Any,
-    valueOption: AnonLabelValue,
+    valueOption: LabelValue,
     converter: Converter[_] | RegisteredConverter = null,
     describedBy: String = null,
-    optionRenderer: /* param0 */ OptionContext => Element = null,
+    optionRenderer: js.UndefOr[Null | (/* param0 */ OptionContext => Element)] = js.undefined,
     options: (js.Array[
       typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Optgroup
     ]) | (DataProvider[K, D]) = null,
@@ -79,14 +79,8 @@ object ojComboboxOneSettableProperties {
     rawValue: String = null,
     validators: js.Array[Validator[_] | RegisteredValidator] = null
   ): ojComboboxOneSettableProperties[K, D] = {
-    val __obj = js.Dynamic.literal(asyncValidators = asyncValidators.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], filterOnOpen = filterOnOpen.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], minLength = minLength.asInstanceOf[js.Any], optionsKeys = optionsKeys.asInstanceOf[js.Any], pickerAttributes = pickerAttributes.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueOption = valueOption.asInstanceOf[js.Any])
-    if (converter != null) __obj.updateDynamic("converter")(converter.asInstanceOf[js.Any])
-    if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy.asInstanceOf[js.Any])
-    if (optionRenderer != null) __obj.updateDynamic("optionRenderer")(js.Any.fromFunction1(optionRenderer))
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (rawValue != null) __obj.updateDynamic("rawValue")(rawValue.asInstanceOf[js.Any])
-    if (validators != null) __obj.updateDynamic("validators")(validators.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(asyncValidators = asyncValidators.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], filterOnOpen = filterOnOpen.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], minLength = minLength.asInstanceOf[js.Any], optionsKeys = optionsKeys.asInstanceOf[js.Any], pickerAttributes = pickerAttributes.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueOption = valueOption.asInstanceOf[js.Any], converter = converter.asInstanceOf[js.Any], describedBy = describedBy.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], rawValue = rawValue.asInstanceOf[js.Any], validators = validators.asInstanceOf[js.Any])
+    if (!js.isUndefined(optionRenderer)) __obj.updateDynamic("optionRenderer")(if (optionRenderer != null) js.Any.fromFunction1(optionRenderer.asInstanceOf[/* param0 */ OptionContext => Element]) else null)
     __obj.asInstanceOf[ojComboboxOneSettableProperties[K, D]]
   }
 }

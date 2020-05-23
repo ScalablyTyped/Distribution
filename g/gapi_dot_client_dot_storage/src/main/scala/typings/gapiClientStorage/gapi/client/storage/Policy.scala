@@ -1,13 +1,13 @@
 package typings.gapiClientStorage.gapi.client.storage
 
-import typings.gapiClientStorage.AnonCondition
+import typings.gapiClientStorage.anon.Condition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Policy extends js.Object {
   /** An association between a role, which comes with a set of permissions, and members who may assume that role. */
-  var bindings: js.UndefOr[js.Array[AnonCondition]] = js.undefined
+  var bindings: js.UndefOr[js.Array[Condition]] = js.undefined
   /** HTTP 1.1  Entity tag for the policy. */
   var etag: js.UndefOr[String] = js.undefined
   /** The kind of item this is. For policies, this is always storage#policy. This field is ignored on input. */
@@ -23,7 +23,7 @@ trait Policy extends js.Object {
 object Policy {
   @scala.inline
   def apply(
-    bindings: js.Array[AnonCondition] = null,
+    bindings: js.Array[Condition] = null,
     etag: String = null,
     kind: String = null,
     resourceId: String = null

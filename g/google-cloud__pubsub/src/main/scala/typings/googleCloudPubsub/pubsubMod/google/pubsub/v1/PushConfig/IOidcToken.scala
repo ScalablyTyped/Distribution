@@ -14,10 +14,13 @@ trait IOidcToken extends js.Object {
 
 object IOidcToken {
   @scala.inline
-  def apply(audience: String = null, serviceAccountEmail: String = null): IOidcToken = {
+  def apply(
+    audience: js.UndefOr[Null | String] = js.undefined,
+    serviceAccountEmail: js.UndefOr[Null | String] = js.undefined
+  ): IOidcToken = {
     val __obj = js.Dynamic.literal()
-    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
-    if (serviceAccountEmail != null) __obj.updateDynamic("serviceAccountEmail")(serviceAccountEmail.asInstanceOf[js.Any])
+    if (!js.isUndefined(audience)) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
+    if (!js.isUndefined(serviceAccountEmail)) __obj.updateDynamic("serviceAccountEmail")(serviceAccountEmail.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOidcToken]
   }
 }

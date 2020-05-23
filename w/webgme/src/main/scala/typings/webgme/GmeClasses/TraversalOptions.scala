@@ -15,15 +15,15 @@ object TraversalOptions {
   @scala.inline
   def apply(
     excludeRoot: js.UndefOr[Boolean] = js.undefined,
-    maxParallelLoad: Int | Double = null,
+    maxParallelLoad: js.UndefOr[Double] = js.undefined,
     order: TraversalOrder = null,
     stopOnError: js.UndefOr[Boolean] = js.undefined
   ): TraversalOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(excludeRoot)) __obj.updateDynamic("excludeRoot")(excludeRoot.asInstanceOf[js.Any])
-    if (maxParallelLoad != null) __obj.updateDynamic("maxParallelLoad")(maxParallelLoad.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludeRoot)) __obj.updateDynamic("excludeRoot")(excludeRoot.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxParallelLoad)) __obj.updateDynamic("maxParallelLoad")(maxParallelLoad.get.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopOnError)) __obj.updateDynamic("stopOnError")(stopOnError.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopOnError)) __obj.updateDynamic("stopOnError")(stopOnError.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TraversalOptions]
   }
 }

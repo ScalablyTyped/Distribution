@@ -14,9 +14,9 @@ trait ReplicationTimeValue extends js.Object {
 
 object ReplicationTimeValue {
   @scala.inline
-  def apply(Minutes: Int | Double = null): ReplicationTimeValue = {
+  def apply(Minutes: js.UndefOr[Minutes] = js.undefined): ReplicationTimeValue = {
     val __obj = js.Dynamic.literal()
-    if (Minutes != null) __obj.updateDynamic("Minutes")(Minutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(Minutes)) __obj.updateDynamic("Minutes")(Minutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicationTimeValue]
   }
 }

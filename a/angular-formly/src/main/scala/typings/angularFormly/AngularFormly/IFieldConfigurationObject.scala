@@ -8,24 +8,24 @@ import typings.angular.mod.IFormController
 import typings.angular.mod.IPromise
 import typings.angular.mod.IScope
 import typings.angular.mod.ITranscludeFunction
-import typings.angularFormly.AnonDictkey
-import typings.angularFormly.AnonErrorExistsAndShouldBeVisible
+import typings.angularFormly.anon.Dictkey
+import typings.angularFormly.anon.ErrorExistsAndShouldBeVisible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IFieldConfigurationObject extends IFieldObject {
   /**
-  		 * By default, the model passed to the formly-field directive is the same as the model passed to the
-  		 * formly-form. However, if the field has a model specified, then it is used for that field (and that
-  		 * field only). In addition, a deep watch is added to the formly-field directive's scope to run the
-  		 * expressionProperties when the specified model changes.
-  		 *
-  		 * Note, the formly-form directive will allow you to specify a string which is an (almost) formly
-  		 * expression which allows you to define the model as relative to the scope of the form.
-  		 *
-  		 * see http://docs.angular-formly.com/docs/field-configuration-object#model-object--string
-  		 */
+    * By default, the model passed to the formly-field directive is the same as the model passed to the
+    * formly-form. However, if the field has a model specified, then it is used for that field (and that
+    * field only). In addition, a deep watch is added to the formly-field directive's scope to run the
+    * expressionProperties when the specified model changes.
+    *
+    * Note, the formly-form directive will allow you to specify a string which is an (almost) formly
+    * expression which allows you to define the model as relative to the scope of the form.
+    *
+    * see http://docs.angular-formly.com/docs/field-configuration-object#model-object--string
+    */
   var model: js.UndefOr[String | StringDictionary[js.Any]] = js.undefined
 }
 
@@ -49,7 +49,7 @@ object IFieldConfigurationObject {
     model: String | StringDictionary[js.Any] = null,
     modelOptions: IModelOptions = null,
     name: String = null,
-    ngModelAttrs: AnonDictkey = null,
+    ngModelAttrs: Dictkey = null,
     ngModelElAttrs: StringDictionary[String] = null,
     noFormControl: js.UndefOr[Boolean] = js.undefined,
     optionsTypes: String | js.Array[String] = null,
@@ -61,7 +61,7 @@ object IFieldConfigurationObject {
     templateUrl: String | (js.Function1[/* fieldConfiguration */ IFieldConfigurationObject, String | IPromise[String]]) = null,
     `type`: String = null,
     updateInitialValue: () => Unit = null,
-    validation: AnonErrorExistsAndShouldBeVisible = null,
+    validation: ErrorExistsAndShouldBeVisible = null,
     validators: StringDictionary[String | IExpressionFunction | IValidator] = null,
     value: js.Function0[_] with (js.Function1[/* val */ js.Any, Unit]) = null,
     watcher: IWatcher | js.Array[IWatcher] = null,
@@ -76,7 +76,7 @@ object IFieldConfigurationObject {
     if (elementAttributes != null) __obj.updateDynamic("elementAttributes")(elementAttributes.asInstanceOf[js.Any])
     if (expressionProperties != null) __obj.updateDynamic("expressionProperties")(expressionProperties.asInstanceOf[js.Any])
     if (formControl != null) __obj.updateDynamic("formControl")(formControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
+    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide.get.asInstanceOf[js.Any])
     if (hideExpression != null) __obj.updateDynamic("hideExpression")(hideExpression.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (initialValue != null) __obj.updateDynamic("initialValue")(initialValue.asInstanceOf[js.Any])
@@ -87,7 +87,7 @@ object IFieldConfigurationObject {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (ngModelAttrs != null) __obj.updateDynamic("ngModelAttrs")(ngModelAttrs.asInstanceOf[js.Any])
     if (ngModelElAttrs != null) __obj.updateDynamic("ngModelElAttrs")(ngModelElAttrs.asInstanceOf[js.Any])
-    if (!js.isUndefined(noFormControl)) __obj.updateDynamic("noFormControl")(noFormControl.asInstanceOf[js.Any])
+    if (!js.isUndefined(noFormControl)) __obj.updateDynamic("noFormControl")(noFormControl.get.asInstanceOf[js.Any])
     if (optionsTypes != null) __obj.updateDynamic("optionsTypes")(optionsTypes.asInstanceOf[js.Any])
     if (resetModel != null) __obj.updateDynamic("resetModel")(js.Any.fromFunction0(resetModel))
     if (runExpressions != null) __obj.updateDynamic("runExpressions")(js.Any.fromFunction0(runExpressions))

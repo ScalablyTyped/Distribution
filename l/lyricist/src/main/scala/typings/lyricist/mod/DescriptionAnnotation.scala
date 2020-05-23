@@ -1,14 +1,14 @@
 package typings.lyricist.mod
 
-import typings.lyricist.AnonApipath
-import typings.lyricist.AnonContent
+import typings.lyricist.anon.Apipath
+import typings.lyricist.anon.Content
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DescriptionAnnotation extends js.Object {
   var _type: String
-  var annotatable: AnonApipath
+  var annotatable: Apipath
   var annotations: js.Array[Annotation]
   var annotator_id: Double
   var annotator_login: String
@@ -18,7 +18,7 @@ trait DescriptionAnnotation extends js.Object {
   var id: Double
   var is_description: Boolean
   var path: String
-  var range: AnonContent
+  var range: Content
   var song_id: Double
   var url: String
   var verified_annotator_ids: js.Array[_]
@@ -28,7 +28,7 @@ object DescriptionAnnotation {
   @scala.inline
   def apply(
     _type: String,
-    annotatable: AnonApipath,
+    annotatable: Apipath,
     annotations: js.Array[Annotation],
     annotator_id: Double,
     annotator_login: String,
@@ -38,7 +38,7 @@ object DescriptionAnnotation {
     id: Double,
     is_description: Boolean,
     path: String,
-    range: AnonContent,
+    range: Content,
     song_id: Double,
     url: String,
     verified_annotator_ids: js.Array[_]

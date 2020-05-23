@@ -6,6 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  *
+  */
 trait Remote extends js.Object {
   /**
     * The connection this remote is attached to.
@@ -22,7 +25,7 @@ trait Remote extends js.Object {
     *
     * @param capabilities The server capabilities to fill.
     */
-  def fillServerCapabilities(capabilities: ServerCapabilities): Unit
+  def fillServerCapabilities(capabilities: ServerCapabilities[_]): Unit
   /**
     * Called to initialize the remote with the given
     * client capabilities
@@ -37,11 +40,10 @@ object Remote {
   def apply(
     attach: IConnection => Unit,
     connection: IConnection,
-    fillServerCapabilities: ServerCapabilities => Unit,
+    fillServerCapabilities: ServerCapabilities[_] => Unit,
     initialize: ClientCapabilities => Unit
   ): Remote = {
     val __obj = js.Dynamic.literal(attach = js.Any.fromFunction1(attach), connection = connection.asInstanceOf[js.Any], fillServerCapabilities = js.Any.fromFunction1(fillServerCapabilities), initialize = js.Any.fromFunction1(initialize))
-  
     __obj.asInstanceOf[Remote]
   }
 }

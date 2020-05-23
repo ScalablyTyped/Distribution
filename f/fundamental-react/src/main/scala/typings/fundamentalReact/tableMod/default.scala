@@ -1,7 +1,7 @@
 package typings.fundamentalReact.tableMod
 
-import typings.fundamentalReact.PartialTableProps
-import typings.fundamentalReact.WeakValidationMapTablePro
+import typings.fundamentalReact.anon.PartialTableProps
+import typings.fundamentalReact.anon.WeakValidationMapTablePro
 import typings.fundamentalReact.fundamentalReactStrings.Table
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement

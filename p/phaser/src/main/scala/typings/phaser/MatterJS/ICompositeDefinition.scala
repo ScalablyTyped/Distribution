@@ -84,7 +84,7 @@ object ICompositeDefinition {
     bodies: js.Array[BodyType] = null,
     composites: js.Array[CompositeType] = null,
     constraints: js.Array[ConstraintType] = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     isModified: js.UndefOr[Boolean] = js.undefined,
     label: String = null,
     parent: CompositeType = null,
@@ -94,8 +94,8 @@ object ICompositeDefinition {
     if (bodies != null) __obj.updateDynamic("bodies")(bodies.asInstanceOf[js.Any])
     if (composites != null) __obj.updateDynamic("composites")(composites.asInstanceOf[js.Any])
     if (constraints != null) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isModified)) __obj.updateDynamic("isModified")(isModified.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isModified)) __obj.updateDynamic("isModified")(isModified.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

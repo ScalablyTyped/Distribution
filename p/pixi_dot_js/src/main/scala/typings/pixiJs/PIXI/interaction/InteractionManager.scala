@@ -1,12 +1,10 @@
 package typings.pixiJs.PIXI.interaction
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pixiJs.AnonAutoPreventDefault
 import typings.pixiJs.PIXI.AbstractRenderer
 import typings.pixiJs.PIXI.Container
 import typings.pixiJs.PIXI.DisplayObject
 import typings.pixiJs.PIXI.Point
-import typings.pixiJs.PIXI.Renderer
 import typings.pixiJs.PIXI.Sprite
 import typings.pixiJs.PIXI.TilingSprite
 import typings.pixiJs.PIXI.utils.EventEmitter
@@ -28,11 +26,8 @@ import scala.scalajs.js.annotation._
   * @extends PIXI.utils.EventEmitter
   * @memberof PIXI.interaction
   */
-@JSGlobal("PIXI.interaction.InteractionManager")
 @js.native
-class InteractionManager protected () extends EventEmitter {
-  def this(renderer: Renderer) = this()
-  def this(renderer: Renderer, options: AnonAutoPreventDefault) = this()
+trait InteractionManager extends EventEmitter {
   /**
     * Should default browser actions automatically be prevented.
     * Does not apply to pointer events for backwards compatibility

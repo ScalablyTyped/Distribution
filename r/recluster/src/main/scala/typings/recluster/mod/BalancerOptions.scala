@@ -27,23 +27,23 @@ object BalancerOptions {
   @scala.inline
   def apply(
     args: js.Array[String] = null,
-    backoff: Int | Double = null,
+    backoff: js.UndefOr[Double] = js.undefined,
     log: LogOptions = null,
     logger: Logger = null,
     readyWhen: String = null,
-    respawn: Int | Double = null,
-    timeout: Int | Double = null,
-    workers: Int | Double = null
+    respawn: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined,
+    workers: js.UndefOr[Double] = js.undefined
   ): BalancerOptions = {
     val __obj = js.Dynamic.literal()
     if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (backoff != null) __obj.updateDynamic("backoff")(backoff.asInstanceOf[js.Any])
+    if (!js.isUndefined(backoff)) __obj.updateDynamic("backoff")(backoff.get.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     if (readyWhen != null) __obj.updateDynamic("readyWhen")(readyWhen.asInstanceOf[js.Any])
-    if (respawn != null) __obj.updateDynamic("respawn")(respawn.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (workers != null) __obj.updateDynamic("workers")(workers.asInstanceOf[js.Any])
+    if (!js.isUndefined(respawn)) __obj.updateDynamic("respawn")(respawn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(workers)) __obj.updateDynamic("workers")(workers.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BalancerOptions]
   }
 }

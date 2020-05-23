@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DAO.Index")
 @js.native
-class Index protected () extends js.Object {
+trait Index extends js.Object {
   var Clustered: Boolean = js.native
   @JSName("DAO.Index_typekey")
   var DAODotIndex_typekey: Index = js.native

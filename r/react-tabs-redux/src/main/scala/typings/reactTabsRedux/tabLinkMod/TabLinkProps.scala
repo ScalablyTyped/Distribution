@@ -1,7 +1,7 @@
 package typings.reactTabsRedux.tabLinkMod
 
 import typings.react.mod.ReactNode
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait TabLinkProps extends js.Object {
   var handleSelect: js.UndefOr[js.Function2[/* tab */ String, /* name */ String, Unit]] = js.undefined
   var isActive: js.UndefOr[Boolean] = js.undefined
   var namespace: js.UndefOr[String] = js.undefined
-  var onClick: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
   var to: Double | String
 }
@@ -36,7 +36,7 @@ object TabLinkProps {
     handleSelect: (/* tab */ String, /* name */ String) => Unit = null,
     isActive: js.UndefOr[Boolean] = js.undefined,
     namespace: String = null,
-    onClick: /* event */ Event_ => Unit = null,
+    onClick: /* event */ Event => Unit = null,
     style: js.Object = null
   ): TabLinkProps = {
     val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
@@ -45,10 +45,10 @@ object TabLinkProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableInlineStyles)) __obj.updateDynamic("disableInlineStyles")(disableInlineStyles.asInstanceOf[js.Any])
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableInlineStyles)) __obj.updateDynamic("disableInlineStyles")(disableInlineStyles.get.asInstanceOf[js.Any])
     if (handleSelect != null) __obj.updateDynamic("handleSelect")(js.Any.fromFunction2(handleSelect))
-    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.asInstanceOf[js.Any])
+    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.get.asInstanceOf[js.Any])
     if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

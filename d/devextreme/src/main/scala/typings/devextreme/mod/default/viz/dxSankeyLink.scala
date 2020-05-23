@@ -1,6 +1,5 @@
 package typings.devextreme.mod.default.viz
 
-import typings.devextreme.mod.DevExpress.viz.dxSankeyConnectionInfoObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,9 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class dxSankeyLink ()
   extends typings.devextreme.mod.DevExpress.viz.dxSankeyLink {
-  /** @name dxSankeyLink.connection */
-  /* CompleteClass */
-  override var connection: dxSankeyConnectionInfoObject = js.native
   /** @name dxSankeyLink.hideTooltip() */
   /* CompleteClass */
   override def hideTooltip(): Unit = js.native

@@ -59,21 +59,21 @@ object Options {
     automaticOpen: js.UndefOr[Boolean] = js.undefined,
     binaryType: BinaryType = null,
     debug: js.UndefOr[Boolean] = js.undefined,
-    maxReconnectAttempts: Int | Double = null,
-    maxReconnectInterval: Int | Double = null,
-    reconnectDecay: Int | Double = null,
-    reconnectInterval: Int | Double = null,
-    timeoutInterval: Int | Double = null
+    maxReconnectAttempts: js.UndefOr[Null | Double] = js.undefined,
+    maxReconnectInterval: js.UndefOr[Double] = js.undefined,
+    reconnectDecay: js.UndefOr[Double] = js.undefined,
+    reconnectInterval: js.UndefOr[Double] = js.undefined,
+    timeoutInterval: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(automaticOpen)) __obj.updateDynamic("automaticOpen")(automaticOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(automaticOpen)) __obj.updateDynamic("automaticOpen")(automaticOpen.get.asInstanceOf[js.Any])
     if (binaryType != null) __obj.updateDynamic("binaryType")(binaryType.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (maxReconnectAttempts != null) __obj.updateDynamic("maxReconnectAttempts")(maxReconnectAttempts.asInstanceOf[js.Any])
-    if (maxReconnectInterval != null) __obj.updateDynamic("maxReconnectInterval")(maxReconnectInterval.asInstanceOf[js.Any])
-    if (reconnectDecay != null) __obj.updateDynamic("reconnectDecay")(reconnectDecay.asInstanceOf[js.Any])
-    if (reconnectInterval != null) __obj.updateDynamic("reconnectInterval")(reconnectInterval.asInstanceOf[js.Any])
-    if (timeoutInterval != null) __obj.updateDynamic("timeoutInterval")(timeoutInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxReconnectAttempts)) __obj.updateDynamic("maxReconnectAttempts")(maxReconnectAttempts.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxReconnectInterval)) __obj.updateDynamic("maxReconnectInterval")(maxReconnectInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reconnectDecay)) __obj.updateDynamic("reconnectDecay")(reconnectDecay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reconnectInterval)) __obj.updateDynamic("reconnectInterval")(reconnectInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutInterval)) __obj.updateDynamic("timeoutInterval")(timeoutInterval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

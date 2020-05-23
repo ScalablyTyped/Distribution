@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
   * Provides specific information about an error that occurred during an asynchronous data operation.
   *
   * @remarks
-  * 
-  * The Error object is accessed from the AsyncResult object that is returned in the function passed as the callback argument of an asynchronous 
+  *
+  * The Error object is accessed from the AsyncResult object that is returned in the function passed as the callback argument of an asynchronous
   * data operation, such as the `setSelectedDataAsync` method of the Document object.
   */
 trait Error extends js.Object {

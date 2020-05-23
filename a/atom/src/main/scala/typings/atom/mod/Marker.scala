@@ -1,6 +1,6 @@
 package typings.atom.mod
 
-import typings.atom.AnonExclusiveReversed
+import typings.atom.anon.ExclusiveReversed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -89,7 +89,7 @@ trait Marker extends js.Object {
     *  Returns a boolean indicating whether or not the marker was updated.
     */
   def setRange(range: RangeCompatible): Boolean = js.native
-  def setRange(range: RangeCompatible, params: AnonExclusiveReversed): Boolean = js.native
+  def setRange(range: RangeCompatible, params: ExclusiveReversed): Boolean = js.native
   /**
     *  Sets the tail position of the marker.
     *  Returns a boolean indicating whether or not the marker was updated.

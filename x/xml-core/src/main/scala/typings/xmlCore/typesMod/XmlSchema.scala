@@ -1,13 +1,13 @@
 package typings.xmlCore.typesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.xmlCore.AnonType
+import typings.xmlCore.anon.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait XmlSchema extends js.Object {
-  var items: js.UndefOr[StringDictionary[(XmlChildElementType[_] | XmlAttributeType[_]) with AnonType]] = js.undefined
+  var items: js.UndefOr[StringDictionary[(XmlChildElementType[_] | XmlAttributeType[_]) with Type]] = js.undefined
   var localName: js.UndefOr[String] = js.undefined
   var namespaceURI: js.UndefOr[String | Null] = js.undefined
   var parser: js.UndefOr[IXmlSerializableConstructor] = js.undefined
@@ -18,19 +18,19 @@ trait XmlSchema extends js.Object {
 object XmlSchema {
   @scala.inline
   def apply(
-    items: StringDictionary[(XmlChildElementType[_] | XmlAttributeType[_]) with AnonType] = null,
+    items: StringDictionary[(XmlChildElementType[_] | XmlAttributeType[_]) with Type] = null,
     localName: String = null,
-    namespaceURI: String = null,
+    namespaceURI: js.UndefOr[Null | String] = js.undefined,
     parser: IXmlSerializableConstructor = null,
-    prefix: String = null,
+    prefix: js.UndefOr[Null | String] = js.undefined,
     target: js.Any = null
   ): XmlSchema = {
     val __obj = js.Dynamic.literal()
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (localName != null) __obj.updateDynamic("localName")(localName.asInstanceOf[js.Any])
-    if (namespaceURI != null) __obj.updateDynamic("namespaceURI")(namespaceURI.asInstanceOf[js.Any])
+    if (!js.isUndefined(namespaceURI)) __obj.updateDynamic("namespaceURI")(namespaceURI.asInstanceOf[js.Any])
     if (parser != null) __obj.updateDynamic("parser")(parser.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(prefix)) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[XmlSchema]
   }

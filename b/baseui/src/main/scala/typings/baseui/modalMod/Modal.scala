@@ -1,6 +1,6 @@
 package typings.baseui.modalMod
 
-import typings.baseui.SharedStylePropsArgchildrAnimate
+import typings.baseui.anon.SharedStylePropsArgchildrAnimate
 import typings.baseui.baseuiStrings.backdrop
 import typings.baseui.baseuiStrings.closeButton
 import typings.baseui.baseuiStrings.escape_

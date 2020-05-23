@@ -42,17 +42,17 @@ object QueryOutput {
   def apply(
     $metadata: ResponseMetadata,
     ConsumedCapacity: UnmarshalledConsumedCapacity = null,
-    Count: Int | Double = null,
+    Count: js.UndefOr[Double] = js.undefined,
     Items: js.Array[StringDictionary[UnmarshalledAttributeValue]] = null,
     LastEvaluatedKey: StringDictionary[UnmarshalledAttributeValue] = null,
-    ScannedCount: Int | Double = null
+    ScannedCount: js.UndefOr[Double] = js.undefined
   ): QueryOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     if (ConsumedCapacity != null) __obj.updateDynamic("ConsumedCapacity")(ConsumedCapacity.asInstanceOf[js.Any])
-    if (Count != null) __obj.updateDynamic("Count")(Count.asInstanceOf[js.Any])
+    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count.get.asInstanceOf[js.Any])
     if (Items != null) __obj.updateDynamic("Items")(Items.asInstanceOf[js.Any])
     if (LastEvaluatedKey != null) __obj.updateDynamic("LastEvaluatedKey")(LastEvaluatedKey.asInstanceOf[js.Any])
-    if (ScannedCount != null) __obj.updateDynamic("ScannedCount")(ScannedCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(ScannedCount)) __obj.updateDynamic("ScannedCount")(ScannedCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOutput]
   }
 }

@@ -93,7 +93,7 @@ object Device {
     deletedDateTime: String = null,
     deviceId: String = null,
     deviceMetadata: String = null,
-    deviceVersion: Int | Double = null,
+    deviceVersion: js.UndefOr[Double] = js.undefined,
     displayName: String = null,
     extensions: js.Array[Extension] = null,
     id: String = null,
@@ -113,22 +113,22 @@ object Device {
     trustType: String = null
   ): Device = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(accountEnabled)) __obj.updateDynamic("accountEnabled")(accountEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(accountEnabled)) __obj.updateDynamic("accountEnabled")(accountEnabled.get.asInstanceOf[js.Any])
     if (alternativeSecurityIds != null) __obj.updateDynamic("alternativeSecurityIds")(alternativeSecurityIds.asInstanceOf[js.Any])
     if (approximateLastSignInDateTime != null) __obj.updateDynamic("approximateLastSignInDateTime")(approximateLastSignInDateTime.asInstanceOf[js.Any])
     if (complianceExpirationDateTime != null) __obj.updateDynamic("complianceExpirationDateTime")(complianceExpirationDateTime.asInstanceOf[js.Any])
     if (deletedDateTime != null) __obj.updateDynamic("deletedDateTime")(deletedDateTime.asInstanceOf[js.Any])
     if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
     if (deviceMetadata != null) __obj.updateDynamic("deviceMetadata")(deviceMetadata.asInstanceOf[js.Any])
-    if (deviceVersion != null) __obj.updateDynamic("deviceVersion")(deviceVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(deviceVersion)) __obj.updateDynamic("deviceVersion")(deviceVersion.get.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCompliant)) __obj.updateDynamic("isCompliant")(isCompliant.asInstanceOf[js.Any])
-    if (!js.isUndefined(isManaged)) __obj.updateDynamic("isManaged")(isManaged.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCompliant)) __obj.updateDynamic("isCompliant")(isCompliant.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isManaged)) __obj.updateDynamic("isManaged")(isManaged.get.asInstanceOf[js.Any])
     if (memberOf != null) __obj.updateDynamic("memberOf")(memberOf.asInstanceOf[js.Any])
     if (onPremisesLastSyncDateTime != null) __obj.updateDynamic("onPremisesLastSyncDateTime")(onPremisesLastSyncDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(onPremisesSyncEnabled)) __obj.updateDynamic("onPremisesSyncEnabled")(onPremisesSyncEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(onPremisesSyncEnabled)) __obj.updateDynamic("onPremisesSyncEnabled")(onPremisesSyncEnabled.get.asInstanceOf[js.Any])
     if (operatingSystem != null) __obj.updateDynamic("operatingSystem")(operatingSystem.asInstanceOf[js.Any])
     if (operatingSystemVersion != null) __obj.updateDynamic("operatingSystemVersion")(operatingSystemVersion.asInstanceOf[js.Any])
     if (physicalIds != null) __obj.updateDynamic("physicalIds")(physicalIds.asInstanceOf[js.Any])

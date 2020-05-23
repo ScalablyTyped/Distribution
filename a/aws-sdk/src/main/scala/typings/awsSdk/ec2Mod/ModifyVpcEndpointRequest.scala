@@ -59,25 +59,25 @@ object ModifyVpcEndpointRequest {
     AddRouteTableIds: VpcEndpointRouteTableIdList = null,
     AddSecurityGroupIds: VpcEndpointSecurityGroupIdList = null,
     AddSubnetIds: VpcEndpointSubnetIdList = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     PolicyDocument: String = null,
-    PrivateDnsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    PrivateDnsEnabled: js.UndefOr[Boolean] = js.undefined,
     RemoveRouteTableIds: VpcEndpointRouteTableIdList = null,
     RemoveSecurityGroupIds: VpcEndpointSecurityGroupIdList = null,
     RemoveSubnetIds: VpcEndpointSubnetIdList = null,
-    ResetPolicy: js.UndefOr[scala.Boolean] = js.undefined
+    ResetPolicy: js.UndefOr[Boolean] = js.undefined
   ): ModifyVpcEndpointRequest = {
     val __obj = js.Dynamic.literal(VpcEndpointId = VpcEndpointId.asInstanceOf[js.Any])
     if (AddRouteTableIds != null) __obj.updateDynamic("AddRouteTableIds")(AddRouteTableIds.asInstanceOf[js.Any])
     if (AddSecurityGroupIds != null) __obj.updateDynamic("AddSecurityGroupIds")(AddSecurityGroupIds.asInstanceOf[js.Any])
     if (AddSubnetIds != null) __obj.updateDynamic("AddSubnetIds")(AddSubnetIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (PolicyDocument != null) __obj.updateDynamic("PolicyDocument")(PolicyDocument.asInstanceOf[js.Any])
-    if (!js.isUndefined(PrivateDnsEnabled)) __obj.updateDynamic("PrivateDnsEnabled")(PrivateDnsEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(PrivateDnsEnabled)) __obj.updateDynamic("PrivateDnsEnabled")(PrivateDnsEnabled.get.asInstanceOf[js.Any])
     if (RemoveRouteTableIds != null) __obj.updateDynamic("RemoveRouteTableIds")(RemoveRouteTableIds.asInstanceOf[js.Any])
     if (RemoveSecurityGroupIds != null) __obj.updateDynamic("RemoveSecurityGroupIds")(RemoveSecurityGroupIds.asInstanceOf[js.Any])
     if (RemoveSubnetIds != null) __obj.updateDynamic("RemoveSubnetIds")(RemoveSubnetIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(ResetPolicy)) __obj.updateDynamic("ResetPolicy")(ResetPolicy.asInstanceOf[js.Any])
+    if (!js.isUndefined(ResetPolicy)) __obj.updateDynamic("ResetPolicy")(ResetPolicy.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyVpcEndpointRequest]
   }
 }

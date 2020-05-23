@@ -2,7 +2,7 @@ package typings.blueprintjsSelect.selectMod
 
 import typings.blueprintjsCore.inputGroupMod.IInputGroupProps
 import typings.blueprintjsCore.propsMod.HTMLInputProps
-import typings.blueprintjsSelect.PartialIPopoverProps
+import typings.blueprintjsSelect.anon.PartialIPopoverProps
 import typings.blueprintjsSelect.listItemsPropsMod.IListItemsProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`

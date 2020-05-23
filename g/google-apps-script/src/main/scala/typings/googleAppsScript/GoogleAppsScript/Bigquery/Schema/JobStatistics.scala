@@ -23,7 +23,7 @@ trait JobStatistics extends js.Object {
 object JobStatistics {
   @scala.inline
   def apply(
-    completionRatio: Int | Double = null,
+    completionRatio: js.UndefOr[Double] = js.undefined,
     creationTime: String = null,
     endTime: String = null,
     extract: JobStatistics4 = null,
@@ -38,7 +38,7 @@ object JobStatistics {
     totalSlotMs: String = null
   ): JobStatistics = {
     val __obj = js.Dynamic.literal()
-    if (completionRatio != null) __obj.updateDynamic("completionRatio")(completionRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(completionRatio)) __obj.updateDynamic("completionRatio")(completionRatio.get.asInstanceOf[js.Any])
     if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
     if (extract != null) __obj.updateDynamic("extract")(extract.asInstanceOf[js.Any])

@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation._
 
 trait Cache_ extends js.Object {
   /**
-  	 * Get the cached intermediate JavaScript function for a template.
-  	 *
-  	 * @param key key for caching
-  	 */
+    * Get the cached intermediate JavaScript function for a template.
+    *
+    * @param key key for caching
+    */
   def get(key: String): js.UndefOr[TemplateFunction]
   /**
-  	 * Clear the entire cache.
-  	 */
+    * Clear the entire cache.
+    */
   def reset(): Unit
   /**
-  	 * Cache the intermediate JavaScript function for a template.
-  	 *
-  	 * @param key key for caching
-  	 * @param val cached function
-  	 */
+    * Cache the intermediate JavaScript function for a template.
+    *
+    * @param key key for caching
+    * @param val cached function
+    */
   def set(key: String, `val`: TemplateFunction): Unit
 }
 

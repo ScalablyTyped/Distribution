@@ -1,9 +1,9 @@
 package typings.dingtalkRobotSender.mod
 
 import typings.axios.mod.AxiosResponse
-import typings.dingtalkRobotSender.AnonAtMobiles
-import typings.dingtalkRobotSender.AnonBtnOrientation
-import typings.dingtalkRobotSender.AnonMessageUrl
+import typings.dingtalkRobotSender.anon.AtMobiles
+import typings.dingtalkRobotSender.anon.BtnOrientation
+import typings.dingtalkRobotSender.anon.MessageUrl
 import typings.dingtalkRobotSender.mod.Message.FeedCardItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,7 +23,7 @@ trait ChatBot extends js.Object {
     * @param card.btn.actionURL 某个按钮链接
     * @return
     */
-  def actionCard(card: AnonBtnOrientation): js.Promise[AxiosResponse[_]] = js.native
+  def actionCard(card: BtnOrientation): js.Promise[AxiosResponse[_]] = js.native
   /**
     * 发送feedCard，支持多图文链接
     * Ps: links可包含多个link，建议不要超过4个
@@ -44,7 +44,7 @@ trait ChatBot extends js.Object {
     * @param link.picUrl 图片的链接
     * @return
     */
-  def link(link: AnonMessageUrl): js.Promise[AxiosResponse[_]] = js.native
+  def link(link: MessageUrl): js.Promise[AxiosResponse[_]] = js.native
   def markdown(title: String, text: String): js.Promise[AxiosResponse[_]] = js.native
   /**
     * 发送Markdown消息
@@ -53,7 +53,7 @@ trait ChatBot extends js.Object {
     * @param text 消息内容(支持Markdown)
     * @return
     */
-  def markdown(title: String, text: String, at: AnonAtMobiles): js.Promise[AxiosResponse[_]] = js.native
+  def markdown(title: String, text: String, at: AtMobiles): js.Promise[AxiosResponse[_]] = js.native
   /**
     * 发送钉钉消息
     *
@@ -69,6 +69,6 @@ trait ChatBot extends js.Object {
     * @return
     */
   def text(content: String): js.Promise[AxiosResponse[_]] = js.native
-  def text(content: String, at: AnonAtMobiles): js.Promise[AxiosResponse[_]] = js.native
+  def text(content: String, at: AtMobiles): js.Promise[AxiosResponse[_]] = js.native
 }
 

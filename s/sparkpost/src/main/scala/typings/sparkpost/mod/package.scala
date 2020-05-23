@@ -11,6 +11,6 @@ package object mod {
     scala.Unit
   ]
   type Recipient = (typings.sparkpost.mod.RecipientWithAddress | typings.sparkpost.mod.RecipientWithMultichannelAddresses) with typings.sparkpost.mod.BaseRecipient
-  type ResultsCallback[T] = typings.sparkpost.mod.Callback[typings.sparkpost.AnonResults[T]]
-  type ResultsPromise[T] = js.Promise[typings.sparkpost.AnonResults[T]]
+  type ResultsCallback[T] = typings.sparkpost.mod.Callback[typings.sparkpost.anon.Results[T]]
+  type ResultsPromise[T] = js.Promise[typings.sparkpost.anon.Results[T]]
 }

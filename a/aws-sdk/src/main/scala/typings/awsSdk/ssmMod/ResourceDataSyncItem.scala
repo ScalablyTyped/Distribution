@@ -23,7 +23,7 @@ trait ResourceDataSyncItem extends js.Object {
     */
   var LastSyncTime: js.UndefOr[LastResourceDataSyncTime] = js.native
   /**
-    * Configuration information for the target Amazon S3 bucket.
+    * Configuration information for the target S3 bucket.
     */
   var S3Destination: js.UndefOr[ResourceDataSyncS3Destination] = js.native
   /**
@@ -43,7 +43,7 @@ trait ResourceDataSyncItem extends js.Object {
     */
   var SyncSource: js.UndefOr[ResourceDataSyncSourceWithState] = js.native
   /**
-    * The type of resource data sync. If SyncType is SyncToDestination, then the resource data sync synchronizes data to an Amazon S3 bucket. If the SyncType is SyncFromSource then the resource data sync synchronizes data from AWS Organizations or from multiple AWS Regions.
+    * The type of resource data sync. If SyncType is SyncToDestination, then the resource data sync synchronizes data to an S3 bucket. If the SyncType is SyncFromSource then the resource data sync synchronizes data from AWS Organizations or from multiple AWS Regions.
     */
   var SyncType: js.UndefOr[ResourceDataSyncType] = js.native
 }

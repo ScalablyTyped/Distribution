@@ -7,16 +7,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		*	Event dispatched when info about chat room participants received
-		*/
+  *    Event dispatched when info about chat room participants received
+  */
 trait ChatRoomParticipants extends VoxImplantIMEvent {
   /**
-  			* Participants list
-  			*/
+    * Participants list
+    */
   var participants: js.Array[ChatRoomParticipant]
   /**
-  			* Room id
-  			*/
+    * Room id
+    */
   var room: String
 }
 

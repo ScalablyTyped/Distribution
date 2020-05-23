@@ -1,6 +1,6 @@
 package typings.ghPages.mod
 
-import typings.ghPages.AnonEmail
+import typings.ghPages.anon.Email
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +30,7 @@ trait PublishOptions extends js.Object {
   var silent: js.UndefOr[Boolean] = js.undefined
   var src: js.UndefOr[String | js.Array[String]] = js.undefined
   var tag: js.UndefOr[String] = js.undefined
-  var user: js.UndefOr[Null | AnonEmail] = js.undefined
+  var user: js.UndefOr[Null | Email] = js.undefined
 }
 
 object PublishOptions {
@@ -51,25 +51,25 @@ object PublishOptions {
     silent: js.UndefOr[Boolean] = js.undefined,
     src: String | js.Array[String] = null,
     tag: String = null,
-    user: AnonEmail = null
+    user: js.UndefOr[Null | Email] = js.undefined
   ): PublishOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(add)) __obj.updateDynamic("add")(add.asInstanceOf[js.Any])
+    if (!js.isUndefined(add)) __obj.updateDynamic("add")(add.get.asInstanceOf[js.Any])
     if (branch != null) __obj.updateDynamic("branch")(branch.asInstanceOf[js.Any])
     if (dest != null) __obj.updateDynamic("dest")(dest.asInstanceOf[js.Any])
-    if (!js.isUndefined(dotfiles)) __obj.updateDynamic("dotfiles")(dotfiles.asInstanceOf[js.Any])
+    if (!js.isUndefined(dotfiles)) __obj.updateDynamic("dotfiles")(dotfiles.get.asInstanceOf[js.Any])
     if (git != null) __obj.updateDynamic("git")(git.asInstanceOf[js.Any])
-    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
+    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (only != null) __obj.updateDynamic("only")(only.asInstanceOf[js.Any])
-    if (!js.isUndefined(push)) __obj.updateDynamic("push")(push.asInstanceOf[js.Any])
+    if (!js.isUndefined(push)) __obj.updateDynamic("push")(push.get.asInstanceOf[js.Any])
     if (remote != null) __obj.updateDynamic("remote")(remote.asInstanceOf[js.Any])
     if (remove != null) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
     if (repo != null) __obj.updateDynamic("repo")(repo.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
+    if (!js.isUndefined(user)) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishOptions]
   }
 }

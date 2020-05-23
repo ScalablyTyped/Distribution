@@ -169,7 +169,7 @@ object Model {
     headerBackButtonText: String = null,
     headerTitle: String = null,
     height: String | Double = null,
-    itemRequestCount: Int | Double = null,
+    itemRequestCount: js.UndefOr[Double] = js.undefined,
     items: js.Array[_] = null,
     load: /* e */ LoadEventArgs => Unit = null,
     loadComplete: /* e */ LoadCompleteEventArgs => Unit = null,
@@ -180,11 +180,11 @@ object Model {
     preventSelection: js.UndefOr[Boolean] = js.undefined,
     query: js.Any = null,
     renderTemplate: js.UndefOr[Boolean] = js.undefined,
-    selectedItemIndex: Int | Double = null,
+    selectedItemIndex: js.UndefOr[Double] = js.undefined,
     showHeader: js.UndefOr[Boolean] = js.undefined,
     showHeaderBackButton: js.UndefOr[Boolean] = js.undefined,
     templateId: String = null,
-    totalItemsCount: Int | Double = null,
+    totalItemsCount: js.UndefOr[Double] = js.undefined,
     virtualScrollMode: VirtualScrollMode | String = null,
     width: String | Double = null
   ): Model = {
@@ -194,36 +194,36 @@ object Model {
     if (ajaxError != null) __obj.updateDynamic("ajaxError")(js.Any.fromFunction1(ajaxError))
     if (ajaxSettings != null) __obj.updateDynamic("ajaxSettings")(ajaxSettings.asInstanceOf[js.Any])
     if (ajaxSuccess != null) __obj.updateDynamic("ajaxSuccess")(js.Any.fromFunction1(ajaxSuccess))
-    if (!js.isUndefined(allowVirtualScrolling)) __obj.updateDynamic("allowVirtualScrolling")(allowVirtualScrolling.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowVirtualScrolling)) __obj.updateDynamic("allowVirtualScrolling")(allowVirtualScrolling.get.asInstanceOf[js.Any])
     if (checkedIndices != null) __obj.updateDynamic("checkedIndices")(checkedIndices.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAjax)) __obj.updateDynamic("enableAjax")(enableAjax.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCache)) __obj.updateDynamic("enableCache")(enableCache.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCheckMark)) __obj.updateDynamic("enableCheckMark")(enableCheckMark.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableFiltering)) __obj.updateDynamic("enableFiltering")(enableFiltering.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGroupList)) __obj.updateDynamic("enableGroupList")(enableGroupList.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAjax)) __obj.updateDynamic("enableAjax")(enableAjax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCache)) __obj.updateDynamic("enableCache")(enableCache.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCheckMark)) __obj.updateDynamic("enableCheckMark")(enableCheckMark.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableFiltering)) __obj.updateDynamic("enableFiltering")(enableFiltering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGroupList)) __obj.updateDynamic("enableGroupList")(enableGroupList.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence.get.asInstanceOf[js.Any])
     if (fieldSettings != null) __obj.updateDynamic("fieldSettings")(fieldSettings.asInstanceOf[js.Any])
     if (headerBackButtonText != null) __obj.updateDynamic("headerBackButtonText")(headerBackButtonText.asInstanceOf[js.Any])
     if (headerTitle != null) __obj.updateDynamic("headerTitle")(headerTitle.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (itemRequestCount != null) __obj.updateDynamic("itemRequestCount")(itemRequestCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemRequestCount)) __obj.updateDynamic("itemRequestCount")(itemRequestCount.get.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
     if (loadComplete != null) __obj.updateDynamic("loadComplete")(js.Any.fromFunction1(loadComplete))
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (mouseDown != null) __obj.updateDynamic("mouseDown")(js.Any.fromFunction1(mouseDown))
     if (mouseUp != null) __obj.updateDynamic("mouseUp")(js.Any.fromFunction1(mouseUp))
-    if (!js.isUndefined(persistSelection)) __obj.updateDynamic("persistSelection")(persistSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventSelection)) __obj.updateDynamic("preventSelection")(preventSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistSelection)) __obj.updateDynamic("persistSelection")(persistSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventSelection)) __obj.updateDynamic("preventSelection")(preventSelection.get.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderTemplate)) __obj.updateDynamic("renderTemplate")(renderTemplate.asInstanceOf[js.Any])
-    if (selectedItemIndex != null) __obj.updateDynamic("selectedItemIndex")(selectedItemIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHeaderBackButton)) __obj.updateDynamic("showHeaderBackButton")(showHeaderBackButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderTemplate)) __obj.updateDynamic("renderTemplate")(renderTemplate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedItemIndex)) __obj.updateDynamic("selectedItemIndex")(selectedItemIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHeaderBackButton)) __obj.updateDynamic("showHeaderBackButton")(showHeaderBackButton.get.asInstanceOf[js.Any])
     if (templateId != null) __obj.updateDynamic("templateId")(templateId.asInstanceOf[js.Any])
-    if (totalItemsCount != null) __obj.updateDynamic("totalItemsCount")(totalItemsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalItemsCount)) __obj.updateDynamic("totalItemsCount")(totalItemsCount.get.asInstanceOf[js.Any])
     if (virtualScrollMode != null) __obj.updateDynamic("virtualScrollMode")(virtualScrollMode.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]

@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__installations-types
 
-Typings are for version 0.3.3
+Typings are for version 0.3.4
 
 ## Library description:
 @firebase/installations Types

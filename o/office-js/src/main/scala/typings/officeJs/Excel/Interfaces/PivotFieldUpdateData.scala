@@ -35,7 +35,7 @@ object PivotFieldUpdateData {
   def apply(name: String = null, showAllItems: js.UndefOr[Boolean] = js.undefined, subtotals: Subtotals = null): PivotFieldUpdateData = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAllItems)) __obj.updateDynamic("showAllItems")(showAllItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAllItems)) __obj.updateDynamic("showAllItems")(showAllItems.get.asInstanceOf[js.Any])
     if (subtotals != null) __obj.updateDynamic("subtotals")(subtotals.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotFieldUpdateData]
   }

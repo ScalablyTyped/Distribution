@@ -11,10 +11,10 @@ trait DoubleClickZoomOptions extends js.Object {
 
 object DoubleClickZoomOptions {
   @scala.inline
-  def apply(delta: Int | Double = null, duration: Int | Double = null): DoubleClickZoomOptions = {
+  def apply(delta: js.UndefOr[Double] = js.undefined, duration: js.UndefOr[Double] = js.undefined): DoubleClickZoomOptions = {
     val __obj = js.Dynamic.literal()
-    if (delta != null) __obj.updateDynamic("delta")(delta.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(delta)) __obj.updateDynamic("delta")(delta.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DoubleClickZoomOptions]
   }
 }

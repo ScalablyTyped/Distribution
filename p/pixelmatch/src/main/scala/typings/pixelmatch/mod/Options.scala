@@ -22,6 +22,12 @@ trait Options extends js.Object {
     */
   var diffColor: js.UndefOr[RGBTuple] = js.undefined
   /**
+    * An alternative color to use for dark on light differences to differentiate between "added" and "removed" parts.
+    * If not provided, all differing pixels use the color specified by `diffColor`.
+    * @default null
+    */
+  var diffColorAlt: js.UndefOr[RGBTuple] = js.undefined
+  /**
     * Draw the diff over a transparent background (a mask), rather than over the original image.
     * Will not draw anti-aliased pixels (if detected)
     * @default false
@@ -29,7 +35,7 @@ trait Options extends js.Object {
   var diffMask: js.UndefOr[Boolean] = js.undefined
   /**
     * If true, disables detecting and ignoring anti-aliased pixels.
-    * @defult false
+    * @default false
     */
   val includeAA: js.UndefOr[Boolean] = js.undefined
   /**
@@ -43,19 +49,21 @@ object Options {
   @scala.inline
   def apply(
     aaColor: RGBTuple = null,
-    alpha: Int | Double = null,
+    alpha: js.UndefOr[Double] = js.undefined,
     diffColor: RGBTuple = null,
+    diffColorAlt: RGBTuple = null,
     diffMask: js.UndefOr[Boolean] = js.undefined,
     includeAA: js.UndefOr[Boolean] = js.undefined,
-    threshold: Int | Double = null
+    threshold: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (aaColor != null) __obj.updateDynamic("aaColor")(aaColor.asInstanceOf[js.Any])
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
     if (diffColor != null) __obj.updateDynamic("diffColor")(diffColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(diffMask)) __obj.updateDynamic("diffMask")(diffMask.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeAA)) __obj.updateDynamic("includeAA")(includeAA.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (diffColorAlt != null) __obj.updateDynamic("diffColorAlt")(diffColorAlt.asInstanceOf[js.Any])
+    if (!js.isUndefined(diffMask)) __obj.updateDynamic("diffMask")(diffMask.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeAA)) __obj.updateDynamic("includeAA")(includeAA.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

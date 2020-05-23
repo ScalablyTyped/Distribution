@@ -19,14 +19,14 @@ object Options {
     `finally`: () => Unit = null,
     onShutdown: /* signal */ String => js.Promise[Unit] = null,
     signals: String = null,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(development)) __obj.updateDynamic("development")(development.asInstanceOf[js.Any])
+    if (!js.isUndefined(development)) __obj.updateDynamic("development")(development.get.asInstanceOf[js.Any])
     if (`finally` != null) __obj.updateDynamic("finally")(js.Any.fromFunction0(`finally`))
     if (onShutdown != null) __obj.updateDynamic("onShutdown")(js.Any.fromFunction1(onShutdown))
     if (signals != null) __obj.updateDynamic("signals")(signals.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

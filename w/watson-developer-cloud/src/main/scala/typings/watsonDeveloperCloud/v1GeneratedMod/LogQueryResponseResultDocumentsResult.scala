@@ -22,17 +22,17 @@ object LogQueryResponseResultDocumentsResult {
   @scala.inline
   def apply(
     collection_id: String = null,
-    confidence: Int | Double = null,
+    confidence: js.UndefOr[Double] = js.undefined,
     document_id: String = null,
-    position: Int | Double = null,
-    score: Int | Double = null
+    position: js.UndefOr[Double] = js.undefined,
+    score: js.UndefOr[Double] = js.undefined
   ): LogQueryResponseResultDocumentsResult = {
     val __obj = js.Dynamic.literal()
     if (collection_id != null) __obj.updateDynamic("collection_id")(collection_id.asInstanceOf[js.Any])
-    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
     if (document_id != null) __obj.updateDynamic("document_id")(document_id.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogQueryResponseResultDocumentsResult]
   }
 }

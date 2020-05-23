@@ -27,7 +27,7 @@ object PivotTupleModel {
   ): PivotTupleModel = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], levelNum = levelNum.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasChildren)) __obj.updateDynamic("hasChildren")(hasChildren.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasChildren)) __obj.updateDynamic("hasChildren")(hasChildren.get.asInstanceOf[js.Any])
     if (hierarchy != null) __obj.updateDynamic("hierarchy")(hierarchy.asInstanceOf[js.Any])
     if (levelName != null) __obj.updateDynamic("levelName")(levelName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotTupleModel]

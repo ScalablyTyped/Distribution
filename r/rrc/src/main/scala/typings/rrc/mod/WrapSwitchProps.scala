@@ -3,7 +3,7 @@ package typings.rrc.mod
 import typings.history.mod.Location
 import typings.history.mod.LocationState
 import typings.reactRouter.mod.`match`
-import typings.rrc.LocationDescriptorObjectL
+import typings.rrc.anon.LocationDescriptorObjectL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

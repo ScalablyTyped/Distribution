@@ -23,7 +23,7 @@ object IOptions {
     if (classPrefix != null) __obj.updateDynamic("classPrefix")(classPrefix.asInstanceOf[js.Any])
     if (languages != null) __obj.updateDynamic("languages")(languages.asInstanceOf[js.Any])
     if (tabReplace != null) __obj.updateDynamic("tabReplace")(tabReplace.asInstanceOf[js.Any])
-    if (!js.isUndefined(useBR)) __obj.updateDynamic("useBR")(useBR.asInstanceOf[js.Any])
+    if (!js.isUndefined(useBR)) __obj.updateDynamic("useBR")(useBR.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

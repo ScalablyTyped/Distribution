@@ -1,7 +1,7 @@
 package typings.winjs.mod.UI
 
 import typings.std.HTMLElement
-import typings.winjs.AnonFull
+import typings.winjs.anon.Full
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,7 +29,7 @@ object ToolBar extends js.Object {
   /**
     * Display options for the closed ToolBar.
     **/
-  var ClosedDisplayMode: AnonFull = js.native
+  var ClosedDisplayMode: Full = js.native
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/

@@ -2,7 +2,7 @@ package typings.reactNavigationDrawer.drawerViewMod
 
 import typings.reactNavigation.mod.NavigationParams
 import typings.reactNavigation.mod.NavigationScreenProp
-import typings.reactNavigationDrawer.DrawerOptionscontentCompo
+import typings.reactNavigationDrawer.anon.DrawerOptionscontentCompo
 import typings.reactNavigationDrawer.typesMod.NavigationDrawerState
 import typings.reactNavigationDrawer.typesMod.SceneDescriptorMap
 import scala.scalajs.js

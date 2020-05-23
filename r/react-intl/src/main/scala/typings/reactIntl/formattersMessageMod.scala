@@ -3,6 +3,7 @@ package typings.reactIntl
 import typings.intlMessageformat.mod.PrimitiveType
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
+import typings.reactIntl.anon.PickIntlConfiglocaleformaDefaultFormats
 import typings.reactIntl.typesMod.Formatters
 import typings.reactIntl.typesMod.MessageDescriptor
 import typings.std.Record

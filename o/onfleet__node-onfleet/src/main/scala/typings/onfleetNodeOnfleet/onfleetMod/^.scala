@@ -1,6 +1,6 @@
 package typings.onfleetNodeOnfleet.onfleetMod
 
-import typings.onfleetNodeOnfleet.AnonBaseUrl
+import typings.onfleetNodeOnfleet.anon.BaseUrl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ class ^ protected () extends Onfleet {
   /* CompleteClass */
   override var admins: typings.onfleetNodeOnfleet.administratorsMod.^ = js.native
   /* CompleteClass */
-  override var api: AnonBaseUrl = js.native
+  override var api: BaseUrl = js.native
   /* CompleteClass */
   override var apiKey: String = js.native
   /* CompleteClass */
@@ -34,6 +34,6 @@ class ^ protected () extends Onfleet {
   /* CompleteClass */
   override var workers: typings.onfleetNodeOnfleet.workersMod.^ = js.native
   /* CompleteClass */
-  override def verifyKey(): Boolean = js.native
+  override def verifyKey(): js.Promise[Boolean] = js.native
 }
 

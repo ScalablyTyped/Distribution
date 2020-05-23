@@ -62,23 +62,16 @@ object InfiniteLoaderProps {
     children: InfiniteLoaderChildProps => ReactNode,
     isRowLoaded: Index => Boolean,
     loadMoreRows: IndexRange => js.Promise[_],
-    StringDictionary: /**
-    * PLEASE NOTE
-    * The [key: string]: any; line is here on purpose
-    * This is due to the need of force re-render of PureComponent
-    * Check the following link if you want to know more
-    * https://github.com/bvaughn/react-virtualized#pass-thru-props
-    */
-  /* key */ StringDictionary[js.Any] = null,
-    minimumBatchSize: Int | Double = null,
-    rowCount: Int | Double = null,
-    threshold: Int | Double = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    minimumBatchSize: js.UndefOr[Double] = js.undefined,
+    rowCount: js.UndefOr[Double] = js.undefined,
+    threshold: js.UndefOr[Double] = js.undefined
   ): InfiniteLoaderProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), isRowLoaded = js.Any.fromFunction1(isRowLoaded), loadMoreRows = js.Any.fromFunction1(loadMoreRows))
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (minimumBatchSize != null) __obj.updateDynamic("minimumBatchSize")(minimumBatchSize.asInstanceOf[js.Any])
-    if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumBatchSize)) __obj.updateDynamic("minimumBatchSize")(minimumBatchSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InfiniteLoaderProps]
   }
 }

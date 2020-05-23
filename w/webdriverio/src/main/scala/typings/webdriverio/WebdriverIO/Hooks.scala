@@ -2,7 +2,7 @@ package typings.webdriverio.WebdriverIO
 
 import typings.std.Error
 import typings.webdriver.WebDriver.DesiredCapabilities
-import typings.webdriverio.AnonDuration
+import typings.webdriverio.anon.Duration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +30,7 @@ object Hooks {
       ]
     ]) = null,
     afterCommand: (/* commandName */ String, /* args */ js.Array[_], /* result */ js.Any, /* error */ js.UndefOr[Error]) => Unit = null,
-    afterHook: (/* test */ js.Any, /* context */ js.Any, /* result */ AnonDuration, /* stepData */ js.UndefOr[js.Any], /* world */ js.UndefOr[js.Any]) => Unit = null,
+    afterHook: (/* test */ js.Any, /* context */ js.Any, /* result */ Duration, /* stepData */ js.UndefOr[js.Any], /* world */ js.UndefOr[js.Any]) => Unit = null,
     afterSession: (js.Function3[
       /* config */ Config, 
       /* capabilities */ DesiredCapabilities, 
@@ -47,7 +47,7 @@ object Hooks {
       ]
     ]) = null,
     afterSuite: /* suite */ Suite => Unit = null,
-    afterTest: (/* test */ Test, /* context */ js.Any, /* result */ AnonDuration) => Unit = null,
+    afterTest: (/* test */ Test, /* context */ js.Any, /* result */ Duration) => Unit = null,
     before: (js.Function2[/* capabilities */ DesiredCapabilities, /* specs */ js.Array[String], Unit]) | (js.Array[
       js.UndefOr[
         js.Function2[/* capabilities */ DesiredCapabilities, /* specs */ js.Array[String], Unit]

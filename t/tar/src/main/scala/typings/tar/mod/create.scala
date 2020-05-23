@@ -1,7 +1,7 @@
 package typings.tar.mod
 
 import typings.std.Error
-import typings.tar.CreateOptionsFileOptionss
+import typings.tar.anon.CreateOptionsFileOptionss
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

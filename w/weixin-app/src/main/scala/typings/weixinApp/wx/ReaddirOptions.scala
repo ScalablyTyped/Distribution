@@ -1,6 +1,6 @@
 package typings.weixinApp.wx
 
-import typings.weixinApp.AnonFiles
+import typings.weixinApp.anon.Files
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait ReaddirOptions
   var dirPath: String
    // 要读取的目录路径
   @JSName("success")
-  var success_ReaddirOptions: js.UndefOr[js.Function1[/* res */ AnonFiles, Unit]] = js.undefined
+  var success_ReaddirOptions: js.UndefOr[js.Function1[/* res */ Files, Unit]] = js.undefined
 }
 
 object ReaddirOptions {
@@ -19,7 +19,7 @@ object ReaddirOptions {
     dirPath: String,
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
-    success: /* res */ AnonFiles => Unit = null
+    success: /* res */ Files => Unit = null
   ): ReaddirOptions = {
     val __obj = js.Dynamic.literal(dirPath = dirPath.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))

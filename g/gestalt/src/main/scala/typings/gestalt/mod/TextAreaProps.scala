@@ -1,6 +1,6 @@
 package typings.gestalt.mod
 
-import typings.gestalt.AnonValueString
+import typings.gestalt.anon.ValueString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,34 +12,34 @@ trait TextAreaProps extends js.Object {
   var id: String
   var label: js.UndefOr[String] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var onBlur: js.UndefOr[js.Function1[/* args */ AnonValueString, Unit]] = js.undefined
-  var onFocus: js.UndefOr[js.Function1[/* args */ AnonValueString, Unit]] = js.undefined
-  var onKeyDown: js.UndefOr[js.Function1[/* args */ AnonValueString, Unit]] = js.undefined
+  var onBlur: js.UndefOr[js.Function1[/* args */ ValueString, Unit]] = js.undefined
+  var onFocus: js.UndefOr[js.Function1[/* args */ ValueString, Unit]] = js.undefined
+  var onKeyDown: js.UndefOr[js.Function1[/* args */ ValueString, Unit]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var rows: js.UndefOr[Double] = js.undefined
   var value: js.UndefOr[String] = js.undefined
-  def onChange(args: AnonValueString): Unit
+  def onChange(args: ValueString): Unit
 }
 
 object TextAreaProps {
   @scala.inline
   def apply(
     id: String,
-    onChange: AnonValueString => Unit,
+    onChange: ValueString => Unit,
     disabled: js.UndefOr[Boolean] = js.undefined,
     errorMessage: String = null,
     helperText: String = null,
     label: String = null,
     name: String = null,
-    onBlur: /* args */ AnonValueString => Unit = null,
-    onFocus: /* args */ AnonValueString => Unit = null,
-    onKeyDown: /* args */ AnonValueString => Unit = null,
+    onBlur: /* args */ ValueString => Unit = null,
+    onFocus: /* args */ ValueString => Unit = null,
+    onKeyDown: /* args */ ValueString => Unit = null,
     placeholder: String = null,
-    rows: Int | Double = null,
+    rows: js.UndefOr[Double] = js.undefined,
     value: String = null
   ): TextAreaProps = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
     if (helperText != null) __obj.updateDynamic("helperText")(helperText.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
@@ -48,7 +48,7 @@ object TextAreaProps {
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextAreaProps]
   }

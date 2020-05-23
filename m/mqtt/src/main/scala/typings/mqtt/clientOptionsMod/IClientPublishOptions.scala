@@ -34,8 +34,8 @@ object IClientPublishOptions {
   ): IClientPublishOptions = {
     val __obj = js.Dynamic.literal(qos = qos.asInstanceOf[js.Any])
     if (cbStorePut != null) __obj.updateDynamic("cbStorePut")(js.Any.fromFunction0(cbStorePut))
-    if (!js.isUndefined(dup)) __obj.updateDynamic("dup")(dup.asInstanceOf[js.Any])
-    if (!js.isUndefined(retain)) __obj.updateDynamic("retain")(retain.asInstanceOf[js.Any])
+    if (!js.isUndefined(dup)) __obj.updateDynamic("dup")(dup.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retain)) __obj.updateDynamic("retain")(retain.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientPublishOptions]
   }
 }

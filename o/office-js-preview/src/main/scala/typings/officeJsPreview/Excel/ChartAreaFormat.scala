@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.ChartAreaFormatData
 import typings.officeJsPreview.Excel.Interfaces.ChartAreaFormatLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.ChartAreaFormatUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.ColorfulPalette1
 import typings.officeJsPreview.officeJsPreviewStrings.ColorfulPalette2
 import typings.officeJsPreview.officeJsPreviewStrings.ColorfulPalette3
@@ -33,19 +33,18 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
-@JSGlobal("Excel.ChartAreaFormat")
 @js.native
-class ChartAreaFormat () extends ClientObject {
+trait ChartAreaFormat extends ClientObject {
   /**
     *
-    * Represents the border format of chart area, which includes color, linestyle, and weight. Read-only.
+    * Represents the border format of chart area, which includes color, linestyle, and weight.
     *
     * [Api set: ExcelApi 1.7]
     */
   val border: ChartBorder = js.native
   /**
     *
-    * Returns or sets color scheme of the chart. Read/Write.
+    * Specifies the color scheme of the chart.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -55,21 +54,21 @@ class ChartAreaFormat () extends ClientObject {
   var context_ChartAreaFormat: RequestContext = js.native
   /**
     *
-    * Represents the fill format of an object, which includes background formatting information. Read-only.
+    * Represents the fill format of an object, which includes background formatting information.
     *
     * [Api set: ExcelApi 1.1]
     */
   val fill: ChartFill = js.native
   /**
     *
-    * Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only.
+    * Represents the font attributes (font name, font size, color, etc.) for the current object.
     *
     * [Api set: ExcelApi 1.1]
     */
   val font: ChartFont = js.native
   /**
     *
-    * Specifies whether or not chart area of the chart has rounded corners. Read/Write.
+    * Specifies if the chart area of the chart has rounded corners.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -81,7 +80,7 @@ class ChartAreaFormat () extends ClientObject {
     */
   def load(): ChartAreaFormat = js.native
   def load(options: ChartAreaFormatLoadOptions): ChartAreaFormat = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ChartAreaFormat = js.native
+  def load(propertyNamesAndPaths: Expand): ChartAreaFormat = js.native
   def load(propertyNames: String): ChartAreaFormat = js.native
   def load(propertyNames: js.Array[String]): ChartAreaFormat = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

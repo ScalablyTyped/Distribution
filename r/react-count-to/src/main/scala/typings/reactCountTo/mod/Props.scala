@@ -25,20 +25,20 @@ object Props {
     to: Double,
     children: /* value */ Double => ReactElement = null,
     className: String = null,
-    delay: Int | Double = null,
-    digits: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
+    digits: js.UndefOr[Double] = js.undefined,
     easing: /* progress */ Double => Double = null,
-    from: Int | Double = null,
+    from: js.UndefOr[Double] = js.undefined,
     onComplete: () => Unit = null,
     tagName: String = null
   ): Props = {
     val __obj = js.Dynamic.literal(speed = speed.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(digits)) __obj.updateDynamic("digits")(digits.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(js.Any.fromFunction1(easing))
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.get.asInstanceOf[js.Any])
     if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction0(onComplete))
     if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]

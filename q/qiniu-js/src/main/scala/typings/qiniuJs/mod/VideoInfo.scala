@@ -1,6 +1,6 @@
 package typings.qiniuJs.mod
 
-import typings.qiniuJs.AnonDictkey
+import typings.qiniuJs.anon.Dictkey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait VideoInfo extends js.Object {
   var r_frame_rate: String
   var sample_aspect_ratio: String
   var start_time: String
-  var tags: AnonDictkey
+  var tags: Dictkey
   var width: Double
 }
 
@@ -37,7 +37,7 @@ object VideoInfo {
     r_frame_rate: String,
     sample_aspect_ratio: String,
     start_time: String,
-    tags: AnonDictkey,
+    tags: Dictkey,
     width: Double
   ): VideoInfo = {
     val __obj = js.Dynamic.literal(bit_rate = bit_rate.asInstanceOf[js.Any], codec_name = codec_name.asInstanceOf[js.Any], codec_type = codec_type.asInstanceOf[js.Any], display_aspect_ratio = display_aspect_ratio.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], nb_frames = nb_frames.asInstanceOf[js.Any], pix_fmt = pix_fmt.asInstanceOf[js.Any], r_frame_rate = r_frame_rate.asInstanceOf[js.Any], sample_aspect_ratio = sample_aspect_ratio.asInstanceOf[js.Any], start_time = start_time.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])

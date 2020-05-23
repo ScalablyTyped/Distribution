@@ -1,23 +1,22 @@
 package typings.winrtUwp.Windows.Media.Playback
 
 import typings.std.Array
-import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsReturnValue
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.Foundation.TypedEventHandler
 import typings.winrtUwp.Windows.Media.Core.AudioTrack
 import typings.winrtUwp.Windows.Media.Core.ISingleSelectMediaTrackList
 import typings.winrtUwp.Windows.WinRTEvent
+import typings.winrtUwp.anon.Index
+import typings.winrtUwp.anon.ItemsReturnValue
 import typings.winrtUwp.winrtUwpStrings.selectedindexchanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a read-only list of audio tracks, of which a single track can be selected at one time. */
-@JSGlobal("Windows.Media.Playback.MediaPlaybackAudioTrackList")
 @js.native
-abstract class MediaPlaybackAudioTrackList () extends Array[AudioTrack] {
+trait MediaPlaybackAudioTrackList extends Array[AudioTrack] {
   /** Occurs when the index of the currently selected audio track changes. */
   @JSName("onselectedindexchanged")
   var onselectedindexchanged_Original: TypedEventHandler[ISingleSelectMediaTrackList, _] = js.native
@@ -43,8 +42,8 @@ abstract class MediaPlaybackAudioTrackList () extends Array[AudioTrack] {
     * Retrieves the audio tracks that start at the specified index in the list.
     * @param startIndex The zero-based index of the start of the audio tracks in the list.
     */
-  def getMany(startIndex: Double): AnonItemsReturnValue = js.native
-  def indexOf(value: AudioTrack, extra: js.Any*): AnonIndex = js.native
+  def getMany(startIndex: Double): ItemsReturnValue = js.native
+  def indexOf(value: AudioTrack, extra: js.Any*): Index = js.native
   /* hack */
   @JSName("indexOf")
   def indexOf_Double(searchElement: AudioTrack): Double = js.native

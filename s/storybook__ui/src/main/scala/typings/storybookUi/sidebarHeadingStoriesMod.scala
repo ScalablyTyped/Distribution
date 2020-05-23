@@ -1,7 +1,8 @@
 package typings.storybookUi
 
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.RegExp
+import typings.storybookUi.anon.Id
 import typings.storybookUi.sidebarHeadingMod.SidebarHeadingProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,7 +28,7 @@ object sidebarHeadingStoriesMod extends js.Object {
   
   @js.native
   object standardData extends js.Object {
-    var menu: js.Array[AnonId] = js.native
+    var menu: js.Array[Id] = js.native
   }
   
 }

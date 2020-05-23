@@ -24,12 +24,12 @@ object DescribeComponentConfigurationResponse {
   @scala.inline
   def apply(
     ComponentConfiguration: ComponentConfiguration = null,
-    Monitor: js.UndefOr[Boolean] = js.undefined,
+    Monitor: js.UndefOr[Monitor] = js.undefined,
     Tier: Tier = null
   ): DescribeComponentConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     if (ComponentConfiguration != null) __obj.updateDynamic("ComponentConfiguration")(ComponentConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(Monitor)) __obj.updateDynamic("Monitor")(Monitor.asInstanceOf[js.Any])
+    if (!js.isUndefined(Monitor)) __obj.updateDynamic("Monitor")(Monitor.get.asInstanceOf[js.Any])
     if (Tier != null) __obj.updateDynamic("Tier")(Tier.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeComponentConfigurationResponse]
   }

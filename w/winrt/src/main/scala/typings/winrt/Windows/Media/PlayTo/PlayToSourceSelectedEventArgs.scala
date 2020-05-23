@@ -5,18 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Media.PlayTo.PlayToSourceSelectedEventArgs")
-@js.native
-class PlayToSourceSelectedEventArgs () extends IPlayToSourceSelectedEventArgs {
-  /* CompleteClass */
-  override var friendlyName: String = js.native
-  /* CompleteClass */
-  override var icon: IRandomAccessStreamWithContentType = js.native
-  /* CompleteClass */
-  override var supportsAudio: Boolean = js.native
-  /* CompleteClass */
-  override var supportsImage: Boolean = js.native
-  /* CompleteClass */
-  override var supportsVideo: Boolean = js.native
+trait PlayToSourceSelectedEventArgs extends IPlayToSourceSelectedEventArgs
+
+object PlayToSourceSelectedEventArgs {
+  @scala.inline
+  def apply(
+    friendlyName: String,
+    icon: IRandomAccessStreamWithContentType,
+    supportsAudio: Boolean,
+    supportsImage: Boolean,
+    supportsVideo: Boolean
+  ): PlayToSourceSelectedEventArgs = {
+    val __obj = js.Dynamic.literal(friendlyName = friendlyName.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], supportsAudio = supportsAudio.asInstanceOf[js.Any], supportsImage = supportsImage.asInstanceOf[js.Any], supportsVideo = supportsVideo.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlayToSourceSelectedEventArgs]
+  }
 }
 

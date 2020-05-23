@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object DelaySettings {
-  type Param = (typings.semanticUiDropdown.PickImplhide | typings.semanticUiDropdown.PickImplshow | typings.semanticUiDropdown.PickImplsearch | typings.semanticUiDropdown.PickImpltouch) with typings.semanticUiDropdown.PartialPickImplkeyofImplHide
+  type Param = (typings.semanticUiDropdown.anon.PickImplhide | typings.semanticUiDropdown.anon.PickImplshow | typings.semanticUiDropdown.anon.PickImplsearch | typings.semanticUiDropdown.anon.PickImpltouch) with typings.semanticUiDropdown.anon.PartialPickImplkeyofImplHide
 }

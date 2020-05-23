@@ -177,33 +177,33 @@ object DateTimePickerOptions {
     defaultValue: String = null,
     duration: String = null,
     endDate: Date = null,
-    firstDay: Int | Double = null,
+    firstDay: js.UndefOr[Double] = js.undefined,
     gotoCurrent: js.UndefOr[Boolean] = js.undefined,
     hideIfNoPrevNext: js.UndefOr[Boolean] = js.undefined,
-    hour: Int | Double = null,
-    hourGrid: Int | Double = null,
-    hourMax: Int | Double = null,
-    hourMin: Int | Double = null,
+    hour: js.UndefOr[Double] = js.undefined,
+    hourGrid: js.UndefOr[Double] = js.undefined,
+    hourMax: js.UndefOr[Double] = js.undefined,
+    hourMin: js.UndefOr[Double] = js.undefined,
     hourText: String = null,
     isRTL: js.UndefOr[Boolean] = js.undefined,
     maxDate: js.Any = null,
     maxDateTime: Date = null,
-    microsec: Int | Double = null,
-    microsecGrid: Int | Double = null,
-    microsecMax: Int | Double = null,
-    microsecMin: Int | Double = null,
+    microsec: js.UndefOr[Double] = js.undefined,
+    microsecGrid: js.UndefOr[Double] = js.undefined,
+    microsecMax: js.UndefOr[Double] = js.undefined,
+    microsecMin: js.UndefOr[Double] = js.undefined,
     microsecText: String = null,
-    millisec: Int | Double = null,
-    millisecGrid: Int | Double = null,
-    millisecMax: Int | Double = null,
-    millisecMin: Int | Double = null,
+    millisec: js.UndefOr[Double] = js.undefined,
+    millisecGrid: js.UndefOr[Double] = js.undefined,
+    millisecMax: js.UndefOr[Double] = js.undefined,
+    millisecMin: js.UndefOr[Double] = js.undefined,
     millisecText: String = null,
     minDate: js.Any = null,
     minDateTime: Date = null,
-    minute: Int | Double = null,
-    minuteGrid: Int | Double = null,
-    minuteMax: Int | Double = null,
-    minuteMin: Int | Double = null,
+    minute: js.UndefOr[Double] = js.undefined,
+    minuteGrid: js.UndefOr[Double] = js.undefined,
+    minuteMax: js.UndefOr[Double] = js.undefined,
+    minuteMin: js.UndefOr[Double] = js.undefined,
     minuteText: String = null,
     monthNames: js.Array[String] = null,
     monthNamesShort: js.Array[String] = null,
@@ -218,17 +218,17 @@ object DateTimePickerOptions {
     pickerTimeSuffix: String = null,
     pmNames: String = null,
     prevText: String = null,
-    second: Int | Double = null,
-    secondGrid: Int | Double = null,
-    secondMax: Int | Double = null,
-    secondMin: Int | Double = null,
+    second: js.UndefOr[Double] = js.undefined,
+    secondGrid: js.UndefOr[Double] = js.undefined,
+    secondMax: js.UndefOr[Double] = js.undefined,
+    secondMin: js.UndefOr[Double] = js.undefined,
     secondText: String = null,
     selectOtherMonths: js.UndefOr[Boolean] = js.undefined,
     separator: String = null,
     shortYearCutoff: js.Any = null,
     showAnim: String = null,
     showButtonPanel: js.UndefOr[Boolean] = js.undefined,
-    showCurrentAtPos: Int | Double = null,
+    showCurrentAtPos: js.UndefOr[Double] = js.undefined,
     showHour: js.UndefOr[Boolean] = js.undefined,
     showMicrosec: js.UndefOr[Boolean] = js.undefined,
     showMillisec: js.UndefOr[Boolean] = js.undefined,
@@ -243,18 +243,18 @@ object DateTimePickerOptions {
     showTimezone: js.UndefOr[Boolean] = js.undefined,
     showWeek: js.UndefOr[Boolean] = js.undefined,
     sliderAccessArgs: js.Any = null,
-    stepHour: Int | Double = null,
-    stepMicrosec: Int | Double = null,
-    stepMillisec: Int | Double = null,
-    stepMinute: Int | Double = null,
-    stepMonths: Int | Double = null,
-    stepSecond: Int | Double = null,
+    stepHour: js.UndefOr[Double] = js.undefined,
+    stepMicrosec: js.UndefOr[Double] = js.undefined,
+    stepMillisec: js.UndefOr[Double] = js.undefined,
+    stepMinute: js.UndefOr[Double] = js.undefined,
+    stepMonths: js.UndefOr[Double] = js.undefined,
+    stepSecond: js.UndefOr[Double] = js.undefined,
     timeFormat: String = null,
     timeOnly: js.UndefOr[Boolean] = js.undefined,
     timeOnlyTitle: String = null,
     timeSuffix: String = null,
     timeText: String = null,
-    timezone: Int | Double = null,
+    timezone: js.UndefOr[Double] = js.undefined,
     timezoneList: js.Array[TimezoneOptions] = null,
     timezoneText: String = null,
     weekHeader: String = null,
@@ -262,28 +262,28 @@ object DateTimePickerOptions {
     yearSuffix: String = null
   ): DateTimePickerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addSliderAccess)) __obj.updateDynamic("addSliderAccess")(addSliderAccess.asInstanceOf[js.Any])
+    if (!js.isUndefined(addSliderAccess)) __obj.updateDynamic("addSliderAccess")(addSliderAccess.get.asInstanceOf[js.Any])
     if (altField != null) __obj.updateDynamic("altField")(altField.asInstanceOf[js.Any])
-    if (!js.isUndefined(altFieldTimeOnly)) __obj.updateDynamic("altFieldTimeOnly")(altFieldTimeOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(altFieldTimeOnly)) __obj.updateDynamic("altFieldTimeOnly")(altFieldTimeOnly.get.asInstanceOf[js.Any])
     if (altFormat != null) __obj.updateDynamic("altFormat")(altFormat.asInstanceOf[js.Any])
     if (altSeparator != null) __obj.updateDynamic("altSeparator")(altSeparator.asInstanceOf[js.Any])
     if (altTimeFormat != null) __obj.updateDynamic("altTimeFormat")(altTimeFormat.asInstanceOf[js.Any])
     if (altTimeSuffix != null) __obj.updateDynamic("altTimeSuffix")(altTimeSuffix.asInstanceOf[js.Any])
-    if (!js.isUndefined(alwaysSetTime)) __obj.updateDynamic("alwaysSetTime")(alwaysSetTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysSetTime)) __obj.updateDynamic("alwaysSetTime")(alwaysSetTime.get.asInstanceOf[js.Any])
     if (amNames != null) __obj.updateDynamic("amNames")(amNames.asInstanceOf[js.Any])
     if (appendText != null) __obj.updateDynamic("appendText")(appendText.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoSize)) __obj.updateDynamic("autoSize")(autoSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(autohide)) __obj.updateDynamic("autohide")(autohide.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoSize)) __obj.updateDynamic("autoSize")(autoSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autohide)) __obj.updateDynamic("autohide")(autohide.get.asInstanceOf[js.Any])
     if (beforeShow != null) __obj.updateDynamic("beforeShow")(js.Any.fromFunction2(beforeShow))
     if (beforeShowDay != null) __obj.updateDynamic("beforeShowDay")(js.Any.fromFunction1(beforeShowDay))
     if (buttonImage != null) __obj.updateDynamic("buttonImage")(buttonImage.asInstanceOf[js.Any])
-    if (!js.isUndefined(buttonImageOnly)) __obj.updateDynamic("buttonImageOnly")(buttonImageOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(buttonImageOnly)) __obj.updateDynamic("buttonImageOnly")(buttonImageOnly.get.asInstanceOf[js.Any])
     if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText.asInstanceOf[js.Any])
     if (calculateWeek != null) __obj.updateDynamic("calculateWeek")(js.Any.fromFunction1(calculateWeek))
-    if (!js.isUndefined(changeMonth)) __obj.updateDynamic("changeMonth")(changeMonth.asInstanceOf[js.Any])
-    if (!js.isUndefined(changeYear)) __obj.updateDynamic("changeYear")(changeYear.asInstanceOf[js.Any])
+    if (!js.isUndefined(changeMonth)) __obj.updateDynamic("changeMonth")(changeMonth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(changeYear)) __obj.updateDynamic("changeYear")(changeYear.get.asInstanceOf[js.Any])
     if (closeText != null) __obj.updateDynamic("closeText")(closeText.asInstanceOf[js.Any])
-    if (!js.isUndefined(constrainInput)) __obj.updateDynamic("constrainInput")(constrainInput.asInstanceOf[js.Any])
+    if (!js.isUndefined(constrainInput)) __obj.updateDynamic("constrainInput")(constrainInput.get.asInstanceOf[js.Any])
     if (controlType != null) __obj.updateDynamic("controlType")(controlType.asInstanceOf[js.Any])
     if (currentText != null) __obj.updateDynamic("currentText")(currentText.asInstanceOf[js.Any])
     if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
@@ -294,37 +294,37 @@ object DateTimePickerOptions {
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
-    if (firstDay != null) __obj.updateDynamic("firstDay")(firstDay.asInstanceOf[js.Any])
-    if (!js.isUndefined(gotoCurrent)) __obj.updateDynamic("gotoCurrent")(gotoCurrent.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideIfNoPrevNext)) __obj.updateDynamic("hideIfNoPrevNext")(hideIfNoPrevNext.asInstanceOf[js.Any])
-    if (hour != null) __obj.updateDynamic("hour")(hour.asInstanceOf[js.Any])
-    if (hourGrid != null) __obj.updateDynamic("hourGrid")(hourGrid.asInstanceOf[js.Any])
-    if (hourMax != null) __obj.updateDynamic("hourMax")(hourMax.asInstanceOf[js.Any])
-    if (hourMin != null) __obj.updateDynamic("hourMin")(hourMin.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstDay)) __obj.updateDynamic("firstDay")(firstDay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gotoCurrent)) __obj.updateDynamic("gotoCurrent")(gotoCurrent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideIfNoPrevNext)) __obj.updateDynamic("hideIfNoPrevNext")(hideIfNoPrevNext.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hour)) __obj.updateDynamic("hour")(hour.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hourGrid)) __obj.updateDynamic("hourGrid")(hourGrid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hourMax)) __obj.updateDynamic("hourMax")(hourMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hourMin)) __obj.updateDynamic("hourMin")(hourMin.get.asInstanceOf[js.Any])
     if (hourText != null) __obj.updateDynamic("hourText")(hourText.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRTL)) __obj.updateDynamic("isRTL")(isRTL.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRTL)) __obj.updateDynamic("isRTL")(isRTL.get.asInstanceOf[js.Any])
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (maxDateTime != null) __obj.updateDynamic("maxDateTime")(maxDateTime.asInstanceOf[js.Any])
-    if (microsec != null) __obj.updateDynamic("microsec")(microsec.asInstanceOf[js.Any])
-    if (microsecGrid != null) __obj.updateDynamic("microsecGrid")(microsecGrid.asInstanceOf[js.Any])
-    if (microsecMax != null) __obj.updateDynamic("microsecMax")(microsecMax.asInstanceOf[js.Any])
-    if (microsecMin != null) __obj.updateDynamic("microsecMin")(microsecMin.asInstanceOf[js.Any])
+    if (!js.isUndefined(microsec)) __obj.updateDynamic("microsec")(microsec.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(microsecGrid)) __obj.updateDynamic("microsecGrid")(microsecGrid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(microsecMax)) __obj.updateDynamic("microsecMax")(microsecMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(microsecMin)) __obj.updateDynamic("microsecMin")(microsecMin.get.asInstanceOf[js.Any])
     if (microsecText != null) __obj.updateDynamic("microsecText")(microsecText.asInstanceOf[js.Any])
-    if (millisec != null) __obj.updateDynamic("millisec")(millisec.asInstanceOf[js.Any])
-    if (millisecGrid != null) __obj.updateDynamic("millisecGrid")(millisecGrid.asInstanceOf[js.Any])
-    if (millisecMax != null) __obj.updateDynamic("millisecMax")(millisecMax.asInstanceOf[js.Any])
-    if (millisecMin != null) __obj.updateDynamic("millisecMin")(millisecMin.asInstanceOf[js.Any])
+    if (!js.isUndefined(millisec)) __obj.updateDynamic("millisec")(millisec.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(millisecGrid)) __obj.updateDynamic("millisecGrid")(millisecGrid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(millisecMax)) __obj.updateDynamic("millisecMax")(millisecMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(millisecMin)) __obj.updateDynamic("millisecMin")(millisecMin.get.asInstanceOf[js.Any])
     if (millisecText != null) __obj.updateDynamic("millisecText")(millisecText.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
     if (minDateTime != null) __obj.updateDynamic("minDateTime")(minDateTime.asInstanceOf[js.Any])
-    if (minute != null) __obj.updateDynamic("minute")(minute.asInstanceOf[js.Any])
-    if (minuteGrid != null) __obj.updateDynamic("minuteGrid")(minuteGrid.asInstanceOf[js.Any])
-    if (minuteMax != null) __obj.updateDynamic("minuteMax")(minuteMax.asInstanceOf[js.Any])
-    if (minuteMin != null) __obj.updateDynamic("minuteMin")(minuteMin.asInstanceOf[js.Any])
+    if (!js.isUndefined(minute)) __obj.updateDynamic("minute")(minute.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minuteGrid)) __obj.updateDynamic("minuteGrid")(minuteGrid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minuteMax)) __obj.updateDynamic("minuteMax")(minuteMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minuteMin)) __obj.updateDynamic("minuteMin")(minuteMin.get.asInstanceOf[js.Any])
     if (minuteText != null) __obj.updateDynamic("minuteText")(minuteText.asInstanceOf[js.Any])
     if (monthNames != null) __obj.updateDynamic("monthNames")(monthNames.asInstanceOf[js.Any])
     if (monthNamesShort != null) __obj.updateDynamic("monthNamesShort")(monthNamesShort.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigationAsDateFormat)) __obj.updateDynamic("navigationAsDateFormat")(navigationAsDateFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(navigationAsDateFormat)) __obj.updateDynamic("navigationAsDateFormat")(navigationAsDateFormat.get.asInstanceOf[js.Any])
     if (nextText != null) __obj.updateDynamic("nextText")(nextText.asInstanceOf[js.Any])
     if (numberOfMonths != null) __obj.updateDynamic("numberOfMonths")(numberOfMonths.asInstanceOf[js.Any])
     if (onChangeMonthYear != null) __obj.updateDynamic("onChangeMonthYear")(js.Any.fromFunction3(onChangeMonthYear))
@@ -335,43 +335,43 @@ object DateTimePickerOptions {
     if (pickerTimeSuffix != null) __obj.updateDynamic("pickerTimeSuffix")(pickerTimeSuffix.asInstanceOf[js.Any])
     if (pmNames != null) __obj.updateDynamic("pmNames")(pmNames.asInstanceOf[js.Any])
     if (prevText != null) __obj.updateDynamic("prevText")(prevText.asInstanceOf[js.Any])
-    if (second != null) __obj.updateDynamic("second")(second.asInstanceOf[js.Any])
-    if (secondGrid != null) __obj.updateDynamic("secondGrid")(secondGrid.asInstanceOf[js.Any])
-    if (secondMax != null) __obj.updateDynamic("secondMax")(secondMax.asInstanceOf[js.Any])
-    if (secondMin != null) __obj.updateDynamic("secondMin")(secondMin.asInstanceOf[js.Any])
+    if (!js.isUndefined(second)) __obj.updateDynamic("second")(second.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(secondGrid)) __obj.updateDynamic("secondGrid")(secondGrid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(secondMax)) __obj.updateDynamic("secondMax")(secondMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(secondMin)) __obj.updateDynamic("secondMin")(secondMin.get.asInstanceOf[js.Any])
     if (secondText != null) __obj.updateDynamic("secondText")(secondText.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectOtherMonths)) __obj.updateDynamic("selectOtherMonths")(selectOtherMonths.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectOtherMonths)) __obj.updateDynamic("selectOtherMonths")(selectOtherMonths.get.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     if (shortYearCutoff != null) __obj.updateDynamic("shortYearCutoff")(shortYearCutoff.asInstanceOf[js.Any])
     if (showAnim != null) __obj.updateDynamic("showAnim")(showAnim.asInstanceOf[js.Any])
-    if (!js.isUndefined(showButtonPanel)) __obj.updateDynamic("showButtonPanel")(showButtonPanel.asInstanceOf[js.Any])
-    if (showCurrentAtPos != null) __obj.updateDynamic("showCurrentAtPos")(showCurrentAtPos.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHour)) __obj.updateDynamic("showHour")(showHour.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMicrosec)) __obj.updateDynamic("showMicrosec")(showMicrosec.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMillisec)) __obj.updateDynamic("showMillisec")(showMillisec.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMinute)) __obj.updateDynamic("showMinute")(showMinute.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMonthAfterYear)) __obj.updateDynamic("showMonthAfterYear")(showMonthAfterYear.asInstanceOf[js.Any])
+    if (!js.isUndefined(showButtonPanel)) __obj.updateDynamic("showButtonPanel")(showButtonPanel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCurrentAtPos)) __obj.updateDynamic("showCurrentAtPos")(showCurrentAtPos.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHour)) __obj.updateDynamic("showHour")(showHour.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMicrosec)) __obj.updateDynamic("showMicrosec")(showMicrosec.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMillisec)) __obj.updateDynamic("showMillisec")(showMillisec.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMinute)) __obj.updateDynamic("showMinute")(showMinute.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMonthAfterYear)) __obj.updateDynamic("showMonthAfterYear")(showMonthAfterYear.get.asInstanceOf[js.Any])
     if (showOn != null) __obj.updateDynamic("showOn")(showOn.asInstanceOf[js.Any])
     if (showOptions != null) __obj.updateDynamic("showOptions")(showOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOtherMonths)) __obj.updateDynamic("showOtherMonths")(showOtherMonths.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSecond)) __obj.updateDynamic("showSecond")(showSecond.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTime)) __obj.updateDynamic("showTime")(showTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTimepicker)) __obj.updateDynamic("showTimepicker")(showTimepicker.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTimezone)) __obj.updateDynamic("showTimezone")(showTimezone.asInstanceOf[js.Any])
-    if (!js.isUndefined(showWeek)) __obj.updateDynamic("showWeek")(showWeek.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOtherMonths)) __obj.updateDynamic("showOtherMonths")(showOtherMonths.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSecond)) __obj.updateDynamic("showSecond")(showSecond.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTime)) __obj.updateDynamic("showTime")(showTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTimepicker)) __obj.updateDynamic("showTimepicker")(showTimepicker.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTimezone)) __obj.updateDynamic("showTimezone")(showTimezone.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showWeek)) __obj.updateDynamic("showWeek")(showWeek.get.asInstanceOf[js.Any])
     if (sliderAccessArgs != null) __obj.updateDynamic("sliderAccessArgs")(sliderAccessArgs.asInstanceOf[js.Any])
-    if (stepHour != null) __obj.updateDynamic("stepHour")(stepHour.asInstanceOf[js.Any])
-    if (stepMicrosec != null) __obj.updateDynamic("stepMicrosec")(stepMicrosec.asInstanceOf[js.Any])
-    if (stepMillisec != null) __obj.updateDynamic("stepMillisec")(stepMillisec.asInstanceOf[js.Any])
-    if (stepMinute != null) __obj.updateDynamic("stepMinute")(stepMinute.asInstanceOf[js.Any])
-    if (stepMonths != null) __obj.updateDynamic("stepMonths")(stepMonths.asInstanceOf[js.Any])
-    if (stepSecond != null) __obj.updateDynamic("stepSecond")(stepSecond.asInstanceOf[js.Any])
+    if (!js.isUndefined(stepHour)) __obj.updateDynamic("stepHour")(stepHour.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stepMicrosec)) __obj.updateDynamic("stepMicrosec")(stepMicrosec.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stepMillisec)) __obj.updateDynamic("stepMillisec")(stepMillisec.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stepMinute)) __obj.updateDynamic("stepMinute")(stepMinute.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stepMonths)) __obj.updateDynamic("stepMonths")(stepMonths.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stepSecond)) __obj.updateDynamic("stepSecond")(stepSecond.get.asInstanceOf[js.Any])
     if (timeFormat != null) __obj.updateDynamic("timeFormat")(timeFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeOnly)) __obj.updateDynamic("timeOnly")(timeOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeOnly)) __obj.updateDynamic("timeOnly")(timeOnly.get.asInstanceOf[js.Any])
     if (timeOnlyTitle != null) __obj.updateDynamic("timeOnlyTitle")(timeOnlyTitle.asInstanceOf[js.Any])
     if (timeSuffix != null) __obj.updateDynamic("timeSuffix")(timeSuffix.asInstanceOf[js.Any])
     if (timeText != null) __obj.updateDynamic("timeText")(timeText.asInstanceOf[js.Any])
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
+    if (!js.isUndefined(timezone)) __obj.updateDynamic("timezone")(timezone.get.asInstanceOf[js.Any])
     if (timezoneList != null) __obj.updateDynamic("timezoneList")(timezoneList.asInstanceOf[js.Any])
     if (timezoneText != null) __obj.updateDynamic("timezoneText")(timezoneText.asInstanceOf[js.Any])
     if (weekHeader != null) __obj.updateDynamic("weekHeader")(weekHeader.asInstanceOf[js.Any])

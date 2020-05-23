@@ -16,10 +16,13 @@ trait DevicesLongRunningOperationResponse extends js.Object {
 
 object DevicesLongRunningOperationResponse {
   @scala.inline
-  def apply(perDeviceStatus: js.Array[OperationPerDevice] = null, successCount: Int | Double = null): DevicesLongRunningOperationResponse = {
+  def apply(
+    perDeviceStatus: js.Array[OperationPerDevice] = null,
+    successCount: js.UndefOr[Double] = js.undefined
+  ): DevicesLongRunningOperationResponse = {
     val __obj = js.Dynamic.literal()
     if (perDeviceStatus != null) __obj.updateDynamic("perDeviceStatus")(perDeviceStatus.asInstanceOf[js.Any])
-    if (successCount != null) __obj.updateDynamic("successCount")(successCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(successCount)) __obj.updateDynamic("successCount")(successCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DevicesLongRunningOperationResponse]
   }
 }

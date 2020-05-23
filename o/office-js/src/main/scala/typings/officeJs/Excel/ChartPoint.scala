@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.ChartPointData
 import typings.officeJs.Excel.Interfaces.ChartPointLoadOptions
 import typings.officeJs.Excel.Interfaces.ChartPointUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.Automatic
 import typings.officeJs.officeJsStrings.Circle
 import typings.officeJs.officeJsStrings.Dash
@@ -29,22 +29,21 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
-@JSGlobal("Excel.ChartPoint")
 @js.native
-class ChartPoint () extends ClientObject {
+trait ChartPoint extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_ChartPoint: RequestContext = js.native
   /**
     *
-    * Returns the data label of a chart point. Read-only.
+    * Returns the data label of a chart point.
     *
     * [Api set: ExcelApi 1.7]
     */
   val dataLabel: ChartDataLabel = js.native
   /**
     *
-    * Encapsulates the format properties chart point. Read-only.
+    * Encapsulates the format properties chart point.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -58,14 +57,14 @@ class ChartPoint () extends ClientObject {
   var hasDataLabel: Boolean = js.native
   /**
     *
-    * HTML color code representation of the marker background color of data point. E.g. #FF0000 represents Red.
+    * HTML color code representation of the marker background color of data point (e.g., #FF0000 represents Red).
     *
     * [Api set: ExcelApi 1.7]
     */
   var markerBackgroundColor: String = js.native
   /**
     *
-    * HTML color code representation of the marker foreground color of data point. E.g. #FF0000 represents Red.
+    * HTML color code representation of the marker foreground color of data point (e.g., #FF0000 represents Red).
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -86,7 +85,7 @@ class ChartPoint () extends ClientObject {
   var markerStyle: ChartMarkerStyle | Invalid | Automatic | None | Square | Diamond | Triangle | X | Star | Dot | Dash | Circle | Plus | Picture = js.native
   /**
     *
-    * Returns the value of a chart point. Read-only.
+    * Returns the value of a chart point.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -98,7 +97,7 @@ class ChartPoint () extends ClientObject {
     */
   def load(): ChartPoint = js.native
   def load(options: ChartPointLoadOptions): ChartPoint = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ChartPoint = js.native
+  def load(propertyNamesAndPaths: Expand): ChartPoint = js.native
   def load(propertyNames: String): ChartPoint = js.native
   def load(propertyNames: js.Array[String]): ChartPoint = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

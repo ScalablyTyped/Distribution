@@ -17,14 +17,14 @@ object NormalizationHandle {
     key: String,
     kind: String,
     name: String,
-    alias: String = null,
-    args: js.Array[NormalizationArgument] = null,
-    filters: js.Array[String] = null
+    alias: js.UndefOr[Null | String] = js.undefined,
+    args: js.UndefOr[Null | js.Array[NormalizationArgument]] = js.undefined,
+    filters: js.UndefOr[Null | js.Array[String]] = js.undefined
   ): NormalizationHandle = {
     val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (!js.isUndefined(alias)) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (!js.isUndefined(args)) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (!js.isUndefined(filters)) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationHandle]
   }
   @scala.inline
@@ -33,14 +33,14 @@ object NormalizationHandle {
     key: String,
     kind: String,
     name: String,
-    alias: String = null,
-    args: js.Array[NormalizationArgument] = null,
-    filters: js.Array[String] = null
+    alias: js.UndefOr[Null | String] = js.undefined,
+    args: js.UndefOr[Null | js.Array[NormalizationArgument]] = js.undefined,
+    filters: js.UndefOr[Null | js.Array[String]] = js.undefined
   ): NormalizationHandle = {
     val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (!js.isUndefined(alias)) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (!js.isUndefined(args)) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (!js.isUndefined(filters)) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationHandle]
   }
 }

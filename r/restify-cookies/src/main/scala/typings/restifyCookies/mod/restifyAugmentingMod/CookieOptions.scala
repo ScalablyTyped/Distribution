@@ -26,7 +26,7 @@ object CookieOptions {
     encode: /* input */ String => String = null,
     expires: Date = null,
     httpOnly: js.UndefOr[Boolean] = js.undefined,
-    maxAge: Int | Double = null,
+    maxAge: js.UndefOr[Double] = js.undefined,
     path: String = null,
     sameSite: Boolean | lax | strict = null,
     secure: js.UndefOr[Boolean] = js.undefined
@@ -35,11 +35,11 @@ object CookieOptions {
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (encode != null) __obj.updateDynamic("encode")(js.Any.fromFunction1(encode))
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (!js.isUndefined(httpOnly)) __obj.updateDynamic("httpOnly")(httpOnly.asInstanceOf[js.Any])
-    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
+    if (!js.isUndefined(httpOnly)) __obj.updateDynamic("httpOnly")(httpOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAge)) __obj.updateDynamic("maxAge")(maxAge.get.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (sameSite != null) __obj.updateDynamic("sameSite")(sameSite.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CookieOptions]
   }
 }

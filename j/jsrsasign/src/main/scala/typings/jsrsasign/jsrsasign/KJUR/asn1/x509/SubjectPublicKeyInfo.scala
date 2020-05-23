@@ -28,12 +28,8 @@ import scala.scalajs.js.annotation._
   * spki = new KJUR.asn1.x509.SubjectPublicKeyInfo(KJURcryptoECDSA_object);
   * spki = new KJUR.asn1.x509.SubjectPublicKeyInfo(KJURcryptoDSA_object);
   */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.SubjectPublicKeyInfo")
 @js.native
-class SubjectPublicKeyInfo () extends ASN1Object {
-  def this(params: DSA) = this()
-  def this(params: ECDSA) = this()
-  def this(params: RSAKey) = this()
+trait SubjectPublicKeyInfo extends ASN1Object {
   def getASN1Object(): DERSequence = js.native
   def setPubKey(key: DSA): Unit = js.native
   def setPubKey(key: ECDSA): Unit = js.native

@@ -15,13 +15,12 @@ import typings.gestalt.gestaltStrings.white
 import typings.gestalt.gestaltStrings.xl
 import typings.gestalt.gestaltStrings.xs
 import typings.react.mod.ReactNode
-import typings.react.mod.RefObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FlyoutProps extends js.Object {
-  var anchor: RefObject[_]
+  var anchor: js.Any
   var children: js.UndefOr[ReactNode] = js.undefined
   var color: js.UndefOr[blue | orange | red | white | darkGray] = js.undefined
   var idealDirection: js.UndefOr[up | right | down | left] = js.undefined
@@ -29,13 +28,14 @@ trait FlyoutProps extends js.Object {
   var shouldFocus: js.UndefOr[Boolean] = js.undefined
   var showCaret: js.UndefOr[Boolean] = js.undefined
   var size: js.UndefOr[xs | sm | md | lg | xl | Double] = js.undefined
+   // ideally a HTMLAnchorElement
   def onDismiss(): Unit
 }
 
 object FlyoutProps {
   @scala.inline
   def apply(
-    anchor: RefObject[_],
+    anchor: js.Any,
     onDismiss: () => Unit,
     children: ReactNode = null,
     color: blue | orange | red | white | darkGray = null,
@@ -49,9 +49,9 @@ object FlyoutProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (idealDirection != null) __obj.updateDynamic("idealDirection")(idealDirection.asInstanceOf[js.Any])
-    if (!js.isUndefined(positionRelativeToAnchor)) __obj.updateDynamic("positionRelativeToAnchor")(positionRelativeToAnchor.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldFocus)) __obj.updateDynamic("shouldFocus")(shouldFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCaret)) __obj.updateDynamic("showCaret")(showCaret.asInstanceOf[js.Any])
+    if (!js.isUndefined(positionRelativeToAnchor)) __obj.updateDynamic("positionRelativeToAnchor")(positionRelativeToAnchor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldFocus)) __obj.updateDynamic("shouldFocus")(shouldFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCaret)) __obj.updateDynamic("showCaret")(showCaret.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlyoutProps]
   }

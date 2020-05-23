@@ -7,24 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a KiiACLEntry object
   */
-@JSGlobal("KiiCloud.KiiACLEntry")
-@js.native
-class KiiACLEntry () extends js.Object {
+trait KiiACLEntry extends js.Object {
   /**
     * Get the action that is being permitted/restricted in this entry
     *
     */
-  def getAction(): KiiACLAction = js.native
+  def getAction(): KiiACLAction
   /**
     * Get whether or not the action is being permitted to the subject
     *
     */
-  def getGrant(): Boolean = js.native
+  def getGrant(): Boolean
   /**
     * Get the subject that is being permitted/restricted in this entry
     *
     */
-  def getSubject[T /* <: KiiACLSubject */](): T = js.native
+  def getSubject[T /* <: KiiACLSubject */](): T
   /**
     * The action that is being permitted/restricted. Possible values:
     * <br><br>
@@ -41,7 +39,7 @@ class KiiACLEntry () extends js.Object {
     *
     * @throws If the value is not one of the permitted values
     */
-  def setAction(value: KiiACLAction): Unit = js.native
+  def setAction(value: KiiACLAction): Unit
   /**
     * Set whether or not the action is being permitted to the subject
     *
@@ -49,7 +47,7 @@ class KiiACLEntry () extends js.Object {
     *
     * @throws If the value is not a boolean type
     */
-  def setGrant(value: Boolean): Unit = js.native
+  def setGrant(value: Boolean): Unit
   /**
     * Set the subject to which the action/grant is being applied
     *
@@ -57,29 +55,21 @@ class KiiACLEntry () extends js.Object {
     *
     * @throws If the value is not one of the permitted values
     */
-  def setSubject(subject: KiiACLSubject): Unit = js.native
+  def setSubject(subject: KiiACLSubject): Unit
 }
 
-/* static members */
-@JSGlobal("KiiCloud.KiiACLEntry")
-@js.native
-object KiiACLEntry extends js.Object {
-  /**
-    * Create a KiiACLEntry object with a subject and action
-    *
-    * The entry will not be applied on the server until the KiiACL object is
-    * explicitly saved. This method simply returns a working KiiACLEntry with
-    * a specified subject and action.
-    *
-    * @param Subject to which the action/grant is being applied
-    * @param action One of the specified KiiACLAction values the
-    *   permissions is being applied to
-    *
-    * @return A KiiACLEntry object with the specified attributes
-    *
-    * @throws If specified subject is invalid.
-    * @throws If the specified action is invalid.
-    */
-  def entryWithSubject(Subject: KiiACLSubject, action: KiiACLAction): KiiACLEntry = js.native
+object KiiACLEntry {
+  @scala.inline
+  def apply(
+    getAction: () => KiiACLAction,
+    getGrant: () => Boolean,
+    getSubject: () => js.Any,
+    setAction: KiiACLAction => Unit,
+    setGrant: Boolean => Unit,
+    setSubject: KiiACLSubject => Unit
+  ): KiiACLEntry = {
+    val __obj = js.Dynamic.literal(getAction = js.Any.fromFunction0(getAction), getGrant = js.Any.fromFunction0(getGrant), getSubject = js.Any.fromFunction0(getSubject), setAction = js.Any.fromFunction1(setAction), setGrant = js.Any.fromFunction1(setGrant), setSubject = js.Any.fromFunction1(setSubject))
+    __obj.asInstanceOf[KiiACLEntry]
+  }
 }
 

@@ -19,7 +19,7 @@ trait LocalStreamStats extends js.Object {
   /**
     * Number of lost packets of the sent audio.
     *
-    * **Note:**
+    * **Note**
     *
     * Safari and Firefox do not support this property.
     */

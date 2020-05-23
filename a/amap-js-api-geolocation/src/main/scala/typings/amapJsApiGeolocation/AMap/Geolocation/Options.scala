@@ -115,40 +115,40 @@ object Options {
     enableHighAccuracy: js.UndefOr[Boolean] = js.undefined,
     extensions: all | base = null,
     markerOptions: typings.amapJsApi.AMap.Marker.Options[_] = null,
-    maximumAge: Int | Double = null,
-    noGeoLocation: Int | Double = null,
-    noIpLocate: Int | Double = null,
+    maximumAge: js.UndefOr[Double] = js.undefined,
+    noGeoLocation: js.UndefOr[Double] = js.undefined,
+    noIpLocate: js.UndefOr[Double] = js.undefined,
     panToLocation: js.UndefOr[Boolean] = js.undefined,
     showButton: js.UndefOr[Boolean] = js.undefined,
     showCircle: js.UndefOr[Boolean] = js.undefined,
     showMarker: js.UndefOr[Boolean] = js.undefined,
     stopWhenPermissionDenied: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     useNative: js.UndefOr[Boolean] = js.undefined,
     zoomToAccuracy: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(GeoLocationFirst)) __obj.updateDynamic("GeoLocationFirst")(GeoLocationFirst.asInstanceOf[js.Any])
+    if (!js.isUndefined(GeoLocationFirst)) __obj.updateDynamic("GeoLocationFirst")(GeoLocationFirst.get.asInstanceOf[js.Any])
     if (buttonDom != null) __obj.updateDynamic("buttonDom")(buttonDom.asInstanceOf[js.Any])
     if (buttonOffset != null) __obj.updateDynamic("buttonOffset")(buttonOffset.asInstanceOf[js.Any])
     if (buttonPosition != null) __obj.updateDynamic("buttonPosition")(buttonPosition.asInstanceOf[js.Any])
     if (circleOptions != null) __obj.updateDynamic("circleOptions")(circleOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(convert)) __obj.updateDynamic("convert")(convert.asInstanceOf[js.Any])
+    if (!js.isUndefined(convert)) __obj.updateDynamic("convert")(convert.get.asInstanceOf[js.Any])
     if (convertUrl != null) __obj.updateDynamic("convertUrl")(convertUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableHighAccuracy)) __obj.updateDynamic("enableHighAccuracy")(enableHighAccuracy.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableHighAccuracy)) __obj.updateDynamic("enableHighAccuracy")(enableHighAccuracy.get.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (markerOptions != null) __obj.updateDynamic("markerOptions")(markerOptions.asInstanceOf[js.Any])
-    if (maximumAge != null) __obj.updateDynamic("maximumAge")(maximumAge.asInstanceOf[js.Any])
-    if (noGeoLocation != null) __obj.updateDynamic("noGeoLocation")(noGeoLocation.asInstanceOf[js.Any])
-    if (noIpLocate != null) __obj.updateDynamic("noIpLocate")(noIpLocate.asInstanceOf[js.Any])
-    if (!js.isUndefined(panToLocation)) __obj.updateDynamic("panToLocation")(panToLocation.asInstanceOf[js.Any])
-    if (!js.isUndefined(showButton)) __obj.updateDynamic("showButton")(showButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCircle)) __obj.updateDynamic("showCircle")(showCircle.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMarker)) __obj.updateDynamic("showMarker")(showMarker.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopWhenPermissionDenied)) __obj.updateDynamic("stopWhenPermissionDenied")(stopWhenPermissionDenied.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNative)) __obj.updateDynamic("useNative")(useNative.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomToAccuracy)) __obj.updateDynamic("zoomToAccuracy")(zoomToAccuracy.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumAge)) __obj.updateDynamic("maximumAge")(maximumAge.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noGeoLocation)) __obj.updateDynamic("noGeoLocation")(noGeoLocation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noIpLocate)) __obj.updateDynamic("noIpLocate")(noIpLocate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(panToLocation)) __obj.updateDynamic("panToLocation")(panToLocation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showButton)) __obj.updateDynamic("showButton")(showButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCircle)) __obj.updateDynamic("showCircle")(showCircle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMarker)) __obj.updateDynamic("showMarker")(showMarker.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopWhenPermissionDenied)) __obj.updateDynamic("stopWhenPermissionDenied")(stopWhenPermissionDenied.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNative)) __obj.updateDynamic("useNative")(useNative.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomToAccuracy)) __obj.updateDynamic("zoomToAccuracy")(zoomToAccuracy.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

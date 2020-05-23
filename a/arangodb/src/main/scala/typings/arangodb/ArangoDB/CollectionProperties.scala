@@ -1,6 +1,6 @@
 package typings.arangodb.ArangoDB
 
-import typings.arangodb.AnonIncrement
+import typings.arangodb.anon.Increment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait CollectionProperties extends js.Object {
   var isSystem: Boolean
   var isVolatile: Boolean
   var journalSize: Double
-  var keyOptions: js.UndefOr[AnonIncrement] = js.undefined
+  var keyOptions: js.UndefOr[Increment] = js.undefined
   var numberOfShards: js.UndefOr[Double] = js.undefined
   var replicationFactor: js.UndefOr[Double] = js.undefined
   var shardKeys: js.UndefOr[js.Array[String]] = js.undefined
@@ -25,15 +25,15 @@ object CollectionProperties {
     isVolatile: Boolean,
     journalSize: Double,
     waitForSync: Boolean,
-    keyOptions: AnonIncrement = null,
-    numberOfShards: Int | Double = null,
-    replicationFactor: Int | Double = null,
+    keyOptions: Increment = null,
+    numberOfShards: js.UndefOr[Double] = js.undefined,
+    replicationFactor: js.UndefOr[Double] = js.undefined,
     shardKeys: js.Array[String] = null
   ): CollectionProperties = {
     val __obj = js.Dynamic.literal(indexBuckets = indexBuckets.asInstanceOf[js.Any], isSystem = isSystem.asInstanceOf[js.Any], isVolatile = isVolatile.asInstanceOf[js.Any], journalSize = journalSize.asInstanceOf[js.Any], waitForSync = waitForSync.asInstanceOf[js.Any])
     if (keyOptions != null) __obj.updateDynamic("keyOptions")(keyOptions.asInstanceOf[js.Any])
-    if (numberOfShards != null) __obj.updateDynamic("numberOfShards")(numberOfShards.asInstanceOf[js.Any])
-    if (replicationFactor != null) __obj.updateDynamic("replicationFactor")(replicationFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfShards)) __obj.updateDynamic("numberOfShards")(numberOfShards.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(replicationFactor)) __obj.updateDynamic("replicationFactor")(replicationFactor.get.asInstanceOf[js.Any])
     if (shardKeys != null) __obj.updateDynamic("shardKeys")(shardKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionProperties]
   }

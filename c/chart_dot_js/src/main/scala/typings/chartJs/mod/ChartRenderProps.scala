@@ -12,11 +12,15 @@ trait ChartRenderProps extends js.Object {
 
 object ChartRenderProps {
   @scala.inline
-  def apply(duration: Int | Double = null, easing: Easing = null, `lazy`: js.UndefOr[Boolean] = js.undefined): ChartRenderProps = {
+  def apply(
+    duration: js.UndefOr[Double] = js.undefined,
+    easing: Easing = null,
+    `lazy`: js.UndefOr[Boolean] = js.undefined
+  ): ChartRenderProps = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartRenderProps]
   }
 }

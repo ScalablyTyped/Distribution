@@ -1,6 +1,6 @@
 package typings.weixinApp.wx
 
-import typings.weixinApp.AnonBankAccount
+import typings.weixinApp.anon.BankAccount
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ChooseInvoiceTitleOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")
-  var success_ChooseInvoiceTitleOptions: js.UndefOr[js.Function1[/* res */ AnonBankAccount, Unit]] = js.undefined
+  var success_ChooseInvoiceTitleOptions: js.UndefOr[js.Function1[/* res */ BankAccount, Unit]] = js.undefined
 }
 
 object ChooseInvoiceTitleOptions {
@@ -16,7 +16,7 @@ object ChooseInvoiceTitleOptions {
   def apply(
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
-    success: /* res */ AnonBankAccount => Unit = null
+    success: /* res */ BankAccount => Unit = null
   ): ChooseInvoiceTitleOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))

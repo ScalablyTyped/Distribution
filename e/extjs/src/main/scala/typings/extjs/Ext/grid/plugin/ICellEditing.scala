@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 
 trait ICellEditing extends IEditing {
   /** [Method] Starts editing by position row column
-  		* @param position Object A position with keys of row and column.
-  		*/
+    * @param position Object A position with keys of row and column.
+    */
   var startEditByPosition: js.UndefOr[js.Function1[/* position */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Starts editing the specified record using the specified Column definition to define which field is being edited
-  		* @param record Ext.data.Model/Number The Store data record which backs the row to be edited, or index of the record.
-  		* @param columnHeader Ext.grid.column.Column/Number The Column object defining the column to be edited, or index of the column.
-  		* @returns Boolean true if editing was started, false otherwise.
-  		*/
+    * @param record Ext.data.Model/Number The Store data record which backs the row to be edited, or index of the record.
+    * @param columnHeader Ext.grid.column.Column/Number The Column object defining the column to be edited, or index of the column.
+    * @returns Boolean true if editing was started, false otherwise.
+    */
   @JSName("startEdit")
   var startEdit_ICellEditing: js.UndefOr[
     js.Function2[/* record */ js.UndefOr[js.Any], /* columnHeader */ js.UndefOr[js.Any], Boolean]
@@ -37,7 +37,7 @@ object ICellEditing {
     cancelEdit: () => Unit = null,
     clearListeners: () => Unit = null,
     clearManagedListeners: () => Unit = null,
-    clicksToEdit: Int | Double = null,
+    clicksToEdit: js.UndefOr[Double] = js.undefined,
     clonePlugin: /* overrideCfg */ js.UndefOr[js.Any] => Unit = null,
     completeEdit: () => Unit = null,
     config: js.Any = null,
@@ -94,13 +94,13 @@ object ICellEditing {
     if (cancelEdit != null) __obj.updateDynamic("cancelEdit")(js.Any.fromFunction0(cancelEdit))
     if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
     if (clearManagedListeners != null) __obj.updateDynamic("clearManagedListeners")(js.Any.fromFunction0(clearManagedListeners))
-    if (clicksToEdit != null) __obj.updateDynamic("clicksToEdit")(clicksToEdit.asInstanceOf[js.Any])
+    if (!js.isUndefined(clicksToEdit)) __obj.updateDynamic("clicksToEdit")(clicksToEdit.get.asInstanceOf[js.Any])
     if (clonePlugin != null) __obj.updateDynamic("clonePlugin")(js.Any.fromFunction1(clonePlugin))
     if (completeEdit != null) __obj.updateDynamic("completeEdit")(js.Any.fromFunction0(completeEdit))
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (disable != null) __obj.updateDynamic("disable")(js.Any.fromFunction0(disable))
-    if (!js.isUndefined(editing)) __obj.updateDynamic("editing")(editing.asInstanceOf[js.Any])
+    if (!js.isUndefined(editing)) __obj.updateDynamic("editing")(editing.get.asInstanceOf[js.Any])
     if (enable != null) __obj.updateDynamic("enable")(js.Any.fromFunction0(enable))
     if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
@@ -113,8 +113,8 @@ object ICellEditing {
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPlugin)) __obj.updateDynamic("isPlugin")(isPlugin.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPlugin)) __obj.updateDynamic("isPlugin")(isPlugin.get.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
@@ -129,7 +129,7 @@ object ICellEditing {
     if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction0(resumeEvents))
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setCmp != null) __obj.updateDynamic("setCmp")(js.Any.fromFunction1(setCmp))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (startEdit != null) __obj.updateDynamic("startEdit")(js.Any.fromFunction2(startEdit))
     if (startEditByPosition != null) __obj.updateDynamic("startEditByPosition")(js.Any.fromFunction1(startEditByPosition))
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])

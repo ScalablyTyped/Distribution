@@ -1,9 +1,9 @@
 package typings.baseui.toastMod
 
-import typings.baseui.AnonPlacement
-import typings.baseui.ReadonlyToastPropskeyKey
-import typings.baseui.ReadonlyToasterProps
-import typings.baseui.ToastPropskeyKey
+import typings.baseui.anon.Placement
+import typings.baseui.anon.ReadonlyToastPropskeyKey
+import typings.baseui.anon.ReadonlyToasterProps
+import typings.baseui.anon.ToastPropskeyKey
 import typings.react.mod.Component
 import typings.react.mod.Key
 import typings.react.mod.ReactNode
@@ -20,7 +20,7 @@ class ToasterContainer ()
   def dismiss(key: Key): Unit = js.native
   def getOnCloseHandler(key: Key): js.Function0[_] = js.native
   def getOnCloseHandler(key: Key, onClose: js.Function0[_]): js.Function0[_] = js.native
-  def getSharedProps(): AnonPlacement = js.native
+  def getSharedProps(): Placement = js.native
   def getToastProps(props: ToastProps): ReadonlyToastPropskeyKey = js.native
   def internalOnClose(key: Key): Unit = js.native
   def renderToast(toastProps: ToastPropskeyKey): ReactNode = js.native

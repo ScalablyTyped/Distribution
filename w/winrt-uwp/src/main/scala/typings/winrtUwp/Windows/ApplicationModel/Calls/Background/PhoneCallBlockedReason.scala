@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Calls.Background
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object PhoneCallBlockedReason extends js.Object {
   /** The call was rejected because it was an unknown number and unknown numbers are blocked. */
   @js.native
   sealed trait unknownNumber extends PhoneCallBlockedReason
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PhoneCallBlockedReason with Double] = js.native
-  /* 0 */ @js.native
-  object inCallBlockingList extends TopLevel[inCallBlockingList with Double]
-  
-  /* 1 */ @js.native
-  object privateNumber extends TopLevel[privateNumber with Double]
-  
-  /* 2 */ @js.native
-  object unknownNumber extends TopLevel[unknownNumber with Double]
   
 }
 

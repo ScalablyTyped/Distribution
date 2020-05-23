@@ -1,6 +1,6 @@
 package typings.reactInstantsearchCore.mod
 
-import typings.reactInstantsearchCore.AnonEnd
+import typings.reactInstantsearchCore.anon.End
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait NumericMenuExposed extends js.Object {
   var defaultRefinement: js.UndefOr[String] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   /** List of options. With a text label, and upper and lower bounds. */
-  var items: js.Array[AnonEnd]
+  var items: js.Array[End]
   /** (...args: any[]) => any to modify the items being displayed, e.g. for filtering or sorting them. Takes an items as parameter and expects it back in return. */
   var transformItems: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
 }
@@ -21,7 +21,7 @@ object NumericMenuExposed {
   @scala.inline
   def apply(
     attribute: String,
-    items: js.Array[AnonEnd],
+    items: js.Array[End],
     defaultRefinement: String = null,
     id: String = null,
     transformItems: /* repeated */ js.Any => _ = null

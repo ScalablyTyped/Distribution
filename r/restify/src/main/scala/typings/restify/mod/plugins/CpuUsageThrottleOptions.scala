@@ -14,16 +14,16 @@ trait CpuUsageThrottleOptions extends js.Object {
 object CpuUsageThrottleOptions {
   @scala.inline
   def apply(
-    halfLife: Int | Double = null,
-    interval: Int | Double = null,
-    limit: Int | Double = null,
-    max: Int | Double = null
+    halfLife: js.UndefOr[Double] = js.undefined,
+    interval: js.UndefOr[Double] = js.undefined,
+    limit: js.UndefOr[Double] = js.undefined,
+    max: js.UndefOr[Double] = js.undefined
   ): CpuUsageThrottleOptions = {
     val __obj = js.Dynamic.literal()
-    if (halfLife != null) __obj.updateDynamic("halfLife")(halfLife.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (!js.isUndefined(halfLife)) __obj.updateDynamic("halfLife")(halfLife.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CpuUsageThrottleOptions]
   }
 }

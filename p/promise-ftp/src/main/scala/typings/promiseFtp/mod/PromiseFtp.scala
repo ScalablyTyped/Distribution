@@ -4,7 +4,7 @@ import typings.ftp.mod.ListingElement
 import typings.ftp.mod.Options
 import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
-import typings.promiseFtp.AnonCode
+import typings.promiseFtp.anon.Code
 import typings.std.Date
 import typings.std.Error
 import scala.scalajs.js
@@ -174,7 +174,7 @@ trait PromiseFtp extends js.Object {
     * Send command using SITE.
     * @param command - the command to send, e.g 'CHMOD 755 foo' or 'QUOTA'.
     */
-  def site(command: String): typings.bluebird.mod.^[AnonCode] = js.native
+  def site(command: String): typings.bluebird.mod.^[Code] = js.native
   /**
     * Extended commands (RFC 3659)
     * Retrieve the size of a file on the server.

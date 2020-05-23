@@ -1,6 +1,8 @@
 package typings.babylonjs
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.babylonjs.anon.RemoveAttributes
+import typings.babylonjs.anon.RepeatKey
 import typings.babylonjs.nodeMaterialBlockConnectionPointTypesMod.NodeMaterialBlockConnectionPointTypes
 import typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets
 import typings.babylonjs.nodeMaterialBuildStateSharedDataMod.NodeMaterialBuildStateSharedData
@@ -74,7 +76,7 @@ object nodeMaterialBuildStateMod extends js.Object {
     def _emit2DSampler(name: String): Unit = js.native
     /** @hidden */
     def _emitCodeFromInclude(includeName: String, comments: String): String = js.native
-    def _emitCodeFromInclude(includeName: String, comments: String, options: AnonRepeatKey): String = js.native
+    def _emitCodeFromInclude(includeName: String, comments: String, options: RepeatKey): String = js.native
     /** @hidden */
     def _emitExtension(name: String, extension: String): Unit = js.native
     /** @hidden */
@@ -83,8 +85,8 @@ object nodeMaterialBuildStateMod extends js.Object {
     def _emitFunction(name: String, code: String, comments: String): Unit = js.native
     /** @hidden */
     def _emitFunctionFromInclude(includeName: String, comments: String): Unit = js.native
-    def _emitFunctionFromInclude(includeName: String, comments: String, options: AnonRemoveAttributes): Unit = js.native
-    def _emitFunctionFromInclude(includeName: String, comments: String, options: AnonRemoveAttributes, storeKey: String): Unit = js.native
+    def _emitFunctionFromInclude(includeName: String, comments: String, options: RemoveAttributes): Unit = js.native
+    def _emitFunctionFromInclude(includeName: String, comments: String, options: RemoveAttributes, storeKey: String): Unit = js.native
     /** @hidden */
     def _emitUniformFromString(name: String, `type`: String): Unit = js.native
     def _emitUniformFromString(name: String, `type`: String, define: String): Unit = js.native

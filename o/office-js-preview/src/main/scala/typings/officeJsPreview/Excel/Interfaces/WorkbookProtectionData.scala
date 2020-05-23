@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait WorkbookProtectionData extends js.Object {
   /**
     *
-    * Indicates if the workbook is protected. Read-Only.
+    * Specifies if the workbook is protected.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -19,7 +19,7 @@ object WorkbookProtectionData {
   @scala.inline
   def apply(`protected`: js.UndefOr[Boolean] = js.undefined): WorkbookProtectionData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(`protected`)) __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`protected`)) __obj.updateDynamic("protected")(`protected`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookProtectionData]
   }
 }

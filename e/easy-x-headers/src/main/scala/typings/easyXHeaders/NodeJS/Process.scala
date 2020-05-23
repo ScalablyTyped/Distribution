@@ -1,8 +1,8 @@
 package typings.easyXHeaders.NodeJS
 
-import typings.easyXHeaders.AnonAres
-import typings.easyXHeaders.AnonHeapTotal
-import typings.easyXHeaders.AnonTargetdefaults
+import typings.easyXHeaders.anon.Ares
+import typings.easyXHeaders.anon.HeapTotal
+import typings.easyXHeaders.anon.Targetdefaults
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait Process extends EventEmitter {
   var arch: String = js.native
   var argv: js.Array[String] = js.native
-  var config: AnonTargetdefaults = js.native
+  var config: Targetdefaults = js.native
   var env: js.Any = js.native
   var execPath: String = js.native
   var pid: Double = js.native
@@ -23,7 +23,7 @@ trait Process extends EventEmitter {
   var stdout: WritableStream = js.native
   var title: String = js.native
   var version: String = js.native
-  var versions: AnonAres = js.native
+  var versions: Ares = js.native
   def abort(): Unit = js.native
   def chdir(directory: String): Unit = js.native
   def cwd(): String = js.native
@@ -35,7 +35,7 @@ trait Process extends EventEmitter {
   def hrtime(time: js.Array[Double]): js.Array[Double] = js.native
   def kill(pid: Double): Unit = js.native
   def kill(pid: Double, signal: String): Unit = js.native
-  def memoryUsage(): AnonHeapTotal = js.native
+  def memoryUsage(): HeapTotal = js.native
   def nextTick(callback: js.Function): Unit = js.native
   def setgid(id: String): Unit = js.native
   def setgid(id: Double): Unit = js.native

@@ -60,36 +60,36 @@ object IndexOptions {
     collation: CollationDocument = null,
     default_language: String = null,
     dropDups: js.UndefOr[Boolean] = js.undefined,
-    expireAfterSeconds: Int | scala.Double = null,
+    expireAfterSeconds: js.UndefOr[scala.Double] = js.undefined,
     j: js.UndefOr[Boolean] = js.undefined,
-    max: Int | scala.Double = null,
-    min: Int | scala.Double = null,
+    max: js.UndefOr[scala.Double] = js.undefined,
+    min: js.UndefOr[scala.Double] = js.undefined,
     name: String = null,
     partialFilterExpression: js.Any = null,
     session: ClientSession = null,
     sparse: js.UndefOr[Boolean] = js.undefined,
     unique: js.UndefOr[Boolean] = js.undefined,
-    v: Int | scala.Double = null,
+    v: js.UndefOr[scala.Double] = js.undefined,
     w: scala.Double | majority | String = null,
-    wtimeout: Int | scala.Double = null
+    wtimeout: js.UndefOr[scala.Double] = js.undefined
   ): IndexOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background.get.asInstanceOf[js.Any])
     if (collation != null) __obj.updateDynamic("collation")(collation.asInstanceOf[js.Any])
     if (default_language != null) __obj.updateDynamic("default_language")(default_language.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropDups)) __obj.updateDynamic("dropDups")(dropDups.asInstanceOf[js.Any])
-    if (expireAfterSeconds != null) __obj.updateDynamic("expireAfterSeconds")(expireAfterSeconds.asInstanceOf[js.Any])
-    if (!js.isUndefined(j)) __obj.updateDynamic("j")(j.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropDups)) __obj.updateDynamic("dropDups")(dropDups.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expireAfterSeconds)) __obj.updateDynamic("expireAfterSeconds")(expireAfterSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(j)) __obj.updateDynamic("j")(j.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (partialFilterExpression != null) __obj.updateDynamic("partialFilterExpression")(partialFilterExpression.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
-    if (!js.isUndefined(sparse)) __obj.updateDynamic("sparse")(sparse.asInstanceOf[js.Any])
-    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
-    if (v != null) __obj.updateDynamic("v")(v.asInstanceOf[js.Any])
+    if (!js.isUndefined(sparse)) __obj.updateDynamic("sparse")(sparse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(v)) __obj.updateDynamic("v")(v.get.asInstanceOf[js.Any])
     if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
-    if (wtimeout != null) __obj.updateDynamic("wtimeout")(wtimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(wtimeout)) __obj.updateDynamic("wtimeout")(wtimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexOptions]
   }
 }

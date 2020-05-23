@@ -3,10 +3,10 @@ package typings.reactEventListener.mod
 import typings.std.BeforeUnloadEvent
 import typings.std.DeviceMotionEvent
 import typings.std.DeviceOrientationEvent
-import typings.std.Document_
+import typings.std.Document
 import typings.std.DragEvent
+import typings.std.Event
 import typings.std.EventTarget
-import typings.std.Event_
 import typings.std.FocusEvent
 import typings.std.HashChangeEvent
 import typings.std.KeyboardEvent
@@ -21,7 +21,7 @@ import typings.std.ProgressEvent
 import typings.std.StorageEvent
 import typings.std.UIEvent
 import typings.std.WheelEvent
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,26 +29,26 @@ import scala.scalajs.js.annotation._
 trait EventListenerProps extends js.Object {
   var oNmsPointerUp: js.UndefOr[js.Function1[/* ev */ MSPointerEvent, _]] = js.undefined
   var oNmsPointerUpCapture: js.UndefOr[js.Function1[/* ev */ MSPointerEvent, _]] = js.undefined
-  var onAbort: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onAbortCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onAfterPrint: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onAfterPrintCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onBeforePrint: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onBeforePrintCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
+  var onAbort: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onAbortCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onAfterPrint: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onAfterPrintCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onBeforePrint: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onBeforePrintCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
   var onBeforeUnload: js.UndefOr[js.Function1[/* ev */ BeforeUnloadEvent, _]] = js.undefined
   var onBeforeUnloadCapture: js.UndefOr[js.Function1[/* ev */ BeforeUnloadEvent, _]] = js.undefined
   var onBlur: js.UndefOr[js.Function1[/* ev */ FocusEvent, _]] = js.undefined
   var onBlurCapture: js.UndefOr[js.Function1[/* ev */ FocusEvent, _]] = js.undefined
-  var onCanPlay: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onCanPlayCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onCanPlayThrough: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onCanPlayThroughCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onChangeCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
+  var onCanPlay: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onCanPlayCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onCanPlayThrough: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onCanPlayThroughCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onChangeCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
   var onClick: js.UndefOr[js.Function1[/* ev */ MouseEvent, _]] = js.undefined
   var onClickCapture: js.UndefOr[js.Function1[/* ev */ MouseEvent, _]] = js.undefined
-  var onCompassNeedsCalibration: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onCompassNeedsCalibrationCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
+  var onCompassNeedsCalibration: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onCompassNeedsCalibrationCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
   var onContextMenu: js.UndefOr[js.Function1[/* ev */ PointerEvent, _]] = js.undefined
   var onContextMenuCapture: js.UndefOr[js.Function1[/* ev */ PointerEvent, _]] = js.undefined
   var onDblClick: js.UndefOr[js.Function1[/* ev */ MouseEvent, _]] = js.undefined
@@ -71,12 +71,12 @@ trait EventListenerProps extends js.Object {
   var onDragStartCapture: js.UndefOr[js.Function1[/* ev */ DragEvent, _]] = js.undefined
   var onDrop: js.UndefOr[js.Function1[/* ev */ DragEvent, _]] = js.undefined
   var onDropCapture: js.UndefOr[js.Function1[/* ev */ DragEvent, _]] = js.undefined
-  var onDurationChange: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onDurationChangeCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onEmptied: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onEmptiedCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onEnded: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onEndedCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
+  var onDurationChange: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onDurationChangeCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onEmptied: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onEmptiedCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onEnded: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onEndedCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
   var onError: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ErrorEventHandler */ js.Any
   ] = js.undefined
@@ -87,22 +87,22 @@ trait EventListenerProps extends js.Object {
   var onFocusCapture: js.UndefOr[js.Function1[/* ev */ FocusEvent, _]] = js.undefined
   var onHashChange: js.UndefOr[js.Function1[/* ev */ HashChangeEvent, _]] = js.undefined
   var onHashChangeCapture: js.UndefOr[js.Function1[/* ev */ HashChangeEvent, _]] = js.undefined
-  var onInput: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onInputCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
+  var onInput: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onInputCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
   var onKeyDown: js.UndefOr[js.Function1[/* ev */ KeyboardEvent, _]] = js.undefined
   var onKeyDownCapture: js.UndefOr[js.Function1[/* ev */ KeyboardEvent, _]] = js.undefined
   var onKeyPress: js.UndefOr[js.Function1[/* ev */ KeyboardEvent, _]] = js.undefined
   var onKeyPressCapture: js.UndefOr[js.Function1[/* ev */ KeyboardEvent, _]] = js.undefined
   var onKeyUp: js.UndefOr[js.Function1[/* ev */ KeyboardEvent, _]] = js.undefined
   var onKeyUpCapture: js.UndefOr[js.Function1[/* ev */ KeyboardEvent, _]] = js.undefined
-  var onLoad: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onLoadCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onLoadStart: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onLoadStartCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onLoadedData: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onLoadedDataCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onLoadedMetadata: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onLoadedMetadataCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
+  var onLoad: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onLoadCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onLoadStart: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onLoadStartCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onLoadedData: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onLoadedDataCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onLoadedMetadata: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onLoadedMetadataCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
   var onMessage: js.UndefOr[js.Function1[/* ev */ MessageEvent, _]] = js.undefined
   var onMessageCapture: js.UndefOr[js.Function1[/* ev */ MessageEvent, _]] = js.undefined
   var onMouseDown: js.UndefOr[js.Function1[/* ev */ MouseEvent, _]] = js.undefined
@@ -149,22 +149,22 @@ trait EventListenerProps extends js.Object {
   var onMsPointerOutCapture: js.UndefOr[js.Function1[/* ev */ MSPointerEvent, _]] = js.undefined
   var onMsPointerOver: js.UndefOr[js.Function1[/* ev */ MSPointerEvent, _]] = js.undefined
   var onMsPointerOverCapture: js.UndefOr[js.Function1[/* ev */ MSPointerEvent, _]] = js.undefined
-  var onOffline: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onOfflineCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onOnline: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onOnlineCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onOrientationChange: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onOrientationChangeCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
+  var onOffline: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onOfflineCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onOnline: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onOnlineCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onOrientationChange: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onOrientationChangeCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
   var onPageHide: js.UndefOr[js.Function1[/* ev */ PageTransitionEvent, _]] = js.undefined
   var onPageHideCapture: js.UndefOr[js.Function1[/* ev */ PageTransitionEvent, _]] = js.undefined
   var onPageShow: js.UndefOr[js.Function1[/* ev */ PageTransitionEvent, _]] = js.undefined
   var onPageShowCapture: js.UndefOr[js.Function1[/* ev */ PageTransitionEvent, _]] = js.undefined
-  var onPause: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onPauseCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onPlay: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onPlayCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onPlaying: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onPlayingCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
+  var onPause: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onPauseCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onPlay: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onPlayCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onPlaying: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onPlayingCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
   // Global events
   var onPointerCancel: js.UndefOr[js.Function1[/* ev */ PointerEvent, _]] = js.undefined
   var onPointerCancelCapture: js.UndefOr[js.Function1[/* ev */ PointerEvent, _]] = js.undefined
@@ -186,34 +186,34 @@ trait EventListenerProps extends js.Object {
   var onPopStateCapture: js.UndefOr[js.Function1[/* ev */ PopStateEvent, _]] = js.undefined
   var onProgress: js.UndefOr[js.Function1[/* ev */ ProgressEvent[EventTarget], _]] = js.undefined
   var onProgressCapture: js.UndefOr[js.Function1[/* ev */ ProgressEvent[EventTarget], _]] = js.undefined
-  var onRateChange: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onRateChangeCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
+  var onRateChange: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onRateChangeCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
   var onReadyStateChange: js.UndefOr[js.Function1[/* ev */ ProgressEvent[EventTarget], _]] = js.undefined
   var onReadyStateChangeCapture: js.UndefOr[js.Function1[/* ev */ ProgressEvent[EventTarget], _]] = js.undefined
-  var onReset: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onResetCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
+  var onReset: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onResetCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
   var onResize: js.UndefOr[js.Function1[/* ev */ UIEvent, _]] = js.undefined
   var onResizeCapture: js.UndefOr[js.Function1[/* ev */ UIEvent, _]] = js.undefined
   var onScroll: js.UndefOr[js.Function1[/* ev */ UIEvent, _]] = js.undefined
   var onScrollCapture: js.UndefOr[js.Function1[/* ev */ UIEvent, _]] = js.undefined
-  var onSeeked: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onSeekedCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onSeeking: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onSeekingCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
+  var onSeeked: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onSeekedCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onSeeking: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onSeekingCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
   var onSelect: js.UndefOr[js.Function1[/* ev */ UIEvent, _]] = js.undefined
   var onSelectCapture: js.UndefOr[js.Function1[/* ev */ UIEvent, _]] = js.undefined
-  var onSelectionChange: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onSelectionChangeCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onStalled: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onStalledCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
+  var onSelectionChange: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onSelectionChangeCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onStalled: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onStalledCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
   var onStorage: js.UndefOr[js.Function1[/* ev */ StorageEvent, _]] = js.undefined
   var onStorageCapture: js.UndefOr[js.Function1[/* ev */ StorageEvent, _]] = js.undefined
-  var onSubmit: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onSubmitCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onSuspend: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onSuspendCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onTimeUpdate: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onTimeUpdateCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
+  var onSubmit: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onSubmitCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onSuspend: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onSuspendCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onTimeUpdate: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onTimeUpdateCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
   var onTouchCancel: js.UndefOr[js.Any] = js.undefined
   var onTouchCancelCapture: js.UndefOr[js.Any] = js.undefined
   var onTouchEnd: js.UndefOr[js.Any] = js.undefined
@@ -222,46 +222,46 @@ trait EventListenerProps extends js.Object {
   var onTouchMoveCapture: js.UndefOr[js.Any] = js.undefined
   var onTouchStart: js.UndefOr[js.Any] = js.undefined
   var onTouchStartCapture: js.UndefOr[js.Any] = js.undefined
-  var onUnload: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onUnloadCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onVolumeChange: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onVolumeChangeCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onWaiting: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
-  var onWaitingCapture: js.UndefOr[js.Function1[/* ev */ Event_, _]] = js.undefined
+  var onUnload: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onUnloadCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onVolumeChange: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onVolumeChangeCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onWaiting: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
+  var onWaitingCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
   var onWheel: js.UndefOr[js.Function1[/* ev */ WheelEvent, _]] = js.undefined
   var onWheelCapture: js.UndefOr[js.Function1[/* ev */ WheelEvent, _]] = js.undefined
   /**
     * Target (window or document)
     */
-  var target: Window_ | Document_ | String
+  var target: Window | Document | String
 }
 
 object EventListenerProps {
   @scala.inline
   def apply(
-    target: Window_ | Document_ | String,
+    target: Window | Document | String,
     oNmsPointerUp: /* ev */ MSPointerEvent => _ = null,
     oNmsPointerUpCapture: /* ev */ MSPointerEvent => _ = null,
-    onAbort: /* ev */ Event_ => _ = null,
-    onAbortCapture: /* ev */ Event_ => _ = null,
-    onAfterPrint: /* ev */ Event_ => _ = null,
-    onAfterPrintCapture: /* ev */ Event_ => _ = null,
-    onBeforePrint: /* ev */ Event_ => _ = null,
-    onBeforePrintCapture: /* ev */ Event_ => _ = null,
+    onAbort: /* ev */ Event => _ = null,
+    onAbortCapture: /* ev */ Event => _ = null,
+    onAfterPrint: /* ev */ Event => _ = null,
+    onAfterPrintCapture: /* ev */ Event => _ = null,
+    onBeforePrint: /* ev */ Event => _ = null,
+    onBeforePrintCapture: /* ev */ Event => _ = null,
     onBeforeUnload: /* ev */ BeforeUnloadEvent => _ = null,
     onBeforeUnloadCapture: /* ev */ BeforeUnloadEvent => _ = null,
     onBlur: /* ev */ FocusEvent => _ = null,
     onBlurCapture: /* ev */ FocusEvent => _ = null,
-    onCanPlay: /* ev */ Event_ => _ = null,
-    onCanPlayCapture: /* ev */ Event_ => _ = null,
-    onCanPlayThrough: /* ev */ Event_ => _ = null,
-    onCanPlayThroughCapture: /* ev */ Event_ => _ = null,
-    onChange: /* ev */ Event_ => _ = null,
-    onChangeCapture: /* ev */ Event_ => _ = null,
+    onCanPlay: /* ev */ Event => _ = null,
+    onCanPlayCapture: /* ev */ Event => _ = null,
+    onCanPlayThrough: /* ev */ Event => _ = null,
+    onCanPlayThroughCapture: /* ev */ Event => _ = null,
+    onChange: /* ev */ Event => _ = null,
+    onChangeCapture: /* ev */ Event => _ = null,
     onClick: /* ev */ MouseEvent => _ = null,
     onClickCapture: /* ev */ MouseEvent => _ = null,
-    onCompassNeedsCalibration: /* ev */ Event_ => _ = null,
-    onCompassNeedsCalibrationCapture: /* ev */ Event_ => _ = null,
+    onCompassNeedsCalibration: /* ev */ Event => _ = null,
+    onCompassNeedsCalibrationCapture: /* ev */ Event => _ = null,
     onContextMenu: /* ev */ PointerEvent => _ = null,
     onContextMenuCapture: /* ev */ PointerEvent => _ = null,
     onDblClick: /* ev */ MouseEvent => _ = null,
@@ -284,34 +284,34 @@ object EventListenerProps {
     onDragStartCapture: /* ev */ DragEvent => _ = null,
     onDrop: /* ev */ DragEvent => _ = null,
     onDropCapture: /* ev */ DragEvent => _ = null,
-    onDurationChange: /* ev */ Event_ => _ = null,
-    onDurationChangeCapture: /* ev */ Event_ => _ = null,
-    onEmptied: /* ev */ Event_ => _ = null,
-    onEmptiedCapture: /* ev */ Event_ => _ = null,
-    onEnded: /* ev */ Event_ => _ = null,
-    onEndedCapture: /* ev */ Event_ => _ = null,
+    onDurationChange: /* ev */ Event => _ = null,
+    onDurationChangeCapture: /* ev */ Event => _ = null,
+    onEmptied: /* ev */ Event => _ = null,
+    onEmptiedCapture: /* ev */ Event => _ = null,
+    onEnded: /* ev */ Event => _ = null,
+    onEndedCapture: /* ev */ Event => _ = null,
     onError: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ErrorEventHandler */ js.Any = null,
     onErrorCapture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ErrorEventHandler */ js.Any = null,
     onFocus: /* ev */ FocusEvent => _ = null,
     onFocusCapture: /* ev */ FocusEvent => _ = null,
     onHashChange: /* ev */ HashChangeEvent => _ = null,
     onHashChangeCapture: /* ev */ HashChangeEvent => _ = null,
-    onInput: /* ev */ Event_ => _ = null,
-    onInputCapture: /* ev */ Event_ => _ = null,
+    onInput: /* ev */ Event => _ = null,
+    onInputCapture: /* ev */ Event => _ = null,
     onKeyDown: /* ev */ KeyboardEvent => _ = null,
     onKeyDownCapture: /* ev */ KeyboardEvent => _ = null,
     onKeyPress: /* ev */ KeyboardEvent => _ = null,
     onKeyPressCapture: /* ev */ KeyboardEvent => _ = null,
     onKeyUp: /* ev */ KeyboardEvent => _ = null,
     onKeyUpCapture: /* ev */ KeyboardEvent => _ = null,
-    onLoad: /* ev */ Event_ => _ = null,
-    onLoadCapture: /* ev */ Event_ => _ = null,
-    onLoadStart: /* ev */ Event_ => _ = null,
-    onLoadStartCapture: /* ev */ Event_ => _ = null,
-    onLoadedData: /* ev */ Event_ => _ = null,
-    onLoadedDataCapture: /* ev */ Event_ => _ = null,
-    onLoadedMetadata: /* ev */ Event_ => _ = null,
-    onLoadedMetadataCapture: /* ev */ Event_ => _ = null,
+    onLoad: /* ev */ Event => _ = null,
+    onLoadCapture: /* ev */ Event => _ = null,
+    onLoadStart: /* ev */ Event => _ = null,
+    onLoadStartCapture: /* ev */ Event => _ = null,
+    onLoadedData: /* ev */ Event => _ = null,
+    onLoadedDataCapture: /* ev */ Event => _ = null,
+    onLoadedMetadata: /* ev */ Event => _ = null,
+    onLoadedMetadataCapture: /* ev */ Event => _ = null,
     onMessage: /* ev */ MessageEvent => _ = null,
     onMessageCapture: /* ev */ MessageEvent => _ = null,
     onMouseDown: /* ev */ MouseEvent => _ = null,
@@ -358,22 +358,22 @@ object EventListenerProps {
     onMsPointerOutCapture: /* ev */ MSPointerEvent => _ = null,
     onMsPointerOver: /* ev */ MSPointerEvent => _ = null,
     onMsPointerOverCapture: /* ev */ MSPointerEvent => _ = null,
-    onOffline: /* ev */ Event_ => _ = null,
-    onOfflineCapture: /* ev */ Event_ => _ = null,
-    onOnline: /* ev */ Event_ => _ = null,
-    onOnlineCapture: /* ev */ Event_ => _ = null,
-    onOrientationChange: /* ev */ Event_ => _ = null,
-    onOrientationChangeCapture: /* ev */ Event_ => _ = null,
+    onOffline: /* ev */ Event => _ = null,
+    onOfflineCapture: /* ev */ Event => _ = null,
+    onOnline: /* ev */ Event => _ = null,
+    onOnlineCapture: /* ev */ Event => _ = null,
+    onOrientationChange: /* ev */ Event => _ = null,
+    onOrientationChangeCapture: /* ev */ Event => _ = null,
     onPageHide: /* ev */ PageTransitionEvent => _ = null,
     onPageHideCapture: /* ev */ PageTransitionEvent => _ = null,
     onPageShow: /* ev */ PageTransitionEvent => _ = null,
     onPageShowCapture: /* ev */ PageTransitionEvent => _ = null,
-    onPause: /* ev */ Event_ => _ = null,
-    onPauseCapture: /* ev */ Event_ => _ = null,
-    onPlay: /* ev */ Event_ => _ = null,
-    onPlayCapture: /* ev */ Event_ => _ = null,
-    onPlaying: /* ev */ Event_ => _ = null,
-    onPlayingCapture: /* ev */ Event_ => _ = null,
+    onPause: /* ev */ Event => _ = null,
+    onPauseCapture: /* ev */ Event => _ = null,
+    onPlay: /* ev */ Event => _ = null,
+    onPlayCapture: /* ev */ Event => _ = null,
+    onPlaying: /* ev */ Event => _ = null,
+    onPlayingCapture: /* ev */ Event => _ = null,
     onPointerCancel: /* ev */ PointerEvent => _ = null,
     onPointerCancelCapture: /* ev */ PointerEvent => _ = null,
     onPointerDown: /* ev */ PointerEvent => _ = null,
@@ -394,34 +394,34 @@ object EventListenerProps {
     onPopStateCapture: /* ev */ PopStateEvent => _ = null,
     onProgress: /* ev */ ProgressEvent[EventTarget] => _ = null,
     onProgressCapture: /* ev */ ProgressEvent[EventTarget] => _ = null,
-    onRateChange: /* ev */ Event_ => _ = null,
-    onRateChangeCapture: /* ev */ Event_ => _ = null,
+    onRateChange: /* ev */ Event => _ = null,
+    onRateChangeCapture: /* ev */ Event => _ = null,
     onReadyStateChange: /* ev */ ProgressEvent[EventTarget] => _ = null,
     onReadyStateChangeCapture: /* ev */ ProgressEvent[EventTarget] => _ = null,
-    onReset: /* ev */ Event_ => _ = null,
-    onResetCapture: /* ev */ Event_ => _ = null,
+    onReset: /* ev */ Event => _ = null,
+    onResetCapture: /* ev */ Event => _ = null,
     onResize: /* ev */ UIEvent => _ = null,
     onResizeCapture: /* ev */ UIEvent => _ = null,
     onScroll: /* ev */ UIEvent => _ = null,
     onScrollCapture: /* ev */ UIEvent => _ = null,
-    onSeeked: /* ev */ Event_ => _ = null,
-    onSeekedCapture: /* ev */ Event_ => _ = null,
-    onSeeking: /* ev */ Event_ => _ = null,
-    onSeekingCapture: /* ev */ Event_ => _ = null,
+    onSeeked: /* ev */ Event => _ = null,
+    onSeekedCapture: /* ev */ Event => _ = null,
+    onSeeking: /* ev */ Event => _ = null,
+    onSeekingCapture: /* ev */ Event => _ = null,
     onSelect: /* ev */ UIEvent => _ = null,
     onSelectCapture: /* ev */ UIEvent => _ = null,
-    onSelectionChange: /* ev */ Event_ => _ = null,
-    onSelectionChangeCapture: /* ev */ Event_ => _ = null,
-    onStalled: /* ev */ Event_ => _ = null,
-    onStalledCapture: /* ev */ Event_ => _ = null,
+    onSelectionChange: /* ev */ Event => _ = null,
+    onSelectionChangeCapture: /* ev */ Event => _ = null,
+    onStalled: /* ev */ Event => _ = null,
+    onStalledCapture: /* ev */ Event => _ = null,
     onStorage: /* ev */ StorageEvent => _ = null,
     onStorageCapture: /* ev */ StorageEvent => _ = null,
-    onSubmit: /* ev */ Event_ => _ = null,
-    onSubmitCapture: /* ev */ Event_ => _ = null,
-    onSuspend: /* ev */ Event_ => _ = null,
-    onSuspendCapture: /* ev */ Event_ => _ = null,
-    onTimeUpdate: /* ev */ Event_ => _ = null,
-    onTimeUpdateCapture: /* ev */ Event_ => _ = null,
+    onSubmit: /* ev */ Event => _ = null,
+    onSubmitCapture: /* ev */ Event => _ = null,
+    onSuspend: /* ev */ Event => _ = null,
+    onSuspendCapture: /* ev */ Event => _ = null,
+    onTimeUpdate: /* ev */ Event => _ = null,
+    onTimeUpdateCapture: /* ev */ Event => _ = null,
     onTouchCancel: js.Any = null,
     onTouchCancelCapture: js.Any = null,
     onTouchEnd: js.Any = null,
@@ -430,12 +430,12 @@ object EventListenerProps {
     onTouchMoveCapture: js.Any = null,
     onTouchStart: js.Any = null,
     onTouchStartCapture: js.Any = null,
-    onUnload: /* ev */ Event_ => _ = null,
-    onUnloadCapture: /* ev */ Event_ => _ = null,
-    onVolumeChange: /* ev */ Event_ => _ = null,
-    onVolumeChangeCapture: /* ev */ Event_ => _ = null,
-    onWaiting: /* ev */ Event_ => _ = null,
-    onWaitingCapture: /* ev */ Event_ => _ = null,
+    onUnload: /* ev */ Event => _ = null,
+    onUnloadCapture: /* ev */ Event => _ = null,
+    onVolumeChange: /* ev */ Event => _ = null,
+    onVolumeChangeCapture: /* ev */ Event => _ = null,
+    onWaiting: /* ev */ Event => _ = null,
+    onWaitingCapture: /* ev */ Event => _ = null,
     onWheel: /* ev */ WheelEvent => _ = null,
     onWheelCapture: /* ev */ WheelEvent => _ = null
   ): EventListenerProps = {

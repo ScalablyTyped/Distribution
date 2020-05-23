@@ -21,7 +21,7 @@ trait PlusNativeUIPickTimeOption extends js.Object {
   /**
     * 日期选择对话框弹出指示区域
     * JSON类型对象，格式如{top:10;left:10;width:200;height:200;}，所有值为像素值，其值相对于容器webview的位置。
-    * 	如未设置此值，默认在屏幕居中显示。仅在iPad上有效，其它设备忽略此值。
+    *     如未设置此值，默认在屏幕居中显示。仅在iPad上有效，其它设备忽略此值。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
@@ -51,7 +51,7 @@ object PlusNativeUIPickTimeOption {
     title: String = null
   ): PlusNativeUIPickTimeOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(is24Hour)) __obj.updateDynamic("is24Hour")(is24Hour.asInstanceOf[js.Any])
+    if (!js.isUndefined(is24Hour)) __obj.updateDynamic("is24Hour")(is24Hour.get.asInstanceOf[js.Any])
     if (popover != null) __obj.updateDynamic("popover")(popover.asInstanceOf[js.Any])
     if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

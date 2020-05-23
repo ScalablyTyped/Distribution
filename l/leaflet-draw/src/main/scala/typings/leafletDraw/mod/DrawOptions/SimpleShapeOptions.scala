@@ -17,7 +17,7 @@ object SimpleShapeOptions {
   @scala.inline
   def apply(repeatMode: js.UndefOr[Boolean] = js.undefined): SimpleShapeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(repeatMode)) __obj.updateDynamic("repeatMode")(repeatMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeatMode)) __obj.updateDynamic("repeatMode")(repeatMode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleShapeOptions]
   }
 }

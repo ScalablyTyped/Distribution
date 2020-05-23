@@ -64,11 +64,11 @@ object SeriesMappointDataOptions {
     drilldown: String = null,
     events: PointEventsOptionsObject = null,
     id: String = null,
-    lat: Int | Double = null,
-    lon: Int | Double = null,
+    lat: js.UndefOr[Double] = js.undefined,
+    lon: js.UndefOr[Double] = js.undefined,
     name: String = null,
-    x: Int | Double = null,
-    y: Int | Double = null
+    x: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Null | Double] = js.undefined
   ): SeriesMappointDataOptions = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
@@ -76,11 +76,11 @@ object SeriesMappointDataOptions {
     if (drilldown != null) __obj.updateDynamic("drilldown")(drilldown.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lat != null) __obj.updateDynamic("lat")(lat.asInstanceOf[js.Any])
-    if (lon != null) __obj.updateDynamic("lon")(lon.asInstanceOf[js.Any])
+    if (!js.isUndefined(lat)) __obj.updateDynamic("lat")(lat.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lon)) __obj.updateDynamic("lon")(lon.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesMappointDataOptions]
   }
 }

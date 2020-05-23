@@ -9,9 +9,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a general-purpose I/O (GPIO) pin. */
-@JSGlobal("Windows.Devices.Gpio.GpioPin")
 @js.native
-abstract class GpioPin () extends js.Object {
+trait GpioPin extends js.Object {
   /** Gets or sets the debounce timeout for the general-purpose I/O (GPIO) pin, which is an interval during which changes to the value of the pin are filtered out and do not generate ValueChanged events. */
   var debounceTimeout: Double = js.native
   /** Occurs when the value of the general-purpose I/O (GPIO) pin changes, either because of an external stimulus when the pin is configured as an input, or when a value is written to the pin when the pin in configured as an output. */

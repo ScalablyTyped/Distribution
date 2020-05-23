@@ -31,12 +31,12 @@ object DomainEbsOptions {
   def apply(
     ebsEnabled: Boolean,
     volumeType: String,
-    iops: Int | Double = null,
-    volumeSize: Int | Double = null
+    iops: js.UndefOr[Double] = js.undefined,
+    volumeSize: js.UndefOr[Double] = js.undefined
   ): DomainEbsOptions = {
     val __obj = js.Dynamic.literal(ebsEnabled = ebsEnabled.asInstanceOf[js.Any], volumeType = volumeType.asInstanceOf[js.Any])
-    if (iops != null) __obj.updateDynamic("iops")(iops.asInstanceOf[js.Any])
-    if (volumeSize != null) __obj.updateDynamic("volumeSize")(volumeSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(iops)) __obj.updateDynamic("iops")(iops.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(volumeSize)) __obj.updateDynamic("volumeSize")(volumeSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainEbsOptions]
   }
 }

@@ -7,16 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for events which concern manipulations on panels.
   */
-@JSGlobal("ASPxClientDockManagerEventArgs")
-@js.native
-class ASPxClientDockManagerEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * For internal use only.
-    */
-  def this(panel: ASPxClientDockPanel) = this()
+trait ASPxClientDockManagerEventArgs extends ASPxClientEventArgs {
   /**
     * Gets the panel currently being processed.
     */
-  var panel: ASPxClientDockPanel = js.native
+  var panel: ASPxClientDockPanel
+}
+
+object ASPxClientDockManagerEventArgs {
+  @scala.inline
+  def apply(panel: ASPxClientDockPanel): ASPxClientDockManagerEventArgs = {
+    val __obj = js.Dynamic.literal(panel = panel.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientDockManagerEventArgs]
+  }
 }
 

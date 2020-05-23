@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -74,8 +73,4 @@ trait meshUtils extends js.Object {
   def ungeoreference(vertexAttributes: VertexAttributes, location: Point): VertexAttributes = js.native
   def ungeoreference(vertexAttributes: VertexAttributes, location: Point, options: meshUtilsUngeoreferenceOptions): VertexAttributes = js.native
 }
-
-@JSGlobal("__esri.meshUtils")
-@js.native
-object meshUtils extends TopLevel[meshUtils]
 

@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.awsSdkTypes.protocolMod.OperationModel because var conflicts: name. Inlined errors, http, input, metadata, output */ trait TreeModelOperation
   extends Documented
      with Named {

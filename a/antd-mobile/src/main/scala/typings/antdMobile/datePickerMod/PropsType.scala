@@ -1,6 +1,6 @@
 package typings.antdMobile.datePickerMod
 
-import typings.antdMobile.AnonDatePickerLocale
+import typings.antdMobile.anon.DatePickerLocale
 import typings.antdMobile.antdMobileStrings.date
 import typings.antdMobile.antdMobileStrings.datetime
 import typings.antdMobile.antdMobileStrings.month
@@ -31,10 +31,10 @@ object PropsType {
     dismissText: ReactNode = null,
     extra: String = null,
     format: String | (js.Function1[/* value */ Date, String]) = null,
-    locale: AnonDatePickerLocale = null,
+    locale: DatePickerLocale = null,
     maxDate: Date = null,
     minDate: Date = null,
-    minuteStep: Int | Double = null,
+    minuteStep: js.UndefOr[Double] = js.undefined,
     mode: datetime | date | year | month | time = null,
     okText: ReactNode = null,
     onChange: /* value */ Date => Unit = null,
@@ -52,14 +52,14 @@ object PropsType {
   ): PropsType = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (dismissText != null) __obj.updateDynamic("dismissText")(dismissText.asInstanceOf[js.Any])
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (minuteStep != null) __obj.updateDynamic("minuteStep")(minuteStep.asInstanceOf[js.Any])
+    if (!js.isUndefined(minuteStep)) __obj.updateDynamic("minuteStep")(minuteStep.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (okText != null) __obj.updateDynamic("okText")(okText.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
@@ -71,9 +71,9 @@ object PropsType {
     if (popupPrefixCls != null) __obj.updateDynamic("popupPrefixCls")(popupPrefixCls.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(use12Hours)) __obj.updateDynamic("use12Hours")(use12Hours.asInstanceOf[js.Any])
+    if (!js.isUndefined(use12Hours)) __obj.updateDynamic("use12Hours")(use12Hours.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropsType]
   }
 }

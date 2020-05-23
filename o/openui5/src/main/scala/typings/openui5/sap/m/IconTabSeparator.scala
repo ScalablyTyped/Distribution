@@ -5,19 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.m.IconTabSeparator")
 @js.native
-class IconTabSeparator protected () extends Element {
-  /**
-    * Constructor for a new IconTabSeparator.Accepts an object literal <code>mSettings</code> that defines
-    * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
-    * sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the settings
-    * object.
-    * @param sId ID for the new control, generated automatically if no ID is given
-    * @param mSettings Initial settings for the new control
-    */
-  def this(sId: String) = this()
-  def this(sId: String, mSettings: js.Any) = this()
+trait IconTabSeparator extends Element {
   /**
     * Gets current value of property <code>icon</code>.The icon to display for this separator. If no icon
     * is given, a separator line is used instead.Default value is <code></code>.

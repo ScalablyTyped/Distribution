@@ -68,7 +68,7 @@ object PlayerSession {
     PlayerData: PlayerData = null,
     PlayerId: NonZeroAndMaxString = null,
     PlayerSessionId: PlayerSessionId = null,
-    Port: Int | scala.Double = null,
+    Port: js.UndefOr[PortNumber] = js.undefined,
     Status: PlayerSessionStatus = null,
     TerminationTime: Timestamp = null
   ): PlayerSession = {
@@ -82,7 +82,7 @@ object PlayerSession {
     if (PlayerData != null) __obj.updateDynamic("PlayerData")(PlayerData.asInstanceOf[js.Any])
     if (PlayerId != null) __obj.updateDynamic("PlayerId")(PlayerId.asInstanceOf[js.Any])
     if (PlayerSessionId != null) __obj.updateDynamic("PlayerSessionId")(PlayerSessionId.asInstanceOf[js.Any])
-    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
+    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (TerminationTime != null) __obj.updateDynamic("TerminationTime")(TerminationTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayerSession]

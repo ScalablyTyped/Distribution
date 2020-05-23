@@ -137,11 +137,11 @@ object StringifyOptions {
     val __obj = js.Dynamic.literal()
     if (arrayFormat != null) __obj.updateDynamic("arrayFormat")(arrayFormat.asInstanceOf[js.Any])
     if (arrayFormatSeparator != null) __obj.updateDynamic("arrayFormatSeparator")(arrayFormatSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(encode)) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipEmptyString)) __obj.updateDynamic("skipEmptyString")(skipEmptyString.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipNull)) __obj.updateDynamic("skipNull")(skipNull.asInstanceOf[js.Any])
+    if (!js.isUndefined(encode)) __obj.updateDynamic("encode")(encode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipEmptyString)) __obj.updateDynamic("skipEmptyString")(skipEmptyString.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipNull)) __obj.updateDynamic("skipNull")(skipNull.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringifyOptions]
   }
 }

@@ -37,7 +37,7 @@ object FaultRootCauseService {
   def apply(
     AccountId: String = null,
     EntityPath: FaultRootCauseEntityPath = null,
-    Inferred: js.UndefOr[scala.Boolean] = js.undefined,
+    Inferred: js.UndefOr[NullableBoolean] = js.undefined,
     Name: String = null,
     Names: ServiceNames = null,
     Type: String = null
@@ -45,7 +45,7 @@ object FaultRootCauseService {
     val __obj = js.Dynamic.literal()
     if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId.asInstanceOf[js.Any])
     if (EntityPath != null) __obj.updateDynamic("EntityPath")(EntityPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(Inferred)) __obj.updateDynamic("Inferred")(Inferred.asInstanceOf[js.Any])
+    if (!js.isUndefined(Inferred)) __obj.updateDynamic("Inferred")(Inferred.get.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (Names != null) __obj.updateDynamic("Names")(Names.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])

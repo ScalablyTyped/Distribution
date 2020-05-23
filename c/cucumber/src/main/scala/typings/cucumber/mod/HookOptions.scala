@@ -11,10 +11,10 @@ trait HookOptions extends js.Object {
 
 object HookOptions {
   @scala.inline
-  def apply(tags: js.Any = null, timeout: Int | Double = null): HookOptions = {
+  def apply(tags: js.Any = null, timeout: js.UndefOr[Double] = js.undefined): HookOptions = {
     val __obj = js.Dynamic.literal()
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HookOptions]
   }
 }

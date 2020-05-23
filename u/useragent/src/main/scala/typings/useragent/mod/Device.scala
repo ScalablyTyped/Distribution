@@ -1,6 +1,6 @@
 package typings.useragent.mod
 
-import typings.useragent.AnonFamily
+import typings.useragent.anon.Family
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ class Device () extends js.Object {
   /**
     * Outputs a JSON string of the Device, values are defaulted to undefined so they are not outputed in the stringify.
     */
-  def toJSON(): AnonFamily = js.native
+  def toJSON(): Family = js.native
   /**
     * Generates the version of the Device.
     */

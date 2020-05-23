@@ -1,10 +1,10 @@
 package typings.oracleOraclejet.ojthematicmapMod
 
-import typings.oracleOraclejet.Anon25
-import typings.oracleOraclejet.AnonAreaSvgStyle
-import typings.oracleOraclejet.AnonGeo
-import typings.oracleOraclejet.AnonInsertSVGElement
-import typings.oracleOraclejet.AnonLabelAndValue
+import typings.oracleOraclejet.anon.AreaSvgStyle
+import typings.oracleOraclejet.anon.Geo
+import typings.oracleOraclejet.anon.InsertSVGElement
+import typings.oracleOraclejet.anon.LabelAndValue
+import typings.oracleOraclejet.anon.`25`
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponent
@@ -98,18 +98,18 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
   var animationOnDisplay: auto | none = js.native
   var areaData: (DataProvider[K1, D1]) | Null = js.native
   var as: String = js.native
-  var focusRenderer: (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null = js.native
+  var focusRenderer: (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null = js.native
   var hiddenCategories: js.Array[String] = js.native
   var highlightMatch: any | all = js.native
   var highlightedCategories: js.Array[String] = js.native
   var hoverBehavior: dim | none = js.native
-  var hoverRenderer: (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null = js.native
+  var hoverRenderer: (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null = js.native
   var initialZooming: auto | none = js.native
   var isolatedItem: K1 = js.native
   var labelDisplay: on | off | auto = js.native
   var labelType: long | short = js.native
   var linkData: (DataProvider[K2, D2]) | Null = js.native
-  var mapProvider: AnonGeo = js.native
+  var mapProvider: Geo = js.native
   var markerData: (DataProvider[K3, D3]) | Null = js.native
   var markerZoomBehavior: zoom | fixed = js.native
   var maxZoom: Double = js.native
@@ -119,7 +119,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
   var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var onFocusRendererChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
-      (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null
+      (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
     ], 
     _
   ]) | Null = js.native
@@ -129,7 +129,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
   var onHoverBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[dim | none], _]) | Null = js.native
   var onHoverRendererChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
-      (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null
+      (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
     ], 
     _
   ]) | Null = js.native
@@ -138,14 +138,14 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
   var onLabelDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off | auto], _]) | Null = js.native
   var onLabelTypeChanged: (js.Function1[/* event */ JetElementCustomEvent[long | short], _]) | Null = js.native
   var onLinkDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K2, D2]) | Null], _]) | Null = js.native
-  var onMapProviderChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonGeo], _]) | Null = js.native
+  var onMapProviderChanged: (js.Function1[/* event */ JetElementCustomEvent[Geo], _]) | Null = js.native
   var onMarkerDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K3, D3]) | Null], _]) | Null = js.native
   var onMarkerZoomBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[zoom | fixed], _]) | Null = js.native
   var onMaxZoomChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
   var onPanningChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
   var onRendererChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
-      (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null
+      (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
     ], 
     _
   ]) | Null = js.native
@@ -153,26 +153,26 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
   var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[single | multiple | none], _]) | Null = js.native
   var onSelectionRendererChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
-      (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null
+      (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
     ], 
     _
   ]) | Null = js.native
-  var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonAreaSvgStyle], _]) | Null = js.native
-  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[Anon25[K1, K2, K3, D1, D2, D3]], _]) | Null = js.native
+  var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[AreaSvgStyle], _]) | Null = js.native
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`25`[K1, K2, K3, D1, D2, D3]], _]) | Null = js.native
   var onTooltipDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | labelAndShortDesc | none | shortDesc], _]) | Null = js.native
   var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], _]) | Null = js.native
   var onZoomingChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
   var panning: auto | none = js.native
-  var renderer: (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null = js.native
+  var renderer: (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null = js.native
   var selection: js.Array[K1 | K2 | K3] = js.native
   var selectionMode: single | multiple | none = js.native
-  var selectionRenderer: (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null = js.native
-  var styleDefaults: AnonAreaSvgStyle = js.native
-  var tooltip: Anon25[K1, K2, K3, D1, D2, D3] = js.native
+  var selectionRenderer: (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null = js.native
+  var styleDefaults: AreaSvgStyle = js.native
+  var tooltip: `25`[K1, K2, K3, D1, D2, D3] = js.native
   var tooltipDisplay: auto | labelAndShortDesc | none | shortDesc = js.native
   var touchResponse: touchStart | auto = js.native
   @JSName("translations")
-  var translations_ojThematicMap_ : AnonLabelAndValue = js.native
+  var translations_ojThematicMap_ : LabelAndValue = js.native
   var zooming: auto | none = js.native
   def addEventListener(
     `type`: animationOnDisplayChanged,
@@ -337,7 +337,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null
+        (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
       ], 
       _
     ]
@@ -348,7 +348,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null
+        (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
       ], 
       _
     ],
@@ -382,7 +382,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null
+        (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
       ], 
       _
     ]
@@ -393,7 +393,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null
+        (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
       ], 
       _
     ],
@@ -432,12 +432,12 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
   @JSName("addEventListener")
   def addEventListener_mapProviderChanged(
     `type`: mapProviderChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonGeo], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Geo], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mapProviderChanged(
     `type`: mapProviderChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonGeo], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Geo], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -476,7 +476,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null
+        (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
       ], 
       _
     ]
@@ -487,7 +487,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null
+        (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
       ], 
       _
     ],
@@ -510,7 +510,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null
+        (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
       ], 
       _
     ]
@@ -521,7 +521,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null
+        (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
       ], 
       _
     ],
@@ -530,12 +530,12 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
   @JSName("addEventListener")
   def addEventListener_styleDefaultsChanged(
     `type`: styleDefaultsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonAreaSvgStyle], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AreaSvgStyle], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_styleDefaultsChanged(
     `type`: styleDefaultsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonAreaSvgStyle], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AreaSvgStyle], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -543,7 +543,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
     `type`: tooltipChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[Anon25[K1, K2, K3, D1, D2, D3]], 
+      /* ev */ JetElementCustomEvent[`25`[K1, K2, K3, D1, D2, D3]], 
       _
     ]
   ): Unit = js.native
@@ -552,7 +552,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
     `type`: tooltipChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[Anon25[K1, K2, K3, D1, D2, D3]], 
+      /* ev */ JetElementCustomEvent[`25`[K1, K2, K3, D1, D2, D3]], 
       _
     ],
     useCapture: Boolean
@@ -570,7 +570,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
   @JSName("getProperty")
   def getProperty_as(property: as): String = js.native
   @JSName("getProperty")
-  def getProperty_focusRenderer(property: focusRenderer): (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null = js.native
+  def getProperty_focusRenderer(property: focusRenderer): (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null = js.native
   @JSName("getProperty")
   def getProperty_hiddenCategories(property: hiddenCategories): js.Array[String] = js.native
   @JSName("getProperty")
@@ -580,7 +580,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
   @JSName("getProperty")
   def getProperty_hoverBehavior(property: hoverBehavior): dim | none = js.native
   @JSName("getProperty")
-  def getProperty_hoverRenderer(property: hoverRenderer): (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null = js.native
+  def getProperty_hoverRenderer(property: hoverRenderer): (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null = js.native
   @JSName("getProperty")
   def getProperty_initialZooming(property: initialZooming): auto | none = js.native
   @JSName("getProperty")
@@ -592,7 +592,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
   @JSName("getProperty")
   def getProperty_linkData(property: linkData): (DataProvider[K2, D2]) | Null = js.native
   @JSName("getProperty")
-  def getProperty_mapProvider(property: mapProvider): AnonGeo = js.native
+  def getProperty_mapProvider(property: mapProvider): Geo = js.native
   @JSName("getProperty")
   def getProperty_markerData(property: markerData): (DataProvider[K3, D3]) | Null = js.native
   @JSName("getProperty")
@@ -602,17 +602,17 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
   @JSName("getProperty")
   def getProperty_panning(property: panning): auto | none = js.native
   @JSName("getProperty")
-  def getProperty_renderer(property: renderer): (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null = js.native
+  def getProperty_renderer(property: renderer): (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null = js.native
   @JSName("getProperty")
   def getProperty_selection(property: selection): js.Array[K1 | K2 | K3] = js.native
   @JSName("getProperty")
   def getProperty_selectionMode(property: selectionMode): single | multiple | none = js.native
   @JSName("getProperty")
-  def getProperty_selectionRenderer(property: selectionRenderer): (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null = js.native
+  def getProperty_selectionRenderer(property: selectionRenderer): (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null = js.native
   @JSName("getProperty")
-  def getProperty_styleDefaults(property: styleDefaults): AnonAreaSvgStyle = js.native
+  def getProperty_styleDefaults(property: styleDefaults): AreaSvgStyle = js.native
   @JSName("getProperty")
-  def getProperty_tooltip(property: tooltip): Anon25[K1, K2, K3, D1, D2, D3] = js.native
+  def getProperty_tooltip(property: tooltip): `25`[K1, K2, K3, D1, D2, D3] = js.native
   @JSName("getProperty")
   def getProperty_tooltipDisplay(property: tooltipDisplay): auto | labelAndShortDesc | none | shortDesc = js.native
   @JSName("getProperty")
@@ -661,7 +661,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
   @JSName("setProperty")
   def setProperty_focusRenderer(
     property: focusRenderer,
-    value: js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]
+    value: js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]
   ): Unit = js.native
   @JSName("setProperty")
   def setProperty_hiddenCategories(property: hiddenCategories, value: js.Array[String]): Unit = js.native
@@ -672,7 +672,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
   @JSName("setProperty")
   def setProperty_hoverRenderer(
     property: hoverRenderer,
-    value: js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]
+    value: js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]
   ): Unit = js.native
   @JSName("setProperty")
   def setProperty_isolatedItem(property: isolatedItem, value: K1): Unit = js.native
@@ -681,7 +681,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
   @JSName("setProperty")
   def setProperty_linkData(property: linkData, value: DataProvider[K2, D2]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_mapProvider(property: mapProvider, value: AnonGeo): Unit = js.native
+  def setProperty_mapProvider(property: mapProvider, value: Geo): Unit = js.native
   @JSName("setProperty")
   def setProperty_markerData(property: markerData): Unit = js.native
   @JSName("setProperty")
@@ -693,7 +693,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
   @JSName("setProperty")
   def setProperty_renderer(
     property: renderer,
-    value: js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]
+    value: js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]
   ): Unit = js.native
   @JSName("setProperty")
   def setProperty_selection(property: selection, value: js.Array[K1 | K2 | K3]): Unit = js.native
@@ -702,13 +702,13 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
   @JSName("setProperty")
   def setProperty_selectionRenderer(
     property: selectionRenderer,
-    value: js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]
+    value: js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]
   ): Unit = js.native
   @JSName("setProperty")
-  def setProperty_styleDefaults(property: styleDefaults, value: AnonAreaSvgStyle): Unit = js.native
+  def setProperty_styleDefaults(property: styleDefaults, value: AreaSvgStyle): Unit = js.native
   @JSName("setProperty")
-  def setProperty_tooltip(property: tooltip, value: Anon25[K1, K2, K3, D1, D2, D3]): Unit = js.native
+  def setProperty_tooltip(property: tooltip, value: `25`[K1, K2, K3, D1, D2, D3]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonLabelAndValue): Unit = js.native
+  def setProperty_translations(property: translations, value: LabelAndValue): Unit = js.native
 }
 

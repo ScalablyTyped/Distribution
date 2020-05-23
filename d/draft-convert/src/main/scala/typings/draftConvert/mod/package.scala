@@ -9,8 +9,8 @@ package object mod {
   type EntityKey = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.react.mod.ReactNode
-    - typings.draftConvert.AnonEmpty
-    - typings.draftConvert.AnonElement
+    - typings.draftConvert.anon.Empty
+    - typings.draftConvert.anon.Element
   */
   type Tag = typings.draftConvert.mod._Tag | typings.react.mod.ReactNode
   type htmlConverter = js.Function1[/* html */ java.lang.String, typings.draftJs.mod.ContentState]

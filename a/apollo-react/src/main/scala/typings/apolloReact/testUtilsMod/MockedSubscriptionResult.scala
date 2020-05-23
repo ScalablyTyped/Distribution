@@ -14,9 +14,9 @@ trait MockedSubscriptionResult extends js.Object {
 
 object MockedSubscriptionResult {
   @scala.inline
-  def apply(delay: Int | Double = null, error: Error = null, result: GraphQLResult = null): MockedSubscriptionResult = {
+  def apply(delay: js.UndefOr[Double] = js.undefined, error: Error = null, result: GraphQLResult = null): MockedSubscriptionResult = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[MockedSubscriptionResult]

@@ -1,6 +1,14 @@
 package typings.mapnik
 
 import org.scalablytyped.runtime.Instantiable2
+import typings.mapnik.anon.Areathreshold
+import typings.mapnik.anon.Callback
+import typings.mapnik.anon.Compression
+import typings.mapnik.anon.Filltype
+import typings.mapnik.anon.Imageformat
+import typings.mapnik.anon.Imagescaling
+import typings.mapnik.anon.Layer
+import typings.mapnik.anon.Upgrade
 import typings.node.Buffer
 import typings.std.Error
 import scala.scalajs.js
@@ -65,46 +73,46 @@ object mod extends js.Object {
   class VectorTile protected () extends js.Object {
     def this(z: Double, x: Double, y: Double) = this()
     def addData(buffer: Buffer): Unit = js.native
-    def addData(buffer: Buffer, options: AnonUpgrade): Unit = js.native
-    def addData(buffer: Buffer, options: AnonUpgrade, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def addData(buffer: Buffer, options: Upgrade): Unit = js.native
+    def addData(buffer: Buffer, options: Upgrade, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
     def addDataSync(buffer: Buffer): Unit = js.native
-    def addDataSync(buffer: Buffer, options: AnonUpgrade): Unit = js.native
+    def addDataSync(buffer: Buffer, options: Upgrade): Unit = js.native
     def addGeoJSON(geojson: String, name: String): Unit = js.native
-    def addGeoJSON(geojson: String, name: String, options: AnonAreathreshold): Unit = js.native
+    def addGeoJSON(geojson: String, name: String, options: Areathreshold): Unit = js.native
     def addImage(image: Image, name: String): Unit = js.native
-    def addImage(image: Image, name: String, options: AnonImageformat): Unit = js.native
+    def addImage(image: Image, name: String, options: Imageformat): Unit = js.native
     def addImageBuffer(buffer: Buffer, name: String): Unit = js.native
     def addImageBuffer(buffer: Buffer, name: String, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
     def addImageBufferSync(buffer: Buffer, name: String): Unit = js.native
     def addImageSync(image: Image, name: String): Unit = js.native
-    def addImageSync(image: Image, name: String, options: AnonImagescaling): Unit = js.native
+    def addImageSync(image: Image, name: String, options: Imagescaling): Unit = js.native
     def bufferedExtent(): js.Tuple4[Double, Double, Double, Double] = js.native
     def clear(): Unit = js.native
     def clear(callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
     def clearSync(): Unit = js.native
     def composite(vectorTiles: js.Array[VectorTile]): Unit = js.native
-    def composite(vectorTiles: js.Array[VectorTile], options: AnonCallback): Unit = js.native
+    def composite(vectorTiles: js.Array[VectorTile], options: Callback): Unit = js.native
     def compositeSync(vectorTiles: js.Array[VectorTile]): Unit = js.native
-    def compositeSync(vectorTiles: js.Array[VectorTile], options: AnonFilltype): Unit = js.native
+    def compositeSync(vectorTiles: js.Array[VectorTile], options: Filltype): Unit = js.native
     def empty(): Boolean = js.native
     def emptyLayers(): js.Array[String] = js.native
     def extent(): js.Tuple4[Double, Double, Double, Double] = js.native
     def getData(): Unit = js.native
-    def getData(options: AnonCompression): Unit = js.native
-    def getData(options: AnonCompression, callback: js.Function0[Unit]): Unit = js.native
+    def getData(options: Compression): Unit = js.native
+    def getData(options: Compression, callback: js.Function0[Unit]): Unit = js.native
     def getDataSync(): Unit = js.native
-    def getDataSync(options: AnonCompression): Unit = js.native
+    def getDataSync(options: Compression): Unit = js.native
     def info(buffer: Buffer): Unit = js.native
     def layer(layer_name: String): VectorTile = js.native
     def names(): js.Array[String] = js.native
     def painted(): Boolean = js.native
     def paintedLayers(): js.Array[String] = js.native
     def query(longitude: Double, latitude: Double): Unit = js.native
-    def query(longitude: Double, latitude: Double, options: AnonLayer): Unit = js.native
+    def query(longitude: Double, latitude: Double, options: Layer): Unit = js.native
     def query(
       longitude: Double,
       latitude: Double,
-      options: AnonLayer,
+      options: Layer,
       callback: js.Function2[/* err */ Error, /* features */ js.Array[Feature], Unit]
     ): Unit = js.native
   }

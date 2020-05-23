@@ -1,7 +1,7 @@
 package typings.antd.menuMod
 
-import typings.antd.TypeofItemInstantiable
-import typings.antd.TypeofSubMenu
+import typings.antd.anon.TypeofItem
+import typings.antd.anon.TypeofSubMenu
 import typings.rcMenu.dividerMod.DividerProps
 import typings.react.mod.FC
 import scala.scalajs.js
@@ -17,7 +17,7 @@ class default () extends Menu
 @js.native
 object default extends js.Object {
   var Divider: FC[DividerProps] = js.native
-  var Item: TypeofItemInstantiable = js.native
+  var Item: TypeofItem = js.native
   var ItemGroup: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ItemGroup */ js.Any = js.native
   var SubMenu: TypeofSubMenu = js.native
 }

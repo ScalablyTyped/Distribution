@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Organization extends js.Object {
   /**
-    * Autonomous system number of the internet provider of the remote IP address.
+    * The Autonomous System Number (ASN) of the internet provider of the remote IP address.
     */
   var Asn: js.UndefOr[String] = js.native
   /**
-    * Organization that registered this ASN.
+    * The organization that registered this ASN.
     */
   var AsnOrg: js.UndefOr[String] = js.native
   /**
-    * ISP information for the internet provider.
+    * The ISP information for the internet provider.
     */
   var Isp: js.UndefOr[String] = js.native
   /**
-    * Name of the internet provider.
+    * The name of the internet provider.
     */
   var Org: js.UndefOr[String] = js.native
 }

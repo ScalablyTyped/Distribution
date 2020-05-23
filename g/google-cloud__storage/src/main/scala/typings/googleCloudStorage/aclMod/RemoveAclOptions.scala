@@ -12,9 +12,9 @@ trait RemoveAclOptions extends js.Object {
 
 object RemoveAclOptions {
   @scala.inline
-  def apply(entity: String, generation: Int | Double = null, userProject: String = null): RemoveAclOptions = {
+  def apply(entity: String, generation: js.UndefOr[Double] = js.undefined, userProject: String = null): RemoveAclOptions = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any])
-    if (generation != null) __obj.updateDynamic("generation")(generation.asInstanceOf[js.Any])
+    if (!js.isUndefined(generation)) __obj.updateDynamic("generation")(generation.get.asInstanceOf[js.Any])
     if (userProject != null) __obj.updateDynamic("userProject")(userProject.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveAclOptions]
   }

@@ -1,6 +1,6 @@
 package typings.jestDevServer.mod
 
-import typings.jestDevServer.PartialWaitOnOptions
+import typings.jestDevServer.anon.PartialWaitOnOptions
 import typings.jestDevServer.jestDevServerStrings.ask
 import typings.jestDevServer.jestDevServerStrings.error
 import typings.jestDevServer.jestDevServerStrings.http
@@ -123,17 +123,17 @@ object JestDevServerOptions {
     command: String,
     debug: js.UndefOr[Boolean] = js.undefined,
     host: String = null,
-    launchTimeout: Int | Double = null,
-    port: Int | Double = null,
+    launchTimeout: js.UndefOr[Double] = js.undefined,
+    port: js.UndefOr[Double] = js.undefined,
     protocol: https | http | tcp | socket = null,
     usedPortAction: ask | error | ignore | kill = null,
     waitOnScheme: PartialWaitOnOptions = null
   ): JestDevServerOptions = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (launchTimeout != null) __obj.updateDynamic("launchTimeout")(launchTimeout.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(launchTimeout)) __obj.updateDynamic("launchTimeout")(launchTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (usedPortAction != null) __obj.updateDynamic("usedPortAction")(usedPortAction.asInstanceOf[js.Any])
     if (waitOnScheme != null) __obj.updateDynamic("waitOnScheme")(waitOnScheme.asInstanceOf[js.Any])

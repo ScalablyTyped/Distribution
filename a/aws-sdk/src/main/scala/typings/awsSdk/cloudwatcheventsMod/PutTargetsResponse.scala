@@ -18,10 +18,13 @@ trait PutTargetsResponse extends js.Object {
 
 object PutTargetsResponse {
   @scala.inline
-  def apply(FailedEntries: PutTargetsResultEntryList = null, FailedEntryCount: Int | Double = null): PutTargetsResponse = {
+  def apply(
+    FailedEntries: PutTargetsResultEntryList = null,
+    FailedEntryCount: js.UndefOr[Integer] = js.undefined
+  ): PutTargetsResponse = {
     val __obj = js.Dynamic.literal()
     if (FailedEntries != null) __obj.updateDynamic("FailedEntries")(FailedEntries.asInstanceOf[js.Any])
-    if (FailedEntryCount != null) __obj.updateDynamic("FailedEntryCount")(FailedEntryCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(FailedEntryCount)) __obj.updateDynamic("FailedEntryCount")(FailedEntryCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutTargetsResponse]
   }
 }

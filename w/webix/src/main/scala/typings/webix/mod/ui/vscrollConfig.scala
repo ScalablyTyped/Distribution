@@ -28,28 +28,28 @@ object vscrollConfig {
     id: String | Double = null,
     on: EventHash = null,
     scroll: String = null,
-    scrollHeight: Int | Double = null,
-    scrollPos: Int | Double = null,
-    scrollSize: Int | Double = null,
-    scrollStep: Int | Double = null,
+    scrollHeight: js.UndefOr[Double] = js.undefined,
+    scrollPos: js.UndefOr[Double] = js.undefined,
+    scrollSize: js.UndefOr[Double] = js.undefined,
+    scrollStep: js.UndefOr[Double] = js.undefined,
     scrollVisible: js.UndefOr[Boolean] = js.undefined,
-    scrollWidth: Int | Double = null,
+    scrollWidth: js.UndefOr[Double] = js.undefined,
     view: String = null,
-    zoom: Int | Double = null
+    zoom: js.UndefOr[Double] = js.undefined
   ): vscrollConfig = {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
     if (scroll != null) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
-    if (scrollHeight != null) __obj.updateDynamic("scrollHeight")(scrollHeight.asInstanceOf[js.Any])
-    if (scrollPos != null) __obj.updateDynamic("scrollPos")(scrollPos.asInstanceOf[js.Any])
-    if (scrollSize != null) __obj.updateDynamic("scrollSize")(scrollSize.asInstanceOf[js.Any])
-    if (scrollStep != null) __obj.updateDynamic("scrollStep")(scrollStep.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollVisible)) __obj.updateDynamic("scrollVisible")(scrollVisible.asInstanceOf[js.Any])
-    if (scrollWidth != null) __obj.updateDynamic("scrollWidth")(scrollWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollHeight)) __obj.updateDynamic("scrollHeight")(scrollHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollPos)) __obj.updateDynamic("scrollPos")(scrollPos.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollSize)) __obj.updateDynamic("scrollSize")(scrollSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollStep)) __obj.updateDynamic("scrollStep")(scrollStep.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollVisible)) __obj.updateDynamic("scrollVisible")(scrollVisible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollWidth)) __obj.updateDynamic("scrollWidth")(scrollWidth.get.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[vscrollConfig]
   }
 }

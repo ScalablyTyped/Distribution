@@ -1,6 +1,6 @@
 package typings.evernote.mod.NoteStore
 
-import typings.evernote.AnonIncludeAccountLimits
+import typings.evernote.anon.IncludeAccountLimits
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("evernote", "NoteStore.NoteResultSpec")
 @js.native
 class NoteResultSpec () extends js.Object {
-  def this(args: AnonIncludeAccountLimits) = this()
+  def this(args: IncludeAccountLimits) = this()
   var includeAccountLimits: js.UndefOr[Boolean] = js.native
   var includeContent: js.UndefOr[Boolean] = js.native
   var includeNoteAppDataValues: js.UndefOr[Boolean] = js.native

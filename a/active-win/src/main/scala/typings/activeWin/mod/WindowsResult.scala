@@ -1,7 +1,7 @@
 package typings.activeWin.mod
 
-import typings.activeWin.AnonHeight
 import typings.activeWin.activeWinStrings.windows
+import typings.activeWin.anon.Height
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait WindowsResult
 object WindowsResult {
   @scala.inline
   def apply(
-    bounds: AnonHeight,
+    bounds: Height,
     id: Double,
     memoryUsage: Double,
     owner: BaseOwner,

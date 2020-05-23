@@ -1,6 +1,6 @@
 package typings.openidClient.mod
 
-import typings.openidClient.AnonCountry
+import typings.openidClient.anon.Dictkey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,10 +29,10 @@ object IdTokenClaims {
     iss: String,
     sub: String,
     acr: String = null,
-    address: AnonCountry = null,
+    address: Dictkey = null,
     amr: js.Array[String] = null,
     at_hash: String = null,
-    auth_time: Int | Double = null,
+    auth_time: js.UndefOr[Double] = js.undefined,
     azp: String = null,
     birthdate: String = null,
     c_hash: String = null,
@@ -51,7 +51,7 @@ object IdTokenClaims {
     preferred_username: String = null,
     profile: String = null,
     s_hash: String = null,
-    updated_at: Int | Double = null,
+    updated_at: js.UndefOr[Double] = js.undefined,
     website: String = null,
     zoneinfo: String = null
   ): IdTokenClaims = {
@@ -60,12 +60,12 @@ object IdTokenClaims {
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     if (amr != null) __obj.updateDynamic("amr")(amr.asInstanceOf[js.Any])
     if (at_hash != null) __obj.updateDynamic("at_hash")(at_hash.asInstanceOf[js.Any])
-    if (auth_time != null) __obj.updateDynamic("auth_time")(auth_time.asInstanceOf[js.Any])
+    if (!js.isUndefined(auth_time)) __obj.updateDynamic("auth_time")(auth_time.get.asInstanceOf[js.Any])
     if (azp != null) __obj.updateDynamic("azp")(azp.asInstanceOf[js.Any])
     if (birthdate != null) __obj.updateDynamic("birthdate")(birthdate.asInstanceOf[js.Any])
     if (c_hash != null) __obj.updateDynamic("c_hash")(c_hash.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (!js.isUndefined(email_verified)) __obj.updateDynamic("email_verified")(email_verified.asInstanceOf[js.Any])
+    if (!js.isUndefined(email_verified)) __obj.updateDynamic("email_verified")(email_verified.get.asInstanceOf[js.Any])
     if (family_name != null) __obj.updateDynamic("family_name")(family_name.asInstanceOf[js.Any])
     if (gender != null) __obj.updateDynamic("gender")(gender.asInstanceOf[js.Any])
     if (given_name != null) __obj.updateDynamic("given_name")(given_name.asInstanceOf[js.Any])
@@ -79,7 +79,7 @@ object IdTokenClaims {
     if (preferred_username != null) __obj.updateDynamic("preferred_username")(preferred_username.asInstanceOf[js.Any])
     if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
     if (s_hash != null) __obj.updateDynamic("s_hash")(s_hash.asInstanceOf[js.Any])
-    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
+    if (!js.isUndefined(updated_at)) __obj.updateDynamic("updated_at")(updated_at.get.asInstanceOf[js.Any])
     if (website != null) __obj.updateDynamic("website")(website.asInstanceOf[js.Any])
     if (zoneinfo != null) __obj.updateDynamic("zoneinfo")(zoneinfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdTokenClaims]

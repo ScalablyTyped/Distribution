@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/model/document_key", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/model/document_key", JSImport.Namespace)
 @js.native
 object documentKeyMod extends js.Object {
   @js.native

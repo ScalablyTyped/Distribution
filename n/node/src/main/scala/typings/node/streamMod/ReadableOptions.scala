@@ -1,5 +1,6 @@
 package typings.node.streamMod
 
+import typings.node.BufferEncoding
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +16,7 @@ trait ReadableOptions extends js.Object {
       Unit
     ]
   ] = js.undefined
-  var encoding: js.UndefOr[String] = js.undefined
+  var encoding: js.UndefOr[BufferEncoding] = js.undefined
   var highWaterMark: js.UndefOr[Double] = js.undefined
   var objectMode: js.UndefOr[Boolean] = js.undefined
   var read: js.UndefOr[js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit]] = js.undefined
@@ -31,17 +32,17 @@ object ReadableOptions {
       /* callback */ js.Function1[/* error */ Error | Null, Unit], 
       Unit
     ] = null,
-    encoding: String = null,
-    highWaterMark: Int | Double = null,
+    encoding: BufferEncoding = null,
+    highWaterMark: js.UndefOr[Double] = js.undefined,
     objectMode: js.UndefOr[Boolean] = js.undefined,
     read: js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit] = null
   ): ReadableOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy.get.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
-    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(highWaterMark)) __obj.updateDynamic("highWaterMark")(highWaterMark.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.get.asInstanceOf[js.Any])
     if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadableOptions]
   }

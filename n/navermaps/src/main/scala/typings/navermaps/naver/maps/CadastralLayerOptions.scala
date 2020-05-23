@@ -11,10 +11,10 @@ trait CadastralLayerOptions extends js.Object {
 
 object CadastralLayerOptions {
   @scala.inline
-  def apply(overlayMap: js.UndefOr[Boolean] = js.undefined, zIndex: Int | Double = null): CadastralLayerOptions = {
+  def apply(overlayMap: js.UndefOr[Boolean] = js.undefined, zIndex: js.UndefOr[Double] = js.undefined): CadastralLayerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(overlayMap)) __obj.updateDynamic("overlayMap")(overlayMap.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlayMap)) __obj.updateDynamic("overlayMap")(overlayMap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CadastralLayerOptions]
   }
 }

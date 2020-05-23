@@ -6,10 +6,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CKEDITOR.ui.handlerDefinition")
-@js.native
-class handlerDefinition[T] () extends js.Object {
-  var contentsElement: element = js.native
-  def create(definition: StringDictionary[js.Any]): T = js.native
+trait handlerDefinition[T] extends js.Object {
+  var contentsElement: element
+  def create(definition: StringDictionary[js.Any]): T
+}
+
+object handlerDefinition {
+  @scala.inline
+  def apply[T](contentsElement: element, create: StringDictionary[js.Any] => T): handlerDefinition[T] = {
+    val __obj = js.Dynamic.literal(contentsElement = contentsElement.asInstanceOf[js.Any], create = js.Any.fromFunction1(create))
+    __obj.asInstanceOf[handlerDefinition[T]]
+  }
 }
 

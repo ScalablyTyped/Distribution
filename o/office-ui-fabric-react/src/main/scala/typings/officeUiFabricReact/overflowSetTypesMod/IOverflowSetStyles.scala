@@ -16,11 +16,15 @@ trait IOverflowSetStyles extends js.Object {
 
 object IOverflowSetStyles {
   @scala.inline
-  def apply(item: IStyle = null, overflowButton: IStyle = null, root: IStyle = null): IOverflowSetStyles = {
+  def apply(
+    item: js.UndefOr[Null | IStyle] = js.undefined,
+    overflowButton: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined
+  ): IOverflowSetStyles = {
     val __obj = js.Dynamic.literal()
-    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (overflowButton != null) __obj.updateDynamic("overflowButton")(overflowButton.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(item)) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    if (!js.isUndefined(overflowButton)) __obj.updateDynamic("overflowButton")(overflowButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOverflowSetStyles]
   }
 }

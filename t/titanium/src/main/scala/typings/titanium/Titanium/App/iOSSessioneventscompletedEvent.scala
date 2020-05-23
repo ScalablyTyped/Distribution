@@ -5,14 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired to indicate that all messages enqueued for a [urlSession](Modules.URLSession) have been delivered.
-		 * Available only on iOS 7 and later.
-		 */
+  * Fired to indicate that all messages enqueued for a [urlSession](Modules.URLSession) have been delivered.
+  * Available only on iOS 7 and later.
+  */
 trait iOSSessioneventscompletedEvent extends iOSBaseEvent {
   /**
-  			 * The `urlSession` session identifier. If it does not exist, this property is not provided.
-  			 * This property is available since Titanium Mobile 5.4.0.GA.
-  			 */
+    * The `urlSession` session identifier. If it does not exist, this property is not provided.
+    * This property is available since Titanium Mobile 5.4.0.GA.
+    */
   var sessionIdentifier: String
 }
 

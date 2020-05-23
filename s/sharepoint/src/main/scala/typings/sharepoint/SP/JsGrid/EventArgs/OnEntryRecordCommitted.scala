@@ -6,12 +6,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.JsGrid.EventArgs.OnEntryRecordCommitted")
-@js.native
-class OnEntryRecordCommitted protected () extends IEventArgs {
-  def this(origRecKey: String, recordKey: Double, changeKey: IChangeKey) = this()
-  var changeKey: IChangeKey = js.native
-  var originalRecordKey: Double = js.native
-  var recordKey: Double = js.native
+trait OnEntryRecordCommitted extends IEventArgs {
+  var changeKey: IChangeKey
+  var originalRecordKey: Double
+  var recordKey: Double
+}
+
+object OnEntryRecordCommitted {
+  @scala.inline
+  def apply(changeKey: IChangeKey, originalRecordKey: Double, recordKey: Double): OnEntryRecordCommitted = {
+    val __obj = js.Dynamic.literal(changeKey = changeKey.asInstanceOf[js.Any], originalRecordKey = originalRecordKey.asInstanceOf[js.Any], recordKey = recordKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OnEntryRecordCommitted]
+  }
 }
 

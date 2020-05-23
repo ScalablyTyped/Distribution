@@ -35,25 +35,25 @@ object CreateModel {
     comment: typings.nodeZendesk.mod.Requests.Comments.CreateModel,
     subject: String,
     collaborators: js.Array[Collaborator | String | ZendeskID] = null,
-    custom_fields: js.Array[Field] = null,
-    due_at: String = null,
-    fields: js.Array[Field] = null,
-    priority: Priority = null,
-    recipient: String = null,
+    custom_fields: js.UndefOr[Null | js.Array[Field]] = js.undefined,
+    due_at: js.UndefOr[Null | String] = js.undefined,
+    fields: js.UndefOr[Null | js.Array[Field]] = js.undefined,
+    priority: js.UndefOr[Null | Priority] = js.undefined,
+    recipient: js.UndefOr[Null | String] = js.undefined,
     requester: RequesterAnonymous = null,
-    ticket_form_id: Int | Double = null,
-    `type`: TicketType = null
+    ticket_form_id: js.UndefOr[Null | Double] = js.undefined,
+    `type`: js.UndefOr[Null | TicketType] = js.undefined
   ): CreateModel = {
     val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
     if (collaborators != null) __obj.updateDynamic("collaborators")(collaborators.asInstanceOf[js.Any])
-    if (custom_fields != null) __obj.updateDynamic("custom_fields")(custom_fields.asInstanceOf[js.Any])
-    if (due_at != null) __obj.updateDynamic("due_at")(due_at.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (recipient != null) __obj.updateDynamic("recipient")(recipient.asInstanceOf[js.Any])
+    if (!js.isUndefined(custom_fields)) __obj.updateDynamic("custom_fields")(custom_fields.asInstanceOf[js.Any])
+    if (!js.isUndefined(due_at)) __obj.updateDynamic("due_at")(due_at.asInstanceOf[js.Any])
+    if (!js.isUndefined(fields)) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(recipient)) __obj.updateDynamic("recipient")(recipient.asInstanceOf[js.Any])
     if (requester != null) __obj.updateDynamic("requester")(requester.asInstanceOf[js.Any])
-    if (ticket_form_id != null) __obj.updateDynamic("ticket_form_id")(ticket_form_id.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(ticket_form_id)) __obj.updateDynamic("ticket_form_id")(ticket_form_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateModel]
   }
 }

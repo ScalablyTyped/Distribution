@@ -1,6 +1,6 @@
 package typings.arangodb.arangodbGeneralGraphMod
 
-import typings.arangodb.GraphkeystringCollectiona
+import typings.arangodb.anon.GraphkeystringCollectiona
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -32,9 +32,9 @@ object ButtonProps {
     if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (CustomRenderedComponent != null) js.Dynamic.global.Object.assign(__obj, CustomRenderedComponent)
     if (RippleComponent != null) js.Dynamic.global.Object.assign(__obj, RippleComponent)
-    if (!js.isUndefined(accent)) __obj.updateDynamic("accent")(accent.asInstanceOf[js.Any])
-    if (!js.isUndefined(colored)) __obj.updateDynamic("colored")(colored.asInstanceOf[js.Any])
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (!js.isUndefined(accent)) __obj.updateDynamic("accent")(accent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(colored)) __obj.updateDynamic("colored")(colored.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonProps]
   }
 }

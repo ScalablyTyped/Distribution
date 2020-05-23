@@ -12,7 +12,7 @@ object DeviceOrientationOptions {
   @scala.inline
   def apply(tracking: js.UndefOr[Boolean] = js.undefined): DeviceOrientationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(tracking)) __obj.updateDynamic("tracking")(tracking.asInstanceOf[js.Any])
+    if (!js.isUndefined(tracking)) __obj.updateDynamic("tracking")(tracking.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceOrientationOptions]
   }
 }

@@ -14,9 +14,9 @@ trait MonthlyTransfer extends js.Object {
 
 object MonthlyTransfer {
   @scala.inline
-  def apply(gbPerMonthAllocated: Int | Double = null): MonthlyTransfer = {
+  def apply(gbPerMonthAllocated: js.UndefOr[integer] = js.undefined): MonthlyTransfer = {
     val __obj = js.Dynamic.literal()
-    if (gbPerMonthAllocated != null) __obj.updateDynamic("gbPerMonthAllocated")(gbPerMonthAllocated.asInstanceOf[js.Any])
+    if (!js.isUndefined(gbPerMonthAllocated)) __obj.updateDynamic("gbPerMonthAllocated")(gbPerMonthAllocated.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonthlyTransfer]
   }
 }

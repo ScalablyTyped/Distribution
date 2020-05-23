@@ -14,13 +14,13 @@ trait RelatedVideos extends js.Object
 
 object RelatedVideos {
   /**
-  		 * Hide related videos after playback is complete.
-  		 */
+    * Hide related videos after playback is complete.
+    */
   @scala.inline
   def Hide: `0` = 0.asInstanceOf[`0`]
   /**
-  		 * Show related videos after playback is complete.
-  		 */
+    * Show related videos after playback is complete.
+    */
   @scala.inline
   def Show: `1` = 1.asInstanceOf[`1`]
 }

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("VBIDE.AddIn")
 @js.native
-class AddIn protected () extends js.Object {
+trait AddIn extends js.Object {
   @JSName("Collection")
   val Collection_Original: Addins = js.native
   var Connect: Boolean = js.native

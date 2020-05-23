@@ -1,7 +1,7 @@
 package typings.materialTabs
 
 import typings.materialTabs.adapterMod.MDCTabBarScrollerAdapter
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,9 +14,9 @@ object foundationMod extends js.Object {
     extends typings.materialBase.foundationMod.default[MDCTabBarScrollerAdapter] {
     def layout(): Unit = js.native
     def scrollBack(): Unit = js.native
-    def scrollBack(evt: Event_): Unit = js.native
+    def scrollBack(evt: Event): Unit = js.native
     def scrollForward(): Unit = js.native
-    def scrollForward(evt: Event_): Unit = js.native
+    def scrollForward(evt: Event): Unit = js.native
     def scrollToTabAtIndex(index: Double): Unit = js.native
   }
   

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`bottom-left`
 import typings.arcgisJsApi.arcgisJsApiStrings.`bottom-right`
 import typings.arcgisJsApi.arcgisJsApiStrings.`top-left`
@@ -72,8 +71,4 @@ trait IconSymbol3DLayer
   @JSName("type")
   val type_IconSymbol3DLayer: icon = js.native
 }
-
-@JSGlobal("__esri.IconSymbol3DLayer")
-@js.native
-object IconSymbol3DLayer extends TopLevel[IconSymbol3DLayerConstructor]
 

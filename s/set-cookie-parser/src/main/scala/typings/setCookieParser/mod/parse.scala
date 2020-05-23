@@ -1,8 +1,8 @@
 package typings.setCookieParser.mod
 
 import typings.node.httpMod.IncomingMessage
-import typings.setCookieParser.Optionsmapfalse
-import typings.setCookieParser.Optionsmaptrue
+import typings.setCookieParser.anon.Optionsmapfalse
+import typings.setCookieParser.anon.Optionsmaptrue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

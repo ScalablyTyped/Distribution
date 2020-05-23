@@ -1,18 +1,18 @@
 package typings.nivoScatterplot.mod
 
-import typings.nivoScatterplot.AnonColor
-import typings.nivoScatterplot.AnonFormattedX
+import typings.nivoScatterplot.anon.Color
+import typings.nivoScatterplot.anon.FormattedX
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Node extends js.Object {
-  var data: AnonFormattedX
+  var data: FormattedX
   var id: String
   var index: Double
   var serieId: String
   var size: Double
-  var style: AnonColor
+  var style: Color
   var x: Double
   var y: Double
 }
@@ -20,12 +20,12 @@ trait Node extends js.Object {
 object Node {
   @scala.inline
   def apply(
-    data: AnonFormattedX,
+    data: FormattedX,
     id: String,
     index: Double,
     serieId: String,
     size: Double,
-    style: AnonColor,
+    style: Color,
     x: Double,
     y: Double
   ): Node = {

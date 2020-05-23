@@ -16,7 +16,7 @@ trait WorkbookUpdateData extends js.Object {
   var chartDataPointTrack: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Specifies whether or not changes have been made since the workbook was last saved.
+    * Specifies if changes have been made since the workbook was last saved.
     You can set this property to true if you want to close a modified workbook without either saving it or being prompted to save it.
     *
     * [Api set: ExcelApi 1.9]
@@ -29,6 +29,14 @@ trait WorkbookUpdateData extends js.Object {
     * [Api set: ExcelApi 1.7]
     */
   var properties: js.UndefOr[DocumentPropertiesUpdateData] = js.undefined
+  /**
+    *
+    * Specifies whether the PivotTable's field list pane is shown at the workbook level.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var showPivotFieldList: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * True if the workbook uses the 1904 date system.
@@ -53,15 +61,17 @@ object WorkbookUpdateData {
     chartDataPointTrack: js.UndefOr[Boolean] = js.undefined,
     isDirty: js.UndefOr[Boolean] = js.undefined,
     properties: DocumentPropertiesUpdateData = null,
+    showPivotFieldList: js.UndefOr[Boolean] = js.undefined,
     use1904DateSystem: js.UndefOr[Boolean] = js.undefined,
     usePrecisionAsDisplayed: js.UndefOr[Boolean] = js.undefined
   ): WorkbookUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(chartDataPointTrack)) __obj.updateDynamic("chartDataPointTrack")(chartDataPointTrack.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDirty)) __obj.updateDynamic("isDirty")(isDirty.asInstanceOf[js.Any])
+    if (!js.isUndefined(chartDataPointTrack)) __obj.updateDynamic("chartDataPointTrack")(chartDataPointTrack.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDirty)) __obj.updateDynamic("isDirty")(isDirty.get.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (!js.isUndefined(use1904DateSystem)) __obj.updateDynamic("use1904DateSystem")(use1904DateSystem.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePrecisionAsDisplayed)) __obj.updateDynamic("usePrecisionAsDisplayed")(usePrecisionAsDisplayed.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPivotFieldList)) __obj.updateDynamic("showPivotFieldList")(showPivotFieldList.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(use1904DateSystem)) __obj.updateDynamic("use1904DateSystem")(use1904DateSystem.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePrecisionAsDisplayed)) __obj.updateDynamic("usePrecisionAsDisplayed")(usePrecisionAsDisplayed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookUpdateData]
   }
 }

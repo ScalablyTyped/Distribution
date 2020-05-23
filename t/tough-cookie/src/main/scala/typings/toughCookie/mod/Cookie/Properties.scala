@@ -29,7 +29,7 @@ object Properties {
   @scala.inline
   def apply(
     creation: Date = null,
-    creationIndex: Int | Double = null,
+    creationIndex: js.UndefOr[Double] = js.undefined,
     domain: String = null,
     expires: Date = null,
     extensions: js.Array[String] = null,
@@ -46,19 +46,19 @@ object Properties {
   ): Properties = {
     val __obj = js.Dynamic.literal()
     if (creation != null) __obj.updateDynamic("creation")(creation.asInstanceOf[js.Any])
-    if (creationIndex != null) __obj.updateDynamic("creationIndex")(creationIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(creationIndex)) __obj.updateDynamic("creationIndex")(creationIndex.get.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (!js.isUndefined(hostOnly)) __obj.updateDynamic("hostOnly")(hostOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(httpOnly)) __obj.updateDynamic("httpOnly")(httpOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(hostOnly)) __obj.updateDynamic("hostOnly")(hostOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(httpOnly)) __obj.updateDynamic("httpOnly")(httpOnly.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (lastAccessed != null) __obj.updateDynamic("lastAccessed")(lastAccessed.asInstanceOf[js.Any])
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(pathIsDefault)) __obj.updateDynamic("pathIsDefault")(pathIsDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(pathIsDefault)) __obj.updateDynamic("pathIsDefault")(pathIsDefault.get.asInstanceOf[js.Any])
     if (sameSite != null) __obj.updateDynamic("sameSite")(sameSite.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Properties]
   }

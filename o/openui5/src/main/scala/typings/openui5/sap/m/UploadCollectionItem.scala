@@ -6,19 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.m.UploadCollectionItem")
 @js.native
-class UploadCollectionItem protected () extends Element {
-  /**
-    * Constructor for a new UploadCollectionItemAccepts an object literal <code>mSettings</code> that
-    * defines initialproperty values, aggregated and associated objects as well as event handlers.See
-    * {@link sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the
-    * settings object.
-    * @param sId ID for the new control, will be generated automatically if no ID is provided.
-    * @param mSettings initial settings for the new control
-    */
-  def this(sId: String) = this()
-  def this(sId: String, mSettings: js.Any) = this()
+trait UploadCollectionItem extends Element {
   /**
     * Adds some attribute to the aggregation <code>attributes</code>.
     * @since 1.30

@@ -12,9 +12,9 @@ trait IapPublicKeysResponse extends js.Object {
 
 object IapPublicKeysResponse {
   @scala.inline
-  def apply(pubkeys: PublicKeys, res: GaxiosResponse[Unit] = null): IapPublicKeysResponse = {
+  def apply(pubkeys: PublicKeys, res: js.UndefOr[Null | GaxiosResponse[Unit]] = js.undefined): IapPublicKeysResponse = {
     val __obj = js.Dynamic.literal(pubkeys = pubkeys.asInstanceOf[js.Any])
-    if (res != null) __obj.updateDynamic("res")(res.asInstanceOf[js.Any])
+    if (!js.isUndefined(res)) __obj.updateDynamic("res")(res.asInstanceOf[js.Any])
     __obj.asInstanceOf[IapPublicKeysResponse]
   }
 }

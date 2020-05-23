@@ -17,9 +17,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the claimed barcode scanner. */
-@JSGlobal("Windows.Devices.PointOfService.ClaimedBarcodeScanner")
 @js.native
-abstract class ClaimedBarcodeScanner () extends js.Object {
+trait ClaimedBarcodeScanner extends js.Object {
   /** Gets the DeviceInformation.Id of the claimed barcode scanner. */
   var deviceId: String = js.native
   /** Gets or sets a Boolean value that indicates whether to provide the decoded data to the service object. */

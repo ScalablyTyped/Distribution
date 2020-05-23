@@ -1,6 +1,5 @@
 package typings.meteor.Mongo
 
-import org.scalablytyped.runtime.TopLevel
 import typings.meteor.Meteor.LiveQueryHandle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,8 +23,4 @@ trait Cursor[T] extends js.Object {
   def observe(callbacks: ObserveCallbacks[T]): LiveQueryHandle = js.native
   def observeChanges(callbacks: ObserveChangesCallbacks[T]): LiveQueryHandle = js.native
 }
-
-@JSGlobal("Mongo.Cursor")
-@js.native
-object Cursor extends TopLevel[CursorStatic]
 

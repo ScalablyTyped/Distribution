@@ -12,10 +12,13 @@ trait GetAccessTokenResponse extends js.Object {
 
 object GetAccessTokenResponse {
   @scala.inline
-  def apply(res: GaxiosResponse[_] = null, token: String = null): GetAccessTokenResponse = {
+  def apply(
+    res: js.UndefOr[Null | GaxiosResponse[_]] = js.undefined,
+    token: js.UndefOr[Null | String] = js.undefined
+  ): GetAccessTokenResponse = {
     val __obj = js.Dynamic.literal()
-    if (res != null) __obj.updateDynamic("res")(res.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (!js.isUndefined(res)) __obj.updateDynamic("res")(res.asInstanceOf[js.Any])
+    if (!js.isUndefined(token)) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAccessTokenResponse]
   }
 }

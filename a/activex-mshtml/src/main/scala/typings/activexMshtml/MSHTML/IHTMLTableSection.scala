@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.IHTMLTableSection")
 @js.native
-class IHTMLTableSection protected () extends js.Object {
+trait IHTMLTableSection extends js.Object {
   @JSName("MSHTML.IHTMLTableSection_typekey")
   var MSHTMLDotIHTMLTableSection_typekey: IHTMLTableSection = js.native
   var align: String = js.native

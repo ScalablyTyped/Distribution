@@ -34,7 +34,7 @@ object ConnectionOptions {
     key: js.Any = null,
     passphrase: String = null,
     pfx: js.Any = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
     servername: String = null,
     socket: Socket = null
@@ -47,8 +47,8 @@ object ConnectionOptions {
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
     if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.get.asInstanceOf[js.Any])
     if (servername != null) __obj.updateDynamic("servername")(servername.asInstanceOf[js.Any])
     if (socket != null) __obj.updateDynamic("socket")(socket.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionOptions]

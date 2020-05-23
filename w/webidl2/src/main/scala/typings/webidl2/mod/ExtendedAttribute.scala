@@ -23,8 +23,7 @@ object ExtendedAttribute {
     parent: IDLRootType | FieldType | IDLInterfaceMemberType,
     rhs: ExtendedAttributeRightHandSide = null
   ): ExtendedAttribute = {
-    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
-    if (rhs != null) __obj.updateDynamic("rhs")(rhs.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], rhs = rhs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtendedAttribute]
   }
 }

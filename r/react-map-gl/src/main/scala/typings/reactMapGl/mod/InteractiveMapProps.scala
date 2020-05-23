@@ -1,7 +1,7 @@
 package typings.reactMapGl.mod
 
-import typings.reactMapGl.AnonHeight
-import typings.reactMapGl.AnonMaxPitch
+import typings.reactMapGl.anon.Height
+import typings.reactMapGl.anon.MaxPitch
 import typings.reactMapGl.reactMapGlStrings.auto
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -56,11 +56,11 @@ object InteractiveMapProps {
   def apply(
     height: Double | String,
     width: Double | String,
-    altitude: Int | Double = null,
+    altitude: js.UndefOr[Double] = js.undefined,
     attributionControl: js.UndefOr[Boolean] = js.undefined,
-    bearing: Int | Double = null,
+    bearing: js.UndefOr[Double] = js.undefined,
     className: String = null,
-    clickRadius: Int | Double = null,
+    clickRadius: js.UndefOr[Double] = js.undefined,
     container: js.Object = null,
     controller: MapController = null,
     disableTokenWarning: js.UndefOr[Boolean] = js.undefined,
@@ -71,15 +71,16 @@ object InteractiveMapProps {
     gl: js.Object = null,
     interactiveLayerIds: js.Array[String] = null,
     keyboard: js.UndefOr[Boolean] = js.undefined,
-    latitude: Int | Double = null,
-    longitude: Int | Double = null,
+    latitude: js.UndefOr[Double] = js.undefined,
+    longitude: js.UndefOr[Double] = js.undefined,
     mapOptions: js.Object = null,
     mapStyle: String | js.Object = null,
     mapboxApiAccessToken: String = null,
-    maxPitch: Int | Double = null,
-    maxZoom: Int | Double = null,
-    minPitch: Int | Double = null,
-    minZoom: Int | Double = null,
+    mapboxApiUrl: String = null,
+    maxPitch: js.UndefOr[Double] = js.undefined,
+    maxZoom: js.UndefOr[Double] = js.undefined,
+    minPitch: js.UndefOr[Double] = js.undefined,
+    minZoom: js.UndefOr[Double] = js.undefined,
     onClick: /* event */ PointerEvent => Unit = null,
     onContextMenu: /* event */ PointerEvent => Unit = null,
     onDblClick: /* event */ PointerEvent => Unit = null,
@@ -94,7 +95,7 @@ object InteractiveMapProps {
     onMouseOut: /* event */ PointerEvent => Unit = null,
     onMouseUp: /* event */ PointerEvent => Unit = null,
     onNativeClick: /* event */ PointerEvent => Unit = null,
-    onResize: /* dimensions */ AnonHeight => Unit = null,
+    onResize: /* dimensions */ Height => Unit = null,
     onTouchEnd: /* event */ PointerEvent => Unit = null,
     onTouchMove: /* event */ PointerEvent => Unit = null,
     onTouchStart: /* event */ PointerEvent => Unit = null,
@@ -104,7 +105,7 @@ object InteractiveMapProps {
     onViewStateChange: /* info */ ContextViewStateChangeInfo => Unit = null,
     onViewportChange: (/* viewState */ ViewportProps, /* interactionState */ ExtraState, /* oldViewState */ ViewportProps) => Unit = null,
     onWheel: /* event */ PointerEvent => Unit = null,
-    pitch: Int | Double = null,
+    pitch: js.UndefOr[Double] = js.undefined,
     preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined,
     preventStyleDiffing: js.UndefOr[Boolean] = js.undefined,
     reuseMap: js.UndefOr[Boolean] = js.undefined,
@@ -120,35 +121,36 @@ object InteractiveMapProps {
     transitionInterpolator: TransitionInterpolator = null,
     transitionInterruption: TRANSITION_EVENTS = null,
     viewState: ViewState = null,
-    visibilityConstraints: AnonMaxPitch = null,
+    visibilityConstraints: MaxPitch = null,
     visible: js.UndefOr[Boolean] = js.undefined,
-    zoom: Int | Double = null
+    zoom: js.UndefOr[Double] = js.undefined
   ): InteractiveMapProps = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
-    if (!js.isUndefined(attributionControl)) __obj.updateDynamic("attributionControl")(attributionControl.asInstanceOf[js.Any])
-    if (bearing != null) __obj.updateDynamic("bearing")(bearing.asInstanceOf[js.Any])
+    if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(attributionControl)) __obj.updateDynamic("attributionControl")(attributionControl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bearing)) __obj.updateDynamic("bearing")(bearing.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (clickRadius != null) __obj.updateDynamic("clickRadius")(clickRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickRadius)) __obj.updateDynamic("clickRadius")(clickRadius.get.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableTokenWarning)) __obj.updateDynamic("disableTokenWarning")(disableTokenWarning.asInstanceOf[js.Any])
-    if (!js.isUndefined(doubleClickZoom)) __obj.updateDynamic("doubleClickZoom")(doubleClickZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragPan)) __obj.updateDynamic("dragPan")(dragPan.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragRotate)) __obj.updateDynamic("dragRotate")(dragRotate.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableTokenWarning)) __obj.updateDynamic("disableTokenWarning")(disableTokenWarning.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleClickZoom)) __obj.updateDynamic("doubleClickZoom")(doubleClickZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragPan)) __obj.updateDynamic("dragPan")(dragPan.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragRotate)) __obj.updateDynamic("dragRotate")(dragRotate.get.asInstanceOf[js.Any])
     if (getCursor != null) __obj.updateDynamic("getCursor")(js.Any.fromFunction1(getCursor))
     if (gl != null) __obj.updateDynamic("gl")(gl.asInstanceOf[js.Any])
     if (interactiveLayerIds != null) __obj.updateDynamic("interactiveLayerIds")(interactiveLayerIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
-    if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
-    if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(latitude)) __obj.updateDynamic("latitude")(latitude.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(longitude)) __obj.updateDynamic("longitude")(longitude.get.asInstanceOf[js.Any])
     if (mapOptions != null) __obj.updateDynamic("mapOptions")(mapOptions.asInstanceOf[js.Any])
     if (mapStyle != null) __obj.updateDynamic("mapStyle")(mapStyle.asInstanceOf[js.Any])
     if (mapboxApiAccessToken != null) __obj.updateDynamic("mapboxApiAccessToken")(mapboxApiAccessToken.asInstanceOf[js.Any])
-    if (maxPitch != null) __obj.updateDynamic("maxPitch")(maxPitch.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minPitch != null) __obj.updateDynamic("minPitch")(minPitch.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
+    if (mapboxApiUrl != null) __obj.updateDynamic("mapboxApiUrl")(mapboxApiUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPitch)) __obj.updateDynamic("maxPitch")(maxPitch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minPitch)) __obj.updateDynamic("minPitch")(minPitch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(js.Any.fromFunction1(onContextMenu))
     if (onDblClick != null) __obj.updateDynamic("onDblClick")(js.Any.fromFunction1(onDblClick))
@@ -173,16 +175,16 @@ object InteractiveMapProps {
     if (onViewStateChange != null) __obj.updateDynamic("onViewStateChange")(js.Any.fromFunction1(onViewStateChange))
     if (onViewportChange != null) __obj.updateDynamic("onViewportChange")(js.Any.fromFunction3(onViewportChange))
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
-    if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventStyleDiffing)) __obj.updateDynamic("preventStyleDiffing")(preventStyleDiffing.asInstanceOf[js.Any])
-    if (!js.isUndefined(reuseMap)) __obj.updateDynamic("reuseMap")(reuseMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(reuseMaps)) __obj.updateDynamic("reuseMaps")(reuseMaps.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollZoom)) __obj.updateDynamic("scrollZoom")(scrollZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(pitch)) __obj.updateDynamic("pitch")(pitch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventStyleDiffing)) __obj.updateDynamic("preventStyleDiffing")(preventStyleDiffing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reuseMap)) __obj.updateDynamic("reuseMap")(reuseMap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reuseMaps)) __obj.updateDynamic("reuseMaps")(reuseMaps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollZoom)) __obj.updateDynamic("scrollZoom")(scrollZoom.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (touchAction != null) __obj.updateDynamic("touchAction")(touchAction.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchRotate)) __obj.updateDynamic("touchRotate")(touchRotate.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchZoom)) __obj.updateDynamic("touchZoom")(touchZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchRotate)) __obj.updateDynamic("touchRotate")(touchRotate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchZoom)) __obj.updateDynamic("touchZoom")(touchZoom.get.asInstanceOf[js.Any])
     if (transformRequest != null) __obj.updateDynamic("transformRequest")(js.Any.fromFunction2(transformRequest))
     if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
     if (transitionEasing != null) __obj.updateDynamic("transitionEasing")(js.Any.fromFunction1(transitionEasing))
@@ -190,8 +192,8 @@ object InteractiveMapProps {
     if (transitionInterruption != null) __obj.updateDynamic("transitionInterruption")(transitionInterruption.asInstanceOf[js.Any])
     if (viewState != null) __obj.updateDynamic("viewState")(viewState.asInstanceOf[js.Any])
     if (visibilityConstraints != null) __obj.updateDynamic("visibilityConstraints")(visibilityConstraints.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InteractiveMapProps]
   }
 }

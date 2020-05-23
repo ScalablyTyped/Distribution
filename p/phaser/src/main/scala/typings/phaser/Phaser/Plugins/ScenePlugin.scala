@@ -11,15 +11,8 @@ import scala.scalajs.js.annotation._
   * It can listen for Scene events and respond to them.
   * It can map itself to a Scene property, or into the Scene Systems, or both.
   */
-@JSGlobal("Phaser.Plugins.ScenePlugin")
 @js.native
-class ScenePlugin protected () extends BasePlugin {
-  /**
-    * 
-    * @param scene A reference to the Scene that has installed this plugin.
-    * @param pluginManager A reference to the Plugin Manager.
-    */
-  def this(scene: Scene, pluginManager: PluginManager) = this()
+trait ScenePlugin extends BasePlugin {
   /**
     * A reference to the Scene that has installed this plugin.
     * Only set if it's a Scene Plugin, otherwise `null`.

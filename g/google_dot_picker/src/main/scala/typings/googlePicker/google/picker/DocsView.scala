@@ -4,11 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.picker.DocsView")
 @js.native
-// Constructor. The ViewId must be one of the Google Drive views. Default is ViewId.DOCS.
-class DocsView () extends js.Object {
-  def this(viewId: String) = this()
+trait DocsView extends js.Object {
   // Allows the user to select folders from Team Drives.
   def setEnableTeamDrives(enabled: Boolean): DocsView = js.native
   // Show folders in the view items.

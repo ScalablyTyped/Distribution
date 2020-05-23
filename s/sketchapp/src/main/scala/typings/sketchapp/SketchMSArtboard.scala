@@ -29,9 +29,9 @@ object SketchMSArtboard {
   ): SketchMSArtboard = {
     val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], hasBackgroundColor = hasBackgroundColor.asInstanceOf[js.Any])
     if (horizontalRulerData != null) __obj.updateDynamic("horizontalRulerData")(horizontalRulerData.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeBackgroundColorInExport)) __obj.updateDynamic("includeBackgroundColorInExport")(includeBackgroundColorInExport.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeInCloudUpload)) __obj.updateDynamic("includeInCloudUpload")(includeInCloudUpload.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFlowHome)) __obj.updateDynamic("isFlowHome")(isFlowHome.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeBackgroundColorInExport)) __obj.updateDynamic("includeBackgroundColorInExport")(includeBackgroundColorInExport.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeInCloudUpload)) __obj.updateDynamic("includeInCloudUpload")(includeInCloudUpload.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFlowHome)) __obj.updateDynamic("isFlowHome")(isFlowHome.get.asInstanceOf[js.Any])
     if (verticalRulerData != null) __obj.updateDynamic("verticalRulerData")(verticalRulerData.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSArtboard]
   }

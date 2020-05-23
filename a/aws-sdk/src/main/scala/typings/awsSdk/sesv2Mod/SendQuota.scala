@@ -23,14 +23,14 @@ trait SendQuota extends js.Object {
 object SendQuota {
   @scala.inline
   def apply(
-    Max24HourSend: Int | Double = null,
-    MaxSendRate: Int | Double = null,
-    SentLast24Hours: Int | Double = null
+    Max24HourSend: js.UndefOr[Max24HourSend] = js.undefined,
+    MaxSendRate: js.UndefOr[MaxSendRate] = js.undefined,
+    SentLast24Hours: js.UndefOr[SentLast24Hours] = js.undefined
   ): SendQuota = {
     val __obj = js.Dynamic.literal()
-    if (Max24HourSend != null) __obj.updateDynamic("Max24HourSend")(Max24HourSend.asInstanceOf[js.Any])
-    if (MaxSendRate != null) __obj.updateDynamic("MaxSendRate")(MaxSendRate.asInstanceOf[js.Any])
-    if (SentLast24Hours != null) __obj.updateDynamic("SentLast24Hours")(SentLast24Hours.asInstanceOf[js.Any])
+    if (!js.isUndefined(Max24HourSend)) __obj.updateDynamic("Max24HourSend")(Max24HourSend.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxSendRate)) __obj.updateDynamic("MaxSendRate")(MaxSendRate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SentLast24Hours)) __obj.updateDynamic("SentLast24Hours")(SentLast24Hours.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendQuota]
   }
 }

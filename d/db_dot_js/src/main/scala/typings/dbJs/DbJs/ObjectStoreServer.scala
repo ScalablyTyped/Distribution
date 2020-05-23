@@ -4,25 +4,25 @@ import typings.dbJs.dbJsStrings.abort
 import typings.dbJs.dbJsStrings.error
 import typings.dbJs.dbJsStrings.versionchange
 import typings.std.Error
+import typings.std.Event
 import typings.std.EventListener
-import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait ObjectStoreServer extends js.Object {
-  def abort(listener: js.Function1[/* ev */ Event_, _]): ObjectStoreServer = js.native
+  def abort(listener: js.Function1[/* ev */ Event, _]): ObjectStoreServer = js.native
   def add[T](table: String, entities: T*): js.Promise[js.Array[T]] = js.native
   def add[T](table: String, entity: T): js.Promise[T] = js.native
   def add[TKey, TValue](table: String, entity: KeyValuePair[TKey, TValue]): js.Promise[KeyValuePair[TKey, TValue]] = js.native
   def addEventListener(`type`: String, listener: ErrorListener | EventListener): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_abort(`type`: abort, listener: js.Function1[/* ev */ Event_, _]): Unit = js.native
+  def addEventListener_abort(`type`: abort, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(`type`: error, listener: js.Function1[/* err */ Error, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_versionchange(`type`: versionchange, listener: js.Function1[/* ev */ Event_, _]): Unit = js.native
+  def addEventListener_versionchange(`type`: versionchange, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
   @JSName("add")
   def add_TKeyTValue[TKey, TValue](table: String, entities: (KeyValuePair[TKey, TValue])*): js.Promise[js.Array[KeyValuePair[TKey, TValue]]] = js.native
   def clear(table: String): js.Promise[Unit] = js.native
@@ -40,6 +40,6 @@ trait ObjectStoreServer extends js.Object {
   def update[TKey, TValue](table: String, entity: KeyValuePair[TKey, TValue]): js.Promise[KeyValuePair[TKey, TValue]] = js.native
   @JSName("update")
   def update_TKeyTValue[TKey, TValue](table: String, entities: (KeyValuePair[TKey, TValue])*): js.Promise[js.Array[KeyValuePair[TKey, TValue]]] = js.native
-  def versionchange(listener: js.Function1[/* ev */ Event_, _]): ObjectStoreServer = js.native
+  def versionchange(listener: js.Function1[/* ev */ Event, _]): ObjectStoreServer = js.native
 }
 

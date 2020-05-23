@@ -13,10 +13,10 @@ trait RateOptions extends js.Object {
 
 object RateOptions {
   @scala.inline
-  def apply(limit: Int | Double = null, period: Int | Double = null): RateOptions = {
+  def apply(limit: js.UndefOr[Double] = js.undefined, period: js.UndefOr[Double] = js.undefined): RateOptions = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(period)) __obj.updateDynamic("period")(period.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RateOptions]
   }
 }

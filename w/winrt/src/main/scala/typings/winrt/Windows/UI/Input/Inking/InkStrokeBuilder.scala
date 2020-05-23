@@ -7,18 +7,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.Input.Inking.InkStrokeBuilder")
-@js.native
-class InkStrokeBuilder () extends IInkStrokeBuilder {
-  /* CompleteClass */
-  override def appendToStroke(pointerPoint: PointerPoint): PointerPoint = js.native
-  /* CompleteClass */
-  override def beginStroke(pointerPoint: PointerPoint): Unit = js.native
-  /* CompleteClass */
-  override def createStroke(points: IIterable[Point]): InkStroke = js.native
-  /* CompleteClass */
-  override def endStroke(pointerPoint: PointerPoint): InkStroke = js.native
-  /* CompleteClass */
-  override def setDefaultDrawingAttributes(drawingAttributes: InkDrawingAttributes): Unit = js.native
+trait InkStrokeBuilder extends IInkStrokeBuilder
+
+object InkStrokeBuilder {
+  @scala.inline
+  def apply(
+    appendToStroke: PointerPoint => PointerPoint,
+    beginStroke: PointerPoint => Unit,
+    createStroke: IIterable[Point] => InkStroke,
+    endStroke: PointerPoint => InkStroke,
+    setDefaultDrawingAttributes: InkDrawingAttributes => Unit
+  ): InkStrokeBuilder = {
+    val __obj = js.Dynamic.literal(appendToStroke = js.Any.fromFunction1(appendToStroke), beginStroke = js.Any.fromFunction1(beginStroke), createStroke = js.Any.fromFunction1(createStroke), endStroke = js.Any.fromFunction1(endStroke), setDefaultDrawingAttributes = js.Any.fromFunction1(setDefaultDrawingAttributes))
+    __obj.asInstanceOf[InkStrokeBuilder]
+  }
 }
 

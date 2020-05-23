@@ -27,10 +27,10 @@ object WindowsDefenderAdvancedThreatProtectionConfiguration {
     lastModifiedDateTime: String = null,
     userStatusOverview: DeviceConfigurationUserOverview = null,
     userStatuses: js.Array[DeviceConfigurationUserStatus] = null,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): WindowsDefenderAdvancedThreatProtectionConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowSampleSharing)) __obj.updateDynamic("allowSampleSharing")(allowSampleSharing.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSampleSharing)) __obj.updateDynamic("allowSampleSharing")(allowSampleSharing.get.asInstanceOf[js.Any])
     if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
     if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
@@ -38,12 +38,12 @@ object WindowsDefenderAdvancedThreatProtectionConfiguration {
     if (deviceStatusOverview != null) __obj.updateDynamic("deviceStatusOverview")(deviceStatusOverview.asInstanceOf[js.Any])
     if (deviceStatuses != null) __obj.updateDynamic("deviceStatuses")(deviceStatuses.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableExpeditedTelemetryReporting)) __obj.updateDynamic("enableExpeditedTelemetryReporting")(enableExpeditedTelemetryReporting.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableExpeditedTelemetryReporting)) __obj.updateDynamic("enableExpeditedTelemetryReporting")(enableExpeditedTelemetryReporting.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
     if (userStatusOverview != null) __obj.updateDynamic("userStatusOverview")(userStatusOverview.asInstanceOf[js.Any])
     if (userStatuses != null) __obj.updateDynamic("userStatuses")(userStatuses.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsDefenderAdvancedThreatProtectionConfiguration]
   }
 }

@@ -12,8 +12,8 @@ package object specTestRunnerMod {
     typings.firebaseFirestore.typesMod.TargetId, 
     java.lang.String | typings.firebaseFirestore.specTestRunnerMod.SpecQuery
   ]
-  type SpecUserPatch = js.Tuple2[java.lang.String, typings.firebaseFirestore.modelFieldValueMod.JsonObject[js.Any]]
-  type SpecUserSet = js.Tuple2[java.lang.String, typings.firebaseFirestore.modelFieldValueMod.JsonObject[js.Any]]
+  type SpecUserPatch = js.Tuple2[java.lang.String, typings.firebaseFirestore.objectValueMod.JsonObject[js.Any]]
+  type SpecUserSet = js.Tuple2[java.lang.String, typings.firebaseFirestore.objectValueMod.JsonObject[js.Any]]
   type SpecUserUnlisten = js.Tuple2[
     typings.firebaseFirestore.typesMod.TargetId, 
     java.lang.String | typings.firebaseFirestore.specTestRunnerMod.SpecQuery

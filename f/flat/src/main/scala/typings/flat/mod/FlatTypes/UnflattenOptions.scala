@@ -21,8 +21,8 @@ object UnflattenOptions {
   ): UnflattenOptions = {
     val __obj = js.Dynamic.literal()
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (!js.isUndefined(`object`)) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
+    if (!js.isUndefined(`object`)) __obj.updateDynamic("object")(`object`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.get.asInstanceOf[js.Any])
     if (transformKey != null) __obj.updateDynamic("transformKey")(js.Any.fromFunction1(transformKey))
     __obj.asInstanceOf[UnflattenOptions]
   }

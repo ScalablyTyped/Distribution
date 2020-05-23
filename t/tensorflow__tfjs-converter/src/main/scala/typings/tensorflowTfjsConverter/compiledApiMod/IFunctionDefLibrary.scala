@@ -13,10 +13,13 @@ trait IFunctionDefLibrary extends js.Object {
 
 object IFunctionDefLibrary {
   @scala.inline
-  def apply(function: js.Array[IFunctionDef] = null, gradient: js.Array[IGradientDef] = null): IFunctionDefLibrary = {
+  def apply(
+    function: js.UndefOr[Null | js.Array[IFunctionDef]] = js.undefined,
+    gradient: js.UndefOr[Null | js.Array[IGradientDef]] = js.undefined
+  ): IFunctionDefLibrary = {
     val __obj = js.Dynamic.literal()
-    if (function != null) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
-    if (gradient != null) __obj.updateDynamic("gradient")(gradient.asInstanceOf[js.Any])
+    if (!js.isUndefined(function)) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
+    if (!js.isUndefined(gradient)) __obj.updateDynamic("gradient")(gradient.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFunctionDefLibrary]
   }
 }

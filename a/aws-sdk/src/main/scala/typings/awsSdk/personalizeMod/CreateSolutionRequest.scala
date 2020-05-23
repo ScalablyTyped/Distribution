@@ -42,15 +42,15 @@ object CreateSolutionRequest {
     datasetGroupArn: Arn,
     name: Name,
     eventType: EventType = null,
-    performAutoML: js.UndefOr[scala.Boolean] = js.undefined,
-    performHPO: js.UndefOr[scala.Boolean] = js.undefined,
+    performAutoML: js.UndefOr[PerformAutoML] = js.undefined,
+    performHPO: js.UndefOr[Boolean] = js.undefined,
     recipeArn: Arn = null,
     solutionConfig: SolutionConfig = null
   ): CreateSolutionRequest = {
     val __obj = js.Dynamic.literal(datasetGroupArn = datasetGroupArn.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (eventType != null) __obj.updateDynamic("eventType")(eventType.asInstanceOf[js.Any])
-    if (!js.isUndefined(performAutoML)) __obj.updateDynamic("performAutoML")(performAutoML.asInstanceOf[js.Any])
-    if (!js.isUndefined(performHPO)) __obj.updateDynamic("performHPO")(performHPO.asInstanceOf[js.Any])
+    if (!js.isUndefined(performAutoML)) __obj.updateDynamic("performAutoML")(performAutoML.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(performHPO)) __obj.updateDynamic("performHPO")(performHPO.get.asInstanceOf[js.Any])
     if (recipeArn != null) __obj.updateDynamic("recipeArn")(recipeArn.asInstanceOf[js.Any])
     if (solutionConfig != null) __obj.updateDynamic("solutionConfig")(solutionConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSolutionRequest]

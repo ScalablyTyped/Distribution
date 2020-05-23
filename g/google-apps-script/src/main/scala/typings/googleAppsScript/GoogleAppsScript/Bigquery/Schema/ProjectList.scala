@@ -19,14 +19,14 @@ object ProjectList {
     kind: String = null,
     nextPageToken: String = null,
     projects: js.Array[ProjectListProjects] = null,
-    totalItems: Int | Double = null
+    totalItems: js.UndefOr[Double] = js.undefined
   ): ProjectList = {
     val __obj = js.Dynamic.literal()
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     if (projects != null) __obj.updateDynamic("projects")(projects.asInstanceOf[js.Any])
-    if (totalItems != null) __obj.updateDynamic("totalItems")(totalItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalItems)) __obj.updateDynamic("totalItems")(totalItems.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectList]
   }
 }

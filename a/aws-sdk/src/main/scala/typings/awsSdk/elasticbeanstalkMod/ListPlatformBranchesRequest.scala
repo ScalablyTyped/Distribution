@@ -22,10 +22,14 @@ trait ListPlatformBranchesRequest extends js.Object {
 
 object ListPlatformBranchesRequest {
   @scala.inline
-  def apply(Filters: SearchFilters = null, MaxRecords: Int | Double = null, NextToken: Token = null): ListPlatformBranchesRequest = {
+  def apply(
+    Filters: SearchFilters = null,
+    MaxRecords: js.UndefOr[PlatformBranchMaxRecords] = js.undefined,
+    NextToken: Token = null
+  ): ListPlatformBranchesRequest = {
     val __obj = js.Dynamic.literal()
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPlatformBranchesRequest]
   }

@@ -1,6 +1,6 @@
 package typings.stripeV3.stripe
 
-import typings.stripeV3.AnonBillingdetails
+import typings.stripeV3.anon.Billingdetails
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait HandleCardPaymentOptions extends js.Object {
     * Use this parameter to supply additional data relevant to
     * the payment method, such as billing details
     */
-  var payment_method_data: js.UndefOr[AnonBillingdetails] = js.undefined
+  var payment_method_data: js.UndefOr[Billingdetails] = js.undefined
   /**
     * Email address that the receipt for the resulting payment will be sent to.
     */
@@ -30,7 +30,7 @@ trait HandleCardPaymentOptions extends js.Object {
 object HandleCardPaymentOptions {
   @scala.inline
   def apply(
-    payment_method_data: AnonBillingdetails = null,
+    payment_method_data: Billingdetails = null,
     receipt_email: String = null,
     save_payment_method: js.UndefOr[Boolean] = js.undefined,
     shipping: ShippingDetails = null
@@ -38,7 +38,7 @@ object HandleCardPaymentOptions {
     val __obj = js.Dynamic.literal()
     if (payment_method_data != null) __obj.updateDynamic("payment_method_data")(payment_method_data.asInstanceOf[js.Any])
     if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email.asInstanceOf[js.Any])
-    if (!js.isUndefined(save_payment_method)) __obj.updateDynamic("save_payment_method")(save_payment_method.asInstanceOf[js.Any])
+    if (!js.isUndefined(save_payment_method)) __obj.updateDynamic("save_payment_method")(save_payment_method.get.asInstanceOf[js.Any])
     if (shipping != null) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
     __obj.asInstanceOf[HandleCardPaymentOptions]
   }

@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation._
 
 trait IStyle extends IAbstract {
   /** [Method] Returns the value of inAnimation
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getInAnimation: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of outAnimation
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getOutAnimation: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Sets the value of inAnimation
-  		* @param inAnimation Object The new value.
-  		*/
+    * @param inAnimation Object The new value.
+    */
   var setInAnimation: js.UndefOr[js.Function1[/* inAnimation */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of outAnimation
-  		* @param outAnimation Object The new value.
-  		*/
+    * @param outAnimation Object The new value.
+    */
   var setOutAnimation: js.UndefOr[js.Function1[/* outAnimation */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -146,7 +146,7 @@ object IStyle {
     if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
     if (setOutAnimation != null) __obj.updateDynamic("setOutAnimation")(js.Any.fromFunction1(setOutAnimation))
     if (setReverse != null) __obj.updateDynamic("setReverse")(js.Any.fromFunction1(setReverse))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))

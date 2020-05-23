@@ -11,9 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Supports the retrieval of messages. */
-@JSGlobal("Windows.Devices.Sms.GetSmsMessagesOperation")
 @js.native
-abstract class GetSmsMessagesOperation () extends js.Object {
+trait GetSmsMessagesOperation extends js.Object {
   /** Specifies whether the asynchronous message retrieval operation has completed or not. */
   @JSName("completed")
   var completed_Original: AsyncOperationWithProgressCompletedHandler[IVectorView[_], Double] = js.native

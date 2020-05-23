@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.UserCustomAction")
 @js.native
-class UserCustomAction () extends ClientObject {
+trait UserCustomAction extends ClientObject {
   def deleteObject(): Unit = js.native
   def get_commandUIExtension(): String = js.native
   def get_description(): String = js.native

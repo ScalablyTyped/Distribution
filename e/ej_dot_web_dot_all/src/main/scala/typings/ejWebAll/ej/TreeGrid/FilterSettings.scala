@@ -44,16 +44,16 @@ object FilterSettings {
     filterHierarchyMode: FilterHierarchyMode | String = null,
     filterType: FilterType | String = null,
     filteredColumns: js.Array[FilterSettingsFilteredColumn] = null,
-    maxFilterChoices: Int | Double = null
+    maxFilterChoices: js.UndefOr[Double] = js.undefined
   ): FilterSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableCaseSensitivity)) __obj.updateDynamic("enableCaseSensitivity")(enableCaseSensitivity.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableComplexBlankFilter)) __obj.updateDynamic("enableComplexBlankFilter")(enableComplexBlankFilter.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCaseSensitivity)) __obj.updateDynamic("enableCaseSensitivity")(enableCaseSensitivity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableComplexBlankFilter)) __obj.updateDynamic("enableComplexBlankFilter")(enableComplexBlankFilter.get.asInstanceOf[js.Any])
     if (filterBarMode != null) __obj.updateDynamic("filterBarMode")(filterBarMode.asInstanceOf[js.Any])
     if (filterHierarchyMode != null) __obj.updateDynamic("filterHierarchyMode")(filterHierarchyMode.asInstanceOf[js.Any])
     if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
     if (filteredColumns != null) __obj.updateDynamic("filteredColumns")(filteredColumns.asInstanceOf[js.Any])
-    if (maxFilterChoices != null) __obj.updateDynamic("maxFilterChoices")(maxFilterChoices.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFilterChoices)) __obj.updateDynamic("maxFilterChoices")(maxFilterChoices.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterSettings]
   }
 }

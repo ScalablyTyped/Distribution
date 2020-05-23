@@ -1,7 +1,5 @@
 package typings.typedoc
 
-import typings.typedoc.typedocStrings.keyof
-import typings.typedoc.typedocStrings.typeOperator
 import typings.typedoc.typesAbstractMod.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,10 +11,8 @@ object typesTypeOperatorMod extends js.Object {
   @js.native
   class TypeOperatorType protected () extends Type {
     def this(target: Type) = this()
-    val operator: keyof = js.native
+    val operator: /* "keyof" */ String = js.native
     var target: Type = js.native
-    @JSName("type")
-    val type_TypeOperatorType: typeOperator = js.native
     def equals(`type`: TypeOperatorType): Boolean = js.native
   }
   

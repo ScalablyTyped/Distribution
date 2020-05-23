@@ -84,30 +84,30 @@ object Configuration {
     url: String,
     appendMessageTypeToURL: js.UndefOr[Boolean] = js.undefined,
     autoBatch: js.UndefOr[Boolean] = js.undefined,
-    backoffIncrement: Int | Double = null,
-    connectTimeout: Int | Double = null,
+    backoffIncrement: js.UndefOr[Double] = js.undefined,
+    connectTimeout: js.UndefOr[Double] = js.undefined,
     logLevel: String = null,
-    maxBackoff: Int | Double = null,
-    maxConnections: Int | Double = null,
-    maxNetworkDelay: Int | Double = null,
-    maxURILength: Int | Double = null,
+    maxBackoff: js.UndefOr[Double] = js.undefined,
+    maxConnections: js.UndefOr[Double] = js.undefined,
+    maxNetworkDelay: js.UndefOr[Double] = js.undefined,
+    maxURILength: js.UndefOr[Double] = js.undefined,
     requestHeaders: js.Object = null,
     stickyReconnect: js.UndefOr[Boolean] = js.undefined,
     useWorkerScheduler: js.UndefOr[Boolean] = js.undefined
   ): Configuration = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (!js.isUndefined(appendMessageTypeToURL)) __obj.updateDynamic("appendMessageTypeToURL")(appendMessageTypeToURL.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoBatch)) __obj.updateDynamic("autoBatch")(autoBatch.asInstanceOf[js.Any])
-    if (backoffIncrement != null) __obj.updateDynamic("backoffIncrement")(backoffIncrement.asInstanceOf[js.Any])
-    if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(appendMessageTypeToURL)) __obj.updateDynamic("appendMessageTypeToURL")(appendMessageTypeToURL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoBatch)) __obj.updateDynamic("autoBatch")(autoBatch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(backoffIncrement)) __obj.updateDynamic("backoffIncrement")(backoffIncrement.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectTimeout)) __obj.updateDynamic("connectTimeout")(connectTimeout.get.asInstanceOf[js.Any])
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
-    if (maxBackoff != null) __obj.updateDynamic("maxBackoff")(maxBackoff.asInstanceOf[js.Any])
-    if (maxConnections != null) __obj.updateDynamic("maxConnections")(maxConnections.asInstanceOf[js.Any])
-    if (maxNetworkDelay != null) __obj.updateDynamic("maxNetworkDelay")(maxNetworkDelay.asInstanceOf[js.Any])
-    if (maxURILength != null) __obj.updateDynamic("maxURILength")(maxURILength.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxBackoff)) __obj.updateDynamic("maxBackoff")(maxBackoff.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxConnections)) __obj.updateDynamic("maxConnections")(maxConnections.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxNetworkDelay)) __obj.updateDynamic("maxNetworkDelay")(maxNetworkDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxURILength)) __obj.updateDynamic("maxURILength")(maxURILength.get.asInstanceOf[js.Any])
     if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(stickyReconnect)) __obj.updateDynamic("stickyReconnect")(stickyReconnect.asInstanceOf[js.Any])
-    if (!js.isUndefined(useWorkerScheduler)) __obj.updateDynamic("useWorkerScheduler")(useWorkerScheduler.asInstanceOf[js.Any])
+    if (!js.isUndefined(stickyReconnect)) __obj.updateDynamic("stickyReconnect")(stickyReconnect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useWorkerScheduler)) __obj.updateDynamic("useWorkerScheduler")(useWorkerScheduler.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }
 }

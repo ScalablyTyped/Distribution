@@ -40,7 +40,7 @@ object DetailsExpandEventArgs {
     `type`: String = null
   ): DetailsExpandEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (detailsRow != null) __obj.updateDynamic("detailsRow")(detailsRow.asInstanceOf[js.Any])
     if (foreignKeyData != null) __obj.updateDynamic("foreignKeyData")(foreignKeyData.asInstanceOf[js.Any])
     if (masterData != null) __obj.updateDynamic("masterData")(masterData.asInstanceOf[js.Any])

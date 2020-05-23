@@ -1,6 +1,6 @@
 package typings.luminoPolling.pollMod.Poll
 
-import typings.luminoPolling.PartialFrequency
+import typings.luminoPolling.anon.PartialFrequency
 import typings.luminoPolling.mod.IPoll.State
 import scala.scalajs.js
 import scala.scalajs.js.`|`

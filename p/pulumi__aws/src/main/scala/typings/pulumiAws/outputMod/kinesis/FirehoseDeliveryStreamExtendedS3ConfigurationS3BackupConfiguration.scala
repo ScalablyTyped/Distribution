@@ -48,15 +48,15 @@ object FirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfiguration {
     bucketArn: String,
     cloudwatchLoggingOptions: FirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions,
     roleArn: String,
-    bufferInterval: Int | Double = null,
-    bufferSize: Int | Double = null,
+    bufferInterval: js.UndefOr[Double] = js.undefined,
+    bufferSize: js.UndefOr[Double] = js.undefined,
     compressionFormat: String = null,
     kmsKeyArn: String = null,
     prefix: String = null
   ): FirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfiguration = {
     val __obj = js.Dynamic.literal(bucketArn = bucketArn.asInstanceOf[js.Any], cloudwatchLoggingOptions = cloudwatchLoggingOptions.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
-    if (bufferInterval != null) __obj.updateDynamic("bufferInterval")(bufferInterval.asInstanceOf[js.Any])
-    if (bufferSize != null) __obj.updateDynamic("bufferSize")(bufferSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(bufferInterval)) __obj.updateDynamic("bufferInterval")(bufferInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bufferSize)) __obj.updateDynamic("bufferSize")(bufferSize.get.asInstanceOf[js.Any])
     if (compressionFormat != null) __obj.updateDynamic("compressionFormat")(compressionFormat.asInstanceOf[js.Any])
     if (kmsKeyArn != null) __obj.updateDynamic("kmsKeyArn")(kmsKeyArn.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 /** module Or Internal Object */
 /**
-	* @brief dgram 模块提供了 UDP 数据包 socket 的实现
-	* @detail 基础模块，引用方式：,```JavaScript,var dgram = require('dgram');,```
-	*/
+  * @brief dgram 模块提供了 UDP 数据包 socket 的实现
+  * @detail 基础模块，引用方式：,```JavaScript,var dgram = require('dgram');,```
+  */
 @JSImport("dgram", JSImport.Namespace)
 @js.native
 object dgramMod extends js.Object {

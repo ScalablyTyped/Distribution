@@ -12,7 +12,5 @@ trait Sequence[T] extends SequenceBase[T] {
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 @JSGlobal("LazyJS.Sequence")
 @js.native
-object Sequence extends js.Object {
-  def define(methodName: js.Array[String], overrides: js.Any): js.Function = js.native
-}
+object Sequence extends js.Object
 

@@ -73,25 +73,25 @@ object dataviewConfig {
     container: String | HTMLElement = null,
     css: js.Any = null,
     data: String | js.Array[_] = null,
-    datafetch: Int | Double = null,
-    datathrottle: Int | Double = null,
+    datafetch: js.UndefOr[Double] = js.undefined,
+    datathrottle: js.UndefOr[Double] = js.undefined,
     datatype: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     drag: Boolean | String = null,
     dragscroll: Boolean | String = null,
     externalData: /* repeated */ js.Any => js.Any = null,
-    gravity: Int | Double = null,
-    height: Int | Double = null,
+    gravity: js.UndefOr[Double] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String | Double = null,
     item: js.Any = null,
-    keyPressTimeout: Int | Double = null,
-    loadahead: Int | Double = null,
-    maxHeight: Int | Double = null,
-    maxWidth: Int | Double = null,
-    minHeight: Int | Double = null,
-    minWidth: Int | Double = null,
-    mouseEventDelay: Int | Double = null,
+    keyPressTimeout: js.UndefOr[Double] = js.undefined,
+    loadahead: js.UndefOr[Double] = js.undefined,
+    maxHeight: js.UndefOr[Double] = js.undefined,
+    maxWidth: js.UndefOr[Double] = js.undefined,
+    minHeight: js.UndefOr[Double] = js.undefined,
+    minWidth: js.UndefOr[Double] = js.undefined,
+    mouseEventDelay: js.UndefOr[Double] = js.undefined,
     multiselect: String | Boolean = null,
     navigation: js.UndefOr[Boolean] = js.undefined,
     on: EventHash = null,
@@ -115,63 +115,63 @@ object dataviewConfig {
     `type`: js.Any = null,
     url: js.Any = null,
     view: String = null,
-    width: Int | Double = null,
-    xCount: Int | Double = null,
-    yCount: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined,
+    xCount: js.UndefOr[Double] = js.undefined,
+    yCount: js.UndefOr[Double] = js.undefined
   ): dataviewConfig = {
     val __obj = js.Dynamic.literal()
     if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoheight)) __obj.updateDynamic("autoheight")(autoheight.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoheight)) __obj.updateDynamic("autoheight")(autoheight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.get.asInstanceOf[js.Any])
     if (click != null) __obj.updateDynamic("click")(click.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (datafetch != null) __obj.updateDynamic("datafetch")(datafetch.asInstanceOf[js.Any])
-    if (datathrottle != null) __obj.updateDynamic("datathrottle")(datathrottle.asInstanceOf[js.Any])
+    if (!js.isUndefined(datafetch)) __obj.updateDynamic("datafetch")(datafetch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(datathrottle)) __obj.updateDynamic("datathrottle")(datathrottle.get.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (drag != null) __obj.updateDynamic("drag")(drag.asInstanceOf[js.Any])
     if (dragscroll != null) __obj.updateDynamic("dragscroll")(dragscroll.asInstanceOf[js.Any])
     if (externalData != null) __obj.updateDynamic("externalData")(js.Any.fromFunction1(externalData))
-    if (gravity != null) __obj.updateDynamic("gravity")(gravity.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(gravity)) __obj.updateDynamic("gravity")(gravity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (keyPressTimeout != null) __obj.updateDynamic("keyPressTimeout")(keyPressTimeout.asInstanceOf[js.Any])
-    if (loadahead != null) __obj.updateDynamic("loadahead")(loadahead.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (mouseEventDelay != null) __obj.updateDynamic("mouseEventDelay")(mouseEventDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyPressTimeout)) __obj.updateDynamic("keyPressTimeout")(keyPressTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loadahead)) __obj.updateDynamic("loadahead")(loadahead.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mouseEventDelay)) __obj.updateDynamic("mouseEventDelay")(mouseEventDelay.get.asInstanceOf[js.Any])
     if (multiselect != null) __obj.updateDynamic("multiselect")(multiselect.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigation)) __obj.updateDynamic("navigation")(navigation.asInstanceOf[js.Any])
+    if (!js.isUndefined(navigation)) __obj.updateDynamic("navigation")(navigation.get.asInstanceOf[js.Any])
     if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
     if (onContext != null) __obj.updateDynamic("onContext")(onContext.asInstanceOf[js.Any])
     if (onDblClick != null) __obj.updateDynamic("onDblClick")(js.Any.fromFunction1(onDblClick))
     if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
     if (pager != null) __obj.updateDynamic("pager")(pager.asInstanceOf[js.Any])
-    if (!js.isUndefined(prerender)) __obj.updateDynamic("prerender")(prerender.asInstanceOf[js.Any])
+    if (!js.isUndefined(prerender)) __obj.updateDynamic("prerender")(prerender.get.asInstanceOf[js.Any])
     if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
-    if (!js.isUndefined(removeMissed)) __obj.updateDynamic("removeMissed")(removeMissed.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeMissed)) __obj.updateDynamic("removeMissed")(removeMissed.get.asInstanceOf[js.Any])
     if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     if (save != null) __obj.updateDynamic("save")(save.asInstanceOf[js.Any])
     if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
     if (scroll != null) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
     if (scrollSpeed != null) __obj.updateDynamic("scrollSpeed")(scrollSpeed.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
-    if (!js.isUndefined(sizeToContent)) __obj.updateDynamic("sizeToContent")(sizeToContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(sizeToContent)) __obj.updateDynamic("sizeToContent")(sizeToContent.get.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (xCount != null) __obj.updateDynamic("xCount")(xCount.asInstanceOf[js.Any])
-    if (yCount != null) __obj.updateDynamic("yCount")(yCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xCount)) __obj.updateDynamic("xCount")(xCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yCount)) __obj.updateDynamic("yCount")(yCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dataviewConfig]
   }
 }

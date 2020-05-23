@@ -6,21 +6,41 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.ChartFormat")
-@js.native
-class ChartFormat protected () extends js.Object {
-  val Application: typings.activexExcel.Excel.Application = js.native
-  val Creator: XlCreator = js.native
+trait ChartFormat extends js.Object {
+  val Application: typings.activexExcel.Excel.Application
+  val Creator: XlCreator
   @JSName("Excel.ChartFormat_typekey")
-  var ExcelDotChartFormat_typekey: ChartFormat = js.native
-  val Fill: FillFormat = js.native
-  val Glow: GlowFormat = js.native
-  val Line: LineFormat = js.native
-  val Parent: js.Any = js.native
-  val PictureFormat: typings.activexExcel.Excel.PictureFormat = js.native
-  val Shadow: ShadowFormat = js.native
-  val SoftEdge: SoftEdgeFormat = js.native
-  val TextFrame2: typings.activexExcel.Excel.TextFrame2 = js.native
-  val ThreeD: ThreeDFormat = js.native
+  var ExcelDotChartFormat_typekey: ChartFormat
+  val Fill: FillFormat
+  val Glow: GlowFormat
+  val Line: LineFormat
+  val Parent: js.Any
+  val PictureFormat: typings.activexExcel.Excel.PictureFormat
+  val Shadow: ShadowFormat
+  val SoftEdge: SoftEdgeFormat
+  val TextFrame2: typings.activexExcel.Excel.TextFrame2
+  val ThreeD: ThreeDFormat
+}
+
+object ChartFormat {
+  @scala.inline
+  def apply(
+    Application: Application,
+    Creator: XlCreator,
+    ExcelDotChartFormat_typekey: ChartFormat,
+    Fill: FillFormat,
+    Glow: GlowFormat,
+    Line: LineFormat,
+    Parent: js.Any,
+    PictureFormat: PictureFormat,
+    Shadow: ShadowFormat,
+    SoftEdge: SoftEdgeFormat,
+    TextFrame2: TextFrame2,
+    ThreeD: ThreeDFormat
+  ): ChartFormat = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Fill = Fill.asInstanceOf[js.Any], Glow = Glow.asInstanceOf[js.Any], Line = Line.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], PictureFormat = PictureFormat.asInstanceOf[js.Any], Shadow = Shadow.asInstanceOf[js.Any], SoftEdge = SoftEdge.asInstanceOf[js.Any], TextFrame2 = TextFrame2.asInstanceOf[js.Any], ThreeD = ThreeD.asInstanceOf[js.Any])
+    __obj.updateDynamic("Excel.ChartFormat_typekey")(ExcelDotChartFormat_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartFormat]
+  }
 }
 

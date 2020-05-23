@@ -1,5 +1,6 @@
 package typings.businessRulesEngine
 
+import typings.businessRulesEngine.anon.Contains
 import typings.businessRulesEngine.mod.IError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -53,9 +54,9 @@ object nodeValidationMod extends js.Object {
   /* static members */
   @js.native
   object MessageLocalization extends js.Object {
-    var ValidationMessages: AnonContains = js.native
+    var ValidationMessages: Contains = js.native
     var customMsg: String = js.native
-    var defaultMessages: AnonContains = js.native
+    var defaultMessages: Contains = js.native
     def GetValidationMessage(validator: js.Any): String = js.native
   }
   

@@ -25,10 +25,10 @@ object ImportClientVpnClientCertificateRevocationListRequest {
   def apply(
     CertificateRevocationList: String,
     ClientVpnEndpointId: ClientVpnEndpointId,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined
   ): ImportClientVpnClientCertificateRevocationListRequest = {
     val __obj = js.Dynamic.literal(CertificateRevocationList = CertificateRevocationList.asInstanceOf[js.Any], ClientVpnEndpointId = ClientVpnEndpointId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportClientVpnClientCertificateRevocationListRequest]
   }
 }

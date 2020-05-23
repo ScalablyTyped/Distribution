@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side counterpart of the TreeList extension.
   */
-@JSGlobal("MVCxClientTreeList")
 @js.native
-class MVCxClientTreeList () extends ASPxClientTreeList {
+trait MVCxClientTreeList extends ASPxClientTreeList {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -27,16 +26,5 @@ class MVCxClientTreeList () extends ASPxClientTreeList {
     * @param data An object containing any information that needs to be passed to a handling Action specified via the TreeListSettings.CustomDataActionRouteValues property.
     */
   def PerformCustomDataCallback(data: js.Any): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("MVCxClientTreeList")
-@js.native
-object MVCxClientTreeList extends js.Object {
-  /**
-    * Converts the specified object to the MVCxClientTreeList type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): MVCxClientTreeList = js.native
 }
 

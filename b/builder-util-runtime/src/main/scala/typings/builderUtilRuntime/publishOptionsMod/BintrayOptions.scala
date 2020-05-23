@@ -48,30 +48,30 @@ object BintrayOptions {
   @scala.inline
   def apply(
     provider: bintray,
-    _package: String = null,
-    component: String = null,
-    distribution: String = null,
-    owner: String = null,
+    _package: js.UndefOr[Null | String] = js.undefined,
+    component: js.UndefOr[Null | String] = js.undefined,
+    distribution: js.UndefOr[Null | String] = js.undefined,
+    owner: js.UndefOr[Null | String] = js.undefined,
     publishAutoUpdate: js.UndefOr[Boolean] = js.undefined,
-    publisherName: js.Array[String] = null,
-    repo: String = null,
+    publisherName: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    repo: js.UndefOr[Null | String] = js.undefined,
     requestHeaders: OutgoingHttpHeaders = null,
-    token: String = null,
-    updaterCacheDirName: String = null,
-    user: String = null
+    token: js.UndefOr[Null | String] = js.undefined,
+    updaterCacheDirName: js.UndefOr[Null | String] = js.undefined,
+    user: js.UndefOr[Null | String] = js.undefined
   ): BintrayOptions = {
     val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
-    if (_package != null) __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (distribution != null) __obj.updateDynamic("distribution")(distribution.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.asInstanceOf[js.Any])
-    if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
-    if (repo != null) __obj.updateDynamic("repo")(repo.asInstanceOf[js.Any])
+    if (!js.isUndefined(_package)) __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
+    if (!js.isUndefined(component)) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (!js.isUndefined(distribution)) __obj.updateDynamic("distribution")(distribution.asInstanceOf[js.Any])
+    if (!js.isUndefined(owner)) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(publisherName)) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
+    if (!js.isUndefined(repo)) __obj.updateDynamic("repo")(repo.asInstanceOf[js.Any])
     if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
-    if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
+    if (!js.isUndefined(token)) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (!js.isUndefined(updaterCacheDirName)) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
+    if (!js.isUndefined(user)) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[BintrayOptions]
   }
 }

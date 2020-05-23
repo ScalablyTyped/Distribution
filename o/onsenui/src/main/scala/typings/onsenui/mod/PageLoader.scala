@@ -1,6 +1,6 @@
 package typings.onsenui.mod
 
-import typings.onsenui.AnonPage
+import typings.onsenui.anon.Page
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ import scala.scalajs.js.annotation._
 class PageLoader protected () extends js.Object {
   def this(args: js.Any*) = this()
   var internalLoader: js.Function = js.native
-  def load(options: AnonPage, done: js.Function): Unit = js.native
+  def load(options: Page, done: js.Function): Unit = js.native
 }
 

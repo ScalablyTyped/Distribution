@@ -1,5 +1,6 @@
 package typings.antlr4
 
+import typings.antlr4.inputStreamMod.InputStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +24,7 @@ object tokenMod extends js.Object {
     val text: String = js.native
     var tokenIndex: Double = js.native
     var `type`: js.Any = js.native
-    def getInputStream(): js.Any = js.native
+    def getInputStream(): InputStream = js.native
     def getTokenSource(): js.Any = js.native
   }
   

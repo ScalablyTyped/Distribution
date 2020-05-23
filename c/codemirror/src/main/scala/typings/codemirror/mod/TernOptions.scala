@@ -52,7 +52,7 @@ trait TernOptions extends js.Object {
       /* request */ Document, 
       /* error */ js.UndefOr[Error], 
       /* data */ js.UndefOr[
-        RenameQueryResult | DocumentationQueryResult | FilesQueryResult | RefsQueryResult | TypeQueryResult | PropertiesQueryResult | DefinitionQueryResult | CompletionsQueryResult
+        RefsQueryResult | DefinitionQueryResult | DocumentationQueryResult | FilesQueryResult | PropertiesQueryResult | CompletionsQueryResult | TypeQueryResult | RenameQueryResult
       ], 
       _
     ]
@@ -89,7 +89,7 @@ object TernOptions {
     getFile: (/* name */ String, /* callback */ js.Function1[/* doc */ Doc | Null, _]) => _ = null,
     plugins: /* import warning: importer.ImportType#apply Failed type conversion: tern.tern/lib/tern.ConstructorOptions['plugins'] */ js.Any = null,
     responseFilter: (/* doc */ Doc, /* query */ Query, /* request */ Document, /* error */ js.UndefOr[Error], /* data */ js.UndefOr[
-      RenameQueryResult | DocumentationQueryResult | FilesQueryResult | RefsQueryResult | TypeQueryResult | PropertiesQueryResult | DefinitionQueryResult | CompletionsQueryResult
+      RefsQueryResult | DefinitionQueryResult | DocumentationQueryResult | FilesQueryResult | PropertiesQueryResult | CompletionsQueryResult | TypeQueryResult | RenameQueryResult
     ]) => _ = null,
     showError: (/* editor */ Editor, /* message */ Error) => _ = null,
     switchToDoc: (/* name */ String, /* doc */ Doc) => _ = null,
@@ -108,7 +108,7 @@ object TernOptions {
     if (showError != null) __obj.updateDynamic("showError")(js.Any.fromFunction2(showError))
     if (switchToDoc != null) __obj.updateDynamic("switchToDoc")(js.Any.fromFunction2(switchToDoc))
     if (typeTip != null) __obj.updateDynamic("typeTip")(js.Any.fromFunction1(typeTip))
-    if (!js.isUndefined(useWorker)) __obj.updateDynamic("useWorker")(useWorker.asInstanceOf[js.Any])
+    if (!js.isUndefined(useWorker)) __obj.updateDynamic("useWorker")(useWorker.get.asInstanceOf[js.Any])
     if (workerDeps != null) __obj.updateDynamic("workerDeps")(workerDeps.asInstanceOf[js.Any])
     if (workerScript != null) __obj.updateDynamic("workerScript")(workerScript.asInstanceOf[js.Any])
     __obj.asInstanceOf[TernOptions]

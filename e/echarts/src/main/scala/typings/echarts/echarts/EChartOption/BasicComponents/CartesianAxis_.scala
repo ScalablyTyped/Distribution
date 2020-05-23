@@ -1,8 +1,10 @@
 package typings.echarts.echarts.EChartOption.BasicComponents
 
-import typings.echarts.AnonMax
+import typings.echarts.anon.Max
 import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis.DataObject
 import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis.Label
+import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis.MinorSplitLine
+import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis.MinorTick
 import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis.Pointer
 import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis.SplitArea
 import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis.SplitLine
@@ -146,7 +148,7 @@ trait CartesianAxis_ extends js.Object {
     * @default null
     * @see https://echarts.apache.org/option.html#yAxis.max
     */
-  var max: js.UndefOr[Double | String | (js.Function1[/* value */ AnonMax, Double])] = js.undefined
+  var max: js.UndefOr[Double | String | (js.Function1[/* value */ Max, Double])] = js.undefined
   /**
     * The minimun value of axis.
     * It can be set to a special value `'dataMin'` so that
@@ -162,7 +164,7 @@ trait CartesianAxis_ extends js.Object {
     * @default null
     * @see https://echarts.apache.org/option.html#yAxis.min
     */
-  var min: js.UndefOr[Double | String | (js.Function1[/* value */ AnonMax, Double])] = js.undefined
+  var min: js.UndefOr[Double | String | (js.Function1[/* value */ Max, Double])] = js.undefined
   /**
     * Maximum gap between split lines.
     * For example, in time axis (type is `'time'`),
@@ -176,6 +178,18 @@ trait CartesianAxis_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#yAxis.minInterval
     */
   var minInterval: js.UndefOr[js.Any] = js.undefined
+  /**
+    * Minor SplitLine of axis in grid area.
+    *
+    * @see https://echarts.apache.org/en/option.html#yAxis.minorSplitLine
+    */
+  var minorSplitLine: js.UndefOr[MinorSplitLine] = js.undefined
+  /**
+    * Settings related to axis minor tick.
+    *
+    * @see https://echarts.apache.org/en/option.html#yAxis.minorTick
+    */
+  var minorTick: js.UndefOr[MinorTick] = js.undefined
   /**
     * Name of axis.
     */
@@ -316,29 +330,31 @@ object CartesianAxis_ {
     axisTick: Tick = null,
     boundaryGap: Boolean | (js.Array[String | Double]) = null,
     data: js.Array[String | Double | DataObject] = null,
-    gridIndex: Int | Double = null,
+    gridIndex: js.UndefOr[Double] = js.undefined,
     id: String = null,
-    interval: Int | Double = null,
+    interval: js.UndefOr[Double] = js.undefined,
     inverse: js.UndefOr[Boolean] = js.undefined,
-    logBase: Int | Double = null,
-    max: Double | String | (js.Function1[/* value */ AnonMax, Double]) = null,
-    min: Double | String | (js.Function1[/* value */ AnonMax, Double]) = null,
+    logBase: js.UndefOr[Double] = js.undefined,
+    max: Double | String | (js.Function1[/* value */ Max, Double]) = null,
+    min: Double | String | (js.Function1[/* value */ Max, Double]) = null,
     minInterval: js.Any = null,
+    minorSplitLine: MinorSplitLine = null,
+    minorTick: MinorTick = null,
     name: String = null,
-    nameGap: Int | Double = null,
+    nameGap: js.UndefOr[Double] = js.undefined,
     nameLocation: start | middle | center | end = null,
-    nameRotate: Int | Double = null,
+    nameRotate: js.UndefOr[Double] = js.undefined,
     nameTextStyle: TextStyleWithRich = null,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     scale: js.UndefOr[Boolean] = js.undefined,
     show: js.UndefOr[Boolean] = js.undefined,
     silent: js.UndefOr[Boolean] = js.undefined,
     splitArea: SplitArea = null,
     splitLine: SplitLine = null,
-    splitNumber: Int | Double = null,
+    splitNumber: js.UndefOr[Double] = js.undefined,
     triggerEvent: js.UndefOr[Boolean] = js.undefined,
-    z: Int | Double = null,
-    zlevel: Int | Double = null
+    z: js.UndefOr[Double] = js.undefined,
+    zlevel: js.UndefOr[Double] = js.undefined
   ): CartesianAxis_ = {
     val __obj = js.Dynamic.literal()
     if (axisLabel != null) __obj.updateDynamic("axisLabel")(axisLabel.asInstanceOf[js.Any])
@@ -347,29 +363,31 @@ object CartesianAxis_ {
     if (axisTick != null) __obj.updateDynamic("axisTick")(axisTick.asInstanceOf[js.Any])
     if (boundaryGap != null) __obj.updateDynamic("boundaryGap")(boundaryGap.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (gridIndex != null) __obj.updateDynamic("gridIndex")(gridIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridIndex)) __obj.updateDynamic("gridIndex")(gridIndex.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverse)) __obj.updateDynamic("inverse")(inverse.asInstanceOf[js.Any])
-    if (logBase != null) __obj.updateDynamic("logBase")(logBase.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inverse)) __obj.updateDynamic("inverse")(inverse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(logBase)) __obj.updateDynamic("logBase")(logBase.get.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (minInterval != null) __obj.updateDynamic("minInterval")(minInterval.asInstanceOf[js.Any])
+    if (minorSplitLine != null) __obj.updateDynamic("minorSplitLine")(minorSplitLine.asInstanceOf[js.Any])
+    if (minorTick != null) __obj.updateDynamic("minorTick")(minorTick.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (nameGap != null) __obj.updateDynamic("nameGap")(nameGap.asInstanceOf[js.Any])
+    if (!js.isUndefined(nameGap)) __obj.updateDynamic("nameGap")(nameGap.get.asInstanceOf[js.Any])
     if (nameLocation != null) __obj.updateDynamic("nameLocation")(nameLocation.asInstanceOf[js.Any])
-    if (nameRotate != null) __obj.updateDynamic("nameRotate")(nameRotate.asInstanceOf[js.Any])
+    if (!js.isUndefined(nameRotate)) __obj.updateDynamic("nameRotate")(nameRotate.get.asInstanceOf[js.Any])
     if (nameTextStyle != null) __obj.updateDynamic("nameTextStyle")(nameTextStyle.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     if (splitArea != null) __obj.updateDynamic("splitArea")(splitArea.asInstanceOf[js.Any])
     if (splitLine != null) __obj.updateDynamic("splitLine")(splitLine.asInstanceOf[js.Any])
-    if (splitNumber != null) __obj.updateDynamic("splitNumber")(splitNumber.asInstanceOf[js.Any])
-    if (!js.isUndefined(triggerEvent)) __obj.updateDynamic("triggerEvent")(triggerEvent.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
-    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(splitNumber)) __obj.updateDynamic("splitNumber")(splitNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(triggerEvent)) __obj.updateDynamic("triggerEvent")(triggerEvent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zlevel)) __obj.updateDynamic("zlevel")(zlevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CartesianAxis_]
   }
 }

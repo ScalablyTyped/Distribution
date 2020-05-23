@@ -25,10 +25,10 @@ object ReplaceNetworkAclAssociationRequest {
   def apply(
     AssociationId: NetworkAclAssociationId,
     NetworkAclId: NetworkAclId,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined
   ): ReplaceNetworkAclAssociationRequest = {
     val __obj = js.Dynamic.literal(AssociationId = AssociationId.asInstanceOf[js.Any], NetworkAclId = NetworkAclId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceNetworkAclAssociationRequest]
   }
 }

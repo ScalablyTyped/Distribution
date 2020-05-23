@@ -26,16 +26,16 @@ trait StringConfigOptions[K /* <: String */] extends js.Object {
 
 object StringConfigOptions {
   @scala.inline
-  def apply[K /* <: String */](
+  def apply[K](
     allowedValues: js.Array[K] = null,
-    maxLength: Int | Double = null,
-    minLength: Int | Double = null,
+    maxLength: js.UndefOr[Double] = js.undefined,
+    minLength: js.UndefOr[Double] = js.undefined,
     pattern: String | RegExp = null
   ): StringConfigOptions[K] = {
     val __obj = js.Dynamic.literal()
     if (allowedValues != null) __obj.updateDynamic("allowedValues")(allowedValues.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minLength)) __obj.updateDynamic("minLength")(minLength.get.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringConfigOptions[K]]
   }

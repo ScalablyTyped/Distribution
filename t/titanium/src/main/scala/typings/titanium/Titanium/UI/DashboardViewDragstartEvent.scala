@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when an item starts being dragged in edit mode.
-		 */
+  * Fired when an item starts being dragged in edit mode.
+  */
 trait DashboardViewDragstartEvent extends DashboardViewBaseEvent {
   /**
-  			 * Item that was dragged.
-  			 */
+    * Item that was dragged.
+    */
   var item: DashboardItem
 }
 

@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.anon.PhiLength
 import typings.three.bufferGeometryMod.BufferGeometry
 import typings.three.geometryMod.Geometry
 import typings.three.vector2Mod.Vector2
@@ -16,7 +17,7 @@ object latheGeometryMod extends js.Object {
     def this(points: js.Array[Vector2], segments: Double) = this()
     def this(points: js.Array[Vector2], segments: Double, phiStart: Double) = this()
     def this(points: js.Array[Vector2], segments: Double, phiStart: Double, phiLength: Double) = this()
-    var parameters: AnonPhiLength = js.native
+    var parameters: PhiLength = js.native
   }
   
   @js.native
@@ -25,7 +26,7 @@ object latheGeometryMod extends js.Object {
     def this(points: js.Array[Vector2], segments: Double) = this()
     def this(points: js.Array[Vector2], segments: Double, phiStart: Double) = this()
     def this(points: js.Array[Vector2], segments: Double, phiStart: Double, phiLength: Double) = this()
-    var parameters: AnonPhiLength = js.native
+    var parameters: PhiLength = js.native
   }
   
 }

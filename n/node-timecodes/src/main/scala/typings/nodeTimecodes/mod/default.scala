@@ -1,6 +1,6 @@
 package typings.nodeTimecodes.mod
 
-import typings.nodeTimecodes.AnonFramerate
+import typings.nodeTimecodes.anon.Framerate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("node-timecodes", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var constants: AnonFramerate = js.native
+  var constants: Framerate = js.native
   @JSName("fromSeconds")
   var fromSeconds_Original: js.Function2[/* seconds */ Double, /* option */ js.UndefOr[TimecodeOptions], String] = js.native
   @JSName("toSeconds")

@@ -1,6 +1,6 @@
 package typings.serialport.mod
 
-import typings.serialport.AnonVmin
+import typings.serialport.anon.Vmin
 import typings.serialport.serialportNumbers.`110`
 import typings.serialport.serialportNumbers.`115200`
 import typings.serialport.serialportNumbers.`1200`
@@ -40,7 +40,7 @@ trait OpenOptions extends js.Object {
     `115200` | `57600` | `38400` | `19200` | `9600` | `4800` | `2400` | `1800` | `1200` | `600` | `300` | `200` | `150` | `134` | `110` | `75` | `50` | Double
   ] = js.undefined
   var binding: js.UndefOr[BaseBinding] = js.undefined
-  var bindingOptions: js.UndefOr[AnonVmin] = js.undefined
+  var bindingOptions: js.UndefOr[Vmin] = js.undefined
   var dataBits: js.UndefOr[`8` | `7` | `6` | `5`] = js.undefined
   var highWaterMark: js.UndefOr[Double] = js.undefined
   var lock: js.UndefOr[Boolean] = js.undefined
@@ -58,9 +58,9 @@ object OpenOptions {
     autoOpen: js.UndefOr[Boolean] = js.undefined,
     baudRate: `115200` | `57600` | `38400` | `19200` | `9600` | `4800` | `2400` | `1800` | `1200` | `600` | `300` | `200` | `150` | `134` | `110` | `75` | `50` | Double = null,
     binding: BaseBinding = null,
-    bindingOptions: AnonVmin = null,
+    bindingOptions: Vmin = null,
     dataBits: `8` | `7` | `6` | `5` = null,
-    highWaterMark: Int | Double = null,
+    highWaterMark: js.UndefOr[Double] = js.undefined,
     lock: js.UndefOr[Boolean] = js.undefined,
     parity: none | even | mark | odd | space = null,
     rtscts: js.UndefOr[Boolean] = js.undefined,
@@ -70,19 +70,19 @@ object OpenOptions {
     xon: js.UndefOr[Boolean] = js.undefined
   ): OpenOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoOpen)) __obj.updateDynamic("autoOpen")(autoOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoOpen)) __obj.updateDynamic("autoOpen")(autoOpen.get.asInstanceOf[js.Any])
     if (baudRate != null) __obj.updateDynamic("baudRate")(baudRate.asInstanceOf[js.Any])
     if (binding != null) __obj.updateDynamic("binding")(binding.asInstanceOf[js.Any])
     if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
     if (dataBits != null) __obj.updateDynamic("dataBits")(dataBits.asInstanceOf[js.Any])
-    if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
-    if (!js.isUndefined(lock)) __obj.updateDynamic("lock")(lock.asInstanceOf[js.Any])
+    if (!js.isUndefined(highWaterMark)) __obj.updateDynamic("highWaterMark")(highWaterMark.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lock)) __obj.updateDynamic("lock")(lock.get.asInstanceOf[js.Any])
     if (parity != null) __obj.updateDynamic("parity")(parity.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtscts)) __obj.updateDynamic("rtscts")(rtscts.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtscts)) __obj.updateDynamic("rtscts")(rtscts.get.asInstanceOf[js.Any])
     if (stopBits != null) __obj.updateDynamic("stopBits")(stopBits.asInstanceOf[js.Any])
-    if (!js.isUndefined(xany)) __obj.updateDynamic("xany")(xany.asInstanceOf[js.Any])
-    if (!js.isUndefined(xoff)) __obj.updateDynamic("xoff")(xoff.asInstanceOf[js.Any])
-    if (!js.isUndefined(xon)) __obj.updateDynamic("xon")(xon.asInstanceOf[js.Any])
+    if (!js.isUndefined(xany)) __obj.updateDynamic("xany")(xany.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xoff)) __obj.updateDynamic("xoff")(xoff.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xon)) __obj.updateDynamic("xon")(xon.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenOptions]
   }
 }

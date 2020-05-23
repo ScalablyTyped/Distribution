@@ -11,9 +11,9 @@ trait IFloatValue extends js.Object {
 
 object IFloatValue {
   @scala.inline
-  def apply(value: Int | Double = null): IFloatValue = {
+  def apply(value: js.UndefOr[Double] = js.undefined): IFloatValue = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFloatValue]
   }
 }

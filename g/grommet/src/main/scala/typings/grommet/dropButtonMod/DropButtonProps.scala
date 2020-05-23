@@ -1,14 +1,14 @@
 package typings.grommet.dropButtonMod
 
-import typings.grommet.AnonLeft
+import typings.grommet.anon.Left
 import typings.grommet.dropMod.DropProps
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DropButtonProps extends js.Object {
-  var dropAlign: js.UndefOr[AnonLeft] = js.undefined
+  var dropAlign: js.UndefOr[Left] = js.undefined
   var dropContent: Element
   var dropProps: js.UndefOr[DropProps] = js.undefined
   var dropTarget: js.UndefOr[js.Object] = js.undefined
@@ -21,7 +21,7 @@ object DropButtonProps {
   @scala.inline
   def apply(
     dropContent: Element,
-    dropAlign: AnonLeft = null,
+    dropAlign: Left = null,
     dropProps: DropProps = null,
     dropTarget: js.Object = null,
     onClose: /* repeated */ js.Any => _ = null,
@@ -34,7 +34,7 @@ object DropButtonProps {
     if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
     if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1(onOpen))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropButtonProps]
   }
 }

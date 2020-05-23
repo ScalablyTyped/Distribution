@@ -1,6 +1,5 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
-import typings.jsrsasign.AnonAsn1params
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,9 +29,23 @@ import scala.scalajs.js.annotation._
   * // SHA256withRSA and set parameter empty by force
   * algId = new KJUR.asn1.x509.AlgorithmIdentifier({name: "SHA256withRSA", paramempty: true});
   */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.AlgorithmIdentifier")
-@js.native
-class AlgorithmIdentifier () extends ASN1Object {
-  def this(params: AnonAsn1params) = this()
+trait AlgorithmIdentifier extends ASN1Object
+
+object AlgorithmIdentifier {
+  @scala.inline
+  def apply(
+    getEncodedHex: () => String,
+    getFreshValueHex: () => String,
+    getLengthHexFromValue: () => String,
+    getValueHex: () => String,
+    hL: String,
+    hT: String,
+    hTLV: String,
+    hV: String,
+    isModified: String
+  ): AlgorithmIdentifier = {
+    val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AlgorithmIdentifier]
+  }
 }
 

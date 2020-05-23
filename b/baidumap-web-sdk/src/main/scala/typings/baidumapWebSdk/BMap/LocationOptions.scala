@@ -11,10 +11,10 @@ trait LocationOptions extends js.Object {
 
 object LocationOptions {
   @scala.inline
-  def apply(numPois: Int | Double = null, poiRadius: Int | Double = null): LocationOptions = {
+  def apply(numPois: js.UndefOr[Double] = js.undefined, poiRadius: js.UndefOr[Double] = js.undefined): LocationOptions = {
     val __obj = js.Dynamic.literal()
-    if (numPois != null) __obj.updateDynamic("numPois")(numPois.asInstanceOf[js.Any])
-    if (poiRadius != null) __obj.updateDynamic("poiRadius")(poiRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(numPois)) __obj.updateDynamic("numPois")(numPois.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(poiRadius)) __obj.updateDynamic("poiRadius")(poiRadius.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationOptions]
   }
 }

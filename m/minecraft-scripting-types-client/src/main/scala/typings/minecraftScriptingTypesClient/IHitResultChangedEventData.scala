@@ -23,8 +23,7 @@ trait IHitResultChangedEventData extends js.Object {
 object IHitResultChangedEventData {
   @scala.inline
   def apply(entity: IEntity, position: VectorXYZ = null): IHitResultChangedEventData = {
-    val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHitResultChangedEventData]
   }
 }

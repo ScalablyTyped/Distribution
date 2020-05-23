@@ -1,7 +1,7 @@
 package typings.blueprintjsSelect.multiSelectMod
 
-import typings.blueprintjsSelect.PartialIPopoverProps
-import typings.blueprintjsSelect.PartialITagInputProps
+import typings.blueprintjsSelect.anon.PartialIPopoverProps
+import typings.blueprintjsSelect.anon.PartialITagInputProps
 import typings.blueprintjsSelect.listItemsPropsMod.IListItemsProps
 import typings.react.mod.ReactNode
 import scala.scalajs.js

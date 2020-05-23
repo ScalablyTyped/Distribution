@@ -1,7 +1,7 @@
 package typings.ionicCore
 
 import typings.ionicCore.animationInterfaceMod.Animation
-import typings.ionicCore.componentsMod._Global_.HTMLIonModalElement
+import typings.ionicCore.componentsMod.global.HTMLIonModalElement
 import typings.ionicCore.mod.ComponentProps
 import typings.ionicCore.mod.ComponentRef
 import typings.ionicCore.mod.FrameworkDelegate
@@ -44,6 +44,7 @@ object modalMod extends js.Object {
     var el_Modal: HTMLIonModalElement = js.native
     var gesture: js.UndefOr[js.Any] = js.native
     var gestureAnimationDismissing: js.Any = js.native
+    var initSwipeToClose: js.Any = js.native
     var onBackdropTap: js.Any = js.native
     var onDismiss: js.Any = js.native
     var onLifecycle: js.Any = js.native
@@ -71,6 +72,7 @@ object modalMod extends js.Object {
     def onWillDismiss(): js.Promise[OverlayEventDetail[_]] = js.native
     @JSName("render")
     def render_MModal(): js.Any = js.native
+    def swipeToCloseChanged(enable: Boolean): Unit = js.native
   }
   
 }

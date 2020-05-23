@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.document
 import typings.arcgisJsApi.arcgisJsApiStrings.none
 import typings.arcgisJsApi.arcgisJsApiStrings.view
@@ -32,8 +31,4 @@ trait GamepadSettings extends Accessor {
     */
   var enabledFocusMode: document | view | none = js.native
 }
-
-@JSGlobal("__esri.GamepadSettings")
-@js.native
-object GamepadSettings extends TopLevel[GamepadSettingsConstructor]
 

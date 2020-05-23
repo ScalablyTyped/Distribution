@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListFiltersResponse extends js.Object {
   /**
-    * A list of filter names
+    * A list of filter names.
     */
   var FilterNames: typings.awsSdk.guarddutyMod.FilterNames = js.native
   /**
-    * Pagination parameter to be used on the next list operation to retrieve more items.
+    * The pagination parameter to be used on the next list operation to retrieve more items.
     */
   var NextToken: js.UndefOr[String] = js.native
 }

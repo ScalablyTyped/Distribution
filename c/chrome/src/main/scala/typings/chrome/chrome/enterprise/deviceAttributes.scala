@@ -16,10 +16,5 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("chrome.enterprise.deviceAttributes")
 @js.native
-object deviceAttributes extends js.Object {
-  def getDeviceAnnotatedLocation(callback: js.Function1[/* annotatedLocation */ String, Unit]): Unit = js.native
-  def getDeviceAssetId(callback: js.Function1[/* assetId */ String, Unit]): Unit = js.native
-  def getDeviceSerialNumber(callback: js.Function1[/* serialNumber */ String, Unit]): Unit = js.native
-  def getDirectoryDeviceId(callback: js.Function1[/* deviceId */ String, Unit]): Unit = js.native
-}
+object deviceAttributes extends js.Object
 

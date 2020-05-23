@@ -1,5 +1,6 @@
 package typings.fridaGum
 
+import typings.fridaGum.anon.BaseDisp
 import typings.fridaGum.fridaGumStrings.imm
 import typings.fridaGum.fridaGumStrings.mem
 import typings.fridaGum.fridaGumStrings.reg
@@ -28,7 +29,7 @@ object MipsOperand {
     __obj.asInstanceOf[MipsOperand]
   }
   @scala.inline
-  def MipsMemOperand(`type`: mem, value: AnonBaseDisp): MipsOperand = {
+  def MipsMemOperand(`type`: mem, value: BaseDisp): MipsOperand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MipsOperand]

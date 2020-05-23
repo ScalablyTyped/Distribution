@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,8 +31,4 @@ trait PortalQueryResult extends Accessor {
     */
   var total: Double = js.native
 }
-
-@JSGlobal("__esri.PortalQueryResult")
-@js.native
-object PortalQueryResult extends TopLevel[PortalQueryResultConstructor]
 

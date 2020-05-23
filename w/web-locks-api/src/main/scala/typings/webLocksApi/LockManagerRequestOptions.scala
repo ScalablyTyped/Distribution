@@ -23,10 +23,10 @@ object LockManagerRequestOptions {
     steal: js.UndefOr[Boolean] = js.undefined
   ): LockManagerRequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ifAvailable)) __obj.updateDynamic("ifAvailable")(ifAvailable.asInstanceOf[js.Any])
+    if (!js.isUndefined(ifAvailable)) __obj.updateDynamic("ifAvailable")(ifAvailable.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
-    if (!js.isUndefined(steal)) __obj.updateDynamic("steal")(steal.asInstanceOf[js.Any])
+    if (!js.isUndefined(steal)) __obj.updateDynamic("steal")(steal.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LockManagerRequestOptions]
   }
 }

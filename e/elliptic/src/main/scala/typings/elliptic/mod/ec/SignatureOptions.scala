@@ -14,9 +14,9 @@ trait SignatureOptions extends _SignatureInput {
 
 object SignatureOptions {
   @scala.inline
-  def apply(r: BNInput, s: BNInput, recoveryParam: Int | Double = null): SignatureOptions = {
+  def apply(r: BNInput, s: BNInput, recoveryParam: js.UndefOr[Double] = js.undefined): SignatureOptions = {
     val __obj = js.Dynamic.literal(r = r.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any])
-    if (recoveryParam != null) __obj.updateDynamic("recoveryParam")(recoveryParam.asInstanceOf[js.Any])
+    if (!js.isUndefined(recoveryParam)) __obj.updateDynamic("recoveryParam")(recoveryParam.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignatureOptions]
   }
 }

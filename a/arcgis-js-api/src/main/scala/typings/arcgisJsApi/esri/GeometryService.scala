@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -255,8 +254,4 @@ trait GeometryService extends Task {
   def union(geometries: js.Array[Geometry_]): js.Promise[Geometry_] = js.native
   def union(geometries: js.Array[Geometry_], requestOptions: js.Any): js.Promise[Geometry_] = js.native
 }
-
-@JSGlobal("__esri.GeometryService")
-@js.native
-object GeometryService extends TopLevel[GeometryServiceConstructor]
 

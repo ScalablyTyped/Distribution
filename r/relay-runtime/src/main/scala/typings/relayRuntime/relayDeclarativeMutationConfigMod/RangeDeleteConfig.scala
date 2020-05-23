@@ -1,13 +1,13 @@
 package typings.relayRuntime.relayDeclarativeMutationConfigMod
 
-import typings.relayRuntime.AnonKey
+import typings.relayRuntime.anon.Key
 import typings.relayRuntime.relayRuntimeStrings.RANGE_DELETE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RangeDeleteConfig extends DeclarativeMutationConfig {
-  var connectionKeys: js.UndefOr[js.Array[AnonKey]] = js.undefined
+  var connectionKeys: js.UndefOr[js.Array[Key]] = js.undefined
   var connectionName: js.UndefOr[String] = js.undefined
   var deletedIDFieldName: String | js.Array[String]
   var parentID: js.UndefOr[String] = js.undefined
@@ -22,7 +22,7 @@ object RangeDeleteConfig {
     deletedIDFieldName: String | js.Array[String],
     pathToConnection: js.Array[String],
     `type`: RANGE_DELETE,
-    connectionKeys: js.Array[AnonKey] = null,
+    connectionKeys: js.Array[Key] = null,
     connectionName: String = null,
     parentID: String = null,
     parentName: String = null

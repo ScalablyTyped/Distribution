@@ -1,6 +1,7 @@
 package typings.rmcTrigger
 
 import typings.react.mod.Component
+import typings.rmcTrigger.anon.AfterPopupVisibleChange
 import typings.rmcTrigger.propsTypeMod.ITriggerProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,7 +29,7 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonAfterPopupVisibleChange = js.native
+    var defaultProps: AfterPopupVisibleChange = js.native
     var displayName: String = js.native
   }
   

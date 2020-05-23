@@ -16,20 +16,20 @@ trait IContactMaterialOptions extends js.Object {
 object IContactMaterialOptions {
   @scala.inline
   def apply(
-    contactEquationRelaxation: Int | Double = null,
-    contactEquationStiffness: Int | Double = null,
-    friction: Int | Double = null,
-    frictionEquationRelaxation: Int | Double = null,
-    frictionEquationStiffness: Int | Double = null,
-    restitution: Int | Double = null
+    contactEquationRelaxation: js.UndefOr[Double] = js.undefined,
+    contactEquationStiffness: js.UndefOr[Double] = js.undefined,
+    friction: js.UndefOr[Double] = js.undefined,
+    frictionEquationRelaxation: js.UndefOr[Double] = js.undefined,
+    frictionEquationStiffness: js.UndefOr[Double] = js.undefined,
+    restitution: js.UndefOr[Double] = js.undefined
   ): IContactMaterialOptions = {
     val __obj = js.Dynamic.literal()
-    if (contactEquationRelaxation != null) __obj.updateDynamic("contactEquationRelaxation")(contactEquationRelaxation.asInstanceOf[js.Any])
-    if (contactEquationStiffness != null) __obj.updateDynamic("contactEquationStiffness")(contactEquationStiffness.asInstanceOf[js.Any])
-    if (friction != null) __obj.updateDynamic("friction")(friction.asInstanceOf[js.Any])
-    if (frictionEquationRelaxation != null) __obj.updateDynamic("frictionEquationRelaxation")(frictionEquationRelaxation.asInstanceOf[js.Any])
-    if (frictionEquationStiffness != null) __obj.updateDynamic("frictionEquationStiffness")(frictionEquationStiffness.asInstanceOf[js.Any])
-    if (restitution != null) __obj.updateDynamic("restitution")(restitution.asInstanceOf[js.Any])
+    if (!js.isUndefined(contactEquationRelaxation)) __obj.updateDynamic("contactEquationRelaxation")(contactEquationRelaxation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(contactEquationStiffness)) __obj.updateDynamic("contactEquationStiffness")(contactEquationStiffness.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(friction)) __obj.updateDynamic("friction")(friction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(frictionEquationRelaxation)) __obj.updateDynamic("frictionEquationRelaxation")(frictionEquationRelaxation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(frictionEquationStiffness)) __obj.updateDynamic("frictionEquationStiffness")(frictionEquationStiffness.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(restitution)) __obj.updateDynamic("restitution")(restitution.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContactMaterialOptions]
   }
 }

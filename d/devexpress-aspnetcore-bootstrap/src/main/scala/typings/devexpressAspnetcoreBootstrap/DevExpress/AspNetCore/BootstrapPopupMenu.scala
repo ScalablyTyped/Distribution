@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapPopupMenu")
 @js.native
-class BootstrapPopupMenu () extends BootstrapMenu {
+trait BootstrapPopupMenu extends BootstrapMenu {
   def getCurrentPopupElement(): js.Any = js.native
   def getCurrentPopupElementIndex(): Double = js.native
   def hide(): Unit = js.native

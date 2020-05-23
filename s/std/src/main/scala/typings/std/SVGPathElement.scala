@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -69,8 +68,4 @@ trait SVGPathElement extends SVGGraphicsElement {
   def getPointAtLength(distance: Double): SVGPoint = js.native
   def getTotalLength(): Double = js.native
 }
-
-@JSGlobal("SVGPathElement")
-@js.native
-object SVGPathElement extends Instantiable0[SVGPathElement]
 

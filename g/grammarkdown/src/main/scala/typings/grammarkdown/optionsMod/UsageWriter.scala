@@ -10,12 +10,9 @@ class UsageWriter protected () extends js.Object {
   def this(margin: Double, padding: Double) = this()
   var fit: js.Any = js.native
   var margin: js.Any = js.native
-  var marginText: js.Any = js.native
   var padding: js.Any = js.native
-  var paddingText: js.Any = js.native
   var remainder: js.Any = js.native
   def writeOption(): Unit = js.native
-  def writeOption(left: js.UndefOr[scala.Nothing], right: String): Unit = js.native
   def writeOption(left: String): Unit = js.native
   def writeOption(left: String, right: String): Unit = js.native
   def writeln(): Unit = js.native

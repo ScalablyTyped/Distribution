@@ -16,7 +16,7 @@ object Opts {
     val __obj = js.Dynamic.literal()
     if (drives != null) __obj.updateDynamic("drives")(drives.asInstanceOf[js.Any])
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (!js.isUndefined(windows)) __obj.updateDynamic("windows")(windows.asInstanceOf[js.Any])
+    if (!js.isUndefined(windows)) __obj.updateDynamic("windows")(windows.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Opts]
   }
 }

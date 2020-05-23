@@ -30,10 +30,10 @@ trait EncryptionInTransit extends js.Object {
 
 object EncryptionInTransit {
   @scala.inline
-  def apply(ClientBroker: ClientBroker = null, InCluster: js.UndefOr[Boolean] = js.undefined): EncryptionInTransit = {
+  def apply(ClientBroker: ClientBroker = null, InCluster: js.UndefOr[boolean] = js.undefined): EncryptionInTransit = {
     val __obj = js.Dynamic.literal()
     if (ClientBroker != null) __obj.updateDynamic("ClientBroker")(ClientBroker.asInstanceOf[js.Any])
-    if (!js.isUndefined(InCluster)) __obj.updateDynamic("InCluster")(InCluster.asInstanceOf[js.Any])
+    if (!js.isUndefined(InCluster)) __obj.updateDynamic("InCluster")(InCluster.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptionInTransit]
   }
 }

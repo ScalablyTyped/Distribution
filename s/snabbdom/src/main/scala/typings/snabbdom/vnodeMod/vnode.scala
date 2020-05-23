@@ -1,6 +1,6 @@
 package typings.snabbdom.vnodeMod
 
-import typings.snabbdom.attributesMod._Global_.Element
+import typings.snabbdom.attributesMod.global.Element
 import typings.std.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,7 @@ object vnode extends js.Object {
   def apply(sel: String, data: js.Any): VNode_ = js.native
   def apply(sel: String, data: js.Any, children: js.Array[VNode_ | String]): VNode_ = js.native
   def apply(sel: String, data: js.Any, children: js.Array[VNode_ | String], text: String): VNode_ = js.native
-  def apply(sel: String, data: js.Any, children: js.Array[VNode_ | String], text: String, elm: Element | Text): VNode_ = js.native
+  def apply(sel: String, data: js.Any, children: js.Array[VNode_ | String], text: String, elm: Element): VNode_ = js.native
+  def apply(sel: String, data: js.Any, children: js.Array[VNode_ | String], text: String, elm: Text): VNode_ = js.native
 }
 

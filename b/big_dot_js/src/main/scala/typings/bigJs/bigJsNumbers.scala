@@ -1,7 +1,7 @@
 package typings.bigJs
 
-import typings.bigJs.mod.RoundingMode
-import typings.bigJs.mod._Global_.BigJs.Comparison
+import typings.bigJs.mod.global.BigJs.Comparison
+import typings.bigJs.mod.global.BigJs.RoundingMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,24 +17,24 @@ object bigJsNumbers {
     extends Comparison
        with typings.bigJs.mod.Comparison
        with RoundingMode
-       with typings.bigJs.mod._Global_.BigJs.RoundingMode
+       with typings.bigJs.mod.RoundingMode
   
   @js.native
   sealed trait `1`
     extends Comparison
        with typings.bigJs.mod.Comparison
        with RoundingMode
-       with typings.bigJs.mod._Global_.BigJs.RoundingMode
+       with typings.bigJs.mod.RoundingMode
   
   @js.native
   sealed trait `2`
     extends RoundingMode
-       with typings.bigJs.mod._Global_.BigJs.RoundingMode
+       with typings.bigJs.mod.RoundingMode
   
   @js.native
   sealed trait `3`
     extends RoundingMode
-       with typings.bigJs.mod._Global_.BigJs.RoundingMode
+       with typings.bigJs.mod.RoundingMode
   
   @scala.inline
   def `-1`: `-1` = -1.asInstanceOf[`-1`]

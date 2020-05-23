@@ -13,6 +13,14 @@ object mod extends js.Object {
     def this(pos: typings.sat.SAT.Vector) = this()
     def this(pos: typings.sat.SAT.Vector, width: Double) = this()
     def this(pos: typings.sat.SAT.Vector, width: Double, height: Double) = this()
+    /* CompleteClass */
+    override var h: Double = js.native
+    /* CompleteClass */
+    override var pos: typings.sat.SAT.Vector = js.native
+    /* CompleteClass */
+    override var w: Double = js.native
+    /* CompleteClass */
+    override def toPolygon(): typings.sat.SAT.Polygon = js.native
   }
   
   @js.native
@@ -20,6 +28,10 @@ object mod extends js.Object {
     extends typings.sat.SAT.Circle {
     def this(pos: typings.sat.SAT.Vector) = this()
     def this(pos: typings.sat.SAT.Vector, r: Double) = this()
+    /* CompleteClass */
+    override var pos: typings.sat.SAT.Vector = js.native
+    /* CompleteClass */
+    override var r: Double = js.native
   }
   
   @js.native
@@ -27,18 +39,63 @@ object mod extends js.Object {
     extends typings.sat.SAT.Polygon {
     def this(pos: typings.sat.SAT.Vector) = this()
     def this(pos: typings.sat.SAT.Vector, points: js.Array[typings.sat.SAT.Vector]) = this()
+    /* CompleteClass */
+    override var angle: Double = js.native
+    /* CompleteClass */
+    override var calcPoints: js.Array[typings.sat.SAT.Vector] = js.native
+    /* CompleteClass */
+    override var edges: js.Array[typings.sat.SAT.Vector] = js.native
+    /* CompleteClass */
+    override var normals: js.Array[typings.sat.SAT.Vector] = js.native
+    /* CompleteClass */
+    override var offset: typings.sat.SAT.Vector = js.native
+    /* CompleteClass */
+    override var points: js.Array[typings.sat.SAT.Vector] = js.native
+    /* CompleteClass */
+    override var pos: typings.sat.SAT.Vector = js.native
+    /* CompleteClass */
+    override def getAABB(): typings.sat.SAT.Polygon = js.native
+    /* CompleteClass */
+    override def getCentroid(): typings.sat.SAT.Vector = js.native
+    /* CompleteClass */
+    override def rotate(angle: Double): typings.sat.SAT.Polygon = js.native
+    /* CompleteClass */
+    override def setAngle(angle: Double): typings.sat.SAT.Polygon = js.native
+    /* CompleteClass */
+    override def setOffset(offset: typings.sat.SAT.Vector): typings.sat.SAT.Polygon = js.native
+    /* CompleteClass */
+    override def setPoints(points: js.Array[typings.sat.SAT.Vector]): typings.sat.SAT.Polygon = js.native
+    /* CompleteClass */
+    override def translate(x: Double, y: Double): typings.sat.SAT.Polygon = js.native
   }
   
   @js.native
   class Response ()
-    extends typings.sat.SAT.Response
+    extends typings.sat.SAT.Response {
+    /* CompleteClass */
+    override var a: js.Any = js.native
+    /* CompleteClass */
+    override var aInB: Boolean = js.native
+    /* CompleteClass */
+    override var b: js.Any = js.native
+    /* CompleteClass */
+    override var bInA: Boolean = js.native
+    /* CompleteClass */
+    override var overlap: Double = js.native
+    /* CompleteClass */
+    override var overlapN: typings.sat.SAT.Vector = js.native
+    /* CompleteClass */
+    override var overlapV: typings.sat.SAT.Vector = js.native
+    /* CompleteClass */
+    override def clear(): typings.sat.SAT.Response = js.native
+  }
   
   @js.native
   /**
-  		 * @class Vector has two properties
-  		 * @param {number} x The x-coordinate of the Vector.
-  		 * @param {number} y The y-coordinate of the Vector.
-  		 */
+    * @class Vector has two properties
+    * @param {number} x The x-coordinate of the Vector.
+    * @param {number} y The y-coordinate of the Vector.
+    */
   class Vector ()
     extends typings.sat.SAT.Vector {
     def this(x: Double) = this()

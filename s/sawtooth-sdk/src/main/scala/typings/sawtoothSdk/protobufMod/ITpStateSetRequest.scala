@@ -13,10 +13,13 @@ trait ITpStateSetRequest extends js.Object {
 
 object ITpStateSetRequest {
   @scala.inline
-  def apply(contextId: String = null, entries: js.Array[ITpStateEntry] = null): ITpStateSetRequest = {
+  def apply(
+    contextId: js.UndefOr[Null | String] = js.undefined,
+    entries: js.UndefOr[Null | js.Array[ITpStateEntry]] = js.undefined
+  ): ITpStateSetRequest = {
     val __obj = js.Dynamic.literal()
-    if (contextId != null) __obj.updateDynamic("contextId")(contextId.asInstanceOf[js.Any])
-    if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
+    if (!js.isUndefined(contextId)) __obj.updateDynamic("contextId")(contextId.asInstanceOf[js.Any])
+    if (!js.isUndefined(entries)) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITpStateSetRequest]
   }
 }

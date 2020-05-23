@@ -66,7 +66,7 @@ object ClientConfig {
     val __obj = js.Dynamic.literal()
     if (client_id != null) __obj.updateDynamic("client_id")(client_id.asInstanceOf[js.Any])
     if (cookie_policy != null) __obj.updateDynamic("cookie_policy")(cookie_policy.asInstanceOf[js.Any])
-    if (!js.isUndefined(fetch_basic_profile)) __obj.updateDynamic("fetch_basic_profile")(fetch_basic_profile.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetch_basic_profile)) __obj.updateDynamic("fetch_basic_profile")(fetch_basic_profile.get.asInstanceOf[js.Any])
     if (hosted_domain != null) __obj.updateDynamic("hosted_domain")(hosted_domain.asInstanceOf[js.Any])
     if (openid_realm != null) __obj.updateDynamic("openid_realm")(openid_realm.asInstanceOf[js.Any])
     if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])

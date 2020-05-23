@@ -21,9 +21,8 @@ object NodeBase {
     `type`: typings.regexpp.regexppStrings.RegExpLiteral | typings.regexpp.regexppStrings.Pattern | typings.regexpp.regexppStrings.Alternative | typings.regexpp.regexppStrings.Group | typings.regexpp.regexppStrings.CapturingGroup | typings.regexpp.regexppStrings.Quantifier | typings.regexpp.regexppStrings.CharacterClass | typings.regexpp.regexppStrings.Assertion | typings.regexpp.regexppStrings.CharacterClassRange | typings.regexpp.regexppStrings.CharacterSet | typings.regexpp.regexppStrings.Character | typings.regexpp.regexppStrings.Backreference | typings.regexpp.regexppStrings.Flags,
     parent: RegExpLiteral | Pattern | Group | CapturingGroup | LookaroundAssertion | Alternative | Quantifier | CharacterClass | CharacterClassRange = null
   ): NodeBase = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeBase]
   }
 }

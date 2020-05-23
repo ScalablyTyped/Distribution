@@ -25,12 +25,12 @@ object CreateEmailIdentityResponse {
   def apply(
     DkimAttributes: DkimAttributes = null,
     IdentityType: IdentityType = null,
-    VerifiedForSendingStatus: js.UndefOr[Boolean] = js.undefined
+    VerifiedForSendingStatus: js.UndefOr[Enabled] = js.undefined
   ): CreateEmailIdentityResponse = {
     val __obj = js.Dynamic.literal()
     if (DkimAttributes != null) __obj.updateDynamic("DkimAttributes")(DkimAttributes.asInstanceOf[js.Any])
     if (IdentityType != null) __obj.updateDynamic("IdentityType")(IdentityType.asInstanceOf[js.Any])
-    if (!js.isUndefined(VerifiedForSendingStatus)) __obj.updateDynamic("VerifiedForSendingStatus")(VerifiedForSendingStatus.asInstanceOf[js.Any])
+    if (!js.isUndefined(VerifiedForSendingStatus)) __obj.updateDynamic("VerifiedForSendingStatus")(VerifiedForSendingStatus.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateEmailIdentityResponse]
   }
 }

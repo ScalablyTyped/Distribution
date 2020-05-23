@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.data.TreeListDataSource")
 @js.native
-class TreeListDataSource () extends DataSource {
+trait TreeListDataSource extends DataSource {
   def add(model: TreeListModel): TreeListModel = js.native
   def cancelChanges(model: TreeListModel): Unit = js.native
   def childNodes(model: TreeListModel): js.Array[TreeListModel] = js.native

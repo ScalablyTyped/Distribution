@@ -1,6 +1,6 @@
 package typings.canvasjs.mod
 
-import typings.canvasjs.AnonAxis
+import typings.canvasjs.anon.Axis
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -69,7 +69,7 @@ trait ChartStripLinesOptions extends js.Object {
   /**
     * A custom formatter function that returns stripLine’s label.
     */
-  var labelFormatter: js.UndefOr[js.Function1[/* e */ js.UndefOr[AnonAxis], String]] = js.undefined
+  var labelFormatter: js.UndefOr[js.Function1[/* e */ js.UndefOr[Axis], String]] = js.undefined
   /**
     * labelMaxWidth defines the maximum width of labels after which they get wrapped or clipped depending on labelWrap’s value.
     * It overrides the labelMaxWidth value set at axis level.
@@ -132,43 +132,43 @@ object ChartStripLinesOptions {
     labelMaxWidth: Double,
     labelWrap: Boolean,
     color: String = null,
-    endValue: Int | Double = null,
+    endValue: js.UndefOr[Double] = js.undefined,
     label: String = null,
     labelAlign: String = null,
     labelBackgroundColor: String = null,
     labelFontColor: String = null,
     labelFontFamily: String = null,
-    labelFontSize: Int | Double = null,
+    labelFontSize: js.UndefOr[Double] = js.undefined,
     labelFontStyle: String = null,
     labelFontWeight: String = null,
-    labelFormatter: /* e */ js.UndefOr[AnonAxis] => String = null,
+    labelFormatter: /* e */ js.UndefOr[Axis] => String = null,
     labelPlacement: String = null,
     lineDashType: DashType = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     showOnTop: js.UndefOr[Boolean] = js.undefined,
-    startValue: Int | Double = null,
-    thickness: Int | Double = null,
-    value: Int | Double = null
+    startValue: js.UndefOr[Double] = js.undefined,
+    thickness: js.UndefOr[Double] = js.undefined,
+    value: js.UndefOr[Double] = js.undefined
   ): ChartStripLinesOptions = {
     val __obj = js.Dynamic.literal(labelMaxWidth = labelMaxWidth.asInstanceOf[js.Any], labelWrap = labelWrap.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (endValue != null) __obj.updateDynamic("endValue")(endValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(endValue)) __obj.updateDynamic("endValue")(endValue.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelAlign != null) __obj.updateDynamic("labelAlign")(labelAlign.asInstanceOf[js.Any])
     if (labelBackgroundColor != null) __obj.updateDynamic("labelBackgroundColor")(labelBackgroundColor.asInstanceOf[js.Any])
     if (labelFontColor != null) __obj.updateDynamic("labelFontColor")(labelFontColor.asInstanceOf[js.Any])
     if (labelFontFamily != null) __obj.updateDynamic("labelFontFamily")(labelFontFamily.asInstanceOf[js.Any])
-    if (labelFontSize != null) __obj.updateDynamic("labelFontSize")(labelFontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelFontSize)) __obj.updateDynamic("labelFontSize")(labelFontSize.get.asInstanceOf[js.Any])
     if (labelFontStyle != null) __obj.updateDynamic("labelFontStyle")(labelFontStyle.asInstanceOf[js.Any])
     if (labelFontWeight != null) __obj.updateDynamic("labelFontWeight")(labelFontWeight.asInstanceOf[js.Any])
     if (labelFormatter != null) __obj.updateDynamic("labelFormatter")(js.Any.fromFunction1(labelFormatter))
     if (labelPlacement != null) __obj.updateDynamic("labelPlacement")(labelPlacement.asInstanceOf[js.Any])
     if (lineDashType != null) __obj.updateDynamic("lineDashType")(lineDashType.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOnTop)) __obj.updateDynamic("showOnTop")(showOnTop.asInstanceOf[js.Any])
-    if (startValue != null) __obj.updateDynamic("startValue")(startValue.asInstanceOf[js.Any])
-    if (thickness != null) __obj.updateDynamic("thickness")(thickness.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOnTop)) __obj.updateDynamic("showOnTop")(showOnTop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startValue)) __obj.updateDynamic("startValue")(startValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(thickness)) __obj.updateDynamic("thickness")(thickness.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartStripLinesOptions]
   }
 }

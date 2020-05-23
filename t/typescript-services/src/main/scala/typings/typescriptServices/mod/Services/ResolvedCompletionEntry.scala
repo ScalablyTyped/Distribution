@@ -16,5 +16,19 @@ class ResolvedCompletionEntry protected ()
     fullSymbolName: String,
     docComment: String
   ) = this()
+  /* CompleteClass */
+  override var docComment: String = js.native
+  /* CompleteClass */
+  override var fullSymbolName: String = js.native
+  /* CompleteClass */
+  override var kind: String = js.native
+  /* CompleteClass */
+  override var kindModifiers: String = js.native
+  /* CompleteClass */
+  override var name: String = js.native
+  /* CompleteClass */
+  override var `type`: String = js.native
+  /* CompleteClass */
+  override def isResolved(): Boolean = js.native
 }
 

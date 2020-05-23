@@ -45,7 +45,7 @@ object RoutingControlOptions {
     minimizedClassName: String = null,
     plan: Plan_ = null,
     pointMarkerStyle: PathOptions = null,
-    routeDragInterval: Int | Double = null,
+    routeDragInterval: js.UndefOr[Double] = js.undefined,
     routeLine: (/* route */ IRoute, /* options */ LineOptions) => Line_ = null,
     routeWhileDragging: js.UndefOr[Boolean] = js.undefined,
     router: IRouter = null,
@@ -53,7 +53,7 @@ object RoutingControlOptions {
     showAlternatives: js.UndefOr[Boolean] = js.undefined,
     summaryTemplate: String = null,
     timeTemplate: String = null,
-    totalDistanceRoundingSensitivity: Int | Double = null,
+    totalDistanceRoundingSensitivity: js.UndefOr[Double] = js.undefined,
     useZoomParameter: js.UndefOr[Boolean] = js.undefined,
     waypointMode: String = null,
     waypoints: js.Array[LatLng_ | Waypoint_] = null
@@ -61,10 +61,10 @@ object RoutingControlOptions {
     val __obj = js.Dynamic.literal()
     if (altLineOptions != null) __obj.updateDynamic("altLineOptions")(altLineOptions.asInstanceOf[js.Any])
     if (alternativeClassName != null) __obj.updateDynamic("alternativeClassName")(alternativeClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoRoute)) __obj.updateDynamic("autoRoute")(autoRoute.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoRoute)) __obj.updateDynamic("autoRoute")(autoRoute.get.asInstanceOf[js.Any])
     if (collapseBtn != null) __obj.updateDynamic("collapseBtn")(js.Any.fromFunction1(collapseBtn))
     if (collapseBtnClass != null) __obj.updateDynamic("collapseBtnClass")(collapseBtnClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible.get.asInstanceOf[js.Any])
     if (containerClassName != null) __obj.updateDynamic("containerClassName")(containerClassName.asInstanceOf[js.Any])
     if (distanceTemplate != null) __obj.updateDynamic("distanceTemplate")(distanceTemplate.asInstanceOf[js.Any])
     if (fitSelectedRoutes != null) __obj.updateDynamic("fitSelectedRoutes")(fitSelectedRoutes.asInstanceOf[js.Any])
@@ -76,16 +76,16 @@ object RoutingControlOptions {
     if (minimizedClassName != null) __obj.updateDynamic("minimizedClassName")(minimizedClassName.asInstanceOf[js.Any])
     if (plan != null) __obj.updateDynamic("plan")(plan.asInstanceOf[js.Any])
     if (pointMarkerStyle != null) __obj.updateDynamic("pointMarkerStyle")(pointMarkerStyle.asInstanceOf[js.Any])
-    if (routeDragInterval != null) __obj.updateDynamic("routeDragInterval")(routeDragInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(routeDragInterval)) __obj.updateDynamic("routeDragInterval")(routeDragInterval.get.asInstanceOf[js.Any])
     if (routeLine != null) __obj.updateDynamic("routeLine")(js.Any.fromFunction2(routeLine))
-    if (!js.isUndefined(routeWhileDragging)) __obj.updateDynamic("routeWhileDragging")(routeWhileDragging.asInstanceOf[js.Any])
+    if (!js.isUndefined(routeWhileDragging)) __obj.updateDynamic("routeWhileDragging")(routeWhileDragging.get.asInstanceOf[js.Any])
     if (router != null) __obj.updateDynamic("router")(router.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAlternatives)) __obj.updateDynamic("showAlternatives")(showAlternatives.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAlternatives)) __obj.updateDynamic("showAlternatives")(showAlternatives.get.asInstanceOf[js.Any])
     if (summaryTemplate != null) __obj.updateDynamic("summaryTemplate")(summaryTemplate.asInstanceOf[js.Any])
     if (timeTemplate != null) __obj.updateDynamic("timeTemplate")(timeTemplate.asInstanceOf[js.Any])
-    if (totalDistanceRoundingSensitivity != null) __obj.updateDynamic("totalDistanceRoundingSensitivity")(totalDistanceRoundingSensitivity.asInstanceOf[js.Any])
-    if (!js.isUndefined(useZoomParameter)) __obj.updateDynamic("useZoomParameter")(useZoomParameter.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalDistanceRoundingSensitivity)) __obj.updateDynamic("totalDistanceRoundingSensitivity")(totalDistanceRoundingSensitivity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useZoomParameter)) __obj.updateDynamic("useZoomParameter")(useZoomParameter.get.asInstanceOf[js.Any])
     if (waypointMode != null) __obj.updateDynamic("waypointMode")(waypointMode.asInstanceOf[js.Any])
     if (waypoints != null) __obj.updateDynamic("waypoints")(waypoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoutingControlOptions]

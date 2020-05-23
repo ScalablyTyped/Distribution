@@ -19,7 +19,7 @@ trait CreateDomainRequest extends js.Object {
     */
   var DomainName: typings.awsSdk.sagemakerMod.DomainName = js.native
   /**
-    * The AWS Key Management Service encryption key ID.
+    * The AWS Key Management Service (KMS) encryption key ID. Encryption with a customer master key (CMK) is not supported.
     */
   var HomeEfsFileSystemKmsKeyId: js.UndefOr[KmsKeyId] = js.native
   /**

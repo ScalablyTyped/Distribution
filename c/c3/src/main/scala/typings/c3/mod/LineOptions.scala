@@ -1,6 +1,6 @@
 package typings.c3.mod
 
-import typings.c3.Anon1
+import typings.c3.anon.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,14 +12,14 @@ trait LineOptions extends js.Object {
     * If `false` set, the region of null data will not be connected and get empty.
     */
   var connectNull: js.UndefOr[Boolean] = js.undefined
-  var step: js.UndefOr[Anon1] = js.undefined
+  var step: js.UndefOr[`1`] = js.undefined
 }
 
 object LineOptions {
   @scala.inline
-  def apply(connectNull: js.UndefOr[Boolean] = js.undefined, step: Anon1 = null): LineOptions = {
+  def apply(connectNull: js.UndefOr[Boolean] = js.undefined, step: `1` = null): LineOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(connectNull)) __obj.updateDynamic("connectNull")(connectNull.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectNull)) __obj.updateDynamic("connectNull")(connectNull.get.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineOptions]
   }

@@ -40,6 +40,10 @@ trait TiledObject extends js.Object {
     */
   var name: String
   /**
+    * Only set, and set to `true`, if a point object.
+    */
+  var point: js.UndefOr[Boolean] = js.undefined
+  /**
     * Only set if a polygon object. An array of objects corresponding to points, where each point has an `x` property and a `y` property.
     */
   var polygon: js.UndefOr[js.Array[Vector2Like]] = js.undefined
@@ -95,37 +99,39 @@ object TiledObject {
     flippedAntiDiagonal: js.UndefOr[Boolean] = js.undefined,
     flippedHorizontal: js.UndefOr[Boolean] = js.undefined,
     flippedVertical: js.UndefOr[Boolean] = js.undefined,
-    gid: Int | Double = null,
-    height: Int | Double = null,
+    gid: js.UndefOr[integer] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
+    point: js.UndefOr[Boolean] = js.undefined,
     polygon: js.Array[Vector2Like] = null,
     polyline: js.Array[Vector2Like] = null,
     properties: js.Any = null,
     rectangle: js.UndefOr[Boolean] = js.undefined,
-    rotation: Int | Double = null,
+    rotation: js.UndefOr[Double] = js.undefined,
     text: js.Any = null,
     visible: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null,
-    x: Int | Double = null,
-    y: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined,
+    x: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined
   ): TiledObject = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(ellipse)) __obj.updateDynamic("ellipse")(ellipse.asInstanceOf[js.Any])
-    if (!js.isUndefined(flippedAntiDiagonal)) __obj.updateDynamic("flippedAntiDiagonal")(flippedAntiDiagonal.asInstanceOf[js.Any])
-    if (!js.isUndefined(flippedHorizontal)) __obj.updateDynamic("flippedHorizontal")(flippedHorizontal.asInstanceOf[js.Any])
-    if (!js.isUndefined(flippedVertical)) __obj.updateDynamic("flippedVertical")(flippedVertical.asInstanceOf[js.Any])
-    if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(ellipse)) __obj.updateDynamic("ellipse")(ellipse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flippedAntiDiagonal)) __obj.updateDynamic("flippedAntiDiagonal")(flippedAntiDiagonal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flippedHorizontal)) __obj.updateDynamic("flippedHorizontal")(flippedHorizontal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flippedVertical)) __obj.updateDynamic("flippedVertical")(flippedVertical.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gid)) __obj.updateDynamic("gid")(gid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(point)) __obj.updateDynamic("point")(point.get.asInstanceOf[js.Any])
     if (polygon != null) __obj.updateDynamic("polygon")(polygon.asInstanceOf[js.Any])
     if (polyline != null) __obj.updateDynamic("polyline")(polyline.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (!js.isUndefined(rectangle)) __obj.updateDynamic("rectangle")(rectangle.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (!js.isUndefined(rectangle)) __obj.updateDynamic("rectangle")(rectangle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TiledObject]
   }
 }

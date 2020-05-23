@@ -25,6 +25,30 @@ import scala.scalajs.js.annotation._
   - typings.vegaTypings.vegaTypingsStrings.`bluepurple-7`
   - typings.vegaTypings.vegaTypingsStrings.`bluepurple-8`
   - typings.vegaTypings.vegaTypingsStrings.`bluepurple-9`
+  - typings.vegaTypings.vegaTypingsStrings.goldgreen
+  - typings.vegaTypings.vegaTypingsStrings.`goldgreen-3`
+  - typings.vegaTypings.vegaTypingsStrings.`goldgreen-4`
+  - typings.vegaTypings.vegaTypingsStrings.`goldgreen-5`
+  - typings.vegaTypings.vegaTypingsStrings.`goldgreen-6`
+  - typings.vegaTypings.vegaTypingsStrings.`goldgreen-7`
+  - typings.vegaTypings.vegaTypingsStrings.`goldgreen-8`
+  - typings.vegaTypings.vegaTypingsStrings.`goldgreen-9`
+  - typings.vegaTypings.vegaTypingsStrings.goldorange
+  - typings.vegaTypings.vegaTypingsStrings.`goldorange-3`
+  - typings.vegaTypings.vegaTypingsStrings.`goldorange-4`
+  - typings.vegaTypings.vegaTypingsStrings.`goldorange-5`
+  - typings.vegaTypings.vegaTypingsStrings.`goldorange-6`
+  - typings.vegaTypings.vegaTypingsStrings.`goldorange-7`
+  - typings.vegaTypings.vegaTypingsStrings.`goldorange-8`
+  - typings.vegaTypings.vegaTypingsStrings.`goldorange-9`
+  - typings.vegaTypings.vegaTypingsStrings.goldred
+  - typings.vegaTypings.vegaTypingsStrings.`goldred-3`
+  - typings.vegaTypings.vegaTypingsStrings.`goldred-4`
+  - typings.vegaTypings.vegaTypingsStrings.`goldred-5`
+  - typings.vegaTypings.vegaTypingsStrings.`goldred-6`
+  - typings.vegaTypings.vegaTypingsStrings.`goldred-7`
+  - typings.vegaTypings.vegaTypingsStrings.`goldred-8`
+  - typings.vegaTypings.vegaTypingsStrings.`goldred-9`
   - typings.vegaTypings.vegaTypingsStrings.greenblue
   - typings.vegaTypings.vegaTypingsStrings.`greenblue-3`
   - typings.vegaTypings.vegaTypingsStrings.`greenblue-4`
@@ -105,6 +129,86 @@ import scala.scalajs.js.annotation._
   - typings.vegaTypings.vegaTypingsStrings.`yelloworangered-7`
   - typings.vegaTypings.vegaTypingsStrings.`yelloworangered-8`
   - typings.vegaTypings.vegaTypingsStrings.`yelloworangered-9`
+  - typings.vegaTypings.vegaTypingsStrings.darkblue
+  - typings.vegaTypings.vegaTypingsStrings.`darkblue-3`
+  - typings.vegaTypings.vegaTypingsStrings.`darkblue-4`
+  - typings.vegaTypings.vegaTypingsStrings.`darkblue-5`
+  - typings.vegaTypings.vegaTypingsStrings.`darkblue-6`
+  - typings.vegaTypings.vegaTypingsStrings.`darkblue-7`
+  - typings.vegaTypings.vegaTypingsStrings.`darkblue-8`
+  - typings.vegaTypings.vegaTypingsStrings.`darkblue-9`
+  - typings.vegaTypings.vegaTypingsStrings.darkgold
+  - typings.vegaTypings.vegaTypingsStrings.`darkgold-3`
+  - typings.vegaTypings.vegaTypingsStrings.`darkgold-4`
+  - typings.vegaTypings.vegaTypingsStrings.`darkgold-5`
+  - typings.vegaTypings.vegaTypingsStrings.`darkgold-6`
+  - typings.vegaTypings.vegaTypingsStrings.`darkgold-7`
+  - typings.vegaTypings.vegaTypingsStrings.`darkgold-8`
+  - typings.vegaTypings.vegaTypingsStrings.`darkgold-9`
+  - typings.vegaTypings.vegaTypingsStrings.darkgreen
+  - typings.vegaTypings.vegaTypingsStrings.`darkgreen-3`
+  - typings.vegaTypings.vegaTypingsStrings.`darkgreen-4`
+  - typings.vegaTypings.vegaTypingsStrings.`darkgreen-5`
+  - typings.vegaTypings.vegaTypingsStrings.`darkgreen-6`
+  - typings.vegaTypings.vegaTypingsStrings.`darkgreen-7`
+  - typings.vegaTypings.vegaTypingsStrings.`darkgreen-8`
+  - typings.vegaTypings.vegaTypingsStrings.`darkgreen-9`
+  - typings.vegaTypings.vegaTypingsStrings.darkmulti
+  - typings.vegaTypings.vegaTypingsStrings.`darkmulti-3`
+  - typings.vegaTypings.vegaTypingsStrings.`darkmulti-4`
+  - typings.vegaTypings.vegaTypingsStrings.`darkmulti-5`
+  - typings.vegaTypings.vegaTypingsStrings.`darkmulti-6`
+  - typings.vegaTypings.vegaTypingsStrings.`darkmulti-7`
+  - typings.vegaTypings.vegaTypingsStrings.`darkmulti-8`
+  - typings.vegaTypings.vegaTypingsStrings.`darkmulti-9`
+  - typings.vegaTypings.vegaTypingsStrings.darkred
+  - typings.vegaTypings.vegaTypingsStrings.`darkred-3`
+  - typings.vegaTypings.vegaTypingsStrings.`darkred-4`
+  - typings.vegaTypings.vegaTypingsStrings.`darkred-5`
+  - typings.vegaTypings.vegaTypingsStrings.`darkred-6`
+  - typings.vegaTypings.vegaTypingsStrings.`darkred-7`
+  - typings.vegaTypings.vegaTypingsStrings.`darkred-8`
+  - typings.vegaTypings.vegaTypingsStrings.`darkred-9`
+  - typings.vegaTypings.vegaTypingsStrings.lightgreyred
+  - typings.vegaTypings.vegaTypingsStrings.`lightgreyred-3`
+  - typings.vegaTypings.vegaTypingsStrings.`lightgreyred-4`
+  - typings.vegaTypings.vegaTypingsStrings.`lightgreyred-5`
+  - typings.vegaTypings.vegaTypingsStrings.`lightgreyred-6`
+  - typings.vegaTypings.vegaTypingsStrings.`lightgreyred-7`
+  - typings.vegaTypings.vegaTypingsStrings.`lightgreyred-8`
+  - typings.vegaTypings.vegaTypingsStrings.`lightgreyred-9`
+  - typings.vegaTypings.vegaTypingsStrings.lightgreyteal
+  - typings.vegaTypings.vegaTypingsStrings.`lightgreyteal-3`
+  - typings.vegaTypings.vegaTypingsStrings.`lightgreyteal-4`
+  - typings.vegaTypings.vegaTypingsStrings.`lightgreyteal-5`
+  - typings.vegaTypings.vegaTypingsStrings.`lightgreyteal-6`
+  - typings.vegaTypings.vegaTypingsStrings.`lightgreyteal-7`
+  - typings.vegaTypings.vegaTypingsStrings.`lightgreyteal-8`
+  - typings.vegaTypings.vegaTypingsStrings.`lightgreyteal-9`
+  - typings.vegaTypings.vegaTypingsStrings.lightmulti
+  - typings.vegaTypings.vegaTypingsStrings.`lightmulti-3`
+  - typings.vegaTypings.vegaTypingsStrings.`lightmulti-4`
+  - typings.vegaTypings.vegaTypingsStrings.`lightmulti-5`
+  - typings.vegaTypings.vegaTypingsStrings.`lightmulti-6`
+  - typings.vegaTypings.vegaTypingsStrings.`lightmulti-7`
+  - typings.vegaTypings.vegaTypingsStrings.`lightmulti-8`
+  - typings.vegaTypings.vegaTypingsStrings.`lightmulti-9`
+  - typings.vegaTypings.vegaTypingsStrings.lightorange
+  - typings.vegaTypings.vegaTypingsStrings.`lightorange-3`
+  - typings.vegaTypings.vegaTypingsStrings.`lightorange-4`
+  - typings.vegaTypings.vegaTypingsStrings.`lightorange-5`
+  - typings.vegaTypings.vegaTypingsStrings.`lightorange-6`
+  - typings.vegaTypings.vegaTypingsStrings.`lightorange-7`
+  - typings.vegaTypings.vegaTypingsStrings.`lightorange-8`
+  - typings.vegaTypings.vegaTypingsStrings.`lightorange-9`
+  - typings.vegaTypings.vegaTypingsStrings.lighttealblue
+  - typings.vegaTypings.vegaTypingsStrings.`lighttealblue-3`
+  - typings.vegaTypings.vegaTypingsStrings.`lighttealblue-4`
+  - typings.vegaTypings.vegaTypingsStrings.`lighttealblue-5`
+  - typings.vegaTypings.vegaTypingsStrings.`lighttealblue-6`
+  - typings.vegaTypings.vegaTypingsStrings.`lighttealblue-7`
+  - typings.vegaTypings.vegaTypingsStrings.`lighttealblue-8`
+  - typings.vegaTypings.vegaTypingsStrings.`lighttealblue-9`
 */
 trait SequentialMultiHue extends js.Object
 
@@ -142,6 +246,134 @@ object SequentialMultiHue {
   @scala.inline
   def `bluepurple-9`: typings.vegaTypings.vegaTypingsStrings.`bluepurple-9` = "bluepurple-9".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`bluepurple-9`]
   @scala.inline
+  def darkblue: typings.vegaTypings.vegaTypingsStrings.darkblue = "darkblue".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.darkblue]
+  @scala.inline
+  def `darkblue-3`: typings.vegaTypings.vegaTypingsStrings.`darkblue-3` = "darkblue-3".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkblue-3`]
+  @scala.inline
+  def `darkblue-4`: typings.vegaTypings.vegaTypingsStrings.`darkblue-4` = "darkblue-4".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkblue-4`]
+  @scala.inline
+  def `darkblue-5`: typings.vegaTypings.vegaTypingsStrings.`darkblue-5` = "darkblue-5".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkblue-5`]
+  @scala.inline
+  def `darkblue-6`: typings.vegaTypings.vegaTypingsStrings.`darkblue-6` = "darkblue-6".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkblue-6`]
+  @scala.inline
+  def `darkblue-7`: typings.vegaTypings.vegaTypingsStrings.`darkblue-7` = "darkblue-7".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkblue-7`]
+  @scala.inline
+  def `darkblue-8`: typings.vegaTypings.vegaTypingsStrings.`darkblue-8` = "darkblue-8".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkblue-8`]
+  @scala.inline
+  def `darkblue-9`: typings.vegaTypings.vegaTypingsStrings.`darkblue-9` = "darkblue-9".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkblue-9`]
+  @scala.inline
+  def darkgold: typings.vegaTypings.vegaTypingsStrings.darkgold = "darkgold".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.darkgold]
+  @scala.inline
+  def `darkgold-3`: typings.vegaTypings.vegaTypingsStrings.`darkgold-3` = "darkgold-3".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkgold-3`]
+  @scala.inline
+  def `darkgold-4`: typings.vegaTypings.vegaTypingsStrings.`darkgold-4` = "darkgold-4".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkgold-4`]
+  @scala.inline
+  def `darkgold-5`: typings.vegaTypings.vegaTypingsStrings.`darkgold-5` = "darkgold-5".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkgold-5`]
+  @scala.inline
+  def `darkgold-6`: typings.vegaTypings.vegaTypingsStrings.`darkgold-6` = "darkgold-6".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkgold-6`]
+  @scala.inline
+  def `darkgold-7`: typings.vegaTypings.vegaTypingsStrings.`darkgold-7` = "darkgold-7".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkgold-7`]
+  @scala.inline
+  def `darkgold-8`: typings.vegaTypings.vegaTypingsStrings.`darkgold-8` = "darkgold-8".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkgold-8`]
+  @scala.inline
+  def `darkgold-9`: typings.vegaTypings.vegaTypingsStrings.`darkgold-9` = "darkgold-9".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkgold-9`]
+  @scala.inline
+  def darkgreen: typings.vegaTypings.vegaTypingsStrings.darkgreen = "darkgreen".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.darkgreen]
+  @scala.inline
+  def `darkgreen-3`: typings.vegaTypings.vegaTypingsStrings.`darkgreen-3` = "darkgreen-3".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkgreen-3`]
+  @scala.inline
+  def `darkgreen-4`: typings.vegaTypings.vegaTypingsStrings.`darkgreen-4` = "darkgreen-4".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkgreen-4`]
+  @scala.inline
+  def `darkgreen-5`: typings.vegaTypings.vegaTypingsStrings.`darkgreen-5` = "darkgreen-5".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkgreen-5`]
+  @scala.inline
+  def `darkgreen-6`: typings.vegaTypings.vegaTypingsStrings.`darkgreen-6` = "darkgreen-6".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkgreen-6`]
+  @scala.inline
+  def `darkgreen-7`: typings.vegaTypings.vegaTypingsStrings.`darkgreen-7` = "darkgreen-7".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkgreen-7`]
+  @scala.inline
+  def `darkgreen-8`: typings.vegaTypings.vegaTypingsStrings.`darkgreen-8` = "darkgreen-8".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkgreen-8`]
+  @scala.inline
+  def `darkgreen-9`: typings.vegaTypings.vegaTypingsStrings.`darkgreen-9` = "darkgreen-9".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkgreen-9`]
+  @scala.inline
+  def darkmulti: typings.vegaTypings.vegaTypingsStrings.darkmulti = "darkmulti".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.darkmulti]
+  @scala.inline
+  def `darkmulti-3`: typings.vegaTypings.vegaTypingsStrings.`darkmulti-3` = "darkmulti-3".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkmulti-3`]
+  @scala.inline
+  def `darkmulti-4`: typings.vegaTypings.vegaTypingsStrings.`darkmulti-4` = "darkmulti-4".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkmulti-4`]
+  @scala.inline
+  def `darkmulti-5`: typings.vegaTypings.vegaTypingsStrings.`darkmulti-5` = "darkmulti-5".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkmulti-5`]
+  @scala.inline
+  def `darkmulti-6`: typings.vegaTypings.vegaTypingsStrings.`darkmulti-6` = "darkmulti-6".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkmulti-6`]
+  @scala.inline
+  def `darkmulti-7`: typings.vegaTypings.vegaTypingsStrings.`darkmulti-7` = "darkmulti-7".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkmulti-7`]
+  @scala.inline
+  def `darkmulti-8`: typings.vegaTypings.vegaTypingsStrings.`darkmulti-8` = "darkmulti-8".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkmulti-8`]
+  @scala.inline
+  def `darkmulti-9`: typings.vegaTypings.vegaTypingsStrings.`darkmulti-9` = "darkmulti-9".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkmulti-9`]
+  @scala.inline
+  def darkred: typings.vegaTypings.vegaTypingsStrings.darkred = "darkred".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.darkred]
+  @scala.inline
+  def `darkred-3`: typings.vegaTypings.vegaTypingsStrings.`darkred-3` = "darkred-3".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkred-3`]
+  @scala.inline
+  def `darkred-4`: typings.vegaTypings.vegaTypingsStrings.`darkred-4` = "darkred-4".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkred-4`]
+  @scala.inline
+  def `darkred-5`: typings.vegaTypings.vegaTypingsStrings.`darkred-5` = "darkred-5".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkred-5`]
+  @scala.inline
+  def `darkred-6`: typings.vegaTypings.vegaTypingsStrings.`darkred-6` = "darkred-6".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkred-6`]
+  @scala.inline
+  def `darkred-7`: typings.vegaTypings.vegaTypingsStrings.`darkred-7` = "darkred-7".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkred-7`]
+  @scala.inline
+  def `darkred-8`: typings.vegaTypings.vegaTypingsStrings.`darkred-8` = "darkred-8".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkred-8`]
+  @scala.inline
+  def `darkred-9`: typings.vegaTypings.vegaTypingsStrings.`darkred-9` = "darkred-9".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`darkred-9`]
+  @scala.inline
+  def goldgreen: typings.vegaTypings.vegaTypingsStrings.goldgreen = "goldgreen".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.goldgreen]
+  @scala.inline
+  def `goldgreen-3`: typings.vegaTypings.vegaTypingsStrings.`goldgreen-3` = "goldgreen-3".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`goldgreen-3`]
+  @scala.inline
+  def `goldgreen-4`: typings.vegaTypings.vegaTypingsStrings.`goldgreen-4` = "goldgreen-4".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`goldgreen-4`]
+  @scala.inline
+  def `goldgreen-5`: typings.vegaTypings.vegaTypingsStrings.`goldgreen-5` = "goldgreen-5".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`goldgreen-5`]
+  @scala.inline
+  def `goldgreen-6`: typings.vegaTypings.vegaTypingsStrings.`goldgreen-6` = "goldgreen-6".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`goldgreen-6`]
+  @scala.inline
+  def `goldgreen-7`: typings.vegaTypings.vegaTypingsStrings.`goldgreen-7` = "goldgreen-7".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`goldgreen-7`]
+  @scala.inline
+  def `goldgreen-8`: typings.vegaTypings.vegaTypingsStrings.`goldgreen-8` = "goldgreen-8".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`goldgreen-8`]
+  @scala.inline
+  def `goldgreen-9`: typings.vegaTypings.vegaTypingsStrings.`goldgreen-9` = "goldgreen-9".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`goldgreen-9`]
+  @scala.inline
+  def goldorange: typings.vegaTypings.vegaTypingsStrings.goldorange = "goldorange".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.goldorange]
+  @scala.inline
+  def `goldorange-3`: typings.vegaTypings.vegaTypingsStrings.`goldorange-3` = "goldorange-3".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`goldorange-3`]
+  @scala.inline
+  def `goldorange-4`: typings.vegaTypings.vegaTypingsStrings.`goldorange-4` = "goldorange-4".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`goldorange-4`]
+  @scala.inline
+  def `goldorange-5`: typings.vegaTypings.vegaTypingsStrings.`goldorange-5` = "goldorange-5".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`goldorange-5`]
+  @scala.inline
+  def `goldorange-6`: typings.vegaTypings.vegaTypingsStrings.`goldorange-6` = "goldorange-6".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`goldorange-6`]
+  @scala.inline
+  def `goldorange-7`: typings.vegaTypings.vegaTypingsStrings.`goldorange-7` = "goldorange-7".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`goldorange-7`]
+  @scala.inline
+  def `goldorange-8`: typings.vegaTypings.vegaTypingsStrings.`goldorange-8` = "goldorange-8".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`goldorange-8`]
+  @scala.inline
+  def `goldorange-9`: typings.vegaTypings.vegaTypingsStrings.`goldorange-9` = "goldorange-9".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`goldorange-9`]
+  @scala.inline
+  def goldred: typings.vegaTypings.vegaTypingsStrings.goldred = "goldred".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.goldred]
+  @scala.inline
+  def `goldred-3`: typings.vegaTypings.vegaTypingsStrings.`goldred-3` = "goldred-3".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`goldred-3`]
+  @scala.inline
+  def `goldred-4`: typings.vegaTypings.vegaTypingsStrings.`goldred-4` = "goldred-4".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`goldred-4`]
+  @scala.inline
+  def `goldred-5`: typings.vegaTypings.vegaTypingsStrings.`goldred-5` = "goldred-5".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`goldred-5`]
+  @scala.inline
+  def `goldred-6`: typings.vegaTypings.vegaTypingsStrings.`goldred-6` = "goldred-6".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`goldred-6`]
+  @scala.inline
+  def `goldred-7`: typings.vegaTypings.vegaTypingsStrings.`goldred-7` = "goldred-7".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`goldred-7`]
+  @scala.inline
+  def `goldred-8`: typings.vegaTypings.vegaTypingsStrings.`goldred-8` = "goldred-8".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`goldred-8`]
+  @scala.inline
+  def `goldred-9`: typings.vegaTypings.vegaTypingsStrings.`goldred-9` = "goldred-9".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`goldred-9`]
+  @scala.inline
   def greenblue: typings.vegaTypings.vegaTypingsStrings.greenblue = "greenblue".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.greenblue]
   @scala.inline
   def `greenblue-3`: typings.vegaTypings.vegaTypingsStrings.`greenblue-3` = "greenblue-3".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`greenblue-3`]
@@ -159,6 +391,86 @@ object SequentialMultiHue {
   def `greenblue-9`: typings.vegaTypings.vegaTypingsStrings.`greenblue-9` = "greenblue-9".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`greenblue-9`]
   @scala.inline
   def inferno: typings.vegaTypings.vegaTypingsStrings.inferno = "inferno".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.inferno]
+  @scala.inline
+  def lightgreyred: typings.vegaTypings.vegaTypingsStrings.lightgreyred = "lightgreyred".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.lightgreyred]
+  @scala.inline
+  def `lightgreyred-3`: typings.vegaTypings.vegaTypingsStrings.`lightgreyred-3` = "lightgreyred-3".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lightgreyred-3`]
+  @scala.inline
+  def `lightgreyred-4`: typings.vegaTypings.vegaTypingsStrings.`lightgreyred-4` = "lightgreyred-4".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lightgreyred-4`]
+  @scala.inline
+  def `lightgreyred-5`: typings.vegaTypings.vegaTypingsStrings.`lightgreyred-5` = "lightgreyred-5".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lightgreyred-5`]
+  @scala.inline
+  def `lightgreyred-6`: typings.vegaTypings.vegaTypingsStrings.`lightgreyred-6` = "lightgreyred-6".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lightgreyred-6`]
+  @scala.inline
+  def `lightgreyred-7`: typings.vegaTypings.vegaTypingsStrings.`lightgreyred-7` = "lightgreyred-7".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lightgreyred-7`]
+  @scala.inline
+  def `lightgreyred-8`: typings.vegaTypings.vegaTypingsStrings.`lightgreyred-8` = "lightgreyred-8".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lightgreyred-8`]
+  @scala.inline
+  def `lightgreyred-9`: typings.vegaTypings.vegaTypingsStrings.`lightgreyred-9` = "lightgreyred-9".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lightgreyred-9`]
+  @scala.inline
+  def lightgreyteal: typings.vegaTypings.vegaTypingsStrings.lightgreyteal = "lightgreyteal".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.lightgreyteal]
+  @scala.inline
+  def `lightgreyteal-3`: typings.vegaTypings.vegaTypingsStrings.`lightgreyteal-3` = "lightgreyteal-3".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lightgreyteal-3`]
+  @scala.inline
+  def `lightgreyteal-4`: typings.vegaTypings.vegaTypingsStrings.`lightgreyteal-4` = "lightgreyteal-4".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lightgreyteal-4`]
+  @scala.inline
+  def `lightgreyteal-5`: typings.vegaTypings.vegaTypingsStrings.`lightgreyteal-5` = "lightgreyteal-5".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lightgreyteal-5`]
+  @scala.inline
+  def `lightgreyteal-6`: typings.vegaTypings.vegaTypingsStrings.`lightgreyteal-6` = "lightgreyteal-6".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lightgreyteal-6`]
+  @scala.inline
+  def `lightgreyteal-7`: typings.vegaTypings.vegaTypingsStrings.`lightgreyteal-7` = "lightgreyteal-7".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lightgreyteal-7`]
+  @scala.inline
+  def `lightgreyteal-8`: typings.vegaTypings.vegaTypingsStrings.`lightgreyteal-8` = "lightgreyteal-8".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lightgreyteal-8`]
+  @scala.inline
+  def `lightgreyteal-9`: typings.vegaTypings.vegaTypingsStrings.`lightgreyteal-9` = "lightgreyteal-9".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lightgreyteal-9`]
+  @scala.inline
+  def lightmulti: typings.vegaTypings.vegaTypingsStrings.lightmulti = "lightmulti".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.lightmulti]
+  @scala.inline
+  def `lightmulti-3`: typings.vegaTypings.vegaTypingsStrings.`lightmulti-3` = "lightmulti-3".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lightmulti-3`]
+  @scala.inline
+  def `lightmulti-4`: typings.vegaTypings.vegaTypingsStrings.`lightmulti-4` = "lightmulti-4".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lightmulti-4`]
+  @scala.inline
+  def `lightmulti-5`: typings.vegaTypings.vegaTypingsStrings.`lightmulti-5` = "lightmulti-5".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lightmulti-5`]
+  @scala.inline
+  def `lightmulti-6`: typings.vegaTypings.vegaTypingsStrings.`lightmulti-6` = "lightmulti-6".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lightmulti-6`]
+  @scala.inline
+  def `lightmulti-7`: typings.vegaTypings.vegaTypingsStrings.`lightmulti-7` = "lightmulti-7".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lightmulti-7`]
+  @scala.inline
+  def `lightmulti-8`: typings.vegaTypings.vegaTypingsStrings.`lightmulti-8` = "lightmulti-8".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lightmulti-8`]
+  @scala.inline
+  def `lightmulti-9`: typings.vegaTypings.vegaTypingsStrings.`lightmulti-9` = "lightmulti-9".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lightmulti-9`]
+  @scala.inline
+  def lightorange: typings.vegaTypings.vegaTypingsStrings.lightorange = "lightorange".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.lightorange]
+  @scala.inline
+  def `lightorange-3`: typings.vegaTypings.vegaTypingsStrings.`lightorange-3` = "lightorange-3".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lightorange-3`]
+  @scala.inline
+  def `lightorange-4`: typings.vegaTypings.vegaTypingsStrings.`lightorange-4` = "lightorange-4".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lightorange-4`]
+  @scala.inline
+  def `lightorange-5`: typings.vegaTypings.vegaTypingsStrings.`lightorange-5` = "lightorange-5".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lightorange-5`]
+  @scala.inline
+  def `lightorange-6`: typings.vegaTypings.vegaTypingsStrings.`lightorange-6` = "lightorange-6".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lightorange-6`]
+  @scala.inline
+  def `lightorange-7`: typings.vegaTypings.vegaTypingsStrings.`lightorange-7` = "lightorange-7".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lightorange-7`]
+  @scala.inline
+  def `lightorange-8`: typings.vegaTypings.vegaTypingsStrings.`lightorange-8` = "lightorange-8".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lightorange-8`]
+  @scala.inline
+  def `lightorange-9`: typings.vegaTypings.vegaTypingsStrings.`lightorange-9` = "lightorange-9".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lightorange-9`]
+  @scala.inline
+  def lighttealblue: typings.vegaTypings.vegaTypingsStrings.lighttealblue = "lighttealblue".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.lighttealblue]
+  @scala.inline
+  def `lighttealblue-3`: typings.vegaTypings.vegaTypingsStrings.`lighttealblue-3` = "lighttealblue-3".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lighttealblue-3`]
+  @scala.inline
+  def `lighttealblue-4`: typings.vegaTypings.vegaTypingsStrings.`lighttealblue-4` = "lighttealblue-4".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lighttealblue-4`]
+  @scala.inline
+  def `lighttealblue-5`: typings.vegaTypings.vegaTypingsStrings.`lighttealblue-5` = "lighttealblue-5".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lighttealblue-5`]
+  @scala.inline
+  def `lighttealblue-6`: typings.vegaTypings.vegaTypingsStrings.`lighttealblue-6` = "lighttealblue-6".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lighttealblue-6`]
+  @scala.inline
+  def `lighttealblue-7`: typings.vegaTypings.vegaTypingsStrings.`lighttealblue-7` = "lighttealblue-7".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lighttealblue-7`]
+  @scala.inline
+  def `lighttealblue-8`: typings.vegaTypings.vegaTypingsStrings.`lighttealblue-8` = "lighttealblue-8".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lighttealblue-8`]
+  @scala.inline
+  def `lighttealblue-9`: typings.vegaTypings.vegaTypingsStrings.`lighttealblue-9` = "lighttealblue-9".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`lighttealblue-9`]
   @scala.inline
   def magma: typings.vegaTypings.vegaTypingsStrings.magma = "magma".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.magma]
   @scala.inline

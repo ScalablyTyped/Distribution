@@ -1,6 +1,6 @@
 package typings.rmcCalendar.headerMod
 
-import typings.rmcCalendar.AnonCloseIcon
+import typings.rmcCalendar.anon.CloseIcon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends Header
 @JSImport("rmc-calendar/lib/calendar/Header", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonCloseIcon = js.native
+  var defaultProps: CloseIcon = js.native
 }
 

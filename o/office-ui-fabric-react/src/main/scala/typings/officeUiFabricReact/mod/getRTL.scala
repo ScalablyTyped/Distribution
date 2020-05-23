@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.mod
 
-import typings.uifabricUtilities.AnonRtl
+import typings.uifabricUtilities.anon.Rtl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object getRTL extends js.Object {
   def apply(): Boolean = js.native
-  def apply(theme: AnonRtl): Boolean = js.native
+  def apply(theme: Rtl): Boolean = js.native
 }
 

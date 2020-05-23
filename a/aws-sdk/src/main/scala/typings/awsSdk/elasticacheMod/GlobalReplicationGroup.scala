@@ -23,7 +23,7 @@ trait GlobalReplicationGroup extends js.Object {
     */
   var ClusterEnabled: js.UndefOr[BooleanOptional] = js.native
   /**
-    * The Elasticache engine. For preview, it is Redis only.
+    * The Elasticache engine. For Redis only.
     */
   var Engine: js.UndefOr[String] = js.native
   /**
@@ -59,10 +59,10 @@ trait GlobalReplicationGroup extends js.Object {
 object GlobalReplicationGroup {
   @scala.inline
   def apply(
-    AtRestEncryptionEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    AuthTokenEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    AtRestEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined,
+    AuthTokenEnabled: js.UndefOr[BooleanOptional] = js.undefined,
     CacheNodeType: String = null,
-    ClusterEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    ClusterEnabled: js.UndefOr[BooleanOptional] = js.undefined,
     Engine: String = null,
     EngineVersion: String = null,
     GlobalNodeGroups: GlobalNodeGroupList = null,
@@ -70,13 +70,13 @@ object GlobalReplicationGroup {
     GlobalReplicationGroupId: String = null,
     Members: GlobalReplicationGroupMemberList = null,
     Status: String = null,
-    TransitEncryptionEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    TransitEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined
   ): GlobalReplicationGroup = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AtRestEncryptionEnabled)) __obj.updateDynamic("AtRestEncryptionEnabled")(AtRestEncryptionEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(AuthTokenEnabled)) __obj.updateDynamic("AuthTokenEnabled")(AuthTokenEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(AtRestEncryptionEnabled)) __obj.updateDynamic("AtRestEncryptionEnabled")(AtRestEncryptionEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(AuthTokenEnabled)) __obj.updateDynamic("AuthTokenEnabled")(AuthTokenEnabled.get.asInstanceOf[js.Any])
     if (CacheNodeType != null) __obj.updateDynamic("CacheNodeType")(CacheNodeType.asInstanceOf[js.Any])
-    if (!js.isUndefined(ClusterEnabled)) __obj.updateDynamic("ClusterEnabled")(ClusterEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(ClusterEnabled)) __obj.updateDynamic("ClusterEnabled")(ClusterEnabled.get.asInstanceOf[js.Any])
     if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
     if (GlobalNodeGroups != null) __obj.updateDynamic("GlobalNodeGroups")(GlobalNodeGroups.asInstanceOf[js.Any])
@@ -84,7 +84,7 @@ object GlobalReplicationGroup {
     if (GlobalReplicationGroupId != null) __obj.updateDynamic("GlobalReplicationGroupId")(GlobalReplicationGroupId.asInstanceOf[js.Any])
     if (Members != null) __obj.updateDynamic("Members")(Members.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (!js.isUndefined(TransitEncryptionEnabled)) __obj.updateDynamic("TransitEncryptionEnabled")(TransitEncryptionEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(TransitEncryptionEnabled)) __obj.updateDynamic("TransitEncryptionEnabled")(TransitEncryptionEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalReplicationGroup]
   }
 }

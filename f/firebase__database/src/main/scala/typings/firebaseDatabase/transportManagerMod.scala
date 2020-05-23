@@ -1,5 +1,7 @@
 package typings.firebaseDatabase
 
+import typings.firebaseDatabase.anon.TypeofBrowserPollConnecti
+import typings.firebaseDatabase.anon.TypeofWebSocketConnection
 import typings.firebaseDatabase.repoInfoMod.RepoInfo
 import typings.firebaseDatabase.transportMod.TransportConstructor
 import scala.scalajs.js

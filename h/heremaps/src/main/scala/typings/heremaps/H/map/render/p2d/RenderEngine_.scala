@@ -1,9 +1,5 @@
 package typings.heremaps.H.map.render.p2d
 
-import typings.heremaps.H.map.DataModel
-import typings.heremaps.H.map.ViewModel
-import typings.heremaps.H.map.ViewPort
-import typings.heremaps.H.map.render.RenderEngine.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,18 +8,9 @@ import scala.scalajs.js.annotation._
   * This class implements a map render engine. It presents a geographic location (camera data from a view model) and renders all map layers in
   * the order in which they are provided in a single 2D canvas element.
   */
-@JSGlobal("H.map.render.p2d.RenderEngine")
 @js.native
-class RenderEngine_ protected ()
+trait RenderEngine_
   extends typings.heremaps.H.map.render.RenderEngine {
-  /**
-    * Constructor
-    * @param viewPort {H.map.ViewPort} - An object representing the map viewport
-    * @param viewModel {H.map.ViewModel} - An object representing a view of the map
-    * @param dataModel {H.map.DataModel} - An object encapsulating the data to be rendered on the map (layers and objects)
-    * @param options {H.map.render.RenderEngine.Options} - An object containing the render engine initialization options
-    */
-  def this(viewPort: ViewPort, viewModel: ViewModel, dataModel: DataModel, options: Options) = this()
   /**
     * This method retrieves the current setting indicating the length of animations (duration) run by the the render engine in milliseconds.
     * @return {number}

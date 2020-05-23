@@ -182,41 +182,41 @@ object PoolAttributes {
     homogeneous: js.UndefOr[Boolean] = js.undefined,
     password: String = null,
     poolAlias: String = null,
-    poolIncrement: Int | Double = null,
-    poolMax: Int | Double = null,
-    poolMaxPerShard: Int | Double = null,
-    poolMin: Int | Double = null,
-    poolPingInterval: Int | Double = null,
-    poolTimeout: Int | Double = null,
-    queueTimeout: Int | Double = null,
+    poolIncrement: js.UndefOr[Double] = js.undefined,
+    poolMax: js.UndefOr[Double] = js.undefined,
+    poolMaxPerShard: js.UndefOr[Double] = js.undefined,
+    poolMin: js.UndefOr[Double] = js.undefined,
+    poolPingInterval: js.UndefOr[Double] = js.undefined,
+    poolTimeout: js.UndefOr[Double] = js.undefined,
+    queueTimeout: js.UndefOr[Double] = js.undefined,
     sessionCallback: String | (js.Function3[
       /* connection */ Connection, 
       /* requestedTag */ String, 
       /* callback */ js.Function1[/* error */ js.UndefOr[DBError], Unit], 
       Unit
     ]) = null,
-    stmtCacheSize: Int | Double = null,
+    stmtCacheSize: js.UndefOr[Double] = js.undefined,
     user: String = null
   ): PoolAttributes = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(_enableStats)) __obj.updateDynamic("_enableStats")(_enableStats.asInstanceOf[js.Any])
+    if (!js.isUndefined(_enableStats)) __obj.updateDynamic("_enableStats")(_enableStats.get.asInstanceOf[js.Any])
     if (connectString != null) __obj.updateDynamic("connectString")(connectString.asInstanceOf[js.Any])
     if (connectionString != null) __obj.updateDynamic("connectionString")(connectionString.asInstanceOf[js.Any])
     if (edition != null) __obj.updateDynamic("edition")(edition.asInstanceOf[js.Any])
-    if (!js.isUndefined(events)) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (!js.isUndefined(externalAuth)) __obj.updateDynamic("externalAuth")(externalAuth.asInstanceOf[js.Any])
-    if (!js.isUndefined(homogeneous)) __obj.updateDynamic("homogeneous")(homogeneous.asInstanceOf[js.Any])
+    if (!js.isUndefined(events)) __obj.updateDynamic("events")(events.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(externalAuth)) __obj.updateDynamic("externalAuth")(externalAuth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(homogeneous)) __obj.updateDynamic("homogeneous")(homogeneous.get.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (poolAlias != null) __obj.updateDynamic("poolAlias")(poolAlias.asInstanceOf[js.Any])
-    if (poolIncrement != null) __obj.updateDynamic("poolIncrement")(poolIncrement.asInstanceOf[js.Any])
-    if (poolMax != null) __obj.updateDynamic("poolMax")(poolMax.asInstanceOf[js.Any])
-    if (poolMaxPerShard != null) __obj.updateDynamic("poolMaxPerShard")(poolMaxPerShard.asInstanceOf[js.Any])
-    if (poolMin != null) __obj.updateDynamic("poolMin")(poolMin.asInstanceOf[js.Any])
-    if (poolPingInterval != null) __obj.updateDynamic("poolPingInterval")(poolPingInterval.asInstanceOf[js.Any])
-    if (poolTimeout != null) __obj.updateDynamic("poolTimeout")(poolTimeout.asInstanceOf[js.Any])
-    if (queueTimeout != null) __obj.updateDynamic("queueTimeout")(queueTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(poolIncrement)) __obj.updateDynamic("poolIncrement")(poolIncrement.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(poolMax)) __obj.updateDynamic("poolMax")(poolMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(poolMaxPerShard)) __obj.updateDynamic("poolMaxPerShard")(poolMaxPerShard.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(poolMin)) __obj.updateDynamic("poolMin")(poolMin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(poolPingInterval)) __obj.updateDynamic("poolPingInterval")(poolPingInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(poolTimeout)) __obj.updateDynamic("poolTimeout")(poolTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(queueTimeout)) __obj.updateDynamic("queueTimeout")(queueTimeout.get.asInstanceOf[js.Any])
     if (sessionCallback != null) __obj.updateDynamic("sessionCallback")(sessionCallback.asInstanceOf[js.Any])
-    if (stmtCacheSize != null) __obj.updateDynamic("stmtCacheSize")(stmtCacheSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(stmtCacheSize)) __obj.updateDynamic("stmtCacheSize")(stmtCacheSize.get.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[PoolAttributes]
   }

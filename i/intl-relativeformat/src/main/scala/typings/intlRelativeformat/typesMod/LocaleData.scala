@@ -1,6 +1,6 @@
 package typings.intlRelativeformat.typesMod
 
-import typings.intlRelativeformat.finDATAFIELDdisplayNamest
+import typings.intlRelativeformat.anon.finDATAFIELDdisplayNamest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

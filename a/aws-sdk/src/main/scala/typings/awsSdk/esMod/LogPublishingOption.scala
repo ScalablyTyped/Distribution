@@ -17,11 +17,11 @@ object LogPublishingOption {
   @scala.inline
   def apply(
     CloudWatchLogsLogGroupArn: CloudWatchLogsLogGroupArn = null,
-    Enabled: js.UndefOr[scala.Boolean] = js.undefined
+    Enabled: js.UndefOr[Boolean] = js.undefined
   ): LogPublishingOption = {
     val __obj = js.Dynamic.literal()
     if (CloudWatchLogsLogGroupArn != null) __obj.updateDynamic("CloudWatchLogsLogGroupArn")(CloudWatchLogsLogGroupArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogPublishingOption]
   }
 }

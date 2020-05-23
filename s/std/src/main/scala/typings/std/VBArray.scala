@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,8 +36,4 @@ trait VBArray[T] extends js.Object {
   def ubound(): Double = js.native
   def ubound(dimension: Double): Double = js.native
 }
-
-@JSGlobal("VBArray")
-@js.native
-object VBArray extends TopLevel[VBArrayConstructor]
 

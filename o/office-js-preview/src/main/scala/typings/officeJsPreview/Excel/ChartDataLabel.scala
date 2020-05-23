@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.ChartDataLabelData
 import typings.officeJsPreview.Excel.Interfaces.ChartDataLabelLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.ChartDataLabelUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.BestFit
 import typings.officeJsPreview.officeJsPreviewStrings.Bottom
 import typings.officeJsPreview.officeJsPreviewStrings.Callout
@@ -30,12 +30,11 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.7]
   */
-@JSGlobal("Excel.ChartDataLabel")
 @js.native
-class ChartDataLabel () extends ClientObject {
+trait ChartDataLabel extends ClientObject {
   /**
     *
-    * Boolean value representing if data label automatically generates appropriate text based on context.
+    * Specifies if the data label automatically generates appropriate text based on context.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -59,7 +58,7 @@ class ChartDataLabel () extends ClientObject {
   var formula: String = js.native
   /**
     *
-    * Returns the height, in points, of the chart data label. Read-only. Null if chart data label is not visible.
+    * Returns the height, in points, of the chart data label. Null if chart data label is not visible.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -81,7 +80,7 @@ class ChartDataLabel () extends ClientObject {
   var left: Double = js.native
   /**
     *
-    * Boolean value representing if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
+    * Specifies if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -109,42 +108,42 @@ class ChartDataLabel () extends ClientObject {
   var separator: String = js.native
   /**
     *
-    * Boolean value representing if the data label bubble size is visible or not.
+    * Specifies if the data label bubble size is visible.
     *
     * [Api set: ExcelApi 1.7]
     */
   var showBubbleSize: Boolean = js.native
   /**
     *
-    * Boolean value representing if the data label category name is visible or not.
+    * Specifies if the data label category name is visible.
     *
     * [Api set: ExcelApi 1.7]
     */
   var showCategoryName: Boolean = js.native
   /**
     *
-    * Boolean value representing if the data label legend key is visible or not.
+    * Specifies if the data label legend key is visible.
     *
     * [Api set: ExcelApi 1.7]
     */
   var showLegendKey: Boolean = js.native
   /**
     *
-    * Boolean value representing if the data label percentage is visible or not.
+    * Specifies if the data label percentage is visible.
     *
     * [Api set: ExcelApi 1.7]
     */
   var showPercentage: Boolean = js.native
   /**
     *
-    * Boolean value representing if the data label series name is visible or not.
+    * Specifies if the data label series name is visible.
     *
     * [Api set: ExcelApi 1.7]
     */
   var showSeriesName: Boolean = js.native
   /**
     *
-    * Boolean value representing if the data label value is visible or not.
+    * Specifies if the data label value is visible.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -180,7 +179,7 @@ class ChartDataLabel () extends ClientObject {
   var verticalAlignment: ChartTextVerticalAlignment | Center | Bottom | Top | Justify | Distributed = js.native
   /**
     *
-    * Returns the width, in points, of the chart data label. Read-only. Null if chart data label is not visible.
+    * Returns the width, in points, of the chart data label. Null if chart data label is not visible.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -192,7 +191,7 @@ class ChartDataLabel () extends ClientObject {
     */
   def load(): ChartDataLabel = js.native
   def load(options: ChartDataLabelLoadOptions): ChartDataLabel = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ChartDataLabel = js.native
+  def load(propertyNamesAndPaths: Expand): ChartDataLabel = js.native
   def load(propertyNames: String): ChartDataLabel = js.native
   def load(propertyNames: js.Array[String]): ChartDataLabel = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

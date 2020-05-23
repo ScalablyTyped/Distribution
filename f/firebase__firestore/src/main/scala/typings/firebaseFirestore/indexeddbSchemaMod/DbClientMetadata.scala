@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/indexeddb_schema", "DbClientMetadata")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbClientMetadata")
 @js.native
 class DbClientMetadata protected () extends js.Object {
   def this(
@@ -28,7 +28,7 @@ class DbClientMetadata protected () extends js.Object {
 }
 
 /* static members */
-@JSImport("@firebase/firestore/dist/lib/src/local/indexeddb_schema", "DbClientMetadata")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbClientMetadata")
 @js.native
 object DbClientMetadata extends js.Object {
   /** Keys are automatically assigned via the clientId properties. */

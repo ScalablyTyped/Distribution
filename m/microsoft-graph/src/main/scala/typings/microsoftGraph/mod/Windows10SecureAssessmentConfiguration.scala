@@ -42,12 +42,12 @@ object Windows10SecureAssessmentConfiguration {
     launchUri: String = null,
     userStatusOverview: DeviceConfigurationUserOverview = null,
     userStatuses: js.Array[DeviceConfigurationUserStatus] = null,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): Windows10SecureAssessmentConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowPrinting)) __obj.updateDynamic("allowPrinting")(allowPrinting.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowScreenCapture)) __obj.updateDynamic("allowScreenCapture")(allowScreenCapture.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowTextSuggestion)) __obj.updateDynamic("allowTextSuggestion")(allowTextSuggestion.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowPrinting)) __obj.updateDynamic("allowPrinting")(allowPrinting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowScreenCapture)) __obj.updateDynamic("allowScreenCapture")(allowScreenCapture.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowTextSuggestion)) __obj.updateDynamic("allowTextSuggestion")(allowTextSuggestion.get.asInstanceOf[js.Any])
     if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
     if (configurationAccount != null) __obj.updateDynamic("configurationAccount")(configurationAccount.asInstanceOf[js.Any])
     if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
@@ -61,7 +61,7 @@ object Windows10SecureAssessmentConfiguration {
     if (launchUri != null) __obj.updateDynamic("launchUri")(launchUri.asInstanceOf[js.Any])
     if (userStatusOverview != null) __obj.updateDynamic("userStatusOverview")(userStatusOverview.asInstanceOf[js.Any])
     if (userStatuses != null) __obj.updateDynamic("userStatuses")(userStatuses.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Windows10SecureAssessmentConfiguration]
   }
 }

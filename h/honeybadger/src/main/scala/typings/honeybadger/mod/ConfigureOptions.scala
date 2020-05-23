@@ -1,6 +1,6 @@
 package typings.honeybadger.mod
 
-import typings.std.Console_
+import typings.std.Console
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait ConfigureOptions extends js.Object {
   var environment: js.UndefOr[String] = js.undefined
   var filters: js.UndefOr[js.Array[String]] = js.undefined
   var hostname: js.UndefOr[String] = js.undefined
-  var logger: js.UndefOr[Console_] = js.undefined
+  var logger: js.UndefOr[Console] = js.undefined
   var projectRoot: js.UndefOr[String] = js.undefined
 }
 
@@ -25,7 +25,7 @@ object ConfigureOptions {
     environment: String = null,
     filters: js.Array[String] = null,
     hostname: String = null,
-    logger: Console_ = null,
+    logger: Console = null,
     projectRoot: String = null
   ): ConfigureOptions = {
     val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any])

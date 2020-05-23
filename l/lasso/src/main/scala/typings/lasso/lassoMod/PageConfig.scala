@@ -34,11 +34,10 @@ object PageConfig {
     packagePaths: js.Array[String] = null,
     pageName: String = null
   ): PageConfig = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(dependencies = dependencies.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (cacheKey != null) __obj.updateDynamic("cacheKey")(cacheKey.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
     if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (lassoContext != null) __obj.updateDynamic("lassoContext")(lassoContext.asInstanceOf[js.Any])

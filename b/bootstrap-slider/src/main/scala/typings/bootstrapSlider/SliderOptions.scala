@@ -166,22 +166,22 @@ object SliderOptions {
     handle: String = null,
     id: String = null,
     labelledby: String | js.Array[String] = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
     natural_arrow_keys: js.UndefOr[Boolean] = js.undefined,
     orientation: String = null,
-    precision: Int | Double = null,
+    precision: js.UndefOr[Double] = js.undefined,
     range: js.UndefOr[Boolean] = js.undefined,
     rangeHighlights: js.Array[RangeHighlight] = null,
     reversed: js.UndefOr[Boolean] = js.undefined,
     rtl: Boolean | auto = null,
     scale: linear | logarithmic = null,
     selection: String = null,
-    step: Int | Double = null,
+    step: js.UndefOr[Double] = js.undefined,
     ticks: js.Array[Double] = null,
     ticks_labels: js.Array[String] = null,
     ticks_positions: js.Array[Double] = null,
-    ticks_snap_bounds: Int | Double = null,
+    ticks_snap_bounds: js.UndefOr[Double] = js.undefined,
     ticks_tooltip: js.UndefOr[Boolean] = js.undefined,
     tooltip: String = null,
     tooltip_position: top | bottom | left | right = null,
@@ -189,32 +189,32 @@ object SliderOptions {
     value: Double | js.Array[Double] = null
   ): SliderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.get.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
     if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (labelledby != null) __obj.updateDynamic("labelledby")(labelledby.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (!js.isUndefined(natural_arrow_keys)) __obj.updateDynamic("natural_arrow_keys")(natural_arrow_keys.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(natural_arrow_keys)) __obj.updateDynamic("natural_arrow_keys")(natural_arrow_keys.get.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (!js.isUndefined(range)) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(range)) __obj.updateDynamic("range")(range.get.asInstanceOf[js.Any])
     if (rangeHighlights != null) __obj.updateDynamic("rangeHighlights")(rangeHighlights.asInstanceOf[js.Any])
-    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.asInstanceOf[js.Any])
+    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.get.asInstanceOf[js.Any])
     if (rtl != null) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
     if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
     if (ticks_labels != null) __obj.updateDynamic("ticks_labels")(ticks_labels.asInstanceOf[js.Any])
     if (ticks_positions != null) __obj.updateDynamic("ticks_positions")(ticks_positions.asInstanceOf[js.Any])
-    if (ticks_snap_bounds != null) __obj.updateDynamic("ticks_snap_bounds")(ticks_snap_bounds.asInstanceOf[js.Any])
-    if (!js.isUndefined(ticks_tooltip)) __obj.updateDynamic("ticks_tooltip")(ticks_tooltip.asInstanceOf[js.Any])
+    if (!js.isUndefined(ticks_snap_bounds)) __obj.updateDynamic("ticks_snap_bounds")(ticks_snap_bounds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ticks_tooltip)) __obj.updateDynamic("ticks_tooltip")(ticks_tooltip.get.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (tooltip_position != null) __obj.updateDynamic("tooltip_position")(tooltip_position.asInstanceOf[js.Any])
-    if (!js.isUndefined(tooltip_split)) __obj.updateDynamic("tooltip_split")(tooltip_split.asInstanceOf[js.Any])
+    if (!js.isUndefined(tooltip_split)) __obj.updateDynamic("tooltip_split")(tooltip_split.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliderOptions]
   }

@@ -23,12 +23,12 @@ trait UpdateEndOfMeetingReminder extends js.Object {
 object UpdateEndOfMeetingReminder {
   @scala.inline
   def apply(
-    Enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    Enabled: js.UndefOr[Boolean] = js.undefined,
     ReminderAtMinutes: EndOfMeetingReminderMinutesList = null,
     ReminderType: EndOfMeetingReminderType = null
   ): UpdateEndOfMeetingReminder = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     if (ReminderAtMinutes != null) __obj.updateDynamic("ReminderAtMinutes")(ReminderAtMinutes.asInstanceOf[js.Any])
     if (ReminderType != null) __obj.updateDynamic("ReminderType")(ReminderType.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEndOfMeetingReminder]

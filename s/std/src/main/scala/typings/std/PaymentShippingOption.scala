@@ -20,7 +20,7 @@ object PaymentShippingOption {
     selected: js.UndefOr[scala.Boolean] = js.undefined
   ): PaymentShippingOption = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentShippingOption]
   }
 }

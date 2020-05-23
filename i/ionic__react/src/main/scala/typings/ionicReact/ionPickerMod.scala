@@ -1,5 +1,6 @@
 package typings.ionicReact
 
+import typings.ionicReact.anon.PickerOptionsReactControl
 import typings.react.mod.ForwardRefExoticComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,7 +1,6 @@
 package typings.reactBootstrapTable2Filter.mod
 
 import typings.react.mod.CSSProperties
-import typings.reactBootstrapTable2Filter.AnonComparator
 import typings.reactBootstrapTableNext.mod.TableColumnFilterProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +12,7 @@ trait NumberFilterProps[T /* <: js.Object */] extends js.Object {
   var comparatorClassName: js.UndefOr[String] = js.undefined
   var comparatorStyle: js.UndefOr[CSSProperties] = js.undefined
   var comparators: js.UndefOr[js.Array[Comparator]] = js.undefined
-  var defaultValue: js.UndefOr[js.Any with AnonComparator] = js.undefined
+  var defaultValue: js.UndefOr[js.Any with typings.reactBootstrapTable2Filter.anon.Comparator] = js.undefined
   var delay: js.UndefOr[Double] = js.undefined
   var getFilter: js.UndefOr[js.Function1[/* filter */ TableColumnFilterProps[_, _], Unit]] = js.undefined
   var id: js.UndefOr[String] = js.undefined
@@ -32,13 +31,13 @@ trait NumberFilterProps[T /* <: js.Object */] extends js.Object {
 
 object NumberFilterProps {
   @scala.inline
-  def apply[T /* <: js.Object */](
+  def apply[T](
     className: String = null,
     comparatorClassName: String = null,
     comparatorStyle: CSSProperties = null,
     comparators: js.Array[Comparator] = null,
-    defaultValue: js.Any with AnonComparator = null,
-    delay: Int | Double = null,
+    defaultValue: js.Any with typings.reactBootstrapTable2Filter.anon.Comparator = null,
+    delay: js.UndefOr[Double] = js.undefined,
     getFilter: /* filter */ TableColumnFilterProps[_, _] => Unit = null,
     id: String = null,
     numberClassName: String = null,
@@ -56,7 +55,7 @@ object NumberFilterProps {
     if (comparatorStyle != null) __obj.updateDynamic("comparatorStyle")(comparatorStyle.asInstanceOf[js.Any])
     if (comparators != null) __obj.updateDynamic("comparators")(comparators.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (getFilter != null) __obj.updateDynamic("getFilter")(js.Any.fromFunction1(getFilter))
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (numberClassName != null) __obj.updateDynamic("numberClassName")(numberClassName.asInstanceOf[js.Any])
@@ -65,8 +64,8 @@ object NumberFilterProps {
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(withoutEmptyComparatorOption)) __obj.updateDynamic("withoutEmptyComparatorOption")(withoutEmptyComparatorOption.asInstanceOf[js.Any])
-    if (!js.isUndefined(withoutEmptyNumberOption)) __obj.updateDynamic("withoutEmptyNumberOption")(withoutEmptyNumberOption.asInstanceOf[js.Any])
+    if (!js.isUndefined(withoutEmptyComparatorOption)) __obj.updateDynamic("withoutEmptyComparatorOption")(withoutEmptyComparatorOption.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(withoutEmptyNumberOption)) __obj.updateDynamic("withoutEmptyNumberOption")(withoutEmptyNumberOption.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberFilterProps[T]]
   }
 }

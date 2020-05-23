@@ -17,10 +17,10 @@ trait BackoffOptions extends js.Object {
 
 object BackoffOptions {
   @scala.inline
-  def apply(`type`: String, delay: Int | Double = null): BackoffOptions = {
+  def apply(`type`: String, delay: js.UndefOr[Double] = js.undefined): BackoffOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackoffOptions]
   }
 }

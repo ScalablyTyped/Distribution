@@ -17,13 +17,13 @@ object dxChartCommonAxisSettingsStripStyle {
   @scala.inline
   def apply(
     label: dxChartCommonAxisSettingsStripStyleLabel = null,
-    paddingLeftRight: Int | Double = null,
-    paddingTopBottom: Int | Double = null
+    paddingLeftRight: js.UndefOr[Double] = js.undefined,
+    paddingTopBottom: js.UndefOr[Double] = js.undefined
   ): dxChartCommonAxisSettingsStripStyle = {
     val __obj = js.Dynamic.literal()
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (paddingLeftRight != null) __obj.updateDynamic("paddingLeftRight")(paddingLeftRight.asInstanceOf[js.Any])
-    if (paddingTopBottom != null) __obj.updateDynamic("paddingTopBottom")(paddingTopBottom.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingLeftRight)) __obj.updateDynamic("paddingLeftRight")(paddingLeftRight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingTopBottom)) __obj.updateDynamic("paddingTopBottom")(paddingTopBottom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxChartCommonAxisSettingsStripStyle]
   }
 }

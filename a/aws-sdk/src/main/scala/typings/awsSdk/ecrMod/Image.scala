@@ -15,6 +15,10 @@ trait Image extends js.Object {
     */
   var imageManifest: js.UndefOr[ImageManifest] = js.native
   /**
+    * The media type associated with the image manifest.
+    */
+  var imageManifestMediaType: js.UndefOr[MediaType] = js.native
+  /**
     * The AWS account ID associated with the registry containing the image.
     */
   var registryId: js.UndefOr[RegistryId] = js.native
@@ -29,12 +33,14 @@ object Image {
   def apply(
     imageId: ImageIdentifier = null,
     imageManifest: ImageManifest = null,
+    imageManifestMediaType: MediaType = null,
     registryId: RegistryId = null,
     repositoryName: RepositoryName = null
   ): Image = {
     val __obj = js.Dynamic.literal()
     if (imageId != null) __obj.updateDynamic("imageId")(imageId.asInstanceOf[js.Any])
     if (imageManifest != null) __obj.updateDynamic("imageManifest")(imageManifest.asInstanceOf[js.Any])
+    if (imageManifestMediaType != null) __obj.updateDynamic("imageManifestMediaType")(imageManifestMediaType.asInstanceOf[js.Any])
     if (registryId != null) __obj.updateDynamic("registryId")(registryId.asInstanceOf[js.Any])
     if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Image]

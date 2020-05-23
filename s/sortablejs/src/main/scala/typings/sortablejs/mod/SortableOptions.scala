@@ -1,11 +1,11 @@
 package typings.sortablejs.mod
 
-import typings.sortablejs.AnonGet
-import typings.sortablejs.AnonX
+import typings.sortablejs.anon.Get
+import typings.sortablejs.anon.X
 import typings.sortablejs.sortablejsNumbers.`-1`
 import typings.sortablejs.sortablejsNumbers.`1`
 import typings.std.DataTransfer
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.TouchEvent
 import scala.scalajs.js
@@ -86,7 +86,7 @@ trait SortableOptions extends js.Object {
     * Class name for the cloned DOM Element when using forceFallback
     */
   var fallbackClass: js.UndefOr[String] = js.undefined
-  var fallbackOffset: js.UndefOr[AnonX] = js.undefined
+  var fallbackOffset: js.UndefOr[X] = js.undefined
   /**
     * Appends the cloned DOM Element into the Document's Body
     */
@@ -101,7 +101,7 @@ trait SortableOptions extends js.Object {
   var filter: js.UndefOr[
     String | (js.ThisFunction3[
       /* this */ Sortable, 
-      /* event */ Event_ | TouchEvent, 
+      /* event */ Event | TouchEvent, 
       /* target */ HTMLElement, 
       /* sortable */ Sortable, 
       Boolean
@@ -162,7 +162,7 @@ trait SortableOptions extends js.Object {
     * Event when you move an item in the list or between lists
     */
   var onMove: js.UndefOr[
-    js.Function2[/* evt */ MoveEvent, /* originalEvent */ Event_, Boolean | `-1` | `1`]
+    js.Function2[/* evt */ MoveEvent, /* originalEvent */ Event, Boolean | `-1` | `1`]
   ] = js.undefined
   /**
     * Element is removed from the list into another list
@@ -200,7 +200,7 @@ trait SortableOptions extends js.Object {
     * sorting inside list
     */
   var sort: js.UndefOr[Boolean] = js.undefined
-  var store: js.UndefOr[AnonGet] = js.undefined
+  var store: js.UndefOr[Get] = js.undefined
   /**
     * Threshold of the swap zone.
     * Defaults to `1`
@@ -215,10 +215,10 @@ trait SortableOptions extends js.Object {
 object SortableOptions {
   @scala.inline
   def apply(
-    animation: Int | Double = null,
+    animation: js.UndefOr[Double] = js.undefined,
     chosenClass: String = null,
     dataIdAttr: String = null,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     delayOnTouchOnly: js.UndefOr[Boolean] = js.undefined,
     direction: (js.Function3[/* evt */ SortableEvent, /* target */ HTMLElement, /* dragEl */ HTMLElement, Direction]) | Direction = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
@@ -227,14 +227,14 @@ object SortableOptions {
     dragoverBubble: js.UndefOr[Boolean] = js.undefined,
     dropBubble: js.UndefOr[Boolean] = js.undefined,
     easing: String = null,
-    emptyInsertThreshold: Int | Double = null,
+    emptyInsertThreshold: js.UndefOr[Double] = js.undefined,
     fallbackClass: String = null,
-    fallbackOffset: AnonX = null,
+    fallbackOffset: X = null,
     fallbackOnBody: js.UndefOr[Boolean] = js.undefined,
-    fallbackTolerance: Int | Double = null,
+    fallbackTolerance: js.UndefOr[Double] = js.undefined,
     filter: String | (js.ThisFunction3[
       /* this */ Sortable, 
-      /* event */ Event_ | TouchEvent, 
+      /* event */ Event | TouchEvent, 
       /* target */ HTMLElement, 
       /* sortable */ Sortable, 
       Boolean
@@ -245,14 +245,14 @@ object SortableOptions {
     handle: String = null,
     ignore: String = null,
     invertSwap: js.UndefOr[Boolean] = js.undefined,
-    invertedSwapThreshold: Int | Double = null,
+    invertedSwapThreshold: js.UndefOr[Double] = js.undefined,
     onAdd: /* event */ SortableEvent => Unit = null,
     onChange: /* evt */ SortableEvent => Unit = null,
     onChoose: /* event */ SortableEvent => Unit = null,
     onClone: /* event */ SortableEvent => Unit = null,
     onEnd: /* event */ SortableEvent => Unit = null,
     onFilter: /* event */ SortableEvent => Unit = null,
-    onMove: (/* evt */ MoveEvent, /* originalEvent */ Event_) => Boolean | `-1` | `1` = null,
+    onMove: (/* evt */ MoveEvent, /* originalEvent */ Event) => Boolean | `-1` | `1` = null,
     onRemove: /* event */ SortableEvent => Unit = null,
     onSort: /* event */ SortableEvent => Unit = null,
     onStart: /* event */ SortableEvent => Unit = null,
@@ -262,36 +262,36 @@ object SortableOptions {
     removeCloneOnHide: js.UndefOr[Boolean] = js.undefined,
     setData: (/* dataTransfer */ DataTransfer, /* draggedElement */ HTMLElement) => Unit = null,
     sort: js.UndefOr[Boolean] = js.undefined,
-    store: AnonGet = null,
-    swapThreshold: Int | Double = null,
-    touchStartThreshold: Int | Double = null
+    store: Get = null,
+    swapThreshold: js.UndefOr[Double] = js.undefined,
+    touchStartThreshold: js.UndefOr[Double] = js.undefined
   ): SortableOptions = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
     if (chosenClass != null) __obj.updateDynamic("chosenClass")(chosenClass.asInstanceOf[js.Any])
     if (dataIdAttr != null) __obj.updateDynamic("dataIdAttr")(dataIdAttr.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(delayOnTouchOnly)) __obj.updateDynamic("delayOnTouchOnly")(delayOnTouchOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayOnTouchOnly)) __obj.updateDynamic("delayOnTouchOnly")(delayOnTouchOnly.get.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (dragClass != null) __obj.updateDynamic("dragClass")(dragClass.asInstanceOf[js.Any])
     if (draggable != null) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragoverBubble)) __obj.updateDynamic("dragoverBubble")(dragoverBubble.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropBubble)) __obj.updateDynamic("dropBubble")(dropBubble.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragoverBubble)) __obj.updateDynamic("dragoverBubble")(dragoverBubble.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropBubble)) __obj.updateDynamic("dropBubble")(dropBubble.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (emptyInsertThreshold != null) __obj.updateDynamic("emptyInsertThreshold")(emptyInsertThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(emptyInsertThreshold)) __obj.updateDynamic("emptyInsertThreshold")(emptyInsertThreshold.get.asInstanceOf[js.Any])
     if (fallbackClass != null) __obj.updateDynamic("fallbackClass")(fallbackClass.asInstanceOf[js.Any])
     if (fallbackOffset != null) __obj.updateDynamic("fallbackOffset")(fallbackOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(fallbackOnBody)) __obj.updateDynamic("fallbackOnBody")(fallbackOnBody.asInstanceOf[js.Any])
-    if (fallbackTolerance != null) __obj.updateDynamic("fallbackTolerance")(fallbackTolerance.asInstanceOf[js.Any])
+    if (!js.isUndefined(fallbackOnBody)) __obj.updateDynamic("fallbackOnBody")(fallbackOnBody.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fallbackTolerance)) __obj.updateDynamic("fallbackTolerance")(fallbackTolerance.get.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceFallback)) __obj.updateDynamic("forceFallback")(forceFallback.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceFallback)) __obj.updateDynamic("forceFallback")(forceFallback.get.asInstanceOf[js.Any])
     if (ghostClass != null) __obj.updateDynamic("ghostClass")(ghostClass.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(invertSwap)) __obj.updateDynamic("invertSwap")(invertSwap.asInstanceOf[js.Any])
-    if (invertedSwapThreshold != null) __obj.updateDynamic("invertedSwapThreshold")(invertedSwapThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(invertSwap)) __obj.updateDynamic("invertSwap")(invertSwap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(invertedSwapThreshold)) __obj.updateDynamic("invertedSwapThreshold")(invertedSwapThreshold.get.asInstanceOf[js.Any])
     if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction1(onAdd))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onChoose != null) __obj.updateDynamic("onChoose")(js.Any.fromFunction1(onChoose))
@@ -304,13 +304,13 @@ object SortableOptions {
     if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction1(onStart))
     if (onUnchoose != null) __obj.updateDynamic("onUnchoose")(js.Any.fromFunction1(onUnchoose))
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction1(onUpdate))
-    if (!js.isUndefined(preventOnFilter)) __obj.updateDynamic("preventOnFilter")(preventOnFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeCloneOnHide)) __obj.updateDynamic("removeCloneOnHide")(removeCloneOnHide.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventOnFilter)) __obj.updateDynamic("preventOnFilter")(preventOnFilter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeCloneOnHide)) __obj.updateDynamic("removeCloneOnHide")(removeCloneOnHide.get.asInstanceOf[js.Any])
     if (setData != null) __obj.updateDynamic("setData")(js.Any.fromFunction2(setData))
-    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
+    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.get.asInstanceOf[js.Any])
     if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
-    if (swapThreshold != null) __obj.updateDynamic("swapThreshold")(swapThreshold.asInstanceOf[js.Any])
-    if (touchStartThreshold != null) __obj.updateDynamic("touchStartThreshold")(touchStartThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(swapThreshold)) __obj.updateDynamic("swapThreshold")(swapThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchStartThreshold)) __obj.updateDynamic("touchStartThreshold")(touchStartThreshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortableOptions]
   }
 }

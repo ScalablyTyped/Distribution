@@ -18,9 +18,9 @@ trait ConsumedLicenseSummary extends js.Object {
 
 object ConsumedLicenseSummary {
   @scala.inline
-  def apply(ConsumedLicenses: Int | Double = null, ResourceType: ResourceType = null): ConsumedLicenseSummary = {
+  def apply(ConsumedLicenses: js.UndefOr[BoxLong] = js.undefined, ResourceType: ResourceType = null): ConsumedLicenseSummary = {
     val __obj = js.Dynamic.literal()
-    if (ConsumedLicenses != null) __obj.updateDynamic("ConsumedLicenses")(ConsumedLicenses.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConsumedLicenses)) __obj.updateDynamic("ConsumedLicenses")(ConsumedLicenses.get.asInstanceOf[js.Any])
     if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsumedLicenseSummary]
   }

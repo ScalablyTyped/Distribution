@@ -11,15 +11,7 @@ import scala.scalajs.js.annotation._
   * To convert between dates and their textual representation, use the `string()` and `date()` functions.
   * @see https://docs.scriptable.app/dateformatter/#-new-dateformatter
   */
-@JSGlobal("DateFormatter")
-@js.native
-/**
-  * _Converts between texts and strings._
-  *
-  * To convert between dates and their textual representation, use the `string()` and `date()` functions.
-  * @see https://docs.scriptable.app/dateformatter/#-new-dateformatter
-  */
-class DateFormatter () extends js.Object {
+trait DateFormatter extends js.Object {
   /**
     * _Date format to be used by the formatter._
     *
@@ -86,14 +78,14 @@ class DateFormatter () extends js.Object {
     * A great resource for experimenting with date formats is nsdateformatter.com developed by Ben Scheirman.
     * @see https://docs.scriptable.app/dateformatter/#dateformat
     */
-  var dateFormat: String = js.native
+  var dateFormat: String
   /**
     * _Locale to use when formatting._
     *
     * The locale should be specified using a string identifier, e.g. "en", "it" or "da". When no locale is set, the formatter will use the current locale of the device.
     * @see https://docs.scriptable.app/dateformatter/#locale
     */
-  var locale: String = js.native
+  var locale: String
   /**
     * _Creates a date from a string._
     *
@@ -101,82 +93,105 @@ class DateFormatter () extends js.Object {
     * @param str - The string to parse into a date.
     * @see https://docs.scriptable.app/dateformatter/#-date
     */
-  def date(str: String): String = js.native
+  def date(str: String): String
   /**
     * _Creates a string from a date._
     * @param date - The date to convert to a string.
     * @see https://docs.scriptable.app/dateformatter/#-string
     */
-  def string(date: Date): String = js.native
+  def string(date: Date): String
   /**
     * _Use a full style for the date._
     *
     * Dates with a full style includes all details, e.g. "Friday, August 23, 2019 AD".
     * @see https://docs.scriptable.app/dateformatter/#-usefulldatestyle
     */
-  def useFullDateStyle(): Unit = js.native
+  def useFullDateStyle(): Unit
   /**
     * _Use a full style for the time._
     *
     * Times with a full style includes all details, e.g. "7:16:42 PM Pacific Standard Time".
     * @see https://docs.scriptable.app/dateformatter/#-usefulltimestyle
     */
-  def useFullTimeStyle(): Unit = js.native
+  def useFullTimeStyle(): Unit
   /**
     * _Use a long style for the date._
     *
     * Dates with a long style usually includes a full text, e.g. "August 23, 2019".
     * @see https://docs.scriptable.app/dateformatter/#-uselongdatestyle
     */
-  def useLongDateStyle(): Unit = js.native
+  def useLongDateStyle(): Unit
   /**
     * _Use a long style for the time._
     *
     * Times with a long style usually includes a full text, e.g. "7:16:42 PM PST".
     * @see https://docs.scriptable.app/dateformatter/#-uselongtimestyle
     */
-  def useLongTimeStyle(): Unit = js.native
+  def useLongTimeStyle(): Unit
   /**
     * _Use a medium style for the date._
     *
     * Dates with a medium style usually includes abbreviations, e.g. "Aug 23, 2019" or "7:16:42 PM".
     * @see https://docs.scriptable.app/dateformatter/#-usemediumdatestyle
     */
-  def useMediumDateStyle(): Unit = js.native
+  def useMediumDateStyle(): Unit
   /**
     * _Use a short style for the time._
     *
     * Times with a medium style usually includes abbreviations, e.g. "7:16:42 PM".
     * @see https://docs.scriptable.app/dateformatter/#-usemediumtimestyle
     */
-  def useMediumTimeStyle(): Unit = js.native
+  def useMediumTimeStyle(): Unit
   /**
     * _Use no style for the date._
     *
     * This will remove the date from the formatted string.
     * @see https://docs.scriptable.app/dateformatter/#-usenodatestyle
     */
-  def useNoDateStyle(): Unit = js.native
+  def useNoDateStyle(): Unit
   /**
     * _Use no style for the time._
     *
     * This will remove the time from the formatted string.
     * @see https://docs.scriptable.app/dateformatter/#-usenotimestyle
     */
-  def useNoTimeStyle(): Unit = js.native
+  def useNoTimeStyle(): Unit
   /**
     * _Use a short style for the date._
     *
     * Dates with a short style are typically numeric only e.g. "08/23/19".
     * @see https://docs.scriptable.app/dateformatter/#-useshortdatestyle
     */
-  def useShortDateStyle(): Unit = js.native
+  def useShortDateStyle(): Unit
   /**
     * _Use a short style for the time._
     *
     * Times with a short style are typically numeric only but also includes the period for 12-hour clocks, e.g. "7:17 PM".
     * @see https://docs.scriptable.app/dateformatter/#-useshorttimestyle
     */
-  def useShortTimeStyle(): Unit = js.native
+  def useShortTimeStyle(): Unit
+}
+
+object DateFormatter {
+  @scala.inline
+  def apply(
+    date: String => String,
+    dateFormat: String,
+    locale: String,
+    string: Date => String,
+    useFullDateStyle: () => Unit,
+    useFullTimeStyle: () => Unit,
+    useLongDateStyle: () => Unit,
+    useLongTimeStyle: () => Unit,
+    useMediumDateStyle: () => Unit,
+    useMediumTimeStyle: () => Unit,
+    useNoDateStyle: () => Unit,
+    useNoTimeStyle: () => Unit,
+    useShortDateStyle: () => Unit,
+    useShortTimeStyle: () => Unit
+  ): DateFormatter = {
+    val __obj = js.Dynamic.literal(date = js.Any.fromFunction1(date), dateFormat = dateFormat.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], string = js.Any.fromFunction1(string), useFullDateStyle = js.Any.fromFunction0(useFullDateStyle), useFullTimeStyle = js.Any.fromFunction0(useFullTimeStyle), useLongDateStyle = js.Any.fromFunction0(useLongDateStyle), useLongTimeStyle = js.Any.fromFunction0(useLongTimeStyle), useMediumDateStyle = js.Any.fromFunction0(useMediumDateStyle), useMediumTimeStyle = js.Any.fromFunction0(useMediumTimeStyle), useNoDateStyle = js.Any.fromFunction0(useNoDateStyle), useNoTimeStyle = js.Any.fromFunction0(useNoTimeStyle), useShortDateStyle = js.Any.fromFunction0(useShortDateStyle), useShortTimeStyle = js.Any.fromFunction0(useShortTimeStyle))
+    __obj.asInstanceOf[DateFormatter]
+  }
 }
 

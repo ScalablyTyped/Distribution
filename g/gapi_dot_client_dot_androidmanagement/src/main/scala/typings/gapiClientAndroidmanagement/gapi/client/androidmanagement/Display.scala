@@ -24,22 +24,22 @@ trait Display extends js.Object {
 object Display {
   @scala.inline
   def apply(
-    density: Int | Double = null,
-    displayId: Int | Double = null,
-    height: Int | Double = null,
+    density: js.UndefOr[Double] = js.undefined,
+    displayId: js.UndefOr[Double] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
     name: String = null,
-    refreshRate: Int | Double = null,
+    refreshRate: js.UndefOr[Double] = js.undefined,
     state: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): Display = {
     val __obj = js.Dynamic.literal()
-    if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
-    if (displayId != null) __obj.updateDynamic("displayId")(displayId.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(density)) __obj.updateDynamic("density")(density.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayId)) __obj.updateDynamic("displayId")(displayId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (refreshRate != null) __obj.updateDynamic("refreshRate")(refreshRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshRate)) __obj.updateDynamic("refreshRate")(refreshRate.get.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Display]
   }
 }

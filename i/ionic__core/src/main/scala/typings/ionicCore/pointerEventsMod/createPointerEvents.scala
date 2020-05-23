@@ -1,7 +1,7 @@
 package typings.ionicCore.pointerEventsMod
 
-import typings.ionicCore.AnonDestroy
-import typings.std.EventListenerOptions
+import typings.ionicCore.anon.Capture
+import typings.ionicCore.anon.Destroy
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,12 +10,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/core/dist/types/utils/gesture/pointer-events", "createPointerEvents")
 @js.native
 object createPointerEvents extends js.Object {
-  def apply(
-    el: Node,
-    pointerDown: js.Any,
-    pointerMove: js.Any,
-    pointerUp: js.Any,
-    options: EventListenerOptions
-  ): AnonDestroy = js.native
+  def apply(el: Node, pointerDown: js.Any, pointerMove: js.Any, pointerUp: js.Any, options: Capture): Destroy = js.native
 }
 

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`data-file`
 import typings.arcgisJsApi.arcgisJsApiStrings.`feature-record-set-layer`
 import typings.arcgisJsApi.arcgisJsApiStrings.`linear-unit`
@@ -53,8 +52,4 @@ trait ParameterValue
     */
   var value: js.Any = js.native
 }
-
-@JSGlobal("__esri.ParameterValue")
-@js.native
-object ParameterValue extends TopLevel[ParameterValueConstructor]
 

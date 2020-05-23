@@ -15,7 +15,7 @@ trait TimelineStyleData extends js.Object {
   var name: js.UndefOr[String] = js.undefined
   /**
     *
-    * Specifies whether this TimelineStyle object is read-only. Read-only.
+    * Specifies if this TimelineStyle object is read-only.
     *
     * [Api set: ExcelApi 1.10]
     */
@@ -27,7 +27,7 @@ object TimelineStyleData {
   def apply(name: String = null, readOnly: js.UndefOr[Boolean] = js.undefined): TimelineStyleData = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineStyleData]
   }
 }

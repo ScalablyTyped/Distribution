@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait JSONOutput extends js.Object {
   /**
-    * The value used to separate individual records in the output.
+    * The value used to separate individual records in the output. If no value is specified, Amazon S3 uses a newline character ('\n').
     */
   var RecordDelimiter: js.UndefOr[typings.awsSdk.s3Mod.RecordDelimiter] = js.native
 }

@@ -2,20 +2,20 @@ package typings.firefoxWebextBrowser.browser.manifest
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import typings.firefoxWebextBrowser.AnonApiscript
-import typings.firefoxWebextBrowser.AnonBookmarks
-import typings.firefoxWebextBrowser.AnonBrowserstyle
-import typings.firefoxWebextBrowser.AnonDefaultarea
-import typings.firefoxWebextBrowser.AnonDefaulticon
-import typings.firefoxWebextBrowser.AnonDefaultpanel
-import typings.firefoxWebextBrowser.AnonEdge
-import typings.firefoxWebextBrowser.AnonGecko
-import typings.firefoxWebextBrowser.AnonHomepage
-import typings.firefoxWebextBrowser.AnonKeyword
-import typings.firefoxWebextBrowser.AnonNameUrl
-import typings.firefoxWebextBrowser.AnonPage
-import typings.firefoxWebextBrowser.AnonPersistent
-import typings.firefoxWebextBrowser.AnonSuggestedkey
+import typings.firefoxWebextBrowser.anon.Apiscript
+import typings.firefoxWebextBrowser.anon.Bookmarks
+import typings.firefoxWebextBrowser.anon.Browserstyle
+import typings.firefoxWebextBrowser.anon.Defaultarea
+import typings.firefoxWebextBrowser.anon.Defaulticon
+import typings.firefoxWebextBrowser.anon.Defaultpanel
+import typings.firefoxWebextBrowser.anon.Edge
+import typings.firefoxWebextBrowser.anon.Gecko
+import typings.firefoxWebextBrowser.anon.Homepage
+import typings.firefoxWebextBrowser.anon.Keyword
+import typings.firefoxWebextBrowser.anon.NameUrl
+import typings.firefoxWebextBrowser.anon.Page
+import typings.firefoxWebextBrowser.anon.Persistent
+import typings.firefoxWebextBrowser.anon.Suggestedkey
 import typings.firefoxWebextBrowser.browser.experiments.ExperimentAPI
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,19 +23,19 @@ import scala.scalajs.js.annotation._
 
 /** Represents a WebExtension manifest.json file */
 trait WebExtensionManifest extends js.Object {
-  var applications: js.UndefOr[AnonGecko] = js.undefined
+  var applications: js.UndefOr[Gecko] = js.undefined
   var author: js.UndefOr[String] = js.undefined
-  var background: js.UndefOr[AnonPage | AnonPersistent] = js.undefined
-  var browser_action: js.UndefOr[AnonDefaultarea] = js.undefined
-  var browser_specific_settings: js.UndefOr[AnonEdge] = js.undefined
-  var chrome_settings_overrides: js.UndefOr[AnonHomepage] = js.undefined
-  var chrome_url_overrides: js.UndefOr[AnonBookmarks] = js.undefined
-  var commands: js.UndefOr[StringDictionary[AnonSuggestedkey]] = js.undefined
+  var background: js.UndefOr[Page | Persistent] = js.undefined
+  var browser_action: js.UndefOr[Defaultarea] = js.undefined
+  var browser_specific_settings: js.UndefOr[Edge] = js.undefined
+  var chrome_settings_overrides: js.UndefOr[Homepage] = js.undefined
+  var chrome_url_overrides: js.UndefOr[Bookmarks] = js.undefined
+  var commands: js.UndefOr[StringDictionary[Suggestedkey]] = js.undefined
   var content_scripts: js.UndefOr[js.Array[ContentScript]] = js.undefined
   var content_security_policy: js.UndefOr[String] = js.undefined
   var default_locale: js.UndefOr[String] = js.undefined
   var description: js.UndefOr[String] = js.undefined
-  var developer: js.UndefOr[AnonNameUrl] = js.undefined
+  var developer: js.UndefOr[NameUrl] = js.undefined
   var devtools_page: js.UndefOr[ExtensionURL] = js.undefined
   var experiment_apis: js.UndefOr[StringDictionary[ExperimentAPI]] = js.undefined
   var hidden: js.UndefOr[Boolean] = js.undefined
@@ -46,17 +46,17 @@ trait WebExtensionManifest extends js.Object {
   var minimum_chrome_version: js.UndefOr[String] = js.undefined
   var minimum_opera_version: js.UndefOr[String] = js.undefined
   var name: String
-  var omnibox: js.UndefOr[AnonKeyword] = js.undefined
+  var omnibox: js.UndefOr[Keyword] = js.undefined
   var optional_permissions: js.UndefOr[js.Array[OptionalPermissionOrOrigin]] = js.undefined
-  var options_ui: js.UndefOr[AnonBrowserstyle] = js.undefined
-  var page_action: js.UndefOr[AnonDefaulticon] = js.undefined
+  var options_ui: js.UndefOr[Browserstyle] = js.undefined
+  var page_action: js.UndefOr[Defaulticon] = js.undefined
   var permissions: js.UndefOr[js.Array[PermissionOrOrigin]] = js.undefined
   /** A list of protocol handler definitions. */
   var protocol_handlers: js.UndefOr[js.Array[ProtocolHandler]] = js.undefined
   var short_name: js.UndefOr[String] = js.undefined
-  var sidebar_action: js.UndefOr[AnonDefaultpanel] = js.undefined
+  var sidebar_action: js.UndefOr[Defaultpanel] = js.undefined
   var theme_experiment: js.UndefOr[ThemeExperiment] = js.undefined
-  var user_scripts: js.UndefOr[AnonApiscript] = js.undefined
+  var user_scripts: js.UndefOr[Apiscript] = js.undefined
   var version: String
   var web_accessible_resources: js.UndefOr[js.Array[String]] = js.undefined
 }
@@ -67,19 +67,19 @@ object WebExtensionManifest {
     manifest_version: Double,
     name: String,
     version: String,
-    applications: AnonGecko = null,
+    applications: Gecko = null,
     author: String = null,
-    background: AnonPage | AnonPersistent = null,
-    browser_action: AnonDefaultarea = null,
-    browser_specific_settings: AnonEdge = null,
-    chrome_settings_overrides: AnonHomepage = null,
-    chrome_url_overrides: AnonBookmarks = null,
-    commands: StringDictionary[AnonSuggestedkey] = null,
+    background: Page | Persistent = null,
+    browser_action: Defaultarea = null,
+    browser_specific_settings: Edge = null,
+    chrome_settings_overrides: Homepage = null,
+    chrome_url_overrides: Bookmarks = null,
+    commands: StringDictionary[Suggestedkey] = null,
     content_scripts: js.Array[ContentScript] = null,
     content_security_policy: String = null,
     default_locale: String = null,
     description: String = null,
-    developer: AnonNameUrl = null,
+    developer: NameUrl = null,
     devtools_page: ExtensionURL = null,
     experiment_apis: StringDictionary[ExperimentAPI] = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
@@ -88,16 +88,16 @@ object WebExtensionManifest {
     incognito: WebExtensionManifestIncognito = null,
     minimum_chrome_version: String = null,
     minimum_opera_version: String = null,
-    omnibox: AnonKeyword = null,
+    omnibox: Keyword = null,
     optional_permissions: js.Array[OptionalPermissionOrOrigin] = null,
-    options_ui: AnonBrowserstyle = null,
-    page_action: AnonDefaulticon = null,
+    options_ui: Browserstyle = null,
+    page_action: Defaulticon = null,
     permissions: js.Array[PermissionOrOrigin] = null,
     protocol_handlers: js.Array[ProtocolHandler] = null,
     short_name: String = null,
-    sidebar_action: AnonDefaultpanel = null,
+    sidebar_action: Defaultpanel = null,
     theme_experiment: ThemeExperiment = null,
-    user_scripts: AnonApiscript = null,
+    user_scripts: Apiscript = null,
     web_accessible_resources: js.Array[String] = null
   ): WebExtensionManifest = {
     val __obj = js.Dynamic.literal(manifest_version = manifest_version.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
@@ -116,7 +116,7 @@ object WebExtensionManifest {
     if (developer != null) __obj.updateDynamic("developer")(developer.asInstanceOf[js.Any])
     if (devtools_page != null) __obj.updateDynamic("devtools_page")(devtools_page.asInstanceOf[js.Any])
     if (experiment_apis != null) __obj.updateDynamic("experiment_apis")(experiment_apis.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (homepage_url != null) __obj.updateDynamic("homepage_url")(homepage_url.asInstanceOf[js.Any])
     if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
     if (incognito != null) __obj.updateDynamic("incognito")(incognito.asInstanceOf[js.Any])

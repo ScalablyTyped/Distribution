@@ -46,7 +46,7 @@ object GetObjectResponse {
     StatusCode: statusCode,
     Body: PayloadBlob = null,
     CacheControl: StringPrimitive = null,
-    ContentLength: Int | Double = null,
+    ContentLength: js.UndefOr[NonNegativeLong] = js.undefined,
     ContentRange: ContentRangePattern = null,
     ContentType: ContentType = null,
     ETag: ETag = null,
@@ -55,7 +55,7 @@ object GetObjectResponse {
     val __obj = js.Dynamic.literal(StatusCode = StatusCode.asInstanceOf[js.Any])
     if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
     if (CacheControl != null) __obj.updateDynamic("CacheControl")(CacheControl.asInstanceOf[js.Any])
-    if (ContentLength != null) __obj.updateDynamic("ContentLength")(ContentLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(ContentLength)) __obj.updateDynamic("ContentLength")(ContentLength.get.asInstanceOf[js.Any])
     if (ContentRange != null) __obj.updateDynamic("ContentRange")(ContentRange.asInstanceOf[js.Any])
     if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType.asInstanceOf[js.Any])
     if (ETag != null) __obj.updateDynamic("ETag")(ETag.asInstanceOf[js.Any])

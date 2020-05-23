@@ -29,7 +29,7 @@ object ModifyOptions {
     deleteCondition: /* event */ MapBrowserEvent => Boolean = null,
     features: Collection[Feature] = null,
     insertVertexCondition: /* event */ MapBrowserEvent => Boolean = null,
-    pixelTolerance: Int | Double = null,
+    pixelTolerance: js.UndefOr[Double] = js.undefined,
     source: Vector = null,
     style: Style | js.Array[Style] | StyleFunction = null,
     wrapX: js.UndefOr[Boolean] = js.undefined
@@ -39,10 +39,10 @@ object ModifyOptions {
     if (deleteCondition != null) __obj.updateDynamic("deleteCondition")(js.Any.fromFunction1(deleteCondition))
     if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
     if (insertVertexCondition != null) __obj.updateDynamic("insertVertexCondition")(js.Any.fromFunction1(insertVertexCondition))
-    if (pixelTolerance != null) __obj.updateDynamic("pixelTolerance")(pixelTolerance.asInstanceOf[js.Any])
+    if (!js.isUndefined(pixelTolerance)) __obj.updateDynamic("pixelTolerance")(pixelTolerance.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyOptions]
   }
 }

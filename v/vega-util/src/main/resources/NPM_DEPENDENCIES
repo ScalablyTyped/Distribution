@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vega-util" : "1.13.1"
+      "vega-util" : "1.14.0"
     }
   ],
   "test-dependencies" : [
     {
-      "vega-util" : "1.13.1"
+      "vega-util" : "1.14.0"
     }
   ],
   "compile-devDependencies" : [

@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.AnonDragAxis
+import typings.babylonjs.anon.DragAxis
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   */
 class PointerDragBehavior ()
   extends typings.babylonjs.legacyMod.PointerDragBehavior {
-  def this(options: AnonDragAxis) = this()
+  def this(options: DragAxis) = this()
 }
 
 /* static members */

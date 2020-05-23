@@ -20,7 +20,7 @@ object AbbreviatedMetadata {
     modified: String,
     name: String,
     versions: StringDictionary[AbbreviatedVersion],
-    StringDictionary: /* key */ StringDictionary[js.Any] = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null
   ): AbbreviatedMetadata = {
     val __obj = js.Dynamic.literal(modified = modified.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])
     __obj.updateDynamic("dist-tags")(`dist-tags`.asInstanceOf[js.Any])

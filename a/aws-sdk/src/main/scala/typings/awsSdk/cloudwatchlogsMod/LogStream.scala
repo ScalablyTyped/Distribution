@@ -44,22 +44,22 @@ object LogStream {
   @scala.inline
   def apply(
     arn: Arn = null,
-    creationTime: Int | Double = null,
-    firstEventTimestamp: Int | Double = null,
-    lastEventTimestamp: Int | Double = null,
-    lastIngestionTime: Int | Double = null,
+    creationTime: js.UndefOr[Timestamp] = js.undefined,
+    firstEventTimestamp: js.UndefOr[Timestamp] = js.undefined,
+    lastEventTimestamp: js.UndefOr[Timestamp] = js.undefined,
+    lastIngestionTime: js.UndefOr[Timestamp] = js.undefined,
     logStreamName: LogStreamName = null,
-    storedBytes: Int | Double = null,
+    storedBytes: js.UndefOr[StoredBytes] = js.undefined,
     uploadSequenceToken: SequenceToken = null
   ): LogStream = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (firstEventTimestamp != null) __obj.updateDynamic("firstEventTimestamp")(firstEventTimestamp.asInstanceOf[js.Any])
-    if (lastEventTimestamp != null) __obj.updateDynamic("lastEventTimestamp")(lastEventTimestamp.asInstanceOf[js.Any])
-    if (lastIngestionTime != null) __obj.updateDynamic("lastIngestionTime")(lastIngestionTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(creationTime)) __obj.updateDynamic("creationTime")(creationTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstEventTimestamp)) __obj.updateDynamic("firstEventTimestamp")(firstEventTimestamp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastEventTimestamp)) __obj.updateDynamic("lastEventTimestamp")(lastEventTimestamp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastIngestionTime)) __obj.updateDynamic("lastIngestionTime")(lastIngestionTime.get.asInstanceOf[js.Any])
     if (logStreamName != null) __obj.updateDynamic("logStreamName")(logStreamName.asInstanceOf[js.Any])
-    if (storedBytes != null) __obj.updateDynamic("storedBytes")(storedBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(storedBytes)) __obj.updateDynamic("storedBytes")(storedBytes.get.asInstanceOf[js.Any])
     if (uploadSequenceToken != null) __obj.updateDynamic("uploadSequenceToken")(uploadSequenceToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogStream]
   }

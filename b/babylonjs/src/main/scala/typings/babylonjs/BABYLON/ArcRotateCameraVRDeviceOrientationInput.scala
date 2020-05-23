@@ -5,12 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.ArcRotateCameraVRDeviceOrientationInput")
 @js.native
-/**
-  * Instantiate a new ArcRotateCameraVRDeviceOrientationInput.
-  */
-class ArcRotateCameraVRDeviceOrientationInput () extends ICameraInput[ArcRotateCamera] {
+trait ArcRotateCameraVRDeviceOrientationInput extends ICameraInput[ArcRotateCamera] {
   var _alpha: js.Any = js.native
   var _deviceOrientationHandler: js.Any = js.native
   var _dirty: js.Any = js.native

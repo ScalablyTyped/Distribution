@@ -1,6 +1,6 @@
 package typings.monacoEditor.mod.languages.typescript
 
-import typings.monacoEditor.AnonContent
+import typings.monacoEditor.anon.Content
 import typings.monacoEditor.mod.IDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -67,7 +67,7 @@ trait LanguageServiceDefaults extends js.Object {
     * files that won't be loaded as editor documents, like `jquery.d.ts`.
     * @param libs An array of entries to register.
     */
-  def setExtraLibs(libs: js.Array[AnonContent]): Unit = js.native
+  def setExtraLibs(libs: js.Array[Content]): Unit = js.native
   /**
     * No-op.
     */

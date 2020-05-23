@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-some
 
-Typings are for version 4.1.0
+Typings are for version 5.0.0
 
 ## Library description:
 Wait for a specified number of promises to be fulfilled
@@ -10,9 +10,9 @@ Wait for a specified number of promises to be fulfilled
 | ------------------ | :-------------: |
 | Full name          | p-some |
 | Keywords           | promise, some, resolved, wait, collection, iterable, iterator, race, fulfilled, fastest, async, await, promises, bluebird |
-| # releases         | 6 |
-| # dependents       | 8 |
-| # downloads        | 4630230 |
+| # releases         | 5 |
+| # dependents       | 9 |
+| # downloads        | 9717997 |
 | # stars            | 1 |
 
 ## Links

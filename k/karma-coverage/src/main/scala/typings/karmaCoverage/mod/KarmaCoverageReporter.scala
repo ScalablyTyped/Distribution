@@ -46,7 +46,7 @@ trait KarmaCoverageReporter
 object KarmaCoverageReporter {
   @scala.inline
   def apply(
-    StringDictionary: /* moreSettings */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     check: js.Any = null,
     dir: String = null,
     file: String = null,
@@ -64,13 +64,13 @@ object KarmaCoverageReporter {
     if (check != null) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeAllSources)) __obj.updateDynamic("includeAllSources")(includeAllSources.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeAllSources)) __obj.updateDynamic("includeAllSources")(includeAllSources.get.asInstanceOf[js.Any])
     if (instrumenter != null) __obj.updateDynamic("instrumenter")(instrumenter.asInstanceOf[js.Any])
     if (reporters != null) __obj.updateDynamic("reporters")(reporters.asInstanceOf[js.Any])
     if (sourceStore != null) __obj.updateDynamic("sourceStore")(sourceStore.asInstanceOf[js.Any])
     if (subdir != null) __obj.updateDynamic("subdir")(subdir.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(useJSExtensionForCoffeeScript)) __obj.updateDynamic("useJSExtensionForCoffeeScript")(useJSExtensionForCoffeeScript.asInstanceOf[js.Any])
+    if (!js.isUndefined(useJSExtensionForCoffeeScript)) __obj.updateDynamic("useJSExtensionForCoffeeScript")(useJSExtensionForCoffeeScript.get.asInstanceOf[js.Any])
     if (watermarks != null) __obj.updateDynamic("watermarks")(watermarks.asInstanceOf[js.Any])
     __obj.asInstanceOf[KarmaCoverageReporter]
   }

@@ -28,10 +28,10 @@ object CatIndicesParams {
     index: NameList = null,
     local: js.UndefOr[Boolean] = js.undefined,
     masterTimeout: TimeSpan = null,
-    maxRetries: Int | Double = null,
+    maxRetries: js.UndefOr[Double] = js.undefined,
     method: String = null,
     pri: js.UndefOr[Boolean] = js.undefined,
-    requestTimeout: Int | Double = null,
+    requestTimeout: js.UndefOr[Double] = js.undefined,
     v: js.UndefOr[Boolean] = js.undefined
   ): CatIndicesParams = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
@@ -40,16 +40,16 @@ object CatIndicesParams {
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
     if (h != null) __obj.updateDynamic("h")(h.asInstanceOf[js.Any])
     if (health != null) __obj.updateDynamic("health")(health.asInstanceOf[js.Any])
-    if (!js.isUndefined(help)) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
+    if (!js.isUndefined(help)) __obj.updateDynamic("help")(help.get.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(local)) __obj.updateDynamic("local")(local.asInstanceOf[js.Any])
+    if (!js.isUndefined(local)) __obj.updateDynamic("local")(local.get.asInstanceOf[js.Any])
     if (masterTimeout != null) __obj.updateDynamic("masterTimeout")(masterTimeout.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(pri)) __obj.updateDynamic("pri")(pri.asInstanceOf[js.Any])
-    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(v)) __obj.updateDynamic("v")(v.asInstanceOf[js.Any])
+    if (!js.isUndefined(pri)) __obj.updateDynamic("pri")(pri.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestTimeout)) __obj.updateDynamic("requestTimeout")(requestTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(v)) __obj.updateDynamic("v")(v.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CatIndicesParams]
   }
 }

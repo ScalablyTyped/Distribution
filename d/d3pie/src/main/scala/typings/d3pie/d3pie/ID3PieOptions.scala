@@ -1,42 +1,42 @@
 package typings.d3pie.d3pie
 
-import typings.d3pie.AnonCanvasHeight
-import typings.d3pie.AnonCanvasPadding
-import typings.d3pie.AnonContent
-import typings.d3pie.AnonFormatter
-import typings.d3pie.AnonHighlightLuminosity
-import typings.d3pie.AnonLocation
-import typings.d3pie.AnonOnClickSegment
-import typings.d3pie.AnonPlaceholderParser
-import typings.d3pie.locationleftID3PieTextOpt
+import typings.d3pie.anon.CanvasHeight
+import typings.d3pie.anon.CanvasPadding
+import typings.d3pie.anon.Content
+import typings.d3pie.anon.Formatter
+import typings.d3pie.anon.HighlightLuminosity
+import typings.d3pie.anon.Location
+import typings.d3pie.anon.OnClickSegment
+import typings.d3pie.anon.PlaceholderParser
+import typings.d3pie.anon.locationleftID3PieTextOpt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ID3PieOptions extends js.Object {
-  var callbacks: js.UndefOr[AnonOnClickSegment] = js.undefined
-  var data: AnonContent
-  var effects: js.UndefOr[AnonHighlightLuminosity] = js.undefined
+  var callbacks: js.UndefOr[OnClickSegment] = js.undefined
+  var data: Content
+  var effects: js.UndefOr[HighlightLuminosity] = js.undefined
   var footer: js.UndefOr[locationleftID3PieTextOpt] = js.undefined
-  var header: js.UndefOr[AnonLocation] = js.undefined
-  var labels: js.UndefOr[AnonFormatter] = js.undefined
-  var misc: js.UndefOr[AnonCanvasPadding] = js.undefined
-  var size: js.UndefOr[AnonCanvasHeight] = js.undefined
-  var tooltips: js.UndefOr[AnonPlaceholderParser] = js.undefined
+  var header: js.UndefOr[Location] = js.undefined
+  var labels: js.UndefOr[Formatter] = js.undefined
+  var misc: js.UndefOr[CanvasPadding] = js.undefined
+  var size: js.UndefOr[CanvasHeight] = js.undefined
+  var tooltips: js.UndefOr[PlaceholderParser] = js.undefined
 }
 
 object ID3PieOptions {
   @scala.inline
   def apply(
-    data: AnonContent,
-    callbacks: AnonOnClickSegment = null,
-    effects: AnonHighlightLuminosity = null,
+    data: Content,
+    callbacks: OnClickSegment = null,
+    effects: HighlightLuminosity = null,
     footer: locationleftID3PieTextOpt = null,
-    header: AnonLocation = null,
-    labels: AnonFormatter = null,
-    misc: AnonCanvasPadding = null,
-    size: AnonCanvasHeight = null,
-    tooltips: AnonPlaceholderParser = null
+    header: Location = null,
+    labels: Formatter = null,
+    misc: CanvasPadding = null,
+    size: CanvasHeight = null,
+    tooltips: PlaceholderParser = null
   ): ID3PieOptions = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])

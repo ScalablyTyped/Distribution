@@ -37,15 +37,15 @@ object LegacyOptions {
   @scala.inline
   def apply(
     landscape: js.UndefOr[Boolean] = js.undefined,
-    marginsType: Int | Double = null,
+    marginsType: js.UndefOr[Double] = js.undefined,
     pageSize: A3 | A4 | Legal | Tabloid = null,
     printBackground: js.UndefOr[Boolean] = js.undefined
   ): LegacyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(landscape)) __obj.updateDynamic("landscape")(landscape.asInstanceOf[js.Any])
-    if (marginsType != null) __obj.updateDynamic("marginsType")(marginsType.asInstanceOf[js.Any])
+    if (!js.isUndefined(landscape)) __obj.updateDynamic("landscape")(landscape.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginsType)) __obj.updateDynamic("marginsType")(marginsType.get.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(printBackground)) __obj.updateDynamic("printBackground")(printBackground.asInstanceOf[js.Any])
+    if (!js.isUndefined(printBackground)) __obj.updateDynamic("printBackground")(printBackground.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegacyOptions]
   }
 }

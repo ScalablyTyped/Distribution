@@ -5,19 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.m.PullToRefresh")
 @js.native
-class PullToRefresh protected () extends Control {
-  /**
-    * Constructor for a new PullToRefresh.Accepts an object literal <code>mSettings</code> that defines
-    * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
-    * sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the settings
-    * object.
-    * @param sId id for the new control, generated automatically if no id is given
-    * @param mSettings initial settings for the new control
-    */
-  def this(sId: String) = this()
-  def this(sId: String, mSettings: js.Any) = this()
+trait PullToRefresh extends Control {
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>refresh</code> event of this
     * <code>sap.m.PullToRefresh</code>.When called, the context of the event handler (its

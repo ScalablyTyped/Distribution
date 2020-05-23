@@ -127,7 +127,7 @@ object Curves extends js.Object {
   }
   
   /**
-    * [description]
+    * A quadratic Bézier curve constructed from two control points.
     */
   @js.native
   class QuadraticBezier protected ()

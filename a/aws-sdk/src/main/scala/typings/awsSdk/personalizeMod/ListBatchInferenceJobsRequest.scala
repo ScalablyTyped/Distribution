@@ -22,9 +22,13 @@ trait ListBatchInferenceJobsRequest extends js.Object {
 
 object ListBatchInferenceJobsRequest {
   @scala.inline
-  def apply(maxResults: Int | Double = null, nextToken: NextToken = null, solutionVersionArn: Arn = null): ListBatchInferenceJobsRequest = {
+  def apply(
+    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    nextToken: NextToken = null,
+    solutionVersionArn: Arn = null
+  ): ListBatchInferenceJobsRequest = {
     val __obj = js.Dynamic.literal()
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (solutionVersionArn != null) __obj.updateDynamic("solutionVersionArn")(solutionVersionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBatchInferenceJobsRequest]

@@ -1,7 +1,7 @@
 package typings.fundamentalReact.mod
 
-import typings.fundamentalReact.PartialStepInputProps
-import typings.fundamentalReact.WeakValidationMapStepInpu
+import typings.fundamentalReact.anon.PartialStepInputProps
+import typings.fundamentalReact.anon.WeakValidationMapStepInpu
 import typings.fundamentalReact.stepInputMod.StepInputProps
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement

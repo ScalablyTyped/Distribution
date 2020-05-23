@@ -14,9 +14,9 @@ trait GetCardinalityResponse extends js.Object {
 
 object GetCardinalityResponse {
   @scala.inline
-  def apply(cardinality: Int | Double = null): GetCardinalityResponse = {
+  def apply(cardinality: js.UndefOr[Count] = js.undefined): GetCardinalityResponse = {
     val __obj = js.Dynamic.literal()
-    if (cardinality != null) __obj.updateDynamic("cardinality")(cardinality.asInstanceOf[js.Any])
+    if (!js.isUndefined(cardinality)) __obj.updateDynamic("cardinality")(cardinality.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCardinalityResponse]
   }
 }

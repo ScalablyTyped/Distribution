@@ -25,11 +25,11 @@ object ModifyVolumeAttributeRequest {
   def apply(
     VolumeId: VolumeId,
     AutoEnableIO: AttributeBooleanValue = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined
   ): ModifyVolumeAttributeRequest = {
     val __obj = js.Dynamic.literal(VolumeId = VolumeId.asInstanceOf[js.Any])
     if (AutoEnableIO != null) __obj.updateDynamic("AutoEnableIO")(AutoEnableIO.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyVolumeAttributeRequest]
   }
 }

@@ -1,6 +1,6 @@
 package typings.esFeatureDetection.mod
 
-import typings.esFeatureDetection.RecordES2015SyntaxES2016S
+import typings.esFeatureDetection.anon.RecordES2015SyntaxES2016S
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

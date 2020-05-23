@@ -1,8 +1,8 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.WorkbookCreatedData
 import typings.officeJs.OfficeExtension.ClientObject
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,9 +13,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.8]
   */
-@JSGlobal("Excel.WorkbookCreated")
 @js.native
-class WorkbookCreated () extends ClientObject {
+trait WorkbookCreated extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_WorkbookCreated: RequestContext = js.native
@@ -25,7 +24,7 @@ class WorkbookCreated () extends ClientObject {
     * @param propertyNames A comma-delimited string or an array of strings that specify the properties to load.
     */
   def load(): WorkbookCreated = js.native
-  def load(propertyNamesAndPaths: AnonExpand): WorkbookCreated = js.native
+  def load(propertyNamesAndPaths: Expand): WorkbookCreated = js.native
   def load(propertyNames: String): WorkbookCreated = js.native
   def load(propertyNames: js.Array[String]): WorkbookCreated = js.native
   /**

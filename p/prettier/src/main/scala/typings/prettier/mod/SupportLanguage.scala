@@ -32,7 +32,7 @@ object SupportLanguage {
     extensions: js.Array[String] = null,
     filenames: js.Array[String] = null,
     group: String = null,
-    linguistLanguageId: Int | Double = null,
+    linguistLanguageId: js.UndefOr[Double] = js.undefined,
     since: String = null,
     tmScope: String = null,
     vscodeLanguageIds: js.Array[String] = null
@@ -45,7 +45,7 @@ object SupportLanguage {
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (filenames != null) __obj.updateDynamic("filenames")(filenames.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (linguistLanguageId != null) __obj.updateDynamic("linguistLanguageId")(linguistLanguageId.asInstanceOf[js.Any])
+    if (!js.isUndefined(linguistLanguageId)) __obj.updateDynamic("linguistLanguageId")(linguistLanguageId.get.asInstanceOf[js.Any])
     if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
     if (tmScope != null) __obj.updateDynamic("tmScope")(tmScope.asInstanceOf[js.Any])
     if (vscodeLanguageIds != null) __obj.updateDynamic("vscodeLanguageIds")(vscodeLanguageIds.asInstanceOf[js.Any])

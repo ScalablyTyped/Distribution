@@ -24,8 +24,8 @@ object OpenGraph {
   def apply(
     article: OpenGraphArticle = null,
     book: OpenGraphBook = null,
-    defaultImageHeight: Int | Double = null,
-    defaultImageWidth: Int | Double = null,
+    defaultImageHeight: js.UndefOr[Double] = js.undefined,
+    defaultImageWidth: js.UndefOr[Double] = js.undefined,
     description: String = null,
     images: js.Array[OpenGraphImages] = null,
     locale: String = null,
@@ -38,8 +38,8 @@ object OpenGraph {
     val __obj = js.Dynamic.literal()
     if (article != null) __obj.updateDynamic("article")(article.asInstanceOf[js.Any])
     if (book != null) __obj.updateDynamic("book")(book.asInstanceOf[js.Any])
-    if (defaultImageHeight != null) __obj.updateDynamic("defaultImageHeight")(defaultImageHeight.asInstanceOf[js.Any])
-    if (defaultImageWidth != null) __obj.updateDynamic("defaultImageWidth")(defaultImageWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultImageHeight)) __obj.updateDynamic("defaultImageHeight")(defaultImageHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultImageWidth)) __obj.updateDynamic("defaultImageWidth")(defaultImageWidth.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])

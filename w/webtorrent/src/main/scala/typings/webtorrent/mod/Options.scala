@@ -18,7 +18,7 @@ object Options {
   @scala.inline
   def apply(
     dht: Boolean | js.Object = null,
-    maxConns: Int | Double = null,
+    maxConns: js.UndefOr[Double] = js.undefined,
     nodeId: String | Buffer = null,
     peerId: String | Buffer = null,
     tracker: Boolean | js.Object = null,
@@ -26,11 +26,11 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (dht != null) __obj.updateDynamic("dht")(dht.asInstanceOf[js.Any])
-    if (maxConns != null) __obj.updateDynamic("maxConns")(maxConns.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxConns)) __obj.updateDynamic("maxConns")(maxConns.get.asInstanceOf[js.Any])
     if (nodeId != null) __obj.updateDynamic("nodeId")(nodeId.asInstanceOf[js.Any])
     if (peerId != null) __obj.updateDynamic("peerId")(peerId.asInstanceOf[js.Any])
     if (tracker != null) __obj.updateDynamic("tracker")(tracker.asInstanceOf[js.Any])
-    if (!js.isUndefined(webSeeds)) __obj.updateDynamic("webSeeds")(webSeeds.asInstanceOf[js.Any])
+    if (!js.isUndefined(webSeeds)) __obj.updateDynamic("webSeeds")(webSeeds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

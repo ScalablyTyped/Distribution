@@ -1,8 +1,8 @@
 package typings.azureSb.mod.Azure.ServiceBus
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.azureSb.AnonBody
-import typings.azureSb.AnonPushChannel
+import typings.azureSb.anon.Body
+import typings.azureSb.anon.PushChannel
 import typings.azureSb.azureSbStrings.adm
 import typings.azureSb.azureSbStrings.apns
 import typings.azureSb.azureSbStrings.gcm
@@ -20,9 +20,9 @@ trait NotificationHubInstallation extends js.Object {
   val lastUpdate: js.UndefOr[String] = js.undefined
   var platform: apns | wns | mpns | adm | gcm
   var pushChannel: String
-  var secondaryTile: js.UndefOr[StringDictionary[AnonPushChannel]] = js.undefined
+  var secondaryTile: js.UndefOr[StringDictionary[PushChannel]] = js.undefined
   var tags: js.UndefOr[js.Array[String]] = js.undefined
-  var templates: js.UndefOr[StringDictionary[AnonBody]] = js.undefined
+  var templates: js.UndefOr[StringDictionary[Body]] = js.undefined
 }
 
 object NotificationHubInstallation {
@@ -35,9 +35,9 @@ object NotificationHubInstallation {
     expiredPushChannel: String = null,
     lastActiveOn: String = null,
     lastUpdate: String = null,
-    secondaryTile: StringDictionary[AnonPushChannel] = null,
+    secondaryTile: StringDictionary[PushChannel] = null,
     tags: js.Array[String] = null,
-    templates: StringDictionary[AnonBody] = null
+    templates: StringDictionary[Body] = null
   ): NotificationHubInstallation = {
     val __obj = js.Dynamic.literal(installationId = installationId.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], pushChannel = pushChannel.asInstanceOf[js.Any])
     if (expirationTime != null) __obj.updateDynamic("expirationTime")(expirationTime.asInstanceOf[js.Any])

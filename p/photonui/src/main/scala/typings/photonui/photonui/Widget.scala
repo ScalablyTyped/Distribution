@@ -1,45 +1,62 @@
 package typings.photonui.photonui
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.photonui.AnonX
+import typings.photonui.anon.X
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("photonui.Widget")
-@js.native
-class Widget () extends Base {
-  var absolutePosition: AnonX = js.native
+trait Widget extends Base {
+  var absolutePosition: X
    // readonly
-  var contextMenu: PopupWindow = js.native
-  var contextMenuName: String = js.native
-  var html: HTMLElement = js.native
+  var contextMenu: PopupWindow
+  var contextMenuName: String
+  var html: HTMLElement
    // readonly
-  var layoutOptions: StringDictionary[js.Any] = js.native
-  var name: String = js.native
+  var layoutOptions: StringDictionary[js.Any]
+  var name: String
    // readonly
-  var offsetHeight: Double = js.native
-  var offsetWidth: Double = js.native
+  var offsetHeight: Double
+  var offsetWidth: Double
    // readonly
-  var parent: Widget = js.native
-  var parentName: String = js.native
-  var tooltip: String = js.native
-  var visible: Boolean = js.native
-  def addClass(className: String): Unit = js.native
-  def hide(): Unit = js.native
-  def removeClass(className: String): Unit = js.native
-  def show(): Unit = js.native
-  def unparent(): Unit = js.native
+  var parent: Widget
+  var parentName: String
+  var tooltip: String
+  var visible: Boolean
+  def addClass(className: String): Unit
+  def hide(): Unit
+  def removeClass(className: String): Unit
+  def show(): Unit
+  def unparent(): Unit
 }
 
-/* static members */
-@JSGlobal("photonui.Widget")
-@js.native
-object Widget extends js.Object {
-  def domInsert(widget: Widget): Unit = js.native
-  def domInsert(widget: Widget, element: String): Unit = js.native
-  def domInsert(widget: Widget, element: HTMLElement): Unit = js.native
-  def getWidget(name: String): Widget = js.native
+object Widget {
+  @scala.inline
+  def apply(
+    absolutePosition: X,
+    addClass: String => Unit,
+    contextMenu: PopupWindow,
+    contextMenuName: String,
+    destroy: () => Unit,
+    hide: () => Unit,
+    html: HTMLElement,
+    layoutOptions: StringDictionary[js.Any],
+    name: String,
+    offsetHeight: Double,
+    offsetWidth: Double,
+    parent: Widget,
+    parentName: String,
+    registerCallback: (String, String, js.Function, js.Any) => Unit,
+    removeCallback: String => Unit,
+    removeClass: String => Unit,
+    show: () => Unit,
+    tooltip: String,
+    unparent: () => Unit,
+    visible: Boolean
+  ): Widget = {
+    val __obj = js.Dynamic.literal(absolutePosition = absolutePosition.asInstanceOf[js.Any], addClass = js.Any.fromFunction1(addClass), contextMenu = contextMenu.asInstanceOf[js.Any], contextMenuName = contextMenuName.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), hide = js.Any.fromFunction0(hide), html = html.asInstanceOf[js.Any], layoutOptions = layoutOptions.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], offsetHeight = offsetHeight.asInstanceOf[js.Any], offsetWidth = offsetWidth.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], parentName = parentName.asInstanceOf[js.Any], registerCallback = js.Any.fromFunction4(registerCallback), removeCallback = js.Any.fromFunction1(removeCallback), removeClass = js.Any.fromFunction1(removeClass), show = js.Any.fromFunction0(show), tooltip = tooltip.asInstanceOf[js.Any], unparent = js.Any.fromFunction0(unparent), visible = visible.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Widget]
+  }
 }
 

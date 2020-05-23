@@ -16,7 +16,7 @@ object dxPolarChartCommonAxisSettingsConstantLineStyleLabel {
   def apply(font: Font = null, visible: js.UndefOr[Boolean] = js.undefined): dxPolarChartCommonAxisSettingsConstantLineStyleLabel = {
     val __obj = js.Dynamic.literal()
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxPolarChartCommonAxisSettingsConstantLineStyleLabel]
   }
 }

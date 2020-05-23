@@ -50,9 +50,9 @@ object GetHLSStreamingSessionURLInput {
     ContainerFormat: ContainerFormat = null,
     DiscontinuityMode: HLSDiscontinuityMode = null,
     DisplayFragmentTimestamp: HLSDisplayFragmentTimestamp = null,
-    Expires: Int | Double = null,
+    Expires: js.UndefOr[Expires] = js.undefined,
     HLSFragmentSelector: HLSFragmentSelector = null,
-    MaxMediaPlaylistFragmentResults: Int | Double = null,
+    MaxMediaPlaylistFragmentResults: js.UndefOr[PageLimit] = js.undefined,
     PlaybackMode: HLSPlaybackMode = null,
     StreamARN: ResourceARN = null,
     StreamName: StreamName = null
@@ -61,9 +61,9 @@ object GetHLSStreamingSessionURLInput {
     if (ContainerFormat != null) __obj.updateDynamic("ContainerFormat")(ContainerFormat.asInstanceOf[js.Any])
     if (DiscontinuityMode != null) __obj.updateDynamic("DiscontinuityMode")(DiscontinuityMode.asInstanceOf[js.Any])
     if (DisplayFragmentTimestamp != null) __obj.updateDynamic("DisplayFragmentTimestamp")(DisplayFragmentTimestamp.asInstanceOf[js.Any])
-    if (Expires != null) __obj.updateDynamic("Expires")(Expires.asInstanceOf[js.Any])
+    if (!js.isUndefined(Expires)) __obj.updateDynamic("Expires")(Expires.get.asInstanceOf[js.Any])
     if (HLSFragmentSelector != null) __obj.updateDynamic("HLSFragmentSelector")(HLSFragmentSelector.asInstanceOf[js.Any])
-    if (MaxMediaPlaylistFragmentResults != null) __obj.updateDynamic("MaxMediaPlaylistFragmentResults")(MaxMediaPlaylistFragmentResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxMediaPlaylistFragmentResults)) __obj.updateDynamic("MaxMediaPlaylistFragmentResults")(MaxMediaPlaylistFragmentResults.get.asInstanceOf[js.Any])
     if (PlaybackMode != null) __obj.updateDynamic("PlaybackMode")(PlaybackMode.asInstanceOf[js.Any])
     if (StreamARN != null) __obj.updateDynamic("StreamARN")(StreamARN.asInstanceOf[js.Any])
     if (StreamName != null) __obj.updateDynamic("StreamName")(StreamName.asInstanceOf[js.Any])

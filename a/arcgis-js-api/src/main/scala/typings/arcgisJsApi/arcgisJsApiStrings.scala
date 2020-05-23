@@ -1690,7 +1690,7 @@ object arcgisJsApiStrings {
   sealed trait `ordered-or-ranked` extends js.Object
   
   @js.native
-  sealed trait org extends js.Object
+  sealed trait org_ extends js.Object
   
   @js.native
   sealed trait org_admin extends js.Object
@@ -3685,7 +3685,7 @@ object arcgisJsApiStrings {
   @scala.inline
   def `ordered-or-ranked`: `ordered-or-ranked` = "ordered-or-ranked".asInstanceOf[`ordered-or-ranked`]
   @scala.inline
-  def org: org = "org".asInstanceOf[org]
+  def org_ : org_ = "org".asInstanceOf[org_]
   @scala.inline
   def org_admin: org_admin = "org_admin".asInstanceOf[org_admin]
   @scala.inline

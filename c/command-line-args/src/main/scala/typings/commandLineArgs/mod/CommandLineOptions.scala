@@ -15,10 +15,7 @@ trait CommandLineOptions
 
 object CommandLineOptions {
   @scala.inline
-  def apply(
-    StringDictionary: /* propName */ StringDictionary[js.Any] = null,
-    _unknown: js.Array[String] = null
-  ): CommandLineOptions = {
+  def apply(StringDictionary: /* name */ StringDictionary[js.Any] = null, _unknown: js.Array[String] = null): CommandLineOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (_unknown != null) __obj.updateDynamic("_unknown")(_unknown.asInstanceOf[js.Any])

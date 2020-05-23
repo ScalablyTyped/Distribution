@@ -50,8 +50,8 @@ object listenToCollectionOptions {
     __obj.updateDynamic("then")(js.Any.fromFunction0(`then`))
     if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction0(onFailure))
     if (query != null) __obj.updateDynamic("query")(js.Any.fromFunction0(query))
-    if (!js.isUndefined(withIds)) __obj.updateDynamic("withIds")(withIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(withRefs)) __obj.updateDynamic("withRefs")(withRefs.asInstanceOf[js.Any])
+    if (!js.isUndefined(withIds)) __obj.updateDynamic("withIds")(withIds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(withRefs)) __obj.updateDynamic("withRefs")(withRefs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[listenToCollectionOptions]
   }
 }

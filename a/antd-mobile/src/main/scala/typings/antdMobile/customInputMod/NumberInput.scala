@@ -2,7 +2,7 @@ package typings.antdMobile.customInputMod
 
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
 import typings.std.MouseEvent
 import scala.scalajs.js

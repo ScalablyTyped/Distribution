@@ -57,7 +57,7 @@ object UpdateImagePipelineRequest {
     infrastructureConfigurationArn: InfrastructureConfigurationArn,
     description: NonEmptyString = null,
     distributionConfigurationArn: DistributionConfigurationArn = null,
-    enhancedImageMetadataEnabled: js.UndefOr[Boolean] = js.undefined,
+    enhancedImageMetadataEnabled: js.UndefOr[NullableBoolean] = js.undefined,
     imageTestsConfiguration: ImageTestsConfiguration = null,
     schedule: Schedule = null,
     status: PipelineStatus = null
@@ -65,7 +65,7 @@ object UpdateImagePipelineRequest {
     val __obj = js.Dynamic.literal(clientToken = clientToken.asInstanceOf[js.Any], imagePipelineArn = imagePipelineArn.asInstanceOf[js.Any], imageRecipeArn = imageRecipeArn.asInstanceOf[js.Any], infrastructureConfigurationArn = infrastructureConfigurationArn.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (distributionConfigurationArn != null) __obj.updateDynamic("distributionConfigurationArn")(distributionConfigurationArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(enhancedImageMetadataEnabled)) __obj.updateDynamic("enhancedImageMetadataEnabled")(enhancedImageMetadataEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enhancedImageMetadataEnabled)) __obj.updateDynamic("enhancedImageMetadataEnabled")(enhancedImageMetadataEnabled.get.asInstanceOf[js.Any])
     if (imageTestsConfiguration != null) __obj.updateDynamic("imageTestsConfiguration")(imageTestsConfiguration.asInstanceOf[js.Any])
     if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])

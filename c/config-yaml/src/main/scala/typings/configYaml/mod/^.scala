@@ -1,6 +1,6 @@
 package typings.configYaml.mod
 
-import typings.configYaml.PartialOptions
+import typings.configYaml.anon.PartialOptions
 import typings.node.fsMod.PathLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`

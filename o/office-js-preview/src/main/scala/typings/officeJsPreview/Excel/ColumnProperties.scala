@@ -1,6 +1,6 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.CellPropertiesFormatcolum
+import typings.officeJsPreview.anon.CellPropertiesFormatcolum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,7 +41,7 @@ object ColumnProperties {
     address: String = null,
     addressLocal: String = null,
     columnHidden: js.UndefOr[Boolean] = js.undefined,
-    columnIndex: Int | Double = null,
+    columnIndex: js.UndefOr[Double] = js.undefined,
     format: CellPropertiesFormatcolum = null,
     hyperlink: RangeHyperlink = null,
     style: String = null
@@ -49,8 +49,8 @@ object ColumnProperties {
     val __obj = js.Dynamic.literal()
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     if (addressLocal != null) __obj.updateDynamic("addressLocal")(addressLocal.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnHidden)) __obj.updateDynamic("columnHidden")(columnHidden.asInstanceOf[js.Any])
-    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnHidden)) __obj.updateDynamic("columnHidden")(columnHidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnIndex)) __obj.updateDynamic("columnIndex")(columnIndex.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

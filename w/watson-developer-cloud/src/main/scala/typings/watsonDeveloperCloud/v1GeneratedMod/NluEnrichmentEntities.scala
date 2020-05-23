@@ -26,7 +26,7 @@ object NluEnrichmentEntities {
   @scala.inline
   def apply(
     emotion: js.UndefOr[Boolean] = js.undefined,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     mention_types: js.UndefOr[Boolean] = js.undefined,
     mentions: js.UndefOr[Boolean] = js.undefined,
     model: String = null,
@@ -34,13 +34,13 @@ object NluEnrichmentEntities {
     sentiment: js.UndefOr[Boolean] = js.undefined
   ): NluEnrichmentEntities = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(emotion)) __obj.updateDynamic("emotion")(emotion.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(mention_types)) __obj.updateDynamic("mention_types")(mention_types.asInstanceOf[js.Any])
-    if (!js.isUndefined(mentions)) __obj.updateDynamic("mentions")(mentions.asInstanceOf[js.Any])
+    if (!js.isUndefined(emotion)) __obj.updateDynamic("emotion")(emotion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mention_types)) __obj.updateDynamic("mention_types")(mention_types.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mentions)) __obj.updateDynamic("mentions")(mentions.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (!js.isUndefined(sentence_locations)) __obj.updateDynamic("sentence_locations")(sentence_locations.asInstanceOf[js.Any])
-    if (!js.isUndefined(sentiment)) __obj.updateDynamic("sentiment")(sentiment.asInstanceOf[js.Any])
+    if (!js.isUndefined(sentence_locations)) __obj.updateDynamic("sentence_locations")(sentence_locations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sentiment)) __obj.updateDynamic("sentiment")(sentiment.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NluEnrichmentEntities]
   }
 }

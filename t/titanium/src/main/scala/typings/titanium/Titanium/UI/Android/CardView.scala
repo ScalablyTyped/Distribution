@@ -22,43 +22,42 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * CardView provides a layout container with rounded corners and a shadow indicating the view is elevated.
-			 */
-@JSGlobal("Titanium.UI.Android.CardView")
+  * CardView provides a layout container with rounded corners and a shadow indicating the view is elevated.
+  */
 @js.native
-class CardView () extends View {
+trait CardView extends View {
   /**
-  				 * Maximum Elevation for CardView.
-  				 */
+    * Maximum Elevation for CardView.
+    */
   var maxElevation: Double = js.native
   /**
-  				 * Inner padding between the edges of the Card and children of the CardView.
-  				 */
+    * Inner padding between the edges of the Card and children of the CardView.
+    */
   var padding: Double = js.native
   /**
-  				 * Inner padding between the bottom edge of the Card and children of the CardView.
-  				 */
+    * Inner padding between the bottom edge of the Card and children of the CardView.
+    */
   var paddingBottom: Double = js.native
   /**
-  				 * Inner padding between the left edge of the Card and children of the CardView.
-  				 */
+    * Inner padding between the left edge of the Card and children of the CardView.
+    */
   var paddingLeft: Double = js.native
   /**
-  				 * Inner padding between the right edge of the Card and children of the CardView.
-  				 */
+    * Inner padding between the right edge of the Card and children of the CardView.
+    */
   var paddingRight: Double = js.native
   /**
-  				 * Inner padding between the top edge of the Card and children of the CardView.
-  				 */
+    * Inner padding between the top edge of the Card and children of the CardView.
+    */
   var paddingTop: Double = js.native
   /**
-  				 * Add padding to CardView on API level 20 and before to prevent intersections between
-  				 * the Card content and rounded corners.
-  				 */
+    * Add padding to CardView on API level 20 and before to prevent intersections between
+    * the Card content and rounded corners.
+    */
   var preventCornerOverlap: Boolean = js.native
   /**
-  				 * Add padding on API level 21 and above to have the same measurements with previous versions.
-  				 */
+    * Add padding on API level 21 and above to have the same measurements with previous versions.
+    */
   var useCompatPadding: Boolean = js.native
   @JSName("fireEvent")
   def fireEvent_click(name: click, event: CardViewClickEvent): Unit = js.native
@@ -93,84 +92,84 @@ class CardView () extends View {
   @JSName("fireEvent")
   def fireEvent_twofingertap(name: twofingertap, event: CardViewTwofingertapEvent): Unit = js.native
   /**
-  				 * Gets the value of the <Titanium.UI.Android.CardView.maxElevation> property.
-  				 * @deprecated Access <Titanium.UI.Android.CardView.maxElevation> instead.
-  				 */
+    * Gets the value of the <Titanium.UI.Android.CardView.maxElevation> property.
+    * @deprecated Access <Titanium.UI.Android.CardView.maxElevation> instead.
+    */
   def getMaxElevation(): Double = js.native
   /**
-  				 * Gets the value of the <Titanium.UI.Android.CardView.padding> property.
-  				 * @deprecated Access <Titanium.UI.Android.CardView.padding> instead.
-  				 */
+    * Gets the value of the <Titanium.UI.Android.CardView.padding> property.
+    * @deprecated Access <Titanium.UI.Android.CardView.padding> instead.
+    */
   def getPadding(): Double = js.native
   /**
-  				 * Gets the value of the <Titanium.UI.Android.CardView.paddingBottom> property.
-  				 * @deprecated Access <Titanium.UI.Android.CardView.paddingBottom> instead.
-  				 */
+    * Gets the value of the <Titanium.UI.Android.CardView.paddingBottom> property.
+    * @deprecated Access <Titanium.UI.Android.CardView.paddingBottom> instead.
+    */
   def getPaddingBottom(): Double = js.native
   /**
-  				 * Gets the value of the <Titanium.UI.Android.CardView.paddingLeft> property.
-  				 * @deprecated Access <Titanium.UI.Android.CardView.paddingLeft> instead.
-  				 */
+    * Gets the value of the <Titanium.UI.Android.CardView.paddingLeft> property.
+    * @deprecated Access <Titanium.UI.Android.CardView.paddingLeft> instead.
+    */
   def getPaddingLeft(): Double = js.native
   /**
-  				 * Gets the value of the <Titanium.UI.Android.CardView.paddingRight> property.
-  				 * @deprecated Access <Titanium.UI.Android.CardView.paddingRight> instead.
-  				 */
+    * Gets the value of the <Titanium.UI.Android.CardView.paddingRight> property.
+    * @deprecated Access <Titanium.UI.Android.CardView.paddingRight> instead.
+    */
   def getPaddingRight(): Double = js.native
   /**
-  				 * Gets the value of the <Titanium.UI.Android.CardView.paddingTop> property.
-  				 * @deprecated Access <Titanium.UI.Android.CardView.paddingTop> instead.
-  				 */
+    * Gets the value of the <Titanium.UI.Android.CardView.paddingTop> property.
+    * @deprecated Access <Titanium.UI.Android.CardView.paddingTop> instead.
+    */
   def getPaddingTop(): Double = js.native
   /**
-  				 * Gets the value of the <Titanium.UI.Android.CardView.preventCornerOverlap> property.
-  				 * @deprecated Access <Titanium.UI.Android.CardView.preventCornerOverlap> instead.
-  				 */
+    * Gets the value of the <Titanium.UI.Android.CardView.preventCornerOverlap> property.
+    * @deprecated Access <Titanium.UI.Android.CardView.preventCornerOverlap> instead.
+    */
   def getPreventCornerOverlap(): Boolean = js.native
   /**
-  				 * Gets the value of the <Titanium.UI.Android.CardView.useCompatPadding> property.
-  				 * @deprecated Access <Titanium.UI.Android.CardView.useCompatPadding> instead.
-  				 */
+    * Gets the value of the <Titanium.UI.Android.CardView.useCompatPadding> property.
+    * @deprecated Access <Titanium.UI.Android.CardView.useCompatPadding> instead.
+    */
   def getUseCompatPadding(): Boolean = js.native
   /**
-  				 * Sets the value of the <Titanium.UI.Android.CardView.maxElevation> property.
-  				 * @deprecated Set the value using <Titanium.UI.Android.CardView.maxElevation> instead.
-  				 */
+    * Sets the value of the <Titanium.UI.Android.CardView.maxElevation> property.
+    * @deprecated Set the value using <Titanium.UI.Android.CardView.maxElevation> instead.
+    */
   def setMaxElevation(maxElevation: Double): Unit = js.native
   /**
-  				 * Sets the value of the <Titanium.UI.Android.CardView.padding> property.
-  				 * @deprecated Set the value using <Titanium.UI.Android.CardView.padding> instead.
-  				 */
+    * Sets the value of the <Titanium.UI.Android.CardView.padding> property.
+    * @deprecated Set the value using <Titanium.UI.Android.CardView.padding> instead.
+    */
   def setPadding(padding: Double): Unit = js.native
   /**
-  				 * Sets the value of the <Titanium.UI.Android.CardView.paddingBottom> property.
-  				 * @deprecated Set the value using <Titanium.UI.Android.CardView.paddingBottom> instead.
-  				 */
+    * Sets the value of the <Titanium.UI.Android.CardView.paddingBottom> property.
+    * @deprecated Set the value using <Titanium.UI.Android.CardView.paddingBottom> instead.
+    */
   def setPaddingBottom(paddingBottom: Double): Unit = js.native
   /**
-  				 * Sets the value of the <Titanium.UI.Android.CardView.paddingLeft> property.
-  				 * @deprecated Set the value using <Titanium.UI.Android.CardView.paddingLeft> instead.
-  				 */
+    * Sets the value of the <Titanium.UI.Android.CardView.paddingLeft> property.
+    * @deprecated Set the value using <Titanium.UI.Android.CardView.paddingLeft> instead.
+    */
   def setPaddingLeft(paddingLeft: Double): Unit = js.native
   /**
-  				 * Sets the value of the <Titanium.UI.Android.CardView.paddingRight> property.
-  				 * @deprecated Set the value using <Titanium.UI.Android.CardView.paddingRight> instead.
-  				 */
+    * Sets the value of the <Titanium.UI.Android.CardView.paddingRight> property.
+    * @deprecated Set the value using <Titanium.UI.Android.CardView.paddingRight> instead.
+    */
   def setPaddingRight(paddingRight: Double): Unit = js.native
   /**
-  				 * Sets the value of the <Titanium.UI.Android.CardView.paddingTop> property.
-  				 * @deprecated Set the value using <Titanium.UI.Android.CardView.paddingTop> instead.
-  				 */
+    * Sets the value of the <Titanium.UI.Android.CardView.paddingTop> property.
+    * @deprecated Set the value using <Titanium.UI.Android.CardView.paddingTop> instead.
+    */
   def setPaddingTop(paddingTop: Double): Unit = js.native
   /**
-  				 * Sets the value of the <Titanium.UI.Android.CardView.preventCornerOverlap> property.
-  				 * @deprecated Set the value using <Titanium.UI.Android.CardView.preventCornerOverlap> instead.
-  				 */
+    * Sets the value of the <Titanium.UI.Android.CardView.preventCornerOverlap> property.
+    * @deprecated Set the value using <Titanium.UI.Android.CardView.preventCornerOverlap> instead.
+    */
   def setPreventCornerOverlap(preventCornerOverlap: Boolean): Unit = js.native
   /**
-  				 * Sets the value of the <Titanium.UI.Android.CardView.useCompatPadding> property.
-  				 * @deprecated Set the value using <Titanium.UI.Android.CardView.useCompatPadding> instead.
-  				 */
+    * Sets the value of the <Titanium.UI.Android.CardView.useCompatPadding> property.
+    * @deprecated Set the value using <Titanium.UI.Android.CardView.useCompatPadding> instead.
+    */
   def setUseCompatPadding(useCompatPadding: Boolean): Unit = js.native
 }
 

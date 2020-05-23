@@ -34,10 +34,10 @@ object RegisterOptions {
     persistentSubscribe: js.UndefOr[Boolean] = js.undefined
   ): RegisterOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(discardStale)) __obj.updateDynamic("discardStale")(discardStale.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableVersioning)) __obj.updateDynamic("enableVersioning")(enableVersioning.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreDeltas)) __obj.updateDynamic("ignoreDeltas")(ignoreDeltas.asInstanceOf[js.Any])
-    if (!js.isUndefined(persistentSubscribe)) __obj.updateDynamic("persistentSubscribe")(persistentSubscribe.asInstanceOf[js.Any])
+    if (!js.isUndefined(discardStale)) __obj.updateDynamic("discardStale")(discardStale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableVersioning)) __obj.updateDynamic("enableVersioning")(enableVersioning.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreDeltas)) __obj.updateDynamic("ignoreDeltas")(ignoreDeltas.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistentSubscribe)) __obj.updateDynamic("persistentSubscribe")(persistentSubscribe.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterOptions]
   }
 }

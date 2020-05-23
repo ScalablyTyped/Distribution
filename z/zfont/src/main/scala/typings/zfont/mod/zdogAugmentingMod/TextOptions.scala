@@ -41,14 +41,14 @@ trait TextOptions[T /* <: MultilineText */] extends ShapeOptions {
 
 object TextOptions {
   @scala.inline
-  def apply[T /* <: MultilineText */](
+  def apply[T](
     font: Font,
     addTo: Anchor = null,
     backface: Boolean | String = null,
     closed: js.UndefOr[Boolean] = js.undefined,
     color: String = null,
     fill: js.UndefOr[Boolean] = js.undefined,
-    fontSize: Int | Double = null,
+    fontSize: js.UndefOr[Double] = js.undefined,
     front: VectorOptions = null,
     path: js.Array[PathCommand] = null,
     rotate: VectorOptions = null,
@@ -63,10 +63,10 @@ object TextOptions {
     val __obj = js.Dynamic.literal(font = font.asInstanceOf[js.Any])
     if (addTo != null) __obj.updateDynamic("addTo")(addTo.asInstanceOf[js.Any])
     if (backface != null) __obj.updateDynamic("backface")(backface.asInstanceOf[js.Any])
-    if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed.asInstanceOf[js.Any])
+    if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
     if (front != null) __obj.updateDynamic("front")(front.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
@@ -76,7 +76,7 @@ object TextOptions {
     if (textBaseline != null) __obj.updateDynamic("textBaseline")(textBaseline.asInstanceOf[js.Any])
     if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextOptions[T]]
   }
 }

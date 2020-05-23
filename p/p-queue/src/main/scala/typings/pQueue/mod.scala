@@ -4,6 +4,7 @@ import typings.eventemitter3.mod.^
 import typings.pQueue.optionsMod.Options
 import typings.pQueue.optionsMod.QueueAddOptions
 import typings.pQueue.pQueueStrings.active
+import typings.pQueue.pQueueStrings.idle
 import typings.pQueue.queueMod.Queue
 import typings.pQueue.queueMod.RunFunction
 import typings.std.Partial
@@ -15,7 +16,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   @js.native
-  trait PQueue[QueueType /* <: Queue[RunFunction, EnqueueOptionsType] */, EnqueueOptionsType /* <: QueueAddOptions */] extends ^[active] {
+  trait PQueue[QueueType /* <: Queue[RunFunction, EnqueueOptionsType] */, EnqueueOptionsType /* <: QueueAddOptions */]
+    extends ^[active | idle, js.Any] {
     val _carryoverConcurrencyCount: js.Any = js.native
     var _concurrency: js.Any = js.native
     var _initializeIntervalIfNeeded: js.Any = js.native
@@ -98,10 +100,10 @@ object mod extends js.Object {
       Start (or resume) executing enqueued tasks within concurrency limit. No need to call this if queue is not paused (via `options.autoStart = false` or by `.pause()` method.)
       */
     def start(): this.type = js.native
-    def timeout(): js.Any = js.native
     /**
       Set the timeout for future operations.
       */
+    def timeout(): js.Any = js.native
     def timeout(milliseconds: Double): js.Any = js.native
     @JSName("timeout")
     def timeout_Union: js.UndefOr[Double] = js.native

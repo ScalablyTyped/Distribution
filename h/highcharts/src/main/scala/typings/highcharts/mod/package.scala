@@ -40,9 +40,9 @@ package object mod {
     /* event */ typings.highcharts.mod.PointerEventObject, 
     scala.Unit
   ]
-  type ChartLoadCallbackFunction = js.ThisFunction1[/* this */ typings.highcharts.mod.Chart_, /* event */ typings.std.Event_, scala.Unit]
-  type ChartRedrawCallbackFunction = js.ThisFunction1[/* this */ typings.highcharts.mod.Chart_, /* event */ typings.std.Event_, scala.Unit]
-  type ChartRenderCallbackFunction = js.ThisFunction1[/* this */ typings.highcharts.mod.Chart_, /* event */ typings.std.Event_, scala.Unit]
+  type ChartLoadCallbackFunction = js.ThisFunction1[/* this */ typings.highcharts.mod.Chart_, /* event */ typings.std.Event, scala.Unit]
+  type ChartRedrawCallbackFunction = js.ThisFunction1[/* this */ typings.highcharts.mod.Chart_, /* event */ typings.std.Event, scala.Unit]
+  type ChartRenderCallbackFunction = js.ThisFunction1[/* this */ typings.highcharts.mod.Chart_, /* event */ typings.std.Event, scala.Unit]
   type ChartSelectionCallbackFunction = js.ThisFunction1[
     /* this */ typings.highcharts.mod.Chart_, 
     /* event */ typings.highcharts.mod.ChartSelectionContextObject, 
@@ -88,7 +88,7 @@ package object mod {
   ]
   type EventCallbackFunction[T] = js.ThisFunction1[
     /* this */ T, 
-    /* eventArguments */ js.UndefOr[typings.std.Event_ | typings.highcharts.mod.Dictionary[js.Any]], 
+    /* eventArguments */ js.UndefOr[typings.std.Event | typings.highcharts.mod.Dictionary[js.Any]], 
     scala.Boolean | scala.Unit
   ]
   type ExportDataCallbackFunction = js.ThisFunction1[
@@ -96,16 +96,8 @@ package object mod {
     /* event */ typings.highcharts.mod.ExportDataEventObject, 
     scala.Unit
   ]
-  type ExportingAfterPrintCallbackFunction = js.Function2[
-    /* chart */ typings.highcharts.mod.Chart_, 
-    /* event */ typings.std.Event_, 
-    scala.Unit
-  ]
-  type ExportingBeforePrintCallbackFunction = js.Function2[
-    /* chart */ typings.highcharts.mod.Chart_, 
-    /* event */ typings.std.Event_, 
-    scala.Unit
-  ]
+  type ExportingAfterPrintCallbackFunction = js.Function2[/* chart */ typings.highcharts.mod.Chart_, /* event */ typings.std.Event, scala.Unit]
+  type ExportingBeforePrintCallbackFunction = js.Function2[/* chart */ typings.highcharts.mod.Chart_, /* event */ typings.std.Event, scala.Unit]
   type ExportingErrorCallbackFunction = js.Function2[
     /* options */ typings.highcharts.mod.ExportingOptions, 
     /* err */ typings.std.Error, 
@@ -170,9 +162,9 @@ package object mod {
     /* event */ typings.std.PointerEvent, 
     scala.Unit
   ]
-  type PointMouseOverCallbackFunction = js.ThisFunction1[/* this */ typings.highcharts.mod.Point, /* event */ typings.std.Event_, scala.Unit]
+  type PointMouseOverCallbackFunction = js.ThisFunction1[/* this */ typings.highcharts.mod.Point, /* event */ typings.std.Event, scala.Unit]
   type PointOptionsType = scala.Double | java.lang.String | typings.highcharts.mod.PointOptionsObject | (js.Array[scala.Double | java.lang.String]) | scala.Null
-  type PointRemoveCallbackFunction = js.ThisFunction1[/* this */ typings.highcharts.mod.Point, /* event */ typings.std.Event_, scala.Unit]
+  type PointRemoveCallbackFunction = js.ThisFunction1[/* this */ typings.highcharts.mod.Point, /* event */ typings.std.Event, scala.Unit]
   type PointSelectCallbackFunction = js.ThisFunction1[
     /* this */ typings.highcharts.mod.Point, 
     /* event */ typings.highcharts.mod.PointInteractionEventObject, 
@@ -188,7 +180,7 @@ package object mod {
     /* event */ typings.highcharts.mod.PointUpdateEventObject, 
     scala.Unit
   ]
-  type RangeSelectorClickCallbackFunction = js.Function2[/* e */ typings.std.Event_, /* Return */ js.UndefOr[scala.Boolean], scala.Unit]
+  type RangeSelectorClickCallbackFunction = js.Function2[/* e */ typings.std.Event, /* Return */ js.UndefOr[scala.Boolean], scala.Unit]
   type RangeSelectorParseCallbackFunction = js.Function1[/* value */ java.lang.String, scala.Double]
   type RelativeSize = scala.Double | java.lang.String
   type ResponsiveCallbackFunction = js.ThisFunction0[/* this */ typings.highcharts.mod.Chart_, scala.Boolean]
@@ -211,7 +203,7 @@ package object mod {
     /* event */ typings.highcharts.mod.SeriesClickEventObject, 
     scala.Unit
   ]
-  type SeriesHideCallbackFunction = js.ThisFunction1[/* this */ typings.highcharts.mod.Series, /* event */ typings.std.Event_, scala.Unit]
+  type SeriesHideCallbackFunction = js.ThisFunction1[/* this */ typings.highcharts.mod.Series, /* event */ typings.std.Event, scala.Unit]
   type SeriesLegendItemClickCallbackFunction = js.ThisFunction1[
     /* this */ typings.highcharts.mod.Series, 
     /* event */ typings.highcharts.mod.SeriesLegendItemClickEventObject, 
@@ -246,7 +238,7 @@ package object mod {
     /* this */ typings.highcharts.mod.PointLabelObject | typings.highcharts.mod.SeriesSankeyDataLabelsFormatterContextObject, 
     js.UndefOr[java.lang.String]
   ]
-  type SeriesShowCallbackFunction = js.ThisFunction1[/* this */ typings.highcharts.mod.Series, /* event */ typings.std.Event_, scala.Unit]
+  type SeriesShowCallbackFunction = js.ThisFunction1[/* this */ typings.highcharts.mod.Series, /* event */ typings.std.Event, scala.Unit]
   type TimeFormatCallbackFunction = js.Function1[/* timestamp */ scala.Double, java.lang.String]
   type TimelineDataLabelsFormatterCallbackFunction = js.ThisFunction0[
     /* this */ typings.highcharts.mod.PointLabelObject | typings.highcharts.mod.TimelineDataLabelsFormatterContextObject, 

@@ -164,9 +164,9 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    animationSpeed: Int | Double = null,
+    animationSpeed: js.UndefOr[Double] = js.undefined,
     backgroundColor: String = null,
-    distanceFromCorner: Int | Double = null,
+    distanceFromCorner: js.UndefOr[Double] = js.undefined,
     doubleClick: /* e */ DoubleClickEventArgs => Unit = null,
     drawCustomLabel: /* e */ DrawCustomLabelEventArgs => Unit = null,
     drawIndicators: /* e */ DrawIndicatorsEventArgs => Unit = null,
@@ -181,7 +181,7 @@ object Model {
     exportSettings: ExportSettings = null,
     frame: Frame = null,
     gaugePosition: gaugePosition | String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     interiorGradient: js.Any = null,
     isRadialGradient: js.UndefOr[Boolean] = js.undefined,
     isResponsive: js.UndefOr[Boolean] = js.undefined,
@@ -190,13 +190,13 @@ object Model {
     legendItemRender: /* e */ LegendItemRenderEventArgs => Unit = null,
     load: /* e */ LoadEventArgs => Unit = null,
     locale: String = null,
-    maximum: Int | Double = null,
-    minimum: Int | Double = null,
+    maximum: js.UndefOr[Double] = js.undefined,
+    minimum: js.UndefOr[Double] = js.undefined,
     mouseClick: /* e */ MouseClickEventArgs => Unit = null,
     mouseClickMove: /* e */ MouseClickMoveEventArgs => Unit = null,
     mouseClickUp: /* e */ MouseClickUpEventArgs => Unit = null,
     outerCustomLabelPosition: OuterCustomLabelPosition | String = null,
-    radius: Int | Double = null,
+    radius: js.UndefOr[Double] = js.undefined,
     rangeMouseMove: /* e */ RangeMouseMoveEventArgs => Unit = null,
     rangeZOrder: RangeZOrderPlacement | String = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
@@ -205,13 +205,13 @@ object Model {
     scales: js.Array[Scale] = null,
     theme: String = null,
     tooltip: Tooltip = null,
-    value: Int | Double = null,
-    width: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (animationSpeed != null) __obj.updateDynamic("animationSpeed")(animationSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationSpeed)) __obj.updateDynamic("animationSpeed")(animationSpeed.get.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (distanceFromCorner != null) __obj.updateDynamic("distanceFromCorner")(distanceFromCorner.asInstanceOf[js.Any])
+    if (!js.isUndefined(distanceFromCorner)) __obj.updateDynamic("distanceFromCorner")(distanceFromCorner.get.asInstanceOf[js.Any])
     if (doubleClick != null) __obj.updateDynamic("doubleClick")(js.Any.fromFunction1(doubleClick))
     if (drawCustomLabel != null) __obj.updateDynamic("drawCustomLabel")(js.Any.fromFunction1(drawCustomLabel))
     if (drawIndicators != null) __obj.updateDynamic("drawIndicators")(js.Any.fromFunction1(drawIndicators))
@@ -220,38 +220,38 @@ object Model {
     if (drawPointers != null) __obj.updateDynamic("drawPointers")(js.Any.fromFunction1(drawPointers))
     if (drawRange != null) __obj.updateDynamic("drawRange")(js.Any.fromFunction1(drawRange))
     if (drawTicks != null) __obj.updateDynamic("drawTicks")(js.Any.fromFunction1(drawTicks))
-    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGroupSeparator)) __obj.updateDynamic("enableGroupSeparator")(enableGroupSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableResize)) __obj.updateDynamic("enableResize")(enableResize.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGroupSeparator)) __obj.updateDynamic("enableGroupSeparator")(enableGroupSeparator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableResize)) __obj.updateDynamic("enableResize")(enableResize.get.asInstanceOf[js.Any])
     if (exportSettings != null) __obj.updateDynamic("exportSettings")(exportSettings.asInstanceOf[js.Any])
     if (frame != null) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
     if (gaugePosition != null) __obj.updateDynamic("gaugePosition")(gaugePosition.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (interiorGradient != null) __obj.updateDynamic("interiorGradient")(interiorGradient.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRadialGradient)) __obj.updateDynamic("isRadialGradient")(isRadialGradient.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRadialGradient)) __obj.updateDynamic("isRadialGradient")(isRadialGradient.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.get.asInstanceOf[js.Any])
     if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
     if (legendItemClick != null) __obj.updateDynamic("legendItemClick")(js.Any.fromFunction1(legendItemClick))
     if (legendItemRender != null) __obj.updateDynamic("legendItemRender")(js.Any.fromFunction1(legendItemRender))
     if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
-    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximum)) __obj.updateDynamic("maximum")(maximum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimum)) __obj.updateDynamic("minimum")(minimum.get.asInstanceOf[js.Any])
     if (mouseClick != null) __obj.updateDynamic("mouseClick")(js.Any.fromFunction1(mouseClick))
     if (mouseClickMove != null) __obj.updateDynamic("mouseClickMove")(js.Any.fromFunction1(mouseClickMove))
     if (mouseClickUp != null) __obj.updateDynamic("mouseClickUp")(js.Any.fromFunction1(mouseClickUp))
     if (outerCustomLabelPosition != null) __obj.updateDynamic("outerCustomLabelPosition")(outerCustomLabelPosition.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     if (rangeMouseMove != null) __obj.updateDynamic("rangeMouseMove")(js.Any.fromFunction1(rangeMouseMove))
     if (rangeZOrder != null) __obj.updateDynamic("rangeZOrder")(rangeZOrder.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     if (renderComplete != null) __obj.updateDynamic("renderComplete")(js.Any.fromFunction1(renderComplete))
     if (rightClick != null) __obj.updateDynamic("rightClick")(js.Any.fromFunction1(rightClick))
     if (scales != null) __obj.updateDynamic("scales")(scales.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
 }

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateUserResponse extends js.Object {
   /**
-    * A system-assigned unique identifier for an SFTP server instance that the user account is assigned to.
+    * A system-assigned unique identifier for a file transfer protocol-enabled server instance that the user account is assigned to.
     */
   var ServerId: typings.awsSdk.transferMod.ServerId = js.native
   /**
-    * The unique identifier for a user that is assigned to the SFTP server instance that was specified in the request.
+    * The unique identifier for a user that is assigned to a file transfer protocol-enabled server instance that was specified in the request.
     */
   var UserName: typings.awsSdk.transferMod.UserName = js.native
 }

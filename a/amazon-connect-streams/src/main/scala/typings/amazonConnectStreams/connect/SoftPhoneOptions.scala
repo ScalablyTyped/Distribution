@@ -27,8 +27,8 @@ object SoftPhoneOptions {
     ringtoneUrl: String = null
   ): SoftPhoneOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowFramedSoftphone)) __obj.updateDynamic("allowFramedSoftphone")(allowFramedSoftphone.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableRingtone)) __obj.updateDynamic("disableRingtone")(disableRingtone.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFramedSoftphone)) __obj.updateDynamic("allowFramedSoftphone")(allowFramedSoftphone.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableRingtone)) __obj.updateDynamic("disableRingtone")(disableRingtone.get.asInstanceOf[js.Any])
     if (ringtoneUrl != null) __obj.updateDynamic("ringtoneUrl")(ringtoneUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SoftPhoneOptions]
   }

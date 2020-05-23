@@ -18,9 +18,12 @@ trait TrialComponentParameterValue extends js.Object {
 
 object TrialComponentParameterValue {
   @scala.inline
-  def apply(NumberValue: Int | Double = null, StringValue: StringParameterValue = null): TrialComponentParameterValue = {
+  def apply(
+    NumberValue: js.UndefOr[DoubleParameterValue] = js.undefined,
+    StringValue: StringParameterValue = null
+  ): TrialComponentParameterValue = {
     val __obj = js.Dynamic.literal()
-    if (NumberValue != null) __obj.updateDynamic("NumberValue")(NumberValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberValue)) __obj.updateDynamic("NumberValue")(NumberValue.get.asInstanceOf[js.Any])
     if (StringValue != null) __obj.updateDynamic("StringValue")(StringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrialComponentParameterValue]
   }

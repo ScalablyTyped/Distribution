@@ -18,9 +18,9 @@ trait GridRowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Obj
 
 object GridRowProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](gridRow: ResponsiveValue[GridRowProperty, ThemeType] = null): GridRowProps[ThemeType] = {
+  def apply[ThemeType](gridRow: js.UndefOr[Null | (ResponsiveValue[GridRowProperty, ThemeType])] = js.undefined): GridRowProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
-    if (gridRow != null) __obj.updateDynamic("gridRow")(gridRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridRow)) __obj.updateDynamic("gridRow")(gridRow.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridRowProps[ThemeType]]
   }
 }

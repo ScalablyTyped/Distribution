@@ -6,11 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides a Windows Runtime input stream for an IStream base implementation. */
-@JSGlobal("Windows.Storage.Streams.InputStreamOverStream")
-@js.native
-abstract class InputStreamOverStream () extends js.Object {
+trait InputStreamOverStream extends js.Object {
   /** Closes the current stream and releases system resources. */
-  def close(): Unit = js.native
+  def close(): Unit
   /**
     * Returns an asynchronous byte reader object.
     * @param buffer The buffer into which the asynchronous read operation places the bytes that are read.
@@ -18,6 +16,17 @@ abstract class InputStreamOverStream () extends js.Object {
     * @param options Specifies the type of the asynchronous read operation.
     * @return The asynchronous operation.
     */
-  def readAsync(buffer: IBuffer, count: Double, options: InputStreamOptions): IPromiseWithIAsyncOperationWithProgress[IBuffer, Double] = js.native
+  def readAsync(buffer: IBuffer, count: Double, options: InputStreamOptions): IPromiseWithIAsyncOperationWithProgress[IBuffer, Double]
+}
+
+object InputStreamOverStream {
+  @scala.inline
+  def apply(
+    close: () => Unit,
+    readAsync: (IBuffer, Double, InputStreamOptions) => IPromiseWithIAsyncOperationWithProgress[IBuffer, Double]
+  ): InputStreamOverStream = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), readAsync = js.Any.fromFunction3(readAsync))
+    __obj.asInstanceOf[InputStreamOverStream]
+  }
 }
 

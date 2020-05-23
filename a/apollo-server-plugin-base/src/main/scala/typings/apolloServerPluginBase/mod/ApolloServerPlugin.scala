@@ -20,7 +20,7 @@ trait ApolloServerPlugin[TContext /* <: Record[String, _] */] extends js.Object 
 
 object ApolloServerPlugin {
   @scala.inline
-  def apply[TContext /* <: Record[String, _] */](
+  def apply[TContext](
     requestDidStart: /* requestContext */ GraphQLRequestContext[TContext] => GraphQLRequestListener[TContext] | Unit = null,
     serverWillStart: /* service */ GraphQLServiceContext => ValueOrPromise[Unit] = null
   ): ApolloServerPlugin[TContext] = {

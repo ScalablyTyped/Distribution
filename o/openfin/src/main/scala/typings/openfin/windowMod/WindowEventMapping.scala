@@ -2,6 +2,7 @@ package typings.openfin.windowMod
 
 import typings.openfin.eventsApplicationMod.CrashedEvent
 import typings.openfin.eventsBaseMod.WindowEvent
+import typings.openfin.viewMod.InputEvent
 import typings.openfin.webcontentsMod.CertificateErrorEvent
 import typings.openfin.webcontentsMod.PageTitleUpdatedEvent
 import typings.openfin.webcontentsMod.WebContentsEventMapping
@@ -29,7 +30,10 @@ trait WindowEventMapping[Topic, Type] extends WebContentsEventMapping[String, St
   var focused: WindowEvent[Topic, Type]
   var `group-changed`: WindowGroupChanged[Topic, Type]
   var hidden: WindowHiddenEvent[Topic, Type]
+  var hotkey: InputEvent with (WindowEvent[Topic, Type])
   var initialized: WindowEvent[Topic, Type]
+  var `layout-initialized`: WindowEvent[Topic, Type]
+  var `layout-ready`: WindowEvent[Topic, Type]
   var maximized: WindowEvent[Topic, Type]
   var minimized: WindowEvent[Topic, Type]
   var `options-changed`: WindowOptionsChangedEvent[Topic, Type]
@@ -43,7 +47,7 @@ trait WindowEventMapping[Topic, Type] extends WebContentsEventMapping[String, St
   var `user-movement-disabled`: WindowEvent[Topic, Type]
   var `user-movement-enabled`: WindowEvent[Topic, Type]
   var `view-attached`: WindowEvent[Topic, Type]
-  var `view-detached`: WindowEvent[Topic, Type]
+  var `view-detached`: ViewDetached[Topic, Type]
   var `will-move`: WillMoveOrResize[Topic, Type]
   var `will-resize`: WillMoveOrResize[Topic, Type]
 }
@@ -72,7 +76,10 @@ object WindowEventMapping {
     `found-in-page`: WindowEvent[String, String],
     `group-changed`: WindowGroupChanged[Topic, Type],
     hidden: WindowHiddenEvent[Topic, Type],
+    hotkey: InputEvent with (WindowEvent[Topic, Type]),
     initialized: WindowEvent[Topic, Type],
+    `layout-initialized`: WindowEvent[Topic, Type],
+    `layout-ready`: WindowEvent[Topic, Type],
     listenerRemoved: String,
     maximized: WindowEvent[Topic, Type],
     minimized: WindowEvent[Topic, Type],
@@ -93,11 +100,11 @@ object WindowEventMapping {
     `user-movement-disabled`: WindowEvent[Topic, Type],
     `user-movement-enabled`: WindowEvent[Topic, Type],
     `view-attached`: WindowEvent[Topic, Type],
-    `view-detached`: WindowEvent[Topic, Type],
+    `view-detached`: ViewDetached[Topic, Type],
     `will-move`: WillMoveOrResize[Topic, Type],
     `will-resize`: WillMoveOrResize[Topic, Type]
   ): WindowEventMapping[Topic, Type] = {
-    val __obj = js.Dynamic.literal(blurred = blurred.asInstanceOf[js.Any], closed = closed.asInstanceOf[js.Any], closing = closing.asInstanceOf[js.Any], crashed = crashed.asInstanceOf[js.Any], embedded = embedded.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], initialized = initialized.asInstanceOf[js.Any], listenerRemoved = listenerRemoved.asInstanceOf[js.Any], maximized = maximized.asInstanceOf[js.Any], minimized = minimized.asInstanceOf[js.Any], newListener = newListener.asInstanceOf[js.Any], reloaded = reloaded.asInstanceOf[js.Any], restored = restored.asInstanceOf[js.Any], shown = shown.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(blurred = blurred.asInstanceOf[js.Any], closed = closed.asInstanceOf[js.Any], closing = closing.asInstanceOf[js.Any], crashed = crashed.asInstanceOf[js.Any], embedded = embedded.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], hotkey = hotkey.asInstanceOf[js.Any], initialized = initialized.asInstanceOf[js.Any], listenerRemoved = listenerRemoved.asInstanceOf[js.Any], maximized = maximized.asInstanceOf[js.Any], minimized = minimized.asInstanceOf[js.Any], newListener = newListener.asInstanceOf[js.Any], reloaded = reloaded.asInstanceOf[js.Any], restored = restored.asInstanceOf[js.Any], shown = shown.asInstanceOf[js.Any])
     __obj.updateDynamic("auth-requested")(`auth-requested`.asInstanceOf[js.Any])
     __obj.updateDynamic("begin-user-bounds-changing")(`begin-user-bounds-changing`.asInstanceOf[js.Any])
     __obj.updateDynamic("bounds-changed")(`bounds-changed`.asInstanceOf[js.Any])
@@ -112,6 +119,8 @@ object WindowEventMapping {
     __obj.updateDynamic("external-process-started")(`external-process-started`.asInstanceOf[js.Any])
     __obj.updateDynamic("found-in-page")(`found-in-page`.asInstanceOf[js.Any])
     __obj.updateDynamic("group-changed")(`group-changed`.asInstanceOf[js.Any])
+    __obj.updateDynamic("layout-initialized")(`layout-initialized`.asInstanceOf[js.Any])
+    __obj.updateDynamic("layout-ready")(`layout-ready`.asInstanceOf[js.Any])
     __obj.updateDynamic("navigation-rejected")(`navigation-rejected`.asInstanceOf[js.Any])
     __obj.updateDynamic("options-changed")(`options-changed`.asInstanceOf[js.Any])
     __obj.updateDynamic("page-favicon-updated")(`page-favicon-updated`.asInstanceOf[js.Any])

@@ -13,7 +13,7 @@ trait Proxy[T /* <: Func */] extends js.Object {
 
 object Proxy {
   @scala.inline
-  def apply[T /* <: Func */](`then`: T => Proxy[T], thenReturn: js.Any => Proxy[T], thenThrow: Error => Proxy[T]): Proxy[T] = {
+  def apply[T](`then`: T => Proxy[T], thenReturn: js.Any => Proxy[T], thenThrow: Error => Proxy[T]): Proxy[T] = {
     val __obj = js.Dynamic.literal(thenReturn = js.Any.fromFunction1(thenReturn), thenThrow = js.Any.fromFunction1(thenThrow))
     __obj.updateDynamic("then")(js.Any.fromFunction1(`then`))
     __obj.asInstanceOf[Proxy[T]]

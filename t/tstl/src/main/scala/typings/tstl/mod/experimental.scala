@@ -229,7 +229,7 @@ object experimental extends js.Object {
           ]
         ]
       ] = js.native
-    val __MODULE: typings.tstl.tstlStrings.experimental = js.native
+    val __MODULE: /* "experimental" */ String = js.native
   }
   
   @js.native
@@ -284,7 +284,7 @@ object experimental extends js.Object {
           ]
         ]
       ] = js.native
-    val __MODULE: typings.tstl.tstlStrings.experimental = js.native
+    val __MODULE: /* "experimental" */ String = js.native
   }
   
   @js.native
@@ -331,7 +331,7 @@ object experimental extends js.Object {
           ]
         ]
       ] = js.native
-    val __MODULE: typings.tstl.tstlStrings.experimental = js.native
+    val __MODULE: /* "experimental" */ String = js.native
   }
   
   @js.native
@@ -378,7 +378,7 @@ object experimental extends js.Object {
           ]
         ]
       ] = js.native
-    val __MODULE: typings.tstl.tstlStrings.experimental = js.native
+    val __MODULE: /* "experimental" */ String = js.native
   }
   
 }

@@ -6,24 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * Fired when an heading update is received.
-	 */
+  * Fired when an heading update is received.
+  */
 trait GeolocationHeadingEvent extends GeolocationBaseEvent {
   /**
-  		 * If `success` is `false`, the error code is available.
-  		 */
+    * If `success` is `false`, the error code is available.
+    */
   var code: Double
   /**
-  		 * If `success` is false, a string describing the error.
-  		 */
+    * If `success` is false, a string describing the error.
+    */
   var error: String
   /**
-  		 * Dictionary object containing the heading data.
-  		 */
+    * Dictionary object containing the heading data.
+    */
   var heading: HeadingData
   /**
-  		 * Indicate if the heading event was successfully received. Android returns this since SDK 7.5.0.
-  		 */
+    * Indicate if the heading event was successfully received. Android returns this since SDK 7.5.0.
+    */
   var success: Boolean
 }
 

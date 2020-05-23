@@ -1,6 +1,6 @@
 package typings.nteractTransformVdom.mod
 
-import typings.nteractTransformVdom.AnonMediaType
+import typings.nteractTransformVdom.anon.MediaType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +14,6 @@ class default () extends VDOM
 @js.native
 object default extends js.Object {
   var MIMETYPE: String = js.native
-  var defaultProps: AnonMediaType = js.native
+  var defaultProps: MediaType = js.native
 }
 

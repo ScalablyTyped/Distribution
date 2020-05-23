@@ -67,7 +67,7 @@ object Model {
     clone: js.UndefOr[Boolean] = js.undefined,
     cursorAt: js.Any = null,
     destroy: /* e */ DestroyEventArgs => Unit = null,
-    distance: Int | Double = null,
+    distance: js.UndefOr[Double] = js.undefined,
     drag: /* e */ DragEventArgs => Unit = null,
     dragArea: js.UndefOr[Boolean] = js.undefined,
     dragStart: /* e */ DragStartEventArgs => Unit = null,
@@ -75,24 +75,24 @@ object Model {
     handle: String = null,
     helper: /* e */ HelperEventArgs => Unit = null,
     scope: String = null,
-    scrollSensitivity: Int | Double = null,
-    scrollSpeed: Int | Double = null
+    scrollSensitivity: js.UndefOr[Double] = js.undefined,
+    scrollSpeed: js.UndefOr[Double] = js.undefined
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoScroll)) __obj.updateDynamic("autoScroll")(autoScroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoScroll)) __obj.updateDynamic("autoScroll")(autoScroll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone.get.asInstanceOf[js.Any])
     if (cursorAt != null) __obj.updateDynamic("cursorAt")(cursorAt.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
     if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction1(drag))
-    if (!js.isUndefined(dragArea)) __obj.updateDynamic("dragArea")(dragArea.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragArea)) __obj.updateDynamic("dragArea")(dragArea.get.asInstanceOf[js.Any])
     if (dragStart != null) __obj.updateDynamic("dragStart")(js.Any.fromFunction1(dragStart))
     if (dragStop != null) __obj.updateDynamic("dragStop")(js.Any.fromFunction1(dragStop))
     if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
     if (helper != null) __obj.updateDynamic("helper")(js.Any.fromFunction1(helper))
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (scrollSensitivity != null) __obj.updateDynamic("scrollSensitivity")(scrollSensitivity.asInstanceOf[js.Any])
-    if (scrollSpeed != null) __obj.updateDynamic("scrollSpeed")(scrollSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollSensitivity)) __obj.updateDynamic("scrollSensitivity")(scrollSensitivity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollSpeed)) __obj.updateDynamic("scrollSpeed")(scrollSpeed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
 }

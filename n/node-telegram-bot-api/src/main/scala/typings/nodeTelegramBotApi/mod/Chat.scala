@@ -44,8 +44,8 @@ object Chat {
   ): Chat = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(all_members_are_administrators)) __obj.updateDynamic("all_members_are_administrators")(all_members_are_administrators.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_set_sticker_set)) __obj.updateDynamic("can_set_sticker_set")(can_set_sticker_set.asInstanceOf[js.Any])
+    if (!js.isUndefined(all_members_are_administrators)) __obj.updateDynamic("all_members_are_administrators")(all_members_are_administrators.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(can_set_sticker_set)) __obj.updateDynamic("can_set_sticker_set")(can_set_sticker_set.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (first_name != null) __obj.updateDynamic("first_name")(first_name.asInstanceOf[js.Any])
     if (invite_link != null) __obj.updateDynamic("invite_link")(invite_link.asInstanceOf[js.Any])

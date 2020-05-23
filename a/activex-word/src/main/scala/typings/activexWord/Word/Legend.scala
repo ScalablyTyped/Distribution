@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.Legend")
 @js.native
-class Legend protected () extends js.Object {
+trait Legend extends js.Object {
   val Application: js.Any = js.native
   var AutoScaleFont: js.Any = js.native
   val Border: ChartBorder = js.native

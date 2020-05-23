@@ -1,18 +1,17 @@
 package typings.winrtUwp.Windows.Web.Http.Headers
 
 import typings.std.Array
-import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsHttpTransferCodingHeaderValue
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import typings.winrtUwp.anon.Index
+import typings.winrtUwp.anon.ItemsHttpTransferCodingHeaderValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the value of the Transfer-Encoding HTTP header on an HTTP request. */
-@JSGlobal("Windows.Web.Http.Headers.HttpTransferCodingHeaderValueCollection")
 @js.native
-abstract class HttpTransferCodingHeaderValueCollection () extends Array[HttpTransferCodingHeaderValue] {
+trait HttpTransferCodingHeaderValueCollection extends Array[HttpTransferCodingHeaderValue] {
   /** Gets the number of HttpTransferCodingHeaderValue objects in the collection. */
   var size: Double = js.native
   /**
@@ -37,13 +36,13 @@ abstract class HttpTransferCodingHeaderValueCollection () extends Array[HttpTran
     * Retrieves the HttpTransferCodingHeaderValue items that start at the specified index in the collection.
     * @param startIndex The zero-based index of the start of the HttpTransferCodingHeaderValue items in the HttpTransferCodingHeaderValueCollection .
     */
-  def getMany(startIndex: Double): AnonItemsHttpTransferCodingHeaderValue = js.native
+  def getMany(startIndex: Double): ItemsHttpTransferCodingHeaderValue = js.native
   /**
     * Returns an immutable view of the HttpTransferCodingHeaderValueCollection .
     * @return The view of the HttpTransferCodingHeaderValueCollection .
     */
   def getView(): IVectorView[HttpTransferCodingHeaderValue] = js.native
-  def indexOf(value: HttpTransferCodingHeaderValue, extra: js.Any*): AnonIndex = js.native
+  def indexOf(value: HttpTransferCodingHeaderValue, extra: js.Any*): Index = js.native
   /**
     * Determines whether an element is in the collection.
     * @param item The item to find in the collection.

@@ -5,20 +5,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the list view displays the reference item.
-		 */
+  * Fired when the list view displays the reference item.
+  */
 trait ListViewMarkerEvent extends ListViewBaseEvent {
   /**
-  			 * false. This event does not bubble.
-  			 */
+    * false. This event does not bubble.
+    */
   var bubbles: Boolean
   /**
-  			 * section item index of the reference item.
-  			 */
+    * section item index of the reference item.
+    */
   var itemIndex: Double
   /**
-  			 * section index of the reference item.
-  			 */
+    * section index of the reference item.
+    */
   var sectionIndex: Double
 }
 

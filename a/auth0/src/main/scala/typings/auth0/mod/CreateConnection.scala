@@ -30,7 +30,7 @@ object CreateConnection {
   ): CreateConnection = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], strategy = strategy.asInstanceOf[js.Any])
     if (enabled_clients != null) __obj.updateDynamic("enabled_clients")(enabled_clients.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_domain_connection)) __obj.updateDynamic("is_domain_connection")(is_domain_connection.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_domain_connection)) __obj.updateDynamic("is_domain_connection")(is_domain_connection.get.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (realms != null) __obj.updateDynamic("realms")(realms.asInstanceOf[js.Any])

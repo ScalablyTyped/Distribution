@@ -27,16 +27,16 @@ trait NodeConfigurationOption extends js.Object {
 object NodeConfigurationOption {
   @scala.inline
   def apply(
-    EstimatedDiskUtilizationPercent: Int | scala.Double = null,
+    EstimatedDiskUtilizationPercent: js.UndefOr[DoubleOptional] = js.undefined,
     Mode: Mode = null,
     NodeType: String = null,
-    NumberOfNodes: Int | scala.Double = null
+    NumberOfNodes: js.UndefOr[Integer] = js.undefined
   ): NodeConfigurationOption = {
     val __obj = js.Dynamic.literal()
-    if (EstimatedDiskUtilizationPercent != null) __obj.updateDynamic("EstimatedDiskUtilizationPercent")(EstimatedDiskUtilizationPercent.asInstanceOf[js.Any])
+    if (!js.isUndefined(EstimatedDiskUtilizationPercent)) __obj.updateDynamic("EstimatedDiskUtilizationPercent")(EstimatedDiskUtilizationPercent.get.asInstanceOf[js.Any])
     if (Mode != null) __obj.updateDynamic("Mode")(Mode.asInstanceOf[js.Any])
     if (NodeType != null) __obj.updateDynamic("NodeType")(NodeType.asInstanceOf[js.Any])
-    if (NumberOfNodes != null) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfNodes)) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeConfigurationOption]
   }
 }

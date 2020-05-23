@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @type {number}
-  * @name pc.CURVE_STEP
-  * @description A stepped interpolater, free from the shackles of blending.
+  * A stepped interpolater, free from the shackles of blending.
   */
 @JSImport("playcanvas", "CURVE_STEP")
 @js.native

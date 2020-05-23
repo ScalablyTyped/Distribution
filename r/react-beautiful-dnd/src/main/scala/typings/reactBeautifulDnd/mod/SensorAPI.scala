@@ -1,6 +1,6 @@
 package typings.reactBeautifulDnd.mod
 
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait SensorAPI extends js.Object {
   var tryGetLock: TryGetLock
   def canGetLock(id: DraggableId): Boolean
-  def findClosestDraggableId(event: Event_): DraggableId | Null
+  def findClosestDraggableId(event: Event): DraggableId | Null
   def findOptionsForDraggable(id: DraggableId): DraggableOptions | Null
   def isLockClaimed(): Boolean
   def tryReleaseLock(): Unit
@@ -18,7 +18,7 @@ object SensorAPI {
   @scala.inline
   def apply(
     canGetLock: DraggableId => Boolean,
-    findClosestDraggableId: Event_ => DraggableId | Null,
+    findClosestDraggableId: Event => DraggableId | Null,
     findOptionsForDraggable: DraggableId => DraggableOptions | Null,
     isLockClaimed: () => Boolean,
     tryGetLock: (/* draggableId */ DraggableId, /* forceStop */ js.UndefOr[js.Function0[Unit]], /* options */ js.UndefOr[TryGetLockOptions]) => PreDragActions | Null,

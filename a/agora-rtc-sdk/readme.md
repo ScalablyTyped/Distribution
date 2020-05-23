@@ -1,7 +1,7 @@
 
 # Scala.js typings for agora-rtc-sdk
 
-Typings are for version 3.0
+Typings are for version 3.1
 
 ## Library description:
 AgoraRTC SDK for web

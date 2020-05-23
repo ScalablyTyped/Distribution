@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.babylonjs.anon.DragAxis
 import typings.babylonjs.transformNodeMod.TransformNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,7 +40,7 @@ object meshesIndexMod extends js.Object {
     */
   class PointerDragBehavior ()
     extends typings.babylonjs.pointerDragBehaviorMod.PointerDragBehavior {
-    def this(options: AnonDragAxis) = this()
+    def this(options: DragAxis) = this()
   }
   
   @js.native

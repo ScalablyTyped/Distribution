@@ -386,19 +386,19 @@ object ConfigOptions {
   @scala.inline
   def apply(
     autoWatch: js.UndefOr[Boolean] = js.undefined,
-    autoWatchBatchDelay: Int | Double = null,
+    autoWatchBatchDelay: js.UndefOr[Double] = js.undefined,
     basePath: String = null,
     beforeMiddleware: js.Array[String] = null,
     browserConsoleLogOptions: BrowserConsoleLogOptions = null,
-    browserDisconnectTimeout: Int | Double = null,
-    browserDisconnectTolerance: Int | Double = null,
-    browserNoActivityTimeout: Int | Double = null,
-    browserSocketTimeout: Int | Double = null,
+    browserDisconnectTimeout: js.UndefOr[Double] = js.undefined,
+    browserDisconnectTolerance: js.UndefOr[Double] = js.undefined,
+    browserNoActivityTimeout: js.UndefOr[Double] = js.undefined,
+    browserSocketTimeout: js.UndefOr[Double] = js.undefined,
     browsers: js.Array[AutomatedBrowsers | String] = null,
-    captureTimeout: Int | Double = null,
+    captureTimeout: js.UndefOr[Double] = js.undefined,
     client: ClientOptions = null,
     colors: js.UndefOr[Boolean] = js.undefined,
-    concurrency: Int | Double = null,
+    concurrency: js.UndefOr[Double] = js.undefined,
     crossOriginAttribute: js.UndefOr[Boolean] = js.undefined,
     customClientContextFile: String = null,
     customContextFile: String = null,
@@ -422,53 +422,53 @@ object ConfigOptions {
     loggers: StringDictionary[Appender] | js.Array[Appender] = null,
     middleware: js.Array[String] = null,
     mime: StringDictionary[js.Array[String]] = null,
-    pingTimeout: Int | Double = null,
+    pingTimeout: js.UndefOr[Double] = js.undefined,
     plugins: js.Array[PluginName | InlinePluginDef] = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     preprocessors: StringDictionary[String | js.Array[String]] = null,
-    processKillTimeout: Int | Double = null,
+    processKillTimeout: js.UndefOr[Double] = js.undefined,
     protocol: String = null,
     proxies: PathProxyPairs = null,
     proxyReq: (/* proxyReq */ js.Any, /* req */ js.Any, /* res */ js.Any, /* options */ js.Object) => Unit = null,
     proxyRes: (/* proxyRes */ js.Any, /* req */ js.Any, /* res */ js.Any) => Unit = null,
     proxyValidateSSL: js.UndefOr[Boolean] = js.undefined,
-    reportSlowerThan: Int | Double = null,
+    reportSlowerThan: js.UndefOr[Double] = js.undefined,
     reporters: js.Array[String] = null,
     restartOnFileChange: js.UndefOr[Boolean] = js.undefined,
-    retryLimit: Int | Double = null,
+    retryLimit: js.UndefOr[Double] = js.undefined,
     singleRun: js.UndefOr[Boolean] = js.undefined,
     transports: js.Array[String] = null,
     upstreamProxy: UpstreamProxy = null,
     urlRoot: String = null
   ): ConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoWatch)) __obj.updateDynamic("autoWatch")(autoWatch.asInstanceOf[js.Any])
-    if (autoWatchBatchDelay != null) __obj.updateDynamic("autoWatchBatchDelay")(autoWatchBatchDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoWatch)) __obj.updateDynamic("autoWatch")(autoWatch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoWatchBatchDelay)) __obj.updateDynamic("autoWatchBatchDelay")(autoWatchBatchDelay.get.asInstanceOf[js.Any])
     if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
     if (beforeMiddleware != null) __obj.updateDynamic("beforeMiddleware")(beforeMiddleware.asInstanceOf[js.Any])
     if (browserConsoleLogOptions != null) __obj.updateDynamic("browserConsoleLogOptions")(browserConsoleLogOptions.asInstanceOf[js.Any])
-    if (browserDisconnectTimeout != null) __obj.updateDynamic("browserDisconnectTimeout")(browserDisconnectTimeout.asInstanceOf[js.Any])
-    if (browserDisconnectTolerance != null) __obj.updateDynamic("browserDisconnectTolerance")(browserDisconnectTolerance.asInstanceOf[js.Any])
-    if (browserNoActivityTimeout != null) __obj.updateDynamic("browserNoActivityTimeout")(browserNoActivityTimeout.asInstanceOf[js.Any])
-    if (browserSocketTimeout != null) __obj.updateDynamic("browserSocketTimeout")(browserSocketTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(browserDisconnectTimeout)) __obj.updateDynamic("browserDisconnectTimeout")(browserDisconnectTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(browserDisconnectTolerance)) __obj.updateDynamic("browserDisconnectTolerance")(browserDisconnectTolerance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(browserNoActivityTimeout)) __obj.updateDynamic("browserNoActivityTimeout")(browserNoActivityTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(browserSocketTimeout)) __obj.updateDynamic("browserSocketTimeout")(browserSocketTimeout.get.asInstanceOf[js.Any])
     if (browsers != null) __obj.updateDynamic("browsers")(browsers.asInstanceOf[js.Any])
-    if (captureTimeout != null) __obj.updateDynamic("captureTimeout")(captureTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(captureTimeout)) __obj.updateDynamic("captureTimeout")(captureTimeout.get.asInstanceOf[js.Any])
     if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
-    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
-    if (!js.isUndefined(crossOriginAttribute)) __obj.updateDynamic("crossOriginAttribute")(crossOriginAttribute.asInstanceOf[js.Any])
+    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(concurrency)) __obj.updateDynamic("concurrency")(concurrency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(crossOriginAttribute)) __obj.updateDynamic("crossOriginAttribute")(crossOriginAttribute.get.asInstanceOf[js.Any])
     if (customClientContextFile != null) __obj.updateDynamic("customClientContextFile")(customClientContextFile.asInstanceOf[js.Any])
     if (customContextFile != null) __obj.updateDynamic("customContextFile")(customContextFile.asInstanceOf[js.Any])
     if (customDebugFile != null) __obj.updateDynamic("customDebugFile")(customDebugFile.asInstanceOf[js.Any])
     if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
     if (customLaunchers != null) __obj.updateDynamic("customLaunchers")(customLaunchers.asInstanceOf[js.Any])
-    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached.asInstanceOf[js.Any])
+    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached.get.asInstanceOf[js.Any])
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (!js.isUndefined(failOnEmptyTestSuite)) __obj.updateDynamic("failOnEmptyTestSuite")(failOnEmptyTestSuite.asInstanceOf[js.Any])
-    if (!js.isUndefined(failOnFailingTestSuite)) __obj.updateDynamic("failOnFailingTestSuite")(failOnFailingTestSuite.asInstanceOf[js.Any])
-    if (!js.isUndefined(failOnSkippedTests)) __obj.updateDynamic("failOnSkippedTests")(failOnSkippedTests.asInstanceOf[js.Any])
+    if (!js.isUndefined(failOnEmptyTestSuite)) __obj.updateDynamic("failOnEmptyTestSuite")(failOnEmptyTestSuite.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(failOnFailingTestSuite)) __obj.updateDynamic("failOnFailingTestSuite")(failOnFailingTestSuite.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(failOnSkippedTests)) __obj.updateDynamic("failOnSkippedTests")(failOnSkippedTests.get.asInstanceOf[js.Any])
     if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceJSONP)) __obj.updateDynamic("forceJSONP")(forceJSONP.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceJSONP)) __obj.updateDynamic("forceJSONP")(forceJSONP.get.asInstanceOf[js.Any])
     if (formatError != null) __obj.updateDynamic("formatError")(js.Any.fromFunction1(formatError))
     if (frameworks != null) __obj.updateDynamic("frameworks")(frameworks.asInstanceOf[js.Any])
     if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
@@ -479,21 +479,21 @@ object ConfigOptions {
     if (loggers != null) __obj.updateDynamic("loggers")(loggers.asInstanceOf[js.Any])
     if (middleware != null) __obj.updateDynamic("middleware")(middleware.asInstanceOf[js.Any])
     if (mime != null) __obj.updateDynamic("mime")(mime.asInstanceOf[js.Any])
-    if (pingTimeout != null) __obj.updateDynamic("pingTimeout")(pingTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(pingTimeout)) __obj.updateDynamic("pingTimeout")(pingTimeout.get.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (preprocessors != null) __obj.updateDynamic("preprocessors")(preprocessors.asInstanceOf[js.Any])
-    if (processKillTimeout != null) __obj.updateDynamic("processKillTimeout")(processKillTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(processKillTimeout)) __obj.updateDynamic("processKillTimeout")(processKillTimeout.get.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (proxies != null) __obj.updateDynamic("proxies")(proxies.asInstanceOf[js.Any])
     if (proxyReq != null) __obj.updateDynamic("proxyReq")(js.Any.fromFunction4(proxyReq))
     if (proxyRes != null) __obj.updateDynamic("proxyRes")(js.Any.fromFunction3(proxyRes))
-    if (!js.isUndefined(proxyValidateSSL)) __obj.updateDynamic("proxyValidateSSL")(proxyValidateSSL.asInstanceOf[js.Any])
-    if (reportSlowerThan != null) __obj.updateDynamic("reportSlowerThan")(reportSlowerThan.asInstanceOf[js.Any])
+    if (!js.isUndefined(proxyValidateSSL)) __obj.updateDynamic("proxyValidateSSL")(proxyValidateSSL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reportSlowerThan)) __obj.updateDynamic("reportSlowerThan")(reportSlowerThan.get.asInstanceOf[js.Any])
     if (reporters != null) __obj.updateDynamic("reporters")(reporters.asInstanceOf[js.Any])
-    if (!js.isUndefined(restartOnFileChange)) __obj.updateDynamic("restartOnFileChange")(restartOnFileChange.asInstanceOf[js.Any])
-    if (retryLimit != null) __obj.updateDynamic("retryLimit")(retryLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleRun)) __obj.updateDynamic("singleRun")(singleRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(restartOnFileChange)) __obj.updateDynamic("restartOnFileChange")(restartOnFileChange.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retryLimit)) __obj.updateDynamic("retryLimit")(retryLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleRun)) __obj.updateDynamic("singleRun")(singleRun.get.asInstanceOf[js.Any])
     if (transports != null) __obj.updateDynamic("transports")(transports.asInstanceOf[js.Any])
     if (upstreamProxy != null) __obj.updateDynamic("upstreamProxy")(upstreamProxy.asInstanceOf[js.Any])
     if (urlRoot != null) __obj.updateDynamic("urlRoot")(urlRoot.asInstanceOf[js.Any])

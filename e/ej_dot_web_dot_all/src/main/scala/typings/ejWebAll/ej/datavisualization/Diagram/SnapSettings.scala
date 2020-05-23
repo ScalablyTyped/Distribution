@@ -33,17 +33,17 @@ object SnapSettings {
   def apply(
     enableSnapToObject: js.UndefOr[Boolean] = js.undefined,
     horizontalGridLines: SnapSettingsHorizontalGridLines = null,
-    snapAngle: Int | Double = null,
+    snapAngle: js.UndefOr[Double] = js.undefined,
     snapConstraints: SnapConstraints | String = null,
-    snapObjectDistance: Int | Double = null,
+    snapObjectDistance: js.UndefOr[Double] = js.undefined,
     verticalGridLines: SnapSettingsVerticalGridLines = null
   ): SnapSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableSnapToObject)) __obj.updateDynamic("enableSnapToObject")(enableSnapToObject.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSnapToObject)) __obj.updateDynamic("enableSnapToObject")(enableSnapToObject.get.asInstanceOf[js.Any])
     if (horizontalGridLines != null) __obj.updateDynamic("horizontalGridLines")(horizontalGridLines.asInstanceOf[js.Any])
-    if (snapAngle != null) __obj.updateDynamic("snapAngle")(snapAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapAngle)) __obj.updateDynamic("snapAngle")(snapAngle.get.asInstanceOf[js.Any])
     if (snapConstraints != null) __obj.updateDynamic("snapConstraints")(snapConstraints.asInstanceOf[js.Any])
-    if (snapObjectDistance != null) __obj.updateDynamic("snapObjectDistance")(snapObjectDistance.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapObjectDistance)) __obj.updateDynamic("snapObjectDistance")(snapObjectDistance.get.asInstanceOf[js.Any])
     if (verticalGridLines != null) __obj.updateDynamic("verticalGridLines")(verticalGridLines.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapSettings]
   }

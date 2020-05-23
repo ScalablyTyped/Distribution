@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.Diagram
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object AssociationFlows extends js.Object {
   //Used to notate directional association in a BPMN Process
   @js.native
   sealed trait Directional extends AssociationFlows
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AssociationFlows with Double] = js.native
-  /* 2 */ @js.native
-  object BiDirectional extends TopLevel[BiDirectional with Double]
-  
-  /* 0 */ @js.native
-  object Default extends TopLevel[Default with Double]
-  
-  /* 1 */ @js.native
-  object Directional extends TopLevel[Directional with Double]
   
 }
 

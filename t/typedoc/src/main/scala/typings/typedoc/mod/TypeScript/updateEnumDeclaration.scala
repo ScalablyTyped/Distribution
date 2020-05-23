@@ -14,29 +14,8 @@ import scala.scalajs.js.annotation._
 object updateEnumDeclaration extends js.Object {
   def apply(
     node: EnumDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: Identifier,
-    members: js.Array[EnumMember]
-  ): EnumDeclaration = js.native
-  def apply(
-    node: EnumDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    members: js.Array[EnumMember]
-  ): EnumDeclaration = js.native
-  def apply(
-    node: EnumDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: Identifier,
-    members: js.Array[EnumMember]
-  ): EnumDeclaration = js.native
-  def apply(
-    node: EnumDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    decorators: js.UndefOr[js.Array[Decorator]],
+    modifiers: js.UndefOr[js.Array[Modifier]],
     name: Identifier,
     members: js.Array[EnumMember]
   ): EnumDeclaration = js.native

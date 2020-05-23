@@ -59,41 +59,15 @@ object contextMod extends js.Object {
     def resolveAliasedSymbol_Symbol(symbol: Symbol): Symbol = js.native
     def trigger(name: String, reflection: Reflection): Unit = js.native
     def trigger(name: String, reflection: Reflection, node: Node): Unit = js.native
-    def withScope(scope: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
+    def withScope(scope: js.UndefOr[Reflection], callback: js.Function0[Unit]): Unit = js.native
     def withScope(
-      scope: js.UndefOr[scala.Nothing],
-      parameters: js.UndefOr[scala.Nothing],
+      scope: js.UndefOr[Reflection],
+      parameters: js.UndefOr[NodeArray[TypeParameterDeclaration]],
       callback: js.Function0[Unit]
     ): Unit = js.native
     def withScope(
-      scope: js.UndefOr[scala.Nothing],
-      parameters: js.UndefOr[scala.Nothing],
-      preserve: Boolean,
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def withScope(
-      scope: js.UndefOr[scala.Nothing],
-      parameters: NodeArray[TypeParameterDeclaration],
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def withScope(
-      scope: js.UndefOr[scala.Nothing],
-      parameters: NodeArray[TypeParameterDeclaration],
-      preserve: Boolean,
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def withScope(scope: Reflection, callback: js.Function0[Unit]): Unit = js.native
-    def withScope(scope: Reflection, parameters: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
-    def withScope(
-      scope: Reflection,
-      parameters: js.UndefOr[scala.Nothing],
-      preserve: Boolean,
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def withScope(scope: Reflection, parameters: NodeArray[TypeParameterDeclaration], callback: js.Function0[Unit]): Unit = js.native
-    def withScope(
-      scope: Reflection,
-      parameters: NodeArray[TypeParameterDeclaration],
+      scope: js.UndefOr[Reflection],
+      parameters: js.UndefOr[NodeArray[TypeParameterDeclaration]],
       preserve: Boolean,
       callback: js.Function0[Unit]
     ): Unit = js.native

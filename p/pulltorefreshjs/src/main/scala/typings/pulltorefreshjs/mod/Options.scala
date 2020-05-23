@@ -117,10 +117,10 @@ object Options {
   def apply(
     classPrefix: String = null,
     cssProp: String = null,
-    distIgnore: Int | Double = null,
-    distMax: Int | Double = null,
-    distReload: Int | Double = null,
-    distThreshold: Int | Double = null,
+    distIgnore: js.UndefOr[Double] = js.undefined,
+    distMax: js.UndefOr[Double] = js.undefined,
+    distReload: js.UndefOr[Double] = js.undefined,
+    distThreshold: js.UndefOr[Double] = js.undefined,
     getMarkup: () => String = null,
     getStyles: () => String = null,
     iconArrow: String = null,
@@ -132,7 +132,7 @@ object Options {
     onInit: () => Unit = null,
     onRefresh: () => js.Thenable[Unit] | Unit = null,
     ptrElement: String = null,
-    refreshTimeout: Int | Double = null,
+    refreshTimeout: js.UndefOr[Double] = js.undefined,
     resistanceFunction: /* input */ Double => Double = null,
     shouldPullToRefresh: () => Boolean = null,
     triggerElement: String = null
@@ -140,10 +140,10 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (classPrefix != null) __obj.updateDynamic("classPrefix")(classPrefix.asInstanceOf[js.Any])
     if (cssProp != null) __obj.updateDynamic("cssProp")(cssProp.asInstanceOf[js.Any])
-    if (distIgnore != null) __obj.updateDynamic("distIgnore")(distIgnore.asInstanceOf[js.Any])
-    if (distMax != null) __obj.updateDynamic("distMax")(distMax.asInstanceOf[js.Any])
-    if (distReload != null) __obj.updateDynamic("distReload")(distReload.asInstanceOf[js.Any])
-    if (distThreshold != null) __obj.updateDynamic("distThreshold")(distThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(distIgnore)) __obj.updateDynamic("distIgnore")(distIgnore.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(distMax)) __obj.updateDynamic("distMax")(distMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(distReload)) __obj.updateDynamic("distReload")(distReload.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(distThreshold)) __obj.updateDynamic("distThreshold")(distThreshold.get.asInstanceOf[js.Any])
     if (getMarkup != null) __obj.updateDynamic("getMarkup")(js.Any.fromFunction0(getMarkup))
     if (getStyles != null) __obj.updateDynamic("getStyles")(js.Any.fromFunction0(getStyles))
     if (iconArrow != null) __obj.updateDynamic("iconArrow")(iconArrow.asInstanceOf[js.Any])
@@ -155,7 +155,7 @@ object Options {
     if (onInit != null) __obj.updateDynamic("onInit")(js.Any.fromFunction0(onInit))
     if (onRefresh != null) __obj.updateDynamic("onRefresh")(js.Any.fromFunction0(onRefresh))
     if (ptrElement != null) __obj.updateDynamic("ptrElement")(ptrElement.asInstanceOf[js.Any])
-    if (refreshTimeout != null) __obj.updateDynamic("refreshTimeout")(refreshTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshTimeout)) __obj.updateDynamic("refreshTimeout")(refreshTimeout.get.asInstanceOf[js.Any])
     if (resistanceFunction != null) __obj.updateDynamic("resistanceFunction")(js.Any.fromFunction1(resistanceFunction))
     if (shouldPullToRefresh != null) __obj.updateDynamic("shouldPullToRefresh")(js.Any.fromFunction0(shouldPullToRefresh))
     if (triggerElement != null) __obj.updateDynamic("triggerElement")(triggerElement.asInstanceOf[js.Any])

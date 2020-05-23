@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +16,11 @@ trait lang extends js.Object {
   def clone(elem: js.Any): js.Any
 }
 
-@JSGlobal("__esri.lang")
-@js.native
-object lang extends TopLevel[lang]
+object lang {
+  @scala.inline
+  def apply(clone: js.Any => js.Any): lang = {
+    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction1(clone))
+    __obj.asInstanceOf[lang]
+  }
+}
 

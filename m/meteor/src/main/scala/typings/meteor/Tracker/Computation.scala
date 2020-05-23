@@ -14,9 +14,19 @@ trait Computation extends js.Object {
   def stop(): Unit
 }
 
-@JSGlobal("Tracker.Computation")
-@js.native
-object Computation extends js.Object {
-  def apply(): Unit = js.native
+object Computation {
+  @scala.inline
+  def apply(
+    firstRun: Boolean,
+    invalidate: () => Unit,
+    invalidated: Boolean,
+    onInvalidate: js.Function => Unit,
+    onStop: js.Function => Unit,
+    stop: () => Unit,
+    stopped: Boolean
+  ): Computation = {
+    val __obj = js.Dynamic.literal(firstRun = firstRun.asInstanceOf[js.Any], invalidate = js.Any.fromFunction0(invalidate), invalidated = invalidated.asInstanceOf[js.Any], onInvalidate = js.Any.fromFunction1(onInvalidate), onStop = js.Any.fromFunction1(onStop), stop = js.Any.fromFunction0(stop), stopped = stopped.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Computation]
+  }
 }
 

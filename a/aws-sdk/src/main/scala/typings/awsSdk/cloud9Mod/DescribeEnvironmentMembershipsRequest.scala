@@ -32,14 +32,14 @@ object DescribeEnvironmentMembershipsRequest {
   @scala.inline
   def apply(
     environmentId: EnvironmentId = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[MaxResults] = js.undefined,
     nextToken: String = null,
     permissions: PermissionsList = null,
     userArn: UserArn = null
   ): DescribeEnvironmentMembershipsRequest = {
     val __obj = js.Dynamic.literal()
     if (environmentId != null) __obj.updateDynamic("environmentId")(environmentId.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
     if (userArn != null) __obj.updateDynamic("userArn")(userArn.asInstanceOf[js.Any])

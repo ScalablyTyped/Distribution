@@ -14,9 +14,9 @@ trait PermissionsBoundaryDecisionDetail extends js.Object {
 
 object PermissionsBoundaryDecisionDetail {
   @scala.inline
-  def apply(AllowedByPermissionsBoundary: js.UndefOr[Boolean] = js.undefined): PermissionsBoundaryDecisionDetail = {
+  def apply(AllowedByPermissionsBoundary: js.UndefOr[booleanType] = js.undefined): PermissionsBoundaryDecisionDetail = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllowedByPermissionsBoundary)) __obj.updateDynamic("AllowedByPermissionsBoundary")(AllowedByPermissionsBoundary.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllowedByPermissionsBoundary)) __obj.updateDynamic("AllowedByPermissionsBoundary")(AllowedByPermissionsBoundary.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PermissionsBoundaryDecisionDetail]
   }
 }

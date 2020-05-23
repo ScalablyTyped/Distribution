@@ -1,71 +1,67 @@
 package typings.winrtUwp.Windows.Web.Http
 
-import typings.winrtUwp.AnonLength
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperationWithProgress
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import typings.winrtUwp.Windows.Storage.Streams.IInputStream
 import typings.winrtUwp.Windows.Storage.Streams.IOutputStream
-import typings.winrtUwp.Windows.Storage.Streams.UnicodeEncoding
 import typings.winrtUwp.Windows.Web.Http.Headers.HttpContentHeaderCollection
+import typings.winrtUwp.anon.Length
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides HTTP content that uses a string. */
-@JSGlobal("Windows.Web.Http.HttpStringContent")
-@js.native
-class HttpStringContent protected () extends js.Object {
-  /**
-    * Initializes a new instance of the HttpStringContent class with the specified content.
-    * @param content The content used to initialize the HttpStringContent .
-    */
-  def this(content: String) = this()
-  /**
-    * Initializes a new instance of the HttpStringContent class with the specified content and encoding.
-    * @param content The content used to initialize the HttpStringContent .
-    * @param encoding The encoding to use for the content.
-    */
-  def this(content: String, encoding: UnicodeEncoding) = this()
-  /**
-    * Initializes a new instance of the HttpStringContent class with the specified content, encoding, and media type.
-    * @param content The content used to initialize the HttpStringContent .
-    * @param encoding The encoding to use for the content.
-    * @param mediaType The media type to use for the content.
-    */
-  def this(content: String, encoding: UnicodeEncoding, mediaType: String) = this()
+trait HttpStringContent extends js.Object {
   /** Get a collection of content headers set on the HttpStringContent . */
-  var headers: HttpContentHeaderCollection = js.native
+  var headers: HttpContentHeaderCollection
   /**
     * Serialize the HttpStringContent into memory as an asynchronous operation.
     * @return The object that represents the asynchronous operation.
     */
-  def bufferAllAsync(): IPromiseWithIAsyncOperationWithProgress[Double, Double] = js.native
+  def bufferAllAsync(): IPromiseWithIAsyncOperationWithProgress[Double, Double]
   /** Closes the HttpStringContent instance and releases allocated resources. */
-  def close(): Unit = js.native
+  def close(): Unit
   /**
     * Serialize the HttpStringContent to a buffer as an asynchronous operation.
     * @return The object that represents the asynchronous operation.
     */
-  def readAsBufferAsync(): IPromiseWithIAsyncOperationWithProgress[IBuffer, Double] = js.native
+  def readAsBufferAsync(): IPromiseWithIAsyncOperationWithProgress[IBuffer, Double]
   /**
     * Serialize the HttpStringContent and return an input stream that represents the content as an asynchronous operation.
     * @return The object that represents the asynchronous operation.
     */
-  def readAsInputStreamAsync(): IPromiseWithIAsyncOperationWithProgress[IInputStream, Double] = js.native
+  def readAsInputStreamAsync(): IPromiseWithIAsyncOperationWithProgress[IInputStream, Double]
   /**
     * Serialize the HttpStringContent to a String as an asynchronous operation.
     * @return The object that represents the asynchronous operation.
     */
-  def readAsStringAsync(): IPromiseWithIAsyncOperationWithProgress[String, Double] = js.native
+  def readAsStringAsync(): IPromiseWithIAsyncOperationWithProgress[String, Double]
   /**
     * Compute the HttpStringContent length in bytes.
     */
-  def tryComputeLength(): AnonLength = js.native
+  def tryComputeLength(): Length
   /**
     * Write the HttpStringContent to an output stream as an asynchronous operation.
     * @param outputStream The output stream to write to.
     * @return The object that represents the asynchronous operation.
     */
-  def writeToStreamAsync(outputStream: IOutputStream): IPromiseWithIAsyncOperationWithProgress[Double, Double] = js.native
+  def writeToStreamAsync(outputStream: IOutputStream): IPromiseWithIAsyncOperationWithProgress[Double, Double]
+}
+
+object HttpStringContent {
+  @scala.inline
+  def apply(
+    bufferAllAsync: () => IPromiseWithIAsyncOperationWithProgress[Double, Double],
+    close: () => Unit,
+    headers: HttpContentHeaderCollection,
+    readAsBufferAsync: () => IPromiseWithIAsyncOperationWithProgress[IBuffer, Double],
+    readAsInputStreamAsync: () => IPromiseWithIAsyncOperationWithProgress[IInputStream, Double],
+    readAsStringAsync: () => IPromiseWithIAsyncOperationWithProgress[String, Double],
+    tryComputeLength: () => Length,
+    writeToStreamAsync: IOutputStream => IPromiseWithIAsyncOperationWithProgress[Double, Double]
+  ): HttpStringContent = {
+    val __obj = js.Dynamic.literal(bufferAllAsync = js.Any.fromFunction0(bufferAllAsync), close = js.Any.fromFunction0(close), headers = headers.asInstanceOf[js.Any], readAsBufferAsync = js.Any.fromFunction0(readAsBufferAsync), readAsInputStreamAsync = js.Any.fromFunction0(readAsInputStreamAsync), readAsStringAsync = js.Any.fromFunction0(readAsStringAsync), tryComputeLength = js.Any.fromFunction0(tryComputeLength), writeToStreamAsync = js.Any.fromFunction1(writeToStreamAsync))
+    __obj.asInstanceOf[HttpStringContent]
+  }
 }
 

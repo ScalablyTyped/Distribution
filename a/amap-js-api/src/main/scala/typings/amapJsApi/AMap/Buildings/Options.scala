@@ -19,7 +19,7 @@ trait Options
   var opacity: js.UndefOr[Double] = js.undefined
   var sort: js.UndefOr[Boolean] = js.undefined
   /**
-    * 	是否可见
+    *     是否可见
     */
   var visible: js.UndefOr[Boolean] = js.undefined
   /**
@@ -35,23 +35,23 @@ trait Options
 object Options {
   @scala.inline
   def apply(
-    heightFactor: Int | Double = null,
+    heightFactor: js.UndefOr[Double] = js.undefined,
     map: Map = null,
     merge: js.UndefOr[Boolean] = js.undefined,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     sort: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
-    zIndex: Int | Double = null,
+    zIndex: js.UndefOr[Double] = js.undefined,
     zooms: js.Tuple2[Double, Double] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (heightFactor != null) __obj.updateDynamic("heightFactor")(heightFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(heightFactor)) __obj.updateDynamic("heightFactor")(heightFactor.get.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (!js.isUndefined(merge)) __obj.updateDynamic("merge")(merge.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(merge)) __obj.updateDynamic("merge")(merge.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     if (zooms != null) __obj.updateDynamic("zooms")(zooms.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

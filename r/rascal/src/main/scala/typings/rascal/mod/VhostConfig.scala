@@ -1,7 +1,7 @@
 package typings.rascal.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.rascal.AnonRegularPool
+import typings.rascal.anon.RegularPool
 import typings.rascal.rascalStrings.fixed
 import typings.rascal.rascalStrings.random
 import scala.scalajs.js
@@ -17,7 +17,7 @@ trait VhostConfig extends js.Object {
   var connections: js.UndefOr[js.Array[ConnectionConfig]] = js.undefined
   var exchanges: js.UndefOr[StringDictionary[ExchangeConfig] | js.Array[String]] = js.undefined
   var namespace: js.UndefOr[String | Boolean] = js.undefined
-  var publicationChannelPools: js.UndefOr[AnonRegularPool] = js.undefined
+  var publicationChannelPools: js.UndefOr[RegularPool] = js.undefined
   var publications: js.UndefOr[StringDictionary[PublicationConfig]] = js.undefined
   var queues: js.UndefOr[StringDictionary[QueueConfig] | js.Array[String]] = js.undefined
   var subscriptions: js.UndefOr[StringDictionary[SubscriptionConfig]] = js.undefined
@@ -34,15 +34,15 @@ object VhostConfig {
     connections: js.Array[ConnectionConfig] = null,
     exchanges: StringDictionary[ExchangeConfig] | js.Array[String] = null,
     namespace: String | Boolean = null,
-    publicationChannelPools: AnonRegularPool = null,
+    publicationChannelPools: RegularPool = null,
     publications: StringDictionary[PublicationConfig] = null,
     queues: StringDictionary[QueueConfig] | js.Array[String] = null,
     subscriptions: StringDictionary[SubscriptionConfig] = null
   ): VhostConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(assert)) __obj.updateDynamic("assert")(assert.asInstanceOf[js.Any])
+    if (!js.isUndefined(assert)) __obj.updateDynamic("assert")(assert.get.asInstanceOf[js.Any])
     if (bindings != null) __obj.updateDynamic("bindings")(bindings.asInstanceOf[js.Any])
-    if (!js.isUndefined(check)) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
+    if (!js.isUndefined(check)) __obj.updateDynamic("check")(check.get.asInstanceOf[js.Any])
     if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
     if (connectionStrategy != null) __obj.updateDynamic("connectionStrategy")(connectionStrategy.asInstanceOf[js.Any])
     if (connections != null) __obj.updateDynamic("connections")(connections.asInstanceOf[js.Any])

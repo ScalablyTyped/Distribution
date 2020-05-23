@@ -18,14 +18,14 @@ object Item {
     headers: js.Any = null,
     response: js.Any = null,
     responseText: String = null,
-    status: Int | Double = null,
+    status: js.UndefOr[Double] = js.undefined,
     statusText: String = null
   ): Item = {
     val __obj = js.Dynamic.literal()
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     if (responseText != null) __obj.updateDynamic("responseText")(responseText.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
     if (statusText != null) __obj.updateDynamic("statusText")(statusText.asInstanceOf[js.Any])
     __obj.asInstanceOf[Item]
   }

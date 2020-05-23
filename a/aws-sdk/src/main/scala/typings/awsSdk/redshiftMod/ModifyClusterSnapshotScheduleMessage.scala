@@ -24,11 +24,11 @@ object ModifyClusterSnapshotScheduleMessage {
   @scala.inline
   def apply(
     ClusterIdentifier: String,
-    DisassociateSchedule: js.UndefOr[scala.Boolean] = js.undefined,
+    DisassociateSchedule: js.UndefOr[BooleanOptional] = js.undefined,
     ScheduleIdentifier: String = null
   ): ModifyClusterSnapshotScheduleMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisassociateSchedule)) __obj.updateDynamic("DisassociateSchedule")(DisassociateSchedule.asInstanceOf[js.Any])
+    if (!js.isUndefined(DisassociateSchedule)) __obj.updateDynamic("DisassociateSchedule")(DisassociateSchedule.get.asInstanceOf[js.Any])
     if (ScheduleIdentifier != null) __obj.updateDynamic("ScheduleIdentifier")(ScheduleIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyClusterSnapshotScheduleMessage]
   }

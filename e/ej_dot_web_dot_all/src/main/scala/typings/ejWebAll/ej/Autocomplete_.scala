@@ -1,18 +1,11 @@
 package typings.ejWebAll.ej
 
-import typings.ejWebAll.JQuery
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.Autocomplete")
 @js.native
-class Autocomplete_ protected () extends Widget_ {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.Autocomplete.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.Autocomplete.Model) = this()
+trait Autocomplete_ extends Widget_ {
   var defaults: typings.ejWebAll.ej.Autocomplete.Model = js.native
   @JSName("model")
   var model_Autocomplete_ : typings.ejWebAll.ej.Autocomplete.Model = js.native

@@ -18,16 +18,16 @@ trait WorkspaceScanOptions extends js.Object {
 object WorkspaceScanOptions {
   @scala.inline
   def apply(
-    leadingContextLineCount: Int | Double = null,
+    leadingContextLineCount: js.UndefOr[Double] = js.undefined,
     onPathsSearched: /* pathsSearched */ Double => Unit = null,
     paths: js.Array[String] = null,
-    trailingContextLineCount: Int | Double = null
+    trailingContextLineCount: js.UndefOr[Double] = js.undefined
   ): WorkspaceScanOptions = {
     val __obj = js.Dynamic.literal()
-    if (leadingContextLineCount != null) __obj.updateDynamic("leadingContextLineCount")(leadingContextLineCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(leadingContextLineCount)) __obj.updateDynamic("leadingContextLineCount")(leadingContextLineCount.get.asInstanceOf[js.Any])
     if (onPathsSearched != null) __obj.updateDynamic("onPathsSearched")(js.Any.fromFunction1(onPathsSearched))
     if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
-    if (trailingContextLineCount != null) __obj.updateDynamic("trailingContextLineCount")(trailingContextLineCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(trailingContextLineCount)) __obj.updateDynamic("trailingContextLineCount")(trailingContextLineCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceScanOptions]
   }
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ObjectSchemaConstructor
   extends AnySchemaConstructor
      with Instantiable0[ObjectSchema[js.Object]] {
-  def apply[T /* <: js.Object */](): ObjectSchema[T] = js.native
-  def apply[T /* <: js.Object */](fields: ObjectSchemaDefinition[T]): ObjectSchema[T] = js.native
+  def apply[T /* <: js.Object */](): ObjectSchema[js.UndefOr[T]] = js.native
+  def apply[T /* <: js.Object */](fields: ObjectSchemaDefinition[T]): ObjectSchema[js.UndefOr[T]] = js.native
 }
 

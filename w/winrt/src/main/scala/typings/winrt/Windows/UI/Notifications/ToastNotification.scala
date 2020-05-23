@@ -6,19 +6,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.Notifications.ToastNotification")
-@js.native
-class ToastNotification protected () extends IToastNotification {
-  def this(content: XmlDocument) = this()
-  /* CompleteClass */
-  override var content: XmlDocument = js.native
-  /* CompleteClass */
-  override var expirationTime: Date = js.native
-  /* CompleteClass */
-  override var onactivated: js.Any = js.native
-  /* CompleteClass */
-  override var ondismissed: js.Any = js.native
-  /* CompleteClass */
-  override var onfailed: js.Any = js.native
+trait ToastNotification extends IToastNotification
+
+object ToastNotification {
+  @scala.inline
+  def apply(
+    content: XmlDocument,
+    expirationTime: Date,
+    onactivated: js.Any,
+    ondismissed: js.Any,
+    onfailed: js.Any
+  ): ToastNotification = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], expirationTime = expirationTime.asInstanceOf[js.Any], onactivated = onactivated.asInstanceOf[js.Any], ondismissed = ondismissed.asInstanceOf[js.Any], onfailed = onfailed.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ToastNotification]
+  }
 }
 

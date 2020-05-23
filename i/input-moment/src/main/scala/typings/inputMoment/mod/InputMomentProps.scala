@@ -19,16 +19,16 @@ object InputMomentProps {
   @scala.inline
   def apply(
     moment: Moment,
-    hourStep: Int | Double = null,
-    minStep: Int | Double = null,
+    hourStep: js.UndefOr[Double] = js.undefined,
+    minStep: js.UndefOr[Double] = js.undefined,
     nextMonthIcon: String = null,
     onChange: /* m */ Moment => Unit = null,
     onSave: () => Unit = null,
     prevMonthIcon: String = null
   ): InputMomentProps = {
     val __obj = js.Dynamic.literal(moment = moment.asInstanceOf[js.Any])
-    if (hourStep != null) __obj.updateDynamic("hourStep")(hourStep.asInstanceOf[js.Any])
-    if (minStep != null) __obj.updateDynamic("minStep")(minStep.asInstanceOf[js.Any])
+    if (!js.isUndefined(hourStep)) __obj.updateDynamic("hourStep")(hourStep.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minStep)) __obj.updateDynamic("minStep")(minStep.get.asInstanceOf[js.Any])
     if (nextMonthIcon != null) __obj.updateDynamic("nextMonthIcon")(nextMonthIcon.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onSave != null) __obj.updateDynamic("onSave")(js.Any.fromFunction0(onSave))

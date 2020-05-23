@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.mod
 
-import typings.officeUiFabricReact.PartialIColorPickerGridCe
+import typings.officeUiFabricReact.anon.PartialIColorPickerGridCe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

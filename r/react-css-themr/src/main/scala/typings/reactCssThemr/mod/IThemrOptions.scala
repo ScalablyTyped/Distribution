@@ -1,6 +1,6 @@
 package typings.reactCssThemr.mod
 
-import typings.reactCssThemr.AnonTheme
+import typings.reactCssThemr.anon.Theme
 import typings.reactCssThemr.reactCssThemrBooleans.`false`
 import typings.reactCssThemr.reactCssThemrStrings.deeply
 import typings.reactCssThemr.reactCssThemrStrings.softly
@@ -20,7 +20,7 @@ object IThemrOptions {
   @scala.inline
   def apply(
     composeTheme: deeply | softly | `false` = null,
-    mapThemrProps: (js.Object, /* theme */ TReactCSSThemrTheme) => js.Object with AnonTheme = null
+    mapThemrProps: (js.Object, /* theme */ TReactCSSThemrTheme) => js.Object with Theme = null
   ): IThemrOptions = {
     val __obj = js.Dynamic.literal()
     if (composeTheme != null) __obj.updateDynamic("composeTheme")(composeTheme.asInstanceOf[js.Any])

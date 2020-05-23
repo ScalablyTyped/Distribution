@@ -1,6 +1,6 @@
 package typings.ionicCore.refresherUtilsMod
 
-import typings.ionicCore.componentsMod._Global_.HTMLIonRefresherElement
+import typings.ionicCore.componentsMod.global.HTMLIonRefresherElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

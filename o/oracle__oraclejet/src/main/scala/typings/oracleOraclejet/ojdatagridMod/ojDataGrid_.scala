@@ -1,17 +1,17 @@
 package typings.oracleOraclejet.ojdatagridMod
 
-import typings.oracleOraclejet.Anon2
-import typings.oracleOraclejet.Anon3
-import typings.oracleOraclejet.AnonAccessibleActionableMode
-import typings.oracleOraclejet.AnonCell
-import typings.oracleOraclejet.AnonClassName
-import typings.oracleOraclejet.AnonColumn
-import typings.oracleOraclejet.AnonColumnEnd
-import typings.oracleOraclejet.AnonColumnIndex
-import typings.oracleOraclejet.AnonHorizontal
-import typings.oracleOraclejet.AnonMaxColumnCount
-import typings.oracleOraclejet.AnonReorder
-import typings.oracleOraclejet.AnonSubId
+import typings.oracleOraclejet.anon.AccessibleActionableMode
+import typings.oracleOraclejet.anon.Cell
+import typings.oracleOraclejet.anon.ClassName
+import typings.oracleOraclejet.anon.Column
+import typings.oracleOraclejet.anon.ColumnEnd
+import typings.oracleOraclejet.anon.ColumnIndex
+import typings.oracleOraclejet.anon.Horizontal
+import typings.oracleOraclejet.anon.MaxColumnCount
+import typings.oracleOraclejet.anon.Reorder
+import typings.oracleOraclejet.anon.SubId
+import typings.oracleOraclejet.anon.`2`
+import typings.oracleOraclejet.anon.`3`
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.baseComponent
 import typings.oracleOraclejet.ojdatagridMod.ojDataGrid.CellContext
@@ -67,22 +67,22 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ojDataGrid_[K, D] extends baseComponent[ojDataGridSettableProperties[K, D]] {
-  var bandingInterval: AnonColumn = js.native
-  var cell: AnonClassName[K, D] = js.native
+  var bandingInterval: Column = js.native
+  var cell: ClassName[K, D] = js.native
   var currentCell: CurrentCell[K] | Null = js.native
   var data: DataProvider[K, D] = js.native
-  var dnd: AnonReorder = js.native
+  var dnd: Reorder = js.native
   var editMode: none | cellNavigation | cellEdit = js.native
-  var gridlines: AnonHorizontal = js.native
-  var header: AnonColumnEnd[K, D] = js.native
-  var onBandingIntervalChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonColumn], _]) | Null = js.native
-  var onCellChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonClassName[K, D]], _]) | Null = js.native
+  var gridlines: Horizontal = js.native
+  var header: ColumnEnd[K, D] = js.native
+  var onBandingIntervalChanged: (js.Function1[/* event */ JetElementCustomEvent[Column], _]) | Null = js.native
+  var onCellChanged: (js.Function1[/* event */ JetElementCustomEvent[ClassName[K, D]], _]) | Null = js.native
   var onCurrentCellChanged: (js.Function1[/* event */ JetElementCustomEvent[CurrentCell[K] | Null], _]) | Null = js.native
   var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[DataProvider[K, D]], _]) | Null = js.native
-  var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonReorder], _]) | Null = js.native
+  var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[Reorder], _]) | Null = js.native
   var onEditModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | cellNavigation | cellEdit], _]) | Null = js.native
-  var onGridlinesChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonHorizontal], _]) | Null = js.native
-  var onHeaderChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonColumnEnd[K, D]], _]) | Null = js.native
+  var onGridlinesChanged: (js.Function1[/* event */ JetElementCustomEvent[Horizontal], _]) | Null = js.native
+  var onHeaderChanged: (js.Function1[/* event */ JetElementCustomEvent[ColumnEnd[K, D]], _]) | Null = js.native
   var onOjBeforeCurrentCell: (js.Function1[/* event */ ojBeforeCurrentCell[K], _]) | Null = js.native
   var onOjBeforeEdit: (js.Function1[/* event */ ojBeforeEdit[K, D], _]) | Null = js.native
   var onOjBeforeEditEnd: (js.Function1[/* event */ ojBeforeEditEnd[K, D], _]) | Null = js.native
@@ -90,17 +90,17 @@ trait ojDataGrid_[K, D] extends baseComponent[ojDataGridSettableProperties[K, D]
   var onOjScroll: (js.Function1[/* event */ ojScroll, _]) | Null = js.native
   var onOjSort: (js.Function1[/* event */ ojSort, _]) | Null = js.native
   var onScrollPolicyChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | loadMoreOnScroll | scroll], _]) | Null = js.native
-  var onScrollPolicyOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonMaxColumnCount], _]) | Null = js.native
-  var onScrollPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonColumnIndex[K]], _]) | Null = js.native
+  var onScrollPolicyOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[MaxColumnCount], _]) | Null = js.native
+  var onScrollPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[ColumnIndex[K]], _]) | Null = js.native
   var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Selection[K]]], _]) | Null = js.native
-  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonCell], _]) | Null = js.native
+  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[Cell], _]) | Null = js.native
   var scrollPolicy: auto | loadMoreOnScroll | scroll = js.native
-  var scrollPolicyOptions: AnonMaxColumnCount = js.native
-  var scrollPosition: AnonColumnIndex[K] = js.native
+  var scrollPolicyOptions: MaxColumnCount = js.native
+  var scrollPosition: ColumnIndex[K] = js.native
   var selection: js.Array[Selection[K]] = js.native
-  var selectionMode: AnonCell = js.native
+  var selectionMode: Cell = js.native
   @JSName("translations")
-  var translations_ojDataGrid_ : AnonAccessibleActionableMode = js.native
+  var translations_ojDataGrid_ : AccessibleActionableMode = js.native
   def addEventListener(
     `type`: editModeChanged,
     listener: js.ThisFunction1[
@@ -138,23 +138,23 @@ trait ojDataGrid_[K, D] extends baseComponent[ojDataGridSettableProperties[K, D]
   @JSName("addEventListener")
   def addEventListener_bandingIntervalChanged(
     `type`: bandingIntervalChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonColumn], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Column], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_bandingIntervalChanged(
     `type`: bandingIntervalChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonColumn], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Column], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_cellChanged(
     `type`: cellChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonClassName[K, D]], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ClassName[K, D]], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_cellChanged(
     `type`: cellChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonClassName[K, D]], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ClassName[K, D]], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -182,34 +182,34 @@ trait ojDataGrid_[K, D] extends baseComponent[ojDataGridSettableProperties[K, D]
   @JSName("addEventListener")
   def addEventListener_dndChanged(
     `type`: dndChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonReorder], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Reorder], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dndChanged(
     `type`: dndChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonReorder], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Reorder], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_gridlinesChanged(
     `type`: gridlinesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonHorizontal], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Horizontal], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_gridlinesChanged(
     `type`: gridlinesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonHorizontal], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Horizontal], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_headerChanged(
     `type`: headerChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonColumnEnd[K, D]], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ColumnEnd[K, D]], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_headerChanged(
     `type`: headerChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonColumnEnd[K, D]], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ColumnEnd[K, D]], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -281,23 +281,23 @@ trait ojDataGrid_[K, D] extends baseComponent[ojDataGridSettableProperties[K, D]
   @JSName("addEventListener")
   def addEventListener_scrollPolicyOptionsChanged(
     `type`: scrollPolicyOptionsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonMaxColumnCount], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[MaxColumnCount], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scrollPolicyOptionsChanged(
     `type`: scrollPolicyOptionsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonMaxColumnCount], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[MaxColumnCount], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scrollPositionChanged(
     `type`: scrollPositionChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonColumnIndex[K]], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ColumnIndex[K]], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scrollPositionChanged(
     `type`: scrollPositionChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonColumnIndex[K]], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ColumnIndex[K]], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -314,41 +314,41 @@ trait ojDataGrid_[K, D] extends baseComponent[ojDataGridSettableProperties[K, D]
   @JSName("addEventListener")
   def addEventListener_selectionModeChanged(
     `type`: selectionModeChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonCell], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Cell], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_selectionModeChanged(
     `type`: selectionModeChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonCell], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Cell], _],
     useCapture: Boolean
   ): Unit = js.native
-  def getContextByNode(node: Element): ((CellContext[K, D]) with AnonSubId) | ((HeaderContext[K, D]) with Anon2) | ((LabelContext[K, D]) with Anon3) = js.native
+  def getContextByNode(node: Element): ((CellContext[K, D]) with SubId) | ((HeaderContext[K, D]) with `2`) | ((LabelContext[K, D]) with `3`) = js.native
   @JSName("getProperty")
-  def getProperty_bandingInterval(property: bandingInterval): AnonColumn = js.native
+  def getProperty_bandingInterval(property: bandingInterval): Column = js.native
   @JSName("getProperty")
-  def getProperty_cell(property: cell): AnonClassName[K, D] = js.native
+  def getProperty_cell(property: cell): ClassName[K, D] = js.native
   @JSName("getProperty")
   def getProperty_currentCell(property: currentCell): CurrentCell[K] | Null = js.native
   @JSName("getProperty")
   def getProperty_data(property: data): DataProvider[K, D] = js.native
   @JSName("getProperty")
-  def getProperty_dnd(property: dnd): AnonReorder = js.native
+  def getProperty_dnd(property: dnd): Reorder = js.native
   @JSName("getProperty")
   def getProperty_editMode(property: editMode): none | cellNavigation | cellEdit = js.native
   @JSName("getProperty")
-  def getProperty_gridlines(property: gridlines): AnonHorizontal = js.native
+  def getProperty_gridlines(property: gridlines): Horizontal = js.native
   @JSName("getProperty")
-  def getProperty_header(property: header): AnonColumnEnd[K, D] = js.native
+  def getProperty_header(property: header): ColumnEnd[K, D] = js.native
   @JSName("getProperty")
   def getProperty_scrollPolicy(property: scrollPolicy): auto | loadMoreOnScroll | scroll = js.native
   @JSName("getProperty")
-  def getProperty_scrollPolicyOptions(property: scrollPolicyOptions): AnonMaxColumnCount = js.native
+  def getProperty_scrollPolicyOptions(property: scrollPolicyOptions): MaxColumnCount = js.native
   @JSName("getProperty")
-  def getProperty_scrollPosition(property: scrollPosition): AnonColumnIndex[K] = js.native
+  def getProperty_scrollPosition(property: scrollPosition): ColumnIndex[K] = js.native
   @JSName("getProperty")
   def getProperty_selection(property: selection): js.Array[Selection[K]] = js.native
   @JSName("getProperty")
-  def getProperty_selectionMode(property: selectionMode): AnonCell = js.native
+  def getProperty_selectionMode(property: selectionMode): Cell = js.native
   def setProperties(properties: ojDataGridSettablePropertiesLenient[K, D]): Unit = js.native
   def setProperty(property: editMode, value: cellEdit): Unit = js.native
   def setProperty(property: editMode, value: cellNavigation): Unit = js.native
@@ -357,9 +357,9 @@ trait ojDataGrid_[K, D] extends baseComponent[ojDataGridSettableProperties[K, D]
   def setProperty(property: scrollPolicy, value: loadMoreOnScroll): Unit = js.native
   def setProperty(property: scrollPolicy, value: scroll): Unit = js.native
   @JSName("setProperty")
-  def setProperty_bandingInterval(property: bandingInterval, value: AnonColumn): Unit = js.native
+  def setProperty_bandingInterval(property: bandingInterval, value: Column): Unit = js.native
   @JSName("setProperty")
-  def setProperty_cell(property: cell, value: AnonClassName[K, D]): Unit = js.native
+  def setProperty_cell(property: cell, value: ClassName[K, D]): Unit = js.native
   @JSName("setProperty")
   def setProperty_currentCell(property: currentCell): Unit = js.native
   @JSName("setProperty")
@@ -369,20 +369,20 @@ trait ojDataGrid_[K, D] extends baseComponent[ojDataGridSettableProperties[K, D]
   @JSName("setProperty")
   def setProperty_data(property: data, value: DataProvider[K, D]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_dnd(property: dnd, value: AnonReorder): Unit = js.native
+  def setProperty_dnd(property: dnd, value: Reorder): Unit = js.native
   @JSName("setProperty")
-  def setProperty_gridlines(property: gridlines, value: AnonHorizontal): Unit = js.native
+  def setProperty_gridlines(property: gridlines, value: Horizontal): Unit = js.native
   @JSName("setProperty")
-  def setProperty_header(property: header, value: AnonColumnEnd[K, D]): Unit = js.native
+  def setProperty_header(property: header, value: ColumnEnd[K, D]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_scrollPolicyOptions(property: scrollPolicyOptions, value: AnonMaxColumnCount): Unit = js.native
+  def setProperty_scrollPolicyOptions(property: scrollPolicyOptions, value: MaxColumnCount): Unit = js.native
   @JSName("setProperty")
-  def setProperty_scrollPosition(property: scrollPosition, value: AnonColumnIndex[K]): Unit = js.native
+  def setProperty_scrollPosition(property: scrollPosition, value: ColumnIndex[K]): Unit = js.native
   @JSName("setProperty")
   def setProperty_selection(property: selection, value: js.Array[Selection[K]]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_selectionMode(property: selectionMode, value: AnonCell): Unit = js.native
+  def setProperty_selectionMode(property: selectionMode, value: Cell): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonAccessibleActionableMode): Unit = js.native
+  def setProperty_translations(property: translations, value: AccessibleActionableMode): Unit = js.native
 }
 

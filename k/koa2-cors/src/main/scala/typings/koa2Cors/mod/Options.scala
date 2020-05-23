@@ -21,15 +21,15 @@ object Options {
     allowMethods: js.Array[String] = null,
     credentials: js.UndefOr[Boolean] = js.undefined,
     exposeHeaders: js.Array[String] = null,
-    maxAge: Int | Double = null,
+    maxAge: js.UndefOr[Double] = js.undefined,
     origin: String | (js.Function1[/* ctx */ Context, Boolean | String]) = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (allowHeaders != null) __obj.updateDynamic("allowHeaders")(allowHeaders.asInstanceOf[js.Any])
     if (allowMethods != null) __obj.updateDynamic("allowMethods")(allowMethods.asInstanceOf[js.Any])
-    if (!js.isUndefined(credentials)) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
+    if (!js.isUndefined(credentials)) __obj.updateDynamic("credentials")(credentials.get.asInstanceOf[js.Any])
     if (exposeHeaders != null) __obj.updateDynamic("exposeHeaders")(exposeHeaders.asInstanceOf[js.Any])
-    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAge)) __obj.updateDynamic("maxAge")(maxAge.get.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

@@ -36,14 +36,14 @@ object ListTrainingJobsForHyperParameterTuningJobRequest {
   @scala.inline
   def apply(
     HyperParameterTuningJobName: HyperParameterTuningJobName,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: NextToken = null,
     SortBy: TrainingJobSortByOptions = null,
     SortOrder: SortOrder = null,
     StatusEquals: TrainingJobStatus = null
   ): ListTrainingJobsForHyperParameterTuningJobRequest = {
     val __obj = js.Dynamic.literal(HyperParameterTuningJobName = HyperParameterTuningJobName.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (SortBy != null) __obj.updateDynamic("SortBy")(SortBy.asInstanceOf[js.Any])
     if (SortOrder != null) __obj.updateDynamic("SortOrder")(SortOrder.asInstanceOf[js.Any])

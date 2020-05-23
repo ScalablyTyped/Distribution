@@ -5,14 +5,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** FaxOutboundRouting Class */
-@JSGlobal("FAXCOMEXLib.FaxOutboundRouting")
-@js.native
-class FaxOutboundRouting protected () extends js.Object {
+trait FaxOutboundRouting extends js.Object {
   @JSName("FAXCOMEXLib.FaxOutboundRouting_typekey")
-  var FAXCOMEXLibDotFaxOutboundRouting_typekey: FaxOutboundRouting = js.native
+  var FAXCOMEXLibDotFaxOutboundRouting_typekey: FaxOutboundRouting
   /** Configuration of the outbound routing groups */
-  def GetGroups(): FaxOutboundRoutingGroups = js.native
+  def GetGroups(): FaxOutboundRoutingGroups
   /** Configuration of the outbound routing rules */
-  def GetRules(): FaxOutboundRoutingRules = js.native
+  def GetRules(): FaxOutboundRoutingRules
+}
+
+object FaxOutboundRouting {
+  @scala.inline
+  def apply(
+    FAXCOMEXLibDotFaxOutboundRouting_typekey: FaxOutboundRouting,
+    GetGroups: () => FaxOutboundRoutingGroups,
+    GetRules: () => FaxOutboundRoutingRules
+  ): FaxOutboundRouting = {
+    val __obj = js.Dynamic.literal(GetGroups = js.Any.fromFunction0(GetGroups), GetRules = js.Any.fromFunction0(GetRules))
+    __obj.updateDynamic("FAXCOMEXLib.FaxOutboundRouting_typekey")(FAXCOMEXLibDotFaxOutboundRouting_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FaxOutboundRouting]
+  }
 }
 

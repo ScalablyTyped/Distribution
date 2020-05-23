@@ -27,11 +27,11 @@ object ProjectParametersTransformation {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    wkid: Int | Double = null,
+    wkid: js.UndefOr[Double] = js.undefined,
     wkt: String = null
   ): ProjectParametersTransformation = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (wkid != null) __obj.updateDynamic("wkid")(wkid.asInstanceOf[js.Any])
+    if (!js.isUndefined(wkid)) __obj.updateDynamic("wkid")(wkid.get.asInstanceOf[js.Any])
     if (wkt != null) __obj.updateDynamic("wkt")(wkt.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectParametersTransformation]
   }

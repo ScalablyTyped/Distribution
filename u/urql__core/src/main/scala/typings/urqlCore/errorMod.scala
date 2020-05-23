@@ -2,6 +2,7 @@ package typings.urqlCore
 
 import typings.graphql.mod.GraphQLError
 import typings.std.Error
+import typings.urqlCore.anon.NetworkError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation._
 object errorMod extends js.Object {
   @js.native
   class CombinedError protected () extends Error {
-    def this(hasNetworkErrorGraphQLErrorsResponse: AnonNetworkError) = this()
+    def this(hasNetworkErrorGraphQLErrorsResponse: NetworkError) = this()
     var graphQLErrors: js.Array[GraphQLError] = js.native
     /* CompleteClass */
     override var message: String = js.native

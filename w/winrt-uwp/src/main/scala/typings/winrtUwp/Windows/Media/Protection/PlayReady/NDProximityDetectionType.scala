@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object NDProximityDetectionType extends js.Object {
   /** Proximity detection uses the UDP transport protocol. */
   @js.native
   sealed trait udp extends NDProximityDetectionType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NDProximityDetectionType with Double] = js.native
-  /* 1 */ @js.native
-  object tcp extends TopLevel[tcp with Double]
-  
-  /* 2 */ @js.native
-  object transportAgnostic extends TopLevel[transportAgnostic with Double]
-  
-  /* 0 */ @js.native
-  object udp extends TopLevel[udp with Double]
   
 }
 

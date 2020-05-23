@@ -18,8 +18,8 @@ object IsMobileOptions {
     ua: String | HttpRequestInterfaceMock = null
   ): IsMobileOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(featureDetect)) __obj.updateDynamic("featureDetect")(featureDetect.asInstanceOf[js.Any])
-    if (!js.isUndefined(tablet)) __obj.updateDynamic("tablet")(tablet.asInstanceOf[js.Any])
+    if (!js.isUndefined(featureDetect)) __obj.updateDynamic("featureDetect")(featureDetect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tablet)) __obj.updateDynamic("tablet")(tablet.get.asInstanceOf[js.Any])
     if (ua != null) __obj.updateDynamic("ua")(ua.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsMobileOptions]
   }

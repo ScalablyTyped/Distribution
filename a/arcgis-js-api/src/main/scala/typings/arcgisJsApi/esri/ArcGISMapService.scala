@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,7 +45,18 @@ trait ArcGISMapService extends js.Object {
   val version: Double
 }
 
-@JSGlobal("__esri.ArcGISMapService")
-@js.native
-object ArcGISMapService extends TopLevel[ArcGISMapServiceConstructor]
+object ArcGISMapService {
+  @scala.inline
+  def apply(
+    capabilities: ArcGISMapServiceCapabilities,
+    copyright: String,
+    fullExtent: Extent,
+    legendEnabled: Boolean,
+    spatialReference: SpatialReference,
+    version: Double
+  ): ArcGISMapService = {
+    val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any], copyright = copyright.asInstanceOf[js.Any], fullExtent = fullExtent.asInstanceOf[js.Any], legendEnabled = legendEnabled.asInstanceOf[js.Any], spatialReference = spatialReference.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ArcGISMapService]
+  }
+}
 

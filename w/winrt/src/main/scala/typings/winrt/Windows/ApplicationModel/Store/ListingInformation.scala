@@ -5,20 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.Store.ListingInformation")
-@js.native
-class ListingInformation () extends IListingInformation {
-  /* CompleteClass */
-  override var ageRating: Double = js.native
-  /* CompleteClass */
-  override var currentMarket: String = js.native
-  /* CompleteClass */
-  override var description: String = js.native
-  /* CompleteClass */
-  override var formattedPrice: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
-  /* CompleteClass */
-  override var productListings: IMapView[String, ProductListing] = js.native
+trait ListingInformation extends IListingInformation
+
+object ListingInformation {
+  @scala.inline
+  def apply(
+    ageRating: Double,
+    currentMarket: String,
+    description: String,
+    formattedPrice: String,
+    name: String,
+    productListings: IMapView[String, ProductListing]
+  ): ListingInformation = {
+    val __obj = js.Dynamic.literal(ageRating = ageRating.asInstanceOf[js.Any], currentMarket = currentMarket.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], formattedPrice = formattedPrice.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], productListings = productListings.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListingInformation]
+  }
 }
 

@@ -16,7 +16,7 @@ object RTCRtpContributingSource {
   @scala.inline
   def apply(source: Double, voiceActivityFlag: js.UndefOr[Boolean] = js.undefined): RTCRtpContributingSource = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
-    if (!js.isUndefined(voiceActivityFlag)) __obj.updateDynamic("voiceActivityFlag")(voiceActivityFlag.asInstanceOf[js.Any])
+    if (!js.isUndefined(voiceActivityFlag)) __obj.updateDynamic("voiceActivityFlag")(voiceActivityFlag.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpContributingSource]
   }
 }

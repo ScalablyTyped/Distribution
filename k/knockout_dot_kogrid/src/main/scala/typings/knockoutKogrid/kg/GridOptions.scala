@@ -103,17 +103,17 @@ object GridOptions {
     beforeSelectionChange: /* row */ Row[EntityType] => Boolean = null,
     canSelectRows: js.UndefOr[Boolean] = js.undefined,
     columnDefs: js.Array[ColumnDef] | KnockoutObservable[js.Array[ColumnDef]] = null,
-    columnWidth: Int | Double = null,
+    columnWidth: js.UndefOr[Double] = js.undefined,
     data: KnockoutObservableArray[EntityType] = null,
     enableColumnResize: js.UndefOr[Boolean] = js.undefined,
     enablePaging: js.UndefOr[Boolean] = js.undefined,
     enableRowReordering: js.UndefOr[Boolean] = js.undefined,
     enableSorting: js.UndefOr[Boolean] = js.undefined,
     filterOptions: FilterOptions = null,
-    footerRowHeight: Int | Double = null,
+    footerRowHeight: js.UndefOr[Double] = js.undefined,
     footerVisible: js.UndefOr[Boolean] = js.undefined,
     groups: js.Array[String] = null,
-    headerRowHeight: Int | Double = null,
+    headerRowHeight: js.UndefOr[Double] = js.undefined,
     headerRowTemplate: String | JQueryGenericPromise[String] = null,
     jqueryUIDraggable: js.UndefOr[Boolean] = js.undefined,
     jqueryUITheme: js.UndefOr[Boolean] = js.undefined,
@@ -122,7 +122,7 @@ object GridOptions {
     multiSelect: js.UndefOr[Boolean] = js.undefined,
     pagingOptions: PagingOptions = null,
     plugins: js.Array[Plugin[EntityType]] = null,
-    rowHeight: Int | Double = null,
+    rowHeight: js.UndefOr[Double] = js.undefined,
     rowTemplate: String | JQueryGenericPromise[String] = null,
     selectAllState: KnockoutObservable[Boolean] = null,
     selectWithCheckboxOnly: js.UndefOr[Boolean] = js.undefined,
@@ -131,44 +131,44 @@ object GridOptions {
     showFilter: js.UndefOr[Boolean] = js.undefined,
     showGroupPanel: js.UndefOr[Boolean] = js.undefined,
     sortInfo: SortInfo | KnockoutObservable[SortInfo] = null,
-    tabIndex: Int | Double = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
     useExternalSorting: js.UndefOr[Boolean] = js.undefined
   ): GridOptions[EntityType] = {
     val __obj = js.Dynamic.literal(displaySelectionCheckbox = displaySelectionCheckbox.asInstanceOf[js.Any])
     if (afterSelectionChange != null) __obj.updateDynamic("afterSelectionChange")(js.Any.fromFunction1(afterSelectionChange))
     if (beforeSelectionChange != null) __obj.updateDynamic("beforeSelectionChange")(js.Any.fromFunction1(beforeSelectionChange))
-    if (!js.isUndefined(canSelectRows)) __obj.updateDynamic("canSelectRows")(canSelectRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(canSelectRows)) __obj.updateDynamic("canSelectRows")(canSelectRows.get.asInstanceOf[js.Any])
     if (columnDefs != null) __obj.updateDynamic("columnDefs")(columnDefs.asInstanceOf[js.Any])
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnWidth)) __obj.updateDynamic("columnWidth")(columnWidth.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableColumnResize)) __obj.updateDynamic("enableColumnResize")(enableColumnResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePaging)) __obj.updateDynamic("enablePaging")(enablePaging.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRowReordering)) __obj.updateDynamic("enableRowReordering")(enableRowReordering.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSorting)) __obj.updateDynamic("enableSorting")(enableSorting.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableColumnResize)) __obj.updateDynamic("enableColumnResize")(enableColumnResize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePaging)) __obj.updateDynamic("enablePaging")(enablePaging.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRowReordering)) __obj.updateDynamic("enableRowReordering")(enableRowReordering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSorting)) __obj.updateDynamic("enableSorting")(enableSorting.get.asInstanceOf[js.Any])
     if (filterOptions != null) __obj.updateDynamic("filterOptions")(filterOptions.asInstanceOf[js.Any])
-    if (footerRowHeight != null) __obj.updateDynamic("footerRowHeight")(footerRowHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(footerVisible)) __obj.updateDynamic("footerVisible")(footerVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(footerRowHeight)) __obj.updateDynamic("footerRowHeight")(footerRowHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(footerVisible)) __obj.updateDynamic("footerVisible")(footerVisible.get.asInstanceOf[js.Any])
     if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
-    if (headerRowHeight != null) __obj.updateDynamic("headerRowHeight")(headerRowHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerRowHeight)) __obj.updateDynamic("headerRowHeight")(headerRowHeight.get.asInstanceOf[js.Any])
     if (headerRowTemplate != null) __obj.updateDynamic("headerRowTemplate")(headerRowTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(jqueryUIDraggable)) __obj.updateDynamic("jqueryUIDraggable")(jqueryUIDraggable.asInstanceOf[js.Any])
-    if (!js.isUndefined(jqueryUITheme)) __obj.updateDynamic("jqueryUITheme")(jqueryUITheme.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepLastSelected)) __obj.updateDynamic("keepLastSelected")(keepLastSelected.asInstanceOf[js.Any])
+    if (!js.isUndefined(jqueryUIDraggable)) __obj.updateDynamic("jqueryUIDraggable")(jqueryUIDraggable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(jqueryUITheme)) __obj.updateDynamic("jqueryUITheme")(jqueryUITheme.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepLastSelected)) __obj.updateDynamic("keepLastSelected")(keepLastSelected.get.asInstanceOf[js.Any])
     if (maintainColumnRatios != null) __obj.updateDynamic("maintainColumnRatios")(maintainColumnRatios.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect.get.asInstanceOf[js.Any])
     if (pagingOptions != null) __obj.updateDynamic("pagingOptions")(pagingOptions.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowHeight)) __obj.updateDynamic("rowHeight")(rowHeight.get.asInstanceOf[js.Any])
     if (rowTemplate != null) __obj.updateDynamic("rowTemplate")(rowTemplate.asInstanceOf[js.Any])
     if (selectAllState != null) __obj.updateDynamic("selectAllState")(selectAllState.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectWithCheckboxOnly)) __obj.updateDynamic("selectWithCheckboxOnly")(selectWithCheckboxOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectWithCheckboxOnly)) __obj.updateDynamic("selectWithCheckboxOnly")(selectWithCheckboxOnly.get.asInstanceOf[js.Any])
     if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems.asInstanceOf[js.Any])
-    if (!js.isUndefined(showColumnMenu)) __obj.updateDynamic("showColumnMenu")(showColumnMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFilter)) __obj.updateDynamic("showFilter")(showFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(showGroupPanel)) __obj.updateDynamic("showGroupPanel")(showGroupPanel.asInstanceOf[js.Any])
+    if (!js.isUndefined(showColumnMenu)) __obj.updateDynamic("showColumnMenu")(showColumnMenu.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFilter)) __obj.updateDynamic("showFilter")(showFilter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showGroupPanel)) __obj.updateDynamic("showGroupPanel")(showGroupPanel.get.asInstanceOf[js.Any])
     if (sortInfo != null) __obj.updateDynamic("sortInfo")(sortInfo.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(useExternalSorting)) __obj.updateDynamic("useExternalSorting")(useExternalSorting.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useExternalSorting)) __obj.updateDynamic("useExternalSorting")(useExternalSorting.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridOptions[EntityType]]
   }
 }

@@ -39,16 +39,16 @@ trait TableRowData extends js.Object {
 object TableRowData {
   @scala.inline
   def apply(
-    cellCount: Int | Double = null,
+    cellCount: js.UndefOr[Double] = js.undefined,
     cells: js.Array[TableCellData] = null,
     id: String = null,
-    rowIndex: Int | Double = null
+    rowIndex: js.UndefOr[Double] = js.undefined
   ): TableRowData = {
     val __obj = js.Dynamic.literal()
-    if (cellCount != null) __obj.updateDynamic("cellCount")(cellCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellCount)) __obj.updateDynamic("cellCount")(cellCount.get.asInstanceOf[js.Any])
     if (cells != null) __obj.updateDynamic("cells")(cells.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableRowData]
   }
 }

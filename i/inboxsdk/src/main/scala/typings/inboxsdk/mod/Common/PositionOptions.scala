@@ -21,29 +21,29 @@ trait PositionOptions extends js.Object {
 object PositionOptions {
   @scala.inline
   def apply(
-    bottomBuffer: Int | Double = null,
-    buffer: Int | Double = null,
+    bottomBuffer: js.UndefOr[Double] = js.undefined,
+    buffer: js.UndefOr[Double] = js.undefined,
     forceHAlign: js.UndefOr[Boolean] = js.undefined,
     forcePosition: js.UndefOr[Boolean] = js.undefined,
     forceVAlign: js.UndefOr[Boolean] = js.undefined,
     hAlign: String = null,
-    leftBuffer: Int | Double = null,
+    leftBuffer: js.UndefOr[Double] = js.undefined,
     position: String = null,
-    rightBuffer: Int | Double = null,
-    topBuffer: Int | Double = null,
+    rightBuffer: js.UndefOr[Double] = js.undefined,
+    topBuffer: js.UndefOr[Double] = js.undefined,
     vAlign: String = null
   ): PositionOptions = {
     val __obj = js.Dynamic.literal()
-    if (bottomBuffer != null) __obj.updateDynamic("bottomBuffer")(bottomBuffer.asInstanceOf[js.Any])
-    if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceHAlign)) __obj.updateDynamic("forceHAlign")(forceHAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(forcePosition)) __obj.updateDynamic("forcePosition")(forcePosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceVAlign)) __obj.updateDynamic("forceVAlign")(forceVAlign.asInstanceOf[js.Any])
+    if (!js.isUndefined(bottomBuffer)) __obj.updateDynamic("bottomBuffer")(bottomBuffer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceHAlign)) __obj.updateDynamic("forceHAlign")(forceHAlign.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forcePosition)) __obj.updateDynamic("forcePosition")(forcePosition.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceVAlign)) __obj.updateDynamic("forceVAlign")(forceVAlign.get.asInstanceOf[js.Any])
     if (hAlign != null) __obj.updateDynamic("hAlign")(hAlign.asInstanceOf[js.Any])
-    if (leftBuffer != null) __obj.updateDynamic("leftBuffer")(leftBuffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(leftBuffer)) __obj.updateDynamic("leftBuffer")(leftBuffer.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (rightBuffer != null) __obj.updateDynamic("rightBuffer")(rightBuffer.asInstanceOf[js.Any])
-    if (topBuffer != null) __obj.updateDynamic("topBuffer")(topBuffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightBuffer)) __obj.updateDynamic("rightBuffer")(rightBuffer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(topBuffer)) __obj.updateDynamic("topBuffer")(topBuffer.get.asInstanceOf[js.Any])
     if (vAlign != null) __obj.updateDynamic("vAlign")(vAlign.asInstanceOf[js.Any])
     __obj.asInstanceOf[PositionOptions]
   }

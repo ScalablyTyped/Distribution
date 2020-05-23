@@ -49,24 +49,21 @@ import scala.scalajs.js.annotation._
   * @class
   * @memberof PIXI
   */
-@JSGlobal("PIXI.Runner")
-@js.native
-class Runner protected () extends js.Object {
-  def this(name: String) = this()
+trait Runner extends js.Object {
   /**
     * `true` if there are no this Runner contains no listeners
     *
     * @member {boolean}
     * @readonly
     */
-  val empty: Boolean = js.native
+  val empty: Boolean
   /**
     * The name of the runner.
     *
     * @member {string}
     * @readonly
     */
-  val name: String = js.native
+  val name: String
   /**
     * Add a listener to the Runner
     *
@@ -87,46 +84,65 @@ class Runner protected () extends js.Object {
     * @param {any} item - The object that will be listening.
     * @return {PIXI.Runner}
     */
-  def add(item: js.Any): Runner = js.native
+  def add(item: js.Any): Runner
   /**
     * Check to see if the listener is already in the Runner
     * @param {any} item - The listener that you would like to check.
     */
-  def contains(item: js.Any): Unit = js.native
+  def contains(item: js.Any): Unit
   /**
     * Remove all references, don't use after this.
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   /**
     * Alias for `emit`
     * @memberof PIXI.Runner#
     * @method dispatch
     * @see PIXI.Runner#emit
     */
-  def dispatch(): Unit = js.native
+  def dispatch(): Unit
   /**
     * Dispatch/Broadcast Runner to all listeners added to the queue.
     * @param {...any} params - optional parameters to pass to each listener
     * @return {PIXI.Runner}
     */
-  def emit(params: js.Any*): Runner = js.native
+  def emit(params: js.Any*): Runner
   /**
     * Remove a single listener from the dispatch queue.
     * @param {any} item - The listenr that you would like to remove.
     * @return {PIXI.Runner}
     */
-  def remove(item: js.Any): Runner = js.native
+  def remove(item: js.Any): Runner
   /**
     * Remove all listeners from the Runner
     * @return {PIXI.Runner}
     */
-  def removeAll(): Runner = js.native
+  def removeAll(): Runner
   /**
     * Alias for `emit`
     * @memberof PIXI.Runner#
     * @method run
     * @see PIXI.Runner#emit
     */
-  def run(): Unit = js.native
+  def run(): Unit
+}
+
+object Runner {
+  @scala.inline
+  def apply(
+    add: js.Any => Runner,
+    contains: js.Any => Unit,
+    destroy: () => Unit,
+    dispatch: () => Unit,
+    emit: /* repeated */ js.Any => Runner,
+    empty: Boolean,
+    name: String,
+    remove: js.Any => Runner,
+    removeAll: () => Runner,
+    run: () => Unit
+  ): Runner = {
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), contains = js.Any.fromFunction1(contains), destroy = js.Any.fromFunction0(destroy), dispatch = js.Any.fromFunction0(dispatch), emit = js.Any.fromFunction1(emit), empty = empty.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], remove = js.Any.fromFunction1(remove), removeAll = js.Any.fromFunction0(removeAll), run = js.Any.fromFunction0(run))
+    __obj.asInstanceOf[Runner]
+  }
 }
 

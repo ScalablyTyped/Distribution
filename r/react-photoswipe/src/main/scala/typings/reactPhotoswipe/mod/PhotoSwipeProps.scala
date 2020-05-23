@@ -2,8 +2,8 @@ package typings.reactPhotoswipe.mod
 
 import typings.photoswipe.mod.Item
 import typings.photoswipe.mod.Options
-import typings.reactPhotoswipe.AnonPrevent
-import typings.reactPhotoswipe.AnonX
+import typings.reactPhotoswipe.anon.Prevent
+import typings.reactPhotoswipe.anon.X
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -130,7 +130,7 @@ trait PhotoSwipeProps extends js.Object {
       /* instance */ PhotoSwipe, 
       /* e */ MouseEvent, 
       /* isDown */ Boolean, 
-      /* preventObj */ AnonPrevent, 
+      /* preventObj */ Prevent, 
       Unit
     ]
   ] = js.undefined
@@ -168,7 +168,7 @@ trait PhotoSwipeProps extends js.Object {
     * Look at the "Implementing inline gallery display" FAQ section for more info.
     * {@link https://photoswipe.com/documentation/api.html}
     */
-  var updateScrollOffset: js.UndefOr[js.Function2[/* instance */ PhotoSwipe, /* _offset */ AnonX, Unit]] = js.undefined
+  var updateScrollOffset: js.UndefOr[js.Function2[/* instance */ PhotoSwipe, /* _offset */ X, Unit]] = js.undefined
 }
 
 object PhotoSwipeProps {
@@ -192,11 +192,11 @@ object PhotoSwipeProps {
     onClose: () => Unit = null,
     options: Options = null,
     parseVerticalMargin: (/* instance */ PhotoSwipe, /* item */ Item) => Unit = null,
-    preventDragEvent: (/* instance */ PhotoSwipe, /* e */ MouseEvent, /* isDown */ Boolean, /* preventObj */ AnonPrevent) => Unit = null,
+    preventDragEvent: (/* instance */ PhotoSwipe, /* e */ MouseEvent, /* isDown */ Boolean, /* preventObj */ Prevent) => Unit = null,
     resize: /* instance */ PhotoSwipe => Unit = null,
     shareLinkClick: (/* instance */ PhotoSwipe, /* e */ MouseEvent, /* item */ Item) => Unit = null,
     unbindEvents: /* instance */ PhotoSwipe => Unit = null,
-    updateScrollOffset: (/* instance */ PhotoSwipe, /* _offset */ AnonX) => Unit = null
+    updateScrollOffset: (/* instance */ PhotoSwipe, /* _offset */ X) => Unit = null
   ): PhotoSwipeProps = {
     val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
     if (afterChange != null) __obj.updateDynamic("afterChange")(js.Any.fromFunction1(afterChange))

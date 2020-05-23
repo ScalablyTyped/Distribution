@@ -1,7 +1,6 @@
 package typings.reactNativeNavigation.optionsMod
 
 import typings.reactNative.mod.ImageRequireSource
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -73,13 +72,13 @@ trait Options extends js.Object {
     */
   var modalTransitionStyle: js.UndefOr[OptionsModalTransitionStyle] = js.undefined
   /**
+    * Configure Android's NavigationBar
+    */
+  var navigationBar: js.UndefOr[NavigationBarOptions] = js.undefined
+  /**
     * Configure the overlay
     */
   var overlay: js.UndefOr[OverlayOptions] = js.undefined
-  /**
-    * Props to pass to a component
-    */
-  var passProps: js.UndefOr[Record[String, _]] = js.undefined
   /**
     * Enable or disable swipe back to pop gesture
     * #### (iOS specific)
@@ -118,7 +117,7 @@ object Options {
   @scala.inline
   def apply(
     animations: AnimationOptions = null,
-    backgroundImage: Int | Double = null,
+    backgroundImage: js.UndefOr[ImageRequireSource] = js.undefined,
     blurOnUnmount: js.UndefOr[Boolean] = js.undefined,
     bottomTab: OptionsBottomTab = null,
     bottomTabs: OptionsBottomTabs = null,
@@ -127,11 +126,11 @@ object Options {
     modal: ModalOptions = null,
     modalPresentationStyle: OptionsModalPresentationStyle = null,
     modalTransitionStyle: OptionsModalTransitionStyle = null,
+    navigationBar: NavigationBarOptions = null,
     overlay: OverlayOptions = null,
-    passProps: Record[String, _] = null,
     popGesture: js.UndefOr[Boolean] = js.undefined,
     preview: OptionsPreview = null,
-    rootBackgroundImage: Int | Double = null,
+    rootBackgroundImage: js.UndefOr[ImageRequireSource] = js.undefined,
     sideMenu: OptionsSideMenu = null,
     splitView: OptionsSplitView = null,
     statusBar: OptionsStatusBar = null,
@@ -139,8 +138,8 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (animations != null) __obj.updateDynamic("animations")(animations.asInstanceOf[js.Any])
-    if (backgroundImage != null) __obj.updateDynamic("backgroundImage")(backgroundImage.asInstanceOf[js.Any])
-    if (!js.isUndefined(blurOnUnmount)) __obj.updateDynamic("blurOnUnmount")(blurOnUnmount.asInstanceOf[js.Any])
+    if (!js.isUndefined(backgroundImage)) __obj.updateDynamic("backgroundImage")(backgroundImage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(blurOnUnmount)) __obj.updateDynamic("blurOnUnmount")(blurOnUnmount.get.asInstanceOf[js.Any])
     if (bottomTab != null) __obj.updateDynamic("bottomTab")(bottomTab.asInstanceOf[js.Any])
     if (bottomTabs != null) __obj.updateDynamic("bottomTabs")(bottomTabs.asInstanceOf[js.Any])
     if (fab != null) __obj.updateDynamic("fab")(fab.asInstanceOf[js.Any])
@@ -148,11 +147,11 @@ object Options {
     if (modal != null) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
     if (modalPresentationStyle != null) __obj.updateDynamic("modalPresentationStyle")(modalPresentationStyle.asInstanceOf[js.Any])
     if (modalTransitionStyle != null) __obj.updateDynamic("modalTransitionStyle")(modalTransitionStyle.asInstanceOf[js.Any])
+    if (navigationBar != null) __obj.updateDynamic("navigationBar")(navigationBar.asInstanceOf[js.Any])
     if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
-    if (passProps != null) __obj.updateDynamic("passProps")(passProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(popGesture)) __obj.updateDynamic("popGesture")(popGesture.asInstanceOf[js.Any])
+    if (!js.isUndefined(popGesture)) __obj.updateDynamic("popGesture")(popGesture.get.asInstanceOf[js.Any])
     if (preview != null) __obj.updateDynamic("preview")(preview.asInstanceOf[js.Any])
-    if (rootBackgroundImage != null) __obj.updateDynamic("rootBackgroundImage")(rootBackgroundImage.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootBackgroundImage)) __obj.updateDynamic("rootBackgroundImage")(rootBackgroundImage.get.asInstanceOf[js.Any])
     if (sideMenu != null) __obj.updateDynamic("sideMenu")(sideMenu.asInstanceOf[js.Any])
     if (splitView != null) __obj.updateDynamic("splitView")(splitView.asInstanceOf[js.Any])
     if (statusBar != null) __obj.updateDynamic("statusBar")(statusBar.asInstanceOf[js.Any])

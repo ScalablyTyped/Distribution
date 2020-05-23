@@ -32,15 +32,15 @@ object GoogleActionsV2UiElementsImage {
   @scala.inline
   def apply(
     accessibilityText: String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     url: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): GoogleActionsV2UiElementsImage = {
     val __obj = js.Dynamic.literal()
     if (accessibilityText != null) __obj.updateDynamic("accessibilityText")(accessibilityText.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2UiElementsImage]
   }
 }

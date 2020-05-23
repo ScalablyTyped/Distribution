@@ -32,47 +32,47 @@ object ChannelEdit {
   @scala.inline
   def apply(
     channel_codec: Codec = null,
-    channel_codec_is_unencrypted: Int | Double = null,
-    channel_codec_quality: Int | Double = null,
+    channel_codec_is_unencrypted: js.UndefOr[Double] = js.undefined,
+    channel_codec_quality: js.UndefOr[Double] = js.undefined,
     channel_description: String = null,
-    channel_flag_default: Int | Double = null,
-    channel_flag_maxclients_unlimited: Int | Double = null,
-    channel_flag_maxfamilyclients_inherited: Int | Double = null,
-    channel_flag_permanent: Int | Double = null,
-    channel_flag_semi_permanent: Int | Double = null,
-    channel_flag_temporary: Int | Double = null,
-    channel_maxclients: Int | Double = null,
-    channel_maxfamilyclients: Int | Double = null,
+    channel_flag_default: js.UndefOr[Double] = js.undefined,
+    channel_flag_maxclients_unlimited: js.UndefOr[Double] = js.undefined,
+    channel_flag_maxfamilyclients_inherited: js.UndefOr[Double] = js.undefined,
+    channel_flag_permanent: js.UndefOr[Double] = js.undefined,
+    channel_flag_semi_permanent: js.UndefOr[Double] = js.undefined,
+    channel_flag_temporary: js.UndefOr[Double] = js.undefined,
+    channel_maxclients: js.UndefOr[Double] = js.undefined,
+    channel_maxfamilyclients: js.UndefOr[Double] = js.undefined,
     channel_name: String = null,
     channel_name_phonetic: String = null,
-    channel_needed_talk_power: Int | Double = null,
-    channel_order: Int | Double = null,
+    channel_needed_talk_power: js.UndefOr[Double] = js.undefined,
+    channel_order: js.UndefOr[Double] = js.undefined,
     channel_password: String = null,
     channel_topic: String = null,
-    cid: Int | Double = null,
-    cpid: Int | Double = null
+    cid: js.UndefOr[Double] = js.undefined,
+    cpid: js.UndefOr[Double] = js.undefined
   ): ChannelEdit = {
     val __obj = js.Dynamic.literal()
     if (channel_codec != null) __obj.updateDynamic("channel_codec")(channel_codec.asInstanceOf[js.Any])
-    if (channel_codec_is_unencrypted != null) __obj.updateDynamic("channel_codec_is_unencrypted")(channel_codec_is_unencrypted.asInstanceOf[js.Any])
-    if (channel_codec_quality != null) __obj.updateDynamic("channel_codec_quality")(channel_codec_quality.asInstanceOf[js.Any])
+    if (!js.isUndefined(channel_codec_is_unencrypted)) __obj.updateDynamic("channel_codec_is_unencrypted")(channel_codec_is_unencrypted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(channel_codec_quality)) __obj.updateDynamic("channel_codec_quality")(channel_codec_quality.get.asInstanceOf[js.Any])
     if (channel_description != null) __obj.updateDynamic("channel_description")(channel_description.asInstanceOf[js.Any])
-    if (channel_flag_default != null) __obj.updateDynamic("channel_flag_default")(channel_flag_default.asInstanceOf[js.Any])
-    if (channel_flag_maxclients_unlimited != null) __obj.updateDynamic("channel_flag_maxclients_unlimited")(channel_flag_maxclients_unlimited.asInstanceOf[js.Any])
-    if (channel_flag_maxfamilyclients_inherited != null) __obj.updateDynamic("channel_flag_maxfamilyclients_inherited")(channel_flag_maxfamilyclients_inherited.asInstanceOf[js.Any])
-    if (channel_flag_permanent != null) __obj.updateDynamic("channel_flag_permanent")(channel_flag_permanent.asInstanceOf[js.Any])
-    if (channel_flag_semi_permanent != null) __obj.updateDynamic("channel_flag_semi_permanent")(channel_flag_semi_permanent.asInstanceOf[js.Any])
-    if (channel_flag_temporary != null) __obj.updateDynamic("channel_flag_temporary")(channel_flag_temporary.asInstanceOf[js.Any])
-    if (channel_maxclients != null) __obj.updateDynamic("channel_maxclients")(channel_maxclients.asInstanceOf[js.Any])
-    if (channel_maxfamilyclients != null) __obj.updateDynamic("channel_maxfamilyclients")(channel_maxfamilyclients.asInstanceOf[js.Any])
+    if (!js.isUndefined(channel_flag_default)) __obj.updateDynamic("channel_flag_default")(channel_flag_default.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(channel_flag_maxclients_unlimited)) __obj.updateDynamic("channel_flag_maxclients_unlimited")(channel_flag_maxclients_unlimited.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(channel_flag_maxfamilyclients_inherited)) __obj.updateDynamic("channel_flag_maxfamilyclients_inherited")(channel_flag_maxfamilyclients_inherited.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(channel_flag_permanent)) __obj.updateDynamic("channel_flag_permanent")(channel_flag_permanent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(channel_flag_semi_permanent)) __obj.updateDynamic("channel_flag_semi_permanent")(channel_flag_semi_permanent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(channel_flag_temporary)) __obj.updateDynamic("channel_flag_temporary")(channel_flag_temporary.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(channel_maxclients)) __obj.updateDynamic("channel_maxclients")(channel_maxclients.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(channel_maxfamilyclients)) __obj.updateDynamic("channel_maxfamilyclients")(channel_maxfamilyclients.get.asInstanceOf[js.Any])
     if (channel_name != null) __obj.updateDynamic("channel_name")(channel_name.asInstanceOf[js.Any])
     if (channel_name_phonetic != null) __obj.updateDynamic("channel_name_phonetic")(channel_name_phonetic.asInstanceOf[js.Any])
-    if (channel_needed_talk_power != null) __obj.updateDynamic("channel_needed_talk_power")(channel_needed_talk_power.asInstanceOf[js.Any])
-    if (channel_order != null) __obj.updateDynamic("channel_order")(channel_order.asInstanceOf[js.Any])
+    if (!js.isUndefined(channel_needed_talk_power)) __obj.updateDynamic("channel_needed_talk_power")(channel_needed_talk_power.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(channel_order)) __obj.updateDynamic("channel_order")(channel_order.get.asInstanceOf[js.Any])
     if (channel_password != null) __obj.updateDynamic("channel_password")(channel_password.asInstanceOf[js.Any])
     if (channel_topic != null) __obj.updateDynamic("channel_topic")(channel_topic.asInstanceOf[js.Any])
-    if (cid != null) __obj.updateDynamic("cid")(cid.asInstanceOf[js.Any])
-    if (cpid != null) __obj.updateDynamic("cpid")(cpid.asInstanceOf[js.Any])
+    if (!js.isUndefined(cid)) __obj.updateDynamic("cid")(cid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cpid)) __obj.updateDynamic("cpid")(cpid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelEdit]
   }
 }

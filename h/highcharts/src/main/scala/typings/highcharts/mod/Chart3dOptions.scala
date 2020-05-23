@@ -48,24 +48,24 @@ trait Chart3dOptions extends js.Object {
 object Chart3dOptions {
   @scala.inline
   def apply(
-    alpha: Int | Double = null,
-    axisLabelPosition: auto = null,
-    beta: Int | Double = null,
-    depth: Int | Double = null,
+    alpha: js.UndefOr[Double] = js.undefined,
+    axisLabelPosition: js.UndefOr[Null | auto] = js.undefined,
+    beta: js.UndefOr[Double] = js.undefined,
+    depth: js.UndefOr[Double] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
     fitToPlot: js.UndefOr[Boolean] = js.undefined,
     frame: Chart3dFrameOptions = null,
-    viewDistance: Int | Double = null
+    viewDistance: js.UndefOr[Double] = js.undefined
   ): Chart3dOptions = {
     val __obj = js.Dynamic.literal()
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    if (axisLabelPosition != null) __obj.updateDynamic("axisLabelPosition")(axisLabelPosition.asInstanceOf[js.Any])
-    if (beta != null) __obj.updateDynamic("beta")(beta.asInstanceOf[js.Any])
-    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(fitToPlot)) __obj.updateDynamic("fitToPlot")(fitToPlot.asInstanceOf[js.Any])
+    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(axisLabelPosition)) __obj.updateDynamic("axisLabelPosition")(axisLabelPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(beta)) __obj.updateDynamic("beta")(beta.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fitToPlot)) __obj.updateDynamic("fitToPlot")(fitToPlot.get.asInstanceOf[js.Any])
     if (frame != null) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
-    if (viewDistance != null) __obj.updateDynamic("viewDistance")(viewDistance.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewDistance)) __obj.updateDynamic("viewDistance")(viewDistance.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Chart3dOptions]
   }
 }

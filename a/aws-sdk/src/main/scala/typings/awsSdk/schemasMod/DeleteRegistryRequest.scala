@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DeleteRegistryRequest extends js.Object {
+  /**
+    * The name of the registry.
+    */
   var RegistryName: string = js.native
 }
 

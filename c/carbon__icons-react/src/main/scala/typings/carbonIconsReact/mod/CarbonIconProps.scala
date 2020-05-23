@@ -68,7 +68,7 @@ import typings.carbonIconsReact.carbonIconsReactStrings.time
 import typings.carbonIconsReact.carbonIconsReactStrings.tree
 import typings.carbonIconsReact.carbonIconsReactStrings.vertical
 import typings.carbonIconsReact.carbonIconsReactStrings.yes
-import typings.react.AnonHtml
+import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
 import typings.react.mod.Booleanish
@@ -102,7 +102,7 @@ import typings.react.mod.TransitionEventHandler
 import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEventHandler
-import typings.std.Event_
+import typings.std.Event
 import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -200,7 +200,7 @@ trait CarbonIconProps extends js.Object {
   var cx: js.UndefOr[Double | String] = js.undefined
   var cy: js.UndefOr[Double | String] = js.undefined
   var d: js.UndefOr[String] = js.undefined
-  var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.undefined
+  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
   var decelerate: js.UndefOr[Double | String] = js.undefined
   var descent: js.UndefOr[Double | String] = js.undefined
   var diffuseConstant: js.UndefOr[Double | String] = js.undefined
@@ -520,9 +520,9 @@ object CarbonIconProps {
     `aria-autocomplete`: none | `inline` | list | both = null,
     `aria-busy`: js.UndefOr[Boolean] = js.undefined,
     `aria-checked`: Boolean | mixed = null,
-    `aria-colcount`: Int | Double = null,
-    `aria-colindex`: Int | Double = null,
-    `aria-colspan`: Int | Double = null,
+    `aria-colcount`: js.UndefOr[Double] = js.undefined,
+    `aria-colindex`: js.UndefOr[Double] = js.undefined,
+    `aria-colspan`: js.UndefOr[Double] = js.undefined,
     `aria-controls`: String = null,
     `aria-current`: Boolean | page | step | location | date | time = null,
     `aria-describedby`: String = null,
@@ -539,7 +539,7 @@ object CarbonIconProps {
     `aria-keyshortcuts`: String = null,
     `aria-label`: String = null,
     `aria-labelledby`: String = null,
-    `aria-level`: Int | Double = null,
+    `aria-level`: js.UndefOr[Double] = js.undefined,
     `aria-live`: off | assertive | polite = null,
     `aria-modal`: js.UndefOr[Boolean] = js.undefined,
     `aria-multiline`: js.UndefOr[Boolean] = js.undefined,
@@ -547,26 +547,26 @@ object CarbonIconProps {
     `aria-orientation`: horizontal | vertical = null,
     `aria-owns`: String = null,
     `aria-placeholder`: String = null,
-    `aria-posinset`: Int | Double = null,
+    `aria-posinset`: js.UndefOr[Double] = js.undefined,
     `aria-pressed`: Boolean | mixed = null,
     `aria-readonly`: js.UndefOr[Boolean] = js.undefined,
     `aria-relevant`: additions | (`additions text`) | all | removals | text = null,
     `aria-required`: js.UndefOr[Boolean] = js.undefined,
     `aria-roledescription`: String = null,
-    `aria-rowcount`: Int | Double = null,
-    `aria-rowindex`: Int | Double = null,
-    `aria-rowspan`: Int | Double = null,
+    `aria-rowcount`: js.UndefOr[Double] = js.undefined,
+    `aria-rowindex`: js.UndefOr[Double] = js.undefined,
+    `aria-rowspan`: js.UndefOr[Double] = js.undefined,
     `aria-selected`: js.UndefOr[Boolean] = js.undefined,
-    `aria-setsize`: Int | Double = null,
+    `aria-setsize`: js.UndefOr[Double] = js.undefined,
     `aria-sort`: none | ascending | descending | other = null,
-    `aria-valuemax`: Int | Double = null,
-    `aria-valuemin`: Int | Double = null,
-    `aria-valuenow`: Int | Double = null,
+    `aria-valuemax`: js.UndefOr[Double] = js.undefined,
+    `aria-valuemin`: js.UndefOr[Double] = js.undefined,
+    `aria-valuenow`: js.UndefOr[Double] = js.undefined,
     `aria-valuetext`: String = null,
     ascent: Double | String = null,
     attributeName: String = null,
     attributeType: String = null,
-    autoReverse: js.UndefOr[Boolean] = js.undefined,
+    autoReverse: js.UndefOr[Booleanish] = js.undefined,
     azimuth: Double | String = null,
     baseFrequency: Double | String = null,
     baseProfile: Double | String = null,
@@ -595,7 +595,7 @@ object CarbonIconProps {
     cx: Double | String = null,
     cy: Double | String = null,
     d: String = null,
-    dangerouslySetInnerHTML: AnonHtml = null,
+    dangerouslySetInnerHTML: Html = null,
     decelerate: Double | String = null,
     descent: Double | String = null,
     diffuseConstant: Double | String = null,
@@ -611,7 +611,7 @@ object CarbonIconProps {
     enableBackground: Double | String = null,
     end: Double | String = null,
     exponent: Double | String = null,
-    externalResourcesRequired: js.UndefOr[Boolean] = js.undefined,
+    externalResourcesRequired: js.UndefOr[Booleanish] = js.undefined,
     fill: String = null,
     fillOpacity: Double | String = null,
     fillRule: nonzero | evenodd | inherit = null,
@@ -641,7 +641,7 @@ object CarbonIconProps {
     gradientTransform: String = null,
     gradientUnits: String = null,
     hanging: Double | String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     horizAdvX: Double | String = null,
     horizOriginX: Double | String = null,
     href: String = null,
@@ -687,15 +687,15 @@ object CarbonIconProps {
     name: String = null,
     numOctaves: Double | String = null,
     offset: Double | String = null,
-    onAbort: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onAbort: SyntheticEvent[SVGElement, Event] => Unit = null,
     onAnimationEnd: AnimationEvent[SVGElement] => Unit = null,
     onAnimationIteration: AnimationEvent[SVGElement] => Unit = null,
     onAnimationStart: AnimationEvent[SVGElement] => Unit = null,
     onAuxClick: MouseEvent[SVGElement, NativeMouseEvent] => Unit = null,
     onBeforeInput: FormEvent[SVGElement] => Unit = null,
     onBlur: FocusEvent[SVGElement] => Unit = null,
-    onCanPlay: SyntheticEvent[SVGElement, Event_] => Unit = null,
-    onCanPlayThrough: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onCanPlay: SyntheticEvent[SVGElement, Event] => Unit = null,
+    onCanPlayThrough: SyntheticEvent[SVGElement, Event] => Unit = null,
     onChange: FormEvent[SVGElement] => Unit = null,
     onClick: MouseEvent[SVGElement, NativeMouseEvent] => Unit = null,
     onCompositionEnd: CompositionEvent[SVGElement] => Unit = null,
@@ -713,21 +713,21 @@ object CarbonIconProps {
     onDragOver: DragEvent[SVGElement] => Unit = null,
     onDragStart: DragEvent[SVGElement] => Unit = null,
     onDrop: DragEvent[SVGElement] => Unit = null,
-    onDurationChange: SyntheticEvent[SVGElement, Event_] => Unit = null,
-    onEmptied: SyntheticEvent[SVGElement, Event_] => Unit = null,
-    onEncrypted: SyntheticEvent[SVGElement, Event_] => Unit = null,
-    onEnded: SyntheticEvent[SVGElement, Event_] => Unit = null,
-    onError: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onDurationChange: SyntheticEvent[SVGElement, Event] => Unit = null,
+    onEmptied: SyntheticEvent[SVGElement, Event] => Unit = null,
+    onEncrypted: SyntheticEvent[SVGElement, Event] => Unit = null,
+    onEnded: SyntheticEvent[SVGElement, Event] => Unit = null,
+    onError: SyntheticEvent[SVGElement, Event] => Unit = null,
     onFocus: FocusEvent[SVGElement] => Unit = null,
     onInput: FormEvent[SVGElement] => Unit = null,
     onInvalid: FormEvent[SVGElement] => Unit = null,
     onKeyDown: KeyboardEvent[SVGElement] => Unit = null,
     onKeyPress: KeyboardEvent[SVGElement] => Unit = null,
     onKeyUp: KeyboardEvent[SVGElement] => Unit = null,
-    onLoad: SyntheticEvent[SVGElement, Event_] => Unit = null,
-    onLoadStart: SyntheticEvent[SVGElement, Event_] => Unit = null,
-    onLoadedData: SyntheticEvent[SVGElement, Event_] => Unit = null,
-    onLoadedMetadata: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onLoad: SyntheticEvent[SVGElement, Event] => Unit = null,
+    onLoadStart: SyntheticEvent[SVGElement, Event] => Unit = null,
+    onLoadedData: SyntheticEvent[SVGElement, Event] => Unit = null,
+    onLoadedMetadata: SyntheticEvent[SVGElement, Event] => Unit = null,
     onMouseDown: MouseEvent[SVGElement, NativeMouseEvent] => Unit = null,
     onMouseEnter: MouseEvent[SVGElement, NativeMouseEvent] => Unit = null,
     onMouseLeave: MouseEvent[SVGElement, NativeMouseEvent] => Unit = null,
@@ -736,9 +736,9 @@ object CarbonIconProps {
     onMouseOver: MouseEvent[SVGElement, NativeMouseEvent] => Unit = null,
     onMouseUp: MouseEvent[SVGElement, NativeMouseEvent] => Unit = null,
     onPaste: ClipboardEvent[SVGElement] => Unit = null,
-    onPause: SyntheticEvent[SVGElement, Event_] => Unit = null,
-    onPlay: SyntheticEvent[SVGElement, Event_] => Unit = null,
-    onPlaying: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onPause: SyntheticEvent[SVGElement, Event] => Unit = null,
+    onPlay: SyntheticEvent[SVGElement, Event] => Unit = null,
+    onPlaying: SyntheticEvent[SVGElement, Event] => Unit = null,
     onPointerCancel: PointerEvent[SVGElement] => Unit = null,
     onPointerDown: PointerEvent[SVGElement] => Unit = null,
     onPointerEnter: PointerEvent[SVGElement] => Unit = null,
@@ -747,17 +747,17 @@ object CarbonIconProps {
     onPointerOut: PointerEvent[SVGElement] => Unit = null,
     onPointerOver: PointerEvent[SVGElement] => Unit = null,
     onPointerUp: PointerEvent[SVGElement] => Unit = null,
-    onProgress: SyntheticEvent[SVGElement, Event_] => Unit = null,
-    onRateChange: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onProgress: SyntheticEvent[SVGElement, Event] => Unit = null,
+    onRateChange: SyntheticEvent[SVGElement, Event] => Unit = null,
     onReset: FormEvent[SVGElement] => Unit = null,
     onScroll: UIEvent[SVGElement, NativeUIEvent] => Unit = null,
-    onSeeked: SyntheticEvent[SVGElement, Event_] => Unit = null,
-    onSeeking: SyntheticEvent[SVGElement, Event_] => Unit = null,
-    onSelect: SyntheticEvent[SVGElement, Event_] => Unit = null,
-    onStalled: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onSeeked: SyntheticEvent[SVGElement, Event] => Unit = null,
+    onSeeking: SyntheticEvent[SVGElement, Event] => Unit = null,
+    onSelect: SyntheticEvent[SVGElement, Event] => Unit = null,
+    onStalled: SyntheticEvent[SVGElement, Event] => Unit = null,
     onSubmit: FormEvent[SVGElement] => Unit = null,
-    onSuspend: SyntheticEvent[SVGElement, Event_] => Unit = null,
-    onTimeUpdate: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onSuspend: SyntheticEvent[SVGElement, Event] => Unit = null,
+    onTimeUpdate: SyntheticEvent[SVGElement, Event] => Unit = null,
     onTouchCancel: TouchEvent[SVGElement] => Unit = null,
     onTouchEnd: TouchEvent[SVGElement] => Unit = null,
     onTouchMove: TouchEvent[SVGElement] => Unit = null
@@ -772,57 +772,57 @@ object CarbonIconProps {
     if (amplitude != null) __obj.updateDynamic("amplitude")(amplitude.asInstanceOf[js.Any])
     if (arabicForm != null) __obj.updateDynamic("arabicForm")(arabicForm.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.get.asInstanceOf[js.Any])
     if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.get.asInstanceOf[js.Any])
     if (`aria-checked` != null) __obj.updateDynamic("aria-checked")(`aria-checked`.asInstanceOf[js.Any])
-    if (`aria-colcount` != null) __obj.updateDynamic("aria-colcount")(`aria-colcount`.asInstanceOf[js.Any])
-    if (`aria-colindex` != null) __obj.updateDynamic("aria-colindex")(`aria-colindex`.asInstanceOf[js.Any])
-    if (`aria-colspan` != null) __obj.updateDynamic("aria-colspan")(`aria-colspan`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-colcount`)) __obj.updateDynamic("aria-colcount")(`aria-colcount`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-colindex`)) __obj.updateDynamic("aria-colindex")(`aria-colindex`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-colspan`)) __obj.updateDynamic("aria-colspan")(`aria-colspan`.get.asInstanceOf[js.Any])
     if (`aria-controls` != null) __obj.updateDynamic("aria-controls")(`aria-controls`.asInstanceOf[js.Any])
     if (`aria-current` != null) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
     if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
     if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.get.asInstanceOf[js.Any])
     if (`aria-dropeffect` != null) __obj.updateDynamic("aria-dropeffect")(`aria-dropeffect`.asInstanceOf[js.Any])
     if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.get.asInstanceOf[js.Any])
     if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.get.asInstanceOf[js.Any])
     if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
     if (`aria-hidden` != null) __obj.updateDynamic("aria-hidden")(`aria-hidden`.asInstanceOf[js.Any])
     if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
     if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`.asInstanceOf[js.Any])
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
     if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (`aria-level` != null) __obj.updateDynamic("aria-level")(`aria-level`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-level`)) __obj.updateDynamic("aria-level")(`aria-level`.get.asInstanceOf[js.Any])
     if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.get.asInstanceOf[js.Any])
     if (`aria-orientation` != null) __obj.updateDynamic("aria-orientation")(`aria-orientation`.asInstanceOf[js.Any])
     if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`.asInstanceOf[js.Any])
     if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`.asInstanceOf[js.Any])
-    if (`aria-posinset` != null) __obj.updateDynamic("aria-posinset")(`aria-posinset`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-posinset`)) __obj.updateDynamic("aria-posinset")(`aria-posinset`.get.asInstanceOf[js.Any])
     if (`aria-pressed` != null) __obj.updateDynamic("aria-pressed")(`aria-pressed`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.get.asInstanceOf[js.Any])
     if (`aria-relevant` != null) __obj.updateDynamic("aria-relevant")(`aria-relevant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.get.asInstanceOf[js.Any])
     if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`.asInstanceOf[js.Any])
-    if (`aria-rowcount` != null) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.asInstanceOf[js.Any])
-    if (`aria-rowindex` != null) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.asInstanceOf[js.Any])
-    if (`aria-rowspan` != null) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.asInstanceOf[js.Any])
-    if (`aria-setsize` != null) __obj.updateDynamic("aria-setsize")(`aria-setsize`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-rowcount`)) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-rowindex`)) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-rowspan`)) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-setsize`)) __obj.updateDynamic("aria-setsize")(`aria-setsize`.get.asInstanceOf[js.Any])
     if (`aria-sort` != null) __obj.updateDynamic("aria-sort")(`aria-sort`.asInstanceOf[js.Any])
-    if (`aria-valuemax` != null) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.asInstanceOf[js.Any])
-    if (`aria-valuemin` != null) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.asInstanceOf[js.Any])
-    if (`aria-valuenow` != null) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-valuemax`)) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-valuemin`)) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-valuenow`)) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.get.asInstanceOf[js.Any])
     if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`.asInstanceOf[js.Any])
     if (ascent != null) __obj.updateDynamic("ascent")(ascent.asInstanceOf[js.Any])
     if (attributeName != null) __obj.updateDynamic("attributeName")(attributeName.asInstanceOf[js.Any])
     if (attributeType != null) __obj.updateDynamic("attributeType")(attributeType.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoReverse)) __obj.updateDynamic("autoReverse")(autoReverse.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoReverse)) __obj.updateDynamic("autoReverse")(autoReverse.get.asInstanceOf[js.Any])
     if (azimuth != null) __obj.updateDynamic("azimuth")(azimuth.asInstanceOf[js.Any])
     if (baseFrequency != null) __obj.updateDynamic("baseFrequency")(baseFrequency.asInstanceOf[js.Any])
     if (baseProfile != null) __obj.updateDynamic("baseProfile")(baseProfile.asInstanceOf[js.Any])
@@ -867,7 +867,7 @@ object CarbonIconProps {
     if (enableBackground != null) __obj.updateDynamic("enableBackground")(enableBackground.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (exponent != null) __obj.updateDynamic("exponent")(exponent.asInstanceOf[js.Any])
-    if (!js.isUndefined(externalResourcesRequired)) __obj.updateDynamic("externalResourcesRequired")(externalResourcesRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(externalResourcesRequired)) __obj.updateDynamic("externalResourcesRequired")(externalResourcesRequired.get.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (fillRule != null) __obj.updateDynamic("fillRule")(fillRule.asInstanceOf[js.Any])
@@ -897,7 +897,7 @@ object CarbonIconProps {
     if (gradientTransform != null) __obj.updateDynamic("gradientTransform")(gradientTransform.asInstanceOf[js.Any])
     if (gradientUnits != null) __obj.updateDynamic("gradientUnits")(gradientUnits.asInstanceOf[js.Any])
     if (hanging != null) __obj.updateDynamic("hanging")(hanging.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (horizAdvX != null) __obj.updateDynamic("horizAdvX")(horizAdvX.asInstanceOf[js.Any])
     if (horizOriginX != null) __obj.updateDynamic("horizOriginX")(horizOriginX.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 package typings.openpgp.mod
 
-import typings.openpgp.AnonAlgorithm
+import typings.openpgp.anon.Algorithm
 import typings.openpgp.mod.key.Key
 import typings.openpgp.mod.message.Message
 import typings.openpgp.mod.signature.Signature
@@ -42,7 +42,7 @@ trait DecryptOptions extends js.Object {
   /**
     * (optional) session keys in the form: { data:Uint8Array, algorithm:String }
     */
-  var sessionKeys: js.UndefOr[AnonAlgorithm | js.Array[AnonAlgorithm]] = js.undefined
+  var sessionKeys: js.UndefOr[Algorithm | js.Array[Algorithm]] = js.undefined
   /**
     * (optional) detached signature for verification
     */
@@ -62,7 +62,7 @@ object DecryptOptions {
     passwords: String | js.Array[String] = null,
     privateKeys: Key | js.Array[Key] = null,
     publicKeys: Key | js.Array[Key] = null,
-    sessionKeys: AnonAlgorithm | js.Array[AnonAlgorithm] = null,
+    sessionKeys: Algorithm | js.Array[Algorithm] = null,
     signature: Signature = null,
     streaming: web | node | `false` = null
   ): DecryptOptions = {

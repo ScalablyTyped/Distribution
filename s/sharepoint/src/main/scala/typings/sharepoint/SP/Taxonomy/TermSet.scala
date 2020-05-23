@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Taxonomy.TermSet")
 @js.native
-class TermSet () extends TermSetItem {
+trait TermSet extends TermSetItem {
   def addStakeholder(stakeholderName: String): Unit = js.native
   def copy(): TermSet = js.native
   def deleteStakeholder(stakeholderName: String): Unit = js.native

@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation._
 trait NotifyBLECharacteristicValueChangedOptions
   extends BaseOptions[js.Any, js.Any] {
   /**
-  		 * 蓝牙特征值的 uuid
-  		 */
+    * 蓝牙特征值的 uuid
+    */
   var characteristicId: String
   /**
-  		 * notify 的 descriptor 的 uuid （只有android 会用到，非必填，默认值00002902-0000-10008000-00805f9b34fb）
-  		 */
+    * notify 的 descriptor 的 uuid （只有android 会用到，非必填，默认值00002902-0000-10008000-00805f9b34fb）
+    */
   var descriptorId: js.UndefOr[String] = js.undefined
   /**
-  		 * 蓝牙设备 id，参考 device 对象
-  		 */
+    * 蓝牙设备 id，参考 device 对象
+    */
   var deviceId: String
   /**
-  		 * 蓝牙特征值对应服务的 uuid
-  		 */
+    * 蓝牙特征值对应服务的 uuid
+    */
   var serviceId: String
   /**
-  		 * true: 启用 notify; false: 停用 notify
-  		 */
+    * true: 启用 notify; false: 停用 notify
+    */
   var state: Boolean
   @JSName("success")
   def success_MNotifyBLECharacteristicValueChangedOptions(res: ErrMsgResponse): Unit

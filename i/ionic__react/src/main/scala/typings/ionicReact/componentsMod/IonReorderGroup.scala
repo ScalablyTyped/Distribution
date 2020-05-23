@@ -1,7 +1,7 @@
 package typings.ionicReact.componentsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ionicReact.IonReorderGroupPickHTMLAt
+import typings.ionicReact.anon.IonReorderGroupPickHTMLAt
 import typings.react.mod.ForwardRefExoticComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

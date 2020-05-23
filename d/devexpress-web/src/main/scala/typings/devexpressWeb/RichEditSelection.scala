@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Contains a set of methods and properties to work with the document selection.
   */
-@JSGlobal("RichEditSelection")
 @js.native
-class RichEditSelection () extends js.Object {
+trait RichEditSelection extends js.Object {
   /**
     * Gets or sets a value specifying whether the current selection is collapsed (and represents the cursor position).
     */

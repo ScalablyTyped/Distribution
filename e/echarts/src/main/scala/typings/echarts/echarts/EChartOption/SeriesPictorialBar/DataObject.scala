@@ -1,9 +1,9 @@
 package typings.echarts.echarts.EChartOption.SeriesPictorialBar
 
-import typings.echarts.AnonBorderType
-import typings.echarts.AnonDistance
-import typings.echarts.AnonExtraCssText
-import typings.echarts.AnonLabelAnonDistance
+import typings.echarts.anon.BorderType
+import typings.echarts.anon.Distance
+import typings.echarts.anon.ExtraCssText
+import typings.echarts.anon.LabelDistance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -111,7 +111,7 @@ trait DataObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.data.emphasis
     */
-  var emphasis: js.UndefOr[AnonLabelAnonDistance] = js.undefined
+  var emphasis: js.UndefOr[LabelDistance] = js.undefined
   /**
     * Whether to enable hover animation.
     *
@@ -135,14 +135,14 @@ trait DataObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.data.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderType] = js.undefined
+  var itemStyle: js.UndefOr[BorderType] = js.undefined
   /**
     * The style setting of the text label in a single bar.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.data.label
     */
-  var label: js.UndefOr[AnonDistance] = js.undefined
+  var label: js.UndefOr[Distance] = js.undefined
   /**
     * The name of data item.
     *
@@ -692,7 +692,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.data.tooltip
     */
-  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
   /**
     * The value of a single data item.
     *
@@ -720,55 +720,55 @@ object DataObject {
     animationDurationUpdate: js.Function | Double = null,
     animationEasing: String = null,
     animationEasingUpdate: String = null,
-    animationThreshold: Int | Double = null,
-    emphasis: AnonLabelAnonDistance = null,
+    animationThreshold: js.UndefOr[Double] = js.undefined,
+    emphasis: LabelDistance = null,
     hoverAnimation: js.UndefOr[Boolean] = js.undefined,
-    itemStyle: AnonBorderType = null,
-    label: AnonDistance = null,
+    itemStyle: BorderType = null,
+    label: Distance = null,
     name: String = null,
     symbol: String = null,
-    symbolBoundingData: Int | Double = null,
+    symbolBoundingData: js.UndefOr[Double] = js.undefined,
     symbolClip: js.UndefOr[Boolean] = js.undefined,
     symbolMargin: Double | String = null,
     symbolOffset: js.Array[_] = null,
-    symbolPatternSize: Int | Double = null,
+    symbolPatternSize: js.UndefOr[Double] = js.undefined,
     symbolPosition: String = null,
     symbolRepeat: Boolean | Double | String = null,
     symbolRepeatDirection: String = null,
-    symbolRotate: Int | Double = null,
+    symbolRotate: js.UndefOr[Double] = js.undefined,
     symbolSize: js.Array[_] | Double = null,
-    tooltip: AnonExtraCssText = null,
-    value: Int | Double = null,
-    z: Int | Double = null
+    tooltip: ExtraCssText = null,
+    value: js.UndefOr[Double] = js.undefined,
+    z: js.UndefOr[Double] = js.undefined
   ): DataObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
     if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
     if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
     if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
     if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate.asInstanceOf[js.Any])
-    if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationThreshold)) __obj.updateDynamic("animationThreshold")(animationThreshold.get.asInstanceOf[js.Any])
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverAnimation)) __obj.updateDynamic("hoverAnimation")(hoverAnimation.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverAnimation)) __obj.updateDynamic("hoverAnimation")(hoverAnimation.get.asInstanceOf[js.Any])
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (symbolBoundingData != null) __obj.updateDynamic("symbolBoundingData")(symbolBoundingData.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbolClip)) __obj.updateDynamic("symbolClip")(symbolClip.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolBoundingData)) __obj.updateDynamic("symbolBoundingData")(symbolBoundingData.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolClip)) __obj.updateDynamic("symbolClip")(symbolClip.get.asInstanceOf[js.Any])
     if (symbolMargin != null) __obj.updateDynamic("symbolMargin")(symbolMargin.asInstanceOf[js.Any])
     if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset.asInstanceOf[js.Any])
-    if (symbolPatternSize != null) __obj.updateDynamic("symbolPatternSize")(symbolPatternSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolPatternSize)) __obj.updateDynamic("symbolPatternSize")(symbolPatternSize.get.asInstanceOf[js.Any])
     if (symbolPosition != null) __obj.updateDynamic("symbolPosition")(symbolPosition.asInstanceOf[js.Any])
     if (symbolRepeat != null) __obj.updateDynamic("symbolRepeat")(symbolRepeat.asInstanceOf[js.Any])
     if (symbolRepeatDirection != null) __obj.updateDynamic("symbolRepeatDirection")(symbolRepeatDirection.asInstanceOf[js.Any])
-    if (symbolRotate != null) __obj.updateDynamic("symbolRotate")(symbolRotate.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolRotate)) __obj.updateDynamic("symbolRotate")(symbolRotate.get.asInstanceOf[js.Any])
     if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataObject]
   }
 }

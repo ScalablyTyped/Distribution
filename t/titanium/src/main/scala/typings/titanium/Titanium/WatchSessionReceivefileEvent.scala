@@ -5,28 +5,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * App received file from apple watch in background.
-	 */
+  * App received file from apple watch in background.
+  */
 trait WatchSessionReceivefileEvent extends WatchSessionBaseEvent {
   /**
-  		 * The downloaded data as a Titanium.Blob object.
-  		 */
+    * The downloaded data as a Titanium.Blob object.
+    */
   var data: Blob
   /**
-  		 * Error code if transfer failed.
-  		 */
+    * Error code if transfer failed.
+    */
   var errorCode: Double
   /**
-  		 * Error message if any.
-  		 */
+    * Error message if any.
+    */
   var message: String
   /**
-  		 * Information about the file.
-  		 */
+    * Information about the file.
+    */
   var metaData: js.Any
   /**
-  		 * If the transfer was successful.
-  		 */
+    * If the transfer was successful.
+    */
   var success: Boolean
 }
 

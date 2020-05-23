@@ -40,21 +40,21 @@ object QueryExecutionStatistics {
   @scala.inline
   def apply(
     DataManifestLocation: String = null,
-    DataScannedInBytes: Int | Double = null,
-    EngineExecutionTimeInMillis: Int | Double = null,
-    QueryPlanningTimeInMillis: Int | Double = null,
-    QueryQueueTimeInMillis: Int | Double = null,
-    ServiceProcessingTimeInMillis: Int | Double = null,
-    TotalExecutionTimeInMillis: Int | Double = null
+    DataScannedInBytes: js.UndefOr[Long] = js.undefined,
+    EngineExecutionTimeInMillis: js.UndefOr[Long] = js.undefined,
+    QueryPlanningTimeInMillis: js.UndefOr[Long] = js.undefined,
+    QueryQueueTimeInMillis: js.UndefOr[Long] = js.undefined,
+    ServiceProcessingTimeInMillis: js.UndefOr[Long] = js.undefined,
+    TotalExecutionTimeInMillis: js.UndefOr[Long] = js.undefined
   ): QueryExecutionStatistics = {
     val __obj = js.Dynamic.literal()
     if (DataManifestLocation != null) __obj.updateDynamic("DataManifestLocation")(DataManifestLocation.asInstanceOf[js.Any])
-    if (DataScannedInBytes != null) __obj.updateDynamic("DataScannedInBytes")(DataScannedInBytes.asInstanceOf[js.Any])
-    if (EngineExecutionTimeInMillis != null) __obj.updateDynamic("EngineExecutionTimeInMillis")(EngineExecutionTimeInMillis.asInstanceOf[js.Any])
-    if (QueryPlanningTimeInMillis != null) __obj.updateDynamic("QueryPlanningTimeInMillis")(QueryPlanningTimeInMillis.asInstanceOf[js.Any])
-    if (QueryQueueTimeInMillis != null) __obj.updateDynamic("QueryQueueTimeInMillis")(QueryQueueTimeInMillis.asInstanceOf[js.Any])
-    if (ServiceProcessingTimeInMillis != null) __obj.updateDynamic("ServiceProcessingTimeInMillis")(ServiceProcessingTimeInMillis.asInstanceOf[js.Any])
-    if (TotalExecutionTimeInMillis != null) __obj.updateDynamic("TotalExecutionTimeInMillis")(TotalExecutionTimeInMillis.asInstanceOf[js.Any])
+    if (!js.isUndefined(DataScannedInBytes)) __obj.updateDynamic("DataScannedInBytes")(DataScannedInBytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EngineExecutionTimeInMillis)) __obj.updateDynamic("EngineExecutionTimeInMillis")(EngineExecutionTimeInMillis.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(QueryPlanningTimeInMillis)) __obj.updateDynamic("QueryPlanningTimeInMillis")(QueryPlanningTimeInMillis.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(QueryQueueTimeInMillis)) __obj.updateDynamic("QueryQueueTimeInMillis")(QueryQueueTimeInMillis.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ServiceProcessingTimeInMillis)) __obj.updateDynamic("ServiceProcessingTimeInMillis")(ServiceProcessingTimeInMillis.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalExecutionTimeInMillis)) __obj.updateDynamic("TotalExecutionTimeInMillis")(TotalExecutionTimeInMillis.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryExecutionStatistics]
   }
 }

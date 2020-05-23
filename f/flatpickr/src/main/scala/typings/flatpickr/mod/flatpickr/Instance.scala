@@ -1,17 +1,16 @@
 package typings.flatpickr.mod.flatpickr
 
-import typings.flatpickr.AnonElement
-import typings.flatpickr.AnonGetDaysInMonth
+import typings.flatpickr.anon.Element
+import typings.flatpickr.anon.GetDaysInMonth
+import typings.flatpickr.anon.kinkeyofOptionsOptionsk
 import typings.flatpickr.formattingMod.Formats_
 import typings.flatpickr.formattingMod.RevFormat_
 import typings.flatpickr.formattingMod.TokenRegex_
-import typings.flatpickr.globalsMod._Global_.Date
-import typings.flatpickr.globalsMod._Global_.HTMLElement
+import typings.flatpickr.globalsMod.global.Date
+import typings.flatpickr.globalsMod.global.HTMLElement
 import typings.flatpickr.instanceMod.DayElement
-import typings.flatpickr.kinkeyofOptionsOptionsk
 import typings.flatpickr.optionsMod.DateOption
 import typings.flatpickr.optionsMod.ParsedOptions
-import typings.std.Element
 import typings.std.FocusEvent
 import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
@@ -28,7 +27,7 @@ import scala.scalajs.js.annotation._
 trait Instance extends js.Object {
   var __hideNextMonthArrow: Boolean = js.native
   var __hidePrevMonthArrow: Boolean = js.native
-  var _handlers: js.Array[AnonElement] = js.native
+  var _handlers: js.Array[Element] = js.native
   var _hideNextMonthArrow: Boolean = js.native
   var _hidePrevMonthArrow: Boolean = js.native
   var _initialDate: Date = js.native
@@ -79,15 +78,15 @@ trait Instance extends js.Object {
   var timeContainer: js.UndefOr[HTMLDivElement] = js.native
   var todayDateElem: js.UndefOr[DayElement] = js.native
   var tokenRegex: TokenRegex_ = js.native
-  var utils: AnonGetDaysInMonth = js.native
+  var utils: GetDaysInMonth = js.native
   var weekNumbers: js.UndefOr[HTMLDivElement] = js.native
   var weekWrapper: js.UndefOr[HTMLDivElement] = js.native
   var weekdayContainer: HTMLDivElement = js.native
   var yearElements: js.Array[HTMLInputElement] = js.native
-  def _bind[E /* <: Element */](element: E, event: String, handler: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): Unit = js.native
-  def _bind[E /* <: Element */](element: E, event: js.Array[String], handler: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): Unit = js.native
-  def _bind[E /* <: Element */](element: js.Array[E], event: String, handler: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): Unit = js.native
-  def _bind[E /* <: Element */](
+  def _bind[E /* <: typings.std.Element */](element: E, event: String, handler: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  def _bind[E /* <: typings.std.Element */](element: E, event: js.Array[String], handler: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  def _bind[E /* <: typings.std.Element */](element: js.Array[E], event: String, handler: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  def _bind[E /* <: typings.std.Element */](
     element: js.Array[E],
     event: js.Array[String],
     handler: js.Function1[/* e */ js.UndefOr[js.Any], Unit]

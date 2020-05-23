@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Request to perform some action on or in regards to an existing resource
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait ProcessRequest extends DomainResource {
   /**
     * Contains extended information for property 'action'.
@@ -163,7 +163,7 @@ object ProcessRequest {
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (!js.isUndefined(nullify)) __obj.updateDynamic("nullify")(nullify.asInstanceOf[js.Any])
+    if (!js.isUndefined(nullify)) __obj.updateDynamic("nullify")(nullify.get.asInstanceOf[js.Any])
     if (organization != null) __obj.updateDynamic("organization")(organization.asInstanceOf[js.Any])
     if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
     if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])

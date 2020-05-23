@@ -1,6 +1,5 @@
 package typings.heremaps.H.map.Icon
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object State extends js.Object {
   
   @js.native
   sealed trait READY extends State
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[State with Double] = js.native
-  /* 0 */ @js.native
-  object ERROR extends TopLevel[ERROR with Double]
-  
-  /* 1 */ @js.native
-  object LOADING extends TopLevel[LOADING with Double]
-  
-  /* 2 */ @js.native
-  object READY extends TopLevel[READY with Double]
   
 }
 

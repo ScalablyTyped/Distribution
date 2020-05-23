@@ -23,12 +23,12 @@ trait GetEnrollmentStatusResponse extends js.Object {
 object GetEnrollmentStatusResponse {
   @scala.inline
   def apply(
-    memberAccountsEnrolled: js.UndefOr[Boolean] = js.undefined,
+    memberAccountsEnrolled: js.UndefOr[MemberAccountsEnrolled] = js.undefined,
     status: Status = null,
     statusReason: StatusReason = null
   ): GetEnrollmentStatusResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(memberAccountsEnrolled)) __obj.updateDynamic("memberAccountsEnrolled")(memberAccountsEnrolled.asInstanceOf[js.Any])
+    if (!js.isUndefined(memberAccountsEnrolled)) __obj.updateDynamic("memberAccountsEnrolled")(memberAccountsEnrolled.get.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (statusReason != null) __obj.updateDynamic("statusReason")(statusReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEnrollmentStatusResponse]

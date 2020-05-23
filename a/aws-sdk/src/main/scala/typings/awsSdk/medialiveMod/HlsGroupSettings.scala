@@ -126,8 +126,9 @@ trait HlsGroupSettings extends js.Object {
     */
   var Mode: js.UndefOr[HlsMode] = js.native
   /**
-    * MANIFESTSANDSEGMENTS: Generates manifests (master manifest, if applicable, and media manifests) for this output group.
-  SEGMENTSONLY: Does not generate any manifests for this output group.
+    * MANIFESTS_AND_SEGMENTS: Generates manifests (master manifest, if applicable, and media manifests) for this output group.
+  VARIANT_MANIFESTS_AND_SEGMENTS: Generates media manifests for this output group, but not a master manifest.
+  SEGMENTS_ONLY: Does not generate any manifests for this output group.
     */
   var OutputSelection: js.UndefOr[HlsOutputSelection] = js.native
   /**
@@ -173,8 +174,8 @@ trait HlsGroupSettings extends js.Object {
     */
   var TimestampDeltaMilliseconds: js.UndefOr[integerMin0] = js.native
   /**
-    * SEGMENTEDFILES: Emit the program as segments - multiple .ts media files.
-  SINGLEFILE: Applies only if Mode field is VOD. Emit the program as a single .ts media file. The media manifest includes #EXT-X-BYTERANGE tags to index segments for playback. A typical use for this value is when sending the output to AWS Elemental MediaConvert, which can accept only a single media file. Playback while the channel is running is not guaranteed due to HTTP server caching.
+    * SEGMENTED_FILES: Emit the program as segments - multiple .ts media files.
+  SINGLE_FILE: Applies only if Mode field is VOD. Emit the program as a single .ts media file. The media manifest includes #EXT-X-BYTERANGE tags to index segments for playback. A typical use for this value is when sending the output to AWS Elemental MediaConvert, which can accept only a single media file. Playback while the channel is running is not guaranteed due to HTTP server caching.
     */
   var TsFileMode: js.UndefOr[HlsTsFileMode] = js.native
 }
@@ -198,29 +199,29 @@ object HlsGroupSettings {
     HlsCdnSettings: HlsCdnSettings = null,
     HlsId3SegmentTagging: HlsId3SegmentTaggingState = null,
     IFrameOnlyPlaylists: IFrameOnlyPlaylistType = null,
-    IndexNSegments: Int | Double = null,
+    IndexNSegments: js.UndefOr[integerMin3] = js.undefined,
     InputLossAction: InputLossActionForHlsOut = null,
     IvInManifest: HlsIvInManifest = null,
     IvSource: HlsIvSource = null,
-    KeepSegments: Int | Double = null,
+    KeepSegments: js.UndefOr[integerMin1] = js.undefined,
     KeyFormat: string = null,
     KeyFormatVersions: string = null,
     KeyProviderSettings: KeyProviderSettings = null,
     ManifestCompression: HlsManifestCompression = null,
     ManifestDurationFormat: HlsManifestDurationFormat = null,
-    MinSegmentLength: Int | Double = null,
+    MinSegmentLength: js.UndefOr[integerMin0] = js.undefined,
     Mode: HlsMode = null,
     OutputSelection: HlsOutputSelection = null,
     ProgramDateTime: HlsProgramDateTime = null,
-    ProgramDateTimePeriod: Int | Double = null,
+    ProgramDateTimePeriod: js.UndefOr[integerMin0Max3600] = js.undefined,
     RedundantManifest: HlsRedundantManifest = null,
-    SegmentLength: Int | Double = null,
+    SegmentLength: js.UndefOr[integerMin1] = js.undefined,
     SegmentationMode: HlsSegmentationMode = null,
-    SegmentsPerSubdirectory: Int | Double = null,
+    SegmentsPerSubdirectory: js.UndefOr[integerMin1] = js.undefined,
     StreamInfResolution: HlsStreamInfResolution = null,
     TimedMetadataId3Frame: HlsTimedMetadataId3Frame = null,
-    TimedMetadataId3Period: Int | Double = null,
-    TimestampDeltaMilliseconds: Int | Double = null,
+    TimedMetadataId3Period: js.UndefOr[integerMin0] = js.undefined,
+    TimestampDeltaMilliseconds: js.UndefOr[integerMin0] = js.undefined,
     TsFileMode: HlsTsFileMode = null
   ): HlsGroupSettings = {
     val __obj = js.Dynamic.literal(Destination = Destination.asInstanceOf[js.Any])
@@ -239,29 +240,29 @@ object HlsGroupSettings {
     if (HlsCdnSettings != null) __obj.updateDynamic("HlsCdnSettings")(HlsCdnSettings.asInstanceOf[js.Any])
     if (HlsId3SegmentTagging != null) __obj.updateDynamic("HlsId3SegmentTagging")(HlsId3SegmentTagging.asInstanceOf[js.Any])
     if (IFrameOnlyPlaylists != null) __obj.updateDynamic("IFrameOnlyPlaylists")(IFrameOnlyPlaylists.asInstanceOf[js.Any])
-    if (IndexNSegments != null) __obj.updateDynamic("IndexNSegments")(IndexNSegments.asInstanceOf[js.Any])
+    if (!js.isUndefined(IndexNSegments)) __obj.updateDynamic("IndexNSegments")(IndexNSegments.get.asInstanceOf[js.Any])
     if (InputLossAction != null) __obj.updateDynamic("InputLossAction")(InputLossAction.asInstanceOf[js.Any])
     if (IvInManifest != null) __obj.updateDynamic("IvInManifest")(IvInManifest.asInstanceOf[js.Any])
     if (IvSource != null) __obj.updateDynamic("IvSource")(IvSource.asInstanceOf[js.Any])
-    if (KeepSegments != null) __obj.updateDynamic("KeepSegments")(KeepSegments.asInstanceOf[js.Any])
+    if (!js.isUndefined(KeepSegments)) __obj.updateDynamic("KeepSegments")(KeepSegments.get.asInstanceOf[js.Any])
     if (KeyFormat != null) __obj.updateDynamic("KeyFormat")(KeyFormat.asInstanceOf[js.Any])
     if (KeyFormatVersions != null) __obj.updateDynamic("KeyFormatVersions")(KeyFormatVersions.asInstanceOf[js.Any])
     if (KeyProviderSettings != null) __obj.updateDynamic("KeyProviderSettings")(KeyProviderSettings.asInstanceOf[js.Any])
     if (ManifestCompression != null) __obj.updateDynamic("ManifestCompression")(ManifestCompression.asInstanceOf[js.Any])
     if (ManifestDurationFormat != null) __obj.updateDynamic("ManifestDurationFormat")(ManifestDurationFormat.asInstanceOf[js.Any])
-    if (MinSegmentLength != null) __obj.updateDynamic("MinSegmentLength")(MinSegmentLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinSegmentLength)) __obj.updateDynamic("MinSegmentLength")(MinSegmentLength.get.asInstanceOf[js.Any])
     if (Mode != null) __obj.updateDynamic("Mode")(Mode.asInstanceOf[js.Any])
     if (OutputSelection != null) __obj.updateDynamic("OutputSelection")(OutputSelection.asInstanceOf[js.Any])
     if (ProgramDateTime != null) __obj.updateDynamic("ProgramDateTime")(ProgramDateTime.asInstanceOf[js.Any])
-    if (ProgramDateTimePeriod != null) __obj.updateDynamic("ProgramDateTimePeriod")(ProgramDateTimePeriod.asInstanceOf[js.Any])
+    if (!js.isUndefined(ProgramDateTimePeriod)) __obj.updateDynamic("ProgramDateTimePeriod")(ProgramDateTimePeriod.get.asInstanceOf[js.Any])
     if (RedundantManifest != null) __obj.updateDynamic("RedundantManifest")(RedundantManifest.asInstanceOf[js.Any])
-    if (SegmentLength != null) __obj.updateDynamic("SegmentLength")(SegmentLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(SegmentLength)) __obj.updateDynamic("SegmentLength")(SegmentLength.get.asInstanceOf[js.Any])
     if (SegmentationMode != null) __obj.updateDynamic("SegmentationMode")(SegmentationMode.asInstanceOf[js.Any])
-    if (SegmentsPerSubdirectory != null) __obj.updateDynamic("SegmentsPerSubdirectory")(SegmentsPerSubdirectory.asInstanceOf[js.Any])
+    if (!js.isUndefined(SegmentsPerSubdirectory)) __obj.updateDynamic("SegmentsPerSubdirectory")(SegmentsPerSubdirectory.get.asInstanceOf[js.Any])
     if (StreamInfResolution != null) __obj.updateDynamic("StreamInfResolution")(StreamInfResolution.asInstanceOf[js.Any])
     if (TimedMetadataId3Frame != null) __obj.updateDynamic("TimedMetadataId3Frame")(TimedMetadataId3Frame.asInstanceOf[js.Any])
-    if (TimedMetadataId3Period != null) __obj.updateDynamic("TimedMetadataId3Period")(TimedMetadataId3Period.asInstanceOf[js.Any])
-    if (TimestampDeltaMilliseconds != null) __obj.updateDynamic("TimestampDeltaMilliseconds")(TimestampDeltaMilliseconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(TimedMetadataId3Period)) __obj.updateDynamic("TimedMetadataId3Period")(TimedMetadataId3Period.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TimestampDeltaMilliseconds)) __obj.updateDynamic("TimestampDeltaMilliseconds")(TimestampDeltaMilliseconds.get.asInstanceOf[js.Any])
     if (TsFileMode != null) __obj.updateDynamic("TsFileMode")(TsFileMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[HlsGroupSettings]
   }

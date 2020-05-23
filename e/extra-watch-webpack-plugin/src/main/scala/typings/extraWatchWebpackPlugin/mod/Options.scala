@@ -6,11 +6,13 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   /**
-    * `string` or `array`, default `[]`, attach extra dirs to webpack's watch system
+    * attach extra dirs to webpack's watch system
+    * @default []
     */
   var dirs: js.UndefOr[String | js.Array[String]] = js.undefined
   /**
-    * `string` (absolute path or glob pattern) or `array`, default `[]`, attach extra files to webpack's watch system
+    * (absolute path or glob pattern), attach extra files to webpack's watch system
+    * @default []
     */
   var files: js.UndefOr[String | js.Array[String]] = js.undefined
 }

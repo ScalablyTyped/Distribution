@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,23 +27,6 @@ object AuthType extends js.Object {
   
   @js.native
   sealed trait USER_TOKEN extends AuthType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AuthType with Double] = js.native
-  /* 3 */ @js.native
-  object KEY extends TopLevel[KEY with Double]
-  
-  /* 0 */ @js.native
-  object NONE extends TopLevel[NONE with Double]
-  
-  /* 1 */ @js.native
-  object OAUTH2 extends TopLevel[OAUTH2 with Double]
-  
-  /* 2 */ @js.native
-  object USER_PASS extends TopLevel[USER_PASS with Double]
-  
-  /* 4 */ @js.native
-  object USER_TOKEN extends TopLevel[USER_TOKEN with Double]
   
 }
 

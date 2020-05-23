@@ -27,23 +27,23 @@ object IClientConfig {
   @scala.inline
   def apply(
     assembleFragments: js.UndefOr[Boolean] = js.undefined,
-    closeTimeout: Int | Double = null,
+    closeTimeout: js.UndefOr[Double] = js.undefined,
     fragmentOutgoingMessages: js.UndefOr[Boolean] = js.undefined,
-    fragmentationThreshold: Int | Double = null,
-    maxReceivedFrameSize: Int | Double = null,
-    maxReceivedMessageSize: Int | Double = null,
+    fragmentationThreshold: js.UndefOr[Double] = js.undefined,
+    maxReceivedFrameSize: js.UndefOr[Double] = js.undefined,
+    maxReceivedMessageSize: js.UndefOr[Double] = js.undefined,
     tlsOptions: RequestOptions = null,
-    webSocketVersion: Int | Double = null
+    webSocketVersion: js.UndefOr[Double] = js.undefined
   ): IClientConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(assembleFragments)) __obj.updateDynamic("assembleFragments")(assembleFragments.asInstanceOf[js.Any])
-    if (closeTimeout != null) __obj.updateDynamic("closeTimeout")(closeTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(fragmentOutgoingMessages)) __obj.updateDynamic("fragmentOutgoingMessages")(fragmentOutgoingMessages.asInstanceOf[js.Any])
-    if (fragmentationThreshold != null) __obj.updateDynamic("fragmentationThreshold")(fragmentationThreshold.asInstanceOf[js.Any])
-    if (maxReceivedFrameSize != null) __obj.updateDynamic("maxReceivedFrameSize")(maxReceivedFrameSize.asInstanceOf[js.Any])
-    if (maxReceivedMessageSize != null) __obj.updateDynamic("maxReceivedMessageSize")(maxReceivedMessageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(assembleFragments)) __obj.updateDynamic("assembleFragments")(assembleFragments.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeTimeout)) __obj.updateDynamic("closeTimeout")(closeTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fragmentOutgoingMessages)) __obj.updateDynamic("fragmentOutgoingMessages")(fragmentOutgoingMessages.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fragmentationThreshold)) __obj.updateDynamic("fragmentationThreshold")(fragmentationThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxReceivedFrameSize)) __obj.updateDynamic("maxReceivedFrameSize")(maxReceivedFrameSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxReceivedMessageSize)) __obj.updateDynamic("maxReceivedMessageSize")(maxReceivedMessageSize.get.asInstanceOf[js.Any])
     if (tlsOptions != null) __obj.updateDynamic("tlsOptions")(tlsOptions.asInstanceOf[js.Any])
-    if (webSocketVersion != null) __obj.updateDynamic("webSocketVersion")(webSocketVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(webSocketVersion)) __obj.updateDynamic("webSocketVersion")(webSocketVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientConfig]
   }
 }

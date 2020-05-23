@@ -1,39 +1,36 @@
 package typings.vexflow.Vex.Flow
 
-import typings.vexflow.AnonFirstxpx
-import typings.vexflow.AnonLastnote
-import typings.vexflow.AnonSize
 import typings.vexflow.Vex.IRenderContext
+import typings.vexflow.anon.Family
+import typings.vexflow.anon.Firstxpx
+import typings.vexflow.anon.Lastindices
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Vex.Flow.StaveTie")
-@js.native
-class StaveTie protected () extends js.Object {
-  /**
-    * @see https://github.com/0xfe/vexflow/blob/master/src/stavetie.js#L12
-    *
-    * Notes is a struct that has:
-    *
-    *  {
-    *    first_note: Note,
-    *    last_note: Note,
-    *    first_indices: [n1, n2, n3],
-    *    last_indices: [n1, n2, n3]
-    *  }
-    * All properties are optional, since ties can span line breaks in which case
-    * two ties can be used, each with either "first_note" or "last_note" missing.
-    *
-    **/
-  def this(notes: AnonLastnote) = this()
-  def this(notes: AnonLastnote, text: String) = this()
-  def draw(): Boolean = js.native
-  def isPartial(): Boolean = js.native
-  def renderText(first_x_px: Double, last_x_px: Double): Unit = js.native
-  def renderTie(params: AnonFirstxpx): Unit = js.native
-  def setContext(context: IRenderContext): StaveTie = js.native
-  def setFont(font: AnonSize): StaveTie = js.native
-  def setNotes(notes: AnonLastnote): StaveTie = js.native
+trait StaveTie extends js.Object {
+  def draw(): Boolean
+  def isPartial(): Boolean
+  def renderText(first_x_px: Double, last_x_px: Double): Unit
+  def renderTie(params: Firstxpx): Unit
+  def setContext(context: IRenderContext): StaveTie
+  def setFont(font: Family): StaveTie
+  def setNotes(notes: Lastindices): StaveTie
+}
+
+object StaveTie {
+  @scala.inline
+  def apply(
+    draw: () => Boolean,
+    isPartial: () => Boolean,
+    renderText: (Double, Double) => Unit,
+    renderTie: Firstxpx => Unit,
+    setContext: IRenderContext => StaveTie,
+    setFont: Family => StaveTie,
+    setNotes: Lastindices => StaveTie
+  ): StaveTie = {
+    val __obj = js.Dynamic.literal(draw = js.Any.fromFunction0(draw), isPartial = js.Any.fromFunction0(isPartial), renderText = js.Any.fromFunction2(renderText), renderTie = js.Any.fromFunction1(renderTie), setContext = js.Any.fromFunction1(setContext), setFont = js.Any.fromFunction1(setFont), setNotes = js.Any.fromFunction1(setNotes))
+    __obj.asInstanceOf[StaveTie]
+  }
 }
 

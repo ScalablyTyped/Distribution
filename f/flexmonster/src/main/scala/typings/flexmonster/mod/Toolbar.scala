@@ -1,12 +1,12 @@
 package typings.flexmonster.mod
 
-import typings.flexmonster.AnonCharts
+import typings.flexmonster.anon.Charts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Toolbar extends js.Object {
-  var icons: AnonCharts
+  var icons: Charts
   // Charts tab
   def chartsHandler(`type`: String): Unit
   def chartsMultipleHandler(): Unit
@@ -55,7 +55,7 @@ object Toolbar {
     fullscreenHandler: () => Unit,
     getTabs: () => js.Array[ToolbarTab],
     gridHandler: () => Unit,
-    icons: AnonCharts,
+    icons: Charts,
     openLocalReport: () => Unit,
     openRemoteReport: () => Unit,
     optionsHandler: () => Unit,

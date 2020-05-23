@@ -5,10 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides data for the compass reading–changed event. */
-@JSGlobal("Windows.Devices.Sensors.CompassReadingChangedEventArgs")
-@js.native
-abstract class CompassReadingChangedEventArgs () extends js.Object {
+trait CompassReadingChangedEventArgs extends js.Object {
   /** Gets the current compass reading. */
-  var reading: CompassReading = js.native
+  var reading: CompassReading
+}
+
+object CompassReadingChangedEventArgs {
+  @scala.inline
+  def apply(reading: CompassReading): CompassReadingChangedEventArgs = {
+    val __obj = js.Dynamic.literal(reading = reading.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CompassReadingChangedEventArgs]
+  }
 }
 

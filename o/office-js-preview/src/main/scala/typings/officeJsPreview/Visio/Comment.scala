@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Visio
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
 import typings.officeJsPreview.Visio.Interfaces.CommentData
 import typings.officeJsPreview.Visio.Interfaces.CommentLoadOptions
 import typings.officeJsPreview.Visio.Interfaces.CommentUpdateData
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +16,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set:  1.1]
   */
-@JSGlobal("Visio.Comment")
 @js.native
-class Comment () extends ClientObject {
+trait Comment extends ClientObject {
   /**
     *
     * A string that specifies the name of the author of the comment.
@@ -61,8 +60,8 @@ class Comment () extends ClientObject {
   def load(): Comment = js.native
   def load(option: String): Comment = js.native
   def load(option: js.Array[String]): Comment = js.native
-  def load(option: AnonExpand): Comment = js.native
   def load(option: CommentLoadOptions): Comment = js.native
+  def load(option: Expand): Comment = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Comment): Unit = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.

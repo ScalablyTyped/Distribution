@@ -73,36 +73,36 @@ object PhysicsImpostorParameters {
   @scala.inline
   def apply(
     mass: Double,
-    damping: Int | Double = null,
+    damping: js.UndefOr[Double] = js.undefined,
     disableBidirectionalTransformation: js.UndefOr[Boolean] = js.undefined,
-    fixedPoints: Int | Double = null,
-    friction: Int | Double = null,
+    fixedPoints: js.UndefOr[Double] = js.undefined,
+    friction: js.UndefOr[Double] = js.undefined,
     ignoreParent: js.UndefOr[Boolean] = js.undefined,
-    margin: Int | Double = null,
+    margin: js.UndefOr[Double] = js.undefined,
     nativeOptions: js.Any = null,
     path: js.Any = null,
-    positionIterations: Int | Double = null,
-    pressure: Int | Double = null,
-    restitution: Int | Double = null,
+    positionIterations: js.UndefOr[Double] = js.undefined,
+    pressure: js.UndefOr[Double] = js.undefined,
+    restitution: js.UndefOr[Double] = js.undefined,
     shape: js.Any = null,
-    stiffness: Int | Double = null,
-    velocityIterations: Int | Double = null
+    stiffness: js.UndefOr[Double] = js.undefined,
+    velocityIterations: js.UndefOr[Double] = js.undefined
   ): PhysicsImpostorParameters = {
     val __obj = js.Dynamic.literal(mass = mass.asInstanceOf[js.Any])
-    if (damping != null) __obj.updateDynamic("damping")(damping.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableBidirectionalTransformation)) __obj.updateDynamic("disableBidirectionalTransformation")(disableBidirectionalTransformation.asInstanceOf[js.Any])
-    if (fixedPoints != null) __obj.updateDynamic("fixedPoints")(fixedPoints.asInstanceOf[js.Any])
-    if (friction != null) __obj.updateDynamic("friction")(friction.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreParent)) __obj.updateDynamic("ignoreParent")(ignoreParent.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (!js.isUndefined(damping)) __obj.updateDynamic("damping")(damping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableBidirectionalTransformation)) __obj.updateDynamic("disableBidirectionalTransformation")(disableBidirectionalTransformation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedPoints)) __obj.updateDynamic("fixedPoints")(fixedPoints.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(friction)) __obj.updateDynamic("friction")(friction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreParent)) __obj.updateDynamic("ignoreParent")(ignoreParent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.get.asInstanceOf[js.Any])
     if (nativeOptions != null) __obj.updateDynamic("nativeOptions")(nativeOptions.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (positionIterations != null) __obj.updateDynamic("positionIterations")(positionIterations.asInstanceOf[js.Any])
-    if (pressure != null) __obj.updateDynamic("pressure")(pressure.asInstanceOf[js.Any])
-    if (restitution != null) __obj.updateDynamic("restitution")(restitution.asInstanceOf[js.Any])
+    if (!js.isUndefined(positionIterations)) __obj.updateDynamic("positionIterations")(positionIterations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pressure)) __obj.updateDynamic("pressure")(pressure.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(restitution)) __obj.updateDynamic("restitution")(restitution.get.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (stiffness != null) __obj.updateDynamic("stiffness")(stiffness.asInstanceOf[js.Any])
-    if (velocityIterations != null) __obj.updateDynamic("velocityIterations")(velocityIterations.asInstanceOf[js.Any])
+    if (!js.isUndefined(stiffness)) __obj.updateDynamic("stiffness")(stiffness.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(velocityIterations)) __obj.updateDynamic("velocityIterations")(velocityIterations.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhysicsImpostorParameters]
   }
 }

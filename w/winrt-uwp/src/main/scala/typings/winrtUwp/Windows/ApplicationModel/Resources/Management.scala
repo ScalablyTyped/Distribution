@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Resources
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,17 +24,6 @@ object Management extends js.Object {
     /** The IndexedResourceCandidate is a string. */
     @js.native
     sealed trait string extends IndexedResourceType
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[IndexedResourceType with Double] = js.native
-    /* 2 */ @js.native
-    object embeddedData extends TopLevel[embeddedData with Double]
-    
-    /* 1 */ @js.native
-    object path extends TopLevel[path with Double]
-    
-    /* 0 */ @js.native
-    object string extends TopLevel[string with Double]
     
   }
   

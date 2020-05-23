@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CANNON.RigidVehicle")
 @js.native
-class RigidVehicle () extends js.Object {
-  def this(options: IRigidVehicleOptions) = this()
+trait RigidVehicle extends js.Object {
   var chassisBody: Body = js.native
   var constraints: js.Array[Constraint] = js.native
   var coordinateSystem: Vec3 = js.native

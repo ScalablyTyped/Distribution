@@ -23,7 +23,7 @@ object MockURL {
     host: String = null,
     password: String = null,
     path: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     protocol: String = null,
     query: StringDictionary[String] = null,
     username: String = null
@@ -33,7 +33,7 @@ object MockURL {
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])

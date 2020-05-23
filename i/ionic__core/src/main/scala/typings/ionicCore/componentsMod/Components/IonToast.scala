@@ -9,6 +9,7 @@ import typings.ionicCore.ionicCoreStrings.top
 import typings.ionicCore.mod.Color
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.toastInterfaceMod.ToastButton
+import typings.ionicCore.typesMod.IonicSafeString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,7 +55,7 @@ trait IonToast extends js.Object {
   /**
     * Message to be shown in the toast.
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String | IonicSafeString] = js.native
   /**
     * The mode determines which platform styles to use.
     */

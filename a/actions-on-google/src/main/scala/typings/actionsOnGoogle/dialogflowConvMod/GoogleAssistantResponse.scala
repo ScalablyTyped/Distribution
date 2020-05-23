@@ -28,8 +28,8 @@ object GoogleAssistantResponse {
     userStorage: String = null
   ): GoogleAssistantResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(expectUserResponse)) __obj.updateDynamic("expectUserResponse")(expectUserResponse.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSsml)) __obj.updateDynamic("isSsml")(isSsml.asInstanceOf[js.Any])
+    if (!js.isUndefined(expectUserResponse)) __obj.updateDynamic("expectUserResponse")(expectUserResponse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSsml)) __obj.updateDynamic("isSsml")(isSsml.get.asInstanceOf[js.Any])
     if (noInputPrompts != null) __obj.updateDynamic("noInputPrompts")(noInputPrompts.asInstanceOf[js.Any])
     if (richResponse != null) __obj.updateDynamic("richResponse")(richResponse.asInstanceOf[js.Any])
     if (speechBiasingHints != null) __obj.updateDynamic("speechBiasingHints")(speechBiasingHints.asInstanceOf[js.Any])

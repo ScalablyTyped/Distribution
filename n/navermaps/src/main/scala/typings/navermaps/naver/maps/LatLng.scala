@@ -4,11 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.navermaps.naver.maps.Coord because Already inherited */ @JSGlobal("naver.maps.LatLng")
-@js.native
-class LatLng protected () extends Point {
-  def this(lat: Double, lng: Double) = this()
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.navermaps.naver.maps.Coord because Already inherited */ @js.native
+trait LatLng extends Point {
   def destinationPoint(angle: Double, meter: Double): LatLng = js.native
   def equals(point: Coord): Boolean = js.native
   def equals(point: LatLngLiteral): Boolean = js.native

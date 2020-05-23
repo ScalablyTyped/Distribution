@@ -15,9 +15,9 @@ trait FailoverConfig extends js.Object {
 
 object FailoverConfig {
   @scala.inline
-  def apply(RecoveryWindow: Int | Double = null, State: State = null): FailoverConfig = {
+  def apply(RecoveryWindow: js.UndefOr[integer] = js.undefined, State: State = null): FailoverConfig = {
     val __obj = js.Dynamic.literal()
-    if (RecoveryWindow != null) __obj.updateDynamic("RecoveryWindow")(RecoveryWindow.asInstanceOf[js.Any])
+    if (!js.isUndefined(RecoveryWindow)) __obj.updateDynamic("RecoveryWindow")(RecoveryWindow.get.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     __obj.asInstanceOf[FailoverConfig]
   }

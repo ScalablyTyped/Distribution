@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.ShapeOverlay")
 @js.native
-abstract class ShapeOverlay_[ExtraData] () extends Overlay[ExtraData] {
+trait ShapeOverlay_[ExtraData] extends Overlay[ExtraData] {
   /**
     * 获得属性
     */

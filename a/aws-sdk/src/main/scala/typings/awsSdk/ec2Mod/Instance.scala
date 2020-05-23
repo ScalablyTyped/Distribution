@@ -199,17 +199,17 @@ trait Instance extends js.Object {
 object Instance {
   @scala.inline
   def apply(
-    AmiLaunchIndex: Int | scala.Double = null,
+    AmiLaunchIndex: js.UndefOr[Integer] = js.undefined,
     Architecture: ArchitectureValues = null,
     BlockDeviceMappings: InstanceBlockDeviceMappingList = null,
     CapacityReservationId: String = null,
     CapacityReservationSpecification: CapacityReservationSpecificationResponse = null,
     ClientToken: String = null,
     CpuOptions: CpuOptions = null,
-    EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined,
+    EbsOptimized: js.UndefOr[Boolean] = js.undefined,
     ElasticGpuAssociations: ElasticGpuAssociationList = null,
     ElasticInferenceAcceleratorAssociations: ElasticInferenceAcceleratorAssociationList = null,
-    EnaSupport: js.UndefOr[scala.Boolean] = js.undefined,
+    EnaSupport: js.UndefOr[Boolean] = js.undefined,
     HibernationOptions: HibernationOptions = null,
     Hypervisor: HypervisorType = null,
     IamInstanceProfile: IamInstanceProfile = null,
@@ -236,7 +236,7 @@ object Instance {
     RootDeviceName: String = null,
     RootDeviceType: DeviceType = null,
     SecurityGroups: GroupIdentifierList = null,
-    SourceDestCheck: js.UndefOr[scala.Boolean] = js.undefined,
+    SourceDestCheck: js.UndefOr[Boolean] = js.undefined,
     SpotInstanceRequestId: String = null,
     SriovNetSupport: String = null,
     State: InstanceState = null,
@@ -248,17 +248,17 @@ object Instance {
     VpcId: String = null
   ): Instance = {
     val __obj = js.Dynamic.literal()
-    if (AmiLaunchIndex != null) __obj.updateDynamic("AmiLaunchIndex")(AmiLaunchIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(AmiLaunchIndex)) __obj.updateDynamic("AmiLaunchIndex")(AmiLaunchIndex.get.asInstanceOf[js.Any])
     if (Architecture != null) __obj.updateDynamic("Architecture")(Architecture.asInstanceOf[js.Any])
     if (BlockDeviceMappings != null) __obj.updateDynamic("BlockDeviceMappings")(BlockDeviceMappings.asInstanceOf[js.Any])
     if (CapacityReservationId != null) __obj.updateDynamic("CapacityReservationId")(CapacityReservationId.asInstanceOf[js.Any])
     if (CapacityReservationSpecification != null) __obj.updateDynamic("CapacityReservationSpecification")(CapacityReservationSpecification.asInstanceOf[js.Any])
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
     if (CpuOptions != null) __obj.updateDynamic("CpuOptions")(CpuOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.asInstanceOf[js.Any])
+    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.get.asInstanceOf[js.Any])
     if (ElasticGpuAssociations != null) __obj.updateDynamic("ElasticGpuAssociations")(ElasticGpuAssociations.asInstanceOf[js.Any])
     if (ElasticInferenceAcceleratorAssociations != null) __obj.updateDynamic("ElasticInferenceAcceleratorAssociations")(ElasticInferenceAcceleratorAssociations.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnaSupport)) __obj.updateDynamic("EnaSupport")(EnaSupport.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnaSupport)) __obj.updateDynamic("EnaSupport")(EnaSupport.get.asInstanceOf[js.Any])
     if (HibernationOptions != null) __obj.updateDynamic("HibernationOptions")(HibernationOptions.asInstanceOf[js.Any])
     if (Hypervisor != null) __obj.updateDynamic("Hypervisor")(Hypervisor.asInstanceOf[js.Any])
     if (IamInstanceProfile != null) __obj.updateDynamic("IamInstanceProfile")(IamInstanceProfile.asInstanceOf[js.Any])
@@ -285,7 +285,7 @@ object Instance {
     if (RootDeviceName != null) __obj.updateDynamic("RootDeviceName")(RootDeviceName.asInstanceOf[js.Any])
     if (RootDeviceType != null) __obj.updateDynamic("RootDeviceType")(RootDeviceType.asInstanceOf[js.Any])
     if (SecurityGroups != null) __obj.updateDynamic("SecurityGroups")(SecurityGroups.asInstanceOf[js.Any])
-    if (!js.isUndefined(SourceDestCheck)) __obj.updateDynamic("SourceDestCheck")(SourceDestCheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(SourceDestCheck)) __obj.updateDynamic("SourceDestCheck")(SourceDestCheck.get.asInstanceOf[js.Any])
     if (SpotInstanceRequestId != null) __obj.updateDynamic("SpotInstanceRequestId")(SpotInstanceRequestId.asInstanceOf[js.Any])
     if (SriovNetSupport != null) __obj.updateDynamic("SriovNetSupport")(SriovNetSupport.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])

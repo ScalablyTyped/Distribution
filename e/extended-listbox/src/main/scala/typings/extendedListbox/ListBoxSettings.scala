@@ -45,7 +45,7 @@ object ListBoxSettings {
     if (onItemEnterPressed != null) __obj.updateDynamic("onItemEnterPressed")(js.Any.fromFunction1(onItemEnterPressed))
     if (onItemsChanged != null) __obj.updateDynamic("onItemsChanged")(js.Any.fromFunction1(onItemsChanged))
     if (onValueChanged != null) __obj.updateDynamic("onValueChanged")(js.Any.fromFunction1(onValueChanged))
-    if (!js.isUndefined(searchBar)) __obj.updateDynamic("searchBar")(searchBar.asInstanceOf[js.Any])
+    if (!js.isUndefined(searchBar)) __obj.updateDynamic("searchBar")(searchBar.get.asInstanceOf[js.Any])
     if (searchBarButton != null) __obj.updateDynamic("searchBarButton")(searchBarButton.asInstanceOf[js.Any])
     if (searchBarWatermark != null) __obj.updateDynamic("searchBarWatermark")(searchBarWatermark.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBoxSettings]

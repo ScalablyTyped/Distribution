@@ -38,12 +38,12 @@ object GetMetricDataInput {
     EndTime: Timestamp,
     MetricDataQueries: MetricDataQueries,
     StartTime: Timestamp,
-    MaxDatapoints: Int | Double = null,
+    MaxDatapoints: js.UndefOr[GetMetricDataMaxDatapoints] = js.undefined,
     NextToken: NextToken = null,
     ScanBy: ScanBy = null
   ): GetMetricDataInput = {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], MetricDataQueries = MetricDataQueries.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
-    if (MaxDatapoints != null) __obj.updateDynamic("MaxDatapoints")(MaxDatapoints.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxDatapoints)) __obj.updateDynamic("MaxDatapoints")(MaxDatapoints.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (ScanBy != null) __obj.updateDynamic("ScanBy")(ScanBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMetricDataInput]

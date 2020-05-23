@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/core/query", "OrderBy")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/core/query", "OrderBy")
 @js.native
 class OrderBy protected () extends js.Object {
   def this(field: FieldPath) = this()

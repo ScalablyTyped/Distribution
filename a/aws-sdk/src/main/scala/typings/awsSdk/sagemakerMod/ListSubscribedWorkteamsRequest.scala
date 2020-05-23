@@ -22,9 +22,13 @@ trait ListSubscribedWorkteamsRequest extends js.Object {
 
 object ListSubscribedWorkteamsRequest {
   @scala.inline
-  def apply(MaxResults: Int | Double = null, NameContains: WorkteamName = null, NextToken: NextToken = null): ListSubscribedWorkteamsRequest = {
+  def apply(
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    NameContains: WorkteamName = null,
+    NextToken: NextToken = null
+  ): ListSubscribedWorkteamsRequest = {
     val __obj = js.Dynamic.literal()
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NameContains != null) __obj.updateDynamic("NameContains")(NameContains.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSubscribedWorkteamsRequest]

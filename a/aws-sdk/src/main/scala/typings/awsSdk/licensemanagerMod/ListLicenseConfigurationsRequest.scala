@@ -29,13 +29,13 @@ object ListLicenseConfigurationsRequest {
   def apply(
     Filters: Filters = null,
     LicenseConfigurationArns: StringList = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[BoxInteger] = js.undefined,
     NextToken: String = null
   ): ListLicenseConfigurationsRequest = {
     val __obj = js.Dynamic.literal()
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
     if (LicenseConfigurationArns != null) __obj.updateDynamic("LicenseConfigurationArns")(LicenseConfigurationArns.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListLicenseConfigurationsRequest]
   }

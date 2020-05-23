@@ -14,10 +14,10 @@ trait SigningOptions extends js.Object {
 
 object SigningOptions {
   @scala.inline
-  def apply(padding: Int | Double = null, saltLength: Int | Double = null): SigningOptions = {
+  def apply(padding: js.UndefOr[Double] = js.undefined, saltLength: js.UndefOr[Double] = js.undefined): SigningOptions = {
     val __obj = js.Dynamic.literal()
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (saltLength != null) __obj.updateDynamic("saltLength")(saltLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(saltLength)) __obj.updateDynamic("saltLength")(saltLength.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SigningOptions]
   }
 }

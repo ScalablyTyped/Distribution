@@ -1,7 +1,7 @@
 package typings.firebaseAdmin.admin.messaging
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.firebaseAdmin.AnonAction
+import typings.firebaseAdmin.anon.Action
 import typings.firebaseAdmin.firebaseAdminStrings.auto
 import typings.firebaseAdmin.firebaseAdminStrings.ltr
 import typings.firebaseAdmin.firebaseAdminStrings.rtl
@@ -16,12 +16,12 @@ import scala.scalajs.js.annotation._
   * [specification](https://developer.mozilla.org/en-US/docs/Web/API/notification/Notification).
   */
 trait WebpushNotification
-  extends /* key */ StringDictionary[js.Any] {
+  extends /* customData */ StringDictionary[js.Any] {
   /**
     * An array of notification actions representing the actions
     * available to the user when the notification is presented.
     */
-  var actions: js.UndefOr[js.Array[AnonAction]] = js.undefined
+  var actions: js.UndefOr[js.Array[Action]] = js.undefined
   /**
     * URL of the image used to represent the notification when there is
     * not enough space to display the notification itself.
@@ -93,8 +93,8 @@ trait WebpushNotification
 object WebpushNotification {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    actions: js.Array[AnonAction] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    actions: js.Array[Action] = null,
     badge: String = null,
     body: String = null,
     data: js.Any = null,
@@ -106,7 +106,7 @@ object WebpushNotification {
     requireInteraction: js.UndefOr[Boolean] = js.undefined,
     silent: js.UndefOr[Boolean] = js.undefined,
     tag: String = null,
-    timestamp: Int | Double = null,
+    timestamp: js.UndefOr[Double] = js.undefined,
     title: String = null,
     vibrate: Double | js.Array[Double] = null
   ): WebpushNotification = {
@@ -120,11 +120,11 @@ object WebpushNotification {
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (!js.isUndefined(renotify)) __obj.updateDynamic("renotify")(renotify.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireInteraction)) __obj.updateDynamic("requireInteraction")(requireInteraction.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(renotify)) __obj.updateDynamic("renotify")(renotify.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireInteraction)) __obj.updateDynamic("requireInteraction")(requireInteraction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (vibrate != null) __obj.updateDynamic("vibrate")(vibrate.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebpushNotification]

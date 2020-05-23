@@ -1,33 +1,8 @@
 package typings.babylonjs.BABYLON
 
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.DomManagement")
-@js.native
-class DomManagement () extends js.Object
-
-/* static members */
-@JSGlobal("BABYLON.DomManagement")
-@js.native
-object DomManagement extends js.Object {
-  /**
-    * Extracts text content from a DOM element hierarchy
-    * @param element defines the root element
-    * @returns a string
-    */
-  def GetDOMTextContent(element: HTMLElement): String = js.native
-  /**
-    * Checks if the navigator object exists
-    * @returns true if the navigator object exists
-    */
-  def IsNavigatorAvailable(): Boolean = js.native
-  /**
-    * Checks if the window object exists
-    * @returns true if the window object exists
-    */
-  def IsWindowObjectExist(): Boolean = js.native
-}
+trait DomManagement extends js.Object
 

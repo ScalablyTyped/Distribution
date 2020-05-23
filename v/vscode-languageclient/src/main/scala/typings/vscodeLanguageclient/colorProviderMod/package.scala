@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object colorProviderMod {
   type ProvideColorPresentationSignature = js.Function3[
     /* color */ typings.vscode.mod.Color, 
-    /* context */ typings.vscodeLanguageclient.AnonDocument, 
+    /* context */ typings.vscodeLanguageclient.anon.Document, 
     /* token */ typings.vscodeJsonrpc.cancellationMod.CancellationToken, 
     typings.vscode.mod.ProviderResult[js.Array[typings.vscode.mod.ColorPresentation]]
   ]

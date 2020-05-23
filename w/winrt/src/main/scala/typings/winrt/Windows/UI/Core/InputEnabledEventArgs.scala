@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.Core.InputEnabledEventArgs")
-@js.native
-class InputEnabledEventArgs () extends IInputEnabledEventArgs {
-  /* CompleteClass */
-  override var handled: Boolean = js.native
-  /* CompleteClass */
-  override var inputEnabled: Boolean = js.native
+trait InputEnabledEventArgs extends IInputEnabledEventArgs
+
+object InputEnabledEventArgs {
+  @scala.inline
+  def apply(handled: Boolean, inputEnabled: Boolean): InputEnabledEventArgs = {
+    val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any], inputEnabled = inputEnabled.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InputEnabledEventArgs]
+  }
 }
 

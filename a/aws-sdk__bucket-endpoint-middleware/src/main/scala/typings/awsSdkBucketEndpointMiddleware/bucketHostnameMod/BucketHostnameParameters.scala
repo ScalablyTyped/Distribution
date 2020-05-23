@@ -24,10 +24,10 @@ object BucketHostnameParameters {
     sslCompatible: js.UndefOr[Boolean] = js.undefined
   ): BucketHostnameParameters = {
     val __obj = js.Dynamic.literal(baseHostname = baseHostname.asInstanceOf[js.Any], bucketName = bucketName.asInstanceOf[js.Any])
-    if (!js.isUndefined(accelerateEndpoint)) __obj.updateDynamic("accelerateEndpoint")(accelerateEndpoint.asInstanceOf[js.Any])
-    if (!js.isUndefined(dualstackEndpoint)) __obj.updateDynamic("dualstackEndpoint")(dualstackEndpoint.asInstanceOf[js.Any])
-    if (!js.isUndefined(pathStyleEndpoint)) __obj.updateDynamic("pathStyleEndpoint")(pathStyleEndpoint.asInstanceOf[js.Any])
-    if (!js.isUndefined(sslCompatible)) __obj.updateDynamic("sslCompatible")(sslCompatible.asInstanceOf[js.Any])
+    if (!js.isUndefined(accelerateEndpoint)) __obj.updateDynamic("accelerateEndpoint")(accelerateEndpoint.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dualstackEndpoint)) __obj.updateDynamic("dualstackEndpoint")(dualstackEndpoint.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pathStyleEndpoint)) __obj.updateDynamic("pathStyleEndpoint")(pathStyleEndpoint.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sslCompatible)) __obj.updateDynamic("sslCompatible")(sslCompatible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketHostnameParameters]
   }
 }

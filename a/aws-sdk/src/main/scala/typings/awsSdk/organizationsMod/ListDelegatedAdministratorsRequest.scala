@@ -23,12 +23,12 @@ trait ListDelegatedAdministratorsRequest extends js.Object {
 object ListDelegatedAdministratorsRequest {
   @scala.inline
   def apply(
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: NextToken = null,
     ServicePrincipal: ServicePrincipal = null
   ): ListDelegatedAdministratorsRequest = {
     val __obj = js.Dynamic.literal()
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (ServicePrincipal != null) __obj.updateDynamic("ServicePrincipal")(ServicePrincipal.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDelegatedAdministratorsRequest]

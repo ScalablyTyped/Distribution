@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.ToggleButton")
 @js.native
-class ToggleButton protected () extends js.Object {
+trait ToggleButton extends js.Object {
   @JSName("Access.ToggleButton_typekey")
   var AccessDotToggleButton_typekey: ToggleButton = js.native
   var AddColon: Boolean = js.native

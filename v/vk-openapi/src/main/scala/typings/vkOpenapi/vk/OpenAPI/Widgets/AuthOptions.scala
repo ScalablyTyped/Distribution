@@ -12,11 +12,15 @@ trait AuthOptions extends js.Object {
 
 object AuthOptions {
   @scala.inline
-  def apply(authUrl: String = null, onAuth: /* user */ AuthUserData => Unit = null, width: Int | Double = null): AuthOptions = {
+  def apply(
+    authUrl: String = null,
+    onAuth: /* user */ AuthUserData => Unit = null,
+    width: js.UndefOr[Double] = js.undefined
+  ): AuthOptions = {
     val __obj = js.Dynamic.literal()
     if (authUrl != null) __obj.updateDynamic("authUrl")(authUrl.asInstanceOf[js.Any])
     if (onAuth != null) __obj.updateDynamic("onAuth")(js.Any.fromFunction1(onAuth))
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthOptions]
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jsplumb
 
-Typings are for version 2.13.1
+Typings are for version 2.13.2
 
 ## Library description:
 Visual connectivity for webapps

@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.TopBottomConditionalFormatData
 import typings.officeJs.Excel.Interfaces.TopBottomConditionalFormatLoadOptions
 import typings.officeJs.Excel.Interfaces.TopBottomConditionalFormatUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,15 +16,14 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.6]
   */
-@JSGlobal("Excel.TopBottomConditionalFormat")
 @js.native
-class TopBottomConditionalFormat () extends ClientObject {
+trait TopBottomConditionalFormat extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_TopBottomConditionalFormat: RequestContext = js.native
   /**
     *
-    * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
+    * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -43,7 +42,7 @@ class TopBottomConditionalFormat () extends ClientObject {
     */
   def load(): TopBottomConditionalFormat = js.native
   def load(options: TopBottomConditionalFormatLoadOptions): TopBottomConditionalFormat = js.native
-  def load(propertyNamesAndPaths: AnonExpand): TopBottomConditionalFormat = js.native
+  def load(propertyNamesAndPaths: Expand): TopBottomConditionalFormat = js.native
   def load(propertyNames: String): TopBottomConditionalFormat = js.native
   def load(propertyNames: js.Array[String]): TopBottomConditionalFormat = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.

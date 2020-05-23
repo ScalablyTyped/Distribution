@@ -12,9 +12,9 @@ trait IGetSnapshotRequest extends js.Object {
 
 object IGetSnapshotRequest {
   @scala.inline
-  def apply(snapshot: String = null): IGetSnapshotRequest = {
+  def apply(snapshot: js.UndefOr[Null | String] = js.undefined): IGetSnapshotRequest = {
     val __obj = js.Dynamic.literal()
-    if (snapshot != null) __obj.updateDynamic("snapshot")(snapshot.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapshot)) __obj.updateDynamic("snapshot")(snapshot.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGetSnapshotRequest]
   }
 }

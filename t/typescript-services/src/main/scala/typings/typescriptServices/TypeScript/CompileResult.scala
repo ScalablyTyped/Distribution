@@ -4,18 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.CompileResult")
-@js.native
-class CompileResult () extends js.Object {
-  var diagnostics: js.Array[Diagnostic] = js.native
-  var outputFiles: js.Array[OutputFile] = js.native
+trait CompileResult extends js.Object {
+  var diagnostics: js.Array[Diagnostic]
+  var outputFiles: js.Array[OutputFile]
 }
 
-/* static members */
-@JSGlobal("TypeScript.CompileResult")
-@js.native
-object CompileResult extends js.Object {
-  def fromDiagnostics(diagnostics: js.Array[Diagnostic]): CompileResult = js.native
-  def fromOutputFiles(outputFiles: js.Array[OutputFile]): CompileResult = js.native
+object CompileResult {
+  @scala.inline
+  def apply(diagnostics: js.Array[Diagnostic], outputFiles: js.Array[OutputFile]): CompileResult = {
+    val __obj = js.Dynamic.literal(diagnostics = diagnostics.asInstanceOf[js.Any], outputFiles = outputFiles.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CompileResult]
+  }
 }
 

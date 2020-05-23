@@ -1,6 +1,6 @@
 package typings.ckeditorCkeditor5Utils.mod
 
-import typings.ckeditorCkeditor5Utils.AnonPriority
+import typings.ckeditorCkeditor5Utils.anon.Priority
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ class KeystrokeHandler () extends js.Object {
   def set(
     keystroke: String,
     callback: js.Function2[/* keyEvtData */ KeystrokeInfo, /* cancel */ js.Function0[Unit], Unit],
-    options: AnonPriority
+    options: Priority
   ): Unit = js.native
   def set(
     keystroke: js.Array[String | Double],
@@ -27,7 +27,7 @@ class KeystrokeHandler () extends js.Object {
   def set(
     keystroke: js.Array[String | Double],
     callback: js.Function2[/* keyEvtData */ KeystrokeInfo, /* cancel */ js.Function0[Unit], Unit],
-    options: AnonPriority
+    options: Priority
   ): Unit = js.native
 }
 

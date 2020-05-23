@@ -21,7 +21,7 @@ object ChoiceColumn {
     displayAs: String = null
   ): ChoiceColumn = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowTextEntry)) __obj.updateDynamic("allowTextEntry")(allowTextEntry.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowTextEntry)) __obj.updateDynamic("allowTextEntry")(allowTextEntry.get.asInstanceOf[js.Any])
     if (choices != null) __obj.updateDynamic("choices")(choices.asInstanceOf[js.Any])
     if (displayAs != null) __obj.updateDynamic("displayAs")(displayAs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChoiceColumn]

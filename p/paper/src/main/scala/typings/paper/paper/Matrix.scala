@@ -26,36 +26,8 @@ import scala.scalajs.js.annotation._
   * knowledge of the underlying matrix (as opposed to say simply performing
   * matrix multiplication).
   */
-@JSGlobal("paper.Matrix")
 @js.native
-/** 
-  * Creates a 2D affine transformation matrix that describes the identity
-  * transformation.
-  */
-class Matrix () extends js.Object {
-  /** 
-    * Creates a 2D affine transformation matrix.
-    * 
-    * @param matrix - the matrix to copy the values from
-    */
-  def this(matrix: Matrix) = this()
-  /** 
-    * Creates a 2D affine transformation matrix.
-    * 
-    * @param values - the matrix values to initialize this matrix with
-    */
-  def this(values: js.Array[Double]) = this()
-  /** 
-    * Creates a 2D affine transformation matrix.
-    * 
-    * @param a - the a property of the transform
-    * @param b - the b property of the transform
-    * @param c - the c property of the transform
-    * @param d - the d property of the transform
-    * @param tx - the tx property of the transform
-    * @param ty - the ty property of the transform
-    */
-  def this(a: Double, b: Double, c: Double, d: Double, tx: Double, ty: Double) = this()
+trait Matrix extends js.Object {
   /** 
     * The value that affects the transformation along the x axis when scaling
     * or rotating, positioned at (0, 0) in the transformation matrix.

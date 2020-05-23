@@ -1,5 +1,6 @@
 package typings.cordovaPluginFileOpener2
 
+import typings.cordovaPluginFileOpener2.anon.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +11,7 @@ trait CordovaPluginsFileOpener2 extends js.Object {
     * Check if an app is already installed. Android platform only.
     */
   def appIsInstalled(packageId: String): Unit = js.native
-  def appIsInstalled(packageId: String, callbackContext: AnonError): Unit = js.native
+  def appIsInstalled(packageId: String, callbackContext: Error): Unit = js.native
   /**
     * Open a file with the default file opener and optional callback object:
     */

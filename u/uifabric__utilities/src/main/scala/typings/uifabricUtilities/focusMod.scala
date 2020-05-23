@@ -1,6 +1,7 @@
 package typings.uifabricUtilities
 
 import typings.std.HTMLElement
+import typings.uifabricUtilities.anon.Focus
 import typings.uifabricUtilities.uifabricUtilitiesStrings.`data-no-horizontal-wrap`
 import typings.uifabricUtilities.uifabricUtilitiesStrings.`data-no-vertical-wrap`
 import scala.scalajs.js
@@ -13,7 +14,7 @@ object focusMod extends js.Object {
   def doesElementContainFocus(element: HTMLElement): Boolean = js.native
   def focusAsync(): Unit = js.native
   def focusAsync(element: HTMLElement): Unit = js.native
-  def focusAsync(element: AnonFocus): Unit = js.native
+  def focusAsync(element: Focus): Unit = js.native
   def focusFirstChild(rootElement: HTMLElement): Boolean = js.native
   def getElementIndexPath(fromElement: HTMLElement, toElement: HTMLElement): js.Array[Double] = js.native
   def getFirstFocusable(rootElement: HTMLElement, currentElement: HTMLElement): HTMLElement | Null = js.native

@@ -12,7 +12,7 @@ object TSQueryOptions {
   @scala.inline
   def apply(visitAllChildren: js.UndefOr[Boolean] = js.undefined): TSQueryOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(visitAllChildren)) __obj.updateDynamic("visitAllChildren")(visitAllChildren.asInstanceOf[js.Any])
+    if (!js.isUndefined(visitAllChildren)) __obj.updateDynamic("visitAllChildren")(visitAllChildren.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSQueryOptions]
   }
 }

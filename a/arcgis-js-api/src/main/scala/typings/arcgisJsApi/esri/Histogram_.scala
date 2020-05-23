@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.horizontal
 import typings.arcgisJsApi.arcgisJsApiStrings.vertical
 import scala.scalajs.js
@@ -103,8 +102,4 @@ trait Histogram_ extends Widget_ {
   def labelFormatFunction(value: Double, `type`: String): String = js.native
   def labelFormatFunction(value: Double, `type`: String, index: Double): String = js.native
 }
-
-@JSGlobal("__esri.Histogram")
-@js.native
-object Histogram_ extends TopLevel[HistogramConstructor]
 

@@ -26,13 +26,25 @@ trait CreateFaqRequest extends js.Object {
     * The S3 location of the FAQ input data.
     */
   var S3Path: typings.awsSdk.kendraMod.S3Path = js.native
+  /**
+    * A list of key-value pairs that identify the FAQ. You can use the tags to identify and organize your resources and to control access to resources.
+    */
+  var Tags: js.UndefOr[TagList] = js.native
 }
 
 object CreateFaqRequest {
   @scala.inline
-  def apply(IndexId: IndexId, Name: FaqName, RoleArn: RoleArn, S3Path: S3Path, Description: Description = null): CreateFaqRequest = {
+  def apply(
+    IndexId: IndexId,
+    Name: FaqName,
+    RoleArn: RoleArn,
+    S3Path: S3Path,
+    Description: Description = null,
+    Tags: TagList = null
+  ): CreateFaqRequest = {
     val __obj = js.Dynamic.literal(IndexId = IndexId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any], S3Path = S3Path.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFaqRequest]
   }
 }

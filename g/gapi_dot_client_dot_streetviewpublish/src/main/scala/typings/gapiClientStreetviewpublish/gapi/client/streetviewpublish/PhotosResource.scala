@@ -1,9 +1,9 @@
 package typings.gapiClientStreetviewpublish.gapi.client.streetviewpublish
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientStreetviewpublish.AnonAccesstoken
-import typings.gapiClientStreetviewpublish.AnonFields
-import typings.gapiClientStreetviewpublish.AnonFilter
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientStreetviewpublish.anon.Accesstoken
+import typings.gapiClientStreetviewpublish.anon.Fields
+import typings.gapiClientStreetviewpublish.anon.Filter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +27,7 @@ trait PhotosResource extends js.Object {
     * DeletePhoto
     * for specific failures that can occur per photo.
     */
-  def batchDelete(request: AnonAccesstoken): Request_[BatchDeletePhotosResponse]
+  def batchDelete(request: Accesstoken): Request[BatchDeletePhotosResponse]
   /**
     * Gets the metadata of the specified
     * Photo batch.
@@ -46,7 +46,7 @@ trait PhotosResource extends js.Object {
     * GetPhoto
     * for specific failures that can occur per photo.
     */
-  def batchGet(request: AnonFields): Request_[BatchGetPhotosResponse]
+  def batchGet(request: Fields): Request[BatchGetPhotosResponse]
   /**
     * Updates the metadata of Photos, such
     * as pose, place association, connections, etc. Changing the pixels of photos
@@ -76,21 +76,21 @@ trait PhotosResource extends js.Object {
     * Pose.latLngPair has to be
     * filled as well. Otherwise, the request will fail.</aside>
     */
-  def batchUpdate(request: AnonAccesstoken): Request_[BatchUpdatePhotosResponse]
+  def batchUpdate(request: Accesstoken): Request[BatchUpdatePhotosResponse]
   /**
     * Lists all the Photos that belong to
     * the user.
     */
-  def list(request: AnonFilter): Request_[ListPhotosResponse]
+  def list(request: Filter): Request[ListPhotosResponse]
 }
 
 object PhotosResource {
   @scala.inline
   def apply(
-    batchDelete: AnonAccesstoken => Request_[BatchDeletePhotosResponse],
-    batchGet: AnonFields => Request_[BatchGetPhotosResponse],
-    batchUpdate: AnonAccesstoken => Request_[BatchUpdatePhotosResponse],
-    list: AnonFilter => Request_[ListPhotosResponse]
+    batchDelete: Accesstoken => Request[BatchDeletePhotosResponse],
+    batchGet: Fields => Request[BatchGetPhotosResponse],
+    batchUpdate: Accesstoken => Request[BatchUpdatePhotosResponse],
+    list: Filter => Request[ListPhotosResponse]
   ): PhotosResource = {
     val __obj = js.Dynamic.literal(batchDelete = js.Any.fromFunction1(batchDelete), batchGet = js.Any.fromFunction1(batchGet), batchUpdate = js.Any.fromFunction1(batchUpdate), list = js.Any.fromFunction1(list))
     __obj.asInstanceOf[PhotosResource]

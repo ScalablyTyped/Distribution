@@ -22,16 +22,16 @@ object IPolylineOptions {
     generalizable: js.UndefOr[Boolean] = js.undefined,
     strokeColor: String | Color = null,
     strokeDashArray: js.Array[Double] | String = null,
-    strokeThickness: Int | Double = null,
+    strokeThickness: js.UndefOr[Double] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined
   ): IPolylineOptions = {
     val __obj = js.Dynamic.literal()
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(generalizable)) __obj.updateDynamic("generalizable")(generalizable.asInstanceOf[js.Any])
+    if (!js.isUndefined(generalizable)) __obj.updateDynamic("generalizable")(generalizable.get.asInstanceOf[js.Any])
     if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
     if (strokeDashArray != null) __obj.updateDynamic("strokeDashArray")(strokeDashArray.asInstanceOf[js.Any])
-    if (strokeThickness != null) __obj.updateDynamic("strokeThickness")(strokeThickness.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(strokeThickness)) __obj.updateDynamic("strokeThickness")(strokeThickness.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPolylineOptions]
   }
 }

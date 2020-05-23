@@ -12,10 +12,14 @@ trait IPacket extends js.Object {
 
 object IPacket {
   @scala.inline
-  def apply(cmd: PacketCmd, length: Int | Double = null, messageId: Int | Double = null): IPacket = {
+  def apply(
+    cmd: PacketCmd,
+    length: js.UndefOr[Double] = js.undefined,
+    messageId: js.UndefOr[Double] = js.undefined
+  ): IPacket = {
     val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(messageId)) __obj.updateDynamic("messageId")(messageId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPacket]
   }
 }

@@ -1,15 +1,15 @@
 package typings.reduxForm.reduxFormMod
 
 import typings.react.mod.Component
-import typings.react.mod.ReactElement
-import typings.reduxForm.reducerMod.RegisteredFieldState
+import typings.reduxForm.mod.RegisteredFieldState
+import typings.std.HTMLElement
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait FormInstance[FormData, P, ErrorType]
+trait FormInstance[FormData, P]
   extends Component[P, js.Object, js.Any] {
   var dirty: Boolean = js.native
   var invalid: Boolean = js.native
@@ -17,7 +17,7 @@ trait FormInstance[FormData, P, ErrorType]
   var registeredFields: js.Array[RegisteredFieldState] = js.native
   var valid: Boolean = js.native
   var values: Partial[FormData] = js.native
-  var wrappedInstance: ReactElement = js.native
+  var wrappedInstance: js.UndefOr[HTMLElement] = js.native
   def reset(): Unit = js.native
   def resetSection(sections: String*): Unit = js.native
   def submit(): js.Promise[_] = js.native

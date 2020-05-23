@@ -5,26 +5,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.Services.DeclReferenceCompletionEntry")
-@js.native
-class DeclReferenceCompletionEntry protected () extends CachedCompletionEntryDetails {
-  def this(name: String, kind: String, kindModifiers: String, decl: PullDecl) = this()
-  var decl: PullDecl = js.native
-  /* CompleteClass */
-  override var docComment: String = js.native
-  /* CompleteClass */
-  override var fullSymbolName: String = js.native
-  var hasBeenResolved: js.Any = js.native
-  /* CompleteClass */
-  override var kind: String = js.native
-  /* CompleteClass */
-  override var kindModifiers: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
-  /* CompleteClass */
-  override var `type`: String = js.native
-  /* CompleteClass */
-  override def isResolved(): Boolean = js.native
-  def resolve(`type`: String, fullSymbolName: String, docComments: String): Unit = js.native
+trait DeclReferenceCompletionEntry extends CachedCompletionEntryDetails {
+  var decl: PullDecl
+  var hasBeenResolved: js.Any
+  def resolve(`type`: String, fullSymbolName: String, docComments: String): Unit
+}
+
+object DeclReferenceCompletionEntry {
+  @scala.inline
+  def apply(
+    decl: PullDecl,
+    docComment: String,
+    fullSymbolName: String,
+    hasBeenResolved: js.Any,
+    isResolved: () => Boolean,
+    kind: String,
+    kindModifiers: String,
+    name: String,
+    resolve: (String, String, String) => Unit,
+    `type`: String
+  ): DeclReferenceCompletionEntry = {
+    val __obj = js.Dynamic.literal(decl = decl.asInstanceOf[js.Any], docComment = docComment.asInstanceOf[js.Any], fullSymbolName = fullSymbolName.asInstanceOf[js.Any], hasBeenResolved = hasBeenResolved.asInstanceOf[js.Any], isResolved = js.Any.fromFunction0(isResolved), kind = kind.asInstanceOf[js.Any], kindModifiers = kindModifiers.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resolve = js.Any.fromFunction3(resolve))
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DeclReferenceCompletionEntry]
+  }
 }
 

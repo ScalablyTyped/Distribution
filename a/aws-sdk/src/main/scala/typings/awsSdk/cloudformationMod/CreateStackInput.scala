@@ -82,8 +82,8 @@ object CreateStackInput {
     StackName: StackName,
     Capabilities: Capabilities = null,
     ClientRequestToken: ClientRequestToken = null,
-    DisableRollback: js.UndefOr[Boolean] = js.undefined,
-    EnableTerminationProtection: js.UndefOr[Boolean] = js.undefined,
+    DisableRollback: js.UndefOr[DisableRollback] = js.undefined,
+    EnableTerminationProtection: js.UndefOr[EnableTerminationProtection] = js.undefined,
     NotificationARNs: NotificationARNs = null,
     OnFailure: OnFailure = null,
     Parameters: Parameters = null,
@@ -95,13 +95,13 @@ object CreateStackInput {
     Tags: Tags = null,
     TemplateBody: TemplateBody = null,
     TemplateURL: TemplateURL = null,
-    TimeoutInMinutes: Int | Double = null
+    TimeoutInMinutes: js.UndefOr[TimeoutMinutes] = js.undefined
   ): CreateStackInput = {
     val __obj = js.Dynamic.literal(StackName = StackName.asInstanceOf[js.Any])
     if (Capabilities != null) __obj.updateDynamic("Capabilities")(Capabilities.asInstanceOf[js.Any])
     if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisableRollback)) __obj.updateDynamic("DisableRollback")(DisableRollback.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableTerminationProtection)) __obj.updateDynamic("EnableTerminationProtection")(EnableTerminationProtection.asInstanceOf[js.Any])
+    if (!js.isUndefined(DisableRollback)) __obj.updateDynamic("DisableRollback")(DisableRollback.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableTerminationProtection)) __obj.updateDynamic("EnableTerminationProtection")(EnableTerminationProtection.get.asInstanceOf[js.Any])
     if (NotificationARNs != null) __obj.updateDynamic("NotificationARNs")(NotificationARNs.asInstanceOf[js.Any])
     if (OnFailure != null) __obj.updateDynamic("OnFailure")(OnFailure.asInstanceOf[js.Any])
     if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
@@ -113,7 +113,7 @@ object CreateStackInput {
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     if (TemplateBody != null) __obj.updateDynamic("TemplateBody")(TemplateBody.asInstanceOf[js.Any])
     if (TemplateURL != null) __obj.updateDynamic("TemplateURL")(TemplateURL.asInstanceOf[js.Any])
-    if (TimeoutInMinutes != null) __obj.updateDynamic("TimeoutInMinutes")(TimeoutInMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(TimeoutInMinutes)) __obj.updateDynamic("TimeoutInMinutes")(TimeoutInMinutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateStackInput]
   }
 }

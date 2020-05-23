@@ -13,8 +13,8 @@ object XmlRenderingOptions {
   @scala.inline
   def apply(sourcepos: js.UndefOr[Boolean] = js.undefined, time: js.UndefOr[Boolean] = js.undefined): XmlRenderingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(sourcepos)) __obj.updateDynamic("sourcepos")(sourcepos.asInstanceOf[js.Any])
-    if (!js.isUndefined(time)) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourcepos)) __obj.updateDynamic("sourcepos")(sourcepos.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(time)) __obj.updateDynamic("time")(time.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[XmlRenderingOptions]
   }
 }

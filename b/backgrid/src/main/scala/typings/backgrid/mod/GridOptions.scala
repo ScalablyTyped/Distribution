@@ -2,13 +2,14 @@ package typings.backgrid.mod
 
 import typings.backbone.mod.Collection
 import typings.backbone.mod.Model
+import typings.backbone.mod.ModelSetOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GridOptions extends js.Object {
   var body: js.UndefOr[Body] = js.undefined
-  var collection: Collection[Model]
+  var collection: Collection[Model[_, ModelSetOptions]]
   var columns: js.Array[Column]
   var footer: js.UndefOr[Footer] = js.undefined
   var header: js.UndefOr[Header] = js.undefined
@@ -18,7 +19,7 @@ trait GridOptions extends js.Object {
 object GridOptions {
   @scala.inline
   def apply(
-    collection: Collection[Model],
+    collection: Collection[Model[_, ModelSetOptions]],
     columns: js.Array[Column],
     body: Body = null,
     footer: Footer = null,

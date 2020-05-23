@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`non-metric`
 import typings.arcgisJsApi.arcgisJsApiStrings.dual
 import typings.arcgisJsApi.arcgisJsApiStrings.line
@@ -39,8 +38,4 @@ trait ScaleBar extends Widget_ {
     */
   var viewModel: ScaleBarViewModel = js.native
 }
-
-@JSGlobal("__esri.ScaleBar")
-@js.native
-object ScaleBar extends TopLevel[ScaleBarConstructor]
 

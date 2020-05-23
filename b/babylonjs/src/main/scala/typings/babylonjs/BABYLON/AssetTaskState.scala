@@ -1,6 +1,5 @@
 package typings.babylonjs.BABYLON
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,20 +33,6 @@ object AssetTaskState extends js.Object {
     */
   @js.native
   sealed trait RUNNING extends AssetTaskState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AssetTaskState with Double] = js.native
-  /* 2 */ @js.native
-  object DONE extends TopLevel[DONE with Double]
-  
-  /* 3 */ @js.native
-  object ERROR extends TopLevel[ERROR with Double]
-  
-  /* 0 */ @js.native
-  object INIT extends TopLevel[INIT with Double]
-  
-  /* 1 */ @js.native
-  object RUNNING extends TopLevel[RUNNING with Double]
   
 }
 

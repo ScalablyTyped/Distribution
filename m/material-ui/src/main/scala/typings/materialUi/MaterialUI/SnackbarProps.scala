@@ -27,7 +27,7 @@ object SnackbarProps {
   def apply(
     open: Boolean,
     action: ReactNode = null,
-    autoHideDuration: Int | Double = null,
+    autoHideDuration: js.UndefOr[Double] = js.undefined,
     bodyStyle: CSSProperties = null,
     className: String = null,
     contentStyle: CSSProperties = null,
@@ -38,7 +38,7 @@ object SnackbarProps {
   ): SnackbarProps = {
     val __obj = js.Dynamic.literal(open = open.asInstanceOf[js.Any])
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (autoHideDuration != null) __obj.updateDynamic("autoHideDuration")(autoHideDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHideDuration)) __obj.updateDynamic("autoHideDuration")(autoHideDuration.get.asInstanceOf[js.Any])
     if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle.asInstanceOf[js.Any])

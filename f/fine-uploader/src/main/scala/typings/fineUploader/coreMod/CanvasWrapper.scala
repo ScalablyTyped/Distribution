@@ -30,13 +30,13 @@ object CanvasWrapper {
   def apply(
     canvas: HTMLCanvasElement = null,
     name: String = null,
-    quality: Int | Double = null,
+    quality: js.UndefOr[Double] = js.undefined,
     `type`: MimeType = null
   ): CanvasWrapper = {
     val __obj = js.Dynamic.literal()
     if (canvas != null) __obj.updateDynamic("canvas")(canvas.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanvasWrapper]
   }

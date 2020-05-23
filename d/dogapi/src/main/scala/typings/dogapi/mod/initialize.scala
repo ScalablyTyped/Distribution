@@ -1,6 +1,6 @@
 package typings.dogapi.mod
 
-import typings.dogapi.AnonApikey
+import typings.dogapi.anon.Apihost
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("dogapi", "initialize")
 @js.native
 object initialize extends js.Object {
-  def apply(opts: AnonApikey): Unit = js.native
+  def apply(opts: Apihost): Unit = js.native
 }
 

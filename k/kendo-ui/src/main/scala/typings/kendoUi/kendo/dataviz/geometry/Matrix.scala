@@ -1,13 +1,12 @@
 package typings.kendoUi.kendo.dataviz.geometry
 
-import typings.kendoUi.kendo.Observable_
+import typings.kendoUi.kendo.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.dataviz.geometry.Matrix")
 @js.native
-class Matrix () extends Observable_ {
+trait Matrix extends Observable {
   var a: Double = js.native
   var b: Double = js.native
   var c: Double = js.native
@@ -20,15 +19,5 @@ class Matrix () extends Observable_ {
   def round(digits: Double): typings.kendoUi.kendo.geometry.Matrix = js.native
   def toArray(digits: Double): js.Any = js.native
   def toString(digits: Double, separator: String): String = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.dataviz.geometry.Matrix")
-@js.native
-object Matrix extends js.Object {
-  def rotate(angle: Double, x: Double, y: Double): typings.kendoUi.kendo.geometry.Matrix = js.native
-  def scale(scaleX: Double, scaleY: Double): typings.kendoUi.kendo.geometry.Matrix = js.native
-  def translate(x: Double, y: Double): typings.kendoUi.kendo.geometry.Matrix = js.native
-  def unit(): typings.kendoUi.kendo.geometry.Matrix = js.native
 }
 

@@ -49,10 +49,10 @@ object ConfigureParams {
   ): ConfigureParams = {
     val __obj = js.Dynamic.literal()
     if (accountName != null) __obj.updateDynamic("accountName")(accountName.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceConsentPrompt)) __obj.updateDynamic("forceConsentPrompt")(forceConsentPrompt.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceConsentPrompt)) __obj.updateDynamic("forceConsentPrompt")(forceConsentPrompt.get.asInstanceOf[js.Any])
     if (hostedDomain != null) __obj.updateDynamic("hostedDomain")(hostedDomain.asInstanceOf[js.Any])
     if (iosClientId != null) __obj.updateDynamic("iosClientId")(iosClientId.asInstanceOf[js.Any])
-    if (!js.isUndefined(offlineAccess)) __obj.updateDynamic("offlineAccess")(offlineAccess.asInstanceOf[js.Any])
+    if (!js.isUndefined(offlineAccess)) __obj.updateDynamic("offlineAccess")(offlineAccess.get.asInstanceOf[js.Any])
     if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
     if (webClientId != null) __obj.updateDynamic("webClientId")(webClientId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigureParams]

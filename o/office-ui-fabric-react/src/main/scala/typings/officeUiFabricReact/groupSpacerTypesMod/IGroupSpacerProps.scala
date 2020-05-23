@@ -29,12 +29,12 @@ object IGroupSpacerProps {
   @scala.inline
   def apply(
     count: Double,
-    indentWidth: Int | Double = null,
+    indentWidth: js.UndefOr[Double] = js.undefined,
     styles: IStyleFunctionOrObject[IGroupSpacerStyleProps, IGroupSpacerStyles] = null,
     theme: ITheme = null
   ): IGroupSpacerProps = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
-    if (indentWidth != null) __obj.updateDynamic("indentWidth")(indentWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(indentWidth)) __obj.updateDynamic("indentWidth")(indentWidth.get.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGroupSpacerProps]

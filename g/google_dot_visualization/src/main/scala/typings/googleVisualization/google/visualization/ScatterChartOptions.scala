@@ -55,19 +55,19 @@ object ScatterChartOptions {
     colors: js.Array[String] = null,
     crosshair: ChartCrosshair = null,
     curveType: none | function = null,
-    dataOpacity: Int | Double = null,
+    dataOpacity: js.UndefOr[Double] = js.undefined,
     enableInteractivity: js.UndefOr[Boolean] = js.undefined,
     explorer: ChartExplorer = null,
     fontName: String = null,
-    fontSize: Int | Double = null,
+    fontSize: js.UndefOr[Double] = js.undefined,
     forceIFrame: js.UndefOr[Boolean] = js.undefined,
     hAxis: ChartAxis = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     legend: ChartLegend | none = null,
-    lineWidth: Int | Double = null,
+    lineWidth: js.UndefOr[Double] = js.undefined,
     orientation: ChartOrientation = null,
     pointShape: ChartPointShape = null,
-    pointSize: Int | Double = null,
+    pointSize: js.UndefOr[Double] = js.undefined,
     pointsVisible: js.UndefOr[Boolean] = js.undefined,
     selectionMode: ChartSelectionMode = null,
     series: js.Any = null,
@@ -78,7 +78,7 @@ object ScatterChartOptions {
     tooltip: ChartTooltip = null,
     trendlines: NumberDictionary[ChartTrendlineOptions] = null,
     vAxis: ChartAxis = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): ScatterChartOptions = {
     val __obj = js.Dynamic.literal()
     if (aggregationTarget != null) __obj.updateDynamic("aggregationTarget")(aggregationTarget.asInstanceOf[js.Any])
@@ -90,20 +90,20 @@ object ScatterChartOptions {
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     if (crosshair != null) __obj.updateDynamic("crosshair")(crosshair.asInstanceOf[js.Any])
     if (curveType != null) __obj.updateDynamic("curveType")(curveType.asInstanceOf[js.Any])
-    if (dataOpacity != null) __obj.updateDynamic("dataOpacity")(dataOpacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableInteractivity)) __obj.updateDynamic("enableInteractivity")(enableInteractivity.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataOpacity)) __obj.updateDynamic("dataOpacity")(dataOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableInteractivity)) __obj.updateDynamic("enableInteractivity")(enableInteractivity.get.asInstanceOf[js.Any])
     if (explorer != null) __obj.updateDynamic("explorer")(explorer.asInstanceOf[js.Any])
     if (fontName != null) __obj.updateDynamic("fontName")(fontName.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceIFrame)) __obj.updateDynamic("forceIFrame")(forceIFrame.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceIFrame)) __obj.updateDynamic("forceIFrame")(forceIFrame.get.asInstanceOf[js.Any])
     if (hAxis != null) __obj.updateDynamic("hAxis")(hAxis.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (pointShape != null) __obj.updateDynamic("pointShape")(pointShape.asInstanceOf[js.Any])
-    if (pointSize != null) __obj.updateDynamic("pointSize")(pointSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(pointsVisible)) __obj.updateDynamic("pointsVisible")(pointsVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointSize)) __obj.updateDynamic("pointSize")(pointSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointsVisible)) __obj.updateDynamic("pointsVisible")(pointsVisible.get.asInstanceOf[js.Any])
     if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
     if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
@@ -113,7 +113,7 @@ object ScatterChartOptions {
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (trendlines != null) __obj.updateDynamic("trendlines")(trendlines.asInstanceOf[js.Any])
     if (vAxis != null) __obj.updateDynamic("vAxis")(vAxis.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScatterChartOptions]
   }
 }

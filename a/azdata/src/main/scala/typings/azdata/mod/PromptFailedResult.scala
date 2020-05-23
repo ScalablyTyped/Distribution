@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait PromptFailedResult extends js.Object {
   /**
-  		 * Type guard for differentiating user cancelled sign in errors from other errors
-  		 */
+    * Type guard for differentiating user cancelled sign in errors from other errors
+    */
   var canceled: Boolean
 }
 

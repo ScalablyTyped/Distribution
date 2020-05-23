@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.View")
 @js.native
-class View protected () extends js.Object {
+trait View extends js.Object {
   val Application: typings.activexWord.Word.Application = js.native
   var BrowseToWindow: Double = js.native
   var ConflictMode: Boolean = js.native

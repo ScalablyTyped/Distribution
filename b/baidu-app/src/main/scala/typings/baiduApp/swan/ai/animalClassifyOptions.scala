@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * 用于检测和识别图片中的动物信息
-		 */
+  * 用于检测和识别图片中的动物信息
+  */
 trait animalClassifyOptions
   extends BaseOptions[js.Any, js.Any] {
   var image: String
@@ -25,13 +25,13 @@ object animalClassifyOptions {
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
     success: /* res */ animalClassifyResponse => Unit = null,
-    top_num: Int | Double = null
+    top_num: js.UndefOr[Double] = js.undefined
   ): animalClassifyOptions = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
-    if (top_num != null) __obj.updateDynamic("top_num")(top_num.asInstanceOf[js.Any])
+    if (!js.isUndefined(top_num)) __obj.updateDynamic("top_num")(top_num.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[animalClassifyOptions]
   }
 }

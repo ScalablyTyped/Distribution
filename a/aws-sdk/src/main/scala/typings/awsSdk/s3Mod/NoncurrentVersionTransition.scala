@@ -18,9 +18,9 @@ trait NoncurrentVersionTransition extends js.Object {
 
 object NoncurrentVersionTransition {
   @scala.inline
-  def apply(NoncurrentDays: Int | Double = null, StorageClass: TransitionStorageClass = null): NoncurrentVersionTransition = {
+  def apply(NoncurrentDays: js.UndefOr[Days] = js.undefined, StorageClass: TransitionStorageClass = null): NoncurrentVersionTransition = {
     val __obj = js.Dynamic.literal()
-    if (NoncurrentDays != null) __obj.updateDynamic("NoncurrentDays")(NoncurrentDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(NoncurrentDays)) __obj.updateDynamic("NoncurrentDays")(NoncurrentDays.get.asInstanceOf[js.Any])
     if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoncurrentVersionTransition]
   }

@@ -179,7 +179,7 @@ object Model {
     bufferEnd: /* e */ BufferEndEventArgs => Unit = null,
     bufferStart: /* e */ BufferStartEventArgs => Unit = null,
     bufferingMode: BufferingMode | String = null,
-    currentPageNumber: Int | Double = null,
+    currentPageNumber: js.UndefOr[Double] = js.undefined,
     destroy: /* e */ DestroyEventArgs => Unit = null,
     documentLoad: /* e */ DocumentLoadEventArgs => Unit = null,
     documentPath: String = null,
@@ -203,7 +203,7 @@ object Model {
     locale: String = null,
     pageChange: /* e */ PageChangeEventArgs => Unit = null,
     pageClick: /* e */ PageClickEventArgs => Unit = null,
-    pageCount: Int | Double = null,
+    pageCount: js.UndefOr[Double] = js.undefined,
     pdfService: PdfService | String = null,
     serverActionSettings: ServerActionSettings = null,
     serviceUrl: String = null,
@@ -217,13 +217,13 @@ object Model {
     toolbarSettings: ToolbarSettings = null,
     underlineSettings: UnderlineSettings = null,
     zoomChange: /* e */ ZoomChangeEventArgs => Unit = null,
-    zoomPercentage: Int | Double = null
+    zoomPercentage: js.UndefOr[Double] = js.undefined
   ): Model = {
     val __obj = js.Dynamic.literal()
     if (afterPrint != null) __obj.updateDynamic("afterPrint")(js.Any.fromFunction1(afterPrint))
     if (ajaxRequestFailure != null) __obj.updateDynamic("ajaxRequestFailure")(js.Any.fromFunction1(ajaxRequestFailure))
     if (ajaxRequestSuccess != null) __obj.updateDynamic("ajaxRequestSuccess")(js.Any.fromFunction1(ajaxRequestSuccess))
-    if (!js.isUndefined(allowClientBuffering)) __obj.updateDynamic("allowClientBuffering")(allowClientBuffering.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowClientBuffering)) __obj.updateDynamic("allowClientBuffering")(allowClientBuffering.get.asInstanceOf[js.Any])
     if (annotationAdd != null) __obj.updateDynamic("annotationAdd")(js.Any.fromFunction1(annotationAdd))
     if (annotationContextMenu != null) __obj.updateDynamic("annotationContextMenu")(annotationContextMenu.asInstanceOf[js.Any])
     if (annotationPropertiesChange != null) __obj.updateDynamic("annotationPropertiesChange")(js.Any.fromFunction1(annotationPropertiesChange))
@@ -233,31 +233,31 @@ object Model {
     if (bufferEnd != null) __obj.updateDynamic("bufferEnd")(js.Any.fromFunction1(bufferEnd))
     if (bufferStart != null) __obj.updateDynamic("bufferStart")(js.Any.fromFunction1(bufferStart))
     if (bufferingMode != null) __obj.updateDynamic("bufferingMode")(bufferingMode.asInstanceOf[js.Any])
-    if (currentPageNumber != null) __obj.updateDynamic("currentPageNumber")(currentPageNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentPageNumber)) __obj.updateDynamic("currentPageNumber")(currentPageNumber.get.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (documentLoad != null) __obj.updateDynamic("documentLoad")(js.Any.fromFunction1(documentLoad))
     if (documentPath != null) __obj.updateDynamic("documentPath")(documentPath.asInstanceOf[js.Any])
     if (documentUnload != null) __obj.updateDynamic("documentUnload")(js.Any.fromFunction1(documentUnload))
     if (downloadEnd != null) __obj.updateDynamic("downloadEnd")(js.Any.fromFunction1(downloadEnd))
     if (downloadStart != null) __obj.updateDynamic("downloadStart")(js.Any.fromFunction1(downloadStart))
-    if (!js.isUndefined(enableHighlightAnnotation)) __obj.updateDynamic("enableHighlightAnnotation")(enableHighlightAnnotation.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableHyperlink)) __obj.updateDynamic("enableHyperlink")(enableHyperlink.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSignature)) __obj.updateDynamic("enableSignature")(enableSignature.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableStrikethroughAnnotation)) __obj.updateDynamic("enableStrikethroughAnnotation")(enableStrikethroughAnnotation.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTextMarkupAnnotations)) __obj.updateDynamic("enableTextMarkupAnnotations")(enableTextMarkupAnnotations.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTextSelection)) __obj.updateDynamic("enableTextSelection")(enableTextSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableUnderlineAnnotation)) __obj.updateDynamic("enableUnderlineAnnotation")(enableUnderlineAnnotation.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableHighlightAnnotation)) __obj.updateDynamic("enableHighlightAnnotation")(enableHighlightAnnotation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableHyperlink)) __obj.updateDynamic("enableHyperlink")(enableHyperlink.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSignature)) __obj.updateDynamic("enableSignature")(enableSignature.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableStrikethroughAnnotation)) __obj.updateDynamic("enableStrikethroughAnnotation")(enableStrikethroughAnnotation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTextMarkupAnnotations)) __obj.updateDynamic("enableTextMarkupAnnotations")(enableTextMarkupAnnotations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTextSelection)) __obj.updateDynamic("enableTextSelection")(enableTextSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableUnderlineAnnotation)) __obj.updateDynamic("enableUnderlineAnnotation")(enableUnderlineAnnotation.get.asInstanceOf[js.Any])
     if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
     if (highlightSettings != null) __obj.updateDynamic("highlightSettings")(highlightSettings.asInstanceOf[js.Any])
     if (hyperlinkClick != null) __obj.updateDynamic("hyperlinkClick")(js.Any.fromFunction1(hyperlinkClick))
     if (hyperlinkOpenState != null) __obj.updateDynamic("hyperlinkOpenState")(hyperlinkOpenState.asInstanceOf[js.Any])
     if (interactionMode != null) __obj.updateDynamic("interactionMode")(interactionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDocumentEdited)) __obj.updateDynamic("isDocumentEdited")(isDocumentEdited.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDocumentEdited)) __obj.updateDynamic("isDocumentEdited")(isDocumentEdited.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.get.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (pageChange != null) __obj.updateDynamic("pageChange")(js.Any.fromFunction1(pageChange))
     if (pageClick != null) __obj.updateDynamic("pageClick")(js.Any.fromFunction1(pageClick))
-    if (pageCount != null) __obj.updateDynamic("pageCount")(pageCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageCount)) __obj.updateDynamic("pageCount")(pageCount.get.asInstanceOf[js.Any])
     if (pdfService != null) __obj.updateDynamic("pdfService")(pdfService.asInstanceOf[js.Any])
     if (serverActionSettings != null) __obj.updateDynamic("serverActionSettings")(serverActionSettings.asInstanceOf[js.Any])
     if (serviceUrl != null) __obj.updateDynamic("serviceUrl")(serviceUrl.asInstanceOf[js.Any])
@@ -271,7 +271,7 @@ object Model {
     if (toolbarSettings != null) __obj.updateDynamic("toolbarSettings")(toolbarSettings.asInstanceOf[js.Any])
     if (underlineSettings != null) __obj.updateDynamic("underlineSettings")(underlineSettings.asInstanceOf[js.Any])
     if (zoomChange != null) __obj.updateDynamic("zoomChange")(js.Any.fromFunction1(zoomChange))
-    if (zoomPercentage != null) __obj.updateDynamic("zoomPercentage")(zoomPercentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomPercentage)) __obj.updateDynamic("zoomPercentage")(zoomPercentage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
 }

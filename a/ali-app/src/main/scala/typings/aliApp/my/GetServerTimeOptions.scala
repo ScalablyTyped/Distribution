@@ -1,6 +1,6 @@
 package typings.aliApp.my
 
-import typings.aliApp.AnonTime
+import typings.aliApp.anon.Time
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait GetServerTimeOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")
-  var success_GetServerTimeOptions: js.UndefOr[js.Function1[/* res */ AnonTime, Unit]] = js.undefined
+  var success_GetServerTimeOptions: js.UndefOr[js.Function1[/* res */ Time, Unit]] = js.undefined
 }
 
 object GetServerTimeOptions {
@@ -18,7 +18,7 @@ object GetServerTimeOptions {
   def apply(
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
-    success: /* res */ AnonTime => Unit = null
+    success: /* res */ Time => Unit = null
   ): GetServerTimeOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))

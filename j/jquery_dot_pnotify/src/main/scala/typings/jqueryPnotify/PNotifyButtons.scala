@@ -1,5 +1,7 @@
 package typings.jqueryPnotify
 
+import typings.jqueryPnotify.anon.Close
+import typings.jqueryPnotify.anon.Closer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +10,7 @@ trait PNotifyButtons extends js.Object {
   /**
     * The classes to use for button icons. Leave them null to use the classes from the styling you're using.
     */
-  var classes: js.UndefOr[AnonCloser] = js.undefined
+  var classes: js.UndefOr[Closer] = js.undefined
   /**
     * Provide a button for the user to manually close the notice.
     */
@@ -20,7 +22,7 @@ trait PNotifyButtons extends js.Object {
   /**
     * The various displayed text, helps facilitating internationalization.
     */
-  var labels: js.UndefOr[AnonClose] = js.undefined
+  var labels: js.UndefOr[Close] = js.undefined
   /**
     * Show the buttons even when the nonblock module is in use.
     */
@@ -38,22 +40,22 @@ trait PNotifyButtons extends js.Object {
 object PNotifyButtons {
   @scala.inline
   def apply(
-    classes: AnonCloser = null,
+    classes: Closer = null,
     closer: js.UndefOr[Boolean] = js.undefined,
     closer_hover: js.UndefOr[Boolean] = js.undefined,
-    labels: AnonClose = null,
+    labels: Close = null,
     show_on_nonblock: js.UndefOr[Boolean] = js.undefined,
     sticker: js.UndefOr[Boolean] = js.undefined,
     sticker_hover: js.UndefOr[Boolean] = js.undefined
   ): PNotifyButtons = {
     val __obj = js.Dynamic.literal()
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (!js.isUndefined(closer)) __obj.updateDynamic("closer")(closer.asInstanceOf[js.Any])
-    if (!js.isUndefined(closer_hover)) __obj.updateDynamic("closer_hover")(closer_hover.asInstanceOf[js.Any])
+    if (!js.isUndefined(closer)) __obj.updateDynamic("closer")(closer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(closer_hover)) __obj.updateDynamic("closer_hover")(closer_hover.get.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (!js.isUndefined(show_on_nonblock)) __obj.updateDynamic("show_on_nonblock")(show_on_nonblock.asInstanceOf[js.Any])
-    if (!js.isUndefined(sticker)) __obj.updateDynamic("sticker")(sticker.asInstanceOf[js.Any])
-    if (!js.isUndefined(sticker_hover)) __obj.updateDynamic("sticker_hover")(sticker_hover.asInstanceOf[js.Any])
+    if (!js.isUndefined(show_on_nonblock)) __obj.updateDynamic("show_on_nonblock")(show_on_nonblock.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sticker)) __obj.updateDynamic("sticker")(sticker.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sticker_hover)) __obj.updateDynamic("sticker_hover")(sticker_hover.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PNotifyButtons]
   }
 }

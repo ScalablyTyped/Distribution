@@ -1,5 +1,12 @@
 package typings.cordovaPluginGlobalization
 
+import typings.cordovaPluginGlobalization.anon.Dst
+import typings.cordovaPluginGlobalization.anon.FormatLength
+import typings.cordovaPluginGlobalization.anon.Item
+import typings.cordovaPluginGlobalization.anon.Type
+import typings.cordovaPluginGlobalization.anon.Value
+import typings.cordovaPluginGlobalization.anon.ValueArray
+import typings.cordovaPluginGlobalization.anon.ValueNumber
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,14 +28,14 @@ trait Globalization extends js.Object {
     */
   def dateToString(
     date: Date,
-    onSuccess: js.Function1[/* date */ AnonValue, Unit],
+    onSuccess: js.Function1[/* date */ Value, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit]
   ): Unit = js.native
   def dateToString(
     date: Date,
-    onSuccess: js.Function1[/* date */ AnonValue, Unit],
+    onSuccess: js.Function1[/* date */ Value, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit],
-    options: AnonFormatLength
+    options: FormatLength
   ): Unit = js.native
   /**
     * Returns a pattern string to format and parse currency values according to the client's user preferences and ISO 4217 currency code.
@@ -52,13 +59,13 @@ trait Globalization extends js.Object {
     * @param options   Optional parameters. Default: {type:'wide', item:'months'}
     */
   def getDateNames(
-    onSuccess: js.Function1[/* names */ AnonValueArray, Unit],
+    onSuccess: js.Function1[/* names */ ValueArray, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit]
   ): Unit = js.native
   def getDateNames(
-    onSuccess: js.Function1[/* names */ AnonValueArray, Unit],
+    onSuccess: js.Function1[/* names */ ValueArray, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit],
-    options: AnonItem
+    options: Item
   ): Unit = js.native
   /**
     * Returns a pattern string to format and parse dates according to the client's user preferences.
@@ -74,7 +81,7 @@ trait Globalization extends js.Object {
   def getDatePattern(
     onSuccess: js.Function1[/* datePattern */ GlobalizationDatePattern, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit],
-    options: AnonItem
+    options: Item
   ): Unit = js.native
   /**
     * Returns the first day of the week according to the client's user preferences and calendar.
@@ -84,7 +91,7 @@ trait Globalization extends js.Object {
     *                  The error's expected code is GlobalizationError.UNKNOWN_ERROR.
     */
   def getFirstDayOfWeek(
-    onSuccess: js.Function1[/* day */ AnonValueNumber, Unit],
+    onSuccess: js.Function1[/* day */ ValueNumber, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit]
   ): Unit = js.native
   /**
@@ -95,7 +102,7 @@ trait Globalization extends js.Object {
     *                  The error's expected code is GlobalizationError.UNKNOWN\_ERROR.
     */
   def getLocaleName(
-    onSuccess: js.Function1[/* locale */ AnonValue, Unit],
+    onSuccess: js.Function1[/* locale */ Value, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit]
   ): Unit = js.native
   /**
@@ -112,7 +119,7 @@ trait Globalization extends js.Object {
   def getNumberPattern(
     onSuccess: js.Function1[/* result */ GlobalizationNumberPattern, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit],
-    format: AnonType
+    format: Type
   ): Unit = js.native
   /**
     * Get the string identifier for the client's current language.
@@ -122,7 +129,7 @@ trait Globalization extends js.Object {
     *                  The error's expected code is GlobalizationError.UNKNOWN_ERROR.
     */
   def getPreferredLanguage(
-    onSuccess: js.Function1[/* language */ AnonValue, Unit],
+    onSuccess: js.Function1[/* language */ Value, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit]
   ): Unit = js.native
   /**
@@ -135,7 +142,7 @@ trait Globalization extends js.Object {
     */
   def isDaylightSavingsTime(
     date: Date,
-    onSuccess: js.Function1[/* result */ AnonDst, Unit],
+    onSuccess: js.Function1[/* result */ Dst, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit]
   ): Unit = js.native
   /**
@@ -149,14 +156,14 @@ trait Globalization extends js.Object {
     */
   def nubmerToString(
     value: Double,
-    onSuccess: js.Function1[/* result */ AnonValue, Unit],
+    onSuccess: js.Function1[/* result */ Value, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit]
   ): Unit = js.native
   def nubmerToString(
     value: Double,
-    onSuccess: js.Function1[/* result */ AnonValue, Unit],
+    onSuccess: js.Function1[/* result */ Value, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit],
-    format: AnonType
+    format: Type
   ): Unit = js.native
   /**
     * Parses a date formatted as a string, according to the client's user preferences
@@ -176,7 +183,7 @@ trait Globalization extends js.Object {
     dateString: String,
     onSuccess: js.Function1[/* date */ GlobalizationDate, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit],
-    options: AnonItem
+    options: Item
   ): Unit = js.native
   /**
     * Parses a number formatted as a string according to the client's user preferences and returns the corresponding number.
@@ -189,14 +196,14 @@ trait Globalization extends js.Object {
     */
   def stringToNumber(
     value: String,
-    onSuccess: js.Function1[/* result */ AnonValueNumber, Unit],
+    onSuccess: js.Function1[/* result */ ValueNumber, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit]
   ): Unit = js.native
   def stringToNumber(
     value: String,
-    onSuccess: js.Function1[/* result */ AnonValueNumber, Unit],
+    onSuccess: js.Function1[/* result */ ValueNumber, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit],
-    format: AnonType
+    format: Type
   ): Unit = js.native
 }
 

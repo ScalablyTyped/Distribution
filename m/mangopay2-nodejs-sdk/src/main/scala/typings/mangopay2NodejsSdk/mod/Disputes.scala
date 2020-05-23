@@ -1,6 +1,6 @@
 package typings.mangopay2NodejsSdk.mod
 
-import typings.mangopay2NodejsSdk.PartialDisputeDocumentDat
+import typings.mangopay2NodejsSdk.anon.PartialDisputeDocumentDat
 import typings.mangopay2NodejsSdk.mod.dispute.DisputeData
 import typings.mangopay2NodejsSdk.mod.dispute.UpdateDispute
 import typings.mangopay2NodejsSdk.mod.disputeDocument.CreateDisputeDocument

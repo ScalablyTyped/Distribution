@@ -13,12 +13,12 @@ trait ProducerStreamOptions extends js.Object {
 object ProducerStreamOptions {
   @scala.inline
   def apply(
-    highWaterMark: Int | Double = null,
+    highWaterMark: js.UndefOr[Double] = js.undefined,
     kafkaClient: KafkaClientOptions = null,
     producer: ProducerOptions = null
   ): ProducerStreamOptions = {
     val __obj = js.Dynamic.literal()
-    if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
+    if (!js.isUndefined(highWaterMark)) __obj.updateDynamic("highWaterMark")(highWaterMark.get.asInstanceOf[js.Any])
     if (kafkaClient != null) __obj.updateDynamic("kafkaClient")(kafkaClient.asInstanceOf[js.Any])
     if (producer != null) __obj.updateDynamic("producer")(producer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProducerStreamOptions]

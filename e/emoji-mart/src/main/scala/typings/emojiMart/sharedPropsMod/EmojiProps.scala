@@ -57,8 +57,8 @@ object EmojiProps {
     onLeave: (/* emoji */ EmojiData, /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit = null,
     onOver: (/* emoji */ EmojiData, /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit = null,
     set: EmojiSet = null,
-    sheetColumns: Int | Double = null,
-    sheetRows: Int | Double = null,
+    sheetColumns: js.UndefOr[Double] = js.undefined,
+    sheetRows: js.UndefOr[Double] = js.undefined,
     sheetSize: EmojiSheetSize = null,
     skin: EmojiSkin = null,
     tooltip: js.UndefOr[Boolean] = js.undefined
@@ -66,18 +66,18 @@ object EmojiProps {
     val __obj = js.Dynamic.literal(emoji = emoji.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     if (backgroundImageFn != null) __obj.updateDynamic("backgroundImageFn")(js.Any.fromFunction2(backgroundImageFn))
     if (fallback != null) __obj.updateDynamic("fallback")(js.Any.fromFunction2(fallback))
-    if (!js.isUndefined(forceSize)) __obj.updateDynamic("forceSize")(forceSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (!js.isUndefined(native)) __obj.updateDynamic("native")(native.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceSize)) __obj.updateDynamic("forceSize")(forceSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(native)) __obj.updateDynamic("native")(native.get.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
     if (onLeave != null) __obj.updateDynamic("onLeave")(js.Any.fromFunction2(onLeave))
     if (onOver != null) __obj.updateDynamic("onOver")(js.Any.fromFunction2(onOver))
     if (set != null) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
-    if (sheetColumns != null) __obj.updateDynamic("sheetColumns")(sheetColumns.asInstanceOf[js.Any])
-    if (sheetRows != null) __obj.updateDynamic("sheetRows")(sheetRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(sheetColumns)) __obj.updateDynamic("sheetColumns")(sheetColumns.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sheetRows)) __obj.updateDynamic("sheetRows")(sheetRows.get.asInstanceOf[js.Any])
     if (sheetSize != null) __obj.updateDynamic("sheetSize")(sheetSize.asInstanceOf[js.Any])
     if (skin != null) __obj.updateDynamic("skin")(skin.asInstanceOf[js.Any])
-    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
+    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmojiProps]
   }
 }

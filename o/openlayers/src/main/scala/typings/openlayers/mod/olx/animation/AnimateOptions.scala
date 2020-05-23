@@ -27,20 +27,20 @@ object AnimateOptions {
   def apply(
     anchor: Coordinate_ = null,
     center: Coordinate_ = null,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     easing: /* t */ Double => Double = null,
-    resolution: Int | Double = null,
-    rotation: Int | Double = null,
-    zoom: Int | Double = null
+    resolution: js.UndefOr[Double] = js.undefined,
+    rotation: js.UndefOr[Double] = js.undefined,
+    zoom: js.UndefOr[Double] = js.undefined
   ): AnimateOptions = {
     val __obj = js.Dynamic.literal()
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(js.Any.fromFunction1(easing))
-    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolution)) __obj.updateDynamic("resolution")(resolution.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimateOptions]
   }
 }

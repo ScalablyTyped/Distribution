@@ -19,7 +19,7 @@ trait CreateActivationRequest extends js.Object {
     */
   var ExpirationDate: js.UndefOr[typings.awsSdk.ssmMod.ExpirationDate] = js.native
   /**
-    * The Amazon Identity and Access Management (IAM) role that you want to assign to the managed instance. This IAM role must provide AssumeRole permissions for the Systems Manager service principal ssm.amazonaws.com. For more information, see Create an IAM Service Role for a Hybrid Environment in the AWS Systems Manager User Guide.
+    * The Amazon Identity and Access Management (IAM) role that you want to assign to the managed instance. This IAM role must provide AssumeRole permissions for the Systems Manager service principal ssm.amazonaws.com. For more information, see Create an IAM service role for a hybrid environment in the AWS Systems Manager User Guide.
     */
   var IamRole: typings.awsSdk.ssmMod.IamRole = js.native
   /**
@@ -39,14 +39,14 @@ object CreateActivationRequest {
     DefaultInstanceName: DefaultInstanceName = null,
     Description: ActivationDescription = null,
     ExpirationDate: ExpirationDate = null,
-    RegistrationLimit: Int | Double = null,
+    RegistrationLimit: js.UndefOr[RegistrationLimit] = js.undefined,
     Tags: TagList = null
   ): CreateActivationRequest = {
     val __obj = js.Dynamic.literal(IamRole = IamRole.asInstanceOf[js.Any])
     if (DefaultInstanceName != null) __obj.updateDynamic("DefaultInstanceName")(DefaultInstanceName.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (ExpirationDate != null) __obj.updateDynamic("ExpirationDate")(ExpirationDate.asInstanceOf[js.Any])
-    if (RegistrationLimit != null) __obj.updateDynamic("RegistrationLimit")(RegistrationLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(RegistrationLimit)) __obj.updateDynamic("RegistrationLimit")(RegistrationLimit.get.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateActivationRequest]
   }

@@ -1,7 +1,7 @@
 package typings.reactIcons.iconBaseMod
 
-import typings.react.mod._Global_.JSX.Element
-import typings.reactIcons.IconBasePropsattrundefine
+import typings.react.mod.global.JSX.Element
+import typings.reactIcons.anon.IconBasePropsattrundefine
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -13,7 +13,7 @@ object ShuffleOptions {
   def apply(device_id: String = null, state: js.UndefOr[Boolean] = js.undefined): ShuffleOptions = {
     val __obj = js.Dynamic.literal()
     if (device_id != null) __obj.updateDynamic("device_id")(device_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(state)) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (!js.isUndefined(state)) __obj.updateDynamic("state")(state.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShuffleOptions]
   }
 }

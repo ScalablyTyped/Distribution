@@ -1,6 +1,6 @@
 package typings.evernote.mod.Types
 
-import typings.evernote.AnonNoteResourceCountMax
+import typings.evernote.anon.NoteResourceCountMax
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("evernote", "Types.AccountLimits")
 @js.native
 class AccountLimits () extends js.Object {
-  def this(args: AnonNoteResourceCountMax) = this()
+  def this(args: NoteResourceCountMax) = this()
   var noteResourceCountMax: js.UndefOr[Double] = js.native
   var noteSizeMax: js.UndefOr[Double] = js.native
   var noteTagCountMax: js.UndefOr[Double] = js.native

@@ -1,26 +1,25 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.AnonAgendaDuration
-import typings.devextreme.AnonAllowAdding
-import typings.devextreme.AnonAllowMultiple
-import typings.devextreme.AnonAppointmentCount
-import typings.devextreme.AnonAppointmentData
-import typings.devextreme.AnonAppointmentDataAppointmentElement
-import typings.devextreme.AnonAppointmentDataCancel
-import typings.devextreme.AnonAppointmentDataComponent
-import typings.devextreme.AnonAppointmentElement
-import typings.devextreme.AnonAutoScroll
-import typings.devextreme.AnonCellData
-import typings.devextreme.AnonCellDataCellElement
-import typings.devextreme.AnonComponentElement
-import typings.devextreme.AnonElement
-import typings.devextreme.AnonElementForm
-import typings.devextreme.AnonEndDate
-import typings.devextreme.AnonForm
-import typings.devextreme.AnonModel
-import typings.devextreme.AnonName
-import typings.devextreme.AnonOldData
-import typings.devextreme.AnonTargetedAppointmentData
+import typings.devextreme.anon.AgendaDuration
+import typings.devextreme.anon.AllowAdding
+import typings.devextreme.anon.AllowMultiple
+import typings.devextreme.anon.AppointmentCount
+import typings.devextreme.anon.AppointmentData
+import typings.devextreme.anon.AppointmentDataAppointmentElement
+import typings.devextreme.anon.AppointmentDataCancel
+import typings.devextreme.anon.AppointmentDataComponent
+import typings.devextreme.anon.AppointmentElement
+import typings.devextreme.anon.AutoScroll
+import typings.devextreme.anon.CellData
+import typings.devextreme.anon.CellDataCellElement
+import typings.devextreme.anon.ComponentElement
+import typings.devextreme.anon.ElementForm
+import typings.devextreme.anon.EndDate
+import typings.devextreme.anon.Form
+import typings.devextreme.anon.Model
+import typings.devextreme.anon.Name
+import typings.devextreme.anon.OldData
+import typings.devextreme.anon.TargetedAppointmentData
 import typings.devextreme.devextremeNumbers.`0`
 import typings.devextreme.devextremeNumbers.`1`
 import typings.devextreme.devextremeNumbers.`2`
@@ -45,7 +44,7 @@ import typings.devextreme.devextremeStrings.workWeek
 import typings.devextreme.mod.DevExpress.core.dxElement
 import typings.devextreme.mod.DevExpress.data.DataSource
 import typings.devextreme.mod.DevExpress.data.DataSourceOptions
-import typings.devextreme.mod._Global_.JQuery
+import typings.devextreme.mod.global.JQuery
 import typings.std.Date
 import typings.std.Element
 import scala.scalajs.js
@@ -60,17 +59,17 @@ trait dxSchedulerOptions extends WidgetOptions[dxScheduler] {
   /** @name dxScheduler.Options.appointmentCollectorTemplate */
   var appointmentCollectorTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[
-      /* data */ AnonAppointmentCount, 
+      /* data */ AppointmentCount, 
       /* collectorElement */ dxElement, 
       String | Element | JQuery
     ])
   ] = js.undefined
   /** @name dxScheduler.Options.appointmentDragging */
-  var appointmentDragging: js.UndefOr[AnonAutoScroll] = js.undefined
+  var appointmentDragging: js.UndefOr[AutoScroll] = js.undefined
   /** @name dxScheduler.Options.appointmentTemplate */
   var appointmentTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function3[
-      /* model */ AnonAppointmentData, 
+      /* model */ AppointmentData, 
       /* itemIndex */ Double, 
       /* contentElement */ dxElement, 
       String | Element | JQuery
@@ -79,7 +78,7 @@ trait dxSchedulerOptions extends WidgetOptions[dxScheduler] {
   /** @name dxScheduler.Options.appointmentTooltipTemplate */
   var appointmentTooltipTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function3[
-      /* model */ AnonAppointmentData, 
+      /* model */ AppointmentData, 
       /* itemIndex */ Double, 
       /* contentElement */ dxElement, 
       String | Element | JQuery
@@ -96,7 +95,7 @@ trait dxSchedulerOptions extends WidgetOptions[dxScheduler] {
     agenda | day | month | timelineDay | timelineMonth | timelineWeek | timelineWorkWeek | week | workWeek
   ] = js.undefined
   /** @name dxScheduler.Options.customizeDateNavigatorText */
-  var customizeDateNavigatorText: js.UndefOr[js.Function1[/* info */ AnonEndDate, String]] = js.undefined
+  var customizeDateNavigatorText: js.UndefOr[js.Function1[/* info */ EndDate, String]] = js.undefined
   /** @name dxScheduler.Options.dataCellTemplate */
   var dataCellTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function3[
@@ -132,7 +131,7 @@ trait dxSchedulerOptions extends WidgetOptions[dxScheduler] {
     ])
   ] = js.undefined
   /** @name dxScheduler.Options.editing */
-  var editing: js.UndefOr[Boolean | AnonAllowAdding] = js.undefined
+  var editing: js.UndefOr[Boolean | AllowAdding] = js.undefined
   /** @name dxScheduler.Options.endDateExpr */
   var endDateExpr: js.UndefOr[String] = js.undefined
   /** @name dxScheduler.Options.endDateTimeZoneExpr */
@@ -156,34 +155,34 @@ trait dxSchedulerOptions extends WidgetOptions[dxScheduler] {
   /** @name dxScheduler.Options.noDataText */
   var noDataText: js.UndefOr[String] = js.undefined
   /** @name dxScheduler.Options.onAppointmentAdded */
-  var onAppointmentAdded: js.UndefOr[js.Function1[/* e */ AnonAppointmentDataComponent, _]] = js.undefined
+  var onAppointmentAdded: js.UndefOr[js.Function1[/* e */ AppointmentDataComponent, _]] = js.undefined
   /** @name dxScheduler.Options.onAppointmentAdding */
-  var onAppointmentAdding: js.UndefOr[js.Function1[/* e */ AnonAppointmentDataCancel, _]] = js.undefined
+  var onAppointmentAdding: js.UndefOr[js.Function1[/* e */ AppointmentDataCancel, _]] = js.undefined
   /** @name dxScheduler.Options.onAppointmentClick */
-  var onAppointmentClick: js.UndefOr[(js.Function1[/* e */ AnonAppointmentElement, _]) | String] = js.undefined
+  var onAppointmentClick: js.UndefOr[(js.Function1[/* e */ AppointmentElement, _]) | String] = js.undefined
   /** @name dxScheduler.Options.onAppointmentContextMenu */
-  var onAppointmentContextMenu: js.UndefOr[(js.Function1[/* e */ AnonTargetedAppointmentData, _]) | String] = js.undefined
+  var onAppointmentContextMenu: js.UndefOr[(js.Function1[/* e */ TargetedAppointmentData, _]) | String] = js.undefined
   /** @name dxScheduler.Options.onAppointmentDblClick */
-  var onAppointmentDblClick: js.UndefOr[(js.Function1[/* e */ AnonAppointmentElement, _]) | String] = js.undefined
+  var onAppointmentDblClick: js.UndefOr[(js.Function1[/* e */ AppointmentElement, _]) | String] = js.undefined
   /** @name dxScheduler.Options.onAppointmentDeleted */
-  var onAppointmentDeleted: js.UndefOr[js.Function1[/* e */ AnonAppointmentDataComponent, _]] = js.undefined
+  var onAppointmentDeleted: js.UndefOr[js.Function1[/* e */ AppointmentDataComponent, _]] = js.undefined
   /** @name dxScheduler.Options.onAppointmentDeleting */
-  var onAppointmentDeleting: js.UndefOr[js.Function1[/* e */ AnonAppointmentDataCancel, _]] = js.undefined
+  var onAppointmentDeleting: js.UndefOr[js.Function1[/* e */ AppointmentDataCancel, _]] = js.undefined
   /** @deprecated */
   /** @name dxScheduler.Options.onAppointmentFormCreated */
-  var onAppointmentFormCreated: js.UndefOr[js.Function1[/* e */ AnonForm, _]] = js.undefined
+  var onAppointmentFormCreated: js.UndefOr[js.Function1[/* e */ Form, _]] = js.undefined
   /** @name dxScheduler.Options.onAppointmentFormOpening */
-  var onAppointmentFormOpening: js.UndefOr[js.Function1[/* e */ AnonElementForm, _]] = js.undefined
+  var onAppointmentFormOpening: js.UndefOr[js.Function1[/* e */ ElementForm, _]] = js.undefined
   /** @name dxScheduler.Options.onAppointmentRendered */
-  var onAppointmentRendered: js.UndefOr[js.Function1[/* e */ AnonAppointmentDataAppointmentElement, _]] = js.undefined
+  var onAppointmentRendered: js.UndefOr[js.Function1[/* e */ AppointmentDataAppointmentElement, _]] = js.undefined
   /** @name dxScheduler.Options.onAppointmentUpdated */
-  var onAppointmentUpdated: js.UndefOr[js.Function1[/* e */ AnonAppointmentDataComponent, _]] = js.undefined
+  var onAppointmentUpdated: js.UndefOr[js.Function1[/* e */ AppointmentDataComponent, _]] = js.undefined
   /** @name dxScheduler.Options.onAppointmentUpdating */
-  var onAppointmentUpdating: js.UndefOr[js.Function1[/* e */ AnonOldData, _]] = js.undefined
+  var onAppointmentUpdating: js.UndefOr[js.Function1[/* e */ OldData, _]] = js.undefined
   /** @name dxScheduler.Options.onCellClick */
-  var onCellClick: js.UndefOr[(js.Function1[/* e */ AnonCellData, _]) | String] = js.undefined
+  var onCellClick: js.UndefOr[(js.Function1[/* e */ CellData, _]) | String] = js.undefined
   /** @name dxScheduler.Options.onCellContextMenu */
-  var onCellContextMenu: js.UndefOr[(js.Function1[/* e */ AnonCellDataCellElement, _]) | String] = js.undefined
+  var onCellContextMenu: js.UndefOr[(js.Function1[/* e */ CellDataCellElement, _]) | String] = js.undefined
   /** @name dxScheduler.Options.recurrenceEditMode */
   var recurrenceEditMode: js.UndefOr[dialog | occurrence | series] = js.undefined
   /** @name dxScheduler.Options.recurrenceExceptionExpr */
@@ -202,7 +201,7 @@ trait dxSchedulerOptions extends WidgetOptions[dxScheduler] {
     ])
   ] = js.undefined
   /** @name dxScheduler.Options.resources */
-  var resources: js.UndefOr[js.Array[AnonAllowMultiple]] = js.undefined
+  var resources: js.UndefOr[js.Array[AllowMultiple]] = js.undefined
   /** @name dxScheduler.Options.selectedCellData */
   var selectedCellData: js.UndefOr[js.Array[_]] = js.undefined
   /** @name dxScheduler.Options.shadeUntilCurrentTime */
@@ -235,7 +234,7 @@ trait dxSchedulerOptions extends WidgetOptions[dxScheduler] {
   /** @name dxScheduler.Options.views */
   var views: js.UndefOr[
     js.Array[
-      day | week | workWeek | month | timelineDay | timelineWeek | timelineWorkWeek | timelineMonth | agenda | AnonAgendaDuration
+      day | week | workWeek | month | timelineDay | timelineWeek | timelineWorkWeek | timelineMonth | agenda | AgendaDuration
     ]
   ] = js.undefined
 }
@@ -248,29 +247,29 @@ object dxSchedulerOptions {
     adaptivityEnabled: js.UndefOr[Boolean] = js.undefined,
     allDayExpr: String = null,
     appointmentCollectorTemplate: typings.devextreme.mod.DevExpress.core.template | (js.Function2[
-      /* data */ AnonAppointmentCount, 
+      /* data */ AppointmentCount, 
       /* collectorElement */ dxElement, 
       String | Element | JQuery
     ]) = null,
-    appointmentDragging: AnonAutoScroll = null,
+    appointmentDragging: AutoScroll = null,
     appointmentTemplate: typings.devextreme.mod.DevExpress.core.template | (js.Function3[
-      /* model */ AnonAppointmentData, 
+      /* model */ AppointmentData, 
       /* itemIndex */ Double, 
       /* contentElement */ dxElement, 
       String | Element | JQuery
     ]) = null,
     appointmentTooltipTemplate: typings.devextreme.mod.DevExpress.core.template | (js.Function3[
-      /* model */ AnonAppointmentData, 
+      /* model */ AppointmentData, 
       /* itemIndex */ Double, 
       /* contentElement */ dxElement, 
       String | Element | JQuery
     ]) = null,
     bindingOptions: js.Any = null,
-    cellDuration: Int | Double = null,
+    cellDuration: js.UndefOr[Double] = js.undefined,
     crossScrollingEnabled: js.UndefOr[Boolean] = js.undefined,
     currentDate: Date | Double | String = null,
     currentView: agenda | day | month | timelineDay | timelineMonth | timelineWeek | timelineWorkWeek | week | workWeek = null,
-    customizeDateNavigatorText: /* info */ AnonEndDate => String = null,
+    customizeDateNavigatorText: /* info */ EndDate => String = null,
     dataCellTemplate: typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* itemData */ js.Any, 
       /* itemIndex */ Double, 
@@ -293,11 +292,11 @@ object dxSchedulerOptions {
       /* contentElement */ dxElement, 
       String | Element | JQuery
     ]) = null,
-    editing: Boolean | AnonAllowAdding = null,
+    editing: Boolean | AllowAdding = null,
     elementAttr: js.Any = null,
     endDateExpr: String = null,
     endDateTimeZoneExpr: String = null,
-    endDayHour: Int | Double = null,
+    endDayHour: js.UndefOr[Double] = js.undefined,
     firstDayOfWeek: `0` | `1` | `2` | `3` | `4` | `5` | `6` = null,
     focusStateEnabled: js.UndefOr[Boolean] = js.undefined,
     groupByDate: js.UndefOr[Boolean] = js.undefined,
@@ -305,29 +304,29 @@ object dxSchedulerOptions {
     height: Double | String | (js.Function0[Double | String]) = null,
     hint: String = null,
     hoverStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    indicatorUpdateInterval: Int | Double = null,
+    indicatorUpdateInterval: js.UndefOr[Double] = js.undefined,
     max: Date | Double | String = null,
     maxAppointmentsPerCell: Double | auto | unlimited = null,
     min: Date | Double | String = null,
     noDataText: String = null,
-    onAppointmentAdded: /* e */ AnonAppointmentDataComponent => _ = null,
-    onAppointmentAdding: /* e */ AnonAppointmentDataCancel => _ = null,
-    onAppointmentClick: (js.Function1[/* e */ AnonAppointmentElement, _]) | String = null,
-    onAppointmentContextMenu: (js.Function1[/* e */ AnonTargetedAppointmentData, _]) | String = null,
-    onAppointmentDblClick: (js.Function1[/* e */ AnonAppointmentElement, _]) | String = null,
-    onAppointmentDeleted: /* e */ AnonAppointmentDataComponent => _ = null,
-    onAppointmentDeleting: /* e */ AnonAppointmentDataCancel => _ = null,
-    onAppointmentFormCreated: /* e */ AnonForm => _ = null,
-    onAppointmentFormOpening: /* e */ AnonElementForm => _ = null,
-    onAppointmentRendered: /* e */ AnonAppointmentDataAppointmentElement => _ = null,
-    onAppointmentUpdated: /* e */ AnonAppointmentDataComponent => _ = null,
-    onAppointmentUpdating: /* e */ AnonOldData => _ = null,
-    onCellClick: (js.Function1[/* e */ AnonCellData, _]) | String = null,
-    onCellContextMenu: (js.Function1[/* e */ AnonCellDataCellElement, _]) | String = null,
-    onContentReady: /* e */ AnonComponentElement[dxScheduler] => _ = null,
-    onDisposing: /* e */ AnonModel[dxScheduler] => _ = null,
-    onInitialized: /* e */ AnonElement[dxScheduler] => _ = null,
-    onOptionChanged: /* e */ AnonName[dxScheduler] => _ = null,
+    onAppointmentAdded: /* e */ AppointmentDataComponent => _ = null,
+    onAppointmentAdding: /* e */ AppointmentDataCancel => _ = null,
+    onAppointmentClick: (js.Function1[/* e */ AppointmentElement, _]) | String = null,
+    onAppointmentContextMenu: (js.Function1[/* e */ TargetedAppointmentData, _]) | String = null,
+    onAppointmentDblClick: (js.Function1[/* e */ AppointmentElement, _]) | String = null,
+    onAppointmentDeleted: /* e */ AppointmentDataComponent => _ = null,
+    onAppointmentDeleting: /* e */ AppointmentDataCancel => _ = null,
+    onAppointmentFormCreated: /* e */ Form => _ = null,
+    onAppointmentFormOpening: /* e */ ElementForm => _ = null,
+    onAppointmentRendered: /* e */ AppointmentDataAppointmentElement => _ = null,
+    onAppointmentUpdated: /* e */ AppointmentDataComponent => _ = null,
+    onAppointmentUpdating: /* e */ OldData => _ = null,
+    onCellClick: (js.Function1[/* e */ CellData, _]) | String = null,
+    onCellContextMenu: (js.Function1[/* e */ CellDataCellElement, _]) | String = null,
+    onContentReady: /* e */ ComponentElement[dxScheduler] => _ = null,
+    onDisposing: /* e */ Model[dxScheduler] => _ = null,
+    onInitialized: /* e */ typings.devextreme.anon.Element[dxScheduler] => _ = null,
+    onOptionChanged: /* e */ Name[dxScheduler] => _ = null,
     recurrenceEditMode: dialog | occurrence | series = null,
     recurrenceExceptionExpr: String = null,
     recurrenceRuleExpr: String = null,
@@ -338,7 +337,7 @@ object dxSchedulerOptions {
       /* itemElement */ dxElement, 
       String | Element | JQuery
     ]) = null,
-    resources: js.Array[AnonAllowMultiple] = null,
+    resources: js.Array[AllowMultiple] = null,
     rtlEnabled: js.UndefOr[Boolean] = js.undefined,
     selectedCellData: js.Array[_] = null,
     shadeUntilCurrentTime: js.UndefOr[Boolean] = js.undefined,
@@ -346,8 +345,8 @@ object dxSchedulerOptions {
     showCurrentTimeIndicator: js.UndefOr[Boolean] = js.undefined,
     startDateExpr: String = null,
     startDateTimeZoneExpr: String = null,
-    startDayHour: Int | Double = null,
-    tabIndex: Int | Double = null,
+    startDayHour: js.UndefOr[Double] = js.undefined,
+    tabIndex: js.UndefOr[Double] = js.undefined,
     textExpr: String = null,
     timeCellTemplate: typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* itemData */ js.Any, 
@@ -358,23 +357,23 @@ object dxSchedulerOptions {
     timeZone: String = null,
     useDropDownViewSwitcher: js.UndefOr[Boolean] = js.undefined,
     views: js.Array[
-      day | week | workWeek | month | timelineDay | timelineWeek | timelineWorkWeek | timelineMonth | agenda | AnonAgendaDuration
+      day | week | workWeek | month | timelineDay | timelineWeek | timelineWorkWeek | timelineMonth | agenda | AgendaDuration
     ] = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     width: Double | String | (js.Function0[Double | String]) = null
   ): dxSchedulerOptions = {
     val __obj = js.Dynamic.literal()
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(adaptivityEnabled)) __obj.updateDynamic("adaptivityEnabled")(adaptivityEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(adaptivityEnabled)) __obj.updateDynamic("adaptivityEnabled")(adaptivityEnabled.get.asInstanceOf[js.Any])
     if (allDayExpr != null) __obj.updateDynamic("allDayExpr")(allDayExpr.asInstanceOf[js.Any])
     if (appointmentCollectorTemplate != null) __obj.updateDynamic("appointmentCollectorTemplate")(appointmentCollectorTemplate.asInstanceOf[js.Any])
     if (appointmentDragging != null) __obj.updateDynamic("appointmentDragging")(appointmentDragging.asInstanceOf[js.Any])
     if (appointmentTemplate != null) __obj.updateDynamic("appointmentTemplate")(appointmentTemplate.asInstanceOf[js.Any])
     if (appointmentTooltipTemplate != null) __obj.updateDynamic("appointmentTooltipTemplate")(appointmentTooltipTemplate.asInstanceOf[js.Any])
     if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
-    if (cellDuration != null) __obj.updateDynamic("cellDuration")(cellDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(crossScrollingEnabled)) __obj.updateDynamic("crossScrollingEnabled")(crossScrollingEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellDuration)) __obj.updateDynamic("cellDuration")(cellDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(crossScrollingEnabled)) __obj.updateDynamic("crossScrollingEnabled")(crossScrollingEnabled.get.asInstanceOf[js.Any])
     if (currentDate != null) __obj.updateDynamic("currentDate")(currentDate.asInstanceOf[js.Any])
     if (currentView != null) __obj.updateDynamic("currentView")(currentView.asInstanceOf[js.Any])
     if (customizeDateNavigatorText != null) __obj.updateDynamic("customizeDateNavigatorText")(js.Any.fromFunction1(customizeDateNavigatorText))
@@ -383,21 +382,21 @@ object dxSchedulerOptions {
     if (dateCellTemplate != null) __obj.updateDynamic("dateCellTemplate")(dateCellTemplate.asInstanceOf[js.Any])
     if (dateSerializationFormat != null) __obj.updateDynamic("dateSerializationFormat")(dateSerializationFormat.asInstanceOf[js.Any])
     if (descriptionExpr != null) __obj.updateDynamic("descriptionExpr")(descriptionExpr.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (dropDownAppointmentTemplate != null) __obj.updateDynamic("dropDownAppointmentTemplate")(dropDownAppointmentTemplate.asInstanceOf[js.Any])
     if (editing != null) __obj.updateDynamic("editing")(editing.asInstanceOf[js.Any])
     if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
     if (endDateExpr != null) __obj.updateDynamic("endDateExpr")(endDateExpr.asInstanceOf[js.Any])
     if (endDateTimeZoneExpr != null) __obj.updateDynamic("endDateTimeZoneExpr")(endDateTimeZoneExpr.asInstanceOf[js.Any])
-    if (endDayHour != null) __obj.updateDynamic("endDayHour")(endDayHour.asInstanceOf[js.Any])
+    if (!js.isUndefined(endDayHour)) __obj.updateDynamic("endDayHour")(endDayHour.get.asInstanceOf[js.Any])
     if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupByDate)) __obj.updateDynamic("groupByDate")(groupByDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupByDate)) __obj.updateDynamic("groupByDate")(groupByDate.get.asInstanceOf[js.Any])
     if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.asInstanceOf[js.Any])
-    if (indicatorUpdateInterval != null) __obj.updateDynamic("indicatorUpdateInterval")(indicatorUpdateInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(indicatorUpdateInterval)) __obj.updateDynamic("indicatorUpdateInterval")(indicatorUpdateInterval.get.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (maxAppointmentsPerCell != null) __obj.updateDynamic("maxAppointmentsPerCell")(maxAppointmentsPerCell.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
@@ -423,24 +422,24 @@ object dxSchedulerOptions {
     if (recurrenceEditMode != null) __obj.updateDynamic("recurrenceEditMode")(recurrenceEditMode.asInstanceOf[js.Any])
     if (recurrenceExceptionExpr != null) __obj.updateDynamic("recurrenceExceptionExpr")(recurrenceExceptionExpr.asInstanceOf[js.Any])
     if (recurrenceRuleExpr != null) __obj.updateDynamic("recurrenceRuleExpr")(recurrenceRuleExpr.asInstanceOf[js.Any])
-    if (!js.isUndefined(remoteFiltering)) __obj.updateDynamic("remoteFiltering")(remoteFiltering.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteFiltering)) __obj.updateDynamic("remoteFiltering")(remoteFiltering.get.asInstanceOf[js.Any])
     if (resourceCellTemplate != null) __obj.updateDynamic("resourceCellTemplate")(resourceCellTemplate.asInstanceOf[js.Any])
     if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
     if (selectedCellData != null) __obj.updateDynamic("selectedCellData")(selectedCellData.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadeUntilCurrentTime)) __obj.updateDynamic("shadeUntilCurrentTime")(shadeUntilCurrentTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAllDayPanel)) __obj.updateDynamic("showAllDayPanel")(showAllDayPanel.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCurrentTimeIndicator)) __obj.updateDynamic("showCurrentTimeIndicator")(showCurrentTimeIndicator.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadeUntilCurrentTime)) __obj.updateDynamic("shadeUntilCurrentTime")(shadeUntilCurrentTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAllDayPanel)) __obj.updateDynamic("showAllDayPanel")(showAllDayPanel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCurrentTimeIndicator)) __obj.updateDynamic("showCurrentTimeIndicator")(showCurrentTimeIndicator.get.asInstanceOf[js.Any])
     if (startDateExpr != null) __obj.updateDynamic("startDateExpr")(startDateExpr.asInstanceOf[js.Any])
     if (startDateTimeZoneExpr != null) __obj.updateDynamic("startDateTimeZoneExpr")(startDateTimeZoneExpr.asInstanceOf[js.Any])
-    if (startDayHour != null) __obj.updateDynamic("startDayHour")(startDayHour.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(startDayHour)) __obj.updateDynamic("startDayHour")(startDayHour.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     if (textExpr != null) __obj.updateDynamic("textExpr")(textExpr.asInstanceOf[js.Any])
     if (timeCellTemplate != null) __obj.updateDynamic("timeCellTemplate")(timeCellTemplate.asInstanceOf[js.Any])
     if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
-    if (!js.isUndefined(useDropDownViewSwitcher)) __obj.updateDynamic("useDropDownViewSwitcher")(useDropDownViewSwitcher.asInstanceOf[js.Any])
+    if (!js.isUndefined(useDropDownViewSwitcher)) __obj.updateDynamic("useDropDownViewSwitcher")(useDropDownViewSwitcher.get.asInstanceOf[js.Any])
     if (views != null) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxSchedulerOptions]
   }

@@ -1,11 +1,11 @@
 package typings.rxjs.webSocketSubjectMod
 
-import typings.rxjs.AnonInstantiable
+import typings.rxjs.anon.Instantiable
 import typings.rxjs.rxjsStrings.arraybuffer
 import typings.rxjs.rxjsStrings.blob
 import typings.rxjs.typesMod.NextObserver
 import typings.std.CloseEvent
-import typings.std.Event_
+import typings.std.Event
 import typings.std.MessageEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +17,7 @@ trait WebSocketSubjectConfig[T] extends js.Object {
     * WebSocket impl in Node (WebSocket is a DOM API), or for mocking a WebSocket
     * for testing purposes
     */
-  var WebSocketCtor: js.UndefOr[AnonInstantiable] = js.undefined
+  var WebSocketCtor: js.UndefOr[Instantiable] = js.undefined
   /** Sets the `binaryType` property of the underlying WebSocket. */
   var binaryType: js.UndefOr[blob | arraybuffer] = js.undefined
   /**
@@ -37,7 +37,7 @@ trait WebSocketSubjectConfig[T] extends js.Object {
   /**
     * An Observer that watches when open events occur on the underlying web socket.
     */
-  var openObserver: js.UndefOr[NextObserver[Event_]] = js.undefined
+  var openObserver: js.UndefOr[NextObserver[Event]] = js.undefined
   /** The protocol to use to connect */
   var protocol: js.UndefOr[String | js.Array[String]] = js.undefined
   /** @deprecated use {@link deserializer} */
@@ -55,12 +55,12 @@ object WebSocketSubjectConfig {
   @scala.inline
   def apply[T](
     url: String,
-    WebSocketCtor: AnonInstantiable = null,
+    WebSocketCtor: Instantiable = null,
     binaryType: blob | arraybuffer = null,
     closeObserver: NextObserver[CloseEvent] = null,
     closingObserver: NextObserver[Unit] = null,
     deserializer: /* e */ MessageEvent => T = null,
-    openObserver: NextObserver[Event_] = null,
+    openObserver: NextObserver[Event] = null,
     protocol: String | js.Array[String] = null,
     resultSelector: /* e */ MessageEvent => T = null,
     serializer: /* value */ T => WebSocketMessage = null

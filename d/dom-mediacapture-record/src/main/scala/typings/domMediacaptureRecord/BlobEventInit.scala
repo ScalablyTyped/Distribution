@@ -18,13 +18,13 @@ object BlobEventInit {
     bubbles: js.UndefOr[Boolean] = js.undefined,
     cancelable: js.UndefOr[Boolean] = js.undefined,
     composed: js.UndefOr[Boolean] = js.undefined,
-    timecode: Int | Double = null
+    timecode: js.UndefOr[Double] = js.undefined
   ): BlobEventInit = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (timecode != null) __obj.updateDynamic("timecode")(timecode.asInstanceOf[js.Any])
+    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timecode)) __obj.updateDynamic("timecode")(timecode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlobEventInit]
   }
 }

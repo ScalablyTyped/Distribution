@@ -14,31 +14,31 @@ import scala.scalajs.js.annotation._
 trait INgMap extends js.Object {
   def addMap(mapCtrl: js.Array[_]): Unit = js.native
   /**
-    	 * Add map to pool
-    	 * @param {Function | any[]} mapCtrl Map controller
-    	 */
+    * Add map to pool
+    * @param {Function | any[]} mapCtrl Map controller
+    */
   def addMap(mapCtrl: js.Function): Unit = js.native
   /**
-  		 * Delete map from pool
-  		 * @param {Function | any[]} mapCtrl Map controller optional. Defaults to last
-  		 * controller in pool
-  		 */
+    * Delete map from pool
+    * @param {Function | any[]} mapCtrl Map controller optional. Defaults to last
+    * controller in pool
+    */
   def deleteMap(): Unit = js.native
   def deleteMap(mapCtrl: js.Array[_]): Unit = js.native
   def deleteMap(mapCtrl: js.Function): Unit = js.native
   /**
-  		 * Get map coordinates from address.
-  		 * @param  {string}                               address Use 'current' to get users location
-  		 * @param  {PositionOptions}                      options optional
-  		 * @return {angular.IPromise<google.maps.LatLng>}         Latitude ang longitude of the address
-  		 */
+    * Get map coordinates from address.
+    * @param  {string}                               address Use 'current' to get users location
+    * @param  {PositionOptions}                      options optional
+    * @return {angular.IPromise<google.maps.LatLng>}         Latitude ang longitude of the address
+    */
   def getGeoLocation(address: String): IPromise[LatLng] = js.native
   def getGeoLocation(address: String, options: PositionOptions): IPromise[LatLng] = js.native
   /**
-    	 * Get map from the pool of all shown maps.
-    	 * @param  {IGetMapOptions}                    options optional
-    	 * @return {angular.IPromise<google.maps.Map>}         promise
-    	 */
+    * Get map from the pool of all shown maps.
+    * @param  {IGetMapOptions}                    options optional
+    * @return {angular.IPromise<google.maps.Map>}         promise
+    */
   def getMap(): IPromise[Map[Element]] = js.native
   def getMap(options: IGetMapOptions): IPromise[Map[Element]] = js.native
   /**

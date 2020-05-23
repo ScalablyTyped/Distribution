@@ -1,6 +1,6 @@
 package typings.mapboxGl.mod
 
-import typings.mapboxGl.AnonLat
+import typings.mapboxGl.anon.Lat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 trait CameraForBoundsResult extends js.Object {
   var bearing: Double
   /** Map center */
-  var center: AnonLat
+  var center: Lat
   var zoom: Double
 }
 
 object CameraForBoundsResult {
   @scala.inline
-  def apply(bearing: Double, center: AnonLat, zoom: Double): CameraForBoundsResult = {
+  def apply(bearing: Double, center: Lat, zoom: Double): CameraForBoundsResult = {
     val __obj = js.Dynamic.literal(bearing = bearing.asInstanceOf[js.Any], center = center.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraForBoundsResult]
   }

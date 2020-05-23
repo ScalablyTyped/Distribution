@@ -1,9 +1,9 @@
 package typings.flatpickr
 
-import typings.flatpickr.globalsMod._Global_.HTMLElement
+import typings.flatpickr.globalsMod.global.HTMLElement
 import typings.std.Element
+import typings.std.Event
 import typings.std.EventTarget
-import typings.std.Event_
 import typings.std.HTMLDivElement
 import typings.std.Record
 import scala.scalajs.js
@@ -26,7 +26,7 @@ object domMod extends js.Object {
   def createNumberInput(inputClassName: String): HTMLDivElement = js.native
   def createNumberInput(inputClassName: String, opts: Record[String, _]): HTMLDivElement = js.native
   def findParent(node: Element, condition: js.Function1[/* n */ Element, Boolean]): js.UndefOr[Element] = js.native
-  def getEventTarget(event: Event_): EventTarget | Null = js.native
+  def getEventTarget(event: Event): EventTarget | Null = js.native
   def toggleClass(elem: HTMLElement, className: String, bool: Boolean): Unit = js.native
 }
 

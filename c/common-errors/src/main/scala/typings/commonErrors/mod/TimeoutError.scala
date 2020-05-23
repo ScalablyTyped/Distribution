@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("common-errors", "TimeoutError")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @JSImport("common-errors", "TimeoutError")
 @js.native
-class TimeoutError protected () extends ErrorConstructor {
+class TimeoutError protected () extends js.Object {
   /**
     * @param time        a time duration
     * @param inner_error the Error instance that caused the current error.

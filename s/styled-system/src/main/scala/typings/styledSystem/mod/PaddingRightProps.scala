@@ -22,19 +22,23 @@ trait PaddingRightProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends j
 
 object PaddingRightProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](
-    paddingRight: ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
-      ThemeType
-    ] = null,
-    pr: ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
-      ThemeType
-    ] = null
+  def apply[ThemeType](
+    paddingRight: js.UndefOr[
+      Null | (ResponsiveValue[
+        ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
+        ThemeType
+      ])
+    ] = js.undefined,
+    pr: js.UndefOr[
+      Null | (ResponsiveValue[
+        ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
+        ThemeType
+      ])
+    ] = js.undefined
   ): PaddingRightProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
-    if (paddingRight != null) __obj.updateDynamic("paddingRight")(paddingRight.asInstanceOf[js.Any])
-    if (pr != null) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingRight)) __obj.updateDynamic("paddingRight")(paddingRight.asInstanceOf[js.Any])
+    if (!js.isUndefined(pr)) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaddingRightProps[ThemeType]]
   }
 }

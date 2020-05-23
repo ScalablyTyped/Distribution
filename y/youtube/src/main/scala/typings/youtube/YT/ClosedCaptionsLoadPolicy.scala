@@ -14,13 +14,13 @@ trait ClosedCaptionsLoadPolicy extends js.Object
 
 object ClosedCaptionsLoadPolicy {
   /**
-  		 * For closed captions to be shown.
-  		 */
+    * For closed captions to be shown.
+    */
   @scala.inline
   def ForceOn: `1` = 1.asInstanceOf[`1`]
   /**
-  		 * Defaults to the user's preferences.
-  		 */
+    * Defaults to the user's preferences.
+    */
   @scala.inline
   def UserDefault: `0` = 0.asInstanceOf[`0`]
 }

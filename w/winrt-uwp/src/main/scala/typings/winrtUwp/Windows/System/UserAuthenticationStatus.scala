@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.System
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object UserAuthenticationStatus extends js.Object {
   /** The user is unauthenticated. */
   @js.native
   sealed trait unauthenticated extends UserAuthenticationStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UserAuthenticationStatus with Double] = js.native
-  /* 1 */ @js.native
-  object locallyAuthenticated extends TopLevel[locallyAuthenticated with Double]
-  
-  /* 2 */ @js.native
-  object remotelyAuthenticated extends TopLevel[remotelyAuthenticated with Double]
-  
-  /* 0 */ @js.native
-  object unauthenticated extends TopLevel[unauthenticated with Double]
   
 }
 

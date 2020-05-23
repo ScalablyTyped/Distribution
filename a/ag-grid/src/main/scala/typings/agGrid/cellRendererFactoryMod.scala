@@ -1,5 +1,6 @@
 package typings.agGrid
 
+import typings.agGrid.anon.InstantiableICellRenderer
 import typings.agGrid.iCellRendererMod.ICellRendererFunc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,9 +15,9 @@ object cellRendererFactoryMod extends js.Object {
     var eventService: js.Any = js.native
     var expressionService: js.Any = js.native
     var gridOptionsWrapper: js.Any = js.native
-    def addCellRenderer(key: String, cellRenderer: AnonInstantiableICellRenderer): Unit = js.native
+    def addCellRenderer(key: String, cellRenderer: InstantiableICellRenderer): Unit = js.native
     def addCellRenderer(key: String, cellRenderer: ICellRendererFunc): Unit = js.native
-    def getCellRenderer(key: String): AnonInstantiableICellRenderer | ICellRendererFunc = js.native
+    def getCellRenderer(key: String): InstantiableICellRenderer | ICellRendererFunc = js.native
     /* private */ def init(): js.Any = js.native
   }
   

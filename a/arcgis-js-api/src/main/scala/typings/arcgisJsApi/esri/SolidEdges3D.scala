@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.solid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,8 +14,4 @@ trait SolidEdges3D extends Edges3D {
     */
   var `type`: solid = js.native
 }
-
-@JSGlobal("__esri.SolidEdges3D")
-@js.native
-object SolidEdges3D extends TopLevel[SolidEdges3DConstructor]
 

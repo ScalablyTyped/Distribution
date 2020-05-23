@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access._CustomControlInReport")
 @js.native
-class CustomControlInReport protected () extends js.Object {
+trait CustomControlInReport extends js.Object {
   var About: String = js.native
   @JSName("Access._CustomControlInReport_typekey")
   var AccessDot_CustomControlInReport_typekey: CustomControlInReport = js.native

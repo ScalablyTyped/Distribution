@@ -15,7 +15,7 @@ object TracingStartOptions {
   def apply(path: String, categories: js.Array[String] = null, screenshots: js.UndefOr[Boolean] = js.undefined): TracingStartOptions = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
-    if (!js.isUndefined(screenshots)) __obj.updateDynamic("screenshots")(screenshots.asInstanceOf[js.Any])
+    if (!js.isUndefined(screenshots)) __obj.updateDynamic("screenshots")(screenshots.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TracingStartOptions]
   }
 }

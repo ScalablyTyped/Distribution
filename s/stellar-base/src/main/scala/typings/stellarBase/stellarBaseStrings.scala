@@ -33,12 +33,6 @@ object stellarBaseStrings {
   sealed trait ed25519 extends js.Object
   
   @js.native
-  sealed trait hash extends js.Object
-  
-  @js.native
-  sealed trait id extends js.Object
-  
-  @js.native
   sealed trait inflation extends js.Object
   
   @js.native
@@ -54,9 +48,6 @@ object stellarBaseStrings {
   sealed trait native extends js.Object
   
   @js.native
-  sealed trait none extends js.Object
-  
-  @js.native
   sealed trait pathPaymentStrictReceive extends js.Object
   
   @js.native
@@ -66,13 +57,7 @@ object stellarBaseStrings {
   sealed trait payment extends js.Object
   
   @js.native
-  sealed trait `return` extends js.Object
-  
-  @js.native
   sealed trait setOptions extends js.Object
-  
-  @js.native
-  sealed trait text extends js.Object
   
   @scala.inline
   def accountMerge: accountMerge = "accountMerge".asInstanceOf[accountMerge]
@@ -93,10 +78,6 @@ object stellarBaseStrings {
   @scala.inline
   def ed25519: ed25519 = "ed25519".asInstanceOf[ed25519]
   @scala.inline
-  def hash: hash = "hash".asInstanceOf[hash]
-  @scala.inline
-  def id: id = "id".asInstanceOf[id]
-  @scala.inline
   def inflation: inflation = "inflation".asInstanceOf[inflation]
   @scala.inline
   def manageBuyOffer: manageBuyOffer = "manageBuyOffer".asInstanceOf[manageBuyOffer]
@@ -107,18 +88,12 @@ object stellarBaseStrings {
   @scala.inline
   def native: native = "native".asInstanceOf[native]
   @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
   def pathPaymentStrictReceive: pathPaymentStrictReceive = "pathPaymentStrictReceive".asInstanceOf[pathPaymentStrictReceive]
   @scala.inline
   def pathPaymentStrictSend: pathPaymentStrictSend = "pathPaymentStrictSend".asInstanceOf[pathPaymentStrictSend]
   @scala.inline
   def payment: payment = "payment".asInstanceOf[payment]
   @scala.inline
-  def `return`: `return` = "return".asInstanceOf[`return`]
-  @scala.inline
   def setOptions: setOptions = "setOptions".asInstanceOf[setOptions]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
 }
 

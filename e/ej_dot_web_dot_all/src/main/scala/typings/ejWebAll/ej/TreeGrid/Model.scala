@@ -378,7 +378,7 @@ object Model {
     columnResizeStart: /* e */ ColumnResizeStartEventArgs => Unit = null,
     columnResized: /* e */ ColumnResizedEventArgs => Unit = null,
     columns: js.Array[Column] = null,
-    commonWidth: Int | Double = null,
+    commonWidth: js.UndefOr[Double] = js.undefined,
     contextMenuOpen: /* e */ ContextMenuOpenEventArgs => Unit = null,
     contextMenuSettings: ContextMenuSettings = null,
     create: /* e */ CreateEventArgs => Unit = null,
@@ -386,7 +386,7 @@ object Model {
     dataSource: js.Array[_] = null,
     detailsDataBound: /* e */ DetailsDataBoundEventArgs => Unit = null,
     detailsHidden: /* e */ DetailsHiddenEventArgs => Unit = null,
-    detailsRowHeight: Int | Double = null,
+    detailsRowHeight: js.UndefOr[Double] = js.undefined,
     detailsShown: /* e */ DetailsShownEventArgs => Unit = null,
     detailsTemplate: String = null,
     dragTooltip: DragTooltip = null,
@@ -418,13 +418,13 @@ object Model {
     rowDragStart: /* e */ RowDragStartEventArgs => Unit = null,
     rowDragStop: /* e */ RowDragStopEventArgs => Unit = null,
     rowDropActionBegin: /* e */ RowDropActionBeginEventArgs => Unit = null,
-    rowHeight: Int | Double = null,
+    rowHeight: js.UndefOr[Double] = js.undefined,
     rowSelected: /* e */ RowSelectedEventArgs => Unit = null,
     rowSelecting: /* e */ RowSelectingEventArgs => Unit = null,
     rowTemplateID: String = null,
     searchSettings: SearchSettings = null,
     selectedCellIndexes: js.Array[SelectedCellIndex] = null,
-    selectedRowIndex: Int | Double = null,
+    selectedRowIndex: js.UndefOr[Double] = js.undefined,
     selectionSettings: SelectionSettings = null,
     showColumnChooser: js.UndefOr[Boolean] = js.undefined,
     showColumnOptions: js.UndefOr[Boolean] = js.undefined,
@@ -441,23 +441,23 @@ object Model {
     summaryRows: js.Array[SummaryRow] = null,
     toolbarClick: /* e */ ToolbarClickEventArgs => Unit = null,
     toolbarSettings: ToolbarSettings = null,
-    totalSummaryHeight: Int | Double = null,
-    treeColumnIndex: Int | Double = null
+    totalSummaryHeight: js.UndefOr[Double] = js.undefined,
+    treeColumnIndex: js.UndefOr[Double] = js.undefined
   ): Model = {
     val __obj = js.Dynamic.literal()
     if (actionBegin != null) __obj.updateDynamic("actionBegin")(js.Any.fromFunction1(actionBegin))
     if (actionComplete != null) __obj.updateDynamic("actionComplete")(js.Any.fromFunction1(actionComplete))
-    if (!js.isUndefined(allowColumnReordering)) __obj.updateDynamic("allowColumnReordering")(allowColumnReordering.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowColumnResize)) __obj.updateDynamic("allowColumnResize")(allowColumnResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDragAndDrop)) __obj.updateDynamic("allowDragAndDrop")(allowDragAndDrop.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowMultiSorting)) __obj.updateDynamic("allowMultiSorting")(allowMultiSorting.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowPaging)) __obj.updateDynamic("allowPaging")(allowPaging.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSearching)) __obj.updateDynamic("allowSearching")(allowSearching.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSelection)) __obj.updateDynamic("allowSelection")(allowSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowTextWrap)) __obj.updateDynamic("allowTextWrap")(allowTextWrap.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowColumnReordering)) __obj.updateDynamic("allowColumnReordering")(allowColumnReordering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowColumnResize)) __obj.updateDynamic("allowColumnResize")(allowColumnResize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDragAndDrop)) __obj.updateDynamic("allowDragAndDrop")(allowDragAndDrop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowMultiSorting)) __obj.updateDynamic("allowMultiSorting")(allowMultiSorting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowPaging)) __obj.updateDynamic("allowPaging")(allowPaging.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSearching)) __obj.updateDynamic("allowSearching")(allowSearching.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSelection)) __obj.updateDynamic("allowSelection")(allowSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowTextWrap)) __obj.updateDynamic("allowTextWrap")(allowTextWrap.get.asInstanceOf[js.Any])
     if (altRowTemplateID != null) __obj.updateDynamic("altRowTemplateID")(altRowTemplateID.asInstanceOf[js.Any])
     if (beforePrint != null) __obj.updateDynamic("beforePrint")(js.Any.fromFunction1(beforePrint))
     if (beginEdit != null) __obj.updateDynamic("beginEdit")(js.Any.fromFunction1(beginEdit))
@@ -466,7 +466,7 @@ object Model {
     if (cellTooltipTemplate != null) __obj.updateDynamic("cellTooltipTemplate")(cellTooltipTemplate.asInstanceOf[js.Any])
     if (childMapping != null) __obj.updateDynamic("childMapping")(childMapping.asInstanceOf[js.Any])
     if (collapsed != null) __obj.updateDynamic("collapsed")(js.Any.fromFunction1(collapsed))
-    if (!js.isUndefined(collapsibleTotalSummary)) __obj.updateDynamic("collapsibleTotalSummary")(collapsibleTotalSummary.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsibleTotalSummary)) __obj.updateDynamic("collapsibleTotalSummary")(collapsibleTotalSummary.get.asInstanceOf[js.Any])
     if (collapsing != null) __obj.updateDynamic("collapsing")(js.Any.fromFunction1(collapsing))
     if (columnDialogFields != null) __obj.updateDynamic("columnDialogFields")(columnDialogFields.asInstanceOf[js.Any])
     if (columnDrag != null) __obj.updateDynamic("columnDrag")(js.Any.fromFunction1(columnDrag))
@@ -477,7 +477,7 @@ object Model {
     if (columnResizeStart != null) __obj.updateDynamic("columnResizeStart")(js.Any.fromFunction1(columnResizeStart))
     if (columnResized != null) __obj.updateDynamic("columnResized")(js.Any.fromFunction1(columnResized))
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (commonWidth != null) __obj.updateDynamic("commonWidth")(commonWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(commonWidth)) __obj.updateDynamic("commonWidth")(commonWidth.get.asInstanceOf[js.Any])
     if (contextMenuOpen != null) __obj.updateDynamic("contextMenuOpen")(js.Any.fromFunction1(contextMenuOpen))
     if (contextMenuSettings != null) __obj.updateDynamic("contextMenuSettings")(contextMenuSettings.asInstanceOf[js.Any])
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
@@ -485,16 +485,16 @@ object Model {
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
     if (detailsDataBound != null) __obj.updateDynamic("detailsDataBound")(js.Any.fromFunction1(detailsDataBound))
     if (detailsHidden != null) __obj.updateDynamic("detailsHidden")(js.Any.fromFunction1(detailsHidden))
-    if (detailsRowHeight != null) __obj.updateDynamic("detailsRowHeight")(detailsRowHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(detailsRowHeight)) __obj.updateDynamic("detailsRowHeight")(detailsRowHeight.get.asInstanceOf[js.Any])
     if (detailsShown != null) __obj.updateDynamic("detailsShown")(js.Any.fromFunction1(detailsShown))
     if (detailsTemplate != null) __obj.updateDynamic("detailsTemplate")(detailsTemplate.asInstanceOf[js.Any])
     if (dragTooltip != null) __obj.updateDynamic("dragTooltip")(dragTooltip.asInstanceOf[js.Any])
     if (editSettings != null) __obj.updateDynamic("editSettings")(editSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAltRow)) __obj.updateDynamic("enableAltRow")(enableAltRow.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCollapseAll)) __obj.updateDynamic("enableCollapseAll")(enableCollapseAll.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLoadOnDemand)) __obj.updateDynamic("enableLoadOnDemand")(enableLoadOnDemand.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableResize)) __obj.updateDynamic("enableResize")(enableResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableVirtualization)) __obj.updateDynamic("enableVirtualization")(enableVirtualization.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAltRow)) __obj.updateDynamic("enableAltRow")(enableAltRow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCollapseAll)) __obj.updateDynamic("enableCollapseAll")(enableCollapseAll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableLoadOnDemand)) __obj.updateDynamic("enableLoadOnDemand")(enableLoadOnDemand.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableResize)) __obj.updateDynamic("enableResize")(enableResize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableVirtualization)) __obj.updateDynamic("enableVirtualization")(enableVirtualization.get.asInstanceOf[js.Any])
     if (endEdit != null) __obj.updateDynamic("endEdit")(js.Any.fromFunction1(endEdit))
     if (expandStateMapping != null) __obj.updateDynamic("expandStateMapping")(expandStateMapping.asInstanceOf[js.Any])
     if (expanded != null) __obj.updateDynamic("expanded")(js.Any.fromFunction1(expanded))
@@ -502,12 +502,12 @@ object Model {
     if (filterSettings != null) __obj.updateDynamic("filterSettings")(filterSettings.asInstanceOf[js.Any])
     if (headerTextOverflow != null) __obj.updateDynamic("headerTextOverflow")(headerTextOverflow.asInstanceOf[js.Any])
     if (idMapping != null) __obj.updateDynamic("idMapping")(idMapping.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.get.asInstanceOf[js.Any])
     if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (pageSettings != null) __obj.updateDynamic("pageSettings")(pageSettings.asInstanceOf[js.Any])
     if (parentIdMapping != null) __obj.updateDynamic("parentIdMapping")(parentIdMapping.asInstanceOf[js.Any])
-    if (!js.isUndefined(parseRowTemplate)) __obj.updateDynamic("parseRowTemplate")(parseRowTemplate.asInstanceOf[js.Any])
+    if (!js.isUndefined(parseRowTemplate)) __obj.updateDynamic("parseRowTemplate")(parseRowTemplate.get.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (queryCellInfo != null) __obj.updateDynamic("queryCellInfo")(js.Any.fromFunction1(queryCellInfo))
     if (recordClick != null) __obj.updateDynamic("recordClick")(js.Any.fromFunction1(recordClick))
@@ -517,31 +517,31 @@ object Model {
     if (rowDragStart != null) __obj.updateDynamic("rowDragStart")(js.Any.fromFunction1(rowDragStart))
     if (rowDragStop != null) __obj.updateDynamic("rowDragStop")(js.Any.fromFunction1(rowDragStop))
     if (rowDropActionBegin != null) __obj.updateDynamic("rowDropActionBegin")(js.Any.fromFunction1(rowDropActionBegin))
-    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowHeight)) __obj.updateDynamic("rowHeight")(rowHeight.get.asInstanceOf[js.Any])
     if (rowSelected != null) __obj.updateDynamic("rowSelected")(js.Any.fromFunction1(rowSelected))
     if (rowSelecting != null) __obj.updateDynamic("rowSelecting")(js.Any.fromFunction1(rowSelecting))
     if (rowTemplateID != null) __obj.updateDynamic("rowTemplateID")(rowTemplateID.asInstanceOf[js.Any])
     if (searchSettings != null) __obj.updateDynamic("searchSettings")(searchSettings.asInstanceOf[js.Any])
     if (selectedCellIndexes != null) __obj.updateDynamic("selectedCellIndexes")(selectedCellIndexes.asInstanceOf[js.Any])
-    if (selectedRowIndex != null) __obj.updateDynamic("selectedRowIndex")(selectedRowIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedRowIndex)) __obj.updateDynamic("selectedRowIndex")(selectedRowIndex.get.asInstanceOf[js.Any])
     if (selectionSettings != null) __obj.updateDynamic("selectionSettings")(selectionSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(showColumnChooser)) __obj.updateDynamic("showColumnChooser")(showColumnChooser.asInstanceOf[js.Any])
-    if (!js.isUndefined(showColumnOptions)) __obj.updateDynamic("showColumnOptions")(showColumnOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDetailsRow)) __obj.updateDynamic("showDetailsRow")(showDetailsRow.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDetailsRowInfoColumn)) __obj.updateDynamic("showDetailsRowInfoColumn")(showDetailsRowInfoColumn.asInstanceOf[js.Any])
-    if (!js.isUndefined(showGridCellTooltip)) __obj.updateDynamic("showGridCellTooltip")(showGridCellTooltip.asInstanceOf[js.Any])
-    if (!js.isUndefined(showGridExpandCellTooltip)) __obj.updateDynamic("showGridExpandCellTooltip")(showGridExpandCellTooltip.asInstanceOf[js.Any])
-    if (!js.isUndefined(showStackedHeader)) __obj.updateDynamic("showStackedHeader")(showStackedHeader.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSummaryRow)) __obj.updateDynamic("showSummaryRow")(showSummaryRow.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTotalSummary)) __obj.updateDynamic("showTotalSummary")(showTotalSummary.asInstanceOf[js.Any])
+    if (!js.isUndefined(showColumnChooser)) __obj.updateDynamic("showColumnChooser")(showColumnChooser.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showColumnOptions)) __obj.updateDynamic("showColumnOptions")(showColumnOptions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDetailsRow)) __obj.updateDynamic("showDetailsRow")(showDetailsRow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDetailsRowInfoColumn)) __obj.updateDynamic("showDetailsRowInfoColumn")(showDetailsRowInfoColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showGridCellTooltip)) __obj.updateDynamic("showGridCellTooltip")(showGridCellTooltip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showGridExpandCellTooltip)) __obj.updateDynamic("showGridExpandCellTooltip")(showGridExpandCellTooltip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showStackedHeader)) __obj.updateDynamic("showStackedHeader")(showStackedHeader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSummaryRow)) __obj.updateDynamic("showSummaryRow")(showSummaryRow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTotalSummary)) __obj.updateDynamic("showTotalSummary")(showTotalSummary.get.asInstanceOf[js.Any])
     if (sizeSettings != null) __obj.updateDynamic("sizeSettings")(sizeSettings.asInstanceOf[js.Any])
     if (sortSettings != null) __obj.updateDynamic("sortSettings")(sortSettings.asInstanceOf[js.Any])
     if (stackedHeaderRows != null) __obj.updateDynamic("stackedHeaderRows")(stackedHeaderRows.asInstanceOf[js.Any])
     if (summaryRows != null) __obj.updateDynamic("summaryRows")(summaryRows.asInstanceOf[js.Any])
     if (toolbarClick != null) __obj.updateDynamic("toolbarClick")(js.Any.fromFunction1(toolbarClick))
     if (toolbarSettings != null) __obj.updateDynamic("toolbarSettings")(toolbarSettings.asInstanceOf[js.Any])
-    if (totalSummaryHeight != null) __obj.updateDynamic("totalSummaryHeight")(totalSummaryHeight.asInstanceOf[js.Any])
-    if (treeColumnIndex != null) __obj.updateDynamic("treeColumnIndex")(treeColumnIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalSummaryHeight)) __obj.updateDynamic("totalSummaryHeight")(totalSummaryHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(treeColumnIndex)) __obj.updateDynamic("treeColumnIndex")(treeColumnIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
 }

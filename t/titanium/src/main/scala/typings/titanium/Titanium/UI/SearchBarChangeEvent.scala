@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the value of the search bar changes.
-		 */
+  * Fired when the value of the search bar changes.
+  */
 trait SearchBarChangeEvent extends SearchBarBaseEvent {
   /**
-  			 * Value of the search bar.
-  			 */
+    * Value of the search bar.
+    */
   var value: String
 }
 

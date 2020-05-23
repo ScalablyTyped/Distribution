@@ -18,13 +18,13 @@ object WindowsInformationProtectionAppLearningSummary {
   def apply(
     applicationName: String = null,
     applicationType: ApplicationType = null,
-    deviceCount: Int | Double = null,
+    deviceCount: js.UndefOr[Double] = js.undefined,
     id: String = null
   ): WindowsInformationProtectionAppLearningSummary = {
     val __obj = js.Dynamic.literal()
     if (applicationName != null) __obj.updateDynamic("applicationName")(applicationName.asInstanceOf[js.Any])
     if (applicationType != null) __obj.updateDynamic("applicationType")(applicationType.asInstanceOf[js.Any])
-    if (deviceCount != null) __obj.updateDynamic("deviceCount")(deviceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(deviceCount)) __obj.updateDynamic("deviceCount")(deviceCount.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsInformationProtectionAppLearningSummary]
   }

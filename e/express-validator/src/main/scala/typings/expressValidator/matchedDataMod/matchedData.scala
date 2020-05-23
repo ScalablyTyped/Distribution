@@ -1,6 +1,6 @@
 package typings.expressValidator.matchedDataMod
 
-import typings.expressValidator.PartialMatchedDataOptions
+import typings.expressValidator.anon.PartialMatchedDataOptions
 import typings.expressValidator.baseMod.Request
 import typings.std.Record
 import scala.scalajs.js

@@ -15,7 +15,7 @@ object PatchWikiParams {
   def apply(content: String = null, mailNotify: js.UndefOr[Boolean] = js.undefined, name: String = null): PatchWikiParams = {
     val __obj = js.Dynamic.literal()
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(mailNotify)) __obj.updateDynamic("mailNotify")(mailNotify.asInstanceOf[js.Any])
+    if (!js.isUndefined(mailNotify)) __obj.updateDynamic("mailNotify")(mailNotify.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchWikiParams]
   }

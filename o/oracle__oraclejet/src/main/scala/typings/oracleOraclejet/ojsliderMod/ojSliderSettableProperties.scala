@@ -1,9 +1,9 @@
 package typings.oracleOraclejet.ojsliderMod
 
-import typings.oracleOraclejet.AnonConverterHint
-import typings.oracleOraclejet.AnonDefinition
-import typings.oracleOraclejet.AnonInstruction
-import typings.oracleOraclejet.AnonInvalidStep
+import typings.oracleOraclejet.anon.ConverterHint
+import typings.oracleOraclejet.anon.Definition
+import typings.oracleOraclejet.anon.Instruction
+import typings.oracleOraclejet.anon.InvalidStep
 import typings.oracleOraclejet.ojeditablevalueMod.editableValueSettableProperties
 import typings.oracleOraclejet.ojmessagingMod.^
 import typings.oracleOraclejet.oracleOraclejetStrings.fromMax
@@ -26,7 +26,7 @@ trait ojSliderSettableProperties extends editableValueSettableProperties[Double 
   var step: Double | Null
   val transientValue: Double
   @JSName("translations")
-  var translations_ojSliderSettableProperties: AnonInvalidStep
+  var translations_ojSliderSettableProperties: InvalidStep
   var `type`: fromMin | fromMax | single
 }
 
@@ -34,29 +34,24 @@ object ojSliderSettableProperties {
   @scala.inline
   def apply(
     disabled: Boolean,
-    displayOptions: AnonConverterHint,
-    help: AnonInstruction,
-    helpHints: AnonDefinition,
+    displayOptions: ConverterHint,
+    help: Instruction,
+    helpHints: Definition,
     labelHint: String,
     messagesCustom: js.Array[^],
     orientation: horizontal | vertical,
     transientValue: Double,
-    translations: AnonInvalidStep,
+    translations: InvalidStep,
     `type`: fromMin | fromMax | single,
     valid: valid | pending | invalidHidden | invalidShown,
     describedBy: String = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    step: Int | Double = null,
-    value: Int | Double = null
+    max: Double = null.asInstanceOf[Double],
+    min: Double = null.asInstanceOf[Double],
+    step: Double = null.asInstanceOf[Double],
+    value: Double = null.asInstanceOf[Double]
   ): ojSliderSettableProperties = {
-    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], transientValue = transientValue.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], transientValue = transientValue.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], describedBy = describedBy.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojSliderSettableProperties]
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ConditionalDataBarPositiveFormatUpdateData extends js.Object {
   /**
     *
-    * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+    * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     "" (empty string) if no border is present or set.
     *
     * [Api set: ExcelApi 1.6]
@@ -16,14 +16,14 @@ trait ConditionalDataBarPositiveFormatUpdateData extends js.Object {
   var borderColor: js.UndefOr[String] = js.undefined
   /**
     *
-    * HTML color code representing the fill color, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+    * HTML color code representing the fill color, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     *
     * [Api set: ExcelApi 1.6]
     */
   var fillColor: js.UndefOr[String] = js.undefined
   /**
     *
-    * Boolean representation of whether or not the DataBar has a gradient.
+    * Specifies if the DataBar has a gradient.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -40,7 +40,7 @@ object ConditionalDataBarPositiveFormatUpdateData {
     val __obj = js.Dynamic.literal()
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(gradientFill)) __obj.updateDynamic("gradientFill")(gradientFill.asInstanceOf[js.Any])
+    if (!js.isUndefined(gradientFill)) __obj.updateDynamic("gradientFill")(gradientFill.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalDataBarPositiveFormatUpdateData]
   }
 }

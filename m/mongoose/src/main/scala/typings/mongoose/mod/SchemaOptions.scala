@@ -1,7 +1,7 @@
 package typings.mongoose.mod
 
-import typings.mongoose.AnonAutoIndexId
-import typings.mongoose.AnonJ
+import typings.mongoose.anon.AutoIndexId
+import typings.mongoose.anon.J
 import typings.mongoose.mongooseStrings.`throw`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,12 +10,17 @@ import scala.scalajs.js.annotation._
 trait SchemaOptions extends js.Object {
   /** defaults to true */
   var _id: js.UndefOr[Boolean] = js.undefined
+  /**
+    * When false, use the connection's autoCreate option
+    * @default false
+    */
+  var autoCreate: js.UndefOr[Boolean] = js.undefined
   /** defaults to false (which means use the connection's autoIndex option) */
   var autoIndex: js.UndefOr[Boolean] = js.undefined
   /** defaults to true */
   var bufferCommands: js.UndefOr[Boolean] = js.undefined
   /** defaults to false */
-  var capped: js.UndefOr[Boolean | Double | AnonAutoIndexId] = js.undefined
+  var capped: js.UndefOr[Boolean | Double | AutoIndexId] = js.undefined
   /** Sets a default collation for every query and aggregation. */
   var collation: js.UndefOr[CollationOptions] = js.undefined
   /** no default */
@@ -31,7 +36,7 @@ trait SchemaOptions extends js.Object {
   var minimize: js.UndefOr[Boolean] = js.undefined
   var read: js.UndefOr[String] = js.undefined
   /** defaults to true. */
-  var safe: js.UndefOr[Boolean | AnonJ] = js.undefined
+  var safe: js.UndefOr[Boolean | J] = js.undefined
   /**
     * By default, Mongoose will automatically
     * select() any populated paths.
@@ -55,6 +60,8 @@ trait SchemaOptions extends js.Object {
   var storeSubdocValidationError: js.UndefOr[Boolean] = js.undefined
   /** defaults to true */
   var strict: js.UndefOr[Boolean | `throw`] = js.undefined
+  /** no default */
+  var strictQuery: js.UndefOr[Boolean] = js.undefined
   /**
     * If set timestamps, mongoose assigns createdAt
     * and updatedAt fields to your schema, the type
@@ -87,9 +94,10 @@ object SchemaOptions {
   @scala.inline
   def apply(
     _id: js.UndefOr[Boolean] = js.undefined,
+    autoCreate: js.UndefOr[Boolean] = js.undefined,
     autoIndex: js.UndefOr[Boolean] = js.undefined,
     bufferCommands: js.UndefOr[Boolean] = js.undefined,
-    capped: Boolean | Double | AnonAutoIndexId = null,
+    capped: Boolean | Double | AutoIndexId = null,
     collation: CollationOptions = null,
     collection: String = null,
     discriminatorKey: String = null,
@@ -98,12 +106,13 @@ object SchemaOptions {
     id: js.UndefOr[Boolean] = js.undefined,
     minimize: js.UndefOr[Boolean] = js.undefined,
     read: String = null,
-    safe: Boolean | AnonJ = null,
+    safe: Boolean | J = null,
     selectPopulatedPaths: js.UndefOr[Boolean] = js.undefined,
     shardKey: js.Object = null,
     skipVersioning: js.Any = null,
     storeSubdocValidationError: js.UndefOr[Boolean] = js.undefined,
     strict: Boolean | `throw` = null,
+    strictQuery: js.UndefOr[Boolean] = js.undefined,
     timestamps: Boolean | SchemaTimestampsConfig = null,
     toJSON: DocumentToObjectOptions = null,
     toObject: DocumentToObjectOptions = null,
@@ -116,32 +125,34 @@ object SchemaOptions {
     writeConcern: WriteConcern = null
   ): SchemaOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(_id)) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoIndex)) __obj.updateDynamic("autoIndex")(autoIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(bufferCommands)) __obj.updateDynamic("bufferCommands")(bufferCommands.asInstanceOf[js.Any])
+    if (!js.isUndefined(_id)) __obj.updateDynamic("_id")(_id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCreate)) __obj.updateDynamic("autoCreate")(autoCreate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoIndex)) __obj.updateDynamic("autoIndex")(autoIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bufferCommands)) __obj.updateDynamic("bufferCommands")(bufferCommands.get.asInstanceOf[js.Any])
     if (capped != null) __obj.updateDynamic("capped")(capped.asInstanceOf[js.Any])
     if (collation != null) __obj.updateDynamic("collation")(collation.asInstanceOf[js.Any])
     if (collection != null) __obj.updateDynamic("collection")(collection.asInstanceOf[js.Any])
     if (discriminatorKey != null) __obj.updateDynamic("discriminatorKey")(discriminatorKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(emitIndexErrors)) __obj.updateDynamic("emitIndexErrors")(emitIndexErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(emitIndexErrors)) __obj.updateDynamic("emitIndexErrors")(emitIndexErrors.get.asInstanceOf[js.Any])
     if (excludeIndexes != null) __obj.updateDynamic("excludeIndexes")(excludeIndexes.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimize)) __obj.updateDynamic("minimize")(minimize.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimize)) __obj.updateDynamic("minimize")(minimize.get.asInstanceOf[js.Any])
     if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
     if (safe != null) __obj.updateDynamic("safe")(safe.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectPopulatedPaths)) __obj.updateDynamic("selectPopulatedPaths")(selectPopulatedPaths.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectPopulatedPaths)) __obj.updateDynamic("selectPopulatedPaths")(selectPopulatedPaths.get.asInstanceOf[js.Any])
     if (shardKey != null) __obj.updateDynamic("shardKey")(shardKey.asInstanceOf[js.Any])
     if (skipVersioning != null) __obj.updateDynamic("skipVersioning")(skipVersioning.asInstanceOf[js.Any])
-    if (!js.isUndefined(storeSubdocValidationError)) __obj.updateDynamic("storeSubdocValidationError")(storeSubdocValidationError.asInstanceOf[js.Any])
+    if (!js.isUndefined(storeSubdocValidationError)) __obj.updateDynamic("storeSubdocValidationError")(storeSubdocValidationError.get.asInstanceOf[js.Any])
     if (strict != null) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictQuery)) __obj.updateDynamic("strictQuery")(strictQuery.get.asInstanceOf[js.Any])
     if (timestamps != null) __obj.updateDynamic("timestamps")(timestamps.asInstanceOf[js.Any])
     if (toJSON != null) __obj.updateDynamic("toJSON")(toJSON.asInstanceOf[js.Any])
     if (toObject != null) __obj.updateDynamic("toObject")(toObject.asInstanceOf[js.Any])
     if (typeKey != null) __obj.updateDynamic("typeKey")(typeKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(typePojoToMixed)) __obj.updateDynamic("typePojoToMixed")(typePojoToMixed.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNestedStrict)) __obj.updateDynamic("useNestedStrict")(useNestedStrict.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePushEach)) __obj.updateDynamic("usePushEach")(usePushEach.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateBeforeSave)) __obj.updateDynamic("validateBeforeSave")(validateBeforeSave.asInstanceOf[js.Any])
+    if (!js.isUndefined(typePojoToMixed)) __obj.updateDynamic("typePojoToMixed")(typePojoToMixed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNestedStrict)) __obj.updateDynamic("useNestedStrict")(useNestedStrict.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePushEach)) __obj.updateDynamic("usePushEach")(usePushEach.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateBeforeSave)) __obj.updateDynamic("validateBeforeSave")(validateBeforeSave.get.asInstanceOf[js.Any])
     if (versionKey != null) __obj.updateDynamic("versionKey")(versionKey.asInstanceOf[js.Any])
     if (writeConcern != null) __obj.updateDynamic("writeConcern")(writeConcern.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOptions]

@@ -1,6 +1,5 @@
 package typings.cordovaPluginContacts
 
-import org.scalablytyped.runtime.Instantiable8
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,19 +27,28 @@ trait ContactAddress extends js.Object {
   var `type`: js.UndefOr[String] = js.undefined
 }
 
-@JSGlobal("ContactAddress")
-@js.native
-object ContactAddress
-  extends /** Constructor of ContactAddress object */
-Instantiable8[
-      js.UndefOr[/* pref */ Boolean], 
-      js.UndefOr[/* type */ String], 
-      js.UndefOr[/* formatted */ String], 
-      js.UndefOr[/* streetAddress */ String], 
-      js.UndefOr[/* locality */ String], 
-      js.UndefOr[/* region */ String], 
-      js.UndefOr[/* postalCode */ String], 
-      js.UndefOr[/* country */ String], 
-      ContactAddress
-    ]
+object ContactAddress {
+  @scala.inline
+  def apply(
+    country: String = null,
+    formatted: String = null,
+    locality: String = null,
+    postalCode: String = null,
+    pref: js.UndefOr[Boolean] = js.undefined,
+    region: String = null,
+    streetAddress: String = null,
+    `type`: String = null
+  ): ContactAddress = {
+    val __obj = js.Dynamic.literal()
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (formatted != null) __obj.updateDynamic("formatted")(formatted.asInstanceOf[js.Any])
+    if (locality != null) __obj.updateDynamic("locality")(locality.asInstanceOf[js.Any])
+    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(pref)) __obj.updateDynamic("pref")(pref.get.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (streetAddress != null) __obj.updateDynamic("streetAddress")(streetAddress.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ContactAddress]
+  }
+}
 

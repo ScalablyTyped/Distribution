@@ -14,9 +14,9 @@ trait CancelCapacityReservationResult extends js.Object {
 
 object CancelCapacityReservationResult {
   @scala.inline
-  def apply(Return: js.UndefOr[scala.Boolean] = js.undefined): CancelCapacityReservationResult = {
+  def apply(Return: js.UndefOr[Boolean] = js.undefined): CancelCapacityReservationResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Return)) __obj.updateDynamic("Return")(Return.asInstanceOf[js.Any])
+    if (!js.isUndefined(Return)) __obj.updateDynamic("Return")(Return.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelCapacityReservationResult]
   }
 }

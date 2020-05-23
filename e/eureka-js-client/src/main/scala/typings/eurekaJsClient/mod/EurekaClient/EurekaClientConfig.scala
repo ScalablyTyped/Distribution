@@ -33,15 +33,15 @@ object EurekaClientConfig {
     fetchMetadata: js.UndefOr[Boolean] = js.undefined,
     fetchRegistry: js.UndefOr[Boolean] = js.undefined,
     filterUpInstances: js.UndefOr[Boolean] = js.undefined,
-    heartbeatInterval: Int | Double = null,
+    heartbeatInterval: js.UndefOr[Double] = js.undefined,
     host: String = null,
-    maxRetries: Int | Double = null,
-    port: Int | Double = null,
+    maxRetries: js.UndefOr[Double] = js.undefined,
+    port: js.UndefOr[Double] = js.undefined,
     preferIpAddress: js.UndefOr[Boolean] = js.undefined,
     preferSameZone: js.UndefOr[Boolean] = js.undefined,
     registerWithEureka: js.UndefOr[Boolean] = js.undefined,
-    registryFetchInterval: Int | Double = null,
-    requestRetryDelay: Int | Double = null,
+    registryFetchInterval: js.UndefOr[Double] = js.undefined,
+    requestRetryDelay: js.UndefOr[Double] = js.undefined,
     servicePath: String = null,
     serviceUrls: StringDictionary[js.Array[String]] = null,
     ssl: js.UndefOr[Boolean] = js.undefined,
@@ -49,24 +49,24 @@ object EurekaClientConfig {
     useLocalMetadata: js.UndefOr[Boolean] = js.undefined
   ): EurekaClientConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clusterRefreshInterval)) __obj.updateDynamic("clusterRefreshInterval")(clusterRefreshInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(fetchMetadata)) __obj.updateDynamic("fetchMetadata")(fetchMetadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(fetchRegistry)) __obj.updateDynamic("fetchRegistry")(fetchRegistry.asInstanceOf[js.Any])
-    if (!js.isUndefined(filterUpInstances)) __obj.updateDynamic("filterUpInstances")(filterUpInstances.asInstanceOf[js.Any])
-    if (heartbeatInterval != null) __obj.updateDynamic("heartbeatInterval")(heartbeatInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(clusterRefreshInterval)) __obj.updateDynamic("clusterRefreshInterval")(clusterRefreshInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetchMetadata)) __obj.updateDynamic("fetchMetadata")(fetchMetadata.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetchRegistry)) __obj.updateDynamic("fetchRegistry")(fetchRegistry.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterUpInstances)) __obj.updateDynamic("filterUpInstances")(filterUpInstances.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(heartbeatInterval)) __obj.updateDynamic("heartbeatInterval")(heartbeatInterval.get.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferIpAddress)) __obj.updateDynamic("preferIpAddress")(preferIpAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferSameZone)) __obj.updateDynamic("preferSameZone")(preferSameZone.asInstanceOf[js.Any])
-    if (!js.isUndefined(registerWithEureka)) __obj.updateDynamic("registerWithEureka")(registerWithEureka.asInstanceOf[js.Any])
-    if (registryFetchInterval != null) __obj.updateDynamic("registryFetchInterval")(registryFetchInterval.asInstanceOf[js.Any])
-    if (requestRetryDelay != null) __obj.updateDynamic("requestRetryDelay")(requestRetryDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferIpAddress)) __obj.updateDynamic("preferIpAddress")(preferIpAddress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferSameZone)) __obj.updateDynamic("preferSameZone")(preferSameZone.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(registerWithEureka)) __obj.updateDynamic("registerWithEureka")(registerWithEureka.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(registryFetchInterval)) __obj.updateDynamic("registryFetchInterval")(registryFetchInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestRetryDelay)) __obj.updateDynamic("requestRetryDelay")(requestRetryDelay.get.asInstanceOf[js.Any])
     if (servicePath != null) __obj.updateDynamic("servicePath")(servicePath.asInstanceOf[js.Any])
     if (serviceUrls != null) __obj.updateDynamic("serviceUrls")(serviceUrls.asInstanceOf[js.Any])
-    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
-    if (!js.isUndefined(useDns)) __obj.updateDynamic("useDns")(useDns.asInstanceOf[js.Any])
-    if (!js.isUndefined(useLocalMetadata)) __obj.updateDynamic("useLocalMetadata")(useLocalMetadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useDns)) __obj.updateDynamic("useDns")(useDns.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useLocalMetadata)) __obj.updateDynamic("useLocalMetadata")(useLocalMetadata.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EurekaClientConfig]
   }
 }

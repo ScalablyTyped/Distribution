@@ -64,76 +64,76 @@ object MapOptions {
     crs: CRS = null,
     doubleClickZoom: Zoom = null,
     dragging: js.UndefOr[Boolean] = js.undefined,
-    easeLinearity: Int | Double = null,
+    easeLinearity: js.UndefOr[Double] = js.undefined,
     fadeAnimation: js.UndefOr[Boolean] = js.undefined,
     inertia: js.UndefOr[Boolean] = js.undefined,
-    inertiaDeceleration: Int | Double = null,
-    inertiaMaxSpeed: Int | Double = null,
+    inertiaDeceleration: js.UndefOr[Double] = js.undefined,
+    inertiaMaxSpeed: js.UndefOr[Double] = js.undefined,
     keyboard: js.UndefOr[Boolean] = js.undefined,
-    keyboardPanDelta: Int | Double = null,
+    keyboardPanDelta: js.UndefOr[Double] = js.undefined,
     layers: js.Array[Layer] = null,
     markerZoomAnimation: js.UndefOr[Boolean] = js.undefined,
     maxBounds: LatLngBoundsExpression = null,
-    maxBoundsViscosity: Int | Double = null,
-    maxZoom: Int | Double = null,
-    minZoom: Int | Double = null,
+    maxBoundsViscosity: js.UndefOr[Double] = js.undefined,
+    maxZoom: js.UndefOr[Double] = js.undefined,
+    minZoom: js.UndefOr[Double] = js.undefined,
     preferCanvas: js.UndefOr[Boolean] = js.undefined,
     renderer: Renderer = null,
     scrollWheelZoom: Zoom = null,
     tap: js.UndefOr[Boolean] = js.undefined,
-    tapTolerance: Int | Double = null,
+    tapTolerance: js.UndefOr[Double] = js.undefined,
     touchZoom: Zoom = null,
     trackResize: js.UndefOr[Boolean] = js.undefined,
-    transform3DLimit: Int | Double = null,
-    wheelDebounceTime: Int | Double = null,
-    wheelPxPerZoomLevel: Int | Double = null,
+    transform3DLimit: js.UndefOr[Double] = js.undefined,
+    wheelDebounceTime: js.UndefOr[Double] = js.undefined,
+    wheelPxPerZoomLevel: js.UndefOr[Double] = js.undefined,
     worldCopyJump: js.UndefOr[Boolean] = js.undefined,
-    zoom: Int | Double = null,
+    zoom: js.UndefOr[Double] = js.undefined,
     zoomAnimation: js.UndefOr[Boolean] = js.undefined,
-    zoomAnimationThreshold: Int | Double = null,
+    zoomAnimationThreshold: js.UndefOr[Double] = js.undefined,
     zoomControl: js.UndefOr[Boolean] = js.undefined,
-    zoomDelta: Int | Double = null,
-    zoomSnap: Int | Double = null
+    zoomDelta: js.UndefOr[Double] = js.undefined,
+    zoomSnap: js.UndefOr[Double] = js.undefined
   ): MapOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(attributionControl)) __obj.updateDynamic("attributionControl")(attributionControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(bounceAtZoomLimits)) __obj.updateDynamic("bounceAtZoomLimits")(bounceAtZoomLimits.asInstanceOf[js.Any])
-    if (!js.isUndefined(boxZoom)) __obj.updateDynamic("boxZoom")(boxZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(attributionControl)) __obj.updateDynamic("attributionControl")(attributionControl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bounceAtZoomLimits)) __obj.updateDynamic("bounceAtZoomLimits")(bounceAtZoomLimits.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(boxZoom)) __obj.updateDynamic("boxZoom")(boxZoom.get.asInstanceOf[js.Any])
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (!js.isUndefined(closePopupOnClick)) __obj.updateDynamic("closePopupOnClick")(closePopupOnClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(closePopupOnClick)) __obj.updateDynamic("closePopupOnClick")(closePopupOnClick.get.asInstanceOf[js.Any])
     if (crs != null) __obj.updateDynamic("crs")(crs.asInstanceOf[js.Any])
     if (doubleClickZoom != null) __obj.updateDynamic("doubleClickZoom")(doubleClickZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragging)) __obj.updateDynamic("dragging")(dragging.asInstanceOf[js.Any])
-    if (easeLinearity != null) __obj.updateDynamic("easeLinearity")(easeLinearity.asInstanceOf[js.Any])
-    if (!js.isUndefined(fadeAnimation)) __obj.updateDynamic("fadeAnimation")(fadeAnimation.asInstanceOf[js.Any])
-    if (!js.isUndefined(inertia)) __obj.updateDynamic("inertia")(inertia.asInstanceOf[js.Any])
-    if (inertiaDeceleration != null) __obj.updateDynamic("inertiaDeceleration")(inertiaDeceleration.asInstanceOf[js.Any])
-    if (inertiaMaxSpeed != null) __obj.updateDynamic("inertiaMaxSpeed")(inertiaMaxSpeed.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
-    if (keyboardPanDelta != null) __obj.updateDynamic("keyboardPanDelta")(keyboardPanDelta.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragging)) __obj.updateDynamic("dragging")(dragging.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(easeLinearity)) __obj.updateDynamic("easeLinearity")(easeLinearity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fadeAnimation)) __obj.updateDynamic("fadeAnimation")(fadeAnimation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inertia)) __obj.updateDynamic("inertia")(inertia.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inertiaDeceleration)) __obj.updateDynamic("inertiaDeceleration")(inertiaDeceleration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inertiaMaxSpeed)) __obj.updateDynamic("inertiaMaxSpeed")(inertiaMaxSpeed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboardPanDelta)) __obj.updateDynamic("keyboardPanDelta")(keyboardPanDelta.get.asInstanceOf[js.Any])
     if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
-    if (!js.isUndefined(markerZoomAnimation)) __obj.updateDynamic("markerZoomAnimation")(markerZoomAnimation.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerZoomAnimation)) __obj.updateDynamic("markerZoomAnimation")(markerZoomAnimation.get.asInstanceOf[js.Any])
     if (maxBounds != null) __obj.updateDynamic("maxBounds")(maxBounds.asInstanceOf[js.Any])
-    if (maxBoundsViscosity != null) __obj.updateDynamic("maxBoundsViscosity")(maxBoundsViscosity.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferCanvas)) __obj.updateDynamic("preferCanvas")(preferCanvas.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxBoundsViscosity)) __obj.updateDynamic("maxBoundsViscosity")(maxBoundsViscosity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferCanvas)) __obj.updateDynamic("preferCanvas")(preferCanvas.get.asInstanceOf[js.Any])
     if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
     if (scrollWheelZoom != null) __obj.updateDynamic("scrollWheelZoom")(scrollWheelZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(tap)) __obj.updateDynamic("tap")(tap.asInstanceOf[js.Any])
-    if (tapTolerance != null) __obj.updateDynamic("tapTolerance")(tapTolerance.asInstanceOf[js.Any])
+    if (!js.isUndefined(tap)) __obj.updateDynamic("tap")(tap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tapTolerance)) __obj.updateDynamic("tapTolerance")(tapTolerance.get.asInstanceOf[js.Any])
     if (touchZoom != null) __obj.updateDynamic("touchZoom")(touchZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackResize)) __obj.updateDynamic("trackResize")(trackResize.asInstanceOf[js.Any])
-    if (transform3DLimit != null) __obj.updateDynamic("transform3DLimit")(transform3DLimit.asInstanceOf[js.Any])
-    if (wheelDebounceTime != null) __obj.updateDynamic("wheelDebounceTime")(wheelDebounceTime.asInstanceOf[js.Any])
-    if (wheelPxPerZoomLevel != null) __obj.updateDynamic("wheelPxPerZoomLevel")(wheelPxPerZoomLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(worldCopyJump)) __obj.updateDynamic("worldCopyJump")(worldCopyJump.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomAnimation)) __obj.updateDynamic("zoomAnimation")(zoomAnimation.asInstanceOf[js.Any])
-    if (zoomAnimationThreshold != null) __obj.updateDynamic("zoomAnimationThreshold")(zoomAnimationThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomControl)) __obj.updateDynamic("zoomControl")(zoomControl.asInstanceOf[js.Any])
-    if (zoomDelta != null) __obj.updateDynamic("zoomDelta")(zoomDelta.asInstanceOf[js.Any])
-    if (zoomSnap != null) __obj.updateDynamic("zoomSnap")(zoomSnap.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackResize)) __obj.updateDynamic("trackResize")(trackResize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transform3DLimit)) __obj.updateDynamic("transform3DLimit")(transform3DLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wheelDebounceTime)) __obj.updateDynamic("wheelDebounceTime")(wheelDebounceTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wheelPxPerZoomLevel)) __obj.updateDynamic("wheelPxPerZoomLevel")(wheelPxPerZoomLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(worldCopyJump)) __obj.updateDynamic("worldCopyJump")(worldCopyJump.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomAnimation)) __obj.updateDynamic("zoomAnimation")(zoomAnimation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomAnimationThreshold)) __obj.updateDynamic("zoomAnimationThreshold")(zoomAnimationThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomControl)) __obj.updateDynamic("zoomControl")(zoomControl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomDelta)) __obj.updateDynamic("zoomDelta")(zoomDelta.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomSnap)) __obj.updateDynamic("zoomSnap")(zoomSnap.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapOptions]
   }
 }

@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 trait SsdpHeaders
   extends /* key */ StringDictionary[js.UndefOr[String | Double | Boolean | Null | js.Symbol]] {
   /**
-  	 * Available while handling an SSDP response. A URL where the service description can be found.
-  	 */
+    * Available while handling an SSDP response. A URL where the service description can be found.
+    */
   var LOCATION: js.UndefOr[String] = js.undefined
   var ST: js.UndefOr[String] = js.undefined
   /**
-  	 * Available while handling an SSDP response. The Unique Service Name (USN) of the responding device.
-  	 */
+    * Available while handling an SSDP response. The Unique Service Name (USN) of the responding device.
+    */
   var USN: js.UndefOr[String] = js.undefined
 }
 

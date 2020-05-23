@@ -1,8 +1,8 @@
 package typings.gestalt.mod
 
-import typings.gestalt.Anon1
-import typings.gestalt.Anon2
-import typings.gestalt.AnonEventSyntheticEventValueString
+import typings.gestalt.anon.EventSyntheticEventValueString
+import typings.gestalt.anon.`1`
+import typings.gestalt.anon.`2`
 import typings.gestalt.gestaltStrings.`current-password`
 import typings.gestalt.gestaltStrings.`new-password`
 import typings.gestalt.gestaltStrings.date
@@ -28,30 +28,30 @@ trait TextFieldProps extends js.Object {
   var id: String
   var label: js.UndefOr[String] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var onBlur: js.UndefOr[js.Function1[/* args */ Anon1, Unit]] = js.undefined
-  var onFocus: js.UndefOr[js.Function1[/* args */ Anon1, Unit]] = js.undefined
-  var onKeyDown: js.UndefOr[js.Function1[/* args */ Anon2, Unit]] = js.undefined
+  var onBlur: js.UndefOr[js.Function1[/* args */ `1`, Unit]] = js.undefined
+  var onFocus: js.UndefOr[js.Function1[/* args */ `1`, Unit]] = js.undefined
+  var onKeyDown: js.UndefOr[js.Function1[/* args */ `2`, Unit]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var size: js.UndefOr[md | lg] = js.undefined
   var `type`: js.UndefOr[date | email | number | password | text | url] = js.undefined
   var value: js.UndefOr[String] = js.undefined
-  def onChange(args: AnonEventSyntheticEventValueString): Unit
+  def onChange(args: EventSyntheticEventValueString): Unit
 }
 
 object TextFieldProps {
   @scala.inline
   def apply(
     id: String,
-    onChange: AnonEventSyntheticEventValueString => Unit,
+    onChange: EventSyntheticEventValueString => Unit,
     autoComplete: `current-password` | on | off | username | `new-password` = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     errorMessage: String = null,
     helperText: String = null,
     label: String = null,
     name: String = null,
-    onBlur: /* args */ Anon1 => Unit = null,
-    onFocus: /* args */ Anon1 => Unit = null,
-    onKeyDown: /* args */ Anon2 => Unit = null,
+    onBlur: /* args */ `1` => Unit = null,
+    onFocus: /* args */ `1` => Unit = null,
+    onKeyDown: /* args */ `2` => Unit = null,
     placeholder: String = null,
     size: md | lg = null,
     `type`: date | email | number | password | text | url = null,
@@ -59,7 +59,7 @@ object TextFieldProps {
   ): TextFieldProps = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
     if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
     if (helperText != null) __obj.updateDynamic("helperText")(helperText.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])

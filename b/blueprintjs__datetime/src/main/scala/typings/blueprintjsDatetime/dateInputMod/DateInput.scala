@@ -1,7 +1,7 @@
 package typings.blueprintjsDatetime.dateInputMod
 
 import typings.blueprintjsCore.mod.AbstractPureComponent2
-import typings.blueprintjsDatetime.PartialIDateInputProps
+import typings.blueprintjsDatetime.anon.PartialIDateInputProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,11 +23,11 @@ class DateInput ()
   var hasMonthChanged: js.Any = js.native
   var hasTimeChanged: js.Any = js.native
   var inputEl: js.Any = js.native
-  var inputRef: js.Any = js.native
   var isDateInRange: js.Any = js.native
   var lastElementInPopover: js.Any = js.native
   var parseDate: js.Any = js.native
   var popoverContentEl: js.Any = js.native
+  var refHandlers: js.Any = js.native
   var registerPopoverBlurHandler: js.Any = js.native
   /** safe wrapper around invoking input props event handler (prop defaults to undefined) */
   var safeInvokeInputProp: js.Any = js.native

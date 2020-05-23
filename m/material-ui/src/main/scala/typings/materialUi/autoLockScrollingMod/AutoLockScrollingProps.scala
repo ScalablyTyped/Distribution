@@ -18,12 +18,12 @@ object AutoLockScrollingProps {
     lock: Boolean,
     children: ReactNode = null,
     key: Key = null,
-    ref: LegacyRef[AutoLockScrolling] = null
+    ref: js.UndefOr[Null | LegacyRef[AutoLockScrolling]] = js.undefined
   ): AutoLockScrollingProps = {
     val __obj = js.Dynamic.literal(lock = lock.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoLockScrollingProps]
   }
 }

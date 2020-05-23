@@ -18,9 +18,9 @@ trait DescribeDefaultParametersRequest extends js.Object {
 
 object DescribeDefaultParametersRequest {
   @scala.inline
-  def apply(MaxResults: Int | Double = null, NextToken: String = null): DescribeDefaultParametersRequest = {
+  def apply(MaxResults: js.UndefOr[IntegerOptional] = js.undefined, NextToken: String = null): DescribeDefaultParametersRequest = {
     val __obj = js.Dynamic.literal()
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDefaultParametersRequest]
   }

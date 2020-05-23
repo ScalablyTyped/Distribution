@@ -1,6 +1,6 @@
 package typings.aliApp.my
 
-import typings.aliApp.AnonHeight
+import typings.aliApp.anon.Height
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 trait GetImageInfoOptions
   extends BaseOptions[js.Any, js.Any] {
   /**
-  		 * 图片路径，目前支持：
-  		 * - 网络图片路径
-  		 * - apFilePath路径
-  		 * - 相对路径
-  		 */
+    * 图片路径，目前支持：
+    * - 网络图片路径
+    * - apFilePath路径
+    * - 相对路径
+    */
   var src: String
   @JSName("success")
-  var success_GetImageInfoOptions: js.UndefOr[js.Function1[/* res */ AnonHeight, Unit]] = js.undefined
+  var success_GetImageInfoOptions: js.UndefOr[js.Function1[/* res */ Height, Unit]] = js.undefined
 }
 
 object GetImageInfoOptions {
@@ -24,7 +24,7 @@ object GetImageInfoOptions {
     src: String,
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
-    success: /* res */ AnonHeight => Unit = null
+    success: /* res */ Height => Unit = null
   ): GetImageInfoOptions = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))

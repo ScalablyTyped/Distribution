@@ -1,7 +1,7 @@
 package typings.monacoEditor.mod.editor
 
-import typings.monacoEditor.AnonHeight
-import typings.monacoEditor.AnonLineEnding
+import typings.monacoEditor.anon.Height
+import typings.monacoEditor.anon.LineEnding
 import typings.monacoEditor.mod.IDisposable
 import typings.monacoEditor.mod.IKeyboardEvent
 import typings.monacoEditor.mod.IPosition
@@ -146,7 +146,7 @@ trait ICodeEditor extends IEditor {
     * Explanation 2: the results of this method will not change if the container of the editor gets repositioned.
     * Warning: the results of this method are inaccurate for positions that are outside the current editor viewport.
     */
-  def getScrolledVisiblePosition(position: IPosition): AnonHeight | Null = js.native
+  def getScrolledVisiblePosition(position: IPosition): Height | Null = js.native
   /**
     * Get the hit test target at coordinates `clientX` and `clientY`.
     * The coordinates are relative to the top-left of the viewport.
@@ -167,7 +167,7 @@ trait ICodeEditor extends IEditor {
     * @see `ITextModel.getValue`
     */
   def getValue(): String = js.native
-  def getValue(options: AnonLineEnding): String = js.native
+  def getValue(options: LineEnding): String = js.native
   /**
     * Returns the ranges that are currently visible.
     * Does not account for horizontal scrolling.

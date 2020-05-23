@@ -23,12 +23,12 @@ trait GetEnabledStandardsRequest extends js.Object {
 object GetEnabledStandardsRequest {
   @scala.inline
   def apply(
-    MaxResults: Int | scala.Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: NextToken = null,
     StandardsSubscriptionArns: StandardsSubscriptionArns = null
   ): GetEnabledStandardsRequest = {
     val __obj = js.Dynamic.literal()
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (StandardsSubscriptionArns != null) __obj.updateDynamic("StandardsSubscriptionArns")(StandardsSubscriptionArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEnabledStandardsRequest]

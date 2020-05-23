@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.WiFi
 
-import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
@@ -14,9 +13,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Use this class to enumerate local Wi-Fi adapters, initiate Wi-Fi scans, enumerate scan results, and to connect or disconnect individual adapters. */
-@JSGlobal("Windows.Devices.WiFi.WiFiAdapter")
 @js.native
-abstract class WiFiAdapter () extends js.Object {
+trait WiFiAdapter extends js.Object {
   /** Gets information about a Wi-Fi adapter. */
   var networkAdapter: NetworkAdapter = js.native
   /** Gets a list of available networks populated by the last Wi-Fi scan on this WiFiNetworkAdapter. */
@@ -72,32 +70,5 @@ abstract class WiFiAdapter () extends js.Object {
     * @return An asynchronous scan operation. On successful completion, returns a list of networks scanned by this adapter.
     */
   def scanAsync(): IPromiseWithIAsyncAction = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Devices.WiFi.WiFiAdapter")
-@js.native
-object WiFiAdapter extends js.Object {
-  /**
-    * A static method that initiates an asynchronous operation to enumerate all Wi-Fi adapters in the system.
-    * @return An asynchronous enumeration operation. On successful completion, returns a list of available Wi-Fi adapters.
-    */
-  def findAllAdaptersAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
-  /**
-    * A static method that initiates an asynchronous operation to get a WiFiAdapter object.
-    * @param deviceId The Device ID of the Wi-Fi adapter to be retrieved. Obtain a Device ID through the Windows.Devices.Enumeration namespace.
-    * @return An asynchronous get operation. On successful completion, returns a WiFiAdapter object specific to the requested Device ID.
-    */
-  def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[WiFiAdapter] = js.native
-  /**
-    * A static method that returns an Advanced Query Syntax (AQS) string to be used to enumerate Wi-Fi adapters using Windows.Devices.Enumeration.DeviceInformation.FindAllAsync and related methods.
-    * @return An identifier to be used to enumerate Wi-Fi devices.
-    */
-  def getDeviceSelector(): String = js.native
-  /**
-    * A static method for determining whether the current user can access any of the Wi-Fi adapters on this device.
-    * @return An asynchronous access operation. On successful completion, returns a status enumeration value describing whether the current user can access any Wi-Fi adapter.
-    */
-  def requestAccessAsync(): IPromiseWithIAsyncOperation[WiFiAccessStatus] = js.native
 }
 

@@ -1,6 +1,7 @@
 package typings.typedGithubApi
 
 import typings.moment.mod.Moment
+import typings.typedGithubApi.anon.Name
 import typings.typedGithubApi.distOwnerRefMod.OwnerRefClass
 import typings.typedGithubApi.githubRefMod.OptionsOrRef
 import typings.typedGithubApi.organizationMod.MyOrganization
@@ -30,7 +31,7 @@ object distOrganizationMod extends js.Object {
     /* CompleteClass */
     override var membersCanCreateRepositories: Boolean = js.native
     /* CompleteClass */
-    override var plan: AnonName = js.native
+    override var plan: Name = js.native
     /* CompleteClass */
     override var privateGists: Double = js.native
     /* CompleteClass */
@@ -39,7 +40,7 @@ object distOrganizationMod extends js.Object {
     override var privateReposTotal: Double = js.native
   }
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.typedGithubApi.ownerRefMod.OwnerRef because Already inherited
   - typings.typedGithubApi.organizationMod.OrganizationSummary because Already inherited
   - typings.typedGithubApi.organizationMod.Organization because var conflicts: avatarUri, description, id, login. Inlined name, company, blog, location, email, publicRepos, publicGists, followers, following, createdAt, updatedAt, htmlUri, hasOrganizationProjects, hasRepositoryProjects */ @js.native
@@ -61,7 +62,7 @@ object distOrganizationMod extends js.Object {
     var updatedAt: Moment = js.native
   }
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.typedGithubApi.ownerRefMod.OwnerRef because Already inherited
   - typings.typedGithubApi.organizationMod.OrganizationSummary because var conflicts: login. Inlined id, avatarUri, description */ @js.native
   class OrganizationSummaryClass protected () extends OwnerRefClass {

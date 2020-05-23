@@ -13,9 +13,9 @@ trait IParallelNode extends js.Object {
 
 object IParallelNode {
   @scala.inline
-  def apply(nodes: js.Array[IQueryPlanNode] = null): IParallelNode = {
+  def apply(nodes: js.UndefOr[Null | js.Array[IQueryPlanNode]] = js.undefined): IParallelNode = {
     val __obj = js.Dynamic.literal()
-    if (nodes != null) __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodes)) __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[IParallelNode]
   }
 }

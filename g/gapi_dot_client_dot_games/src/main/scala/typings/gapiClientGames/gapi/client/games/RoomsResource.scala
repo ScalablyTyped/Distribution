@@ -1,44 +1,44 @@
 package typings.gapiClientGames.gapi.client.games
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientGames.AnonAlt
-import typings.gapiClientGames.AnonLanguage
-import typings.gapiClientGames.AnonQuotaUser
-import typings.gapiClientGames.AnonRoomId
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientGames.anon.Alt
+import typings.gapiClientGames.anon.Language
+import typings.gapiClientGames.anon.QuotaUser
+import typings.gapiClientGames.anon.RoomId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RoomsResource extends js.Object {
   /** Create a room. For internal use by the Games SDK only. Calling this method directly is unsupported. */
-  def create(request: AnonLanguage): Request_[Room]
+  def create(request: Language): Request[Room]
   /** Decline an invitation to join a room. For internal use by the Games SDK only. Calling this method directly is unsupported. */
-  def decline(request: AnonQuotaUser): Request_[Room]
+  def decline(request: QuotaUser): Request[Room]
   /** Dismiss an invitation to join a room. For internal use by the Games SDK only. Calling this method directly is unsupported. */
-  def dismiss(request: AnonRoomId): Request_[Unit]
+  def dismiss(request: RoomId): Request[Unit]
   /** Get the data for a room. */
-  def get(request: AnonQuotaUser): Request_[Room]
+  def get(request: QuotaUser): Request[Room]
   /** Join a room. For internal use by the Games SDK only. Calling this method directly is unsupported. */
-  def join(request: AnonQuotaUser): Request_[Room]
+  def join(request: QuotaUser): Request[Room]
   /** Leave a room. For internal use by the Games SDK only. Calling this method directly is unsupported. */
-  def leave(request: AnonQuotaUser): Request_[Room]
+  def leave(request: QuotaUser): Request[Room]
   /** Returns invitations to join rooms. */
-  def list(request: AnonAlt): Request_[RoomList]
+  def list(request: Alt): Request[RoomList]
   /** Updates sent by a client reporting the status of peers in a room. For internal use by the Games SDK only. Calling this method directly is unsupported. */
-  def reportStatus(request: AnonQuotaUser): Request_[RoomStatus]
+  def reportStatus(request: QuotaUser): Request[RoomStatus]
 }
 
 object RoomsResource {
   @scala.inline
   def apply(
-    create: AnonLanguage => Request_[Room],
-    decline: AnonQuotaUser => Request_[Room],
-    dismiss: AnonRoomId => Request_[Unit],
-    get: AnonQuotaUser => Request_[Room],
-    join: AnonQuotaUser => Request_[Room],
-    leave: AnonQuotaUser => Request_[Room],
-    list: AnonAlt => Request_[RoomList],
-    reportStatus: AnonQuotaUser => Request_[RoomStatus]
+    create: Language => Request[Room],
+    decline: QuotaUser => Request[Room],
+    dismiss: RoomId => Request[Unit],
+    get: QuotaUser => Request[Room],
+    join: QuotaUser => Request[Room],
+    leave: QuotaUser => Request[Room],
+    list: Alt => Request[RoomList],
+    reportStatus: QuotaUser => Request[RoomStatus]
   ): RoomsResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), decline = js.Any.fromFunction1(decline), dismiss = js.Any.fromFunction1(dismiss), get = js.Any.fromFunction1(get), join = js.Any.fromFunction1(join), leave = js.Any.fromFunction1(leave), list = js.Any.fromFunction1(list), reportStatus = js.Any.fromFunction1(reportStatus))
     __obj.asInstanceOf[RoomsResource]

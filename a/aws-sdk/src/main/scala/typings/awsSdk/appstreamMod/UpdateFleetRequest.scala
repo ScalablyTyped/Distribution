@@ -77,36 +77,36 @@ object UpdateFleetRequest {
   def apply(
     AttributesToDelete: FleetAttributes = null,
     ComputeCapacity: ComputeCapacity = null,
-    DeleteVpcConfig: js.UndefOr[scala.Boolean] = js.undefined,
+    DeleteVpcConfig: js.UndefOr[Boolean] = js.undefined,
     Description: Description = null,
-    DisconnectTimeoutInSeconds: Int | Double = null,
+    DisconnectTimeoutInSeconds: js.UndefOr[Integer] = js.undefined,
     DisplayName: DisplayName = null,
     DomainJoinInfo: DomainJoinInfo = null,
-    EnableDefaultInternetAccess: js.UndefOr[scala.Boolean] = js.undefined,
+    EnableDefaultInternetAccess: js.UndefOr[BooleanObject] = js.undefined,
     IamRoleArn: Arn = null,
-    IdleDisconnectTimeoutInSeconds: Int | Double = null,
+    IdleDisconnectTimeoutInSeconds: js.UndefOr[Integer] = js.undefined,
     ImageArn: Arn = null,
     ImageName: String = null,
     InstanceType: String = null,
-    MaxUserDurationInSeconds: Int | Double = null,
+    MaxUserDurationInSeconds: js.UndefOr[Integer] = js.undefined,
     Name: String = null,
     VpcConfig: VpcConfig = null
   ): UpdateFleetRequest = {
     val __obj = js.Dynamic.literal()
     if (AttributesToDelete != null) __obj.updateDynamic("AttributesToDelete")(AttributesToDelete.asInstanceOf[js.Any])
     if (ComputeCapacity != null) __obj.updateDynamic("ComputeCapacity")(ComputeCapacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeleteVpcConfig)) __obj.updateDynamic("DeleteVpcConfig")(DeleteVpcConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeleteVpcConfig)) __obj.updateDynamic("DeleteVpcConfig")(DeleteVpcConfig.get.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (DisconnectTimeoutInSeconds != null) __obj.updateDynamic("DisconnectTimeoutInSeconds")(DisconnectTimeoutInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(DisconnectTimeoutInSeconds)) __obj.updateDynamic("DisconnectTimeoutInSeconds")(DisconnectTimeoutInSeconds.get.asInstanceOf[js.Any])
     if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
     if (DomainJoinInfo != null) __obj.updateDynamic("DomainJoinInfo")(DomainJoinInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableDefaultInternetAccess)) __obj.updateDynamic("EnableDefaultInternetAccess")(EnableDefaultInternetAccess.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableDefaultInternetAccess)) __obj.updateDynamic("EnableDefaultInternetAccess")(EnableDefaultInternetAccess.get.asInstanceOf[js.Any])
     if (IamRoleArn != null) __obj.updateDynamic("IamRoleArn")(IamRoleArn.asInstanceOf[js.Any])
-    if (IdleDisconnectTimeoutInSeconds != null) __obj.updateDynamic("IdleDisconnectTimeoutInSeconds")(IdleDisconnectTimeoutInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(IdleDisconnectTimeoutInSeconds)) __obj.updateDynamic("IdleDisconnectTimeoutInSeconds")(IdleDisconnectTimeoutInSeconds.get.asInstanceOf[js.Any])
     if (ImageArn != null) __obj.updateDynamic("ImageArn")(ImageArn.asInstanceOf[js.Any])
     if (ImageName != null) __obj.updateDynamic("ImageName")(ImageName.asInstanceOf[js.Any])
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (MaxUserDurationInSeconds != null) __obj.updateDynamic("MaxUserDurationInSeconds")(MaxUserDurationInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxUserDurationInSeconds)) __obj.updateDynamic("MaxUserDurationInSeconds")(MaxUserDurationInSeconds.get.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFleetRequest]

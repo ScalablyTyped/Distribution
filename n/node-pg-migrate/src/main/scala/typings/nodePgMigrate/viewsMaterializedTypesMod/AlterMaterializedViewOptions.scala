@@ -14,12 +14,12 @@ trait AlterMaterializedViewOptions extends js.Object {
 object AlterMaterializedViewOptions {
   @scala.inline
   def apply(
-    cluster: `false` | String = null,
+    cluster: js.UndefOr[Null | `false` | String] = js.undefined,
     extension: String = null,
     storageParameters: StorageParameters = null
   ): AlterMaterializedViewOptions = {
     val __obj = js.Dynamic.literal()
-    if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
+    if (!js.isUndefined(cluster)) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (storageParameters != null) __obj.updateDynamic("storageParameters")(storageParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlterMaterializedViewOptions]

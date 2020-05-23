@@ -40,21 +40,21 @@ object AutoScalingThresholds {
   @scala.inline
   def apply(
     Alarms: Strings = null,
-    CpuThreshold: Int | scala.Double = null,
-    IgnoreMetricsTime: Int | scala.Double = null,
-    InstanceCount: Int | scala.Double = null,
-    LoadThreshold: Int | scala.Double = null,
-    MemoryThreshold: Int | scala.Double = null,
-    ThresholdsWaitTime: Int | scala.Double = null
+    CpuThreshold: js.UndefOr[Double] = js.undefined,
+    IgnoreMetricsTime: js.UndefOr[Minute] = js.undefined,
+    InstanceCount: js.UndefOr[Integer] = js.undefined,
+    LoadThreshold: js.UndefOr[Double] = js.undefined,
+    MemoryThreshold: js.UndefOr[Double] = js.undefined,
+    ThresholdsWaitTime: js.UndefOr[Minute] = js.undefined
   ): AutoScalingThresholds = {
     val __obj = js.Dynamic.literal()
     if (Alarms != null) __obj.updateDynamic("Alarms")(Alarms.asInstanceOf[js.Any])
-    if (CpuThreshold != null) __obj.updateDynamic("CpuThreshold")(CpuThreshold.asInstanceOf[js.Any])
-    if (IgnoreMetricsTime != null) __obj.updateDynamic("IgnoreMetricsTime")(IgnoreMetricsTime.asInstanceOf[js.Any])
-    if (InstanceCount != null) __obj.updateDynamic("InstanceCount")(InstanceCount.asInstanceOf[js.Any])
-    if (LoadThreshold != null) __obj.updateDynamic("LoadThreshold")(LoadThreshold.asInstanceOf[js.Any])
-    if (MemoryThreshold != null) __obj.updateDynamic("MemoryThreshold")(MemoryThreshold.asInstanceOf[js.Any])
-    if (ThresholdsWaitTime != null) __obj.updateDynamic("ThresholdsWaitTime")(ThresholdsWaitTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(CpuThreshold)) __obj.updateDynamic("CpuThreshold")(CpuThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(IgnoreMetricsTime)) __obj.updateDynamic("IgnoreMetricsTime")(IgnoreMetricsTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(LoadThreshold)) __obj.updateDynamic("LoadThreshold")(LoadThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MemoryThreshold)) __obj.updateDynamic("MemoryThreshold")(MemoryThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ThresholdsWaitTime)) __obj.updateDynamic("ThresholdsWaitTime")(ThresholdsWaitTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoScalingThresholds]
   }
 }

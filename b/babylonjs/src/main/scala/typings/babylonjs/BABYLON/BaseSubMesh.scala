@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.BaseSubMesh")
 @js.native
-class BaseSubMesh () extends js.Object {
+trait BaseSubMesh extends js.Object {
   /** @hidden */
   var _materialDefines: Nullable[MaterialDefines] = js.native
   /** @hidden */

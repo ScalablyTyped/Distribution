@@ -104,13 +104,13 @@ object BaseRNNLayerArgs {
   @scala.inline
   def apply(
     batchInputShape: Shape = null,
-    batchSize: Int | Double = null,
+    batchSize: js.UndefOr[Double] = js.undefined,
     cell: RNNCell | js.Array[RNNCell] = null,
     dtype: DataType = null,
     goBackwards: js.UndefOr[Boolean] = js.undefined,
     inputDType: DataType = null,
-    inputDim: Int | Double = null,
-    inputLength: Int | Double = null,
+    inputDim: js.UndefOr[Double] = js.undefined,
+    inputLength: js.UndefOr[Double] = js.undefined,
     inputShape: Shape = null,
     name: String = null,
     returnSequences: js.UndefOr[Boolean] = js.undefined,
@@ -122,20 +122,20 @@ object BaseRNNLayerArgs {
   ): BaseRNNLayerArgs = {
     val __obj = js.Dynamic.literal()
     if (batchInputShape != null) __obj.updateDynamic("batchInputShape")(batchInputShape.asInstanceOf[js.Any])
-    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
     if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
     if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
-    if (!js.isUndefined(goBackwards)) __obj.updateDynamic("goBackwards")(goBackwards.asInstanceOf[js.Any])
+    if (!js.isUndefined(goBackwards)) __obj.updateDynamic("goBackwards")(goBackwards.get.asInstanceOf[js.Any])
     if (inputDType != null) __obj.updateDynamic("inputDType")(inputDType.asInstanceOf[js.Any])
-    if (inputDim != null) __obj.updateDynamic("inputDim")(inputDim.asInstanceOf[js.Any])
-    if (inputLength != null) __obj.updateDynamic("inputLength")(inputLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputDim)) __obj.updateDynamic("inputDim")(inputDim.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputLength)) __obj.updateDynamic("inputLength")(inputLength.get.asInstanceOf[js.Any])
     if (inputShape != null) __obj.updateDynamic("inputShape")(inputShape.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnSequences)) __obj.updateDynamic("returnSequences")(returnSequences.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnState)) __obj.updateDynamic("returnState")(returnState.asInstanceOf[js.Any])
-    if (!js.isUndefined(stateful)) __obj.updateDynamic("stateful")(stateful.asInstanceOf[js.Any])
-    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable.asInstanceOf[js.Any])
-    if (!js.isUndefined(unroll)) __obj.updateDynamic("unroll")(unroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnSequences)) __obj.updateDynamic("returnSequences")(returnSequences.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnState)) __obj.updateDynamic("returnState")(returnState.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stateful)) __obj.updateDynamic("stateful")(stateful.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unroll)) __obj.updateDynamic("unroll")(unroll.get.asInstanceOf[js.Any])
     if (weights != null) __obj.updateDynamic("weights")(weights.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseRNNLayerArgs]
   }

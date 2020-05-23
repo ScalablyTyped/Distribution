@@ -1,6 +1,6 @@
 package typings.skatejs.mod
 
-import typings.skatejs.TypeofWithComponent
+import typings.skatejs.anon.TypeofWithComponent
 import typings.skatejs.typesMod.Constructor
 import typings.std.HTMLElement
 import scala.scalajs.js

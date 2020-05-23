@@ -1,9 +1,8 @@
 package typings.reactNative.mod
 
 import typings.react.mod.Component
-import typings.react.mod._Global_.JSX.Element
-import typings.reactNative.AnonAnimated
-import typings.reactNative.AnonAnimatedBoolean
+import typings.react.mod.global.JSX.Element
+import typings.reactNative.anon.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,9 +40,9 @@ class ScrollView ()
   def scrollTo(y: Double): Unit = js.native
   def scrollTo(y: Double, x: Double): Unit = js.native
   def scrollTo(y: Double, x: Double, animated: Boolean): Unit = js.native
-  def scrollTo(y: AnonAnimated): Unit = js.native
-  def scrollTo(y: AnonAnimated, x: Double): Unit = js.native
-  def scrollTo(y: AnonAnimated, x: Double, animated: Boolean): Unit = js.native
+  def scrollTo(y: typings.reactNative.anon.Animated): Unit = js.native
+  def scrollTo(y: typings.reactNative.anon.Animated, x: Double): Unit = js.native
+  def scrollTo(y: typings.reactNative.anon.Animated, x: Double, animated: Boolean): Unit = js.native
   /**
     * A helper function that scrolls to the end of the scrollview;
     * If this is a vertical ScrollView, it scrolls to the bottom.
@@ -53,6 +52,6 @@ class ScrollView ()
     * The animated prop defaults to true
     */
   def scrollToEnd(): Unit = js.native
-  def scrollToEnd(options: AnonAnimatedBoolean): Unit = js.native
+  def scrollToEnd(options: `1`): Unit = js.native
 }
 

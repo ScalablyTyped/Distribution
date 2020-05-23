@@ -1,6 +1,6 @@
 package typings.azureKustoData.mod
 
-import typings.azureKustoData.AnonMgmt
+import typings.azureKustoData.anon.Mgmt
 import typings.azureKustoData.mod.Client.KustoResponseDataSetV2
 import typings.std.Error
 import scala.scalajs.js
@@ -15,7 +15,7 @@ class Client_ protected () extends js.Object {
   var aadHelper: js.Any = js.native
   var cluster: String = js.native
   var connectionString: KustoConnectionStringBuilder = js.native
-  var endpoints: AnonMgmt = js.native
+  var endpoints: Mgmt = js.native
   def execute(
     db: js.Any,
     query: js.Any,

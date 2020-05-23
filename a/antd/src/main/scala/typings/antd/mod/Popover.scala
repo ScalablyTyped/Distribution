@@ -1,19 +1,14 @@
 package typings.antd.mod
 
-import typings.antd.AnonMouseLeaveDelay
-import typings.antd.popoverMod.default
+import org.scalablytyped.runtime.TopLevel
+import typings.antd.popoverMod.PopoverProps
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.RefAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("antd", "Popover")
 @js.native
-class Popover () extends default
-
-/* static members */
-@JSImport("antd", "Popover")
-@js.native
-object Popover extends js.Object {
-  var defaultProps: AnonMouseLeaveDelay = js.native
-}
+object Popover extends TopLevel[ForwardRefExoticComponent[PopoverProps with RefAttributes[_]]]
 

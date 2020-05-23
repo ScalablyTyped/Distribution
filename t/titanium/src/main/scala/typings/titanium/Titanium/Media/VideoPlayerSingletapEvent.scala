@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the device detects a single tap against the view.
-		 */
+  * Fired when the device detects a single tap against the view.
+  */
 trait VideoPlayerSingletapEvent extends VideoPlayerBaseEvent {
   /**
-  			 * X coordinate of the event from the `source` view's coordinate system.
-  			 */
+    * X coordinate of the event from the `source` view's coordinate system.
+    */
   var x: Double
   /**
-  			 * Y coordinate of the event from the `source` view's coordinate system.
-  			 */
+    * Y coordinate of the event from the `source` view's coordinate system.
+    */
   var y: Double
 }
 

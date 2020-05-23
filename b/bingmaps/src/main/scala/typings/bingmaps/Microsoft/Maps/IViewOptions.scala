@@ -34,23 +34,23 @@ object IViewOptions {
     bounds: LocationRect = null,
     center: Location = null,
     centerOffset: Point = null,
-    heading: Int | Double = null,
+    heading: js.UndefOr[Double] = js.undefined,
     labelOverlay: LabelOverlay = null,
     mapTypeId: MapTypeId = null,
-    padding: Int | Double = null,
-    pitch: Int | Double = null,
-    zoom: Int | Double = null
+    padding: js.UndefOr[Double] = js.undefined,
+    pitch: js.UndefOr[Double] = js.undefined,
+    zoom: js.UndefOr[Double] = js.undefined
   ): IViewOptions = {
     val __obj = js.Dynamic.literal()
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (centerOffset != null) __obj.updateDynamic("centerOffset")(centerOffset.asInstanceOf[js.Any])
-    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
+    if (!js.isUndefined(heading)) __obj.updateDynamic("heading")(heading.get.asInstanceOf[js.Any])
     if (labelOverlay != null) __obj.updateDynamic("labelOverlay")(labelOverlay.asInstanceOf[js.Any])
     if (mapTypeId != null) __obj.updateDynamic("mapTypeId")(mapTypeId.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pitch)) __obj.updateDynamic("pitch")(pitch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IViewOptions]
   }
 }

@@ -9,9 +9,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Loads data from an input stream. */
-@JSGlobal("Windows.Storage.Streams.DataReaderLoadOperation")
 @js.native
-abstract class DataReaderLoadOperation () extends js.Object {
+trait DataReaderLoadOperation extends js.Object {
   /** Gets or sets the handler to call when the data load operation is complete. */
   @JSName("completed")
   var completed_Original: AsyncOperationCompletedHandler[Double] = js.native

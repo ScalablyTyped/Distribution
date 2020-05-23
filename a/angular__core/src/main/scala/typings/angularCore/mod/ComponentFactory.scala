@@ -1,6 +1,6 @@
 package typings.angularCore.mod
 
-import typings.angularCore.AnonPropName
+import typings.angularCore.anon.PropName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,7 +43,7 @@ abstract class ComponentFactory[C] () extends js.Object {
   /**
     * The inputs of the component.
     */
-  def inputs: js.Array[AnonPropName] = js.native
+  def inputs: js.Array[PropName] = js.native
   /**
     * Selector for all <ng-content> elements in the component.
     */
@@ -51,7 +51,7 @@ abstract class ComponentFactory[C] () extends js.Object {
   /**
     * The outputs of the component.
     */
-  def outputs: js.Array[AnonPropName] = js.native
+  def outputs: js.Array[PropName] = js.native
   /**
     * The component's HTML selector.
     */

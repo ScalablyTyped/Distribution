@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PortProbeDetail extends js.Object {
   /**
-    * Local IP information of the connection.
+    * The local IP information of the connection.
     */
   var LocalIpDetails: js.UndefOr[typings.awsSdk.guarddutyMod.LocalIpDetails] = js.native
   /**
-    * Local port information of the connection.
+    * The local port information of the connection.
     */
   var LocalPortDetails: js.UndefOr[typings.awsSdk.guarddutyMod.LocalPortDetails] = js.native
   /**
-    * Remote IP information of the connection.
+    * The remote IP information of the connection.
     */
   var RemoteIpDetails: js.UndefOr[typings.awsSdk.guarddutyMod.RemoteIpDetails] = js.native
 }

@@ -1,7 +1,7 @@
 package typings.flatpickr.localeMod
 
-import typings.flatpickr.AnonLonghand
-import typings.flatpickr.AnonShorthand
+import typings.flatpickr.anon.Longhand
+import typings.flatpickr.anon.Shorthand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,13 +12,13 @@ trait Locale extends js.Object {
   var firstDayOfWeek: Double
   var hourAriaLabel: String
   var minuteAriaLabel: String
-  var months: AnonShorthand
+  var months: Shorthand
   var rangeSeparator: String
   var scrollTitle: String
   var time_24hr: Boolean
   var toggleTitle: String
   var weekAbbreviation: String
-  var weekdays: AnonLonghand
+  var weekdays: Longhand
   var yearAriaLabel: String
   def ordinal(nth: Double): String
 }
@@ -31,14 +31,14 @@ object Locale {
     firstDayOfWeek: Double,
     hourAriaLabel: String,
     minuteAriaLabel: String,
-    months: AnonShorthand,
+    months: Shorthand,
     ordinal: Double => String,
     rangeSeparator: String,
     scrollTitle: String,
     time_24hr: Boolean,
     toggleTitle: String,
     weekAbbreviation: String,
-    weekdays: AnonLonghand,
+    weekdays: Longhand,
     yearAriaLabel: String
   ): Locale = {
     val __obj = js.Dynamic.literal(amPM = amPM.asInstanceOf[js.Any], daysInMonth = daysInMonth.asInstanceOf[js.Any], firstDayOfWeek = firstDayOfWeek.asInstanceOf[js.Any], hourAriaLabel = hourAriaLabel.asInstanceOf[js.Any], minuteAriaLabel = minuteAriaLabel.asInstanceOf[js.Any], months = months.asInstanceOf[js.Any], ordinal = js.Any.fromFunction1(ordinal), rangeSeparator = rangeSeparator.asInstanceOf[js.Any], scrollTitle = scrollTitle.asInstanceOf[js.Any], time_24hr = time_24hr.asInstanceOf[js.Any], toggleTitle = toggleTitle.asInstanceOf[js.Any], weekAbbreviation = weekAbbreviation.asInstanceOf[js.Any], weekdays = weekdays.asInstanceOf[js.Any], yearAriaLabel = yearAriaLabel.asInstanceOf[js.Any])

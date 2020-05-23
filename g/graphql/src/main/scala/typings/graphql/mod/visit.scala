@@ -1,6 +1,6 @@
 package typings.graphql.mod
 
-import typings.graphql.VisitorKeyMapASTKindToNod
+import typings.graphql.anon.VisitorKeyMapASTKindToNod
 import typings.graphql.astMod.ASTKindToNode
 import typings.graphql.astMod.ASTNode
 import typings.graphql.astMod.ArgumentNode

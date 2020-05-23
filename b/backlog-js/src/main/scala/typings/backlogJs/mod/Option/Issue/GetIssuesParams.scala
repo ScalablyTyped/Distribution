@@ -42,11 +42,11 @@ object GetIssuesParams {
   @scala.inline
   def apply(
     keyword: String,
-    StringDictionary: /* customField_ */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     assigneeId: js.Array[Double] = null,
     attachment: js.UndefOr[Boolean] = js.undefined,
     categoryId: js.Array[Double] = null,
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     createdSince: String = null,
     createdUntil: String = null,
     createdUserId: js.Array[Double] = null,
@@ -55,7 +55,7 @@ object GetIssuesParams {
     id: js.Array[Double] = null,
     issueTypeId: js.Array[Double] = null,
     milestoneId: js.Array[Double] = null,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     order: Order = null,
     parentChild: ParentChildType = null,
     parentIssueId: js.Array[Double] = null,
@@ -74,9 +74,9 @@ object GetIssuesParams {
     val __obj = js.Dynamic.literal(keyword = keyword.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (assigneeId != null) __obj.updateDynamic("assigneeId")(assigneeId.asInstanceOf[js.Any])
-    if (!js.isUndefined(attachment)) __obj.updateDynamic("attachment")(attachment.asInstanceOf[js.Any])
+    if (!js.isUndefined(attachment)) __obj.updateDynamic("attachment")(attachment.get.asInstanceOf[js.Any])
     if (categoryId != null) __obj.updateDynamic("categoryId")(categoryId.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (createdSince != null) __obj.updateDynamic("createdSince")(createdSince.asInstanceOf[js.Any])
     if (createdUntil != null) __obj.updateDynamic("createdUntil")(createdUntil.asInstanceOf[js.Any])
     if (createdUserId != null) __obj.updateDynamic("createdUserId")(createdUserId.asInstanceOf[js.Any])
@@ -85,14 +85,14 @@ object GetIssuesParams {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (issueTypeId != null) __obj.updateDynamic("issueTypeId")(issueTypeId.asInstanceOf[js.Any])
     if (milestoneId != null) __obj.updateDynamic("milestoneId")(milestoneId.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     if (parentChild != null) __obj.updateDynamic("parentChild")(parentChild.asInstanceOf[js.Any])
     if (parentIssueId != null) __obj.updateDynamic("parentIssueId")(parentIssueId.asInstanceOf[js.Any])
     if (priorityId != null) __obj.updateDynamic("priorityId")(priorityId.asInstanceOf[js.Any])
     if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
     if (resolutionId != null) __obj.updateDynamic("resolutionId")(resolutionId.asInstanceOf[js.Any])
-    if (!js.isUndefined(sharedFile)) __obj.updateDynamic("sharedFile")(sharedFile.asInstanceOf[js.Any])
+    if (!js.isUndefined(sharedFile)) __obj.updateDynamic("sharedFile")(sharedFile.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (startDateSince != null) __obj.updateDynamic("startDateSince")(startDateSince.asInstanceOf[js.Any])
     if (startDateUntil != null) __obj.updateDynamic("startDateUntil")(startDateUntil.asInstanceOf[js.Any])

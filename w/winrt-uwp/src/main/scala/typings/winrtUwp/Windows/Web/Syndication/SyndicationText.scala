@@ -8,46 +8,53 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Implements the ISyndicationText interface that encapsulates elements in RSS 2.0 or Atom 1.0 that can have either text, HTML, or XHTML. In Atom 1.0, this object maps to an atomTextConstruct in the schema, which can be atom:title, atom:subtitle, atom:rights, or atom:summary elements. */
-@JSGlobal("Windows.Web.Syndication.SyndicationText")
-@js.native
-/** Creates a new SyndicationText object. */
-class SyndicationText () extends js.Object {
-  /**
-    * Creates a new SyndicationText object with the specified Text property value.
-    * @param text The content of a text content construct like atom:title.
-    */
-  def this(text: String) = this()
-  /**
-    * Creates a new SyndicationText object with the specified Text and Type property values.
-    * @param text The content of a text content construct like atom:title.
-    * @param type The type of the content. This value can be "text", "html", and "xhtml".
-    */
-  def this(text: String, `type`: SyndicationTextType) = this()
+trait SyndicationText extends js.Object {
   /** Gets the list of custom attributes of the element. */
-  var attributeExtensions: IVector[SyndicationAttribute] = js.native
+  var attributeExtensions: IVector[SyndicationAttribute]
   /** Gets or sets the base URI for the element. This property represents the xml:base attribute on the element. It may be inherited from an ancestor element. */
-  var baseUri: Uri = js.native
+  var baseUri: Uri
   /** Gets the list of child elements within the element. */
-  var elementExtensions: IVector[ISyndicationNode] = js.native
+  var elementExtensions: IVector[ISyndicationNode]
   /** Gets or sets the language of the element. This property represents the xml:lang attribute on the element. It may be inherited from an ancestor element. It must be valid according to XML 1.0. */
-  var language: String = js.native
+  var language: String
   /** Gets or sets the local name of the element. */
-  var nodeName: String = js.native
+  var nodeName: String
   /** Gets or sets the namespace of the element. */
-  var nodeNamespace: String = js.native
+  var nodeNamespace: String
   /** Gets or sets the text content of the element. If the element contains only child elements, this property is NULL. */
-  var nodeValue: String = js.native
+  var nodeValue: String
   /** Gets the content of a text content construct like atom:title. */
-  var text: String = js.native
+  var text: String
   /** Gets or sets the type of the content. */
-  var `type`: String = js.native
+  var `type`: String
   /** Gets or sets the XML content. */
-  var xml: XmlDocument = js.native
+  var xml: XmlDocument
   /**
     * Generates the DOM object that represents this element, all the attributes and child elements including foreign markups. The only formats accepted by this method are Atom 1.0 and RSS 2.0.
     * @param format The format of the data.
     * @return The DOM object that represents this element, and all the attributes and child elements, including foreign markups.
     */
-  def getXmlDocument(format: SyndicationFormat): XmlDocument = js.native
+  def getXmlDocument(format: SyndicationFormat): XmlDocument
+}
+
+object SyndicationText {
+  @scala.inline
+  def apply(
+    attributeExtensions: IVector[SyndicationAttribute],
+    baseUri: Uri,
+    elementExtensions: IVector[ISyndicationNode],
+    getXmlDocument: SyndicationFormat => XmlDocument,
+    language: String,
+    nodeName: String,
+    nodeNamespace: String,
+    nodeValue: String,
+    text: String,
+    `type`: String,
+    xml: XmlDocument
+  ): SyndicationText = {
+    val __obj = js.Dynamic.literal(attributeExtensions = attributeExtensions.asInstanceOf[js.Any], baseUri = baseUri.asInstanceOf[js.Any], elementExtensions = elementExtensions.asInstanceOf[js.Any], getXmlDocument = js.Any.fromFunction1(getXmlDocument), language = language.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], nodeNamespace = nodeNamespace.asInstanceOf[js.Any], nodeValue = nodeValue.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], xml = xml.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SyndicationText]
+  }
 }
 

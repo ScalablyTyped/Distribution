@@ -82,27 +82,26 @@ object INavStyleProps {
     isLink: js.UndefOr[Boolean] = js.undefined,
     isOnTop: js.UndefOr[Boolean] = js.undefined,
     isSelected: js.UndefOr[Boolean] = js.undefined,
-    leftPadding: Int | Double = null,
-    leftPaddingExpanded: Int | Double = null,
-    navHeight: Int | Double = null,
-    position: Int | Double = null,
-    rightPadding: Int | Double = null
+    leftPadding: js.UndefOr[Double] = js.undefined,
+    leftPaddingExpanded: js.UndefOr[Double] = js.undefined,
+    navHeight: js.UndefOr[Double] = js.undefined,
+    position: js.UndefOr[Double] = js.undefined,
+    rightPadding: js.UndefOr[Double] = js.undefined
   ): INavStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
-    if (!js.isUndefined(isButtonEntry)) __obj.updateDynamic("isButtonEntry")(isButtonEntry.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.asInstanceOf[js.Any])
-    if (!js.isUndefined(isGroup)) __obj.updateDynamic("isGroup")(isGroup.asInstanceOf[js.Any])
-    if (!js.isUndefined(isLink)) __obj.updateDynamic("isLink")(isLink.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOnTop)) __obj.updateDynamic("isOnTop")(isOnTop.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.asInstanceOf[js.Any])
-    if (leftPadding != null) __obj.updateDynamic("leftPadding")(leftPadding.asInstanceOf[js.Any])
-    if (leftPaddingExpanded != null) __obj.updateDynamic("leftPaddingExpanded")(leftPaddingExpanded.asInstanceOf[js.Any])
-    if (navHeight != null) __obj.updateDynamic("navHeight")(navHeight.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (rightPadding != null) __obj.updateDynamic("rightPadding")(rightPadding.asInstanceOf[js.Any])
+    if (!js.isUndefined(isButtonEntry)) __obj.updateDynamic("isButtonEntry")(isButtonEntry.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isGroup)) __obj.updateDynamic("isGroup")(isGroup.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLink)) __obj.updateDynamic("isLink")(isLink.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOnTop)) __obj.updateDynamic("isOnTop")(isOnTop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(leftPadding)) __obj.updateDynamic("leftPadding")(leftPadding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(leftPaddingExpanded)) __obj.updateDynamic("leftPaddingExpanded")(leftPaddingExpanded.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(navHeight)) __obj.updateDynamic("navHeight")(navHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightPadding)) __obj.updateDynamic("rightPadding")(rightPadding.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[INavStyleProps]
   }
 }

@@ -68,8 +68,8 @@ object RegisterImageRequest {
     BillingProducts: BillingProductList = null,
     BlockDeviceMappings: BlockDeviceMappingRequestList = null,
     Description: String = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
-    EnaSupport: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
+    EnaSupport: js.UndefOr[Boolean] = js.undefined,
     ImageLocation: String = null,
     KernelId: KernelId = null,
     RamdiskId: RamdiskId = null,
@@ -82,8 +82,8 @@ object RegisterImageRequest {
     if (BillingProducts != null) __obj.updateDynamic("BillingProducts")(BillingProducts.asInstanceOf[js.Any])
     if (BlockDeviceMappings != null) __obj.updateDynamic("BlockDeviceMappings")(BlockDeviceMappings.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnaSupport)) __obj.updateDynamic("EnaSupport")(EnaSupport.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnaSupport)) __obj.updateDynamic("EnaSupport")(EnaSupport.get.asInstanceOf[js.Any])
     if (ImageLocation != null) __obj.updateDynamic("ImageLocation")(ImageLocation.asInstanceOf[js.Any])
     if (KernelId != null) __obj.updateDynamic("KernelId")(KernelId.asInstanceOf[js.Any])
     if (RamdiskId != null) __obj.updateDynamic("RamdiskId")(RamdiskId.asInstanceOf[js.Any])

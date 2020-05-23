@@ -1,8 +1,8 @@
 package typings.rbx.helpersMod
 
-import typings.rbx.AnonDatatooltip
-import typings.rbx.PartialVariablesDefinitio
-import typings.rbx.classNamestringundefinedB
+import typings.rbx.anon.Datatooltip
+import typings.rbx.anon.PartialVariablesDefinitio
+import typings.rbx.anon.classNamestringundefinedB
 import typings.rbx.rbxStrings.backgroundColor
 import typings.rbx.rbxStrings.badge
 import typings.rbx.rbxStrings.badgeColor
@@ -49,10 +49,10 @@ object makeRootValidatingTransform extends js.Object {
     /* props */ classNamestringundefinedB, 
     /* componentName */ String, 
     /* location */ js.UndefOr[String], 
-    AnonDatatooltip with (Pick[
+    Datatooltip with (Pick[
       classNamestringundefinedB, 
       Exclude[
-        className | badge | badgeColor | badgeOutlined | badgeRounded | badgeSize | clearfix | pull | marginless | paddingless | radiusless | relative | shadowless | unselectable | clipped | overlay | responsive | tooltip | tooltipActive | tooltipColor | tooltipMultiline | tooltipPosition | tooltipResponsive | backgroundColor | italic | textAlign | textColor | textSize | textTransform | textWeight | hidden | invisible | srOnly, 
+        /* keyof rbx.anon.classNamestringundefinedB */ className | badge | badgeColor | badgeOutlined | badgeRounded | badgeSize | clearfix | pull | marginless | paddingless | radiusless | relative | shadowless | unselectable | clipped | overlay | responsive | tooltip | tooltipActive | tooltipColor | tooltipMultiline | tooltipPosition | tooltipResponsive | backgroundColor | italic | textAlign | textColor | textSize | textTransform | textWeight | hidden | invisible | srOnly, 
         hidden | overlay | italic | relative | tooltip | badge | badgeColor | badgeOutlined | badgeRounded | badgeSize | clearfix | pull | marginless | paddingless | radiusless | shadowless | unselectable | clipped | responsive | textAlign | textSize | tooltipActive | tooltipColor | tooltipMultiline | tooltipPosition | tooltipResponsive | backgroundColor | textColor | textTransform | textWeight | invisible | srOnly
       ]
     ])

@@ -27,16 +27,16 @@ trait AutoScalingGroupConfiguration extends js.Object {
 object AutoScalingGroupConfiguration {
   @scala.inline
   def apply(
-    desiredCapacity: Int | Double = null,
+    desiredCapacity: js.UndefOr[DesiredCapacity] = js.undefined,
     instanceType: InstanceType = null,
-    maxSize: Int | Double = null,
-    minSize: Int | Double = null
+    maxSize: js.UndefOr[MaxSize] = js.undefined,
+    minSize: js.UndefOr[MinSize] = js.undefined
   ): AutoScalingGroupConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (desiredCapacity != null) __obj.updateDynamic("desiredCapacity")(desiredCapacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(desiredCapacity)) __obj.updateDynamic("desiredCapacity")(desiredCapacity.get.asInstanceOf[js.Any])
     if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
-    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
-    if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSize)) __obj.updateDynamic("maxSize")(maxSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSize)) __obj.updateDynamic("minSize")(minSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoScalingGroupConfiguration]
   }
 }

@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Office
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,14 +24,6 @@ object VisibilityMode extends js.Object {
     */
   @js.native
   sealed trait taskpane extends VisibilityMode
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[VisibilityMode with String] = js.native
-  /* "Hidden" */ @js.native
-  object hidden extends TopLevel[hidden with String]
-  
-  /* "Taskpane" */ @js.native
-  object taskpane extends TopLevel[taskpane with String]
   
 }
 

@@ -1,6 +1,6 @@
 package typings.ionicCliFramework.tasksMod
 
-import typings.ionicCliFramework.PartialTaskOptions
+import typings.ionicCliFramework.anon.PartialTaskOptions
 import typings.ionicCliFramework.ionicCliFrameworkStrings.end
 import typings.ionicCliFramework.ionicCliFrameworkStrings.failure
 import typings.ionicCliFramework.ionicCliFrameworkStrings.next

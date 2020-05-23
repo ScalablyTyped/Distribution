@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientDashboard.ItemEndUpdate event.
   */
-@JSGlobal("ASPxClientItemEndUpdateEventArgs")
-@js.native
-class ASPxClientItemEndUpdateEventArgs () extends ASPxClientEventArgs {
+trait ASPxClientItemEndUpdateEventArgs extends ASPxClientEventArgs {
   /**
     * Gets the component name of the dashboard item.
     */
-  var ItemName: String = js.native
+  var ItemName: String
+}
+
+object ASPxClientItemEndUpdateEventArgs {
+  @scala.inline
+  def apply(ItemName: String): ASPxClientItemEndUpdateEventArgs = {
+    val __obj = js.Dynamic.literal(ItemName = ItemName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientItemEndUpdateEventArgs]
+  }
 }
 

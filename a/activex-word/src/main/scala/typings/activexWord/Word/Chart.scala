@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.Chart")
 @js.native
-class Chart protected () extends js.Object {
+trait Chart extends js.Object {
   val Application: js.Any = js.native
   val Area3DGroup: ChartGroup = js.native
   var AutoScaling: Boolean = js.native

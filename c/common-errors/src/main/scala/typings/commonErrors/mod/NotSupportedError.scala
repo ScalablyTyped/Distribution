@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("common-errors", "NotSupportedError")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @JSImport("common-errors", "NotSupportedError")
 @js.native
-class NotSupportedError protected () extends ErrorConstructor {
+class NotSupportedError protected () extends js.Object {
   /**
     * @param message     any message
     * @param inner_error the Error instance that caused the current error.

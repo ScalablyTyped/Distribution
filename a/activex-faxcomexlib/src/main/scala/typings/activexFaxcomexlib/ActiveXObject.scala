@@ -67,6 +67,22 @@ import typings.activexFaxcomexlib.activexFaxcomexlibStrings.ppvObj
 import typings.activexFaxcomexlib.activexFaxcomexlibStrings.rgdispid
 import typings.activexFaxcomexlib.activexFaxcomexlibStrings.rgszNames
 import typings.activexFaxcomexlib.activexFaxcomexlibStrings.riid
+import typings.activexFaxcomexlib.anon.BIncomingQueueBlocked
+import typings.activexFaxcomexlib.anon.BstrCallerId
+import typings.activexFaxcomexlib.anon.BstrJobId
+import typings.activexFaxcomexlib.anon.BstrJobIdPFaxServer
+import typings.activexFaxcomexlib.anon.BstrMessageId
+import typings.activexFaxcomexlib.anon.BstrMessageIdPFaxAccount
+import typings.activexFaxcomexlib.anon.BstrMessageIdPFaxServer
+import typings.activexFaxcomexlib.anon.CNames
+import typings.activexFaxcomexlib.anon.FRemovedFromReceiveFolder
+import typings.activexFaxcomexlib.anon.Itinfo
+import typings.activexFaxcomexlib.anon.LIncomingMessages
+import typings.activexFaxcomexlib.anon.PFaxAccount
+import typings.activexFaxcomexlib.anon.PFaxServer
+import typings.activexFaxcomexlib.anon.PJobStatus
+import typings.activexFaxcomexlib.anon.Pctinfo
+import typings.activexFaxcomexlib.anon.PpvObj
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -77,199 +93,199 @@ trait ActiveXObject extends js.Object {
     obj: FaxAccount,
     event: GetIDsOfNames,
     argNames: js.Tuple5[riid, rgszNames, cNames, lcid, rgdispid],
-    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ AnonCNames, Unit]
+    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ CNames, Unit]
   ): Unit = js.native
   def on(
     obj: FaxAccount,
     event: GetTypeInfoCount,
     argNames: js.Array[pctinfo],
-    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ AnonPctinfo, Unit]
+    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ Pctinfo, Unit]
   ): Unit = js.native
   def on(
     obj: FaxAccount,
     event: GetTypeInfo,
     argNames: js.Tuple3[itinfo, lcid, pptinfo],
-    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ AnonItinfo, Unit]
+    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ Itinfo, Unit]
   ): Unit = js.native
   def on(
     obj: FaxAccount,
     event: OnIncomingJobAdded,
     argNames: js.Tuple2[pFaxAccount, bstrJobId],
-    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ AnonBstrJobId, Unit]
+    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ BstrJobId, Unit]
   ): Unit = js.native
   def on(
     obj: FaxAccount,
     event: OnIncomingJobChanged,
     argNames: js.Tuple3[pFaxAccount, bstrJobId, pJobStatus],
-    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ AnonPFaxAccount, Unit]
+    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ PFaxAccount, Unit]
   ): Unit = js.native
   def on(
     obj: FaxAccount,
     event: OnIncomingJobRemoved,
     argNames: js.Tuple2[pFaxAccount, bstrJobId],
-    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ AnonBstrJobId, Unit]
+    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ BstrJobId, Unit]
   ): Unit = js.native
   def on(
     obj: FaxAccount,
     event: OnIncomingMessageAdded,
     argNames: js.Tuple3[pFaxAccount, bstrMessageId, fAddedToReceiveFolder],
-    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ AnonBstrMessageId, Unit]
+    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ BstrMessageId, Unit]
   ): Unit = js.native
   def on(
     obj: FaxAccount,
     event: OnIncomingMessageRemoved,
     argNames: js.Tuple3[pFaxAccount, bstrMessageId, fRemovedFromReceiveFolder],
-    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ AnonFRemovedFromReceiveFolder, Unit]
+    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ FRemovedFromReceiveFolder, Unit]
   ): Unit = js.native
   def on(
     obj: FaxAccount,
     event: OnOutgoingJobAdded,
     argNames: js.Tuple2[pFaxAccount, bstrJobId],
-    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ AnonBstrJobId, Unit]
+    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ BstrJobId, Unit]
   ): Unit = js.native
   def on(
     obj: FaxAccount,
     event: OnOutgoingJobChanged,
     argNames: js.Tuple3[pFaxAccount, bstrJobId, pJobStatus],
-    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ AnonPFaxAccount, Unit]
+    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ PFaxAccount, Unit]
   ): Unit = js.native
   def on(
     obj: FaxAccount,
     event: OnOutgoingJobRemoved,
     argNames: js.Tuple2[pFaxAccount, bstrJobId],
-    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ AnonBstrJobId, Unit]
+    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ BstrJobId, Unit]
   ): Unit = js.native
   def on(
     obj: FaxAccount,
     event: OnOutgoingMessageAdded,
     argNames: js.Tuple2[pFaxAccount, bstrMessageId],
-    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ AnonBstrMessageIdPFaxAccount, Unit]
+    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ BstrMessageIdPFaxAccount, Unit]
   ): Unit = js.native
   def on(
     obj: FaxAccount,
     event: OnOutgoingMessageRemoved,
     argNames: js.Tuple2[pFaxAccount, bstrMessageId],
-    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ AnonBstrMessageIdPFaxAccount, Unit]
+    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ BstrMessageIdPFaxAccount, Unit]
   ): Unit = js.native
   def on(
     obj: FaxAccount,
     event: OnServerShutDown,
     argNames: js.Array[pFaxServer],
-    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ AnonPFaxServer, Unit]
+    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ PFaxServer, Unit]
   ): Unit = js.native
   def on(
     obj: FaxAccount,
     event: QueryInterface,
     argNames: js.Tuple2[riid, ppvObj],
-    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ AnonPpvObj, Unit]
+    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ PpvObj, Unit]
   ): Unit = js.native
   def on(
     obj: FaxServer,
     event: OnActivityLoggingConfigChange | OnDevicesConfigChange | OnEventLoggingConfigChange | OnGeneralServerConfigChanged | OnIncomingArchiveConfigChange | OnOutboundRoutingGroupsConfigChange | OnOutboundRoutingRulesConfigChange | OnOutgoingArchiveConfigChange | OnOutgoingQueueConfigChange | OnReceiptOptionsChange | OnSecurityConfigChange | OnServerShutDown,
     argNames: js.Array[pFaxServer],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ AnonPFaxServer, Unit]
+    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ PFaxServer, Unit]
   ): Unit = js.native
   def on(
     obj: FaxServer,
     event: GetIDsOfNames,
     argNames: js.Tuple5[riid, rgszNames, cNames, lcid, rgdispid],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ AnonCNames, Unit]
+    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ CNames, Unit]
   ): Unit = js.native
   def on(
     obj: FaxServer,
     event: GetTypeInfoCount,
     argNames: js.Array[pctinfo],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ AnonPctinfo, Unit]
+    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ Pctinfo, Unit]
   ): Unit = js.native
   def on(
     obj: FaxServer,
     event: GetTypeInfo,
     argNames: js.Tuple3[itinfo, lcid, pptinfo],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ AnonItinfo, Unit]
+    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ Itinfo, Unit]
   ): Unit = js.native
   def on(
     obj: FaxServer,
     event: OnIncomingJobAdded,
     argNames: js.Tuple2[pFaxServer, bstrJobId],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ AnonBstrJobIdPFaxServer, Unit]
+    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ BstrJobIdPFaxServer, Unit]
   ): Unit = js.native
   def on(
     obj: FaxServer,
     event: OnIncomingJobChanged,
     argNames: js.Tuple3[pFaxServer, bstrJobId, pJobStatus],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ AnonPJobStatus, Unit]
+    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ PJobStatus, Unit]
   ): Unit = js.native
   def on(
     obj: FaxServer,
     event: OnIncomingJobRemoved,
     argNames: js.Tuple2[pFaxServer, bstrJobId],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ AnonBstrJobIdPFaxServer, Unit]
+    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ BstrJobIdPFaxServer, Unit]
   ): Unit = js.native
   def on(
     obj: FaxServer,
     event: OnIncomingMessageAdded,
     argNames: js.Tuple2[pFaxServer, bstrMessageId],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ AnonBstrMessageIdPFaxServer, Unit]
+    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ BstrMessageIdPFaxServer, Unit]
   ): Unit = js.native
   def on(
     obj: FaxServer,
     event: OnIncomingMessageRemoved,
     argNames: js.Tuple2[pFaxServer, bstrMessageId],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ AnonBstrMessageIdPFaxServer, Unit]
+    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ BstrMessageIdPFaxServer, Unit]
   ): Unit = js.native
   def on(
     obj: FaxServer,
     event: OnNewCall,
     argNames: js.Tuple4[pFaxServer, lCallId, lDeviceId, bstrCallerId],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ AnonBstrCallerId, Unit]
+    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ BstrCallerId, Unit]
   ): Unit = js.native
   def on(
     obj: FaxServer,
     event: OnOutgoingJobAdded,
     argNames: js.Tuple2[pFaxServer, bstrJobId],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ AnonBstrJobIdPFaxServer, Unit]
+    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ BstrJobIdPFaxServer, Unit]
   ): Unit = js.native
   def on(
     obj: FaxServer,
     event: OnOutgoingJobChanged,
     argNames: js.Tuple3[pFaxServer, bstrJobId, pJobStatus],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ AnonPJobStatus, Unit]
+    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ PJobStatus, Unit]
   ): Unit = js.native
   def on(
     obj: FaxServer,
     event: OnOutgoingJobRemoved,
     argNames: js.Tuple2[pFaxServer, bstrJobId],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ AnonBstrJobIdPFaxServer, Unit]
+    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ BstrJobIdPFaxServer, Unit]
   ): Unit = js.native
   def on(
     obj: FaxServer,
     event: OnOutgoingMessageAdded,
     argNames: js.Tuple2[pFaxServer, bstrMessageId],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ AnonBstrMessageIdPFaxServer, Unit]
+    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ BstrMessageIdPFaxServer, Unit]
   ): Unit = js.native
   def on(
     obj: FaxServer,
     event: OnOutgoingMessageRemoved,
     argNames: js.Tuple2[pFaxServer, bstrMessageId],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ AnonBstrMessageIdPFaxServer, Unit]
+    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ BstrMessageIdPFaxServer, Unit]
   ): Unit = js.native
   def on(
     obj: FaxServer,
     event: OnQueuesStatusChange,
     argNames: js.Tuple4[pFaxServer, bOutgoingQueueBlocked, bOutgoingQueuePaused, bIncomingQueueBlocked],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ AnonBIncomingQueueBlocked, Unit]
+    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ BIncomingQueueBlocked, Unit]
   ): Unit = js.native
   def on(
     obj: FaxServer,
     event: OnServerActivityChange,
     argNames: js.Tuple5[pFaxServer, lIncomingMessages, lRoutingMessages, lOutgoingMessages, lQueuedMessages],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ AnonLIncomingMessages, Unit]
+    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ LIncomingMessages, Unit]
   ): Unit = js.native
   def on(
     obj: FaxServer,
     event: QueryInterface,
     argNames: js.Tuple2[riid, ppvObj],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ AnonPpvObj, Unit]
+    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ PpvObj, Unit]
   ): Unit = js.native
   @JSName("on")
   def on_AddRef(

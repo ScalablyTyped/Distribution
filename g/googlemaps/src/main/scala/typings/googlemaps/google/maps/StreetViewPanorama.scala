@@ -1,17 +1,12 @@
 package typings.googlemaps.google.maps
 
-import typings.std.Element
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/***** Street View *****/
-@JSGlobal("google.maps.StreetViewPanorama")
 @js.native
-class StreetViewPanorama protected () extends MVCObject {
-  def this(container: Element) = this()
-  def this(container: Element, opts: StreetViewPanoramaOptions) = this()
+trait StreetViewPanorama extends MVCObject {
   var controls: js.Array[MVCArray[Node]] = js.native
   def getLinks(): js.Array[StreetViewLink] = js.native
   def getLocation(): StreetViewLocation = js.native

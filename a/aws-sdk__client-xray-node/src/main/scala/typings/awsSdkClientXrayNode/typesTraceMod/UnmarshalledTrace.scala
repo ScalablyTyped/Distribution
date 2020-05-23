@@ -15,9 +15,13 @@ trait UnmarshalledTrace extends Trace {
 
 object UnmarshalledTrace {
   @scala.inline
-  def apply(Duration: Int | Double = null, Id: String = null, Segments: js.Array[UnmarshalledSegment] = null): UnmarshalledTrace = {
+  def apply(
+    Duration: js.UndefOr[Double] = js.undefined,
+    Id: String = null,
+    Segments: js.Array[UnmarshalledSegment] = null
+  ): UnmarshalledTrace = {
     val __obj = js.Dynamic.literal()
-    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration.get.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     if (Segments != null) __obj.updateDynamic("Segments")(Segments.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledTrace]

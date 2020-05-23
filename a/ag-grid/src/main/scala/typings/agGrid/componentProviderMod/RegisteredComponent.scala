@@ -14,7 +14,7 @@ trait RegisteredComponent[A /* <: IComponent[_] with B */, B] extends js.Object 
 
 object RegisteredComponent {
   @scala.inline
-  def apply[A /* <: IComponent[_] with B */, B](
+  def apply[A, B](
     component: RegisteredComponentInput[A, B],
     source: RegisteredComponentSource,
     `type`: ComponentType

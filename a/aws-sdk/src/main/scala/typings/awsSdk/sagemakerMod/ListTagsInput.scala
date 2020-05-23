@@ -22,9 +22,13 @@ trait ListTagsInput extends js.Object {
 
 object ListTagsInput {
   @scala.inline
-  def apply(ResourceArn: ResourceArn, MaxResults: Int | Double = null, NextToken: NextToken = null): ListTagsInput = {
+  def apply(
+    ResourceArn: ResourceArn,
+    MaxResults: js.UndefOr[ListTagsMaxResults] = js.undefined,
+    NextToken: NextToken = null
+  ): ListTagsInput = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagsInput]
   }

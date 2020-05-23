@@ -87,12 +87,12 @@ trait ReplicationGroup extends js.Object {
 object ReplicationGroup {
   @scala.inline
   def apply(
-    AtRestEncryptionEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    AuthTokenEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    AtRestEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined,
+    AuthTokenEnabled: js.UndefOr[BooleanOptional] = js.undefined,
     AuthTokenLastModifiedDate: TStamp = null,
     AutomaticFailover: AutomaticFailoverStatus = null,
     CacheNodeType: String = null,
-    ClusterEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    ClusterEnabled: js.UndefOr[BooleanOptional] = js.undefined,
     ConfigurationEndpoint: Endpoint = null,
     Description: String = null,
     GlobalReplicationGroupInfo: GlobalReplicationGroupInfo = null,
@@ -101,19 +101,19 @@ object ReplicationGroup {
     NodeGroups: NodeGroupList = null,
     PendingModifiedValues: ReplicationGroupPendingModifiedValues = null,
     ReplicationGroupId: String = null,
-    SnapshotRetentionLimit: Int | scala.Double = null,
+    SnapshotRetentionLimit: js.UndefOr[IntegerOptional] = js.undefined,
     SnapshotWindow: String = null,
     SnapshottingClusterId: String = null,
     Status: String = null,
-    TransitEncryptionEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    TransitEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined
   ): ReplicationGroup = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AtRestEncryptionEnabled)) __obj.updateDynamic("AtRestEncryptionEnabled")(AtRestEncryptionEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(AuthTokenEnabled)) __obj.updateDynamic("AuthTokenEnabled")(AuthTokenEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(AtRestEncryptionEnabled)) __obj.updateDynamic("AtRestEncryptionEnabled")(AtRestEncryptionEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(AuthTokenEnabled)) __obj.updateDynamic("AuthTokenEnabled")(AuthTokenEnabled.get.asInstanceOf[js.Any])
     if (AuthTokenLastModifiedDate != null) __obj.updateDynamic("AuthTokenLastModifiedDate")(AuthTokenLastModifiedDate.asInstanceOf[js.Any])
     if (AutomaticFailover != null) __obj.updateDynamic("AutomaticFailover")(AutomaticFailover.asInstanceOf[js.Any])
     if (CacheNodeType != null) __obj.updateDynamic("CacheNodeType")(CacheNodeType.asInstanceOf[js.Any])
-    if (!js.isUndefined(ClusterEnabled)) __obj.updateDynamic("ClusterEnabled")(ClusterEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(ClusterEnabled)) __obj.updateDynamic("ClusterEnabled")(ClusterEnabled.get.asInstanceOf[js.Any])
     if (ConfigurationEndpoint != null) __obj.updateDynamic("ConfigurationEndpoint")(ConfigurationEndpoint.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (GlobalReplicationGroupInfo != null) __obj.updateDynamic("GlobalReplicationGroupInfo")(GlobalReplicationGroupInfo.asInstanceOf[js.Any])
@@ -122,11 +122,11 @@ object ReplicationGroup {
     if (NodeGroups != null) __obj.updateDynamic("NodeGroups")(NodeGroups.asInstanceOf[js.Any])
     if (PendingModifiedValues != null) __obj.updateDynamic("PendingModifiedValues")(PendingModifiedValues.asInstanceOf[js.Any])
     if (ReplicationGroupId != null) __obj.updateDynamic("ReplicationGroupId")(ReplicationGroupId.asInstanceOf[js.Any])
-    if (SnapshotRetentionLimit != null) __obj.updateDynamic("SnapshotRetentionLimit")(SnapshotRetentionLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(SnapshotRetentionLimit)) __obj.updateDynamic("SnapshotRetentionLimit")(SnapshotRetentionLimit.get.asInstanceOf[js.Any])
     if (SnapshotWindow != null) __obj.updateDynamic("SnapshotWindow")(SnapshotWindow.asInstanceOf[js.Any])
     if (SnapshottingClusterId != null) __obj.updateDynamic("SnapshottingClusterId")(SnapshottingClusterId.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (!js.isUndefined(TransitEncryptionEnabled)) __obj.updateDynamic("TransitEncryptionEnabled")(TransitEncryptionEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(TransitEncryptionEnabled)) __obj.updateDynamic("TransitEncryptionEnabled")(TransitEncryptionEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicationGroup]
   }
 }

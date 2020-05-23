@@ -180,14 +180,14 @@ object PikadayOptions {
     ariaLabel: String = null,
     blurFieldOnSelect: js.UndefOr[Boolean] = js.undefined,
     bound: js.UndefOr[Boolean] = js.undefined,
-    container: HTMLElement = null,
+    container: js.UndefOr[Null | HTMLElement] = js.undefined,
     defaultDate: Date = null,
     disableDayFn: /* date */ Date => Boolean = null,
     disableWeekends: js.UndefOr[Boolean] = js.undefined,
     enableSelectionDaysInNextAndPreviousMonths: js.UndefOr[Boolean] = js.undefined,
     events: js.Array[String] = null,
-    field: HTMLElement = null,
-    firstDay: Int | Double = null,
+    field: js.UndefOr[Null | HTMLElement] = js.undefined,
+    firstDay: js.UndefOr[Double] = js.undefined,
     format: String = null,
     formatStrict: js.UndefOr[Boolean] = js.undefined,
     i18n: PikadayI18nConfig = null,
@@ -196,7 +196,7 @@ object PikadayOptions {
     mainCalendar: String = null,
     maxDate: Date = null,
     minDate: Date = null,
-    numberOfMonths: Int | Double = null,
+    numberOfMonths: js.UndefOr[Double] = js.undefined,
     onClose: () => Unit = null,
     onDraw: () => Unit = null,
     onOpen: () => Unit = null,
@@ -211,46 +211,46 @@ object PikadayOptions {
     showWeekNumber: js.UndefOr[Boolean] = js.undefined,
     theme: String = null,
     toString: (/* date */ Date, /* format */ js.UndefOr[String]) => String = null,
-    trigger: HTMLElement = null,
+    trigger: js.UndefOr[Null | HTMLElement] = js.undefined,
     yearRange: Double | js.Array[Double] = null,
     yearSuffix: String = null
   ): PikadayOptions = {
     val __obj = js.Dynamic.literal()
     if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(blurFieldOnSelect)) __obj.updateDynamic("blurFieldOnSelect")(blurFieldOnSelect.asInstanceOf[js.Any])
-    if (!js.isUndefined(bound)) __obj.updateDynamic("bound")(bound.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(blurFieldOnSelect)) __obj.updateDynamic("blurFieldOnSelect")(blurFieldOnSelect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bound)) __obj.updateDynamic("bound")(bound.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(container)) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (defaultDate != null) __obj.updateDynamic("defaultDate")(defaultDate.asInstanceOf[js.Any])
     if (disableDayFn != null) __obj.updateDynamic("disableDayFn")(js.Any.fromFunction1(disableDayFn))
-    if (!js.isUndefined(disableWeekends)) __obj.updateDynamic("disableWeekends")(disableWeekends.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSelectionDaysInNextAndPreviousMonths)) __obj.updateDynamic("enableSelectionDaysInNextAndPreviousMonths")(enableSelectionDaysInNextAndPreviousMonths.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableWeekends)) __obj.updateDynamic("disableWeekends")(disableWeekends.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSelectionDaysInNextAndPreviousMonths)) __obj.updateDynamic("enableSelectionDaysInNextAndPreviousMonths")(enableSelectionDaysInNextAndPreviousMonths.get.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (firstDay != null) __obj.updateDynamic("firstDay")(firstDay.asInstanceOf[js.Any])
+    if (!js.isUndefined(field)) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstDay)) __obj.updateDynamic("firstDay")(firstDay.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(formatStrict)) __obj.updateDynamic("formatStrict")(formatStrict.asInstanceOf[js.Any])
+    if (!js.isUndefined(formatStrict)) __obj.updateDynamic("formatStrict")(formatStrict.get.asInstanceOf[js.Any])
     if (i18n != null) __obj.updateDynamic("i18n")(i18n.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRTL)) __obj.updateDynamic("isRTL")(isRTL.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboardInput)) __obj.updateDynamic("keyboardInput")(keyboardInput.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRTL)) __obj.updateDynamic("isRTL")(isRTL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboardInput)) __obj.updateDynamic("keyboardInput")(keyboardInput.get.asInstanceOf[js.Any])
     if (mainCalendar != null) __obj.updateDynamic("mainCalendar")(mainCalendar.asInstanceOf[js.Any])
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (numberOfMonths != null) __obj.updateDynamic("numberOfMonths")(numberOfMonths.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfMonths)) __obj.updateDynamic("numberOfMonths")(numberOfMonths.get.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
     if (onDraw != null) __obj.updateDynamic("onDraw")(js.Any.fromFunction0(onDraw))
     if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction0(onOpen))
     if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect.asInstanceOf[js.Any])
     if (parse != null) __obj.updateDynamic("parse")(js.Any.fromFunction2(parse))
-    if (!js.isUndefined(pickWholeWeek)) __obj.updateDynamic("pickWholeWeek")(pickWholeWeek.asInstanceOf[js.Any])
+    if (!js.isUndefined(pickWholeWeek)) __obj.updateDynamic("pickWholeWeek")(pickWholeWeek.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(reposition)) __obj.updateDynamic("reposition")(reposition.asInstanceOf[js.Any])
-    if (!js.isUndefined(setDefaultDate)) __obj.updateDynamic("setDefaultDate")(setDefaultDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDaysInNextAndPreviousMonths)) __obj.updateDynamic("showDaysInNextAndPreviousMonths")(showDaysInNextAndPreviousMonths.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMonthAfterYear)) __obj.updateDynamic("showMonthAfterYear")(showMonthAfterYear.asInstanceOf[js.Any])
-    if (!js.isUndefined(showWeekNumber)) __obj.updateDynamic("showWeekNumber")(showWeekNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(reposition)) __obj.updateDynamic("reposition")(reposition.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setDefaultDate)) __obj.updateDynamic("setDefaultDate")(setDefaultDate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDaysInNextAndPreviousMonths)) __obj.updateDynamic("showDaysInNextAndPreviousMonths")(showDaysInNextAndPreviousMonths.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMonthAfterYear)) __obj.updateDynamic("showMonthAfterYear")(showMonthAfterYear.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showWeekNumber)) __obj.updateDynamic("showWeekNumber")(showWeekNumber.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (toString != null) __obj.updateDynamic("toString")(js.Any.fromFunction2(toString))
-    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
+    if (!js.isUndefined(trigger)) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     if (yearRange != null) __obj.updateDynamic("yearRange")(yearRange.asInstanceOf[js.Any])
     if (yearSuffix != null) __obj.updateDynamic("yearSuffix")(yearSuffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[PikadayOptions]

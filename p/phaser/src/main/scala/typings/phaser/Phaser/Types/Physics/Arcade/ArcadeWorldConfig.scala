@@ -97,48 +97,48 @@ object ArcadeWorldConfig {
   def apply(
     checkCollision: CheckCollisionObject = null,
     debug: js.UndefOr[Boolean] = js.undefined,
-    debugBodyColor: Int | Double = null,
+    debugBodyColor: js.UndefOr[Double] = js.undefined,
     debugShowBody: js.UndefOr[Boolean] = js.undefined,
     debugShowStaticBody: js.UndefOr[Boolean] = js.undefined,
     debugShowVelocity: js.UndefOr[Boolean] = js.undefined,
-    debugStaticBodyColor: Int | Double = null,
-    debugVelocityColor: Int | Double = null,
+    debugStaticBodyColor: js.UndefOr[Double] = js.undefined,
+    debugVelocityColor: js.UndefOr[Double] = js.undefined,
     forceX: js.UndefOr[Boolean] = js.undefined,
-    fps: Int | Double = null,
+    fps: js.UndefOr[Double] = js.undefined,
     gravity: Vector2Like = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     isPaused: js.UndefOr[Boolean] = js.undefined,
-    maxEntries: Int | Double = null,
-    overlapBias: Int | Double = null,
-    tileBias: Int | Double = null,
-    timeScale: Int | Double = null,
+    maxEntries: js.UndefOr[Double] = js.undefined,
+    overlapBias: js.UndefOr[Double] = js.undefined,
+    tileBias: js.UndefOr[Double] = js.undefined,
+    timeScale: js.UndefOr[Double] = js.undefined,
     useTree: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null,
-    x: Int | Double = null,
-    y: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined,
+    x: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined
   ): ArcadeWorldConfig = {
     val __obj = js.Dynamic.literal()
     if (checkCollision != null) __obj.updateDynamic("checkCollision")(checkCollision.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (debugBodyColor != null) __obj.updateDynamic("debugBodyColor")(debugBodyColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(debugShowBody)) __obj.updateDynamic("debugShowBody")(debugShowBody.asInstanceOf[js.Any])
-    if (!js.isUndefined(debugShowStaticBody)) __obj.updateDynamic("debugShowStaticBody")(debugShowStaticBody.asInstanceOf[js.Any])
-    if (!js.isUndefined(debugShowVelocity)) __obj.updateDynamic("debugShowVelocity")(debugShowVelocity.asInstanceOf[js.Any])
-    if (debugStaticBodyColor != null) __obj.updateDynamic("debugStaticBodyColor")(debugStaticBodyColor.asInstanceOf[js.Any])
-    if (debugVelocityColor != null) __obj.updateDynamic("debugVelocityColor")(debugVelocityColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceX)) __obj.updateDynamic("forceX")(forceX.asInstanceOf[js.Any])
-    if (fps != null) __obj.updateDynamic("fps")(fps.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(debugBodyColor)) __obj.updateDynamic("debugBodyColor")(debugBodyColor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(debugShowBody)) __obj.updateDynamic("debugShowBody")(debugShowBody.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(debugShowStaticBody)) __obj.updateDynamic("debugShowStaticBody")(debugShowStaticBody.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(debugShowVelocity)) __obj.updateDynamic("debugShowVelocity")(debugShowVelocity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(debugStaticBodyColor)) __obj.updateDynamic("debugStaticBodyColor")(debugStaticBodyColor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(debugVelocityColor)) __obj.updateDynamic("debugVelocityColor")(debugVelocityColor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceX)) __obj.updateDynamic("forceX")(forceX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fps)) __obj.updateDynamic("fps")(fps.get.asInstanceOf[js.Any])
     if (gravity != null) __obj.updateDynamic("gravity")(gravity.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPaused)) __obj.updateDynamic("isPaused")(isPaused.asInstanceOf[js.Any])
-    if (maxEntries != null) __obj.updateDynamic("maxEntries")(maxEntries.asInstanceOf[js.Any])
-    if (overlapBias != null) __obj.updateDynamic("overlapBias")(overlapBias.asInstanceOf[js.Any])
-    if (tileBias != null) __obj.updateDynamic("tileBias")(tileBias.asInstanceOf[js.Any])
-    if (timeScale != null) __obj.updateDynamic("timeScale")(timeScale.asInstanceOf[js.Any])
-    if (!js.isUndefined(useTree)) __obj.updateDynamic("useTree")(useTree.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPaused)) __obj.updateDynamic("isPaused")(isPaused.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxEntries)) __obj.updateDynamic("maxEntries")(maxEntries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlapBias)) __obj.updateDynamic("overlapBias")(overlapBias.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tileBias)) __obj.updateDynamic("tileBias")(tileBias.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeScale)) __obj.updateDynamic("timeScale")(timeScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useTree)) __obj.updateDynamic("useTree")(useTree.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArcadeWorldConfig]
   }
 }

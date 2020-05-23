@@ -39,7 +39,7 @@ object PgwModalOption {
     errorContent: String = null,
     loadingContent: String = null,
     mainClassName: String = null,
-    maxWidth: Int | Double = null,
+    maxWidth: js.UndefOr[Double] = js.undefined,
     modalData: js.Any = null,
     pushContent: String = null,
     target: String = null,
@@ -49,22 +49,22 @@ object PgwModalOption {
   ): PgwModalOption = {
     val __obj = js.Dynamic.literal()
     if (ajaxOptions != null) __obj.updateDynamic("ajaxOptions")(ajaxOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(angular)) __obj.updateDynamic("angular")(angular.asInstanceOf[js.Any])
+    if (!js.isUndefined(angular)) __obj.updateDynamic("angular")(angular.get.asInstanceOf[js.Any])
     if (backdropClassName != null) __obj.updateDynamic("backdropClassName")(backdropClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.asInstanceOf[js.Any])
+    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.get.asInstanceOf[js.Any])
     if (closeContent != null) __obj.updateDynamic("closeContent")(closeContent.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnBackgroundClick)) __obj.updateDynamic("closeOnBackgroundClick")(closeOnBackgroundClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnEscape)) __obj.updateDynamic("closeOnEscape")(closeOnEscape.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnBackgroundClick)) __obj.updateDynamic("closeOnBackgroundClick")(closeOnBackgroundClick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnEscape)) __obj.updateDynamic("closeOnEscape")(closeOnEscape.get.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (errorContent != null) __obj.updateDynamic("errorContent")(errorContent.asInstanceOf[js.Any])
     if (loadingContent != null) __obj.updateDynamic("loadingContent")(loadingContent.asInstanceOf[js.Any])
     if (mainClassName != null) __obj.updateDynamic("mainClassName")(mainClassName.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
     if (modalData != null) __obj.updateDynamic("modalData")(modalData.asInstanceOf[js.Any])
     if (pushContent != null) __obj.updateDynamic("pushContent")(pushContent.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(titleBar)) __obj.updateDynamic("titleBar")(titleBar.asInstanceOf[js.Any])
+    if (!js.isUndefined(titleBar)) __obj.updateDynamic("titleBar")(titleBar.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[PgwModalOption]
   }

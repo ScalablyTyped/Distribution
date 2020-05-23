@@ -11,10 +11,10 @@ trait WorkbookSheetFreezePane extends js.Object {
 
 object WorkbookSheetFreezePane {
   @scala.inline
-  def apply(colSplit: Int | Double = null, rowSplit: Int | Double = null): WorkbookSheetFreezePane = {
+  def apply(colSplit: js.UndefOr[Double] = js.undefined, rowSplit: js.UndefOr[Double] = js.undefined): WorkbookSheetFreezePane = {
     val __obj = js.Dynamic.literal()
-    if (colSplit != null) __obj.updateDynamic("colSplit")(colSplit.asInstanceOf[js.Any])
-    if (rowSplit != null) __obj.updateDynamic("rowSplit")(rowSplit.asInstanceOf[js.Any])
+    if (!js.isUndefined(colSplit)) __obj.updateDynamic("colSplit")(colSplit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowSplit)) __obj.updateDynamic("rowSplit")(rowSplit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookSheetFreezePane]
   }
 }

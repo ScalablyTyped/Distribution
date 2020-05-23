@@ -8,9 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapBinaryImage")
 @js.native
-class BootstrapBinaryImage () extends BootstrapClientEdit {
+trait BootstrapBinaryImage extends BootstrapClientEdit {
   def clear(): Unit = js.native
   def getUploadedFileName(): String = js.native
   @JSName("off")

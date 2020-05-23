@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.AnonLightmapMode
+import typings.babylonjs.anon.LightmapMode
 import typings.babylonjs.effectMod.IEffectCreationOptions
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
@@ -291,7 +291,7 @@ object MaterialHelper extends js.Object {
     lightIndex: Double,
     defines: js.Any,
     specularSupported: Boolean,
-    state: AnonLightmapMode
+    state: LightmapMode
   ): Unit = js.native
   /**
     * Prepares the defines related to the light information passed in parameter

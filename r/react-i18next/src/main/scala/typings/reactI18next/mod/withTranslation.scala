@@ -1,7 +1,7 @@
 package typings.reactI18next.mod
 
 import typings.react.mod.ComponentType
-import typings.reactI18next.AnonWithRef
+import typings.reactI18next.anon.WithRef
 import typings.reactI18next.reactI18nextStrings.i18n
 import typings.reactI18next.reactI18nextStrings.tReady
 import scala.scalajs.js
@@ -19,7 +19,7 @@ object withTranslation extends js.Object {
     /* component */ ComponentType[WithTranslation_], 
     ComponentType[(Omit[WithTranslation_, i18n | tReady]) with WithTranslationProps]
   ] = js.native
-  def apply(ns: Namespace, options: AnonWithRef): js.Function1[
+  def apply(ns: Namespace, options: WithRef): js.Function1[
     /* component */ ComponentType[WithTranslation_], 
     ComponentType[(Omit[WithTranslation_, i18n | tReady]) with WithTranslationProps]
   ] = js.native

@@ -7,9 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.BusinessData.EntityIdentifier")
 @js.native
-class EntityIdentifier () extends ClientObject {
+trait EntityIdentifier extends ClientObject {
   def containsLocalizedDisplayName(): BooleanResult = js.native
   def getDefaultDisplayName(): StringResult = js.native
   def getLocalizedDisplayName(): StringResult = js.native

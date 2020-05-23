@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Sensors
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,32 +42,6 @@ object ActivityType extends js.Object {
   /** The sensor indicates the user is walking. The user travels at a moderate pace with one foot on the ground at all times. */
   @js.native
   sealed trait walking extends ActivityType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ActivityType with Double] = js.native
-  /* 7 */ @js.native
-  object biking extends TopLevel[biking with Double]
-  
-  /* 3 */ @js.native
-  object fidgeting extends TopLevel[fidgeting with Double]
-  
-  /* 1 */ @js.native
-  object idle extends TopLevel[idle with Double]
-  
-  /* 6 */ @js.native
-  object inVehicle extends TopLevel[inVehicle with Double]
-  
-  /* 5 */ @js.native
-  object running extends TopLevel[running with Double]
-  
-  /* 2 */ @js.native
-  object stationary extends TopLevel[stationary with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
-  /* 4 */ @js.native
-  object walking extends TopLevel[walking with Double]
   
 }
 

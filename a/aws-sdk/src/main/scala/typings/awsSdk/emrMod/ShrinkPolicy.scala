@@ -18,9 +18,12 @@ trait ShrinkPolicy extends js.Object {
 
 object ShrinkPolicy {
   @scala.inline
-  def apply(DecommissionTimeout: Int | Double = null, InstanceResizePolicy: InstanceResizePolicy = null): ShrinkPolicy = {
+  def apply(
+    DecommissionTimeout: js.UndefOr[Integer] = js.undefined,
+    InstanceResizePolicy: InstanceResizePolicy = null
+  ): ShrinkPolicy = {
     val __obj = js.Dynamic.literal()
-    if (DecommissionTimeout != null) __obj.updateDynamic("DecommissionTimeout")(DecommissionTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(DecommissionTimeout)) __obj.updateDynamic("DecommissionTimeout")(DecommissionTimeout.get.asInstanceOf[js.Any])
     if (InstanceResizePolicy != null) __obj.updateDynamic("InstanceResizePolicy")(InstanceResizePolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShrinkPolicy]
   }

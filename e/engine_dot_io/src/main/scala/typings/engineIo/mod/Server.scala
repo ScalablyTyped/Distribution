@@ -13,50 +13,50 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * The main server/manager. Inherits from EventEmitter.
-	 */
+  * The main server/manager. Inherits from EventEmitter.
+  */
 @JSImport("engine.io", "Server")
 @js.native
 /**
-		 * Initializes the server
-		 */
+  * Initializes the server
+  */
 class Server () extends EventEmitter {
   def this(opts: ServerOptions) = this()
   /**
-  		 * hash of connected clients by id.
-  		 */
+    * hash of connected clients by id.
+    */
   var clients: StringDictionary[Socket] = js.native
   /**
-  		 * number of connected clients.
-  		 */
+    * number of connected clients.
+    */
   var clientsCount: Double = js.native
   val httpServer: js.UndefOr[typings.node.httpMod.Server] = js.native
   /**
-  		 * Attach this Server instance to an http.Server
-  		 * Captures upgrade requests for a http.Server. In other words, makes a regular http.Server WebSocket-compatible.
-  		 */
+    * Attach this Server instance to an http.Server
+    * Captures upgrade requests for a http.Server. In other words, makes a regular http.Server WebSocket-compatible.
+    */
   def attach(http: typings.node.httpMod.Server): this.type = js.native
   def attach(http: typings.node.httpMod.Server, opts: AttachOptions): this.type = js.native
   /**
-  		 * Closes all clients
-  		 */
+    * Closes all clients
+    */
   def close(): this.type = js.native
   /**
-  		 * Generate a socket id.
-  		 * Overwrite this method to generate your custom socket id.
-  		 */
+    * Generate a socket id.
+    * Overwrite this method to generate your custom socket id.
+    */
   def generateId(req: IncomingMessage): String = js.native
   /**
-  		 * Called internally when a Engine request is intercepted.
-  		 */
+    * Called internally when a Engine request is intercepted.
+    */
   def handleRequest(req: IncomingMessage, res: ServerResponse): this.type = js.native
   /**
-  		 * Called internally when a Engine ws upgrade is intercepted.
-  		 */
+    * Called internally when a Engine ws upgrade is intercepted.
+    */
   def handleUpgrade(req: IncomingMessage, socket: typings.node.netMod.Socket, head: Buffer): this.type = js.native
   /**
-  		 * Fired when a new connection is established.
-  		 */
+    * Fired when a new connection is established.
+    */
   @JSName("on")
   def on_connection(ev: connection, fn: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
   @JSName("on")

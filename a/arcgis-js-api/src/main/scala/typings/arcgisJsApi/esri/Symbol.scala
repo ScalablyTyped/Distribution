@@ -38,7 +38,3 @@ trait Symbol
   val `type`: `simple-marker` | `picture-marker` | `simple-line` | `simple-fill` | `picture-fill` | text | `shield-label-symbol` | `point-3d` | `line-3d` | `polygon-3d` | `web-style` | `mesh-3d` | `label-3d` | cim = js.native
 }
 
-@JSGlobal("__esri.Symbol")
-@js.native
-object Symbol extends SymbolConstructor
-

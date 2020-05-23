@@ -10,12 +10,12 @@ trait ITask extends js.Object {
   /** [Property] (Boolean) */
   var fireOnStart: js.UndefOr[Boolean] = js.undefined
   /** [Method] Restarts this task clearing it duration expiration and run count
-  		* @param interval Number Optionally reset this task's interval.
-  		*/
+    * @param interval Number Optionally reset this task's interval.
+    */
   var restart: js.UndefOr[js.Function1[/* interval */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Starts this task if it is not already started
-  		* @param interval Number Optionally reset this task's interval.
-  		*/
+    * @param interval Number Optionally reset this task's interval.
+    */
   var start: js.UndefOr[js.Function1[/* interval */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Stops this task  */
   var stop: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -32,7 +32,7 @@ object ITask {
   ): ITask = {
     val __obj = js.Dynamic.literal()
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (!js.isUndefined(fireOnStart)) __obj.updateDynamic("fireOnStart")(fireOnStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(fireOnStart)) __obj.updateDynamic("fireOnStart")(fireOnStart.get.asInstanceOf[js.Any])
     if (restart != null) __obj.updateDynamic("restart")(js.Any.fromFunction1(restart))
     if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
     if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction0(stop))

@@ -1,6 +1,8 @@
 package typings.tabulatorTables.Tabulator
 
 import typings.tabulatorTables.tabulatorTablesBooleans.`true`
+import typings.tabulatorTables.tabulatorTablesStrings.asc
+import typings.tabulatorTables.tabulatorTablesStrings.desc
 import typings.tabulatorTables.tabulatorTablesStrings.editor
 import typings.tabulatorTables.tabulatorTablesStrings.hybrid
 import typings.tabulatorTables.tabulatorTablesStrings.table
@@ -29,6 +31,7 @@ object SelectParams {
     maskLetterChar: String = null,
     maskNumberChar: String = null,
     maskWildcardChar: String = null,
+    sortValuesList: asc | desc = null,
     verticalNavigation: editor | table | hybrid = null
   ): SelectParams = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
@@ -36,10 +39,11 @@ object SelectParams {
     if (elementAttributes != null) __obj.updateDynamic("elementAttributes")(elementAttributes.asInstanceOf[js.Any])
     if (listItemFormatter != null) __obj.updateDynamic("listItemFormatter")(js.Any.fromFunction2(listItemFormatter))
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (!js.isUndefined(maskAutoFill)) __obj.updateDynamic("maskAutoFill")(maskAutoFill.asInstanceOf[js.Any])
+    if (!js.isUndefined(maskAutoFill)) __obj.updateDynamic("maskAutoFill")(maskAutoFill.get.asInstanceOf[js.Any])
     if (maskLetterChar != null) __obj.updateDynamic("maskLetterChar")(maskLetterChar.asInstanceOf[js.Any])
     if (maskNumberChar != null) __obj.updateDynamic("maskNumberChar")(maskNumberChar.asInstanceOf[js.Any])
     if (maskWildcardChar != null) __obj.updateDynamic("maskWildcardChar")(maskWildcardChar.asInstanceOf[js.Any])
+    if (sortValuesList != null) __obj.updateDynamic("sortValuesList")(sortValuesList.asInstanceOf[js.Any])
     if (verticalNavigation != null) __obj.updateDynamic("verticalNavigation")(verticalNavigation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectParams]
   }

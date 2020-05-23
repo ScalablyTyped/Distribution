@@ -33,16 +33,14 @@ object langDefaultMod extends js.Object {
     var isEqual: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof isEqual */ js.Any = js.native
     var isEqualWith: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof isEqualWith */ js.Any = js.native
     var isError: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof isError */ js.Any = js.native
-    @JSName("isFinite")
-    var isFinite_Original: js.Function1[/* number */ Double, Boolean] = js.native
+    var isFinite: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof isFinite */ js.Any = js.native
     var isFunction: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof isFunction */ js.Any = js.native
     var isInteger: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof isInteger */ js.Any = js.native
     var isLength: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof isLength */ js.Any = js.native
     var isMap: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof isMap */ js.Any = js.native
     var isMatch: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof isMatch */ js.Any = js.native
     var isMatchWith: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof isMatchWith */ js.Any = js.native
-    @JSName("isNaN")
-    var isNaN_Original: js.Function1[/* number */ Double, Boolean] = js.native
+    var isNaN: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof isNaN */ js.Any = js.native
     var isNative: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof isNative */ js.Any = js.native
     var isNil: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof isNil */ js.Any = js.native
     var isNull: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof isNull */ js.Any = js.native
@@ -69,9 +67,7 @@ object langDefaultMod extends js.Object {
     var toPlainObject: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof toPlainObject */ js.Any = js.native
     var toSafeInteger: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof toSafeInteger */ js.Any = js.native
     @JSName("toString")
-    var toString_Original: js.Function0[String] = js.native
-    def isFinite(number: Double): Boolean = js.native
-    def isNaN(number: Double): Boolean = js.native
+    var toString_Fdefault: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof toString */ js.Any = js.native
   }
   
 }

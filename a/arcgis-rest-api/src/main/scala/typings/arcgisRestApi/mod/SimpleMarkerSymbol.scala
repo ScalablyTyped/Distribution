@@ -19,23 +19,23 @@ object SimpleMarkerSymbol {
   @scala.inline
   def apply(
     `type`: esriSMS,
-    angle: Int | Double = null,
+    angle: js.UndefOr[Double] = js.undefined,
     color: Color = null,
     outline: SimpleLineSymbol = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     style: SimpleMarkerSymbolStyle = null,
-    xoffset: Int | Double = null,
-    yoffset: Int | Double = null
+    xoffset: js.UndefOr[Double] = js.undefined,
+    yoffset: js.UndefOr[Double] = js.undefined
   ): SimpleMarkerSymbol = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (xoffset != null) __obj.updateDynamic("xoffset")(xoffset.asInstanceOf[js.Any])
-    if (yoffset != null) __obj.updateDynamic("yoffset")(yoffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(xoffset)) __obj.updateDynamic("xoffset")(xoffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yoffset)) __obj.updateDynamic("yoffset")(yoffset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleMarkerSymbol]
   }
 }

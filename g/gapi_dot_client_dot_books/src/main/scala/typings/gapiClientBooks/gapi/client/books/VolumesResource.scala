@@ -1,10 +1,10 @@
 package typings.gapiClientBooks.gapi.client.books
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientBooks.AnonAlt
-import typings.gapiClientBooks.AnonCountry
-import typings.gapiClientBooks.AnonDownload
-import typings.gapiClientBooks.AnonFields
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientBooks.anon.Alt
+import typings.gapiClientBooks.anon.Country
+import typings.gapiClientBooks.anon.Download
+import typings.gapiClientBooks.anon.Fields
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,12 +16,12 @@ trait VolumesResource extends js.Object {
   var recommended: RecommendedResource = js.native
   var useruploaded: UseruploadedResource = js.native
   /** Gets volume information for a single volume. */
-  def get(request: AnonFields): Request_[Volume] = js.native
+  def get(request: Fields): Request[Volume] = js.native
   /** Retrieves volumes in a specific bookshelf for the specified user. */
-  def list(request: AnonAlt): Request_[Volumes] = js.native
+  def list(request: Alt): Request[Volumes] = js.native
   /** Gets volume information for volumes on a bookshelf. */
-  def list(request: AnonCountry): Request_[Volumes] = js.native
+  def list(request: Country): Request[Volumes] = js.native
   /** Performs a book search. */
-  def list(request: AnonDownload): Request_[Volumes] = js.native
+  def list(request: Download): Request[Volumes] = js.native
 }
 

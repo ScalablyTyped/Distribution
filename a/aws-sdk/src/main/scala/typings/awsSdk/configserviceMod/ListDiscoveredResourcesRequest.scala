@@ -36,15 +36,15 @@ object ListDiscoveredResourcesRequest {
   @scala.inline
   def apply(
     resourceType: ResourceType,
-    includeDeletedResources: js.UndefOr[scala.Boolean] = js.undefined,
-    limit: Int | Double = null,
+    includeDeletedResources: js.UndefOr[Boolean] = js.undefined,
+    limit: js.UndefOr[Limit] = js.undefined,
     nextToken: NextToken = null,
     resourceIds: ResourceIdList = null,
     resourceName: ResourceName = null
   ): ListDiscoveredResourcesRequest = {
     val __obj = js.Dynamic.literal(resourceType = resourceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeDeletedResources)) __obj.updateDynamic("includeDeletedResources")(includeDeletedResources.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeDeletedResources)) __obj.updateDynamic("includeDeletedResources")(includeDeletedResources.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (resourceIds != null) __obj.updateDynamic("resourceIds")(resourceIds.asInstanceOf[js.Any])
     if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName.asInstanceOf[js.Any])

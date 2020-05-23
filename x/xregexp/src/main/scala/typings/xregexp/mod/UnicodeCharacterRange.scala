@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
   * All properties but `name` are optional, although one of `bmp` or `astral` is required (unless `inverseOf` is set).
   */
 /* Rewritten from type alias, can be one of: 
-  - typings.xregexp.PickRequiredUnicodeCharac
-  - typings.xregexp.PickRequiredUnicodeCharacAlias
-  - typings.xregexp.PickRequiredUnicodeCharacAstral
+  - typings.xregexp.anon.PickRequiredUnicodeCharac
+  - typings.xregexp.anon.PickRequiredUnicodeCharacAlias
+  - typings.xregexp.anon.PickRequiredUnicodeCharacAstral
 */
 trait UnicodeCharacterRange extends js.Object
 
@@ -31,7 +31,7 @@ object UnicodeCharacterRange {
     if (astral != null) __obj.updateDynamic("astral")(astral.asInstanceOf[js.Any])
     if (bmp != null) __obj.updateDynamic("bmp")(bmp.asInstanceOf[js.Any])
     if (inverseOf != null) __obj.updateDynamic("inverseOf")(inverseOf.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBmpLast)) __obj.updateDynamic("isBmpLast")(isBmpLast.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBmpLast)) __obj.updateDynamic("isBmpLast")(isBmpLast.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnicodeCharacterRange]
   }
   @scala.inline
@@ -48,7 +48,7 @@ object UnicodeCharacterRange {
     if (astral != null) __obj.updateDynamic("astral")(astral.asInstanceOf[js.Any])
     if (bmp != null) __obj.updateDynamic("bmp")(bmp.asInstanceOf[js.Any])
     if (inverseOf != null) __obj.updateDynamic("inverseOf")(inverseOf.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBmpLast)) __obj.updateDynamic("isBmpLast")(isBmpLast.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBmpLast)) __obj.updateDynamic("isBmpLast")(isBmpLast.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnicodeCharacterRange]
   }
   @scala.inline
@@ -65,7 +65,7 @@ object UnicodeCharacterRange {
     if (astral != null) __obj.updateDynamic("astral")(astral.asInstanceOf[js.Any])
     if (bmp != null) __obj.updateDynamic("bmp")(bmp.asInstanceOf[js.Any])
     if (inverseOf != null) __obj.updateDynamic("inverseOf")(inverseOf.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBmpLast)) __obj.updateDynamic("isBmpLast")(isBmpLast.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBmpLast)) __obj.updateDynamic("isBmpLast")(isBmpLast.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnicodeCharacterRange]
   }
 }

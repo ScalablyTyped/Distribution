@@ -8,9 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.BusinessData.TypeDescriptor")
 @js.native
-class TypeDescriptor () extends ClientObject {
+trait TypeDescriptor extends ClientObject {
   def containsLocalizedDisplayName(): BooleanResult = js.native
   def getChildTypeDescriptors(): TypeDescriptorCollection = js.native
   def getDefaultDisplayName(): StringResult = js.native

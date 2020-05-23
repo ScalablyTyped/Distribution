@@ -51,7 +51,7 @@ trait JobDescriptor extends js.Object {
     */
   var Report: js.UndefOr[JobReport] = js.native
   /**
-    * The Amazon Resource Name (ARN) for the Identity and Access Management (IAM) Role assigned to execute the tasks for this job.
+    * The Amazon Resource Name (ARN) for the AWS Identity and Access Management (IAM) role assigned to execute the tasks for this job.
     */
   var RoleArn: js.UndefOr[IAMRoleArn] = js.native
   /**
@@ -79,7 +79,7 @@ trait JobDescriptor extends js.Object {
 object JobDescriptor {
   @scala.inline
   def apply(
-    ConfirmationRequired: js.UndefOr[scala.Boolean] = js.undefined,
+    ConfirmationRequired: js.UndefOr[ConfirmationRequired] = js.undefined,
     CreationTime: JobCreationTime = null,
     Description: NonEmptyMaxLength256String = null,
     FailureReasons: JobFailureList = null,
@@ -87,7 +87,7 @@ object JobDescriptor {
     JobId: JobId = null,
     Manifest: JobManifest = null,
     Operation: JobOperation = null,
-    Priority: Int | Double = null,
+    Priority: js.UndefOr[JobPriority] = js.undefined,
     ProgressSummary: JobProgressSummary = null,
     Report: JobReport = null,
     RoleArn: IAMRoleArn = null,
@@ -98,7 +98,7 @@ object JobDescriptor {
     TerminationDate: JobTerminationDate = null
   ): JobDescriptor = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ConfirmationRequired)) __obj.updateDynamic("ConfirmationRequired")(ConfirmationRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConfirmationRequired)) __obj.updateDynamic("ConfirmationRequired")(ConfirmationRequired.get.asInstanceOf[js.Any])
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (FailureReasons != null) __obj.updateDynamic("FailureReasons")(FailureReasons.asInstanceOf[js.Any])
@@ -106,7 +106,7 @@ object JobDescriptor {
     if (JobId != null) __obj.updateDynamic("JobId")(JobId.asInstanceOf[js.Any])
     if (Manifest != null) __obj.updateDynamic("Manifest")(Manifest.asInstanceOf[js.Any])
     if (Operation != null) __obj.updateDynamic("Operation")(Operation.asInstanceOf[js.Any])
-    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority.get.asInstanceOf[js.Any])
     if (ProgressSummary != null) __obj.updateDynamic("ProgressSummary")(ProgressSummary.asInstanceOf[js.Any])
     if (Report != null) __obj.updateDynamic("Report")(Report.asInstanceOf[js.Any])
     if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])

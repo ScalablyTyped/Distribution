@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("zip.ZipWriter")
 @js.native
-class ZipWriter () extends js.Object {
+trait ZipWriter extends js.Object {
   def add(name: String, reader: Reader, onend: js.Function0[Unit]): Unit = js.native
   def add(
     name: String,

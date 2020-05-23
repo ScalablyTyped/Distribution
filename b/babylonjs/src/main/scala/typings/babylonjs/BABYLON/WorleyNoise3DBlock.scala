@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.WorleyNoise3DBlock")
 @js.native
-class WorleyNoise3DBlock protected () extends NodeMaterialBlock {
-  /**
-    * Creates a new WorleyNoise3DBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait WorleyNoise3DBlock extends NodeMaterialBlock {
   /** Gets or sets a boolean indicating that normal should be inverted on X axis */
   var manhattanDistance: Boolean = js.native
   /**

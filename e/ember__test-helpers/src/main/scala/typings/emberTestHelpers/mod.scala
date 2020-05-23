@@ -1,6 +1,9 @@
 package typings.emberTestHelpers
 
 import typings.emberApplication.mod.default
+import typings.emberTestHelpers.anon.Delay
+import typings.emberTestHelpers.anon.IsValid
+import typings.emberTestHelpers.anon.Resolver
 import typings.emberTestHelpers.settledMod.SettledState
 import typings.emberTestHelpers.triggerKeyEventMod.KeyEvent
 import typings.emberTestHelpers.triggerKeyEventMod.KeyModifiers
@@ -40,7 +43,7 @@ object mod extends js.Object {
   def settled(): js.Promise[Unit] = js.native
   def setupApplicationContext[Context /* <: js.Object */](context: Context): js.Promise[Context] = js.native
   def setupContext[C /* <: js.Object */](context: C): js.Promise[C] = js.native
-  def setupContext[C /* <: js.Object */](context: C, options: AnonResolver): js.Promise[C] = js.native
+  def setupContext[C /* <: js.Object */](context: C, options: Resolver): js.Promise[C] = js.native
   def setupRenderingContext[Context /* <: js.Object */](context: Context): js.Promise[Context] = js.native
   def tap(target: Target): js.Promise[Unit] = js.native
   def teardownApplicationContext(context: js.Object): js.Promise[Unit] = js.native
@@ -53,10 +56,10 @@ object mod extends js.Object {
   def triggerKeyEvent(target: Target, eventType: KeyEvent, key: Double): js.Promise[Unit] = js.native
   def triggerKeyEvent(target: Target, eventType: KeyEvent, key: Double, modifiers: KeyModifiers): js.Promise[Unit] = js.native
   def typeIn(target: Target, text: String): js.Promise[Unit] = js.native
-  def typeIn(target: Target, text: String, options: AnonDelay): js.Promise[Unit] = js.native
+  def typeIn(target: Target, text: String, options: Delay): js.Promise[Unit] = js.native
   def unsetContext(): Unit = js.native
-  def validateErrorHandler(): AnonIsValid = js.native
-  def validateErrorHandler(callback: js.Function1[/* error */ typings.emberError.mod.default, Unit]): AnonIsValid = js.native
+  def validateErrorHandler(): IsValid = js.native
+  def validateErrorHandler(callback: js.Function1[/* error */ typings.emberError.mod.default, Unit]): IsValid = js.native
   def visit(url: String): js.Promise[Unit] = js.native
   def waitFor(selector: String): js.Promise[Element | js.Array[Element]] = js.native
   def waitFor(selector: String, options: Options): js.Promise[Element | js.Array[Element]] = js.native

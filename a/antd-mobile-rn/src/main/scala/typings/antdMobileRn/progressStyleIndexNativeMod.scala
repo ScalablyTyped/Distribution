@@ -1,5 +1,7 @@
 package typings.antdMobileRn
 
+import typings.antdMobileRn.anon.BackgroundColorFlex
+import typings.antdMobileRn.anon.BorderBottomWidthBorderColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,8 +11,8 @@ import scala.scalajs.js.annotation._
 object progressStyleIndexNativeMod extends js.Object {
   @js.native
   object default extends js.Object {
-    var progressBar: AnonBorderBottomWidthBorderColor = js.native
-    var progressOuter: AnonBackgroundColorFlex = js.native
+    var progressBar: BorderBottomWidthBorderColor = js.native
+    var progressOuter: BackgroundColorFlex = js.native
   }
   
 }

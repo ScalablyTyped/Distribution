@@ -9,6 +9,9 @@ object web3CoreSubscriptionsStrings {
   sealed trait changed extends js.Object
   
   @js.native
+  sealed trait connected extends js.Object
+  
+  @js.native
   sealed trait data extends js.Object
   
   @js.native
@@ -16,6 +19,8 @@ object web3CoreSubscriptionsStrings {
   
   @scala.inline
   def changed: changed = "changed".asInstanceOf[changed]
+  @scala.inline
+  def connected: connected = "connected".asInstanceOf[connected]
   @scala.inline
   def data: data = "data".asInstanceOf[data]
   @scala.inline

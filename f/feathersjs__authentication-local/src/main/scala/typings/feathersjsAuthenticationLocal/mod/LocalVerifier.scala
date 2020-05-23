@@ -3,7 +3,7 @@ package typings.feathersjsAuthenticationLocal.mod
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
-import typings.feathersjsAuthenticationLocal.AnonMessage
+import typings.feathersjsAuthenticationLocal.anon.Message
 import typings.feathersjsFeathers.mod.Application
 import typings.feathersjsFeathers.mod.Paginated
 import scala.scalajs.js
@@ -26,7 +26,7 @@ class LocalVerifier protected () extends js.Object {
     done: js.Function3[
       /* error */ js.Any, 
       /* user */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[AnonMessage], 
+      /* options */ js.UndefOr[Message], 
       Unit
     ]
   ): Unit = js.native

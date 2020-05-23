@@ -14,13 +14,13 @@ object CacheInfo {
   def apply(
     id: String,
     size: Double,
-    cacheFlushInterval: Int | Double = null,
-    capacity: Int | Double = null,
+    cacheFlushInterval: js.UndefOr[Double] = js.undefined,
+    capacity: js.UndefOr[Double] = js.undefined,
     deleteOnExpire: DeleteOnExpire = null,
     enable: js.UndefOr[Boolean] = js.undefined,
-    maxAge: Int | Double = null,
+    maxAge: js.UndefOr[Double] = js.undefined,
     onExpire: (/* key */ String, /* value */ js.Any, /* done */ js.UndefOr[js.Function]) => Unit = null,
-    recycleFreq: Int | Double = null,
+    recycleFreq: js.UndefOr[Double] = js.undefined,
     storageImpl: StorageImpl = null,
     storageMode: StorageMode = null,
     storagePrefix: String = null,
@@ -28,18 +28,18 @@ object CacheInfo {
     storeOnResolve: js.UndefOr[Boolean] = js.undefined
   ): CacheInfo = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-    if (cacheFlushInterval != null) __obj.updateDynamic("cacheFlushInterval")(cacheFlushInterval.asInstanceOf[js.Any])
-    if (capacity != null) __obj.updateDynamic("capacity")(capacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheFlushInterval)) __obj.updateDynamic("cacheFlushInterval")(cacheFlushInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(capacity)) __obj.updateDynamic("capacity")(capacity.get.asInstanceOf[js.Any])
     if (deleteOnExpire != null) __obj.updateDynamic("deleteOnExpire")(deleteOnExpire.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
-    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAge)) __obj.updateDynamic("maxAge")(maxAge.get.asInstanceOf[js.Any])
     if (onExpire != null) __obj.updateDynamic("onExpire")(js.Any.fromFunction3(onExpire))
-    if (recycleFreq != null) __obj.updateDynamic("recycleFreq")(recycleFreq.asInstanceOf[js.Any])
+    if (!js.isUndefined(recycleFreq)) __obj.updateDynamic("recycleFreq")(recycleFreq.get.asInstanceOf[js.Any])
     if (storageImpl != null) __obj.updateDynamic("storageImpl")(storageImpl.asInstanceOf[js.Any])
     if (storageMode != null) __obj.updateDynamic("storageMode")(storageMode.asInstanceOf[js.Any])
     if (storagePrefix != null) __obj.updateDynamic("storagePrefix")(storagePrefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(storeOnReject)) __obj.updateDynamic("storeOnReject")(storeOnReject.asInstanceOf[js.Any])
-    if (!js.isUndefined(storeOnResolve)) __obj.updateDynamic("storeOnResolve")(storeOnResolve.asInstanceOf[js.Any])
+    if (!js.isUndefined(storeOnReject)) __obj.updateDynamic("storeOnReject")(storeOnReject.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(storeOnResolve)) __obj.updateDynamic("storeOnResolve")(storeOnResolve.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheInfo]
   }
 }

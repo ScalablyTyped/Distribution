@@ -18,7 +18,7 @@ object ResponsivePanelOptions {
   @scala.inline
   def apply(
     autoClose: js.UndefOr[Boolean] = js.undefined,
-    breakpoint: Int | Double = null,
+    breakpoint: js.UndefOr[Double] = js.undefined,
     close: /* e */ ResponsivePanelEvent => Unit = null,
     name: String = null,
     open: /* e */ ResponsivePanelEvent => Unit = null,
@@ -26,8 +26,8 @@ object ResponsivePanelOptions {
     toggleButton: String = null
   ): ResponsivePanelOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose.asInstanceOf[js.Any])
-    if (breakpoint != null) __obj.updateDynamic("breakpoint")(breakpoint.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(breakpoint)) __obj.updateDynamic("breakpoint")(breakpoint.get.asInstanceOf[js.Any])
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))

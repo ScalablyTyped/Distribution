@@ -1,7 +1,7 @@
 package typings.angularCompiler.compilerMod
 
-import typings.angularCompiler.AnonAnalyzedInjectables
 import typings.angularCompiler.abstractEmitterMod.OutputEmitter
+import typings.angularCompiler.anon.AnalyzedInjectables
 import typings.angularCompiler.compilerHostMod.AotCompilerHost
 import typings.angularCompiler.compilerOptionsMod.AotCompilerOptions
 import typings.angularCompiler.configMod.CompilerConfig
@@ -96,7 +96,7 @@ class AotCompiler protected () extends js.Object {
   def listLazyRoutes(): js.Array[LazyRoute] = js.native
   def listLazyRoutes(entryRoute: String): js.Array[LazyRoute] = js.native
   def listLazyRoutes(entryRoute: String, analyzedModules: NgAnalyzedModules): js.Array[LazyRoute] = js.native
-  def loadFilesAsync(fileNames: js.Array[String], tsFiles: js.Array[String]): js.Promise[AnonAnalyzedInjectables] = js.native
-  def loadFilesSync(fileNames: js.Array[String], tsFiles: js.Array[String]): AnonAnalyzedInjectables = js.native
+  def loadFilesAsync(fileNames: js.Array[String], tsFiles: js.Array[String]): js.Promise[AnalyzedInjectables] = js.native
+  def loadFilesSync(fileNames: js.Array[String], tsFiles: js.Array[String]): AnalyzedInjectables = js.native
 }
 

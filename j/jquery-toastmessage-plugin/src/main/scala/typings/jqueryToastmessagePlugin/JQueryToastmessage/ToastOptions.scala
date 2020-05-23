@@ -39,9 +39,9 @@ object ToastOptions {
   def apply(
     close: () => Unit = null,
     closeText: String = null,
-    inEffectDuration: Int | Double = null,
+    inEffectDuration: js.UndefOr[Double] = js.undefined,
     position: ToastPosition = null,
-    stayTime: Int | Double = null,
+    stayTime: js.UndefOr[Double] = js.undefined,
     sticky: js.UndefOr[Boolean] = js.undefined,
     text: String = null,
     `type`: ToastType = null
@@ -49,10 +49,10 @@ object ToastOptions {
     val __obj = js.Dynamic.literal()
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction0(close))
     if (closeText != null) __obj.updateDynamic("closeText")(closeText.asInstanceOf[js.Any])
-    if (inEffectDuration != null) __obj.updateDynamic("inEffectDuration")(inEffectDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(inEffectDuration)) __obj.updateDynamic("inEffectDuration")(inEffectDuration.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (stayTime != null) __obj.updateDynamic("stayTime")(stayTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(sticky)) __obj.updateDynamic("sticky")(sticky.asInstanceOf[js.Any])
+    if (!js.isUndefined(stayTime)) __obj.updateDynamic("stayTime")(stayTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sticky)) __obj.updateDynamic("sticky")(sticky.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToastOptions]

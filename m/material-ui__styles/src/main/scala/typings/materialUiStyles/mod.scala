@@ -3,6 +3,7 @@ package typings.materialUiStyles
 import org.scalablytyped.runtime.TopLevel
 import typings.jss.mod.GenerateId
 import typings.jss.mod.JssOptions
+import typings.materialUiStyles.anon.NameProps
 import typings.materialUiStyles.createGenerateClassNameCreateGenerateClassNameMod.GenerateClassNameOptions
 import typings.materialUiStyles.getThemePropsGetThemePropsMod.ThemeWithProps
 import typings.materialUiStyles.getThemePropsGetThemePropsMod.ThemedProps
@@ -40,7 +41,7 @@ import typings.react.mod.Context
 import typings.react.mod.ElementType
 import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactElement
-import typings.react.mod._Global_.JSX.LibraryManagedAttributes
+import typings.react.mod.global.JSX.LibraryManagedAttributes
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -66,7 +67,7 @@ object mod extends js.Object {
   def createGenerateClassName(): GenerateId = js.native
   def createGenerateClassName(options: GenerateClassNameOptions): GenerateId = js.native
   def createStyles[ClassKey /* <: String */, Props /* <: js.Object */](styles: StyleRules[Props, ClassKey]): StyleRules[Props, ClassKey] = js.native
-  def getThemeProps[Theme /* <: ThemeWithProps[_] */, Props, Name /* <: /* keyof any */ String */](params: AnonName[Props, Name, Theme]): Props with (ThemedProps[Theme, Name]) = js.native
+  def getThemeProps[Theme /* <: ThemeWithProps[_] */, Props, Name /* <: /* keyof any */ String */](params: NameProps[Props, Name, Theme]): Props with (ThemedProps[Theme, Name]) = js.native
   def jssPreset(): JssOptions = js.native
   def makeStyles[Theme, ClassKey /* <: String */](style: Styles[Theme, js.Object, ClassKey]): js.Function1[/* props */ js.UndefOr[js.Any], ClassNameMap[ClassKey]] = js.native
   @JSName("makeStyles")
@@ -101,7 +102,7 @@ object mod extends js.Object {
           ComponentClass[ConsistentWith[ComponentProps[_], WithTheme[Theme]], ComponentState]
         ]
       ], 
-      theme | innerRef
+      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
     ]) with Partial[WithTheme[Theme]] with ThemedComponentProps
   ] = js.native
   def withTheme[Theme](component: FunctionComponent[ConsistentWith[ComponentProps[_], WithTheme[Theme]]]): ComponentType[
@@ -110,7 +111,7 @@ object mod extends js.Object {
         FunctionComponent[ConsistentWith[ComponentProps[_], WithTheme[Theme]]], 
         ComponentProps[FunctionComponent[ConsistentWith[ComponentProps[_], WithTheme[Theme]]]]
       ], 
-      theme | innerRef
+      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
     ]) with Partial[WithTheme[Theme]] with ThemedComponentProps
   ] = js.native
   def withThemeCreator[Theme](): PropInjector[WithTheme[Theme], ThemedComponentProps] = js.native

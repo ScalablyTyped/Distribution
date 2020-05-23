@@ -1,26 +1,25 @@
 package typings.surveyKnockout.mod
 
-import typings.surveyKnockout.AnonBody
-import typings.surveyKnockout.AnonButton
-import typings.surveyKnockout.AnonButtonNext
-import typings.surveyKnockout.AnonCellLabel
-import typings.surveyKnockout.AnonComplete
-import typings.surveyKnockout.AnonContainer
-import typings.surveyKnockout.AnonContent
-import typings.surveyKnockout.AnonControl
-import typings.surveyKnockout.AnonControlLabel
-import typings.surveyKnockout.AnonControlOther
-import typings.surveyKnockout.AnonControls
-import typings.surveyKnockout.AnonDescription
-import typings.surveyKnockout.AnonDisabled
-import typings.surveyKnockout.AnonError
-import typings.surveyKnockout.AnonFileDecorator
-import typings.surveyKnockout.AnonIcon
-import typings.surveyKnockout.AnonImage
-import typings.surveyKnockout.AnonItemChecked
-import typings.surveyKnockout.AnonItemControl
-import typings.surveyKnockout.AnonItemValue
-import typings.surveyKnockout.AnonRoot
+import typings.surveyKnockout.anon.Body
+import typings.surveyKnockout.anon.Button
+import typings.surveyKnockout.anon.ButtonNext
+import typings.surveyKnockout.anon.CellLabel
+import typings.surveyKnockout.anon.Complete
+import typings.surveyKnockout.anon.Container
+import typings.surveyKnockout.anon.Content
+import typings.surveyKnockout.anon.Control
+import typings.surveyKnockout.anon.ControlLabel
+import typings.surveyKnockout.anon.ControlOther
+import typings.surveyKnockout.anon.Controls
+import typings.surveyKnockout.anon.Description
+import typings.surveyKnockout.anon.Disabled
+import typings.surveyKnockout.anon.Error
+import typings.surveyKnockout.anon.FileDecorator
+import typings.surveyKnockout.anon.Icon
+import typings.surveyKnockout.anon.Image
+import typings.surveyKnockout.anon.ItemChecked
+import typings.surveyKnockout.anon.ItemControl
+import typings.surveyKnockout.anon.Root
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,47 +29,47 @@ import scala.scalajs.js.annotation._
 object defaultBootstrapCss extends js.Object {
   var body: String = js.native
   var bodyEmpty: String = js.native
-  var boolean: AnonControl = js.native
-  var checkbox: AnonControlLabel = js.native
+  var boolean: Control = js.native
+  var checkbox: ControlLabel = js.native
   var comment: String = js.native
   var completedPage: String = js.native
   var container: String = js.native
   var description: String = js.native
-  var dropdown: AnonControlOther = js.native
-  var error: AnonIcon = js.native
+  var dropdown: ControlOther = js.native
+  var error: Icon = js.native
   var expression: String = js.native
-  var file: AnonFileDecorator = js.native
+  var file: FileDecorator = js.native
   var footer: String = js.native
   var header: String = js.native
   var headerText: String = js.native
-  var html: AnonRoot = js.native
-  var image: AnonImage = js.native
-  var imagepicker: AnonItemControl = js.native
+  var html: Root = js.native
+  var image: Image = js.native
+  var imagepicker: ItemControl = js.native
   var logo: String = js.native
   var logoImage: String = js.native
-  var matrix: AnonCellLabel = js.native
-  var matrixdropdown: AnonRoot = js.native
-  var matrixdynamic: AnonButton = js.native
-  var multipletext: AnonItemValue = js.native
-  var navigation: AnonComplete = js.native
+  var matrix: CellLabel = js.native
+  var matrixdropdown: Root = js.native
+  var matrixdynamic: Button = js.native
+  var multipletext: typings.surveyKnockout.anon.ItemValue = js.native
+  var navigation: Complete = js.native
   var navigationButton: String = js.native
-  var page: AnonDescription = js.native
+  var page: Description = js.native
   var pageDescription: String = js.native
   var pageTitle: String = js.native
-  var panel: AnonContainer = js.native
-  var paneldynamic: AnonButtonNext = js.native
+  var panel: Container = js.native
+  var paneldynamic: ButtonNext = js.native
   var progress: String = js.native
   var progressBar: String = js.native
   var progressTextUnderBar: String = js.native
-  var question: AnonContent = js.native
-  var radiogroup: AnonItemChecked = js.native
-  var rating: AnonDisabled = js.native
+  var question: Content = js.native
+  var radiogroup: ItemChecked = js.native
+  var rating: Disabled = js.native
   var root: String = js.native
   var row: String = js.native
-  var saveData: AnonError = js.native
-  var signaturepad: AnonControls = js.native
+  var saveData: Error = js.native
+  var signaturepad: Controls = js.native
   var text: String = js.native
   var title: String = js.native
-  var window: AnonBody = js.native
+  var window: Body = js.native
 }
 

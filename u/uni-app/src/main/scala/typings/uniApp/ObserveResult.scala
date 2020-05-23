@@ -31,17 +31,17 @@ object ObserveResult {
   @scala.inline
   def apply(
     boundingClientRect: ObserveNodeRect = null,
-    intersectionRatio: Int | Double = null,
+    intersectionRatio: js.UndefOr[Double] = js.undefined,
     intersectionRect: js.Any = null,
     relativeRect: ObserveNodeRect = null,
-    time: Int | Double = null
+    time: js.UndefOr[Double] = js.undefined
   ): ObserveResult = {
     val __obj = js.Dynamic.literal()
     if (boundingClientRect != null) __obj.updateDynamic("boundingClientRect")(boundingClientRect.asInstanceOf[js.Any])
-    if (intersectionRatio != null) __obj.updateDynamic("intersectionRatio")(intersectionRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(intersectionRatio)) __obj.updateDynamic("intersectionRatio")(intersectionRatio.get.asInstanceOf[js.Any])
     if (intersectionRect != null) __obj.updateDynamic("intersectionRect")(intersectionRect.asInstanceOf[js.Any])
     if (relativeRect != null) __obj.updateDynamic("relativeRect")(relativeRect.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (!js.isUndefined(time)) __obj.updateDynamic("time")(time.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObserveResult]
   }
 }

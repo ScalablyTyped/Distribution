@@ -22,18 +22,18 @@ object Envelope {
     xmin: Double,
     ymax: Double,
     ymin: Double,
-    mmax: Int | Double = null,
-    mmin: Int | Double = null,
+    mmax: js.UndefOr[Double] = js.undefined,
+    mmin: js.UndefOr[Double] = js.undefined,
     spatialReference: SpatialReference = null,
-    zmax: Int | Double = null,
-    zmin: Int | Double = null
+    zmax: js.UndefOr[Double] = js.undefined,
+    zmin: js.UndefOr[Double] = js.undefined
   ): Envelope = {
     val __obj = js.Dynamic.literal(xmax = xmax.asInstanceOf[js.Any], xmin = xmin.asInstanceOf[js.Any], ymax = ymax.asInstanceOf[js.Any], ymin = ymin.asInstanceOf[js.Any])
-    if (mmax != null) __obj.updateDynamic("mmax")(mmax.asInstanceOf[js.Any])
-    if (mmin != null) __obj.updateDynamic("mmin")(mmin.asInstanceOf[js.Any])
+    if (!js.isUndefined(mmax)) __obj.updateDynamic("mmax")(mmax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mmin)) __obj.updateDynamic("mmin")(mmin.get.asInstanceOf[js.Any])
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
-    if (zmax != null) __obj.updateDynamic("zmax")(zmax.asInstanceOf[js.Any])
-    if (zmin != null) __obj.updateDynamic("zmin")(zmin.asInstanceOf[js.Any])
+    if (!js.isUndefined(zmax)) __obj.updateDynamic("zmax")(zmax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zmin)) __obj.updateDynamic("zmin")(zmin.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Envelope]
   }
 }

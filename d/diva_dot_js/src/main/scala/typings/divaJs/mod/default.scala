@@ -1,6 +1,6 @@
 package typings.divaJs.mod
 
-import typings.divaJs.PartialOptionsobjectDatas
+import typings.divaJs.anon.PartialOptionsobjectDatas
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -40,8 +40,8 @@ object ColumnDefinition {
     `type`: String,
     check: String = null,
     collation: String = null,
-    comment: String = null,
-    default: Value = null,
+    comment: js.UndefOr[Null | String] = js.undefined,
+    default: js.UndefOr[Null | Value] = js.undefined,
     deferrable: js.UndefOr[Boolean] = js.undefined,
     deferred: js.UndefOr[Boolean] = js.undefined,
     expressionGenerated: String = null,
@@ -61,22 +61,22 @@ object ColumnDefinition {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (check != null) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
     if (collation != null) __obj.updateDynamic("collation")(collation.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (!js.isUndefined(deferrable)) __obj.updateDynamic("deferrable")(deferrable.asInstanceOf[js.Any])
-    if (!js.isUndefined(deferred)) __obj.updateDynamic("deferred")(deferred.asInstanceOf[js.Any])
+    if (!js.isUndefined(comment)) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (!js.isUndefined(deferrable)) __obj.updateDynamic("deferrable")(deferrable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deferred)) __obj.updateDynamic("deferred")(deferred.get.asInstanceOf[js.Any])
     if (expressionGenerated != null) __obj.updateDynamic("expressionGenerated")(expressionGenerated.asInstanceOf[js.Any])
     if (generated != null) __obj.updateDynamic("generated")(generated.asInstanceOf[js.Any])
     if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
-    if (!js.isUndefined(notNull)) __obj.updateDynamic("notNull")(notNull.asInstanceOf[js.Any])
+    if (!js.isUndefined(notNull)) __obj.updateDynamic("notNull")(notNull.get.asInstanceOf[js.Any])
     if (onDelete != null) __obj.updateDynamic("onDelete")(onDelete.asInstanceOf[js.Any])
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate.asInstanceOf[js.Any])
-    if (!js.isUndefined(primaryKey)) __obj.updateDynamic("primaryKey")(primaryKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(primaryKey)) __obj.updateDynamic("primaryKey")(primaryKey.get.asInstanceOf[js.Any])
     if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
     if (referencesConstraintComment != null) __obj.updateDynamic("referencesConstraintComment")(referencesConstraintComment.asInstanceOf[js.Any])
     if (referencesConstraintName != null) __obj.updateDynamic("referencesConstraintName")(referencesConstraintName.asInstanceOf[js.Any])
     if (sequenceGenerated != null) __obj.updateDynamic("sequenceGenerated")(sequenceGenerated.asInstanceOf[js.Any])
-    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
+    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnDefinition]
   }
 }

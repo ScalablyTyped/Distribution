@@ -1,6 +1,6 @@
 package typings.msRest.mod
 
-import typings.msRest.AnonName
+import typings.msRest.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,7 +29,7 @@ class ServiceClient () extends js.Object {
     * @param {string} managementClientDir - pass the directory of the specific azure management client.
     * @returns {object} packageJsonInfo - "name" and "version" of the desired package.
     */
-  def getPackageJsonInfo(managementClientDir: String): AnonName = js.native
+  def getPackageJsonInfo(managementClientDir: String): Name = js.native
   def sendRequest[TResult](options: PathTemplateBasedRequestPrepareOptions): js.Promise[TResult] = js.native
   def sendRequest[TResult](options: PathTemplateBasedRequestPrepareOptions, callback: ServiceCallback[TResult]): Unit = js.native
   def sendRequest[TResult](options: UrlBasedRequestPrepareOptions): js.Promise[TResult] = js.native

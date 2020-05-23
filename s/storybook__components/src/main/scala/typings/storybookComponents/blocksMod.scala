@@ -9,6 +9,7 @@ import typings.react.mod.TableHTMLAttributes
 import typings.std.HTMLDivElement
 import typings.std.HTMLHeadingElement
 import typings.std.HTMLTableElement
+import typings.storybookComponents.anon.PickDetailedHTMLPropsHTML
 import typings.storybookComponents.colorPaletteMod.ColorProps
 import typings.storybookComponents.descriptionMod.DescriptionProps
 import typings.storybookComponents.iconGalleryMod.IconItemProps

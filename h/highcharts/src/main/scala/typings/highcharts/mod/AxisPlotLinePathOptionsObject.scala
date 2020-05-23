@@ -45,20 +45,20 @@ object AxisPlotLinePathOptionsObject {
   def apply(
     acrossPanes: js.UndefOr[Boolean] = js.undefined,
     force: Boolean | String = null,
-    lineWidth: Int | Double = null,
+    lineWidth: js.UndefOr[Double] = js.undefined,
     old: js.UndefOr[Boolean] = js.undefined,
     reverse: js.UndefOr[Boolean] = js.undefined,
-    translatedValue: Int | Double = null,
-    value: Int | Double = null
+    translatedValue: js.UndefOr[Double] = js.undefined,
+    value: js.UndefOr[Double] = js.undefined
   ): AxisPlotLinePathOptionsObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(acrossPanes)) __obj.updateDynamic("acrossPanes")(acrossPanes.asInstanceOf[js.Any])
+    if (!js.isUndefined(acrossPanes)) __obj.updateDynamic("acrossPanes")(acrossPanes.get.asInstanceOf[js.Any])
     if (force != null) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(old)) __obj.updateDynamic("old")(old.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
-    if (translatedValue != null) __obj.updateDynamic("translatedValue")(translatedValue.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(old)) __obj.updateDynamic("old")(old.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(translatedValue)) __obj.updateDynamic("translatedValue")(translatedValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AxisPlotLinePathOptionsObject]
   }
 }

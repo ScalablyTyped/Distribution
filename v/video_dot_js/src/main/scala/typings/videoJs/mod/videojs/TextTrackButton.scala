@@ -1,6 +1,6 @@
 package typings.videoJs.mod.videojs
 
-import typings.videoJs.AnonInstantiableTextTrackMenuItem
+import typings.videoJs.anon.InstantiableTextTrackMenuItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TextTrackButton extends MenuButton {
   def createItems(items: js.Array[TextTrackMenuItem]): js.Array[TextTrackMenuItem] = js.native
-  def createItems(items: js.Array[TextTrackMenuItem], TrackMenuItem: AnonInstantiableTextTrackMenuItem): js.Array[TextTrackMenuItem] = js.native
+  def createItems(items: js.Array[TextTrackMenuItem], TrackMenuItem: InstantiableTextTrackMenuItem): js.Array[TextTrackMenuItem] = js.native
 }
 

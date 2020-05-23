@@ -28,7 +28,7 @@ object RuleArgs {
     if (assert != null) __obj.updateDynamic("assert")(assert.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (normalize != null) __obj.updateDynamic("normalize")(js.Any.fromFunction1(normalize))
-    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleArgs]
   }
 }

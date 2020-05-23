@@ -31,13 +31,13 @@ object DecompressOptions {
     filter: /* file */ File => Boolean = null,
     map: /* file */ File => File = null,
     plugins: js.Array[_] = null,
-    strip: Int | Double = null
+    strip: js.UndefOr[Double] = js.undefined
   ): DecompressOptions = {
     val __obj = js.Dynamic.literal()
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (map != null) __obj.updateDynamic("map")(js.Any.fromFunction1(map))
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (strip != null) __obj.updateDynamic("strip")(strip.asInstanceOf[js.Any])
+    if (!js.isUndefined(strip)) __obj.updateDynamic("strip")(strip.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecompressOptions]
   }
 }

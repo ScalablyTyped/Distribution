@@ -16,15 +16,15 @@ object UserRefreshClientOptions {
   def apply(
     clientId: String = null,
     clientSecret: String = null,
-    eagerRefreshThresholdMillis: Int | Double = null,
+    eagerRefreshThresholdMillis: js.UndefOr[Double] = js.undefined,
     forceRefreshOnFailure: js.UndefOr[Boolean] = js.undefined,
     refreshToken: String = null
   ): UserRefreshClientOptions = {
     val __obj = js.Dynamic.literal()
     if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
     if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret.asInstanceOf[js.Any])
-    if (eagerRefreshThresholdMillis != null) __obj.updateDynamic("eagerRefreshThresholdMillis")(eagerRefreshThresholdMillis.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceRefreshOnFailure)) __obj.updateDynamic("forceRefreshOnFailure")(forceRefreshOnFailure.asInstanceOf[js.Any])
+    if (!js.isUndefined(eagerRefreshThresholdMillis)) __obj.updateDynamic("eagerRefreshThresholdMillis")(eagerRefreshThresholdMillis.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceRefreshOnFailure)) __obj.updateDynamic("forceRefreshOnFailure")(forceRefreshOnFailure.get.asInstanceOf[js.Any])
     if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserRefreshClientOptions]
   }

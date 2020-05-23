@@ -1,6 +1,6 @@
 package typings.jpm.contextMenuMod
 
-import typings.jpm.AnonAccessKey
+import typings.jpm.anon.AccessKey
 import typings.std.URL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,6 +20,6 @@ trait Item extends ItemMenuSeparator {
 @JSImport("sdk/context-menu", "Item")
 @js.native
 object Item extends js.Object {
-  def apply(options: AnonAccessKey): Item = js.native
+  def apply(options: AccessKey): Item = js.native
 }
 

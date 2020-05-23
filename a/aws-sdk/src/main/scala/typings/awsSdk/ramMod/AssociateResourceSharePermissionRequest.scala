@@ -30,11 +30,11 @@ object AssociateResourceSharePermissionRequest {
     permissionArn: String,
     resourceShareArn: String,
     clientToken: String = null,
-    replace: js.UndefOr[scala.Boolean] = js.undefined
+    replace: js.UndefOr[Boolean] = js.undefined
   ): AssociateResourceSharePermissionRequest = {
     val __obj = js.Dynamic.literal(permissionArn = permissionArn.asInstanceOf[js.Any], resourceShareArn = resourceShareArn.asInstanceOf[js.Any])
     if (clientToken != null) __obj.updateDynamic("clientToken")(clientToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
+    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateResourceSharePermissionRequest]
   }
 }

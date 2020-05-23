@@ -18,14 +18,14 @@ trait ChartAxisFormatLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the font attributes (font name, font size, color, etc.) for a chart axis element.
+    * Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
     *
     * [Api set: ExcelApi 1.1]
     */
   var font: js.UndefOr[ChartFontLoadOptions] = js.undefined
   /**
     *
-    * Represents chart line formatting.
+    * Specifies chart line formatting.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -40,7 +40,7 @@ object ChartAxisFormatLoadOptions {
     line: ChartLineFormatLoadOptions = null
   ): ChartAxisFormatLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartAxisFormatLoadOptions]

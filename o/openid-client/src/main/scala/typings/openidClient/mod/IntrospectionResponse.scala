@@ -1,7 +1,7 @@
 package typings.openidClient.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.openidClient.AnonKey
+import typings.openidClient.anon.X5tS256
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait IntrospectionResponse
   var active: Boolean
   var aud: js.UndefOr[String | js.Array[String]] = js.undefined
   var client_id: js.UndefOr[String] = js.undefined
-  var cnf: js.UndefOr[AnonKey] = js.undefined
+  var cnf: js.UndefOr[X5tS256] = js.undefined
   var exp: js.UndefOr[Double] = js.undefined
   var iat: js.UndefOr[Double] = js.undefined
   var iss: js.UndefOr[String] = js.undefined
@@ -27,12 +27,12 @@ object IntrospectionResponse {
   def apply(
     active: Boolean,
     scope: String,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     aud: String | js.Array[String] = null,
     client_id: String = null,
-    cnf: AnonKey = null,
-    exp: Int | Double = null,
-    iat: Int | Double = null,
+    cnf: X5tS256 = null,
+    exp: js.UndefOr[Double] = js.undefined,
+    iat: js.UndefOr[Double] = js.undefined,
     iss: String = null,
     jti: String = null,
     sid: String = null,
@@ -44,8 +44,8 @@ object IntrospectionResponse {
     if (aud != null) __obj.updateDynamic("aud")(aud.asInstanceOf[js.Any])
     if (client_id != null) __obj.updateDynamic("client_id")(client_id.asInstanceOf[js.Any])
     if (cnf != null) __obj.updateDynamic("cnf")(cnf.asInstanceOf[js.Any])
-    if (exp != null) __obj.updateDynamic("exp")(exp.asInstanceOf[js.Any])
-    if (iat != null) __obj.updateDynamic("iat")(iat.asInstanceOf[js.Any])
+    if (!js.isUndefined(exp)) __obj.updateDynamic("exp")(exp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(iat)) __obj.updateDynamic("iat")(iat.get.asInstanceOf[js.Any])
     if (iss != null) __obj.updateDynamic("iss")(iss.asInstanceOf[js.Any])
     if (jti != null) __obj.updateDynamic("jti")(jti.asInstanceOf[js.Any])
     if (sid != null) __obj.updateDynamic("sid")(sid.asInstanceOf[js.Any])

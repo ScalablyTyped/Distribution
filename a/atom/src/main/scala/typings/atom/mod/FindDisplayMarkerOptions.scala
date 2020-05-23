@@ -61,9 +61,9 @@ object FindDisplayMarkerOptions {
     containsBufferPosition: PointCompatible = null,
     containsBufferRange: RangeCompatible = null,
     endBufferPosition: PointCompatible = null,
-    endBufferRow: Int | Double = null,
+    endBufferRow: js.UndefOr[Double] = js.undefined,
     endScreenPosition: PointCompatible = null,
-    endScreenRow: Int | Double = null,
+    endScreenRow: js.UndefOr[Double] = js.undefined,
     endsInBufferRange: RangeCompatible = null,
     endsInScreenRange: RangeCompatible = null,
     intersectsBufferRange: RangeCompatible = null,
@@ -71,9 +71,9 @@ object FindDisplayMarkerOptions {
     intersectsScreenRange: RangeCompatible = null,
     intersectsScreenRowRange: js.Tuple2[Double, Double] = null,
     startBufferPosition: PointCompatible = null,
-    startBufferRow: Int | Double = null,
+    startBufferRow: js.UndefOr[Double] = js.undefined,
     startScreenPosition: PointCompatible = null,
-    startScreenRow: Int | Double = null,
+    startScreenRow: js.UndefOr[Double] = js.undefined,
     startsInBufferRange: RangeCompatible = null,
     startsInScreenRange: RangeCompatible = null
   ): FindDisplayMarkerOptions = {
@@ -83,9 +83,9 @@ object FindDisplayMarkerOptions {
     if (containsBufferPosition != null) __obj.updateDynamic("containsBufferPosition")(containsBufferPosition.asInstanceOf[js.Any])
     if (containsBufferRange != null) __obj.updateDynamic("containsBufferRange")(containsBufferRange.asInstanceOf[js.Any])
     if (endBufferPosition != null) __obj.updateDynamic("endBufferPosition")(endBufferPosition.asInstanceOf[js.Any])
-    if (endBufferRow != null) __obj.updateDynamic("endBufferRow")(endBufferRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(endBufferRow)) __obj.updateDynamic("endBufferRow")(endBufferRow.get.asInstanceOf[js.Any])
     if (endScreenPosition != null) __obj.updateDynamic("endScreenPosition")(endScreenPosition.asInstanceOf[js.Any])
-    if (endScreenRow != null) __obj.updateDynamic("endScreenRow")(endScreenRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(endScreenRow)) __obj.updateDynamic("endScreenRow")(endScreenRow.get.asInstanceOf[js.Any])
     if (endsInBufferRange != null) __obj.updateDynamic("endsInBufferRange")(endsInBufferRange.asInstanceOf[js.Any])
     if (endsInScreenRange != null) __obj.updateDynamic("endsInScreenRange")(endsInScreenRange.asInstanceOf[js.Any])
     if (intersectsBufferRange != null) __obj.updateDynamic("intersectsBufferRange")(intersectsBufferRange.asInstanceOf[js.Any])
@@ -93,9 +93,9 @@ object FindDisplayMarkerOptions {
     if (intersectsScreenRange != null) __obj.updateDynamic("intersectsScreenRange")(intersectsScreenRange.asInstanceOf[js.Any])
     if (intersectsScreenRowRange != null) __obj.updateDynamic("intersectsScreenRowRange")(intersectsScreenRowRange.asInstanceOf[js.Any])
     if (startBufferPosition != null) __obj.updateDynamic("startBufferPosition")(startBufferPosition.asInstanceOf[js.Any])
-    if (startBufferRow != null) __obj.updateDynamic("startBufferRow")(startBufferRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(startBufferRow)) __obj.updateDynamic("startBufferRow")(startBufferRow.get.asInstanceOf[js.Any])
     if (startScreenPosition != null) __obj.updateDynamic("startScreenPosition")(startScreenPosition.asInstanceOf[js.Any])
-    if (startScreenRow != null) __obj.updateDynamic("startScreenRow")(startScreenRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(startScreenRow)) __obj.updateDynamic("startScreenRow")(startScreenRow.get.asInstanceOf[js.Any])
     if (startsInBufferRange != null) __obj.updateDynamic("startsInBufferRange")(startsInBufferRange.asInstanceOf[js.Any])
     if (startsInScreenRange != null) __obj.updateDynamic("startsInScreenRange")(startsInScreenRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindDisplayMarkerOptions]

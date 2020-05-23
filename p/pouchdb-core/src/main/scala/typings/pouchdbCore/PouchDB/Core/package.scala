@@ -23,8 +23,8 @@ package object Core {
   type DocumentKey = java.lang.String
   type ExistingDocument[Content /* <: js.Object */] = typings.pouchdbCore.PouchDB.Core.Document[Content] with typings.pouchdbCore.PouchDB.Core.RevisionIdMeta
   type NewDocument[Content /* <: js.Object */] = Content
-  type PostDocument[Content /* <: js.Object */] = typings.pouchdbCore.PouchDB.Core.NewDocument[Content] with typings.pouchdbCore.AnonAttachments
-  type PutDocument[Content /* <: js.Object */] = typings.pouchdbCore.PouchDB.Core.PostDocument[Content] with typings.pouchdbCore.PouchDB.Core.ChangesMeta with typings.pouchdbCore.AnonId
+  type PostDocument[Content /* <: js.Object */] = typings.pouchdbCore.PouchDB.Core.NewDocument[Content] with typings.pouchdbCore.anon.Attachments
+  type PutDocument[Content /* <: js.Object */] = typings.pouchdbCore.PouchDB.Core.PostDocument[Content] with typings.pouchdbCore.PouchDB.Core.ChangesMeta with typings.pouchdbCore.anon.Id
   /** Existing doc or just object with `_id` and `_rev` */
   type RemoveDocument = typings.pouchdbCore.PouchDB.Core.IdMeta with typings.pouchdbCore.PouchDB.Core.RevisionIdMeta
   type RevisionDiffOptions = org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]

@@ -26,14 +26,14 @@ object IOptions {
     auto: js.UndefOr[Boolean] = js.undefined,
     driveName: String = null,
     filter: /* value */ IModel => Boolean = null,
-    refreshInterval: Int | Double = null,
+    refreshInterval: js.UndefOr[Double] = js.undefined,
     state: IStateDB[ReadonlyPartialJSONValue] = null
   ): IOptions = {
     val __obj = js.Dynamic.literal(manager = manager.asInstanceOf[js.Any])
-    if (!js.isUndefined(auto)) __obj.updateDynamic("auto")(auto.asInstanceOf[js.Any])
+    if (!js.isUndefined(auto)) __obj.updateDynamic("auto")(auto.get.asInstanceOf[js.Any])
     if (driveName != null) __obj.updateDynamic("driveName")(driveName.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (refreshInterval != null) __obj.updateDynamic("refreshInterval")(refreshInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshInterval)) __obj.updateDynamic("refreshInterval")(refreshInterval.get.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }

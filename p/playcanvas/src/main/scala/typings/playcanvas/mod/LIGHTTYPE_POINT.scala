@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.LIGHTTYPE_POINT
-  * @type {number}
-  * @description Point (local) light source.
+  * Point (local) light source.
   */
 @JSImport("playcanvas", "LIGHTTYPE_POINT")
 @js.native

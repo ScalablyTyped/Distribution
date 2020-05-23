@@ -11,10 +11,10 @@ trait PhotoOptions extends js.Object {
 
 object PhotoOptions {
   @scala.inline
-  def apply(maxHeight: Int | Double = null, maxWidth: Int | Double = null): PhotoOptions = {
+  def apply(maxHeight: js.UndefOr[Double] = js.undefined, maxWidth: js.UndefOr[Double] = js.undefined): PhotoOptions = {
     val __obj = js.Dynamic.literal()
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhotoOptions]
   }
 }

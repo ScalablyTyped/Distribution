@@ -12,11 +12,15 @@ trait ContentLink extends js.Object {
 
 object ContentLink {
   @scala.inline
-  def apply(link: String = null, linkToDestination: String = null, linkToPage: Int | Double = null): ContentLink = {
+  def apply(
+    link: String = null,
+    linkToDestination: String = null,
+    linkToPage: js.UndefOr[Double] = js.undefined
+  ): ContentLink = {
     val __obj = js.Dynamic.literal()
     if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
     if (linkToDestination != null) __obj.updateDynamic("linkToDestination")(linkToDestination.asInstanceOf[js.Any])
-    if (linkToPage != null) __obj.updateDynamic("linkToPage")(linkToPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkToPage)) __obj.updateDynamic("linkToPage")(linkToPage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentLink]
   }
 }

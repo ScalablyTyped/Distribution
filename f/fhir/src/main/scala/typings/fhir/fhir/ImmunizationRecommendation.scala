@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Guidance or advice relating to an immunization
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait ImmunizationRecommendation extends DomainResource {
   /**
     * Business identifier

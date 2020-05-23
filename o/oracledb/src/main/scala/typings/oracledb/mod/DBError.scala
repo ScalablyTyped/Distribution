@@ -27,10 +27,14 @@ trait DBError extends js.Object {
 
 object DBError {
   @scala.inline
-  def apply(message: String, errorNum: Int | Double = null, offset: Int | Double = null): DBError = {
+  def apply(
+    message: String,
+    errorNum: js.UndefOr[Double] = js.undefined,
+    offset: js.UndefOr[Double] = js.undefined
+  ): DBError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-    if (errorNum != null) __obj.updateDynamic("errorNum")(errorNum.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorNum)) __obj.updateDynamic("errorNum")(errorNum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBError]
   }
 }

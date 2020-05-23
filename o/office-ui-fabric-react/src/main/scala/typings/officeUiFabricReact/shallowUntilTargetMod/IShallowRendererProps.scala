@@ -16,8 +16,8 @@ object IShallowRendererProps {
     lifecycleExperimental: js.UndefOr[Boolean] = js.undefined
   ): IShallowRendererProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableLifecycleMethods)) __obj.updateDynamic("disableLifecycleMethods")(disableLifecycleMethods.asInstanceOf[js.Any])
-    if (!js.isUndefined(lifecycleExperimental)) __obj.updateDynamic("lifecycleExperimental")(lifecycleExperimental.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableLifecycleMethods)) __obj.updateDynamic("disableLifecycleMethods")(disableLifecycleMethods.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lifecycleExperimental)) __obj.updateDynamic("lifecycleExperimental")(lifecycleExperimental.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShallowRendererProps]
   }
 }

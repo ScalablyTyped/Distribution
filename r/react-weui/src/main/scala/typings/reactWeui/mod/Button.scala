@@ -1,6 +1,6 @@
 package typings.reactWeui.mod
 
-import typings.reactWeui.AnonDisabled
+import typings.reactWeui.anon.Disabled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ class Button protected () extends js.Object {
 @JSImport("react-weui", "Button")
 @js.native
 object Button extends js.Object {
-  var defaultProps: AnonDisabled = js.native
+  var defaultProps: Disabled = js.native
   @js.native
   object propTypes extends js.Object {
     @js.native

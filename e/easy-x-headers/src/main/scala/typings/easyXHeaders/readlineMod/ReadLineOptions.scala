@@ -23,7 +23,7 @@ object ReadLineOptions {
   ): ReadLineOptions = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
     if (completer != null) __obj.updateDynamic("completer")(completer.asInstanceOf[js.Any])
-    if (!js.isUndefined(terminal)) __obj.updateDynamic("terminal")(terminal.asInstanceOf[js.Any])
+    if (!js.isUndefined(terminal)) __obj.updateDynamic("terminal")(terminal.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadLineOptions]
   }
 }

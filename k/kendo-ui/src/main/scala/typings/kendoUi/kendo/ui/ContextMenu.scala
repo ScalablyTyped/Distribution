@@ -7,11 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.ContextMenu")
 @js.native
-class ContextMenu protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: ContextMenuOptions) = this()
+trait ContextMenu extends Widget {
   var dataSource: DataSource = js.native
   @JSName("options")
   var options_ContextMenu: ContextMenuOptions = js.native
@@ -40,13 +37,5 @@ class ContextMenu protected () extends Widget {
   def remove(element: String): ContextMenu = js.native
   def remove(element: JQuery): ContextMenu = js.native
   def remove(element: Element): ContextMenu = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.ContextMenu")
-@js.native
-object ContextMenu extends js.Object {
-  var fn: ContextMenu = js.native
-  def extend(proto: js.Object): ContextMenu = js.native
 }
 

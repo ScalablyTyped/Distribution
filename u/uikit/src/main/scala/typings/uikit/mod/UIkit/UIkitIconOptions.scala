@@ -11,10 +11,10 @@ trait UIkitIconOptions extends js.Object {
 
 object UIkitIconOptions {
   @scala.inline
-  def apply(icon: String = null, ratio: Int | Double = null): UIkitIconOptions = {
+  def apply(icon: String = null, ratio: js.UndefOr[Double] = js.undefined): UIkitIconOptions = {
     val __obj = js.Dynamic.literal()
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
+    if (!js.isUndefined(ratio)) __obj.updateDynamic("ratio")(ratio.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIkitIconOptions]
   }
 }

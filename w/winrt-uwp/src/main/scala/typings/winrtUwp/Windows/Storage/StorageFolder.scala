@@ -21,9 +21,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Manages folders and their contents and provides information about them. */
-@JSGlobal("Windows.Storage.StorageFolder")
 @js.native
-abstract class StorageFolder () extends js.Object {
+trait StorageFolder extends js.Object {
   /** Gets the attributes of the current folder. */
   var attributes: FileAttributes = js.native
   /** Gets the date and time that the current folder was created. */
@@ -298,17 +297,5 @@ abstract class StorageFolder () extends js.Object {
     * @return When this method completes successfully, it returns an IStorageItem that represents the specified file or folder. If the specified file or folder is not found, this method returns null instead of raising an exception.
     */
   def tryGetItemAsync(name: String): IPromiseWithIAsyncOperation[IStorageItem] = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Storage.StorageFolder")
-@js.native
-object StorageFolder extends js.Object {
-  /**
-    * Gets the folder that has the specified absolute path in the file system.
-    * @param path The absolute path in the file system (not the Uri) of the folder to get.
-    * @return When this method completes successfully, it returns a StorageFolder that represents the specified folder.
-    */
-  def getFolderFromPathAsync(path: String): IPromiseWithIAsyncOperation[StorageFolder] = js.native
 }
 

@@ -7,45 +7,42 @@ import scala.scalajs.js.annotation._
 
 trait IgPivotViewDataSourceOptionsFlatDataOptions
   extends /**
-	 * Option for IgPivotViewDataSourceOptionsFlatDataOptions
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   /**
-  	 * Specifies any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself.
-  	 */
+    * Specifies any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself.
+    */
   var dataSource: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Explicitly set data source type (such as "json"). Please refer to the documentation of $.ig.DataSource and its type property.
-  	 */
+    * Explicitly set data source type (such as "json"). Please refer to the documentation of $.ig.DataSource and its type property.
+    */
   var dataSourceType: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies a remote URL accepted by $.ig.DataSource in order to request data from it.
-  	 */
+    * Specifies a remote URL accepted by $.ig.DataSource in order to request data from it.
+    */
   var dataSourceUrl: js.UndefOr[String] = js.undefined
   /**
-  	 * Optional="false" An object containing processing instructions for the $.ig.DataSource data.
-  	 */
+    * Optional="false" An object containing processing instructions for the $.ig.DataSource data.
+    */
   var metadata: js.UndefOr[IgPivotViewDataSourceOptionsFlatDataOptionsMetadata] = js.undefined
   /**
-  	 * See $.ig.DataSource.
-  	 * string  Specifies the name of the property in which data records are held if the response is wrapped.
-  	 * null  Option is ignored.
-  	 */
+    * See $.ig.DataSource.
+    * string  Specifies the name of the property in which data records are held if the response is wrapped.
+    * null  Option is ignored.
+    */
   var responseDataKey: js.UndefOr[String] = js.undefined
   /**
-  	 * String  Explicitly set data source type (such as "json"). Please refer to the documentation of $.ig.DataSource and its type property.
-  	 * null  Option is ignored.
-  	 */
+    * String  Explicitly set data source type (such as "json"). Please refer to the documentation of $.ig.DataSource and its type property.
+    * null  Option is ignored.
+    */
   var responseDataType: js.UndefOr[String] = js.undefined
 }
 
 object IgPivotViewDataSourceOptionsFlatDataOptions {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for IgPivotViewDataSourceOptionsFlatDataOptions
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     dataSource: js.Any = null,
     dataSourceType: String = null,
     dataSourceUrl: String = null,

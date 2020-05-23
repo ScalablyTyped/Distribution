@@ -29,7 +29,7 @@ object BaseLayerView2DProperties {
     val __obj = js.Dynamic.literal()
     if (tiles != null) __obj.updateDynamic("tiles")(tiles.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseLayerView2DProperties]
   }
 }

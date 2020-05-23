@@ -48,19 +48,19 @@ object IHeatMapLayerOptions {
   @scala.inline
   def apply(
     colorGradient: IDictionary[String] = null,
-    intensity: Int | Double = null,
-    opacity: Int | Double = null,
-    radius: Int | Double = null,
+    intensity: js.UndefOr[Double] = js.undefined,
+    opacity: js.UndefOr[Double] = js.undefined,
+    radius: js.UndefOr[Double] = js.undefined,
     unit: meters | pixel = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): IHeatMapLayerOptions = {
     val __obj = js.Dynamic.literal()
     if (colorGradient != null) __obj.updateDynamic("colorGradient")(colorGradient.asInstanceOf[js.Any])
-    if (intensity != null) __obj.updateDynamic("intensity")(intensity.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(intensity)) __obj.updateDynamic("intensity")(intensity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHeatMapLayerOptions]
   }
 }

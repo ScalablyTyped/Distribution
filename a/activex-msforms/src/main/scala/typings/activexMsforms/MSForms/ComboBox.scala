@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSForms.ComboBox")
 @js.native
-class ComboBox protected () extends js.Object {
+trait ComboBox extends js.Object {
   var AutoSize: Boolean = js.native
   var AutoTab: Boolean = js.native
   var AutoWordSelect: Boolean = js.native

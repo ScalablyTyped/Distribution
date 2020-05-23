@@ -2,7 +2,7 @@ package typings.jsData.mapperMod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import typings.jsData.TypeofRecord
+import typings.jsData.anon.TypeofRecord
 import typings.jsData.jsDataStrings.skip
 import typings.jsData.schemaMod.PropertyDefinition
 import typings.jsData.schemaMod.SchemaDefinition
@@ -117,7 +117,7 @@ trait MapperOpts
 object MapperOpts {
   @scala.inline
   def apply(
-    StringDictionary: /* customAttr */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     _adapters: js.Object = null,
     applyDefaults: js.UndefOr[Boolean] = js.undefined,
     applySchema: js.UndefOr[Boolean] = js.undefined,
@@ -144,27 +144,27 @@ object MapperOpts {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (_adapters != null) __obj.updateDynamic("_adapters")(_adapters.asInstanceOf[js.Any])
-    if (!js.isUndefined(applyDefaults)) __obj.updateDynamic("applyDefaults")(applyDefaults.asInstanceOf[js.Any])
-    if (!js.isUndefined(applySchema)) __obj.updateDynamic("applySchema")(applySchema.asInstanceOf[js.Any])
+    if (!js.isUndefined(applyDefaults)) __obj.updateDynamic("applyDefaults")(applyDefaults.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(applySchema)) __obj.updateDynamic("applySchema")(applySchema.get.asInstanceOf[js.Any])
     if (defaultAdapter != null) __obj.updateDynamic("defaultAdapter")(defaultAdapter.asInstanceOf[js.Any])
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
     if (idAttribute != null) __obj.updateDynamic("idAttribute")(idAttribute.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepChangeHistory)) __obj.updateDynamic("keepChangeHistory")(keepChangeHistory.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepChangeHistory)) __obj.updateDynamic("keepChangeHistory")(keepChangeHistory.get.asInstanceOf[js.Any])
     if (mapperClass != null) __obj.updateDynamic("mapperClass")(mapperClass.asInstanceOf[js.Any])
     if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(noValidate)) __obj.updateDynamic("noValidate")(noValidate.asInstanceOf[js.Any])
-    if (!js.isUndefined(notify)) __obj.updateDynamic("notify")(notify.asInstanceOf[js.Any])
+    if (!js.isUndefined(noValidate)) __obj.updateDynamic("noValidate")(noValidate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(notify)) __obj.updateDynamic("notify")(notify.get.asInstanceOf[js.Any])
     if (onConflict != null) __obj.updateDynamic("onConflict")(onConflict.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.get.asInstanceOf[js.Any])
     if (recordClass != null) __obj.updateDynamic("recordClass")(recordClass.asInstanceOf[js.Any])
     if (relations != null) __obj.updateDynamic("relations")(relations.asInstanceOf[js.Any])
     if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateOnSet)) __obj.updateDynamic("validateOnSet")(validateOnSet.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateOnSet)) __obj.updateDynamic("validateOnSet")(validateOnSet.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapperOpts]
   }
 }

@@ -1,6 +1,6 @@
 package typings.aliApp.my
 
-import typings.aliApp.AnonErrMsg
+import typings.aliApp.anon.ErrMsg
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 trait SaveImageOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")
-  var success_SaveImageOptions: js.UndefOr[js.Function1[/* res */ AnonErrMsg, Unit]] = js.undefined
+  var success_SaveImageOptions: js.UndefOr[js.Function1[/* res */ ErrMsg, Unit]] = js.undefined
   /**
-  		 * 要保存的图片链接
-  		 */
+    * 要保存的图片链接
+    */
   var url: String
 }
 
@@ -21,7 +21,7 @@ object SaveImageOptions {
     url: String,
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
-    success: /* res */ AnonErrMsg => Unit = null
+    success: /* res */ ErrMsg => Unit = null
   ): SaveImageOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))

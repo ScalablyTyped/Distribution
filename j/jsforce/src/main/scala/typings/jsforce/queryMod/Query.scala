@@ -3,8 +3,8 @@ package typings.jsforce.queryMod
 import typings.jsforce.jsforceStrings.ASC
 import typings.jsforce.jsforceStrings.DESC
 import typings.jsforce.recordResultMod.RecordResult
-import typings.node.AnonEnd
 import typings.node.NodeJS.WritableStream
+import typings.node.anon.End
 import typings.node.streamMod.Readable
 import typings.std.Error
 import typings.std.Promise
@@ -51,7 +51,7 @@ class Query[T] ()
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T): T = js.native
   /* InferMemberOverrides */
-  override def pipe[T /* <: WritableStream */](destination: T, options: AnonEnd): T = js.native
+  override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
   def run(): Query[T] = js.native
   def run(options: ExecuteOptions): Query[T] = js.native
   def run(options: ExecuteOptions, callback: js.Function2[/* err */ Error, /* records */ js.Array[T], Unit]): Query[T] = js.native

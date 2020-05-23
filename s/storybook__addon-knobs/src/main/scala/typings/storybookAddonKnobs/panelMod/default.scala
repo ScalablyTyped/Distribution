@@ -1,6 +1,6 @@
 package typings.storybookAddonKnobs.panelMod
 
-import typings.storybookAddonKnobs.AnonActive
+import typings.storybookAddonKnobs.anon.Active
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +14,6 @@ class default () extends KnobPanel
 @js.native
 object default extends js.Object {
   var defaultProps: KnobPanelProps = js.native
-  var propTypes: AnonActive = js.native
+  var propTypes: Active = js.native
 }
 

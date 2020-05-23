@@ -8,6 +8,6 @@ package object formMod {
   type RenderProps = js.Function2[
     /* values */ typings.rcFieldForm.interfaceMod.Store, 
     /* form */ typings.rcFieldForm.interfaceMod.FormInstance, 
-    typings.react.mod._Global_.JSX.Element | typings.react.mod.ReactNode
+    typings.react.mod.global.JSX.Element | typings.react.mod.ReactNode
   ]
 }

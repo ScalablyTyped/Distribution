@@ -13,8 +13,8 @@ object TimelineItemsAlwaysDraggableOption {
   @scala.inline
   def apply(item: js.UndefOr[Boolean] = js.undefined, range: js.UndefOr[Boolean] = js.undefined): TimelineItemsAlwaysDraggableOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(item)) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (!js.isUndefined(range)) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (!js.isUndefined(item)) __obj.updateDynamic("item")(item.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(range)) __obj.updateDynamic("range")(range.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineItemsAlwaysDraggableOption]
   }
 }

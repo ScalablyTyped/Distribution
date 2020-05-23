@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo-engine-reporting-protobuf
 
-Typings are for version 0.4.4
+Typings are for version 0.5.1-alpha.1
 
 ## Library description:
 Protobuf format for Apollo Engine

@@ -57,10 +57,9 @@ object HighlighterProps {
   def apply(
     searchWords: js.Array[String],
     textToHighlight: String,
-    StringDictionary: /** Allows to pass through any parameter to wrapped component */
-  /* index */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     activeClassName: String = null,
-    activeIndex: Int | Double = null,
+    activeIndex: js.UndefOr[Double] = js.undefined,
     activeStyle: CSSProperties = null,
     autoEscape: js.UndefOr[Boolean] = js.undefined,
     caseSensitive: js.UndefOr[Boolean] = js.undefined,
@@ -76,10 +75,10 @@ object HighlighterProps {
     val __obj = js.Dynamic.literal(searchWords = searchWords.asInstanceOf[js.Any], textToHighlight = textToHighlight.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (activeClassName != null) __obj.updateDynamic("activeClassName")(activeClassName.asInstanceOf[js.Any])
-    if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeIndex)) __obj.updateDynamic("activeIndex")(activeIndex.get.asInstanceOf[js.Any])
     if (activeStyle != null) __obj.updateDynamic("activeStyle")(activeStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoEscape)) __obj.updateDynamic("autoEscape")(autoEscape.asInstanceOf[js.Any])
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoEscape)) __obj.updateDynamic("autoEscape")(autoEscape.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (findChunks != null) __obj.updateDynamic("findChunks")(js.Any.fromFunction1(findChunks))
     if (highlightClassName != null) __obj.updateDynamic("highlightClassName")(highlightClassName.asInstanceOf[js.Any])

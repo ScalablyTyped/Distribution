@@ -22,13 +22,13 @@ trait CreateIntersectionObserverOptions extends js.Object {
 object CreateIntersectionObserverOptions {
   @scala.inline
   def apply(
-    initialRatio: Int | Double = null,
+    initialRatio: js.UndefOr[Double] = js.undefined,
     selectAll: js.UndefOr[Boolean] = js.undefined,
     thresholds: js.Array[_] = null
   ): CreateIntersectionObserverOptions = {
     val __obj = js.Dynamic.literal()
-    if (initialRatio != null) __obj.updateDynamic("initialRatio")(initialRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectAll)) __obj.updateDynamic("selectAll")(selectAll.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialRatio)) __obj.updateDynamic("initialRatio")(initialRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectAll)) __obj.updateDynamic("selectAll")(selectAll.get.asInstanceOf[js.Any])
     if (thresholds != null) __obj.updateDynamic("thresholds")(thresholds.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateIntersectionObserverOptions]
   }

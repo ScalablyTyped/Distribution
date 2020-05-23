@@ -15,18 +15,18 @@ trait RetryOptions extends js.Object {
 object RetryOptions {
   @scala.inline
   def apply(
-    factor: Int | Double = null,
-    maxTimeout: Int | Double = null,
-    minTimeout: Int | Double = null,
+    factor: js.UndefOr[Double] = js.undefined,
+    maxTimeout: js.UndefOr[Double] = js.undefined,
+    minTimeout: js.UndefOr[Double] = js.undefined,
     randomize: js.UndefOr[Boolean] = js.undefined,
-    retries: Int | Double = null
+    retries: js.UndefOr[Double] = js.undefined
   ): RetryOptions = {
     val __obj = js.Dynamic.literal()
-    if (factor != null) __obj.updateDynamic("factor")(factor.asInstanceOf[js.Any])
-    if (maxTimeout != null) __obj.updateDynamic("maxTimeout")(maxTimeout.asInstanceOf[js.Any])
-    if (minTimeout != null) __obj.updateDynamic("minTimeout")(minTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(randomize)) __obj.updateDynamic("randomize")(randomize.asInstanceOf[js.Any])
-    if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
+    if (!js.isUndefined(factor)) __obj.updateDynamic("factor")(factor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTimeout)) __obj.updateDynamic("maxTimeout")(maxTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minTimeout)) __obj.updateDynamic("minTimeout")(minTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(randomize)) __obj.updateDynamic("randomize")(randomize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retries)) __obj.updateDynamic("retries")(retries.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetryOptions]
   }
 }

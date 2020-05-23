@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,10 +19,15 @@ trait Object extends js.Object {
   def propertyIsEnumerable(v: PropertyKey): scala.Boolean
 }
 
-/**
-  * Provides functionality common to all JavaScript objects.
-  */
-@JSGlobal("Object")
-@js.native
-object Object extends TopLevel[ObjectConstructor]
+object Object {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: PropertyKey => scala.Boolean,
+    propertyIsEnumerable: PropertyKey => scala.Boolean
+  ): Object = {
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    __obj.asInstanceOf[Object]
+  }
+}
 

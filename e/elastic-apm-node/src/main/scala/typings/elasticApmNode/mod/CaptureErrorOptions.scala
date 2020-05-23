@@ -28,18 +28,18 @@ object CaptureErrorOptions {
     request: IncomingMessage = null,
     response: ServerResponse = null,
     tags: Labels = null,
-    timestamp: Int | Double = null,
+    timestamp: js.UndefOr[Double] = js.undefined,
     user: UserObject = null
   ): CaptureErrorOptions = {
     val __obj = js.Dynamic.literal()
     if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
-    if (!js.isUndefined(handled)) __obj.updateDynamic("handled")(handled.asInstanceOf[js.Any])
+    if (!js.isUndefined(handled)) __obj.updateDynamic("handled")(handled.get.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
     if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp.get.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptureErrorOptions]
   }

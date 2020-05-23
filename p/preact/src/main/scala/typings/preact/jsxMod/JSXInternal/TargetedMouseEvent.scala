@@ -1,7 +1,7 @@
 package typings.preact.jsxMod.JSXInternal
 
 import typings.std.EventTarget
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,7 +38,7 @@ trait TargetedMouseEvent[Target /* <: EventTarget */] extends js.Object {
     /* typeArg */ String, 
     /* canBubbleArg */ Boolean, 
     /* cancelableArg */ Boolean, 
-    /* viewArg */ Window_, 
+    /* viewArg */ Window, 
     /* detailArg */ Double, 
     /* screenXArg */ Double, 
     /* screenYArg */ Double, 
@@ -75,7 +75,7 @@ trait TargetedMouseEvent[Target /* <: EventTarget */] extends js.Object {
   var target: js.UndefOr[EventTarget] = js.native
   var timeStamp: Double = js.native
   var `type`: String = js.native
-  var view: js.UndefOr[Window_] = js.native
+  var view: js.UndefOr[Window] = js.native
   var which: Double = js.native
   var x: Double = js.native
   var y: Double = js.native
@@ -86,7 +86,7 @@ trait TargetedMouseEvent[Target /* <: EventTarget */] extends js.Object {
     typeArg: String,
     canBubbleArg: Boolean,
     cancelableArg: Boolean,
-    viewArg: Window_,
+    viewArg: Window,
     detailArg: Double,
     screenXArg: Double,
     screenYArg: Double,

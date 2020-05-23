@@ -19,7 +19,7 @@ object path {
   @scala.inline
   def apply(
     fill: String = null,
-    fillOpacity: Int | Double = null,
+    fillOpacity: js.UndefOr[Double] = js.undefined,
     globalCompositeOperation: String = null,
     opacity: String | Double = null,
     shadowBlur: String | Double = null,
@@ -27,11 +27,11 @@ object path {
     shadowOffsetX: String | Double = null,
     shadowOffsetY: String | Double = null,
     stroke: String | Double = null,
-    strokeOpacity: Int | Double = null
+    strokeOpacity: js.UndefOr[Double] = js.undefined
   ): path = {
     val __obj = js.Dynamic.literal()
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(fillOpacity)) __obj.updateDynamic("fillOpacity")(fillOpacity.get.asInstanceOf[js.Any])
     if (globalCompositeOperation != null) __obj.updateDynamic("globalCompositeOperation")(globalCompositeOperation.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (shadowBlur != null) __obj.updateDynamic("shadowBlur")(shadowBlur.asInstanceOf[js.Any])
@@ -39,7 +39,7 @@ object path {
     if (shadowOffsetX != null) __obj.updateDynamic("shadowOffsetX")(shadowOffsetX.asInstanceOf[js.Any])
     if (shadowOffsetY != null) __obj.updateDynamic("shadowOffsetY")(shadowOffsetY.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(strokeOpacity)) __obj.updateDynamic("strokeOpacity")(strokeOpacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[path]
   }
 }

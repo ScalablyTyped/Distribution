@@ -1,7 +1,7 @@
 package typings.jupyterlabServices.sessionManagerMod
 
-import typings.jupyterlabServices.OmitIOptionsconnectToKern
-import typings.jupyterlabServices.OmitIOptionsmodelconnectT
+import typings.jupyterlabServices.anon.OmitIOptionsconnectToKern
+import typings.jupyterlabServices.anon.OmitIOptionsmodelconnectT
 import typings.jupyterlabServices.basemanagerMod.BaseManager
 import typings.jupyterlabServices.sessionManagerMod.SessionManager.IOptions
 import typings.jupyterlabServices.sessionSessionMod.IModel
@@ -14,7 +14,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.luminoDisposable.mod.IDisposable because Already inherited
 - typings.jupyterlabServices.sessionSessionMod.IManager because var conflicts: connectionFailure, isDisposed, isReady, ready, serverSettings. Inlined runningChanged, running, startNew, startNew, findById, findByPath, connectTo, shutdown, shutdownAll, refreshRunning, stopIfNeeded */ @JSImport("@jupyterlab/services/lib/session/manager", "SessionManager")
 @js.native

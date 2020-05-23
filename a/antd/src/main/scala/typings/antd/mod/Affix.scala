@@ -1,7 +1,8 @@
 package typings.antd.mod
 
-import typings.antd.AnonTarget
 import typings.antd.affixMod.default
+import typings.antd.configProviderContextMod.ConfigConsumerProps
+import typings.react.mod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +15,6 @@ class Affix () extends default
 @JSImport("antd", "Affix")
 @js.native
 object Affix extends js.Object {
-  var defaultProps: AnonTarget = js.native
+  var contextType: Context[ConfigConsumerProps] = js.native
 }
 

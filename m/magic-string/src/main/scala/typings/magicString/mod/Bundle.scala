@@ -1,7 +1,7 @@
 package typings.magicString.mod
 
-import typings.magicString.AnonContent
-import typings.magicString.PartialSourceMapOptions
+import typings.magicString.anon.Content
+import typings.magicString.anon.PartialSourceMapOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 class Bundle () extends js.Object {
   def this(options: BundleOptions) = this()
   var indentExclusionRanges: ExclusionRange | js.Array[ExclusionRange] = js.native
-  def addSource(source: AnonContent): Bundle = js.native
+  def addSource(source: Content): Bundle = js.native
   def addSource(source: MagicString): Bundle = js.native
   def append(str: String): Bundle = js.native
   def append(str: String, options: BundleOptions): Bundle = js.native

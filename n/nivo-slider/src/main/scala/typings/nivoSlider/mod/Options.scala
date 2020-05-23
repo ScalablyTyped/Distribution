@@ -32,10 +32,10 @@ object Options {
   def apply(
     afterChange: () => Unit = null,
     afterLoad: () => Unit = null,
-    animSpeed: Int | Double = null,
+    animSpeed: js.UndefOr[Double] = js.undefined,
     beforeChange: () => Unit = null,
-    boxCols: Int | Double = null,
-    boxRows: Int | Double = null,
+    boxCols: js.UndefOr[Double] = js.undefined,
+    boxRows: js.UndefOr[Double] = js.undefined,
     controlNav: js.UndefOr[Boolean] = js.undefined,
     controlNavThumbs: js.UndefOr[Boolean] = js.undefined,
     directionNav: js.UndefOr[Boolean] = js.undefined,
@@ -44,34 +44,34 @@ object Options {
     manualAdvance: js.UndefOr[Boolean] = js.undefined,
     nextText: String = null,
     pauseOnHover: js.UndefOr[Boolean] = js.undefined,
-    pauseTime: Int | Double = null,
+    pauseTime: js.UndefOr[Double] = js.undefined,
     prevText: String = null,
     randomStart: js.UndefOr[Boolean] = js.undefined,
-    slices: Int | Double = null,
+    slices: js.UndefOr[Double] = js.undefined,
     slideshowEnd: () => Unit = null,
-    startSlide: Int | Double = null
+    startSlide: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (afterChange != null) __obj.updateDynamic("afterChange")(js.Any.fromFunction0(afterChange))
     if (afterLoad != null) __obj.updateDynamic("afterLoad")(js.Any.fromFunction0(afterLoad))
-    if (animSpeed != null) __obj.updateDynamic("animSpeed")(animSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(animSpeed)) __obj.updateDynamic("animSpeed")(animSpeed.get.asInstanceOf[js.Any])
     if (beforeChange != null) __obj.updateDynamic("beforeChange")(js.Any.fromFunction0(beforeChange))
-    if (boxCols != null) __obj.updateDynamic("boxCols")(boxCols.asInstanceOf[js.Any])
-    if (boxRows != null) __obj.updateDynamic("boxRows")(boxRows.asInstanceOf[js.Any])
-    if (!js.isUndefined(controlNav)) __obj.updateDynamic("controlNav")(controlNav.asInstanceOf[js.Any])
-    if (!js.isUndefined(controlNavThumbs)) __obj.updateDynamic("controlNavThumbs")(controlNavThumbs.asInstanceOf[js.Any])
-    if (!js.isUndefined(directionNav)) __obj.updateDynamic("directionNav")(directionNav.asInstanceOf[js.Any])
+    if (!js.isUndefined(boxCols)) __obj.updateDynamic("boxCols")(boxCols.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(boxRows)) __obj.updateDynamic("boxRows")(boxRows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(controlNav)) __obj.updateDynamic("controlNav")(controlNav.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(controlNavThumbs)) __obj.updateDynamic("controlNavThumbs")(controlNavThumbs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(directionNav)) __obj.updateDynamic("directionNav")(directionNav.get.asInstanceOf[js.Any])
     if (effect != null) __obj.updateDynamic("effect")(effect.asInstanceOf[js.Any])
     if (lastSlide != null) __obj.updateDynamic("lastSlide")(js.Any.fromFunction0(lastSlide))
-    if (!js.isUndefined(manualAdvance)) __obj.updateDynamic("manualAdvance")(manualAdvance.asInstanceOf[js.Any])
+    if (!js.isUndefined(manualAdvance)) __obj.updateDynamic("manualAdvance")(manualAdvance.get.asInstanceOf[js.Any])
     if (nextText != null) __obj.updateDynamic("nextText")(nextText.asInstanceOf[js.Any])
-    if (!js.isUndefined(pauseOnHover)) __obj.updateDynamic("pauseOnHover")(pauseOnHover.asInstanceOf[js.Any])
-    if (pauseTime != null) __obj.updateDynamic("pauseTime")(pauseTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(pauseOnHover)) __obj.updateDynamic("pauseOnHover")(pauseOnHover.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pauseTime)) __obj.updateDynamic("pauseTime")(pauseTime.get.asInstanceOf[js.Any])
     if (prevText != null) __obj.updateDynamic("prevText")(prevText.asInstanceOf[js.Any])
-    if (!js.isUndefined(randomStart)) __obj.updateDynamic("randomStart")(randomStart.asInstanceOf[js.Any])
-    if (slices != null) __obj.updateDynamic("slices")(slices.asInstanceOf[js.Any])
+    if (!js.isUndefined(randomStart)) __obj.updateDynamic("randomStart")(randomStart.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(slices)) __obj.updateDynamic("slices")(slices.get.asInstanceOf[js.Any])
     if (slideshowEnd != null) __obj.updateDynamic("slideshowEnd")(js.Any.fromFunction0(slideshowEnd))
-    if (startSlide != null) __obj.updateDynamic("startSlide")(startSlide.asInstanceOf[js.Any])
+    if (!js.isUndefined(startSlide)) __obj.updateDynamic("startSlide")(startSlide.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

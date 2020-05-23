@@ -12,7 +12,7 @@ object Options {
   @scala.inline
   def apply(throwNotFound: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(throwNotFound)) __obj.updateDynamic("throwNotFound")(throwNotFound.asInstanceOf[js.Any])
+    if (!js.isUndefined(throwNotFound)) __obj.updateDynamic("throwNotFound")(throwNotFound.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

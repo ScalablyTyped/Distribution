@@ -16,12 +16,12 @@ object ChartPaneRenderEvent {
     isDefaultPrevented: () => Boolean,
     preventDefault: js.Function,
     sender: Chart,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     name: String = null,
     pane: typings.kendoUi.kendo.dataviz.ChartPane = null
   ): ChartPaneRenderEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartPaneRenderEvent]

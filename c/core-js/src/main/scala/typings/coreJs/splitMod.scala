@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/fn/symbol/split", JSImport.Namespace)
 @js.native
 object splitMod
-  extends TopLevel[js.Symbol]
+  extends TopLevel[js.Any]
 

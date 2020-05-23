@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait MetadataRemovingEventUIParam extends js.Object {
   /**
-  	 * Gets a reference to the data.
-  	 */
+    * Gets a reference to the data.
+    */
   var metadata: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * A reference to the dragged element.
-  	 */
+    * A reference to the dragged element.
+    */
   var targetElement: js.UndefOr[String] = js.undefined
 }
 

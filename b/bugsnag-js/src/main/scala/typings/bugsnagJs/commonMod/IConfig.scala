@@ -1,6 +1,6 @@
 package typings.bugsnagJs.commonMod
 
-import typings.bugsnagJs.AnonNotify
+import typings.bugsnagJs.anon.Notify
 import typings.bugsnagJs.clientMod.ILogger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait IConfig extends js.Object {
   var collectUserIp: js.UndefOr[Boolean] = js.undefined
   var consoleBreadcrumbsEnabled: js.UndefOr[Boolean] = js.undefined
   var endpoint: js.UndefOr[String] = js.undefined
-  var endpoints: js.UndefOr[AnonNotify] = js.undefined
+  var endpoints: js.UndefOr[Notify] = js.undefined
   var interactionBreadcrumbsEnabled: js.UndefOr[Boolean] = js.undefined
   var logger: js.UndefOr[ILogger | Null] = js.undefined
   var maxBreadcrumbs: js.UndefOr[Double] = js.undefined
@@ -42,40 +42,40 @@ object IConfig {
     collectUserIp: js.UndefOr[Boolean] = js.undefined,
     consoleBreadcrumbsEnabled: js.UndefOr[Boolean] = js.undefined,
     endpoint: String = null,
-    endpoints: AnonNotify = null,
+    endpoints: Notify = null,
     interactionBreadcrumbsEnabled: js.UndefOr[Boolean] = js.undefined,
-    logger: ILogger = null,
-    maxBreadcrumbs: Int | Double = null,
-    maxEvents: Int | Double = null,
-    metaData: js.Object = null,
+    logger: js.UndefOr[Null | ILogger] = js.undefined,
+    maxBreadcrumbs: js.UndefOr[Double] = js.undefined,
+    maxEvents: js.UndefOr[Double] = js.undefined,
+    metaData: js.UndefOr[Null | js.Object] = js.undefined,
     navigationBreadcrumbsEnabled: js.UndefOr[Boolean] = js.undefined,
     networkBreadcrumbsEnabled: js.UndefOr[Boolean] = js.undefined,
     notifyReleaseStages: js.Array[String] = null,
     releaseStage: String = null,
     sessionEndpoint: String = null,
-    user: js.Object = null
+    user: js.UndefOr[Null | js.Object] = js.undefined
   ): IConfig = {
     val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any])
     if (appVersion != null) __obj.updateDynamic("appVersion")(appVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoBreadcrumbs)) __obj.updateDynamic("autoBreadcrumbs")(autoBreadcrumbs.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoCaptureSessions)) __obj.updateDynamic("autoCaptureSessions")(autoCaptureSessions.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoNotify)) __obj.updateDynamic("autoNotify")(autoNotify.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoBreadcrumbs)) __obj.updateDynamic("autoBreadcrumbs")(autoBreadcrumbs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCaptureSessions)) __obj.updateDynamic("autoCaptureSessions")(autoCaptureSessions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoNotify)) __obj.updateDynamic("autoNotify")(autoNotify.get.asInstanceOf[js.Any])
     if (beforeSend != null) __obj.updateDynamic("beforeSend")(beforeSend.asInstanceOf[js.Any])
-    if (!js.isUndefined(collectUserIp)) __obj.updateDynamic("collectUserIp")(collectUserIp.asInstanceOf[js.Any])
-    if (!js.isUndefined(consoleBreadcrumbsEnabled)) __obj.updateDynamic("consoleBreadcrumbsEnabled")(consoleBreadcrumbsEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(collectUserIp)) __obj.updateDynamic("collectUserIp")(collectUserIp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(consoleBreadcrumbsEnabled)) __obj.updateDynamic("consoleBreadcrumbsEnabled")(consoleBreadcrumbsEnabled.get.asInstanceOf[js.Any])
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
     if (endpoints != null) __obj.updateDynamic("endpoints")(endpoints.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactionBreadcrumbsEnabled)) __obj.updateDynamic("interactionBreadcrumbsEnabled")(interactionBreadcrumbsEnabled.asInstanceOf[js.Any])
-    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
-    if (maxBreadcrumbs != null) __obj.updateDynamic("maxBreadcrumbs")(maxBreadcrumbs.asInstanceOf[js.Any])
-    if (maxEvents != null) __obj.updateDynamic("maxEvents")(maxEvents.asInstanceOf[js.Any])
-    if (metaData != null) __obj.updateDynamic("metaData")(metaData.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigationBreadcrumbsEnabled)) __obj.updateDynamic("navigationBreadcrumbsEnabled")(navigationBreadcrumbsEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(networkBreadcrumbsEnabled)) __obj.updateDynamic("networkBreadcrumbsEnabled")(networkBreadcrumbsEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(interactionBreadcrumbsEnabled)) __obj.updateDynamic("interactionBreadcrumbsEnabled")(interactionBreadcrumbsEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(logger)) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxBreadcrumbs)) __obj.updateDynamic("maxBreadcrumbs")(maxBreadcrumbs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxEvents)) __obj.updateDynamic("maxEvents")(maxEvents.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(metaData)) __obj.updateDynamic("metaData")(metaData.asInstanceOf[js.Any])
+    if (!js.isUndefined(navigationBreadcrumbsEnabled)) __obj.updateDynamic("navigationBreadcrumbsEnabled")(navigationBreadcrumbsEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(networkBreadcrumbsEnabled)) __obj.updateDynamic("networkBreadcrumbsEnabled")(networkBreadcrumbsEnabled.get.asInstanceOf[js.Any])
     if (notifyReleaseStages != null) __obj.updateDynamic("notifyReleaseStages")(notifyReleaseStages.asInstanceOf[js.Any])
     if (releaseStage != null) __obj.updateDynamic("releaseStage")(releaseStage.asInstanceOf[js.Any])
     if (sessionEndpoint != null) __obj.updateDynamic("sessionEndpoint")(sessionEndpoint.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
+    if (!js.isUndefined(user)) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConfig]
   }
 }

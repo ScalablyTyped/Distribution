@@ -15,18 +15,18 @@ trait GroupOptions extends js.Object {
 object GroupOptions {
   @scala.inline
   def apply(
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     overflow: String = null,
-    posx: Int | Double = null,
-    posy: Int | Double = null,
-    width: Int | Double = null
+    posx: js.UndefOr[Double] = js.undefined,
+    posy: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): GroupOptions = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (posx != null) __obj.updateDynamic("posx")(posx.asInstanceOf[js.Any])
-    if (posy != null) __obj.updateDynamic("posy")(posy.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(posx)) __obj.updateDynamic("posx")(posx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(posy)) __obj.updateDynamic("posy")(posy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupOptions]
   }
 }

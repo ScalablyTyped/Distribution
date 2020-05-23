@@ -22,7 +22,7 @@ trait AsyncProps[OptionType /* <: OptionTypeBase */] extends js.Object {
 
 object AsyncProps {
   @scala.inline
-  def apply[OptionType /* <: OptionTypeBase */](
+  def apply[OptionType](
     loadOptions: (String, js.Function1[/* options */ OptionsType[OptionType], Unit]) => js.Promise[_] | Unit,
     cacheOptions: js.Any = null,
     defaultOptions: OptionsType[OptionType] | Boolean = null

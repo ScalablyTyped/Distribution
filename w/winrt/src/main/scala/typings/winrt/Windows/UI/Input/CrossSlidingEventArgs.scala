@@ -6,14 +6,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.Input.CrossSlidingEventArgs")
-@js.native
-class CrossSlidingEventArgs () extends ICrossSlidingEventArgs {
-  /* CompleteClass */
-  override var crossSlidingState: CrossSlidingState = js.native
-  /* CompleteClass */
-  override var pointerDeviceType: PointerDeviceType = js.native
-  /* CompleteClass */
-  override var position: Point = js.native
+trait CrossSlidingEventArgs extends ICrossSlidingEventArgs
+
+object CrossSlidingEventArgs {
+  @scala.inline
+  def apply(crossSlidingState: CrossSlidingState, pointerDeviceType: PointerDeviceType, position: Point): CrossSlidingEventArgs = {
+    val __obj = js.Dynamic.literal(crossSlidingState = crossSlidingState.asInstanceOf[js.Any], pointerDeviceType = pointerDeviceType.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CrossSlidingEventArgs]
+  }
 }
 

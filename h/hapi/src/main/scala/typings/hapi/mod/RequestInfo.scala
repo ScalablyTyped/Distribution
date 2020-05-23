@@ -1,6 +1,6 @@
 package typings.hapi.mod
 
-import typings.hapi.AnonIsOriginMatch
+import typings.hapi.anon.IsOriginMatch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait RequestInfo extends js.Object {
   /** request processing completion timestamp (0 is still processing). */
   var completed: Double
   /** if CORS is enabled for the route, contains the following: */
-  var cors: AnonIsOriginMatch
+  var cors: IsOriginMatch
   /** content of the HTTP 'Host' header (e.g. 'example.com:8080'). */
   var host: String
   /** the hostname part of the 'Host' header (e.g. 'example.com'). */
@@ -35,7 +35,7 @@ object RequestInfo {
   def apply(
     acceptEncoding: String,
     completed: Double,
-    cors: AnonIsOriginMatch,
+    cors: IsOriginMatch,
     host: String,
     hostname: String,
     id: String,

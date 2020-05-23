@@ -22,7 +22,7 @@ object componentMod extends js.Object {
     @JSName("$apply")
     def $apply(fn: js.Function0[Unit]): Unit = js.native
     @JSName("$getComponent")
-    def $getComponent(com: js.Any): js.Any = js.native
+    def $getComponent(com_ : js.Any): js.Any = js.native
     @JSName("$init")
     def $init($wxpage: js.Any, $root: js.Any, $parent: js.Any): Unit = js.native
     @JSName("$initMixins")

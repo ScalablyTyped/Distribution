@@ -40,11 +40,11 @@ object EndpointConfigurationProductionVariant {
     modelName: String,
     variantName: String,
     acceleratorType: String = null,
-    initialVariantWeight: Int | Double = null
+    initialVariantWeight: js.UndefOr[Double] = js.undefined
   ): EndpointConfigurationProductionVariant = {
     val __obj = js.Dynamic.literal(initialInstanceCount = initialInstanceCount.asInstanceOf[js.Any], instanceType = instanceType.asInstanceOf[js.Any], modelName = modelName.asInstanceOf[js.Any], variantName = variantName.asInstanceOf[js.Any])
     if (acceleratorType != null) __obj.updateDynamic("acceleratorType")(acceleratorType.asInstanceOf[js.Any])
-    if (initialVariantWeight != null) __obj.updateDynamic("initialVariantWeight")(initialVariantWeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialVariantWeight)) __obj.updateDynamic("initialVariantWeight")(initialVariantWeight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointConfigurationProductionVariant]
   }
 }

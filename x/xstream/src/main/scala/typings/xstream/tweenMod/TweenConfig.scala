@@ -19,11 +19,11 @@ object TweenConfig {
     from: Double,
     to: Double,
     ease: (/* x */ Double, /* from */ Double, /* to */ Double) => Double = null,
-    interval: Int | Double = null
+    interval: js.UndefOr[Double] = js.undefined
   ): TweenConfig = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     if (ease != null) __obj.updateDynamic("ease")(js.Any.fromFunction3(ease))
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TweenConfig]
   }
 }

@@ -14,12 +14,17 @@ trait IMarqueeSelectionStyles extends js.Object {
 
 object IMarqueeSelectionStyles {
   @scala.inline
-  def apply(box: IStyle = null, boxFill: IStyle = null, dragMask: IStyle = null, root: IStyle = null): IMarqueeSelectionStyles = {
+  def apply(
+    box: js.UndefOr[Null | IStyle] = js.undefined,
+    boxFill: js.UndefOr[Null | IStyle] = js.undefined,
+    dragMask: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined
+  ): IMarqueeSelectionStyles = {
     val __obj = js.Dynamic.literal()
-    if (box != null) __obj.updateDynamic("box")(box.asInstanceOf[js.Any])
-    if (boxFill != null) __obj.updateDynamic("boxFill")(boxFill.asInstanceOf[js.Any])
-    if (dragMask != null) __obj.updateDynamic("dragMask")(dragMask.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(box)) __obj.updateDynamic("box")(box.asInstanceOf[js.Any])
+    if (!js.isUndefined(boxFill)) __obj.updateDynamic("boxFill")(boxFill.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragMask)) __obj.updateDynamic("dragMask")(dragMask.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMarqueeSelectionStyles]
   }
 }

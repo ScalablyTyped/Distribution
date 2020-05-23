@@ -18,10 +18,14 @@ trait ItemsSliderSettings extends js.Object {
 
 object ItemsSliderSettings {
   @scala.inline
-  def apply(labelSpace: Int | Double = null, strokeWidth: Int | Double = null, ticks: js.Array[_] = null): ItemsSliderSettings = {
+  def apply(
+    labelSpace: js.UndefOr[Double] = js.undefined,
+    strokeWidth: js.UndefOr[Double] = js.undefined,
+    ticks: js.Array[_] = null
+  ): ItemsSliderSettings = {
     val __obj = js.Dynamic.literal()
-    if (labelSpace != null) __obj.updateDynamic("labelSpace")(labelSpace.asInstanceOf[js.Any])
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelSpace)) __obj.updateDynamic("labelSpace")(labelSpace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strokeWidth)) __obj.updateDynamic("strokeWidth")(strokeWidth.get.asInstanceOf[js.Any])
     if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsSliderSettings]
   }

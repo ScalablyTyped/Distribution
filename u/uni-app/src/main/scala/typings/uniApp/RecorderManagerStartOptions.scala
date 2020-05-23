@@ -34,20 +34,20 @@ trait RecorderManagerStartOptions extends js.Object {
 object RecorderManagerStartOptions {
   @scala.inline
   def apply(
-    duration: Int | Double = null,
-    encodeBitRate: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
+    encodeBitRate: js.UndefOr[Double] = js.undefined,
     format: String = null,
-    frameSize: Int | Double = null,
-    numberOfChannels: Int | Double = null,
-    sampleRate: Int | Double = null
+    frameSize: js.UndefOr[Double] = js.undefined,
+    numberOfChannels: js.UndefOr[Double] = js.undefined,
+    sampleRate: js.UndefOr[Double] = js.undefined
   ): RecorderManagerStartOptions = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (encodeBitRate != null) __obj.updateDynamic("encodeBitRate")(encodeBitRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(encodeBitRate)) __obj.updateDynamic("encodeBitRate")(encodeBitRate.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (frameSize != null) __obj.updateDynamic("frameSize")(frameSize.asInstanceOf[js.Any])
-    if (numberOfChannels != null) __obj.updateDynamic("numberOfChannels")(numberOfChannels.asInstanceOf[js.Any])
-    if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(frameSize)) __obj.updateDynamic("frameSize")(frameSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfChannels)) __obj.updateDynamic("numberOfChannels")(numberOfChannels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampleRate)) __obj.updateDynamic("sampleRate")(sampleRate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecorderManagerStartOptions]
   }
 }

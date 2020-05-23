@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the activity is already running and an intent different than the one that launched it was received.
-		 */
+  * Fired when the activity is already running and an intent different than the one that launched it was received.
+  */
 trait ActivityNewintentEvent extends ActivityBaseEvent {
   /**
-  			 * The `Intent` passed to the native `onNewIntent` method.
-  			 */
+    * The `Intent` passed to the native `onNewIntent` method.
+    */
   var intent: Intent
 }
 

@@ -36,18 +36,18 @@ object ApiCache {
   @scala.inline
   def apply(
     apiCachingBehavior: ApiCachingBehavior = null,
-    atRestEncryptionEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    atRestEncryptionEnabled: js.UndefOr[Boolean] = js.undefined,
     status: ApiCacheStatus = null,
-    transitEncryptionEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    ttl: Int | Double = null,
+    transitEncryptionEnabled: js.UndefOr[Boolean] = js.undefined,
+    ttl: js.UndefOr[Long] = js.undefined,
     `type`: ApiCacheType = null
   ): ApiCache = {
     val __obj = js.Dynamic.literal()
     if (apiCachingBehavior != null) __obj.updateDynamic("apiCachingBehavior")(apiCachingBehavior.asInstanceOf[js.Any])
-    if (!js.isUndefined(atRestEncryptionEnabled)) __obj.updateDynamic("atRestEncryptionEnabled")(atRestEncryptionEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(atRestEncryptionEnabled)) __obj.updateDynamic("atRestEncryptionEnabled")(atRestEncryptionEnabled.get.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (!js.isUndefined(transitEncryptionEnabled)) __obj.updateDynamic("transitEncryptionEnabled")(transitEncryptionEnabled.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitEncryptionEnabled)) __obj.updateDynamic("transitEncryptionEnabled")(transitEncryptionEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiCache]
   }

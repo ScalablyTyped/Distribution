@@ -33,7 +33,7 @@ object ProcessPaymentOptions {
     if (ext_auth_success_uri != null) __obj.updateDynamic("ext_auth_success_uri")(ext_auth_success_uri.asInstanceOf[js.Any])
     if (money_source != null) __obj.updateDynamic("money_source")(money_source.asInstanceOf[js.Any])
     if (test_card != null) __obj.updateDynamic("test_card")(test_card.asInstanceOf[js.Any])
-    if (!js.isUndefined(test_payment)) __obj.updateDynamic("test_payment")(test_payment.asInstanceOf[js.Any])
+    if (!js.isUndefined(test_payment)) __obj.updateDynamic("test_payment")(test_payment.get.asInstanceOf[js.Any])
     if (test_result != null) __obj.updateDynamic("test_result")(test_result.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessPaymentOptions]
   }

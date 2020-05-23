@@ -6,19 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.m.TableSelectDialog")
 @js.native
-class TableSelectDialog protected () extends Control {
-  /**
-    * Constructor for a new TableSelectDialog.Accepts an object literal <code>mSettings</code> that
-    * defines initialproperty values, aggregated and associated objects as well as event handlers.See
-    * {@link sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the
-    * settings object.
-    * @param sId ID for the new control, generated automatically if no ID is given
-    * @param mSettings Initial settings for the new control
-    */
-  def this(sId: String) = this()
-  def this(sId: String, mSettings: js.Any) = this()
+trait TableSelectDialog extends Control {
   /**
     * Sets the binding context for the internal table AND the current control so that both controls can be
     * used with the context.

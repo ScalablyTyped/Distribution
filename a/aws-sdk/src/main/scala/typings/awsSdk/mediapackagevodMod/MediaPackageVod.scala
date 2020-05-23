@@ -170,5 +170,41 @@ trait MediaPackageVod extends Service {
     params: ListPackagingGroupsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPackagingGroupsResponse, Unit]
   ): Request[ListPackagingGroupsResponse, AWSError] = js.native
+  /**
+    * List tags for a given MediaPackage VOD resource
+    */
+  def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
+  def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
+  /**
+    * List tags for a given MediaPackage VOD resource
+    */
+  def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResponse, AWSError] = js.native
+  def listTagsForResource(
+    params: ListTagsForResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
+  ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  /**
+    * Set tags for a given MediaPackage VOD resource
+    */
+  def tagResource(): Request[js.Object, AWSError] = js.native
+  def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Set tags for a given MediaPackage VOD resource
+    */
+  def tagResource(params: TagResourceRequest): Request[js.Object, AWSError] = js.native
+  def tagResource(params: TagResourceRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Delete tags for a given MediaPackage VOD resource
+    */
+  def untagResource(): Request[js.Object, AWSError] = js.native
+  def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Delete tags for a given MediaPackage VOD resource
+    */
+  def untagResource(params: UntagResourceRequest): Request[js.Object, AWSError] = js.native
+  def untagResource(
+    params: UntagResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
 }
 

@@ -121,8 +121,8 @@ object AgendaProps {
     renderItem: (TItem, Boolean) => ReactNode,
     rowHasChanged: (TItem, TItem) => Boolean,
     displayLoadingIndicator: js.UndefOr[Boolean] = js.undefined,
-    firstDay: Int | Double = null,
-    futureScrollRange: Int | Double = null,
+    firstDay: js.UndefOr[Double] = js.undefined,
+    futureScrollRange: js.UndefOr[Double] = js.undefined,
     hideKnob: js.UndefOr[Boolean] = js.undefined,
     items: AgendaItemsMap[TItem] = null,
     loadItemsForMonth: /* date */ DateObject => Unit = null,
@@ -133,21 +133,21 @@ object AgendaProps {
     onDayChange: /* date */ DateObject => Unit = null,
     onDayPress: /* date */ DateObject => Unit = null,
     onRefresh: () => Unit = null,
-    pastScrollRange: Int | Double = null,
+    pastScrollRange: js.UndefOr[Double] = js.undefined,
     refreshControl: ReactNode = null,
     refreshing: js.UndefOr[Boolean] = js.undefined,
     renderDay: (/* date */ js.UndefOr[DateObject], /* item */ TItem) => ReactNode = null,
     renderEmptyData: () => ReactNode = null,
     renderKnob: () => ReactNode = null,
     selected: TCalendarDate = null,
-    style: StyleProp[ViewStyle] = null,
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     theme: AgendaThemeStyle = null
   ): AgendaProps[TItem] = {
     val __obj = js.Dynamic.literal(renderEmptyDate = js.Any.fromFunction0(renderEmptyDate), renderItem = js.Any.fromFunction2(renderItem), rowHasChanged = js.Any.fromFunction2(rowHasChanged))
-    if (!js.isUndefined(displayLoadingIndicator)) __obj.updateDynamic("displayLoadingIndicator")(displayLoadingIndicator.asInstanceOf[js.Any])
-    if (firstDay != null) __obj.updateDynamic("firstDay")(firstDay.asInstanceOf[js.Any])
-    if (futureScrollRange != null) __obj.updateDynamic("futureScrollRange")(futureScrollRange.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideKnob)) __obj.updateDynamic("hideKnob")(hideKnob.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayLoadingIndicator)) __obj.updateDynamic("displayLoadingIndicator")(displayLoadingIndicator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstDay)) __obj.updateDynamic("firstDay")(firstDay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(futureScrollRange)) __obj.updateDynamic("futureScrollRange")(futureScrollRange.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideKnob)) __obj.updateDynamic("hideKnob")(hideKnob.get.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (loadItemsForMonth != null) __obj.updateDynamic("loadItemsForMonth")(js.Any.fromFunction1(loadItemsForMonth))
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
@@ -157,14 +157,14 @@ object AgendaProps {
     if (onDayChange != null) __obj.updateDynamic("onDayChange")(js.Any.fromFunction1(onDayChange))
     if (onDayPress != null) __obj.updateDynamic("onDayPress")(js.Any.fromFunction1(onDayPress))
     if (onRefresh != null) __obj.updateDynamic("onRefresh")(js.Any.fromFunction0(onRefresh))
-    if (pastScrollRange != null) __obj.updateDynamic("pastScrollRange")(pastScrollRange.asInstanceOf[js.Any])
+    if (!js.isUndefined(pastScrollRange)) __obj.updateDynamic("pastScrollRange")(pastScrollRange.get.asInstanceOf[js.Any])
     if (refreshControl != null) __obj.updateDynamic("refreshControl")(refreshControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(refreshing)) __obj.updateDynamic("refreshing")(refreshing.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshing)) __obj.updateDynamic("refreshing")(refreshing.get.asInstanceOf[js.Any])
     if (renderDay != null) __obj.updateDynamic("renderDay")(js.Any.fromFunction2(renderDay))
     if (renderEmptyData != null) __obj.updateDynamic("renderEmptyData")(js.Any.fromFunction0(renderEmptyData))
     if (renderKnob != null) __obj.updateDynamic("renderKnob")(js.Any.fromFunction0(renderKnob))
     if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgendaProps[TItem]]
   }

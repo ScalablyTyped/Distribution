@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @JSImport("xhr-mock/lib/MockProgressEvent", JSImport.Namespace)
 @js.native
 object mockProgressEventMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.std.Event_ because Already inherited
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.std.Event because Already inherited
   - typings.std.ProgressEvent because var conflicts: cancelBubble, returnValue. Inlined lengthComputable, loaded, target_ProgressEvent, total */ @js.native
   trait MockProgressEvent
     extends typings.xhrMock.mockEventMod.default {

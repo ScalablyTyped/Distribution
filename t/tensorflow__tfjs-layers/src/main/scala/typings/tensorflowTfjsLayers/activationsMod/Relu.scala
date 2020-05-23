@@ -1,6 +1,5 @@
 package typings.tensorflowTfjsLayers.activationsMod
 
-import typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.relu_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +13,6 @@ class Relu () extends Activation
 @js.native
 object Relu extends js.Object {
   /** @nocollapse */
-  val className: relu_ = js.native
+  val className: /* "relu" */ String = js.native
 }
 

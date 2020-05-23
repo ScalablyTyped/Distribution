@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,8 +39,4 @@ trait WebAuthentication extends js.Object {
     options: ScopedCredentialOptions
   ): js.Promise[ScopedCredentialInfo] = js.native
 }
-
-@JSGlobal("WebAuthentication")
-@js.native
-object WebAuthentication extends Instantiable0[WebAuthentication]
 

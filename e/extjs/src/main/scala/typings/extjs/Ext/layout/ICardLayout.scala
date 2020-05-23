@@ -13,29 +13,29 @@ trait ICardLayout extends IFit {
   /** [Config Option] (Boolean) */
   var deferredRender: js.UndefOr[Boolean] = js.undefined
   /** [Method] Return the active visible component in the layout
-  		* @returns Ext.Component
-  		*/
+    * @returns Ext.Component
+    */
   var getActiveItem: js.UndefOr[js.Function0[IComponent]] = js.undefined
   /** [Method] Return the active visible component in the layout to the next card
-  		* @returns Ext.Component The next component or false.
-  		*/
+    * @returns Ext.Component The next component or false.
+    */
   var getNext: js.UndefOr[js.Function0[IComponent]] = js.undefined
   /** [Method] Return the active visible component in the layout to the previous card
-  		* @returns Ext.Component The previous component or false.
-  		*/
+    * @returns Ext.Component The previous component or false.
+    */
   var getPrev: js.UndefOr[js.Function0[IComponent]] = js.undefined
   /** [Method] Sets the active visible component in the layout to the next card
-  		* @returns Ext.Component the activated component or false when nothing activated.
-  		*/
+    * @returns Ext.Component the activated component or false when nothing activated.
+    */
   var next: js.UndefOr[js.Function0[IComponent]] = js.undefined
   /** [Method] Sets the active visible component in the layout to the previous card
-  		* @returns Ext.Component the activated component or false when nothing activated.
-  		*/
+    * @returns Ext.Component the activated component or false when nothing activated.
+    */
   var prev: js.UndefOr[js.Function0[IComponent]] = js.undefined
   /** [Method] Makes the given card active
-  		* @param newCard Ext.Component/Number/String The component, component id, itemId, or index of component.
-  		* @returns Ext.Component the activated component or false when nothing activated. False is returned also when trying to activate an already active card.
-  		*/
+    * @param newCard Ext.Component/Number/String The component, component id, itemId, or index of component.
+    * @returns Ext.Component the activated component or false when nothing activated. False is returned also when trying to activate an already active card.
+    */
   var setActiveItem: js.UndefOr[js.Function1[/* newCard */ js.UndefOr[js.Any], IComponent]] = js.undefined
 }
 
@@ -110,9 +110,9 @@ object ICardLayout {
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (configureItem != null) __obj.updateDynamic("configureItem")(js.Any.fromFunction1(configureItem))
     if (defaultMargins != null) __obj.updateDynamic("defaultMargins")(defaultMargins.asInstanceOf[js.Any])
-    if (!js.isUndefined(deferredRender)) __obj.updateDynamic("deferredRender")(deferredRender.asInstanceOf[js.Any])
+    if (!js.isUndefined(deferredRender)) __obj.updateDynamic("deferredRender")(deferredRender.get.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (!js.isUndefined(done)) __obj.updateDynamic("done")(done.asInstanceOf[js.Any])
+    if (!js.isUndefined(done)) __obj.updateDynamic("done")(done.get.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (finalizeLayout != null) __obj.updateDynamic("finalizeLayout")(js.Any.fromFunction1(finalizeLayout))
     if (finishedLayout != null) __obj.updateDynamic("finishedLayout")(js.Any.fromFunction1(finishedLayout))
@@ -131,7 +131,7 @@ object ICardLayout {
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (initLayout != null) __obj.updateDynamic("initLayout")(js.Any.fromFunction0(initLayout))
-    if (!js.isUndefined(isLayout)) __obj.updateDynamic("isLayout")(isLayout.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLayout)) __obj.updateDynamic("isLayout")(isLayout.get.asInstanceOf[js.Any])
     if (isValidParent != null) __obj.updateDynamic("isValidParent")(js.Any.fromFunction3(isValidParent))
     if (itemCls != null) __obj.updateDynamic("itemCls")(itemCls.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
@@ -145,7 +145,7 @@ object ICardLayout {
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setActiveItem != null) __obj.updateDynamic("setActiveItem")(js.Any.fromFunction1(setActiveItem))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICardLayout]

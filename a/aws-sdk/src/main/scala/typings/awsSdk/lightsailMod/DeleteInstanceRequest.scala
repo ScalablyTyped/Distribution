@@ -20,7 +20,7 @@ object DeleteInstanceRequest {
   @scala.inline
   def apply(instanceName: ResourceName, forceDeleteAddOns: js.UndefOr[Boolean] = js.undefined): DeleteInstanceRequest = {
     val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceDeleteAddOns)) __obj.updateDynamic("forceDeleteAddOns")(forceDeleteAddOns.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceDeleteAddOns)) __obj.updateDynamic("forceDeleteAddOns")(forceDeleteAddOns.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteInstanceRequest]
   }
 }

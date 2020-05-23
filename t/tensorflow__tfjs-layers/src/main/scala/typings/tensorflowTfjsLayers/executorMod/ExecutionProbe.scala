@@ -21,10 +21,10 @@ trait ExecutionProbe extends js.Object {
 
 object ExecutionProbe {
   @scala.inline
-  def apply(maxNumTensors: Int | Double = null, minNumTensors: Int | Double = null): ExecutionProbe = {
+  def apply(maxNumTensors: js.UndefOr[Double] = js.undefined, minNumTensors: js.UndefOr[Double] = js.undefined): ExecutionProbe = {
     val __obj = js.Dynamic.literal()
-    if (maxNumTensors != null) __obj.updateDynamic("maxNumTensors")(maxNumTensors.asInstanceOf[js.Any])
-    if (minNumTensors != null) __obj.updateDynamic("minNumTensors")(minNumTensors.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxNumTensors)) __obj.updateDynamic("maxNumTensors")(maxNumTensors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minNumTensors)) __obj.updateDynamic("minNumTensors")(minNumTensors.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutionProbe]
   }
 }

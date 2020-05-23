@@ -1,6 +1,6 @@
 package typings.webix.mod.ui
 
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.webix.mod.WebixCallback
 import scala.scalajs.js
@@ -53,7 +53,7 @@ class tabbar ()
   @JSName("$tooltipIn")
   def $tooltipIn(node: HTMLElement): HTMLElement = js.native
   @JSName("$tooltipMove")
-  def $tooltipMove(t: HTMLElement, e: Event_, text: String): Unit = js.native
+  def $tooltipMove(t: HTMLElement, e: Event, text: String): Unit = js.native
   @JSName("$tooltipOut")
   def $tooltipOut(): Unit = js.native
   def addOption(id: String, value: js.Any): Unit = js.native

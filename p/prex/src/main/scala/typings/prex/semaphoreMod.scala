@@ -26,7 +26,7 @@ object semaphoreMod extends js.Object {
       * Gets the number of remaining asynchronous operations that can enter
       * the Semaphore.
       */
-    val count: Double = js.native
+    def count: Double = js.native
     /**
       * Releases the Semaphore one or more times.
       *

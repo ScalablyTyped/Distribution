@@ -31,14 +31,14 @@ trait DescribeModelVersionsRequest extends js.Object {
 object DescribeModelVersionsRequest {
   @scala.inline
   def apply(
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[MaxResults] = js.undefined,
     modelId: identifier = null,
     modelType: ModelTypeEnum = null,
     modelVersionNumber: nonEmptyString = null,
     nextToken: String = null
   ): DescribeModelVersionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (modelId != null) __obj.updateDynamic("modelId")(modelId.asInstanceOf[js.Any])
     if (modelType != null) __obj.updateDynamic("modelType")(modelType.asInstanceOf[js.Any])
     if (modelVersionNumber != null) __obj.updateDynamic("modelVersionNumber")(modelVersionNumber.asInstanceOf[js.Any])

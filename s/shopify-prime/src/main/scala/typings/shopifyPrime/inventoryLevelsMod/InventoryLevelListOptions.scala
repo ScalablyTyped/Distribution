@@ -20,15 +20,15 @@ object InventoryLevelListOptions {
   @scala.inline
   def apply(
     inventory_item_ids: String = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     location_ids: String = null,
-    page: Int | Double = null
+    page: js.UndefOr[Double] = js.undefined
   ): InventoryLevelListOptions = {
     val __obj = js.Dynamic.literal()
     if (inventory_item_ids != null) __obj.updateDynamic("inventory_item_ids")(inventory_item_ids.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (location_ids != null) __obj.updateDynamic("location_ids")(location_ids.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InventoryLevelListOptions]
   }
 }

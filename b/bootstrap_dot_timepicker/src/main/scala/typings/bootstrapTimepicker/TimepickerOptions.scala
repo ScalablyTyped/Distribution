@@ -34,10 +34,10 @@ object TimepickerOptions {
     explicitMode: js.UndefOr[Boolean] = js.undefined,
     icons: TimepickerIconOptions = null,
     isOpen: js.UndefOr[Boolean] = js.undefined,
-    maxHours: Int | Double = null,
-    minuteStep: Int | Double = null,
+    maxHours: js.UndefOr[Double] = js.undefined,
+    minuteStep: js.UndefOr[Double] = js.undefined,
     modalBackdrop: js.UndefOr[Boolean] = js.undefined,
-    secondStep: Int | Double = null,
+    secondStep: js.UndefOr[Double] = js.undefined,
     showInputs: js.UndefOr[Boolean] = js.undefined,
     showMeridian: js.UndefOr[Boolean] = js.undefined,
     showSeconds: js.UndefOr[Boolean] = js.undefined,
@@ -47,19 +47,19 @@ object TimepickerOptions {
     val __obj = js.Dynamic.literal()
     if (appendWidgetTo != null) __obj.updateDynamic("appendWidgetTo")(appendWidgetTo.asInstanceOf[js.Any])
     if (defaultTime != null) __obj.updateDynamic("defaultTime")(defaultTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableFocus)) __obj.updateDynamic("disableFocus")(disableFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableMousewheel)) __obj.updateDynamic("disableMousewheel")(disableMousewheel.asInstanceOf[js.Any])
-    if (!js.isUndefined(explicitMode)) __obj.updateDynamic("explicitMode")(explicitMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableFocus)) __obj.updateDynamic("disableFocus")(disableFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableMousewheel)) __obj.updateDynamic("disableMousewheel")(disableMousewheel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(explicitMode)) __obj.updateDynamic("explicitMode")(explicitMode.get.asInstanceOf[js.Any])
     if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.asInstanceOf[js.Any])
-    if (maxHours != null) __obj.updateDynamic("maxHours")(maxHours.asInstanceOf[js.Any])
-    if (minuteStep != null) __obj.updateDynamic("minuteStep")(minuteStep.asInstanceOf[js.Any])
-    if (!js.isUndefined(modalBackdrop)) __obj.updateDynamic("modalBackdrop")(modalBackdrop.asInstanceOf[js.Any])
-    if (secondStep != null) __obj.updateDynamic("secondStep")(secondStep.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInputs)) __obj.updateDynamic("showInputs")(showInputs.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMeridian)) __obj.updateDynamic("showMeridian")(showMeridian.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSeconds)) __obj.updateDynamic("showSeconds")(showSeconds.asInstanceOf[js.Any])
-    if (!js.isUndefined(snapToStep)) __obj.updateDynamic("snapToStep")(snapToStep.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHours)) __obj.updateDynamic("maxHours")(maxHours.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minuteStep)) __obj.updateDynamic("minuteStep")(minuteStep.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(modalBackdrop)) __obj.updateDynamic("modalBackdrop")(modalBackdrop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(secondStep)) __obj.updateDynamic("secondStep")(secondStep.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInputs)) __obj.updateDynamic("showInputs")(showInputs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMeridian)) __obj.updateDynamic("showMeridian")(showMeridian.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSeconds)) __obj.updateDynamic("showSeconds")(showSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapToStep)) __obj.updateDynamic("snapToStep")(snapToStep.get.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimepickerOptions]
   }

@@ -8,12 +8,12 @@ trait TaskStatusResponse extends js.Object {
   /**
     * If the operation is pending.
     */
-  val pendingTask: Boolean
+  var pendingTask: Boolean
   /**
     * The operation status. When the value is `published` the
     * operation is completed.
     */
-  val status: String
+  var status: String
 }
 
 object TaskStatusResponse {

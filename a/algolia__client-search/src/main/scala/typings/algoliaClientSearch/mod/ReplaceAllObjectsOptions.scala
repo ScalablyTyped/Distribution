@@ -17,7 +17,7 @@ object ReplaceAllObjectsOptions {
   @scala.inline
   def apply(safe: js.UndefOr[Boolean] = js.undefined): ReplaceAllObjectsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe.asInstanceOf[js.Any])
+    if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceAllObjectsOptions]
   }
 }

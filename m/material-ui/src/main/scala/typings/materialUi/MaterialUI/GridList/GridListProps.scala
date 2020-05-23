@@ -17,14 +17,14 @@ object GridListProps {
   @scala.inline
   def apply(
     cellHeight: Double | auto = null,
-    cols: Int | Double = null,
-    padding: Int | Double = null,
+    cols: js.UndefOr[Double] = js.undefined,
+    padding: js.UndefOr[Double] = js.undefined,
     style: CSSProperties = null
   ): GridListProps = {
     val __obj = js.Dynamic.literal()
     if (cellHeight != null) __obj.updateDynamic("cellHeight")(cellHeight.asInstanceOf[js.Any])
-    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (!js.isUndefined(cols)) __obj.updateDynamic("cols")(cols.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridListProps]
   }

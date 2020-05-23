@@ -18,13 +18,13 @@ object Options {
     projection: ProjectionLike = null,
     tileGrid: typings.ol.tilegridTileGridMod.default = null,
     wrapX: js.UndefOr[Boolean] = js.undefined,
-    zDirection: Int | Double = null
+    zDirection: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     if (tileGrid != null) __obj.updateDynamic("tileGrid")(tileGrid.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.asInstanceOf[js.Any])
-    if (zDirection != null) __obj.updateDynamic("zDirection")(zDirection.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zDirection)) __obj.updateDynamic("zDirection")(zDirection.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

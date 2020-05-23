@@ -1,6 +1,6 @@
 package typings.mlLevenbergMarquardt.mod
 
-import typings.mlLevenbergMarquardt.PartialOptions
+import typings.mlLevenbergMarquardt.anon.PartialOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

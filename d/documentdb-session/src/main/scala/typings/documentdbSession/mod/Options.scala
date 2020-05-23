@@ -58,13 +58,13 @@ object Options {
     collection: String = null,
     database: String = null,
     discriminator: js.Object = null,
-    ttl: Int | Double = null
+    ttl: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     if (collection != null) __obj.updateDynamic("collection")(collection.asInstanceOf[js.Any])
     if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
     if (discriminator != null) __obj.updateDynamic("discriminator")(discriminator.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

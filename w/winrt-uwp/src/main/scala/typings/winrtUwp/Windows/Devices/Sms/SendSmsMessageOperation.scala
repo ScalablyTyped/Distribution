@@ -9,9 +9,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Enables the sending of a message. */
-@JSGlobal("Windows.Devices.Sms.SendSmsMessageOperation")
 @js.native
-abstract class SendSmsMessageOperation () extends js.Object {
+trait SendSmsMessageOperation extends js.Object {
   /** A handler for the completed event of an asynchronous action. */
   @JSName("completed")
   var completed_Original: AsyncActionCompletedHandler = js.native

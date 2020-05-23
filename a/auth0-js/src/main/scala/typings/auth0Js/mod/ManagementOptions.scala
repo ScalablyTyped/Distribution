@@ -32,7 +32,7 @@ object ManagementOptions {
     if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
     if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (!js.isUndefined(telemetry)) __obj.updateDynamic("telemetry")(telemetry.asInstanceOf[js.Any])
+    if (!js.isUndefined(telemetry)) __obj.updateDynamic("telemetry")(telemetry.get.asInstanceOf[js.Any])
     if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     if (tokenProvider != null) __obj.updateDynamic("tokenProvider")(tokenProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagementOptions]

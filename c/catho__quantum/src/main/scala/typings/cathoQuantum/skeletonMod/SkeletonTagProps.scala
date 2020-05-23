@@ -1,6 +1,6 @@
 package typings.cathoQuantum.skeletonMod
 
-import typings.cathoQuantum.AnonBaseFontSizeNumber
+import typings.cathoQuantum.anon.BaseFontSizeNumber
 import typings.cathoQuantum.cathoQuantumStrings.large
 import typings.cathoQuantum.cathoQuantumStrings.medium
 import typings.cathoQuantum.cathoQuantumStrings.small
@@ -11,12 +11,12 @@ import scala.scalajs.js.annotation._
 
 trait SkeletonTagProps extends js.Object {
   var size: xsmall | small | medium | large
-  var theme: AnonBaseFontSizeNumber
+  var theme: BaseFontSizeNumber
 }
 
 object SkeletonTagProps {
   @scala.inline
-  def apply(size: xsmall | small | medium | large, theme: AnonBaseFontSizeNumber): SkeletonTagProps = {
+  def apply(size: xsmall | small | medium | large, theme: BaseFontSizeNumber): SkeletonTagProps = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[SkeletonTagProps]
   }

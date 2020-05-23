@@ -38,7 +38,7 @@ object ClusterSummary {
     ClusterArn: ArnType = null,
     Id: ClusterId = null,
     Name: String = null,
-    NormalizedInstanceHours: Int | Double = null,
+    NormalizedInstanceHours: js.UndefOr[Integer] = js.undefined,
     OutpostArn: OptionalArnType = null,
     Status: ClusterStatus = null
   ): ClusterSummary = {
@@ -46,7 +46,7 @@ object ClusterSummary {
     if (ClusterArn != null) __obj.updateDynamic("ClusterArn")(ClusterArn.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (NormalizedInstanceHours != null) __obj.updateDynamic("NormalizedInstanceHours")(NormalizedInstanceHours.asInstanceOf[js.Any])
+    if (!js.isUndefined(NormalizedInstanceHours)) __obj.updateDynamic("NormalizedInstanceHours")(NormalizedInstanceHours.get.asInstanceOf[js.Any])
     if (OutpostArn != null) __obj.updateDynamic("OutpostArn")(OutpostArn.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterSummary]

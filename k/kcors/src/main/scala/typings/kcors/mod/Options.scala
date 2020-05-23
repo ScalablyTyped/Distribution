@@ -29,9 +29,9 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (allowHeaders != null) __obj.updateDynamic("allowHeaders")(allowHeaders.asInstanceOf[js.Any])
     if (allowMethods != null) __obj.updateDynamic("allowMethods")(allowMethods.asInstanceOf[js.Any])
-    if (!js.isUndefined(credentials)) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
+    if (!js.isUndefined(credentials)) __obj.updateDynamic("credentials")(credentials.get.asInstanceOf[js.Any])
     if (exposeHeaders != null) __obj.updateDynamic("exposeHeaders")(exposeHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepHeadersOnError)) __obj.updateDynamic("keepHeadersOnError")(keepHeadersOnError.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepHeadersOnError)) __obj.updateDynamic("keepHeadersOnError")(keepHeadersOnError.get.asInstanceOf[js.Any])
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

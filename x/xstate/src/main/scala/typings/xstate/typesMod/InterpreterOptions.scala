@@ -44,7 +44,7 @@ object InterpreterOptions {
     devTools: Boolean | js.Object,
     execute: Boolean,
     logger: /* repeated */ js.Any => Unit,
-    StringDictionary: /* option */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     id: String = null,
     parent: Interpreter[_, _, _, _] = null
   ): InterpreterOptions = {

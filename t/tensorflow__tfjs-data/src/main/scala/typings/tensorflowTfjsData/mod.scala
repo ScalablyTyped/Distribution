@@ -9,8 +9,6 @@ import typings.tensorflowTfjsData.datasetMod.DatasetContainer
 import typings.tensorflowTfjsData.datasourceMod.DataSource
 import typings.tensorflowTfjsData.fileChunkIteratorMod.FileChunkIteratorOptions
 import typings.tensorflowTfjsData.microphoneIteratorMod.MicrophoneIterator
-import typings.tensorflowTfjsData.tensorflowTfjsDataNumbers.`10000`
-import typings.tensorflowTfjsData.tensorflowTfjsDataStrings.`1Dot7Dot2`
 import typings.tensorflowTfjsData.typesMod.CSVConfig
 import typings.tensorflowTfjsData.typesMod.FileElement
 import typings.tensorflowTfjsData.typesMod.MicrophoneConfig
@@ -109,7 +107,7 @@ object mod extends js.Object {
   }
   
   @JSName("version_data")
-  val versionData: `1Dot7Dot2` = js.native
+  val versionData: /* "1.7.4" */ String = js.native
   def array[T /* <: TensorContainer */](items: js.Array[T]): typings.tensorflowTfjsData.datasetMod.Dataset[T] = js.native
   def csv(source: RequestInfo): typings.tensorflowTfjsData.csvDatasetMod.CSVDataset = js.native
   def csv(source: RequestInfo, csvConfig: CSVConfig): typings.tensorflowTfjsData.csvDatasetMod.CSVDataset = js.native
@@ -128,7 +126,7 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object Dataset extends js.Object {
-    val MAX_BUFFER_SIZE: `10000` = js.native
+    val MAX_BUFFER_SIZE: /* 10000 */ Double = js.native
   }
   
 }

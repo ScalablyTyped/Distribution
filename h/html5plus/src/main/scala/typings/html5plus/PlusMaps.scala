@@ -141,7 +141,7 @@ trait PlusMaps extends js.Object {
   /**
     * 创建Map对象
     * 调用此方法创建后并不会显示，需要调用Webview窗口的append方法将其添加到Webview窗口后才能显示。
-    * 	注意：此时需要通过styles参数的top/left/width/height属性设置控件的位置及大小。
+    *     注意：此时需要通过styles参数的top/left/width/height属性设置控件的位置及大小。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */

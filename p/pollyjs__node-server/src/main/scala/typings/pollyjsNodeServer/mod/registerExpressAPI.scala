@@ -1,7 +1,7 @@
 package typings.pollyjsNodeServer.mod
 
 import typings.express.mod.Express
-import typings.pollyjsNodeServer.PartialConfig
+import typings.pollyjsNodeServer.anon.PartialConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

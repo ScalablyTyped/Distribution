@@ -63,7 +63,7 @@ object UpdateStackRequest {
     AccessEndpoints: AccessEndpointList = null,
     ApplicationSettings: ApplicationSettings = null,
     AttributesToDelete: StackAttributes = null,
-    DeleteStorageConnectors: js.UndefOr[scala.Boolean] = js.undefined,
+    DeleteStorageConnectors: js.UndefOr[Boolean] = js.undefined,
     Description: Description = null,
     DisplayName: DisplayName = null,
     EmbedHostDomains: EmbedHostDomains = null,
@@ -76,7 +76,7 @@ object UpdateStackRequest {
     if (AccessEndpoints != null) __obj.updateDynamic("AccessEndpoints")(AccessEndpoints.asInstanceOf[js.Any])
     if (ApplicationSettings != null) __obj.updateDynamic("ApplicationSettings")(ApplicationSettings.asInstanceOf[js.Any])
     if (AttributesToDelete != null) __obj.updateDynamic("AttributesToDelete")(AttributesToDelete.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeleteStorageConnectors)) __obj.updateDynamic("DeleteStorageConnectors")(DeleteStorageConnectors.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeleteStorageConnectors)) __obj.updateDynamic("DeleteStorageConnectors")(DeleteStorageConnectors.get.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
     if (EmbedHostDomains != null) __obj.updateDynamic("EmbedHostDomains")(EmbedHostDomains.asInstanceOf[js.Any])

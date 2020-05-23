@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object ContactBatchStatus extends js.Object {
   /** Success */
   @js.native
   sealed trait success extends ContactBatchStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ContactBatchStatus with Double] = js.native
-  /* 1 */ @js.native
-  object serverSearchSyncManagerError extends TopLevel[serverSearchSyncManagerError with Double]
-  
-  /* 2 */ @js.native
-  object serverSearchUnknownError extends TopLevel[serverSearchUnknownError with Double]
-  
-  /* 0 */ @js.native
-  object success extends TopLevel[success with Double]
   
 }
 

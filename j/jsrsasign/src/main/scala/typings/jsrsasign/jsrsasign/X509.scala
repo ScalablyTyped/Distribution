@@ -1,19 +1,18 @@
 package typings.jsrsasign.jsrsasign
 
-import typings.jsrsasign.AnonCA_
-import typings.jsrsasign.AnonCaissuer
-import typings.jsrsasign.AnonCps
-import typings.jsrsasign.AnonKid
-import typings.jsrsasign.AnonVidx
+import typings.jsrsasign.anon.CA_
+import typings.jsrsasign.anon.Caissuer
+import typings.jsrsasign.anon.Cps
+import typings.jsrsasign.anon.Kid
+import typings.jsrsasign.anon.Vidx
 import typings.jsrsasign.jsrsasign.KJUR.crypto.DSA
 import typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("jsrsasign.X509")
 @js.native
-class X509 () extends js.Object {
+trait X509 extends js.Object {
   var hex: String = js.native
   /**
     * get AuthorityInfoAccess extension value in the certificate as associative array
@@ -33,7 +32,7 @@ class X509 () extends js.Object {
     * { ocsp:     ["http://ocsp.foo.com"],
     *   caissuer: ["http://rep.foo.com/aaa.p8m"] }
     */
-  def getExtAIAInfo(): js.UndefOr[AnonCaissuer] = js.native
+  def getExtAIAInfo(): js.UndefOr[Caissuer] = js.native
   /**
     * get authorityKeyIdentifier value as JSON object in the certificate
     * @return JSON object of authority key identifier or null
@@ -50,7 +49,7 @@ class X509 () extends js.Object {
     * x.readCertPEM(sCertPEM); // parseExt() will also be called internally.
     * x.getExtAuthorityKeyIdentifier() → { kid: "1234abcd..." }
     */
-  def getExtAuthorityKeyIdentifier(): AnonKid | Null = js.native
+  def getExtAuthorityKeyIdentifier(): Kid | Null = js.native
   /**
     * get BasicConstraints extension value as object in the certificate
     * @return associative array which may have "cA" and "pathLen" parameters
@@ -72,7 +71,7 @@ class X509 () extends js.Object {
     * x.readCertPEM(sCertPEM); // parseExt() will also be called internally.
     * x.getExtBasicConstraints() → { cA: true, pathLen: 3 };
     */
-  def getExtBasicConstraints(): AnonCA_ = js.native
+  def getExtBasicConstraints(): CA_ = js.native
   /**
     * get array of string for fullName URIs in cRLDistributionPoints(CDP) in the certificate
     * @return array of fullName URIs of CDP of the certificate
@@ -111,7 +110,7 @@ class X509 () extends js.Object {
     *    cps: "http://example.com/cps",
     *    unotice: "explicit text" }]
     */
-  def getExtCertificatePolicies(): js.UndefOr[AnonCps] = js.native
+  def getExtCertificatePolicies(): js.UndefOr[Cps] = js.native
   /**
     * get extKeyUsage value as array of name string in the certificate
     * @return array of extended key usage ID name or oid
@@ -416,7 +415,7 @@ class X509 () extends js.Object {
     * x.aExtInfo →
     * [ { oid: "2.5.29,19", critical: true, vidx: 2504 }, ... ]
     */
-  def parseExt(params: AnonVidx): Unit = js.native
+  def parseExt(params: Vidx): Unit = js.native
   /**
     * read a hexadecimal string of X.509 certificate
     * @param sCertHex hexadecimal string of X.509 certificate
@@ -451,82 +450,5 @@ class X509 () extends js.Object {
     * x.verifySignature(pubKey) → true, false or raising exception
     */
   def verifySignature(pubKey: RSAKey): Boolean = js.native
-}
-
-/* static members */
-@JSGlobal("jsrsasign.X509")
-@js.native
-object X509 extends js.Object {
-  val version: String = js.native
-  /**
-    * get RSA/DSA/ECDSA public key object from X.509 certificate hexadecimal string
-    * @param h hexadecimal string of X.509 certificate for RSA/ECDSA/DSA public key
-    * @return returns RSAKey/KJUR.crypto.{ECDSA,DSA} object of public key
-    */
-  def getPublicKeyFromCertHex(h: String): RSAKey | DSA | ECDSA = js.native
-  /**
-    * get RSA/DSA/ECDSA public key object from PEM certificate string
-    * @param sCertPEM PEM formatted RSA/ECDSA/DSA X.509 certificate
-    * @return returns RSAKey/KJUR.crypto.{ECDSA,DSA} object of public key
-    * @description
-    * NOTE: DSA is also supported since x509 1.1.2.
-    */
-  def getPublicKeyFromCertPEM(sCertPEM: String): RSAKey | DSA | ECDSA = js.native
-  /**
-    * get public key information from PEM certificate
-    * @param sCertPEM string of PEM formatted certificate
-    * @return hash of information for public key
-    * @description
-    * Resulted associative array has following properties:
-    *
-    * - algoid - hexadecimal string of OID of asymmetric key algorithm
-    * - algparam - hexadecimal string of OID of ECC curve name or null
-    * - keyhex - hexadecimal string of key in the certificate
-    *
-    * NOTE: X509v1 certificate is also supported since x509.js 1.1.9.
-    */
-  def getPublicKeyInfoPropOfCertPEM(sCertPEM: String): String = js.native
-  /**
-    * get string from hexadecimal string of ASN.1 DER AttributeTypeAndValue
-    * @param hex hexadecimal string of ASN.1 DER concludes AttributeTypeAndValue
-    * @param idx index of hexadecimal string (DEFAULT=0)
-    * @return string representation of AttributeTypeAndValue (ex. C=US)
-    * @description
-    * This static method converts from a hexadecimal string of AttributeTypeAndValue
-    * specified by 'hex' and 'idx' to LDAP string representation (ex. C=US).
-    * @example
-    * X509.hex2attrTypeValue("3008060355040a0c0161") → O=a
-    * X509.hex2attrTypeValue("300806035504060c0161") → C=a
-    * X509.hex2attrTypeValue("...3008060355040a0c0161...", 128) → O=a
-    */
-  def hex2attrTypeValue(hex: String, idx: Double): String = js.native
-  /**
-    * get distinguished name string in OpenSSL online format from hexadecimal string of ASN.1 DER X.500 name
-    * @param hex hexadecimal string of ASN.1 DER distinguished name
-    * @param idx index of hexadecimal string (DEFAULT=0)
-    * @return OpenSSL online format distinguished name
-    * @description
-    * This static method converts from a hexadecimal string of
-    * distinguished name (DN)
-    * specified by 'hex' and 'idx' to OpenSSL oneline string representation (ex. /C=US/O=a).
-    * @example
-    * X509.hex2dn("3031310b3...") → /C=US/O=a/CN=b2+OU=b1
-    */
-  def hex2dn(hex: String, idx: Double): String = js.native
-  /**
-    * get relative distinguished name string in OpenSSL online format from hexadecimal string of ASN.1 DER RDN
-    * @param hex hexadecimal string of ASN.1 DER concludes relative distinguished name
-    * @param idx index of hexadecimal string (DEFAULT=0)
-    * @return OpenSSL online format relative distinguished name
-    * @description
-    * This static method converts from a hexadecimal string of
-    * relative distinguished name (RDN)
-    * specified by 'hex' and 'idx' to LDAP string representation (ex. O=test+CN=test).
-    * NOTE: Multi-valued RDN is supported since jsnrsasign 6.2.2 x509 1.1.10.
-    * @example
-    * X509.hex2rdn("310a3008060355040a0c0161") → O=a
-    * X509.hex2rdn("31143008060355040a0c01613008060355040a0c0162") → O=a+O=b
-    */
-  def hex2rdn(hex: String, idx: Double): String = js.native
 }
 

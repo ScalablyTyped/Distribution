@@ -1,7 +1,5 @@
 package typings.std.Intl
 
-import typings.std.stdStrings.cardinal
-import typings.std.stdStrings.ordinal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,12 +7,12 @@ import scala.scalajs.js.annotation._
 trait ResolvedPluralRulesOptions extends js.Object {
   var locale: String
   var maximumFractionDigits: Double
-  var maximumSignificantDigits: Double
+  var maximumSignificantDigits: js.UndefOr[Double] = js.undefined
   var minimumFractionDigits: Double
   var minimumIntegerDigits: Double
-  var minimumSignificantDigits: Double
-  var pluralCategories: js.Array[String]
-  var `type`: cardinal | ordinal
+  var minimumSignificantDigits: js.UndefOr[Double] = js.undefined
+  var pluralCategories: js.Array[LDMLPluralRule]
+  var `type`: PluralRuleType
 }
 
 object ResolvedPluralRulesOptions {
@@ -22,15 +20,17 @@ object ResolvedPluralRulesOptions {
   def apply(
     locale: String,
     maximumFractionDigits: Double,
-    maximumSignificantDigits: Double,
     minimumFractionDigits: Double,
     minimumIntegerDigits: Double,
-    minimumSignificantDigits: Double,
-    pluralCategories: js.Array[String],
-    `type`: cardinal | ordinal
+    pluralCategories: js.Array[LDMLPluralRule],
+    `type`: PluralRuleType,
+    maximumSignificantDigits: js.UndefOr[Double] = js.undefined,
+    minimumSignificantDigits: js.UndefOr[Double] = js.undefined
   ): ResolvedPluralRulesOptions = {
-    val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], maximumFractionDigits = maximumFractionDigits.asInstanceOf[js.Any], maximumSignificantDigits = maximumSignificantDigits.asInstanceOf[js.Any], minimumFractionDigits = minimumFractionDigits.asInstanceOf[js.Any], minimumIntegerDigits = minimumIntegerDigits.asInstanceOf[js.Any], minimumSignificantDigits = minimumSignificantDigits.asInstanceOf[js.Any], pluralCategories = pluralCategories.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], maximumFractionDigits = maximumFractionDigits.asInstanceOf[js.Any], minimumFractionDigits = minimumFractionDigits.asInstanceOf[js.Any], minimumIntegerDigits = minimumIntegerDigits.asInstanceOf[js.Any], pluralCategories = pluralCategories.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumSignificantDigits)) __obj.updateDynamic("maximumSignificantDigits")(maximumSignificantDigits.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumSignificantDigits)) __obj.updateDynamic("minimumSignificantDigits")(minimumSignificantDigits.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedPluralRulesOptions]
   }
 }

@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.indexBundleMod
 
-import typings.officeUiFabricReact.AnonIsSelectedOnFocus
+import typings.officeUiFabricReact.anon.IsSelectedOnFocus
 import typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneProps
 import typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneState
 import scala.scalajs.js
@@ -18,7 +18,7 @@ class SelectionZone protected ()
 @JSImport("office-ui-fabric-react/lib/index.bundle", "SelectionZone")
 @js.native
 object SelectionZone extends js.Object {
-  var defaultProps: AnonIsSelectedOnFocus = js.native
+  var defaultProps: IsSelectedOnFocus = js.native
   def getDerivedStateFromProps(nextProps: ISelectionZoneProps, prevState: ISelectionZoneState): ISelectionZoneState = js.native
 }
 

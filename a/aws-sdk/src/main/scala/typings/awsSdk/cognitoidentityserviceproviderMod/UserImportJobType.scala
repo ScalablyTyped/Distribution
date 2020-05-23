@@ -67,12 +67,12 @@ object UserImportJobType {
     CompletionDate: DateType = null,
     CompletionMessage: CompletionMessageType = null,
     CreationDate: DateType = null,
-    FailedUsers: Int | Double = null,
-    ImportedUsers: Int | Double = null,
+    FailedUsers: js.UndefOr[LongType] = js.undefined,
+    ImportedUsers: js.UndefOr[LongType] = js.undefined,
     JobId: UserImportJobIdType = null,
     JobName: UserImportJobNameType = null,
     PreSignedUrl: PreSignedUrlType = null,
-    SkippedUsers: Int | Double = null,
+    SkippedUsers: js.UndefOr[LongType] = js.undefined,
     StartDate: DateType = null,
     Status: UserImportJobStatusType = null,
     UserPoolId: UserPoolIdType = null
@@ -82,12 +82,12 @@ object UserImportJobType {
     if (CompletionDate != null) __obj.updateDynamic("CompletionDate")(CompletionDate.asInstanceOf[js.Any])
     if (CompletionMessage != null) __obj.updateDynamic("CompletionMessage")(CompletionMessage.asInstanceOf[js.Any])
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (FailedUsers != null) __obj.updateDynamic("FailedUsers")(FailedUsers.asInstanceOf[js.Any])
-    if (ImportedUsers != null) __obj.updateDynamic("ImportedUsers")(ImportedUsers.asInstanceOf[js.Any])
+    if (!js.isUndefined(FailedUsers)) __obj.updateDynamic("FailedUsers")(FailedUsers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ImportedUsers)) __obj.updateDynamic("ImportedUsers")(ImportedUsers.get.asInstanceOf[js.Any])
     if (JobId != null) __obj.updateDynamic("JobId")(JobId.asInstanceOf[js.Any])
     if (JobName != null) __obj.updateDynamic("JobName")(JobName.asInstanceOf[js.Any])
     if (PreSignedUrl != null) __obj.updateDynamic("PreSignedUrl")(PreSignedUrl.asInstanceOf[js.Any])
-    if (SkippedUsers != null) __obj.updateDynamic("SkippedUsers")(SkippedUsers.asInstanceOf[js.Any])
+    if (!js.isUndefined(SkippedUsers)) __obj.updateDynamic("SkippedUsers")(SkippedUsers.get.asInstanceOf[js.Any])
     if (StartDate != null) __obj.updateDynamic("StartDate")(StartDate.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (UserPoolId != null) __obj.updateDynamic("UserPoolId")(UserPoolId.asInstanceOf[js.Any])

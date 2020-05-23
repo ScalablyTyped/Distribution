@@ -6,10 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Control
-@JSGlobal("naver.maps.CustomControl")
 @js.native
-class CustomControl protected () extends KVO {
-  def this(html: String, ControlOptions: ControlOptions) = this()
+trait CustomControl extends KVO {
   def getElement(): HTMLElement = js.native
   def getMap(): Map | Null = js.native
   def getOptions(): js.Any = js.native

@@ -20,17 +20,17 @@ trait ParserError extends js.Object {
 object ParserError {
   @scala.inline
   def apply(
-    column: Int | Double = null,
+    column: js.UndefOr[Double] = js.undefined,
     filename: String = null,
-    line: Int | Double = null,
+    line: js.UndefOr[Double] = js.undefined,
     message: String = null,
     reason: String = null,
     source: String = null
   ): ParserError = {
     val __obj = js.Dynamic.literal()
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    if (!js.isUndefined(column)) __obj.updateDynamic("column")(column.get.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    if (!js.isUndefined(line)) __obj.updateDynamic("line")(line.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])

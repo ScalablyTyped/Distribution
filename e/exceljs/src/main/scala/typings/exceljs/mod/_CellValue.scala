@@ -1,6 +1,6 @@
 package typings.exceljs.mod
 
-import typings.exceljs.AnonError
+import typings.exceljs.anon.Error
 import typings.exceljs.exceljsStrings.NumbersignDIVSlash0Exclamationmark
 import typings.exceljs.exceljsStrings.NumbersignNAMEQuestionmark
 import typings.exceljs.exceljsStrings.NumbersignNSlashA
@@ -29,7 +29,7 @@ object _CellValue {
     __obj.asInstanceOf[_CellValue]
   }
   @scala.inline
-  def CellFormulaValue(date1904: Boolean, formula: String, result: Double | String | Date | AnonError = null): _CellValue = {
+  def CellFormulaValue(date1904: Boolean, formula: String, result: Double | String | Date | Error = null): _CellValue = {
     val __obj = js.Dynamic.literal(date1904 = date1904.asInstanceOf[js.Any], formula = formula.asInstanceOf[js.Any])
     if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[_CellValue]
@@ -44,7 +44,7 @@ object _CellValue {
     date1904: Boolean,
     sharedFormula: String,
     formula: String = null,
-    result: Double | String | Date | AnonError = null
+    result: Double | String | Date | Error = null
   ): _CellValue = {
     val __obj = js.Dynamic.literal(date1904 = date1904.asInstanceOf[js.Any], sharedFormula = sharedFormula.asInstanceOf[js.Any])
     if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])

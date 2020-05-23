@@ -22,14 +22,14 @@ object OptimisticMutationConfig {
   def apply(
     mutation: GraphQLTaggedNode,
     variables: Variables,
-    configs: js.Array[DeclarativeMutationConfig] = null,
+    configs: js.UndefOr[Null | js.Array[DeclarativeMutationConfig]] = js.undefined,
     optimisticResponse: js.Object = null,
-    optimisticUpdater: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit = null
+    optimisticUpdater: js.UndefOr[Null | ((/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit)] = js.undefined
   ): OptimisticMutationConfig = {
     val __obj = js.Dynamic.literal(mutation = mutation.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
-    if (configs != null) __obj.updateDynamic("configs")(configs.asInstanceOf[js.Any])
+    if (!js.isUndefined(configs)) __obj.updateDynamic("configs")(configs.asInstanceOf[js.Any])
     if (optimisticResponse != null) __obj.updateDynamic("optimisticResponse")(optimisticResponse.asInstanceOf[js.Any])
-    if (optimisticUpdater != null) __obj.updateDynamic("optimisticUpdater")(js.Any.fromFunction2(optimisticUpdater))
+    if (!js.isUndefined(optimisticUpdater)) __obj.updateDynamic("optimisticUpdater")(if (optimisticUpdater != null) js.Any.fromFunction2(optimisticUpdater.asInstanceOf[(/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit]) else null)
     __obj.asInstanceOf[OptimisticMutationConfig]
   }
 }

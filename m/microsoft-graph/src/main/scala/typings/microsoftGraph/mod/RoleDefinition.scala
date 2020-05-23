@@ -34,7 +34,7 @@ object RoleDefinition {
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBuiltIn)) __obj.updateDynamic("isBuiltIn")(isBuiltIn.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBuiltIn)) __obj.updateDynamic("isBuiltIn")(isBuiltIn.get.asInstanceOf[js.Any])
     if (roleAssignments != null) __obj.updateDynamic("roleAssignments")(roleAssignments.asInstanceOf[js.Any])
     if (rolePermissions != null) __obj.updateDynamic("rolePermissions")(rolePermissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoleDefinition]

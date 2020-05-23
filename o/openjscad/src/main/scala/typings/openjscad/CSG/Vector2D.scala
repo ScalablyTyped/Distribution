@@ -5,12 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CSG.Vector2D")
 @js.native
-class Vector2D protected () extends CxG {
-  def this(x: js.Array[Double]) = this()
-  def this(x: Vector2D) = this()
-  def this(x: Double, y: Double) = this()
+trait Vector2D extends CxG {
   var x: Double = js.native
   var y: Double = js.native
   def abs(): Vector2D = js.native
@@ -36,15 +32,5 @@ class Vector2D protected () extends CxG {
   def times(a: Double): Vector2D = js.native
   def toVector3D(z: Double): Vector3D = js.native
   def unit(): Vector2D = js.native
-}
-
-/* static members */
-@JSGlobal("CSG.Vector2D")
-@js.native
-object Vector2D extends js.Object {
-  def Create(x: Double, y: Double): Vector2D = js.native
-  def fromAngle(radians: Double): Vector2D = js.native
-  def fromAngleDegrees(degrees: Double): Vector2D = js.native
-  def fromAngleRadians(radians: Double): Vector2D = js.native
 }
 

@@ -16,9 +16,9 @@ trait BorderTopProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extend
 
 object BorderTopProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](borderTop: ResponsiveValue[TVal, ThemeType] = null): BorderTopProps[ThemeType, TVal] = {
+  def apply[ThemeType, TVal](borderTop: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): BorderTopProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
-    if (borderTop != null) __obj.updateDynamic("borderTop")(borderTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderTop)) __obj.updateDynamic("borderTop")(borderTop.asInstanceOf[js.Any])
     __obj.asInstanceOf[BorderTopProps[ThemeType, TVal]]
   }
 }

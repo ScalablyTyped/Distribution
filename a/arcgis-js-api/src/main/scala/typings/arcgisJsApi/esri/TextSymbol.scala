@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.baseline
 import typings.arcgisJsApi.arcgisJsApiStrings.bottom
 import typings.arcgisJsApi.arcgisJsApiStrings.center
@@ -14,13 +13,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.arcgisJsApi.esri.Symbol2D3D because Already inherited
 - typings.arcgisJsApi.esri.symbols.Symbol2D3D because Already inherited */ @js.native
 trait TextSymbol
-  extends Symbol
-     with typings.arcgisJsApi.esri.symbols.Symbol2D
-     with Symbol2D {
+  extends Symbol2D
+     with Symbol
+     with typings.arcgisJsApi.esri.symbols.Symbol2D {
   /**
     * The angle of the text. `0` is horizontal and the angle moves clockwise.
     * > **Known Limitations**  This property is currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
@@ -161,8 +160,4 @@ trait TextSymbol
     */
   var yoffset: Double = js.native
 }
-
-@JSGlobal("__esri.TextSymbol")
-@js.native
-object TextSymbol extends TopLevel[TextSymbolConstructor]
 

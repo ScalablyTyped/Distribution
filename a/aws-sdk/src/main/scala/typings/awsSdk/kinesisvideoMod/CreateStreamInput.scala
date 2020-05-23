@@ -36,14 +36,14 @@ object CreateStreamInput {
   @scala.inline
   def apply(
     StreamName: StreamName,
-    DataRetentionInHours: Int | Double = null,
+    DataRetentionInHours: js.UndefOr[DataRetentionInHours] = js.undefined,
     DeviceName: DeviceName = null,
     KmsKeyId: KmsKeyId = null,
     MediaType: MediaType = null,
     Tags: ResourceTags = null
   ): CreateStreamInput = {
     val __obj = js.Dynamic.literal(StreamName = StreamName.asInstanceOf[js.Any])
-    if (DataRetentionInHours != null) __obj.updateDynamic("DataRetentionInHours")(DataRetentionInHours.asInstanceOf[js.Any])
+    if (!js.isUndefined(DataRetentionInHours)) __obj.updateDynamic("DataRetentionInHours")(DataRetentionInHours.get.asInstanceOf[js.Any])
     if (DeviceName != null) __obj.updateDynamic("DeviceName")(DeviceName.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
     if (MediaType != null) __obj.updateDynamic("MediaType")(MediaType.asInstanceOf[js.Any])

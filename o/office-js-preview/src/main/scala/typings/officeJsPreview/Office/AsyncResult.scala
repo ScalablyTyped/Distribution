@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 /**
   * An object which encapsulates the result of an asynchronous request, including status and error information if the request failed.
   *
-  * When the function you pass to the `callback` parameter of an "Async" method executes, it receives an AsyncResult object that you can access 
+  * When the function you pass to the `callback` parameter of an "Async" method executes, it receives an AsyncResult object that you can access
   * from the `callback` function's only parameter.
   */
 trait AsyncResult[T] extends js.Object {
   /**
-    * Gets the user-defined item passed to the optional `asyncContext` parameter of the invoked method in the same state as it was passed in. 
-    * This returns the user-defined item (which can be of any JavaScript type: String, Number, Boolean, Object, Array, Null, or Undefined) passed 
+    * Gets the user-defined item passed to the optional `asyncContext` parameter of the invoked method in the same state as it was passed in.
+    * This returns the user-defined item (which can be of any JavaScript type: String, Number, Boolean, Object, Array, Null, or Undefined) passed
     * to the optional `asyncContext` parameter of the invoked method. Returns Undefined, if you didn't pass anything to the asyncContext parameter.
     */
   var asyncContext: js.Any
@@ -22,13 +22,13 @@ trait AsyncResult[T] extends js.Object {
     * Gets an object that may provide additional information if an {@link Office.Error | error} occurred.
     *
     * @remarks
-    * 
+    *
     * This property returns additional information if the following errors occur with these supported APIs.
-    * 
+    *
     * *Supported APIs*
-    * 
+    *
     * `Office.context.mailbox.item.getCallbackTokenAsync`, `Office.context.mailbox.item.getUserIdentityTokenAsync`
-    * 
+    *
     * *Supported errors*
     * <table>
     *   <tr><th>`AsyncResult.error.name`            </th><th>`AsyncResult.error.message`                                                                       </th><th>Description of diagnostics object returned                                                                                          </th></tr>
@@ -47,13 +47,13 @@ trait AsyncResult[T] extends js.Object {
   var status: AsyncResultStatus
   /**
     * Gets the payload or content of this asynchronous operation, if any.
-    * 
+    *
     * @remarks
-    * 
-    * You access the AsyncResult object in the function passed as the argument to the callback parameter of an "Async" method, such as the 
+    *
+    * You access the AsyncResult object in the function passed as the argument to the callback parameter of an "Async" method, such as the
     * `getSelectedDataAsync` and `setSelectedDataAsync` methods of the {@link Office.Document | Document} object.
     *
-    * **Note**: What the value property returns for a particular "Async" method varies depending on the purpose and context of that method. 
+    * **Note**: What the value property returns for a particular "Async" method varies depending on the purpose and context of that method.
     * To determine what is returned by the value property for an "Async" method, refer to the "Callback value" section of the method's topic.
     */
   var value: T

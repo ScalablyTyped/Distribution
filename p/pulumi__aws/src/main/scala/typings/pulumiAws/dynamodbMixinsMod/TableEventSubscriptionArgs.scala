@@ -20,9 +20,9 @@ trait TableEventSubscriptionArgs extends js.Object {
 
 object TableEventSubscriptionArgs {
   @scala.inline
-  def apply(startingPosition: TRIM_HORIZON | LATEST, batchSize: Int | Double = null): TableEventSubscriptionArgs = {
+  def apply(startingPosition: TRIM_HORIZON | LATEST, batchSize: js.UndefOr[Double] = js.undefined): TableEventSubscriptionArgs = {
     val __obj = js.Dynamic.literal(startingPosition = startingPosition.asInstanceOf[js.Any])
-    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableEventSubscriptionArgs]
   }
 }

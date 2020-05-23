@@ -16,11 +16,15 @@ trait IReceivedMessage extends js.Object {
 
 object IReceivedMessage {
   @scala.inline
-  def apply(ackId: String = null, deliveryAttempt: Int | Double = null, message: IPubsubMessage = null): IReceivedMessage = {
+  def apply(
+    ackId: js.UndefOr[Null | String] = js.undefined,
+    deliveryAttempt: js.UndefOr[Null | Double] = js.undefined,
+    message: js.UndefOr[Null | IPubsubMessage] = js.undefined
+  ): IReceivedMessage = {
     val __obj = js.Dynamic.literal()
-    if (ackId != null) __obj.updateDynamic("ackId")(ackId.asInstanceOf[js.Any])
-    if (deliveryAttempt != null) __obj.updateDynamic("deliveryAttempt")(deliveryAttempt.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (!js.isUndefined(ackId)) __obj.updateDynamic("ackId")(ackId.asInstanceOf[js.Any])
+    if (!js.isUndefined(deliveryAttempt)) __obj.updateDynamic("deliveryAttempt")(deliveryAttempt.asInstanceOf[js.Any])
+    if (!js.isUndefined(message)) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[IReceivedMessage]
   }
 }

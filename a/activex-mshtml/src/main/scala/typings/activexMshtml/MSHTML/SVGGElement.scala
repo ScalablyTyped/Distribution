@@ -4,29 +4,57 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.SVGGElement")
-@js.native
-class SVGGElement protected () extends js.Object {
+trait SVGGElement extends js.Object {
   @JSName("MSHTML.SVGGElement_typekey")
-  var MSHTMLDotSVGGElement_typekey: SVGGElement = js.native
-  val className: SVGAnimatedString = js.native
-  val externalResourcesRequired: SVGAnimatedBoolean = js.native
-  val farthestViewportElement: ISVGElement = js.native
-  var focusable: SVGAnimatedEnumeration = js.native
-  val nearestViewportElement: ISVGElement = js.native
-  var ownerSVGElement: ISVGSVGElement = js.native
-  val requiredExtensions: SVGStringList = js.native
-  val requiredFeatures: SVGStringList = js.native
-  val systemLanguage: SVGStringList = js.native
-  val transform: SVGAnimatedTransformList = js.native
-  var viewportElement: ISVGElement = js.native
-  var xmlbase: String = js.native
-  var xmllang: String = js.native
-  var xmlspace: String = js.native
-  def getBBox(): SVGRect = js.native
-  def getCTM(): SVGMatrix = js.native
-  def getScreenCTM(): SVGMatrix = js.native
-  def getTransformToElement(pElement: ISVGElement): SVGMatrix = js.native
-  def hasExtension(extension: String): Boolean = js.native
+  var MSHTMLDotSVGGElement_typekey: SVGGElement
+  val className: SVGAnimatedString
+  val externalResourcesRequired: SVGAnimatedBoolean
+  val farthestViewportElement: ISVGElement
+  var focusable: SVGAnimatedEnumeration
+  val nearestViewportElement: ISVGElement
+  var ownerSVGElement: ISVGSVGElement
+  val requiredExtensions: SVGStringList
+  val requiredFeatures: SVGStringList
+  val systemLanguage: SVGStringList
+  val transform: SVGAnimatedTransformList
+  var viewportElement: ISVGElement
+  var xmlbase: String
+  var xmllang: String
+  var xmlspace: String
+  def getBBox(): SVGRect
+  def getCTM(): SVGMatrix
+  def getScreenCTM(): SVGMatrix
+  def getTransformToElement(pElement: ISVGElement): SVGMatrix
+  def hasExtension(extension: String): Boolean
+}
+
+object SVGGElement {
+  @scala.inline
+  def apply(
+    MSHTMLDotSVGGElement_typekey: SVGGElement,
+    className: SVGAnimatedString,
+    externalResourcesRequired: SVGAnimatedBoolean,
+    farthestViewportElement: ISVGElement,
+    focusable: SVGAnimatedEnumeration,
+    getBBox: () => SVGRect,
+    getCTM: () => SVGMatrix,
+    getScreenCTM: () => SVGMatrix,
+    getTransformToElement: ISVGElement => SVGMatrix,
+    hasExtension: String => Boolean,
+    nearestViewportElement: ISVGElement,
+    ownerSVGElement: ISVGSVGElement,
+    requiredExtensions: SVGStringList,
+    requiredFeatures: SVGStringList,
+    systemLanguage: SVGStringList,
+    transform: SVGAnimatedTransformList,
+    viewportElement: ISVGElement,
+    xmlbase: String,
+    xmllang: String,
+    xmlspace: String
+  ): SVGGElement = {
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], externalResourcesRequired = externalResourcesRequired.asInstanceOf[js.Any], farthestViewportElement = farthestViewportElement.asInstanceOf[js.Any], focusable = focusable.asInstanceOf[js.Any], getBBox = js.Any.fromFunction0(getBBox), getCTM = js.Any.fromFunction0(getCTM), getScreenCTM = js.Any.fromFunction0(getScreenCTM), getTransformToElement = js.Any.fromFunction1(getTransformToElement), hasExtension = js.Any.fromFunction1(hasExtension), nearestViewportElement = nearestViewportElement.asInstanceOf[js.Any], ownerSVGElement = ownerSVGElement.asInstanceOf[js.Any], requiredExtensions = requiredExtensions.asInstanceOf[js.Any], requiredFeatures = requiredFeatures.asInstanceOf[js.Any], systemLanguage = systemLanguage.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any], viewportElement = viewportElement.asInstanceOf[js.Any], xmlbase = xmlbase.asInstanceOf[js.Any], xmllang = xmllang.asInstanceOf[js.Any], xmlspace = xmlspace.asInstanceOf[js.Any])
+    __obj.updateDynamic("MSHTML.SVGGElement_typekey")(MSHTMLDotSVGGElement_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SVGGElement]
+  }
 }
 

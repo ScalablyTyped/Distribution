@@ -5,18 +5,35 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.EffectParameters")
-@js.native
-class EffectParameters protected () extends js.Object {
-  var Amount: Double = js.native
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
-  val Color2: ColorFormat = js.native
-  var Direction: MsoAnimDirection = js.native
-  var FontName: String = js.native
-  val Parent: js.Any = js.native
+trait EffectParameters extends js.Object {
+  var Amount: Double
+  val Application: typings.activexPowerpoint.PowerPoint.Application
+  val Color2: ColorFormat
+  var Direction: MsoAnimDirection
+  var FontName: String
+  val Parent: js.Any
   @JSName("PowerPoint.EffectParameters_typekey")
-  var PowerPointDotEffectParameters_typekey: EffectParameters = js.native
-  var Relative: MsoTriState = js.native
-  var Size: Double = js.native
+  var PowerPointDotEffectParameters_typekey: EffectParameters
+  var Relative: MsoTriState
+  var Size: Double
+}
+
+object EffectParameters {
+  @scala.inline
+  def apply(
+    Amount: Double,
+    Application: Application,
+    Color2: ColorFormat,
+    Direction: MsoAnimDirection,
+    FontName: String,
+    Parent: js.Any,
+    PowerPointDotEffectParameters_typekey: EffectParameters,
+    Relative: MsoTriState,
+    Size: Double
+  ): EffectParameters = {
+    val __obj = js.Dynamic.literal(Amount = Amount.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], Color2 = Color2.asInstanceOf[js.Any], Direction = Direction.asInstanceOf[js.Any], FontName = FontName.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Relative = Relative.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any])
+    __obj.updateDynamic("PowerPoint.EffectParameters_typekey")(PowerPointDotEffectParameters_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EffectParameters]
+  }
 }
 

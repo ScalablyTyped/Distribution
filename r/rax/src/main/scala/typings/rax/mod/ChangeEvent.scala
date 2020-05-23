@@ -1,11 +1,11 @@
 package typings.rax.mod
 
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ChangeEvent[T] extends BaseSyntheticEvent[Event_, EventTarget with T, EventTarget] {
+trait ChangeEvent[T] extends BaseSyntheticEvent[Event, EventTarget with T, EventTarget] {
   @JSName("target")
   var target_ChangeEvent: EventTarget with T
 }
@@ -21,7 +21,7 @@ object ChangeEvent {
     isDefaultPrevented: () => Boolean,
     isPropagationStopped: () => Boolean,
     isTrusted: Boolean,
-    nativeEvent: Event_,
+    nativeEvent: Event,
     persist: () => Unit,
     preventDefault: () => Unit,
     stopPropagation: () => Unit,

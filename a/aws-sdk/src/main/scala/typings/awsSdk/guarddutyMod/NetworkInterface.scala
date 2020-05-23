@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 @js.native
 trait NetworkInterface extends js.Object {
   /**
-    * A list of EC2 instance IPv6 address information.
+    * A list of IPv6 addresses for the EC2 instance.
     */
   var Ipv6Addresses: js.UndefOr[typings.awsSdk.guarddutyMod.Ipv6Addresses] = js.native
   /**
-    * The ID of the network interface
+    * The ID of the network interface.
     */
   var NetworkInterfaceId: js.UndefOr[String] = js.native
   /**
-    * Private DNS name of the EC2 instance.
+    * The private DNS name of the EC2 instance.
     */
   var PrivateDnsName: js.UndefOr[String] = js.native
   /**
-    * Private IP address of the EC2 instance.
+    * The private IP address of the EC2 instance.
     */
   var PrivateIpAddress: js.UndefOr[String] = js.native
   /**
@@ -27,15 +27,15 @@ trait NetworkInterface extends js.Object {
     */
   var PrivateIpAddresses: js.UndefOr[typings.awsSdk.guarddutyMod.PrivateIpAddresses] = js.native
   /**
-    * Public DNS name of the EC2 instance.
+    * The public DNS name of the EC2 instance.
     */
   var PublicDnsName: js.UndefOr[String] = js.native
   /**
-    * Public IP address of the EC2 instance.
+    * The public IP address of the EC2 instance.
     */
   var PublicIp: js.UndefOr[String] = js.native
   /**
-    * Security groups associated with the EC2 instance.
+    * The security groups associated with the EC2 instance.
     */
   var SecurityGroups: js.UndefOr[typings.awsSdk.guarddutyMod.SecurityGroups] = js.native
   /**

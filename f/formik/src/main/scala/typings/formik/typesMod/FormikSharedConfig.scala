@@ -27,11 +27,11 @@ object FormikSharedConfig {
     validateOnMount: js.UndefOr[Boolean] = js.undefined
   ): FormikSharedConfig[Props] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableReinitialize)) __obj.updateDynamic("enableReinitialize")(enableReinitialize.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableReinitialize)) __obj.updateDynamic("enableReinitialize")(enableReinitialize.get.asInstanceOf[js.Any])
     if (isInitialValid != null) __obj.updateDynamic("isInitialValid")(isInitialValid.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateOnBlur)) __obj.updateDynamic("validateOnBlur")(validateOnBlur.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateOnChange)) __obj.updateDynamic("validateOnChange")(validateOnChange.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateOnMount)) __obj.updateDynamic("validateOnMount")(validateOnMount.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateOnBlur)) __obj.updateDynamic("validateOnBlur")(validateOnBlur.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateOnChange)) __obj.updateDynamic("validateOnChange")(validateOnChange.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateOnMount)) __obj.updateDynamic("validateOnMount")(validateOnMount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormikSharedConfig[Props]]
   }
 }

@@ -15,13 +15,13 @@ object ProcessCpuInfo {
     pid: Double,
     ppid: Double,
     commandLine: String = null,
-    cpu: Int | Double = null,
-    memory: Int | Double = null
+    cpu: js.UndefOr[Double] = js.undefined,
+    memory: js.UndefOr[Double] = js.undefined
   ): ProcessCpuInfo = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], ppid = ppid.asInstanceOf[js.Any])
     if (commandLine != null) __obj.updateDynamic("commandLine")(commandLine.asInstanceOf[js.Any])
-    if (cpu != null) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])
-    if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
+    if (!js.isUndefined(cpu)) __obj.updateDynamic("cpu")(cpu.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(memory)) __obj.updateDynamic("memory")(memory.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessCpuInfo]
   }
 }

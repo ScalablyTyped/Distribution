@@ -1,13 +1,12 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides event properties that are specific to modifications to the Document Object Model (DOM) hierarchy and nodes. */
 @js.native
-trait MutationEvent extends Event_ {
+trait MutationEvent extends Event {
   val ADDITION: Double = js.native
   val MODIFICATION: Double = js.native
   val REMOVAL: Double = js.native
@@ -26,13 +25,5 @@ trait MutationEvent extends Event_ {
     attrNameArg: java.lang.String,
     attrChangeArg: Double
   ): Unit = js.native
-}
-
-@JSGlobal("MutationEvent")
-@js.native
-object MutationEvent extends Instantiable0[MutationEvent] {
-  val ADDITION: Double = js.native
-  val MODIFICATION: Double = js.native
-  val REMOVAL: Double = js.native
 }
 

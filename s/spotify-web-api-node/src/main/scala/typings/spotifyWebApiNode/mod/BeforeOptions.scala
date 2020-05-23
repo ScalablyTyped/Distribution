@@ -10,10 +10,10 @@ trait BeforeOptions extends LimitOptions {
 
 object BeforeOptions {
   @scala.inline
-  def apply(before: Int | Double = null, limit: Int | Double = null): BeforeOptions = {
+  def apply(before: js.UndefOr[Double] = js.undefined, limit: js.UndefOr[Double] = js.undefined): BeforeOptions = {
     val __obj = js.Dynamic.literal()
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(before)) __obj.updateDynamic("before")(before.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeforeOptions]
   }
 }

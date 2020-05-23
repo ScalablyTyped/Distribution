@@ -28,14 +28,14 @@ object ServiceRegistry {
   @scala.inline
   def apply(
     containerName: String = null,
-    containerPort: Int | scala.Double = null,
-    port: Int | scala.Double = null,
+    containerPort: js.UndefOr[BoxedInteger] = js.undefined,
+    port: js.UndefOr[BoxedInteger] = js.undefined,
     registryArn: String = null
   ): ServiceRegistry = {
     val __obj = js.Dynamic.literal()
     if (containerName != null) __obj.updateDynamic("containerName")(containerName.asInstanceOf[js.Any])
-    if (containerPort != null) __obj.updateDynamic("containerPort")(containerPort.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(containerPort)) __obj.updateDynamic("containerPort")(containerPort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (registryArn != null) __obj.updateDynamic("registryArn")(registryArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceRegistry]
   }

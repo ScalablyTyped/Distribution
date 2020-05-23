@@ -45,7 +45,7 @@ object OSNotificationPayload {
     launchURL: String = null,
     ledColor: String = null,
     lockScreenVisibility: OSLockScreenVisibility = null,
-    priority: Int | Double = null,
+    priority: js.UndefOr[Double] = js.undefined,
     smallIcon: String = null,
     smallIconAccentColor: String = null
   ): OSNotificationPayload = {
@@ -60,7 +60,7 @@ object OSNotificationPayload {
     if (launchURL != null) __obj.updateDynamic("launchURL")(launchURL.asInstanceOf[js.Any])
     if (ledColor != null) __obj.updateDynamic("ledColor")(ledColor.asInstanceOf[js.Any])
     if (lockScreenVisibility != null) __obj.updateDynamic("lockScreenVisibility")(lockScreenVisibility.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     if (smallIcon != null) __obj.updateDynamic("smallIcon")(smallIcon.asInstanceOf[js.Any])
     if (smallIconAccentColor != null) __obj.updateDynamic("smallIconAccentColor")(smallIconAccentColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[OSNotificationPayload]

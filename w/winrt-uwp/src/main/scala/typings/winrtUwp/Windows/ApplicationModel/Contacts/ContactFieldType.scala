@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -59,44 +58,6 @@ object ContactFieldType extends js.Object {
   /** The contact's Web site. */
   @js.native
   sealed trait website extends ContactFieldType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ContactFieldType with Double] = js.native
-  /* 7 */ @js.native
-  object address extends TopLevel[address with Double]
-  
-  /* 5 */ @js.native
-  object connectedServiceAccount extends TopLevel[connectedServiceAccount with Double]
-  
-  /* 4 */ @js.native
-  object custom extends TopLevel[custom with Double]
-  
-  /* 0 */ @js.native
-  object email extends TopLevel[email with Double]
-  
-  /* 6 */ @js.native
-  object importantDate extends TopLevel[importantDate with Double]
-  
-  /* 3 */ @js.native
-  object instantMessage extends TopLevel[instantMessage with Double]
-  
-  /* 11 */ @js.native
-  object jobInfo extends TopLevel[jobInfo with Double]
-  
-  /* 2 */ @js.native
-  object location extends TopLevel[location with Double]
-  
-  /* 9 */ @js.native
-  object notes extends TopLevel[notes with Double]
-  
-  /* 1 */ @js.native
-  object phoneNumber extends TopLevel[phoneNumber with Double]
-  
-  /* 8 */ @js.native
-  object significantOther extends TopLevel[significantOther with Double]
-  
-  /* 10 */ @js.native
-  object website extends TopLevel[website with Double]
   
 }
 

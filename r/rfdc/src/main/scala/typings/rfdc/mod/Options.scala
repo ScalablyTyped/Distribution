@@ -43,8 +43,8 @@ object Options {
   @scala.inline
   def apply(circles: js.UndefOr[Boolean] = js.undefined, proto: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(circles)) __obj.updateDynamic("circles")(circles.asInstanceOf[js.Any])
-    if (!js.isUndefined(proto)) __obj.updateDynamic("proto")(proto.asInstanceOf[js.Any])
+    if (!js.isUndefined(circles)) __obj.updateDynamic("circles")(circles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(proto)) __obj.updateDynamic("proto")(proto.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

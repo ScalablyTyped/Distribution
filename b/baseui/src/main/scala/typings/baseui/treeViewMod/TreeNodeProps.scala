@@ -20,7 +20,7 @@ object TreeNodeProps {
     overrides: TreeViewOverrides = null
   ): TreeNodeProps = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
-    if (!js.isUndefined(indentGuides)) __obj.updateDynamic("indentGuides")(indentGuides.asInstanceOf[js.Any])
+    if (!js.isUndefined(indentGuides)) __obj.updateDynamic("indentGuides")(indentGuides.get.asInstanceOf[js.Any])
     if (onToggle != null) __obj.updateDynamic("onToggle")(js.Any.fromFunction1(onToggle))
     if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeNodeProps]

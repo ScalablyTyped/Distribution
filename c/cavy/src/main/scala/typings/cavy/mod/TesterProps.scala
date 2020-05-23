@@ -23,15 +23,15 @@ object TesterProps {
     clearAsyncStorage: js.UndefOr[Boolean] = js.undefined,
     reporter: /* report */ TestReport => Unit = null,
     sendReport: js.UndefOr[Boolean] = js.undefined,
-    startDelay: Int | Double = null,
-    waitTime: Int | Double = null
+    startDelay: js.UndefOr[Double] = js.undefined,
+    waitTime: js.UndefOr[Double] = js.undefined
   ): TesterProps = {
     val __obj = js.Dynamic.literal(specs = specs.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearAsyncStorage)) __obj.updateDynamic("clearAsyncStorage")(clearAsyncStorage.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearAsyncStorage)) __obj.updateDynamic("clearAsyncStorage")(clearAsyncStorage.get.asInstanceOf[js.Any])
     if (reporter != null) __obj.updateDynamic("reporter")(js.Any.fromFunction1(reporter))
-    if (!js.isUndefined(sendReport)) __obj.updateDynamic("sendReport")(sendReport.asInstanceOf[js.Any])
-    if (startDelay != null) __obj.updateDynamic("startDelay")(startDelay.asInstanceOf[js.Any])
-    if (waitTime != null) __obj.updateDynamic("waitTime")(waitTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendReport)) __obj.updateDynamic("sendReport")(sendReport.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startDelay)) __obj.updateDynamic("startDelay")(startDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitTime)) __obj.updateDynamic("waitTime")(waitTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TesterProps]
   }
 }

@@ -18,10 +18,10 @@ trait FaceMatch extends js.Object {
 
 object FaceMatch {
   @scala.inline
-  def apply(Face: Face = null, Similarity: Int | Double = null): FaceMatch = {
+  def apply(Face: Face = null, Similarity: js.UndefOr[Percent] = js.undefined): FaceMatch = {
     val __obj = js.Dynamic.literal()
     if (Face != null) __obj.updateDynamic("Face")(Face.asInstanceOf[js.Any])
-    if (Similarity != null) __obj.updateDynamic("Similarity")(Similarity.asInstanceOf[js.Any])
+    if (!js.isUndefined(Similarity)) __obj.updateDynamic("Similarity")(Similarity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FaceMatch]
   }
 }

@@ -1,78 +1,78 @@
 package typings.gapiClientIdentitytoolkit.gapi.client.identitytoolkit
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientIdentitytoolkit.AnonAlt
-import typings.gapiClientIdentitytoolkit.AnonDelegatedProjectNumber
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientIdentitytoolkit.anon.Alt
+import typings.gapiClientIdentitytoolkit.anon.DelegatedProjectNumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RelyingpartyResource extends js.Object {
   /** Creates the URI used by the IdP to authenticate the user. */
-  def createAuthUri(request: AnonAlt): Request_[CreateAuthUriResponse]
+  def createAuthUri(request: Alt): Request[CreateAuthUriResponse]
   /** Delete user account. */
-  def deleteAccount(request: AnonAlt): Request_[DeleteAccountResponse]
+  def deleteAccount(request: Alt): Request[DeleteAccountResponse]
   /** Batch download user accounts. */
-  def downloadAccount(request: AnonAlt): Request_[DownloadAccountResponse]
+  def downloadAccount(request: Alt): Request[DownloadAccountResponse]
   /** Reset password for a user. */
-  def emailLinkSignin(request: AnonAlt): Request_[EmailLinkSigninResponse]
+  def emailLinkSignin(request: Alt): Request[EmailLinkSigninResponse]
   /** Returns the account info. */
-  def getAccountInfo(request: AnonAlt): Request_[GetAccountInfoResponse]
+  def getAccountInfo(request: Alt): Request[GetAccountInfoResponse]
   /** Get a code for user action confirmation. */
-  def getOobConfirmationCode(request: AnonAlt): Request_[GetOobConfirmationCodeResponse]
+  def getOobConfirmationCode(request: Alt): Request[GetOobConfirmationCodeResponse]
   /** Get project configuration. */
-  def getProjectConfig(request: AnonDelegatedProjectNumber): Request_[IdentitytoolkitRelyingpartyGetProjectConfigResponse]
+  def getProjectConfig(request: DelegatedProjectNumber): Request[IdentitytoolkitRelyingpartyGetProjectConfigResponse]
   /** Get token signing public key. */
-  def getPublicKeys(request: AnonAlt): Request_[js.Object]
+  def getPublicKeys(request: Alt): Request[js.Object]
   /** Get recaptcha secure param. */
-  def getRecaptchaParam(request: AnonAlt): Request_[GetRecaptchaParamResponse]
+  def getRecaptchaParam(request: Alt): Request[GetRecaptchaParamResponse]
   /** Reset password for a user. */
-  def resetPassword(request: AnonAlt): Request_[ResetPasswordResponse]
+  def resetPassword(request: Alt): Request[ResetPasswordResponse]
   /** Send SMS verification code. */
-  def sendVerificationCode(request: AnonAlt): Request_[IdentitytoolkitRelyingpartySendVerificationCodeResponse]
+  def sendVerificationCode(request: Alt): Request[IdentitytoolkitRelyingpartySendVerificationCodeResponse]
   /** Set account info for a user. */
-  def setAccountInfo(request: AnonAlt): Request_[SetAccountInfoResponse]
+  def setAccountInfo(request: Alt): Request[SetAccountInfoResponse]
   /** Set project configuration. */
-  def setProjectConfig(request: AnonAlt): Request_[IdentitytoolkitRelyingpartySetProjectConfigResponse]
+  def setProjectConfig(request: Alt): Request[IdentitytoolkitRelyingpartySetProjectConfigResponse]
   /** Sign out user. */
-  def signOutUser(request: AnonAlt): Request_[IdentitytoolkitRelyingpartySignOutUserResponse]
+  def signOutUser(request: Alt): Request[IdentitytoolkitRelyingpartySignOutUserResponse]
   /** Signup new user. */
-  def signupNewUser(request: AnonAlt): Request_[SignupNewUserResponse]
+  def signupNewUser(request: Alt): Request[SignupNewUserResponse]
   /** Batch upload existing user accounts. */
-  def uploadAccount(request: AnonAlt): Request_[UploadAccountResponse]
+  def uploadAccount(request: Alt): Request[UploadAccountResponse]
   /** Verifies the assertion returned by the IdP. */
-  def verifyAssertion(request: AnonAlt): Request_[VerifyAssertionResponse]
+  def verifyAssertion(request: Alt): Request[VerifyAssertionResponse]
   /** Verifies the developer asserted ID token. */
-  def verifyCustomToken(request: AnonAlt): Request_[VerifyCustomTokenResponse]
+  def verifyCustomToken(request: Alt): Request[VerifyCustomTokenResponse]
   /** Verifies the user entered password. */
-  def verifyPassword(request: AnonAlt): Request_[VerifyPasswordResponse]
+  def verifyPassword(request: Alt): Request[VerifyPasswordResponse]
   /** Verifies ownership of a phone number and creates/updates the user account accordingly. */
-  def verifyPhoneNumber(request: AnonAlt): Request_[IdentitytoolkitRelyingpartyVerifyPhoneNumberResponse]
+  def verifyPhoneNumber(request: Alt): Request[IdentitytoolkitRelyingpartyVerifyPhoneNumberResponse]
 }
 
 object RelyingpartyResource {
   @scala.inline
   def apply(
-    createAuthUri: AnonAlt => Request_[CreateAuthUriResponse],
-    deleteAccount: AnonAlt => Request_[DeleteAccountResponse],
-    downloadAccount: AnonAlt => Request_[DownloadAccountResponse],
-    emailLinkSignin: AnonAlt => Request_[EmailLinkSigninResponse],
-    getAccountInfo: AnonAlt => Request_[GetAccountInfoResponse],
-    getOobConfirmationCode: AnonAlt => Request_[GetOobConfirmationCodeResponse],
-    getProjectConfig: AnonDelegatedProjectNumber => Request_[IdentitytoolkitRelyingpartyGetProjectConfigResponse],
-    getPublicKeys: AnonAlt => Request_[js.Object],
-    getRecaptchaParam: AnonAlt => Request_[GetRecaptchaParamResponse],
-    resetPassword: AnonAlt => Request_[ResetPasswordResponse],
-    sendVerificationCode: AnonAlt => Request_[IdentitytoolkitRelyingpartySendVerificationCodeResponse],
-    setAccountInfo: AnonAlt => Request_[SetAccountInfoResponse],
-    setProjectConfig: AnonAlt => Request_[IdentitytoolkitRelyingpartySetProjectConfigResponse],
-    signOutUser: AnonAlt => Request_[IdentitytoolkitRelyingpartySignOutUserResponse],
-    signupNewUser: AnonAlt => Request_[SignupNewUserResponse],
-    uploadAccount: AnonAlt => Request_[UploadAccountResponse],
-    verifyAssertion: AnonAlt => Request_[VerifyAssertionResponse],
-    verifyCustomToken: AnonAlt => Request_[VerifyCustomTokenResponse],
-    verifyPassword: AnonAlt => Request_[VerifyPasswordResponse],
-    verifyPhoneNumber: AnonAlt => Request_[IdentitytoolkitRelyingpartyVerifyPhoneNumberResponse]
+    createAuthUri: Alt => Request[CreateAuthUriResponse],
+    deleteAccount: Alt => Request[DeleteAccountResponse],
+    downloadAccount: Alt => Request[DownloadAccountResponse],
+    emailLinkSignin: Alt => Request[EmailLinkSigninResponse],
+    getAccountInfo: Alt => Request[GetAccountInfoResponse],
+    getOobConfirmationCode: Alt => Request[GetOobConfirmationCodeResponse],
+    getProjectConfig: DelegatedProjectNumber => Request[IdentitytoolkitRelyingpartyGetProjectConfigResponse],
+    getPublicKeys: Alt => Request[js.Object],
+    getRecaptchaParam: Alt => Request[GetRecaptchaParamResponse],
+    resetPassword: Alt => Request[ResetPasswordResponse],
+    sendVerificationCode: Alt => Request[IdentitytoolkitRelyingpartySendVerificationCodeResponse],
+    setAccountInfo: Alt => Request[SetAccountInfoResponse],
+    setProjectConfig: Alt => Request[IdentitytoolkitRelyingpartySetProjectConfigResponse],
+    signOutUser: Alt => Request[IdentitytoolkitRelyingpartySignOutUserResponse],
+    signupNewUser: Alt => Request[SignupNewUserResponse],
+    uploadAccount: Alt => Request[UploadAccountResponse],
+    verifyAssertion: Alt => Request[VerifyAssertionResponse],
+    verifyCustomToken: Alt => Request[VerifyCustomTokenResponse],
+    verifyPassword: Alt => Request[VerifyPasswordResponse],
+    verifyPhoneNumber: Alt => Request[IdentitytoolkitRelyingpartyVerifyPhoneNumberResponse]
   ): RelyingpartyResource = {
     val __obj = js.Dynamic.literal(createAuthUri = js.Any.fromFunction1(createAuthUri), deleteAccount = js.Any.fromFunction1(deleteAccount), downloadAccount = js.Any.fromFunction1(downloadAccount), emailLinkSignin = js.Any.fromFunction1(emailLinkSignin), getAccountInfo = js.Any.fromFunction1(getAccountInfo), getOobConfirmationCode = js.Any.fromFunction1(getOobConfirmationCode), getProjectConfig = js.Any.fromFunction1(getProjectConfig), getPublicKeys = js.Any.fromFunction1(getPublicKeys), getRecaptchaParam = js.Any.fromFunction1(getRecaptchaParam), resetPassword = js.Any.fromFunction1(resetPassword), sendVerificationCode = js.Any.fromFunction1(sendVerificationCode), setAccountInfo = js.Any.fromFunction1(setAccountInfo), setProjectConfig = js.Any.fromFunction1(setProjectConfig), signOutUser = js.Any.fromFunction1(signOutUser), signupNewUser = js.Any.fromFunction1(signupNewUser), uploadAccount = js.Any.fromFunction1(uploadAccount), verifyAssertion = js.Any.fromFunction1(verifyAssertion), verifyCustomToken = js.Any.fromFunction1(verifyCustomToken), verifyPassword = js.Any.fromFunction1(verifyPassword), verifyPhoneNumber = js.Any.fromFunction1(verifyPhoneNumber))
     __obj.asInstanceOf[RelyingpartyResource]

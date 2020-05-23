@@ -1,6 +1,5 @@
 package typings.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object SortMethod extends js.Object {
   
   @js.native
   sealed trait strokeCount extends SortMethod
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[SortMethod with String] = js.native
-  /* "PinYin" */ @js.native
-  object pinYin extends TopLevel[pinYin with String]
-  
-  /* "StrokeCount" */ @js.native
-  object strokeCount extends TopLevel[strokeCount with String]
   
 }
 

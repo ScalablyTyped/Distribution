@@ -5,8 +5,6 @@ import typings.appBuilderLib.packagerApiMod.PackagerOptions
 import typings.appBuilderLib.platformSpecificBuildOptionsMod.PlatformSpecificBuildOptions
 import typings.builderUtil.archMod.Arch
 import typings.electronBuilder.builderMod.CliOptions
-import typings.electronBuilder.electronBuilderStrings.default
-import typings.electronBuilder.electronBuilderStrings.dir
 import typings.electronPublish.mod.PublishOptions
 import typings.std.Map
 import scala.scalajs.js
@@ -21,11 +19,6 @@ object mod extends js.Object {
     extends typings.appBuilderLib.mod.AppInfo {
     def this(info: typings.appBuilderLib.packagerMod.Packager) = this()
     def this(info: typings.appBuilderLib.packagerMod.Packager, buildVersion: String) = this()
-    def this(
-      info: typings.appBuilderLib.packagerMod.Packager,
-      buildVersion: js.UndefOr[scala.Nothing],
-      platformSpecificOptions: PlatformSpecificBuildOptions
-    ) = this()
     def this(
       info: typings.appBuilderLib.packagerMod.Packager,
       buildVersion: String,
@@ -75,8 +68,8 @@ object mod extends js.Object {
     protected def this(name: String, isAsyncSupported: Boolean) = this()
   }
   
-  val DEFAULT_TARGET: default = js.native
-  val DIR_TARGET: dir = js.native
+  val DEFAULT_TARGET: /* "default" */ String = js.native
+  val DIR_TARGET: /* "dir" */ String = js.native
   def archFromString(name: String): Arch = js.native
   def build(): js.Promise[js.Array[String]] = js.native
   def build(rawOptions: CliOptions): js.Promise[js.Array[String]] = js.native

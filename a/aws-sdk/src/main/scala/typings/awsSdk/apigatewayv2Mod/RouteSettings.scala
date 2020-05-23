@@ -31,18 +31,18 @@ trait RouteSettings extends js.Object {
 object RouteSettings {
   @scala.inline
   def apply(
-    DataTraceEnabled: js.UndefOr[Boolean] = js.undefined,
-    DetailedMetricsEnabled: js.UndefOr[Boolean] = js.undefined,
+    DataTraceEnabled: js.UndefOr[boolean] = js.undefined,
+    DetailedMetricsEnabled: js.UndefOr[boolean] = js.undefined,
     LoggingLevel: LoggingLevel = null,
-    ThrottlingBurstLimit: Int | Double = null,
-    ThrottlingRateLimit: Int | Double = null
+    ThrottlingBurstLimit: js.UndefOr[integer] = js.undefined,
+    ThrottlingRateLimit: js.UndefOr[double] = js.undefined
   ): RouteSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DataTraceEnabled)) __obj.updateDynamic("DataTraceEnabled")(DataTraceEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(DetailedMetricsEnabled)) __obj.updateDynamic("DetailedMetricsEnabled")(DetailedMetricsEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(DataTraceEnabled)) __obj.updateDynamic("DataTraceEnabled")(DataTraceEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DetailedMetricsEnabled)) __obj.updateDynamic("DetailedMetricsEnabled")(DetailedMetricsEnabled.get.asInstanceOf[js.Any])
     if (LoggingLevel != null) __obj.updateDynamic("LoggingLevel")(LoggingLevel.asInstanceOf[js.Any])
-    if (ThrottlingBurstLimit != null) __obj.updateDynamic("ThrottlingBurstLimit")(ThrottlingBurstLimit.asInstanceOf[js.Any])
-    if (ThrottlingRateLimit != null) __obj.updateDynamic("ThrottlingRateLimit")(ThrottlingRateLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(ThrottlingBurstLimit)) __obj.updateDynamic("ThrottlingBurstLimit")(ThrottlingBurstLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ThrottlingRateLimit)) __obj.updateDynamic("ThrottlingRateLimit")(ThrottlingRateLimit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteSettings]
   }
 }

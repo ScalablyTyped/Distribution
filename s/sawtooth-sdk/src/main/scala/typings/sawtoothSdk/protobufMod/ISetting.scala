@@ -12,9 +12,9 @@ trait ISetting extends js.Object {
 
 object ISetting {
   @scala.inline
-  def apply(entries: js.Array[IEntry] = null): ISetting = {
+  def apply(entries: js.UndefOr[Null | js.Array[IEntry]] = js.undefined): ISetting = {
     val __obj = js.Dynamic.literal()
-    if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
+    if (!js.isUndefined(entries)) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISetting]
   }
 }

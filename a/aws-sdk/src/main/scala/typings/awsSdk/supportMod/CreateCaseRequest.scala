@@ -7,39 +7,39 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateCaseRequest extends js.Object {
   /**
-    * The ID of a set of one or more attachments for the case. Create the set by using AddAttachmentsToSet.
+    * The ID of a set of one or more attachments for the case. Create the set by using the AddAttachmentsToSet operation.
     */
   var attachmentSetId: js.UndefOr[AttachmentSetId] = js.native
   /**
-    * The category of problem for the AWS Support case.
+    * The category of problem for the AWS Support case. You also use the DescribeServices operation to get the category code for a service. Each AWS service defines its own set of category codes.
     */
   var categoryCode: js.UndefOr[CategoryCode] = js.native
   /**
-    * A list of email addresses that AWS Support copies on case correspondence.
+    * A list of email addresses that AWS Support copies on case correspondence. AWS Support identifies the account that creates the case when you specify your AWS credentials in an HTTP POST method or use the AWS SDKs. 
     */
   var ccEmailAddresses: js.UndefOr[CcEmailAddressList] = js.native
   /**
-    * The communication body text when you create an AWS Support case by calling CreateCase.
+    * The communication body text that describes the issue. This text appears in the Description field on the AWS Support Center Create Case page.
     */
   var communicationBody: CommunicationBody = js.native
   /**
-    * The type of issue for the case. You can specify either "customer-service" or "technical." If you do not indicate a value, the default is "technical."  Service limit increases are not supported by the Support API; you must submit service limit increase requests in Support Center. 
+    * The type of issue for the case. You can specify customer-service or technical. If you don't specify a value, the default is technical.
     */
   var issueType: js.UndefOr[IssueType] = js.native
   /**
-    * The ISO 639-1 code for the language in which AWS provides support. AWS Support currently supports English ("en") and Japanese ("ja"). Language parameters must be passed explicitly for operations that take them.
+    * The language in which AWS Support handles the case. You must specify the ISO 639-1 code for the language parameter if you want support in that language. Currently, English ("en") and Japanese ("ja") are supported.
     */
   var language: js.UndefOr[Language] = js.native
   /**
-    * The code for the AWS service returned by the call to DescribeServices.
+    * The code for the AWS service. You can use the DescribeServices operation to get the possible serviceCode values.
     */
   var serviceCode: js.UndefOr[ServiceCode] = js.native
   /**
-    * The code for the severity level returned by the call to DescribeSeverityLevels.  The availability of severity levels depends on the support plan for the account. 
+    * A value that indicates the urgency of the case. This value determines the response time according to your service level agreement with AWS Support. You can use the DescribeSeverityLevels operation to get the possible values for severityCode.  For more information, see SeverityLevel and Choosing a Severity in the AWS Support User Guide.  The availability of severity levels depends on the support plan for the AWS account. 
     */
   var severityCode: js.UndefOr[SeverityCode] = js.native
   /**
-    * The title of the AWS Support case.
+    * The title of the AWS Support case. The title appears in the Subject field on the AWS Support Center Create Case page.
     */
   var subject: Subject = js.native
 }

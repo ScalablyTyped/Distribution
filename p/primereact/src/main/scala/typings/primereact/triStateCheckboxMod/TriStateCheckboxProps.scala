@@ -1,6 +1,6 @@
 package typings.primereact.triStateCheckboxMod
 
-import typings.primereact.AnonTarget
+import typings.primereact.anon.Target
 import typings.primereact.tooltipOptionsMod.TooltipOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ trait TriStateCheckboxProps extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   var inputId: js.UndefOr[String] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ AnonTarget, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ Target, Unit]] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
   var tooltip: js.UndefOr[js.Any] = js.undefined
   var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
@@ -29,16 +29,16 @@ object TriStateCheckboxProps {
     id: String = null,
     inputId: String = null,
     name: String = null,
-    onChange: /* e */ AnonTarget => Unit = null,
+    onChange: /* e */ Target => Unit = null,
     style: js.Object = null,
     tooltip: js.Any = null,
     tooltipOptions: TooltipOptions = null,
-    value: js.UndefOr[Boolean] = js.undefined
+    value: js.UndefOr[Null | Boolean] = js.undefined
   ): TriStateCheckboxProps = {
     val __obj = js.Dynamic.literal()
     if (ariaLabelledBy != null) __obj.updateDynamic("ariaLabelledBy")(ariaLabelledBy.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inputId != null) __obj.updateDynamic("inputId")(inputId.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

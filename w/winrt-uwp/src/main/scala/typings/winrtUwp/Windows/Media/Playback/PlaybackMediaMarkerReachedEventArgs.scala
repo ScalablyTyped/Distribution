@@ -5,10 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides data for PlaybackMediaMarkerReached events. */
-@JSGlobal("Windows.Media.Playback.PlaybackMediaMarkerReachedEventArgs")
-@js.native
-abstract class PlaybackMediaMarkerReachedEventArgs () extends js.Object {
+trait PlaybackMediaMarkerReachedEventArgs extends js.Object {
   /** Gets the PlaybackMediaMarker that was reached. */
-  var playbackMediaMarker: PlaybackMediaMarker = js.native
+  var playbackMediaMarker: PlaybackMediaMarker
+}
+
+object PlaybackMediaMarkerReachedEventArgs {
+  @scala.inline
+  def apply(playbackMediaMarker: PlaybackMediaMarker): PlaybackMediaMarkerReachedEventArgs = {
+    val __obj = js.Dynamic.literal(playbackMediaMarker = playbackMediaMarker.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlaybackMediaMarkerReachedEventArgs]
+  }
 }
 

@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("InfoPath.HTMLTaskPaneObject")
 @js.native
-class HTMLTaskPaneObject protected () extends js.Object {
+trait HTMLTaskPaneObject extends js.Object {
   val HTMLDocument: IHTMLDocument2 = js.native
   @JSName("HTMLWindow")
   val HTMLWindow_Original: IHTMLWindow2 = js.native

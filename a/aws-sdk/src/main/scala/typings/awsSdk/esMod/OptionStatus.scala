@@ -34,12 +34,12 @@ object OptionStatus {
     CreationDate: UpdateTimestamp,
     State: OptionState,
     UpdateDate: UpdateTimestamp,
-    PendingDeletion: js.UndefOr[scala.Boolean] = js.undefined,
-    UpdateVersion: Int | scala.Double = null
+    PendingDeletion: js.UndefOr[Boolean] = js.undefined,
+    UpdateVersion: js.UndefOr[UIntValue] = js.undefined
   ): OptionStatus = {
     val __obj = js.Dynamic.literal(CreationDate = CreationDate.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], UpdateDate = UpdateDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(PendingDeletion)) __obj.updateDynamic("PendingDeletion")(PendingDeletion.asInstanceOf[js.Any])
-    if (UpdateVersion != null) __obj.updateDynamic("UpdateVersion")(UpdateVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(PendingDeletion)) __obj.updateDynamic("PendingDeletion")(PendingDeletion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(UpdateVersion)) __obj.updateDynamic("UpdateVersion")(UpdateVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionStatus]
   }
 }

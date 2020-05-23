@@ -58,7 +58,7 @@ trait PlusBluetooth extends js.Object {
   /**
     * 关闭蓝牙模块
     * 断开所有已经建立的连接，释放系统资源，要求在蓝牙功能使用完成后调用（于openBluetoothAdapter成对使用）。
-    * 	关闭成功后触发options参数中的success回调，失败触发options参数中的fail回调。
+    *     关闭成功后触发options参数中的success回调，失败触发options参数中的fail回调。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
@@ -151,7 +151,7 @@ trait PlusBluetooth extends js.Object {
   /**
     * 获取已搜索到的蓝牙设备
     * 包括已经和本机处于连接状态的设备。
-    * 	获取成功后触发options参数中的success回调，失败触发options参数中的fail回调。
+    *     获取成功后触发options参数中的success回调，失败触发options参数中的fail回调。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
@@ -247,7 +247,7 @@ trait PlusBluetooth extends js.Object {
   /**
     * 读取低功耗蓝牙设备指定特征值的二进制数据值
     * 指定的特征值需支持read操作才可以成功调用。
-    * 	并行调用多次可能导致读取失败，读取的数据需要在onBLECharacteristicValueChange方法注册的回调中获取。
+    *     并行调用多次可能导致读取失败，读取的数据需要在onBLECharacteristicValueChange方法注册的回调中获取。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
@@ -262,7 +262,7 @@ trait PlusBluetooth extends js.Object {
   /**
     * 开始搜索附近的蓝牙设备
     * 此操作比较耗费系统资源，请在搜索并连接到设备后调用stopBluetoothDevicesDiscovery方法停止搜索。
-    * 	搜索成功后触发options参数中的success回调，失败触发options参数中的fail回调。
+    *     搜索成功后触发options参数中的success回调，失败触发options参数中的fail回调。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
@@ -277,7 +277,7 @@ trait PlusBluetooth extends js.Object {
   /**
     * 停止搜寻附近的蓝牙外围设备
     * 若已经找到需要的蓝牙设备并不需要继续搜索时，应该调用该接口停止蓝牙搜索。
-    * 	停止成功后触发options参数中的success回调，失败触发options参数中的fail回调。
+    *     停止成功后触发options参数中的success回调，失败触发options参数中的fail回调。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
@@ -292,7 +292,7 @@ trait PlusBluetooth extends js.Object {
   /**
     * 向低功耗蓝牙设备指定特征值写入二进制数据
     * 指定的特征值需支持write操作才可以成功调用。
-    * 	并行调用多次可能导致读取失败，系统可能会限制单次传输的数据大小，超过最大字节数后可能会发生写入错误，建议每次写入不超过20字节。
+    *     并行调用多次可能导致读取失败，系统可能会限制单次传输的数据大小，超过最大字节数后可能会发生写入错误，建议每次写入不超过20字节。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */

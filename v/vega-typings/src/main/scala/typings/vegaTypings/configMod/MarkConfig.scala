@@ -31,6 +31,23 @@ trait MarkConfig extends js.Object {
     */
   var angle: js.UndefOr[Double | SignalRef] = js.undefined
   /**
+    * A boolean flag indicating if [ARIA attributes](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) should be included (SVG output only).
+    * If `false`, the "aria-hidden" attribute will be set on the output SVG element, removing the mark item from the ARIA accessibility tree.
+    */
+  var aria: js.UndefOr[Boolean | SignalRef] = js.undefined
+  /**
+    * Sets the type of user interface element of the mark item for [ARIA accessibility](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) (SVG output only).
+    * If specified, this property determines the "role" attribute.
+    * Warning: this property is experimental and may be changed in the future.
+    */
+  var ariaRole: js.UndefOr[String | SignalRef] = js.undefined
+  /**
+    * A human-readable, author-localized description for the role of the mark item for [ARIA accessibility](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) (SVG output only).
+    * If specified, this property determines the "aria-roledescription" attribute.
+    * Warning: this property is experimental and may be changed in the future.
+    */
+  var ariaRoleDescription: js.UndefOr[String | SignalRef] = js.undefined
+  /**
     * Whether to keep aspect ratio of image marks.
     */
   var aspect: js.UndefOr[Boolean] = js.undefined
@@ -49,39 +66,44 @@ trait MarkConfig extends js.Object {
   var blend: js.UndefOr[Blend] = js.undefined
   // ---------- Corner Radius: Bar, Tick, Rect ----------
   /**
-    * The radius in pixels of rounded rectangle or arc corners.
+    * The radius in pixels of rounded rectangles or arcs' corners.
     *
     * __Default value:__ `0`
     */
-  var cornerRadius: js.UndefOr[Double] = js.undefined
+  var cornerRadius: js.UndefOr[Double | SignalRef] = js.undefined
   /**
-    * The radius in pixels of rounded rectangle bottom left corner.
+    * The radius in pixels of rounded rectangles' bottom left corner.
     *
     * __Default value:__ `0`
     */
-  var cornerRadiusBottomLeft: js.UndefOr[Double] = js.undefined
+  var cornerRadiusBottomLeft: js.UndefOr[Double | SignalRef] = js.undefined
   /**
-    * The radius in pixels of rounded rectangle bottom right corner.
+    * The radius in pixels of rounded rectangles' bottom right corner.
     *
     * __Default value:__ `0`
     */
-  var cornerRadiusBottomRight: js.UndefOr[Double] = js.undefined
+  var cornerRadiusBottomRight: js.UndefOr[Double | SignalRef] = js.undefined
   /**
-    * The radius in pixels of rounded rectangle top right corner.
+    * The radius in pixels of rounded rectangles' top right corner.
     *
     * __Default value:__ `0`
     */
-  var cornerRadiusTopLeft: js.UndefOr[Double] = js.undefined
+  var cornerRadiusTopLeft: js.UndefOr[Double | SignalRef] = js.undefined
   /**
-    * The radius in pixels of rounded rectangle top left corner.
+    * The radius in pixels of rounded rectangles' top left corner.
     *
     * __Default value:__ `0`
     */
-  var cornerRadiusTopRight: js.UndefOr[Double] = js.undefined
+  var cornerRadiusTopRight: js.UndefOr[Double | SignalRef] = js.undefined
   /**
     * The mouse cursor used over the mark. Any valid [CSS cursor type](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor#Values) can be used.
     */
   var cursor: js.UndefOr[Cursor | SignalRef] = js.undefined
+  /**
+    * A text description of the mark item for [ARIA accessibility](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) (SVG output only).
+    * If specified, this property determines the ["aria-label" attribute](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute).
+    */
+  var description: js.UndefOr[String | SignalRef] = js.undefined
   /**
     * The direction of the text. One of `"ltr"` (left-to-right) or `"rtl"` (right-to-left). This property determines on which side is truncated in response to the limit parameter.
     *
@@ -103,7 +125,8 @@ trait MarkConfig extends js.Object {
     */
   var ellipsis: js.UndefOr[String] = js.undefined
   /**
-    * The start angle in radians for arc marks.
+    * The end angle in radians for arc marks.
+    * A value of `0` indicates up (north), increasing values proceed clockwise.
     */
   var endAngle: js.UndefOr[Double | SignalRef] = js.undefined
   /**
@@ -212,6 +235,10 @@ trait MarkConfig extends js.Object {
     */
   var outerRadius: js.UndefOr[Double | SignalRef] = js.undefined
   /**
+    * The angular padding applied to sides of the arc, in radians.
+    */
+  var padAngle: js.UndefOr[Double | SignalRef] = js.undefined
+  /**
     * Polar coordinate radial offset, in pixels, of the text label from the origin determined by the `x` and `y` properties.
     *
     * @minimum 0
@@ -237,6 +264,7 @@ trait MarkConfig extends js.Object {
   var size: js.UndefOr[Double | SignalRef] = js.undefined
   /**
     * The start angle in radians for arc marks.
+    * A value of `0` indicates up (north), increasing values proceed clockwise.
     */
   var startAngle: js.UndefOr[Double | SignalRef] = js.undefined
   /**
@@ -319,21 +347,25 @@ object MarkConfig {
   def apply(
     align: Align | SignalRef = null,
     angle: Double | SignalRef = null,
+    aria: Boolean | SignalRef = null,
+    ariaRole: String | SignalRef = null,
+    ariaRoleDescription: String | SignalRef = null,
     aspect: js.UndefOr[Boolean] = js.undefined,
     baseline: TextBaseline | SignalRef = null,
-    blend: Blend = null,
-    cornerRadius: Int | Double = null,
-    cornerRadiusBottomLeft: Int | Double = null,
-    cornerRadiusBottomRight: Int | Double = null,
-    cornerRadiusTopLeft: Int | Double = null,
-    cornerRadiusTopRight: Int | Double = null,
+    blend: js.UndefOr[Null | Blend] = js.undefined,
+    cornerRadius: Double | SignalRef = null,
+    cornerRadiusBottomLeft: Double | SignalRef = null,
+    cornerRadiusBottomRight: Double | SignalRef = null,
+    cornerRadiusTopLeft: Double | SignalRef = null,
+    cornerRadiusTopRight: Double | SignalRef = null,
     cursor: Cursor | SignalRef = null,
+    description: String | SignalRef = null,
     dir: TextDirection | SignalRef = null,
     dx: Double | SignalRef = null,
     dy: Double | SignalRef = null,
     ellipsis: String = null,
     endAngle: Double | SignalRef = null,
-    fill: Color | Gradient | SignalRef = null,
+    fill: js.UndefOr[Null | Color | Gradient | SignalRef] = js.undefined,
     fillOpacity: Double | SignalRef = null,
     font: String | SignalRef = null,
     fontSize: Double | SignalRef = null,
@@ -349,11 +381,12 @@ object MarkConfig {
     opacity: Double | SignalRef = null,
     orient: Orientation | SignalRef = null,
     outerRadius: Double | SignalRef = null,
+    padAngle: Double | SignalRef = null,
     radius: Double | SignalRef = null,
     shape: SymbolShape | String | SignalRef = null,
     size: Double | SignalRef = null,
     startAngle: Double | SignalRef = null,
-    stroke: Color | Gradient | SignalRef = null,
+    stroke: js.UndefOr[Null | Color | Gradient | SignalRef] = js.undefined,
     strokeCap: StrokeCap | SignalRef = null,
     strokeDash: js.Array[Double] | SignalRef = null,
     strokeDashOffset: Double | SignalRef = null,
@@ -371,21 +404,25 @@ object MarkConfig {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (!js.isUndefined(aspect)) __obj.updateDynamic("aspect")(aspect.asInstanceOf[js.Any])
+    if (aria != null) __obj.updateDynamic("aria")(aria.asInstanceOf[js.Any])
+    if (ariaRole != null) __obj.updateDynamic("ariaRole")(ariaRole.asInstanceOf[js.Any])
+    if (ariaRoleDescription != null) __obj.updateDynamic("ariaRoleDescription")(ariaRoleDescription.asInstanceOf[js.Any])
+    if (!js.isUndefined(aspect)) __obj.updateDynamic("aspect")(aspect.get.asInstanceOf[js.Any])
     if (baseline != null) __obj.updateDynamic("baseline")(baseline.asInstanceOf[js.Any])
-    if (blend != null) __obj.updateDynamic("blend")(blend.asInstanceOf[js.Any])
+    if (!js.isUndefined(blend)) __obj.updateDynamic("blend")(blend.asInstanceOf[js.Any])
     if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
     if (cornerRadiusBottomLeft != null) __obj.updateDynamic("cornerRadiusBottomLeft")(cornerRadiusBottomLeft.asInstanceOf[js.Any])
     if (cornerRadiusBottomRight != null) __obj.updateDynamic("cornerRadiusBottomRight")(cornerRadiusBottomRight.asInstanceOf[js.Any])
     if (cornerRadiusTopLeft != null) __obj.updateDynamic("cornerRadiusTopLeft")(cornerRadiusTopLeft.asInstanceOf[js.Any])
     if (cornerRadiusTopRight != null) __obj.updateDynamic("cornerRadiusTopRight")(cornerRadiusTopRight.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
     if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
     if (ellipsis != null) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
     if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
@@ -401,11 +438,12 @@ object MarkConfig {
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (orient != null) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])
     if (outerRadius != null) __obj.updateDynamic("outerRadius")(outerRadius.asInstanceOf[js.Any])
+    if (padAngle != null) __obj.updateDynamic("padAngle")(padAngle.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
+    if (!js.isUndefined(stroke)) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     if (strokeCap != null) __obj.updateDynamic("strokeCap")(strokeCap.asInstanceOf[js.Any])
     if (strokeDash != null) __obj.updateDynamic("strokeDash")(strokeDash.asInstanceOf[js.Any])
     if (strokeDashOffset != null) __obj.updateDynamic("strokeDashOffset")(strokeDashOffset.asInstanceOf[js.Any])

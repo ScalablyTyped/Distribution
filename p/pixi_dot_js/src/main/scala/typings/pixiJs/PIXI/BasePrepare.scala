@@ -27,10 +27,8 @@ import scala.scalajs.js.annotation._
   * @class
   * @memberof PIXI
   */
-@JSGlobal("PIXI.BasePrepare")
 @js.native
-class BasePrepare protected () extends js.Object {
-  def this(renderer: AbstractRenderer) = this()
+trait BasePrepare extends js.Object {
   /**
     * The limiter to be used to control how quickly items are prepared.
     * @type {PIXI.CountLimiter|PIXI.TimeLimiter}

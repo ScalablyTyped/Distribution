@@ -33,7 +33,7 @@ object SourcesOptions {
     thumbnailSize: Size = null
   ): SourcesOptions = {
     val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
-    if (!js.isUndefined(fetchWindowIcons)) __obj.updateDynamic("fetchWindowIcons")(fetchWindowIcons.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetchWindowIcons)) __obj.updateDynamic("fetchWindowIcons")(fetchWindowIcons.get.asInstanceOf[js.Any])
     if (thumbnailSize != null) __obj.updateDynamic("thumbnailSize")(thumbnailSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourcesOptions]
   }

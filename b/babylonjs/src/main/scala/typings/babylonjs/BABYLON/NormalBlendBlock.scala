@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.NormalBlendBlock")
 @js.native
-class NormalBlendBlock protected () extends NodeMaterialBlock {
-  /**
-    * Creates a new NormalBlendBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait NormalBlendBlock extends NodeMaterialBlock {
   /**
     * Gets the first input component
     */

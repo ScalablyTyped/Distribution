@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -159,8 +158,4 @@ trait FeatureLayerView extends LayerView {
   def queryObjectIds(query: QueryProperties, options: FeatureLayerViewQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: Query, options: FeatureLayerViewQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
 }
-
-@JSGlobal("__esri.FeatureLayerView")
-@js.native
-object FeatureLayerView extends TopLevel[FeatureLayerViewConstructor]
 

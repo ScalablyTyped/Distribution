@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.LengthBlock")
 @js.native
-class LengthBlock protected () extends NodeMaterialBlock {
-  /**
-    * Creates a new LengthBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait LengthBlock extends NodeMaterialBlock {
   /**
     * Gets the output component
     */

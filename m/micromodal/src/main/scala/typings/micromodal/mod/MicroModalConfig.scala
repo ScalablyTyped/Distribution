@@ -40,11 +40,11 @@ object MicroModalConfig {
     openTrigger: String = null
   ): MicroModalConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(awaitCloseAnimation)) __obj.updateDynamic("awaitCloseAnimation")(awaitCloseAnimation.asInstanceOf[js.Any])
+    if (!js.isUndefined(awaitCloseAnimation)) __obj.updateDynamic("awaitCloseAnimation")(awaitCloseAnimation.get.asInstanceOf[js.Any])
     if (closeTrigger != null) __obj.updateDynamic("closeTrigger")(closeTrigger.asInstanceOf[js.Any])
-    if (!js.isUndefined(debugMode)) __obj.updateDynamic("debugMode")(debugMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableFocus)) __obj.updateDynamic("disableFocus")(disableFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableScroll)) __obj.updateDynamic("disableScroll")(disableScroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(debugMode)) __obj.updateDynamic("debugMode")(debugMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableFocus)) __obj.updateDynamic("disableFocus")(disableFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableScroll)) __obj.updateDynamic("disableScroll")(disableScroll.get.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
     if (openTrigger != null) __obj.updateDynamic("openTrigger")(openTrigger.asInstanceOf[js.Any])

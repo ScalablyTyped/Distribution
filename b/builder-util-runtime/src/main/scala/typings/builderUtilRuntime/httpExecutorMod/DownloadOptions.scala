@@ -19,16 +19,16 @@ object DownloadOptions {
   @scala.inline
   def apply(
     cancellationToken: CancellationToken,
-    headers: OutgoingHttpHeaders = null,
+    headers: js.UndefOr[Null | OutgoingHttpHeaders] = js.undefined,
     onProgress: /* progress */ ProgressInfo => Unit = null,
-    sha2: String = null,
-    sha512: String = null
+    sha2: js.UndefOr[Null | String] = js.undefined,
+    sha512: js.UndefOr[Null | String] = js.undefined
   ): DownloadOptions = {
     val __obj = js.Dynamic.literal(cancellationToken = cancellationToken.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(headers)) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
-    if (sha2 != null) __obj.updateDynamic("sha2")(sha2.asInstanceOf[js.Any])
-    if (sha512 != null) __obj.updateDynamic("sha512")(sha512.asInstanceOf[js.Any])
+    if (!js.isUndefined(sha2)) __obj.updateDynamic("sha2")(sha2.asInstanceOf[js.Any])
+    if (!js.isUndefined(sha512)) __obj.updateDynamic("sha512")(sha512.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadOptions]
   }
 }

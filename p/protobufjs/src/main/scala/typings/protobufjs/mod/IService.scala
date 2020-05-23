@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.protobufjs.mod.AnyNestedObject because Already inherited */ trait IService extends INamespace {
   /** Method descriptors */
   var methods: StringDictionary[IMethod]

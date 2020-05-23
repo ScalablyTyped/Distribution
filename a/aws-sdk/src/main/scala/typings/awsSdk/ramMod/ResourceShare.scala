@@ -51,7 +51,7 @@ trait ResourceShare extends js.Object {
 object ResourceShare {
   @scala.inline
   def apply(
-    allowExternalPrincipals: js.UndefOr[scala.Boolean] = js.undefined,
+    allowExternalPrincipals: js.UndefOr[Boolean] = js.undefined,
     creationTime: DateTime = null,
     featureSet: ResourceShareFeatureSet = null,
     lastUpdatedTime: DateTime = null,
@@ -63,7 +63,7 @@ object ResourceShare {
     tags: TagList = null
   ): ResourceShare = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowExternalPrincipals)) __obj.updateDynamic("allowExternalPrincipals")(allowExternalPrincipals.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowExternalPrincipals)) __obj.updateDynamic("allowExternalPrincipals")(allowExternalPrincipals.get.asInstanceOf[js.Any])
     if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
     if (featureSet != null) __obj.updateDynamic("featureSet")(featureSet.asInstanceOf[js.Any])
     if (lastUpdatedTime != null) __obj.updateDynamic("lastUpdatedTime")(lastUpdatedTime.asInstanceOf[js.Any])

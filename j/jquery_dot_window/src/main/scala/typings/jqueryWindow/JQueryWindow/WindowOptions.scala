@@ -1,7 +1,7 @@
 package typings.jqueryWindow.JQueryWindow
 
-import typings.jqueryWindow.AnonX
 import typings.jqueryWindow.JQuery
+import typings.jqueryWindow.anon.X
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -52,7 +52,7 @@ trait WindowOptions extends js.Object {
   /**
     random the new created window position, it only works when options x,y value both are -1
     **/
-  var createRandomOffset: js.UndefOr[AnonX] = js.undefined
+  var createRandomOffset: js.UndefOr[X] = js.undefined
   /**
     to describe the customized button display and callback function
     **/
@@ -233,23 +233,23 @@ object WindowOptions {
     closable: js.UndefOr[Boolean] = js.undefined,
     containerClass: String = null,
     content: String | JQuery | HTMLElement = null,
-    createRandomOffset: AnonX = null,
+    createRandomOffset: X = null,
     custBtns: js.Array[Button] = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
     footerClass: String = null,
     footerContent: String | JQuery | HTMLElement = null,
     frameClass: String = null,
     headerClass: String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     icon: String = null,
     iframeRedirectCheckMsg: String = null,
-    maxHeight: Int | Double = null,
-    maxWidth: Int | Double = null,
+    maxHeight: js.UndefOr[Double] = js.undefined,
+    maxWidth: js.UndefOr[Double] = js.undefined,
     maximizable: js.UndefOr[Boolean] = js.undefined,
-    minHeight: Int | Double = null,
-    minWidth: Int | Double = null,
+    minHeight: js.UndefOr[Double] = js.undefined,
+    minWidth: js.UndefOr[Double] = js.undefined,
     minimizable: js.UndefOr[Boolean] = js.undefined,
-    modalOpacity: Int | Double = null,
+    modalOpacity: js.UndefOr[Double] = js.undefined,
     onCascade: /* wnd */ Window => Unit = null,
     onClose: /* wnd */ Window => Unit = null,
     onDrag: /* wnd */ Window => Unit = null,
@@ -269,11 +269,11 @@ object WindowOptions {
     showModal: js.UndefOr[Boolean] = js.undefined,
     showRoundCorner: js.UndefOr[Boolean] = js.undefined,
     url: String = null,
-    width: Int | Double = null,
+    width: js.UndefOr[Double] = js.undefined,
     withinBrowserWindow: js.UndefOr[Boolean] = js.undefined,
-    x: Int | Double = null,
-    y: Int | Double = null,
-    z: Int | Double = null
+    x: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined,
+    z: js.UndefOr[Double] = js.undefined
   ): WindowOptions = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     if (afterCascade != null) __obj.updateDynamic("afterCascade")(js.Any.fromFunction1(afterCascade))
@@ -281,28 +281,28 @@ object WindowOptions {
     if (afterMaximize != null) __obj.updateDynamic("afterMaximize")(js.Any.fromFunction1(afterMaximize))
     if (afterMinimize != null) __obj.updateDynamic("afterMinimize")(js.Any.fromFunction1(afterMinimize))
     if (afterResize != null) __obj.updateDynamic("afterResize")(js.Any.fromFunction1(afterResize))
-    if (!js.isUndefined(bookmarkable)) __obj.updateDynamic("bookmarkable")(bookmarkable.asInstanceOf[js.Any])
-    if (!js.isUndefined(checkBoundary)) __obj.updateDynamic("checkBoundary")(checkBoundary.asInstanceOf[js.Any])
-    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.asInstanceOf[js.Any])
+    if (!js.isUndefined(bookmarkable)) __obj.updateDynamic("bookmarkable")(bookmarkable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkBoundary)) __obj.updateDynamic("checkBoundary")(checkBoundary.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.get.asInstanceOf[js.Any])
     if (containerClass != null) __obj.updateDynamic("containerClass")(containerClass.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (createRandomOffset != null) __obj.updateDynamic("createRandomOffset")(createRandomOffset.asInstanceOf[js.Any])
     if (custBtns != null) __obj.updateDynamic("custBtns")(custBtns.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
     if (footerClass != null) __obj.updateDynamic("footerClass")(footerClass.asInstanceOf[js.Any])
     if (footerContent != null) __obj.updateDynamic("footerContent")(footerContent.asInstanceOf[js.Any])
     if (frameClass != null) __obj.updateDynamic("frameClass")(frameClass.asInstanceOf[js.Any])
     if (headerClass != null) __obj.updateDynamic("headerClass")(headerClass.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (iframeRedirectCheckMsg != null) __obj.updateDynamic("iframeRedirectCheckMsg")(iframeRedirectCheckMsg.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximizable)) __obj.updateDynamic("maximizable")(maximizable.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimizable)) __obj.updateDynamic("minimizable")(minimizable.asInstanceOf[js.Any])
-    if (modalOpacity != null) __obj.updateDynamic("modalOpacity")(modalOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximizable)) __obj.updateDynamic("maximizable")(maximizable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimizable)) __obj.updateDynamic("minimizable")(minimizable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(modalOpacity)) __obj.updateDynamic("modalOpacity")(modalOpacity.get.asInstanceOf[js.Any])
     if (onCascade != null) __obj.updateDynamic("onCascade")(js.Any.fromFunction1(onCascade))
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
     if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction1(onDrag))
@@ -315,18 +315,18 @@ object WindowOptions {
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
     if (onUnselect != null) __obj.updateDynamic("onUnselect")(js.Any.fromFunction1(onUnselect))
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollable)) __obj.updateDynamic("scrollable")(scrollable.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollable)) __obj.updateDynamic("scrollable")(scrollable.get.asInstanceOf[js.Any])
     if (selectedHeaderClass != null) __obj.updateDynamic("selectedHeaderClass")(selectedHeaderClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFooter)) __obj.updateDynamic("showFooter")(showFooter.asInstanceOf[js.Any])
-    if (!js.isUndefined(showModal)) __obj.updateDynamic("showModal")(showModal.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRoundCorner)) __obj.updateDynamic("showRoundCorner")(showRoundCorner.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFooter)) __obj.updateDynamic("showFooter")(showFooter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showModal)) __obj.updateDynamic("showModal")(showModal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRoundCorner)) __obj.updateDynamic("showRoundCorner")(showRoundCorner.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(withinBrowserWindow)) __obj.updateDynamic("withinBrowserWindow")(withinBrowserWindow.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(withinBrowserWindow)) __obj.updateDynamic("withinBrowserWindow")(withinBrowserWindow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowOptions]
   }
 }

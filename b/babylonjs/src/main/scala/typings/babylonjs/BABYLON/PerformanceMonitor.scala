@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.PerformanceMonitor")
 @js.native
-/**
-  * constructor
-  * @param frameSampleSize The number of samples required to saturate the sliding window
-  */
-class PerformanceMonitor () extends js.Object {
-  def this(frameSampleSize: Double) = this()
+trait PerformanceMonitor extends js.Object {
   var _enabled: js.Any = js.native
   var _lastFrameTimeMs: js.Any = js.native
   var _rollingFrameTime: js.Any = js.native

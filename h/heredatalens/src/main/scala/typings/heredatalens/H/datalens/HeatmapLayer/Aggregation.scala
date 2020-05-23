@@ -1,6 +1,5 @@
 package typings.heredatalens.H.datalens.HeatmapLayer
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,14 +22,6 @@ object Aggregation extends js.Object {
   /** Specifies that the sum aggregation was applied to the bucket value */
   @js.native
   sealed trait SUM extends Aggregation
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Aggregation with Double] = js.native
-  /* 1 */ @js.native
-  object AVERAGE extends TopLevel[AVERAGE with Double]
-  
-  /* 0 */ @js.native
-  object SUM extends TopLevel[SUM with Double]
   
 }
 

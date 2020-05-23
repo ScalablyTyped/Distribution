@@ -19,7 +19,7 @@ trait ojCollapsibleSettablePropertiesLenient
 object ojCollapsibleSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     expandArea: header | disclosureIcon = null,
     expanded: js.UndefOr[Boolean] = js.undefined,
@@ -27,9 +27,9 @@ object ojCollapsibleSettablePropertiesLenient {
   ): ojCollapsibleSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (expandArea != null) __obj.updateDynamic("expandArea")(expandArea.asInstanceOf[js.Any])
-    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
+    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.get.asInstanceOf[js.Any])
     if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojCollapsibleSettablePropertiesLenient]
   }

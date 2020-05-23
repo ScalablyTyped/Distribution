@@ -21,7 +21,7 @@ object ListrOptions {
   ): ListrOptions[Ctx] = {
     val __obj = js.Dynamic.literal()
     if (concurrent != null) __obj.updateDynamic("concurrent")(concurrent.asInstanceOf[js.Any])
-    if (!js.isUndefined(exitOnError)) __obj.updateDynamic("exitOnError")(exitOnError.asInstanceOf[js.Any])
+    if (!js.isUndefined(exitOnError)) __obj.updateDynamic("exitOnError")(exitOnError.get.asInstanceOf[js.Any])
     if (nonTTYRenderer != null) __obj.updateDynamic("nonTTYRenderer")(nonTTYRenderer.asInstanceOf[js.Any])
     if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListrOptions[Ctx]]

@@ -1,9 +1,9 @@
 package typings.raphael.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.raphael.ArraykeyofRaphaelReadAttr
-import typings.raphael.PartialRaphaelAttributes
-import typings.raphael.PartialRaphaelGlowSetting
+import typings.raphael.anon.ArraykeyofRaphaelReadAttr
+import typings.raphael.anon.PartialRaphaelAttributes
+import typings.raphael.anon.PartialRaphaelGlowSetting
 import typings.raphael.raphaelStrings.`arrow-end`
 import typings.raphael.raphaelStrings.`clip-rect`
 import typings.raphael.raphaelStrings.`fill-opacity`
@@ -185,8 +185,6 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
   K /* <: ArraykeyofRaphaelReadAttr */](attributeNames: K): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof K ]: K[P] extends 'transform'? raphael.raphael.RaphaelReadAttributes[K[P]] | undefined : never}
     */ typings.raphael.raphaelStrings.RaphaelBaseElement with TopLevel[js.Any] = js.native
-  @JSName("attr")
-  def attr_arrowend(attributeName: `arrow-end`): this.type = js.native
   /**
     * Set the given attribute of this element to the given value.
     * @typeparam K Type of the attribute name to set.
@@ -194,6 +192,8 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
     * @param attributeValue New value for the attribute.
     * @return this element for chaining.
     */
+  @JSName("attr")
+  def attr_arrowend(attributeName: `arrow-end`): this.type = js.native
   @JSName("attr")
   def attr_arrowend(attributeName: `arrow-end`, attributeValue: String): this.type = js.native
   @JSName("attr")
@@ -249,7 +249,9 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
   @JSName("attr")
   def attr_fontsize(attributeName: `font-size`): this.type = js.native
   @JSName("attr")
-  def attr_fontsize(attributeName: `font-size`, attributeValue: Double | String): this.type = js.native
+  def attr_fontsize(attributeName: `font-size`, attributeValue: String): this.type = js.native
+  @JSName("attr")
+  def attr_fontsize(attributeName: `font-size`, attributeValue: Double): this.type = js.native
   @JSName("attr")
   def attr_fontsize_Union(attributeName: `font-size`): js.UndefOr[Double | String] = js.native
   @JSName("attr")
@@ -375,10 +377,11 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
   @JSName("attr")
   def attr_transform(attributeName: transform): this.type = js.native
   @JSName("attr")
-  def attr_transform(
-    attributeName: transform,
-    attributeValue: String | RaphaelTransformSegment | js.Array[RaphaelTransformSegment]
-  ): this.type = js.native
+  def attr_transform(attributeName: transform, attributeValue: String): this.type = js.native
+  @JSName("attr")
+  def attr_transform(attributeName: transform, attributeValue: js.Array[RaphaelTransformSegment]): this.type = js.native
+  @JSName("attr")
+  def attr_transform(attributeName: transform, attributeValue: RaphaelTransformSegment): this.type = js.native
   /**
     * Finds the current value of the given attribute.
     * @typeparam K Type of the attribute name to read.

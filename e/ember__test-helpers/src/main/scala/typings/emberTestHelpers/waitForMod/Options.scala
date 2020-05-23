@@ -12,10 +12,14 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(count: Int | Double = null, timeout: Int | Double = null, timeoutMessage: String = null): Options = {
+  def apply(
+    count: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined,
+    timeoutMessage: String = null
+  ): Options = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (timeoutMessage != null) __obj.updateDynamic("timeoutMessage")(timeoutMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

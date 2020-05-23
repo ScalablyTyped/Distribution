@@ -48,24 +48,24 @@ trait AacSettings extends js.Object {
 object AacSettings {
   @scala.inline
   def apply(
-    Bitrate: Int | Double = null,
+    Bitrate: js.UndefOr[double] = js.undefined,
     CodingMode: AacCodingMode = null,
     InputType: AacInputType = null,
     Profile: AacProfile = null,
     RateControlMode: AacRateControlMode = null,
     RawFormat: AacRawFormat = null,
-    SampleRate: Int | Double = null,
+    SampleRate: js.UndefOr[double] = js.undefined,
     Spec: AacSpec = null,
     VbrQuality: AacVbrQuality = null
   ): AacSettings = {
     val __obj = js.Dynamic.literal()
-    if (Bitrate != null) __obj.updateDynamic("Bitrate")(Bitrate.asInstanceOf[js.Any])
+    if (!js.isUndefined(Bitrate)) __obj.updateDynamic("Bitrate")(Bitrate.get.asInstanceOf[js.Any])
     if (CodingMode != null) __obj.updateDynamic("CodingMode")(CodingMode.asInstanceOf[js.Any])
     if (InputType != null) __obj.updateDynamic("InputType")(InputType.asInstanceOf[js.Any])
     if (Profile != null) __obj.updateDynamic("Profile")(Profile.asInstanceOf[js.Any])
     if (RateControlMode != null) __obj.updateDynamic("RateControlMode")(RateControlMode.asInstanceOf[js.Any])
     if (RawFormat != null) __obj.updateDynamic("RawFormat")(RawFormat.asInstanceOf[js.Any])
-    if (SampleRate != null) __obj.updateDynamic("SampleRate")(SampleRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(SampleRate)) __obj.updateDynamic("SampleRate")(SampleRate.get.asInstanceOf[js.Any])
     if (Spec != null) __obj.updateDynamic("Spec")(Spec.asInstanceOf[js.Any])
     if (VbrQuality != null) __obj.updateDynamic("VbrQuality")(VbrQuality.asInstanceOf[js.Any])
     __obj.asInstanceOf[AacSettings]

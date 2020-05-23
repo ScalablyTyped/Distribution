@@ -13,10 +13,10 @@ trait IWebStorage extends IClient {
   /** [Property] (Object) */
   var cache: js.UndefOr[js.Any] = js.undefined
   /** [Method] inherit docs
-  		* @param operation Object
-  		* @param callback Object
-  		* @param scope Object
-  		*/
+    * @param operation Object
+    * @param callback Object
+    * @param scope Object
+    */
   @JSName("create")
   var create_IWebStorage: js.UndefOr[
     js.Function3[
@@ -27,10 +27,10 @@ trait IWebStorage extends IClient {
     ]
   ] = js.undefined
   /** [Method] inherit
-  		* @param operation Object
-  		* @param callback Object
-  		* @param scope Object
-  		*/
+    * @param operation Object
+    * @param callback Object
+    * @param scope Object
+    */
   @JSName("destroy")
   var destroy_IWebStorage: js.UndefOr[
     js.Function3[
@@ -43,25 +43,25 @@ trait IWebStorage extends IClient {
   /** [Config Option] (Boolean) */
   var enablePagingParams: js.UndefOr[Boolean] = js.undefined
   /** [Method] Returns the value of defaultDateFormat
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getDefaultDateFormat: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of enablePagingParams
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getEnablePagingParams: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of id
-  		* @returns String
-  		*/
+    * @returns String
+    */
   @JSName("getId")
   var getId_IWebStorage: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (String) */
   var id: js.UndefOr[String] = js.undefined
   /** [Method] inherit docs
-  		* @param operation Object
-  		* @param callback Object
-  		* @param scope Object
-  		*/
+    * @param operation Object
+    * @param callback Object
+    * @param scope Object
+    */
   @JSName("read")
   var read_IWebStorage: js.UndefOr[
     js.Function3[
@@ -72,27 +72,27 @@ trait IWebStorage extends IClient {
     ]
   ] = js.undefined
   /** [Method] Sets the value of defaultDateFormat
-  		* @param defaultDateFormat String The new value.
-  		*/
+    * @param defaultDateFormat String The new value.
+    */
   var setDefaultDateFormat: js.UndefOr[js.Function1[/* defaultDateFormat */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of enablePagingParams
-  		* @param enablePagingParams Boolean The new value.
-  		*/
+    * @param enablePagingParams Boolean The new value.
+    */
   var setEnablePagingParams: js.UndefOr[js.Function1[/* enablePagingParams */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of id
-  		* @param id String The new value.
-  		*/
+    * @param id String The new value.
+    */
   var setId: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Saves the given record in the Proxy
-  		* @param record Ext.data.Model The model instance
-  		* @param id String The id to save the record under (defaults to the value of the record's getId() function)
-  		*/
+    * @param record Ext.data.Model The model instance
+    * @param id String The id to save the record under (defaults to the value of the record's getId() function)
+    */
   var setRecord: js.UndefOr[js.Function2[/* record */ js.UndefOr[IModel], /* id */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] inherit docs
-  		* @param operation Object
-  		* @param callback Object
-  		* @param scope Object
-  		*/
+    * @param operation Object
+    * @param callback Object
+    * @param scope Object
+    */
   @JSName("update")
   var update_IWebStorage: js.UndefOr[
     js.Function3[
@@ -195,7 +195,7 @@ object IWebStorage {
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
     if (batch != null) __obj.updateDynamic("batch")(js.Any.fromFunction1(batch))
-    if (!js.isUndefined(batchActions)) __obj.updateDynamic("batchActions")(batchActions.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchActions)) __obj.updateDynamic("batchActions")(batchActions.get.asInstanceOf[js.Any])
     if (batchOrder != null) __obj.updateDynamic("batchOrder")(batchOrder.asInstanceOf[js.Any])
     if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
@@ -208,7 +208,7 @@ object IWebStorage {
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction3(create))
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction3(destroy))
     if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
-    if (!js.isUndefined(enablePagingParams)) __obj.updateDynamic("enablePagingParams")(enablePagingParams.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePagingParams)) __obj.updateDynamic("enablePagingParams")(enablePagingParams.get.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (fireAction != null) __obj.updateDynamic("fireAction")(js.Any.fromFunction4(fireAction))
     if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
@@ -256,7 +256,7 @@ object IWebStorage {
     if (setReader != null) __obj.updateDynamic("setReader")(js.Any.fromFunction1(setReader))
     if (setRecord != null) __obj.updateDynamic("setRecord")(js.Any.fromFunction2(setRecord))
     if (setWriter != null) __obj.updateDynamic("setWriter")(js.Any.fromFunction1(setWriter))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))

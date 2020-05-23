@@ -1,9 +1,9 @@
 package typings.rcResizeObserver.mod
 
-import typings.rcResizeObserver.AnonWidth
+import typings.rcResizeObserver.anon.Width
 import typings.react.mod.Component
 import typings.resizeObserverPolyfill.mod.ResizeObserver
-import typings.resizeObserverPolyfill.mod._Global_.ResizeObserverCallback
+import typings.resizeObserverPolyfill.mod.global.ResizeObserverCallback
 import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -18,7 +18,7 @@ trait ReactResizeObserver
   var onResize: ResizeObserverCallback = js.native
   var resizeObserver: ResizeObserver | Null = js.native
   @JSName("state")
-  var state_ReactResizeObserver: AnonWidth = js.native
+  var state_ReactResizeObserver: Width = js.native
   @JSName("componentDidMount")
   def componentDidMount_MReactResizeObserver(): Unit = js.native
   @JSName("componentDidUpdate")

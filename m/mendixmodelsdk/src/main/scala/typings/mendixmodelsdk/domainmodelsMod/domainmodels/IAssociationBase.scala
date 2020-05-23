@@ -26,10 +26,15 @@ trait IAssociationBase
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
+    * In version 8.10.0: deleted
     * In version 8.3.0: introduced
     */
   val remoteSourceDocument: IRemoteEntitySourceDocument | Null = js.native
   val remoteSourceDocumentQualifiedName: String | Null = js.native
+  /**
+    * In version 8.10.0: introduced
+    */
+  val source: IAssociationSource | Null = js.native
   val `type`: AssociationType = js.native
 }
 

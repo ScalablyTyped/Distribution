@@ -1,5 +1,9 @@
 package typings.ionicReact
 
+import typings.ionicReact.anon.IonIconPickHTMLAttributes
+import typings.ionicReact.anon.IonRouterOutletPickHTMLAt
+import typings.ionicReact.anon.IonTabBarPickHTMLAttribut
+import typings.ionicReact.anon.PickIonBackButtondisabled
 import typings.react.mod.ForwardRefExoticComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

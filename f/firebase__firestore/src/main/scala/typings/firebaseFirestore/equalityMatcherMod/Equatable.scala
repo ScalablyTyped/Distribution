@@ -12,7 +12,6 @@ object Equatable {
   @scala.inline
   def apply[T](isEqual: T => Boolean): Equatable[T] = {
     val __obj = js.Dynamic.literal(isEqual = js.Any.fromFunction1(isEqual))
-  
     __obj.asInstanceOf[Equatable[T]]
   }
 }

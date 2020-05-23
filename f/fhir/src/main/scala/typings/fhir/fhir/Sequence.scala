@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Information about a biological sequence
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait Sequence extends DomainResource {
   /**
     * Contains extended information for property 'coordinateSystem'.
@@ -114,7 +114,7 @@ object Sequence {
     pointer: js.Array[Reference] = null,
     quality: js.Array[SequenceQuality] = null,
     quantity: Quantity = null,
-    readCoverage: Int | Double = null,
+    readCoverage: js.UndefOr[integer] = js.undefined,
     referenceSeq: SequenceReferenceSeq = null,
     repository: js.Array[SequenceRepository] = null,
     resourceType: code = null,
@@ -147,7 +147,7 @@ object Sequence {
     if (pointer != null) __obj.updateDynamic("pointer")(pointer.asInstanceOf[js.Any])
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
-    if (readCoverage != null) __obj.updateDynamic("readCoverage")(readCoverage.asInstanceOf[js.Any])
+    if (!js.isUndefined(readCoverage)) __obj.updateDynamic("readCoverage")(readCoverage.get.asInstanceOf[js.Any])
     if (referenceSeq != null) __obj.updateDynamic("referenceSeq")(referenceSeq.asInstanceOf[js.Any])
     if (repository != null) __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])
     if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])

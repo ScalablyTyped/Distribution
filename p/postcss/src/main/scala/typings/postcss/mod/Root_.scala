@@ -1,6 +1,6 @@
 package typings.postcss.mod
 
-import typings.postcss.AnonMap
+import typings.postcss.anon.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,6 +22,6 @@ trait Root_
     * @returns A Result instance representing the root's CSS.
     */
   def toResult(): Result = js.native
-  def toResult(options: AnonMap): Result = js.native
+  def toResult(options: Map): Result = js.native
 }
 

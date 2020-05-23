@@ -44,8 +44,8 @@ object UpdateFunctionCodeRequest {
   @scala.inline
   def apply(
     FunctionName: FunctionName,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
-    Publish: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
+    Publish: js.UndefOr[Boolean] = js.undefined,
     RevisionId: String = null,
     S3Bucket: S3Bucket = null,
     S3Key: S3Key = null,
@@ -53,8 +53,8 @@ object UpdateFunctionCodeRequest {
     ZipFile: _Blob = null
   ): UpdateFunctionCodeRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
-    if (!js.isUndefined(Publish)) __obj.updateDynamic("Publish")(Publish.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Publish)) __obj.updateDynamic("Publish")(Publish.get.asInstanceOf[js.Any])
     if (RevisionId != null) __obj.updateDynamic("RevisionId")(RevisionId.asInstanceOf[js.Any])
     if (S3Bucket != null) __obj.updateDynamic("S3Bucket")(S3Bucket.asInstanceOf[js.Any])
     if (S3Key != null) __obj.updateDynamic("S3Key")(S3Key.asInstanceOf[js.Any])

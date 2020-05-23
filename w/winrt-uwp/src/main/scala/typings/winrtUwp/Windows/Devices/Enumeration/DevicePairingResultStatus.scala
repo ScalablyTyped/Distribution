@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Enumeration
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -91,68 +90,6 @@ object DevicePairingResultStatus extends js.Object {
   /** The device object indicated it cannot accept any more incoming connections. */
   @js.native
   sealed trait tooManyConnections extends DevicePairingResultStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DevicePairingResultStatus with Double] = js.native
-  /* 12 */ @js.native
-  object accessDenied extends TopLevel[accessDenied with Double]
-  
-  /* 3 */ @js.native
-  object alreadyPaired extends TopLevel[alreadyPaired with Double]
-  
-  /* 9 */ @js.native
-  object authenticationFailure extends TopLevel[authenticationFailure with Double]
-  
-  /* 8 */ @js.native
-  object authenticationNotAllowed extends TopLevel[authenticationNotAllowed with Double]
-  
-  /* 7 */ @js.native
-  object authenticationTimeout extends TopLevel[authenticationTimeout with Double]
-  
-  /* 4 */ @js.native
-  object connectionRejected extends TopLevel[connectionRejected with Double]
-  
-  /* 19 */ @js.native
-  object failed extends TopLevel[failed with Double]
-  
-  /* 6 */ @js.native
-  object hardwareFailure extends TopLevel[hardwareFailure with Double]
-  
-  /* 13 */ @js.native
-  object invalidCeremonyData extends TopLevel[invalidCeremonyData with Double]
-  
-  /* 10 */ @js.native
-  object noSupportedProfiles extends TopLevel[noSupportedProfiles with Double]
-  
-  /* 2 */ @js.native
-  object notPaired extends TopLevel[notPaired with Double]
-  
-  /* 1 */ @js.native
-  object notReadyToPair extends TopLevel[notReadyToPair with Double]
-  
-  /* 15 */ @js.native
-  object operationAlreadyInProgress extends TopLevel[operationAlreadyInProgress with Double]
-  
-  /* 0 */ @js.native
-  object paired extends TopLevel[paired with Double]
-  
-  /* 14 */ @js.native
-  object pairingCanceled extends TopLevel[pairingCanceled with Double]
-  
-  /* 11 */ @js.native
-  object protectionLevelCouldNotBeMet extends TopLevel[protectionLevelCouldNotBeMet with Double]
-  
-  /* 17 */ @js.native
-  object rejectedByHandler extends TopLevel[rejectedByHandler with Double]
-  
-  /* 18 */ @js.native
-  object remoteDeviceHasAssociation extends TopLevel[remoteDeviceHasAssociation with Double]
-  
-  /* 16 */ @js.native
-  object requiredHandlerNotRegistered extends TopLevel[requiredHandlerNotRegistered with Double]
-  
-  /* 5 */ @js.native
-  object tooManyConnections extends TopLevel[tooManyConnections with Double]
   
 }
 

@@ -25,11 +25,15 @@ trait PlotAbandsParamsOptions extends js.Object {
 
 object PlotAbandsParamsOptions {
   @scala.inline
-  def apply(factor: Int | Double = null, index: Int | Double = null, period: Int | Double = null): PlotAbandsParamsOptions = {
+  def apply(
+    factor: js.UndefOr[Double] = js.undefined,
+    index: js.UndefOr[Double] = js.undefined,
+    period: js.UndefOr[Double] = js.undefined
+  ): PlotAbandsParamsOptions = {
     val __obj = js.Dynamic.literal()
-    if (factor != null) __obj.updateDynamic("factor")(factor.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
+    if (!js.isUndefined(factor)) __obj.updateDynamic("factor")(factor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(period)) __obj.updateDynamic("period")(period.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotAbandsParamsOptions]
   }
 }

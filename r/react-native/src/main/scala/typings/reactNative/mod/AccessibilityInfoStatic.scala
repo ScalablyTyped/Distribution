@@ -4,7 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AccessibilityInfoStatic extends js.Object {
+  def addEventListener(
+    eventName: AccessibilityAnnouncementEventName,
+    handler: AccessibilityAnnouncementFinishedEventHandler
+  ): Unit = js.native
   /**
     * Add an event handler. Supported events:
     * - announcementFinished: iOS-only event. Fires when the screen reader has finished making an announcement.
@@ -16,80 +21,60 @@ trait AccessibilityInfoStatic extends js.Object {
     *            The boolean is true when the related event's feature is enabled and false otherwise.
     *
     */
-  def addEventListener(eventName: AccessibilityEventName, handler: js.Function1[/* event */ AccessibilityEvent, Unit]): Unit
+  def addEventListener(eventName: AccessibilityChangeEventName, handler: AccessibilityChangeEventHandler): Unit = js.native
   /**
     * Post a string to be announced by the screen reader.
-    *
-    * @platform ios
     */
-  def announceForAccessibility(announcement: String): Unit
+  def announceForAccessibility(announcement: String): Unit = js.native
   /**
     * Query whether a screen reader is currently enabled.
     *
     * @deprecated use isScreenReaderChanged instead
     */
-  def fetch(): js.Promise[Boolean]
+  def fetch(): js.Promise[Boolean] = js.native
   /**
     * Query whether bold text is currently enabled.
     *
     * @platform ios
     */
-  def isBoldTextEnabled(): js.Promise[Boolean]
+  def isBoldTextEnabled(): js.Promise[Boolean] = js.native
   /**
     * Query whether grayscale is currently enabled.
     *
     * @platform ios
     */
-  def isGrayscaleEnabled(): js.Promise[Boolean]
+  def isGrayscaleEnabled(): js.Promise[Boolean] = js.native
   /**
     * Query whether invert colors is currently enabled.
     *
     * @platform ios
     */
-  def isInvertColorsEnabled(): js.Promise[Boolean]
+  def isInvertColorsEnabled(): js.Promise[Boolean] = js.native
   /**
     * Query whether reduce motion is currently enabled.
     */
-  def isReduceMotionEnabled(): js.Promise[Boolean]
+  def isReduceMotionEnabled(): js.Promise[Boolean] = js.native
   /**
     * Query whether reduce transparency is currently enabled.
     *
     * @platform ios
     */
-  def isReduceTransparencyEnabled(): js.Promise[Boolean]
+  def isReduceTransparencyEnabled(): js.Promise[Boolean] = js.native
   /**
     * Query whether a screen reader is currently enabled.
     */
-  def isScreenReaderEnabled(): js.Promise[Boolean]
+  def isScreenReaderEnabled(): js.Promise[Boolean] = js.native
+  def removeEventListener(
+    eventName: AccessibilityAnnouncementEventName,
+    handler: AccessibilityAnnouncementFinishedEventHandler
+  ): Unit = js.native
   /**
     * Remove an event handler.
     */
-  def removeEventListener(eventName: AccessibilityEventName, handler: js.Function1[/* event */ AccessibilityEvent, Unit]): Unit
+  def removeEventListener(eventName: AccessibilityChangeEventName, handler: AccessibilityChangeEventHandler): Unit = js.native
   /**
-    * Set acessibility focus to a react component.
-    *
-    * @platform ios
+    * Set accessibility focus to a react component.
     */
-  def setAccessibilityFocus(reactTag: Double): Unit
-}
-
-object AccessibilityInfoStatic {
-  @scala.inline
-  def apply(
-    addEventListener: (AccessibilityEventName, js.Function1[/* event */ AccessibilityEvent, Unit]) => Unit,
-    announceForAccessibility: String => Unit,
-    fetch: () => js.Promise[Boolean],
-    isBoldTextEnabled: () => js.Promise[Boolean],
-    isGrayscaleEnabled: () => js.Promise[Boolean],
-    isInvertColorsEnabled: () => js.Promise[Boolean],
-    isReduceMotionEnabled: () => js.Promise[Boolean],
-    isReduceTransparencyEnabled: () => js.Promise[Boolean],
-    isScreenReaderEnabled: () => js.Promise[Boolean],
-    removeEventListener: (AccessibilityEventName, js.Function1[/* event */ AccessibilityEvent, Unit]) => Unit,
-    setAccessibilityFocus: Double => Unit
-  ): AccessibilityInfoStatic = {
-    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), announceForAccessibility = js.Any.fromFunction1(announceForAccessibility), fetch = js.Any.fromFunction0(fetch), isBoldTextEnabled = js.Any.fromFunction0(isBoldTextEnabled), isGrayscaleEnabled = js.Any.fromFunction0(isGrayscaleEnabled), isInvertColorsEnabled = js.Any.fromFunction0(isInvertColorsEnabled), isReduceMotionEnabled = js.Any.fromFunction0(isReduceMotionEnabled), isReduceTransparencyEnabled = js.Any.fromFunction0(isReduceTransparencyEnabled), isScreenReaderEnabled = js.Any.fromFunction0(isScreenReaderEnabled), removeEventListener = js.Any.fromFunction2(removeEventListener), setAccessibilityFocus = js.Any.fromFunction1(setAccessibilityFocus))
-    __obj.asInstanceOf[AccessibilityInfoStatic]
-  }
+  def setAccessibilityFocus(reactTag: Double): Unit = js.native
 }
 

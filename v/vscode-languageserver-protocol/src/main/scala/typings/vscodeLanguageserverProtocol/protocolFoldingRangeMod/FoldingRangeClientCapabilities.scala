@@ -28,12 +28,12 @@ object FoldingRangeClientCapabilities {
   def apply(
     dynamicRegistration: js.UndefOr[Boolean] = js.undefined,
     lineFoldingOnly: js.UndefOr[Boolean] = js.undefined,
-    rangeLimit: Int | Double = null
+    rangeLimit: js.UndefOr[Double] = js.undefined
   ): FoldingRangeClientCapabilities = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineFoldingOnly)) __obj.updateDynamic("lineFoldingOnly")(lineFoldingOnly.asInstanceOf[js.Any])
-    if (rangeLimit != null) __obj.updateDynamic("rangeLimit")(rangeLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineFoldingOnly)) __obj.updateDynamic("lineFoldingOnly")(lineFoldingOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rangeLimit)) __obj.updateDynamic("rangeLimit")(rangeLimit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FoldingRangeClientCapabilities]
   }
 }

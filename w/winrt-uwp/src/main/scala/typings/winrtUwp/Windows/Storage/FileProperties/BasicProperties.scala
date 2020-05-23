@@ -11,9 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides access to the basic properties, like the size of the item or the date the item was last modified, of the item (like a file or folder). */
-@JSGlobal("Windows.Storage.FileProperties.BasicProperties")
 @js.native
-abstract class BasicProperties () extends js.Object {
+trait BasicProperties extends js.Object {
   /** Gets the timestamp of the last time the file was modified. */
   var dateModified: Date = js.native
   /** Gets the most relevant date for the item. */

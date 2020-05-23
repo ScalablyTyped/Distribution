@@ -1,16 +1,16 @@
 package typings.feathersjsAuthentication.mod
 
-import typings.feathersjsAuthentication.AnonAlgorithm
-import typings.feathersjsAuthentication.AnonEnabled
+import typings.feathersjsAuthentication.anon.Algorithm
+import typings.feathersjsAuthentication.anon.Enabled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FeathersAuthenticationOptions extends js.Object {
-  var cookie: js.UndefOr[AnonEnabled] = js.undefined
+  var cookie: js.UndefOr[Enabled] = js.undefined
   var entity: js.UndefOr[String] = js.undefined
   var header: js.UndefOr[String] = js.undefined
-  var jwt: js.UndefOr[AnonAlgorithm] = js.undefined
+  var jwt: js.UndefOr[Algorithm] = js.undefined
   var passReqToCallback: js.UndefOr[Boolean] = js.undefined
   var path: js.UndefOr[String] = js.undefined
   var service: js.UndefOr[String] = js.undefined
@@ -20,10 +20,10 @@ trait FeathersAuthenticationOptions extends js.Object {
 object FeathersAuthenticationOptions {
   @scala.inline
   def apply(
-    cookie: AnonEnabled = null,
+    cookie: Enabled = null,
     entity: String = null,
     header: String = null,
-    jwt: AnonAlgorithm = null,
+    jwt: Algorithm = null,
     passReqToCallback: js.UndefOr[Boolean] = js.undefined,
     path: String = null,
     service: String = null,
@@ -34,10 +34,10 @@ object FeathersAuthenticationOptions {
     if (entity != null) __obj.updateDynamic("entity")(entity.asInstanceOf[js.Any])
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (jwt != null) __obj.updateDynamic("jwt")(jwt.asInstanceOf[js.Any])
-    if (!js.isUndefined(passReqToCallback)) __obj.updateDynamic("passReqToCallback")(passReqToCallback.asInstanceOf[js.Any])
+    if (!js.isUndefined(passReqToCallback)) __obj.updateDynamic("passReqToCallback")(passReqToCallback.get.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
-    if (!js.isUndefined(session)) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
+    if (!js.isUndefined(session)) __obj.updateDynamic("session")(session.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeathersAuthenticationOptions]
   }
 }

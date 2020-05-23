@@ -42,7 +42,7 @@ object DataStoreOptions {
     afterSerialization: /* line */ String => String = null,
     autoload: js.UndefOr[Boolean] = js.undefined,
     beforeDeserialization: /* line */ String => String = null,
-    corruptAlertThreshold: Int | Double = null,
+    corruptAlertThreshold: js.UndefOr[Double] = js.undefined,
     filename: String = null,
     inMemoryOnly: js.UndefOr[Boolean] = js.undefined,
     nodeWebkitAppName: js.UndefOr[Boolean] = js.undefined,
@@ -51,14 +51,14 @@ object DataStoreOptions {
   ): DataStoreOptions = {
     val __obj = js.Dynamic.literal()
     if (afterSerialization != null) __obj.updateDynamic("afterSerialization")(js.Any.fromFunction1(afterSerialization))
-    if (!js.isUndefined(autoload)) __obj.updateDynamic("autoload")(autoload.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoload)) __obj.updateDynamic("autoload")(autoload.get.asInstanceOf[js.Any])
     if (beforeDeserialization != null) __obj.updateDynamic("beforeDeserialization")(js.Any.fromFunction1(beforeDeserialization))
-    if (corruptAlertThreshold != null) __obj.updateDynamic("corruptAlertThreshold")(corruptAlertThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(corruptAlertThreshold)) __obj.updateDynamic("corruptAlertThreshold")(corruptAlertThreshold.get.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (!js.isUndefined(inMemoryOnly)) __obj.updateDynamic("inMemoryOnly")(inMemoryOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodeWebkitAppName)) __obj.updateDynamic("nodeWebkitAppName")(nodeWebkitAppName.asInstanceOf[js.Any])
+    if (!js.isUndefined(inMemoryOnly)) __obj.updateDynamic("inMemoryOnly")(inMemoryOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeWebkitAppName)) __obj.updateDynamic("nodeWebkitAppName")(nodeWebkitAppName.get.asInstanceOf[js.Any])
     if (onload != null) __obj.updateDynamic("onload")(js.Any.fromFunction1(onload))
-    if (!js.isUndefined(timestampData)) __obj.updateDynamic("timestampData")(timestampData.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestampData)) __obj.updateDynamic("timestampData")(timestampData.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataStoreOptions]
   }
 }

@@ -6,12 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides response data for a request to acquire a downloadable content (DLC) package license. */
-@JSGlobal("Windows.Services.Store.StoreAcquireLicenseResult")
-@js.native
-abstract class StoreAcquireLicenseResult () extends js.Object {
+trait StoreAcquireLicenseResult extends js.Object {
   /** Gets the error code for the request, if the operation encountered an error. */
-  var extendedError: WinRTError = js.native
+  var extendedError: WinRTError
   /** Gets an object that represents the downloadable content (DLC) package license. */
-  var storePackageLicense: StorePackageLicense = js.native
+  var storePackageLicense: StorePackageLicense
+}
+
+object StoreAcquireLicenseResult {
+  @scala.inline
+  def apply(extendedError: WinRTError, storePackageLicense: StorePackageLicense): StoreAcquireLicenseResult = {
+    val __obj = js.Dynamic.literal(extendedError = extendedError.asInstanceOf[js.Any], storePackageLicense = storePackageLicense.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StoreAcquireLicenseResult]
+  }
 }
 

@@ -14,9 +14,9 @@ trait LaunchTemplateHibernationOptionsRequest extends js.Object {
 
 object LaunchTemplateHibernationOptionsRequest {
   @scala.inline
-  def apply(Configured: js.UndefOr[scala.Boolean] = js.undefined): LaunchTemplateHibernationOptionsRequest = {
+  def apply(Configured: js.UndefOr[Boolean] = js.undefined): LaunchTemplateHibernationOptionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Configured)) __obj.updateDynamic("Configured")(Configured.asInstanceOf[js.Any])
+    if (!js.isUndefined(Configured)) __obj.updateDynamic("Configured")(Configured.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchTemplateHibernationOptionsRequest]
   }
 }

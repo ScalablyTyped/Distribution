@@ -1,6 +1,6 @@
 package typings.xmlCore
 
-import typings.std.Document_
+import typings.std.Document
 import typings.std.Element
 import typings.std.Node
 import typings.xmlCore.typesMod.AssocArray
@@ -31,13 +31,13 @@ object xmlObjectMod extends js.Object {
     var localName: js.UndefOr[String] = js.native
     var namespaceURI: js.UndefOr[String | Null] = js.native
     var prefix: String | Null = js.native
-    /* protected */ def CreateDocument(): Document_ = js.native
+    /* protected */ def CreateDocument(): Document = js.native
     /* protected */ def CreateElement(): Element = js.native
-    /* protected */ def CreateElement(document: Document_): Element = js.native
-    /* protected */ def CreateElement(document: Document_, localName: String): Element = js.native
-    /* protected */ def CreateElement(document: Document_, localName: String, namespaceUri: String): Element = js.native
-    /* protected */ def CreateElement(document: Document_, localName: String, namespaceUri: String, prefix: String): Element = js.native
-    /* protected */ def CreateElement(document: Document_, localName: String, namespaceUri: Null, prefix: String): Element = js.native
+    /* protected */ def CreateElement(document: Document): Element = js.native
+    /* protected */ def CreateElement(document: Document, localName: String): Element = js.native
+    /* protected */ def CreateElement(document: Document, localName: String, namespaceUri: String): Element = js.native
+    /* protected */ def CreateElement(document: Document, localName: String, namespaceUri: String, prefix: String): Element = js.native
+    /* protected */ def CreateElement(document: Document, localName: String, namespaceUri: Null, prefix: String): Element = js.native
     def Element: js.UndefOr[typings.std.Element | Null] = js.native
     def GetAttribute(name: String): String | Null = js.native
     def GetAttribute(name: String, defaultValue: String): String | Null = js.native
@@ -82,11 +82,11 @@ object xmlObjectMod extends js.Object {
       * @param  {string} prefix
       * @returns Document
       */
-    def CreateDocument(): Document_ = js.native
-    def CreateDocument(root: String): Document_ = js.native
-    def CreateDocument(root: String, namespaceUri: String): Document_ = js.native
-    def CreateDocument(root: String, namespaceUri: String, prefix: String): Document_ = js.native
-    def CreateDocument(root: String, namespaceUri: Null, prefix: String): Document_ = js.native
+    def CreateDocument(): Document = js.native
+    def CreateDocument(root: String): Document = js.native
+    def CreateDocument(root: String, namespaceUri: String): Document = js.native
+    def CreateDocument(root: String, namespaceUri: String, prefix: String): Document = js.native
+    def CreateDocument(root: String, namespaceUri: Null, prefix: String): Document = js.native
     def GetAttribute(element: Element, attrName: String): String | Null = js.native
     def GetAttribute(element: Element, attrName: String, defaultValue: String): String | Null = js.native
     def GetAttribute(element: Element, attrName: String, defaultValue: String, required: Boolean): String | Null = js.native
@@ -98,7 +98,7 @@ object xmlObjectMod extends js.Object {
     def GetChildren(node: Node, localName: String, nameSpace: String): js.Array[Element] = js.native
     def GetElement(element: Element, name: String): Element = js.native
     def GetElement(element: Element, name: String, required: Boolean): Element = js.native
-    def GetElementById(element: Document_, idValue: String): Element | Null = js.native
+    def GetElementById(element: Document, idValue: String): Element | Null = js.native
     def GetElementById(element: Element, idValue: String): Element | Null = js.native
     def GetFirstChild(node: Node, localName: String): Element | Null = js.native
     def GetFirstChild(node: Node, localName: String, nameSpace: String): Element | Null = js.native

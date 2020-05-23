@@ -9,11 +9,11 @@ trait HasPendingMappingsResponse extends js.Object {
   /**
     * Describe cluster pending (migrating, creating, deleting) mapping state.
     */
-  val clusters: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
+  var clusters: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
   /**
     * If there is any clusters with pending mapping state.
     */
-  val pending: Boolean
+  var pending: Boolean
 }
 
 object HasPendingMappingsResponse {

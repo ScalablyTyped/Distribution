@@ -26,10 +26,10 @@ object ShowOptions {
     val __obj = js.Dynamic.literal()
     if (addCancelButtonWithLabel != null) __obj.updateDynamic("addCancelButtonWithLabel")(addCancelButtonWithLabel.asInstanceOf[js.Any])
     if (addDestructiveButtonWithLabel != null) __obj.updateDynamic("addDestructiveButtonWithLabel")(addDestructiveButtonWithLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(androidEnableCancelButton)) __obj.updateDynamic("androidEnableCancelButton")(androidEnableCancelButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(androidEnableCancelButton)) __obj.updateDynamic("androidEnableCancelButton")(androidEnableCancelButton.get.asInstanceOf[js.Any])
     if (buttonLabels != null) __obj.updateDynamic("buttonLabels")(buttonLabels.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(winphoneEnableCancelButton)) __obj.updateDynamic("winphoneEnableCancelButton")(winphoneEnableCancelButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(winphoneEnableCancelButton)) __obj.updateDynamic("winphoneEnableCancelButton")(winphoneEnableCancelButton.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowOptions]
   }
 }

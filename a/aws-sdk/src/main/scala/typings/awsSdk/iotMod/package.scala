@@ -187,6 +187,12 @@ package object iotMod {
   type CannedAccessControlList = typings.awsSdk.iotMod._CannedAccessControlList | java.lang.String
   type CertificateArn = java.lang.String
   type CertificateId = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.DEFAULT
+    - typings.awsSdk.awsSdkStrings.SNI_ONLY
+    - java.lang.String
+  */
+  type CertificateMode = typings.awsSdk.iotMod._CertificateMode | java.lang.String
   type CertificateName = java.lang.String
   type CertificatePathOnDevice = java.lang.String
   type CertificatePem = java.lang.String
@@ -514,6 +520,7 @@ package object iotMod {
   type Parameters = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iotMod.Value]
   type PartitionKey = java.lang.String
   type PayloadField = java.lang.String
+  type PayloadVersion = java.lang.String
   type Percent = scala.Double
   type PercentList = js.Array[typings.awsSdk.iotMod.Percent]
   type PercentValue = scala.Double
@@ -575,6 +582,7 @@ package object iotMod {
   type RelatedResources = js.Array[typings.awsSdk.iotMod.RelatedResource]
   type RemoveAuthorizerConfig = scala.Boolean
   type RemoveAutoRegistration = scala.Boolean
+  type RemoveHook = scala.Boolean
   type RemoveThingType = scala.Boolean
   type RemovedThings = scala.Double
   /* Rewritten from type alias, can be one of: 

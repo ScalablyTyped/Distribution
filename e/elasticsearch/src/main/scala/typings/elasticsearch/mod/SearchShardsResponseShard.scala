@@ -1,12 +1,12 @@
 package typings.elasticsearch.mod
 
-import typings.elasticsearch.AnonId
+import typings.elasticsearch.anon.Id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SearchShardsResponseShard extends js.Object {
-  var allocation_id: AnonId
+  var allocation_id: Id
   var index: String
   var node: String
   var primary: Boolean
@@ -18,7 +18,7 @@ trait SearchShardsResponseShard extends js.Object {
 object SearchShardsResponseShard {
   @scala.inline
   def apply(
-    allocation_id: AnonId,
+    allocation_id: Id,
     index: String,
     node: String,
     primary: Boolean,

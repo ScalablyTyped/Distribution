@@ -34,14 +34,14 @@ object CreateInstanceProfileRequest {
     name: Name,
     description: Message = null,
     excludeAppPackagesFromCleanup: PackageIds = null,
-    packageCleanup: js.UndefOr[scala.Boolean] = js.undefined,
-    rebootAfterUse: js.UndefOr[scala.Boolean] = js.undefined
+    packageCleanup: js.UndefOr[Boolean] = js.undefined,
+    rebootAfterUse: js.UndefOr[Boolean] = js.undefined
   ): CreateInstanceProfileRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (excludeAppPackagesFromCleanup != null) __obj.updateDynamic("excludeAppPackagesFromCleanup")(excludeAppPackagesFromCleanup.asInstanceOf[js.Any])
-    if (!js.isUndefined(packageCleanup)) __obj.updateDynamic("packageCleanup")(packageCleanup.asInstanceOf[js.Any])
-    if (!js.isUndefined(rebootAfterUse)) __obj.updateDynamic("rebootAfterUse")(rebootAfterUse.asInstanceOf[js.Any])
+    if (!js.isUndefined(packageCleanup)) __obj.updateDynamic("packageCleanup")(packageCleanup.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rebootAfterUse)) __obj.updateDynamic("rebootAfterUse")(rebootAfterUse.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateInstanceProfileRequest]
   }
 }

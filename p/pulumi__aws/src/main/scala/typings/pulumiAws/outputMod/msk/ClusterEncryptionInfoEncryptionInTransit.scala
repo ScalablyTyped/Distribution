@@ -21,7 +21,7 @@ object ClusterEncryptionInfoEncryptionInTransit {
   def apply(clientBroker: String = null, inCluster: js.UndefOr[Boolean] = js.undefined): ClusterEncryptionInfoEncryptionInTransit = {
     val __obj = js.Dynamic.literal()
     if (clientBroker != null) __obj.updateDynamic("clientBroker")(clientBroker.asInstanceOf[js.Any])
-    if (!js.isUndefined(inCluster)) __obj.updateDynamic("inCluster")(inCluster.asInstanceOf[js.Any])
+    if (!js.isUndefined(inCluster)) __obj.updateDynamic("inCluster")(inCluster.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterEncryptionInfoEncryptionInTransit]
   }
 }

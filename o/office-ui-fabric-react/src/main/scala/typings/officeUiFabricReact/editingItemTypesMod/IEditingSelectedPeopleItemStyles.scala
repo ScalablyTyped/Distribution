@@ -12,10 +12,10 @@ trait IEditingSelectedPeopleItemStyles extends js.Object {
 
 object IEditingSelectedPeopleItemStyles {
   @scala.inline
-  def apply(input: IStyle = null, root: IStyle = null): IEditingSelectedPeopleItemStyles = {
+  def apply(input: js.UndefOr[Null | IStyle] = js.undefined, root: js.UndefOr[Null | IStyle] = js.undefined): IEditingSelectedPeopleItemStyles = {
     val __obj = js.Dynamic.literal()
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(input)) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditingSelectedPeopleItemStyles]
   }
 }

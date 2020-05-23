@@ -35,7 +35,7 @@ object TouchBarPopoverConstructorOptions {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchBarPopoverConstructorOptions]
   }
 }

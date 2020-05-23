@@ -7,18 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Generates machine code for mips.
   */
-@JSGlobal("MipsWriter")
 @js.native
-class MipsWriter protected () extends js.Object {
-  /**
-    * Creates a new code writer for generating MIPS machine code
-    * written directly to memory at `codeAddress`.
-    *
-    * @param codeAddress Memory address to write generated code to.
-    * @param options Options for customizing code generation.
-    */
-  def this(codeAddress: NativePointerValue) = this()
-  def this(codeAddress: NativePointerValue, options: MipsWriterOptions) = this()
+trait MipsWriter extends js.Object {
   /**
     * Memory location of the first byte of output.
     */
@@ -49,11 +39,11 @@ class MipsWriter protected () extends js.Object {
   /**
     * Puts an ADDI instruction.
     */
-  def putAddiRegImm(destReg: MipsRegister, imm: Double): Unit = js.native
+  def putAddiRegImm(dstReg: MipsRegister, imm: Double): Unit = js.native
   /**
     * Puts an ADDI instruction.
     */
-  def putAddiRegRegImm(destReg: MipsRegister, leftReg: MipsRegister, imm: Double): Unit = js.native
+  def putAddiRegRegImm(dstReg: MipsRegister, leftReg: MipsRegister, imm: Double): Unit = js.native
   /**
     * Puts an ADDU instruction.
     */
@@ -86,6 +76,10 @@ class MipsWriter protected () extends js.Object {
     */
   def putCallRegWithArguments(reg: MipsRegister, args: js.Array[MipsCallArgument]): Unit = js.native
   /**
+    * Puts a DSLL instruction.
+    */
+  def putDsllRegReg(dstReg: MipsRegister, srcReg: MipsRegister, amount: Double): Unit = js.native
+  /**
     * Puts a raw instruction.
     */
   def putInstruction(insn: Double): Unit = js.native
@@ -93,6 +87,10 @@ class MipsWriter protected () extends js.Object {
     * Puts a J instruction.
     */
   def putJAddress(address: NativePointerValue): Unit = js.native
+  /**
+    * Puts a J WITHOUT NOP instruction.
+    */
+  def putJAddressWithoutNop(address: NativePointerValue): Unit = js.native
   /**
     * Puts a J instruction referencing `labelId`, defined by a past
     * or future `putLabel()`.
@@ -120,6 +118,12 @@ class MipsWriter protected () extends js.Object {
     */
   def putLabel(id: String): Unit = js.native
   /**
+    * Puts an LD instruction.
+    */
+  def putLdRegRegOffset(dstReg: MipsRegister, srcReg: MipsRegister, srcOffset: Double): Unit = js.native
+  def putLdRegRegOffset(dstReg: MipsRegister, srcReg: MipsRegister, srcOffset: Int64): Unit = js.native
+  def putLdRegRegOffset(dstReg: MipsRegister, srcReg: MipsRegister, srcOffset: UInt64): Unit = js.native
+  /**
     * Puts a LUI instruction.
     */
   def putLuiRegImm(reg: MipsRegister, imm: Double): Unit = js.native
@@ -127,8 +131,8 @@ class MipsWriter protected () extends js.Object {
     * Puts a LW instruction.
     */
   def putLwRegRegOffset(dstReg: MipsRegister, srcReg: MipsRegister, srcOffset: Double): Unit = js.native
-  def putLwRegRegOffset(dstReg: MipsRegister, srcReg: MipsRegister, srcOffset: Int64_): Unit = js.native
-  def putLwRegRegOffset(dstReg: MipsRegister, srcReg: MipsRegister, srcOffset: UInt64_): Unit = js.native
+  def putLwRegRegOffset(dstReg: MipsRegister, srcReg: MipsRegister, srcOffset: Int64): Unit = js.native
+  def putLwRegRegOffset(dstReg: MipsRegister, srcReg: MipsRegister, srcOffset: UInt64): Unit = js.native
   /**
     * Puts a MFHI instruction.
     */
@@ -162,6 +166,10 @@ class MipsWriter protected () extends js.Object {
     */
   def putPopReg(reg: MipsRegister): Unit = js.native
   /**
+    * Puts a minimal sized trampoline for vectoring to the given address.
+    */
+  def putPrologueTrampoline(reg: MipsRegister, address: NativePointerValue): Unit = js.native
+  /**
     * Puts a PUSH instruction.
     */
   def putPushReg(reg: MipsRegister): Unit = js.native
@@ -172,13 +180,13 @@ class MipsWriter protected () extends js.Object {
   /**
     * Puts a SUB instruction.
     */
-  def putSubRegRegImm(destReg: MipsRegister, leftReg: MipsRegister, imm: Double): Unit = js.native
+  def putSubRegRegImm(dstReg: MipsRegister, leftReg: MipsRegister, imm: Double): Unit = js.native
   /**
     * Puts a SW instruction.
     */
   def putSwRegRegOffset(srcReg: MipsRegister, dstReg: MipsRegister, dstOffset: Double): Unit = js.native
-  def putSwRegRegOffset(srcReg: MipsRegister, dstReg: MipsRegister, dstOffset: Int64_): Unit = js.native
-  def putSwRegRegOffset(srcReg: MipsRegister, dstReg: MipsRegister, dstOffset: UInt64_): Unit = js.native
+  def putSwRegRegOffset(srcReg: MipsRegister, dstReg: MipsRegister, dstOffset: Int64): Unit = js.native
+  def putSwRegRegOffset(srcReg: MipsRegister, dstReg: MipsRegister, dstOffset: UInt64): Unit = js.native
   /**
     * Recycles instance.
     */

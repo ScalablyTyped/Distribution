@@ -1,5 +1,6 @@
 package typings.screeps
 
+import typings.screeps.anon.Exit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,14 +41,14 @@ trait GameMap extends js.Object {
     * @param opts (optional) An object with the pathfinding options.
     * @returns the route array or ERR_NO_PATH code
     */
-  def findRoute(fromRoom: String, toRoom: String): js.Array[AnonExit] | ERR_NO_PATH = js.native
-  def findRoute(fromRoom: String, toRoom: String, opts: RouteOptions): js.Array[AnonExit] | ERR_NO_PATH = js.native
-  def findRoute(fromRoom: String, toRoom: Room): js.Array[AnonExit] | ERR_NO_PATH = js.native
-  def findRoute(fromRoom: String, toRoom: Room, opts: RouteOptions): js.Array[AnonExit] | ERR_NO_PATH = js.native
-  def findRoute(fromRoom: Room, toRoom: String): js.Array[AnonExit] | ERR_NO_PATH = js.native
-  def findRoute(fromRoom: Room, toRoom: String, opts: RouteOptions): js.Array[AnonExit] | ERR_NO_PATH = js.native
-  def findRoute(fromRoom: Room, toRoom: Room): js.Array[AnonExit] | ERR_NO_PATH = js.native
-  def findRoute(fromRoom: Room, toRoom: Room, opts: RouteOptions): js.Array[AnonExit] | ERR_NO_PATH = js.native
+  def findRoute(fromRoom: String, toRoom: String): js.Array[Exit] | ERR_NO_PATH = js.native
+  def findRoute(fromRoom: String, toRoom: String, opts: RouteOptions): js.Array[Exit] | ERR_NO_PATH = js.native
+  def findRoute(fromRoom: String, toRoom: Room): js.Array[Exit] | ERR_NO_PATH = js.native
+  def findRoute(fromRoom: String, toRoom: Room, opts: RouteOptions): js.Array[Exit] | ERR_NO_PATH = js.native
+  def findRoute(fromRoom: Room, toRoom: String): js.Array[Exit] | ERR_NO_PATH = js.native
+  def findRoute(fromRoom: Room, toRoom: String, opts: RouteOptions): js.Array[Exit] | ERR_NO_PATH = js.native
+  def findRoute(fromRoom: Room, toRoom: Room): js.Array[Exit] | ERR_NO_PATH = js.native
+  def findRoute(fromRoom: Room, toRoom: Room, opts: RouteOptions): js.Array[Exit] | ERR_NO_PATH = js.native
   /**
     * Get the linear distance (in rooms) between two rooms. You can use this function to estimate the energy cost of
     * sending resources through terminals, or using observers and nukes.

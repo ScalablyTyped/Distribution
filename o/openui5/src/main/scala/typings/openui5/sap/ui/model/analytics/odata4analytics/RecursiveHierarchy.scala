@@ -4,58 +4,51 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.model.analytics.odata4analytics.RecursiveHierarchy")
-@js.native
-class RecursiveHierarchy protected () extends js.Object {
-  /**
-    * Create a representation of a recursive hierarchy defined on one multipleproperties in an OData
-    * entity type query. Do not create your own instances.
-    * @param oEntityType object for the entity type
-    * @param oNodeIDProperty DataJS object for the property holding the           hierarchy node ID
-    * identifying the hierarchy node to which the           OData entry belongs
-    * @param oParentNodeIDProperty DataJS object for the property holding the           node ID of the
-    * parent of the hierarchy node pointed to by the           value of oNodeIDProperty
-    * @param oNodeLevelProperty DataJS object for the property holding the           level number for the
-    * of the hierarchy node pointed to by the value           of oNodeIDProperty
-    * @param oNodeValueProperty DataJS object for the property holding the data           value for the of
-    * the hierarchy node pointed to by the value of           oNodeIDProperty
-    */
-  def this(
-    oEntityType: EntityType,
-    oNodeIDProperty: js.Any,
-    oParentNodeIDProperty: js.Any,
-    oNodeLevelProperty: js.Any,
-    oNodeValueProperty: js.Any
-  ) = this()
+trait RecursiveHierarchy extends js.Object {
   /**
     * Get the property holding the node ID of the hierarchy node
     * @returns The DataJS object representing this property
     */
-  def getNodeIDProperty(): js.Any = js.native
+  def getNodeIDProperty(): js.Any
   /**
     * Get the property holding the level of the hierarchy node
     * @returns The DataJS object representing this property
     */
-  def getNodeLevelProperty(): js.Any = js.native
+  def getNodeLevelProperty(): js.Any
   /**
     * Get the property holding the value that is structurally organized by thehierarchy
     * @returns The DataJS object representing this property
     */
-  def getNodeValueProperty(): js.Any = js.native
+  def getNodeValueProperty(): js.Any
   /**
     * Get the property holding the parent node ID of the hierarchy node
     * @returns The DataJS object representing this property
     */
-  def getParentNodeIDProperty(): js.Any = js.native
+  def getParentNodeIDProperty(): js.Any
   /**
     * Get indicator if this is a leveled hierarchy
     * @returns False
     */
-  def isLeveledHierarchy(): Boolean = js.native
+  def isLeveledHierarchy(): Boolean
   /**
     * Get indicator if this is a recursive hierarchy
     * @returns True
     */
-  def isRecursiveHierarchy(): Boolean = js.native
+  def isRecursiveHierarchy(): Boolean
+}
+
+object RecursiveHierarchy {
+  @scala.inline
+  def apply(
+    getNodeIDProperty: () => js.Any,
+    getNodeLevelProperty: () => js.Any,
+    getNodeValueProperty: () => js.Any,
+    getParentNodeIDProperty: () => js.Any,
+    isLeveledHierarchy: () => Boolean,
+    isRecursiveHierarchy: () => Boolean
+  ): RecursiveHierarchy = {
+    val __obj = js.Dynamic.literal(getNodeIDProperty = js.Any.fromFunction0(getNodeIDProperty), getNodeLevelProperty = js.Any.fromFunction0(getNodeLevelProperty), getNodeValueProperty = js.Any.fromFunction0(getNodeValueProperty), getParentNodeIDProperty = js.Any.fromFunction0(getParentNodeIDProperty), isLeveledHierarchy = js.Any.fromFunction0(isLeveledHierarchy), isRecursiveHierarchy = js.Any.fromFunction0(isRecursiveHierarchy))
+    __obj.asInstanceOf[RecursiveHierarchy]
+  }
 }
 

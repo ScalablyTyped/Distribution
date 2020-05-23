@@ -37,15 +37,15 @@ trait PlusWebviewWebviewSubNViewStyles extends js.Object {
   /**
     * 原生子View控件类型
     * 可取值：
-    * 		"NView" - 原生子View控件（plus.nativeObj.NView）；
-    * 		"ImageSlider" - 原生图片轮播控件（plus.nativeObj.ImageSlider）。
-    * 	默认值为"NView"。
+    *         "NView" - 原生子View控件（plus.nativeObj.NView）；
+    *         "ImageSlider" - 原生图片轮播控件（plus.nativeObj.ImageSlider）。
+    *     默认值为"NView"。
     * - NView: 
-    * 	原生子View控件（plus.nativeObj.NView）
-    * 								
+    *     原生子View控件（plus.nativeObj.NView）
+    *                                 
     * - ImageSlider: 
-    * 	原生图片轮播控件（plus.nativeObj.ImageSlider）							
-    * 								
+    *     原生图片轮播控件（plus.nativeObj.ImageSlider）                            
+    *                                 
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */

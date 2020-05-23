@@ -18,10 +18,10 @@ trait ICD10CMTrait extends js.Object {
 
 object ICD10CMTrait {
   @scala.inline
-  def apply(Name: ICD10CMTraitName = null, Score: Int | Double = null): ICD10CMTrait = {
+  def apply(Name: ICD10CMTraitName = null, Score: js.UndefOr[Float] = js.undefined): ICD10CMTrait = {
     val __obj = js.Dynamic.literal()
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Score != null) __obj.updateDynamic("Score")(Score.asInstanceOf[js.Any])
+    if (!js.isUndefined(Score)) __obj.updateDynamic("Score")(Score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICD10CMTrait]
   }
 }

@@ -29,11 +29,11 @@ object StopPipelineExecutionInput {
   def apply(
     pipelineExecutionId: PipelineExecutionId,
     pipelineName: PipelineName,
-    abandon: js.UndefOr[scala.Boolean] = js.undefined,
+    abandon: js.UndefOr[Boolean] = js.undefined,
     reason: StopPipelineExecutionReason = null
   ): StopPipelineExecutionInput = {
     val __obj = js.Dynamic.literal(pipelineExecutionId = pipelineExecutionId.asInstanceOf[js.Any], pipelineName = pipelineName.asInstanceOf[js.Any])
-    if (!js.isUndefined(abandon)) __obj.updateDynamic("abandon")(abandon.asInstanceOf[js.Any])
+    if (!js.isUndefined(abandon)) __obj.updateDynamic("abandon")(abandon.get.asInstanceOf[js.Any])
     if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopPipelineExecutionInput]
   }

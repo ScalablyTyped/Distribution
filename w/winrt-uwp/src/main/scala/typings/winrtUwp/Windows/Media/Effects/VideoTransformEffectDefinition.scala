@@ -12,25 +12,39 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the definition of a video transform effect. */
-@JSGlobal("Windows.Media.Effects.VideoTransformEffectDefinition")
-@js.native
-/** Initializes a new instance of the VideoTransformEffectDefinition class. */
-class VideoTransformEffectDefinition () extends js.Object {
+trait VideoTransformEffectDefinition extends js.Object {
   /** Gets the activatable class ID of the video transform effect definition. */
-  var activatableClassId: String = js.native
+  var activatableClassId: String
   /** Gets or sets the rectangle within which the video will be cropped, specified in pixels. */
-  var cropRectangle: Rect = js.native
+  var cropRectangle: Rect
   /** Gets or sets the direction in which the video will be mirrored. */
-  var mirror: MediaMirroringOptions = js.native
+  var mirror: MediaMirroringOptions
   /** Gets or sets the output size of the video, in pixels. */
-  var outputSize: Size = js.native
+  var outputSize: Size
   /** Gets or sets the color that will be used to fill pixels in the frame that are not filled with video, such as when video is letterboxed. */
-  var paddingColor: Color = js.native
+  var paddingColor: Color
   /** Gets or sets the media processing algorithm that is used for the video transform. */
-  var processingAlgorithm: MediaVideoProcessingAlgorithm = js.native
+  var processingAlgorithm: MediaVideoProcessingAlgorithm
   /** Gets the set of properties for configuring the VideoTransformEffectDefinition object. */
-  var properties: IPropertySet = js.native
+  var properties: IPropertySet
   /** Gets or sets the angle and direction in which the video will be rotated. */
-  var rotation: MediaRotation = js.native
+  var rotation: MediaRotation
+}
+
+object VideoTransformEffectDefinition {
+  @scala.inline
+  def apply(
+    activatableClassId: String,
+    cropRectangle: Rect,
+    mirror: MediaMirroringOptions,
+    outputSize: Size,
+    paddingColor: Color,
+    processingAlgorithm: MediaVideoProcessingAlgorithm,
+    properties: IPropertySet,
+    rotation: MediaRotation
+  ): VideoTransformEffectDefinition = {
+    val __obj = js.Dynamic.literal(activatableClassId = activatableClassId.asInstanceOf[js.Any], cropRectangle = cropRectangle.asInstanceOf[js.Any], mirror = mirror.asInstanceOf[js.Any], outputSize = outputSize.asInstanceOf[js.Any], paddingColor = paddingColor.asInstanceOf[js.Any], processingAlgorithm = processingAlgorithm.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VideoTransformEffectDefinition]
+  }
 }
 

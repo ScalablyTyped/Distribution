@@ -9,9 +9,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides functionality for handling message events. */
-@JSGlobal("Windows.ApplicationModel.Chat.RcsEndUserMessageManager")
 @js.native
-abstract class RcsEndUserMessageManager () extends js.Object {
+trait RcsEndUserMessageManager extends js.Object {
   /** Occurs when a new message is available. */
   @JSName("onmessageavailablechanged")
   var onmessageavailablechanged_Original: TypedEventHandler[RcsEndUserMessageManager, RcsEndUserMessageAvailableEventArgs] = js.native

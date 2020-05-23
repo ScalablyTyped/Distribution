@@ -17,10 +17,10 @@ trait PlotIkhKijunLineStylesOptions extends js.Object {
 
 object PlotIkhKijunLineStylesOptions {
   @scala.inline
-  def apply(lineColor: ColorString = null, lineWidth: Int | Double = null): PlotIkhKijunLineStylesOptions = {
+  def apply(lineColor: ColorString = null, lineWidth: js.UndefOr[Double] = js.undefined): PlotIkhKijunLineStylesOptions = {
     val __obj = js.Dynamic.literal()
     if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotIkhKijunLineStylesOptions]
   }
 }

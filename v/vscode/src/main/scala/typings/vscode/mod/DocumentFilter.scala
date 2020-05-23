@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation._
 
 trait DocumentFilter extends js.Object {
   /**
-  		 * A language id, like `typescript`.
-  		 */
+    * A language id, like `typescript`.
+    */
   var language: js.UndefOr[String] = js.undefined
   /**
-  		 * A [glob pattern](#GlobPattern) that is matched on the absolute path of the document. Use a [relative pattern](#RelativePattern)
-  		 * to filter documents to a [workspace folder](#WorkspaceFolder).
-  		 */
+    * A [glob pattern](#GlobPattern) that is matched on the absolute path of the document. Use a [relative pattern](#RelativePattern)
+    * to filter documents to a [workspace folder](#WorkspaceFolder).
+    */
   var pattern: js.UndefOr[GlobPattern] = js.undefined
   /**
-  		 * A Uri [scheme](#Uri.scheme), like `file` or `untitled`.
-  		 */
+    * A Uri [scheme](#Uri.scheme), like `file` or `untitled`.
+    */
   var scheme: js.UndefOr[String] = js.undefined
 }
 

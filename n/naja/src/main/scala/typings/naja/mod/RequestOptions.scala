@@ -28,13 +28,13 @@ object RequestOptions {
     unique: js.UndefOr[Boolean] = js.undefined
   ): RequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(abort)) __obj.updateDynamic("abort")(abort.asInstanceOf[js.Any])
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (!js.isUndefined(abort)) __obj.updateDynamic("abort")(abort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
     if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
     if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
-    if (!js.isUndefined(historyUiCache)) __obj.updateDynamic("historyUiCache")(historyUiCache.asInstanceOf[js.Any])
+    if (!js.isUndefined(historyUiCache)) __obj.updateDynamic("historyUiCache")(historyUiCache.get.asInstanceOf[js.Any])
     if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
-    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
+    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOptions]
   }
 }

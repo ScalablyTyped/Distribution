@@ -26,16 +26,18 @@ object ComposeInterfaceTypeConfig {
   @scala.inline
   def apply[TSource, TContext](
     name: String,
-    description: String = null,
+    description: js.UndefOr[Null | String] = js.undefined,
     extensions: Extensions = null,
     fields: Thunk[ComposeFieldConfigMap[TSource, TContext]] = null,
-    resolveType: (TSource, TContext, /* info */ GraphQLResolveInfo, /* abstractType */ GraphQLAbstractType) => PromiseOrValue[Maybe[(GraphQLObjectType[TSource, TContext, StringDictionary[_]]) | String]] = null
+    resolveType: js.UndefOr[
+      Null | ((TSource, TContext, /* info */ GraphQLResolveInfo, /* abstractType */ GraphQLAbstractType) => PromiseOrValue[Maybe[(GraphQLObjectType[TSource, TContext, StringDictionary[_]]) | String]])
+    ] = js.undefined
   ): ComposeInterfaceTypeConfig[TSource, TContext] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (resolveType != null) __obj.updateDynamic("resolveType")(js.Any.fromFunction4(resolveType))
+    if (!js.isUndefined(resolveType)) __obj.updateDynamic("resolveType")(if (resolveType != null) js.Any.fromFunction4(resolveType.asInstanceOf[(TSource, TContext, /* info */ GraphQLResolveInfo, /* abstractType */ GraphQLAbstractType) => PromiseOrValue[Maybe[(GraphQLObjectType[TSource, TContext, StringDictionary[_]]) | String]]]) else null)
     __obj.asInstanceOf[ComposeInterfaceTypeConfig[TSource, TContext]]
   }
 }

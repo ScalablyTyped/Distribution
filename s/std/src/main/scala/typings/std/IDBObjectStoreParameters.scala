@@ -13,11 +13,11 @@ object IDBObjectStoreParameters {
   @scala.inline
   def apply(
     autoIncrement: js.UndefOr[scala.Boolean] = js.undefined,
-    keyPath: java.lang.String | js.Array[java.lang.String] = null
+    keyPath: js.UndefOr[Null | java.lang.String | js.Array[java.lang.String]] = js.undefined
   ): IDBObjectStoreParameters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoIncrement)) __obj.updateDynamic("autoIncrement")(autoIncrement.asInstanceOf[js.Any])
-    if (keyPath != null) __obj.updateDynamic("keyPath")(keyPath.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoIncrement)) __obj.updateDynamic("autoIncrement")(autoIncrement.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyPath)) __obj.updateDynamic("keyPath")(keyPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDBObjectStoreParameters]
   }
 }

@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonBackgroundColor
+import typings.cesium.anon.BackgroundColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,8 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "LabelGraphics")
 @js.native
 class LabelGraphics () extends js.Object {
-  def this(options: AnonBackgroundColor) = this()
+  def this(options: BackgroundColor) = this()
+  var backgroundColor: Property = js.native
   var definitionChanged: Event[js.Array[_]] = js.native
+  var distanceDisplayCondition: js.UndefOr[DistanceDisplayCondition | Property] = js.native
   var eyeOffset: Property = js.native
   var fillColor: Color = js.native
   var font: String = js.native
@@ -20,6 +22,7 @@ class LabelGraphics () extends js.Object {
   var pixelOffsetScaleByDistance: Property = js.native
   var scale: Property = js.native
   var show: Property = js.native
+  var showBackground: js.UndefOr[Property] = js.native
   var style: Property = js.native
   var text: Property = js.native
   var translucencyByDistance: Property = js.native

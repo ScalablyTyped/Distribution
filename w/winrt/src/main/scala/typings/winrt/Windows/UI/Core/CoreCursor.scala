@@ -4,13 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.Core.CoreCursor")
-@js.native
-class CoreCursor protected () extends ICoreCursor {
-  def this(`type`: CoreCursorType, id: Double) = this()
-  /* CompleteClass */
-  override var id: Double = js.native
-  /* CompleteClass */
-  override var `type`: CoreCursorType = js.native
+trait CoreCursor extends ICoreCursor
+
+object CoreCursor {
+  @scala.inline
+  def apply(id: Double, `type`: CoreCursorType): CoreCursor = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CoreCursor]
+  }
 }
 

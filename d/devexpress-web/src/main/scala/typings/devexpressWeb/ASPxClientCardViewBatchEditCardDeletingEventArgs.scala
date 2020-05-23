@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientCardView.BatchEditCardDeleting event.
   */
-@JSGlobal("ASPxClientCardViewBatchEditCardDeletingEventArgs")
-@js.native
-class ASPxClientCardViewBatchEditCardDeletingEventArgs protected () extends ASPxClientCancelEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientCardViewBatchEditCardDeletingEventArgs class.
-    * @param visibleIndex An integer value that specifies the processed card visible index.
-    * @param cardValues A hashtable that stores information about the processed card's cells.
-    */
-  def this(visibleIndex: Double, cardValues: js.Any) = this()
+trait ASPxClientCardViewBatchEditCardDeletingEventArgs extends ASPxClientCancelEventArgs {
   /**
     * Gets a hashtable that maintains information about deleted cells.
     */
-  var cardValues: js.Any = js.native
+  var cardValues: js.Any
   /**
     * Gets the processed card visible index.
     */
-  var visibleIndex: Double = js.native
+  var visibleIndex: Double
+}
+
+object ASPxClientCardViewBatchEditCardDeletingEventArgs {
+  @scala.inline
+  def apply(cancel: Boolean, cardValues: js.Any, visibleIndex: Double): ASPxClientCardViewBatchEditCardDeletingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], cardValues = cardValues.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientCardViewBatchEditCardDeletingEventArgs]
+  }
 }
 

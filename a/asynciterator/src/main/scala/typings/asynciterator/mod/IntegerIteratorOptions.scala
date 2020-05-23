@@ -12,11 +12,15 @@ trait IntegerIteratorOptions extends js.Object {
 
 object IntegerIteratorOptions {
   @scala.inline
-  def apply(end: Int | Double = null, start: Int | Double = null, step: Int | Double = null): IntegerIteratorOptions = {
+  def apply(
+    end: js.UndefOr[Double] = js.undefined,
+    start: js.UndefOr[Double] = js.undefined,
+    step: js.UndefOr[Double] = js.undefined
+  ): IntegerIteratorOptions = {
     val __obj = js.Dynamic.literal()
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntegerIteratorOptions]
   }
 }

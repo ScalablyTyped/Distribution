@@ -20,8 +20,7 @@ object ExtensionTerm {
     manifest: Record[String, schema | single | ExtensionTermManifest] = null,
     register: js.Any = null
   ): ExtensionTerm = {
-    val __obj = js.Dynamic.literal()
-    if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(init = init.asInstanceOf[js.Any])
     if (manifest != null) __obj.updateDynamic("manifest")(manifest.asInstanceOf[js.Any])
     if (register != null) __obj.updateDynamic("register")(register.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionTerm]

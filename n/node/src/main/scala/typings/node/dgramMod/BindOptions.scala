@@ -16,14 +16,14 @@ object BindOptions {
   def apply(
     address: String = null,
     exclusive: js.UndefOr[Boolean] = js.undefined,
-    fd: Int | Double = null,
-    port: Int | Double = null
+    fd: js.UndefOr[Double] = js.undefined,
+    port: js.UndefOr[Double] = js.undefined
   ): BindOptions = {
     val __obj = js.Dynamic.literal()
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.asInstanceOf[js.Any])
-    if (fd != null) __obj.updateDynamic("fd")(fd.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fd)) __obj.updateDynamic("fd")(fd.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindOptions]
   }
 }

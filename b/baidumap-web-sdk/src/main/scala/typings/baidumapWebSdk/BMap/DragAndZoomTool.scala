@@ -1,17 +1,20 @@
 package typings.baidumapWebSdk.BMap
 
-import typings.baidumapWebSdk.AnonBounds
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BMap.DragAndZoomTool")
-@js.native
-class DragAndZoomTool protected () extends js.Object {
-  def this(map: Map) = this()
-  def this(map: Map, opts: DragAndZoomToolOptions) = this()
-  def close(): Unit = js.native
-  def ondrawend(event: AnonBounds): Unit = js.native
-  def open(): Boolean = js.native
+trait DragAndZoomTool extends js.Object {
+  def close(): Unit
+  def ondrawend(event: typings.baidumapWebSdk.anon.Bounds): Unit
+  def open(): Boolean
+}
+
+object DragAndZoomTool {
+  @scala.inline
+  def apply(close: () => Unit, ondrawend: typings.baidumapWebSdk.anon.Bounds => Unit, open: () => Boolean): DragAndZoomTool = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), ondrawend = js.Any.fromFunction1(ondrawend), open = js.Any.fromFunction0(open))
+    __obj.asInstanceOf[DragAndZoomTool]
+  }
 }
 

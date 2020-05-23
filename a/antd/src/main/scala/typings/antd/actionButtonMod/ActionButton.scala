@@ -1,6 +1,6 @@
 package typings.antd.actionButtonMod
 
-import typings.antd.AnonLoading
+import typings.antd.anon.Loading
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ trait ActionButton
   extends Component[ActionButtonProps, ActionButtonState, js.Any] {
   var clicked: Boolean = js.native
   @JSName("state")
-  var state_ActionButton: AnonLoading = js.native
+  var state_ActionButton: Loading = js.native
   var timeoutId: Double = js.native
   @JSName("componentDidMount")
   def componentDidMount_MActionButton(): Unit = js.native

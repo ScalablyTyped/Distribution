@@ -1,7 +1,7 @@
 package typings.postcssSelectorParser.mod
 
-import typings.postcssSelectorParser.AnonBefore
-import typings.postcssSelectorParser.AnonInsensitive
+import typings.postcssSelectorParser.anon.Before
+import typings.postcssSelectorParser.anon.Insensitive
 import typings.postcssSelectorParser.postcssSelectorParserStrings._empty
 import typings.postcssSelectorParser.postcssSelectorParserStrings.attributeNS
 import typings.postcssSelectorParser.postcssSelectorParserStrings.i
@@ -31,9 +31,9 @@ trait Attribute_
   val qualifiedAttribute: String = js.native
   var quoteMark: QuoteMark = js.native
   var quoted: js.UndefOr[Boolean] = js.native
-  var raws: AnonInsensitive = js.native
+  var raws: Insensitive = js.native
   @JSName("spaces")
-  var spaces_Attribute_ : AnonBefore = js.native
+  var spaces_Attribute_ : Before = js.native
   @JSName("type")
   var type_Attribute_ : typings.postcssSelectorParser.postcssSelectorParserStrings.attribute = js.native
   /**

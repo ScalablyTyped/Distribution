@@ -72,9 +72,9 @@ object OriginEndpoint {
     ManifestName: string = null,
     MssPackage: MssPackage = null,
     Origination: Origination = null,
-    StartoverWindowSeconds: Int | Double = null,
+    StartoverWindowSeconds: js.UndefOr[integer] = js.undefined,
     Tags: Tags = null,
-    TimeDelaySeconds: Int | Double = null,
+    TimeDelaySeconds: js.UndefOr[integer] = js.undefined,
     Url: string = null,
     Whitelist: listOfString = null
   ): OriginEndpoint = {
@@ -90,9 +90,9 @@ object OriginEndpoint {
     if (ManifestName != null) __obj.updateDynamic("ManifestName")(ManifestName.asInstanceOf[js.Any])
     if (MssPackage != null) __obj.updateDynamic("MssPackage")(MssPackage.asInstanceOf[js.Any])
     if (Origination != null) __obj.updateDynamic("Origination")(Origination.asInstanceOf[js.Any])
-    if (StartoverWindowSeconds != null) __obj.updateDynamic("StartoverWindowSeconds")(StartoverWindowSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(StartoverWindowSeconds)) __obj.updateDynamic("StartoverWindowSeconds")(StartoverWindowSeconds.get.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (TimeDelaySeconds != null) __obj.updateDynamic("TimeDelaySeconds")(TimeDelaySeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(TimeDelaySeconds)) __obj.updateDynamic("TimeDelaySeconds")(TimeDelaySeconds.get.asInstanceOf[js.Any])
     if (Url != null) __obj.updateDynamic("Url")(Url.asInstanceOf[js.Any])
     if (Whitelist != null) __obj.updateDynamic("Whitelist")(Whitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginEndpoint]

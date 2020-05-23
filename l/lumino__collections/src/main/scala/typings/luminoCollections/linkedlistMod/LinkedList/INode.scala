@@ -46,10 +46,7 @@ object INode {
     next: INode[T] = null,
     prev: INode[T] = null
   ): INode[T] = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
-    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
-    if (prev != null) __obj.updateDynamic("prev")(prev.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any])
     __obj.asInstanceOf[INode[T]]
   }
 }

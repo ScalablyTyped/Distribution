@@ -1,5 +1,7 @@
 package typings.expoLinearGradient
 
+import typings.expoLinearGradient.anon.EndPoint
+import typings.expoLinearGradient.anon.TypeofView
 import typings.react.mod.Component
 import typings.react.mod.ComponentProps
 import scala.scalajs.js
@@ -17,6 +19,6 @@ object nativeLinearGradientAndroidMod extends js.Object {
   class default () extends NativeLinearGradient
   
   type Point = js.Tuple2[Double, Double]
-  type Props = AnonEndPoint with ComponentProps[TypeofView]
+  type Props = EndPoint with ComponentProps[TypeofView]
 }
 

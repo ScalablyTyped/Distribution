@@ -51,18 +51,18 @@ trait AutoplayOptions extends js.Object {
 object AutoplayOptions {
   @scala.inline
   def apply(
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     disableOnInteraction: js.UndefOr[Boolean] = js.undefined,
     reverseDirection: js.UndefOr[Boolean] = js.undefined,
     stopOnLastSlide: js.UndefOr[Boolean] = js.undefined,
     waitForTransition: js.UndefOr[Boolean] = js.undefined
   ): AutoplayOptions = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableOnInteraction)) __obj.updateDynamic("disableOnInteraction")(disableOnInteraction.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverseDirection)) __obj.updateDynamic("reverseDirection")(reverseDirection.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopOnLastSlide)) __obj.updateDynamic("stopOnLastSlide")(stopOnLastSlide.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForTransition)) __obj.updateDynamic("waitForTransition")(waitForTransition.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableOnInteraction)) __obj.updateDynamic("disableOnInteraction")(disableOnInteraction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverseDirection)) __obj.updateDynamic("reverseDirection")(reverseDirection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopOnLastSlide)) __obj.updateDynamic("stopOnLastSlide")(stopOnLastSlide.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForTransition)) __obj.updateDynamic("waitForTransition")(waitForTransition.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoplayOptions]
   }
 }

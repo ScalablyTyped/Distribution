@@ -52,20 +52,20 @@ object AuthenticateOptions {
   def apply(
     host: String = null,
     hostHeaderName: String = null,
-    localtimeOffsetMsec: Int | Double = null,
+    localtimeOffsetMsec: js.UndefOr[Double] = js.undefined,
     nonceFunc: (/* key */ String, /* nonce */ String, /* ts */ String) => js.Promise[Unit] | Unit = null,
     payload: String = null,
-    port: Int | Double = null,
-    timestampSkewSec: Int | Double = null
+    port: js.UndefOr[Double] = js.undefined,
+    timestampSkewSec: js.UndefOr[Double] = js.undefined
   ): AuthenticateOptions = {
     val __obj = js.Dynamic.literal()
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (hostHeaderName != null) __obj.updateDynamic("hostHeaderName")(hostHeaderName.asInstanceOf[js.Any])
-    if (localtimeOffsetMsec != null) __obj.updateDynamic("localtimeOffsetMsec")(localtimeOffsetMsec.asInstanceOf[js.Any])
+    if (!js.isUndefined(localtimeOffsetMsec)) __obj.updateDynamic("localtimeOffsetMsec")(localtimeOffsetMsec.get.asInstanceOf[js.Any])
     if (nonceFunc != null) __obj.updateDynamic("nonceFunc")(js.Any.fromFunction3(nonceFunc))
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (timestampSkewSec != null) __obj.updateDynamic("timestampSkewSec")(timestampSkewSec.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestampSkewSec)) __obj.updateDynamic("timestampSkewSec")(timestampSkewSec.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticateOptions]
   }
 }

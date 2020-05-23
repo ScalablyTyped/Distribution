@@ -7,30 +7,30 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the table view stops scrolling.
-		 */
+  * Fired when the table view stops scrolling.
+  */
 trait TableViewScrollendEvent extends TableViewBaseEvent {
   /**
-  			 * Dictionary with `x` and `y` properties containing the content offset.
-  			 */
+    * Dictionary with `x` and `y` properties containing the content offset.
+    */
   var contentOffset: Point
   /**
-  			 * Dictionary with `width` and `height` properties containing the size of the content
-  			 * (regardless of the display size in the case of scrolling).
-  			 */
+    * Dictionary with `width` and `height` properties containing the size of the content
+    * (regardless of the display size in the case of scrolling).
+    */
   var contentSize: Size
   /**
-  			 * Dictionary with `width` and `height` properties containing the size of the visible
-  			 * table view.
-  			 */
+    * Dictionary with `width` and `height` properties containing the size of the visible
+    * table view.
+    */
   var size: Size
   /**
-  			 * X coordinate of the event from the `source` view's coordinate system.
-  			 */
+    * X coordinate of the event from the `source` view's coordinate system.
+    */
   var x: Double
   /**
-  			 * Y coordinate of the event from the `source` view's coordinate system.
-  			 */
+    * Y coordinate of the event from the `source` view's coordinate system.
+    */
   var y: Double
 }
 

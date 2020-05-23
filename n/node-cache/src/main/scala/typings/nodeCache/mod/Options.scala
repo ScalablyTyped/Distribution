@@ -63,30 +63,30 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    arrayValueSize: Int | Double = null,
-    checkperiod: Int | Double = null,
+    arrayValueSize: js.UndefOr[Double] = js.undefined,
+    checkperiod: js.UndefOr[Double] = js.undefined,
     deleteOnExpire: js.UndefOr[Boolean] = js.undefined,
     enableLegacyCallbacks: js.UndefOr[Boolean] = js.undefined,
     errorOnMissing: js.UndefOr[Boolean] = js.undefined,
     forceString: js.UndefOr[Boolean] = js.undefined,
-    maxKeys: Int | Double = null,
-    objectValueSize: Int | Double = null,
-    promiseValueSize: Int | Double = null,
-    stdTTL: Int | Double = null,
+    maxKeys: js.UndefOr[Double] = js.undefined,
+    objectValueSize: js.UndefOr[Double] = js.undefined,
+    promiseValueSize: js.UndefOr[Double] = js.undefined,
+    stdTTL: js.UndefOr[Double] = js.undefined,
     useClones: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (arrayValueSize != null) __obj.updateDynamic("arrayValueSize")(arrayValueSize.asInstanceOf[js.Any])
-    if (checkperiod != null) __obj.updateDynamic("checkperiod")(checkperiod.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleteOnExpire)) __obj.updateDynamic("deleteOnExpire")(deleteOnExpire.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLegacyCallbacks)) __obj.updateDynamic("enableLegacyCallbacks")(enableLegacyCallbacks.asInstanceOf[js.Any])
-    if (!js.isUndefined(errorOnMissing)) __obj.updateDynamic("errorOnMissing")(errorOnMissing.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceString)) __obj.updateDynamic("forceString")(forceString.asInstanceOf[js.Any])
-    if (maxKeys != null) __obj.updateDynamic("maxKeys")(maxKeys.asInstanceOf[js.Any])
-    if (objectValueSize != null) __obj.updateDynamic("objectValueSize")(objectValueSize.asInstanceOf[js.Any])
-    if (promiseValueSize != null) __obj.updateDynamic("promiseValueSize")(promiseValueSize.asInstanceOf[js.Any])
-    if (stdTTL != null) __obj.updateDynamic("stdTTL")(stdTTL.asInstanceOf[js.Any])
-    if (!js.isUndefined(useClones)) __obj.updateDynamic("useClones")(useClones.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrayValueSize)) __obj.updateDynamic("arrayValueSize")(arrayValueSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkperiod)) __obj.updateDynamic("checkperiod")(checkperiod.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleteOnExpire)) __obj.updateDynamic("deleteOnExpire")(deleteOnExpire.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableLegacyCallbacks)) __obj.updateDynamic("enableLegacyCallbacks")(enableLegacyCallbacks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorOnMissing)) __obj.updateDynamic("errorOnMissing")(errorOnMissing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceString)) __obj.updateDynamic("forceString")(forceString.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxKeys)) __obj.updateDynamic("maxKeys")(maxKeys.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(objectValueSize)) __obj.updateDynamic("objectValueSize")(objectValueSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(promiseValueSize)) __obj.updateDynamic("promiseValueSize")(promiseValueSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stdTTL)) __obj.updateDynamic("stdTTL")(stdTTL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useClones)) __obj.updateDynamic("useClones")(useClones.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

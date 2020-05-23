@@ -1,7 +1,7 @@
 package typings.babylonjs.webXRControllerTeleportationMod
 
-import typings.babylonjs.AnonDisableAnimation
 import typings.babylonjs.abstractMeshMod.AbstractMesh
+import typings.babylonjs.anon.DisableAnimation
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.webXRInputMod.WebXRInput
@@ -17,7 +17,7 @@ trait IWebXRTeleportationOptions extends js.Object {
   /**
     * Values to configure the default target mesh
     */
-  var defaultTargetMeshOptions: js.UndefOr[AnonDisableAnimation] = js.undefined
+  var defaultTargetMeshOptions: js.UndefOr[DisableAnimation] = js.undefined
   /**
     * A list of meshes to use as floor meshes.
     * Meshes can be added and removed after initializing the feature using the
@@ -74,14 +74,14 @@ object IWebXRTeleportationOptions {
   def apply(
     xrInput: WebXRInput,
     customUtilityLayerScene: Scene = null,
-    defaultTargetMeshOptions: AnonDisableAnimation = null,
+    defaultTargetMeshOptions: DisableAnimation = null,
     floorMeshes: js.Array[AbstractMesh] = null,
-    renderingGroupId: Int | Double = null,
+    renderingGroupId: js.UndefOr[Double] = js.undefined,
     snapPointsOnly: js.UndefOr[Boolean] = js.undefined,
     snapPositions: js.Array[Vector3] = null,
-    snapToPositionRadius: Int | Double = null,
+    snapToPositionRadius: js.UndefOr[Double] = js.undefined,
     teleportationTargetMesh: AbstractMesh = null,
-    timeToTeleport: Int | Double = null,
+    timeToTeleport: js.UndefOr[Double] = js.undefined,
     useMainComponentOnly: js.UndefOr[Boolean] = js.undefined,
     useUtilityLayer: js.UndefOr[Boolean] = js.undefined
   ): IWebXRTeleportationOptions = {
@@ -89,14 +89,14 @@ object IWebXRTeleportationOptions {
     if (customUtilityLayerScene != null) __obj.updateDynamic("customUtilityLayerScene")(customUtilityLayerScene.asInstanceOf[js.Any])
     if (defaultTargetMeshOptions != null) __obj.updateDynamic("defaultTargetMeshOptions")(defaultTargetMeshOptions.asInstanceOf[js.Any])
     if (floorMeshes != null) __obj.updateDynamic("floorMeshes")(floorMeshes.asInstanceOf[js.Any])
-    if (renderingGroupId != null) __obj.updateDynamic("renderingGroupId")(renderingGroupId.asInstanceOf[js.Any])
-    if (!js.isUndefined(snapPointsOnly)) __obj.updateDynamic("snapPointsOnly")(snapPointsOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderingGroupId)) __obj.updateDynamic("renderingGroupId")(renderingGroupId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapPointsOnly)) __obj.updateDynamic("snapPointsOnly")(snapPointsOnly.get.asInstanceOf[js.Any])
     if (snapPositions != null) __obj.updateDynamic("snapPositions")(snapPositions.asInstanceOf[js.Any])
-    if (snapToPositionRadius != null) __obj.updateDynamic("snapToPositionRadius")(snapToPositionRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapToPositionRadius)) __obj.updateDynamic("snapToPositionRadius")(snapToPositionRadius.get.asInstanceOf[js.Any])
     if (teleportationTargetMesh != null) __obj.updateDynamic("teleportationTargetMesh")(teleportationTargetMesh.asInstanceOf[js.Any])
-    if (timeToTeleport != null) __obj.updateDynamic("timeToTeleport")(timeToTeleport.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMainComponentOnly)) __obj.updateDynamic("useMainComponentOnly")(useMainComponentOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(useUtilityLayer)) __obj.updateDynamic("useUtilityLayer")(useUtilityLayer.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeToTeleport)) __obj.updateDynamic("timeToTeleport")(timeToTeleport.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useMainComponentOnly)) __obj.updateDynamic("useMainComponentOnly")(useMainComponentOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useUtilityLayer)) __obj.updateDynamic("useUtilityLayer")(useUtilityLayer.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWebXRTeleportationOptions]
   }
 }

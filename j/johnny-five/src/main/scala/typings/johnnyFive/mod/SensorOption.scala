@@ -17,12 +17,12 @@ object SensorOption {
     pin: Double | String,
     enabled: js.UndefOr[Boolean] = js.undefined,
     freq: js.UndefOr[Boolean] = js.undefined,
-    threshold: Int | Double = null
+    threshold: js.UndefOr[Double] = js.undefined
   ): SensorOption = {
     val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(freq)) __obj.updateDynamic("freq")(freq.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(freq)) __obj.updateDynamic("freq")(freq.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SensorOption]
   }
 }

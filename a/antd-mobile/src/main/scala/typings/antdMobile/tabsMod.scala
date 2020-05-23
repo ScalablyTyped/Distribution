@@ -1,8 +1,10 @@
 package typings.antdMobile
 
+import typings.antdMobile.anon.PrefixCls
+import typings.antdMobile.anon.TypeofDefaultTabBar
 import typings.antdMobile.tabsPropsTypeMod.TabsProps
 import typings.react.mod.Component
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.rmcTabs.propsTypeMod.TabBarPropsType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,7 +36,7 @@ object tabsMod extends js.Object {
   @js.native
   object default extends js.Object {
     var DefaultTabBar: TypeofDefaultTabBar = js.native
-    var defaultProps: AnonPrefixCls = js.native
+    var defaultProps: PrefixCls = js.native
   }
   
 }

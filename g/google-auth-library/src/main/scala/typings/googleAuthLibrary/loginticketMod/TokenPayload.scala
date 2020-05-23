@@ -134,7 +134,7 @@ object TokenPayload {
     if (at_hash != null) __obj.updateDynamic("at_hash")(at_hash.asInstanceOf[js.Any])
     if (azp != null) __obj.updateDynamic("azp")(azp.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (!js.isUndefined(email_verified)) __obj.updateDynamic("email_verified")(email_verified.asInstanceOf[js.Any])
+    if (!js.isUndefined(email_verified)) __obj.updateDynamic("email_verified")(email_verified.get.asInstanceOf[js.Any])
     if (family_name != null) __obj.updateDynamic("family_name")(family_name.asInstanceOf[js.Any])
     if (given_name != null) __obj.updateDynamic("given_name")(given_name.asInstanceOf[js.Any])
     if (hd != null) __obj.updateDynamic("hd")(hd.asInstanceOf[js.Any])

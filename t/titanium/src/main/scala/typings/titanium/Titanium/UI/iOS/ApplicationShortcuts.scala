@@ -7,39 +7,38 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * The Home screen quick actions API is for adding shortcuts to your app icon that anticipate and accelerate a
-			 * user's interaction with your app.
-			 */
-@JSGlobal("Titanium.UI.iOS.ApplicationShortcuts")
+  * The Home screen quick actions API is for adding shortcuts to your app icon that anticipate and accelerate a
+  * user's interaction with your app.
+  */
 @js.native
-class ApplicationShortcuts () extends Proxy {
+trait ApplicationShortcuts extends Proxy {
   /**
-  				 * Creates a new dynamic application shortcut item.
-  				 */
+    * Creates a new dynamic application shortcut item.
+    */
   def addDynamicShortcut(params: ShortcutParams): Unit = js.native
   /**
-  				 * Returns true or false depending if the provided shortcut object already exists.
-  				 */
+    * Returns true or false depending if the provided shortcut object already exists.
+    */
   def dynamicShortcutExists(identifier: String): Boolean = js.native
   /**
-  				 * Gets the dynamic application shortcut item identified by the `identifier`.
-  				 */
+    * Gets the dynamic application shortcut item identified by the `identifier`.
+    */
   def getDynamicShortcut(identifier: String): ShortcutParams = js.native
   /**
-  				 * Returns an array of the application shortcuts created dynamically.
-  				 */
+    * Returns an array of the application shortcuts created dynamically.
+    */
   def listDynamicShortcuts(): js.Array[ShortcutParams] = js.native
   /**
-  				 * Returns an array of the application shortcuts listed in your tiapp.xml file.
-  				 */
+    * Returns an array of the application shortcuts listed in your tiapp.xml file.
+    */
   def listStaticShortcuts(): js.Array[ShortcutParams] = js.native
   /**
-  				 * Removes all dynamically created application shortcuts.
-  				 */
+    * Removes all dynamically created application shortcuts.
+    */
   def removeAllDynamicShortcuts(): Unit = js.native
   /**
-  				 * Removes the dynamic application shortcut item identified by the `identifier`.
-  				 */
+    * Removes the dynamic application shortcut item identified by the `identifier`.
+    */
   def removeDynamicShortcut(identifier: String): Unit = js.native
 }
 

@@ -34,13 +34,13 @@ object DeleteObjectRequest {
   def apply(
     Bucket: BucketName,
     Key: ObjectKey,
-    BypassGovernanceRetention: js.UndefOr[Boolean] = js.undefined,
+    BypassGovernanceRetention: js.UndefOr[BypassGovernanceRetention] = js.undefined,
     MFA: MFA = null,
     RequestPayer: RequestPayer = null,
     VersionId: ObjectVersionId = null
   ): DeleteObjectRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
-    if (!js.isUndefined(BypassGovernanceRetention)) __obj.updateDynamic("BypassGovernanceRetention")(BypassGovernanceRetention.asInstanceOf[js.Any])
+    if (!js.isUndefined(BypassGovernanceRetention)) __obj.updateDynamic("BypassGovernanceRetention")(BypassGovernanceRetention.get.asInstanceOf[js.Any])
     if (MFA != null) __obj.updateDynamic("MFA")(MFA.asInstanceOf[js.Any])
     if (RequestPayer != null) __obj.updateDynamic("RequestPayer")(RequestPayer.asInstanceOf[js.Any])
     if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])

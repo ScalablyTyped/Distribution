@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Rewritten from type alias, can be one of: 
+/* keyof react.react.ClassAttributes<any> */ /* Rewritten from type alias, can be one of: 
   - typings.emotionStyledBase.emotionStyledBaseStrings.ref
   - typings.emotionStyledBase.emotionStyledBaseStrings.key
 */

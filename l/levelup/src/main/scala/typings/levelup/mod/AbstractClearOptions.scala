@@ -21,7 +21,7 @@ object AbstractClearOptions {
     StringDictionary: StringDictionary[js.Any] = null,
     gt: K = null,
     gte: K = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     lt: K = null,
     lte: K = null,
     reverse: js.UndefOr[Boolean] = js.undefined
@@ -30,10 +30,10 @@ object AbstractClearOptions {
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (gt != null) __obj.updateDynamic("gt")(gt.asInstanceOf[js.Any])
     if (gte != null) __obj.updateDynamic("gte")(gte.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (lt != null) __obj.updateDynamic("lt")(lt.asInstanceOf[js.Any])
     if (lte != null) __obj.updateDynamic("lte")(lte.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbstractClearOptions[K]]
   }
 }

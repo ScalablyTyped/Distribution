@@ -18,7 +18,7 @@ object GroupWindowIdentity {
   ): GroupWindowIdentity = {
     val __obj = js.Dynamic.literal(uuid = uuid.asInstanceOf[js.Any])
     if (entityType != null) __obj.updateDynamic("entityType")(entityType.asInstanceOf[js.Any])
-    if (!js.isUndefined(isExternalWindow)) __obj.updateDynamic("isExternalWindow")(isExternalWindow.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExternalWindow)) __obj.updateDynamic("isExternalWindow")(isExternalWindow.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupWindowIdentity]
   }

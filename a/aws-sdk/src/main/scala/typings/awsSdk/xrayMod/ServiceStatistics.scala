@@ -33,16 +33,16 @@ object ServiceStatistics {
   def apply(
     ErrorStatistics: ErrorStatistics = null,
     FaultStatistics: FaultStatistics = null,
-    OkCount: Int | scala.Double = null,
-    TotalCount: Int | scala.Double = null,
-    TotalResponseTime: Int | scala.Double = null
+    OkCount: js.UndefOr[NullableLong] = js.undefined,
+    TotalCount: js.UndefOr[NullableLong] = js.undefined,
+    TotalResponseTime: js.UndefOr[NullableDouble] = js.undefined
   ): ServiceStatistics = {
     val __obj = js.Dynamic.literal()
     if (ErrorStatistics != null) __obj.updateDynamic("ErrorStatistics")(ErrorStatistics.asInstanceOf[js.Any])
     if (FaultStatistics != null) __obj.updateDynamic("FaultStatistics")(FaultStatistics.asInstanceOf[js.Any])
-    if (OkCount != null) __obj.updateDynamic("OkCount")(OkCount.asInstanceOf[js.Any])
-    if (TotalCount != null) __obj.updateDynamic("TotalCount")(TotalCount.asInstanceOf[js.Any])
-    if (TotalResponseTime != null) __obj.updateDynamic("TotalResponseTime")(TotalResponseTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(OkCount)) __obj.updateDynamic("OkCount")(OkCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalCount)) __obj.updateDynamic("TotalCount")(TotalCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalResponseTime)) __obj.updateDynamic("TotalResponseTime")(TotalResponseTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceStatistics]
   }
 }

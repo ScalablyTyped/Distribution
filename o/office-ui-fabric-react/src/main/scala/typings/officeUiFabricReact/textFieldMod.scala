@@ -1,6 +1,5 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.officeUiFabricReactStrings._underscore
 import typings.officeUiFabricReact.textFieldTypesMod.ITextFieldProps
 import typings.react.mod.FunctionComponent
 import scala.scalajs.js
@@ -22,7 +21,7 @@ object textFieldMod extends js.Object {
     def this(props: ITextFieldProps) = this()
   }
   
-  val DEFAULT_MASK_CHAR: _underscore = js.native
+  val DEFAULT_MASK_CHAR: /* "_" */ String = js.native
   val TextField: FunctionComponent[ITextFieldProps] = js.native
   /* static members */
   @js.native

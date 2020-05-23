@@ -10,7 +10,7 @@ package object libUtilsMod {
     typings.nextServer.libUtilsMod.AppInitialProps, 
     typings.nextServer.libUtilsMod.AppPropsType[typings.nextServer.routerMod.NextRouter, js.Object]
   ]
-  type ComponentsEnhancer = typings.nextServer.AnonEnhanceApp | (typings.nextServer.libUtilsMod.Enhancer[
+  type ComponentsEnhancer = typings.nextServer.anon.EnhanceApp | (typings.nextServer.libUtilsMod.Enhancer[
     typings.nextServer.libUtilsMod.NextComponentType[typings.nextServer.libUtilsMod.NextPageContext, js.Object, js.Object]
   ])
   type DocumentType = typings.nextServer.libUtilsMod.NextComponentType[
@@ -19,7 +19,7 @@ package object libUtilsMod {
     typings.nextServer.libUtilsMod.DocumentProps
   ]
   type Enhancer[C] = js.Function1[/* Component */ C, C]
-  type NextComponentType[C /* <: typings.nextServer.libUtilsMod.BaseContext */, IP, P] = typings.react.mod.ComponentType[P] with (typings.nextServer.AnonGetInitialProps[C, IP])
+  type NextComponentType[C /* <: typings.nextServer.libUtilsMod.BaseContext */, IP, P] = typings.react.mod.ComponentType[P] with (typings.nextServer.anon.GetInitialProps[C, IP])
   type RenderPage = js.Function1[
     /* options */ js.UndefOr[typings.nextServer.libUtilsMod.ComponentsEnhancer], 
     typings.nextServer.libUtilsMod.RenderPageResult | js.Promise[typings.nextServer.libUtilsMod.RenderPageResult]

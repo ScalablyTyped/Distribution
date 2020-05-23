@@ -1,6 +1,5 @@
 package typings.amazonConnectStreams.connect
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,32 +33,6 @@ object ContactStateType extends js.Object {
   
   @js.native
   sealed trait PENDING extends ContactStateType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ContactStateType with String] = js.native
-  /* "connected" */ @js.native
-  object CONNECTED extends TopLevel[CONNECTED with String]
-  
-  /* "connecting" */ @js.native
-  object CONNECTING extends TopLevel[CONNECTING with String]
-  
-  /* "ended" */ @js.native
-  object ENDED extends TopLevel[ENDED with String]
-  
-  /* "error" */ @js.native
-  object ERROR extends TopLevel[ERROR with String]
-  
-  /* "incoming" */ @js.native
-  object INCOMING extends TopLevel[INCOMING with String]
-  
-  /* "init" */ @js.native
-  object INIT extends TopLevel[INIT with String]
-  
-  /* "missed" */ @js.native
-  object MISSED extends TopLevel[MISSED with String]
-  
-  /* "pending" */ @js.native
-  object PENDING extends TopLevel[PENDING with String]
   
 }
 

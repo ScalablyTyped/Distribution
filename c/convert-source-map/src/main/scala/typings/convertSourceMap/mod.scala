@@ -1,5 +1,6 @@
 package typings.convertSourceMap
 
+import typings.convertSourceMap.anon.Multiline
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +27,7 @@ object mod extends js.Object {
       * When options.multiline == true, the comment is formatted like: / *# sourceMappingURL=... *\/, which you would find in a CSS source file
       */
     def toComment(): String = js.native
-    def toComment(options: AnonMultiline): String = js.native
+    def toComment(options: Multiline): String = js.native
     /** Converts source map to json string. If space is given (optional), this will be passed to JSON.stringify when the JSON string is generated */
     def toJSON(): String = js.native
     def toJSON(space: String): String = js.native
@@ -45,7 +46,7 @@ object mod extends js.Object {
   def fromObject(obj: js.Any): SourceMapConverter = js.native
   def fromSource(content: String): SourceMapConverter | Null = js.native
   def generateMapFileComment(file: String): String = js.native
-  def generateMapFileComment(file: String, options: AnonMultiline): String = js.native
+  def generateMapFileComment(file: String, options: Multiline): String = js.native
   def removeComments(src: String): String = js.native
   def removeMapFileComments(src: String): String = js.native
 }

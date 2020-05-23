@@ -80,6 +80,8 @@ object registererMod extends js.Object {
       * Toggle waiting.
       */
     var waitingToggle: js.Any = js.native
+    /** Hopefully helpful as the standard behavior has been found to be unexpected. */
+    var waitingWarning: js.Any = js.native
     /** Destructor. */
     def dispose(): js.Promise[Unit] = js.native
     /**
@@ -92,6 +94,7 @@ object registererMod extends js.Object {
     def register(options: RegistererRegisterOptions): js.Promise[OutgoingRegisterRequest] = js.native
     /**
       * Sends the REGISTER request with expires equal to zero.
+      * @remarks
       * Rejects with `RequestPendingError` if a REGISTER request is already in progress.
       */
     def unregister(): js.Promise[OutgoingRegisterRequest] = js.native

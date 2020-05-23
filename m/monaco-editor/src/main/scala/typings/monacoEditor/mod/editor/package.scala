@@ -29,5 +29,5 @@ package object editor {
     - js.Function1[/ * lineNumber * / scala.Double, java.lang.String]
   */
   type LineNumbersType = typings.monacoEditor.mod.editor._LineNumbersType | (js.Function1[/* lineNumber */ scala.Double, java.lang.String])
-  type ValidQuickSuggestionsOptions = scala.Boolean | typings.monacoEditor.ReadonlyRequiredIQuickSug
+  type ValidQuickSuggestionsOptions = scala.Boolean | typings.monacoEditor.anon.ReadonlyRequiredIQuickSug
 }

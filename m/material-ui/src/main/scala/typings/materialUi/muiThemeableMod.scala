@@ -1,5 +1,6 @@
 package typings.materialUi
 
+import typings.materialUi.anon.MuiTheme
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.StatelessComponent
@@ -11,12 +12,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object muiThemeableMod extends js.Object {
   def default(): js.Function1[
-    /* component */ (ComponentClass[AnonMuiTheme, ComponentState]) | StatelessComponent[AnonMuiTheme], 
-    (ComponentClass[AnonMuiTheme, ComponentState]) | StatelessComponent[AnonMuiTheme]
+    /* component */ (ComponentClass[MuiTheme, ComponentState]) | StatelessComponent[MuiTheme], 
+    (ComponentClass[MuiTheme, ComponentState]) | StatelessComponent[MuiTheme]
   ] = js.native
   def muiThemeable(): js.Function1[
-    /* component */ (ComponentClass[AnonMuiTheme, ComponentState]) | StatelessComponent[AnonMuiTheme], 
-    (ComponentClass[AnonMuiTheme, ComponentState]) | StatelessComponent[AnonMuiTheme]
+    /* component */ (ComponentClass[MuiTheme, ComponentState]) | StatelessComponent[MuiTheme], 
+    (ComponentClass[MuiTheme, ComponentState]) | StatelessComponent[MuiTheme]
   ] = js.native
 }
 

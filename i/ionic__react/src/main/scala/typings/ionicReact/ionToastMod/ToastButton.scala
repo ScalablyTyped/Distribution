@@ -1,6 +1,6 @@
 package typings.ionicReact.ionToastMod
 
-import typings.ionicReact.AnonIos
+import typings.ionicReact.anon.Ios
 import typings.ionicReact.ionicReactStrings.cancel
 import typings.ionicReact.ionicReactStrings.end
 import typings.ionicReact.ionicReactStrings.start
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait ToastButton extends js.Object {
   var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
   var handler: js.UndefOr[js.Function0[Boolean | Unit | js.Promise[Boolean]]] = js.undefined
-  var icon: js.UndefOr[AnonIos | String] = js.undefined
+  var icon: js.UndefOr[Ios | String] = js.undefined
   var role: js.UndefOr[cancel | String] = js.undefined
   var side: js.UndefOr[start | end] = js.undefined
   var text: js.UndefOr[String] = js.undefined
@@ -23,7 +23,7 @@ object ToastButton {
   def apply(
     cssClass: String | js.Array[String] = null,
     handler: () => Boolean | Unit | js.Promise[Boolean] = null,
-    icon: AnonIos | String = null,
+    icon: Ios | String = null,
     role: cancel | String = null,
     side: start | end = null,
     text: String = null

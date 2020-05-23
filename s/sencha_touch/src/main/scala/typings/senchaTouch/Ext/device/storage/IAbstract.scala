@@ -9,36 +9,36 @@ import scala.scalajs.js.annotation._
 
 trait IAbstract extends IBase {
   /** [Method] Returns the value of databaseDisplayName
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getDatabaseDisplayName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of databaseName
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getDatabaseName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of databaseSize
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getDatabaseSize: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of databaseVersion
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getDatabaseVersion: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Sets the value of databaseDisplayName
-  		* @param databaseDisplayName String The new value.
-  		*/
+    * @param databaseDisplayName String The new value.
+    */
   var setDatabaseDisplayName: js.UndefOr[js.Function1[/* databaseDisplayName */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of databaseName
-  		* @param databaseName String The new value.
-  		*/
+    * @param databaseName String The new value.
+    */
   var setDatabaseName: js.UndefOr[js.Function1[/* databaseName */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of databaseSize
-  		* @param databaseSize Object The new value.
-  		*/
+    * @param databaseSize Object The new value.
+    */
   var setDatabaseSize: js.UndefOr[js.Function1[/* databaseSize */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of databaseVersion
-  		* @param databaseVersion String The new value.
-  		*/
+    * @param databaseVersion String The new value.
+    */
   var setDatabaseVersion: js.UndefOr[js.Function1[/* databaseVersion */ js.UndefOr[String], Unit]] = js.undefined
 }
 
@@ -94,7 +94,7 @@ object IAbstract {
     if (setDatabaseName != null) __obj.updateDynamic("setDatabaseName")(js.Any.fromFunction1(setDatabaseName))
     if (setDatabaseSize != null) __obj.updateDynamic("setDatabaseSize")(js.Any.fromFunction1(setDatabaseSize))
     if (setDatabaseVersion != null) __obj.updateDynamic("setDatabaseVersion")(js.Any.fromFunction1(setDatabaseVersion))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAbstract]

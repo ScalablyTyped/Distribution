@@ -1,6 +1,6 @@
 package typings.backbone.mod
 
-import typings.jquery.JQuery_
+import typings.jquery.JQuery
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("backbone", "View")
 @js.native
-class View[TModel /* <: Model */] () extends js.Object {
+class View[TModel /* <: Model[_, ModelSetOptions] */] () extends js.Object {
   def this(options: ViewOptions[TModel]) = this()
   @JSName("$el")
-  var $el: JQuery_[HTMLElement] = js.native
+  var $el: JQuery[HTMLElement] = js.native
   var attributes: js.Any = js.native
   var cid: String = js.native
   var className: String = js.native
@@ -21,9 +21,9 @@ class View[TModel /* <: Model */] () extends js.Object {
   var model: TModel = js.native
   var tagName: String = js.native
   @JSName("$")
-  def $(selector: String): JQuery_[HTMLElement] = js.native
+  def $(selector: String): JQuery[HTMLElement] = js.native
   @JSName("$")
-  def $(selector: js.Any): JQuery_[HTMLElement] = js.native
+  def $(selector: js.Any): JQuery[HTMLElement] = js.native
   def _ensureElement(): Unit = js.native
   def delegate(eventName: String, selector: String, listener: js.Function): View[TModel] = js.native
   def delegateEvents(): js.Any = js.native
@@ -47,8 +47,8 @@ class View[TModel /* <: Model */] () extends js.Object {
   def remove(): View[TModel] = js.native
   def render(): View[TModel] = js.native
   def setElement(element: js.Any): View[TModel] = js.native
-  def setElement(element: JQuery_[HTMLElement]): View[TModel] = js.native
-  def setElement(element: JQuery_[HTMLElement], delegate: Boolean): View[TModel] = js.native
+  def setElement(element: JQuery[HTMLElement]): View[TModel] = js.native
+  def setElement(element: JQuery[HTMLElement], delegate: Boolean): View[TModel] = js.native
   //template: (json, options?) => string;
   def setElement(element: HTMLElement): View[TModel] = js.native
   def setElement(element: HTMLElement, delegate: Boolean): View[TModel] = js.native

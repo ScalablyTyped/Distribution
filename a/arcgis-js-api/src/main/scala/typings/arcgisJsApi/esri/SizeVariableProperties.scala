@@ -135,9 +135,9 @@ object SizeVariableProperties {
     expression: String = null,
     field: String = null,
     legendOptions: VisualVariableLegendOptions = null,
-    maxDataValue: Int | Double = null,
+    maxDataValue: js.UndefOr[Double] = js.undefined,
     maxSize: Double | ScaleDependentStops | String = null,
-    minDataValue: Int | Double = null,
+    minDataValue: js.UndefOr[Double] = js.undefined,
     minSize: Double | ScaleDependentStops | String = null,
     normalizationField: String = null,
     stops: js.Array[SizeStopProperties] = null,
@@ -153,14 +153,14 @@ object SizeVariableProperties {
     if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions.asInstanceOf[js.Any])
-    if (maxDataValue != null) __obj.updateDynamic("maxDataValue")(maxDataValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDataValue)) __obj.updateDynamic("maxDataValue")(maxDataValue.get.asInstanceOf[js.Any])
     if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
-    if (minDataValue != null) __obj.updateDynamic("minDataValue")(minDataValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(minDataValue)) __obj.updateDynamic("minDataValue")(minDataValue.get.asInstanceOf[js.Any])
     if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
     if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField.asInstanceOf[js.Any])
     if (stops != null) __obj.updateDynamic("stops")(stops.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSymbolValue)) __obj.updateDynamic("useSymbolValue")(useSymbolValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSymbolValue)) __obj.updateDynamic("useSymbolValue")(useSymbolValue.get.asInstanceOf[js.Any])
     if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression.asInstanceOf[js.Any])
     if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle.asInstanceOf[js.Any])
     if (valueRepresentation != null) __obj.updateDynamic("valueRepresentation")(valueRepresentation.asInstanceOf[js.Any])

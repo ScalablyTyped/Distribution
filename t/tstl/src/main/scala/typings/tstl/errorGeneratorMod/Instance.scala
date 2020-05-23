@@ -1,17 +1,17 @@
 package typings.tstl.errorGeneratorMod
 
-import typings.tstl.AnonMODULE
+import typings.tstl.anon.MODULE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Instance extends js.Object {
-  var constructor: AnonMODULE
+  var constructor: MODULE
 }
 
 object Instance {
   @scala.inline
-  def apply(constructor: AnonMODULE): Instance = {
+  def apply(constructor: MODULE): Instance = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Instance]
   }

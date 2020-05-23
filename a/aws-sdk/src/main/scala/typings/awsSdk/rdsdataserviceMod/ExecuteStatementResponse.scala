@@ -29,13 +29,13 @@ object ExecuteStatementResponse {
   def apply(
     columnMetadata: Metadata = null,
     generatedFields: FieldList = null,
-    numberOfRecordsUpdated: Int | Double = null,
+    numberOfRecordsUpdated: js.UndefOr[RecordsUpdated] = js.undefined,
     records: SqlRecords = null
   ): ExecuteStatementResponse = {
     val __obj = js.Dynamic.literal()
     if (columnMetadata != null) __obj.updateDynamic("columnMetadata")(columnMetadata.asInstanceOf[js.Any])
     if (generatedFields != null) __obj.updateDynamic("generatedFields")(generatedFields.asInstanceOf[js.Any])
-    if (numberOfRecordsUpdated != null) __obj.updateDynamic("numberOfRecordsUpdated")(numberOfRecordsUpdated.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfRecordsUpdated)) __obj.updateDynamic("numberOfRecordsUpdated")(numberOfRecordsUpdated.get.asInstanceOf[js.Any])
     if (records != null) __obj.updateDynamic("records")(records.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteStatementResponse]
   }

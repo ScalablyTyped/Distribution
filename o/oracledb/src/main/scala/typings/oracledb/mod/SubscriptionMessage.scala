@@ -1,7 +1,7 @@
 package typings.oracledb.mod
 
 import typings.node.Buffer
-import typings.oracledb.AnonTables
+import typings.oracledb.anon.Tables
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait SubscriptionMessage extends js.Object {
   /** Name of the database which sent the notification. */
   var dbName: js.UndefOr[String] = js.undefined
   /** Array of objects specifying the queries which were affected by the Query Change notification. */
-  var queries: js.UndefOr[js.Array[AnonTables]] = js.undefined
+  var queries: js.UndefOr[js.Array[Tables]] = js.undefined
   /**
     * Name of the Advanced Queue. Undefined for CQN.
     * 
@@ -37,7 +37,7 @@ object SubscriptionMessage {
     txId: Buffer,
     `type`: Double,
     dbName: String = null,
-    queries: js.Array[AnonTables] = null,
+    queries: js.Array[Tables] = null,
     queueName: String = null,
     tables: js.Array[SubscriptionTables] = null
   ): SubscriptionMessage = {

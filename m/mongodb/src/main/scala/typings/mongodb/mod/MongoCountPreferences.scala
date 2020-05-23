@@ -13,11 +13,17 @@ trait MongoCountPreferences extends js.Object {
     * The limit of documents to count.
     */
   var limit: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * Number of miliseconds to wait before aborting the query.
+    */
   var maxTimeMS: js.UndefOr[scala.Double] = js.undefined
   /**
     * The preferred read preference
     */
   var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.undefined
+  /**
+    * Optional session to use for this operation
+    */
   var session: js.UndefOr[ClientSession] = js.undefined
   /**
     * The number of documents to skip for the count.
@@ -29,19 +35,19 @@ object MongoCountPreferences {
   @scala.inline
   def apply(
     hint: String = null,
-    limit: Int | scala.Double = null,
-    maxTimeMS: Int | scala.Double = null,
+    limit: js.UndefOr[scala.Double] = js.undefined,
+    maxTimeMS: js.UndefOr[scala.Double] = js.undefined,
     readPreference: ReadPreferenceOrMode = null,
     session: ClientSession = null,
-    skip: Int | scala.Double = null
+    skip: js.UndefOr[scala.Double] = js.undefined
   ): MongoCountPreferences = {
     val __obj = js.Dynamic.literal()
     if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (maxTimeMS != null) __obj.updateDynamic("maxTimeMS")(maxTimeMS.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTimeMS)) __obj.updateDynamic("maxTimeMS")(maxTimeMS.get.asInstanceOf[js.Any])
     if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
-    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MongoCountPreferences]
   }
 }

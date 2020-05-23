@@ -65,25 +65,25 @@ object Options {
     allowMove: js.UndefOr[Boolean] = js.undefined,
     allowResize: js.UndefOr[Boolean] = js.undefined,
     allowSelect: js.UndefOr[Boolean] = js.undefined,
-    animationDelay: Int | Double = null,
-    aspectRatio: Int | Double = null,
+    animationDelay: js.UndefOr[Double] = js.undefined,
+    aspectRatio: js.UndefOr[Double] = js.undefined,
     baseClass: String = null,
     bgColor: String = null,
     bgFade: js.UndefOr[Boolean] = js.undefined,
-    bgOpacity: Int | Double = null,
-    borderOpacity: Int | Double = null,
-    boundary: Int | Double = null,
-    boxHeight: Int | Double = null,
-    boxWidth: Int | Double = null,
+    bgOpacity: js.UndefOr[Double] = js.undefined,
+    borderOpacity: js.UndefOr[Double] = js.undefined,
+    boundary: js.UndefOr[Double] = js.undefined,
+    boxHeight: js.UndefOr[Double] = js.undefined,
+    boxWidth: js.UndefOr[Double] = js.undefined,
     createBorders: js.Array[CardinalDirection] = null,
     createDragbars: js.Array[CardinalDirection] = null,
     createHandles: js.Array[CardinalDirection | IntermediateDirection] = null,
     dragEdges: js.UndefOr[Boolean] = js.undefined,
     drawBorders: js.UndefOr[Boolean] = js.undefined,
-    fadeTime: Int | Double = null,
+    fadeTime: js.UndefOr[Double] = js.undefined,
     fixedSupport: js.UndefOr[Boolean] = js.undefined,
-    handleOpacity: Int | Double = null,
-    handleSize: Int | Double = null,
+    handleOpacity: js.UndefOr[Double] = js.undefined,
+    handleSize: js.UndefOr[Null | Double] = js.undefined,
     keySupport: js.UndefOr[Boolean] = js.undefined,
     maxSize: js.Tuple2[Double, Double] = null,
     minSelect: js.Tuple2[Double, Double] = null,
@@ -93,37 +93,37 @@ object Options {
     onRelease: /* c */ SelectionInfo => Unit = null,
     onSelect: /* c */ SelectionInfo => Unit = null,
     setSelect: js.Tuple4[Double, Double, Double, Double] = null,
-    shade: js.UndefOr[Boolean] = js.undefined,
-    swingSpeed: Int | Double = null,
-    touchSupport: js.UndefOr[Boolean] = js.undefined,
+    shade: js.UndefOr[Null | Boolean] = js.undefined,
+    swingSpeed: js.UndefOr[Double] = js.undefined,
+    touchSupport: js.UndefOr[Null | Boolean] = js.undefined,
     trackDocument: js.UndefOr[Boolean] = js.undefined,
     trueSize: js.Tuple2[Double, Double] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (addClass != null) __obj.updateDynamic("addClass")(addClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowMove)) __obj.updateDynamic("allowMove")(allowMove.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowResize)) __obj.updateDynamic("allowResize")(allowResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSelect)) __obj.updateDynamic("allowSelect")(allowSelect.asInstanceOf[js.Any])
-    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
-    if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowMove)) __obj.updateDynamic("allowMove")(allowMove.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowResize)) __obj.updateDynamic("allowResize")(allowResize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSelect)) __obj.updateDynamic("allowSelect")(allowSelect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationDelay)) __obj.updateDynamic("animationDelay")(animationDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(aspectRatio)) __obj.updateDynamic("aspectRatio")(aspectRatio.get.asInstanceOf[js.Any])
     if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass.asInstanceOf[js.Any])
     if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(bgFade)) __obj.updateDynamic("bgFade")(bgFade.asInstanceOf[js.Any])
-    if (bgOpacity != null) __obj.updateDynamic("bgOpacity")(bgOpacity.asInstanceOf[js.Any])
-    if (borderOpacity != null) __obj.updateDynamic("borderOpacity")(borderOpacity.asInstanceOf[js.Any])
-    if (boundary != null) __obj.updateDynamic("boundary")(boundary.asInstanceOf[js.Any])
-    if (boxHeight != null) __obj.updateDynamic("boxHeight")(boxHeight.asInstanceOf[js.Any])
-    if (boxWidth != null) __obj.updateDynamic("boxWidth")(boxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(bgFade)) __obj.updateDynamic("bgFade")(bgFade.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bgOpacity)) __obj.updateDynamic("bgOpacity")(bgOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderOpacity)) __obj.updateDynamic("borderOpacity")(borderOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(boundary)) __obj.updateDynamic("boundary")(boundary.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(boxHeight)) __obj.updateDynamic("boxHeight")(boxHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(boxWidth)) __obj.updateDynamic("boxWidth")(boxWidth.get.asInstanceOf[js.Any])
     if (createBorders != null) __obj.updateDynamic("createBorders")(createBorders.asInstanceOf[js.Any])
     if (createDragbars != null) __obj.updateDynamic("createDragbars")(createDragbars.asInstanceOf[js.Any])
     if (createHandles != null) __obj.updateDynamic("createHandles")(createHandles.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragEdges)) __obj.updateDynamic("dragEdges")(dragEdges.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawBorders)) __obj.updateDynamic("drawBorders")(drawBorders.asInstanceOf[js.Any])
-    if (fadeTime != null) __obj.updateDynamic("fadeTime")(fadeTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedSupport)) __obj.updateDynamic("fixedSupport")(fixedSupport.asInstanceOf[js.Any])
-    if (handleOpacity != null) __obj.updateDynamic("handleOpacity")(handleOpacity.asInstanceOf[js.Any])
-    if (handleSize != null) __obj.updateDynamic("handleSize")(handleSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(keySupport)) __obj.updateDynamic("keySupport")(keySupport.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragEdges)) __obj.updateDynamic("dragEdges")(dragEdges.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawBorders)) __obj.updateDynamic("drawBorders")(drawBorders.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fadeTime)) __obj.updateDynamic("fadeTime")(fadeTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedSupport)) __obj.updateDynamic("fixedSupport")(fixedSupport.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleOpacity)) __obj.updateDynamic("handleOpacity")(handleOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleSize)) __obj.updateDynamic("handleSize")(handleSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(keySupport)) __obj.updateDynamic("keySupport")(keySupport.get.asInstanceOf[js.Any])
     if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
     if (minSelect != null) __obj.updateDynamic("minSelect")(minSelect.asInstanceOf[js.Any])
     if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
@@ -133,9 +133,9 @@ object Options {
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
     if (setSelect != null) __obj.updateDynamic("setSelect")(setSelect.asInstanceOf[js.Any])
     if (!js.isUndefined(shade)) __obj.updateDynamic("shade")(shade.asInstanceOf[js.Any])
-    if (swingSpeed != null) __obj.updateDynamic("swingSpeed")(swingSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(swingSpeed)) __obj.updateDynamic("swingSpeed")(swingSpeed.get.asInstanceOf[js.Any])
     if (!js.isUndefined(touchSupport)) __obj.updateDynamic("touchSupport")(touchSupport.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackDocument)) __obj.updateDynamic("trackDocument")(trackDocument.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackDocument)) __obj.updateDynamic("trackDocument")(trackDocument.get.asInstanceOf[js.Any])
     if (trueSize != null) __obj.updateDynamic("trueSize")(trueSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

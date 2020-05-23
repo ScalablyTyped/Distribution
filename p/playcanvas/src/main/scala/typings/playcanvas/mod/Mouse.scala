@@ -6,12 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @class
-  * @name pc.Mouse
-  * @augments pc.EventHandler
-  * @classdesc A Mouse Device, bound to a DOM Element.
-  * @description Create a new Mouse device.
-  * @param {Element} [element] - The Element that the mouse events are attached to.
+  * Create a new Mouse device.
+  * @param [element] - The Element that the mouse events are attached to.
   */
 @JSImport("playcanvas", "Mouse")
 @js.native
@@ -25,11 +21,8 @@ class Mouse ()
 @js.native
 object Mouse extends js.Object {
   /**
-    * @static
-    * @function
-    * @name pc.Mouse.isPointerLocked
-    * @description Check if the mouse pointer has been locked, using {@link pc.Mouse#enabledPointerLock}.
-    * @returns {boolean} True if locked.
+    * Check if the mouse pointer has been locked, using {@link pc.Mouse#enabledPointerLock}.
+    * @returns True if locked.
     */
   def isPointerLocked(): Boolean = js.native
 }

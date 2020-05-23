@@ -1,6 +1,5 @@
 package typings.dynatrace
 
-import org.scalablytyped.runtime.TopLevel
 import typings.dynatrace.dynatraceStrings._error_
 import typings.dynatrace.dynatraceStrings._info_
 import typings.dynatrace.dynatraceStrings._warn_
@@ -263,8 +262,4 @@ trait dynaTrace extends js.Object {
     */
   def tagVisit(visitName: String): Unit = js.native
 }
-
-@JSGlobal("dynaTrace")
-@js.native
-object dynaTrace extends TopLevel[dynaTrace]
 

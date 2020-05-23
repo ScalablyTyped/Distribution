@@ -1,5 +1,6 @@
 package typings.grammarkdown
 
+import typings.esfxCancelable.distMod.Cancelable
 import typings.grammarkdown.binderMod.BindingTable
 import typings.grammarkdown.diagnosticsMod.DiagnosticMessages
 import typings.grammarkdown.navigatorMod.NodeNavigator
@@ -23,7 +24,7 @@ object checkerMod extends js.Object {
   class Checker () extends js.Object {
     def this(options: CompilerOptions) = this()
     var bindings: js.Any = js.native
-    var cancellationToken: js.Any = js.native
+    var cancelToken: js.UndefOr[js.Any] = js.native
     var checkArgument: js.Any = js.native
     var checkArgumentList: js.Any = js.native
     var checkAssertion: js.Any = js.native
@@ -94,26 +95,41 @@ object checkerMod extends js.Object {
     var checkUnicodeCharacterRange: js.Any = js.native
     var checkedFileSet: js.Any = js.native
     var diagnostics: js.Any = js.native
+    var getNodeLinks: js.Any = js.native
     var getProductionParametersByName: js.Any = js.native
+    var getSymbolLinks: js.Any = js.native
+    var markSymbolAsReferenced: js.Any = js.native
     var noChecks: js.Any = js.native
     var noStrictParametricProductions: js.Any = js.native
+    var noUnusedParameters: js.Any = js.native
+    var nodeLinks: js.UndefOr[js.Any] = js.native
     var options: js.Any = js.native
     var preprocessDefine: js.Any = js.native
     var preprocessSourceElement: js.Any = js.native
     var productionParametersByName: js.Any = js.native
+    var reportError: js.Any = js.native
     var reportGrammarError: js.Any = js.native
     var reportGrammarErrorForNode: js.Any = js.native
     var reportGrammarErrorForNodeOrPos: js.Any = js.native
     var reportInvalidAssertion: js.Any = js.native
     var reportInvalidSymbol: js.Any = js.native
+    var resolveIdentifier: js.Any = js.native
+    var resolveProduction: js.Any = js.native
     var resolveSymbol: js.Any = js.native
     var sourceFile: js.Any = js.native
+    var symbolLinks: js.UndefOr[js.Any] = js.native
     def checkSourceFile(sourceFile: SourceFile, bindings: BindingTable, diagnostics: DiagnosticMessages): Unit = js.native
     def checkSourceFile(
       sourceFile: SourceFile,
       bindings: BindingTable,
       diagnostics: DiagnosticMessages,
-      cancellationToken: CancellationToken
+      cancelable: Cancelable
+    ): Unit = js.native
+    def checkSourceFile(
+      sourceFile: SourceFile,
+      bindings: BindingTable,
+      diagnostics: DiagnosticMessages,
+      cancelable: CancellationToken
     ): Unit = js.native
   }
   

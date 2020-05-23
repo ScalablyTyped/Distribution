@@ -7,12 +7,6 @@ import scala.scalajs.js.annotation._
 
 object blueprintjsDatetimeStrings {
   @js.native
-  sealed trait `DayPicker-Day` extends js.Object
-  
-  @js.native
-  sealed trait `LessthansignDateRangePickerGreaterthansign preferredBoundaryToModify must be a valid Boundary if definedDot` extends js.Object
-  
-  @js.native
   sealed trait a extends js.Object
   
   @js.native
@@ -119,9 +113,6 @@ object blueprintjsDatetimeStrings {
   
   @js.native
   sealed trait dialog extends js.Object
-  
-  @js.native
-  sealed trait disabled extends js.Object
   
   @js.native
   sealed trait div extends js.Object
@@ -268,9 +259,6 @@ object blueprintjsDatetimeStrings {
   sealed trait hgroup extends js.Object
   
   @js.native
-  sealed trait `hovered-range` extends js.Object
-  
-  @js.native
   sealed trait hr extends js.Object
   
   @js.native
@@ -382,9 +370,6 @@ object blueprintjsDatetimeStrings {
   sealed trait output extends js.Object
   
   @js.native
-  sealed trait outside extends js.Object
-  
-  @js.native
   sealed trait p extends js.Object
   
   @js.native
@@ -446,12 +431,6 @@ object blueprintjsDatetimeStrings {
   
   @js.native
   sealed trait select extends js.Object
-  
-  @js.native
-  sealed trait selected extends js.Object
-  
-  @js.native
-  sealed trait `selected-range` extends js.Object
   
   @js.native
   sealed trait slot extends js.Object
@@ -562,10 +541,6 @@ object blueprintjsDatetimeStrings {
   sealed trait webview extends js.Object
   
   @scala.inline
-  def `DayPicker-Day`: `DayPicker-Day` = "DayPicker-Day".asInstanceOf[`DayPicker-Day`]
-  @scala.inline
-  def `LessthansignDateRangePickerGreaterthansign preferredBoundaryToModify must be a valid Boundary if definedDot`: `LessthansignDateRangePickerGreaterthansign preferredBoundaryToModify must be a valid Boundary if definedDot` = ("<DateRangePicker> preferredBoundaryToModify must be a valid Boundary if defined.").asInstanceOf[`LessthansignDateRangePickerGreaterthansign preferredBoundaryToModify must be a valid Boundary if definedDot`]
-  @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline
   def abbr: abbr = "abbr".asInstanceOf[abbr]
@@ -637,8 +612,6 @@ object blueprintjsDatetimeStrings {
   def dfn: dfn = "dfn".asInstanceOf[dfn]
   @scala.inline
   def dialog: dialog = "dialog".asInstanceOf[dialog]
-  @scala.inline
-  def disabled: disabled = "disabled".asInstanceOf[disabled]
   @scala.inline
   def div: div = "div".asInstanceOf[div]
   @scala.inline
@@ -736,8 +709,6 @@ object blueprintjsDatetimeStrings {
   @scala.inline
   def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
   @scala.inline
-  def `hovered-range`: `hovered-range` = "hovered-range".asInstanceOf[`hovered-range`]
-  @scala.inline
   def hr: hr = "hr".asInstanceOf[hr]
   @scala.inline
   def html: html = "html".asInstanceOf[html]
@@ -812,8 +783,6 @@ object blueprintjsDatetimeStrings {
   @scala.inline
   def output: output = "output".asInstanceOf[output]
   @scala.inline
-  def outside: outside = "outside".asInstanceOf[outside]
-  @scala.inline
   def p: p = "p".asInstanceOf[p]
   @scala.inline
   def param: param = "param".asInstanceOf[param]
@@ -855,10 +824,6 @@ object blueprintjsDatetimeStrings {
   def section: section = "section".asInstanceOf[section]
   @scala.inline
   def select: select = "select".asInstanceOf[select]
-  @scala.inline
-  def selected: selected = "selected".asInstanceOf[selected]
-  @scala.inline
-  def `selected-range`: `selected-range` = "selected-range".asInstanceOf[`selected-range`]
   @scala.inline
   def slot: slot = "slot".asInstanceOf[slot]
   @scala.inline

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Casting
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,29 +38,6 @@ object CastingConnectionErrorStatus extends js.Object {
   /** An unknown error occurred when attempting to start or end the connection. */
   @js.native
   sealed trait unknown extends CastingConnectionErrorStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CastingConnectionErrorStatus with Double] = js.native
-  /* 1 */ @js.native
-  object deviceDidNotRespond extends TopLevel[deviceDidNotRespond with Double]
-  
-  /* 2 */ @js.native
-  object deviceError extends TopLevel[deviceError with Double]
-  
-  /* 3 */ @js.native
-  object deviceLocked extends TopLevel[deviceLocked with Double]
-  
-  /* 5 */ @js.native
-  object invalidCastingSource extends TopLevel[invalidCastingSource with Double]
-  
-  /* 4 */ @js.native
-  object protectedPlaybackFailed extends TopLevel[protectedPlaybackFailed with Double]
-  
-  /* 0 */ @js.native
-  object succeeded extends TopLevel[succeeded with Double]
-  
-  /* 6 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
   
 }
 

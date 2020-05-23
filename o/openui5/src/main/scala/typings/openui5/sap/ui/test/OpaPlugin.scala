@@ -7,34 +7,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.test.OpaPlugin")
-@js.native
-class OpaPlugin () extends js.Object {
+trait OpaPlugin extends js.Object {
   /**
     * Gets all the controls of a certain type that are currently instantiated.If the control type is
     * omitted, nothing is returned.
     * @param fnConstructorType the control type, e.g: sap.m.CheckBox
     * @returns an array of the found controls (can be empty)
     */
-  def getAllControls(fnConstructorType: js.Any): js.Array[_] = js.native
+  def getAllControls(fnConstructorType: js.Any): js.Array[_]
   /**
     * Returns a control by its idaccepts an object with an ID property the ID can bewill check a control
-    * type also, if defined<ul>	<li>a single string - function will return the control instance or
-    * undefined</li>	<li>an array of strings - function will return an array of found controls or an empty
-    * array</li>	<li>a regexp - function will return an array of found controls or an empty
+    * type also, if defined<ul>    <li>a single string - function will return the control instance or
+    * undefined</li>    <li>an array of strings - function will return an array of found controls or an empty
+    * array</li>    <li>a regexp - function will return an array of found controls or an empty
     * array</li></ul>
     * @param oOptions should contain an ID property. It can be of the type string or regex. If contains
     * controlType property, will check it as well
     * @returns all controls matched by the regex or the control matched by the string or null
     */
-  def getControlByGlobalId(oOptions: js.Any): js.Array[Element] = js.native
+  def getControlByGlobalId(oOptions: js.Any): js.Array[Element]
   /**
     * Gets the constructor function of a certain controlType
     * @param sControlType the name of the type eg: "sap.m.Button"
     * @returns When the type is loaded, the contstructor is returned, if it is a lazy stub or not yet
     * loaded, null will be returned and there will be a log entry.
     */
-  def getControlConstructor(sControlType: String): js.Any = js.native
+  def getControlConstructor(sControlType: String): js.Any
   /**
     * Gets a control inside of the view (same as calling oView.byId)If no ID is provided, it will return
     * all the controls inside of a view (also nested views and their children).<br/>eg : { id : "foo" }
@@ -49,7 +47,7 @@ class OpaPlugin () extends js.Object {
     * controls, if the view is not found or no control is found for multiple ids an empty array is
     * returned.
     */
-  def getControlInView(oOptions: js.Any): Element | js.Array[Element] | js.Any = js.native
+  def getControlInView(oOptions: js.Any): Element | js.Array[Element] | js.Any
   /**
     * Tries to find a control depending on the options provided.
     * @param oOptions a map of options used to describe the control you are looking for.
@@ -57,18 +55,34 @@ class OpaPlugin () extends js.Object {
     * if no id was given</li>    <li>the found control/element when an id as a string is specified</li>   
     * <li>null if an id as string was specified</li></ul>
     */
-  def getMatchingControls(oOptions: js.Any): Element | js.Array[Element] | js.Any = js.native
+  def getMatchingControls(oOptions: js.Any): Element | js.Array[Element] | js.Any
   /**
     * Returns a metadata object for class sap.ui.test.OpaPlugin.
     * @returns Metadata object describing this class
     */
-  def getMetadata(): Metadata = js.native
+  def getMetadata(): Metadata
   /**
     * Returns the view with a specific name - if there are multiple views with that name only the first
     * one is returned.
     * @param sViewName the name of the view
     * @returns or undefined
     */
-  def getView(sViewName: String): View = js.native
+  def getView(sViewName: String): View
+}
+
+object OpaPlugin {
+  @scala.inline
+  def apply(
+    getAllControls: js.Any => js.Array[_],
+    getControlByGlobalId: js.Any => js.Array[Element],
+    getControlConstructor: String => js.Any,
+    getControlInView: js.Any => Element | js.Array[Element] | js.Any,
+    getMatchingControls: js.Any => Element | js.Array[Element] | js.Any,
+    getMetadata: () => Metadata,
+    getView: String => View
+  ): OpaPlugin = {
+    val __obj = js.Dynamic.literal(getAllControls = js.Any.fromFunction1(getAllControls), getControlByGlobalId = js.Any.fromFunction1(getControlByGlobalId), getControlConstructor = js.Any.fromFunction1(getControlConstructor), getControlInView = js.Any.fromFunction1(getControlInView), getMatchingControls = js.Any.fromFunction1(getMatchingControls), getMetadata = js.Any.fromFunction0(getMetadata), getView = js.Any.fromFunction1(getView))
+    __obj.asInstanceOf[OpaPlugin]
+  }
 }
 

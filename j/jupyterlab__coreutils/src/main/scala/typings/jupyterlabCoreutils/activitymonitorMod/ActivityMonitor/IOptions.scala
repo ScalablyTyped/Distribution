@@ -23,9 +23,9 @@ trait IOptions[Sender, Args] extends js.Object {
 
 object IOptions {
   @scala.inline
-  def apply[Sender, Args](signal: ISignal[Sender, Args], timeout: Int | Double = null): IOptions[Sender, Args] = {
+  def apply[Sender, Args](signal: ISignal[Sender, Args], timeout: js.UndefOr[Double] = js.undefined): IOptions[Sender, Args] = {
     val __obj = js.Dynamic.literal(signal = signal.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions[Sender, Args]]
   }
 }

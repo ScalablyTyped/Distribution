@@ -59,7 +59,7 @@ object RangeProps {
     activeDotStyle: CSSProperties = null,
     allowCross: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     defaultValue: js.Array[Double] = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     dotStyle: CSSProperties = null,
@@ -68,18 +68,18 @@ object RangeProps {
     handleStyle: js.Array[CSSProperties] | CSSProperties = null,
     included: js.UndefOr[Boolean] = js.undefined,
     marks: Marks = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
     onAfterChange: /* value */ js.Array[Double] => Unit = null,
     onBeforeChange: /* value */ js.Array[Double] => Unit = null,
     onChange: /* value */ js.Array[Double] => Unit = null,
     pushable: Boolean | Double = null,
     railStyle: CSSProperties = null,
     reverse: js.UndefOr[Boolean] = js.undefined,
-    step: Int | Double = null,
+    step: js.UndefOr[Null | Double] = js.undefined,
     style: js.Array[CSSProperties] | CSSProperties = null,
     tabIndex: js.Array[Double] = null,
-    tipFormatter: /* value */ js.Any => js.UndefOr[_] = null,
+    tipFormatter: js.UndefOr[Null | (/* value */ js.Any => js.UndefOr[_])] = js.undefined,
     tipTransitionName: String = null,
     trackStyle: js.Array[CSSProperties] | CSSProperties = null,
     value: js.Array[Double] = null,
@@ -87,33 +87,33 @@ object RangeProps {
   ): RangeProps = {
     val __obj = js.Dynamic.literal()
     if (activeDotStyle != null) __obj.updateDynamic("activeDotStyle")(activeDotStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowCross)) __obj.updateDynamic("allowCross")(allowCross.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCross)) __obj.updateDynamic("allowCross")(allowCross.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (dotStyle != null) __obj.updateDynamic("dotStyle")(dotStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(dots)) __obj.updateDynamic("dots")(dots.asInstanceOf[js.Any])
+    if (!js.isUndefined(dots)) __obj.updateDynamic("dots")(dots.get.asInstanceOf[js.Any])
     if (handle != null) __obj.updateDynamic("handle")(js.Any.fromFunction1(handle))
     if (handleStyle != null) __obj.updateDynamic("handleStyle")(handleStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(included)) __obj.updateDynamic("included")(included.asInstanceOf[js.Any])
+    if (!js.isUndefined(included)) __obj.updateDynamic("included")(included.get.asInstanceOf[js.Any])
     if (marks != null) __obj.updateDynamic("marks")(marks.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     if (onAfterChange != null) __obj.updateDynamic("onAfterChange")(js.Any.fromFunction1(onAfterChange))
     if (onBeforeChange != null) __obj.updateDynamic("onBeforeChange")(js.Any.fromFunction1(onBeforeChange))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (pushable != null) __obj.updateDynamic("pushable")(pushable.asInstanceOf[js.Any])
     if (railStyle != null) __obj.updateDynamic("railStyle")(railStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (tipFormatter != null) __obj.updateDynamic("tipFormatter")(js.Any.fromFunction1(tipFormatter))
+    if (!js.isUndefined(tipFormatter)) __obj.updateDynamic("tipFormatter")(if (tipFormatter != null) js.Any.fromFunction1(tipFormatter.asInstanceOf[/* value */ js.Any => js.UndefOr[_]]) else null)
     if (tipTransitionName != null) __obj.updateDynamic("tipTransitionName")(tipTransitionName.asInstanceOf[js.Any])
     if (trackStyle != null) __obj.updateDynamic("trackStyle")(trackStyle.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeProps]
   }
 }

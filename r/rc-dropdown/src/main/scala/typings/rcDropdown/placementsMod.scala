@@ -1,5 +1,6 @@
 package typings.rcDropdown
 
+import typings.rcDropdown.anon.Offset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,12 +10,12 @@ import scala.scalajs.js.annotation._
 object placementsMod extends js.Object {
   @js.native
   object default extends js.Object {
-    var bottomCenter: AnonOffset = js.native
-    var bottomLeft: AnonOffset = js.native
-    var bottomRight: AnonOffset = js.native
-    var topCenter: AnonOffset = js.native
-    var topLeft: AnonOffset = js.native
-    var topRight: AnonOffset = js.native
+    var bottomCenter: Offset = js.native
+    var bottomLeft: Offset = js.native
+    var bottomRight: Offset = js.native
+    var topCenter: Offset = js.native
+    var topLeft: Offset = js.native
+    var topRight: Offset = js.native
   }
   
 }

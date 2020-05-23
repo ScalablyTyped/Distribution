@@ -12,9 +12,13 @@ trait AutoCompleteVirtual extends js.Object {
 
 object AutoCompleteVirtual {
   @scala.inline
-  def apply(itemHeight: Int | Double = null, mapValueTo: String = null, valueMapper: js.Function = null): AutoCompleteVirtual = {
+  def apply(
+    itemHeight: js.UndefOr[Double] = js.undefined,
+    mapValueTo: String = null,
+    valueMapper: js.Function = null
+  ): AutoCompleteVirtual = {
     val __obj = js.Dynamic.literal()
-    if (itemHeight != null) __obj.updateDynamic("itemHeight")(itemHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemHeight)) __obj.updateDynamic("itemHeight")(itemHeight.get.asInstanceOf[js.Any])
     if (mapValueTo != null) __obj.updateDynamic("mapValueTo")(mapValueTo.asInstanceOf[js.Any])
     if (valueMapper != null) __obj.updateDynamic("valueMapper")(valueMapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoCompleteVirtual]

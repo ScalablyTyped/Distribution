@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation._
 @js.native
 class CancellationTokenSource () extends js.Object {
   /**
-  		 * The cancellation token of this source.
-  		 */
+    * The cancellation token of this source.
+    */
   var token: CancellationToken = js.native
   /**
-  		 * Signal cancellation on the token.
-  		 */
+    * Signal cancellation on the token.
+    */
   def cancel(): Unit = js.native
   /**
-  		 * Dispose object and free resources.
-  		 */
+    * Dispose object and free resources.
+    */
   def dispose(): Unit = js.native
 }
 

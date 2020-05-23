@@ -12,14 +12,14 @@ sealed trait CommentThreadCollapsibleState extends js.Object
 @js.native
 object CommentThreadCollapsibleState extends js.Object {
   /**
-  		 * Determines an item is collapsed
-  		 */
+    * Determines an item is collapsed
+    */
   @js.native
   sealed trait Collapsed extends CommentThreadCollapsibleState
   
   /**
-  		 * Determines an item is expanded
-  		 */
+    * Determines an item is expanded
+    */
   @js.native
   sealed trait Expanded extends CommentThreadCollapsibleState
   

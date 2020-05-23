@@ -15,11 +15,15 @@ trait WriteResult extends js.Object {
 
 object WriteResult {
   @scala.inline
-  def apply(currentStateVersion: String = null, kind: String = null, stateKey: Int | Double = null): WriteResult = {
+  def apply(
+    currentStateVersion: String = null,
+    kind: String = null,
+    stateKey: js.UndefOr[Double] = js.undefined
+  ): WriteResult = {
     val __obj = js.Dynamic.literal()
     if (currentStateVersion != null) __obj.updateDynamic("currentStateVersion")(currentStateVersion.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (stateKey != null) __obj.updateDynamic("stateKey")(stateKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(stateKey)) __obj.updateDynamic("stateKey")(stateKey.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteResult]
   }
 }

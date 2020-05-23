@@ -32,14 +32,14 @@ trait AppDetailsOptions extends js.Object {
 object AppDetailsOptions {
   @scala.inline
   def apply(
-    appIconIndex: Int | Double = null,
+    appIconIndex: js.UndefOr[Double] = js.undefined,
     appIconPath: String = null,
     appId: String = null,
     relaunchCommand: String = null,
     relaunchDisplayName: String = null
   ): AppDetailsOptions = {
     val __obj = js.Dynamic.literal()
-    if (appIconIndex != null) __obj.updateDynamic("appIconIndex")(appIconIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(appIconIndex)) __obj.updateDynamic("appIconIndex")(appIconIndex.get.asInstanceOf[js.Any])
     if (appIconPath != null) __obj.updateDynamic("appIconPath")(appIconPath.asInstanceOf[js.Any])
     if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
     if (relaunchCommand != null) __obj.updateDynamic("relaunchCommand")(relaunchCommand.asInstanceOf[js.Any])

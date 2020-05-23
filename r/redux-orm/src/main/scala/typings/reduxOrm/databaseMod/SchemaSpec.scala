@@ -20,13 +20,7 @@ Extract[
 
 object SchemaSpec {
   @scala.inline
-  def apply[I /* <: IndexedModelClasses[
-    _, 
-    Extract[
-      /* keyof any */ String, 
-      /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
-    ]
-  ] */](
+  def apply[I](
     tables: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof I ]: redux-orm.redux-orm/db/Table.ModelTableOpts<I[K]>}
     */ typings.reduxOrm.reduxOrmStrings.SchemaSpec with TopLevel[I]

@@ -11,9 +11,9 @@ trait IScrollspyOptions extends js.Object {
 
 object IScrollspyOptions {
   @scala.inline
-  def apply(offset: Int | Double = null, target: String = null): IScrollspyOptions = {
+  def apply(offset: js.UndefOr[Double] = js.undefined, target: String = null): IScrollspyOptions = {
     val __obj = js.Dynamic.literal()
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[IScrollspyOptions]
   }

@@ -33,7 +33,7 @@ object TransformAggregation {
     funcmode: sample | population = null
   ): TransformAggregation = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (func != null) __obj.updateDynamic("func")(func.asInstanceOf[js.Any])
     if (funcmode != null) __obj.updateDynamic("funcmode")(funcmode.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformAggregation]

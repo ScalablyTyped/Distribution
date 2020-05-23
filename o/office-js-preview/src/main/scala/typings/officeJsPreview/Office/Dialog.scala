@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 /**
   * The object that is returned when `UI.displayDialogAsync` is called. It exposes methods for registering event handlers and closing the dialog.
-  * 
+  *
   * @remarks
-  * 
+  *
   * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi}
   */
 trait Dialog extends js.Object {
@@ -21,18 +21,18 @@ trait Dialog extends js.Object {
     */
   def addEventHandler(eventType: EventType, handler: js.Function): Unit
   /**
-    * Called from a parent page to close the corresponding dialog box. 
+    * Called from a parent page to close the corresponding dialog box.
     */
   def close(): Unit
   /**
-    * Delivers a message from the host page, such as a task pane or a UI-less function file, to a dialog that was opened from the page. 
-    * 
+    * Delivers a message from the host page, such as a task pane or a UI-less function file, to a dialog that was opened from the page.
+    *
     * @beta
-    * 
+    *
     * @remarks
-    * 
+    *
     * **Requirement set**: TBD
-    * 
+    *
     * @param message Accepts a message from the host page to deliver to the dialog. Anything that can be serialized to a string, including JSON and XML, can be sent.
     */
   def messageChild(message: String): Unit

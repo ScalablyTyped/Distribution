@@ -28,7 +28,7 @@ object operatorsMod extends js.Object {
   def plus[X /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in 'plus' ]: tstl.tstl/numeric/IComputable.IComputable<Y, Ret>[P]}
     */ typings.tstl.tstlStrings.plus with (TopLevel[IComputable[Y, Ret]]) */, Y, Ret](x: X, y: Y): Ret = js.native
-  type Param[Y, Ret, Key /* <: plus | minus | multiplies | divides | modules | negate */] = Double | (Pick[IComputable[Y, Ret], Key])
+  type Param[Y, Ret, Key /* <: /* keyof tstl.tstl/numeric/IComputable.IComputable<Y, Ret> */ plus | minus | multiplies | divides | modules | negate */] = Double | (Pick[IComputable[Y, Ret], Key])
   type PlusParam[Y, Ret] = Double | String | (Pick[IComputable[Y, Ret], plus])
 }
 

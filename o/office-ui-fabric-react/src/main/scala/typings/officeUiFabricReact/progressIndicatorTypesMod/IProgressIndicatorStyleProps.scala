@@ -22,14 +22,14 @@ object IProgressIndicatorStyleProps {
   @scala.inline
   def apply(
     theme: ITheme,
-    barHeight: Int | Double = null,
+    barHeight: js.UndefOr[Double] = js.undefined,
     className: String = null,
     indeterminate: js.UndefOr[Boolean] = js.undefined
   ): IProgressIndicatorStyleProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
-    if (barHeight != null) __obj.updateDynamic("barHeight")(barHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(barHeight)) __obj.updateDynamic("barHeight")(barHeight.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(indeterminate)) __obj.updateDynamic("indeterminate")(indeterminate.asInstanceOf[js.Any])
+    if (!js.isUndefined(indeterminate)) __obj.updateDynamic("indeterminate")(indeterminate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProgressIndicatorStyleProps]
   }
 }

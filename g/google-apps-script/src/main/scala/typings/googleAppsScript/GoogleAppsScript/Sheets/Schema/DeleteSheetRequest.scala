@@ -10,9 +10,9 @@ trait DeleteSheetRequest extends js.Object {
 
 object DeleteSheetRequest {
   @scala.inline
-  def apply(sheetId: Int | Double = null): DeleteSheetRequest = {
+  def apply(sheetId: js.UndefOr[Double] = js.undefined): DeleteSheetRequest = {
     val __obj = js.Dynamic.literal()
-    if (sheetId != null) __obj.updateDynamic("sheetId")(sheetId.asInstanceOf[js.Any])
+    if (!js.isUndefined(sheetId)) __obj.updateDynamic("sheetId")(sheetId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSheetRequest]
   }
 }

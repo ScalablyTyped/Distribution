@@ -1,9 +1,9 @@
 package typings.victory.mod
 
 import typings.react.mod.ReactElement
-import typings.victory.Anon1
-import typings.victory.AnonXBoolean
-import typings.victory.AnonY
+import typings.victory.anon.XBoolean
+import typings.victory.anon.Y
+import typings.victory.anon.`1`
 import typings.victory.victoryStrings.data
 import typings.victory.victoryStrings.labels
 import typings.victory.victoryStrings.parent
@@ -121,21 +121,21 @@ object VictoryStackProps {
     eventKey: StringOrNumberOrCallback = null,
     events: js.Array[EventPropTypeInterface[data | labels | parent, StringOrNumberOrCallback]] = null,
     groupComponent: ReactElement = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     horizontal: js.UndefOr[Boolean] = js.undefined,
     labelComponent: ReactElement = null,
     labels: js.Array[String] | (js.Function1[/* data */ js.Any, String]) = null,
-    maxDomain: Double | AnonY = null,
-    minDomain: Double | AnonY = null,
+    maxDomain: Double | Y = null,
+    minDomain: Double | Y = null,
     name: String = null,
     padding: PaddingProps = null,
-    scale: ScalePropType | D3Scale | Anon1 = null,
-    singleQuadrantDomainPadding: Boolean | AnonXBoolean = null,
+    scale: ScalePropType | D3Scale | `1` = null,
+    singleQuadrantDomainPadding: Boolean | XBoolean = null,
     standalone: js.UndefOr[Boolean] = js.undefined,
     style: VictoryStyleInterface = null,
     theme: VictoryThemeDefinition = null,
-    width: Int | Double = null,
-    xOffset: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined,
+    xOffset: js.UndefOr[Double] = js.undefined
   ): VictoryStackProps = {
     val __obj = js.Dynamic.literal()
     if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
@@ -147,8 +147,8 @@ object VictoryStackProps {
     if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.get.asInstanceOf[js.Any])
     if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (maxDomain != null) __obj.updateDynamic("maxDomain")(maxDomain.asInstanceOf[js.Any])
@@ -157,11 +157,11 @@ object VictoryStackProps {
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (singleQuadrantDomainPadding != null) __obj.updateDynamic("singleQuadrantDomainPadding")(singleQuadrantDomainPadding.asInstanceOf[js.Any])
-    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone.asInstanceOf[js.Any])
+    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (xOffset != null) __obj.updateDynamic("xOffset")(xOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xOffset)) __obj.updateDynamic("xOffset")(xOffset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VictoryStackProps]
   }
 }

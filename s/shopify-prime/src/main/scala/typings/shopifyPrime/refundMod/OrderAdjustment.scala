@@ -24,11 +24,11 @@ object OrderAdjustment {
     refund_id: Double,
     tax_amount: String,
     admin_graphql_api_id: String = null,
-    id: Int | Double = null
+    id: js.UndefOr[Double] = js.undefined
   ): OrderAdjustment = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], order_id = order_id.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], refund_id = refund_id.asInstanceOf[js.Any], tax_amount = tax_amount.asInstanceOf[js.Any])
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderAdjustment]
   }
 }

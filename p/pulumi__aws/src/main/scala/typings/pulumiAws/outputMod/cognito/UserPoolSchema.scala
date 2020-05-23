@@ -48,10 +48,10 @@ object UserPoolSchema {
     stringAttributeConstraints: UserPoolSchemaStringAttributeConstraints = null
   ): UserPoolSchema = {
     val __obj = js.Dynamic.literal(attributeDataType = attributeDataType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (!js.isUndefined(developerOnlyAttribute)) __obj.updateDynamic("developerOnlyAttribute")(developerOnlyAttribute.asInstanceOf[js.Any])
-    if (!js.isUndefined(mutable)) __obj.updateDynamic("mutable")(mutable.asInstanceOf[js.Any])
+    if (!js.isUndefined(developerOnlyAttribute)) __obj.updateDynamic("developerOnlyAttribute")(developerOnlyAttribute.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mutable)) __obj.updateDynamic("mutable")(mutable.get.asInstanceOf[js.Any])
     if (numberAttributeConstraints != null) __obj.updateDynamic("numberAttributeConstraints")(numberAttributeConstraints.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
     if (stringAttributeConstraints != null) __obj.updateDynamic("stringAttributeConstraints")(stringAttributeConstraints.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPoolSchema]
   }

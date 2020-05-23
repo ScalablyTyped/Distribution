@@ -1,6 +1,6 @@
 package typings.reactNativeCanvas.mod
 
-import typings.reactNativeCanvas.AnonA
+import typings.reactNativeCanvas.anon.A
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,6 +48,6 @@ class Path2D protected () extends js.Object {
   var quadraticCurveTo: js.Function4[/* cpx */ Double, /* cpy */ Double, /* x */ Double, /* y */ Double, Unit] = js.native
   var rect: js.Function4[/* x */ Double, /* y */ Double, /* width */ Double, /* height */ Double, Unit] = js.native
   def addPath(path: Path2D): Unit = js.native
-  def addPath(path: Path2D, transform: AnonA): Unit = js.native
+  def addPath(path: Path2D, transform: A): Unit = js.native
 }
 

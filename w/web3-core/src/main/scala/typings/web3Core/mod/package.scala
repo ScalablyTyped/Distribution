@@ -9,17 +9,18 @@ package object mod {
     - java.lang.String
     - scala.Double
     - typings.bnJs.mod.^
-    - / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BigNumber * / js.Any
+    - typings.bignumberJs.mod.default
     - typings.web3Core.web3CoreStrings.latest
     - typings.web3Core.web3CoreStrings.pending
     - typings.web3Core.web3CoreStrings.earliest
     - typings.web3Core.web3CoreStrings.genesis
   */
-  type BlockNumber = typings.web3Core.mod._BlockNumber | java.lang.String | scala.Double | typings.bnJs.mod.^  | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BigNumber */ js.Any)
+  type BlockNumber = typings.web3Core.mod._BlockNumber | java.lang.String | scala.Double | typings.bnJs.mod.^  | typings.bignumberJs.mod.default
   /* Rewritten from type alias, can be one of: 
     - typings.web3Core.mod.HttpProvider
     - typings.web3Core.mod.IpcProvider
     - typings.web3Core.mod.WebsocketProvider
+    - typings.web3Core.mod.AbstractProvider
     - java.lang.String
     - scala.Null
   */

@@ -16,8 +16,8 @@ object ComServerOptions {
     pauseOnConnect: js.UndefOr[Boolean] = js.undefined
   ): ComServerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen.asInstanceOf[js.Any])
-    if (!js.isUndefined(pauseOnConnect)) __obj.updateDynamic("pauseOnConnect")(pauseOnConnect.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pauseOnConnect)) __obj.updateDynamic("pauseOnConnect")(pauseOnConnect.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComServerOptions]
   }
 }

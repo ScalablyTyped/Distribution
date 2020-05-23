@@ -48,7 +48,7 @@ object Options {
   @scala.inline
   def apply(
     tag: String | js.Array[String],
-    highWaterMark: Int | Double = null,
+    highWaterMark: js.UndefOr[Double] = js.undefined,
     lowercase: js.UndefOr[Boolean] = js.undefined,
     normalize: js.UndefOr[Boolean] = js.undefined,
     strict: js.UndefOr[Boolean] = js.undefined,
@@ -58,14 +58,14 @@ object Options {
     xmlns: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any])
-    if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
-    if (!js.isUndefined(lowercase)) __obj.updateDynamic("lowercase")(lowercase.asInstanceOf[js.Any])
-    if (!js.isUndefined(normalize)) __obj.updateDynamic("normalize")(normalize.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictEntities)) __obj.updateDynamic("strictEntities")(strictEntities.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackPosition)) __obj.updateDynamic("trackPosition")(trackPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])
-    if (!js.isUndefined(xmlns)) __obj.updateDynamic("xmlns")(xmlns.asInstanceOf[js.Any])
+    if (!js.isUndefined(highWaterMark)) __obj.updateDynamic("highWaterMark")(highWaterMark.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lowercase)) __obj.updateDynamic("lowercase")(lowercase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(normalize)) __obj.updateDynamic("normalize")(normalize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictEntities)) __obj.updateDynamic("strictEntities")(strictEntities.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackPosition)) __obj.updateDynamic("trackPosition")(trackPosition.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xmlns)) __obj.updateDynamic("xmlns")(xmlns.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

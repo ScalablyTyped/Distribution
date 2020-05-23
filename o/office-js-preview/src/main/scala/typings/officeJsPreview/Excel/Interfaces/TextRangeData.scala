@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait TextRangeData extends js.Object {
   /**
     *
-    * Returns a ShapeFont object that represents the font attributes for the text range. Read-only.
+    * Returns a ShapeFont object that represents the font attributes for the text range.
     *
     * [Api set: ExcelApi 1.9]
     */

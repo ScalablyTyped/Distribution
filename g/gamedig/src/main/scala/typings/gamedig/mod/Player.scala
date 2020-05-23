@@ -17,15 +17,15 @@ object Player {
   def apply(
     address: String = null,
     name: String = null,
-    ping: Int | Double = null,
-    score: Int | Double = null,
+    ping: js.UndefOr[Double] = js.undefined,
+    score: js.UndefOr[Double] = js.undefined,
     team: String = null
   ): Player = {
     val __obj = js.Dynamic.literal()
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (ping != null) __obj.updateDynamic("ping")(ping.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (!js.isUndefined(ping)) __obj.updateDynamic("ping")(ping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])
     __obj.asInstanceOf[Player]
   }

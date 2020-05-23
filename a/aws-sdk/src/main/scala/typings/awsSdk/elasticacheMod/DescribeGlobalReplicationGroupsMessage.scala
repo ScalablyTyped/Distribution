@@ -29,14 +29,14 @@ object DescribeGlobalReplicationGroupsMessage {
   def apply(
     GlobalReplicationGroupId: String = null,
     Marker: String = null,
-    MaxRecords: Int | scala.Double = null,
-    ShowMemberInfo: js.UndefOr[scala.Boolean] = js.undefined
+    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
+    ShowMemberInfo: js.UndefOr[BooleanOptional] = js.undefined
   ): DescribeGlobalReplicationGroupsMessage = {
     val __obj = js.Dynamic.literal()
     if (GlobalReplicationGroupId != null) __obj.updateDynamic("GlobalReplicationGroupId")(GlobalReplicationGroupId.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
-    if (!js.isUndefined(ShowMemberInfo)) __obj.updateDynamic("ShowMemberInfo")(ShowMemberInfo.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ShowMemberInfo)) __obj.updateDynamic("ShowMemberInfo")(ShowMemberInfo.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeGlobalReplicationGroupsMessage]
   }
 }

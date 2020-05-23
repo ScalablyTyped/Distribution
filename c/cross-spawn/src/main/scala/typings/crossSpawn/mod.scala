@@ -29,9 +29,9 @@ object mod extends js.Object {
     */
   def apply(command: String, options: SpawnOptions): ChildProcess = js.native
   /**
-  	 * The `spawn()` method spawns a new process using the given `command`, with
-  	 * command line arguments in `args`. If omitted, `args` defaults to an empty array.
-  	 */
+    * The `spawn()` method spawns a new process using the given `command`, with
+    * command line arguments in `args`. If omitted, `args` defaults to an empty array.
+    */
   @js.native
   object spawn extends js.Object {
     def apply(command: String): ChildProcessWithoutNullStreams = js.native
@@ -52,9 +52,9 @@ object mod extends js.Object {
   }
   
   /**
-  	 * The `spawn.sync()` method spawns a new process using the given `command`, with
-  	 * command line arguments in `args`. If omitted, `args` defaults to an empty array.
-  	 */
+    * The `spawn.sync()` method spawns a new process using the given `command`, with
+    * command line arguments in `args`. If omitted, `args` defaults to an empty array.
+    */
   @js.native
   object sync extends js.Object {
     def apply(command: String): SpawnSyncReturns[Buffer] = js.native

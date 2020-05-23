@@ -1,6 +1,6 @@
 package typings.mongodbMemoryServerCore.mongoMemoryReplSetMod
 
-import typings.mongodbMemoryServerCore.AnonAutoStart
+import typings.mongodbMemoryServerCore.anon.AutoStart
 import typings.mongodbMemoryServerCore.mongodbMemoryServerCoreStrings.init
 import typings.mongodbMemoryServerCore.mongodbMemoryServerCoreStrings.running
 import typings.mongodbMemoryServerCore.mongodbMemoryServerCoreStrings.stopped
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MongoMemoryReplSet extends EventEmitter {
   var _state: init | running | stopped = js.native
-  var opts: AnonAutoStart = js.native
+  var opts: AutoStart = js.native
   var servers: js.Array[typings.mongodbMemoryServerCore.mongoMemoryServerMod.default] = js.native
   /**
     * Connects to the first server from the list of servers and issues the `replSetInitiate`

@@ -27,11 +27,15 @@ trait SearchLayerProperties extends js.Object {
 
 object SearchLayerProperties {
   @scala.inline
-  def apply(field: SearchLayerFieldProperties = null, id: String = null, subLayer: Int | Double = null): SearchLayerProperties = {
+  def apply(
+    field: SearchLayerFieldProperties = null,
+    id: String = null,
+    subLayer: js.UndefOr[Double] = js.undefined
+  ): SearchLayerProperties = {
     val __obj = js.Dynamic.literal()
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (subLayer != null) __obj.updateDynamic("subLayer")(subLayer.asInstanceOf[js.Any])
+    if (!js.isUndefined(subLayer)) __obj.updateDynamic("subLayer")(subLayer.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchLayerProperties]
   }
 }

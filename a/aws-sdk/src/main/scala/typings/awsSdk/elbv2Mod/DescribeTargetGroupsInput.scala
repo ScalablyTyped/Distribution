@@ -34,14 +34,14 @@ object DescribeTargetGroupsInput {
     LoadBalancerArn: LoadBalancerArn = null,
     Marker: Marker = null,
     Names: TargetGroupNames = null,
-    PageSize: Int | Double = null,
+    PageSize: js.UndefOr[PageSize] = js.undefined,
     TargetGroupArns: TargetGroupArns = null
   ): DescribeTargetGroupsInput = {
     val __obj = js.Dynamic.literal()
     if (LoadBalancerArn != null) __obj.updateDynamic("LoadBalancerArn")(LoadBalancerArn.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     if (Names != null) __obj.updateDynamic("Names")(Names.asInstanceOf[js.Any])
-    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize.get.asInstanceOf[js.Any])
     if (TargetGroupArns != null) __obj.updateDynamic("TargetGroupArns")(TargetGroupArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTargetGroupsInput]
   }

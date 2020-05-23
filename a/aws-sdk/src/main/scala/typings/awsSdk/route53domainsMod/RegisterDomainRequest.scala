@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RegisterDomainRequest extends js.Object {
   /**
-    * Provides detailed contact information.
+    * Provides detailed contact information. For information about the values that you specify for each element, see ContactDetail.
     */
   var AdminContact: ContactDetail = js.native
   /**
@@ -15,7 +15,7 @@ trait RegisterDomainRequest extends js.Object {
     */
   var AutoRenew: js.UndefOr[Boolean] = js.native
   /**
-    * The domain name that you want to register. Constraints: The domain name can contain only the letters a through z, the numbers 0 through 9, and hyphen (-). Internationalized Domain Names are not supported.
+    * The domain name that you want to register. The top-level domain (TLD), such as .com, must be a TLD that Route 53 supports. For a list of supported TLDs, see Domains that You Can Register with Amazon Route 53 in the Amazon Route 53 Developer Guide. The domain name can contain only the following characters:   Letters a through z. Domain names are not case sensitive.   Numbers 0 through 9.   Hyphen (-). You can't specify a hyphen at the beginning or end of a label.    Period (.) to separate the labels in the name, such as the . in example.com.   Internationalized domain names are not supported for some top-level domains. To determine whether the TLD that you want to use supports internationalized domain names, see Domains that You Can Register with Amazon Route 53. For more information, see Formatting Internationalized Domain Names. 
     */
   var DomainName: typings.awsSdk.route53domainsMod.DomainName = js.native
   /**
@@ -39,11 +39,11 @@ trait RegisterDomainRequest extends js.Object {
     */
   var PrivacyProtectTechContact: js.UndefOr[Boolean] = js.native
   /**
-    * Provides detailed contact information.
+    * Provides detailed contact information. For information about the values that you specify for each element, see ContactDetail.
     */
   var RegistrantContact: ContactDetail = js.native
   /**
-    * Provides detailed contact information.
+    * Provides detailed contact information. For information about the values that you specify for each element, see ContactDetail.
     */
   var TechContact: ContactDetail = js.native
 }
@@ -56,18 +56,18 @@ object RegisterDomainRequest {
     DurationInYears: DurationInYears,
     RegistrantContact: ContactDetail,
     TechContact: ContactDetail,
-    AutoRenew: js.UndefOr[scala.Boolean] = js.undefined,
+    AutoRenew: js.UndefOr[Boolean] = js.undefined,
     IdnLangCode: LangCode = null,
-    PrivacyProtectAdminContact: js.UndefOr[scala.Boolean] = js.undefined,
-    PrivacyProtectRegistrantContact: js.UndefOr[scala.Boolean] = js.undefined,
-    PrivacyProtectTechContact: js.UndefOr[scala.Boolean] = js.undefined
+    PrivacyProtectAdminContact: js.UndefOr[Boolean] = js.undefined,
+    PrivacyProtectRegistrantContact: js.UndefOr[Boolean] = js.undefined,
+    PrivacyProtectTechContact: js.UndefOr[Boolean] = js.undefined
   ): RegisterDomainRequest = {
     val __obj = js.Dynamic.literal(AdminContact = AdminContact.asInstanceOf[js.Any], DomainName = DomainName.asInstanceOf[js.Any], DurationInYears = DurationInYears.asInstanceOf[js.Any], RegistrantContact = RegistrantContact.asInstanceOf[js.Any], TechContact = TechContact.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoRenew)) __obj.updateDynamic("AutoRenew")(AutoRenew.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoRenew)) __obj.updateDynamic("AutoRenew")(AutoRenew.get.asInstanceOf[js.Any])
     if (IdnLangCode != null) __obj.updateDynamic("IdnLangCode")(IdnLangCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(PrivacyProtectAdminContact)) __obj.updateDynamic("PrivacyProtectAdminContact")(PrivacyProtectAdminContact.asInstanceOf[js.Any])
-    if (!js.isUndefined(PrivacyProtectRegistrantContact)) __obj.updateDynamic("PrivacyProtectRegistrantContact")(PrivacyProtectRegistrantContact.asInstanceOf[js.Any])
-    if (!js.isUndefined(PrivacyProtectTechContact)) __obj.updateDynamic("PrivacyProtectTechContact")(PrivacyProtectTechContact.asInstanceOf[js.Any])
+    if (!js.isUndefined(PrivacyProtectAdminContact)) __obj.updateDynamic("PrivacyProtectAdminContact")(PrivacyProtectAdminContact.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(PrivacyProtectRegistrantContact)) __obj.updateDynamic("PrivacyProtectRegistrantContact")(PrivacyProtectRegistrantContact.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(PrivacyProtectTechContact)) __obj.updateDynamic("PrivacyProtectTechContact")(PrivacyProtectTechContact.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterDomainRequest]
   }
 }

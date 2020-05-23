@@ -65,14 +65,14 @@ object UpdateProfileRequest {
   def apply(
     Address: Address = null,
     DistanceUnit: DistanceUnit = null,
-    IsDefault: js.UndefOr[scala.Boolean] = js.undefined,
+    IsDefault: js.UndefOr[Boolean] = js.undefined,
     Locale: DeviceLocale = null,
-    MaxVolumeLimit: Int | Double = null,
+    MaxVolumeLimit: js.UndefOr[MaxVolumeLimit] = js.undefined,
     MeetingRoomConfiguration: UpdateMeetingRoomConfiguration = null,
-    PSTNEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    PSTNEnabled: js.UndefOr[Boolean] = js.undefined,
     ProfileArn: Arn = null,
     ProfileName: ProfileName = null,
-    SetupModeDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    SetupModeDisabled: js.UndefOr[Boolean] = js.undefined,
     TemperatureUnit: TemperatureUnit = null,
     Timezone: Timezone = null,
     WakeWord: WakeWord = null
@@ -80,14 +80,14 @@ object UpdateProfileRequest {
     val __obj = js.Dynamic.literal()
     if (Address != null) __obj.updateDynamic("Address")(Address.asInstanceOf[js.Any])
     if (DistanceUnit != null) __obj.updateDynamic("DistanceUnit")(DistanceUnit.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsDefault)) __obj.updateDynamic("IsDefault")(IsDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsDefault)) __obj.updateDynamic("IsDefault")(IsDefault.get.asInstanceOf[js.Any])
     if (Locale != null) __obj.updateDynamic("Locale")(Locale.asInstanceOf[js.Any])
-    if (MaxVolumeLimit != null) __obj.updateDynamic("MaxVolumeLimit")(MaxVolumeLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxVolumeLimit)) __obj.updateDynamic("MaxVolumeLimit")(MaxVolumeLimit.get.asInstanceOf[js.Any])
     if (MeetingRoomConfiguration != null) __obj.updateDynamic("MeetingRoomConfiguration")(MeetingRoomConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(PSTNEnabled)) __obj.updateDynamic("PSTNEnabled")(PSTNEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(PSTNEnabled)) __obj.updateDynamic("PSTNEnabled")(PSTNEnabled.get.asInstanceOf[js.Any])
     if (ProfileArn != null) __obj.updateDynamic("ProfileArn")(ProfileArn.asInstanceOf[js.Any])
     if (ProfileName != null) __obj.updateDynamic("ProfileName")(ProfileName.asInstanceOf[js.Any])
-    if (!js.isUndefined(SetupModeDisabled)) __obj.updateDynamic("SetupModeDisabled")(SetupModeDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(SetupModeDisabled)) __obj.updateDynamic("SetupModeDisabled")(SetupModeDisabled.get.asInstanceOf[js.Any])
     if (TemperatureUnit != null) __obj.updateDynamic("TemperatureUnit")(TemperatureUnit.asInstanceOf[js.Any])
     if (Timezone != null) __obj.updateDynamic("Timezone")(Timezone.asInstanceOf[js.Any])
     if (WakeWord != null) __obj.updateDynamic("WakeWord")(WakeWord.asInstanceOf[js.Any])

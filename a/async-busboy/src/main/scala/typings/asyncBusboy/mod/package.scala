@@ -8,6 +8,6 @@ package object mod {
   type AsyncBusboy = js.Function2[
     /* req */ typings.node.httpMod.IncomingMessage, 
     /* options */ js.UndefOr[typings.asyncBusboy.mod.Options], 
-    js.Promise[typings.asyncBusboy.AnonFields]
+    js.Promise[typings.asyncBusboy.anon.Fields]
   ]
 }

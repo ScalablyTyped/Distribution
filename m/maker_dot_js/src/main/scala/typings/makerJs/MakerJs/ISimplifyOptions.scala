@@ -20,10 +20,13 @@ trait ISimplifyOptions extends js.Object {
 
 object ISimplifyOptions {
   @scala.inline
-  def apply(pointMatchingDistance: Int | Double = null, scalarMatchingDistance: Int | Double = null): ISimplifyOptions = {
+  def apply(
+    pointMatchingDistance: js.UndefOr[Double] = js.undefined,
+    scalarMatchingDistance: js.UndefOr[Double] = js.undefined
+  ): ISimplifyOptions = {
     val __obj = js.Dynamic.literal()
-    if (pointMatchingDistance != null) __obj.updateDynamic("pointMatchingDistance")(pointMatchingDistance.asInstanceOf[js.Any])
-    if (scalarMatchingDistance != null) __obj.updateDynamic("scalarMatchingDistance")(scalarMatchingDistance.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointMatchingDistance)) __obj.updateDynamic("pointMatchingDistance")(pointMatchingDistance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scalarMatchingDistance)) __obj.updateDynamic("scalarMatchingDistance")(scalarMatchingDistance.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISimplifyOptions]
   }
 }

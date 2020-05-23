@@ -17,10 +17,10 @@ trait SeriesPointsMarkerSize extends js.Object {
 
 object SeriesPointsMarkerSize {
   @scala.inline
-  def apply(height: Int | Double = null, width: Int | Double = null): SeriesPointsMarkerSize = {
+  def apply(height: js.UndefOr[Double] = js.undefined, width: js.UndefOr[Double] = js.undefined): SeriesPointsMarkerSize = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesPointsMarkerSize]
   }
 }

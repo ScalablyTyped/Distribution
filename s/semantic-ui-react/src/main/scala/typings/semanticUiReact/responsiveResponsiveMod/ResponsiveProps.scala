@@ -3,7 +3,7 @@ package typings.semanticUiReact.responsiveResponsiveMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,13 +23,13 @@ object ResponsiveProps {
     getWidth: () => Double = null,
     maxWidth: Double | String = null,
     minWidth: Double | String = null,
-    onUpdate: (/* event */ SyntheticEvent[HTMLElement, Event_], /* data */ ResponsiveOnUpdateData) => Unit = null
+    onUpdate: (/* event */ SyntheticEvent[HTMLElement, Event], /* data */ ResponsiveOnUpdateData) => Unit = null
   ): ResponsiveProps = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(fireOnMount)) __obj.updateDynamic("fireOnMount")(fireOnMount.asInstanceOf[js.Any])
+    if (!js.isUndefined(fireOnMount)) __obj.updateDynamic("fireOnMount")(fireOnMount.get.asInstanceOf[js.Any])
     if (getWidth != null) __obj.updateDynamic("getWidth")(js.Any.fromFunction0(getWidth))
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])

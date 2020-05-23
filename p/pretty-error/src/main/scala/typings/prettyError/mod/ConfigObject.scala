@@ -21,7 +21,7 @@ object ConfigObject {
   def apply(
     aliases: Boolean | js.Object = null,
     filters: Boolean | Callback | js.Array[Callback] = null,
-    maxItems: Int | Double = null,
+    maxItems: js.UndefOr[Double] = js.undefined,
     parsedErrorFilters: Boolean | Callback | js.Array[Callback] = null,
     skip: Boolean | Callback | js.Array[Callback] = null,
     skipNodeFiles: Boolean | js.Any = null,
@@ -31,7 +31,7 @@ object ConfigObject {
     val __obj = js.Dynamic.literal()
     if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (maxItems != null) __obj.updateDynamic("maxItems")(maxItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxItems)) __obj.updateDynamic("maxItems")(maxItems.get.asInstanceOf[js.Any])
     if (parsedErrorFilters != null) __obj.updateDynamic("parsedErrorFilters")(parsedErrorFilters.asInstanceOf[js.Any])
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
     if (skipNodeFiles != null) __obj.updateDynamic("skipNodeFiles")(skipNodeFiles.asInstanceOf[js.Any])

@@ -17,12 +17,12 @@ object DirectNavigationOptions {
   @scala.inline
   def apply(
     referer: String = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     waitUntil: LoadEvent | js.Array[LoadEvent] = null
   ): DirectNavigationOptions = {
     val __obj = js.Dynamic.literal()
     if (referer != null) __obj.updateDynamic("referer")(referer.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (waitUntil != null) __obj.updateDynamic("waitUntil")(waitUntil.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectNavigationOptions]
   }

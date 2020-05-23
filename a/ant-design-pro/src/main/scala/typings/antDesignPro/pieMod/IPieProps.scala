@@ -1,6 +1,6 @@
 package typings.antDesignPro.pieMod
 
-import typings.antDesignPro.AnonX
+import typings.antDesignPro.anon.X
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ trait IPieProps extends js.Object {
   var animate: js.UndefOr[Boolean] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var colors: js.UndefOr[js.Array[String]] = js.undefined
-  var data: js.UndefOr[js.Array[AnonX]] = js.undefined
+  var data: js.UndefOr[js.Array[X]] = js.undefined
   var hasLegend: js.UndefOr[Boolean] = js.undefined
   var height: Double
   var padding: js.UndefOr[js.Tuple4[Double, Double, Double, Double]] = js.undefined
@@ -29,10 +29,10 @@ object IPieProps {
     animate: js.UndefOr[Boolean] = js.undefined,
     color: String = null,
     colors: js.Array[String] = null,
-    data: js.Array[AnonX] = null,
+    data: js.Array[X] = null,
     hasLegend: js.UndefOr[Boolean] = js.undefined,
     padding: js.Tuple4[Double, Double, Double, Double] = null,
-    percent: Int | Double = null,
+    percent: js.UndefOr[Double] = js.undefined,
     subTitle: ReactNode = null,
     title: ReactNode = null,
     tooltip: js.UndefOr[Boolean] = js.undefined,
@@ -40,16 +40,16 @@ object IPieProps {
     valueFormat: /* value */ String => String | ReactNode = null
   ): IPieProps = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any])
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasLegend)) __obj.updateDynamic("hasLegend")(hasLegend.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasLegend)) __obj.updateDynamic("hasLegend")(hasLegend.get.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
+    if (!js.isUndefined(percent)) __obj.updateDynamic("percent")(percent.get.asInstanceOf[js.Any])
     if (subTitle != null) __obj.updateDynamic("subTitle")(subTitle.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
+    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip.get.asInstanceOf[js.Any])
     if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     if (valueFormat != null) __obj.updateDynamic("valueFormat")(js.Any.fromFunction1(valueFormat))
     __obj.asInstanceOf[IPieProps]

@@ -27,18 +27,18 @@ object SketchPickerProps {
     onChangeComplete: /* color */ ColorResult => Unit = null,
     onSwatchHover: (/* color */ ColorResult, /* event */ MouseEvent) => Unit = null,
     presetColors: js.Array[String] = null,
-    ref: LegacyRef[SketchPicker] = null,
+    ref: js.UndefOr[Null | LegacyRef[SketchPicker]] = js.undefined,
     width: String = null
   ): SketchPickerProps = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableAlpha)) __obj.updateDynamic("disableAlpha")(disableAlpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableAlpha)) __obj.updateDynamic("disableAlpha")(disableAlpha.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onChangeComplete != null) __obj.updateDynamic("onChangeComplete")(js.Any.fromFunction1(onChangeComplete))
     if (onSwatchHover != null) __obj.updateDynamic("onSwatchHover")(js.Any.fromFunction2(onSwatchHover))
     if (presetColors != null) __obj.updateDynamic("presetColors")(presetColors.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchPickerProps]
   }

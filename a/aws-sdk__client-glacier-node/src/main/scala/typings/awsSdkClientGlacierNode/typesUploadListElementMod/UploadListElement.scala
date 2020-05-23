@@ -33,14 +33,14 @@ object UploadListElement {
     ArchiveDescription: String = null,
     CreationDate: String = null,
     MultipartUploadId: String = null,
-    PartSizeInBytes: Int | Double = null,
+    PartSizeInBytes: js.UndefOr[Double] = js.undefined,
     VaultARN: String = null
   ): UploadListElement = {
     val __obj = js.Dynamic.literal()
     if (ArchiveDescription != null) __obj.updateDynamic("ArchiveDescription")(ArchiveDescription.asInstanceOf[js.Any])
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
     if (MultipartUploadId != null) __obj.updateDynamic("MultipartUploadId")(MultipartUploadId.asInstanceOf[js.Any])
-    if (PartSizeInBytes != null) __obj.updateDynamic("PartSizeInBytes")(PartSizeInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(PartSizeInBytes)) __obj.updateDynamic("PartSizeInBytes")(PartSizeInBytes.get.asInstanceOf[js.Any])
     if (VaultARN != null) __obj.updateDynamic("VaultARN")(VaultARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadListElement]
   }

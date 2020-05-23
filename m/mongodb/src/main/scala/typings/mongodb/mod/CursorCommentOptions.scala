@@ -16,17 +16,17 @@ object CursorCommentOptions {
   @scala.inline
   def apply(
     hint: String = null,
-    limit: Int | scala.Double = null,
-    maxTimeMS: Int | scala.Double = null,
+    limit: js.UndefOr[scala.Double] = js.undefined,
+    maxTimeMS: js.UndefOr[scala.Double] = js.undefined,
     readPreference: ReadPreferenceOrMode = null,
-    skip: Int | scala.Double = null
+    skip: js.UndefOr[scala.Double] = js.undefined
   ): CursorCommentOptions = {
     val __obj = js.Dynamic.literal()
     if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (maxTimeMS != null) __obj.updateDynamic("maxTimeMS")(maxTimeMS.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTimeMS)) __obj.updateDynamic("maxTimeMS")(maxTimeMS.get.asInstanceOf[js.Any])
     if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
-    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CursorCommentOptions]
   }
 }

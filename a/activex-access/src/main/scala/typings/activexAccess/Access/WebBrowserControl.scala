@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.WebBrowserControl")
 @js.native
-class WebBrowserControl protected () extends js.Object {
+trait WebBrowserControl extends js.Object {
   @JSName("Access.WebBrowserControl_typekey")
   var AccessDotWebBrowserControl_typekey: WebBrowserControl = js.native
   val Application: typings.activexAccess.Access.Application = js.native

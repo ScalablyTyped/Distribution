@@ -55,44 +55,46 @@ trait IIntent extends js.Object {
 object IIntent {
   @scala.inline
   def apply(
-    action: String = null,
-    defaultResponsePlatforms: js.Array[Platform] = null,
-    displayName: String = null,
-    events: js.Array[String] = null,
-    followupIntentInfo: js.Array[IFollowupIntentInfo] = null,
-    inputContextNames: js.Array[String] = null,
-    isFallback: js.UndefOr[Boolean] = js.undefined,
-    messages: js.Array[IMessage] = null,
-    mlDisabled: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    outputContexts: js.Array[IContext] = null,
-    parameters: js.Array[IParameter] = null,
-    parentFollowupIntentName: String = null,
-    priority: Int | Double = null,
-    resetContexts: js.UndefOr[Boolean] = js.undefined,
-    rootFollowupIntentName: String = null,
-    trainingPhrases: js.Array[ITrainingPhrase] = null,
-    webhookState: WebhookState | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Intent.WebhookState * / any */ String) = null
+    action: js.UndefOr[Null | String] = js.undefined,
+    defaultResponsePlatforms: js.UndefOr[Null | js.Array[Platform]] = js.undefined,
+    displayName: js.UndefOr[Null | String] = js.undefined,
+    events: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    followupIntentInfo: js.UndefOr[Null | js.Array[IFollowupIntentInfo]] = js.undefined,
+    inputContextNames: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    isFallback: js.UndefOr[Null | Boolean] = js.undefined,
+    messages: js.UndefOr[Null | js.Array[IMessage]] = js.undefined,
+    mlDisabled: js.UndefOr[Null | Boolean] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined,
+    outputContexts: js.UndefOr[Null | js.Array[IContext]] = js.undefined,
+    parameters: js.UndefOr[Null | js.Array[IParameter]] = js.undefined,
+    parentFollowupIntentName: js.UndefOr[Null | String] = js.undefined,
+    priority: js.UndefOr[Null | Double] = js.undefined,
+    resetContexts: js.UndefOr[Null | Boolean] = js.undefined,
+    rootFollowupIntentName: js.UndefOr[Null | String] = js.undefined,
+    trainingPhrases: js.UndefOr[Null | js.Array[ITrainingPhrase]] = js.undefined,
+    webhookState: js.UndefOr[
+      Null | WebhookState | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Intent.WebhookState * / any */ String)
+    ] = js.undefined
   ): IIntent = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (defaultResponsePlatforms != null) __obj.updateDynamic("defaultResponsePlatforms")(defaultResponsePlatforms.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (followupIntentInfo != null) __obj.updateDynamic("followupIntentInfo")(followupIntentInfo.asInstanceOf[js.Any])
-    if (inputContextNames != null) __obj.updateDynamic("inputContextNames")(inputContextNames.asInstanceOf[js.Any])
+    if (!js.isUndefined(action)) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultResponsePlatforms)) __obj.updateDynamic("defaultResponsePlatforms")(defaultResponsePlatforms.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayName)) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (!js.isUndefined(events)) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (!js.isUndefined(followupIntentInfo)) __obj.updateDynamic("followupIntentInfo")(followupIntentInfo.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputContextNames)) __obj.updateDynamic("inputContextNames")(inputContextNames.asInstanceOf[js.Any])
     if (!js.isUndefined(isFallback)) __obj.updateDynamic("isFallback")(isFallback.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (!js.isUndefined(messages)) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
     if (!js.isUndefined(mlDisabled)) __obj.updateDynamic("mlDisabled")(mlDisabled.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (outputContexts != null) __obj.updateDynamic("outputContexts")(outputContexts.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
-    if (parentFollowupIntentName != null) __obj.updateDynamic("parentFollowupIntentName")(parentFollowupIntentName.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputContexts)) __obj.updateDynamic("outputContexts")(outputContexts.asInstanceOf[js.Any])
+    if (!js.isUndefined(parameters)) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    if (!js.isUndefined(parentFollowupIntentName)) __obj.updateDynamic("parentFollowupIntentName")(parentFollowupIntentName.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (!js.isUndefined(resetContexts)) __obj.updateDynamic("resetContexts")(resetContexts.asInstanceOf[js.Any])
-    if (rootFollowupIntentName != null) __obj.updateDynamic("rootFollowupIntentName")(rootFollowupIntentName.asInstanceOf[js.Any])
-    if (trainingPhrases != null) __obj.updateDynamic("trainingPhrases")(trainingPhrases.asInstanceOf[js.Any])
-    if (webhookState != null) __obj.updateDynamic("webhookState")(webhookState.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootFollowupIntentName)) __obj.updateDynamic("rootFollowupIntentName")(rootFollowupIntentName.asInstanceOf[js.Any])
+    if (!js.isUndefined(trainingPhrases)) __obj.updateDynamic("trainingPhrases")(trainingPhrases.asInstanceOf[js.Any])
+    if (!js.isUndefined(webhookState)) __obj.updateDynamic("webhookState")(webhookState.asInstanceOf[js.Any])
     __obj.asInstanceOf[IIntent]
   }
 }

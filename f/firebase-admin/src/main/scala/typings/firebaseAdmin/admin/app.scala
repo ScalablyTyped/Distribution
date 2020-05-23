@@ -4,8 +4,10 @@ import typings.firebaseAdmin.admin.auth.Auth
 import typings.firebaseAdmin.admin.database.Database
 import typings.firebaseAdmin.admin.firestore.Firestore
 import typings.firebaseAdmin.admin.instanceId.InstanceId
+import typings.firebaseAdmin.admin.machineLearning.MachineLearning
 import typings.firebaseAdmin.admin.messaging.Messaging
 import typings.firebaseAdmin.admin.projectManagement.ProjectManagement
+import typings.firebaseAdmin.admin.remoteConfig.RemoteConfig
 import typings.firebaseAdmin.admin.securityRules.SecurityRules
 import typings.firebaseAdmin.admin.storage.Storage
 import scala.scalajs.js
@@ -85,13 +87,13 @@ object app extends js.Object {
     def delete(): js.Promise[Unit] = js.native
     def firestore(): Firestore = js.native
     def instanceId(): InstanceId = js.native
+    def machineLearning(): MachineLearning = js.native
     def messaging(): Messaging = js.native
     def projectManagement(): ProjectManagement = js.native
+    def remoteConfig(): RemoteConfig = js.native
     def securityRules(): SecurityRules = js.native
     def storage(): Storage = js.native
   }
   
-  def apply(): App = js.native
-  def apply(name: String): App = js.native
 }
 

@@ -69,15 +69,15 @@ object PrefetchOptions {
     prepare: /* settings */ JQueryAjaxSettings => JQueryAjaxSettings = null,
     thumbprint: String = null,
     transform: /* response */ T => T = null,
-    ttl: Int | Double = null
+    ttl: js.UndefOr[Double] = js.undefined
   ): PrefetchOptions[T] = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.get.asInstanceOf[js.Any])
     if (cacheKey != null) __obj.updateDynamic("cacheKey")(cacheKey.asInstanceOf[js.Any])
     if (prepare != null) __obj.updateDynamic("prepare")(js.Any.fromFunction1(prepare))
     if (thumbprint != null) __obj.updateDynamic("thumbprint")(thumbprint.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrefetchOptions[T]]
   }
 }

@@ -1,7 +1,7 @@
 package typings.agGrid.gridPanelMod
 
-import typings.agGrid.AnonBottom
-import typings.agGrid.AnonLeft
+import typings.agGrid.anon.Bottom
+import typings.agGrid.anon.Left
 import typings.agGrid.componentMod.Component
 import typings.agGrid.headerRootCompMod.HeaderRootComp
 import typings.std.ClientRect
@@ -118,10 +118,10 @@ class GridPanel () extends Component {
   def getDropTargetBodyContainers(): js.Array[HTMLElement] = js.native
   def getDropTargetLeftContainers(): js.Array[HTMLElement] = js.native
   def getDropTargetRightContainers(): js.Array[HTMLElement] = js.native
-  def getHScrollPosition(): AnonLeft = js.native
+  def getHScrollPosition(): Left = js.native
   def getRowContainers(): RowContainerComponents = js.native
   /* private */ def getRowForEvent(event: js.Any): js.Any = js.native
-  def getVScrollPosition(): AnonBottom = js.native
+  def getVScrollPosition(): Bottom = js.native
   /* private */ def getWidthForSizeColsToFit(): js.Any = js.native
   /* private */ def handleContextMenuMouseEvent(mouseEvent: js.Any, touchEvent: js.Any, rowComp: js.Any, cellComp: js.Any): js.Any = js.native
   /* private */ def hideFullWidthViewportScrollbars(): js.Any = js.native

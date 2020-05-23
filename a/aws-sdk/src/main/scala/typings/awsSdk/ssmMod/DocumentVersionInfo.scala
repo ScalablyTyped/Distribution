@@ -46,7 +46,7 @@ object DocumentVersionInfo {
     CreatedDate: DateTime = null,
     DocumentFormat: DocumentFormat = null,
     DocumentVersion: DocumentVersion = null,
-    IsDefaultVersion: js.UndefOr[scala.Boolean] = js.undefined,
+    IsDefaultVersion: js.UndefOr[Boolean] = js.undefined,
     Name: DocumentName = null,
     Status: DocumentStatus = null,
     StatusInformation: DocumentStatusInformation = null,
@@ -56,7 +56,7 @@ object DocumentVersionInfo {
     if (CreatedDate != null) __obj.updateDynamic("CreatedDate")(CreatedDate.asInstanceOf[js.Any])
     if (DocumentFormat != null) __obj.updateDynamic("DocumentFormat")(DocumentFormat.asInstanceOf[js.Any])
     if (DocumentVersion != null) __obj.updateDynamic("DocumentVersion")(DocumentVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsDefaultVersion)) __obj.updateDynamic("IsDefaultVersion")(IsDefaultVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsDefaultVersion)) __obj.updateDynamic("IsDefaultVersion")(IsDefaultVersion.get.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (StatusInformation != null) __obj.updateDynamic("StatusInformation")(StatusInformation.asInstanceOf[js.Any])

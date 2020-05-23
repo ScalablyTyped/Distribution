@@ -25,8 +25,8 @@ object SaveConfig {
     trainableOnly: js.UndefOr[Boolean] = js.undefined
   ): SaveConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeOptimizer)) __obj.updateDynamic("includeOptimizer")(includeOptimizer.asInstanceOf[js.Any])
-    if (!js.isUndefined(trainableOnly)) __obj.updateDynamic("trainableOnly")(trainableOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeOptimizer)) __obj.updateDynamic("includeOptimizer")(includeOptimizer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trainableOnly)) __obj.updateDynamic("trainableOnly")(trainableOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveConfig]
   }
 }

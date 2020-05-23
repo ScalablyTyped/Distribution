@@ -7,18 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a list of objects that can be accessed by index or by a string key. Provides methods to search, sort, filter, and manipulate the data.
   **/
-@JSGlobal("WinJS.Binding.List")
 @js.native
-//#region Constructors
-/**
-  * Creates a List object.
-  * @constructor
-  * @param list The array containing the elements to initalize the list.
-  * @param options You can set two Boolean options: binding and proxy. If options.binding is true, the list contains the result of calling as on the element values. If options.proxy is true, the list specified as the first parameter is used as the storage for the List. This option should be used with care, because uncoordinated edits to the data storage may result in errors.
-  **/
-class List[T] () extends ListBaseWithMutators[T] {
-  def this(list: js.Array[T]) = this()
-  def this(list: js.Array[T], options: js.Any) = this()
+trait List[T] extends ListBaseWithMutators[T] {
   /**
     * Gets or sets the length of the list, which is an integer value one higher than the highest element defined in the list.
     **/
@@ -77,15 +67,5 @@ class List[T] () extends ListBaseWithMutators[T] {
     **/
   def splice(start: Double): js.Array[T] = js.native
   def splice(start: Double, howMany: Double, item: T*): js.Array[T] = js.native
-}
-
-/* static members */
-@JSGlobal("WinJS.Binding.List")
-@js.native
-object List extends js.Object {
-  /**
-    * Indicates that the object is compatibile with declarative processing.
-    **/
-  var supportedForProcessing: Boolean = js.native
 }
 

@@ -93,16 +93,16 @@ object Options {
     fallbackParams: String = null,
     fallbackStyles: js.Array[String] = null,
     fallbackText: String = null,
-    fallbackWindowHeight: Int | Double = null,
-    fallbackWindowWidth: Int | Double = null,
+    fallbackWindowHeight: js.UndefOr[Double] = js.undefined,
+    fallbackWindowWidth: js.UndefOr[Double] = js.undefined,
     loading: String = null,
-    onConnect: /* data */ js.Any => Unit = null,
+    onConnect: js.UndefOr[Null | (/* data */ js.Any => Unit)] = js.undefined,
     showLoadingIndicator: js.UndefOr[Boolean] = js.undefined,
     spinner: String = null,
     styles: js.Array[String] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fallback)) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
+    if (!js.isUndefined(fallback)) __obj.updateDynamic("fallback")(fallback.get.asInstanceOf[js.Any])
     if (fallbackLinkAfter != null) __obj.updateDynamic("fallbackLinkAfter")(fallbackLinkAfter.asInstanceOf[js.Any])
     if (fallbackLinkHoverStyles != null) __obj.updateDynamic("fallbackLinkHoverStyles")(fallbackLinkHoverStyles.asInstanceOf[js.Any])
     if (fallbackLinkStyles != null) __obj.updateDynamic("fallbackLinkStyles")(fallbackLinkStyles.asInstanceOf[js.Any])
@@ -110,11 +110,11 @@ object Options {
     if (fallbackParams != null) __obj.updateDynamic("fallbackParams")(fallbackParams.asInstanceOf[js.Any])
     if (fallbackStyles != null) __obj.updateDynamic("fallbackStyles")(fallbackStyles.asInstanceOf[js.Any])
     if (fallbackText != null) __obj.updateDynamic("fallbackText")(fallbackText.asInstanceOf[js.Any])
-    if (fallbackWindowHeight != null) __obj.updateDynamic("fallbackWindowHeight")(fallbackWindowHeight.asInstanceOf[js.Any])
-    if (fallbackWindowWidth != null) __obj.updateDynamic("fallbackWindowWidth")(fallbackWindowWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(fallbackWindowHeight)) __obj.updateDynamic("fallbackWindowHeight")(fallbackWindowHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fallbackWindowWidth)) __obj.updateDynamic("fallbackWindowWidth")(fallbackWindowWidth.get.asInstanceOf[js.Any])
     if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    if (onConnect != null) __obj.updateDynamic("onConnect")(js.Any.fromFunction1(onConnect))
-    if (!js.isUndefined(showLoadingIndicator)) __obj.updateDynamic("showLoadingIndicator")(showLoadingIndicator.asInstanceOf[js.Any])
+    if (!js.isUndefined(onConnect)) __obj.updateDynamic("onConnect")(if (onConnect != null) js.Any.fromFunction1(onConnect.asInstanceOf[/* data */ js.Any => Unit]) else null)
+    if (!js.isUndefined(showLoadingIndicator)) __obj.updateDynamic("showLoadingIndicator")(showLoadingIndicator.get.asInstanceOf[js.Any])
     if (spinner != null) __obj.updateDynamic("spinner")(spinner.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

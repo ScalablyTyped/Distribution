@@ -24,19 +24,13 @@ trait IsReadyToPayRequest extends js.Object {
     * List of allowed payment methods.
     *
     * This field is required and must contain at least one
-    * [[PaymentMethodSpecification|`PaymentMethodSpecification`]].
+    * allowed payment method.
     *
-    * Note that when
-    * [[PaymentMethodSpecification|`PaymentMethodSpecification`]] is used
-    * within an IsReadyToPayRequest not all fields are required. For
-    * example,
-    * [[PaymentMethodSpecification.tokenizationSpecification|`PaymentMethodSpecification.tokenizationSpecification`]]
-    * is ignored by the `isReadyToPay` client method so you may leave it
-    * unset. Check each filtering criteria within the payment method's
+    * Check each filtering criteria within the payment method's
     * parameters field to see if the properties within are applicable for
-    * IsReadyToPayRequest.
+    * `IsReadyToPayRequest`.
     */
-  var allowedPaymentMethods: js.Array[PaymentMethodSpecification]
+  var allowedPaymentMethods: js.Array[IsReadyToPayPaymentMethodSpecification]
   /**
     * Major API version.
     *
@@ -79,7 +73,7 @@ trait IsReadyToPayRequest extends js.Object {
 object IsReadyToPayRequest {
   @scala.inline
   def apply(
-    allowedPaymentMethods: js.Array[PaymentMethodSpecification],
+    allowedPaymentMethods: js.Array[IsReadyToPayPaymentMethodSpecification],
     apiVersion: Double,
     apiVersionMinor: Double,
     existingPaymentMethodRequired: `false` | `true` = null

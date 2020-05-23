@@ -1,7 +1,7 @@
 package typings.stripe.mod.issuing.cardholders
 
 import typings.std.Exclude
-import typings.stripe.AnonAddressICardholderBillingAddress
+import typings.stripe.anon.AddressICardholderBillingAddress
 import typings.stripe.mod.IOptionsMetadata
 import typings.stripe.stripeStrings.blocked
 import scala.scalajs.js
@@ -16,7 +16,7 @@ trait ICardholderUpdateOptions extends js.Object {
   /**
     * The cardholder’s billing address.
     */
-  var billing: js.UndefOr[AnonAddressICardholderBillingAddress] = js.undefined
+  var billing: js.UndefOr[AddressICardholderBillingAddress] = js.undefined
   /**
     * Additional information about a business_entity cardholder.
     */
@@ -51,7 +51,7 @@ object ICardholderUpdateOptions {
   @scala.inline
   def apply(
     authorization_controls: ICardholderAuthorizationControls = null,
-    billing: AnonAddressICardholderBillingAddress = null,
+    billing: AddressICardholderBillingAddress = null,
     company: ICardholderBusinessEntity = null,
     email: String = null,
     individual: ICardholderIndividual = null,
@@ -66,7 +66,7 @@ object ICardholderUpdateOptions {
     if (company != null) __obj.updateDynamic("company")(company.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
     if (individual != null) __obj.updateDynamic("individual")(individual.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_default)) __obj.updateDynamic("is_default")(is_default.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_default)) __obj.updateDynamic("is_default")(is_default.get.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (phone_number != null) __obj.updateDynamic("phone_number")(phone_number.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])

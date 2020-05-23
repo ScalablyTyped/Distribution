@@ -24,13 +24,13 @@ object Options {
   def apply(
     packages: js.Array[String],
     latest: js.UndefOr[Boolean] = js.undefined,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     protocol: http | https = null,
     registry: String = null
   ): Options = {
     val __obj = js.Dynamic.literal(packages = packages.asInstanceOf[js.Any])
-    if (!js.isUndefined(latest)) __obj.updateDynamic("latest")(latest.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(latest)) __obj.updateDynamic("latest")(latest.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (registry != null) __obj.updateDynamic("registry")(registry.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

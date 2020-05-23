@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@wordpress/is-shallow-equal" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@wordpress/is-shallow-equal" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

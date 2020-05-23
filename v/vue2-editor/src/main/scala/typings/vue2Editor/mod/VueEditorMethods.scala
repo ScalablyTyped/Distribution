@@ -1,6 +1,6 @@
 package typings.vue2Editor.mod
 
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait VueEditorMethods extends js.Object {
   def checkForCustomImageHandler(): Unit
   def customImageHandler(image: js.Any, callback: js.Any): Unit
-  def emitImageInfo($event: Event_): Unit
+  def emitImageInfo($event: Event): Unit
   def handleInitialContent(): Unit
   def handleSelectionChange(range: js.Any, oldRange: js.Any): Unit
   def handleTextChange(): Unit
@@ -27,7 +27,7 @@ object VueEditorMethods {
   def apply(
     checkForCustomImageHandler: () => Unit,
     customImageHandler: (js.Any, js.Any) => Unit,
-    emitImageInfo: Event_ => Unit,
+    emitImageInfo: Event => Unit,
     handleInitialContent: () => Unit,
     handleSelectionChange: (js.Any, js.Any) => Unit,
     handleTextChange: () => Unit,

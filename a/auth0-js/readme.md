@@ -1,7 +1,7 @@
 
 # Scala.js typings for auth0-js
 
-Typings are for version 9.12
+Typings are for version 9.13
 
 ## Library description:
 Auth0 headless browser sdk

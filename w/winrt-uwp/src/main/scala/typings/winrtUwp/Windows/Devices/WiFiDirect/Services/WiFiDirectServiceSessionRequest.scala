@@ -7,16 +7,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Describes a Wi-Fi Direct Service session request. */
-@JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionRequest")
-@js.native
-abstract class WiFiDirectServiceSessionRequest () extends js.Object {
+trait WiFiDirectServiceSessionRequest extends js.Object {
   /** Gets device information for the requesting device. */
-  var deviceInformation: DeviceInformation = js.native
+  var deviceInformation: DeviceInformation
   /** Gets information about how provisioning should be performed if the session is established. */
-  var provisioningInfo: WiFiDirectServiceProvisioningInfo = js.native
+  var provisioningInfo: WiFiDirectServiceProvisioningInfo
   /** Gets the session information blob associated with this request. */
-  var sessionInfo: IBuffer = js.native
+  var sessionInfo: IBuffer
   /** Closes the session request. Your server code calls this method to reject a session request. */
-  def close(): Unit = js.native
+  def close(): Unit
+}
+
+object WiFiDirectServiceSessionRequest {
+  @scala.inline
+  def apply(
+    close: () => Unit,
+    deviceInformation: DeviceInformation,
+    provisioningInfo: WiFiDirectServiceProvisioningInfo,
+    sessionInfo: IBuffer
+  ): WiFiDirectServiceSessionRequest = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), deviceInformation = deviceInformation.asInstanceOf[js.Any], provisioningInfo = provisioningInfo.asInstanceOf[js.Any], sessionInfo = sessionInfo.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WiFiDirectServiceSessionRequest]
+  }
 }
 

@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Data.Json
 
-import typings.winrt.AnonSucceeded
 import typings.winrt.Windows.Foundation.Collections.IIterator
 import typings.winrt.Windows.Foundation.Collections.IKeyValuePair
 import typings.winrt.Windows.Foundation.Collections.IMap
@@ -9,62 +8,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Data.Json.JsonObject")
-@js.native
-class JsonObject ()
+trait JsonObject
   extends IJsonObject
-     with IMap[String, IJsonValue] {
-  /* CompleteClass */
-  override var size: Double = js.native
-  /* CompleteClass */
-  override var valueType: JsonValueType = js.native
-  /* CompleteClass */
-  override def clear(): Unit = js.native
-  /* CompleteClass */
-  override def first(): IIterator[IKeyValuePair[String, IJsonValue]] = js.native
-  /* CompleteClass */
-  override def getArray(): JsonArray = js.native
-  /* CompleteClass */
-  override def getBoolean(): Boolean = js.native
-  /* CompleteClass */
-  override def getNamedArray(name: String): JsonArray = js.native
-  /* CompleteClass */
-  override def getNamedBoolean(name: String): Boolean = js.native
-  /* CompleteClass */
-  override def getNamedNumber(name: String): Double = js.native
-  /* CompleteClass */
-  override def getNamedObject(name: String): JsonObject = js.native
-  /* CompleteClass */
-  override def getNamedString(name: String): String = js.native
-  /* CompleteClass */
-  override def getNamedValue(name: String): JsonValue = js.native
-  /* CompleteClass */
-  override def getNumber(): Double = js.native
-  /* CompleteClass */
-  override def getObject(): JsonObject = js.native
-  /* CompleteClass */
-  override def getString(): String = js.native
-  /* CompleteClass */
-  override def getView(): IMapView[String, IJsonValue] = js.native
-  /* CompleteClass */
-  override def hasKey(key: String): Boolean = js.native
-  /* CompleteClass */
-  override def insert(key: String, value: IJsonValue): Boolean = js.native
-  /* CompleteClass */
-  override def lookup(key: String): IJsonValue = js.native
-  /* CompleteClass */
-  override def remove(key: String): Unit = js.native
-  /* CompleteClass */
-  override def setNamedValue(name: String, value: IJsonValue): Unit = js.native
-  /* CompleteClass */
-  override def stringify(): String = js.native
-}
+     with IMap[String, IJsonValue]
 
-/* static members */
-@JSGlobal("Windows.Data.Json.JsonObject")
-@js.native
-object JsonObject extends js.Object {
-  def parse(input: String): JsonObject = js.native
-  def tryParse(input: String): AnonSucceeded = js.native
+object JsonObject {
+  @scala.inline
+  def apply(
+    clear: () => Unit,
+    first: () => IIterator[IKeyValuePair[String, IJsonValue]],
+    getArray: () => JsonArray,
+    getBoolean: () => Boolean,
+    getNamedArray: String => JsonArray,
+    getNamedBoolean: String => Boolean,
+    getNamedNumber: String => Double,
+    getNamedObject: String => JsonObject,
+    getNamedString: String => String,
+    getNamedValue: String => JsonValue,
+    getNumber: () => Double,
+    getObject: () => JsonObject,
+    getString: () => String,
+    getView: () => IMapView[String, IJsonValue],
+    hasKey: String => Boolean,
+    insert: (String, IJsonValue) => Boolean,
+    lookup: String => IJsonValue,
+    remove: String => Unit,
+    setNamedValue: (String, IJsonValue) => Unit,
+    size: Double,
+    stringify: () => String,
+    valueType: JsonValueType
+  ): JsonObject = {
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), first = js.Any.fromFunction0(first), getArray = js.Any.fromFunction0(getArray), getBoolean = js.Any.fromFunction0(getBoolean), getNamedArray = js.Any.fromFunction1(getNamedArray), getNamedBoolean = js.Any.fromFunction1(getNamedBoolean), getNamedNumber = js.Any.fromFunction1(getNamedNumber), getNamedObject = js.Any.fromFunction1(getNamedObject), getNamedString = js.Any.fromFunction1(getNamedString), getNamedValue = js.Any.fromFunction1(getNamedValue), getNumber = js.Any.fromFunction0(getNumber), getObject = js.Any.fromFunction0(getObject), getString = js.Any.fromFunction0(getString), getView = js.Any.fromFunction0(getView), hasKey = js.Any.fromFunction1(hasKey), insert = js.Any.fromFunction2(insert), lookup = js.Any.fromFunction1(lookup), remove = js.Any.fromFunction1(remove), setNamedValue = js.Any.fromFunction2(setNamedValue), size = size.asInstanceOf[js.Any], stringify = js.Any.fromFunction0(stringify), valueType = valueType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JsonObject]
+  }
 }
 

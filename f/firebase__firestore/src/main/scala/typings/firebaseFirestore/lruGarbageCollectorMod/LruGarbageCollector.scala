@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/lru_garbage_collector", "LruGarbageCollector")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/lru_garbage_collector", "LruGarbageCollector")
 @js.native
 class LruGarbageCollector protected () extends js.Object {
   def this(delegate: LruDelegate, params: LruParams) = this()

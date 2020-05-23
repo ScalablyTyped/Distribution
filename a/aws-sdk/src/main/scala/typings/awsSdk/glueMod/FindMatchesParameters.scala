@@ -27,15 +27,15 @@ trait FindMatchesParameters extends js.Object {
 object FindMatchesParameters {
   @scala.inline
   def apply(
-    AccuracyCostTradeoff: Int | Double = null,
-    EnforceProvidedLabels: js.UndefOr[scala.Boolean] = js.undefined,
-    PrecisionRecallTradeoff: Int | Double = null,
+    AccuracyCostTradeoff: js.UndefOr[GenericBoundedDouble] = js.undefined,
+    EnforceProvidedLabels: js.UndefOr[NullableBoolean] = js.undefined,
+    PrecisionRecallTradeoff: js.UndefOr[GenericBoundedDouble] = js.undefined,
     PrimaryKeyColumnName: ColumnNameString = null
   ): FindMatchesParameters = {
     val __obj = js.Dynamic.literal()
-    if (AccuracyCostTradeoff != null) __obj.updateDynamic("AccuracyCostTradeoff")(AccuracyCostTradeoff.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnforceProvidedLabels)) __obj.updateDynamic("EnforceProvidedLabels")(EnforceProvidedLabels.asInstanceOf[js.Any])
-    if (PrecisionRecallTradeoff != null) __obj.updateDynamic("PrecisionRecallTradeoff")(PrecisionRecallTradeoff.asInstanceOf[js.Any])
+    if (!js.isUndefined(AccuracyCostTradeoff)) __obj.updateDynamic("AccuracyCostTradeoff")(AccuracyCostTradeoff.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnforceProvidedLabels)) __obj.updateDynamic("EnforceProvidedLabels")(EnforceProvidedLabels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(PrecisionRecallTradeoff)) __obj.updateDynamic("PrecisionRecallTradeoff")(PrecisionRecallTradeoff.get.asInstanceOf[js.Any])
     if (PrimaryKeyColumnName != null) __obj.updateDynamic("PrimaryKeyColumnName")(PrimaryKeyColumnName.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindMatchesParameters]
   }

@@ -96,7 +96,7 @@ object Options {
     leaps: js.UndefOr[Boolean] = js.undefined,
     next: String = null,
     nextClass: String = null,
-    page: Int | Double = null,
+    page: js.UndefOr[Double] = js.undefined,
     prev: String = null,
     prevClass: String = null,
     wrapClass: String = null
@@ -106,15 +106,15 @@ object Options {
     if (disabledClass != null) __obj.updateDynamic("disabledClass")(disabledClass.asInstanceOf[js.Any])
     if (first != null) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
     if (firstClass != null) __obj.updateDynamic("firstClass")(firstClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(firstLastUse)) __obj.updateDynamic("firstLastUse")(firstLastUse.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstLastUse)) __obj.updateDynamic("firstLastUse")(firstLastUse.get.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (hrefVariable != null) __obj.updateDynamic("hrefVariable")(hrefVariable.asInstanceOf[js.Any])
     if (last != null) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
     if (lastClass != null) __obj.updateDynamic("lastClass")(lastClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(leaps)) __obj.updateDynamic("leaps")(leaps.asInstanceOf[js.Any])
+    if (!js.isUndefined(leaps)) __obj.updateDynamic("leaps")(leaps.get.asInstanceOf[js.Any])
     if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
     if (nextClass != null) __obj.updateDynamic("nextClass")(nextClass.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
     if (prev != null) __obj.updateDynamic("prev")(prev.asInstanceOf[js.Any])
     if (prevClass != null) __obj.updateDynamic("prevClass")(prevClass.asInstanceOf[js.Any])
     if (wrapClass != null) __obj.updateDynamic("wrapClass")(wrapClass.asInstanceOf[js.Any])

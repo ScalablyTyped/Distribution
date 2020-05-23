@@ -16,7 +16,7 @@ object RefetchOptions {
   def apply(fetchPolicy: `store-or-network` | `network-only` = null, force: js.UndefOr[Boolean] = js.undefined): RefetchOptions = {
     val __obj = js.Dynamic.literal()
     if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefetchOptions]
   }
 }

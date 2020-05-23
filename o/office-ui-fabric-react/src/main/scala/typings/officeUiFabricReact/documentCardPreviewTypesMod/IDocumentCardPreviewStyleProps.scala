@@ -25,7 +25,7 @@ object IDocumentCardPreviewStyleProps {
   def apply(theme: ITheme, className: String = null, isFileList: js.UndefOr[Boolean] = js.undefined): IDocumentCardPreviewStyleProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFileList)) __obj.updateDynamic("isFileList")(isFileList.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFileList)) __obj.updateDynamic("isFileList")(isFileList.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDocumentCardPreviewStyleProps]
   }
 }

@@ -7,58 +7,13 @@ import scala.scalajs.js.annotation._
 
 object sipJsStrings {
   @js.native
-  sealed trait `0Dot15Dot10` extends js.Object
-  
-  @js.native
-  sealed trait ACK extends js.Object
-  
-  @js.native
-  sealed trait BYE extends js.Object
-  
-  @js.native
-  sealed trait CANCEL extends js.Object
-  
-  @js.native
-  sealed trait INFO extends js.Object
-  
-  @js.native
-  sealed trait INVITE extends js.Object
-  
-  @js.native
-  sealed trait MESSAGE extends js.Object
-  
-  @js.native
-  sealed trait NOTIFY extends js.Object
-  
-  @js.native
-  sealed trait OPTIONS extends js.Object
-  
-  @js.native
-  sealed trait PRACK extends js.Object
-  
-  @js.native
-  sealed trait PUBLISH extends js.Object
-  
-  @js.native
-  sealed trait REFER extends js.Object
-  
-  @js.native
-  sealed trait REGISTER extends js.Object
-  
-  @js.native
-  sealed trait SUBSCRIBE extends js.Object
-  
-  @js.native
   sealed trait `SessionDescriptionHandler-created` extends js.Object
-  
-  @js.native
-  sealed trait UPDATE extends js.Object
   
   @js.native
   sealed trait accepted extends js.Object
   
   @js.native
-  sealed trait ack_ extends js.Object
+  sealed trait ack extends js.Object
   
   @js.native
   sealed trait addStream extends js.Object
@@ -70,10 +25,10 @@ object sipJsStrings {
   sealed trait any extends js.Object
   
   @js.native
-  sealed trait bye_ extends js.Object
+  sealed trait bye extends js.Object
   
   @js.native
-  sealed trait cancel_ extends js.Object
+  sealed trait cancel extends js.Object
   
   @js.native
   sealed trait `class` extends js.Object
@@ -148,10 +103,10 @@ object sipJsStrings {
   sealed trait iceGatheringComplete extends js.Object
   
   @js.native
-  sealed trait inviteSent extends js.Object
+  sealed trait invite extends js.Object
   
   @js.native
-  sealed trait invite_ extends js.Object
+  sealed trait inviteSent extends js.Object
   
   @js.native
   sealed trait literal extends js.Object
@@ -160,10 +115,10 @@ object sipJsStrings {
   sealed trait log extends LogLevel
   
   @js.native
-  sealed trait message_ extends js.Object
+  sealed trait message extends js.Object
   
   @js.native
-  sealed trait notify_ extends js.Object
+  sealed trait notify extends js.Object
   
   @js.native
   sealed trait other extends js.Object
@@ -241,19 +196,10 @@ object sipJsStrings {
   sealed trait setRemoteDescription extends js.Object
   
   @js.native
-  sealed trait sip extends js.Object
-  
-  @js.native
-  sealed trait sipDotjs extends js.Object
-  
-  @js.native
-  sealed trait sips extends js.Object
-  
-  @js.native
   sealed trait stateChanged extends js.Object
   
   @js.native
-  sealed trait subscribe_ extends js.Object
+  sealed trait subscribe extends js.Object
   
   @js.native
   sealed trait terminated extends js.Object
@@ -280,41 +226,11 @@ object sipJsStrings {
   sealed trait warn extends LogLevel
   
   @scala.inline
-  def `0Dot15Dot10`: `0Dot15Dot10` = "0.15.10".asInstanceOf[`0Dot15Dot10`]
-  @scala.inline
-  def ACK: ACK = "ACK".asInstanceOf[ACK]
-  @scala.inline
-  def BYE: BYE = "BYE".asInstanceOf[BYE]
-  @scala.inline
-  def CANCEL: CANCEL = "CANCEL".asInstanceOf[CANCEL]
-  @scala.inline
-  def INFO: INFO = "INFO".asInstanceOf[INFO]
-  @scala.inline
-  def INVITE: INVITE = "INVITE".asInstanceOf[INVITE]
-  @scala.inline
-  def MESSAGE: MESSAGE = "MESSAGE".asInstanceOf[MESSAGE]
-  @scala.inline
-  def NOTIFY: NOTIFY = "NOTIFY".asInstanceOf[NOTIFY]
-  @scala.inline
-  def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
-  @scala.inline
-  def PRACK: PRACK = "PRACK".asInstanceOf[PRACK]
-  @scala.inline
-  def PUBLISH: PUBLISH = "PUBLISH".asInstanceOf[PUBLISH]
-  @scala.inline
-  def REFER: REFER = "REFER".asInstanceOf[REFER]
-  @scala.inline
-  def REGISTER: REGISTER = "REGISTER".asInstanceOf[REGISTER]
-  @scala.inline
-  def SUBSCRIBE: SUBSCRIBE = "SUBSCRIBE".asInstanceOf[SUBSCRIBE]
-  @scala.inline
   def `SessionDescriptionHandler-created`: `SessionDescriptionHandler-created` = "SessionDescriptionHandler-created".asInstanceOf[`SessionDescriptionHandler-created`]
-  @scala.inline
-  def UPDATE: UPDATE = "UPDATE".asInstanceOf[UPDATE]
   @scala.inline
   def accepted: accepted = "accepted".asInstanceOf[accepted]
   @scala.inline
-  def ack_ : ack_ = "ack".asInstanceOf[ack_]
+  def ack: ack = "ack".asInstanceOf[ack]
   @scala.inline
   def addStream: addStream = "addStream".asInstanceOf[addStream]
   @scala.inline
@@ -322,9 +238,9 @@ object sipJsStrings {
   @scala.inline
   def any: any = "any".asInstanceOf[any]
   @scala.inline
-  def bye_ : bye_ = "bye".asInstanceOf[bye_]
+  def bye: bye = "bye".asInstanceOf[bye]
   @scala.inline
-  def cancel_ : cancel_ = "cancel".asInstanceOf[cancel_]
+  def cancel: cancel = "cancel".asInstanceOf[cancel]
   @scala.inline
   def `class`: `class` = "class".asInstanceOf[`class`]
   @scala.inline
@@ -374,17 +290,15 @@ object sipJsStrings {
   @scala.inline
   def iceGatheringComplete: iceGatheringComplete = "iceGatheringComplete".asInstanceOf[iceGatheringComplete]
   @scala.inline
-  def inviteSent: inviteSent = "inviteSent".asInstanceOf[inviteSent]
+  def invite: invite = "invite".asInstanceOf[invite]
   @scala.inline
-  def invite_ : invite_ = "invite".asInstanceOf[invite_]
+  def inviteSent: inviteSent = "inviteSent".asInstanceOf[inviteSent]
   @scala.inline
   def literal: literal = "literal".asInstanceOf[literal]
   @scala.inline
   def log: log = "log".asInstanceOf[log]
   @scala.inline
-  def message_ : message_ = "message".asInstanceOf[message_]
-  @scala.inline
-  def notify_ : notify_ = "notify".asInstanceOf[notify_]
+  def message: message = "message".asInstanceOf[message]
   @scala.inline
   def other: other = "other".asInstanceOf[other]
   @scala.inline
@@ -436,15 +350,9 @@ object sipJsStrings {
   @scala.inline
   def setRemoteDescription: setRemoteDescription = "setRemoteDescription".asInstanceOf[setRemoteDescription]
   @scala.inline
-  def sip: sip = "sip".asInstanceOf[sip]
-  @scala.inline
-  def sipDotjs: sipDotjs = "sip.js".asInstanceOf[sipDotjs]
-  @scala.inline
-  def sips: sips = "sips".asInstanceOf[sips]
-  @scala.inline
   def stateChanged: stateChanged = "stateChanged".asInstanceOf[stateChanged]
   @scala.inline
-  def subscribe_ : subscribe_ = "subscribe".asInstanceOf[subscribe_]
+  def subscribe: subscribe = "subscribe".asInstanceOf[subscribe]
   @scala.inline
   def terminated: terminated = "terminated".asInstanceOf[terminated]
   @scala.inline

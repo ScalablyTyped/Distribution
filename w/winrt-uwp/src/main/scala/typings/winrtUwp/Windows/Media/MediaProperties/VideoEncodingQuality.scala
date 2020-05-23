@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.MediaProperties
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,32 +42,6 @@ object VideoEncodingQuality extends js.Object {
   /** Wvga format. */
   @js.native
   sealed trait wvga extends VideoEncodingQuality
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VideoEncodingQuality with Double] = js.native
-  /* 0 */ @js.native
-  object auto extends TopLevel[auto with Double]
-  
-  /* 1 */ @js.native
-  object hd1080p extends TopLevel[hd1080p with Double]
-  
-  /* 2 */ @js.native
-  object hd720p extends TopLevel[hd720p with Double]
-  
-  /* 4 */ @js.native
-  object ntsc extends TopLevel[ntsc with Double]
-  
-  /* 5 */ @js.native
-  object pal extends TopLevel[pal with Double]
-  
-  /* 7 */ @js.native
-  object qvga extends TopLevel[qvga with Double]
-  
-  /* 6 */ @js.native
-  object vga extends TopLevel[vga with Double]
-  
-  /* 3 */ @js.native
-  object wvga extends TopLevel[wvga with Double]
   
 }
 

@@ -48,18 +48,18 @@ object Subtotals {
     varianceP: js.UndefOr[Boolean] = js.undefined
   ): Subtotals = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(automatic)) __obj.updateDynamic("automatic")(automatic.asInstanceOf[js.Any])
-    if (!js.isUndefined(average)) __obj.updateDynamic("average")(average.asInstanceOf[js.Any])
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (!js.isUndefined(countNumbers)) __obj.updateDynamic("countNumbers")(countNumbers.asInstanceOf[js.Any])
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (!js.isUndefined(product)) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
-    if (!js.isUndefined(standardDeviation)) __obj.updateDynamic("standardDeviation")(standardDeviation.asInstanceOf[js.Any])
-    if (!js.isUndefined(standardDeviationP)) __obj.updateDynamic("standardDeviationP")(standardDeviationP.asInstanceOf[js.Any])
-    if (!js.isUndefined(sum)) __obj.updateDynamic("sum")(sum.asInstanceOf[js.Any])
-    if (!js.isUndefined(variance)) __obj.updateDynamic("variance")(variance.asInstanceOf[js.Any])
-    if (!js.isUndefined(varianceP)) __obj.updateDynamic("varianceP")(varianceP.asInstanceOf[js.Any])
+    if (!js.isUndefined(automatic)) __obj.updateDynamic("automatic")(automatic.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(average)) __obj.updateDynamic("average")(average.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(countNumbers)) __obj.updateDynamic("countNumbers")(countNumbers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(product)) __obj.updateDynamic("product")(product.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(standardDeviation)) __obj.updateDynamic("standardDeviation")(standardDeviation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(standardDeviationP)) __obj.updateDynamic("standardDeviationP")(standardDeviationP.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sum)) __obj.updateDynamic("sum")(sum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(variance)) __obj.updateDynamic("variance")(variance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(varianceP)) __obj.updateDynamic("varianceP")(varianceP.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Subtotals]
   }
 }

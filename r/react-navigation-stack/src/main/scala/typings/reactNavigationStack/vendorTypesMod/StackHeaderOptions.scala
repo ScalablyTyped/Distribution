@@ -4,9 +4,9 @@ import typings.react.mod.ReactNode
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNavigationStack.AnonStyle
-import typings.reactNavigationStack.AnonTintColor
-import typings.reactNavigationStack.AnonTintColorString
+import typings.reactNavigationStack.anon.Style
+import typings.reactNavigationStack.anon.TintColor
+import typings.reactNavigationStack.anon.TintColorString
 import typings.reactNavigationStack.reactNavigationStackStrings.center
 import typings.reactNavigationStack.reactNavigationStackStrings.left
 import scala.scalajs.js
@@ -23,7 +23,7 @@ trait StackHeaderOptions extends js.Object {
     * It receives the `tintColor` in in the options object as an argument. object.
     * Defaults to Image component with a the default back icon image for the platform (a chevron on iOS and an arrow on Android).
     */
-  var headerBackImage: js.UndefOr[js.Function1[/* props */ AnonTintColorString, ReactNode]] = js.undefined
+  var headerBackImage: js.UndefOr[js.Function1[/* props */ TintColorString, ReactNode]] = js.undefined
   /**
     * Title string used by the back button on iOS, or `null` to disable label. Defaults to the previous scene's `headerTitle`.
     */
@@ -42,7 +42,7 @@ trait StackHeaderOptions extends js.Object {
     * This is useful for using backgrounds such as an image or a gradient.
     * You can use this with `headerTransparent` to render a blur view, for example, to create a translucent header.
     */
-  var headerBackground: js.UndefOr[js.Function1[/* props */ AnonStyle, ReactNode]] = js.undefined
+  var headerBackground: js.UndefOr[js.Function1[/* props */ Style, ReactNode]] = js.undefined
   /**
     * Function which returns a React Element to display on the left side of the header.
     * It receives a number of arguments when rendered (`onPress`, `label`, `labelStyle` and more.
@@ -59,7 +59,7 @@ trait StackHeaderOptions extends js.Object {
   /**
     * Function which returns a React Element to display on the right side of the header.
     */
-  var headerRight: js.UndefOr[js.Function1[/* props */ AnonTintColor, ReactNode]] = js.undefined
+  var headerRight: js.UndefOr[js.Function1[/* props */ TintColor, ReactNode]] = js.undefined
   /**
     * Style object for the container of the `headerRight` component, for example to add padding.
     */
@@ -105,7 +105,7 @@ trait StackHeaderOptions extends js.Object {
     * Style object for the title component.
     */
   var headerTitleStyle: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<react-native.react-native.Animated.AnimatedComponent<react-native.react-native.Text>>['style'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<react-native.react-native.Animated.AnimatedComponent<new (): react-native.react-native.Text>>['style'] */ js.Any
   ] = js.undefined
   /**
     * Defaults to `false`. If `true`, the header will not have a background unless you explicitly provide it with `headerBackground`.
@@ -123,48 +123,48 @@ object StackHeaderOptions {
   @scala.inline
   def apply(
     headerBackAllowFontScaling: js.UndefOr[Boolean] = js.undefined,
-    headerBackImage: /* props */ AnonTintColorString => ReactNode = null,
+    headerBackImage: /* props */ TintColorString => ReactNode = null,
     headerBackTitle: String = null,
-    headerBackTitleStyle: StyleProp[TextStyle] = null,
+    headerBackTitleStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
     headerBackTitleVisible: js.UndefOr[Boolean] = js.undefined,
-    headerBackground: /* props */ AnonStyle => ReactNode = null,
+    headerBackground: /* props */ Style => ReactNode = null,
     headerLeft: /* props */ StackHeaderLeftButtonProps => ReactNode = null,
-    headerLeftContainerStyle: StyleProp[ViewStyle] = null,
+    headerLeftContainerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     headerPressColorAndroid: String = null,
-    headerRight: /* props */ AnonTintColor => ReactNode = null,
-    headerRightContainerStyle: StyleProp[ViewStyle] = null,
-    headerStatusBarHeight: Int | Double = null,
-    headerStyle: StyleProp[ViewStyle] = null,
+    headerRight: /* props */ TintColor => ReactNode = null,
+    headerRightContainerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    headerStatusBarHeight: js.UndefOr[Double] = js.undefined,
+    headerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     headerTintColor: String = null,
     headerTitle: String | (js.Function1[/* props */ StackHeaderTitleProps, ReactNode]) = null,
     headerTitleAlign: left | center = null,
     headerTitleAllowFontScaling: js.UndefOr[Boolean] = js.undefined,
-    headerTitleContainerStyle: StyleProp[ViewStyle] = null,
-    headerTitleStyle: /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<react-native.react-native.Animated.AnimatedComponent<react-native.react-native.Text>>['style'] */ js.Any = null,
+    headerTitleContainerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    headerTitleStyle: /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<react-native.react-native.Animated.AnimatedComponent<new (): react-native.react-native.Text>>['style'] */ js.Any = null,
     headerTransparent: js.UndefOr[Boolean] = js.undefined,
     headerTruncatedBackTitle: String = null
   ): StackHeaderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(headerBackAllowFontScaling)) __obj.updateDynamic("headerBackAllowFontScaling")(headerBackAllowFontScaling.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerBackAllowFontScaling)) __obj.updateDynamic("headerBackAllowFontScaling")(headerBackAllowFontScaling.get.asInstanceOf[js.Any])
     if (headerBackImage != null) __obj.updateDynamic("headerBackImage")(js.Any.fromFunction1(headerBackImage))
     if (headerBackTitle != null) __obj.updateDynamic("headerBackTitle")(headerBackTitle.asInstanceOf[js.Any])
-    if (headerBackTitleStyle != null) __obj.updateDynamic("headerBackTitleStyle")(headerBackTitleStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(headerBackTitleVisible)) __obj.updateDynamic("headerBackTitleVisible")(headerBackTitleVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerBackTitleStyle)) __obj.updateDynamic("headerBackTitleStyle")(headerBackTitleStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerBackTitleVisible)) __obj.updateDynamic("headerBackTitleVisible")(headerBackTitleVisible.get.asInstanceOf[js.Any])
     if (headerBackground != null) __obj.updateDynamic("headerBackground")(js.Any.fromFunction1(headerBackground))
     if (headerLeft != null) __obj.updateDynamic("headerLeft")(js.Any.fromFunction1(headerLeft))
-    if (headerLeftContainerStyle != null) __obj.updateDynamic("headerLeftContainerStyle")(headerLeftContainerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerLeftContainerStyle)) __obj.updateDynamic("headerLeftContainerStyle")(headerLeftContainerStyle.asInstanceOf[js.Any])
     if (headerPressColorAndroid != null) __obj.updateDynamic("headerPressColorAndroid")(headerPressColorAndroid.asInstanceOf[js.Any])
     if (headerRight != null) __obj.updateDynamic("headerRight")(js.Any.fromFunction1(headerRight))
-    if (headerRightContainerStyle != null) __obj.updateDynamic("headerRightContainerStyle")(headerRightContainerStyle.asInstanceOf[js.Any])
-    if (headerStatusBarHeight != null) __obj.updateDynamic("headerStatusBarHeight")(headerStatusBarHeight.asInstanceOf[js.Any])
-    if (headerStyle != null) __obj.updateDynamic("headerStyle")(headerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerRightContainerStyle)) __obj.updateDynamic("headerRightContainerStyle")(headerRightContainerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerStatusBarHeight)) __obj.updateDynamic("headerStatusBarHeight")(headerStatusBarHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerStyle)) __obj.updateDynamic("headerStyle")(headerStyle.asInstanceOf[js.Any])
     if (headerTintColor != null) __obj.updateDynamic("headerTintColor")(headerTintColor.asInstanceOf[js.Any])
     if (headerTitle != null) __obj.updateDynamic("headerTitle")(headerTitle.asInstanceOf[js.Any])
     if (headerTitleAlign != null) __obj.updateDynamic("headerTitleAlign")(headerTitleAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(headerTitleAllowFontScaling)) __obj.updateDynamic("headerTitleAllowFontScaling")(headerTitleAllowFontScaling.asInstanceOf[js.Any])
-    if (headerTitleContainerStyle != null) __obj.updateDynamic("headerTitleContainerStyle")(headerTitleContainerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerTitleAllowFontScaling)) __obj.updateDynamic("headerTitleAllowFontScaling")(headerTitleAllowFontScaling.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerTitleContainerStyle)) __obj.updateDynamic("headerTitleContainerStyle")(headerTitleContainerStyle.asInstanceOf[js.Any])
     if (headerTitleStyle != null) __obj.updateDynamic("headerTitleStyle")(headerTitleStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(headerTransparent)) __obj.updateDynamic("headerTransparent")(headerTransparent.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerTransparent)) __obj.updateDynamic("headerTransparent")(headerTransparent.get.asInstanceOf[js.Any])
     if (headerTruncatedBackTitle != null) __obj.updateDynamic("headerTruncatedBackTitle")(headerTruncatedBackTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackHeaderOptions]
   }

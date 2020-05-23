@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Office
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,8 +11,8 @@ sealed trait ProjectViewTypes extends js.Object
   * Specifies the types of views that the {@link Office.Document | Document}.getSelectedViewAsync method can recognize.
   *
   * @remarks
-  * 
-  * The {@link Office.Document | Document}.getSelectedViewAsync method returns the ProjectViewTypes constant value and name that corresponds to the 
+  *
+  * The {@link Office.Document | Document}.getSelectedViewAsync method returns the ProjectViewTypes constant value and name that corresponds to the
   * active view.
   */
 @JSGlobal("Office.ProjectViewTypes")
@@ -114,56 +113,6 @@ object ProjectViewTypes extends js.Object {
     */
   @js.native
   sealed trait Timeline extends ProjectViewTypes
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ProjectViewTypes with Double] = js.native
-  /* 12 */ @js.native
-  object Calendar extends TopLevel[Calendar with Double]
-  
-  /* 0 */ @js.native
-  object Gantt extends TopLevel[Gantt with Double]
-  
-  /* 1 */ @js.native
-  object NetworkDiagram extends TopLevel[NetworkDiagram with Double]
-  
-  /* 5 */ @js.native
-  object ResourceForm extends TopLevel[ResourceForm with Double]
-  
-  /* 7 */ @js.native
-  object ResourceGraph extends TopLevel[ResourceGraph with Double]
-  
-  /* 11 */ @js.native
-  object ResourceNames extends TopLevel[ResourceNames with Double]
-  
-  /* 6 */ @js.native
-  object ResourceSheet extends TopLevel[ResourceSheet with Double]
-  
-  /* 14 */ @js.native
-  object ResourceUsage extends TopLevel[ResourceUsage with Double]
-  
-  /* 9 */ @js.native
-  object TaskDetails extends TopLevel[TaskDetails with Double]
-  
-  /* 2 */ @js.native
-  object TaskDiagram extends TopLevel[TaskDiagram with Double]
-  
-  /* 3 */ @js.native
-  object TaskForm extends TopLevel[TaskForm with Double]
-  
-  /* 10 */ @js.native
-  object TaskNameForm extends TopLevel[TaskNameForm with Double]
-  
-  /* 4 */ @js.native
-  object TaskSheet extends TopLevel[TaskSheet with Double]
-  
-  /* 13 */ @js.native
-  object TaskUsage extends TopLevel[TaskUsage with Double]
-  
-  /* 8 */ @js.native
-  object TeamPlanner extends TopLevel[TeamPlanner with Double]
-  
-  /* 15 */ @js.native
-  object Timeline extends TopLevel[Timeline with Double]
   
 }
 

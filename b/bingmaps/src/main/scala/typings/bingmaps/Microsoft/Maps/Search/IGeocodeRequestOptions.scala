@@ -43,20 +43,20 @@ object IGeocodeRequestOptions {
     callback: (IGeocodeResult, js.Any) => Unit,
     where: String,
     bounds: LocationRect = null,
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     errorCallback: /* geocodeRequestOptions */ IGeocodeRequestOptions => Unit = null,
     includeCountryIso2: js.UndefOr[Boolean] = js.undefined,
     includeNeighborhood: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     userData: js.Any = null
   ): IGeocodeRequestOptions = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction2(callback), where = where.asInstanceOf[js.Any])
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (errorCallback != null) __obj.updateDynamic("errorCallback")(js.Any.fromFunction1(errorCallback))
-    if (!js.isUndefined(includeCountryIso2)) __obj.updateDynamic("includeCountryIso2")(includeCountryIso2.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeNeighborhood)) __obj.updateDynamic("includeNeighborhood")(includeNeighborhood.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeCountryIso2)) __obj.updateDynamic("includeCountryIso2")(includeCountryIso2.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeNeighborhood)) __obj.updateDynamic("includeNeighborhood")(includeNeighborhood.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGeocodeRequestOptions]
   }

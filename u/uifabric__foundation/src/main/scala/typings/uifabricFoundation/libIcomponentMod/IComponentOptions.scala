@@ -39,7 +39,7 @@ trait IComponentOptions[TComponentProps, TTokens, TStyleSet /* <: IStyleSet[TSty
 
 object IComponentOptions {
   @scala.inline
-  def apply[TComponentProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TStatics](
+  def apply[TComponentProps, TTokens, TStyleSet, TViewProps, TStatics](
     displayName: String = null,
     factoryOptions: IFactoryOptions[TComponentProps] = null,
     fields: js.Array[String] = null,

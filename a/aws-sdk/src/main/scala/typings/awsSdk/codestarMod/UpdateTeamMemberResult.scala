@@ -24,12 +24,12 @@ object UpdateTeamMemberResult {
   @scala.inline
   def apply(
     projectRole: Role = null,
-    remoteAccessAllowed: js.UndefOr[Boolean] = js.undefined,
+    remoteAccessAllowed: js.UndefOr[RemoteAccessAllowed] = js.undefined,
     userArn: UserArn = null
   ): UpdateTeamMemberResult = {
     val __obj = js.Dynamic.literal()
     if (projectRole != null) __obj.updateDynamic("projectRole")(projectRole.asInstanceOf[js.Any])
-    if (!js.isUndefined(remoteAccessAllowed)) __obj.updateDynamic("remoteAccessAllowed")(remoteAccessAllowed.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteAccessAllowed)) __obj.updateDynamic("remoteAccessAllowed")(remoteAccessAllowed.get.asInstanceOf[js.Any])
     if (userArn != null) __obj.updateDynamic("userArn")(userArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTeamMemberResult]
   }

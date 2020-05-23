@@ -44,7 +44,7 @@ object ModifyInstancePlacementRequest {
     GroupName: PlacementGroupName = null,
     HostId: DedicatedHostId = null,
     HostResourceGroupArn: String = null,
-    PartitionNumber: Int | scala.Double = null,
+    PartitionNumber: js.UndefOr[Integer] = js.undefined,
     Tenancy: HostTenancy = null
   ): ModifyInstancePlacementRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
@@ -52,7 +52,7 @@ object ModifyInstancePlacementRequest {
     if (GroupName != null) __obj.updateDynamic("GroupName")(GroupName.asInstanceOf[js.Any])
     if (HostId != null) __obj.updateDynamic("HostId")(HostId.asInstanceOf[js.Any])
     if (HostResourceGroupArn != null) __obj.updateDynamic("HostResourceGroupArn")(HostResourceGroupArn.asInstanceOf[js.Any])
-    if (PartitionNumber != null) __obj.updateDynamic("PartitionNumber")(PartitionNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(PartitionNumber)) __obj.updateDynamic("PartitionNumber")(PartitionNumber.get.asInstanceOf[js.Any])
     if (Tenancy != null) __obj.updateDynamic("Tenancy")(Tenancy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyInstancePlacementRequest]
   }

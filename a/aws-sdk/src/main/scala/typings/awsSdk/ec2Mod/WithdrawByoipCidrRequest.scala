@@ -18,9 +18,9 @@ trait WithdrawByoipCidrRequest extends js.Object {
 
 object WithdrawByoipCidrRequest {
   @scala.inline
-  def apply(Cidr: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): WithdrawByoipCidrRequest = {
+  def apply(Cidr: String, DryRun: js.UndefOr[Boolean] = js.undefined): WithdrawByoipCidrRequest = {
     val __obj = js.Dynamic.literal(Cidr = Cidr.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithdrawByoipCidrRequest]
   }
 }

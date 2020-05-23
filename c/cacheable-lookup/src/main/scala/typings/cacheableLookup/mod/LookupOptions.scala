@@ -30,14 +30,14 @@ object LookupOptions {
   def apply(
     all: js.UndefOr[Boolean] = js.undefined,
     family: IPFamily = null,
-    hints: Int | Double = null,
+    hints: js.UndefOr[Double] = js.undefined,
     throwNotFound: js.UndefOr[Boolean] = js.undefined
   ): LookupOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
+    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all.get.asInstanceOf[js.Any])
     if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
-    if (hints != null) __obj.updateDynamic("hints")(hints.asInstanceOf[js.Any])
-    if (!js.isUndefined(throwNotFound)) __obj.updateDynamic("throwNotFound")(throwNotFound.asInstanceOf[js.Any])
+    if (!js.isUndefined(hints)) __obj.updateDynamic("hints")(hints.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(throwNotFound)) __obj.updateDynamic("throwNotFound")(throwNotFound.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LookupOptions]
   }
 }

@@ -50,16 +50,12 @@ object IAutofill {
     focus: () => Unit,
     isValueSelected: Boolean,
     value: String,
-    cursorLocation: Int | Double = null,
+    cursorLocation: Double = null.asInstanceOf[Double],
     inputElement: HTMLInputElement = null,
-    selectionEnd: Int | Double = null,
-    selectionStart: Int | Double = null
+    selectionEnd: Double = null.asInstanceOf[Double],
+    selectionStart: Double = null.asInstanceOf[Double]
   ): IAutofill = {
-    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), focus = js.Any.fromFunction0(focus), isValueSelected = isValueSelected.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (cursorLocation != null) __obj.updateDynamic("cursorLocation")(cursorLocation.asInstanceOf[js.Any])
-    if (inputElement != null) __obj.updateDynamic("inputElement")(inputElement.asInstanceOf[js.Any])
-    if (selectionEnd != null) __obj.updateDynamic("selectionEnd")(selectionEnd.asInstanceOf[js.Any])
-    if (selectionStart != null) __obj.updateDynamic("selectionStart")(selectionStart.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), focus = js.Any.fromFunction0(focus), isValueSelected = isValueSelected.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], cursorLocation = cursorLocation.asInstanceOf[js.Any], inputElement = inputElement.asInstanceOf[js.Any], selectionEnd = selectionEnd.asInstanceOf[js.Any], selectionStart = selectionStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAutofill]
   }
 }

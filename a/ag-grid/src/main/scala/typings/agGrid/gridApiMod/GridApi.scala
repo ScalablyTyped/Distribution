@@ -2,8 +2,8 @@ package typings.agGrid.gridApiMod
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import typings.agGrid.AnonColId
 import typings.agGrid.alignedGridsServiceMod.AlignedGridsService
+import typings.agGrid.anon.ColId
 import typings.agGrid.clientSideRowModelMod.RowDataTransaction
 import typings.agGrid.clientSideRowModelMod.RowNodeTransaction
 import typings.agGrid.colDefMod.ColDef
@@ -172,7 +172,7 @@ class GridApi () extends js.Object {
   def getSelectedNodes(): js.Array[RowNode] = js.native
   def getSelectedNodesById(): NumberDictionary[RowNode] = js.native
   def getSelectedRows(): js.Array[_] = js.native
-  def getSortModel(): js.Array[AnonColId] = js.native
+  def getSortModel(): js.Array[ColId] = js.native
   def getValue(colKey: String, rowNode: RowNode): js.Any = js.native
   def getValue(colKey: Column, rowNode: RowNode): js.Any = js.native
   def getVerticalPixelRange(): js.Any = js.native

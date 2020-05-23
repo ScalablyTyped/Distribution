@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 package object interfacesMod {
   type DndComponentClass[C /* <: typings.react.mod.ComponentType[_] */, P] = (typings.react.mod.ComponentClass[
-    typings.react.mod._Global_.JSX.LibraryManagedAttributes[C, P], 
+    typings.react.mod.global.JSX.LibraryManagedAttributes[C, P], 
     typings.react.mod.ComponentState
-  ]) with (typings.hoistNonReactStatics.mod.NonReactStatics[C, js.Object]) with typings.reactDnd.AnonDecoratedComponent[C]
+  ]) with (typings.hoistNonReactStatics.mod.NonReactStatics[C, js.Object]) with typings.reactDnd.anon.DecoratedComponent[C]
   type DndComponentEnhancer[CollectedProps] = js.Function1[
     /* component */ js.Any, 
     typings.reactDnd.interfacesMod.DndComponentClass[

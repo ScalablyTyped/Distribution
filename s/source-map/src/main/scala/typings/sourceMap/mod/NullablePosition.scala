@@ -12,11 +12,12 @@ trait NullablePosition extends js.Object {
 
 object NullablePosition {
   @scala.inline
-  def apply(column: Int | Double = null, lastColumn: Int | Double = null, line: Int | Double = null): NullablePosition = {
-    val __obj = js.Dynamic.literal()
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (lastColumn != null) __obj.updateDynamic("lastColumn")(lastColumn.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+  def apply(
+    column: Double = null.asInstanceOf[Double],
+    lastColumn: Double = null.asInstanceOf[Double],
+    line: Double = null.asInstanceOf[Double]
+  ): NullablePosition = {
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], lastColumn = lastColumn.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
     __obj.asInstanceOf[NullablePosition]
   }
 }

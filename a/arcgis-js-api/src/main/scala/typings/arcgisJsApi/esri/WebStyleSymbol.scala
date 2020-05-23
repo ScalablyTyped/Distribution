@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`web-style`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -49,8 +48,4 @@ trait WebStyleSymbol
   def fetchSymbol(): js.Promise[PointSymbol3D] = js.native
   def fetchSymbol(options: WebStyleSymbolFetchSymbolOptions): js.Promise[PointSymbol3D] = js.native
 }
-
-@JSGlobal("__esri.WebStyleSymbol")
-@js.native
-object WebStyleSymbol extends TopLevel[WebStyleSymbolConstructor]
 

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLLocation")
 @js.native
-class HTMLLocation protected () extends js.Object {
+trait HTMLLocation extends js.Object {
   @JSName("MSHTML.HTMLLocation_typekey")
   var MSHTMLDotHTMLLocation_typekey: HTMLLocation = js.native
   val constructor: js.Any = js.native

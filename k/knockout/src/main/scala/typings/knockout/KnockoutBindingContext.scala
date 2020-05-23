@@ -1,6 +1,7 @@
 package typings.knockout
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.knockout.anon.ExportDependencies
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -40,7 +41,7 @@ trait KnockoutBindingContext extends js.Object {
     dataItemOrAccessor: js.Any,
     dataItemAlias: String,
     extendCallback: js.Function,
-    options: AnonExportDependencies
+    options: ExportDependencies
   ): js.Any = js.native
   def extend(properties: js.Function0[StringDictionary[_]]): KnockoutBindingContext = js.native
   /**

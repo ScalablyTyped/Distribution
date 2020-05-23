@@ -4,12 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.PerfCounter")
 @js.native
-/**
-  * Creates a new counter
-  */
-class PerfCounter () extends js.Object {
+trait PerfCounter extends js.Object {
   var _average: js.Any = js.native
   var _current: js.Any = js.native
   var _fetchResult: js.Any = js.native
@@ -71,15 +67,5 @@ class PerfCounter () extends js.Object {
     * Gets the accumulated total
     */
   def total: Double = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.PerfCounter")
-@js.native
-object PerfCounter extends js.Object {
-  /**
-    * Gets or sets a global boolean to turn on and off all the counters
-    */
-  var Enabled: Boolean = js.native
 }
 

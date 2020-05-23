@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Calendar
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,41 +45,6 @@ object EventColor extends js.Object {
   
   @js.native
   sealed trait YELLOW extends EventColor
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EventColor with Double] = js.native
-  /* 8 */ @js.native
-  object BLUE extends TopLevel[BLUE with Double]
-  
-  /* 6 */ @js.native
-  object CYAN extends TopLevel[CYAN with Double]
-  
-  /* 7 */ @js.native
-  object GRAY extends TopLevel[GRAY with Double]
-  
-  /* 9 */ @js.native
-  object GREEN extends TopLevel[GREEN with Double]
-  
-  /* 2 */ @js.native
-  object MAUVE extends TopLevel[MAUVE with Double]
-  
-  /* 5 */ @js.native
-  object ORANGE extends TopLevel[ORANGE with Double]
-  
-  /* 0 */ @js.native
-  object PALE_BLUE extends TopLevel[PALE_BLUE with Double]
-  
-  /* 1 */ @js.native
-  object PALE_GREEN extends TopLevel[PALE_GREEN with Double]
-  
-  /* 3 */ @js.native
-  object PALE_RED extends TopLevel[PALE_RED with Double]
-  
-  /* 10 */ @js.native
-  object RED extends TopLevel[RED with Double]
-  
-  /* 4 */ @js.native
-  object YELLOW extends TopLevel[YELLOW with Double]
   
 }
 

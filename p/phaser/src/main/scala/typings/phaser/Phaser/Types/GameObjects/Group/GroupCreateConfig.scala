@@ -183,83 +183,83 @@ object GroupCreateConfig {
     active: js.UndefOr[Boolean] = js.undefined,
     classType: js.Function = null,
     frame: String | (js.Array[String | integer]) | integer = null,
-    frameQuantity: Int | Double = null,
+    frameQuantity: js.UndefOr[integer] = js.undefined,
     gridAlign: `false` | GridAlignConfig = null,
     hitArea: js.Any = null,
     hitAreaCallback: (/* hitArea */ js.Any, /* x */ Double, /* y */ Double, /* gameObject */ GameObject) => Unit = null,
     key: String | js.Array[String] = null,
-    max: Int | Double = null,
-    quantity: Int | Double = null,
+    max: js.UndefOr[integer] = js.undefined,
+    quantity: js.UndefOr[integer] = js.undefined,
     randomFrame: js.UndefOr[Boolean] = js.undefined,
     randomKey: js.UndefOr[Boolean] = js.undefined,
-    repeat: Int | Double = null,
+    repeat: js.UndefOr[integer] = js.undefined,
     setAlpha: js.Object = null,
-    setAlphaDotstep: Int | Double = null,
-    setAlphaDotvalue: Int | Double = null,
+    setAlphaDotstep: js.UndefOr[Double] = js.undefined,
+    setAlphaDotvalue: js.UndefOr[Double] = js.undefined,
     setDepth: js.Object = null,
-    setDepthDotstep: Int | Double = null,
-    setDepthDotvalue: Int | Double = null,
+    setDepthDotstep: js.UndefOr[Double] = js.undefined,
+    setDepthDotvalue: js.UndefOr[Double] = js.undefined,
     setRotation: js.Object = null,
-    setRotationDotstep: Int | Double = null,
-    setRotationDotvalue: Int | Double = null,
+    setRotationDotstep: js.UndefOr[Double] = js.undefined,
+    setRotationDotvalue: js.UndefOr[Double] = js.undefined,
     setScale: js.Object = null,
-    setScaleDotstepX: Int | Double = null,
-    setScaleDotstepY: Int | Double = null,
-    setScaleDotx: Int | Double = null,
-    setScaleDoty: Int | Double = null,
+    setScaleDotstepX: js.UndefOr[Double] = js.undefined,
+    setScaleDotstepY: js.UndefOr[Double] = js.undefined,
+    setScaleDotx: js.UndefOr[Double] = js.undefined,
+    setScaleDoty: js.UndefOr[Double] = js.undefined,
     setScrollFactor: js.Object = null,
-    setScrollFactorDotstepX: Int | Double = null,
-    setScrollFactorDotstepY: Int | Double = null,
-    setScrollFactorDotx: Int | Double = null,
-    setScrollFactorDoty: Int | Double = null,
+    setScrollFactorDotstepX: js.UndefOr[Double] = js.undefined,
+    setScrollFactorDotstepY: js.UndefOr[Double] = js.undefined,
+    setScrollFactorDotx: js.UndefOr[Double] = js.undefined,
+    setScrollFactorDoty: js.UndefOr[Double] = js.undefined,
     setXY: js.Object = null,
-    setXYDotstepX: Int | Double = null,
-    setXYDotstepY: Int | Double = null,
-    setXYDotx: Int | Double = null,
-    setXYDoty: Int | Double = null,
+    setXYDotstepX: js.UndefOr[Double] = js.undefined,
+    setXYDotstepY: js.UndefOr[Double] = js.undefined,
+    setXYDotx: js.UndefOr[Double] = js.undefined,
+    setXYDoty: js.UndefOr[Double] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
     yoyo: js.UndefOr[Boolean] = js.undefined
   ): GroupCreateConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (classType != null) __obj.updateDynamic("classType")(classType.asInstanceOf[js.Any])
     if (frame != null) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
-    if (frameQuantity != null) __obj.updateDynamic("frameQuantity")(frameQuantity.asInstanceOf[js.Any])
+    if (!js.isUndefined(frameQuantity)) __obj.updateDynamic("frameQuantity")(frameQuantity.get.asInstanceOf[js.Any])
     if (gridAlign != null) __obj.updateDynamic("gridAlign")(gridAlign.asInstanceOf[js.Any])
     if (hitArea != null) __obj.updateDynamic("hitArea")(hitArea.asInstanceOf[js.Any])
     if (hitAreaCallback != null) __obj.updateDynamic("hitAreaCallback")(js.Any.fromFunction4(hitAreaCallback))
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
-    if (!js.isUndefined(randomFrame)) __obj.updateDynamic("randomFrame")(randomFrame.asInstanceOf[js.Any])
-    if (!js.isUndefined(randomKey)) __obj.updateDynamic("randomKey")(randomKey.asInstanceOf[js.Any])
-    if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(randomFrame)) __obj.updateDynamic("randomFrame")(randomFrame.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(randomKey)) __obj.updateDynamic("randomKey")(randomKey.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeat)) __obj.updateDynamic("repeat")(repeat.get.asInstanceOf[js.Any])
     if (setAlpha != null) __obj.updateDynamic("setAlpha")(setAlpha.asInstanceOf[js.Any])
-    if (setAlphaDotstep != null) __obj.updateDynamic("setAlpha.step")(setAlphaDotstep.asInstanceOf[js.Any])
-    if (setAlphaDotvalue != null) __obj.updateDynamic("setAlpha.value")(setAlphaDotvalue.asInstanceOf[js.Any])
+    if (!js.isUndefined(setAlphaDotstep)) __obj.updateDynamic("setAlpha.step")(setAlphaDotstep.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setAlphaDotvalue)) __obj.updateDynamic("setAlpha.value")(setAlphaDotvalue.get.asInstanceOf[js.Any])
     if (setDepth != null) __obj.updateDynamic("setDepth")(setDepth.asInstanceOf[js.Any])
-    if (setDepthDotstep != null) __obj.updateDynamic("setDepth.step")(setDepthDotstep.asInstanceOf[js.Any])
-    if (setDepthDotvalue != null) __obj.updateDynamic("setDepth.value")(setDepthDotvalue.asInstanceOf[js.Any])
+    if (!js.isUndefined(setDepthDotstep)) __obj.updateDynamic("setDepth.step")(setDepthDotstep.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setDepthDotvalue)) __obj.updateDynamic("setDepth.value")(setDepthDotvalue.get.asInstanceOf[js.Any])
     if (setRotation != null) __obj.updateDynamic("setRotation")(setRotation.asInstanceOf[js.Any])
-    if (setRotationDotstep != null) __obj.updateDynamic("setRotation.step")(setRotationDotstep.asInstanceOf[js.Any])
-    if (setRotationDotvalue != null) __obj.updateDynamic("setRotation.value")(setRotationDotvalue.asInstanceOf[js.Any])
+    if (!js.isUndefined(setRotationDotstep)) __obj.updateDynamic("setRotation.step")(setRotationDotstep.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setRotationDotvalue)) __obj.updateDynamic("setRotation.value")(setRotationDotvalue.get.asInstanceOf[js.Any])
     if (setScale != null) __obj.updateDynamic("setScale")(setScale.asInstanceOf[js.Any])
-    if (setScaleDotstepX != null) __obj.updateDynamic("setScale.stepX")(setScaleDotstepX.asInstanceOf[js.Any])
-    if (setScaleDotstepY != null) __obj.updateDynamic("setScale.stepY")(setScaleDotstepY.asInstanceOf[js.Any])
-    if (setScaleDotx != null) __obj.updateDynamic("setScale.x")(setScaleDotx.asInstanceOf[js.Any])
-    if (setScaleDoty != null) __obj.updateDynamic("setScale.y")(setScaleDoty.asInstanceOf[js.Any])
+    if (!js.isUndefined(setScaleDotstepX)) __obj.updateDynamic("setScale.stepX")(setScaleDotstepX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setScaleDotstepY)) __obj.updateDynamic("setScale.stepY")(setScaleDotstepY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setScaleDotx)) __obj.updateDynamic("setScale.x")(setScaleDotx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setScaleDoty)) __obj.updateDynamic("setScale.y")(setScaleDoty.get.asInstanceOf[js.Any])
     if (setScrollFactor != null) __obj.updateDynamic("setScrollFactor")(setScrollFactor.asInstanceOf[js.Any])
-    if (setScrollFactorDotstepX != null) __obj.updateDynamic("setScrollFactor.stepX")(setScrollFactorDotstepX.asInstanceOf[js.Any])
-    if (setScrollFactorDotstepY != null) __obj.updateDynamic("setScrollFactor.stepY")(setScrollFactorDotstepY.asInstanceOf[js.Any])
-    if (setScrollFactorDotx != null) __obj.updateDynamic("setScrollFactor.x")(setScrollFactorDotx.asInstanceOf[js.Any])
-    if (setScrollFactorDoty != null) __obj.updateDynamic("setScrollFactor.y")(setScrollFactorDoty.asInstanceOf[js.Any])
+    if (!js.isUndefined(setScrollFactorDotstepX)) __obj.updateDynamic("setScrollFactor.stepX")(setScrollFactorDotstepX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setScrollFactorDotstepY)) __obj.updateDynamic("setScrollFactor.stepY")(setScrollFactorDotstepY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setScrollFactorDotx)) __obj.updateDynamic("setScrollFactor.x")(setScrollFactorDotx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setScrollFactorDoty)) __obj.updateDynamic("setScrollFactor.y")(setScrollFactorDoty.get.asInstanceOf[js.Any])
     if (setXY != null) __obj.updateDynamic("setXY")(setXY.asInstanceOf[js.Any])
-    if (setXYDotstepX != null) __obj.updateDynamic("setXY.stepX")(setXYDotstepX.asInstanceOf[js.Any])
-    if (setXYDotstepY != null) __obj.updateDynamic("setXY.stepY")(setXYDotstepY.asInstanceOf[js.Any])
-    if (setXYDotx != null) __obj.updateDynamic("setXY.x")(setXYDotx.asInstanceOf[js.Any])
-    if (setXYDoty != null) __obj.updateDynamic("setXY.y")(setXYDoty.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (!js.isUndefined(yoyo)) __obj.updateDynamic("yoyo")(yoyo.asInstanceOf[js.Any])
+    if (!js.isUndefined(setXYDotstepX)) __obj.updateDynamic("setXY.stepX")(setXYDotstepX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setXYDotstepY)) __obj.updateDynamic("setXY.stepY")(setXYDotstepY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setXYDotx)) __obj.updateDynamic("setXY.x")(setXYDotx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setXYDoty)) __obj.updateDynamic("setXY.y")(setXYDoty.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yoyo)) __obj.updateDynamic("yoyo")(yoyo.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupCreateConfig]
   }
 }

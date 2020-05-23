@@ -14,7 +14,7 @@ trait PlusStreamStreamInfo extends js.Object {
   /**
     * 流应用是否下载完成
     * true表示流应用下载完成，false表示流应用未下载完成。
-    * 	注意，流应用未下载完成以让可以正常启动运行，启动后会自动下载。
+    *     注意，流应用未下载完成以让可以正常启动运行，启动后会自动下载。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
@@ -39,7 +39,7 @@ object PlusStreamStreamInfo {
   @scala.inline
   def apply(complete: js.UndefOr[Boolean] = js.undefined, icon: String = null, id: String = null): PlusStreamStreamInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(complete)) __obj.updateDynamic("complete")(complete.asInstanceOf[js.Any])
+    if (!js.isUndefined(complete)) __obj.updateDynamic("complete")(complete.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusStreamStreamInfo]

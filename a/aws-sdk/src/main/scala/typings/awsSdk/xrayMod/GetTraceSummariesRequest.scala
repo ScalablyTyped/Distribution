@@ -43,14 +43,14 @@ object GetTraceSummariesRequest {
     StartTime: Timestamp,
     FilterExpression: FilterExpression = null,
     NextToken: String = null,
-    Sampling: js.UndefOr[scala.Boolean] = js.undefined,
+    Sampling: js.UndefOr[NullableBoolean] = js.undefined,
     SamplingStrategy: SamplingStrategy = null,
     TimeRangeType: TimeRangeType = null
   ): GetTraceSummariesRequest = {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
     if (FilterExpression != null) __obj.updateDynamic("FilterExpression")(FilterExpression.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(Sampling)) __obj.updateDynamic("Sampling")(Sampling.asInstanceOf[js.Any])
+    if (!js.isUndefined(Sampling)) __obj.updateDynamic("Sampling")(Sampling.get.asInstanceOf[js.Any])
     if (SamplingStrategy != null) __obj.updateDynamic("SamplingStrategy")(SamplingStrategy.asInstanceOf[js.Any])
     if (TimeRangeType != null) __obj.updateDynamic("TimeRangeType")(TimeRangeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTraceSummariesRequest]

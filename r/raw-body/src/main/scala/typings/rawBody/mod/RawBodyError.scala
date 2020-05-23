@@ -43,19 +43,19 @@ object RawBodyError {
     statusCode: Double,
     `type`: String,
     encoding: String = null,
-    expected: Int | Double = null,
-    length: Int | Double = null,
-    limit: Int | Double = null,
-    received: Int | Double = null,
+    expected: js.UndefOr[Double] = js.undefined,
+    length: js.UndefOr[Double] = js.undefined,
+    limit: js.UndefOr[Double] = js.undefined,
+    received: js.UndefOr[Double] = js.undefined,
     stack: String = null
   ): RawBodyError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (expected != null) __obj.updateDynamic("expected")(expected.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (received != null) __obj.updateDynamic("received")(received.asInstanceOf[js.Any])
+    if (!js.isUndefined(expected)) __obj.updateDynamic("expected")(expected.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(received)) __obj.updateDynamic("received")(received.get.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[RawBodyError]
   }

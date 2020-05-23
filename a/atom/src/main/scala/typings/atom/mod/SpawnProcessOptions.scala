@@ -31,19 +31,19 @@ object SpawnProcessOptions {
     cwd: String = null,
     detached: js.UndefOr[Boolean] = js.undefined,
     env: StringDictionary[String] = null,
-    gid: Int | Double = null,
+    gid: js.UndefOr[Double] = js.undefined,
     shell: Boolean | String = null,
     stdio: String | (js.Array[String | Double]) = null,
-    uid: Int | Double = null
+    uid: js.UndefOr[Double] = js.undefined
   ): SpawnProcessOptions = {
     val __obj = js.Dynamic.literal()
     if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
-    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached.asInstanceOf[js.Any])
+    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached.get.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
+    if (!js.isUndefined(gid)) __obj.updateDynamic("gid")(gid.get.asInstanceOf[js.Any])
     if (shell != null) __obj.updateDynamic("shell")(shell.asInstanceOf[js.Any])
     if (stdio != null) __obj.updateDynamic("stdio")(stdio.asInstanceOf[js.Any])
-    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
+    if (!js.isUndefined(uid)) __obj.updateDynamic("uid")(uid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpawnProcessOptions]
   }
 }

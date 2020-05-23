@@ -18,9 +18,9 @@ trait GetPermissionRequest extends js.Object {
 
 object GetPermissionRequest {
   @scala.inline
-  def apply(permissionArn: String, permissionVersion: Int | Double = null): GetPermissionRequest = {
+  def apply(permissionArn: String, permissionVersion: js.UndefOr[Integer] = js.undefined): GetPermissionRequest = {
     val __obj = js.Dynamic.literal(permissionArn = permissionArn.asInstanceOf[js.Any])
-    if (permissionVersion != null) __obj.updateDynamic("permissionVersion")(permissionVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(permissionVersion)) __obj.updateDynamic("permissionVersion")(permissionVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPermissionRequest]
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait TouchOptions extends js.Object {
   /**
-    * 	Ensures this operation is persisted to this many nodes.
+    *     Ensures this operation is persisted to this many nodes.
     */
   var persist_to: js.UndefOr[Double] = js.undefined
   /**
@@ -17,10 +17,10 @@ trait TouchOptions extends js.Object {
 
 object TouchOptions {
   @scala.inline
-  def apply(persist_to: Int | Double = null, replicate_to: Int | Double = null): TouchOptions = {
+  def apply(persist_to: js.UndefOr[Double] = js.undefined, replicate_to: js.UndefOr[Double] = js.undefined): TouchOptions = {
     val __obj = js.Dynamic.literal()
-    if (persist_to != null) __obj.updateDynamic("persist_to")(persist_to.asInstanceOf[js.Any])
-    if (replicate_to != null) __obj.updateDynamic("replicate_to")(replicate_to.asInstanceOf[js.Any])
+    if (!js.isUndefined(persist_to)) __obj.updateDynamic("persist_to")(persist_to.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(replicate_to)) __obj.updateDynamic("replicate_to")(replicate_to.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchOptions]
   }
 }

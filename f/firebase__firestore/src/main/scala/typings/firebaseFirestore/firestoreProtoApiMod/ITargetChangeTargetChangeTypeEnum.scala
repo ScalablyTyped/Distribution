@@ -24,7 +24,6 @@ object ITargetChangeTargetChangeTypeEnum {
     values: () => js.Array[TargetChangeTargetChangeType]
   ): ITargetChangeTargetChangeTypeEnum = {
     val __obj = js.Dynamic.literal(ADD = ADD.asInstanceOf[js.Any], CURRENT = CURRENT.asInstanceOf[js.Any], NO_CHANGE = NO_CHANGE.asInstanceOf[js.Any], REMOVE = REMOVE.asInstanceOf[js.Any], RESET = RESET.asInstanceOf[js.Any], values = js.Any.fromFunction0(values))
-  
     __obj.asInstanceOf[ITargetChangeTargetChangeTypeEnum]
   }
 }

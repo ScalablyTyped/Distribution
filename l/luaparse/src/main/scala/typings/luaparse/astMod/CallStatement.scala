@@ -1,6 +1,6 @@
 package typings.luaparse.astMod
 
-import typings.luaparse.AnonEnd
+import typings.luaparse.anon.End
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ object CallStatement {
   def apply(
     expression: CallExpression | StringCallExpression | TableCallExpression,
     `type`: typings.luaparse.luaparseStrings.CallStatement,
-    loc: AnonEnd = null
+    loc: End = null
   ): CallStatement = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

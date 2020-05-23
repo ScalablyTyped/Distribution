@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetFilterRequest extends js.Object {
   /**
-    * The unique ID of the detector the filter is associated with.
+    * The unique ID of the detector that the filter is associated with.
     */
   var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
   /**

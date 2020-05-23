@@ -1,20 +1,20 @@
 package typings.atom.mod
 
-import typings.atom.Anon27
-import typings.atom.Anon28
-import typings.atom.AnonAllowPrevious
-import typings.atom.AnonAutoscroll
-import typings.atom.AnonCancel
-import typings.atom.AnonCenter
-import typings.atom.AnonClipDirectionInvalidate
-import typings.atom.AnonMaintainHistory
-import typings.atom.AnonPath
-import typings.atom.AnonPersistent
-import typings.atom.AnonPreserveFolds
-import typings.atom.AnonPreserveLeadingWhitespace
-import typings.atom.AnonReversedBoolean
-import typings.atom.AnonScopes
-import typings.atom.AnonText
+import typings.atom.anon.AllowPrevious
+import typings.atom.anon.Autoscroll
+import typings.atom.anon.Cancel
+import typings.atom.anon.Center
+import typings.atom.anon.ClipDirectionInvalidate
+import typings.atom.anon.MaintainHistory
+import typings.atom.anon.Path
+import typings.atom.anon.Persistent
+import typings.atom.anon.PreserveFolds
+import typings.atom.anon.PreserveLeadingWhitespace
+import typings.atom.anon.ReversedBoolean
+import typings.atom.anon.Scopes
+import typings.atom.anon.Text
+import typings.atom.anon.`27`
+import typings.atom.anon.`28`
 import typings.atom.atomBooleans.`false`
 import typings.std.RegExp
 import scala.scalajs.js
@@ -34,7 +34,7 @@ class TextEditor () extends js.Object {
   def abortTransaction(): Unit = js.native
   /** Add a cursor at the given position in buffer coordinates. */
   def addCursorAtBufferPosition(bufferPosition: PointCompatible): Cursor = js.native
-  def addCursorAtBufferPosition(bufferPosition: PointCompatible, options: AnonAutoscroll): Cursor = js.native
+  def addCursorAtBufferPosition(bufferPosition: PointCompatible, options: Autoscroll): Cursor = js.native
   /** Add a cursor at the position in screen coordinates. */
   def addCursorAtScreenPosition(screenPosition: PointCompatible): Cursor = js.native
   // Gutters
@@ -42,13 +42,13 @@ class TextEditor () extends js.Object {
   def addGutter(options: GutterOptions): Gutter = js.native
   /** Create a marker layer to group related markers. */
   def addMarkerLayer(): DisplayMarkerLayer = js.native
-  def addMarkerLayer(options: AnonPersistent): DisplayMarkerLayer = js.native
+  def addMarkerLayer(options: Persistent): DisplayMarkerLayer = js.native
   /** Add a selection for the given range in buffer coordinates. */
   def addSelectionForBufferRange(bufferRange: RangeCompatible): Selection = js.native
-  def addSelectionForBufferRange(bufferRange: RangeCompatible, options: AnonPreserveFolds): Selection = js.native
+  def addSelectionForBufferRange(bufferRange: RangeCompatible, options: PreserveFolds): Selection = js.native
   /** Add a selection for the given range in screen coordinates. */
   def addSelectionForScreenRange(screenRange: RangeCompatible): Selection = js.native
-  def addSelectionForScreenRange(screenRange: RangeCompatible, options: AnonPreserveFolds): Selection = js.native
+  def addSelectionForScreenRange(screenRange: RangeCompatible, options: PreserveFolds): Selection = js.native
   /** Indent rows intersecting selections based on the grammar's suggested indent level. */
   def autoIndentSelectedRows(): Unit = js.native
   def autoIndentSelectedRows(options: ReadonlyEditOptions): Unit = js.native
@@ -65,7 +65,7 @@ class TextEditor () extends js.Object {
   def backwardsScanInBufferRange(regex: RegExp, range: RangeCompatible, iterator: js.Function1[/* params */ BufferScanResult, Unit]): Unit = js.native
   /** Convert a position in screen-coordinates to buffer-coordinates. */
   def bufferPositionForScreenPosition(bufferPosition: PointCompatible): Point = js.native
-  def bufferPositionForScreenPosition(bufferPosition: PointCompatible, options: Anon27): Point = js.native
+  def bufferPositionForScreenPosition(bufferPosition: PointCompatible, options: `27`): Point = js.native
   /**
     *  Get the range in buffer coordinates of all tokens surrounding the cursor
     *  that match the given scope selector.
@@ -84,13 +84,13 @@ class TextEditor () extends js.Object {
   def clipBufferRange(range: RangeCompatible): Range = js.native
   /** Clip the given Point to a valid position on screen. */
   def clipScreenPosition(screenPosition: PointCompatible): Point = js.native
-  def clipScreenPosition(screenPosition: PointCompatible, options: Anon27): Point = js.native
+  def clipScreenPosition(screenPosition: PointCompatible, options: `27`): Point = js.native
   /**
     *  Clip the start and end of the given range to valid positions on screen.
     *  See ::clipScreenPosition for more information.
     */
   def clipScreenRange(range: RangeCompatible): Range = js.native
-  def clipScreenRange(range: RangeCompatible, options: Anon27): Range = js.native
+  def clipScreenRange(range: RangeCompatible, options: `27`): Range = js.native
   // Clipboard Operations
   /** For each selection, copy the selected text. */
   def copySelectedText(): Unit = js.native
@@ -365,7 +365,7 @@ class TextEditor () extends js.Object {
   def getTitle(): String = js.native
   /** Returns the word surrounding the most recently added cursor. */
   def getWordUnderCursor(): String = js.native
-  def getWordUnderCursor(options: AnonAllowPrevious): String = js.native
+  def getWordUnderCursor(options: AllowPrevious): String = js.native
   /**
     *  Group all changes since the given checkpoint into a single transaction for purposes
     *  of undo/redo.
@@ -456,7 +456,7 @@ class TextEditor () extends js.Object {
     *  To group multiple markers together in their own private layer, see ::addMarkerLayer.
     */
   def markBufferPosition(bufferPosition: PointCompatible): DisplayMarker = js.native
-  def markBufferPosition(bufferPosition: PointCompatible, options: Anon28): DisplayMarker = js.native
+  def markBufferPosition(bufferPosition: PointCompatible, options: `28`): DisplayMarker = js.native
   // Markers
   /**
     *  Create a marker on the default marker layer with the given range in buffer coordinates.
@@ -465,13 +465,13 @@ class TextEditor () extends js.Object {
     *  in the buffer changes.
     */
   def markBufferRange(range: RangeCompatible): DisplayMarker = js.native
-  def markBufferRange(range: RangeCompatible, properties: AnonMaintainHistory): DisplayMarker = js.native
+  def markBufferRange(range: RangeCompatible, properties: MaintainHistory): DisplayMarker = js.native
   /**
     *  Create a marker on the default marker layer with the given screen position and no tail.
     *  To group multiple markers together in their own private layer, see ::addMarkerLayer.
     */
   def markScreenPosition(screenPosition: PointCompatible): DisplayMarker = js.native
-  def markScreenPosition(screenPosition: PointCompatible, options: AnonClipDirectionInvalidate): DisplayMarker = js.native
+  def markScreenPosition(screenPosition: PointCompatible, options: ClipDirectionInvalidate): DisplayMarker = js.native
   /**
     *  Create a marker on the default marker layer with the given range in screen coordinates.
     *  This marker will maintain its logical location as the buffer is changed, so if you mark
@@ -479,7 +479,7 @@ class TextEditor () extends js.Object {
     *  the buffer changes.
     */
   def markScreenRange(range: RangeCompatible): DisplayMarker = js.native
-  def markScreenRange(range: RangeCompatible, properties: AnonMaintainHistory): DisplayMarker = js.native
+  def markScreenRange(range: RangeCompatible, properties: MaintainHistory): DisplayMarker = js.native
   /** Move every cursor down one row in screen coordinates. */
   def moveDown(): Unit = js.native
   def moveDown(lineCount: Double): Unit = js.native
@@ -607,7 +607,7 @@ class TextEditor () extends js.Object {
   /** Invoke the given callback when the editor is destroyed. */
   def onDidDestroy(callback: js.Function0[Unit]): Disposable = js.native
   /** Calls your callback after text has been inserted. */
-  def onDidInsertText(callback: js.Function1[/* event */ AnonText, Unit]): Disposable = js.native
+  def onDidInsertText(callback: js.Function1[/* event */ Text, Unit]): Disposable = js.native
   /** Calls your callback when a Cursor is removed from the editor. */
   def onDidRemoveCursor(callback: js.Function1[/* cursor */ Cursor, Unit]): Disposable = js.native
   /** Calls your callback when a Decoration is removed from the editor. */
@@ -617,7 +617,7 @@ class TextEditor () extends js.Object {
   /** Calls your callback when a Selection is removed from the editor. */
   def onDidRemoveSelection(callback: js.Function1[/* selection */ Selection, Unit]): Disposable = js.native
   /** Invoke the given callback after the buffer is saved to disk. */
-  def onDidSave(callback: js.Function1[/* event */ AnonPath, Unit]): Disposable = js.native
+  def onDidSave(callback: js.Function1[/* event */ Path, Unit]): Disposable = js.native
   /**
     *  Invoke callback when the buffer's contents change. It is emit
     *  asynchronously 300ms after the last buffer change. This is a good place
@@ -625,7 +625,7 @@ class TextEditor () extends js.Object {
     */
   def onDidStopChanging(callback: js.Function1[/* event */ BufferStoppedChangingEvent, Unit]): Disposable = js.native
   /** Calls your callback before text has been inserted. */
-  def onWillInsertText(callback: js.Function1[/* event */ AnonCancel, Unit]): Disposable = js.native
+  def onWillInsertText(callback: js.Function1[/* event */ Cancel, Unit]): Disposable = js.native
   /** Outdent rows intersecting selections by one level. */
   def outdentSelectedRows(): Unit = js.native
   def outdentSelectedRows(options: ReadonlyEditOptions): Unit = js.native
@@ -687,19 +687,19 @@ class TextEditor () extends js.Object {
   // TextEditor Coordinates
   /** Convert a position in buffer-coordinates to screen-coordinates. */
   def screenPositionForBufferPosition(bufferPosition: PointCompatible): Point = js.native
-  def screenPositionForBufferPosition(bufferPosition: PointCompatible, options: Anon27): Point = js.native
+  def screenPositionForBufferPosition(bufferPosition: PointCompatible, options: `27`): Point = js.native
   /** Convert a range in buffer-coordinates to screen-coordinates. */
   def screenRangeForBufferRange(bufferRange: RangeCompatible): Range = js.native
   /** Scrolls the editor to the given buffer position. */
   def scrollToBufferPosition(bufferPosition: PointCompatible): Unit = js.native
-  def scrollToBufferPosition(bufferPosition: PointCompatible, options: AnonCenter): Unit = js.native
+  def scrollToBufferPosition(bufferPosition: PointCompatible, options: Center): Unit = js.native
   // Scrolling the TextEditor
   /** Scroll the editor to reveal the most recently added cursor if it is off-screen. */
   def scrollToCursorPosition(): Unit = js.native
-  def scrollToCursorPosition(options: AnonCenter): Unit = js.native
+  def scrollToCursorPosition(options: Center): Unit = js.native
   /** Scrolls the editor to the given screen position. */
   def scrollToScreenPosition(screenPosition: PointCompatible): Unit = js.native
-  def scrollToScreenPosition(screenPosition: PointCompatible, options: AnonCenter): Unit = js.native
+  def scrollToScreenPosition(screenPosition: PointCompatible, options: Center): Unit = js.native
   /**
     *  Select all text in the buffer.
     *  This method merges multiple selections into a single selection.
@@ -849,13 +849,13 @@ class TextEditor () extends js.Object {
     *  If there are multiple cursors, they will be consolidated to a single cursor.
     */
   def setCursorBufferPosition(position: PointCompatible): Unit = js.native
-  def setCursorBufferPosition(position: PointCompatible, options: AnonAutoscroll): Unit = js.native
+  def setCursorBufferPosition(position: PointCompatible, options: Autoscroll): Unit = js.native
   /**
     *  Move the cursor to the given position in screen coordinates.
     *  If there are multiple cursors, they will be consolidated to a single cursor.
     */
   def setCursorScreenPosition(position: PointCompatible): Unit = js.native
-  def setCursorScreenPosition(position: PointCompatible, options: AnonAutoscroll): Unit = js.native
+  def setCursorScreenPosition(position: PointCompatible, options: Autoscroll): Unit = js.native
   /** Set the character set encoding to use in this editor's text buffer. */
   def setEncoding(encoding: String): Unit = js.native
   /**
@@ -866,7 +866,7 @@ class TextEditor () extends js.Object {
     *  indentation level of 2.
     */
   def setIndentationForBufferRow(bufferRow: Double, newLevel: Double): Unit = js.native
-  def setIndentationForBufferRow(bufferRow: Double, newLevel: Double, options: AnonPreserveLeadingWhitespace): Unit = js.native
+  def setIndentationForBufferRow(bufferRow: Double, newLevel: Double, options: PreserveLeadingWhitespace): Unit = js.native
   /**
     *  Set the greyed out placeholder of a mini editor. Placeholder text will be
     *  displayed when the editor has no content.
@@ -879,25 +879,25 @@ class TextEditor () extends js.Object {
     *  they are reduced to a single selection with the given range.
     */
   def setSelectedBufferRange(bufferRange: RangeCompatible): Unit = js.native
-  def setSelectedBufferRange(bufferRange: RangeCompatible, options: AnonPreserveFolds): Unit = js.native
+  def setSelectedBufferRange(bufferRange: RangeCompatible, options: PreserveFolds): Unit = js.native
   /**
     *  Set the selected ranges in buffer coordinates. If there are multiple selections,
     *  they are replaced by new selections with the given ranges.
     */
   def setSelectedBufferRanges(bufferRanges: js.Array[RangeCompatible]): Unit = js.native
-  def setSelectedBufferRanges(bufferRanges: js.Array[RangeCompatible], options: AnonPreserveFolds): Unit = js.native
+  def setSelectedBufferRanges(bufferRanges: js.Array[RangeCompatible], options: PreserveFolds): Unit = js.native
   /**
     *  Set the selected range in screen coordinates. If there are multiple selections,
     *  they are reduced to a single selection with the given range.
     */
   def setSelectedScreenRange(screenRange: RangeCompatible): Unit = js.native
-  def setSelectedScreenRange(screenRange: RangeCompatible, options: AnonReversedBoolean): Unit = js.native
+  def setSelectedScreenRange(screenRange: RangeCompatible, options: ReversedBoolean): Unit = js.native
   /**
     *  Set the selected ranges in screen coordinates. If there are multiple selections,
     *  they are replaced by new selections with the given ranges.
     */
   def setSelectedScreenRanges(screenRanges: js.Array[RangeCompatible]): Unit = js.native
-  def setSelectedScreenRanges(screenRanges: js.Array[RangeCompatible], options: AnonReversedBoolean): Unit = js.native
+  def setSelectedScreenRanges(screenRanges: js.Array[RangeCompatible], options: ReversedBoolean): Unit = js.native
   /** Enable or disable soft tabs for this editor. */
   def setSoftTabs(softTabs: Boolean): Unit = js.native
   /** Enable or disable soft wrapping for this editor. */
@@ -932,7 +932,7 @@ class TextEditor () extends js.Object {
   /** Toggle soft wrapping for this editor. */
   def toggleSoftWrapped(): Boolean = js.native
   /** Undocumented: Get syntax token at buffer position */
-  def tokenForBufferPosition(pos: PointCompatible): AnonScopes = js.native
+  def tokenForBufferPosition(pos: PointCompatible): Scopes = js.native
   /**
     *  Batch multiple operations as a single undo/redo step.
     *  Any group of operations that are logically grouped from the perspective of undoing

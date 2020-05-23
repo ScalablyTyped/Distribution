@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,8 +43,11 @@ trait histogram extends js.Object {
   def histogram(params: histogramHistogramParams): js.Promise[HistogramResult]
 }
 
-@JSGlobal("__esri.histogram")
-@js.native
-object histogram
-  extends TopLevel[js.Function1[/* params */ histogramHistogramParams, js.Promise[HistogramResult]]]
+object histogram {
+  @scala.inline
+  def apply(histogram: histogramHistogramParams => js.Promise[HistogramResult]): histogram = {
+    val __obj = js.Dynamic.literal(histogram = js.Any.fromFunction1(histogram))
+    __obj.asInstanceOf[histogram]
+  }
+}
 

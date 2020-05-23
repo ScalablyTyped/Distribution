@@ -21,11 +21,11 @@ object NormalizationDefer {
     label: String,
     selections: js.Array[NormalizationSelection],
     `if`: String = null,
-    metadata: StringDictionary[js.Any] = null
+    metadata: js.UndefOr[Null | StringDictionary[js.Any]] = js.undefined
   ): NormalizationDefer = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
-    if (`if` != null) __obj.updateDynamic("if")(`if`.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    __obj.updateDynamic("if")(`if`.asInstanceOf[js.Any])
+    if (!js.isUndefined(metadata)) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationDefer]
   }
 }

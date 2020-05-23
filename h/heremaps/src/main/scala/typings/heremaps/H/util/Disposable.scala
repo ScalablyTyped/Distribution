@@ -7,12 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Object which can be safely disposed.
   */
-@JSGlobal("H.util.Disposable")
 @js.native
-/**
-  * Constructor
-  */
-class Disposable () extends js.Object {
+trait Disposable extends js.Object {
   /**
     * Method adds a callback which will be triggered when the object is disposed
     * @param callback {Function}

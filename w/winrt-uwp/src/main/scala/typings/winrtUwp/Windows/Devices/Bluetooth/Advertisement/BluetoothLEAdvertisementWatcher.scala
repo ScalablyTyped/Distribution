@@ -11,15 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** An object to receive Bluetooth Low Energy (LE) advertisements. */
-@JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementWatcher")
 @js.native
-/** Creates a new BluetoothLEAdvertisementWatcher object. */
-class BluetoothLEAdvertisementWatcher () extends js.Object {
-  /**
-    * Creates a new BluetoothLEAdvertisementWatcher object with an advertisement filter to initialize the watcher.
-    * @param advertisementFilter The advertisement filter to initialize the watcher.
-    */
-  def this(advertisementFilter: BluetoothLEAdvertisementFilter) = this()
+trait BluetoothLEAdvertisementWatcher extends js.Object {
   /** Gets or sets a BluetoothLEAdvertisementFilter object used for configuration of Bluetooth LE advertisement filtering that uses payload section-based filtering. */
   var advertisementFilter: BluetoothLEAdvertisementFilter = js.native
   /** Gets the maximum out of range timeout. */

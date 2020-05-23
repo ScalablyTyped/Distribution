@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,8 +26,4 @@ trait Fullscreen extends Widget_ {
     */
   var viewModel: FullscreenViewModel = js.native
 }
-
-@JSGlobal("__esri.Fullscreen")
-@js.native
-object Fullscreen extends TopLevel[FullscreenConstructor]
 

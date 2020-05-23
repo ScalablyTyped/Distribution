@@ -6,9 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Config
-  extends // allow to store custom values e.g. for swagger-node-runner
-// see https://github.com/theganyo/swagger-node-runner/blob/v0.7.1/index.js#L304
-/* name */ StringDictionary[js.Any] {
+  extends /* prop */ StringDictionary[js.Any] {
   var connectMiddlewareDirs: js.UndefOr[js.Array[String]] = js.undefined
   var userFittingsDirs: js.UndefOr[js.Array[String]] = js.undefined
   var userViewsDirs: js.UndefOr[js.Array[String]] = js.undefined
@@ -17,9 +15,7 @@ trait Config
 object Config {
   @scala.inline
   def apply(
-    StringDictionary: // allow to store custom values e.g. for swagger-node-runner
-  // see https://github.com/theganyo/swagger-node-runner/blob/v0.7.1/index.js#L304
-  /* name */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     connectMiddlewareDirs: js.Array[String] = null,
     userFittingsDirs: js.Array[String] = null,
     userViewsDirs: js.Array[String] = null

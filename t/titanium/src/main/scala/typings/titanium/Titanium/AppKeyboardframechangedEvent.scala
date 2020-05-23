@@ -6,16 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * Fired when the soft keyboard is presented, on and off the screen.
-	 */
+  * Fired when the soft keyboard is presented, on and off the screen.
+  */
 trait AppKeyboardframechangedEvent extends AppBaseEvent {
   /**
-  		 * The duration of the keyboard animation. This parameter is only available on Titanium SDK 4.0.0 and later.
-  		 */
+    * The duration of the keyboard animation. This parameter is only available on Titanium SDK 4.0.0 and later.
+    */
   var animationDuration: Double
   /**
-  		 * A dictionary with keys x, y, width and height representing the frame of keyboard on screen.
-  		 */
+    * A dictionary with keys x, y, width and height representing the frame of keyboard on screen.
+    */
   var keyboardFrame: Dimension
 }
 

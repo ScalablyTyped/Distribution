@@ -39,9 +39,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides synchronous access to the properties exposed off StorageFolder and lets an app perform asynchronous management operations such as copy, delete, move, and rename. */
-@JSGlobal("Windows.Storage.BulkAccess.FolderInformation")
 @js.native
-abstract class FolderInformation () extends js.Object {
+trait FolderInformation extends js.Object {
   /** Gets the attributes of a loaded folder. */
   var attributes: FileAttributes = js.native
   /** Gets an object that contains the basic properties information of the folder. */

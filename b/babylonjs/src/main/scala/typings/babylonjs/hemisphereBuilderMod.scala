@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.babylonjs.anon.Segments
 import typings.babylonjs.meshMod.Mesh
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +22,7 @@ object hemisphereBuilderMod extends js.Object {
       * @param scene defines the hosting scene
       * @returns the hemisphere mesh
       */
-    def CreateHemisphere(name: String, options: AnonSegments, scene: js.Any): Mesh = js.native
+    def CreateHemisphere(name: String, options: Segments, scene: js.Any): Mesh = js.native
   }
   
 }

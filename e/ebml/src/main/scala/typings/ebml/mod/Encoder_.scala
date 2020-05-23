@@ -1,6 +1,6 @@
 package typings.ebml.mod
 
-import typings.ebml.PickTagStackItemend
+import typings.ebml.anon.PickTagStackItemend
 import typings.ebml.mod.Encoder.TagStackItem
 import typings.node.Buffer
 import typings.node.streamMod.Transform

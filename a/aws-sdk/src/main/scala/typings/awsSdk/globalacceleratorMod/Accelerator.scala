@@ -50,7 +50,7 @@ object Accelerator {
     AcceleratorArn: GenericString = null,
     CreatedTime: Timestamp = null,
     DnsName: GenericString = null,
-    Enabled: js.UndefOr[Boolean] = js.undefined,
+    Enabled: js.UndefOr[GenericBoolean] = js.undefined,
     IpAddressType: IpAddressType = null,
     IpSets: IpSets = null,
     LastModifiedTime: Timestamp = null,
@@ -61,7 +61,7 @@ object Accelerator {
     if (AcceleratorArn != null) __obj.updateDynamic("AcceleratorArn")(AcceleratorArn.asInstanceOf[js.Any])
     if (CreatedTime != null) __obj.updateDynamic("CreatedTime")(CreatedTime.asInstanceOf[js.Any])
     if (DnsName != null) __obj.updateDynamic("DnsName")(DnsName.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     if (IpAddressType != null) __obj.updateDynamic("IpAddressType")(IpAddressType.asInstanceOf[js.Any])
     if (IpSets != null) __obj.updateDynamic("IpSets")(IpSets.asInstanceOf[js.Any])
     if (LastModifiedTime != null) __obj.updateDynamic("LastModifiedTime")(LastModifiedTime.asInstanceOf[js.Any])

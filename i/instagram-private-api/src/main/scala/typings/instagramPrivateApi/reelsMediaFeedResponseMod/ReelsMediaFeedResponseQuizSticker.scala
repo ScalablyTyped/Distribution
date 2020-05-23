@@ -31,10 +31,10 @@ object ReelsMediaFeedResponseQuizSticker {
     tallies: js.Array[ReelsMediaFeedResponseTalliesItem],
     text_color: String,
     viewer_can_answer: Boolean,
-    viewer_answer: Int | Double = null
+    viewer_answer: js.UndefOr[Double] = js.undefined
   ): ReelsMediaFeedResponseQuizSticker = {
     val __obj = js.Dynamic.literal(correct_answer = correct_answer.asInstanceOf[js.Any], end_background_color = end_background_color.asInstanceOf[js.Any], finished = finished.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], question = question.asInstanceOf[js.Any], quiz_id = quiz_id.asInstanceOf[js.Any], start_background_color = start_background_color.asInstanceOf[js.Any], tallies = tallies.asInstanceOf[js.Any], text_color = text_color.asInstanceOf[js.Any], viewer_can_answer = viewer_can_answer.asInstanceOf[js.Any])
-    if (viewer_answer != null) __obj.updateDynamic("viewer_answer")(viewer_answer.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewer_answer)) __obj.updateDynamic("viewer_answer")(viewer_answer.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReelsMediaFeedResponseQuizSticker]
   }
 }

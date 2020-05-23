@@ -18,10 +18,10 @@ trait DocumentLabel extends js.Object {
 
 object DocumentLabel {
   @scala.inline
-  def apply(Name: String = null, Score: Int | scala.Double = null): DocumentLabel = {
+  def apply(Name: String = null, Score: js.UndefOr[Float] = js.undefined): DocumentLabel = {
     val __obj = js.Dynamic.literal()
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Score != null) __obj.updateDynamic("Score")(Score.asInstanceOf[js.Any])
+    if (!js.isUndefined(Score)) __obj.updateDynamic("Score")(Score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentLabel]
   }
 }

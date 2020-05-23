@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.Control")
 @js.native
-class Control protected () extends js.Object {
-  protected def this(instance: js.Any) = this()
+trait Control extends js.Object {
   val instance: js.Any = js.native
   val name: String = js.native
   def adjustControl(): Unit = js.native

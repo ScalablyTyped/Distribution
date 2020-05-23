@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SpriteSheetExporter")
 @js.native
-class SpriteSheetExporter () extends js.Object {
+trait SpriteSheetExporter extends js.Object {
   var algorithm: String = js.native
   var allowRotate: Boolean = js.native
   var allowTrimming: Boolean = js.native

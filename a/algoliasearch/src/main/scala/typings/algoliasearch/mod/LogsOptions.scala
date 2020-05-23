@@ -41,16 +41,16 @@ object LogsOptions {
   @scala.inline
   def apply(
     indexName: String = null,
-    length: Int | Double = null,
-    offset: Int | Double = null,
+    length: js.UndefOr[Double] = js.undefined,
+    offset: js.UndefOr[Double] = js.undefined,
     onlyErrors: js.UndefOr[Boolean] = js.undefined,
     `type`: String = null
   ): LogsOptions = {
     val __obj = js.Dynamic.literal()
     if (indexName != null) __obj.updateDynamic("indexName")(indexName.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyErrors)) __obj.updateDynamic("onlyErrors")(onlyErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyErrors)) __obj.updateDynamic("onlyErrors")(onlyErrors.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogsOptions]
   }

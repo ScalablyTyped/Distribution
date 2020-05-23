@@ -20,8 +20,8 @@ object RenameOptions {
     workDoneProgress: js.UndefOr[Boolean] = js.undefined
   ): RenameOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(prepareProvider)) __obj.updateDynamic("prepareProvider")(prepareProvider.asInstanceOf[js.Any])
-    if (!js.isUndefined(workDoneProgress)) __obj.updateDynamic("workDoneProgress")(workDoneProgress.asInstanceOf[js.Any])
+    if (!js.isUndefined(prepareProvider)) __obj.updateDynamic("prepareProvider")(prepareProvider.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(workDoneProgress)) __obj.updateDynamic("workDoneProgress")(workDoneProgress.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenameOptions]
   }
 }

@@ -12,7 +12,7 @@ object IMapMarginOptions {
   @scala.inline
   def apply(useMapMargin: js.UndefOr[Boolean] = js.undefined): IMapMarginOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(useMapMargin)) __obj.updateDynamic("useMapMargin")(useMapMargin.asInstanceOf[js.Any])
+    if (!js.isUndefined(useMapMargin)) __obj.updateDynamic("useMapMargin")(useMapMargin.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMapMarginOptions]
   }
 }

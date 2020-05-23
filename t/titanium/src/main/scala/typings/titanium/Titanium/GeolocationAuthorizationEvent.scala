@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * Fired when changes are made to the authorization status for location services.
-	 */
+  * Fired when changes are made to the authorization status for location services.
+  */
 trait GeolocationAuthorizationEvent extends GeolocationBaseEvent {
   /**
-  		 * New authorization status for the application.
-  		 */
+    * New authorization status for the application.
+    */
   var authorizationStatus: Double
 }
 

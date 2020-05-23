@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,8 +47,4 @@ trait MeshMaterialMetallicRoughness extends MeshMaterial {
     */
   var roughness: Double = js.native
 }
-
-@JSGlobal("__esri.MeshMaterialMetallicRoughness")
-@js.native
-object MeshMaterialMetallicRoughness extends TopLevel[MeshMaterialMetallicRoughnessConstructor]
 

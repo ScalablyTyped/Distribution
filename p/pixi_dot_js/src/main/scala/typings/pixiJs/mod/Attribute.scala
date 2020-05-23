@@ -23,6 +23,11 @@ class Attribute protected ()
   def this(buffer: String, size: Double, normalized: Boolean, `type`: Double) = this()
   def this(buffer: String, size: Double, normalized: Boolean, `type`: Double, stride: Double) = this()
   def this(buffer: String, size: Double, normalized: Boolean, `type`: Double, stride: Double, start: Double) = this()
+  /**
+    * Destroys the Attribute.
+    */
+  /* CompleteClass */
+  override def destroy(): Unit = js.native
 }
 
 /* static members */

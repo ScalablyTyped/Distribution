@@ -5,14 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.Ellipse")
 @js.native
-/**
-  * 椭圆
-  * @param options 选项
-  */
-class Ellipse_[ExtraData] () extends Polygon[ExtraData] {
-  def this(options: Options[ExtraData]) = this()
+trait Ellipse_[ExtraData] extends Polygon[ExtraData] {
   /**
     * 获取椭圆的中心点
     */

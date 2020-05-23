@@ -14,16 +14,16 @@ trait WorkerMetadata extends js.Object {
 object WorkerMetadata {
   @scala.inline
   def apply(
-    dependencies: js.Array[String] = null,
-    id: String = null,
-    module: ModuleMetaData = null,
-    sha1: String = null
+    dependencies: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    id: js.UndefOr[Null | String] = js.undefined,
+    module: js.UndefOr[Null | ModuleMetaData] = js.undefined,
+    sha1: js.UndefOr[Null | String] = js.undefined
   ): WorkerMetadata = {
     val __obj = js.Dynamic.literal()
-    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (module != null) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
-    if (sha1 != null) __obj.updateDynamic("sha1")(sha1.asInstanceOf[js.Any])
+    if (!js.isUndefined(dependencies)) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(module)) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
+    if (!js.isUndefined(sha1)) __obj.updateDynamic("sha1")(sha1.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkerMetadata]
   }
 }

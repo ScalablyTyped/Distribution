@@ -24,7 +24,7 @@ object TableHeadingCellProps {
   @scala.inline
   def apply(
     className: String = null,
-    columnId: Int | Double = null,
+    columnId: js.UndefOr[Double] = js.undefined,
     icon: js.Any = null,
     onClick: MouseEvent[Element, NativeMouseEvent] => Unit = null,
     onMouseEnter: MouseEvent[Element, NativeMouseEvent] => Unit = null,
@@ -34,7 +34,7 @@ object TableHeadingCellProps {
   ): TableHeadingCellProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (columnId != null) __obj.updateDynamic("columnId")(columnId.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnId)) __obj.updateDynamic("columnId")(columnId.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))

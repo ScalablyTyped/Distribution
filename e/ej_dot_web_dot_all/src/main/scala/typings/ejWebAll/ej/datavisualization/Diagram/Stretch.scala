@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.Diagram
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object Stretch extends js.Object {
   //source, the source content is clipped to fit in the destination dimensions.
   @js.native
   sealed trait UniformToFill extends Stretch
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Stretch with Double] = js.native
-  /* 1 */ @js.native
-  object Fill extends TopLevel[Fill with Double]
-  
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 2 */ @js.native
-  object Uniform extends TopLevel[Uniform with Double]
-  
-  /* 3 */ @js.native
-  object UniformToFill extends TopLevel[UniformToFill with Double]
   
 }
 

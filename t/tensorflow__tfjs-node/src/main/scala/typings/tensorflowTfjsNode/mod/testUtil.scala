@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@tensorflow/tfjs-node", "test_util")
 @js.native
 object testUtil extends js.Object {
-  val TEST_EPSILON_FLOAT16: `0.1` = js.native
+  val TEST_EPSILON_FLOAT16: /* 0.1 */ Double = js.native
   def expectArrayBuffersEqual(actual: ArrayBuffer, expected: ArrayBuffer): Unit = js.native
   def expectArraysClose(actual: Double, expected: Double): Unit = js.native
   def expectArraysClose(actual: Double, expected: Double, epsilon: Double): Unit = js.native

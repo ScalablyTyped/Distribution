@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.attachments
 import typings.arcgisJsApi.arcgisJsApiStrings.list
 import typings.arcgisJsApi.arcgisJsApiStrings.preview
@@ -30,8 +29,4 @@ trait AttachmentsContent
   @JSName("type")
   val type_AttachmentsContent: attachments = js.native
 }
-
-@JSGlobal("__esri.AttachmentsContent")
-@js.native
-object AttachmentsContent extends TopLevel[AttachmentsContentConstructor]
 

@@ -67,8 +67,8 @@ object GridColumn {
     locked: js.UndefOr[Boolean] = js.undefined,
     media: String = null,
     menu: js.UndefOr[Boolean] = js.undefined,
-    minResizableWidth: Int | Double = null,
-    minScreenWidth: Int | Double = null,
+    minResizableWidth: js.UndefOr[Double] = js.undefined,
+    minScreenWidth: js.UndefOr[Double] = js.undefined,
     selectable: js.UndefOr[Boolean] = js.undefined,
     sortable: Boolean | GridColumnSortable = null,
     template: String | js.Function = null,
@@ -83,7 +83,7 @@ object GridColumn {
     if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
     if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
     if (editor != null) __obj.updateDynamic("editor")(js.Any.fromFunction2(editor))
-    if (!js.isUndefined(encoded)) __obj.updateDynamic("encoded")(encoded.asInstanceOf[js.Any])
+    if (!js.isUndefined(encoded)) __obj.updateDynamic("encoded")(encoded.get.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (filterable != null) __obj.updateDynamic("filterable")(filterable.asInstanceOf[js.Any])
     if (footerAttributes != null) __obj.updateDynamic("footerAttributes")(footerAttributes.asInstanceOf[js.Any])
@@ -95,14 +95,14 @@ object GridColumn {
     if (groupable != null) __obj.updateDynamic("groupable")(groupable.asInstanceOf[js.Any])
     if (headerAttributes != null) __obj.updateDynamic("headerAttributes")(headerAttributes.asInstanceOf[js.Any])
     if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(lockable)) __obj.updateDynamic("lockable")(lockable.asInstanceOf[js.Any])
-    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockable)) __obj.updateDynamic("lockable")(lockable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.get.asInstanceOf[js.Any])
     if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
-    if (!js.isUndefined(menu)) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
-    if (minResizableWidth != null) __obj.updateDynamic("minResizableWidth")(minResizableWidth.asInstanceOf[js.Any])
-    if (minScreenWidth != null) __obj.updateDynamic("minScreenWidth")(minScreenWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
+    if (!js.isUndefined(menu)) __obj.updateDynamic("menu")(menu.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minResizableWidth)) __obj.updateDynamic("minResizableWidth")(minResizableWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minScreenWidth)) __obj.updateDynamic("minScreenWidth")(minScreenWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.get.asInstanceOf[js.Any])
     if (sortable != null) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

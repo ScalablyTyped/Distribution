@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.ObjectSharingInformationUser")
 @js.native
-class ObjectSharingInformationUser () extends ClientObject {
+trait ObjectSharingInformationUser extends ClientObject {
   def get_customRoleNames(): String = js.native
   def get_department(): String = js.native
   def get_email(): String = js.native

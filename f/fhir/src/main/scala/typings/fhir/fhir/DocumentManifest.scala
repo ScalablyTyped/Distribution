@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A list that defines a set of documents
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait DocumentManifest extends DomainResource {
   /**
     * Contains extended information for property 'created'.

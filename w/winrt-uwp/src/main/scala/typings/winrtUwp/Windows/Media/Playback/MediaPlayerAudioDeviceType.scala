@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Playback
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object MediaPlayerAudioDeviceType extends js.Object {
   /** The device is intended for multimedia playback and/or recording. */
   @js.native
   sealed trait multimedia extends MediaPlayerAudioDeviceType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MediaPlayerAudioDeviceType with Double] = js.native
-  /* 2 */ @js.native
-  object communications extends TopLevel[communications with Double]
-  
-  /* 0 */ @js.native
-  object console extends TopLevel[console with Double]
-  
-  /* 1 */ @js.native
-  object multimedia extends TopLevel[multimedia with Double]
   
 }
 

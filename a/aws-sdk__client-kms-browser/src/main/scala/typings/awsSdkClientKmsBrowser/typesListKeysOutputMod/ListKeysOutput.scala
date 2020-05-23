@@ -38,7 +38,7 @@ object ListKeysOutput {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     if (Keys != null) __obj.updateDynamic("Keys")(Keys.asInstanceOf[js.Any])
     if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker.asInstanceOf[js.Any])
-    if (!js.isUndefined(Truncated)) __obj.updateDynamic("Truncated")(Truncated.asInstanceOf[js.Any])
+    if (!js.isUndefined(Truncated)) __obj.updateDynamic("Truncated")(Truncated.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListKeysOutput]
   }
 }

@@ -1,11 +1,11 @@
 package typings.gitlab.pipelinesMod
 
+import typings.gitlab.anon.scopeJobScopeSudoScope
 import typings.gitlab.infrastructureMod.BaseService
 import typings.gitlab.requestHelperMod.BaseRequestOptions
 import typings.gitlab.requestHelperMod.GetResponse
 import typings.gitlab.requestHelperMod.PaginatedRequestOptions
 import typings.gitlab.requestHelperMod.Sudo
-import typings.gitlab.scopeJobScopeSudoScope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -3,7 +3,7 @@ package typings.jupyterlabCsvviewer.toolbarMod
 import typings.jupyterlabCsvviewer.toolbarMod.CSVToolbar.IOptions
 import typings.luminoSignaling.mod.ISignal
 import typings.luminoWidgets.mod.Widget
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLSelectElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,7 +31,7 @@ class CSVDelimiter protected () extends Widget {
     * called in response to events on the dock panel's node. It should
     * not be called directly by user code.
     */
-  def handleEvent(event: Event_): Unit = js.native
+  def handleEvent(event: Event): Unit = js.native
   /**
     * The delimiter dropdown menu.
     */

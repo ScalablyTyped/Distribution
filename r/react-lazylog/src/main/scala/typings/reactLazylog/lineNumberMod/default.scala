@@ -1,7 +1,7 @@
 package typings.reactLazylog.lineNumberMod
 
 import typings.react.mod.Component
-import typings.reactLazylog.PartialLineNumberProps
+import typings.reactLazylog.anon.PartialLineNumberProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

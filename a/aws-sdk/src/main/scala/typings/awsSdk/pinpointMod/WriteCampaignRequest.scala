@@ -11,6 +11,10 @@ trait WriteCampaignRequest extends js.Object {
     */
   var AdditionalTreatments: js.UndefOr[ListOfWriteTreatmentResource] = js.native
   /**
+    * The delivery configuration settings for sending the campaign through a custom channel. This object is required if the MessageConfiguration object for the campaign specifies a CustomMessage object.
+    */
+  var CustomDeliveryConfiguration: js.UndefOr[typings.awsSdk.pinpointMod.CustomDeliveryConfiguration] = js.native
+  /**
     * A custom description of the campaign.
     */
   var Description: js.UndefOr[string] = js.native
@@ -19,11 +23,11 @@ trait WriteCampaignRequest extends js.Object {
     */
   var HoldoutPercent: js.UndefOr[integer] = js.native
   /**
-    * The settings for the AWS Lambda function to use as a code hook for the campaign.
+    * The settings for the AWS Lambda function to invoke as a code hook for the campaign. You can use this hook to customize the segment that's used by the campaign.
     */
   var Hook: js.UndefOr[CampaignHook] = js.native
   /**
-    * Specifies whether to pause the campaign. A paused campaign doesn't run unless you resume it by setting this value to false.
+    * Specifies whether to pause the campaign. A paused campaign doesn't run unless you resume it by changing this value to false.
     */
   var IsPaused: js.UndefOr[boolean] = js.native
   /**
@@ -55,11 +59,11 @@ trait WriteCampaignRequest extends js.Object {
     */
   var TemplateConfiguration: js.UndefOr[typings.awsSdk.pinpointMod.TemplateConfiguration] = js.native
   /**
-    * A custom description of a variation of the campaign to use for A/B testing.
+    * A custom description of the default treatment for the campaign.
     */
   var TreatmentDescription: js.UndefOr[string] = js.native
   /**
-    * A custom name for a variation of the campaign to use for A/B testing.
+    * A custom name of the default treatment for the campaign, if the campaign has multiple treatments. A treatment is a variation of a campaign that's used for A/B testing.
     */
   var TreatmentName: js.UndefOr[string] = js.native
   /**
@@ -72,16 +76,17 @@ object WriteCampaignRequest {
   @scala.inline
   def apply(
     AdditionalTreatments: ListOfWriteTreatmentResource = null,
+    CustomDeliveryConfiguration: CustomDeliveryConfiguration = null,
     Description: string = null,
-    HoldoutPercent: Int | Double = null,
+    HoldoutPercent: js.UndefOr[integer] = js.undefined,
     Hook: CampaignHook = null,
-    IsPaused: js.UndefOr[Boolean] = js.undefined,
+    IsPaused: js.UndefOr[boolean] = js.undefined,
     Limits: CampaignLimits = null,
     MessageConfiguration: MessageConfiguration = null,
     Name: string = null,
     Schedule: Schedule = null,
     SegmentId: string = null,
-    SegmentVersion: Int | Double = null,
+    SegmentVersion: js.UndefOr[integer] = js.undefined,
     TemplateConfiguration: TemplateConfiguration = null,
     TreatmentDescription: string = null,
     TreatmentName: string = null,
@@ -89,16 +94,17 @@ object WriteCampaignRequest {
   ): WriteCampaignRequest = {
     val __obj = js.Dynamic.literal()
     if (AdditionalTreatments != null) __obj.updateDynamic("AdditionalTreatments")(AdditionalTreatments.asInstanceOf[js.Any])
+    if (CustomDeliveryConfiguration != null) __obj.updateDynamic("CustomDeliveryConfiguration")(CustomDeliveryConfiguration.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (HoldoutPercent != null) __obj.updateDynamic("HoldoutPercent")(HoldoutPercent.asInstanceOf[js.Any])
+    if (!js.isUndefined(HoldoutPercent)) __obj.updateDynamic("HoldoutPercent")(HoldoutPercent.get.asInstanceOf[js.Any])
     if (Hook != null) __obj.updateDynamic("Hook")(Hook.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsPaused)) __obj.updateDynamic("IsPaused")(IsPaused.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsPaused)) __obj.updateDynamic("IsPaused")(IsPaused.get.asInstanceOf[js.Any])
     if (Limits != null) __obj.updateDynamic("Limits")(Limits.asInstanceOf[js.Any])
     if (MessageConfiguration != null) __obj.updateDynamic("MessageConfiguration")(MessageConfiguration.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule.asInstanceOf[js.Any])
     if (SegmentId != null) __obj.updateDynamic("SegmentId")(SegmentId.asInstanceOf[js.Any])
-    if (SegmentVersion != null) __obj.updateDynamic("SegmentVersion")(SegmentVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(SegmentVersion)) __obj.updateDynamic("SegmentVersion")(SegmentVersion.get.asInstanceOf[js.Any])
     if (TemplateConfiguration != null) __obj.updateDynamic("TemplateConfiguration")(TemplateConfiguration.asInstanceOf[js.Any])
     if (TreatmentDescription != null) __obj.updateDynamic("TreatmentDescription")(TreatmentDescription.asInstanceOf[js.Any])
     if (TreatmentName != null) __obj.updateDynamic("TreatmentName")(TreatmentName.asInstanceOf[js.Any])

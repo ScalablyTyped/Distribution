@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "replace-string" : "3.0.0"
+      "replace-string" : "3.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "replace-string" : "3.0.0"
+      "replace-string" : "3.1.0"
     }
   ],
   "compile-devDependencies" : [

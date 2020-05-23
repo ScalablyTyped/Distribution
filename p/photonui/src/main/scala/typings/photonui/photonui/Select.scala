@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // -----------------------------------
-@JSGlobal("photonui.Select")
 @js.native
-class Select () extends Widget {
+trait Select extends Widget {
   var children: js.Array[Widget] = js.native
   var childrenNames: js.Array[String] = js.native
   var iconVisible: Boolean = js.native

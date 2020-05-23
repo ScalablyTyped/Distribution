@@ -38,7 +38,7 @@ object AllocateAddressRequest {
     Address: String = null,
     CustomerOwnedIpv4Pool: String = null,
     Domain: DomainType = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     NetworkBorderGroup: String = null,
     PublicIpv4Pool: String = null
   ): AllocateAddressRequest = {
@@ -46,7 +46,7 @@ object AllocateAddressRequest {
     if (Address != null) __obj.updateDynamic("Address")(Address.asInstanceOf[js.Any])
     if (CustomerOwnedIpv4Pool != null) __obj.updateDynamic("CustomerOwnedIpv4Pool")(CustomerOwnedIpv4Pool.asInstanceOf[js.Any])
     if (Domain != null) __obj.updateDynamic("Domain")(Domain.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (NetworkBorderGroup != null) __obj.updateDynamic("NetworkBorderGroup")(NetworkBorderGroup.asInstanceOf[js.Any])
     if (PublicIpv4Pool != null) __obj.updateDynamic("PublicIpv4Pool")(PublicIpv4Pool.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllocateAddressRequest]

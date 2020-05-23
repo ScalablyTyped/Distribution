@@ -33,14 +33,14 @@ object DescribeHsmClientCertificatesMessage {
   def apply(
     HsmClientCertificateIdentifier: String = null,
     Marker: String = null,
-    MaxRecords: Int | scala.Double = null,
+    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
     TagKeys: TagKeyList = null,
     TagValues: TagValueList = null
   ): DescribeHsmClientCertificatesMessage = {
     val __obj = js.Dynamic.literal()
     if (HsmClientCertificateIdentifier != null) __obj.updateDynamic("HsmClientCertificateIdentifier")(HsmClientCertificateIdentifier.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     if (TagKeys != null) __obj.updateDynamic("TagKeys")(TagKeys.asInstanceOf[js.Any])
     if (TagValues != null) __obj.updateDynamic("TagValues")(TagValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeHsmClientCertificatesMessage]

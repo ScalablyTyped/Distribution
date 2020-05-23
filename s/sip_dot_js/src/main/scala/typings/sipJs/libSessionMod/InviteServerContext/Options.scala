@@ -30,7 +30,7 @@ object Options {
     reasonPhrase: String = null,
     rel100: js.UndefOr[Boolean] = js.undefined,
     sessionDescriptionHandlerOptions: SessionDescriptionHandlerOptions = null,
-    statusCode: Int | Double = null
+    statusCode: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
@@ -38,9 +38,9 @@ object Options {
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
     if (onInfo != null) __obj.updateDynamic("onInfo")(js.Any.fromFunction1(onInfo))
     if (reasonPhrase != null) __obj.updateDynamic("reasonPhrase")(reasonPhrase.asInstanceOf[js.Any])
-    if (!js.isUndefined(rel100)) __obj.updateDynamic("rel100")(rel100.asInstanceOf[js.Any])
+    if (!js.isUndefined(rel100)) __obj.updateDynamic("rel100")(rel100.get.asInstanceOf[js.Any])
     if (sessionDescriptionHandlerOptions != null) __obj.updateDynamic("sessionDescriptionHandlerOptions")(sessionDescriptionHandlerOptions.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusCode)) __obj.updateDynamic("statusCode")(statusCode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

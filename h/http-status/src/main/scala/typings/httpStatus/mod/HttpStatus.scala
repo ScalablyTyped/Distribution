@@ -1,6 +1,6 @@
 package typings.httpStatus.mod
 
-import typings.httpStatus.AnonCloudflare
+import typings.httpStatus.anon.Cloudflare
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -307,7 +307,7 @@ trait HttpStatus extends js.Object {
   val _MESSAGE: String
   val _NAME: String
   var classes: HttpStatusClasses
-  var extra: AnonCloudflare
+  var extra: Cloudflare
 }
 
 object HttpStatus {

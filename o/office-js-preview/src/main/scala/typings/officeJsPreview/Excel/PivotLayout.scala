@@ -1,12 +1,12 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.PivotLayoutData
 import typings.officeJsPreview.Excel.Interfaces.PivotLayoutLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.PivotLayoutUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.Ascending
 import typings.officeJsPreview.officeJsPreviewStrings.AtBottom
 import typings.officeJsPreview.officeJsPreviewStrings.AtTop
@@ -29,12 +29,11 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.8]
   */
-@JSGlobal("Excel.PivotLayout")
 @js.native
-class PivotLayout () extends ClientObject {
+trait PivotLayout extends ClientObject {
   /**
     *
-    * Specifies whether formatting will be automatically formatted when it’s refreshed or when fields are moved
+    * Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -44,7 +43,7 @@ class PivotLayout () extends ClientObject {
   var context_PivotLayout: RequestContext = js.native
   /**
     *
-    * Specifies whether the field list can be shown in the UI.
+    * Specifies if the field list can be shown in the UI.
     *
     * [Api set: ExcelApi 1.10]
     */
@@ -66,21 +65,21 @@ class PivotLayout () extends ClientObject {
   val pivotStyle: PivotTableStyle = js.native
   /**
     *
-    * Specifies whether formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
+    * Specifies if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
     *
     * [Api set: ExcelApi 1.9]
     */
   var preserveFormatting: Boolean = js.native
   /**
     *
-    * Specifies whether the PivotTable report shows grand totals for columns.
+    * Specifies if the PivotTable report shows grand totals for columns.
     *
     * [Api set: ExcelApi 1.8]
     */
   var showColumnGrandTotals: Boolean = js.native
   /**
     *
-    * Specifies whether the PivotTable report shows grand totals for rows.
+    * Specifies if the PivotTable report shows grand totals for rows.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -200,7 +199,7 @@ class PivotLayout () extends ClientObject {
     */
   def load(): PivotLayout = js.native
   def load(options: PivotLayoutLoadOptions): PivotLayout = js.native
-  def load(propertyNamesAndPaths: AnonExpand): PivotLayout = js.native
+  def load(propertyNamesAndPaths: Expand): PivotLayout = js.native
   def load(propertyNames: String): PivotLayout = js.native
   def load(propertyNames: js.Array[String]): PivotLayout = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.

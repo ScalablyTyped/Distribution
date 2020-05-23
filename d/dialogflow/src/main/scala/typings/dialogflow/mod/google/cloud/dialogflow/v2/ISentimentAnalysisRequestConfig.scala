@@ -12,7 +12,7 @@ trait ISentimentAnalysisRequestConfig extends js.Object {
 
 object ISentimentAnalysisRequestConfig {
   @scala.inline
-  def apply(analyzeQueryTextSentiment: js.UndefOr[Boolean] = js.undefined): ISentimentAnalysisRequestConfig = {
+  def apply(analyzeQueryTextSentiment: js.UndefOr[Null | Boolean] = js.undefined): ISentimentAnalysisRequestConfig = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(analyzeQueryTextSentiment)) __obj.updateDynamic("analyzeQueryTextSentiment")(analyzeQueryTextSentiment.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISentimentAnalysisRequestConfig]

@@ -22,11 +22,15 @@ trait IGridStyles extends js.Object {
 
 object IGridStyles {
   @scala.inline
-  def apply(focusedContainer: IStyle = null, root: IStyle = null, tableCell: IStyle = null): IGridStyles = {
+  def apply(
+    focusedContainer: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined,
+    tableCell: js.UndefOr[Null | IStyle] = js.undefined
+  ): IGridStyles = {
     val __obj = js.Dynamic.literal()
-    if (focusedContainer != null) __obj.updateDynamic("focusedContainer")(focusedContainer.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (tableCell != null) __obj.updateDynamic("tableCell")(tableCell.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusedContainer)) __obj.updateDynamic("focusedContainer")(focusedContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(tableCell)) __obj.updateDynamic("tableCell")(tableCell.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridStyles]
   }
 }

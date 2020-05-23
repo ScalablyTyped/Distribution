@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object mod {
   type CompleteCallback = js.Function4[
     /* err */ js.UndefOr[java.lang.String], 
-    /* result */ js.UndefOr[js.Object], 
+    /* result */ js.Any, 
     /* statusCode */ js.UndefOr[scala.Double], 
     /* headers */ js.UndefOr[js.Object], 
     scala.Unit

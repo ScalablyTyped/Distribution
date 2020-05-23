@@ -61,13 +61,13 @@ object HubOptions {
     val __obj = js.Dynamic.literal()
     if (errorHandler != null) __obj.updateDynamic("errorHandler")(js.Any.fromFunction1(errorHandler))
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
-    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
+    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging.get.asInstanceOf[js.Any])
     if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
     if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
     if (rootPath != null) __obj.updateDynamic("rootPath")(rootPath.asInstanceOf[js.Any])
     if (stateChanged != null) __obj.updateDynamic("stateChanged")(js.Any.fromFunction1(stateChanged))
     if (transport != null) __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSharedConnection)) __obj.updateDynamic("useSharedConnection")(useSharedConnection.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSharedConnection)) __obj.updateDynamic("useSharedConnection")(useSharedConnection.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HubOptions]
   }
 }

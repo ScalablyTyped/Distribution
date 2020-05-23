@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TestIdentityProviderResponse extends js.Object {
   /**
-    * A message that indicates whether the test was successful or not. 
+    * A message that indicates whether the test was successful or not.
     */
   var Message: js.UndefOr[typings.awsSdk.transferMod.Message] = js.native
   /**

@@ -1,7 +1,6 @@
 package typings.heremaps.H.service.venues
 
 import typings.heremaps.H.map.Group
-import typings.heremaps.H.map.provider.ObjectProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,16 +9,8 @@ import scala.scalajs.js.annotation._
   * The class represents the floor object in the venue hierarchy (see H.service.venues.Venue). The class holds information about floor geometry and spaces (see H.service.venues.Space)
   * that belong to this floor.
   */
-@JSGlobal("H.service.venues.Floor")
 @js.native
-class Floor protected () extends Group {
-  /**
-    * Constructor
-    * @param provider {H.map.provider.ObjectProvider} - The object provider of this venue floor
-    * @param data {*} - The meta data of this floor
-    * @param level {number} - The level of this floor
-    */
-  def this(provider: ObjectProvider, data: js.Any, level: Double) = this()
+trait Floor extends Group {
   /**
     * Method returns parent object - building (see H.service.venues.Building) of the floor.
     * @returns {H.service.venues.Building}

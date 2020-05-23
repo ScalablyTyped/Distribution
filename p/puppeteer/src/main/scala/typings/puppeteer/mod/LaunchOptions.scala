@@ -1,7 +1,7 @@
 package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.puppeteer.AnonDeviceScaleFactor
+import typings.puppeteer.anon.DeviceScaleFactor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,13 +52,19 @@ trait LaunchOptions
     * @default false
     */
   var pipe: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Which browser to launch.
+    * At this time, this is either `chrome` or `firefox`. See also `PUPPETEER_PRODUCT`.
+    * @default 'chrome'
+    */
+  var product: js.UndefOr[Product] = js.undefined
 }
 
 object LaunchOptions {
   @scala.inline
   def apply(
     args: js.Array[String] = null,
-    defaultViewport: AnonDeviceScaleFactor = null,
+    defaultViewport: js.UndefOr[Null | DeviceScaleFactor] = js.undefined,
     devtools: js.UndefOr[Boolean] = js.undefined,
     dumpio: js.UndefOr[Boolean] = js.undefined,
     env: StringDictionary[String | Boolean | Double] = null,
@@ -70,26 +76,28 @@ object LaunchOptions {
     ignoreDefaultArgs: Boolean | js.Array[String] = null,
     ignoreHTTPSErrors: js.UndefOr[Boolean] = js.undefined,
     pipe: js.UndefOr[Boolean] = js.undefined,
-    slowMo: Int | Double = null,
-    timeout: Int | Double = null,
+    product: Product = null,
+    slowMo: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined,
     userDataDir: String = null
   ): LaunchOptions = {
     val __obj = js.Dynamic.literal()
     if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (defaultViewport != null) __obj.updateDynamic("defaultViewport")(defaultViewport.asInstanceOf[js.Any])
-    if (!js.isUndefined(devtools)) __obj.updateDynamic("devtools")(devtools.asInstanceOf[js.Any])
-    if (!js.isUndefined(dumpio)) __obj.updateDynamic("dumpio")(dumpio.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultViewport)) __obj.updateDynamic("defaultViewport")(defaultViewport.asInstanceOf[js.Any])
+    if (!js.isUndefined(devtools)) __obj.updateDynamic("devtools")(devtools.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dumpio)) __obj.updateDynamic("dumpio")(dumpio.get.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (executablePath != null) __obj.updateDynamic("executablePath")(executablePath.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleSIGHUP)) __obj.updateDynamic("handleSIGHUP")(handleSIGHUP.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleSIGINT)) __obj.updateDynamic("handleSIGINT")(handleSIGINT.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleSIGTERM)) __obj.updateDynamic("handleSIGTERM")(handleSIGTERM.asInstanceOf[js.Any])
-    if (!js.isUndefined(headless)) __obj.updateDynamic("headless")(headless.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleSIGHUP)) __obj.updateDynamic("handleSIGHUP")(handleSIGHUP.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleSIGINT)) __obj.updateDynamic("handleSIGINT")(handleSIGINT.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleSIGTERM)) __obj.updateDynamic("handleSIGTERM")(handleSIGTERM.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(headless)) __obj.updateDynamic("headless")(headless.get.asInstanceOf[js.Any])
     if (ignoreDefaultArgs != null) __obj.updateDynamic("ignoreDefaultArgs")(ignoreDefaultArgs.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreHTTPSErrors)) __obj.updateDynamic("ignoreHTTPSErrors")(ignoreHTTPSErrors.asInstanceOf[js.Any])
-    if (!js.isUndefined(pipe)) __obj.updateDynamic("pipe")(pipe.asInstanceOf[js.Any])
-    if (slowMo != null) __obj.updateDynamic("slowMo")(slowMo.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreHTTPSErrors)) __obj.updateDynamic("ignoreHTTPSErrors")(ignoreHTTPSErrors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pipe)) __obj.updateDynamic("pipe")(pipe.get.asInstanceOf[js.Any])
+    if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
+    if (!js.isUndefined(slowMo)) __obj.updateDynamic("slowMo")(slowMo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (userDataDir != null) __obj.updateDynamic("userDataDir")(userDataDir.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchOptions]
   }

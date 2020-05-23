@@ -25,11 +25,11 @@ object DeleteDBClusterMessage {
   def apply(
     DBClusterIdentifier: String,
     FinalDBSnapshotIdentifier: String = null,
-    SkipFinalSnapshot: js.UndefOr[scala.Boolean] = js.undefined
+    SkipFinalSnapshot: js.UndefOr[Boolean] = js.undefined
   ): DeleteDBClusterMessage = {
     val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier.asInstanceOf[js.Any])
     if (FinalDBSnapshotIdentifier != null) __obj.updateDynamic("FinalDBSnapshotIdentifier")(FinalDBSnapshotIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(SkipFinalSnapshot)) __obj.updateDynamic("SkipFinalSnapshot")(SkipFinalSnapshot.asInstanceOf[js.Any])
+    if (!js.isUndefined(SkipFinalSnapshot)) __obj.updateDynamic("SkipFinalSnapshot")(SkipFinalSnapshot.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDBClusterMessage]
   }
 }

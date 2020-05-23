@@ -4,9 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MatterJS.PairFactory")
-@js.native
-class PairFactory () extends js.Object {
+trait PairFactory extends js.Object {
   /**
     * Creates a pair.
     * @method create
@@ -14,7 +12,7 @@ class PairFactory () extends js.Object {
     * @param {number} timestamp
     * @return {IPair} A new pair
     */
-  def create(collision: ICollisionData, timestamp: Double): IPair = js.native
+  def create(collision: ICollisionData, timestamp: Double): IPair
   /**
     * Get the id for the given pair.
     * @method id
@@ -22,7 +20,7 @@ class PairFactory () extends js.Object {
     * @param {Body} bodyB
     * @return {string} Unique pairId
     */
-  def id(bodyA: BodyType, bodyB: BodyType): String = js.native
+  def id(bodyA: BodyType, bodyB: BodyType): String
   /**
     * Set a pair as active or inactive.
     * @method setActive
@@ -30,7 +28,7 @@ class PairFactory () extends js.Object {
     * @param {boolean} isActive
     * @param {number} timestamp
     */
-  def setActive(pair: IPair, isActive: Boolean, timestamp: Double): Unit = js.native
+  def setActive(pair: IPair, isActive: Boolean, timestamp: Double): Unit
   /**
     * Updates a pair given a collision.
     * @method update
@@ -38,6 +36,19 @@ class PairFactory () extends js.Object {
     * @param {ICollisionData} collision
     * @param {number} timestamp
     */
-  def update(pair: IPair, collision: ICollisionData, timestamp: Double): Unit = js.native
+  def update(pair: IPair, collision: ICollisionData, timestamp: Double): Unit
+}
+
+object PairFactory {
+  @scala.inline
+  def apply(
+    create: (ICollisionData, Double) => IPair,
+    id: (BodyType, BodyType) => String,
+    setActive: (IPair, Boolean, Double) => Unit,
+    update: (IPair, ICollisionData, Double) => Unit
+  ): PairFactory = {
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create), id = js.Any.fromFunction2(id), setActive = js.Any.fromFunction3(setActive), update = js.Any.fromFunction3(update))
+    __obj.asInstanceOf[PairFactory]
+  }
 }
 

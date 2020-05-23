@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ModifyGlobalReplicationGroupMessage extends js.Object {
   /**
-    * If true, this parameter causes the modifications in this request and any pending modifications to be applied, asynchronously and as soon as possible, regardless of the PreferredMaintenanceWindow setting for the replication group. If false, changes to the nodes in the replication group are applied on the next maintenance reboot, or the next failure reboot, whichever occurs first. 
+    * This parameter causes the modifications in this request and any pending modifications to be applied, asynchronously and as soon as possible. Modifications to Global Replication Groups cannot be requested to be applied in PreferredMaintenceWindow. 
     */
   var ApplyImmediately: Boolean = js.native
   /**
@@ -37,13 +37,13 @@ object ModifyGlobalReplicationGroupMessage {
   def apply(
     ApplyImmediately: Boolean,
     GlobalReplicationGroupId: String,
-    AutomaticFailoverEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    AutomaticFailoverEnabled: js.UndefOr[BooleanOptional] = js.undefined,
     CacheNodeType: String = null,
     EngineVersion: String = null,
     GlobalReplicationGroupDescription: String = null
   ): ModifyGlobalReplicationGroupMessage = {
     val __obj = js.Dynamic.literal(ApplyImmediately = ApplyImmediately.asInstanceOf[js.Any], GlobalReplicationGroupId = GlobalReplicationGroupId.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutomaticFailoverEnabled)) __obj.updateDynamic("AutomaticFailoverEnabled")(AutomaticFailoverEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutomaticFailoverEnabled)) __obj.updateDynamic("AutomaticFailoverEnabled")(AutomaticFailoverEnabled.get.asInstanceOf[js.Any])
     if (CacheNodeType != null) __obj.updateDynamic("CacheNodeType")(CacheNodeType.asInstanceOf[js.Any])
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
     if (GlobalReplicationGroupDescription != null) __obj.updateDynamic("GlobalReplicationGroupDescription")(GlobalReplicationGroupDescription.asInstanceOf[js.Any])

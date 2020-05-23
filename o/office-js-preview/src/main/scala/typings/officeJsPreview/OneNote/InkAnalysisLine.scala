@@ -1,11 +1,11 @@
 package typings.officeJsPreview.OneNote
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
 import typings.officeJsPreview.OneNote.Interfaces.InkAnalysisLineData
 import typings.officeJsPreview.OneNote.Interfaces.InkAnalysisLineLoadOptions
 import typings.officeJsPreview.OneNote.Interfaces.InkAnalysisLineUpdateData
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +16,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: OneNoteApi 1.1]
   */
-@JSGlobal("OneNote.InkAnalysisLine")
 @js.native
-class InkAnalysisLine () extends ClientObject {
+trait InkAnalysisLine extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_InkAnalysisLine: RequestContext = js.native
@@ -61,8 +60,8 @@ class InkAnalysisLine () extends ClientObject {
   def load(): InkAnalysisLine = js.native
   def load(option: String): InkAnalysisLine = js.native
   def load(option: js.Array[String]): InkAnalysisLine = js.native
-  def load(option: AnonExpand): InkAnalysisLine = js.native
   def load(option: InkAnalysisLineLoadOptions): InkAnalysisLine = js.native
+  def load(option: Expand): InkAnalysisLine = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: InkAnalysisLine): Unit = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.

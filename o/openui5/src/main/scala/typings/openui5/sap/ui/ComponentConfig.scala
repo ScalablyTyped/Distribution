@@ -129,15 +129,15 @@ import scala.scalajs.js.annotation._
   * @param bExport whether an export to global names is required - should be used by SAP-owned code only
   */
 trait ComponentConfig extends js.Object {
-  // 	initial data of the Component (@see sap.ui.core.Component#getComponentData)
+  //     initial data of the Component (@see sap.ui.core.Component#getComponentData)
   var componentData: js.UndefOr[js.Any] = js.undefined
-  // 	the sId of the new Component
+  //     the sId of the new Component
   var id: js.UndefOr[String] = js.undefined
-  // 	the name of the Component to load
+  //     the name of the Component to load
   var name: String
-  //	the mSettings of the new Component
+  //    the mSettings of the new Component
   var settings: js.UndefOr[js.Any] = js.undefined
-  // 	an alternate location from where to load the Component
+  //     an alternate location from where to load the Component
   var url: js.UndefOr[String] = js.undefined
 }
 

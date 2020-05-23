@@ -1,6 +1,6 @@
 package typings.materializeCss.M
 
-import typings.materializeCss.PartialAutocompleteOptionData
+import typings.materializeCss.anon.PartialAutocompleteOptionData
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

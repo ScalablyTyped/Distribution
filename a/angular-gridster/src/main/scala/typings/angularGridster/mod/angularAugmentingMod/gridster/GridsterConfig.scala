@@ -1,7 +1,7 @@
 package typings.angularGridster.mod.angularAugmentingMod.gridster
 
-import typings.angularGridster.AnonDrag
-import typings.angularGridster.AnonEnabled
+import typings.angularGridster.anon.Drag
+import typings.angularGridster.anon.Enabled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait GridsterConfig extends js.Object {
   // default height of an item in rows
   var defaultSizeY: js.UndefOr[Double] = js.undefined
   // options to pass to draggable handler
-  var draggable: js.UndefOr[AnonDrag] = js.undefined
+  var draggable: js.UndefOr[Drag] = js.undefined
   // whether to automatically float items up so they stack
   var floating: js.UndefOr[Boolean] = js.undefined
   // toggle mobile view
@@ -48,7 +48,7 @@ trait GridsterConfig extends js.Object {
   var pushing: js.UndefOr[Boolean] = js.undefined
   // grid item height in mobile display. true- to use the calculated height by sizeY given
   // options to pass to resizable handler
-  var resizable: js.UndefOr[AnonEnabled] = js.undefined
+  var resizable: js.UndefOr[Enabled] = js.undefined
   // height of grid rows. 'match' will make it the same as the column width, a numeric value will be interpreted as pixels,
   // '/2' is half the column width, '*5' is five times the column width, etc.
   var rowHeight: js.UndefOr[String] = js.undefined
@@ -63,25 +63,25 @@ object GridsterConfig {
   @scala.inline
   def apply(
     colWidth: String = null,
-    columns: Int | Double = null,
-    defaultSizeX: Int | Double = null,
-    defaultSizeY: Int | Double = null,
-    draggable: AnonDrag = null,
+    columns: js.UndefOr[Double] = js.undefined,
+    defaultSizeX: js.UndefOr[Double] = js.undefined,
+    defaultSizeY: js.UndefOr[Double] = js.undefined,
+    draggable: Drag = null,
     floating: js.UndefOr[Boolean] = js.undefined,
     isMobile: js.UndefOr[Boolean] = js.undefined,
     margins: js.Array[Double] = null,
-    maxRows: Int | Double = null,
-    maxSizeX: Int | Double = null,
-    maxSizeY: Int | Double = null,
-    minColumns: Int | Double = null,
-    minRows: Int | Double = null,
-    minSizeX: Int | Double = null,
-    minSizeY: Int | Double = null,
-    mobileBreakPoint: Int | Double = null,
+    maxRows: js.UndefOr[Double] = js.undefined,
+    maxSizeX: js.UndefOr[Double] = js.undefined,
+    maxSizeY: js.UndefOr[Double] = js.undefined,
+    minColumns: js.UndefOr[Double] = js.undefined,
+    minRows: js.UndefOr[Double] = js.undefined,
+    minSizeX: js.UndefOr[Double] = js.undefined,
+    minSizeY: js.UndefOr[Double] = js.undefined,
+    mobileBreakPoint: js.UndefOr[Double] = js.undefined,
     mobileModeEnabled: js.UndefOr[Boolean] = js.undefined,
     outerMargin: js.UndefOr[Boolean] = js.undefined,
     pushing: js.UndefOr[Boolean] = js.undefined,
-    resizable: AnonEnabled = null,
+    resizable: Enabled = null,
     rowHeight: String = null,
     saveGridItemCalculatedHeightInMobile: js.UndefOr[Boolean] = js.undefined,
     swapping: js.UndefOr[Boolean] = js.undefined,
@@ -89,28 +89,28 @@ object GridsterConfig {
   ): GridsterConfig = {
     val __obj = js.Dynamic.literal()
     if (colWidth != null) __obj.updateDynamic("colWidth")(colWidth.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (defaultSizeX != null) __obj.updateDynamic("defaultSizeX")(defaultSizeX.asInstanceOf[js.Any])
-    if (defaultSizeY != null) __obj.updateDynamic("defaultSizeY")(defaultSizeY.asInstanceOf[js.Any])
+    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultSizeX)) __obj.updateDynamic("defaultSizeX")(defaultSizeX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultSizeY)) __obj.updateDynamic("defaultSizeY")(defaultSizeY.get.asInstanceOf[js.Any])
     if (draggable != null) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMobile)) __obj.updateDynamic("isMobile")(isMobile.asInstanceOf[js.Any])
+    if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMobile)) __obj.updateDynamic("isMobile")(isMobile.get.asInstanceOf[js.Any])
     if (margins != null) __obj.updateDynamic("margins")(margins.asInstanceOf[js.Any])
-    if (maxRows != null) __obj.updateDynamic("maxRows")(maxRows.asInstanceOf[js.Any])
-    if (maxSizeX != null) __obj.updateDynamic("maxSizeX")(maxSizeX.asInstanceOf[js.Any])
-    if (maxSizeY != null) __obj.updateDynamic("maxSizeY")(maxSizeY.asInstanceOf[js.Any])
-    if (minColumns != null) __obj.updateDynamic("minColumns")(minColumns.asInstanceOf[js.Any])
-    if (minRows != null) __obj.updateDynamic("minRows")(minRows.asInstanceOf[js.Any])
-    if (minSizeX != null) __obj.updateDynamic("minSizeX")(minSizeX.asInstanceOf[js.Any])
-    if (minSizeY != null) __obj.updateDynamic("minSizeY")(minSizeY.asInstanceOf[js.Any])
-    if (mobileBreakPoint != null) __obj.updateDynamic("mobileBreakPoint")(mobileBreakPoint.asInstanceOf[js.Any])
-    if (!js.isUndefined(mobileModeEnabled)) __obj.updateDynamic("mobileModeEnabled")(mobileModeEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(outerMargin)) __obj.updateDynamic("outerMargin")(outerMargin.asInstanceOf[js.Any])
-    if (!js.isUndefined(pushing)) __obj.updateDynamic("pushing")(pushing.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRows)) __obj.updateDynamic("maxRows")(maxRows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSizeX)) __obj.updateDynamic("maxSizeX")(maxSizeX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSizeY)) __obj.updateDynamic("maxSizeY")(maxSizeY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minColumns)) __obj.updateDynamic("minColumns")(minColumns.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minRows)) __obj.updateDynamic("minRows")(minRows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSizeX)) __obj.updateDynamic("minSizeX")(minSizeX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSizeY)) __obj.updateDynamic("minSizeY")(minSizeY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mobileBreakPoint)) __obj.updateDynamic("mobileBreakPoint")(mobileBreakPoint.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mobileModeEnabled)) __obj.updateDynamic("mobileModeEnabled")(mobileModeEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(outerMargin)) __obj.updateDynamic("outerMargin")(outerMargin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pushing)) __obj.updateDynamic("pushing")(pushing.get.asInstanceOf[js.Any])
     if (resizable != null) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
     if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(saveGridItemCalculatedHeightInMobile)) __obj.updateDynamic("saveGridItemCalculatedHeightInMobile")(saveGridItemCalculatedHeightInMobile.asInstanceOf[js.Any])
-    if (!js.isUndefined(swapping)) __obj.updateDynamic("swapping")(swapping.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveGridItemCalculatedHeightInMobile)) __obj.updateDynamic("saveGridItemCalculatedHeightInMobile")(saveGridItemCalculatedHeightInMobile.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(swapping)) __obj.updateDynamic("swapping")(swapping.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridsterConfig]
   }

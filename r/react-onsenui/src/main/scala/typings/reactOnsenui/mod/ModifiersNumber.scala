@@ -11,10 +11,10 @@ trait ModifiersNumber extends js.Object {
 
 object ModifiersNumber {
   @scala.inline
-  def apply(default: Int | Double = null, material: Int | Double = null): ModifiersNumber = {
+  def apply(default: js.UndefOr[Double] = js.undefined, material: js.UndefOr[Double] = js.undefined): ModifiersNumber = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(material)) __obj.updateDynamic("material")(material.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifiersNumber]
   }
 }

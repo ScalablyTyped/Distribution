@@ -11,7 +11,7 @@ trait InventoryFilter extends js.Object {
     */
   var Key: InventoryFilterKey = js.native
   /**
-    * The type of filter.
+    * The type of filter.  The Exists filter must be used with aggregators. For more information, see Aggregating inventory data in the AWS Systems Manager User Guide. 
     */
   var Type: js.UndefOr[InventoryQueryOperatorType] = js.native
   /**

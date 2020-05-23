@@ -1,7 +1,7 @@
 package typings.jsData.schemaMod
 
-import typings.jsData.AnonArray
-import typings.jsData.AnonBoolean
+import typings.jsData.anon.Array
+import typings.jsData.anon.Boolean
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,8 +21,8 @@ object default extends js.Object {
   var NUMERIC_OPS: js.Array[String] = js.native
   var OBJECT_OPS: js.Array[String] = js.native
   var STRING_OPS: js.Array[String] = js.native
-  var typeGroupValidators: AnonArray = js.native
-  var types: AnonBoolean = js.native
+  var typeGroupValidators: Array = js.native
+  var types: Boolean = js.native
   var validationKeywords: js.Any = js.native
   def validate(value: js.Any, schema: js.Any): js.Array[_] = js.native
   def validate(value: js.Any, schema: js.Any, opts: js.Any): js.Array[_] = js.native

@@ -1,7 +1,7 @@
 package typings.meyda.mod
 
-import typings.meyda.AnonImag
-import typings.meyda.AnonSpecific
+import typings.meyda.anon.Imag
+import typings.meyda.anon.Specific
 import typings.std.Float32Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,9 +11,9 @@ trait MeydaFeaturesObject extends js.Object {
   var amplitudeSpectrum: Float32Array
   var buffer: js.Array[Double]
   var chroma: js.Array[Double]
-  var complexSpectrum: AnonImag
+  var complexSpectrum: Imag
   var energy: Double
-  var loudness: AnonSpecific
+  var loudness: Specific
   var mfcc: js.Array[Double]
   var perceptualSharpness: Double
   var perceptualSpread: Double
@@ -35,9 +35,9 @@ object MeydaFeaturesObject {
     amplitudeSpectrum: Float32Array,
     buffer: js.Array[Double],
     chroma: js.Array[Double],
-    complexSpectrum: AnonImag,
+    complexSpectrum: Imag,
     energy: Double,
-    loudness: AnonSpecific,
+    loudness: Specific,
     mfcc: js.Array[Double],
     perceptualSharpness: Double,
     perceptualSpread: Double,

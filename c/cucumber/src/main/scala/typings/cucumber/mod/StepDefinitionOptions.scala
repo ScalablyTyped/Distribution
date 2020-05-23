@@ -12,9 +12,9 @@ trait StepDefinitionOptions extends js.Object {
 
 object StepDefinitionOptions {
   @scala.inline
-  def apply(timeout: Int | Double = null, wrapperOptions: StringDictionary[js.Any] = null): StepDefinitionOptions = {
+  def apply(timeout: js.UndefOr[Double] = js.undefined, wrapperOptions: StringDictionary[js.Any] = null): StepDefinitionOptions = {
     val __obj = js.Dynamic.literal()
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (wrapperOptions != null) __obj.updateDynamic("wrapperOptions")(wrapperOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepDefinitionOptions]
   }

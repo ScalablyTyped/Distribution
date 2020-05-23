@@ -41,12 +41,12 @@ object RasterStretchRendererStatistics {
     max: Double,
     min: Double,
     propertyIsEnumerable: PropertyKey => Boolean,
-    avg: Int | Double = null,
-    stdev: Int | Double = null
+    avg: js.UndefOr[Double] = js.undefined,
+    stdev: js.UndefOr[Double] = js.undefined
   ): RasterStretchRendererStatistics = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (avg != null) __obj.updateDynamic("avg")(avg.asInstanceOf[js.Any])
-    if (stdev != null) __obj.updateDynamic("stdev")(stdev.asInstanceOf[js.Any])
+    if (!js.isUndefined(avg)) __obj.updateDynamic("avg")(avg.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stdev)) __obj.updateDynamic("stdev")(stdev.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RasterStretchRendererStatistics]
   }
 }

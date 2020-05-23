@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapListBoxItem")
 @js.native
-class BootstrapListBoxItem protected () extends js.Object {
-  protected def this(instance: js.Any) = this()
+trait BootstrapListBoxItem extends js.Object {
   val iconCssClass: String = js.native
   val imageUrl: String = js.native
   val index: Double = js.native

@@ -31,14 +31,8 @@ import scala.scalajs.js.annotation._
   * @extends PIXI.Sprite
   * @memberof PIXI
   */
-@JSGlobal("PIXI.Text")
 @js.native
-class Text protected () extends Sprite {
-  def this(text: String) = this()
-  def this(text: String, style: js.Any) = this()
-  def this(text: String, style: TextStyle) = this()
-  def this(text: String, style: js.Any, canvas: HTMLCanvasElement) = this()
-  def this(text: String, style: TextStyle, canvas: HTMLCanvasElement) = this()
+trait Text extends Sprite {
   /**
     * The resolution / device pixel ratio of the canvas.
     * This is set to automatically match the renderer resolution by default, but can be overridden by setting manually.

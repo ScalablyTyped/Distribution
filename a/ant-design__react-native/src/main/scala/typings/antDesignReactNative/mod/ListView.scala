@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.mod
 
-import typings.antDesignReactNative.AnonAntLocale
+import typings.antDesignReactNative.anon.AntLocale
 import typings.antDesignReactNative.listViewMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,6 @@ class ListView[T] () extends default[T]
 @JSImport("@ant-design/react-native", "ListView")
 @js.native
 object ListView extends js.Object {
-  var contextTypes: AnonAntLocale = js.native
+  var contextTypes: AntLocale = js.native
 }
 

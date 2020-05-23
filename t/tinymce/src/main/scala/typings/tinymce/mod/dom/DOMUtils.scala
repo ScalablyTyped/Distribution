@@ -1,14 +1,14 @@
 package typings.tinymce.mod.dom
 
+import typings.std.Document
 import typings.std.DocumentFragment
-import typings.std.Document_
 import typings.std.Element
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.Node
 import typings.std.NodeList
 import typings.std.Range
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation._
 @JSImport("tinymce", "dom.DOMUtils")
 @js.native
 class DOMUtils protected () extends js.Object {
-  def this(doc: Document_) = this()
-  def this(doc: Document_, settings: js.Object) = this()
+  def this(doc: Document) = this()
+  def this(doc: Document, settings: js.Object) = this()
   def add[T](parentElm: String, name: String): Element | js.Array[T] = js.native
   def add[T](parentElm: String, name: String, attrs: js.Object): Element | js.Array[T] = js.native
   def add[T](parentElm: String, name: String, attrs: js.Object, html: String): Element | js.Array[T] = js.native
@@ -38,7 +38,7 @@ class DOMUtils protected () extends js.Object {
   def destroy(): Unit = js.native
   def encode(text: String): String = js.native
   def findCommonAncestor(a: Element, b: Element): Element = js.native
-  def fire(target: Node, name: String, evt: js.Object): Event_ = js.native
+  def fire(target: Node, name: String, evt: js.Object): Event = js.native
   def get(n: String): Element = js.native
   def getAttrib(elm: String, name: String, defaultVal: String): String = js.native
   def getAttribs(): NodeList = js.native
@@ -57,7 +57,7 @@ class DOMUtils protected () extends js.Object {
   def getSize(elm: Element): js.Object = js.native
   def getStyle(elm: String, name: String, computed: Boolean): String = js.native
   def getViewPort(): js.Object = js.native
-  def getViewPort(win: Window_): js.Object = js.native
+  def getViewPort(win: Window): js.Object = js.native
   def hasClass(elm: String, cls: String): Boolean = js.native
   def hide(elm: String): Unit = js.native
   def insertAfter[T](node: Element, referenceNode: Element): Element | js.Array[T] = js.native

@@ -5,24 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * Fired when the user activity was continued on another device.
-			 */
+  * Fired when the user activity was continued on another device.
+  */
 trait UserActivityUseractivitywascontinuedEvent extends UserActivityBaseEvent {
   /**
-  				 * The activityType of the User Activity triggering the event.
-  				 */
+    * The activityType of the User Activity triggering the event.
+    */
   var activityType: String
   /**
-  				 * The title of the User Activity if defined.
-  				 */
+    * The title of the User Activity if defined.
+    */
   var title: String
   /**
-  				 * Dictionary object containing the userInfo data of the User Activity.
-  				 */
+    * Dictionary object containing the userInfo data of the User Activity.
+    */
   var userInfo: js.Any
   /**
-  				 * The webpageURL of the User Activity if defined.
-  				 */
+    * The webpageURL of the User Activity if defined.
+    */
   var webpageURL: String
 }
 

@@ -13,9 +13,8 @@ trait ReactElementLike extends _ReactNodeLike {
 object ReactElementLike {
   @scala.inline
   def apply(props: js.Any, `type`: ReactComponentLike, key: String | Double = null): ReactElementLike = {
-    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactElementLike]
   }
 }

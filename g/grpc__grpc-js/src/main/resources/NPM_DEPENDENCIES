@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@grpc/grpc-js" : "0.6.9"
+      "@grpc/grpc-js" : "0.6.18"
     }
   ],
   "test-dependencies" : [
     {
-      "@grpc/grpc-js" : "0.6.9"
+      "@grpc/grpc-js" : "0.6.18"
     }
   ],
   "compile-devDependencies" : [

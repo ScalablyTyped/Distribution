@@ -1,6 +1,6 @@
 package typings.antdMobile.accordionMod
 
-import typings.antdMobile.AnonPrefixCls
+import typings.antdMobile.anon.PrefixCls
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +14,6 @@ class default () extends Accordion
 @js.native
 object default extends js.Object {
   var Panel: js.Any = js.native
-  var defaultProps: AnonPrefixCls = js.native
+  var defaultProps: PrefixCls = js.native
 }
 

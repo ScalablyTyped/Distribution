@@ -1,6 +1,5 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1.csr
 
-import typings.jsrsasign.AnonCsrinfo
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,10 +28,7 @@ import scala.scalajs.js.annotation._
   * //   subjectPKInfo SubjectPublicKeyInfo{{ PKInfoAlgorithms }},
   * //   attributes    [0] Attributes{{ CRIAttributes }} }
   */
-@JSGlobal("jsrsasign.KJUR.asn1.csr.CertificationRequest")
-@js.native
-class CertificationRequest () extends ASN1Object {
-  def this(params: AnonCsrinfo) = this()
+trait CertificationRequest extends ASN1Object {
   /**
     * get PEM formatted certificate signing request (CSR/PKCS#10)
     * @return PEM formatted string of CSR/PKCS#10
@@ -48,7 +44,7 @@ class CertificationRequest () extends ASN1Object {
     * // MII ...snip...
     * // -----END CERTIFICATE REQUEST-----
     */
-  def getPEMString(): String = js.native
+  def getPEMString(): String
   /**
     * sign CertificationRequest and set signature value internally
     * @description
@@ -59,6 +55,26 @@ class CertificationRequest () extends ASN1Object {
     * csr = new KJUR.asn1.csr.CertificationRequest({'csrinfo': csri});
     * csr.sign("SHA256withRSA", prvKeyObj);
     */
-  def sign(sigAlgName: String, prvKeyObj: js.Any): Unit = js.native
+  def sign(sigAlgName: String, prvKeyObj: js.Any): Unit
+}
+
+object CertificationRequest {
+  @scala.inline
+  def apply(
+    getEncodedHex: () => String,
+    getFreshValueHex: () => String,
+    getLengthHexFromValue: () => String,
+    getPEMString: () => String,
+    getValueHex: () => String,
+    hL: String,
+    hT: String,
+    hTLV: String,
+    hV: String,
+    isModified: String,
+    sign: (String, js.Any) => Unit
+  ): CertificationRequest = {
+    val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getPEMString = js.Any.fromFunction0(getPEMString), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], sign = js.Any.fromFunction2(sign))
+    __obj.asInstanceOf[CertificationRequest]
+  }
 }
 

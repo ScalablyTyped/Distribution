@@ -14,9 +14,9 @@ trait CheckCapacityResponse extends js.Object {
 
 object CheckCapacityResponse {
   @scala.inline
-  def apply(Capacity: Int | Double = null): CheckCapacityResponse = {
+  def apply(Capacity: js.UndefOr[ConsumedCapacity] = js.undefined): CheckCapacityResponse = {
     val __obj = js.Dynamic.literal()
-    if (Capacity != null) __obj.updateDynamic("Capacity")(Capacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(Capacity)) __obj.updateDynamic("Capacity")(Capacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckCapacityResponse]
   }
 }

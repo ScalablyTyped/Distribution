@@ -11,9 +11,9 @@ trait Type extends js.Object {
 
 object Type {
   @scala.inline
-  def apply(features: js.Array[String], `type`: String = null): Type = {
+  def apply(features: js.Array[String], `type`: js.UndefOr[Null | String] = js.undefined): Type = {
     val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Type]
   }
 }

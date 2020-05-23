@@ -63,10 +63,10 @@ object ExecuteManyOptions {
     dmlRowCounts: js.UndefOr[Boolean] = js.undefined
   ): ExecuteManyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoCommit)) __obj.updateDynamic("autoCommit")(autoCommit.asInstanceOf[js.Any])
-    if (!js.isUndefined(batchErrors)) __obj.updateDynamic("batchErrors")(batchErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCommit)) __obj.updateDynamic("autoCommit")(autoCommit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchErrors)) __obj.updateDynamic("batchErrors")(batchErrors.get.asInstanceOf[js.Any])
     if (bindDefs != null) __obj.updateDynamic("bindDefs")(bindDefs.asInstanceOf[js.Any])
-    if (!js.isUndefined(dmlRowCounts)) __obj.updateDynamic("dmlRowCounts")(dmlRowCounts.asInstanceOf[js.Any])
+    if (!js.isUndefined(dmlRowCounts)) __obj.updateDynamic("dmlRowCounts")(dmlRowCounts.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteManyOptions]
   }
 }

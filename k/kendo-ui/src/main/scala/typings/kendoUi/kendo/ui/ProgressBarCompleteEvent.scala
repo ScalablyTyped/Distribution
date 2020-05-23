@@ -14,10 +14,10 @@ object ProgressBarCompleteEvent {
     isDefaultPrevented: () => Boolean,
     preventDefault: js.Function,
     sender: ProgressBar,
-    value: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined
   ): ProgressBarCompleteEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressBarCompleteEvent]
   }
 }

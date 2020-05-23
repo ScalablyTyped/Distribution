@@ -33,14 +33,14 @@ object LabelSymbol3DVerticalOffsetProperties {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    maxWorldLength: Int | Double = null,
-    minWorldLength: Int | Double = null,
-    screenLength: Int | Double = null
+    maxWorldLength: js.UndefOr[Double] = js.undefined,
+    minWorldLength: js.UndefOr[Double] = js.undefined,
+    screenLength: js.UndefOr[Double] = js.undefined
   ): LabelSymbol3DVerticalOffsetProperties = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (maxWorldLength != null) __obj.updateDynamic("maxWorldLength")(maxWorldLength.asInstanceOf[js.Any])
-    if (minWorldLength != null) __obj.updateDynamic("minWorldLength")(minWorldLength.asInstanceOf[js.Any])
-    if (screenLength != null) __obj.updateDynamic("screenLength")(screenLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWorldLength)) __obj.updateDynamic("maxWorldLength")(maxWorldLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWorldLength)) __obj.updateDynamic("minWorldLength")(minWorldLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(screenLength)) __obj.updateDynamic("screenLength")(screenLength.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelSymbol3DVerticalOffsetProperties]
   }
 }

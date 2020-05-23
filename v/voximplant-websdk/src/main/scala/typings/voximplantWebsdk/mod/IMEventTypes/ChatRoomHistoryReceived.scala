@@ -7,20 +7,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		*	Event dispatched when chat room history received
-		*/
+  *    Event dispatched when chat room history received
+  */
 trait ChatRoomHistoryReceived extends VoxImplantIMEvent {
   /**
-  			* Message id specified in getInstantMessagingHistory method
-  			*/
+    * Message id specified in getInstantMessagingHistory method
+    */
   var message_id: String
   /**
-  			* List of messages
-  			*/
+    * List of messages
+    */
   var messages: js.Array[IMHistoryMessage]
   /**
-  			* Room id
-  			*/
+    * Room id
+    */
   var room: String
 }
 

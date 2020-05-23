@@ -19,12 +19,14 @@ trait IMediaContent extends js.Object {
 object IMediaContent {
   @scala.inline
   def apply(
-    mediaObjects: js.Array[IResponseMediaObject] = null,
-    mediaType: ResponseMediaType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Intent.Message.MediaContent.ResponseMediaType * / any */ String) = null
+    mediaObjects: js.UndefOr[Null | js.Array[IResponseMediaObject]] = js.undefined,
+    mediaType: js.UndefOr[
+      Null | ResponseMediaType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Intent.Message.MediaContent.ResponseMediaType * / any */ String)
+    ] = js.undefined
   ): IMediaContent = {
     val __obj = js.Dynamic.literal()
-    if (mediaObjects != null) __obj.updateDynamic("mediaObjects")(mediaObjects.asInstanceOf[js.Any])
-    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
+    if (!js.isUndefined(mediaObjects)) __obj.updateDynamic("mediaObjects")(mediaObjects.asInstanceOf[js.Any])
+    if (!js.isUndefined(mediaType)) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMediaContent]
   }
 }

@@ -1,10 +1,10 @@
 package typings.hapiPino.mod
 
 import typings.hapiHapi.mod.Request
-import typings.hapiPino.AnonDictkey
+import typings.hapiPino.anon.Dictkey
+import typings.hapiPino.anon.keyinLevelstring
 import typings.hapiPino.hapiPinoBooleans.`false`
-import typings.hapiPino.keyinLevelstring
-import typings.node.processMod._Global_.NodeJS.WriteStream
+import typings.node.processMod.global.NodeJS.WriteStream
 import typings.pino.mod.Level
 import typings.pino.mod.Logger
 import typings.pino.mod.PrettyOptions
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   var allTags: js.UndefOr[Level] = js.undefined
-  var getChildBindings: js.UndefOr[js.Function1[/* req */ Request, AnonDictkey]] = js.undefined
+  var getChildBindings: js.UndefOr[js.Function1[/* req */ Request, Dictkey]] = js.undefined
   var ignorePaths: js.UndefOr[js.Array[String]] = js.undefined
   var instance: js.UndefOr[Logger] = js.undefined
   var level: js.UndefOr[Level] = js.undefined
@@ -36,11 +36,11 @@ object Options {
   @scala.inline
   def apply(
     allTags: Level = null,
-    getChildBindings: /* req */ Request => AnonDictkey = null,
+    getChildBindings: /* req */ Request => Dictkey = null,
     ignorePaths: js.Array[String] = null,
     instance: Logger = null,
     level: Level = null,
-    logEvents: js.Array[String] | `false` = null,
+    logEvents: js.UndefOr[Null | js.Array[String] | `false`] = js.undefined,
     logPayload: js.UndefOr[Boolean] = js.undefined,
     logRequestComplete: Boolean | (js.Function1[/* req */ Request, Boolean]) = null,
     logRequestStart: Boolean | (js.Function1[/* req */ Request, Boolean]) = null,
@@ -58,12 +58,12 @@ object Options {
     if (ignorePaths != null) __obj.updateDynamic("ignorePaths")(ignorePaths.asInstanceOf[js.Any])
     if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (logEvents != null) __obj.updateDynamic("logEvents")(logEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(logPayload)) __obj.updateDynamic("logPayload")(logPayload.asInstanceOf[js.Any])
+    if (!js.isUndefined(logEvents)) __obj.updateDynamic("logEvents")(logEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(logPayload)) __obj.updateDynamic("logPayload")(logPayload.get.asInstanceOf[js.Any])
     if (logRequestComplete != null) __obj.updateDynamic("logRequestComplete")(logRequestComplete.asInstanceOf[js.Any])
     if (logRequestStart != null) __obj.updateDynamic("logRequestStart")(logRequestStart.asInstanceOf[js.Any])
-    if (!js.isUndefined(logRouteTags)) __obj.updateDynamic("logRouteTags")(logRouteTags.asInstanceOf[js.Any])
-    if (!js.isUndefined(mergeHapiLogData)) __obj.updateDynamic("mergeHapiLogData")(mergeHapiLogData.asInstanceOf[js.Any])
+    if (!js.isUndefined(logRouteTags)) __obj.updateDynamic("logRouteTags")(logRouteTags.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mergeHapiLogData)) __obj.updateDynamic("mergeHapiLogData")(mergeHapiLogData.get.asInstanceOf[js.Any])
     if (prettyPrint != null) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
     if (redact != null) __obj.updateDynamic("redact")(redact.asInstanceOf[js.Any])
     if (serializers != null) __obj.updateDynamic("serializers")(serializers.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 package typings.algoliaClientSearch.mod
 
-import typings.algoliaClientSearch.AnonObjectID
-import typings.algoliaClientSearch.ConsequenceParamsPickSear
+import typings.algoliaClientSearch.anon.ConsequenceParamsPickSear
+import typings.algoliaClientSearch.anon.ObjectID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait Consequence extends js.Object {
   /**
     * Objects to hide from hits.
     */
-  val hide: js.UndefOr[js.Array[AnonObjectID]] = js.undefined
+  val hide: js.UndefOr[js.Array[ObjectID]] = js.undefined
   /**
     * Additional search parameters. Any valid search parameter is allowed.
     */
@@ -34,13 +34,13 @@ object Consequence {
   @scala.inline
   def apply(
     filterPromotes: js.UndefOr[Boolean] = js.undefined,
-    hide: js.Array[AnonObjectID] = null,
+    hide: js.Array[ObjectID] = null,
     params: ConsequenceParamsPickSear = null,
     promote: js.Array[ConsequencePromote] = null,
     userData: js.Any = null
   ): Consequence = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(filterPromotes)) __obj.updateDynamic("filterPromotes")(filterPromotes.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterPromotes)) __obj.updateDynamic("filterPromotes")(filterPromotes.get.asInstanceOf[js.Any])
     if (hide != null) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (promote != null) __obj.updateDynamic("promote")(promote.asInstanceOf[js.Any])

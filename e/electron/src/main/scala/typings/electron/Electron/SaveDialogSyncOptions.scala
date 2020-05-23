@@ -76,8 +76,8 @@ object SaveDialogSyncOptions {
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (nameFieldLabel != null) __obj.updateDynamic("nameFieldLabel")(nameFieldLabel.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (!js.isUndefined(securityScopedBookmarks)) __obj.updateDynamic("securityScopedBookmarks")(securityScopedBookmarks.asInstanceOf[js.Any])
-    if (!js.isUndefined(showsTagField)) __obj.updateDynamic("showsTagField")(showsTagField.asInstanceOf[js.Any])
+    if (!js.isUndefined(securityScopedBookmarks)) __obj.updateDynamic("securityScopedBookmarks")(securityScopedBookmarks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showsTagField)) __obj.updateDynamic("showsTagField")(showsTagField.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveDialogSyncOptions]
   }

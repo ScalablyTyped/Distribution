@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UntagResourceInput extends js.Object {
   /**
-    * The ARN of the signaling channel from which you want to remove tags.
+    * The Amazon Resource Name (ARN) of the signaling channel from which you want to remove tags.
     */
   var ResourceARN: typings.awsSdk.kinesisvideoMod.ResourceARN = js.native
   /**

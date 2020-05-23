@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +13,4 @@ trait ScaleBarViewModel extends Accessor {
     */
   var view: MapView = js.native
 }
-
-@JSGlobal("__esri.ScaleBarViewModel")
-@js.native
-object ScaleBarViewModel extends TopLevel[ScaleBarViewModelConstructor]
 

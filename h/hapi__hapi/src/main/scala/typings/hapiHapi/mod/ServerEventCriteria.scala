@@ -1,6 +1,6 @@
 package typings.hapiHapi.mod
 
-import typings.hapiHapi.AnonAll
+import typings.hapiHapi.anon.All
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +27,7 @@ trait ServerEventCriteria[T] extends js.Object {
     * * * tags - a tag string or array of tag strings.
     * * * all - if true, all tags must be present for the event update to match the subscription. Defaults to false (at least one matching tag).
     */
-  var filter: js.UndefOr[String | js.Array[String] | AnonAll] = js.undefined
+  var filter: js.UndefOr[String | js.Array[String] | All] = js.undefined
   /** (required) the event name string. */
   var name: T
   /**
@@ -48,18 +48,18 @@ object ServerEventCriteria {
     name: T,
     channels: String | js.Array[String] = null,
     clone: js.UndefOr[Boolean] = js.undefined,
-    count: Int | Double = null,
-    filter: String | js.Array[String] | AnonAll = null,
+    count: js.UndefOr[Double] = js.undefined,
+    filter: String | js.Array[String] | All = null,
     spread: js.UndefOr[Boolean] = js.undefined,
     tags: js.UndefOr[Boolean] = js.undefined
   ): ServerEventCriteria[T] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
-    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(spread)) __obj.updateDynamic("spread")(spread.asInstanceOf[js.Any])
-    if (!js.isUndefined(tags)) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (!js.isUndefined(spread)) __obj.updateDynamic("spread")(spread.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tags)) __obj.updateDynamic("tags")(tags.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerEventCriteria[T]]
   }
 }

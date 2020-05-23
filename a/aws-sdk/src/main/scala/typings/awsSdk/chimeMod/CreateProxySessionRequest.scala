@@ -46,14 +46,14 @@ object CreateProxySessionRequest {
     Capabilities: CapabilityList,
     ParticipantPhoneNumbers: ParticipantPhoneNumberList,
     VoiceConnectorId: NonEmptyString128,
-    ExpiryMinutes: Int | Double = null,
+    ExpiryMinutes: js.UndefOr[PositiveInteger] = js.undefined,
     GeoMatchLevel: GeoMatchLevel = null,
     GeoMatchParams: GeoMatchParams = null,
     Name: ProxySessionNameString = null,
     NumberSelectionBehavior: NumberSelectionBehavior = null
   ): CreateProxySessionRequest = {
     val __obj = js.Dynamic.literal(Capabilities = Capabilities.asInstanceOf[js.Any], ParticipantPhoneNumbers = ParticipantPhoneNumbers.asInstanceOf[js.Any], VoiceConnectorId = VoiceConnectorId.asInstanceOf[js.Any])
-    if (ExpiryMinutes != null) __obj.updateDynamic("ExpiryMinutes")(ExpiryMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(ExpiryMinutes)) __obj.updateDynamic("ExpiryMinutes")(ExpiryMinutes.get.asInstanceOf[js.Any])
     if (GeoMatchLevel != null) __obj.updateDynamic("GeoMatchLevel")(GeoMatchLevel.asInstanceOf[js.Any])
     if (GeoMatchParams != null) __obj.updateDynamic("GeoMatchParams")(GeoMatchParams.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])

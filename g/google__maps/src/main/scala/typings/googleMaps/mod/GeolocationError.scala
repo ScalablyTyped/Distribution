@@ -1,17 +1,17 @@
 package typings.googleMaps.mod
 
-import typings.googleMaps.AnonCode
+import typings.googleMaps.anon.Code
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GeolocationError extends js.Object {
-  var error: AnonCode
+  var error: Code
 }
 
 object GeolocationError {
   @scala.inline
-  def apply(error: AnonCode): GeolocationError = {
+  def apply(error: Code): GeolocationError = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeolocationError]
   }

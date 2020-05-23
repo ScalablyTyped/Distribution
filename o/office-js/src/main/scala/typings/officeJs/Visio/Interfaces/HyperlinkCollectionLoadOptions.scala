@@ -53,11 +53,11 @@ object HyperlinkCollectionLoadOptions {
     subAddress: js.UndefOr[Boolean] = js.undefined
   ): HyperlinkCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(address)) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(extraInfo)) __obj.updateDynamic("extraInfo")(extraInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(subAddress)) __obj.updateDynamic("subAddress")(subAddress.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(address)) __obj.updateDynamic("address")(address.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(extraInfo)) __obj.updateDynamic("extraInfo")(extraInfo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(subAddress)) __obj.updateDynamic("subAddress")(subAddress.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HyperlinkCollectionLoadOptions]
   }
 }

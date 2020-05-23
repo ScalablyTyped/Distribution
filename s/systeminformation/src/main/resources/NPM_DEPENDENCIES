@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "systeminformation" : "4.23.3"
+      "systeminformation" : "4.26.4"
     }
   ],
   "test-dependencies" : [
     {
-      "systeminformation" : "4.23.3"
+      "systeminformation" : "4.26.4"
     }
   ],
   "compile-devDependencies" : [

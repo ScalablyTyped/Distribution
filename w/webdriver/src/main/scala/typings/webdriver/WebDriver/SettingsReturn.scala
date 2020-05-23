@@ -28,41 +28,41 @@ object SettingsReturn {
   @scala.inline
   def apply(
     StringDictionary: StringDictionary[js.Any] = null,
-    actionAcknowledgmentTimeout: Int | Double = null,
+    actionAcknowledgmentTimeout: js.UndefOr[Double] = js.undefined,
     allowInvisibleElements: js.UndefOr[Boolean] = js.undefined,
     elementResponseAttributes: String = null,
     enableNotificationListener: js.UndefOr[Boolean] = js.undefined,
     ignoreUnimportantViews: js.UndefOr[Boolean] = js.undefined,
-    keyInjectionDelay: Int | Double = null,
-    mjpegScalingFactor: Int | Double = null,
-    mjpegServerFramerate: Int | Double = null,
-    mjpegServerScreenshotQuality: Int | Double = null,
+    keyInjectionDelay: js.UndefOr[Double] = js.undefined,
+    mjpegScalingFactor: js.UndefOr[Double] = js.undefined,
+    mjpegServerFramerate: js.UndefOr[Double] = js.undefined,
+    mjpegServerScreenshotQuality: js.UndefOr[Double] = js.undefined,
     normalizeTagNames: js.UndefOr[Boolean] = js.undefined,
-    screenshotQuality: Int | Double = null,
-    scrollAcknowledgmentTimeout: Int | Double = null,
+    screenshotQuality: js.UndefOr[Double] = js.undefined,
+    scrollAcknowledgmentTimeout: js.UndefOr[Double] = js.undefined,
     shouldUseCompactResponses: js.UndefOr[Boolean] = js.undefined,
     shutdownOnPowerDisconnect: js.UndefOr[Boolean] = js.undefined,
-    waitForIdleTimeout: Int | Double = null,
-    waitForSelectorTimeout: Int | Double = null
+    waitForIdleTimeout: js.UndefOr[Double] = js.undefined,
+    waitForSelectorTimeout: js.UndefOr[Double] = js.undefined
   ): SettingsReturn = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (actionAcknowledgmentTimeout != null) __obj.updateDynamic("actionAcknowledgmentTimeout")(actionAcknowledgmentTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowInvisibleElements)) __obj.updateDynamic("allowInvisibleElements")(allowInvisibleElements.asInstanceOf[js.Any])
+    if (!js.isUndefined(actionAcknowledgmentTimeout)) __obj.updateDynamic("actionAcknowledgmentTimeout")(actionAcknowledgmentTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowInvisibleElements)) __obj.updateDynamic("allowInvisibleElements")(allowInvisibleElements.get.asInstanceOf[js.Any])
     if (elementResponseAttributes != null) __obj.updateDynamic("elementResponseAttributes")(elementResponseAttributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableNotificationListener)) __obj.updateDynamic("enableNotificationListener")(enableNotificationListener.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUnimportantViews)) __obj.updateDynamic("ignoreUnimportantViews")(ignoreUnimportantViews.asInstanceOf[js.Any])
-    if (keyInjectionDelay != null) __obj.updateDynamic("keyInjectionDelay")(keyInjectionDelay.asInstanceOf[js.Any])
-    if (mjpegScalingFactor != null) __obj.updateDynamic("mjpegScalingFactor")(mjpegScalingFactor.asInstanceOf[js.Any])
-    if (mjpegServerFramerate != null) __obj.updateDynamic("mjpegServerFramerate")(mjpegServerFramerate.asInstanceOf[js.Any])
-    if (mjpegServerScreenshotQuality != null) __obj.updateDynamic("mjpegServerScreenshotQuality")(mjpegServerScreenshotQuality.asInstanceOf[js.Any])
-    if (!js.isUndefined(normalizeTagNames)) __obj.updateDynamic("normalizeTagNames")(normalizeTagNames.asInstanceOf[js.Any])
-    if (screenshotQuality != null) __obj.updateDynamic("screenshotQuality")(screenshotQuality.asInstanceOf[js.Any])
-    if (scrollAcknowledgmentTimeout != null) __obj.updateDynamic("scrollAcknowledgmentTimeout")(scrollAcknowledgmentTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldUseCompactResponses)) __obj.updateDynamic("shouldUseCompactResponses")(shouldUseCompactResponses.asInstanceOf[js.Any])
-    if (!js.isUndefined(shutdownOnPowerDisconnect)) __obj.updateDynamic("shutdownOnPowerDisconnect")(shutdownOnPowerDisconnect.asInstanceOf[js.Any])
-    if (waitForIdleTimeout != null) __obj.updateDynamic("waitForIdleTimeout")(waitForIdleTimeout.asInstanceOf[js.Any])
-    if (waitForSelectorTimeout != null) __obj.updateDynamic("waitForSelectorTimeout")(waitForSelectorTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableNotificationListener)) __obj.updateDynamic("enableNotificationListener")(enableNotificationListener.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUnimportantViews)) __obj.updateDynamic("ignoreUnimportantViews")(ignoreUnimportantViews.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyInjectionDelay)) __obj.updateDynamic("keyInjectionDelay")(keyInjectionDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mjpegScalingFactor)) __obj.updateDynamic("mjpegScalingFactor")(mjpegScalingFactor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mjpegServerFramerate)) __obj.updateDynamic("mjpegServerFramerate")(mjpegServerFramerate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mjpegServerScreenshotQuality)) __obj.updateDynamic("mjpegServerScreenshotQuality")(mjpegServerScreenshotQuality.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(normalizeTagNames)) __obj.updateDynamic("normalizeTagNames")(normalizeTagNames.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(screenshotQuality)) __obj.updateDynamic("screenshotQuality")(screenshotQuality.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollAcknowledgmentTimeout)) __obj.updateDynamic("scrollAcknowledgmentTimeout")(scrollAcknowledgmentTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldUseCompactResponses)) __obj.updateDynamic("shouldUseCompactResponses")(shouldUseCompactResponses.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shutdownOnPowerDisconnect)) __obj.updateDynamic("shutdownOnPowerDisconnect")(shutdownOnPowerDisconnect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForIdleTimeout)) __obj.updateDynamic("waitForIdleTimeout")(waitForIdleTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForSelectorTimeout)) __obj.updateDynamic("waitForSelectorTimeout")(waitForSelectorTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettingsReturn]
   }
 }

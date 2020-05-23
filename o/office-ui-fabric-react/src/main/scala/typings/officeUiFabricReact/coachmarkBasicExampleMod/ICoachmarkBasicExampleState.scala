@@ -19,7 +19,7 @@ object ICoachmarkBasicExampleState {
     isCoachmarkVisible: js.UndefOr[Boolean] = js.undefined
   ): ICoachmarkBasicExampleState = {
     val __obj = js.Dynamic.literal(coachmarkPosition = coachmarkPosition.asInstanceOf[js.Any], dropdownSelectedOptionKey = dropdownSelectedOptionKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCoachmarkVisible)) __obj.updateDynamic("isCoachmarkVisible")(isCoachmarkVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCoachmarkVisible)) __obj.updateDynamic("isCoachmarkVisible")(isCoachmarkVisible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICoachmarkBasicExampleState]
   }
 }

@@ -1,6 +1,5 @@
 package typings.miniprogramWxs
 
-import org.scalablytyped.runtime.TopLevel
 import typings.miniprogramWxs.Intl.NumberFormatOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,9 +32,4 @@ trait Number extends js.Object {
   def toPrecision(precision: Double): java.lang.String = js.native
   def toString(radix: Double): java.lang.String = js.native
 }
-
-/** An object that represents a number of any kind. All JavaScript numbers are 64-bit floating-point numbers. */
-@JSGlobal("Number")
-@js.native
-object Number extends TopLevel[NumberConstructor]
 

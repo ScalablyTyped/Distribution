@@ -1,6 +1,7 @@
 package typings.three
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.three.anon.Geometries
 import typings.three.bufferGeometryMod.BufferGeometry
 import typings.three.cameraMod.Camera
 import typings.three.eulerMod.Euler
@@ -265,7 +266,7 @@ object object3DMod extends js.Object {
     	 */
     def setRotationFromQuaternion(q: Quaternion): Unit = js.native
     def toJSON(): js.Any = js.native
-    def toJSON(meta: AnonGeometries): js.Any = js.native
+    def toJSON(meta: Geometries): js.Any = js.native
     /**
     	 * @param axis	A normalized vector in object space.
     	 * @param distance	The distance to translate.

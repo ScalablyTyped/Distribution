@@ -9,9 +9,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.core.Core")
 @js.native
-class Core () extends Object {
+trait Core extends Object {
   /**
     * Enforces an immediate update of the visible UI (aka "rendering").In general, applications should
     * avoid calling this method andinstead let the framework manage any necessary rendering.

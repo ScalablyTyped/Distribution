@@ -22,13 +22,13 @@ object PageScrollToOption {
   def apply(
     scrollTop: Double,
     complete: /* res */ GeneralCallbackResult => Unit = null,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     fail: /* res */ GeneralCallbackResult => Unit = null,
     success: /* res */ GeneralCallbackResult => Unit = null
   ): PageScrollToOption = {
     val __obj = js.Dynamic.literal(scrollTop = scrollTop.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[PageScrollToOption]

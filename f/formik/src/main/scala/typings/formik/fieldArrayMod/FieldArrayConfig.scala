@@ -39,7 +39,7 @@ object FieldArrayConfig {
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
-    if (!js.isUndefined(validateOnChange)) __obj.updateDynamic("validateOnChange")(validateOnChange.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateOnChange)) __obj.updateDynamic("validateOnChange")(validateOnChange.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldArrayConfig]
   }
 }

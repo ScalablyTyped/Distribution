@@ -73,27 +73,27 @@ object YouTubePlayerOptions {
     captions: `false` | String = null,
     controls: js.UndefOr[Boolean] = js.undefined,
     fullscreen: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     keyboard: js.UndefOr[Boolean] = js.undefined,
     modestBranding: js.UndefOr[Boolean] = js.undefined,
     playsInline: js.UndefOr[Boolean] = js.undefined,
     related: js.UndefOr[Boolean] = js.undefined,
-    timeupdateFrequency: Int | Double = null,
-    width: Int | Double = null
+    timeupdateFrequency: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): YouTubePlayerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(annotations)) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
+    if (!js.isUndefined(annotations)) __obj.updateDynamic("annotations")(annotations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.get.asInstanceOf[js.Any])
     if (captions != null) __obj.updateDynamic("captions")(captions.asInstanceOf[js.Any])
-    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
-    if (!js.isUndefined(modestBranding)) __obj.updateDynamic("modestBranding")(modestBranding.asInstanceOf[js.Any])
-    if (!js.isUndefined(playsInline)) __obj.updateDynamic("playsInline")(playsInline.asInstanceOf[js.Any])
-    if (!js.isUndefined(related)) __obj.updateDynamic("related")(related.asInstanceOf[js.Any])
-    if (timeupdateFrequency != null) __obj.updateDynamic("timeupdateFrequency")(timeupdateFrequency.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(modestBranding)) __obj.updateDynamic("modestBranding")(modestBranding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(playsInline)) __obj.updateDynamic("playsInline")(playsInline.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(related)) __obj.updateDynamic("related")(related.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeupdateFrequency)) __obj.updateDynamic("timeupdateFrequency")(timeupdateFrequency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[YouTubePlayerOptions]
   }
 }

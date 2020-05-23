@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.anon.PartialIColorPickerGridCe
 import typings.officeUiFabricReact.colorPickerGridCellTypesMod.IColorPickerGridCellProps
 import typings.react.mod.Component
 import scala.scalajs.js

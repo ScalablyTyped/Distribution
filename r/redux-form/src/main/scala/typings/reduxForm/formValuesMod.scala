@@ -29,7 +29,7 @@ object formValuesMod extends js.Object {
       ComponentState
     ]
   ] = js.native
-  def formValues[FormData, K /* <: append | delete | get | getAll | has | set | forEach | entries | keys | values */, P](names: K*): js.Function1[
+  def formValues[FormData, K /* <: /* keyof FormData */ append | delete | get | getAll | has | set | forEach | entries | keys | values */, P](names: K*): js.Function1[
     /* component */ ComponentType[P with (Pick[FormData, K])], 
     ComponentClass[P with (Pick[FormData, K]), ComponentState]
   ] = js.native

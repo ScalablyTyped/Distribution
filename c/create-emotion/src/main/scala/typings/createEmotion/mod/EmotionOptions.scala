@@ -25,14 +25,14 @@ object EmotionOptions {
     key: String = null,
     nonce: String = null,
     prefix: Boolean | (js.Function3[/* key */ String, /* value */ String, /* context */ `1` | `2` | `3`, Boolean]) = null,
-    stylisPlugins: StylisPlugins = null
+    stylisPlugins: js.UndefOr[Null | StylisPlugins] = js.undefined
   ): EmotionOptions = {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (stylisPlugins != null) __obj.updateDynamic("stylisPlugins")(stylisPlugins.asInstanceOf[js.Any])
+    if (!js.isUndefined(stylisPlugins)) __obj.updateDynamic("stylisPlugins")(stylisPlugins.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmotionOptions]
   }
 }

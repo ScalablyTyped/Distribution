@@ -4,45 +4,42 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.SphereDirectedParticleEmitter")
-@js.native
-/**
-  * Creates a new instance SphereDirectedParticleEmitter
-  * @param radius the radius of the emission sphere (1 by default)
-  * @param direction1 the min limit of the emission direction (up vector by default)
-  * @param direction2 the max limit of the emission direction (up vector by default)
-  */
-class SphereDirectedParticleEmitter () extends SphereParticleEmitter {
-  def this(radius: Double) = this()
-  def this(radius: Double, /**
-    * The min limit of the emission direction.
-    */
-  direction1: Vector3) = this()
-  def this(
-    radius: Double,
-    /**
-    * The min limit of the emission direction.
-    */
-  direction1: Vector3,
-    /**
-    * The max limit of the emission direction.
-    */
-  direction2: Vector3
-  ) = this()
+trait SphereDirectedParticleEmitter extends SphereParticleEmitter {
   /**
     * The min limit of the emission direction.
     */
-  var direction1: Vector3 = js.native
+  var direction1: Vector3
   /**
     * The max limit of the emission direction.
     */
-  var direction2: Vector3 = js.native
+  var direction2: Vector3
   /**
     * Called by the particle System when the direction is computed for the created particle.
     * @param worldMatrix is the world matrix of the particle system
     * @param directionToUpdate is the direction vector to update with the result
     * @param particle is the particle we are computed the direction for
     */
-  def startDirectionFunction(worldMatrix: Matrix, directionToUpdate: Vector3, particle: Particle): Unit = js.native
+  def startDirectionFunction(worldMatrix: Matrix, directionToUpdate: Vector3, particle: Particle): Unit
+}
+
+object SphereDirectedParticleEmitter {
+  @scala.inline
+  def apply(
+    applyToShader: Effect => Unit,
+    direction1: Vector3,
+    direction2: Vector3,
+    directionRandomizer: Double,
+    getClassName: () => String,
+    getEffectDefines: () => String,
+    parse: js.Any => Unit,
+    radius: Double,
+    radiusRange: Double,
+    serialize: () => js.Any,
+    startDirectionFunction: (Matrix, Vector3, Particle) => Unit,
+    startPositionFunction: (Matrix, Vector3, Particle, Boolean) => Unit
+  ): SphereDirectedParticleEmitter = {
+    val __obj = js.Dynamic.literal(applyToShader = js.Any.fromFunction1(applyToShader), direction1 = direction1.asInstanceOf[js.Any], direction2 = direction2.asInstanceOf[js.Any], directionRandomizer = directionRandomizer.asInstanceOf[js.Any], getClassName = js.Any.fromFunction0(getClassName), getEffectDefines = js.Any.fromFunction0(getEffectDefines), parse = js.Any.fromFunction1(parse), radius = radius.asInstanceOf[js.Any], radiusRange = radiusRange.asInstanceOf[js.Any], serialize = js.Any.fromFunction0(serialize), startDirectionFunction = js.Any.fromFunction3(startDirectionFunction), startPositionFunction = js.Any.fromFunction4(startPositionFunction))
+    __obj.asInstanceOf[SphereDirectedParticleEmitter]
+  }
 }
 

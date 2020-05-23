@@ -1,6 +1,6 @@
 package typings.graphqlTools.extractFieldMod
 
-import typings.graphqlTools.AnonFrom
+import typings.graphqlTools.anon.From
 import typings.graphqlTools.interfacesMod.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql-tools/dist/transforms/ExtractField", JSImport.Default)
 @js.native
 class default protected () extends ExtractField {
-  def this(hasFromTo: AnonFrom) = this()
+  def this(hasFromTo: From) = this()
   /* CompleteClass */
   override var from: js.Any = js.native
   /* CompleteClass */

@@ -1,8 +1,9 @@
 package typings.node.netMod
 
-import typings.node.AnonEnd
 import typings.node.Buffer
+import typings.node.BufferEncoding
 import typings.node.NodeJS.WritableStream
+import typings.node.anon.End
 import typings.node.childProcessMod.SendHandle
 import typings.node.nodeStrings.close
 import typings.node.nodeStrings.data
@@ -72,10 +73,10 @@ class Socket ()
   def end(buffer: String, cb: js.Function0[Unit]): Unit = js.native
   def end(buffer: Uint8Array): Unit = js.native
   def end(buffer: Uint8Array, cb: js.Function0[Unit]): Unit = js.native
-  def end(str: String, encoding: String): Unit = js.native
-  def end(str: String, encoding: String, cb: js.Function0[Unit]): Unit = js.native
-  def end(str: Uint8Array, encoding: String): Unit = js.native
-  def end(str: Uint8Array, encoding: String, cb: js.Function0[Unit]): Unit = js.native
+  def end(str: String, encoding: BufferEncoding): Unit = js.native
+  def end(str: String, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
+  def end(str: Uint8Array, encoding: BufferEncoding): Unit = js.native
+  def end(str: Uint8Array, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
   @JSName("on")
   def on_close(event: close, listener: js.Function1[/* had_error */ Boolean, Unit]): this.type = js.native
   @JSName("on")
@@ -113,7 +114,7 @@ class Socket ()
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T): T = js.native
   /* InferMemberOverrides */
-  override def pipe[T /* <: WritableStream */](destination: T, options: AnonEnd): T = js.native
+  override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
   @JSName("prependListener")
   def prependListener_close(event: close, listener: js.Function1[/* had_error */ Boolean, Unit]): this.type = js.native
   @JSName("prependListener")
@@ -163,9 +164,9 @@ class Socket ()
   // Extended base methods
   def write(buffer: Uint8Array): Boolean = js.native
   def write(buffer: Uint8Array, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native
-  def write(str: String, encoding: String): Boolean = js.native
-  def write(str: String, encoding: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native
-  def write(str: Uint8Array, encoding: String): Boolean = js.native
-  def write(str: Uint8Array, encoding: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native
+  def write(str: String, encoding: BufferEncoding): Boolean = js.native
+  def write(str: String, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native
+  def write(str: Uint8Array, encoding: BufferEncoding): Boolean = js.native
+  def write(str: Uint8Array, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native
 }
 

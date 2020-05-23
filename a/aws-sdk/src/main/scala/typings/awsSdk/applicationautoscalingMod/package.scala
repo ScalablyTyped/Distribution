@@ -54,6 +54,8 @@ package object applicationautoscalingMod {
     - typings.awsSdk.awsSdkStrings.AppStreamAverageCapacityUtilization
     - typings.awsSdk.awsSdkStrings.ComprehendInferenceUtilization
     - typings.awsSdk.awsSdkStrings.LambdaProvisionedConcurrencyUtilization
+    - typings.awsSdk.awsSdkStrings.CassandraReadCapacityUtilization
+    - typings.awsSdk.awsSdkStrings.CassandraWriteCapacityUtilization
     - java.lang.String
   */
   type MetricType = typings.awsSdk.applicationautoscalingMod._MetricType | java.lang.String
@@ -85,6 +87,8 @@ package object applicationautoscalingMod {
     - typings.awsSdk.awsSdkStrings.`custom-resourceColonResourceTypeColonProperty`
     - typings.awsSdk.awsSdkStrings.`comprehendColondocument-classifier-endpointColonDesiredInferenceUnits`
     - typings.awsSdk.awsSdkStrings.lambdaColonfunctionColonProvisionedConcurrency
+    - typings.awsSdk.awsSdkStrings.cassandraColontableColonReadCapacityUnits
+    - typings.awsSdk.awsSdkStrings.cassandraColontableColonWriteCapacityUnits
     - java.lang.String
   */
   type ScalableDimension = typings.awsSdk.applicationautoscalingMod._ScalableDimension | java.lang.String
@@ -116,6 +120,7 @@ package object applicationautoscalingMod {
     - typings.awsSdk.awsSdkStrings.`custom-resource`
     - typings.awsSdk.awsSdkStrings.comprehend
     - typings.awsSdk.awsSdkStrings.lambda__
+    - typings.awsSdk.awsSdkStrings.cassandra
     - java.lang.String
   */
   type ServiceNamespace = typings.awsSdk.applicationautoscalingMod._ServiceNamespace | java.lang.String

@@ -25,7 +25,7 @@ object StrategyOptions {
     tokenQuery: String = null
   ): StrategyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(failedOnMissing)) __obj.updateDynamic("failedOnMissing")(failedOnMissing.asInstanceOf[js.Any])
+    if (!js.isUndefined(failedOnMissing)) __obj.updateDynamic("failedOnMissing")(failedOnMissing.get.asInstanceOf[js.Any])
     if (passReqToCallback != null) __obj.updateDynamic("passReqToCallback")(passReqToCallback.asInstanceOf[js.Any])
     if (tokenField != null) __obj.updateDynamic("tokenField")(tokenField.asInstanceOf[js.Any])
     if (tokenHeader != null) __obj.updateDynamic("tokenHeader")(tokenHeader.asInstanceOf[js.Any])

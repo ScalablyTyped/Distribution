@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.PdfViewer
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,14 +17,6 @@ object BufferingMode extends js.Object {
   ///Retrieves details to render first two pages in a request and rest of the pages in other request.
   @js.native
   sealed trait Default extends BufferingMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BufferingMode with Double] = js.native
-  /* 1 */ @js.native
-  object Complete extends TopLevel[Complete with Double]
-  
-  /* 0 */ @js.native
-  object Default extends TopLevel[Default with Double]
   
 }
 

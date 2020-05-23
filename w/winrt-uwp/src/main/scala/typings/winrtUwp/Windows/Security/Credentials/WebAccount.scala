@@ -9,16 +9,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Identifies an account from a web account provider. */
-@JSGlobal("Windows.Security.Credentials.WebAccount")
 @js.native
-class WebAccount protected () extends js.Object {
-  /**
-    * Creates an instance of the WebAccount class.
-    * @param webAccountProvider The web account provider associated with the web account.
-    * @param userName The user name of the web account.
-    * @param state The state of the web account.
-    */
-  def this(webAccountProvider: WebAccountProvider, userName: String, state: WebAccountState) = this()
+trait WebAccount extends js.Object {
   /** Gets the Id of the web account. */
   var id: String = js.native
   /** Gets the properties of the web account. */

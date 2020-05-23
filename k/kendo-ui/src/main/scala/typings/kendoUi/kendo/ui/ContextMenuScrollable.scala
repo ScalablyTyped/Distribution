@@ -10,9 +10,9 @@ trait ContextMenuScrollable extends js.Object {
 
 object ContextMenuScrollable {
   @scala.inline
-  def apply(distance: Int | Double = null): ContextMenuScrollable = {
+  def apply(distance: js.UndefOr[Double] = js.undefined): ContextMenuScrollable = {
     val __obj = js.Dynamic.literal()
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextMenuScrollable]
   }
 }

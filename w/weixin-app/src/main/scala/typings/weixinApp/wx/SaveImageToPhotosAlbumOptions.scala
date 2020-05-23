@@ -1,6 +1,6 @@
 package typings.weixinApp.wx
 
-import typings.weixinApp.AnonErrMsg
+import typings.weixinApp.anon.ErrMsg
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,18 +8,18 @@ import scala.scalajs.js.annotation._
 trait SaveImageToPhotosAlbumOptions
   extends BaseOptions[js.Any, js.Any] {
   /**
-  		 * 图片的路径，可以是相对路径，临时文件路径，存储文件路径，网络图片路径
-  		 */
+    * 图片的路径，可以是相对路径，临时文件路径，存储文件路径，网络图片路径
+    */
   var filePath: String
   @JSName("success")
-  def success_MSaveImageToPhotosAlbumOptions(res: AnonErrMsg): Unit
+  def success_MSaveImageToPhotosAlbumOptions(res: ErrMsg): Unit
 }
 
 object SaveImageToPhotosAlbumOptions {
   @scala.inline
   def apply(
     filePath: String,
-    success: AnonErrMsg => Unit,
+    success: ErrMsg => Unit,
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null
   ): SaveImageToPhotosAlbumOptions = {

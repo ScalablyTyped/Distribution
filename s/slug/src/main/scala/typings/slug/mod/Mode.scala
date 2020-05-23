@@ -17,19 +17,19 @@ trait Mode extends js.Object {
 object Mode {
   @scala.inline
   def apply(
-    charmap: CharMap_ = null,
-    lower: js.UndefOr[Boolean] = js.undefined,
-    multicharmap: CharMap_ = null,
-    remove: RegExp = null,
-    replacement: String = null,
-    symbols: js.UndefOr[Boolean] = js.undefined
+    charmap: js.UndefOr[Null | CharMap_] = js.undefined,
+    lower: js.UndefOr[Null | Boolean] = js.undefined,
+    multicharmap: js.UndefOr[Null | CharMap_] = js.undefined,
+    remove: js.UndefOr[Null | RegExp] = js.undefined,
+    replacement: js.UndefOr[Null | String] = js.undefined,
+    symbols: js.UndefOr[Null | Boolean] = js.undefined
   ): Mode = {
     val __obj = js.Dynamic.literal()
-    if (charmap != null) __obj.updateDynamic("charmap")(charmap.asInstanceOf[js.Any])
+    if (!js.isUndefined(charmap)) __obj.updateDynamic("charmap")(charmap.asInstanceOf[js.Any])
     if (!js.isUndefined(lower)) __obj.updateDynamic("lower")(lower.asInstanceOf[js.Any])
-    if (multicharmap != null) __obj.updateDynamic("multicharmap")(multicharmap.asInstanceOf[js.Any])
-    if (remove != null) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
-    if (replacement != null) __obj.updateDynamic("replacement")(replacement.asInstanceOf[js.Any])
+    if (!js.isUndefined(multicharmap)) __obj.updateDynamic("multicharmap")(multicharmap.asInstanceOf[js.Any])
+    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
+    if (!js.isUndefined(replacement)) __obj.updateDynamic("replacement")(replacement.asInstanceOf[js.Any])
     if (!js.isUndefined(symbols)) __obj.updateDynamic("symbols")(symbols.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mode]
   }

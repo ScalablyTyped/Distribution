@@ -13,9 +13,8 @@ import scala.scalajs.js.annotation._
   * is unique to their type, but share the underlying properties and functions
   * that they inherit from Item.
   */
-@JSGlobal("paper.Item")
 @js.native
-class Item () extends js.Object {
+trait Item extends js.Object {
   /** 
     * Controls whether the transformations applied to the item (e.g. through
     * {@link #transform}, {@link #rotate},

@@ -1,6 +1,6 @@
 package typings.appleMusicApi.AppleMusicApi
 
-import typings.appleMusicApi.AnonArtistName
+import typings.appleMusicApi.anon.ArtistName
 import typings.appleMusicApi.appleMusicApiStrings.albums
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 // https://developer.apple.com/documentation/applemusicapi/album
 trait Album extends Resource {
   // https://developer.apple.com/documentation/applemusicapi/album/attributes
-  var attributes: js.UndefOr[AnonArtistName] = js.undefined
+  var attributes: js.UndefOr[ArtistName] = js.undefined
   var relationships: js.UndefOr[AlbumRelationships] = js.undefined
   @JSName("type")
   var type_Album: albums
@@ -20,7 +20,7 @@ object Album {
   def apply(
     id: String,
     `type`: albums,
-    attributes: AnonArtistName = null,
+    attributes: ArtistName = null,
     href: String = null,
     relationships: AlbumRelationships = null
   ): Album = {

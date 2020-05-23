@@ -1,7 +1,7 @@
 package typings.postcssSelectorParser.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.postcssSelectorParser.PartialSpaceAround
+import typings.postcssSelectorParser.anon.PartialSpaceAround
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

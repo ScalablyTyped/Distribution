@@ -7,12 +7,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/indexeddb_schema", "DbDocumentMutation")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbDocumentMutation")
 @js.native
 class DbDocumentMutation protected () extends js.Object
 
 /* static members */
-@JSImport("@firebase/firestore/dist/lib/src/local/indexeddb_schema", "DbDocumentMutation")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbDocumentMutation")
 @js.native
 object DbDocumentMutation extends js.Object {
   /**

@@ -6,7 +6,7 @@ import typings.tapable.mod.AsyncParallelHook
 import typings.tapable.mod.AsyncSeriesHook
 import typings.tapable.mod.SyncBailHook
 import typings.tapable.mod.SyncHook
-import typings.webpack.AnonNormalModuleFactory
+import typings.webpack.anon.NormalModuleFactory
 import typings.webpack.mod.Compiler_
 import typings.webpack.mod.Stats
 import scala.scalajs.js
@@ -22,7 +22,7 @@ trait CompilerHooks extends js.Object {
   var afterResolvers: SyncHook[Compiler_, _, _]
   var beforeCompile: AsyncSeriesHook[js.Object, _, _]
   var beforeRun: AsyncSeriesHook[Compiler_, _, _]
-  var compilation: SyncHook[Compilation, AnonNormalModuleFactory, _]
+  var compilation: SyncHook[Compilation, NormalModuleFactory, _]
   var compile: SyncHook[js.Object, _, _]
   var contextModuleFactory: SyncHook[ContextModuleFactory, _, _]
   var done: AsyncSeriesHook[Stats, _, _]
@@ -35,7 +35,7 @@ trait CompilerHooks extends js.Object {
   var normalModuleFactory: SyncHook[NormalModuleFactory_, _, _]
   var run: AsyncSeriesHook[Compiler_, _, _]
   var shouldEmit: SyncBailHook[Compilation, _, _, _]
-  var thisCompilation: SyncHook[Compilation, AnonNormalModuleFactory, _]
+  var thisCompilation: SyncHook[Compilation, NormalModuleFactory, _]
   var watchClose: SyncHook[_, _, _]
   var watchRun: AsyncSeriesHook[Compiler_, _, _]
 }
@@ -51,7 +51,7 @@ object CompilerHooks {
     afterResolvers: SyncHook[Compiler_, _, _],
     beforeCompile: AsyncSeriesHook[js.Object, _, _],
     beforeRun: AsyncSeriesHook[Compiler_, _, _],
-    compilation: SyncHook[Compilation, AnonNormalModuleFactory, _],
+    compilation: SyncHook[Compilation, NormalModuleFactory, _],
     compile: SyncHook[js.Object, _, _],
     contextModuleFactory: SyncHook[ContextModuleFactory, _, _],
     done: AsyncSeriesHook[Stats, _, _],
@@ -64,7 +64,7 @@ object CompilerHooks {
     normalModuleFactory: SyncHook[NormalModuleFactory_, _, _],
     run: AsyncSeriesHook[Compiler_, _, _],
     shouldEmit: SyncBailHook[Compilation, _, _, _],
-    thisCompilation: SyncHook[Compilation, AnonNormalModuleFactory, _],
+    thisCompilation: SyncHook[Compilation, NormalModuleFactory, _],
     watchClose: SyncHook[_, _, _],
     watchRun: AsyncSeriesHook[Compiler_, _, _]
   ): CompilerHooks = {

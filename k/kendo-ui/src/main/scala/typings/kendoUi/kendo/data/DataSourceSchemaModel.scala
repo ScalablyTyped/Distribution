@@ -14,7 +14,7 @@ trait DataSourceSchemaModel
 object DataSourceSchemaModel {
   @scala.inline
   def apply(
-    StringDictionary: /* index */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     fields: js.Any = null,
     id: String = null
   ): DataSourceSchemaModel = {

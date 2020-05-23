@@ -38,7 +38,7 @@ object RequestOptions {
     passphrase: String = null,
     path: String = null,
     pfx: js.Any = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
   ): RequestOptions = {
     val __obj = js.Dynamic.literal()
@@ -55,8 +55,8 @@ object RequestOptions {
     if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOptions]
   }
 }

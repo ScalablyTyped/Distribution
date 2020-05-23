@@ -28,7 +28,7 @@ object RouteSpecHttpRouteMatchHeader {
     `match`: RouteSpecHttpRouteMatchHeaderMatch = null
   ): RouteSpecHttpRouteMatchHeader = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (!js.isUndefined(invert)) __obj.updateDynamic("invert")(invert.asInstanceOf[js.Any])
+    if (!js.isUndefined(invert)) __obj.updateDynamic("invert")(invert.get.asInstanceOf[js.Any])
     if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteSpecHttpRouteMatchHeader]
   }

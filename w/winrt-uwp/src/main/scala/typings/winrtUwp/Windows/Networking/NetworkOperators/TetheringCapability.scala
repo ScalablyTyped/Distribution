@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.NetworkOperators
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,32 +42,6 @@ object TetheringCapability extends js.Object {
   /** Tethering is enabled. */
   @js.native
   sealed trait enabled extends TetheringCapability
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TetheringCapability with Double] = js.native
-  /* 1 */ @js.native
-  object disabledByGroupPolicy extends TopLevel[disabledByGroupPolicy with Double]
-  
-  /* 2 */ @js.native
-  object disabledByHardwareLimitation extends TopLevel[disabledByHardwareLimitation with Double]
-  
-  /* 3 */ @js.native
-  object disabledByOperator extends TopLevel[disabledByOperator with Double]
-  
-  /* 5 */ @js.native
-  object disabledByRequiredAppNotInstalled extends TopLevel[disabledByRequiredAppNotInstalled with Double]
-  
-  /* 4 */ @js.native
-  object disabledBySku extends TopLevel[disabledBySku with Double]
-  
-  /* 7 */ @js.native
-  object disabledBySystemCapability extends TopLevel[disabledBySystemCapability with Double]
-  
-  /* 6 */ @js.native
-  object disabledDueToUnknownCause extends TopLevel[disabledDueToUnknownCause with Double]
-  
-  /* 0 */ @js.native
-  object enabled extends TopLevel[enabled with Double]
   
 }
 

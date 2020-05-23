@@ -1,6 +1,6 @@
 package typings.anyPromise.registerMod
 
-import typings.anyPromise.TypeofPromise
+import typings.anyPromise.anon.TypeofPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ object Options {
   def apply(Promise: TypeofPromise = null, global: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
     if (Promise != null) __obj.updateDynamic("Promise")(Promise.asInstanceOf[js.Any])
-    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

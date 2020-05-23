@@ -16,11 +16,15 @@ trait TrainingExample extends js.Object {
 
 object TrainingExample {
   @scala.inline
-  def apply(cross_reference: String = null, document_id: String = null, relevance: Int | Double = null): TrainingExample = {
+  def apply(
+    cross_reference: String = null,
+    document_id: String = null,
+    relevance: js.UndefOr[Double] = js.undefined
+  ): TrainingExample = {
     val __obj = js.Dynamic.literal()
     if (cross_reference != null) __obj.updateDynamic("cross_reference")(cross_reference.asInstanceOf[js.Any])
     if (document_id != null) __obj.updateDynamic("document_id")(document_id.asInstanceOf[js.Any])
-    if (relevance != null) __obj.updateDynamic("relevance")(relevance.asInstanceOf[js.Any])
+    if (!js.isUndefined(relevance)) __obj.updateDynamic("relevance")(relevance.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrainingExample]
   }
 }

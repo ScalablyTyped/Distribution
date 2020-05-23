@@ -1,24 +1,24 @@
 package typings.sdpTransform.mod
 
-import typings.sdpTransform.AnonAddressTypes
-import typings.sdpTransform.AnonApp
-import typings.sdpTransform.AnonAttribute
-import typings.sdpTransform.AnonAttrs1
-import typings.sdpTransform.AnonCodec
-import typings.sdpTransform.AnonConfig
-import typings.sdpTransform.AnonDir1
-import typings.sdpTransform.AnonDirection
-import typings.sdpTransform.AnonFoundation
-import typings.sdpTransform.AnonHash
-import typings.sdpTransform.AnonId
-import typings.sdpTransform.AnonIp
-import typings.sdpTransform.AnonIpVer
-import typings.sdpTransform.AnonLimit
-import typings.sdpTransform.AnonPayload
-import typings.sdpTransform.AnonSemantics
-import typings.sdpTransform.AnonUri
-import typings.sdpTransform.AnonValue
-import typings.sdpTransform.AnonValueString
+import typings.sdpTransform.anon.AddressTypes
+import typings.sdpTransform.anon.App
+import typings.sdpTransform.anon.Attribute
+import typings.sdpTransform.anon.Attrs1
+import typings.sdpTransform.anon.Codec
+import typings.sdpTransform.anon.Config
+import typings.sdpTransform.anon.Dir1
+import typings.sdpTransform.anon.Direction
+import typings.sdpTransform.anon.Foundation
+import typings.sdpTransform.anon.Hash
+import typings.sdpTransform.anon.Id
+import typings.sdpTransform.anon.Ip
+import typings.sdpTransform.anon.IpVer
+import typings.sdpTransform.anon.Limit
+import typings.sdpTransform.anon.Payload
+import typings.sdpTransform.anon.Semantics
+import typings.sdpTransform.anon.Uri
+import typings.sdpTransform.anon.Value
+import typings.sdpTransform.anon.ValueString
 import typings.sdpTransform.sdpTransformStrings.inactive
 import typings.sdpTransform.sdpTransformStrings.recvonly
 import typings.sdpTransform.sdpTransformStrings.sendonly
@@ -34,41 +34,41 @@ trait MediaDescription
 object MediaDescription {
   @scala.inline
   def apply(
-    fmtp: js.Array[AnonConfig],
-    rtp: js.Array[AnonCodec],
-    bandwidth: js.Array[AnonLimit] = null,
-    candidates: js.Array[AnonFoundation] = null,
-    connection: AnonIp = null,
+    fmtp: js.Array[Config],
+    rtp: js.Array[Codec],
+    bandwidth: js.Array[Limit] = null,
+    candidates: js.Array[Foundation] = null,
+    connection: Ip = null,
     control: String = null,
-    crypto: AnonId = null,
+    crypto: Id = null,
     description: String = null,
     direction: sendrecv | recvonly | sendonly | inactive = null,
     endOfCandidates: String = null,
-    ext: js.Array[AnonUri] = null,
-    fingerprint: AnonHash = null,
+    ext: js.Array[Uri] = null,
+    fingerprint: Hash = null,
     framerate: Double | String = null,
     icePwd: String = null,
     iceUfrag: String = null,
-    imageattrs: js.Array[AnonAttrs1] = null,
-    invalid: js.Array[AnonValueString] = null,
-    maxptime: Int | Double = null,
+    imageattrs: js.Array[Attrs1] = null,
+    invalid: js.Array[ValueString] = null,
+    maxptime: js.UndefOr[Double] = js.undefined,
     mid: String = null,
     msid: String = null,
-    ptime: Int | Double = null,
+    ptime: js.UndefOr[Double] = js.undefined,
     remoteCandidates: String = null,
-    rids: js.Array[AnonDirection] = null,
-    rtcp: AnonIpVer = null,
-    rtcpFb: js.Array[AnonPayload] = null,
-    rtcpFbTrrInt: js.Array[AnonValue] = null,
+    rids: js.Array[Direction] = null,
+    rtcp: IpVer = null,
+    rtcpFb: js.Array[Payload] = null,
+    rtcpFbTrrInt: js.Array[Value] = null,
     rtcpMux: String = null,
     rtcpRsize: String = null,
-    sctpmap: AnonApp = null,
+    sctpmap: App = null,
     setup: String = null,
-    simulcast: AnonDir1 = null,
-    simulcast_03: AnonValueString = null,
-    sourceFilter: AnonAddressTypes = null,
-    ssrcGroups: js.Array[AnonSemantics] = null,
-    ssrcs: js.Array[AnonAttribute] = null,
+    simulcast: Dir1 = null,
+    simulcast_03: ValueString = null,
+    sourceFilter: AddressTypes = null,
+    ssrcGroups: js.Array[Semantics] = null,
+    ssrcs: js.Array[Attribute] = null,
     xGoogleFlag: String = null
   ): MediaDescription = {
     val __obj = js.Dynamic.literal(fmtp = fmtp.asInstanceOf[js.Any], rtp = rtp.asInstanceOf[js.Any])
@@ -87,10 +87,10 @@ object MediaDescription {
     if (iceUfrag != null) __obj.updateDynamic("iceUfrag")(iceUfrag.asInstanceOf[js.Any])
     if (imageattrs != null) __obj.updateDynamic("imageattrs")(imageattrs.asInstanceOf[js.Any])
     if (invalid != null) __obj.updateDynamic("invalid")(invalid.asInstanceOf[js.Any])
-    if (maxptime != null) __obj.updateDynamic("maxptime")(maxptime.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxptime)) __obj.updateDynamic("maxptime")(maxptime.get.asInstanceOf[js.Any])
     if (mid != null) __obj.updateDynamic("mid")(mid.asInstanceOf[js.Any])
     if (msid != null) __obj.updateDynamic("msid")(msid.asInstanceOf[js.Any])
-    if (ptime != null) __obj.updateDynamic("ptime")(ptime.asInstanceOf[js.Any])
+    if (!js.isUndefined(ptime)) __obj.updateDynamic("ptime")(ptime.get.asInstanceOf[js.Any])
     if (remoteCandidates != null) __obj.updateDynamic("remoteCandidates")(remoteCandidates.asInstanceOf[js.Any])
     if (rids != null) __obj.updateDynamic("rids")(rids.asInstanceOf[js.Any])
     if (rtcp != null) __obj.updateDynamic("rtcp")(rtcp.asInstanceOf[js.Any])

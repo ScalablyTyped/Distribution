@@ -28,7 +28,7 @@ trait IReversalCreationOptions extends IDataOptionsWithMetadata {
 object IReversalCreationOptions {
   @scala.inline
   def apply(
-    amount: Int | Double = null,
+    amount: js.UndefOr[Double] = js.undefined,
     description: String = null,
     expand: js.Array[String] = null,
     include: js.Array[String] = null,
@@ -36,12 +36,12 @@ object IReversalCreationOptions {
     refund_application_fee: js.UndefOr[Boolean] = js.undefined
   ): IReversalCreationOptions = {
     val __obj = js.Dynamic.literal()
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(refund_application_fee)) __obj.updateDynamic("refund_application_fee")(refund_application_fee.asInstanceOf[js.Any])
+    if (!js.isUndefined(refund_application_fee)) __obj.updateDynamic("refund_application_fee")(refund_application_fee.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IReversalCreationOptions]
   }
 }

@@ -22,9 +22,9 @@ trait ModerationLabel extends js.Object {
 
 object ModerationLabel {
   @scala.inline
-  def apply(Confidence: Int | Double = null, Name: String = null, ParentName: String = null): ModerationLabel = {
+  def apply(Confidence: js.UndefOr[Percent] = js.undefined, Name: String = null, ParentName: String = null): ModerationLabel = {
     val __obj = js.Dynamic.literal()
-    if (Confidence != null) __obj.updateDynamic("Confidence")(Confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence.get.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (ParentName != null) __obj.updateDynamic("ParentName")(ParentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModerationLabel]

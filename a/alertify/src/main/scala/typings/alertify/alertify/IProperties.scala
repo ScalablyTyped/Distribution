@@ -23,13 +23,13 @@ object IProperties {
   def apply(
     buttonFocus: String = null,
     buttonReverse: js.UndefOr[Boolean] = js.undefined,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     labels: ILabels = null
   ): IProperties = {
     val __obj = js.Dynamic.literal()
     if (buttonFocus != null) __obj.updateDynamic("buttonFocus")(buttonFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(buttonReverse)) __obj.updateDynamic("buttonReverse")(buttonReverse.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(buttonReverse)) __obj.updateDynamic("buttonReverse")(buttonReverse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProperties]
   }

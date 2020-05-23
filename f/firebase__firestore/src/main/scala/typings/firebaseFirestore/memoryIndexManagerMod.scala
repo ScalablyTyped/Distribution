@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/memory_index_manager", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/memory_index_manager", JSImport.Namespace)
 @js.native
 object memoryIndexManagerMod extends js.Object {
   @js.native

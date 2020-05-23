@@ -1,7 +1,7 @@
 package typings.webix.webix.ui
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.webix.webix.DataStore
 import typings.webix.webix.WebixCallback
@@ -10,9 +10,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.treemap")
 @js.native
-class treemap () extends baseview {
+trait treemap extends baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
   @JSName("config")
@@ -31,7 +30,7 @@ class treemap () extends baseview {
   @JSName("$tooltipIn")
   def $tooltipIn(node: HTMLElement): HTMLElement = js.native
   @JSName("$tooltipMove")
-  def $tooltipMove(t: HTMLElement, e: Event_, text: String): Unit = js.native
+  def $tooltipMove(t: HTMLElement, e: Event, text: String): Unit = js.native
   @JSName("$tooltipOut")
   def $tooltipOut(): Unit = js.native
   def add(obj: js.Any): String | Double = js.native
@@ -118,7 +117,7 @@ class treemap () extends baseview {
   def loadBranch(id: String, callback: WebixCallback, url: String): js.Promise[_] = js.native
   def loadBranch(id: Double, callback: WebixCallback, url: String): js.Promise[_] = js.native
   def loadNext(count: Double, start: Double, callback: WebixCallback, url: String, now: Boolean): js.Promise[_] = js.native
-  def locate(e: Event_): String | Double = js.native
+  def locate(e: Event): String | Double = js.native
   def mapEvent(map: js.Any): Unit = js.native
   def moveSelection(direction: String): Unit = js.native
   def on_click(args: js.Any*): js.Any = js.native

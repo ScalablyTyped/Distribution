@@ -1,6 +1,8 @@
 package typings.screeps
 
-import org.scalablytyped.runtime.TopLevel
+import typings.screeps.anon.LookAtResultLookConstant
+import typings.screeps.anon.LookAtResultWithPosLookCo
+import typings.screeps.anon.Pos
 import typings.screeps.screepsBooleans.`false`
 import typings.screeps.screepsBooleans.`true`
 import typings.screeps.screepsStrings.constructionSite
@@ -104,10 +106,6 @@ trait Room extends js.Object {
     */
   def createConstructionSite(x: Double, y: Double, structureType: STRUCTURE_SPAWN): ScreepsReturnCode = js.native
   def createConstructionSite(x: Double, y: Double, structureType: STRUCTURE_SPAWN, name: String): ScreepsReturnCode = js.native
-  def createFlag(pos: AnonPos): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
-  def createFlag(pos: AnonPos, name: String): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
-  def createFlag(pos: AnonPos, name: String, color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
-  def createFlag(pos: AnonPos, name: String, color: ColorConstant, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   /**
     * Create new Flag at the specified location.
     * @param pos Can be a RoomPosition object or any object containing RoomPosition.
@@ -126,6 +124,10 @@ trait Room extends js.Object {
   def createFlag(pos: RoomPosition, name: String): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   def createFlag(pos: RoomPosition, name: String, color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   def createFlag(pos: RoomPosition, name: String, color: ColorConstant, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: Pos): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: Pos, name: String): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: Pos, name: String, color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: Pos, name: String, color: ColorConstant, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   /**
     * Create new Flag at the specified location.
     * @param x The X position.
@@ -215,13 +217,13 @@ trait Room extends js.Object {
     * This method works for any room in the world even if you have no access to it.
     */
   def getTerrain(): RoomTerrain = js.native
-  def lookAt(target: AnonPos): js.Array[LookAtResultLookConstant] = js.native
   /**
     * Get the list of objects at the specified room position.
     * @param target Can be a RoomPosition object or any object containing RoomPosition.
     * @returns An array with objects at the specified position
     */
   def lookAt(target: RoomPosition): js.Array[LookAtResultLookConstant] = js.native
+  def lookAt(target: Pos): js.Array[LookAtResultLookConstant] = js.native
   /**
     * Get the list of objects at the specified room position.
     * @param x The X position.
@@ -450,8 +452,4 @@ trait Room extends js.Object {
   @JSName("lookForAt")
   def lookForAt_tombstone(`type`: tombstone, x: Double, y: Double): js.Array[Tombstone] = js.native
 }
-
-@JSGlobal("Room")
-@js.native
-object Room extends TopLevel[RoomConstructor]
 

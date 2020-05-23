@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object ContactListOtherAppReadAccess extends js.Object {
   /** Other apps can only read system contacts. */
   @js.native
   sealed trait systemOnly extends ContactListOtherAppReadAccess
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ContactListOtherAppReadAccess with Double] = js.native
-  /* 2 */ @js.native
-  object full extends TopLevel[full with Double]
-  
-  /* 1 */ @js.native
-  object limited extends TopLevel[limited with Double]
-  
-  /* 0 */ @js.native
-  object systemOnly extends TopLevel[systemOnly with Double]
   
 }
 

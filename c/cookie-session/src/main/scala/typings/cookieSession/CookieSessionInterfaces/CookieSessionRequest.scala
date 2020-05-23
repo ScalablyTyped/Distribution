@@ -17,9 +17,12 @@ trait CookieSessionRequest extends js.Object {
 
 object CookieSessionRequest {
   @scala.inline
-  def apply(sessionOptions: CookieSessionOptions, session: CookieSessionObject = null): CookieSessionRequest = {
+  def apply(
+    sessionOptions: CookieSessionOptions,
+    session: js.UndefOr[Null | CookieSessionObject] = js.undefined
+  ): CookieSessionRequest = {
     val __obj = js.Dynamic.literal(sessionOptions = sessionOptions.asInstanceOf[js.Any])
-    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
+    if (!js.isUndefined(session)) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     __obj.asInstanceOf[CookieSessionRequest]
   }
 }

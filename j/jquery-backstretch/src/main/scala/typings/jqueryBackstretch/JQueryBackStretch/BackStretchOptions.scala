@@ -35,13 +35,13 @@ object BackStretchOptions {
     centeredX: js.UndefOr[Boolean] = js.undefined,
     centeredY: js.UndefOr[Boolean] = js.undefined,
     duration: Double | String = null,
-    fade: Int | Double = null
+    fade: js.UndefOr[Double] = js.undefined
   ): BackStretchOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(centeredX)) __obj.updateDynamic("centeredX")(centeredX.asInstanceOf[js.Any])
-    if (!js.isUndefined(centeredY)) __obj.updateDynamic("centeredY")(centeredY.asInstanceOf[js.Any])
+    if (!js.isUndefined(centeredX)) __obj.updateDynamic("centeredX")(centeredX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(centeredY)) __obj.updateDynamic("centeredY")(centeredY.get.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (fade != null) __obj.updateDynamic("fade")(fade.asInstanceOf[js.Any])
+    if (!js.isUndefined(fade)) __obj.updateDynamic("fade")(fade.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackStretchOptions]
   }
 }

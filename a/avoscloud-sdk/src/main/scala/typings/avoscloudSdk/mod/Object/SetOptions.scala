@@ -18,7 +18,7 @@ object SetOptions {
     val __obj = js.Dynamic.literal()
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (promise != null) __obj.updateDynamic("promise")(promise.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetOptions]
   }
 }

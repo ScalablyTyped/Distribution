@@ -1,8 +1,8 @@
 package typings.stormReactDiagrams.linkModelMod
 
-import typings.stormReactDiagrams.AnonLocked
-import typings.stormReactDiagrams.BaseEventBaseModelBaseEnt
-import typings.stormReactDiagrams.BaseEventLinkModelLinkMod
+import typings.stormReactDiagrams.anon.BaseEventBaseModelBaseEnt
+import typings.stormReactDiagrams.anon.BaseEventLinkModelLinkMod
+import typings.stormReactDiagrams.anon.Locked
 import typings.stormReactDiagrams.baseEntityMod.BaseEntity
 import typings.stormReactDiagrams.baseEntityMod.BaseEvent
 import typings.stormReactDiagrams.baseEntityMod.BaseListener
@@ -21,7 +21,7 @@ object LinkModelListener {
   @scala.inline
   def apply(
     entityRemoved: /* event */ BaseEvent[BaseModel[BaseEntity[BaseListener[_]], LinkModelListener]] => Unit = null,
-    lockChanged: /* event */ BaseEvent[js.Any] with AnonLocked => Unit = null,
+    lockChanged: /* event */ BaseEvent[js.Any] with Locked => Unit = null,
     selectionChanged: /* event */ BaseEventBaseModelBaseEnt => Unit = null,
     sourcePortChanged: /* event */ BaseEventLinkModelLinkMod => Unit = null,
     targetPortChanged: /* event */ BaseEventLinkModelLinkMod => Unit = null

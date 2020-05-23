@@ -24,12 +24,12 @@ object DeleteNetworkInterfacePermissionRequest {
   @scala.inline
   def apply(
     NetworkInterfacePermissionId: NetworkInterfacePermissionId,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
-    Force: js.UndefOr[scala.Boolean] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined,
+    Force: js.UndefOr[Boolean] = js.undefined
   ): DeleteNetworkInterfacePermissionRequest = {
     val __obj = js.Dynamic.literal(NetworkInterfacePermissionId = NetworkInterfacePermissionId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
-    if (!js.isUndefined(Force)) __obj.updateDynamic("Force")(Force.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Force)) __obj.updateDynamic("Force")(Force.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteNetworkInterfacePermissionRequest]
   }
 }

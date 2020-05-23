@@ -7,8 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TabData
-  extends /** for user's custom extends */
-/* key */ StringDictionary[js.Any] {
+  extends /* key */ StringDictionary[js.Any] {
   var key: js.UndefOr[String] = js.undefined
   var title: ReactNode
 }
@@ -16,8 +15,7 @@ trait TabData
 object TabData {
   @scala.inline
   def apply(
-    StringDictionary: /** for user's custom extends */
-  /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     key: String = null,
     title: ReactNode = null
   ): TabData = {

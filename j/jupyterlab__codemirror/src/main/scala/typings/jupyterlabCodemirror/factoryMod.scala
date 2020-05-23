@@ -3,6 +3,7 @@ package typings.jupyterlabCodemirror
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IEditor
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions
 import typings.jupyterlabCodeeditor.factoryMod.IEditorFactoryService
+import typings.jupyterlabCodemirror.anon.PartialIConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -12,7 +12,7 @@ object IncludeInherited {
   @scala.inline
   def apply(includeInherited: js.UndefOr[Boolean] = js.undefined): IncludeInherited = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeInherited)) __obj.updateDynamic("includeInherited")(includeInherited.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeInherited)) __obj.updateDynamic("includeInherited")(includeInherited.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncludeInherited]
   }
 }

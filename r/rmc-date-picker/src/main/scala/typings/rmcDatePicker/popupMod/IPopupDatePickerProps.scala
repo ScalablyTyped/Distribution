@@ -18,7 +18,7 @@ object IPopupDatePickerProps {
   def apply(
     datePicker: ReactElement,
     WrapComponent: js.Any = null,
-    actionTextActiveOpacity: Int | Double = null,
+    actionTextActiveOpacity: js.UndefOr[Double] = js.undefined,
     actionTextUnderlayColor: String = null,
     className: String = null,
     content: ReactElement | String = null,
@@ -47,12 +47,12 @@ object IPopupDatePickerProps {
   ): IPopupDatePickerProps = {
     val __obj = js.Dynamic.literal(datePicker = datePicker.asInstanceOf[js.Any])
     if (WrapComponent != null) __obj.updateDynamic("WrapComponent")(WrapComponent.asInstanceOf[js.Any])
-    if (actionTextActiveOpacity != null) __obj.updateDynamic("actionTextActiveOpacity")(actionTextActiveOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(actionTextActiveOpacity)) __obj.updateDynamic("actionTextActiveOpacity")(actionTextActiveOpacity.get.asInstanceOf[js.Any])
     if (actionTextUnderlayColor != null) __obj.updateDynamic("actionTextUnderlayColor")(actionTextUnderlayColor.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (dismissText != null) __obj.updateDynamic("dismissText")(dismissText.asInstanceOf[js.Any])
     if (maskTransitionName != null) __obj.updateDynamic("maskTransitionName")(maskTransitionName.asInstanceOf[js.Any])
     if (okText != null) __obj.updateDynamic("okText")(okText.asInstanceOf[js.Any])
@@ -71,7 +71,7 @@ object IPopupDatePickerProps {
     if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName.asInstanceOf[js.Any])
     if (triggerType != null) __obj.updateDynamic("triggerType")(triggerType.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     if (wrapStyle != null) __obj.updateDynamic("wrapStyle")(wrapStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPopupDatePickerProps]
   }

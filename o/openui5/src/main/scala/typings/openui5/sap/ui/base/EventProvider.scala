@@ -4,12 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.base.EventProvider")
 @js.native
-/**
-  * Creates an instance of EventProvider.
-  */
-abstract class EventProvider () extends Object {
+trait EventProvider extends Object {
   /**
     * Attaches an event handler to the event with the given identifier.
     * @param sEventId The identifier of the event to listen for

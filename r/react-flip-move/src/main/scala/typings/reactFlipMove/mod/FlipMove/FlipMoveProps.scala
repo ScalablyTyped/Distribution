@@ -229,20 +229,20 @@ object FlipMoveProps {
     staggerDelayBy: Double | String = null,
     staggerDurationBy: Double | String = null,
     style: Styles = null,
-    typeName: String = null,
+    typeName: js.UndefOr[Null | String] = js.undefined,
     verticalAlignment: String = null
   ): FlipMoveProps = {
     val __obj = js.Dynamic.literal()
     if (appearAnimation != null) __obj.updateDynamic("appearAnimation")(appearAnimation.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableAllAnimations)) __obj.updateDynamic("disableAllAnimations")(disableAllAnimations.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableAllAnimations)) __obj.updateDynamic("disableAllAnimations")(disableAllAnimations.get.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(enterAnimation.asInstanceOf[js.Any])
     if (getPosition != null) __obj.updateDynamic("getPosition")(js.Any.fromFunction1(getPosition))
     if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(leaveAnimation.asInstanceOf[js.Any])
-    if (!js.isUndefined(maintainContainerHeight)) __obj.updateDynamic("maintainContainerHeight")(maintainContainerHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(maintainContainerHeight)) __obj.updateDynamic("maintainContainerHeight")(maintainContainerHeight.get.asInstanceOf[js.Any])
     if (onFinish != null) __obj.updateDynamic("onFinish")(js.Any.fromFunction2(onFinish))
     if (onFinishAll != null) __obj.updateDynamic("onFinishAll")(js.Any.fromFunction2(onFinishAll))
     if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction2(onStart))
@@ -250,7 +250,7 @@ object FlipMoveProps {
     if (staggerDelayBy != null) __obj.updateDynamic("staggerDelayBy")(staggerDelayBy.asInstanceOf[js.Any])
     if (staggerDurationBy != null) __obj.updateDynamic("staggerDurationBy")(staggerDurationBy.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (typeName != null) __obj.updateDynamic("typeName")(typeName.asInstanceOf[js.Any])
+    if (!js.isUndefined(typeName)) __obj.updateDynamic("typeName")(typeName.asInstanceOf[js.Any])
     if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlipMoveProps]
   }

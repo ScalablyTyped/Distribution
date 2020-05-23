@@ -1,22 +1,22 @@
 package typings.reactNativeRssParser.mod
 
-import typings.reactNativeRssParser.AnonAuthors
-import typings.reactNativeRssParser.AnonLength
-import typings.reactNativeRssParser.AnonName
-import typings.reactNativeRssParser.AnonRel
+import typings.reactNativeRssParser.anon.Authors
+import typings.reactNativeRssParser.anon.Length
+import typings.reactNativeRssParser.anon.Name
+import typings.reactNativeRssParser.anon.Rel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FeedItem extends js.Object {
-  var authors: js.Array[Maybe[AnonName]]
-  var categories: js.Array[Maybe[AnonName]]
+  var authors: js.Array[Maybe[Name]]
+  var categories: js.Array[Maybe[Name]]
   var content: String
   var description: String
-  var enclosures: js.Array[AnonLength]
+  var enclosures: js.Array[Length]
   var id: String
-  var itunes: AnonAuthors
-  var links: js.Array[AnonRel]
+  var itunes: Authors
+  var links: js.Array[Rel]
   var published: String
   var title: String
 }
@@ -24,14 +24,14 @@ trait FeedItem extends js.Object {
 object FeedItem {
   @scala.inline
   def apply(
-    authors: js.Array[Maybe[AnonName]],
-    categories: js.Array[Maybe[AnonName]],
+    authors: js.Array[Maybe[Name]],
+    categories: js.Array[Maybe[Name]],
     content: String,
     description: String,
-    enclosures: js.Array[AnonLength],
+    enclosures: js.Array[Length],
     id: String,
-    itunes: AnonAuthors,
-    links: js.Array[AnonRel],
+    itunes: Authors,
+    links: js.Array[Rel],
     published: String,
     title: String
   ): FeedItem = {

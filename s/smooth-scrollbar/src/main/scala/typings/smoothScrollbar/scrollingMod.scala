@@ -1,5 +1,7 @@
 package typings.smoothScrollbar
 
+import typings.smoothScrollbar.anon.PartialScrollIntoViewOpti
+import typings.smoothScrollbar.anon.PartialScrollToOptionsCallback
 import typings.smoothScrollbar.scrollbarMod.ScrollStatus
 import typings.smoothScrollbar.scrollbarMod.Scrollbar
 import typings.std.HTMLElement

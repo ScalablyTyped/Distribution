@@ -1,7 +1,6 @@
 package typings.nock.mod
 
-import typings.nock.AnonBody
-import typings.nock.AnonPass
+import typings.nock.anon.Pass
 import typings.node.NodeJS.ErrnoException
 import typings.node.querystringMod.ParsedUrlQuery
 import typings.node.urlMod.URLSearchParams
@@ -11,9 +10,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Interceptor extends js.Object {
-  def basicAuth(options: AnonPass): this.type = js.native
+  def basicAuth(options: Pass): this.type = js.native
   def delay(opts: Double): this.type = js.native
-  def delay(opts: AnonBody): this.type = js.native
+  def delay(opts: typings.nock.anon.Body): this.type = js.native
   def delayBody(timeMs: Double): this.type = js.native
   def delayConnection(timeMs: Double): this.type = js.native
   def matchHeader(name: String, value: RequestHeaderMatcher): this.type = js.native

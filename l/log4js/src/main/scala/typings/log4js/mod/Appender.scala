@@ -61,13 +61,13 @@ object Appender {
   def SyncfileAppender(
     filename: String,
     `type`: fileSync,
-    backups: Int | Double = null,
+    backups: js.UndefOr[Double] = js.undefined,
     layout: Layout = null,
     maxLogSize: Double | String = null
   ): Appender = {
     val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (backups != null) __obj.updateDynamic("backups")(backups.asInstanceOf[js.Any])
+    if (!js.isUndefined(backups)) __obj.updateDynamic("backups")(backups.get.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (maxLogSize != null) __obj.updateDynamic("maxLogSize")(maxLogSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[Appender]
@@ -85,24 +85,24 @@ object Appender {
     `type`: dateFile,
     alwaysIncludePattern: js.UndefOr[Boolean] = js.undefined,
     compress: js.UndefOr[Boolean] = js.undefined,
-    daysToKeep: Int | Double = null,
+    daysToKeep: js.UndefOr[Double] = js.undefined,
     encoding: String = null,
     flags: String = null,
     keepFileExt: js.UndefOr[Boolean] = js.undefined,
     layout: Layout = null,
-    mode: Int | Double = null,
+    mode: js.UndefOr[Double] = js.undefined,
     pattern: String = null
   ): Appender = {
     val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(alwaysIncludePattern)) __obj.updateDynamic("alwaysIncludePattern")(alwaysIncludePattern.asInstanceOf[js.Any])
-    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
-    if (daysToKeep != null) __obj.updateDynamic("daysToKeep")(daysToKeep.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysIncludePattern)) __obj.updateDynamic("alwaysIncludePattern")(alwaysIncludePattern.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(daysToKeep)) __obj.updateDynamic("daysToKeep")(daysToKeep.get.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepFileExt)) __obj.updateDynamic("keepFileExt")(keepFileExt.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepFileExt)) __obj.updateDynamic("keepFileExt")(keepFileExt.get.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(mode)) __obj.updateDynamic("mode")(mode.get.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[Appender]
   }
@@ -125,13 +125,13 @@ object Appender {
     `type`: multiprocess,
     appender: String = null,
     loggerHost: String = null,
-    loggerPort: Int | Double = null
+    loggerPort: js.UndefOr[Double] = js.undefined
   ): Appender = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (appender != null) __obj.updateDynamic("appender")(appender.asInstanceOf[js.Any])
     if (loggerHost != null) __obj.updateDynamic("loggerHost")(loggerHost.asInstanceOf[js.Any])
-    if (loggerPort != null) __obj.updateDynamic("loggerPort")(loggerPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(loggerPort)) __obj.updateDynamic("loggerPort")(loggerPort.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Appender]
   }
   @scala.inline
@@ -152,27 +152,27 @@ object Appender {
   def FileAppender(
     filename: String,
     `type`: file,
-    backups: Int | Double = null,
+    backups: js.UndefOr[Double] = js.undefined,
     compress: js.UndefOr[Boolean] = js.undefined,
     encoding: String = null,
     flags: String = null,
     keepFileExt: js.UndefOr[Boolean] = js.undefined,
     layout: Layout = null,
     maxLogSize: Double | String = null,
-    mode: Int | Double = null,
-    numBackups: Int | Double = null
+    mode: js.UndefOr[Double] = js.undefined,
+    numBackups: js.UndefOr[Double] = js.undefined
   ): Appender = {
     val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (backups != null) __obj.updateDynamic("backups")(backups.asInstanceOf[js.Any])
-    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
+    if (!js.isUndefined(backups)) __obj.updateDynamic("backups")(backups.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.get.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepFileExt)) __obj.updateDynamic("keepFileExt")(keepFileExt.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepFileExt)) __obj.updateDynamic("keepFileExt")(keepFileExt.get.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (maxLogSize != null) __obj.updateDynamic("maxLogSize")(maxLogSize.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (numBackups != null) __obj.updateDynamic("numBackups")(numBackups.asInstanceOf[js.Any])
+    if (!js.isUndefined(mode)) __obj.updateDynamic("mode")(mode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numBackups)) __obj.updateDynamic("numBackups")(numBackups.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Appender]
   }
   @scala.inline

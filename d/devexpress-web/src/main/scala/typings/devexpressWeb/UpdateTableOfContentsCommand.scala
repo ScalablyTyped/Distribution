@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * A command to update a table of contents.
   */
-@JSGlobal("UpdateTableOfContentsCommand")
-@js.native
-class UpdateTableOfContentsCommand () extends CommandWithSimpleStateBase {
+trait UpdateTableOfContentsCommand extends CommandWithSimpleStateBase {
   /**
     * Executes the UpdateTableOfContentsCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
+}
+
+object UpdateTableOfContentsCommand {
+  @scala.inline
+  def apply(execute: () => Boolean, getState: () => SimpleCommandState): UpdateTableOfContentsCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
+    __obj.asInstanceOf[UpdateTableOfContentsCommand]
+  }
 }
 

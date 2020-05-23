@@ -44,7 +44,7 @@ object ModifyScheduledActionMessage {
   @scala.inline
   def apply(
     ScheduledActionName: String,
-    Enable: js.UndefOr[scala.Boolean] = js.undefined,
+    Enable: js.UndefOr[BooleanOptional] = js.undefined,
     EndTime: TStamp = null,
     IamRole: String = null,
     Schedule: String = null,
@@ -53,7 +53,7 @@ object ModifyScheduledActionMessage {
     TargetAction: ScheduledActionType = null
   ): ModifyScheduledActionMessage = {
     val __obj = js.Dynamic.literal(ScheduledActionName = ScheduledActionName.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enable)) __obj.updateDynamic("Enable")(Enable.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enable)) __obj.updateDynamic("Enable")(Enable.get.asInstanceOf[js.Any])
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
     if (IamRole != null) __obj.updateDynamic("IamRole")(IamRole.asInstanceOf[js.Any])
     if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule.asInstanceOf[js.Any])

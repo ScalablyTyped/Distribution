@@ -1,21 +1,6 @@
 package typings.wordpressKeycodes
 
-import typings.std.Event_
-import typings.wordpressKeycodes.wordpressKeycodesNumbers.`121`
-import typings.wordpressKeycodes.wordpressKeycodesNumbers.`13`
-import typings.wordpressKeycodes.wordpressKeycodesNumbers.`27`
-import typings.wordpressKeycodes.wordpressKeycodesNumbers.`32`
-import typings.wordpressKeycodes.wordpressKeycodesNumbers.`37`
-import typings.wordpressKeycodes.wordpressKeycodesNumbers.`38`
-import typings.wordpressKeycodes.wordpressKeycodesNumbers.`39`
-import typings.wordpressKeycodes.wordpressKeycodesNumbers.`40`
-import typings.wordpressKeycodes.wordpressKeycodesNumbers.`46`
-import typings.wordpressKeycodes.wordpressKeycodesNumbers.`8`
-import typings.wordpressKeycodes.wordpressKeycodesNumbers.`9`
-import typings.wordpressKeycodes.wordpressKeycodesStrings.alt
-import typings.wordpressKeycodes.wordpressKeycodesStrings.ctrl
-import typings.wordpressKeycodes.wordpressKeycodesStrings.meta
-import typings.wordpressKeycodes.wordpressKeycodesStrings.shift
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,21 +8,21 @@ import scala.scalajs.js.annotation._
 @JSImport("@wordpress/keycodes", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  val ALT: alt = js.native
-  val BACKSPACE: `8` = js.native
-  val COMMAND: meta = js.native
-  val CTRL: ctrl = js.native
-  val DELETE: `46` = js.native
-  val DOWN: `40` = js.native
-  val ENTER: `13` = js.native
-  val ESCAPE: `27` = js.native
-  val F10: `121` = js.native
-  val LEFT: `37` = js.native
-  val RIGHT: `39` = js.native
-  val SHIFT: shift = js.native
-  val SPACE: `32` = js.native
-  val TAB: `9` = js.native
-  val UP: `38` = js.native
+  val ALT: /* "alt" */ String = js.native
+  val BACKSPACE: /* 8 */ Double = js.native
+  val COMMAND: /* "meta" */ String = js.native
+  val CTRL: /* "ctrl" */ String = js.native
+  val DELETE: /* 46 */ Double = js.native
+  val DOWN: /* 40 */ Double = js.native
+  val ENTER: /* 13 */ Double = js.native
+  val ESCAPE: /* 27 */ Double = js.native
+  val F10: /* 121 */ Double = js.native
+  val LEFT: /* 37 */ Double = js.native
+  val RIGHT: /* 39 */ Double = js.native
+  val SHIFT: /* "shift" */ String = js.native
+  val SPACE: /* 32 */ Double = js.native
+  val TAB: /* 9 */ Double = js.native
+  val UP: /* 38 */ Double = js.native
   @js.native
   object displayShortcut extends js.Object {
     def access(character: String): String = js.native
@@ -68,16 +53,16 @@ object mod extends js.Object {
   
   @js.native
   object isKeyboardEvent extends js.Object {
-    def access(event: Event_, character: String): Boolean = js.native
-    def alt(event: Event_, character: String): Boolean = js.native
-    def ctrl(event: Event_, character: String): Boolean = js.native
-    def ctrlShift(event: Event_, character: String): Boolean = js.native
-    def primary(event: Event_, character: String): Boolean = js.native
-    def primaryAlt(event: Event_, character: String): Boolean = js.native
-    def primaryShift(event: Event_, character: String): Boolean = js.native
-    def secondary(event: Event_, character: String): Boolean = js.native
-    def shift(event: Event_, character: String): Boolean = js.native
-    def shiftAlt(event: Event_, character: String): Boolean = js.native
+    def access(event: Event, character: String): Boolean = js.native
+    def alt(event: Event, character: String): Boolean = js.native
+    def ctrl(event: Event, character: String): Boolean = js.native
+    def ctrlShift(event: Event, character: String): Boolean = js.native
+    def primary(event: Event, character: String): Boolean = js.native
+    def primaryAlt(event: Event, character: String): Boolean = js.native
+    def primaryShift(event: Event, character: String): Boolean = js.native
+    def secondary(event: Event, character: String): Boolean = js.native
+    def shift(event: Event, character: String): Boolean = js.native
+    def shiftAlt(event: Event, character: String): Boolean = js.native
   }
   
   @js.native

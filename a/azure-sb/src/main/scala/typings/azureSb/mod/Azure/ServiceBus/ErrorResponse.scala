@@ -1,19 +1,19 @@
 package typings.azureSb.mod.Azure.ServiceBus
 
-import typings.azureSb.AnonError
+import typings.azureSb.anon.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ErrorResponse extends Response {
   @JSName("body")
-  var body_ErrorResponse: AnonError
+  var body_ErrorResponse: Error
 }
 
 object ErrorResponse {
   @scala.inline
   def apply(
-    body: AnonError,
+    body: Error,
     headers: Dictionary[String],
     isSuccessful: Boolean,
     statusCode: Double,

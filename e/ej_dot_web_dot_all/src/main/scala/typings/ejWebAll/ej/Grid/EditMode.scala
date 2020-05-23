@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.Grid
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,32 +41,6 @@ object EditMode extends js.Object {
   ///Edit mode is normal.
   @js.native
   sealed trait Normal extends EditMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EditMode with Double] = js.native
-  /* 3 */ @js.native
-  object Batch extends TopLevel[Batch with Double]
-  
-  /* 1 */ @js.native
-  object Dialog extends TopLevel[Dialog with Double]
-  
-  /* 2 */ @js.native
-  object DialogTemplate extends TopLevel[DialogTemplate with Double]
-  
-  /* 6 */ @js.native
-  object ExternalForm extends TopLevel[ExternalForm with Double]
-  
-  /* 7 */ @js.native
-  object ExternalFormTemplate extends TopLevel[ExternalFormTemplate with Double]
-  
-  /* 4 */ @js.native
-  object InlineForm extends TopLevel[InlineForm with Double]
-  
-  /* 5 */ @js.native
-  object InlineTemplateForm extends TopLevel[InlineTemplateForm with Double]
-  
-  /* 0 */ @js.native
-  object Normal extends TopLevel[Normal with Double]
   
 }
 

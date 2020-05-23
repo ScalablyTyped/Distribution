@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * Contains the primary means of identifying a device.
-	 */
+  * Contains the primary means of identifying a device.
+  */
 trait ConnectionOptions extends js.Object {
   var token: String
   var uuid: String

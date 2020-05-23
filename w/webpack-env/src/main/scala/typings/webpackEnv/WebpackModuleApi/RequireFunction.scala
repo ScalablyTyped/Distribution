@@ -18,7 +18,7 @@ trait RequireFunction extends js.Object {
   /**
     * Multiple requires to the same module result in only one module execution and only one export. Therefore a cache in the runtime exists. Removing values from this cache cause new module execution and a new export. This is only needed in rare cases (for compatibility!).
     */
-  var cache: StringDictionary[NodeModule] = js.native
+  var cache: StringDictionary[js.UndefOr[NodeModule]] = js.native
   /**
     * Returns the module id of a dependency. The call is sync. No request to the server is fired. The compiler ensures that the dependency is available.
     *

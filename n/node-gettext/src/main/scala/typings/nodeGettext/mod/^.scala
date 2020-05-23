@@ -1,6 +1,6 @@
 package typings.nodeGettext.mod
 
-import typings.nodeGettext.AnonDebug
+import typings.nodeGettext.anon.Debug
 import typings.nodeGettext.nodeGettextStrings.error
 import typings.std.Error
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("node-gettext", JSImport.Namespace)
 @js.native
 class ^ () extends GetText {
-  def this(options: AnonDebug) = this()
+  def this(options: Debug) = this()
   /* CompleteClass */
   override val domain: String = js.native
   /* CompleteClass */

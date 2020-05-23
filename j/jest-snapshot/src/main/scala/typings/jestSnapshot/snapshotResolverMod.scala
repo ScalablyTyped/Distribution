@@ -1,6 +1,5 @@
 package typings.jestSnapshot
 
-import typings.jestSnapshot.jestSnapshotStrings.snap
 import typings.jestTypes.configMod.Path
 import typings.jestTypes.configMod.ProjectConfig
 import scala.scalajs.js
@@ -20,7 +19,7 @@ object snapshotResolverMod extends js.Object {
   }
   
   val DOT_EXTENSION: String = js.native
-  val EXTENSION: snap = js.native
+  val EXTENSION: /* "snap" */ String = js.native
   def buildSnapshotResolver(config: ProjectConfig): SnapshotResolver = js.native
   def isSnapshotPath(path: String): Boolean = js.native
 }

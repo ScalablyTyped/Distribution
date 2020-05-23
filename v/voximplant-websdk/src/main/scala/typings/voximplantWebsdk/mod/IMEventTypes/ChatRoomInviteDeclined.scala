@@ -6,20 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		*	Event dispatched if an invitation to chat room was declined by the invitee
-		*/
+  *    Event dispatched if an invitation to chat room was declined by the invitee
+  */
 trait ChatRoomInviteDeclined extends VoxImplantIMEvent {
   /**
-  			* User id (invitee)
-  			*/
+    * User id (invitee)
+    */
   var invitee: String
   /**
-  			* A reason of the invitation
-  			*/
+    * A reason of the invitation
+    */
   var reason: String
   /**
-  			* Room id
-  			*/
+    * Room id
+    */
   var room: String
 }
 

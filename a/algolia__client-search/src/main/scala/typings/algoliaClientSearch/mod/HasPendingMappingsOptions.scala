@@ -28,8 +28,8 @@ object HasPendingMappingsOptions {
     retrieveMappings: js.UndefOr[Boolean] = js.undefined
   ): HasPendingMappingsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(getClusters)) __obj.updateDynamic("getClusters")(getClusters.asInstanceOf[js.Any])
-    if (!js.isUndefined(retrieveMappings)) __obj.updateDynamic("retrieveMappings")(retrieveMappings.asInstanceOf[js.Any])
+    if (!js.isUndefined(getClusters)) __obj.updateDynamic("getClusters")(getClusters.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retrieveMappings)) __obj.updateDynamic("retrieveMappings")(retrieveMappings.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasPendingMappingsOptions]
   }
 }

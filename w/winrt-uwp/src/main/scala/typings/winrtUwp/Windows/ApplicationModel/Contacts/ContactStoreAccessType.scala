@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object ContactStoreAccessType extends js.Object {
   /** Read and write contacts that belong to the app only. */
   @js.native
   sealed trait appContactsReadWrite extends ContactStoreAccessType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ContactStoreAccessType with Double] = js.native
-  /* 1 */ @js.native
-  object allContactsReadOnly extends TopLevel[allContactsReadOnly with Double]
-  
-  /* 2 */ @js.native
-  object allContactsReadWrite extends TopLevel[allContactsReadWrite with Double]
-  
-  /* 0 */ @js.native
-  object appContactsReadWrite extends TopLevel[appContactsReadWrite with Double]
   
 }
 

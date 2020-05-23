@@ -30,7 +30,7 @@ object MessageOptions {
     if (appName != null) __obj.updateDynamic("appName")(appName.asInstanceOf[js.Any])
     if (facility != null) __obj.updateDynamic("facility")(facility.asInstanceOf[js.Any])
     if (msgid != null) __obj.updateDynamic("msgid")(msgid.asInstanceOf[js.Any])
-    if (!js.isUndefined(rfc3164)) __obj.updateDynamic("rfc3164")(rfc3164.asInstanceOf[js.Any])
+    if (!js.isUndefined(rfc3164)) __obj.updateDynamic("rfc3164")(rfc3164.get.asInstanceOf[js.Any])
     if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
     if (syslogHostname != null) __obj.updateDynamic("syslogHostname")(syslogHostname.asInstanceOf[js.Any])
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])

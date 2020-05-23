@@ -33,8 +33,7 @@ class ObservableMap[K, V] ()
   var name: String = js.native
   @JSName(js.Symbol.toStringTag)
   var toStringTag_ObservableMap: typings.mobx.mobxStrings.Map = js.native
-  def enhancer(newValue: V, oldValue: V, name: String): V = js.native
-  def enhancer(newValue: V, oldValue: js.UndefOr[scala.Nothing], name: String): V = js.native
+  def enhancer(newValue: V, oldValue: js.UndefOr[V], name: String): V = js.native
   /* CompleteClass */
   override def intercept(handler: IInterceptor[IMapWillChange[K, V]]): Lambda = js.native
   def merge(other: js.Any): ObservableMap[K, V] = js.native

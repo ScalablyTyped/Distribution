@@ -18,7 +18,7 @@ trait StackHeaderTitleProps extends js.Object {
     * Style object for the title element.
     */
   var style: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<react-native.react-native.Animated.AnimatedComponent<react-native.react-native.Text>>['style'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<react-native.react-native.Animated.AnimatedComponent<new (): react-native.react-native.Text>>['style'] */ js.Any
   ] = js.undefined
   /**
     * Tint color for the header.
@@ -36,11 +36,11 @@ object StackHeaderTitleProps {
     onLayout: LayoutChangeEvent => Unit,
     allowFontScaling: js.UndefOr[Boolean] = js.undefined,
     children: String = null,
-    style: /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<react-native.react-native.Animated.AnimatedComponent<react-native.react-native.Text>>['style'] */ js.Any = null,
+    style: /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<react-native.react-native.Animated.AnimatedComponent<new (): react-native.react-native.Text>>['style'] */ js.Any = null,
     tintColor: String = null
   ): StackHeaderTitleProps = {
     val __obj = js.Dynamic.literal(onLayout = js.Any.fromFunction1(onLayout))
-    if (!js.isUndefined(allowFontScaling)) __obj.updateDynamic("allowFontScaling")(allowFontScaling.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFontScaling)) __obj.updateDynamic("allowFontScaling")(allowFontScaling.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor.asInstanceOf[js.Any])

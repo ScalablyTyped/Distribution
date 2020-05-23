@@ -11,9 +11,9 @@ trait CardImageStyle extends js.Object {
 
 object CardImageStyle {
   @scala.inline
-  def apply(height: Int | Double = null, resizeMode: String = null): CardImageStyle = {
+  def apply(height: js.UndefOr[Double] = js.undefined, resizeMode: String = null): CardImageStyle = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (resizeMode != null) __obj.updateDynamic("resizeMode")(resizeMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardImageStyle]
   }

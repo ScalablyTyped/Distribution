@@ -8,16 +8,22 @@ import scala.scalajs.js.annotation._
   *
   * Represents the content contained within a comment or comment reply. Rich content incudes the text string and any other objects contained within the comment body, such as mentions.
   *
-  * [Api set: ExcelApiOnline 1.1]
+  * [Api set: ExcelApi 1.11]
   */
 trait CommentRichContent extends js.Object {
   /**
     *
-    * An array containing all the entities (e.g. people) mentioned within the comment.
+    * An array containing all the entities (e.g., people) mentioned within the comment.
     *
-    * [Api set: ExcelApiOnline 1.1]
+    * [Api set: ExcelApi 1.11]
     */
   var mentions: js.UndefOr[js.Array[CommentMention]] = js.undefined
+  /**
+    *
+    * Specifies the rich content of the comment (e.g., comment content with mentions, the first mentioned entity has an id attribute of 0, and the second mentioned entity has an id attribute of 1.
+    *
+    * [Api set: ExcelApi 1.11]
+    */
   var richContent: String
 }
 

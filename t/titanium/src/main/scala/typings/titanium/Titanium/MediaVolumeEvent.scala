@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * Fired when the volume output changes.
-	 */
+  * Fired when the volume output changes.
+  */
 trait MediaVolumeEvent extends MediaBaseEvent {
   /**
-  		 * New volume level in dB.
-  		 */
+    * New volume level in dB.
+    */
   var volume: Double
 }
 

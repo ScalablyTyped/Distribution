@@ -1,6 +1,6 @@
 package typings.ionicCore
 
-import typings.ionicCore.componentsMod._Global_.HTMLIonSegmentElement
+import typings.ionicCore.componentsMod.global.HTMLIonSegmentElement
 import typings.ionicCore.elementInterfaceMod.ButtonInterface
 import typings.ionicCore.ionicCoreStrings.button
 import typings.ionicCore.ionicCoreStrings.reset

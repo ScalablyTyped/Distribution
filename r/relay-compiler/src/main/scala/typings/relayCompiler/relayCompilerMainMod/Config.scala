@@ -39,17 +39,17 @@ object Config {
     validate: Boolean,
     verbose: Boolean,
     watchman: Boolean,
-    artifactDirectory: String = null,
+    artifactDirectory: js.UndefOr[Null | String] = js.undefined,
     customScalars: ScalarTypeMapping = null,
-    persistFunction: String | (js.Function1[/* text */ String, js.Promise[String]]) = null,
-    persistOutput: String = null,
-    watch: js.UndefOr[Boolean] = js.undefined
+    persistFunction: js.UndefOr[Null | String | (js.Function1[/* text */ String, js.Promise[String]])] = js.undefined,
+    persistOutput: js.UndefOr[Null | String] = js.undefined,
+    watch: js.UndefOr[Null | Boolean] = js.undefined
   ): Config = {
     val __obj = js.Dynamic.literal(exclude = exclude.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any], include = include.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], noFutureProofEnums = noFutureProofEnums.asInstanceOf[js.Any], quiet = quiet.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], validate = validate.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any], watchman = watchman.asInstanceOf[js.Any])
-    if (artifactDirectory != null) __obj.updateDynamic("artifactDirectory")(artifactDirectory.asInstanceOf[js.Any])
+    if (!js.isUndefined(artifactDirectory)) __obj.updateDynamic("artifactDirectory")(artifactDirectory.asInstanceOf[js.Any])
     if (customScalars != null) __obj.updateDynamic("customScalars")(customScalars.asInstanceOf[js.Any])
-    if (persistFunction != null) __obj.updateDynamic("persistFunction")(persistFunction.asInstanceOf[js.Any])
-    if (persistOutput != null) __obj.updateDynamic("persistOutput")(persistOutput.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistFunction)) __obj.updateDynamic("persistFunction")(persistFunction.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistOutput)) __obj.updateDynamic("persistOutput")(persistOutput.asInstanceOf[js.Any])
     if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }

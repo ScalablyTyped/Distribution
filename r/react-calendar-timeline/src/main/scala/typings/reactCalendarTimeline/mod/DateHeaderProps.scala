@@ -32,7 +32,7 @@ object DateHeaderProps {
     children: /* props */ SidebarHeaderChildrenFnProps[Data] => ReactNode = null,
     className: String = null,
     headerData: Data = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     intervalRenderer: /* props */ js.UndefOr[IntervalRenderer[Data]] => ReactNode = null,
     labelFormat: String | (js.Function3[
       /* hasStartTimeEndTime */ js.Tuple2[Moment, Moment], 
@@ -47,7 +47,7 @@ object DateHeaderProps {
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (headerData != null) __obj.updateDynamic("headerData")(headerData.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (intervalRenderer != null) __obj.updateDynamic("intervalRenderer")(js.Any.fromFunction1(intervalRenderer))
     if (labelFormat != null) __obj.updateDynamic("labelFormat")(labelFormat.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

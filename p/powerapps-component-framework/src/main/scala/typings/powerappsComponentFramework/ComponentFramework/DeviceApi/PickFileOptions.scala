@@ -5,20 +5,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Interface of input argument 'pickupFileOption' in context.device.pickupFile
-		 */
+  * Interface of input argument 'pickupFileOption' in context.device.pickupFile
+  */
 trait PickFileOptions extends js.Object {
   /**
-  			 * Image file types to select. Valid values are "audio", "video", or "image".
-  			 */
+    * Image file types to select. Valid values are "audio", "video", or "image".
+    */
   var accept: String
   /**
-  			 * Indicates whether to allow selecting multiple files.
-  			 */
+    * Indicates whether to allow selecting multiple files.
+    */
   var allowMultipleFiles: Boolean
   /**
-  			 * Maximum size of the files(s) to be selected.
-  			 */
+    * Maximum size of the files(s) to be selected.
+    */
   var maximumAllowedFileSize: Double
 }
 

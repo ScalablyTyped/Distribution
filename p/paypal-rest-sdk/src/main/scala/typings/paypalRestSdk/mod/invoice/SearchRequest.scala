@@ -39,8 +39,8 @@ object SearchRequest {
     end_payment_date: String = null,
     lower_total_amount: Currency = null,
     number: String = null,
-    page: Int | Double = null,
-    page_size: Int | Double = null,
+    page: js.UndefOr[Double] = js.undefined,
+    page_size: js.UndefOr[Double] = js.undefined,
     recipient_business_name: String = null,
     recipient_first_name: String = null,
     recipient_last_name: String = null,
@@ -53,7 +53,7 @@ object SearchRequest {
     upper_total_amount: Currency = null
   ): SearchRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived.asInstanceOf[js.Any])
+    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived.get.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
     if (end_creation_date != null) __obj.updateDynamic("end_creation_date")(end_creation_date.asInstanceOf[js.Any])
     if (end_due_date != null) __obj.updateDynamic("end_due_date")(end_due_date.asInstanceOf[js.Any])
@@ -61,8 +61,8 @@ object SearchRequest {
     if (end_payment_date != null) __obj.updateDynamic("end_payment_date")(end_payment_date.asInstanceOf[js.Any])
     if (lower_total_amount != null) __obj.updateDynamic("lower_total_amount")(lower_total_amount.asInstanceOf[js.Any])
     if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (page_size != null) __obj.updateDynamic("page_size")(page_size.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(page_size)) __obj.updateDynamic("page_size")(page_size.get.asInstanceOf[js.Any])
     if (recipient_business_name != null) __obj.updateDynamic("recipient_business_name")(recipient_business_name.asInstanceOf[js.Any])
     if (recipient_first_name != null) __obj.updateDynamic("recipient_first_name")(recipient_first_name.asInstanceOf[js.Any])
     if (recipient_last_name != null) __obj.updateDynamic("recipient_last_name")(recipient_last_name.asInstanceOf[js.Any])
@@ -71,7 +71,7 @@ object SearchRequest {
     if (start_invoice_date != null) __obj.updateDynamic("start_invoice_date")(start_invoice_date.asInstanceOf[js.Any])
     if (start_payment_date != null) __obj.updateDynamic("start_payment_date")(start_payment_date.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (!js.isUndefined(total_count_required)) __obj.updateDynamic("total_count_required")(total_count_required.asInstanceOf[js.Any])
+    if (!js.isUndefined(total_count_required)) __obj.updateDynamic("total_count_required")(total_count_required.get.asInstanceOf[js.Any])
     if (upper_total_amount != null) __obj.updateDynamic("upper_total_amount")(upper_total_amount.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchRequest]
   }

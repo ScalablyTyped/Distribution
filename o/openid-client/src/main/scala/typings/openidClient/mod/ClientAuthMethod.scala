@@ -17,20 +17,18 @@ trait ClientAuthMethod extends js.Object
 
 object ClientAuthMethod {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def client_secret_basic: typings.openidClient.openidClientStrings.client_secret_basic = "client_secret_basic".asInstanceOf[typings.openidClient.openidClientStrings.client_secret_basic]
   @scala.inline
-  def client_secret_basic: typings.openidClient.openidClientStrings.client_secret_basic = this.cast("client_secret_basic")
+  def client_secret_jwt: typings.openidClient.openidClientStrings.client_secret_jwt = "client_secret_jwt".asInstanceOf[typings.openidClient.openidClientStrings.client_secret_jwt]
   @scala.inline
-  def client_secret_jwt: typings.openidClient.openidClientStrings.client_secret_jwt = this.cast("client_secret_jwt")
+  def client_secret_post: typings.openidClient.openidClientStrings.client_secret_post = "client_secret_post".asInstanceOf[typings.openidClient.openidClientStrings.client_secret_post]
   @scala.inline
-  def client_secret_post: typings.openidClient.openidClientStrings.client_secret_post = this.cast("client_secret_post")
+  def none: typings.openidClient.openidClientStrings.none = "none".asInstanceOf[typings.openidClient.openidClientStrings.none]
   @scala.inline
-  def none: typings.openidClient.openidClientStrings.none = this.cast("none")
+  def private_key_jwt: typings.openidClient.openidClientStrings.private_key_jwt = "private_key_jwt".asInstanceOf[typings.openidClient.openidClientStrings.private_key_jwt]
   @scala.inline
-  def private_key_jwt: typings.openidClient.openidClientStrings.private_key_jwt = this.cast("private_key_jwt")
+  def self_signed_tls_client_auth: typings.openidClient.openidClientStrings.self_signed_tls_client_auth = "self_signed_tls_client_auth".asInstanceOf[typings.openidClient.openidClientStrings.self_signed_tls_client_auth]
   @scala.inline
-  def self_signed_tls_client_auth: typings.openidClient.openidClientStrings.self_signed_tls_client_auth = this.cast("self_signed_tls_client_auth")
-  @scala.inline
-  def tls_client_auth: typings.openidClient.openidClientStrings.tls_client_auth = this.cast("tls_client_auth")
+  def tls_client_auth: typings.openidClient.openidClientStrings.tls_client_auth = "tls_client_auth".asInstanceOf[typings.openidClient.openidClientStrings.tls_client_auth]
 }
 

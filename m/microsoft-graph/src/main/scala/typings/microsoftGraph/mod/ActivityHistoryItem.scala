@@ -37,7 +37,7 @@ trait ActivityHistoryItem extends Entity {
 object ActivityHistoryItem {
   @scala.inline
   def apply(
-    activeDurationSeconds: Int | Double = null,
+    activeDurationSeconds: js.UndefOr[Double] = js.undefined,
     activity: UserActivity = null,
     createdDateTime: String = null,
     expirationDateTime: String = null,
@@ -49,7 +49,7 @@ object ActivityHistoryItem {
     userTimezone: String = null
   ): ActivityHistoryItem = {
     val __obj = js.Dynamic.literal()
-    if (activeDurationSeconds != null) __obj.updateDynamic("activeDurationSeconds")(activeDurationSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeDurationSeconds)) __obj.updateDynamic("activeDurationSeconds")(activeDurationSeconds.get.asInstanceOf[js.Any])
     if (activity != null) __obj.updateDynamic("activity")(activity.asInstanceOf[js.Any])
     if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
     if (expirationDateTime != null) __obj.updateDynamic("expirationDateTime")(expirationDateTime.asInstanceOf[js.Any])

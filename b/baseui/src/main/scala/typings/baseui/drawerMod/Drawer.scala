@@ -1,6 +1,6 @@
 package typings.baseui.drawerMod
 
-import typings.baseui.SharedStylePropsArgchildr
+import typings.baseui.anon.SharedStylePropsArgchildr
 import typings.baseui.baseuiStrings.backdrop
 import typings.baseui.baseuiStrings.closeButton
 import typings.baseui.baseuiStrings.escape_

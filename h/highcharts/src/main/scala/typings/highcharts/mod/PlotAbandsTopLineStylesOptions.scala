@@ -13,9 +13,9 @@ trait PlotAbandsTopLineStylesOptions extends js.Object {
 
 object PlotAbandsTopLineStylesOptions {
   @scala.inline
-  def apply(lineWidth: Int | Double = null): PlotAbandsTopLineStylesOptions = {
+  def apply(lineWidth: js.UndefOr[Double] = js.undefined): PlotAbandsTopLineStylesOptions = {
     val __obj = js.Dynamic.literal()
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotAbandsTopLineStylesOptions]
   }
 }

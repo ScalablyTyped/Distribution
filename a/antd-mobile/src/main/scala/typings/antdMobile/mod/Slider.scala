@@ -1,6 +1,6 @@
 package typings.antdMobile.mod
 
-import typings.antdMobile.AnonPrefixCls
+import typings.antdMobile.anon.PrefixCls
 import typings.antdMobile.sliderMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,6 @@ class Slider () extends default
 @JSImport("antd-mobile", "Slider")
 @js.native
 object Slider extends js.Object {
-  var defaultProps: AnonPrefixCls = js.native
+  var defaultProps: PrefixCls = js.native
 }
 

@@ -32,7 +32,7 @@ object LooksSameResult {
     val __obj = js.Dynamic.literal()
     if (diffBounds != null) __obj.updateDynamic("diffBounds")(diffBounds.asInstanceOf[js.Any])
     if (diffClusters != null) __obj.updateDynamic("diffClusters")(diffClusters.asInstanceOf[js.Any])
-    if (!js.isUndefined(equal)) __obj.updateDynamic("equal")(equal.asInstanceOf[js.Any])
+    if (!js.isUndefined(equal)) __obj.updateDynamic("equal")(equal.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LooksSameResult]
   }
 }

@@ -4,7 +4,7 @@ import typings.officeUiFabricReact.baseButtonClassNamesMod.IButtonClassNames
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLButtonElement
 import typings.uifabricStyling.ithemeMod.ITheme
 import scala.scalajs.js
@@ -124,7 +124,7 @@ object IGridCellProps {
     className: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     getClassNames: (/* theme */ ITheme, /* className */ String, /* variantClassName */ String, /* iconClassName */ js.UndefOr[String], /* menuIconClassName */ js.UndefOr[String], /* disabled */ Boolean, /* checked */ Boolean, /* expanded */ Boolean, /* isSplit */ js.UndefOr[Boolean]) => IButtonClassNames = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     label: String = null,
     onClick: /* item */ T => Unit = null,
     onFocus: /* item */ T => Unit = null,
@@ -141,9 +141,9 @@ object IGridCellProps {
     if (cellDisabledStyle != null) __obj.updateDynamic("cellDisabledStyle")(cellDisabledStyle.asInstanceOf[js.Any])
     if (cellIsSelectedStyle != null) __obj.updateDynamic("cellIsSelectedStyle")(cellIsSelectedStyle.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (getClassNames != null) __obj.updateDynamic("getClassNames")(js.Any.fromFunction9(getClassNames))
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
@@ -154,7 +154,7 @@ object IGridCellProps {
     if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridCellProps[T]]
   }
 }

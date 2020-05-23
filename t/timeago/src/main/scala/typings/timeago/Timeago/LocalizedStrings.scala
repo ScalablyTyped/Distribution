@@ -47,11 +47,7 @@ object LocalizedStrings {
     suffixAgo: String = null,
     suffixFromNow: String = null
   ): LocalizedStrings = {
-    val __obj = js.Dynamic.literal(day = day.asInstanceOf[js.Any], days = days.asInstanceOf[js.Any], hour = hour.asInstanceOf[js.Any], hours = hours.asInstanceOf[js.Any], inPast = inPast.asInstanceOf[js.Any], minute = minute.asInstanceOf[js.Any], minutes = minutes.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], months = months.asInstanceOf[js.Any], numbers = numbers.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any], wordSeparator = wordSeparator.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any], years = years.asInstanceOf[js.Any])
-    if (prefixAgo != null) __obj.updateDynamic("prefixAgo")(prefixAgo.asInstanceOf[js.Any])
-    if (prefixFromNow != null) __obj.updateDynamic("prefixFromNow")(prefixFromNow.asInstanceOf[js.Any])
-    if (suffixAgo != null) __obj.updateDynamic("suffixAgo")(suffixAgo.asInstanceOf[js.Any])
-    if (suffixFromNow != null) __obj.updateDynamic("suffixFromNow")(suffixFromNow.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(day = day.asInstanceOf[js.Any], days = days.asInstanceOf[js.Any], hour = hour.asInstanceOf[js.Any], hours = hours.asInstanceOf[js.Any], inPast = inPast.asInstanceOf[js.Any], minute = minute.asInstanceOf[js.Any], minutes = minutes.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], months = months.asInstanceOf[js.Any], numbers = numbers.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any], wordSeparator = wordSeparator.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any], years = years.asInstanceOf[js.Any], prefixAgo = prefixAgo.asInstanceOf[js.Any], prefixFromNow = prefixFromNow.asInstanceOf[js.Any], suffixAgo = suffixAgo.asInstanceOf[js.Any], suffixFromNow = suffixFromNow.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalizedStrings]
   }
 }

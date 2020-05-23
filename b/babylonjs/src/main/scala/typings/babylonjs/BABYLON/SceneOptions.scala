@@ -33,10 +33,10 @@ object SceneOptions {
     virtual: js.UndefOr[Boolean] = js.undefined
   ): SceneOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(useClonedMeshMap)) __obj.updateDynamic("useClonedMeshMap")(useClonedMeshMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(useGeometryUniqueIdsMap)) __obj.updateDynamic("useGeometryUniqueIdsMap")(useGeometryUniqueIdsMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMaterialMeshMap)) __obj.updateDynamic("useMaterialMeshMap")(useMaterialMeshMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(virtual)) __obj.updateDynamic("virtual")(virtual.asInstanceOf[js.Any])
+    if (!js.isUndefined(useClonedMeshMap)) __obj.updateDynamic("useClonedMeshMap")(useClonedMeshMap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useGeometryUniqueIdsMap)) __obj.updateDynamic("useGeometryUniqueIdsMap")(useGeometryUniqueIdsMap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useMaterialMeshMap)) __obj.updateDynamic("useMaterialMeshMap")(useMaterialMeshMap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(virtual)) __obj.updateDynamic("virtual")(virtual.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneOptions]
   }
 }

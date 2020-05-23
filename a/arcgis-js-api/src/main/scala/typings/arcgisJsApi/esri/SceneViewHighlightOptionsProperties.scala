@@ -46,15 +46,15 @@ object SceneViewHighlightOptionsProperties {
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     color: Color_ | js.Array[Double] | String = null,
-    fillOpacity: Int | Double = null,
+    fillOpacity: js.UndefOr[Double] = js.undefined,
     haloColor: Color_ = null,
-    haloOpacity: Int | Double = null
+    haloOpacity: js.UndefOr[Double] = js.undefined
   ): SceneViewHighlightOptionsProperties = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(fillOpacity)) __obj.updateDynamic("fillOpacity")(fillOpacity.get.asInstanceOf[js.Any])
     if (haloColor != null) __obj.updateDynamic("haloColor")(haloColor.asInstanceOf[js.Any])
-    if (haloOpacity != null) __obj.updateDynamic("haloOpacity")(haloOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(haloOpacity)) __obj.updateDynamic("haloOpacity")(haloOpacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneViewHighlightOptionsProperties]
   }
 }

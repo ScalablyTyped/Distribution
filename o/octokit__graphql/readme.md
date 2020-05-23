@@ -1,7 +1,7 @@
 
 # Scala.js typings for octokit__graphql
 
-Typings are for version 4.3.1
+Typings are for version 4.5.0
 
 ## Library description:
 GitHub GraphQL API client for browsers and Node

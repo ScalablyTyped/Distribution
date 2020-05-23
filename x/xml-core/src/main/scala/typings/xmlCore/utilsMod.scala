@@ -1,6 +1,6 @@
 package typings.xmlCore
 
-import typings.std.Document_
+import typings.std.Document
 import typings.std.Element
 import typings.std.Node
 import typings.xmlCore.typesMod.AssocArray
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object utilsMod extends js.Object {
   val Select: SelectNodes = js.native
-  def Parse(xmlString: String): Document_ = js.native
+  def Parse(xmlString: String): Document = js.native
   def SelectNamespaces(node: Element): AssocArray[String] = js.native
   def SelectSingleNode(node: Node, path: String): Node | Null = js.native
   def Stringify(target: Node): String = js.native

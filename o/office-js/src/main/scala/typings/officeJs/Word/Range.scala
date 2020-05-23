@@ -1,13 +1,13 @@
 package typings.officeJs.Word
 
-import typings.officeJs.AnonExpand
-import typings.officeJs.AnonIgnorePunct
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.ClientResult
 import typings.officeJs.OfficeExtension.UpdateOptions
 import typings.officeJs.Word.Interfaces.RangeData
 import typings.officeJs.Word.Interfaces.RangeLoadOptions
 import typings.officeJs.Word.Interfaces.RangeUpdateData
+import typings.officeJs.anon.Expand
+import typings.officeJs.anon.IgnorePunct
 import typings.officeJs.officeJsStrings.After
 import typings.officeJs.officeJsStrings.Before
 import typings.officeJs.officeJsStrings.Content
@@ -33,9 +33,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: WordApi 1.1]
   */
-@JSGlobal("Word.Range")
 @js.native
-class Range () extends ClientObject {
+trait Range extends ClientObject {
   /**
     *
     * Gets the collection of content control objects in the range. Read-only.
@@ -571,8 +570,8 @@ class Range () extends ClientObject {
   def load(): Range = js.native
   def load(option: String): Range = js.native
   def load(option: js.Array[String]): Range = js.native
-  def load(option: AnonExpand): Range = js.native
   def load(option: RangeLoadOptions): Range = js.native
+  def load(option: Expand): Range = js.native
   /**
     *
     * Performs a search with the specified SearchOptions on the scope of the range object. The search results are a collection of range objects.
@@ -583,8 +582,8 @@ class Range () extends ClientObject {
     * @param searchOptions Optional. Options for the search.
     */
   def search(searchText: String): RangeCollection = js.native
-  def search(searchText: String, searchOptions: AnonIgnorePunct): RangeCollection = js.native
   def search(searchText: String, searchOptions: SearchOptions): RangeCollection = js.native
+  def search(searchText: String, searchOptions: IgnorePunct): RangeCollection = js.native
   /**
     *
     * Selects and navigates the Word UI to the range.

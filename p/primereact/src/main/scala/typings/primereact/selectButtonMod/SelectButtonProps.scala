@@ -1,6 +1,6 @@
 package typings.primereact.selectButtonMod
 
-import typings.primereact.AnonTarget
+import typings.primereact.anon.Target
 import typings.primereact.tooltipOptionsMod.TooltipOptions
 import typings.react.mod.ReactNode
 import scala.scalajs.js
@@ -15,7 +15,7 @@ trait SelectButtonProps extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   var itemTemplate: js.UndefOr[js.Function1[/* option */ js.Any, ReactNode]] = js.undefined
   var multiple: js.UndefOr[Boolean] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ AnonTarget, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ Target, Unit]] = js.undefined
   var optionLabel: js.UndefOr[String] = js.undefined
   var optionValue: js.UndefOr[String] = js.undefined
   var options: js.UndefOr[js.Array[_]] = js.undefined
@@ -36,7 +36,7 @@ object SelectButtonProps {
     id: String = null,
     itemTemplate: /* option */ js.Any => ReactNode = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
-    onChange: /* e */ AnonTarget => Unit = null,
+    onChange: /* e */ Target => Unit = null,
     optionLabel: String = null,
     optionValue: String = null,
     options: js.Array[_] = null,
@@ -50,10 +50,10 @@ object SelectButtonProps {
     if (ariaLabelledBy != null) __obj.updateDynamic("ariaLabelledBy")(ariaLabelledBy.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (dataKey != null) __obj.updateDynamic("dataKey")(dataKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(js.Any.fromFunction1(itemTemplate))
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (optionLabel != null) __obj.updateDynamic("optionLabel")(optionLabel.asInstanceOf[js.Any])
     if (optionValue != null) __obj.updateDynamic("optionValue")(optionValue.asInstanceOf[js.Any])

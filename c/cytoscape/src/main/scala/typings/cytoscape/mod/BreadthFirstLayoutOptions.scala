@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * http://js.cytoscape.org/#layouts/breadthfirst
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.cytoscape.mod.LayoutOptions because Already inherited */ trait BreadthFirstLayoutOptions extends ShapedLayoutOptions {
   // put depths in concentric circles if true, put depths top down if false
   var circle: Boolean
@@ -32,28 +32,28 @@ object BreadthFirstLayoutOptions {
     name: breadthfirst,
     nodeDimensionsIncludeLabels: Boolean,
     animate: js.UndefOr[Boolean] = js.undefined,
-    animationDuration: Int | Double = null,
+    animationDuration: js.UndefOr[Double] = js.undefined,
     animationEasing: js.UndefOr[Boolean] = js.undefined,
     avoidOverlap: js.UndefOr[Boolean] = js.undefined,
     boundingBox: BoundingBox12 | BoundingBoxWH = null,
-    padding: Int | Double = null,
+    padding: js.UndefOr[Double] = js.undefined,
     ready: /* e */ LayoutEventObject => Unit = null,
     roots: String = null,
     sort: (/* a */ SortableNode, /* b */ SortableNode) => Double = null,
-    spacingFactor: Int | Double = null,
+    spacingFactor: js.UndefOr[Double] = js.undefined,
     stop: /* e */ LayoutEventObject => Unit = null
   ): BreadthFirstLayoutOptions = {
     val __obj = js.Dynamic.literal(circle = circle.asInstanceOf[js.Any], directed = directed.asInstanceOf[js.Any], fit = fit.asInstanceOf[js.Any], maximalAdjustments = maximalAdjustments.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
-    if (!js.isUndefined(avoidOverlap)) __obj.updateDynamic("avoidOverlap")(avoidOverlap.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(avoidOverlap)) __obj.updateDynamic("avoidOverlap")(avoidOverlap.get.asInstanceOf[js.Any])
     if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
     if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
     if (roots != null) __obj.updateDynamic("roots")(roots.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction2(sort))
-    if (spacingFactor != null) __obj.updateDynamic("spacingFactor")(spacingFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(spacingFactor)) __obj.updateDynamic("spacingFactor")(spacingFactor.get.asInstanceOf[js.Any])
     if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction1(stop))
     __obj.asInstanceOf[BreadthFirstLayoutOptions]
   }

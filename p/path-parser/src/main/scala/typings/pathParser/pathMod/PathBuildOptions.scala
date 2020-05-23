@@ -20,8 +20,8 @@ object PathBuildOptions {
     urlParamsEncoding: URLParamsEncodingType = null
   ): PathBuildOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreConstraints)) __obj.updateDynamic("ignoreConstraints")(ignoreConstraints.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreSearch)) __obj.updateDynamic("ignoreSearch")(ignoreSearch.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreConstraints)) __obj.updateDynamic("ignoreConstraints")(ignoreConstraints.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreSearch)) __obj.updateDynamic("ignoreSearch")(ignoreSearch.get.asInstanceOf[js.Any])
     if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
     if (urlParamsEncoding != null) __obj.updateDynamic("urlParamsEncoding")(urlParamsEncoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathBuildOptions]

@@ -1,7 +1,7 @@
 package typings.bull.mod
 
-import typings.bull.AnonCount
-import typings.bull.AnonJobId
+import typings.bull.anon.Count
+import typings.bull.anon.Data
 import typings.bull.bullStrings.active
 import typings.bull.bullStrings.cleaned
 import typings.bull.bullStrings.completed
@@ -51,6 +51,12 @@ trait Queue[T] extends EventEmitter {
     */
   def add(name: String, data: T): js.Promise[Job[T]] = js.native
   def add(name: String, data: T, opts: JobOptions): js.Promise[Job[T]] = js.native
+  /**
+    * Adds an array of jobs to the queue.
+    * If the queue is empty the jobs will be executed directly,
+    * otherwise they will be placed in the queue and executed as soon as possible.
+    */
+  def addBulk(jobs: js.Array[Data[T]]): js.Promise[js.Array[Job[T]]] = js.native
   /**
     * Returns Queue name in base64 encoded format
     */
@@ -144,9 +150,9 @@ trait Queue[T] extends EventEmitter {
     * Returns a object with the logs according to the start and end arguments. The returned count
     * value is the total amount of logs, useful for implementing pagination.
     */
-  def getJobLogs(jobId: String): js.Promise[AnonCount] = js.native
-  def getJobLogs(jobId: String, start: Double): js.Promise[AnonCount] = js.native
-  def getJobLogs(jobId: String, start: Double, end: Double): js.Promise[AnonCount] = js.native
+  def getJobLogs(jobId: String): js.Promise[Count] = js.native
+  def getJobLogs(jobId: String, start: Double): js.Promise[Count] = js.native
+  def getJobLogs(jobId: String, start: Double, end: Double): js.Promise[Count] = js.native
   /**
     * Returns a promise that will return an array of job instances of the given job statuses.
     * Optional parameters for range and ordering are provided.
@@ -376,12 +382,12 @@ trait Queue[T] extends EventEmitter {
     *
     * name: The name of the to be removed job
     */
-  def removeRepeatable(name: String, repeat: (CronRepeatOptions | EveryRepeatOptions) with AnonJobId): js.Promise[Unit] = js.native
+  def removeRepeatable(name: String, repeat: (CronRepeatOptions | EveryRepeatOptions) with typings.bull.anon.JobId): js.Promise[Unit] = js.native
   /**
     * Removes a given repeatable job. The RepeatOptions and JobId needs to be the same as the ones
     * used for the job when it was added.
     */
-  def removeRepeatable(repeat: (CronRepeatOptions | EveryRepeatOptions) with AnonJobId): js.Promise[Unit] = js.native
+  def removeRepeatable(repeat: (CronRepeatOptions | EveryRepeatOptions) with typings.bull.anon.JobId): js.Promise[Unit] = js.native
   /**
     * Removes a given repeatable job by key.
     */

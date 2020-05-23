@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.joi.mod._SchemaLike because Already inherited
 - typings.joi.mod._Schema because Already inherited */ @js.native
 trait DateSchema extends AnySchema {

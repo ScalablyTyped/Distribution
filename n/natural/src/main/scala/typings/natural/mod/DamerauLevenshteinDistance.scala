@@ -1,8 +1,8 @@
 package typings.natural.mod
 
-import typings.natural.DamerauLevenshteinDistanc
-import typings.natural.DamerauLevenshteinDistancDeletioncost
-import typings.natural.DamerauLevenshteinDistancInsertioncost
+import typings.natural.anon.DamerauLevenshteinDistanc
+import typings.natural.anon.DamerauLevenshteinDistancDeletioncost
+import typings.natural.anon.DamerauLevenshteinDistancInsertioncost
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

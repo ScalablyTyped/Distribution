@@ -1,6 +1,6 @@
 package typings.when.mod
 
-import typings.when.When.Promise_
+import typings.when.When.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +14,6 @@ object promise extends js.Object {
       /* reject */ js.Function1[/* reason */ js.Any, Unit], 
       Unit
     ]
-  ): Promise_[T] = js.native
+  ): Promise[T] = js.native
 }
 

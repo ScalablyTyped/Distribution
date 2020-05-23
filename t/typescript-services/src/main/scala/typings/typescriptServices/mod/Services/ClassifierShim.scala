@@ -11,5 +11,15 @@ import scala.scalajs.js.annotation._
 class ClassifierShim protected ()
   extends typings.typescriptServices.TypeScript.Services.ClassifierShim {
   def this(factory: IShimFactory, host: IClassifierHost) = this()
+  /* CompleteClass */
+  override var classifier: typings.typescriptServices.TypeScript.Services.Classifier = js.native
+  /* CompleteClass */
+  override var factory: js.Any = js.native
+  /* CompleteClass */
+  override var host: IClassifierHost = js.native
+  /* CompleteClass */
+  override def dispose(dummy: js.Any): Unit = js.native
+  /* CompleteClass */
+  override def getClassificationsForLine(text: String, lexState: typings.typescriptServices.TypeScript.Services.EndOfLineState): String = js.native
 }
 

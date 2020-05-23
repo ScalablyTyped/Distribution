@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Security.Credentials.UI
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object CredentialSaveOption extends js.Object {
   /** The "Save credentials?" dialog box is not selected, indicating that the user doesn't want their credentials saved. */
   @js.native
   sealed trait unselected extends CredentialSaveOption
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CredentialSaveOption with Double] = js.native
-  /* 2 */ @js.native
-  object hidden extends TopLevel[hidden with Double]
-  
-  /* 1 */ @js.native
-  object selected extends TopLevel[selected with Double]
-  
-  /* 0 */ @js.native
-  object unselected extends TopLevel[unselected with Double]
   
 }
 

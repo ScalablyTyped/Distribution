@@ -55,30 +55,30 @@ trait PendingModifiedValues extends js.Object {
 object PendingModifiedValues {
   @scala.inline
   def apply(
-    AutomatedSnapshotRetentionPeriod: Int | scala.Double = null,
+    AutomatedSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
     ClusterIdentifier: String = null,
     ClusterType: String = null,
     ClusterVersion: String = null,
     EncryptionType: String = null,
-    EnhancedVpcRouting: js.UndefOr[scala.Boolean] = js.undefined,
+    EnhancedVpcRouting: js.UndefOr[BooleanOptional] = js.undefined,
     MaintenanceTrackName: String = null,
     MasterUserPassword: String = null,
     NodeType: String = null,
-    NumberOfNodes: Int | scala.Double = null,
-    PubliclyAccessible: js.UndefOr[scala.Boolean] = js.undefined
+    NumberOfNodes: js.UndefOr[IntegerOptional] = js.undefined,
+    PubliclyAccessible: js.UndefOr[BooleanOptional] = js.undefined
   ): PendingModifiedValues = {
     val __obj = js.Dynamic.literal()
-    if (AutomatedSnapshotRetentionPeriod != null) __obj.updateDynamic("AutomatedSnapshotRetentionPeriod")(AutomatedSnapshotRetentionPeriod.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutomatedSnapshotRetentionPeriod)) __obj.updateDynamic("AutomatedSnapshotRetentionPeriod")(AutomatedSnapshotRetentionPeriod.get.asInstanceOf[js.Any])
     if (ClusterIdentifier != null) __obj.updateDynamic("ClusterIdentifier")(ClusterIdentifier.asInstanceOf[js.Any])
     if (ClusterType != null) __obj.updateDynamic("ClusterType")(ClusterType.asInstanceOf[js.Any])
     if (ClusterVersion != null) __obj.updateDynamic("ClusterVersion")(ClusterVersion.asInstanceOf[js.Any])
     if (EncryptionType != null) __obj.updateDynamic("EncryptionType")(EncryptionType.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnhancedVpcRouting)) __obj.updateDynamic("EnhancedVpcRouting")(EnhancedVpcRouting.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnhancedVpcRouting)) __obj.updateDynamic("EnhancedVpcRouting")(EnhancedVpcRouting.get.asInstanceOf[js.Any])
     if (MaintenanceTrackName != null) __obj.updateDynamic("MaintenanceTrackName")(MaintenanceTrackName.asInstanceOf[js.Any])
     if (MasterUserPassword != null) __obj.updateDynamic("MasterUserPassword")(MasterUserPassword.asInstanceOf[js.Any])
     if (NodeType != null) __obj.updateDynamic("NodeType")(NodeType.asInstanceOf[js.Any])
-    if (NumberOfNodes != null) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes.asInstanceOf[js.Any])
-    if (!js.isUndefined(PubliclyAccessible)) __obj.updateDynamic("PubliclyAccessible")(PubliclyAccessible.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfNodes)) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(PubliclyAccessible)) __obj.updateDynamic("PubliclyAccessible")(PubliclyAccessible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PendingModifiedValues]
   }
 }

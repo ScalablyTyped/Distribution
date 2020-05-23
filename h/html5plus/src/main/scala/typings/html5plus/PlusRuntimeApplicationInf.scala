@@ -27,10 +27,10 @@ trait PlusRuntimeApplicationInf extends js.Object {
   /**
     * 新任务模式标记
     * 可取值：
-    * 		true-使用新任务模式标记（FLAG_ACTIVITY_NEW_TASK）启动应用；
-    * 		false-不使用新任务模式标记（FLAG_ACTIVITY_NEW_TASK）启动应用。
-    * 	默认值为true。
-    * 	注意：由于5+应用配置的launchMode为singleTask，所以另一个5+应用通过plus.runtime.launchApplication启动时如果应用已经在后台运行则不会触发newintent事件，为了避免此问题需要将newTask参数值设置为false。
+    *         true-使用新任务模式标记（FLAG_ACTIVITY_NEW_TASK）启动应用；
+    *         false-不使用新任务模式标记（FLAG_ACTIVITY_NEW_TASK）启动应用。
+    *     默认值为true。
+    *     注意：由于5+应用配置的launchMode为singleTask，所以另一个5+应用通过plus.runtime.launchApplication启动时如果应用已经在后台运行则不会触发newintent事件，为了避免此问题需要将newTask参数值设置为false。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
     */
@@ -55,7 +55,7 @@ object PlusRuntimeApplicationInf {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
-    if (!js.isUndefined(newTask)) __obj.updateDynamic("newTask")(newTask.asInstanceOf[js.Any])
+    if (!js.isUndefined(newTask)) __obj.updateDynamic("newTask")(newTask.get.asInstanceOf[js.Any])
     if (pname != null) __obj.updateDynamic("pname")(pname.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusRuntimeApplicationInf]
   }

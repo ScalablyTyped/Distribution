@@ -1,6 +1,6 @@
 package typings.hlsParser.mod.types
 
-import typings.hlsParser.AnonAttributes
+import typings.hlsParser.anon.Attributes
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("hls-parser", "types.DateRange")
 @js.native
 class DateRange protected () extends js.Object {
-  def this(properties: AnonAttributes) = this()
+  def this(properties: Attributes) = this()
   var attributes: js.UndefOr[js.Object] = js.native
   var classId: js.UndefOr[String] = js.native
   var duration: js.UndefOr[Double] = js.native

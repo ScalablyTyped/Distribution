@@ -39,38 +39,38 @@ object MarkerOptions {
     attribution: String = null,
     autoPan: js.UndefOr[Boolean] = js.undefined,
     autoPanPadding: PointExpression = null,
-    autoPanSpeed: Int | Double = null,
+    autoPanSpeed: js.UndefOr[Double] = js.undefined,
     bubblingMouseEvents: js.UndefOr[Boolean] = js.undefined,
     draggable: js.UndefOr[Boolean] = js.undefined,
     icon: Icon_[IconOptions] | DivIcon_ = null,
     interactive: js.UndefOr[Boolean] = js.undefined,
     keyboard: js.UndefOr[Boolean] = js.undefined,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     pane: String = null,
-    riseOffset: Int | Double = null,
+    riseOffset: js.UndefOr[Double] = js.undefined,
     riseOnHover: js.UndefOr[Boolean] = js.undefined,
     shadowPane: String = null,
     title: String = null,
-    zIndexOffset: Int | Double = null
+    zIndexOffset: js.UndefOr[Double] = js.undefined
   ): MarkerOptions = {
     val __obj = js.Dynamic.literal()
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPan)) __obj.updateDynamic("autoPan")(autoPan.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPan)) __obj.updateDynamic("autoPan")(autoPan.get.asInstanceOf[js.Any])
     if (autoPanPadding != null) __obj.updateDynamic("autoPanPadding")(autoPanPadding.asInstanceOf[js.Any])
-    if (autoPanSpeed != null) __obj.updateDynamic("autoPanSpeed")(autoPanSpeed.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubblingMouseEvents)) __obj.updateDynamic("bubblingMouseEvents")(bubblingMouseEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPanSpeed)) __obj.updateDynamic("autoPanSpeed")(autoPanSpeed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bubblingMouseEvents)) __obj.updateDynamic("bubblingMouseEvents")(bubblingMouseEvents.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
-    if (riseOffset != null) __obj.updateDynamic("riseOffset")(riseOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(riseOnHover)) __obj.updateDynamic("riseOnHover")(riseOnHover.asInstanceOf[js.Any])
+    if (!js.isUndefined(riseOffset)) __obj.updateDynamic("riseOffset")(riseOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(riseOnHover)) __obj.updateDynamic("riseOnHover")(riseOnHover.get.asInstanceOf[js.Any])
     if (shadowPane != null) __obj.updateDynamic("shadowPane")(shadowPane.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (zIndexOffset != null) __obj.updateDynamic("zIndexOffset")(zIndexOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndexOffset)) __obj.updateDynamic("zIndexOffset")(zIndexOffset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerOptions]
   }
 }

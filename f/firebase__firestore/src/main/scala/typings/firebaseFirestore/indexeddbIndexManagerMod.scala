@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/indexeddb_index_manager", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_index_manager", JSImport.Namespace)
 @js.native
 object indexeddbIndexManagerMod extends js.Object {
   @js.native

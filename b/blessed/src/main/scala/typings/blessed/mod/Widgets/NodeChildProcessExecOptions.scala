@@ -23,9 +23,9 @@ object NodeChildProcessExecOptions {
     encoding: String = null,
     env: js.Any = null,
     killSignal: String = null,
-    maxBuffer: Int | Double = null,
+    maxBuffer: js.UndefOr[Double] = js.undefined,
     stdio: js.Any = null,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): NodeChildProcessExecOptions = {
     val __obj = js.Dynamic.literal()
     if (customFds != null) __obj.updateDynamic("customFds")(customFds.asInstanceOf[js.Any])
@@ -33,9 +33,9 @@ object NodeChildProcessExecOptions {
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (killSignal != null) __obj.updateDynamic("killSignal")(killSignal.asInstanceOf[js.Any])
-    if (maxBuffer != null) __obj.updateDynamic("maxBuffer")(maxBuffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxBuffer)) __obj.updateDynamic("maxBuffer")(maxBuffer.get.asInstanceOf[js.Any])
     if (stdio != null) __obj.updateDynamic("stdio")(stdio.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeChildProcessExecOptions]
   }
 }

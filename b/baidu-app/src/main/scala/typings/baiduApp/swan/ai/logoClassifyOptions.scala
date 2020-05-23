@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * 用于检测和识别图片中的品牌 LOGO 信息
-		 */
+  * 用于检测和识别图片中的品牌 LOGO 信息
+  */
 trait logoClassifyOptions
   extends BaseOptions[js.Any, js.Any] {
    // 图像资源地址
@@ -29,7 +29,7 @@ object logoClassifyOptions {
   ): logoClassifyOptions = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (!js.isUndefined(custom_lib)) __obj.updateDynamic("custom_lib")(custom_lib.asInstanceOf[js.Any])
+    if (!js.isUndefined(custom_lib)) __obj.updateDynamic("custom_lib")(custom_lib.get.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[logoClassifyOptions]

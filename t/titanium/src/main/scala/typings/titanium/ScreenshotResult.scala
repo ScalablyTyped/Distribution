@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
   */
 trait ScreenshotResult extends js.Object {
   /**
-  	 * The screenshot image.
-  	 */
+    * The screenshot image.
+    */
   var media: js.UndefOr[Blob] = js.undefined
 }
 

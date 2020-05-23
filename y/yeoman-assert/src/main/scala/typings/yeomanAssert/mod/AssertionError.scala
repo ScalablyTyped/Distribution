@@ -1,6 +1,6 @@
 package typings.yeomanAssert.mod
 
-import typings.assert.AnonActual
+import typings.assert.anon.Actual
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class AssertionError ()
   extends typings.assert.mod.AssertionError {
-  def this(options: AnonActual) = this()
+  def this(options: Actual) = this()
 }
 

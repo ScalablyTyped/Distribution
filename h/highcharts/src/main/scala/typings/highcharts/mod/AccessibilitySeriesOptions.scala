@@ -36,7 +36,7 @@ object AccessibilitySeriesOptions {
     pointDescriptionEnabledThreshold: Boolean | Double = null
   ): AccessibilitySeriesOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(describeSingleSeries)) __obj.updateDynamic("describeSingleSeries")(describeSingleSeries.asInstanceOf[js.Any])
+    if (!js.isUndefined(describeSingleSeries)) __obj.updateDynamic("describeSingleSeries")(describeSingleSeries.get.asInstanceOf[js.Any])
     if (descriptionFormatter != null) __obj.updateDynamic("descriptionFormatter")(js.Any.fromFunction1(descriptionFormatter))
     if (pointDescriptionEnabledThreshold != null) __obj.updateDynamic("pointDescriptionEnabledThreshold")(pointDescriptionEnabledThreshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessibilitySeriesOptions]

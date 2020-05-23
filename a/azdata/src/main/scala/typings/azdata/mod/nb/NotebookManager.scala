@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation._
 
 trait NotebookManager extends js.Object {
   /**
-  			 * Manages reading and writing contents to/from files.
-  			 * Files may be local or remote, with this manager giving them a chance to convert and migrate
-  			 * from specific notebook file types to and from a standard type for this UI
-  			 */
+    * Manages reading and writing contents to/from files.
+    * Files may be local or remote, with this manager giving them a chance to convert and migrate
+    * from specific notebook file types to and from a standard type for this UI
+    */
   val contentManager: ContentManager
   /**
-  			 * (Optional) ServerManager to handle server lifetime management operations.
-  			 * Depending on the implementation this may not be needed.
-  			 */
+    * (Optional) ServerManager to handle server lifetime management operations.
+    * Depending on the implementation this may not be needed.
+    */
   val serverManager: js.UndefOr[ServerManager] = js.undefined
   /**
-  			 * A SessionManager that handles starting, stopping and handling notifications around sessions.
-  			 * Each notebook has 1 session associated with it, and the session is responsible
-  			 * for kernel management
-  			 */
+    * A SessionManager that handles starting, stopping and handling notifications around sessions.
+    * Each notebook has 1 session associated with it, and the session is responsible
+    * for kernel management
+    */
   val sessionManager: SessionManager
 }
 

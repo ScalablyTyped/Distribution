@@ -1,7 +1,6 @@
 package typings.materialUi.MaterialUI.Utils
 
-import org.scalablytyped.runtime.TopLevel
-import typings.materialUi.AnonLeft
+import typings.materialUi.anon.Left
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.Node
@@ -15,13 +14,27 @@ trait Dom extends js.Object {
   def getStyleAttributeAsNumber(el: HTMLElement, attr: String): Double
   def hasClass(el: Element, className: String): Boolean
   def isDescendant(parent: Node, child: Node): Boolean
-  def offset(el: Element): AnonLeft
+  def offset(el: Element): Left
   def removeClass(el: Element, className: String): Unit
   def toggleClass(el: Element, className: String): Unit
   def withoutTransition(el: HTMLElement, callback: js.Function0[Unit]): Unit
 }
 
-@JSGlobal("__MaterialUI.Utils.Dom")
-@js.native
-object Dom extends TopLevel[Dom]
+object Dom {
+  @scala.inline
+  def apply(
+    addClass: (Element, String) => Unit,
+    forceRedraw: HTMLElement => Unit,
+    getStyleAttributeAsNumber: (HTMLElement, String) => Double,
+    hasClass: (Element, String) => Boolean,
+    isDescendant: (Node, Node) => Boolean,
+    offset: Element => Left,
+    removeClass: (Element, String) => Unit,
+    toggleClass: (Element, String) => Unit,
+    withoutTransition: (HTMLElement, js.Function0[Unit]) => Unit
+  ): Dom = {
+    val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction2(addClass), forceRedraw = js.Any.fromFunction1(forceRedraw), getStyleAttributeAsNumber = js.Any.fromFunction2(getStyleAttributeAsNumber), hasClass = js.Any.fromFunction2(hasClass), isDescendant = js.Any.fromFunction2(isDescendant), offset = js.Any.fromFunction1(offset), removeClass = js.Any.fromFunction2(removeClass), toggleClass = js.Any.fromFunction2(toggleClass), withoutTransition = js.Any.fromFunction2(withoutTransition))
+    __obj.asInstanceOf[Dom]
+  }
+}
 

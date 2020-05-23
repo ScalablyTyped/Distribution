@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait IEvent extends js.Object {
   /**
-  	         * Actions of the Event
-  	         */
+    * Actions of the Event
+    */
   var actions: js.UndefOr[js.Array[IEventAction]] = js.undefined
   /**
-  	         * If set the event will display as all-day event
-  	         */
+    * If set the event will display as all-day event
+    */
   var allDay: js.UndefOr[Boolean] = js.undefined
   /**
-  	         * Color of the Event
-  	         */
+    * Color of the Event
+    */
   var color: js.UndefOr[IEventColor] = js.undefined
   /**
     * A CSS class (or more, just separate with spaces) that will be added to the event when it is displayed on each view. Useful for marking an event as selected / active etc
@@ -84,16 +84,16 @@ object IEvent {
   ): IEvent = {
     val __obj = js.Dynamic.literal(startsAt = startsAt.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
-    if (!js.isUndefined(allDay)) __obj.updateDynamic("allDay")(allDay.asInstanceOf[js.Any])
+    if (!js.isUndefined(allDay)) __obj.updateDynamic("allDay")(allDay.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(deletable)) __obj.updateDynamic("deletable")(deletable.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
+    if (!js.isUndefined(deletable)) __obj.updateDynamic("deletable")(deletable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.get.asInstanceOf[js.Any])
     if (endsAt != null) __obj.updateDynamic("endsAt")(endsAt.asInstanceOf[js.Any])
-    if (!js.isUndefined(incrementsBadgeTotal)) __obj.updateDynamic("incrementsBadgeTotal")(incrementsBadgeTotal.asInstanceOf[js.Any])
+    if (!js.isUndefined(incrementsBadgeTotal)) __obj.updateDynamic("incrementsBadgeTotal")(incrementsBadgeTotal.get.asInstanceOf[js.Any])
     if (recursOn != null) __obj.updateDynamic("recursOn")(recursOn.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEvent]
   }

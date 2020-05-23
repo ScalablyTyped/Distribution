@@ -17,7 +17,7 @@ object TypeOptions {
   def apply(discriminator: Discriminator = null, keepDiscriminatorProperty: js.UndefOr[Boolean] = js.undefined): TypeOptions = {
     val __obj = js.Dynamic.literal()
     if (discriminator != null) __obj.updateDynamic("discriminator")(discriminator.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepDiscriminatorProperty)) __obj.updateDynamic("keepDiscriminatorProperty")(keepDiscriminatorProperty.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepDiscriminatorProperty)) __obj.updateDynamic("keepDiscriminatorProperty")(keepDiscriminatorProperty.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeOptions]
   }
 }

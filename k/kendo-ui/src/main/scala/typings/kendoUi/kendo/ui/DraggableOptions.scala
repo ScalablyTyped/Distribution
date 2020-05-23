@@ -30,7 +30,7 @@ object DraggableOptions {
     axis: String = null,
     container: JQuery = null,
     cursorOffset: js.Any = null,
-    distance: Int | Double = null,
+    distance: js.UndefOr[Double] = js.undefined,
     drag: /* e */ DraggableEvent => Unit = null,
     dragcancel: /* e */ DraggableEvent => Unit = null,
     dragend: /* e */ DraggableEvent => Unit = null,
@@ -43,11 +43,11 @@ object DraggableOptions {
     ignore: String = null
   ): DraggableOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoScroll)) __obj.updateDynamic("autoScroll")(autoScroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoScroll)) __obj.updateDynamic("autoScroll")(autoScroll.get.asInstanceOf[js.Any])
     if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (cursorOffset != null) __obj.updateDynamic("cursorOffset")(cursorOffset.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
     if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction1(drag))
     if (dragcancel != null) __obj.updateDynamic("dragcancel")(js.Any.fromFunction1(dragcancel))
     if (dragend != null) __obj.updateDynamic("dragend")(js.Any.fromFunction1(dragend))
@@ -56,7 +56,7 @@ object DraggableOptions {
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
     if (hold != null) __obj.updateDynamic("hold")(js.Any.fromFunction1(hold))
-    if (!js.isUndefined(holdToDrag)) __obj.updateDynamic("holdToDrag")(holdToDrag.asInstanceOf[js.Any])
+    if (!js.isUndefined(holdToDrag)) __obj.updateDynamic("holdToDrag")(holdToDrag.get.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggableOptions]
   }

@@ -1,6 +1,5 @@
 package typings.googleAppsScriptOauth2.GoogleAppsScriptOAuth2
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,14 +21,6 @@ object TokenFormat extends js.Object {
     */
   @js.native
   sealed trait JSON extends TokenFormat
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TokenFormat with Double] = js.native
-  /* 1 */ @js.native
-  object FORM_URL_ENCODED extends TopLevel[FORM_URL_ENCODED with Double]
-  
-  /* 0 */ @js.native
-  object JSON extends TopLevel[JSON with Double]
   
 }
 

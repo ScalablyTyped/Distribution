@@ -5,32 +5,32 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	*	Participant info
-	*/
+  *    Participant info
+  */
 trait ParticipantInfo extends js.Object {
   /**
-  		* The participant's affiliation with the room
-  		*/
+    * The participant's affiliation with the room
+    */
   var affiliation: Double
   /**
-  		* Indicate conditions like: user has been kicked or banned from the room
-  		*/
+    * Indicate conditions like: user has been kicked or banned from the room
+    */
   var flags: Double
   /**
-  		* User id
-  		*/
+    * User id
+    */
   var id: String
   /**
-  		* Reason
-  		*/
+    * Reason
+    */
   var reason: String
   /**
-  		* Resource name
-  		*/
+    * Resource name
+    */
   var resource: String
   /**
-  		* The participant's role with the room
-  		*/
+    * The participant's role with the room
+    */
   var role: Double
 }
 

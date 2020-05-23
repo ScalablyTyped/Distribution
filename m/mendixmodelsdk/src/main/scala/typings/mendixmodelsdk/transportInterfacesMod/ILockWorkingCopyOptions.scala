@@ -27,13 +27,13 @@ object ILockWorkingCopyOptions {
   @scala.inline
   def apply(
     lockType: LockType,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     force: js.UndefOr[Boolean] = js.undefined,
     lockId: String = null
   ): ILockWorkingCopyOptions = {
     val __obj = js.Dynamic.literal(lockType = lockType.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
     if (lockId != null) __obj.updateDynamic("lockId")(lockId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILockWorkingCopyOptions]
   }

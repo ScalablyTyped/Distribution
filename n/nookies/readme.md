@@ -1,7 +1,7 @@
 
 # Scala.js typings for nookies
 
-Typings are for version 2.2.2
+Typings are for version 2.3.0
 
 ## Library description:
 A set of cookie helpers for Next.js

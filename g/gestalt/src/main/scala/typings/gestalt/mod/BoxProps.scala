@@ -1,6 +1,6 @@
 package typings.gestalt.mod
 
-import typings.gestalt.AnonStyle
+import typings.gestalt.anon.Style
 import typings.gestalt.gestaltNumbers.`0.1`
 import typings.gestalt.gestaltNumbers.`0.2`
 import typings.gestalt.gestaltNumbers.`0.3`
@@ -87,7 +87,7 @@ trait BoxProps extends js.Object {
     blue | darkGray | darkWash | eggplant | gray | green | lightGray | lightWash | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | transparent | transparentDarkGray | watermelon | white
   ] = js.undefined
   var column: js.UndefOr[UnsignedUpTo12] = js.undefined
-  var dangerouslySetInlineStyle: js.UndefOr[AnonStyle] = js.undefined
+  var dangerouslySetInlineStyle: js.UndefOr[Style] = js.undefined
   var direction: js.UndefOr[row | column] = js.undefined
   var display: js.UndefOr[none | flex | block | inlineBlock | visuallyHidden] = js.undefined
   var fit: js.UndefOr[Boolean] = js.undefined
@@ -171,7 +171,7 @@ object BoxProps {
     children: ReactNode = null,
     color: blue | darkGray | darkWash | eggplant | gray | green | lightGray | lightWash | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | transparent | transparentDarkGray | watermelon | white = null,
     column: UnsignedUpTo12 = null,
-    dangerouslySetInlineStyle: AnonStyle = null,
+    dangerouslySetInlineStyle: Style = null,
     direction: row | column = null,
     display: none | flex | block | inlineBlock | visuallyHidden = null,
     fit: js.UndefOr[Boolean] = js.undefined,
@@ -246,18 +246,18 @@ object BoxProps {
     if (alignItems != null) __obj.updateDynamic("alignItems")(alignItems.asInstanceOf[js.Any])
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
     if (borderSize != null) __obj.updateDynamic("borderSize")(borderSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(bottom)) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    if (!js.isUndefined(bottom)) __obj.updateDynamic("bottom")(bottom.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
     if (dangerouslySetInlineStyle != null) __obj.updateDynamic("dangerouslySetInlineStyle")(dangerouslySetInlineStyle.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (!js.isUndefined(fit)) __obj.updateDynamic("fit")(fit.asInstanceOf[js.Any])
+    if (!js.isUndefined(fit)) __obj.updateDynamic("fit")(fit.get.asInstanceOf[js.Any])
     if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (justifyContent != null) __obj.updateDynamic("justifyContent")(justifyContent.asInstanceOf[js.Any])
-    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.get.asInstanceOf[js.Any])
     if (lgColumn != null) __obj.updateDynamic("lgColumn")(lgColumn.asInstanceOf[js.Any])
     if (lgDirection != null) __obj.updateDynamic("lgDirection")(lgDirection.asInstanceOf[js.Any])
     if (lgDisplay != null) __obj.updateDynamic("lgDisplay")(lgDisplay.asInstanceOf[js.Any])
@@ -301,7 +301,7 @@ object BoxProps {
     if (paddingX != null) __obj.updateDynamic("paddingX")(paddingX.asInstanceOf[js.Any])
     if (paddingY != null) __obj.updateDynamic("paddingY")(paddingY.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(right)) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    if (!js.isUndefined(right)) __obj.updateDynamic("right")(right.get.asInstanceOf[js.Any])
     if (rounding != null) __obj.updateDynamic("rounding")(rounding.asInstanceOf[js.Any])
     if (smColumn != null) __obj.updateDynamic("smColumn")(smColumn.asInstanceOf[js.Any])
     if (smDirection != null) __obj.updateDynamic("smDirection")(smDirection.asInstanceOf[js.Any])
@@ -316,9 +316,9 @@ object BoxProps {
     if (smPadding != null) __obj.updateDynamic("smPadding")(smPadding.asInstanceOf[js.Any])
     if (smPaddingX != null) __obj.updateDynamic("smPaddingX")(smPaddingX.asInstanceOf[js.Any])
     if (smPaddingY != null) __obj.updateDynamic("smPaddingY")(smPaddingY.asInstanceOf[js.Any])
-    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoxProps]
   }
 }

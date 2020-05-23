@@ -15,10 +15,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("jo")
 @js.native
-class jo_ protected () extends js.Object {
-  def this(baseUri: String) = this()
+trait jo_ extends js.Object {
   var ExpandSettings: ExpandSettings = js.native
   var FilterSettings: InlineCountSettings = js.native
   var FormatSettings: FormatSettings = js.native

@@ -26,7 +26,7 @@ object Config {
     val __obj = js.Dynamic.literal(onRead = js.Any.fromFunction2(onRead), onRender = js.Any.fromFunction3(onRender))
     if (aliasMap != null) __obj.updateDynamic("aliasMap")(aliasMap.asInstanceOf[js.Any])
     if (uncachedValues != null) __obj.updateDynamic("uncachedValues")(uncachedValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCache)) __obj.updateDynamic("useCache")(useCache.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCache)) __obj.updateDynamic("useCache")(useCache.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo__protobufjs
 
-Typings are for version 1.0.3
+Typings are for version 1.0.4
 
 ## Library description:
 Protocol Buffers for JavaScript (& TypeScript).

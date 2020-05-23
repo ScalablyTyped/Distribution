@@ -195,7 +195,7 @@ object IScreenOptions {
     autoPadding: js.UndefOr[Boolean] = js.undefined,
     bottom: TPosition = null,
     children: js.Array[Node] = null,
-    cols: Int | Double = null,
+    cols: js.UndefOr[Double] = js.undefined,
     cursor: TCursor = null,
     debug: js.UndefOr[Boolean] = js.undefined,
     dockBorders: js.UndefOr[Boolean] = js.undefined,
@@ -218,13 +218,13 @@ object IScreenOptions {
     output: Readable = null,
     parent: Node = null,
     program: BlessedProgram = null,
-    resizeTimeout: Int | Double = null,
+    resizeTimeout: js.UndefOr[Double] = js.undefined,
     right: TPosition = null,
-    rows: Int | Double = null,
+    rows: js.UndefOr[Double] = js.undefined,
     screen: Screen = null,
     sendFocus: js.UndefOr[Boolean] = js.undefined,
     smartCSR: js.UndefOr[Boolean] = js.undefined,
-    tabSize: Int | Double = null,
+    tabSize: js.UndefOr[Double] = js.undefined,
     terminal: String = null,
     title: String = null,
     top: TTopLeft = null,
@@ -238,45 +238,45 @@ object IScreenOptions {
     if (aleft != null) __obj.updateDynamic("aleft")(aleft.asInstanceOf[js.Any])
     if (aright != null) __obj.updateDynamic("aright")(aright.asInstanceOf[js.Any])
     if (atop != null) __obj.updateDynamic("atop")(atop.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPadding)) __obj.updateDynamic("autoPadding")(autoPadding.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPadding)) __obj.updateDynamic("autoPadding")(autoPadding.get.asInstanceOf[js.Any])
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
+    if (!js.isUndefined(cols)) __obj.updateDynamic("cols")(cols.get.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (!js.isUndefined(dockBorders)) __obj.updateDynamic("dockBorders")(dockBorders.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dockBorders)) __obj.updateDynamic("dockBorders")(dockBorders.get.asInstanceOf[js.Any])
     if (dump != null) __obj.updateDynamic("dump")(dump.asInstanceOf[js.Any])
-    if (!js.isUndefined(fastCSR)) __obj.updateDynamic("fastCSR")(fastCSR.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.asInstanceOf[js.Any])
+    if (!js.isUndefined(fastCSR)) __obj.updateDynamic("fastCSR")(fastCSR.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.get.asInstanceOf[js.Any])
     if (focused != null) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceUnicode)) __obj.updateDynamic("forceUnicode")(forceUnicode.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullUnicode)) __obj.updateDynamic("fullUnicode")(fullUnicode.asInstanceOf[js.Any])
-    if (!js.isUndefined(grabKeys)) __obj.updateDynamic("grabKeys")(grabKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceUnicode)) __obj.updateDynamic("forceUnicode")(forceUnicode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullUnicode)) __obj.updateDynamic("fullUnicode")(fullUnicode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(grabKeys)) __obj.updateDynamic("grabKeys")(grabKeys.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreDockContrast)) __obj.updateDynamic("ignoreDockContrast")(ignoreDockContrast.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreDockContrast)) __obj.updateDynamic("ignoreDockContrast")(ignoreDockContrast.get.asInstanceOf[js.Any])
     if (ignoreLocked != null) __obj.updateDynamic("ignoreLocked")(ignoreLocked.asInstanceOf[js.Any])
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (!js.isUndefined(lockKeys)) __obj.updateDynamic("lockKeys")(lockKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockKeys)) __obj.updateDynamic("lockKeys")(lockKeys.get.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     if (program != null) __obj.updateDynamic("program")(program.asInstanceOf[js.Any])
-    if (resizeTimeout != null) __obj.updateDynamic("resizeTimeout")(resizeTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizeTimeout)) __obj.updateDynamic("resizeTimeout")(resizeTimeout.get.asInstanceOf[js.Any])
     if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
     if (screen != null) __obj.updateDynamic("screen")(screen.asInstanceOf[js.Any])
-    if (!js.isUndefined(sendFocus)) __obj.updateDynamic("sendFocus")(sendFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(smartCSR)) __obj.updateDynamic("smartCSR")(smartCSR.asInstanceOf[js.Any])
-    if (tabSize != null) __obj.updateDynamic("tabSize")(tabSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendFocus)) __obj.updateDynamic("sendFocus")(sendFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(smartCSR)) __obj.updateDynamic("smartCSR")(smartCSR.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabSize)) __obj.updateDynamic("tabSize")(tabSize.get.asInstanceOf[js.Any])
     if (terminal != null) __obj.updateDynamic("terminal")(terminal.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (tput != null) __obj.updateDynamic("tput")(tput.asInstanceOf[js.Any])
-    if (!js.isUndefined(useBCE)) __obj.updateDynamic("useBCE")(useBCE.asInstanceOf[js.Any])
-    if (!js.isUndefined(warnings)) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
+    if (!js.isUndefined(useBCE)) __obj.updateDynamic("useBCE")(useBCE.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(warnings)) __obj.updateDynamic("warnings")(warnings.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IScreenOptions]
   }

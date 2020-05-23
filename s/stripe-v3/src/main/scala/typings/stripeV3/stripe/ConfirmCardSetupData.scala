@@ -1,6 +1,6 @@
 package typings.stripeV3.stripe
 
-import typings.stripeV3.AnonBillingdetailsBillingDetails
+import typings.stripeV3.anon.BillingdetailsBillingDetails
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,12 +12,12 @@ trait ConfirmCardSetupData extends js.Object {
     * additional data relevant to the PaymentMethod, such as billing
     * details:
     */
-  var payment_method: js.UndefOr[String | AnonBillingdetailsBillingDetails] = js.undefined
+  var payment_method: js.UndefOr[String | BillingdetailsBillingDetails] = js.undefined
 }
 
 object ConfirmCardSetupData {
   @scala.inline
-  def apply(payment_method: String | AnonBillingdetailsBillingDetails = null): ConfirmCardSetupData = {
+  def apply(payment_method: String | BillingdetailsBillingDetails = null): ConfirmCardSetupData = {
     val __obj = js.Dynamic.literal()
     if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfirmCardSetupData]

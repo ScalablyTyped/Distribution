@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.WaveBlock")
 @js.native
-class WaveBlock protected () extends NodeMaterialBlock {
-  /**
-    * Creates a new WaveBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait WaveBlock extends NodeMaterialBlock {
   /**
     * Gets or sets the kibnd of wave to be applied by the block
     */

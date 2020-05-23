@@ -22,9 +22,13 @@ trait ListDataSetsRequest extends js.Object {
 
 object ListDataSetsRequest {
   @scala.inline
-  def apply(AwsAccountId: AwsAccountId, MaxResults: Int | scala.Double = null, NextToken: String = null): ListDataSetsRequest = {
+  def apply(
+    AwsAccountId: AwsAccountId,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    NextToken: String = null
+  ): ListDataSetsRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDataSetsRequest]
   }

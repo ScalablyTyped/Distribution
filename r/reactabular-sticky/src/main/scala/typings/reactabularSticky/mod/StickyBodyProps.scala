@@ -1,6 +1,6 @@
 package typings.reactabularSticky.mod
 
-import typings.reactabularSticky.PartialUIEvent
+import typings.reactabularSticky.anon.PartialUIEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,9 +14,8 @@ trait StickyBodyProps extends js.Object {
 object StickyBodyProps {
   @scala.inline
   def apply(onScroll: /* e */ PartialUIEvent => Unit = null, tableHeader: HTMLElement = null): StickyBodyProps = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(tableHeader = tableHeader.asInstanceOf[js.Any])
     if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
-    if (tableHeader != null) __obj.updateDynamic("tableHeader")(tableHeader.asInstanceOf[js.Any])
     __obj.asInstanceOf[StickyBodyProps]
   }
 }

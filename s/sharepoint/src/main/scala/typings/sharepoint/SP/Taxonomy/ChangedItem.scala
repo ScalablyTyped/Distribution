@@ -7,9 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Taxonomy.ChangedItem")
 @js.native
-class ChangedItem () extends ClientObject {
+trait ChangedItem extends ClientObject {
   def get_changedBy(): String = js.native
   def get_changedTime(): Date = js.native
   def get_id(): Guid = js.native

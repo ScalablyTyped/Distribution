@@ -1,8 +1,8 @@
 package typings.sparkpost.mod
 
-import typings.sparkpost.AnonEmailrfc822
-import typings.sparkpost.AnonListid
-import typings.sparkpost.AnonTemplateid
+import typings.sparkpost.anon.Emailrfc822
+import typings.sparkpost.anon.Listid
+import typings.sparkpost.anon.Templateid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait CreateTransmission extends js.Object {
     */
   var cc: js.UndefOr[js.Array[Recipient]] = js.undefined
   /** Content that will be used to construct a message */
-  var content: InlineContent | AnonTemplateid | AnonEmailrfc822
+  var content: InlineContent | Templateid | Emailrfc822
   /** Description of the transmission */
   var description: js.UndefOr[String] = js.undefined
   /** Transmission level metadata containing key/value pairs */
@@ -29,7 +29,7 @@ trait CreateTransmission extends js.Object {
   /** JSON object in which transmission options are defined */
   var options: js.UndefOr[TransmissionOptions] = js.undefined
   /** Inline recipient objects or object containing stored recipient list ID */
-  var recipients: js.UndefOr[js.Array[Recipient] | AnonListid] = js.undefined
+  var recipients: js.UndefOr[js.Array[Recipient] | Listid] = js.undefined
   /** SparkPost Enterprise API only: email to use for envelope FROM */
   var return_path: js.UndefOr[String] = js.undefined
   /** Key/value pairs that are provided to the substitution engine */
@@ -39,14 +39,14 @@ trait CreateTransmission extends js.Object {
 object CreateTransmission {
   @scala.inline
   def apply(
-    content: InlineContent | AnonTemplateid | AnonEmailrfc822,
+    content: InlineContent | Templateid | Emailrfc822,
     bcc: js.Array[Recipient] = null,
     campaign_id: String = null,
     cc: js.Array[Recipient] = null,
     description: String = null,
     metadata: js.Any = null,
     options: TransmissionOptions = null,
-    recipients: js.Array[Recipient] | AnonListid = null,
+    recipients: js.Array[Recipient] | Listid = null,
     return_path: String = null,
     substitution_data: js.Any = null
   ): CreateTransmission = {

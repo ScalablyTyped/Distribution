@@ -1,7 +1,7 @@
 package typings.materialRipple
 
 import typings.materialRipple.adapterMod.MDCRippleAdapter
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,9 +13,9 @@ object foundationMod extends js.Object {
   trait MDCRippleFoundation
     extends typings.materialBase.foundationMod.default[MDCRippleAdapter] {
     def activate(): Unit = js.native
-    def activate(event: Event_): Unit = js.native
+    def activate(event: Event): Unit = js.native
     def deactivate(): Unit = js.native
-    def deactivate(event: Event_): Unit = js.native
+    def deactivate(event: Event): Unit = js.native
     def layout(): Unit = js.native
     def setUnbounded(unbounded: Boolean): Unit = js.native
   }

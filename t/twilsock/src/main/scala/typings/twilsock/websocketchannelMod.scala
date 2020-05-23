@@ -16,6 +16,8 @@ object websocketchannelMod extends js.Object {
     val url: js.Any = js.native
     def close(): Unit = js.native
     def connect(): Unit = js.native
+    @JSName("isConnected")
+    def isConnected_MWebSocketChannel: Boolean = js.native
   }
   
 }

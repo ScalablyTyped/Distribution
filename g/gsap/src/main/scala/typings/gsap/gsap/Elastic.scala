@@ -4,18 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("gsap.Elastic")
-@js.native
-class Elastic () extends Ease {
-  def config(amplitude: Double, period: Double): Elastic = js.native
+trait Elastic extends Ease {
+  def config(amplitude: Double, period: Double): Elastic
 }
 
-/* static members */
-@JSGlobal("gsap.Elastic")
-@js.native
-object Elastic extends js.Object {
-  var easeIn: Elastic = js.native
-  var easeInOut: Elastic = js.native
-  var easeOut: Elastic = js.native
+object Elastic {
+  @scala.inline
+  def apply(config: (Double, Double) => Elastic, getRatio: Double => Double): Elastic = {
+    val __obj = js.Dynamic.literal(config = js.Any.fromFunction2(config), getRatio = js.Any.fromFunction1(getRatio))
+    __obj.asInstanceOf[Elastic]
+  }
 }
 

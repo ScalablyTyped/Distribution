@@ -36,7 +36,7 @@ object VolumeAttachment {
   @scala.inline
   def apply(
     AttachTime: DateTime = null,
-    DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined,
+    DeleteOnTermination: js.UndefOr[Boolean] = js.undefined,
     Device: String = null,
     InstanceId: String = null,
     State: VolumeAttachmentState = null,
@@ -44,7 +44,7 @@ object VolumeAttachment {
   ): VolumeAttachment = {
     val __obj = js.Dynamic.literal()
     if (AttachTime != null) __obj.updateDynamic("AttachTime")(AttachTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeleteOnTermination)) __obj.updateDynamic("DeleteOnTermination")(DeleteOnTermination.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeleteOnTermination)) __obj.updateDynamic("DeleteOnTermination")(DeleteOnTermination.get.asInstanceOf[js.Any])
     if (Device != null) __obj.updateDynamic("Device")(Device.asInstanceOf[js.Any])
     if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])

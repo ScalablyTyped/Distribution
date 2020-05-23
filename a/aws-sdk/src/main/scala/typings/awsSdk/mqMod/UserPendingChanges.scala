@@ -23,12 +23,12 @@ trait UserPendingChanges extends js.Object {
 object UserPendingChanges {
   @scala.inline
   def apply(
-    ConsoleAccess: js.UndefOr[Boolean] = js.undefined,
+    ConsoleAccess: js.UndefOr[boolean] = js.undefined,
     Groups: listOfString = null,
     PendingChange: ChangeType = null
   ): UserPendingChanges = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ConsoleAccess)) __obj.updateDynamic("ConsoleAccess")(ConsoleAccess.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConsoleAccess)) __obj.updateDynamic("ConsoleAccess")(ConsoleAccess.get.asInstanceOf[js.Any])
     if (Groups != null) __obj.updateDynamic("Groups")(Groups.asInstanceOf[js.Any])
     if (PendingChange != null) __obj.updateDynamic("PendingChange")(PendingChange.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPendingChanges]

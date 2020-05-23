@@ -14,16 +14,16 @@ trait ParseOptions extends js.Object {
 object ParseOptions {
   @scala.inline
   def apply(
-    concurrency: Int | Double = null,
+    concurrency: js.UndefOr[Double] = js.undefined,
     forceStream: js.UndefOr[Boolean] = js.undefined,
     path: String = null,
     verbose: js.UndefOr[Boolean] = js.undefined
   ): ParseOptions = {
     val __obj = js.Dynamic.literal()
-    if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceStream)) __obj.updateDynamic("forceStream")(forceStream.asInstanceOf[js.Any])
+    if (!js.isUndefined(concurrency)) __obj.updateDynamic("concurrency")(concurrency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceStream)) __obj.updateDynamic("forceStream")(forceStream.get.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseOptions]
   }
 }

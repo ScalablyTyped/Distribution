@@ -43,15 +43,15 @@ object HyperParameterSpecification {
     Type: ParameterType,
     DefaultValue: ParameterValue = null,
     Description: EntityDescription = null,
-    IsRequired: js.UndefOr[scala.Boolean] = js.undefined,
-    IsTunable: js.UndefOr[scala.Boolean] = js.undefined,
+    IsRequired: js.UndefOr[Boolean] = js.undefined,
+    IsTunable: js.UndefOr[Boolean] = js.undefined,
     Range: ParameterRange = null
   ): HyperParameterSpecification = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsRequired)) __obj.updateDynamic("IsRequired")(IsRequired.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsTunable)) __obj.updateDynamic("IsTunable")(IsTunable.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsRequired)) __obj.updateDynamic("IsRequired")(IsRequired.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsTunable)) __obj.updateDynamic("IsTunable")(IsTunable.get.asInstanceOf[js.Any])
     if (Range != null) __obj.updateDynamic("Range")(Range.asInstanceOf[js.Any])
     __obj.asInstanceOf[HyperParameterSpecification]
   }

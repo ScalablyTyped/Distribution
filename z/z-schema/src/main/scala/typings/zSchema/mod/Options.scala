@@ -32,7 +32,7 @@ object Options {
   @scala.inline
   def apply(
     assumeAdditional: js.UndefOr[Boolean] = js.undefined,
-    asyncTimeout: Int | Double = null,
+    asyncTimeout: js.UndefOr[Double] = js.undefined,
     breakOnFirstError: js.UndefOr[Boolean] = js.undefined,
     customValidator: (/* report */ Report, /* schema */ js.Any, /* json */ js.Any) => Unit = null,
     forceAdditional: js.UndefOr[Boolean] = js.undefined,
@@ -54,27 +54,27 @@ object Options {
     strictUris: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(assumeAdditional)) __obj.updateDynamic("assumeAdditional")(assumeAdditional.asInstanceOf[js.Any])
-    if (asyncTimeout != null) __obj.updateDynamic("asyncTimeout")(asyncTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(breakOnFirstError)) __obj.updateDynamic("breakOnFirstError")(breakOnFirstError.asInstanceOf[js.Any])
+    if (!js.isUndefined(assumeAdditional)) __obj.updateDynamic("assumeAdditional")(assumeAdditional.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(asyncTimeout)) __obj.updateDynamic("asyncTimeout")(asyncTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(breakOnFirstError)) __obj.updateDynamic("breakOnFirstError")(breakOnFirstError.get.asInstanceOf[js.Any])
     if (customValidator != null) __obj.updateDynamic("customValidator")(js.Any.fromFunction3(customValidator))
-    if (!js.isUndefined(forceAdditional)) __obj.updateDynamic("forceAdditional")(forceAdditional.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceItems)) __obj.updateDynamic("forceItems")(forceItems.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceMaxItems)) __obj.updateDynamic("forceMaxItems")(forceMaxItems.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceMaxLength)) __obj.updateDynamic("forceMaxLength")(forceMaxLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceMinItems)) __obj.updateDynamic("forceMinItems")(forceMinItems.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceMinLength)) __obj.updateDynamic("forceMinLength")(forceMinLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceProperties)) __obj.updateDynamic("forceProperties")(forceProperties.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUnknownFormats)) __obj.updateDynamic("ignoreUnknownFormats")(ignoreUnknownFormats.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUnresolvableReferences)) __obj.updateDynamic("ignoreUnresolvableReferences")(ignoreUnresolvableReferences.asInstanceOf[js.Any])
-    if (!js.isUndefined(noEmptyArrays)) __obj.updateDynamic("noEmptyArrays")(noEmptyArrays.asInstanceOf[js.Any])
-    if (!js.isUndefined(noEmptyStrings)) __obj.updateDynamic("noEmptyStrings")(noEmptyStrings.asInstanceOf[js.Any])
-    if (!js.isUndefined(noExtraKeywords)) __obj.updateDynamic("noExtraKeywords")(noExtraKeywords.asInstanceOf[js.Any])
-    if (!js.isUndefined(noTypeless)) __obj.updateDynamic("noTypeless")(noTypeless.asInstanceOf[js.Any])
-    if (!js.isUndefined(pedanticCheck)) __obj.updateDynamic("pedanticCheck")(pedanticCheck.asInstanceOf[js.Any])
-    if (!js.isUndefined(reportPathAsArray)) __obj.updateDynamic("reportPathAsArray")(reportPathAsArray.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictMode)) __obj.updateDynamic("strictMode")(strictMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictUris)) __obj.updateDynamic("strictUris")(strictUris.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceAdditional)) __obj.updateDynamic("forceAdditional")(forceAdditional.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceItems)) __obj.updateDynamic("forceItems")(forceItems.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceMaxItems)) __obj.updateDynamic("forceMaxItems")(forceMaxItems.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceMaxLength)) __obj.updateDynamic("forceMaxLength")(forceMaxLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceMinItems)) __obj.updateDynamic("forceMinItems")(forceMinItems.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceMinLength)) __obj.updateDynamic("forceMinLength")(forceMinLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceProperties)) __obj.updateDynamic("forceProperties")(forceProperties.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUnknownFormats)) __obj.updateDynamic("ignoreUnknownFormats")(ignoreUnknownFormats.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUnresolvableReferences)) __obj.updateDynamic("ignoreUnresolvableReferences")(ignoreUnresolvableReferences.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noEmptyArrays)) __obj.updateDynamic("noEmptyArrays")(noEmptyArrays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noEmptyStrings)) __obj.updateDynamic("noEmptyStrings")(noEmptyStrings.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noExtraKeywords)) __obj.updateDynamic("noExtraKeywords")(noExtraKeywords.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noTypeless)) __obj.updateDynamic("noTypeless")(noTypeless.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pedanticCheck)) __obj.updateDynamic("pedanticCheck")(pedanticCheck.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reportPathAsArray)) __obj.updateDynamic("reportPathAsArray")(reportPathAsArray.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictMode)) __obj.updateDynamic("strictMode")(strictMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictUris)) __obj.updateDynamic("strictUris")(strictUris.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

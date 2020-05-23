@@ -12,8 +12,5 @@ sealed trait CSSBlendModes extends js.Object
   */
 @JSGlobal("Phaser.CSSBlendModes")
 @js.native
-object CSSBlendModes extends js.Object {
-  @JSBracketAccess
-  def apply(value: scala.Nothing): js.UndefOr[CSSBlendModes with scala.Nothing] = js.native
-}
+object CSSBlendModes extends js.Object
 

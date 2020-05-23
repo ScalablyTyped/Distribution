@@ -209,7 +209,7 @@ trait Hooks[TInstance] extends js.Object {
     * A hook that is run after Model.sync call
     *
     * @param name
-    * @param fn   	A callback function that is called with options passed to Model.sync
+    * @param fn       A callback function that is called with options passed to Model.sync
     */
   def afterSync(name: String, fn: js.Function1[/* options */ SyncOptions, Unit]): Unit = js.native
   def afterUpdate(
@@ -418,7 +418,7 @@ trait Hooks[TInstance] extends js.Object {
     * A hook that is run before Model.sync call
     *
     * @param name
-    * @param fn   	A callback function that is called with options passed to Model.sync
+    * @param fn       A callback function that is called with options passed to Model.sync
     */
   def beforeSync(name: String, fn: js.Function1[/* options */ SyncOptions, Unit]): Unit = js.native
   def beforeUpdate(

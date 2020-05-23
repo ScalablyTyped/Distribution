@@ -25,28 +25,28 @@ object Config {
   @scala.inline
   def apply(
     token: String,
-    batchInterval: Int | Double = null,
+    batchInterval: js.UndefOr[Double] = js.undefined,
     host: String = null,
     level: String = null,
-    maxBatchCount: Int | Double = null,
-    maxBatchSize: Int | Double = null,
-    maxRetries: Int | Double = null,
+    maxBatchCount: js.UndefOr[Double] = js.undefined,
+    maxBatchSize: js.UndefOr[Double] = js.undefined,
+    maxRetries: js.UndefOr[Double] = js.undefined,
     name: String = null,
     path: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     protocol: http | https = null,
     url: String = null
   ): Config = {
     val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
-    if (batchInterval != null) __obj.updateDynamic("batchInterval")(batchInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchInterval)) __obj.updateDynamic("batchInterval")(batchInterval.get.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (maxBatchCount != null) __obj.updateDynamic("maxBatchCount")(maxBatchCount.asInstanceOf[js.Any])
-    if (maxBatchSize != null) __obj.updateDynamic("maxBatchSize")(maxBatchSize.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxBatchCount)) __obj.updateDynamic("maxBatchCount")(maxBatchCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxBatchSize)) __obj.updateDynamic("maxBatchSize")(maxBatchSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]

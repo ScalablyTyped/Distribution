@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * A command to invoke the Insert Image dialog.
   */
-@JSGlobal("OpenInsertPictureDialogCommand")
-@js.native
-class OpenInsertPictureDialogCommand () extends CommandWithSimpleStateBase {
+trait OpenInsertPictureDialogCommand extends CommandWithSimpleStateBase {
   /**
     * Executes the OpenInsertPictureDialogCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
+}
+
+object OpenInsertPictureDialogCommand {
+  @scala.inline
+  def apply(execute: () => Boolean, getState: () => SimpleCommandState): OpenInsertPictureDialogCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
+    __obj.asInstanceOf[OpenInsertPictureDialogCommand]
+  }
 }
 

@@ -16,19 +16,19 @@ trait RegisterOptions extends js.Object {
 object RegisterOptions {
   @scala.inline
   def apply(
-    expires: Int | Double = null,
+    expires: js.UndefOr[Double] = js.undefined,
     extraContactHeaderParams: js.Array[String] = null,
     instanceId: String = null,
     params: js.Any = null,
-    regId: Int | Double = null,
+    regId: js.UndefOr[Double] = js.undefined,
     registrar: String = null
   ): RegisterOptions = {
     val __obj = js.Dynamic.literal()
-    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    if (!js.isUndefined(expires)) __obj.updateDynamic("expires")(expires.get.asInstanceOf[js.Any])
     if (extraContactHeaderParams != null) __obj.updateDynamic("extraContactHeaderParams")(extraContactHeaderParams.asInstanceOf[js.Any])
     if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (regId != null) __obj.updateDynamic("regId")(regId.asInstanceOf[js.Any])
+    if (!js.isUndefined(regId)) __obj.updateDynamic("regId")(regId.get.asInstanceOf[js.Any])
     if (registrar != null) __obj.updateDynamic("registrar")(registrar.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterOptions]
   }

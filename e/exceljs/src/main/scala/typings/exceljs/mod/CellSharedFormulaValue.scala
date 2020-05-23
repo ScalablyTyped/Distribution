@@ -1,6 +1,6 @@
 package typings.exceljs.mod
 
-import typings.exceljs.AnonError
+import typings.exceljs.anon.Error
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait CellSharedFormulaValue extends _CellValue {
   var date1904: Boolean
   val formula: js.UndefOr[String] = js.undefined
-  var result: js.UndefOr[Double | String | Date | AnonError] = js.undefined
+  var result: js.UndefOr[Double | String | Date | Error] = js.undefined
   var sharedFormula: String
 }
 
@@ -19,7 +19,7 @@ object CellSharedFormulaValue {
     date1904: Boolean,
     sharedFormula: String,
     formula: String = null,
-    result: Double | String | Date | AnonError = null
+    result: Double | String | Date | Error = null
   ): CellSharedFormulaValue = {
     val __obj = js.Dynamic.literal(date1904 = date1904.asInstanceOf[js.Any], sharedFormula = sharedFormula.asInstanceOf[js.Any])
     if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])

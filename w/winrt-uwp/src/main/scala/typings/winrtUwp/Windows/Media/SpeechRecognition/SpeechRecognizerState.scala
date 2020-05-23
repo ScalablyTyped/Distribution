@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.SpeechRecognition
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,29 +38,6 @@ object SpeechRecognizerState extends js.Object {
   /** Indicates that the speech recognizer has detected speech input on the audio stream. */
   @js.native
   sealed trait speechDetected extends SpeechRecognizerState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SpeechRecognizerState with Double] = js.native
-  /* 1 */ @js.native
-  object capturing extends TopLevel[capturing with Double]
-  
-  /* 0 */ @js.native
-  object idle extends TopLevel[idle with Double]
-  
-  /* 6 */ @js.native
-  object paused extends TopLevel[paused with Double]
-  
-  /* 2 */ @js.native
-  object processing extends TopLevel[processing with Double]
-  
-  /* 4 */ @js.native
-  object soundEnded extends TopLevel[soundEnded with Double]
-  
-  /* 3 */ @js.native
-  object soundStarted extends TopLevel[soundStarted with Double]
-  
-  /* 5 */ @js.native
-  object speechDetected extends TopLevel[speechDetected with Double]
   
 }
 

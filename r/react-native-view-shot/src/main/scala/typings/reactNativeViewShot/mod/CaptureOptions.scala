@@ -50,19 +50,19 @@ object CaptureOptions {
   @scala.inline
   def apply(
     format: jpg | png | webm | raw = null,
-    height: Int | Double = null,
-    quality: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
+    quality: js.UndefOr[Double] = js.undefined,
     result: tmpfile | base64 | `data-uri` | `zip-base64` = null,
     snapshotContentContainer: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): CaptureOptions = {
     val __obj = js.Dynamic.literal()
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
     if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
-    if (!js.isUndefined(snapshotContentContainer)) __obj.updateDynamic("snapshotContentContainer")(snapshotContentContainer.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapshotContentContainer)) __obj.updateDynamic("snapshotContentContainer")(snapshotContentContainer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptureOptions]
   }
 }

@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Definition of interface FolderItems3 */
-@JSGlobal("Shell32.FolderItems3")
 @js.native
-class FolderItems3 protected () extends js.Object {
+trait FolderItems3 extends js.Object {
   /** Get Application object */
   val Application: js.Any = js.native
   /** Get count of items in the folder */

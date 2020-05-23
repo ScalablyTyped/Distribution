@@ -32,14 +32,14 @@ object CreateTokenResponse {
   @scala.inline
   def apply(
     accessToken: AccessToken = null,
-    expiresIn: Int | Double = null,
+    expiresIn: js.UndefOr[ExpirationInSeconds] = js.undefined,
     idToken: IdToken = null,
     refreshToken: RefreshToken = null,
     tokenType: TokenType = null
   ): CreateTokenResponse = {
     val __obj = js.Dynamic.literal()
     if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
-    if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn.asInstanceOf[js.Any])
+    if (!js.isUndefined(expiresIn)) __obj.updateDynamic("expiresIn")(expiresIn.get.asInstanceOf[js.Any])
     if (idToken != null) __obj.updateDynamic("idToken")(idToken.asInstanceOf[js.Any])
     if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken.asInstanceOf[js.Any])
     if (tokenType != null) __obj.updateDynamic("tokenType")(tokenType.asInstanceOf[js.Any])

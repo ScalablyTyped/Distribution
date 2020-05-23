@@ -1,6 +1,6 @@
 package typings.xummApi.mod
 
-import typings.xummApi.AnonExpire
+import typings.xummApi.anon.Expire
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ object XummPostPayloadBodyBlob {
   def apply(
     txblob: String,
     custom_meta: XummCustomMeta = null,
-    options: AnonExpire = null,
+    options: Expire = null,
     user_token: String = null
   ): XummPostPayloadBodyBlob = {
     val __obj = js.Dynamic.literal(txblob = txblob.asInstanceOf[js.Any])

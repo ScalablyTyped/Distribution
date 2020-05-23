@@ -13,10 +13,10 @@ trait ClientPoolOptions extends js.Object {
 
 object ClientPoolOptions {
   @scala.inline
-  def apply(targetURI: String, authKey: Secret = null, clientCount: Int | Double = null): ClientPoolOptions = {
+  def apply(targetURI: String, authKey: Secret = null, clientCount: js.UndefOr[Double] = js.undefined): ClientPoolOptions = {
     val __obj = js.Dynamic.literal(targetURI = targetURI.asInstanceOf[js.Any])
     if (authKey != null) __obj.updateDynamic("authKey")(authKey.asInstanceOf[js.Any])
-    if (clientCount != null) __obj.updateDynamic("clientCount")(clientCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientCount)) __obj.updateDynamic("clientCount")(clientCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientPoolOptions]
   }
 }

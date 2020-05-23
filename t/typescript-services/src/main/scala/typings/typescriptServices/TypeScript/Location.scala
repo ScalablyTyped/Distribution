@@ -4,26 +4,35 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.Location")
-@js.native
-class Location protected () extends js.Object {
-  def this(fileName: String, lineMap: LineMap, start: Double, length: Double) = this()
-  var _fileName: js.Any = js.native
-  var _length: js.Any = js.native
-  var _lineMap: js.Any = js.native
-  var _start: js.Any = js.native
-  def character(): Double = js.native
-  def fileName(): String = js.native
-  def length(): Double = js.native
-  def line(): Double = js.native
-  def lineMap(): LineMap = js.native
-  def start(): Double = js.native
+trait Location extends js.Object {
+  var _fileName: js.Any
+  var _length: js.Any
+  var _lineMap: js.Any
+  var _start: js.Any
+  def character(): Double
+  def fileName(): String
+  def length(): Double
+  def line(): Double
+  def lineMap(): LineMap
+  def start(): Double
 }
 
-/* static members */
-@JSGlobal("TypeScript.Location")
-@js.native
-object Location extends js.Object {
-  def equals(location1: Location, location2: Location): Boolean = js.native
+object Location {
+  @scala.inline
+  def apply(
+    _fileName: js.Any,
+    _length: js.Any,
+    _lineMap: js.Any,
+    _start: js.Any,
+    character: () => Double,
+    fileName: () => String,
+    length: () => Double,
+    line: () => Double,
+    lineMap: () => LineMap,
+    start: () => Double
+  ): Location = {
+    val __obj = js.Dynamic.literal(_fileName = _fileName.asInstanceOf[js.Any], _length = _length.asInstanceOf[js.Any], _lineMap = _lineMap.asInstanceOf[js.Any], _start = _start.asInstanceOf[js.Any], character = js.Any.fromFunction0(character), fileName = js.Any.fromFunction0(fileName), length = js.Any.fromFunction0(length), line = js.Any.fromFunction0(line), lineMap = js.Any.fromFunction0(lineMap), start = js.Any.fromFunction0(start))
+    __obj.asInstanceOf[Location]
+  }
 }
 

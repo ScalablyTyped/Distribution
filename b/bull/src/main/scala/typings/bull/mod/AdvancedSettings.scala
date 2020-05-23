@@ -48,23 +48,23 @@ object AdvancedSettings {
   @scala.inline
   def apply(
     backoffStrategies: StringDictionary[js.Function2[/* attemptsMade */ Double, /* err */ Error, Double]] = null,
-    drainDelay: Int | Double = null,
-    guardInterval: Int | Double = null,
-    lockDuration: Int | Double = null,
-    lockRenewTime: Int | Double = null,
-    maxStalledCount: Int | Double = null,
-    retryProcessDelay: Int | Double = null,
-    stalledInterval: Int | Double = null
+    drainDelay: js.UndefOr[Double] = js.undefined,
+    guardInterval: js.UndefOr[Double] = js.undefined,
+    lockDuration: js.UndefOr[Double] = js.undefined,
+    lockRenewTime: js.UndefOr[Double] = js.undefined,
+    maxStalledCount: js.UndefOr[Double] = js.undefined,
+    retryProcessDelay: js.UndefOr[Double] = js.undefined,
+    stalledInterval: js.UndefOr[Double] = js.undefined
   ): AdvancedSettings = {
     val __obj = js.Dynamic.literal()
     if (backoffStrategies != null) __obj.updateDynamic("backoffStrategies")(backoffStrategies.asInstanceOf[js.Any])
-    if (drainDelay != null) __obj.updateDynamic("drainDelay")(drainDelay.asInstanceOf[js.Any])
-    if (guardInterval != null) __obj.updateDynamic("guardInterval")(guardInterval.asInstanceOf[js.Any])
-    if (lockDuration != null) __obj.updateDynamic("lockDuration")(lockDuration.asInstanceOf[js.Any])
-    if (lockRenewTime != null) __obj.updateDynamic("lockRenewTime")(lockRenewTime.asInstanceOf[js.Any])
-    if (maxStalledCount != null) __obj.updateDynamic("maxStalledCount")(maxStalledCount.asInstanceOf[js.Any])
-    if (retryProcessDelay != null) __obj.updateDynamic("retryProcessDelay")(retryProcessDelay.asInstanceOf[js.Any])
-    if (stalledInterval != null) __obj.updateDynamic("stalledInterval")(stalledInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(drainDelay)) __obj.updateDynamic("drainDelay")(drainDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(guardInterval)) __obj.updateDynamic("guardInterval")(guardInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockDuration)) __obj.updateDynamic("lockDuration")(lockDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockRenewTime)) __obj.updateDynamic("lockRenewTime")(lockRenewTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxStalledCount)) __obj.updateDynamic("maxStalledCount")(maxStalledCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retryProcessDelay)) __obj.updateDynamic("retryProcessDelay")(retryProcessDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stalledInterval)) __obj.updateDynamic("stalledInterval")(stalledInterval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdvancedSettings]
   }
 }

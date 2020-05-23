@@ -8,12 +8,12 @@ import typings.node.nodeStrings.end
 import typings.node.nodeStrings.pause
 import typings.node.nodeStrings.readable
 import typings.node.nodeStrings.resume
-import typings.readableStream.AnonEnd
+import typings.readableStream.anon.End
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.node.NodeJS.EventEmitter because Already inherited
 - typings.node.eventsMod.EventEmitter because Already inherited
 - typings.node.childProcessMod.StdioNull because Already inherited
@@ -75,11 +75,11 @@ class Duplex ()
   def once_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
   def once_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
-  def pipe[S /* <: WritableStream */](dest: S, pipeOpts: AnonEnd): S = js.native
+  def pipe[S /* <: WritableStream */](dest: S, pipeOpts: End): S = js.native
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T): T = js.native
   /* InferMemberOverrides */
-  override def pipe[T /* <: WritableStream */](destination: T, options: typings.node.AnonEnd): T = js.native
+  override def pipe[T /* <: WritableStream */](destination: T, options: typings.node.anon.End): T = js.native
   @JSName("pipe")
   def pipe_S_WritableStream_S[S /* <: WritableStream */](dest: S): S = js.native
   @JSName("prependListener")
@@ -103,7 +103,7 @@ class Duplex ()
   @JSName("prependOnceListener")
   def prependOnceListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
   def push(chunk: js.Any): Boolean = js.native
-  def push(chunk: js.Any, encoding: String): Boolean = js.native
+  def push(chunk: js.Any, encoding: BufferEncoding): Boolean = js.native
   @JSName("removeListener")
   def removeListener_data(event: data, listener: js.Function1[/* chunk */ js.Any, Unit]): this.type = js.native
   @JSName("removeListener")

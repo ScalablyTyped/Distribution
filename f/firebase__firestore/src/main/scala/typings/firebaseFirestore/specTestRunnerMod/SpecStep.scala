@@ -1,5 +1,6 @@
 package typings.firebaseFirestore.specTestRunnerMod
 
+import typings.firebaseFirestore.firebaseFirestoreBooleans.`false`
 import typings.firebaseFirestore.firebaseFirestoreBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,6 +37,8 @@ trait SpecStep extends js.Object {
     * Optional dictionary of expected states.
     */
   var expectedState: js.UndefOr[StateExpectation] = js.undefined
+  /** Fails the listed database actions. */
+  var failDatabase: js.UndefOr[`false` | SpecDatabaseFailures] = js.undefined
   /** Fail a write */
   var failWrite: js.UndefOr[SpecWriteFailure] = js.undefined
   /** Unlistens from a SnapshotsInSync event. */
@@ -88,14 +91,15 @@ object SpecStep {
   def apply(
     addSnapshotsInSyncListener: `true` = null,
     applyClientState: SpecClientState = null,
-    changeUser: String = null,
+    changeUser: js.UndefOr[Null | String] = js.undefined,
     clearPersistence: `true` = null,
-    clientIndex: Int | Double = null,
+    clientIndex: js.UndefOr[Double] = js.undefined,
     drainQueue: `true` = null,
     enableNetwork: js.UndefOr[Boolean] = js.undefined,
     expectedSnapshotEvents: js.Array[SnapshotEvent] = null,
-    expectedSnapshotsInSyncEvents: Int | Double = null,
+    expectedSnapshotsInSyncEvents: js.UndefOr[Double] = js.undefined,
     expectedState: StateExpectation = null,
+    failDatabase: `false` | SpecDatabaseFailures = null,
     failWrite: SpecWriteFailure = null,
     removeSnapshotsInSyncListener: `true` = null,
     restart: `true` = null,
@@ -119,14 +123,15 @@ object SpecStep {
     val __obj = js.Dynamic.literal()
     if (addSnapshotsInSyncListener != null) __obj.updateDynamic("addSnapshotsInSyncListener")(addSnapshotsInSyncListener.asInstanceOf[js.Any])
     if (applyClientState != null) __obj.updateDynamic("applyClientState")(applyClientState.asInstanceOf[js.Any])
-    if (changeUser != null) __obj.updateDynamic("changeUser")(changeUser.asInstanceOf[js.Any])
+    if (!js.isUndefined(changeUser)) __obj.updateDynamic("changeUser")(changeUser.asInstanceOf[js.Any])
     if (clearPersistence != null) __obj.updateDynamic("clearPersistence")(clearPersistence.asInstanceOf[js.Any])
-    if (clientIndex != null) __obj.updateDynamic("clientIndex")(clientIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientIndex)) __obj.updateDynamic("clientIndex")(clientIndex.get.asInstanceOf[js.Any])
     if (drainQueue != null) __obj.updateDynamic("drainQueue")(drainQueue.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableNetwork)) __obj.updateDynamic("enableNetwork")(enableNetwork.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableNetwork)) __obj.updateDynamic("enableNetwork")(enableNetwork.get.asInstanceOf[js.Any])
     if (expectedSnapshotEvents != null) __obj.updateDynamic("expectedSnapshotEvents")(expectedSnapshotEvents.asInstanceOf[js.Any])
-    if (expectedSnapshotsInSyncEvents != null) __obj.updateDynamic("expectedSnapshotsInSyncEvents")(expectedSnapshotsInSyncEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(expectedSnapshotsInSyncEvents)) __obj.updateDynamic("expectedSnapshotsInSyncEvents")(expectedSnapshotsInSyncEvents.get.asInstanceOf[js.Any])
     if (expectedState != null) __obj.updateDynamic("expectedState")(expectedState.asInstanceOf[js.Any])
+    if (failDatabase != null) __obj.updateDynamic("failDatabase")(failDatabase.asInstanceOf[js.Any])
     if (failWrite != null) __obj.updateDynamic("failWrite")(failWrite.asInstanceOf[js.Any])
     if (removeSnapshotsInSyncListener != null) __obj.updateDynamic("removeSnapshotsInSyncListener")(removeSnapshotsInSyncListener.asInstanceOf[js.Any])
     if (restart != null) __obj.updateDynamic("restart")(restart.asInstanceOf[js.Any])

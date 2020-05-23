@@ -1,6 +1,6 @@
 package typings.favicons.mod
 
-import typings.favicons.PartialandroidbooleanIcon
+import typings.favicons.anon.PartialandroidbooleanIcon
 import typings.favicons.faviconsStrings.`black-translucent`
 import typings.favicons.faviconsStrings.`minimal-ui`
 import typings.favicons.faviconsStrings.any
@@ -99,12 +99,7 @@ object Configuration {
     developerName: String = null,
     developerURL: String = null
   ): Configuration = {
-    val __obj = js.Dynamic.literal(appleStatusBarStyle = appleStatusBarStyle.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], icons = icons.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any], loadManifestWithCredentials = loadManifestWithCredentials.asInstanceOf[js.Any], logging = logging.asInstanceOf[js.Any], manifestRelativePaths = manifestRelativePaths.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pipeHTML = pipeHTML.asInstanceOf[js.Any], pixel_art = pixel_art.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], start_url = start_url.asInstanceOf[js.Any], theme_color = theme_color.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-    if (appDescription != null) __obj.updateDynamic("appDescription")(appDescription.asInstanceOf[js.Any])
-    if (appName != null) __obj.updateDynamic("appName")(appName.asInstanceOf[js.Any])
-    if (appShortName != null) __obj.updateDynamic("appShortName")(appShortName.asInstanceOf[js.Any])
-    if (developerName != null) __obj.updateDynamic("developerName")(developerName.asInstanceOf[js.Any])
-    if (developerURL != null) __obj.updateDynamic("developerURL")(developerURL.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(appleStatusBarStyle = appleStatusBarStyle.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], icons = icons.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any], loadManifestWithCredentials = loadManifestWithCredentials.asInstanceOf[js.Any], logging = logging.asInstanceOf[js.Any], manifestRelativePaths = manifestRelativePaths.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pipeHTML = pipeHTML.asInstanceOf[js.Any], pixel_art = pixel_art.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], start_url = start_url.asInstanceOf[js.Any], theme_color = theme_color.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], appDescription = appDescription.asInstanceOf[js.Any], appName = appName.asInstanceOf[js.Any], appShortName = appShortName.asInstanceOf[js.Any], developerName = developerName.asInstanceOf[js.Any], developerURL = developerURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }
 }

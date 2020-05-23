@@ -45,12 +45,12 @@ object JoinDomainInput {
     UserName: DomainUserName,
     DomainControllers: Hosts = null,
     OrganizationalUnit: OrganizationalUnit = null,
-    TimeoutInSeconds: Int | Double = null
+    TimeoutInSeconds: js.UndefOr[TimeoutInSeconds] = js.undefined
   ): JoinDomainInput = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], GatewayARN = GatewayARN.asInstanceOf[js.Any], Password = Password.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
     if (DomainControllers != null) __obj.updateDynamic("DomainControllers")(DomainControllers.asInstanceOf[js.Any])
     if (OrganizationalUnit != null) __obj.updateDynamic("OrganizationalUnit")(OrganizationalUnit.asInstanceOf[js.Any])
-    if (TimeoutInSeconds != null) __obj.updateDynamic("TimeoutInSeconds")(TimeoutInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(TimeoutInSeconds)) __obj.updateDynamic("TimeoutInSeconds")(TimeoutInSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JoinDomainInput]
   }
 }

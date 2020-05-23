@@ -2,7 +2,6 @@ package typings.tensorflowTfjsLayers.advancedActivationsMod
 
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.tensorMod.Tensor
-import typings.tensorflowTfjsLayers.tensorflowTfjsLayersNumbers.`1`
 import typings.tensorflowTfjsLayers.topologyMod.Layer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Softmax () extends Layer {
   def this(args: SoftmaxLayerArgs) = this()
-  val DEFAULT_AXIS: `1` = js.native
+  val DEFAULT_AXIS: /* 1 */ Double = js.native
   val axis: Double = js.native
   def softmax(t: Tensor[Rank]): Tensor[Rank] = js.native
   def softmax(t: Tensor[Rank], a: Double): Tensor[Rank] = js.native

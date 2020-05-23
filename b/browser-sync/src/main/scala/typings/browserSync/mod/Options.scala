@@ -339,19 +339,19 @@ object Options {
     online: js.UndefOr[Boolean] = js.undefined,
     open: OpenOptions | Boolean = null,
     plugins: js.Array[_] = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     proxy: String | ProxyOptions = null,
-    reloadDebounce: Int | Double = null,
-    reloadDelay: Int | Double = null,
+    reloadDebounce: js.UndefOr[Double] = js.undefined,
+    reloadDelay: js.UndefOr[Double] = js.undefined,
     reloadOnRestart: js.UndefOr[Boolean] = js.undefined,
-    reloadThrottle: Int | Double = null,
+    reloadThrottle: js.UndefOr[Double] = js.undefined,
     rewriteRules: Boolean | js.Array[RewriteRules] = null,
     scriptPath: /* path */ String => String = null,
     scrollElementMapping: js.Array[String] = null,
     scrollElements: js.Array[String] = null,
     scrollProportionally: js.UndefOr[Boolean] = js.undefined,
     scrollRestoreTechnique: String = null,
-    scrollThrottle: Int | Double = null,
+    scrollThrottle: js.UndefOr[Double] = js.undefined,
     serveStatic: js.Array[StaticOptions | String] = null,
     serveStaticOptions: ServeStaticOptions = null,
     server: String | Boolean | js.Array[String] | ServerOptions = null,
@@ -371,8 +371,8 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (browser != null) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
     if (clientEvents != null) __obj.updateDynamic("clientEvents")(clientEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(codeSync)) __obj.updateDynamic("codeSync")(codeSync.asInstanceOf[js.Any])
-    if (!js.isUndefined(cors)) __obj.updateDynamic("cors")(cors.asInstanceOf[js.Any])
+    if (!js.isUndefined(codeSync)) __obj.updateDynamic("codeSync")(codeSync.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cors)) __obj.updateDynamic("cors")(cors.get.asInstanceOf[js.Any])
     if (excludeFileTypes != null) __obj.updateDynamic("excludeFileTypes")(excludeFileTypes.asInstanceOf[js.Any])
     if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
     if (ghostMode != null) __obj.updateDynamic("ghostMode")(ghostMode.asInstanceOf[js.Any])
@@ -380,48 +380,48 @@ object Options {
     if (httpModule != null) __obj.updateDynamic("httpModule")(httpModule.asInstanceOf[js.Any])
     if (https != null) __obj.updateDynamic("https")(https.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(injectChanges)) __obj.updateDynamic("injectChanges")(injectChanges.asInstanceOf[js.Any])
+    if (!js.isUndefined(injectChanges)) __obj.updateDynamic("injectChanges")(injectChanges.get.asInstanceOf[js.Any])
     if (injectFileTypes != null) __obj.updateDynamic("injectFileTypes")(injectFileTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(localOnly)) __obj.updateDynamic("localOnly")(localOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(logConnections)) __obj.updateDynamic("logConnections")(logConnections.asInstanceOf[js.Any])
-    if (!js.isUndefined(logFileChanges)) __obj.updateDynamic("logFileChanges")(logFileChanges.asInstanceOf[js.Any])
+    if (!js.isUndefined(localOnly)) __obj.updateDynamic("localOnly")(localOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(logConnections)) __obj.updateDynamic("logConnections")(logConnections.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(logFileChanges)) __obj.updateDynamic("logFileChanges")(logFileChanges.get.asInstanceOf[js.Any])
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
     if (logPrefix != null) __obj.updateDynamic("logPrefix")(logPrefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(logSnippet)) __obj.updateDynamic("logSnippet")(logSnippet.asInstanceOf[js.Any])
+    if (!js.isUndefined(logSnippet)) __obj.updateDynamic("logSnippet")(logSnippet.get.asInstanceOf[js.Any])
     if (middleware != null) __obj.updateDynamic("middleware")(middleware.asInstanceOf[js.Any])
-    if (!js.isUndefined(minify)) __obj.updateDynamic("minify")(minify.asInstanceOf[js.Any])
-    if (!js.isUndefined(notify)) __obj.updateDynamic("notify")(notify.asInstanceOf[js.Any])
-    if (!js.isUndefined(online)) __obj.updateDynamic("online")(online.asInstanceOf[js.Any])
+    if (!js.isUndefined(minify)) __obj.updateDynamic("minify")(minify.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(notify)) __obj.updateDynamic("notify")(notify.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(online)) __obj.updateDynamic("online")(online.get.asInstanceOf[js.Any])
     if (open != null) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
-    if (reloadDebounce != null) __obj.updateDynamic("reloadDebounce")(reloadDebounce.asInstanceOf[js.Any])
-    if (reloadDelay != null) __obj.updateDynamic("reloadDelay")(reloadDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(reloadOnRestart)) __obj.updateDynamic("reloadOnRestart")(reloadOnRestart.asInstanceOf[js.Any])
-    if (reloadThrottle != null) __obj.updateDynamic("reloadThrottle")(reloadThrottle.asInstanceOf[js.Any])
+    if (!js.isUndefined(reloadDebounce)) __obj.updateDynamic("reloadDebounce")(reloadDebounce.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reloadDelay)) __obj.updateDynamic("reloadDelay")(reloadDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reloadOnRestart)) __obj.updateDynamic("reloadOnRestart")(reloadOnRestart.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reloadThrottle)) __obj.updateDynamic("reloadThrottle")(reloadThrottle.get.asInstanceOf[js.Any])
     if (rewriteRules != null) __obj.updateDynamic("rewriteRules")(rewriteRules.asInstanceOf[js.Any])
     if (scriptPath != null) __obj.updateDynamic("scriptPath")(js.Any.fromFunction1(scriptPath))
     if (scrollElementMapping != null) __obj.updateDynamic("scrollElementMapping")(scrollElementMapping.asInstanceOf[js.Any])
     if (scrollElements != null) __obj.updateDynamic("scrollElements")(scrollElements.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollProportionally)) __obj.updateDynamic("scrollProportionally")(scrollProportionally.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollProportionally)) __obj.updateDynamic("scrollProportionally")(scrollProportionally.get.asInstanceOf[js.Any])
     if (scrollRestoreTechnique != null) __obj.updateDynamic("scrollRestoreTechnique")(scrollRestoreTechnique.asInstanceOf[js.Any])
-    if (scrollThrottle != null) __obj.updateDynamic("scrollThrottle")(scrollThrottle.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollThrottle)) __obj.updateDynamic("scrollThrottle")(scrollThrottle.get.asInstanceOf[js.Any])
     if (serveStatic != null) __obj.updateDynamic("serveStatic")(serveStatic.asInstanceOf[js.Any])
     if (serveStaticOptions != null) __obj.updateDynamic("serveStaticOptions")(serveStaticOptions.asInstanceOf[js.Any])
     if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.asInstanceOf[js.Any])
+    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.get.asInstanceOf[js.Any])
     if (snippetOptions != null) __obj.updateDynamic("snippetOptions")(snippetOptions.asInstanceOf[js.Any])
     if (socket != null) __obj.updateDynamic("socket")(socket.asInstanceOf[js.Any])
     if (startPath != null) __obj.updateDynamic("startPath")(startPath.asInstanceOf[js.Any])
     if (tagNames != null) __obj.updateDynamic("tagNames")(tagNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(timestamps)) __obj.updateDynamic("timestamps")(timestamps.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestamps)) __obj.updateDynamic("timestamps")(timestamps.get.asInstanceOf[js.Any])
     if (tunnel != null) __obj.updateDynamic("tunnel")(tunnel.asInstanceOf[js.Any])
     if (ui != null) __obj.updateDynamic("ui")(ui.asInstanceOf[js.Any])
-    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
+    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.get.asInstanceOf[js.Any])
     if (watchEvents != null) __obj.updateDynamic("watchEvents")(watchEvents.asInstanceOf[js.Any])
     if (watchOptions != null) __obj.updateDynamic("watchOptions")(watchOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(xip)) __obj.updateDynamic("xip")(xip.asInstanceOf[js.Any])
+    if (!js.isUndefined(xip)) __obj.updateDynamic("xip")(xip.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

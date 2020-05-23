@@ -13,10 +13,14 @@ trait MergePayload extends js.Object {
 
 object MergePayload {
   @scala.inline
-  def apply(ids: js.Array[ZendeskID], source_comment: String = null, target_comment: String = null): MergePayload = {
+  def apply(
+    ids: js.Array[ZendeskID],
+    source_comment: js.UndefOr[Null | String] = js.undefined,
+    target_comment: js.UndefOr[Null | String] = js.undefined
+  ): MergePayload = {
     val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any])
-    if (source_comment != null) __obj.updateDynamic("source_comment")(source_comment.asInstanceOf[js.Any])
-    if (target_comment != null) __obj.updateDynamic("target_comment")(target_comment.asInstanceOf[js.Any])
+    if (!js.isUndefined(source_comment)) __obj.updateDynamic("source_comment")(source_comment.asInstanceOf[js.Any])
+    if (!js.isUndefined(target_comment)) __obj.updateDynamic("target_comment")(target_comment.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergePayload]
   }
 }

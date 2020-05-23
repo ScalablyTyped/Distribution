@@ -1,5 +1,6 @@
 package typings.typedoc
 
+import typings.typedoc.anon.PartialSourceReference
 import typings.typedoc.schemaMod.SourceReference
 import typings.typedoc.serializationComponentsMod.SerializerComponent
 import typings.typedoc.serializersModelsMod.SourceReferenceWrapper

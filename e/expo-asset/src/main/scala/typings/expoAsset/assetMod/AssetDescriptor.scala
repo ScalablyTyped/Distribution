@@ -19,15 +19,15 @@ object AssetDescriptor {
     name: String,
     `type`: String,
     uri: String,
-    hash: String = null,
-    height: Int | Double = null,
-    width: Int | Double = null
+    hash: js.UndefOr[Null | String] = js.undefined,
+    height: js.UndefOr[Null | Double] = js.undefined,
+    width: js.UndefOr[Null | Double] = js.undefined
   ): AssetDescriptor = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(hash)) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetDescriptor]
   }
 }

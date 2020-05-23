@@ -1,7 +1,7 @@
 package typings.ltx.elementMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ltx.FnCall
+import typings.ltx.anon.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

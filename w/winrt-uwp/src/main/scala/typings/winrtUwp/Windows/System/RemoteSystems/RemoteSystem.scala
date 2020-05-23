@@ -1,54 +1,54 @@
 package typings.winrtUwp.Windows.System.RemoteSystems
 
-import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
-import typings.winrtUwp.Windows.Networking.HostName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** This class manages the attributes of a discovered remote system (device) and provides the capabilities to discover remote systems as part of Project Rome. */
-@JSGlobal("Windows.System.RemoteSystems.RemoteSystem")
-@js.native
-abstract class RemoteSystem () extends js.Object {
+trait RemoteSystem extends js.Object {
   /** A list of the applications on this remote system that have registered with the Connected Devices Platform. */
-  var apps: IVectorView[RemoteSystemApp] = js.native
+  var apps: IVectorView[RemoteSystemApp]
   /** Gets the machine name of the given remote system. */
-  var displayName: String = js.native
+  var displayName: String
   /** Gets the unique string identifier for the given remote system. */
-  var id: String = js.native
+  var id: String
   /** Checks whether the given remote system is available through proximal connection (such as a Bluetooth or local network connection) as opposed to cloud connection. */
-  var isAvailableByProximity: Boolean = js.native
+  var isAvailableByProximity: Boolean
   /** Checks whether the given remote system is available through spatially proximal connection. */
-  var isAvailableBySpatialProximity: Boolean = js.native
+  var isAvailableBySpatialProximity: Boolean
   /** Gets a String representation of the device type of the given remote system (desktop, Xbox, ...). */
-  var kind: String = js.native
+  var kind: String
   /** Gets the manufacturer name of the given remote system. */
-  var manufacturerDisplayName: String = js.native
+  var manufacturerDisplayName: String
   /** Gets the model name of the given remote system. */
-  var modelDisplayName: String = js.native
+  var modelDisplayName: String
   /** Gets a value describing the OS platform that this remote system is running. */
-  var platform: RemoteSystemPlatform = js.native
+  var platform: RemoteSystemPlatform
   /** Gets the status of this remote system's availability. */
-  var status: RemoteSystemStatus = js.native
+  var status: RemoteSystemStatus
   /** Reports whether the RemoteSystem is capable of the given Remote System feature. */
-  def getCapabilitySupportedAsync(capabilityName: String): IPromiseWithIAsyncOperation[Boolean] = js.native
+  def getCapabilitySupportedAsync(capabilityName: String): IPromiseWithIAsyncOperation[Boolean]
 }
 
-/* static members */
-@JSGlobal("Windows.System.RemoteSystems.RemoteSystem")
-@js.native
-object RemoteSystem extends js.Object {
-  /** Returns a RemoteSystemWatcher object with no filters. */
-  def createWatcher(): RemoteSystemWatcher = js.native
-  /** Returns a RemoteSystemWatcher object that filters the remote systems it can see. The filters parameter determines which remote systems will be seen. */
-  def createWatcher(filters: IIterable[IRemoteSystemFilter]): RemoteSystemWatcher = js.native
-  /** Attempts to discover a single remote system specified by the HostName parameter. */
-  def findByHostNameAsync(host: HostName): IPromiseWithIAsyncOperation[RemoteSystem] = js.native
-  /** Checks whether the client device is authorized to discover other users' devices or just same-user devices. */
-  def isAuthorizationKindEnabled(kind: RemoteSystemAuthorizationKind): Boolean = js.native
-  /** Gets the status of the calling app's access to the Remote Systems feature. This method should always be called before an app attempts to discover or otherwise interact with remote systems. */
-  def requestAccessAsync(): IPromiseWithIAsyncOperation[RemoteSystemAccessStatus] = js.native
+object RemoteSystem {
+  @scala.inline
+  def apply(
+    apps: IVectorView[RemoteSystemApp],
+    displayName: String,
+    getCapabilitySupportedAsync: String => IPromiseWithIAsyncOperation[Boolean],
+    id: String,
+    isAvailableByProximity: Boolean,
+    isAvailableBySpatialProximity: Boolean,
+    kind: String,
+    manufacturerDisplayName: String,
+    modelDisplayName: String,
+    platform: RemoteSystemPlatform,
+    status: RemoteSystemStatus
+  ): RemoteSystem = {
+    val __obj = js.Dynamic.literal(apps = apps.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], getCapabilitySupportedAsync = js.Any.fromFunction1(getCapabilitySupportedAsync), id = id.asInstanceOf[js.Any], isAvailableByProximity = isAvailableByProximity.asInstanceOf[js.Any], isAvailableBySpatialProximity = isAvailableBySpatialProximity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], manufacturerDisplayName = manufacturerDisplayName.asInstanceOf[js.Any], modelDisplayName = modelDisplayName.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RemoteSystem]
+  }
 }
 

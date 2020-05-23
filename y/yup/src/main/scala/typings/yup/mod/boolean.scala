@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("yup", "boolean")
 @js.native
-class boolean () extends BooleanSchema[Boolean]
+class boolean ()
+  extends BooleanSchema[js.UndefOr[Boolean]]
 
 @JSImport("yup", "boolean")
 @js.native

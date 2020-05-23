@@ -11,9 +11,9 @@ trait FontFamilyProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.
 
 object FontFamilyProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](fontFamily: ResponsiveValue[FontFamilyProperty, ThemeType] = null): FontFamilyProps[ThemeType] = {
+  def apply[ThemeType](fontFamily: js.UndefOr[Null | (ResponsiveValue[FontFamilyProperty, ThemeType])] = js.undefined): FontFamilyProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontFamily)) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontFamilyProps[ThemeType]]
   }
 }

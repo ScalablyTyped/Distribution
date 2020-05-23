@@ -14,15 +14,15 @@ trait WithStylesOptions[ClassKey /* <: String */] extends js.Object {
 
 object WithStylesOptions {
   @scala.inline
-  def apply[ClassKey /* <: String */](
+  def apply[ClassKey](
     flip: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     withTheme: js.UndefOr[Boolean] = js.undefined
   ): WithStylesOptions[ClassKey] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(flip)) __obj.updateDynamic("flip")(flip.asInstanceOf[js.Any])
+    if (!js.isUndefined(flip)) __obj.updateDynamic("flip")(flip.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(withTheme)) __obj.updateDynamic("withTheme")(withTheme.asInstanceOf[js.Any])
+    if (!js.isUndefined(withTheme)) __obj.updateDynamic("withTheme")(withTheme.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithStylesOptions[ClassKey]]
   }
 }

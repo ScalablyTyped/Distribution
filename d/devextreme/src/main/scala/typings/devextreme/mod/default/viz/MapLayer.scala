@@ -9,18 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class MapLayer ()
   extends typings.devextreme.mod.DevExpress.viz.MapLayer {
-  /** @name MapLayer.elementType */
-  /* CompleteClass */
-  override var elementType: String = js.native
-  /** @name MapLayer.index */
-  /* CompleteClass */
-  override var index: Double = js.native
-  /** @name MapLayer.name */
-  /* CompleteClass */
-  override var name: String = js.native
-  /** @name MapLayer.type */
-  /* CompleteClass */
-  override var `type`: String = js.native
   /** @name MapLayer.clearSelection() */
   /* CompleteClass */
   override def clearSelection(): Unit = js.native

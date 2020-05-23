@@ -7,30 +7,35 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientUploadControl.ValidationErrorOccurred event.
   */
-@JSGlobal("ASPxClientUploadControlValidationErrorOccurredEventArgs")
-@js.native
-class ASPxClientUploadControlValidationErrorOccurredEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientUploadControlValidationErrorOccurredEventArgs class with specified settings.
-    * @param errorText A string that is the error text.
-    * @param invalidFiles An array of the ASPxClientUploadControlInvalidFileInfo objects that are invalid files.
-    */
-  def this(errorText: String, invalidFiles: js.Array[ASPxClientUploadControlInvalidFileInfo]) = this()
+trait ASPxClientUploadControlValidationErrorOccurredEventArgs extends ASPxClientEventArgs {
   /**
     * Gets or sets the error text.
     */
-  var errorText: String = js.native
+  var errorText: String
   /**
     * Returns an array of invalid files.
     */
-  var invalidFiles: js.Array[ASPxClientUploadControlInvalidFileInfo] = js.native
+  var invalidFiles: js.Array[ASPxClientUploadControlInvalidFileInfo]
   /**
     * Gets or sets a value specifying whether an alert message is displayed when the ASPxClientUploadControl.ValidationErrorOccurred event fires.
     */
-  var showAlert: Boolean = js.native
+  var showAlert: Boolean
   /**
     * Gets the validation settings for the selected files.
     */
-  var validationSettings: ASPxClientUploadControlValidationSettings = js.native
+  var validationSettings: ASPxClientUploadControlValidationSettings
+}
+
+object ASPxClientUploadControlValidationErrorOccurredEventArgs {
+  @scala.inline
+  def apply(
+    errorText: String,
+    invalidFiles: js.Array[ASPxClientUploadControlInvalidFileInfo],
+    showAlert: Boolean,
+    validationSettings: ASPxClientUploadControlValidationSettings
+  ): ASPxClientUploadControlValidationErrorOccurredEventArgs = {
+    val __obj = js.Dynamic.literal(errorText = errorText.asInstanceOf[js.Any], invalidFiles = invalidFiles.asInstanceOf[js.Any], showAlert = showAlert.asInstanceOf[js.Any], validationSettings = validationSettings.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientUploadControlValidationErrorOccurredEventArgs]
+  }
 }
 

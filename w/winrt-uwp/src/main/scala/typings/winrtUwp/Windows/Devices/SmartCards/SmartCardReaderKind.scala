@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.SmartCards
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object SmartCardReaderKind extends js.Object {
   /** A Universal Integrated Circuit Card (UICC) smart card reader. */
   @js.native
   sealed trait uicc extends SmartCardReaderKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SmartCardReaderKind with Double] = js.native
-  /* 0 */ @js.native
-  object any extends TopLevel[any with Double]
-  
-  /* 1 */ @js.native
-  object generic extends TopLevel[generic with Double]
-  
-  /* 3 */ @js.native
-  object nfc extends TopLevel[nfc with Double]
-  
-  /* 2 */ @js.native
-  object tpm extends TopLevel[tpm with Double]
-  
-  /* 4 */ @js.native
-  object uicc extends TopLevel[uicc with Double]
   
 }
 

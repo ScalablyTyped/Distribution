@@ -1,6 +1,6 @@
 package typings.nodeForge.mod.tls
 
-import typings.nodeForge.AnonCurrent
+import typings.nodeForge.anon.Current
 import typings.nodeForge.mod.Bytes
 import typings.nodeForge.mod.pki.CAStore
 import typings.nodeForge.mod.pki.Certificate
@@ -45,7 +45,7 @@ trait Connection extends js.Object {
   var session: Session | Null = js.native
   var sessionCache: SessionCache | Null = js.native
   var sessionId: Bytes | Null = js.native
-  var state: AnonCurrent = js.native
+  var state: Current = js.native
   var tlsData: ByteBuffer = js.native
   var verifyClient: Boolean = js.native
   var version: ProtocolVersion = js.native

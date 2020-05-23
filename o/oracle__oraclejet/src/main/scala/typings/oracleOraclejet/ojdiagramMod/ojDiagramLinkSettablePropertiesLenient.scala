@@ -35,7 +35,7 @@ trait ojDiagramLinkSettablePropertiesLenient
 object ojDiagramLinkSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     categories: js.Array[String] = null,
     color: String = null,
     endConnectorType: arrow | arrowConcave | arrowOpen | circle | none | rectangle | rectangleRounded = null,
@@ -48,7 +48,7 @@ object ojDiagramLinkSettablePropertiesLenient {
     startNode: js.Any = null,
     svgClassName: String = null,
     svgStyle: js.Object = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): ojDiagramLinkSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
@@ -64,7 +64,7 @@ object ojDiagramLinkSettablePropertiesLenient {
     if (startNode != null) __obj.updateDynamic("startNode")(startNode.asInstanceOf[js.Any])
     if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName.asInstanceOf[js.Any])
     if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojDiagramLinkSettablePropertiesLenient]
   }
 }

@@ -36,15 +36,15 @@ object CollapseProps {
     onExit: /* node */ HTMLElement => _ = null,
     onExited: /* node */ HTMLElement => _ = null,
     onExiting: /* node */ HTMLElement => _ = null,
-    ref: LegacyRef[Collapse] = null,
-    timeout: Int | Double = null,
+    ref: js.UndefOr[Null | LegacyRef[Collapse]] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined,
     transitionAppear: js.UndefOr[Boolean] = js.undefined,
     unmountOnExit: js.UndefOr[Boolean] = js.undefined
   ): CollapseProps = {
     val __obj = js.Dynamic.literal()
     if (dimension != null) __obj.updateDynamic("dimension")(dimension.asInstanceOf[js.Any])
     if (getDimensionValue != null) __obj.updateDynamic("getDimensionValue")(js.Any.fromFunction2(getDimensionValue))
-    if (!js.isUndefined(in)) __obj.updateDynamic("in")(in.asInstanceOf[js.Any])
+    if (!js.isUndefined(in)) __obj.updateDynamic("in")(in.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction1(onEnter))
     if (onEntered != null) __obj.updateDynamic("onEntered")(js.Any.fromFunction1(onEntered))
@@ -52,10 +52,10 @@ object CollapseProps {
     if (onExit != null) __obj.updateDynamic("onExit")(js.Any.fromFunction1(onExit))
     if (onExited != null) __obj.updateDynamic("onExited")(js.Any.fromFunction1(onExited))
     if (onExiting != null) __obj.updateDynamic("onExiting")(js.Any.fromFunction1(onExiting))
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(transitionAppear)) __obj.updateDynamic("transitionAppear")(transitionAppear.asInstanceOf[js.Any])
-    if (!js.isUndefined(unmountOnExit)) __obj.updateDynamic("unmountOnExit")(unmountOnExit.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitionAppear)) __obj.updateDynamic("transitionAppear")(transitionAppear.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unmountOnExit)) __obj.updateDynamic("unmountOnExit")(unmountOnExit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollapseProps]
   }
 }

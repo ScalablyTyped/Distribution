@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("tableau.Worksheet")
 @js.native
-class Worksheet () extends Sheet {
+trait Worksheet extends Sheet {
   /**
     * Applies a simple categorical filter (non-date).
     * See the filtering examples for more details on these functions.

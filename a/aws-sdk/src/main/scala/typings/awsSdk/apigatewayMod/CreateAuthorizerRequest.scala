@@ -56,7 +56,7 @@ object CreateAuthorizerRequest {
     `type`: AuthorizerType,
     authType: String = null,
     authorizerCredentials: String = null,
-    authorizerResultTtlInSeconds: Int | scala.Double = null,
+    authorizerResultTtlInSeconds: js.UndefOr[NullableInteger] = js.undefined,
     authorizerUri: String = null,
     identitySource: String = null,
     identityValidationExpression: String = null,
@@ -66,7 +66,7 @@ object CreateAuthorizerRequest {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (authType != null) __obj.updateDynamic("authType")(authType.asInstanceOf[js.Any])
     if (authorizerCredentials != null) __obj.updateDynamic("authorizerCredentials")(authorizerCredentials.asInstanceOf[js.Any])
-    if (authorizerResultTtlInSeconds != null) __obj.updateDynamic("authorizerResultTtlInSeconds")(authorizerResultTtlInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(authorizerResultTtlInSeconds)) __obj.updateDynamic("authorizerResultTtlInSeconds")(authorizerResultTtlInSeconds.get.asInstanceOf[js.Any])
     if (authorizerUri != null) __obj.updateDynamic("authorizerUri")(authorizerUri.asInstanceOf[js.Any])
     if (identitySource != null) __obj.updateDynamic("identitySource")(identitySource.asInstanceOf[js.Any])
     if (identityValidationExpression != null) __obj.updateDynamic("identityValidationExpression")(identityValidationExpression.asInstanceOf[js.Any])

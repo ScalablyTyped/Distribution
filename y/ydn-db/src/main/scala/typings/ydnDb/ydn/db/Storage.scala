@@ -2,17 +2,12 @@ package typings.ydnDb.ydn.db
 
 import typings.std.Error
 import typings.ydnDb.DatabaseSchemaJson
-import typings.ydnDb.StorageOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ydn.db.Storage")
 @js.native
-class Storage () extends DbOperator {
-  def this(db_name: String) = this()
-  def this(db_name: String, schema: DatabaseSchemaJson) = this()
-  def this(db_name: String, schema: DatabaseSchemaJson, options: StorageOptions) = this()
+trait Storage extends DbOperator {
   def addEventListener(`type`: js.Array[EventType], handler: js.Function1[/* event */ js.Any, Unit]): js.Any = js.native
   def addEventListener(`type`: js.Array[EventType], handler: js.Function1[/* event */ js.Any, Unit], capture: Boolean): js.Any = js.native
   def addEventListener(`type`: EventType, handler: js.Function1[/* event */ js.Any, Unit]): js.Any = js.native

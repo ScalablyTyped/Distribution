@@ -1,6 +1,6 @@
 package typings.pusherJs.mod
 
-import typings.pusherJs.AnonAuthorize
+import typings.pusherJs.anon.Authorize
 import typings.pusherJs.pusherJsStrings.ajax
 import typings.pusherJs.pusherJsStrings.jsonp
 import scala.scalajs.js
@@ -85,11 +85,11 @@ trait Config extends js.Object {
 object Config {
   @scala.inline
   def apply(
-    activityTimeout: Int | Double = null,
+    activityTimeout: js.UndefOr[Double] = js.undefined,
     auth: AuthConfig = null,
     authEndpoint: String = null,
     authTransport: ajax | jsonp = null,
-    authorizer: (/* channel */ Channel, /* options */ Config) => AnonAuthorize = null,
+    authorizer: (/* channel */ Channel, /* options */ Config) => Authorize = null,
     cluster: String = null,
     disableStats: js.UndefOr[Boolean] = js.undefined,
     disabledTransports: js.Array[Transport] = null,
@@ -97,36 +97,36 @@ object Config {
     encrypted: js.UndefOr[Boolean] = js.undefined,
     forceTLS: js.UndefOr[Boolean] = js.undefined,
     httpHost: String = null,
-    httpPort: Int | Double = null,
-    httpsPort: Int | Double = null,
+    httpPort: js.UndefOr[Double] = js.undefined,
+    httpsPort: js.UndefOr[Double] = js.undefined,
     ignoreNullOrigin: js.UndefOr[Boolean] = js.undefined,
-    pongTimeout: Int | Double = null,
+    pongTimeout: js.UndefOr[Double] = js.undefined,
     wsHost: String = null,
     wsPath: String = null,
-    wsPort: Int | Double = null,
-    wssPort: Int | Double = null
+    wsPort: js.UndefOr[Double] = js.undefined,
+    wssPort: js.UndefOr[Double] = js.undefined
   ): Config = {
     val __obj = js.Dynamic.literal()
-    if (activityTimeout != null) __obj.updateDynamic("activityTimeout")(activityTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(activityTimeout)) __obj.updateDynamic("activityTimeout")(activityTimeout.get.asInstanceOf[js.Any])
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (authEndpoint != null) __obj.updateDynamic("authEndpoint")(authEndpoint.asInstanceOf[js.Any])
     if (authTransport != null) __obj.updateDynamic("authTransport")(authTransport.asInstanceOf[js.Any])
     if (authorizer != null) __obj.updateDynamic("authorizer")(js.Any.fromFunction2(authorizer))
     if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableStats)) __obj.updateDynamic("disableStats")(disableStats.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableStats)) __obj.updateDynamic("disableStats")(disableStats.get.asInstanceOf[js.Any])
     if (disabledTransports != null) __obj.updateDynamic("disabledTransports")(disabledTransports.asInstanceOf[js.Any])
     if (enabledTransports != null) __obj.updateDynamic("enabledTransports")(enabledTransports.asInstanceOf[js.Any])
-    if (!js.isUndefined(encrypted)) __obj.updateDynamic("encrypted")(encrypted.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceTLS)) __obj.updateDynamic("forceTLS")(forceTLS.asInstanceOf[js.Any])
+    if (!js.isUndefined(encrypted)) __obj.updateDynamic("encrypted")(encrypted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceTLS)) __obj.updateDynamic("forceTLS")(forceTLS.get.asInstanceOf[js.Any])
     if (httpHost != null) __obj.updateDynamic("httpHost")(httpHost.asInstanceOf[js.Any])
-    if (httpPort != null) __obj.updateDynamic("httpPort")(httpPort.asInstanceOf[js.Any])
-    if (httpsPort != null) __obj.updateDynamic("httpsPort")(httpsPort.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreNullOrigin)) __obj.updateDynamic("ignoreNullOrigin")(ignoreNullOrigin.asInstanceOf[js.Any])
-    if (pongTimeout != null) __obj.updateDynamic("pongTimeout")(pongTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(httpPort)) __obj.updateDynamic("httpPort")(httpPort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(httpsPort)) __obj.updateDynamic("httpsPort")(httpsPort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreNullOrigin)) __obj.updateDynamic("ignoreNullOrigin")(ignoreNullOrigin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pongTimeout)) __obj.updateDynamic("pongTimeout")(pongTimeout.get.asInstanceOf[js.Any])
     if (wsHost != null) __obj.updateDynamic("wsHost")(wsHost.asInstanceOf[js.Any])
     if (wsPath != null) __obj.updateDynamic("wsPath")(wsPath.asInstanceOf[js.Any])
-    if (wsPort != null) __obj.updateDynamic("wsPort")(wsPort.asInstanceOf[js.Any])
-    if (wssPort != null) __obj.updateDynamic("wssPort")(wssPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(wsPort)) __obj.updateDynamic("wsPort")(wsPort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wssPort)) __obj.updateDynamic("wssPort")(wssPort.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

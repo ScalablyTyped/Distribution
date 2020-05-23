@@ -1,6 +1,5 @@
 package typings.pixiJs.PIXI
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -148,104 +147,6 @@ object BLEND_MODES extends js.Object {
   
   @js.native
   sealed trait XOR extends BLEND_MODES
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BLEND_MODES with Double] = js.native
-  /* 1 */ @js.native
-  object ADD extends TopLevel[ADD with Double]
-  
-  /* 18 */ @js.native
-  object ADD_NPM extends TopLevel[ADD_NPM with Double]
-  
-  /* 15 */ @js.native
-  object COLOR extends TopLevel[COLOR with Double]
-  
-  /* 8 */ @js.native
-  object COLOR_BURN extends TopLevel[COLOR_BURN with Double]
-  
-  /* 7 */ @js.native
-  object COLOR_DODGE extends TopLevel[COLOR_DODGE with Double]
-  
-  /* 5 */ @js.native
-  object DARKEN extends TopLevel[DARKEN with Double]
-  
-  /* 11 */ @js.native
-  object DIFFERENCE extends TopLevel[DIFFERENCE with Double]
-  
-  /* 27 */ @js.native
-  object DST_ATOP extends TopLevel[DST_ATOP with Double]
-  
-  /* 25 */ @js.native
-  object DST_IN extends TopLevel[DST_IN with Double]
-  
-  /* 26 */ @js.native
-  object DST_OUT extends TopLevel[DST_OUT with Double]
-  
-  /* 24 */ @js.native
-  object DST_OVER extends TopLevel[DST_OVER with Double]
-  
-  /* 30 */ @js.native
-  object ERASE extends TopLevel[ERASE with Double]
-  
-  /* 12 */ @js.native
-  object EXCLUSION extends TopLevel[EXCLUSION with Double]
-  
-  /* 9 */ @js.native
-  object HARD_LIGHT extends TopLevel[HARD_LIGHT with Double]
-  
-  /* 13 */ @js.native
-  object HUE extends TopLevel[HUE with Double]
-  
-  /* 6 */ @js.native
-  object LIGHTEN extends TopLevel[LIGHTEN with Double]
-  
-  /* 16 */ @js.native
-  object LUMINOSITY extends TopLevel[LUMINOSITY with Double]
-  
-  /* 2 */ @js.native
-  object MULTIPLY extends TopLevel[MULTIPLY with Double]
-  
-  /* 20 */ @js.native
-  object NONE extends TopLevel[NONE with Double]
-  
-  /* 0 */ @js.native
-  object NORMAL extends TopLevel[NORMAL with Double]
-  
-  /* 17 */ @js.native
-  object NORMAL_NPM extends TopLevel[NORMAL_NPM with Double]
-  
-  /* 4 */ @js.native
-  object OVERLAY extends TopLevel[OVERLAY with Double]
-  
-  /* 14 */ @js.native
-  object SATURATION extends TopLevel[SATURATION with Double]
-  
-  /* 3 */ @js.native
-  object SCREEN extends TopLevel[SCREEN with Double]
-  
-  /* 19 */ @js.native
-  object SCREEN_NPM extends TopLevel[SCREEN_NPM with Double]
-  
-  /* 10 */ @js.native
-  object SOFT_LIGHT extends TopLevel[SOFT_LIGHT with Double]
-  
-  /* 23 */ @js.native
-  object SRC_ATOP extends TopLevel[SRC_ATOP with Double]
-  
-  /* 21 */ @js.native
-  object SRC_IN extends TopLevel[SRC_IN with Double]
-  
-  /* 22 */ @js.native
-  object SRC_OUT extends TopLevel[SRC_OUT with Double]
-  
-  /* 29 */ @js.native
-  object SRC_OVER extends TopLevel[SRC_OVER with Double]
-  
-  /* 28 */ @js.native
-  object SUBTRACT extends TopLevel[SUBTRACT with Double]
-  
-  /* 31 */ @js.native
-  object XOR extends TopLevel[XOR with Double]
   
 }
 

@@ -9,7 +9,24 @@ package object codegurureviewerMod {
   type AssociationId = java.lang.String
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.codegurureviewerMod.ClientApiVersions
   type ClientRequestToken = java.lang.String
+  type CodeReviewSummaries = js.Array[typings.awsSdk.codegurureviewerMod.CodeReviewSummary]
+  type CommitId = java.lang.String
+  type ConnectionArn = java.lang.String
+  type FilePath = java.lang.String
+  type FindingsCount = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.Completed_
+    - typings.awsSdk.awsSdkStrings.Pending_
+    - typings.awsSdk.awsSdkStrings.Failed_
+    - typings.awsSdk.awsSdkStrings.Deleting_
+    - java.lang.String
+  */
+  type JobState = typings.awsSdk.codegurureviewerMod._JobState | java.lang.String
+  type JobStates = js.Array[typings.awsSdk.codegurureviewerMod.JobState]
+  type LineNumber = scala.Double
+  type ListCodeReviewsMaxResults = scala.Double
   type MaxResults = scala.Double
+  type MeteredLinesOfCodeCount = scala.Double
   type Name = java.lang.String
   type Names = js.Array[typings.awsSdk.codegurureviewerMod.Name]
   type NextToken = java.lang.String
@@ -18,10 +35,23 @@ package object codegurureviewerMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.CodeCommit_
     - typings.awsSdk.awsSdkStrings.GitHub_
+    - typings.awsSdk.awsSdkStrings.Bitbucket_
     - java.lang.String
   */
   type ProviderType = typings.awsSdk.codegurureviewerMod._ProviderType | java.lang.String
   type ProviderTypes = js.Array[typings.awsSdk.codegurureviewerMod.ProviderType]
+  type PullRequestId = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ThumbsUp
+    - typings.awsSdk.awsSdkStrings.ThumbsDown
+    - java.lang.String
+  */
+  type Reaction = typings.awsSdk.codegurureviewerMod._Reaction | java.lang.String
+  type Reactions = js.Array[typings.awsSdk.codegurureviewerMod.Reaction]
+  type RecommendationFeedbackSummaries = js.Array[typings.awsSdk.codegurureviewerMod.RecommendationFeedbackSummary]
+  type RecommendationId = java.lang.String
+  type RecommendationIds = js.Array[typings.awsSdk.codegurureviewerMod.RecommendationId]
+  type RecommendationSummaries = js.Array[typings.awsSdk.codegurureviewerMod.RecommendationSummary]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.Associated_
     - typings.awsSdk.awsSdkStrings.Associating_
@@ -32,8 +62,13 @@ package object codegurureviewerMod {
   type RepositoryAssociationState = typings.awsSdk.codegurureviewerMod._RepositoryAssociationState | java.lang.String
   type RepositoryAssociationStates = js.Array[typings.awsSdk.codegurureviewerMod.RepositoryAssociationState]
   type RepositoryAssociationSummaries = js.Array[typings.awsSdk.codegurureviewerMod.RepositoryAssociationSummary]
+  type RepositoryNames = js.Array[typings.awsSdk.codegurureviewerMod.Name]
   type StateReason = java.lang.String
+  type Text = java.lang.String
   type TimeStamp = typings.std.Date
+  type Type = typings.awsSdk.awsSdkStrings.PullRequest | java.lang.String
+  type UserId = java.lang.String
+  type UserIds = js.Array[typings.awsSdk.codegurureviewerMod.UserId]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`2019-09-19`
     - typings.awsSdk.awsSdkStrings.latest_

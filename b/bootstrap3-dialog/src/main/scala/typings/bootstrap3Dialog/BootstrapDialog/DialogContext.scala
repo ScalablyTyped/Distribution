@@ -1,31 +1,31 @@
 package typings.bootstrap3Dialog.BootstrapDialog
 
-import typings.jquery.JQuery_
+import typings.jquery.JQuery
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DialogContext extends js.Object {
-  /**  	Close the dialog. Usage: dialogInstance.close() */
+  /**      Close the dialog. Usage: dialogInstance.close() */
   def close(): Unit
   /** Disable all buttons in dialog footer when it's false, enable all when it's true. */
   def enableButtons(enable: Boolean): Unit
-  def getButton(buttonId: String): JQuery_[HTMLElement]
+  def getButton(buttonId: String): JQuery[HTMLElement]
   /** Get data entry according to the given key, returns null if no data entry found. */
   def getData(dataName: String): js.Any
   /** Return the raw modal, equivalent to $('<div class='modal fade'...></div>') */
-  def getModal(): JQuery_[HTMLElement]
+  def getModal(): JQuery[HTMLElement]
   /** Return the raw modal body. */
-  def getModalBody(): JQuery_[HTMLElement]
+  def getModalBody(): JQuery[HTMLElement]
   /** Return the raw modal content. */
-  def getModalContent(): JQuery_[HTMLElement]
+  def getModalContent(): JQuery[HTMLElement]
   /** Return the raw modal dialog. */
-  def getModalDialog(): JQuery_[HTMLElement]
+  def getModalDialog(): JQuery[HTMLElement]
   /** Return the raw modal footer. */
-  def getModalFooter(): JQuery_[HTMLElement]
+  def getModalFooter(): JQuery[HTMLElement]
   /** Return the raw modal header. */
-  def getModalHeader(): JQuery_[HTMLElement]
+  def getModalHeader(): JQuery[HTMLElement]
   def getTitle(): String
   /** Open the dialog. Usage: dialogInstance.open() */
   def open(): Unit
@@ -52,14 +52,14 @@ object DialogContext {
   def apply(
     close: () => Unit,
     enableButtons: Boolean => Unit,
-    getButton: String => JQuery_[HTMLElement],
+    getButton: String => JQuery[HTMLElement],
     getData: String => js.Any,
-    getModal: () => JQuery_[HTMLElement],
-    getModalBody: () => JQuery_[HTMLElement],
-    getModalContent: () => JQuery_[HTMLElement],
-    getModalDialog: () => JQuery_[HTMLElement],
-    getModalFooter: () => JQuery_[HTMLElement],
-    getModalHeader: () => JQuery_[HTMLElement],
+    getModal: () => JQuery[HTMLElement],
+    getModalBody: () => JQuery[HTMLElement],
+    getModalContent: () => JQuery[HTMLElement],
+    getModalDialog: () => JQuery[HTMLElement],
+    getModalFooter: () => JQuery[HTMLElement],
+    getModalHeader: () => JQuery[HTMLElement],
     getTitle: () => String,
     open: () => Unit,
     realize: () => Unit,

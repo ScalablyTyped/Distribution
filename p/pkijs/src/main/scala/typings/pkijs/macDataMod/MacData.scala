@@ -22,10 +22,10 @@ object MacData {
     macSalt: OctetString,
     toJSON: () => js.Any,
     toSchema: () => js.Any,
-    iterations: Int | Double = null
+    iterations: js.UndefOr[Double] = js.undefined
   ): MacData = {
     val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), mac = mac.asInstanceOf[js.Any], macSalt = macSalt.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
-    if (iterations != null) __obj.updateDynamic("iterations")(iterations.asInstanceOf[js.Any])
+    if (!js.isUndefined(iterations)) __obj.updateDynamic("iterations")(iterations.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MacData]
   }
 }

@@ -13,57 +13,57 @@ import scala.scalajs.js.annotation._
   */
 trait UserNotificationDictionary extends js.Object {
   /**
-  	 * Alert button text ('Open', by default) or home text ('Press Home to unlock', by default)
-  	 * type: String
-  	 */
+    * Alert button text ('Open', by default) or home text ('Press Home to unlock', by default)
+    * type: String
+    */
   var alertAction: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Alert message.
-  	 */
+    * Alert message.
+    */
   var alertBody: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Image displayed instead of `Default.png` when launching the application.
-  	 */
+    * Image displayed instead of `Default.png` when launching the application.
+    */
   var alertLaunchImage: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Subtitle of the notification.
-  	 */
+    * Subtitle of the notification.
+    */
   var alertSubtitle: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Title of the notification.
-  	 */
+    * Title of the notification.
+    */
   var alertTitle: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Application badge value.
-  	 */
+    * Application badge value.
+    */
   var badge: js.UndefOr[Double] = js.undefined
   /**
-  	 * Category identifier of the notification.
-  	 */
+    * Category identifier of the notification.
+    */
   var category: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Date and time when the notification was configured to fire.
-  	 */
+    * Date and time when the notification was configured to fire.
+    */
   var date: js.UndefOr[Date] = js.undefined
   /**
-  	 * The notification identifier.
-  	 */
+    * The notification identifier.
+    */
   var identifier: java.lang.String
   /**
-  	 * Region of the notification.
-  	 */
+    * Region of the notification.
+    */
   var region: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Path to the sound file configured to play when the notification was fired.
-  	 */
+    * Path to the sound file configured to play when the notification was fired.
+    */
   var sound: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Timezone of the date when the notification was configured to fire.
-  	 */
+    * Timezone of the date when the notification was configured to fire.
+    */
   var timezone: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Custom data object.
-  	 */
+    * Custom data object.
+    */
   var userInfo: js.UndefOr[js.Any] = js.undefined
 }
 
@@ -76,7 +76,7 @@ object UserNotificationDictionary {
     alertLaunchImage: java.lang.String = null,
     alertSubtitle: java.lang.String = null,
     alertTitle: java.lang.String = null,
-    badge: Int | Double = null,
+    badge: js.UndefOr[Double] = js.undefined,
     category: java.lang.String = null,
     date: Date = null,
     region: js.Any = null,
@@ -90,7 +90,7 @@ object UserNotificationDictionary {
     if (alertLaunchImage != null) __obj.updateDynamic("alertLaunchImage")(alertLaunchImage.asInstanceOf[js.Any])
     if (alertSubtitle != null) __obj.updateDynamic("alertSubtitle")(alertSubtitle.asInstanceOf[js.Any])
     if (alertTitle != null) __obj.updateDynamic("alertTitle")(alertTitle.asInstanceOf[js.Any])
-    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
+    if (!js.isUndefined(badge)) __obj.updateDynamic("badge")(badge.get.asInstanceOf[js.Any])
     if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])

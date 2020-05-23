@@ -10,26 +10,26 @@ import scala.scalajs.js.annotation._
   */
 trait MessageText extends js.Object {
   /**
-  	 * Includes the HTML version of the message.
-  	 *
-  	 * Is set if the message has at least one `text/html` node.
-  	 */
+    * Includes the HTML version of the message.
+    *
+    * Is set if the message has at least one `text/html` node.
+    */
   var html: js.UndefOr[String | Boolean] = js.undefined
   /**
-  	 * Includes the plaintext version of the message.
-  	 *
-  	 * Is set if the message has at least one `text/plain` node.
-  	 */
+    * Includes the plaintext version of the message.
+    *
+    * Is set if the message has at least one `text/plain` node.
+    */
   var text: js.UndefOr[String] = js.undefined
   /**
-  	 * Includes the plaintext version of the message in HTML format.
-  	 *
-  	 * Is set if the message has at least one `text/plain` node.
-  	 */
+    * Includes the plaintext version of the message in HTML format.
+    *
+    * Is set if the message has at least one `text/plain` node.
+    */
   var textAsHtml: js.UndefOr[String] = js.undefined
   /**
-  	 * Message type.
-  	 */
+    * Message type.
+    */
   var `type`: text
 }
 

@@ -22,10 +22,10 @@ trait DeregisterContainerInstanceRequest extends js.Object {
 
 object DeregisterContainerInstanceRequest {
   @scala.inline
-  def apply(containerInstance: String, cluster: String = null, force: js.UndefOr[scala.Boolean] = js.undefined): DeregisterContainerInstanceRequest = {
+  def apply(containerInstance: String, cluster: String = null, force: js.UndefOr[BoxedBoolean] = js.undefined): DeregisterContainerInstanceRequest = {
     val __obj = js.Dynamic.literal(containerInstance = containerInstance.asInstanceOf[js.Any])
     if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeregisterContainerInstanceRequest]
   }
 }

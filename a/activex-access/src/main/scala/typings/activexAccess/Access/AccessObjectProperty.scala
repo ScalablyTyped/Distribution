@@ -4,14 +4,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.AccessObjectProperty")
-@js.native
-class AccessObjectProperty protected () extends js.Object {
+trait AccessObjectProperty extends js.Object {
   @JSName("Access.AccessObjectProperty_typekey")
-  var AccessDotAccessObjectProperty_typekey: AccessObjectProperty = js.native
-  val Name: String = js.native
-  var Value: js.Any = js.native
-  val _Value: js.Any = js.native
-  def IsMemberSafe(dispid: Double): Boolean = js.native
+  var AccessDotAccessObjectProperty_typekey: AccessObjectProperty
+  val Name: String
+  var Value: js.Any
+  val _Value: js.Any
+  def IsMemberSafe(dispid: Double): Boolean
+}
+
+object AccessObjectProperty {
+  @scala.inline
+  def apply(
+    AccessDotAccessObjectProperty_typekey: AccessObjectProperty,
+    IsMemberSafe: Double => Boolean,
+    Name: String,
+    Value: js.Any,
+    _Value: js.Any
+  ): AccessObjectProperty = {
+    val __obj = js.Dynamic.literal(IsMemberSafe = js.Any.fromFunction1(IsMemberSafe), Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any], _Value = _Value.asInstanceOf[js.Any])
+    __obj.updateDynamic("Access.AccessObjectProperty_typekey")(AccessDotAccessObjectProperty_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AccessObjectProperty]
+  }
 }
 

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object all extends js.Object {
   def apply[T](values: js.Array[T | js.Thenable[T]]): js.Promise[js.Array[T]] = js.native
-  def apply[TAll](values: Iterable[TAll | js.Thenable[TAll]]): js.Promise[js.Array[TAll]] = js.native
+  def apply[T](values: Iterable[T | js.Thenable[T]]): js.Promise[js.Array[T]] = js.native
   def apply[T1, T2](values: js.Tuple2[T1 | js.Thenable[T1], T2 | js.Thenable[T2]]): js.Promise[js.Tuple2[T1, T2]] = js.native
   def apply[T1, T2, T3](values: js.Tuple3[T1 | js.Thenable[T1], T2 | js.Thenable[T2], T3 | js.Thenable[T3]]): js.Promise[js.Tuple3[T1, T2, T3]] = js.native
   def apply[T1, T2, T3, T4](

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -72,8 +71,4 @@ trait ImageServiceIdentifyParameters
     */
   var timeExtent: TimeExtent = js.native
 }
-
-@JSGlobal("__esri.ImageServiceIdentifyParameters")
-@js.native
-object ImageServiceIdentifyParameters extends TopLevel[ImageServiceIdentifyParametersConstructor]
 

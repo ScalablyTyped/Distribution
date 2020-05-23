@@ -6,7 +6,7 @@ import typings.angular.mod.IHttpRequestTransformer
 import typings.angular.mod.IHttpResponseTransformer
 import typings.angular.mod.IPromise
 import typings.angular.mod.IRequestConfig
-import typings.angular.mod._Global_.Function
+import typings.angular.mod.global.Function
 import typings.std.EventListenerOrEventListenerObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -87,7 +87,7 @@ object IFileUploadConfigFile {
     if (arrayKey != null) __obj.updateDynamic("arrayKey")(arrayKey.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableProgress)) __obj.updateDynamic("disableProgress")(disableProgress.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableProgress)) __obj.updateDynamic("disableProgress")(disableProgress.get.asInstanceOf[js.Any])
     if (eventHandlers != null) __obj.updateDynamic("eventHandlers")(eventHandlers.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (jsonpCallbackParam != null) __obj.updateDynamic("jsonpCallbackParam")(jsonpCallbackParam.asInstanceOf[js.Any])
@@ -103,7 +103,7 @@ object IFileUploadConfigFile {
     if (transformRequest != null) __obj.updateDynamic("transformRequest")(transformRequest.asInstanceOf[js.Any])
     if (transformResponse != null) __obj.updateDynamic("transformResponse")(transformResponse.asInstanceOf[js.Any])
     if (uploadEventHandlers != null) __obj.updateDynamic("uploadEventHandlers")(uploadEventHandlers.asInstanceOf[js.Any])
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.asInstanceOf[js.Any])
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.get.asInstanceOf[js.Any])
     if (xsrfCookieName != null) __obj.updateDynamic("xsrfCookieName")(xsrfCookieName.asInstanceOf[js.Any])
     if (xsrfHeaderName != null) __obj.updateDynamic("xsrfHeaderName")(xsrfHeaderName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileUploadConfigFile]

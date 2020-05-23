@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.SmartCards
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object SmartCardReaderStatus extends js.Object {
   /** The smart card reader is ready. */
   @js.native
   sealed trait ready extends SmartCardReaderStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SmartCardReaderStatus with Double] = js.native
-  /* 0 */ @js.native
-  object disconnected extends TopLevel[disconnected with Double]
-  
-  /* 2 */ @js.native
-  object exclusive extends TopLevel[exclusive with Double]
-  
-  /* 1 */ @js.native
-  object ready extends TopLevel[ready with Double]
   
 }
 

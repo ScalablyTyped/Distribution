@@ -1,7 +1,7 @@
 package typings.gitlab.runnersMod
 
+import typings.gitlab.anon.projectIdstringnumberPagiDictkey
 import typings.gitlab.infrastructureMod.BaseService
-import typings.gitlab.projectIdstringnumberPagiDictkey
 import typings.gitlab.requestHelperMod.BaseRequestOptions
 import typings.gitlab.requestHelperMod.GetResponse
 import typings.gitlab.requestHelperMod.Sudo

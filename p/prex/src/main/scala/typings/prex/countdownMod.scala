@@ -21,20 +21,20 @@ object countdownMod extends js.Object {
     var _initialCount: js.Any = js.native
     var _remainingCount: js.Any = js.native
     /**
-      * Gets the number of signals initially required to set the event.
-      */
-    val initialCount: Double = js.native
-    /**
-      * Gets the number of remaining signals required to set the event.
-      */
-    val remainingCount: Double = js.native
-    /**
       * Increments the event's current count by one or more.
       *
       * @param count An optional count specifying the additional number of signals for which the event will wait.
       */
     def add(): Unit = js.native
     def add(count: Double): Unit = js.native
+    /**
+      * Gets the number of signals initially required to set the event.
+      */
+    def initialCount: Double = js.native
+    /**
+      * Gets the number of remaining signals required to set the event.
+      */
+    def remainingCount: Double = js.native
     /**
       * Resets the remaining and initial count to the specified value, or the initial count.
       *

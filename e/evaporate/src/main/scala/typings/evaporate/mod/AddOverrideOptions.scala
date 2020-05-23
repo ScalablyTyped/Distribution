@@ -54,21 +54,21 @@ object AddOverrideOptions {
   @scala.inline
   def apply(
     bucket: String,
-    abortCompletionThrottlingMs: Int | Double = null,
+    abortCompletionThrottlingMs: js.UndefOr[Double] = js.undefined,
     aws_key: String = null,
     aws_url: String = null,
     customAuthMethod: (/* signParams */ String, /* signHeaders */ String, /* stringToSign */ String, /* signatureDateTime */ String, /* canonicalRequest */ String) => js.Promise[String] = null,
-    localTimeOffset: Int | Double = null,
-    maxFileSize: Int | Double = null,
-    maxRetryBackoffSecs: Int | Double = null,
+    localTimeOffset: js.UndefOr[Double] = js.undefined,
+    maxFileSize: js.UndefOr[Double] = js.undefined,
+    maxRetryBackoffSecs: js.UndefOr[Double] = js.undefined,
     mockLocalStorage: js.UndefOr[Boolean] = js.undefined,
-    partSize: Int | Double = null,
-    progressIntervalMS: Int | Double = null,
+    partSize: js.UndefOr[Double] = js.undefined,
+    progressIntervalMS: js.UndefOr[Double] = js.undefined,
     readableStreamPartMethod: (/* file */ File, /* start */ Double, /* end */ Double) => ReadableStream[_] = null,
     readableStreams: js.UndefOr[Boolean] = js.undefined,
-    retryBackoffPower: Int | Double = null,
+    retryBackoffPower: js.UndefOr[Double] = js.undefined,
     s3Acceleration: js.UndefOr[Boolean] = js.undefined,
-    s3FileCacheHoursAgo: Int | Double = null,
+    s3FileCacheHoursAgo: js.UndefOr[Double] = js.undefined,
     sendCanonicalRequestToSignerUrl: js.UndefOr[Boolean] = js.undefined,
     signHeaders: js.Object = null,
     signParams: js.Object = null,
@@ -77,27 +77,27 @@ object AddOverrideOptions {
     xhrWithCredentials: js.UndefOr[Boolean] = js.undefined
   ): AddOverrideOptions = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
-    if (abortCompletionThrottlingMs != null) __obj.updateDynamic("abortCompletionThrottlingMs")(abortCompletionThrottlingMs.asInstanceOf[js.Any])
+    if (!js.isUndefined(abortCompletionThrottlingMs)) __obj.updateDynamic("abortCompletionThrottlingMs")(abortCompletionThrottlingMs.get.asInstanceOf[js.Any])
     if (aws_key != null) __obj.updateDynamic("aws_key")(aws_key.asInstanceOf[js.Any])
     if (aws_url != null) __obj.updateDynamic("aws_url")(aws_url.asInstanceOf[js.Any])
     if (customAuthMethod != null) __obj.updateDynamic("customAuthMethod")(js.Any.fromFunction5(customAuthMethod))
-    if (localTimeOffset != null) __obj.updateDynamic("localTimeOffset")(localTimeOffset.asInstanceOf[js.Any])
-    if (maxFileSize != null) __obj.updateDynamic("maxFileSize")(maxFileSize.asInstanceOf[js.Any])
-    if (maxRetryBackoffSecs != null) __obj.updateDynamic("maxRetryBackoffSecs")(maxRetryBackoffSecs.asInstanceOf[js.Any])
-    if (!js.isUndefined(mockLocalStorage)) __obj.updateDynamic("mockLocalStorage")(mockLocalStorage.asInstanceOf[js.Any])
-    if (partSize != null) __obj.updateDynamic("partSize")(partSize.asInstanceOf[js.Any])
-    if (progressIntervalMS != null) __obj.updateDynamic("progressIntervalMS")(progressIntervalMS.asInstanceOf[js.Any])
+    if (!js.isUndefined(localTimeOffset)) __obj.updateDynamic("localTimeOffset")(localTimeOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFileSize)) __obj.updateDynamic("maxFileSize")(maxFileSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetryBackoffSecs)) __obj.updateDynamic("maxRetryBackoffSecs")(maxRetryBackoffSecs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mockLocalStorage)) __obj.updateDynamic("mockLocalStorage")(mockLocalStorage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(partSize)) __obj.updateDynamic("partSize")(partSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressIntervalMS)) __obj.updateDynamic("progressIntervalMS")(progressIntervalMS.get.asInstanceOf[js.Any])
     if (readableStreamPartMethod != null) __obj.updateDynamic("readableStreamPartMethod")(js.Any.fromFunction3(readableStreamPartMethod))
-    if (!js.isUndefined(readableStreams)) __obj.updateDynamic("readableStreams")(readableStreams.asInstanceOf[js.Any])
-    if (retryBackoffPower != null) __obj.updateDynamic("retryBackoffPower")(retryBackoffPower.asInstanceOf[js.Any])
-    if (!js.isUndefined(s3Acceleration)) __obj.updateDynamic("s3Acceleration")(s3Acceleration.asInstanceOf[js.Any])
-    if (s3FileCacheHoursAgo != null) __obj.updateDynamic("s3FileCacheHoursAgo")(s3FileCacheHoursAgo.asInstanceOf[js.Any])
-    if (!js.isUndefined(sendCanonicalRequestToSignerUrl)) __obj.updateDynamic("sendCanonicalRequestToSignerUrl")(sendCanonicalRequestToSignerUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(readableStreams)) __obj.updateDynamic("readableStreams")(readableStreams.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retryBackoffPower)) __obj.updateDynamic("retryBackoffPower")(retryBackoffPower.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(s3Acceleration)) __obj.updateDynamic("s3Acceleration")(s3Acceleration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(s3FileCacheHoursAgo)) __obj.updateDynamic("s3FileCacheHoursAgo")(s3FileCacheHoursAgo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendCanonicalRequestToSignerUrl)) __obj.updateDynamic("sendCanonicalRequestToSignerUrl")(sendCanonicalRequestToSignerUrl.get.asInstanceOf[js.Any])
     if (signHeaders != null) __obj.updateDynamic("signHeaders")(signHeaders.asInstanceOf[js.Any])
     if (signParams != null) __obj.updateDynamic("signParams")(signParams.asInstanceOf[js.Any])
     if (signResponseHandler != null) __obj.updateDynamic("signResponseHandler")(js.Any.fromFunction3(signResponseHandler))
     if (signerUrl != null) __obj.updateDynamic("signerUrl")(signerUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(xhrWithCredentials)) __obj.updateDynamic("xhrWithCredentials")(xhrWithCredentials.asInstanceOf[js.Any])
+    if (!js.isUndefined(xhrWithCredentials)) __obj.updateDynamic("xhrWithCredentials")(xhrWithCredentials.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddOverrideOptions]
   }
 }

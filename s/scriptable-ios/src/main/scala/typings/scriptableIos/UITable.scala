@@ -10,15 +10,8 @@ import scala.scalajs.js.annotation._
   * Use a table to present data in a structured manner.
   * @see https://docs.scriptable.app/uitable/#-new-uitable
   */
-@JSGlobal("UITable")
 @js.native
-/**
-  * _Renders a table._
-  *
-  * Use a table to present data in a structured manner.
-  * @see https://docs.scriptable.app/uitable/#-new-uitable
-  */
-class UITable () extends js.Object {
+trait UITable extends js.Object {
   /**
     * _Whether to show separators._
     *

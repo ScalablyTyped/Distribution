@@ -1,5 +1,6 @@
 package typings.pixiJs.mod
 
+import typings.pixiJs.PIXI.ILoaderPlugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,8 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("pixi.js", "BitmapFontLoader")
 @js.native
-class BitmapFontLoader ()
-  extends typings.pixiJs.PIXI.BitmapFontLoader
+class BitmapFontLoader () extends ILoaderPlugin
 
 /* static members */
 @JSImport("pixi.js", "BitmapFontLoader")

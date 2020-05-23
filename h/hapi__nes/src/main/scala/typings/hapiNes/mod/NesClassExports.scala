@@ -1,17 +1,17 @@
 package typings.hapiNes.mod
 
-import typings.hapiNes.AnonInstantiable
+import typings.hapiNes.anon.Instantiable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NesClassExports extends js.Object {
-  var Client: AnonInstantiable
+  var Client: Instantiable
 }
 
 object NesClassExports {
   @scala.inline
-  def apply(Client: AnonInstantiable): NesClassExports = {
+  def apply(Client: Instantiable): NesClassExports = {
     val __obj = js.Dynamic.literal(Client = Client.asInstanceOf[js.Any])
     __obj.asInstanceOf[NesClassExports]
   }

@@ -20,8 +20,8 @@ trait IGauge extends ISeries {
   /** [Config Option] (Boolean) */
   var needle: js.UndefOr[Boolean] = js.undefined
   /** [Method] Sets the Gauge chart to the current specified value
-  		* @param value Object
-  		*/
+    * @param value Object
+    */
   var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Object) */
   var style: js.UndefOr[js.Any] = js.undefined
@@ -58,7 +58,7 @@ object IGauge {
     hideAll: () => Unit = null,
     highlight: js.Any = null,
     highlightCfg: js.Any = null,
-    highlightDuration: Int | Double = null,
+    highlightDuration: js.UndefOr[Double] = js.undefined,
     highlightItem: js.UndefOr[js.Any] => Unit = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IGauge = null,
@@ -127,18 +127,18 @@ object IGauge {
     if (hideAll != null) __obj.updateDynamic("hideAll")(js.Any.fromFunction0(hideAll))
     if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
     if (highlightCfg != null) __obj.updateDynamic("highlightCfg")(highlightCfg.asInstanceOf[js.Any])
-    if (highlightDuration != null) __obj.updateDynamic("highlightDuration")(highlightDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightDuration)) __obj.updateDynamic("highlightDuration")(highlightDuration.get.asInstanceOf[js.Any])
     if (highlightItem != null) __obj.updateDynamic("highlightItem")(js.Any.fromFunction1(highlightItem))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (isExcluded != null) __obj.updateDynamic("isExcluded")(js.Any.fromFunction1(isExcluded))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
     if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
-    if (!js.isUndefined(needle)) __obj.updateDynamic("needle")(needle.asInstanceOf[js.Any])
+    if (!js.isUndefined(needle)) __obj.updateDynamic("needle")(needle.get.asInstanceOf[js.Any])
     if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction4(on))
     if (onCreateLabel != null) __obj.updateDynamic("onCreateLabel")(js.Any.fromFunction4(onCreateLabel))
     if (onPlaceLabel != null) __obj.updateDynamic("onPlaceLabel")(js.Any.fromFunction7(onPlaceLabel))
@@ -154,8 +154,8 @@ object IGauge {
     if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
     if (shadowAttributes != null) __obj.updateDynamic("shadowAttributes")(shadowAttributes.asInstanceOf[js.Any])
     if (showAll != null) __obj.updateDynamic("showAll")(js.Any.fromFunction0(showAll))
-    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))

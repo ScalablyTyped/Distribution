@@ -26,14 +26,14 @@ object TurnBasedMatchTurn {
   def apply(
     data: TurnBasedMatchDataRequest = null,
     kind: String = null,
-    matchVersion: Int | Double = null,
+    matchVersion: js.UndefOr[Double] = js.undefined,
     pendingParticipantId: String = null,
     results: js.Array[ParticipantResult] = null
   ): TurnBasedMatchTurn = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (matchVersion != null) __obj.updateDynamic("matchVersion")(matchVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchVersion)) __obj.updateDynamic("matchVersion")(matchVersion.get.asInstanceOf[js.Any])
     if (pendingParticipantId != null) __obj.updateDynamic("pendingParticipantId")(pendingParticipantId.asInstanceOf[js.Any])
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     __obj.asInstanceOf[TurnBasedMatchTurn]

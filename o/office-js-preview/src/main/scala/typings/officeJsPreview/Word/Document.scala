@@ -1,12 +1,12 @@
 package typings.officeJsPreview.Word
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.EventHandlers
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
 import typings.officeJsPreview.Word.Interfaces.DocumentData
 import typings.officeJsPreview.Word.Interfaces.DocumentLoadOptions
 import typings.officeJsPreview.Word.Interfaces.DocumentUpdateData
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,9 +17,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: WordApi 1.1]
   */
-@JSGlobal("Word.Document")
 @js.native
-class Document () extends ClientObject {
+trait Document extends ClientObject {
   /**
     *
     * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.
@@ -139,8 +138,8 @@ class Document () extends ClientObject {
   def load(): Document = js.native
   def load(option: String): Document = js.native
   def load(option: js.Array[String]): Document = js.native
-  def load(option: AnonExpand): Document = js.native
   def load(option: DocumentLoadOptions): Document = js.native
+  def load(option: Expand): Document = js.native
   /**
     *
     * Saves the document. This uses the Word default file naming convention if the document has not been saved before.

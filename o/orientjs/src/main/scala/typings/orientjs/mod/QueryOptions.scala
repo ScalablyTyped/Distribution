@@ -25,7 +25,7 @@ object QueryOptions {
     `class`: String = null,
     fetchPlan: js.Any = null,
     language: SQL | Javascript = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     mode: s | a | l = null,
     params: js.Any = null,
     token: js.Any = null
@@ -34,7 +34,7 @@ object QueryOptions {
     if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
     if (fetchPlan != null) __obj.updateDynamic("fetchPlan")(fetchPlan.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])

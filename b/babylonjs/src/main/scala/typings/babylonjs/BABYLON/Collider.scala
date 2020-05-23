@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.Collider")
 @js.native
-class Collider () extends js.Object {
+trait Collider extends js.Object {
   var _basePoint: js.Any = js.native
   /** @hidden */
   var _basePointWorld: Vector3 = js.native

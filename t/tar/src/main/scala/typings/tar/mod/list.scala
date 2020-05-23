@@ -2,7 +2,7 @@ package typings.tar.mod
 
 import typings.node.streamMod.Writable
 import typings.std.Error
-import typings.tar.ListOptionsFileOptionssyn
+import typings.tar.anon.ListOptionsFileOptionssyn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

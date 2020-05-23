@@ -1,8 +1,8 @@
 package typings.oracleOraclejet.ojnboxMod
 
-import typings.oracleOraclejet.Anon13
-import typings.oracleOraclejet.AnonCellDefaults
-import typings.oracleOraclejet.AnonHighlightedCount
+import typings.oracleOraclejet.anon.CellDefaults
+import typings.oracleOraclejet.anon.HighlightedCount
+import typings.oracleOraclejet.anon.`13`
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponentSettableProperties
 import typings.oracleOraclejet.ojnboxMod.ojNBox.Cell
@@ -57,11 +57,11 @@ trait ojNBoxSettableProperties[K, D] extends dvtBaseComponentSettableProperties 
   var rowsTitle: String
   var selection: js.Array[K]
   var selectionMode: none | single | multiple
-  var styleDefaults: AnonCellDefaults
-  var tooltip: Anon13[K]
+  var styleDefaults: CellDefaults
+  var tooltip: `13`[K]
   var touchResponse: touchStart | auto
   @JSName("translations")
-  var translations_ojNBoxSettableProperties: AnonHighlightedCount
+  var translations_ojNBoxSettableProperties: HighlightedCount
   def countLabel(context: CountLabelContext): String | Null
 }
 
@@ -89,21 +89,17 @@ object ojNBoxSettableProperties {
     rowsTitle: String,
     selection: js.Array[K],
     selectionMode: none | single | multiple,
-    styleDefaults: AnonCellDefaults,
-    tooltip: Anon13[K],
+    styleDefaults: CellDefaults,
+    tooltip: `13`[K],
     touchResponse: touchStart | auto,
     trackResize: on | off,
-    translations: AnonHighlightedCount,
+    translations: HighlightedCount,
     cells: js.Array[Cell] | js.Promise[js.Array[Cell]] = null,
     columns: js.Array[Column] | js.Promise[js.Array[Column]] = null,
     data: DataProvider[K, D] = null,
     rows: js.Array[Row] | js.Promise[js.Array[Row]] = null
   ): ojNBoxSettableProperties[K, D] = {
-    val __obj = js.Dynamic.literal(animationOnDataChange = animationOnDataChange.asInstanceOf[js.Any], animationOnDisplay = animationOnDisplay.asInstanceOf[js.Any], as = as.asInstanceOf[js.Any], cellContent = cellContent.asInstanceOf[js.Any], cellMaximize = cellMaximize.asInstanceOf[js.Any], columnsTitle = columnsTitle.asInstanceOf[js.Any], countLabel = js.Any.fromFunction1(countLabel), groupAttributes = groupAttributes.asInstanceOf[js.Any], groupBehavior = groupBehavior.asInstanceOf[js.Any], hiddenCategories = hiddenCategories.asInstanceOf[js.Any], highlightMatch = highlightMatch.asInstanceOf[js.Any], highlightedCategories = highlightedCategories.asInstanceOf[js.Any], hoverBehavior = hoverBehavior.asInstanceOf[js.Any], labelTruncation = labelTruncation.asInstanceOf[js.Any], maximizedColumn = maximizedColumn.asInstanceOf[js.Any], maximizedRow = maximizedRow.asInstanceOf[js.Any], otherColor = otherColor.asInstanceOf[js.Any], otherThreshold = otherThreshold.asInstanceOf[js.Any], rowsTitle = rowsTitle.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any], styleDefaults = styleDefaults.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any], touchResponse = touchResponse.asInstanceOf[js.Any], trackResize = trackResize.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
-    if (cells != null) __obj.updateDynamic("cells")(cells.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(animationOnDataChange = animationOnDataChange.asInstanceOf[js.Any], animationOnDisplay = animationOnDisplay.asInstanceOf[js.Any], as = as.asInstanceOf[js.Any], cellContent = cellContent.asInstanceOf[js.Any], cellMaximize = cellMaximize.asInstanceOf[js.Any], columnsTitle = columnsTitle.asInstanceOf[js.Any], countLabel = js.Any.fromFunction1(countLabel), groupAttributes = groupAttributes.asInstanceOf[js.Any], groupBehavior = groupBehavior.asInstanceOf[js.Any], hiddenCategories = hiddenCategories.asInstanceOf[js.Any], highlightMatch = highlightMatch.asInstanceOf[js.Any], highlightedCategories = highlightedCategories.asInstanceOf[js.Any], hoverBehavior = hoverBehavior.asInstanceOf[js.Any], labelTruncation = labelTruncation.asInstanceOf[js.Any], maximizedColumn = maximizedColumn.asInstanceOf[js.Any], maximizedRow = maximizedRow.asInstanceOf[js.Any], otherColor = otherColor.asInstanceOf[js.Any], otherThreshold = otherThreshold.asInstanceOf[js.Any], rowsTitle = rowsTitle.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any], styleDefaults = styleDefaults.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any], touchResponse = touchResponse.asInstanceOf[js.Any], trackResize = trackResize.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], cells = cells.asInstanceOf[js.Any], columns = columns.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojNBoxSettableProperties[K, D]]
   }
 }

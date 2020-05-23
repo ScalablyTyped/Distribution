@@ -23,12 +23,12 @@ trait DevicePoolCompatibilityResult extends js.Object {
 object DevicePoolCompatibilityResult {
   @scala.inline
   def apply(
-    compatible: js.UndefOr[scala.Boolean] = js.undefined,
+    compatible: js.UndefOr[Boolean] = js.undefined,
     device: Device = null,
     incompatibilityMessages: IncompatibilityMessages = null
   ): DevicePoolCompatibilityResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(compatible)) __obj.updateDynamic("compatible")(compatible.asInstanceOf[js.Any])
+    if (!js.isUndefined(compatible)) __obj.updateDynamic("compatible")(compatible.get.asInstanceOf[js.Any])
     if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
     if (incompatibilityMessages != null) __obj.updateDynamic("incompatibilityMessages")(incompatibilityMessages.asInstanceOf[js.Any])
     __obj.asInstanceOf[DevicePoolCompatibilityResult]

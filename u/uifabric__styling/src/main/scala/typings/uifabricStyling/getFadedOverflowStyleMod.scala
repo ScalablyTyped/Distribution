@@ -68,7 +68,7 @@ object getFadedOverflowStyleMod extends js.Object {
   ): IRawStyle = js.native
   def getFadedOverflowStyle(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 89 */ js.Any
+    color: /* keyof @uifabric/styling.@uifabric/styling/lib/interfaces/ISemanticColors.ISemanticColors */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ js.Any
   ): IRawStyle = js.native
   @JSName("getFadedOverflowStyle")
   def getFadedOverflowStyle_horizontal(
@@ -86,7 +86,7 @@ object getFadedOverflowStyleMod extends js.Object {
   @JSName("getFadedOverflowStyle")
   def getFadedOverflowStyle_horizontal(
     theme: ITheme,
-    color: themeDarker | themeDark | themeDarkAlt | themePrimary | themeSecondary | themeTertiary | themeLight | themeLighter | themeLighterAlt | black | blackTranslucent40 | neutralDark | neutralPrimary | neutralPrimaryAlt | neutralSecondary | neutralSecondaryAlt | neutralTertiary | neutralTertiaryAlt | neutralQuaternary | neutralQuaternaryAlt | neutralLight | neutralLighter | neutralLighterAlt | accent | white | whiteTranslucent40 | yellowDark | yellow | yellowLight | orange | orangeLight | orangeLighter | redDark | red | magentaDark | magenta | magentaLight | purpleDark | purple | purpleLight | blueDark | blueMid | blue | blueLight | tealDark | teal | tealLight | greenDark | green | greenLight,
+    color: /* keyof @uifabric/styling.@uifabric/styling/lib/interfaces/IPalette.IPalette */ themeDarker | themeDark | themeDarkAlt | themePrimary | themeSecondary | themeTertiary | themeLight | themeLighter | themeLighterAlt | black | blackTranslucent40 | neutralDark | neutralPrimary | neutralPrimaryAlt | neutralSecondary | neutralSecondaryAlt | neutralTertiary | neutralTertiaryAlt | neutralQuaternary | neutralQuaternaryAlt | neutralLight | neutralLighter | neutralLighterAlt | accent | white | whiteTranslucent40 | yellowDark | yellow | yellowLight | orange | orangeLight | orangeLighter | redDark | red | magentaDark | magenta | magentaLight | purpleDark | purple | purpleLight | blueDark | blueMid | blue | blueLight | tealDark | teal | tealLight | greenDark | green | greenLight,
     direction: horizontal,
     width: String,
     height: String
@@ -94,7 +94,7 @@ object getFadedOverflowStyleMod extends js.Object {
   @JSName("getFadedOverflowStyle")
   def getFadedOverflowStyle_horizontal(
     theme: ITheme,
-    color: themeDarker | themeDark | themeDarkAlt | themePrimary | themeSecondary | themeTertiary | themeLight | themeLighter | themeLighterAlt | black | blackTranslucent40 | neutralDark | neutralPrimary | neutralPrimaryAlt | neutralSecondary | neutralSecondaryAlt | neutralTertiary | neutralTertiaryAlt | neutralQuaternary | neutralQuaternaryAlt | neutralLight | neutralLighter | neutralLighterAlt | accent | white | whiteTranslucent40 | yellowDark | yellow | yellowLight | orange | orangeLight | orangeLighter | redDark | red | magentaDark | magenta | magentaLight | purpleDark | purple | purpleLight | blueDark | blueMid | blue | blueLight | tealDark | teal | tealLight | greenDark | green | greenLight,
+    color: /* keyof @uifabric/styling.@uifabric/styling/lib/interfaces/IPalette.IPalette */ themeDarker | themeDark | themeDarkAlt | themePrimary | themeSecondary | themeTertiary | themeLight | themeLighter | themeLighterAlt | black | blackTranslucent40 | neutralDark | neutralPrimary | neutralPrimaryAlt | neutralSecondary | neutralSecondaryAlt | neutralTertiary | neutralTertiaryAlt | neutralQuaternary | neutralQuaternaryAlt | neutralLight | neutralLighter | neutralLighterAlt | accent | white | whiteTranslucent40 | yellowDark | yellow | yellowLight | orange | orangeLight | orangeLighter | redDark | red | magentaDark | magenta | magentaLight | purpleDark | purple | purpleLight | blueDark | blueMid | blue | blueLight | tealDark | teal | tealLight | greenDark | green | greenLight,
     direction: horizontal,
     width: String,
     height: Double
@@ -109,7 +109,7 @@ object getFadedOverflowStyleMod extends js.Object {
   @JSName("getFadedOverflowStyle")
   def getFadedOverflowStyle_horizontal(
     theme: ITheme,
-    color: themeDarker | themeDark | themeDarkAlt | themePrimary | themeSecondary | themeTertiary | themeLight | themeLighter | themeLighterAlt | black | blackTranslucent40 | neutralDark | neutralPrimary | neutralPrimaryAlt | neutralSecondary | neutralSecondaryAlt | neutralTertiary | neutralTertiaryAlt | neutralQuaternary | neutralQuaternaryAlt | neutralLight | neutralLighter | neutralLighterAlt | accent | white | whiteTranslucent40 | yellowDark | yellow | yellowLight | orange | orangeLight | orangeLighter | redDark | red | magentaDark | magenta | magentaLight | purpleDark | purple | purpleLight | blueDark | blueMid | blue | blueLight | tealDark | teal | tealLight | greenDark | green | greenLight,
+    color: /* keyof @uifabric/styling.@uifabric/styling/lib/interfaces/IPalette.IPalette */ themeDarker | themeDark | themeDarkAlt | themePrimary | themeSecondary | themeTertiary | themeLight | themeLighter | themeLighterAlt | black | blackTranslucent40 | neutralDark | neutralPrimary | neutralPrimaryAlt | neutralSecondary | neutralSecondaryAlt | neutralTertiary | neutralTertiaryAlt | neutralQuaternary | neutralQuaternaryAlt | neutralLight | neutralLighter | neutralLighterAlt | accent | white | whiteTranslucent40 | yellowDark | yellow | yellowLight | orange | orangeLight | orangeLighter | redDark | red | magentaDark | magenta | magentaLight | purpleDark | purple | purpleLight | blueDark | blueMid | blue | blueLight | tealDark | teal | tealLight | greenDark | green | greenLight,
     direction: horizontal,
     width: Double,
     height: String
@@ -117,7 +117,7 @@ object getFadedOverflowStyleMod extends js.Object {
   @JSName("getFadedOverflowStyle")
   def getFadedOverflowStyle_horizontal(
     theme: ITheme,
-    color: themeDarker | themeDark | themeDarkAlt | themePrimary | themeSecondary | themeTertiary | themeLight | themeLighter | themeLighterAlt | black | blackTranslucent40 | neutralDark | neutralPrimary | neutralPrimaryAlt | neutralSecondary | neutralSecondaryAlt | neutralTertiary | neutralTertiaryAlt | neutralQuaternary | neutralQuaternaryAlt | neutralLight | neutralLighter | neutralLighterAlt | accent | white | whiteTranslucent40 | yellowDark | yellow | yellowLight | orange | orangeLight | orangeLighter | redDark | red | magentaDark | magenta | magentaLight | purpleDark | purple | purpleLight | blueDark | blueMid | blue | blueLight | tealDark | teal | tealLight | greenDark | green | greenLight,
+    color: /* keyof @uifabric/styling.@uifabric/styling/lib/interfaces/IPalette.IPalette */ themeDarker | themeDark | themeDarkAlt | themePrimary | themeSecondary | themeTertiary | themeLight | themeLighter | themeLighterAlt | black | blackTranslucent40 | neutralDark | neutralPrimary | neutralPrimaryAlt | neutralSecondary | neutralSecondaryAlt | neutralTertiary | neutralTertiaryAlt | neutralQuaternary | neutralQuaternaryAlt | neutralLight | neutralLighter | neutralLighterAlt | accent | white | whiteTranslucent40 | yellowDark | yellow | yellowLight | orange | orangeLight | orangeLighter | redDark | red | magentaDark | magenta | magentaLight | purpleDark | purple | purpleLight | blueDark | blueMid | blue | blueLight | tealDark | teal | tealLight | greenDark | green | greenLight,
     direction: horizontal,
     width: Double,
     height: Double
@@ -125,20 +125,20 @@ object getFadedOverflowStyleMod extends js.Object {
   @JSName("getFadedOverflowStyle")
   def getFadedOverflowStyle_horizontal(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 89 */ js.Any,
+    color: /* keyof @uifabric/styling.@uifabric/styling/lib/interfaces/ISemanticColors.ISemanticColors */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ js.Any,
     direction: horizontal
   ): IRawStyle = js.native
   @JSName("getFadedOverflowStyle")
   def getFadedOverflowStyle_horizontal(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 89 */ js.Any,
+    color: /* keyof @uifabric/styling.@uifabric/styling/lib/interfaces/ISemanticColors.ISemanticColors */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ js.Any,
     direction: horizontal,
     width: String
   ): IRawStyle = js.native
   @JSName("getFadedOverflowStyle")
   def getFadedOverflowStyle_horizontal(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 89 */ js.Any,
+    color: /* keyof @uifabric/styling.@uifabric/styling/lib/interfaces/ISemanticColors.ISemanticColors */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ js.Any,
     direction: horizontal,
     width: String,
     height: String
@@ -146,7 +146,7 @@ object getFadedOverflowStyleMod extends js.Object {
   @JSName("getFadedOverflowStyle")
   def getFadedOverflowStyle_horizontal(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 89 */ js.Any,
+    color: /* keyof @uifabric/styling.@uifabric/styling/lib/interfaces/ISemanticColors.ISemanticColors */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ js.Any,
     direction: horizontal,
     width: String,
     height: Double
@@ -154,14 +154,14 @@ object getFadedOverflowStyleMod extends js.Object {
   @JSName("getFadedOverflowStyle")
   def getFadedOverflowStyle_horizontal(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 89 */ js.Any,
+    color: /* keyof @uifabric/styling.@uifabric/styling/lib/interfaces/ISemanticColors.ISemanticColors */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ js.Any,
     direction: horizontal,
     width: Double
   ): IRawStyle = js.native
   @JSName("getFadedOverflowStyle")
   def getFadedOverflowStyle_horizontal(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 89 */ js.Any,
+    color: /* keyof @uifabric/styling.@uifabric/styling/lib/interfaces/ISemanticColors.ISemanticColors */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ js.Any,
     direction: horizontal,
     width: Double,
     height: String
@@ -169,7 +169,7 @@ object getFadedOverflowStyleMod extends js.Object {
   @JSName("getFadedOverflowStyle")
   def getFadedOverflowStyle_horizontal(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 89 */ js.Any,
+    color: /* keyof @uifabric/styling.@uifabric/styling/lib/interfaces/ISemanticColors.ISemanticColors */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ js.Any,
     direction: horizontal,
     width: Double,
     height: Double
@@ -190,7 +190,7 @@ object getFadedOverflowStyleMod extends js.Object {
   @JSName("getFadedOverflowStyle")
   def getFadedOverflowStyle_vertical(
     theme: ITheme,
-    color: themeDarker | themeDark | themeDarkAlt | themePrimary | themeSecondary | themeTertiary | themeLight | themeLighter | themeLighterAlt | black | blackTranslucent40 | neutralDark | neutralPrimary | neutralPrimaryAlt | neutralSecondary | neutralSecondaryAlt | neutralTertiary | neutralTertiaryAlt | neutralQuaternary | neutralQuaternaryAlt | neutralLight | neutralLighter | neutralLighterAlt | accent | white | whiteTranslucent40 | yellowDark | yellow | yellowLight | orange | orangeLight | orangeLighter | redDark | red | magentaDark | magenta | magentaLight | purpleDark | purple | purpleLight | blueDark | blueMid | blue | blueLight | tealDark | teal | tealLight | greenDark | green | greenLight,
+    color: /* keyof @uifabric/styling.@uifabric/styling/lib/interfaces/IPalette.IPalette */ themeDarker | themeDark | themeDarkAlt | themePrimary | themeSecondary | themeTertiary | themeLight | themeLighter | themeLighterAlt | black | blackTranslucent40 | neutralDark | neutralPrimary | neutralPrimaryAlt | neutralSecondary | neutralSecondaryAlt | neutralTertiary | neutralTertiaryAlt | neutralQuaternary | neutralQuaternaryAlt | neutralLight | neutralLighter | neutralLighterAlt | accent | white | whiteTranslucent40 | yellowDark | yellow | yellowLight | orange | orangeLight | orangeLighter | redDark | red | magentaDark | magenta | magentaLight | purpleDark | purple | purpleLight | blueDark | blueMid | blue | blueLight | tealDark | teal | tealLight | greenDark | green | greenLight,
     direction: vertical,
     width: String,
     height: String
@@ -198,7 +198,7 @@ object getFadedOverflowStyleMod extends js.Object {
   @JSName("getFadedOverflowStyle")
   def getFadedOverflowStyle_vertical(
     theme: ITheme,
-    color: themeDarker | themeDark | themeDarkAlt | themePrimary | themeSecondary | themeTertiary | themeLight | themeLighter | themeLighterAlt | black | blackTranslucent40 | neutralDark | neutralPrimary | neutralPrimaryAlt | neutralSecondary | neutralSecondaryAlt | neutralTertiary | neutralTertiaryAlt | neutralQuaternary | neutralQuaternaryAlt | neutralLight | neutralLighter | neutralLighterAlt | accent | white | whiteTranslucent40 | yellowDark | yellow | yellowLight | orange | orangeLight | orangeLighter | redDark | red | magentaDark | magenta | magentaLight | purpleDark | purple | purpleLight | blueDark | blueMid | blue | blueLight | tealDark | teal | tealLight | greenDark | green | greenLight,
+    color: /* keyof @uifabric/styling.@uifabric/styling/lib/interfaces/IPalette.IPalette */ themeDarker | themeDark | themeDarkAlt | themePrimary | themeSecondary | themeTertiary | themeLight | themeLighter | themeLighterAlt | black | blackTranslucent40 | neutralDark | neutralPrimary | neutralPrimaryAlt | neutralSecondary | neutralSecondaryAlt | neutralTertiary | neutralTertiaryAlt | neutralQuaternary | neutralQuaternaryAlt | neutralLight | neutralLighter | neutralLighterAlt | accent | white | whiteTranslucent40 | yellowDark | yellow | yellowLight | orange | orangeLight | orangeLighter | redDark | red | magentaDark | magenta | magentaLight | purpleDark | purple | purpleLight | blueDark | blueMid | blue | blueLight | tealDark | teal | tealLight | greenDark | green | greenLight,
     direction: vertical,
     width: String,
     height: Double
@@ -213,7 +213,7 @@ object getFadedOverflowStyleMod extends js.Object {
   @JSName("getFadedOverflowStyle")
   def getFadedOverflowStyle_vertical(
     theme: ITheme,
-    color: themeDarker | themeDark | themeDarkAlt | themePrimary | themeSecondary | themeTertiary | themeLight | themeLighter | themeLighterAlt | black | blackTranslucent40 | neutralDark | neutralPrimary | neutralPrimaryAlt | neutralSecondary | neutralSecondaryAlt | neutralTertiary | neutralTertiaryAlt | neutralQuaternary | neutralQuaternaryAlt | neutralLight | neutralLighter | neutralLighterAlt | accent | white | whiteTranslucent40 | yellowDark | yellow | yellowLight | orange | orangeLight | orangeLighter | redDark | red | magentaDark | magenta | magentaLight | purpleDark | purple | purpleLight | blueDark | blueMid | blue | blueLight | tealDark | teal | tealLight | greenDark | green | greenLight,
+    color: /* keyof @uifabric/styling.@uifabric/styling/lib/interfaces/IPalette.IPalette */ themeDarker | themeDark | themeDarkAlt | themePrimary | themeSecondary | themeTertiary | themeLight | themeLighter | themeLighterAlt | black | blackTranslucent40 | neutralDark | neutralPrimary | neutralPrimaryAlt | neutralSecondary | neutralSecondaryAlt | neutralTertiary | neutralTertiaryAlt | neutralQuaternary | neutralQuaternaryAlt | neutralLight | neutralLighter | neutralLighterAlt | accent | white | whiteTranslucent40 | yellowDark | yellow | yellowLight | orange | orangeLight | orangeLighter | redDark | red | magentaDark | magenta | magentaLight | purpleDark | purple | purpleLight | blueDark | blueMid | blue | blueLight | tealDark | teal | tealLight | greenDark | green | greenLight,
     direction: vertical,
     width: Double,
     height: String
@@ -221,7 +221,7 @@ object getFadedOverflowStyleMod extends js.Object {
   @JSName("getFadedOverflowStyle")
   def getFadedOverflowStyle_vertical(
     theme: ITheme,
-    color: themeDarker | themeDark | themeDarkAlt | themePrimary | themeSecondary | themeTertiary | themeLight | themeLighter | themeLighterAlt | black | blackTranslucent40 | neutralDark | neutralPrimary | neutralPrimaryAlt | neutralSecondary | neutralSecondaryAlt | neutralTertiary | neutralTertiaryAlt | neutralQuaternary | neutralQuaternaryAlt | neutralLight | neutralLighter | neutralLighterAlt | accent | white | whiteTranslucent40 | yellowDark | yellow | yellowLight | orange | orangeLight | orangeLighter | redDark | red | magentaDark | magenta | magentaLight | purpleDark | purple | purpleLight | blueDark | blueMid | blue | blueLight | tealDark | teal | tealLight | greenDark | green | greenLight,
+    color: /* keyof @uifabric/styling.@uifabric/styling/lib/interfaces/IPalette.IPalette */ themeDarker | themeDark | themeDarkAlt | themePrimary | themeSecondary | themeTertiary | themeLight | themeLighter | themeLighterAlt | black | blackTranslucent40 | neutralDark | neutralPrimary | neutralPrimaryAlt | neutralSecondary | neutralSecondaryAlt | neutralTertiary | neutralTertiaryAlt | neutralQuaternary | neutralQuaternaryAlt | neutralLight | neutralLighter | neutralLighterAlt | accent | white | whiteTranslucent40 | yellowDark | yellow | yellowLight | orange | orangeLight | orangeLighter | redDark | red | magentaDark | magenta | magentaLight | purpleDark | purple | purpleLight | blueDark | blueMid | blue | blueLight | tealDark | teal | tealLight | greenDark | green | greenLight,
     direction: vertical,
     width: Double,
     height: Double
@@ -229,20 +229,20 @@ object getFadedOverflowStyleMod extends js.Object {
   @JSName("getFadedOverflowStyle")
   def getFadedOverflowStyle_vertical(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 89 */ js.Any,
+    color: /* keyof @uifabric/styling.@uifabric/styling/lib/interfaces/ISemanticColors.ISemanticColors */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ js.Any,
     direction: vertical
   ): IRawStyle = js.native
   @JSName("getFadedOverflowStyle")
   def getFadedOverflowStyle_vertical(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 89 */ js.Any,
+    color: /* keyof @uifabric/styling.@uifabric/styling/lib/interfaces/ISemanticColors.ISemanticColors */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ js.Any,
     direction: vertical,
     width: String
   ): IRawStyle = js.native
   @JSName("getFadedOverflowStyle")
   def getFadedOverflowStyle_vertical(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 89 */ js.Any,
+    color: /* keyof @uifabric/styling.@uifabric/styling/lib/interfaces/ISemanticColors.ISemanticColors */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ js.Any,
     direction: vertical,
     width: String,
     height: String
@@ -250,7 +250,7 @@ object getFadedOverflowStyleMod extends js.Object {
   @JSName("getFadedOverflowStyle")
   def getFadedOverflowStyle_vertical(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 89 */ js.Any,
+    color: /* keyof @uifabric/styling.@uifabric/styling/lib/interfaces/ISemanticColors.ISemanticColors */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ js.Any,
     direction: vertical,
     width: String,
     height: Double
@@ -258,14 +258,14 @@ object getFadedOverflowStyleMod extends js.Object {
   @JSName("getFadedOverflowStyle")
   def getFadedOverflowStyle_vertical(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 89 */ js.Any,
+    color: /* keyof @uifabric/styling.@uifabric/styling/lib/interfaces/ISemanticColors.ISemanticColors */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ js.Any,
     direction: vertical,
     width: Double
   ): IRawStyle = js.native
   @JSName("getFadedOverflowStyle")
   def getFadedOverflowStyle_vertical(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 89 */ js.Any,
+    color: /* keyof @uifabric/styling.@uifabric/styling/lib/interfaces/ISemanticColors.ISemanticColors */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ js.Any,
     direction: vertical,
     width: Double,
     height: String
@@ -273,7 +273,7 @@ object getFadedOverflowStyleMod extends js.Object {
   @JSName("getFadedOverflowStyle")
   def getFadedOverflowStyle_vertical(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 89 */ js.Any,
+    color: /* keyof @uifabric/styling.@uifabric/styling/lib/interfaces/ISemanticColors.ISemanticColors */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ js.Any,
     direction: vertical,
     width: Double,
     height: Double

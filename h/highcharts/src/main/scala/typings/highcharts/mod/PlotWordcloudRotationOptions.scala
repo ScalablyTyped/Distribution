@@ -23,11 +23,15 @@ trait PlotWordcloudRotationOptions extends js.Object {
 
 object PlotWordcloudRotationOptions {
   @scala.inline
-  def apply(from: Int | Double = null, orientations: Int | Double = null, to: Int | Double = null): PlotWordcloudRotationOptions = {
+  def apply(
+    from: js.UndefOr[Double] = js.undefined,
+    orientations: js.UndefOr[Double] = js.undefined,
+    to: js.UndefOr[Double] = js.undefined
+  ): PlotWordcloudRotationOptions = {
     val __obj = js.Dynamic.literal()
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (orientations != null) __obj.updateDynamic("orientations")(orientations.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(orientations)) __obj.updateDynamic("orientations")(orientations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(to)) __obj.updateDynamic("to")(to.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotWordcloudRotationOptions]
   }
 }

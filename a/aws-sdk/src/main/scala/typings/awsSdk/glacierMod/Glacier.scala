@@ -1,6 +1,6 @@
 package typings.awsSdk.glacierMod
 
-import typings.awsSdk.DescribeVaultInputwaiterW
+import typings.awsSdk.anon.DescribeVaultInputwaiterW
 import typings.awsSdk.awsSdkStrings.vaultExists
 import typings.awsSdk.awsSdkStrings.vaultNotExists
 import typings.awsSdk.configMod.ConfigBase

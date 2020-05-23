@@ -5,11 +5,11 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactElement
 import typings.react.mod.TouchEvent
-import typings.react.mod._Global_.JSX.Element
-import typings.reactSortablePane.AnonChildren
-import typings.reactSortablePane.AnonNext
-import typings.reactSortablePane.AnonPageX
-import typings.resizeObserverPolyfill.mod._Global_.ResizeObserver
+import typings.react.mod.global.JSX.Element
+import typings.reactSortablePane.anon.Children
+import typings.reactSortablePane.anon.Next
+import typings.reactSortablePane.anon.PageX
+import typings.resizeObserverPolyfill.mod.global.ResizeObserver
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -68,12 +68,12 @@ class SortablePane protected ()
     * @return {object}               - Object containing 'previous' and 'next'
     *                                  pane halfway points
     */
-  def getSurroundingHalfSizes(currentPane: Double, sizes: js.Array[Double], margin: Double): AnonNext = js.native
+  def getSurroundingHalfSizes(currentPane: Double, sizes: js.Array[Double], margin: Double): Next = js.native
   def handleMouseDown(pos: Double, pressX: Double, pressY: Double, e: MouseEvent[HTMLElement, NativeMouseEvent]): Unit = js.native
   def handleMouseDown(pos: Double, pressX: Double, pressY: Double, e: TouchEvent[HTMLElement]): Unit = js.native
   def handleMouseUp(e: typings.std.MouseEvent): Unit = js.native
   def handleMouseUp(e: typings.std.TouchEvent): Unit = js.native
-  def handleMove(hasPageXPageY: AnonPageX): Unit = js.native
+  def handleMove(hasPageXPageY: PageX): Unit = js.native
   def handleResizeStart(
     i: Double,
     e: MouseEvent[HTMLElement, NativeMouseEvent],
@@ -123,6 +123,6 @@ class SortablePane protected ()
 @JSImport("react-sortable-pane", "SortablePane")
 @js.native
 object SortablePane extends js.Object {
-  var defaultProps: AnonChildren = js.native
+  var defaultProps: Children = js.native
 }
 

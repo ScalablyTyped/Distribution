@@ -5,28 +5,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Options used when opening a lookup dialog.
-		 */
+  * Options used when opening a lookup dialog.
+  */
 trait LookupOptions extends js.Object {
   /**
-  			 * Whether the lookup allows more than one item to be selected.
-  			 */
+    * Whether the lookup allows more than one item to be selected.
+    */
   var allowMultiSelect: Boolean
   /**
-  			 * The default entity type.
-  			 */
+    * The default entity type.
+    */
   var defaultEntityType: String
   /**
-  			 * The default view to use.
-  			 */
+    * The default view to use.
+    */
   var defaultViewId: String
   /**
-  			 * The entity types to display.
-  			 */
+    * The entity types to display.
+    */
   var entityTypes: js.Array[String]
   /**
-  			 * The views to be available in the view picker. Only System views are supported (not user views).
-  			 */
+    * The views to be available in the view picker. Only System views are supported (not user views).
+    */
   var viewIds: js.Array[String]
 }
 

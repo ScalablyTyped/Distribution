@@ -1,11 +1,11 @@
 package typings.cometd.mod
 
-import typings.cometd.AnonHosts
+import typings.cometd.anon.Hosts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.cometd.mod.Message because Already inherited */ trait SubscribeMessage extends BaseMessage {
   var subscription: String
 }
@@ -16,7 +16,7 @@ object SubscribeMessage {
     channel: String,
     subscription: String,
     successful: Boolean,
-    advice: AnonHosts = null,
+    advice: Hosts = null,
     clientId: String = null,
     connectionType: ConnectionType = null,
     data: js.Any = null,

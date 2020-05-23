@@ -1,5 +1,6 @@
 package typings.pullStream
 
+import typings.pullStream.anon.Last
 import typings.pullStream.mod.Source
 import typings.pullStream.mod.Through_
 import typings.std.Error
@@ -52,7 +53,7 @@ object throughsMod extends js.Object {
   object take extends js.Object {
     def apply[InOut](n: Double): Through_[InOut, InOut] = js.native
     def apply[InOut](testFn: js.Function1[/* data */ InOut, Boolean]): Through_[InOut, InOut] = js.native
-    def apply[InOut](testFn: js.Function1[/* data */ InOut, Boolean], opts: AnonLast): Through_[InOut, InOut] = js.native
+    def apply[InOut](testFn: js.Function1[/* data */ InOut, Boolean], opts: Last): Through_[InOut, InOut] = js.native
   }
   
   @js.native

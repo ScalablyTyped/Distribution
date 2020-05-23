@@ -1,7 +1,7 @@
 package typings.babelTraverse.mod
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.babelTraverse.AnonConfident
+import typings.babelTraverse.anon.Confident
 import typings.babelTypes.mod.FlowTypeAnnotation
 import typings.babelTypes.mod.Function
 import typings.babelTypes.mod.Statement
@@ -425,7 +425,7 @@ class NodePath[T] protected () extends js.Object {
     *   t.evaluate(parse("!true")) // { confident: true, value: false }
     *   t.evaluate(parse("foo + foo")) // { confident: false, value: undefined }
     */
-  def evaluate(): AnonConfident = js.native
+  def evaluate(): Confident = js.native
   // ------------------------- evaluation -------------------------
   /**
     * Walk the input `node` and statically evaluate if it's truthy.

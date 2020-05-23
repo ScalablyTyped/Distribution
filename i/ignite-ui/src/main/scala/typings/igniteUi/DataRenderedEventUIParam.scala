@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait DataRenderedEventUIParam extends js.Object {
   /**
-  	 * Gets a reference to the grid.
-  	 */
+    * Gets a reference to the grid.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 

@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.TableRowData
 import typings.officeJsPreview.Excel.Interfaces.TableRowLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.TableRowUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,6 @@ import scala.scalajs.js.annotation._
 /**
   *
   * Represents a row in a table.
-  
   Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
   a TableRow object represent the physical location of the table row, but not the data.
   That is, if the data is sorted or if new rows are added, a table row will continue
@@ -21,15 +20,14 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
-@JSGlobal("Excel.TableRow")
 @js.native
-class TableRow () extends ClientObject {
+trait TableRow extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_TableRow: RequestContext = js.native
   /**
     *
-    * Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.
+    * Returns the index number of the row within the rows collection of the table. Zero-indexed.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -60,7 +58,7 @@ class TableRow () extends ClientObject {
     */
   def load(): TableRow = js.native
   def load(options: TableRowLoadOptions): TableRow = js.native
-  def load(propertyNamesAndPaths: AnonExpand): TableRow = js.native
+  def load(propertyNamesAndPaths: Expand): TableRow = js.native
   def load(propertyNames: String): TableRow = js.native
   def load(propertyNames: js.Array[String]): TableRow = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.

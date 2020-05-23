@@ -25,7 +25,7 @@ object Options {
     replaceInExtensions: js.Array[String] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canonicalUris)) __obj.updateDynamic("canonicalUris")(canonicalUris.asInstanceOf[js.Any])
+    if (!js.isUndefined(canonicalUris)) __obj.updateDynamic("canonicalUris")(canonicalUris.get.asInstanceOf[js.Any])
     if (manifest != null) __obj.updateDynamic("manifest")(manifest.asInstanceOf[js.Any])
     if (modifyReved != null) __obj.updateDynamic("modifyReved")(modifyReved.asInstanceOf[js.Any])
     if (modifyUnreved != null) __obj.updateDynamic("modifyUnreved")(modifyUnreved.asInstanceOf[js.Any])

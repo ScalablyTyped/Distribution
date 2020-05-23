@@ -98,22 +98,22 @@ object DistributionOrderedCacheBehavior {
     targetOriginId: String,
     viewerProtocolPolicy: String,
     compress: js.UndefOr[Boolean] = js.undefined,
-    defaultTtl: Int | Double = null,
+    defaultTtl: js.UndefOr[Double] = js.undefined,
     fieldLevelEncryptionId: String = null,
     lambdaFunctionAssociations: js.Array[DistributionOrderedCacheBehaviorLambdaFunctionAssociation] = null,
-    maxTtl: Int | Double = null,
-    minTtl: Int | Double = null,
+    maxTtl: js.UndefOr[Double] = js.undefined,
+    minTtl: js.UndefOr[Double] = js.undefined,
     smoothStreaming: js.UndefOr[Boolean] = js.undefined,
     trustedSigners: js.Array[String] = null
   ): DistributionOrderedCacheBehavior = {
     val __obj = js.Dynamic.literal(allowedMethods = allowedMethods.asInstanceOf[js.Any], cachedMethods = cachedMethods.asInstanceOf[js.Any], forwardedValues = forwardedValues.asInstanceOf[js.Any], pathPattern = pathPattern.asInstanceOf[js.Any], targetOriginId = targetOriginId.asInstanceOf[js.Any], viewerProtocolPolicy = viewerProtocolPolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
-    if (defaultTtl != null) __obj.updateDynamic("defaultTtl")(defaultTtl.asInstanceOf[js.Any])
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultTtl)) __obj.updateDynamic("defaultTtl")(defaultTtl.get.asInstanceOf[js.Any])
     if (fieldLevelEncryptionId != null) __obj.updateDynamic("fieldLevelEncryptionId")(fieldLevelEncryptionId.asInstanceOf[js.Any])
     if (lambdaFunctionAssociations != null) __obj.updateDynamic("lambdaFunctionAssociations")(lambdaFunctionAssociations.asInstanceOf[js.Any])
-    if (maxTtl != null) __obj.updateDynamic("maxTtl")(maxTtl.asInstanceOf[js.Any])
-    if (minTtl != null) __obj.updateDynamic("minTtl")(minTtl.asInstanceOf[js.Any])
-    if (!js.isUndefined(smoothStreaming)) __obj.updateDynamic("smoothStreaming")(smoothStreaming.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTtl)) __obj.updateDynamic("maxTtl")(maxTtl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minTtl)) __obj.updateDynamic("minTtl")(minTtl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(smoothStreaming)) __obj.updateDynamic("smoothStreaming")(smoothStreaming.get.asInstanceOf[js.Any])
     if (trustedSigners != null) __obj.updateDynamic("trustedSigners")(trustedSigners.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionOrderedCacheBehavior]
   }

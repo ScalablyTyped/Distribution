@@ -23,12 +23,12 @@ object BTreeIndexField {
   def apply(
     path: String,
     datatype: String = null,
-    maxlength: Int | Double = null,
+    maxlength: js.UndefOr[Double] = js.undefined,
     order: String | Double = null
   ): BTreeIndexField = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
-    if (maxlength != null) __obj.updateDynamic("maxlength")(maxlength.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxlength)) __obj.updateDynamic("maxlength")(maxlength.get.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[BTreeIndexField]
   }

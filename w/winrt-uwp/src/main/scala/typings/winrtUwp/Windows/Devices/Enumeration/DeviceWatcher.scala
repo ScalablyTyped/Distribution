@@ -15,9 +15,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Enumerates devices dynamically, so that the app receives notifications if devices are added, removed, or changed after the initial enumeration is complete. */
-@JSGlobal("Windows.Devices.Enumeration.DeviceWatcher")
 @js.native
-abstract class DeviceWatcher () extends js.Object {
+trait DeviceWatcher extends js.Object {
   /** Event that is raised when a device is added to the collection enumerated by the DeviceWatcher . */
   @JSName("onadded")
   var onadded_Original: TypedEventHandler[DeviceWatcher, DeviceInformation] = js.native

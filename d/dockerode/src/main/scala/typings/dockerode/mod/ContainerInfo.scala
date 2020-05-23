@@ -1,9 +1,9 @@
 package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.dockerode.AnonDestination
-import typings.dockerode.AnonNetworkMode
-import typings.dockerode.AnonNetworks
+import typings.dockerode.anon.Destination
+import typings.dockerode.anon.NetworkMode
+import typings.dockerode.anon.Networks
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,14 +11,14 @@ import scala.scalajs.js.annotation._
 trait ContainerInfo extends js.Object {
   var Command: String
   var Created: Double
-  var HostConfig: AnonNetworkMode
+  var HostConfig: NetworkMode
   var Id: String
   var Image: String
   var ImageID: String
   var Labels: StringDictionary[String]
-  var Mounts: js.Array[AnonDestination]
+  var Mounts: js.Array[Destination]
   var Names: js.Array[String]
-  var NetworkSettings: AnonNetworks
+  var NetworkSettings: Networks
   var Ports: js.Array[Port]
   var State: String
   var Status: String
@@ -29,14 +29,14 @@ object ContainerInfo {
   def apply(
     Command: String,
     Created: Double,
-    HostConfig: AnonNetworkMode,
+    HostConfig: NetworkMode,
     Id: String,
     Image: String,
     ImageID: String,
     Labels: StringDictionary[String],
-    Mounts: js.Array[AnonDestination],
+    Mounts: js.Array[Destination],
     Names: js.Array[String],
-    NetworkSettings: AnonNetworks,
+    NetworkSettings: Networks,
     Ports: js.Array[Port],
     State: String,
     Status: String

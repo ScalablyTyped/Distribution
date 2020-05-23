@@ -16,7 +16,7 @@ object Options {
   @scala.inline
   def apply(combine: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(combine)) __obj.updateDynamic("combine")(combine.asInstanceOf[js.Any])
+    if (!js.isUndefined(combine)) __obj.updateDynamic("combine")(combine.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

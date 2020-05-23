@@ -1,16 +1,16 @@
 package typings.dompurify.mod
 
-import typings.dompurify.ConfigRETURNDOMFRAGMENTfa
-import typings.dompurify.ConfigRETURNDOMFRAGMENTtr
-import typings.dompurify.ConfigRETURNDOMtrue
-import typings.dompurify.ConfigRETURNTRUSTEDTYPEtr
+import typings.dompurify.anon.ConfigRETURNDOMFRAGMENTfa
+import typings.dompurify.anon.ConfigRETURNDOMFRAGMENTtr
+import typings.dompurify.anon.ConfigRETURNDOMtrue
+import typings.dompurify.anon.ConfigRETURNTRUSTEDTYPEtr
 import typings.dompurify.dompurifyStrings.uponSanitizeAttribute
 import typings.dompurify.dompurifyStrings.uponSanitizeElement
 import typings.std.DocumentFragment
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.Node
-import typings.trustedTypes.mod._Global_.TrustedHTML
+import typings.trustedTypes.mod.global.TrustedHTML
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

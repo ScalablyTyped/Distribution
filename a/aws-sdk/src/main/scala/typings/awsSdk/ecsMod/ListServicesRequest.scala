@@ -33,14 +33,14 @@ object ListServicesRequest {
   def apply(
     cluster: String = null,
     launchType: LaunchType = null,
-    maxResults: Int | scala.Double = null,
+    maxResults: js.UndefOr[BoxedInteger] = js.undefined,
     nextToken: String = null,
     schedulingStrategy: SchedulingStrategy = null
   ): ListServicesRequest = {
     val __obj = js.Dynamic.literal()
     if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
     if (launchType != null) __obj.updateDynamic("launchType")(launchType.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (schedulingStrategy != null) __obj.updateDynamic("schedulingStrategy")(schedulingStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListServicesRequest]

@@ -1,8 +1,8 @@
 package typings.gapiClientPeople.gapi.client.people
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientPeople.AnonAccesstoken
-import typings.gapiClientPeople.AnonAlt
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientPeople.anon.Accesstoken
+import typings.gapiClientPeople.anon.Alt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait MembersResource extends js.Object {
     * `contactGroups/myContacts` and `contactGroups/starred`. Other system
     * contact groups are deprecated and can only have contacts removed.
     */
-  def modify(request: AnonAccesstoken): Request_[ModifyContactGroupMembersResponse] = js.native
-  def modify(request: AnonAlt, body: ModifyContactGroupMembersRequest): Request_[ModifyContactGroupMembersResponse] = js.native
+  def modify(request: Accesstoken): Request[ModifyContactGroupMembersResponse] = js.native
+  def modify(request: Alt, body: ModifyContactGroupMembersRequest): Request[ModifyContactGroupMembersResponse] = js.native
 }
 

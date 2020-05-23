@@ -1,7 +1,7 @@
 package typings.jupyterlabStatusbar.mod
 
 import typings.jupyterlabStatusbar.progressBarMod.ProgressBar.IProps
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

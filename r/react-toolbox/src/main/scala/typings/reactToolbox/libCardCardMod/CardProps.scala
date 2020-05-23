@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait CardProps
   extends Props
      with /**
-  * Additional properties passed to component root.
+  * Additional properties for component root element.
   */
 /* key */ StringDictionary[js.Any] {
   /**
@@ -34,7 +34,7 @@ object CardProps {
   @scala.inline
   def apply(
     StringDictionary: /**
-    * Additional properties passed to component root.
+    * Additional properties for component root element.
     */
   /* key */ StringDictionary[js.Any] = null,
     children: ReactNode = null,
@@ -93,7 +93,7 @@ object CardProps {
     if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd.asInstanceOf[js.Any])
     if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove.asInstanceOf[js.Any])
     if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart.asInstanceOf[js.Any])
-    if (!js.isUndefined(raised)) __obj.updateDynamic("raised")(raised.asInstanceOf[js.Any])
+    if (!js.isUndefined(raised)) __obj.updateDynamic("raised")(raised.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardProps]

@@ -14,10 +14,10 @@ trait IClientBlockGetResponse extends js.Object {
 
 object IClientBlockGetResponse {
   @scala.inline
-  def apply(block: IBlock = null, status: Status = null): IClientBlockGetResponse = {
+  def apply(block: js.UndefOr[Null | IBlock] = js.undefined, status: js.UndefOr[Null | Status] = js.undefined): IClientBlockGetResponse = {
     val __obj = js.Dynamic.literal()
-    if (block != null) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientBlockGetResponse]
   }
 }

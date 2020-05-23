@@ -47,7 +47,7 @@ trait PlusStorage extends js.Object {
   /**
     * 修改或添加键值(key-value)对数据到应用数据存储中
     * 如果设置的键在应用数据存储中已经存在，更新存储的键值。
-    * 	存储的键和值没有容量限制，但过多的数据量会导致效率降低，建议单个键值数据不要超过10Kb。
+    *     存储的键和值没有容量限制，但过多的数据量会导致效率降低，建议单个键值数据不要超过10Kb。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/storage.html](http://www.html5plus.org/doc/zh_cn/storage.html)
     */

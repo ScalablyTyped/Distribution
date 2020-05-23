@@ -1,12 +1,12 @@
 package typings.winrt.Windows.Foundation
 
-import typings.winrt.AnonCompleted
+import typings.winrt.anon.Completed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait IAsyncOperationWithProgress[TResult, TProgress] extends IPromise[TResult] {
-  var operation: AnonCompleted[TResult, TProgress] = js.native
+  var operation: Completed[TResult, TProgress] = js.native
 }
 

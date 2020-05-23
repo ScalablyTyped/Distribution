@@ -18,9 +18,9 @@ object EChartsOptionConfig {
     silent: js.UndefOr[Boolean] = js.undefined
   ): EChartsOptionConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(lazyUpdate)) __obj.updateDynamic("lazyUpdate")(lazyUpdate.asInstanceOf[js.Any])
-    if (!js.isUndefined(notMerge)) __obj.updateDynamic("notMerge")(notMerge.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(lazyUpdate)) __obj.updateDynamic("lazyUpdate")(lazyUpdate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(notMerge)) __obj.updateDynamic("notMerge")(notMerge.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EChartsOptionConfig]
   }
 }

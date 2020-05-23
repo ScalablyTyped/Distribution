@@ -22,16 +22,16 @@ object TxbSignArg {
     keyPair: Signer,
     prevOutScriptType: String,
     vin: Double,
-    hashType: Int | Double = null,
+    hashType: js.UndefOr[Double] = js.undefined,
     redeemScript: Buffer = null,
     witnessScript: Buffer = null,
-    witnessValue: Int | Double = null
+    witnessValue: js.UndefOr[Double] = js.undefined
   ): TxbSignArg = {
     val __obj = js.Dynamic.literal(keyPair = keyPair.asInstanceOf[js.Any], prevOutScriptType = prevOutScriptType.asInstanceOf[js.Any], vin = vin.asInstanceOf[js.Any])
-    if (hashType != null) __obj.updateDynamic("hashType")(hashType.asInstanceOf[js.Any])
+    if (!js.isUndefined(hashType)) __obj.updateDynamic("hashType")(hashType.get.asInstanceOf[js.Any])
     if (redeemScript != null) __obj.updateDynamic("redeemScript")(redeemScript.asInstanceOf[js.Any])
     if (witnessScript != null) __obj.updateDynamic("witnessScript")(witnessScript.asInstanceOf[js.Any])
-    if (witnessValue != null) __obj.updateDynamic("witnessValue")(witnessValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(witnessValue)) __obj.updateDynamic("witnessValue")(witnessValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TxbSignArg]
   }
 }

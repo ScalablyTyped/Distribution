@@ -42,7 +42,7 @@ trait TraitsRecord extends js.Object {
 object TraitsRecord {
   @scala.inline
   def apply(
-    autonomous_system_number: Int | Double = null,
+    autonomous_system_number: js.UndefOr[Double] = js.undefined,
     autonomous_system_organization: String = null,
     domain: String = null,
     ip_address: String = null,
@@ -59,18 +59,18 @@ object TraitsRecord {
     user_type: business | cafe | cellular | college | content_delivery_network | dialup | government | hosting | library | military | residential | router | school | search_engine_spider | traveler = null
   ): TraitsRecord = {
     val __obj = js.Dynamic.literal()
-    if (autonomous_system_number != null) __obj.updateDynamic("autonomous_system_number")(autonomous_system_number.asInstanceOf[js.Any])
+    if (!js.isUndefined(autonomous_system_number)) __obj.updateDynamic("autonomous_system_number")(autonomous_system_number.get.asInstanceOf[js.Any])
     if (autonomous_system_organization != null) __obj.updateDynamic("autonomous_system_organization")(autonomous_system_organization.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (ip_address != null) __obj.updateDynamic("ip_address")(ip_address.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_anonymous)) __obj.updateDynamic("is_anonymous")(is_anonymous.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_anonymous_proxy)) __obj.updateDynamic("is_anonymous_proxy")(is_anonymous_proxy.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_anonymous_vpn)) __obj.updateDynamic("is_anonymous_vpn")(is_anonymous_vpn.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_hosting_provider)) __obj.updateDynamic("is_hosting_provider")(is_hosting_provider.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_legitimate_proxy)) __obj.updateDynamic("is_legitimate_proxy")(is_legitimate_proxy.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_public_proxy)) __obj.updateDynamic("is_public_proxy")(is_public_proxy.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_satellite_provider)) __obj.updateDynamic("is_satellite_provider")(is_satellite_provider.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_tor_exit_node)) __obj.updateDynamic("is_tor_exit_node")(is_tor_exit_node.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_anonymous)) __obj.updateDynamic("is_anonymous")(is_anonymous.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_anonymous_proxy)) __obj.updateDynamic("is_anonymous_proxy")(is_anonymous_proxy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_anonymous_vpn)) __obj.updateDynamic("is_anonymous_vpn")(is_anonymous_vpn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_hosting_provider)) __obj.updateDynamic("is_hosting_provider")(is_hosting_provider.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_legitimate_proxy)) __obj.updateDynamic("is_legitimate_proxy")(is_legitimate_proxy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_public_proxy)) __obj.updateDynamic("is_public_proxy")(is_public_proxy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_satellite_provider)) __obj.updateDynamic("is_satellite_provider")(is_satellite_provider.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_tor_exit_node)) __obj.updateDynamic("is_tor_exit_node")(is_tor_exit_node.get.asInstanceOf[js.Any])
     if (isp != null) __obj.updateDynamic("isp")(isp.asInstanceOf[js.Any])
     if (organization != null) __obj.updateDynamic("organization")(organization.asInstanceOf[js.Any])
     if (user_type != null) __obj.updateDynamic("user_type")(user_type.asInstanceOf[js.Any])

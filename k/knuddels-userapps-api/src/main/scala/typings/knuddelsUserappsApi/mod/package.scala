@@ -10,17 +10,17 @@ package object mod {
     - scala.Double
     - scala.Boolean
     - typings.std.Date
-    - typings.knuddelsUserappsApi.mod._Global_.Json
-    - typings.knuddelsUserappsApi.mod._Global_.JsonArray
-    - `js.undefined`
+    - typings.knuddelsUserappsApi.mod.global.Json
+    - typings.knuddelsUserappsApi.mod.global.JsonArray
+    - js.UndefOr[scala.Nothing]
   */
   type JsonData = js.UndefOr[
     typings.knuddelsUserappsApi.mod._JsonData | java.lang.String | scala.Double | scala.Boolean | typings.std.Date
   ]
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
-    - typings.knuddelsUserappsApi.mod._Global_.Json
-    - typings.knuddelsUserappsApi.mod._Global_.KnuddelsEventArray
+    - typings.knuddelsUserappsApi.mod.global.Json
+    - typings.knuddelsUserappsApi.mod.global.KnuddelsEventArray
   */
   type KnuddelsEvent = typings.knuddelsUserappsApi.mod._KnuddelsEvent | java.lang.String
   /* Rewritten from type alias, can be one of: 
@@ -28,10 +28,10 @@ package object mod {
     - scala.Double
     - scala.Boolean
     - typings.std.Date
-    - typings.knuddelsUserappsApi.mod._Global_.KnuddelsJson
-    - typings.knuddelsUserappsApi.mod._Global_.KnuddelsJsonArray
+    - typings.knuddelsUserappsApi.mod.global.KnuddelsJson
+    - typings.knuddelsUserappsApi.mod.global.KnuddelsJsonArray
     - typings.knuddelsUserappsApi.mod.KnuddelsSerializable
-    - `js.undefined`
+    - js.UndefOr[scala.Nothing]
   */
   type KnuddelsJsonData = js.UndefOr[
     typings.knuddelsUserappsApi.mod._KnuddelsJsonData | java.lang.String | scala.Double | scala.Boolean | typings.std.Date
@@ -40,9 +40,9 @@ package object mod {
     - java.lang.String
     - scala.Double
     - scala.Boolean
-    - typings.knuddelsUserappsApi.mod._Global_.User
-    - typings.knuddelsUserappsApi.mod._Global_.BotUser
-    - `js.undefined`
+    - typings.knuddelsUserappsApi.mod.global.User
+    - typings.knuddelsUserappsApi.mod.global.BotUser
+    - js.UndefOr[scala.Nothing]
   */
   type KnuddelsSerializable = js.UndefOr[
     typings.knuddelsUserappsApi.mod._KnuddelsSerializable | java.lang.String | scala.Double | scala.Boolean

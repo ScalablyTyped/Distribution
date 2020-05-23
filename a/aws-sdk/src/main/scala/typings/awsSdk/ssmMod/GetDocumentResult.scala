@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetDocumentResult extends js.Object {
   /**
-    * A description of the document attachments, including names, locations, sizes, etc.
+    * A description of the document attachments, including names, locations, sizes, and so on.
     */
   var AttachmentsContent: js.UndefOr[AttachmentContentList] = js.native
   /**

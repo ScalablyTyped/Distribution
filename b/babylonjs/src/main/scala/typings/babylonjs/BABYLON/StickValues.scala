@@ -4,31 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.StickValues")
-@js.native
-class StickValues protected () extends js.Object {
-  /**
-    * Initializes the gamepad x and y control stick values
-    * @param x The x component of the gamepad control stick value
-    * @param y The y component of the gamepad control stick value
-    */
-  def this(
-    /**
-    * The x component of the control stick
-    */
-  x: Double,
-    /**
-    * The y component of the control stick
-    */
-  y: Double
-  ) = this()
+trait StickValues extends js.Object {
   /**
     * The x component of the control stick
     */
-  var x: Double = js.native
+  var x: Double
   /**
     * The y component of the control stick
     */
-  var y: Double = js.native
+  var y: Double
+}
+
+object StickValues {
+  @scala.inline
+  def apply(x: Double, y: Double): StickValues = {
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StickValues]
+  }
 }
 

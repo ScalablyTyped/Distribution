@@ -15,11 +15,15 @@ trait MaskOptions extends js.Object {
 
 object MaskOptions {
   @scala.inline
-  def apply(color: String = null, loadSpeed: Int | Double = null, opacity: Int | Double = null): MaskOptions = {
+  def apply(
+    color: String = null,
+    loadSpeed: js.UndefOr[Double] = js.undefined,
+    opacity: js.UndefOr[Double] = js.undefined
+  ): MaskOptions = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (loadSpeed != null) __obj.updateDynamic("loadSpeed")(loadSpeed.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(loadSpeed)) __obj.updateDynamic("loadSpeed")(loadSpeed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaskOptions]
   }
 }

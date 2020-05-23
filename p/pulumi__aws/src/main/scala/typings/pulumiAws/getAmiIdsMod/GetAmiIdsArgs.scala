@@ -49,7 +49,7 @@ object GetAmiIdsArgs {
     if (executableUsers != null) __obj.updateDynamic("executableUsers")(executableUsers.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     if (nameRegex != null) __obj.updateDynamic("nameRegex")(nameRegex.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortAscending)) __obj.updateDynamic("sortAscending")(sortAscending.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortAscending)) __obj.updateDynamic("sortAscending")(sortAscending.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAmiIdsArgs]
   }
 }

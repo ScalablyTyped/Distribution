@@ -33,16 +33,16 @@ object SignatureResizeEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     model: js.Any = null,
-    pageNumber: Int | Double = null,
+    pageNumber: js.UndefOr[Double] = js.undefined,
     signatureCurrentBound: js.Array[_] = null,
     signaturePreviousBound: js.Array[_] = null,
     signatureSettings: js.Any = null,
     `type`: String = null
   ): SignatureResizeEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (pageNumber != null) __obj.updateDynamic("pageNumber")(pageNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageNumber)) __obj.updateDynamic("pageNumber")(pageNumber.get.asInstanceOf[js.Any])
     if (signatureCurrentBound != null) __obj.updateDynamic("signatureCurrentBound")(signatureCurrentBound.asInstanceOf[js.Any])
     if (signaturePreviousBound != null) __obj.updateDynamic("signaturePreviousBound")(signaturePreviousBound.asInstanceOf[js.Any])
     if (signatureSettings != null) __obj.updateDynamic("signatureSettings")(signatureSettings.asInstanceOf[js.Any])

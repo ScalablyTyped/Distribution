@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/simple_db", "SimpleDb")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/simple_db", "SimpleDb")
 @js.native
 class SimpleDb protected () extends js.Object {
   def this(db: IDBDatabase) = this()
@@ -23,7 +23,7 @@ class SimpleDb protected () extends js.Object {
 }
 
 /* static members */
-@JSImport("@firebase/firestore/dist/lib/src/local/simple_db", "SimpleDb")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/simple_db", "SimpleDb")
 @js.native
 object SimpleDb extends js.Object {
   /** Deletes the specified database. */

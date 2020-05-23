@@ -34,14 +34,14 @@ object DeleteTemplateAliasResponse {
     AliasName: AliasName = null,
     Arn: Arn = null,
     RequestId: String = null,
-    Status: Int | scala.Double = null,
+    Status: js.UndefOr[StatusCode] = js.undefined,
     TemplateId: RestrictiveResourceId = null
   ): DeleteTemplateAliasResponse = {
     val __obj = js.Dynamic.literal()
     if (AliasName != null) __obj.updateDynamic("AliasName")(AliasName.asInstanceOf[js.Any])
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
     if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
+    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
     if (TemplateId != null) __obj.updateDynamic("TemplateId")(TemplateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTemplateAliasResponse]
   }

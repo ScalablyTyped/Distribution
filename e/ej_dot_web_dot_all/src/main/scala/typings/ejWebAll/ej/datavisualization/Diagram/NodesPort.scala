@@ -59,8 +59,8 @@ object NodesPort {
   @scala.inline
   def apply(
     borderColor: String = null,
-    borderWidth: Int | Double = null,
-    connectorPadding: Int | Double = null,
+    borderWidth: js.UndefOr[Double] = js.undefined,
+    connectorPadding: js.UndefOr[Double] = js.undefined,
     constraints: PortConstraints | String = null,
     cssClass: String = null,
     fillColor: String = null,
@@ -69,13 +69,13 @@ object NodesPort {
     parent: String = null,
     pathData: String = null,
     shape: PortShapes | String = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     visibility: PortVisibility | String = null
   ): NodesPort = {
     val __obj = js.Dynamic.literal()
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (connectorPadding != null) __obj.updateDynamic("connectorPadding")(connectorPadding.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectorPadding)) __obj.updateDynamic("connectorPadding")(connectorPadding.get.asInstanceOf[js.Any])
     if (constraints != null) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
@@ -84,7 +84,7 @@ object NodesPort {
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     if (pathData != null) __obj.updateDynamic("pathData")(pathData.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodesPort]
   }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for egg-multipart
 
-Typings are for version 2.10.1
+Typings are for version 2.10.3
 
 ## Library description:
 multipart plugin for egg

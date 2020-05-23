@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait ShellQuotedString extends js.Object {
   /**
-  		 * The quoting style to use.
-  		 */
+    * The quoting style to use.
+    */
   var quoting: ShellQuoting
   /**
-  		 * The actual string value.
-  		 */
+    * The actual string value.
+    */
   var value: String
 }
 

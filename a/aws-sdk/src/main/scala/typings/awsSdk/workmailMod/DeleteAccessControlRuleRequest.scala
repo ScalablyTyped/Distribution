@@ -13,14 +13,13 @@ trait DeleteAccessControlRuleRequest extends js.Object {
   /**
     * The identifier for the organization.
     */
-  var OrganizationId: js.UndefOr[typings.awsSdk.workmailMod.OrganizationId] = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
 }
 
 object DeleteAccessControlRuleRequest {
   @scala.inline
-  def apply(Name: AccessControlRuleName, OrganizationId: OrganizationId = null): DeleteAccessControlRuleRequest = {
-    val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-    if (OrganizationId != null) __obj.updateDynamic("OrganizationId")(OrganizationId.asInstanceOf[js.Any])
+  def apply(Name: AccessControlRuleName, OrganizationId: OrganizationId): DeleteAccessControlRuleRequest = {
+    val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], OrganizationId = OrganizationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAccessControlRuleRequest]
   }
 }

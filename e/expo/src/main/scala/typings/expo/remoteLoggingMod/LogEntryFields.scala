@@ -14,13 +14,13 @@ object LogEntryFields {
   @scala.inline
   def apply(
     groupCollapsed: js.UndefOr[Boolean] = js.undefined,
-    groupDepth: Int | Double = null,
+    groupDepth: js.UndefOr[Double] = js.undefined,
     shouldHide: js.UndefOr[Boolean] = js.undefined
   ): LogEntryFields = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(groupCollapsed)) __obj.updateDynamic("groupCollapsed")(groupCollapsed.asInstanceOf[js.Any])
-    if (groupDepth != null) __obj.updateDynamic("groupDepth")(groupDepth.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldHide)) __obj.updateDynamic("shouldHide")(shouldHide.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupCollapsed)) __obj.updateDynamic("groupCollapsed")(groupCollapsed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupDepth)) __obj.updateDynamic("groupDepth")(groupDepth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldHide)) __obj.updateDynamic("shouldHide")(shouldHide.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogEntryFields]
   }
 }

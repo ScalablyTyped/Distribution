@@ -12,11 +12,15 @@ trait KikGetFromCameraOptions extends js.Object {
 
 object KikGetFromCameraOptions {
   @scala.inline
-  def apply(maxHeight: Int | Double = null, maxWidth: Int | Double = null, quality: Int | Double = null): KikGetFromCameraOptions = {
+  def apply(
+    maxHeight: js.UndefOr[Double] = js.undefined,
+    maxWidth: js.UndefOr[Double] = js.undefined,
+    quality: js.UndefOr[Double] = js.undefined
+  ): KikGetFromCameraOptions = {
     val __obj = js.Dynamic.literal()
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[KikGetFromCameraOptions]
   }
 }

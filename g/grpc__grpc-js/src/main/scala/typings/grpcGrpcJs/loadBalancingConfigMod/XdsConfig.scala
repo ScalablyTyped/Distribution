@@ -18,7 +18,6 @@ object XdsConfig {
     fallbackPolicy: js.Array[LoadBalancingConfig]
   ): XdsConfig = {
     val __obj = js.Dynamic.literal(balancerName = balancerName.asInstanceOf[js.Any], childPolicy = childPolicy.asInstanceOf[js.Any], fallbackPolicy = fallbackPolicy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[XdsConfig]
   }
 }

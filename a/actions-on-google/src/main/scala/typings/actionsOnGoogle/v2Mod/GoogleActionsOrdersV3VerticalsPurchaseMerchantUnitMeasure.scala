@@ -18,11 +18,11 @@ trait GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasure extends js.Objec
 object GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasure {
   @scala.inline
   def apply(
-    measure: Int | Double = null,
+    measure: js.UndefOr[Double] = js.undefined,
     unit: GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasureUnit = null
   ): GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasure = {
     val __obj = js.Dynamic.literal()
-    if (measure != null) __obj.updateDynamic("measure")(measure.asInstanceOf[js.Any])
+    if (!js.isUndefined(measure)) __obj.updateDynamic("measure")(measure.get.asInstanceOf[js.Any])
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasure]
   }

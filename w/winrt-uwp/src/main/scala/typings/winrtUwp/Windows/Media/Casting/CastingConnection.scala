@@ -11,9 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the actual connection with a casting device. */
-@JSGlobal("Windows.Media.Casting.CastingConnection")
 @js.native
-abstract class CastingConnection () extends js.Object {
+trait CastingConnection extends js.Object {
   /** Gets the casting device with which a connection has been made. */
   var device: CastingDevice = js.native
   /** Indicates an error occurred while attempting to make a casting connection. */

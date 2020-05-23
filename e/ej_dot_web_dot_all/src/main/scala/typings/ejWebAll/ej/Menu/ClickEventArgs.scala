@@ -31,7 +31,7 @@ object ClickEventArgs {
     element: js.Any = null,
     event: js.Any = null,
     model: Model = null,
-    selectedItem: Int | Double = null,
+    selectedItem: js.UndefOr[Double] = js.undefined,
     text: String = null,
     `type`: String = null
   ): ClickEventArgs = {
@@ -39,7 +39,7 @@ object ClickEventArgs {
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (selectedItem != null) __obj.updateDynamic("selectedItem")(selectedItem.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedItem)) __obj.updateDynamic("selectedItem")(selectedItem.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClickEventArgs]

@@ -1,6 +1,6 @@
 package typings.gestalt.mod
 
-import typings.gestalt.AnonZIndex
+import typings.gestalt.anon.ZIndex
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait StickyProps extends js.Object {
   var bottom: js.UndefOr[Double | String] = js.undefined
   var children: js.UndefOr[ReactNode] = js.undefined
-  var dangerouslySetZIndex: js.UndefOr[AnonZIndex] = js.undefined
+  var dangerouslySetZIndex: js.UndefOr[ZIndex] = js.undefined
   var left: js.UndefOr[Double | String] = js.undefined
   var right: js.UndefOr[Double | String] = js.undefined
   var top: js.UndefOr[Double | String] = js.undefined
@@ -20,7 +20,7 @@ object StickyProps {
   def apply(
     bottom: Double | String = null,
     children: ReactNode = null,
-    dangerouslySetZIndex: AnonZIndex = null,
+    dangerouslySetZIndex: ZIndex = null,
     left: Double | String = null,
     right: Double | String = null,
     top: Double | String = null

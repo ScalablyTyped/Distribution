@@ -20,7 +20,7 @@ object BeforeSendResponse {
     requestHeaders: Record[String, String | js.Array[String]] = null
   ): BeforeSendResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeforeSendResponse]
   }

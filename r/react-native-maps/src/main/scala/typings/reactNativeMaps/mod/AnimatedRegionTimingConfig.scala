@@ -25,24 +25,24 @@ object AnimatedRegionTimingConfig {
   @scala.inline
   def apply(
     useNativeDriver: Boolean,
-    delay: Int | Double = null,
-    duration: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
+    duration: js.UndefOr[Double] = js.undefined,
     easing: /* value */ Double => Double = null,
     isInteraction: js.UndefOr[Boolean] = js.undefined,
-    latitude: Int | Double = null,
-    latitudeDelta: Int | Double = null,
-    longitude: Int | Double = null,
-    longitudeDelta: Int | Double = null
+    latitude: js.UndefOr[Double] = js.undefined,
+    latitudeDelta: js.UndefOr[Double] = js.undefined,
+    longitude: js.UndefOr[Double] = js.undefined,
+    longitudeDelta: js.UndefOr[Double] = js.undefined
   ): AnimatedRegionTimingConfig = {
     val __obj = js.Dynamic.literal(useNativeDriver = useNativeDriver.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(js.Any.fromFunction1(easing))
-    if (!js.isUndefined(isInteraction)) __obj.updateDynamic("isInteraction")(isInteraction.asInstanceOf[js.Any])
-    if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
-    if (latitudeDelta != null) __obj.updateDynamic("latitudeDelta")(latitudeDelta.asInstanceOf[js.Any])
-    if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
-    if (longitudeDelta != null) __obj.updateDynamic("longitudeDelta")(longitudeDelta.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInteraction)) __obj.updateDynamic("isInteraction")(isInteraction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(latitude)) __obj.updateDynamic("latitude")(latitude.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(latitudeDelta)) __obj.updateDynamic("latitudeDelta")(latitudeDelta.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(longitude)) __obj.updateDynamic("longitude")(longitude.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(longitudeDelta)) __obj.updateDynamic("longitudeDelta")(longitudeDelta.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimatedRegionTimingConfig]
   }
 }

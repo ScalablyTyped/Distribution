@@ -59,9 +59,9 @@ object IDetailsItemProps {
     cellStyleProps: ICellStyleProps = null,
     checkboxVisibility: CheckboxVisibility = null,
     columns: js.Array[IColumn] = null,
-    groupNestingDepth: Int | Double = null,
-    indentWidth: Int | Double = null,
-    rowWidth: Int | Double = null,
+    groupNestingDepth: js.UndefOr[Double] = js.undefined,
+    indentWidth: js.UndefOr[Double] = js.undefined,
+    rowWidth: js.UndefOr[Double] = js.undefined,
     selection: ISelection[IObjectWithKey] = null,
     selectionMode: SelectionMode = null,
     viewport: IViewport = null
@@ -70,9 +70,9 @@ object IDetailsItemProps {
     if (cellStyleProps != null) __obj.updateDynamic("cellStyleProps")(cellStyleProps.asInstanceOf[js.Any])
     if (checkboxVisibility != null) __obj.updateDynamic("checkboxVisibility")(checkboxVisibility.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (groupNestingDepth != null) __obj.updateDynamic("groupNestingDepth")(groupNestingDepth.asInstanceOf[js.Any])
-    if (indentWidth != null) __obj.updateDynamic("indentWidth")(indentWidth.asInstanceOf[js.Any])
-    if (rowWidth != null) __obj.updateDynamic("rowWidth")(rowWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupNestingDepth)) __obj.updateDynamic("groupNestingDepth")(groupNestingDepth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(indentWidth)) __obj.updateDynamic("indentWidth")(indentWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowWidth)) __obj.updateDynamic("rowWidth")(rowWidth.get.asInstanceOf[js.Any])
     if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
     if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
     if (viewport != null) __obj.updateDynamic("viewport")(viewport.asInstanceOf[js.Any])

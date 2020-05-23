@@ -17,18 +17,18 @@ object RTCErrorInit {
   @scala.inline
   def apply(
     errorDetail: RTCErrorDetailType,
-    httpRequestStatusCode: Int | Double = null,
-    receivedAlert: Int | Double = null,
-    sctpCauseCode: Int | Double = null,
-    sdpLineNumber: Int | Double = null,
-    sentAlert: Int | Double = null
+    httpRequestStatusCode: js.UndefOr[Double] = js.undefined,
+    receivedAlert: js.UndefOr[Double] = js.undefined,
+    sctpCauseCode: js.UndefOr[Double] = js.undefined,
+    sdpLineNumber: js.UndefOr[Double] = js.undefined,
+    sentAlert: js.UndefOr[Double] = js.undefined
   ): RTCErrorInit = {
     val __obj = js.Dynamic.literal(errorDetail = errorDetail.asInstanceOf[js.Any])
-    if (httpRequestStatusCode != null) __obj.updateDynamic("httpRequestStatusCode")(httpRequestStatusCode.asInstanceOf[js.Any])
-    if (receivedAlert != null) __obj.updateDynamic("receivedAlert")(receivedAlert.asInstanceOf[js.Any])
-    if (sctpCauseCode != null) __obj.updateDynamic("sctpCauseCode")(sctpCauseCode.asInstanceOf[js.Any])
-    if (sdpLineNumber != null) __obj.updateDynamic("sdpLineNumber")(sdpLineNumber.asInstanceOf[js.Any])
-    if (sentAlert != null) __obj.updateDynamic("sentAlert")(sentAlert.asInstanceOf[js.Any])
+    if (!js.isUndefined(httpRequestStatusCode)) __obj.updateDynamic("httpRequestStatusCode")(httpRequestStatusCode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(receivedAlert)) __obj.updateDynamic("receivedAlert")(receivedAlert.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sctpCauseCode)) __obj.updateDynamic("sctpCauseCode")(sctpCauseCode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sdpLineNumber)) __obj.updateDynamic("sdpLineNumber")(sdpLineNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sentAlert)) __obj.updateDynamic("sentAlert")(sentAlert.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCErrorInit]
   }
 }

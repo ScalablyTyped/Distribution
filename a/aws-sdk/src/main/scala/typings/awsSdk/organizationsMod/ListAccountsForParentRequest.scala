@@ -22,9 +22,9 @@ trait ListAccountsForParentRequest extends js.Object {
 
 object ListAccountsForParentRequest {
   @scala.inline
-  def apply(ParentId: ParentId, MaxResults: Int | Double = null, NextToken: NextToken = null): ListAccountsForParentRequest = {
+  def apply(ParentId: ParentId, MaxResults: js.UndefOr[MaxResults] = js.undefined, NextToken: NextToken = null): ListAccountsForParentRequest = {
     val __obj = js.Dynamic.literal(ParentId = ParentId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAccountsForParentRequest]
   }

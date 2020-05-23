@@ -25,7 +25,7 @@ trait ChartFontLoadOptions extends js.Object {
   var bold: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * HTML color code representation of the text color. E.g. #FF0000 represents Red.
+    * HTML color code representation of the text color (e.g., #FF0000 represents Red).
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -39,14 +39,14 @@ trait ChartFontLoadOptions extends js.Object {
   var italic: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Font name (e.g. "Calibri")
+    * Font name (e.g., "Calibri")
     *
     * [Api set: ExcelApi 1.1]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Size of the font (e.g. 11)
+    * Size of the font (e.g., 11)
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -72,13 +72,13 @@ object ChartFontLoadOptions {
     underline: js.UndefOr[Boolean] = js.undefined
   ): ChartFontLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
-    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartFontLoadOptions]
   }
 }

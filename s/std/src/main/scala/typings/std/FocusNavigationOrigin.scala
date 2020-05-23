@@ -14,16 +14,16 @@ trait FocusNavigationOrigin extends js.Object {
 object FocusNavigationOrigin {
   @scala.inline
   def apply(
-    originHeight: Int | Double = null,
-    originLeft: Int | Double = null,
-    originTop: Int | Double = null,
-    originWidth: Int | Double = null
+    originHeight: js.UndefOr[Double] = js.undefined,
+    originLeft: js.UndefOr[Double] = js.undefined,
+    originTop: js.UndefOr[Double] = js.undefined,
+    originWidth: js.UndefOr[Double] = js.undefined
   ): FocusNavigationOrigin = {
     val __obj = js.Dynamic.literal()
-    if (originHeight != null) __obj.updateDynamic("originHeight")(originHeight.asInstanceOf[js.Any])
-    if (originLeft != null) __obj.updateDynamic("originLeft")(originLeft.asInstanceOf[js.Any])
-    if (originTop != null) __obj.updateDynamic("originTop")(originTop.asInstanceOf[js.Any])
-    if (originWidth != null) __obj.updateDynamic("originWidth")(originWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(originHeight)) __obj.updateDynamic("originHeight")(originHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(originLeft)) __obj.updateDynamic("originLeft")(originLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(originTop)) __obj.updateDynamic("originTop")(originTop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(originWidth)) __obj.updateDynamic("originWidth")(originWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FocusNavigationOrigin]
   }
 }

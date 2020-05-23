@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,13 +9,26 @@ trait StyleSheet extends js.Object {
   var disabled: scala.Boolean
   val href: java.lang.String | Null
   val media: MediaList
-  val ownerNode: Node
-  val parentStyleSheet: StyleSheet | Null
+  val ownerNode: Element | ProcessingInstruction | Null
+  val parentStyleSheet: CSSStyleSheet | Null
   val title: java.lang.String | Null
   val `type`: java.lang.String
 }
 
-@JSGlobal("StyleSheet")
-@js.native
-object StyleSheet extends Instantiable0[StyleSheet]
+object StyleSheet {
+  @scala.inline
+  def apply(
+    disabled: scala.Boolean,
+    media: MediaList,
+    `type`: java.lang.String,
+    href: java.lang.String = null,
+    ownerNode: Element | ProcessingInstruction = null,
+    parentStyleSheet: CSSStyleSheet = null,
+    title: java.lang.String = null
+  ): StyleSheet = {
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], ownerNode = ownerNode.asInstanceOf[js.Any], parentStyleSheet = parentStyleSheet.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StyleSheet]
+  }
+}
 

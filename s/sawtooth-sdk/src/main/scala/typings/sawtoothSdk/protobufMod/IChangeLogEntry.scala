@@ -18,14 +18,14 @@ trait IChangeLogEntry extends js.Object {
 object IChangeLogEntry {
   @scala.inline
   def apply(
-    additions: js.Array[Uint8Array] = null,
-    parent: Uint8Array = null,
-    successors: js.Array[ISuccessor] = null
+    additions: js.UndefOr[Null | js.Array[Uint8Array]] = js.undefined,
+    parent: js.UndefOr[Null | Uint8Array] = js.undefined,
+    successors: js.UndefOr[Null | js.Array[ISuccessor]] = js.undefined
   ): IChangeLogEntry = {
     val __obj = js.Dynamic.literal()
-    if (additions != null) __obj.updateDynamic("additions")(additions.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (successors != null) __obj.updateDynamic("successors")(successors.asInstanceOf[js.Any])
+    if (!js.isUndefined(additions)) __obj.updateDynamic("additions")(additions.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(successors)) __obj.updateDynamic("successors")(successors.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChangeLogEntry]
   }
 }

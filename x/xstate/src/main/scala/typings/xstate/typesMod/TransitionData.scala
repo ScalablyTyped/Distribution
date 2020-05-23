@@ -12,7 +12,7 @@ trait TransitionData[TContext, TEvent /* <: EventObject */] extends js.Object {
 
 object TransitionData {
   @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](actions: ActionMap[TContext, TEvent], activities: ActivityMap = null, value: StateValue = null): TransitionData[TContext, TEvent] = {
+  def apply[TContext, TEvent](actions: ActionMap[TContext, TEvent], activities: ActivityMap = null, value: StateValue = null): TransitionData[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any])
     if (activities != null) __obj.updateDynamic("activities")(activities.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

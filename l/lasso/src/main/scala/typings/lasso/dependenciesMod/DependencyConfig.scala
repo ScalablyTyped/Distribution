@@ -1,12 +1,12 @@
 package typings.lasso.dependenciesMod
 
-import typings.lasso.AnonCrossorigin
+import typings.lasso.anon.Crossorigin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DependencyConfig extends js.Object {
-  var attributes: js.UndefOr[AnonCrossorigin] = js.undefined
+  var attributes: js.UndefOr[Crossorigin] = js.undefined
   var `css-slot`: js.UndefOr[String] = js.undefined
   var dependencies: js.UndefOr[js.Array[DependencyConfig | String]] = js.undefined
   var external: js.UndefOr[Boolean] = js.undefined
@@ -28,7 +28,7 @@ trait DependencyConfig extends js.Object {
 object DependencyConfig {
   @scala.inline
   def apply(
-    attributes: AnonCrossorigin = null,
+    attributes: Crossorigin = null,
     `css-slot`: String = null,
     dependencies: js.Array[DependencyConfig | String] = null,
     external: js.UndefOr[Boolean] = js.undefined,
@@ -50,7 +50,7 @@ object DependencyConfig {
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (`css-slot` != null) __obj.updateDynamic("css-slot")(`css-slot`.asInstanceOf[js.Any])
     if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
-    if (!js.isUndefined(external)) __obj.updateDynamic("external")(external.asInstanceOf[js.Any])
+    if (!js.isUndefined(external)) __obj.updateDynamic("external")(external.get.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (`if` != null) __obj.updateDynamic("if")(`if`.asInstanceOf[js.Any])
     if (`if-flag` != null) __obj.updateDynamic("if-flag")(`if-flag`.asInstanceOf[js.Any])

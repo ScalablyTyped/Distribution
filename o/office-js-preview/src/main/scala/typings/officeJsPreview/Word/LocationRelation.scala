@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Word
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -125,50 +124,6 @@ object LocationRelation extends js.Object {
     */
   @js.native
   sealed trait unrelated extends LocationRelation
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[LocationRelation with String] = js.native
-  /* "AdjacentAfter" */ @js.native
-  object adjacentAfter extends TopLevel[adjacentAfter with String]
-  
-  /* "AdjacentBefore" */ @js.native
-  object adjacentBefore extends TopLevel[adjacentBefore with String]
-  
-  /* "After" */ @js.native
-  object after extends TopLevel[after with String]
-  
-  /* "Before" */ @js.native
-  object before extends TopLevel[before with String]
-  
-  /* "Contains" */ @js.native
-  object contains extends TopLevel[contains with String]
-  
-  /* "ContainsEnd" */ @js.native
-  object containsEnd extends TopLevel[containsEnd with String]
-  
-  /* "ContainsStart" */ @js.native
-  object containsStart extends TopLevel[containsStart with String]
-  
-  /* "Equal" */ @js.native
-  object equal extends TopLevel[equal with String]
-  
-  /* "Inside" */ @js.native
-  object inside extends TopLevel[inside with String]
-  
-  /* "InsideEnd" */ @js.native
-  object insideEnd extends TopLevel[insideEnd with String]
-  
-  /* "InsideStart" */ @js.native
-  object insideStart extends TopLevel[insideStart with String]
-  
-  /* "OverlapsAfter" */ @js.native
-  object overlapsAfter extends TopLevel[overlapsAfter with String]
-  
-  /* "OverlapsBefore" */ @js.native
-  object overlapsBefore extends TopLevel[overlapsBefore with String]
-  
-  /* "Unrelated" */ @js.native
-  object unrelated extends TopLevel[unrelated with String]
   
 }
 

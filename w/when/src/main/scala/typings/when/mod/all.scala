@@ -1,6 +1,6 @@
 package typings.when.mod
 
-import typings.when.When.Promise_
+import typings.when.When.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +17,6 @@ object all extends js.Object {
     * @param promisesOrValues array of anything, may contain a mix
     *      of {@link Promise}s and values
     */
-  def apply[T](promisesOrValues: js.Array[_]): Promise_[T] = js.native
+  def apply[T](promisesOrValues: js.Array[_]): Promise[T] = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact
 
-import typings.react.mod.Component
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,11 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/Keytip/examples/Keytips.Basic.Example", JSImport.Namespace)
 @js.native
 object keytipsBasicExampleMod extends js.Object {
-  @js.native
-  class KeytipsBasicExample ()
-    extends Component[js.Object, js.Object, js.Any] {
-    var _sampleOptions: js.Any = js.native
-  }
-  
+  val KeytipsBasicExample: FunctionComponent[js.Object] = js.native
 }
 

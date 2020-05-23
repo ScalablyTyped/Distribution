@@ -18,10 +18,10 @@ trait AttachedDisk extends js.Object {
 
 object AttachedDisk {
   @scala.inline
-  def apply(path: String = null, sizeInGb: Int | Double = null): AttachedDisk = {
+  def apply(path: String = null, sizeInGb: js.UndefOr[integer] = js.undefined): AttachedDisk = {
     val __obj = js.Dynamic.literal()
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (sizeInGb != null) __obj.updateDynamic("sizeInGb")(sizeInGb.asInstanceOf[js.Any])
+    if (!js.isUndefined(sizeInGb)) __obj.updateDynamic("sizeInGb")(sizeInGb.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachedDisk]
   }
 }

@@ -52,24 +52,24 @@ object RxNormEntity {
   @scala.inline
   def apply(
     Attributes: RxNormAttributeList = null,
-    BeginOffset: Int | Double = null,
+    BeginOffset: js.UndefOr[Integer] = js.undefined,
     Category: RxNormEntityCategory = null,
-    EndOffset: Int | Double = null,
-    Id: Int | Double = null,
+    EndOffset: js.UndefOr[Integer] = js.undefined,
+    Id: js.UndefOr[Integer] = js.undefined,
     RxNormConcepts: RxNormConceptList = null,
-    Score: Int | Double = null,
+    Score: js.UndefOr[Float] = js.undefined,
     Text: OntologyLinkingBoundedLengthString = null,
     Traits: RxNormTraitList = null,
     Type: RxNormEntityType = null
   ): RxNormEntity = {
     val __obj = js.Dynamic.literal()
     if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
-    if (BeginOffset != null) __obj.updateDynamic("BeginOffset")(BeginOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(BeginOffset)) __obj.updateDynamic("BeginOffset")(BeginOffset.get.asInstanceOf[js.Any])
     if (Category != null) __obj.updateDynamic("Category")(Category.asInstanceOf[js.Any])
-    if (EndOffset != null) __obj.updateDynamic("EndOffset")(EndOffset.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
+    if (!js.isUndefined(EndOffset)) __obj.updateDynamic("EndOffset")(EndOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Id)) __obj.updateDynamic("Id")(Id.get.asInstanceOf[js.Any])
     if (RxNormConcepts != null) __obj.updateDynamic("RxNormConcepts")(RxNormConcepts.asInstanceOf[js.Any])
-    if (Score != null) __obj.updateDynamic("Score")(Score.asInstanceOf[js.Any])
+    if (!js.isUndefined(Score)) __obj.updateDynamic("Score")(Score.get.asInstanceOf[js.Any])
     if (Text != null) __obj.updateDynamic("Text")(Text.asInstanceOf[js.Any])
     if (Traits != null) __obj.updateDynamic("Traits")(Traits.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])

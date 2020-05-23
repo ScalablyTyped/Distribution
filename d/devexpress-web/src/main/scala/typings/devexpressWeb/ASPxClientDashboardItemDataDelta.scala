@@ -7,24 +7,30 @@ import scala.scalajs.js.annotation._
 /**
   * Contains the delta metadata.
   */
-@JSGlobal("ASPxClientDashboardItemDataDelta")
-@js.native
-class ASPxClientDashboardItemDataDelta () extends js.Object {
+trait ASPxClientDashboardItemDataDelta extends js.Object {
   /**
     * Gets the identifier for the measure that provides actual values.
     */
-  var ActualMeasureId: String = js.native
+  var ActualMeasureId: String
   /**
     * Gets the data item identifier.
     */
-  var Id: String = js.native
+  var Id: String
   /**
     * Gets the name of the data item container.
     */
-  var Name: String = js.native
+  var Name: String
   /**
     * Gets the identifier for the measure that provides target values.
     */
-  var TargetMeasureId: String = js.native
+  var TargetMeasureId: String
+}
+
+object ASPxClientDashboardItemDataDelta {
+  @scala.inline
+  def apply(ActualMeasureId: String, Id: String, Name: String, TargetMeasureId: String): ASPxClientDashboardItemDataDelta = {
+    val __obj = js.Dynamic.literal(ActualMeasureId = ActualMeasureId.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], TargetMeasureId = TargetMeasureId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientDashboardItemDataDelta]
+  }
 }
 

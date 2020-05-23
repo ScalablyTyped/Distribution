@@ -289,7 +289,7 @@ object ServiceAreaParametersProperties {
     impedanceAttribute: String = null,
     mergeSimilarPolygonRanges: js.UndefOr[Boolean] = js.undefined,
     outSpatialReference: SpatialReferenceProperties = null,
-    outputGeometryPrecision: Int | Double = null,
+    outputGeometryPrecision: js.UndefOr[Double] = js.undefined,
     outputGeometryPrecisionUnits: centimeters | `decimal-degrees` | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | points | yards = null,
     outputLines: none | straight | `true-shape` | `true-shape-with-measure` = null,
     outputPolygons: none | simplified | detailed = null,
@@ -310,7 +310,7 @@ object ServiceAreaParametersProperties {
     travelDirection: `from-facility` | `to-facility` = null,
     travelMode: String = null,
     trimOuterPolygon: js.UndefOr[Boolean] = js.undefined,
-    trimPolygonDistance: Int | Double = null,
+    trimPolygonDistance: js.UndefOr[Double] = js.undefined,
     trimPolygonDistanceUnits: centimeters | `decimal-degrees` | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | points | yards = null,
     useHierarchy: js.UndefOr[Boolean] = js.undefined
   ): ServiceAreaParametersProperties = {
@@ -318,36 +318,36 @@ object ServiceAreaParametersProperties {
     if (accumulateAttributes != null) __obj.updateDynamic("accumulateAttributes")(accumulateAttributes.asInstanceOf[js.Any])
     if (attributeParameterValues != null) __obj.updateDynamic("attributeParameterValues")(attributeParameterValues.asInstanceOf[js.Any])
     if (defaultBreaks != null) __obj.updateDynamic("defaultBreaks")(defaultBreaks.asInstanceOf[js.Any])
-    if (!js.isUndefined(doNotLocateOnRestrictedElements)) __obj.updateDynamic("doNotLocateOnRestrictedElements")(doNotLocateOnRestrictedElements.asInstanceOf[js.Any])
+    if (!js.isUndefined(doNotLocateOnRestrictedElements)) __obj.updateDynamic("doNotLocateOnRestrictedElements")(doNotLocateOnRestrictedElements.get.asInstanceOf[js.Any])
     if (excludeSourcesFromPolygons != null) __obj.updateDynamic("excludeSourcesFromPolygons")(excludeSourcesFromPolygons.asInstanceOf[js.Any])
     if (facilities != null) __obj.updateDynamic("facilities")(facilities.asInstanceOf[js.Any])
     if (impedanceAttribute != null) __obj.updateDynamic("impedanceAttribute")(impedanceAttribute.asInstanceOf[js.Any])
-    if (!js.isUndefined(mergeSimilarPolygonRanges)) __obj.updateDynamic("mergeSimilarPolygonRanges")(mergeSimilarPolygonRanges.asInstanceOf[js.Any])
+    if (!js.isUndefined(mergeSimilarPolygonRanges)) __obj.updateDynamic("mergeSimilarPolygonRanges")(mergeSimilarPolygonRanges.get.asInstanceOf[js.Any])
     if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference.asInstanceOf[js.Any])
-    if (outputGeometryPrecision != null) __obj.updateDynamic("outputGeometryPrecision")(outputGeometryPrecision.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputGeometryPrecision)) __obj.updateDynamic("outputGeometryPrecision")(outputGeometryPrecision.get.asInstanceOf[js.Any])
     if (outputGeometryPrecisionUnits != null) __obj.updateDynamic("outputGeometryPrecisionUnits")(outputGeometryPrecisionUnits.asInstanceOf[js.Any])
     if (outputLines != null) __obj.updateDynamic("outputLines")(outputLines.asInstanceOf[js.Any])
     if (outputPolygons != null) __obj.updateDynamic("outputPolygons")(outputPolygons.asInstanceOf[js.Any])
-    if (!js.isUndefined(overlapLines)) __obj.updateDynamic("overlapLines")(overlapLines.asInstanceOf[js.Any])
-    if (!js.isUndefined(overlapPolygons)) __obj.updateDynamic("overlapPolygons")(overlapPolygons.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlapLines)) __obj.updateDynamic("overlapLines")(overlapLines.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlapPolygons)) __obj.updateDynamic("overlapPolygons")(overlapPolygons.get.asInstanceOf[js.Any])
     if (pointBarriers != null) __obj.updateDynamic("pointBarriers")(pointBarriers.asInstanceOf[js.Any])
     if (polygonBarriers != null) __obj.updateDynamic("polygonBarriers")(polygonBarriers.asInstanceOf[js.Any])
     if (polylineBarriers != null) __obj.updateDynamic("polylineBarriers")(polylineBarriers.asInstanceOf[js.Any])
     if (restrictUTurns != null) __obj.updateDynamic("restrictUTurns")(restrictUTurns.asInstanceOf[js.Any])
     if (restrictionAttributes != null) __obj.updateDynamic("restrictionAttributes")(restrictionAttributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnFacilities)) __obj.updateDynamic("returnFacilities")(returnFacilities.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnPointBarriers)) __obj.updateDynamic("returnPointBarriers")(returnPointBarriers.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnPolygonBarriers)) __obj.updateDynamic("returnPolygonBarriers")(returnPolygonBarriers.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnPolylineBarriers)) __obj.updateDynamic("returnPolylineBarriers")(returnPolylineBarriers.asInstanceOf[js.Any])
-    if (!js.isUndefined(splitLinesAtBreaks)) __obj.updateDynamic("splitLinesAtBreaks")(splitLinesAtBreaks.asInstanceOf[js.Any])
-    if (!js.isUndefined(splitPolygonsAtBreaks)) __obj.updateDynamic("splitPolygonsAtBreaks")(splitPolygonsAtBreaks.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnFacilities)) __obj.updateDynamic("returnFacilities")(returnFacilities.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnPointBarriers)) __obj.updateDynamic("returnPointBarriers")(returnPointBarriers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnPolygonBarriers)) __obj.updateDynamic("returnPolygonBarriers")(returnPolygonBarriers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnPolylineBarriers)) __obj.updateDynamic("returnPolylineBarriers")(returnPolylineBarriers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(splitLinesAtBreaks)) __obj.updateDynamic("splitLinesAtBreaks")(splitLinesAtBreaks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(splitPolygonsAtBreaks)) __obj.updateDynamic("splitPolygonsAtBreaks")(splitPolygonsAtBreaks.get.asInstanceOf[js.Any])
     if (timeOfDay != null) __obj.updateDynamic("timeOfDay")(timeOfDay.asInstanceOf[js.Any])
     if (travelDirection != null) __obj.updateDynamic("travelDirection")(travelDirection.asInstanceOf[js.Any])
     if (travelMode != null) __obj.updateDynamic("travelMode")(travelMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(trimOuterPolygon)) __obj.updateDynamic("trimOuterPolygon")(trimOuterPolygon.asInstanceOf[js.Any])
-    if (trimPolygonDistance != null) __obj.updateDynamic("trimPolygonDistance")(trimPolygonDistance.asInstanceOf[js.Any])
+    if (!js.isUndefined(trimOuterPolygon)) __obj.updateDynamic("trimOuterPolygon")(trimOuterPolygon.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trimPolygonDistance)) __obj.updateDynamic("trimPolygonDistance")(trimPolygonDistance.get.asInstanceOf[js.Any])
     if (trimPolygonDistanceUnits != null) __obj.updateDynamic("trimPolygonDistanceUnits")(trimPolygonDistanceUnits.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHierarchy)) __obj.updateDynamic("useHierarchy")(useHierarchy.asInstanceOf[js.Any])
+    if (!js.isUndefined(useHierarchy)) __obj.updateDynamic("useHierarchy")(useHierarchy.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceAreaParametersProperties]
   }
 }

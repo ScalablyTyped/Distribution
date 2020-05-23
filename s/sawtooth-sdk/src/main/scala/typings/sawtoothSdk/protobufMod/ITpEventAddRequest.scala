@@ -13,10 +13,13 @@ trait ITpEventAddRequest extends js.Object {
 
 object ITpEventAddRequest {
   @scala.inline
-  def apply(contextId: String = null, event: IEvent = null): ITpEventAddRequest = {
+  def apply(
+    contextId: js.UndefOr[Null | String] = js.undefined,
+    event: js.UndefOr[Null | IEvent] = js.undefined
+  ): ITpEventAddRequest = {
     val __obj = js.Dynamic.literal()
-    if (contextId != null) __obj.updateDynamic("contextId")(contextId.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (!js.isUndefined(contextId)) __obj.updateDynamic("contextId")(contextId.asInstanceOf[js.Any])
+    if (!js.isUndefined(event)) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITpEventAddRequest]
   }
 }

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object padIso97971Mod
   extends TopLevel[
-      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pad.Iso97971 */ js.Any
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof mode.CFB */ js.Any
     ]
 

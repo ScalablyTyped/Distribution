@@ -1,8 +1,7 @@
 package typings.gapiClientAnalytics.gapi.client.analytics
 
-import typings.gapiClientAnalytics.AnonAccountId
-import typings.gapiClientAnalytics.AnonColumnType
-import typings.gapiClientAnalytics.AnonFilters
+import typings.gapiClientAnalytics.anon.AccountId
+import typings.gapiClientAnalytics.anon.ColumnType
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,15 +9,15 @@ import scala.scalajs.js.annotation._
 
 trait RealtimeData extends js.Object {
   /** Column headers that list dimension names followed by the metric names. The order of dimensions and metrics is same as specified in the request. */
-  var columnHeaders: js.UndefOr[js.Array[AnonColumnType]] = js.undefined
+  var columnHeaders: js.UndefOr[js.Array[ColumnType]] = js.undefined
   /** Unique ID for this data response. */
   var id: js.UndefOr[String] = js.undefined
   /** Resource type. */
   var kind: js.UndefOr[String] = js.undefined
   /** Information for the view (profile), for which the real time data was requested. */
-  var profileInfo: js.UndefOr[AnonAccountId] = js.undefined
+  var profileInfo: js.UndefOr[AccountId] = js.undefined
   /** Real time data request query parameters. */
-  var query: js.UndefOr[AnonFilters] = js.undefined
+  var query: js.UndefOr[typings.gapiClientAnalytics.anon.Filters] = js.undefined
   /**
     * Real time data rows, where each row contains a list of dimension values followed by the metric values. The order of dimensions and metrics is same as
     * specified in the request.
@@ -38,14 +37,14 @@ trait RealtimeData extends js.Object {
 object RealtimeData {
   @scala.inline
   def apply(
-    columnHeaders: js.Array[AnonColumnType] = null,
+    columnHeaders: js.Array[ColumnType] = null,
     id: String = null,
     kind: String = null,
-    profileInfo: AnonAccountId = null,
-    query: AnonFilters = null,
+    profileInfo: AccountId = null,
+    query: typings.gapiClientAnalytics.anon.Filters = null,
     rows: js.Array[js.Array[String]] = null,
     selfLink: String = null,
-    totalResults: Int | Double = null,
+    totalResults: js.UndefOr[Double] = js.undefined,
     totalsForAllResults: Record[String, String] = null
   ): RealtimeData = {
     val __obj = js.Dynamic.literal()
@@ -56,7 +55,7 @@ object RealtimeData {
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (totalResults != null) __obj.updateDynamic("totalResults")(totalResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalResults)) __obj.updateDynamic("totalResults")(totalResults.get.asInstanceOf[js.Any])
     if (totalsForAllResults != null) __obj.updateDynamic("totalsForAllResults")(totalsForAllResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[RealtimeData]
   }

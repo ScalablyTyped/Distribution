@@ -123,6 +123,13 @@ package object chimeMod {
   type NonEmptyString = java.lang.String
   type NonEmptyString128 = java.lang.String
   type NonEmptyStringList = js.Array[typings.awsSdk.chimeMod.String]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.EventBridge
+    - typings.awsSdk.awsSdkStrings.SNS
+    - typings.awsSdk.awsSdkStrings.SQS
+    - java.lang.String
+  */
+  type NotificationTarget = typings.awsSdk.chimeMod._NotificationTarget | java.lang.String
   type NullableBoolean = scala.Boolean
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.PreferSticky
@@ -214,10 +221,11 @@ package object chimeMod {
   */
   type RegistrationStatus = typings.awsSdk.chimeMod._RegistrationStatus | java.lang.String
   type ResultMax = scala.Double
+  type RetentionDays = scala.Double
   type RoomList = js.Array[typings.awsSdk.chimeMod.Room]
   type RoomMembershipList = js.Array[typings.awsSdk.chimeMod.RoomMembership]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsSdk.awsSdkStrings.Administrator
+    - typings.awsSdk.awsSdkStrings.Administrator_
     - typings.awsSdk.awsSdkStrings.Member
     - java.lang.String
   */
@@ -225,6 +233,7 @@ package object chimeMod {
   type SensitiveString = java.lang.String
   type SensitiveStringList = js.Array[typings.awsSdk.chimeMod.SensitiveString]
   type SigninDelegateGroupList = js.Array[typings.awsSdk.chimeMod.SigninDelegateGroup]
+  type StreamingNotificationTargetList = js.Array[typings.awsSdk.chimeMod.StreamingNotificationTarget]
   type String = java.lang.String
   type String128 = java.lang.String
   type StringList = js.Array[typings.awsSdk.chimeMod.String]

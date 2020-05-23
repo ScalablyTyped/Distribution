@@ -58,12 +58,12 @@ object DeploymentSummary {
     CompletedAt: Iso8601DateTime = null,
     ConfigurationName: Name = null,
     ConfigurationVersion: Version = null,
-    DeploymentDurationInMinutes: Int | Double = null,
-    DeploymentNumber: Int | Double = null,
-    FinalBakeTimeInMinutes: Int | Double = null,
-    GrowthFactor: Int | Double = null,
+    DeploymentDurationInMinutes: js.UndefOr[MinutesBetween0And24Hours] = js.undefined,
+    DeploymentNumber: js.UndefOr[Integer] = js.undefined,
+    FinalBakeTimeInMinutes: js.UndefOr[MinutesBetween0And24Hours] = js.undefined,
+    GrowthFactor: js.UndefOr[Percentage] = js.undefined,
     GrowthType: GrowthType = null,
-    PercentageComplete: Int | Double = null,
+    PercentageComplete: js.UndefOr[Percentage] = js.undefined,
     StartedAt: Iso8601DateTime = null,
     State: DeploymentState = null
   ): DeploymentSummary = {
@@ -71,12 +71,12 @@ object DeploymentSummary {
     if (CompletedAt != null) __obj.updateDynamic("CompletedAt")(CompletedAt.asInstanceOf[js.Any])
     if (ConfigurationName != null) __obj.updateDynamic("ConfigurationName")(ConfigurationName.asInstanceOf[js.Any])
     if (ConfigurationVersion != null) __obj.updateDynamic("ConfigurationVersion")(ConfigurationVersion.asInstanceOf[js.Any])
-    if (DeploymentDurationInMinutes != null) __obj.updateDynamic("DeploymentDurationInMinutes")(DeploymentDurationInMinutes.asInstanceOf[js.Any])
-    if (DeploymentNumber != null) __obj.updateDynamic("DeploymentNumber")(DeploymentNumber.asInstanceOf[js.Any])
-    if (FinalBakeTimeInMinutes != null) __obj.updateDynamic("FinalBakeTimeInMinutes")(FinalBakeTimeInMinutes.asInstanceOf[js.Any])
-    if (GrowthFactor != null) __obj.updateDynamic("GrowthFactor")(GrowthFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeploymentDurationInMinutes)) __obj.updateDynamic("DeploymentDurationInMinutes")(DeploymentDurationInMinutes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeploymentNumber)) __obj.updateDynamic("DeploymentNumber")(DeploymentNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(FinalBakeTimeInMinutes)) __obj.updateDynamic("FinalBakeTimeInMinutes")(FinalBakeTimeInMinutes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(GrowthFactor)) __obj.updateDynamic("GrowthFactor")(GrowthFactor.get.asInstanceOf[js.Any])
     if (GrowthType != null) __obj.updateDynamic("GrowthType")(GrowthType.asInstanceOf[js.Any])
-    if (PercentageComplete != null) __obj.updateDynamic("PercentageComplete")(PercentageComplete.asInstanceOf[js.Any])
+    if (!js.isUndefined(PercentageComplete)) __obj.updateDynamic("PercentageComplete")(PercentageComplete.get.asInstanceOf[js.Any])
     if (StartedAt != null) __obj.updateDynamic("StartedAt")(StartedAt.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentSummary]

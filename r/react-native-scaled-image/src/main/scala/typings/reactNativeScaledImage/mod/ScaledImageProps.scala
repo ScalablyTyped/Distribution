@@ -18,14 +18,14 @@ object ScaledImageProps {
   @scala.inline
   def apply(
     source: ImageSourcePropType,
-    height: Int | Double = null,
-    style: StyleProp[ImageStyle] = null,
-    width: Int | Double = null
+    height: js.UndefOr[Double] = js.undefined,
+    style: js.UndefOr[Null | StyleProp[ImageStyle]] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): ScaledImageProps = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaledImageProps]
   }
 }

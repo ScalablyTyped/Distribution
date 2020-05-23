@@ -38,12 +38,12 @@ object Entitlement {
     EntitlementArn: string,
     Name: string,
     Subscribers: listOfString,
-    DataTransferSubscriberFeePercent: Int | Double = null,
+    DataTransferSubscriberFeePercent: js.UndefOr[integer] = js.undefined,
     Description: string = null,
     Encryption: Encryption = null
   ): Entitlement = {
     val __obj = js.Dynamic.literal(EntitlementArn = EntitlementArn.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Subscribers = Subscribers.asInstanceOf[js.Any])
-    if (DataTransferSubscriberFeePercent != null) __obj.updateDynamic("DataTransferSubscriberFeePercent")(DataTransferSubscriberFeePercent.asInstanceOf[js.Any])
+    if (!js.isUndefined(DataTransferSubscriberFeePercent)) __obj.updateDynamic("DataTransferSubscriberFeePercent")(DataTransferSubscriberFeePercent.get.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
     __obj.asInstanceOf[Entitlement]

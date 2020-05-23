@@ -1,14 +1,18 @@
 package typings.igniteUi.Infragistics
 
-import typings.igniteUi.InfragisticsModeSettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Infragistics.InfragisticsMode")
-@js.native
-class InfragisticsMode protected () extends js.Object {
-  def this(settings: InfragisticsModeSettings) = this()
-  def isActive(): Unit = js.native
+trait InfragisticsMode extends js.Object {
+  def isActive(): Unit
+}
+
+object InfragisticsMode {
+  @scala.inline
+  def apply(isActive: () => Unit): InfragisticsMode = {
+    val __obj = js.Dynamic.literal(isActive = js.Any.fromFunction0(isActive))
+    __obj.asInstanceOf[InfragisticsMode]
+  }
 }
 

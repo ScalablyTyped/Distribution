@@ -1,9 +1,9 @@
 package typings.jsonEditor.mod
 
-import typings.jsonEditor.AnonAce
-import typings.jsonEditor.AnonCustomvalidators
 import typings.jsonEditor.JSONEditor
 import typings.jsonEditor.JSONEditorOptions
+import typings.jsonEditor.anon.Ace
+import typings.jsonEditor.anon.Customvalidators
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ class ^[TValue] protected () extends JSONEditor[TValue] {
 @JSImport("json-editor", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var defaults: AnonCustomvalidators = js.native
-  var plugins: AnonAce = js.native
+  var defaults: Customvalidators = js.native
+  var plugins: Ace = js.native
 }
 

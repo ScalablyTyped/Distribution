@@ -20,10 +20,10 @@ object Options {
     rejectPublicSuffixes: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowSpecialUseDomain)) __obj.updateDynamic("allowSpecialUseDomain")(allowSpecialUseDomain.asInstanceOf[js.Any])
-    if (!js.isUndefined(looseMode)) __obj.updateDynamic("looseMode")(looseMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSpecialUseDomain)) __obj.updateDynamic("allowSpecialUseDomain")(allowSpecialUseDomain.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(looseMode)) __obj.updateDynamic("looseMode")(looseMode.get.asInstanceOf[js.Any])
     if (prefixSecurity != null) __obj.updateDynamic("prefixSecurity")(prefixSecurity.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectPublicSuffixes)) __obj.updateDynamic("rejectPublicSuffixes")(rejectPublicSuffixes.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectPublicSuffixes)) __obj.updateDynamic("rejectPublicSuffixes")(rejectPublicSuffixes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

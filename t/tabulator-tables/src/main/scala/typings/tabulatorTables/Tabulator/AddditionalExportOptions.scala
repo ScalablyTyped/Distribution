@@ -25,12 +25,12 @@ object AddditionalExportOptions {
     rowGroups: js.UndefOr[Boolean] = js.undefined
   ): AddditionalExportOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(columnCalcs)) __obj.updateDynamic("columnCalcs")(columnCalcs.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnGroups)) __obj.updateDynamic("columnGroups")(columnGroups.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnHeaders)) __obj.updateDynamic("columnHeaders")(columnHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(dataTree)) __obj.updateDynamic("dataTree")(dataTree.asInstanceOf[js.Any])
-    if (!js.isUndefined(formatCells)) __obj.updateDynamic("formatCells")(formatCells.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowGroups)) __obj.updateDynamic("rowGroups")(rowGroups.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnCalcs)) __obj.updateDynamic("columnCalcs")(columnCalcs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnGroups)) __obj.updateDynamic("columnGroups")(columnGroups.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnHeaders)) __obj.updateDynamic("columnHeaders")(columnHeaders.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataTree)) __obj.updateDynamic("dataTree")(dataTree.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(formatCells)) __obj.updateDynamic("formatCells")(formatCells.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowGroups)) __obj.updateDynamic("rowGroups")(rowGroups.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddditionalExportOptions]
   }
 }

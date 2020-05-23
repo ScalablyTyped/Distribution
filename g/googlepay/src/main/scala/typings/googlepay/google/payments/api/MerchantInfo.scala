@@ -29,13 +29,21 @@ trait MerchantInfo extends js.Object {
     * Pay Developer Profile will be used.
     */
   var merchantName: js.UndefOr[String] = js.undefined
+  /**
+    * The info of the software used by merchants to integrate with GPay.
+    *
+    * This field is optional and its values may be set by software
+    * providers to identify the software the merchant is using.
+    */
+  var softwareInfo: js.UndefOr[SoftwareInfo] = js.undefined
 }
 
 object MerchantInfo {
   @scala.inline
-  def apply(merchantId: String, merchantName: String = null): MerchantInfo = {
+  def apply(merchantId: String, merchantName: String = null, softwareInfo: SoftwareInfo = null): MerchantInfo = {
     val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any])
     if (merchantName != null) __obj.updateDynamic("merchantName")(merchantName.asInstanceOf[js.Any])
+    if (softwareInfo != null) __obj.updateDynamic("softwareInfo")(softwareInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[MerchantInfo]
   }
 }

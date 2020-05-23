@@ -1,28 +1,28 @@
 package typings.gapiClientYoutube.gapi.client.youtube
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientYoutube.AnonAlt
-import typings.gapiClientYoutube.AnonForChannelId
-import typings.gapiClientYoutube.AnonQuotaUser
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientYoutube.anon.Alt
+import typings.gapiClientYoutube.anon.ForChannelId
+import typings.gapiClientYoutube.anon.QuotaUser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SubscriptionsResource extends js.Object {
   /** Deletes a subscription. */
-  def delete(request: AnonQuotaUser): Request_[Unit]
+  def delete(request: QuotaUser): Request[Unit]
   /** Adds a subscription for the authenticated user's channel. */
-  def insert(request: AnonAlt): Request_[Subscription]
+  def insert(request: Alt): Request[Subscription]
   /** Returns subscription resources that match the API request criteria. */
-  def list(request: AnonForChannelId): Request_[SubscriptionListResponse]
+  def list(request: ForChannelId): Request[SubscriptionListResponse]
 }
 
 object SubscriptionsResource {
   @scala.inline
   def apply(
-    delete: AnonQuotaUser => Request_[Unit],
-    insert: AnonAlt => Request_[Subscription],
-    list: AnonForChannelId => Request_[SubscriptionListResponse]
+    delete: QuotaUser => Request[Unit],
+    insert: Alt => Request[Subscription],
+    list: ForChannelId => Request[SubscriptionListResponse]
   ): SubscriptionsResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
     __obj.asInstanceOf[SubscriptionsResource]

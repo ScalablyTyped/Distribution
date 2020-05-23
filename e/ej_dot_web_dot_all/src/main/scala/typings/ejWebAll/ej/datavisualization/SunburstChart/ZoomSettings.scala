@@ -29,7 +29,7 @@ object ZoomSettings {
     toolbarVerticalAlignment: SunburstVerticalAlignment | String = null
   ): ZoomSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.get.asInstanceOf[js.Any])
     if (toolbarHorizontalAlignment != null) __obj.updateDynamic("toolbarHorizontalAlignment")(toolbarHorizontalAlignment.asInstanceOf[js.Any])
     if (toolbarVerticalAlignment != null) __obj.updateDynamic("toolbarVerticalAlignment")(toolbarVerticalAlignment.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomSettings]

@@ -5,41 +5,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Waypoint")
-@js.native
-class Waypoint protected () extends js.Object {
-  def this(options: WaypointOptions) = this()
+trait Waypoint extends js.Object {
   // properties
-  var adapter: WaypointAdapter = js.native
-  var context: WaypointContext = js.native
-  var element: HTMLElement = js.native
-  var group: WaypointGroup = js.native
-  var options: WaypointOptions = js.native
-  var triggerPoint: Double = js.native
+  var adapter: WaypointAdapter
+  var context: WaypointContext
+  var element: HTMLElement
+  var group: WaypointGroup
+  var options: WaypointOptions
+  var triggerPoint: Double
   // Instance Methods
-  def destroy(): Waypoint = js.native
-  def disable(): Waypoint = js.native
-  def enable(): Waypoint = js.native
-  def next(): Waypoint | String = js.native
+  def destroy(): Waypoint
+  def disable(): Waypoint
+  def enable(): Waypoint
+  def next(): Waypoint | String
    // actually `null` not string
-  def previous(): Waypoint | String = js.native
+  def previous(): Waypoint | String
 }
 
-/* static members */
-@JSGlobal("Waypoint")
-@js.native
-object Waypoint extends js.Object {
-  var Adapter: WaypointAdapter = js.native
-  // Waypoint.Context
-  var Context: AnonFindByElement = js.native
-  var adapters: AnonPush = js.native
-   // actually `null` not string
-  // Class Methods
-  def destroyAll(): Unit = js.native
-  def disableAll(): Unit = js.native
-  def enableAll(): Unit = js.native
-  def refreshAll(): Unit = js.native
-  def viewportHeight(): Double = js.native
-  def viewportWidth(): Double = js.native
+object Waypoint {
+  @scala.inline
+  def apply(
+    adapter: WaypointAdapter,
+    context: WaypointContext,
+    destroy: () => Waypoint,
+    disable: () => Waypoint,
+    element: HTMLElement,
+    enable: () => Waypoint,
+    group: WaypointGroup,
+    next: () => Waypoint | String,
+    options: WaypointOptions,
+    previous: () => Waypoint | String,
+    triggerPoint: Double
+  ): Waypoint = {
+    val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), disable = js.Any.fromFunction0(disable), element = element.asInstanceOf[js.Any], enable = js.Any.fromFunction0(enable), group = group.asInstanceOf[js.Any], next = js.Any.fromFunction0(next), options = options.asInstanceOf[js.Any], previous = js.Any.fromFunction0(previous), triggerPoint = triggerPoint.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Waypoint]
+  }
 }
 

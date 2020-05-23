@@ -4,16 +4,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.LinkFormat")
-@js.native
-class LinkFormat protected () extends js.Object {
-  val Application: typings.activexExcel.Excel.Application = js.native
-  var AutoUpdate: Boolean = js.native
-  val Creator: XlCreator = js.native
+trait LinkFormat extends js.Object {
+  val Application: typings.activexExcel.Excel.Application
+  var AutoUpdate: Boolean
+  val Creator: XlCreator
   @JSName("Excel.LinkFormat_typekey")
-  var ExcelDotLinkFormat_typekey: LinkFormat = js.native
-  var Locked: Boolean = js.native
-  val Parent: js.Any = js.native
-  def Update(): Unit = js.native
+  var ExcelDotLinkFormat_typekey: LinkFormat
+  var Locked: Boolean
+  val Parent: js.Any
+  def Update(): Unit
+}
+
+object LinkFormat {
+  @scala.inline
+  def apply(
+    Application: Application,
+    AutoUpdate: Boolean,
+    Creator: XlCreator,
+    ExcelDotLinkFormat_typekey: LinkFormat,
+    Locked: Boolean,
+    Parent: js.Any,
+    Update: () => Unit
+  ): LinkFormat = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], AutoUpdate = AutoUpdate.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Locked = Locked.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Update = js.Any.fromFunction0(Update))
+    __obj.updateDynamic("Excel.LinkFormat_typekey")(ExcelDotLinkFormat_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LinkFormat]
+  }
 }
 

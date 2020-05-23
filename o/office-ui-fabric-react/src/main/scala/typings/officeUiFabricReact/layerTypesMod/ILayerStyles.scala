@@ -18,10 +18,10 @@ trait ILayerStyles extends js.Object {
 
 object ILayerStyles {
   @scala.inline
-  def apply(content: IStyle = null, root: IStyle = null): ILayerStyles = {
+  def apply(content: js.UndefOr[Null | IStyle] = js.undefined, root: js.UndefOr[Null | IStyle] = js.undefined): ILayerStyles = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(content)) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILayerStyles]
   }
 }

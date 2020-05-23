@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.Diagram
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,14 +17,6 @@ object ContainerType extends js.Object {
   //Sets the container type as Stack
   @js.native
   sealed trait Stack extends ContainerType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ContainerType with Double] = js.native
-  /* 0 */ @js.native
-  object Canvas extends TopLevel[Canvas with Double]
-  
-  /* 1 */ @js.native
-  object Stack extends TopLevel[Stack with Double]
   
 }
 

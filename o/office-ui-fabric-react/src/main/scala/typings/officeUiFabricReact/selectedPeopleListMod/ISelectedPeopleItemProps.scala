@@ -2,7 +2,7 @@ package typings.officeUiFabricReact.selectedPeopleListMod
 
 import typings.officeUiFabricReact.baseSelectedItemsListTypesMod.ISelectedItemProps
 import typings.officeUiFabricReact.personaTypesMod.IPersonaProps
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`

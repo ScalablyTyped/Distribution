@@ -76,7 +76,7 @@ object IColorRectangleProps {
     ariaValueFormat: String = null,
     className: String = null,
     componentRef: IRefObject[IColorRectangle] = null,
-    minSize: Int | Double = null,
+    minSize: js.UndefOr[Double] = js.undefined,
     onChange: (/* ev */ (MouseEvent[Element, NativeMouseEvent]) | KeyboardEvent[Element], /* color */ IColor) => Unit = null,
     styles: IStyleFunctionOrObject[IColorRectangleStyleProps, IColorRectangleStyles] = null,
     theme: ITheme = null
@@ -87,7 +87,7 @@ object IColorRectangleProps {
     if (ariaValueFormat != null) __obj.updateDynamic("ariaValueFormat")(ariaValueFormat.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSize)) __obj.updateDynamic("minSize")(minSize.get.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])

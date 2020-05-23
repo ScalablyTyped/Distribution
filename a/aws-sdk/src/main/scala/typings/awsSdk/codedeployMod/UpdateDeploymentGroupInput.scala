@@ -71,7 +71,7 @@ trait UpdateDeploymentGroupInput extends js.Object {
     */
   var serviceRoleArn: js.UndefOr[Role] = js.native
   /**
-    * Information about triggers to change when the deployment group is updated. For examples, see Modify Triggers in an AWS CodeDeploy Deployment Group in the AWS CodeDeploy User Guide.
+    * Information about triggers to change when the deployment group is updated. For examples, see Edit a Trigger in a CodeDeploy Deployment Group in the AWS CodeDeploy User Guide.
     */
   var triggerConfigurations: js.UndefOr[TriggerConfigList] = js.native
 }

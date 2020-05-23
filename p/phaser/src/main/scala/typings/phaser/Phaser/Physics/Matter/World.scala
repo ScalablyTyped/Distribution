@@ -16,7 +16,6 @@ import typings.phaser.Phaser.Tilemaps.StaticTilemapLayer
 import typings.phaser.Phaser.Tilemaps.Tile
 import typings.phaser.Phaser.Types.Physics.Matter.MatterDebugConfig
 import typings.phaser.Phaser.Types.Physics.Matter.MatterRunnerConfig
-import typings.phaser.Phaser.Types.Physics.Matter.MatterWorldConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +33,8 @@ import scala.scalajs.js.annotation._
   * 
   * This class is an Event Emitter and will proxy _all_ Matter JS events, as they are received.
   */
-@JSGlobal("Phaser.Physics.Matter.World")
 @js.native
-class World protected () extends EventEmitter {
-  /**
-    * 
-    * @param scene The Scene to which this Matter World instance belongs.
-    * @param config The Matter World configuration object.
-    */
-  def this(scene: Scene, config: MatterWorldConfig) = this()
+trait World extends EventEmitter {
   /**
     * Automatically call Engine.update every time the game steps.
     * If you disable this then you are responsible for calling `World.step` directly from your game.

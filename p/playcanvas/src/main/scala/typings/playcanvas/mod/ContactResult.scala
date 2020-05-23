@@ -5,19 +5,26 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @class
-  * @name pc.ContactResult
-  * @classdesc Object holding the result of a contact between two Entities.
-  * @description Create a new ContactResult.
-  * @param {pc.Entity} other - The entity that was involved in the contact with this entity.
-  * @param {pc.ContactPoint[]} contacts - An array of ContactPoints with the other entity.
-  * @property {pc.Entity} other The entity that was involved in the contact with this entity.
-  * @property {pc.ContactPoint[]} contacts An array of ContactPoints with the other entity.
+  * Create a new ContactResult.
+  * @property other - The entity that was involved in the contact with this entity.
+  * @property contacts - An array of ContactPoints with the other entity.
+  * @param other - The entity that was involved in the contact with this entity.
+  * @param contacts - An array of ContactPoints with the other entity.
   */
 @JSImport("playcanvas", "ContactResult")
 @js.native
 class ContactResult protected ()
   extends typings.playcanvas.pc.ContactResult {
   def this(other: typings.playcanvas.pc.Entity, contacts: js.Array[typings.playcanvas.pc.ContactPoint]) = this()
+  /**
+    * An array of ContactPoints with the other entity.
+    */
+  /* CompleteClass */
+  override var contacts: js.Array[typings.playcanvas.pc.ContactPoint] = js.native
+  /**
+    * The entity that was involved in the contact with this entity.
+    */
+  /* CompleteClass */
+  override var other: typings.playcanvas.pc.Entity = js.native
 }
 

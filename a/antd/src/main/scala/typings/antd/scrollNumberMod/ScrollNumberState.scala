@@ -11,10 +11,13 @@ trait ScrollNumberState extends js.Object {
 
 object ScrollNumberState {
   @scala.inline
-  def apply(animateStarted: js.UndefOr[Boolean] = js.undefined, count: String | Double = null): ScrollNumberState = {
+  def apply(
+    animateStarted: js.UndefOr[Boolean] = js.undefined,
+    count: js.UndefOr[Null | String | Double] = js.undefined
+  ): ScrollNumberState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animateStarted)) __obj.updateDynamic("animateStarted")(animateStarted.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(animateStarted)) __obj.updateDynamic("animateStarted")(animateStarted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollNumberState]
   }
 }

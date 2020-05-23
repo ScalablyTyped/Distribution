@@ -39,7 +39,7 @@ object UpdateDashboardResponse {
     CreationStatus: ResourceStatus = null,
     DashboardId: RestrictiveResourceId = null,
     RequestId: String = null,
-    Status: Int | scala.Double = null,
+    Status: js.UndefOr[StatusCode] = js.undefined,
     VersionArn: Arn = null
   ): UpdateDashboardResponse = {
     val __obj = js.Dynamic.literal()
@@ -47,7 +47,7 @@ object UpdateDashboardResponse {
     if (CreationStatus != null) __obj.updateDynamic("CreationStatus")(CreationStatus.asInstanceOf[js.Any])
     if (DashboardId != null) __obj.updateDynamic("DashboardId")(DashboardId.asInstanceOf[js.Any])
     if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
+    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
     if (VersionArn != null) __obj.updateDynamic("VersionArn")(VersionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDashboardResponse]
   }

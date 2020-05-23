@@ -13,8 +13,8 @@ object PageableSwitchModeOptions {
   @scala.inline
   def apply(fetch: js.UndefOr[Boolean] = js.undefined, resetState: js.UndefOr[Boolean] = js.undefined): PageableSwitchModeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fetch)) __obj.updateDynamic("fetch")(fetch.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetState)) __obj.updateDynamic("resetState")(resetState.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetch)) __obj.updateDynamic("fetch")(fetch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetState)) __obj.updateDynamic("resetState")(resetState.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageableSwitchModeOptions]
   }
 }

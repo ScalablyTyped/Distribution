@@ -1,6 +1,6 @@
 package typings.materialUiCore.mod
 
-import typings.materialUiCore.PartialWithWidth
+import typings.materialUiCore.anon.PartialWithWidth
 import typings.materialUiCore.withMobileDialogWithMobileDialogMod.InjectedProps
 import typings.materialUiCore.withMobileDialogWithMobileDialogMod.WithMobileDialogOptions
 import typings.react.mod.ComponentType

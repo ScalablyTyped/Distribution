@@ -17,20 +17,20 @@ trait IDocumentCardActivityStyles extends js.Object {
 object IDocumentCardActivityStyles {
   @scala.inline
   def apply(
-    activity: IStyle = null,
-    avatar: IStyle = null,
-    avatars: IStyle = null,
-    details: IStyle = null,
-    name: IStyle = null,
-    root: IStyle = null
+    activity: js.UndefOr[Null | IStyle] = js.undefined,
+    avatar: js.UndefOr[Null | IStyle] = js.undefined,
+    avatars: js.UndefOr[Null | IStyle] = js.undefined,
+    details: js.UndefOr[Null | IStyle] = js.undefined,
+    name: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined
   ): IDocumentCardActivityStyles = {
     val __obj = js.Dynamic.literal()
-    if (activity != null) __obj.updateDynamic("activity")(activity.asInstanceOf[js.Any])
-    if (avatar != null) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
-    if (avatars != null) __obj.updateDynamic("avatars")(avatars.asInstanceOf[js.Any])
-    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(activity)) __obj.updateDynamic("activity")(activity.asInstanceOf[js.Any])
+    if (!js.isUndefined(avatar)) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
+    if (!js.isUndefined(avatars)) __obj.updateDynamic("avatars")(avatars.asInstanceOf[js.Any])
+    if (!js.isUndefined(details)) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDocumentCardActivityStyles]
   }
 }

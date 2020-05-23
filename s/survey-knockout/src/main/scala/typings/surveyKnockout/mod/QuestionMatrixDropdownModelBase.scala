@@ -1,10 +1,11 @@
 package typings.surveyKnockout.mod
 
+import typings.surveyKnockout.anon.Calculations
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.surveyKnockout.mod.IMatrixDropdownData because var conflicts: columns, value. Inlined onRowChanged, onRowChanging, getRowIndex, validateCell, createQuestion, getSharedQuestionByName, onTotalValueChanged, getSurvey */ @JSImport("survey-knockout", "QuestionMatrixDropdownModelBase")
 @js.native
 class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseModel[MatrixDropdownRowModelBase, MatrixDropdownColumn] {
@@ -82,9 +83,11 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
   def getColumnWidth(column: MatrixDropdownColumn): String = js.native
   /* protected */ def getFirstCellQuestion(onError: Boolean): Question = js.native
   def getFooterText(): LocalizableString = js.native
+  def getPlainData(options: Calculations): js.Any = js.native
   def getRequiredText(): String = js.native
   /* protected */ def getRowDisplayValue(row: MatrixDropdownRowModelBase, rowValue: js.Any): js.Any = js.native
   def getRowIndex(row: MatrixDropdownRowModelBase): Double = js.native
+  def getRowTitleWidth(): String = js.native
   /**
     * Returns the row value. If the row value is empty, the object is empty: {}.
     * @param rowIndex row index from 0 to visible row count - 1.

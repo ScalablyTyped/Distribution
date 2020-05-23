@@ -12,7 +12,7 @@ class FixedOffsetZone () extends Zone
 @JSImport("luxon", "FixedOffsetZone")
 @js.native
 object FixedOffsetZone extends js.Object {
-  var utcInstance: String = js.native
+  var utcInstance: FixedOffsetZone = js.native
   def instance(offset: Double): FixedOffsetZone = js.native
   def parseSpecifier(s: String): FixedOffsetZone = js.native
 }

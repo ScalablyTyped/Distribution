@@ -70,7 +70,7 @@ object TableRestoreStatus {
     ClusterIdentifier: String = null,
     Message: String = null,
     NewTableName: String = null,
-    ProgressInMegaBytes: Int | scala.Double = null,
+    ProgressInMegaBytes: js.UndefOr[LongOptional] = js.undefined,
     RequestTime: TStamp = null,
     SnapshotIdentifier: String = null,
     SourceDatabaseName: String = null,
@@ -80,13 +80,13 @@ object TableRestoreStatus {
     TableRestoreRequestId: String = null,
     TargetDatabaseName: String = null,
     TargetSchemaName: String = null,
-    TotalDataInMegaBytes: Int | scala.Double = null
+    TotalDataInMegaBytes: js.UndefOr[LongOptional] = js.undefined
   ): TableRestoreStatus = {
     val __obj = js.Dynamic.literal()
     if (ClusterIdentifier != null) __obj.updateDynamic("ClusterIdentifier")(ClusterIdentifier.asInstanceOf[js.Any])
     if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
     if (NewTableName != null) __obj.updateDynamic("NewTableName")(NewTableName.asInstanceOf[js.Any])
-    if (ProgressInMegaBytes != null) __obj.updateDynamic("ProgressInMegaBytes")(ProgressInMegaBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(ProgressInMegaBytes)) __obj.updateDynamic("ProgressInMegaBytes")(ProgressInMegaBytes.get.asInstanceOf[js.Any])
     if (RequestTime != null) __obj.updateDynamic("RequestTime")(RequestTime.asInstanceOf[js.Any])
     if (SnapshotIdentifier != null) __obj.updateDynamic("SnapshotIdentifier")(SnapshotIdentifier.asInstanceOf[js.Any])
     if (SourceDatabaseName != null) __obj.updateDynamic("SourceDatabaseName")(SourceDatabaseName.asInstanceOf[js.Any])
@@ -96,7 +96,7 @@ object TableRestoreStatus {
     if (TableRestoreRequestId != null) __obj.updateDynamic("TableRestoreRequestId")(TableRestoreRequestId.asInstanceOf[js.Any])
     if (TargetDatabaseName != null) __obj.updateDynamic("TargetDatabaseName")(TargetDatabaseName.asInstanceOf[js.Any])
     if (TargetSchemaName != null) __obj.updateDynamic("TargetSchemaName")(TargetSchemaName.asInstanceOf[js.Any])
-    if (TotalDataInMegaBytes != null) __obj.updateDynamic("TotalDataInMegaBytes")(TotalDataInMegaBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalDataInMegaBytes)) __obj.updateDynamic("TotalDataInMegaBytes")(TotalDataInMegaBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableRestoreStatus]
   }
 }

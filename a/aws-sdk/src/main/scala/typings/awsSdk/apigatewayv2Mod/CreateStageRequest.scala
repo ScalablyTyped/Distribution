@@ -58,7 +58,7 @@ object CreateStageRequest {
     ApiId: string,
     StageName: StringWithLengthBetween1And128,
     AccessLogSettings: AccessLogSettings = null,
-    AutoDeploy: js.UndefOr[Boolean] = js.undefined,
+    AutoDeploy: js.UndefOr[boolean] = js.undefined,
     ClientCertificateId: Id = null,
     DefaultRouteSettings: RouteSettings = null,
     DeploymentId: Id = null,
@@ -69,7 +69,7 @@ object CreateStageRequest {
   ): CreateStageRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], StageName = StageName.asInstanceOf[js.Any])
     if (AccessLogSettings != null) __obj.updateDynamic("AccessLogSettings")(AccessLogSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoDeploy)) __obj.updateDynamic("AutoDeploy")(AutoDeploy.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoDeploy)) __obj.updateDynamic("AutoDeploy")(AutoDeploy.get.asInstanceOf[js.Any])
     if (ClientCertificateId != null) __obj.updateDynamic("ClientCertificateId")(ClientCertificateId.asInstanceOf[js.Any])
     if (DefaultRouteSettings != null) __obj.updateDynamic("DefaultRouteSettings")(DefaultRouteSettings.asInstanceOf[js.Any])
     if (DeploymentId != null) __obj.updateDynamic("DeploymentId")(DeploymentId.asInstanceOf[js.Any])

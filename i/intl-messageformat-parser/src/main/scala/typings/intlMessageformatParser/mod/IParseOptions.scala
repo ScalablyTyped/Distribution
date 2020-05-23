@@ -15,7 +15,7 @@ trait IParseOptions
 object IParseOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     filename: String = null,
     startRule: String = null,
     tracer: js.Any = null

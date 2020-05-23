@@ -50,24 +50,24 @@ trait RetryConfig extends js.Object {
 object RetryConfig {
   @scala.inline
   def apply(
-    currentRetryAttempt: Int | Double = null,
+    currentRetryAttempt: js.UndefOr[Double] = js.undefined,
     httpMethodsToRetry: js.Array[String] = null,
     instance: AxiosInstance = null,
-    noResponseRetries: Int | Double = null,
+    noResponseRetries: js.UndefOr[Double] = js.undefined,
     onRetryAttempt: /* err */ AxiosError[_] => Unit = null,
-    retry: Int | Double = null,
-    retryDelay: Int | Double = null,
+    retry: js.UndefOr[Double] = js.undefined,
+    retryDelay: js.UndefOr[Double] = js.undefined,
     shouldRetry: /* err */ AxiosError[_] => Boolean = null,
     statusCodesToRetry: js.Array[js.Array[Double]] = null
   ): RetryConfig = {
     val __obj = js.Dynamic.literal()
-    if (currentRetryAttempt != null) __obj.updateDynamic("currentRetryAttempt")(currentRetryAttempt.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentRetryAttempt)) __obj.updateDynamic("currentRetryAttempt")(currentRetryAttempt.get.asInstanceOf[js.Any])
     if (httpMethodsToRetry != null) __obj.updateDynamic("httpMethodsToRetry")(httpMethodsToRetry.asInstanceOf[js.Any])
     if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
-    if (noResponseRetries != null) __obj.updateDynamic("noResponseRetries")(noResponseRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined(noResponseRetries)) __obj.updateDynamic("noResponseRetries")(noResponseRetries.get.asInstanceOf[js.Any])
     if (onRetryAttempt != null) __obj.updateDynamic("onRetryAttempt")(js.Any.fromFunction1(onRetryAttempt))
-    if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
-    if (retryDelay != null) __obj.updateDynamic("retryDelay")(retryDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(retry)) __obj.updateDynamic("retry")(retry.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retryDelay)) __obj.updateDynamic("retryDelay")(retryDelay.get.asInstanceOf[js.Any])
     if (shouldRetry != null) __obj.updateDynamic("shouldRetry")(js.Any.fromFunction1(shouldRetry))
     if (statusCodesToRetry != null) __obj.updateDynamic("statusCodesToRetry")(statusCodesToRetry.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetryConfig]

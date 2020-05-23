@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.ViewManagement
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object ApplicationViewSwitchingOptions extends js.Object {
   /** Immediately transition between windows without animation. */
   @js.native
   sealed trait skipAnimation extends ApplicationViewSwitchingOptions
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ApplicationViewSwitchingOptions with Double] = js.native
-  /* 2 */ @js.native
-  object consolidateViews extends TopLevel[consolidateViews with Double]
-  
-  /* 0 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 1 */ @js.native
-  object skipAnimation extends TopLevel[skipAnimation with Double]
   
 }
 

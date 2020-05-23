@@ -28,12 +28,12 @@ object GetTransitGatewayRegistrationsRequest {
   @scala.inline
   def apply(
     GlobalNetworkId: String,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: String = null,
     TransitGatewayArns: StringList = null
   ): GetTransitGatewayRegistrationsRequest = {
     val __obj = js.Dynamic.literal(GlobalNetworkId = GlobalNetworkId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (TransitGatewayArns != null) __obj.updateDynamic("TransitGatewayArns")(TransitGatewayArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTransitGatewayRegistrationsRequest]

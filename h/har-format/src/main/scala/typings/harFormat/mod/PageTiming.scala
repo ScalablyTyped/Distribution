@@ -27,16 +27,16 @@ trait PageTiming extends js.Object {
 object PageTiming {
   @scala.inline
   def apply(
-    _startRender: Int | Double = null,
+    _startRender: js.UndefOr[Null | Double] = js.undefined,
     comment: String = null,
-    onContentLoad: Int | Double = null,
-    onLoad: Int | Double = null
+    onContentLoad: js.UndefOr[Double] = js.undefined,
+    onLoad: js.UndefOr[Double] = js.undefined
   ): PageTiming = {
     val __obj = js.Dynamic.literal()
-    if (_startRender != null) __obj.updateDynamic("_startRender")(_startRender.asInstanceOf[js.Any])
+    if (!js.isUndefined(_startRender)) __obj.updateDynamic("_startRender")(_startRender.asInstanceOf[js.Any])
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (onContentLoad != null) __obj.updateDynamic("onContentLoad")(onContentLoad.asInstanceOf[js.Any])
-    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad.asInstanceOf[js.Any])
+    if (!js.isUndefined(onContentLoad)) __obj.updateDynamic("onContentLoad")(onContentLoad.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(onLoad)) __obj.updateDynamic("onLoad")(onLoad.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageTiming]
   }
 }

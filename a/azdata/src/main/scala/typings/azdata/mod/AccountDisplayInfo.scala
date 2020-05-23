@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation._
 
 trait AccountDisplayInfo extends js.Object {
   /**
-  		 * account provider (eg, Work/School vs Microsoft Account)
-  		 */
+    * account provider (eg, Work/School vs Microsoft Account)
+    */
   var accountType: String
   /**
-  		 * A display name that offers context for the account, such as "Contoso".
-  		 */
+    * A display name that offers context for the account, such as "Contoso".
+    */
   var contextualDisplayName: String
   /**
-  		 * A display name that identifies the account, such as "User Name".
-  		 */
+    * A display name that identifies the account, such as "User Name".
+    */
   var displayName: String
   /**
-  		 * User id that identifies the account, such as "user@contoso.com".
-  		 */
+    * User id that identifies the account, such as "user@contoso.com".
+    */
   var userId: String
 }
 

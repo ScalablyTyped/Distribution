@@ -1,5 +1,6 @@
 package typings.angularCore
 
+import typings.angularCore.anon.Host
 import typings.typescript.mod.CompilerHost
 import typings.typescript.mod.CompilerOptions
 import scala.scalajs.js
@@ -24,20 +25,20 @@ object compilerHostMod extends js.Object {
     tree: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Tree */ js.Any,
     tsconfigPath: String,
     basePath: String
-  ): AnonHost = js.native
+  ): Host = js.native
   def createMigrationProgram(
     tree: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Tree */ js.Any,
     tsconfigPath: String,
     basePath: String,
     fakeFileRead: FakeReadFileFn
-  ): AnonHost = js.native
+  ): Host = js.native
   def createMigrationProgram(
     tree: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Tree */ js.Any,
     tsconfigPath: String,
     basePath: String,
     fakeFileRead: FakeReadFileFn,
     additionalFiles: js.Array[String]
-  ): AnonHost = js.native
+  ): Host = js.native
   type FakeReadFileFn = js.Function1[/* fileName */ String, String | Null]
 }
 

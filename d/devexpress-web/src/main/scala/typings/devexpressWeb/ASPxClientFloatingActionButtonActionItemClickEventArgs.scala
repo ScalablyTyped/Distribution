@@ -7,17 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientFloatingActionButton.ActionItemClick event.
   */
-@JSGlobal("ASPxClientFloatingActionButtonActionItemClickEventArgs")
-@js.native
-class ASPxClientFloatingActionButtonActionItemClickEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientFloatingActionButtonActionItemClickEventArgs class.
-    * @param actionName A string value that specifies the action item's name.
-    */
-  def this(actionName: String) = this()
+trait ASPxClientFloatingActionButtonActionItemClickEventArgs extends ASPxClientEventArgs {
   /**
     * Gets the name of the processed action.
     */
-  var actionName: String = js.native
+  var actionName: String
+}
+
+object ASPxClientFloatingActionButtonActionItemClickEventArgs {
+  @scala.inline
+  def apply(actionName: String): ASPxClientFloatingActionButtonActionItemClickEventArgs = {
+    val __obj = js.Dynamic.literal(actionName = actionName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientFloatingActionButtonActionItemClickEventArgs]
+  }
 }
 

@@ -15,17 +15,17 @@ trait InteractiveState extends js.Object {
 object InteractiveState {
   @scala.inline
   def apply(
-    startBearing: Int | Double = null,
+    startBearing: js.UndefOr[Double] = js.undefined,
     startPanLngLat: js.Tuple2[Double, Double] = null,
-    startPitch: Int | Double = null,
-    startZoom: Int | Double = null,
+    startPitch: js.UndefOr[Double] = js.undefined,
+    startZoom: js.UndefOr[Double] = js.undefined,
     startZoomLngLat: js.Tuple2[Double, Double] = null
   ): InteractiveState = {
     val __obj = js.Dynamic.literal()
-    if (startBearing != null) __obj.updateDynamic("startBearing")(startBearing.asInstanceOf[js.Any])
+    if (!js.isUndefined(startBearing)) __obj.updateDynamic("startBearing")(startBearing.get.asInstanceOf[js.Any])
     if (startPanLngLat != null) __obj.updateDynamic("startPanLngLat")(startPanLngLat.asInstanceOf[js.Any])
-    if (startPitch != null) __obj.updateDynamic("startPitch")(startPitch.asInstanceOf[js.Any])
-    if (startZoom != null) __obj.updateDynamic("startZoom")(startZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(startPitch)) __obj.updateDynamic("startPitch")(startPitch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startZoom)) __obj.updateDynamic("startZoom")(startZoom.get.asInstanceOf[js.Any])
     if (startZoomLngLat != null) __obj.updateDynamic("startZoomLngLat")(startZoomLngLat.asInstanceOf[js.Any])
     __obj.asInstanceOf[InteractiveState]
   }

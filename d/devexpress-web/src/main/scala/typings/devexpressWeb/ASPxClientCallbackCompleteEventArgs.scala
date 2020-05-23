@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for events concerning the final processing of a callback.
   */
-@JSGlobal("ASPxClientCallbackCompleteEventArgs")
-@js.native
-class ASPxClientCallbackCompleteEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new object of the ASPxClientCallbackCompleteEventArgs type with the specified settings.
-    * @param parameter A string value that represents a parameter passed to the server for processing.
-    * @param result A string value that represents the result of server-side processing.
-    */
-  def this(parameter: String, result: String) = this()
+trait ASPxClientCallbackCompleteEventArgs extends ASPxClientEventArgs {
   /**
     * Gets a string that contains specific information (if any) passed from the client side for server-side processing.
     */
-  var parameter: String = js.native
+  var parameter: String
   /**
     * Gets a string that contains specific information (if any) that has been passed from the server to the client side for further processing.
     */
-  var result: String = js.native
+  var result: String
+}
+
+object ASPxClientCallbackCompleteEventArgs {
+  @scala.inline
+  def apply(parameter: String, result: String): ASPxClientCallbackCompleteEventArgs = {
+    val __obj = js.Dynamic.literal(parameter = parameter.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientCallbackCompleteEventArgs]
+  }
 }
 

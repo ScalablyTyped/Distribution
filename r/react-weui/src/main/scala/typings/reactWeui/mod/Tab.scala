@@ -1,6 +1,6 @@
 package typings.reactWeui.mod
 
-import typings.reactWeui.AnonDefaultIndex
+import typings.reactWeui.anon.DefaultIndex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ class Tab protected () extends js.Object {
 @JSImport("react-weui", "Tab")
 @js.native
 object Tab extends js.Object {
-  var defaultProps: AnonDefaultIndex = js.native
+  var defaultProps: DefaultIndex = js.native
   @js.native
   object propTypes extends js.Object {
     @js.native

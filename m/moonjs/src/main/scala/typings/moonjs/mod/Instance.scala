@@ -1,6 +1,6 @@
 package typings.moonjs.mod
 
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,8 +19,8 @@ trait Instance[Data] extends js.Object {
   def mount(selector: String): Unit = js.native
   def off(): Unit = js.native
   def off(eventName: String): Unit = js.native
-  def off(eventName: String, listener: js.Function1[/* event */ Event_, Unit]): Unit = js.native
-  def on(eventName: String, listener: js.Function1[/* event */ Event_, Unit]): Unit = js.native
+  def off(eventName: String, listener: js.Function1[/* event */ Event, Unit]): Unit = js.native
+  def on(eventName: String, listener: js.Function1[/* event */ Event, Unit]): Unit = js.native
   def set[K /* <: /* keyof Data */ String */](
     name: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: Data[K] */ js.Any

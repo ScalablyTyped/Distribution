@@ -93,16 +93,16 @@ object PageLoadOptions {
     webUrl: js.UndefOr[Boolean] = js.undefined
   ): PageLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(classNotebookPageSource)) __obj.updateDynamic("classNotebookPageSource")(classNotebookPageSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(clientUrl)) __obj.updateDynamic("clientUrl")(clientUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(classNotebookPageSource)) __obj.updateDynamic("classNotebookPageSource")(classNotebookPageSource.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientUrl)) __obj.updateDynamic("clientUrl")(clientUrl.get.asInstanceOf[js.Any])
     if (contents != null) __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (inkAnalysisOrNull != null) __obj.updateDynamic("inkAnalysisOrNull")(inkAnalysisOrNull.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageLevel)) __obj.updateDynamic("pageLevel")(pageLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageLevel)) __obj.updateDynamic("pageLevel")(pageLevel.get.asInstanceOf[js.Any])
     if (parentSection != null) __obj.updateDynamic("parentSection")(parentSection.asInstanceOf[js.Any])
-    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(webUrl)) __obj.updateDynamic("webUrl")(webUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(webUrl)) __obj.updateDynamic("webUrl")(webUrl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageLoadOptions]
   }
 }

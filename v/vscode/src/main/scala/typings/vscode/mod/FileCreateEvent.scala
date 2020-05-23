@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait FileCreateEvent extends js.Object {
   /**
-  		 * The files that got created.
-  		 */
+    * The files that got created.
+    */
   val files: js.Array[Uri]
 }
 

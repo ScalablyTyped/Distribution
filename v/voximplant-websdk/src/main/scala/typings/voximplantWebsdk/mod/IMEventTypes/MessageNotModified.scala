@@ -6,20 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		*	Event dispatched if error happened during instant message modification
-		*/
+  *    Event dispatched if error happened during instant message modification
+  */
 trait MessageNotModified extends VoxImplantIMEvent {
   /**
-  			*	Message new content
-  			*/
+    *    Message new content
+    */
   var code: Double
   /**
-  			*	Message id
-  			*/
+    *    Message id
+    */
   var message_id: String
   /**
-  			*	User id (of the user to whom the message was sent)
-  			*/
+    *    User id (of the user to whom the message was sent)
+    */
   var to: String
 }
 

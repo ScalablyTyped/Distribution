@@ -1,11 +1,5 @@
 package typings.twilioChat
 
-import typings.twilioChat.twilioChatStrings.twilioDotchannelDotadded_to_channel
-import typings.twilioChat.twilioChatStrings.twilioDotchannelDotconsumption_update
-import typings.twilioChat.twilioChatStrings.twilioDotchannelDotinvited_to_channel
-import typings.twilioChat.twilioChatStrings.twilioDotchannelDotnew_message
-import typings.twilioChat.twilioChatStrings.twilioDotchannelDotremoved_from_channel
-import typings.twilioChat.twilioChatStrings.twilioDotipmsgDottyping_indicator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,12 +13,12 @@ object notificationtypesMod extends js.Object {
   /* static members */
   @js.native
   object NotificationTypes extends js.Object {
-    val ADDED_TO_CHANNEL: twilioDotchannelDotadded_to_channel = js.native
-    val CONSUMPTION_UPDATE: twilioDotchannelDotconsumption_update = js.native
-    val INVITED_TO_CHANNEL: twilioDotchannelDotinvited_to_channel = js.native
-    val NEW_MESSAGE: twilioDotchannelDotnew_message = js.native
-    val REMOVED_FROM_CHANNEL: twilioDotchannelDotremoved_from_channel = js.native
-    val TYPING_INDICATOR: twilioDotipmsgDottyping_indicator = js.native
+    val ADDED_TO_CHANNEL: /* "twilio.channel.added_to_channel" */ String = js.native
+    val CONSUMPTION_UPDATE: /* "twilio.channel.consumption_update" */ String = js.native
+    val INVITED_TO_CHANNEL: /* "twilio.channel.invited_to_channel" */ String = js.native
+    val NEW_MESSAGE: /* "twilio.channel.new_message" */ String = js.native
+    val REMOVED_FROM_CHANNEL: /* "twilio.channel.removed_from_channel" */ String = js.native
+    val TYPING_INDICATOR: /* "twilio.ipmsg.typing_indicator" */ String = js.native
   }
   
 }

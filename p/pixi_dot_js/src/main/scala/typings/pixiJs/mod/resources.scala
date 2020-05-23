@@ -1,11 +1,11 @@
 package typings.pixiJs.mod
 
-import typings.pixiJs.AnonAutoLoad
-import typings.pixiJs.AnonAutoPlay
-import typings.pixiJs.AnonCreateBitmap
-import typings.pixiJs.AnonHeightWidth
-import typings.pixiJs.AnonWidth
 import typings.pixiJs.PIXI.ISize
+import typings.pixiJs.anon.AutoLoad
+import typings.pixiJs.anon.AutoPlay
+import typings.pixiJs.anon.CreateBitmap
+import typings.pixiJs.anon.HeightWidth
+import typings.pixiJs.anon.Width
 import typings.std.Float32Array
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
@@ -52,8 +52,170 @@ object resources extends js.Object {
     extends typings.pixiJs.PIXI.resources.ArrayResource {
     def this(source: js.Array[_]) = this()
     def this(source: Double) = this()
-    def this(source: js.Array[_], options: AnonWidth) = this()
-    def this(source: Double, options: AnonWidth) = this()
+    def this(source: js.Array[_], options: Width) = this()
+    def this(source: Double, options: Width) = this()
+    /**
+      * Internal height of the resource
+      * @member {number} PIXI.resources.Resource#_height
+      * @protected
+      */
+    /* CompleteClass */
+    override var _height: Double = js.native
+    /**
+      * Internal width of the resource
+      * @member {number} PIXI.resources.Resource#_width
+      * @protected
+      */
+    /* CompleteClass */
+    override var _width: Double = js.native
+    /**
+      * If resource has been destroyed
+      * @member {boolean} PIXI.resources.Resource#destroyed
+      * @readonly
+      * @default false
+      */
+    /* CompleteClass */
+    override val destroyed: Boolean = js.native
+    /**
+      * The height of the resource.
+      *
+      * @member {number}
+      * @readonly
+      */
+    /* CompleteClass */
+    override val height: Double = js.native
+    /**
+      * `true` if resource is created by BaseTexture
+      * useful for doing cleanup with BaseTexture destroy
+      * and not cleaning up resources that were created
+      * externally.
+      * @member {boolean} PIXI.resources.Resource#internal
+      * @protected
+      */
+    /* CompleteClass */
+    override var internal: Boolean = js.native
+    /**
+      * Dirty IDs for each part
+      * @member {Array<number>} PIXI.resources.ArrayResource#itemDirtyIds
+      * @readonly
+      */
+    /* CompleteClass */
+    override val itemDirtyIds: js.Array[Double] = js.native
+    /**
+      * Collection of resources.
+      * @member {Array<PIXI.BaseTexture>} PIXI.resources.ArrayResource#items
+      * @readonly
+      */
+    /* CompleteClass */
+    override val items: js.Array[typings.pixiJs.PIXI.BaseTexture] = js.native
+    /**
+      * Number of elements in array
+      *
+      * @member {number} PIXI.resources.ArrayResource#length
+      * @readonly
+      */
+    /* CompleteClass */
+    override val length: Double = js.native
+    /**
+      * Has been validated
+      * @readonly
+      * @member {boolean}
+      */
+    /* CompleteClass */
+    override val valid: Boolean = js.native
+    /**
+      * The width of the resource.
+      *
+      * @member {number}
+      * @readonly
+      */
+    /* CompleteClass */
+    override val width: Double = js.native
+    /**
+      * Set a resource by ID
+      *
+      * @param {PIXI.resources.Resource} resource
+      * @param {number} index - Zero-based index of resource to set
+      * @return {PIXI.resources.ArrayResource} Instance for chaining
+      */
+    /* CompleteClass */
+    override def addResourceAt(resource: typings.pixiJs.PIXI.resources.Resource, index: Double): typings.pixiJs.PIXI.resources.ArrayResource = js.native
+    /**
+      * Bind to a parent BaseTexture
+      *
+      * @param {PIXI.BaseTexture} baseTexture - Parent texture
+      */
+    /* CompleteClass */
+    override def bind(baseTexture: typings.pixiJs.PIXI.BaseTexture): Unit = js.native
+    /**
+      * Call when destroying resource, unbind any BaseTexture object
+      * before calling this method, as reference counts are maintained
+      * internally.
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    /**
+      * Clean up anything, this happens when destroying is ready.
+      *
+      * @protected
+      */
+    /* CompleteClass */
+    /* protected */ override def dispose(): Unit = js.native
+    /**
+      * This can be overridden to start preloading a resource
+      * or do any other prepare step.
+      * @protected
+      * @return {Promise<void>} Handle the validate event
+      */
+    /* CompleteClass */
+    /* protected */ override def load(): js.Promise[Unit] = js.native
+    /**
+      * Trigger a resize event
+      * @param {number} width X dimension
+      * @param {number} height Y dimension
+      */
+    /* CompleteClass */
+    override def resize(width: Double, height: Double): Unit = js.native
+    /**
+      * Set the style, optional to override
+      *
+      * @param {PIXI.Renderer} renderer - yeah, renderer!
+      * @param {PIXI.BaseTexture} baseTexture - the texture
+      * @param {PIXI.GLTexture} glTexture - texture instance for this webgl context
+      * @returns {boolean} `true` is success
+      */
+    /* CompleteClass */
+    override def style(
+      renderer: typings.pixiJs.PIXI.Renderer,
+      baseTexture: typings.pixiJs.PIXI.BaseTexture,
+      glTexture: typings.pixiJs.PIXI.GLTexture
+    ): Boolean = js.native
+    /**
+      * Unbind to a parent BaseTexture
+      *
+      * @param {PIXI.BaseTexture} baseTexture - Parent texture
+      */
+    /* CompleteClass */
+    override def unbind(baseTexture: typings.pixiJs.PIXI.BaseTexture): Unit = js.native
+    /**
+      * Has been updated trigger event
+      */
+    /* CompleteClass */
+    override def update(): Unit = js.native
+    /**
+      * Uploads the texture or returns false if it cant for some reason. Override this.
+      *
+      * @param {PIXI.Renderer} renderer - yeah, renderer!
+      * @param {PIXI.BaseTexture} baseTexture - the texture
+      * @param {PIXI.GLTexture} glTexture - texture instance for this webgl context
+      * @returns {boolean} true is success
+      */
+    /* CompleteClass */
+    override def upload(
+      renderer: typings.pixiJs.PIXI.Renderer,
+      baseTexture: typings.pixiJs.PIXI.BaseTexture,
+      glTexture: typings.pixiJs.PIXI.GLTexture
+    ): Boolean = js.native
   }
   
   /**
@@ -69,6 +231,137 @@ object resources extends js.Object {
     def this(source: HTMLImageElement) = this()
     def this(source: HTMLVideoElement) = this()
     def this(source: SVGElement) = this()
+    /**
+      * Internal height of the resource
+      * @member {number} PIXI.resources.Resource#_height
+      * @protected
+      */
+    /* CompleteClass */
+    override var _height: Double = js.native
+    /**
+      * Internal width of the resource
+      * @member {number} PIXI.resources.Resource#_width
+      * @protected
+      */
+    /* CompleteClass */
+    override var _width: Double = js.native
+    /**
+      * If resource has been destroyed
+      * @member {boolean} PIXI.resources.Resource#destroyed
+      * @readonly
+      * @default false
+      */
+    /* CompleteClass */
+    override val destroyed: Boolean = js.native
+    /**
+      * The height of the resource.
+      *
+      * @member {number}
+      * @readonly
+      */
+    /* CompleteClass */
+    override val height: Double = js.native
+    /**
+      * `true` if resource is created by BaseTexture
+      * useful for doing cleanup with BaseTexture destroy
+      * and not cleaning up resources that were created
+      * externally.
+      * @member {boolean} PIXI.resources.Resource#internal
+      * @protected
+      */
+    /* CompleteClass */
+    override var internal: Boolean = js.native
+    /**
+      * Has been validated
+      * @readonly
+      * @member {boolean}
+      */
+    /* CompleteClass */
+    override val valid: Boolean = js.native
+    /**
+      * The width of the resource.
+      *
+      * @member {number}
+      * @readonly
+      */
+    /* CompleteClass */
+    override val width: Double = js.native
+    /**
+      * Bind to a parent BaseTexture
+      *
+      * @param {PIXI.BaseTexture} baseTexture - Parent texture
+      */
+    /* CompleteClass */
+    override def bind(baseTexture: typings.pixiJs.PIXI.BaseTexture): Unit = js.native
+    /**
+      * Call when destroying resource, unbind any BaseTexture object
+      * before calling this method, as reference counts are maintained
+      * internally.
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    /**
+      * Clean up anything, this happens when destroying is ready.
+      *
+      * @protected
+      */
+    /* CompleteClass */
+    /* protected */ override def dispose(): Unit = js.native
+    /**
+      * This can be overridden to start preloading a resource
+      * or do any other prepare step.
+      * @protected
+      * @return {Promise<void>} Handle the validate event
+      */
+    /* CompleteClass */
+    /* protected */ override def load(): js.Promise[Unit] = js.native
+    /**
+      * Trigger a resize event
+      * @param {number} width X dimension
+      * @param {number} height Y dimension
+      */
+    /* CompleteClass */
+    override def resize(width: Double, height: Double): Unit = js.native
+    /**
+      * Set the style, optional to override
+      *
+      * @param {PIXI.Renderer} renderer - yeah, renderer!
+      * @param {PIXI.BaseTexture} baseTexture - the texture
+      * @param {PIXI.GLTexture} glTexture - texture instance for this webgl context
+      * @returns {boolean} `true` is success
+      */
+    /* CompleteClass */
+    override def style(
+      renderer: typings.pixiJs.PIXI.Renderer,
+      baseTexture: typings.pixiJs.PIXI.BaseTexture,
+      glTexture: typings.pixiJs.PIXI.GLTexture
+    ): Boolean = js.native
+    /**
+      * Unbind to a parent BaseTexture
+      *
+      * @param {PIXI.BaseTexture} baseTexture - Parent texture
+      */
+    /* CompleteClass */
+    override def unbind(baseTexture: typings.pixiJs.PIXI.BaseTexture): Unit = js.native
+    /**
+      * Has been updated trigger event
+      */
+    /* CompleteClass */
+    override def update(): Unit = js.native
+    /**
+      * Uploads the texture or returns false if it cant for some reason. Override this.
+      *
+      * @param {PIXI.Renderer} renderer - yeah, renderer!
+      * @param {PIXI.BaseTexture} baseTexture - the texture
+      * @param {PIXI.GLTexture} glTexture - texture instance for this webgl context
+      * @returns {boolean} true is success
+      */
+    /* CompleteClass */
+    override def upload(
+      renderer: typings.pixiJs.PIXI.Renderer,
+      baseTexture: typings.pixiJs.PIXI.BaseTexture,
+      glTexture: typings.pixiJs.PIXI.GLTexture
+    ): Boolean = js.native
   }
   
   /**
@@ -80,9 +373,148 @@ object resources extends js.Object {
   @js.native
   class BufferResource protected ()
     extends typings.pixiJs.PIXI.resources.BufferResource {
-    def this(source: Float32Array, options: AnonHeightWidth) = this()
-    def this(source: Uint32Array, options: AnonHeightWidth) = this()
-    def this(source: Uint8Array, options: AnonHeightWidth) = this()
+    def this(source: Float32Array, options: HeightWidth) = this()
+    def this(source: Uint32Array, options: HeightWidth) = this()
+    def this(source: Uint8Array, options: HeightWidth) = this()
+    /**
+      * Internal height of the resource
+      * @member {number} PIXI.resources.Resource#_height
+      * @protected
+      */
+    /* CompleteClass */
+    override var _height: Double = js.native
+    /**
+      * Internal width of the resource
+      * @member {number} PIXI.resources.Resource#_width
+      * @protected
+      */
+    /* CompleteClass */
+    override var _width: Double = js.native
+    /**
+      * Source array
+      * Cannot be ClampedUint8Array because it cant be uploaded to WebGL
+      *
+      * @member {Float32Array|Uint8Array|Uint32Array} PIXI.resources.BufferResource#data
+      */
+    /* CompleteClass */
+    override var data: Float32Array | Uint8Array | Uint32Array = js.native
+    /**
+      * If resource has been destroyed
+      * @member {boolean} PIXI.resources.Resource#destroyed
+      * @readonly
+      * @default false
+      */
+    /* CompleteClass */
+    override val destroyed: Boolean = js.native
+    /**
+      * The height of the resource.
+      *
+      * @member {number}
+      * @readonly
+      */
+    /* CompleteClass */
+    override val height: Double = js.native
+    /**
+      * `true` if resource is created by BaseTexture
+      * useful for doing cleanup with BaseTexture destroy
+      * and not cleaning up resources that were created
+      * externally.
+      * @member {boolean} PIXI.resources.Resource#internal
+      * @protected
+      */
+    /* CompleteClass */
+    override var internal: Boolean = js.native
+    /**
+      * Has been validated
+      * @readonly
+      * @member {boolean}
+      */
+    /* CompleteClass */
+    override val valid: Boolean = js.native
+    /**
+      * The width of the resource.
+      *
+      * @member {number}
+      * @readonly
+      */
+    /* CompleteClass */
+    override val width: Double = js.native
+    /**
+      * Bind to a parent BaseTexture
+      *
+      * @param {PIXI.BaseTexture} baseTexture - Parent texture
+      */
+    /* CompleteClass */
+    override def bind(baseTexture: typings.pixiJs.PIXI.BaseTexture): Unit = js.native
+    /**
+      * Call when destroying resource, unbind any BaseTexture object
+      * before calling this method, as reference counts are maintained
+      * internally.
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    /**
+      * Clean up anything, this happens when destroying is ready.
+      *
+      * @protected
+      */
+    /* CompleteClass */
+    /* protected */ override def dispose(): Unit = js.native
+    /**
+      * This can be overridden to start preloading a resource
+      * or do any other prepare step.
+      * @protected
+      * @return {Promise<void>} Handle the validate event
+      */
+    /* CompleteClass */
+    /* protected */ override def load(): js.Promise[Unit] = js.native
+    /**
+      * Trigger a resize event
+      * @param {number} width X dimension
+      * @param {number} height Y dimension
+      */
+    /* CompleteClass */
+    override def resize(width: Double, height: Double): Unit = js.native
+    /**
+      * Set the style, optional to override
+      *
+      * @param {PIXI.Renderer} renderer - yeah, renderer!
+      * @param {PIXI.BaseTexture} baseTexture - the texture
+      * @param {PIXI.GLTexture} glTexture - texture instance for this webgl context
+      * @returns {boolean} `true` is success
+      */
+    /* CompleteClass */
+    override def style(
+      renderer: typings.pixiJs.PIXI.Renderer,
+      baseTexture: typings.pixiJs.PIXI.BaseTexture,
+      glTexture: typings.pixiJs.PIXI.GLTexture
+    ): Boolean = js.native
+    /**
+      * Unbind to a parent BaseTexture
+      *
+      * @param {PIXI.BaseTexture} baseTexture - Parent texture
+      */
+    /* CompleteClass */
+    override def unbind(baseTexture: typings.pixiJs.PIXI.BaseTexture): Unit = js.native
+    /**
+      * Has been updated trigger event
+      */
+    /* CompleteClass */
+    override def update(): Unit = js.native
+    /**
+      * Uploads the texture or returns false if it cant for some reason. Override this.
+      *
+      * @param {PIXI.Renderer} renderer - yeah, renderer!
+      * @param {PIXI.BaseTexture} baseTexture - the texture
+      * @param {PIXI.GLTexture} glTexture - texture instance for this webgl context
+      * @returns {boolean} true is success
+      */
+    /* CompleteClass */
+    override def upload(
+      renderer: typings.pixiJs.PIXI.Renderer,
+      baseTexture: typings.pixiJs.PIXI.BaseTexture,
+      glTexture: typings.pixiJs.PIXI.GLTexture
+    ): Boolean = js.native
   }
   
   /**
@@ -96,6 +528,137 @@ object resources extends js.Object {
   class CanvasResource protected ()
     extends typings.pixiJs.PIXI.resources.CanvasResource {
     def this(source: HTMLCanvasElement) = this()
+    /**
+      * Internal height of the resource
+      * @member {number} PIXI.resources.Resource#_height
+      * @protected
+      */
+    /* CompleteClass */
+    override var _height: Double = js.native
+    /**
+      * Internal width of the resource
+      * @member {number} PIXI.resources.Resource#_width
+      * @protected
+      */
+    /* CompleteClass */
+    override var _width: Double = js.native
+    /**
+      * If resource has been destroyed
+      * @member {boolean} PIXI.resources.Resource#destroyed
+      * @readonly
+      * @default false
+      */
+    /* CompleteClass */
+    override val destroyed: Boolean = js.native
+    /**
+      * The height of the resource.
+      *
+      * @member {number}
+      * @readonly
+      */
+    /* CompleteClass */
+    override val height: Double = js.native
+    /**
+      * `true` if resource is created by BaseTexture
+      * useful for doing cleanup with BaseTexture destroy
+      * and not cleaning up resources that were created
+      * externally.
+      * @member {boolean} PIXI.resources.Resource#internal
+      * @protected
+      */
+    /* CompleteClass */
+    override var internal: Boolean = js.native
+    /**
+      * Has been validated
+      * @readonly
+      * @member {boolean}
+      */
+    /* CompleteClass */
+    override val valid: Boolean = js.native
+    /**
+      * The width of the resource.
+      *
+      * @member {number}
+      * @readonly
+      */
+    /* CompleteClass */
+    override val width: Double = js.native
+    /**
+      * Bind to a parent BaseTexture
+      *
+      * @param {PIXI.BaseTexture} baseTexture - Parent texture
+      */
+    /* CompleteClass */
+    override def bind(baseTexture: typings.pixiJs.PIXI.BaseTexture): Unit = js.native
+    /**
+      * Call when destroying resource, unbind any BaseTexture object
+      * before calling this method, as reference counts are maintained
+      * internally.
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    /**
+      * Clean up anything, this happens when destroying is ready.
+      *
+      * @protected
+      */
+    /* CompleteClass */
+    /* protected */ override def dispose(): Unit = js.native
+    /**
+      * This can be overridden to start preloading a resource
+      * or do any other prepare step.
+      * @protected
+      * @return {Promise<void>} Handle the validate event
+      */
+    /* CompleteClass */
+    /* protected */ override def load(): js.Promise[Unit] = js.native
+    /**
+      * Trigger a resize event
+      * @param {number} width X dimension
+      * @param {number} height Y dimension
+      */
+    /* CompleteClass */
+    override def resize(width: Double, height: Double): Unit = js.native
+    /**
+      * Set the style, optional to override
+      *
+      * @param {PIXI.Renderer} renderer - yeah, renderer!
+      * @param {PIXI.BaseTexture} baseTexture - the texture
+      * @param {PIXI.GLTexture} glTexture - texture instance for this webgl context
+      * @returns {boolean} `true` is success
+      */
+    /* CompleteClass */
+    override def style(
+      renderer: typings.pixiJs.PIXI.Renderer,
+      baseTexture: typings.pixiJs.PIXI.BaseTexture,
+      glTexture: typings.pixiJs.PIXI.GLTexture
+    ): Boolean = js.native
+    /**
+      * Unbind to a parent BaseTexture
+      *
+      * @param {PIXI.BaseTexture} baseTexture - Parent texture
+      */
+    /* CompleteClass */
+    override def unbind(baseTexture: typings.pixiJs.PIXI.BaseTexture): Unit = js.native
+    /**
+      * Has been updated trigger event
+      */
+    /* CompleteClass */
+    override def update(): Unit = js.native
+    /**
+      * Uploads the texture or returns false if it cant for some reason. Override this.
+      *
+      * @param {PIXI.Renderer} renderer - yeah, renderer!
+      * @param {PIXI.BaseTexture} baseTexture - the texture
+      * @param {PIXI.GLTexture} glTexture - texture instance for this webgl context
+      * @returns {boolean} true is success
+      */
+    /* CompleteClass */
+    override def upload(
+      renderer: typings.pixiJs.PIXI.Renderer,
+      baseTexture: typings.pixiJs.PIXI.BaseTexture,
+      glTexture: typings.pixiJs.PIXI.GLTexture
+    ): Boolean = js.native
   }
   
   /**
@@ -114,7 +677,176 @@ object resources extends js.Object {
   class CubeResource ()
     extends typings.pixiJs.PIXI.resources.CubeResource {
     def this(source: js.Array[String | typings.pixiJs.PIXI.resources.Resource]) = this()
-    def this(source: js.Array[String | typings.pixiJs.PIXI.resources.Resource], options: AnonWidth) = this()
+    def this(source: js.Array[String | typings.pixiJs.PIXI.resources.Resource], options: Width) = this()
+    /**
+      * Internal height of the resource
+      * @member {number} PIXI.resources.Resource#_height
+      * @protected
+      */
+    /* CompleteClass */
+    override var _height: Double = js.native
+    /**
+      * Internal width of the resource
+      * @member {number} PIXI.resources.Resource#_width
+      * @protected
+      */
+    /* CompleteClass */
+    override var _width: Double = js.native
+    /**
+      * If resource has been destroyed
+      * @member {boolean} PIXI.resources.Resource#destroyed
+      * @readonly
+      * @default false
+      */
+    /* CompleteClass */
+    override val destroyed: Boolean = js.native
+    /**
+      * The height of the resource.
+      *
+      * @member {number}
+      * @readonly
+      */
+    /* CompleteClass */
+    override val height: Double = js.native
+    /**
+      * `true` if resource is created by BaseTexture
+      * useful for doing cleanup with BaseTexture destroy
+      * and not cleaning up resources that were created
+      * externally.
+      * @member {boolean} PIXI.resources.Resource#internal
+      * @protected
+      */
+    /* CompleteClass */
+    override var internal: Boolean = js.native
+    /**
+      * Dirty IDs for each part
+      * @member {Array<number>} PIXI.resources.ArrayResource#itemDirtyIds
+      * @readonly
+      */
+    /* CompleteClass */
+    override val itemDirtyIds: js.Array[Double] = js.native
+    /**
+      * Collection of resources.
+      * @member {Array<PIXI.BaseTexture>} PIXI.resources.ArrayResource#items
+      * @readonly
+      */
+    /* CompleteClass */
+    override val items: js.Array[typings.pixiJs.PIXI.BaseTexture] = js.native
+    /**
+      * Number of elements in array
+      *
+      * @member {number} PIXI.resources.ArrayResource#length
+      * @readonly
+      */
+    /* CompleteClass */
+    override val length: Double = js.native
+    /**
+      * Has been validated
+      * @readonly
+      * @member {boolean}
+      */
+    /* CompleteClass */
+    override val valid: Boolean = js.native
+    /**
+      * The width of the resource.
+      *
+      * @member {number}
+      * @readonly
+      */
+    /* CompleteClass */
+    override val width: Double = js.native
+    /**
+      * Set a resource by ID
+      *
+      * @param {PIXI.resources.Resource} resource
+      * @param {number} index - Zero-based index of resource to set
+      * @return {PIXI.resources.ArrayResource} Instance for chaining
+      */
+    /* CompleteClass */
+    override def addResourceAt(resource: typings.pixiJs.PIXI.resources.Resource, index: Double): typings.pixiJs.PIXI.resources.ArrayResource = js.native
+    /**
+      * Bind to a parent BaseTexture
+      *
+      * @param {PIXI.BaseTexture} baseTexture - Parent texture
+      */
+    /* CompleteClass */
+    override def bind(baseTexture: typings.pixiJs.PIXI.BaseTexture): Unit = js.native
+    /**
+      * Call when destroying resource, unbind any BaseTexture object
+      * before calling this method, as reference counts are maintained
+      * internally.
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    /**
+      * Clean up anything, this happens when destroying is ready.
+      *
+      * @protected
+      */
+    /* CompleteClass */
+    /* protected */ override def dispose(): Unit = js.native
+    /**
+      * This can be overridden to start preloading a resource
+      * or do any other prepare step.
+      * @protected
+      * @return {Promise<void>} Handle the validate event
+      */
+    /* CompleteClass */
+    /* protected */ override def load(): js.Promise[Unit] = js.native
+    /**
+      * Trigger a resize event
+      * @param {number} width X dimension
+      * @param {number} height Y dimension
+      */
+    /* CompleteClass */
+    override def resize(width: Double, height: Double): Unit = js.native
+    /**
+      * Set the style, optional to override
+      *
+      * @param {PIXI.Renderer} renderer - yeah, renderer!
+      * @param {PIXI.BaseTexture} baseTexture - the texture
+      * @param {PIXI.GLTexture} glTexture - texture instance for this webgl context
+      * @returns {boolean} `true` is success
+      */
+    /* CompleteClass */
+    override def style(
+      renderer: typings.pixiJs.PIXI.Renderer,
+      baseTexture: typings.pixiJs.PIXI.BaseTexture,
+      glTexture: typings.pixiJs.PIXI.GLTexture
+    ): Boolean = js.native
+    /**
+      * Unbind to a parent BaseTexture
+      *
+      * @param {PIXI.BaseTexture} baseTexture - Parent texture
+      */
+    /* CompleteClass */
+    override def unbind(baseTexture: typings.pixiJs.PIXI.BaseTexture): Unit = js.native
+    /**
+      * Has been updated trigger event
+      */
+    /* CompleteClass */
+    override def update(): Unit = js.native
+    /**
+      * Upload the resource
+      *
+      * @returns {boolean} true is success
+      */
+    /* CompleteClass */
+    override def upload(): Boolean = js.native
+    /**
+      * Uploads the texture or returns false if it cant for some reason. Override this.
+      *
+      * @param {PIXI.Renderer} renderer - yeah, renderer!
+      * @param {PIXI.BaseTexture} baseTexture - the texture
+      * @param {PIXI.GLTexture} glTexture - texture instance for this webgl context
+      * @returns {boolean} true is success
+      */
+    /* CompleteClass */
+    override def upload(
+      renderer: typings.pixiJs.PIXI.Renderer,
+      baseTexture: typings.pixiJs.PIXI.BaseTexture,
+      glTexture: typings.pixiJs.PIXI.GLTexture
+    ): Boolean = js.native
   }
   
   /**
@@ -125,7 +857,147 @@ object resources extends js.Object {
     */
   @js.native
   class DepthResource ()
-    extends typings.pixiJs.PIXI.resources.DepthResource
+    extends typings.pixiJs.PIXI.resources.DepthResource {
+    /**
+      * Internal height of the resource
+      * @member {number} PIXI.resources.Resource#_height
+      * @protected
+      */
+    /* CompleteClass */
+    override var _height: Double = js.native
+    /**
+      * Internal width of the resource
+      * @member {number} PIXI.resources.Resource#_width
+      * @protected
+      */
+    /* CompleteClass */
+    override var _width: Double = js.native
+    /**
+      * Source array
+      * Cannot be ClampedUint8Array because it cant be uploaded to WebGL
+      *
+      * @member {Float32Array|Uint8Array|Uint32Array} PIXI.resources.BufferResource#data
+      */
+    /* CompleteClass */
+    override var data: Float32Array | Uint8Array | Uint32Array = js.native
+    /**
+      * If resource has been destroyed
+      * @member {boolean} PIXI.resources.Resource#destroyed
+      * @readonly
+      * @default false
+      */
+    /* CompleteClass */
+    override val destroyed: Boolean = js.native
+    /**
+      * The height of the resource.
+      *
+      * @member {number}
+      * @readonly
+      */
+    /* CompleteClass */
+    override val height: Double = js.native
+    /**
+      * `true` if resource is created by BaseTexture
+      * useful for doing cleanup with BaseTexture destroy
+      * and not cleaning up resources that were created
+      * externally.
+      * @member {boolean} PIXI.resources.Resource#internal
+      * @protected
+      */
+    /* CompleteClass */
+    override var internal: Boolean = js.native
+    /**
+      * Has been validated
+      * @readonly
+      * @member {boolean}
+      */
+    /* CompleteClass */
+    override val valid: Boolean = js.native
+    /**
+      * The width of the resource.
+      *
+      * @member {number}
+      * @readonly
+      */
+    /* CompleteClass */
+    override val width: Double = js.native
+    /**
+      * Bind to a parent BaseTexture
+      *
+      * @param {PIXI.BaseTexture} baseTexture - Parent texture
+      */
+    /* CompleteClass */
+    override def bind(baseTexture: typings.pixiJs.PIXI.BaseTexture): Unit = js.native
+    /**
+      * Call when destroying resource, unbind any BaseTexture object
+      * before calling this method, as reference counts are maintained
+      * internally.
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    /**
+      * Clean up anything, this happens when destroying is ready.
+      *
+      * @protected
+      */
+    /* CompleteClass */
+    /* protected */ override def dispose(): Unit = js.native
+    /**
+      * This can be overridden to start preloading a resource
+      * or do any other prepare step.
+      * @protected
+      * @return {Promise<void>} Handle the validate event
+      */
+    /* CompleteClass */
+    /* protected */ override def load(): js.Promise[Unit] = js.native
+    /**
+      * Trigger a resize event
+      * @param {number} width X dimension
+      * @param {number} height Y dimension
+      */
+    /* CompleteClass */
+    override def resize(width: Double, height: Double): Unit = js.native
+    /**
+      * Set the style, optional to override
+      *
+      * @param {PIXI.Renderer} renderer - yeah, renderer!
+      * @param {PIXI.BaseTexture} baseTexture - the texture
+      * @param {PIXI.GLTexture} glTexture - texture instance for this webgl context
+      * @returns {boolean} `true` is success
+      */
+    /* CompleteClass */
+    override def style(
+      renderer: typings.pixiJs.PIXI.Renderer,
+      baseTexture: typings.pixiJs.PIXI.BaseTexture,
+      glTexture: typings.pixiJs.PIXI.GLTexture
+    ): Boolean = js.native
+    /**
+      * Unbind to a parent BaseTexture
+      *
+      * @param {PIXI.BaseTexture} baseTexture - Parent texture
+      */
+    /* CompleteClass */
+    override def unbind(baseTexture: typings.pixiJs.PIXI.BaseTexture): Unit = js.native
+    /**
+      * Has been updated trigger event
+      */
+    /* CompleteClass */
+    override def update(): Unit = js.native
+    /**
+      * Uploads the texture or returns false if it cant for some reason. Override this.
+      *
+      * @param {PIXI.Renderer} renderer - yeah, renderer!
+      * @param {PIXI.BaseTexture} baseTexture - the texture
+      * @param {PIXI.GLTexture} glTexture - texture instance for this webgl context
+      * @returns {boolean} true is success
+      */
+    /* CompleteClass */
+    override def upload(
+      renderer: typings.pixiJs.PIXI.Renderer,
+      baseTexture: typings.pixiJs.PIXI.BaseTexture,
+      glTexture: typings.pixiJs.PIXI.GLTexture
+    ): Boolean = js.native
+  }
   
   /**
     * Resource type for ImageBitmap.
@@ -138,6 +1010,137 @@ object resources extends js.Object {
   class ImageBitmapResource protected ()
     extends typings.pixiJs.PIXI.resources.ImageBitmapResource {
     def this(source: ImageBitmap) = this()
+    /**
+      * Internal height of the resource
+      * @member {number} PIXI.resources.Resource#_height
+      * @protected
+      */
+    /* CompleteClass */
+    override var _height: Double = js.native
+    /**
+      * Internal width of the resource
+      * @member {number} PIXI.resources.Resource#_width
+      * @protected
+      */
+    /* CompleteClass */
+    override var _width: Double = js.native
+    /**
+      * If resource has been destroyed
+      * @member {boolean} PIXI.resources.Resource#destroyed
+      * @readonly
+      * @default false
+      */
+    /* CompleteClass */
+    override val destroyed: Boolean = js.native
+    /**
+      * The height of the resource.
+      *
+      * @member {number}
+      * @readonly
+      */
+    /* CompleteClass */
+    override val height: Double = js.native
+    /**
+      * `true` if resource is created by BaseTexture
+      * useful for doing cleanup with BaseTexture destroy
+      * and not cleaning up resources that were created
+      * externally.
+      * @member {boolean} PIXI.resources.Resource#internal
+      * @protected
+      */
+    /* CompleteClass */
+    override var internal: Boolean = js.native
+    /**
+      * Has been validated
+      * @readonly
+      * @member {boolean}
+      */
+    /* CompleteClass */
+    override val valid: Boolean = js.native
+    /**
+      * The width of the resource.
+      *
+      * @member {number}
+      * @readonly
+      */
+    /* CompleteClass */
+    override val width: Double = js.native
+    /**
+      * Bind to a parent BaseTexture
+      *
+      * @param {PIXI.BaseTexture} baseTexture - Parent texture
+      */
+    /* CompleteClass */
+    override def bind(baseTexture: typings.pixiJs.PIXI.BaseTexture): Unit = js.native
+    /**
+      * Call when destroying resource, unbind any BaseTexture object
+      * before calling this method, as reference counts are maintained
+      * internally.
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    /**
+      * Clean up anything, this happens when destroying is ready.
+      *
+      * @protected
+      */
+    /* CompleteClass */
+    /* protected */ override def dispose(): Unit = js.native
+    /**
+      * This can be overridden to start preloading a resource
+      * or do any other prepare step.
+      * @protected
+      * @return {Promise<void>} Handle the validate event
+      */
+    /* CompleteClass */
+    /* protected */ override def load(): js.Promise[Unit] = js.native
+    /**
+      * Trigger a resize event
+      * @param {number} width X dimension
+      * @param {number} height Y dimension
+      */
+    /* CompleteClass */
+    override def resize(width: Double, height: Double): Unit = js.native
+    /**
+      * Set the style, optional to override
+      *
+      * @param {PIXI.Renderer} renderer - yeah, renderer!
+      * @param {PIXI.BaseTexture} baseTexture - the texture
+      * @param {PIXI.GLTexture} glTexture - texture instance for this webgl context
+      * @returns {boolean} `true` is success
+      */
+    /* CompleteClass */
+    override def style(
+      renderer: typings.pixiJs.PIXI.Renderer,
+      baseTexture: typings.pixiJs.PIXI.BaseTexture,
+      glTexture: typings.pixiJs.PIXI.GLTexture
+    ): Boolean = js.native
+    /**
+      * Unbind to a parent BaseTexture
+      *
+      * @param {PIXI.BaseTexture} baseTexture - Parent texture
+      */
+    /* CompleteClass */
+    override def unbind(baseTexture: typings.pixiJs.PIXI.BaseTexture): Unit = js.native
+    /**
+      * Has been updated trigger event
+      */
+    /* CompleteClass */
+    override def update(): Unit = js.native
+    /**
+      * Uploads the texture or returns false if it cant for some reason. Override this.
+      *
+      * @param {PIXI.Renderer} renderer - yeah, renderer!
+      * @param {PIXI.BaseTexture} baseTexture - the texture
+      * @param {PIXI.GLTexture} glTexture - texture instance for this webgl context
+      * @returns {boolean} true is success
+      */
+    /* CompleteClass */
+    override def upload(
+      renderer: typings.pixiJs.PIXI.Renderer,
+      baseTexture: typings.pixiJs.PIXI.BaseTexture,
+      glTexture: typings.pixiJs.PIXI.GLTexture
+    ): Boolean = js.native
   }
   
   /**
@@ -151,6 +1154,137 @@ object resources extends js.Object {
     extends typings.pixiJs.PIXI.resources.ImageResource {
     def this(source: String) = this()
     def this(source: HTMLImageElement) = this()
+    /**
+      * Internal height of the resource
+      * @member {number} PIXI.resources.Resource#_height
+      * @protected
+      */
+    /* CompleteClass */
+    override var _height: Double = js.native
+    /**
+      * Internal width of the resource
+      * @member {number} PIXI.resources.Resource#_width
+      * @protected
+      */
+    /* CompleteClass */
+    override var _width: Double = js.native
+    /**
+      * If resource has been destroyed
+      * @member {boolean} PIXI.resources.Resource#destroyed
+      * @readonly
+      * @default false
+      */
+    /* CompleteClass */
+    override val destroyed: Boolean = js.native
+    /**
+      * The height of the resource.
+      *
+      * @member {number}
+      * @readonly
+      */
+    /* CompleteClass */
+    override val height: Double = js.native
+    /**
+      * `true` if resource is created by BaseTexture
+      * useful for doing cleanup with BaseTexture destroy
+      * and not cleaning up resources that were created
+      * externally.
+      * @member {boolean} PIXI.resources.Resource#internal
+      * @protected
+      */
+    /* CompleteClass */
+    override var internal: Boolean = js.native
+    /**
+      * Has been validated
+      * @readonly
+      * @member {boolean}
+      */
+    /* CompleteClass */
+    override val valid: Boolean = js.native
+    /**
+      * The width of the resource.
+      *
+      * @member {number}
+      * @readonly
+      */
+    /* CompleteClass */
+    override val width: Double = js.native
+    /**
+      * Bind to a parent BaseTexture
+      *
+      * @param {PIXI.BaseTexture} baseTexture - Parent texture
+      */
+    /* CompleteClass */
+    override def bind(baseTexture: typings.pixiJs.PIXI.BaseTexture): Unit = js.native
+    /**
+      * Call when destroying resource, unbind any BaseTexture object
+      * before calling this method, as reference counts are maintained
+      * internally.
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    /**
+      * Clean up anything, this happens when destroying is ready.
+      *
+      * @protected
+      */
+    /* CompleteClass */
+    /* protected */ override def dispose(): Unit = js.native
+    /**
+      * This can be overridden to start preloading a resource
+      * or do any other prepare step.
+      * @protected
+      * @return {Promise<void>} Handle the validate event
+      */
+    /* CompleteClass */
+    /* protected */ override def load(): js.Promise[Unit] = js.native
+    /**
+      * Trigger a resize event
+      * @param {number} width X dimension
+      * @param {number} height Y dimension
+      */
+    /* CompleteClass */
+    override def resize(width: Double, height: Double): Unit = js.native
+    /**
+      * Set the style, optional to override
+      *
+      * @param {PIXI.Renderer} renderer - yeah, renderer!
+      * @param {PIXI.BaseTexture} baseTexture - the texture
+      * @param {PIXI.GLTexture} glTexture - texture instance for this webgl context
+      * @returns {boolean} `true` is success
+      */
+    /* CompleteClass */
+    override def style(
+      renderer: typings.pixiJs.PIXI.Renderer,
+      baseTexture: typings.pixiJs.PIXI.BaseTexture,
+      glTexture: typings.pixiJs.PIXI.GLTexture
+    ): Boolean = js.native
+    /**
+      * Unbind to a parent BaseTexture
+      *
+      * @param {PIXI.BaseTexture} baseTexture - Parent texture
+      */
+    /* CompleteClass */
+    override def unbind(baseTexture: typings.pixiJs.PIXI.BaseTexture): Unit = js.native
+    /**
+      * Has been updated trigger event
+      */
+    /* CompleteClass */
+    override def update(): Unit = js.native
+    /**
+      * Uploads the texture or returns false if it cant for some reason. Override this.
+      *
+      * @param {PIXI.Renderer} renderer - yeah, renderer!
+      * @param {PIXI.BaseTexture} baseTexture - the texture
+      * @param {PIXI.GLTexture} glTexture - texture instance for this webgl context
+      * @returns {boolean} true is success
+      */
+    /* CompleteClass */
+    override def upload(
+      renderer: typings.pixiJs.PIXI.Renderer,
+      baseTexture: typings.pixiJs.PIXI.BaseTexture,
+      glTexture: typings.pixiJs.PIXI.GLTexture
+    ): Boolean = js.native
   }
   
   /**
@@ -166,6 +1300,137 @@ object resources extends js.Object {
     extends typings.pixiJs.PIXI.resources.Resource {
     def this(width: Double) = this()
     def this(width: Double, height: Double) = this()
+    /**
+      * Internal height of the resource
+      * @member {number} PIXI.resources.Resource#_height
+      * @protected
+      */
+    /* CompleteClass */
+    override var _height: Double = js.native
+    /**
+      * Internal width of the resource
+      * @member {number} PIXI.resources.Resource#_width
+      * @protected
+      */
+    /* CompleteClass */
+    override var _width: Double = js.native
+    /**
+      * If resource has been destroyed
+      * @member {boolean} PIXI.resources.Resource#destroyed
+      * @readonly
+      * @default false
+      */
+    /* CompleteClass */
+    override val destroyed: Boolean = js.native
+    /**
+      * The height of the resource.
+      *
+      * @member {number}
+      * @readonly
+      */
+    /* CompleteClass */
+    override val height: Double = js.native
+    /**
+      * `true` if resource is created by BaseTexture
+      * useful for doing cleanup with BaseTexture destroy
+      * and not cleaning up resources that were created
+      * externally.
+      * @member {boolean} PIXI.resources.Resource#internal
+      * @protected
+      */
+    /* CompleteClass */
+    override var internal: Boolean = js.native
+    /**
+      * Has been validated
+      * @readonly
+      * @member {boolean}
+      */
+    /* CompleteClass */
+    override val valid: Boolean = js.native
+    /**
+      * The width of the resource.
+      *
+      * @member {number}
+      * @readonly
+      */
+    /* CompleteClass */
+    override val width: Double = js.native
+    /**
+      * Bind to a parent BaseTexture
+      *
+      * @param {PIXI.BaseTexture} baseTexture - Parent texture
+      */
+    /* CompleteClass */
+    override def bind(baseTexture: typings.pixiJs.PIXI.BaseTexture): Unit = js.native
+    /**
+      * Call when destroying resource, unbind any BaseTexture object
+      * before calling this method, as reference counts are maintained
+      * internally.
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    /**
+      * Clean up anything, this happens when destroying is ready.
+      *
+      * @protected
+      */
+    /* CompleteClass */
+    /* protected */ override def dispose(): Unit = js.native
+    /**
+      * This can be overridden to start preloading a resource
+      * or do any other prepare step.
+      * @protected
+      * @return {Promise<void>} Handle the validate event
+      */
+    /* CompleteClass */
+    /* protected */ override def load(): js.Promise[Unit] = js.native
+    /**
+      * Trigger a resize event
+      * @param {number} width X dimension
+      * @param {number} height Y dimension
+      */
+    /* CompleteClass */
+    override def resize(width: Double, height: Double): Unit = js.native
+    /**
+      * Set the style, optional to override
+      *
+      * @param {PIXI.Renderer} renderer - yeah, renderer!
+      * @param {PIXI.BaseTexture} baseTexture - the texture
+      * @param {PIXI.GLTexture} glTexture - texture instance for this webgl context
+      * @returns {boolean} `true` is success
+      */
+    /* CompleteClass */
+    override def style(
+      renderer: typings.pixiJs.PIXI.Renderer,
+      baseTexture: typings.pixiJs.PIXI.BaseTexture,
+      glTexture: typings.pixiJs.PIXI.GLTexture
+    ): Boolean = js.native
+    /**
+      * Unbind to a parent BaseTexture
+      *
+      * @param {PIXI.BaseTexture} baseTexture - Parent texture
+      */
+    /* CompleteClass */
+    override def unbind(baseTexture: typings.pixiJs.PIXI.BaseTexture): Unit = js.native
+    /**
+      * Has been updated trigger event
+      */
+    /* CompleteClass */
+    override def update(): Unit = js.native
+    /**
+      * Uploads the texture or returns false if it cant for some reason. Override this.
+      *
+      * @param {PIXI.Renderer} renderer - yeah, renderer!
+      * @param {PIXI.BaseTexture} baseTexture - the texture
+      * @param {PIXI.GLTexture} glTexture - texture instance for this webgl context
+      * @returns {boolean} true is success
+      */
+    /* CompleteClass */
+    override def upload(
+      renderer: typings.pixiJs.PIXI.Renderer,
+      baseTexture: typings.pixiJs.PIXI.BaseTexture,
+      glTexture: typings.pixiJs.PIXI.GLTexture
+    ): Boolean = js.native
   }
   
   /**
@@ -184,7 +1449,138 @@ object resources extends js.Object {
   class SVGResource protected ()
     extends typings.pixiJs.PIXI.resources.SVGResource {
     def this(source: String) = this()
-    def this(source: String, options: AnonAutoLoad) = this()
+    def this(source: String, options: AutoLoad) = this()
+    /**
+      * Internal height of the resource
+      * @member {number} PIXI.resources.Resource#_height
+      * @protected
+      */
+    /* CompleteClass */
+    override var _height: Double = js.native
+    /**
+      * Internal width of the resource
+      * @member {number} PIXI.resources.Resource#_width
+      * @protected
+      */
+    /* CompleteClass */
+    override var _width: Double = js.native
+    /**
+      * If resource has been destroyed
+      * @member {boolean} PIXI.resources.Resource#destroyed
+      * @readonly
+      * @default false
+      */
+    /* CompleteClass */
+    override val destroyed: Boolean = js.native
+    /**
+      * The height of the resource.
+      *
+      * @member {number}
+      * @readonly
+      */
+    /* CompleteClass */
+    override val height: Double = js.native
+    /**
+      * `true` if resource is created by BaseTexture
+      * useful for doing cleanup with BaseTexture destroy
+      * and not cleaning up resources that were created
+      * externally.
+      * @member {boolean} PIXI.resources.Resource#internal
+      * @protected
+      */
+    /* CompleteClass */
+    override var internal: Boolean = js.native
+    /**
+      * Has been validated
+      * @readonly
+      * @member {boolean}
+      */
+    /* CompleteClass */
+    override val valid: Boolean = js.native
+    /**
+      * The width of the resource.
+      *
+      * @member {number}
+      * @readonly
+      */
+    /* CompleteClass */
+    override val width: Double = js.native
+    /**
+      * Bind to a parent BaseTexture
+      *
+      * @param {PIXI.BaseTexture} baseTexture - Parent texture
+      */
+    /* CompleteClass */
+    override def bind(baseTexture: typings.pixiJs.PIXI.BaseTexture): Unit = js.native
+    /**
+      * Call when destroying resource, unbind any BaseTexture object
+      * before calling this method, as reference counts are maintained
+      * internally.
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    /**
+      * Clean up anything, this happens when destroying is ready.
+      *
+      * @protected
+      */
+    /* CompleteClass */
+    /* protected */ override def dispose(): Unit = js.native
+    /**
+      * This can be overridden to start preloading a resource
+      * or do any other prepare step.
+      * @protected
+      * @return {Promise<void>} Handle the validate event
+      */
+    /* CompleteClass */
+    /* protected */ override def load(): js.Promise[Unit] = js.native
+    /**
+      * Trigger a resize event
+      * @param {number} width X dimension
+      * @param {number} height Y dimension
+      */
+    /* CompleteClass */
+    override def resize(width: Double, height: Double): Unit = js.native
+    /**
+      * Set the style, optional to override
+      *
+      * @param {PIXI.Renderer} renderer - yeah, renderer!
+      * @param {PIXI.BaseTexture} baseTexture - the texture
+      * @param {PIXI.GLTexture} glTexture - texture instance for this webgl context
+      * @returns {boolean} `true` is success
+      */
+    /* CompleteClass */
+    override def style(
+      renderer: typings.pixiJs.PIXI.Renderer,
+      baseTexture: typings.pixiJs.PIXI.BaseTexture,
+      glTexture: typings.pixiJs.PIXI.GLTexture
+    ): Boolean = js.native
+    /**
+      * Unbind to a parent BaseTexture
+      *
+      * @param {PIXI.BaseTexture} baseTexture - Parent texture
+      */
+    /* CompleteClass */
+    override def unbind(baseTexture: typings.pixiJs.PIXI.BaseTexture): Unit = js.native
+    /**
+      * Has been updated trigger event
+      */
+    /* CompleteClass */
+    override def update(): Unit = js.native
+    /**
+      * Uploads the texture or returns false if it cant for some reason. Override this.
+      *
+      * @param {PIXI.Renderer} renderer - yeah, renderer!
+      * @param {PIXI.BaseTexture} baseTexture - the texture
+      * @param {PIXI.GLTexture} glTexture - texture instance for this webgl context
+      * @returns {boolean} true is success
+      */
+    /* CompleteClass */
+    override def upload(
+      renderer: typings.pixiJs.PIXI.Renderer,
+      baseTexture: typings.pixiJs.PIXI.BaseTexture,
+      glTexture: typings.pixiJs.PIXI.GLTexture
+    ): Boolean = js.native
   }
   
   /**
@@ -207,10 +1603,141 @@ object resources extends js.Object {
     def this(source: js.Any) = this()
     def this(source: js.Array[String | _]) = this()
     def this(source: HTMLVideoElement) = this()
-    def this(source: String, options: AnonAutoPlay) = this()
-    def this(source: js.Any, options: AnonAutoPlay) = this()
-    def this(source: js.Array[String | _], options: AnonAutoPlay) = this()
-    def this(source: HTMLVideoElement, options: AnonAutoPlay) = this()
+    def this(source: String, options: AutoPlay) = this()
+    def this(source: js.Any, options: AutoPlay) = this()
+    def this(source: js.Array[String | _], options: AutoPlay) = this()
+    def this(source: HTMLVideoElement, options: AutoPlay) = this()
+    /**
+      * Internal height of the resource
+      * @member {number} PIXI.resources.Resource#_height
+      * @protected
+      */
+    /* CompleteClass */
+    override var _height: Double = js.native
+    /**
+      * Internal width of the resource
+      * @member {number} PIXI.resources.Resource#_width
+      * @protected
+      */
+    /* CompleteClass */
+    override var _width: Double = js.native
+    /**
+      * If resource has been destroyed
+      * @member {boolean} PIXI.resources.Resource#destroyed
+      * @readonly
+      * @default false
+      */
+    /* CompleteClass */
+    override val destroyed: Boolean = js.native
+    /**
+      * The height of the resource.
+      *
+      * @member {number}
+      * @readonly
+      */
+    /* CompleteClass */
+    override val height: Double = js.native
+    /**
+      * `true` if resource is created by BaseTexture
+      * useful for doing cleanup with BaseTexture destroy
+      * and not cleaning up resources that were created
+      * externally.
+      * @member {boolean} PIXI.resources.Resource#internal
+      * @protected
+      */
+    /* CompleteClass */
+    override var internal: Boolean = js.native
+    /**
+      * Has been validated
+      * @readonly
+      * @member {boolean}
+      */
+    /* CompleteClass */
+    override val valid: Boolean = js.native
+    /**
+      * The width of the resource.
+      *
+      * @member {number}
+      * @readonly
+      */
+    /* CompleteClass */
+    override val width: Double = js.native
+    /**
+      * Bind to a parent BaseTexture
+      *
+      * @param {PIXI.BaseTexture} baseTexture - Parent texture
+      */
+    /* CompleteClass */
+    override def bind(baseTexture: typings.pixiJs.PIXI.BaseTexture): Unit = js.native
+    /**
+      * Call when destroying resource, unbind any BaseTexture object
+      * before calling this method, as reference counts are maintained
+      * internally.
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    /**
+      * Clean up anything, this happens when destroying is ready.
+      *
+      * @protected
+      */
+    /* CompleteClass */
+    /* protected */ override def dispose(): Unit = js.native
+    /**
+      * This can be overridden to start preloading a resource
+      * or do any other prepare step.
+      * @protected
+      * @return {Promise<void>} Handle the validate event
+      */
+    /* CompleteClass */
+    /* protected */ override def load(): js.Promise[Unit] = js.native
+    /**
+      * Trigger a resize event
+      * @param {number} width X dimension
+      * @param {number} height Y dimension
+      */
+    /* CompleteClass */
+    override def resize(width: Double, height: Double): Unit = js.native
+    /**
+      * Set the style, optional to override
+      *
+      * @param {PIXI.Renderer} renderer - yeah, renderer!
+      * @param {PIXI.BaseTexture} baseTexture - the texture
+      * @param {PIXI.GLTexture} glTexture - texture instance for this webgl context
+      * @returns {boolean} `true` is success
+      */
+    /* CompleteClass */
+    override def style(
+      renderer: typings.pixiJs.PIXI.Renderer,
+      baseTexture: typings.pixiJs.PIXI.BaseTexture,
+      glTexture: typings.pixiJs.PIXI.GLTexture
+    ): Boolean = js.native
+    /**
+      * Unbind to a parent BaseTexture
+      *
+      * @param {PIXI.BaseTexture} baseTexture - Parent texture
+      */
+    /* CompleteClass */
+    override def unbind(baseTexture: typings.pixiJs.PIXI.BaseTexture): Unit = js.native
+    /**
+      * Has been updated trigger event
+      */
+    /* CompleteClass */
+    override def update(): Unit = js.native
+    /**
+      * Uploads the texture or returns false if it cant for some reason. Override this.
+      *
+      * @param {PIXI.Renderer} renderer - yeah, renderer!
+      * @param {PIXI.BaseTexture} baseTexture - the texture
+      * @param {PIXI.GLTexture} glTexture - texture instance for this webgl context
+      * @returns {boolean} true is success
+      */
+    /* CompleteClass */
+    override def upload(
+      renderer: typings.pixiJs.PIXI.Renderer,
+      baseTexture: typings.pixiJs.PIXI.BaseTexture,
+      glTexture: typings.pixiJs.PIXI.GLTexture
+    ): Boolean = js.native
   }
   
   /**
@@ -270,9 +1797,9 @@ object resources extends js.Object {
     * @return {PIXI.resources.Resource} The created resource.
     */
   def autoDetectResource(source: String): typings.pixiJs.PIXI.resources.Resource = js.native
-  def autoDetectResource(source: String, options: AnonCreateBitmap): typings.pixiJs.PIXI.resources.Resource = js.native
+  def autoDetectResource(source: String, options: CreateBitmap): typings.pixiJs.PIXI.resources.Resource = js.native
   def autoDetectResource(source: js.Any): typings.pixiJs.PIXI.resources.Resource = js.native
-  def autoDetectResource(source: js.Any, options: AnonCreateBitmap): typings.pixiJs.PIXI.resources.Resource = js.native
+  def autoDetectResource(source: js.Any, options: CreateBitmap): typings.pixiJs.PIXI.resources.Resource = js.native
   /* static members */
   @js.native
   object BaseImageResource extends js.Object {

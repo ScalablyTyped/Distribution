@@ -13,14 +13,14 @@ import scala.scalajs.js.annotation._
 trait CustomPropertyData extends js.Object {
   /**
     *
-    * Gets the key of the custom property. Read only.
+    * The key of the custom property.
     *
     * [Api set: ExcelApi 1.7]
     */
   var key: js.UndefOr[String] = js.undefined
   /**
     *
-    * Gets the value type of the custom property. Read only.
+    * The type of the value used for the custom property.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -29,7 +29,7 @@ trait CustomPropertyData extends js.Object {
   ] = js.undefined
   /**
     *
-    * Gets or sets the value of the custom property.
+    * The value of the custom property.
     *
     * [Api set: ExcelApi 1.7]
     */

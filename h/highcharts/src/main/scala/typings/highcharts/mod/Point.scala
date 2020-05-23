@@ -154,7 +154,7 @@ class Point () extends js.Object {
     *
     * @return The path definition.
     */
-  def haloPath(size: Double): SVGElement = js.native
+  def haloPath(size: Double): SVGPathArray = js.native
   /**
     * Initialize the point. Called internally based on the `series.data`
     * option.

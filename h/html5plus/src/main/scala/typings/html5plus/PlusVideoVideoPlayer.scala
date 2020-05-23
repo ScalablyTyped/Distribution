@@ -15,7 +15,7 @@ trait PlusVideoVideoPlayer extends js.Object {
   /**
     * 监听视频播放控件事件
     * 向视频播放控件添加事件监听器，当指定的事件发生时，将触发listener函数的执行。 
-    * 	可多次调用此方法向视频播放控件添加多个监听器，当监听的事件发生时，将按照添加的先后顺序执行。
+    *     可多次调用此方法向视频播放控件添加多个监听器，当监听的事件发生时，将按照添加的先后顺序执行。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
@@ -43,7 +43,7 @@ trait PlusVideoVideoPlayer extends js.Object {
   /**
     * 隐藏视频播放控件
     * 隐藏只是控件不可见，控件依然存在并且不改变播放状态。
-    * 	如果控件已经隐藏，则操作无效。
+    *     如果控件已经隐藏，则操作无效。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
@@ -95,7 +95,7 @@ trait PlusVideoVideoPlayer extends js.Object {
   /**
     * 设置视频播放控件参数（将废弃，使用setStyles）
     * 用于动态更新视频播放控件的配置选项。
-    * 	注意：有些选项无法动态更新，只能创建时进行设置，详情参考VideoPlayerStyles。
+    *     注意：有些选项无法动态更新，只能创建时进行设置，详情参考VideoPlayerStyles。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
@@ -104,7 +104,7 @@ trait PlusVideoVideoPlayer extends js.Object {
   /**
     * 设置视频播放控件参数
     * 用于动态更新视频播放控件的配置参数。
-    * 	注意：有些选项无法动态更新，只能创建时进行设置，详情参考VideoPlayerStyles。
+    *     注意：有些选项无法动态更新，只能创建时进行设置，详情参考VideoPlayerStyles。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
@@ -113,7 +113,7 @@ trait PlusVideoVideoPlayer extends js.Object {
   /**
     * 显示视频播放控件
     * 将隐藏的控件显示出来（回复到隐藏前的状态）。
-    * 	如果控件已经显示，则操作无效。
+    *     如果控件已经显示，则操作无效。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */

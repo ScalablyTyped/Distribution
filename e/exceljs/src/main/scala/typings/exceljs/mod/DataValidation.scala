@@ -41,15 +41,15 @@ object DataValidation {
   ): DataValidation = {
     val __obj = js.Dynamic.literal(formulae = formulae.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowBlank)) __obj.updateDynamic("allowBlank")(allowBlank.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowBlank)) __obj.updateDynamic("allowBlank")(allowBlank.get.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (errorStyle != null) __obj.updateDynamic("errorStyle")(errorStyle.asInstanceOf[js.Any])
     if (errorTitle != null) __obj.updateDynamic("errorTitle")(errorTitle.asInstanceOf[js.Any])
     if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
     if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
     if (promptTitle != null) __obj.updateDynamic("promptTitle")(promptTitle.asInstanceOf[js.Any])
-    if (!js.isUndefined(showErrorMessage)) __obj.updateDynamic("showErrorMessage")(showErrorMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInputMessage)) __obj.updateDynamic("showInputMessage")(showInputMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(showErrorMessage)) __obj.updateDynamic("showErrorMessage")(showErrorMessage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInputMessage)) __obj.updateDynamic("showInputMessage")(showInputMessage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataValidation]
   }
 }

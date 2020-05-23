@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.PIXELFORMAT_ASTC_4x4
-  * @type {number}
-  * @description ATC compressed format with alpha channel in blocks of 4x4.
+  * ATC compressed format with alpha channel in blocks of 4x4.
   */
 @JSImport("playcanvas", "PIXELFORMAT_ASTC_4x4")
 @js.native

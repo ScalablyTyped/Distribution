@@ -31,28 +31,28 @@ trait IAttrValue extends js.Object {
 object IAttrValue {
   @scala.inline
   def apply(
-    b: js.UndefOr[Boolean] = js.undefined,
-    f: Int | Double = null,
-    func: INameAttrList = null,
-    i: Double | String = null,
-    list: IListValue = null,
-    placeholder: String = null,
-    s: String = null,
-    shape: ITensorShape = null,
-    tensor: ITensor = null,
-    `type`: DataType = null
+    b: js.UndefOr[Null | Boolean] = js.undefined,
+    f: js.UndefOr[Null | Double] = js.undefined,
+    func: js.UndefOr[Null | INameAttrList] = js.undefined,
+    i: js.UndefOr[Null | Double | String] = js.undefined,
+    list: js.UndefOr[Null | IListValue] = js.undefined,
+    placeholder: js.UndefOr[Null | String] = js.undefined,
+    s: js.UndefOr[Null | String] = js.undefined,
+    shape: js.UndefOr[Null | ITensorShape] = js.undefined,
+    tensor: js.UndefOr[Null | ITensor] = js.undefined,
+    `type`: js.UndefOr[Null | DataType] = js.undefined
   ): IAttrValue = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(b)) __obj.updateDynamic("b")(b.asInstanceOf[js.Any])
-    if (f != null) __obj.updateDynamic("f")(f.asInstanceOf[js.Any])
-    if (func != null) __obj.updateDynamic("func")(func.asInstanceOf[js.Any])
-    if (i != null) __obj.updateDynamic("i")(i.asInstanceOf[js.Any])
-    if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (s != null) __obj.updateDynamic("s")(s.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (tensor != null) __obj.updateDynamic("tensor")(tensor.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(f)) __obj.updateDynamic("f")(f.asInstanceOf[js.Any])
+    if (!js.isUndefined(func)) __obj.updateDynamic("func")(func.asInstanceOf[js.Any])
+    if (!js.isUndefined(i)) __obj.updateDynamic("i")(i.asInstanceOf[js.Any])
+    if (!js.isUndefined(list)) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
+    if (!js.isUndefined(placeholder)) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (!js.isUndefined(s)) __obj.updateDynamic("s")(s.asInstanceOf[js.Any])
+    if (!js.isUndefined(shape)) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+    if (!js.isUndefined(tensor)) __obj.updateDynamic("tensor")(tensor.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAttrValue]
   }
 }

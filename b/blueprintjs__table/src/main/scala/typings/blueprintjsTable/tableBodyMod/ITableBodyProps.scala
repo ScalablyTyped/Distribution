@@ -1,7 +1,7 @@
 package typings.blueprintjsTable.tableBodyMod
 
 import typings.blueprintjsTable.commonCellMod.IFocusedCellCoordinates
-import typings.blueprintjsTable.draggableMod.ICoordinateData
+import typings.blueprintjsTable.dragTypesMod.ICoordinateData
 import typings.blueprintjsTable.esmRegionsMod.IRegion
 import typings.blueprintjsTable.gridMod.Grid
 import typings.blueprintjsTable.locatorMod.ILocator
@@ -13,14 +13,14 @@ import typings.blueprintjsTable.renderModeMod.RenderMode.NONE
 import typings.blueprintjsTable.selectableMod.ISelectedRegionTransform
 import typings.blueprintjsTable.tableBodyCellsMod.ITableBodyCellsProps
 import typings.react.mod.ReactElement
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.blueprintjsTable.selectableMod.ISelectableProps because var conflicts: focusedCell. Inlined enableMultipleSelection, onFocusedCell, onSelection, onSelectionEnd, selectedRegions, selectedRegionTransform */ trait ITableBodyProps extends ITableBodyCellsProps {
   /**
     * An optional callback for displaying a context menu when right-clicking
@@ -99,8 +99,8 @@ object ITableBodyProps {
     className: String = null,
     enableMultipleSelection: js.UndefOr[Boolean] = js.undefined,
     focusedCell: IFocusedCellCoordinates = null,
-    numFrozenColumns: Int | Double = null,
-    numFrozenRows: Int | Double = null,
+    numFrozenColumns: js.UndefOr[Double] = js.undefined,
+    numFrozenRows: js.UndefOr[Double] = js.undefined,
     onCompleteRender: () => Unit = null,
     onSelectionEnd: /* regions */ js.Array[IRegion] => Unit = null,
     renderMode: BATCH | NONE = null,
@@ -110,10 +110,10 @@ object ITableBodyProps {
     val __obj = js.Dynamic.literal(cellRenderer = js.Any.fromFunction2(cellRenderer), columnIndexEnd = columnIndexEnd.asInstanceOf[js.Any], columnIndexStart = columnIndexStart.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], locator = locator.asInstanceOf[js.Any], onFocusedCell = js.Any.fromFunction1(onFocusedCell), onSelection = js.Any.fromFunction1(onSelection), rowIndexEnd = rowIndexEnd.asInstanceOf[js.Any], rowIndexStart = rowIndexStart.asInstanceOf[js.Any], viewportRect = viewportRect.asInstanceOf[js.Any])
     if (bodyContextMenuRenderer != null) __obj.updateDynamic("bodyContextMenuRenderer")(js.Any.fromFunction1(bodyContextMenuRenderer))
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableMultipleSelection)) __obj.updateDynamic("enableMultipleSelection")(enableMultipleSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableMultipleSelection)) __obj.updateDynamic("enableMultipleSelection")(enableMultipleSelection.get.asInstanceOf[js.Any])
     if (focusedCell != null) __obj.updateDynamic("focusedCell")(focusedCell.asInstanceOf[js.Any])
-    if (numFrozenColumns != null) __obj.updateDynamic("numFrozenColumns")(numFrozenColumns.asInstanceOf[js.Any])
-    if (numFrozenRows != null) __obj.updateDynamic("numFrozenRows")(numFrozenRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(numFrozenColumns)) __obj.updateDynamic("numFrozenColumns")(numFrozenColumns.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numFrozenRows)) __obj.updateDynamic("numFrozenRows")(numFrozenRows.get.asInstanceOf[js.Any])
     if (onCompleteRender != null) __obj.updateDynamic("onCompleteRender")(js.Any.fromFunction0(onCompleteRender))
     if (onSelectionEnd != null) __obj.updateDynamic("onSelectionEnd")(js.Any.fromFunction1(onSelectionEnd))
     if (renderMode != null) __obj.updateDynamic("renderMode")(renderMode.asInstanceOf[js.Any])

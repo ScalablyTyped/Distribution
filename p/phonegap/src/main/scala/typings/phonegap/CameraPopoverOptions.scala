@@ -1,6 +1,5 @@
 package typings.phonegap
 
-import org.scalablytyped.runtime.Instantiable5
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,14 +12,22 @@ trait CameraPopoverOptions extends js.Object {
   var y: js.UndefOr[Double] = js.undefined
 }
 
-@JSGlobal("CameraPopoverOptions")
-@js.native
-object CameraPopoverOptions extends Instantiable5[
-      /* x */ Double, 
-      /* y */ Double, 
-      /* width */ Double, 
-      /* height */ Double, 
-      /* arrowDir */ Double, 
-      CameraPopoverOptions
-    ]
+object CameraPopoverOptions {
+  @scala.inline
+  def apply(
+    arrowDir: js.UndefOr[Double] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined,
+    x: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined
+  ): CameraPopoverOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(arrowDir)) __obj.updateDynamic("arrowDir")(arrowDir.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CameraPopoverOptions]
+  }
+}
 

@@ -29,7 +29,7 @@ object OverlayOptions {
   def apply(
     autoPan: js.UndefOr[Boolean] = js.undefined,
     autoPanAnimation: PanOptions = null,
-    autoPanMargin: Int | Double = null,
+    autoPanMargin: js.UndefOr[Double] = js.undefined,
     element: Element = null,
     id: Double | String = null,
     insertFirst: js.UndefOr[Boolean] = js.undefined,
@@ -39,16 +39,16 @@ object OverlayOptions {
     stopEvent: js.UndefOr[Boolean] = js.undefined
   ): OverlayOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoPan)) __obj.updateDynamic("autoPan")(autoPan.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPan)) __obj.updateDynamic("autoPan")(autoPan.get.asInstanceOf[js.Any])
     if (autoPanAnimation != null) __obj.updateDynamic("autoPanAnimation")(autoPanAnimation.asInstanceOf[js.Any])
-    if (autoPanMargin != null) __obj.updateDynamic("autoPanMargin")(autoPanMargin.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPanMargin)) __obj.updateDynamic("autoPanMargin")(autoPanMargin.get.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertFirst)) __obj.updateDynamic("insertFirst")(insertFirst.asInstanceOf[js.Any])
+    if (!js.isUndefined(insertFirst)) __obj.updateDynamic("insertFirst")(insertFirst.get.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (positioning != null) __obj.updateDynamic("positioning")(positioning.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopEvent)) __obj.updateDynamic("stopEvent")(stopEvent.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopEvent)) __obj.updateDynamic("stopEvent")(stopEvent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverlayOptions]
   }
 }

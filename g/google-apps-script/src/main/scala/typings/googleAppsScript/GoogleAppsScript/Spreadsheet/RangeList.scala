@@ -1,7 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
-import typings.googleAppsScript.AnonCommentsOnly
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import typings.googleAppsScript.anon.CommentsOnly
 import typings.googleAppsScript.googleAppsScriptStrings.`line-through`
 import typings.googleAppsScript.googleAppsScriptStrings.bold
 import typings.googleAppsScript.googleAppsScriptStrings.bottom
@@ -27,7 +27,7 @@ trait RangeList extends js.Object {
   def breakApart(): RangeList = js.native
   def check(): RangeList = js.native
   def clear(): RangeList = js.native
-  def clear(options: AnonCommentsOnly): RangeList = js.native
+  def clear(options: CommentsOnly): RangeList = js.native
   def clearContent(): RangeList = js.native
   def clearDataValidations(): RangeList = js.native
   def clearFormat(): RangeList = js.native

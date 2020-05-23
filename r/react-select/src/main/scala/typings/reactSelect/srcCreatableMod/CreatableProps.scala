@@ -41,7 +41,7 @@ trait CreatableProps[OptionType /* <: OptionTypeBase */] extends js.Object {
 
 object CreatableProps {
   @scala.inline
-  def apply[OptionType /* <: OptionTypeBase */](
+  def apply[OptionType](
     allowCreateWhileLoading: js.UndefOr[Boolean] = js.undefined,
     createOptionPosition: first | last = null,
     formatCreateLabel: /* inputValue */ String => ReactNode = null,
@@ -50,7 +50,7 @@ object CreatableProps {
     onCreateOption: /* inputValue */ String => Unit = null
   ): CreatableProps[OptionType] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowCreateWhileLoading)) __obj.updateDynamic("allowCreateWhileLoading")(allowCreateWhileLoading.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCreateWhileLoading)) __obj.updateDynamic("allowCreateWhileLoading")(allowCreateWhileLoading.get.asInstanceOf[js.Any])
     if (createOptionPosition != null) __obj.updateDynamic("createOptionPosition")(createOptionPosition.asInstanceOf[js.Any])
     if (formatCreateLabel != null) __obj.updateDynamic("formatCreateLabel")(js.Any.fromFunction1(formatCreateLabel))
     if (getNewOptionData != null) __obj.updateDynamic("getNewOptionData")(js.Any.fromFunction2(getNewOptionData))

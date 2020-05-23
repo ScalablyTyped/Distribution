@@ -44,15 +44,15 @@ object MessageParams {
     return_response: js.UndefOr[Boolean] = js.undefined
   ): MessageParams = {
     val __obj = js.Dynamic.literal(workspace_id = workspace_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(alternate_intents)) __obj.updateDynamic("alternate_intents")(alternate_intents.asInstanceOf[js.Any])
+    if (!js.isUndefined(alternate_intents)) __obj.updateDynamic("alternate_intents")(alternate_intents.get.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
     if (intents != null) __obj.updateDynamic("intents")(intents.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodes_visited_details)) __obj.updateDynamic("nodes_visited_details")(nodes_visited_details.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodes_visited_details)) __obj.updateDynamic("nodes_visited_details")(nodes_visited_details.get.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageParams]
   }
 }

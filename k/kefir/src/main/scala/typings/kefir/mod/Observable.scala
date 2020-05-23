@@ -1,11 +1,11 @@
 package typings.kefir.mod
 
-import typings.kefir.AnonConvert
-import typings.kefir.AnonFlushOnChange
-import typings.kefir.AnonFlushOnEnd
-import typings.kefir.AnonImmediate
-import typings.kefir.AnonLeading
-import typings.kefir.AnonValue
+import typings.kefir.anon.Convert
+import typings.kefir.anon.FlushOnChange
+import typings.kefir.anon.FlushOnEnd
+import typings.kefir.anon.Immediate
+import typings.kefir.anon.Leading
+import typings.kefir.anon.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,28 +18,28 @@ class Observable[T, S] () extends js.Object {
   def awaiting[U, V](otherObs: Observable[U, V]): Observable[Boolean, S] = js.native
   def beforeEnd[U](fn: js.Function0[U]): Observable[T | U, S] = js.native
   def bufferBy[U, V](otherObs: Observable[U, V]): Observable[js.Array[T], S] = js.native
-  def bufferBy[U, V](otherObs: Observable[U, V], options: AnonFlushOnEnd): Observable[js.Array[T], S] = js.native
+  def bufferBy[U, V](otherObs: Observable[U, V], options: FlushOnEnd): Observable[js.Array[T], S] = js.native
   def bufferWhile(predicate: js.Function1[/* value */ T, Boolean]): Observable[js.Array[T], S] = js.native
   def bufferWhileBy[U](otherObs: Observable[Boolean, U]): Observable[js.Array[T], S] = js.native
-  def bufferWhileBy[U](otherObs: Observable[Boolean, U], options: AnonFlushOnChange): Observable[js.Array[T], S] = js.native
+  def bufferWhileBy[U](otherObs: Observable[Boolean, U], options: FlushOnChange): Observable[js.Array[T], S] = js.native
   def bufferWithCount(count: Double): Observable[js.Array[T], S] = js.native
-  def bufferWithCount(count: Double, options: AnonFlushOnEnd): Observable[js.Array[T], S] = js.native
+  def bufferWithCount(count: Double, options: FlushOnEnd): Observable[js.Array[T], S] = js.native
   def bufferWithTimeOrCount(interval: Double, count: Double): Observable[js.Array[T], S] = js.native
-  def bufferWithTimeOrCount(interval: Double, count: Double, options: AnonFlushOnEnd): Observable[js.Array[T], S] = js.native
+  def bufferWithTimeOrCount(interval: Double, count: Double, options: FlushOnEnd): Observable[js.Array[T], S] = js.native
   def changes(): Observable[T, S] = js.native
   // Combine streams
   def combine[U, V, W](otherObs: Observable[U, V]): Observable[W, S | V] = js.native
   def combine[U, V, W](otherObs: Observable[U, V], combinator: js.Function2[/* value */ T, /* repeated */ U, W]): Observable[W, S | V] = js.native
   def concat[U, V](otherObs: Observable[U, V]): Observable[T | U, S | V] = js.native
   def debounce(wait: Double): Observable[T, S] = js.native
-  def debounce(wait: Double, options: AnonImmediate): Observable[T, S] = js.native
+  def debounce(wait: Double, options: Immediate): Observable[T, S] = js.native
   def delay(wait: Double): Observable[T, S] = js.native
   def diff(): Observable[T, S] = js.native
   def diff(fn: js.Function2[/* prev */ T, /* next */ T, T]): Observable[T, S] = js.native
   def diff(fn: js.Function2[/* prev */ T, /* next */ T, T], seed: T): Observable[T, S] = js.native
   def endOnError(): Observable[T, S] = js.native
   def errorsToValues[U](): Observable[T | U, scala.Nothing] = js.native
-  def errorsToValues[U](handler: js.Function1[/* error */ S, AnonValue[U]]): Observable[T | U, scala.Nothing] = js.native
+  def errorsToValues[U](handler: js.Function1[/* error */ S, Value[U]]): Observable[T | U, scala.Nothing] = js.native
   def filter(): Observable[T, S] = js.native
   def filter(predicate: js.Function1[/* value */ T, Boolean]): Observable[T, S] = js.native
   // Combine two streams
@@ -49,15 +49,15 @@ class Observable[T, S] () extends js.Object {
   @JSName("filter")
   def filter_U_T[U /* <: T */](fn: js.Function1[/* value */ T, /* is U */ Boolean]): Observable[U, S] = js.native
   def flatMap[X /* <: T with (Property[T, _]) */](): Observable[ValueOfAnObservable[X], _] = js.native
-  def flatMap[U, V](transform: js.Function1[/* value */ T, Observable[U, V]]): Observable[U, V] = js.native
+  def flatMap[U, V](transform: js.Function1[/* value */ T, Observable[U, V]]): Observable[U, V | S] = js.native
   def flatMapConcat[X /* <: T with (Property[T, _]) */](): Observable[ValueOfAnObservable[X], _] = js.native
-  def flatMapConcat[U, V](fn: js.Function1[/* value */ T, Observable[U, V]]): Observable[U, V] = js.native
-  def flatMapConcurLimit[U, V](fn: js.Function1[/* value */ T, Observable[U, V]], limit: Double): Observable[U, V] = js.native
-  def flatMapErrors[U, V](transform: js.Function1[/* error */ S, Observable[U, V]]): Observable[U, V] = js.native
+  def flatMapConcat[U, V](fn: js.Function1[/* value */ T, Observable[U, V]]): Observable[U, V | S] = js.native
+  def flatMapConcurLimit[U, V](fn: js.Function1[/* value */ T, Observable[U, V]], limit: Double): Observable[U, V | S] = js.native
+  def flatMapErrors[U, V](transform: js.Function1[/* error */ S, Observable[U, V]]): Observable[U | T, V] = js.native
   def flatMapFirst[X /* <: T with (Property[T, _]) */](): Observable[ValueOfAnObservable[X], _] = js.native
-  def flatMapFirst[U, V](fn: js.Function1[/* value */ T, Observable[U, V]]): Observable[U, V] = js.native
+  def flatMapFirst[U, V](fn: js.Function1[/* value */ T, Observable[U, V]]): Observable[U, V | S] = js.native
   def flatMapLatest[X /* <: T with (Property[T, _]) */](): Observable[ValueOfAnObservable[X], _] = js.native
-  def flatMapLatest[U, V](fn: js.Function1[/* value */ T, Observable[U, V]]): Observable[U, V] = js.native
+  def flatMapLatest[U, V](fn: js.Function1[/* value */ T, Observable[U, V]]): Observable[U, V | S] = js.native
   def flatten[U](): Stream_[U, S] = js.native
   def flatten[U](transformer: js.Function1[/* value */ T, js.Array[U]]): Stream_[U, S] = js.native
   def ignoreEnd(): Observable[T, S] = js.native
@@ -115,8 +115,8 @@ class Observable[T, S] () extends js.Object {
   def takeWhile(): Observable[T, S] = js.native
   def takeWhile(predicate: js.Function1[/* value */ T, Boolean]): Observable[T, S] = js.native
   def throttle(wait: Double): Observable[T, S] = js.native
-  def throttle(wait: Double, options: AnonLeading): Observable[T, S] = js.native
-  def thru[R](cb: js.Function1[/* obs */ Observable[T, S], Observable[R, S]]): Observable[R, S] = js.native
+  def throttle(wait: Double, options: Leading): Observable[T, S] = js.native
+  def thru[R](cb: js.Function1[/* obs */ Observable[T, S], R]): R = js.native
   def toESObservable(): ESObservable[T, S] = js.native
   def toPromise(): js.Promise[T] = js.native
   def toPromise[W /* <: js.Thenable[T] */](PromiseConstructor: js.Function0[W]): W = js.native
@@ -127,7 +127,7 @@ class Observable[T, S] () extends js.Object {
   def toProperty_T2[T2](): Property[T | T2, S] = js.native
   def transduce[U](transducer: js.Any): Observable[U, S] = js.native
   def valuesToErrors(): Observable[scala.Nothing, S | T] = js.native
-  def valuesToErrors[U](handler: js.Function1[/* value */ T, AnonConvert[U]]): Observable[scala.Nothing, S | U] = js.native
+  def valuesToErrors[U](handler: js.Function1[/* value */ T, Convert[U]]): Observable[scala.Nothing, S | U] = js.native
   def withHandler[U, V](handler: js.Function2[/* emitter */ Emitter[U, S], /* event */ Event[T, S], Unit]): Observable[U, S] = js.native
   def zip[U, V, W](otherObs: Observable[U, V]): Observable[W, S | V] = js.native
   def zip[U, V, W](otherObs: Observable[U, V], combinator: js.Function2[/* value */ T, /* repeated */ U, W]): Observable[W, S | V] = js.native

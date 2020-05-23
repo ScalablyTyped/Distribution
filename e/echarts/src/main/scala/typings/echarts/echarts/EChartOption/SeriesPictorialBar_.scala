@@ -1,14 +1,14 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.Anon2
-import typings.echarts.AnonAnimationDelay
-import typings.echarts.AnonAnimationDelayAnimationDelayUpdate
-import typings.echarts.AnonAnimationDelayUpdate
-import typings.echarts.AnonAnimationDuration
-import typings.echarts.AnonBorderRadius
-import typings.echarts.AnonBorderType
-import typings.echarts.AnonExtraCssText
-import typings.echarts.AnonLabelAnonBorderRadius
+import typings.echarts.anon.AnimationDelay
+import typings.echarts.anon.AnimationDelayAnimationDelayUpdate
+import typings.echarts.anon.AnimationDelayUpdate
+import typings.echarts.anon.AnimationDuration
+import typings.echarts.anon.BorderRadius
+import typings.echarts.anon.BorderType
+import typings.echarts.anon.ExtraCssText
+import typings.echarts.anon.LabelBorderRadius
+import typings.echarts.anon.`2`
 import typings.echarts.echarts.EChartOption.SeriesPictorialBar.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -149,7 +149,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * "cubicOut"
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.animationEasingUpdate
     */
-  var animationEasingUpdate: js.UndefOr[Anon2] = js.undefined
+  var animationEasingUpdate: js.UndefOr[`2`] = js.undefined
   /**
     * Whether to set graphic number threshold to animation.
     * Animation will be disabled when graphic number is larger than
@@ -451,7 +451,7 @@ trait SeriesPictorialBar_ extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.emphasis
     */
-  var emphasis: js.UndefOr[AnonLabelAnonBorderRadius] = js.undefined
+  var emphasis: js.UndefOr[LabelBorderRadius] = js.undefined
   /**
     * Define what is encoded to for each dimension of `data`.
     * For example:
@@ -508,7 +508,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.hoverAnimation
     */
-  var hoverAnimation: js.UndefOr[AnonAnimationDelayAnimationDelayUpdate] = js.undefined
+  var hoverAnimation: js.UndefOr[AnimationDelayAnimationDelayUpdate] = js.undefined
   /**
     * Component ID, not specified by default.
     * If specified, it can be used to refer the component in option
@@ -525,7 +525,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderType] = js.undefined
+  var itemStyle: js.UndefOr[BorderType] = js.undefined
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -537,7 +537,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.label
     */
-  var label: js.UndefOr[AnonBorderRadius] = js.undefined
+  var label: js.UndefOr[BorderRadius] = js.undefined
   /**
     * Whether to enable highlighting chart when
     * [legend](https://echarts.apache.org/en/option.html#legend)
@@ -556,21 +556,21 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.markArea
     */
-  var markArea: js.UndefOr[AnonAnimationDelayUpdate] = js.undefined
+  var markArea: js.UndefOr[AnimationDelayUpdate] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.markLine
     */
-  var markLine: js.UndefOr[AnonAnimationDelay] = js.undefined
+  var markLine: js.UndefOr[AnimationDelay] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.markPoint
     */
-  var markPoint: js.UndefOr[AnonAnimationDuration] = js.undefined
+  var markPoint: js.UndefOr[AnimationDuration] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -1127,7 +1127,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.tooltip
     */
-  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
   /**
     * @default
     * "pictorialBar"
@@ -1194,61 +1194,61 @@ object SeriesPictorialBar_ {
     animationDuration: js.Function | Double = null,
     animationDurationUpdate: js.Function | Double = null,
     animationEasing: String = null,
-    animationEasingUpdate: Anon2 = null,
-    animationThreshold: Int | Double = null,
+    animationEasingUpdate: `2` = null,
+    animationThreshold: js.UndefOr[Double] = js.undefined,
     barCategoryGap: String = null,
     barGap: String = null,
-    barMaxWidth: Int | Double = null,
-    barMinHeight: Int | Double = null,
-    barWidth: Int | Double = null,
+    barMaxWidth: js.UndefOr[Double] = js.undefined,
+    barMinHeight: js.UndefOr[Double] = js.undefined,
+    barWidth: js.UndefOr[Double] = js.undefined,
     coordinateSystem: String = null,
     cursor: String = null,
     data: js.Array[
       (js.Array[Unit | Double | String | DataObject]) | DataObject | Double | String | Unit
     ] = null,
     dimensions: js.Array[_] = null,
-    emphasis: AnonLabelAnonBorderRadius = null,
+    emphasis: LabelBorderRadius = null,
     encode: js.Object = null,
-    hoverAnimation: AnonAnimationDelayAnimationDelayUpdate = null,
+    hoverAnimation: AnimationDelayAnimationDelayUpdate = null,
     id: String = null,
-    itemStyle: AnonBorderType = null,
-    label: AnonBorderRadius = null,
+    itemStyle: BorderType = null,
+    label: BorderRadius = null,
     legendHoverLink: js.UndefOr[Boolean] = js.undefined,
-    markArea: AnonAnimationDelayUpdate = null,
-    markLine: AnonAnimationDelay = null,
-    markPoint: AnonAnimationDuration = null,
+    markArea: AnimationDelayUpdate = null,
+    markLine: AnimationDelay = null,
+    markPoint: AnimationDuration = null,
     name: String = null,
     silent: js.UndefOr[Boolean] = js.undefined,
     symbol: String = null,
-    symbolBoundingData: Int | Double = null,
+    symbolBoundingData: js.UndefOr[Double] = js.undefined,
     symbolClip: js.UndefOr[Boolean] = js.undefined,
     symbolMargin: Double | String = null,
     symbolOffset: js.Array[_] = null,
-    symbolPatternSize: Int | Double = null,
+    symbolPatternSize: js.UndefOr[Double] = js.undefined,
     symbolPosition: String = null,
     symbolRepeat: Boolean | Double | String = null,
     symbolRepeatDirection: String = null,
-    symbolRotate: Int | Double = null,
+    symbolRotate: js.UndefOr[Double] = js.undefined,
     symbolSize: js.Array[_] | Double = null,
-    tooltip: AnonExtraCssText = null,
+    tooltip: ExtraCssText = null,
     `type`: String = null,
-    xAxisIndex: Int | Double = null,
-    yAxisIndex: Int | Double = null,
-    z: Int | Double = null,
-    zlevel: Int | Double = null
+    xAxisIndex: js.UndefOr[Double] = js.undefined,
+    yAxisIndex: js.UndefOr[Double] = js.undefined,
+    z: js.UndefOr[Double] = js.undefined,
+    zlevel: js.UndefOr[Double] = js.undefined
   ): SeriesPictorialBar_ = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
     if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
     if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate.asInstanceOf[js.Any])
-    if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationThreshold)) __obj.updateDynamic("animationThreshold")(animationThreshold.get.asInstanceOf[js.Any])
     if (barCategoryGap != null) __obj.updateDynamic("barCategoryGap")(barCategoryGap.asInstanceOf[js.Any])
     if (barGap != null) __obj.updateDynamic("barGap")(barGap.asInstanceOf[js.Any])
-    if (barMaxWidth != null) __obj.updateDynamic("barMaxWidth")(barMaxWidth.asInstanceOf[js.Any])
-    if (barMinHeight != null) __obj.updateDynamic("barMinHeight")(barMinHeight.asInstanceOf[js.Any])
-    if (barWidth != null) __obj.updateDynamic("barWidth")(barWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(barMaxWidth)) __obj.updateDynamic("barMaxWidth")(barMaxWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(barMinHeight)) __obj.updateDynamic("barMinHeight")(barMinHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(barWidth)) __obj.updateDynamic("barWidth")(barWidth.get.asInstanceOf[js.Any])
     if (coordinateSystem != null) __obj.updateDynamic("coordinateSystem")(coordinateSystem.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
@@ -1259,29 +1259,29 @@ object SeriesPictorialBar_ {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(legendHoverLink)) __obj.updateDynamic("legendHoverLink")(legendHoverLink.asInstanceOf[js.Any])
+    if (!js.isUndefined(legendHoverLink)) __obj.updateDynamic("legendHoverLink")(legendHoverLink.get.asInstanceOf[js.Any])
     if (markArea != null) __obj.updateDynamic("markArea")(markArea.asInstanceOf[js.Any])
     if (markLine != null) __obj.updateDynamic("markLine")(markLine.asInstanceOf[js.Any])
     if (markPoint != null) __obj.updateDynamic("markPoint")(markPoint.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (symbolBoundingData != null) __obj.updateDynamic("symbolBoundingData")(symbolBoundingData.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbolClip)) __obj.updateDynamic("symbolClip")(symbolClip.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolBoundingData)) __obj.updateDynamic("symbolBoundingData")(symbolBoundingData.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolClip)) __obj.updateDynamic("symbolClip")(symbolClip.get.asInstanceOf[js.Any])
     if (symbolMargin != null) __obj.updateDynamic("symbolMargin")(symbolMargin.asInstanceOf[js.Any])
     if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset.asInstanceOf[js.Any])
-    if (symbolPatternSize != null) __obj.updateDynamic("symbolPatternSize")(symbolPatternSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolPatternSize)) __obj.updateDynamic("symbolPatternSize")(symbolPatternSize.get.asInstanceOf[js.Any])
     if (symbolPosition != null) __obj.updateDynamic("symbolPosition")(symbolPosition.asInstanceOf[js.Any])
     if (symbolRepeat != null) __obj.updateDynamic("symbolRepeat")(symbolRepeat.asInstanceOf[js.Any])
     if (symbolRepeatDirection != null) __obj.updateDynamic("symbolRepeatDirection")(symbolRepeatDirection.asInstanceOf[js.Any])
-    if (symbolRotate != null) __obj.updateDynamic("symbolRotate")(symbolRotate.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolRotate)) __obj.updateDynamic("symbolRotate")(symbolRotate.get.asInstanceOf[js.Any])
     if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (xAxisIndex != null) __obj.updateDynamic("xAxisIndex")(xAxisIndex.asInstanceOf[js.Any])
-    if (yAxisIndex != null) __obj.updateDynamic("yAxisIndex")(yAxisIndex.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
-    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(xAxisIndex)) __obj.updateDynamic("xAxisIndex")(xAxisIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yAxisIndex)) __obj.updateDynamic("yAxisIndex")(yAxisIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zlevel)) __obj.updateDynamic("zlevel")(zlevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesPictorialBar_]
   }
 }

@@ -1,6 +1,6 @@
 package typings.googleGax.mod
 
-import typings.googleGax.AnonEncode
+import typings.googleGax.anon.Encode
 import typings.googleGax.grpcMod.GrpcClientOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -45,6 +45,6 @@ object GrpcClient extends js.Object {
     * @return {function(Object):number} - a function to compute the byte length
     *   for an object.
     */
-  def createByteLengthFunction(message: AnonEncode): js.Function1[/* obj */ js.Object, Double] = js.native
+  def createByteLengthFunction(message: Encode): js.Function1[/* obj */ js.Object, Double] = js.native
 }
 

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Sensors
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object ActivitySensorReadingConfidence extends js.Object {
   /** There is low confidence in the reading of the sensor. */
   @js.native
   sealed trait low extends ActivitySensorReadingConfidence
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ActivitySensorReadingConfidence with Double] = js.native
-  /* 0 */ @js.native
-  object high extends TopLevel[high with Double]
-  
-  /* 1 */ @js.native
-  object low extends TopLevel[low with Double]
   
 }
 

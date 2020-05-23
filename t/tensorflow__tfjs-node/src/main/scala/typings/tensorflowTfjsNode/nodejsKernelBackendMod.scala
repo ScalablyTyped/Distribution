@@ -14,6 +14,7 @@ import typings.tensorflowTfjsCore.tensorMod.Tensor1D
 import typings.tensorflowTfjsCore.tensorMod.Tensor2D
 import typings.tensorflowTfjsCore.tensorMod.Tensor3D
 import typings.tensorflowTfjsCore.tensorMod.Tensor4D
+import typings.tensorflowTfjsNode.anon.Name
 import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings._empty
 import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.bilinear
 import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.cm
@@ -205,8 +206,8 @@ object nodejsKernelBackendMod extends js.Object {
     def writeScalarSummary(resourceHandle: Tensor[Rank], step: Double, name: String, value: Scalar): Unit = js.native
   }
   
-  def createTensorsTypeOpAttr(attrName: String, tensors: js.Array[Tensor[Rank]]): AnonName = js.native
-  def createTensorsTypeOpAttr(attrName: String, tensors: Tensor[Rank]): AnonName = js.native
+  def createTensorsTypeOpAttr(attrName: String, tensors: js.Array[Tensor[Rank]]): Name = js.native
+  def createTensorsTypeOpAttr(attrName: String, tensors: Tensor[Rank]): Name = js.native
   def createTypeOpAttr(attrName: String, dtype: DataType): TFEOpAttr = js.native
   def ensureTensorflowBackend(): Unit = js.native
   def getTFDType(dataType: DataType): Double = js.native

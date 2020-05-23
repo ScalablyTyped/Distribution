@@ -1,7 +1,7 @@
 package typings.jupyterlabOutputarea.modelMod
 
 import typings.jupyterlabObservables.observablelistMod.IObservableList
-import typings.jupyterlabOutputarea.AnonLastModel
+import typings.jupyterlabOutputarea.anon.LastModel
 import typings.jupyterlabOutputarea.modelMod.IOutputAreaModel.ChangedArgs
 import typings.jupyterlabOutputarea.modelMod.IOutputAreaModel.IContentFactory
 import typings.jupyterlabOutputarea.modelMod.IOutputAreaModel.IOptions
@@ -92,7 +92,7 @@ class OutputAreaModel () extends IOutputAreaModel {
     * This will only be called if the minimal criteria of both being stream
     * messages of the same type.
     */
-  /* protected */ def shouldCombine(options: AnonLastModel): Boolean = js.native
+  /* protected */ def shouldCombine(options: LastModel): Boolean = js.native
   /**
     * A signal emitted when the model state changes.
     */

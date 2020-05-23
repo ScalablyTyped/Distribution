@@ -15,18 +15,18 @@ trait KikGetOptions extends js.Object {
 object KikGetOptions {
   @scala.inline
   def apply(
-    maxHeight: Int | Double = null,
-    maxResults: Int | Double = null,
-    maxWidth: Int | Double = null,
-    minResults: Int | Double = null,
-    quality: Int | Double = null
+    maxHeight: js.UndefOr[Double] = js.undefined,
+    maxResults: js.UndefOr[Double] = js.undefined,
+    maxWidth: js.UndefOr[Double] = js.undefined,
+    minResults: js.UndefOr[Double] = js.undefined,
+    quality: js.UndefOr[Double] = js.undefined
   ): KikGetOptions = {
     val __obj = js.Dynamic.literal()
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minResults != null) __obj.updateDynamic("minResults")(minResults.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minResults)) __obj.updateDynamic("minResults")(minResults.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[KikGetOptions]
   }
 }

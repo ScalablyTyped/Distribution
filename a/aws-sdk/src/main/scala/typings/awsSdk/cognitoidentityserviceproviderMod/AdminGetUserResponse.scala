@@ -48,7 +48,7 @@ object AdminGetUserResponse {
   @scala.inline
   def apply(
     Username: UsernameType,
-    Enabled: js.UndefOr[Boolean] = js.undefined,
+    Enabled: js.UndefOr[BooleanType] = js.undefined,
     MFAOptions: MFAOptionListType = null,
     PreferredMfaSetting: StringType = null,
     UserAttributes: AttributeListType = null,
@@ -58,7 +58,7 @@ object AdminGetUserResponse {
     UserStatus: UserStatusType = null
   ): AdminGetUserResponse = {
     val __obj = js.Dynamic.literal(Username = Username.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     if (MFAOptions != null) __obj.updateDynamic("MFAOptions")(MFAOptions.asInstanceOf[js.Any])
     if (PreferredMfaSetting != null) __obj.updateDynamic("PreferredMfaSetting")(PreferredMfaSetting.asInstanceOf[js.Any])
     if (UserAttributes != null) __obj.updateDynamic("UserAttributes")(UserAttributes.asInstanceOf[js.Any])

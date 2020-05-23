@@ -9,7 +9,12 @@ import scala.scalajs.js.annotation._
   */
 trait OrganizationSettings extends js.Object {
   /**
+    * Returns a lookup object containing the ID, name, and entity type of the base currency for the current organization.
+    */
+  var baseCurrency: LookupValue
+  /**
     * Returns the ID of the base currency for the current organization.
+    * @deprecated Deprecated in v9.1; use {@link Xrm.OrganizationSettings.baseCurrency globalContext.organizationSettings.baseCurrency} instead to display name along with the ID.
     */
   var baseCurrencyId: String
   /**
@@ -41,6 +46,7 @@ trait OrganizationSettings extends js.Object {
 object OrganizationSettings {
   @scala.inline
   def apply(
+    baseCurrency: LookupValue,
     baseCurrencyId: String,
     defaultCountryCode: String,
     isAutoSaveEnabled: Boolean,
@@ -49,7 +55,7 @@ object OrganizationSettings {
     uniqueName: String,
     useSkypeProtocol: Boolean
   ): OrganizationSettings = {
-    val __obj = js.Dynamic.literal(baseCurrencyId = baseCurrencyId.asInstanceOf[js.Any], defaultCountryCode = defaultCountryCode.asInstanceOf[js.Any], isAutoSaveEnabled = isAutoSaveEnabled.asInstanceOf[js.Any], languageId = languageId.asInstanceOf[js.Any], organizationId = organizationId.asInstanceOf[js.Any], uniqueName = uniqueName.asInstanceOf[js.Any], useSkypeProtocol = useSkypeProtocol.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(baseCurrency = baseCurrency.asInstanceOf[js.Any], baseCurrencyId = baseCurrencyId.asInstanceOf[js.Any], defaultCountryCode = defaultCountryCode.asInstanceOf[js.Any], isAutoSaveEnabled = isAutoSaveEnabled.asInstanceOf[js.Any], languageId = languageId.asInstanceOf[js.Any], organizationId = organizationId.asInstanceOf[js.Any], uniqueName = uniqueName.asInstanceOf[js.Any], useSkypeProtocol = useSkypeProtocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrganizationSettings]
   }
 }

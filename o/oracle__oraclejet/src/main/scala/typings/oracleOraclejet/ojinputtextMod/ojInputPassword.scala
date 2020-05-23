@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojinputtextMod
 
-import typings.oracleOraclejet.AnonAction
-import typings.oracleOraclejet.AnonElement
+import typings.oracleOraclejet.anon.Action
+import typings.oracleOraclejet.anon.Element
 import typings.oracleOraclejet.ojinputtextMod.ojInputPassword.ojAnimateEnd
 import typings.oracleOraclejet.ojinputtextMod.ojInputPassword.ojAnimateStart
 import typings.oracleOraclejet.oracleOraclejetStrings.value
@@ -30,7 +30,7 @@ trait ojInputPassword extends inputBase[String | Null, ojInputPasswordSettablePr
 @JSImport("@oracle/oraclejet/ojinputtext", "ojInputPassword")
 @js.native
 object ojInputPassword extends js.Object {
-  type ojAnimateEnd = CustomEvent[AnonAction]
-  type ojAnimateStart = CustomEvent[AnonElement]
+  type ojAnimateEnd = CustomEvent[Action]
+  type ojAnimateStart = CustomEvent[Element]
 }
 

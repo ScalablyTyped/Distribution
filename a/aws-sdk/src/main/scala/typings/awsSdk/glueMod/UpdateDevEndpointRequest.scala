@@ -50,7 +50,7 @@ object UpdateDevEndpointRequest {
     DeleteArguments: StringList = null,
     DeletePublicKeys: PublicKeysList = null,
     PublicKey: GenericString = null,
-    UpdateEtlLibraries: js.UndefOr[scala.Boolean] = js.undefined
+    UpdateEtlLibraries: js.UndefOr[BooleanValue] = js.undefined
   ): UpdateDevEndpointRequest = {
     val __obj = js.Dynamic.literal(EndpointName = EndpointName.asInstanceOf[js.Any])
     if (AddArguments != null) __obj.updateDynamic("AddArguments")(AddArguments.asInstanceOf[js.Any])
@@ -59,7 +59,7 @@ object UpdateDevEndpointRequest {
     if (DeleteArguments != null) __obj.updateDynamic("DeleteArguments")(DeleteArguments.asInstanceOf[js.Any])
     if (DeletePublicKeys != null) __obj.updateDynamic("DeletePublicKeys")(DeletePublicKeys.asInstanceOf[js.Any])
     if (PublicKey != null) __obj.updateDynamic("PublicKey")(PublicKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(UpdateEtlLibraries)) __obj.updateDynamic("UpdateEtlLibraries")(UpdateEtlLibraries.asInstanceOf[js.Any])
+    if (!js.isUndefined(UpdateEtlLibraries)) __obj.updateDynamic("UpdateEtlLibraries")(UpdateEtlLibraries.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDevEndpointRequest]
   }
 }

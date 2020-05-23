@@ -22,11 +22,15 @@ trait StartPosition extends js.Object {
 
 object StartPosition {
   @scala.inline
-  def apply(AbsoluteTime: Instant = null, Id: ChatItemId = null, MostRecent: Int | Double = null): StartPosition = {
+  def apply(
+    AbsoluteTime: Instant = null,
+    Id: ChatItemId = null,
+    MostRecent: js.UndefOr[MostRecent] = js.undefined
+  ): StartPosition = {
     val __obj = js.Dynamic.literal()
     if (AbsoluteTime != null) __obj.updateDynamic("AbsoluteTime")(AbsoluteTime.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (MostRecent != null) __obj.updateDynamic("MostRecent")(MostRecent.asInstanceOf[js.Any])
+    if (!js.isUndefined(MostRecent)) __obj.updateDynamic("MostRecent")(MostRecent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartPosition]
   }
 }

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Printers.Extensions
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,29 +38,6 @@ object Print3DWorkflowDetail extends js.Object {
   /** The upload failed. */
   @js.native
   sealed trait uploadFailed extends Print3DWorkflowDetail
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Print3DWorkflowDetail with Double] = js.native
-  /* 3 */ @js.native
-  object invalidMaterialSelection extends TopLevel[invalidMaterialSelection with Double]
-  
-  /* 4 */ @js.native
-  object invalidModel extends TopLevel[invalidModel with Double]
-  
-  /* 6 */ @js.native
-  object invalidPrintTicket extends TopLevel[invalidPrintTicket with Double]
-  
-  /* 1 */ @js.native
-  object modelExceedsPrintBed extends TopLevel[modelExceedsPrintBed with Double]
-  
-  /* 5 */ @js.native
-  object modelNotManifold extends TopLevel[modelNotManifold with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
-  /* 2 */ @js.native
-  object uploadFailed extends TopLevel[uploadFailed with Double]
   
 }
 

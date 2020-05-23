@@ -17,12 +17,15 @@ trait ListProviderConfigResults extends js.Object {
   /**
     * The list of providers for the specified type in the current page.
     */
-  var providerConfigs: js.Array[AuthProviderConfig]
+  var providerConfigs: js.Array[typings.firebaseAdmin.authMod.admin.auth.AuthProviderConfig]
 }
 
 object ListProviderConfigResults {
   @scala.inline
-  def apply(providerConfigs: js.Array[AuthProviderConfig], pageToken: String = null): ListProviderConfigResults = {
+  def apply(
+    providerConfigs: js.Array[typings.firebaseAdmin.authMod.admin.auth.AuthProviderConfig],
+    pageToken: String = null
+  ): ListProviderConfigResults = {
     val __obj = js.Dynamic.literal(providerConfigs = providerConfigs.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProviderConfigResults]

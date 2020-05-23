@@ -1,7 +1,7 @@
 package typings.reactVirtualKeyboard.mod
 
 import typings.std.Element
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +19,10 @@ trait KeyboardProps extends js.Object {
 object KeyboardProps {
   @scala.inline
   def apply(
-    callbackParent: (/* event */ js.UndefOr[String | Event_], /* keyboard */ js.UndefOr[Element], /* el */ js.UndefOr[Element]) => Unit = null,
+    callbackParent: (/* event */ js.UndefOr[String | Event], /* keyboard */ js.UndefOr[Element], /* el */ js.UndefOr[Element]) => Unit = null,
     name: String = null,
-    onAccepted: (/* event */ js.UndefOr[String | Event_], /* keyboard */ js.UndefOr[Element], /* el */ js.UndefOr[Element]) => Unit = null,
-    onChange: (/* event */ js.UndefOr[String | Event_], /* keyboard */ js.UndefOr[Element], /* el */ js.UndefOr[Element]) => Unit = null,
+    onAccepted: (/* event */ js.UndefOr[String | Event], /* keyboard */ js.UndefOr[Element], /* el */ js.UndefOr[Element]) => Unit = null,
+    onChange: (/* event */ js.UndefOr[String | Event], /* keyboard */ js.UndefOr[Element], /* el */ js.UndefOr[Element]) => Unit = null,
     options: ReactKeyboardOptions = null,
     placeholder: String = null,
     value: String = null

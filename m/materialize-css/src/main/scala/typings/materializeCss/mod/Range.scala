@@ -10,7 +10,23 @@ import scala.scalajs.js.annotation._
 @JSImport("materialize-css", "Range")
 @js.native
 class Range ()
-  extends typings.materializeCss.M.Range
+  extends typings.materializeCss.M.Component[js.UndefOr[scala.Nothing]] {
+  /**
+    * The DOM element the plugin was initialized with
+    */
+  /* CompleteClass */
+  override var el: Element = js.native
+  /**
+    * The options the instance was initialized with
+    */
+  /* CompleteClass */
+  override var options: js.UndefOr[scala.Nothing] = js.native
+  /**
+    * Destroy plugin instance and teardown
+    */
+  /* CompleteClass */
+  override def destroy(): Unit = js.native
+}
 
 /* static members */
 @JSImport("materialize-css", "Range")

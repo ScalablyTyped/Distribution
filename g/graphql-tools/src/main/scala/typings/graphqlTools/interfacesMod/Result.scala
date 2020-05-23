@@ -17,12 +17,12 @@ trait Result extends js.Object {
 object Result {
   @scala.inline
   def apply(
-    data: ExecutionResultDataDefault = null,
+    data: js.UndefOr[Null | ExecutionResultDataDefault] = js.undefined,
     errors: js.Array[GraphQLError] = null,
     extensions: Record[String, _] = null
   ): Result = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(data)) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]

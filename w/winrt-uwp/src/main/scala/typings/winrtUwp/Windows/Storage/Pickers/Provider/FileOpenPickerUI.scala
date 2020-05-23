@@ -12,9 +12,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Used to interact with the file picker if your app provides files with the File Open Picker contract. */
-@JSGlobal("Windows.Storage.Pickers.Provider.FileOpenPickerUI")
 @js.native
-abstract class FileOpenPickerUI () extends js.Object {
+trait FileOpenPickerUI extends js.Object {
   /** Gets a list of file types (extensions) that the user can choose. */
   var allowedFileTypes: IVectorView[String] = js.native
   /** Fires when the user closes the file picker. */

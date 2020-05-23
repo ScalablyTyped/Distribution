@@ -12,7 +12,7 @@ trait BaseOperation[T /* <: OperationType */] extends js.Object {
 
 object BaseOperation {
   @scala.inline
-  def apply[T /* <: OperationType */](`type`: T, source: String = null): BaseOperation[T] = {
+  def apply[T](`type`: T, source: String = null): BaseOperation[T] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])

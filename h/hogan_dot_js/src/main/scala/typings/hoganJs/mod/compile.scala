@@ -1,7 +1,7 @@
 package typings.hoganJs.mod
 
-import typings.hoganJs.HoganOptionsasStringfalse
-import typings.hoganJs.HoganOptionsasStringtrue
+import typings.hoganJs.anon.HoganOptionsasStringfalse
+import typings.hoganJs.anon.HoganOptionsasStringtrue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

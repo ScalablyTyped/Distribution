@@ -28,39 +28,39 @@ object ScrollViewOptions {
   @scala.inline
   def apply(
     autoBind: js.UndefOr[Boolean] = js.undefined,
-    bounceVelocityThreshold: Int | Double = null,
+    bounceVelocityThreshold: js.UndefOr[Double] = js.undefined,
     change: /* e */ ScrollViewChangeEvent => Unit = null,
     changing: /* e */ ScrollViewChangingEvent => Unit = null,
     contentHeight: Double | String = null,
     dataSource: DataSource | js.Any = null,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     emptyTemplate: String = null,
     enablePager: js.UndefOr[Boolean] = js.undefined,
-    itemsPerPage: Int | Double = null,
+    itemsPerPage: js.UndefOr[Double] = js.undefined,
     name: String = null,
-    page: Int | Double = null,
-    pageSize: Int | Double = null,
+    page: js.UndefOr[Double] = js.undefined,
+    pageSize: js.UndefOr[Double] = js.undefined,
     refresh: /* e */ ScrollViewRefreshEvent => Unit = null,
     template: String = null,
-    velocityThreshold: Int | Double = null
+    velocityThreshold: js.UndefOr[Double] = js.undefined
   ): ScrollViewOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.asInstanceOf[js.Any])
-    if (bounceVelocityThreshold != null) __obj.updateDynamic("bounceVelocityThreshold")(bounceVelocityThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bounceVelocityThreshold)) __obj.updateDynamic("bounceVelocityThreshold")(bounceVelocityThreshold.get.asInstanceOf[js.Any])
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (changing != null) __obj.updateDynamic("changing")(js.Any.fromFunction1(changing))
     if (contentHeight != null) __obj.updateDynamic("contentHeight")(contentHeight.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (emptyTemplate != null) __obj.updateDynamic("emptyTemplate")(emptyTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePager)) __obj.updateDynamic("enablePager")(enablePager.asInstanceOf[js.Any])
-    if (itemsPerPage != null) __obj.updateDynamic("itemsPerPage")(itemsPerPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePager)) __obj.updateDynamic("enablePager")(enablePager.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemsPerPage)) __obj.updateDynamic("itemsPerPage")(itemsPerPage.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (refresh != null) __obj.updateDynamic("refresh")(js.Any.fromFunction1(refresh))
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (velocityThreshold != null) __obj.updateDynamic("velocityThreshold")(velocityThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(velocityThreshold)) __obj.updateDynamic("velocityThreshold")(velocityThreshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollViewOptions]
   }
 }

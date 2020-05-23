@@ -1,7 +1,7 @@
 package typings.storybookAddonKnobs.panelMod
 
 import typings.react.mod.Component
-import typings.storybookAddonKnobs.AnonKnobs
+import typings.storybookAddonKnobs.anon.Knobs
 import typings.storybookAddonKnobs.knobStoreMod.KnobStoreKnob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +26,7 @@ trait KnobPanel
   def handleChange(changedKnob: KnobStoreKnob): Unit = js.native
   def handleClick(knob: KnobStoreKnob): Unit = js.native
   def reset(): Unit = js.native
-  def setKnobs(hasKnobsTimestamp: AnonKnobs): Unit = js.native
+  def setKnobs(hasKnobsTimestamp: Knobs): Unit = js.native
   def setOptions(): Unit = js.native
   def setOptions(options: KnobPanelOptions): Unit = js.native
 }

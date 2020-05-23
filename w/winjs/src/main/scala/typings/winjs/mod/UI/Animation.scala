@@ -1,9 +1,9 @@
 package typings.winjs.mod.UI
 
 import typings.std.HTMLElement
-import typings.winjs.AnonEntrance
 import typings.winjs.WinJS.Promise
 import typings.winjs.WinJS.UI.Animation.IAnimationMethodResponse
+import typings.winjs.anon.Entrance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -93,7 +93,7 @@ object Animation extends js.Object {
     * @param movingBackwards Boolean value for whether the navigation is moving backwards.
     * @returns an object containing the exit and entrance animations to play based on the parameters given.
     **/
-  def createPageNavigationAnimations(currentPreferredAnimation: String, nextPreferredAnimation: String, movingBackwards: Boolean): AnonEntrance = js.native
+  def createPageNavigationAnimations(currentPreferredAnimation: String, nextPreferredAnimation: String, movingBackwards: Boolean): Entrance = js.native
   /**
     * Creates an object that performs a peek animation.
     * @param element Element or elements involved in the peek.

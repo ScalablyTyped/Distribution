@@ -49,7 +49,7 @@ object EvaluateParameterType {
   def apply(
     expression: String,
     awaitPromise: js.UndefOr[Boolean] = js.undefined,
-    contextId: Int | Double = null,
+    contextId: js.UndefOr[ExecutionContextId] = js.undefined,
     generatePreview: js.UndefOr[Boolean] = js.undefined,
     includeCommandLineAPI: js.UndefOr[Boolean] = js.undefined,
     objectGroup: String = null,
@@ -58,14 +58,14 @@ object EvaluateParameterType {
     userGesture: js.UndefOr[Boolean] = js.undefined
   ): EvaluateParameterType = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
-    if (!js.isUndefined(awaitPromise)) __obj.updateDynamic("awaitPromise")(awaitPromise.asInstanceOf[js.Any])
-    if (contextId != null) __obj.updateDynamic("contextId")(contextId.asInstanceOf[js.Any])
-    if (!js.isUndefined(generatePreview)) __obj.updateDynamic("generatePreview")(generatePreview.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeCommandLineAPI)) __obj.updateDynamic("includeCommandLineAPI")(includeCommandLineAPI.asInstanceOf[js.Any])
+    if (!js.isUndefined(awaitPromise)) __obj.updateDynamic("awaitPromise")(awaitPromise.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(contextId)) __obj.updateDynamic("contextId")(contextId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(generatePreview)) __obj.updateDynamic("generatePreview")(generatePreview.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeCommandLineAPI)) __obj.updateDynamic("includeCommandLineAPI")(includeCommandLineAPI.get.asInstanceOf[js.Any])
     if (objectGroup != null) __obj.updateDynamic("objectGroup")(objectGroup.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnByValue)) __obj.updateDynamic("returnByValue")(returnByValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
-    if (!js.isUndefined(userGesture)) __obj.updateDynamic("userGesture")(userGesture.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnByValue)) __obj.updateDynamic("returnByValue")(returnByValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(userGesture)) __obj.updateDynamic("userGesture")(userGesture.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EvaluateParameterType]
   }
 }

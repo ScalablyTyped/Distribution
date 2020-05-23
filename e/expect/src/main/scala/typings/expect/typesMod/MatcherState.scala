@@ -1,6 +1,6 @@
 package typings.expect.typesMod
 
-import typings.expect.readonlyprintExpectedvalu
+import typings.expect.anon.readonlyprintExpectedvalu
 import typings.jestTypes.configMod.Path
 import typings.std.Error
 import scala.scalajs.js

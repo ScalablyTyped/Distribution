@@ -6,10 +6,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.JsGrid.EventArgs.OnBeginRedoDataUpdateChange")
-@js.native
-class OnBeginRedoDataUpdateChange protected () extends IEventArgs {
-  def this(changeKey: IChangeKey) = this()
-  var changeKey: IChangeKey = js.native
+trait OnBeginRedoDataUpdateChange extends IEventArgs {
+  var changeKey: IChangeKey
+}
+
+object OnBeginRedoDataUpdateChange {
+  @scala.inline
+  def apply(changeKey: IChangeKey): OnBeginRedoDataUpdateChange = {
+    val __obj = js.Dynamic.literal(changeKey = changeKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OnBeginRedoDataUpdateChange]
+  }
 }
 

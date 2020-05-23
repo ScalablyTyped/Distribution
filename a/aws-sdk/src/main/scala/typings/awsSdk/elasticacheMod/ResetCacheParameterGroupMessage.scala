@@ -25,11 +25,11 @@ object ResetCacheParameterGroupMessage {
   def apply(
     CacheParameterGroupName: String,
     ParameterNameValues: ParameterNameValueList = null,
-    ResetAllParameters: js.UndefOr[scala.Boolean] = js.undefined
+    ResetAllParameters: js.UndefOr[Boolean] = js.undefined
   ): ResetCacheParameterGroupMessage = {
     val __obj = js.Dynamic.literal(CacheParameterGroupName = CacheParameterGroupName.asInstanceOf[js.Any])
     if (ParameterNameValues != null) __obj.updateDynamic("ParameterNameValues")(ParameterNameValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(ResetAllParameters)) __obj.updateDynamic("ResetAllParameters")(ResetAllParameters.asInstanceOf[js.Any])
+    if (!js.isUndefined(ResetAllParameters)) __obj.updateDynamic("ResetAllParameters")(ResetAllParameters.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResetCacheParameterGroupMessage]
   }
 }

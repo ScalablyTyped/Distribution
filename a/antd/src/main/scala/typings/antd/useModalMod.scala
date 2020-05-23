@@ -1,5 +1,6 @@
 package typings.antd
 
+import typings.antd.anon.OmitModalStaticFunctionsw
 import typings.react.mod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

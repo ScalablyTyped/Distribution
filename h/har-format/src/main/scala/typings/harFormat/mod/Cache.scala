@@ -23,10 +23,14 @@ trait Cache extends js.Object {
 
 object Cache {
   @scala.inline
-  def apply(afterRequest: CacheDetails = null, beforeRequest: CacheDetails = null, comment: String = null): Cache = {
+  def apply(
+    afterRequest: js.UndefOr[Null | CacheDetails] = js.undefined,
+    beforeRequest: js.UndefOr[Null | CacheDetails] = js.undefined,
+    comment: String = null
+  ): Cache = {
     val __obj = js.Dynamic.literal()
-    if (afterRequest != null) __obj.updateDynamic("afterRequest")(afterRequest.asInstanceOf[js.Any])
-    if (beforeRequest != null) __obj.updateDynamic("beforeRequest")(beforeRequest.asInstanceOf[js.Any])
+    if (!js.isUndefined(afterRequest)) __obj.updateDynamic("afterRequest")(afterRequest.asInstanceOf[js.Any])
+    if (!js.isUndefined(beforeRequest)) __obj.updateDynamic("beforeRequest")(beforeRequest.asInstanceOf[js.Any])
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cache]
   }

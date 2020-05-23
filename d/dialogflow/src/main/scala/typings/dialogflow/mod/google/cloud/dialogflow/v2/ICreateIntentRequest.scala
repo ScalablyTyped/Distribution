@@ -21,16 +21,18 @@ trait ICreateIntentRequest extends js.Object {
 object ICreateIntentRequest {
   @scala.inline
   def apply(
-    intent: IIntent = null,
-    intentView: IntentView | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.IntentView * / any */ String) = null,
-    languageCode: String = null,
-    parent: String = null
+    intent: js.UndefOr[Null | IIntent] = js.undefined,
+    intentView: js.UndefOr[
+      Null | IntentView | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.IntentView * / any */ String)
+    ] = js.undefined,
+    languageCode: js.UndefOr[Null | String] = js.undefined,
+    parent: js.UndefOr[Null | String] = js.undefined
   ): ICreateIntentRequest = {
     val __obj = js.Dynamic.literal()
-    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
-    if (intentView != null) __obj.updateDynamic("intentView")(intentView.asInstanceOf[js.Any])
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(intent)) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
+    if (!js.isUndefined(intentView)) __obj.updateDynamic("intentView")(intentView.asInstanceOf[js.Any])
+    if (!js.isUndefined(languageCode)) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICreateIntentRequest]
   }
 }

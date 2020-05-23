@@ -14,10 +14,10 @@ trait NoBeforeNoAfterOptions extends Options {
 
 object NoBeforeNoAfterOptions {
   @scala.inline
-  def apply(after: `false`, before: `false` = null, wait: Int | Double = null): NoBeforeNoAfterOptions = {
+  def apply(after: `false`, before: `false` = null, wait: js.UndefOr[Double] = js.undefined): NoBeforeNoAfterOptions = {
     val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any])
     if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (wait != null) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
+    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoBeforeNoAfterOptions]
   }
 }

@@ -23,7 +23,7 @@ trait StyleFunction extends js.Object {
 object StyleFunction {
   @scala.inline
   def apply(
-    base: Int | Double = null,
+    base: js.UndefOr[Double] = js.undefined,
     colorSpace: rgb | lab | hcl = null,
     default: js.Any = null,
     property: String = null,
@@ -31,7 +31,7 @@ object StyleFunction {
     `type`: identity | exponential | interval | categorical = null
   ): StyleFunction = {
     val __obj = js.Dynamic.literal()
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (!js.isUndefined(base)) __obj.updateDynamic("base")(base.get.asInstanceOf[js.Any])
     if (colorSpace != null) __obj.updateDynamic("colorSpace")(colorSpace.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])

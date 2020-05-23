@@ -4,7 +4,7 @@ import typings.jupyterlabSettingeditor.pluginlistMod.PluginList.IOptions
 import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry
 import typings.luminoSignaling.mod.ISignal
 import typings.luminoWidgets.mod.Widget
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,7 +44,7 @@ class PluginList_ protected () extends Widget {
     * called in response to events on the plugin list's node. It should
     * not be called directly by user code.
     */
-  def handleEvent(event: Event_): Unit = js.native
+  def handleEvent(event: Event): Unit = js.native
   /**
     * The selection value of the plugin list.
     */

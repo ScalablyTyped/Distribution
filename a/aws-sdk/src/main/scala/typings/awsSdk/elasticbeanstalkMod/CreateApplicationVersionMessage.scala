@@ -49,19 +49,19 @@ object CreateApplicationVersionMessage {
   def apply(
     ApplicationName: ApplicationName,
     VersionLabel: VersionLabel,
-    AutoCreateApplication: js.UndefOr[Boolean] = js.undefined,
+    AutoCreateApplication: js.UndefOr[AutoCreateApplication] = js.undefined,
     BuildConfiguration: BuildConfiguration = null,
     Description: Description = null,
-    Process: js.UndefOr[Boolean] = js.undefined,
+    Process: js.UndefOr[ApplicationVersionProccess] = js.undefined,
     SourceBuildInformation: SourceBuildInformation = null,
     SourceBundle: S3Location = null,
     Tags: Tags = null
   ): CreateApplicationVersionMessage = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], VersionLabel = VersionLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoCreateApplication)) __obj.updateDynamic("AutoCreateApplication")(AutoCreateApplication.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoCreateApplication)) __obj.updateDynamic("AutoCreateApplication")(AutoCreateApplication.get.asInstanceOf[js.Any])
     if (BuildConfiguration != null) __obj.updateDynamic("BuildConfiguration")(BuildConfiguration.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(Process)) __obj.updateDynamic("Process")(Process.asInstanceOf[js.Any])
+    if (!js.isUndefined(Process)) __obj.updateDynamic("Process")(Process.get.asInstanceOf[js.Any])
     if (SourceBuildInformation != null) __obj.updateDynamic("SourceBuildInformation")(SourceBuildInformation.asInstanceOf[js.Any])
     if (SourceBundle != null) __obj.updateDynamic("SourceBundle")(SourceBundle.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])

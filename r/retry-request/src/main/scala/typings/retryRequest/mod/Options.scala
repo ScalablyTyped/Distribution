@@ -21,19 +21,19 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    currentRetryAttempt: Int | Double = null,
-    noResponseRetries: Int | Double = null,
+    currentRetryAttempt: js.UndefOr[Double] = js.undefined,
+    noResponseRetries: js.UndefOr[Double] = js.undefined,
     objectMode: js.UndefOr[Boolean] = js.undefined,
     request: RequestAPI[Request, CoreOptions, RequiredUriUrl] = null,
-    retries: Int | Double = null,
+    retries: js.UndefOr[Double] = js.undefined,
     shouldRetryFn: /* response */ RequestResponse => Boolean = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (currentRetryAttempt != null) __obj.updateDynamic("currentRetryAttempt")(currentRetryAttempt.asInstanceOf[js.Any])
-    if (noResponseRetries != null) __obj.updateDynamic("noResponseRetries")(noResponseRetries.asInstanceOf[js.Any])
-    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentRetryAttempt)) __obj.updateDynamic("currentRetryAttempt")(currentRetryAttempt.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noResponseRetries)) __obj.updateDynamic("noResponseRetries")(noResponseRetries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.get.asInstanceOf[js.Any])
     if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
-    if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
+    if (!js.isUndefined(retries)) __obj.updateDynamic("retries")(retries.get.asInstanceOf[js.Any])
     if (shouldRetryFn != null) __obj.updateDynamic("shouldRetryFn")(js.Any.fromFunction1(shouldRetryFn))
     __obj.asInstanceOf[Options]
   }

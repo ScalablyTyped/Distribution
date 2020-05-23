@@ -18,9 +18,9 @@ trait ContainerSummary extends js.Object {
 
 object ContainerSummary {
   @scala.inline
-  def apply(exitCode: Int | Double = null, reason: String = null): ContainerSummary = {
+  def apply(exitCode: js.UndefOr[Integer] = js.undefined, reason: String = null): ContainerSummary = {
     val __obj = js.Dynamic.literal()
-    if (exitCode != null) __obj.updateDynamic("exitCode")(exitCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(exitCode)) __obj.updateDynamic("exitCode")(exitCode.get.asInstanceOf[js.Any])
     if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerSummary]
   }

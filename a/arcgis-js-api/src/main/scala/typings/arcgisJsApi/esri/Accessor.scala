@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("__esri.Accessor")
 @js.native
-class Accessor () extends js.Object {
-  def this(obj: js.Any) = this()
+trait Accessor extends js.Object {
   var declaredClass: String = js.native
   var destroyed: Boolean = js.native
   var initialized: Boolean = js.native

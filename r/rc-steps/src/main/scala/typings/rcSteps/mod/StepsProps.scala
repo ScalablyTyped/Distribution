@@ -1,6 +1,6 @@
 package typings.rcSteps.mod
 
-import typings.rcSteps.AnonError
+import typings.rcSteps.anon.Error
 import typings.rcSteps.rcStepsStrings.error
 import typings.rcSteps.rcStepsStrings.finish
 import typings.rcSteps.rcStepsStrings.horizontal
@@ -21,7 +21,7 @@ trait StepsProps extends js.Object {
   var current: js.UndefOr[Double] = js.undefined
   var direction: js.UndefOr[horizontal | vertical] = js.undefined
   var iconPrefix: js.UndefOr[String] = js.undefined
-  var icons: js.UndefOr[AnonError] = js.undefined
+  var icons: js.UndefOr[Error] = js.undefined
   var initial: js.UndefOr[Double] = js.undefined
   var labelPlacement: js.UndefOr[vertical] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* current */ Double, Unit]] = js.undefined
@@ -39,11 +39,11 @@ object StepsProps {
   def apply(
     children: ReactNode = null,
     className: String = null,
-    current: Int | Double = null,
+    current: js.UndefOr[Double] = js.undefined,
     direction: horizontal | vertical = null,
     iconPrefix: String = null,
-    icons: AnonError = null,
-    initial: Int | Double = null,
+    icons: Error = null,
+    initial: js.UndefOr[Double] = js.undefined,
     labelPlacement: vertical = null,
     onChange: /* current */ Double => Unit = null,
     prefixCls: String = null,
@@ -56,15 +56,15 @@ object StepsProps {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
+    if (!js.isUndefined(current)) __obj.updateDynamic("current")(current.get.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (iconPrefix != null) __obj.updateDynamic("iconPrefix")(iconPrefix.asInstanceOf[js.Any])
     if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
-    if (initial != null) __obj.updateDynamic("initial")(initial.asInstanceOf[js.Any])
+    if (!js.isUndefined(initial)) __obj.updateDynamic("initial")(initial.get.asInstanceOf[js.Any])
     if (labelPlacement != null) __obj.updateDynamic("labelPlacement")(labelPlacement.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(progressDot)) __obj.updateDynamic("progressDot")(progressDot.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressDot)) __obj.updateDynamic("progressDot")(progressDot.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

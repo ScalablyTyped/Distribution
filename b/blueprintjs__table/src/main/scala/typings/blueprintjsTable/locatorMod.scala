@@ -1,5 +1,6 @@
 package typings.blueprintjsTable
 
+import typings.blueprintjsTable.anon.Col
 import typings.blueprintjsTable.gridMod.Grid
 import typings.blueprintjsTable.rectMod.Rect
 import typings.std.HTMLElement
@@ -16,7 +17,7 @@ object locatorMod extends js.Object {
       * Locates a cell's row and column index given the client X
       * coordinate. Returns -1 if the coordinate is not over a table cell.
       */
-    def convertPointToCell(clientX: Double, clientY: Double): AnonCol = js.native
+    def convertPointToCell(clientX: Double, clientY: Double): Col = js.native
     /**
       * Locates a column's index given the client X coordinate. Returns -1 if
       * the coordinate is not over a column.

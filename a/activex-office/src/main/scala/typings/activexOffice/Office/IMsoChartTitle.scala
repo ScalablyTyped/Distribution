@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.IMsoChartTitle")
 @js.native
-class IMsoChartTitle protected () extends js.Object {
+trait IMsoChartTitle extends js.Object {
   val Application: js.Any = js.native
   var AutoScaleFont: js.Any = js.native
   val Border: IMsoBorder = js.native

@@ -1,9 +1,9 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.FunctionResultData
 import typings.officeJsPreview.Excel.Interfaces.FunctionResultLoadOptions
 import typings.officeJsPreview.OfficeExtension.ClientObject
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,9 +14,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.2]
   */
-@JSGlobal("Excel.FunctionResult")
 @js.native
-class FunctionResult[T] () extends ClientObject {
+trait FunctionResult[T] extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_FunctionResult: RequestContext = js.native
@@ -41,7 +40,7 @@ class FunctionResult[T] () extends ClientObject {
     */
   def load(): FunctionResult[T] = js.native
   def load(options: FunctionResultLoadOptions): FunctionResult[T] = js.native
-  def load(propertyNamesAndPaths: AnonExpand): FunctionResult[T] = js.native
+  def load(propertyNamesAndPaths: Expand): FunctionResult[T] = js.native
   def load(propertyNames: String): FunctionResult[T] = js.native
   def load(propertyNames: js.Array[String]): FunctionResult[T] = js.native
   /**

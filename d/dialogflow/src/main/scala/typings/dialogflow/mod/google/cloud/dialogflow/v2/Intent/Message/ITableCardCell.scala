@@ -12,9 +12,9 @@ trait ITableCardCell extends js.Object {
 
 object ITableCardCell {
   @scala.inline
-  def apply(text: String = null): ITableCardCell = {
+  def apply(text: js.UndefOr[Null | String] = js.undefined): ITableCardCell = {
     val __obj = js.Dynamic.literal()
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITableCardCell]
   }
 }

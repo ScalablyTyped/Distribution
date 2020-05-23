@@ -19,26 +19,26 @@ object FindOneAndReplaceOption {
   def apply(
     collation: CollationDocument = null,
     j: js.UndefOr[Boolean] = js.undefined,
-    maxTimeMS: Int | scala.Double = null,
+    maxTimeMS: js.UndefOr[scala.Double] = js.undefined,
     projection: js.Object = null,
     returnOriginal: js.UndefOr[Boolean] = js.undefined,
     session: ClientSession = null,
     sort: js.Object = null,
     upsert: js.UndefOr[Boolean] = js.undefined,
     w: scala.Double | majority | String = null,
-    wtimeout: Int | scala.Double = null
+    wtimeout: js.UndefOr[scala.Double] = js.undefined
   ): FindOneAndReplaceOption = {
     val __obj = js.Dynamic.literal()
     if (collation != null) __obj.updateDynamic("collation")(collation.asInstanceOf[js.Any])
-    if (!js.isUndefined(j)) __obj.updateDynamic("j")(j.asInstanceOf[js.Any])
-    if (maxTimeMS != null) __obj.updateDynamic("maxTimeMS")(maxTimeMS.asInstanceOf[js.Any])
+    if (!js.isUndefined(j)) __obj.updateDynamic("j")(j.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTimeMS)) __obj.updateDynamic("maxTimeMS")(maxTimeMS.get.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnOriginal)) __obj.updateDynamic("returnOriginal")(returnOriginal.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnOriginal)) __obj.updateDynamic("returnOriginal")(returnOriginal.get.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (!js.isUndefined(upsert)) __obj.updateDynamic("upsert")(upsert.asInstanceOf[js.Any])
+    if (!js.isUndefined(upsert)) __obj.updateDynamic("upsert")(upsert.get.asInstanceOf[js.Any])
     if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
-    if (wtimeout != null) __obj.updateDynamic("wtimeout")(wtimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(wtimeout)) __obj.updateDynamic("wtimeout")(wtimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindOneAndReplaceOption]
   }
 }

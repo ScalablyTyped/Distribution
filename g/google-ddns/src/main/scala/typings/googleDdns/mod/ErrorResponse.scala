@@ -37,11 +37,9 @@ object ErrorResponse {
   def apply(
     message: String,
     response: nohost | badauth | notfqdn | badagent | abuse | `911` | good | nochg,
-    status: error,
-    ip: js.UndefOr[scala.Nothing] = js.undefined
+    status: error
   ): ErrorResponse = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-    if (!js.isUndefined(ip)) __obj.updateDynamic("ip")(ip.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorResponse]
   }
 }

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object comment
   extends TopLevel[
-      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Commented.comment */ js.Any
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Encoder.encodeOne */ js.Any
     ]
 

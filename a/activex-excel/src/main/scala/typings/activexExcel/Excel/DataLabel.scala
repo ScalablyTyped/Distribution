@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.DataLabel")
 @js.native
-class DataLabel protected () extends js.Object {
+trait DataLabel extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   var AutoScaleFont: js.Any = js.native
   var AutoText: Boolean = js.native

@@ -39,7 +39,7 @@ trait SnapshotSchedule extends js.Object {
 object SnapshotSchedule {
   @scala.inline
   def apply(
-    AssociatedClusterCount: Int | scala.Double = null,
+    AssociatedClusterCount: js.UndefOr[IntegerOptional] = js.undefined,
     AssociatedClusters: AssociatedClusterList = null,
     NextInvocations: ScheduledSnapshotTimeList = null,
     ScheduleDefinitions: ScheduleDefinitionList = null,
@@ -48,7 +48,7 @@ object SnapshotSchedule {
     Tags: TagList = null
   ): SnapshotSchedule = {
     val __obj = js.Dynamic.literal()
-    if (AssociatedClusterCount != null) __obj.updateDynamic("AssociatedClusterCount")(AssociatedClusterCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(AssociatedClusterCount)) __obj.updateDynamic("AssociatedClusterCount")(AssociatedClusterCount.get.asInstanceOf[js.Any])
     if (AssociatedClusters != null) __obj.updateDynamic("AssociatedClusters")(AssociatedClusters.asInstanceOf[js.Any])
     if (NextInvocations != null) __obj.updateDynamic("NextInvocations")(NextInvocations.asInstanceOf[js.Any])
     if (ScheduleDefinitions != null) __obj.updateDynamic("ScheduleDefinitions")(ScheduleDefinitions.asInstanceOf[js.Any])

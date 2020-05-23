@@ -3,9 +3,9 @@ package typings.winston.mod
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import typings.logform.mod.Format_
-import typings.node.AnonEnd
 import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
+import typings.node.anon.End
 import typings.node.streamMod.Transform
 import typings.std.Error
 import typings.winston.configMod.AbstractConfigSetLevels
@@ -126,7 +126,7 @@ trait Logger
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T): T = js.native
   /* InferMemberOverrides */
-  override def pipe[T /* <: WritableStream */](destination: T, options: AnonEnd): T = js.native
+  override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
   def profile(id: String): Logger = js.native
   def profile(id: String, meta: LogEntry): Logger = js.native
   def profile(id: Double): Logger = js.native

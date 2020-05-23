@@ -1,10 +1,11 @@
 package typings.blueprintjsCore
 
+import typings.blueprintjsCore.anon.Instantiable
 import typings.blueprintjsCore.constructorMod.IConstructor
 import typings.react.mod.Component
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,6 +21,6 @@ object contextMenuTargetMod extends js.Object {
     def renderContextMenu(e: MouseEvent[HTMLElement, NativeMouseEvent]): js.UndefOr[Element] = js.native
   }
   
-  def ContextMenuTarget[T /* <: IConstructor[IContextMenuTargetComponent] */](WrappedComponent: T): AnonInstantiable with T = js.native
+  def ContextMenuTarget[T /* <: IConstructor[IContextMenuTargetComponent] */](WrappedComponent: T): Instantiable with T = js.native
 }
 

@@ -1,7 +1,7 @@
 package typings.antdMobile.mod
 
-import typings.antdMobile.AnonAntLocale
-import typings.antdMobile.AnonPrefixCls
+import typings.antdMobile.anon.AntLocale
+import typings.antdMobile.anon.PrefixCls
 import typings.antdMobile.pullToRefreshMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ class PullToRefresh () extends default
 @JSImport("antd-mobile", "PullToRefresh")
 @js.native
 object PullToRefresh extends js.Object {
-  var contextTypes: AnonAntLocale = js.native
-  var defaultProps: AnonPrefixCls = js.native
+  var contextTypes: AntLocale = js.native
+  var defaultProps: PrefixCls = js.native
 }
 

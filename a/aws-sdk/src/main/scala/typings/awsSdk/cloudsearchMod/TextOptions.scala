@@ -34,17 +34,17 @@ object TextOptions {
   def apply(
     AnalysisScheme: Word = null,
     DefaultValue: FieldValue = null,
-    HighlightEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    ReturnEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    SortEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    HighlightEnabled: js.UndefOr[Boolean] = js.undefined,
+    ReturnEnabled: js.UndefOr[Boolean] = js.undefined,
+    SortEnabled: js.UndefOr[Boolean] = js.undefined,
     SourceField: FieldName = null
   ): TextOptions = {
     val __obj = js.Dynamic.literal()
     if (AnalysisScheme != null) __obj.updateDynamic("AnalysisScheme")(AnalysisScheme.asInstanceOf[js.Any])
     if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(HighlightEnabled)) __obj.updateDynamic("HighlightEnabled")(HighlightEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReturnEnabled)) __obj.updateDynamic("ReturnEnabled")(ReturnEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(SortEnabled)) __obj.updateDynamic("SortEnabled")(SortEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(HighlightEnabled)) __obj.updateDynamic("HighlightEnabled")(HighlightEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReturnEnabled)) __obj.updateDynamic("ReturnEnabled")(ReturnEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SortEnabled)) __obj.updateDynamic("SortEnabled")(SortEnabled.get.asInstanceOf[js.Any])
     if (SourceField != null) __obj.updateDynamic("SourceField")(SourceField.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextOptions]
   }

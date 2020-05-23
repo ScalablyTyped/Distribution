@@ -1,6 +1,5 @@
 package typings.firebaseAdmin.admin.messaging
 
-import typings.firebaseAdmin.admin.FirebaseError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +22,9 @@ trait MessagingDeviceResult extends js.Object {
   /**
     * The error that occurred when processing the message for the recipient.
     */
-  var error: js.UndefOr[FirebaseError] = js.undefined
+  var error: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _admin.FirebaseError */ js.Any
+  ] = js.undefined
   /**
     * A unique ID for the successfully processed message.
     */
@@ -32,7 +33,11 @@ trait MessagingDeviceResult extends js.Object {
 
 object MessagingDeviceResult {
   @scala.inline
-  def apply(canonicalRegistrationToken: String = null, error: FirebaseError = null, messageId: String = null): MessagingDeviceResult = {
+  def apply(
+    canonicalRegistrationToken: String = null,
+    error: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _admin.FirebaseError */ js.Any = null,
+    messageId: String = null
+  ): MessagingDeviceResult = {
     val __obj = js.Dynamic.literal()
     if (canonicalRegistrationToken != null) __obj.updateDynamic("canonicalRegistrationToken")(canonicalRegistrationToken.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])

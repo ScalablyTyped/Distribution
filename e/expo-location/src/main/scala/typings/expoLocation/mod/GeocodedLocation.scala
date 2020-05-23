@@ -13,10 +13,15 @@ trait GeocodedLocation extends js.Object {
 
 object GeocodedLocation {
   @scala.inline
-  def apply(latitude: Double, longitude: Double, accuracy: Int | Double = null, altitude: Int | Double = null): GeocodedLocation = {
+  def apply(
+    latitude: Double,
+    longitude: Double,
+    accuracy: js.UndefOr[Double] = js.undefined,
+    altitude: js.UndefOr[Double] = js.undefined
+  ): GeocodedLocation = {
     val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
-    if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy.asInstanceOf[js.Any])
-    if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
+    if (!js.isUndefined(accuracy)) __obj.updateDynamic("accuracy")(accuracy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeocodedLocation]
   }
 }

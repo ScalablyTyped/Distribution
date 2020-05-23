@@ -19,7 +19,13 @@ trait SimpleUserDelegate extends js.Object {
     */
   var onCallCreated: js.UndefOr[js.Function0[Unit]] = js.undefined
   /**
-    * Called when a call is hungup.
+    * Called when a call receives an incoming DTMF tone.
+    * @remarks
+    * Callback for handling an incoming INFO request with content type application/dtmf-relay.
+    */
+  var onCallDTMFReceived: js.UndefOr[js.Function2[/* tone */ String, /* duration */ Double, Unit]] = js.undefined
+  /**
+    * Called when a call is hung up.
     * @remarks
     * Callback for handling termination of a Session.
     */
@@ -73,6 +79,7 @@ object SimpleUserDelegate {
   def apply(
     onCallAnswered: () => Unit = null,
     onCallCreated: () => Unit = null,
+    onCallDTMFReceived: (/* tone */ String, /* duration */ Double) => Unit = null,
     onCallHangup: () => Unit = null,
     onCallHold: /* held */ Boolean => Unit = null,
     onCallReceived: () => Unit = null,
@@ -85,6 +92,7 @@ object SimpleUserDelegate {
     val __obj = js.Dynamic.literal()
     if (onCallAnswered != null) __obj.updateDynamic("onCallAnswered")(js.Any.fromFunction0(onCallAnswered))
     if (onCallCreated != null) __obj.updateDynamic("onCallCreated")(js.Any.fromFunction0(onCallCreated))
+    if (onCallDTMFReceived != null) __obj.updateDynamic("onCallDTMFReceived")(js.Any.fromFunction2(onCallDTMFReceived))
     if (onCallHangup != null) __obj.updateDynamic("onCallHangup")(js.Any.fromFunction0(onCallHangup))
     if (onCallHold != null) __obj.updateDynamic("onCallHold")(js.Any.fromFunction1(onCallHold))
     if (onCallReceived != null) __obj.updateDynamic("onCallReceived")(js.Any.fromFunction0(onCallReceived))

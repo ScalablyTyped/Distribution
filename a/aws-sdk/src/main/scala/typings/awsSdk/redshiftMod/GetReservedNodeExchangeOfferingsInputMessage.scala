@@ -22,10 +22,14 @@ trait GetReservedNodeExchangeOfferingsInputMessage extends js.Object {
 
 object GetReservedNodeExchangeOfferingsInputMessage {
   @scala.inline
-  def apply(ReservedNodeId: String, Marker: String = null, MaxRecords: Int | scala.Double = null): GetReservedNodeExchangeOfferingsInputMessage = {
+  def apply(
+    ReservedNodeId: String,
+    Marker: String = null,
+    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
+  ): GetReservedNodeExchangeOfferingsInputMessage = {
     val __obj = js.Dynamic.literal(ReservedNodeId = ReservedNodeId.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetReservedNodeExchangeOfferingsInputMessage]
   }
 }

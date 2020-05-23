@@ -16,7 +16,7 @@ object UninstallOptions {
   @scala.inline
   def apply(showConfirmDialog: js.UndefOr[Boolean] = js.undefined): UninstallOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(showConfirmDialog)) __obj.updateDynamic("showConfirmDialog")(showConfirmDialog.asInstanceOf[js.Any])
+    if (!js.isUndefined(showConfirmDialog)) __obj.updateDynamic("showConfirmDialog")(showConfirmDialog.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UninstallOptions]
   }
 }

@@ -20,22 +20,22 @@ trait WebpOptions extends OutputOptions {
 object WebpOptions {
   @scala.inline
   def apply(
-    alphaQuality: Int | Double = null,
+    alphaQuality: js.UndefOr[Double] = js.undefined,
     force: js.UndefOr[Boolean] = js.undefined,
     lossless: js.UndefOr[Boolean] = js.undefined,
     nearLossless: js.UndefOr[Boolean] = js.undefined,
-    quality: Int | Double = null,
-    reductionEffort: Int | Double = null,
+    quality: js.UndefOr[Double] = js.undefined,
+    reductionEffort: js.UndefOr[Double] = js.undefined,
     smartSubsample: js.UndefOr[Boolean] = js.undefined
   ): WebpOptions = {
     val __obj = js.Dynamic.literal()
-    if (alphaQuality != null) __obj.updateDynamic("alphaQuality")(alphaQuality.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
-    if (!js.isUndefined(lossless)) __obj.updateDynamic("lossless")(lossless.asInstanceOf[js.Any])
-    if (!js.isUndefined(nearLossless)) __obj.updateDynamic("nearLossless")(nearLossless.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (reductionEffort != null) __obj.updateDynamic("reductionEffort")(reductionEffort.asInstanceOf[js.Any])
-    if (!js.isUndefined(smartSubsample)) __obj.updateDynamic("smartSubsample")(smartSubsample.asInstanceOf[js.Any])
+    if (!js.isUndefined(alphaQuality)) __obj.updateDynamic("alphaQuality")(alphaQuality.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lossless)) __obj.updateDynamic("lossless")(lossless.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nearLossless)) __obj.updateDynamic("nearLossless")(nearLossless.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reductionEffort)) __obj.updateDynamic("reductionEffort")(reductionEffort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(smartSubsample)) __obj.updateDynamic("smartSubsample")(smartSubsample.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebpOptions]
   }
 }

@@ -1,5 +1,7 @@
 package typings.gitlab
 
+import typings.gitlab.anon.Name
+import typings.gitlab.anon.Url
 import typings.gitlab.infrastructureMod.BaseService
 import typings.gitlab.requestHelperMod.GetResponse
 import typings.gitlab.requestHelperMod.PaginatedRequestOptions
@@ -22,9 +24,9 @@ object releaseLinksMod extends js.Object {
     def create(projectId: Double, tagName: String, name: String, url: String): js.Promise[js.Object] = js.native
     def create(projectId: Double, tagName: String, name: String, url: String, options: Sudo): js.Promise[js.Object] = js.native
     def edit(projectId: String, tagName: String, linkId: Double): js.Promise[js.Object] = js.native
-    def edit(projectId: String, tagName: String, linkId: Double, options: Sudo with (AnonName | AnonUrl)): js.Promise[js.Object] = js.native
+    def edit(projectId: String, tagName: String, linkId: Double, options: Sudo with (Name | Url)): js.Promise[js.Object] = js.native
     def edit(projectId: Double, tagName: String, linkId: Double): js.Promise[js.Object] = js.native
-    def edit(projectId: Double, tagName: String, linkId: Double, options: Sudo with (AnonName | AnonUrl)): js.Promise[js.Object] = js.native
+    def edit(projectId: Double, tagName: String, linkId: Double, options: Sudo with (Name | Url)): js.Promise[js.Object] = js.native
     def remove(projectId: String, tagName: String, linkId: Double): js.Promise[js.Object] = js.native
     def remove(projectId: String, tagName: String, linkId: Double, options: Sudo): js.Promise[js.Object] = js.native
     def remove(projectId: Double, tagName: String, linkId: Double): js.Promise[js.Object] = js.native

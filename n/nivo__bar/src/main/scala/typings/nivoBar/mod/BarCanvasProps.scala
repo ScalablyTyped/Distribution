@@ -1,6 +1,6 @@
 package typings.nivoBar.mod
 
-import typings.nivoBar.dataFromindexeskeysLegend
+import typings.nivoBar.anon.dataFromindexeskeysLegend
 import typings.nivoBar.nivoBarStrings.auto
 import typings.nivoBar.nivoBarStrings.grouped
 import typings.nivoBar.nivoBarStrings.horizontal
@@ -70,22 +70,22 @@ object BarCanvasProps {
     axisTop: Axis = null,
     barComponent: StatelessComponent[BarItemProps] = null,
     borderColor: InheritedColorProp[BarDatumWithColor] = null,
-    borderRadius: Int | Double = null,
-    borderWidth: Int | Double = null,
+    borderRadius: js.UndefOr[Double] = js.undefined,
+    borderWidth: js.UndefOr[Double] = js.undefined,
     colors: OrdinalColorsInstruction[_] = null,
     enableGridX: js.UndefOr[Boolean] = js.undefined,
     enableGridY: js.UndefOr[Boolean] = js.undefined,
     enableLabel: js.UndefOr[Boolean] = js.undefined,
     groupMode: stacked | grouped = null,
     indexBy: String | IndexByFunc = null,
-    innerPadding: Int | Double = null,
+    innerPadding: js.UndefOr[Double] = js.undefined,
     isInteractive: js.UndefOr[Boolean] = js.undefined,
     keys: js.Array[String] = null,
     label: String | AccessorFunc = null,
     labelFormat: String | LabelFormatter = null,
     labelLinkColor: InheritedColorProp[BarDatumWithColor] = null,
-    labelSkipHeight: Int | Double = null,
-    labelSkipWidth: Int | Double = null,
+    labelSkipHeight: js.UndefOr[Double] = js.undefined,
+    labelSkipWidth: js.UndefOr[Double] = js.undefined,
     labelTextColor: InheritedColorProp[BarDatumWithColor] = null,
     layout: horizontal | vertical = null,
     legends: js.Array[dataFromindexeskeysLegend] = null,
@@ -94,8 +94,8 @@ object BarCanvasProps {
     maxValue: Double | auto = null,
     minValue: Double | auto = null,
     onClick: (/* datum */ BarExtendedDatum, /* event */ MouseEvent[HTMLCanvasElement, NativeMouseEvent]) => Unit = null,
-    padding: Int | Double = null,
-    pixelRatio: Int | Double = null,
+    padding: js.UndefOr[Double] = js.undefined,
+    pixelRatio: js.UndefOr[Double] = js.undefined,
     reverse: js.UndefOr[Boolean] = js.undefined,
     theme: Theme = null,
     tooltip: TooltipProp = null,
@@ -108,22 +108,22 @@ object BarCanvasProps {
     if (axisTop != null) __obj.updateDynamic("axisTop")(axisTop.asInstanceOf[js.Any])
     if (barComponent != null) __obj.updateDynamic("barComponent")(barComponent.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderRadius)) __obj.updateDynamic("borderRadius")(borderRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGridX)) __obj.updateDynamic("enableGridX")(enableGridX.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGridY)) __obj.updateDynamic("enableGridY")(enableGridY.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLabel)) __obj.updateDynamic("enableLabel")(enableLabel.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGridX)) __obj.updateDynamic("enableGridX")(enableGridX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGridY)) __obj.updateDynamic("enableGridY")(enableGridY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableLabel)) __obj.updateDynamic("enableLabel")(enableLabel.get.asInstanceOf[js.Any])
     if (groupMode != null) __obj.updateDynamic("groupMode")(groupMode.asInstanceOf[js.Any])
     if (indexBy != null) __obj.updateDynamic("indexBy")(indexBy.asInstanceOf[js.Any])
-    if (innerPadding != null) __obj.updateDynamic("innerPadding")(innerPadding.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInteractive)) __obj.updateDynamic("isInteractive")(isInteractive.asInstanceOf[js.Any])
+    if (!js.isUndefined(innerPadding)) __obj.updateDynamic("innerPadding")(innerPadding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInteractive)) __obj.updateDynamic("isInteractive")(isInteractive.get.asInstanceOf[js.Any])
     if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelFormat != null) __obj.updateDynamic("labelFormat")(labelFormat.asInstanceOf[js.Any])
     if (labelLinkColor != null) __obj.updateDynamic("labelLinkColor")(labelLinkColor.asInstanceOf[js.Any])
-    if (labelSkipHeight != null) __obj.updateDynamic("labelSkipHeight")(labelSkipHeight.asInstanceOf[js.Any])
-    if (labelSkipWidth != null) __obj.updateDynamic("labelSkipWidth")(labelSkipWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelSkipHeight)) __obj.updateDynamic("labelSkipHeight")(labelSkipHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelSkipWidth)) __obj.updateDynamic("labelSkipWidth")(labelSkipWidth.get.asInstanceOf[js.Any])
     if (labelTextColor != null) __obj.updateDynamic("labelTextColor")(labelTextColor.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (legends != null) __obj.updateDynamic("legends")(legends.asInstanceOf[js.Any])
@@ -132,9 +132,9 @@ object BarCanvasProps {
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pixelRatio)) __obj.updateDynamic("pixelRatio")(pixelRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (tooltipFormat != null) __obj.updateDynamic("tooltipFormat")(tooltipFormat.asInstanceOf[js.Any])

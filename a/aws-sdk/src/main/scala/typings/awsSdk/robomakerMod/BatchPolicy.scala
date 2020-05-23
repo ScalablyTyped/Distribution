@@ -18,10 +18,13 @@ trait BatchPolicy extends js.Object {
 
 object BatchPolicy {
   @scala.inline
-  def apply(maxConcurrency: Int | Double = null, timeoutInSeconds: Int | Double = null): BatchPolicy = {
+  def apply(
+    maxConcurrency: js.UndefOr[MaxConcurrency] = js.undefined,
+    timeoutInSeconds: js.UndefOr[BatchTimeoutInSeconds] = js.undefined
+  ): BatchPolicy = {
     val __obj = js.Dynamic.literal()
-    if (maxConcurrency != null) __obj.updateDynamic("maxConcurrency")(maxConcurrency.asInstanceOf[js.Any])
-    if (timeoutInSeconds != null) __obj.updateDynamic("timeoutInSeconds")(timeoutInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxConcurrency)) __obj.updateDynamic("maxConcurrency")(maxConcurrency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutInSeconds)) __obj.updateDynamic("timeoutInSeconds")(timeoutInSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchPolicy]
   }
 }

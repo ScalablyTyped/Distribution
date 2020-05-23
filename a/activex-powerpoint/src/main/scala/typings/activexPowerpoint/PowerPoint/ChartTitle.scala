@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.ChartTitle")
 @js.native
-class ChartTitle protected () extends js.Object {
+trait ChartTitle extends js.Object {
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   var AutoScaleFont: js.Any = js.native
   val Border: ChartBorder = js.native

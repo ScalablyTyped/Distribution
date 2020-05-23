@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TagResourceInput extends js.Object {
   /**
-    * The ARN of the signaling channel to which you want to add tags.
+    * The Amazon Resource Name (ARN) of the signaling channel to which you want to add tags.
     */
   var ResourceARN: typings.awsSdk.kinesisvideoMod.ResourceARN = js.native
   /**

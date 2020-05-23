@@ -50,13 +50,13 @@ object MediaUpload {
     uploadService: String = null
   ): MediaUpload = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(completeNotification)) __obj.updateDynamic("completeNotification")(completeNotification.asInstanceOf[js.Any])
+    if (!js.isUndefined(completeNotification)) __obj.updateDynamic("completeNotification")(completeNotification.get.asInstanceOf[js.Any])
     if (dropzone != null) __obj.updateDynamic("dropzone")(dropzone.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
     if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(progressNotification)) __obj.updateDynamic("progressNotification")(progressNotification.asInstanceOf[js.Any])
-    if (!js.isUndefined(startNotification)) __obj.updateDynamic("startNotification")(startNotification.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressNotification)) __obj.updateDynamic("progressNotification")(progressNotification.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startNotification)) __obj.updateDynamic("startNotification")(startNotification.get.asInstanceOf[js.Any])
     if (uploadService != null) __obj.updateDynamic("uploadService")(uploadService.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaUpload]
   }

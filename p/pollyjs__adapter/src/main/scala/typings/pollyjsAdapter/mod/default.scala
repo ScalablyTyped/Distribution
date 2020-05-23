@@ -1,6 +1,6 @@
 package typings.pollyjsAdapter.mod
 
-import typings.pollyjsAdapter.AnonBody
+import typings.pollyjsAdapter.anon.Body
 import typings.pollyjsCore.mod.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ class default () extends Adapter {
   /* CompleteClass */
   override def disconnect(): Unit = js.native
   /* CompleteClass */
-  override def passthroughRequest(pollyRequest: Request): js.Promise[AnonBody] = js.native
+  override def passthroughRequest(pollyRequest: Request): js.Promise[Body] = js.native
 }
 
 /* static members */

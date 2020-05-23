@@ -94,51 +94,51 @@ object Indicator {
   @scala.inline
   def apply(
     animationDuration: js.UndefOr[Boolean] = js.undefined,
-    dPeriod: Int | Double = null,
+    dPeriod: js.UndefOr[Double] = js.undefined,
     enableAnimation: js.UndefOr[Boolean] = js.undefined,
     fill: String = null,
     histogram: IndicatorsHistogram = null,
-    kPeriod: Int | Double = null,
-    longPeriod: Int | Double = null,
+    kPeriod: js.UndefOr[Double] = js.undefined,
+    longPeriod: js.UndefOr[Double] = js.undefined,
     lowerLine: IndicatorsLowerLine = null,
     macdLine: IndicatorsMacdLine = null,
     macdType: String = null,
-    period: Int | Double = null,
+    period: js.UndefOr[Double] = js.undefined,
     periodLine: IndicatorsPeriodLine = null,
     seriesName: String = null,
-    shortPeriod: Int | Double = null,
-    standardDeviations: Int | Double = null,
+    shortPeriod: js.UndefOr[Double] = js.undefined,
+    standardDeviations: js.UndefOr[Double] = js.undefined,
     tooltip: IndicatorsTooltip = null,
-    trigger: Int | Double = null,
+    trigger: js.UndefOr[Double] = js.undefined,
     `type`: String = null,
     upperLine: IndicatorsUpperLine = null,
     visibility: String = null,
-    width: Int | Double = null,
+    width: js.UndefOr[Double] = js.undefined,
     xAxisName: String = null,
     yAxisName: String = null
   ): Indicator = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (dPeriod != null) __obj.updateDynamic("dPeriod")(dPeriod.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dPeriod)) __obj.updateDynamic("dPeriod")(dPeriod.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.get.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (histogram != null) __obj.updateDynamic("histogram")(histogram.asInstanceOf[js.Any])
-    if (kPeriod != null) __obj.updateDynamic("kPeriod")(kPeriod.asInstanceOf[js.Any])
-    if (longPeriod != null) __obj.updateDynamic("longPeriod")(longPeriod.asInstanceOf[js.Any])
+    if (!js.isUndefined(kPeriod)) __obj.updateDynamic("kPeriod")(kPeriod.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(longPeriod)) __obj.updateDynamic("longPeriod")(longPeriod.get.asInstanceOf[js.Any])
     if (lowerLine != null) __obj.updateDynamic("lowerLine")(lowerLine.asInstanceOf[js.Any])
     if (macdLine != null) __obj.updateDynamic("macdLine")(macdLine.asInstanceOf[js.Any])
     if (macdType != null) __obj.updateDynamic("macdType")(macdType.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
+    if (!js.isUndefined(period)) __obj.updateDynamic("period")(period.get.asInstanceOf[js.Any])
     if (periodLine != null) __obj.updateDynamic("periodLine")(periodLine.asInstanceOf[js.Any])
     if (seriesName != null) __obj.updateDynamic("seriesName")(seriesName.asInstanceOf[js.Any])
-    if (shortPeriod != null) __obj.updateDynamic("shortPeriod")(shortPeriod.asInstanceOf[js.Any])
-    if (standardDeviations != null) __obj.updateDynamic("standardDeviations")(standardDeviations.asInstanceOf[js.Any])
+    if (!js.isUndefined(shortPeriod)) __obj.updateDynamic("shortPeriod")(shortPeriod.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(standardDeviations)) __obj.updateDynamic("standardDeviations")(standardDeviations.get.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
+    if (!js.isUndefined(trigger)) __obj.updateDynamic("trigger")(trigger.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (upperLine != null) __obj.updateDynamic("upperLine")(upperLine.asInstanceOf[js.Any])
     if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     if (xAxisName != null) __obj.updateDynamic("xAxisName")(xAxisName.asInstanceOf[js.Any])
     if (yAxisName != null) __obj.updateDynamic("yAxisName")(yAxisName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Indicator]

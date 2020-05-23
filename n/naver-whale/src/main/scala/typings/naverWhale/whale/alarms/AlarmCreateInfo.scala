@@ -16,14 +16,14 @@ trait AlarmCreateInfo extends js.Object {
 object AlarmCreateInfo {
   @scala.inline
   def apply(
-    delayInMinutes: Int | Double = null,
-    periodInMinutes: Int | Double = null,
-    when: Int | Double = null
+    delayInMinutes: js.UndefOr[Double] = js.undefined,
+    periodInMinutes: js.UndefOr[Double] = js.undefined,
+    when: js.UndefOr[Double] = js.undefined
   ): AlarmCreateInfo = {
     val __obj = js.Dynamic.literal()
-    if (delayInMinutes != null) __obj.updateDynamic("delayInMinutes")(delayInMinutes.asInstanceOf[js.Any])
-    if (periodInMinutes != null) __obj.updateDynamic("periodInMinutes")(periodInMinutes.asInstanceOf[js.Any])
-    if (when != null) __obj.updateDynamic("when")(when.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayInMinutes)) __obj.updateDynamic("delayInMinutes")(delayInMinutes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(periodInMinutes)) __obj.updateDynamic("periodInMinutes")(periodInMinutes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(when)) __obj.updateDynamic("when")(when.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlarmCreateInfo]
   }
 }

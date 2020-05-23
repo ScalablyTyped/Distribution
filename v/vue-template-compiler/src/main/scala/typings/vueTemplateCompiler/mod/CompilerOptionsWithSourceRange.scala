@@ -25,7 +25,7 @@ object CompilerOptionsWithSourceRange {
     val __obj = js.Dynamic.literal(outputSourceRange = outputSourceRange.asInstanceOf[js.Any])
     if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
     if (modules != null) __obj.updateDynamic("modules")(modules.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveWhitespace)) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveWhitespace)) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace.get.asInstanceOf[js.Any])
     if (whitespace != null) __obj.updateDynamic("whitespace")(whitespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompilerOptionsWithSourceRange]
   }

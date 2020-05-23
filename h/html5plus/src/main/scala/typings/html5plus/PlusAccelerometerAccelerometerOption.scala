@@ -22,9 +22,9 @@ trait PlusAccelerometerAccelerometerOption extends js.Object {
 
 object PlusAccelerometerAccelerometerOption {
   @scala.inline
-  def apply(frequency: Int | Double = null): PlusAccelerometerAccelerometerOption = {
+  def apply(frequency: js.UndefOr[Double] = js.undefined): PlusAccelerometerAccelerometerOption = {
     val __obj = js.Dynamic.literal()
-    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
+    if (!js.isUndefined(frequency)) __obj.updateDynamic("frequency")(frequency.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusAccelerometerAccelerometerOption]
   }
 }

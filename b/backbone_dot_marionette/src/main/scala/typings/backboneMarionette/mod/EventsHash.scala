@@ -1,12 +1,12 @@
 package typings.backboneMarionette.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jquery.JQuery_.TriggeredEvent
+import typings.jquery.JQuery.TriggeredEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - org.scalablytyped.runtime.StringDictionary because Already inherited */ trait EventsHash
   extends typings.backbone.mod.EventsHash
 

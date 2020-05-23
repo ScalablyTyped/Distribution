@@ -55,7 +55,7 @@ trait ComponentInterface
 object ComponentInterface {
   @scala.inline
   def apply(
-    StringDictionary: /* memberName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     componentDidLoad: () => Unit = null,
     componentDidRender: () => Unit = null,
     componentDidUpdate: () => Unit = null,

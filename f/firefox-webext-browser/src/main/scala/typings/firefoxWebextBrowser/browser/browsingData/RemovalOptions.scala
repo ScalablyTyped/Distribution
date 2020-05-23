@@ -1,6 +1,6 @@
 package typings.firefoxWebextBrowser.browser.browsingData
 
-import typings.firefoxWebextBrowser.AnonExtension
+import typings.firefoxWebextBrowser.anon.Extension
 import typings.firefoxWebextBrowser.browser.extensionTypes.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait RemovalOptions extends js.Object {
     * it defaults to clearing only "unprotected" origins. Please ensure that you _really_ want to remove
     * application data before adding 'protectedWeb' or 'extensions'.
     */
-  var originTypes: js.UndefOr[AnonExtension] = js.undefined
+  var originTypes: js.UndefOr[Extension] = js.undefined
   /**
     * Remove data accumulated on or after this date, represented in milliseconds since the epoch (accessible via
     * the `getTime` method of the JavaScript `Date` object). If absent, defaults to 0 (which would remove all
@@ -27,7 +27,7 @@ trait RemovalOptions extends js.Object {
 
 object RemovalOptions {
   @scala.inline
-  def apply(hostnames: js.Array[String] = null, originTypes: AnonExtension = null, since: Date = null): RemovalOptions = {
+  def apply(hostnames: js.Array[String] = null, originTypes: Extension = null, since: Date = null): RemovalOptions = {
     val __obj = js.Dynamic.literal()
     if (hostnames != null) __obj.updateDynamic("hostnames")(hostnames.asInstanceOf[js.Any])
     if (originTypes != null) __obj.updateDynamic("originTypes")(originTypes.asInstanceOf[js.Any])

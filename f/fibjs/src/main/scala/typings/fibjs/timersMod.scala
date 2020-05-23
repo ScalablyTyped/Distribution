@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 /** module Or Internal Object */
 /**
-	* @brief timers 模块
-	* @detail 
-	*/
+  * @brief timers 模块
+  * @detail 
+  */
 @JSImport("timers", JSImport.Namespace)
 @js.native
 object timersMod extends js.Object {

@@ -1,6 +1,5 @@
 package typings.googlemaps.google.maps
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,14 +15,6 @@ object MaxZoomStatus extends js.Object {
   
   @js.native
   sealed trait OK extends MaxZoomStatus
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[MaxZoomStatus with String] = js.native
-  /* "ERROR" */ @js.native
-  object ERROR extends TopLevel[ERROR with String]
-  
-  /* "OK" */ @js.native
-  object OK extends TopLevel[OK with String]
   
 }
 

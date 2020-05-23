@@ -22,9 +22,9 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(depth: Int | Double = null, quoteStyle: single | double = null): Options = {
+  def apply(depth: js.UndefOr[Double] = js.undefined, quoteStyle: single | double = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
     if (quoteStyle != null) __obj.updateDynamic("quoteStyle")(quoteStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

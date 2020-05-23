@@ -24,9 +24,7 @@ object ResolvedDirective {
     providersExpr: Expression = null,
     viewProvidersExpr: Expression = null
   ): ResolvedDirective = {
-    val __obj = js.Dynamic.literal(decorator = decorator.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
-    if (providersExpr != null) __obj.updateDynamic("providersExpr")(providersExpr.asInstanceOf[js.Any])
-    if (viewProvidersExpr != null) __obj.updateDynamic("viewProvidersExpr")(viewProvidersExpr.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(decorator = decorator.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], providersExpr = providersExpr.asInstanceOf[js.Any], viewProvidersExpr = viewProvidersExpr.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedDirective]
   }
 }

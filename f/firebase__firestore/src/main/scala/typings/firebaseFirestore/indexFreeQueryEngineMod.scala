@@ -12,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/index_free_query_engine", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/index_free_query_engine", JSImport.Namespace)
 @js.native
 object indexFreeQueryEngineMod extends js.Object {
   @js.native

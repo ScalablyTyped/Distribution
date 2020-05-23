@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization
 
-import typings.ejWebAll.JQuery
 import typings.ejWebAll.ej.Model
 import typings.ejWebAll.ej.Widget_
 import typings.ejWebAll.ej.datavisualization.Diagram.ExportImageSettings
@@ -10,18 +9,12 @@ import typings.ejWebAll.ej.datavisualization.Diagram.PrintImageSettings
 import typings.ejWebAll.ej.datavisualization.Diagram.PrintSettings
 import typings.ejWebAll.ej.datavisualization.Diagram.Region
 import typings.ejWebAll.ej.datavisualization.Diagram.Zoom
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.datavisualization.Diagram")
 @js.native
-class Diagram_ protected () extends Widget_ {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: Model) = this()
-  def this(element: Element, options: Model) = this()
+trait Diagram_ extends Widget_ {
   var defaults: Model = js.native
   @JSName("model")
   var model_Diagram_ : Model = js.native

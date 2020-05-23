@@ -33,11 +33,11 @@ object ApplyPatchOptions {
   @scala.inline
   def apply(
     compareLine: (/* lineNumber */ Double, /* line */ String, /* operation */ `-_` | Space, /* patchContent */ String) => Boolean = null,
-    fuzzFactor: Int | Double = null
+    fuzzFactor: js.UndefOr[Double] = js.undefined
   ): ApplyPatchOptions = {
     val __obj = js.Dynamic.literal()
     if (compareLine != null) __obj.updateDynamic("compareLine")(js.Any.fromFunction4(compareLine))
-    if (fuzzFactor != null) __obj.updateDynamic("fuzzFactor")(fuzzFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(fuzzFactor)) __obj.updateDynamic("fuzzFactor")(fuzzFactor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplyPatchOptions]
   }
 }

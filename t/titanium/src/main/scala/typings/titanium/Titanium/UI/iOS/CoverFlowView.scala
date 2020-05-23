@@ -24,31 +24,30 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * The cover flow view is a container showing animated three-dimensional images in a style
-			 * consistent with the cover flow presentation style used for iPod, iTunes, and file browsing.
-			 */
-@JSGlobal("Titanium.UI.iOS.CoverFlowView")
+  * The cover flow view is a container showing animated three-dimensional images in a style
+  * consistent with the cover flow presentation style used for iPod, iTunes, and file browsing.
+  */
 @js.native
-class CoverFlowView () extends View {
+trait CoverFlowView extends View {
   /**
-  				 * Images to display in the view.
-  				 */
+    * Images to display in the view.
+    */
   var images: js.Array[Blob | CoverFlowImageType | File | String] = js.native
   /**
-  				 * Index to make selected.
-  				 */
+    * Index to make selected.
+    */
   var selected: Double = js.native
   /**
-  				 * Adds the specified callback as an event listener for the named event.
-  				 */
+    * Adds the specified callback as an event listener for the named event.
+    */
   @JSName("addEventListener")
   def addEventListener_change(
     name: change,
     callback: js.ThisFunction1[/* this */ this.type, /* event */ CoverFlowViewChangeEvent, Unit]
   ): Unit = js.native
   /**
-  				 * Fires a synthesized event to any registered listeners.
-  				 */
+    * Fires a synthesized event to any registered listeners.
+    */
   @JSName("fireEvent")
   def fireEvent_change(name: change): Unit = js.native
   @JSName("fireEvent")
@@ -82,39 +81,39 @@ class CoverFlowView () extends View {
   @JSName("fireEvent")
   def fireEvent_twofingertap(name: twofingertap, event: CoverFlowViewTwofingertapEvent): Unit = js.native
   /**
-  				 * Gets the value of the <Titanium.UI.iOS.CoverFlowView.images> property.
-  				 * @deprecated Access <Titanium.UI.iOS.CoverFlowView.images> instead.
-  				 */
+    * Gets the value of the <Titanium.UI.iOS.CoverFlowView.images> property.
+    * @deprecated Access <Titanium.UI.iOS.CoverFlowView.images> instead.
+    */
   def getImages(): js.Array[Blob | CoverFlowImageType | File | String] = js.native
   /**
-  				 * Gets the value of the <Titanium.UI.iOS.CoverFlowView.selected> property.
-  				 * @deprecated Access <Titanium.UI.iOS.CoverFlowView.selected> instead.
-  				 */
+    * Gets the value of the <Titanium.UI.iOS.CoverFlowView.selected> property.
+    * @deprecated Access <Titanium.UI.iOS.CoverFlowView.selected> instead.
+    */
   def getSelected(): Double = js.native
   /**
-  				 * Removes the specified callback as an event listener for the named event.
-  				 */
+    * Removes the specified callback as an event listener for the named event.
+    */
   @JSName("removeEventListener")
   def removeEventListener_change(
     name: change,
     callback: js.ThisFunction1[/* this */ this.type, /* event */ CoverFlowViewChangeEvent, Unit]
   ): Unit = js.native
   /**
-  				 * Changes the image for a specified index.
-  				 */
+    * Changes the image for a specified index.
+    */
   def setImage(index: Double, image: String): Unit = js.native
   def setImage(index: Double, image: CoverFlowImageType): Unit = js.native
   def setImage(index: Double, image: Blob): Unit = js.native
   def setImage(index: Double, image: File): Unit = js.native
   /**
-  				 * Sets the value of the <Titanium.UI.iOS.CoverFlowView.images> property.
-  				 * @deprecated Set the value using <Titanium.UI.iOS.CoverFlowView.images> instead.
-  				 */
+    * Sets the value of the <Titanium.UI.iOS.CoverFlowView.images> property.
+    * @deprecated Set the value using <Titanium.UI.iOS.CoverFlowView.images> instead.
+    */
   def setImages(images: js.Array[Blob | CoverFlowImageType | File | String]): Unit = js.native
   /**
-  				 * Sets the value of the <Titanium.UI.iOS.CoverFlowView.selected> property.
-  				 * @deprecated Set the value using <Titanium.UI.iOS.CoverFlowView.selected> instead.
-  				 */
+    * Sets the value of the <Titanium.UI.iOS.CoverFlowView.selected> property.
+    * @deprecated Set the value using <Titanium.UI.iOS.CoverFlowView.selected> instead.
+    */
   def setSelected(selected: Double): Unit = js.native
 }
 

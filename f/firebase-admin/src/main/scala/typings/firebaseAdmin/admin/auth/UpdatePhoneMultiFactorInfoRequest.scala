@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
   * Interface representing a phone specific user enrolled second factor
   * for an `UpdateRequest`.
   */
-trait UpdatePhoneMultiFactorInfoRequest extends UpdateMultiFactorInfoRequest {
+trait UpdatePhoneMultiFactorInfoRequest
+  extends typings.firebaseAdmin.authMod.admin.auth.UpdateMultiFactorInfoRequest {
   /**
     * The phone number associated with a phone second factor.
     */

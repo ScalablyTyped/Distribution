@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A set of images produced in single study (one or more series of references images)
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait ImagingStudy extends DomainResource {
   /**
     * Contains extended information for property 'availability'.
@@ -142,8 +142,8 @@ object ImagingStudy {
     meta: Meta = null,
     modalityList: js.Array[Coding] = null,
     modifierExtension: js.Array[Extension] = null,
-    numberOfInstances: Int | Double = null,
-    numberOfSeries: Int | Double = null,
+    numberOfInstances: js.UndefOr[unsignedInt] = js.undefined,
+    numberOfSeries: js.UndefOr[unsignedInt] = js.undefined,
     procedureCode: js.Array[CodeableConcept] = null,
     procedureReference: js.Array[Reference] = null,
     reason: CodeableConcept = null,
@@ -180,8 +180,8 @@ object ImagingStudy {
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (modalityList != null) __obj.updateDynamic("modalityList")(modalityList.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (numberOfInstances != null) __obj.updateDynamic("numberOfInstances")(numberOfInstances.asInstanceOf[js.Any])
-    if (numberOfSeries != null) __obj.updateDynamic("numberOfSeries")(numberOfSeries.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfInstances)) __obj.updateDynamic("numberOfInstances")(numberOfInstances.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfSeries)) __obj.updateDynamic("numberOfSeries")(numberOfSeries.get.asInstanceOf[js.Any])
     if (procedureCode != null) __obj.updateDynamic("procedureCode")(procedureCode.asInstanceOf[js.Any])
     if (procedureReference != null) __obj.updateDynamic("procedureReference")(procedureReference.asInstanceOf[js.Any])
     if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])

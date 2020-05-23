@@ -1,7 +1,7 @@
 package typings.braintreeWeb.mod
 
-import typings.braintreeWeb.AnonAuthorization
-import typings.braintreeWeb.AnonData
+import typings.braintreeWeb.anon.Authorization
+import typings.braintreeWeb.anon.Data
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,8 +31,8 @@ trait Client_ extends js.Object {
     * });
     * @static
     */
-  def create(options: AnonAuthorization): js.Promise[Client_] = js.native
-  def create(options: AnonAuthorization, callback: callback): Unit = js.native
+  def create(options: Authorization): js.Promise[Client_] = js.native
+  def create(options: Authorization, callback: callback): Unit = js.native
   /**
     * Returns a copy of the configuration values.
     * @public
@@ -86,6 +86,6 @@ trait Client_ extends js.Object {
     * });
     * @returns {void}
     */
-  def request(options: AnonData, callback: callback): Unit = js.native
+  def request(options: Data, callback: callback): Unit = js.native
 }
 

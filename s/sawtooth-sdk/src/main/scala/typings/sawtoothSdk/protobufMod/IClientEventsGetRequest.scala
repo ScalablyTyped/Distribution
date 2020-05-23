@@ -13,10 +13,13 @@ trait IClientEventsGetRequest extends js.Object {
 
 object IClientEventsGetRequest {
   @scala.inline
-  def apply(blockIds: js.Array[String] = null, subscriptions: js.Array[IEventSubscription] = null): IClientEventsGetRequest = {
+  def apply(
+    blockIds: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    subscriptions: js.UndefOr[Null | js.Array[IEventSubscription]] = js.undefined
+  ): IClientEventsGetRequest = {
     val __obj = js.Dynamic.literal()
-    if (blockIds != null) __obj.updateDynamic("blockIds")(blockIds.asInstanceOf[js.Any])
-    if (subscriptions != null) __obj.updateDynamic("subscriptions")(subscriptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockIds)) __obj.updateDynamic("blockIds")(blockIds.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscriptions)) __obj.updateDynamic("subscriptions")(subscriptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientEventsGetRequest]
   }
 }

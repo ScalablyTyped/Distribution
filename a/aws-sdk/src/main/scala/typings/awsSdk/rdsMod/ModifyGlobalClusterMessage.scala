@@ -23,12 +23,12 @@ trait ModifyGlobalClusterMessage extends js.Object {
 object ModifyGlobalClusterMessage {
   @scala.inline
   def apply(
-    DeletionProtection: js.UndefOr[scala.Boolean] = js.undefined,
+    DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined,
     GlobalClusterIdentifier: String = null,
     NewGlobalClusterIdentifier: String = null
   ): ModifyGlobalClusterMessage = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection.get.asInstanceOf[js.Any])
     if (GlobalClusterIdentifier != null) __obj.updateDynamic("GlobalClusterIdentifier")(GlobalClusterIdentifier.asInstanceOf[js.Any])
     if (NewGlobalClusterIdentifier != null) __obj.updateDynamic("NewGlobalClusterIdentifier")(NewGlobalClusterIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyGlobalClusterMessage]

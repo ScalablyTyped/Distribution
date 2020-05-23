@@ -2,8 +2,9 @@ package typings.materialDataTable
 
 import typings.materialBase.foundationMod.MDCFoundation
 import typings.materialDataTable.adapterMod.MDCDataTableAdapter
+import typings.materialDataTable.anon.PartialMDCDataTableAdapte
 import typings.std.Element
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +33,7 @@ object foundationMod extends js.Object {
     /**
       * Handles change event originated from row checkboxes.
       */
-    def handleRowCheckboxChange(event: Event_): Unit = js.native
+    def handleRowCheckboxChange(event: Event): Unit = js.native
     // Subclasses should override this method to perform initialization routines (registering events, etc.)
     /* CompleteClass */
     override def init(): Unit = js.native

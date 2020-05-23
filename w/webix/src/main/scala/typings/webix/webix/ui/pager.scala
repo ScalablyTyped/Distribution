@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.pager")
 @js.native
-class pager () extends baseview {
+trait pager extends baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
   @JSName("config")

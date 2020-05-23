@@ -31,6 +31,10 @@ trait DescribeTypeOutput extends js.Object {
     */
   var ExecutionRoleArn: js.UndefOr[RoleArn] = js.native
   /**
+    * Whether the specified type version is set as the default version.
+    */
+  var IsDefaultVersion: js.UndefOr[typings.awsSdk.cloudformationMod.IsDefaultVersion] = js.native
+  /**
     * When the specified type version was registered.
     */
   var LastUpdated: js.UndefOr[Timestamp] = js.native
@@ -77,6 +81,7 @@ object DescribeTypeOutput {
     Description: Description = null,
     DocumentationUrl: OptionalSecureUrl = null,
     ExecutionRoleArn: RoleArn = null,
+    IsDefaultVersion: js.UndefOr[IsDefaultVersion] = js.undefined,
     LastUpdated: Timestamp = null,
     LoggingConfig: LoggingConfig = null,
     ProvisioningType: ProvisioningType = null,
@@ -94,6 +99,7 @@ object DescribeTypeOutput {
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (DocumentationUrl != null) __obj.updateDynamic("DocumentationUrl")(DocumentationUrl.asInstanceOf[js.Any])
     if (ExecutionRoleArn != null) __obj.updateDynamic("ExecutionRoleArn")(ExecutionRoleArn.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsDefaultVersion)) __obj.updateDynamic("IsDefaultVersion")(IsDefaultVersion.get.asInstanceOf[js.Any])
     if (LastUpdated != null) __obj.updateDynamic("LastUpdated")(LastUpdated.asInstanceOf[js.Any])
     if (LoggingConfig != null) __obj.updateDynamic("LoggingConfig")(LoggingConfig.asInstanceOf[js.Any])
     if (ProvisioningType != null) __obj.updateDynamic("ProvisioningType")(ProvisioningType.asInstanceOf[js.Any])

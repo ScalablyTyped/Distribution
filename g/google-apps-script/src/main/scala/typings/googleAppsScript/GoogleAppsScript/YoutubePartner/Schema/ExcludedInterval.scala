@@ -14,14 +14,14 @@ trait ExcludedInterval extends js.Object {
 object ExcludedInterval {
   @scala.inline
   def apply(
-    high: Int | Double = null,
-    low: Int | Double = null,
+    high: js.UndefOr[Double] = js.undefined,
+    low: js.UndefOr[Double] = js.undefined,
     origin: String = null,
     timeCreated: String = null
   ): ExcludedInterval = {
     val __obj = js.Dynamic.literal()
-    if (high != null) __obj.updateDynamic("high")(high.asInstanceOf[js.Any])
-    if (low != null) __obj.updateDynamic("low")(low.asInstanceOf[js.Any])
+    if (!js.isUndefined(high)) __obj.updateDynamic("high")(high.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(low)) __obj.updateDynamic("low")(low.get.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     if (timeCreated != null) __obj.updateDynamic("timeCreated")(timeCreated.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExcludedInterval]

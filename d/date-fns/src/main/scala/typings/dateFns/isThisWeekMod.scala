@@ -1,5 +1,6 @@
 package typings.dateFns
 
+import typings.dateFns.anon.WeekStartsOn
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,11 +12,11 @@ object isThisWeekMod extends js.Object {
   @js.native
   object default extends js.Object {
     def apply(date: Double): Boolean = js.native
-    def apply(date: Double, options: AnonLocale): Boolean = js.native
-    def apply(date: Double, options: AnonWeekStartsOn): Boolean = js.native
+    def apply(date: Double, options: typings.dateFns.anon.Locale): Boolean = js.native
+    def apply(date: Double, options: WeekStartsOn): Boolean = js.native
     def apply(date: Date): Boolean = js.native
-    def apply(date: Date, options: AnonLocale): Boolean = js.native
-    def apply(date: Date, options: AnonWeekStartsOn): Boolean = js.native
+    def apply(date: Date, options: typings.dateFns.anon.Locale): Boolean = js.native
+    def apply(date: Date, options: WeekStartsOn): Boolean = js.native
   }
   
 }

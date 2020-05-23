@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-dnd-multi-backend", "Preview")
 @js.native
 class Preview ()
-  extends Component[PreviewProps, js.Object, js.Any]
+  extends Component[PreviewProps[js.Any], js.Object, js.Any]
 

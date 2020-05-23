@@ -42,7 +42,7 @@ object Constraint {
     displayName: String = null,
     listConstraint: ListConstraint = null,
     name: String = null,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): Constraint = {
     val __obj = js.Dynamic.literal()
     if (booleanConstraint != null) __obj.updateDynamic("booleanConstraint")(booleanConstraint.asInstanceOf[js.Any])
@@ -51,7 +51,7 @@ object Constraint {
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (listConstraint != null) __obj.updateDynamic("listConstraint")(listConstraint.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Constraint]
   }
 }

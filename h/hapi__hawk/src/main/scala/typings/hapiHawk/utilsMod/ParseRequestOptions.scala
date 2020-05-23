@@ -13,12 +13,17 @@ trait ParseRequestOptions extends js.Object {
 
 object ParseRequestOptions {
   @scala.inline
-  def apply(host: String = null, hostHeaderName: String = null, name: String = null, port: Int | Double = null): ParseRequestOptions = {
+  def apply(
+    host: String = null,
+    hostHeaderName: String = null,
+    name: String = null,
+    port: js.UndefOr[Double] = js.undefined
+  ): ParseRequestOptions = {
     val __obj = js.Dynamic.literal()
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (hostHeaderName != null) __obj.updateDynamic("hostHeaderName")(hostHeaderName.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseRequestOptions]
   }
 }

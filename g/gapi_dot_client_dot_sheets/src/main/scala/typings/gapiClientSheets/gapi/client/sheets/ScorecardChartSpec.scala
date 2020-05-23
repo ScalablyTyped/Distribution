@@ -53,7 +53,7 @@ object ScorecardChartSpec {
     keyValueData: ChartData = null,
     keyValueFormat: KeyValueFormat = null,
     numberFormatSource: String = null,
-    scaleFactor: Int | Double = null
+    scaleFactor: js.UndefOr[Double] = js.undefined
   ): ScorecardChartSpec = {
     val __obj = js.Dynamic.literal()
     if (aggregateType != null) __obj.updateDynamic("aggregateType")(aggregateType.asInstanceOf[js.Any])
@@ -63,7 +63,7 @@ object ScorecardChartSpec {
     if (keyValueData != null) __obj.updateDynamic("keyValueData")(keyValueData.asInstanceOf[js.Any])
     if (keyValueFormat != null) __obj.updateDynamic("keyValueFormat")(keyValueFormat.asInstanceOf[js.Any])
     if (numberFormatSource != null) __obj.updateDynamic("numberFormatSource")(numberFormatSource.asInstanceOf[js.Any])
-    if (scaleFactor != null) __obj.updateDynamic("scaleFactor")(scaleFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleFactor)) __obj.updateDynamic("scaleFactor")(scaleFactor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScorecardChartSpec]
   }
 }

@@ -33,7 +33,7 @@ object N1qlQuery extends js.Object {
   @js.native
   object Consistency extends js.Object {
     /**
-      * 	This is the default (for single-statement requests).
+      *     This is the default (for single-statement requests).
       */
     @js.native
     sealed trait NOT_BOUND extends Consistency

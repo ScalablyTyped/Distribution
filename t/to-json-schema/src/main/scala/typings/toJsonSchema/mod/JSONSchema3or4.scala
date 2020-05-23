@@ -60,17 +60,17 @@ object JSONSchema3or4 {
   def apply(
     $ref: String = null,
     $schema: JSONSchema4Version = null,
-    StringDictionary: /* k */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     additionalItems: Boolean | JSONSchema3or4 = null,
     additionalProperties: Boolean | JSONSchema3or4 = null,
     allOf: js.Array[JSONSchema4] = null,
     anyOf: js.Array[JSONSchema4] = null,
-    default: JSONSchema4Type = null,
+    default: js.UndefOr[Null | JSONSchema4Type] = js.undefined,
     definitions: StringDictionary[JSONSchema4] = null,
     dependencies: StringDictionary[JSONSchema3or4 | String | js.Array[String]] = null,
     description: String = null,
     disallow: String | (js.Array[String | JSONSchema3or4]) = null,
-    divisibleBy: Int | Double = null,
+    divisibleBy: js.UndefOr[Double] = js.undefined,
     enum: js.Array[JSONSchema4Type] = null,
     exclusiveMaximum: js.UndefOr[Boolean] = js.undefined,
     exclusiveMinimum: js.UndefOr[Boolean] = js.undefined,
@@ -78,15 +78,15 @@ object JSONSchema3or4 {
     format: String = null,
     id: String = null,
     items: JSONSchema3or4 | js.Array[JSONSchema3or4] = null,
-    maxItems: Int | Double = null,
-    maxLength: Int | Double = null,
-    maxProperties: Int | Double = null,
-    maximum: Int | Double = null,
-    minItems: Int | Double = null,
-    minLength: Int | Double = null,
-    minProperties: Int | Double = null,
-    minimum: Int | Double = null,
-    multipleOf: Int | Double = null,
+    maxItems: js.UndefOr[Double] = js.undefined,
+    maxLength: js.UndefOr[Double] = js.undefined,
+    maxProperties: js.UndefOr[Double] = js.undefined,
+    maximum: js.UndefOr[Double] = js.undefined,
+    minItems: js.UndefOr[Double] = js.undefined,
+    minLength: js.UndefOr[Double] = js.undefined,
+    minProperties: js.UndefOr[Double] = js.undefined,
+    minimum: js.UndefOr[Double] = js.undefined,
+    multipleOf: js.UndefOr[Double] = js.undefined,
     not: JSONSchema4 = null,
     oneOf: js.Array[JSONSchema4] = null,
     pattern: String = null,
@@ -105,28 +105,28 @@ object JSONSchema3or4 {
     if (additionalProperties != null) __obj.updateDynamic("additionalProperties")(additionalProperties.asInstanceOf[js.Any])
     if (allOf != null) __obj.updateDynamic("allOf")(allOf.asInstanceOf[js.Any])
     if (anyOf != null) __obj.updateDynamic("anyOf")(anyOf.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (definitions != null) __obj.updateDynamic("definitions")(definitions.asInstanceOf[js.Any])
     if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (disallow != null) __obj.updateDynamic("disallow")(disallow.asInstanceOf[js.Any])
-    if (divisibleBy != null) __obj.updateDynamic("divisibleBy")(divisibleBy.asInstanceOf[js.Any])
+    if (!js.isUndefined(divisibleBy)) __obj.updateDynamic("divisibleBy")(divisibleBy.get.asInstanceOf[js.Any])
     if (enum != null) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusiveMaximum)) __obj.updateDynamic("exclusiveMaximum")(exclusiveMaximum.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusiveMinimum)) __obj.updateDynamic("exclusiveMinimum")(exclusiveMinimum.asInstanceOf[js.Any])
+    if (!js.isUndefined(exclusiveMaximum)) __obj.updateDynamic("exclusiveMaximum")(exclusiveMaximum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exclusiveMinimum)) __obj.updateDynamic("exclusiveMinimum")(exclusiveMinimum.get.asInstanceOf[js.Any])
     if (`extends` != null) __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (maxItems != null) __obj.updateDynamic("maxItems")(maxItems.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (maxProperties != null) __obj.updateDynamic("maxProperties")(maxProperties.asInstanceOf[js.Any])
-    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
-    if (minItems != null) __obj.updateDynamic("minItems")(minItems.asInstanceOf[js.Any])
-    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
-    if (minProperties != null) __obj.updateDynamic("minProperties")(minProperties.asInstanceOf[js.Any])
-    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
-    if (multipleOf != null) __obj.updateDynamic("multipleOf")(multipleOf.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxItems)) __obj.updateDynamic("maxItems")(maxItems.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxProperties)) __obj.updateDynamic("maxProperties")(maxProperties.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximum)) __obj.updateDynamic("maximum")(maximum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minItems)) __obj.updateDynamic("minItems")(minItems.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minLength)) __obj.updateDynamic("minLength")(minLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minProperties)) __obj.updateDynamic("minProperties")(minProperties.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimum)) __obj.updateDynamic("minimum")(minimum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multipleOf)) __obj.updateDynamic("multipleOf")(multipleOf.get.asInstanceOf[js.Any])
     if (not != null) __obj.updateDynamic("not")(not.asInstanceOf[js.Any])
     if (oneOf != null) __obj.updateDynamic("oneOf")(oneOf.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
@@ -135,7 +135,7 @@ object JSONSchema3or4 {
     if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(uniqueItems)) __obj.updateDynamic("uniqueItems")(uniqueItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(uniqueItems)) __obj.updateDynamic("uniqueItems")(uniqueItems.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONSchema3or4]
   }
 }

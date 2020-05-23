@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.TransformBlock")
 @js.native
-class TransformBlock protected () extends NodeMaterialBlock {
-  /**
-    * Creates a new TransformBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait TransformBlock extends NodeMaterialBlock {
   /**
     * Defines the value to use to complement W value to transform it to a Vector4
     */

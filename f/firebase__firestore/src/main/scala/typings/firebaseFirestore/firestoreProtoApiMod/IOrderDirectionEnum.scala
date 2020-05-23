@@ -20,7 +20,6 @@ object IOrderDirectionEnum {
     values: () => js.Array[OrderDirection]
   ): IOrderDirectionEnum = {
     val __obj = js.Dynamic.literal(ASCENDING = ASCENDING.asInstanceOf[js.Any], DESCENDING = DESCENDING.asInstanceOf[js.Any], DIRECTION_UNSPECIFIED = DIRECTION_UNSPECIFIED.asInstanceOf[js.Any], values = js.Any.fromFunction0(values))
-  
     __obj.asInstanceOf[IOrderDirectionEnum]
   }
 }

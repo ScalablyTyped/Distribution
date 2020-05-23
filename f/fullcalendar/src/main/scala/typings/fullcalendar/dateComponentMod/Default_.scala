@@ -1,6 +1,6 @@
 package typings.fullcalendar.dateComponentMod
 
-import typings.fullcalendar.AnonEnd
+import typings.fullcalendar.anon.End
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +34,7 @@ abstract class Default_ ()
   def buildGotoAnchorHtml(gotoOptions: js.Any, attrs: js.Any, innerHtml: js.Any): String = js.native
   def callChildren(methodName: js.Any, args: js.Any): Unit = js.native
   def componentFootprintToSegs(componentFootprint: js.Any): js.Array[_] = js.native
-  def computeDayRange(unzonedRange: js.Any): AnonEnd = js.native
+  def computeDayRange(unzonedRange: js.Any): End = js.native
   def currentRangeAs(unit: js.Any): js.Any = js.native
   def eventFootprintToSegs(eventFootprint: js.Any): js.Any = js.native
   def eventFootprintsToSegs(eventFootprints: js.Any): js.Array[_] = js.native

@@ -36,6 +36,11 @@ class GroupBox protected () extends ConditionallyVisibleWidget {
   def caption_Union: ClientTemplate | Null = js.native
   def collapsible: GroupBoxCollapsible = js.native
   def collapsible(newValue: GroupBoxCollapsible): js.Any = js.native
+  /**
+    * In version 8.10.0: introduced
+    */
+  def headerMode: GroupBoxRenderMode = js.native
+  def headerMode(newValue: GroupBoxRenderMode): js.Any = js.native
   def widget(): js.Any = js.native
   def widget(newValue: Widget): js.Any = js.native
   /**

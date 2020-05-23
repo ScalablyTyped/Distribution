@@ -29,41 +29,41 @@ object ICustomConfig {
   @scala.inline
   def apply(
     animateInParallel: js.UndefOr[Boolean] = js.undefined,
-    animationStepMs: Int | Double = null,
-    animationSteps: Int | Double = null,
+    animationStepMs: js.UndefOr[Double] = js.undefined,
+    animationSteps: js.UndefOr[Double] = js.undefined,
     appIcon: String = null,
-    borderRadius: Int | Double = null,
+    borderRadius: js.UndefOr[Double] = js.undefined,
     defaultStyleAppIcon: js.Any = null,
     defaultStyleClose: js.Any = null,
     defaultStyleContainer: js.Any = null,
     defaultStyleImage: js.Any = null,
     defaultStyleText: js.Any = null,
     defaultWindow: BrowserWindowConstructorOptions = null,
-    displayTime: Int | Double = null,
-    height: Int | Double = null,
+    displayTime: js.UndefOr[Double] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
     logging: js.UndefOr[Boolean] = js.undefined,
-    padding: Int | Double = null,
+    padding: js.UndefOr[Double] = js.undefined,
     pathToModule: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): ICustomConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animateInParallel)) __obj.updateDynamic("animateInParallel")(animateInParallel.asInstanceOf[js.Any])
-    if (animationStepMs != null) __obj.updateDynamic("animationStepMs")(animationStepMs.asInstanceOf[js.Any])
-    if (animationSteps != null) __obj.updateDynamic("animationSteps")(animationSteps.asInstanceOf[js.Any])
+    if (!js.isUndefined(animateInParallel)) __obj.updateDynamic("animateInParallel")(animateInParallel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationStepMs)) __obj.updateDynamic("animationStepMs")(animationStepMs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationSteps)) __obj.updateDynamic("animationSteps")(animationSteps.get.asInstanceOf[js.Any])
     if (appIcon != null) __obj.updateDynamic("appIcon")(appIcon.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderRadius)) __obj.updateDynamic("borderRadius")(borderRadius.get.asInstanceOf[js.Any])
     if (defaultStyleAppIcon != null) __obj.updateDynamic("defaultStyleAppIcon")(defaultStyleAppIcon.asInstanceOf[js.Any])
     if (defaultStyleClose != null) __obj.updateDynamic("defaultStyleClose")(defaultStyleClose.asInstanceOf[js.Any])
     if (defaultStyleContainer != null) __obj.updateDynamic("defaultStyleContainer")(defaultStyleContainer.asInstanceOf[js.Any])
     if (defaultStyleImage != null) __obj.updateDynamic("defaultStyleImage")(defaultStyleImage.asInstanceOf[js.Any])
     if (defaultStyleText != null) __obj.updateDynamic("defaultStyleText")(defaultStyleText.asInstanceOf[js.Any])
     if (defaultWindow != null) __obj.updateDynamic("defaultWindow")(defaultWindow.asInstanceOf[js.Any])
-    if (displayTime != null) __obj.updateDynamic("displayTime")(displayTime.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayTime)) __obj.updateDynamic("displayTime")(displayTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
     if (pathToModule != null) __obj.updateDynamic("pathToModule")(pathToModule.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomConfig]
   }
 }

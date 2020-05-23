@@ -13,10 +13,10 @@ trait EstimateGasOptions extends js.Object {
 
 object EstimateGasOptions {
   @scala.inline
-  def apply(from: String = null, gas: Int | Double = null, value: Double | String | ^  = null): EstimateGasOptions = {
+  def apply(from: String = null, gas: js.UndefOr[Double] = js.undefined, value: Double | String | ^  = null): EstimateGasOptions = {
     val __obj = js.Dynamic.literal()
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (gas != null) __obj.updateDynamic("gas")(gas.asInstanceOf[js.Any])
+    if (!js.isUndefined(gas)) __obj.updateDynamic("gas")(gas.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[EstimateGasOptions]
   }

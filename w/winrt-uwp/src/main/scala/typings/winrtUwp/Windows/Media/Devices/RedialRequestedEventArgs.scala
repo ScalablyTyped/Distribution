@@ -5,10 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains information for the RedialRequested event. */
-@JSGlobal("Windows.Media.Devices.RedialRequestedEventArgs")
-@js.native
-abstract class RedialRequestedEventArgs () extends js.Object {
+trait RedialRequestedEventArgs extends js.Object {
   /** Indicates that the RedialRequested event has been handled. */
-  def handled(): Unit = js.native
+  def handled(): Unit
+}
+
+object RedialRequestedEventArgs {
+  @scala.inline
+  def apply(handled: () => Unit): RedialRequestedEventArgs = {
+    val __obj = js.Dynamic.literal(handled = js.Any.fromFunction0(handled))
+    __obj.asInstanceOf[RedialRequestedEventArgs]
+  }
 }
 

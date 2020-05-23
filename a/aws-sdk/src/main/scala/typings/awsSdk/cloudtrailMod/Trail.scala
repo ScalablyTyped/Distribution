@@ -77,14 +77,14 @@ object Trail {
   def apply(
     CloudWatchLogsLogGroupArn: String = null,
     CloudWatchLogsRoleArn: String = null,
-    HasCustomEventSelectors: js.UndefOr[scala.Boolean] = js.undefined,
-    HasInsightSelectors: js.UndefOr[scala.Boolean] = js.undefined,
+    HasCustomEventSelectors: js.UndefOr[Boolean] = js.undefined,
+    HasInsightSelectors: js.UndefOr[Boolean] = js.undefined,
     HomeRegion: String = null,
-    IncludeGlobalServiceEvents: js.UndefOr[scala.Boolean] = js.undefined,
-    IsMultiRegionTrail: js.UndefOr[scala.Boolean] = js.undefined,
-    IsOrganizationTrail: js.UndefOr[scala.Boolean] = js.undefined,
+    IncludeGlobalServiceEvents: js.UndefOr[Boolean] = js.undefined,
+    IsMultiRegionTrail: js.UndefOr[Boolean] = js.undefined,
+    IsOrganizationTrail: js.UndefOr[Boolean] = js.undefined,
     KmsKeyId: String = null,
-    LogFileValidationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    LogFileValidationEnabled: js.UndefOr[Boolean] = js.undefined,
     Name: String = null,
     S3BucketName: String = null,
     S3KeyPrefix: String = null,
@@ -95,14 +95,14 @@ object Trail {
     val __obj = js.Dynamic.literal()
     if (CloudWatchLogsLogGroupArn != null) __obj.updateDynamic("CloudWatchLogsLogGroupArn")(CloudWatchLogsLogGroupArn.asInstanceOf[js.Any])
     if (CloudWatchLogsRoleArn != null) __obj.updateDynamic("CloudWatchLogsRoleArn")(CloudWatchLogsRoleArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(HasCustomEventSelectors)) __obj.updateDynamic("HasCustomEventSelectors")(HasCustomEventSelectors.asInstanceOf[js.Any])
-    if (!js.isUndefined(HasInsightSelectors)) __obj.updateDynamic("HasInsightSelectors")(HasInsightSelectors.asInstanceOf[js.Any])
+    if (!js.isUndefined(HasCustomEventSelectors)) __obj.updateDynamic("HasCustomEventSelectors")(HasCustomEventSelectors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(HasInsightSelectors)) __obj.updateDynamic("HasInsightSelectors")(HasInsightSelectors.get.asInstanceOf[js.Any])
     if (HomeRegion != null) __obj.updateDynamic("HomeRegion")(HomeRegion.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeGlobalServiceEvents)) __obj.updateDynamic("IncludeGlobalServiceEvents")(IncludeGlobalServiceEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsMultiRegionTrail)) __obj.updateDynamic("IsMultiRegionTrail")(IsMultiRegionTrail.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsOrganizationTrail)) __obj.updateDynamic("IsOrganizationTrail")(IsOrganizationTrail.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeGlobalServiceEvents)) __obj.updateDynamic("IncludeGlobalServiceEvents")(IncludeGlobalServiceEvents.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsMultiRegionTrail)) __obj.updateDynamic("IsMultiRegionTrail")(IsMultiRegionTrail.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsOrganizationTrail)) __obj.updateDynamic("IsOrganizationTrail")(IsOrganizationTrail.get.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (!js.isUndefined(LogFileValidationEnabled)) __obj.updateDynamic("LogFileValidationEnabled")(LogFileValidationEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(LogFileValidationEnabled)) __obj.updateDynamic("LogFileValidationEnabled")(LogFileValidationEnabled.get.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (S3BucketName != null) __obj.updateDynamic("S3BucketName")(S3BucketName.asInstanceOf[js.Any])
     if (S3KeyPrefix != null) __obj.updateDynamic("S3KeyPrefix")(S3KeyPrefix.asInstanceOf[js.Any])

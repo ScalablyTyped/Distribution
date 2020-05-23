@@ -28,13 +28,13 @@ object Standard {
   @scala.inline
   def apply(
     Description: NonEmptyString = null,
-    EnabledByDefault: js.UndefOr[scala.Boolean] = js.undefined,
+    EnabledByDefault: js.UndefOr[Boolean] = js.undefined,
     Name: NonEmptyString = null,
     StandardsArn: NonEmptyString = null
   ): Standard = {
     val __obj = js.Dynamic.literal()
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnabledByDefault)) __obj.updateDynamic("EnabledByDefault")(EnabledByDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnabledByDefault)) __obj.updateDynamic("EnabledByDefault")(EnabledByDefault.get.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (StandardsArn != null) __obj.updateDynamic("StandardsArn")(StandardsArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Standard]

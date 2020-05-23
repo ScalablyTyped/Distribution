@@ -1,6 +1,6 @@
 package typings.antDesignProLayout.defaultSettingsMod
 
-import typings.antDesignProLayout.AnonDefaultOpenAll
+import typings.antDesignProLayout.anon.DefaultOpenAll
 import typings.antDesignProLayout.antDesignProLayoutStrings.realDark
 import typings.antDesignProLayout.antDesignProLayoutStrings.sidemenu
 import typings.antDesignProLayout.antDesignProLayoutStrings.topmenu
@@ -27,7 +27,7 @@ trait Settings extends js.Object {
     * nav menu position: `sidemenu` or `topmenu`
     */
   var layout: sidemenu | topmenu
-  var menu: AnonDefaultOpenAll
+  var menu: DefaultOpenAll
   /**
     * theme for nav menu
     */
@@ -46,14 +46,14 @@ object Settings {
     fixedHeader: Boolean,
     iconfontUrl: String,
     layout: sidemenu | topmenu,
-    menu: AnonDefaultOpenAll,
+    menu: DefaultOpenAll,
     primaryColor: String,
     title: String,
     colorWeak: js.UndefOr[Boolean] = js.undefined,
     navTheme: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any) | realDark = null
   ): Settings = {
     val __obj = js.Dynamic.literal(contentWidth = contentWidth.asInstanceOf[js.Any], fixSiderbar = fixSiderbar.asInstanceOf[js.Any], fixedHeader = fixedHeader.asInstanceOf[js.Any], iconfontUrl = iconfontUrl.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], primaryColor = primaryColor.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorWeak)) __obj.updateDynamic("colorWeak")(colorWeak.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorWeak)) __obj.updateDynamic("colorWeak")(colorWeak.get.asInstanceOf[js.Any])
     if (navTheme != null) __obj.updateDynamic("navTheme")(navTheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }

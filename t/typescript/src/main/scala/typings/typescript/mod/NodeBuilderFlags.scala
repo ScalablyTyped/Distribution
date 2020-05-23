@@ -63,6 +63,9 @@ object NodeBuilderFlags extends js.Object {
   sealed trait NoTruncation extends NodeBuilderFlags
   
   @js.native
+  sealed trait NoTypeReduction extends NodeBuilderFlags
+  
+  @js.native
   sealed trait None extends NodeBuilderFlags
   
   @js.native
@@ -153,6 +156,9 @@ object NodeBuilderFlags extends js.Object {
   
   /* 1 */ @js.native
   object NoTruncation extends TopLevel[NoTruncation with Double]
+  
+  /* 536870912 */ @js.native
+  object NoTypeReduction extends TopLevel[NoTypeReduction with Double]
   
   /* 0 */ @js.native
   object None extends TopLevel[None with Double]

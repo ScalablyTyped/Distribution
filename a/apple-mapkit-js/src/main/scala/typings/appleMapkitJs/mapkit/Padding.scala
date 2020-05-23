@@ -7,41 +7,30 @@ import scala.scalajs.js.annotation._
 /**
   * The values that define content padding within the map view frame.
   */
-@JSGlobal("mapkit.Padding")
-@js.native
-/**
-  * Creates a padding object, and initializes its inset margin properties.
-  *
-  * @param top The amount of padding, in CSS pixels, to inset the map from
-  * the top edge.
-  * @param right The amount of padding, in CSS pixels, to inset the map from
-  * the right edge.
-  * @param bottom The amount of padding, in CSS pixels, to inset the map from
-  * the left edge.
-  * @param left The amount of padding, in CSS pixels, to inset the map from
-  * the left edge.
-  */
-class Padding () extends js.Object {
-  def this(options: PaddingConstructorOptions) = this()
-  def this(top: Double) = this()
-  def this(top: Double, right: Double) = this()
-  def this(top: Double, right: Double, bottom: Double) = this()
-  def this(top: Double, right: Double, bottom: Double, left: Double) = this()
+trait Padding extends js.Object {
   /**
     * The amount of padding, in CSS pixels, to inset the map from the bottom edge.
     */
-  var bottom: Double = js.native
+  var bottom: Double
   /**
     * The amount of padding, in CSS pixels, to inset the map from the left edge.
     */
-  var left: Double = js.native
+  var left: Double
   /**
     * The amount of padding, in CSS pixels, to inset the map from the right edge.
     */
-  var right: Double = js.native
+  var right: Double
   /**
     * The amount of padding, in CSS pixels, to inset the map from the top edge.
     */
-  var top: Double = js.native
+  var top: Double
+}
+
+object Padding {
+  @scala.inline
+  def apply(bottom: Double, left: Double, right: Double, top: Double): Padding = {
+    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Padding]
+  }
 }
 

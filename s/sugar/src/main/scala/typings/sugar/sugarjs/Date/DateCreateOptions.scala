@@ -27,13 +27,13 @@ object DateCreateOptions {
     setUTC: js.UndefOr[Boolean] = js.undefined
   ): DateCreateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone.asInstanceOf[js.Any])
-    if (!js.isUndefined(fromUTC)) __obj.updateDynamic("fromUTC")(fromUTC.asInstanceOf[js.Any])
-    if (!js.isUndefined(future)) __obj.updateDynamic("future")(future.asInstanceOf[js.Any])
+    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fromUTC)) __obj.updateDynamic("fromUTC")(fromUTC.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(future)) __obj.updateDynamic("future")(future.get.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (!js.isUndefined(past)) __obj.updateDynamic("past")(past.asInstanceOf[js.Any])
-    if (!js.isUndefined(setUTC)) __obj.updateDynamic("setUTC")(setUTC.asInstanceOf[js.Any])
+    if (!js.isUndefined(past)) __obj.updateDynamic("past")(past.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setUTC)) __obj.updateDynamic("setUTC")(setUTC.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateCreateOptions]
   }
 }

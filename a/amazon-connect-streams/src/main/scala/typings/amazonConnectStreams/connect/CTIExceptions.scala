@@ -1,6 +1,5 @@
 package typings.amazonConnectStreams.connect
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,38 +39,6 @@ object CTIExceptions extends js.Object {
   
   @js.native
   sealed trait UNAUTHORIZED_EXCEPTION extends CTIExceptions
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[CTIExceptions with String] = js.native
-  /* "AccessDeniedException" */ @js.native
-  object ACCESS_DENIED_EXCEPTION extends TopLevel[ACCESS_DENIED_EXCEPTION with String]
-  
-  /* "BadEndpointException" */ @js.native
-  object BAD_ENDPOINT_EXCEPTION extends TopLevel[BAD_ENDPOINT_EXCEPTION with String]
-  
-  /* "InvalidAgentARNException" */ @js.native
-  object INVALID_AGENT_ARNEXCEPTION extends TopLevel[INVALID_AGENT_ARNEXCEPTION with String]
-  
-  /* "InvalidConfigurationException" */ @js.native
-  object INVALID_CONFIGURATION_EXCEPTION extends TopLevel[INVALID_CONFIGURATION_EXCEPTION with String]
-  
-  /* "InvalidContactTypeException" */ @js.native
-  object INVALID_CONTACT_TYPE_EXCEPTION extends TopLevel[INVALID_CONTACT_TYPE_EXCEPTION with String]
-  
-  /* "InvalidStateException" */ @js.native
-  object INVALID_STATE_EXCEPTION extends TopLevel[INVALID_STATE_EXCEPTION with String]
-  
-  /* "PaginationException" */ @js.native
-  object PAGINATION_EXCEPTION extends TopLevel[PAGINATION_EXCEPTION with String]
-  
-  /* "RefreshTokenExpiredException" */ @js.native
-  object REFRESH_TOKEN_EXPIRED_EXCEPTION extends TopLevel[REFRESH_TOKEN_EXPIRED_EXCEPTION with String]
-  
-  /* "SendDataFailedException" */ @js.native
-  object SEND_DATA_FAILED_EXCEPTION extends TopLevel[SEND_DATA_FAILED_EXCEPTION with String]
-  
-  /* "UnauthorizedException" */ @js.native
-  object UNAUTHORIZED_EXCEPTION extends TopLevel[UNAUTHORIZED_EXCEPTION with String]
   
 }
 

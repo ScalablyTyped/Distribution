@@ -24,16 +24,10 @@ object officeUiFabricReactNumbers {
   sealed trait `100` extends js.Object
   
   @js.native
-  sealed trait `1000` extends js.Object
-  
-  @js.native
   sealed trait `101` extends js.Object
   
   @js.native
   sealed trait `102` extends js.Object
-  
-  @js.native
-  sealed trait `1024` extends js.Object
   
   @js.native
   sealed trait `103` extends js.Object
@@ -105,9 +99,6 @@ object officeUiFabricReactNumbers {
   sealed trait `13` extends DirectionalHint
   
   @js.native
-  sealed trait `1366` extends js.Object
-  
-  @js.native
   sealed trait `144` extends js.Object
   
   @js.native
@@ -147,9 +138,6 @@ object officeUiFabricReactNumbers {
   sealed trait `192` extends js.Object
   
   @js.native
-  sealed trait `1920` extends js.Object
-  
-  @js.native
   sealed trait `2`
     extends DirectionalHint
        with ScrollToMode
@@ -170,9 +158,6 @@ object officeUiFabricReactNumbers {
   sealed trait `222` extends js.Object
   
   @js.native
-  sealed trait `255` extends js.Object
-  
-  @js.native
   sealed trait `27` extends js.Object
   
   @js.native
@@ -184,9 +169,6 @@ object officeUiFabricReactNumbers {
   sealed trait `32` extends js.Object
   
   @js.native
-  sealed trait `320` extends js.Object
-  
-  @js.native
   sealed trait `33` extends js.Object
   
   @js.native
@@ -194,9 +176,6 @@ object officeUiFabricReactNumbers {
   
   @js.native
   sealed trait `35` extends js.Object
-  
-  @js.native
-  sealed trait `359` extends js.Object
   
   @js.native
   sealed trait `36` extends js.Object
@@ -217,9 +196,6 @@ object officeUiFabricReactNumbers {
   sealed trait `40` extends js.Object
   
   @js.native
-  sealed trait `42` extends js.Object
-  
-  @js.native
   sealed trait `45` extends js.Object
   
   @js.native
@@ -227,9 +203,6 @@ object officeUiFabricReactNumbers {
   
   @js.native
   sealed trait `48` extends js.Object
-  
-  @js.native
-  sealed trait `480` extends js.Object
   
   @js.native
   sealed trait `49` extends js.Object
@@ -263,9 +236,6 @@ object officeUiFabricReactNumbers {
   
   @js.native
   sealed trait `6` extends DirectionalHint
-  
-  @js.native
-  sealed trait `640` extends js.Object
   
   @js.native
   sealed trait `65` extends js.Object
@@ -305,9 +275,6 @@ object officeUiFabricReactNumbers {
   
   @js.native
   sealed trait `76` extends js.Object
-  
-  @js.native
-  sealed trait `768` extends js.Object
   
   @js.native
   sealed trait `77` extends js.Object
@@ -387,13 +354,9 @@ object officeUiFabricReactNumbers {
   @scala.inline
   def `100`: `100` = 100.asInstanceOf[`100`]
   @scala.inline
-  def `1000`: `1000` = 1000.asInstanceOf[`1000`]
-  @scala.inline
   def `101`: `101` = 101.asInstanceOf[`101`]
   @scala.inline
   def `102`: `102` = 102.asInstanceOf[`102`]
-  @scala.inline
-  def `1024`: `1024` = 1024.asInstanceOf[`1024`]
   @scala.inline
   def `103`: `103` = 103.asInstanceOf[`103`]
   @scala.inline
@@ -441,8 +404,6 @@ object officeUiFabricReactNumbers {
   @scala.inline
   def `13`: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def `1366`: `1366` = 1366.asInstanceOf[`1366`]
-  @scala.inline
   def `144`: `144` = 144.asInstanceOf[`144`]
   @scala.inline
   def `145`: `145` = 145.asInstanceOf[`145`]
@@ -469,8 +430,6 @@ object officeUiFabricReactNumbers {
   @scala.inline
   def `192`: `192` = 192.asInstanceOf[`192`]
   @scala.inline
-  def `1920`: `1920` = 1920.asInstanceOf[`1920`]
-  @scala.inline
   def `2`: `2` = 2.asInstanceOf[`2`]
   @scala.inline
   def `20`: `20` = 20.asInstanceOf[`20`]
@@ -483,23 +442,17 @@ object officeUiFabricReactNumbers {
   @scala.inline
   def `222`: `222` = 222.asInstanceOf[`222`]
   @scala.inline
-  def `255`: `255` = 255.asInstanceOf[`255`]
-  @scala.inline
   def `27`: `27` = 27.asInstanceOf[`27`]
   @scala.inline
   def `3`: `3` = 3.asInstanceOf[`3`]
   @scala.inline
   def `32`: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def `320`: `320` = 320.asInstanceOf[`320`]
-  @scala.inline
   def `33`: `33` = 33.asInstanceOf[`33`]
   @scala.inline
   def `34`: `34` = 34.asInstanceOf[`34`]
   @scala.inline
   def `35`: `35` = 35.asInstanceOf[`35`]
-  @scala.inline
-  def `359`: `359` = 359.asInstanceOf[`359`]
   @scala.inline
   def `36`: `36` = 36.asInstanceOf[`36`]
   @scala.inline
@@ -513,15 +466,11 @@ object officeUiFabricReactNumbers {
   @scala.inline
   def `40`: `40` = 40.asInstanceOf[`40`]
   @scala.inline
-  def `42`: `42` = 42.asInstanceOf[`42`]
-  @scala.inline
   def `45`: `45` = 45.asInstanceOf[`45`]
   @scala.inline
   def `46`: `46` = 46.asInstanceOf[`46`]
   @scala.inline
   def `48`: `48` = 48.asInstanceOf[`48`]
-  @scala.inline
-  def `480`: `480` = 480.asInstanceOf[`480`]
   @scala.inline
   def `49`: `49` = 49.asInstanceOf[`49`]
   @scala.inline
@@ -544,8 +493,6 @@ object officeUiFabricReactNumbers {
   def `57`: `57` = 57.asInstanceOf[`57`]
   @scala.inline
   def `6`: `6` = 6.asInstanceOf[`6`]
-  @scala.inline
-  def `640`: `640` = 640.asInstanceOf[`640`]
   @scala.inline
   def `65`: `65` = 65.asInstanceOf[`65`]
   @scala.inline
@@ -572,8 +519,6 @@ object officeUiFabricReactNumbers {
   def `75`: `75` = 75.asInstanceOf[`75`]
   @scala.inline
   def `76`: `76` = 76.asInstanceOf[`76`]
-  @scala.inline
-  def `768`: `768` = 768.asInstanceOf[`768`]
   @scala.inline
   def `77`: `77` = 77.asInstanceOf[`77`]
   @scala.inline

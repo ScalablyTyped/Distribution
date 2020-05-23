@@ -4,6 +4,8 @@ import typings.apolloLink.mod.ApolloLink
 import typings.graphql.definitionMod.GraphQLResolveInfo
 import typings.graphqlBinding.distTypesMod.FragmentReplacement
 import typings.graphqlTools.interfacesMod.IResolvers
+import typings.prismaBinding.anon.Debug
+import typings.prismaBinding.anon.TypeDefs
 import typings.prismaBinding.typesMod.PrismaOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +28,7 @@ object mod extends js.Object {
     /* info */ GraphQLResolveInfo, 
     _
   ] = js.native
-  def makePrismaBindingClass[T](hasTypeDefs: AnonTypeDefs): T = js.native
-  def makePrismaLink(hasEndpointTokenDebug: AnonDebug): ApolloLink = js.native
+  def makePrismaBindingClass[T](hasTypeDefs: TypeDefs): T = js.native
+  def makePrismaLink(hasEndpointTokenDebug: Debug): ApolloLink = js.native
 }
 

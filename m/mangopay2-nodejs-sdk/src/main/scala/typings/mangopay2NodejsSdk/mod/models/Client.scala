@@ -1,6 +1,6 @@
 package typings.mangopay2NodejsSdk.mod.models
 
-import typings.mangopay2NodejsSdk.PartialClientData
+import typings.mangopay2NodejsSdk.anon.PartialClientData
 import typings.mangopay2NodejsSdk.mod.address.AddressType
 import typings.mangopay2NodejsSdk.mod.client.ClientData
 import scala.scalajs.js

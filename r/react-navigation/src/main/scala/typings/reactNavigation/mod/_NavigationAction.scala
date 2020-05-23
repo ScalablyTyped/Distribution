@@ -88,11 +88,15 @@ object _NavigationAction {
     __obj.asInstanceOf[_NavigationAction]
   }
   @scala.inline
-  def NavigationBackAction(`type`: NavigationSlashBACK, immediate: js.UndefOr[Boolean] = js.undefined, key: String = null): _NavigationAction = {
+  def NavigationBackAction(
+    `type`: NavigationSlashBACK,
+    immediate: js.UndefOr[Boolean] = js.undefined,
+    key: js.UndefOr[Null | String] = js.undefined
+  ): _NavigationAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[_NavigationAction]
   }
   @scala.inline
@@ -102,19 +106,26 @@ object _NavigationAction {
     __obj.asInstanceOf[_NavigationAction]
   }
   @scala.inline
+  def Type(`type`: CHILD_ACTION, key: String = null): _NavigationAction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    __obj.asInstanceOf[_NavigationAction]
+  }
+  @scala.inline
   def NavigationPopAction(
     `type`: NavigationSlashPOP,
     immediate: js.UndefOr[Boolean] = js.undefined,
     key: String = null,
-    n: Int | Double = null,
+    n: js.UndefOr[Double] = js.undefined,
     prune: js.UndefOr[Boolean] = js.undefined
   ): _NavigationAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.asInstanceOf[js.Any])
+    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (n != null) __obj.updateDynamic("n")(n.asInstanceOf[js.Any])
-    if (!js.isUndefined(prune)) __obj.updateDynamic("prune")(prune.asInstanceOf[js.Any])
+    if (!js.isUndefined(n)) __obj.updateDynamic("n")(n.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(prune)) __obj.updateDynamic("prune")(prune.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[_NavigationAction]
   }
   @scala.inline
@@ -140,14 +151,7 @@ object _NavigationAction {
   ): _NavigationAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_NavigationAction]
-  }
-  @scala.inline
-  def AnonType(`type`: CHILD_ACTION, key: String = null): _NavigationAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[_NavigationAction]
   }
@@ -156,11 +160,11 @@ object _NavigationAction {
     actions: js.Array[NavigationNavigateAction],
     index: Double,
     `type`: NavigationSlashRESET,
-    key: String = null
+    key: js.UndefOr[Null | String] = js.undefined
   ): _NavigationAction = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[_NavigationAction]
   }
   @scala.inline

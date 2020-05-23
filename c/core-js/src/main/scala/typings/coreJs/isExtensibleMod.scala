@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/fn/object/is-extensible", JSImport.Namespace)
 @js.native
 object isExtensibleMod
-  extends TopLevel[js.Function1[/* o */ js.Any, Boolean]]
+  extends TopLevel[js.Function1[/* target */ js.Any, Boolean]]
 

@@ -1,9 +1,9 @@
 package typings.passportAuth0.mod
 
-import typings.passport.AnonFamilyName
-import typings.passport.AnonType
-import typings.passport.AnonValue
-import typings.passportAuth0.AnonMax
+import typings.passport.anon.FamilyName
+import typings.passport.anon.Type
+import typings.passport.anon.Value
+import typings.passportAuth0.anon.Max
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait Profile
   extends typings.passport.mod.Profile {
   var _json: js.Any
   var _raw: String
-  var ageRange: js.UndefOr[AnonMax] = js.undefined
+  var ageRange: js.UndefOr[Max] = js.undefined
   var birthday: String
   var gender: js.UndefOr[String] = js.undefined
   var profileUrl: js.UndefOr[String] = js.undefined
@@ -27,11 +27,11 @@ object Profile {
     displayName: String,
     id: String,
     provider: String,
-    ageRange: AnonMax = null,
-    emails: js.Array[AnonType] = null,
+    ageRange: Max = null,
+    emails: js.Array[Type] = null,
     gender: String = null,
-    name: AnonFamilyName = null,
-    photos: js.Array[AnonValue] = null,
+    name: FamilyName = null,
+    photos: js.Array[Value] = null,
     profileUrl: String = null,
     username: String = null
   ): Profile = {

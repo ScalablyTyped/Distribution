@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +20,11 @@ trait ageUtils extends js.Object {
   def getAgeExpressions(params: ageUtilsGetAgeExpressionsParams): AgeExpressionsResult
 }
 
-@JSGlobal("__esri.ageUtils")
-@js.native
-object ageUtils extends TopLevel[ageUtils]
+object ageUtils {
+  @scala.inline
+  def apply(getAgeExpressions: ageUtilsGetAgeExpressionsParams => AgeExpressionsResult): ageUtils = {
+    val __obj = js.Dynamic.literal(getAgeExpressions = js.Any.fromFunction1(getAgeExpressions))
+    __obj.asInstanceOf[ageUtils]
+  }
+}
 

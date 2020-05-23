@@ -37,9 +37,9 @@ object Options {
     yieldNext: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(followRedirect)) __obj.updateDynamic("followRedirect")(followRedirect.asInstanceOf[js.Any])
+    if (!js.isUndefined(followRedirect)) __obj.updateDynamic("followRedirect")(followRedirect.get.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(jar)) __obj.updateDynamic("jar")(jar.asInstanceOf[js.Any])
+    if (!js.isUndefined(jar)) __obj.updateDynamic("jar")(jar.get.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     if (overrideResponseHeaders != null) __obj.updateDynamic("overrideResponseHeaders")(overrideResponseHeaders.asInstanceOf[js.Any])
@@ -47,7 +47,7 @@ object Options {
     if (suppressRequestHeaders != null) __obj.updateDynamic("suppressRequestHeaders")(suppressRequestHeaders.asInstanceOf[js.Any])
     if (suppressResponseHeaders != null) __obj.updateDynamic("suppressResponseHeaders")(suppressResponseHeaders.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (!js.isUndefined(yieldNext)) __obj.updateDynamic("yieldNext")(yieldNext.asInstanceOf[js.Any])
+    if (!js.isUndefined(yieldNext)) __obj.updateDynamic("yieldNext")(yieldNext.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

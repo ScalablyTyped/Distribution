@@ -18,8 +18,8 @@ object AsObject {
     deprecated: js.UndefOr[Boolean] = js.undefined
   ): AsObject = {
     val __obj = js.Dynamic.literal(uninterpretedOptionList = uninterpretedOptionList.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowAlias)) __obj.updateDynamic("allowAlias")(allowAlias.asInstanceOf[js.Any])
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowAlias)) __obj.updateDynamic("allowAlias")(allowAlias.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

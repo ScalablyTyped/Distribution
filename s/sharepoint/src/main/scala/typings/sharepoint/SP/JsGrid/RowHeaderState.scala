@@ -5,20 +5,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.JsGrid.RowHeaderState")
-@js.native
-class RowHeaderState protected () extends js.Object {
-  def this(
-    id: String,
-    img: Image,
-    priority: RowHeaderStatePriorities,
-    tooltip: String,
-    fnOnClick: js.Function2[/* eventInfo */ DomEvent, /* recordKey */ Double, Unit]
-  ) = this()
-  def GetId(): String = js.native
-  def GetImg(): Image = js.native
-  def GetOnClick(): js.Function2[/* eventInfo */ DomEvent, /* recordKey */ Double, Unit] = js.native
-  def GetPriority(): RowHeaderStatePriorities = js.native
-  def GetTooltip(): String = js.native
+trait RowHeaderState extends js.Object {
+  def GetId(): String
+  def GetImg(): Image
+  def GetOnClick(): js.Function2[/* eventInfo */ DomEvent, /* recordKey */ Double, Unit]
+  def GetPriority(): RowHeaderStatePriorities
+  def GetTooltip(): String
+}
+
+object RowHeaderState {
+  @scala.inline
+  def apply(
+    GetId: () => String,
+    GetImg: () => Image,
+    GetOnClick: () => js.Function2[/* eventInfo */ DomEvent, /* recordKey */ Double, Unit],
+    GetPriority: () => RowHeaderStatePriorities,
+    GetTooltip: () => String
+  ): RowHeaderState = {
+    val __obj = js.Dynamic.literal(GetId = js.Any.fromFunction0(GetId), GetImg = js.Any.fromFunction0(GetImg), GetOnClick = js.Any.fromFunction0(GetOnClick), GetPriority = js.Any.fromFunction0(GetPriority), GetTooltip = js.Any.fromFunction0(GetTooltip))
+    __obj.asInstanceOf[RowHeaderState]
+  }
 }
 

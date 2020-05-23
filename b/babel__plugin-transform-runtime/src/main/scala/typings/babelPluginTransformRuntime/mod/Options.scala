@@ -26,9 +26,9 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (absoluteRuntime != null) __obj.updateDynamic("absoluteRuntime")(absoluteRuntime.asInstanceOf[js.Any])
     if (corejs != null) __obj.updateDynamic("corejs")(corejs.asInstanceOf[js.Any])
-    if (!js.isUndefined(helpers)) __obj.updateDynamic("helpers")(helpers.asInstanceOf[js.Any])
-    if (!js.isUndefined(regenerator)) __obj.updateDynamic("regenerator")(regenerator.asInstanceOf[js.Any])
-    if (!js.isUndefined(useESModules)) __obj.updateDynamic("useESModules")(useESModules.asInstanceOf[js.Any])
+    if (!js.isUndefined(helpers)) __obj.updateDynamic("helpers")(helpers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(regenerator)) __obj.updateDynamic("regenerator")(regenerator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useESModules)) __obj.updateDynamic("useESModules")(useESModules.get.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

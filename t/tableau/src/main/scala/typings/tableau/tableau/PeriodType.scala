@@ -1,6 +1,5 @@
 package typings.tableau.tableau
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,32 +33,6 @@ object PeriodType extends js.Object {
   
   @js.native
   sealed trait YEARS extends PeriodType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[PeriodType with String] = js.native
-  /* "days" */ @js.native
-  object DAYS extends TopLevel[DAYS with String]
-  
-  /* "hours" */ @js.native
-  object HOURS extends TopLevel[HOURS with String]
-  
-  /* "minutes" */ @js.native
-  object MINUTES extends TopLevel[MINUTES with String]
-  
-  /* "months" */ @js.native
-  object MONTHS extends TopLevel[MONTHS with String]
-  
-  /* "quarters" */ @js.native
-  object QUARTERS extends TopLevel[QUARTERS with String]
-  
-  /* "seconds" */ @js.native
-  object SECONDS extends TopLevel[SECONDS with String]
-  
-  /* "weeks" */ @js.native
-  object WEEKS extends TopLevel[WEEKS with String]
-  
-  /* "years" */ @js.native
-  object YEARS extends TopLevel[YEARS with String]
   
 }
 

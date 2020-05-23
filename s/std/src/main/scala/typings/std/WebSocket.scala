@@ -1,9 +1,9 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
+import typings.std.stdStrings.close
 import typings.std.stdStrings.error
 import typings.std.stdStrings.message
+import typings.std.stdStrings.open
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,9 +32,9 @@ trait WebSocket extends EventTarget {
     */
   val extensions: java.lang.String = js.native
   var onclose: (js.ThisFunction1[/* this */ this.type, /* ev */ CloseEvent, _]) | Null = js.native
-  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
+  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onmessage: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]) | Null = js.native
-  var onopen: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
+  var onopen: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   /**
     * Returns the subprotocol selected by the server, if any. It can be used in conjunction with the array form of the constructor's second argument to perform subprotocol negotiation.
     */
@@ -48,34 +48,31 @@ trait WebSocket extends EventTarget {
     */
   val url: java.lang.String = js.native
   @JSName("addEventListener")
-  def addEventListener_close(
-    `type`: typings.std.stdStrings.close,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ CloseEvent, _]
-  ): Unit = js.native
+  def addEventListener_close(`type`: close, listener: js.ThisFunction1[/* this */ this.type, /* ev */ CloseEvent, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_close(
-    `type`: typings.std.stdStrings.close,
+    `type`: close,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ CloseEvent, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_close(
-    `type`: typings.std.stdStrings.close,
+    `type`: close,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ CloseEvent, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
+  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -93,20 +90,17 @@ trait WebSocket extends EventTarget {
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_open(
-    `type`: typings.std.stdStrings.open,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]
-  ): Unit = js.native
+  def addEventListener_open(`type`: open, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_open(
-    `type`: typings.std.stdStrings.open,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    `type`: open,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_open(
-    `type`: typings.std.stdStrings.open,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    `type`: open,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   /**
@@ -116,34 +110,31 @@ trait WebSocket extends EventTarget {
   def close(code: Double): Unit = js.native
   def close(code: Double, reason: java.lang.String): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_close(
-    `type`: typings.std.stdStrings.close,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ CloseEvent, _]
-  ): Unit = js.native
+  def removeEventListener_close(`type`: close, listener: js.ThisFunction1[/* this */ this.type, /* ev */ CloseEvent, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_close(
-    `type`: typings.std.stdStrings.close,
+    `type`: close,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ CloseEvent, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_close(
-    `type`: typings.std.stdStrings.close,
+    `type`: close,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ CloseEvent, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
+  def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
@@ -161,20 +152,17 @@ trait WebSocket extends EventTarget {
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_open(
-    `type`: typings.std.stdStrings.open,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]
-  ): Unit = js.native
+  def removeEventListener_open(`type`: open, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_open(
-    `type`: typings.std.stdStrings.open,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    `type`: open,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_open(
-    `type`: typings.std.stdStrings.open,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    `type`: open,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   /**
@@ -184,20 +172,5 @@ trait WebSocket extends EventTarget {
   def send(data: ArrayBufferLike): Unit = js.native
   def send(data: ArrayBufferView): Unit = js.native
   def send(data: Blob): Unit = js.native
-}
-
-@JSGlobal("WebSocket")
-@js.native
-object WebSocket
-  extends Instantiable1[/* url */ java.lang.String, WebSocket]
-     with Instantiable2[
-      /* url */ java.lang.String, 
-      (/* protocols */ js.Array[java.lang.String]) | (/* protocols */ java.lang.String), 
-      WebSocket
-    ] {
-  val CLOSED: Double = js.native
-  val CLOSING: Double = js.native
-  val CONNECTING: Double = js.native
-  val OPEN: Double = js.native
 }
 

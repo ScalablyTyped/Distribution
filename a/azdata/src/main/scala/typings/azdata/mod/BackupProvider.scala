@@ -17,10 +17,10 @@ object BackupProvider {
     backup: (String, StringDictionary[js.Any], TaskExecutionMode) => Thenable[BackupResponse],
     getBackupConfigInfo: String => Thenable[BackupConfigInfo],
     providerId: String,
-    handle: Int | Double = null
+    handle: js.UndefOr[Double] = js.undefined
   ): BackupProvider = {
     val __obj = js.Dynamic.literal(backup = js.Any.fromFunction3(backup), getBackupConfigInfo = js.Any.fromFunction1(getBackupConfigInfo), providerId = providerId.asInstanceOf[js.Any])
-    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
+    if (!js.isUndefined(handle)) __obj.updateDynamic("handle")(handle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackupProvider]
   }
 }

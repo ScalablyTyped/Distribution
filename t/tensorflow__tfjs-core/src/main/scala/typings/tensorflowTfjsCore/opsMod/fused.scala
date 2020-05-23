@@ -1,7 +1,7 @@
 package typings.tensorflowTfjsCore.opsMod
 
-import typings.tensorflowTfjsCore.AnonA
-import typings.tensorflowTfjsCore.AnonActivation
+import typings.tensorflowTfjsCore.anon.A
+import typings.tensorflowTfjsCore.anon.Activation
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsCore.tensorMod.Tensor3D
@@ -16,20 +16,20 @@ object fused extends js.Object {
   @js.native
   object conv2d extends js.Object {
     def apply[T /* <: Tensor3D | Tensor4D */](
-      hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeights: AnonActivation[T]
+      hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeights: Activation[T]
     ): T = js.native
   }
   
   @js.native
   object depthwiseConv2d extends js.Object {
     def apply[T /* <: Tensor3D | Tensor4D */](
-      hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeights: AnonActivation[T]
+      hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeights: Activation[T]
     ): T = js.native
   }
   
   @js.native
   object matMul extends js.Object {
-    def apply[T /* <: Tensor[Rank] */](hasABTransposeATransposeBBiasActivationPreluActivationWeights: AnonA[T]): T = js.native
+    def apply[T /* <: Tensor[Rank] */](hasABTransposeATransposeBBiasActivationPreluActivationWeights: A[T]): T = js.native
   }
   
 }

@@ -14,10 +14,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("cast.framework.CastSession")
 @js.native
-class CastSession protected () extends js.Object {
-  def this(sessionObj: Session, state: SessionState) = this()
+trait CastSession extends js.Object {
   def addEventListener(
     `type`: ACTIVE_INPUT_STATE_CHANGED,
     handler: js.Function1[/* event */ ActiveInputStateEventData, Unit]

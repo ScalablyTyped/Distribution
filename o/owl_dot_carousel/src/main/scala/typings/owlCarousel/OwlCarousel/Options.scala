@@ -107,7 +107,7 @@ object Options {
     autoplay: js.UndefOr[Boolean] = js.undefined,
     autoplayHoverPause: js.UndefOr[Boolean] = js.undefined,
     autoplaySpeed: Double | Boolean = null,
-    autoplayTimeout: Int | Double = null,
+    autoplayTimeout: js.UndefOr[Double] = js.undefined,
     callbacks: js.UndefOr[Boolean] = js.undefined,
     center: js.UndefOr[Boolean] = js.undefined,
     checkVisible: js.UndefOr[Boolean] = js.undefined,
@@ -127,13 +127,13 @@ object Options {
     grabClass: String = null,
     info: /* repeated */ js.Any => Unit = null,
     itemElement: String = null,
-    items: Int | Double = null,
+    items: js.UndefOr[Double] = js.undefined,
     lazyLoad: js.UndefOr[Boolean] = js.undefined,
-    lazyLoadEager: Int | Double = null,
+    lazyLoadEager: js.UndefOr[Double] = js.undefined,
     loadedClass: String = null,
     loadingClass: String = null,
     loop: js.UndefOr[Boolean] = js.undefined,
-    margin: Int | Double = null,
+    margin: js.UndefOr[Double] = js.undefined,
     merge: js.UndefOr[Boolean] = js.undefined,
     mergeFit: js.UndefOr[Boolean] = js.undefined,
     mouseDrag: js.UndefOr[Boolean] = js.undefined,
@@ -166,7 +166,7 @@ object Options {
     responsive: StringDictionary[Options] = null,
     responsiveBaseElement: Element = null,
     responsiveClass: String | Boolean = null,
-    responsiveRefreshRate: Int | Double = null,
+    responsiveRefreshRate: js.UndefOr[Double] = js.undefined,
     rewind: js.UndefOr[Boolean] = js.undefined,
     rtlClass: String = null,
     slideBy: Double | String = null,
@@ -175,7 +175,7 @@ object Options {
     stageClass: String = null,
     stageElement: String = null,
     stageOuterClass: String = null,
-    stagePadding: Int | Double = null,
+    stagePadding: js.UndefOr[Double] = js.undefined,
     startPosition: Double | String = null,
     touchDrag: js.UndefOr[Boolean] = js.undefined,
     video: js.UndefOr[Boolean] = js.undefined,
@@ -183,46 +183,46 @@ object Options {
     videoWidth: Double | Boolean = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(URLhashListener)) __obj.updateDynamic("URLhashListener")(URLhashListener.asInstanceOf[js.Any])
+    if (!js.isUndefined(URLhashListener)) __obj.updateDynamic("URLhashListener")(URLhashListener.get.asInstanceOf[js.Any])
     if (animateIn != null) __obj.updateDynamic("animateIn")(animateIn.asInstanceOf[js.Any])
     if (animateOut != null) __obj.updateDynamic("animateOut")(animateOut.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight.get.asInstanceOf[js.Any])
     if (autoHeightClass != null) __obj.updateDynamic("autoHeightClass")(autoHeightClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplayHoverPause)) __obj.updateDynamic("autoplayHoverPause")(autoplayHoverPause.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoplayHoverPause)) __obj.updateDynamic("autoplayHoverPause")(autoplayHoverPause.get.asInstanceOf[js.Any])
     if (autoplaySpeed != null) __obj.updateDynamic("autoplaySpeed")(autoplaySpeed.asInstanceOf[js.Any])
-    if (autoplayTimeout != null) __obj.updateDynamic("autoplayTimeout")(autoplayTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(callbacks)) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
-    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (!js.isUndefined(checkVisible)) __obj.updateDynamic("checkVisible")(checkVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoplayTimeout)) __obj.updateDynamic("autoplayTimeout")(autoplayTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(callbacks)) __obj.updateDynamic("callbacks")(callbacks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkVisible)) __obj.updateDynamic("checkVisible")(checkVisible.get.asInstanceOf[js.Any])
     if (controlsClass != null) __obj.updateDynamic("controlsClass")(controlsClass.asInstanceOf[js.Any])
     if (dotClass != null) __obj.updateDynamic("dotClass")(dotClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(dots)) __obj.updateDynamic("dots")(dots.asInstanceOf[js.Any])
+    if (!js.isUndefined(dots)) __obj.updateDynamic("dots")(dots.get.asInstanceOf[js.Any])
     if (dotsClass != null) __obj.updateDynamic("dotsClass")(dotsClass.asInstanceOf[js.Any])
     if (dotsContainer != null) __obj.updateDynamic("dotsContainer")(dotsContainer.asInstanceOf[js.Any])
-    if (!js.isUndefined(dotsData)) __obj.updateDynamic("dotsData")(dotsData.asInstanceOf[js.Any])
+    if (!js.isUndefined(dotsData)) __obj.updateDynamic("dotsData")(dotsData.get.asInstanceOf[js.Any])
     if (dotsEach != null) __obj.updateDynamic("dotsEach")(dotsEach.asInstanceOf[js.Any])
     if (dotsSpeed != null) __obj.updateDynamic("dotsSpeed")(dotsSpeed.asInstanceOf[js.Any])
     if (dragClass != null) __obj.updateDynamic("dragClass")(dragClass.asInstanceOf[js.Any])
     if (dragEndSpeed != null) __obj.updateDynamic("dragEndSpeed")(dragEndSpeed.asInstanceOf[js.Any])
     if (fallbackEasing != null) __obj.updateDynamic("fallbackEasing")(fallbackEasing.asInstanceOf[js.Any])
     if (fluidSpeed != null) __obj.updateDynamic("fluidSpeed")(fluidSpeed.asInstanceOf[js.Any])
-    if (!js.isUndefined(freeDrag)) __obj.updateDynamic("freeDrag")(freeDrag.asInstanceOf[js.Any])
+    if (!js.isUndefined(freeDrag)) __obj.updateDynamic("freeDrag")(freeDrag.get.asInstanceOf[js.Any])
     if (grabClass != null) __obj.updateDynamic("grabClass")(grabClass.asInstanceOf[js.Any])
     if (info != null) __obj.updateDynamic("info")(js.Any.fromFunction1(info))
     if (itemElement != null) __obj.updateDynamic("itemElement")(itemElement.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (!js.isUndefined(lazyLoad)) __obj.updateDynamic("lazyLoad")(lazyLoad.asInstanceOf[js.Any])
-    if (lazyLoadEager != null) __obj.updateDynamic("lazyLoadEager")(lazyLoadEager.asInstanceOf[js.Any])
+    if (!js.isUndefined(items)) __obj.updateDynamic("items")(items.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lazyLoad)) __obj.updateDynamic("lazyLoad")(lazyLoad.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lazyLoadEager)) __obj.updateDynamic("lazyLoadEager")(lazyLoadEager.get.asInstanceOf[js.Any])
     if (loadedClass != null) __obj.updateDynamic("loadedClass")(loadedClass.asInstanceOf[js.Any])
     if (loadingClass != null) __obj.updateDynamic("loadingClass")(loadingClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (!js.isUndefined(merge)) __obj.updateDynamic("merge")(merge.asInstanceOf[js.Any])
-    if (!js.isUndefined(mergeFit)) __obj.updateDynamic("mergeFit")(mergeFit.asInstanceOf[js.Any])
-    if (!js.isUndefined(mouseDrag)) __obj.updateDynamic("mouseDrag")(mouseDrag.asInstanceOf[js.Any])
-    if (!js.isUndefined(nav)) __obj.updateDynamic("nav")(nav.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(merge)) __obj.updateDynamic("merge")(merge.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mergeFit)) __obj.updateDynamic("mergeFit")(mergeFit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mouseDrag)) __obj.updateDynamic("mouseDrag")(mouseDrag.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nav)) __obj.updateDynamic("nav")(nav.get.asInstanceOf[js.Any])
     if (navClass != null) __obj.updateDynamic("navClass")(navClass.asInstanceOf[js.Any])
     if (navContainer != null) __obj.updateDynamic("navContainer")(navContainer.asInstanceOf[js.Any])
     if (navContainerClass != null) __obj.updateDynamic("navContainerClass")(navContainerClass.asInstanceOf[js.Any])
@@ -246,13 +246,13 @@ object Options {
     if (onStopVideo != null) __obj.updateDynamic("onStopVideo")(js.Any.fromFunction1(onStopVideo))
     if (onTranslate != null) __obj.updateDynamic("onTranslate")(js.Any.fromFunction1(onTranslate))
     if (onTranslated != null) __obj.updateDynamic("onTranslated")(js.Any.fromFunction1(onTranslated))
-    if (!js.isUndefined(pullDrag)) __obj.updateDynamic("pullDrag")(pullDrag.asInstanceOf[js.Any])
+    if (!js.isUndefined(pullDrag)) __obj.updateDynamic("pullDrag")(pullDrag.get.asInstanceOf[js.Any])
     if (refreshClass != null) __obj.updateDynamic("refreshClass")(refreshClass.asInstanceOf[js.Any])
     if (responsive != null) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
     if (responsiveBaseElement != null) __obj.updateDynamic("responsiveBaseElement")(responsiveBaseElement.asInstanceOf[js.Any])
     if (responsiveClass != null) __obj.updateDynamic("responsiveClass")(responsiveClass.asInstanceOf[js.Any])
-    if (responsiveRefreshRate != null) __obj.updateDynamic("responsiveRefreshRate")(responsiveRefreshRate.asInstanceOf[js.Any])
-    if (!js.isUndefined(rewind)) __obj.updateDynamic("rewind")(rewind.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsiveRefreshRate)) __obj.updateDynamic("responsiveRefreshRate")(responsiveRefreshRate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rewind)) __obj.updateDynamic("rewind")(rewind.get.asInstanceOf[js.Any])
     if (rtlClass != null) __obj.updateDynamic("rtlClass")(rtlClass.asInstanceOf[js.Any])
     if (slideBy != null) __obj.updateDynamic("slideBy")(slideBy.asInstanceOf[js.Any])
     if (slideTransition != null) __obj.updateDynamic("slideTransition")(slideTransition.asInstanceOf[js.Any])
@@ -260,10 +260,10 @@ object Options {
     if (stageClass != null) __obj.updateDynamic("stageClass")(stageClass.asInstanceOf[js.Any])
     if (stageElement != null) __obj.updateDynamic("stageElement")(stageElement.asInstanceOf[js.Any])
     if (stageOuterClass != null) __obj.updateDynamic("stageOuterClass")(stageOuterClass.asInstanceOf[js.Any])
-    if (stagePadding != null) __obj.updateDynamic("stagePadding")(stagePadding.asInstanceOf[js.Any])
+    if (!js.isUndefined(stagePadding)) __obj.updateDynamic("stagePadding")(stagePadding.get.asInstanceOf[js.Any])
     if (startPosition != null) __obj.updateDynamic("startPosition")(startPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchDrag)) __obj.updateDynamic("touchDrag")(touchDrag.asInstanceOf[js.Any])
-    if (!js.isUndefined(video)) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchDrag)) __obj.updateDynamic("touchDrag")(touchDrag.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(video)) __obj.updateDynamic("video")(video.get.asInstanceOf[js.Any])
     if (videoHeight != null) __obj.updateDynamic("videoHeight")(videoHeight.asInstanceOf[js.Any])
     if (videoWidth != null) __obj.updateDynamic("videoWidth")(videoWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

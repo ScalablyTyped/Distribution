@@ -56,11 +56,11 @@ object PivotFieldLoadOptions {
     subtotals: js.UndefOr[Boolean] = js.undefined
   ): PivotFieldLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAllItems)) __obj.updateDynamic("showAllItems")(showAllItems.asInstanceOf[js.Any])
-    if (!js.isUndefined(subtotals)) __obj.updateDynamic("subtotals")(subtotals.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAllItems)) __obj.updateDynamic("showAllItems")(showAllItems.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(subtotals)) __obj.updateDynamic("subtotals")(subtotals.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotFieldLoadOptions]
   }
 }

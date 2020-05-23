@@ -1,6 +1,5 @@
 package typings.chrome.chrome.cast.media
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,23 +24,6 @@ object TextTrackType extends js.Object {
   
   @js.native
   sealed trait SUBTITLES extends TextTrackType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[TextTrackType with String] = js.native
-  /* "CAPTIONS" */ @js.native
-  object CAPTIONS extends TopLevel[CAPTIONS with String]
-  
-  /* "CHAPTERS" */ @js.native
-  object CHAPTERS extends TopLevel[CHAPTERS with String]
-  
-  /* "DESCRIPTIONS" */ @js.native
-  object DESCRIPTIONS extends TopLevel[DESCRIPTIONS with String]
-  
-  /* "METADATA" */ @js.native
-  object METADATA extends TopLevel[METADATA with String]
-  
-  /* "SUBTITLES" */ @js.native
-  object SUBTITLES extends TopLevel[SUBTITLES with String]
   
 }
 

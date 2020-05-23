@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.ChartFontData
 import typings.officeJs.Excel.Interfaces.ChartFontLoadOptions
 import typings.officeJs.Excel.Interfaces.ChartFontUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.None
 import typings.officeJs.officeJsStrings.Single
 import scala.scalajs.js
@@ -18,9 +18,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
-@JSGlobal("Excel.ChartFont")
 @js.native
-class ChartFont () extends ClientObject {
+trait ChartFont extends ClientObject {
   /**
     *
     * Represents the bold status of font.
@@ -30,7 +29,7 @@ class ChartFont () extends ClientObject {
   var bold: Boolean = js.native
   /**
     *
-    * HTML color code representation of the text color. E.g. #FF0000 represents Red.
+    * HTML color code representation of the text color (e.g., #FF0000 represents Red).
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -47,14 +46,14 @@ class ChartFont () extends ClientObject {
   var italic: Boolean = js.native
   /**
     *
-    * Font name (e.g. "Calibri")
+    * Font name (e.g., "Calibri")
     *
     * [Api set: ExcelApi 1.1]
     */
   var name: String = js.native
   /**
     *
-    * Size of the font (e.g. 11)
+    * Size of the font (e.g., 11)
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -73,7 +72,7 @@ class ChartFont () extends ClientObject {
     */
   def load(): ChartFont = js.native
   def load(options: ChartFontLoadOptions): ChartFont = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ChartFont = js.native
+  def load(propertyNamesAndPaths: Expand): ChartFont = js.native
   def load(propertyNames: String): ChartFont = js.native
   def load(propertyNames: js.Array[String]): ChartFont = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

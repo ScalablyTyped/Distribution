@@ -11,9 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides access to the music-related properties of an item (like a file or folder). */
-@JSGlobal("Windows.Storage.FileProperties.MusicProperties")
 @js.native
-abstract class MusicProperties () extends js.Object {
+trait MusicProperties extends js.Object {
   /** Gets or sets the name of the album that contains the song. */
   var album: String = js.native
   /** Gets or sets the name of the album artist of the song. */

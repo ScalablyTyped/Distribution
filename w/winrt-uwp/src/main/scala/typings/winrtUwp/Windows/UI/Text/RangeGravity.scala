@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.Text
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object RangeGravity extends js.Object {
   /** Use selection user interface rules. */
   @js.native
   sealed trait uiBehavior extends RangeGravity
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RangeGravity with Double] = js.native
-  /* 1 */ @js.native
-  object backward extends TopLevel[backward with Double]
-  
-  /* 2 */ @js.native
-  object forward extends TopLevel[forward with Double]
-  
-  /* 3 */ @js.native
-  object inward extends TopLevel[inward with Double]
-  
-  /* 4 */ @js.native
-  object outward extends TopLevel[outward with Double]
-  
-  /* 0 */ @js.native
-  object uiBehavior extends TopLevel[uiBehavior with Double]
   
 }
 

@@ -15,18 +15,18 @@ trait Credentials extends js.Object {
 object Credentials {
   @scala.inline
   def apply(
-    access_token: String = null,
-    expiry_date: Int | Double = null,
-    id_token: String = null,
-    refresh_token: String = null,
-    token_type: String = null
+    access_token: js.UndefOr[Null | String] = js.undefined,
+    expiry_date: js.UndefOr[Null | Double] = js.undefined,
+    id_token: js.UndefOr[Null | String] = js.undefined,
+    refresh_token: js.UndefOr[Null | String] = js.undefined,
+    token_type: js.UndefOr[Null | String] = js.undefined
   ): Credentials = {
     val __obj = js.Dynamic.literal()
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
-    if (expiry_date != null) __obj.updateDynamic("expiry_date")(expiry_date.asInstanceOf[js.Any])
-    if (id_token != null) __obj.updateDynamic("id_token")(id_token.asInstanceOf[js.Any])
-    if (refresh_token != null) __obj.updateDynamic("refresh_token")(refresh_token.asInstanceOf[js.Any])
-    if (token_type != null) __obj.updateDynamic("token_type")(token_type.asInstanceOf[js.Any])
+    if (!js.isUndefined(access_token)) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
+    if (!js.isUndefined(expiry_date)) __obj.updateDynamic("expiry_date")(expiry_date.asInstanceOf[js.Any])
+    if (!js.isUndefined(id_token)) __obj.updateDynamic("id_token")(id_token.asInstanceOf[js.Any])
+    if (!js.isUndefined(refresh_token)) __obj.updateDynamic("refresh_token")(refresh_token.asInstanceOf[js.Any])
+    if (!js.isUndefined(token_type)) __obj.updateDynamic("token_type")(token_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Credentials]
   }
 }

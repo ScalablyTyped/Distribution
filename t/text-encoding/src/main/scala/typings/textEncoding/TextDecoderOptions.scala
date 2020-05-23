@@ -12,7 +12,7 @@ object TextDecoderOptions {
   @scala.inline
   def apply(stream: js.UndefOr[Boolean] = js.undefined): TextDecoderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(stream)) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
+    if (!js.isUndefined(stream)) __obj.updateDynamic("stream")(stream.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextDecoderOptions]
   }
 }

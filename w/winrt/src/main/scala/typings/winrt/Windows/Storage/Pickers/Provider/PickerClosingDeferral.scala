@@ -4,10 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Storage.Pickers.Provider.PickerClosingDeferral")
-@js.native
-class PickerClosingDeferral () extends IPickerClosingDeferral {
-  /* CompleteClass */
-  override def complete(): Unit = js.native
+trait PickerClosingDeferral extends IPickerClosingDeferral
+
+object PickerClosingDeferral {
+  @scala.inline
+  def apply(complete: () => Unit): PickerClosingDeferral = {
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
+    __obj.asInstanceOf[PickerClosingDeferral]
+  }
 }
 

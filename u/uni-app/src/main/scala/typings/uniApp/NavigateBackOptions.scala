@@ -44,14 +44,14 @@ trait NavigateBackOptions extends js.Object {
 object NavigateBackOptions {
   @scala.inline
   def apply(
-    animationDuration: Int | Double = null,
+    animationDuration: js.UndefOr[Double] = js.undefined,
     animationType: auto | none | `slide-out-right` | `slide-out-left` | `slide-out-top` | `slide-out-bottom` | `fade-out` | `zoom-in` | `zoom-fade-in` | `pop-out` = null,
-    delta: Int | Double = null
+    delta: js.UndefOr[Double] = js.undefined
   ): NavigateBackOptions = {
     val __obj = js.Dynamic.literal()
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
     if (animationType != null) __obj.updateDynamic("animationType")(animationType.asInstanceOf[js.Any])
-    if (delta != null) __obj.updateDynamic("delta")(delta.asInstanceOf[js.Any])
+    if (!js.isUndefined(delta)) __obj.updateDynamic("delta")(delta.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigateBackOptions]
   }
 }

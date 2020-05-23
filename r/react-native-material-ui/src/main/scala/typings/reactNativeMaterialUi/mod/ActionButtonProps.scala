@@ -1,8 +1,7 @@
 package typings.reactNativeMaterialUi.mod
 
-import typings.react.mod._Global_.JSX.Element
-import typings.reactNativeMaterialUi.AnonContainer
-import typings.reactNativeMaterialUi.AnonIcon
+import typings.react.mod.global.JSX.Element
+import typings.reactNativeMaterialUi.anon.Container
 import typings.reactNativeMaterialUi.reactNativeMaterialUiStrings.speedDial
 import typings.reactNativeMaterialUi.reactNativeMaterialUiStrings.toolbar
 import scala.scalajs.js
@@ -10,29 +9,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ActionButtonProps extends js.Object {
-  var actions: js.UndefOr[js.Array[AnonIcon | Element | String]] = js.undefined
+  var actions: js.UndefOr[js.Array[Element | typings.reactNativeMaterialUi.anon.Icon | String]] = js.undefined
   var hidden: js.UndefOr[Boolean] = js.undefined
   var icon: js.UndefOr[String] = js.undefined
   var onLongPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var style: js.UndefOr[AnonContainer] = js.undefined
+  var style: js.UndefOr[Container] = js.undefined
   var transition: js.UndefOr[toolbar | speedDial] = js.undefined
 }
 
 object ActionButtonProps {
   @scala.inline
   def apply(
-    actions: js.Array[AnonIcon | Element | String] = null,
+    actions: js.Array[Element | typings.reactNativeMaterialUi.anon.Icon | String] = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     icon: String = null,
     onLongPress: () => Unit = null,
     onPress: () => Unit = null,
-    style: AnonContainer = null,
+    style: Container = null,
     transition: toolbar | speedDial = null
   ): ActionButtonProps = {
     val __obj = js.Dynamic.literal()
     if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction0(onLongPress))
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))

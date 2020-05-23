@@ -15,18 +15,18 @@ trait AudioOptions extends js.Object {
 object AudioOptions {
   @scala.inline
   def apply(
-    channelCount: Int | Double = null,
-    deviceId: Int | Double = null,
-    maxQueue: Int | Double = null,
-    sampleFormat: Int | Double = null,
-    sampleRate: Int | Double = null
+    channelCount: js.UndefOr[Double] = js.undefined,
+    deviceId: js.UndefOr[Double] = js.undefined,
+    maxQueue: js.UndefOr[Double] = js.undefined,
+    sampleFormat: js.UndefOr[Double] = js.undefined,
+    sampleRate: js.UndefOr[Double] = js.undefined
   ): AudioOptions = {
     val __obj = js.Dynamic.literal()
-    if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
-    if (maxQueue != null) __obj.updateDynamic("maxQueue")(maxQueue.asInstanceOf[js.Any])
-    if (sampleFormat != null) __obj.updateDynamic("sampleFormat")(sampleFormat.asInstanceOf[js.Any])
-    if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(channelCount)) __obj.updateDynamic("channelCount")(channelCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deviceId)) __obj.updateDynamic("deviceId")(deviceId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxQueue)) __obj.updateDynamic("maxQueue")(maxQueue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampleFormat)) __obj.updateDynamic("sampleFormat")(sampleFormat.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampleRate)) __obj.updateDynamic("sampleRate")(sampleRate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioOptions]
   }
 }

@@ -5,24 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * Interface of one file object
-	 */
+  * Interface of one file object
+  */
 trait FileObject extends js.Object {
   /**
-  		 * Contents of the file.
-  		 */
+    * Contents of the file.
+    */
   var fileContent: String
   /**
-  		 * Name of the file.
-  		 */
+    * Name of the file.
+    */
   var fileName: String
   /**
-  		 * Size of the file in KB.
-  		 */
+    * Size of the file in KB.
+    */
   var fileSize: Double
   /**
-  		 * File MIME type.
-  		 */
+    * File MIME type.
+    */
   var mimeType: String
 }
 

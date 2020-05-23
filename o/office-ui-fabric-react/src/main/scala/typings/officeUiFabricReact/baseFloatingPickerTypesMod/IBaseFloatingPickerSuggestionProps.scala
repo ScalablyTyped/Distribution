@@ -25,7 +25,7 @@ object IBaseFloatingPickerSuggestionProps {
     if (footerItemsProps != null) __obj.updateDynamic("footerItemsProps")(footerItemsProps.asInstanceOf[js.Any])
     if (headerItemsProps != null) __obj.updateDynamic("headerItemsProps")(headerItemsProps.asInstanceOf[js.Any])
     if (shouldSelectFirstItem != null) __obj.updateDynamic("shouldSelectFirstItem")(js.Any.fromFunction0(shouldSelectFirstItem))
-    if (!js.isUndefined(showRemoveButtons)) __obj.updateDynamic("showRemoveButtons")(showRemoveButtons.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRemoveButtons)) __obj.updateDynamic("showRemoveButtons")(showRemoveButtons.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBaseFloatingPickerSuggestionProps]
   }
 }

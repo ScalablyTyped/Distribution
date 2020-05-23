@@ -23,19 +23,19 @@ object TiffOptions {
     compression: String = null,
     force: js.UndefOr[Boolean] = js.undefined,
     predictor: String = null,
-    quality: Int | Double = null,
+    quality: js.UndefOr[Double] = js.undefined,
     squash: js.UndefOr[Boolean] = js.undefined,
-    xres: Int | Double = null,
-    yres: Int | Double = null
+    xres: js.UndefOr[Double] = js.undefined,
+    yres: js.UndefOr[Double] = js.undefined
   ): TiffOptions = {
     val __obj = js.Dynamic.literal()
     if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
     if (predictor != null) __obj.updateDynamic("predictor")(predictor.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (!js.isUndefined(squash)) __obj.updateDynamic("squash")(squash.asInstanceOf[js.Any])
-    if (xres != null) __obj.updateDynamic("xres")(xres.asInstanceOf[js.Any])
-    if (yres != null) __obj.updateDynamic("yres")(yres.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(squash)) __obj.updateDynamic("squash")(squash.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xres)) __obj.updateDynamic("xres")(xres.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yres)) __obj.updateDynamic("yres")(yres.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TiffOptions]
   }
 }

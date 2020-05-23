@@ -57,7 +57,7 @@ object IComponent {
     if (EXPRESS_INSTALL_URL != null) __obj.updateDynamic("EXPRESS_INSTALL_URL")(EXPRESS_INSTALL_URL.asInstanceOf[js.Any])
     if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(expressInstall)) __obj.updateDynamic("expressInstall")(expressInstall.asInstanceOf[js.Any])
+    if (!js.isUndefined(expressInstall)) __obj.updateDynamic("expressInstall")(expressInstall.get.asInstanceOf[js.Any])
     if (flashAttributes != null) __obj.updateDynamic("flashAttributes")(flashAttributes.asInstanceOf[js.Any])
     if (flashParams != null) __obj.updateDynamic("flashParams")(flashParams.asInstanceOf[js.Any])
     if (flashVars != null) __obj.updateDynamic("flashVars")(flashVars.asInstanceOf[js.Any])

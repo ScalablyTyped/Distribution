@@ -20,7 +20,7 @@ package object mod {
   /* Rewritten from type alias, can be one of: 
     - typings.vscode.mod.MarkdownString
     - java.lang.String
-    - typings.vscode.AnonLanguage
+    - typings.vscode.anon.Language
   */
   type MarkedString = typings.vscode.mod._MarkedString | java.lang.String
   type ProviderResult[T] = js.UndefOr[T | scala.Null | (typings.vscode.Thenable[js.UndefOr[T | scala.Null]])]

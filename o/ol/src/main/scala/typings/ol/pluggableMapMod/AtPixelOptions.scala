@@ -19,12 +19,12 @@ object AtPixelOptions {
   @scala.inline
   def apply(
     checkWrapped: js.UndefOr[Boolean] = js.undefined,
-    hitTolerance: Int | Double = null,
+    hitTolerance: js.UndefOr[Double] = js.undefined,
     layerFilter: /* p0 */ typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default] => Boolean = null
   ): AtPixelOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkWrapped)) __obj.updateDynamic("checkWrapped")(checkWrapped.asInstanceOf[js.Any])
-    if (hitTolerance != null) __obj.updateDynamic("hitTolerance")(hitTolerance.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkWrapped)) __obj.updateDynamic("checkWrapped")(checkWrapped.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hitTolerance)) __obj.updateDynamic("hitTolerance")(hitTolerance.get.asInstanceOf[js.Any])
     if (layerFilter != null) __obj.updateDynamic("layerFilter")(js.Any.fromFunction1(layerFilter))
     __obj.asInstanceOf[AtPixelOptions]
   }

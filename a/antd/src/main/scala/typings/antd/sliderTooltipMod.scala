@@ -1,7 +1,9 @@
 package typings.antd
 
-import typings.antd.tooltipMod.TooltipProps
-import typings.react.mod._Global_.JSX.Element
+import typings.antd.tooltipMod.TooltipPropsWithOverlay
+import typings.antd.tooltipMod.TooltipPropsWithTitle
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.RefAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +11,8 @@ import scala.scalajs.js.annotation._
 @JSImport("antd/lib/slider/SliderTooltip", JSImport.Namespace)
 @js.native
 object sliderTooltipMod extends js.Object {
-  def default(props: TooltipProps): Element = js.native
+  val default: ForwardRefExoticComponent[
+    (TooltipPropsWithOverlay with RefAttributes[_]) | (TooltipPropsWithTitle with RefAttributes[_])
+  ] = js.native
 }
 

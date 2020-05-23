@@ -45,7 +45,7 @@ object UserFeedResponsePreviewCommentsItem {
   ): UserFeedResponsePreviewCommentsItem = {
     val __obj = js.Dynamic.literal(bit_flags = bit_flags.asInstanceOf[js.Any], comment_like_count = comment_like_count.asInstanceOf[js.Any], content_type = content_type.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], created_at_utc = created_at_utc.asInstanceOf[js.Any], did_report_as_spam = did_report_as_spam.asInstanceOf[js.Any], has_liked_comment = has_liked_comment.asInstanceOf[js.Any], media_id = media_id.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], share_enabled = share_enabled.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(has_translation)) __obj.updateDynamic("has_translation")(has_translation.asInstanceOf[js.Any])
+    if (!js.isUndefined(has_translation)) __obj.updateDynamic("has_translation")(has_translation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserFeedResponsePreviewCommentsItem]
   }
 }

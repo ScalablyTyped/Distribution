@@ -19,12 +19,12 @@ trait DeviceConfigurationType extends js.Object {
 object DeviceConfigurationType {
   @scala.inline
   def apply(
-    ChallengeRequiredOnNewDevice: js.UndefOr[Boolean] = js.undefined,
-    DeviceOnlyRememberedOnUserPrompt: js.UndefOr[Boolean] = js.undefined
+    ChallengeRequiredOnNewDevice: js.UndefOr[BooleanType] = js.undefined,
+    DeviceOnlyRememberedOnUserPrompt: js.UndefOr[BooleanType] = js.undefined
   ): DeviceConfigurationType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ChallengeRequiredOnNewDevice)) __obj.updateDynamic("ChallengeRequiredOnNewDevice")(ChallengeRequiredOnNewDevice.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeviceOnlyRememberedOnUserPrompt)) __obj.updateDynamic("DeviceOnlyRememberedOnUserPrompt")(DeviceOnlyRememberedOnUserPrompt.asInstanceOf[js.Any])
+    if (!js.isUndefined(ChallengeRequiredOnNewDevice)) __obj.updateDynamic("ChallengeRequiredOnNewDevice")(ChallengeRequiredOnNewDevice.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeviceOnlyRememberedOnUserPrompt)) __obj.updateDynamic("DeviceOnlyRememberedOnUserPrompt")(DeviceOnlyRememberedOnUserPrompt.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceConfigurationType]
   }
 }

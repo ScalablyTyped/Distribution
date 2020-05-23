@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +13,4 @@ trait HandleOwner extends Accessor {
     */
   var handles: Handles = js.native
 }
-
-@JSGlobal("__esri.HandleOwner")
-@js.native
-object HandleOwner extends TopLevel[HandleOwnerConstructor]
 

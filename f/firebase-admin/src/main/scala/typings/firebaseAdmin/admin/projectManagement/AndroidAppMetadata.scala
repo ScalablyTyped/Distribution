@@ -1,6 +1,6 @@
 package typings.firebaseAdmin.admin.projectManagement
 
-import typings.firebaseAdmin.admin.projectManagement.AppPlatform.ANDROID
+import typings.firebaseAdmin.projectManagementMod.admin.projectManagement.AppPlatform.ANDROID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Metadata about a Firebase Android App.
   */
-trait AndroidAppMetadata extends AppMetadata {
+trait AndroidAppMetadata
+  extends typings.firebaseAdmin.projectManagementMod.admin.projectManagement.AppMetadata {
   /**
     * The canonical package name of the Android App, as would appear in the Google Play Developer
     * Console.

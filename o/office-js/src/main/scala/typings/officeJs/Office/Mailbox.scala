@@ -1,7 +1,7 @@
 package typings.officeJs.Office
 
-import typings.officeJs.AsyncContextOptionsisRest
 import typings.officeJs.Office.MailboxEnums.RestVersion
+import typings.officeJs.anon.AsyncContextOptionsisRest
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

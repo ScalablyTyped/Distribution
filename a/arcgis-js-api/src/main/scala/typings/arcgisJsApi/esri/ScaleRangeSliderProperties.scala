@@ -81,10 +81,10 @@ object ScaleRangeSliderProperties {
     id: String = null,
     label: String = null,
     layer: LayerProperties = null,
-    maxScale: Int | Double = null,
-    maxScaleLimit: Int | Double = null,
-    minScale: Int | Double = null,
-    minScaleLimit: Int | Double = null,
+    maxScale: js.UndefOr[Double] = js.undefined,
+    maxScaleLimit: js.UndefOr[Double] = js.undefined,
+    minScale: js.UndefOr[Double] = js.undefined,
+    minScaleLimit: js.UndefOr[Double] = js.undefined,
     region: SupportedRegion = null,
     view: MapViewProperties | SceneViewProperties = null,
     viewModel: ScaleRangeSliderViewModelProperties = null,
@@ -92,15 +92,15 @@ object ScaleRangeSliderProperties {
   ): ScaleRangeSliderProperties = {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
-    if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
-    if (maxScaleLimit != null) __obj.updateDynamic("maxScaleLimit")(maxScaleLimit.asInstanceOf[js.Any])
-    if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
-    if (minScaleLimit != null) __obj.updateDynamic("minScaleLimit")(minScaleLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxScale)) __obj.updateDynamic("maxScale")(maxScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxScaleLimit)) __obj.updateDynamic("maxScaleLimit")(maxScaleLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minScale)) __obj.updateDynamic("minScale")(minScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minScaleLimit)) __obj.updateDynamic("minScaleLimit")(minScaleLimit.get.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])

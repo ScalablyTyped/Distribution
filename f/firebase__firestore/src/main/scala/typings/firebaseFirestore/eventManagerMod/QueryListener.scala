@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/core/event_manager", "QueryListener")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/core/event_manager", "QueryListener")
 @js.native
 class QueryListener protected () extends js.Object {
   def this(query: Query, queryObserver: Observer[ViewSnapshot]) = this()

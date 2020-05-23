@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typedoc/dist/lib/models/reflections/signature", JSImport.Namespace)
 @js.native
 object reflectionsSignatureMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.typedoc.abstractMod.Reflection because Already inherited
   - typings.typedoc.abstractMod.TypeParameterContainer because var conflicts: _alias, _aliases, anchor, comment, cssClasses, decorates, decorators, flags, hasOwnDocument, id, kind, kindString, name, originalName, parent, sources, url. Inlined typeParameters */ @js.native
   class SignatureReflection () extends TypeContainer {

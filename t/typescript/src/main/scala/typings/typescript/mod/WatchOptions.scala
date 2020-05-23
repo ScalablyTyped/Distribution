@@ -25,7 +25,7 @@ object WatchOptions {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (fallbackPolling != null) __obj.updateDynamic("fallbackPolling")(fallbackPolling.asInstanceOf[js.Any])
-    if (!js.isUndefined(synchronousWatchDirectory)) __obj.updateDynamic("synchronousWatchDirectory")(synchronousWatchDirectory.asInstanceOf[js.Any])
+    if (!js.isUndefined(synchronousWatchDirectory)) __obj.updateDynamic("synchronousWatchDirectory")(synchronousWatchDirectory.get.asInstanceOf[js.Any])
     if (watchDirectory != null) __obj.updateDynamic("watchDirectory")(watchDirectory.asInstanceOf[js.Any])
     if (watchFile != null) __obj.updateDynamic("watchFile")(watchFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[WatchOptions]

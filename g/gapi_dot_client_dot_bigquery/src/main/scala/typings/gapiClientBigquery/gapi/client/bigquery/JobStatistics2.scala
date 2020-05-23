@@ -32,7 +32,7 @@ trait JobStatistics2 extends js.Object {
 object JobStatistics2 {
   @scala.inline
   def apply(
-    billingTier: Int | Double = null,
+    billingTier: js.UndefOr[Double] = js.undefined,
     cacheHit: js.UndefOr[Boolean] = js.undefined,
     numDmlAffectedRows: String = null,
     queryPlan: js.Array[ExplainQueryStage] = null,
@@ -45,8 +45,8 @@ object JobStatistics2 {
     undeclaredQueryParameters: js.Array[QueryParameter] = null
   ): JobStatistics2 = {
     val __obj = js.Dynamic.literal()
-    if (billingTier != null) __obj.updateDynamic("billingTier")(billingTier.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheHit)) __obj.updateDynamic("cacheHit")(cacheHit.asInstanceOf[js.Any])
+    if (!js.isUndefined(billingTier)) __obj.updateDynamic("billingTier")(billingTier.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheHit)) __obj.updateDynamic("cacheHit")(cacheHit.get.asInstanceOf[js.Any])
     if (numDmlAffectedRows != null) __obj.updateDynamic("numDmlAffectedRows")(numDmlAffectedRows.asInstanceOf[js.Any])
     if (queryPlan != null) __obj.updateDynamic("queryPlan")(queryPlan.asInstanceOf[js.Any])
     if (referencedTables != null) __obj.updateDynamic("referencedTables")(referencedTables.asInstanceOf[js.Any])

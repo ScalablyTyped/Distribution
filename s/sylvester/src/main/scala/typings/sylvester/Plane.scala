@@ -1,7 +1,5 @@
 package typings.sylvester
 
-import org.scalablytyped.runtime.TopLevel
-import typings.sylvester.Sylvester.PlaneStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -129,8 +127,4 @@ trait Plane extends js.Object {
   def translate(vector: js.Array[Double]): Plane = js.native
   def translate(vector: Vector): Plane = js.native
 }
-
-@JSGlobal("Plane")
-@js.native
-object Plane extends TopLevel[PlaneStatic]
 

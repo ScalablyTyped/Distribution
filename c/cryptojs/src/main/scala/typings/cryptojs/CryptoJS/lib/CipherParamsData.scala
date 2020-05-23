@@ -23,7 +23,7 @@ object CipherParamsData {
   @scala.inline
   def apply(
     algorithm: Cipher = null,
-    blockSize: Int | Double = null,
+    blockSize: js.UndefOr[Double] = js.undefined,
     ciphertext: WordArray = null,
     formatter: IFormatter = null,
     iv: WordArray = null,
@@ -34,7 +34,7 @@ object CipherParamsData {
   ): CipherParamsData = {
     val __obj = js.Dynamic.literal()
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
-    if (blockSize != null) __obj.updateDynamic("blockSize")(blockSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockSize)) __obj.updateDynamic("blockSize")(blockSize.get.asInstanceOf[js.Any])
     if (ciphertext != null) __obj.updateDynamic("ciphertext")(ciphertext.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
     if (iv != null) __obj.updateDynamic("iv")(iv.asInstanceOf[js.Any])

@@ -14,10 +14,13 @@ trait IPublishRequest extends js.Object {
 
 object IPublishRequest {
   @scala.inline
-  def apply(messages: js.Array[IPubsubMessage] = null, topic: String = null): IPublishRequest = {
+  def apply(
+    messages: js.UndefOr[Null | js.Array[IPubsubMessage]] = js.undefined,
+    topic: js.UndefOr[Null | String] = js.undefined
+  ): IPublishRequest = {
     val __obj = js.Dynamic.literal()
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (topic != null) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
+    if (!js.isUndefined(messages)) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (!js.isUndefined(topic)) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPublishRequest]
   }
 }

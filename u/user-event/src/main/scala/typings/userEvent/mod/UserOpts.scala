@@ -11,10 +11,10 @@ trait UserOpts extends js.Object {
 
 object UserOpts {
   @scala.inline
-  def apply(allAtOnce: js.UndefOr[Boolean] = js.undefined, delay: Int | Double = null): UserOpts = {
+  def apply(allAtOnce: js.UndefOr[Boolean] = js.undefined, delay: js.UndefOr[Double] = js.undefined): UserOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allAtOnce)) __obj.updateDynamic("allAtOnce")(allAtOnce.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(allAtOnce)) __obj.updateDynamic("allAtOnce")(allAtOnce.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserOpts]
   }
 }

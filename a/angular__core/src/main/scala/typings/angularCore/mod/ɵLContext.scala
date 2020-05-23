@@ -39,14 +39,14 @@ object ɵLContext {
     lView: ɵangularPackagesCoreCoreBo,
     native: RNode,
     nodeIndex: Double,
-    component: js.Object = null,
-    directives: js.Array[_] = null,
-    localRefs: StringDictionary[js.Any] = null
+    component: js.UndefOr[Null | js.Object] = js.undefined,
+    directives: js.UndefOr[Null | js.Array[_]] = js.undefined,
+    localRefs: js.UndefOr[Null | StringDictionary[js.Any]] = js.undefined
   ): ɵLContext = {
     val __obj = js.Dynamic.literal(lView = lView.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], nodeIndex = nodeIndex.asInstanceOf[js.Any])
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
-    if (localRefs != null) __obj.updateDynamic("localRefs")(localRefs.asInstanceOf[js.Any])
+    if (!js.isUndefined(component)) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (!js.isUndefined(directives)) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
+    if (!js.isUndefined(localRefs)) __obj.updateDynamic("localRefs")(localRefs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ɵLContext]
   }
 }

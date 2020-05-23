@@ -2,7 +2,7 @@ package typings.jestCore
 
 import typings.jestTypes.configMod.GlobalConfig
 import typings.jestTypes.configMod.ProjectConfig
-import typings.node.processMod._Global_.NodeJS.WriteStream
+import typings.node.processMod.global.NodeJS.WriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

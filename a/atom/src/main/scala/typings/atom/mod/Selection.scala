@@ -1,8 +1,8 @@
 package typings.atom.mod
 
-import typings.atom.AnonAutoscroll
-import typings.atom.AnonAutoscrollPreserveFolds
-import typings.atom.AnonPreserveFoldsReversed
+import typings.atom.anon.Autoscroll
+import typings.atom.anon.AutoscrollPreserveFolds
+import typings.atom.anon.PreserveFoldsReversed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,7 +29,7 @@ trait Selection extends js.Object {
   // Modifying the selected range
   /** Clears the selection, moving the marker to the head. */
   def clear(): Unit = js.native
-  def clear(options: AnonAutoscroll): Unit = js.native
+  def clear(options: Autoscroll): Unit = js.native
   // Comparing to other selections
   /**
     *  Compare this selection's buffer range to another selection's buffer range.
@@ -173,7 +173,7 @@ trait Selection extends js.Object {
     *  given selection.
     */
   def merge(otherSelection: Selection): Unit = js.native
-  def merge(otherSelection: Selection, options: AnonAutoscrollPreserveFolds): Unit = js.native
+  def merge(otherSelection: Selection, options: AutoscrollPreserveFolds): Unit = js.native
   // Event Subscription
   /** Calls your callback when the selection was moved. */
   def onDidChangeRange(callback: js.Function1[/* event */ SelectionChangedEvent, Unit]): Disposable = js.native
@@ -266,10 +266,10 @@ trait Selection extends js.Object {
   def selectWord(): Unit = js.native
   /** Modifies the buffer Range for the selection. */
   def setBufferRange(bufferRange: RangeCompatible): Unit = js.native
-  def setBufferRange(bufferRange: RangeCompatible, options: AnonPreserveFoldsReversed): Unit = js.native
+  def setBufferRange(bufferRange: RangeCompatible, options: PreserveFoldsReversed): Unit = js.native
   /** Modifies the screen range for the selection. */
   def setScreenRange(screenRange: RangeCompatible): Unit = js.native
-  def setScreenRange(screenRange: RangeCompatible, options: AnonAutoscrollPreserveFolds): Unit = js.native
+  def setScreenRange(screenRange: RangeCompatible, options: AutoscrollPreserveFolds): Unit = js.native
   /**
     *  Wraps the selected lines in comments if they aren't currently part of a comment.
     *  Removes the comment if they are currently wrapped in a comment.

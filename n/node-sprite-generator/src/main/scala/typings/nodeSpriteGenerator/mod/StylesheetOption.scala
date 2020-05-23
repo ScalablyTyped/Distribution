@@ -15,13 +15,13 @@ object StylesheetOption {
   @scala.inline
   def apply(
     nameMapping: () => String = null,
-    pixelRatio: Int | Double = null,
+    pixelRatio: js.UndefOr[Double] = js.undefined,
     prefix: String = null,
     spritePath: String = null
   ): StylesheetOption = {
     val __obj = js.Dynamic.literal()
     if (nameMapping != null) __obj.updateDynamic("nameMapping")(js.Any.fromFunction0(nameMapping))
-    if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(pixelRatio)) __obj.updateDynamic("pixelRatio")(pixelRatio.get.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (spritePath != null) __obj.updateDynamic("spritePath")(spritePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[StylesheetOption]

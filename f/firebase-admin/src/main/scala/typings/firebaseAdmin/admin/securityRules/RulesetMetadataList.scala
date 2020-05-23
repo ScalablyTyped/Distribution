@@ -12,12 +12,15 @@ trait RulesetMetadataList extends js.Object {
   /**
     * A batch of ruleset metadata.
     */
-  val rulesets: js.Array[RulesetMetadata]
+  val rulesets: js.Array[typings.firebaseAdmin.securityRulesMod.admin.securityRules.RulesetMetadata]
 }
 
 object RulesetMetadataList {
   @scala.inline
-  def apply(rulesets: js.Array[RulesetMetadata], nextPageToken: String = null): RulesetMetadataList = {
+  def apply(
+    rulesets: js.Array[typings.firebaseAdmin.securityRulesMod.admin.securityRules.RulesetMetadata],
+    nextPageToken: String = null
+  ): RulesetMetadataList = {
     val __obj = js.Dynamic.literal(rulesets = rulesets.asInstanceOf[js.Any])
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[RulesetMetadataList]

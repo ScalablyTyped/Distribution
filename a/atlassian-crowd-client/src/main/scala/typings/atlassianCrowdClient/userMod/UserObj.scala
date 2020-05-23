@@ -1,6 +1,6 @@
 package typings.atlassianCrowdClient.userMod
 
-import typings.atlassianCrowdClient.AnonValue
+import typings.atlassianCrowdClient.anon.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait UserObj extends js.Object {
   val `first-name`: String
   val `last-name`: String
   val name: String
-  val password: js.UndefOr[AnonValue] = js.undefined
+  val password: js.UndefOr[Value] = js.undefined
 }
 
 object UserObj {
@@ -24,7 +24,7 @@ object UserObj {
     `first-name`: String,
     `last-name`: String,
     name: String,
-    password: AnonValue = null
+    password: Value = null
   ): UserObj = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("display-name")(`display-name`.asInstanceOf[js.Any])

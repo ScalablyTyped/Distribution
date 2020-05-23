@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.AllJoyn
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object AllJoynBusAttachmentState extends js.Object {
   /** Currently disconnecting from the bus. */
   @js.native
   sealed trait disconnecting extends AllJoynBusAttachmentState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AllJoynBusAttachmentState with Double] = js.native
-  /* 2 */ @js.native
-  object connected extends TopLevel[connected with Double]
-  
-  /* 1 */ @js.native
-  object connecting extends TopLevel[connecting with Double]
-  
-  /* 0 */ @js.native
-  object disconnected extends TopLevel[disconnected with Double]
-  
-  /* 3 */ @js.native
-  object disconnecting extends TopLevel[disconnecting with Double]
   
 }
 

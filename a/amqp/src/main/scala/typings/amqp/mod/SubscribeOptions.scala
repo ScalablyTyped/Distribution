@@ -48,15 +48,15 @@ object SubscribeOptions {
     ack: js.UndefOr[Boolean] = js.undefined,
     deliveryKeyInPayload: js.UndefOr[Boolean] = js.undefined,
     exclusive: js.UndefOr[Boolean] = js.undefined,
-    prefetchCount: Int | Double = null,
+    prefetchCount: js.UndefOr[Double] = js.undefined,
     routingKeyInPayload: js.UndefOr[Boolean] = js.undefined
   ): SubscribeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ack)) __obj.updateDynamic("ack")(ack.asInstanceOf[js.Any])
-    if (!js.isUndefined(deliveryKeyInPayload)) __obj.updateDynamic("deliveryKeyInPayload")(deliveryKeyInPayload.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.asInstanceOf[js.Any])
-    if (prefetchCount != null) __obj.updateDynamic("prefetchCount")(prefetchCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(routingKeyInPayload)) __obj.updateDynamic("routingKeyInPayload")(routingKeyInPayload.asInstanceOf[js.Any])
+    if (!js.isUndefined(ack)) __obj.updateDynamic("ack")(ack.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deliveryKeyInPayload)) __obj.updateDynamic("deliveryKeyInPayload")(deliveryKeyInPayload.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(prefetchCount)) __obj.updateDynamic("prefetchCount")(prefetchCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(routingKeyInPayload)) __obj.updateDynamic("routingKeyInPayload")(routingKeyInPayload.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscribeOptions]
   }
 }

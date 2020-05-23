@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,8 +16,4 @@ trait BuildingSummaryStatistics
     */
   var fields: js.Array[BuildingFieldStatistics] = js.native
 }
-
-@JSGlobal("__esri.BuildingSummaryStatistics")
-@js.native
-object BuildingSummaryStatistics extends TopLevel[BuildingSummaryStatisticsConstructor]
 

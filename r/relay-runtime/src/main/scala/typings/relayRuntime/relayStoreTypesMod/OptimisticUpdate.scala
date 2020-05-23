@@ -20,10 +20,10 @@ object OptimisticUpdate {
   def OptimisticUpdateRelayPayload(
     operation: OperationDescriptor,
     payload: RelayResponsePayload,
-    updater: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit = null
+    updater: js.UndefOr[Null | ((/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit)] = js.undefined
   ): OptimisticUpdate = {
     val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
-    if (updater != null) __obj.updateDynamic("updater")(js.Any.fromFunction2(updater))
+    if (!js.isUndefined(updater)) __obj.updateDynamic("updater")(if (updater != null) js.Any.fromFunction2(updater.asInstanceOf[(/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit]) else null)
     __obj.asInstanceOf[OptimisticUpdate]
   }
 }

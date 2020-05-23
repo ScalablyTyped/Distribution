@@ -36,7 +36,7 @@ object ChooseImageOption {
   @scala.inline
   def apply(
     complete: /* res */ GeneralCallbackResult => Unit = null,
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     fail: /* res */ GeneralCallbackResult => Unit = null,
     sizeType: Array[original | compressed] = null,
     sourceType: Array[album | camera] = null,
@@ -44,7 +44,7 @@ object ChooseImageOption {
   ): ChooseImageOption = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (sizeType != null) __obj.updateDynamic("sizeType")(sizeType.asInstanceOf[js.Any])
     if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType.asInstanceOf[js.Any])

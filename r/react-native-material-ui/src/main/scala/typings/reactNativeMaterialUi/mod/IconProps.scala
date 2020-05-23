@@ -16,13 +16,13 @@ object IconProps {
   def apply(
     name: String,
     color: String = null,
-    size: Int | Double = null,
-    style: ViewStyle | js.Array[ViewStyle] = null
+    size: js.UndefOr[Double] = js.undefined,
+    style: js.UndefOr[Null | ViewStyle | js.Array[ViewStyle]] = js.undefined
   ): IconProps = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconProps]
   }
 }

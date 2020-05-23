@@ -38,7 +38,7 @@ trait UserProfile extends js.Object {
   /**
     * Represents whether a G Suite for Education user's domain administrator has
     * explicitly verified them as being a teacher. If the user is not a member of
-    * a G Suite for Education domain, than this field will always be false.
+    * a G Suite for Education domain, than this field is always false.
     *
     * Read-only
     */
@@ -61,7 +61,7 @@ object UserProfile {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
     if (photoUrl != null) __obj.updateDynamic("photoUrl")(photoUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(verifiedTeacher)) __obj.updateDynamic("verifiedTeacher")(verifiedTeacher.asInstanceOf[js.Any])
+    if (!js.isUndefined(verifiedTeacher)) __obj.updateDynamic("verifiedTeacher")(verifiedTeacher.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserProfile]
   }
 }

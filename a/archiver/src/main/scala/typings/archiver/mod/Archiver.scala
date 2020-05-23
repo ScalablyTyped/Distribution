@@ -1,6 +1,6 @@
 package typings.archiver.mod
 
-import typings.archiver.PartialEntryData
+import typings.archiver.anon.PartialEntryData
 import typings.archiver.archiverBooleans.`false`
 import typings.archiver.archiverStrings.close
 import typings.archiver.archiverStrings.data

@@ -36,10 +36,10 @@ object DialogContext {
     addHost: Dialog => Unit,
     compositionComplete: (HTMLElement, HTMLElement, CompositionContext) => Unit,
     removeHost: Dialog => Unit,
-    blockoutOpacity: Int | Double = null
+    blockoutOpacity: js.UndefOr[Double] = js.undefined
   ): DialogContext = {
     val __obj = js.Dynamic.literal(addHost = js.Any.fromFunction1(addHost), compositionComplete = js.Any.fromFunction3(compositionComplete), removeHost = js.Any.fromFunction1(removeHost))
-    if (blockoutOpacity != null) __obj.updateDynamic("blockoutOpacity")(blockoutOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockoutOpacity)) __obj.updateDynamic("blockoutOpacity")(blockoutOpacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogContext]
   }
 }

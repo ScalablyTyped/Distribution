@@ -1,6 +1,5 @@
 package typings.heremaps.H.geo
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,29 +40,6 @@ object AltitudeContext extends js.Object {
   /** Ground level */
   @js.native
   sealed trait undefined extends AltitudeContext
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AltitudeContext with Double] = js.native
-  /* 1 */ @js.native
-  object GL extends TopLevel[GL with Double]
-  
-  /* 2 */ @js.native
-  object OL extends TopLevel[OL with Double]
-  
-  /* 4 */ @js.native
-  object SB extends TopLevel[SB with Double]
-  
-  /* 3 */ @js.native
-  object SL extends TopLevel[SL with Double]
-  
-  /* 5 */ @js.native
-  object WE extends TopLevel[WE with Double]
-  
-  /* 6 */ @js.native
-  object WG extends TopLevel[WG with Double]
-  
-  /* 0 */ @js.native
-  object undefined extends TopLevel[undefined with Double]
   
 }
 

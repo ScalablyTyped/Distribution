@@ -39,8 +39,8 @@ object FeatureVisibleElements {
   ): FeatureVisibleElements = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(lastEditInfo)) __obj.updateDynamic("lastEditInfo")(lastEditInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastEditInfo)) __obj.updateDynamic("lastEditInfo")(lastEditInfo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureVisibleElements]
   }
 }

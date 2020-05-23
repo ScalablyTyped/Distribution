@@ -35,6 +35,8 @@ trait AlertProps extends js.Object {
   var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
+  /** https://www.w3.org/TR/2014/REC-html5-20141028/dom.html#aria-role-attribute */
+  var role: js.UndefOr[String] = js.undefined
   /** Whether to show icon */
   var showIcon: js.UndefOr[Boolean] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
@@ -60,15 +62,16 @@ object AlertProps {
     onMouseEnter: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     onMouseLeave: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     prefixCls: String = null,
+    role: String = null,
     showIcon: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
     `type`: success | info | warning | error = null
   ): AlertProps = {
     val __obj = js.Dynamic.literal()
     if (afterClose != null) __obj.updateDynamic("afterClose")(js.Any.fromFunction0(afterClose))
-    if (!js.isUndefined(banner)) __obj.updateDynamic("banner")(banner.asInstanceOf[js.Any])
+    if (!js.isUndefined(banner)) __obj.updateDynamic("banner")(banner.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.asInstanceOf[js.Any])
+    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.get.asInstanceOf[js.Any])
     if (closeText != null) __obj.updateDynamic("closeText")(closeText.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
@@ -78,7 +81,8 @@ object AlertProps {
     if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlertProps]

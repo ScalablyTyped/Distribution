@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,7 +42,17 @@ trait SceneService extends js.Object {
   val version: SceneServiceVersion
 }
 
-@JSGlobal("__esri.SceneService")
-@js.native
-object SceneService extends TopLevel[SceneServiceConstructor]
+object SceneService {
+  @scala.inline
+  def apply(
+    copyright: String,
+    layerId: Double,
+    spatialReference: SpatialReference,
+    url: String,
+    version: SceneServiceVersion
+  ): SceneService = {
+    val __obj = js.Dynamic.literal(copyright = copyright.asInstanceOf[js.Any], layerId = layerId.asInstanceOf[js.Any], spatialReference = spatialReference.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SceneService]
+  }
+}
 

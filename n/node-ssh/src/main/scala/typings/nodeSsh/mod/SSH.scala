@@ -1,8 +1,8 @@
 package typings.nodeSsh.mod
 
-import typings.nodeSsh.AnonLocal
-import typings.nodeSsh.ExecOptionsstreamboth
-import typings.nodeSsh.ExecOptionsstreamstdoutst
+import typings.nodeSsh.anon.ExecOptionsstreamboth
+import typings.nodeSsh.anon.ExecOptionsstreamstdoutst
+import typings.nodeSsh.anon.Local
 import typings.nodeSsh.nodeSshStrings.exec
 import typings.nodeSsh.nodeSshStrings.sftp
 import typings.ssh2Streams.mod.TransferOptions
@@ -35,8 +35,8 @@ trait SSH extends js.Object {
   def putFile(localFile: String, remoteFile: String): js.Promise[Unit] = js.native
   def putFile(localFile: String, remoteFile: String, givenSftp: SFTP): js.Promise[Unit] = js.native
   def putFile(localFile: String, remoteFile: String, givenSftp: SFTP, givenOpts: TransferOptions): js.Promise[Unit] = js.native
-  def putFiles(files: js.Array[AnonLocal]): js.Promise[Unit] = js.native
-  def putFiles(files: js.Array[AnonLocal], givenConfig: PutFilesOptions): js.Promise[Unit] = js.native
+  def putFiles(files: js.Array[Local]): js.Promise[Unit] = js.native
+  def putFiles(files: js.Array[Local], givenConfig: PutFilesOptions): js.Promise[Unit] = js.native
   def requestSFTP(): js.Promise[SFTP] = js.native
   def requestShell(): js.Promise[Shell] = js.native
 }

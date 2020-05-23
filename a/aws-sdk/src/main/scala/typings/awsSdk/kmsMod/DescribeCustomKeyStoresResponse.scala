@@ -25,12 +25,12 @@ object DescribeCustomKeyStoresResponse {
   def apply(
     CustomKeyStores: CustomKeyStoresList = null,
     NextMarker: MarkerType = null,
-    Truncated: js.UndefOr[Boolean] = js.undefined
+    Truncated: js.UndefOr[BooleanType] = js.undefined
   ): DescribeCustomKeyStoresResponse = {
     val __obj = js.Dynamic.literal()
     if (CustomKeyStores != null) __obj.updateDynamic("CustomKeyStores")(CustomKeyStores.asInstanceOf[js.Any])
     if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker.asInstanceOf[js.Any])
-    if (!js.isUndefined(Truncated)) __obj.updateDynamic("Truncated")(Truncated.asInstanceOf[js.Any])
+    if (!js.isUndefined(Truncated)) __obj.updateDynamic("Truncated")(Truncated.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCustomKeyStoresResponse]
   }
 }

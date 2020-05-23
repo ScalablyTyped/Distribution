@@ -1,5 +1,6 @@
 package typings.popmotionPose
 
+import typings.popmotion.actionTypesMod.ColdSubscription
 import typings.popmotion.valueMod.ValueProps
 import typings.popmotionPose.typesMod.DomPopmotionConfig
 import typings.popmotionPose.typesMod.DomPopmotionPoser
@@ -12,8 +13,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object poseMod extends js.Object {
   @js.native
-  class Action ()
-    extends typings.popmotion.actionMod.Action
+  class Action[Sub /* <: ColdSubscription */] ()
+    extends typings.popmotion.actionMod.Action[Sub]
   
   @js.native
   class ValueReaction protected ()

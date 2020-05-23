@@ -19,12 +19,6 @@ object stackMod extends js.Object {
     var _available: js.Any = js.native
     var _pending: js.Any = js.native
     /**
-      * Gets the number of entries in the stack.
-      * When positive, indicates the number of entries available to get.
-      * When negative, indicates the number of requests waiting to be fulfilled.
-      */
-    val size: Double = js.native
-    /**
       * Removes and returns a Promise for the top value of the stack. If the stack is empty,
       * returns a Promise for the next value to be pushed on to the stack.
       */
@@ -37,6 +31,12 @@ object stackMod extends js.Object {
       */
     def push(value: T): Unit = js.native
     def push(value: js.Thenable[T]): Unit = js.native
+    /**
+      * Gets the number of entries in the stack.
+      * When positive, indicates the number of entries available to get.
+      * When negative, indicates the number of requests waiting to be fulfilled.
+      */
+    def size: Double = js.native
   }
   
 }

@@ -30,13 +30,13 @@ object LogPattern {
     Pattern: LogPatternRegex = null,
     PatternName: LogPatternName = null,
     PatternSetName: LogPatternSetName = null,
-    Rank: Int | Double = null
+    Rank: js.UndefOr[LogPatternRank] = js.undefined
   ): LogPattern = {
     val __obj = js.Dynamic.literal()
     if (Pattern != null) __obj.updateDynamic("Pattern")(Pattern.asInstanceOf[js.Any])
     if (PatternName != null) __obj.updateDynamic("PatternName")(PatternName.asInstanceOf[js.Any])
     if (PatternSetName != null) __obj.updateDynamic("PatternSetName")(PatternSetName.asInstanceOf[js.Any])
-    if (Rank != null) __obj.updateDynamic("Rank")(Rank.asInstanceOf[js.Any])
+    if (!js.isUndefined(Rank)) __obj.updateDynamic("Rank")(Rank.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogPattern]
   }
 }

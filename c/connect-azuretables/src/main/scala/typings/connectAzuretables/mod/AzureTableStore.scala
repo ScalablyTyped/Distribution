@@ -3,7 +3,7 @@ package typings.connectAzuretables.mod
 import typings.connectAzuretables.connectAzuretablesStrings.SET
 import typings.connectAzuretables.connectAzuretablesStrings.TOUCH
 import typings.expressSession.mod.Store
-import typings.expressSession.mod._Global_.Express.SessionData
+import typings.expressSession.mod.global.Express.SessionData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

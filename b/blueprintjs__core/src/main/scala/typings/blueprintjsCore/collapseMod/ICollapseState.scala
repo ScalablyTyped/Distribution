@@ -17,10 +17,14 @@ trait ICollapseState extends js.Object {
 
 object ICollapseState {
   @scala.inline
-  def apply(animationState: AnimationStates, height: String = null, heightWhenOpen: Int | Double = null): ICollapseState = {
+  def apply(
+    animationState: AnimationStates,
+    height: String = null,
+    heightWhenOpen: js.UndefOr[Double] = js.undefined
+  ): ICollapseState = {
     val __obj = js.Dynamic.literal(animationState = animationState.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (heightWhenOpen != null) __obj.updateDynamic("heightWhenOpen")(heightWhenOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(heightWhenOpen)) __obj.updateDynamic("heightWhenOpen")(heightWhenOpen.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICollapseState]
   }
 }

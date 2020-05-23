@@ -65,14 +65,14 @@ object URLFetchRequestOptions {
   ): URLFetchRequestOptions = {
     val __obj = js.Dynamic.literal()
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(escaping)) __obj.updateDynamic("escaping")(escaping.asInstanceOf[js.Any])
-    if (!js.isUndefined(followRedirects)) __obj.updateDynamic("followRedirects")(followRedirects.asInstanceOf[js.Any])
+    if (!js.isUndefined(escaping)) __obj.updateDynamic("escaping")(escaping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(followRedirects)) __obj.updateDynamic("followRedirects")(followRedirects.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(muteHttpExceptions)) __obj.updateDynamic("muteHttpExceptions")(muteHttpExceptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(muteHttpExceptions)) __obj.updateDynamic("muteHttpExceptions")(muteHttpExceptions.get.asInstanceOf[js.Any])
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (!js.isUndefined(useIntranet)) __obj.updateDynamic("useIntranet")(useIntranet.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateHttpsCertificates)) __obj.updateDynamic("validateHttpsCertificates")(validateHttpsCertificates.asInstanceOf[js.Any])
+    if (!js.isUndefined(useIntranet)) __obj.updateDynamic("useIntranet")(useIntranet.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateHttpsCertificates)) __obj.updateDynamic("validateHttpsCertificates")(validateHttpsCertificates.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[URLFetchRequestOptions]
   }
 }

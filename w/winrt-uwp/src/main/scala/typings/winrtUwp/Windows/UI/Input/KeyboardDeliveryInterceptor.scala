@@ -10,9 +10,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Enables an app to override the system processing of raw keyboard input, including key combinations such as shortcut keys, access keys (or hot keys), accelerator keys, and application keys. */
-@JSGlobal("Windows.UI.Input.KeyboardDeliveryInterceptor")
 @js.native
-abstract class KeyboardDeliveryInterceptor () extends js.Object {
+trait KeyboardDeliveryInterceptor extends js.Object {
   /** Gets or sets whether the app overrides the system processing of raw keyboard input, including key combinations such as shortcut keys, access keys (or hot keys), accelerator keys, and application keys. */
   var isInterceptionEnabledWhenInForeground: Boolean = js.native
   /** Occurs when a keyboard key is pressed. State info and event data is routed through this event instead of CoreWindow.KeyDown . */
@@ -35,16 +34,5 @@ abstract class KeyboardDeliveryInterceptor () extends js.Object {
   def removeEventListener_keydown(`type`: keydown, listener: TypedEventHandler[KeyboardDeliveryInterceptor, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_keyup(`type`: keyup, listener: TypedEventHandler[KeyboardDeliveryInterceptor, _]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.UI.Input.KeyboardDeliveryInterceptor")
-@js.native
-object KeyboardDeliveryInterceptor extends js.Object {
-  /**
-    * Retrieves a KeyboardDeliveryInterceptor object associated with the current app view.
-    * @return The KeyboardDeliveryInterceptor object associated with the current app.
-    */
-  def getForCurrentView(): KeyboardDeliveryInterceptor = js.native
 }
 

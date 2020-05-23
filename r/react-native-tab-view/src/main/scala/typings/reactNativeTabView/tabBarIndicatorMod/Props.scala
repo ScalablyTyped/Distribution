@@ -22,17 +22,17 @@ trait Props[T /* <: Route */] extends js.Object {
 
 object Props {
   @scala.inline
-  def apply[T /* <: Route */](
+  def apply[T](
     getTabWidth: /* index */ Double => Double,
     jumpTo: String => Unit,
     layout: Layout,
     navigationState: NavigationState[T],
     position: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Animated.Node<number> */ js.Any,
     width: String,
-    style: StyleProp[ViewStyle] = null
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined
   ): Props[T] = {
     val __obj = js.Dynamic.literal(getTabWidth = js.Any.fromFunction1(getTabWidth), jumpTo = js.Any.fromFunction1(jumpTo), layout = layout.asInstanceOf[js.Any], navigationState = navigationState.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props[T]]
   }
 }

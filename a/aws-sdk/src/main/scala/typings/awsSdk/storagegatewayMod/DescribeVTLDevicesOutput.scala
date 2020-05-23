@@ -12,7 +12,7 @@ trait DescribeVTLDevicesOutput extends js.Object {
     */
   var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.native
   /**
-    * An array of VTL device objects composed of the Amazon Resource Name(ARN) of the VTL devices.
+    * An array of VTL device objects composed of the Amazon Resource Name (ARN) of the VTL devices.
     */
   var VTLDevices: js.UndefOr[typings.awsSdk.storagegatewayMod.VTLDevices] = js.native
 }

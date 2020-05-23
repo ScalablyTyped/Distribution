@@ -11,9 +11,9 @@ trait IConsensusBroadcastRequest extends js.Object {
 
 object IConsensusBroadcastRequest {
   @scala.inline
-  def apply(message: IConsensusPeerMessage = null): IConsensusBroadcastRequest = {
+  def apply(message: js.UndefOr[Null | IConsensusPeerMessage] = js.undefined): IConsensusBroadcastRequest = {
     val __obj = js.Dynamic.literal()
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (!js.isUndefined(message)) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConsensusBroadcastRequest]
   }
 }

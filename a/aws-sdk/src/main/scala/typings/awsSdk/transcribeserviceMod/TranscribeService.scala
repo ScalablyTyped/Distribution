@@ -13,6 +13,19 @@ trait TranscribeService extends Service {
   @JSName("config")
   var config_TranscribeService: ConfigBase with ClientConfiguration = js.native
   /**
+    * Creates a new custom vocabulary that you can use to change how Amazon Transcribe Medical transcribes your audio file.
+    */
+  def createMedicalVocabulary(): Request[CreateMedicalVocabularyResponse, AWSError] = js.native
+  def createMedicalVocabulary(callback: js.Function2[/* err */ AWSError, /* data */ CreateMedicalVocabularyResponse, Unit]): Request[CreateMedicalVocabularyResponse, AWSError] = js.native
+  /**
+    * Creates a new custom vocabulary that you can use to change how Amazon Transcribe Medical transcribes your audio file.
+    */
+  def createMedicalVocabulary(params: CreateMedicalVocabularyRequest): Request[CreateMedicalVocabularyResponse, AWSError] = js.native
+  def createMedicalVocabulary(
+    params: CreateMedicalVocabularyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateMedicalVocabularyResponse, Unit]
+  ): Request[CreateMedicalVocabularyResponse, AWSError] = js.native
+  /**
     * Creates a new custom vocabulary that you can use to change the way Amazon Transcribe handles transcription of an audio file. 
     */
   def createVocabulary(): Request[CreateVocabularyResponse, AWSError] = js.native
@@ -49,6 +62,19 @@ trait TranscribeService extends Service {
   def deleteMedicalTranscriptionJob(params: DeleteMedicalTranscriptionJobRequest): Request[js.Object, AWSError] = js.native
   def deleteMedicalTranscriptionJob(
     params: DeleteMedicalTranscriptionJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a vocabulary from Amazon Transcribe Medical.
+    */
+  def deleteMedicalVocabulary(): Request[js.Object, AWSError] = js.native
+  def deleteMedicalVocabulary(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a vocabulary from Amazon Transcribe Medical.
+    */
+  def deleteMedicalVocabulary(params: DeleteMedicalVocabularyRequest): Request[js.Object, AWSError] = js.native
+  def deleteMedicalVocabulary(
+    params: DeleteMedicalVocabularyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
@@ -104,6 +130,19 @@ trait TranscribeService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetMedicalTranscriptionJobResponse, Unit]
   ): Request[GetMedicalTranscriptionJobResponse, AWSError] = js.native
   /**
+    * Retrieve information about a medical vocabulary.
+    */
+  def getMedicalVocabulary(): Request[GetMedicalVocabularyResponse, AWSError] = js.native
+  def getMedicalVocabulary(callback: js.Function2[/* err */ AWSError, /* data */ GetMedicalVocabularyResponse, Unit]): Request[GetMedicalVocabularyResponse, AWSError] = js.native
+  /**
+    * Retrieve information about a medical vocabulary.
+    */
+  def getMedicalVocabulary(params: GetMedicalVocabularyRequest): Request[GetMedicalVocabularyResponse, AWSError] = js.native
+  def getMedicalVocabulary(
+    params: GetMedicalVocabularyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetMedicalVocabularyResponse, Unit]
+  ): Request[GetMedicalVocabularyResponse, AWSError] = js.native
+  /**
     * Returns information about a transcription job. To see the status of the job, check the TranscriptionJobStatus field. If the status is COMPLETED, the job is finished and you can find the results at the location specified in the TranscriptFileUri field. If you enable content redaction, the redacted transcript appears in RedactedTranscriptFileUri.
     */
   def getTranscriptionJob(): Request[GetTranscriptionJobResponse, AWSError] = js.native
@@ -155,6 +194,19 @@ trait TranscribeService extends Service {
     params: ListMedicalTranscriptionJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListMedicalTranscriptionJobsResponse, Unit]
   ): Request[ListMedicalTranscriptionJobsResponse, AWSError] = js.native
+  /**
+    * Returns a list of vocabularies that match the specified criteria. You get the entire list of vocabularies if you don't enter a value in any of the request parameters.
+    */
+  def listMedicalVocabularies(): Request[ListMedicalVocabulariesResponse, AWSError] = js.native
+  def listMedicalVocabularies(callback: js.Function2[/* err */ AWSError, /* data */ ListMedicalVocabulariesResponse, Unit]): Request[ListMedicalVocabulariesResponse, AWSError] = js.native
+  /**
+    * Returns a list of vocabularies that match the specified criteria. You get the entire list of vocabularies if you don't enter a value in any of the request parameters.
+    */
+  def listMedicalVocabularies(params: ListMedicalVocabulariesRequest): Request[ListMedicalVocabulariesResponse, AWSError] = js.native
+  def listMedicalVocabularies(
+    params: ListMedicalVocabulariesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListMedicalVocabulariesResponse, Unit]
+  ): Request[ListMedicalVocabulariesResponse, AWSError] = js.native
   /**
     * Lists transcription jobs with the specified status.
     */
@@ -220,6 +272,19 @@ trait TranscribeService extends Service {
     params: StartTranscriptionJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartTranscriptionJobResponse, Unit]
   ): Request[StartTranscriptionJobResponse, AWSError] = js.native
+  /**
+    * Updates an existing vocabulary with new values in a different text file. The UpdateMedicalVocabulary operation overwrites all of the existing information with the values that you provide in the request.
+    */
+  def updateMedicalVocabulary(): Request[UpdateMedicalVocabularyResponse, AWSError] = js.native
+  def updateMedicalVocabulary(callback: js.Function2[/* err */ AWSError, /* data */ UpdateMedicalVocabularyResponse, Unit]): Request[UpdateMedicalVocabularyResponse, AWSError] = js.native
+  /**
+    * Updates an existing vocabulary with new values in a different text file. The UpdateMedicalVocabulary operation overwrites all of the existing information with the values that you provide in the request.
+    */
+  def updateMedicalVocabulary(params: UpdateMedicalVocabularyRequest): Request[UpdateMedicalVocabularyResponse, AWSError] = js.native
+  def updateMedicalVocabulary(
+    params: UpdateMedicalVocabularyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateMedicalVocabularyResponse, Unit]
+  ): Request[UpdateMedicalVocabularyResponse, AWSError] = js.native
   /**
     * Updates an existing vocabulary with new values. The UpdateVocabulary operation overwrites all of the existing information with the values that you provide in the request. 
     */

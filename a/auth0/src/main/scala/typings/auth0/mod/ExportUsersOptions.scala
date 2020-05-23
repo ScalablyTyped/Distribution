@@ -17,13 +17,13 @@ object ExportUsersOptions {
     connection_id: String = null,
     fields: js.Array[ExportUserField] = null,
     format: JobFormat = null,
-    limit: Int | Double = null
+    limit: js.UndefOr[Double] = js.undefined
   ): ExportUsersOptions = {
     val __obj = js.Dynamic.literal()
     if (connection_id != null) __obj.updateDynamic("connection_id")(connection_id.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportUsersOptions]
   }
 }

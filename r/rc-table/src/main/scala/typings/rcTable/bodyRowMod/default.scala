@@ -1,7 +1,7 @@
 package typings.rcTable.bodyRowMod
 
-import typings.rcTable.AnonChildren
-import typings.react.mod._Global_.JSX.Element
+import typings.rcTable.anon.Children
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object default extends js.Object {
   var displayName: String = js.native
-  def apply[RecordType /* <: AnonChildren[RecordType] */](props: BodyRowProps[RecordType]): Element = js.native
+  def apply[RecordType /* <: Children[RecordType] */](props: BodyRowProps[RecordType]): Element = js.native
 }
 

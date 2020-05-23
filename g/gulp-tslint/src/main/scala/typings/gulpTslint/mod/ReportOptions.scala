@@ -16,14 +16,14 @@ object ReportOptions {
   def apply(
     allowWarnings: js.UndefOr[Boolean] = js.undefined,
     emitError: js.UndefOr[Boolean] = js.undefined,
-    reportLimit: Int | Double = null,
+    reportLimit: js.UndefOr[Double] = js.undefined,
     summarizeFailureOutput: js.UndefOr[Boolean] = js.undefined
   ): ReportOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowWarnings)) __obj.updateDynamic("allowWarnings")(allowWarnings.asInstanceOf[js.Any])
-    if (!js.isUndefined(emitError)) __obj.updateDynamic("emitError")(emitError.asInstanceOf[js.Any])
-    if (reportLimit != null) __obj.updateDynamic("reportLimit")(reportLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(summarizeFailureOutput)) __obj.updateDynamic("summarizeFailureOutput")(summarizeFailureOutput.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowWarnings)) __obj.updateDynamic("allowWarnings")(allowWarnings.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(emitError)) __obj.updateDynamic("emitError")(emitError.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reportLimit)) __obj.updateDynamic("reportLimit")(reportLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(summarizeFailureOutput)) __obj.updateDynamic("summarizeFailureOutput")(summarizeFailureOutput.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportOptions]
   }
 }

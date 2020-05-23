@@ -1,6 +1,6 @@
 package typings.next.routerMod
 
-import typings.next.AnonApp
+import typings.next.anon.App
 import typings.next.mittMod.MittEmitter
 import typings.node.querystringMod.ParsedUrlQuery
 import scala.scalajs.js
@@ -14,7 +14,7 @@ class default protected () extends Router {
     pathname: String,
     query: ParsedUrlQuery,
     as: String,
-    hasInitialPropsPageLoaderAppWrapAppComponentErrSubscriptionIsFallback: AnonApp
+    hasInitialPropsPageLoaderAppWrapAppComponentErrSubscriptionIsFallback: App
   ) = this()
   /* CompleteClass */
   override var asPath: String = js.native

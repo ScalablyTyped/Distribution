@@ -30,20 +30,16 @@ trait DecorationAttrs
 object DecorationAttrs {
   @scala.inline
   def apply(
-    StringDictionary: /**
-    * Specify additional attrs that will be mapped directly to the
-    * target node's DOM attributes.
-    */
-  /* key */ StringDictionary[js.UndefOr[String | Null]] = null,
-    `class`: String = null,
-    nodeName: String = null,
-    style: String = null
+    StringDictionary: /* event */ StringDictionary[js.UndefOr[String | Null]] = null,
+    `class`: js.UndefOr[Null | String] = js.undefined,
+    nodeName: js.UndefOr[Null | String] = js.undefined,
+    style: js.UndefOr[Null | String] = js.undefined
   ): DecorationAttrs = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
-    if (nodeName != null) __obj.updateDynamic("nodeName")(nodeName.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(`class`)) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeName)) __obj.updateDynamic("nodeName")(nodeName.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecorationAttrs]
   }
 }

@@ -4,24 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.System.Threading.ThreadPoolTimer")
-@js.native
-class ThreadPoolTimer () extends IThreadPoolTimer {
-  /* CompleteClass */
-  override var delay: Double = js.native
-  /* CompleteClass */
-  override var period: Double = js.native
-  /* CompleteClass */
-  override def cancel(): Unit = js.native
-}
+trait ThreadPoolTimer extends IThreadPoolTimer
 
-/* static members */
-@JSGlobal("Windows.System.Threading.ThreadPoolTimer")
-@js.native
-object ThreadPoolTimer extends js.Object {
-  def createPeriodicTimer(handler: TimerElapsedHandler, period: Double): ThreadPoolTimer = js.native
-  def createPeriodicTimer(handler: TimerElapsedHandler, period: Double, destroyed: TimerDestroyedHandler): ThreadPoolTimer = js.native
-  def createTimer(handler: TimerElapsedHandler, delay: Double): ThreadPoolTimer = js.native
-  def createTimer(handler: TimerElapsedHandler, delay: Double, destroyed: TimerDestroyedHandler): ThreadPoolTimer = js.native
+object ThreadPoolTimer {
+  @scala.inline
+  def apply(cancel: () => Unit, delay: Double, period: Double): ThreadPoolTimer = {
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), delay = delay.asInstanceOf[js.Any], period = period.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ThreadPoolTimer]
+  }
 }
 

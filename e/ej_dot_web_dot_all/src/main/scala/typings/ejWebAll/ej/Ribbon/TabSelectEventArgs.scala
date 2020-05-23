@@ -32,20 +32,20 @@ object TabSelectEventArgs {
   @scala.inline
   def apply(
     activeHeader: js.Any = null,
-    activeIndex: Int | Double = null,
+    activeIndex: js.UndefOr[Double] = js.undefined,
     cancel: js.UndefOr[Boolean] = js.undefined,
     model: js.Any = null,
     prevActiveHeader: js.Any = null,
-    prevActiveIndex: Int | Double = null,
+    prevActiveIndex: js.UndefOr[Double] = js.undefined,
     `type`: String = null
   ): TabSelectEventArgs = {
     val __obj = js.Dynamic.literal()
     if (activeHeader != null) __obj.updateDynamic("activeHeader")(activeHeader.asInstanceOf[js.Any])
-    if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeIndex)) __obj.updateDynamic("activeIndex")(activeIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (prevActiveHeader != null) __obj.updateDynamic("prevActiveHeader")(prevActiveHeader.asInstanceOf[js.Any])
-    if (prevActiveIndex != null) __obj.updateDynamic("prevActiveIndex")(prevActiveIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(prevActiveIndex)) __obj.updateDynamic("prevActiveIndex")(prevActiveIndex.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabSelectEventArgs]
   }

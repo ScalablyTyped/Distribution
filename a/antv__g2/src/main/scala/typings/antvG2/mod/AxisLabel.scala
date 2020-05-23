@@ -50,7 +50,7 @@ object AxisLabel {
     textStyle: (js.Function1[/* text */ js.UndefOr[String], text]) | text = null
   ): AxisLabel = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoRotate)) __obj.updateDynamic("autoRotate")(autoRotate.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoRotate)) __obj.updateDynamic("autoRotate")(autoRotate.get.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction3(formatter))
     if (htmlTemplate != null) __obj.updateDynamic("htmlTemplate")(js.Any.fromFunction3(htmlTemplate))
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])

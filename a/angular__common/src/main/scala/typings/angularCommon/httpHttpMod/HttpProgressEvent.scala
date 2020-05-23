@@ -25,10 +25,14 @@ trait HttpProgressEvent
 
 object HttpProgressEvent {
   @scala.inline
-  def apply(loaded: Double, `type`: DownloadProgress | UploadProgress, total: Int | Double = null): HttpProgressEvent = {
+  def apply(
+    loaded: Double,
+    `type`: DownloadProgress | UploadProgress,
+    total: js.UndefOr[Double] = js.undefined
+  ): HttpProgressEvent = {
     val __obj = js.Dynamic.literal(loaded = loaded.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpProgressEvent]
   }
 }

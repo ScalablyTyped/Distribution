@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLTextAreaElement")
 @js.native
-class HTMLTextAreaElement protected () extends js.Object {
+trait HTMLTextAreaElement extends js.Object {
   @JSName("MSHTML.HTMLTextAreaElement_typekey")
   var MSHTMLDotHTMLTextAreaElement_typekey: HTMLTextAreaElement = js.native
   var accessKey: String = js.native

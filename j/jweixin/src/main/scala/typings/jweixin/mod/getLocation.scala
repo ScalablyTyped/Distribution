@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object getLocation extends js.Object {
   /**
-  	 * 获取地理位置接口
-  	 */
+    * 获取地理位置接口
+    */
   def apply(params: IgetLocation): Unit = js.native
 }
 

@@ -15,8 +15,7 @@ trait Item extends js.Object {
 object Item {
   @scala.inline
   def apply(g: Double, h: Double, x: Double, y: Double, prev: Item = null): Item = {
-    val __obj = js.Dynamic.literal(g = g.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    if (prev != null) __obj.updateDynamic("prev")(prev.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(g = g.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any])
     __obj.asInstanceOf[Item]
   }
 }

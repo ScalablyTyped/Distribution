@@ -44,7 +44,7 @@ object MsSmoothGroupSettings {
     Destination: stringPatternS3 = null,
     DestinationSettings: DestinationSettings = null,
     Encryption: MsSmoothEncryptionSettings = null,
-    FragmentLength: Int | Double = null,
+    FragmentLength: js.UndefOr[integerMin1Max2147483647] = js.undefined,
     ManifestEncoding: MsSmoothManifestEncoding = null
   ): MsSmoothGroupSettings = {
     val __obj = js.Dynamic.literal()
@@ -53,7 +53,7 @@ object MsSmoothGroupSettings {
     if (Destination != null) __obj.updateDynamic("Destination")(Destination.asInstanceOf[js.Any])
     if (DestinationSettings != null) __obj.updateDynamic("DestinationSettings")(DestinationSettings.asInstanceOf[js.Any])
     if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
-    if (FragmentLength != null) __obj.updateDynamic("FragmentLength")(FragmentLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(FragmentLength)) __obj.updateDynamic("FragmentLength")(FragmentLength.get.asInstanceOf[js.Any])
     if (ManifestEncoding != null) __obj.updateDynamic("ManifestEncoding")(ManifestEncoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[MsSmoothGroupSettings]
   }

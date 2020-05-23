@@ -30,13 +30,13 @@ object DescribeClusterVersionsMessage {
     ClusterParameterGroupFamily: String = null,
     ClusterVersion: String = null,
     Marker: String = null,
-    MaxRecords: Int | scala.Double = null
+    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
   ): DescribeClusterVersionsMessage = {
     val __obj = js.Dynamic.literal()
     if (ClusterParameterGroupFamily != null) __obj.updateDynamic("ClusterParameterGroupFamily")(ClusterParameterGroupFamily.asInstanceOf[js.Any])
     if (ClusterVersion != null) __obj.updateDynamic("ClusterVersion")(ClusterVersion.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeClusterVersionsMessage]
   }
 }

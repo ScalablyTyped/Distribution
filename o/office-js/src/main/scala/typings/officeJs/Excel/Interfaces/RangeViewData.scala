@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 trait RangeViewData extends js.Object {
   /**
     *
-    * Represents the cell addresses of the RangeView. Read-only.
+    * Represents the cell addresses of the RangeView.
     *
     * [Api set: ExcelApi 1.3]
     */
   var cellAddresses: js.UndefOr[js.Array[js.Array[_]]] = js.undefined
   /**
     *
-    * Returns the number of visible columns. Read-only.
+    * The number of visible columns.
     *
     * [Api set: ExcelApi 1.3]
     */
@@ -44,7 +44,7 @@ trait RangeViewData extends js.Object {
   var formulasR1C1: js.UndefOr[js.Array[js.Array[_]]] = js.undefined
   /**
     *
-    * Returns a value that represents the index of the RangeView. Read-only.
+    * Returns a value that represents the index of the RangeView.
     *
     * [Api set: ExcelApi 1.3]
     */
@@ -58,28 +58,28 @@ trait RangeViewData extends js.Object {
   var numberFormat: js.UndefOr[js.Array[js.Array[_]]] = js.undefined
   /**
     *
-    * Returns the number of visible rows. Read-only.
+    * The number of visible rows.
     *
     * [Api set: ExcelApi 1.3]
     */
   var rowCount: js.UndefOr[Double] = js.undefined
   /**
     *
-    * Represents a collection of range views associated with the range. Read-only.
+    * Represents a collection of range views associated with the range.
     *
     * [Api set: ExcelApi 1.3]
     */
   var rows: js.UndefOr[js.Array[RangeViewData]] = js.undefined
   /**
     *
-    * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.
+    * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API.
     *
     * [Api set: ExcelApi 1.3]
     */
   var text: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
   /**
     *
-    * Represents the type of data of each cell. Read-only.
+    * Represents the type of data of each cell.
     *
     * [Api set: ExcelApi 1.3]
     */
@@ -97,13 +97,13 @@ object RangeViewData {
   @scala.inline
   def apply(
     cellAddresses: js.Array[js.Array[_]] = null,
-    columnCount: Int | Double = null,
+    columnCount: js.UndefOr[Double] = js.undefined,
     formulas: js.Array[js.Array[_]] = null,
     formulasLocal: js.Array[js.Array[_]] = null,
     formulasR1C1: js.Array[js.Array[_]] = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     numberFormat: js.Array[js.Array[_]] = null,
-    rowCount: Int | Double = null,
+    rowCount: js.UndefOr[Double] = js.undefined,
     rows: js.Array[RangeViewData] = null,
     text: js.Array[js.Array[String]] = null,
     valueTypes: js.Array[js.Array[RangeValueType]] = null,
@@ -111,13 +111,13 @@ object RangeViewData {
   ): RangeViewData = {
     val __obj = js.Dynamic.literal()
     if (cellAddresses != null) __obj.updateDynamic("cellAddresses")(cellAddresses.asInstanceOf[js.Any])
-    if (columnCount != null) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnCount)) __obj.updateDynamic("columnCount")(columnCount.get.asInstanceOf[js.Any])
     if (formulas != null) __obj.updateDynamic("formulas")(formulas.asInstanceOf[js.Any])
     if (formulasLocal != null) __obj.updateDynamic("formulasLocal")(formulasLocal.asInstanceOf[js.Any])
     if (formulasR1C1 != null) __obj.updateDynamic("formulasR1C1")(formulasR1C1.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
-    if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount.get.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (valueTypes != null) __obj.updateDynamic("valueTypes")(valueTypes.asInstanceOf[js.Any])

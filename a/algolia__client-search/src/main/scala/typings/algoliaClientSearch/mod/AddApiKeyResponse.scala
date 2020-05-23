@@ -8,11 +8,11 @@ trait AddApiKeyResponse extends js.Object {
   /**
     * Date of creation of the api key.
     */
-  val createdAt: String
+  var createdAt: String
   /**
     * The returned api key.
     */
-  val key: String
+  var key: String
 }
 
 object AddApiKeyResponse {

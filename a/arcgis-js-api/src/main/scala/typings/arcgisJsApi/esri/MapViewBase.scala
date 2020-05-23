@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,8 +40,4 @@ trait MapViewBase extends js.Object {
   def goTo(target: GoToTarget2D): js.Promise[_] = js.native
   def goTo(target: GoToTarget2D, options: GoToOptions2D): js.Promise[_] = js.native
 }
-
-@JSGlobal("__esri.MapViewBase")
-@js.native
-object MapViewBase extends TopLevel[MapViewBaseConstructor]
 

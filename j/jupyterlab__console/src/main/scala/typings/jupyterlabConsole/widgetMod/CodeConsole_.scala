@@ -13,7 +13,7 @@ import typings.luminoCoreutils.jsonMod.JSONObject
 import typings.luminoSignaling.mod.ISignal
 import typings.luminoWidgets.mod.Widget
 import typings.std.Date
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -175,7 +175,7 @@ class CodeConsole_ protected () extends Widget {
     * called in response to events on the notebook panel's node. It should
     * not be called directly by user code.
     */
-  def handleEvent(event: Event_): Unit = js.native
+  def handleEvent(event: Event): Unit = js.native
   /**
     * Inject arbitrary code for the console to execute immediately.
     *

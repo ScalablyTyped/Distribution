@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ComponentInterface
-  extends /* memberName */ StringDictionary[js.Any] {
+  extends /* prop */ StringDictionary[js.Any] {
   /**
     * The component has loaded and has already rendered.
     *
@@ -55,7 +55,7 @@ trait ComponentInterface
 object ComponentInterface {
   @scala.inline
   def apply(
-    StringDictionary: /* memberName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     componentDidLoad: () => Unit = null,
     componentDidRender: () => Unit = null,
     componentDidUpdate: () => Unit = null,

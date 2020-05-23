@@ -1,6 +1,7 @@
 package typings.uifabricUtilities
 
 import typings.std.HTMLElement
+import typings.uifabricUtilities.anon.Children
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation._
 object ivirtualelementMod extends js.Object {
   @js.native
   trait IVirtualElement extends HTMLElement {
-    var _virtual: AnonChildren = js.native
+    var _virtual: Children = js.native
   }
   
 }

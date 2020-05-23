@@ -1,6 +1,6 @@
 package typings.mangopay2NodejsSdk.mod.models
 
-import typings.mangopay2NodejsSdk.PartialSettlementTransfer
+import typings.mangopay2NodejsSdk.anon.PartialSettlementTransfer
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SETTLEMENT
 import typings.mangopay2NodejsSdk.mod.MoneyData
 import typings.mangopay2NodejsSdk.mod.Timestamp

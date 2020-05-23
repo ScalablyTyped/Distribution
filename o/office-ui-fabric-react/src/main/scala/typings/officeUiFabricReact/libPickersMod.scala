@@ -1,5 +1,9 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.anon.CreateGenericItem
+import typings.officeUiFabricReact.anon.EnableAutofillOnKeyPress
+import typings.officeUiFabricReact.anon.IGenericItemkeyKey
+import typings.officeUiFabricReact.anon.OnRenderItem
 import typings.officeUiFabricReact.autofillTypesMod.IAutofillProps
 import typings.officeUiFabricReact.basePickerTypesMod.IBasePickerProps
 import typings.officeUiFabricReact.basePickerTypesMod.ValidationState
@@ -13,7 +17,7 @@ import typings.officeUiFabricReact.tagPickerTypesMod.ITagItemProps
 import typings.officeUiFabricReact.tagPickerTypesMod.ITagItemSuggestionProps
 import typings.officeUiFabricReact.tagPickerTypesMod.ITagPickerProps
 import typings.react.mod.FunctionComponent
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -99,28 +103,28 @@ object libPickersMod extends js.Object {
   /* static members */
   @js.native
   object Autofill extends js.Object {
-    var defaultProps: AnonEnableAutofillOnKeyPress = js.native
+    var defaultProps: EnableAutofillOnKeyPress = js.native
   }
   
   /* static members */
   @js.native
   object CompactPeoplePickerBase extends js.Object {
     /** Default props for CompactPeoplePicker. */
-    var defaultProps: AnonCreateGenericItem = js.native
+    var defaultProps: CreateGenericItem = js.native
   }
   
   /* static members */
   @js.native
   object ListPeoplePickerBase extends js.Object {
     /** Default props for ListPeoplePicker. */
-    var defaultProps: AnonCreateGenericItem = js.native
+    var defaultProps: CreateGenericItem = js.native
   }
   
   /* static members */
   @js.native
   object NormalPeoplePickerBase extends js.Object {
     /** Default props for NormalPeoplePicker. */
-    var defaultProps: AnonCreateGenericItem = js.native
+    var defaultProps: CreateGenericItem = js.native
   }
   
   @js.native
@@ -135,7 +139,7 @@ object libPickersMod extends js.Object {
   /* static members */
   @js.native
   object TagPickerBase extends js.Object {
-    var defaultProps: AnonOnRenderItem = js.native
+    var defaultProps: OnRenderItem = js.native
   }
   
   @js.native

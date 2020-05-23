@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@snyk/cli-interface" : "2.6.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@snyk/cli-interface" : "2.6.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

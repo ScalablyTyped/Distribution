@@ -4,11 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSForms.ReturnInteger")
-@js.native
-class ReturnInteger protected () extends js.Object {
+trait ReturnInteger extends js.Object {
   @JSName("MSForms.ReturnInteger_typekey")
-  var MSFormsDotReturnInteger_typekey: ReturnInteger = js.native
-  var Value: Double = js.native
+  var MSFormsDotReturnInteger_typekey: ReturnInteger
+  var Value: Double
+}
+
+object ReturnInteger {
+  @scala.inline
+  def apply(MSFormsDotReturnInteger_typekey: ReturnInteger, Value: Double): ReturnInteger = {
+    val __obj = js.Dynamic.literal(Value = Value.asInstanceOf[js.Any])
+    __obj.updateDynamic("MSForms.ReturnInteger_typekey")(MSFormsDotReturnInteger_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReturnInteger]
+  }
 }
 

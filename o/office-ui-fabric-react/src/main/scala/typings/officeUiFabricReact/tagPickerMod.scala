@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.anon.OnRenderItem
 import typings.officeUiFabricReact.basePickerMod.BasePicker
 import typings.officeUiFabricReact.tagPickerTypesMod.ITag
 import typings.officeUiFabricReact.tagPickerTypesMod.ITagPickerProps
@@ -20,7 +21,7 @@ object tagPickerMod extends js.Object {
   /* static members */
   @js.native
   object TagPickerBase extends js.Object {
-    var defaultProps: AnonOnRenderItem = js.native
+    var defaultProps: OnRenderItem = js.native
   }
   
 }

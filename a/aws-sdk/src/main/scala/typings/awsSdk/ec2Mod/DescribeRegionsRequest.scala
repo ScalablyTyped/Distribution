@@ -27,14 +27,14 @@ trait DescribeRegionsRequest extends js.Object {
 object DescribeRegionsRequest {
   @scala.inline
   def apply(
-    AllRegions: js.UndefOr[scala.Boolean] = js.undefined,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    AllRegions: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     Filters: FilterList = null,
     RegionNames: RegionNameStringList = null
   ): DescribeRegionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllRegions)) __obj.updateDynamic("AllRegions")(AllRegions.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllRegions)) __obj.updateDynamic("AllRegions")(AllRegions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
     if (RegionNames != null) __obj.updateDynamic("RegionNames")(RegionNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeRegionsRequest]

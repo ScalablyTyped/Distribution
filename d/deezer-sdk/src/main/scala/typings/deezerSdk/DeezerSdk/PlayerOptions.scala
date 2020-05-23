@@ -97,23 +97,23 @@ object PlayerOptions {
     color: String = null,
     container: String = null,
     format: WidgetFormat = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     layout: WidgetLayout = null,
     onload: /* state */ PlayerState => Unit = null,
     playlist: js.UndefOr[Boolean] = js.undefined,
     size: WidgetSize = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): PlayerOptions = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (onload != null) __obj.updateDynamic("onload")(js.Any.fromFunction1(onload))
-    if (!js.isUndefined(playlist)) __obj.updateDynamic("playlist")(playlist.asInstanceOf[js.Any])
+    if (!js.isUndefined(playlist)) __obj.updateDynamic("playlist")(playlist.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayerOptions]
   }
 }

@@ -12,9 +12,9 @@ trait ArrayOption extends js.Object {
 
 object ArrayOption {
   @scala.inline
-  def apply(emitter: Double | String, pins: js.Array[Double | String], freq: Int | Double = null): ArrayOption = {
+  def apply(emitter: Double | String, pins: js.Array[Double | String], freq: js.UndefOr[Double] = js.undefined): ArrayOption = {
     val __obj = js.Dynamic.literal(emitter = emitter.asInstanceOf[js.Any], pins = pins.asInstanceOf[js.Any])
-    if (freq != null) __obj.updateDynamic("freq")(freq.asInstanceOf[js.Any])
+    if (!js.isUndefined(freq)) __obj.updateDynamic("freq")(freq.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayOption]
   }
 }

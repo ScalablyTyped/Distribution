@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ydn.db.Query")
 @js.native
-class Query () extends js.Object {
+trait Query extends js.Object {
   def count(): Request = js.native
   def list(): Request = js.native
   def list(limit: Double): Request = js.native

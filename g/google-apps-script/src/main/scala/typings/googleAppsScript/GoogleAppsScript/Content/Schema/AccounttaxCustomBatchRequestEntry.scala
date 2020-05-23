@@ -17,14 +17,14 @@ object AccounttaxCustomBatchRequestEntry {
   def apply(
     accountId: String = null,
     accountTax: AccountTax = null,
-    batchId: Int | Double = null,
+    batchId: js.UndefOr[Double] = js.undefined,
     merchantId: String = null,
     method: String = null
   ): AccounttaxCustomBatchRequestEntry = {
     val __obj = js.Dynamic.literal()
     if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
     if (accountTax != null) __obj.updateDynamic("accountTax")(accountTax.asInstanceOf[js.Any])
-    if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchId)) __obj.updateDynamic("batchId")(batchId.get.asInstanceOf[js.Any])
     if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccounttaxCustomBatchRequestEntry]

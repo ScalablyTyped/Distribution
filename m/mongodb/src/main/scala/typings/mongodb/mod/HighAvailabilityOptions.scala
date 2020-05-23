@@ -28,14 +28,14 @@ object HighAvailabilityOptions {
   def apply(
     domainsEnabled: js.UndefOr[Boolean] = js.undefined,
     ha: js.UndefOr[Boolean] = js.undefined,
-    haInterval: Int | scala.Double = null,
+    haInterval: js.UndefOr[scala.Double] = js.undefined,
     readPreference: ReadPreferenceOrMode = null,
     readPreferenceTags: js.Array[String] = null
   ): HighAvailabilityOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(domainsEnabled)) __obj.updateDynamic("domainsEnabled")(domainsEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(ha)) __obj.updateDynamic("ha")(ha.asInstanceOf[js.Any])
-    if (haInterval != null) __obj.updateDynamic("haInterval")(haInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(domainsEnabled)) __obj.updateDynamic("domainsEnabled")(domainsEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ha)) __obj.updateDynamic("ha")(ha.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(haInterval)) __obj.updateDynamic("haInterval")(haInterval.get.asInstanceOf[js.Any])
     if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
     if (readPreferenceTags != null) __obj.updateDynamic("readPreferenceTags")(readPreferenceTags.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighAvailabilityOptions]

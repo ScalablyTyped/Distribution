@@ -1,6 +1,6 @@
 package typings.reactWeui.mod
 
-import typings.reactWeui.AnonAutoDectect
+import typings.reactWeui.anon.AutoDectect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ class Dialog protected () extends js.Object {
 @JSImport("react-weui", "Dialog")
 @js.native
 object Dialog extends js.Object {
-  var defaultProps: AnonAutoDectect = js.native
+  var defaultProps: AutoDectect = js.native
   @js.native
   object propTypes extends js.Object {
     @js.native

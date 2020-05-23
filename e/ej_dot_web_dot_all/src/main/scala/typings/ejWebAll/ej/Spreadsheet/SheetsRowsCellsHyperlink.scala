@@ -19,10 +19,10 @@ trait SheetsRowsCellsHyperlink extends js.Object {
 
 object SheetsRowsCellsHyperlink {
   @scala.inline
-  def apply(cellAddr: String = null, sheetIndex: Int | Double = null, webAddr: String = null): SheetsRowsCellsHyperlink = {
+  def apply(cellAddr: String = null, sheetIndex: js.UndefOr[Double] = js.undefined, webAddr: String = null): SheetsRowsCellsHyperlink = {
     val __obj = js.Dynamic.literal()
     if (cellAddr != null) __obj.updateDynamic("cellAddr")(cellAddr.asInstanceOf[js.Any])
-    if (sheetIndex != null) __obj.updateDynamic("sheetIndex")(sheetIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(sheetIndex)) __obj.updateDynamic("sheetIndex")(sheetIndex.get.asInstanceOf[js.Any])
     if (webAddr != null) __obj.updateDynamic("webAddr")(webAddr.asInstanceOf[js.Any])
     __obj.asInstanceOf[SheetsRowsCellsHyperlink]
   }

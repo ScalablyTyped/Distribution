@@ -11,41 +11,41 @@ trait IReader extends IObservable {
   /** [Config Option] (String) */
   var clientIdProperty: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of clientIdProperty
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getClientIdProperty: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of idProperty
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getIdProperty: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of implicitIncludes
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getImplicitIncludes: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of messageProperty
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getMessageProperty: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of model
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getModel: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Takes a raw response object as passed to this read and returns the useful data segment of it
-  		* @param response Object The response object
-  		* @returns Object The useful data from the response
-  		*/
+    * @param response Object The response object
+    * @returns Object The useful data from the response
+    */
   var getResponseData: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Returns the value of rootProperty
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getRootProperty: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of successProperty
-  		* @returns any
-  		*/
+    * @returns any
+    */
   var getSuccessProperty: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of totalProperty
-  		* @returns any
-  		*/
+    * @returns any
+    */
   var getTotalProperty: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Config Option] (String) */
   var idProperty: js.UndefOr[String] = js.undefined
@@ -58,20 +58,20 @@ trait IReader extends IObservable {
   /** [Property] (Object) */
   var rawData: js.UndefOr[js.Any] = js.undefined
   /** [Method] Reads the given response object
-  		* @param response Object The response object. This may be either an XMLHttpRequest object or a plain JS object
-  		* @returns Ext.data.ResultSet The parsed ResultSet object
-  		*/
+    * @param response Object The response object. This may be either an XMLHttpRequest object or a plain JS object
+    * @returns Ext.data.ResultSet The parsed ResultSet object
+    */
   var read: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], IResultSet]] = js.undefined
   /** [Method] Abstracts common functionality used by all Reader subclasses
-  		* @param data Object The raw data object
-  		* @returns Ext.data.ResultSet A ResultSet object
-  		*/
+    * @param data Object The raw data object
+    * @returns Ext.data.ResultSet A ResultSet object
+    */
   var readRecords: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], IResultSet]] = js.undefined
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
-  		* @param object Object The Observable whose events this object is to relay.
-  		* @param events String/Array/Object Array of event names to relay.
-  		* @returns Ext.mixin.Observable this
-  		*/
+    * @param object Object The Observable whose events this object is to relay.
+    * @param events String/Array/Object Array of event names to relay.
+    * @returns Ext.mixin.Observable this
+    */
   @JSName("relayEvents")
   var relayEvents_IReader: js.UndefOr[
     js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
@@ -81,36 +81,36 @@ trait IReader extends IObservable {
   /** [Config Option] (String) */
   var rootProperty: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of clientIdProperty
-  		* @param clientIdProperty String The new value.
-  		*/
+    * @param clientIdProperty String The new value.
+    */
   var setClientIdProperty: js.UndefOr[js.Function1[/* clientIdProperty */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of idProperty
-  		* @param idProperty String The new value.
-  		*/
+    * @param idProperty String The new value.
+    */
   var setIdProperty: js.UndefOr[js.Function1[/* idProperty */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of implicitIncludes
-  		* @param implicitIncludes Boolean The new value.
-  		*/
+    * @param implicitIncludes Boolean The new value.
+    */
   var setImplicitIncludes: js.UndefOr[js.Function1[/* implicitIncludes */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of messageProperty
-  		* @param messageProperty String The new value.
-  		*/
+    * @param messageProperty String The new value.
+    */
   var setMessageProperty: js.UndefOr[js.Function1[/* messageProperty */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of model
-  		* @param model Object The new value.
-  		*/
+    * @param model Object The new value.
+    */
   var setModel: js.UndefOr[js.Function1[/* model */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of rootProperty
-  		* @param rootProperty String The new value.
-  		*/
+    * @param rootProperty String The new value.
+    */
   var setRootProperty: js.UndefOr[js.Function1[/* rootProperty */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of successProperty
-  		* @param successProperty String The new value.
-  		*/
+    * @param successProperty String The new value.
+    */
   var setSuccessProperty: js.UndefOr[js.Function1[/* successProperty */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of totalProperty
-  		* @param totalProperty String The new value.
-  		*/
+    * @param totalProperty String The new value.
+    */
   var setTotalProperty: js.UndefOr[js.Function1[/* totalProperty */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (String) */
   var successProperty: js.UndefOr[String] = js.undefined
@@ -235,7 +235,7 @@ object IReader {
     if (getTotalProperty != null) __obj.updateDynamic("getTotalProperty")(js.Any.fromFunction0(getTotalProperty))
     if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
     if (idProperty != null) __obj.updateDynamic("idProperty")(idProperty.asInstanceOf[js.Any])
-    if (!js.isUndefined(implicitIncludes)) __obj.updateDynamic("implicitIncludes")(implicitIncludes.asInstanceOf[js.Any])
+    if (!js.isUndefined(implicitIncludes)) __obj.updateDynamic("implicitIncludes")(implicitIncludes.get.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
@@ -270,7 +270,7 @@ object IReader {
     if (setRootProperty != null) __obj.updateDynamic("setRootProperty")(js.Any.fromFunction1(setRootProperty))
     if (setSuccessProperty != null) __obj.updateDynamic("setSuccessProperty")(js.Any.fromFunction1(setSuccessProperty))
     if (setTotalProperty != null) __obj.updateDynamic("setTotalProperty")(js.Any.fromFunction1(setTotalProperty))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (successProperty != null) __obj.updateDynamic("successProperty")(successProperty.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))

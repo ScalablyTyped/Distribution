@@ -1,6 +1,6 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.AnonTouchPointNodeName
+import typings.babylonjs.anon.TouchPointNodeName
 import typings.babylonjs.babylonjsStrings._empty
 import typings.babylonjs.babylonjsStrings.`xr-standard`
 import scala.scalajs.js
@@ -18,7 +18,7 @@ trait IMotionControllerLayout extends js.Object {
   var components: /**
     * A map of component Ids
     */
-  org.scalablytyped.runtime.StringDictionary[AnonTouchPointNodeName]
+  org.scalablytyped.runtime.StringDictionary[TouchPointNodeName]
   /**
     * Is it xr standard mapping or not
     */
@@ -40,7 +40,7 @@ object IMotionControllerLayout {
     components: /**
     * A map of component Ids
     */
-  org.scalablytyped.runtime.StringDictionary[AnonTouchPointNodeName],
+  org.scalablytyped.runtime.StringDictionary[TouchPointNodeName],
     gamepadMapping: _empty | `xr-standard`,
     rootNodeName: String,
     selectComponentId: String

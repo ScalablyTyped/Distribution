@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when a touch event is interrupted by the device.
-		 */
+  * Fired when a touch event is interrupted by the device.
+  */
 trait VideoPlayerTouchcancelEvent extends VideoPlayerBaseEvent {
   /**
-  			 * X coordinate of the event from the `source` view's coordinate system.
-  			 */
+    * X coordinate of the event from the `source` view's coordinate system.
+    */
   var x: Double
   /**
-  			 * Y coordinate of the event from the `source` view's coordinate system.
-  			 */
+    * Y coordinate of the event from the `source` view's coordinate system.
+    */
   var y: Double
 }
 

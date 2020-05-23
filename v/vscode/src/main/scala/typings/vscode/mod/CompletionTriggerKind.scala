@@ -12,20 +12,20 @@ sealed trait CompletionTriggerKind extends js.Object
 @js.native
 object CompletionTriggerKind extends js.Object {
   /**
-  		 * Completion was triggered normally.
-  		 */
+    * Completion was triggered normally.
+    */
   @js.native
   sealed trait Invoke extends CompletionTriggerKind
   
   /**
-  		 * Completion was triggered by a trigger character.
-  		 */
+    * Completion was triggered by a trigger character.
+    */
   @js.native
   sealed trait TriggerCharacter extends CompletionTriggerKind
   
   /**
-  		 * Completion was re-triggered as current completion list is incomplete
-  		 */
+    * Completion was re-triggered as current completion list is incomplete
+    */
   @js.native
   sealed trait TriggerForIncompleteCompletions extends CompletionTriggerKind
   

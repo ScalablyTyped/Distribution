@@ -11,10 +11,10 @@ trait AngleLockEquationOptions extends js.Object {
 
 object AngleLockEquationOptions {
   @scala.inline
-  def apply(angle: Int | Double = null, ratio: Int | Double = null): AngleLockEquationOptions = {
+  def apply(angle: js.UndefOr[Double] = js.undefined, ratio: js.UndefOr[Double] = js.undefined): AngleLockEquationOptions = {
     val __obj = js.Dynamic.literal()
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
+    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ratio)) __obj.updateDynamic("ratio")(ratio.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AngleLockEquationOptions]
   }
 }

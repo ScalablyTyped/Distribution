@@ -23,8 +23,8 @@ object HereNowParameters {
     val __obj = js.Dynamic.literal()
     if (channelGroups != null) __obj.updateDynamic("channelGroups")(channelGroups.asInstanceOf[js.Any])
     if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeState)) __obj.updateDynamic("includeState")(includeState.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeUUIDs)) __obj.updateDynamic("includeUUIDs")(includeUUIDs.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeState)) __obj.updateDynamic("includeState")(includeState.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeUUIDs)) __obj.updateDynamic("includeUUIDs")(includeUUIDs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HereNowParameters]
   }
 }

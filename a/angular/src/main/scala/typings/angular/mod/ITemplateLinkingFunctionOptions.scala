@@ -1,8 +1,8 @@
 package typings.angular.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angular.AnonInstance
 import typings.angular.JQuery
+import typings.angular.anon.Instance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait ITemplateLinkingFunctionOptions extends js.Object {
   var futureParentElement: js.UndefOr[JQuery] = js.undefined
   var parentBoundTranscludeFn: js.UndefOr[ITranscludeFunction] = js.undefined
-  var transcludeControllers: js.UndefOr[StringDictionary[AnonInstance]] = js.undefined
+  var transcludeControllers: js.UndefOr[StringDictionary[Instance]] = js.undefined
 }
 
 object ITemplateLinkingFunctionOptions {
@@ -18,7 +18,7 @@ object ITemplateLinkingFunctionOptions {
   def apply(
     futureParentElement: JQuery = null,
     parentBoundTranscludeFn: ITranscludeFunction = null,
-    transcludeControllers: StringDictionary[AnonInstance] = null
+    transcludeControllers: StringDictionary[Instance] = null
   ): ITemplateLinkingFunctionOptions = {
     val __obj = js.Dynamic.literal()
     if (futureParentElement != null) __obj.updateDynamic("futureParentElement")(futureParentElement.asInstanceOf[js.Any])

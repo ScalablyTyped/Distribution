@@ -23,14 +23,14 @@ trait AutoMLJobCompletionCriteria extends js.Object {
 object AutoMLJobCompletionCriteria {
   @scala.inline
   def apply(
-    MaxAutoMLJobRuntimeInSeconds: Int | Double = null,
-    MaxCandidates: Int | Double = null,
-    MaxRuntimePerTrainingJobInSeconds: Int | Double = null
+    MaxAutoMLJobRuntimeInSeconds: js.UndefOr[MaxAutoMLJobRuntimeInSeconds] = js.undefined,
+    MaxCandidates: js.UndefOr[MaxCandidates] = js.undefined,
+    MaxRuntimePerTrainingJobInSeconds: js.UndefOr[MaxRuntimePerTrainingJobInSeconds] = js.undefined
   ): AutoMLJobCompletionCriteria = {
     val __obj = js.Dynamic.literal()
-    if (MaxAutoMLJobRuntimeInSeconds != null) __obj.updateDynamic("MaxAutoMLJobRuntimeInSeconds")(MaxAutoMLJobRuntimeInSeconds.asInstanceOf[js.Any])
-    if (MaxCandidates != null) __obj.updateDynamic("MaxCandidates")(MaxCandidates.asInstanceOf[js.Any])
-    if (MaxRuntimePerTrainingJobInSeconds != null) __obj.updateDynamic("MaxRuntimePerTrainingJobInSeconds")(MaxRuntimePerTrainingJobInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxAutoMLJobRuntimeInSeconds)) __obj.updateDynamic("MaxAutoMLJobRuntimeInSeconds")(MaxAutoMLJobRuntimeInSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxCandidates)) __obj.updateDynamic("MaxCandidates")(MaxCandidates.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRuntimePerTrainingJobInSeconds)) __obj.updateDynamic("MaxRuntimePerTrainingJobInSeconds")(MaxRuntimePerTrainingJobInSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoMLJobCompletionCriteria]
   }
 }

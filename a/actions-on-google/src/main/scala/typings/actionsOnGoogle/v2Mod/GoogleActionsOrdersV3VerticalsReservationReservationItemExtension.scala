@@ -58,7 +58,7 @@ object GoogleActionsOrdersV3VerticalsReservationReservationItemExtension {
     confirmationCode: String = null,
     extension: ApiClientObjectMap[_] = null,
     location: GoogleActionsV2Location = null,
-    partySize: Int | Double = null,
+    partySize: js.UndefOr[Double] = js.undefined,
     reservationTime: GoogleActionsOrdersV3Time = null,
     staffFacilitators: js.Array[GoogleActionsOrdersV3VerticalsReservationStaffFacilitator] = null,
     status: GoogleActionsOrdersV3VerticalsReservationReservationItemExtensionStatus = null,
@@ -70,7 +70,7 @@ object GoogleActionsOrdersV3VerticalsReservationReservationItemExtension {
     if (confirmationCode != null) __obj.updateDynamic("confirmationCode")(confirmationCode.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (partySize != null) __obj.updateDynamic("partySize")(partySize.asInstanceOf[js.Any])
+    if (!js.isUndefined(partySize)) __obj.updateDynamic("partySize")(partySize.get.asInstanceOf[js.Any])
     if (reservationTime != null) __obj.updateDynamic("reservationTime")(reservationTime.asInstanceOf[js.Any])
     if (staffFacilitators != null) __obj.updateDynamic("staffFacilitators")(staffFacilitators.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])

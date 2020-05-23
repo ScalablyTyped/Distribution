@@ -23,14 +23,14 @@ trait Search extends js.Object {
 object Search {
   @scala.inline
   def apply(
-    Displayable: js.UndefOr[scala.Boolean] = js.undefined,
-    Facetable: js.UndefOr[scala.Boolean] = js.undefined,
-    Searchable: js.UndefOr[scala.Boolean] = js.undefined
+    Displayable: js.UndefOr[Boolean] = js.undefined,
+    Facetable: js.UndefOr[Boolean] = js.undefined,
+    Searchable: js.UndefOr[Boolean] = js.undefined
   ): Search = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Displayable)) __obj.updateDynamic("Displayable")(Displayable.asInstanceOf[js.Any])
-    if (!js.isUndefined(Facetable)) __obj.updateDynamic("Facetable")(Facetable.asInstanceOf[js.Any])
-    if (!js.isUndefined(Searchable)) __obj.updateDynamic("Searchable")(Searchable.asInstanceOf[js.Any])
+    if (!js.isUndefined(Displayable)) __obj.updateDynamic("Displayable")(Displayable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Facetable)) __obj.updateDynamic("Facetable")(Facetable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Searchable)) __obj.updateDynamic("Searchable")(Searchable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Search]
   }
 }

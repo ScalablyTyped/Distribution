@@ -43,7 +43,7 @@ object Listener {
     DefaultActions: Actions = null,
     ListenerArn: ListenerArn = null,
     LoadBalancerArn: LoadBalancerArn = null,
-    Port: Int | Double = null,
+    Port: js.UndefOr[Port] = js.undefined,
     Protocol: ProtocolEnum = null,
     SslPolicy: SslPolicyName = null
   ): Listener = {
@@ -52,7 +52,7 @@ object Listener {
     if (DefaultActions != null) __obj.updateDynamic("DefaultActions")(DefaultActions.asInstanceOf[js.Any])
     if (ListenerArn != null) __obj.updateDynamic("ListenerArn")(ListenerArn.asInstanceOf[js.Any])
     if (LoadBalancerArn != null) __obj.updateDynamic("LoadBalancerArn")(LoadBalancerArn.asInstanceOf[js.Any])
-    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
+    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
     if (Protocol != null) __obj.updateDynamic("Protocol")(Protocol.asInstanceOf[js.Any])
     if (SslPolicy != null) __obj.updateDynamic("SslPolicy")(SslPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Listener]

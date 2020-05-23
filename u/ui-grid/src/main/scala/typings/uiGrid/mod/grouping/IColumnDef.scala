@@ -1,6 +1,6 @@
 package typings.uiGrid.mod.grouping
 
-import typings.uiGrid.AnonGroupPriority
+import typings.uiGrid.anon.GroupPriority
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ trait IColumnDef extends js.Object {
     * we'll renumber them to be sequential.
     * Defaults to undefined.
     */
-  var grouping: js.UndefOr[AnonGroupPriority] = js.undefined
+  var grouping: js.UndefOr[GroupPriority] = js.undefined
   /**
     * Show the aggregation menu on this column.  Defaults to true
     * @default true
@@ -42,15 +42,15 @@ object IColumnDef {
   @scala.inline
   def apply(
     enableGrouping: js.UndefOr[Boolean] = js.undefined,
-    grouping: AnonGroupPriority = null,
+    grouping: GroupPriority = null,
     groupingShowAggregationMenu: js.UndefOr[Boolean] = js.undefined,
     groupingShowGroupingMenu: js.UndefOr[Boolean] = js.undefined
   ): IColumnDef = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableGrouping)) __obj.updateDynamic("enableGrouping")(enableGrouping.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGrouping)) __obj.updateDynamic("enableGrouping")(enableGrouping.get.asInstanceOf[js.Any])
     if (grouping != null) __obj.updateDynamic("grouping")(grouping.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupingShowAggregationMenu)) __obj.updateDynamic("groupingShowAggregationMenu")(groupingShowAggregationMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupingShowGroupingMenu)) __obj.updateDynamic("groupingShowGroupingMenu")(groupingShowGroupingMenu.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupingShowAggregationMenu)) __obj.updateDynamic("groupingShowAggregationMenu")(groupingShowAggregationMenu.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupingShowGroupingMenu)) __obj.updateDynamic("groupingShowGroupingMenu")(groupingShowGroupingMenu.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColumnDef]
   }
 }

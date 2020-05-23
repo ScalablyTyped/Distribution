@@ -22,7 +22,7 @@ object dxChartSeriesTypesBubbleSeriesAggregation {
   ): dxChartSeriesTypesBubbleSeriesAggregation = {
     val __obj = js.Dynamic.literal()
     if (calculate != null) __obj.updateDynamic("calculate")(js.Any.fromFunction2(calculate))
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxChartSeriesTypesBubbleSeriesAggregation]
   }

@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the client-side equivalent of the ASPxListBox control.
   */
-@JSGlobal("ASPxClientListBox")
 @js.native
-class ASPxClientListBox () extends ASPxClientListEdit {
+trait ASPxClientListBox extends ASPxClientListEdit {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -230,16 +229,5 @@ class ASPxClientListBox () extends ASPxClientListEdit {
     * @param values An array of Object[] objects that represent the values.
     */
   def UnselectValues(values: js.Array[_]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("ASPxClientListBox")
-@js.native
-object ASPxClientListBox extends js.Object {
-  /**
-    * Converts the specified object to the ASPxClientListBox type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): ASPxClientListBox = js.native
 }
 

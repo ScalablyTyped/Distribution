@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.Color")
 @js.native
-class Color () extends Observable_ {
+trait Color extends Observable {
   var options: ColorOptions = js.native
   def diff(): Double = js.native
   def equals(): Boolean = js.native

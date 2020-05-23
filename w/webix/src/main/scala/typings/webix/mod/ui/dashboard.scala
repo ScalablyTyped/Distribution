@@ -1,6 +1,6 @@
 package typings.webix.mod.ui
 
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.webix.mod.WebixCallback
 import scala.scalajs.js
@@ -18,17 +18,17 @@ class dashboard ()
   @JSName("config")
   var config_dashboard: dashboardConfig = js.native
   @JSName("$dragCreate")
-  def $dragCreate(source: HTMLElement, event: Event_): HTMLElement = js.native
+  def $dragCreate(source: HTMLElement, event: Event): HTMLElement = js.native
   @JSName("$dragDestroy")
-  def $dragDestroy(target: HTMLElement, html: HTMLElement, e: Event_): Unit = js.native
+  def $dragDestroy(target: HTMLElement, html: HTMLElement, e: Event): Unit = js.native
   @JSName("$dragIn")
-  def $dragIn(source: HTMLElement, target: HTMLElement, ev: Event_): HTMLElement = js.native
+  def $dragIn(source: HTMLElement, target: HTMLElement, ev: Event): HTMLElement = js.native
   @JSName("$dragOut")
-  def $dragOut(source: HTMLElement, old_target: HTMLElement, new_target: HTMLElement, ev: Event_): Unit = js.native
+  def $dragOut(source: HTMLElement, old_target: HTMLElement, new_target: HTMLElement, ev: Event): Unit = js.native
   @JSName("$dragPos")
   def $dragPos(args: js.Any*): js.Any = js.native
   @JSName("$drop")
-  def $drop(source: HTMLElement, target: HTMLElement, ev: Event_): Unit = js.native
+  def $drop(source: HTMLElement, target: HTMLElement, ev: Event): Unit = js.native
   def addView(view: js.Any): String | Double = js.native
   def addView(view: js.Any, index: Double): String | Double = js.native
   def attachEvent(`type`: dashboardEventName, functor: WebixCallback): String | Double = js.native

@@ -1,6 +1,6 @@
 package typings.jupyterlabServices.messagesMod
 
-import typings.jupyterlabServices.AnonPassword
+import typings.jupyterlabServices.anon.Password
 import typings.jupyterlabServices.jupyterlabServicesStrings.input_request
 import typings.jupyterlabServices.jupyterlabServicesStrings.stdin
 import typings.luminoCoreutils.jsonMod.JSONObject
@@ -14,14 +14,14 @@ trait IInputRequestMsg
   extends IStdinMessage[input_request]
      with _Message {
   @JSName("content")
-  var content_IInputRequestMsg: AnonPassword
+  var content_IInputRequestMsg: Password
 }
 
 object IInputRequestMsg {
   @scala.inline
   def apply(
     channel: stdin,
-    content: AnonPassword,
+    content: Password,
     header: IHeader[input_request],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,

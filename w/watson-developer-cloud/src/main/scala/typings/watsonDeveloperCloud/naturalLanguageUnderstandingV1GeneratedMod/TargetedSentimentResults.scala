@@ -14,9 +14,9 @@ trait TargetedSentimentResults extends js.Object {
 
 object TargetedSentimentResults {
   @scala.inline
-  def apply(score: Int | Double = null, text: String = null): TargetedSentimentResults = {
+  def apply(score: js.UndefOr[Double] = js.undefined, text: String = null): TargetedSentimentResults = {
     val __obj = js.Dynamic.literal()
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetedSentimentResults]
   }

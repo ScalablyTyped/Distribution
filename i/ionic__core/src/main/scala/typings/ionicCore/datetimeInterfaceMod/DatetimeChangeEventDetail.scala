@@ -10,9 +10,9 @@ trait DatetimeChangeEventDetail extends js.Object {
 
 object DatetimeChangeEventDetail {
   @scala.inline
-  def apply(value: String = null): DatetimeChangeEventDetail = {
+  def apply(value: js.UndefOr[Null | String] = js.undefined): DatetimeChangeEventDetail = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatetimeChangeEventDetail]
   }
 }

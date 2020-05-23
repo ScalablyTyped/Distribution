@@ -1,7 +1,7 @@
 package typings.vis.mod
 
 import typings.std.Date
-import typings.vis.AnonTemplate
+import typings.vis.anon.Template
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -62,7 +62,7 @@ trait TimelineOptions extends js.Object {
   var throttleRedraw: js.UndefOr[Double] = js.undefined
   var timeAxis: js.UndefOr[TimelineTimeAxisOption] = js.undefined
   var tooltip: js.UndefOr[TimelineTooltipOption] = js.undefined
-  var tooltipOnItemUpdateTime: js.UndefOr[Boolean | AnonTemplate] = js.undefined
+  var tooltipOnItemUpdateTime: js.UndefOr[Boolean | Template] = js.undefined
   var `type`: js.UndefOr[String] = js.undefined
   var verticalScroll: js.UndefOr[Boolean] = js.undefined
   var visibleFrameTemplate: js.UndefOr[TimelineOptionsTemplateFunction] = js.undefined
@@ -97,7 +97,7 @@ object TimelineOptions {
     margin: TimelineOptionsMarginType = null,
     max: DateType = null,
     maxHeight: HeightWidthType = null,
-    maxMinorChars: Int | Double = null,
+    maxMinorChars: js.UndefOr[Double] = js.undefined,
     min: DateType = null,
     minHeight: HeightWidthType = null,
     moment: MomentConstructor = null,
@@ -127,23 +127,23 @@ object TimelineOptions {
     stackSubgroups: js.UndefOr[Boolean] = js.undefined,
     start: DateType = null,
     template: (/* item */ js.UndefOr[js.Any], /* element */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any]) => String = null,
-    throttleRedraw: Int | Double = null,
+    throttleRedraw: js.UndefOr[Double] = js.undefined,
     timeAxis: TimelineTimeAxisOption = null,
     tooltip: TimelineTooltipOption = null,
-    tooltipOnItemUpdateTime: Boolean | AnonTemplate = null,
+    tooltipOnItemUpdateTime: Boolean | Template = null,
     `type`: String = null,
     verticalScroll: js.UndefOr[Boolean] = js.undefined,
     visibleFrameTemplate: (/* item */ js.UndefOr[js.Any], /* element */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any]) => String = null,
     width: HeightWidthType = null,
     zoomKey: String = null,
-    zoomMax: Int | Double = null,
-    zoomMin: Int | Double = null,
+    zoomMax: js.UndefOr[Double] = js.undefined,
+    zoomMin: js.UndefOr[Double] = js.undefined,
     zoomable: js.UndefOr[Boolean] = js.undefined
   ): TimelineOptions = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickToUse)) __obj.updateDynamic("clickToUse")(clickToUse.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickToUse)) __obj.updateDynamic("clickToUse")(clickToUse.get.asInstanceOf[js.Any])
     if (configure != null) __obj.updateDynamic("configure")(configure.asInstanceOf[js.Any])
     if (dataAttributes != null) __obj.updateDynamic("dataAttributes")(dataAttributes.asInstanceOf[js.Any])
     if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
@@ -155,20 +155,20 @@ object TimelineOptions {
     if (groupTemplate != null) __obj.updateDynamic("groupTemplate")(js.Any.fromFunction3(groupTemplate))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (hiddenDates != null) __obj.updateDynamic("hiddenDates")(hiddenDates.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontalScroll)) __obj.updateDynamic("horizontalScroll")(horizontalScroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalScroll)) __obj.updateDynamic("horizontalScroll")(horizontalScroll.get.asInstanceOf[js.Any])
     if (itemsAlwaysDraggable != null) __obj.updateDynamic("itemsAlwaysDraggable")(itemsAlwaysDraggable.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (locales != null) __obj.updateDynamic("locales")(locales.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxMinorChars != null) __obj.updateDynamic("maxMinorChars")(maxMinorChars.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxMinorChars)) __obj.updateDynamic("maxMinorChars")(maxMinorChars.get.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     if (moment != null) __obj.updateDynamic("moment")(moment.asInstanceOf[js.Any])
-    if (!js.isUndefined(moveable)) __obj.updateDynamic("moveable")(moveable.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiselect)) __obj.updateDynamic("multiselect")(multiselect.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiselectPerGroup)) __obj.updateDynamic("multiselectPerGroup")(multiselectPerGroup.asInstanceOf[js.Any])
+    if (!js.isUndefined(moveable)) __obj.updateDynamic("moveable")(moveable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiselect)) __obj.updateDynamic("multiselect")(multiselect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiselectPerGroup)) __obj.updateDynamic("multiselectPerGroup")(multiselectPerGroup.get.asInstanceOf[js.Any])
     if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction2(onAdd))
     if (onAddGroup != null) __obj.updateDynamic("onAddGroup")(js.Any.fromFunction2(onAddGroup))
     if (onInitialDrawComplete != null) __obj.updateDynamic("onInitialDrawComplete")(js.Any.fromFunction0(onInitialDrawComplete))
@@ -181,29 +181,29 @@ object TimelineOptions {
     if (order != null) __obj.updateDynamic("order")(js.Any.fromFunction2(order))
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (rollingMode != null) __obj.updateDynamic("rollingMode")(rollingMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCurrentTime)) __obj.updateDynamic("showCurrentTime")(showCurrentTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMajorLabels)) __obj.updateDynamic("showMajorLabels")(showMajorLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMinorLabels)) __obj.updateDynamic("showMinorLabels")(showMinorLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTooltips)) __obj.updateDynamic("showTooltips")(showTooltips.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCurrentTime)) __obj.updateDynamic("showCurrentTime")(showCurrentTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMajorLabels)) __obj.updateDynamic("showMajorLabels")(showMajorLabels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMinorLabels)) __obj.updateDynamic("showMinorLabels")(showMinorLabels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTooltips)) __obj.updateDynamic("showTooltips")(showTooltips.get.asInstanceOf[js.Any])
     if (snap != null) __obj.updateDynamic("snap")(js.Any.fromFunction3(snap))
-    if (!js.isUndefined(stack)) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    if (!js.isUndefined(stackSubgroups)) __obj.updateDynamic("stackSubgroups")(stackSubgroups.asInstanceOf[js.Any])
+    if (!js.isUndefined(stack)) __obj.updateDynamic("stack")(stack.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stackSubgroups)) __obj.updateDynamic("stackSubgroups")(stackSubgroups.get.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(js.Any.fromFunction3(template))
-    if (throttleRedraw != null) __obj.updateDynamic("throttleRedraw")(throttleRedraw.asInstanceOf[js.Any])
+    if (!js.isUndefined(throttleRedraw)) __obj.updateDynamic("throttleRedraw")(throttleRedraw.get.asInstanceOf[js.Any])
     if (timeAxis != null) __obj.updateDynamic("timeAxis")(timeAxis.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (tooltipOnItemUpdateTime != null) __obj.updateDynamic("tooltipOnItemUpdateTime")(tooltipOnItemUpdateTime.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(verticalScroll)) __obj.updateDynamic("verticalScroll")(verticalScroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalScroll)) __obj.updateDynamic("verticalScroll")(verticalScroll.get.asInstanceOf[js.Any])
     if (visibleFrameTemplate != null) __obj.updateDynamic("visibleFrameTemplate")(js.Any.fromFunction3(visibleFrameTemplate))
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (zoomKey != null) __obj.updateDynamic("zoomKey")(zoomKey.asInstanceOf[js.Any])
-    if (zoomMax != null) __obj.updateDynamic("zoomMax")(zoomMax.asInstanceOf[js.Any])
-    if (zoomMin != null) __obj.updateDynamic("zoomMin")(zoomMin.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomable)) __obj.updateDynamic("zoomable")(zoomable.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomMax)) __obj.updateDynamic("zoomMax")(zoomMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomMin)) __obj.updateDynamic("zoomMin")(zoomMin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomable)) __obj.updateDynamic("zoomable")(zoomable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineOptions]
   }
 }

@@ -1,6 +1,5 @@
 package typings.screeps
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,7 +38,21 @@ trait Tombstone extends RoomObject {
   var ticksToDecay: Double
 }
 
-@JSGlobal("Tombstone")
-@js.native
-object Tombstone extends TopLevel[TombstoneConstructor]
+object Tombstone {
+  @scala.inline
+  def apply(
+    creep: AnyCreep,
+    deathTime: Double,
+    effects: js.Array[RoomObjectEffect],
+    id: Id[Tombstone],
+    pos: RoomPosition,
+    store: StoreDefinitionUnlimited,
+    ticksToDecay: Double,
+    room: Room = null
+  ): Tombstone = {
+    val __obj = js.Dynamic.literal(creep = creep.asInstanceOf[js.Any], deathTime = deathTime.asInstanceOf[js.Any], effects = effects.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any], ticksToDecay = ticksToDecay.asInstanceOf[js.Any])
+    if (room != null) __obj.updateDynamic("room")(room.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Tombstone]
+  }
+}
 

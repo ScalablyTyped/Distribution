@@ -1,5 +1,6 @@
 package typings.bip174
 
+import typings.bip174.anon.TypeofPsbt
 import typings.bip174.interfacesMod.KeyValue
 import typings.bip174.interfacesMod.PsbtGlobal
 import typings.bip174.interfacesMod.PsbtGlobalUpdate

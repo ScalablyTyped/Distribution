@@ -18,7 +18,7 @@ trait NodesAndEdges[TContext, TEvent /* <: EventObject */] extends js.Object {
 
 object NodesAndEdges {
   @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](
+  def apply[TContext, TEvent](
     edges: js.Array[
       Edge[
         TContext, 

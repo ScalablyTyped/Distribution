@@ -1,6 +1,6 @@
 package typings.bootstrap.mod
 
-import typings.bootstrap.mod._Global_.JQuery
+import typings.bootstrap.mod.global.JQuery
 import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -29,7 +29,7 @@ object CollapseOption {
   def apply(parent: String | JQuery[HTMLElement] | Element = null, toggle: js.UndefOr[Boolean] = js.undefined): CollapseOption = {
     val __obj = js.Dynamic.literal()
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (!js.isUndefined(toggle)) __obj.updateDynamic("toggle")(toggle.asInstanceOf[js.Any])
+    if (!js.isUndefined(toggle)) __obj.updateDynamic("toggle")(toggle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollapseOption]
   }
 }

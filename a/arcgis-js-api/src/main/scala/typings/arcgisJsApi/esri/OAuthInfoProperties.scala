@@ -90,9 +90,9 @@ object OAuthInfoProperties {
   def apply(
     appId: String = null,
     authNamespace: String = null,
-    expiration: Int | Double = null,
+    expiration: js.UndefOr[Double] = js.undefined,
     locale: String = null,
-    minTimeUntilExpiration: Int | Double = null,
+    minTimeUntilExpiration: js.UndefOr[Double] = js.undefined,
     popup: js.UndefOr[Boolean] = js.undefined,
     popupCallbackUrl: String = null,
     popupWindowFeatures: String = null,
@@ -102,14 +102,14 @@ object OAuthInfoProperties {
     val __obj = js.Dynamic.literal()
     if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
     if (authNamespace != null) __obj.updateDynamic("authNamespace")(authNamespace.asInstanceOf[js.Any])
-    if (expiration != null) __obj.updateDynamic("expiration")(expiration.asInstanceOf[js.Any])
+    if (!js.isUndefined(expiration)) __obj.updateDynamic("expiration")(expiration.get.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (minTimeUntilExpiration != null) __obj.updateDynamic("minTimeUntilExpiration")(minTimeUntilExpiration.asInstanceOf[js.Any])
-    if (!js.isUndefined(popup)) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
+    if (!js.isUndefined(minTimeUntilExpiration)) __obj.updateDynamic("minTimeUntilExpiration")(minTimeUntilExpiration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(popup)) __obj.updateDynamic("popup")(popup.get.asInstanceOf[js.Any])
     if (popupCallbackUrl != null) __obj.updateDynamic("popupCallbackUrl")(popupCallbackUrl.asInstanceOf[js.Any])
     if (popupWindowFeatures != null) __obj.updateDynamic("popupWindowFeatures")(popupWindowFeatures.asInstanceOf[js.Any])
     if (portalUrl != null) __obj.updateDynamic("portalUrl")(portalUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveUrlHash)) __obj.updateDynamic("preserveUrlHash")(preserveUrlHash.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveUrlHash)) __obj.updateDynamic("preserveUrlHash")(preserveUrlHash.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OAuthInfoProperties]
   }
 }

@@ -1,6 +1,5 @@
 package typings.openpgp.mod.`type`
 
-import typings.openpgp.mod.enums.hash
 import typings.openpgp.mod.enums.symmetric
 import typings.std.Uint8Array
 import scala.scalajs.js
@@ -24,7 +23,7 @@ object kdfParams extends js.Object {
       * @param hash Hash algorithm
       * @param cipher Symmetric algorithm
       */
-    def this(hash: hash, cipher: symmetric) = this()
+    def this(hash: typings.openpgp.mod.enums.hash, cipher: symmetric) = this()
     /**
       * Read KDFParams from an Uint8Array
       * @param input Where to read the KDFParams from

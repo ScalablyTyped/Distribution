@@ -1,6 +1,6 @@
 package typings.nodeForge.mod.tls
 
-import typings.nodeForge.AnonCaStore
+import typings.nodeForge.anon.CaStore
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("node-forge", "tls.createConnection")
 @js.native
 object createConnection extends js.Object {
-  def apply(options: AnonCaStore): Connection = js.native
+  def apply(options: CaStore): Connection = js.native
 }
 

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object jest {
-  type AndNot[T] = T with typings.jest.AnonNot[T]
+  type AndNot[T] = T with typings.jest.anon.Not[T]
   type ArgsType[T] = js.Any
   type ConstructorArgsType[T] = js.Any
   type ConstructorPropertyNames[T] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends new (args : ...any): any? K : never}[keyof T] */ js.Any) with java.lang.String
@@ -42,7 +42,7 @@ package object jest {
     typings.jest.mod.jest.ExtendedMatchers[TMatchers, scala.Unit, TActual], 
     typings.jest.mod.jest.ExtendedMatchers[TMatchers, js.Promise[scala.Unit], TActual]
   ]
-  type JestMatchersShape[TNonPromise /* <: js.Object */, TPromise /* <: js.Object */] = typings.jest.AnonRejects[TPromise] with typings.jest.mod.jest.AndNot[TNonPromise]
+  type JestMatchersShape[TNonPromise /* <: js.Object */, TPromise /* <: js.Object */] = typings.jest.anon.Rejects[TPromise] with typings.jest.mod.jest.AndNot[TNonPromise]
   type Lifecycle = js.Function2[
     /* fn */ typings.jest.mod.jest.ProvidesCallback, 
     /* timeout */ js.UndefOr[scala.Double], 
@@ -90,7 +90,7 @@ package object jest {
   type NonAsyncMatchers[TMatchers /* <: typings.jest.mod.jest.ExpectExtendMap */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof TMatchers ]: std.ReturnType<TMatchers[K]> extends std.Promise<jest.jest.jest.CustomMatcherResult>? never : K}[keyof TMatchers] */ js.Any
   // see https://github.com/Microsoft/TypeScript/issues/25215
   type NonFunctionPropertyNames[T] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends (args : ...any): any? never : K}[keyof T] */ js.Any) with java.lang.String
-  type NonPromiseMatchers[T /* <: typings.jest.JestMatchersShape */] = typings.jest.mod.jest.Omit[
+  type NonPromiseMatchers[T /* <: typings.jest.anon.JestMatchersShape */] = typings.jest.mod.jest.Omit[
     T, 
     typings.jest.jestStrings.resolves | typings.jest.jestStrings.rejects | typings.jest.jestStrings.not
   ]
@@ -100,7 +100,7 @@ package object jest {
   type Omit[T, K /* <: /* keyof any */ java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
   type Parameters[T /* <: js.Function1[/* repeated */ js.Any, _] */] = js.Any
   type PrintLabel = js.Function1[/* string */ java.lang.String, java.lang.String]
-  type PromiseMatchers[T /* <: typings.jest.JestMatchersShape */] = typings.jest.mod.jest.Omit[
+  type PromiseMatchers[T /* <: typings.jest.anon.JestMatchersShape */] = typings.jest.mod.jest.Omit[
     /* import warning: importer.ImportType#apply Failed type conversion: T['resolves'] */ js.Any, 
     typings.jest.jestStrings.not
   ]

@@ -4,18 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.Services.Formatting.RuleOperation")
-@js.native
-class RuleOperation () extends js.Object {
-  var Action: RuleAction = js.native
-  var Context: RuleOperationContext = js.native
+trait RuleOperation extends js.Object {
+  var Action: RuleAction
+  var Context: RuleOperationContext
 }
 
-/* static members */
-@JSGlobal("TypeScript.Services.Formatting.RuleOperation")
-@js.native
-object RuleOperation extends js.Object {
-  def create1(action: RuleAction): RuleOperation = js.native
-  def create2(context: RuleOperationContext, action: RuleAction): RuleOperation = js.native
+object RuleOperation {
+  @scala.inline
+  def apply(Action: RuleAction, Context: RuleOperationContext): RuleOperation = {
+    val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], Context = Context.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RuleOperation]
+  }
 }
 

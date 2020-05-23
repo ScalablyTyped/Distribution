@@ -19,14 +19,14 @@ object DeviceInfo {
   @scala.inline
   def apply(
     path: String,
-    displayName: Int | Double = null,
-    productId: Int | Double = null,
-    vendorId: Int | Double = null
+    displayName: js.UndefOr[Double] = js.undefined,
+    productId: js.UndefOr[Double] = js.undefined,
+    vendorId: js.UndefOr[Double] = js.undefined
   ): DeviceInfo = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
-    if (vendorId != null) __obj.updateDynamic("vendorId")(vendorId.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayName)) __obj.updateDynamic("displayName")(displayName.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(productId)) __obj.updateDynamic("productId")(productId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(vendorId)) __obj.updateDynamic("vendorId")(vendorId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceInfo]
   }
 }

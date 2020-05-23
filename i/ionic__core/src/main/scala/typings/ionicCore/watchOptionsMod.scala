@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object watchOptionsMod extends js.Object {
   def findCheckedOption(el: js.Any, tagName: String): js.UndefOr[HTMLElement] = js.native
-  def watchForOptions[T /* <: HTMLElement */](containerEl: HTMLElement, tagName: String, onChange: js.Function1[/* el */ js.UndefOr[T], Unit]): MutationObserver = js.native
+  def watchForOptions[T /* <: HTMLElement */](containerEl: HTMLElement, tagName: String, onChange: js.Function1[/* el */ js.UndefOr[T], Unit]): js.UndefOr[MutationObserver] = js.native
 }
 

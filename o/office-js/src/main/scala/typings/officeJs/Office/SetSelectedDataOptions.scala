@@ -58,20 +58,20 @@ object SetSelectedDataOptions {
     asyncContext: js.Any = null,
     cellFormat: js.Array[RangeFormatConfiguration] = null,
     coercionType: CoercionType | String = null,
-    imageHeight: Int | Double = null,
-    imageLeft: Int | Double = null,
-    imageTop: Int | Double = null,
-    imageWidth: Int | Double = null,
+    imageHeight: js.UndefOr[Double] = js.undefined,
+    imageLeft: js.UndefOr[Double] = js.undefined,
+    imageTop: js.UndefOr[Double] = js.undefined,
+    imageWidth: js.UndefOr[Double] = js.undefined,
     tableOptions: js.Object = null
   ): SetSelectedDataOptions = {
     val __obj = js.Dynamic.literal()
     if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext.asInstanceOf[js.Any])
     if (cellFormat != null) __obj.updateDynamic("cellFormat")(cellFormat.asInstanceOf[js.Any])
     if (coercionType != null) __obj.updateDynamic("coercionType")(coercionType.asInstanceOf[js.Any])
-    if (imageHeight != null) __obj.updateDynamic("imageHeight")(imageHeight.asInstanceOf[js.Any])
-    if (imageLeft != null) __obj.updateDynamic("imageLeft")(imageLeft.asInstanceOf[js.Any])
-    if (imageTop != null) __obj.updateDynamic("imageTop")(imageTop.asInstanceOf[js.Any])
-    if (imageWidth != null) __obj.updateDynamic("imageWidth")(imageWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageHeight)) __obj.updateDynamic("imageHeight")(imageHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageLeft)) __obj.updateDynamic("imageLeft")(imageLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageTop)) __obj.updateDynamic("imageTop")(imageTop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageWidth)) __obj.updateDynamic("imageWidth")(imageWidth.get.asInstanceOf[js.Any])
     if (tableOptions != null) __obj.updateDynamic("tableOptions")(tableOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetSelectedDataOptions]
   }

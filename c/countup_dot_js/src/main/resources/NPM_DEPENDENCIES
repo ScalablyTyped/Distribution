@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "countup.js" : "2.0.4"
+      "countup.js" : "2.0.5"
     }
   ],
   "test-dependencies" : [
     {
-      "countup.js" : "2.0.4"
+      "countup.js" : "2.0.5"
     }
   ],
   "compile-devDependencies" : [

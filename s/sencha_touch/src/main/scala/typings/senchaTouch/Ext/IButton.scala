@@ -16,52 +16,52 @@ trait IButton extends IComponent {
   /** [Config Option] (String) */
   var badgeText: js.UndefOr[java.lang.String] = js.undefined
   /** [Method] Returns the value of autoEvent
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getAutoEvent: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   /** [Method] Returns the value of badgeCls
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getBadgeCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   /** [Method] Returns the value of badgeText
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getBadgeText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   /** [Method] Returns the value of handler
-  		* @returns Function
-  		*/
+    * @returns Function
+    */
   var getHandler: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of icon
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getIcon: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   /** [Method] Returns the value of iconAlign
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getIconAlign: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   /** [Method] Returns the value of iconCls
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getIconCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   /** [Method] Returns the value of labelCls
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getLabelCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   /** [Method] Returns the value of pressedCls
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getPressedCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   /** [Method] Returns the value of pressedDelay
-  		* @returns Number/Boolean
-  		*/
+    * @returns Number/Boolean
+    */
   var getPressedDelay: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of scope
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getScope: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of text
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   /** [Config Option] (Function) */
   var handler: js.UndefOr[js.Any] = js.undefined
@@ -83,60 +83,60 @@ trait IButton extends IComponent {
   /** [Config Option] (Object) */
   var scope: js.UndefOr[js.Any] = js.undefined
   /** [Method] Sets the value of autoEvent
-  		* @param autoEvent String The new value.
-  		*/
+    * @param autoEvent String The new value.
+    */
   var setAutoEvent: js.UndefOr[js.Function1[/* autoEvent */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   /** [Method] Updates the badge text
-  		* @param text String
-  		*/
+    * @param text String
+    */
   var setBadge: js.UndefOr[js.Function1[/* text */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   /** [Method] Sets the value of badgeCls
-  		* @param badgeCls String The new value.
-  		*/
+    * @param badgeCls String The new value.
+    */
   var setBadgeCls: js.UndefOr[js.Function1[/* badgeCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   /** [Method] Sets the value of badgeText
-  		* @param badgeText String The new value.
-  		*/
+    * @param badgeText String The new value.
+    */
   var setBadgeText: js.UndefOr[js.Function1[/* badgeText */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   /** [Method] Sets the value of handler
-  		* @param handler Function The new value.
-  		*/
+    * @param handler Function The new value.
+    */
   var setHandler: js.UndefOr[js.Function1[/* handler */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of icon
-  		* @param icon String The new value.
-  		*/
+    * @param icon String The new value.
+    */
   var setIcon: js.UndefOr[js.Function1[/* icon */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   /** [Method] Sets the value of iconAlign
-  		* @param iconAlign String The new value.
-  		*/
+    * @param iconAlign String The new value.
+    */
   var setIconAlign: js.UndefOr[js.Function1[/* iconAlign */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   /** [Method] Updates the icon class
-  		* @param iconClass String
-  		*/
+    * @param iconClass String
+    */
   var setIconClass: js.UndefOr[js.Function1[/* iconClass */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   /** [Method] Sets the value of iconCls
-  		* @param iconCls String The new value.
-  		*/
+    * @param iconCls String The new value.
+    */
   var setIconCls: js.UndefOr[js.Function1[/* iconCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   /** [Method] Sets the value of labelCls
-  		* @param labelCls String The new value.
-  		*/
+    * @param labelCls String The new value.
+    */
   var setLabelCls: js.UndefOr[js.Function1[/* labelCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   /** [Method] Sets the value of pressedCls
-  		* @param pressedCls String The new value.
-  		*/
+    * @param pressedCls String The new value.
+    */
   var setPressedCls: js.UndefOr[js.Function1[/* pressedCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   /** [Method] Sets the value of pressedDelay
-  		* @param pressedDelay Number/Boolean The new value.
-  		*/
+    * @param pressedDelay Number/Boolean The new value.
+    */
   var setPressedDelay: js.UndefOr[js.Function1[/* pressedDelay */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of scope
-  		* @param scope Object The new value.
-  		*/
+    * @param scope Object The new value.
+    */
   var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of text
-  		* @param text String The new value.
-  		*/
+    * @param text String The new value.
+    */
   var setText: js.UndefOr[js.Function1[/* text */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   /** [Config Option] (String) */
   var text: js.UndefOr[java.lang.String] = js.undefined
@@ -184,7 +184,7 @@ object IButton {
     extend: java.lang.String = null,
     fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
     fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    flex: Int | Double = null,
+    flex: js.UndefOr[Double] = js.undefined,
     floating: js.UndefOr[Boolean] = js.undefined,
     floatingCls: java.lang.String = null,
     fullscreen: js.UndefOr[Boolean] = js.undefined,
@@ -393,7 +393,7 @@ object IButton {
     uses: Array = null,
     width: js.Any = null,
     xtype: java.lang.String = null,
-    zIndex: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined
   ): IButton = {
     val __obj = js.Dynamic.literal()
     if (addAfterListener != null) __obj.updateDynamic("addAfterListener")(js.Any.fromFunction4(addAfterListener))
@@ -415,7 +415,7 @@ object IButton {
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
     if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
     if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered.asInstanceOf[js.Any])
+    if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered.get.asInstanceOf[js.Any])
     if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
     if (cls != null) __obj.updateDynamic("cls")(cls.asInstanceOf[js.Any])
     if (componentCls != null) __obj.updateDynamic("componentCls")(componentCls.asInstanceOf[js.Any])
@@ -424,7 +424,7 @@ object IButton {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (disable != null) __obj.updateDynamic("disable")(js.Any.fromFunction0(disable))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (disabledCls != null) __obj.updateDynamic("disabledCls")(disabledCls.asInstanceOf[js.Any])
     if (dock != null) __obj.updateDynamic("dock")(dock.asInstanceOf[js.Any])
     if (docked != null) __obj.updateDynamic("docked")(docked.asInstanceOf[js.Any])
@@ -435,10 +435,10 @@ object IButton {
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (fireAction != null) __obj.updateDynamic("fireAction")(js.Any.fromFunction4(fireAction))
     if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
-    if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
-    if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating.asInstanceOf[js.Any])
+    if (!js.isUndefined(flex)) __obj.updateDynamic("flex")(flex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating.get.asInstanceOf[js.Any])
     if (floatingCls != null) __obj.updateDynamic("floatingCls")(floatingCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.get.asInstanceOf[js.Any])
     if (getAlignmentInfo != null) __obj.updateDynamic("getAlignmentInfo")(js.Any.fromFunction2(getAlignmentInfo))
     if (getAutoEvent != null) __obj.updateDynamic("getAutoEvent")(js.Any.fromFunction0(getAutoEvent))
     if (getBadgeCls != null) __obj.updateDynamic("getBadgeCls")(js.Any.fromFunction0(getBadgeCls))
@@ -505,11 +505,11 @@ object IButton {
     if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
     if (hasParent != null) __obj.updateDynamic("hasParent")(js.Any.fromFunction0(hasParent))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (hiddenCls != null) __obj.updateDynamic("hiddenCls")(hiddenCls.asInstanceOf[js.Any])
     if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction1(hide))
     if (hideAnimation != null) __obj.updateDynamic("hideAnimation")(hideAnimation.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideOnMaskTap)) __obj.updateDynamic("hideOnMaskTap")(hideOnMaskTap.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideOnMaskTap)) __obj.updateDynamic("hideOnMaskTap")(hideOnMaskTap.get.asInstanceOf[js.Any])
     if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (iconAlign != null) __obj.updateDynamic("iconAlign")(iconAlign.asInstanceOf[js.Any])
@@ -523,7 +523,7 @@ object IButton {
     if (isXType != null) __obj.updateDynamic("isXType")(js.Any.fromFunction2(isXType))
     if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
     if (labelCls != null) __obj.updateDynamic("labelCls")(labelCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(layoutOnOrientationChange)) __obj.updateDynamic("layoutOnOrientationChange")(layoutOnOrientationChange.asInstanceOf[js.Any])
+    if (!js.isUndefined(layoutOnOrientationChange)) __obj.updateDynamic("layoutOnOrientationChange")(layoutOnOrientationChange.get.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
@@ -532,9 +532,9 @@ object IButton {
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.get.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
-    if (!js.isUndefined(monitorOrientation)) __obj.updateDynamic("monitorOrientation")(monitorOrientation.asInstanceOf[js.Any])
+    if (!js.isUndefined(monitorOrientation)) __obj.updateDynamic("monitorOrientation")(monitorOrientation.get.asInstanceOf[js.Any])
     if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
     if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5(on))
     if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4(onAfter))
@@ -623,12 +623,12 @@ object IButton {
     if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
     if (showAnimation != null) __obj.updateDynamic("showAnimation")(showAnimation.asInstanceOf[js.Any])
     if (showBy != null) __obj.updateDynamic("showBy")(js.Any.fromFunction2(showBy))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopMaskTapEvent)) __obj.updateDynamic("stopMaskTapEvent")(stopMaskTapEvent.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopMaskTapEvent)) __obj.updateDynamic("stopMaskTapEvent")(stopMaskTapEvent.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (styleHtmlCls != null) __obj.updateDynamic("styleHtmlCls")(styleHtmlCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(styleHtmlContent)) __obj.updateDynamic("styleHtmlContent")(styleHtmlContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(styleHtmlContent)) __obj.updateDynamic("styleHtmlContent")(styleHtmlContent.get.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
@@ -644,7 +644,7 @@ object IButton {
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (xtype != null) __obj.updateDynamic("xtype")(xtype.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IButton]
   }
 }

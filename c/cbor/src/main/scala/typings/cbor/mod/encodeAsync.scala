@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object encodeAsync
   extends TopLevel[
-      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Encoder.encodeAsync */ js.Any
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Encoder.encodeOne */ js.Any
     ]
 

@@ -16,10 +16,10 @@ object HasteMap {
   def apply(
     hasteFS: default,
     moduleMap: typings.jestHasteMap.moduleMapMod.default,
-    __hasteMapForTest: InternalHasteMap = null
+    __hasteMapForTest: js.UndefOr[Null | InternalHasteMap] = js.undefined
   ): HasteMap = {
     val __obj = js.Dynamic.literal(hasteFS = hasteFS.asInstanceOf[js.Any], moduleMap = moduleMap.asInstanceOf[js.Any])
-    if (__hasteMapForTest != null) __obj.updateDynamic("__hasteMapForTest")(__hasteMapForTest.asInstanceOf[js.Any])
+    if (!js.isUndefined(__hasteMapForTest)) __obj.updateDynamic("__hasteMapForTest")(__hasteMapForTest.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasteMap]
   }
 }

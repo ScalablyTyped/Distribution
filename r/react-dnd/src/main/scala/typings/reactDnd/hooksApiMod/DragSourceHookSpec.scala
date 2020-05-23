@@ -69,7 +69,7 @@ trait DragSourceHookSpec[DragObject /* <: DragObjectWithType */, DropResult, Col
 
 object DragSourceHookSpec {
   @scala.inline
-  def apply[DragObject /* <: DragObjectWithType */, DropResult, CollectedProps](
+  def apply[DragObject, DropResult, CollectedProps](
     item: DragObject,
     begin: /* monitor */ DragSourceMonitor => js.UndefOr[DragObject | Unit] = null,
     canDrag: Boolean | (js.Function1[/* monitor */ DragSourceMonitor, Boolean]) = null,

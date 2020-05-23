@@ -4,17 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.NegativeBarFormat")
-@js.native
-class NegativeBarFormat protected () extends js.Object {
-  val Application: typings.activexExcel.Excel.Application = js.native
-  val BorderColor: FormatColor = js.native
-  var BorderColorType: XlDataBarNegativeColorType = js.native
-  val Color: FormatColor = js.native
-  var ColorType: XlDataBarNegativeColorType = js.native
-  val Creator: XlCreator = js.native
+trait NegativeBarFormat extends js.Object {
+  val Application: typings.activexExcel.Excel.Application
+  val BorderColor: FormatColor
+  var BorderColorType: XlDataBarNegativeColorType
+  val Color: FormatColor
+  var ColorType: XlDataBarNegativeColorType
+  val Creator: XlCreator
   @JSName("Excel.NegativeBarFormat_typekey")
-  var ExcelDotNegativeBarFormat_typekey: NegativeBarFormat = js.native
-  val Parent: js.Any = js.native
+  var ExcelDotNegativeBarFormat_typekey: NegativeBarFormat
+  val Parent: js.Any
+}
+
+object NegativeBarFormat {
+  @scala.inline
+  def apply(
+    Application: Application,
+    BorderColor: FormatColor,
+    BorderColorType: XlDataBarNegativeColorType,
+    Color: FormatColor,
+    ColorType: XlDataBarNegativeColorType,
+    Creator: XlCreator,
+    ExcelDotNegativeBarFormat_typekey: NegativeBarFormat,
+    Parent: js.Any
+  ): NegativeBarFormat = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], BorderColor = BorderColor.asInstanceOf[js.Any], BorderColorType = BorderColorType.asInstanceOf[js.Any], Color = Color.asInstanceOf[js.Any], ColorType = ColorType.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
+    __obj.updateDynamic("Excel.NegativeBarFormat_typekey")(ExcelDotNegativeBarFormat_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NegativeBarFormat]
+  }
 }
 

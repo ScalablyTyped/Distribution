@@ -242,6 +242,19 @@ trait RAM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListResourceSharePermissionsResponse, Unit]
   ): Request[ListResourceSharePermissionsResponse, AWSError] = js.native
   /**
+    * Lists the shareable resource types supported by AWS RAM.
+    */
+  def listResourceTypes(): Request[ListResourceTypesResponse, AWSError] = js.native
+  def listResourceTypes(callback: js.Function2[/* err */ AWSError, /* data */ ListResourceTypesResponse, Unit]): Request[ListResourceTypesResponse, AWSError] = js.native
+  /**
+    * Lists the shareable resource types supported by AWS RAM.
+    */
+  def listResourceTypes(params: ListResourceTypesRequest): Request[ListResourceTypesResponse, AWSError] = js.native
+  def listResourceTypes(
+    params: ListResourceTypesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListResourceTypesResponse, Unit]
+  ): Request[ListResourceTypesResponse, AWSError] = js.native
+  /**
     * Lists the resources that you added to a resource shares or the resources that are shared with you.
     */
   def listResources(): Request[ListResourcesResponse, AWSError] = js.native

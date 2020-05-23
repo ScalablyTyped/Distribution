@@ -4,10 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.ShaderDefineOrOperator")
-@js.native
-class ShaderDefineOrOperator () extends ShaderDefineExpression {
-  var leftOperand: ShaderDefineExpression = js.native
-  var rightOperand: ShaderDefineExpression = js.native
+trait ShaderDefineOrOperator extends ShaderDefineExpression {
+  var leftOperand: ShaderDefineExpression
+  var rightOperand: ShaderDefineExpression
+}
+
+object ShaderDefineOrOperator {
+  @scala.inline
+  def apply(
+    isTrue: org.scalablytyped.runtime.StringDictionary[String] => Boolean,
+    leftOperand: ShaderDefineExpression,
+    rightOperand: ShaderDefineExpression
+  ): ShaderDefineOrOperator = {
+    val __obj = js.Dynamic.literal(isTrue = js.Any.fromFunction1(isTrue), leftOperand = leftOperand.asInstanceOf[js.Any], rightOperand = rightOperand.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ShaderDefineOrOperator]
+  }
 }
 

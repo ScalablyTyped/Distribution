@@ -1,6 +1,5 @@
 package typings.deezerSdk.DeezerSdk
 
-import typings.deezerSdk.AnonArtist
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -365,7 +364,7 @@ trait Player extends js.Object {
     *
     */
   def setBlindTestMode(blindTestMode: Boolean): Unit = js.native
-  def setBlindTestMode(blindTestMode: Boolean, trackInfo: AnonArtist): Unit = js.native
+  def setBlindTestMode(blindTestMode: Boolean, trackInfo: typings.deezerSdk.anon.Artist): Unit = js.native
   /**
     * See: {@link https://developers.deezer.com/sdk/javascript/controls | Control a player}
     */

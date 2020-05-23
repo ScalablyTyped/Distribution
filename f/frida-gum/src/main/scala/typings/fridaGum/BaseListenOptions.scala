@@ -13,9 +13,9 @@ trait BaseListenOptions extends js.Object {
 
 object BaseListenOptions {
   @scala.inline
-  def apply(backlog: Int | Double = null): BaseListenOptions = {
+  def apply(backlog: js.UndefOr[Double] = js.undefined): BaseListenOptions = {
     val __obj = js.Dynamic.literal()
-    if (backlog != null) __obj.updateDynamic("backlog")(backlog.asInstanceOf[js.Any])
+    if (!js.isUndefined(backlog)) __obj.updateDynamic("backlog")(backlog.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseListenOptions]
   }
 }

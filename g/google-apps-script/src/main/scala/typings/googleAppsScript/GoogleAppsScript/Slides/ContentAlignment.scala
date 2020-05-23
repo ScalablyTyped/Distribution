@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Slides
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,20 +30,6 @@ object ContentAlignment extends js.Object {
   
   @js.native
   sealed trait UNSUPPORTED extends ContentAlignment
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ContentAlignment with Double] = js.native
-  /* 3 */ @js.native
-  object BOTTOM extends TopLevel[BOTTOM with Double]
-  
-  /* 2 */ @js.native
-  object MIDDLE extends TopLevel[MIDDLE with Double]
-  
-  /* 1 */ @js.native
-  object TOP extends TopLevel[TOP with Double]
-  
-  /* 0 */ @js.native
-  object UNSUPPORTED extends TopLevel[UNSUPPORTED with Double]
   
 }
 

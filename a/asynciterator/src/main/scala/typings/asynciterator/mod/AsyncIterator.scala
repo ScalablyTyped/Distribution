@@ -11,6 +11,7 @@ import typings.asynciterator.asynciteratorStrings.CLOSING
 import typings.asynciterator.asynciteratorStrings.ENDED
 import typings.asynciterator.asynciteratorStrings.INIT
 import typings.asynciterator.asynciteratorStrings.OPEN
+import typings.node.NodeJS.ReadableStream
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -72,5 +73,12 @@ object AsyncIterator extends js.Object {
   def range(start: Double): IntegerIterator = js.native
   def range(start: Double, end: Double): IntegerIterator = js.native
   def range(start: Double, end: Double, step: Double): IntegerIterator = js.native
+  def wrap[S](): TransformIterator[S, _] = js.native
+  def wrap[S](source: AsyncIterator[S]): TransformIterator[S, _] = js.native
+  def wrap[S](source: AsyncIterator[S], options: TransformIteratorOptions[S]): TransformIterator[S, _] = js.native
+  def wrap[S](source: TransformIteratorOptions[S]): TransformIterator[S, _] = js.native
+  def wrap[S](source: TransformIteratorOptions[S], options: TransformIteratorOptions[S]): TransformIterator[S, _] = js.native
+  def wrap[S](source: ReadableStream): TransformIterator[S, _] = js.native
+  def wrap[S](source: ReadableStream, options: TransformIteratorOptions[S]): TransformIterator[S, _] = js.native
 }
 

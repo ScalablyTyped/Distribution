@@ -4,17 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("H.geo.LineString")
 @js.native
-/**
-  * Constructor
-  * @param opt_latLngAlts {number[]=} - An optional array of latitude, longitude and altitude triples to initialize the LineString with.
-  * @param opt_ctx {H.geo.AltitudeContext=} - An optional altitude context for all altitudes contained in this LineString.
-  * @throws {H.lang.InvalidArgumentError} - in case of invalid lat, lng, alt values
-  */
-class LineString () extends AbstractGeometry {
-  def this(opt_latLngAlts: js.Array[Double]) = this()
-  def this(opt_latLngAlts: js.Array[Double], opt_ctx: AltitudeContext) = this()
+trait LineString extends AbstractGeometry {
   /**
     * A utility method to iterate over the points of a line string.
     * @param eachFn {function(lat, lng, alt, index)} - The function to invoke for every point. It gets the point's latitude, longitude, altitude and index as arguments.
@@ -116,25 +107,5 @@ class LineString () extends AbstractGeometry {
   def spliceLatLngAlts(index: Double): js.Array[Double] = js.native
   def spliceLatLngAlts(index: Double, opt_nRemove: Double): js.Array[Double] = js.native
   def spliceLatLngAlts(index: Double, opt_nRemove: Double, opt_latLngAlts: js.Array[Double]): js.Array[Double] = js.native
-}
-
-/* static members */
-@JSGlobal("H.geo.LineString")
-@js.native
-object LineString extends js.Object {
-  /**
-    * This method initializes a new LineString with an array of lat, lng values. Arrays are expected to have an even length with the format [lat, lng, lat, lng, ...].
-    * @param latLngs {number[]} - the array of lat, lng value.
-    * @return {H.geo.LineString} - The LineString containing the lat, lng values
-    * @throws {H.lang.InvalidArgumentError} - throws an error in case the latLngs array has an odd length
-    */
-  def fromLatLngArray(latLngs: js.Array[Double]): LineString = js.native
-  /**
-    * To obtain whether a leg (formed by the given two longitudes) crosses the International Date Line.
-    * @param lng1 {H.geo.Longitude} - The start longitude of the leg
-    * @param lng2 {H.geo.Longitude} - The end longitude of the leg
-    * @return {boolean}
-    */
-  def isDBC(lng1: Longitude, lng2: Longitude): Boolean = js.native
 }
 

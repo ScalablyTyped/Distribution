@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("vega-typings/types/spec/util", JSImport.Namespace)
 @js.native
 object utilMod extends js.Object {
+  type Vector10[T] = js.Tuple10[T, T, T, T, T, T, T, T, T, T]
+  type Vector12[T] = js.Tuple12[T, T, T, T, T, T, T, T, T, T, T, T]
   type Vector2[T] = js.Tuple2[T, T]
   type Vector3[T] = js.Tuple3[T, T, T]
   type Vector4[T] = js.Tuple4[T, T, T, T]

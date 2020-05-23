@@ -14,10 +14,13 @@ trait INameAttrList extends js.Object {
 
 object INameAttrList {
   @scala.inline
-  def apply(attr: StringDictionary[IAttrValue] = null, name: String = null): INameAttrList = {
+  def apply(
+    attr: js.UndefOr[Null | StringDictionary[IAttrValue]] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined
+  ): INameAttrList = {
     val __obj = js.Dynamic.literal()
-    if (attr != null) __obj.updateDynamic("attr")(attr.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(attr)) __obj.updateDynamic("attr")(attr.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[INameAttrList]
   }
 }

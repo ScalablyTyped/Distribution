@@ -12,7 +12,7 @@ object ITagPickerDemoPageState {
   @scala.inline
   def apply(isPickerDisabled: js.UndefOr[Boolean] = js.undefined): ITagPickerDemoPageState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isPickerDisabled)) __obj.updateDynamic("isPickerDisabled")(isPickerDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPickerDisabled)) __obj.updateDynamic("isPickerDisabled")(isPickerDisabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITagPickerDemoPageState]
   }
 }

@@ -144,7 +144,7 @@ package object cloudwatchMod {
     - typings.awsSdk.awsSdkStrings.Kilobytes
     - typings.awsSdk.awsSdkStrings.Megabytes
     - typings.awsSdk.awsSdkStrings.Gigabytes
-    - typings.awsSdk.awsSdkStrings.Terabytes
+    - typings.awsSdk.awsSdkStrings.Terabytes_
     - typings.awsSdk.awsSdkStrings.Bits_
     - typings.awsSdk.awsSdkStrings.Kilobits
     - typings.awsSdk.awsSdkStrings.Megabits

@@ -1,8 +1,8 @@
 package typings.keystonejsKeystone.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.keystonejsKeystone.AnonApps
-import typings.keystonejsKeystone.AnonConfig
+import typings.keystonejsKeystone.anon.Apps
+import typings.keystonejsKeystone.anon.Config
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 class Keystone[ListNames /* <: String */] protected () extends js.Object {
   def this(options: KeystoneOptions) = this()
   def connect(): js.Promise[Unit] = js.native
-  def createAuthStrategy(options: AnonConfig[ListNames]): js.Any = js.native
+  def createAuthStrategy(options: Config[ListNames]): js.Any = js.native
   // tslint:disable-next-line:no-unnecessary-generics
   def createItems[ItemType](
     items: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -27,6 +27,6 @@ class Keystone[ListNames /* <: String */] protected () extends js.Object {
   def executeQuery[Output](query: String): Output = js.native
   def executeQuery[Output](query: String, config: QueryExecutionSchema): Output = js.native
   def extendGraphQLSchema(schema: GraphQLExtensionSchema): Unit = js.native
-  def prepare(options: AnonApps): js.Promise[KeystonePrepareResult] = js.native
+  def prepare(options: Apps): js.Promise[KeystonePrepareResult] = js.native
 }
 

@@ -147,32 +147,32 @@ object PromisePollerOptions {
   @scala.inline
   def apply[T](
     taskFn: () => T | js.Thenable[T],
-    increment: Int | Double = null,
-    interval: Int | Double = null,
-    masterTimeout: Int | Double = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
+    increment: js.UndefOr[Double] = js.undefined,
+    interval: js.UndefOr[Double] = js.undefined,
+    masterTimeout: js.UndefOr[Double] = js.undefined,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
     name: String = null,
     progressCallback: (/* retriesRemaining */ Double, /* error */ js.Any) => Unit = null,
-    retries: Int | Double = null,
+    retries: js.UndefOr[Double] = js.undefined,
     shouldContinue: (/* reason */ js.Any, /* value */ js.UndefOr[T]) => Boolean = null,
-    start: Int | Double = null,
+    start: js.UndefOr[Double] = js.undefined,
     strategy: `fixed-interval` | `linear-backoff` | `exponential-backoff` = null,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): PromisePollerOptions[T] = {
     val __obj = js.Dynamic.literal(taskFn = js.Any.fromFunction0(taskFn))
-    if (increment != null) __obj.updateDynamic("increment")(increment.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (masterTimeout != null) __obj.updateDynamic("masterTimeout")(masterTimeout.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(increment)) __obj.updateDynamic("increment")(increment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(masterTimeout)) __obj.updateDynamic("masterTimeout")(masterTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (progressCallback != null) __obj.updateDynamic("progressCallback")(js.Any.fromFunction2(progressCallback))
-    if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
+    if (!js.isUndefined(retries)) __obj.updateDynamic("retries")(retries.get.asInstanceOf[js.Any])
     if (shouldContinue != null) __obj.updateDynamic("shouldContinue")(js.Any.fromFunction2(shouldContinue))
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     if (strategy != null) __obj.updateDynamic("strategy")(strategy.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromisePollerOptions[T]]
   }
 }

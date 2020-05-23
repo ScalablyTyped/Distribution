@@ -3,7 +3,7 @@ package typings.storybookAddonKnobs.arrayMod
 import typings.react.mod.ChangeEvent
 import typings.react.mod.Component
 import typings.std.HTMLTextAreaElement
-import typings.storybookAddonKnobs.ReadonlyArrayTypeProps
+import typings.storybookAddonKnobs.anon.ReadonlyArrayTypeProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ResourceDataSyncS3Destination extends js.Object {
   /**
-    * The ARN of an encryption key for a destination in Amazon S3. Must belong to the same Region as the destination Amazon S3 bucket.
+    * The ARN of an encryption key for a destination in Amazon S3. Must belong to the same Region as the destination S3 bucket.
     */
   var AWSKMSKeyARN: js.UndefOr[ResourceDataSyncAWSKMSKeyARN] = js.native
   /**
-    * The name of the Amazon S3 bucket where the aggregated data is stored.
+    * The name of the S3 bucket where the aggregated data is stored.
     */
   var BucketName: ResourceDataSyncS3BucketName = js.native
   /**
@@ -23,7 +23,7 @@ trait ResourceDataSyncS3Destination extends js.Object {
     */
   var Prefix: js.UndefOr[ResourceDataSyncS3Prefix] = js.native
   /**
-    * The AWS Region with the Amazon S3 bucket targeted by the Resource Data Sync.
+    * The AWS Region with the S3 bucket targeted by the Resource Data Sync.
     */
   var Region: ResourceDataSyncS3Region = js.native
   /**

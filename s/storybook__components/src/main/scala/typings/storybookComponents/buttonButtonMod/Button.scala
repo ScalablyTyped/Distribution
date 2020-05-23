@@ -2,9 +2,9 @@ package typings.storybookComponents.buttonButtonMod
 
 import typings.react.mod.ReactElement
 import typings.react.mod.RefAttributes
-import typings.storybookComponents.AnonIsLink
-import typings.storybookComponents.PartialButtonPropsRefAttr
-import typings.storybookComponents.WeakValidationMapButtonPr
+import typings.storybookComponents.anon.IsLink
+import typings.storybookComponents.anon.PartialButtonPropsRefAttr
+import typings.storybookComponents.anon.WeakValidationMapButtonPr
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 object Button extends js.Object {
   @JSName("$$typeof")
   val DollarDollartypeof: js.Symbol = js.native
-  var defaultProps: js.UndefOr[AnonIsLink | PartialButtonPropsRefAttr] = js.native
+  var defaultProps: js.UndefOr[IsLink | PartialButtonPropsRefAttr] = js.native
   var displayName: js.UndefOr[String] = js.native
   var propTypes: js.UndefOr[WeakValidationMapButtonPr] = js.native
   /**

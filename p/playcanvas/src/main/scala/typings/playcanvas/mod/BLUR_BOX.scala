@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.BLUR_BOX
-  * @type {number}
-  * @description Box filter.
+  * Box filter.
   */
 @JSImport("playcanvas", "BLUR_BOX")
 @js.native

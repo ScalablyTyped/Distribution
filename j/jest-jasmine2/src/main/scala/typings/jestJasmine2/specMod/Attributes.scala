@@ -1,7 +1,7 @@
 package typings.jestJasmine2.specMod
 
-import typings.jestJasmine2.AnonAfters
-import typings.jestJasmine2.AnonCancel
+import typings.jestJasmine2.anon.Afters
+import typings.jestJasmine2.anon.Cancel
 import typings.jestJasmine2.queueRunnerMod.Options
 import typings.jestJasmine2.queueRunnerMod.QueueableFn
 import typings.jestTypes.configMod.Path
@@ -12,10 +12,10 @@ import scala.scalajs.js.annotation._
 trait Attributes extends js.Object {
   var description: String
   var id: String
-  var queueRunnerFactory: js.Function1[/* options */ Options, AnonCancel]
+  var queueRunnerFactory: js.Function1[/* options */ Options, Cancel]
   var queueableFn: QueueableFn
   var throwOnExpectationFailure: js.Any
-  def beforeAndAfterFns(): AnonAfters
+  def beforeAndAfterFns(): Afters
   def getSpecName(spec: Spec): String
   def getTestPath(): Path
   def onStart(context: Spec): Unit
@@ -26,13 +26,13 @@ trait Attributes extends js.Object {
 object Attributes {
   @scala.inline
   def apply(
-    beforeAndAfterFns: () => AnonAfters,
+    beforeAndAfterFns: () => Afters,
     description: String,
     getSpecName: Spec => String,
     getTestPath: () => Path,
     id: String,
     onStart: Spec => Unit,
-    queueRunnerFactory: /* options */ Options => AnonCancel,
+    queueRunnerFactory: /* options */ Options => Cancel,
     queueableFn: QueueableFn,
     resultCallback: SpecResult => Unit,
     throwOnExpectationFailure: js.Any,

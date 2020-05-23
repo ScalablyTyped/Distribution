@@ -15,11 +15,11 @@ trait AccessPoint extends js.Object {
     */
   var Name: AccessPointName = js.native
   /**
-    * Indicates whether this access point allows access from the public Internet. If VpcConfiguration is specified for this access point, then NetworkOrigin is VPC, and the access point doesn't allow access from the public Internet. Otherwise, NetworkOrigin is Internet, and the access point allows access from the public Internet, subject to the access point and bucket access policies.
+    * Indicates whether this access point allows access from the public internet. If VpcConfiguration is specified for this access point, then NetworkOrigin is VPC, and the access point doesn't allow access from the public internet. Otherwise, NetworkOrigin is Internet, and the access point allows access from the public internet, subject to the access point and bucket access policies.
     */
   var NetworkOrigin: typings.awsSdk.s3controlMod.NetworkOrigin = js.native
   /**
-    * The Virtual Private Cloud (VPC) configuration for this access point, if one exists.
+    * The virtual private cloud (VPC) configuration for this access point, if one exists.
     */
   var VpcConfiguration: js.UndefOr[typings.awsSdk.s3controlMod.VpcConfiguration] = js.native
 }

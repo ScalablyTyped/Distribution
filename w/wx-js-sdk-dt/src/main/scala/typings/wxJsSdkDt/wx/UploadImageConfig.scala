@@ -28,13 +28,13 @@ object UploadImageConfig {
     cancel: () => Unit = null,
     complete: /* res */ js.UndefOr[js.Any] => Unit = null,
     fail: /* error */ js.UndefOr[js.Any] => Unit = null,
-    isShowProgressTips: Int | Double = null
+    isShowProgressTips: js.UndefOr[Double] = js.undefined
   ): UploadImageConfig = {
     val __obj = js.Dynamic.literal(localId = localId.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction0(cancel))
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (isShowProgressTips != null) __obj.updateDynamic("isShowProgressTips")(isShowProgressTips.asInstanceOf[js.Any])
+    if (!js.isUndefined(isShowProgressTips)) __obj.updateDynamic("isShowProgressTips")(isShowProgressTips.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadImageConfig]
   }
 }

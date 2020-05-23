@@ -15,7 +15,7 @@ trait InstancePatchState extends js.Object {
     */
   var FailedCount: js.UndefOr[PatchFailedCount] = js.native
   /**
-    * An https URL or an Amazon S3 path-style URL to a list of patches to be installed. This patch installation list, which you maintain in an Amazon S3 bucket in YAML format and specify in the SSM document AWS-RunPatchBaseline, overrides the patches specified by the default patch baseline. For more information about the InstallOverrideList parameter, see About the SSM Document AWS-RunPatchBaseline in the AWS Systems Manager User Guide.
+    * An https URL or an Amazon S3 path-style URL to a list of patches to be installed. This patch installation list, which you maintain in an S3 bucket in YAML format and specify in the SSM document AWS-RunPatchBaseline, overrides the patches specified by the default patch baseline. For more information about the InstallOverrideList parameter, see About the SSM document AWS-RunPatchBaseline in the AWS Systems Manager User Guide.
     */
   var InstallOverrideList: js.UndefOr[typings.awsSdk.ssmMod.InstallOverrideList] = js.native
   /**
@@ -93,34 +93,34 @@ object InstancePatchState {
     OperationEndTime: DateTime,
     OperationStartTime: DateTime,
     PatchGroup: PatchGroup,
-    FailedCount: Int | Double = null,
+    FailedCount: js.UndefOr[PatchFailedCount] = js.undefined,
     InstallOverrideList: InstallOverrideList = null,
-    InstalledCount: Int | Double = null,
-    InstalledOtherCount: Int | Double = null,
-    InstalledPendingRebootCount: Int | Double = null,
-    InstalledRejectedCount: Int | Double = null,
+    InstalledCount: js.UndefOr[PatchInstalledCount] = js.undefined,
+    InstalledOtherCount: js.UndefOr[PatchInstalledOtherCount] = js.undefined,
+    InstalledPendingRebootCount: js.UndefOr[PatchInstalledPendingRebootCount] = js.undefined,
+    InstalledRejectedCount: js.UndefOr[PatchInstalledRejectedCount] = js.undefined,
     LastNoRebootInstallOperationTime: DateTime = null,
-    MissingCount: Int | Double = null,
-    NotApplicableCount: Int | Double = null,
+    MissingCount: js.UndefOr[PatchMissingCount] = js.undefined,
+    NotApplicableCount: js.UndefOr[PatchNotApplicableCount] = js.undefined,
     OwnerInformation: OwnerInformation = null,
     RebootOption: RebootOption = null,
     SnapshotId: SnapshotId = null,
-    UnreportedNotApplicableCount: Int | Double = null
+    UnreportedNotApplicableCount: js.UndefOr[PatchUnreportedNotApplicableCount] = js.undefined
   ): InstancePatchState = {
     val __obj = js.Dynamic.literal(BaselineId = BaselineId.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any], Operation = Operation.asInstanceOf[js.Any], OperationEndTime = OperationEndTime.asInstanceOf[js.Any], OperationStartTime = OperationStartTime.asInstanceOf[js.Any], PatchGroup = PatchGroup.asInstanceOf[js.Any])
-    if (FailedCount != null) __obj.updateDynamic("FailedCount")(FailedCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(FailedCount)) __obj.updateDynamic("FailedCount")(FailedCount.get.asInstanceOf[js.Any])
     if (InstallOverrideList != null) __obj.updateDynamic("InstallOverrideList")(InstallOverrideList.asInstanceOf[js.Any])
-    if (InstalledCount != null) __obj.updateDynamic("InstalledCount")(InstalledCount.asInstanceOf[js.Any])
-    if (InstalledOtherCount != null) __obj.updateDynamic("InstalledOtherCount")(InstalledOtherCount.asInstanceOf[js.Any])
-    if (InstalledPendingRebootCount != null) __obj.updateDynamic("InstalledPendingRebootCount")(InstalledPendingRebootCount.asInstanceOf[js.Any])
-    if (InstalledRejectedCount != null) __obj.updateDynamic("InstalledRejectedCount")(InstalledRejectedCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstalledCount)) __obj.updateDynamic("InstalledCount")(InstalledCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstalledOtherCount)) __obj.updateDynamic("InstalledOtherCount")(InstalledOtherCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstalledPendingRebootCount)) __obj.updateDynamic("InstalledPendingRebootCount")(InstalledPendingRebootCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstalledRejectedCount)) __obj.updateDynamic("InstalledRejectedCount")(InstalledRejectedCount.get.asInstanceOf[js.Any])
     if (LastNoRebootInstallOperationTime != null) __obj.updateDynamic("LastNoRebootInstallOperationTime")(LastNoRebootInstallOperationTime.asInstanceOf[js.Any])
-    if (MissingCount != null) __obj.updateDynamic("MissingCount")(MissingCount.asInstanceOf[js.Any])
-    if (NotApplicableCount != null) __obj.updateDynamic("NotApplicableCount")(NotApplicableCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(MissingCount)) __obj.updateDynamic("MissingCount")(MissingCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(NotApplicableCount)) __obj.updateDynamic("NotApplicableCount")(NotApplicableCount.get.asInstanceOf[js.Any])
     if (OwnerInformation != null) __obj.updateDynamic("OwnerInformation")(OwnerInformation.asInstanceOf[js.Any])
     if (RebootOption != null) __obj.updateDynamic("RebootOption")(RebootOption.asInstanceOf[js.Any])
     if (SnapshotId != null) __obj.updateDynamic("SnapshotId")(SnapshotId.asInstanceOf[js.Any])
-    if (UnreportedNotApplicableCount != null) __obj.updateDynamic("UnreportedNotApplicableCount")(UnreportedNotApplicableCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(UnreportedNotApplicableCount)) __obj.updateDynamic("UnreportedNotApplicableCount")(UnreportedNotApplicableCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstancePatchState]
   }
 }

@@ -52,7 +52,7 @@ object RdsDbInstance {
     DbPassword: String = null,
     DbUser: String = null,
     Engine: String = null,
-    MissingOnRds: js.UndefOr[scala.Boolean] = js.undefined,
+    MissingOnRds: js.UndefOr[Boolean] = js.undefined,
     RdsDbInstanceArn: String = null,
     Region: String = null,
     StackId: String = null
@@ -63,7 +63,7 @@ object RdsDbInstance {
     if (DbPassword != null) __obj.updateDynamic("DbPassword")(DbPassword.asInstanceOf[js.Any])
     if (DbUser != null) __obj.updateDynamic("DbUser")(DbUser.asInstanceOf[js.Any])
     if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
-    if (!js.isUndefined(MissingOnRds)) __obj.updateDynamic("MissingOnRds")(MissingOnRds.asInstanceOf[js.Any])
+    if (!js.isUndefined(MissingOnRds)) __obj.updateDynamic("MissingOnRds")(MissingOnRds.get.asInstanceOf[js.Any])
     if (RdsDbInstanceArn != null) __obj.updateDynamic("RdsDbInstanceArn")(RdsDbInstanceArn.asInstanceOf[js.Any])
     if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
     if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])

@@ -17,12 +17,12 @@ object Topic {
     topic: String,
     autoCommit: js.UndefOr[Boolean] = js.undefined,
     encoding: String = null,
-    offset: Int | Double = null
+    offset: js.UndefOr[Double] = js.undefined
   ): Topic = {
     val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoCommit)) __obj.updateDynamic("autoCommit")(autoCommit.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCommit)) __obj.updateDynamic("autoCommit")(autoCommit.get.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Topic]
   }
 }

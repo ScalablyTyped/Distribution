@@ -20,9 +20,9 @@ trait SodaCollectionNamesOptions extends js.Object {
 
 object SodaCollectionNamesOptions {
   @scala.inline
-  def apply(limit: Int | Double = null, startsWith: String = null): SodaCollectionNamesOptions = {
+  def apply(limit: js.UndefOr[Double] = js.undefined, startsWith: String = null): SodaCollectionNamesOptions = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (startsWith != null) __obj.updateDynamic("startsWith")(startsWith.asInstanceOf[js.Any])
     __obj.asInstanceOf[SodaCollectionNamesOptions]
   }

@@ -41,7 +41,7 @@ object UnmarshalledEdge {
   def apply(
     Aliases: js.Array[UnmarshalledAlias] = null,
     EndTime: Date = null,
-    ReferenceId: Int | Double = null,
+    ReferenceId: js.UndefOr[Double] = js.undefined,
     ResponseTimeHistogram: js.Array[UnmarshalledHistogramEntry] = null,
     StartTime: Date = null,
     SummaryStatistics: UnmarshalledEdgeStatistics = null
@@ -49,7 +49,7 @@ object UnmarshalledEdge {
     val __obj = js.Dynamic.literal()
     if (Aliases != null) __obj.updateDynamic("Aliases")(Aliases.asInstanceOf[js.Any])
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (ReferenceId != null) __obj.updateDynamic("ReferenceId")(ReferenceId.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReferenceId)) __obj.updateDynamic("ReferenceId")(ReferenceId.get.asInstanceOf[js.Any])
     if (ResponseTimeHistogram != null) __obj.updateDynamic("ResponseTimeHistogram")(ResponseTimeHistogram.asInstanceOf[js.Any])
     if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
     if (SummaryStatistics != null) __obj.updateDynamic("SummaryStatistics")(SummaryStatistics.asInstanceOf[js.Any])

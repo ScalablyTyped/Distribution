@@ -53,26 +53,26 @@ trait ScalesLabel extends js.Object {
 object ScalesLabel {
   @scala.inline
   def apply(
-    angle: Int | Double = null,
+    angle: js.UndefOr[Double] = js.undefined,
     autoAngle: js.UndefOr[Boolean] = js.undefined,
     color: String = null,
-    distanceFromScale: Int | Double = null,
+    distanceFromScale: js.UndefOr[Double] = js.undefined,
     font: ScalesLabelsFont = null,
     includeFirstValue: js.UndefOr[Boolean] = js.undefined,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     placement: Placement | String = null,
     `type`: LabelType | String = null,
     unitText: String = null,
     unitTextPosition: UnitTextPlacement | String = null
   ): ScalesLabel = {
     val __obj = js.Dynamic.literal()
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoAngle)) __obj.updateDynamic("autoAngle")(autoAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoAngle)) __obj.updateDynamic("autoAngle")(autoAngle.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (distanceFromScale != null) __obj.updateDynamic("distanceFromScale")(distanceFromScale.asInstanceOf[js.Any])
+    if (!js.isUndefined(distanceFromScale)) __obj.updateDynamic("distanceFromScale")(distanceFromScale.get.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeFirstValue)) __obj.updateDynamic("includeFirstValue")(includeFirstValue.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeFirstValue)) __obj.updateDynamic("includeFirstValue")(includeFirstValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (unitText != null) __obj.updateDynamic("unitText")(unitText.asInstanceOf[js.Any])

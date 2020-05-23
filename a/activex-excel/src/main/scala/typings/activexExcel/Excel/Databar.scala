@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.Databar")
 @js.native
-class Databar protected () extends js.Object {
+trait Databar extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   @JSName("AppliesTo")
   val AppliesTo_Original: Range = js.native

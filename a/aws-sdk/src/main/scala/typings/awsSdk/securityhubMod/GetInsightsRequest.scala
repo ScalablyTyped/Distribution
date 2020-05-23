@@ -22,10 +22,14 @@ trait GetInsightsRequest extends js.Object {
 
 object GetInsightsRequest {
   @scala.inline
-  def apply(InsightArns: ArnList = null, MaxResults: Int | scala.Double = null, NextToken: NextToken = null): GetInsightsRequest = {
+  def apply(
+    InsightArns: ArnList = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    NextToken: NextToken = null
+  ): GetInsightsRequest = {
     val __obj = js.Dynamic.literal()
     if (InsightArns != null) __obj.updateDynamic("InsightArns")(InsightArns.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInsightsRequest]
   }

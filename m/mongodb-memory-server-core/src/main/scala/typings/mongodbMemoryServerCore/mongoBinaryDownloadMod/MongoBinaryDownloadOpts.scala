@@ -23,7 +23,7 @@ object MongoBinaryDownloadOpts {
   ): MongoBinaryDownloadOpts = {
     val __obj = js.Dynamic.literal()
     if (arch != null) __obj.updateDynamic("arch")(arch.asInstanceOf[js.Any])
-    if (!js.isUndefined(checkMD5)) __obj.updateDynamic("checkMD5")(checkMD5.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkMD5)) __obj.updateDynamic("checkMD5")(checkMD5.get.asInstanceOf[js.Any])
     if (downloadDir != null) __obj.updateDynamic("downloadDir")(downloadDir.asInstanceOf[js.Any])
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])

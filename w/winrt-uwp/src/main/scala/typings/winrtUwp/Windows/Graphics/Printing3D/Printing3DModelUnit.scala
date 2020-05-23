@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Graphics.Printing3D
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,26 +34,6 @@ object Printing3DModelUnit extends js.Object {
   /** The units of the 3D model are specified in millimeters. */
   @js.native
   sealed trait millimeter extends Printing3DModelUnit
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Printing3DModelUnit with Double] = js.native
-  /* 3 */ @js.native
-  object centimeter extends TopLevel[centimeter with Double]
-  
-  /* 5 */ @js.native
-  object foot extends TopLevel[foot with Double]
-  
-  /* 4 */ @js.native
-  object inch extends TopLevel[inch with Double]
-  
-  /* 0 */ @js.native
-  object meter extends TopLevel[meter with Double]
-  
-  /* 1 */ @js.native
-  object micron extends TopLevel[micron with Double]
-  
-  /* 2 */ @js.native
-  object millimeter extends TopLevel[millimeter with Double]
   
 }
 

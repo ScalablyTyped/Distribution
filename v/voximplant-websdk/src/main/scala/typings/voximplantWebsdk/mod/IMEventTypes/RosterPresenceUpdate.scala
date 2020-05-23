@@ -7,24 +7,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		*	Event dispatched when roster item presence update happened
-		*/
+  *    Event dispatched when roster item presence update happened
+  */
 trait RosterPresenceUpdate extends VoxImplantIMEvent {
   /**
-  			*	User id
-  			*/
+    *    User id
+    */
   var id: String
   /**
-  			*	Status message
-  			*/
+    *    Status message
+    */
   var message: js.UndefOr[String] = js.undefined
   /**
-  			*	Current presence status
-  			*/
+    *    Current presence status
+    */
   var presence: UserStatuses
   /**
-  			*	Resource name
-  			*/
+    *    Resource name
+    */
   var resource: js.UndefOr[String] = js.undefined
 }
 

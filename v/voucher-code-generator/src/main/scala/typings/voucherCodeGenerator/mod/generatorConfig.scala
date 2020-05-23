@@ -17,16 +17,16 @@ object generatorConfig {
   @scala.inline
   def apply(
     charset: String = null,
-    count: Int | Double = null,
-    length: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
+    length: js.UndefOr[Double] = js.undefined,
     pattern: String = null,
     postfix: String = null,
     prefix: String = null
   ): generatorConfig = {
     val __obj = js.Dynamic.literal()
     if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
     if (postfix != null) __obj.updateDynamic("postfix")(postfix.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])

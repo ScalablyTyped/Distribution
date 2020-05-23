@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object mod {
   type DefaultsFunction = js.Function1[/* root */ typings.joi.mod.Schema, typings.joi.mod.Schema]
-  type ExtensionBoundSchema = typings.joi.mod.Schema with typings.joi.AnonCreateError
+  type ExtensionBoundSchema = typings.joi.mod.Schema with typings.joi.anon.CreateError
   type LanguageOptions = java.lang.String | scala.Boolean | scala.Null | (org.scalablytyped.runtime.StringDictionary[
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias joi.joi.LanguageOptions */ js.Object
   ])

@@ -44,21 +44,21 @@ object JSZipFileOptions {
     createFolders: js.UndefOr[Boolean] = js.undefined,
     date: Date = null,
     dir: js.UndefOr[Boolean] = js.undefined,
-    dosPermissions: Int | Double = null,
+    dosPermissions: js.UndefOr[Null | Double] = js.undefined,
     optimizedBinaryString: js.UndefOr[Boolean] = js.undefined,
-    unixPermissions: Double | String = null
+    unixPermissions: js.UndefOr[Null | Double | String] = js.undefined
   ): JSZipFileOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(base64)) __obj.updateDynamic("base64")(base64.asInstanceOf[js.Any])
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
+    if (!js.isUndefined(base64)) __obj.updateDynamic("base64")(base64.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.get.asInstanceOf[js.Any])
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
-    if (!js.isUndefined(createFolders)) __obj.updateDynamic("createFolders")(createFolders.asInstanceOf[js.Any])
+    if (!js.isUndefined(createFolders)) __obj.updateDynamic("createFolders")(createFolders.get.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (!js.isUndefined(dir)) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (dosPermissions != null) __obj.updateDynamic("dosPermissions")(dosPermissions.asInstanceOf[js.Any])
-    if (!js.isUndefined(optimizedBinaryString)) __obj.updateDynamic("optimizedBinaryString")(optimizedBinaryString.asInstanceOf[js.Any])
-    if (unixPermissions != null) __obj.updateDynamic("unixPermissions")(unixPermissions.asInstanceOf[js.Any])
+    if (!js.isUndefined(dir)) __obj.updateDynamic("dir")(dir.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dosPermissions)) __obj.updateDynamic("dosPermissions")(dosPermissions.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimizedBinaryString)) __obj.updateDynamic("optimizedBinaryString")(optimizedBinaryString.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unixPermissions)) __obj.updateDynamic("unixPermissions")(unixPermissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSZipFileOptions]
   }
 }

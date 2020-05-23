@@ -1,8 +1,8 @@
 package typings.blueprintjsTable.columnHeaderCellMod
 
 import typings.blueprintjsCore.mod.AbstractPureComponent2
-import typings.blueprintjsTable.AnonIsActive
-import typings.blueprintjsTable.ValidationMapIColumnInter
+import typings.blueprintjsTable.anon.IsActive
+import typings.blueprintjsTable.anon.ValidationMapIColumnInter
 import typings.blueprintjsTable.contextMod.IColumnInteractionBarContextTypes
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -21,7 +21,7 @@ class ColumnHeaderCell ()
   var maybeRenderDropdownMenu: js.Any = js.native
   var renderName: js.Any = js.native
   @JSName("state")
-  var state_ColumnHeaderCell: AnonIsActive = js.native
+  var state_ColumnHeaderCell: IsActive = js.native
 }
 
 /* static members */

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-transition-group
 
-Typings are for version 4.2
+Typings are for version 4.4
 
 ## Library description:
 A react component toolset for managing animations

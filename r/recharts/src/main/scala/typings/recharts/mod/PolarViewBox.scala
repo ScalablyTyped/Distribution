@@ -16,20 +16,20 @@ trait PolarViewBox extends js.Object {
 object PolarViewBox {
   @scala.inline
   def apply(
-    cx: Int | Double = null,
-    cy: Int | Double = null,
-    endAngle: Int | Double = null,
-    innerRadius: Int | Double = null,
-    outerRadius: Int | Double = null,
-    startAngle: Int | Double = null
+    cx: js.UndefOr[Double] = js.undefined,
+    cy: js.UndefOr[Double] = js.undefined,
+    endAngle: js.UndefOr[Double] = js.undefined,
+    innerRadius: js.UndefOr[Double] = js.undefined,
+    outerRadius: js.UndefOr[Double] = js.undefined,
+    startAngle: js.UndefOr[Double] = js.undefined
   ): PolarViewBox = {
     val __obj = js.Dynamic.literal()
-    if (cx != null) __obj.updateDynamic("cx")(cx.asInstanceOf[js.Any])
-    if (cy != null) __obj.updateDynamic("cy")(cy.asInstanceOf[js.Any])
-    if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])
-    if (innerRadius != null) __obj.updateDynamic("innerRadius")(innerRadius.asInstanceOf[js.Any])
-    if (outerRadius != null) __obj.updateDynamic("outerRadius")(outerRadius.asInstanceOf[js.Any])
-    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(cx)) __obj.updateDynamic("cx")(cx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cy)) __obj.updateDynamic("cy")(cy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(endAngle)) __obj.updateDynamic("endAngle")(endAngle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(innerRadius)) __obj.updateDynamic("innerRadius")(innerRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(outerRadius)) __obj.updateDynamic("outerRadius")(outerRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startAngle)) __obj.updateDynamic("startAngle")(startAngle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolarViewBox]
   }
 }

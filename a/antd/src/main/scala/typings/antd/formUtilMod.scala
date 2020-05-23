@@ -1,5 +1,6 @@
 package typings.antd
 
+import typings.antd.anon.Name
 import typings.antd.antdBooleans.`false`
 import typings.react.mod.ReactNode
 import typings.scrollIntoViewIfNeeded.mod.Options
@@ -10,10 +11,10 @@ import scala.scalajs.js.annotation._
 @JSImport("antd/lib/form/util", JSImport.Namespace)
 @js.native
 object formUtilMod extends js.Object {
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RcFormInstance * / any */ @js.native
-  trait FormInstance extends js.Object {
-    var __INTERNAL__ : AnonName = js.native
+  @js.native
+  trait FormInstance
+    extends typings.rcFieldForm.interfaceMod.FormInstance {
+    var __INTERNAL__ : Name = js.native
     def scrollToField(name: String): Unit = js.native
     def scrollToField(name: String, options: Options[_]): Unit = js.native
     def scrollToField(name: Double): Unit = js.native

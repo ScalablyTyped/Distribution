@@ -38,9 +38,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides synchronous access to the properties exposed off StorageFile and lets an app perform asynchronous file operations such as copy, delete, move, and rename. */
-@JSGlobal("Windows.Storage.BulkAccess.FileInformation")
 @js.native
-abstract class FileInformation () extends js.Object {
+trait FileInformation extends js.Object {
   /** Gets the attributes of a file. */
   var attributes: FileAttributes = js.native
   /** Gets an object that contains the basic properties information of the file. */

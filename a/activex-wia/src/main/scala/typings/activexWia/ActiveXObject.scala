@@ -16,7 +16,7 @@ trait ActiveXObject extends js.Object {
     obj: DeviceManager,
     event: OnEvent,
     argNames: js.Tuple3[EventID, DeviceID, ItemID],
-    handler: js.ThisFunction1[/* this */ DeviceManager, /* parameter */ AnonDeviceID, Unit]
+    handler: js.ThisFunction1[/* this */ DeviceManager, /* parameter */ typings.activexWia.anon.DeviceID, Unit]
   ): Unit
   @JSName("set")
   def set_Item[TItem](obj: Vector[TItem], propertyName: Item, parameterTypes: js.Array[Double], newValue: TItem): Unit
@@ -25,7 +25,7 @@ trait ActiveXObject extends js.Object {
 object ActiveXObject {
   @scala.inline
   def apply(
-    on: (DeviceManager, OnEvent, js.Tuple3[EventID, DeviceID, ItemID], js.ThisFunction1[/* this */ DeviceManager, /* parameter */ AnonDeviceID, Unit]) => Unit,
+    on: (DeviceManager, OnEvent, js.Tuple3[EventID, DeviceID, ItemID], js.ThisFunction1[/* this */ DeviceManager, /* parameter */ typings.activexWia.anon.DeviceID, Unit]) => Unit,
     set: (Vector[js.Any], Item, js.Array[Double], js.Any) => Unit
   ): ActiveXObject = {
     val __obj = js.Dynamic.literal(on = js.Any.fromFunction4(on), set = js.Any.fromFunction4(set))

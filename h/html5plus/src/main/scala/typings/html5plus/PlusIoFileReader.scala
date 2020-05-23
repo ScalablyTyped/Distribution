@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * 文件系统中的读取文件对象，用于获取文件的内容
   * FileReader对象是从设备文件系统读取文件FileReader对象是从设备文件系统读取文件的一种方式，文件以文本或者Base64编码的字符串形式读出来。
-  * 	用户注册自己的事件监听器来接收loadstart、progress、load、loadend、error和abort事件。
+  *     用户注册自己的事件监听器来接收loadstart、progress、load、loadend、error和abort事件。
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
   */
@@ -91,7 +91,7 @@ trait PlusIoFileReader extends js.Object {
   /**
     * 终止文件读取操作
     * 读取文件操作开始后，可通过此方法取消读取文件。
-    * 	调用此方法后将触发文件读取对象的onabort事件。
+    *     调用此方法后将触发文件读取对象的onabort事件。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */

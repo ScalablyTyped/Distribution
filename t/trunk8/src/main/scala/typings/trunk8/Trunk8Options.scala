@@ -36,16 +36,16 @@ object Trunk8Options {
   @scala.inline
   def apply(
     fill: String = null,
-    lines: Int | Double = null,
+    lines: js.UndefOr[Double] = js.undefined,
     side: String = null,
     tooltip: js.UndefOr[Boolean] = js.undefined,
     width: String = null
   ): Trunk8Options = {
     val __obj = js.Dynamic.literal()
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
+    if (!js.isUndefined(lines)) __obj.updateDynamic("lines")(lines.get.asInstanceOf[js.Any])
     if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
-    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
+    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Trunk8Options]
   }

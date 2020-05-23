@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation._
   * The CommonDialog control is an invisible-at-runtime control that contains all the methods that display a User Interface. A CommonDialog control can be
   * created using "WIA.CommonDialog" in a call to CreateObject or by dropping a CommonDialog on a form.
   */
-@JSGlobal("WIA.CommonDialog")
 @js.native
-class CommonDialog protected () extends js.Object {
+trait CommonDialog extends js.Object {
   @JSName("WIA.CommonDialog_typekey")
   var WIADotCommonDialog_typekey: CommonDialog = js.native
   /**

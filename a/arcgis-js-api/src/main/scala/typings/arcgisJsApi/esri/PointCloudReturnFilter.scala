@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`return`
 import typings.arcgisJsApi.arcgisJsApiStrings.firstOfMany
 import typings.arcgisJsApi.arcgisJsApiStrings.last
@@ -29,8 +28,4 @@ trait PointCloudReturnFilter extends PointCloudFilter {
   @JSName("type")
   val type_PointCloudReturnFilter: `return` = js.native
 }
-
-@JSGlobal("__esri.PointCloudReturnFilter")
-@js.native
-object PointCloudReturnFilter extends TopLevel[PointCloudReturnFilterConstructor]
 

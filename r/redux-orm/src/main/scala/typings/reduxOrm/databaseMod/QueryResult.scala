@@ -12,7 +12,7 @@ trait QueryResult[Row /* <: Record[String, Serializable] */] extends js.Object {
 
 object QueryResult {
   @scala.inline
-  def apply[Row /* <: Record[String, Serializable] */](rows: js.Array[Row]): QueryResult[Row] = {
+  def apply[Row](rows: js.Array[Row]): QueryResult[Row] = {
     val __obj = js.Dynamic.literal(rows = rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryResult[Row]]
   }

@@ -33,13 +33,13 @@ object ProvisioningArtifactProperties {
   def apply(
     Info: ProvisioningArtifactInfo,
     Description: ProvisioningArtifactDescription = null,
-    DisableTemplateValidation: js.UndefOr[Boolean] = js.undefined,
+    DisableTemplateValidation: js.UndefOr[DisableTemplateValidation] = js.undefined,
     Name: ProvisioningArtifactName = null,
     Type: ProvisioningArtifactType = null
   ): ProvisioningArtifactProperties = {
     val __obj = js.Dynamic.literal(Info = Info.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisableTemplateValidation)) __obj.updateDynamic("DisableTemplateValidation")(DisableTemplateValidation.asInstanceOf[js.Any])
+    if (!js.isUndefined(DisableTemplateValidation)) __obj.updateDynamic("DisableTemplateValidation")(DisableTemplateValidation.get.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvisioningArtifactProperties]

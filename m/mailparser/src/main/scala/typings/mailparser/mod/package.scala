@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type HeaderLines = js.Array[typings.mailparser.AnonKey]
+  type HeaderLines = js.Array[typings.mailparser.anon.Key]
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - js.Array[java.lang.String]

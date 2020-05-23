@@ -1,6 +1,7 @@
 package typings.vueChartkick
 
 import typings.vue.pluginMod.PluginObject
+import typings.vueChartkick.anon.Adapter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   @js.native
-  trait VueChartkickPlugin extends PluginObject[AnonAdapter] {
+  trait VueChartkickPlugin extends PluginObject[Adapter] {
     var version: String = js.native
     def addAdapter(library: js.Any): Unit = js.native
   }

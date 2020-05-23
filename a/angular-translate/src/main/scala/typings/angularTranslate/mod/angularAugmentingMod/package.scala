@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 package object angularAugmentingMod {
   type IFilterService = js.Function1[
     typings.angularTranslate.angularTranslateStrings.translate, 
-    typings.angularTranslate.FnCall
+    typings.angularTranslate.anon.FnCall
   ]
 }

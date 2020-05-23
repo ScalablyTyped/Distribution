@@ -11,7 +11,7 @@ trait CreateDocumentRequest extends js.Object {
     */
   var Attachments: js.UndefOr[AttachmentsSourceList] = js.native
   /**
-    * A valid JSON or YAML string.
+    * The content for the new SSM document in JSON or YAML format. We recommend storing the contents for your new document in an external JSON or YAML file and referencing the file in a command. For examples, see the following topics in the AWS Systems Manager User Guide.    Create an SSM document (AWS API)     Create an SSM document (AWS CLI)     Create an SSM document (API)   
     */
   var Content: DocumentContent = js.native
   /**
@@ -23,11 +23,11 @@ trait CreateDocumentRequest extends js.Object {
     */
   var DocumentType: js.UndefOr[typings.awsSdk.ssmMod.DocumentType] = js.native
   /**
-    * A name for the Systems Manager document.  Do not use the following to begin the names of documents you create. They are reserved by AWS for use as document prefixes:    aws     amazon     amzn    
+    * A name for the Systems Manager document.  You can't use the following strings as document name prefixes. These are reserved by AWS for use as document name prefixes:    aws     amazon     amzn    
     */
   var Name: DocumentName = js.native
   /**
-    * A list of SSM documents required by a document. For example, an ApplicationConfiguration document requires an ApplicationConfigurationSchema document.
+    * A list of SSM documents required by a document. This parameter is used exclusively by AWS AppConfig. When a user creates an AppConfig configuration in an SSM document, the user must also specify a required document for validation purposes. In this case, an ApplicationConfiguration document requires an ApplicationConfigurationSchema document for validation purposes. For more information, see AWS AppConfig in the AWS Systems Manager User Guide.
     */
   var Requires: js.UndefOr[DocumentRequiresList] = js.native
   /**
@@ -35,7 +35,7 @@ trait CreateDocumentRequest extends js.Object {
     */
   var Tags: js.UndefOr[TagList] = js.native
   /**
-    * Specify a target type to define the kinds of resources the document can run on. For example, to run a document on EC2 instances, specify the following value: /AWS::EC2::Instance. If you specify a value of '/' the document can run on all types of resources. If you don't specify a value, the document can't run on any resources. For a list of valid resource types, see AWS Resource Types Reference in the AWS CloudFormation User Guide. 
+    * Specify a target type to define the kinds of resources the document can run on. For example, to run a document on EC2 instances, specify the following value: /AWS::EC2::Instance. If you specify a value of '/' the document can run on all types of resources. If you don't specify a value, the document can't run on any resources. For a list of valid resource types, see AWS resource and property types reference in the AWS CloudFormation User Guide. 
     */
   var TargetType: js.UndefOr[typings.awsSdk.ssmMod.TargetType] = js.native
   /**

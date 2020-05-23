@@ -9,9 +9,6 @@ object tstlStrings {
   sealed trait divides extends js.Object
   
   @js.native
-  sealed trait experimental extends js.Object
-  
-  @js.native
   sealed trait minus extends js.Object
   
   @js.native
@@ -28,8 +25,6 @@ object tstlStrings {
   
   @scala.inline
   def divides: divides = "divides".asInstanceOf[divides]
-  @scala.inline
-  def experimental: experimental = "experimental".asInstanceOf[experimental]
   @scala.inline
   def minus: minus = "minus".asInstanceOf[minus]
   @scala.inline

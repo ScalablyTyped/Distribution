@@ -1,6 +1,6 @@
 package typings.apolloServerTypes.mod
 
-import typings.apolloServerTypes.PickResponseheadersPartia
+import typings.apolloServerTypes.anon.PickResponseheadersPartia
 import typings.graphql.formatErrorMod.GraphQLFormattedError
 import typings.std.Record
 import scala.scalajs.js
@@ -17,13 +17,13 @@ trait GraphQLResponse extends js.Object {
 object GraphQLResponse {
   @scala.inline
   def apply(
-    data: Record[String, _] = null,
+    data: js.UndefOr[Null | (Record[String, _])] = js.undefined,
     errors: js.Array[GraphQLFormattedError[Record[String, _]]] = null,
     extensions: Record[String, _] = null,
     http: PickResponseheadersPartia = null
   ): GraphQLResponse = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(data)) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (http != null) __obj.updateDynamic("http")(http.asInstanceOf[js.Any])

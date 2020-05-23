@@ -77,39 +77,39 @@ object WaitOnOptions {
   def apply(
     resources: js.Array[String],
     auth: WaitOnAuth = null,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     followAllRedirects: js.UndefOr[Boolean] = js.undefined,
     followRedirect: js.UndefOr[Boolean] = js.undefined,
     headers: Record[String, _] = null,
     httpSignature: HttpSignature = null,
-    httpTimeout: Int | Double = null,
-    interval: Int | Double = null,
+    httpTimeout: js.UndefOr[Double] = js.undefined,
+    interval: js.UndefOr[Double] = js.undefined,
     log: js.UndefOr[Boolean] = js.undefined,
     reverse: js.UndefOr[Boolean] = js.undefined,
-    simultaneous: Int | Double = null,
+    simultaneous: js.UndefOr[Double] = js.undefined,
     strictSSL: js.UndefOr[Boolean] = js.undefined,
-    tcpTimeout: Int | Double = null,
-    timeout: Int | Double = null,
+    tcpTimeout: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined,
     verbose: js.UndefOr[Boolean] = js.undefined,
-    window: Int | Double = null
+    window: js.UndefOr[Double] = js.undefined
   ): WaitOnOptions = {
     val __obj = js.Dynamic.literal(resources = resources.asInstanceOf[js.Any])
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(followAllRedirects)) __obj.updateDynamic("followAllRedirects")(followAllRedirects.asInstanceOf[js.Any])
-    if (!js.isUndefined(followRedirect)) __obj.updateDynamic("followRedirect")(followRedirect.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(followAllRedirects)) __obj.updateDynamic("followAllRedirects")(followAllRedirects.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(followRedirect)) __obj.updateDynamic("followRedirect")(followRedirect.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (httpSignature != null) __obj.updateDynamic("httpSignature")(httpSignature.asInstanceOf[js.Any])
-    if (httpTimeout != null) __obj.updateDynamic("httpTimeout")(httpTimeout.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
-    if (simultaneous != null) __obj.updateDynamic("simultaneous")(simultaneous.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictSSL)) __obj.updateDynamic("strictSSL")(strictSSL.asInstanceOf[js.Any])
-    if (tcpTimeout != null) __obj.updateDynamic("tcpTimeout")(tcpTimeout.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
-    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
+    if (!js.isUndefined(httpTimeout)) __obj.updateDynamic("httpTimeout")(httpTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(simultaneous)) __obj.updateDynamic("simultaneous")(simultaneous.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictSSL)) __obj.updateDynamic("strictSSL")(strictSSL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tcpTimeout)) __obj.updateDynamic("tcpTimeout")(tcpTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(window)) __obj.updateDynamic("window")(window.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WaitOnOptions]
   }
 }

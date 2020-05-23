@@ -19,7 +19,7 @@ object ServiceNetworkConfiguration {
     securityGroups: js.Array[String] = null
   ): ServiceNetworkConfiguration = {
     val __obj = js.Dynamic.literal(subnets = subnets.asInstanceOf[js.Any])
-    if (!js.isUndefined(assignPublicIp)) __obj.updateDynamic("assignPublicIp")(assignPublicIp.asInstanceOf[js.Any])
+    if (!js.isUndefined(assignPublicIp)) __obj.updateDynamic("assignPublicIp")(assignPublicIp.get.asInstanceOf[js.Any])
     if (securityGroups != null) __obj.updateDynamic("securityGroups")(securityGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceNetworkConfiguration]
   }

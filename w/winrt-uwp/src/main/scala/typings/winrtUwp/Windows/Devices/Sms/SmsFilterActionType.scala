@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Sms
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object SmsFilterActionType extends js.Object {
   /** Filters with this action type are applied after Drop filters. This action type allows your app to inspect each message and decide which are dropped and which continue on to be processed or shown to the user. */
   @js.native
   sealed trait peek extends SmsFilterActionType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SmsFilterActionType with Double] = js.native
-  /* 3 */ @js.native
-  object accept extends TopLevel[accept with Double]
-  
-  /* 0 */ @js.native
-  object acceptImmediately extends TopLevel[acceptImmediately with Double]
-  
-  /* 1 */ @js.native
-  object drop extends TopLevel[drop with Double]
-  
-  /* 2 */ @js.native
-  object peek extends TopLevel[peek with Double]
   
 }
 

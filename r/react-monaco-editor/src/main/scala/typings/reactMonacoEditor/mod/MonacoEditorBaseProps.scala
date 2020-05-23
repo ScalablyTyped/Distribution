@@ -40,7 +40,7 @@ object MonacoEditorBaseProps {
     defaultValue: String = null,
     height: String | Double = null,
     language: String = null,
-    theme: String = null,
+    theme: js.UndefOr[Null | String] = js.undefined,
     width: String | Double = null
   ): MonacoEditorBaseProps = {
     val __obj = js.Dynamic.literal()
@@ -48,7 +48,7 @@ object MonacoEditorBaseProps {
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (!js.isUndefined(theme)) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonacoEditorBaseProps]
   }

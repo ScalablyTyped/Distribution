@@ -39,8 +39,7 @@ object SkinVariation {
     obsoleted_by: String = null,
     obsoletes: String = null
   ): SkinVariation = {
-    val __obj = js.Dynamic.literal(added_in = added_in.asInstanceOf[js.Any], has_img_apple = has_img_apple.asInstanceOf[js.Any], has_img_emojione = has_img_emojione.asInstanceOf[js.Any], has_img_facebook = has_img_facebook.asInstanceOf[js.Any], has_img_google = has_img_google.asInstanceOf[js.Any], has_img_messenger = has_img_messenger.asInstanceOf[js.Any], has_img_twitter = has_img_twitter.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], sheet_x = sheet_x.asInstanceOf[js.Any], sheet_y = sheet_y.asInstanceOf[js.Any], unified = unified.asInstanceOf[js.Any])
-    if (non_qualified != null) __obj.updateDynamic("non_qualified")(non_qualified.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(added_in = added_in.asInstanceOf[js.Any], has_img_apple = has_img_apple.asInstanceOf[js.Any], has_img_emojione = has_img_emojione.asInstanceOf[js.Any], has_img_facebook = has_img_facebook.asInstanceOf[js.Any], has_img_google = has_img_google.asInstanceOf[js.Any], has_img_messenger = has_img_messenger.asInstanceOf[js.Any], has_img_twitter = has_img_twitter.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], sheet_x = sheet_x.asInstanceOf[js.Any], sheet_y = sheet_y.asInstanceOf[js.Any], unified = unified.asInstanceOf[js.Any], non_qualified = non_qualified.asInstanceOf[js.Any])
     if (obsoleted_by != null) __obj.updateDynamic("obsoleted_by")(obsoleted_by.asInstanceOf[js.Any])
     if (obsoletes != null) __obj.updateDynamic("obsoletes")(obsoletes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SkinVariation]

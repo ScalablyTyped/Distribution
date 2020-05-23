@@ -27,12 +27,12 @@ object LoginWithExternalServiceOptions {
     requestPermissions: js.Array[String] = null
   ): LoginWithExternalServiceOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(forceApprovalPrompt)) __obj.updateDynamic("forceApprovalPrompt")(forceApprovalPrompt.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceApprovalPrompt)) __obj.updateDynamic("forceApprovalPrompt")(forceApprovalPrompt.get.asInstanceOf[js.Any])
     if (loginHint != null) __obj.updateDynamic("loginHint")(loginHint.asInstanceOf[js.Any])
     if (loginStyle != null) __obj.updateDynamic("loginStyle")(loginStyle.asInstanceOf[js.Any])
     if (loginUrlParameters != null) __obj.updateDynamic("loginUrlParameters")(loginUrlParameters.asInstanceOf[js.Any])
     if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestOfflineToken)) __obj.updateDynamic("requestOfflineToken")(requestOfflineToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestOfflineToken)) __obj.updateDynamic("requestOfflineToken")(requestOfflineToken.get.asInstanceOf[js.Any])
     if (requestPermissions != null) __obj.updateDynamic("requestPermissions")(requestPermissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoginWithExternalServiceOptions]
   }

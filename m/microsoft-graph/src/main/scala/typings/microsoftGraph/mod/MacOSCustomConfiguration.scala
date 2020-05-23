@@ -25,12 +25,12 @@ object MacOSCustomConfiguration {
     displayName: String = null,
     id: String = null,
     lastModifiedDateTime: String = null,
-    payload: Int | Double = null,
+    payload: js.UndefOr[Double] = js.undefined,
     payloadFileName: String = null,
     payloadName: String = null,
     userStatusOverview: DeviceConfigurationUserOverview = null,
     userStatuses: js.Array[DeviceConfigurationUserStatus] = null,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): MacOSCustomConfiguration = {
     val __obj = js.Dynamic.literal()
     if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
@@ -42,12 +42,12 @@ object MacOSCustomConfiguration {
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (!js.isUndefined(payload)) __obj.updateDynamic("payload")(payload.get.asInstanceOf[js.Any])
     if (payloadFileName != null) __obj.updateDynamic("payloadFileName")(payloadFileName.asInstanceOf[js.Any])
     if (payloadName != null) __obj.updateDynamic("payloadName")(payloadName.asInstanceOf[js.Any])
     if (userStatusOverview != null) __obj.updateDynamic("userStatusOverview")(userStatusOverview.asInstanceOf[js.Any])
     if (userStatuses != null) __obj.updateDynamic("userStatuses")(userStatuses.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MacOSCustomConfiguration]
   }
 }

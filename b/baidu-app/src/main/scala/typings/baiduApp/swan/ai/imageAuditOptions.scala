@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * 自定义图像审核。
-		 */
+  * 自定义图像审核。
+  */
 trait imageAuditOptions
   extends BaseOptions[js.Any, js.Any] {
   var image: String

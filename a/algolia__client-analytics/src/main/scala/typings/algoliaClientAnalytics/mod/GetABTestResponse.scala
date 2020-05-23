@@ -8,36 +8,36 @@ trait GetABTestResponse extends js.Object {
   /**
     * The ab test unique identifier.
     */
-  val abTestID: Double
+  var abTestID: Double
   /**
     * The ab test significance based on click data. Should be > 0.95 to be considered significant - no matter which variant is winning.
     */
-  val clickSignificance: Double
+  var clickSignificance: Double
   /**
     *
     * The ab test significance based on conversion data. Should be > 0.95 to be considered significant - no matter which variant is winning.
     */
-  val conversionSignificance: Double
+  var conversionSignificance: Double
   /**
     * The ab test created date, if any.
     */
-  val createdAt: String
+  var createdAt: String
   /**
     * The ab test end date, if any.
     */
-  val endAt: String
+  var endAt: String
   /**
     * The ab test name.
     */
-  val name: String
+  var name: String
   /**
     * The ab test status.
     */
-  val status: String
+  var status: String
   /**
     * The ab test list of variants.
     */
-  val variants: js.Array[VariantResponse]
+  var variants: js.Array[VariantResponse]
 }
 
 object GetABTestResponse {

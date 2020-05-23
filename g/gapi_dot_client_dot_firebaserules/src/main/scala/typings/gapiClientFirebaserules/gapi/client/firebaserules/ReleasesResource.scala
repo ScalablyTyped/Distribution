@@ -1,9 +1,9 @@
 package typings.gapiClientFirebaserules.gapi.client.firebaserules
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientFirebaserules.AnonAccesstoken
-import typings.gapiClientFirebaserules.AnonAlt
-import typings.gapiClientFirebaserules.AnonBearertoken
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientFirebaserules.anon.Accesstoken
+import typings.gapiClientFirebaserules.anon.Alt
+import typings.gapiClientFirebaserules.anon.Bearertoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,19 +33,19 @@ trait ReleasesResource extends js.Object {
     * refers to a new `Ruleset`. The `Ruleset` reference for a `Release` may be
     * updated using the UpdateRelease method.
     */
-  def create(request: AnonAccesstoken): Request_[Release]
+  def create(request: Accesstoken): Request[Release]
   /** Delete a `Release` by resource name. */
-  def delete(request: AnonAccesstoken): Request_[js.Object]
+  def delete(request: Accesstoken): Request[js.Object]
   /** Get a `Release` by name. */
-  def get(request: AnonAccesstoken): Request_[Release]
+  def get(request: Accesstoken): Request[Release]
   /** Get the `Release` executable to use when enforcing rules. */
-  def getExecutable(request: AnonAlt): Request_[GetReleaseExecutableResponse]
+  def getExecutable(request: Alt): Request[GetReleaseExecutableResponse]
   /**
     * List the `Release` values for a project. This list may optionally be
     * filtered by `Release` name, `Ruleset` name, `TestSuite` name, or any
     * combination thereof.
     */
-  def list(request: AnonBearertoken): Request_[ListReleasesResponse]
+  def list(request: Bearertoken): Request[ListReleasesResponse]
   /**
     * Update a `Release`.
     *
@@ -53,18 +53,18 @@ trait ReleasesResource extends js.Object {
     * honored. `Release` rename is not supported. To create a `Release` use the
     * CreateRelease method.
     */
-  def update(request: AnonAccesstoken): Request_[Release]
+  def update(request: Accesstoken): Request[Release]
 }
 
 object ReleasesResource {
   @scala.inline
   def apply(
-    create: AnonAccesstoken => Request_[Release],
-    delete: AnonAccesstoken => Request_[js.Object],
-    get: AnonAccesstoken => Request_[Release],
-    getExecutable: AnonAlt => Request_[GetReleaseExecutableResponse],
-    list: AnonBearertoken => Request_[ListReleasesResponse],
-    update: AnonAccesstoken => Request_[Release]
+    create: Accesstoken => Request[Release],
+    delete: Accesstoken => Request[js.Object],
+    get: Accesstoken => Request[Release],
+    getExecutable: Alt => Request[GetReleaseExecutableResponse],
+    list: Bearertoken => Request[ListReleasesResponse],
+    update: Accesstoken => Request[Release]
   ): ReleasesResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getExecutable = js.Any.fromFunction1(getExecutable), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
     __obj.asInstanceOf[ReleasesResource]

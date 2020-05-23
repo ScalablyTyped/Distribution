@@ -17,14 +17,14 @@ object DeviceRequest {
   @scala.inline
   def apply(
     Capabilities: js.Array[js.Array[String]] = null,
-    Count: Int | Double = null,
+    Count: js.UndefOr[Double] = js.undefined,
     DeviceIDs: js.Array[String] = null,
     Driver: String = null,
     Options: StringDictionary[String] = null
   ): DeviceRequest = {
     val __obj = js.Dynamic.literal()
     if (Capabilities != null) __obj.updateDynamic("Capabilities")(Capabilities.asInstanceOf[js.Any])
-    if (Count != null) __obj.updateDynamic("Count")(Count.asInstanceOf[js.Any])
+    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count.get.asInstanceOf[js.Any])
     if (DeviceIDs != null) __obj.updateDynamic("DeviceIDs")(DeviceIDs.asInstanceOf[js.Any])
     if (Driver != null) __obj.updateDynamic("Driver")(Driver.asInstanceOf[js.Any])
     if (Options != null) __obj.updateDynamic("Options")(Options.asInstanceOf[js.Any])

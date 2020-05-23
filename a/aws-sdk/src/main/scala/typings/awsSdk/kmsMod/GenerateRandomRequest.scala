@@ -18,10 +18,13 @@ trait GenerateRandomRequest extends js.Object {
 
 object GenerateRandomRequest {
   @scala.inline
-  def apply(CustomKeyStoreId: CustomKeyStoreIdType = null, NumberOfBytes: Int | Double = null): GenerateRandomRequest = {
+  def apply(
+    CustomKeyStoreId: CustomKeyStoreIdType = null,
+    NumberOfBytes: js.UndefOr[NumberOfBytesType] = js.undefined
+  ): GenerateRandomRequest = {
     val __obj = js.Dynamic.literal()
     if (CustomKeyStoreId != null) __obj.updateDynamic("CustomKeyStoreId")(CustomKeyStoreId.asInstanceOf[js.Any])
-    if (NumberOfBytes != null) __obj.updateDynamic("NumberOfBytes")(NumberOfBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfBytes)) __obj.updateDynamic("NumberOfBytes")(NumberOfBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateRandomRequest]
   }
 }

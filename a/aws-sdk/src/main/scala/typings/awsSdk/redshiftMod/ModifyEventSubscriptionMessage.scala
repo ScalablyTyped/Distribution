@@ -40,7 +40,7 @@ object ModifyEventSubscriptionMessage {
   @scala.inline
   def apply(
     SubscriptionName: String,
-    Enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    Enabled: js.UndefOr[BooleanOptional] = js.undefined,
     EventCategories: EventCategoriesList = null,
     Severity: String = null,
     SnsTopicArn: String = null,
@@ -48,7 +48,7 @@ object ModifyEventSubscriptionMessage {
     SourceType: String = null
   ): ModifyEventSubscriptionMessage = {
     val __obj = js.Dynamic.literal(SubscriptionName = SubscriptionName.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     if (EventCategories != null) __obj.updateDynamic("EventCategories")(EventCategories.asInstanceOf[js.Any])
     if (Severity != null) __obj.updateDynamic("Severity")(Severity.asInstanceOf[js.Any])
     if (SnsTopicArn != null) __obj.updateDynamic("SnsTopicArn")(SnsTopicArn.asInstanceOf[js.Any])

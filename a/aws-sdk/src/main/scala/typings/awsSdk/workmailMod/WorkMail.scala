@@ -353,12 +353,12 @@ trait WorkMail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListMailboxPermissionsResponse, Unit]
   ): Request[ListMailboxPermissionsResponse, AWSError] = js.native
   /**
-    * Returns summaries of the customer's non-deleted organizations.
+    * Returns summaries of the customer's organizations.
     */
   def listOrganizations(): Request[ListOrganizationsResponse, AWSError] = js.native
   def listOrganizations(callback: js.Function2[/* err */ AWSError, /* data */ ListOrganizationsResponse, Unit]): Request[ListOrganizationsResponse, AWSError] = js.native
   /**
-    * Returns summaries of the customer's non-deleted organizations.
+    * Returns summaries of the customer's organizations.
     */
   def listOrganizations(params: ListOrganizationsRequest): Request[ListOrganizationsResponse, AWSError] = js.native
   def listOrganizations(

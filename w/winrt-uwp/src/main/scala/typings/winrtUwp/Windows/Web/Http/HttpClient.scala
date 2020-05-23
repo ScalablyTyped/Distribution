@@ -4,22 +4,14 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperationWithProgre
 import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import typings.winrtUwp.Windows.Storage.Streams.IInputStream
-import typings.winrtUwp.Windows.Web.Http.Filters.IHttpFilter
 import typings.winrtUwp.Windows.Web.Http.Headers.HttpRequestHeaderCollection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Sends HTTP requests and receives HTTP responses from a resource identified by a URI. */
-@JSGlobal("Windows.Web.Http.HttpClient")
 @js.native
-/** Initializes a new instance of the HttpClient class. */
-class HttpClient () extends js.Object {
-  /**
-    * Initializes a new instance of the HttpClient class with a specific filter for handling HTTP response messages.
-    * @param filter The HTTP filter to use for handling response messages.
-    */
-  def this(filter: IHttpFilter) = this()
+trait HttpClient extends js.Object {
   /** Gets a collection of headers that should be sent with each request. */
   var defaultRequestHeaders: HttpRequestHeaderCollection = js.native
   /** Closes the HttpClient instance and releases allocated resources. */

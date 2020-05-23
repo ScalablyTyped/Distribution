@@ -43,7 +43,7 @@ object Collection {
     description: String = null,
     field_mappings: js.Array[FieldMappingV2] = null,
     name: String = null,
-    retention_secs: Int | Double = null,
+    retention_secs: js.UndefOr[Double] = js.undefined,
     sources: js.Array[Source] = null,
     stats: CollectionStats = null,
     status: CREATED | READY | PAUSED | DELETED | PAUSING | RESUMING | CATCHINGUP | UNKNOWN = null,
@@ -55,7 +55,7 @@ object Collection {
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (field_mappings != null) __obj.updateDynamic("field_mappings")(field_mappings.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (retention_secs != null) __obj.updateDynamic("retention_secs")(retention_secs.asInstanceOf[js.Any])
+    if (!js.isUndefined(retention_secs)) __obj.updateDynamic("retention_secs")(retention_secs.get.asInstanceOf[js.Any])
     if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
     if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])

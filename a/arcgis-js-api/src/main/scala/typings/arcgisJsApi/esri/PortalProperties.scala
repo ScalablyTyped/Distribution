@@ -433,15 +433,15 @@ object PortalProperties {
     hasCategorySchema: js.UndefOr[Boolean] = js.undefined,
     helperServices: js.Any = null,
     homePageFeaturedContent: String = null,
-    homePageFeaturedContentCount: Int | Double = null,
-    httpPort: Int | Double = null,
-    httpsPort: Int | Double = null,
+    homePageFeaturedContentCount: js.UndefOr[Double] = js.undefined,
+    httpPort: js.UndefOr[Double] = js.undefined,
+    httpsPort: js.UndefOr[Double] = js.undefined,
     id: String = null,
     ipCntryCode: String = null,
     isPortal: js.UndefOr[Boolean] = js.undefined,
     isReadOnly: js.UndefOr[Boolean] = js.undefined,
     layerTemplatesGroupQuery: String = null,
-    maxTokenExpirationMinutes: Int | Double = null,
+    maxTokenExpirationMinutes: js.UndefOr[Double] = js.undefined,
     modified: DateProperties = null,
     name: String = null,
     portalHostname: String = null,
@@ -464,22 +464,22 @@ object PortalProperties {
   ): PortalProperties = {
     val __obj = js.Dynamic.literal()
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
-    if (!js.isUndefined(allSSL)) __obj.updateDynamic("allSSL")(allSSL.asInstanceOf[js.Any])
+    if (!js.isUndefined(allSSL)) __obj.updateDynamic("allSSL")(allSSL.get.asInstanceOf[js.Any])
     if (authMode != null) __obj.updateDynamic("authMode")(authMode.asInstanceOf[js.Any])
     if (authorizedCrossOriginDomains != null) __obj.updateDynamic("authorizedCrossOriginDomains")(authorizedCrossOriginDomains.asInstanceOf[js.Any])
     if (basemapGalleryGroupQuery != null) __obj.updateDynamic("basemapGalleryGroupQuery")(basemapGalleryGroupQuery.asInstanceOf[js.Any])
     if (bingKey != null) __obj.updateDynamic("bingKey")(bingKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(canListApps)) __obj.updateDynamic("canListApps")(canListApps.asInstanceOf[js.Any])
-    if (!js.isUndefined(canListData)) __obj.updateDynamic("canListData")(canListData.asInstanceOf[js.Any])
-    if (!js.isUndefined(canListPreProvisionedItems)) __obj.updateDynamic("canListPreProvisionedItems")(canListPreProvisionedItems.asInstanceOf[js.Any])
-    if (!js.isUndefined(canProvisionDirectPurchase)) __obj.updateDynamic("canProvisionDirectPurchase")(canProvisionDirectPurchase.asInstanceOf[js.Any])
-    if (!js.isUndefined(canSearchPublic)) __obj.updateDynamic("canSearchPublic")(canSearchPublic.asInstanceOf[js.Any])
-    if (!js.isUndefined(canShareBingPublic)) __obj.updateDynamic("canShareBingPublic")(canShareBingPublic.asInstanceOf[js.Any])
-    if (!js.isUndefined(canSharePublic)) __obj.updateDynamic("canSharePublic")(canSharePublic.asInstanceOf[js.Any])
-    if (!js.isUndefined(canSignInArcGIS)) __obj.updateDynamic("canSignInArcGIS")(canSignInArcGIS.asInstanceOf[js.Any])
-    if (!js.isUndefined(canSignInIDP)) __obj.updateDynamic("canSignInIDP")(canSignInIDP.asInstanceOf[js.Any])
+    if (!js.isUndefined(canListApps)) __obj.updateDynamic("canListApps")(canListApps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(canListData)) __obj.updateDynamic("canListData")(canListData.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(canListPreProvisionedItems)) __obj.updateDynamic("canListPreProvisionedItems")(canListPreProvisionedItems.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(canProvisionDirectPurchase)) __obj.updateDynamic("canProvisionDirectPurchase")(canProvisionDirectPurchase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(canSearchPublic)) __obj.updateDynamic("canSearchPublic")(canSearchPublic.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(canShareBingPublic)) __obj.updateDynamic("canShareBingPublic")(canShareBingPublic.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(canSharePublic)) __obj.updateDynamic("canSharePublic")(canSharePublic.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(canSignInArcGIS)) __obj.updateDynamic("canSignInArcGIS")(canSignInArcGIS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(canSignInIDP)) __obj.updateDynamic("canSignInIDP")(canSignInIDP.get.asInstanceOf[js.Any])
     if (colorSetsGroupQuery != null) __obj.updateDynamic("colorSetsGroupQuery")(colorSetsGroupQuery.asInstanceOf[js.Any])
-    if (!js.isUndefined(commentsEnabled)) __obj.updateDynamic("commentsEnabled")(commentsEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(commentsEnabled)) __obj.updateDynamic("commentsEnabled")(commentsEnabled.get.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (culture != null) __obj.updateDynamic("culture")(culture.asInstanceOf[js.Any])
     if (customBaseUrl != null) __obj.updateDynamic("customBaseUrl")(customBaseUrl.asInstanceOf[js.Any])
@@ -487,22 +487,22 @@ object PortalProperties {
     if (defaultExtent != null) __obj.updateDynamic("defaultExtent")(defaultExtent.asInstanceOf[js.Any])
     if (defaultVectorBasemap != null) __obj.updateDynamic("defaultVectorBasemap")(defaultVectorBasemap.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(eueiEnabled)) __obj.updateDynamic("eueiEnabled")(eueiEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(eueiEnabled)) __obj.updateDynamic("eueiEnabled")(eueiEnabled.get.asInstanceOf[js.Any])
     if (featuredGroups != null) __obj.updateDynamic("featuredGroups")(featuredGroups.asInstanceOf[js.Any])
     if (featuredItemsGroupQuery != null) __obj.updateDynamic("featuredItemsGroupQuery")(featuredItemsGroupQuery.asInstanceOf[js.Any])
     if (galleryTemplatesGroupQuery != null) __obj.updateDynamic("galleryTemplatesGroupQuery")(galleryTemplatesGroupQuery.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasCategorySchema)) __obj.updateDynamic("hasCategorySchema")(hasCategorySchema.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasCategorySchema)) __obj.updateDynamic("hasCategorySchema")(hasCategorySchema.get.asInstanceOf[js.Any])
     if (helperServices != null) __obj.updateDynamic("helperServices")(helperServices.asInstanceOf[js.Any])
     if (homePageFeaturedContent != null) __obj.updateDynamic("homePageFeaturedContent")(homePageFeaturedContent.asInstanceOf[js.Any])
-    if (homePageFeaturedContentCount != null) __obj.updateDynamic("homePageFeaturedContentCount")(homePageFeaturedContentCount.asInstanceOf[js.Any])
-    if (httpPort != null) __obj.updateDynamic("httpPort")(httpPort.asInstanceOf[js.Any])
-    if (httpsPort != null) __obj.updateDynamic("httpsPort")(httpsPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(homePageFeaturedContentCount)) __obj.updateDynamic("homePageFeaturedContentCount")(homePageFeaturedContentCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(httpPort)) __obj.updateDynamic("httpPort")(httpPort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(httpsPort)) __obj.updateDynamic("httpsPort")(httpsPort.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (ipCntryCode != null) __obj.updateDynamic("ipCntryCode")(ipCntryCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPortal)) __obj.updateDynamic("isPortal")(isPortal.asInstanceOf[js.Any])
-    if (!js.isUndefined(isReadOnly)) __obj.updateDynamic("isReadOnly")(isReadOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPortal)) __obj.updateDynamic("isPortal")(isPortal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isReadOnly)) __obj.updateDynamic("isReadOnly")(isReadOnly.get.asInstanceOf[js.Any])
     if (layerTemplatesGroupQuery != null) __obj.updateDynamic("layerTemplatesGroupQuery")(layerTemplatesGroupQuery.asInstanceOf[js.Any])
-    if (maxTokenExpirationMinutes != null) __obj.updateDynamic("maxTokenExpirationMinutes")(maxTokenExpirationMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTokenExpirationMinutes)) __obj.updateDynamic("maxTokenExpirationMinutes")(maxTokenExpirationMinutes.get.asInstanceOf[js.Any])
     if (modified != null) __obj.updateDynamic("modified")(modified.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (portalHostname != null) __obj.updateDynamic("portalHostname")(portalHostname.asInstanceOf[js.Any])
@@ -510,16 +510,16 @@ object PortalProperties {
     if (portalProperties != null) __obj.updateDynamic("portalProperties")(portalProperties.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (rotatorPanels != null) __obj.updateDynamic("rotatorPanels")(rotatorPanels.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHomePageDescription)) __obj.updateDynamic("showHomePageDescription")(showHomePageDescription.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHomePageDescription)) __obj.updateDynamic("showHomePageDescription")(showHomePageDescription.get.asInstanceOf[js.Any])
     if (sourceJSON != null) __obj.updateDynamic("sourceJSON")(sourceJSON.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsHostedServices)) __obj.updateDynamic("supportsHostedServices")(supportsHostedServices.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsHostedServices)) __obj.updateDynamic("supportsHostedServices")(supportsHostedServices.get.asInstanceOf[js.Any])
     if (symbolSetsGroupQuery != null) __obj.updateDynamic("symbolSetsGroupQuery")(symbolSetsGroupQuery.asInstanceOf[js.Any])
     if (templatesGroupQuery != null) __obj.updateDynamic("templatesGroupQuery")(templatesGroupQuery.asInstanceOf[js.Any])
     if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (urlKey != null) __obj.updateDynamic("urlKey")(urlKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(useStandardizedQuery)) __obj.updateDynamic("useStandardizedQuery")(useStandardizedQuery.asInstanceOf[js.Any])
-    if (!js.isUndefined(useVectorBasemaps)) __obj.updateDynamic("useVectorBasemaps")(useVectorBasemaps.asInstanceOf[js.Any])
+    if (!js.isUndefined(useStandardizedQuery)) __obj.updateDynamic("useStandardizedQuery")(useStandardizedQuery.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useVectorBasemaps)) __obj.updateDynamic("useVectorBasemaps")(useVectorBasemaps.get.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     if (vectorBasemapGalleryGroupQuery != null) __obj.updateDynamic("vectorBasemapGalleryGroupQuery")(vectorBasemapGalleryGroupQuery.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortalProperties]

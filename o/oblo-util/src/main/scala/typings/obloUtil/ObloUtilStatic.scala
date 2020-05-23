@@ -1,6 +1,6 @@
 package typings.obloUtil
 
-import typings.jquery.JQuery_
+import typings.jquery.JQuery
 import typings.std.Date
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -18,7 +18,7 @@ trait ObloUtilStatic extends js.Object {
   def padZero(l: Double, n: Double): String = js.native
   def readDate(dateStr: String): Date = js.native
   def replicate[X](n: Double, x: X): js.Array[X] = js.native
-  def setAttr($elt: JQuery_[HTMLElement], attrName: String, isSet: Boolean): Unit = js.native
+  def setAttr($elt: JQuery[HTMLElement], attrName: String, isSet: Boolean): Unit = js.native
   def showDate(date: Date): String = js.native
   def showJSON(json: js.Any): String = js.native
   def showJSON(json: js.Any, indentStr: String): String = js.native

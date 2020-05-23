@@ -8,10 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a property set, which is a set of PropertyValue objects with string keys. */
-@JSGlobal("Windows.Foundation.Collections.PropertySet")
 @js.native
-/** Creates and initializes a new instance of the property set. */
-class PropertySet () extends js.Object {
+trait PropertySet extends js.Object {
   /** Occurs when the observable map has changed. */
   @JSName("onmapchanged")
   var onmapchanged_Original: MapChangedEventHandler[String, _] = js.native

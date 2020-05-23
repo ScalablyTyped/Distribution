@@ -20,10 +20,10 @@ trait Reason extends js.Object {
 
 object Reason {
   @scala.inline
-  def apply(count: String = null, status: Int | Double = null): Reason = {
+  def apply(count: String = null, status: js.UndefOr[Double] = js.undefined): Reason = {
     val __obj = js.Dynamic.literal()
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reason]
   }
 }

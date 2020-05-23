@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.DiagramNodeChildren")
 @js.native
-class DiagramNodeChildren protected () extends js.Object {
+trait DiagramNodeChildren extends js.Object {
   val Application: typings.activexWord.Word.Application = js.native
   val Count: Double = js.native
   val Creator: Double = js.native

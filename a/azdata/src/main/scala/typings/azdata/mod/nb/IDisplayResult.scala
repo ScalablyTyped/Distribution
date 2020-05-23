@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait IDisplayResult extends ICellOutput {
   /**
-  			 * Mime bundle expected to contain mime type -> contents mappings.
-  			 * This is dynamic and is controlled by kernels, so cannot be more specific
-  			 */
+    * Mime bundle expected to contain mime type -> contents mappings.
+    * This is dynamic and is controlled by kernels, so cannot be more specific
+    */
   var data: StringDictionary[js.Any]
   /**
-  			 * Optional metadata, also a mime bundle
-  			 */
+    * Optional metadata, also a mime bundle
+    */
   var metadata: js.UndefOr[js.Object] = js.undefined
 }
 

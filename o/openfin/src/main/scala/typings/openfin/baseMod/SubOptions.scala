@@ -10,9 +10,9 @@ trait SubOptions extends js.Object {
 
 object SubOptions {
   @scala.inline
-  def apply(timestamp: Int | Double = null): SubOptions = {
+  def apply(timestamp: js.UndefOr[Double] = js.undefined): SubOptions = {
     val __obj = js.Dynamic.literal()
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubOptions]
   }
 }

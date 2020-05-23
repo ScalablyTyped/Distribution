@@ -17,13 +17,13 @@ object ICalloutState {
   @scala.inline
   def apply(
     calloutElementRect: ClientRect = null,
-    heightOffset: Int | Double = null,
+    heightOffset: js.UndefOr[Double] = js.undefined,
     positions: ICalloutPositionedInfo = null,
     slideDirectionalClassName: String = null
   ): ICalloutState = {
     val __obj = js.Dynamic.literal()
     if (calloutElementRect != null) __obj.updateDynamic("calloutElementRect")(calloutElementRect.asInstanceOf[js.Any])
-    if (heightOffset != null) __obj.updateDynamic("heightOffset")(heightOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(heightOffset)) __obj.updateDynamic("heightOffset")(heightOffset.get.asInstanceOf[js.Any])
     if (positions != null) __obj.updateDynamic("positions")(positions.asInstanceOf[js.Any])
     if (slideDirectionalClassName != null) __obj.updateDynamic("slideDirectionalClassName")(slideDirectionalClassName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICalloutState]

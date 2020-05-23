@@ -4,48 +4,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.Arc2")
-@js.native
-class Arc2 protected () extends js.Object {
-  /**
-    * Creates an Arc object from the three given points : start, middle and end.
-    * @param startPoint Defines the start point of the arc
-    * @param midPoint Defines the midlle point of the arc
-    * @param endPoint Defines the end point of the arc
-    */
-  def this(
-    /** Defines the start point of the arc */
-  startPoint: Vector2,
-    /** Defines the mid point of the arc */
-  midPoint: Vector2,
-    /** Defines the end point of the arc */
-  endPoint: Vector2
-  ) = this()
+trait Arc2 extends js.Object {
   /**
     * Defines the angle of the arc (from mid point to end point).
     */
-  var angle: Angle = js.native
+  var angle: Angle
   /**
     * Defines the center point of the arc.
     */
-  var centerPoint: Vector2 = js.native
+  var centerPoint: Vector2
   /** Defines the end point of the arc */
-  var endPoint: Vector2 = js.native
+  var endPoint: Vector2
   /** Defines the mid point of the arc */
-  var midPoint: Vector2 = js.native
+  var midPoint: Vector2
   /**
     * Defines the orientation of the arc (clock wise/counter clock wise).
     */
-  var orientation: Orientation = js.native
+  var orientation: Orientation
   /**
     * Defines the radius of the arc.
     */
-  var radius: Double = js.native
+  var radius: Double
   /**
     * Defines the start angle of the arc (from start point to middle point).
     */
-  var startAngle: Angle = js.native
+  var startAngle: Angle
   /** Defines the start point of the arc */
-  var startPoint: Vector2 = js.native
+  var startPoint: Vector2
+}
+
+object Arc2 {
+  @scala.inline
+  def apply(
+    angle: Angle,
+    centerPoint: Vector2,
+    endPoint: Vector2,
+    midPoint: Vector2,
+    orientation: Orientation,
+    radius: Double,
+    startAngle: Angle,
+    startPoint: Vector2
+  ): Arc2 = {
+    val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], centerPoint = centerPoint.asInstanceOf[js.Any], endPoint = endPoint.asInstanceOf[js.Any], midPoint = midPoint.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any], startPoint = startPoint.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Arc2]
+  }
 }
 

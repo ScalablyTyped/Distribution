@@ -34,7 +34,7 @@ object BundleRendererOptions {
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (clientManifest != null) __obj.updateDynamic("clientManifest")(clientManifest.asInstanceOf[js.Any])
     if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
-    if (!js.isUndefined(inject)) __obj.updateDynamic("inject")(inject.asInstanceOf[js.Any])
+    if (!js.isUndefined(inject)) __obj.updateDynamic("inject")(inject.get.asInstanceOf[js.Any])
     if (runInNewContext != null) __obj.updateDynamic("runInNewContext")(runInNewContext.asInstanceOf[js.Any])
     if (serializer != null) __obj.updateDynamic("serializer")(js.Any.fromFunction1(serializer))
     if (shouldPrefetch != null) __obj.updateDynamic("shouldPrefetch")(js.Any.fromFunction2(shouldPrefetch))

@@ -1,7 +1,7 @@
 package typings.soap.typesMod
 
-import typings.soap.AnonSubcode
-import typings.soap.AnonText
+import typings.soap.anon.Subcode
+import typings.soap.anon.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,17 +18,17 @@ object ISoapFault {
     faultcode: Double | String,
     faultstring: String,
     detail: String = null,
-    statusCode: Int | Double = null
+    statusCode: js.UndefOr[Double] = js.undefined
   ): ISoapFault = {
     val __obj = js.Dynamic.literal(faultcode = faultcode.asInstanceOf[js.Any], faultstring = faultstring.asInstanceOf[js.Any])
     if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusCode)) __obj.updateDynamic("statusCode")(statusCode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISoapFault]
   }
   @scala.inline
-  def ISoapFault12(Code: AnonSubcode, Reason: AnonText, statusCode: Int | Double = null): ISoapFault = {
+  def ISoapFault12(Code: Subcode, Reason: Text, statusCode: js.UndefOr[Double] = js.undefined): ISoapFault = {
     val __obj = js.Dynamic.literal(Code = Code.asInstanceOf[js.Any], Reason = Reason.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusCode)) __obj.updateDynamic("statusCode")(statusCode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISoapFault]
   }
 }

@@ -1,6 +1,5 @@
 package typings.baseui.datepickerMod
 
-import typings.baseui.AnonDate
 import typings.react.mod.Component
 import typings.std.Date
 import typings.std.KeyboardEvent
@@ -21,7 +20,7 @@ class Datepicker ()
   def handleEsc(): Unit = js.native
   def handleInputBlur(): Unit = js.native
   def handleKeyDown(event: KeyboardEvent): Unit = js.native
-  def onChange(data: AnonDate): Unit = js.native
+  def onChange(data: typings.baseui.anon.Date): Unit = js.native
   def open(): Unit = js.native
 }
 

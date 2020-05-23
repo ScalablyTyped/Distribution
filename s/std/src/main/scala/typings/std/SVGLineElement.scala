@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,8 +12,4 @@ trait SVGLineElement extends SVGGeometryElement {
   val y1: SVGAnimatedLength = js.native
   val y2: SVGAnimatedLength = js.native
 }
-
-@JSGlobal("SVGLineElement")
-@js.native
-object SVGLineElement extends Instantiable0[SVGLineElement]
 

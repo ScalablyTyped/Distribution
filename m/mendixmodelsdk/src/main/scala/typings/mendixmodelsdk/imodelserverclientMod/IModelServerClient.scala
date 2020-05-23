@@ -216,22 +216,27 @@ trait IModelServerClient extends js.Object {
     callback: ICallback[ISendDeltasResult],
     errorCallback: IErrorCallback
   ): Unit = js.native
+  def setProjectMembers(
+    projectId: String,
+    memberOpenids: js.Array[String],
+    callback: IVoidCallback,
+    errorCallback: IErrorCallback
+  ): Unit = js.native
   /**
     * Start async deploy flow, creates new app job and returns it
     */
   def startAppUpdate(workingCopyId: String, callback: ICallback[IDeployJobStatus], errorCallback: IErrorCallback): Unit = js.native
-  def unlockWorkingCopy(
-    workingCopyId: String,
-    lockType: js.UndefOr[scala.Nothing],
-    callback: IVoidCallback,
-    errorCallback: IErrorCallback
-  ): Unit = js.native
   /**
     * Unlock the working copy (will be unlocked for the currently authenticated openid, will fail if it's locked by another openid)
     *
     * @param lockType if specified, only unlock if the working copy has this specified lock
     */
-  def unlockWorkingCopy(workingCopyId: String, lockType: LockType, callback: IVoidCallback, errorCallback: IErrorCallback): Unit = js.native
+  def unlockWorkingCopy(
+    workingCopyId: String,
+    lockType: js.UndefOr[LockType],
+    callback: IVoidCallback,
+    errorCallback: IErrorCallback
+  ): Unit = js.native
   /**
     * Update the project-to-working copy mapping with the given data.
     */

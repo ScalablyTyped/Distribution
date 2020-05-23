@@ -49,11 +49,7 @@ trait CookieAttributes
 object CookieAttributes {
   @scala.inline
   def apply(
-    StringDictionary: /**
-    * An attribute which will be serialized, conformably to RFC 6265
-    * section 5.2.
-    */
-  /* property */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     domain: String = null,
     expires: Double | Date = null,
     path: String = null,
@@ -66,7 +62,7 @@ object CookieAttributes {
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (sameSite != null) __obj.updateDynamic("sameSite")(sameSite.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CookieAttributes]
   }
 }

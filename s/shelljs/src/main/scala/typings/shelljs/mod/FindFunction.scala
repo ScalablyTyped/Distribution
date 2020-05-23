@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 trait FindFunction extends js.Object {
   def apply(path: String*): ShellArray = js.native
   /**
-  	 * Returns array of all files (however deep) in the given paths.
-  	 *
-  	 * @param path The path(s) to search.
-  	 * @return     An array of all files (however deep) in the given path(s).
-  	 */
+    * Returns array of all files (however deep) in the given paths.
+    *
+    * @param path The path(s) to search.
+    * @return     An array of all files (however deep) in the given path(s).
+    */
   def apply(path: js.Array[String]): ShellArray = js.native
 }
 

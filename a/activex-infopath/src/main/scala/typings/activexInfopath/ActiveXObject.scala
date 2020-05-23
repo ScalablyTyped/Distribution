@@ -54,6 +54,22 @@ import typings.activexInfopath.activexInfopathStrings.ppvObj
 import typings.activexInfopath.activexInfopathStrings.rgdispid
 import typings.activexInfopath.activexInfopathStrings.rgszNames
 import typings.activexInfopath.activexInfopathStrings.riid
+import typings.activexInfopath.anon.CNames
+import typings.activexInfopath.anon.Itinfo
+import typings.activexInfopath.anon.PDataDOMEvent
+import typings.activexInfopath.anon.PDocument
+import typings.activexInfopath.anon.PEvent
+import typings.activexInfopath.anon.PEventDocContextChangeEventObject
+import typings.activexInfopath.anon.PEventDocEventObject
+import typings.activexInfopath.anon.PEventDocReturnEventObject
+import typings.activexInfopath.anon.PEventMergeEventObject
+import typings.activexInfopath.anon.PEventSaveEventObject
+import typings.activexInfopath.anon.PEventSignEventObject
+import typings.activexInfopath.anon.PEventVersionUpgradeEventObject
+import typings.activexInfopath.anon.PWindow
+import typings.activexInfopath.anon.Pctinfo
+import typings.activexInfopath.anon.PfCancel
+import typings.activexInfopath.anon.PpvObj
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -64,199 +80,199 @@ trait ActiveXObject extends js.Object {
     obj: ApplicationEvents,
     event: NewXDocument,
     argNames: js.Array[pDocument],
-    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ AnonPDocument, Unit]
+    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ PDocument, Unit]
   ): Unit = js.native
   def on(
     obj: ApplicationEvents,
     event: WindowActivate,
     argNames: js.Tuple2[pDocument, pWindow],
-    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ AnonPWindow, Unit]
+    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ PWindow, Unit]
   ): Unit = js.native
   def on(
     obj: ApplicationEvents,
     event: WindowDeactivate,
     argNames: js.Tuple2[pDocument, pWindow],
-    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ AnonPWindow, Unit]
+    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ PWindow, Unit]
   ): Unit = js.native
   def on(
     obj: ApplicationEvents,
     event: WindowSize,
     argNames: js.Tuple2[pDocument, pWindow],
-    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ AnonPWindow, Unit]
+    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ PWindow, Unit]
   ): Unit = js.native
   def on(
     obj: ApplicationEvents,
     event: XDocumentBeforeClose,
     argNames: js.Tuple2[pDocument, pfCancel],
-    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ AnonPfCancel, Unit]
+    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ PfCancel, Unit]
   ): Unit = js.native
   def on(
     obj: ApplicationEvents,
     event: XDocumentBeforePrint,
     argNames: js.Tuple2[pDocument, pfCancel],
-    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ AnonPfCancel, Unit]
+    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ PfCancel, Unit]
   ): Unit = js.native
   def on(
     obj: ApplicationEvents,
     event: XDocumentBeforeSave,
     argNames: js.Tuple2[pDocument, pfCancel],
-    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ AnonPfCancel, Unit]
+    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ PfCancel, Unit]
   ): Unit = js.native
   def on(
     obj: ApplicationEvents,
     event: XDocumentOpen,
     argNames: js.Array[pDocument],
-    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ AnonPDocument, Unit]
+    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ PDocument, Unit]
   ): Unit = js.native
   def on(
     obj: Button,
     event: GetIDsOfNames,
     argNames: js.Tuple5[riid, rgszNames, cNames, lcid, rgdispid],
-    handler: js.ThisFunction1[/* this */ Button, /* parameter */ AnonCNames, Unit]
+    handler: js.ThisFunction1[/* this */ Button, /* parameter */ CNames, Unit]
   ): Unit = js.native
   def on(
     obj: Button,
     event: GetTypeInfoCount,
     argNames: js.Array[pctinfo],
-    handler: js.ThisFunction1[/* this */ Button, /* parameter */ AnonPctinfo, Unit]
+    handler: js.ThisFunction1[/* this */ Button, /* parameter */ Pctinfo, Unit]
   ): Unit = js.native
   def on(
     obj: Button,
     event: GetTypeInfo,
     argNames: js.Tuple3[itinfo, lcid, pptinfo],
-    handler: js.ThisFunction1[/* this */ Button, /* parameter */ AnonItinfo, Unit]
+    handler: js.ThisFunction1[/* this */ Button, /* parameter */ Itinfo, Unit]
   ): Unit = js.native
   def on(
     obj: Button,
     event: OnClick,
     argNames: js.Array[pEvent],
-    handler: js.ThisFunction1[/* this */ Button, /* parameter */ AnonPEvent, Unit]
+    handler: js.ThisFunction1[/* this */ Button, /* parameter */ PEvent, Unit]
   ): Unit = js.native
   def on(
     obj: Button,
     event: QueryInterface,
     argNames: js.Tuple2[riid, ppvObj],
-    handler: js.ThisFunction1[/* this */ Button, /* parameter */ AnonPpvObj, Unit]
+    handler: js.ThisFunction1[/* this */ Button, /* parameter */ PpvObj, Unit]
   ): Unit = js.native
   def on(
     obj: DataDOM,
     event: GetIDsOfNames,
     argNames: js.Tuple5[riid, rgszNames, cNames, lcid, rgdispid],
-    handler: js.ThisFunction1[/* this */ DataDOM, /* parameter */ AnonCNames, Unit]
+    handler: js.ThisFunction1[/* this */ DataDOM, /* parameter */ CNames, Unit]
   ): Unit = js.native
   def on(
     obj: DataDOM,
     event: GetTypeInfoCount,
     argNames: js.Array[pctinfo],
-    handler: js.ThisFunction1[/* this */ DataDOM, /* parameter */ AnonPctinfo, Unit]
+    handler: js.ThisFunction1[/* this */ DataDOM, /* parameter */ Pctinfo, Unit]
   ): Unit = js.native
   def on(
     obj: DataDOM,
     event: GetTypeInfo,
     argNames: js.Tuple3[itinfo, lcid, pptinfo],
-    handler: js.ThisFunction1[/* this */ DataDOM, /* parameter */ AnonItinfo, Unit]
+    handler: js.ThisFunction1[/* this */ DataDOM, /* parameter */ Itinfo, Unit]
   ): Unit = js.native
   def on(
     obj: DataDOM,
     event: OnAfterChange,
     argNames: js.Array[pDataDOMEvent],
-    handler: js.ThisFunction1[/* this */ DataDOM, /* parameter */ AnonPDataDOMEvent, Unit]
+    handler: js.ThisFunction1[/* this */ DataDOM, /* parameter */ PDataDOMEvent, Unit]
   ): Unit = js.native
   def on(
     obj: DataDOM,
     event: OnBeforeChange,
     argNames: js.Array[pDataDOMEvent],
-    handler: js.ThisFunction1[/* this */ DataDOM, /* parameter */ AnonPDataDOMEvent, Unit]
+    handler: js.ThisFunction1[/* this */ DataDOM, /* parameter */ PDataDOMEvent, Unit]
   ): Unit = js.native
   def on(
     obj: DataDOM,
     event: OnValidate,
     argNames: js.Array[pDataDOMEvent],
-    handler: js.ThisFunction1[/* this */ DataDOM, /* parameter */ AnonPDataDOMEvent, Unit]
+    handler: js.ThisFunction1[/* this */ DataDOM, /* parameter */ PDataDOMEvent, Unit]
   ): Unit = js.native
   def on(
     obj: DataDOM,
     event: QueryInterface,
     argNames: js.Tuple2[riid, ppvObj],
-    handler: js.ThisFunction1[/* this */ DataDOM, /* parameter */ AnonPpvObj, Unit]
+    handler: js.ThisFunction1[/* this */ DataDOM, /* parameter */ PpvObj, Unit]
   ): Unit = js.native
   def on(
     obj: XDocument,
     event: GetIDsOfNames,
     argNames: js.Tuple5[riid, rgszNames, cNames, lcid, rgdispid],
-    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ AnonCNames, Unit]
+    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ CNames, Unit]
   ): Unit = js.native
   def on(
     obj: XDocument,
     event: GetTypeInfoCount,
     argNames: js.Array[pctinfo],
-    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ AnonPctinfo, Unit]
+    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ Pctinfo, Unit]
   ): Unit = js.native
   def on(
     obj: XDocument,
     event: GetTypeInfo,
     argNames: js.Tuple3[itinfo, lcid, pptinfo],
-    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ AnonItinfo, Unit]
+    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ Itinfo, Unit]
   ): Unit = js.native
   def on(
     obj: XDocument,
     event: OnAfterImport,
     argNames: js.Array[pEvent],
-    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ AnonPEventDocEventObject, Unit]
+    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ PEventDocEventObject, Unit]
   ): Unit = js.native
   def on(
     obj: XDocument,
     event: OnContextChange,
     argNames: js.Array[pEvent],
-    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ AnonPEventDocContextChangeEventObject, Unit]
+    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ PEventDocContextChangeEventObject, Unit]
   ): Unit = js.native
   def on(
     obj: XDocument,
     event: OnLoad,
     argNames: js.Array[pEvent],
-    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ AnonPEventDocReturnEventObject, Unit]
+    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ PEventDocReturnEventObject, Unit]
   ): Unit = js.native
   def on(
     obj: XDocument,
     event: OnMergeRequest,
     argNames: js.Array[pEvent],
-    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ AnonPEventMergeEventObject, Unit]
+    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ PEventMergeEventObject, Unit]
   ): Unit = js.native
   def on(
     obj: XDocument,
     event: OnSaveRequest,
     argNames: js.Array[pEvent],
-    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ AnonPEventSaveEventObject, Unit]
+    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ PEventSaveEventObject, Unit]
   ): Unit = js.native
   def on(
     obj: XDocument,
     event: OnSign,
     argNames: js.Array[pEvent],
-    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ AnonPEventSignEventObject, Unit]
+    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ PEventSignEventObject, Unit]
   ): Unit = js.native
   def on(
     obj: XDocument,
     event: OnSubmitRequest,
     argNames: js.Array[pEvent],
-    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ AnonPEventDocReturnEventObject, Unit]
+    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ PEventDocReturnEventObject, Unit]
   ): Unit = js.native
   def on(
     obj: XDocument,
     event: OnSwitchView,
     argNames: js.Array[pEvent],
-    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ AnonPEventDocEventObject, Unit]
+    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ PEventDocEventObject, Unit]
   ): Unit = js.native
   def on(
     obj: XDocument,
     event: OnVersionUpgrade,
     argNames: js.Array[pEvent],
-    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ AnonPEventVersionUpgradeEventObject, Unit]
+    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ PEventVersionUpgradeEventObject, Unit]
   ): Unit = js.native
   def on(
     obj: XDocument,
     event: QueryInterface,
     argNames: js.Tuple2[riid, ppvObj],
-    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ AnonPpvObj, Unit]
+    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ PpvObj, Unit]
   ): Unit = js.native
   @JSName("on")
   def on_AddRef(

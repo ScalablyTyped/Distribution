@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientDashboard.DashboardBeginUpdate event.
   */
-@JSGlobal("ASPxClientDashboardBeginUpdateEventArgs")
-@js.native
-class ASPxClientDashboardBeginUpdateEventArgs () extends ASPxClientEventArgs {
+trait ASPxClientDashboardBeginUpdateEventArgs extends ASPxClientEventArgs {
   /**
     * Gets the identifier of the dashboard for which the event was raised.
     */
-  var DashboardId: String = js.native
+  var DashboardId: String
+}
+
+object ASPxClientDashboardBeginUpdateEventArgs {
+  @scala.inline
+  def apply(DashboardId: String): ASPxClientDashboardBeginUpdateEventArgs = {
+    val __obj = js.Dynamic.literal(DashboardId = DashboardId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientDashboardBeginUpdateEventArgs]
+  }
 }
 

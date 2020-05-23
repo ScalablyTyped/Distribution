@@ -33,7 +33,7 @@ object MenuProps {
     className: String = null,
     data: js.Array[DataItem] = null,
     defaultValue: ValueType = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     level: `1` | `2` = null,
     multiSelect: js.UndefOr[Boolean] = js.undefined,
     multiSelectMenuBtnsCls: String = null,
@@ -51,9 +51,9 @@ object MenuProps {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect.get.asInstanceOf[js.Any])
     if (multiSelectMenuBtnsCls != null) __obj.updateDynamic("multiSelectMenuBtnsCls")(multiSelectMenuBtnsCls.asInstanceOf[js.Any])
     if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction0(onCancel))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))

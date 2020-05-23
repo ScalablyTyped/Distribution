@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSXML2.IXMLDOMProcessingInstruction")
 @js.native
-class IXMLDOMProcessingInstruction protected () extends js.Object {
+trait IXMLDOMProcessingInstruction extends js.Object {
   @JSName("MSXML2.IXMLDOMProcessingInstruction_typekey")
   var MSXML2DotIXMLDOMProcessingInstruction_typekey: IXMLDOMProcessingInstruction = js.native
   /** the collection of the node's attributes */

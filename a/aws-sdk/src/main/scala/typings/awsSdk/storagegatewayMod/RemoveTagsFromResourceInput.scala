@@ -11,7 +11,7 @@ trait RemoveTagsFromResourceInput extends js.Object {
     */
   var ResourceARN: typings.awsSdk.storagegatewayMod.ResourceARN = js.native
   /**
-    * The keys of the tags you want to remove from the specified resource. A tag is composed of a key/value pair.
+    * The keys of the tags you want to remove from the specified resource. A tag is composed of a key-value pair.
     */
   var TagKeys: typings.awsSdk.storagegatewayMod.TagKeys = js.native
 }

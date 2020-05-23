@@ -16,9 +16,9 @@ trait EBSStorageInfo extends js.Object {
 
 object EBSStorageInfo {
   @scala.inline
-  def apply(VolumeSize: Int | Double = null): EBSStorageInfo = {
+  def apply(VolumeSize: js.UndefOr[integerMin1Max16384] = js.undefined): EBSStorageInfo = {
     val __obj = js.Dynamic.literal()
-    if (VolumeSize != null) __obj.updateDynamic("VolumeSize")(VolumeSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(VolumeSize)) __obj.updateDynamic("VolumeSize")(VolumeSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EBSStorageInfo]
   }
 }

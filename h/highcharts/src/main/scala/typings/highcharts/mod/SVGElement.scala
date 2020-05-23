@@ -120,7 +120,6 @@ class SVGElement () extends js.Object {
     *         value of the attribute is returned.
     */
   def attr(): SVGElement = js.native
-  def attr(hash: String): SVGElement = js.native
   def attr(hash: String, `val`: String): SVGElement = js.native
   def attr(hash: String, `val`: String, complete: js.Function): SVGElement = js.native
   def attr(hash: String, `val`: String, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
@@ -140,6 +139,9 @@ class SVGElement () extends js.Object {
   def attr(hash: SVGAttributes, `val`: SVGPathArray): SVGElement = js.native
   def attr(hash: SVGAttributes, `val`: SVGPathArray, complete: js.Function): SVGElement = js.native
   def attr(hash: SVGAttributes, `val`: SVGPathArray, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(key: String): Double | String = js.native
+  @JSName("attr")
+  def attr_SVGElement(hash: String): SVGElement = js.native
   /**
     * Apply a clipping rectangle to this element.
     *
@@ -180,7 +182,7 @@ class SVGElement () extends js.Object {
     * Destroy the element and element wrapper and clear up the DOM and event
     * hooks.
     */
-  def destroy(): js.UndefOr[scala.Nothing] = js.native
+  def destroy(): Unit = js.native
   /**
     * A general fadeIn method.
     *

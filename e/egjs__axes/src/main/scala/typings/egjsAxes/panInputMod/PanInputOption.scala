@@ -16,14 +16,14 @@ object PanInputOption {
   def apply(
     inputType: js.Array[String] = null,
     scale: js.Array[Double] = null,
-    threshold: Int | Double = null,
-    thresholdAngle: Int | Double = null
+    threshold: js.UndefOr[Double] = js.undefined,
+    thresholdAngle: js.UndefOr[Double] = js.undefined
   ): PanInputOption = {
     val __obj = js.Dynamic.literal()
     if (inputType != null) __obj.updateDynamic("inputType")(inputType.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
-    if (thresholdAngle != null) __obj.updateDynamic("thresholdAngle")(thresholdAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(thresholdAngle)) __obj.updateDynamic("thresholdAngle")(thresholdAngle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PanInputOption]
   }
 }

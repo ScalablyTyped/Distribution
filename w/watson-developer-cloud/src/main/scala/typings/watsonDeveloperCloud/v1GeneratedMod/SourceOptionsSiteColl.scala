@@ -14,9 +14,9 @@ trait SourceOptionsSiteColl extends js.Object {
 
 object SourceOptionsSiteColl {
   @scala.inline
-  def apply(site_collection_path: String, limit: Int | Double = null): SourceOptionsSiteColl = {
+  def apply(site_collection_path: String, limit: js.UndefOr[Double] = js.undefined): SourceOptionsSiteColl = {
     val __obj = js.Dynamic.literal(site_collection_path = site_collection_path.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceOptionsSiteColl]
   }
 }

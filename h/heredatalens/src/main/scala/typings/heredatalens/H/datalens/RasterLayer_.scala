@@ -11,12 +11,8 @@ import scala.scalajs.js.annotation._
   * The rendering is implemented by drawing directly on a canvas.  The layer is often used together with a Data Lens query which groups rows by pixels.
   * This reduces the amount of data delivered to the client.
   */
-@JSGlobal("H.datalens.RasterLayer")
 @js.native
-/**
-  * Constructor
-  */
-class RasterLayer_ () extends TileLayer {
+trait RasterLayer_ extends TileLayer {
   /**
     * Force re-rendering of the layer.
     * In the case where the callbacks passed to the layer options are not pure functions, you can call this method to force re-rendering.

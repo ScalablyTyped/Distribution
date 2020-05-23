@@ -1,6 +1,7 @@
 package typings.antdMobileRn
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.antdMobileRn.anon.BarTintColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +17,7 @@ object tabBarIndexNativeMod extends js.Object {
   object default
     extends Instantiable0[typings.antdMobileRn.tabbarIosMod.default] {
     var Item: js.Any = js.native
-    var defaultProps: AnonBarTintColor = js.native
+    var defaultProps: BarTintColor = js.native
   }
   
 }

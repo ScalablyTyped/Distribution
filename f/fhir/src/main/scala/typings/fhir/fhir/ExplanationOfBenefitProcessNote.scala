@@ -46,7 +46,7 @@ object ExplanationOfBenefitProcessNote {
     id: String = null,
     language: CodeableConcept = null,
     modifierExtension: js.Array[Extension] = null,
-    number: Int | Double = null,
+    number: js.UndefOr[positiveInt] = js.undefined,
     text: String = null,
     `type`: CodeableConcept = null
   ): ExplanationOfBenefitProcessNote = {
@@ -60,7 +60,7 @@ object ExplanationOfBenefitProcessNote {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExplanationOfBenefitProcessNote]

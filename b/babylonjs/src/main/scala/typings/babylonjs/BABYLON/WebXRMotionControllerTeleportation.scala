@@ -4,15 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.WebXRMotionControllerTeleportation")
 @js.native
-class WebXRMotionControllerTeleportation protected () extends WebXRAbstractFeature {
-  /**
-    * constructs a new anchor system
-    * @param _xrSessionManager an instance of WebXRSessionManager
-    * @param _options configuration object for this feature
-    */
-  def this(_xrSessionManager: WebXRSessionManager, _options: IWebXRTeleportationOptions) = this()
+trait WebXRMotionControllerTeleportation extends WebXRAbstractFeature {
   var _attachController: js.Any = js.native
   var _controllers: js.Any = js.native
   var _createDefaultTargetMesh: js.Any = js.native
@@ -103,21 +96,5 @@ class WebXRMotionControllerTeleportation protected () extends WebXRAbstractFeatu
     * @param snapToPoints should teleportation be exclusively to snap points
     */
   def snapPointsOnly(snapToPoints: Boolean): js.Any = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.WebXRMotionControllerTeleportation")
-@js.native
-object WebXRMotionControllerTeleportation extends js.Object {
-  /**
-    * The module's name
-    */
-  val Name: String = js.native
-  /**
-    * The (Babylon) version of this module.
-    * This is an integer representing the implementation version.
-    * This number does not correspond to the webxr specs version
-    */
-  val Version: Double = js.native
 }
 

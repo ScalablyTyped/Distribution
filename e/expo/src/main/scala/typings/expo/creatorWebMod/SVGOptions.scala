@@ -18,21 +18,21 @@ object SVGOptions {
   @scala.inline
   def apply(
     bgcolor: FillStyle = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     missingImageSource: String = null,
     preventCaching: js.UndefOr[Boolean] = js.undefined,
-    quality: Int | Double = null,
+    quality: js.UndefOr[Double] = js.undefined,
     style: js.Any = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): SVGOptions = {
     val __obj = js.Dynamic.literal()
     if (bgcolor != null) __obj.updateDynamic("bgcolor")(bgcolor.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (missingImageSource != null) __obj.updateDynamic("missingImageSource")(missingImageSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventCaching)) __obj.updateDynamic("preventCaching")(preventCaching.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventCaching)) __obj.updateDynamic("preventCaching")(preventCaching.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGOptions]
   }
 }

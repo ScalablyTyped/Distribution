@@ -1,7 +1,7 @@
 package typings.openfin.interappbusChannelMod
 
-import typings.openfin.channelChannelMod.ProviderIdentity
 import typings.openfin.identityMod.Identity
+import typings.openfin.shapesMod.ProviderIdentity
 import typings.openfin.transportMod.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,26 +1,30 @@
 package typings.igniteUi.Infragistics
 
-import typings.igniteUi.TriangulationDataSourceSettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Infragistics.TriangulationDataSource")
-@js.native
-class TriangulationDataSource protected () extends js.Object {
-  def this(settings: TriangulationDataSourceSettings) = this()
+trait TriangulationDataSource extends js.Object {
   /**
-  	 * Returns the current converter instance
-  	 */
-  def converter(): js.Object = js.native
+    * Returns the current converter instance
+    */
+  def converter(): js.Object
   /**
-  	 * Loads to the current data source
-  	 */
-  def dataBind(): Unit = js.native
-  def dataView(): Unit = js.native
+    * Loads to the current data source
+    */
+  def dataBind(): Unit
+  def dataView(): Unit
   /**
-  	 * Returns true if data is loaded
-  	 */
-  def isBound(): Boolean = js.native
+    * Returns true if data is loaded
+    */
+  def isBound(): Boolean
+}
+
+object TriangulationDataSource {
+  @scala.inline
+  def apply(converter: () => js.Object, dataBind: () => Unit, dataView: () => Unit, isBound: () => Boolean): TriangulationDataSource = {
+    val __obj = js.Dynamic.literal(converter = js.Any.fromFunction0(converter), dataBind = js.Any.fromFunction0(dataBind), dataView = js.Any.fromFunction0(dataView), isBound = js.Any.fromFunction0(isBound))
+    __obj.asInstanceOf[TriangulationDataSource]
+  }
 }
 

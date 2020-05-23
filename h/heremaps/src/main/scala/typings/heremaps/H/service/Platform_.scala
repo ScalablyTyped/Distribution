@@ -1,7 +1,7 @@
 package typings.heremaps.H.service
 
+import typings.heremaps.H.service.EnterpriseRoutingService.Options
 import typings.heremaps.H.service.Platform.DefaultLayersOptions
-import typings.heremaps.H.service.Platform.Options
 import typings.heremaps.H.service.metaInfo.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,14 +11,8 @@ import scala.scalajs.js.annotation._
   * The Platform class represents central class from which all other service stubs are created. It also contains the shared settings to be passed to the individual service stubs, for example
   * the root URL of the platform, application credentials, etc.
   */
-@JSGlobal("H.service.Platform")
 @js.native
-class Platform_ protected () extends js.Object {
-  /**
-    * Constructor
-    * @param options {H.service.Platform.Options}
-    */
-  def this(options: Options) = this()
+trait Platform_ extends js.Object {
   /**
     * Method attempts to configure object that implements H.service.IConfigurable
     * @param configurable {H.service.IConfigurable}
@@ -57,7 +51,7 @@ class Platform_ protected () extends js.Object {
     * @returns {H.service.EnterpriseRoutingService}
     */
   def getEnterpriseRoutingService(): EnterpriseRoutingService = js.native
-  def getEnterpriseRoutingService(opt_options: typings.heremaps.H.service.EnterpriseRoutingService.Options): EnterpriseRoutingService = js.native
+  def getEnterpriseRoutingService(opt_options: Options): EnterpriseRoutingService = js.native
   /**
     * This method returns an instance of H.service.GeocodingService to query the Geocoder API
     * @param opt_options {H.service.GeocodingService.Options=} - an optional set of options for the new geocoding service to connect to

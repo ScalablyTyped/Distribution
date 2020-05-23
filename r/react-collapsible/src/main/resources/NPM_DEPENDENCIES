@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-collapsible" : "2.7.0"
+      "react-collapsible" : "2.8.0"
     }
   ],
   "test-dependencies" : [
     {
-      "react-collapsible" : "2.7.0"
+      "react-collapsible" : "2.8.0"
     }
   ],
   "compile-devDependencies" : [

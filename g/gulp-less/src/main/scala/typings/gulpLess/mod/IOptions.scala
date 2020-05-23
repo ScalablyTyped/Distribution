@@ -23,7 +23,7 @@ object IOptions {
     if (modifyVars != null) __obj.updateDynamic("modifyVars")(modifyVars.asInstanceOf[js.Any])
     if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (!js.isUndefined(relativeUrls)) __obj.updateDynamic("relativeUrls")(relativeUrls.asInstanceOf[js.Any])
+    if (!js.isUndefined(relativeUrls)) __obj.updateDynamic("relativeUrls")(relativeUrls.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

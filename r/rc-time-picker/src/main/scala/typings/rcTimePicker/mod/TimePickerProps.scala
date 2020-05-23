@@ -1,9 +1,9 @@
 package typings.rcTimePicker.mod
 
 import typings.moment.mod.Moment
-import typings.rcTimePicker.AnonOpen
+import typings.rcTimePicker.anon.Open
 import typings.react.mod.ReactNode
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,8 +41,8 @@ trait TimePickerProps extends js.Object {
   def disabledMinutes(hour: Double): js.Array[Double]
   def disabledSeconds(hour: Double, minute: Double): js.Array[Double]
   def onChange(value: Moment): Unit
-  def onClose(state: AnonOpen): Unit
-  def onOpen(state: AnonOpen): Unit
+  def onClose(state: Open): Unit
+  def onOpen(state: Open): Unit
 }
 
 object TimePickerProps {
@@ -66,8 +66,8 @@ object TimePickerProps {
     inputReadOnly: Boolean,
     minuteStep: Double,
     onChange: Moment => Unit,
-    onClose: AnonOpen => Unit,
-    onOpen: AnonOpen => Unit,
+    onClose: Open => Unit,
+    onOpen: Open => Unit,
     open: Boolean,
     placeholder: String,
     placement: String,

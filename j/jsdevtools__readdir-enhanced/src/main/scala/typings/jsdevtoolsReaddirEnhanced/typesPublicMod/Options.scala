@@ -1,6 +1,6 @@
 package typings.jsdevtoolsReaddirEnhanced.typesPublicMod
 
-import typings.jsdevtoolsReaddirEnhanced.PartialFileSystem
+import typings.jsdevtoolsReaddirEnhanced.anon.PartialFileSystem
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -68,8 +68,8 @@ object Options {
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
     if (sep != null) __obj.updateDynamic("sep")(sep.asInstanceOf[js.Any])
-    if (!js.isUndefined(stats)) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
-    if (!js.isUndefined(withFileTypes)) __obj.updateDynamic("withFileTypes")(withFileTypes.asInstanceOf[js.Any])
+    if (!js.isUndefined(stats)) __obj.updateDynamic("stats")(stats.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(withFileTypes)) __obj.updateDynamic("withFileTypes")(withFileTypes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

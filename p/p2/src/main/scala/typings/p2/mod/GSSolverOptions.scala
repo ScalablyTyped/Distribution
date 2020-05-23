@@ -11,10 +11,10 @@ trait GSSolverOptions extends js.Object {
 
 object GSSolverOptions {
   @scala.inline
-  def apply(iterations: Int | Double = null, tolerance: Int | Double = null): GSSolverOptions = {
+  def apply(iterations: js.UndefOr[Double] = js.undefined, tolerance: js.UndefOr[Double] = js.undefined): GSSolverOptions = {
     val __obj = js.Dynamic.literal()
-    if (iterations != null) __obj.updateDynamic("iterations")(iterations.asInstanceOf[js.Any])
-    if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
+    if (!js.isUndefined(iterations)) __obj.updateDynamic("iterations")(iterations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tolerance)) __obj.updateDynamic("tolerance")(tolerance.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GSSolverOptions]
   }
 }

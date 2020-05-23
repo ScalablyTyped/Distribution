@@ -39,21 +39,21 @@ object ResizeOptions {
     background: Color = null,
     fastShrinkOnLoad: js.UndefOr[Boolean] = js.undefined,
     fit: contain | cover | fill | inside | outside = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     kernel: nearest | cubic | mitchell | lanczos2 | lanczos3 = null,
     position: Double | String = null,
-    width: Int | Double = null,
+    width: js.UndefOr[Double] = js.undefined,
     withoutEnlargement: js.UndefOr[Boolean] = js.undefined
   ): ResizeOptions = {
     val __obj = js.Dynamic.literal()
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (!js.isUndefined(fastShrinkOnLoad)) __obj.updateDynamic("fastShrinkOnLoad")(fastShrinkOnLoad.asInstanceOf[js.Any])
+    if (!js.isUndefined(fastShrinkOnLoad)) __obj.updateDynamic("fastShrinkOnLoad")(fastShrinkOnLoad.get.asInstanceOf[js.Any])
     if (fit != null) __obj.updateDynamic("fit")(fit.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (kernel != null) __obj.updateDynamic("kernel")(kernel.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(withoutEnlargement)) __obj.updateDynamic("withoutEnlargement")(withoutEnlargement.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(withoutEnlargement)) __obj.updateDynamic("withoutEnlargement")(withoutEnlargement.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResizeOptions]
   }
 }

@@ -43,9 +43,9 @@ object ExportSettings {
     pdfUrl: String = null
   ): ExportSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowExporting)) __obj.updateDynamic("allowExporting")(allowExporting.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowExporting)) __obj.updateDynamic("allowExporting")(allowExporting.get.asInstanceOf[js.Any])
     if (csvUrl != null) __obj.updateDynamic("csvUrl")(csvUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableFormulaCalculation)) __obj.updateDynamic("enableFormulaCalculation")(enableFormulaCalculation.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableFormulaCalculation)) __obj.updateDynamic("enableFormulaCalculation")(enableFormulaCalculation.get.asInstanceOf[js.Any])
     if (excelUrl != null) __obj.updateDynamic("excelUrl")(excelUrl.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (pdfUrl != null) __obj.updateDynamic("pdfUrl")(pdfUrl.asInstanceOf[js.Any])

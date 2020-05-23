@@ -22,18 +22,18 @@ object QueryOptions {
   def apply(
     fields: js.Any,
     from: Date = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     order: asc | desc = null,
-    rows: Int | Double = null,
-    start: Int | Double = null,
+    rows: js.UndefOr[Double] = js.undefined,
+    start: js.UndefOr[Double] = js.undefined,
     until: Date = null
   ): QueryOptions = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     if (until != null) __obj.updateDynamic("until")(until.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOptions]
   }

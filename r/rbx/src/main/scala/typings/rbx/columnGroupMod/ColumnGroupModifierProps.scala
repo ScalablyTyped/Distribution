@@ -52,16 +52,16 @@ object ColumnGroupModifierProps {
   ): ColumnGroupModifierProps = {
     val __obj = js.Dynamic.literal()
     if (breakpoint != null) __obj.updateDynamic("breakpoint")(breakpoint.asInstanceOf[js.Any])
-    if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered.asInstanceOf[js.Any])
+    if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered.get.asInstanceOf[js.Any])
     if (desktop != null) __obj.updateDynamic("desktop")(desktop.asInstanceOf[js.Any])
     if (fullhd != null) __obj.updateDynamic("fullhd")(fullhd.asInstanceOf[js.Any])
     if (gapSize != null) __obj.updateDynamic("gapSize")(gapSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(gapless)) __obj.updateDynamic("gapless")(gapless.asInstanceOf[js.Any])
+    if (!js.isUndefined(gapless)) __obj.updateDynamic("gapless")(gapless.get.asInstanceOf[js.Any])
     if (mobile != null) __obj.updateDynamic("mobile")(mobile.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline.get.asInstanceOf[js.Any])
     if (tablet != null) __obj.updateDynamic("tablet")(tablet.asInstanceOf[js.Any])
     if (touch != null) __obj.updateDynamic("touch")(touch.asInstanceOf[js.Any])
-    if (!js.isUndefined(vcentered)) __obj.updateDynamic("vcentered")(vcentered.asInstanceOf[js.Any])
+    if (!js.isUndefined(vcentered)) __obj.updateDynamic("vcentered")(vcentered.get.asInstanceOf[js.Any])
     if (widescreen != null) __obj.updateDynamic("widescreen")(widescreen.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnGroupModifierProps]
   }

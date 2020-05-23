@@ -1,7 +1,7 @@
 package typings.recharts.mod
 
 import typings.react.mod.ReactElement
-import typings.recharts.AnonHeight
+import typings.recharts.anon.Height
 import typings.recharts.rechartsNumbers.`100`
 import typings.recharts.rechartsNumbers.`200`
 import typings.recharts.rechartsNumbers.`300`
@@ -121,10 +121,10 @@ object CartesianGridProps {
   @scala.inline
   def apply(
     alignmentBaseline: String = null,
-    angle: Int | Double = null,
+    angle: js.UndefOr[Double] = js.undefined,
     baselineShift: String = null,
-    chartHeight: Int | Double = null,
-    chartWidth: Int | Double = null,
+    chartHeight: js.UndefOr[Double] = js.undefined,
+    chartWidth: js.UndefOr[Double] = js.undefined,
     clip: String = null,
     clipPath: String = null,
     clipRule: String = null,
@@ -137,8 +137,8 @@ object CartesianGridProps {
     direction: String = null,
     display: String = null,
     dominantBaseline: String = null,
-    dx: Int | Double = null,
-    dy: Int | Double = null,
+    dx: js.UndefOr[Double] = js.undefined,
+    dy: js.UndefOr[Double] = js.undefined,
     fill: String = null,
     fillOpacity: Double | String = null,
     fillRule: String = null,
@@ -154,9 +154,9 @@ object CartesianGridProps {
     fontVariant: String = null,
     fontWeight: normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit = null,
     glyphOrientationVertical: String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     horizontal: js.Object | ReactElement | (ContentRenderer[LineProps with CartesianGridProps]) | Boolean = null,
-    horizontalCoordinatesGenerator: /* arg */ AnonHeight => js.Array[Double] = null,
+    horizontalCoordinatesGenerator: /* arg */ Height => js.Array[Double] = null,
     horizontalFill: js.Array[String] = null,
     horizontalPoints: js.Array[Double] = null,
     imageRendering: auto | optimizeSpeed | optimizeQuality | inherit = null,
@@ -171,7 +171,7 @@ object CartesianGridProps {
     opacity: Double | String = null,
     overflow: String = null,
     pointerEvents: String = null,
-    r: Int | Double = null,
+    r: js.UndefOr[Double] = js.undefined,
     shapeRendering: auto | optimizeSpeed | crispEdges | geometricPrecision | inherit = null,
     stopColor: String = null,
     stopOpacity: Double | String = null,
@@ -190,24 +190,24 @@ object CartesianGridProps {
     transform: String = null,
     unicodeBidi: String = null,
     vertical: js.Object | ReactElement | (ContentRenderer[LineProps with CartesianGridProps]) | Boolean = null,
-    verticalCoordinatesGenerator: /* arg */ AnonHeight => js.Array[Double] = null,
+    verticalCoordinatesGenerator: /* arg */ Height => js.Array[Double] = null,
     verticalFill: js.Array[String] = null,
     verticalPoints: js.Array[Double] = null,
     visibility: String = null,
-    width: Int | Double = null,
+    width: js.UndefOr[Double] = js.undefined,
     wordSpacing: Double | String = null,
     writingMode: String = null,
-    x: Int | Double = null,
+    x: js.UndefOr[Double] = js.undefined,
     xAxis: js.Object = null,
-    y: Int | Double = null,
+    y: js.UndefOr[Double] = js.undefined,
     yAxis: js.Object = null
   ): CartesianGridProps = {
     val __obj = js.Dynamic.literal()
     if (alignmentBaseline != null) __obj.updateDynamic("alignmentBaseline")(alignmentBaseline.asInstanceOf[js.Any])
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
     if (baselineShift != null) __obj.updateDynamic("baselineShift")(baselineShift.asInstanceOf[js.Any])
-    if (chartHeight != null) __obj.updateDynamic("chartHeight")(chartHeight.asInstanceOf[js.Any])
-    if (chartWidth != null) __obj.updateDynamic("chartWidth")(chartWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(chartHeight)) __obj.updateDynamic("chartHeight")(chartHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(chartWidth)) __obj.updateDynamic("chartWidth")(chartWidth.get.asInstanceOf[js.Any])
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     if (clipPath != null) __obj.updateDynamic("clipPath")(clipPath.asInstanceOf[js.Any])
     if (clipRule != null) __obj.updateDynamic("clipRule")(clipRule.asInstanceOf[js.Any])
@@ -220,8 +220,8 @@ object CartesianGridProps {
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (dominantBaseline != null) __obj.updateDynamic("dominantBaseline")(dominantBaseline.asInstanceOf[js.Any])
-    if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
-    if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
+    if (!js.isUndefined(dx)) __obj.updateDynamic("dx")(dx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dy)) __obj.updateDynamic("dy")(dy.get.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (fillRule != null) __obj.updateDynamic("fillRule")(fillRule.asInstanceOf[js.Any])
@@ -237,7 +237,7 @@ object CartesianGridProps {
     if (fontVariant != null) __obj.updateDynamic("fontVariant")(fontVariant.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (glyphOrientationVertical != null) __obj.updateDynamic("glyphOrientationVertical")(glyphOrientationVertical.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
     if (horizontalCoordinatesGenerator != null) __obj.updateDynamic("horizontalCoordinatesGenerator")(js.Any.fromFunction1(horizontalCoordinatesGenerator))
     if (horizontalFill != null) __obj.updateDynamic("horizontalFill")(horizontalFill.asInstanceOf[js.Any])
@@ -254,7 +254,7 @@ object CartesianGridProps {
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
     if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
-    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
+    if (!js.isUndefined(r)) __obj.updateDynamic("r")(r.get.asInstanceOf[js.Any])
     if (shapeRendering != null) __obj.updateDynamic("shapeRendering")(shapeRendering.asInstanceOf[js.Any])
     if (stopColor != null) __obj.updateDynamic("stopColor")(stopColor.asInstanceOf[js.Any])
     if (stopOpacity != null) __obj.updateDynamic("stopOpacity")(stopOpacity.asInstanceOf[js.Any])
@@ -277,12 +277,12 @@ object CartesianGridProps {
     if (verticalFill != null) __obj.updateDynamic("verticalFill")(verticalFill.asInstanceOf[js.Any])
     if (verticalPoints != null) __obj.updateDynamic("verticalPoints")(verticalPoints.asInstanceOf[js.Any])
     if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     if (wordSpacing != null) __obj.updateDynamic("wordSpacing")(wordSpacing.asInstanceOf[js.Any])
     if (writingMode != null) __obj.updateDynamic("writingMode")(writingMode.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[CartesianGridProps]
   }

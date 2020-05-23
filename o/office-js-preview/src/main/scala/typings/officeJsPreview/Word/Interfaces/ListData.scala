@@ -40,13 +40,13 @@ trait ListData extends js.Object {
 object ListData {
   @scala.inline
   def apply(
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     levelExistences: js.Array[Boolean] = null,
     levelTypes: js.Array[ListLevelType] = null,
     paragraphs: js.Array[ParagraphData] = null
   ): ListData = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (levelExistences != null) __obj.updateDynamic("levelExistences")(levelExistences.asInstanceOf[js.Any])
     if (levelTypes != null) __obj.updateDynamic("levelTypes")(levelTypes.asInstanceOf[js.Any])
     if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs.asInstanceOf[js.Any])

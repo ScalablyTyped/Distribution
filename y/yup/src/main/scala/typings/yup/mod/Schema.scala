@@ -1,12 +1,13 @@
 package typings.yup.mod
 
-import typings.yup.AnonValues
+import typings.yup.anon.Values
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait Schema[T] extends js.Object {
+  var `type`: String = js.native
   def cast(): T = js.native
   def cast(value: js.Any): T = js.native
   def cast(value: js.Any, options: js.Any): T = js.native
@@ -23,32 +24,9 @@ trait Schema[T] extends js.Object {
   def meta(): js.Any = js.native
   def meta(metadata: js.Any): this.type = js.native
   def notOneOf(arrayOfValues: js.Array[_]): this.type = js.native
-  def notOneOf(arrayOfValues: js.Array[_], message: TestOptionsMessage[AnonValues, _]): this.type = js.native
-  def oneOf(arrayOfValues: js.Array[T | Ref_ | Null]): this.type = js.native
-  def oneOf(arrayOfValues: js.Array[T | Ref_ | Null], message: TestOptionsMessage[AnonValues, _]): this.type = js.native
+  def notOneOf(arrayOfValues: js.Array[_], message: TestOptionsMessage[Values, _]): this.type = js.native
   def strict(isStrict: Boolean): this.type = js.native
   def strip(strip: Boolean): this.type = js.native
-  def test(
-    name: String,
-    message: TestOptionsMessage[js.Object, _],
-    test: js.ThisFunction1[
-      /* this */ TestContext, 
-      /* value */ js.UndefOr[js.Any], 
-      Boolean | ValidationError | (js.Promise[Boolean | ValidationError])
-    ]
-  ): this.type = js.native
-  def test(
-    name: String,
-    message: TestOptionsMessage[js.Object, _],
-    test: js.ThisFunction1[
-      /* this */ TestContext, 
-      /* value */ js.UndefOr[js.Any], 
-      Boolean | ValidationError | (js.Promise[Boolean | ValidationError])
-    ],
-    callbackStyleAsync: Boolean
-  ): this.type = js.native
-  // tslint:disable-next-line:no-unnecessary-generics
-  def test[P](options: TestOptions[P, _]): this.type = js.native
   def transform(fn: TransformFunction[this.type]): this.type = js.native
   def typeError(): this.type = js.native
   def typeError(message: TestOptionsMessage[js.Object, _]): this.type = js.native

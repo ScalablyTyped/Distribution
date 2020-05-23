@@ -1,7 +1,7 @@
 package typings.frctlFractal.mod.fractal.api.components
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.frctlFractal.AnonHandle
+import typings.frctlFractal.anon.Handle
 import typings.frctlFractal.mod.fractal.core.StatusInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,7 +36,7 @@ object ComponentConfig {
   def apply(
     default: ComponentDefaultConfig = null,
     defaultDotcollated: js.UndefOr[Boolean] = js.undefined,
-    defaultDotcollator: (/* markup */ String, /* item */ AnonHandle) => String = null,
+    defaultDotcollator: (/* markup */ String, /* item */ Handle) => String = null,
     defaultDotcontext: js.Any = null,
     defaultDotdisplay: js.Any = null,
     defaultDotprefix: String = null,
@@ -51,7 +51,7 @@ object ComponentConfig {
   ): ComponentConfig = {
     val __obj = js.Dynamic.literal()
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultDotcollated)) __obj.updateDynamic("default.collated")(defaultDotcollated.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultDotcollated)) __obj.updateDynamic("default.collated")(defaultDotcollated.get.asInstanceOf[js.Any])
     if (defaultDotcollator != null) __obj.updateDynamic("default.collator")(js.Any.fromFunction2(defaultDotcollator))
     if (defaultDotcontext != null) __obj.updateDynamic("default.context")(defaultDotcontext.asInstanceOf[js.Any])
     if (defaultDotdisplay != null) __obj.updateDynamic("default.display")(defaultDotdisplay.asInstanceOf[js.Any])

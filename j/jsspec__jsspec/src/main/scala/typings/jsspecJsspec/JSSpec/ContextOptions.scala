@@ -19,10 +19,10 @@ trait ContextOptions extends js.Object {
 
 object ContextOptions {
   @scala.inline
-  def apply(random: js.UndefOr[Boolean] = js.undefined, timeout: Int | Double = null): ContextOptions = {
+  def apply(random: js.UndefOr[Boolean] = js.undefined, timeout: js.UndefOr[Double] = js.undefined): ContextOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(random)) __obj.updateDynamic("random")(random.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(random)) __obj.updateDynamic("random")(random.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextOptions]
   }
 }

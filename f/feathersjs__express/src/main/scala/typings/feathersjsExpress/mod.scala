@@ -3,7 +3,7 @@ package typings.feathersjsExpress
 import typings.bodyParser.mod.OptionsJson
 import typings.bodyParser.mod.OptionsUrlencoded
 import typings.connect.mod.NextHandleFunction
-import typings.express.Typeofm
+import typings.express.anon.Typeofm
 import typings.express.mod.Application_
 import typings.express.mod.ErrorRequestHandler
 import typings.express.mod.IRouterHandler
@@ -18,7 +18,12 @@ import typings.expressServeStaticCore.mod.Request
 import typings.expressServeStaticCore.mod.RequestHandler
 import typings.expressServeStaticCore.mod.RequestHandlerParams
 import typings.expressServeStaticCore.mod.Response
+import typings.feathersjsExpress.anon.Html
+import typings.feathersjsExpress.anon.PartialServiceMethodsanyS
+import typings.feathersjsExpress.anon.Typeofexpress
+import typings.feathersjsExpress.anon.Typeofself
 import typings.feathersjsExpress.feathersjsExpressStrings.use
+import typings.qs.mod.ParsedQs
 import typings.serveStatic.mod.ServeStaticOptions
 import typings.std.Exclude
 import typings.std.Pick
@@ -36,11 +41,11 @@ object mod extends js.Object {
     @JSName("use")
     var use_Original: FeathersApplicationRequestHandler[T] = js.native
     def use(
-      handlers: ((RequestHandler[ParamsDictionary, _, _, Query]) | (RequestHandlerParams[ParamsDictionary, _, _, Query]))*
+      handlers: ((RequestHandler[ParamsDictionary, _, _, ParsedQs]) | (RequestHandlerParams[ParamsDictionary, _, _, ParsedQs]))*
     ): T = js.native
     def use(
       path: PathParams,
-      handlers: ((RequestHandler[ParamsDictionary, _, _, Query]) | (RequestHandlerParams[ParamsDictionary, _, _, Query]) | PartialServiceMethodsanyS | Application[_])*
+      handlers: ((RequestHandler[ParamsDictionary, _, _, ParsedQs]) | (RequestHandlerParams[ParamsDictionary, _, _, ParsedQs]) | PartialServiceMethodsanyS | Application[_])*
     ): T = js.native
   }
   
@@ -49,7 +54,7 @@ object mod extends js.Object {
   def Router(): typings.expressServeStaticCore.mod.Router = js.native
   def Router(options: RouterOptions): typings.expressServeStaticCore.mod.Router = js.native
   def errorHandler(): ErrorRequestHandler[ParamsDictionary, _, _, Query] = js.native
-  def errorHandler(options: AnonHtml): ErrorRequestHandler[ParamsDictionary, _, _, Query] = js.native
+  def errorHandler(options: Html): ErrorRequestHandler[ParamsDictionary, _, _, Query] = js.native
   def notFound(): typings.express.mod.RequestHandler[ParamsDictionary, _, _, Query] = js.native
   /**
     * This is a built-in middleware function in Express. It parses incoming requests with JSON payloads and is based on body-parser.
@@ -94,10 +99,10 @@ object mod extends js.Object {
   
   // TypeScript methods cannot be overloaded with a different signature. Derive two application types without the use methods.
   type ExpressAndFeathersApplicationWithoutUse[T] = (Omit[Application_, use]) with (Omit[typings.feathersjsFeathers.mod.Application[T], use])
-  type FeathersApplicationRequestHandler[T] = IRouterHandler[T] with FeathersRouterMatcher[T] with (js.Function1[/* repeated */ RequestHandlerParams[ParamsDictionary, _, _, Query], T])
+  type FeathersApplicationRequestHandler[T] = IRouterHandler[T] with FeathersRouterMatcher[T] with (js.Function1[/* repeated */ RequestHandlerParams[ParamsDictionary, _, _, ParsedQs], T])
   type FeathersRouterMatcher[T] = js.Function2[
     /* path */ PathParams, 
-    /* repeated */ (RequestHandler[ParamsDictionary, js.Any, js.Any, Query]) | (RequestHandlerParams[ParamsDictionary, js.Any, js.Any, Query]) | PartialServiceMethodsanyS | Application[js.Any], 
+    /* repeated */ (RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs]) | (RequestHandlerParams[ParamsDictionary, js.Any, js.Any, ParsedQs]) | PartialServiceMethodsanyS | Application[js.Any], 
     T
   ]
   type FeathersServiceOptions = js.Any

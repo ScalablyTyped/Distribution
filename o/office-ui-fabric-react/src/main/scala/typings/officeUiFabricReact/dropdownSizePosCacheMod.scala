@@ -16,12 +16,12 @@ object dropdownSizePosCacheMod extends js.Object {
       * The size of all the selectable options.
       */
     val optionSetSize: Double = js.native
-    def positionInSet(): js.UndefOr[Double] = js.native
     /**
       * Returns the position of this option element relative to the full set of selectable option elements.
       * Note: the first selectable element is position 1 in the set.
       * @param index The raw index of the option element.
       */
+    def positionInSet(): js.UndefOr[Double] = js.native
     def positionInSet(index: Double): js.UndefOr[Double] = js.native
     /**
       * Invalidates the cache and recalculate the size of selectable options.

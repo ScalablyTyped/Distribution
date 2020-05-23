@@ -25,7 +25,7 @@ trait ChartAreaFormatLoadOptions extends js.Object {
   var border: js.UndefOr[ChartBorderLoadOptions] = js.undefined
   /**
     *
-    * Returns or sets color scheme of the chart. Read/Write.
+    * Specifies the color scheme of the chart.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -39,7 +39,7 @@ trait ChartAreaFormatLoadOptions extends js.Object {
   var font: js.UndefOr[ChartFontLoadOptions] = js.undefined
   /**
     *
-    * Specifies whether or not chart area of the chart has rounded corners. Read/Write.
+    * Specifies if the chart area of the chart has rounded corners.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -56,11 +56,11 @@ object ChartAreaFormatLoadOptions {
     roundedCorners: js.UndefOr[Boolean] = js.undefined
   ): ChartAreaFormatLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorScheme)) __obj.updateDynamic("colorScheme")(colorScheme.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorScheme)) __obj.updateDynamic("colorScheme")(colorScheme.get.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (!js.isUndefined(roundedCorners)) __obj.updateDynamic("roundedCorners")(roundedCorners.asInstanceOf[js.Any])
+    if (!js.isUndefined(roundedCorners)) __obj.updateDynamic("roundedCorners")(roundedCorners.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartAreaFormatLoadOptions]
   }
 }

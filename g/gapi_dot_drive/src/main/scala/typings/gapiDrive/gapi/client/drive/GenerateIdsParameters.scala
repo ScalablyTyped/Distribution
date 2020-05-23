@@ -11,9 +11,9 @@ trait GenerateIdsParameters extends js.Object {
 
 object GenerateIdsParameters {
   @scala.inline
-  def apply(maxResults: Int | Double = null, space: String = null): GenerateIdsParameters = {
+  def apply(maxResults: js.UndefOr[Double] = js.undefined, space: String = null): GenerateIdsParameters = {
     val __obj = js.Dynamic.literal()
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateIdsParameters]
   }

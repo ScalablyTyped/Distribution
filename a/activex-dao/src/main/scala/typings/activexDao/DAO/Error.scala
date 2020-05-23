@@ -4,15 +4,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DAO.Error")
-@js.native
-class Error protected () extends js.Object {
+trait Error extends js.Object {
   @JSName("DAO.Error_typekey")
-  var DAODotError_typekey: Error = js.native
-  val Description: String = js.native
-  val HelpContext: Double = js.native
-  val HelpFile: String = js.native
-  val Number: Double = js.native
-  val Source: String = js.native
+  var DAODotError_typekey: Error
+  val Description: String
+  val HelpContext: Double
+  val HelpFile: String
+  val Number: Double
+  val Source: String
+}
+
+object Error {
+  @scala.inline
+  def apply(
+    DAODotError_typekey: Error,
+    Description: String,
+    HelpContext: Double,
+    HelpFile: String,
+    Number: Double,
+    Source: String
+  ): Error = {
+    val __obj = js.Dynamic.literal(Description = Description.asInstanceOf[js.Any], HelpContext = HelpContext.asInstanceOf[js.Any], HelpFile = HelpFile.asInstanceOf[js.Any], Number = Number.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
+    __obj.updateDynamic("DAO.Error_typekey")(DAODotError_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Error]
+  }
 }
 

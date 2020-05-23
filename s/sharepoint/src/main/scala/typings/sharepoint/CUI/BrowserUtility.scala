@@ -4,7 +4,5 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CUI.BrowserUtility")
-@js.native
-class BrowserUtility () extends js.Object
+trait BrowserUtility extends js.Object
 

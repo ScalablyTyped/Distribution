@@ -3,6 +3,7 @@ package typings.xummApi
 import typings.xummApi.mod.XrplTransactionType
 import typings.xummApi.mod.XummCancelReason
 import typings.xummApi.mod.XummQrQuality
+import typings.xummApi.mod.XummTransactionApprovalType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +22,13 @@ object xummApiStrings {
   sealed trait ALREADY_RESOLVED extends XummCancelReason
   
   @js.native
+  sealed trait AccountDelete extends XrplTransactionType
+  
+  @js.native
   sealed trait AccountSet extends XrplTransactionType
+  
+  @js.native
+  sealed trait BIOMETRIC extends XummTransactionApprovalType
   
   @js.native
   sealed trait CheckCancel extends XrplTransactionType
@@ -48,10 +55,19 @@ object xummApiStrings {
   sealed trait EscrowFinish extends XrplTransactionType
   
   @js.native
+  sealed trait OTHER extends XummTransactionApprovalType
+  
+  @js.native
   sealed trait OfferCancel extends XrplTransactionType
   
   @js.native
   sealed trait OfferCreate extends XrplTransactionType
+  
+  @js.native
+  sealed trait PASSPHRASE extends XummTransactionApprovalType
+  
+  @js.native
+  sealed trait PIN extends XummTransactionApprovalType
   
   @js.native
   sealed trait Payment extends XrplTransactionType
@@ -95,7 +111,11 @@ object xummApiStrings {
   @scala.inline
   def ALREADY_RESOLVED: ALREADY_RESOLVED = "ALREADY_RESOLVED".asInstanceOf[ALREADY_RESOLVED]
   @scala.inline
+  def AccountDelete: AccountDelete = "AccountDelete".asInstanceOf[AccountDelete]
+  @scala.inline
   def AccountSet: AccountSet = "AccountSet".asInstanceOf[AccountSet]
+  @scala.inline
+  def BIOMETRIC: BIOMETRIC = "BIOMETRIC".asInstanceOf[BIOMETRIC]
   @scala.inline
   def CheckCancel: CheckCancel = "CheckCancel".asInstanceOf[CheckCancel]
   @scala.inline
@@ -113,9 +133,15 @@ object xummApiStrings {
   @scala.inline
   def EscrowFinish: EscrowFinish = "EscrowFinish".asInstanceOf[EscrowFinish]
   @scala.inline
+  def OTHER: OTHER = "OTHER".asInstanceOf[OTHER]
+  @scala.inline
   def OfferCancel: OfferCancel = "OfferCancel".asInstanceOf[OfferCancel]
   @scala.inline
   def OfferCreate: OfferCreate = "OfferCreate".asInstanceOf[OfferCreate]
+  @scala.inline
+  def PASSPHRASE: PASSPHRASE = "PASSPHRASE".asInstanceOf[PASSPHRASE]
+  @scala.inline
+  def PIN: PIN = "PIN".asInstanceOf[PIN]
   @scala.inline
   def Payment: Payment = "Payment".asInstanceOf[Payment]
   @scala.inline

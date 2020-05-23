@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.vegaTypings.signalMod.SignalRef
-  - typings.vegaTypings.AnonValue[T]
-  - typings.vegaTypings.AnonField
+  - typings.vegaTypings.anon.Value[T]
+  - typings.vegaTypings.anon.Field
 */
 trait BaseValueRef[T] extends ScaledValueRef[T]
 
@@ -18,13 +18,12 @@ object BaseValueRef {
     __obj.asInstanceOf[BaseValueRef[T]]
   }
   @scala.inline
-  def AnonValue[T](value: T = null): BaseValueRef[T] = {
-    val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+  def Value[T](value: T = null): BaseValueRef[T] = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseValueRef[T]]
   }
   @scala.inline
-  def AnonField[T](field: Field): BaseValueRef[T] = {
+  def Field[T](field: typings.vegaTypings.encodeMod.Field): BaseValueRef[T] = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseValueRef[T]]
   }

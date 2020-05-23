@@ -1,6 +1,6 @@
 package typings.primereact.organizationChartMod
 
-import typings.primereact.AnonNode
+import typings.primereact.anon.Node
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,8 +10,8 @@ trait OrganizationChartProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var nodeTemplate: js.UndefOr[js.Function1[/* node */ OrganizationChartNodeData, ReactNode]] = js.undefined
-  var onNodeSelect: js.UndefOr[js.Function1[/* e */ AnonNode, Unit]] = js.undefined
-  var onNodeUnselect: js.UndefOr[js.Function1[/* e */ AnonNode, Unit]] = js.undefined
+  var onNodeSelect: js.UndefOr[js.Function1[/* e */ Node, Unit]] = js.undefined
+  var onNodeUnselect: js.UndefOr[js.Function1[/* e */ Node, Unit]] = js.undefined
   var selection: js.UndefOr[js.Any] = js.undefined
   var selectionChange: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.undefined
   var selectionMode: js.UndefOr[String] = js.undefined
@@ -25,8 +25,8 @@ object OrganizationChartProps {
     className: String = null,
     id: String = null,
     nodeTemplate: /* node */ OrganizationChartNodeData => ReactNode = null,
-    onNodeSelect: /* e */ AnonNode => Unit = null,
-    onNodeUnselect: /* e */ AnonNode => Unit = null,
+    onNodeSelect: /* e */ Node => Unit = null,
+    onNodeUnselect: /* e */ Node => Unit = null,
     selection: js.Any = null,
     selectionChange: /* data */ js.Any => Unit = null,
     selectionMode: String = null,

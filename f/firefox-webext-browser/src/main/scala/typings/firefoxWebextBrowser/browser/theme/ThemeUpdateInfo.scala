@@ -15,9 +15,9 @@ trait ThemeUpdateInfo extends js.Object {
 
 object ThemeUpdateInfo {
   @scala.inline
-  def apply(theme: js.Object, windowId: Int | Double = null): ThemeUpdateInfo = {
+  def apply(theme: js.Object, windowId: js.UndefOr[Double] = js.undefined): ThemeUpdateInfo = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
-    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowId)) __obj.updateDynamic("windowId")(windowId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeUpdateInfo]
   }
 }

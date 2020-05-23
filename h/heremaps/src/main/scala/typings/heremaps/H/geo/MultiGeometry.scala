@@ -4,15 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("H.geo.MultiGeometry")
 @js.native
-class MultiGeometry[T] protected () extends AbstractGeometry {
-  /**
-    * The base class for a geometry that is a container for multiple geometries of a generic type. The type of the contained geometries is specified by the generic type parameter T
-    * @param geometries {T[]} - The list of geometries which are initially aggregated.
-    * @throws {H.lang.InvalidArgumentError} - if geometries parameter is not valid
-    */
-  def this(geometries: js.Array[T]) = this()
+trait MultiGeometry[T] extends AbstractGeometry {
   /**
     * Returns the bounding rectangle of the geometry.
     * @return {H.geo.Rect} - the bounding rectangle of the geometry or null if the bounding rectangle can't be computed (e.g. for a geometry without coordinates)

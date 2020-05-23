@@ -51,18 +51,18 @@ trait PlusIbeaconIBeaconInfo extends js.Object {
 object PlusIbeaconIBeaconInfo {
   @scala.inline
   def apply(
-    accuracy: Int | Double = null,
+    accuracy: js.UndefOr[Double] = js.undefined,
     major: String = null,
     minor: String = null,
-    proximity: Int | Double = null,
+    proximity: js.UndefOr[Double] = js.undefined,
     rssi: String = null,
     uuid: String = null
   ): PlusIbeaconIBeaconInfo = {
     val __obj = js.Dynamic.literal()
-    if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy.asInstanceOf[js.Any])
+    if (!js.isUndefined(accuracy)) __obj.updateDynamic("accuracy")(accuracy.get.asInstanceOf[js.Any])
     if (major != null) __obj.updateDynamic("major")(major.asInstanceOf[js.Any])
     if (minor != null) __obj.updateDynamic("minor")(minor.asInstanceOf[js.Any])
-    if (proximity != null) __obj.updateDynamic("proximity")(proximity.asInstanceOf[js.Any])
+    if (!js.isUndefined(proximity)) __obj.updateDynamic("proximity")(proximity.get.asInstanceOf[js.Any])
     if (rssi != null) __obj.updateDynamic("rssi")(rssi.asInstanceOf[js.Any])
     if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusIbeaconIBeaconInfo]

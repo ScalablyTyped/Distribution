@@ -36,14 +36,14 @@ trait IProperty extends PartialJSONObject {
 object IProperty {
   @scala.inline
   def apply(
-    default: PartialJSONValue = null,
+    default: js.UndefOr[Null | PartialJSONValue] = js.undefined,
     description: String = null,
     properties: StringDictionary[IProperty] = null,
     title: String = null,
     `type`: Primitive | js.Array[Primitive] = null
   ): IProperty = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

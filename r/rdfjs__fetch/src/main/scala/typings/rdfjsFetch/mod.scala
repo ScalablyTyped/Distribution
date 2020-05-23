@@ -3,6 +3,7 @@ package typings.rdfjsFetch
 import typings.rdfJs.mod.BaseQuad
 import typings.rdfJs.mod.DatasetCore
 import typings.rdfJs.mod.Quad
+import typings.rdfjsFetch.anon.PartialFormatsInit
 import typings.rdfjsFetchLite.mod.DatasetResponse
 import typings.rdfjsFetchLite.mod.FactoryInit
 import typings.rdfjsFetchLite.mod.RdfFetchResponse

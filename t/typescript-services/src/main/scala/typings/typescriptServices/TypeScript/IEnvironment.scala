@@ -2,7 +2,7 @@ package typings.typescriptServices.TypeScript
 
 import typings.std.ITextWriter
 import typings.std.RegExp
-import typings.typescriptServices.AnonRecursive
+import typings.typescriptServices.anon.Recursive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait IEnvironment extends js.Object {
   def fileExists(path: String): Boolean = js.native
   def listFiles(path: String): js.Array[String] = js.native
   def listFiles(path: String, re: RegExp): js.Array[String] = js.native
-  def listFiles(path: String, re: RegExp, options: AnonRecursive): js.Array[String] = js.native
+  def listFiles(path: String, re: RegExp, options: Recursive): js.Array[String] = js.native
   def readFile(path: String, codepage: Double): FileInformation = js.native
   def supportsCodePage(): Boolean = js.native
   def writeFile(path: String, contents: String, writeByteOrderMark: Boolean): Unit = js.native

@@ -21,10 +21,14 @@ trait ConsoleMessageLocation extends js.Object {
 
 object ConsoleMessageLocation {
   @scala.inline
-  def apply(columnNumber: Int | Double = null, lineNumber: Int | Double = null, url: String = null): ConsoleMessageLocation = {
+  def apply(
+    columnNumber: js.UndefOr[Double] = js.undefined,
+    lineNumber: js.UndefOr[Double] = js.undefined,
+    url: String = null
+  ): ConsoleMessageLocation = {
     val __obj = js.Dynamic.literal()
-    if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])
-    if (lineNumber != null) __obj.updateDynamic("lineNumber")(lineNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnNumber)) __obj.updateDynamic("columnNumber")(columnNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineNumber)) __obj.updateDynamic("lineNumber")(lineNumber.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsoleMessageLocation]
   }

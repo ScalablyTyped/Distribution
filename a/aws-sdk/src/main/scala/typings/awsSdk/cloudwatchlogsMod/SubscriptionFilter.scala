@@ -33,7 +33,7 @@ trait SubscriptionFilter extends js.Object {
 object SubscriptionFilter {
   @scala.inline
   def apply(
-    creationTime: Int | Double = null,
+    creationTime: js.UndefOr[Timestamp] = js.undefined,
     destinationArn: DestinationArn = null,
     distribution: Distribution = null,
     filterName: FilterName = null,
@@ -42,7 +42,7 @@ object SubscriptionFilter {
     roleArn: RoleArn = null
   ): SubscriptionFilter = {
     val __obj = js.Dynamic.literal()
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(creationTime)) __obj.updateDynamic("creationTime")(creationTime.get.asInstanceOf[js.Any])
     if (destinationArn != null) __obj.updateDynamic("destinationArn")(destinationArn.asInstanceOf[js.Any])
     if (distribution != null) __obj.updateDynamic("distribution")(distribution.asInstanceOf[js.Any])
     if (filterName != null) __obj.updateDynamic("filterName")(filterName.asInstanceOf[js.Any])

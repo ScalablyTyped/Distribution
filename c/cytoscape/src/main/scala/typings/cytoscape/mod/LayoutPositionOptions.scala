@@ -37,27 +37,23 @@ object LayoutPositionOptions {
   def apply(
     eles: CollectionArgument,
     animate: js.UndefOr[Boolean] = js.undefined,
-    animationDuration: Int | Double = null,
-    animationEasing: Int | Double = null,
+    animationDuration: js.UndefOr[Double] = js.undefined,
+    animationEasing: js.UndefOr[Double] = js.undefined,
     fit: js.UndefOr[Boolean] = js.undefined,
-    padding: Int | Double = null,
+    padding: js.UndefOr[Double] = js.undefined,
     pan: Position = null,
-    ready: js.UndefOr[scala.Nothing] = js.undefined,
-    spacingFactor: Int | Double = null,
-    stop: js.UndefOr[scala.Nothing] = js.undefined,
-    zoom: Int | Double = null
+    spacingFactor: js.UndefOr[Double] = js.undefined,
+    zoom: js.UndefOr[Double] = js.undefined
   ): LayoutPositionOptions = {
     val __obj = js.Dynamic.literal(eles = eles.asInstanceOf[js.Any])
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
-    if (!js.isUndefined(fit)) __obj.updateDynamic("fit")(fit.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fit)) __obj.updateDynamic("fit")(fit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
     if (pan != null) __obj.updateDynamic("pan")(pan.asInstanceOf[js.Any])
-    if (!js.isUndefined(ready)) __obj.updateDynamic("ready")(ready.asInstanceOf[js.Any])
-    if (spacingFactor != null) __obj.updateDynamic("spacingFactor")(spacingFactor.asInstanceOf[js.Any])
-    if (!js.isUndefined(stop)) __obj.updateDynamic("stop")(stop.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(spacingFactor)) __obj.updateDynamic("spacingFactor")(spacingFactor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutPositionOptions]
   }
 }

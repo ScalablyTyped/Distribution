@@ -7,52 +7,49 @@ import scala.scalajs.js.annotation._
 
 trait DataSourceSettingsSummaries
   extends /**
-	 * Option for DataSourceSettingsSummaries
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   /**
-  	 * A list of column settings that specifies custom summaries options per column basis
-  	 *
-  	 */
+    * A list of column settings that specifies custom summaries options per column basis
+    *
+    */
   var columnSettings: js.UndefOr[js.Array[_]] = js.undefined
   /**
-  	 * Key for retrieving data from the summaries response - used only when summaries are remote
-  	 *
-  	 */
+    * Key for retrieving data from the summaries response - used only when summaries are remote
+    *
+    */
   var summariesResponseKey: js.UndefOr[String] = js.undefined
   /**
-  	 * Determines when the summary values are calculated
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "priortofilteringandpaging"
-  	 * "afterfilteringbeforepaging"
-  	 * "afterfilteringandpaging"
-  	 */
+    * Determines when the summary values are calculated
+    *
+    *
+    * Valid values:
+    * "priortofilteringandpaging"
+    * "afterfilteringbeforepaging"
+    * "afterfilteringandpaging"
+    */
   var summaryExecution: js.UndefOr[String] = js.undefined
   /**
-  	 * Url key for retrieving data from response - used only when summaries are remote
-  	 *
-  	 */
+    * Url key for retrieving data from response - used only when summaries are remote
+    *
+    */
   var summaryExprUrlKey: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies whether summaries will be applied locally or remotely (via a remote request)
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "remote" A remote request is done and URL params encoded
-  	 * "local" Data is paged client-side.
-  	 */
+    * Specifies whether summaries will be applied locally or remotely (via a remote request)
+    *
+    *
+    * Valid values:
+    * "remote" A remote request is done and URL params encoded
+    * "local" Data is paged client-side.
+    */
   var `type`: js.UndefOr[String] = js.undefined
 }
 
 object DataSourceSettingsSummaries {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for DataSourceSettingsSummaries
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     columnSettings: js.Array[_] = null,
     summariesResponseKey: String = null,
     summaryExecution: String = null,

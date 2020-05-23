@@ -7,41 +7,40 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientScheduler.AppointmentResizing event.
   */
-@JSGlobal("ASPxClientAppointmentResizingEventArgs")
-@js.native
-class ASPxClientAppointmentResizingEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientAppointmentResizingEventArgs class.
-    * @param mouseEvent A mouse event object related to the resizing operation.
-    * @param appointmentId A string containing an appointment identifier.
-    * @param oldInterval An  object specifying the appointment's interval before the resize operation.
-    * @param newInterval An  object specifying the appointment's interval after the resize operation.
-    */
-  def this(
-    mouseEvent: js.Any,
-    appointmentId: String,
-    oldInterval: ASPxClientTimeInterval,
-    newInterval: ASPxClientTimeInterval
-  ) = this()
+trait ASPxClientAppointmentResizingEventArgs extends ASPxClientEventArgs {
   /**
     * Specifies whether or not an appointment can be resized to the new time interval.
     */
-  var allow: Boolean = js.native
+  var allow: Boolean
   /**
     * Gets the resized appointment's identifier.
     */
-  var appointmentId: String = js.native
+  var appointmentId: String
   /**
     * Gets a mouse event object related to the current appointment resizing operation.
     */
-  var mouseEvent: js.Any = js.native
+  var mouseEvent: js.Any
   /**
     * Gets the appointment's interval after resizing.
     */
-  var newInterval: ASPxClientTimeInterval = js.native
+  var newInterval: ASPxClientTimeInterval
   /**
     * Gets the appointment's interval before resizing.
     */
-  var oldInterval: ASPxClientTimeInterval = js.native
+  var oldInterval: ASPxClientTimeInterval
+}
+
+object ASPxClientAppointmentResizingEventArgs {
+  @scala.inline
+  def apply(
+    allow: Boolean,
+    appointmentId: String,
+    mouseEvent: js.Any,
+    newInterval: ASPxClientTimeInterval,
+    oldInterval: ASPxClientTimeInterval
+  ): ASPxClientAppointmentResizingEventArgs = {
+    val __obj = js.Dynamic.literal(allow = allow.asInstanceOf[js.Any], appointmentId = appointmentId.asInstanceOf[js.Any], mouseEvent = mouseEvent.asInstanceOf[js.Any], newInterval = newInterval.asInstanceOf[js.Any], oldInterval = oldInterval.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientAppointmentResizingEventArgs]
+  }
 }
 

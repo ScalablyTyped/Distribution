@@ -11,10 +11,13 @@ trait PaneState extends js.Object {
 
 object PaneState {
   @scala.inline
-  def apply(context: LeafletContext = null, name: String = null): PaneState = {
+  def apply(
+    context: js.UndefOr[Null | LeafletContext] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined
+  ): PaneState = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(context)) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaneState]
   }
 }

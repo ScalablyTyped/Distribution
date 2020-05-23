@@ -1,6 +1,6 @@
 package typings.reactNativeShare.mod
 
-import typings.reactNativeShare.OptionssocialSocial
+import typings.reactNativeShare.anon.OptionssocialSocial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

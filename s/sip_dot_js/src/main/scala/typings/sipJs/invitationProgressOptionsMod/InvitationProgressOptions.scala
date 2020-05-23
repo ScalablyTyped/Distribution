@@ -1,6 +1,6 @@
 package typings.sipJs.invitationProgressOptionsMod
 
-import typings.sipJs.AnonBody
+import typings.sipJs.anon.Body
 import typings.sipJs.apiSessionDescriptionHandlerMod.SessionDescriptionHandlerModifier
 import typings.sipJs.apiSessionDescriptionHandlerMod.SessionDescriptionHandlerOptions
 import scala.scalajs.js
@@ -11,7 +11,7 @@ trait InvitationProgressOptions extends js.Object {
   /**
     * Body
     */
-  var body: js.UndefOr[String | AnonBody] = js.undefined
+  var body: js.UndefOr[String | Body] = js.undefined
   /**
     * Array of extra headers added to the response.
     */
@@ -41,22 +41,22 @@ trait InvitationProgressOptions extends js.Object {
 object InvitationProgressOptions {
   @scala.inline
   def apply(
-    body: String | AnonBody = null,
+    body: String | Body = null,
     extraHeaders: js.Array[String] = null,
     reasonPhrase: String = null,
     rel100: js.UndefOr[Boolean] = js.undefined,
     sessionDescriptionHandlerModifiers: js.Array[SessionDescriptionHandlerModifier] = null,
     sessionDescriptionHandlerOptions: SessionDescriptionHandlerOptions = null,
-    statusCode: Int | Double = null
+    statusCode: js.UndefOr[Double] = js.undefined
   ): InvitationProgressOptions = {
     val __obj = js.Dynamic.literal()
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
     if (reasonPhrase != null) __obj.updateDynamic("reasonPhrase")(reasonPhrase.asInstanceOf[js.Any])
-    if (!js.isUndefined(rel100)) __obj.updateDynamic("rel100")(rel100.asInstanceOf[js.Any])
+    if (!js.isUndefined(rel100)) __obj.updateDynamic("rel100")(rel100.get.asInstanceOf[js.Any])
     if (sessionDescriptionHandlerModifiers != null) __obj.updateDynamic("sessionDescriptionHandlerModifiers")(sessionDescriptionHandlerModifiers.asInstanceOf[js.Any])
     if (sessionDescriptionHandlerOptions != null) __obj.updateDynamic("sessionDescriptionHandlerOptions")(sessionDescriptionHandlerOptions.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusCode)) __obj.updateDynamic("statusCode")(statusCode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvitationProgressOptions]
   }
 }

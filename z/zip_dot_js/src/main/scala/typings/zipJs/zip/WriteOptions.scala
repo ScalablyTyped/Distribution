@@ -19,15 +19,15 @@ object WriteOptions {
     comment: String = null,
     directory: js.UndefOr[Boolean] = js.undefined,
     lastModDate: Date = null,
-    level: Int | Double = null,
-    version: Int | Double = null
+    level: js.UndefOr[Double] = js.undefined,
+    version: js.UndefOr[Double] = js.undefined
   ): WriteOptions = {
     val __obj = js.Dynamic.literal()
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (!js.isUndefined(directory)) __obj.updateDynamic("directory")(directory.asInstanceOf[js.Any])
+    if (!js.isUndefined(directory)) __obj.updateDynamic("directory")(directory.get.asInstanceOf[js.Any])
     if (lastModDate != null) __obj.updateDynamic("lastModDate")(lastModDate.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteOptions]
   }
 }

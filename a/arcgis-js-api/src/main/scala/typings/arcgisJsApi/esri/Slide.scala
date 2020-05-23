@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -110,8 +109,4 @@ trait Slide extends Accessor {
   def updateFrom(view: SceneView): js.Promise[Slide] = js.native
   def updateFrom(view: SceneView, options: SlideUpdateFromOptions): js.Promise[Slide] = js.native
 }
-
-@JSGlobal("__esri.Slide")
-@js.native
-object Slide extends TopLevel[SlideConstructor]
 

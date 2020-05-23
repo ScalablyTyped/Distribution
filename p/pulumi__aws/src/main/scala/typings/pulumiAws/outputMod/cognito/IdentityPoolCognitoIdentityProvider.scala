@@ -30,7 +30,7 @@ object IdentityPoolCognitoIdentityProvider {
     val __obj = js.Dynamic.literal()
     if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
     if (providerName != null) __obj.updateDynamic("providerName")(providerName.asInstanceOf[js.Any])
-    if (!js.isUndefined(serverSideTokenCheck)) __obj.updateDynamic("serverSideTokenCheck")(serverSideTokenCheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(serverSideTokenCheck)) __obj.updateDynamic("serverSideTokenCheck")(serverSideTokenCheck.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityPoolCognitoIdentityProvider]
   }
 }

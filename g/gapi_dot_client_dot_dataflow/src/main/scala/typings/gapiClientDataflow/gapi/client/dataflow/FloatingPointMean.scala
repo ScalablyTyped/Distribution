@@ -13,10 +13,10 @@ trait FloatingPointMean extends js.Object {
 
 object FloatingPointMean {
   @scala.inline
-  def apply(count: SplitInt64 = null, sum: Int | Double = null): FloatingPointMean = {
+  def apply(count: SplitInt64 = null, sum: js.UndefOr[Double] = js.undefined): FloatingPointMean = {
     val __obj = js.Dynamic.literal()
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (sum != null) __obj.updateDynamic("sum")(sum.asInstanceOf[js.Any])
+    if (!js.isUndefined(sum)) __obj.updateDynamic("sum")(sum.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FloatingPointMean]
   }
 }

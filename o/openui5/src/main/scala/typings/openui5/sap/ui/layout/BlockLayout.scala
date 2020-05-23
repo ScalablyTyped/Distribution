@@ -1,24 +1,13 @@
 package typings.openui5.sap.ui.layout
 
-import typings.openui5.TypeofBlockBackgroundType
+import typings.openui5.anon.TypeofBlockBackgroundType
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.layout.BlockLayout")
 @js.native
-class BlockLayout protected () extends Control {
-  /**
-    * Constructor for a new BlockLayout.Accepts an object literal <code>mSettings</code> that defines
-    * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
-    * sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the settings
-    * object.
-    * @param sId ID for the new control, generated automatically if no ID is given
-    * @param mSettings Initial settings for the new control
-    */
-  def this(sId: String) = this()
-  def this(sId: String, mSettings: js.Any) = this()
+trait BlockLayout extends Control {
   /**
     * Adds some content to the aggregation <code>content</code>.
     * @param oContent the content to add; if empty, nothing is inserted

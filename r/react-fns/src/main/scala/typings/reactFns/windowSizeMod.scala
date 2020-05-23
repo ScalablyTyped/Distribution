@@ -1,6 +1,7 @@
 package typings.reactFns
 
 import typings.react.mod.ComponentType
+import typings.reactFns.anon.PartialWindowSizeConfig
 import typings.reactFns.windowSizeWindowSizeMod.WindowSizeProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`

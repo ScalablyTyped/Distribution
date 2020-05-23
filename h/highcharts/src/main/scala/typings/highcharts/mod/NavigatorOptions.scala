@@ -90,28 +90,28 @@ object NavigatorOptions {
     adaptToUpdatedData: js.UndefOr[Boolean] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
     handles: NavigatorHandlesOptions = null,
-    height: Int | Double = null,
-    margin: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
+    margin: js.UndefOr[Double] = js.undefined,
     maskFill: ColorString | GradientColorObject | PatternObject = null,
     maskInside: js.UndefOr[Boolean] = js.undefined,
     opposite: js.UndefOr[Boolean] = js.undefined,
     outlineColor: ColorString | GradientColorObject | PatternObject = null,
-    outlineWidth: Int | Double = null,
+    outlineWidth: js.UndefOr[Double] = js.undefined,
     series: NavigatorSeriesOptions | SeriesOptionsType | (js.Array[NavigatorSeriesOptions | SeriesOptionsType]) = null,
     xAxis: NavigatorXAxisOptions | js.Array[NavigatorXAxisOptions] = null,
     yAxis: NavigatorYAxisOptions | js.Array[NavigatorYAxisOptions] = null
   ): NavigatorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(adaptToUpdatedData)) __obj.updateDynamic("adaptToUpdatedData")(adaptToUpdatedData.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(adaptToUpdatedData)) __obj.updateDynamic("adaptToUpdatedData")(adaptToUpdatedData.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (handles != null) __obj.updateDynamic("handles")(handles.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.get.asInstanceOf[js.Any])
     if (maskFill != null) __obj.updateDynamic("maskFill")(maskFill.asInstanceOf[js.Any])
-    if (!js.isUndefined(maskInside)) __obj.updateDynamic("maskInside")(maskInside.asInstanceOf[js.Any])
-    if (!js.isUndefined(opposite)) __obj.updateDynamic("opposite")(opposite.asInstanceOf[js.Any])
+    if (!js.isUndefined(maskInside)) __obj.updateDynamic("maskInside")(maskInside.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opposite)) __obj.updateDynamic("opposite")(opposite.get.asInstanceOf[js.Any])
     if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
-    if (outlineWidth != null) __obj.updateDynamic("outlineWidth")(outlineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(outlineWidth)) __obj.updateDynamic("outlineWidth")(outlineWidth.get.asInstanceOf[js.Any])
     if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
     if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 package typings.projectOxford.mod
 
 import typings.bluebird.mod.^
-import typings.projectOxford.AnonPersonId
+import typings.projectOxford.anon.PersonId
 import typings.projectOxford.mod.PersonResponses.Face
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,7 +34,7 @@ class Person () extends js.Object {
     * @param {string} userData          - Optional fields for user-provided data attached to a person. Size limit is 16KB.
     * @return {Promise}                 - Promise resolving with the resulting JSON
     */
-  def create(personGroupId: String, faces: js.Array[String], name: String, userData: String): ^[AnonPersonId] = js.native
+  def create(personGroupId: String, faces: js.Array[String], name: String, userData: String): ^[PersonId] = js.native
   /**
     * Deletes an existing person from a person group.
     *

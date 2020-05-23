@@ -35,21 +35,21 @@ object ResizeEndEventArgs {
   @scala.inline
   def apply(
     column: js.Any = null,
-    columnIndex: Int | Double = null,
-    extra: Int | Double = null,
+    columnIndex: js.UndefOr[Double] = js.undefined,
+    extra: js.UndefOr[Double] = js.undefined,
     model: js.Any = null,
-    newWidth: Int | Double = null,
-    oldWidth: Int | Double = null,
+    newWidth: js.UndefOr[Double] = js.undefined,
+    oldWidth: js.UndefOr[Double] = js.undefined,
     target: js.Any = null,
     `type`: String = null
   ): ResizeEndEventArgs = {
     val __obj = js.Dynamic.literal()
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
-    if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnIndex)) __obj.updateDynamic("columnIndex")(columnIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(extra)) __obj.updateDynamic("extra")(extra.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (newWidth != null) __obj.updateDynamic("newWidth")(newWidth.asInstanceOf[js.Any])
-    if (oldWidth != null) __obj.updateDynamic("oldWidth")(oldWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(newWidth)) __obj.updateDynamic("newWidth")(newWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(oldWidth)) __obj.updateDynamic("oldWidth")(oldWidth.get.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResizeEndEventArgs]

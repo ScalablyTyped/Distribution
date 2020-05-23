@@ -18,8 +18,7 @@ trait BaseTexture extends js.Object {
 object BaseTexture {
   @scala.inline
   def apply(sphericalPolynomial: Nullable[SphericalPolynomial] = null): BaseTexture = {
-    val __obj = js.Dynamic.literal()
-    if (sphericalPolynomial != null) __obj.updateDynamic("sphericalPolynomial")(sphericalPolynomial.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(sphericalPolynomial = sphericalPolynomial.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseTexture]
   }
 }

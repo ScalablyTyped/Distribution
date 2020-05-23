@@ -1,16 +1,9 @@
 package typings.ngTable.resultsMod
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.ngTable.ngTableNumbers.`0`
-import typings.ngTable.ngTableNumbers.`1`
-import typings.ngTable.ngTableNumbers.`2`
-import typings.ngTable.ngTableNumbers.`3`
-import typings.ngTable.ngTableNumbers.`4`
-import typings.ngTable.ngTableNumbers.`5`
-import typings.ngTable.ngTableNumbers.`6`
-import typings.ngTable.ngTableNumbers.`7`
-import typings.std.AnonCopyWithin
+import typings.std.FlatArray
 import typings.std.IterableIterator
+import typings.std.anon.CopyWithin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +23,7 @@ trait DataResults[T] extends /* n */ NumberDictionary[T] {
     * when they will be absent when used in a 'with' statement.
     */
   @JSName(js.Symbol.unscopables)
-  var unscopables: js.Function0[AnonCopyWithin] = js.native
+  var unscopables: js.Function0[CopyWithin] = js.native
   var visibleColumnCount: Double = js.native
   /**
     * Combines two or more arrays.
@@ -153,14 +146,8 @@ trait DataResults[T] extends /* n */ NumberDictionary[T] {
     *
     * @param depth The maximum recursion depth
     */
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth. If no depth is provided, flat method defaults to the depth of 1.
-    *
-    * @param depth The maximum recursion depth
-    */
-  def flat[U](): js.Array[U] = js.native
-  def flat[U](depth: Double): js.Array[_] = js.native
+  def flat[A, D /* <: Double */](): js.Array[FlatArray[A, D]] = js.native
+  def flat[A, D /* <: Double */](depth: D): js.Array[FlatArray[A, D]] = js.native
   /**
     * Calls a defined callback function on each element of an array. Then, flattens the result into
     * a new array.
@@ -190,64 +177,6 @@ trait DataResults[T] extends /* n */ NumberDictionary[T] {
     ],
     thisArg: This
   ): js.Array[U] = js.native
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth.
-    *
-    * @param depth The maximum recursion depth
-    */
-  @JSName("flat")
-  def flat_0[U](depth: `0`): js.Array[U] = js.native
-  @JSName("flat")
-  def flat_1[U](depth: `1`): js.Array[U] = js.native
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth.
-    *
-    * @param depth The maximum recursion depth
-    */
-  @JSName("flat")
-  def flat_2[U](depth: `2`): js.Array[U] = js.native
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth.
-    *
-    * @param depth The maximum recursion depth
-    */
-  @JSName("flat")
-  def flat_3[U](depth: `3`): js.Array[U] = js.native
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth.
-    *
-    * @param depth The maximum recursion depth
-    */
-  @JSName("flat")
-  def flat_4[U](depth: `4`): js.Array[U] = js.native
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth.
-    *
-    * @param depth The maximum recursion depth
-    */
-  @JSName("flat")
-  def flat_5[U](depth: `5`): js.Array[U] = js.native
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth.
-    *
-    * @param depth The maximum recursion depth
-    */
-  @JSName("flat")
-  def flat_6[U](depth: `6`): js.Array[U] = js.native
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth.
-    *
-    * @param depth The maximum recursion depth
-    */
-  @JSName("flat")
-  def flat_7[U](depth: `7`): js.Array[U] = js.native
   /**
     * Performs the specified action for each element in an array.
     * @param callbackfn  A function that accepts up to three arguments. forEach calls the callbackfn function one time for each element in the array.

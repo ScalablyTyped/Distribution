@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.popupMod
 
-import typings.antDesignReactNative.AnonPickerValueChangeProp
+import typings.antDesignReactNative.anon.PickerValueChangeProp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends PopupDatePicker
 @JSImport("@ant-design/react-native/lib/date-picker/datepicker/Popup", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonPickerValueChangeProp = js.native
+  var defaultProps: PickerValueChangeProp = js.native
 }
 

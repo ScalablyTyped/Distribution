@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A slot of time on a schedule that may be available for booking appointments
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait Slot extends DomainResource {
   /**
     * Contains extended information for property 'comment'.
@@ -128,7 +128,7 @@ object Slot {
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (!js.isUndefined(overbooked)) __obj.updateDynamic("overbooked")(overbooked.asInstanceOf[js.Any])
+    if (!js.isUndefined(overbooked)) __obj.updateDynamic("overbooked")(overbooked.get.asInstanceOf[js.Any])
     if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
     if (serviceCategory != null) __obj.updateDynamic("serviceCategory")(serviceCategory.asInstanceOf[js.Any])
     if (serviceType != null) __obj.updateDynamic("serviceType")(serviceType.asInstanceOf[js.Any])

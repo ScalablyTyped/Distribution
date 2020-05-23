@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LocalIpDetails extends js.Object {
   /**
-    * IPV4 remote address of the connection.
+    * The IPv4 local address of the connection.
     */
   var IpAddressV4: js.UndefOr[String] = js.native
 }

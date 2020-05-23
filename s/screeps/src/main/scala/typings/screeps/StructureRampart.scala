@@ -1,6 +1,5 @@
 package typings.screeps
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +27,28 @@ trait StructureRampart
   def setPublic(isPublic: Boolean): js.UndefOr[scala.Nothing]
 }
 
-@JSGlobal("StructureRampart")
-@js.native
-object StructureRampart extends TopLevel[StructureRampartConstructor]
+object StructureRampart {
+  @scala.inline
+  def apply(
+    destroy: () => ScreepsReturnCode,
+    effects: js.Array[RoomObjectEffect],
+    hits: Double,
+    hitsMax: Double,
+    id: Id[StructureRampart],
+    isActive: () => Boolean,
+    isPublic: Boolean,
+    my: Boolean,
+    notifyWhenAttacked: Boolean => ScreepsReturnCode,
+    pos: RoomPosition,
+    room: Room,
+    setPublic: Boolean => js.UndefOr[scala.Nothing],
+    structureType: STRUCTURE_RAMPART,
+    ticksToDecay: Double,
+    owner: Owner = null
+  ): StructureRampart = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), effects = effects.asInstanceOf[js.Any], hits = hits.asInstanceOf[js.Any], hitsMax = hitsMax.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isActive = js.Any.fromFunction0(isActive), isPublic = isPublic.asInstanceOf[js.Any], my = my.asInstanceOf[js.Any], notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), pos = pos.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], setPublic = js.Any.fromFunction1(setPublic), structureType = structureType.asInstanceOf[js.Any], ticksToDecay = ticksToDecay.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StructureRampart]
+  }
+}
 

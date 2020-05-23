@@ -12,7 +12,7 @@ object InitialConnectionHeaders {
   @scala.inline
   def apply(nosession: js.UndefOr[Boolean] = js.undefined): InitialConnectionHeaders = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(nosession)) __obj.updateDynamic("nosession")(nosession.asInstanceOf[js.Any])
+    if (!js.isUndefined(nosession)) __obj.updateDynamic("nosession")(nosession.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitialConnectionHeaders]
   }
 }

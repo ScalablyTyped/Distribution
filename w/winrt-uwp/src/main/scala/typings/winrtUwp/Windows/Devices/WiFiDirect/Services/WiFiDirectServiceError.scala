@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.WiFiDirect.Services
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object WiFiDirectServiceError extends js.Object {
   /** The Wi-Fi adapter does not support Wi-Fi Direct. */
   @js.native
   sealed trait unsupportedHardware extends WiFiDirectServiceError
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WiFiDirectServiceError with Double] = js.native
-  /* 4 */ @js.native
-  object noHardware extends TopLevel[noHardware with Double]
-  
-  /* 1 */ @js.native
-  object radioNotAvailable extends TopLevel[radioNotAvailable with Double]
-  
-  /* 2 */ @js.native
-  object resourceInUse extends TopLevel[resourceInUse with Double]
-  
-  /* 0 */ @js.native
-  object success extends TopLevel[success with Double]
-  
-  /* 3 */ @js.native
-  object unsupportedHardware extends TopLevel[unsupportedHardware with Double]
   
 }
 

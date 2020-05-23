@@ -22,10 +22,14 @@ trait RepeatOptions extends js.Object {
 
 object RepeatOptions {
   @scala.inline
-  def apply(endDate: Date | String | Double = null, limit: Int | Double = null, tz: String = null): RepeatOptions = {
+  def apply(
+    endDate: Date | String | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
+    tz: String = null
+  ): RepeatOptions = {
     val __obj = js.Dynamic.literal()
     if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (tz != null) __obj.updateDynamic("tz")(tz.asInstanceOf[js.Any])
     __obj.asInstanceOf[RepeatOptions]
   }

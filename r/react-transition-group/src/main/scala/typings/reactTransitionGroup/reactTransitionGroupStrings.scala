@@ -1,6 +1,5 @@
 package typings.reactTransitionGroup
 
-import typings.reactTransitionGroup.transitionMod.TransitionStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -131,18 +130,6 @@ object reactTransitionGroupStrings {
   
   @js.native
   sealed trait embed extends js.Object
-  
-  @js.native
-  sealed trait entered extends TransitionStatus
-  
-  @js.native
-  sealed trait entering extends TransitionStatus
-  
-  @js.native
-  sealed trait exited extends TransitionStatus
-  
-  @js.native
-  sealed trait exiting extends TransitionStatus
   
   @js.native
   sealed trait feBlend extends js.Object
@@ -532,9 +519,6 @@ object reactTransitionGroupStrings {
   sealed trait ul extends js.Object
   
   @js.native
-  sealed trait unmounted extends TransitionStatus
-  
-  @js.native
   sealed trait use extends js.Object
   
   @js.native
@@ -636,14 +620,6 @@ object reactTransitionGroupStrings {
   def em: em = "em".asInstanceOf[em]
   @scala.inline
   def embed: embed = "embed".asInstanceOf[embed]
-  @scala.inline
-  def entered: entered = "entered".asInstanceOf[entered]
-  @scala.inline
-  def entering: entering = "entering".asInstanceOf[entering]
-  @scala.inline
-  def exited: exited = "exited".asInstanceOf[exited]
-  @scala.inline
-  def exiting: exiting = "exiting".asInstanceOf[exiting]
   @scala.inline
   def feBlend: feBlend = "feBlend".asInstanceOf[feBlend]
   @scala.inline
@@ -902,8 +878,6 @@ object reactTransitionGroupStrings {
   def u: u = "u".asInstanceOf[u]
   @scala.inline
   def ul: ul = "ul".asInstanceOf[ul]
-  @scala.inline
-  def unmounted: unmounted = "unmounted".asInstanceOf[unmounted]
   @scala.inline
   def use: use = "use".asInstanceOf[use]
   @scala.inline

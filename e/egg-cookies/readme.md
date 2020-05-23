@@ -1,7 +1,7 @@
 
 # Scala.js typings for egg-cookies
 
-Typings are for version 2.3.2
+Typings are for version 2.3.3
 
 ## Library description:
 cookies module for egg

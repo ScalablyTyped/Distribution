@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.BindingData
 import typings.officeJsPreview.Excel.Interfaces.BindingLoadOptions
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.OfficeExtension.EventHandlers
+import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,15 +17,14 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
-@JSGlobal("Excel.Binding")
 @js.native
-class Binding () extends ClientObject {
+trait Binding extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Binding: RequestContext = js.native
   /**
     *
-    * Represents binding identifier. Read-only.
+    * Represents binding identifier.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -42,9 +41,9 @@ class Binding () extends ClientObject {
   /**
     *
     * Occurs when the selected content in the binding is changed.
-    * 
-    * **Note**: If multiple, discontiguous cells are selected, 
-    * `Binding.onSelectionChanged` only reports row and column information for one selection. 
+    *
+    * **Note**: If multiple, discontiguous cells are selected,
+    * `Binding.onSelectionChanged` only reports row and column information for one selection.
     * Use `Worksheet.onSelectionChanged` for multiple selected ranges.
     *
     * [Api set: ExcelApi 1.2]
@@ -54,7 +53,7 @@ class Binding () extends ClientObject {
   val onSelectionChanged: EventHandlers[BindingSelectionChangedEventArgs] = js.native
   /**
     *
-    * Returns the type of the binding. See Excel.BindingType for details. Read-only.
+    * Returns the type of the binding. See Excel.BindingType for details.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -90,7 +89,7 @@ class Binding () extends ClientObject {
     */
   def load(): Binding = js.native
   def load(options: BindingLoadOptions): Binding = js.native
-  def load(propertyNamesAndPaths: AnonExpand): Binding = js.native
+  def load(propertyNamesAndPaths: Expand): Binding = js.native
   def load(propertyNames: String): Binding = js.native
   def load(propertyNames: js.Array[String]): Binding = js.native
   /**

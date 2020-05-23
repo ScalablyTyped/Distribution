@@ -1,7 +1,7 @@
 package typings.reactBootstrapTable2Paginator.mod
 
 import typings.react.mod.ReactElement
-import typings.reactBootstrapTable2Paginator.AnonChildren
+import typings.reactBootstrapTable2Paginator.anon.Children
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap-table2-paginator", "PaginationProvider")
 @js.native
 object PaginationProvider extends js.Object {
-  def apply(props: AnonChildren): ReactElement | Null = js.native
+  def apply(props: Children): ReactElement | Null = js.native
 }
 

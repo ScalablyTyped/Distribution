@@ -1,7 +1,7 @@
 package typings.a11yDialog.mod
 
 import typings.std.Element
-import typings.std.Event_
+import typings.std.Event
 import typings.std.NodeList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,8 +28,8 @@ trait A11yDialog extends js.Object {
     * Hides the dialog.
     */
   def hide(): Unit = js.native
-  def off(evt: DialogEvents, callback: js.Function2[/* dialogElement */ js.Any, /* event */ Event_, Unit]): Unit = js.native
-  def on(evt: DialogEvents, callback: js.Function2[/* dialogElement */ js.Any, /* event */ Event_, Unit]): Unit = js.native
+  def off(evt: DialogEvents, callback: js.Function2[/* dialogElement */ js.Any, /* event */ Event, Unit]): Unit = js.native
+  def on(evt: DialogEvents, callback: js.Function2[/* dialogElement */ js.Any, /* event */ Event, Unit]): Unit = js.native
   /**
     * Shows the dialog.
     */

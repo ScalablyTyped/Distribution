@@ -20,9 +20,9 @@ trait AlignItemsProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.
 
 object AlignItemsProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](alignItems: ResponsiveValue[AlignItemsProperty, ThemeType] = null): AlignItemsProps[ThemeType] = {
+  def apply[ThemeType](alignItems: js.UndefOr[Null | (ResponsiveValue[AlignItemsProperty, ThemeType])] = js.undefined): AlignItemsProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
-    if (alignItems != null) __obj.updateDynamic("alignItems")(alignItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(alignItems)) __obj.updateDynamic("alignItems")(alignItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlignItemsProps[ThemeType]]
   }
 }

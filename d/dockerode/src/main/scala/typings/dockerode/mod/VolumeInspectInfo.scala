@@ -1,7 +1,7 @@
 package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.dockerode.AnonRefCount
+import typings.dockerode.anon.RefCount
 import typings.dockerode.dockerodeStrings.global
 import typings.dockerode.dockerodeStrings.local
 import scala.scalajs.js
@@ -19,7 +19,7 @@ trait VolumeInspectInfo extends js.Object {
   var Scope: local | global
   var Status: js.UndefOr[StringDictionary[String]] = js.undefined
   // Field is sometimes present, and sometimes null
-  var UsageData: js.UndefOr[AnonRefCount | Null] = js.undefined
+  var UsageData: js.UndefOr[RefCount | Null] = js.undefined
 }
 
 object VolumeInspectInfo {
@@ -32,12 +32,11 @@ object VolumeInspectInfo {
     Scope: local | global,
     Options: StringDictionary[String] = null,
     Status: StringDictionary[String] = null,
-    UsageData: AnonRefCount = null
+    UsageData: js.UndefOr[Null | RefCount] = js.undefined
   ): VolumeInspectInfo = {
-    val __obj = js.Dynamic.literal(Driver = Driver.asInstanceOf[js.Any], Labels = Labels.asInstanceOf[js.Any], Mountpoint = Mountpoint.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Scope = Scope.asInstanceOf[js.Any])
-    if (Options != null) __obj.updateDynamic("Options")(Options.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Driver = Driver.asInstanceOf[js.Any], Labels = Labels.asInstanceOf[js.Any], Mountpoint = Mountpoint.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Scope = Scope.asInstanceOf[js.Any], Options = Options.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (UsageData != null) __obj.updateDynamic("UsageData")(UsageData.asInstanceOf[js.Any])
+    if (!js.isUndefined(UsageData)) __obj.updateDynamic("UsageData")(UsageData.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeInspectInfo]
   }
 }

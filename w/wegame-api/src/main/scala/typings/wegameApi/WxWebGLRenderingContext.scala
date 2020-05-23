@@ -15,9 +15,8 @@ import scala.scalajs.js.annotation._
   *     getExtension
   *     getSupportedExtensions
   */
-@JSGlobal("WxWebGLRenderingContext")
 @js.native
-class WxWebGLRenderingContext ()
+trait WxWebGLRenderingContext
   extends WebGLRenderingContextBase
      with WebGLRenderingContextOverloads {
   /**

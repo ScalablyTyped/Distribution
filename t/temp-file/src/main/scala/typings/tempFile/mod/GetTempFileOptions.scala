@@ -13,14 +13,14 @@ trait GetTempFileOptions extends js.Object {
 object GetTempFileOptions {
   @scala.inline
   def apply(
-    disposer: /* file */ String => js.Promise[Unit] = null,
-    prefix: String = null,
-    suffix: String = null
+    disposer: js.UndefOr[Null | (/* file */ String => js.Promise[Unit])] = js.undefined,
+    prefix: js.UndefOr[Null | String] = js.undefined,
+    suffix: js.UndefOr[Null | String] = js.undefined
   ): GetTempFileOptions = {
     val __obj = js.Dynamic.literal()
-    if (disposer != null) __obj.updateDynamic("disposer")(js.Any.fromFunction1(disposer))
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
+    if (!js.isUndefined(disposer)) __obj.updateDynamic("disposer")(if (disposer != null) js.Any.fromFunction1(disposer.asInstanceOf[/* file */ String => js.Promise[Unit]]) else null)
+    if (!js.isUndefined(prefix)) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(suffix)) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTempFileOptions]
   }
 }

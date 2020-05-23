@@ -83,20 +83,20 @@ object KeyTableSettings {
     editOnFocus: js.UndefOr[Boolean] = js.undefined,
     editor: js.Any = null,
     focus: js.Any = null,
-    keys: js.Array[Double] = null,
-    tabIndex: Int | Double = null
+    keys: js.UndefOr[Null | js.Array[Double]] = js.undefined,
+    tabIndex: js.UndefOr[Double] = js.undefined
   ): KeyTableSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(blurable)) __obj.updateDynamic("blurable")(blurable.asInstanceOf[js.Any])
+    if (!js.isUndefined(blurable)) __obj.updateDynamic("blurable")(blurable.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(clipboard)) __obj.updateDynamic("clipboard")(clipboard.asInstanceOf[js.Any])
+    if (!js.isUndefined(clipboard)) __obj.updateDynamic("clipboard")(clipboard.get.asInstanceOf[js.Any])
     if (clipboardOrthogonal != null) __obj.updateDynamic("clipboardOrthogonal")(clipboardOrthogonal.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (!js.isUndefined(editOnFocus)) __obj.updateDynamic("editOnFocus")(editOnFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(editOnFocus)) __obj.updateDynamic("editOnFocus")(editOnFocus.get.asInstanceOf[js.Any])
     if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
     if (focus != null) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
-    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(keys)) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyTableSettings]
   }
 }

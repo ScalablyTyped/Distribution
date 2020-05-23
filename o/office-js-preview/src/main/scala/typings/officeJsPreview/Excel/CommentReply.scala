@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.CommentReplyData
 import typings.officeJsPreview.Excel.Interfaces.CommentReplyLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.CommentReplyUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.Mention
 import typings.officeJsPreview.officeJsPreviewStrings.Plain
 import typings.std.Date
@@ -19,9 +19,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.10]
   */
-@JSGlobal("Excel.CommentReply")
 @js.native
-class CommentReply () extends ClientObject {
+trait CommentReply extends ClientObject {
   /**
     *
     * Gets the email of the comment reply's author.
@@ -38,14 +37,14 @@ class CommentReply () extends ClientObject {
   val authorName: String = js.native
   /**
     *
-    * Gets or sets the comment reply's content. The string is plain text.
+    * The comment reply's content. The string is plain text.
     *
     * [Api set: ExcelApi 1.10]
     */
   var content: String = js.native
   /**
     *
-    * Gets the content type of the comment.
+    * The content type of the reply.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -63,31 +62,30 @@ class CommentReply () extends ClientObject {
   val creationDate: Date = js.native
   /**
     *
-    * Represents the comment reply identifier. Read-only.
+    * Specifies the comment reply identifier.
     *
     * [Api set: ExcelApi 1.10]
     */
   val id: String = js.native
   /**
     *
-    * Gets the entities (e.g. people) that are mentioned in comments.
+    * The entities (e.g., people) that are mentioned in comments.
     *
-    * [Api set: ExcelApiOnline 1.1]
+    * [Api set: ExcelApi 1.11]
     */
   val mentions: js.Array[CommentMention] = js.native
   /**
     *
-    * Gets or sets the comment reply status. A value of "true" means the comment reply is in the resolved state.
+    * The comment reply status. A value of "true" means the reply is in the resolved state.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.11]
     */
   val resolved: Boolean = js.native
   /**
     *
-    * Gets the rich comment content (e.g. mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
+    * The rich comment content (e.g., mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
     *
-    * [Api set: ExcelApiOnline 1.1]
+    * [Api set: ExcelApi 1.11]
     */
   val richContent: String = js.native
   /**
@@ -115,7 +113,7 @@ class CommentReply () extends ClientObject {
     */
   def load(): CommentReply = js.native
   def load(options: CommentReplyLoadOptions): CommentReply = js.native
-  def load(propertyNamesAndPaths: AnonExpand): CommentReply = js.native
+  def load(propertyNamesAndPaths: Expand): CommentReply = js.native
   def load(propertyNames: String): CommentReply = js.native
   def load(propertyNames: js.Array[String]): CommentReply = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -141,7 +139,7 @@ class CommentReply () extends ClientObject {
   /**
     * Updates the comment content with a specially formatted string and a list of mentions.
     *
-    * [Api set: ExcelApiOnline 1.1]
+    * [Api set: ExcelApi 1.11]
     *
     * @param contentWithMentions The content for the comment. This contains a specially formatted string and a list of mentions that will be parsed into the string when displayed by Excel.
     */

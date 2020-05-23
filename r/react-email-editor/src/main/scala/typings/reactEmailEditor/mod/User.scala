@@ -12,10 +12,10 @@ trait User extends js.Object {
 
 object User {
   @scala.inline
-  def apply(email: String = null, id: Int | Double = null, name: String = null): User = {
+  def apply(email: String = null, id: js.UndefOr[Double] = js.undefined, name: String = null): User = {
     val __obj = js.Dynamic.literal()
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[User]
   }

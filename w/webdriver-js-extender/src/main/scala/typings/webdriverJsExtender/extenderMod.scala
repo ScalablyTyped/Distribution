@@ -2,6 +2,7 @@ package typings.webdriverJsExtender
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.seleniumWebdriver.mod.WebDriver
+import typings.webdriverJsExtender.anon.DefineCommand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +14,7 @@ object extenderMod extends js.Object {
   class Extender protected () extends js.Object {
     def this(driver: WebDriver) = this()
     var driver_ : WebDriver = js.native
-    var executor_ : AnonDefineCommand = js.native
+    var executor_ : DefineCommand = js.native
     var params_ : StringDictionary[js.Array[String]] = js.native
     /**
       * Defines a new command. When a command is sent, the {@code path} will be

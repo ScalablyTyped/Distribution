@@ -22,14 +22,14 @@ object MapServiceProviderOptions {
     url: String,
     attribution: String = null,
     label: String = null,
-    maxResults: Int | Double = null,
-    token: String = null
+    maxResults: js.UndefOr[Double] = js.undefined,
+    token: js.UndefOr[Null | String] = js.undefined
   ): MapServiceProviderOptions = {
     val __obj = js.Dynamic.literal(bufferRadius = bufferRadius.asInstanceOf[js.Any], formatSuggestion = js.Any.fromFunction1(formatSuggestion), layers = layers.asInstanceOf[js.Any], searchFields = searchFields.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(token)) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapServiceProviderOptions]
   }
 }

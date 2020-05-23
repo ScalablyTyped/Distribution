@@ -10,9 +10,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Handles communication to and from the lock screen. */
-@JSGlobal("Windows.ApplicationModel.Calls.LockScreenCallUI")
 @js.native
-abstract class LockScreenCallUI () extends js.Object {
+trait LockScreenCallUI extends js.Object {
   /** Gets and sets a brief description of the nature of the call. This brief description is also called the call's accessible name; its form is "Video call with Jane Doe." */
   var callTitle: String = js.native
   /** Occurs when the lock screen interaction is complete. */

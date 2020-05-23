@@ -1,7 +1,7 @@
 package typings.apolloServer.mod
 
 import typings.graphql.astMod.DocumentNode
-import typings.graphqlTools.DocumentNodedefinitionsAr
+import typings.graphqlTools.anon.DocumentNodedefinitionsAr
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

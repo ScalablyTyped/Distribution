@@ -79,38 +79,38 @@ trait Lag extends js.Object {
 object Lag {
   @scala.inline
   def apply(
-    allowsHostedConnections: js.UndefOr[Boolean] = js.undefined,
+    allowsHostedConnections: js.UndefOr[BooleanFlag] = js.undefined,
     awsDevice: AwsDevice = null,
     awsDeviceV2: AwsDeviceV2 = null,
     connections: ConnectionList = null,
     connectionsBandwidth: Bandwidth = null,
     hasLogicalRedundancy: HasLogicalRedundancy = null,
-    jumboFrameCapable: js.UndefOr[Boolean] = js.undefined,
+    jumboFrameCapable: js.UndefOr[JumboFrameCapable] = js.undefined,
     lagId: LagId = null,
     lagName: LagName = null,
     lagState: LagState = null,
     location: LocationCode = null,
-    minimumLinks: Int | Double = null,
-    numberOfConnections: Int | Double = null,
+    minimumLinks: js.UndefOr[Count] = js.undefined,
+    numberOfConnections: js.UndefOr[Count] = js.undefined,
     ownerAccount: OwnerAccount = null,
     providerName: ProviderName = null,
     region: Region = null,
     tags: TagList = null
   ): Lag = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowsHostedConnections)) __obj.updateDynamic("allowsHostedConnections")(allowsHostedConnections.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowsHostedConnections)) __obj.updateDynamic("allowsHostedConnections")(allowsHostedConnections.get.asInstanceOf[js.Any])
     if (awsDevice != null) __obj.updateDynamic("awsDevice")(awsDevice.asInstanceOf[js.Any])
     if (awsDeviceV2 != null) __obj.updateDynamic("awsDeviceV2")(awsDeviceV2.asInstanceOf[js.Any])
     if (connections != null) __obj.updateDynamic("connections")(connections.asInstanceOf[js.Any])
     if (connectionsBandwidth != null) __obj.updateDynamic("connectionsBandwidth")(connectionsBandwidth.asInstanceOf[js.Any])
     if (hasLogicalRedundancy != null) __obj.updateDynamic("hasLogicalRedundancy")(hasLogicalRedundancy.asInstanceOf[js.Any])
-    if (!js.isUndefined(jumboFrameCapable)) __obj.updateDynamic("jumboFrameCapable")(jumboFrameCapable.asInstanceOf[js.Any])
+    if (!js.isUndefined(jumboFrameCapable)) __obj.updateDynamic("jumboFrameCapable")(jumboFrameCapable.get.asInstanceOf[js.Any])
     if (lagId != null) __obj.updateDynamic("lagId")(lagId.asInstanceOf[js.Any])
     if (lagName != null) __obj.updateDynamic("lagName")(lagName.asInstanceOf[js.Any])
     if (lagState != null) __obj.updateDynamic("lagState")(lagState.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (minimumLinks != null) __obj.updateDynamic("minimumLinks")(minimumLinks.asInstanceOf[js.Any])
-    if (numberOfConnections != null) __obj.updateDynamic("numberOfConnections")(numberOfConnections.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumLinks)) __obj.updateDynamic("minimumLinks")(minimumLinks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfConnections)) __obj.updateDynamic("numberOfConnections")(numberOfConnections.get.asInstanceOf[js.Any])
     if (ownerAccount != null) __obj.updateDynamic("ownerAccount")(ownerAccount.asInstanceOf[js.Any])
     if (providerName != null) __obj.updateDynamic("providerName")(providerName.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])

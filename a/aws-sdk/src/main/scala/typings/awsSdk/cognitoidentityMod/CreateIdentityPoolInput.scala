@@ -49,7 +49,7 @@ object CreateIdentityPoolInput {
   def apply(
     AllowUnauthenticatedIdentities: IdentityPoolUnauthenticated,
     IdentityPoolName: IdentityPoolName,
-    AllowClassicFlow: js.UndefOr[Boolean] = js.undefined,
+    AllowClassicFlow: js.UndefOr[ClassicFlow] = js.undefined,
     CognitoIdentityProviders: CognitoIdentityProviderList = null,
     DeveloperProviderName: DeveloperProviderName = null,
     IdentityPoolTags: IdentityPoolTagsType = null,
@@ -58,7 +58,7 @@ object CreateIdentityPoolInput {
     SupportedLoginProviders: IdentityProviders = null
   ): CreateIdentityPoolInput = {
     val __obj = js.Dynamic.literal(AllowUnauthenticatedIdentities = AllowUnauthenticatedIdentities.asInstanceOf[js.Any], IdentityPoolName = IdentityPoolName.asInstanceOf[js.Any])
-    if (!js.isUndefined(AllowClassicFlow)) __obj.updateDynamic("AllowClassicFlow")(AllowClassicFlow.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllowClassicFlow)) __obj.updateDynamic("AllowClassicFlow")(AllowClassicFlow.get.asInstanceOf[js.Any])
     if (CognitoIdentityProviders != null) __obj.updateDynamic("CognitoIdentityProviders")(CognitoIdentityProviders.asInstanceOf[js.Any])
     if (DeveloperProviderName != null) __obj.updateDynamic("DeveloperProviderName")(DeveloperProviderName.asInstanceOf[js.Any])
     if (IdentityPoolTags != null) __obj.updateDynamic("IdentityPoolTags")(IdentityPoolTags.asInstanceOf[js.Any])

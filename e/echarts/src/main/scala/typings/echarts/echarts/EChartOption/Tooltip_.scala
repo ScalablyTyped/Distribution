@@ -313,42 +313,42 @@ object Tooltip_ {
     axisPointer: typings.echarts.echarts.EChartOption.Tooltip.AxisPointer = null,
     backgroundColor: String = null,
     borderColor: String = null,
-    borderWidth: Int | Double = null,
+    borderWidth: js.UndefOr[Double] = js.undefined,
     confine: js.UndefOr[Boolean] = js.undefined,
     enterable: js.UndefOr[Boolean] = js.undefined,
     extraCssText: String = null,
     formatter: String | Formatter = null,
-    hideDelay: Int | Double = null,
+    hideDelay: js.UndefOr[Double] = js.undefined,
     padding: Double | js.Array[Double] = null,
     position: Type = null,
     renderMode: html = null,
     show: js.UndefOr[Boolean] = js.undefined,
     showContent: js.UndefOr[Boolean] = js.undefined,
-    showDelay: Int | Double = null,
+    showDelay: js.UndefOr[Double] = js.undefined,
     textStyle: BaseTextStyle = null,
-    transitionDuration: Int | Double = null,
+    transitionDuration: js.UndefOr[Double] = js.undefined,
     trigger: item | axis | none = null,
     triggerOn: mousemove | click | mousemoveVerticallineclick | none = null
   ): Tooltip_ = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alwaysShowContent)) __obj.updateDynamic("alwaysShowContent")(alwaysShowContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysShowContent)) __obj.updateDynamic("alwaysShowContent")(alwaysShowContent.get.asInstanceOf[js.Any])
     if (axisPointer != null) __obj.updateDynamic("axisPointer")(axisPointer.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(confine)) __obj.updateDynamic("confine")(confine.asInstanceOf[js.Any])
-    if (!js.isUndefined(enterable)) __obj.updateDynamic("enterable")(enterable.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(confine)) __obj.updateDynamic("confine")(confine.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enterable)) __obj.updateDynamic("enterable")(enterable.get.asInstanceOf[js.Any])
     if (extraCssText != null) __obj.updateDynamic("extraCssText")(extraCssText.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
-    if (hideDelay != null) __obj.updateDynamic("hideDelay")(hideDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideDelay)) __obj.updateDynamic("hideDelay")(hideDelay.get.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (renderMode != null) __obj.updateDynamic("renderMode")(renderMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (!js.isUndefined(showContent)) __obj.updateDynamic("showContent")(showContent.asInstanceOf[js.Any])
-    if (showDelay != null) __obj.updateDynamic("showDelay")(showDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showContent)) __obj.updateDynamic("showContent")(showContent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDelay)) __obj.updateDynamic("showDelay")(showDelay.get.asInstanceOf[js.Any])
     if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
-    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitionDuration)) __obj.updateDynamic("transitionDuration")(transitionDuration.get.asInstanceOf[js.Any])
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     if (triggerOn != null) __obj.updateDynamic("triggerOn")(triggerOn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tooltip_]

@@ -89,8 +89,8 @@ object AppSummary {
     roleName: RoleName = null,
     status: AppStatus = null,
     statusMessage: AppStatusMessage = null,
-    totalServerGroups: Int | Double = null,
-    totalServers: Int | Double = null
+    totalServerGroups: js.UndefOr[TotalServerGroups] = js.undefined,
+    totalServers: js.UndefOr[TotalServers] = js.undefined
   ): AppSummary = {
     val __obj = js.Dynamic.literal()
     if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
@@ -107,8 +107,8 @@ object AppSummary {
     if (roleName != null) __obj.updateDynamic("roleName")(roleName.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage.asInstanceOf[js.Any])
-    if (totalServerGroups != null) __obj.updateDynamic("totalServerGroups")(totalServerGroups.asInstanceOf[js.Any])
-    if (totalServers != null) __obj.updateDynamic("totalServers")(totalServers.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalServerGroups)) __obj.updateDynamic("totalServerGroups")(totalServerGroups.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalServers)) __obj.updateDynamic("totalServers")(totalServers.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppSummary]
   }
 }

@@ -12,6 +12,9 @@ object preactStrings {
   sealed trait alphabetic extends js.Object
   
   @js.native
+  sealed trait alternate extends js.Object
+  
+  @js.native
   sealed trait auto extends js.Object
   
   @js.native
@@ -33,6 +36,12 @@ object preactStrings {
   sealed trait currentTarget extends js.Object
   
   @js.native
+  sealed trait down extends js.Object
+  
+  @js.native
+  sealed trait eager extends js.Object
+  
+  @js.native
   sealed trait evenodd extends js.Object
   
   @js.native
@@ -49,6 +58,12 @@ object preactStrings {
   
   @js.native
   sealed trait isolated extends js.Object
+  
+  @js.native
+  sealed trait `lazy` extends js.Object
+  
+  @js.native
+  sealed trait left extends js.Object
   
   @js.native
   sealed trait linearRGB extends js.Object
@@ -81,6 +96,9 @@ object preactStrings {
   sealed trait replace extends js.Object
   
   @js.native
+  sealed trait right extends js.Object
+  
+  @js.native
   sealed trait round extends js.Object
   
   @js.native
@@ -88,6 +106,12 @@ object preactStrings {
   
   @js.native
   sealed trait sRGB extends js.Object
+  
+  @js.native
+  sealed trait scroll extends js.Object
+  
+  @js.native
+  sealed trait slide extends js.Object
   
   @js.native
   sealed trait square extends js.Object
@@ -105,12 +129,17 @@ object preactStrings {
   sealed trait `text-before-edge` extends js.Object
   
   @js.native
+  sealed trait up extends js.Object
+  
+  @js.native
   sealed trait yes extends js.Object
   
   @scala.inline
   def `after-edge`: `after-edge` = "after-edge".asInstanceOf[`after-edge`]
   @scala.inline
   def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
+  @scala.inline
+  def alternate: alternate = "alternate".asInstanceOf[alternate]
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
@@ -126,6 +155,10 @@ object preactStrings {
   @scala.inline
   def currentTarget: currentTarget = "currentTarget".asInstanceOf[currentTarget]
   @scala.inline
+  def down: down = "down".asInstanceOf[down]
+  @scala.inline
+  def eager: eager = "eager".asInstanceOf[eager]
+  @scala.inline
   def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
   @scala.inline
   def hanging: hanging = "hanging".asInstanceOf[hanging]
@@ -137,6 +170,10 @@ object preactStrings {
   def initial: initial = "initial".asInstanceOf[initial]
   @scala.inline
   def isolated: isolated = "isolated".asInstanceOf[isolated]
+  @scala.inline
+  def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
   @scala.inline
   def linearRGB: linearRGB = "linearRGB".asInstanceOf[linearRGB]
   @scala.inline
@@ -158,11 +195,17 @@ object preactStrings {
   @scala.inline
   def replace: replace = "replace".asInstanceOf[replace]
   @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def round: round = "round".asInstanceOf[round]
   @scala.inline
   def rtl: rtl = "rtl".asInstanceOf[rtl]
   @scala.inline
   def sRGB: sRGB = "sRGB".asInstanceOf[sRGB]
+  @scala.inline
+  def scroll: scroll = "scroll".asInstanceOf[scroll]
+  @scala.inline
+  def slide: slide = "slide".asInstanceOf[slide]
   @scala.inline
   def square: square = "square".asInstanceOf[square]
   @scala.inline
@@ -173,6 +216,8 @@ object preactStrings {
   def `text-after-edge`: `text-after-edge` = "text-after-edge".asInstanceOf[`text-after-edge`]
   @scala.inline
   def `text-before-edge`: `text-before-edge` = "text-before-edge".asInstanceOf[`text-before-edge`]
+  @scala.inline
+  def up: up = "up".asInstanceOf[up]
   @scala.inline
   def yes: yes = "yes".asInstanceOf[yes]
 }

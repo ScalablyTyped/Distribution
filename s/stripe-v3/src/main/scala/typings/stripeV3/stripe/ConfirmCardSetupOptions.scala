@@ -17,7 +17,7 @@ object ConfirmCardSetupOptions {
   @scala.inline
   def apply(handleActions: js.UndefOr[Boolean] = js.undefined): ConfirmCardSetupOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(handleActions)) __obj.updateDynamic("handleActions")(handleActions.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleActions)) __obj.updateDynamic("handleActions")(handleActions.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfirmCardSetupOptions]
   }
 }

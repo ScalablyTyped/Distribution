@@ -14,30 +14,8 @@ import scala.scalajs.js.annotation._
   * {@link Segment#handleOut}), describing the tangents of the two {@link Curve}
   * objects that are connected by this segment.
   */
-@JSGlobal("paper.Segment")
 @js.native
-/** 
-  * Creates a new Segment object.
-  * 
-  * @param point - the anchor point of the segment
-  * @param handleIn - the handle point relative to the
-  *     anchor point of the segment that describes the in tangent of the
-  *     segment
-  * @param handleOut - the handle point relative to the
-  *     anchor point of the segment that describes the out tangent of the
-  *     segment
-  */
-class Segment () extends js.Object {
-  /** 
-    * Creates a new Segment object.
-    * 
-    * @param object - an object containing properties to be set on the
-    *     segment
-    */
-  def this(`object`: js.Object) = this()
-  def this(point: Point) = this()
-  def this(point: Point, handleIn: Point) = this()
-  def this(point: Point, handleIn: Point, handleOut: Point) = this()
+trait Segment extends js.Object {
   /** 
     * The curve that the segment belongs to. For the last segment of an open
     * path, the previous segment is returned.

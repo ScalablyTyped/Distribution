@@ -1,20 +1,14 @@
 package typings.ejWebAll.ej
 
 import typings.ejWebAll.JQuery
-import typings.std.Document_
-import typings.std.Element
+import typings.std.Document
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.RTE")
 @js.native
-class RTE_ protected () extends Widget_ {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.RTE.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.RTE.Model) = this()
+trait RTE_ extends Widget_ {
   var defaults: typings.ejWebAll.ej.RTE.Model = js.native
   @JSName("model")
   var model_RTE_ : typings.ejWebAll.ej.RTE.Model = js.native
@@ -57,7 +51,7 @@ class RTE_ protected () extends Widget_ {
   /** Gets the Document from the RTE control.
     * @returns {Document}
     */
-  def getDocument(): Document_ = js.native
+  def getDocument(): Document = js.native
   /** Gets the HTML string from the RTE control.
     * @returns {HTMLElement}
     */

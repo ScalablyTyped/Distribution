@@ -18,10 +18,10 @@ trait TextDetectionResult extends js.Object {
 
 object TextDetectionResult {
   @scala.inline
-  def apply(TextDetection: TextDetection = null, Timestamp: Int | Double = null): TextDetectionResult = {
+  def apply(TextDetection: TextDetection = null, Timestamp: js.UndefOr[Timestamp] = js.undefined): TextDetectionResult = {
     val __obj = js.Dynamic.literal()
     if (TextDetection != null) __obj.updateDynamic("TextDetection")(TextDetection.asInstanceOf[js.Any])
-    if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(Timestamp)) __obj.updateDynamic("Timestamp")(Timestamp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextDetectionResult]
   }
 }

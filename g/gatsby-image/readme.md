@@ -1,7 +1,7 @@
 
 # Scala.js typings for gatsby-image
 
-Typings are for version 2.3.4
+Typings are for version 2.4.5
 
 ## Library description:
 Lazy-loading React image component with optional support for the blur-up effect.

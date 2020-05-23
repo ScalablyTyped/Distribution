@@ -89,9 +89,9 @@ trait ICustomerUpdateOptions extends IDataOptionsWithMetadata {
 object ICustomerUpdateOptions {
   @scala.inline
   def apply(
-    account_balance: Int | Double = null,
+    account_balance: js.UndefOr[Double] = js.undefined,
     address: IAddress = null,
-    balance: Int | Double = null,
+    balance: js.UndefOr[Double] = js.undefined,
     coupon: String = null,
     default_source: String = null,
     description: String = null,
@@ -99,20 +99,20 @@ object ICustomerUpdateOptions {
     expand: js.Array[String] = null,
     include: js.Array[String] = null,
     invoice_prefix: String = null,
-    invoice_settings: ICustomerInvoiceSettings = null,
+    invoice_settings: js.UndefOr[Null | ICustomerInvoiceSettings] = js.undefined,
     metadata: IOptionsMetadata = null,
     name: String = null,
     phone: String = null,
-    preferred_locales: js.Array[String] = null,
+    preferred_locales: js.UndefOr[Null | js.Array[String]] = js.undefined,
     shipping: IShippingInformation = null,
     source: String | ICardSourceCreationOptionsExtended = null,
     tax_exempt: none | exempt | reverse = null,
     tax_info: js.Any = null
   ): ICustomerUpdateOptions = {
     val __obj = js.Dynamic.literal()
-    if (account_balance != null) __obj.updateDynamic("account_balance")(account_balance.asInstanceOf[js.Any])
+    if (!js.isUndefined(account_balance)) __obj.updateDynamic("account_balance")(account_balance.get.asInstanceOf[js.Any])
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (balance != null) __obj.updateDynamic("balance")(balance.asInstanceOf[js.Any])
+    if (!js.isUndefined(balance)) __obj.updateDynamic("balance")(balance.get.asInstanceOf[js.Any])
     if (coupon != null) __obj.updateDynamic("coupon")(coupon.asInstanceOf[js.Any])
     if (default_source != null) __obj.updateDynamic("default_source")(default_source.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
@@ -120,11 +120,11 @@ object ICustomerUpdateOptions {
     if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (invoice_prefix != null) __obj.updateDynamic("invoice_prefix")(invoice_prefix.asInstanceOf[js.Any])
-    if (invoice_settings != null) __obj.updateDynamic("invoice_settings")(invoice_settings.asInstanceOf[js.Any])
+    if (!js.isUndefined(invoice_settings)) __obj.updateDynamic("invoice_settings")(invoice_settings.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
-    if (preferred_locales != null) __obj.updateDynamic("preferred_locales")(preferred_locales.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferred_locales)) __obj.updateDynamic("preferred_locales")(preferred_locales.asInstanceOf[js.Any])
     if (shipping != null) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (tax_exempt != null) __obj.updateDynamic("tax_exempt")(tax_exempt.asInstanceOf[js.Any])

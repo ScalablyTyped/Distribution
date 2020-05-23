@@ -1,6 +1,6 @@
 package typings.socketIoEmitter.mod
 
-import typings.socketIoEmitter.Recordbroadcastjsonvolati
+import typings.socketIoEmitter.anon.Recordbroadcastjsonvolati
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

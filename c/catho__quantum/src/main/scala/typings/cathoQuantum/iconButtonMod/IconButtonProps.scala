@@ -1,6 +1,6 @@
 package typings.cathoQuantum.iconButtonMod
 
-import typings.cathoQuantum.AnonSpacing
+import typings.cathoQuantum.anon.Spacing
 import typings.cathoQuantum.cathoQuantumStrings.error
 import typings.cathoQuantum.cathoQuantumStrings.large
 import typings.cathoQuantum.cathoQuantumStrings.medium
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
 trait IconButtonProps extends js.Object {
   var size: js.UndefOr[xsmall | small | medium | large | xlarge] = js.undefined
   var skin: js.UndefOr[neutral | primary | secondary | success | warning | error] = js.undefined
-  var theme: js.UndefOr[AnonSpacing] = js.undefined
+  var theme: js.UndefOr[Spacing] = js.undefined
 }
 
 object IconButtonProps {
@@ -27,7 +27,7 @@ object IconButtonProps {
   def apply(
     size: xsmall | small | medium | large | xlarge = null,
     skin: neutral | primary | secondary | success | warning | error = null,
-    theme: AnonSpacing = null
+    theme: Spacing = null
   ): IconButtonProps = {
     val __obj = js.Dynamic.literal()
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

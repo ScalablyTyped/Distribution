@@ -17,14 +17,14 @@ object NavigationPopActionPayload {
   def apply(
     immediate: js.UndefOr[Boolean] = js.undefined,
     key: String = null,
-    n: Int | Double = null,
+    n: js.UndefOr[Double] = js.undefined,
     prune: js.UndefOr[Boolean] = js.undefined
   ): NavigationPopActionPayload = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.asInstanceOf[js.Any])
+    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (n != null) __obj.updateDynamic("n")(n.asInstanceOf[js.Any])
-    if (!js.isUndefined(prune)) __obj.updateDynamic("prune")(prune.asInstanceOf[js.Any])
+    if (!js.isUndefined(n)) __obj.updateDynamic("n")(n.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(prune)) __obj.updateDynamic("prune")(prune.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationPopActionPayload]
   }
 }

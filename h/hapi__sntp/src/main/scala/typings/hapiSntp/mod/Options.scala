@@ -15,15 +15,15 @@ object Options {
   @scala.inline
   def apply(
     host: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     resolveReference: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(resolveReference)) __obj.updateDynamic("resolveReference")(resolveReference.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolveReference)) __obj.updateDynamic("resolveReference")(resolveReference.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

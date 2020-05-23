@@ -14,10 +14,10 @@ trait Calculation extends js.Object {
 
 object Calculation {
   @scala.inline
-  def apply(field: String = null, value: Int | Double = null): Calculation = {
+  def apply(field: String = null, value: js.UndefOr[Double] = js.undefined): Calculation = {
     val __obj = js.Dynamic.literal()
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Calculation]
   }
 }

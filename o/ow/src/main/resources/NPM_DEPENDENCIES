@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ow" : "0.15.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ow" : "0.15.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

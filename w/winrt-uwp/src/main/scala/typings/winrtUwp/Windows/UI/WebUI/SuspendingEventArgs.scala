@@ -5,10 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides data for an app suspension event. */
-@JSGlobal("Windows.UI.WebUI.SuspendingEventArgs")
-@js.native
-abstract class SuspendingEventArgs () extends js.Object {
+trait SuspendingEventArgs extends js.Object {
   /** Gets the app suspension operation. */
-  var suspendingOperation: typings.winrtUwp.Windows.ApplicationModel.SuspendingOperation = js.native
+  var suspendingOperation: typings.winrtUwp.Windows.ApplicationModel.SuspendingOperation
+}
+
+object SuspendingEventArgs {
+  @scala.inline
+  def apply(suspendingOperation: typings.winrtUwp.Windows.ApplicationModel.SuspendingOperation): SuspendingEventArgs = {
+    val __obj = js.Dynamic.literal(suspendingOperation = suspendingOperation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SuspendingEventArgs]
+  }
 }
 

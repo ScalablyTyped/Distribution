@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,8 +37,4 @@ trait Navigation extends Accessor {
     */
   var mouseWheelZoomEnabled: Boolean = js.native
 }
-
-@JSGlobal("__esri.Navigation")
-@js.native
-object Navigation extends TopLevel[NavigationConstructor]
 

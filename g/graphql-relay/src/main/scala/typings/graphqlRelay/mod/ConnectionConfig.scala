@@ -22,18 +22,18 @@ object ConnectionConfig {
   @scala.inline
   def apply(
     nodeType: ConnectionConfigNodeType,
-    connectionFields: Thunk[GraphQLFieldConfigMap[_, _, StringDictionary[_]]] = null,
-    edgeFields: Thunk[GraphQLFieldConfigMap[_, _, StringDictionary[_]]] = null,
-    name: String = null,
-    resolveCursor: (_, StringDictionary[_], _, /* info */ GraphQLResolveInfo) => js.Any = null,
-    resolveNode: (_, StringDictionary[_], _, /* info */ GraphQLResolveInfo) => js.Any = null
+    connectionFields: js.UndefOr[Null | (Thunk[GraphQLFieldConfigMap[_, _, StringDictionary[_]]])] = js.undefined,
+    edgeFields: js.UndefOr[Null | (Thunk[GraphQLFieldConfigMap[_, _, StringDictionary[_]]])] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined,
+    resolveCursor: js.UndefOr[Null | ((_, StringDictionary[_], _, /* info */ GraphQLResolveInfo) => js.Any)] = js.undefined,
+    resolveNode: js.UndefOr[Null | ((_, StringDictionary[_], _, /* info */ GraphQLResolveInfo) => js.Any)] = js.undefined
   ): ConnectionConfig = {
     val __obj = js.Dynamic.literal(nodeType = nodeType.asInstanceOf[js.Any])
-    if (connectionFields != null) __obj.updateDynamic("connectionFields")(connectionFields.asInstanceOf[js.Any])
-    if (edgeFields != null) __obj.updateDynamic("edgeFields")(edgeFields.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (resolveCursor != null) __obj.updateDynamic("resolveCursor")(js.Any.fromFunction4(resolveCursor))
-    if (resolveNode != null) __obj.updateDynamic("resolveNode")(js.Any.fromFunction4(resolveNode))
+    if (!js.isUndefined(connectionFields)) __obj.updateDynamic("connectionFields")(connectionFields.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeFields)) __obj.updateDynamic("edgeFields")(edgeFields.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolveCursor)) __obj.updateDynamic("resolveCursor")(if (resolveCursor != null) js.Any.fromFunction4(resolveCursor.asInstanceOf[(_, StringDictionary[_], _, /* info */ GraphQLResolveInfo) => js.Any]) else null)
+    if (!js.isUndefined(resolveNode)) __obj.updateDynamic("resolveNode")(if (resolveNode != null) js.Any.fromFunction4(resolveNode.asInstanceOf[(_, StringDictionary[_], _, /* info */ GraphQLResolveInfo) => js.Any]) else null)
     __obj.asInstanceOf[ConnectionConfig]
   }
 }

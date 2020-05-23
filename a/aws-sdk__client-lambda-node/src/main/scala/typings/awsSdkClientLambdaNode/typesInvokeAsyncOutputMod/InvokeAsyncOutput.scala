@@ -20,9 +20,9 @@ trait InvokeAsyncOutput extends OutputTypesUnion {
 
 object InvokeAsyncOutput {
   @scala.inline
-  def apply($metadata: ResponseMetadata, Status: Int | Double = null): InvokeAsyncOutput = {
+  def apply($metadata: ResponseMetadata, Status: js.UndefOr[Double] = js.undefined): InvokeAsyncOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
+    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvokeAsyncOutput]
   }
 }

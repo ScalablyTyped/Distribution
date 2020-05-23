@@ -20,7 +20,7 @@ package object mod {
     - java.lang.String
     - typings.node.Buffer
     - typings.oracledb.mod.DBObject
-    - typings.oracledb.AnonCorrelation
+    - typings.oracledb.anon.Correlation
   */
   type EnqueueMessage = typings.oracledb.mod._EnqueueMessage | java.lang.String | typings.node.Buffer
 }

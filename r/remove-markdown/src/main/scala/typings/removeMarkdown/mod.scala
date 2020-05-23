@@ -1,5 +1,6 @@
 package typings.removeMarkdown
 
+import typings.removeMarkdown.anon.Gfm
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +13,6 @@ object mod extends js.Object {
     * @param markdown Markdown text
     */
   def apply(markdown: String): String = js.native
-  def apply(markdown: String, options: AnonGfm): String = js.native
+  def apply(markdown: String, options: Gfm): String = js.native
 }
 

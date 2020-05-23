@@ -31,8 +31,8 @@ object XmlOptions {
   @scala.inline
   def apply(ignoreNull: js.UndefOr[Boolean] = js.undefined, sanitize: js.UndefOr[Boolean] = js.undefined): XmlOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreNull)) __obj.updateDynamic("ignoreNull")(ignoreNull.asInstanceOf[js.Any])
-    if (!js.isUndefined(sanitize)) __obj.updateDynamic("sanitize")(sanitize.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreNull)) __obj.updateDynamic("ignoreNull")(ignoreNull.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sanitize)) __obj.updateDynamic("sanitize")(sanitize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[XmlOptions]
   }
 }

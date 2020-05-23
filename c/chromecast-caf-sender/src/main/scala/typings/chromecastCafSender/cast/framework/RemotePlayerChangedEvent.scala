@@ -4,11 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("cast.framework.RemotePlayerChangedEvent")
-@js.native
-class RemotePlayerChangedEvent[T] protected () extends EventData {
-  def this(`type`: RemotePlayerEventType, field: String, value: T) = this()
-  var field: String = js.native
-  var value: T = js.native
+trait RemotePlayerChangedEvent[T] extends EventData {
+  var field: String
+  var value: T
+}
+
+object RemotePlayerChangedEvent {
+  @scala.inline
+  def apply[T](field: String, `type`: String, value: T): RemotePlayerChangedEvent[T] = {
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RemotePlayerChangedEvent[T]]
+  }
 }
 

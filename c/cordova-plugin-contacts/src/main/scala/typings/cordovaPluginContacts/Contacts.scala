@@ -1,5 +1,6 @@
 package typings.cordovaPluginContacts
 
+import typings.cordovaPluginContacts.anon.Addresses
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +11,7 @@ trait Contacts extends js.Object {
     * This allows us to use an enumeration when setting the desired fields for the ContactFindOptions.
     * The values will correspond to the type of string literals in ContactFieldType.
     */
-  var fieldType: AnonAddresses = js.native
+  var fieldType: Addresses = js.native
   /**
     * The navigator.contacts.create method is synchronous, and returns a new Contact object.
     * This method does not retain the Contact object in the device contacts database,

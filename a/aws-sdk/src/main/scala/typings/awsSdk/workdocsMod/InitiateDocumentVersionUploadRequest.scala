@@ -48,7 +48,7 @@ object InitiateDocumentVersionUploadRequest {
     ContentCreatedTimestamp: TimestampType = null,
     ContentModifiedTimestamp: TimestampType = null,
     ContentType: DocumentContentType = null,
-    DocumentSizeInBytes: Int | Double = null,
+    DocumentSizeInBytes: js.UndefOr[SizeType] = js.undefined,
     Id: ResourceIdType = null,
     Name: ResourceNameType = null
   ): InitiateDocumentVersionUploadRequest = {
@@ -57,7 +57,7 @@ object InitiateDocumentVersionUploadRequest {
     if (ContentCreatedTimestamp != null) __obj.updateDynamic("ContentCreatedTimestamp")(ContentCreatedTimestamp.asInstanceOf[js.Any])
     if (ContentModifiedTimestamp != null) __obj.updateDynamic("ContentModifiedTimestamp")(ContentModifiedTimestamp.asInstanceOf[js.Any])
     if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType.asInstanceOf[js.Any])
-    if (DocumentSizeInBytes != null) __obj.updateDynamic("DocumentSizeInBytes")(DocumentSizeInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(DocumentSizeInBytes)) __obj.updateDynamic("DocumentSizeInBytes")(DocumentSizeInBytes.get.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitiateDocumentVersionUploadRequest]

@@ -14,12 +14,8 @@ import scala.scalajs.js.annotation._
   * @memberof PIXI
   * @implements IPoint
   */
-@JSGlobal("PIXI.ObservablePoint")
 @js.native
-class ObservablePoint protected () extends IPoint {
-  def this(cb: js.Function1[/* repeated */ js.Any, _], scope: js.Any) = this()
-  def this(cb: js.Function1[/* repeated */ js.Any, _], scope: js.Any, x: Double) = this()
-  def this(cb: js.Function1[/* repeated */ js.Any, _], scope: js.Any, x: Double, y: Double) = this()
+trait ObservablePoint extends IPoint {
   def clone(cb: js.Function1[/* repeated */ js.Any, _]): ObservablePoint = js.native
   def clone(cb: js.Function1[/* repeated */ js.Any, _], scope: js.Any): ObservablePoint = js.native
 }

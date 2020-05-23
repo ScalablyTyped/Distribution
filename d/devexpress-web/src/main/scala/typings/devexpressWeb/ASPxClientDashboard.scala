@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side equivalent of the ASPxDashboard control.
   */
-@JSGlobal("ASPxClientDashboard")
 @js.native
-class ASPxClientDashboard () extends ASPxClientControl {
+trait ASPxClientDashboard extends ASPxClientControl {
   /**
     * Occurs after the available interactivity actions have changed for the specific dashboard item.
     */

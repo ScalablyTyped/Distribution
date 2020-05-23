@@ -27,11 +27,15 @@ trait SpringHelperConfig extends js.Object {
 
 object SpringHelperConfig {
   @scala.inline
-  def apply(damping: Int | Double = null, precision: Int | Double = null, stiffness: Int | Double = null): SpringHelperConfig = {
+  def apply(
+    damping: js.UndefOr[Double] = js.undefined,
+    precision: js.UndefOr[Double] = js.undefined,
+    stiffness: js.UndefOr[Double] = js.undefined
+  ): SpringHelperConfig = {
     val __obj = js.Dynamic.literal()
-    if (damping != null) __obj.updateDynamic("damping")(damping.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (stiffness != null) __obj.updateDynamic("stiffness")(stiffness.asInstanceOf[js.Any])
+    if (!js.isUndefined(damping)) __obj.updateDynamic("damping")(damping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stiffness)) __obj.updateDynamic("stiffness")(stiffness.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpringHelperConfig]
   }
 }

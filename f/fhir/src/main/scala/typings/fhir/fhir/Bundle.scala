@@ -63,7 +63,7 @@ object Bundle {
     meta: Meta = null,
     resourceType: code = null,
     signature: Signature = null,
-    total: Int | Double = null
+    total: js.UndefOr[unsignedInt] = js.undefined
   ): Bundle = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -82,7 +82,7 @@ object Bundle {
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
     if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bundle]
   }
 }

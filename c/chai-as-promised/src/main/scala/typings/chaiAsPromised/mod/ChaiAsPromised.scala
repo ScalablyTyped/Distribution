@@ -1,6 +1,6 @@
 package typings.chaiAsPromised.mod
 
-import typings.chai.Chai_.ChaiPlugin
+import typings.chai.Chai.ChaiPlugin
 import typings.chaiAsPromised.Chai.PromisedAssertion
 import scala.scalajs.js
 import scala.scalajs.js.`|`

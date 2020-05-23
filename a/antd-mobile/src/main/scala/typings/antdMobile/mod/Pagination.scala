@@ -1,7 +1,7 @@
 package typings.antdMobile.mod
 
-import typings.antdMobile.AnonAntLocale
-import typings.antdMobile.AnonCurrent
+import typings.antdMobile.anon.AntLocale
+import typings.antdMobile.anon.Current
 import typings.antdMobile.paginationMod.PaginationProps
 import typings.antdMobile.paginationMod.default
 import scala.scalajs.js
@@ -18,7 +18,7 @@ class Pagination protected () extends default {
 @JSImport("antd-mobile", "Pagination")
 @js.native
 object Pagination extends js.Object {
-  var contextTypes: AnonAntLocale = js.native
-  var defaultProps: AnonCurrent = js.native
+  var contextTypes: AntLocale = js.native
+  var defaultProps: Current = js.native
 }
 

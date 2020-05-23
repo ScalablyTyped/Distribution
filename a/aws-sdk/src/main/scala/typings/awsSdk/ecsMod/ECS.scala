@@ -1,7 +1,7 @@
 package typings.awsSdk.ecsMod
 
-import typings.awsSdk.DescribeServicesRequestwa
-import typings.awsSdk.DescribeTasksRequestwaite
+import typings.awsSdk.anon.DescribeServicesRequestwa
+import typings.awsSdk.anon.DescribeTasksRequestwaite
 import typings.awsSdk.awsSdkStrings.servicesInactive
 import typings.awsSdk.awsSdkStrings.servicesStable
 import typings.awsSdk.awsSdkStrings.tasksRunning

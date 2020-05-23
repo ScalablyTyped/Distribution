@@ -24,7 +24,7 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (convertExtension != null) __obj.updateDynamic("convertExtension")(convertExtension.asInstanceOf[js.Any])
     if (convertOptions != null) __obj.updateDynamic("convertOptions")(convertOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(graphicsMagick)) __obj.updateDynamic("graphicsMagick")(graphicsMagick.asInstanceOf[js.Any])
+    if (!js.isUndefined(graphicsMagick)) __obj.updateDynamic("graphicsMagick")(graphicsMagick.get.asInstanceOf[js.Any])
     if (outputDirectory != null) __obj.updateDynamic("outputDirectory")(outputDirectory.asInstanceOf[js.Any])
     if (pdfFileBaseName != null) __obj.updateDynamic("pdfFileBaseName")(pdfFileBaseName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

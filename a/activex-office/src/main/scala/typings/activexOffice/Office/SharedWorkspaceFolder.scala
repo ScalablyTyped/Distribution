@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.SharedWorkspaceFolder")
 @js.native
-class SharedWorkspaceFolder protected () extends js.Object {
+trait SharedWorkspaceFolder extends js.Object {
   val Application: js.Any = js.native
   val Creator: Double = js.native
   val FolderName: String = js.native

@@ -1,6 +1,6 @@
 package typings.gestalt.mod
 
-import typings.gestalt.AnonHeight
+import typings.gestalt.anon.Height
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ trait CollageProps extends js.Object {
   var height: Double
   var layoutKey: js.UndefOr[Double] = js.undefined
   var width: Double
-  def renderImage(args: AnonHeight): ReactNode
+  def renderImage(args: Height): ReactNode
 }
 
 object CollageProps {
@@ -21,16 +21,16 @@ object CollageProps {
   def apply(
     columns: Double,
     height: Double,
-    renderImage: AnonHeight => ReactNode,
+    renderImage: Height => ReactNode,
     width: Double,
     cover: js.UndefOr[Boolean] = js.undefined,
-    gutter: Int | Double = null,
-    layoutKey: Int | Double = null
+    gutter: js.UndefOr[Double] = js.undefined,
+    layoutKey: js.UndefOr[Double] = js.undefined
   ): CollageProps = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], renderImage = js.Any.fromFunction1(renderImage), width = width.asInstanceOf[js.Any])
-    if (!js.isUndefined(cover)) __obj.updateDynamic("cover")(cover.asInstanceOf[js.Any])
-    if (gutter != null) __obj.updateDynamic("gutter")(gutter.asInstanceOf[js.Any])
-    if (layoutKey != null) __obj.updateDynamic("layoutKey")(layoutKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(cover)) __obj.updateDynamic("cover")(cover.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gutter)) __obj.updateDynamic("gutter")(gutter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(layoutKey)) __obj.updateDynamic("layoutKey")(layoutKey.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollageProps]
   }
 }

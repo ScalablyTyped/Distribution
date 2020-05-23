@@ -34,7 +34,7 @@ object DropDownSettings {
     textField: String = null,
     uiLibrary: String = null,
     valueField: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): DropDownSettings = {
     val __obj = js.Dynamic.literal()
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
@@ -48,7 +48,7 @@ object DropDownSettings {
     if (textField != null) __obj.updateDynamic("textField")(textField.asInstanceOf[js.Any])
     if (uiLibrary != null) __obj.updateDynamic("uiLibrary")(uiLibrary.asInstanceOf[js.Any])
     if (valueField != null) __obj.updateDynamic("valueField")(valueField.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropDownSettings]
   }
 }

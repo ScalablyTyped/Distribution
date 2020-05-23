@@ -22,22 +22,22 @@ object FlexItemProps {
   def apply(
     children: ReactNode = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    flex: Int | Double = null,
+    flex: js.UndefOr[Double] = js.undefined,
     onLongPress: () => Unit = null,
     onPress: () => Unit = null,
     onPressIn: () => Unit = null,
     onPressOut: () => Unit = null,
-    style: StyleProp[ViewStyle] = null
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined
   ): FlexItemProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flex)) __obj.updateDynamic("flex")(flex.get.asInstanceOf[js.Any])
     if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction0(onLongPress))
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
     if (onPressIn != null) __obj.updateDynamic("onPressIn")(js.Any.fromFunction0(onPressIn))
     if (onPressOut != null) __obj.updateDynamic("onPressOut")(js.Any.fromFunction0(onPressOut))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlexItemProps]
   }
 }

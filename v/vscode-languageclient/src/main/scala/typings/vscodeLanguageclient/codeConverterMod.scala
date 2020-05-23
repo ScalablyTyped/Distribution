@@ -21,6 +21,7 @@ import typings.vscode.mod.TextDocumentChangeEvent
 import typings.vscode.mod.TextDocumentWillSaveEvent
 import typings.vscode.mod.TextEdit
 import typings.vscode.mod.Uri
+import typings.vscodeLanguageclient.anon.IncludeDeclaration
 import typings.vscodeLanguageserverProtocol.protocolMod.CodeLensParams
 import typings.vscodeLanguageserverProtocol.protocolMod.CompletionParams
 import typings.vscodeLanguageserverProtocol.protocolMod.DidChangeTextDocumentParams
@@ -81,7 +82,7 @@ object codeConverterMod extends js.Object {
     def asRange_Range(value: Range): typings.vscodeLanguageserverTypes.mod.Range = js.native
     @JSName("asRange")
     def asRange_Union(): js.UndefOr[scala.Nothing] = js.native
-    def asReferenceParams(textDocument: TextDocument, position: Position, options: AnonIncludeDeclaration): ReferenceParams = js.native
+    def asReferenceParams(textDocument: TextDocument, position: Position, options: IncludeDeclaration): ReferenceParams = js.native
     def asSaveTextDocumentParams(textDocument: TextDocument): DidSaveTextDocumentParams = js.native
     def asSaveTextDocumentParams(textDocument: TextDocument, includeContent: Boolean): DidSaveTextDocumentParams = js.native
     def asSignatureHelpParams(textDocument: TextDocument, position: Position, context: SignatureHelpContext): SignatureHelpParams = js.native

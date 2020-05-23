@@ -1,5 +1,8 @@
 package typings.useMediaAntdQuery
 
+import typings.useMediaAntdQuery.anon.MatchMedia
+import typings.useMediaAntdQuery.anon.MaxWidth
+import typings.useMediaAntdQuery.anon.MinWidth
 import typings.useMediaAntdQuery.useMediaAntdQueryStrings.lg
 import typings.useMediaAntdQuery.useMediaAntdQueryStrings.md
 import typings.useMediaAntdQuery.useMediaAntdQueryStrings.sm
@@ -13,7 +16,7 @@ import scala.scalajs.js.annotation._
 @JSImport("use-media-antd-query", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  /* Rewritten from type alias, can be one of: 
+  /* keyof use-media-antd-query.anon.Lg */ /* Rewritten from type alias, can be one of: 
     - typings.useMediaAntdQuery.useMediaAntdQueryStrings.xs
     - typings.useMediaAntdQuery.useMediaAntdQueryStrings.sm
     - typings.useMediaAntdQuery.useMediaAntdQueryStrings.md
@@ -27,12 +30,12 @@ object mod extends js.Object {
   def getScreenClassName(): xs | sm | md | lg | xl | xxl = js.native
   @js.native
   object MediaQueryEnum extends js.Object {
-    var lg: AnonMaxWidth = js.native
-    var md: AnonMaxWidth = js.native
-    var sm: AnonMaxWidth = js.native
-    var xl: AnonMaxWidth = js.native
-    var xs: AnonMatchMedia = js.native
-    var xxl: AnonMinWidth = js.native
+    var lg: MaxWidth = js.native
+    var md: MaxWidth = js.native
+    var sm: MaxWidth = js.native
+    var xl: MaxWidth = js.native
+    var xs: MatchMedia = js.native
+    var xxl: MinWidth = js.native
   }
   
 }

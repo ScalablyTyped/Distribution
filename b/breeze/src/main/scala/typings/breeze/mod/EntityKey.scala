@@ -10,6 +10,12 @@ class EntityKey protected ()
   extends typings.breeze.breeze.EntityKey {
   def this(entityType: typings.breeze.breeze.EntityType, keyValue: js.Any) = this()
   def this(entityType: typings.breeze.breeze.EntityType, keyValues: js.Array[_]) = this()
+  /* CompleteClass */
+  override var entityType: typings.breeze.breeze.EntityType = js.native
+  /* CompleteClass */
+  override var values: js.Array[_] = js.native
+  /* CompleteClass */
+  override def equals(entityKey: typings.breeze.breeze.EntityKey): Boolean = js.native
 }
 
 /* static members */

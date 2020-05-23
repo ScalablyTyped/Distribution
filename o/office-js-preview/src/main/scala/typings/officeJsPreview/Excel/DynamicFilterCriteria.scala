@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -118,113 +117,6 @@ object DynamicFilterCriteria extends js.Object {
   
   @js.native
   sealed trait yesterday extends DynamicFilterCriteria
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[DynamicFilterCriteria with String] = js.native
-  /* "AboveAverage" */ @js.native
-  object aboveAverage extends TopLevel[aboveAverage with String]
-  
-  /* "AllDatesInPeriodApril" */ @js.native
-  object allDatesInPeriodApril extends TopLevel[allDatesInPeriodApril with String]
-  
-  /* "AllDatesInPeriodAugust" */ @js.native
-  object allDatesInPeriodAugust extends TopLevel[allDatesInPeriodAugust with String]
-  
-  /* "AllDatesInPeriodDecember" */ @js.native
-  object allDatesInPeriodDecember extends TopLevel[allDatesInPeriodDecember with String]
-  
-  /* "AllDatesInPeriodFebruray" */ @js.native
-  object allDatesInPeriodFebruray extends TopLevel[allDatesInPeriodFebruray with String]
-  
-  /* "AllDatesInPeriodJanuary" */ @js.native
-  object allDatesInPeriodJanuary extends TopLevel[allDatesInPeriodJanuary with String]
-  
-  /* "AllDatesInPeriodJuly" */ @js.native
-  object allDatesInPeriodJuly extends TopLevel[allDatesInPeriodJuly with String]
-  
-  /* "AllDatesInPeriodJune" */ @js.native
-  object allDatesInPeriodJune extends TopLevel[allDatesInPeriodJune with String]
-  
-  /* "AllDatesInPeriodMarch" */ @js.native
-  object allDatesInPeriodMarch extends TopLevel[allDatesInPeriodMarch with String]
-  
-  /* "AllDatesInPeriodMay" */ @js.native
-  object allDatesInPeriodMay extends TopLevel[allDatesInPeriodMay with String]
-  
-  /* "AllDatesInPeriodNovember" */ @js.native
-  object allDatesInPeriodNovember extends TopLevel[allDatesInPeriodNovember with String]
-  
-  /* "AllDatesInPeriodOctober" */ @js.native
-  object allDatesInPeriodOctober extends TopLevel[allDatesInPeriodOctober with String]
-  
-  /* "AllDatesInPeriodQuarter1" */ @js.native
-  object allDatesInPeriodQuarter1 extends TopLevel[allDatesInPeriodQuarter1 with String]
-  
-  /* "AllDatesInPeriodQuarter2" */ @js.native
-  object allDatesInPeriodQuarter2 extends TopLevel[allDatesInPeriodQuarter2 with String]
-  
-  /* "AllDatesInPeriodQuarter3" */ @js.native
-  object allDatesInPeriodQuarter3 extends TopLevel[allDatesInPeriodQuarter3 with String]
-  
-  /* "AllDatesInPeriodQuarter4" */ @js.native
-  object allDatesInPeriodQuarter4 extends TopLevel[allDatesInPeriodQuarter4 with String]
-  
-  /* "AllDatesInPeriodSeptember" */ @js.native
-  object allDatesInPeriodSeptember extends TopLevel[allDatesInPeriodSeptember with String]
-  
-  /* "BelowAverage" */ @js.native
-  object belowAverage extends TopLevel[belowAverage with String]
-  
-  /* "LastMonth" */ @js.native
-  object lastMonth extends TopLevel[lastMonth with String]
-  
-  /* "LastQuarter" */ @js.native
-  object lastQuarter extends TopLevel[lastQuarter with String]
-  
-  /* "LastWeek" */ @js.native
-  object lastWeek extends TopLevel[lastWeek with String]
-  
-  /* "LastYear" */ @js.native
-  object lastYear extends TopLevel[lastYear with String]
-  
-  /* "NextMonth" */ @js.native
-  object nextMonth extends TopLevel[nextMonth with String]
-  
-  /* "NextQuarter" */ @js.native
-  object nextQuarter extends TopLevel[nextQuarter with String]
-  
-  /* "NextWeek" */ @js.native
-  object nextWeek extends TopLevel[nextWeek with String]
-  
-  /* "NextYear" */ @js.native
-  object nextYear extends TopLevel[nextYear with String]
-  
-  /* "ThisMonth" */ @js.native
-  object thisMonth extends TopLevel[thisMonth with String]
-  
-  /* "ThisQuarter" */ @js.native
-  object thisQuarter extends TopLevel[thisQuarter with String]
-  
-  /* "ThisWeek" */ @js.native
-  object thisWeek extends TopLevel[thisWeek with String]
-  
-  /* "ThisYear" */ @js.native
-  object thisYear extends TopLevel[thisYear with String]
-  
-  /* "Today" */ @js.native
-  object today extends TopLevel[today with String]
-  
-  /* "Tomorrow" */ @js.native
-  object tomorrow extends TopLevel[tomorrow with String]
-  
-  /* "Unknown" */ @js.native
-  object unknown extends TopLevel[unknown with String]
-  
-  /* "YearToDate" */ @js.native
-  object yearToDate extends TopLevel[yearToDate with String]
-  
-  /* "Yesterday" */ @js.native
-  object yesterday extends TopLevel[yesterday with String]
   
 }
 

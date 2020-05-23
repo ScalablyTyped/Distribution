@@ -15,48 +15,48 @@ trait HeaderFooterLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Gets or sets the center footer of the worksheet.
-    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+    * The center footer of the worksheet.
+    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
     * [Api set: ExcelApi 1.9]
     */
   var centerFooter: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Gets or sets the center header of the worksheet.
-    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+    * The center header of the worksheet.
+    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
     * [Api set: ExcelApi 1.9]
     */
   var centerHeader: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Gets or sets the left footer of the worksheet.
-    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+    * The left footer of the worksheet.
+    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
     * [Api set: ExcelApi 1.9]
     */
   var leftFooter: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Gets or sets the left header of the worksheet.
-    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+    * The left header of the worksheet.
+    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
     * [Api set: ExcelApi 1.9]
     */
   var leftHeader: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Gets or sets the right footer of the worksheet.
-    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+    * The right footer of the worksheet.
+    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
     * [Api set: ExcelApi 1.9]
     */
   var rightFooter: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Gets or sets the right header of the worksheet.
-    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+    * The right header of the worksheet.
+    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -75,13 +75,13 @@ object HeaderFooterLoadOptions {
     rightHeader: js.UndefOr[Boolean] = js.undefined
   ): HeaderFooterLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(centerFooter)) __obj.updateDynamic("centerFooter")(centerFooter.asInstanceOf[js.Any])
-    if (!js.isUndefined(centerHeader)) __obj.updateDynamic("centerHeader")(centerHeader.asInstanceOf[js.Any])
-    if (!js.isUndefined(leftFooter)) __obj.updateDynamic("leftFooter")(leftFooter.asInstanceOf[js.Any])
-    if (!js.isUndefined(leftHeader)) __obj.updateDynamic("leftHeader")(leftHeader.asInstanceOf[js.Any])
-    if (!js.isUndefined(rightFooter)) __obj.updateDynamic("rightFooter")(rightFooter.asInstanceOf[js.Any])
-    if (!js.isUndefined(rightHeader)) __obj.updateDynamic("rightHeader")(rightHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(centerFooter)) __obj.updateDynamic("centerFooter")(centerFooter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(centerHeader)) __obj.updateDynamic("centerHeader")(centerHeader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(leftFooter)) __obj.updateDynamic("leftFooter")(leftFooter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(leftHeader)) __obj.updateDynamic("leftHeader")(leftHeader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightFooter)) __obj.updateDynamic("rightFooter")(rightFooter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightHeader)) __obj.updateDynamic("rightHeader")(rightHeader.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderFooterLoadOptions]
   }
 }

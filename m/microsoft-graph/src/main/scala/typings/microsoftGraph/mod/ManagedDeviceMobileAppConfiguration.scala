@@ -43,7 +43,7 @@ object ManagedDeviceMobileAppConfiguration {
     targetedMobileApps: js.Array[String] = null,
     userStatusSummary: ManagedDeviceMobileAppConfigurationUserSummary = null,
     userStatuses: js.Array[ManagedDeviceMobileAppConfigurationUserStatus] = null,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): ManagedDeviceMobileAppConfiguration = {
     val __obj = js.Dynamic.literal()
     if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
@@ -57,7 +57,7 @@ object ManagedDeviceMobileAppConfiguration {
     if (targetedMobileApps != null) __obj.updateDynamic("targetedMobileApps")(targetedMobileApps.asInstanceOf[js.Any])
     if (userStatusSummary != null) __obj.updateDynamic("userStatusSummary")(userStatusSummary.asInstanceOf[js.Any])
     if (userStatuses != null) __obj.updateDynamic("userStatuses")(userStatuses.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedDeviceMobileAppConfiguration]
   }
 }

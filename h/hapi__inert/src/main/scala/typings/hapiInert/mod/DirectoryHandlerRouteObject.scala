@@ -71,10 +71,10 @@ object DirectoryHandlerRouteObject {
     if (defaultExtension != null) __obj.updateDynamic("defaultExtension")(defaultExtension.asInstanceOf[js.Any])
     if (etagMethod != null) __obj.updateDynamic("etagMethod")(etagMethod.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(listing)) __obj.updateDynamic("listing")(listing.asInstanceOf[js.Any])
-    if (!js.isUndefined(lookupCompressed)) __obj.updateDynamic("lookupCompressed")(lookupCompressed.asInstanceOf[js.Any])
-    if (!js.isUndefined(redirectToSlash)) __obj.updateDynamic("redirectToSlash")(redirectToSlash.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHidden)) __obj.updateDynamic("showHidden")(showHidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(listing)) __obj.updateDynamic("listing")(listing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lookupCompressed)) __obj.updateDynamic("lookupCompressed")(lookupCompressed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(redirectToSlash)) __obj.updateDynamic("redirectToSlash")(redirectToSlash.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHidden)) __obj.updateDynamic("showHidden")(showHidden.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectoryHandlerRouteObject]
   }
 }

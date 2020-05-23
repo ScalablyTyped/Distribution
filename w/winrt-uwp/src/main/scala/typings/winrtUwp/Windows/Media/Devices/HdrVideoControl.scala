@@ -6,14 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** When supported, allows an app to enable High Dynamic Range (HDR) video recording on the capture device. */
-@JSGlobal("Windows.Media.Devices.HdrVideoControl")
-@js.native
-abstract class HdrVideoControl () extends js.Object {
+trait HdrVideoControl extends js.Object {
   /** Gets or sets a value indicating the current High Dynamic Range (HDR) video recording mode of the capture device. */
-  var mode: HdrVideoMode = js.native
+  var mode: HdrVideoMode
   /** Gets a value that indicates if the capture device supports the HdrVideoControl . */
-  var supported: Boolean = js.native
+  var supported: Boolean
   /** Gets the list of HdrVideoMode values indicating the modes supported by the capture device. */
-  var supportedModes: IVectorView[HdrVideoMode] = js.native
+  var supportedModes: IVectorView[HdrVideoMode]
+}
+
+object HdrVideoControl {
+  @scala.inline
+  def apply(mode: HdrVideoMode, supported: Boolean, supportedModes: IVectorView[HdrVideoMode]): HdrVideoControl = {
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], supported = supported.asInstanceOf[js.Any], supportedModes = supportedModes.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HdrVideoControl]
+  }
 }
 

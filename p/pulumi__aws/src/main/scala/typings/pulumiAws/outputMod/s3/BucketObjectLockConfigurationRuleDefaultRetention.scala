@@ -22,10 +22,10 @@ trait BucketObjectLockConfigurationRuleDefaultRetention extends js.Object {
 
 object BucketObjectLockConfigurationRuleDefaultRetention {
   @scala.inline
-  def apply(mode: String, days: Int | Double = null, years: Int | Double = null): BucketObjectLockConfigurationRuleDefaultRetention = {
+  def apply(mode: String, days: js.UndefOr[Double] = js.undefined, years: js.UndefOr[Double] = js.undefined): BucketObjectLockConfigurationRuleDefaultRetention = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
-    if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
-    if (years != null) __obj.updateDynamic("years")(years.asInstanceOf[js.Any])
+    if (!js.isUndefined(days)) __obj.updateDynamic("days")(days.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(years)) __obj.updateDynamic("years")(years.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketObjectLockConfigurationRuleDefaultRetention]
   }
 }

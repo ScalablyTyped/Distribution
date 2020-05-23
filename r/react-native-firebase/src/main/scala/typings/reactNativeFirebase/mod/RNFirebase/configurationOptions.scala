@@ -96,10 +96,10 @@ object configurationOptions {
     if (bundleID != null) __obj.updateDynamic("bundleID")(bundleID.asInstanceOf[js.Any])
     if (clientID != null) __obj.updateDynamic("clientID")(clientID.asInstanceOf[js.Any])
     if (databaseURL != null) __obj.updateDynamic("databaseURL")(databaseURL.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (deepLinkURLScheme != null) __obj.updateDynamic("deepLinkURLScheme")(deepLinkURLScheme.asInstanceOf[js.Any])
     if (googleAppID != null) __obj.updateDynamic("googleAppID")(googleAppID.asInstanceOf[js.Any])
-    if (!js.isUndefined(persistence)) __obj.updateDynamic("persistence")(persistence.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistence)) __obj.updateDynamic("persistence")(persistence.get.asInstanceOf[js.Any])
     if (storageBucket != null) __obj.updateDynamic("storageBucket")(storageBucket.asInstanceOf[js.Any])
     if (trackingID != null) __obj.updateDynamic("trackingID")(trackingID.asInstanceOf[js.Any])
     __obj.asInstanceOf[configurationOptions]

@@ -1,6 +1,6 @@
 package typings.angularStrap.mgcrea.ngStrap.dropdown
 
-import typings.angularStrap.AnonHide
+import typings.angularStrap.anon.Hide
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait IDropdownOptions extends js.Object {
   var animation: js.UndefOr[String] = js.undefined
   var container: js.UndefOr[String | Boolean] = js.undefined
-  var delay: js.UndefOr[Double | AnonHide] = js.undefined
+  var delay: js.UndefOr[Double | Hide] = js.undefined
   var html: js.UndefOr[Boolean] = js.undefined
   var onBeforeHide: js.UndefOr[js.Function1[/* dropdown */ IDropdown, Unit]] = js.undefined
   var onBeforeShow: js.UndefOr[js.Function1[/* dropdown */ IDropdown, Unit]] = js.undefined
@@ -25,7 +25,7 @@ object IDropdownOptions {
   def apply(
     animation: String = null,
     container: String | Boolean = null,
-    delay: Double | AnonHide = null,
+    delay: Double | Hide = null,
     html: js.UndefOr[Boolean] = js.undefined,
     onBeforeHide: /* dropdown */ IDropdown => Unit = null,
     onBeforeShow: /* dropdown */ IDropdown => Unit = null,
@@ -40,7 +40,7 @@ object IDropdownOptions {
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.get.asInstanceOf[js.Any])
     if (onBeforeHide != null) __obj.updateDynamic("onBeforeHide")(js.Any.fromFunction1(onBeforeHide))
     if (onBeforeShow != null) __obj.updateDynamic("onBeforeShow")(js.Any.fromFunction1(onBeforeShow))
     if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction1(onHide))

@@ -13,9 +13,9 @@ trait HighlightInfo extends js.Object {
 
 object HighlightInfo {
   @scala.inline
-  def apply(tabs: Double | js.Array[Double], windowId: Int | Double = null): HighlightInfo = {
+  def apply(tabs: Double | js.Array[Double], windowId: js.UndefOr[Double] = js.undefined): HighlightInfo = {
     val __obj = js.Dynamic.literal(tabs = tabs.asInstanceOf[js.Any])
-    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowId)) __obj.updateDynamic("windowId")(windowId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightInfo]
   }
 }

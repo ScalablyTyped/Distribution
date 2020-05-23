@@ -15,7 +15,7 @@ object RequestProgress {
   @scala.inline
   def apply(Enabled: js.UndefOr[Boolean] = js.undefined): RequestProgress = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestProgress]
   }
 }

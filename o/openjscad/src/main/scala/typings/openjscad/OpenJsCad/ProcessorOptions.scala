@@ -14,26 +14,26 @@ trait ProcessorOptions extends IViewerOptions {
 object ProcessorOptions {
   @scala.inline
   def apply(
-    bgColor: Int | Double = null,
+    bgColor: js.UndefOr[Double] = js.undefined,
     color: js.Array[Double] = null,
     drawFaces: js.UndefOr[Boolean] = js.undefined,
     drawLines: js.UndefOr[Boolean] = js.undefined,
     noWebGL: js.UndefOr[Boolean] = js.undefined,
     verbose: js.UndefOr[Boolean] = js.undefined,
-    viewerheight: Int | Double = null,
-    viewerheightratio: Int | Double = null,
-    viewerwidth: Int | Double = null
+    viewerheight: js.UndefOr[Double] = js.undefined,
+    viewerheightratio: js.UndefOr[Double] = js.undefined,
+    viewerwidth: js.UndefOr[Double] = js.undefined
   ): ProcessorOptions = {
     val __obj = js.Dynamic.literal()
-    if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(bgColor)) __obj.updateDynamic("bgColor")(bgColor.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawFaces)) __obj.updateDynamic("drawFaces")(drawFaces.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawLines)) __obj.updateDynamic("drawLines")(drawLines.asInstanceOf[js.Any])
-    if (!js.isUndefined(noWebGL)) __obj.updateDynamic("noWebGL")(noWebGL.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
-    if (viewerheight != null) __obj.updateDynamic("viewerheight")(viewerheight.asInstanceOf[js.Any])
-    if (viewerheightratio != null) __obj.updateDynamic("viewerheightratio")(viewerheightratio.asInstanceOf[js.Any])
-    if (viewerwidth != null) __obj.updateDynamic("viewerwidth")(viewerwidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawFaces)) __obj.updateDynamic("drawFaces")(drawFaces.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawLines)) __obj.updateDynamic("drawLines")(drawLines.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noWebGL)) __obj.updateDynamic("noWebGL")(noWebGL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewerheight)) __obj.updateDynamic("viewerheight")(viewerheight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewerheightratio)) __obj.updateDynamic("viewerheightratio")(viewerheightratio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewerwidth)) __obj.updateDynamic("viewerwidth")(viewerwidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessorOptions]
   }
 }

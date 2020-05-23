@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side equivalent of the ASPxPopupControl control.
   */
-@JSGlobal("ASPxClientPopupControl")
 @js.native
-class ASPxClientPopupControl () extends ASPxClientPopupControlBase {
+trait ASPxClientPopupControl extends ASPxClientPopupControlBase {
   /**
     * Occurs when a popup window's <strong>close button</strong> is clicked.
     */
@@ -309,20 +308,5 @@ class ASPxClientPopupControl () extends ASPxClientPopupControlBase {
     * @param window A ASPxClientPopupWindow object representing the required popup window.
     */
   def WindowStretchVertically(window: ASPxClientPopupWindow): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("ASPxClientPopupControl")
-@js.native
-object ASPxClientPopupControl extends js.Object {
-  /**
-    * Converts the specified object to the ASPxClientPopupControl type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): ASPxClientPopupControl = js.native
-  /**
-    * Returns a collection of client popup control objects.
-    */
-  def GetPopupControlCollection(): ASPxClientPopupControlCollection = js.native
 }
 

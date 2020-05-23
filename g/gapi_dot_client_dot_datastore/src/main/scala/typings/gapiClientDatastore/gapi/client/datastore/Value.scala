@@ -66,13 +66,13 @@ object Value {
     arrayValue: ArrayValue = null,
     blobValue: String = null,
     booleanValue: js.UndefOr[Boolean] = js.undefined,
-    doubleValue: Int | Double = null,
+    doubleValue: js.UndefOr[Double] = js.undefined,
     entityValue: Entity = null,
     excludeFromIndexes: js.UndefOr[Boolean] = js.undefined,
     geoPointValue: LatLng = null,
     integerValue: String = null,
     keyValue: Key = null,
-    meaning: Int | Double = null,
+    meaning: js.UndefOr[Double] = js.undefined,
     nullValue: String = null,
     stringValue: String = null,
     timestampValue: String = null
@@ -80,14 +80,14 @@ object Value {
     val __obj = js.Dynamic.literal()
     if (arrayValue != null) __obj.updateDynamic("arrayValue")(arrayValue.asInstanceOf[js.Any])
     if (blobValue != null) __obj.updateDynamic("blobValue")(blobValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(booleanValue)) __obj.updateDynamic("booleanValue")(booleanValue.asInstanceOf[js.Any])
-    if (doubleValue != null) __obj.updateDynamic("doubleValue")(doubleValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(booleanValue)) __obj.updateDynamic("booleanValue")(booleanValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleValue)) __obj.updateDynamic("doubleValue")(doubleValue.get.asInstanceOf[js.Any])
     if (entityValue != null) __obj.updateDynamic("entityValue")(entityValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(excludeFromIndexes)) __obj.updateDynamic("excludeFromIndexes")(excludeFromIndexes.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludeFromIndexes)) __obj.updateDynamic("excludeFromIndexes")(excludeFromIndexes.get.asInstanceOf[js.Any])
     if (geoPointValue != null) __obj.updateDynamic("geoPointValue")(geoPointValue.asInstanceOf[js.Any])
     if (integerValue != null) __obj.updateDynamic("integerValue")(integerValue.asInstanceOf[js.Any])
     if (keyValue != null) __obj.updateDynamic("keyValue")(keyValue.asInstanceOf[js.Any])
-    if (meaning != null) __obj.updateDynamic("meaning")(meaning.asInstanceOf[js.Any])
+    if (!js.isUndefined(meaning)) __obj.updateDynamic("meaning")(meaning.get.asInstanceOf[js.Any])
     if (nullValue != null) __obj.updateDynamic("nullValue")(nullValue.asInstanceOf[js.Any])
     if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
     if (timestampValue != null) __obj.updateDynamic("timestampValue")(timestampValue.asInstanceOf[js.Any])

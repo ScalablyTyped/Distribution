@@ -14,10 +14,13 @@ trait ITextInput extends js.Object {
 
 object ITextInput {
   @scala.inline
-  def apply(languageCode: String = null, text: String = null): ITextInput = {
+  def apply(
+    languageCode: js.UndefOr[Null | String] = js.undefined,
+    text: js.UndefOr[Null | String] = js.undefined
+  ): ITextInput = {
     val __obj = js.Dynamic.literal()
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (!js.isUndefined(languageCode)) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITextInput]
   }
 }

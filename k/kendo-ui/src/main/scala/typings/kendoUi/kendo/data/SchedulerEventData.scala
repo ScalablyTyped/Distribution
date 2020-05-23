@@ -39,7 +39,7 @@ object SchedulerEventData {
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (endTimezone != null) __obj.updateDynamic("endTimezone")(endTimezone.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAllDay)) __obj.updateDynamic("isAllDay")(isAllDay.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAllDay)) __obj.updateDynamic("isAllDay")(isAllDay.get.asInstanceOf[js.Any])
     if (recurrenceException != null) __obj.updateDynamic("recurrenceException")(recurrenceException.asInstanceOf[js.Any])
     if (recurrenceId != null) __obj.updateDynamic("recurrenceId")(recurrenceId.asInstanceOf[js.Any])
     if (recurrenceRule != null) __obj.updateDynamic("recurrenceRule")(recurrenceRule.asInstanceOf[js.Any])

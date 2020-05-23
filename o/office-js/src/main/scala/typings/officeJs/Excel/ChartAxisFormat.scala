@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.ChartAxisFormatData
 import typings.officeJs.Excel.Interfaces.ChartAxisFormatLoadOptions
 import typings.officeJs.Excel.Interfaces.ChartAxisFormatUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,29 +16,28 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
-@JSGlobal("Excel.ChartAxisFormat")
 @js.native
-class ChartAxisFormat () extends ClientObject {
+trait ChartAxisFormat extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_ChartAxisFormat: RequestContext = js.native
   /**
     *
-    * Represents chart fill formatting. Read-only.
+    * Specifies chart fill formatting.
     *
     * [Api set: ExcelApi 1.8]
     */
   val fill: ChartFill = js.native
   /**
     *
-    * Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.
+    * Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
     *
     * [Api set: ExcelApi 1.1]
     */
   val font: ChartFont = js.native
   /**
     *
-    * Represents chart line formatting. Read-only.
+    * Specifies chart line formatting.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -50,7 +49,7 @@ class ChartAxisFormat () extends ClientObject {
     */
   def load(): ChartAxisFormat = js.native
   def load(options: ChartAxisFormatLoadOptions): ChartAxisFormat = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ChartAxisFormat = js.native
+  def load(propertyNamesAndPaths: Expand): ChartAxisFormat = js.native
   def load(propertyNames: String): ChartAxisFormat = js.native
   def load(propertyNames: js.Array[String]): ChartAxisFormat = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

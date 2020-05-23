@@ -1,6 +1,6 @@
 package typings.reactVirtualized
 
-import typings.reactVirtualized.reactVirtualizedNumbers.`150`
+import typings.reactVirtualized.anon.OnResize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,11 +12,11 @@ object windowScrollerMod extends js.Object {
   class WindowScroller ()
     extends typings.reactVirtualized.esWindowScrollerMod.WindowScroller
   
-  val IS_SCROLLING_TIMEOUT: `150` = js.native
+  val IS_SCROLLING_TIMEOUT: /* 150 */ Double = js.native
   /* static members */
   @js.native
   object WindowScroller extends js.Object {
-    var defaultProps: AnonOnResize = js.native
+    var defaultProps: OnResize = js.native
   }
   
 }

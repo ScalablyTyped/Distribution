@@ -13,9 +13,9 @@ trait BuildHandlerOptions extends HandlerOptions {
 
 object BuildHandlerOptions {
   @scala.inline
-  def apply(step: build, priority: Int | Double = null, tags: StringDictionary[js.Any] = null): BuildHandlerOptions = {
+  def apply(step: build, priority: js.UndefOr[Double] = js.undefined, tags: StringDictionary[js.Any] = null): BuildHandlerOptions = {
     val __obj = js.Dynamic.literal(step = step.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildHandlerOptions]
   }

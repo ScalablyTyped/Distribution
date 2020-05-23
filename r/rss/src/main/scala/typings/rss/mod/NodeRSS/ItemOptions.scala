@@ -77,8 +77,8 @@ object ItemOptions {
     custom_elements: js.Array[_] = null,
     enclosure: EnclosureObject = null,
     guid: String = null,
-    lat: Int | Double = null,
-    long: Int | Double = null
+    lat: js.UndefOr[Double] = js.undefined,
+    long: js.UndefOr[Double] = js.undefined
   ): ItemOptions = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
@@ -86,8 +86,8 @@ object ItemOptions {
     if (custom_elements != null) __obj.updateDynamic("custom_elements")(custom_elements.asInstanceOf[js.Any])
     if (enclosure != null) __obj.updateDynamic("enclosure")(enclosure.asInstanceOf[js.Any])
     if (guid != null) __obj.updateDynamic("guid")(guid.asInstanceOf[js.Any])
-    if (lat != null) __obj.updateDynamic("lat")(lat.asInstanceOf[js.Any])
-    if (long != null) __obj.updateDynamic("long")(long.asInstanceOf[js.Any])
+    if (!js.isUndefined(lat)) __obj.updateDynamic("lat")(lat.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(long)) __obj.updateDynamic("long")(long.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemOptions]
   }
 }

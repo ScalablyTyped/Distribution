@@ -33,11 +33,11 @@ object FailedAssertion {
     if (actual != null) __obj.updateDynamic("actual")(actual.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (expected != null) __obj.updateDynamic("expected")(expected.asInstanceOf[js.Any])
-    if (!js.isUndefined(isNot)) __obj.updateDynamic("isNot")(isNot.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNot)) __obj.updateDynamic("isNot")(isNot.get.asInstanceOf[js.Any])
     if (matcherName != null) __obj.updateDynamic("matcherName")(matcherName.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (!js.isUndefined(pass)) __obj.updateDynamic("pass")(pass.asInstanceOf[js.Any])
-    if (!js.isUndefined(passed)) __obj.updateDynamic("passed")(passed.asInstanceOf[js.Any])
+    if (!js.isUndefined(pass)) __obj.updateDynamic("pass")(pass.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passed)) __obj.updateDynamic("passed")(passed.get.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[FailedAssertion]
   }

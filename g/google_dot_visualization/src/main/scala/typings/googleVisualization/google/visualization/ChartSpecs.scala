@@ -27,7 +27,7 @@ object ChartSpecs {
     dataTable: js.Object = null,
     options: js.Object = null,
     query: String = null,
-    refreshInterval: Int | Double = null,
+    refreshInterval: js.UndefOr[Double] = js.undefined,
     view: js.Any = null
   ): ChartSpecs = {
     val __obj = js.Dynamic.literal(chartType = chartType.asInstanceOf[js.Any])
@@ -37,7 +37,7 @@ object ChartSpecs {
     if (dataTable != null) __obj.updateDynamic("dataTable")(dataTable.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (refreshInterval != null) __obj.updateDynamic("refreshInterval")(refreshInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshInterval)) __obj.updateDynamic("refreshInterval")(refreshInterval.get.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartSpecs]
   }

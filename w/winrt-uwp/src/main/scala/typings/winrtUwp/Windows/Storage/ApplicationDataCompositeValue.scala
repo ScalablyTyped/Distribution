@@ -14,10 +14,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents related app settings that must be serialized and deserialized atomically. */
-@JSGlobal("Windows.Storage.ApplicationDataCompositeValue")
 @js.native
-/** Creates and initializes a new, initially empty, instance of the object. */
-class ApplicationDataCompositeValue () extends js.Object {
+trait ApplicationDataCompositeValue extends js.Object {
   /** Occurs when the map changes. */
   @JSName("onmapchanged")
   var onmapchanged_Original: MapChangedEventHandler[String, _] = js.native

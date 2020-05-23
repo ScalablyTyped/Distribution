@@ -253,7 +253,7 @@ trait Labels[SingularType /* <: NodeSingular | EdgeSingular */] extends js.Objec
 
 object Labels {
   @scala.inline
-  def apply[SingularType /* <: NodeSingular | EdgeSingular */](
+  def apply[SingularType](
     color: PropertyValue[SingularType, Colour],
     `font-family`: PropertyValue[SingularType, String],
     `font-size`: PropertyValue[SingularType, Double | String],

@@ -1,6 +1,6 @@
 package typings.dagreD3.mod
 
-import typings.dagre.AnonCompound
+import typings.dagre.anon.Compound
 import typings.dagre.mod.EdgeFn
 import typings.dagre.mod.WeightFn
 import scala.scalajs.js
@@ -13,7 +13,7 @@ object graphlib extends js.Object {
   @js.native
   class Graph[T] ()
     extends typings.dagre.mod.graphlib.Graph[T] {
-    def this(opt: AnonCompound) = this()
+    def this(opt: Compound) = this()
   }
   
   @js.native
@@ -39,8 +39,8 @@ object graphlib extends js.Object {
     def postorder(graph: typings.dagre.mod.graphlib.Graph[js.Object], nodeNames: js.Array[String]): js.Array[String] = js.native
     def preorder(graph: typings.dagre.mod.graphlib.Graph[js.Object], nodeNames: String): js.Array[String] = js.native
     def preorder(graph: typings.dagre.mod.graphlib.Graph[js.Object], nodeNames: js.Array[String]): js.Array[String] = js.native
-    def prim(graph: typings.dagre.mod.graphlib.Graph[js.Object]): typings.dagre.mod.graphlib.Graph[js.Object] = js.native
-    def prim(graph: typings.dagre.mod.graphlib.Graph[js.Object], weightFn: WeightFn): typings.dagre.mod.graphlib.Graph[js.Object] = js.native
+    def prim[T](graph: typings.dagre.mod.graphlib.Graph[T]): typings.dagre.mod.graphlib.Graph[T] = js.native
+    def prim[T](graph: typings.dagre.mod.graphlib.Graph[T], weightFn: WeightFn): typings.dagre.mod.graphlib.Graph[T] = js.native
     def tarjam(graph: typings.dagre.mod.graphlib.Graph[js.Object]): js.Array[js.Array[String]] = js.native
     def topsort(graph: typings.dagre.mod.graphlib.Graph[js.Object]): js.Array[String] = js.native
   }

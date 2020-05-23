@@ -27,13 +27,13 @@ trait MergeMetadata extends js.Object {
 object MergeMetadata {
   @scala.inline
   def apply(
-    isMerged: js.UndefOr[Boolean] = js.undefined,
+    isMerged: js.UndefOr[IsMerged] = js.undefined,
     mergeCommitId: CommitId = null,
     mergeOption: MergeOptionTypeEnum = null,
     mergedBy: Arn = null
   ): MergeMetadata = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isMerged)) __obj.updateDynamic("isMerged")(isMerged.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMerged)) __obj.updateDynamic("isMerged")(isMerged.get.asInstanceOf[js.Any])
     if (mergeCommitId != null) __obj.updateDynamic("mergeCommitId")(mergeCommitId.asInstanceOf[js.Any])
     if (mergeOption != null) __obj.updateDynamic("mergeOption")(mergeOption.asInstanceOf[js.Any])
     if (mergedBy != null) __obj.updateDynamic("mergedBy")(mergedBy.asInstanceOf[js.Any])

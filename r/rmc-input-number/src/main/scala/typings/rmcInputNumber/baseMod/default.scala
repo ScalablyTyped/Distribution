@@ -1,6 +1,6 @@
 package typings.rmcInputNumber.baseMod
 
-import typings.rmcInputNumber.AnonMax
+import typings.rmcInputNumber.anon.Max
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ abstract class default[P /* <: PropsType */, S /* <: StateType */] protected () 
 @JSImport("rmc-input-number/lib/base", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonMax = js.native
+  var defaultProps: Max = js.native
 }
 

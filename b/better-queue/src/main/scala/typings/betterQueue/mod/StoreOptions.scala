@@ -13,11 +13,7 @@ trait StoreOptions
 
 object StoreOptions {
   @scala.inline
-  def apply(
-    `type`: String,
-    StringDictionary: // store-specific options
-  /* key */ StringDictionary[js.Any] = null
-  ): StoreOptions = {
+  def apply(`type`: String, StringDictionary: /* name */ StringDictionary[js.Any] = null): StoreOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

@@ -25,14 +25,14 @@ trait RmDirAsyncOptions extends RmDirOptions {
 object RmDirAsyncOptions {
   @scala.inline
   def apply(
-    maxRetries: Int | Double = null,
+    maxRetries: js.UndefOr[Double] = js.undefined,
     recursive: js.UndefOr[Boolean] = js.undefined,
-    retryDelay: Int | Double = null
+    retryDelay: js.UndefOr[Double] = js.undefined
   ): RmDirAsyncOptions = {
     val __obj = js.Dynamic.literal()
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.asInstanceOf[js.Any])
-    if (retryDelay != null) __obj.updateDynamic("retryDelay")(retryDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retryDelay)) __obj.updateDynamic("retryDelay")(retryDelay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RmDirAsyncOptions]
   }
 }

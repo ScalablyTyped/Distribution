@@ -24,9 +24,9 @@ object UISortableOptions {
     cursor: String = null,
     cursorAt: SortableCursorAtOptions | Boolean = null,
     deactivate: (/* event */ JQueryEventObject, /* ui */ UISortableUIParams[T]) => Unit = null,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    distance: Int | Double = null,
+    distance: js.UndefOr[Double] = js.undefined,
     dropOnEmpty: js.UndefOr[Boolean] = js.undefined,
     forceHelperSize: js.UndefOr[Boolean] = js.undefined,
     forcePlaceholderSize: js.UndefOr[Boolean] = js.undefined,
@@ -42,15 +42,15 @@ object UISortableOptions {
     remove: (/* event */ JQueryEventObject, /* ui */ UISortableUIParams[T]) => Unit = null,
     revert: Double | Boolean = null,
     scroll: js.UndefOr[Boolean] = js.undefined,
-    scrollSensitivity: Int | Double = null,
-    scrollSpeed: Int | Double = null,
+    scrollSensitivity: js.UndefOr[Double] = js.undefined,
+    scrollSpeed: js.UndefOr[Double] = js.undefined,
     sort: (/* event */ JQueryEventObject, /* ui */ UISortableUIParams[T]) => Unit = null,
     start: (/* event */ JQueryEventObject, /* ui */ UISortableUIParams[T]) => Unit = null,
     stop: (/* event */ JQueryEventObject, /* ui */ UISortableUIParams[T]) => Unit = null,
     tolerance: String = null,
     `ui-floating`: auto | Boolean = null,
     update: (/* event */ JQueryEventObject, /* ui */ UISortableUIParams[T]) => Unit = null,
-    zIndex: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined
   ): UISortableOptions[T] = {
     val __obj = js.Dynamic.literal()
     if (activate != null) __obj.updateDynamic("activate")(js.Any.fromFunction2(activate))
@@ -64,12 +64,12 @@ object UISortableOptions {
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (cursorAt != null) __obj.updateDynamic("cursorAt")(cursorAt.asInstanceOf[js.Any])
     if (deactivate != null) __obj.updateDynamic("deactivate")(js.Any.fromFunction2(deactivate))
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropOnEmpty)) __obj.updateDynamic("dropOnEmpty")(dropOnEmpty.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceHelperSize)) __obj.updateDynamic("forceHelperSize")(forceHelperSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(forcePlaceholderSize)) __obj.updateDynamic("forcePlaceholderSize")(forcePlaceholderSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropOnEmpty)) __obj.updateDynamic("dropOnEmpty")(dropOnEmpty.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceHelperSize)) __obj.updateDynamic("forceHelperSize")(forceHelperSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forcePlaceholderSize)) __obj.updateDynamic("forcePlaceholderSize")(forcePlaceholderSize.get.asInstanceOf[js.Any])
     if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
     if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
     if (helper != null) __obj.updateDynamic("helper")(helper.asInstanceOf[js.Any])
@@ -81,16 +81,16 @@ object UISortableOptions {
     if (receive != null) __obj.updateDynamic("receive")(js.Any.fromFunction2(receive))
     if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction2(remove))
     if (revert != null) __obj.updateDynamic("revert")(revert.asInstanceOf[js.Any])
-    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
-    if (scrollSensitivity != null) __obj.updateDynamic("scrollSensitivity")(scrollSensitivity.asInstanceOf[js.Any])
-    if (scrollSpeed != null) __obj.updateDynamic("scrollSpeed")(scrollSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollSensitivity)) __obj.updateDynamic("scrollSensitivity")(scrollSensitivity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollSpeed)) __obj.updateDynamic("scrollSpeed")(scrollSpeed.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction2(sort))
     if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2(start))
     if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2(stop))
     if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
     if (`ui-floating` != null) __obj.updateDynamic("ui-floating")(`ui-floating`.asInstanceOf[js.Any])
     if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction2(update))
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UISortableOptions[T]]
   }
 }

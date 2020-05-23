@@ -24,16 +24,16 @@ object AsyncOptions {
   @scala.inline
   def apply(
     allowSymlinks: js.UndefOr[Boolean] = js.undefined,
-    concurrency: Int | Double = null,
+    concurrency: js.UndefOr[Double] = js.undefined,
     cwd: String = null,
     preserveOrder: js.UndefOr[Boolean] = js.undefined,
     `type`: file | directory = null
   ): AsyncOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowSymlinks)) __obj.updateDynamic("allowSymlinks")(allowSymlinks.asInstanceOf[js.Any])
-    if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSymlinks)) __obj.updateDynamic("allowSymlinks")(allowSymlinks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(concurrency)) __obj.updateDynamic("concurrency")(concurrency.get.asInstanceOf[js.Any])
     if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveOrder)) __obj.updateDynamic("preserveOrder")(preserveOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveOrder)) __obj.updateDynamic("preserveOrder")(preserveOrder.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncOptions]
   }

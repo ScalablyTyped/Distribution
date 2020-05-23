@@ -21,30 +21,30 @@ trait GlyphOptions extends js.Object {
 object GlyphOptions {
   @scala.inline
   def apply(
-    advanceWidth: Int | Double = null,
+    advanceWidth: js.UndefOr[Double] = js.undefined,
     font: Font = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     name: String = null,
     path: Path = null,
-    unicode: Int | Double = null,
+    unicode: js.UndefOr[Double] = js.undefined,
     unicodes: js.Array[Double] = null,
-    xMax: Int | Double = null,
-    xMin: Int | Double = null,
-    yMax: Int | Double = null,
-    yMin: Int | Double = null
+    xMax: js.UndefOr[Double] = js.undefined,
+    xMin: js.UndefOr[Double] = js.undefined,
+    yMax: js.UndefOr[Double] = js.undefined,
+    yMin: js.UndefOr[Double] = js.undefined
   ): GlyphOptions = {
     val __obj = js.Dynamic.literal()
-    if (advanceWidth != null) __obj.updateDynamic("advanceWidth")(advanceWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(advanceWidth)) __obj.updateDynamic("advanceWidth")(advanceWidth.get.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (unicode != null) __obj.updateDynamic("unicode")(unicode.asInstanceOf[js.Any])
+    if (!js.isUndefined(unicode)) __obj.updateDynamic("unicode")(unicode.get.asInstanceOf[js.Any])
     if (unicodes != null) __obj.updateDynamic("unicodes")(unicodes.asInstanceOf[js.Any])
-    if (xMax != null) __obj.updateDynamic("xMax")(xMax.asInstanceOf[js.Any])
-    if (xMin != null) __obj.updateDynamic("xMin")(xMin.asInstanceOf[js.Any])
-    if (yMax != null) __obj.updateDynamic("yMax")(yMax.asInstanceOf[js.Any])
-    if (yMin != null) __obj.updateDynamic("yMin")(yMin.asInstanceOf[js.Any])
+    if (!js.isUndefined(xMax)) __obj.updateDynamic("xMax")(xMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xMin)) __obj.updateDynamic("xMin")(xMin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yMax)) __obj.updateDynamic("yMax")(yMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yMin)) __obj.updateDynamic("yMin")(yMin.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlyphOptions]
   }
 }

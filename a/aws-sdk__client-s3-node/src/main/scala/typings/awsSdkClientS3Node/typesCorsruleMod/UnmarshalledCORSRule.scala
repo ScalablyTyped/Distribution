@@ -34,12 +34,12 @@ object UnmarshalledCORSRule {
     AllowedOrigins: js.Array[String],
     AllowedHeaders: js.Array[String] = null,
     ExposeHeaders: js.Array[String] = null,
-    MaxAgeSeconds: Int | Double = null
+    MaxAgeSeconds: js.UndefOr[Double] = js.undefined
   ): UnmarshalledCORSRule = {
     val __obj = js.Dynamic.literal(AllowedMethods = AllowedMethods.asInstanceOf[js.Any], AllowedOrigins = AllowedOrigins.asInstanceOf[js.Any])
     if (AllowedHeaders != null) __obj.updateDynamic("AllowedHeaders")(AllowedHeaders.asInstanceOf[js.Any])
     if (ExposeHeaders != null) __obj.updateDynamic("ExposeHeaders")(ExposeHeaders.asInstanceOf[js.Any])
-    if (MaxAgeSeconds != null) __obj.updateDynamic("MaxAgeSeconds")(MaxAgeSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxAgeSeconds)) __obj.updateDynamic("MaxAgeSeconds")(MaxAgeSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledCORSRule]
   }
 }

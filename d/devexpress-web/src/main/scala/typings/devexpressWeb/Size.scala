@@ -7,16 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * Defines the size settings.
   */
-@JSGlobal("Size")
-@js.native
-class Size () extends js.Object {
+trait Size extends js.Object {
   /**
     * Gets or sets the height value in twips.
     */
-  var height: Double = js.native
+  var height: Double
   /**
     * Gets or sets the width value in twips.
     */
-  var width: Double = js.native
+  var width: Double
+}
+
+object Size {
+  @scala.inline
+  def apply(height: Double, width: Double): Size = {
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Size]
+  }
 }
 

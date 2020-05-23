@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("dayjs", "extend")
 @js.native
 object extend extends js.Object {
-  def apply(plugin: PluginFunc): Dayjs = js.native
-  def apply(plugin: PluginFunc, option: js.Any): Dayjs = js.native
+  def apply[T](plugin: PluginFunc[T]): Dayjs = js.native
+  def apply[T](plugin: PluginFunc[T], option: T): Dayjs = js.native
 }
 

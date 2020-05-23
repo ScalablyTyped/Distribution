@@ -13,12 +13,10 @@ trait IndexFieldMode extends js.Object
 
 object IndexFieldMode {
   @scala.inline
-  def ASCENDING: typings.firebaseFirestore.firebaseFirestoreStrings.ASCENDING = this.cast("ASCENDING")
+  def ASCENDING: typings.firebaseFirestore.firebaseFirestoreStrings.ASCENDING = "ASCENDING".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.ASCENDING]
   @scala.inline
-  def DESCENDING: typings.firebaseFirestore.firebaseFirestoreStrings.DESCENDING = this.cast("DESCENDING")
+  def DESCENDING: typings.firebaseFirestore.firebaseFirestoreStrings.DESCENDING = "DESCENDING".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.DESCENDING]
   @scala.inline
-  def MODE_UNSPECIFIED: typings.firebaseFirestore.firebaseFirestoreStrings.MODE_UNSPECIFIED = this.cast("MODE_UNSPECIFIED")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def MODE_UNSPECIFIED: typings.firebaseFirestore.firebaseFirestoreStrings.MODE_UNSPECIFIED = "MODE_UNSPECIFIED".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.MODE_UNSPECIFIED]
 }
 

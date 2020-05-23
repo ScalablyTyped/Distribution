@@ -1,6 +1,6 @@
 package typings.fhirKitClient.mod
 
-import typings.fhirKitClient.AnonBaseUrl
+import typings.fhirKitClient.anon.BaseUrl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +17,6 @@ class ^ protected () extends Client {
     *   each request
     * @throws An error will be thrown unless baseUrl is a non-empty string.
     */
-  def this(config: AnonBaseUrl) = this()
+  def this(config: BaseUrl) = this()
 }
 

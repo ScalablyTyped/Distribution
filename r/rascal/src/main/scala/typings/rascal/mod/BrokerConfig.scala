@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BrokerConfig extends js.Object {
-  var defaults: js.UndefOr[BrokerConfig] = js.undefined
+  var defaults: js.UndefOr[VhostConfig] = js.undefined
   var encryption: js.UndefOr[StringDictionary[Encryption]] = js.undefined
   var publications: js.UndefOr[StringDictionary[PublicationConfig]] = js.undefined
   var recovery: js.UndefOr[StringDictionary[Recovery | js.Array[Recovery]]] = js.undefined
@@ -18,7 +18,7 @@ trait BrokerConfig extends js.Object {
 object BrokerConfig {
   @scala.inline
   def apply(
-    defaults: BrokerConfig = null,
+    defaults: VhostConfig = null,
     encryption: StringDictionary[Encryption] = null,
     publications: StringDictionary[PublicationConfig] = null,
     recovery: StringDictionary[Recovery | js.Array[Recovery]] = null,

@@ -1,6 +1,6 @@
 package typings.reactOnsenui.mod
 
-import typings.reactOnsenui.HTMLAttributesidclassNameIgnoreEdgeWidth
+import typings.reactOnsenui.anon.HTMLAttributesidclassNameIgnoreEdgeWidth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

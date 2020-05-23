@@ -8,9 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MediaConnection")
 @js.native
-class MediaConnection () extends js.Object {
+trait MediaConnection extends js.Object {
   var metadata: js.Any = js.native
   var open: Boolean = js.native
   var peer: String = js.native

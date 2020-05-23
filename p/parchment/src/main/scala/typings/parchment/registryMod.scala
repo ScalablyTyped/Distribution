@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.TopLevel
 import typings.parchment.attributorMod.default
 import typings.parchment.blotMod.Blot
-import typings.parchment.parchmentStrings.__blot
 import typings.std.Error
 import typings.std.Node
 import scala.scalajs.js
@@ -38,7 +37,7 @@ object registryMod extends js.Object {
   @js.native
   sealed trait Scope extends js.Object
   
-  val DATA_KEY: __blot = js.native
+  val DATA_KEY: /* "__blot" */ String = js.native
   def create(input: String): Blot = js.native
   def create(input: String, value: js.Any): Blot = js.native
   def create(input: Scope): Blot = js.native

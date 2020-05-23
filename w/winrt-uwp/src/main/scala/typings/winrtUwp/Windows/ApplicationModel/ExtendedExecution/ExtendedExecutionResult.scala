@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object ExtendedExecutionResult extends js.Object {
   /** App execution is denied. */
   @js.native
   sealed trait denied extends ExtendedExecutionResult
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ExtendedExecutionResult with Double] = js.native
-  /* 0 */ @js.native
-  object allowed extends TopLevel[allowed with Double]
-  
-  /* 1 */ @js.native
-  object denied extends TopLevel[denied with Double]
   
 }
 

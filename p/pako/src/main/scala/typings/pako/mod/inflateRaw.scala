@@ -1,6 +1,6 @@
 package typings.pako.mod
 
-import typings.pako.InflateFunctionOptionstos
+import typings.pako.anon.InflateFunctionOptionstos
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`

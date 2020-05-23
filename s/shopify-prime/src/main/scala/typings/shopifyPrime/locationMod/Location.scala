@@ -71,7 +71,7 @@ object Location {
     country: String = null,
     country_code: String = null,
     created_at: String = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     legacy: String = null,
     name: String = null,
     phone: String = null,
@@ -88,7 +88,7 @@ object Location {
     if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
     if (country_code != null) __obj.updateDynamic("country_code")(country_code.asInstanceOf[js.Any])
     if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (legacy != null) __obj.updateDynamic("legacy")(legacy.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])

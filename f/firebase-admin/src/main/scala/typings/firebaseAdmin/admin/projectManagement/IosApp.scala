@@ -26,7 +26,9 @@ trait IosApp extends js.Object {
     * @return {!Promise<admin.projectManagement.IosAppMetadata>} A promise that
     *     resolves to the retrieved metadata about this iOS app.
     */
-  def getMetadata(): js.Promise[IosAppMetadata]
+  def getMetadata(): js.Promise[
+    typings.firebaseAdmin.projectManagementMod.admin.projectManagement.IosAppMetadata
+  ]
   /**
     * Sets the optional user-assigned display name of the app.
     *
@@ -43,7 +45,9 @@ object IosApp {
   def apply(
     appId: String,
     getConfig: () => js.Promise[String],
-    getMetadata: () => js.Promise[IosAppMetadata],
+    getMetadata: () => js.Promise[
+      typings.firebaseAdmin.projectManagementMod.admin.projectManagement.IosAppMetadata
+    ],
     setDisplayName: String => js.Promise[Unit]
   ): IosApp = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], getConfig = js.Any.fromFunction0(getConfig), getMetadata = js.Any.fromFunction0(getMetadata), setDisplayName = js.Any.fromFunction1(setDisplayName))

@@ -12,7 +12,7 @@ object stringEndsWithMod
       js.Function3[
         /* text */ java.lang.String, 
         /* searchString */ java.lang.String, 
-        /* endPosition */ js.UndefOr[Double], 
+        /* position */ js.UndefOr[Double], 
         Boolean
       ]
     ]

@@ -25,10 +25,10 @@ object EnableFastSnapshotRestoresRequest {
   def apply(
     AvailabilityZones: AvailabilityZoneStringList,
     SourceSnapshotIds: SnapshotIdStringList,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined
   ): EnableFastSnapshotRestoresRequest = {
     val __obj = js.Dynamic.literal(AvailabilityZones = AvailabilityZones.asInstanceOf[js.Any], SourceSnapshotIds = SourceSnapshotIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableFastSnapshotRestoresRequest]
   }
 }

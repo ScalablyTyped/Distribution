@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.yandexMaps.mod.IEventEmitter because Already inherited
 - typings.yandexMaps.mod.ICustomizable because var conflicts: events. Inlined options */ @JSImport("yandex-maps", "Clusterer")
 @js.native
@@ -16,7 +16,7 @@ class Clusterer_ ()
   var balloon: typings.yandexMaps.mod.clusterer.Balloon = js.native
   /* CompleteClass */
   override var events: IEventManager = js.native
-  // 	balloonopen:
+  //     balloonopen:
   var hint: Hint = js.native
   var options: IOptionManager = js.native
   /* CompleteClass */

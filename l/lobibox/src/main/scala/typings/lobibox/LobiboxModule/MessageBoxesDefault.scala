@@ -62,13 +62,13 @@ object MessageBoxesDefault {
     closed: /* lobibox */ js.Any => Unit = null,
     customBtnClass: String = null,
     debug: js.UndefOr[Boolean] = js.undefined,
-    delayToRemove: Int | Double = null,
+    delayToRemove: js.UndefOr[Double] = js.undefined,
     draggable: js.UndefOr[Boolean] = js.undefined,
     getTitle: () => String = null,
     height: String = null,
     hide: () => MessageBoxesDefault = null,
     hideClass: String = null,
-    horizontalOffset: Int | Double = null,
+    horizontalOffset: js.UndefOr[Double] = js.undefined,
     modal: js.UndefOr[Boolean] = js.undefined,
     msg: String = null,
     onShow: /* lobibox */ js.Any => Unit = null,
@@ -81,25 +81,25 @@ object MessageBoxesDefault {
     showClass: String = null,
     shown: /* lobibox */ js.Any => Unit = null,
     title: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): MessageBoxesDefault = {
     val __obj = js.Dynamic.literal()
     if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass.asInstanceOf[js.Any])
     if (beforeClose != null) __obj.updateDynamic("beforeClose")(js.Any.fromFunction1(beforeClose))
     if (buttonsAlign != null) __obj.updateDynamic("buttonsAlign")(buttonsAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnEsc)) __obj.updateDynamic("closeOnEsc")(closeOnEsc.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnEsc)) __obj.updateDynamic("closeOnEsc")(closeOnEsc.get.asInstanceOf[js.Any])
     if (closed != null) __obj.updateDynamic("closed")(js.Any.fromFunction1(closed))
     if (customBtnClass != null) __obj.updateDynamic("customBtnClass")(customBtnClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (delayToRemove != null) __obj.updateDynamic("delayToRemove")(delayToRemove.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayToRemove)) __obj.updateDynamic("delayToRemove")(delayToRemove.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
     if (getTitle != null) __obj.updateDynamic("getTitle")(js.Any.fromFunction0(getTitle))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction0(hide))
     if (hideClass != null) __obj.updateDynamic("hideClass")(hideClass.asInstanceOf[js.Any])
-    if (horizontalOffset != null) __obj.updateDynamic("horizontalOffset")(horizontalOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalOffset)) __obj.updateDynamic("horizontalOffset")(horizontalOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.get.asInstanceOf[js.Any])
     if (msg != null) __obj.updateDynamic("msg")(msg.asInstanceOf[js.Any])
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
     if (setHeight != null) __obj.updateDynamic("setHeight")(js.Any.fromFunction1(setHeight))
@@ -111,7 +111,7 @@ object MessageBoxesDefault {
     if (showClass != null) __obj.updateDynamic("showClass")(showClass.asInstanceOf[js.Any])
     if (shown != null) __obj.updateDynamic("shown")(js.Any.fromFunction1(shown))
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageBoxesDefault]
   }
 }

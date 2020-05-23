@@ -11,9 +11,9 @@ trait ServerGroupCopy extends js.Object {
 
 object ServerGroupCopy {
   @scala.inline
-  def apply(sgid: Int | Double = null): ServerGroupCopy = {
+  def apply(sgid: js.UndefOr[Double] = js.undefined): ServerGroupCopy = {
     val __obj = js.Dynamic.literal()
-    if (sgid != null) __obj.updateDynamic("sgid")(sgid.asInstanceOf[js.Any])
+    if (!js.isUndefined(sgid)) __obj.updateDynamic("sgid")(sgid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerGroupCopy]
   }
 }

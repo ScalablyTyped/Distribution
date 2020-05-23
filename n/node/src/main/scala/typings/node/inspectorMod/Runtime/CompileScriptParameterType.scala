@@ -29,10 +29,10 @@ object CompileScriptParameterType {
     expression: String,
     persistScript: Boolean,
     sourceURL: String,
-    executionContextId: Int | Double = null
+    executionContextId: js.UndefOr[ExecutionContextId] = js.undefined
   ): CompileScriptParameterType = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], persistScript = persistScript.asInstanceOf[js.Any], sourceURL = sourceURL.asInstanceOf[js.Any])
-    if (executionContextId != null) __obj.updateDynamic("executionContextId")(executionContextId.asInstanceOf[js.Any])
+    if (!js.isUndefined(executionContextId)) __obj.updateDynamic("executionContextId")(executionContextId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompileScriptParameterType]
   }
 }

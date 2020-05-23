@@ -61,13 +61,13 @@ object Deployment {
   def apply(
     capacityProviderStrategy: CapacityProviderStrategy = null,
     createdAt: Timestamp = null,
-    desiredCount: Int | scala.Double = null,
+    desiredCount: js.UndefOr[Integer] = js.undefined,
     id: String = null,
     launchType: LaunchType = null,
     networkConfiguration: NetworkConfiguration = null,
-    pendingCount: Int | scala.Double = null,
+    pendingCount: js.UndefOr[Integer] = js.undefined,
     platformVersion: String = null,
-    runningCount: Int | scala.Double = null,
+    runningCount: js.UndefOr[Integer] = js.undefined,
     status: String = null,
     taskDefinition: String = null,
     updatedAt: Timestamp = null
@@ -75,13 +75,13 @@ object Deployment {
     val __obj = js.Dynamic.literal()
     if (capacityProviderStrategy != null) __obj.updateDynamic("capacityProviderStrategy")(capacityProviderStrategy.asInstanceOf[js.Any])
     if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (desiredCount != null) __obj.updateDynamic("desiredCount")(desiredCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(desiredCount)) __obj.updateDynamic("desiredCount")(desiredCount.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (launchType != null) __obj.updateDynamic("launchType")(launchType.asInstanceOf[js.Any])
     if (networkConfiguration != null) __obj.updateDynamic("networkConfiguration")(networkConfiguration.asInstanceOf[js.Any])
-    if (pendingCount != null) __obj.updateDynamic("pendingCount")(pendingCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(pendingCount)) __obj.updateDynamic("pendingCount")(pendingCount.get.asInstanceOf[js.Any])
     if (platformVersion != null) __obj.updateDynamic("platformVersion")(platformVersion.asInstanceOf[js.Any])
-    if (runningCount != null) __obj.updateDynamic("runningCount")(runningCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(runningCount)) __obj.updateDynamic("runningCount")(runningCount.get.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (taskDefinition != null) __obj.updateDynamic("taskDefinition")(taskDefinition.asInstanceOf[js.Any])
     if (updatedAt != null) __obj.updateDynamic("updatedAt")(updatedAt.asInstanceOf[js.Any])

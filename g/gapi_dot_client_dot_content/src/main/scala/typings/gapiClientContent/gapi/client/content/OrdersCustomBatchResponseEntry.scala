@@ -20,14 +20,14 @@ trait OrdersCustomBatchResponseEntry extends js.Object {
 object OrdersCustomBatchResponseEntry {
   @scala.inline
   def apply(
-    batchId: Int | Double = null,
+    batchId: js.UndefOr[Double] = js.undefined,
     errors: Errors = null,
     executionStatus: String = null,
     kind: String = null,
     order: Order = null
   ): OrdersCustomBatchResponseEntry = {
     val __obj = js.Dynamic.literal()
-    if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchId)) __obj.updateDynamic("batchId")(batchId.get.asInstanceOf[js.Any])
     if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     if (executionStatus != null) __obj.updateDynamic("executionStatus")(executionStatus.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])

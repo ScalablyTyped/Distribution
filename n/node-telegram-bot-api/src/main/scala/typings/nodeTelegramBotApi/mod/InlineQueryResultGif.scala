@@ -26,9 +26,9 @@ object InlineQueryResultGif {
     id: String,
     `type`: gif,
     caption: String = null,
-    gif_duration: Int | Double = null,
-    gif_height: Int | Double = null,
-    gif_width: Int | Double = null,
+    gif_duration: js.UndefOr[Double] = js.undefined,
+    gif_height: js.UndefOr[Double] = js.undefined,
+    gif_width: js.UndefOr[Double] = js.undefined,
     input_message_content: InputMessageContent = null,
     reply_markup: InlineKeyboardMarkup = null,
     thumb_url: String = null,
@@ -37,9 +37,9 @@ object InlineQueryResultGif {
     val __obj = js.Dynamic.literal(gif_url = gif_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (gif_duration != null) __obj.updateDynamic("gif_duration")(gif_duration.asInstanceOf[js.Any])
-    if (gif_height != null) __obj.updateDynamic("gif_height")(gif_height.asInstanceOf[js.Any])
-    if (gif_width != null) __obj.updateDynamic("gif_width")(gif_width.asInstanceOf[js.Any])
+    if (!js.isUndefined(gif_duration)) __obj.updateDynamic("gif_duration")(gif_duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gif_height)) __obj.updateDynamic("gif_height")(gif_height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gif_width)) __obj.updateDynamic("gif_width")(gif_width.get.asInstanceOf[js.Any])
     if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content.asInstanceOf[js.Any])
     if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
     if (thumb_url != null) __obj.updateDynamic("thumb_url")(thumb_url.asInstanceOf[js.Any])

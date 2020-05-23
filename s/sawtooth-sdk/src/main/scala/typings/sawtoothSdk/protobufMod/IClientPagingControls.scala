@@ -13,10 +13,10 @@ trait IClientPagingControls extends js.Object {
 
 object IClientPagingControls {
   @scala.inline
-  def apply(limit: Int | Double = null, start: String = null): IClientPagingControls = {
+  def apply(limit: js.UndefOr[Null | Double] = js.undefined, start: js.UndefOr[Null | String] = js.undefined): IClientPagingControls = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientPagingControls]
   }
 }

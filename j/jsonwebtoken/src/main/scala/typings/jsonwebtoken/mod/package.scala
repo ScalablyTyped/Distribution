@@ -10,7 +10,7 @@ package object mod {
     /* callback */ typings.jsonwebtoken.mod.SigningKeyCallback, 
     scala.Unit
   ]
-  type Secret = java.lang.String | typings.node.Buffer | typings.jsonwebtoken.AnonKey
+  type Secret = java.lang.String | typings.node.Buffer | typings.jsonwebtoken.anon.Key
   type SignCallback = js.Function2[
     /* err */ typings.std.Error | scala.Null, 
     /* encoded */ js.UndefOr[java.lang.String], 

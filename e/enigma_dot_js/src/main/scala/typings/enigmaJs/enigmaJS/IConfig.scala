@@ -73,7 +73,7 @@ object IConfig {
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (requestInterceptors != null) __obj.updateDynamic("requestInterceptors")(requestInterceptors.asInstanceOf[js.Any])
     if (responseInterceptors != null) __obj.updateDynamic("responseInterceptors")(responseInterceptors.asInstanceOf[js.Any])
-    if (!js.isUndefined(suspendOnClose)) __obj.updateDynamic("suspendOnClose")(suspendOnClose.asInstanceOf[js.Any])
+    if (!js.isUndefined(suspendOnClose)) __obj.updateDynamic("suspendOnClose")(suspendOnClose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConfig]
   }
 }

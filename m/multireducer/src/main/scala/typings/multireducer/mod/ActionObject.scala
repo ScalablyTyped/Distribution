@@ -12,7 +12,7 @@ trait ActionObject
 
 object ActionObject {
   @scala.inline
-  def apply(meta: MetaObject, StringDictionary: /* rest */ StringDictionary[js.Any] = null): ActionObject = {
+  def apply(meta: MetaObject, StringDictionary: /* name */ StringDictionary[js.Any] = null): ActionObject = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ActionObject]

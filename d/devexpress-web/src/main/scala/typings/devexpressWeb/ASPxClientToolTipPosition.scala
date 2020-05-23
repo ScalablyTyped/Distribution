@@ -7,7 +7,5 @@ import scala.scalajs.js.annotation._
 /**
   * The client-side equivalent of the ToolTipPosition class.
   */
-@JSGlobal("ASPxClientToolTipPosition")
-@js.native
-class ASPxClientToolTipPosition () extends js.Object
+trait ASPxClientToolTipPosition extends js.Object
 

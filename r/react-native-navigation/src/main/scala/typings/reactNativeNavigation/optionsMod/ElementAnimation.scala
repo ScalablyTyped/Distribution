@@ -12,9 +12,9 @@ trait ElementAnimation extends js.Object {
 
 object ElementAnimation {
   @scala.inline
-  def apply(duration: Double, interpolation: Interpolation, startDelay: Int | Double = null): ElementAnimation = {
+  def apply(duration: Double, interpolation: Interpolation, startDelay: js.UndefOr[Double] = js.undefined): ElementAnimation = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], interpolation = interpolation.asInstanceOf[js.Any])
-    if (startDelay != null) __obj.updateDynamic("startDelay")(startDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(startDelay)) __obj.updateDynamic("startDelay")(startDelay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementAnimation]
   }
 }

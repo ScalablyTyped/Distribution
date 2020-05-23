@@ -1,7 +1,6 @@
 package typings.gapiClientAnalytics.gapi.client.analytics
 
-import typings.gapiClientAnalytics.AnonExcludeConditions
-import typings.gapiClientAnalytics.AnonIncludeConditions
+import typings.gapiClientAnalytics.anon.ExcludeConditions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,7 @@ trait RemarketingAudience extends js.Object {
   /** Account ID to which this remarketing audience belongs. */
   var accountId: js.UndefOr[String] = js.undefined
   /** The simple audience definition that will cause a user to be added to an audience. */
-  var audienceDefinition: js.UndefOr[AnonIncludeConditions] = js.undefined
+  var audienceDefinition: js.UndefOr[typings.gapiClientAnalytics.anon.IncludeConditions] = js.undefined
   /** The type of audience, either SIMPLE or STATE_BASED. */
   var audienceType: js.UndefOr[String] = js.undefined
   /** Time this remarketing audience was created. */
@@ -30,7 +29,7 @@ trait RemarketingAudience extends js.Object {
   /** The name of this remarketing audience. */
   var name: js.UndefOr[String] = js.undefined
   /** A state based audience definition that will cause a user to be added or removed from an audience. */
-  var stateBasedAudienceDefinition: js.UndefOr[AnonExcludeConditions] = js.undefined
+  var stateBasedAudienceDefinition: js.UndefOr[ExcludeConditions] = js.undefined
   /** Time this remarketing audience was last modified. */
   var updated: js.UndefOr[String] = js.undefined
   /** Web property ID of the form UA-XXXXX-YY to which this remarketing audience belongs. */
@@ -41,7 +40,7 @@ object RemarketingAudience {
   @scala.inline
   def apply(
     accountId: String = null,
-    audienceDefinition: AnonIncludeConditions = null,
+    audienceDefinition: typings.gapiClientAnalytics.anon.IncludeConditions = null,
     audienceType: String = null,
     created: String = null,
     description: String = null,
@@ -51,7 +50,7 @@ object RemarketingAudience {
     linkedAdAccounts: js.Array[LinkedForeignAccount] = null,
     linkedViews: js.Array[String] = null,
     name: String = null,
-    stateBasedAudienceDefinition: AnonExcludeConditions = null,
+    stateBasedAudienceDefinition: ExcludeConditions = null,
     updated: String = null,
     webPropertyId: String = null
   ): RemarketingAudience = {

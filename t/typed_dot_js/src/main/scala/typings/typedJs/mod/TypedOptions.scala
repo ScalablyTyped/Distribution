@@ -128,8 +128,8 @@ object TypedOptions {
   def apply(
     attr: String = null,
     autoInsertCss: js.UndefOr[Boolean] = js.undefined,
-    backDelay: Int | Double = null,
-    backSpeed: Int | Double = null,
+    backDelay: js.UndefOr[Double] = js.undefined,
+    backSpeed: js.UndefOr[Double] = js.undefined,
     bindInputFocusEvents: js.UndefOr[Boolean] = js.undefined,
     contentType: String = null,
     cursorChar: String = null,
@@ -137,7 +137,7 @@ object TypedOptions {
     fadeOutClass: String = null,
     fadeOutDelay: js.UndefOr[Boolean] = js.undefined,
     loop: js.UndefOr[Boolean] = js.undefined,
-    loopCount: Int | Double = null,
+    loopCount: js.UndefOr[Double] = js.undefined,
     onComplete: /* self */ Typed => Unit = null,
     onDestroy: /* self */ Typed => Unit = null,
     onLastStringBackspaced: /* self */ Typed => Unit = null,
@@ -151,24 +151,24 @@ object TypedOptions {
     showCursor: js.UndefOr[Boolean] = js.undefined,
     shuffle: js.UndefOr[Boolean] = js.undefined,
     smartBackspace: js.UndefOr[Boolean] = js.undefined,
-    startDelay: Int | Double = null,
+    startDelay: js.UndefOr[Double] = js.undefined,
     strings: js.Array[String] = null,
     stringsElement: String = null,
-    typeSpeed: Int | Double = null
+    typeSpeed: js.UndefOr[Double] = js.undefined
   ): TypedOptions = {
     val __obj = js.Dynamic.literal()
     if (attr != null) __obj.updateDynamic("attr")(attr.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoInsertCss)) __obj.updateDynamic("autoInsertCss")(autoInsertCss.asInstanceOf[js.Any])
-    if (backDelay != null) __obj.updateDynamic("backDelay")(backDelay.asInstanceOf[js.Any])
-    if (backSpeed != null) __obj.updateDynamic("backSpeed")(backSpeed.asInstanceOf[js.Any])
-    if (!js.isUndefined(bindInputFocusEvents)) __obj.updateDynamic("bindInputFocusEvents")(bindInputFocusEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoInsertCss)) __obj.updateDynamic("autoInsertCss")(autoInsertCss.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(backDelay)) __obj.updateDynamic("backDelay")(backDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(backSpeed)) __obj.updateDynamic("backSpeed")(backSpeed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bindInputFocusEvents)) __obj.updateDynamic("bindInputFocusEvents")(bindInputFocusEvents.get.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (cursorChar != null) __obj.updateDynamic("cursorChar")(cursorChar.asInstanceOf[js.Any])
-    if (!js.isUndefined(fadeOut)) __obj.updateDynamic("fadeOut")(fadeOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(fadeOut)) __obj.updateDynamic("fadeOut")(fadeOut.get.asInstanceOf[js.Any])
     if (fadeOutClass != null) __obj.updateDynamic("fadeOutClass")(fadeOutClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(fadeOutDelay)) __obj.updateDynamic("fadeOutDelay")(fadeOutDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (loopCount != null) __obj.updateDynamic("loopCount")(loopCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(fadeOutDelay)) __obj.updateDynamic("fadeOutDelay")(fadeOutDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loopCount)) __obj.updateDynamic("loopCount")(loopCount.get.asInstanceOf[js.Any])
     if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction1(onComplete))
     if (onDestroy != null) __obj.updateDynamic("onDestroy")(js.Any.fromFunction1(onDestroy))
     if (onLastStringBackspaced != null) __obj.updateDynamic("onLastStringBackspaced")(js.Any.fromFunction1(onLastStringBackspaced))
@@ -179,13 +179,13 @@ object TypedOptions {
     if (onTypingPaused != null) __obj.updateDynamic("onTypingPaused")(js.Any.fromFunction2(onTypingPaused))
     if (onTypingResumed != null) __obj.updateDynamic("onTypingResumed")(js.Any.fromFunction2(onTypingResumed))
     if (preStringTyped != null) __obj.updateDynamic("preStringTyped")(js.Any.fromFunction2(preStringTyped))
-    if (!js.isUndefined(showCursor)) __obj.updateDynamic("showCursor")(showCursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(shuffle)) __obj.updateDynamic("shuffle")(shuffle.asInstanceOf[js.Any])
-    if (!js.isUndefined(smartBackspace)) __obj.updateDynamic("smartBackspace")(smartBackspace.asInstanceOf[js.Any])
-    if (startDelay != null) __obj.updateDynamic("startDelay")(startDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCursor)) __obj.updateDynamic("showCursor")(showCursor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shuffle)) __obj.updateDynamic("shuffle")(shuffle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(smartBackspace)) __obj.updateDynamic("smartBackspace")(smartBackspace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startDelay)) __obj.updateDynamic("startDelay")(startDelay.get.asInstanceOf[js.Any])
     if (strings != null) __obj.updateDynamic("strings")(strings.asInstanceOf[js.Any])
     if (stringsElement != null) __obj.updateDynamic("stringsElement")(stringsElement.asInstanceOf[js.Any])
-    if (typeSpeed != null) __obj.updateDynamic("typeSpeed")(typeSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(typeSpeed)) __obj.updateDynamic("typeSpeed")(typeSpeed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypedOptions]
   }
 }

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +25,11 @@ trait scaleRange extends js.Object {
   def scaleRange(params: scaleRangeScaleRangeParams): js.Promise[ScaleRangeResult]
 }
 
-@JSGlobal("__esri.scaleRange")
-@js.native
-object scaleRange extends TopLevel[scaleRange]
+object scaleRange {
+  @scala.inline
+  def apply(scaleRange: scaleRangeScaleRangeParams => js.Promise[ScaleRangeResult]): scaleRange = {
+    val __obj = js.Dynamic.literal(scaleRange = js.Any.fromFunction1(scaleRange))
+    __obj.asInstanceOf[scaleRange]
+  }
+}
 

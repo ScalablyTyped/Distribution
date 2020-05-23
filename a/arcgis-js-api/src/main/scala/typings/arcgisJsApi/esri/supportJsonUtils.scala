@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +16,11 @@ trait supportJsonUtils extends js.Object {
   def fromJSON(json: js.Any): Renderer
 }
 
-@JSGlobal("__esri.supportJsonUtils")
-@js.native
-object supportJsonUtils extends TopLevel[supportJsonUtils]
+object supportJsonUtils {
+  @scala.inline
+  def apply(fromJSON: js.Any => Renderer): supportJsonUtils = {
+    val __obj = js.Dynamic.literal(fromJSON = js.Any.fromFunction1(fromJSON))
+    __obj.asInstanceOf[supportJsonUtils]
+  }
+}
 

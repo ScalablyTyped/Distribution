@@ -5,18 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.Core.AnimationMetrics.PropertyAnimation")
-@js.native
-class PropertyAnimation () extends IPropertyAnimation {
-  /* CompleteClass */
-  override var control1: Point = js.native
-  /* CompleteClass */
-  override var control2: Point = js.native
-  /* CompleteClass */
-  override var delay: Double = js.native
-  /* CompleteClass */
-  override var duration: Double = js.native
-  /* CompleteClass */
-  override var `type`: PropertyAnimationType = js.native
+trait PropertyAnimation extends IPropertyAnimation
+
+object PropertyAnimation {
+  @scala.inline
+  def apply(control1: Point, control2: Point, delay: Double, duration: Double, `type`: PropertyAnimationType): PropertyAnimation = {
+    val __obj = js.Dynamic.literal(control1 = control1.asInstanceOf[js.Any], control2 = control2.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PropertyAnimation]
+  }
 }
 

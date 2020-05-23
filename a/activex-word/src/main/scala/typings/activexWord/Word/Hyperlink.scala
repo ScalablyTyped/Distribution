@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.Hyperlink")
 @js.native
-class Hyperlink protected () extends js.Object {
+trait Hyperlink extends js.Object {
   var Address: String = js.native
   val AddressOld: String = js.native
   val Application: typings.activexWord.Word.Application = js.native

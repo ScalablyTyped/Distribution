@@ -15,7 +15,7 @@ package object mod {
         typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement], 
         typings.std.HTMLDivElement
       ]) with typings.reflexbox.mod.BoxProps, 
-      typings.reflexbox.reflexboxStrings.ref | typings.reflexbox.reflexboxStrings.key
+      /* keyof react.react.ClassAttributes<any> */ typings.reflexbox.reflexboxStrings.ref | typings.reflexbox.reflexboxStrings.key
     ], 
     js.Object
   ]

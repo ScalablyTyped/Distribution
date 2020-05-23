@@ -27,8 +27,8 @@ object ProgressJsOptions {
     theme: String = null
   ): ProgressJsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(considerTransition)) __obj.updateDynamic("considerTransition")(considerTransition.asInstanceOf[js.Any])
-    if (!js.isUndefined(overlayMode)) __obj.updateDynamic("overlayMode")(overlayMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(considerTransition)) __obj.updateDynamic("considerTransition")(considerTransition.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlayMode)) __obj.updateDynamic("overlayMode")(overlayMode.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressJsOptions]
   }

@@ -22,17 +22,17 @@ object RefTransaction {
     hash: String,
     inputs: js.Array[Input],
     extra_data: String = null,
-    lock_time: Int | Double = null,
-    timestamp: Int | Double = null,
-    version: Int | Double = null,
-    version_group_id: Int | Double = null
+    lock_time: js.UndefOr[Double] = js.undefined,
+    timestamp: js.UndefOr[Double] = js.undefined,
+    version: js.UndefOr[Double] = js.undefined,
+    version_group_id: js.UndefOr[Double] = js.undefined
   ): RefTransaction = {
     val __obj = js.Dynamic.literal(bin_outputs = bin_outputs.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any])
     if (extra_data != null) __obj.updateDynamic("extra_data")(extra_data.asInstanceOf[js.Any])
-    if (lock_time != null) __obj.updateDynamic("lock_time")(lock_time.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (version_group_id != null) __obj.updateDynamic("version_group_id")(version_group_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(lock_time)) __obj.updateDynamic("lock_time")(lock_time.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(version_group_id)) __obj.updateDynamic("version_group_id")(version_group_id.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefTransaction]
   }
 }

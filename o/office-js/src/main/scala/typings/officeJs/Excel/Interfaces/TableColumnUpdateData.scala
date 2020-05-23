@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait TableColumnUpdateData extends js.Object {
   /**
     *
-    * Represents the name of the table column.
+    * Specifies the name of the table column.
     *
     * [Api set: ExcelApi 1.1 for getting the name; 1.4 for setting it.]
     */

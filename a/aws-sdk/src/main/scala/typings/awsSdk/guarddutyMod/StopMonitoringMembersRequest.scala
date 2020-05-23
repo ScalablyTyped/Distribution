@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StopMonitoringMembersRequest extends js.Object {
   /**
-    * A list of account IDs of the GuardDuty member accounts whose findings you want the master account to stop monitoring.
+    * A list of account IDs for the member accounts to stop monitoring.
     */
   var AccountIds: typings.awsSdk.guarddutyMod.AccountIds = js.native
   /**
-    * The unique ID of the detector of the GuardDuty account that you want to stop from monitor members' findings.
+    * The unique ID of the detector associated with the GuardDuty master account that is monitoring member accounts.
     */
   var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
 }

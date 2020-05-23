@@ -1,7 +1,7 @@
 package typings.primereact.contextMenuMod
 
 import typings.primereact.menuItemMod.MenuItem
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +14,8 @@ trait ContextMenuProps extends js.Object {
   var global: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var model: js.UndefOr[js.Array[MenuItem]] = js.undefined
-  var onHide: js.UndefOr[js.Function1[/* e */ Event_, Unit]] = js.undefined
-  var onShow: js.UndefOr[js.Function1[/* e */ Event_, Unit]] = js.undefined
+  var onHide: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
+  var onShow: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
 }
 
@@ -24,21 +24,21 @@ object ContextMenuProps {
   def apply(
     appendTo: js.Any = null,
     autoZIndex: js.UndefOr[Boolean] = js.undefined,
-    baseZIndex: Int | Double = null,
+    baseZIndex: js.UndefOr[Double] = js.undefined,
     className: String = null,
     global: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     model: js.Array[MenuItem] = null,
-    onHide: /* e */ Event_ => Unit = null,
-    onShow: /* e */ Event_ => Unit = null,
+    onHide: /* e */ Event => Unit = null,
+    onShow: /* e */ Event => Unit = null,
     style: js.Object = null
   ): ContextMenuProps = {
     val __obj = js.Dynamic.literal()
     if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoZIndex)) __obj.updateDynamic("autoZIndex")(autoZIndex.asInstanceOf[js.Any])
-    if (baseZIndex != null) __obj.updateDynamic("baseZIndex")(baseZIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoZIndex)) __obj.updateDynamic("autoZIndex")(autoZIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(baseZIndex)) __obj.updateDynamic("baseZIndex")(baseZIndex.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction1(onHide))

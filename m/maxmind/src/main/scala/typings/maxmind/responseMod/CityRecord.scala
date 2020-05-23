@@ -12,9 +12,9 @@ trait CityRecord extends js.Object {
 
 object CityRecord {
   @scala.inline
-  def apply(geoname_id: Double, names: Names, confidence: Int | Double = null): CityRecord = {
+  def apply(geoname_id: Double, names: Names, confidence: js.UndefOr[Double] = js.undefined): CityRecord = {
     val __obj = js.Dynamic.literal(geoname_id = geoname_id.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any])
-    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CityRecord]
   }
 }

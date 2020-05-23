@@ -25,9 +25,12 @@ trait NavigationBarAnimation extends js.Object {
 
 object NavigationBarAnimation {
   @scala.inline
-  def apply(duration: Int | Double = null, timingFunc: linear | easeIn | easeOut | easeInOut = null): NavigationBarAnimation = {
+  def apply(
+    duration: js.UndefOr[Double] = js.undefined,
+    timingFunc: linear | easeIn | easeOut | easeInOut = null
+  ): NavigationBarAnimation = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (timingFunc != null) __obj.updateDynamic("timingFunc")(timingFunc.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationBarAnimation]
   }

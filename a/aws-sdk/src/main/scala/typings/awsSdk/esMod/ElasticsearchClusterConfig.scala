@@ -51,28 +51,28 @@ trait ElasticsearchClusterConfig extends js.Object {
 object ElasticsearchClusterConfig {
   @scala.inline
   def apply(
-    DedicatedMasterCount: Int | scala.Double = null,
-    DedicatedMasterEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    DedicatedMasterCount: js.UndefOr[IntegerClass] = js.undefined,
+    DedicatedMasterEnabled: js.UndefOr[Boolean] = js.undefined,
     DedicatedMasterType: ESPartitionInstanceType = null,
-    InstanceCount: Int | scala.Double = null,
+    InstanceCount: js.UndefOr[IntegerClass] = js.undefined,
     InstanceType: ESPartitionInstanceType = null,
-    WarmCount: Int | scala.Double = null,
-    WarmEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    WarmCount: js.UndefOr[IntegerClass] = js.undefined,
+    WarmEnabled: js.UndefOr[Boolean] = js.undefined,
     WarmType: ESWarmPartitionInstanceType = null,
     ZoneAwarenessConfig: ZoneAwarenessConfig = null,
-    ZoneAwarenessEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    ZoneAwarenessEnabled: js.UndefOr[Boolean] = js.undefined
   ): ElasticsearchClusterConfig = {
     val __obj = js.Dynamic.literal()
-    if (DedicatedMasterCount != null) __obj.updateDynamic("DedicatedMasterCount")(DedicatedMasterCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(DedicatedMasterEnabled)) __obj.updateDynamic("DedicatedMasterEnabled")(DedicatedMasterEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(DedicatedMasterCount)) __obj.updateDynamic("DedicatedMasterCount")(DedicatedMasterCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DedicatedMasterEnabled)) __obj.updateDynamic("DedicatedMasterEnabled")(DedicatedMasterEnabled.get.asInstanceOf[js.Any])
     if (DedicatedMasterType != null) __obj.updateDynamic("DedicatedMasterType")(DedicatedMasterType.asInstanceOf[js.Any])
-    if (InstanceCount != null) __obj.updateDynamic("InstanceCount")(InstanceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount.get.asInstanceOf[js.Any])
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (WarmCount != null) __obj.updateDynamic("WarmCount")(WarmCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(WarmEnabled)) __obj.updateDynamic("WarmEnabled")(WarmEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(WarmCount)) __obj.updateDynamic("WarmCount")(WarmCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(WarmEnabled)) __obj.updateDynamic("WarmEnabled")(WarmEnabled.get.asInstanceOf[js.Any])
     if (WarmType != null) __obj.updateDynamic("WarmType")(WarmType.asInstanceOf[js.Any])
     if (ZoneAwarenessConfig != null) __obj.updateDynamic("ZoneAwarenessConfig")(ZoneAwarenessConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(ZoneAwarenessEnabled)) __obj.updateDynamic("ZoneAwarenessEnabled")(ZoneAwarenessEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(ZoneAwarenessEnabled)) __obj.updateDynamic("ZoneAwarenessEnabled")(ZoneAwarenessEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElasticsearchClusterConfig]
   }
 }

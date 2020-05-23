@@ -44,21 +44,21 @@ object SocketOptions {
   @scala.inline
   def apply(
     autoReconnect: js.UndefOr[Boolean] = js.undefined,
-    connectTimeoutMS: Int | scala.Double = null,
-    family: `4` | `6` = null,
+    connectTimeoutMS: js.UndefOr[scala.Double] = js.undefined,
+    family: js.UndefOr[Null | `4` | `6`] = js.undefined,
     keepAlive: js.UndefOr[Boolean] = js.undefined,
-    keepAliveInitialDelay: Int | scala.Double = null,
+    keepAliveInitialDelay: js.UndefOr[scala.Double] = js.undefined,
     noDelay: js.UndefOr[Boolean] = js.undefined,
-    socketTimeoutMS: Int | scala.Double = null
+    socketTimeoutMS: js.UndefOr[scala.Double] = js.undefined
   ): SocketOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoReconnect)) __obj.updateDynamic("autoReconnect")(autoReconnect.asInstanceOf[js.Any])
-    if (connectTimeoutMS != null) __obj.updateDynamic("connectTimeoutMS")(connectTimeoutMS.asInstanceOf[js.Any])
-    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.asInstanceOf[js.Any])
-    if (keepAliveInitialDelay != null) __obj.updateDynamic("keepAliveInitialDelay")(keepAliveInitialDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(noDelay)) __obj.updateDynamic("noDelay")(noDelay.asInstanceOf[js.Any])
-    if (socketTimeoutMS != null) __obj.updateDynamic("socketTimeoutMS")(socketTimeoutMS.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoReconnect)) __obj.updateDynamic("autoReconnect")(autoReconnect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectTimeoutMS)) __obj.updateDynamic("connectTimeoutMS")(connectTimeoutMS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(family)) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepAliveInitialDelay)) __obj.updateDynamic("keepAliveInitialDelay")(keepAliveInitialDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noDelay)) __obj.updateDynamic("noDelay")(noDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(socketTimeoutMS)) __obj.updateDynamic("socketTimeoutMS")(socketTimeoutMS.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketOptions]
   }
 }

@@ -19,8 +19,8 @@ trait Selection_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, 
     *
     * @param type A string representing the tag name.
     */
-  def append[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](`type`: K): Selection_[
-    /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.ElementTagNameMap[K] */ js.Any, 
+  def append[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](`type`: K): Selection_[
+    /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any, 
     Datum, 
     PElement, 
     PDatum
@@ -377,20 +377,20 @@ trait Selection_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, 
     *     the current index (i), and the current group (nodes), with this as the current DOM element (nodes[i]). This function should return the child element
     *     before which the element should be inserted.
     */
-  def insert[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](`type`: K): Selection_[
-    /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.ElementTagNameMap[K] */ js.Any, 
+  def insert[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](`type`: K): Selection_[
+    /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any, 
     Datum, 
     PElement, 
     PDatum
   ] = js.native
-  def insert[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](`type`: K, before: String): Selection_[
-    /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.ElementTagNameMap[K] */ js.Any, 
+  def insert[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](`type`: K, before: String): Selection_[
+    /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any, 
     Datum, 
     PElement, 
     PDatum
   ] = js.native
-  def insert[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](`type`: K, before: ValueFn[GElement, Datum, BaseType]): Selection_[
-    /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.ElementTagNameMap[K] */ js.Any, 
+  def insert[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](`type`: K, before: ValueFn[GElement, Datum, BaseType]): Selection_[
+    /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any, 
     Datum, 
     PElement, 
     PDatum
@@ -431,25 +431,25 @@ trait Selection_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, 
     *
     * The "matching" logic is determined by the key function passed to `selection.data`.
     */
-  def join[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */, OldDatum](enter: K): Selection_[
-    GElement | (/* import warning: importer.ImportType#apply Failed type conversion: d3-selection.ElementTagNameMap[K] */ js.Any), 
+  def join[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */, OldDatum](enter: K): Selection_[
+    GElement | (/* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any), 
     Datum, 
     PElement, 
     PDatum
   ] = js.native
-  def join[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */, OldDatum](
+  def join[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */, OldDatum](
     enter: K,
     update: js.Function1[
       /* elem */ Selection_[GElement, Datum, PElement, PDatum], 
       js.UndefOr[Selection_[GElement, Datum, PElement, PDatum]]
     ]
   ): Selection_[
-    GElement | (/* import warning: importer.ImportType#apply Failed type conversion: d3-selection.ElementTagNameMap[K] */ js.Any), 
+    GElement | (/* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any), 
     Datum, 
     PElement, 
     PDatum
   ] = js.native
-  def join[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */, OldDatum](
+  def join[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */, OldDatum](
     enter: K,
     update: js.Function1[
       /* elem */ Selection_[GElement, Datum, PElement, PDatum], 
@@ -457,7 +457,7 @@ trait Selection_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, 
     ],
     exit: js.Function1[/* elem */ Selection_[GElement, OldDatum, PElement, PDatum], Unit]
   ): Selection_[
-    GElement | (/* import warning: importer.ImportType#apply Failed type conversion: d3-selection.ElementTagNameMap[K] */ js.Any), 
+    GElement | (/* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any), 
     Datum, 
     PElement, 
     PDatum

@@ -73,25 +73,25 @@ object SankeyProps {
     label: String | AccessorFunc = null,
     labelFormat: String | LabelFormatter = null,
     labelOrientation: horizontal | vertical = null,
-    labelPadding: Int | Double = null,
+    labelPadding: js.UndefOr[Double] = js.undefined,
     labelPosition: inside | outside = null,
     labelTextColor: InheritedColorProp[SankeyNodeDatum] = null,
     legends: js.Array[LegendProps] = null,
     linkBlendMode: CssMixBlendMode = null,
-    linkContract: Int | Double = null,
-    linkHoverOpacity: Int | Double = null,
-    linkHoverOthersOpacity: Int | Double = null,
-    linkOpacity: Int | Double = null,
+    linkContract: js.UndefOr[Double] = js.undefined,
+    linkHoverOpacity: js.UndefOr[Double] = js.undefined,
+    linkHoverOthersOpacity: js.UndefOr[Double] = js.undefined,
+    linkOpacity: js.UndefOr[Double] = js.undefined,
     linkTooltip: SankeyLinkProps => ReactNode = null,
     margin: Box = null,
     nodeBorderColor: InheritedColorProp[SankeyNodeDatum] = null,
-    nodeBorderWidth: Int | Double = null,
-    nodeHoverOpacity: Int | Double = null,
-    nodeHoverOthersOpacity: Int | Double = null,
-    nodeInnerPadding: Int | Double = null,
-    nodeOpacity: Int | Double = null,
-    nodeSpacing: Int | Double = null,
-    nodeThickness: Int | Double = null,
+    nodeBorderWidth: js.UndefOr[Double] = js.undefined,
+    nodeHoverOpacity: js.UndefOr[Double] = js.undefined,
+    nodeHoverOthersOpacity: js.UndefOr[Double] = js.undefined,
+    nodeInnerPadding: js.UndefOr[Double] = js.undefined,
+    nodeOpacity: js.UndefOr[Double] = js.undefined,
+    nodeSpacing: js.UndefOr[Double] = js.undefined,
+    nodeThickness: js.UndefOr[Double] = js.undefined,
     nodeTooltip: SankeyNodeProps => ReactNode = null,
     onClick: (/* data */ SankeyNodeDatum | SankeyLinkDatum, /* event */ MouseEvent[Element, NativeMouseEvent]) => Unit = null,
     sort: auto | input | ascending | descending | SankeySortFunction = null,
@@ -101,31 +101,31 @@ object SankeyProps {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLabels)) __obj.updateDynamic("enableLabels")(enableLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLinkGradient)) __obj.updateDynamic("enableLinkGradient")(enableLinkGradient.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInteractive)) __obj.updateDynamic("isInteractive")(isInteractive.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableLabels)) __obj.updateDynamic("enableLabels")(enableLabels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableLinkGradient)) __obj.updateDynamic("enableLinkGradient")(enableLinkGradient.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInteractive)) __obj.updateDynamic("isInteractive")(isInteractive.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelFormat != null) __obj.updateDynamic("labelFormat")(labelFormat.asInstanceOf[js.Any])
     if (labelOrientation != null) __obj.updateDynamic("labelOrientation")(labelOrientation.asInstanceOf[js.Any])
-    if (labelPadding != null) __obj.updateDynamic("labelPadding")(labelPadding.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelPadding)) __obj.updateDynamic("labelPadding")(labelPadding.get.asInstanceOf[js.Any])
     if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
     if (labelTextColor != null) __obj.updateDynamic("labelTextColor")(labelTextColor.asInstanceOf[js.Any])
     if (legends != null) __obj.updateDynamic("legends")(legends.asInstanceOf[js.Any])
     if (linkBlendMode != null) __obj.updateDynamic("linkBlendMode")(linkBlendMode.asInstanceOf[js.Any])
-    if (linkContract != null) __obj.updateDynamic("linkContract")(linkContract.asInstanceOf[js.Any])
-    if (linkHoverOpacity != null) __obj.updateDynamic("linkHoverOpacity")(linkHoverOpacity.asInstanceOf[js.Any])
-    if (linkHoverOthersOpacity != null) __obj.updateDynamic("linkHoverOthersOpacity")(linkHoverOthersOpacity.asInstanceOf[js.Any])
-    if (linkOpacity != null) __obj.updateDynamic("linkOpacity")(linkOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkContract)) __obj.updateDynamic("linkContract")(linkContract.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkHoverOpacity)) __obj.updateDynamic("linkHoverOpacity")(linkHoverOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkHoverOthersOpacity)) __obj.updateDynamic("linkHoverOthersOpacity")(linkHoverOthersOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkOpacity)) __obj.updateDynamic("linkOpacity")(linkOpacity.get.asInstanceOf[js.Any])
     if (linkTooltip != null) __obj.updateDynamic("linkTooltip")(js.Any.fromFunction1(linkTooltip))
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (nodeBorderColor != null) __obj.updateDynamic("nodeBorderColor")(nodeBorderColor.asInstanceOf[js.Any])
-    if (nodeBorderWidth != null) __obj.updateDynamic("nodeBorderWidth")(nodeBorderWidth.asInstanceOf[js.Any])
-    if (nodeHoverOpacity != null) __obj.updateDynamic("nodeHoverOpacity")(nodeHoverOpacity.asInstanceOf[js.Any])
-    if (nodeHoverOthersOpacity != null) __obj.updateDynamic("nodeHoverOthersOpacity")(nodeHoverOthersOpacity.asInstanceOf[js.Any])
-    if (nodeInnerPadding != null) __obj.updateDynamic("nodeInnerPadding")(nodeInnerPadding.asInstanceOf[js.Any])
-    if (nodeOpacity != null) __obj.updateDynamic("nodeOpacity")(nodeOpacity.asInstanceOf[js.Any])
-    if (nodeSpacing != null) __obj.updateDynamic("nodeSpacing")(nodeSpacing.asInstanceOf[js.Any])
-    if (nodeThickness != null) __obj.updateDynamic("nodeThickness")(nodeThickness.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeBorderWidth)) __obj.updateDynamic("nodeBorderWidth")(nodeBorderWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeHoverOpacity)) __obj.updateDynamic("nodeHoverOpacity")(nodeHoverOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeHoverOthersOpacity)) __obj.updateDynamic("nodeHoverOthersOpacity")(nodeHoverOthersOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeInnerPadding)) __obj.updateDynamic("nodeInnerPadding")(nodeInnerPadding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeOpacity)) __obj.updateDynamic("nodeOpacity")(nodeOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeSpacing)) __obj.updateDynamic("nodeSpacing")(nodeSpacing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeThickness)) __obj.updateDynamic("nodeThickness")(nodeThickness.get.asInstanceOf[js.Any])
     if (nodeTooltip != null) __obj.updateDynamic("nodeTooltip")(js.Any.fromFunction1(nodeTooltip))
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Storage
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object FileAccessMode extends js.Object {
   /** Access the file stream in read/write mode. */
   @js.native
   sealed trait readWrite extends FileAccessMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FileAccessMode with Double] = js.native
-  /* 0 */ @js.native
-  object read extends TopLevel[read with Double]
-  
-  /* 1 */ @js.native
-  object readWrite extends TopLevel[readWrite with Double]
   
 }
 

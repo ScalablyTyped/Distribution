@@ -1,6 +1,5 @@
 package typings.googlemaps.google.maps
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,23 +24,6 @@ object MapTypeControlStyle extends js.Object {
   
   @js.native
   sealed trait INSET_LARGE extends MapTypeControlStyle
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MapTypeControlStyle with Double] = js.native
-  /* 0 */ @js.native
-  object DEFAULT extends TopLevel[DEFAULT with Double]
-  
-  /* 2 */ @js.native
-  object DROPDOWN_MENU extends TopLevel[DROPDOWN_MENU with Double]
-  
-  /* 1 */ @js.native
-  object HORIZONTAL_BAR extends TopLevel[HORIZONTAL_BAR with Double]
-  
-  /* 3 */ @js.native
-  object INSET extends TopLevel[INSET with Double]
-  
-  /* 4 */ @js.native
-  object INSET_LARGE extends TopLevel[INSET_LARGE with Double]
   
 }
 

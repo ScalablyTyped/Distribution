@@ -16,11 +16,15 @@ trait IEventFilter extends js.Object {
 
 object IEventFilter {
   @scala.inline
-  def apply(filterType: FilterType = null, key: String = null, matchString: String = null): IEventFilter = {
+  def apply(
+    filterType: js.UndefOr[Null | FilterType] = js.undefined,
+    key: js.UndefOr[Null | String] = js.undefined,
+    matchString: js.UndefOr[Null | String] = js.undefined
+  ): IEventFilter = {
     val __obj = js.Dynamic.literal()
-    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (matchString != null) __obj.updateDynamic("matchString")(matchString.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterType)) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
+    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchString)) __obj.updateDynamic("matchString")(matchString.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEventFilter]
   }
 }

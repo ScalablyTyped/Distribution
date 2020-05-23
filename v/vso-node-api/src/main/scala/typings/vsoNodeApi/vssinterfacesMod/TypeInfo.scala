@@ -1,8 +1,8 @@
 package typings.vsoNodeApi.vssinterfacesMod
 
-import typings.vsoNodeApi.AnonEnumValuesAnonCopy
-import typings.vsoNodeApi.AnonEnumValuesAnonHS256
-import typings.vsoNodeApi.AnonEnumValuesAnonIncludeInheritedDefinitionsOnly
+import typings.vsoNodeApi.anon.EnumValuesCopy
+import typings.vsoNodeApi.anon.EnumValuesHS256
+import typings.vsoNodeApi.anon.EnumValuesIncludeInheritedDefinitionsOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @JSImport("vso-node-api/interfaces/common/VSSInterfaces", "TypeInfo")
 @js.native
 object TypeInfo extends js.Object {
-  var ConnectOptions: AnonEnumValuesAnonIncludeInheritedDefinitionsOnly = js.native
-  var JWTAlgorithm: AnonEnumValuesAnonHS256 = js.native
+  var ConnectOptions: EnumValuesIncludeInheritedDefinitionsOnly = js.native
+  var JWTAlgorithm: EnumValuesHS256 = js.native
   var JsonPatchOperation: js.Any = js.native
-  var Operation: AnonEnumValuesAnonCopy = js.native
+  var Operation: EnumValuesCopy = js.native
 }
 

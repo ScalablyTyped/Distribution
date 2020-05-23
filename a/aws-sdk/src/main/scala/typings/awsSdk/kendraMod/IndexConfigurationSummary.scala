@@ -11,6 +11,10 @@ trait IndexConfigurationSummary extends js.Object {
     */
   var CreatedAt: Timestamp = js.native
   /**
+    * Indicates whether the index is a enterprise edition index or a developer edition index. 
+    */
+  var Edition: js.UndefOr[IndexEdition] = js.native
+  /**
     * A unique identifier for the index. Use this to identify the index when you are using operations such as Query, DescribeIndex, UpdateIndex, and DeleteIndex.
     */
   var Id: js.UndefOr[IndexId] = js.native
@@ -34,10 +38,12 @@ object IndexConfigurationSummary {
     CreatedAt: Timestamp,
     Status: IndexStatus,
     UpdatedAt: Timestamp,
+    Edition: IndexEdition = null,
     Id: IndexId = null,
     Name: IndexName = null
   ): IndexConfigurationSummary = {
     val __obj = js.Dynamic.literal(CreatedAt = CreatedAt.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], UpdatedAt = UpdatedAt.asInstanceOf[js.Any])
+    if (Edition != null) __obj.updateDynamic("Edition")(Edition.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexConfigurationSummary]

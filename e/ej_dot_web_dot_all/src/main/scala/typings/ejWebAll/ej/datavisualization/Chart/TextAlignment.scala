@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.Chart
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object TextAlignment extends js.Object {
   //string
   @js.native
   sealed trait MiddleTop extends TextAlignment
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TextAlignment with Double] = js.native
-  /* 2 */ @js.native
-  object MiddleBottom extends TopLevel[MiddleBottom with Double]
-  
-  /* 1 */ @js.native
-  object MiddleCenter extends TopLevel[MiddleCenter with Double]
-  
-  /* 0 */ @js.native
-  object MiddleTop extends TopLevel[MiddleTop with Double]
   
 }
 

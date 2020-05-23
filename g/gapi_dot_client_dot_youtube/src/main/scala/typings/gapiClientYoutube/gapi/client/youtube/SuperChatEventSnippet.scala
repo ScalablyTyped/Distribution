@@ -32,7 +32,7 @@ object SuperChatEventSnippet {
     createdAt: String = null,
     currency: String = null,
     displayString: String = null,
-    messageType: Int | Double = null,
+    messageType: js.UndefOr[Double] = js.undefined,
     supporterDetails: ChannelProfileDetails = null
   ): SuperChatEventSnippet = {
     val __obj = js.Dynamic.literal()
@@ -42,7 +42,7 @@ object SuperChatEventSnippet {
     if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
     if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     if (displayString != null) __obj.updateDynamic("displayString")(displayString.asInstanceOf[js.Any])
-    if (messageType != null) __obj.updateDynamic("messageType")(messageType.asInstanceOf[js.Any])
+    if (!js.isUndefined(messageType)) __obj.updateDynamic("messageType")(messageType.get.asInstanceOf[js.Any])
     if (supporterDetails != null) __obj.updateDynamic("supporterDetails")(supporterDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuperChatEventSnippet]
   }

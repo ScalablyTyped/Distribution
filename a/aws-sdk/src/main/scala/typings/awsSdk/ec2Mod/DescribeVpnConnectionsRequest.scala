@@ -23,12 +23,12 @@ trait DescribeVpnConnectionsRequest extends js.Object {
 object DescribeVpnConnectionsRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     Filters: FilterList = null,
     VpnConnectionIds: VpnConnectionIdStringList = null
   ): DescribeVpnConnectionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
     if (VpnConnectionIds != null) __obj.updateDynamic("VpnConnectionIds")(VpnConnectionIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeVpnConnectionsRequest]

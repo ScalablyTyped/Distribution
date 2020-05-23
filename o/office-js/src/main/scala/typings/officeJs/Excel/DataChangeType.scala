@@ -1,6 +1,5 @@
 package typings.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -69,32 +68,6 @@ object DataChangeType extends js.Object {
     */
   @js.native
   sealed trait unknown extends DataChangeType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[DataChangeType with String] = js.native
-  /* "CellDeleted" */ @js.native
-  object cellDeleted extends TopLevel[cellDeleted with String]
-  
-  /* "CellInserted" */ @js.native
-  object cellInserted extends TopLevel[cellInserted with String]
-  
-  /* "ColumnDeleted" */ @js.native
-  object columnDeleted extends TopLevel[columnDeleted with String]
-  
-  /* "ColumnInserted" */ @js.native
-  object columnInserted extends TopLevel[columnInserted with String]
-  
-  /* "RangeEdited" */ @js.native
-  object rangeEdited extends TopLevel[rangeEdited with String]
-  
-  /* "RowDeleted" */ @js.native
-  object rowDeleted extends TopLevel[rowDeleted with String]
-  
-  /* "RowInserted" */ @js.native
-  object rowInserted extends TopLevel[rowInserted with String]
-  
-  /* "Unknown" */ @js.native
-  object unknown extends TopLevel[unknown with String]
   
 }
 

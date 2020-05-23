@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@snyk/composer-lockfile-parser" : "1.4.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@snyk/composer-lockfile-parser" : "1.4.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

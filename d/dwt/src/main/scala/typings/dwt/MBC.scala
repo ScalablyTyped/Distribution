@@ -4,15 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MBC")
-@js.native
-class MBC () extends js.Object {
+trait MBC extends js.Object {
   /**
     * Tell this painter the directory where you place`cv-wasm.js` and`cv-wasm.wasm`.
     
     * Syntax:* `MBC.cvFolder = 'js';`
     */
-  var cvFolder: String = js.native
+  var cvFolder: String
   /**
     * You should call`MBC.loadCvScriptAsync()` first before use`Free Transform` and`Brush` module.
     
@@ -34,6 +32,14 @@ class MBC () extends js.Object {
   });
   ```
     */
-  def loadCvScriptAsync(): Unit = js.native
+  def loadCvScriptAsync(): Unit
+}
+
+object MBC {
+  @scala.inline
+  def apply(cvFolder: String, loadCvScriptAsync: () => Unit): MBC = {
+    val __obj = js.Dynamic.literal(cvFolder = cvFolder.asInstanceOf[js.Any], loadCvScriptAsync = js.Any.fromFunction0(loadCvScriptAsync))
+    __obj.asInstanceOf[MBC]
+  }
 }
 

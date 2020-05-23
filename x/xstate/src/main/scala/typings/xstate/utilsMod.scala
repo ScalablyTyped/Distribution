@@ -4,6 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
 import typings.std.Partial
 import typings.std.Record
+import typings.xstate.anon.Context
+import typings.xstate.anon.`2`
 import typings.xstate.mod.State
 import typings.xstate.stateNodeMod.StateNode
 import typings.xstate.typesMod.Action
@@ -41,7 +43,7 @@ object utilsMod extends js.Object {
     guard: Guard[TContext, TEvent],
     context: TContext,
     _event: Event[TEvent],
-    state: State[TContext, TEvent, _, _]
+    state: State[TContext, TEvent, _, Context[TContext]]
   ): Boolean = js.native
   def flatten[T](array: js.Array[T | js.Array[T]]): js.Array[T] = js.native
   def getActionType(action: Action[_, _]): ActionType = js.native
@@ -107,27 +109,27 @@ object utilsMod extends js.Object {
     configLike: SingleOrArray[
       (TransitionConfig[TContext, TEvent]) | (TransitionConfigTarget[TContext, TEvent])
     ]
-  ): js.Array[(TransitionConfig[TContext, TEvent]) with Anon2[TEvent]] = js.native
+  ): js.Array[(TransitionConfig[TContext, TEvent]) with `2`[TEvent]] = js.native
   def toTransitionConfigArray[TContext, TEvent /* <: EventObject */](
     event: Asterisk,
     configLike: SingleOrArray[
       (TransitionConfig[TContext, TEvent]) | (TransitionConfigTarget[TContext, TEvent])
     ]
-  ): js.Array[(TransitionConfig[TContext, TEvent]) with Anon2[TEvent]] = js.native
+  ): js.Array[(TransitionConfig[TContext, TEvent]) with `2`[TEvent]] = js.native
   @JSName("toTransitionConfigArray")
   def toTransitionConfigArray_type[TContext, TEvent /* <: EventObject */](
     event: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any,
     configLike: SingleOrArray[
       (TransitionConfig[TContext, TEvent]) | (TransitionConfigTarget[TContext, TEvent])
     ]
-  ): js.Array[(TransitionConfig[TContext, TEvent]) with Anon2[TEvent]] = js.native
+  ): js.Array[(TransitionConfig[TContext, TEvent]) with `2`[TEvent]] = js.native
   def uniqueId(): String = js.native
   def updateContext[TContext, TEvent /* <: EventObject */](context: TContext, _event: Event[TEvent], assignActions: js.Array[AssignAction[TContext, TEvent]]): TContext = js.native
   def updateContext[TContext, TEvent /* <: EventObject */](
     context: TContext,
     _event: Event[TEvent],
     assignActions: js.Array[AssignAction[TContext, TEvent]],
-    state: State[TContext, TEvent, _, _]
+    state: State[TContext, TEvent, _, Context[TContext]]
   ): TContext = js.native
   def updateHistoryStates(hist: HistoryValue, stateValue: StateValue): Record[String, js.UndefOr[HistoryValue]] = js.native
   def updateHistoryValue(hist: HistoryValue, stateValue: StateValue): HistoryValue = js.native

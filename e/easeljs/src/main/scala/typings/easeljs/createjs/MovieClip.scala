@@ -5,13 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("createjs.MovieClip")
 @js.native
-class MovieClip () extends Container {
-  def this(mode: String) = this()
-  def this(mode: String, startPosition: Double) = this()
-  def this(mode: String, startPosition: Double, loop: Boolean) = this()
-  def this(mode: String, startPosition: Double, loop: Boolean, labels: js.Object) = this()
+trait MovieClip extends Container {
   // properties
   var actionsEnabled: Boolean = js.native
   var autoReset: Boolean = js.native
@@ -46,16 +41,5 @@ class MovieClip () extends Container {
   def gotoAndStop(positionOrLabel: Double): Unit = js.native
   def play(): Unit = js.native
   def stop(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("createjs.MovieClip")
-@js.native
-object MovieClip extends js.Object {
-  var INDEPENDENT: String = js.native
-  var SINGLE_FRAME: String = js.native
-  var SYNCHED: String = js.native
-  var buildDate: String = js.native
-  var version: String = js.native
 }
 

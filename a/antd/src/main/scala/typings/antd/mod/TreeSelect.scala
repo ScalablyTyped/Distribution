@@ -1,6 +1,6 @@
 package typings.antd.mod
 
-import typings.antd.AnonChoiceTransitionName
+import typings.antd.anon.ChoiceTransitionName
 import typings.antd.treeSelectMod.TreeSelectProps
 import typings.antd.treeSelectMod.default
 import typings.rcTreeSelect.treeNodeMod.TreeNodeProps
@@ -23,6 +23,6 @@ object TreeSelect extends js.Object {
   var SHOW_CHILD: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SHOW_CHILD */ js.Any = js.native
   var SHOW_PARENT: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SHOW_PARENT */ js.Any = js.native
   var TreeNode: FC[TreeNodeProps] = js.native
-  var defaultProps: AnonChoiceTransitionName = js.native
+  var defaultProps: ChoiceTransitionName = js.native
 }
 

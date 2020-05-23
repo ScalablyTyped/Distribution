@@ -1,6 +1,6 @@
 package typings.mongoose.mod
 
-import typings.mongoose.Typeofmongoose
+import typings.mongoose.anon.Typeofmongoose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

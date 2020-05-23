@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * A command to toggle justified paragraph alignment on and off.
   */
-@JSGlobal("ToggleParagraphAlignmentJustifyCommand")
-@js.native
-class ToggleParagraphAlignmentJustifyCommand () extends CommandWithBooleanStateBase {
+trait ToggleParagraphAlignmentJustifyCommand extends CommandWithBooleanStateBase {
   /**
     * Executes the ToggleParagraphAlignmentJustifyCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
+}
+
+object ToggleParagraphAlignmentJustifyCommand {
+  @scala.inline
+  def apply(execute: () => Boolean, getState: () => CommandState[Boolean]): ToggleParagraphAlignmentJustifyCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
+    __obj.asInstanceOf[ToggleParagraphAlignmentJustifyCommand]
+  }
 }
 

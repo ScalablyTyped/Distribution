@@ -14,13 +14,13 @@ object WorkbookSheetColumn {
   @scala.inline
   def apply(
     autoWidth: js.UndefOr[Boolean] = js.undefined,
-    index: Int | Double = null,
-    width: Int | Double = null
+    index: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): WorkbookSheetColumn = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookSheetColumn]
   }
 }

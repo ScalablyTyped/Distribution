@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.StartScreen
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object ForegroundText extends js.Object {
   /** A Windows-specified default light text color. */
   @js.native
   sealed trait light extends ForegroundText
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ForegroundText with Double] = js.native
-  /* 0 */ @js.native
-  object dark extends TopLevel[dark with Double]
-  
-  /* 1 */ @js.native
-  object light extends TopLevel[light with Double]
   
 }
 

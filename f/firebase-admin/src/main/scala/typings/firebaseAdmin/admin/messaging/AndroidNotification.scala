@@ -89,7 +89,7 @@ trait AndroidNotification extends js.Object {
     * Settings to control the notification's LED blinking rate and color if LED is
     * available on the device. The total blinking time is controlled by the OS.
     */
-  var lightSettings: js.UndefOr[LightSettings] = js.undefined
+  var lightSettings: js.UndefOr[typings.firebaseAdmin.messagingMod.admin.messaging.LightSettings] = js.undefined
   /**
     * Sets whether or not this notification is relevant only to the current device.
     * Some notifications can be bridged to other devices for remote display, such as
@@ -184,9 +184,9 @@ object AndroidNotification {
     eventTimestamp: Date = null,
     icon: String = null,
     imageUrl: String = null,
-    lightSettings: LightSettings = null,
+    lightSettings: typings.firebaseAdmin.messagingMod.admin.messaging.LightSettings = null,
     localOnly: js.UndefOr[Boolean] = js.undefined,
-    notificationCount: Int | Double = null,
+    notificationCount: js.UndefOr[Double] = js.undefined,
     priority: min | low | default | high | max = null,
     sound: String = null,
     sticky: js.UndefOr[Boolean] = js.undefined,
@@ -205,18 +205,18 @@ object AndroidNotification {
     if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
     if (clickAction != null) __obj.updateDynamic("clickAction")(clickAction.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultLightSettings)) __obj.updateDynamic("defaultLightSettings")(defaultLightSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultSound)) __obj.updateDynamic("defaultSound")(defaultSound.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultVibrateTimings)) __obj.updateDynamic("defaultVibrateTimings")(defaultVibrateTimings.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultLightSettings)) __obj.updateDynamic("defaultLightSettings")(defaultLightSettings.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultSound)) __obj.updateDynamic("defaultSound")(defaultSound.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultVibrateTimings)) __obj.updateDynamic("defaultVibrateTimings")(defaultVibrateTimings.get.asInstanceOf[js.Any])
     if (eventTimestamp != null) __obj.updateDynamic("eventTimestamp")(eventTimestamp.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
     if (lightSettings != null) __obj.updateDynamic("lightSettings")(lightSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(localOnly)) __obj.updateDynamic("localOnly")(localOnly.asInstanceOf[js.Any])
-    if (notificationCount != null) __obj.updateDynamic("notificationCount")(notificationCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(localOnly)) __obj.updateDynamic("localOnly")(localOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(notificationCount)) __obj.updateDynamic("notificationCount")(notificationCount.get.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (sound != null) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
-    if (!js.isUndefined(sticky)) __obj.updateDynamic("sticky")(sticky.asInstanceOf[js.Any])
+    if (!js.isUndefined(sticky)) __obj.updateDynamic("sticky")(sticky.get.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     if (ticker != null) __obj.updateDynamic("ticker")(ticker.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

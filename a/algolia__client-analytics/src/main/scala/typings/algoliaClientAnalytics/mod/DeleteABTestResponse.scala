@@ -8,15 +8,15 @@ trait DeleteABTestResponse extends js.Object {
   /**
     * The ab test unique identifier.
     */
-  val abTestID: Double
+  var abTestID: Double
   /**
     * The index name where the ab test was attached to.
     */
-  val index: String
+  var index: String
   /**
     * The operation task id. May be used to perform a wait task.
     */
-  val taskID: Double
+  var taskID: Double
 }
 
 object DeleteABTestResponse {

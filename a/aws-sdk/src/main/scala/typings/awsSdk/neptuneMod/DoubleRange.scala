@@ -18,10 +18,10 @@ trait DoubleRange extends js.Object {
 
 object DoubleRange {
   @scala.inline
-  def apply(From: Int | scala.Double = null, To: Int | scala.Double = null): DoubleRange = {
+  def apply(From: js.UndefOr[Double] = js.undefined, To: js.UndefOr[Double] = js.undefined): DoubleRange = {
     val __obj = js.Dynamic.literal()
-    if (From != null) __obj.updateDynamic("From")(From.asInstanceOf[js.Any])
-    if (To != null) __obj.updateDynamic("To")(To.asInstanceOf[js.Any])
+    if (!js.isUndefined(From)) __obj.updateDynamic("From")(From.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(To)) __obj.updateDynamic("To")(To.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DoubleRange]
   }
 }

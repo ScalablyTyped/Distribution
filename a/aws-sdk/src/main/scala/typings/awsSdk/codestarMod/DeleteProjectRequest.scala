@@ -25,11 +25,11 @@ object DeleteProjectRequest {
   def apply(
     id: ProjectId,
     clientRequestToken: ClientRequestToken = null,
-    deleteStack: js.UndefOr[Boolean] = js.undefined
+    deleteStack: js.UndefOr[DeleteStack] = js.undefined
   ): DeleteProjectRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleteStack)) __obj.updateDynamic("deleteStack")(deleteStack.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleteStack)) __obj.updateDynamic("deleteStack")(deleteStack.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteProjectRequest]
   }
 }

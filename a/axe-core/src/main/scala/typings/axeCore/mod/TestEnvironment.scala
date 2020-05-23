@@ -18,11 +18,11 @@ object TestEnvironment {
     userAgent: String,
     windowHeight: Double,
     windowWidth: Double,
-    orientationAngle: Int | Double = null,
+    orientationAngle: js.UndefOr[Double] = js.undefined,
     orientationType: String = null
   ): TestEnvironment = {
     val __obj = js.Dynamic.literal(userAgent = userAgent.asInstanceOf[js.Any], windowHeight = windowHeight.asInstanceOf[js.Any], windowWidth = windowWidth.asInstanceOf[js.Any])
-    if (orientationAngle != null) __obj.updateDynamic("orientationAngle")(orientationAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(orientationAngle)) __obj.updateDynamic("orientationAngle")(orientationAngle.get.asInstanceOf[js.Any])
     if (orientationType != null) __obj.updateDynamic("orientationType")(orientationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestEnvironment]
   }

@@ -23,14 +23,14 @@ trait SnapshotLimits extends js.Object {
 object SnapshotLimits {
   @scala.inline
   def apply(
-    ManualSnapshotsCurrentCount: Int | Double = null,
-    ManualSnapshotsLimit: Int | Double = null,
-    ManualSnapshotsLimitReached: js.UndefOr[Boolean] = js.undefined
+    ManualSnapshotsCurrentCount: js.UndefOr[Limit] = js.undefined,
+    ManualSnapshotsLimit: js.UndefOr[Limit] = js.undefined,
+    ManualSnapshotsLimitReached: js.UndefOr[ManualSnapshotsLimitReached] = js.undefined
   ): SnapshotLimits = {
     val __obj = js.Dynamic.literal()
-    if (ManualSnapshotsCurrentCount != null) __obj.updateDynamic("ManualSnapshotsCurrentCount")(ManualSnapshotsCurrentCount.asInstanceOf[js.Any])
-    if (ManualSnapshotsLimit != null) __obj.updateDynamic("ManualSnapshotsLimit")(ManualSnapshotsLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(ManualSnapshotsLimitReached)) __obj.updateDynamic("ManualSnapshotsLimitReached")(ManualSnapshotsLimitReached.asInstanceOf[js.Any])
+    if (!js.isUndefined(ManualSnapshotsCurrentCount)) __obj.updateDynamic("ManualSnapshotsCurrentCount")(ManualSnapshotsCurrentCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ManualSnapshotsLimit)) __obj.updateDynamic("ManualSnapshotsLimit")(ManualSnapshotsLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ManualSnapshotsLimitReached)) __obj.updateDynamic("ManualSnapshotsLimitReached")(ManualSnapshotsLimitReached.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotLimits]
   }
 }

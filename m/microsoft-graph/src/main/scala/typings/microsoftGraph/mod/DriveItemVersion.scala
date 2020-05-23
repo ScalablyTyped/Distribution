@@ -19,7 +19,7 @@ object DriveItemVersion {
     lastModifiedBy: IdentitySet = null,
     lastModifiedDateTime: String = null,
     publication: PublicationFacet = null,
-    size: Int | Double = null
+    size: js.UndefOr[Double] = js.undefined
   ): DriveItemVersion = {
     val __obj = js.Dynamic.literal()
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
@@ -27,7 +27,7 @@ object DriveItemVersion {
     if (lastModifiedBy != null) __obj.updateDynamic("lastModifiedBy")(lastModifiedBy.asInstanceOf[js.Any])
     if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
     if (publication != null) __obj.updateDynamic("publication")(publication.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DriveItemVersion]
   }
 }

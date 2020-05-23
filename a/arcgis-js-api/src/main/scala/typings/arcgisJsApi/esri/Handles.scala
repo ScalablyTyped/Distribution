@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,8 +49,4 @@ trait Handles extends Accessor {
     */
   def removeAll(): Unit = js.native
 }
-
-@JSGlobal("__esri.Handles")
-@js.native
-object Handles extends TopLevel[HandlesConstructor]
 

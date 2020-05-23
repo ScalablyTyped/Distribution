@@ -1,6 +1,6 @@
 package typings.evernote.mod.Types
 
-import typings.evernote.AnonId
+import typings.evernote.anon.Id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("evernote", "Types.Contact")
 @js.native
 class Contact () extends js.Object {
-  def this(args: AnonId) = this()
+  def this(args: Id) = this()
   var id: js.UndefOr[String] = js.native
   var messagingPermit: js.UndefOr[String] = js.native
   var messagingPermitExpires: js.UndefOr[Timestamp] = js.native

@@ -84,15 +84,15 @@ object Disk {
     attachedTo: ResourceName = null,
     attachmentState: String = null,
     createdAt: IsoDate = null,
-    gbInUse: Int | Double = null,
-    iops: Int | Double = null,
+    gbInUse: js.UndefOr[integer] = js.undefined,
+    iops: js.UndefOr[integer] = js.undefined,
     isAttached: js.UndefOr[Boolean] = js.undefined,
     isSystemDisk: js.UndefOr[Boolean] = js.undefined,
     location: ResourceLocation = null,
     name: ResourceName = null,
     path: String = null,
     resourceType: ResourceType = null,
-    sizeInGb: Int | Double = null,
+    sizeInGb: js.UndefOr[integer] = js.undefined,
     state: DiskState = null,
     supportCode: String = null,
     tags: TagList = null
@@ -103,15 +103,15 @@ object Disk {
     if (attachedTo != null) __obj.updateDynamic("attachedTo")(attachedTo.asInstanceOf[js.Any])
     if (attachmentState != null) __obj.updateDynamic("attachmentState")(attachmentState.asInstanceOf[js.Any])
     if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (gbInUse != null) __obj.updateDynamic("gbInUse")(gbInUse.asInstanceOf[js.Any])
-    if (iops != null) __obj.updateDynamic("iops")(iops.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAttached)) __obj.updateDynamic("isAttached")(isAttached.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSystemDisk)) __obj.updateDynamic("isSystemDisk")(isSystemDisk.asInstanceOf[js.Any])
+    if (!js.isUndefined(gbInUse)) __obj.updateDynamic("gbInUse")(gbInUse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(iops)) __obj.updateDynamic("iops")(iops.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAttached)) __obj.updateDynamic("isAttached")(isAttached.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSystemDisk)) __obj.updateDynamic("isSystemDisk")(isSystemDisk.get.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (sizeInGb != null) __obj.updateDynamic("sizeInGb")(sizeInGb.asInstanceOf[js.Any])
+    if (!js.isUndefined(sizeInGb)) __obj.updateDynamic("sizeInGb")(sizeInGb.get.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (supportCode != null) __obj.updateDynamic("supportCode")(supportCode.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

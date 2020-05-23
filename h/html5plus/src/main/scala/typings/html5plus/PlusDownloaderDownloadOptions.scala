@@ -26,9 +26,9 @@ trait PlusDownloaderDownloadOptions extends js.Object {
   /**
     * 下载文件保存的路径
     * 保存文件路径仅支持以"_downloads/"、"_doc/"、"_documents/"开头的字符串。
-    * 	文件路径以文件后缀名结尾（如"_doc/download/a.doc"）表明指定保存文件目录及名称，以“/”结尾则认为指定保存文件的目录（此时程序自动生成文件名）。
-    * 	如果指定的文件已经存在，则自动在文件名后面加"(i)"，其中i为数字，如果文件名称后面已经是此格式，则数字i递增，如"download(1).doc"。
-    * 	默认保存目录为（"_downloads"），并自动生成文件名称。
+    *     文件路径以文件后缀名结尾（如"_doc/download/a.doc"）表明指定保存文件目录及名称，以“/”结尾则认为指定保存文件的目录（此时程序自动生成文件名）。
+    *     如果指定的文件已经存在，则自动在文件名后面加"(i)"，其中i为数字，如果文件名称后面已经是此格式，则数字i递增，如"download(1).doc"。
+    *     默认保存目录为（"_downloads"），并自动生成文件名称。
     * - _doc/: 应用私有文档目录
     * - _documents/: 共享文档目录
     * - _downloads/: 共享下载目录
@@ -69,7 +69,7 @@ trait PlusDownloaderDownloadOptions extends js.Object {
   /**
     * 下载任务超时时间
     * 数值类型，单位为s(秒)，默认值为120s。
-    * 	超时时间为服务器响应请求的时间（不是下载任务完成的总时间），如果设置为0则表示永远不超时。
+    *     超时时间为服务器响应请求的时间（不是下载任务完成的总时间），如果设置为0则表示永远不超时。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */
@@ -82,19 +82,19 @@ object PlusDownloaderDownloadOptions {
     data: String = null,
     filename: _docSlash | _documentsSlash | _downloadsSlash = null,
     method: GET | POST = null,
-    priority: Int | Double = null,
-    retry: Int | Double = null,
-    retryInterval: Int | Double = null,
-    timeout: Int | Double = null
+    priority: js.UndefOr[Double] = js.undefined,
+    retry: js.UndefOr[Double] = js.undefined,
+    retryInterval: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined
   ): PlusDownloaderDownloadOptions = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
-    if (retryInterval != null) __obj.updateDynamic("retryInterval")(retryInterval.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retry)) __obj.updateDynamic("retry")(retry.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retryInterval)) __obj.updateDynamic("retryInterval")(retryInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusDownloaderDownloadOptions]
   }
 }

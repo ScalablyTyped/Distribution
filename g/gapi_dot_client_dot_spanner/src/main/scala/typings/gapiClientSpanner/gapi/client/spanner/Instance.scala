@@ -85,7 +85,7 @@ object Instance {
     displayName: String = null,
     labels: Record[String, String] = null,
     name: String = null,
-    nodeCount: Int | Double = null,
+    nodeCount: js.UndefOr[Double] = js.undefined,
     state: String = null
   ): Instance = {
     val __obj = js.Dynamic.literal()
@@ -93,7 +93,7 @@ object Instance {
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (nodeCount != null) __obj.updateDynamic("nodeCount")(nodeCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeCount)) __obj.updateDynamic("nodeCount")(nodeCount.get.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Instance]
   }

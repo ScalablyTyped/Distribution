@@ -22,7 +22,7 @@ trait LevelDatastoreOptions
 object LevelDatastoreOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     db: (/* location */ String, /* options */ js.UndefOr[js.Any]) => LevelUp[AbstractLevelDOWN[_, _], AbstractIterator[_, _]] = null
   ): LevelDatastoreOptions = {
     val __obj = js.Dynamic.literal()

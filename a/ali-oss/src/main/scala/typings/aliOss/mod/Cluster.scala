@@ -1,6 +1,6 @@
 package typings.aliOss.mod
 
-import typings.aliOss.AnonName
+import typings.aliOss.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,8 +30,8 @@ class Cluster protected () extends js.Object {
   def putACL(name: String, acl: ACLType): js.Promise[NormalSuccessResponse] = js.native
   def putACL(name: String, acl: ACLType, options: RequestOptions): js.Promise[NormalSuccessResponse] = js.native
   def putMeta(name: String, meta: UserMeta, options: RequestOptions): js.Promise[CopyAndPutMetaResult] = js.native
-  def putStream(name: String, stream: js.Any): js.Promise[AnonName] = js.native
-  def putStream(name: String, stream: js.Any, options: PutStreamOptions): js.Promise[AnonName] = js.native
+  def putStream(name: String, stream: js.Any): js.Promise[Name] = js.native
+  def putStream(name: String, stream: js.Any, options: PutStreamOptions): js.Promise[Name] = js.native
   def restore(name: String): js.Promise[NormalSuccessResponse] = js.native
   def restore(name: String, options: RequestOptions): js.Promise[NormalSuccessResponse] = js.native
   def signatureUrl(name: String): String = js.native

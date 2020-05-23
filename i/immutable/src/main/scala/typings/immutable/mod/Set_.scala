@@ -50,27 +50,13 @@ trait Set_[T] extends Set[T] {
     */
   def delete(value: T): this.type = js.native
   /**
-    * Returns a new Set with only the values for which the `predicate`
-    * function returns true.
-    *
-    * Note: `filter()` always returns a new instance, even if it results in
-    * not filtering out any values.
-    */
-  @JSName("filter")
-  def filter_F_T_Set_[F /* <: T */](predicate: js.Function3[/* value */ T, /* key */ T, /* iter */ this.type, /* is F */ Boolean]): typings.immutable.Immutable.Set_[F] = js.native
-  @JSName("filter")
-  def filter_F_T_Set_[F /* <: T */](
-    predicate: js.Function3[/* value */ T, /* key */ T, /* iter */ this.type, /* is F */ Boolean],
-    context: js.Any
-  ): typings.immutable.Immutable.Set_[F] = js.native
-  /**
     * Returns a Set which has removed any values not also contained
     * within `collections`.
     *
     * Note: `intersect` can be used in `withMutations`.
     */
   def intersect(collections: Iterable[T]*): this.type = js.native
-  def merge[C](collections: Iterable[C]*): typings.immutable.Immutable.Set_[T | C] = js.native
+  def merge[C](collections: Iterable[C]*): typings.immutable.Immutable.Set[T | C] = js.native
   def remove(value: T): this.type = js.native
   /**
     * Returns a Set excluding any values contained within `collections`.
@@ -93,7 +79,7 @@ trait Set_[T] extends Set[T] {
     * @alias merge
     * @alias concat
     */
-  def union[C](collections: Iterable[C]*): typings.immutable.Immutable.Set_[T | C] = js.native
+  def union[C](collections: Iterable[C]*): typings.immutable.Immutable.Set[T | C] = js.native
   /**
     * @see `Map#wasAltered`
     */
@@ -112,14 +98,14 @@ trait Set_[T] extends Set[T] {
 @JSImport("immutable", "Set")
 @js.native
 object Set_ extends js.Object {
-  def apply(): typings.immutable.Immutable.Set_[_] = js.native
-  def apply[T](collection: Iterable[T]): typings.immutable.Immutable.Set_[T] = js.native
-  def fromKeys(obj: StringDictionary[js.Any]): typings.immutable.Immutable.Set_[String] = js.native
+  def apply(): typings.immutable.Immutable.Set[_] = js.native
+  def apply[T](collection: Iterable[T]): typings.immutable.Immutable.Set[T] = js.native
+  def fromKeys(obj: StringDictionary[js.Any]): typings.immutable.Immutable.Set[String] = js.native
   /**
     * `Set.fromKeys()` creates a new immutable Set containing the keys from
     * this Collection or JavaScript Object.
     */
-  def fromKeys[T](iter: typings.immutable.Immutable.Collection[T, _]): typings.immutable.Immutable.Set_[T] = js.native
+  def fromKeys[T](iter: typings.immutable.Immutable.Collection[T, _]): typings.immutable.Immutable.Set[T] = js.native
   /**
     * `Set.intersect()` creates a new immutable Set that is the intersection of
     * a collection of other sets.
@@ -133,7 +119,7 @@ object Set_ extends js.Object {
     * // Set [ "a", "c"" ]
     * ```
     */
-  def intersect[T](sets: Iterable[Iterable[T]]): typings.immutable.Immutable.Set_[T] = js.native
+  def intersect[T](sets: Iterable[Iterable[T]]): typings.immutable.Immutable.Set[T] = js.native
   /**
     * True if the provided value is a Set
     */
@@ -141,7 +127,7 @@ object Set_ extends js.Object {
   /**
     * Creates a new Set containing `values`.
     */
-  def of[T](values: T*): typings.immutable.Immutable.Set_[T] = js.native
+  def of[T](values: T*): typings.immutable.Immutable.Set[T] = js.native
   /**
     * `Set.union()` creates a new immutable Set that is the union of a
     * collection of other sets.
@@ -155,6 +141,6 @@ object Set_ extends js.Object {
     * // Set [ "a", "b", "c", "t"" ]
     * ```
     */
-  def union[T](sets: Iterable[Iterable[T]]): typings.immutable.Immutable.Set_[T] = js.native
+  def union[T](sets: Iterable[Iterable[T]]): typings.immutable.Immutable.Set[T] = js.native
 }
 

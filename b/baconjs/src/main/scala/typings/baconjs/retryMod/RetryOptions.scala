@@ -29,12 +29,12 @@ object RetryOptions {
     source: Double => typings.baconjs.observableMod.default[V],
     delay: /* context */ RetryContext => Double = null,
     isRetryable: /* error */ js.Any => Boolean = null,
-    retries: Int | Double = null
+    retries: js.UndefOr[Double] = js.undefined
   ): RetryOptions[V] = {
     val __obj = js.Dynamic.literal(source = js.Any.fromFunction1(source))
     if (delay != null) __obj.updateDynamic("delay")(js.Any.fromFunction1(delay))
     if (isRetryable != null) __obj.updateDynamic("isRetryable")(js.Any.fromFunction1(isRetryable))
-    if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
+    if (!js.isUndefined(retries)) __obj.updateDynamic("retries")(retries.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetryOptions[V]]
   }
 }

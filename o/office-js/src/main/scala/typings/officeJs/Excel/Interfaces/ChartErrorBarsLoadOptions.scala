@@ -18,7 +18,7 @@ trait ChartErrorBarsLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Specifies whether or not the error bars have an end style cap.
+    * Specifies if error bars have an end style cap.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -46,7 +46,7 @@ trait ChartErrorBarsLoadOptions extends js.Object {
   var `type`: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Specifies whether or not the error bars are displayed.
+    * Specifies whether the error bars are displayed.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -64,12 +64,12 @@ object ChartErrorBarsLoadOptions {
     visible: js.UndefOr[Boolean] = js.undefined
   ): ChartErrorBarsLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(endStyleCap)) __obj.updateDynamic("endStyleCap")(endStyleCap.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(endStyleCap)) __obj.updateDynamic("endStyleCap")(endStyleCap.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(include)) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(include)) __obj.updateDynamic("include")(include.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartErrorBarsLoadOptions]
   }
 }

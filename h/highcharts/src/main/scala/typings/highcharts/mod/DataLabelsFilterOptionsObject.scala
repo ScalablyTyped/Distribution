@@ -24,11 +24,15 @@ trait DataLabelsFilterOptionsObject extends js.Object {
 
 object DataLabelsFilterOptionsObject {
   @scala.inline
-  def apply(operator: OptionsOperatorValue = null, property: String = null, value: Int | Double = null): DataLabelsFilterOptionsObject = {
+  def apply(
+    operator: OptionsOperatorValue = null,
+    property: String = null,
+    value: js.UndefOr[Double] = js.undefined
+  ): DataLabelsFilterOptionsObject = {
     val __obj = js.Dynamic.literal()
     if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataLabelsFilterOptionsObject]
   }
 }

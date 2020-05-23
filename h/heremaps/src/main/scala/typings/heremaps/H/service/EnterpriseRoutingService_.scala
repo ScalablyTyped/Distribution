@@ -1,6 +1,5 @@
 package typings.heremaps.H.service
 
-import typings.heremaps.H.service.EnterpriseRoutingService.Options
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,14 +9,8 @@ import scala.scalajs.js.annotation._
   * This class encapsulates Enterprise Routing REST API as a service stub. An instance of this class can be retrieved by calling the factory method on a platform instance.
   * H.service.Platform#getEnterpriseRoutingService.
   */
-@JSGlobal("H.service.EnterpriseRoutingService")
 @js.native
-/**
-  * Constructor
-  * @param opt_options {H.service.EnterpriseRoutingService.Options=}
-  */
-class EnterpriseRoutingService_ () extends AbstractRestService {
-  def this(opt_options: Options) = this()
+trait EnterpriseRoutingService_ extends AbstractRestService {
   /**
     * This method sends a "calculateisoline" request to Enterprise Routing REST API and calls the onResult callback function once the service response was received - providing
     * a H.service.ServiceResult object - or the onError callback if a communication error occurred.

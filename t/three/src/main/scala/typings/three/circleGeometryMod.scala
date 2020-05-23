@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.anon.Radius
 import typings.three.bufferGeometryMod.BufferGeometry
 import typings.three.geometryMod.Geometry
 import scala.scalajs.js
@@ -15,7 +16,7 @@ object circleGeometryMod extends js.Object {
     def this(radius: Double, segments: Double) = this()
     def this(radius: Double, segments: Double, thetaStart: Double) = this()
     def this(radius: Double, segments: Double, thetaStart: Double, thetaLength: Double) = this()
-    var parameters: AnonRadius = js.native
+    var parameters: Radius = js.native
   }
   
   @js.native
@@ -24,7 +25,7 @@ object circleGeometryMod extends js.Object {
     def this(radius: Double, segments: Double) = this()
     def this(radius: Double, segments: Double, thetaStart: Double) = this()
     def this(radius: Double, segments: Double, thetaStart: Double, thetaLength: Double) = this()
-    var parameters: AnonRadius = js.native
+    var parameters: Radius = js.native
   }
   
 }

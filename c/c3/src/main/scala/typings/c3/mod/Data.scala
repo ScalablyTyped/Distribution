@@ -1,11 +1,11 @@
 package typings.c3.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.c3.Anon0
-import typings.c3.AnonDraggable
-import typings.c3.AnonFormat
-import typings.c3.AnonLabelAnonText
-import typings.c3.AnonValue
+import typings.c3.anon.Draggable
+import typings.c3.anon.Format
+import typings.c3.anon.LabelText
+import typings.c3.anon.Value
+import typings.c3.anon.`0`
 import typings.c3.c3Strings.asc
 import typings.c3.c3Strings.desc
 import typings.d3Color.mod.HSLColor
@@ -54,7 +54,7 @@ trait Data extends js.Object {
     * Set text displayed when empty data.
     * Defaults to `""`.
     */
-  var empty: js.UndefOr[AnonLabelAnonText] = js.undefined
+  var empty: js.UndefOr[LabelText] = js.undefined
   /**
     * For Stanford charts, specify the key of the epochs data, which maps values to their color.
     * Defaults to `"epochs"`.
@@ -101,12 +101,12 @@ trait Data extends js.Object {
   /**
     * If `data.json` is provided and is in row form, these keys are used to pull the data from each row.
     */
-  var keys: js.UndefOr[AnonValue] = js.undefined
+  var keys: js.UndefOr[Value] = js.undefined
   /**
     * Show labels on each data points or set formatter function for data labels.
     * Control all labels with a boolean value or `format` function, or control behavior for individual data with a `format` object.
     */
-  var labels: js.UndefOr[Boolean | AnonFormat | Anon0] = js.undefined
+  var labels: js.UndefOr[Boolean | Format | `0`] = js.undefined
   /**
     * Used if loading JSON via `data.url`.
     */
@@ -172,7 +172,7 @@ trait Data extends js.Object {
     * A list of rows, where the first row is the column names and the remaining rows are data.  If `url` or `json` are provided this will be ignored.
     */
   var rows: js.UndefOr[js.Array[PrimitiveArray]] = js.undefined
-  var selection: js.UndefOr[AnonDraggable] = js.undefined
+  var selection: js.UndefOr[Draggable] = js.undefined
   /**
     * Set chart type at once.
     * If this option is specified, the type will be applied to every data. This setting can be overwritten for individual data by `data.types`.
@@ -226,7 +226,7 @@ object Data {
       String | RGBColor | HSLColor | (js.Function1[/* d */ String | DataSeries | DataPoint, String | RGBColor | HSLColor])
     ] = null,
     columns: js.Array[Array[String | Primitive]] = null,
-    empty: AnonLabelAnonText = null,
+    empty: LabelText = null,
     epochs: String = null,
     filter: (/* series */ DataSeries, /* index */ Double, /* allSeries */ js.Array[DataSeries]) => Boolean = null,
     groups: js.Array[js.Array[String]] = null,
@@ -234,8 +234,8 @@ object Data {
     hide: Boolean | js.Array[String] = null,
     idConverter: /* id */ String => String = null,
     json: (Record[String, PrimitiveArray]) | (js.Array[Record[String, Primitive]]) = null,
-    keys: AnonValue = null,
-    labels: Boolean | AnonFormat | Anon0 = null,
+    keys: Value = null,
+    labels: Boolean | Format | `0` = null,
     mimeType: String = null,
     names: StringDictionary[String] = null,
     onclick: js.ThisFunction2[/* this */ ChartAPI, /* d */ DataPoint, /* element */ SVGElement, Unit] = null,
@@ -243,10 +243,10 @@ object Data {
     onmouseover: js.ThisFunction2[/* this */ ChartAPI, /* d */ DataPoint, /* element */ js.UndefOr[SVGElement], Unit] = null,
     onselected: js.ThisFunction2[/* this */ ChartAPI, /* d */ DataPoint, /* element */ SVGElement, Unit] = null,
     onunselected: js.ThisFunction2[/* this */ ChartAPI, /* d */ DataPoint, /* element */ SVGElement, Unit] = null,
-    order: asc | desc | (js.Function1[/* repeated */ DataSeries, Double]) = null,
+    order: js.UndefOr[Null | asc | desc | (js.Function1[/* repeated */ DataSeries, Double])] = js.undefined,
     regions: StringDictionary[js.Array[RegionOptions]] = null,
     rows: js.Array[PrimitiveArray] = null,
-    selection: AnonDraggable = null,
+    selection: Draggable = null,
     `type`: ChartType = null,
     types: StringDictionary[ChartType] = null,
     url: String = null,
@@ -279,7 +279,7 @@ object Data {
     if (onmouseover != null) __obj.updateDynamic("onmouseover")(onmouseover.asInstanceOf[js.Any])
     if (onselected != null) __obj.updateDynamic("onselected")(onselected.asInstanceOf[js.Any])
     if (onunselected != null) __obj.updateDynamic("onunselected")(onunselected.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (!js.isUndefined(order)) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     if (regions != null) __obj.updateDynamic("regions")(regions.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
@@ -288,8 +288,8 @@ object Data {
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (xFormat != null) __obj.updateDynamic("xFormat")(xFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(xLocaltime)) __obj.updateDynamic("xLocaltime")(xLocaltime.asInstanceOf[js.Any])
-    if (!js.isUndefined(xSort)) __obj.updateDynamic("xSort")(xSort.asInstanceOf[js.Any])
+    if (!js.isUndefined(xLocaltime)) __obj.updateDynamic("xLocaltime")(xLocaltime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xSort)) __obj.updateDynamic("xSort")(xSort.get.asInstanceOf[js.Any])
     if (xs != null) __obj.updateDynamic("xs")(xs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Data]
   }

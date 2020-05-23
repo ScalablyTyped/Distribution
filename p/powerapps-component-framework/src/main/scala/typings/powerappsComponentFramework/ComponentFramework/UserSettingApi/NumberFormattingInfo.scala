@@ -5,113 +5,113 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * The interface for the Org System Settings Number Format Info exposed to a custom control
-		 * Comments indicate example values
-		 */
+  * The interface for the Org System Settings Number Format Info exposed to a custom control
+  * Comments indicate example values
+  */
 trait NumberFormattingInfo extends js.Object {
   /**
-  			 * @example 2
-  			 */
+    * @example 2
+    */
   var currencyDecimalDigits: Double
   /**
-  			 * @example "."
-  			 */
+    * @example "."
+    */
   var currencyDecimalSeparator: String
   /**
-  			 * @example ","
-  			 */
+    * @example ","
+    */
   var currencyGroupSeparator: String
   /**
-  			 * @example [ 3 ]
-  			 */
+    * @example [ 3 ]
+    */
   var currencyGroupSizes: js.Array[Double]
   /**
-  			 * @example 0
-  			 */
+    * @example 0
+    */
   var currencyNegativePattern: Double
   /**
-  			 * @example 0
-  			 */
+    * @example 0
+    */
   var currencyPositivePattern: Double
   /**
-  			 * @example "$"
-  			 */
+    * @example "$"
+    */
   var currencySymbol: String
   /**
-  			 * @example "NaN"
-  			 */
+    * @example "NaN"
+    */
   var nanSymbol: String
   /**
-  			 * @example { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}
-  			 */
+    * @example { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}
+    */
   var nativeDigits: js.Array[String]
   /**
-  			 * @example "-Infinity"
-  			 */
+    * @example "-Infinity"
+    */
   var negativeInfinitySymbol: String
   /**
-  			 * @example "-"
-  			 */
+    * @example "-"
+    */
   var negativeSign: String
   /**
-  			 * @example 2
-  			 */
+    * @example 2
+    */
   var numberDecimalDigits: Double
   /**
-  			 * @example "."
-  			 */
+    * @example "."
+    */
   var numberDecimalSeparator: String
   /**
-  			 * @example ","
-  			 */
+    * @example ","
+    */
   var numberGroupSeparator: String
   /**
-  			 * @example [3]
-  			 */
+    * @example [3]
+    */
   var numberGroupSizes: js.Array[Double]
   /**
-  			 * @example 1
-  			 */
+    * @example 1
+    */
   var numberNegativePattern: Double
   /**
-  			 * @example ""
-  			 */
+    * @example ""
+    */
   var perMilleSymbol: String
   /**
-  			 * @example 2
-  			 */
+    * @example 2
+    */
   var percentDecimalDigits: Double
   /**
-  			 * @example "."
-  			 */
+    * @example "."
+    */
   var percentDecimalSeparator: String
   /**
-  			 * @example ","
-  			 */
+    * @example ","
+    */
   var percentGroupSeparator: String
   /**
-  			 * @example [3]
-  			 */
+    * @example [3]
+    */
   var percentGroupSizes: js.Array[Double]
   /**
-  			 * @example 0
-  			 */
+    * @example 0
+    */
   var percentNegativePattern: Double
   /**
-  			 * @example 0
-  			 */
+    * @example 0
+    */
   var percentPositivePattern: Double
   /**
-  			 * @example "%"
-  			 */
+    * @example "%"
+    */
   var percentSymbol: String
   /**
-  			 * @example "Infinity"
-  			 */
+    * @example "Infinity"
+    */
   var positiveInfinitySymbol: String
   /**
-  			 * @example "+"
-  			 */
+    * @example "+"
+    */
   var positiveSign: String
 }
 

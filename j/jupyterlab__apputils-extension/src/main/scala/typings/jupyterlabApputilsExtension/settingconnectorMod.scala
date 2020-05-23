@@ -1,5 +1,6 @@
 package typings.jupyterlabApputilsExtension
 
+import typings.jupyterlabApputilsExtension.anon.Ids
 import typings.jupyterlabApputilsExtension.jupyterlabApputilsExtensionStrings.active
 import typings.jupyterlabApputilsExtension.jupyterlabApputilsExtensionStrings.all
 import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IPlugin
@@ -18,9 +19,9 @@ object settingconnectorMod extends js.Object {
     var _connector: js.Any = js.native
     var _throttlers: js.Any = js.native
     @JSName("list")
-    def list_active(query: active): js.Promise[AnonIds] = js.native
+    def list_active(query: active): js.Promise[Ids] = js.native
     @JSName("list")
-    def list_all(query: all): js.Promise[AnonIds] = js.native
+    def list_all(query: all): js.Promise[Ids] = js.native
   }
   
 }

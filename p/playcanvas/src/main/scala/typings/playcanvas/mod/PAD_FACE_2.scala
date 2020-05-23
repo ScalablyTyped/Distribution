@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @type {number}
-  * @name pc.PAD_FACE_2
-  * @description The second face button, from bottom going clockwise.
+  * The second face button, from bottom going clockwise.
   */
 @JSImport("playcanvas", "PAD_FACE_2")
 @js.native

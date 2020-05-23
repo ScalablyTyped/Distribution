@@ -33,13 +33,13 @@ object ModifyTransitGatewayVpcAttachmentRequest {
   def apply(
     TransitGatewayAttachmentId: TransitGatewayAttachmentId,
     AddSubnetIds: TransitGatewaySubnetIdList = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     Options: ModifyTransitGatewayVpcAttachmentRequestOptions = null,
     RemoveSubnetIds: TransitGatewaySubnetIdList = null
   ): ModifyTransitGatewayVpcAttachmentRequest = {
     val __obj = js.Dynamic.literal(TransitGatewayAttachmentId = TransitGatewayAttachmentId.asInstanceOf[js.Any])
     if (AddSubnetIds != null) __obj.updateDynamic("AddSubnetIds")(AddSubnetIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (Options != null) __obj.updateDynamic("Options")(Options.asInstanceOf[js.Any])
     if (RemoveSubnetIds != null) __obj.updateDynamic("RemoveSubnetIds")(RemoveSubnetIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyTransitGatewayVpcAttachmentRequest]

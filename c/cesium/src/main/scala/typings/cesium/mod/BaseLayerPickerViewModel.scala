@@ -1,6 +1,5 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonGlobe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "BaseLayerPickerViewModel")
 @js.native
 class BaseLayerPickerViewModel protected () extends js.Object {
-  def this(options: AnonGlobe) = this()
+  def this(options: typings.cesium.anon.Globe) = this()
   var buttonImageUrl: String = js.native
   var buttonTooltip: String = js.native
   var dropDownVisible: Boolean = js.native

@@ -5,7 +5,7 @@ import typings.blueprintjsCore.propsMod.MaybeElement
 import typings.blueprintjsIcons.iconNameMod.IconName
 import typings.react.mod.ReactChild
 import typings.react.mod.ReactNode
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +36,7 @@ object INonIdealStateProps {
     children: ReactNode = null,
     className: String = null,
     description: ReactChild = null,
-    icon: IconName | MaybeElement = null,
+    icon: js.UndefOr[Null | IconName | MaybeElement] = js.undefined,
     title: ReactNode = null
   ): INonIdealStateProps = {
     val __obj = js.Dynamic.literal()
@@ -44,7 +44,7 @@ object INonIdealStateProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[INonIdealStateProps]
   }

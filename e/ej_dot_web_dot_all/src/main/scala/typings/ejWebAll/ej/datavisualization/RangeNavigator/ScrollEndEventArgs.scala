@@ -36,7 +36,7 @@ object ScrollEndEventArgs {
     `type`: String = null
   ): ScrollEndEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataNewRange != null) __obj.updateDynamic("dataNewRange")(dataNewRange.asInstanceOf[js.Any])
     if (dataOldRange != null) __obj.updateDynamic("dataOldRange")(dataOldRange.asInstanceOf[js.Any])

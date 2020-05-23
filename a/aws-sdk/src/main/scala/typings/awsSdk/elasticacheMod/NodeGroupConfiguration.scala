@@ -34,14 +34,14 @@ object NodeGroupConfiguration {
     NodeGroupId: AllowedNodeGroupId = null,
     PrimaryAvailabilityZone: String = null,
     ReplicaAvailabilityZones: AvailabilityZonesList = null,
-    ReplicaCount: Int | scala.Double = null,
+    ReplicaCount: js.UndefOr[IntegerOptional] = js.undefined,
     Slots: String = null
   ): NodeGroupConfiguration = {
     val __obj = js.Dynamic.literal()
     if (NodeGroupId != null) __obj.updateDynamic("NodeGroupId")(NodeGroupId.asInstanceOf[js.Any])
     if (PrimaryAvailabilityZone != null) __obj.updateDynamic("PrimaryAvailabilityZone")(PrimaryAvailabilityZone.asInstanceOf[js.Any])
     if (ReplicaAvailabilityZones != null) __obj.updateDynamic("ReplicaAvailabilityZones")(ReplicaAvailabilityZones.asInstanceOf[js.Any])
-    if (ReplicaCount != null) __obj.updateDynamic("ReplicaCount")(ReplicaCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReplicaCount)) __obj.updateDynamic("ReplicaCount")(ReplicaCount.get.asInstanceOf[js.Any])
     if (Slots != null) __obj.updateDynamic("Slots")(Slots.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeGroupConfiguration]
   }

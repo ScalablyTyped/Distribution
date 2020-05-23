@@ -13,9 +13,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Monitors changes to the list of color frame sources, and provides notifications when the list changes. */
-@JSGlobal("Windows.Devices.Perception.PerceptionColorFrameSourceWatcher")
 @js.native
-abstract class PerceptionColorFrameSourceWatcher () extends js.Object {
+trait PerceptionColorFrameSourceWatcher extends js.Object {
   /** Subscribes to the EnumerationCompleted event. This event is fired after the initial enumeration of known color frame sources is complete. */
   @JSName("onenumerationcompleted")
   var onenumerationcompleted_Original: TypedEventHandler[PerceptionColorFrameSourceWatcher, _] = js.native

@@ -143,11 +143,11 @@ object RasterInfoProperties {
   @scala.inline
   def apply(
     attributeTable: FeatureSetProperties = null,
-    bandCount: Int | Double = null,
+    bandCount: js.UndefOr[Double] = js.undefined,
     colormap: js.Array[js.Array[Double]] = null,
     dataType: generic | elevation | thematic | processed | scientific | `vector-uv` | `vector-magdir` = null,
     extent: ExtentProperties = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     histograms: js.Array[_] = null,
     keyProperties: js.Any = null,
     multidimensionalInfo: js.Any = null,
@@ -156,15 +156,15 @@ object RasterInfoProperties {
     pixelType: unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64 = null,
     spatialReference: SpatialReferenceProperties = null,
     statistics: js.Array[RasterInfoStatistics] = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): RasterInfoProperties = {
     val __obj = js.Dynamic.literal()
     if (attributeTable != null) __obj.updateDynamic("attributeTable")(attributeTable.asInstanceOf[js.Any])
-    if (bandCount != null) __obj.updateDynamic("bandCount")(bandCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(bandCount)) __obj.updateDynamic("bandCount")(bandCount.get.asInstanceOf[js.Any])
     if (colormap != null) __obj.updateDynamic("colormap")(colormap.asInstanceOf[js.Any])
     if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (histograms != null) __obj.updateDynamic("histograms")(histograms.asInstanceOf[js.Any])
     if (keyProperties != null) __obj.updateDynamic("keyProperties")(keyProperties.asInstanceOf[js.Any])
     if (multidimensionalInfo != null) __obj.updateDynamic("multidimensionalInfo")(multidimensionalInfo.asInstanceOf[js.Any])
@@ -173,7 +173,7 @@ object RasterInfoProperties {
     if (pixelType != null) __obj.updateDynamic("pixelType")(pixelType.asInstanceOf[js.Any])
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
     if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RasterInfoProperties]
   }
 }

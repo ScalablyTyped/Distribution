@@ -1,6 +1,7 @@
 package typings.i18nextKo
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.i18nextKo.anon.Translation
 import typings.knockout.KnockoutComputed
 import typings.knockout.KnockoutStatic
 import scala.scalajs.js
@@ -14,6 +15,6 @@ object mod extends js.Object {
   def init(resourceStore: i18nextkoResourceStore, language: String, ko: KnockoutStatic): Unit = js.native
   def setLanguage(language: String): Unit = js.native
   def t(key: String): KnockoutComputed[String] = js.native
-  type i18nextkoResourceStore = StringDictionary[AnonTranslation]
+  type i18nextkoResourceStore = StringDictionary[Translation]
 }
 

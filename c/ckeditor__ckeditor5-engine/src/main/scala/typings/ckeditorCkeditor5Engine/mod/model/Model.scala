@@ -1,9 +1,9 @@
 package typings.ckeditorCkeditor5Engine.mod.model
 
-import typings.ckeditorCkeditor5Engine.Anon0
-import typings.ckeditorCkeditor5Engine.AnonDirection
-import typings.ckeditorCkeditor5Engine.AnonLeaveUnmerged
-import typings.ckeditorCkeditor5Engine.AnonPriority
+import typings.ckeditorCkeditor5Engine.anon.Direction
+import typings.ckeditorCkeditor5Engine.anon.LeaveUnmerged
+import typings.ckeditorCkeditor5Engine.anon.Priority
+import typings.ckeditorCkeditor5Engine.anon.`0`
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.default
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.transparent
 import typings.ckeditorCkeditor5Engine.mod.model.operation.Operation
@@ -23,8 +23,8 @@ class Model () extends Observable {
   val schema: Schema = js.native
   def applyOperation(operation: Operation): Unit = js.native
   def change(callback: js.Function): js.Any = js.native
-  def deleteContent(selection: DocumentSelection, batch: Batch, options: AnonLeaveUnmerged): Unit = js.native
-  def deleteContent(selection: Selection, batch: Batch, options: AnonLeaveUnmerged): Unit = js.native
+  def deleteContent(selection: DocumentSelection, batch: Batch, options: LeaveUnmerged): Unit = js.native
+  def deleteContent(selection: Selection, batch: Batch, options: LeaveUnmerged): Unit = js.native
   def destroy(): Unit = js.native
   def enqueueChange(batchOrType: Batch, callback: js.Function): Unit = js.native
   @JSName("enqueueChange")
@@ -49,12 +49,12 @@ class Model () extends Observable {
   def insertContent(content: Item, selectable: Range): Unit = js.native
   def insertContent(content: Item, selectable: Selection): Unit = js.native
   def insertContent(content: Item, selectable: Iterable[Range]): Unit = js.native
-  def listenTo(emitter: Emitter, event: String, callback: js.Function, options: AnonPriority): Unit = js.native
+  def listenTo(emitter: Emitter, event: String, callback: js.Function, options: Priority): Unit = js.native
   def modifySelection(selection: DocumentSelection): Unit = js.native
-  def modifySelection(selection: DocumentSelection, options: AnonDirection): Unit = js.native
+  def modifySelection(selection: DocumentSelection, options: Direction): Unit = js.native
   def modifySelection(selection: Selection): Unit = js.native
-  def modifySelection(selection: Selection, options: AnonDirection): Unit = js.native
-  def on(event: String, callback: js.Function, options: Anon0): Unit = js.native
-  def once(event: String, callback: js.Function, options: Anon0): Unit = js.native
+  def modifySelection(selection: Selection, options: Direction): Unit = js.native
+  def on(event: String, callback: js.Function, options: `0`): Unit = js.native
+  def once(event: String, callback: js.Function, options: `0`): Unit = js.native
 }
 

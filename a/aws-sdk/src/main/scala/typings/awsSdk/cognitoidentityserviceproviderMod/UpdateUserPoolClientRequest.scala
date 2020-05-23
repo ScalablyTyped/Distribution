@@ -78,7 +78,7 @@ object UpdateUserPoolClientRequest {
     ClientId: ClientIdType,
     UserPoolId: UserPoolIdType,
     AllowedOAuthFlows: OAuthFlowsType = null,
-    AllowedOAuthFlowsUserPoolClient: js.UndefOr[Boolean] = js.undefined,
+    AllowedOAuthFlowsUserPoolClient: js.UndefOr[BooleanType] = js.undefined,
     AllowedOAuthScopes: ScopeListType = null,
     AnalyticsConfiguration: AnalyticsConfigurationType = null,
     CallbackURLs: CallbackURLsListType = null,
@@ -88,13 +88,13 @@ object UpdateUserPoolClientRequest {
     LogoutURLs: LogoutURLsListType = null,
     PreventUserExistenceErrors: PreventUserExistenceErrorTypes = null,
     ReadAttributes: ClientPermissionListType = null,
-    RefreshTokenValidity: Int | Double = null,
+    RefreshTokenValidity: js.UndefOr[RefreshTokenValidityType] = js.undefined,
     SupportedIdentityProviders: SupportedIdentityProvidersListType = null,
     WriteAttributes: ClientPermissionListType = null
   ): UpdateUserPoolClientRequest = {
     val __obj = js.Dynamic.literal(ClientId = ClientId.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any])
     if (AllowedOAuthFlows != null) __obj.updateDynamic("AllowedOAuthFlows")(AllowedOAuthFlows.asInstanceOf[js.Any])
-    if (!js.isUndefined(AllowedOAuthFlowsUserPoolClient)) __obj.updateDynamic("AllowedOAuthFlowsUserPoolClient")(AllowedOAuthFlowsUserPoolClient.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllowedOAuthFlowsUserPoolClient)) __obj.updateDynamic("AllowedOAuthFlowsUserPoolClient")(AllowedOAuthFlowsUserPoolClient.get.asInstanceOf[js.Any])
     if (AllowedOAuthScopes != null) __obj.updateDynamic("AllowedOAuthScopes")(AllowedOAuthScopes.asInstanceOf[js.Any])
     if (AnalyticsConfiguration != null) __obj.updateDynamic("AnalyticsConfiguration")(AnalyticsConfiguration.asInstanceOf[js.Any])
     if (CallbackURLs != null) __obj.updateDynamic("CallbackURLs")(CallbackURLs.asInstanceOf[js.Any])
@@ -104,7 +104,7 @@ object UpdateUserPoolClientRequest {
     if (LogoutURLs != null) __obj.updateDynamic("LogoutURLs")(LogoutURLs.asInstanceOf[js.Any])
     if (PreventUserExistenceErrors != null) __obj.updateDynamic("PreventUserExistenceErrors")(PreventUserExistenceErrors.asInstanceOf[js.Any])
     if (ReadAttributes != null) __obj.updateDynamic("ReadAttributes")(ReadAttributes.asInstanceOf[js.Any])
-    if (RefreshTokenValidity != null) __obj.updateDynamic("RefreshTokenValidity")(RefreshTokenValidity.asInstanceOf[js.Any])
+    if (!js.isUndefined(RefreshTokenValidity)) __obj.updateDynamic("RefreshTokenValidity")(RefreshTokenValidity.get.asInstanceOf[js.Any])
     if (SupportedIdentityProviders != null) __obj.updateDynamic("SupportedIdentityProviders")(SupportedIdentityProviders.asInstanceOf[js.Any])
     if (WriteAttributes != null) __obj.updateDynamic("WriteAttributes")(WriteAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateUserPoolClientRequest]

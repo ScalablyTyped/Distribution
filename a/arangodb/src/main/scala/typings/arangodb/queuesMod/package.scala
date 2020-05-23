@@ -8,7 +8,7 @@ package object queuesMod {
   type JobCallback = js.Function3[
     /* result */ js.Any, 
     /* jobData */ js.Any, 
-    /* job */ typings.arangodb.DocumentJob, 
+    /* job */ typings.arangodb.anon.DocumentJob, 
     scala.Unit
   ]
 }

@@ -18,10 +18,13 @@ trait SoftwareTokenMfaSettingsType extends js.Object {
 
 object SoftwareTokenMfaSettingsType {
   @scala.inline
-  def apply(Enabled: js.UndefOr[Boolean] = js.undefined, PreferredMfa: js.UndefOr[Boolean] = js.undefined): SoftwareTokenMfaSettingsType = {
+  def apply(
+    Enabled: js.UndefOr[BooleanType] = js.undefined,
+    PreferredMfa: js.UndefOr[BooleanType] = js.undefined
+  ): SoftwareTokenMfaSettingsType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(PreferredMfa)) __obj.updateDynamic("PreferredMfa")(PreferredMfa.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(PreferredMfa)) __obj.updateDynamic("PreferredMfa")(PreferredMfa.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SoftwareTokenMfaSettingsType]
   }
 }

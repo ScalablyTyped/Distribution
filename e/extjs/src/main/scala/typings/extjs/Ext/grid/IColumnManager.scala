@@ -9,27 +9,27 @@ import scala.scalajs.js.annotation._
 
 trait IColumnManager extends IBase {
   /** [Method] Get a leaf level header by index regardless of what the nesting structure is
-  		* @param index Number The column index for which to retrieve the column.
-  		* @returns Ext.grid.column.Column The header. null if it doesn't exist.
-  		*/
+    * @param index Number The column index for which to retrieve the column.
+    * @returns Ext.grid.column.Column The header. null if it doesn't exist.
+    */
   var getHeaderAtIndex: js.UndefOr[
     js.Function1[/* index */ js.UndefOr[Double], typings.extjs.Ext.grid.column.IColumn]
   ] = js.undefined
   /** [Method] Get a leaf level header by index regardless of what the nesting structure is
-  		* @param id String The id
-  		* @returns Ext.grid.column.Column The header. null if it doesn't exist.
-  		*/
+    * @param id String The id
+    * @returns Ext.grid.column.Column The header. null if it doesn't exist.
+    */
   var getHeaderById: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], typings.extjs.Ext.grid.column.IColumn]] = js.undefined
   /** [Method] Returns the index of a leaf level header regardless of what the nesting structure is
-  		* @param header Ext.grid.column.Column The header to find the index of
-  		* @returns Number The index of the specified column header
-  		*/
+    * @param header Ext.grid.column.Column The header to find the index of
+    * @returns Number The index of the specified column header
+    */
   var getHeaderIndex: js.UndefOr[
     js.Function1[/* header */ js.UndefOr[typings.extjs.Ext.grid.column.IColumn], Double]
   ] = js.undefined
   /** [Method] When passed a column index returns the closet visible column to that
-  		* @param index Number Position at which to find the closest visible column.
-  		*/
+    * @param index Number Position at which to find the closest visible column.
+    */
   var getVisibleHeaderClosestToIndex: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Unit]] = js.undefined
 }
 
@@ -75,7 +75,7 @@ object IColumnManager {
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColumnManager]

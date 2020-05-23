@@ -15,7 +15,7 @@ object DelayableOptions {
   @scala.inline
   def apply(delayed: js.UndefOr[Boolean] = js.undefined): DelayableOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(delayed)) __obj.updateDynamic("delayed")(delayed.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayed)) __obj.updateDynamic("delayed")(delayed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DelayableOptions]
   }
 }

@@ -6,36 +6,36 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		*	Event dispatched when chat room message modified
-		*/
+  *    Event dispatched when chat room message modified
+  */
 trait ChatRoomMessageModified extends VoxImplantIMEvent {
   /**
-  			* New message content
-  			*/
+    * New message content
+    */
   var content: String
   /**
-  			* User id
-  			*/
+    * User id
+    */
   var from: String
   /**
-  			* Modified message id
-  			*/
+    * Modified message id
+    */
   var message_id: String
   /**
-  			* Private/public message flag
-  			*/
+    * Private/public message flag
+    */
   var private_message: String
   /**
-  			* Resource name
-  			*/
+    * Resource name
+    */
   var resource: String
   /**
-  			* Room id
-  			*/
+    * Room id
+    */
   var room: String
   /**
-  			* Message timestamp
-  			*/
+    * Message timestamp
+    */
   var timestamp: String
 }
 

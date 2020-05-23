@@ -1,6 +1,8 @@
 package typings.jestValidate
 
 import typings.jestTypes.configMod.Argv
+import typings.jestValidate.anon.Dicts
+import typings.jestValidate.anon.HasDeprecationWarnings
 import typings.jestValidate.typesMod.ValidationOptions
 import typings.std.Record
 import scala.scalajs.js
@@ -24,8 +26,8 @@ object mod extends js.Object {
   def multipleValidOptions[T /* <: js.Array[_] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type T is not an array type */ args: T
   ): /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any = js.native
-  def validate(config: Record[String, _], options: ValidationOptions): AnonHasDeprecationWarnings = js.native
-  def validateCLIOptions(argv: Argv, options: AnonDicts): Boolean = js.native
-  def validateCLIOptions(argv: Argv, options: AnonDicts, rawArgv: js.Array[String]): Boolean = js.native
+  def validate(config: Record[String, _], options: ValidationOptions): HasDeprecationWarnings = js.native
+  def validateCLIOptions(argv: Argv, options: Dicts): Boolean = js.native
+  def validateCLIOptions(argv: Argv, options: Dicts, rawArgv: js.Array[String]): Boolean = js.native
 }
 

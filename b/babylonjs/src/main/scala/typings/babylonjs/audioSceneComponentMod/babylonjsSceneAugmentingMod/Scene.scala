@@ -63,9 +63,7 @@ object Scene {
     audioListenerPositionProvider: () => Vector3 = null,
     soundTracks: Nullable[js.Array[SoundTrack]] = null
   ): Scene = {
-    val __obj = js.Dynamic.literal(_mainSoundTrack = _mainSoundTrack.asInstanceOf[js.Any], audioEnabled = audioEnabled.asInstanceOf[js.Any], audioPositioningRefreshRate = audioPositioningRefreshRate.asInstanceOf[js.Any], getSoundByName = js.Any.fromFunction1(getSoundByName), headphone = headphone.asInstanceOf[js.Any], mainSoundTrack = mainSoundTrack.asInstanceOf[js.Any])
-    if (audioListenerPositionProvider != null) __obj.updateDynamic("audioListenerPositionProvider")(js.Any.fromFunction0(audioListenerPositionProvider))
-    if (soundTracks != null) __obj.updateDynamic("soundTracks")(soundTracks.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_mainSoundTrack = _mainSoundTrack.asInstanceOf[js.Any], audioEnabled = audioEnabled.asInstanceOf[js.Any], audioPositioningRefreshRate = audioPositioningRefreshRate.asInstanceOf[js.Any], getSoundByName = js.Any.fromFunction1(getSoundByName), headphone = headphone.asInstanceOf[js.Any], mainSoundTrack = mainSoundTrack.asInstanceOf[js.Any], audioListenerPositionProvider = js.Any.fromFunction0(audioListenerPositionProvider), soundTracks = soundTracks.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scene]
   }
 }

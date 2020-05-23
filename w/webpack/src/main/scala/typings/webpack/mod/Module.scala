@@ -43,18 +43,18 @@ object Module {
     wrappedContextRegExp: RegExp = null
   ): Module = {
     val __obj = js.Dynamic.literal(rules = rules.asInstanceOf[js.Any])
-    if (!js.isUndefined(exprContextCritical)) __obj.updateDynamic("exprContextCritical")(exprContextCritical.asInstanceOf[js.Any])
-    if (!js.isUndefined(exprContextRecursive)) __obj.updateDynamic("exprContextRecursive")(exprContextRecursive.asInstanceOf[js.Any])
+    if (!js.isUndefined(exprContextCritical)) __obj.updateDynamic("exprContextCritical")(exprContextCritical.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exprContextRecursive)) __obj.updateDynamic("exprContextRecursive")(exprContextRecursive.get.asInstanceOf[js.Any])
     if (exprContextRegExp != null) __obj.updateDynamic("exprContextRegExp")(exprContextRegExp.asInstanceOf[js.Any])
     if (exprContextRequest != null) __obj.updateDynamic("exprContextRequest")(exprContextRequest.asInstanceOf[js.Any])
     if (noParse != null) __obj.updateDynamic("noParse")(noParse.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictExportPresence)) __obj.updateDynamic("strictExportPresence")(strictExportPresence.asInstanceOf[js.Any])
-    if (!js.isUndefined(unknownContextCritical)) __obj.updateDynamic("unknownContextCritical")(unknownContextCritical.asInstanceOf[js.Any])
-    if (!js.isUndefined(unknownContextRecursive)) __obj.updateDynamic("unknownContextRecursive")(unknownContextRecursive.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictExportPresence)) __obj.updateDynamic("strictExportPresence")(strictExportPresence.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unknownContextCritical)) __obj.updateDynamic("unknownContextCritical")(unknownContextCritical.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unknownContextRecursive)) __obj.updateDynamic("unknownContextRecursive")(unknownContextRecursive.get.asInstanceOf[js.Any])
     if (unknownContextRegExp != null) __obj.updateDynamic("unknownContextRegExp")(unknownContextRegExp.asInstanceOf[js.Any])
     if (unknownContextRequest != null) __obj.updateDynamic("unknownContextRequest")(unknownContextRequest.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrappedContextCritical)) __obj.updateDynamic("wrappedContextCritical")(wrappedContextCritical.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrappedContextRecursive)) __obj.updateDynamic("wrappedContextRecursive")(wrappedContextRecursive.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrappedContextCritical)) __obj.updateDynamic("wrappedContextCritical")(wrappedContextCritical.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrappedContextRecursive)) __obj.updateDynamic("wrappedContextRecursive")(wrappedContextRecursive.get.asInstanceOf[js.Any])
     if (wrappedContextRegExp != null) __obj.updateDynamic("wrappedContextRegExp")(wrappedContextRegExp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Module]
   }

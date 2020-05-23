@@ -1,17 +1,17 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.AnonCancelComponentData
-import typings.devextreme.AnonComponentTElementDxElementModelAny
-import typings.devextreme.AnonConnector
-import typings.devextreme.AnonElement
-import typings.devextreme.AnonElementItem
-import typings.devextreme.AnonEventItem
-import typings.devextreme.AnonFormatModel
-import typings.devextreme.AnonHoverStyle
-import typings.devextreme.AnonKeepLabels
-import typings.devextreme.AnonModel
-import typings.devextreme.AnonName
-import typings.devextreme.AnonTargetAny
+import typings.devextreme.anon.CancelComponentData
+import typings.devextreme.anon.ComponentTElementDxElementModelAny
+import typings.devextreme.anon.Connector
+import typings.devextreme.anon.Element
+import typings.devextreme.anon.ElementItem
+import typings.devextreme.anon.EventItem
+import typings.devextreme.anon.FormatModel
+import typings.devextreme.anon.HoverStyle
+import typings.devextreme.anon.KeepLabels
+import typings.devextreme.anon.Model
+import typings.devextreme.anon.Name
+import typings.devextreme.anon.TargetAny
 import typings.devextreme.devextremeStrings.Bright
 import typings.devextreme.devextremeStrings.Carmine
 import typings.devextreme.devextremeStrings.Default
@@ -60,7 +60,7 @@ import scala.scalajs.js.annotation._
 
 trait dxFunnelOptions extends BaseWidgetOptions[dxFunnel] {
   /** @name dxFunnel.Options.adaptiveLayout */
-  var adaptiveLayout: js.UndefOr[AnonKeepLabels] = js.undefined
+  var adaptiveLayout: js.UndefOr[KeepLabels] = js.undefined
   /** @name dxFunnel.Options.algorithm */
   var algorithm: js.UndefOr[dynamicHeight | dynamicSlope] = js.undefined
   /** @name dxFunnel.Options.argumentField */
@@ -74,9 +74,9 @@ trait dxFunnelOptions extends BaseWidgetOptions[dxFunnel] {
   /** @name dxFunnel.Options.inverted */
   var inverted: js.UndefOr[Boolean] = js.undefined
   /** @name dxFunnel.Options.item */
-  var item: js.UndefOr[AnonHoverStyle] = js.undefined
+  var item: js.UndefOr[HoverStyle] = js.undefined
   /** @name dxFunnel.Options.label */
-  var label: js.UndefOr[AnonConnector] = js.undefined
+  var label: js.UndefOr[Connector] = js.undefined
   /** @name dxFunnel.Options.legend */
   var legend: js.UndefOr[dxFunnelLegend] = js.undefined
   /** @name dxFunnel.Options.neckHeight */
@@ -84,13 +84,13 @@ trait dxFunnelOptions extends BaseWidgetOptions[dxFunnel] {
   /** @name dxFunnel.Options.neckWidth */
   var neckWidth: js.UndefOr[Double] = js.undefined
   /** @name dxFunnel.Options.onHoverChanged */
-  var onHoverChanged: js.UndefOr[js.Function1[/* e */ AnonElementItem, _]] = js.undefined
+  var onHoverChanged: js.UndefOr[js.Function1[/* e */ ElementItem, _]] = js.undefined
   /** @name dxFunnel.Options.onItemClick */
-  var onItemClick: js.UndefOr[(js.Function1[/* e */ AnonEventItem, _]) | String] = js.undefined
+  var onItemClick: js.UndefOr[(js.Function1[/* e */ EventItem, _]) | String] = js.undefined
   /** @name dxFunnel.Options.onLegendClick */
-  var onLegendClick: js.UndefOr[(js.Function1[/* e */ AnonEventItem, _]) | String] = js.undefined
+  var onLegendClick: js.UndefOr[(js.Function1[/* e */ EventItem, _]) | String] = js.undefined
   /** @name dxFunnel.Options.onSelectionChanged */
-  var onSelectionChanged: js.UndefOr[js.Function1[/* e */ AnonElementItem, _]] = js.undefined
+  var onSelectionChanged: js.UndefOr[js.Function1[/* e */ ElementItem, _]] = js.undefined
   /** @name dxFunnel.Options.palette */
   var palette: js.UndefOr[
     js.Array[String] | Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
@@ -113,7 +113,7 @@ trait dxFunnelOptions extends BaseWidgetOptions[dxFunnel] {
 object dxFunnelOptions {
   @scala.inline
   def apply(
-    adaptiveLayout: AnonKeepLabels = null,
+    adaptiveLayout: KeepLabels = null,
     algorithm: dynamicHeight | dynamicSlope = null,
     argumentField: String = null,
     bindingOptions: js.Any = null,
@@ -125,25 +125,25 @@ object dxFunnelOptions {
     height: Double | String | (js.Function0[Double | String]) = null,
     hoverEnabled: js.UndefOr[Boolean] = js.undefined,
     inverted: js.UndefOr[Boolean] = js.undefined,
-    item: AnonHoverStyle = null,
-    label: AnonConnector = null,
+    item: HoverStyle = null,
+    label: Connector = null,
     legend: dxFunnelLegend = null,
     loadingIndicator: BaseWidgetLoadingIndicator = null,
     margin: BaseWidgetMargin = null,
-    neckHeight: Int | Double = null,
-    neckWidth: Int | Double = null,
-    onDisposing: /* e */ AnonModel[dxFunnel] => _ = null,
-    onDrawn: /* e */ AnonComponentTElementDxElementModelAny[dxFunnel] => _ = null,
-    onExported: /* e */ AnonComponentTElementDxElementModelAny[dxFunnel] => _ = null,
-    onExporting: /* e */ AnonFormatModel[dxFunnel] => _ = null,
-    onFileSaving: /* e */ AnonCancelComponentData[dxFunnel] => _ = null,
-    onHoverChanged: /* e */ AnonElementItem => _ = null,
-    onIncidentOccurred: /* e */ AnonTargetAny[dxFunnel] => _ = null,
-    onInitialized: /* e */ AnonElement[dxFunnel] => _ = null,
-    onItemClick: (js.Function1[/* e */ AnonEventItem, _]) | String = null,
-    onLegendClick: (js.Function1[/* e */ AnonEventItem, _]) | String = null,
-    onOptionChanged: /* e */ AnonName[dxFunnel] => _ = null,
-    onSelectionChanged: /* e */ AnonElementItem => _ = null,
+    neckHeight: js.UndefOr[Double] = js.undefined,
+    neckWidth: js.UndefOr[Double] = js.undefined,
+    onDisposing: /* e */ Model[dxFunnel] => _ = null,
+    onDrawn: /* e */ ComponentTElementDxElementModelAny[dxFunnel] => _ = null,
+    onExported: /* e */ ComponentTElementDxElementModelAny[dxFunnel] => _ = null,
+    onExporting: /* e */ FormatModel[dxFunnel] => _ = null,
+    onFileSaving: /* e */ CancelComponentData[dxFunnel] => _ = null,
+    onHoverChanged: /* e */ ElementItem => _ = null,
+    onIncidentOccurred: /* e */ TargetAny[dxFunnel] => _ = null,
+    onInitialized: /* e */ Element[dxFunnel] => _ = null,
+    onItemClick: (js.Function1[/* e */ EventItem, _]) | String = null,
+    onLegendClick: (js.Function1[/* e */ EventItem, _]) | String = null,
+    onOptionChanged: /* e */ Name[dxFunnel] => _ = null,
+    onSelectionChanged: /* e */ ElementItem => _ = null,
     palette: js.Array[String] | Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office = null,
     paletteExtensionMode: alternate | blend | extrapolate = null,
     pathModified: js.UndefOr[Boolean] = js.undefined,
@@ -166,19 +166,19 @@ object dxFunnelOptions {
     if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
     if (colorField != null) __obj.updateDynamic("colorField")(colorField.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
     if (export != null) __obj.updateDynamic("export")(export.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverEnabled)) __obj.updateDynamic("hoverEnabled")(hoverEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverEnabled)) __obj.updateDynamic("hoverEnabled")(hoverEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.get.asInstanceOf[js.Any])
     if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
     if (loadingIndicator != null) __obj.updateDynamic("loadingIndicator")(loadingIndicator.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (neckHeight != null) __obj.updateDynamic("neckHeight")(neckHeight.asInstanceOf[js.Any])
-    if (neckWidth != null) __obj.updateDynamic("neckWidth")(neckWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(neckHeight)) __obj.updateDynamic("neckHeight")(neckHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(neckWidth)) __obj.updateDynamic("neckWidth")(neckWidth.get.asInstanceOf[js.Any])
     if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1(onDisposing))
     if (onDrawn != null) __obj.updateDynamic("onDrawn")(js.Any.fromFunction1(onDrawn))
     if (onExported != null) __obj.updateDynamic("onExported")(js.Any.fromFunction1(onExported))
@@ -193,13 +193,13 @@ object dxFunnelOptions {
     if (onSelectionChanged != null) __obj.updateDynamic("onSelectionChanged")(js.Any.fromFunction1(onSelectionChanged))
     if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
     if (paletteExtensionMode != null) __obj.updateDynamic("paletteExtensionMode")(paletteExtensionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(pathModified)) __obj.updateDynamic("pathModified")(pathModified.asInstanceOf[js.Any])
-    if (!js.isUndefined(redrawOnResize)) __obj.updateDynamic("redrawOnResize")(redrawOnResize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pathModified)) __obj.updateDynamic("pathModified")(pathModified.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(redrawOnResize)) __obj.updateDynamic("redrawOnResize")(redrawOnResize.get.asInstanceOf[js.Any])
     if (resolveLabelOverlapping != null) __obj.updateDynamic("resolveLabelOverlapping")(resolveLabelOverlapping.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
     if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortData)) __obj.updateDynamic("sortData")(sortData.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortData)) __obj.updateDynamic("sortData")(sortData.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])

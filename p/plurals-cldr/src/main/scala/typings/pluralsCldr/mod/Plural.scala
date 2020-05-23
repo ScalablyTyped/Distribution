@@ -13,7 +13,7 @@ trait Plural extends js.Object {
     *
     * @param locale The locale code.
     * @param number The number to check. May be passed as a string to keep
-    * 	trailing zeroes.
+    *     trailing zeroes.
     */
   def apply(locale: String, number: Double): Form | Null = js.native
   /**
@@ -35,7 +35,7 @@ trait Plural extends js.Object {
     *
     * @param locale The locale code.
     * @param number The number to check. May be passed as a string to keep
-    * 	trailing zeroes.
+    *     trailing zeroes.
     */
   def indexOf(locale: String, number: Double): Double = js.native
 }

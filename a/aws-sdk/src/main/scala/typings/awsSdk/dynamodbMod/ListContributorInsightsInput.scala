@@ -23,12 +23,12 @@ trait ListContributorInsightsInput extends js.Object {
 object ListContributorInsightsInput {
   @scala.inline
   def apply(
-    MaxResults: Int | scala.Double = null,
+    MaxResults: js.UndefOr[ListContributorInsightsLimit] = js.undefined,
     NextToken: NextTokenString = null,
     TableName: TableName = null
   ): ListContributorInsightsInput = {
     val __obj = js.Dynamic.literal()
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (TableName != null) __obj.updateDynamic("TableName")(TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListContributorInsightsInput]

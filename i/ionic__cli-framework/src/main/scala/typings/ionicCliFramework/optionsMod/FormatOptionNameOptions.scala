@@ -20,8 +20,8 @@ object FormatOptionNameOptions {
   ): FormatOptionNameOptions = {
     val __obj = js.Dynamic.literal()
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAliases)) __obj.updateDynamic("showAliases")(showAliases.asInstanceOf[js.Any])
-    if (!js.isUndefined(showValueSpec)) __obj.updateDynamic("showValueSpec")(showValueSpec.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAliases)) __obj.updateDynamic("showAliases")(showAliases.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showValueSpec)) __obj.updateDynamic("showValueSpec")(showValueSpec.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatOptionNameOptions]
   }
 }

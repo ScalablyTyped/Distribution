@@ -13,12 +13,7 @@ object Time extends js.Object {
     * The Clock is a Scene plugin which creates and updates Timer Events for its Scene.
     */
   @js.native
-  class Clock protected () extends js.Object {
-    /**
-      * 
-      * @param scene The Scene which owns this Clock.
-      */
-    def this(scene: Scene) = this()
+  trait Clock extends js.Object {
     /**
       * The current time of the Clock, in milliseconds.
       * 
@@ -90,12 +85,7 @@ object Time extends js.Object {
     * Because it's managed by a Clock, a Timer Event is based on game time, will be affected by its Clock's time scale, and will pause if its Clock pauses.
     */
   @js.native
-  class TimerEvent protected () extends js.Object {
-    /**
-      * 
-      * @param config The configuration for the Timer Event, including its delay and callback.
-      */
-    def this(config: TimerEventConfig) = this()
+  trait TimerEvent extends js.Object {
     /**
       * Additional arguments to be passed to the callback.
       */

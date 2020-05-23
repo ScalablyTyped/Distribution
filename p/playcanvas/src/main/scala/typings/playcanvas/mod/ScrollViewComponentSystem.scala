@@ -5,17 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @class
-  * @name pc.ScrollViewComponentSystem
-  * @augments pc.ComponentSystem
-  * @classdesc Manages creation of {@link pc.ScrollViewComponent}s.
-  * @description Create a new ScrollViewComponentSystem.
-  * @param {pc.Application} app - The application.
+  * Create a new ScrollViewComponentSystem.
+  * @param app - The application.
   */
 @JSImport("playcanvas", "ScrollViewComponentSystem")
 @js.native
 class ScrollViewComponentSystem protected ()
-  extends typings.playcanvas.pc.ScrollViewComponentSystem {
+  extends typings.playcanvas.pc.EventHandler {
   def this(app: typings.playcanvas.pc.Application) = this()
 }
 

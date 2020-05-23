@@ -1,6 +1,5 @@
 package typings.tableau.tableau
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -65,41 +64,6 @@ object TableauEventName extends js.Object {
   /** Raised every time the frame size is calculated from the available size and the Viz object's published size. */
   @js.native
   sealed trait VIZ_RESIZE extends TableauEventName
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[TableauEventName with String] = js.native
-  /* "customviewload" */ @js.native
-  object CUSTOM_VIEW_LOAD extends TopLevel[CUSTOM_VIEW_LOAD with String]
-  
-  /* "customviewremove" */ @js.native
-  object CUSTOM_VIEW_REMOVE extends TopLevel[CUSTOM_VIEW_REMOVE with String]
-  
-  /* "customviewsave" */ @js.native
-  object CUSTOM_VIEW_SAVE extends TopLevel[CUSTOM_VIEW_SAVE with String]
-  
-  /* "customviewsetdefault" */ @js.native
-  object CUSTOM_VIEW_SET_DEFAULT extends TopLevel[CUSTOM_VIEW_SET_DEFAULT with String]
-  
-  /* "filterchange" */ @js.native
-  object FILTER_CHANGE extends TopLevel[FILTER_CHANGE with String]
-  
-  /* "marksselection" */ @js.native
-  object MARKS_SELECTION extends TopLevel[MARKS_SELECTION with String]
-  
-  /* "parametervaluechange" */ @js.native
-  object PARAMETER_VALUE_CHANGE extends TopLevel[PARAMETER_VALUE_CHANGE with String]
-  
-  /* "storypointswitch" */ @js.native
-  object STORY_POINT_SWITCH extends TopLevel[STORY_POINT_SWITCH with String]
-  
-  /* "tabswitch" */ @js.native
-  object TAB_SWITCH extends TopLevel[TAB_SWITCH with String]
-  
-  /* "toolbarstatechange" */ @js.native
-  object TOOLBAR_STATE_CHANGE extends TopLevel[TOOLBAR_STATE_CHANGE with String]
-  
-  /* "vizresize" */ @js.native
-  object VIZ_RESIZE extends TopLevel[VIZ_RESIZE with String]
   
 }
 

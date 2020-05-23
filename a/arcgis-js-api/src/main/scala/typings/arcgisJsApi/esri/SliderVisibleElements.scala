@@ -31,8 +31,8 @@ object SliderVisibleElements {
     rangeLabels: js.UndefOr[Boolean] = js.undefined
   ): SliderVisibleElements = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (!js.isUndefined(labels)) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (!js.isUndefined(rangeLabels)) __obj.updateDynamic("rangeLabels")(rangeLabels.asInstanceOf[js.Any])
+    if (!js.isUndefined(labels)) __obj.updateDynamic("labels")(labels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rangeLabels)) __obj.updateDynamic("rangeLabels")(rangeLabels.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliderVisibleElements]
   }
 }

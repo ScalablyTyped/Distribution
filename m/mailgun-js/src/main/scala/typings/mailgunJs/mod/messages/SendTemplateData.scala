@@ -13,8 +13,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined mailgun-js.mailgun-js.messages.SendData & {  template  :string, [templateVariable: string] : string} */
-trait SendTemplateData extends /* templateVariable */ StringDictionary[String] {
+/* Inlined mailgun-js.mailgun-js.messages.SendData & {  template  :string, [templateVariable: string] : any} */
+trait SendTemplateData
+  extends /* templateVariable */ StringDictionary[js.Any] {
   var `amp-html`: js.UndefOr[String] = js.undefined
   var attachment: js.UndefOr[AttachmentData | js.Array[AttachmentData]] = js.undefined
   var bcc: js.UndefOr[String | js.Array[String]] = js.undefined
@@ -61,7 +62,7 @@ object SendTemplateData {
   def apply(
     template: String,
     to: String | js.Array[String],
-    StringDictionary: /* templateVariable */ StringDictionary[String] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     `amp-html`: String = null,
     attachment: AttachmentData | js.Array[AttachmentData] = null,
     bcc: String | js.Array[String] = null,

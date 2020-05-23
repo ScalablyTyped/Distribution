@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.System
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object LaunchUriStatus extends js.Object {
   /** An unknown error was encountered while activating the application. */
   @js.native
   sealed trait unknown extends LaunchUriStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[LaunchUriStatus with Double] = js.native
-  /* 1 */ @js.native
-  object appUnavailable extends TopLevel[appUnavailable with Double]
-  
-  /* 2 */ @js.native
-  object protocolUnavailable extends TopLevel[protocolUnavailable with Double]
-  
-  /* 0 */ @js.native
-  object success extends TopLevel[success with Double]
-  
-  /* 3 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
   
 }
 

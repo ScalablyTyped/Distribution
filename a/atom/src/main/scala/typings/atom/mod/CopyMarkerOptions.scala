@@ -35,11 +35,11 @@ object CopyMarkerOptions {
     tailed: js.UndefOr[Boolean] = js.undefined
   ): CopyMarkerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.asInstanceOf[js.Any])
+    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.get.asInstanceOf[js.Any])
     if (invalidate != null) __obj.updateDynamic("invalidate")(invalidate.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.asInstanceOf[js.Any])
-    if (!js.isUndefined(tailed)) __obj.updateDynamic("tailed")(tailed.asInstanceOf[js.Any])
+    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tailed)) __obj.updateDynamic("tailed")(tailed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyMarkerOptions]
   }
 }

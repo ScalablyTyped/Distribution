@@ -9,19 +9,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.m.Select")
 @js.native
-class Select protected () extends Control {
-  /**
-    * Constructor for a new <code>sap.m.Select</code>.Accepts an object literal <code>mSettings</code>
-    * that defines initialproperty values, aggregated and associated objects as well as event handlers.See
-    * {@link sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the
-    * settings object.
-    * @param sId ID for the new control, generated automatically if no ID is given.
-    * @param mSettings Initial settings for the new control.
-    */
-  def this(sId: String) = this()
-  def this(sId: String, mSettings: js.Any) = this()
+trait Select extends Control {
   /**
     * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
     * @since 1.27.0
@@ -41,8 +30,8 @@ class Select protected () extends Control {
     * <code>sap.m.Select</code>.When called, the context of the event handler (its <code>this</code>) will
     * be bound to <code>oListener</code> if specified, otherwise it will be bound to this
     * <code>sap.m.Select</code> itself.This event is fired when the value in the selection field is
-    * changed in combination with one ofthe following actions:<ul>	<li>The focus leaves the selection
-    * field</li>	<li>The <i>Enter</i> key is pressed</li>	<li>The item is pressed</li></ul>
+    * changed in combination with one ofthe following actions:<ul>    <li>The focus leaves the selection
+    * field</li>    <li>The <i>Enter</i> key is pressed</li>    <li>The item is pressed</li></ul>
     * @param oData An application-specific payload object that will be passed to the event handler along
     * with the event object when firing the event
     * @param fnFunction The function to be called when the event occurs

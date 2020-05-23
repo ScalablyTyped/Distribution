@@ -17,17 +17,17 @@ object Options {
   @scala.inline
   def apply(
     condition: Condition = null,
-    duration: Int | Double = null,
-    maxDelta: Int | Double = null,
-    timeout: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
+    maxDelta: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined,
     useAnchor: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (maxDelta != null) __obj.updateDynamic("maxDelta")(maxDelta.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(useAnchor)) __obj.updateDynamic("useAnchor")(useAnchor.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDelta)) __obj.updateDynamic("maxDelta")(maxDelta.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useAnchor)) __obj.updateDynamic("useAnchor")(useAnchor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -1,6 +1,6 @@
 package typings.rrule.iterresultMod
 
-import typings.rrule.PartialIterArgs
+import typings.rrule.anon.PartialIterArgs
 import typings.rrule.typesMod.IterResultType
 import typings.rrule.typesMod.QueryMethodTypes
 import typings.std.Date

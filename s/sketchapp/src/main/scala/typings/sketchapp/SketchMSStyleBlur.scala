@@ -1,5 +1,6 @@
 package typings.sketchapp
 
+import typings.sketchapp.anon.X
 import typings.sketchapp.sketchappStrings.styleBlur
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait SketchMSStyleBlur extends js.Object {
   var _class: styleBlur
-  var center: AnonX
+  var center: X
   var isEnabled: Double
   var motionAngle: Double
   var radius: Double
@@ -18,7 +19,7 @@ object SketchMSStyleBlur {
   @scala.inline
   def apply(
     _class: styleBlur,
-    center: AnonX,
+    center: X,
     isEnabled: Double,
     motionAngle: Double,
     radius: Double,

@@ -55,6 +55,20 @@ object filters extends js.Object {
   class AlphaFilter ()
     extends typings.pixiJs.PIXI.filters.AlphaFilter {
     def this(alpha: Double) = this()
+    /**
+      * Program that the shader uses
+      *
+      * @member {PIXI.Program} PIXI.Shader#program
+      */
+    /* CompleteClass */
+    override var program: typings.pixiJs.PIXI.Program = js.native
+    /**
+      * Shader uniform values, shortcut for `uniformGroup.uniforms`
+      * @readonly
+      * @member {object}
+      */
+    /* CompleteClass */
+    override val uniforms: js.Any = js.native
   }
   
   /**
@@ -73,6 +87,20 @@ object filters extends js.Object {
     def this(strength: Double, quality: Double) = this()
     def this(strength: Double, quality: Double, resolution: Double) = this()
     def this(strength: Double, quality: Double, resolution: Double, kernelSize: Double) = this()
+    /**
+      * Program that the shader uses
+      *
+      * @member {PIXI.Program} PIXI.Shader#program
+      */
+    /* CompleteClass */
+    override var program: typings.pixiJs.PIXI.Program = js.native
+    /**
+      * Shader uniform values, shortcut for `uniformGroup.uniforms`
+      * @readonly
+      * @member {object}
+      */
+    /* CompleteClass */
+    override val uniforms: js.Any = js.native
   }
   
   /**
@@ -87,6 +115,20 @@ object filters extends js.Object {
     extends typings.pixiJs.PIXI.filters.BlurFilterPass {
     def this(horizontal: Boolean, strength: Double, quality: Double, resolution: Double) = this()
     def this(horizontal: Boolean, strength: Double, quality: Double, resolution: Double, kernelSize: Double) = this()
+    /**
+      * Program that the shader uses
+      *
+      * @member {PIXI.Program} PIXI.Shader#program
+      */
+    /* CompleteClass */
+    override var program: typings.pixiJs.PIXI.Program = js.native
+    /**
+      * Shader uniform values, shortcut for `uniformGroup.uniforms`
+      * @readonly
+      * @member {object}
+      */
+    /* CompleteClass */
+    override val uniforms: js.Any = js.native
   }
   
   /**
@@ -106,7 +148,22 @@ object filters extends js.Object {
     */
   @js.native
   class ColorMatrixFilter ()
-    extends typings.pixiJs.PIXI.filters.ColorMatrixFilter
+    extends typings.pixiJs.PIXI.filters.ColorMatrixFilter {
+    /**
+      * Program that the shader uses
+      *
+      * @member {PIXI.Program} PIXI.Shader#program
+      */
+    /* CompleteClass */
+    override var program: typings.pixiJs.PIXI.Program = js.native
+    /**
+      * Shader uniform values, shortcut for `uniformGroup.uniforms`
+      * @readonly
+      * @member {object}
+      */
+    /* CompleteClass */
+    override val uniforms: js.Any = js.native
+  }
   
   /**
     * The DisplacementFilter class uses the pixel values from the specified texture
@@ -131,6 +188,20 @@ object filters extends js.Object {
     extends typings.pixiJs.PIXI.filters.DisplacementFilter {
     def this(sprite: typings.pixiJs.PIXI.Sprite) = this()
     def this(sprite: typings.pixiJs.PIXI.Sprite, scale: Double) = this()
+    /**
+      * Program that the shader uses
+      *
+      * @member {PIXI.Program} PIXI.Shader#program
+      */
+    /* CompleteClass */
+    override var program: typings.pixiJs.PIXI.Program = js.native
+    /**
+      * Shader uniform values, shortcut for `uniformGroup.uniforms`
+      * @readonly
+      * @member {object}
+      */
+    /* CompleteClass */
+    override val uniforms: js.Any = js.native
   }
   
   /**
@@ -146,7 +217,22 @@ object filters extends js.Object {
     */
   @js.native
   class FXAAFilter ()
-    extends typings.pixiJs.PIXI.filters.FXAAFilter
+    extends typings.pixiJs.PIXI.filters.FXAAFilter {
+    /**
+      * Program that the shader uses
+      *
+      * @member {PIXI.Program} PIXI.Shader#program
+      */
+    /* CompleteClass */
+    override var program: typings.pixiJs.PIXI.Program = js.native
+    /**
+      * Shader uniform values, shortcut for `uniformGroup.uniforms`
+      * @readonly
+      * @member {object}
+      */
+    /* CompleteClass */
+    override val uniforms: js.Any = js.native
+  }
   
   /**
     * A Noise effect filter.
@@ -160,6 +246,20 @@ object filters extends js.Object {
     extends typings.pixiJs.PIXI.filters.NoiseFilter {
     def this(noise: Double) = this()
     def this(noise: Double, seed: Double) = this()
+    /**
+      * Program that the shader uses
+      *
+      * @member {PIXI.Program} PIXI.Shader#program
+      */
+    /* CompleteClass */
+    override var program: typings.pixiJs.PIXI.Program = js.native
+    /**
+      * Shader uniform values, shortcut for `uniformGroup.uniforms`
+      * @readonly
+      * @member {object}
+      */
+    /* CompleteClass */
+    override val uniforms: js.Any = js.native
   }
   
 }

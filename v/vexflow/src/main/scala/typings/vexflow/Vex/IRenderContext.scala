@@ -1,6 +1,7 @@
 package typings.vexflow.Vex
 
-import typings.vexflow.AnonWidth
+import typings.std.Node
+import typings.vexflow.anon.Width
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +16,7 @@ trait IRenderContext extends js.Object {
   def bezierCurveTo(x1: Double, y1: Double, x2: Double, y2: Double, x: Double, y: Double): IRenderContext = js.native
   def clear(): Unit = js.native
   def clearRect(x: Double, y: Double, width: Double, height: Double): IRenderContext = js.native
+  def closeGroup(): Unit = js.native
   def closePath(): IRenderContext = js.native
   def fill(): IRenderContext = js.native
   def fillRect(x: Double, y: Double, width: Double, height: Double): IRenderContext = js.native
@@ -24,8 +26,9 @@ trait IRenderContext extends js.Object {
   /**
     * canvas returns TextMetrics, SVG returns SVGRect, Raphael returns {width : number, height : number}. Only width is used throughout VexFlow.
     */
-  def measureText(text: String): AnonWidth = js.native
+  def measureText(text: String): Width = js.native
   def moveTo(x: Double, y: Double): IRenderContext = js.native
+  def openGroup(): js.UndefOr[Node] = js.native
   def quadraticCurveTo(x1: Double, y1: Double, x2: Double, y2: Double): IRenderContext = js.native
   def resize(width: Double, height: Double): IRenderContext = js.native
   def restore(): IRenderContext = js.native

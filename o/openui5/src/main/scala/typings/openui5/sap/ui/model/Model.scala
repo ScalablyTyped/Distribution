@@ -1,18 +1,13 @@
 package typings.openui5.sap.ui.model
 
-import typings.openui5.TypeofBindingMode
+import typings.openui5.anon.TypeofBindingMode
 import typings.openui5.sap.ui.core.message.MessageProcessor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.model.Model")
 @js.native
-/**
-  * Constructor for a new Model.Every Model is a MessageProcessor that is able to handle Messages with
-  * the normal binding path syntax in the target.
-  */
-abstract class Model () extends MessageProcessor {
+trait Model extends MessageProcessor {
   /**
     * Attach event-handler <code>fnFunction</code> to the 'parseError' event of this
     * <code>sap.ui.model.Model</code>.<br/>

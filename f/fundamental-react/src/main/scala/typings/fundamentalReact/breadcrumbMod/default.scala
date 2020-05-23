@@ -1,8 +1,8 @@
 package typings.fundamentalReact.breadcrumbMod
 
-import typings.fundamentalReact.FunctionComponentBreadcru
-import typings.fundamentalReact.PartialBreadcrumbProps
-import typings.fundamentalReact.WeakValidationMapBreadcru
+import typings.fundamentalReact.anon.FunctionComponentBreadcru
+import typings.fundamentalReact.anon.PartialBreadcrumbProps
+import typings.fundamentalReact.anon.WeakValidationMapBreadcru
 import typings.fundamentalReact.fundamentalReactStrings.Breadcrumb
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement

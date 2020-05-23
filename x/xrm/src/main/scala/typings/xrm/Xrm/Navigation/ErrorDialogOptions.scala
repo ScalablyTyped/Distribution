@@ -27,10 +27,10 @@ trait ErrorDialogOptions extends js.Object {
 
 object ErrorDialogOptions {
   @scala.inline
-  def apply(details: String = null, errorCode: Int | Double = null, message: String = null): ErrorDialogOptions = {
+  def apply(details: String = null, errorCode: js.UndefOr[Double] = js.undefined, message: String = null): ErrorDialogOptions = {
     val __obj = js.Dynamic.literal()
     if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorCode)) __obj.updateDynamic("errorCode")(errorCode.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorDialogOptions]
   }

@@ -77,28 +77,28 @@ object ITimepickerConfig {
   @scala.inline
   def apply(
     arrowkeys: js.UndefOr[Boolean] = js.undefined,
-    hourStep: Int | Double = null,
+    hourStep: js.UndefOr[Double] = js.undefined,
     meridians: js.Array[String] = null,
-    minuteStep: Int | Double = null,
+    minuteStep: js.UndefOr[Double] = js.undefined,
     mousewheel: js.UndefOr[Boolean] = js.undefined,
     readonlyInput: js.UndefOr[Boolean] = js.undefined,
-    secondStep: Int | Double = null,
+    secondStep: js.UndefOr[Double] = js.undefined,
     showMeridian: js.UndefOr[Boolean] = js.undefined,
     showSeconds: js.UndefOr[Boolean] = js.undefined,
     showSpinners: js.UndefOr[Boolean] = js.undefined,
     templateUrl: String = null
   ): ITimepickerConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arrowkeys)) __obj.updateDynamic("arrowkeys")(arrowkeys.asInstanceOf[js.Any])
-    if (hourStep != null) __obj.updateDynamic("hourStep")(hourStep.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrowkeys)) __obj.updateDynamic("arrowkeys")(arrowkeys.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hourStep)) __obj.updateDynamic("hourStep")(hourStep.get.asInstanceOf[js.Any])
     if (meridians != null) __obj.updateDynamic("meridians")(meridians.asInstanceOf[js.Any])
-    if (minuteStep != null) __obj.updateDynamic("minuteStep")(minuteStep.asInstanceOf[js.Any])
-    if (!js.isUndefined(mousewheel)) __obj.updateDynamic("mousewheel")(mousewheel.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonlyInput)) __obj.updateDynamic("readonlyInput")(readonlyInput.asInstanceOf[js.Any])
-    if (secondStep != null) __obj.updateDynamic("secondStep")(secondStep.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMeridian)) __obj.updateDynamic("showMeridian")(showMeridian.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSeconds)) __obj.updateDynamic("showSeconds")(showSeconds.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSpinners)) __obj.updateDynamic("showSpinners")(showSpinners.asInstanceOf[js.Any])
+    if (!js.isUndefined(minuteStep)) __obj.updateDynamic("minuteStep")(minuteStep.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mousewheel)) __obj.updateDynamic("mousewheel")(mousewheel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(readonlyInput)) __obj.updateDynamic("readonlyInput")(readonlyInput.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(secondStep)) __obj.updateDynamic("secondStep")(secondStep.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMeridian)) __obj.updateDynamic("showMeridian")(showMeridian.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSeconds)) __obj.updateDynamic("showSeconds")(showSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSpinners)) __obj.updateDynamic("showSpinners")(showSpinners.get.asInstanceOf[js.Any])
     if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITimepickerConfig]
   }

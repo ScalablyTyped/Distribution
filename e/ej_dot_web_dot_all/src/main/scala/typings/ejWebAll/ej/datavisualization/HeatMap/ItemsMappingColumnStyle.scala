@@ -27,13 +27,13 @@ object ItemsMappingColumnStyle {
     headerTemplateID: String = null,
     templateID: String = null,
     textAlign: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): ItemsMappingColumnStyle = {
     val __obj = js.Dynamic.literal()
     if (headerTemplateID != null) __obj.updateDynamic("headerTemplateID")(headerTemplateID.asInstanceOf[js.Any])
     if (templateID != null) __obj.updateDynamic("templateID")(templateID.asInstanceOf[js.Any])
     if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsMappingColumnStyle]
   }
 }

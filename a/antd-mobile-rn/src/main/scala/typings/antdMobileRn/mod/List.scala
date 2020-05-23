@@ -1,7 +1,7 @@
 package typings.antdMobileRn.mod
 
-import typings.antdMobileRn.Anon0
-import typings.antdMobileRn.TypeofItem
+import typings.antdMobileRn.anon.TypeofItem
+import typings.antdMobileRn.anon.`0`
 import typings.antdMobileRn.listIndexNativeMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,6 +16,6 @@ class List () extends default
 @js.native
 object List extends js.Object {
   var Item: TypeofItem = js.native
-  var defaultProps: Anon0 = js.native
+  var defaultProps: `0` = js.native
 }
 

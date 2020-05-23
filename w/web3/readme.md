@@ -1,7 +1,7 @@
 
 # Scala.js typings for web3
 
-Typings are for version 1.2.6
+Typings are for version 1.2.8
 
 ## Library description:
 Ethereum JavaScript API

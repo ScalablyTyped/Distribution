@@ -1,7 +1,7 @@
 package typings.stellarSdk.serverApiMod.ServerApi
 
 import org.scalablytyped.runtime.TopLevel
-import typings.stellarSdk.AnonAssetissuer
+import typings.stellarSdk.anon.Assetissuer
 import typings.stellarSdk.horizonApiMod.Horizon.BaseResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ trait PaymentPathRecord
   var destination_asset_code: String
   var destination_asset_issuer: String
   var destination_asset_type: String
-  var path: js.Array[AnonAssetissuer]
+  var path: js.Array[Assetissuer]
   var source_amount: String
   var source_asset_code: String
   var source_asset_issuer: String
@@ -30,7 +30,7 @@ object PaymentPathRecord {
     destination_asset_code: String,
     destination_asset_issuer: String,
     destination_asset_type: String,
-    path: js.Array[AnonAssetissuer],
+    path: js.Array[Assetissuer],
     source_amount: String,
     source_asset_code: String,
     source_asset_issuer: String,

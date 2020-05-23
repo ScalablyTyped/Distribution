@@ -1,5 +1,8 @@
 package typings.sourceListMap
 
+import typings.sourceListMap.anon.File
+import typings.sourceListMap.anon.Map
+import typings.sourceListMap.anon.Sources
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -66,7 +69,7 @@ object mod extends js.Object {
     def prepend(generatedCode: SourceNode): Unit = js.native
     def prepend(generatedCode: SourceNode, source: String): Unit = js.native
     def prepend(generatedCode: SourceNode, source: String, originalSource: String): Unit = js.native
-    def toStringWithSourceMap(options: AnonFile): AnonMap = js.native
+    def toStringWithSourceMap(options: File): Map = js.native
   }
   
   @js.native
@@ -82,6 +85,6 @@ object mod extends js.Object {
     def mapGeneratedCode(fn: js.Function1[/* code */ String, String]): Unit = js.native
   }
   
-  def fromStringWithSourceMap(code: String, map: AnonSources): SourceListMap = js.native
+  def fromStringWithSourceMap(code: String, map: Sources): SourceListMap = js.native
 }
 

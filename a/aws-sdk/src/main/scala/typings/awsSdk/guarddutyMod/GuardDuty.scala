@@ -24,12 +24,12 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AcceptInvitationResponse, Unit]
   ): Request[AcceptInvitationResponse, AWSError] = js.native
   /**
-    * Archives GuardDuty findings specified by the list of finding IDs.  Only the master account can archive findings. Member accounts do not have permission to archive findings from their accounts. 
+    * Archives GuardDuty findings that are specified by the list of finding IDs.  Only the master account can archive findings. Member accounts don't have permission to archive findings from their accounts. 
     */
   def archiveFindings(): Request[ArchiveFindingsResponse, AWSError] = js.native
   def archiveFindings(callback: js.Function2[/* err */ AWSError, /* data */ ArchiveFindingsResponse, Unit]): Request[ArchiveFindingsResponse, AWSError] = js.native
   /**
-    * Archives GuardDuty findings specified by the list of finding IDs.  Only the master account can archive findings. Member accounts do not have permission to archive findings from their accounts. 
+    * Archives GuardDuty findings that are specified by the list of finding IDs.  Only the master account can archive findings. Member accounts don't have permission to archive findings from their accounts. 
     */
   def archiveFindings(params: ArchiveFindingsRequest): Request[ArchiveFindingsResponse, AWSError] = js.native
   def archiveFindings(
@@ -37,12 +37,12 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ArchiveFindingsResponse, Unit]
   ): Request[ArchiveFindingsResponse, AWSError] = js.native
   /**
-    * Creates a single Amazon GuardDuty detector. A detector is a resource that represents the GuardDuty service. To start using GuardDuty, you must create a detector in each region that you enable the service. You can have only one detector per account per region.
+    * Creates a single Amazon GuardDuty detector. A detector is a resource that represents the GuardDuty service. To start using GuardDuty, you must create a detector in each Region where you enable the service. You can have only one detector per account per Region.
     */
   def createDetector(): Request[CreateDetectorResponse, AWSError] = js.native
   def createDetector(callback: js.Function2[/* err */ AWSError, /* data */ CreateDetectorResponse, Unit]): Request[CreateDetectorResponse, AWSError] = js.native
   /**
-    * Creates a single Amazon GuardDuty detector. A detector is a resource that represents the GuardDuty service. To start using GuardDuty, you must create a detector in each region that you enable the service. You can have only one detector per account per region.
+    * Creates a single Amazon GuardDuty detector. A detector is a resource that represents the GuardDuty service. To start using GuardDuty, you must create a detector in each Region where you enable the service. You can have only one detector per account per Region.
     */
   def createDetector(params: CreateDetectorRequest): Request[CreateDetectorResponse, AWSError] = js.native
   def createDetector(
@@ -63,12 +63,12 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateFilterResponse, Unit]
   ): Request[CreateFilterResponse, AWSError] = js.native
   /**
-    * Creates a new IPSet, called Trusted IP list in the consoler user interface. An IPSet is a list IP addresses trusted for secure communication with AWS infrastructure and applications. GuardDuty does not generate findings for IP addresses included in IPSets. Only users from the master account can use this operation.
+    * Creates a new IPSet, which is called a trusted IP list in the console user interface. An IPSet is a list of IP addresses that are trusted for secure communication with AWS infrastructure and applications. GuardDuty doesn't generate findings for IP addresses that are included in IPSets. Only users from the master account can use this operation.
     */
   def createIPSet(): Request[CreateIPSetResponse, AWSError] = js.native
   def createIPSet(callback: js.Function2[/* err */ AWSError, /* data */ CreateIPSetResponse, Unit]): Request[CreateIPSetResponse, AWSError] = js.native
   /**
-    * Creates a new IPSet, called Trusted IP list in the consoler user interface. An IPSet is a list IP addresses trusted for secure communication with AWS infrastructure and applications. GuardDuty does not generate findings for IP addresses included in IPSets. Only users from the master account can use this operation.
+    * Creates a new IPSet, which is called a trusted IP list in the console user interface. An IPSet is a list of IP addresses that are trusted for secure communication with AWS infrastructure and applications. GuardDuty doesn't generate findings for IP addresses that are included in IPSets. Only users from the master account can use this operation.
     */
   def createIPSet(params: CreateIPSetRequest): Request[CreateIPSetResponse, AWSError] = js.native
   def createIPSet(
@@ -89,12 +89,12 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateMembersResponse, Unit]
   ): Request[CreateMembersResponse, AWSError] = js.native
   /**
-    * Creates a publishing destination to send findings to. The resource to send findings to must exist before you use this operation.
+    * Creates a publishing destination to export findings to. The resource to export findings to must exist before you use this operation.
     */
   def createPublishingDestination(): Request[CreatePublishingDestinationResponse, AWSError] = js.native
   def createPublishingDestination(callback: js.Function2[/* err */ AWSError, /* data */ CreatePublishingDestinationResponse, Unit]): Request[CreatePublishingDestinationResponse, AWSError] = js.native
   /**
-    * Creates a publishing destination to send findings to. The resource to send findings to must exist before you use this operation.
+    * Creates a publishing destination to export findings to. The resource to export findings to must exist before you use this operation.
     */
   def createPublishingDestination(params: CreatePublishingDestinationRequest): Request[CreatePublishingDestinationResponse, AWSError] = js.native
   def createPublishingDestination(
@@ -115,12 +115,12 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateSampleFindingsResponse, Unit]
   ): Request[CreateSampleFindingsResponse, AWSError] = js.native
   /**
-    * Create a new ThreatIntelSet. ThreatIntelSets consist of known malicious IP addresses. GuardDuty generates findings based on ThreatIntelSets. Only users of the master account can use this operation.
+    * Creates a new ThreatIntelSet. ThreatIntelSets consist of known malicious IP addresses. GuardDuty generates findings based on ThreatIntelSets. Only users of the master account can use this operation.
     */
   def createThreatIntelSet(): Request[CreateThreatIntelSetResponse, AWSError] = js.native
   def createThreatIntelSet(callback: js.Function2[/* err */ AWSError, /* data */ CreateThreatIntelSetResponse, Unit]): Request[CreateThreatIntelSetResponse, AWSError] = js.native
   /**
-    * Create a new ThreatIntelSet. ThreatIntelSets consist of known malicious IP addresses. GuardDuty generates findings based on ThreatIntelSets. Only users of the master account can use this operation.
+    * Creates a new ThreatIntelSet. ThreatIntelSets consist of known malicious IP addresses. GuardDuty generates findings based on ThreatIntelSets. Only users of the master account can use this operation.
     */
   def createThreatIntelSet(params: CreateThreatIntelSetRequest): Request[CreateThreatIntelSetResponse, AWSError] = js.native
   def createThreatIntelSet(
@@ -128,12 +128,12 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateThreatIntelSetResponse, Unit]
   ): Request[CreateThreatIntelSetResponse, AWSError] = js.native
   /**
-    * Declines invitations sent to the current member account by AWS account specified by their account IDs.
+    * Declines invitations sent to the current member account by AWS accounts specified by their account IDs.
     */
   def declineInvitations(): Request[DeclineInvitationsResponse, AWSError] = js.native
   def declineInvitations(callback: js.Function2[/* err */ AWSError, /* data */ DeclineInvitationsResponse, Unit]): Request[DeclineInvitationsResponse, AWSError] = js.native
   /**
-    * Declines invitations sent to the current member account by AWS account specified by their account IDs.
+    * Declines invitations sent to the current member account by AWS accounts specified by their account IDs.
     */
   def declineInvitations(params: DeclineInvitationsRequest): Request[DeclineInvitationsResponse, AWSError] = js.native
   def declineInvitations(
@@ -141,12 +141,12 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeclineInvitationsResponse, Unit]
   ): Request[DeclineInvitationsResponse, AWSError] = js.native
   /**
-    * Deletes a Amazon GuardDuty detector specified by the detector ID.
+    * Deletes an Amazon GuardDuty detector that is specified by the detector ID.
     */
   def deleteDetector(): Request[DeleteDetectorResponse, AWSError] = js.native
   def deleteDetector(callback: js.Function2[/* err */ AWSError, /* data */ DeleteDetectorResponse, Unit]): Request[DeleteDetectorResponse, AWSError] = js.native
   /**
-    * Deletes a Amazon GuardDuty detector specified by the detector ID.
+    * Deletes an Amazon GuardDuty detector that is specified by the detector ID.
     */
   def deleteDetector(params: DeleteDetectorRequest): Request[DeleteDetectorResponse, AWSError] = js.native
   def deleteDetector(
@@ -167,12 +167,12 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteFilterResponse, Unit]
   ): Request[DeleteFilterResponse, AWSError] = js.native
   /**
-    * Deletes the IPSet specified by the ipSetId. IPSets are called Trusted IP lists in the console user interface.
+    * Deletes the IPSet specified by the ipSetId. IPSets are called trusted IP lists in the console user interface.
     */
   def deleteIPSet(): Request[DeleteIPSetResponse, AWSError] = js.native
   def deleteIPSet(callback: js.Function2[/* err */ AWSError, /* data */ DeleteIPSetResponse, Unit]): Request[DeleteIPSetResponse, AWSError] = js.native
   /**
-    * Deletes the IPSet specified by the ipSetId. IPSets are called Trusted IP lists in the console user interface.
+    * Deletes the IPSet specified by the ipSetId. IPSets are called trusted IP lists in the console user interface.
     */
   def deleteIPSet(params: DeleteIPSetRequest): Request[DeleteIPSetResponse, AWSError] = js.native
   def deleteIPSet(
@@ -219,18 +219,33 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeletePublishingDestinationResponse, Unit]
   ): Request[DeletePublishingDestinationResponse, AWSError] = js.native
   /**
-    * Deletes ThreatIntelSet specified by the ThreatIntelSet ID.
+    * Deletes the ThreatIntelSet specified by the ThreatIntelSet ID.
     */
   def deleteThreatIntelSet(): Request[DeleteThreatIntelSetResponse, AWSError] = js.native
   def deleteThreatIntelSet(callback: js.Function2[/* err */ AWSError, /* data */ DeleteThreatIntelSetResponse, Unit]): Request[DeleteThreatIntelSetResponse, AWSError] = js.native
   /**
-    * Deletes ThreatIntelSet specified by the ThreatIntelSet ID.
+    * Deletes the ThreatIntelSet specified by the ThreatIntelSet ID.
     */
   def deleteThreatIntelSet(params: DeleteThreatIntelSetRequest): Request[DeleteThreatIntelSetResponse, AWSError] = js.native
   def deleteThreatIntelSet(
     params: DeleteThreatIntelSetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteThreatIntelSetResponse, Unit]
   ): Request[DeleteThreatIntelSetResponse, AWSError] = js.native
+  /**
+    * Returns information about the account selected as the delegated administrator for GuardDuty.
+    */
+  def describeOrganizationConfiguration(): Request[DescribeOrganizationConfigurationResponse, AWSError] = js.native
+  def describeOrganizationConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeOrganizationConfigurationResponse, Unit]
+  ): Request[DescribeOrganizationConfigurationResponse, AWSError] = js.native
+  /**
+    * Returns information about the account selected as the delegated administrator for GuardDuty.
+    */
+  def describeOrganizationConfiguration(params: DescribeOrganizationConfigurationRequest): Request[DescribeOrganizationConfigurationResponse, AWSError] = js.native
+  def describeOrganizationConfiguration(
+    params: DescribeOrganizationConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeOrganizationConfigurationResponse, Unit]
+  ): Request[DescribeOrganizationConfigurationResponse, AWSError] = js.native
   /**
     * Returns information about the publishing destination specified by the provided destinationId.
     */
@@ -244,6 +259,21 @@ trait GuardDuty extends Service {
     params: DescribePublishingDestinationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribePublishingDestinationResponse, Unit]
   ): Request[DescribePublishingDestinationResponse, AWSError] = js.native
+  /**
+    * Disables an AWS account within the Organization as the GuardDuty delegated administrator.
+    */
+  def disableOrganizationAdminAccount(): Request[DisableOrganizationAdminAccountResponse, AWSError] = js.native
+  def disableOrganizationAdminAccount(
+    callback: js.Function2[/* err */ AWSError, /* data */ DisableOrganizationAdminAccountResponse, Unit]
+  ): Request[DisableOrganizationAdminAccountResponse, AWSError] = js.native
+  /**
+    * Disables an AWS account within the Organization as the GuardDuty delegated administrator.
+    */
+  def disableOrganizationAdminAccount(params: DisableOrganizationAdminAccountRequest): Request[DisableOrganizationAdminAccountResponse, AWSError] = js.native
+  def disableOrganizationAdminAccount(
+    params: DisableOrganizationAdminAccountRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisableOrganizationAdminAccountResponse, Unit]
+  ): Request[DisableOrganizationAdminAccountResponse, AWSError] = js.native
   /**
     * Disassociates the current GuardDuty member account from its master account.
     */
@@ -270,6 +300,21 @@ trait GuardDuty extends Service {
     params: DisassociateMembersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateMembersResponse, Unit]
   ): Request[DisassociateMembersResponse, AWSError] = js.native
+  /**
+    * Enables an AWS account within the organization as the GuardDuty delegated administrator.
+    */
+  def enableOrganizationAdminAccount(): Request[EnableOrganizationAdminAccountResponse, AWSError] = js.native
+  def enableOrganizationAdminAccount(
+    callback: js.Function2[/* err */ AWSError, /* data */ EnableOrganizationAdminAccountResponse, Unit]
+  ): Request[EnableOrganizationAdminAccountResponse, AWSError] = js.native
+  /**
+    * Enables an AWS account within the organization as the GuardDuty delegated administrator.
+    */
+  def enableOrganizationAdminAccount(params: EnableOrganizationAdminAccountRequest): Request[EnableOrganizationAdminAccountResponse, AWSError] = js.native
+  def enableOrganizationAdminAccount(
+    params: EnableOrganizationAdminAccountRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ EnableOrganizationAdminAccountResponse, Unit]
+  ): Request[EnableOrganizationAdminAccountResponse, AWSError] = js.native
   /**
     * Retrieves an Amazon GuardDuty detector specified by the detectorId.
     */
@@ -310,12 +355,12 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetFindingsResponse, Unit]
   ): Request[GetFindingsResponse, AWSError] = js.native
   /**
-    * Lists Amazon GuardDuty findings' statistics for the specified detector ID.
+    * Lists Amazon GuardDuty findings statistics for the specified detector ID.
     */
   def getFindingsStatistics(): Request[GetFindingsStatisticsResponse, AWSError] = js.native
   def getFindingsStatistics(callback: js.Function2[/* err */ AWSError, /* data */ GetFindingsStatisticsResponse, Unit]): Request[GetFindingsStatisticsResponse, AWSError] = js.native
   /**
-    * Lists Amazon GuardDuty findings' statistics for the specified detector ID.
+    * Lists Amazon GuardDuty findings statistics for the specified detector ID.
     */
   def getFindingsStatistics(params: GetFindingsStatisticsRequest): Request[GetFindingsStatisticsResponse, AWSError] = js.native
   def getFindingsStatistics(
@@ -388,12 +433,12 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetThreatIntelSetResponse, Unit]
   ): Request[GetThreatIntelSetResponse, AWSError] = js.native
   /**
-    * Invites other AWS accounts (created as members of the current AWS account by CreateMembers) to enable GuardDuty and allow the current AWS account to view and manage these accounts' GuardDuty findings on their behalf as the master account.
+    * Invites other AWS accounts (created as members of the current AWS account by CreateMembers) to enable GuardDuty, and allow the current AWS account to view and manage these accounts' GuardDuty findings on their behalf as the master account.
     */
   def inviteMembers(): Request[InviteMembersResponse, AWSError] = js.native
   def inviteMembers(callback: js.Function2[/* err */ AWSError, /* data */ InviteMembersResponse, Unit]): Request[InviteMembersResponse, AWSError] = js.native
   /**
-    * Invites other AWS accounts (created as members of the current AWS account by CreateMembers) to enable GuardDuty and allow the current AWS account to view and manage these accounts' GuardDuty findings on their behalf as the master account.
+    * Invites other AWS accounts (created as members of the current AWS account by CreateMembers) to enable GuardDuty, and allow the current AWS account to view and manage these accounts' GuardDuty findings on their behalf as the master account.
     */
   def inviteMembers(params: InviteMembersRequest): Request[InviteMembersResponse, AWSError] = js.native
   def inviteMembers(
@@ -466,18 +511,31 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListInvitationsResponse, Unit]
   ): Request[ListInvitationsResponse, AWSError] = js.native
   /**
-    * Lists details about all member accounts for the current GuardDuty master account.
+    * Lists details about associated member accounts for the current GuardDuty master account.
     */
   def listMembers(): Request[ListMembersResponse, AWSError] = js.native
   def listMembers(callback: js.Function2[/* err */ AWSError, /* data */ ListMembersResponse, Unit]): Request[ListMembersResponse, AWSError] = js.native
   /**
-    * Lists details about all member accounts for the current GuardDuty master account.
+    * Lists details about associated member accounts for the current GuardDuty master account.
     */
   def listMembers(params: ListMembersRequest): Request[ListMembersResponse, AWSError] = js.native
   def listMembers(
     params: ListMembersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListMembersResponse, Unit]
   ): Request[ListMembersResponse, AWSError] = js.native
+  /**
+    * Lists the accounts configured as GuardDuty delegated administrators.
+    */
+  def listOrganizationAdminAccounts(): Request[ListOrganizationAdminAccountsResponse, AWSError] = js.native
+  def listOrganizationAdminAccounts(callback: js.Function2[/* err */ AWSError, /* data */ ListOrganizationAdminAccountsResponse, Unit]): Request[ListOrganizationAdminAccountsResponse, AWSError] = js.native
+  /**
+    * Lists the accounts configured as GuardDuty delegated administrators.
+    */
+  def listOrganizationAdminAccounts(params: ListOrganizationAdminAccountsRequest): Request[ListOrganizationAdminAccountsResponse, AWSError] = js.native
+  def listOrganizationAdminAccounts(
+    params: ListOrganizationAdminAccountsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListOrganizationAdminAccountsResponse, Unit]
+  ): Request[ListOrganizationAdminAccountsResponse, AWSError] = js.native
   /**
     * Returns a list of publishing destinations associated with the specified dectectorId.
     */
@@ -492,12 +550,12 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListPublishingDestinationsResponse, Unit]
   ): Request[ListPublishingDestinationsResponse, AWSError] = js.native
   /**
-    * Lists tags for a resource. Tagging is currently supported for detectors, finding filters, IP sets, and Threat Intel sets, with a limit of 50 tags per resource. When invoked, this operation returns all assigned tags for a given resource..
+    * Lists tags for a resource. Tagging is currently supported for detectors, finding filters, IP sets, and threat intel sets, with a limit of 50 tags per resource. When invoked, this operation returns all assigned tags for a given resource.
     */
   def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
   /**
-    * Lists tags for a resource. Tagging is currently supported for detectors, finding filters, IP sets, and Threat Intel sets, with a limit of 50 tags per resource. When invoked, this operation returns all assigned tags for a given resource..
+    * Lists tags for a resource. Tagging is currently supported for detectors, finding filters, IP sets, and threat intel sets, with a limit of 50 tags per resource. When invoked, this operation returns all assigned tags for a given resource.
     */
   def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(
@@ -531,12 +589,12 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ StartMonitoringMembersResponse, Unit]
   ): Request[StartMonitoringMembersResponse, AWSError] = js.native
   /**
-    * Stops GuardDuty monitoring for the specified member accounnts. Use the StartMonitoringMembers to restart monitoring for those accounts.
+    * Stops GuardDuty monitoring for the specified member accounts. Use the StartMonitoringMembers operation to restart monitoring for those accounts.
     */
   def stopMonitoringMembers(): Request[StopMonitoringMembersResponse, AWSError] = js.native
   def stopMonitoringMembers(callback: js.Function2[/* err */ AWSError, /* data */ StopMonitoringMembersResponse, Unit]): Request[StopMonitoringMembersResponse, AWSError] = js.native
   /**
-    * Stops GuardDuty monitoring for the specified member accounnts. Use the StartMonitoringMembers to restart monitoring for those accounts.
+    * Stops GuardDuty monitoring for the specified member accounts. Use the StartMonitoringMembers operation to restart monitoring for those accounts.
     */
   def stopMonitoringMembers(params: StopMonitoringMembersRequest): Request[StopMonitoringMembersResponse, AWSError] = js.native
   def stopMonitoringMembers(
@@ -635,6 +693,21 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateIPSetResponse, Unit]
   ): Request[UpdateIPSetResponse, AWSError] = js.native
   /**
+    * Updates the delegated administrator account with the values provided.
+    */
+  def updateOrganizationConfiguration(): Request[UpdateOrganizationConfigurationResponse, AWSError] = js.native
+  def updateOrganizationConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateOrganizationConfigurationResponse, Unit]
+  ): Request[UpdateOrganizationConfigurationResponse, AWSError] = js.native
+  /**
+    * Updates the delegated administrator account with the values provided.
+    */
+  def updateOrganizationConfiguration(params: UpdateOrganizationConfigurationRequest): Request[UpdateOrganizationConfigurationResponse, AWSError] = js.native
+  def updateOrganizationConfiguration(
+    params: UpdateOrganizationConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateOrganizationConfigurationResponse, Unit]
+  ): Request[UpdateOrganizationConfigurationResponse, AWSError] = js.native
+  /**
     * Updates information about the publishing destination specified by the destinationId.
     */
   def updatePublishingDestination(): Request[UpdatePublishingDestinationResponse, AWSError] = js.native
@@ -648,12 +721,12 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdatePublishingDestinationResponse, Unit]
   ): Request[UpdatePublishingDestinationResponse, AWSError] = js.native
   /**
-    * Updates the ThreatIntelSet specified by ThreatIntelSet ID.
+    * Updates the ThreatIntelSet specified by the ThreatIntelSet ID.
     */
   def updateThreatIntelSet(): Request[UpdateThreatIntelSetResponse, AWSError] = js.native
   def updateThreatIntelSet(callback: js.Function2[/* err */ AWSError, /* data */ UpdateThreatIntelSetResponse, Unit]): Request[UpdateThreatIntelSetResponse, AWSError] = js.native
   /**
-    * Updates the ThreatIntelSet specified by ThreatIntelSet ID.
+    * Updates the ThreatIntelSet specified by the ThreatIntelSet ID.
     */
   def updateThreatIntelSet(params: UpdateThreatIntelSetRequest): Request[UpdateThreatIntelSetResponse, AWSError] = js.native
   def updateThreatIntelSet(

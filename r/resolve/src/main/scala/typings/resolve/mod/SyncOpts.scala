@@ -1,6 +1,7 @@
 package typings.resolve.mod
 
 import typings.node.Buffer
+import typings.node.BufferEncoding
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,9 @@ trait SyncOpts extends Opts {
   /** function to synchronously test whether a file exists */
   var isFile: js.UndefOr[js.Function1[/* file */ String, Boolean]] = js.undefined
   /** how to read files synchronously (defaults to fs.readFileSync) */
-  var readFileSync: js.UndefOr[js.Function2[/* file */ String, /* charset */ String, String | Buffer]] = js.undefined
+  var readFileSync: js.UndefOr[js.Function2[/* file */ String, /* encoding */ BufferEncoding, String | Buffer]] = js.undefined
+  /** function to synchronously resolve a potential symlink to its real path */
+  var realpathSync: js.UndefOr[js.Function1[/* file */ String, String]] = js.undefined
 }
 
 object SyncOpts {
@@ -24,10 +27,12 @@ object SyncOpts {
     isFile: /* file */ String => Boolean = null,
     moduleDirectory: String | js.Array[String] = null,
     packageFilter: (/* pkg */ js.Any, /* pkgfile */ String) => _ = null,
+    packageIterator: (/* request */ String, /* start */ String, /* getPackageCandidates */ js.Function0[js.Array[String]], /* opts */ Opts) => js.Array[String] = null,
     pathFilter: (/* pkg */ js.Any, /* path */ String, /* relativePath */ String) => String = null,
     paths: String | js.Array[String] = null,
     preserveSymlinks: js.UndefOr[Boolean] = js.undefined,
-    readFileSync: (/* file */ String, /* charset */ String) => String | Buffer = null
+    readFileSync: (/* file */ String, /* encoding */ BufferEncoding) => String | Buffer = null,
+    realpathSync: /* file */ String => String = null
   ): SyncOpts = {
     val __obj = js.Dynamic.literal()
     if (_package != null) __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
@@ -37,10 +42,12 @@ object SyncOpts {
     if (isFile != null) __obj.updateDynamic("isFile")(js.Any.fromFunction1(isFile))
     if (moduleDirectory != null) __obj.updateDynamic("moduleDirectory")(moduleDirectory.asInstanceOf[js.Any])
     if (packageFilter != null) __obj.updateDynamic("packageFilter")(js.Any.fromFunction2(packageFilter))
+    if (packageIterator != null) __obj.updateDynamic("packageIterator")(js.Any.fromFunction4(packageIterator))
     if (pathFilter != null) __obj.updateDynamic("pathFilter")(js.Any.fromFunction3(pathFilter))
     if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveSymlinks)) __obj.updateDynamic("preserveSymlinks")(preserveSymlinks.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveSymlinks)) __obj.updateDynamic("preserveSymlinks")(preserveSymlinks.get.asInstanceOf[js.Any])
     if (readFileSync != null) __obj.updateDynamic("readFileSync")(js.Any.fromFunction2(readFileSync))
+    if (realpathSync != null) __obj.updateDynamic("realpathSync")(js.Any.fromFunction1(realpathSync))
     __obj.asInstanceOf[SyncOpts]
   }
 }

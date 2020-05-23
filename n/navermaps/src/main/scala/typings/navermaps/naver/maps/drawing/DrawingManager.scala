@@ -7,10 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("naver.maps.drawing.DrawingManager")
 @js.native
-class DrawingManager () extends KVO {
-  def this(options: DrawingOptions) = this()
+trait DrawingManager extends KVO {
   def addDrawing(overlay: DrawingOverlay, drawingMode: DrawingMode): Unit = js.native
   def addDrawing(overlay: DrawingOverlay, drawingMode: DrawingMode, id: String): Unit = js.native
   def addListener(eventName: DrawingEvent, listener: js.Function1[/* overlay */ DrawingOverlay, Unit]): MapEventListener = js.native

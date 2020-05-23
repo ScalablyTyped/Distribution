@@ -13,7 +13,7 @@ trait ojSwitcherSettablePropertiesLenient
 
 object ojSwitcherSettablePropertiesLenient {
   @scala.inline
-  def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null, value: String = null): ojSwitcherSettablePropertiesLenient = {
+  def apply(StringDictionary: /* name */ StringDictionary[js.Any] = null, value: String = null): ojSwitcherSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

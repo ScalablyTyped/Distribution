@@ -1,6 +1,6 @@
 package typings.antdMobile.mod
 
-import typings.antdMobile.AnonAnimated
+import typings.antdMobile.anon.Animated
 import typings.antdMobile.modalMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,6 @@ class Modal () extends default
 @JSImport("antd-mobile", "Modal")
 @js.native
 object Modal extends js.Object {
-  var defaultProps: AnonAnimated = js.native
+  var defaultProps: Animated = js.native
 }
 

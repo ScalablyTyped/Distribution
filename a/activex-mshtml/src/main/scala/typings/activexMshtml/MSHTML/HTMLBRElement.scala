@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLBRElement")
 @js.native
-class HTMLBRElement protected () extends js.Object {
+trait HTMLBRElement extends js.Object {
   @JSName("MSHTML.HTMLBRElement_typekey")
   var MSHTMLDotHTMLBRElement_typekey: HTMLBRElement = js.native
   var accessKey: String = js.native

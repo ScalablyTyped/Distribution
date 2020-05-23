@@ -49,7 +49,7 @@ object TerserPluginOptions {
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (minify != null) __obj.updateDynamic("minify")(js.Any.fromFunction2(minify))
     if (parallel != null) __obj.updateDynamic("parallel")(parallel.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap.get.asInstanceOf[js.Any])
     if (terserOptions != null) __obj.updateDynamic("terserOptions")(terserOptions.asInstanceOf[js.Any])
     if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
     if (warningsFilter != null) __obj.updateDynamic("warningsFilter")(js.Any.fromFunction3(warningsFilter))

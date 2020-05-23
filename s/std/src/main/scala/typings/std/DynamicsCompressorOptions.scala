@@ -15,24 +15,24 @@ trait DynamicsCompressorOptions extends AudioNodeOptions {
 object DynamicsCompressorOptions {
   @scala.inline
   def apply(
-    attack: Int | Double = null,
-    channelCount: Int | Double = null,
+    attack: js.UndefOr[Double] = js.undefined,
+    channelCount: js.UndefOr[Double] = js.undefined,
     channelCountMode: ChannelCountMode = null,
     channelInterpretation: ChannelInterpretation = null,
-    knee: Int | Double = null,
-    ratio: Int | Double = null,
-    release: Int | Double = null,
-    threshold: Int | Double = null
+    knee: js.UndefOr[Double] = js.undefined,
+    ratio: js.UndefOr[Double] = js.undefined,
+    release: js.UndefOr[Double] = js.undefined,
+    threshold: js.UndefOr[Double] = js.undefined
   ): DynamicsCompressorOptions = {
     val __obj = js.Dynamic.literal()
-    if (attack != null) __obj.updateDynamic("attack")(attack.asInstanceOf[js.Any])
-    if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(attack)) __obj.updateDynamic("attack")(attack.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(channelCount)) __obj.updateDynamic("channelCount")(channelCount.get.asInstanceOf[js.Any])
     if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
     if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
-    if (knee != null) __obj.updateDynamic("knee")(knee.asInstanceOf[js.Any])
-    if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
-    if (release != null) __obj.updateDynamic("release")(release.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(knee)) __obj.updateDynamic("knee")(knee.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ratio)) __obj.updateDynamic("ratio")(ratio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(release)) __obj.updateDynamic("release")(release.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamicsCompressorOptions]
   }
 }

@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.FRESNEL_NONE
-  * @type {number}
-  * @description No Fresnel.
+  * No Fresnel.
   */
 @JSImport("playcanvas", "FRESNEL_NONE")
 @js.native

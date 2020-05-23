@@ -3,7 +3,7 @@ package typings.officeUiFabricReact.activityItemTypesMod
 import typings.officeUiFabricReact.personaTypesMod.IPersonaSharedProps
 import typings.react.mod.AllHTMLAttributes
 import typings.react.mod.ReactNode
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import scala.scalajs.js
@@ -112,12 +112,12 @@ object IActivityItemProps {
     if (activityDescriptionText != null) __obj.updateDynamic("activityDescriptionText")(activityDescriptionText.asInstanceOf[js.Any])
     if (activityIcon != null) __obj.updateDynamic("activityIcon")(activityIcon.asInstanceOf[js.Any])
     if (activityPersonas != null) __obj.updateDynamic("activityPersonas")(activityPersonas.asInstanceOf[js.Any])
-    if (!js.isUndefined(animateBeaconSignal)) __obj.updateDynamic("animateBeaconSignal")(animateBeaconSignal.asInstanceOf[js.Any])
+    if (!js.isUndefined(animateBeaconSignal)) __obj.updateDynamic("animateBeaconSignal")(animateBeaconSignal.get.asInstanceOf[js.Any])
     if (beaconColorOne != null) __obj.updateDynamic("beaconColorOne")(beaconColorOne.asInstanceOf[js.Any])
     if (beaconColorTwo != null) __obj.updateDynamic("beaconColorTwo")(beaconColorTwo.asInstanceOf[js.Any])
     if (commentText != null) __obj.updateDynamic("commentText")(commentText.asInstanceOf[js.Any])
     if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCompact)) __obj.updateDynamic("isCompact")(isCompact.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCompact)) __obj.updateDynamic("isCompact")(isCompact.get.asInstanceOf[js.Any])
     if (onRenderActivityDescription != null) __obj.updateDynamic("onRenderActivityDescription")(js.Any.fromFunction2(onRenderActivityDescription))
     if (onRenderComments != null) __obj.updateDynamic("onRenderComments")(js.Any.fromFunction2(onRenderComments))
     if (onRenderIcon != null) __obj.updateDynamic("onRenderIcon")(js.Any.fromFunction2(onRenderIcon))

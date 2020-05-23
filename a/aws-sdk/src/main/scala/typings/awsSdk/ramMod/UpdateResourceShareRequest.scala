@@ -28,12 +28,12 @@ object UpdateResourceShareRequest {
   @scala.inline
   def apply(
     resourceShareArn: String,
-    allowExternalPrincipals: js.UndefOr[scala.Boolean] = js.undefined,
+    allowExternalPrincipals: js.UndefOr[Boolean] = js.undefined,
     clientToken: String = null,
     name: String = null
   ): UpdateResourceShareRequest = {
     val __obj = js.Dynamic.literal(resourceShareArn = resourceShareArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowExternalPrincipals)) __obj.updateDynamic("allowExternalPrincipals")(allowExternalPrincipals.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowExternalPrincipals)) __obj.updateDynamic("allowExternalPrincipals")(allowExternalPrincipals.get.asInstanceOf[js.Any])
     if (clientToken != null) __obj.updateDynamic("clientToken")(clientToken.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateResourceShareRequest]

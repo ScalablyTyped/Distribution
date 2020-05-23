@@ -17,7 +17,7 @@ trait ojTrainSettablePropertiesLenient
 object ojTrainSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     selectedStep: String = null,
     steps: js.Array[Step] = null,
     translations: js.Object = null

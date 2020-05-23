@@ -91,48 +91,48 @@ trait InstancesCount extends js.Object {
 object InstancesCount {
   @scala.inline
   def apply(
-    Assigning: Int | scala.Double = null,
-    Booting: Int | scala.Double = null,
-    ConnectionLost: Int | scala.Double = null,
-    Deregistering: Int | scala.Double = null,
-    Online: Int | scala.Double = null,
-    Pending: Int | scala.Double = null,
-    Rebooting: Int | scala.Double = null,
-    Registered: Int | scala.Double = null,
-    Registering: Int | scala.Double = null,
-    Requested: Int | scala.Double = null,
-    RunningSetup: Int | scala.Double = null,
-    SetupFailed: Int | scala.Double = null,
-    ShuttingDown: Int | scala.Double = null,
-    StartFailed: Int | scala.Double = null,
-    StopFailed: Int | scala.Double = null,
-    Stopped: Int | scala.Double = null,
-    Stopping: Int | scala.Double = null,
-    Terminated: Int | scala.Double = null,
-    Terminating: Int | scala.Double = null,
-    Unassigning: Int | scala.Double = null
+    Assigning: js.UndefOr[Integer] = js.undefined,
+    Booting: js.UndefOr[Integer] = js.undefined,
+    ConnectionLost: js.UndefOr[Integer] = js.undefined,
+    Deregistering: js.UndefOr[Integer] = js.undefined,
+    Online: js.UndefOr[Integer] = js.undefined,
+    Pending: js.UndefOr[Integer] = js.undefined,
+    Rebooting: js.UndefOr[Integer] = js.undefined,
+    Registered: js.UndefOr[Integer] = js.undefined,
+    Registering: js.UndefOr[Integer] = js.undefined,
+    Requested: js.UndefOr[Integer] = js.undefined,
+    RunningSetup: js.UndefOr[Integer] = js.undefined,
+    SetupFailed: js.UndefOr[Integer] = js.undefined,
+    ShuttingDown: js.UndefOr[Integer] = js.undefined,
+    StartFailed: js.UndefOr[Integer] = js.undefined,
+    StopFailed: js.UndefOr[Integer] = js.undefined,
+    Stopped: js.UndefOr[Integer] = js.undefined,
+    Stopping: js.UndefOr[Integer] = js.undefined,
+    Terminated: js.UndefOr[Integer] = js.undefined,
+    Terminating: js.UndefOr[Integer] = js.undefined,
+    Unassigning: js.UndefOr[Integer] = js.undefined
   ): InstancesCount = {
     val __obj = js.Dynamic.literal()
-    if (Assigning != null) __obj.updateDynamic("Assigning")(Assigning.asInstanceOf[js.Any])
-    if (Booting != null) __obj.updateDynamic("Booting")(Booting.asInstanceOf[js.Any])
-    if (ConnectionLost != null) __obj.updateDynamic("ConnectionLost")(ConnectionLost.asInstanceOf[js.Any])
-    if (Deregistering != null) __obj.updateDynamic("Deregistering")(Deregistering.asInstanceOf[js.Any])
-    if (Online != null) __obj.updateDynamic("Online")(Online.asInstanceOf[js.Any])
-    if (Pending != null) __obj.updateDynamic("Pending")(Pending.asInstanceOf[js.Any])
-    if (Rebooting != null) __obj.updateDynamic("Rebooting")(Rebooting.asInstanceOf[js.Any])
-    if (Registered != null) __obj.updateDynamic("Registered")(Registered.asInstanceOf[js.Any])
-    if (Registering != null) __obj.updateDynamic("Registering")(Registering.asInstanceOf[js.Any])
-    if (Requested != null) __obj.updateDynamic("Requested")(Requested.asInstanceOf[js.Any])
-    if (RunningSetup != null) __obj.updateDynamic("RunningSetup")(RunningSetup.asInstanceOf[js.Any])
-    if (SetupFailed != null) __obj.updateDynamic("SetupFailed")(SetupFailed.asInstanceOf[js.Any])
-    if (ShuttingDown != null) __obj.updateDynamic("ShuttingDown")(ShuttingDown.asInstanceOf[js.Any])
-    if (StartFailed != null) __obj.updateDynamic("StartFailed")(StartFailed.asInstanceOf[js.Any])
-    if (StopFailed != null) __obj.updateDynamic("StopFailed")(StopFailed.asInstanceOf[js.Any])
-    if (Stopped != null) __obj.updateDynamic("Stopped")(Stopped.asInstanceOf[js.Any])
-    if (Stopping != null) __obj.updateDynamic("Stopping")(Stopping.asInstanceOf[js.Any])
-    if (Terminated != null) __obj.updateDynamic("Terminated")(Terminated.asInstanceOf[js.Any])
-    if (Terminating != null) __obj.updateDynamic("Terminating")(Terminating.asInstanceOf[js.Any])
-    if (Unassigning != null) __obj.updateDynamic("Unassigning")(Unassigning.asInstanceOf[js.Any])
+    if (!js.isUndefined(Assigning)) __obj.updateDynamic("Assigning")(Assigning.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Booting)) __obj.updateDynamic("Booting")(Booting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConnectionLost)) __obj.updateDynamic("ConnectionLost")(ConnectionLost.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Deregistering)) __obj.updateDynamic("Deregistering")(Deregistering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Online)) __obj.updateDynamic("Online")(Online.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Pending)) __obj.updateDynamic("Pending")(Pending.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Rebooting)) __obj.updateDynamic("Rebooting")(Rebooting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Registered)) __obj.updateDynamic("Registered")(Registered.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Registering)) __obj.updateDynamic("Registering")(Registering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Requested)) __obj.updateDynamic("Requested")(Requested.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RunningSetup)) __obj.updateDynamic("RunningSetup")(RunningSetup.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SetupFailed)) __obj.updateDynamic("SetupFailed")(SetupFailed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ShuttingDown)) __obj.updateDynamic("ShuttingDown")(ShuttingDown.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(StartFailed)) __obj.updateDynamic("StartFailed")(StartFailed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(StopFailed)) __obj.updateDynamic("StopFailed")(StopFailed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Stopped)) __obj.updateDynamic("Stopped")(Stopped.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Stopping)) __obj.updateDynamic("Stopping")(Stopping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Terminated)) __obj.updateDynamic("Terminated")(Terminated.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Terminating)) __obj.updateDynamic("Terminating")(Terminating.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Unassigning)) __obj.updateDynamic("Unassigning")(Unassigning.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstancesCount]
   }
 }

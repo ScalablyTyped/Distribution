@@ -1,6 +1,6 @@
 package typings.urql.mutationMod
 
-import typings.urql.PartialOperationContext
+import typings.urql.anon.PartialOperationContext
 import typings.urql.useMutationMod.UseMutationState
 import typings.urqlCore.typesMod.OperationResult
 import scala.scalajs.js

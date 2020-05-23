@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.ScaleBlock")
 @js.native
-class ScaleBlock protected () extends NodeMaterialBlock {
-  /**
-    * Creates a new ScaleBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait ScaleBlock extends NodeMaterialBlock {
   /**
     * Gets the factor input component
     */

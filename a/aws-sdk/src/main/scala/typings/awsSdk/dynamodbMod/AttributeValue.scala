@@ -52,25 +52,25 @@ object AttributeValue {
   @scala.inline
   def apply(
     B: BinaryAttributeValue = null,
-    BOOL: js.UndefOr[Boolean] = js.undefined,
+    BOOL: js.UndefOr[BooleanAttributeValue] = js.undefined,
     BS: BinarySetAttributeValue = null,
     L: ListAttributeValue = null,
     M: MapAttributeValue = null,
     N: NumberAttributeValue = null,
     NS: NumberSetAttributeValue = null,
-    NULL: js.UndefOr[Boolean] = js.undefined,
+    NULL: js.UndefOr[NullAttributeValue] = js.undefined,
     S: StringAttributeValue = null,
     SS: StringSetAttributeValue = null
   ): AttributeValue = {
     val __obj = js.Dynamic.literal()
     if (B != null) __obj.updateDynamic("B")(B.asInstanceOf[js.Any])
-    if (!js.isUndefined(BOOL)) __obj.updateDynamic("BOOL")(BOOL.asInstanceOf[js.Any])
+    if (!js.isUndefined(BOOL)) __obj.updateDynamic("BOOL")(BOOL.get.asInstanceOf[js.Any])
     if (BS != null) __obj.updateDynamic("BS")(BS.asInstanceOf[js.Any])
     if (L != null) __obj.updateDynamic("L")(L.asInstanceOf[js.Any])
     if (M != null) __obj.updateDynamic("M")(M.asInstanceOf[js.Any])
     if (N != null) __obj.updateDynamic("N")(N.asInstanceOf[js.Any])
     if (NS != null) __obj.updateDynamic("NS")(NS.asInstanceOf[js.Any])
-    if (!js.isUndefined(NULL)) __obj.updateDynamic("NULL")(NULL.asInstanceOf[js.Any])
+    if (!js.isUndefined(NULL)) __obj.updateDynamic("NULL")(NULL.get.asInstanceOf[js.Any])
     if (S != null) __obj.updateDynamic("S")(S.asInstanceOf[js.Any])
     if (SS != null) __obj.updateDynamic("SS")(SS.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributeValue]

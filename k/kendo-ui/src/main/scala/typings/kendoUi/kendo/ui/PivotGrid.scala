@@ -9,11 +9,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.PivotGrid")
 @js.native
-class PivotGrid protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: PivotGridOptions) = this()
+trait PivotGrid extends Widget {
   var dataSource: DataSource = js.native
   @JSName("options")
   var options_PivotGrid: PivotGridOptions = js.native
@@ -26,13 +23,5 @@ class PivotGrid protected () extends Widget {
   def saveAsExcel(): Unit = js.native
   def saveAsPDF(): JQueryPromise[_] = js.native
   def setDataSource(dataSource: PivotDataSource): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.PivotGrid")
-@js.native
-object PivotGrid extends js.Object {
-  var fn: PivotGrid = js.native
-  def extend(proto: js.Object): PivotGrid = js.native
 }
 

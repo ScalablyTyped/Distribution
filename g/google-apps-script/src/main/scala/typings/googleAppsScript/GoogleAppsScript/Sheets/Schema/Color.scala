@@ -14,16 +14,16 @@ trait Color extends js.Object {
 object Color {
   @scala.inline
   def apply(
-    alpha: Int | Double = null,
-    blue: Int | Double = null,
-    green: Int | Double = null,
-    red: Int | Double = null
+    alpha: js.UndefOr[Double] = js.undefined,
+    blue: js.UndefOr[Double] = js.undefined,
+    green: js.UndefOr[Double] = js.undefined,
+    red: js.UndefOr[Double] = js.undefined
   ): Color = {
     val __obj = js.Dynamic.literal()
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    if (blue != null) __obj.updateDynamic("blue")(blue.asInstanceOf[js.Any])
-    if (green != null) __obj.updateDynamic("green")(green.asInstanceOf[js.Any])
-    if (red != null) __obj.updateDynamic("red")(red.asInstanceOf[js.Any])
+    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(blue)) __obj.updateDynamic("blue")(blue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(green)) __obj.updateDynamic("green")(green.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(red)) __obj.updateDynamic("red")(red.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Color]
   }
 }

@@ -1,6 +1,6 @@
 package typings.antdMobile.tabBarMod
 
-import typings.antdMobile.TypeofItemDefaultProps
+import typings.antdMobile.anon.TypeofItemDefaultProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

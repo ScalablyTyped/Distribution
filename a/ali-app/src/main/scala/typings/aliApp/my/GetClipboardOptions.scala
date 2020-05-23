@@ -1,6 +1,6 @@
 package typings.aliApp.my
 
-import typings.aliApp.AnonText
+import typings.aliApp.anon.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait GetClipboardOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")
-  var success_GetClipboardOptions: js.UndefOr[js.Function1[/* res */ AnonText, Unit]] = js.undefined
+  var success_GetClipboardOptions: js.UndefOr[js.Function1[/* res */ Text, Unit]] = js.undefined
 }
 
 object GetClipboardOptions {
@@ -18,7 +18,7 @@ object GetClipboardOptions {
   def apply(
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
-    success: /* res */ AnonText => Unit = null
+    success: /* res */ Text => Unit = null
   ): GetClipboardOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))

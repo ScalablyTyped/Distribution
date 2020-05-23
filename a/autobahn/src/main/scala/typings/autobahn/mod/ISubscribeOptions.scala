@@ -13,7 +13,7 @@ object ISubscribeOptions {
   @scala.inline
   def apply(get_retained: js.UndefOr[Boolean] = js.undefined, `match`: String = null): ISubscribeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(get_retained)) __obj.updateDynamic("get_retained")(get_retained.asInstanceOf[js.Any])
+    if (!js.isUndefined(get_retained)) __obj.updateDynamic("get_retained")(get_retained.get.asInstanceOf[js.Any])
     if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISubscribeOptions]
   }

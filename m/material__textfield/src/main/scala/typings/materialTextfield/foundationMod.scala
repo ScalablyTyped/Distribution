@@ -2,7 +2,7 @@ package typings.materialTextfield
 
 import typings.materialTextfield.adapterMod.FoundationMapType
 import typings.materialTextfield.adapterMod.MDCTextFieldAdapter
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,7 +42,7 @@ object foundationMod extends js.Object {
       * Sets the line ripple's transform origin, so that the line ripple activate
       * animation will animate out from the user's click location.
       */
-    def setTransformOrigin(evt: Event_): Unit = js.native
+    def setTransformOrigin(evt: Event): Unit = js.native
     def setUseNativeValidation(useNativeValidation: Boolean): Unit = js.native
     def setValid(isValid: Boolean): Unit = js.native
     def setValue(value: String): Unit = js.native

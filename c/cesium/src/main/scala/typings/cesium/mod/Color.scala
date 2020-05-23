@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonAlpha
+import typings.cesium.anon.Alpha
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -209,8 +209,8 @@ object Color extends js.Object {
   def fromHsl(hue: Double, saturation: Double, lightness: Double): Color = js.native
   def fromHsl(hue: Double, saturation: Double, lightness: Double, alpha: Double): Color = js.native
   def fromRandom(): Color = js.native
-  def fromRandom(options: AnonAlpha): Color = js.native
-  def fromRandom(options: AnonAlpha, result: Color): Color = js.native
+  def fromRandom(options: Alpha): Color = js.native
+  def fromRandom(options: Alpha, result: Color): Color = js.native
   def fromRgba(rgba: Double): Color = js.native
   /**
     * Computes the linear interpolation or extrapolation at t between the provided colors.

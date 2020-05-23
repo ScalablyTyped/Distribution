@@ -14,7 +14,13 @@ import scala.scalajs.js.annotation._
 @JSImport("mirrorx", "withRouter")
 @js.native
 object withRouter extends js.Object {
-  def apply[P /* <: RouteComponentProps[_] */](component: ComponentType[P]): ComponentClass[Omit[P, `match` | location | history | staticContext], ComponentState] = js.native
+  def apply[P /* <: RouteComponentProps[_] */](component: ComponentType[P]): ComponentClass[
+    Omit[
+      P, 
+      /* keyof mirrorx.mirrorx.RouteComponentProps<any> */ `match` | location | history | staticContext
+    ], 
+    ComponentState
+  ] = js.native
   def apply[TFunction /* <: ComponentClass[_, ComponentState] */](target: TFunction): TFunction = js.native
 }
 

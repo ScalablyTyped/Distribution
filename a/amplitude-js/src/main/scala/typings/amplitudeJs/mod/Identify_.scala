@@ -19,16 +19,19 @@ class Identify_ () extends js.Object {
   def prepend(key: String, value: js.Array[_]): Identify_ = js.native
   def prepend(key: String, value: js.Object): Identify_ = js.native
   /** Prepend a value or values to a user property */
+  def prepend(key: String, value: Boolean): Identify_ = js.native
   def prepend(key: String, value: Double): Identify_ = js.native
   def set(key: String, value: String): Identify_ = js.native
   def set(key: String, value: js.Array[_]): Identify_ = js.native
   def set(key: String, value: js.Object): Identify_ = js.native
   /** Sets the value of a given user property */
+  def set(key: String, value: Boolean): Identify_ = js.native
   def set(key: String, value: Double): Identify_ = js.native
   def setOnce(key: String, value: String): Identify_ = js.native
   def setOnce(key: String, value: js.Array[_]): Identify_ = js.native
   def setOnce(key: String, value: js.Object): Identify_ = js.native
   /** Sets the value of a given user property only once */
+  def setOnce(key: String, value: Boolean): Identify_ = js.native
   def setOnce(key: String, value: Double): Identify_ = js.native
   /** Unset and remove a user property */
   def unset(key: String): Identify_ = js.native

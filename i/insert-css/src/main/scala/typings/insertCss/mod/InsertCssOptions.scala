@@ -15,7 +15,7 @@ object InsertCssOptions {
   def apply(container: HTMLElement = null, prepend: js.UndefOr[Boolean] = js.undefined): InsertCssOptions = {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(prepend)) __obj.updateDynamic("prepend")(prepend.asInstanceOf[js.Any])
+    if (!js.isUndefined(prepend)) __obj.updateDynamic("prepend")(prepend.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsertCssOptions]
   }
 }

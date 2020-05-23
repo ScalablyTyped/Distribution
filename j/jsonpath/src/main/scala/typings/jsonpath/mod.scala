@@ -1,5 +1,6 @@
 package typings.jsonpath
 
+import typings.jsonpath.anon.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   @JSName("apply")
-  def apply(obj: js.Any, pathExpression: String, fn: js.Function1[/* x */ js.Any, _]): js.Array[AnonPath] = js.native
-  def nodes(obj: js.Any, pathExpression: String): js.Array[AnonPath] = js.native
-  def nodes(obj: js.Any, pathExpression: String, count: Double): js.Array[AnonPath] = js.native
+  def apply(obj: js.Any, pathExpression: String, fn: js.Function1[/* x */ js.Any, _]): js.Array[Path] = js.native
+  def nodes(obj: js.Any, pathExpression: String): js.Array[Path] = js.native
+  def nodes(obj: js.Any, pathExpression: String, count: Double): js.Array[Path] = js.native
   def parent(obj: js.Any, pathExpression: String): js.Any = js.native
   def parse(pathExpression: String): js.Array[_] = js.native
   def paths(obj: js.Any, pathExpression: String): js.Array[js.Array[PathComponent]] = js.native

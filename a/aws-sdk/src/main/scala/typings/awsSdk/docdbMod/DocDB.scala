@@ -1,6 +1,6 @@
 package typings.awsSdk.docdbMod
 
-import typings.awsSdk.DescribeDBInstancesMessag
+import typings.awsSdk.anon.DescribeDBInstancesMessag
 import typings.awsSdk.awsSdkStrings.dBInstanceAvailable
 import typings.awsSdk.awsSdkStrings.dBInstanceDeleted
 import typings.awsSdk.configMod.ConfigBase

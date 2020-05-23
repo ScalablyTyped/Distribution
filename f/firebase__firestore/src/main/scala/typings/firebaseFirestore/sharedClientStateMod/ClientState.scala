@@ -13,7 +13,6 @@ object ClientState {
   @scala.inline
   def apply(activeTargetIds: TargetIdSet_): ClientState = {
     val __obj = js.Dynamic.literal(activeTargetIds = activeTargetIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClientState]
   }
 }

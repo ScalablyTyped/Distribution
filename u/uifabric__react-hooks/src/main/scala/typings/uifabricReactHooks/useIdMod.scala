@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
 object useIdMod extends js.Object {
   def useId(): String = js.native
   def useId(prefix: String): String = js.native
+  def useId(prefix: String, providedId: String): String = js.native
 }
 

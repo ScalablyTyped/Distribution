@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait SettingData extends js.Object {
   /**
     *
-    * Returns the key that represents the id of the Setting. Read-only.
+    * The key that represents the id of the Setting.
     *
     * [Api set: ExcelApi 1.4]
     */

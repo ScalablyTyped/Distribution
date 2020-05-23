@@ -53,7 +53,7 @@ object TypographyOptions {
     display3: TypographyStyleOptions = null,
     display4: TypographyStyleOptions = null,
     fontFamily: FontFamilyProperty = null,
-    fontSize: Int | Double = null,
+    fontSize: js.UndefOr[Double] = js.undefined,
     fontWeightLight: FontWeightProperty = null,
     fontWeightMedium: FontWeightProperty = null,
     fontWeightRegular: FontWeightProperty = null,
@@ -64,7 +64,7 @@ object TypographyOptions {
     h5: TypographyStyleOptions = null,
     h6: TypographyStyleOptions = null,
     headline: TypographyStyleOptions = null,
-    htmlFontSize: Int | Double = null,
+    htmlFontSize: js.UndefOr[Double] = js.undefined,
     overline: TypographyStyleOptions = null,
     subheading: TypographyStyleOptions = null,
     subtitle1: TypographyStyleOptions = null,
@@ -83,7 +83,7 @@ object TypographyOptions {
     if (display3 != null) __obj.updateDynamic("display3")(display3.asInstanceOf[js.Any])
     if (display4 != null) __obj.updateDynamic("display4")(display4.asInstanceOf[js.Any])
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
     if (fontWeightLight != null) __obj.updateDynamic("fontWeightLight")(fontWeightLight.asInstanceOf[js.Any])
     if (fontWeightMedium != null) __obj.updateDynamic("fontWeightMedium")(fontWeightMedium.asInstanceOf[js.Any])
     if (fontWeightRegular != null) __obj.updateDynamic("fontWeightRegular")(fontWeightRegular.asInstanceOf[js.Any])
@@ -94,13 +94,13 @@ object TypographyOptions {
     if (h5 != null) __obj.updateDynamic("h5")(h5.asInstanceOf[js.Any])
     if (h6 != null) __obj.updateDynamic("h6")(h6.asInstanceOf[js.Any])
     if (headline != null) __obj.updateDynamic("headline")(headline.asInstanceOf[js.Any])
-    if (htmlFontSize != null) __obj.updateDynamic("htmlFontSize")(htmlFontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(htmlFontSize)) __obj.updateDynamic("htmlFontSize")(htmlFontSize.get.asInstanceOf[js.Any])
     if (overline != null) __obj.updateDynamic("overline")(overline.asInstanceOf[js.Any])
     if (subheading != null) __obj.updateDynamic("subheading")(subheading.asInstanceOf[js.Any])
     if (subtitle1 != null) __obj.updateDynamic("subtitle1")(subtitle1.asInstanceOf[js.Any])
     if (subtitle2 != null) __obj.updateDynamic("subtitle2")(subtitle2.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNextVariants)) __obj.updateDynamic("useNextVariants")(useNextVariants.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNextVariants)) __obj.updateDynamic("useNextVariants")(useNextVariants.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypographyOptions]
   }
 }

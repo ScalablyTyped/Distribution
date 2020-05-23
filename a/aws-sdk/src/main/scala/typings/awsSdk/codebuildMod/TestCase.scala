@@ -43,7 +43,7 @@ trait TestCase extends js.Object {
 object TestCase {
   @scala.inline
   def apply(
-    durationInNanoSeconds: Int | Double = null,
+    durationInNanoSeconds: js.UndefOr[WrapperLong] = js.undefined,
     expired: Timestamp = null,
     message: String = null,
     name: String = null,
@@ -53,7 +53,7 @@ object TestCase {
     testRawDataPath: String = null
   ): TestCase = {
     val __obj = js.Dynamic.literal()
-    if (durationInNanoSeconds != null) __obj.updateDynamic("durationInNanoSeconds")(durationInNanoSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(durationInNanoSeconds)) __obj.updateDynamic("durationInNanoSeconds")(durationInNanoSeconds.get.asInstanceOf[js.Any])
     if (expired != null) __obj.updateDynamic("expired")(expired.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

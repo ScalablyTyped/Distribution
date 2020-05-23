@@ -1,7 +1,7 @@
 package typings.layuiLayer.layer
 
-import typings.jquery.JQuery_
-import typings.layuiLayer.PartialCSSStyleDeclaratio
+import typings.jquery.JQuery
+import typings.layuiLayer.anon.PartialCSSStyleDeclaratio
 import typings.layuiLayer.layer.callback.Cancel
 import typings.layuiLayer.layer.callback.End
 import typings.layuiLayer.layer.callback.Prompt
@@ -98,7 +98,7 @@ trait Layer extends js.Object {
     * @param selector
     * @param index
     */
-  def getChildFrame(selector: String, index: Index): JQuery_[HTMLElement] = js.native
+  def getChildFrame(selector: String, index: Index): JQuery[HTMLElement] = js.native
   /**
     * 获取特定iframe层的索引
     * @param windowName
@@ -181,7 +181,7 @@ trait Layer extends js.Object {
   /**
     * 置顶当前窗口
     */
-  def setTop(layero: JQuery_[HTMLElement]): Unit = js.native
+  def setTop(layero: JQuery[HTMLElement]): Unit = js.native
   /**
     * 重新定义层的样式
     * @param index

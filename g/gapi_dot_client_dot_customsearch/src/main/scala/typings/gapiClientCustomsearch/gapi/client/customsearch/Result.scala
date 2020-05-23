@@ -1,7 +1,7 @@
 package typings.gapiClientCustomsearch.gapi.client.customsearch
 
-import typings.gapiClientCustomsearch.AnonByteSize
-import typings.gapiClientCustomsearch.AnonDisplayName
+import typings.gapiClientCustomsearch.anon.ByteSize
+import typings.gapiClientCustomsearch.anon.DisplayName
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,9 +15,9 @@ trait Result extends js.Object {
   var htmlFormattedUrl: js.UndefOr[String] = js.undefined
   var htmlSnippet: js.UndefOr[String] = js.undefined
   var htmlTitle: js.UndefOr[String] = js.undefined
-  var image: js.UndefOr[AnonByteSize] = js.undefined
+  var image: js.UndefOr[ByteSize] = js.undefined
   var kind: js.UndefOr[String] = js.undefined
-  var labels: js.UndefOr[js.Array[AnonDisplayName]] = js.undefined
+  var labels: js.UndefOr[js.Array[DisplayName]] = js.undefined
   var link: js.UndefOr[String] = js.undefined
   var mime: js.UndefOr[String] = js.undefined
   var pagemap: js.UndefOr[Record[String, js.Array[Record[String, _]]]] = js.undefined
@@ -35,9 +35,9 @@ object Result {
     htmlFormattedUrl: String = null,
     htmlSnippet: String = null,
     htmlTitle: String = null,
-    image: AnonByteSize = null,
+    image: ByteSize = null,
     kind: String = null,
-    labels: js.Array[AnonDisplayName] = null,
+    labels: js.Array[DisplayName] = null,
     link: String = null,
     mime: String = null,
     pagemap: Record[String, js.Array[Record[String, _]]] = null,

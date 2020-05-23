@@ -78,13 +78,13 @@ object IModel {
     path: String,
     `type`: ContentType,
     writable: Boolean,
-    chunk: Int | Double = null,
-    size: Int | Double = null
+    chunk: js.UndefOr[Double] = js.undefined,
+    size: js.UndefOr[Double] = js.undefined
   ): IModel = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], last_modified = last_modified.asInstanceOf[js.Any], mimetype = mimetype.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], writable = writable.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (chunk != null) __obj.updateDynamic("chunk")(chunk.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(chunk)) __obj.updateDynamic("chunk")(chunk.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModel]
   }
 }

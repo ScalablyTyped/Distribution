@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +13,4 @@ trait CredentialsContainer extends js.Object {
   def preventSilentAccess(): js.Promise[Unit] = js.native
   def store(credential: Credential): js.Promise[Credential] = js.native
 }
-
-@JSGlobal("CredentialsContainer")
-@js.native
-object CredentialsContainer extends Instantiable0[CredentialsContainer]
 

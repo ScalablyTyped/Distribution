@@ -38,7 +38,7 @@ object DescribeDirectConnectGatewayAssociationsRequest {
     associatedGatewayId: AssociatedGatewayId = null,
     associationId: DirectConnectGatewayAssociationId = null,
     directConnectGatewayId: DirectConnectGatewayId = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[MaxResultSetSize] = js.undefined,
     nextToken: PaginationToken = null,
     virtualGatewayId: VirtualGatewayId = null
   ): DescribeDirectConnectGatewayAssociationsRequest = {
@@ -46,7 +46,7 @@ object DescribeDirectConnectGatewayAssociationsRequest {
     if (associatedGatewayId != null) __obj.updateDynamic("associatedGatewayId")(associatedGatewayId.asInstanceOf[js.Any])
     if (associationId != null) __obj.updateDynamic("associationId")(associationId.asInstanceOf[js.Any])
     if (directConnectGatewayId != null) __obj.updateDynamic("directConnectGatewayId")(directConnectGatewayId.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (virtualGatewayId != null) __obj.updateDynamic("virtualGatewayId")(virtualGatewayId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDirectConnectGatewayAssociationsRequest]

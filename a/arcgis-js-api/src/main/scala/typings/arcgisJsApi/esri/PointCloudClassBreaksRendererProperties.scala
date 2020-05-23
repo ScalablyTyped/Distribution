@@ -47,7 +47,7 @@ object PointCloudClassBreaksRendererProperties {
     fieldTransformType: none | `low-four-bit` | `high-four-bit` | `absolute-value` | `modulo-ten` = null,
     legendOptions: PointCloudClassBreaksRendererLegendOptions = null,
     pointSizeAlgorithm: PointCloudRendererPointSizeAlgorithm = null,
-    pointsPerInch: Int | Double = null
+    pointsPerInch: js.UndefOr[Double] = js.undefined
   ): PointCloudClassBreaksRendererProperties = {
     val __obj = js.Dynamic.literal()
     if (colorClassBreakInfos != null) __obj.updateDynamic("colorClassBreakInfos")(colorClassBreakInfos.asInstanceOf[js.Any])
@@ -56,7 +56,7 @@ object PointCloudClassBreaksRendererProperties {
     if (fieldTransformType != null) __obj.updateDynamic("fieldTransformType")(fieldTransformType.asInstanceOf[js.Any])
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions.asInstanceOf[js.Any])
     if (pointSizeAlgorithm != null) __obj.updateDynamic("pointSizeAlgorithm")(pointSizeAlgorithm.asInstanceOf[js.Any])
-    if (pointsPerInch != null) __obj.updateDynamic("pointsPerInch")(pointsPerInch.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointsPerInch)) __obj.updateDynamic("pointsPerInch")(pointsPerInch.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointCloudClassBreaksRendererProperties]
   }
 }

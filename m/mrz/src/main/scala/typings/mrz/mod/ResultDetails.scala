@@ -34,8 +34,7 @@ object ResultDetails {
     valid: Boolean,
     value: String = null
   ): ResultDetails = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], ranges = ranges.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], ranges = ranges.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultDetails]
   }
 }

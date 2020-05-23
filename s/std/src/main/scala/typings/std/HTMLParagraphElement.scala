@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +13,4 @@ trait HTMLParagraphElement extends HTMLElement {
   /** @deprecated */
   var align: java.lang.String = js.native
 }
-
-@JSGlobal("HTMLParagraphElement")
-@js.native
-object HTMLParagraphElement extends Instantiable0[HTMLParagraphElement]
 

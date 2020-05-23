@@ -15,7 +15,7 @@ object IDragDropEvent {
   @scala.inline
   def apply(isHandled: js.UndefOr[Boolean] = js.undefined): IDragDropEvent = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isHandled)) __obj.updateDynamic("isHandled")(isHandled.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHandled)) __obj.updateDynamic("isHandled")(isHandled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDragDropEvent]
   }
 }

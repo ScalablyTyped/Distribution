@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 
 trait IConnection extends IObservable {
   /** [Method] Aborts an active request
-  		* @param request Object Defaults to the last request
-  		*/
+    * @param request Object Defaults to the last request
+    */
   var abort: js.UndefOr[js.Function1[/* request */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Aborts all active requests */
   var abortAll: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -29,38 +29,38 @@ trait IConnection extends IObservable {
   /** [Config Option] (Object) */
   var extraParams: js.UndefOr[js.Any] = js.undefined
   /** [Method] Determines whether this object has a request outstanding
-  		* @param request Object Defaults to the last transaction
-  		* @returns Boolean True if there is an outstanding request.
-  		*/
+    * @param request Object Defaults to the last transaction
+    * @returns Boolean True if there is an outstanding request.
+    */
   var isLoading: js.UndefOr[js.Function1[/* request */ js.UndefOr[js.Any], Boolean]] = js.undefined
   /** [Config Option] (String) */
   var method: js.UndefOr[String] = js.undefined
   /** [Method] Checks if the response status was successful
-  		* @param status Number The status code
-  		* @returns Object An object containing success/status state
-  		*/
+    * @param status Number The status code
+    * @returns Object An object containing success/status state
+    */
   var parseStatus: js.UndefOr[js.Function1[/* status */ js.UndefOr[Double], _]] = js.undefined
   /** [Method] Sends an HTTP request to a remote server
-  		* @param options Object An object which may contain the following properties: (The options object may also contain any other property which might be needed to perform postprocessing in a callback because it is passed to callback functions.)
-  		* @returns Object The request object. This may be used to cancel the request.
-  		*/
+    * @param options Object An object which may contain the following properties: (The options object may also contain any other property which might be needed to perform postprocessing in a callback because it is passed to callback functions.)
+    * @returns Object The request object. This may be used to cancel the request.
+    */
   var request: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Sets various options such as the url params for the request
-  		* @param options Object The initial options
-  		* @param scope Object The scope to execute in
-  		* @returns Object The params for the request
-  		*/
+    * @param options Object The initial options
+    * @param scope Object The scope to execute in
+    * @returns Object The params for the request
+    */
   var setOptions: js.UndefOr[
     js.Function2[/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], _]
   ] = js.undefined
   /** [Config Option] (Number) */
   var timeout: js.UndefOr[Double] = js.undefined
   /** [Method] Uploads a form using a hidden iframe
-  		* @param form String/HTMLElement/Ext.Element The form to upload
-  		* @param url String The url to post to
-  		* @param params String Any extra parameters to pass
-  		* @param options Object The initial options
-  		*/
+    * @param form String/HTMLElement/Ext.Element The form to upload
+    * @param url String The url to post to
+    * @param params String Any extra parameters to pass
+    * @param options Object The initial options
+    */
   var upload: js.UndefOr[
     js.Function4[
       /* form */ js.UndefOr[js.Any], 
@@ -128,7 +128,7 @@ object IConnection {
     statics: js.Any = null,
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     upload: (/* form */ js.UndefOr[js.Any], /* url */ js.UndefOr[String], /* params */ js.UndefOr[String], /* options */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null,
@@ -142,17 +142,17 @@ object IConnection {
     if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5(addManagedListener))
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoAbort)) __obj.updateDynamic("autoAbort")(autoAbort.asInstanceOf[js.Any])
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoAbort)) __obj.updateDynamic("autoAbort")(autoAbort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.get.asInstanceOf[js.Any])
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
     if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
     if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
     if (clearManagedListeners != null) __obj.updateDynamic("clearManagedListeners")(js.Any.fromFunction0(clearManagedListeners))
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (!js.isUndefined(cors)) __obj.updateDynamic("cors")(cors.asInstanceOf[js.Any])
+    if (!js.isUndefined(cors)) __obj.updateDynamic("cors")(cors.get.asInstanceOf[js.Any])
     if (defaultHeaders != null) __obj.updateDynamic("defaultHeaders")(defaultHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableCaching)) __obj.updateDynamic("disableCaching")(disableCaching.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableCaching)) __obj.updateDynamic("disableCaching")(disableCaching.get.asInstanceOf[js.Any])
     if (disableCachingParam != null) __obj.updateDynamic("disableCachingParam")(disableCachingParam.asInstanceOf[js.Any])
     if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
@@ -165,7 +165,7 @@ object IConnection {
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (isLoading != null) __obj.updateDynamic("isLoading")(js.Any.fromFunction1(isLoading))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
@@ -182,15 +182,15 @@ object IConnection {
     if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction0(resumeEvents))
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setOptions != null) __obj.updateDynamic("setOptions")(js.Any.fromFunction2(setOptions))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction1(suspendEvents))
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction3(un))
     if (upload != null) __obj.updateDynamic("upload")(js.Any.fromFunction4(upload))
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.asInstanceOf[js.Any])
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConnection]
   }
 }

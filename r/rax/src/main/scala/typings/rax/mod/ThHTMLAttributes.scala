@@ -22,17 +22,17 @@ object ThHTMLAttributes {
   def apply[T](
     HTMLAttributes: HTMLAttributes[T] = null,
     align: left | center | right | justify | char = null,
-    colSpan: Int | Double = null,
+    colSpan: js.UndefOr[Double] = js.undefined,
     headers: String = null,
-    rowSpan: Int | Double = null,
+    rowSpan: js.UndefOr[Double] = js.undefined,
     scope: String = null
   ): ThHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     if (HTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
+    if (!js.isUndefined(colSpan)) __obj.updateDynamic("colSpan")(colSpan.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (rowSpan != null) __obj.updateDynamic("rowSpan")(rowSpan.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowSpan)) __obj.updateDynamic("rowSpan")(rowSpan.get.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThHTMLAttributes[T]]
   }

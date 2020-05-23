@@ -1,6 +1,6 @@
 package typings.jestEnvironment.mod
 
-import typings.jestEnvironment.AnonVirtual
+import typings.jestEnvironment.anon.Virtual
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -115,7 +115,7 @@ trait Jest extends js.Object {
     */
   def mock(moduleName: String): Jest = js.native
   def mock(moduleName: String, moduleFactory: js.Function0[_]): Jest = js.native
-  def mock(moduleName: String, moduleFactory: js.Function0[_], options: AnonVirtual): Jest = js.native
+  def mock(moduleName: String, moduleFactory: js.Function0[_], options: Virtual): Jest = js.native
   /**
     * Returns the actual module instead of a mock, bypassing all checks on
     * whether the module should receive a mock implementation or not.

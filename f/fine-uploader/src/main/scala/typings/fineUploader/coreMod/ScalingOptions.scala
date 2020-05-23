@@ -69,7 +69,7 @@ object ScalingOptions {
   @scala.inline
   def apply(
     customResizer: /* resizeInfo */ ResizeInfo => PromiseOptions = null,
-    defaultQuality: Int | Double = null,
+    defaultQuality: js.UndefOr[Double] = js.undefined,
     defaultType: String = null,
     failureText: String = null,
     includeExif: js.UndefOr[Boolean] = js.undefined,
@@ -79,12 +79,12 @@ object ScalingOptions {
   ): ScalingOptions = {
     val __obj = js.Dynamic.literal()
     if (customResizer != null) __obj.updateDynamic("customResizer")(js.Any.fromFunction1(customResizer))
-    if (defaultQuality != null) __obj.updateDynamic("defaultQuality")(defaultQuality.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultQuality)) __obj.updateDynamic("defaultQuality")(defaultQuality.get.asInstanceOf[js.Any])
     if (defaultType != null) __obj.updateDynamic("defaultType")(defaultType.asInstanceOf[js.Any])
     if (failureText != null) __obj.updateDynamic("failureText")(failureText.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeExif)) __obj.updateDynamic("includeExif")(includeExif.asInstanceOf[js.Any])
-    if (!js.isUndefined(orient)) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])
-    if (!js.isUndefined(sendOriginal)) __obj.updateDynamic("sendOriginal")(sendOriginal.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeExif)) __obj.updateDynamic("includeExif")(includeExif.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(orient)) __obj.updateDynamic("orient")(orient.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendOriginal)) __obj.updateDynamic("sendOriginal")(sendOriginal.get.asInstanceOf[js.Any])
     if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalingOptions]
   }

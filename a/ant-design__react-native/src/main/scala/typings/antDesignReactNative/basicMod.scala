@@ -1,5 +1,6 @@
 package typings.antDesignReactNative
 
+import typings.antDesignReactNative.anon.ActiveSections
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +13,7 @@ object basicMod extends js.Object {
   trait AccordionExmple
     extends Component[js.Any, js.Any, js.Any] {
     @JSName("state")
-    var state_AccordionExmple: AnonActiveSections = js.native
+    var state_AccordionExmple: ActiveSections = js.native
     def onChange(activeSections: js.Array[Double]): Unit = js.native
   }
   

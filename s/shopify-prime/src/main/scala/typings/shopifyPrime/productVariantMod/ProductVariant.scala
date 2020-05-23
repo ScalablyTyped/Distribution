@@ -114,16 +114,14 @@ object ProductVariant {
     weight_unit: String,
     admin_graphql_api_id: String = null,
     compare_at_price: js.Any = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     option2: String = null,
     option3: String = null
   ): ProductVariant = {
-    val __obj = js.Dynamic.literal(barcode = barcode.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], fulfillment_service = fulfillment_service.asInstanceOf[js.Any], grams = grams.asInstanceOf[js.Any], inventory_item_id = inventory_item_id.asInstanceOf[js.Any], inventory_management = inventory_management.asInstanceOf[js.Any], inventory_policy = inventory_policy.asInstanceOf[js.Any], inventory_quantity = inventory_quantity.asInstanceOf[js.Any], option1 = option1.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], product_id = product_id.asInstanceOf[js.Any], requires_shipping = requires_shipping.asInstanceOf[js.Any], sku = sku.asInstanceOf[js.Any], taxable = taxable.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any], weight_unit = weight_unit.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(barcode = barcode.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], fulfillment_service = fulfillment_service.asInstanceOf[js.Any], grams = grams.asInstanceOf[js.Any], inventory_item_id = inventory_item_id.asInstanceOf[js.Any], inventory_management = inventory_management.asInstanceOf[js.Any], inventory_policy = inventory_policy.asInstanceOf[js.Any], inventory_quantity = inventory_quantity.asInstanceOf[js.Any], option1 = option1.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], product_id = product_id.asInstanceOf[js.Any], requires_shipping = requires_shipping.asInstanceOf[js.Any], sku = sku.asInstanceOf[js.Any], taxable = taxable.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any], weight_unit = weight_unit.asInstanceOf[js.Any], option2 = option2.asInstanceOf[js.Any], option3 = option3.asInstanceOf[js.Any])
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
     if (compare_at_price != null) __obj.updateDynamic("compare_at_price")(compare_at_price.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (option2 != null) __obj.updateDynamic("option2")(option2.asInstanceOf[js.Any])
-    if (option3 != null) __obj.updateDynamic("option3")(option3.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductVariant]
   }
 }

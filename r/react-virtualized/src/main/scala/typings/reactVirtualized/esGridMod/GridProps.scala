@@ -205,14 +205,7 @@ object GridProps {
     rowCount: Double,
     rowHeight: Double | (js.Function1[/* params */ Index, Double]),
     width: Double,
-    StringDictionary: /**
-    * PLEASE NOTE
-    * The [key: string]: any; line is here on purpose
-    * This is due to the need of force re-render of PureComponent
-    * Check the following link if you want to know more
-    * https://github.com/bvaughn/react-virtualized#pass-thru-props
-    */
-  /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     `aria-label`: String = null,
     `aria-readonly`: js.UndefOr[Boolean] = js.undefined,
     autoContainerWidth: js.UndefOr[Boolean] = js.undefined,
@@ -224,8 +217,8 @@ object GridProps {
     containerRole: String = null,
     containerStyle: CSSProperties = null,
     deferredMeasurementCache: CellMeasurerCache = null,
-    estimatedColumnSize: Int | Double = null,
-    estimatedRowSize: Int | Double = null,
+    estimatedColumnSize: js.UndefOr[Double] = js.undefined,
+    estimatedRowSize: js.UndefOr[Double] = js.undefined,
     getScrollbarSize: () => Double = null,
     id: String = null,
     isScrolling: js.UndefOr[Boolean] = js.undefined,
@@ -233,53 +226,53 @@ object GridProps {
     onScroll: /* params */ ScrollParams => _ = null,
     onScrollbarPresenceChange: /* params */ ScrollbarPresenceParams => _ = null,
     onSectionRendered: /* params */ SectionRenderedParams => _ = null,
-    overscanColumnCount: Int | Double = null,
+    overscanColumnCount: js.UndefOr[Double] = js.undefined,
     overscanIndicesGetter: /* params */ OverscanIndicesGetterParams => OverscanIndices = null,
-    overscanRowCount: Int | Double = null,
+    overscanRowCount: js.UndefOr[Double] = js.undefined,
     role: String = null,
-    scrollLeft: Int | Double = null,
+    scrollLeft: js.UndefOr[Double] = js.undefined,
     scrollToAlignment: Alignment = null,
-    scrollToColumn: Int | Double = null,
-    scrollToRow: Int | Double = null,
-    scrollTop: Int | Double = null,
-    scrollingResetTimeInterval: Int | Double = null,
+    scrollToColumn: js.UndefOr[Double] = js.undefined,
+    scrollToRow: js.UndefOr[Double] = js.undefined,
+    scrollTop: js.UndefOr[Double] = js.undefined,
+    scrollingResetTimeInterval: js.UndefOr[Double] = js.undefined,
     style: CSSProperties = null,
-    tabIndex: Int | Double = null
+    tabIndex: js.UndefOr[Null | Double] = js.undefined
   ): GridProps = {
     val __obj = js.Dynamic.literal(cellRenderer = js.Any.fromFunction1(cellRenderer), columnCount = columnCount.asInstanceOf[js.Any], columnWidth = columnWidth.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], rowHeight = rowHeight.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoContainerWidth)) __obj.updateDynamic("autoContainerWidth")(autoContainerWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoContainerWidth)) __obj.updateDynamic("autoContainerWidth")(autoContainerWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth.get.asInstanceOf[js.Any])
     if (cellRangeRenderer != null) __obj.updateDynamic("cellRangeRenderer")(js.Any.fromFunction1(cellRangeRenderer))
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (containerProps != null) __obj.updateDynamic("containerProps")(containerProps.asInstanceOf[js.Any])
     if (containerRole != null) __obj.updateDynamic("containerRole")(containerRole.asInstanceOf[js.Any])
     if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
     if (deferredMeasurementCache != null) __obj.updateDynamic("deferredMeasurementCache")(deferredMeasurementCache.asInstanceOf[js.Any])
-    if (estimatedColumnSize != null) __obj.updateDynamic("estimatedColumnSize")(estimatedColumnSize.asInstanceOf[js.Any])
-    if (estimatedRowSize != null) __obj.updateDynamic("estimatedRowSize")(estimatedRowSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(estimatedColumnSize)) __obj.updateDynamic("estimatedColumnSize")(estimatedColumnSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(estimatedRowSize)) __obj.updateDynamic("estimatedRowSize")(estimatedRowSize.get.asInstanceOf[js.Any])
     if (getScrollbarSize != null) __obj.updateDynamic("getScrollbarSize")(js.Any.fromFunction0(getScrollbarSize))
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isScrolling)) __obj.updateDynamic("isScrolling")(isScrolling.asInstanceOf[js.Any])
+    if (!js.isUndefined(isScrolling)) __obj.updateDynamic("isScrolling")(isScrolling.get.asInstanceOf[js.Any])
     if (noContentRenderer != null) __obj.updateDynamic("noContentRenderer")(js.Any.fromFunction0(noContentRenderer))
     if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
     if (onScrollbarPresenceChange != null) __obj.updateDynamic("onScrollbarPresenceChange")(js.Any.fromFunction1(onScrollbarPresenceChange))
     if (onSectionRendered != null) __obj.updateDynamic("onSectionRendered")(js.Any.fromFunction1(onSectionRendered))
-    if (overscanColumnCount != null) __obj.updateDynamic("overscanColumnCount")(overscanColumnCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(overscanColumnCount)) __obj.updateDynamic("overscanColumnCount")(overscanColumnCount.get.asInstanceOf[js.Any])
     if (overscanIndicesGetter != null) __obj.updateDynamic("overscanIndicesGetter")(js.Any.fromFunction1(overscanIndicesGetter))
-    if (overscanRowCount != null) __obj.updateDynamic("overscanRowCount")(overscanRowCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(overscanRowCount)) __obj.updateDynamic("overscanRowCount")(overscanRowCount.get.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (scrollLeft != null) __obj.updateDynamic("scrollLeft")(scrollLeft.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollLeft)) __obj.updateDynamic("scrollLeft")(scrollLeft.get.asInstanceOf[js.Any])
     if (scrollToAlignment != null) __obj.updateDynamic("scrollToAlignment")(scrollToAlignment.asInstanceOf[js.Any])
-    if (scrollToColumn != null) __obj.updateDynamic("scrollToColumn")(scrollToColumn.asInstanceOf[js.Any])
-    if (scrollToRow != null) __obj.updateDynamic("scrollToRow")(scrollToRow.asInstanceOf[js.Any])
-    if (scrollTop != null) __obj.updateDynamic("scrollTop")(scrollTop.asInstanceOf[js.Any])
-    if (scrollingResetTimeInterval != null) __obj.updateDynamic("scrollingResetTimeInterval")(scrollingResetTimeInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollToColumn)) __obj.updateDynamic("scrollToColumn")(scrollToColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollToRow)) __obj.updateDynamic("scrollToRow")(scrollToRow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollTop)) __obj.updateDynamic("scrollTop")(scrollTop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollingResetTimeInterval)) __obj.updateDynamic("scrollingResetTimeInterval")(scrollingResetTimeInterval.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridProps]
   }
 }

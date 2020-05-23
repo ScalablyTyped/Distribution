@@ -6,10 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides data for a Stopped event on a BluetoothLEAdvertisementWatcher . */
-@JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementWatcherStoppedEventArgs")
-@js.native
-abstract class BluetoothLEAdvertisementWatcherStoppedEventArgs () extends js.Object {
+trait BluetoothLEAdvertisementWatcherStoppedEventArgs extends js.Object {
   /** Gets the error status for Stopped event. */
-  var error: BluetoothError = js.native
+  var error: BluetoothError
+}
+
+object BluetoothLEAdvertisementWatcherStoppedEventArgs {
+  @scala.inline
+  def apply(error: BluetoothError): BluetoothLEAdvertisementWatcherStoppedEventArgs = {
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BluetoothLEAdvertisementWatcherStoppedEventArgs]
+  }
 }
 

@@ -22,13 +22,9 @@ trait DisableVgwRoutePropagationRequest extends js.Object {
 
 object DisableVgwRoutePropagationRequest {
   @scala.inline
-  def apply(
-    GatewayId: VpnGatewayId,
-    RouteTableId: RouteTableId,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined
-  ): DisableVgwRoutePropagationRequest = {
+  def apply(GatewayId: VpnGatewayId, RouteTableId: RouteTableId, DryRun: js.UndefOr[Boolean] = js.undefined): DisableVgwRoutePropagationRequest = {
     val __obj = js.Dynamic.literal(GatewayId = GatewayId.asInstanceOf[js.Any], RouteTableId = RouteTableId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisableVgwRoutePropagationRequest]
   }
 }

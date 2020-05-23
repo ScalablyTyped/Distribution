@@ -82,15 +82,15 @@ object Transaction {
     device_id: String = null,
     error_code: String = null,
     gateway: String = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     kind: TransactionKind = null,
-    order_id: Int | Double = null,
+    order_id: js.UndefOr[Double] = js.undefined,
     payment_details: PaymentDetails = null,
     receipt: js.Any = null,
     source_name: String = null,
     status: TransactionStatus = null,
     test: js.UndefOr[Boolean] = js.undefined,
-    user_id: Int | Double = null
+    user_id: js.UndefOr[Double] = js.undefined
   ): Transaction = {
     val __obj = js.Dynamic.literal()
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
@@ -101,15 +101,15 @@ object Transaction {
     if (device_id != null) __obj.updateDynamic("device_id")(device_id.asInstanceOf[js.Any])
     if (error_code != null) __obj.updateDynamic("error_code")(error_code.asInstanceOf[js.Any])
     if (gateway != null) __obj.updateDynamic("gateway")(gateway.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (order_id != null) __obj.updateDynamic("order_id")(order_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(order_id)) __obj.updateDynamic("order_id")(order_id.get.asInstanceOf[js.Any])
     if (payment_details != null) __obj.updateDynamic("payment_details")(payment_details.asInstanceOf[js.Any])
     if (receipt != null) __obj.updateDynamic("receipt")(receipt.asInstanceOf[js.Any])
     if (source_name != null) __obj.updateDynamic("source_name")(source_name.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (!js.isUndefined(test)) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
-    if (user_id != null) __obj.updateDynamic("user_id")(user_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(test)) __obj.updateDynamic("test")(test.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(user_id)) __obj.updateDynamic("user_id")(user_id.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transaction]
   }
 }

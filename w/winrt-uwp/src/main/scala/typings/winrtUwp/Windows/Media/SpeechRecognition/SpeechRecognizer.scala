@@ -1,7 +1,6 @@
 package typings.winrtUwp.Windows.Media.SpeechRecognition
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
-import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
@@ -16,15 +15,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Enables speech recognition with either a default or a custom graphical user interface (GUI). */
-@JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognizer")
 @js.native
-/** Creates a new instance of the SpeechRecognizer class. */
-class SpeechRecognizer () extends js.Object {
-  /**
-    * Creates a new instance of the SpeechRecognizer class with a language specifier.
-    * @param language The spoken language to use for recognition.
-    */
-  def this(language: Language) = this()
+trait SpeechRecognizer extends js.Object {
   /** Gets the collection of constraint objects that are associated with the SpeechRecognizer object. */
   var constraints: IVector[ISpeechRecognitionConstraint] = js.native
   /** Gets the continuous recognition session object ( SpeechContinuousRecognitionSession ) associated with this SpeechRecognizer . */
@@ -106,17 +98,5 @@ class SpeechRecognizer () extends js.Object {
     * @return No object or value is returned when this method completes.
     */
   def stopRecognitionAsync(): IPromiseWithIAsyncAction = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognizer")
-@js.native
-object SpeechRecognizer extends js.Object {
-  /** Gets the collection of languages supported by the custom grammars of the SpeechRecognitionGrammarFileConstraint and SpeechRecognitionListConstraint objects specified in the Constraints property. */
-  var supportedGrammarLanguages: IVectorView[Language] = js.native
-  /** Gets the collection of languages supported by the pre-defined, web-service grammars of the SpeechRecognitionTopicConstraint objects specified in the Constraints property. */
-  var supportedTopicLanguages: IVectorView[Language] = js.native
-  /** Gets the language of the device specified in Settings > Time & Language > Speech. */
-  var systemSpeechLanguage: Language = js.native
 }
 

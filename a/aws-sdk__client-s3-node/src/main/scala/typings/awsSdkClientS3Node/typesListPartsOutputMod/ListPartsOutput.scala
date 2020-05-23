@@ -87,10 +87,10 @@ object ListPartsOutput {
     Initiator: UnmarshalledInitiator = null,
     IsTruncated: js.UndefOr[Boolean] = js.undefined,
     Key: String = null,
-    MaxParts: Int | Double = null,
-    NextPartNumberMarker: Int | Double = null,
+    MaxParts: js.UndefOr[Double] = js.undefined,
+    NextPartNumberMarker: js.UndefOr[Double] = js.undefined,
     Owner: UnmarshalledOwner = null,
-    PartNumberMarker: Int | Double = null,
+    PartNumberMarker: js.UndefOr[Double] = js.undefined,
     Parts: js.Array[UnmarshalledPart] = null,
     RequestCharged: requester_ | String = null,
     StorageClass: STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | String = null,
@@ -101,12 +101,12 @@ object ListPartsOutput {
     if (AbortRuleId != null) __obj.updateDynamic("AbortRuleId")(AbortRuleId.asInstanceOf[js.Any])
     if (Bucket != null) __obj.updateDynamic("Bucket")(Bucket.asInstanceOf[js.Any])
     if (Initiator != null) __obj.updateDynamic("Initiator")(Initiator.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.get.asInstanceOf[js.Any])
     if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
-    if (MaxParts != null) __obj.updateDynamic("MaxParts")(MaxParts.asInstanceOf[js.Any])
-    if (NextPartNumberMarker != null) __obj.updateDynamic("NextPartNumberMarker")(NextPartNumberMarker.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxParts)) __obj.updateDynamic("MaxParts")(MaxParts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(NextPartNumberMarker)) __obj.updateDynamic("NextPartNumberMarker")(NextPartNumberMarker.get.asInstanceOf[js.Any])
     if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])
-    if (PartNumberMarker != null) __obj.updateDynamic("PartNumberMarker")(PartNumberMarker.asInstanceOf[js.Any])
+    if (!js.isUndefined(PartNumberMarker)) __obj.updateDynamic("PartNumberMarker")(PartNumberMarker.get.asInstanceOf[js.Any])
     if (Parts != null) __obj.updateDynamic("Parts")(Parts.asInstanceOf[js.Any])
     if (RequestCharged != null) __obj.updateDynamic("RequestCharged")(RequestCharged.asInstanceOf[js.Any])
     if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])

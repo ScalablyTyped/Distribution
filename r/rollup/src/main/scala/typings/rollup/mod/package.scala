@@ -16,7 +16,7 @@ package object mod {
   ]
   type EmitChunk = js.Function2[
     /* id */ java.lang.String, 
-    /* options */ js.UndefOr[typings.rollup.AnonName], 
+    /* options */ js.UndefOr[typings.rollup.anon.Name], 
     java.lang.String
   ]
   type EmitFile = js.Function1[/* emittedFile */ typings.rollup.mod.EmittedFile, java.lang.String]
@@ -52,11 +52,11 @@ package object mod {
     /* code */ java.lang.String, 
     /* chunk */ typings.rollup.mod.RenderedChunk, 
     /* options */ typings.rollup.mod.OutputOptions, 
-    (js.Promise[typings.rollup.AnonCode | scala.Null]) | typings.rollup.AnonCode | java.lang.String | scala.Null
+    (js.Promise[typings.rollup.anon.Code | scala.Null]) | typings.rollup.anon.Code | java.lang.String | scala.Null
   ]
   type ResolveAssetUrlHook = js.ThisFunction1[
     /* this */ typings.rollup.mod.PluginContext, 
-    /* options */ typings.rollup.AnonAssetFileName, 
+    /* options */ typings.rollup.anon.AssetFileName, 
     js.UndefOr[java.lang.String | scala.Null]
   ]
   type ResolveDynamicImportHook = js.ThisFunction2[
@@ -67,7 +67,7 @@ package object mod {
   ]
   type ResolveFileUrlHook = js.ThisFunction1[
     /* this */ typings.rollup.mod.PluginContext, 
-    /* options */ typings.rollup.AnonAssetReferenceId, 
+    /* options */ typings.rollup.anon.AssetReferenceId, 
     js.UndefOr[java.lang.String | scala.Null]
   ]
   type ResolveIdHook = js.ThisFunction2[
@@ -80,14 +80,14 @@ package object mod {
     - java.lang.String
     - typings.rollup.rollupBooleans.`false`
     - scala.Null
-    - `js.undefined`
+    - js.UndefOr[scala.Nothing]
     - typings.rollup.mod.PartialResolvedId
   */
   type ResolveIdResult = js.UndefOr[typings.rollup.mod._ResolveIdResult | java.lang.String | scala.Null]
   type ResolveImportMetaHook = js.ThisFunction2[
     /* this */ typings.rollup.mod.PluginContext, 
     /* prop */ java.lang.String | scala.Null, 
-    /* options */ typings.rollup.AnonChunkId, 
+    /* options */ typings.rollup.anon.ChunkId, 
     js.UndefOr[java.lang.String | scala.Null]
   ]
   type ResolvedIdMap = org.scalablytyped.runtime.StringDictionary[typings.rollup.mod.ResolvedId]
@@ -97,7 +97,7 @@ package object mod {
     - typings.rollup.mod.ExistingRawSourceMap
     - java.lang.String
     - scala.Null
-    - typings.rollup.AnonMappings
+    - typings.rollup.anon.Mappings
   */
   type SourceMapInput = typings.rollup.mod._SourceMapInput | java.lang.String | scala.Null
   type SourceMapSegment = js.Array[scala.Double] | (js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]) | (js.Tuple5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double])
@@ -106,7 +106,7 @@ package object mod {
     /* code */ java.lang.String, 
     /* options */ typings.rollup.mod.OutputOptions, 
     js.UndefOr[
-      (js.Promise[js.UndefOr[typings.rollup.AnonCode | scala.Null]]) | typings.rollup.AnonCode | scala.Null
+      (js.Promise[js.UndefOr[typings.rollup.anon.Code | scala.Null]]) | typings.rollup.anon.Code | scala.Null
     ]
   ]
   type TransformHook = js.ThisFunction2[

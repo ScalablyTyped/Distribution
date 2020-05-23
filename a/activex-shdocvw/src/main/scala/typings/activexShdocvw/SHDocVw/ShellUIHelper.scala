@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SHDocVw.ShellUIHelper")
 @js.native
-class ShellUIHelper protected () extends js.Object {
+trait ShellUIHelper extends js.Object {
   @JSName("SHDocVw.ShellUIHelper_typekey")
   var SHDocVwDotShellUIHelper_typekey: ShellUIHelper = js.native
   def AddChannel(URL: String): Unit = js.native

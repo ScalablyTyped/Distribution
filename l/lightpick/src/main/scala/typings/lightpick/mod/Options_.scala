@@ -173,7 +173,7 @@ object Options_ {
     disableWeekends: js.UndefOr[Boolean] = js.undefined,
     disabledDatesInRange: js.UndefOr[Boolean] = js.undefined,
     dropdowns: Boolean | Dropdowns = null,
-    endDate: InputDate = null,
+    endDate: js.UndefOr[Null | InputDate] = js.undefined,
     firstDay: DayOfWeek = null,
     footer: Boolean | String = null,
     format: String = null,
@@ -182,12 +182,12 @@ object Options_ {
     `inline`: js.UndefOr[Boolean] = js.undefined,
     lang: String = null,
     locale: Locale = null,
-    maxDate: InputDate = null,
-    maxDays: Int | Double = null,
-    minDate: InputDate = null,
-    minDays: Int | Double = null,
-    numberOfColumns: Int | Double = null,
-    numberOfMonths: Int | Double = null,
+    maxDate: js.UndefOr[Null | InputDate] = js.undefined,
+    maxDays: js.UndefOr[Double] = js.undefined,
+    minDate: js.UndefOr[Null | InputDate] = js.undefined,
+    minDays: js.UndefOr[Double] = js.undefined,
+    numberOfColumns: js.UndefOr[Double] = js.undefined,
+    numberOfMonths: js.UndefOr[Double] = js.undefined,
     onClose: OnCloseFn = null,
     onError: OnErrorFn = null,
     onMonthsChange: OnMonthsChangeFn = null,
@@ -204,31 +204,31 @@ object Options_ {
     selectForward: js.UndefOr[Boolean] = js.undefined,
     separator: String = null,
     singleDate: js.UndefOr[Boolean] = js.undefined,
-    startDate: InputDate = null,
+    startDate: js.UndefOr[Null | InputDate] = js.undefined,
     tooltipNights: js.UndefOr[Boolean] = js.undefined,
     weekdayStyle: WeekdayStyle = null
   ): Options_ = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoclose)) __obj.updateDynamic("autoclose")(autoclose.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoclose)) __obj.updateDynamic("autoclose")(autoclose.get.asInstanceOf[js.Any])
     if (disableDates != null) __obj.updateDynamic("disableDates")(disableDates.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableWeekends)) __obj.updateDynamic("disableWeekends")(disableWeekends.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabledDatesInRange)) __obj.updateDynamic("disabledDatesInRange")(disabledDatesInRange.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableWeekends)) __obj.updateDynamic("disableWeekends")(disableWeekends.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabledDatesInRange)) __obj.updateDynamic("disabledDatesInRange")(disabledDatesInRange.get.asInstanceOf[js.Any])
     if (dropdowns != null) __obj.updateDynamic("dropdowns")(dropdowns.asInstanceOf[js.Any])
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(endDate)) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
     if (firstDay != null) __obj.updateDynamic("firstDay")(firstDay.asInstanceOf[js.Any])
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideOnBodyClick)) __obj.updateDynamic("hideOnBodyClick")(hideOnBodyClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoveringTooltip)) __obj.updateDynamic("hoveringTooltip")(hoveringTooltip.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideOnBodyClick)) __obj.updateDynamic("hideOnBodyClick")(hideOnBodyClick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoveringTooltip)) __obj.updateDynamic("hoveringTooltip")(hoveringTooltip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
-    if (maxDays != null) __obj.updateDynamic("maxDays")(maxDays.asInstanceOf[js.Any])
-    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (minDays != null) __obj.updateDynamic("minDays")(minDays.asInstanceOf[js.Any])
-    if (numberOfColumns != null) __obj.updateDynamic("numberOfColumns")(numberOfColumns.asInstanceOf[js.Any])
-    if (numberOfMonths != null) __obj.updateDynamic("numberOfMonths")(numberOfMonths.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDate)) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDays)) __obj.updateDynamic("maxDays")(maxDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minDate)) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(minDays)) __obj.updateDynamic("minDays")(minDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfColumns)) __obj.updateDynamic("numberOfColumns")(numberOfColumns.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfMonths)) __obj.updateDynamic("numberOfMonths")(numberOfMonths.get.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(onClose.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(onError.asInstanceOf[js.Any])
     if (onMonthsChange != null) __obj.updateDynamic("onMonthsChange")(onMonthsChange.asInstanceOf[js.Any])
@@ -239,14 +239,14 @@ object Options_ {
     if (onYearsChange != null) __obj.updateDynamic("onYearsChange")(onYearsChange.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (parentEl != null) __obj.updateDynamic("parentEl")(parentEl.asInstanceOf[js.Any])
-    if (!js.isUndefined(repick)) __obj.updateDynamic("repick")(repick.asInstanceOf[js.Any])
+    if (!js.isUndefined(repick)) __obj.updateDynamic("repick")(repick.get.asInstanceOf[js.Any])
     if (secondField != null) __obj.updateDynamic("secondField")(secondField.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectBackward)) __obj.updateDynamic("selectBackward")(selectBackward.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectForward)) __obj.updateDynamic("selectForward")(selectForward.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectBackward)) __obj.updateDynamic("selectBackward")(selectBackward.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectForward)) __obj.updateDynamic("selectForward")(selectForward.get.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleDate)) __obj.updateDynamic("singleDate")(singleDate.asInstanceOf[js.Any])
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(tooltipNights)) __obj.updateDynamic("tooltipNights")(tooltipNights.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleDate)) __obj.updateDynamic("singleDate")(singleDate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startDate)) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(tooltipNights)) __obj.updateDynamic("tooltipNights")(tooltipNights.get.asInstanceOf[js.Any])
     if (weekdayStyle != null) __obj.updateDynamic("weekdayStyle")(weekdayStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options_]
   }

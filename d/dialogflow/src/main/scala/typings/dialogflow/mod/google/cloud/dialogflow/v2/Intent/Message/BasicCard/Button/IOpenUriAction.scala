@@ -12,9 +12,9 @@ trait IOpenUriAction extends js.Object {
 
 object IOpenUriAction {
   @scala.inline
-  def apply(uri: String = null): IOpenUriAction = {
+  def apply(uri: js.UndefOr[Null | String] = js.undefined): IOpenUriAction = {
     val __obj = js.Dynamic.literal()
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
+    if (!js.isUndefined(uri)) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOpenUriAction]
   }
 }

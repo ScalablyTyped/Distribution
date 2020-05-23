@@ -1,7 +1,7 @@
 
 # Scala.js typings for karma-browserstack-launcher
 
-Typings are for version 1.5
+Typings are for version 1.6
 
 ## Library description:
 A Karma plugin. Launch any browser on BrowserStack!

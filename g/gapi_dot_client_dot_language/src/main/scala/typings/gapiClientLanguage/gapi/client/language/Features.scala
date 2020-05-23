@@ -24,10 +24,10 @@ object Features {
     extractSyntax: js.UndefOr[Boolean] = js.undefined
   ): Features = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(extractDocumentSentiment)) __obj.updateDynamic("extractDocumentSentiment")(extractDocumentSentiment.asInstanceOf[js.Any])
-    if (!js.isUndefined(extractEntities)) __obj.updateDynamic("extractEntities")(extractEntities.asInstanceOf[js.Any])
-    if (!js.isUndefined(extractEntitySentiment)) __obj.updateDynamic("extractEntitySentiment")(extractEntitySentiment.asInstanceOf[js.Any])
-    if (!js.isUndefined(extractSyntax)) __obj.updateDynamic("extractSyntax")(extractSyntax.asInstanceOf[js.Any])
+    if (!js.isUndefined(extractDocumentSentiment)) __obj.updateDynamic("extractDocumentSentiment")(extractDocumentSentiment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(extractEntities)) __obj.updateDynamic("extractEntities")(extractEntities.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(extractEntitySentiment)) __obj.updateDynamic("extractEntitySentiment")(extractEntitySentiment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(extractSyntax)) __obj.updateDynamic("extractSyntax")(extractSyntax.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Features]
   }
 }

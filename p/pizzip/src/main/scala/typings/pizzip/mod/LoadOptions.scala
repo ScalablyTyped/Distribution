@@ -50,11 +50,11 @@ object LoadOptions {
     optimizedBinaryString: js.UndefOr[Boolean] = js.undefined
   ): LoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(base64)) __obj.updateDynamic("base64")(base64.asInstanceOf[js.Any])
-    if (!js.isUndefined(checkCRC32)) __obj.updateDynamic("checkCRC32")(checkCRC32.asInstanceOf[js.Any])
-    if (!js.isUndefined(createFolders)) __obj.updateDynamic("createFolders")(createFolders.asInstanceOf[js.Any])
+    if (!js.isUndefined(base64)) __obj.updateDynamic("base64")(base64.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkCRC32)) __obj.updateDynamic("checkCRC32")(checkCRC32.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(createFolders)) __obj.updateDynamic("createFolders")(createFolders.get.asInstanceOf[js.Any])
     if (decodeFileName != null) __obj.updateDynamic("decodeFileName")(js.Any.fromFunction1(decodeFileName))
-    if (!js.isUndefined(optimizedBinaryString)) __obj.updateDynamic("optimizedBinaryString")(optimizedBinaryString.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimizedBinaryString)) __obj.updateDynamic("optimizedBinaryString")(optimizedBinaryString.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadOptions]
   }
 }

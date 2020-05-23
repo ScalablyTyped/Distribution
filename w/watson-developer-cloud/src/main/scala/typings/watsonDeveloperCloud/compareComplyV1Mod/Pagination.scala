@@ -25,14 +25,14 @@ object Pagination {
     next_url: String = null,
     refresh_cursor: String = null,
     refresh_url: String = null,
-    total: Int | Double = null
+    total: js.UndefOr[Double] = js.undefined
   ): Pagination = {
     val __obj = js.Dynamic.literal()
     if (next_cursor != null) __obj.updateDynamic("next_cursor")(next_cursor.asInstanceOf[js.Any])
     if (next_url != null) __obj.updateDynamic("next_url")(next_url.asInstanceOf[js.Any])
     if (refresh_cursor != null) __obj.updateDynamic("refresh_cursor")(refresh_cursor.asInstanceOf[js.Any])
     if (refresh_url != null) __obj.updateDynamic("refresh_url")(refresh_url.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pagination]
   }
 }

@@ -1,6 +1,6 @@
 package typings.oktaOktaVue.mod.OktaVuePlugin
 
-import typings.oktaOktaVue.AnonAutoRenew
+import typings.oktaOktaVue.anon.AutoRenew
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ object OktaVueOptions {
     redirectUri: String,
     authorizeUrl: String = null,
     ignoreSignature: js.UndefOr[Boolean] = js.undefined,
-    maxClockSkew: Int | Double = null,
+    maxClockSkew: js.UndefOr[Double] = js.undefined,
     nonce: String = null,
     pkce: js.UndefOr[Boolean] = js.undefined,
     postLogoutRedirectUri: String = null,
@@ -28,16 +28,16 @@ object OktaVueOptions {
     scopes: js.Array[String] = null,
     sessionToken: String = null,
     state: String = null,
-    tokenManager: AnonAutoRenew = null,
+    tokenManager: AutoRenew = null,
     tokenUrl: String = null,
     userinfoUrl: String = null
   ): OktaVueOptions = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], issuer = issuer.asInstanceOf[js.Any], redirectUri = redirectUri.asInstanceOf[js.Any])
     if (authorizeUrl != null) __obj.updateDynamic("authorizeUrl")(authorizeUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreSignature)) __obj.updateDynamic("ignoreSignature")(ignoreSignature.asInstanceOf[js.Any])
-    if (maxClockSkew != null) __obj.updateDynamic("maxClockSkew")(maxClockSkew.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreSignature)) __obj.updateDynamic("ignoreSignature")(ignoreSignature.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxClockSkew)) __obj.updateDynamic("maxClockSkew")(maxClockSkew.get.asInstanceOf[js.Any])
     if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
-    if (!js.isUndefined(pkce)) __obj.updateDynamic("pkce")(pkce.asInstanceOf[js.Any])
+    if (!js.isUndefined(pkce)) __obj.updateDynamic("pkce")(pkce.get.asInstanceOf[js.Any])
     if (postLogoutRedirectUri != null) __obj.updateDynamic("postLogoutRedirectUri")(postLogoutRedirectUri.asInstanceOf[js.Any])
     if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode.asInstanceOf[js.Any])
     if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])

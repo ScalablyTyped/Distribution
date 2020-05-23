@@ -11,10 +11,10 @@ trait PopperOffset extends js.Object {
 
 object PopperOffset {
   @scala.inline
-  def apply(left: Int | Double = null, top: Int | Double = null): PopperOffset = {
+  def apply(left: js.UndefOr[Null | Double] = js.undefined, top: js.UndefOr[Null | Double] = js.undefined): PopperOffset = {
     val __obj = js.Dynamic.literal()
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopperOffset]
   }
 }

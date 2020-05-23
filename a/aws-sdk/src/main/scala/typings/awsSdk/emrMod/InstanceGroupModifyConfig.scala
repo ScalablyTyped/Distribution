@@ -34,13 +34,13 @@ object InstanceGroupModifyConfig {
     InstanceGroupId: XmlStringMaxLen256,
     Configurations: ConfigurationList = null,
     EC2InstanceIdsToTerminate: EC2InstanceIdsToTerminateList = null,
-    InstanceCount: Int | Double = null,
+    InstanceCount: js.UndefOr[Integer] = js.undefined,
     ShrinkPolicy: ShrinkPolicy = null
   ): InstanceGroupModifyConfig = {
     val __obj = js.Dynamic.literal(InstanceGroupId = InstanceGroupId.asInstanceOf[js.Any])
     if (Configurations != null) __obj.updateDynamic("Configurations")(Configurations.asInstanceOf[js.Any])
     if (EC2InstanceIdsToTerminate != null) __obj.updateDynamic("EC2InstanceIdsToTerminate")(EC2InstanceIdsToTerminate.asInstanceOf[js.Any])
-    if (InstanceCount != null) __obj.updateDynamic("InstanceCount")(InstanceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount.get.asInstanceOf[js.Any])
     if (ShrinkPolicy != null) __obj.updateDynamic("ShrinkPolicy")(ShrinkPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceGroupModifyConfig]
   }

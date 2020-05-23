@@ -7,6 +7,7 @@ import typings.yogaLayout.mod.YogaEdge
 import typings.yogaLayout.mod.YogaFlexDirection
 import typings.yogaLayout.mod.YogaFlexWrap
 import typings.yogaLayout.mod.YogaJustifyContent
+import typings.yogaLayout.mod.YogaMeasureMode
 import typings.yogaLayout.mod.YogaOverflow
 import typings.yogaLayout.mod.YogaPositionType
 import typings.yogaLayout.mod.YogaUnit
@@ -24,6 +25,7 @@ object yogaLayoutNumbers {
        with YogaFlexDirection
        with YogaFlexWrap
        with YogaJustifyContent
+       with YogaMeasureMode
        with YogaOverflow
        with YogaPositionType
        with YogaUnit
@@ -37,6 +39,7 @@ object yogaLayoutNumbers {
        with YogaFlexDirection
        with YogaFlexWrap
        with YogaJustifyContent
+       with YogaMeasureMode
        with YogaOverflow
        with YogaPositionType
        with YogaUnit
@@ -49,6 +52,7 @@ object yogaLayoutNumbers {
        with YogaFlexDirection
        with YogaFlexWrap
        with YogaJustifyContent
+       with YogaMeasureMode
        with YogaOverflow
        with YogaUnit
   
@@ -58,6 +62,7 @@ object yogaLayoutNumbers {
        with YogaEdge
        with YogaFlexDirection
        with YogaJustifyContent
+       with YogaMeasureMode
        with YogaUnit
   
   @js.native

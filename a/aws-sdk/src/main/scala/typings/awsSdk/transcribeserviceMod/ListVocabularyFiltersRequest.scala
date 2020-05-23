@@ -23,12 +23,12 @@ trait ListVocabularyFiltersRequest extends js.Object {
 object ListVocabularyFiltersRequest {
   @scala.inline
   def apply(
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NameContains: VocabularyFilterName = null,
     NextToken: NextToken = null
   ): ListVocabularyFiltersRequest = {
     val __obj = js.Dynamic.literal()
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NameContains != null) __obj.updateDynamic("NameContains")(NameContains.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListVocabularyFiltersRequest]

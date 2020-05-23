@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@tensorflow/tfjs", "FromPixels")
 @js.native
-object FromPixels
-  extends TopLevel[typings.tensorflowTfjs.tensorflowTfjsStrings.FromPixels]
+object FromPixels extends TopLevel[/* "Identity" */ String]
 

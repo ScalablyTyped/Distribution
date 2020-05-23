@@ -39,21 +39,21 @@ object NodesPaletteItem {
   @scala.inline
   def apply(
     enableScale: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     label: String = null,
     margin: js.Any = null,
-    previewHeight: Int | Double = null,
-    previewWidth: Int | Double = null,
-    width: Int | Double = null
+    previewHeight: js.UndefOr[Double] = js.undefined,
+    previewWidth: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): NodesPaletteItem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableScale)) __obj.updateDynamic("enableScale")(enableScale.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableScale)) __obj.updateDynamic("enableScale")(enableScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (previewHeight != null) __obj.updateDynamic("previewHeight")(previewHeight.asInstanceOf[js.Any])
-    if (previewWidth != null) __obj.updateDynamic("previewWidth")(previewWidth.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(previewHeight)) __obj.updateDynamic("previewHeight")(previewHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(previewWidth)) __obj.updateDynamic("previewWidth")(previewWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodesPaletteItem]
   }
 }

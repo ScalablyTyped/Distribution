@@ -16,9 +16,11 @@ trait ViewEventMapping[Topic, Type] extends WebContentsEventMapping[String, Stri
   var attached: WindowEvent[Topic, Type]
   var created: WindowEvent[Topic, Type]
   var destroyed: WindowEvent[Topic, Type]
+  var focused: WindowEvent[Topic, Type]
   var hidden: WindowEvent[Topic, Type]
+  var hotkey: InputEvent with (WindowEvent[Topic, Type])
   var shown: WindowEvent[Topic, Type]
-  var `target-changed`: WindowEvent[Topic, Type]
+  var `target-changed`: TargetChangedEvent[Topic, Type]
 }
 
 object ViewEventMapping {
@@ -30,8 +32,10 @@ object ViewEventMapping {
     created: WindowEvent[Topic, Type],
     destroyed: WindowEvent[Topic, Type],
     `did-change-theme-color`: WindowEvent[String, String],
+    focused: WindowEvent[Topic, Type],
     `found-in-page`: WindowEvent[String, String],
     hidden: WindowEvent[Topic, Type],
+    hotkey: InputEvent with (WindowEvent[Topic, Type]),
     listenerRemoved: String,
     `navigation-rejected`: WindowNavigationRejectedEvent[String, String],
     newListener: String,
@@ -40,9 +44,9 @@ object ViewEventMapping {
     `resource-load-failed`: WindowResourceLoadFailedEvent[String, String],
     `resource-response-received`: WindowResourceResponseReceivedEvent[String, String],
     shown: WindowEvent[Topic, Type],
-    `target-changed`: WindowEvent[Topic, Type]
+    `target-changed`: TargetChangedEvent[Topic, Type]
   ): ViewEventMapping[Topic, Type] = {
-    val __obj = js.Dynamic.literal(attached = attached.asInstanceOf[js.Any], crashed = crashed.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], destroyed = destroyed.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], listenerRemoved = listenerRemoved.asInstanceOf[js.Any], newListener = newListener.asInstanceOf[js.Any], shown = shown.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attached = attached.asInstanceOf[js.Any], crashed = crashed.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], destroyed = destroyed.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], hotkey = hotkey.asInstanceOf[js.Any], listenerRemoved = listenerRemoved.asInstanceOf[js.Any], newListener = newListener.asInstanceOf[js.Any], shown = shown.asInstanceOf[js.Any])
     __obj.updateDynamic("certificate-error")(`certificate-error`.asInstanceOf[js.Any])
     __obj.updateDynamic("did-change-theme-color")(`did-change-theme-color`.asInstanceOf[js.Any])
     __obj.updateDynamic("found-in-page")(`found-in-page`.asInstanceOf[js.Any])

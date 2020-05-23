@@ -22,9 +22,13 @@ trait GetSlotTypesRequest extends js.Object {
 
 object GetSlotTypesRequest {
   @scala.inline
-  def apply(maxResults: Int | Double = null, nameContains: SlotTypeName = null, nextToken: NextToken = null): GetSlotTypesRequest = {
+  def apply(
+    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    nameContains: SlotTypeName = null,
+    nextToken: NextToken = null
+  ): GetSlotTypesRequest = {
     val __obj = js.Dynamic.literal()
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nameContains != null) __obj.updateDynamic("nameContains")(nameContains.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSlotTypesRequest]

@@ -18,7 +18,7 @@ object UnlockOptions {
     val __obj = js.Dynamic.literal()
     if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
     if (lockfilePath != null) __obj.updateDynamic("lockfilePath")(lockfilePath.asInstanceOf[js.Any])
-    if (!js.isUndefined(realpath)) __obj.updateDynamic("realpath")(realpath.asInstanceOf[js.Any])
+    if (!js.isUndefined(realpath)) __obj.updateDynamic("realpath")(realpath.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnlockOptions]
   }
 }

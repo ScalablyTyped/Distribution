@@ -1,13 +1,13 @@
 package typings.ckeditorCkeditor5Engine.mod
 
-import typings.ckeditorCkeditor5Engine.AnonBatchType
-import typings.ckeditorCkeditor5Engine.AnonContext
-import typings.ckeditorCkeditor5Engine.AnonConvertMarkers
-import typings.ckeditorCkeditor5Engine.AnonError
-import typings.ckeditorCkeditor5Engine.AnonIgnoreRoot
-import typings.ckeditorCkeditor5Engine.AnonLastRangeBackward
-import typings.ckeditorCkeditor5Engine.AnonRenderUIElements
-import typings.ckeditorCkeditor5Engine.AnonRootName
+import typings.ckeditorCkeditor5Engine.anon.BatchType
+import typings.ckeditorCkeditor5Engine.anon.Context
+import typings.ckeditorCkeditor5Engine.anon.ConvertMarkers
+import typings.ckeditorCkeditor5Engine.anon.Error
+import typings.ckeditorCkeditor5Engine.anon.IgnoreRoot
+import typings.ckeditorCkeditor5Engine.anon.LastRangeBackward
+import typings.ckeditorCkeditor5Engine.anon.RenderUIElements
+import typings.ckeditorCkeditor5Engine.anon.RootName
 import typings.ckeditorCkeditor5Engine.mod.model.Batch
 import typings.ckeditorCkeditor5Engine.mod.model.Marker
 import typings.ckeditorCkeditor5Engine.mod.model.Model
@@ -38,41 +38,41 @@ object devUtils extends js.Object {
   class OperationReplayer () extends js.Object
   
   def disableEngineDebug(): Unit = js.native
-  def enableEngineDebug(_logger: AnonError): DebugPlugin = js.native
+  def enableEngineDebug(_logger: Error): DebugPlugin = js.native
   // engine/dev-utils/view
   def getData(view: View): String = js.native
-  def getData(view: View, options: AnonRenderUIElements): String = js.native
-  def parse(data: String, options: AnonLastRangeBackward): Text | Element | DocumentFragment | js.Object = js.native
-  def setData(view: View, data: String, options: AnonRootName): Unit = js.native
+  def getData(view: View, options: RenderUIElements): String = js.native
+  def parse(data: String, options: LastRangeBackward): Text | Element | DocumentFragment | js.Object = js.native
+  def setData(view: View, data: String, options: RootName): Unit = js.native
   def stringify(node: DocumentFragment): String = js.native
   def stringify(node: DocumentFragment, selectionOrPositionOrRange: DocumentSelection): String = js.native
-  def stringify(node: DocumentFragment, selectionOrPositionOrRange: DocumentSelection, options: AnonIgnoreRoot): String = js.native
+  def stringify(node: DocumentFragment, selectionOrPositionOrRange: DocumentSelection, options: IgnoreRoot): String = js.native
   def stringify(node: DocumentFragment, selectionOrPositionOrRange: Position): String = js.native
-  def stringify(node: DocumentFragment, selectionOrPositionOrRange: Position, options: AnonIgnoreRoot): String = js.native
+  def stringify(node: DocumentFragment, selectionOrPositionOrRange: Position, options: IgnoreRoot): String = js.native
   def stringify(node: DocumentFragment, selectionOrPositionOrRange: Range): String = js.native
-  def stringify(node: DocumentFragment, selectionOrPositionOrRange: Range, options: AnonIgnoreRoot): String = js.native
+  def stringify(node: DocumentFragment, selectionOrPositionOrRange: Range, options: IgnoreRoot): String = js.native
   def stringify(node: Element): String = js.native
   def stringify(node: Element, selectionOrPositionOrRange: DocumentSelection): String = js.native
-  def stringify(node: Element, selectionOrPositionOrRange: DocumentSelection, options: AnonIgnoreRoot): String = js.native
+  def stringify(node: Element, selectionOrPositionOrRange: DocumentSelection, options: IgnoreRoot): String = js.native
   def stringify(node: Element, selectionOrPositionOrRange: Position): String = js.native
-  def stringify(node: Element, selectionOrPositionOrRange: Position, options: AnonIgnoreRoot): String = js.native
+  def stringify(node: Element, selectionOrPositionOrRange: Position, options: IgnoreRoot): String = js.native
   def stringify(node: Element, selectionOrPositionOrRange: Range): String = js.native
-  def stringify(node: Element, selectionOrPositionOrRange: Range, options: AnonIgnoreRoot): String = js.native
+  def stringify(node: Element, selectionOrPositionOrRange: Range, options: IgnoreRoot): String = js.native
   def stringify(node: Text): String = js.native
   def stringify(node: Text, selectionOrPositionOrRange: DocumentSelection): String = js.native
-  def stringify(node: Text, selectionOrPositionOrRange: DocumentSelection, options: AnonIgnoreRoot): String = js.native
+  def stringify(node: Text, selectionOrPositionOrRange: DocumentSelection, options: IgnoreRoot): String = js.native
   def stringify(node: Text, selectionOrPositionOrRange: Position): String = js.native
-  def stringify(node: Text, selectionOrPositionOrRange: Position, options: AnonIgnoreRoot): String = js.native
+  def stringify(node: Text, selectionOrPositionOrRange: Position, options: IgnoreRoot): String = js.native
   def stringify(node: Text, selectionOrPositionOrRange: Range): String = js.native
-  def stringify(node: Text, selectionOrPositionOrRange: Range, options: AnonIgnoreRoot): String = js.native
+  def stringify(node: Text, selectionOrPositionOrRange: Range, options: IgnoreRoot): String = js.native
   // engine/dev-utils/model
   @js.native
   object devmodel extends js.Object {
     def getData(model: Model): String = js.native
-    def getData(model: Model, options: AnonConvertMarkers): String = js.native
+    def getData(model: Model, options: ConvertMarkers): String = js.native
     def parse(data: String, schema: Schema, batch: Batch): typings.ckeditorCkeditor5Engine.mod.model.Element | typings.ckeditorCkeditor5Engine.mod.model.Text | typings.ckeditorCkeditor5Engine.mod.model.DocumentFragment | js.Object = js.native
-    def parse(data: String, schema: Schema, batch: Batch, options: AnonContext): typings.ckeditorCkeditor5Engine.mod.model.Element | typings.ckeditorCkeditor5Engine.mod.model.Text | typings.ckeditorCkeditor5Engine.mod.model.DocumentFragment | js.Object = js.native
-    def setData(model: String, data: js.Object, options: AnonBatchType): Unit = js.native
+    def parse(data: String, schema: Schema, batch: Batch, options: Context): typings.ckeditorCkeditor5Engine.mod.model.Element | typings.ckeditorCkeditor5Engine.mod.model.Text | typings.ckeditorCkeditor5Engine.mod.model.DocumentFragment | js.Object = js.native
+    def setData(model: String, data: js.Object, options: BatchType): Unit = js.native
     def stringify(
       node: RootElement | typings.ckeditorCkeditor5Engine.mod.model.Element | typings.ckeditorCkeditor5Engine.mod.model.Text | typings.ckeditorCkeditor5Engine.mod.model.DocumentFragment,
        // TODO optional

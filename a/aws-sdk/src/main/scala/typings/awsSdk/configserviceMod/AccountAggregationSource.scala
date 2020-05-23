@@ -24,11 +24,11 @@ object AccountAggregationSource {
   @scala.inline
   def apply(
     AccountIds: AccountAggregationSourceAccountList,
-    AllAwsRegions: js.UndefOr[scala.Boolean] = js.undefined,
+    AllAwsRegions: js.UndefOr[Boolean] = js.undefined,
     AwsRegions: AggregatorRegionList = null
   ): AccountAggregationSource = {
     val __obj = js.Dynamic.literal(AccountIds = AccountIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(AllAwsRegions)) __obj.updateDynamic("AllAwsRegions")(AllAwsRegions.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllAwsRegions)) __obj.updateDynamic("AllAwsRegions")(AllAwsRegions.get.asInstanceOf[js.Any])
     if (AwsRegions != null) __obj.updateDynamic("AwsRegions")(AwsRegions.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountAggregationSource]
   }

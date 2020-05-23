@@ -92,9 +92,9 @@ object CreateInstanceRequest {
     AutoScalingType: AutoScalingType = null,
     AvailabilityZone: String = null,
     BlockDeviceMappings: BlockDeviceMappings = null,
-    EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined,
+    EbsOptimized: js.UndefOr[Boolean] = js.undefined,
     Hostname: String = null,
-    InstallUpdatesOnBoot: js.UndefOr[scala.Boolean] = js.undefined,
+    InstallUpdatesOnBoot: js.UndefOr[Boolean] = js.undefined,
     Os: String = null,
     RootDeviceType: RootDeviceType = null,
     SshKeyName: String = null,
@@ -109,9 +109,9 @@ object CreateInstanceRequest {
     if (AutoScalingType != null) __obj.updateDynamic("AutoScalingType")(AutoScalingType.asInstanceOf[js.Any])
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
     if (BlockDeviceMappings != null) __obj.updateDynamic("BlockDeviceMappings")(BlockDeviceMappings.asInstanceOf[js.Any])
-    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.asInstanceOf[js.Any])
+    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.get.asInstanceOf[js.Any])
     if (Hostname != null) __obj.updateDynamic("Hostname")(Hostname.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstallUpdatesOnBoot)) __obj.updateDynamic("InstallUpdatesOnBoot")(InstallUpdatesOnBoot.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstallUpdatesOnBoot)) __obj.updateDynamic("InstallUpdatesOnBoot")(InstallUpdatesOnBoot.get.asInstanceOf[js.Any])
     if (Os != null) __obj.updateDynamic("Os")(Os.asInstanceOf[js.Any])
     if (RootDeviceType != null) __obj.updateDynamic("RootDeviceType")(RootDeviceType.asInstanceOf[js.Any])
     if (SshKeyName != null) __obj.updateDynamic("SshKeyName")(SshKeyName.asInstanceOf[js.Any])

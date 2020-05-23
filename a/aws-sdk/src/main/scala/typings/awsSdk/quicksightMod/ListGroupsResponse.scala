@@ -30,13 +30,13 @@ object ListGroupsResponse {
     GroupList: GroupList = null,
     NextToken: String = null,
     RequestId: String = null,
-    Status: Int | scala.Double = null
+    Status: js.UndefOr[StatusCode] = js.undefined
   ): ListGroupsResponse = {
     val __obj = js.Dynamic.literal()
     if (GroupList != null) __obj.updateDynamic("GroupList")(GroupList.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
+    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGroupsResponse]
   }
 }

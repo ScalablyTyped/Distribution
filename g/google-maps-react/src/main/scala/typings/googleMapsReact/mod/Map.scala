@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("google-maps-react", "Map")
 @js.native
 class Map ()
-  extends Component[MapProps, js.Any, js.Any]
+  extends Component[IMapProps, js.Any, js.Any]
 

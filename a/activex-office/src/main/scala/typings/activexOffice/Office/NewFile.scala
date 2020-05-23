@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.NewFile")
 @js.native
-class NewFile protected () extends js.Object {
+trait NewFile extends js.Object {
   val Application: js.Any = js.native
   val Creator: Double = js.native
   @JSName("Office.NewFile_typekey")

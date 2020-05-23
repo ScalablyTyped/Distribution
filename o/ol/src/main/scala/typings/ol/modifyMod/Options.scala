@@ -26,7 +26,7 @@ object Options {
     deleteCondition: Condition = null,
     features: typings.ol.collectionMod.default[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]] = null,
     insertVertexCondition: Condition = null,
-    pixelTolerance: Int | Double = null,
+    pixelTolerance: js.UndefOr[Double] = js.undefined,
     source: typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default] = null,
     style: StyleLike = null,
     wrapX: js.UndefOr[Boolean] = js.undefined
@@ -36,10 +36,10 @@ object Options {
     if (deleteCondition != null) __obj.updateDynamic("deleteCondition")(deleteCondition.asInstanceOf[js.Any])
     if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
     if (insertVertexCondition != null) __obj.updateDynamic("insertVertexCondition")(insertVertexCondition.asInstanceOf[js.Any])
-    if (pixelTolerance != null) __obj.updateDynamic("pixelTolerance")(pixelTolerance.asInstanceOf[js.Any])
+    if (!js.isUndefined(pixelTolerance)) __obj.updateDynamic("pixelTolerance")(pixelTolerance.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

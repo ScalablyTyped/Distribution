@@ -76,24 +76,24 @@ object PageData {
   def apply(
     allShapes: js.Array[ShapeData] = null,
     comments: js.Array[CommentData] = null,
-    height: Int | Double = null,
-    index: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
+    index: js.UndefOr[Double] = js.undefined,
     isBackground: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     shapes: js.Array[ShapeData] = null,
     view: PageViewData = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): PageData = {
     val __obj = js.Dynamic.literal()
     if (allShapes != null) __obj.updateDynamic("allShapes")(allShapes.asInstanceOf[js.Any])
     if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBackground)) __obj.updateDynamic("isBackground")(isBackground.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBackground)) __obj.updateDynamic("isBackground")(isBackground.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (shapes != null) __obj.updateDynamic("shapes")(shapes.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageData]
   }
 }

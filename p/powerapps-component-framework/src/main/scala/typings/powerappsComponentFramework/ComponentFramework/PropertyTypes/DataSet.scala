@@ -13,89 +13,89 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * The structure of a dataset property as it would be passed to a control
-		 */
+  * The structure of a dataset property as it would be passed to a control
+  */
 trait DataSet extends js.Object {
   /**
-  			 * Adds column to the columnset
-  			 * @param name column name to be added to the columnset
-  			 * @param entityAlias entity alias for which the column name needs to be added
-  			 */
+    * Adds column to the columnset
+    * @param name column name to be added to the columnset
+    * @param entityAlias entity alias for which the column name needs to be added
+    */
   var addColumn: js.UndefOr[js.Function2[/* name */ String, /* entityAlias */ js.UndefOr[String], Unit]] = js.undefined
   /**
-  			 * Set of columns available in this dataset.
-  			 */
+    * Set of columns available in this dataset.
+    */
   var columns: js.Array[Column]
   /**
-  			 * True if encountered error while data retrieval
-  			 */
+    * True if encountered error while data retrieval
+    */
   var error: Boolean
   /**
-  			 * The error message associated with the last encountered error, if applicable
-  			 */
+    * The error message associated with the last encountered error, if applicable
+    */
   var errorMessage: String
   /**
-  			 * The column filtering for the current query.
-  			 */
+    * The column filtering for the current query.
+    */
   var filtering: Filtering
   /**
-  			 * Related entity info
-  			 */
+    * Related entity info
+    */
   var linking: Linking
   /**
-  			 * Indicate if the dataset property is in loading state or not
-  			 */
+    * Indicate if the dataset property is in loading state or not
+    */
   var loading: Boolean
   /**
-  			 * Pagination status and actions.
-  			 */
+    * Pagination status and actions.
+    */
   var paging: Paging
   /**
-  			 * Map of IDs to the full record object
-  			 */
+    * Map of IDs to the full record object
+    */
   var records: StringDictionary[EntityRecord]
   /**
-  			 * IDs of the records in the dataset, order by the query response result
-  			 */
+    * IDs of the records in the dataset, order by the query response result
+    */
   var sortedRecordIds: js.Array[String]
   /**
-  			 * The sorting status for the current query.
-  			 */
+    * The sorting status for the current query.
+    */
   var sorting: js.Array[SortStatus]
   /**
-  			 * Clear selected record ids list
-  			 */
+    * Clear selected record ids list
+    */
   def clearSelectedRecordIds(): Unit
   /**
-  			 * Retrieves all selected record ids
-  			 */
+    * Retrieves all selected record ids
+    */
   def getSelectedRecordIds(): js.Array[String]
   /**
-  			 * Get DataSet target entity logical name
-  			 */
+    * Get DataSet target entity logical name
+    */
   def getTargetEntityType(): String
   /**
-  			 * Retrieves the view display name used by the dataset property
-  			 */
+    * Retrieves the view display name used by the dataset property
+    */
   def getTitle(): String
   /**
-  			 * Gets Id of view used by the dataset property
-  			 */
+    * Gets Id of view used by the dataset property
+    */
   def getViewId(): String
   /**
-  			 * Open dataSet item for a given EntityReference. It will check if there is a command with command button id "Mscrm.OpenRecordItem".
-  			 * If there is, it will execute the command, otherwise it will just navigate to the associated form of the entityReference
-  			 * @param entityReference entity reference
-  			 */
+    * Open dataSet item for a given EntityReference. It will check if there is a command with command button id "Mscrm.OpenRecordItem".
+    * If there is, it will execute the command, otherwise it will just navigate to the associated form of the entityReference
+    * @param entityReference entity reference
+    */
   def openDatasetItem(entityReference: EntityReference): Unit
   /**
-  			 * Refreshes the dataset based on filters, sorting, linking, new column. New data will be pushed to control in another 'updateView' cycle.
-  			 */
+    * Refreshes the dataset based on filters, sorting, linking, new column. New data will be pushed to control in another 'updateView' cycle.
+    */
   def refresh(): Unit
   /**
-  			 * Set the ids of the selected records
-  			 * @ids List of recordId's
-  			 */
+    * Set the ids of the selected records
+    * @ids List of recordId's
+    */
   def setSelectedRecordIds(ids: js.Array[String]): Unit
 }
 

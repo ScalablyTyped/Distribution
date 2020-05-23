@@ -1,18 +1,11 @@
 package typings.amapJsApi.AMap
 
-import typings.amapJsApi.AMap.Icon.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.Icon")
 @js.native
-/**
-  * 点标记的图标
-  * @param options 选项
-  */
-class Icon_ () extends EventEmitter {
-  def this(options: Options) = this()
+trait Icon_ extends EventEmitter {
   /**
     * 获取图标图片大小
     */

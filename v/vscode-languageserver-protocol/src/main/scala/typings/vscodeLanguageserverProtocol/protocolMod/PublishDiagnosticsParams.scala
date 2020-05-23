@@ -25,9 +25,9 @@ trait PublishDiagnosticsParams extends js.Object {
 
 object PublishDiagnosticsParams {
   @scala.inline
-  def apply(diagnostics: js.Array[Diagnostic], uri: DocumentUri, version: Int | Double = null): PublishDiagnosticsParams = {
+  def apply(diagnostics: js.Array[Diagnostic], uri: DocumentUri, version: js.UndefOr[Double] = js.undefined): PublishDiagnosticsParams = {
     val __obj = js.Dynamic.literal(diagnostics = diagnostics.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishDiagnosticsParams]
   }
 }

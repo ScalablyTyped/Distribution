@@ -138,11 +138,11 @@ object RadarProps {
     dataKey: DataKey,
     activeDot: js.Object | ReactElement | ContentRenderer[_] | Boolean = null,
     alignmentBaseline: String = null,
-    angle: Int | Double = null,
-    animationBegin: Int | Double = null,
-    animationDuration: Int | Double = null,
+    angle: js.UndefOr[Double] = js.undefined,
+    animationBegin: js.UndefOr[Double] = js.undefined,
+    animationDuration: js.UndefOr[Double] = js.undefined,
     animationEasing: AnimationEasingType = null,
-    animationId: Int | Double = null,
+    animationId: js.UndefOr[Double] = js.undefined,
     baselineShift: String = null,
     className: String = null,
     clip: String = null,
@@ -158,8 +158,8 @@ object RadarProps {
     display: String = null,
     dominantBaseline: String = null,
     dot: js.Object | ReactElement | ContentRenderer[DotProps] | Boolean = null,
-    dx: Int | Double = null,
-    dy: Int | Double = null,
+    dx: js.UndefOr[Double] = js.undefined,
+    dy: js.UndefOr[Double] = js.undefined,
     fill: String = null,
     fillOpacity: Double | String = null,
     fillRule: String = null,
@@ -175,7 +175,7 @@ object RadarProps {
     fontVariant: String = null,
     fontWeight: normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit = null,
     glyphOrientationVertical: String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     hide: js.UndefOr[Boolean] = js.undefined,
     imageRendering: auto | optimizeSpeed | optimizeQuality | inherit = null,
     isAnimationActive: js.UndefOr[Boolean] = js.undefined,
@@ -208,7 +208,7 @@ object RadarProps {
     overflow: String = null,
     pointerEvents: String = null,
     points: js.Array[RadarPoint] = null,
-    r: Int | Double = null,
+    r: js.UndefOr[Double] = js.undefined,
     shape: ReactElement | ContentRenderer[RadarProps] = null,
     shapeRendering: auto | optimizeSpeed | crispEdges | geometricPrecision | inherit = null,
     stopColor: String = null,
@@ -228,20 +228,20 @@ object RadarProps {
     transform: String = null,
     unicodeBidi: String = null,
     visibility: String = null,
-    width: Int | Double = null,
+    width: js.UndefOr[Double] = js.undefined,
     wordSpacing: Double | String = null,
     writingMode: String = null,
-    x: Int | Double = null,
-    y: Int | Double = null
+    x: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined
   ): RadarProps = {
     val __obj = js.Dynamic.literal(dataKey = dataKey.asInstanceOf[js.Any])
     if (activeDot != null) __obj.updateDynamic("activeDot")(activeDot.asInstanceOf[js.Any])
     if (alignmentBaseline != null) __obj.updateDynamic("alignmentBaseline")(alignmentBaseline.asInstanceOf[js.Any])
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (animationBegin != null) __obj.updateDynamic("animationBegin")(animationBegin.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationBegin)) __obj.updateDynamic("animationBegin")(animationBegin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
     if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
-    if (animationId != null) __obj.updateDynamic("animationId")(animationId.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationId)) __obj.updateDynamic("animationId")(animationId.get.asInstanceOf[js.Any])
     if (baselineShift != null) __obj.updateDynamic("baselineShift")(baselineShift.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
@@ -257,8 +257,8 @@ object RadarProps {
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (dominantBaseline != null) __obj.updateDynamic("dominantBaseline")(dominantBaseline.asInstanceOf[js.Any])
     if (dot != null) __obj.updateDynamic("dot")(dot.asInstanceOf[js.Any])
-    if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
-    if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
+    if (!js.isUndefined(dx)) __obj.updateDynamic("dx")(dx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dy)) __obj.updateDynamic("dy")(dy.get.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (fillRule != null) __obj.updateDynamic("fillRule")(fillRule.asInstanceOf[js.Any])
@@ -274,11 +274,11 @@ object RadarProps {
     if (fontVariant != null) __obj.updateDynamic("fontVariant")(fontVariant.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (glyphOrientationVertical != null) __obj.updateDynamic("glyphOrientationVertical")(glyphOrientationVertical.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide.get.asInstanceOf[js.Any])
     if (imageRendering != null) __obj.updateDynamic("imageRendering")(imageRendering.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAnimationActive)) __obj.updateDynamic("isAnimationActive")(isAnimationActive.asInstanceOf[js.Any])
-    if (!js.isUndefined(isUpdateAnimationActive)) __obj.updateDynamic("isUpdateAnimationActive")(isUpdateAnimationActive.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAnimationActive)) __obj.updateDynamic("isAnimationActive")(isAnimationActive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isUpdateAnimationActive)) __obj.updateDynamic("isUpdateAnimationActive")(isUpdateAnimationActive.get.asInstanceOf[js.Any])
     if (kerning != null) __obj.updateDynamic("kerning")(kerning.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (legendType != null) __obj.updateDynamic("legendType")(legendType.asInstanceOf[js.Any])
@@ -307,7 +307,7 @@ object RadarProps {
     if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
     if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
     if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
-    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
+    if (!js.isUndefined(r)) __obj.updateDynamic("r")(r.get.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     if (shapeRendering != null) __obj.updateDynamic("shapeRendering")(shapeRendering.asInstanceOf[js.Any])
     if (stopColor != null) __obj.updateDynamic("stopColor")(stopColor.asInstanceOf[js.Any])
@@ -327,11 +327,11 @@ object RadarProps {
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     if (unicodeBidi != null) __obj.updateDynamic("unicodeBidi")(unicodeBidi.asInstanceOf[js.Any])
     if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     if (wordSpacing != null) __obj.updateDynamic("wordSpacing")(wordSpacing.asInstanceOf[js.Any])
     if (writingMode != null) __obj.updateDynamic("writingMode")(writingMode.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadarProps]
   }
 }

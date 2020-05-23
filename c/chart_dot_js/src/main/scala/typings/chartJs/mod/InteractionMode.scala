@@ -4,16 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Inlined chart.js.chart.js.InteractionModeRegistry[keyof chart.js.chart.js.InteractionModeRegistry] */
 /* Rewritten from type alias, can be one of: 
-  - typings.chartJs.chartJsStrings.point
-  - typings.chartJs.chartJsStrings.nearest
-  - typings.chartJs.chartJsStrings.single
-  - typings.chartJs.chartJsStrings.label
-  - typings.chartJs.chartJsStrings.index
   - typings.chartJs.chartJsStrings.`x-axis`
-  - typings.chartJs.chartJsStrings.dataset
   - typings.chartJs.chartJsStrings.x
   - typings.chartJs.chartJsStrings.y
+  - typings.chartJs.chartJsStrings.single
+  - typings.chartJs.chartJsStrings.nearest
+  - typings.chartJs.chartJsStrings.index
+  - typings.chartJs.chartJsStrings.label
+  - typings.chartJs.chartJsStrings.point
+  - typings.chartJs.chartJsStrings.dataset
 */
 trait InteractionMode extends js.Object
 

@@ -14,23 +14,23 @@ object CameraForBoundsOptions {
   @scala.inline
   def apply(
     around: LngLatLike = null,
-    bearing: Int | Double = null,
+    bearing: js.UndefOr[Double] = js.undefined,
     center: LngLatLike = null,
-    maxZoom: Int | Double = null,
+    maxZoom: js.UndefOr[Double] = js.undefined,
     offset: PointLike = null,
     padding: Double | PaddingOptions = null,
-    pitch: Int | Double = null,
-    zoom: Int | Double = null
+    pitch: js.UndefOr[Double] = js.undefined,
+    zoom: js.UndefOr[Double] = js.undefined
   ): CameraForBoundsOptions = {
     val __obj = js.Dynamic.literal()
     if (around != null) __obj.updateDynamic("around")(around.asInstanceOf[js.Any])
-    if (bearing != null) __obj.updateDynamic("bearing")(bearing.asInstanceOf[js.Any])
+    if (!js.isUndefined(bearing)) __obj.updateDynamic("bearing")(bearing.get.asInstanceOf[js.Any])
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(pitch)) __obj.updateDynamic("pitch")(pitch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraForBoundsOptions]
   }
 }

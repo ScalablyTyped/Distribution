@@ -15,15 +15,15 @@ trait GeoHaystackSearchOptions extends js.Object {
 object GeoHaystackSearchOptions {
   @scala.inline
   def apply(
-    limit: Int | scala.Double = null,
-    maxDistance: Int | scala.Double = null,
+    limit: js.UndefOr[scala.Double] = js.undefined,
+    maxDistance: js.UndefOr[scala.Double] = js.undefined,
     readPreference: ReadPreferenceOrMode = null,
     search: js.Object = null,
     session: ClientSession = null
   ): GeoHaystackSearchOptions = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (maxDistance != null) __obj.updateDynamic("maxDistance")(maxDistance.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDistance)) __obj.updateDynamic("maxDistance")(maxDistance.get.asInstanceOf[js.Any])
     if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
     if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])

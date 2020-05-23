@@ -1,10 +1,10 @@
 package typings.mixpanelBrowser.mod
 
-import typings.mixpanelBrowser.PartialClearOptOutInOutOp
-import typings.mixpanelBrowser.PartialConfig
-import typings.mixpanelBrowser.PartialHasOptedInOutOptio
-import typings.mixpanelBrowser.PartialInTrackingOptions
-import typings.mixpanelBrowser.PartialOutTrackingOptions
+import typings.mixpanelBrowser.anon.PartialClearOptOutInOutOp
+import typings.mixpanelBrowser.anon.PartialConfig
+import typings.mixpanelBrowser.anon.PartialHasOptedInOutOptio
+import typings.mixpanelBrowser.anon.PartialInTrackingOptions
+import typings.mixpanelBrowser.anon.PartialOutTrackingOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,13 +46,26 @@ trait Mixpanel extends js.Object {
   def time_event(event_name: String): Unit = js.native
   def track(event_name: String): Unit = js.native
   def track(event_name: String, properties: Dict): Unit = js.native
-  def track(event_name: String, properties: Dict, callback: js.Function0[Unit]): Unit = js.native
-  def track_forms(query: String, event_name: String): Unit = js.native
-  def track_forms(query: String, event_name: String, properties: js.Function0[Unit]): Unit = js.native
-  def track_forms(query: String, event_name: String, properties: Dict): Unit = js.native
-  def track_links(query: String, event_name: String): Unit = js.native
-  def track_links(query: String, event_name: String, properties: js.Function0[Unit]): Unit = js.native
-  def track_links(query: String, event_name: String, properties: Dict): Unit = js.native
+  def track(event_name: String, properties: Dict, optionsOrCallback: js.Function0[Unit]): Unit = js.native
+  def track(
+    event_name: String,
+    properties: Dict,
+    optionsOrCallback: js.Function0[Unit],
+    callback: js.Function0[Unit]
+  ): Unit = js.native
+  def track(event_name: String, properties: Dict, optionsOrCallback: RequestOptions): Unit = js.native
+  def track(
+    event_name: String,
+    properties: Dict,
+    optionsOrCallback: RequestOptions,
+    callback: js.Function0[Unit]
+  ): Unit = js.native
+  def track_forms(query: Query, event_name: String): Unit = js.native
+  def track_forms(query: Query, event_name: String, properties: js.Function0[Unit]): Unit = js.native
+  def track_forms(query: Query, event_name: String, properties: Dict): Unit = js.native
+  def track_links(query: Query, event_name: String): Unit = js.native
+  def track_links(query: Query, event_name: String, properties: js.Function0[Unit]): Unit = js.native
+  def track_links(query: Query, event_name: String, properties: Dict): Unit = js.native
   def unregister(property: String): Unit = js.native
 }
 

@@ -1,6 +1,5 @@
 package typings.std.WebAssembly
 
-import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,8 +12,4 @@ trait Table extends _ExportValue {
   def set(index: Double): Unit = js.native
   def set(index: Double, value: js.Function): Unit = js.native
 }
-
-@JSGlobal("WebAssembly.Table")
-@js.native
-object Table extends Instantiable1[/* descriptor */ TableDescriptor, Table]
 

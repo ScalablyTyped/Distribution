@@ -1,9 +1,9 @@
 package typings.gapiClientGenomics.gapi.client.genomics
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientGenomics.AnonAccesstoken
-import typings.gapiClientGenomics.AnonPp
-import typings.gapiClientGenomics.AnonPrettyPrint
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientGenomics.anon.Accesstoken
+import typings.gapiClientGenomics.anon.Pp
+import typings.gapiClientGenomics.anon.PrettyPrint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait ReadgroupsetsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def delete(request: AnonPp): Request_[js.Object]
+  def delete(request: Pp): Request[js.Object]
   /**
     * Exports a read group set to a BAM file in Google Cloud Storage.
     *
@@ -30,7 +30,7 @@ trait ReadgroupsetsResource extends js.Object {
     * ImportReadGroupSets
     * for caveats.
     */
-  def export(request: AnonPp): Request_[Operation]
+  def export(request: Pp): Request[Operation]
   /**
     * Gets a read group set by ID.
     *
@@ -38,7 +38,7 @@ trait ReadgroupsetsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def get(request: AnonPp): Request_[ReadGroupSet]
+  def get(request: Pp): Request[ReadGroupSet]
   /**
     * Creates read group sets by asynchronously importing the provided
     * information.
@@ -59,7 +59,7 @@ trait ReadgroupsetsResource extends js.Object {
     * - Unmapped reads will be stripped of positional information (reference name
     * and position)
     */
-  def `import`(request: AnonAccesstoken): Request_[Operation]
+  def `import`(request: Accesstoken): Request[Operation]
   /**
     * Updates a read group set.
     *
@@ -69,7 +69,7 @@ trait ReadgroupsetsResource extends js.Object {
     *
     * This method supports patch semantics.
     */
-  def patch(request: AnonPrettyPrint): Request_[ReadGroupSet]
+  def patch(request: PrettyPrint): Request[ReadGroupSet]
   /**
     * Searches for read group sets matching the criteria.
     *
@@ -80,19 +80,19 @@ trait ReadgroupsetsResource extends js.Object {
     * Implements
     * [GlobalAllianceApi.searchReadGroupSets](https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/readmethods.avdl#L135).
     */
-  def search(request: AnonAccesstoken): Request_[SearchReadGroupSetsResponse]
+  def search(request: Accesstoken): Request[SearchReadGroupSetsResponse]
 }
 
 object ReadgroupsetsResource {
   @scala.inline
   def apply(
     coveragebuckets: CoveragebucketsResource,
-    delete: AnonPp => Request_[js.Object],
-    export: AnonPp => Request_[Operation],
-    get: AnonPp => Request_[ReadGroupSet],
-    `import`: AnonAccesstoken => Request_[Operation],
-    patch: AnonPrettyPrint => Request_[ReadGroupSet],
-    search: AnonAccesstoken => Request_[SearchReadGroupSetsResponse]
+    delete: Pp => Request[js.Object],
+    export: Pp => Request[Operation],
+    get: Pp => Request[ReadGroupSet],
+    `import`: Accesstoken => Request[Operation],
+    patch: PrettyPrint => Request[ReadGroupSet],
+    search: Accesstoken => Request[SearchReadGroupSetsResponse]
   ): ReadgroupsetsResource = {
     val __obj = js.Dynamic.literal(coveragebuckets = coveragebuckets.asInstanceOf[js.Any], delete = js.Any.fromFunction1(delete), export = js.Any.fromFunction1(export), get = js.Any.fromFunction1(get), patch = js.Any.fromFunction1(patch), search = js.Any.fromFunction1(search))
     __obj.updateDynamic("import")(js.Any.fromFunction1(`import`))

@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.InstancedMesh")
 @js.native
-class InstancedMesh protected () extends AbstractMesh {
-  def this(name: String, source: Mesh) = this()
+trait InstancedMesh extends AbstractMesh {
   var _currentLOD: js.Any = js.native
   /** @hidden */
   var _indexInSourceMeshInstanceArray: Double = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DisassociateMembersResponse extends js.Object {
   /**
-    * A list of objects containing the unprocessed account and a result string explaining why it was unprocessed.
+    * A list of objects that contain the unprocessed account and a result string that explains why it was unprocessed.
     */
   var UnprocessedAccounts: typings.awsSdk.guarddutyMod.UnprocessedAccounts = js.native
 }

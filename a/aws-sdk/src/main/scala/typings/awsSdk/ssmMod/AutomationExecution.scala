@@ -130,7 +130,7 @@ object AutomationExecution {
     ProgressCounters: ProgressCounters = null,
     ResolvedTargets: ResolvedTargets = null,
     StepExecutions: StepExecutionList = null,
-    StepExecutionsTruncated: js.UndefOr[scala.Boolean] = js.undefined,
+    StepExecutionsTruncated: js.UndefOr[Boolean] = js.undefined,
     Target: String = null,
     TargetLocations: TargetLocations = null,
     TargetMaps: TargetMaps = null,
@@ -157,7 +157,7 @@ object AutomationExecution {
     if (ProgressCounters != null) __obj.updateDynamic("ProgressCounters")(ProgressCounters.asInstanceOf[js.Any])
     if (ResolvedTargets != null) __obj.updateDynamic("ResolvedTargets")(ResolvedTargets.asInstanceOf[js.Any])
     if (StepExecutions != null) __obj.updateDynamic("StepExecutions")(StepExecutions.asInstanceOf[js.Any])
-    if (!js.isUndefined(StepExecutionsTruncated)) __obj.updateDynamic("StepExecutionsTruncated")(StepExecutionsTruncated.asInstanceOf[js.Any])
+    if (!js.isUndefined(StepExecutionsTruncated)) __obj.updateDynamic("StepExecutionsTruncated")(StepExecutionsTruncated.get.asInstanceOf[js.Any])
     if (Target != null) __obj.updateDynamic("Target")(Target.asInstanceOf[js.Any])
     if (TargetLocations != null) __obj.updateDynamic("TargetLocations")(TargetLocations.asInstanceOf[js.Any])
     if (TargetMaps != null) __obj.updateDynamic("TargetMaps")(TargetMaps.asInstanceOf[js.Any])

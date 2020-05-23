@@ -78,8 +78,7 @@ object mod extends js.Object {
   def removeFirst[T](array: js.Array[T]): js.Array[T] = js.native
   def removeLast[T](array: js.Array[T]): js.Array[T] = js.native
   def replaceAt[T](array: js.Array[T], idx: Double, newItem: T): js.Array[T] = js.native
-  def set[T](obj: T, key: Key, `val`: js.Any): T = js.native
-  def set[T](obj: js.UndefOr[scala.Nothing], key: Key, `val`: js.Any): T = js.native
+  def set[T](obj: js.UndefOr[T], key: Key, `val`: js.Any): T = js.native
   def setIn[T](obj: T, path: js.Array[Key], `val`: js.Any): T = js.native
   def update[T](obj: T, key: Key, fnUpdate: js.Function1[/* prevValue */ js.Any, _]): T = js.native
   def updateIn[T](obj: T, path: js.Array[Key], fnUpdate: js.Function1[/* prevValue */ js.Any, _]): T = js.native

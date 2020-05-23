@@ -5,16 +5,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @class
-  * @name pc.ScopeId
-  * @classdesc The scope for a variable.
-  * @param {string} name - The variable name.
-  * @property {string} name The variable name.
+  * The scope for a variable.
+  * @property name - The variable name.
+  * @param name - The variable name.
   */
 @JSImport("playcanvas", "ScopeId")
 @js.native
 class ScopeId protected ()
   extends typings.playcanvas.pc.ScopeId {
   def this(name: String) = this()
+  /**
+    * The variable name.
+    */
+  /* CompleteClass */
+  override var name: String = js.native
+  /**
+    * Get variable value.
+    * @returns The value.
+    */
+  /* CompleteClass */
+  override def getValue(): js.Any = js.native
+  /**
+    * Set variable value.
+    * @param value - The value.
+    */
+  /* CompleteClass */
+  override def setValue(value: js.Any): Unit = js.native
 }
 

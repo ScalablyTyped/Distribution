@@ -85,8 +85,8 @@ object Context {
   ): Context = {
     val __obj = js.Dynamic.literal(commit = commit.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], issue = issue.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPatch)) __obj.updateDynamic("isPatch")(isPatch.asInstanceOf[js.Any])
-    if (!js.isUndefined(linkReferences)) __obj.updateDynamic("linkReferences")(linkReferences.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPatch)) __obj.updateDynamic("isPatch")(isPatch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkReferences)) __obj.updateDynamic("linkReferences")(linkReferences.get.asInstanceOf[js.Any])
     if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     if (repoUrl != null) __obj.updateDynamic("repoUrl")(repoUrl.asInstanceOf[js.Any])
     if (repository != null) __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])

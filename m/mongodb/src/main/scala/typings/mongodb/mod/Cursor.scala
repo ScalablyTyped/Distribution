@@ -1,6 +1,6 @@
 package typings.mongodb.mod
 
-import typings.mongodb.AnonTransform
+import typings.mongodb.anon.Transform
 import typings.node.Buffer
 import typings.node.streamMod.Readable
 import scala.scalajs.js
@@ -93,7 +93,7 @@ class Cursor[T] () extends Readable {
   def sort(keyOrList: js.Object, direction: scala.Double): Cursor[T] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#stream */
   def stream(): Cursor[T] = js.native
-  def stream(options: AnonTransform[T]): Cursor[T] = js.native
+  def stream(options: Transform[T]): Cursor[T] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#toArray */
   def toArray(): js.Promise[js.Array[T]] = js.native
   def toArray(callback: MongoCallback[js.Array[T]]): Unit = js.native

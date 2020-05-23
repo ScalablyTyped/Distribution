@@ -8,42 +8,42 @@ import scala.scalajs.js.annotation._
 trait DocumentPropertiesUpdateData extends js.Object {
   /**
     *
-    * Gets or sets the author of the workbook.
+    * The author of the workbook.
     *
     * [Api set: ExcelApi 1.7]
     */
   var author: js.UndefOr[String] = js.undefined
   /**
     *
-    * Gets or sets the category of the workbook.
+    * The category of the workbook.
     *
     * [Api set: ExcelApi 1.7]
     */
   var category: js.UndefOr[String] = js.undefined
   /**
     *
-    * Gets or sets the comments of the workbook.
+    * The comments of the workbook.
     *
     * [Api set: ExcelApi 1.7]
     */
   var comments: js.UndefOr[String] = js.undefined
   /**
     *
-    * Gets or sets the company of the workbook.
+    * The company of the workbook.
     *
     * [Api set: ExcelApi 1.7]
     */
   var company: js.UndefOr[String] = js.undefined
   /**
     *
-    * Gets or sets the keywords of the workbook.
+    * The keywords of the workbook.
     *
     * [Api set: ExcelApi 1.7]
     */
   var keywords: js.UndefOr[String] = js.undefined
   /**
     *
-    * Gets or sets the manager of the workbook.
+    * The manager of the workbook.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -57,14 +57,14 @@ trait DocumentPropertiesUpdateData extends js.Object {
   var revisionNumber: js.UndefOr[Double] = js.undefined
   /**
     *
-    * Gets or sets the subject of the workbook.
+    * The subject of the workbook.
     *
     * [Api set: ExcelApi 1.7]
     */
   var subject: js.UndefOr[String] = js.undefined
   /**
     *
-    * Gets or sets the title of the workbook.
+    * The title of the workbook.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -80,7 +80,7 @@ object DocumentPropertiesUpdateData {
     company: String = null,
     keywords: String = null,
     manager: String = null,
-    revisionNumber: Int | Double = null,
+    revisionNumber: js.UndefOr[Double] = js.undefined,
     subject: String = null,
     title: String = null
   ): DocumentPropertiesUpdateData = {
@@ -91,7 +91,7 @@ object DocumentPropertiesUpdateData {
     if (company != null) __obj.updateDynamic("company")(company.asInstanceOf[js.Any])
     if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
     if (manager != null) __obj.updateDynamic("manager")(manager.asInstanceOf[js.Any])
-    if (revisionNumber != null) __obj.updateDynamic("revisionNumber")(revisionNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(revisionNumber)) __obj.updateDynamic("revisionNumber")(revisionNumber.get.asInstanceOf[js.Any])
     if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentPropertiesUpdateData]

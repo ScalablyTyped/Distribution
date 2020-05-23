@@ -18,10 +18,10 @@ trait DescribeOrderableReplicationInstancesMessage extends js.Object {
 
 object DescribeOrderableReplicationInstancesMessage {
   @scala.inline
-  def apply(Marker: String = null, MaxRecords: Int | Double = null): DescribeOrderableReplicationInstancesMessage = {
+  def apply(Marker: String = null, MaxRecords: js.UndefOr[IntegerOptional] = js.undefined): DescribeOrderableReplicationInstancesMessage = {
     val __obj = js.Dynamic.literal()
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeOrderableReplicationInstancesMessage]
   }
 }

@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.DatePicker
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object Level extends js.Object {
   ///allow  navigation upto year level in  DatePicker
   @js.native
   sealed trait Year extends Level
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Level with Double] = js.native
-  /* 2 */ @js.native
-  object Century extends TopLevel[Century with Double]
-  
-  /* 1 */ @js.native
-  object Decade extends TopLevel[Decade with Double]
-  
-  /* 0 */ @js.native
-  object Year extends TopLevel[Year with Double]
   
 }
 

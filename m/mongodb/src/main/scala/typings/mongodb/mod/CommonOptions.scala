@@ -15,13 +15,13 @@ object CommonOptions {
     j: js.UndefOr[Boolean] = js.undefined,
     session: ClientSession = null,
     w: scala.Double | majority | String = null,
-    wtimeout: Int | scala.Double = null
+    wtimeout: js.UndefOr[scala.Double] = js.undefined
   ): CommonOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(j)) __obj.updateDynamic("j")(j.asInstanceOf[js.Any])
+    if (!js.isUndefined(j)) __obj.updateDynamic("j")(j.get.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
-    if (wtimeout != null) __obj.updateDynamic("wtimeout")(wtimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(wtimeout)) __obj.updateDynamic("wtimeout")(wtimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonOptions]
   }
 }

@@ -1,6 +1,6 @@
 package typings.entriaRelayExperimental.useLegacyPaginationFragmentMod
 
-import typings.entriaRelayExperimental.AnonOnComplete
+import typings.entriaRelayExperimental.anon.OnComplete
 import typings.entriaRelayExperimental.useLoadMoreFunctionMod.LoadMoreFn
 import typings.entriaRelayExperimental.useRefetchableFragmentNodeMod.Options
 import typings.entriaRelayExperimental.useRefetchableFragmentNodeMod.RefetchFnDynamic
@@ -23,14 +23,14 @@ trait ReturnTypePaginationFragment[TQuery /* <: OperationType */, TKey, TFragmen
 
 object ReturnTypePaginationFragment {
   @scala.inline
-  def apply[TQuery /* <: OperationType */, TKey, TFragmentData](
+  def apply[TQuery, TKey, TFragmentData](
     data: TFragmentData,
     hasNext: Boolean,
     hasPrevious: Boolean,
     isLoadingNext: Boolean,
     isLoadingPrevious: Boolean,
-    loadNext: (/* count */ Double, /* options */ js.UndefOr[AnonOnComplete]) => Disposable,
-    loadPrevious: (/* count */ Double, /* options */ js.UndefOr[AnonOnComplete]) => Disposable,
+    loadNext: (/* count */ Double, /* options */ js.UndefOr[OnComplete]) => Disposable,
+    loadPrevious: (/* count */ Double, /* options */ js.UndefOr[OnComplete]) => Disposable,
     refetch: RefetchFnDynamic[TQuery, TKey, Options]
   ): ReturnTypePaginationFragment[TQuery, TKey, TFragmentData] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], hasNext = hasNext.asInstanceOf[js.Any], hasPrevious = hasPrevious.asInstanceOf[js.Any], isLoadingNext = isLoadingNext.asInstanceOf[js.Any], isLoadingPrevious = isLoadingPrevious.asInstanceOf[js.Any], loadNext = js.Any.fromFunction2(loadNext), loadPrevious = js.Any.fromFunction2(loadPrevious), refetch = refetch.asInstanceOf[js.Any])

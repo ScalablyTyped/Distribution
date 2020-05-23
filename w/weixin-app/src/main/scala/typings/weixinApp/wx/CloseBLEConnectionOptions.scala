@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 trait CloseBLEConnectionOptions
   extends BaseOptions[js.Any, js.Any] {
   /**
-  		 * 蓝牙设备 id，参考 getDevices 接口
-  		 */
+    * 蓝牙设备 id，参考 getDevices 接口
+    */
   var deviceId: String
   @JSName("success")
   def success_MCloseBLEConnectionOptions(res: ErrMsgResponse): Unit

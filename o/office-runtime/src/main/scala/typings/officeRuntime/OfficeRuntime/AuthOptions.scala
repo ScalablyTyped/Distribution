@@ -58,12 +58,12 @@ object AuthOptions {
     forceAddAccount: js.UndefOr[Boolean] = js.undefined
   ): AuthOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowConsentPrompt)) __obj.updateDynamic("allowConsentPrompt")(allowConsentPrompt.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSignInPrompt)) __obj.updateDynamic("allowSignInPrompt")(allowSignInPrompt.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowConsentPrompt)) __obj.updateDynamic("allowConsentPrompt")(allowConsentPrompt.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSignInPrompt)) __obj.updateDynamic("allowSignInPrompt")(allowSignInPrompt.get.asInstanceOf[js.Any])
     if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext.asInstanceOf[js.Any])
     if (authChallenge != null) __obj.updateDynamic("authChallenge")(authChallenge.asInstanceOf[js.Any])
-    if (!js.isUndefined(forMSGraphAccess)) __obj.updateDynamic("forMSGraphAccess")(forMSGraphAccess.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceAddAccount)) __obj.updateDynamic("forceAddAccount")(forceAddAccount.asInstanceOf[js.Any])
+    if (!js.isUndefined(forMSGraphAccess)) __obj.updateDynamic("forMSGraphAccess")(forMSGraphAccess.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceAddAccount)) __obj.updateDynamic("forceAddAccount")(forceAddAccount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthOptions]
   }
 }

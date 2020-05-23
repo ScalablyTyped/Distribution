@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojlegendMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.AnonLabelAndValue
+import typings.oracleOraclejet.anon.LabelAndValue
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojkeysetMod.KeySet
 import typings.oracleOraclejet.oracleOraclejetStrings.asNeeded
@@ -40,14 +40,14 @@ trait ojLegendSettablePropertiesLenient[K, D]
   var symbolWidth: js.UndefOr[Double] = js.undefined
   var textStyle: js.UndefOr[js.Object] = js.undefined
   var trackResize: js.UndefOr[on | off] = js.undefined
-  var translations: js.UndefOr[AnonLabelAndValue] = js.undefined
+  var translations: js.UndefOr[LabelAndValue] = js.undefined
   var valign: js.UndefOr[middle | bottom | top] = js.undefined
 }
 
 object ojLegendSettablePropertiesLenient {
   @scala.inline
   def apply[K, D](
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     as: String = null,
     data: DataProvider[K, D] = null,
     drilling: on | off = null,
@@ -57,14 +57,14 @@ object ojLegendSettablePropertiesLenient {
     hideAndShowBehavior: on | off = null,
     highlightedCategories: js.Array[String] = null,
     hoverBehavior: dim | none = null,
-    hoverBehaviorDelay: Int | Double = null,
+    hoverBehaviorDelay: js.UndefOr[Double] = js.undefined,
     orientation: horizontal | vertical = null,
     scrolling: off | asNeeded = null,
-    symbolHeight: Int | Double = null,
-    symbolWidth: Int | Double = null,
+    symbolHeight: js.UndefOr[Double] = js.undefined,
+    symbolWidth: js.UndefOr[Double] = js.undefined,
     textStyle: js.Object = null,
     trackResize: on | off = null,
-    translations: AnonLabelAndValue = null,
+    translations: LabelAndValue = null,
     valign: middle | bottom | top = null
   ): ojLegendSettablePropertiesLenient[K, D] = {
     val __obj = js.Dynamic.literal()
@@ -78,11 +78,11 @@ object ojLegendSettablePropertiesLenient {
     if (hideAndShowBehavior != null) __obj.updateDynamic("hideAndShowBehavior")(hideAndShowBehavior.asInstanceOf[js.Any])
     if (highlightedCategories != null) __obj.updateDynamic("highlightedCategories")(highlightedCategories.asInstanceOf[js.Any])
     if (hoverBehavior != null) __obj.updateDynamic("hoverBehavior")(hoverBehavior.asInstanceOf[js.Any])
-    if (hoverBehaviorDelay != null) __obj.updateDynamic("hoverBehaviorDelay")(hoverBehaviorDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverBehaviorDelay)) __obj.updateDynamic("hoverBehaviorDelay")(hoverBehaviorDelay.get.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (scrolling != null) __obj.updateDynamic("scrolling")(scrolling.asInstanceOf[js.Any])
-    if (symbolHeight != null) __obj.updateDynamic("symbolHeight")(symbolHeight.asInstanceOf[js.Any])
-    if (symbolWidth != null) __obj.updateDynamic("symbolWidth")(symbolWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolHeight)) __obj.updateDynamic("symbolHeight")(symbolHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolWidth)) __obj.updateDynamic("symbolWidth")(symbolWidth.get.asInstanceOf[js.Any])
     if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
     if (trackResize != null) __obj.updateDynamic("trackResize")(trackResize.asInstanceOf[js.Any])
     if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])

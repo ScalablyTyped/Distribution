@@ -1,7 +1,6 @@
 package typings.amapJsApiStationSearch.AMap
 
 import typings.amapJsApi.AMap.EventEmitter
-import typings.amapJsApiStationSearch.AMap.StationSearch.Options
 import typings.amapJsApiStationSearch.AMap.StationSearch.SearchResult
 import typings.amapJsApiStationSearch.AMap.StationSearch.SearchStatus
 import scala.scalajs.js
@@ -11,10 +10,8 @@ import scala.scalajs.js.annotation._
 /**
   * 公交站点查询服务
   */
-@JSGlobal("AMap.StationSearch")
 @js.native
-class StationSearch_ () extends EventEmitter {
-  def this(options: Options) = this()
+trait StationSearch_ extends EventEmitter {
   /**
     * 根据给定公交站点名称进行公交站点详情查询
     * @param keyword 查询关键词，多个关键字用"|"分割

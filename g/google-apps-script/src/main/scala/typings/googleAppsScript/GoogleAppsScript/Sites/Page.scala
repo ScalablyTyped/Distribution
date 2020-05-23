@@ -1,8 +1,8 @@
 package typings.googleAppsScript.GoogleAppsScript.Sites
 
-import typings.googleAppsScript.AnonMax
 import typings.googleAppsScript.GoogleAppsScript.Base.BlobSource
 import typings.googleAppsScript.GoogleAppsScript.Base.Date
+import typings.googleAppsScript.anon.Max
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,21 +35,21 @@ trait Page extends js.Object {
   def getAnnouncements(): js.Array[Page] = js.native
   def getAnnouncements(optOptions: PageAdvancedParameters): js.Array[Page] = js.native
   def getAttachments(): js.Array[Attachment] = js.native
-  def getAttachments(optOptions: AnonMax): js.Array[Attachment] = js.native
+  def getAttachments(optOptions: Max): js.Array[Attachment] = js.native
   def getAuthors(): js.Array[String] = js.native
   def getChildByName(name: String): Page = js.native
   def getChildren(): js.Array[Page] = js.native
   def getChildren(options: PageAdvancedParameters): js.Array[Page] = js.native
   def getColumns(): js.Array[Column] = js.native
   /** @deprecated DO NOT USE */ def getComments(): js.Array[Comment] = js.native
-  /** @deprecated DO NOT USE */ def getComments(optOptions: AnonMax): js.Array[Comment] = js.native
+  /** @deprecated DO NOT USE */ def getComments(optOptions: Max): js.Array[Comment] = js.native
   def getDatePublished(): Date = js.native
   def getHtmlContent(): String = js.native
   def getIsDraft(): Boolean = js.native
   def getLastEdited(): Date = js.native
   def getLastUpdated(): Date = js.native
   def getListItems(): js.Array[ListItem] = js.native
-  def getListItems(optOptions: AnonMax): js.Array[ListItem] = js.native
+  def getListItems(optOptions: Max): js.Array[ListItem] = js.native
   def getName(): String = js.native
   /** @deprecated DO NOT USE */ def getPageName(): String = js.native
   def getPageType(): PageType = js.native

@@ -37,20 +37,20 @@ trait TextShadow extends js.Object {
 object TextShadow {
   @scala.inline
   def apply(
-    blur: Int | Double = null,
+    blur: js.UndefOr[Double] = js.undefined,
     color: String = null,
     fill: js.UndefOr[Boolean] = js.undefined,
-    offsetX: Int | Double = null,
-    offsetY: Int | Double = null,
+    offsetX: js.UndefOr[Double] = js.undefined,
+    offsetY: js.UndefOr[Double] = js.undefined,
     stroke: js.UndefOr[Boolean] = js.undefined
   ): TextShadow = {
     val __obj = js.Dynamic.literal()
-    if (blur != null) __obj.updateDynamic("blur")(blur.asInstanceOf[js.Any])
+    if (!js.isUndefined(blur)) __obj.updateDynamic("blur")(blur.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX.asInstanceOf[js.Any])
-    if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY.asInstanceOf[js.Any])
-    if (!js.isUndefined(stroke)) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetX)) __obj.updateDynamic("offsetX")(offsetX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetY)) __obj.updateDynamic("offsetY")(offsetY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stroke)) __obj.updateDynamic("stroke")(stroke.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextShadow]
   }
 }

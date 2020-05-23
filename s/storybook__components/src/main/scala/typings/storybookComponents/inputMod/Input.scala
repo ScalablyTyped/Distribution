@@ -172,9 +172,9 @@ import typings.std.SVGTextElement
 import typings.std.SVGTextPathElement
 import typings.std.SVGUseElement
 import typings.std.SVGViewElement
-import typings.storybookComponents.PartialPickInputPropscolo
-import typings.storybookComponents.PropsWithChildrenPickInpu
-import typings.storybookComponents.WeakValidationMapPickInpu
+import typings.storybookComponents.anon.PartialPickInputPropscolo
+import typings.storybookComponents.anon.PropsWithChildrenPickInpu
+import typings.storybookComponents.anon.WeakValidationMapPickInpu
 import typings.storybookComponents.storybookComponentsStrings.`object`
 import typings.storybookComponents.storybookComponentsStrings.`var`
 import typings.storybookComponents.storybookComponentsStrings.a

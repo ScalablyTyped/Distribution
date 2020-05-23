@@ -6,23 +6,23 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   /**
-  		 * The ultimate fallback encoding used if no valid encoding is supplied
-  		 * by the transport layer, and no encoding is sniffed from the bytes.
-  		 *
-  		 * @default
-  		 * ```js
-  		 * 'windows-1252'
-  		 * ```
-  		 *
-  		 * Which is recommended by the algorithm's table of suggested
-  		 * defaults for "All other locales" (including the `en` locale).
-  		 */
+    * The ultimate fallback encoding used if no valid encoding is supplied
+    * by the transport layer, and no encoding is sniffed from the bytes.
+    *
+    * @default
+    * ```js
+    * 'windows-1252'
+    * ```
+    *
+    * Which is recommended by the algorithm's table of suggested
+    * defaults for "All other locales" (including the `en` locale).
+    */
   var defaultEncoding: js.UndefOr[String] = js.undefined
   /**
-  		 * An encoding label that is obtained from the "transport layer"
-  		 * (probably an HTTP `Content-Type` header), which overrides
-  		 * everything but a BOM.
-  		 */
+    * An encoding label that is obtained from the "transport layer"
+    * (probably an HTTP `Content-Type` header), which overrides
+    * everything but a BOM.
+    */
   var transportLayerEncodingLabel: js.UndefOr[String] = js.undefined
 }
 

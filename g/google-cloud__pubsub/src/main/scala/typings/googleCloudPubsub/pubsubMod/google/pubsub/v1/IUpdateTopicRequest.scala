@@ -15,10 +15,13 @@ trait IUpdateTopicRequest extends js.Object {
 
 object IUpdateTopicRequest {
   @scala.inline
-  def apply(topic: ITopic = null, updateMask: IFieldMask = null): IUpdateTopicRequest = {
+  def apply(
+    topic: js.UndefOr[Null | ITopic] = js.undefined,
+    updateMask: js.UndefOr[Null | IFieldMask] = js.undefined
+  ): IUpdateTopicRequest = {
     val __obj = js.Dynamic.literal()
-    if (topic != null) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
-    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
+    if (!js.isUndefined(topic)) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateMask)) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUpdateTopicRequest]
   }
 }

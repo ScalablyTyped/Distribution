@@ -4,7 +4,7 @@ import typings.pdfjsDist.mod.PDFDocumentProxy
 import typings.react.mod.LegacyRef
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.reactPdf.AnonPageNumber
+import typings.reactPdf.anon.PageNumber
 import typings.reactPdf.reactPdfStrings._blank
 import typings.reactPdf.reactPdfStrings._parent
 import typings.reactPdf.reactPdfStrings._self
@@ -68,7 +68,7 @@ trait Props extends js.Object {
     * Function called when an outline item has been clicked.
     * Usually, you would like to use this callback to move the user wherever they requested to.
     */
-  var onItemClick: js.UndefOr[js.Function1[/* hasPageNumber */ AnonPageNumber, Unit]] = js.undefined
+  var onItemClick: js.UndefOr[js.Function1[/* hasPageNumber */ PageNumber, Unit]] = js.undefined
   /**
     * Function called in case of an error while loading a document.
     */
@@ -117,10 +117,10 @@ object Props {
     className: String | js.Array[String] = null,
     error: String | ReactElement | RenderFunction = null,
     externalLinkTarget: _self | _blank | _parent | _top = null,
-    inputRef: LegacyRef[HTMLDivElement] = null,
+    inputRef: js.UndefOr[Null | LegacyRef[HTMLDivElement]] = js.undefined,
     loading: String | ReactElement | RenderFunction = null,
     noData: String | ReactElement | RenderFunction = null,
-    onItemClick: /* hasPageNumber */ AnonPageNumber => Unit = null,
+    onItemClick: /* hasPageNumber */ PageNumber => Unit = null,
     onLoadError: /* error */ Error => Unit = null,
     onLoadSuccess: /* pdf */ PDFDocumentProxy => Unit = null,
     onPassword: /* callback */ js.Function1[/* repeated */ js.Any, _] => Unit = null,
@@ -128,14 +128,14 @@ object Props {
     onSourceSuccess: () => Unit = null,
     options: js.Any = null,
     renderMode: canvas | svg | none = null,
-    rotate: Int | Double = null
+    rotate: js.UndefOr[Double] = js.undefined
   ): Props = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (externalLinkTarget != null) __obj.updateDynamic("externalLinkTarget")(externalLinkTarget.asInstanceOf[js.Any])
-    if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputRef)) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
     if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
     if (noData != null) __obj.updateDynamic("noData")(noData.asInstanceOf[js.Any])
     if (onItemClick != null) __obj.updateDynamic("onItemClick")(js.Any.fromFunction1(onItemClick))
@@ -146,7 +146,7 @@ object Props {
     if (onSourceSuccess != null) __obj.updateDynamic("onSourceSuccess")(js.Any.fromFunction0(onSourceSuccess))
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (renderMode != null) __obj.updateDynamic("renderMode")(renderMode.asInstanceOf[js.Any])
-    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotate)) __obj.updateDynamic("rotate")(rotate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

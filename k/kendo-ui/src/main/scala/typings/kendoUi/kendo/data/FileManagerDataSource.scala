@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.data.FileManagerDataSource")
 @js.native
-class FileManagerDataSource () extends HierarchicalDataSource {
-  def this(options: FileManagerDataSourceOptions) = this()
+trait FileManagerDataSource extends HierarchicalDataSource {
   def init(options: FileManagerDataSourceOptions): Unit = js.native
 }
 

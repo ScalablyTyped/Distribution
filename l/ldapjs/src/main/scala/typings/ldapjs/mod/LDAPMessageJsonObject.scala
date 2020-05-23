@@ -17,7 +17,7 @@ object LDAPMessageJsonObject {
   def apply(
     controls: js.Array[Control],
     messageID: Double,
-    StringDictionary: /* k */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     protocolOp: String = null
   ): LDAPMessageJsonObject = {
     val __obj = js.Dynamic.literal(controls = controls.asInstanceOf[js.Any], messageID = messageID.asInstanceOf[js.Any])

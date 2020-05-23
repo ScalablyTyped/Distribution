@@ -28,15 +28,15 @@ trait JobOptions extends js.Object {
 object JobOptions {
   @scala.inline
   def apply(
-    concurrency: Int | Double = null,
-    lockLifetime: Int | Double = null,
-    lockLimit: Int | Double = null,
+    concurrency: js.UndefOr[Double] = js.undefined,
+    lockLifetime: js.UndefOr[Double] = js.undefined,
+    lockLimit: js.UndefOr[Double] = js.undefined,
     priority: String | Double = null
   ): JobOptions = {
     val __obj = js.Dynamic.literal()
-    if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
-    if (lockLifetime != null) __obj.updateDynamic("lockLifetime")(lockLifetime.asInstanceOf[js.Any])
-    if (lockLimit != null) __obj.updateDynamic("lockLimit")(lockLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(concurrency)) __obj.updateDynamic("concurrency")(concurrency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockLifetime)) __obj.updateDynamic("lockLifetime")(lockLifetime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockLimit)) __obj.updateDynamic("lockLimit")(lockLimit.get.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobOptions]
   }

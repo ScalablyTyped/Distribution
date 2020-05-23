@@ -15,11 +15,15 @@ trait IGossipBlockRequest extends js.Object {
 
 object IGossipBlockRequest {
   @scala.inline
-  def apply(blockId: String = null, nonce: String = null, timeToLive: Int | Double = null): IGossipBlockRequest = {
+  def apply(
+    blockId: js.UndefOr[Null | String] = js.undefined,
+    nonce: js.UndefOr[Null | String] = js.undefined,
+    timeToLive: js.UndefOr[Null | Double] = js.undefined
+  ): IGossipBlockRequest = {
     val __obj = js.Dynamic.literal()
-    if (blockId != null) __obj.updateDynamic("blockId")(blockId.asInstanceOf[js.Any])
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
-    if (timeToLive != null) __obj.updateDynamic("timeToLive")(timeToLive.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockId)) __obj.updateDynamic("blockId")(blockId.asInstanceOf[js.Any])
+    if (!js.isUndefined(nonce)) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeToLive)) __obj.updateDynamic("timeToLive")(timeToLive.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGossipBlockRequest]
   }
 }

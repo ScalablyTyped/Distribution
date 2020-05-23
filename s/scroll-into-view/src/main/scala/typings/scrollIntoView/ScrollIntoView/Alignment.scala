@@ -18,16 +18,16 @@ trait Alignment extends js.Object {
 object Alignment {
   @scala.inline
   def apply(
-    left: Int | Double = null,
-    leftOffset: Int | Double = null,
-    top: Int | Double = null,
-    topOffset: Int | Double = null
+    left: js.UndefOr[Double] = js.undefined,
+    leftOffset: js.UndefOr[Double] = js.undefined,
+    top: js.UndefOr[Double] = js.undefined,
+    topOffset: js.UndefOr[Double] = js.undefined
   ): Alignment = {
     val __obj = js.Dynamic.literal()
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (leftOffset != null) __obj.updateDynamic("leftOffset")(leftOffset.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (topOffset != null) __obj.updateDynamic("topOffset")(topOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(leftOffset)) __obj.updateDynamic("leftOffset")(leftOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(topOffset)) __obj.updateDynamic("topOffset")(topOffset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Alignment]
   }
 }

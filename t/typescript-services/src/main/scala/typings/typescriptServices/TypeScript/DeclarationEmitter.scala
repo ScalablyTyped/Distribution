@@ -4,16 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.DeclarationEmitter")
 @js.native
-class DeclarationEmitter protected () extends js.Object {
-  def this(
-    emittingFileName: String,
-    document: Document,
-    compiler: TypeScriptCompiler,
-    emitOptions: EmitOptions,
-    semanticInfoChain: SemanticInfoChain
-  ) = this()
+trait DeclarationEmitter extends js.Object {
   var compiler: js.Any = js.native
   var declFile: js.Any = js.native
   var document: Document = js.native
@@ -79,12 +71,5 @@ class DeclarationEmitter protected () extends js.Object {
   /* private */ def resolveScriptReference(document: js.Any, reference: js.Any): js.Any = js.native
   /* private */ def writeDeclarationComments(declComments: js.Any): js.Any = js.native
   /* private */ def writeDeclarationComments(declComments: js.Any, endLine: js.Any): js.Any = js.native
-}
-
-/* static members */
-@JSGlobal("TypeScript.DeclarationEmitter")
-@js.native
-object DeclarationEmitter extends js.Object {
-  def getEnclosingContainer(ast: AST): AST = js.native
 }
 

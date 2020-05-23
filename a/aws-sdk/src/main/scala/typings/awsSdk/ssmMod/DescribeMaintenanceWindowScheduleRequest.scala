@@ -36,7 +36,7 @@ object DescribeMaintenanceWindowScheduleRequest {
   @scala.inline
   def apply(
     Filters: PatchOrchestratorFilterList = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaintenanceWindowSearchMaxResults] = js.undefined,
     NextToken: NextToken = null,
     ResourceType: MaintenanceWindowResourceType = null,
     Targets: Targets = null,
@@ -44,7 +44,7 @@ object DescribeMaintenanceWindowScheduleRequest {
   ): DescribeMaintenanceWindowScheduleRequest = {
     val __obj = js.Dynamic.literal()
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
     if (Targets != null) __obj.updateDynamic("Targets")(Targets.asInstanceOf[js.Any])

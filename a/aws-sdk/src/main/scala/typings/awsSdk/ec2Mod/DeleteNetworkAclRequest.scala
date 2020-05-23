@@ -18,9 +18,9 @@ trait DeleteNetworkAclRequest extends js.Object {
 
 object DeleteNetworkAclRequest {
   @scala.inline
-  def apply(NetworkAclId: NetworkAclId, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeleteNetworkAclRequest = {
+  def apply(NetworkAclId: NetworkAclId, DryRun: js.UndefOr[Boolean] = js.undefined): DeleteNetworkAclRequest = {
     val __obj = js.Dynamic.literal(NetworkAclId = NetworkAclId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteNetworkAclRequest]
   }
 }

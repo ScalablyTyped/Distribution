@@ -93,11 +93,11 @@ object Config {
     if (defaultPipe != null) __obj.updateDynamic("defaultPipe")(defaultPipe.asInstanceOf[js.Any])
     if (fittingsDirs != null) __obj.updateDynamic("fittingsDirs")(fittingsDirs.asInstanceOf[js.Any])
     if (mockControllersDirs != null) __obj.updateDynamic("mockControllersDirs")(mockControllersDirs.asInstanceOf[js.Any])
-    if (!js.isUndefined(mockMode)) __obj.updateDynamic("mockMode")(mockMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(mockMode)) __obj.updateDynamic("mockMode")(mockMode.get.asInstanceOf[js.Any])
     if (swaggerControllerPipe != null) __obj.updateDynamic("swaggerControllerPipe")(swaggerControllerPipe.asInstanceOf[js.Any])
     if (swaggerFile != null) __obj.updateDynamic("swaggerFile")(swaggerFile.asInstanceOf[js.Any])
     if (swaggerSecurityHandlers != null) __obj.updateDynamic("swaggerSecurityHandlers")(swaggerSecurityHandlers.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateResponse)) __obj.updateDynamic("validateResponse")(validateResponse.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateResponse)) __obj.updateDynamic("validateResponse")(validateResponse.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

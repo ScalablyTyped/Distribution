@@ -34,7 +34,7 @@ trait PlusNetProgressEvent extends js.Object {
   /**
     * 总数据长度
     * HTTP请求返回的总数据长度，单位为字节。
-    * 	如果无法获取则设置为0。
+    *     如果无法获取则设置为0。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/net.html](http://www.html5plus.org/doc/zh_cn/net.html)
     */
@@ -44,16 +44,16 @@ trait PlusNetProgressEvent extends js.Object {
 object PlusNetProgressEvent {
   @scala.inline
   def apply(
-    lengthComputable: Int | Double = null,
-    loaded: Int | Double = null,
+    lengthComputable: js.UndefOr[Double] = js.undefined,
+    loaded: js.UndefOr[Double] = js.undefined,
     target: PlusNetXMLHttpRequest = null,
-    total: Int | Double = null
+    total: js.UndefOr[Double] = js.undefined
   ): PlusNetProgressEvent = {
     val __obj = js.Dynamic.literal()
-    if (lengthComputable != null) __obj.updateDynamic("lengthComputable")(lengthComputable.asInstanceOf[js.Any])
-    if (loaded != null) __obj.updateDynamic("loaded")(loaded.asInstanceOf[js.Any])
+    if (!js.isUndefined(lengthComputable)) __obj.updateDynamic("lengthComputable")(lengthComputable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loaded)) __obj.updateDynamic("loaded")(loaded.get.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNetProgressEvent]
   }
 }

@@ -1,6 +1,6 @@
 package typings.openfin.windowMod
 
-import typings.openfin.AnonAppUuid
+import typings.openfin.anon.AppUuid
 import typings.openfin.eventsBaseMod.WindowEvent
 import typings.openfin.openfinStrings.disband
 import typings.openfin.openfinStrings.join
@@ -16,10 +16,10 @@ import scala.scalajs.js.annotation._
 trait WindowGroupChanged[Topic, Type] extends WindowEvent[Topic, Type] {
   var memberOf: source | target | nothing
   var reason: leave | join | merge | disband
-  var sourceGroup: js.Array[AnonAppUuid]
+  var sourceGroup: js.Array[AppUuid]
   var sourceWindowAppUuid: String
   var sourceWindowName: String
-  var targetGroup: js.Array[AnonAppUuid]
+  var targetGroup: js.Array[AppUuid]
   var targetWindowAppUuid: String
   var targetWindowName: String
 }
@@ -30,10 +30,10 @@ object WindowGroupChanged {
     memberOf: source | target | nothing,
     name: String,
     reason: leave | join | merge | disband,
-    sourceGroup: js.Array[AnonAppUuid],
+    sourceGroup: js.Array[AppUuid],
     sourceWindowAppUuid: String,
     sourceWindowName: String,
-    targetGroup: js.Array[AnonAppUuid],
+    targetGroup: js.Array[AppUuid],
     targetWindowAppUuid: String,
     targetWindowName: String,
     topic: Topic,

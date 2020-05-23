@@ -17,10 +17,10 @@ trait TipAdjust extends js.Object {
 
 object TipAdjust {
   @scala.inline
-  def apply(xValue: Int | Double = null, yValue: Int | Double = null): TipAdjust = {
+  def apply(xValue: js.UndefOr[Double] = js.undefined, yValue: js.UndefOr[Double] = js.undefined): TipAdjust = {
     val __obj = js.Dynamic.literal()
-    if (xValue != null) __obj.updateDynamic("xValue")(xValue.asInstanceOf[js.Any])
-    if (yValue != null) __obj.updateDynamic("yValue")(yValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(xValue)) __obj.updateDynamic("xValue")(xValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yValue)) __obj.updateDynamic("yValue")(yValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TipAdjust]
   }
 }

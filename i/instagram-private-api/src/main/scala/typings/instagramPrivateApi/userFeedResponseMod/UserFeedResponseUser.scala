@@ -41,13 +41,13 @@ object UserFeedResponseUser {
   ): UserFeedResponseUser = {
     val __obj = js.Dynamic.literal(full_name = full_name.asInstanceOf[js.Any], is_private = is_private.asInstanceOf[js.Any], is_verified = is_verified.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], profile_pic_url = profile_pic_url.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     if (allowed_commenter_type != null) __obj.updateDynamic("allowed_commenter_type")(allowed_commenter_type.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_boost_post)) __obj.updateDynamic("can_boost_post")(can_boost_post.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_see_organic_insights)) __obj.updateDynamic("can_see_organic_insights")(can_see_organic_insights.asInstanceOf[js.Any])
-    if (!js.isUndefined(has_anonymous_profile_picture)) __obj.updateDynamic("has_anonymous_profile_picture")(has_anonymous_profile_picture.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_unpublished)) __obj.updateDynamic("is_unpublished")(is_unpublished.asInstanceOf[js.Any])
+    if (!js.isUndefined(can_boost_post)) __obj.updateDynamic("can_boost_post")(can_boost_post.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(can_see_organic_insights)) __obj.updateDynamic("can_see_organic_insights")(can_see_organic_insights.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(has_anonymous_profile_picture)) __obj.updateDynamic("has_anonymous_profile_picture")(has_anonymous_profile_picture.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_unpublished)) __obj.updateDynamic("is_unpublished")(is_unpublished.get.asInstanceOf[js.Any])
     if (profile_pic_id != null) __obj.updateDynamic("profile_pic_id")(profile_pic_id.asInstanceOf[js.Any])
     if (reel_auto_archive != null) __obj.updateDynamic("reel_auto_archive")(reel_auto_archive.asInstanceOf[js.Any])
-    if (!js.isUndefined(show_insights_terms)) __obj.updateDynamic("show_insights_terms")(show_insights_terms.asInstanceOf[js.Any])
+    if (!js.isUndefined(show_insights_terms)) __obj.updateDynamic("show_insights_terms")(show_insights_terms.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserFeedResponseUser]
   }
 }

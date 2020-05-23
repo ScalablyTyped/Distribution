@@ -13,7 +13,7 @@ object PublishContainerVersionResponse {
   @scala.inline
   def apply(compilerError: js.UndefOr[Boolean] = js.undefined, containerVersion: ContainerVersion = null): PublishContainerVersionResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(compilerError)) __obj.updateDynamic("compilerError")(compilerError.asInstanceOf[js.Any])
+    if (!js.isUndefined(compilerError)) __obj.updateDynamic("compilerError")(compilerError.get.asInstanceOf[js.Any])
     if (containerVersion != null) __obj.updateDynamic("containerVersion")(containerVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishContainerVersionResponse]
   }

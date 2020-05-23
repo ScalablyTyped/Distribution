@@ -36,16 +36,16 @@ object CreateVpcEndpointServiceConfigurationRequest {
   @scala.inline
   def apply(
     NetworkLoadBalancerArns: ValueStringList,
-    AcceptanceRequired: js.UndefOr[scala.Boolean] = js.undefined,
+    AcceptanceRequired: js.UndefOr[Boolean] = js.undefined,
     ClientToken: String = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     PrivateDnsName: String = null,
     TagSpecifications: TagSpecificationList = null
   ): CreateVpcEndpointServiceConfigurationRequest = {
     val __obj = js.Dynamic.literal(NetworkLoadBalancerArns = NetworkLoadBalancerArns.asInstanceOf[js.Any])
-    if (!js.isUndefined(AcceptanceRequired)) __obj.updateDynamic("AcceptanceRequired")(AcceptanceRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(AcceptanceRequired)) __obj.updateDynamic("AcceptanceRequired")(AcceptanceRequired.get.asInstanceOf[js.Any])
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (PrivateDnsName != null) __obj.updateDynamic("PrivateDnsName")(PrivateDnsName.asInstanceOf[js.Any])
     if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVpcEndpointServiceConfigurationRequest]

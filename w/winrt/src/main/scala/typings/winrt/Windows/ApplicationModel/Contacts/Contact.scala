@@ -6,14 +6,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.Contacts.Contact")
-@js.native
-class Contact () extends IContact {
-  /* CompleteClass */
-  override var fields: IVector[IContactField] = js.native
-  /* CompleteClass */
-  override var name: String = js.native
-  /* CompleteClass */
-  override var thumbnail: IRandomAccessStreamReference = js.native
+trait Contact extends IContact
+
+object Contact {
+  @scala.inline
+  def apply(fields: IVector[IContactField], name: String, thumbnail: IRandomAccessStreamReference): Contact = {
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Contact]
+  }
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object mod {
   type AdditiveOperatorOrHigher = typings.typescript.mod.MultiplicativeOperatorOrHigher | typings.typescript.mod.AdditiveOperator
-  type AffectedFileResult[T] = js.UndefOr[typings.typescript.AnonAffected[T]]
+  type AffectedFileResult[T] = js.UndefOr[typings.typescript.anon.Affected[T]]
   type AssertsToken = typings.typescript.mod.Token[typings.typescript.mod.SyntaxKind.AssertsKeyword]
   /* Rewritten from type alias, can be one of: 
     - typings.typescript.mod.SyntaxKind.QuestionQuestionToken
@@ -73,7 +73,7 @@ package object mod {
   type DeferredTypeReference = typings.typescript.mod.TypeReference
   type DiagnosticReporter = js.Function1[/* diagnostic */ typings.typescript.mod.Diagnostic, scala.Unit]
   type DirectoryWatcherCallback = js.Function1[/* fileName */ java.lang.String, scala.Unit]
-  type DocumentRegistryBucketKey = java.lang.String with typings.typescript.AnonBucketKey
+  type DocumentRegistryBucketKey = java.lang.String with typings.typescript.anon.BucketKey
   type DotDotDotToken = typings.typescript.mod.Token[typings.typescript.mod.SyntaxKind.DotDotDotToken]
   type DotToken = typings.typescript.mod.Token[typings.typescript.mod.SyntaxKind.DotToken]
   type EmitHelperUniqueNameCallback = js.Function1[/* name */ java.lang.String, java.lang.String]
@@ -149,7 +149,7 @@ package object mod {
   type ModifiersArray = typings.typescript.mod.NodeArray[typings.typescript.mod.Modifier]
   type MultiplicativeOperatorOrHigher = typings.typescript.mod.ExponentiationOperator | typings.typescript.mod.MultiplicativeOperator
   type OrganizeImportsScope = typings.typescript.mod.CombinedCodeFixScope
-  type Path = java.lang.String with typings.typescript.AnonPathBrand
+  type Path = java.lang.String with typings.typescript.anon.PathBrand
   type PlusToken = typings.typescript.mod.Token[typings.typescript.mod.SyntaxKind.PlusToken]
   type QuestionDotToken = typings.typescript.mod.Token[typings.typescript.mod.SyntaxKind.QuestionDotToken]
   type QuestionToken = typings.typescript.mod.Token[typings.typescript.mod.SyntaxKind.QuestionToken]
@@ -158,7 +158,7 @@ package object mod {
   type ReportEmitErrorSummary = js.Function1[/* errorCount */ scala.Double, scala.Unit]
   type ResolvedConfigFileName = java.lang.String with js.Object
   type ShiftOperatorOrHigher = typings.typescript.mod.AdditiveOperatorOrHigher | typings.typescript.mod.ShiftOperator
-  type String = (java.lang.String with typings.typescript.AnonEscapedIdentifier) | (scala.Unit with typings.typescript.AnonEscapedIdentifier) | typings.typescript.mod.InternalSymbolName
+  type String = (java.lang.String with typings.typescript.anon.EscapedIdentifier) | (scala.Unit with typings.typescript.anon.EscapedIdentifier) | typings.typescript.mod.InternalSymbolName
   type StructuredType = typings.typescript.mod.ObjectType | typings.typescript.mod.UnionType | typings.typescript.mod.IntersectionType
   type SymbolTable = typings.typescript.mod.UnderscoreEscapedMap[typings.typescript.mod.Symbol]
   type Transformer[T /* <: typings.typescript.mod.Node */] = js.Function1[/* node */ T, T]
@@ -185,7 +185,7 @@ package object mod {
     /* errorCount */ js.UndefOr[scala.Double], 
     scala.Unit
   ]
-  type WithMetadata[T] = T with typings.typescript.AnonMetadata
+  type WithMetadata[T] = T with typings.typescript.anon.Metadata
   type WriteFileCallback = js.Function5[
     /* fileName */ java.lang.String, 
     /* data */ java.lang.String, 

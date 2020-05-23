@@ -18,7 +18,7 @@ object DropDownTreeCheckboxes {
     template: String | js.Function = null
   ): DropDownTreeCheckboxes = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkChildren)) __obj.updateDynamic("checkChildren")(checkChildren.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkChildren)) __obj.updateDynamic("checkChildren")(checkChildren.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropDownTreeCheckboxes]

@@ -1,6 +1,6 @@
 package typings.antd.breadcrumbItemMod
 
-import typings.antd.AnonSeparator
+import typings.antd.anon.Separator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +14,6 @@ class default () extends BreadcrumbItem
 @js.native
 object default extends js.Object {
   var __ANT_BREADCRUMB_ITEM: Boolean = js.native
-  var defaultProps: AnonSeparator = js.native
+  var defaultProps: Separator = js.native
 }
 

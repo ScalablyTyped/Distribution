@@ -19,13 +19,13 @@ object CallOptions {
     credentials: CallCredentials = null,
     deadline: Deadline = null,
     host: String = null,
-    propagate_flags: Int | Double = null
+    propagate_flags: js.UndefOr[Double] = js.undefined
   ): CallOptions = {
     val __obj = js.Dynamic.literal()
     if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
     if (deadline != null) __obj.updateDynamic("deadline")(deadline.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (propagate_flags != null) __obj.updateDynamic("propagate_flags")(propagate_flags.asInstanceOf[js.Any])
+    if (!js.isUndefined(propagate_flags)) __obj.updateDynamic("propagate_flags")(propagate_flags.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallOptions]
   }
 }

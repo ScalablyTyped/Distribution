@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Background
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,11 +14,6 @@ object LocationTriggerType extends js.Object {
   /** Indicates a geofence location trigger. */
   @js.native
   sealed trait geofence extends LocationTriggerType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[LocationTriggerType with Double] = js.native
-  /* 0 */ @js.native
-  object geofence extends TopLevel[geofence with Double]
   
 }
 

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/util/obj_map", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/util/obj_map", JSImport.Namespace)
 @js.native
 object objMapMod extends js.Object {
   @js.native

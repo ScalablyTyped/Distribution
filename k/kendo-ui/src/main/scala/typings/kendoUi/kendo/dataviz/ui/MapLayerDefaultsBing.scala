@@ -19,14 +19,14 @@ object MapLayerDefaultsBing {
     culture: String = null,
     imagerySet: String = null,
     key: String = null,
-    opacity: Int | Double = null
+    opacity: js.UndefOr[Double] = js.undefined
   ): MapLayerDefaultsBing = {
     val __obj = js.Dynamic.literal()
     if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
     if (culture != null) __obj.updateDynamic("culture")(culture.asInstanceOf[js.Any])
     if (imagerySet != null) __obj.updateDynamic("imagerySet")(imagerySet.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapLayerDefaultsBing]
   }
 }

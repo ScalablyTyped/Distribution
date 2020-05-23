@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.model.TreeBindingAdapter")
 @js.native
-class TreeBindingAdapter () extends js.Object {
+trait TreeBindingAdapter extends js.Object {
   /**
     * Calculate the request length based on the given information
     * @param iMaxGroupSize the maximum group size

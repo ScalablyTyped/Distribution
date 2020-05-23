@@ -167,17 +167,17 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (defaultProtocol != null) __obj.updateDynamic("defaultProtocol")(defaultProtocol.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceHttp)) __obj.updateDynamic("forceHttp")(forceHttp.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceHttps)) __obj.updateDynamic("forceHttps")(forceHttps.asInstanceOf[js.Any])
-    if (!js.isUndefined(normalizeProtocol)) __obj.updateDynamic("normalizeProtocol")(normalizeProtocol.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceHttp)) __obj.updateDynamic("forceHttp")(forceHttp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceHttps)) __obj.updateDynamic("forceHttps")(forceHttps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(normalizeProtocol)) __obj.updateDynamic("normalizeProtocol")(normalizeProtocol.get.asInstanceOf[js.Any])
     if (removeDirectoryIndex != null) __obj.updateDynamic("removeDirectoryIndex")(removeDirectoryIndex.asInstanceOf[js.Any])
     if (removeQueryParameters != null) __obj.updateDynamic("removeQueryParameters")(removeQueryParameters.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeTrailingSlash)) __obj.updateDynamic("removeTrailingSlash")(removeTrailingSlash.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortQueryParameters)) __obj.updateDynamic("sortQueryParameters")(sortQueryParameters.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripAuthentication)) __obj.updateDynamic("stripAuthentication")(stripAuthentication.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripHash)) __obj.updateDynamic("stripHash")(stripHash.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripProtocol)) __obj.updateDynamic("stripProtocol")(stripProtocol.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripWWW)) __obj.updateDynamic("stripWWW")(stripWWW.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeTrailingSlash)) __obj.updateDynamic("removeTrailingSlash")(removeTrailingSlash.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortQueryParameters)) __obj.updateDynamic("sortQueryParameters")(sortQueryParameters.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripAuthentication)) __obj.updateDynamic("stripAuthentication")(stripAuthentication.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripHash)) __obj.updateDynamic("stripHash")(stripHash.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripProtocol)) __obj.updateDynamic("stripProtocol")(stripProtocol.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripWWW)) __obj.updateDynamic("stripWWW")(stripWWW.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,20 +24,6 @@ object ConditionalRangeBorderIndex extends js.Object {
   
   @js.native
   sealed trait edgeTop extends ConditionalRangeBorderIndex
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ConditionalRangeBorderIndex with String] = js.native
-  /* "EdgeBottom" */ @js.native
-  object edgeBottom extends TopLevel[edgeBottom with String]
-  
-  /* "EdgeLeft" */ @js.native
-  object edgeLeft extends TopLevel[edgeLeft with String]
-  
-  /* "EdgeRight" */ @js.native
-  object edgeRight extends TopLevel[edgeRight with String]
-  
-  /* "EdgeTop" */ @js.native
-  object edgeTop extends TopLevel[edgeTop with String]
   
 }
 

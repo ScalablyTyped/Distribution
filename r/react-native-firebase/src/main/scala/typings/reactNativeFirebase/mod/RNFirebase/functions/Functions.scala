@@ -36,7 +36,7 @@ object Functions {
   def apply(
     httpsCallable: String => HttpsCallable[js.Any, js.Any],
     useFunctionsEmulator: String => js.Promise[Null],
-    StringDictionary: /* key */ StringDictionary[js.Any] = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null
   ): Functions = {
     val __obj = js.Dynamic.literal(httpsCallable = js.Any.fromFunction1(httpsCallable), useFunctionsEmulator = js.Any.fromFunction1(useFunctionsEmulator))
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

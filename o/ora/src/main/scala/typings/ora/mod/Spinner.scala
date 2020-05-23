@@ -11,9 +11,9 @@ trait Spinner extends js.Object {
 
 object Spinner {
   @scala.inline
-  def apply(frames: js.Array[String], interval: Int | Double = null): Spinner = {
+  def apply(frames: js.Array[String], interval: js.UndefOr[Double] = js.undefined): Spinner = {
     val __obj = js.Dynamic.literal(frames = frames.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Spinner]
   }
 }

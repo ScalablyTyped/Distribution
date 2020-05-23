@@ -15,15 +15,15 @@ object Seats {
   @scala.inline
   def apply(
     kind: String = null,
-    licensedNumberOfSeats: Int | Double = null,
-    maximumNumberOfSeats: Int | Double = null,
-    numberOfSeats: Int | Double = null
+    licensedNumberOfSeats: js.UndefOr[Double] = js.undefined,
+    maximumNumberOfSeats: js.UndefOr[Double] = js.undefined,
+    numberOfSeats: js.UndefOr[Double] = js.undefined
   ): Seats = {
     val __obj = js.Dynamic.literal()
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (licensedNumberOfSeats != null) __obj.updateDynamic("licensedNumberOfSeats")(licensedNumberOfSeats.asInstanceOf[js.Any])
-    if (maximumNumberOfSeats != null) __obj.updateDynamic("maximumNumberOfSeats")(maximumNumberOfSeats.asInstanceOf[js.Any])
-    if (numberOfSeats != null) __obj.updateDynamic("numberOfSeats")(numberOfSeats.asInstanceOf[js.Any])
+    if (!js.isUndefined(licensedNumberOfSeats)) __obj.updateDynamic("licensedNumberOfSeats")(licensedNumberOfSeats.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumNumberOfSeats)) __obj.updateDynamic("maximumNumberOfSeats")(maximumNumberOfSeats.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfSeats)) __obj.updateDynamic("numberOfSeats")(numberOfSeats.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Seats]
   }
 }

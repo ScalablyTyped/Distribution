@@ -45,18 +45,18 @@ object PaneOptions {
   def apply(
     background: js.Array[PaneBackgroundOptions] = null,
     center: js.Array[String | Double] = null,
-    endAngle: Int | Double = null,
+    endAngle: js.UndefOr[Double] = js.undefined,
     innerSize: Double | String = null,
     size: Double | String = null,
-    startAngle: Int | Double = null
+    startAngle: js.UndefOr[Double] = js.undefined
   ): PaneOptions = {
     val __obj = js.Dynamic.literal()
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(endAngle)) __obj.updateDynamic("endAngle")(endAngle.get.asInstanceOf[js.Any])
     if (innerSize != null) __obj.updateDynamic("innerSize")(innerSize.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(startAngle)) __obj.updateDynamic("startAngle")(startAngle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaneOptions]
   }
 }

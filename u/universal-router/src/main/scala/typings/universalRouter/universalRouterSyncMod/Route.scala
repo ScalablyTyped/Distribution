@@ -39,20 +39,20 @@ trait Route[R, C /* <: RouterContext */] extends js.Object {
 
 object Route {
   @scala.inline
-  def apply[R, C /* <: RouterContext */](
+  def apply[R, C](
     action: (/* context */ RouteContext[R, C], /* params */ RouteParams) => RouteResultSync[R] = null,
-    children: Routes[R, C] = null,
+    children: js.UndefOr[Null | (Routes[R, C])] = js.undefined,
     `match`: /* path */ String => Match_[RouteParams] = null,
     name: String = null,
-    parent: Route[R, C] = null,
+    parent: js.UndefOr[Null | (Route[R, C])] = js.undefined,
     path: Path = null
   ): Route[R, C] = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction2(action))
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(children)) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (`match` != null) __obj.updateDynamic("match")(js.Any.fromFunction1(`match`))
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Route[R, C]]
   }

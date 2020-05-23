@@ -1,5 +1,6 @@
 package typings.forkTsCheckerWebpackPlugin
 
+import typings.forkTsCheckerWebpackPlugin.anon.Typeofts
 import typings.forkTsCheckerWebpackPlugin.cancellationTokenMod.CancellationToken
 import typings.forkTsCheckerWebpackPlugin.incrementalCheckerInterfaceMod.IncrementalCheckerInterface
 import typings.forkTsCheckerWebpackPlugin.incrementalCheckerInterfaceMod.IncrementalCheckerParams

@@ -63,7 +63,7 @@ object DescribeEventsMessage {
     EndTime: TimeFilterEnd = null,
     EnvironmentId: EnvironmentId = null,
     EnvironmentName: EnvironmentName = null,
-    MaxRecords: Int | Double = null,
+    MaxRecords: js.UndefOr[MaxRecords] = js.undefined,
     NextToken: Token = null,
     PlatformArn: PlatformArn = null,
     RequestId: RequestId = null,
@@ -77,7 +77,7 @@ object DescribeEventsMessage {
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
     if (EnvironmentId != null) __obj.updateDynamic("EnvironmentId")(EnvironmentId.asInstanceOf[js.Any])
     if (EnvironmentName != null) __obj.updateDynamic("EnvironmentName")(EnvironmentName.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (PlatformArn != null) __obj.updateDynamic("PlatformArn")(PlatformArn.asInstanceOf[js.Any])
     if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])

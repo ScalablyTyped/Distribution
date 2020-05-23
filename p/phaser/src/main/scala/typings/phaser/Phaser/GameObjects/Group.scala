@@ -3,7 +3,6 @@ package typings.phaser.Phaser.GameObjects
 import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Structs.Set
 import typings.phaser.Phaser.Types.GameObjects.Group.GroupCallback
-import typings.phaser.Phaser.Types.GameObjects.Group.GroupConfig
 import typings.phaser.Phaser.Types.GameObjects.Group.GroupCreateConfig
 import typings.phaser.Phaser.Types.GameObjects.Group.GroupMultipleCreateCallback
 import typings.phaser.Phaser.Types.Input.HitAreaCallback
@@ -21,25 +20,8 @@ import scala.scalajs.js.annotation._
   * 
   * Groups themselves aren't displayable, and can't be positioned, rotated, scaled, or hidden.
   */
-@JSGlobal("Phaser.GameObjects.Group")
 @js.native
-class Group protected () extends _ArcadeColliderType {
-  /**
-    * 
-    * @param scene The scene this group belongs to.
-    * @param children Game Objects to add to this group; or the `config` argument.
-    * @param config Settings for this group. If `key` is set, Phaser.GameObjects.Group#createMultiple is also called with these settings.
-    */
-  def this(scene: Scene) = this()
-  def this(scene: Scene, children: js.Array[GameObject]) = this()
-  def this(scene: Scene, children: GroupConfig) = this()
-  def this(scene: Scene, children: GroupCreateConfig) = this()
-  def this(scene: Scene, children: js.Array[GameObject], config: GroupConfig) = this()
-  def this(scene: Scene, children: js.Array[GameObject], config: GroupCreateConfig) = this()
-  def this(scene: Scene, children: GroupConfig, config: GroupConfig) = this()
-  def this(scene: Scene, children: GroupConfig, config: GroupCreateConfig) = this()
-  def this(scene: Scene, children: GroupCreateConfig, config: GroupConfig) = this()
-  def this(scene: Scene, children: GroupCreateConfig, config: GroupCreateConfig) = this()
+trait Group extends _ArcadeColliderType {
   /**
     * Whether this group runs its {@link Phaser.GameObjects.Group#preUpdate} method
     * (which may update any members).
@@ -112,8 +94,8 @@ class Group protected () extends _ArcadeColliderType {
     * @param child The Game Object to add.
     * @param addToScene Also add the Game Object to the scene. Default false.
     */
-  def add(child: GameObject): Group = js.native
-  def add(child: GameObject, addToScene: Boolean): Group = js.native
+  def add(child: GameObject): this.type = js.native
+  def add(child: GameObject, addToScene: Boolean): this.type = js.native
   /**
     * Adds several Game Objects to this group.
     * 
@@ -121,15 +103,15 @@ class Group protected () extends _ArcadeColliderType {
     * @param children The Game Objects to add.
     * @param addToScene Also add the Game Objects to the scene. Default false.
     */
-  def addMultiple(children: js.Array[GameObject]): Group = js.native
-  def addMultiple(children: js.Array[GameObject], addToScene: Boolean): Group = js.native
+  def addMultiple(children: js.Array[GameObject]): this.type = js.native
+  def addMultiple(children: js.Array[GameObject], addToScene: Boolean): this.type = js.native
   /**
     * Sets the angle of each group member.
     * @param value The amount to set the angle to, in degrees.
     * @param step This is added to the `value` amount, multiplied by the iteration counter. Default 0.
     */
-  def angle(value: Double): Group = js.native
-  def angle(value: Double, step: Double): Group = js.native
+  def angle(value: Double): this.type = js.native
+  def angle(value: Double, step: Double): this.type = js.native
   /**
     * Removes all members of this Group and optionally removes them from the Scene and / or destroys them.
     * 
@@ -137,9 +119,9 @@ class Group protected () extends _ArcadeColliderType {
     * @param removeFromScene Optionally remove each Group member from the Scene. Default false.
     * @param destroyChild Optionally call destroy on the removed Group members. Default false.
     */
-  def clear(): Group = js.native
-  def clear(removeFromScene: Boolean): Group = js.native
-  def clear(removeFromScene: Boolean, destroyChild: Boolean): Group = js.native
+  def clear(): this.type = js.native
+  def clear(removeFromScene: Boolean): this.type = js.native
+  def clear(removeFromScene: Boolean, destroyChild: Boolean): this.type = js.native
   /**
     * Tests if a Game Object is a member of this group.
     * @param child A Game Object.
@@ -384,8 +366,8 @@ class Group protected () extends _ArcadeColliderType {
     * @param value The amount to be added to the `x` property.
     * @param step This is added to the `value` amount, multiplied by the iteration counter. Default 0.
     */
-  def incX(value: Double): Group = js.native
-  def incX(value: Double, step: Double): Group = js.native
+  def incX(value: Double): this.type = js.native
+  def incX(value: Double, step: Double): this.type = js.native
   /**
     * Adds the given value to the x, y of each group member.
     * @param x The amount to be added to the `x` property.
@@ -393,17 +375,17 @@ class Group protected () extends _ArcadeColliderType {
     * @param stepX This is added to the `x` amount, multiplied by the iteration counter. Default 0.
     * @param stepY This is added to the `y` amount, multiplied by the iteration counter. Default 0.
     */
-  def incXY(x: Double): Group = js.native
-  def incXY(x: Double, y: Double): Group = js.native
-  def incXY(x: Double, y: Double, stepX: Double): Group = js.native
-  def incXY(x: Double, y: Double, stepX: Double, stepY: Double): Group = js.native
+  def incXY(x: Double): this.type = js.native
+  def incXY(x: Double, y: Double): this.type = js.native
+  def incXY(x: Double, y: Double, stepX: Double): this.type = js.native
+  def incXY(x: Double, y: Double, stepX: Double, stepY: Double): this.type = js.native
   /**
     * Adds the given value to the y of each group member.
     * @param value The amount to be added to the `y` property.
     * @param step This is added to the `value` amount, multiplied by the iteration counter. Default 0.
     */
-  def incY(value: Double): Group = js.native
-  def incY(value: Double, step: Double): Group = js.native
+  def incY(value: Double): this.type = js.native
+  def incY(value: Double, step: Double): this.type = js.native
   /**
     * Whether this group's size at its {@link Phaser.GameObjects.Group#maxSize maximum}.
     */
@@ -423,8 +405,8 @@ class Group protected () extends _ArcadeColliderType {
     * @param key The string-based key of the animation to play.
     * @param startFrame Optionally start the animation playing from this frame index. Default 0.
     */
-  def playAnimation(key: String): Group = js.native
-  def playAnimation(key: String, startFrame: String): Group = js.native
+  def playAnimation(key: String): this.type = js.native
+  def playAnimation(key: String, startFrame: String): this.type = js.native
   /**
     * Updates any group members, if {@link Phaser.GameObjects.Group#runChildUpdate} is enabled.
     * @param time The current timestamp.
@@ -439,10 +421,10 @@ class Group protected () extends _ArcadeColliderType {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  def propertyValueInc(key: String, value: Double): Group = js.native
-  def propertyValueInc(key: String, value: Double, step: Double): Group = js.native
-  def propertyValueInc(key: String, value: Double, step: Double, index: integer): Group = js.native
-  def propertyValueInc(key: String, value: Double, step: Double, index: integer, direction: integer): Group = js.native
+  def propertyValueInc(key: String, value: Double): this.type = js.native
+  def propertyValueInc(key: String, value: Double, step: Double): this.type = js.native
+  def propertyValueInc(key: String, value: Double, step: Double, index: integer): this.type = js.native
+  def propertyValueInc(key: String, value: Double, step: Double, index: integer, direction: integer): this.type = js.native
   /**
     * Sets the property as defined in `key` of each group member to the given value.
     * @param key The property to be updated.
@@ -451,10 +433,10 @@ class Group protected () extends _ArcadeColliderType {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  def propertyValueSet(key: String, value: Double): Group = js.native
-  def propertyValueSet(key: String, value: Double, step: Double): Group = js.native
-  def propertyValueSet(key: String, value: Double, step: Double, index: integer): Group = js.native
-  def propertyValueSet(key: String, value: Double, step: Double, index: integer, direction: integer): Group = js.native
+  def propertyValueSet(key: String, value: Double): this.type = js.native
+  def propertyValueSet(key: String, value: Double, step: Double): this.type = js.native
+  def propertyValueSet(key: String, value: Double, step: Double, index: integer): this.type = js.native
+  def propertyValueSet(key: String, value: Double, step: Double, index: integer, direction: integer): this.type = js.native
   /**
     * Removes a member of this Group and optionally removes it from the Scene and / or destroys it.
     * 
@@ -463,9 +445,9 @@ class Group protected () extends _ArcadeColliderType {
     * @param removeFromScene Optionally remove the Group member from the Scene it belongs to. Default false.
     * @param destroyChild Optionally call destroy on the removed Group member. Default false.
     */
-  def remove(child: GameObject): Group = js.native
-  def remove(child: GameObject, removeFromScene: Boolean): Group = js.native
-  def remove(child: GameObject, removeFromScene: Boolean, destroyChild: Boolean): Group = js.native
+  def remove(child: GameObject): this.type = js.native
+  def remove(child: GameObject, removeFromScene: Boolean): this.type = js.native
+  def remove(child: GameObject, removeFromScene: Boolean, destroyChild: Boolean): this.type = js.native
   /**
     * A function to be called when removing group members.
     */
@@ -475,28 +457,28 @@ class Group protected () extends _ArcadeColliderType {
     * @param value The amount to set the rotation to, in radians.
     * @param step This is added to the `value` amount, multiplied by the iteration counter. Default 0.
     */
-  def rotate(value: Double): Group = js.native
-  def rotate(value: Double, step: Double): Group = js.native
+  def rotate(value: Double): this.type = js.native
+  def rotate(value: Double, step: Double): this.type = js.native
   /**
     * Rotates each group member around the given point by the given angle.
     * @param point Any object with public `x` and `y` properties.
     * @param angle The angle to rotate by, in radians.
     */
-  def rotateAround(point: Vector2Like, angle: Double): Group = js.native
+  def rotateAround(point: Vector2Like, angle: Double): this.type = js.native
   /**
     * Rotates each group member around the given point by the given angle and distance.
     * @param point Any object with public `x` and `y` properties.
     * @param angle The angle to rotate by, in radians.
     * @param distance The distance from the point of rotation in pixels.
     */
-  def rotateAroundDistance(point: Vector2Like, angle: Double, distance: Double): Group = js.native
+  def rotateAroundDistance(point: Vector2Like, angle: Double, distance: Double): this.type = js.native
   /**
     * Sets the scaleX of each group member.
     * @param value The amount to set the property to.
     * @param step This is added to the `value` amount, multiplied by the iteration counter. Default 0.
     */
-  def scaleX(value: Double): Group = js.native
-  def scaleX(value: Double, step: Double): Group = js.native
+  def scaleX(value: Double): this.type = js.native
+  def scaleX(value: Double, step: Double): this.type = js.native
   /**
     * Sets the scaleX, scaleY of each group member.
     * @param scaleX The amount to be added to the `scaleX` property.
@@ -504,42 +486,42 @@ class Group protected () extends _ArcadeColliderType {
     * @param stepX This is added to the `scaleX` amount, multiplied by the iteration counter. Default 0.
     * @param stepY This is added to the `scaleY` amount, multiplied by the iteration counter. Default 0.
     */
-  def scaleXY(scaleX: Double): Group = js.native
-  def scaleXY(scaleX: Double, scaleY: Double): Group = js.native
-  def scaleXY(scaleX: Double, scaleY: Double, stepX: Double): Group = js.native
-  def scaleXY(scaleX: Double, scaleY: Double, stepX: Double, stepY: Double): Group = js.native
+  def scaleXY(scaleX: Double): this.type = js.native
+  def scaleXY(scaleX: Double, scaleY: Double): this.type = js.native
+  def scaleXY(scaleX: Double, scaleY: Double, stepX: Double): this.type = js.native
+  def scaleXY(scaleX: Double, scaleY: Double, stepX: Double, stepY: Double): this.type = js.native
   /**
     * Sets the scaleY of each group member.
     * @param value The amount to set the property to.
     * @param step This is added to the `value` amount, multiplied by the iteration counter. Default 0.
     */
-  def scaleY(value: Double): Group = js.native
-  def scaleY(value: Double, step: Double): Group = js.native
+  def scaleY(value: Double): this.type = js.native
+  def scaleY(value: Double, step: Double): this.type = js.native
   /**
     * Sets the alpha of each group member.
     * @param value The amount to set the alpha to.
     * @param step This is added to the `value` amount, multiplied by the iteration counter. Default 0.
     */
-  def setAlpha(value: Double): Group = js.native
-  def setAlpha(value: Double, step: Double): Group = js.native
+  def setAlpha(value: Double): this.type = js.native
+  def setAlpha(value: Double, step: Double): this.type = js.native
   /**
     * Sets the blendMode of each group member.
     * @param value The amount to set the property to.
     */
-  def setBlendMode(value: Double): Group = js.native
+  def setBlendMode(value: Double): this.type = js.native
   /**
     * Sets the depth of each group member.
     * @param value The amount to set the property to.
     * @param step This is added to the `value` amount, multiplied by the iteration counter. Default 0.
     */
-  def setDepth(value: Double): Group = js.native
-  def setDepth(value: Double, step: Double): Group = js.native
+  def setDepth(value: Double): this.type = js.native
+  def setDepth(value: Double, step: Double): this.type = js.native
   /**
     * Passes all group members to the Input Manager to enable them for input with identical areas and callbacks.
     * @param hitArea Either an input configuration object, or a geometric shape that defines the hit area for the Game Object. If not specified a Rectangle will be used.
     * @param hitAreaCallback A callback to be invoked when the Game Object is interacted with. If you provide a shape you must also provide a callback.
     */
-  def setHitArea(hitArea: js.Any, hitAreaCallback: HitAreaCallback): Group = js.native
+  def setHitArea(hitArea: js.Any, hitAreaCallback: HitAreaCallback): this.type = js.native
   /**
     * Sets the originX, originY of each group member.
     * @param originX The amount to set the `originX` property to.
@@ -547,10 +529,10 @@ class Group protected () extends _ArcadeColliderType {
     * @param stepX This is added to the `originX` amount, multiplied by the iteration counter. Default 0.
     * @param stepY This is added to the `originY` amount, multiplied by the iteration counter. Default 0.
     */
-  def setOrigin(originX: Double): Group = js.native
-  def setOrigin(originX: Double, originY: Double): Group = js.native
-  def setOrigin(originX: Double, originY: Double, stepX: Double): Group = js.native
-  def setOrigin(originX: Double, originY: Double, stepX: Double, stepY: Double): Group = js.native
+  def setOrigin(originX: Double): this.type = js.native
+  def setOrigin(originX: Double, originY: Double): this.type = js.native
+  def setOrigin(originX: Double, originY: Double, stepX: Double): this.type = js.native
+  def setOrigin(originX: Double, originY: Double, stepX: Double, stepY: Double): this.type = js.native
   /**
     * Sets the tint of each group member.
     * @param topLeft The tint being applied to top-left corner of item. If other parameters are given no value, this tint will be applied to whole item.
@@ -558,26 +540,26 @@ class Group protected () extends _ArcadeColliderType {
     * @param bottomLeft The tint to be applied to the bottom-left corner of item.
     * @param bottomRight The tint to be applied to the bottom-right corner of item.
     */
-  def setTint(topLeft: Double): Group = js.native
-  def setTint(topLeft: Double, topRight: Double): Group = js.native
-  def setTint(topLeft: Double, topRight: Double, bottomLeft: Double): Group = js.native
-  def setTint(topLeft: Double, topRight: Double, bottomLeft: Double, bottomRight: Double): Group = js.native
+  def setTint(topLeft: Double): this.type = js.native
+  def setTint(topLeft: Double, topRight: Double): this.type = js.native
+  def setTint(topLeft: Double, topRight: Double, bottomLeft: Double): this.type = js.native
+  def setTint(topLeft: Double, topRight: Double, bottomLeft: Double, bottomRight: Double): this.type = js.native
   /**
     * Sets the visible of each group member.
     * @param value The value to set the property to.
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  def setVisible(value: Boolean): Group = js.native
-  def setVisible(value: Boolean, index: integer): Group = js.native
-  def setVisible(value: Boolean, index: integer, direction: integer): Group = js.native
+  def setVisible(value: Boolean): this.type = js.native
+  def setVisible(value: Boolean, index: integer): this.type = js.native
+  def setVisible(value: Boolean, index: integer, direction: integer): this.type = js.native
   /**
     * Sets the x of each group member.
     * @param value The amount to set the property to.
     * @param step This is added to the `value` amount, multiplied by the iteration counter. Default 0.
     */
-  def setX(value: Double): Group = js.native
-  def setX(value: Double, step: Double): Group = js.native
+  def setX(value: Double): this.type = js.native
+  def setX(value: Double, step: Double): this.type = js.native
   /**
     * Sets the x, y of each group member.
     * @param x The amount to set the `x` property to.
@@ -585,17 +567,17 @@ class Group protected () extends _ArcadeColliderType {
     * @param stepX This is added to the `x` amount, multiplied by the iteration counter. Default 0.
     * @param stepY This is added to the `y` amount, multiplied by the iteration counter. Default 0.
     */
-  def setXY(x: Double): Group = js.native
-  def setXY(x: Double, y: Double): Group = js.native
-  def setXY(x: Double, y: Double, stepX: Double): Group = js.native
-  def setXY(x: Double, y: Double, stepX: Double, stepY: Double): Group = js.native
+  def setXY(x: Double): this.type = js.native
+  def setXY(x: Double, y: Double): this.type = js.native
+  def setXY(x: Double, y: Double, stepX: Double): this.type = js.native
+  def setXY(x: Double, y: Double, stepX: Double, stepY: Double): this.type = js.native
   /**
     * Sets the y of each group member.
     * @param value The amount to set the property to.
     * @param step This is added to the `value` amount, multiplied by the iteration counter. Default 0.
     */
-  def setY(value: Double): Group = js.native
-  def setY(value: Double, step: Double): Group = js.native
+  def setY(value: Double): this.type = js.native
+  def setY(value: Double, step: Double): this.type = js.native
   /**
     * Iterate through the group members changing the position of each element to be that of the element that came before
     * it in the array (or after it if direction = 1)
@@ -605,15 +587,15 @@ class Group protected () extends _ArcadeColliderType {
     * @param y The y coordinate to place the first item in the array at.
     * @param direction The iteration direction. 0 = first to last and 1 = last to first. Default 0.
     */
-  def shiftPosition(x: Double, y: Double): Group = js.native
-  def shiftPosition(x: Double, y: Double, direction: integer): Group = js.native
+  def shiftPosition(x: Double, y: Double): this.type = js.native
+  def shiftPosition(x: Double, y: Double, direction: integer): this.type = js.native
   /**
     * Shuffles the group members in place.
     */
-  def shuffle(): Group = js.native
+  def shuffle(): this.type = js.native
   /**
     * Toggles (flips) the visible state of each member of this group.
     */
-  def toggleVisible(): Group = js.native
+  def toggleVisible(): this.type = js.native
 }
 

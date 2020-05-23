@@ -26,7 +26,8 @@ trait Scanner extends js.Object {
   def reScanLessThanToken(): SyntaxKind = js.native
   def reScanQuestionToken(): SyntaxKind = js.native
   def reScanSlashToken(): SyntaxKind = js.native
-  def reScanTemplateToken(): SyntaxKind = js.native
+  def reScanTemplateHeadOrNoSubstitutionTemplate(): SyntaxKind = js.native
+  def reScanTemplateToken(isTaggedTemplate: Boolean): SyntaxKind = js.native
   def scan(): SyntaxKind = js.native
   def scanJsDocToken(): JSDocSyntaxKind = js.native
   def scanJsxAttributeValue(): SyntaxKind = js.native
@@ -38,8 +39,6 @@ trait Scanner extends js.Object {
   def setOnError(onError: ErrorCallback): Unit = js.native
   def setScriptTarget(scriptTarget: ScriptTarget): Unit = js.native
   def setText(): Unit = js.native
-  def setText(text: js.UndefOr[scala.Nothing], start: Double): Unit = js.native
-  def setText(text: js.UndefOr[scala.Nothing], start: Double, length: Double): Unit = js.native
   def setText(text: java.lang.String): Unit = js.native
   def setText(text: java.lang.String, start: Double): Unit = js.native
   def setText(text: java.lang.String, start: Double, length: Double): Unit = js.native

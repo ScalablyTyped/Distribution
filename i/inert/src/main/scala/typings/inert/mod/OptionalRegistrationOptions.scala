@@ -17,9 +17,9 @@ trait OptionalRegistrationOptions extends js.Object {
 
 object OptionalRegistrationOptions {
   @scala.inline
-  def apply(etagsCacheMaxSize: Int | Double = null): OptionalRegistrationOptions = {
+  def apply(etagsCacheMaxSize: js.UndefOr[Double] = js.undefined): OptionalRegistrationOptions = {
     val __obj = js.Dynamic.literal()
-    if (etagsCacheMaxSize != null) __obj.updateDynamic("etagsCacheMaxSize")(etagsCacheMaxSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(etagsCacheMaxSize)) __obj.updateDynamic("etagsCacheMaxSize")(etagsCacheMaxSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionalRegistrationOptions]
   }
 }

@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.OLEDBConnection")
 @js.native
-class OLEDBConnection protected () extends js.Object {
+trait OLEDBConnection extends js.Object {
   val ADOConnection: Connection = js.native
   var AlwaysUseConnectionFile: Boolean = js.native
   val Application: typings.activexExcel.Excel.Application = js.native

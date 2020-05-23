@@ -24,12 +24,12 @@ object Location {
   @scala.inline
   def apply(
     filePath: Path = null,
-    filePosition: Int | Double = null,
+    filePosition: js.UndefOr[Position] = js.undefined,
     relativeFileVersion: RelativeFileVersionEnum = null
   ): Location = {
     val __obj = js.Dynamic.literal()
     if (filePath != null) __obj.updateDynamic("filePath")(filePath.asInstanceOf[js.Any])
-    if (filePosition != null) __obj.updateDynamic("filePosition")(filePosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(filePosition)) __obj.updateDynamic("filePosition")(filePosition.get.asInstanceOf[js.Any])
     if (relativeFileVersion != null) __obj.updateDynamic("relativeFileVersion")(relativeFileVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[Location]
   }

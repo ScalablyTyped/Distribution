@@ -57,10 +57,10 @@ object CreateDeploymentInput {
     deploymentGroupName: DeploymentGroupName = null,
     description: Description = null,
     fileExistsBehavior: FileExistsBehavior = null,
-    ignoreApplicationStopFailures: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreApplicationStopFailures: js.UndefOr[Boolean] = js.undefined,
     revision: RevisionLocation = null,
     targetInstances: TargetInstances = null,
-    updateOutdatedInstancesOnly: js.UndefOr[scala.Boolean] = js.undefined
+    updateOutdatedInstancesOnly: js.UndefOr[Boolean] = js.undefined
   ): CreateDeploymentInput = {
     val __obj = js.Dynamic.literal(applicationName = applicationName.asInstanceOf[js.Any])
     if (autoRollbackConfiguration != null) __obj.updateDynamic("autoRollbackConfiguration")(autoRollbackConfiguration.asInstanceOf[js.Any])
@@ -68,10 +68,10 @@ object CreateDeploymentInput {
     if (deploymentGroupName != null) __obj.updateDynamic("deploymentGroupName")(deploymentGroupName.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (fileExistsBehavior != null) __obj.updateDynamic("fileExistsBehavior")(fileExistsBehavior.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreApplicationStopFailures)) __obj.updateDynamic("ignoreApplicationStopFailures")(ignoreApplicationStopFailures.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreApplicationStopFailures)) __obj.updateDynamic("ignoreApplicationStopFailures")(ignoreApplicationStopFailures.get.asInstanceOf[js.Any])
     if (revision != null) __obj.updateDynamic("revision")(revision.asInstanceOf[js.Any])
     if (targetInstances != null) __obj.updateDynamic("targetInstances")(targetInstances.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateOutdatedInstancesOnly)) __obj.updateDynamic("updateOutdatedInstancesOnly")(updateOutdatedInstancesOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateOutdatedInstancesOnly)) __obj.updateDynamic("updateOutdatedInstancesOnly")(updateOutdatedInstancesOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDeploymentInput]
   }
 }

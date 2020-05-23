@@ -1,6 +1,5 @@
 package typings.dymoLabelFramework.dymo.label.framework
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,8 +8,8 @@ import scala.scalajs.js.annotation._
 sealed trait LabelWriterPrintQuality extends js.Object
 
 /**
-	 * Enumeration that specifies the print quality when printing to a LabelWriter printer.
-	 */
+  * Enumeration that specifies the print quality when printing to a LabelWriter printer.
+  */
 @JSGlobal("dymo.label.framework.LabelWriterPrintQuality")
 @js.native
 object LabelWriterPrintQuality extends js.Object {
@@ -25,17 +24,6 @@ object LabelWriterPrintQuality extends js.Object {
   /** Indicates that text print quality (fast) is used. */
   @js.native
   sealed trait Text extends LabelWriterPrintQuality
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[LabelWriterPrintQuality with Double] = js.native
-  /* 2 */ @js.native
-  object Auto extends TopLevel[Auto with Double]
-  
-  /* 1 */ @js.native
-  object BarcodeAndGraphics extends TopLevel[BarcodeAndGraphics with Double]
-  
-  /* 0 */ @js.native
-  object Text extends TopLevel[Text with Double]
   
 }
 

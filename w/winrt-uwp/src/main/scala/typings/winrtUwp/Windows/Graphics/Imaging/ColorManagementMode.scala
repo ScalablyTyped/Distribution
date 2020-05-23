@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Graphics.Imaging
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object ColorManagementMode extends js.Object {
   /** No color management is performed */
   @js.native
   sealed trait doNotColorManage extends ColorManagementMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ColorManagementMode with Double] = js.native
-  /* 1 */ @js.native
-  object colorManageToSRgb extends TopLevel[colorManageToSRgb with Double]
-  
-  /* 0 */ @js.native
-  object doNotColorManage extends TopLevel[doNotColorManage with Double]
   
 }
 

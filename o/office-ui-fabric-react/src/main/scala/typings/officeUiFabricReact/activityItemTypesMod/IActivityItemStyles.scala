@@ -76,40 +76,40 @@ trait IActivityItemStyles extends js.Object {
 object IActivityItemStyles {
   @scala.inline
   def apply(
-    activityContent: IStyle = null,
-    activityPersona: IStyle = null,
-    activityText: IStyle = null,
-    activityTypeIcon: IStyle = null,
-    commentText: IStyle = null,
-    doublePersona: IStyle = null,
-    isCompactContent: IStyle = null,
-    isCompactIcon: IStyle = null,
-    isCompactPersona: IStyle = null,
-    isCompactPersonaContainer: IStyle = null,
-    isCompactRoot: IStyle = null,
-    isCompactTimeStamp: IStyle = null,
-    personaContainer: IStyle = null,
-    pulsingBeacon: IStyle = null,
-    root: IStyle = null,
-    timeStamp: IStyle = null
+    activityContent: js.UndefOr[Null | IStyle] = js.undefined,
+    activityPersona: js.UndefOr[Null | IStyle] = js.undefined,
+    activityText: js.UndefOr[Null | IStyle] = js.undefined,
+    activityTypeIcon: js.UndefOr[Null | IStyle] = js.undefined,
+    commentText: js.UndefOr[Null | IStyle] = js.undefined,
+    doublePersona: js.UndefOr[Null | IStyle] = js.undefined,
+    isCompactContent: js.UndefOr[Null | IStyle] = js.undefined,
+    isCompactIcon: js.UndefOr[Null | IStyle] = js.undefined,
+    isCompactPersona: js.UndefOr[Null | IStyle] = js.undefined,
+    isCompactPersonaContainer: js.UndefOr[Null | IStyle] = js.undefined,
+    isCompactRoot: js.UndefOr[Null | IStyle] = js.undefined,
+    isCompactTimeStamp: js.UndefOr[Null | IStyle] = js.undefined,
+    personaContainer: js.UndefOr[Null | IStyle] = js.undefined,
+    pulsingBeacon: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined,
+    timeStamp: js.UndefOr[Null | IStyle] = js.undefined
   ): IActivityItemStyles = {
     val __obj = js.Dynamic.literal()
-    if (activityContent != null) __obj.updateDynamic("activityContent")(activityContent.asInstanceOf[js.Any])
-    if (activityPersona != null) __obj.updateDynamic("activityPersona")(activityPersona.asInstanceOf[js.Any])
-    if (activityText != null) __obj.updateDynamic("activityText")(activityText.asInstanceOf[js.Any])
-    if (activityTypeIcon != null) __obj.updateDynamic("activityTypeIcon")(activityTypeIcon.asInstanceOf[js.Any])
-    if (commentText != null) __obj.updateDynamic("commentText")(commentText.asInstanceOf[js.Any])
-    if (doublePersona != null) __obj.updateDynamic("doublePersona")(doublePersona.asInstanceOf[js.Any])
-    if (isCompactContent != null) __obj.updateDynamic("isCompactContent")(isCompactContent.asInstanceOf[js.Any])
-    if (isCompactIcon != null) __obj.updateDynamic("isCompactIcon")(isCompactIcon.asInstanceOf[js.Any])
-    if (isCompactPersona != null) __obj.updateDynamic("isCompactPersona")(isCompactPersona.asInstanceOf[js.Any])
-    if (isCompactPersonaContainer != null) __obj.updateDynamic("isCompactPersonaContainer")(isCompactPersonaContainer.asInstanceOf[js.Any])
-    if (isCompactRoot != null) __obj.updateDynamic("isCompactRoot")(isCompactRoot.asInstanceOf[js.Any])
-    if (isCompactTimeStamp != null) __obj.updateDynamic("isCompactTimeStamp")(isCompactTimeStamp.asInstanceOf[js.Any])
-    if (personaContainer != null) __obj.updateDynamic("personaContainer")(personaContainer.asInstanceOf[js.Any])
-    if (pulsingBeacon != null) __obj.updateDynamic("pulsingBeacon")(pulsingBeacon.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (timeStamp != null) __obj.updateDynamic("timeStamp")(timeStamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(activityContent)) __obj.updateDynamic("activityContent")(activityContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(activityPersona)) __obj.updateDynamic("activityPersona")(activityPersona.asInstanceOf[js.Any])
+    if (!js.isUndefined(activityText)) __obj.updateDynamic("activityText")(activityText.asInstanceOf[js.Any])
+    if (!js.isUndefined(activityTypeIcon)) __obj.updateDynamic("activityTypeIcon")(activityTypeIcon.asInstanceOf[js.Any])
+    if (!js.isUndefined(commentText)) __obj.updateDynamic("commentText")(commentText.asInstanceOf[js.Any])
+    if (!js.isUndefined(doublePersona)) __obj.updateDynamic("doublePersona")(doublePersona.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCompactContent)) __obj.updateDynamic("isCompactContent")(isCompactContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCompactIcon)) __obj.updateDynamic("isCompactIcon")(isCompactIcon.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCompactPersona)) __obj.updateDynamic("isCompactPersona")(isCompactPersona.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCompactPersonaContainer)) __obj.updateDynamic("isCompactPersonaContainer")(isCompactPersonaContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCompactRoot)) __obj.updateDynamic("isCompactRoot")(isCompactRoot.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCompactTimeStamp)) __obj.updateDynamic("isCompactTimeStamp")(isCompactTimeStamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(personaContainer)) __obj.updateDynamic("personaContainer")(personaContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(pulsingBeacon)) __obj.updateDynamic("pulsingBeacon")(pulsingBeacon.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeStamp)) __obj.updateDynamic("timeStamp")(timeStamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[IActivityItemStyles]
   }
 }

@@ -6,12 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides data for a StatusChanged event on a BluetoothLEAdvertisementPublisher . */
-@JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatusChangedEventArgs")
-@js.native
-abstract class BluetoothLEAdvertisementPublisherStatusChangedEventArgs () extends js.Object {
+trait BluetoothLEAdvertisementPublisherStatusChangedEventArgs extends js.Object {
   /** Gets the error status for a StatusChanged event on a BluetoothLEAdvertisementPublisher . */
-  var error: BluetoothError = js.native
+  var error: BluetoothError
   /** Gets the new status of the BluetoothLEAdvertisementPublisher . */
-  var status: BluetoothLEAdvertisementPublisherStatus = js.native
+  var status: BluetoothLEAdvertisementPublisherStatus
+}
+
+object BluetoothLEAdvertisementPublisherStatusChangedEventArgs {
+  @scala.inline
+  def apply(error: BluetoothError, status: BluetoothLEAdvertisementPublisherStatus): BluetoothLEAdvertisementPublisherStatusChangedEventArgs = {
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BluetoothLEAdvertisementPublisherStatusChangedEventArgs]
+  }
 }
 

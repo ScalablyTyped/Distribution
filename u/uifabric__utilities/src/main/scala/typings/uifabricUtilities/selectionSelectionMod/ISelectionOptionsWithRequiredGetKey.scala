@@ -11,6 +11,7 @@ trait ISelectionOptionsWithRequiredGetKey[TItem] extends js.Object {
   var canSelectItem: js.UndefOr[js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], Boolean]] = js.native
   /** Custom logic to generate item keys. Required if `TItem` does not have a `key` property. */
   var getKey: js.UndefOr[js.Function2[/* item */ TItem, js.UndefOr[Double], Double | String]] = js.native
+  var items: js.UndefOr[js.Array[TItem]] = js.native
   var onSelectionChanged: js.UndefOr[js.Function0[Unit]] = js.native
   var selectionMode: js.UndefOr[SelectionMode] = js.native
 }

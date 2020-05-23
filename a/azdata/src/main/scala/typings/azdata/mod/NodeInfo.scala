@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation._
 
 trait NodeInfo extends js.Object {
   /**
-  		 * Informs who provides the children to a node, used by data explorer tree view api
-  		 */
+    * Informs who provides the children to a node, used by data explorer tree view api
+    */
   var childProvider: js.UndefOr[String] = js.undefined
   var errorMessage: String
   /**
-  		 * Optional iconType for the object in the tree. Currently this only supports
-  		 * an icon name or SqlThemeIcon name, rather than a path to an icon.
-  		 * If not defined, the nodeType + nodeStatus / nodeSubType values
-  		 * will be used instead.
-  		 */
+    * Optional iconType for the object in the tree. Currently this only supports
+    * an icon name or SqlThemeIcon name, rather than a path to an icon.
+    * If not defined, the nodeType + nodeStatus / nodeSubType values
+    * will be used instead.
+    */
   var iconType: js.UndefOr[String | SqlThemeIcon] = js.undefined
   var isLeaf: Boolean
   var label: String
@@ -25,8 +25,8 @@ trait NodeInfo extends js.Object {
   var nodeSubType: String
   var nodeType: String
   /**
-  		 * Holds the connection profile for nodes, used by data explorer tree view api
-  		 */
+    * Holds the connection profile for nodes, used by data explorer tree view api
+    */
   var payload: js.UndefOr[js.Any] = js.undefined
 }
 

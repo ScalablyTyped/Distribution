@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLButtonElement")
 @js.native
-class HTMLButtonElement protected () extends js.Object {
+trait HTMLButtonElement extends js.Object {
   @JSName("MSHTML.HTMLButtonElement_typekey")
   var MSHTMLDotHTMLButtonElement_typekey: HTMLButtonElement = js.native
   var accessKey: String = js.native

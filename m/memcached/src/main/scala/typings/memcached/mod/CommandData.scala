@@ -29,7 +29,7 @@ object CommandData {
     validate: js.Array[js.Tuple2[String, js.Function1[/* repeated */ _, _]]],
     cas: String = null,
     key: String = null,
-    lifetime: Int | Double = null,
+    lifetime: js.UndefOr[Double] = js.undefined,
     redundancyEnabled: js.UndefOr[Boolean] = js.undefined,
     value: js.Any = null
   ): CommandData = {
@@ -37,8 +37,8 @@ object CommandData {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (cas != null) __obj.updateDynamic("cas")(cas.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (lifetime != null) __obj.updateDynamic("lifetime")(lifetime.asInstanceOf[js.Any])
-    if (!js.isUndefined(redundancyEnabled)) __obj.updateDynamic("redundancyEnabled")(redundancyEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(lifetime)) __obj.updateDynamic("lifetime")(lifetime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(redundancyEnabled)) __obj.updateDynamic("redundancyEnabled")(redundancyEnabled.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandData]
   }

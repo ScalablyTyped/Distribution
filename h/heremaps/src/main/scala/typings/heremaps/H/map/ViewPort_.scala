@@ -1,6 +1,5 @@
 package typings.heremaps.H.map
 
-import typings.heremaps.H.map.ViewPort.Options
 import typings.heremaps.H.map.ViewPort.Padding
 import typings.heremaps.H.math.Point
 import typings.heremaps.H.util.EventTarget
@@ -19,18 +18,10 @@ import scala.scalajs.js.annotation._
   * @property padding {H.map.ViewPort.Padding} - This property holds this viewport&#x27;s current padding
   * @property center {H.math.Point} - This property holds this viewport&#x27;s current center point
   */
-@JSGlobal("H.map.ViewPort")
 @js.native
-class ViewPort_ protected ()
+trait ViewPort_
   extends EventTarget
      with IInteraction {
-  /**
-    * Constructor
-    * @param element {Element} - html element were map will be rendered
-    * @param opt_options {H.map.ViewPort.Options=} - optional configuration parameters
-    */
-  def this(element: Element) = this()
-  def this(element: Element, opt_options: Options) = this()
   var center: Point = js.native
   var element: Element = js.native
   var height: Double = js.native

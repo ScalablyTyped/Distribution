@@ -17,9 +17,9 @@ trait GridColumnGapProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] ex
 
 object GridColumnGapProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](gridColumnGap: ResponsiveValue[TVal, ThemeType] = null): GridColumnGapProps[ThemeType, TVal] = {
+  def apply[ThemeType, TVal](gridColumnGap: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): GridColumnGapProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
-    if (gridColumnGap != null) __obj.updateDynamic("gridColumnGap")(gridColumnGap.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridColumnGap)) __obj.updateDynamic("gridColumnGap")(gridColumnGap.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridColumnGapProps[ThemeType, TVal]]
   }
 }

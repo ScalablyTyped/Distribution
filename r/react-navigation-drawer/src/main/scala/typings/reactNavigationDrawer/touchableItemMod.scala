@@ -4,6 +4,8 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.react.mod.Component
 import typings.react.mod.ComponentProps
 import typings.reactNative.mod.TouchableWithoutFeedback
+import typings.reactNavigationDrawer.anon.Borderless
+import typings.reactNavigationDrawer.anon.PressColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,9 +23,9 @@ object touchableItemMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonBorderless = js.native
+    var defaultProps: Borderless = js.native
   }
   
-  type Props = ComponentProps[Instantiable0[TouchableWithoutFeedback]] with AnonPressColor
+  type Props = ComponentProps[Instantiable0[TouchableWithoutFeedback]] with PressColor
 }
 

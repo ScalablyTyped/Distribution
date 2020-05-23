@@ -1,9 +1,9 @@
 package typings.hlsJs.hlsLightMod
 
-import typings.hlsJs.AnonAUDIOTRACKLOADED
-import typings.hlsJs.AnonAUDIOTRACKLOADERROR
-import typings.hlsJs.AnonKEYSYSTEMERROR
-import typings.hlsJs.PartialConfig
+import typings.hlsJs.anon.AUDIOTRACKLOADED
+import typings.hlsJs.anon.AUDIOTRACKLOADERROR
+import typings.hlsJs.anon.KEYSYSTEMERROR
+import typings.hlsJs.anon.PartialConfig
 import typings.hlsJs.mod.Config
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,15 +30,15 @@ object ^ extends js.Object {
   /**
     * Hls error details
     */
-  var ErrorDetails: AnonAUDIOTRACKLOADERROR = js.native
+  var ErrorDetails: AUDIOTRACKLOADERROR = js.native
   /**
     * Hls error types
     */
-  var ErrorTypes: AnonKEYSYSTEMERROR = js.native
+  var ErrorTypes: KEYSYSTEMERROR = js.native
   /**
     * Hls events
     */
-  var Events: AnonAUDIOTRACKLOADED = js.native
+  var Events: AUDIOTRACKLOADED = js.native
   /**
     * returns hls.js dist version number
     */

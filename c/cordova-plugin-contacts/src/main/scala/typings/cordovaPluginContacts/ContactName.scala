@@ -1,6 +1,5 @@
 package typings.cordovaPluginContacts
 
-import org.scalablytyped.runtime.Instantiable6
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,17 +20,24 @@ trait ContactName extends js.Object {
   var middleName: js.UndefOr[String] = js.undefined
 }
 
-@JSGlobal("ContactName")
-@js.native
-object ContactName
-  extends /** Constructor for ContactName object */
-Instantiable6[
-      js.UndefOr[/* formatted */ String], 
-      js.UndefOr[/* familyName */ String], 
-      js.UndefOr[/* givenName */ String], 
-      js.UndefOr[/* middleName */ String], 
-      js.UndefOr[/* honorificPrefix */ String], 
-      js.UndefOr[/* honorificSuffix */ String], 
-      ContactName
-    ]
+object ContactName {
+  @scala.inline
+  def apply(
+    familyName: String = null,
+    formatted: String = null,
+    givenName: String = null,
+    honorificPrefix: String = null,
+    honorificSuffix: String = null,
+    middleName: String = null
+  ): ContactName = {
+    val __obj = js.Dynamic.literal()
+    if (familyName != null) __obj.updateDynamic("familyName")(familyName.asInstanceOf[js.Any])
+    if (formatted != null) __obj.updateDynamic("formatted")(formatted.asInstanceOf[js.Any])
+    if (givenName != null) __obj.updateDynamic("givenName")(givenName.asInstanceOf[js.Any])
+    if (honorificPrefix != null) __obj.updateDynamic("honorificPrefix")(honorificPrefix.asInstanceOf[js.Any])
+    if (honorificSuffix != null) __obj.updateDynamic("honorificSuffix")(honorificSuffix.asInstanceOf[js.Any])
+    if (middleName != null) __obj.updateDynamic("middleName")(middleName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ContactName]
+  }
+}
 

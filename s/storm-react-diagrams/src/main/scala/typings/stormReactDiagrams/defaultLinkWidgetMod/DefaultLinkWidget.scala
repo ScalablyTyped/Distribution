@@ -1,11 +1,11 @@
 package typings.stormReactDiagrams.defaultLinkWidgetMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.std.SVGPathElement
-import typings.stormReactDiagrams.AnonPath
+import typings.stormReactDiagrams.anon.Path
 import typings.stormReactDiagrams.baseWidgetMod.BaseWidget
 import typings.stormReactDiagrams.labelModelMod.LabelModel
 import typings.stormReactDiagrams.pathFindingMod.default
@@ -27,7 +27,7 @@ class DefaultLinkWidget protected () extends BaseWidget[DefaultLinkProps, Defaul
   def componentDidMount_MDefaultLinkWidget(): Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MDefaultLinkWidget(): Unit = js.native
-  def findPathAndRelativePositionToRenderLabel(index: Double): AnonPath = js.native
+  def findPathAndRelativePositionToRenderLabel(index: Double): Path = js.native
   def generateLabel(label: LabelModel): Element = js.native
   def generateLink(path: String, extraProps: js.Any, id: String): Element = js.native
   def generateLink(path: String, extraProps: js.Any, id: Double): Element = js.native

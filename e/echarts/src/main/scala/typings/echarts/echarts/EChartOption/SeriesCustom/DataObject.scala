@@ -1,8 +1,8 @@
 package typings.echarts.echarts.EChartOption.SeriesCustom
 
-import typings.echarts.AnonBorderType
-import typings.echarts.AnonExtraCssText
-import typings.echarts.AnonItemStyleAnonBorderType
+import typings.echarts.anon.BorderType
+import typings.echarts.anon.ExtraCssText
+import typings.echarts.anon.ItemStyleBorderType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,11 +11,11 @@ trait DataObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-custom.data.emphasis
     */
-  var emphasis: js.UndefOr[AnonItemStyleAnonBorderType] = js.undefined
+  var emphasis: js.UndefOr[ItemStyleBorderType] = js.undefined
   /**
     * @see https://echarts.apache.org/en/option.html#series-custom.data.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderType] = js.undefined
+  var itemStyle: js.UndefOr[BorderType] = js.undefined
   /**
     * Name of data item.
     *
@@ -29,7 +29,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.data.tooltip
     */
-  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
   /**
     * Value of data item.
     *
@@ -42,10 +42,10 @@ trait DataObject extends js.Object {
 object DataObject {
   @scala.inline
   def apply(
-    emphasis: AnonItemStyleAnonBorderType = null,
-    itemStyle: AnonBorderType = null,
+    emphasis: ItemStyleBorderType = null,
+    itemStyle: BorderType = null,
     name: String = null,
-    tooltip: AnonExtraCssText = null,
+    tooltip: ExtraCssText = null,
     value: Double | js.Array[Double] = null
   ): DataObject = {
     val __obj = js.Dynamic.literal()

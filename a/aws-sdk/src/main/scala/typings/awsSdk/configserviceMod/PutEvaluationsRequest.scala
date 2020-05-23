@@ -22,14 +22,10 @@ trait PutEvaluationsRequest extends js.Object {
 
 object PutEvaluationsRequest {
   @scala.inline
-  def apply(
-    ResultToken: String,
-    Evaluations: Evaluations = null,
-    TestMode: js.UndefOr[scala.Boolean] = js.undefined
-  ): PutEvaluationsRequest = {
+  def apply(ResultToken: String, Evaluations: Evaluations = null, TestMode: js.UndefOr[Boolean] = js.undefined): PutEvaluationsRequest = {
     val __obj = js.Dynamic.literal(ResultToken = ResultToken.asInstanceOf[js.Any])
     if (Evaluations != null) __obj.updateDynamic("Evaluations")(Evaluations.asInstanceOf[js.Any])
-    if (!js.isUndefined(TestMode)) __obj.updateDynamic("TestMode")(TestMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(TestMode)) __obj.updateDynamic("TestMode")(TestMode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutEvaluationsRequest]
   }
 }

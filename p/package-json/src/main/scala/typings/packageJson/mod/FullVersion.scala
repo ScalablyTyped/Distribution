@@ -1,10 +1,10 @@
 package typings.packageJson.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.packageJson.AnonEmail
-import typings.packageJson.AnonIntegrity
-import typings.packageJson.AnonType
-import typings.packageJson.AnonUrl
+import typings.packageJson.anon.Email
+import typings.packageJson.anon.Integrity
+import typings.packageJson.anon.Type
+import typings.packageJson.anon.Url
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,13 +33,13 @@ object FullVersion {
     _nodeVersion: String,
     _npmUser: String,
     _npmVersion: String,
-    dist: AnonIntegrity,
+    dist: Integrity,
     name: String,
     version: String,
     _hasShrinkwrap: js.UndefOr[Boolean] = js.undefined,
     author: Person = null,
     bin: StringDictionary[String] = null,
-    bugs: AnonEmail | AnonUrl = null,
+    bugs: Email | Url = null,
     bundleDependencies: StringDictionary[String] = null,
     contributors: js.Array[Person] = null,
     dependencies: StringDictionary[String] = null,
@@ -60,13 +60,13 @@ object FullVersion {
     peerDependencies: StringDictionary[String] = null,
     readme: String = null,
     readmeFilename: String = null,
-    repository: AnonType = null,
+    repository: Type = null,
     scripts: StringDictionary[String] = null,
     types: String = null,
     typings_ : String = null
   ): FullVersion = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], _nodeVersion = _nodeVersion.asInstanceOf[js.Any], _npmUser = _npmUser.asInstanceOf[js.Any], _npmVersion = _npmVersion.asInstanceOf[js.Any], dist = dist.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-    if (!js.isUndefined(_hasShrinkwrap)) __obj.updateDynamic("_hasShrinkwrap")(_hasShrinkwrap.asInstanceOf[js.Any])
+    if (!js.isUndefined(_hasShrinkwrap)) __obj.updateDynamic("_hasShrinkwrap")(_hasShrinkwrap.get.asInstanceOf[js.Any])
     if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
     if (bin != null) __obj.updateDynamic("bin")(bin.asInstanceOf[js.Any])
     if (bugs != null) __obj.updateDynamic("bugs")(bugs.asInstanceOf[js.Any])

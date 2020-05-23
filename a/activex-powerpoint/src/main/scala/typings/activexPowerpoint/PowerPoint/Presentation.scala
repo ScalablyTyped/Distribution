@@ -27,9 +27,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.Presentation")
 @js.native
-class Presentation protected () extends js.Object {
+trait Presentation extends js.Object {
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   val Broadcast: typings.activexPowerpoint.PowerPoint.Broadcast = js.native
   val BuiltInDocumentProperties: js.Any = js.native

@@ -1,6 +1,7 @@
 package typings.reactRange
 
 import typings.react.mod.CSSProperties
+import typings.reactRange.anon.AllowOverlap
 import typings.reactRange.rangeMod.default
 import typings.reactRange.typesMod.IProps
 import typings.reactRange.typesMod.ITrackBackground
@@ -53,7 +54,7 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object Range extends js.Object {
-    var defaultProps: AnonAllowOverlap = js.native
+    var defaultProps: AllowOverlap = js.native
   }
   
 }

@@ -1,6 +1,5 @@
 package typings.sharepoint.SP.Taxonomy
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,14 +15,6 @@ object StringMatchOption extends js.Object {
   
   @js.native
   sealed trait startsWith extends StringMatchOption
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[StringMatchOption with Double] = js.native
-  /* 1 */ @js.native
-  object exactMatch extends TopLevel[exactMatch with Double]
-  
-  /* 0 */ @js.native
-  object startsWith extends TopLevel[startsWith with Double]
   
 }
 

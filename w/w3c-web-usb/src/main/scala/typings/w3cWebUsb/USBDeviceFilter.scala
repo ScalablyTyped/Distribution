@@ -16,20 +16,20 @@ trait USBDeviceFilter extends js.Object {
 object USBDeviceFilter {
   @scala.inline
   def apply(
-    classCode: Int | Double = null,
-    productId: Int | Double = null,
-    protocolCode: Int | Double = null,
+    classCode: js.UndefOr[Double] = js.undefined,
+    productId: js.UndefOr[Double] = js.undefined,
+    protocolCode: js.UndefOr[Double] = js.undefined,
     serialNumber: String = null,
-    subclassCode: Int | Double = null,
-    vendorId: Int | Double = null
+    subclassCode: js.UndefOr[Double] = js.undefined,
+    vendorId: js.UndefOr[Double] = js.undefined
   ): USBDeviceFilter = {
     val __obj = js.Dynamic.literal()
-    if (classCode != null) __obj.updateDynamic("classCode")(classCode.asInstanceOf[js.Any])
-    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
-    if (protocolCode != null) __obj.updateDynamic("protocolCode")(protocolCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(classCode)) __obj.updateDynamic("classCode")(classCode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(productId)) __obj.updateDynamic("productId")(productId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(protocolCode)) __obj.updateDynamic("protocolCode")(protocolCode.get.asInstanceOf[js.Any])
     if (serialNumber != null) __obj.updateDynamic("serialNumber")(serialNumber.asInstanceOf[js.Any])
-    if (subclassCode != null) __obj.updateDynamic("subclassCode")(subclassCode.asInstanceOf[js.Any])
-    if (vendorId != null) __obj.updateDynamic("vendorId")(vendorId.asInstanceOf[js.Any])
+    if (!js.isUndefined(subclassCode)) __obj.updateDynamic("subclassCode")(subclassCode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(vendorId)) __obj.updateDynamic("vendorId")(vendorId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[USBDeviceFilter]
   }
 }

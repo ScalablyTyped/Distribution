@@ -204,7 +204,7 @@ trait PlusWebview extends js.Object {
   /**
     * 窗口标题栏控件样式
     * 标题栏控件固定高度为44px,可通过Webview窗口对象的getTitleNView方法获取标题栏原生控件对象动态绘制内容。
-    * 	可以通过WebviewObject对象的getTitleNView()获取标题栏的NView对象，然后调用其setStyle方法更新样式。
+    *     可以通过WebviewObject对象的getTitleNView()获取标题栏的NView对象，然后调用其setStyle方法更新样式。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
@@ -224,7 +224,7 @@ trait PlusWebview extends js.Object {
   /**
     * 获取所有Webview窗口
     * 获取应用中已创建的所有Webview窗口，包括所有未显示的Webview窗口。
-    * 	返回WebviewObject对象在数组中按创建的先后顺序排列，即数组中第一个WebviewObject对象用是加载应用的入口页面。
+    *     返回WebviewObject对象在数组中按创建的先后顺序排列，即数组中第一个WebviewObject对象用是加载应用的入口页面。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
@@ -260,8 +260,8 @@ trait PlusWebview extends js.Object {
   def currentWebview(): PlusWebviewWebviewObject = js.native
   /**
     * 获取Webview默认是否开启硬件加速
-    * 由于不同设备对硬件加速的支持情况存在差异，开启硬件加速能加速HTML页面的渲染，但也会消耗更多的系统资源，从而导致在部分设备上可能出现闪屏、发虚、分块渲染等问题，	因此5+ Runtime会根据设备实际支持情况自动选择是否开启硬件加速。
-    * 	关闭硬件加速则可能会导致Webview页面无法支持Video标签播放视频等问题，如果在特定情况下需要调整修改默认开启硬件加速的行为，则可通过plus.webview.defaultHardwareAccelerated()方法获取当前设备默认是否开启硬件加速状态，从而决定是否需要显式开启或关闭指定Webview的硬件加速功能（通过WebviewStyles的hardwareAccelerated属性设置）。
+    * 由于不同设备对硬件加速的支持情况存在差异，开启硬件加速能加速HTML页面的渲染，但也会消耗更多的系统资源，从而导致在部分设备上可能出现闪屏、发虚、分块渲染等问题，    因此5+ Runtime会根据设备实际支持情况自动选择是否开启硬件加速。
+    *     关闭硬件加速则可能会导致Webview页面无法支持Video标签播放视频等问题，如果在特定情况下需要调整修改默认开启硬件加速的行为，则可通过plus.webview.defaultHardwareAccelerated()方法获取当前设备默认是否开启硬件加速状态，从而决定是否需要显式开启或关闭指定Webview的硬件加速功能（通过WebviewStyles的hardwareAccelerated属性设置）。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
@@ -295,8 +295,8 @@ trait PlusWebview extends js.Object {
   /**
     * 查找指定标识的WebviewObject窗口
     * 在已创建的窗口列表中查找指定标识的Webview窗口并返回。
-    * 	若没有查找到指定标识的窗口则返回null，若存在多个相同标识的Webview窗口，则返回第一个创建的Webview窗口。
-    * 	如果要获取应用入口页面所属的Webview窗口，其标识为应用的%APPID%，可通过plus.runtime.appid获取。
+    *     若没有查找到指定标识的窗口则返回null，若存在多个相同标识的Webview窗口，则返回第一个创建的Webview窗口。
+    *     如果要获取应用入口页面所属的Webview窗口，其标识为应用的%APPID%，可通过plus.runtime.appid获取。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
@@ -330,8 +330,8 @@ trait PlusWebview extends js.Object {
   /**
     * 预载网络页面
     * 预载网络页面会向服务器发起http/https请求获取html页面内容，
-    * 	待Webview窗口加载此url页面时会则根据缓存机制优先使用预载的页面内容(加快页面显示速度)。
-    * 	注意：预载网络页面仅在运行期生效，为了节省内存仅保留最后5个预载页面数据。
+    *     待Webview窗口加载此url页面时会则根据缓存机制优先使用预载的页面内容(加快页面显示速度)。
+    *     注意：预载网络页面仅在运行期生效，为了节省内存仅保留最后5个预载页面数据。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
@@ -340,8 +340,8 @@ trait PlusWebview extends js.Object {
   /**
     * 预载网络页面（多个地址）
     * 预载网络页面会向服务器发起http/https请求获取html页面内容，
-    * 	待Webview窗口加载此url页面时会则根据缓存机制优先使用预载的页面内容(加快页面显示速度)。
-    * 	注意：预载网络页面仅在运行期生效，为了节省内存仅保留最后5个预载页面数据。
+    *     待Webview窗口加载此url页面时会则根据缓存机制优先使用预载的页面内容(加快页面显示速度)。
+    *     注意：预载网络页面仅在运行期生效，为了节省内存仅保留最后5个预载页面数据。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
@@ -368,7 +368,7 @@ trait PlusWebview extends js.Object {
   /**
     * Webview窗口组合动画
     * 同步组合两个Webview窗口动画，动画完成后窗口的位置会发生变化，一次需要在动画属性参数中设置动画起始位置、结束位置等。
-    * 	注意：此动画操作会改变窗口位置（如left值等），再次调用show方法时需要确保其位置是否在可视区域，如果不在可视区域则需要调用窗口的setStyle方法设置其位置到可视区域内，如setStyle({left:'0px'});。
+    *     注意：此动画操作会改变窗口位置（如left值等），再次调用show方法时需要确保其位置是否在可视区域，如果不在可视区域则需要调用窗口的setStyle方法设置其位置到可视区域内，如setStyle({left:'0px'});。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */

@@ -1,6 +1,6 @@
 package typings.cathoQuantum.checkboxMod
 
-import typings.cathoQuantum.AnonColorsSpacing
+import typings.cathoQuantum.anon.ColorsSpacing
 import typings.cathoQuantum.cathoQuantumStrings.button
 import typings.cathoQuantum.cathoQuantumStrings.checkbox
 import typings.cathoQuantum.cathoQuantumStrings.large
@@ -9,7 +9,7 @@ import typings.cathoQuantum.cathoQuantumStrings.small
 import typings.cathoQuantum.cathoQuantumStrings.xlarge
 import typings.cathoQuantum.cathoQuantumStrings.xsmall
 import typings.react.mod.ChangeEvent
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,7 +28,7 @@ trait CheckboxGroupProps extends js.Object {
   ] = js.undefined
   var options: js.UndefOr[Options] = js.undefined
   var size: js.UndefOr[xsmall | small | medium | large | xlarge] = js.undefined
-  var theme: js.UndefOr[AnonColorsSpacing] = js.undefined
+  var theme: js.UndefOr[ColorsSpacing] = js.undefined
   var `type`: checkbox | button
 }
 
@@ -42,13 +42,13 @@ object CheckboxGroupProps {
     onChange: (/* items */ js.UndefOr[Options], /* event */ js.UndefOr[ChangeEvent[HTMLInputElement]]) => Unit = null,
     options: Options = null,
     size: xsmall | small | medium | large | xlarge = null,
-    theme: AnonColorsSpacing = null
+    theme: ColorsSpacing = null
   ): CheckboxGroupProps = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

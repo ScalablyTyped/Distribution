@@ -1,9 +1,9 @@
 package typings.jupyterlabDocumentsearch
 
+import typings.jupyterlabDocumentsearch.anon.APPLET
 import typings.jupyterlabDocumentsearch.interfacesMod.IFiltersType
 import typings.jupyterlabDocumentsearch.interfacesMod.ISearchMatch
 import typings.jupyterlabDocumentsearch.interfacesMod.ISearchProvider
-import typings.jupyterlabDocumentsearch.jupyterlabDocumentsearchBooleans.`true`
 import typings.luminoSignaling.mod.ISignal
 import typings.luminoWidgets.mod.Widget
 import typings.std.RegExp
@@ -41,13 +41,6 @@ object genericsearchproviderMod extends js.Object {
       */
     /* CompleteClass */
     override val isReadOnly: Boolean = js.native
-    /**
-      * Set to true if the widget under search is read-only, false
-      * if it is editable.  Will be used to determine whether to show
-      * the replace option.
-      */
-    @JSName("isReadOnly")
-    val isReadOnly_GenericSearchProvider: `true` = js.native
     /**
       * Set whether or not this will wrap to the beginning
       * or end of the document on invocations of highlightNext or highlightPrevious, respectively
@@ -167,7 +160,7 @@ object genericsearchproviderMod extends js.Object {
       *
       * Note: nodeName is capitalized, so we do the same here
       */
-    var UNSUPPORTED_ELEMENTS: AnonAPPLET = js.native
+    var UNSUPPORTED_ELEMENTS: APPLET = js.native
     /**
       * Report whether or not this provider has the ability to search on the given object
       */

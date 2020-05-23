@@ -10,9 +10,9 @@ trait RotationalLockEquationOptions extends js.Object {
 
 object RotationalLockEquationOptions {
   @scala.inline
-  def apply(angle: Int | Double = null): RotationalLockEquationOptions = {
+  def apply(angle: js.UndefOr[Double] = js.undefined): RotationalLockEquationOptions = {
     val __obj = js.Dynamic.literal()
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RotationalLockEquationOptions]
   }
 }

@@ -14,7 +14,7 @@ object ApplyOptions {
   @scala.inline
   def apply(noWrapParams: js.UndefOr[Boolean] = js.undefined, outputFormat: OutputFormat = null): ApplyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(noWrapParams)) __obj.updateDynamic("noWrapParams")(noWrapParams.asInstanceOf[js.Any])
+    if (!js.isUndefined(noWrapParams)) __obj.updateDynamic("noWrapParams")(noWrapParams.get.asInstanceOf[js.Any])
     if (outputFormat != null) __obj.updateDynamic("outputFormat")(outputFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplyOptions]
   }

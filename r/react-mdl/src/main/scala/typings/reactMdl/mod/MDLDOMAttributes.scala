@@ -25,8 +25,8 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
-import typings.reactMdl.AnonHtml
-import typings.std.Event_
+import typings.reactMdl.anon.Html
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +35,7 @@ import scala.scalajs.js.annotation._
 trait MDLDOMAttributes[T] extends js.Object {
   // DOMAttributes (minus onClick)
   var children: js.UndefOr[ReactNode] = js.undefined
-  var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.undefined
+  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
   // Media Events
   var onAbort: js.UndefOr[ReactEventHandler[T]] = js.undefined
   var onBlur: js.UndefOr[FocusEventHandler[T]] = js.undefined
@@ -116,11 +116,11 @@ object MDLDOMAttributes {
   @scala.inline
   def apply[T](
     children: ReactNode = null,
-    dangerouslySetInnerHTML: AnonHtml = null,
-    onAbort: SyntheticEvent[T, Event_] => Unit = null,
+    dangerouslySetInnerHTML: Html = null,
+    onAbort: SyntheticEvent[T, Event] => Unit = null,
     onBlur: FocusEvent[T] => Unit = null,
-    onCanPlay: SyntheticEvent[T, Event_] => Unit = null,
-    onCanPlayThrough: SyntheticEvent[T, Event_] => Unit = null,
+    onCanPlay: SyntheticEvent[T, Event] => Unit = null,
+    onCanPlayThrough: SyntheticEvent[T, Event] => Unit = null,
     onCompositionEnd: CompositionEvent[T] => Unit = null,
     onCompositionStart: CompositionEvent[T] => Unit = null,
     onCompositionUpdate: CompositionEvent[T] => Unit = null,
@@ -136,20 +136,20 @@ object MDLDOMAttributes {
     onDragOver: DragEvent[T] => Unit = null,
     onDragStart: DragEvent[T] => Unit = null,
     onDrop: DragEvent[T] => Unit = null,
-    onDurationChange: SyntheticEvent[T, Event_] => Unit = null,
-    onEmptied: SyntheticEvent[T, Event_] => Unit = null,
-    onEncrypted: SyntheticEvent[T, Event_] => Unit = null,
-    onEnded: SyntheticEvent[T, Event_] => Unit = null,
-    onError: SyntheticEvent[T, Event_] => Unit = null,
+    onDurationChange: SyntheticEvent[T, Event] => Unit = null,
+    onEmptied: SyntheticEvent[T, Event] => Unit = null,
+    onEncrypted: SyntheticEvent[T, Event] => Unit = null,
+    onEnded: SyntheticEvent[T, Event] => Unit = null,
+    onError: SyntheticEvent[T, Event] => Unit = null,
     onFocus: FocusEvent[T] => Unit = null,
     onInput: FormEvent[T] => Unit = null,
     onKeyDown: KeyboardEvent[T] => Unit = null,
     onKeyPress: KeyboardEvent[T] => Unit = null,
     onKeyUp: KeyboardEvent[T] => Unit = null,
-    onLoad: SyntheticEvent[T, Event_] => Unit = null,
-    onLoadStart: SyntheticEvent[T, Event_] => Unit = null,
-    onLoadedData: SyntheticEvent[T, Event_] => Unit = null,
-    onLoadedMetadata: SyntheticEvent[T, Event_] => Unit = null,
+    onLoad: SyntheticEvent[T, Event] => Unit = null,
+    onLoadStart: SyntheticEvent[T, Event] => Unit = null,
+    onLoadedData: SyntheticEvent[T, Event] => Unit = null,
+    onLoadedMetadata: SyntheticEvent[T, Event] => Unit = null,
     onMouseDown: MouseEvent[T, NativeMouseEvent] => Unit = null,
     onMouseEnter: MouseEvent[T, NativeMouseEvent] => Unit = null,
     onMouseLeave: MouseEvent[T, NativeMouseEvent] => Unit = null,
@@ -158,25 +158,25 @@ object MDLDOMAttributes {
     onMouseOver: MouseEvent[T, NativeMouseEvent] => Unit = null,
     onMouseUp: MouseEvent[T, NativeMouseEvent] => Unit = null,
     onPaste: ClipboardEvent[T] => Unit = null,
-    onPause: SyntheticEvent[T, Event_] => Unit = null,
-    onPlay: SyntheticEvent[T, Event_] => Unit = null,
-    onPlaying: SyntheticEvent[T, Event_] => Unit = null,
-    onProgress: SyntheticEvent[T, Event_] => Unit = null,
-    onRateChange: SyntheticEvent[T, Event_] => Unit = null,
+    onPause: SyntheticEvent[T, Event] => Unit = null,
+    onPlay: SyntheticEvent[T, Event] => Unit = null,
+    onPlaying: SyntheticEvent[T, Event] => Unit = null,
+    onProgress: SyntheticEvent[T, Event] => Unit = null,
+    onRateChange: SyntheticEvent[T, Event] => Unit = null,
     onScroll: UIEvent[T, NativeUIEvent] => Unit = null,
-    onSeeked: SyntheticEvent[T, Event_] => Unit = null,
-    onSeeking: SyntheticEvent[T, Event_] => Unit = null,
-    onSelect: SyntheticEvent[T, Event_] => Unit = null,
-    onStalled: SyntheticEvent[T, Event_] => Unit = null,
+    onSeeked: SyntheticEvent[T, Event] => Unit = null,
+    onSeeking: SyntheticEvent[T, Event] => Unit = null,
+    onSelect: SyntheticEvent[T, Event] => Unit = null,
+    onStalled: SyntheticEvent[T, Event] => Unit = null,
     onSubmit: FormEvent[T] => Unit = null,
-    onSuspend: SyntheticEvent[T, Event_] => Unit = null,
-    onTimeUpdate: SyntheticEvent[T, Event_] => Unit = null,
+    onSuspend: SyntheticEvent[T, Event] => Unit = null,
+    onTimeUpdate: SyntheticEvent[T, Event] => Unit = null,
     onTouchCancel: TouchEvent[T] => Unit = null,
     onTouchEnd: TouchEvent[T] => Unit = null,
     onTouchMove: TouchEvent[T] => Unit = null,
     onTouchStart: TouchEvent[T] => Unit = null,
-    onVolumeChange: SyntheticEvent[T, Event_] => Unit = null,
-    onWaiting: SyntheticEvent[T, Event_] => Unit = null,
+    onVolumeChange: SyntheticEvent[T, Event] => Unit = null,
+    onWaiting: SyntheticEvent[T, Event] => Unit = null,
     onWheel: WheelEvent[T] => Unit = null
   ): MDLDOMAttributes[T] = {
     val __obj = js.Dynamic.literal()

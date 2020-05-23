@@ -1,5 +1,6 @@
 package typings.chalkPipe
 
+import typings.chalkPipe.anon.ChalkChalkFunctionsupport
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

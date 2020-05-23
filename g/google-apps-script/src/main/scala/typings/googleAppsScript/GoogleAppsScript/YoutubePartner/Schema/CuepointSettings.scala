@@ -15,13 +15,13 @@ object CuepointSettings {
   @scala.inline
   def apply(
     cueType: String = null,
-    durationSecs: Int | Double = null,
+    durationSecs: js.UndefOr[Double] = js.undefined,
     offsetTimeMs: String = null,
     walltime: String = null
   ): CuepointSettings = {
     val __obj = js.Dynamic.literal()
     if (cueType != null) __obj.updateDynamic("cueType")(cueType.asInstanceOf[js.Any])
-    if (durationSecs != null) __obj.updateDynamic("durationSecs")(durationSecs.asInstanceOf[js.Any])
+    if (!js.isUndefined(durationSecs)) __obj.updateDynamic("durationSecs")(durationSecs.get.asInstanceOf[js.Any])
     if (offsetTimeMs != null) __obj.updateDynamic("offsetTimeMs")(offsetTimeMs.asInstanceOf[js.Any])
     if (walltime != null) __obj.updateDynamic("walltime")(walltime.asInstanceOf[js.Any])
     __obj.asInstanceOf[CuepointSettings]

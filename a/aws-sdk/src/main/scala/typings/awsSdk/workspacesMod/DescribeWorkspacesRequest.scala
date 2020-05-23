@@ -37,7 +37,7 @@ object DescribeWorkspacesRequest {
   def apply(
     BundleId: BundleId = null,
     DirectoryId: DirectoryId = null,
-    Limit: Int | Double = null,
+    Limit: js.UndefOr[Limit] = js.undefined,
     NextToken: PaginationToken = null,
     UserName: UserName = null,
     WorkspaceIds: WorkspaceIdList = null
@@ -45,7 +45,7 @@ object DescribeWorkspacesRequest {
     val __obj = js.Dynamic.literal()
     if (BundleId != null) __obj.updateDynamic("BundleId")(BundleId.asInstanceOf[js.Any])
     if (DirectoryId != null) __obj.updateDynamic("DirectoryId")(DirectoryId.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (UserName != null) __obj.updateDynamic("UserName")(UserName.asInstanceOf[js.Any])
     if (WorkspaceIds != null) __obj.updateDynamic("WorkspaceIds")(WorkspaceIds.asInstanceOf[js.Any])

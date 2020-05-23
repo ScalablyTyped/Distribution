@@ -24,13 +24,13 @@ object SeverityUpdate {
   @scala.inline
   def apply(
     Label: SeverityLabel = null,
-    Normalized: Int | scala.Double = null,
-    Product: Int | scala.Double = null
+    Normalized: js.UndefOr[RatioScale] = js.undefined,
+    Product: js.UndefOr[Double] = js.undefined
   ): SeverityUpdate = {
     val __obj = js.Dynamic.literal()
     if (Label != null) __obj.updateDynamic("Label")(Label.asInstanceOf[js.Any])
-    if (Normalized != null) __obj.updateDynamic("Normalized")(Normalized.asInstanceOf[js.Any])
-    if (Product != null) __obj.updateDynamic("Product")(Product.asInstanceOf[js.Any])
+    if (!js.isUndefined(Normalized)) __obj.updateDynamic("Normalized")(Normalized.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Product)) __obj.updateDynamic("Product")(Product.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeverityUpdate]
   }
 }

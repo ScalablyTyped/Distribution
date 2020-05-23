@@ -1,6 +1,6 @@
 package typings.nivoBar.mod
 
-import typings.nivoBar.dataFromindexeskeysLegend
+import typings.nivoBar.anon.dataFromindexeskeysLegend
 import typings.nivoBar.nivoBarStrings.auto
 import typings.nivoBar.nivoBarStrings.grouped
 import typings.nivoBar.nivoBarStrings.horizontal
@@ -8,8 +8,8 @@ import typings.nivoBar.nivoBarStrings.stacked
 import typings.nivoBar.nivoBarStrings.vertical
 import typings.nivoColors.mod.InheritedColorProp
 import typings.nivoColors.mod.OrdinalColorsInstruction
-import typings.nivoCore.AnonDictkey
-import typings.nivoCore.AnonId
+import typings.nivoCore.anon.Dictkey
+import typings.nivoCore.anon.Id
 import typings.nivoCore.mod.Box
 import typings.nivoCore.mod.CartesianMarkerProps
 import typings.nivoCore.mod.Theme
@@ -34,11 +34,11 @@ trait BarSvgProps extends js.Object {
   var borderWidth: js.UndefOr[Double] = js.undefined
   var colors: js.UndefOr[OrdinalColorsInstruction[_]] = js.undefined
   var data: js.Array[js.Object]
-  var defs: js.UndefOr[js.Array[AnonDictkey]] = js.undefined
+  var defs: js.UndefOr[js.Array[Dictkey]] = js.undefined
   var enableGridX: js.UndefOr[Boolean] = js.undefined
   var enableGridY: js.UndefOr[Boolean] = js.undefined
   var enableLabel: js.UndefOr[Boolean] = js.undefined
-  var fill: js.UndefOr[js.Array[AnonId[BarDatum]]] = js.undefined
+  var fill: js.UndefOr[js.Array[Id[BarDatum]]] = js.undefined
   var groupMode: js.UndefOr[stacked | grouped] = js.undefined
   var indexBy: js.UndefOr[String | IndexByFunc] = js.undefined
   var innerPadding: js.UndefOr[Double] = js.undefined
@@ -84,24 +84,24 @@ object BarSvgProps {
     axisTop: Axis = null,
     barComponent: StatelessComponent[BarItemProps] = null,
     borderColor: InheritedColorProp[BarDatumWithColor] = null,
-    borderRadius: Int | Double = null,
-    borderWidth: Int | Double = null,
+    borderRadius: js.UndefOr[Double] = js.undefined,
+    borderWidth: js.UndefOr[Double] = js.undefined,
     colors: OrdinalColorsInstruction[_] = null,
-    defs: js.Array[AnonDictkey] = null,
+    defs: js.Array[Dictkey] = null,
     enableGridX: js.UndefOr[Boolean] = js.undefined,
     enableGridY: js.UndefOr[Boolean] = js.undefined,
     enableLabel: js.UndefOr[Boolean] = js.undefined,
-    fill: js.Array[AnonId[BarDatum]] = null,
+    fill: js.Array[Id[BarDatum]] = null,
     groupMode: stacked | grouped = null,
     indexBy: String | IndexByFunc = null,
-    innerPadding: Int | Double = null,
+    innerPadding: js.UndefOr[Double] = js.undefined,
     isInteractive: js.UndefOr[Boolean] = js.undefined,
     keys: js.Array[String] = null,
     label: String | AccessorFunc = null,
     labelFormat: String | LabelFormatter = null,
     labelLinkColor: InheritedColorProp[BarDatumWithColor] = null,
-    labelSkipHeight: Int | Double = null,
-    labelSkipWidth: Int | Double = null,
+    labelSkipHeight: js.UndefOr[Double] = js.undefined,
+    labelSkipWidth: js.UndefOr[Double] = js.undefined,
     labelTextColor: InheritedColorProp[BarDatumWithColor] = null,
     layers: js.Array[Layer] = null,
     layout: horizontal | vertical = null,
@@ -110,41 +110,41 @@ object BarSvgProps {
     markers: js.Array[CartesianMarkerProps] = null,
     maxValue: Double | auto = null,
     minValue: Double | auto = null,
-    motionDamping: Int | Double = null,
-    motionStiffness: Int | Double = null,
+    motionDamping: js.UndefOr[Double] = js.undefined,
+    motionStiffness: js.UndefOr[Double] = js.undefined,
     onClick: (/* datum */ BarExtendedDatum, /* event */ MouseEvent[SVGRectElement, NativeMouseEvent]) => Unit = null,
-    padding: Int | Double = null,
+    padding: js.UndefOr[Double] = js.undefined,
     reverse: js.UndefOr[Boolean] = js.undefined,
     theme: Theme = null,
     tooltip: TooltipProp = null,
     tooltipFormat: String | ValueFormatter = null
   ): BarSvgProps = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
     if (axisBottom != null) __obj.updateDynamic("axisBottom")(axisBottom.asInstanceOf[js.Any])
     if (axisLeft != null) __obj.updateDynamic("axisLeft")(axisLeft.asInstanceOf[js.Any])
     if (axisRight != null) __obj.updateDynamic("axisRight")(axisRight.asInstanceOf[js.Any])
     if (axisTop != null) __obj.updateDynamic("axisTop")(axisTop.asInstanceOf[js.Any])
     if (barComponent != null) __obj.updateDynamic("barComponent")(barComponent.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderRadius)) __obj.updateDynamic("borderRadius")(borderRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     if (defs != null) __obj.updateDynamic("defs")(defs.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGridX)) __obj.updateDynamic("enableGridX")(enableGridX.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGridY)) __obj.updateDynamic("enableGridY")(enableGridY.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLabel)) __obj.updateDynamic("enableLabel")(enableLabel.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGridX)) __obj.updateDynamic("enableGridX")(enableGridX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGridY)) __obj.updateDynamic("enableGridY")(enableGridY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableLabel)) __obj.updateDynamic("enableLabel")(enableLabel.get.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (groupMode != null) __obj.updateDynamic("groupMode")(groupMode.asInstanceOf[js.Any])
     if (indexBy != null) __obj.updateDynamic("indexBy")(indexBy.asInstanceOf[js.Any])
-    if (innerPadding != null) __obj.updateDynamic("innerPadding")(innerPadding.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInteractive)) __obj.updateDynamic("isInteractive")(isInteractive.asInstanceOf[js.Any])
+    if (!js.isUndefined(innerPadding)) __obj.updateDynamic("innerPadding")(innerPadding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInteractive)) __obj.updateDynamic("isInteractive")(isInteractive.get.asInstanceOf[js.Any])
     if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelFormat != null) __obj.updateDynamic("labelFormat")(labelFormat.asInstanceOf[js.Any])
     if (labelLinkColor != null) __obj.updateDynamic("labelLinkColor")(labelLinkColor.asInstanceOf[js.Any])
-    if (labelSkipHeight != null) __obj.updateDynamic("labelSkipHeight")(labelSkipHeight.asInstanceOf[js.Any])
-    if (labelSkipWidth != null) __obj.updateDynamic("labelSkipWidth")(labelSkipWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelSkipHeight)) __obj.updateDynamic("labelSkipHeight")(labelSkipHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelSkipWidth)) __obj.updateDynamic("labelSkipWidth")(labelSkipWidth.get.asInstanceOf[js.Any])
     if (labelTextColor != null) __obj.updateDynamic("labelTextColor")(labelTextColor.asInstanceOf[js.Any])
     if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
@@ -153,11 +153,11 @@ object BarSvgProps {
     if (markers != null) __obj.updateDynamic("markers")(markers.asInstanceOf[js.Any])
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (motionDamping != null) __obj.updateDynamic("motionDamping")(motionDamping.asInstanceOf[js.Any])
-    if (motionStiffness != null) __obj.updateDynamic("motionStiffness")(motionStiffness.asInstanceOf[js.Any])
+    if (!js.isUndefined(motionDamping)) __obj.updateDynamic("motionDamping")(motionDamping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(motionStiffness)) __obj.updateDynamic("motionStiffness")(motionStiffness.get.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (tooltipFormat != null) __obj.updateDynamic("tooltipFormat")(tooltipFormat.asInstanceOf[js.Any])

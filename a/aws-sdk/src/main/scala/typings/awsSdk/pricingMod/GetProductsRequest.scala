@@ -33,14 +33,14 @@ object GetProductsRequest {
   def apply(
     Filters: Filters = null,
     FormatVersion: String = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[BoxedInteger] = js.undefined,
     NextToken: String = null,
     ServiceCode: String = null
   ): GetProductsRequest = {
     val __obj = js.Dynamic.literal()
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
     if (FormatVersion != null) __obj.updateDynamic("FormatVersion")(FormatVersion.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (ServiceCode != null) __obj.updateDynamic("ServiceCode")(ServiceCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetProductsRequest]

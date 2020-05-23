@@ -1,6 +1,6 @@
 package typings.luaparse.astMod
 
-import typings.luaparse.AnonEnd
+import typings.luaparse.anon.End
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ object ElseifClause {
     body: js.Array[Statement],
     condition: Expression,
     `type`: typings.luaparse.luaparseStrings.ElseifClause,
-    loc: AnonEnd = null
+    loc: End = null
   ): ElseifClause = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], condition = condition.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

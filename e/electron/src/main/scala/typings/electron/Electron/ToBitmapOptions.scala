@@ -13,9 +13,9 @@ trait ToBitmapOptions extends js.Object {
 
 object ToBitmapOptions {
   @scala.inline
-  def apply(scaleFactor: Int | Double = null): ToBitmapOptions = {
+  def apply(scaleFactor: js.UndefOr[Double] = js.undefined): ToBitmapOptions = {
     val __obj = js.Dynamic.literal()
-    if (scaleFactor != null) __obj.updateDynamic("scaleFactor")(scaleFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleFactor)) __obj.updateDynamic("scaleFactor")(scaleFactor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToBitmapOptions]
   }
 }

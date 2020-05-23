@@ -1,6 +1,5 @@
 package typings.angularHttp
 
-import typings.angularHttp.angularHttpStrings.__ng_jsonp__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,6 +18,6 @@ object browserJsonpMod extends js.Object {
     def send(node: js.Any): Unit = js.native
   }
   
-  val JSONP_HOME: __ng_jsonp__ = js.native
+  val JSONP_HOME: /* "__ng_jsonp__" */ String = js.native
 }
 

@@ -28,7 +28,7 @@ object ProjectLogsConfigS3Logs {
     status: String = null
   ): ProjectLogsConfigS3Logs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(encryptionDisabled)) __obj.updateDynamic("encryptionDisabled")(encryptionDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(encryptionDisabled)) __obj.updateDynamic("encryptionDisabled")(encryptionDisabled.get.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectLogsConfigS3Logs]

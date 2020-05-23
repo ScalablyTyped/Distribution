@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/remote/backoff", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/remote/backoff", JSImport.Namespace)
 @js.native
 object backoffMod extends js.Object {
   @js.native

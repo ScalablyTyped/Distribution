@@ -1,7 +1,7 @@
 package typings.prosemirrorMenu.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.prosemirrorMenu.AnonDom
+import typings.prosemirrorMenu.anon.Dom
 import typings.prosemirrorModel.mod.Schema
 import typings.prosemirrorView.mod.EditorView
 import scala.scalajs.js
@@ -23,6 +23,6 @@ class DropdownSubmenu[S /* <: Schema[_, _] */] protected () extends js.Object {
   /**
     * Renders the submenu.
     */
-  def render(view: EditorView[S]): AnonDom[S] = js.native
+  def render(view: EditorView[S]): Dom[S] = js.native
 }
 

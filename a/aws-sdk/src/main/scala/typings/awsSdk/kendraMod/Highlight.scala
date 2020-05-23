@@ -22,9 +22,9 @@ trait Highlight extends js.Object {
 
 object Highlight {
   @scala.inline
-  def apply(BeginOffset: Integer, EndOffset: Integer, TopAnswer: js.UndefOr[scala.Boolean] = js.undefined): Highlight = {
+  def apply(BeginOffset: Integer, EndOffset: Integer, TopAnswer: js.UndefOr[Boolean] = js.undefined): Highlight = {
     val __obj = js.Dynamic.literal(BeginOffset = BeginOffset.asInstanceOf[js.Any], EndOffset = EndOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(TopAnswer)) __obj.updateDynamic("TopAnswer")(TopAnswer.asInstanceOf[js.Any])
+    if (!js.isUndefined(TopAnswer)) __obj.updateDynamic("TopAnswer")(TopAnswer.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Highlight]
   }
 }

@@ -3,12 +3,13 @@ package typings.backboneMarionette.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.backbone.mod.Collection
 import typings.backbone.mod.Model
+import typings.backbone.mod.ModelSetOptions
 import typings.backboneMarionette.backboneMarionetteBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ViewOptions[TModel /* <: Model */]
+trait ViewOptions[TModel /* <: Model[_, ModelSetOptions] */]
   extends typings.backbone.mod.ViewOptions[TModel]
      with ViewMixinOptions {
   /**
@@ -33,7 +34,7 @@ trait ViewOptions[TModel /* <: Model */]
 
 object ViewOptions {
   @scala.inline
-  def apply[TModel /* <: Model */](
+  def apply[TModel](
     attributes: StringDictionary[js.Any] = null,
     behaviors: js.Array[Behavior] = null,
     childViewEventPrefix: String | `false` = null,

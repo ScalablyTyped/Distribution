@@ -24,12 +24,12 @@ object InstanceFleetModifyConfig {
   @scala.inline
   def apply(
     InstanceFleetId: InstanceFleetId,
-    TargetOnDemandCapacity: Int | Double = null,
-    TargetSpotCapacity: Int | Double = null
+    TargetOnDemandCapacity: js.UndefOr[WholeNumber] = js.undefined,
+    TargetSpotCapacity: js.UndefOr[WholeNumber] = js.undefined
   ): InstanceFleetModifyConfig = {
     val __obj = js.Dynamic.literal(InstanceFleetId = InstanceFleetId.asInstanceOf[js.Any])
-    if (TargetOnDemandCapacity != null) __obj.updateDynamic("TargetOnDemandCapacity")(TargetOnDemandCapacity.asInstanceOf[js.Any])
-    if (TargetSpotCapacity != null) __obj.updateDynamic("TargetSpotCapacity")(TargetSpotCapacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(TargetOnDemandCapacity)) __obj.updateDynamic("TargetOnDemandCapacity")(TargetOnDemandCapacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TargetSpotCapacity)) __obj.updateDynamic("TargetSpotCapacity")(TargetSpotCapacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceFleetModifyConfig]
   }
 }

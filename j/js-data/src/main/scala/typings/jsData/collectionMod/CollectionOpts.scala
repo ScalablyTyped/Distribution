@@ -75,9 +75,9 @@ object CollectionOpts {
     onConflict: merge | replace | skip = null
   ): CollectionOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(commitOnMerge)) __obj.updateDynamic("commitOnMerge")(commitOnMerge.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (!js.isUndefined(emitRecordEvents)) __obj.updateDynamic("emitRecordEvents")(emitRecordEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(commitOnMerge)) __obj.updateDynamic("commitOnMerge")(commitOnMerge.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(emitRecordEvents)) __obj.updateDynamic("emitRecordEvents")(emitRecordEvents.get.asInstanceOf[js.Any])
     if (idAttribute != null) __obj.updateDynamic("idAttribute")(idAttribute.asInstanceOf[js.Any])
     if (onConflict != null) __obj.updateDynamic("onConflict")(onConflict.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionOpts]

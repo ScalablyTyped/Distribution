@@ -53,7 +53,7 @@ object Options {
     soap12: js.UndefOr[Boolean] = js.undefined,
     statusCode: js.Object = null,
     success: /* SOAPResponse */ SOAPResponse => Unit = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     url: String = null,
     wss: js.Object = null
   ): Options = {
@@ -61,24 +61,24 @@ object Options {
     if (HTTPHeaders != null) __obj.updateDynamic("HTTPHeaders")(HTTPHeaders.asInstanceOf[js.Any])
     if (SOAPAction != null) __obj.updateDynamic("SOAPAction")(SOAPAction.asInstanceOf[js.Any])
     if (SOAPHeader != null) __obj.updateDynamic("SOAPHeader")(SOAPHeader.asInstanceOf[js.Any])
-    if (!js.isUndefined(appendMethodToURL)) __obj.updateDynamic("appendMethodToURL")(appendMethodToURL.asInstanceOf[js.Any])
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (!js.isUndefined(appendMethodToURL)) __obj.updateDynamic("appendMethodToURL")(appendMethodToURL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
     if (beforeSend != null) __obj.updateDynamic("beforeSend")(js.Any.fromFunction1(beforeSend))
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (elementName != null) __obj.updateDynamic("elementName")(elementName.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLogging)) __obj.updateDynamic("enableLogging")(enableLogging.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableLogging)) __obj.updateDynamic("enableLogging")(enableLogging.get.asInstanceOf[js.Any])
     if (envAttributes != null) __obj.updateDynamic("envAttributes")(envAttributes.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (namespaceQualifier != null) __obj.updateDynamic("namespaceQualifier")(namespaceQualifier.asInstanceOf[js.Any])
     if (namespaceURL != null) __obj.updateDynamic("namespaceURL")(namespaceURL.asInstanceOf[js.Any])
-    if (!js.isUndefined(noPrefix)) __obj.updateDynamic("noPrefix")(noPrefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(noPrefix)) __obj.updateDynamic("noPrefix")(noPrefix.get.asInstanceOf[js.Any])
     if (request != null) __obj.updateDynamic("request")(js.Any.fromFunction1(request))
-    if (!js.isUndefined(soap12)) __obj.updateDynamic("soap12")(soap12.asInstanceOf[js.Any])
+    if (!js.isUndefined(soap12)) __obj.updateDynamic("soap12")(soap12.get.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (wss != null) __obj.updateDynamic("wss")(wss.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

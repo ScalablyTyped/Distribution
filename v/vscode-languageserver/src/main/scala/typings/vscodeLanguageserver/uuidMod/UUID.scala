@@ -16,7 +16,6 @@ object UUID {
   @scala.inline
   def apply(asHex: () => String, equals: UUID => Boolean): UUID = {
     val __obj = js.Dynamic.literal(asHex = js.Any.fromFunction0(asHex), equals = js.Any.fromFunction1(equals))
-  
     __obj.asInstanceOf[UUID]
   }
 }

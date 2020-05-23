@@ -1,7 +1,8 @@
 package typings.nextServer
 
+import typings.nextServer.anon.Children
 import typings.react.mod.ReactElement
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +19,7 @@ object nextServerHeadMod extends js.Object {
       * This component injects elements to `<head>` of your page.
       * To avoid duplicated `tags` in `<head>` you can use the `key` property, which will make sure every tag is only rendered once.
       */
-    def apply(hasChildren: AnonChildren): Element = js.native
+    def apply(hasChildren: Children): Element = js.native
   }
   
 }

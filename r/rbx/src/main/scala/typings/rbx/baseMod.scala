@@ -1,5 +1,8 @@
 package typings.rbx
 
+import typings.rbx.anon.AsReactType
+import typings.rbx.anon.PreferHelpersPropsOverrid
+import typings.rbx.anon.`0`
 import typings.rbx.exoticMod.ForwardRefAsExoticComponent
 import typings.rbx.exoticMod.FromReactType
 import typings.rbx.typesMod.Prefer
@@ -22,13 +25,10 @@ import scala.scalajs.js.annotation._
 object baseMod extends js.Object {
   val Generic: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
   def forwardRefAs[TOwnProps, TDefaultComponent /* <: ReactType[_] */](
-    factory: RefForwardingComponent[
-      HTMLElement | SVGElement | ComponentType[js.Object], 
-      TOwnProps with AnonAsReactType
-    ],
+    factory: RefForwardingComponent[HTMLElement | SVGElement | ComponentType[js.Object], TOwnProps with AsReactType],
     defaultProps: Partial[
       Prefer[
-        (PropsWithoutRef[TOwnProps with Anon0[TDefaultComponent]]) with RefAttributes[FromReactType[TDefaultComponent]], 
+        (PropsWithoutRef[TOwnProps with `0`[TDefaultComponent]]) with RefAttributes[FromReactType[TDefaultComponent]], 
         ComponentPropsWithoutRef[TDefaultComponent]
       ]
     ]

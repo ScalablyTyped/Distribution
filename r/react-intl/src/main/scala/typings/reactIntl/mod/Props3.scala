@@ -16,7 +16,7 @@ trait Props3[V /* <: Record[String, _] */] extends MessageDescriptor {
 
 object Props3 {
   @scala.inline
-  def apply[V /* <: Record[String, _] */](
+  def apply[V](
     children: /* nodes */ ReactNodeArray => ReactNode = null,
     defaultMessage: String = null,
     description: String | js.Object = null,

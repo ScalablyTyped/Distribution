@@ -106,78 +106,78 @@ trait WindowsConfiguration extends PlatformSpecificBuildOptions {
 object WindowsConfiguration {
   @scala.inline
   def apply(
-    additionalCertificateFile: String = null,
-    appId: String = null,
-    artifactName: String = null,
-    asar: AsarOptions | Boolean = null,
-    asarUnpack: js.Array[String] | String = null,
-    certificateFile: String = null,
-    certificatePassword: String = null,
-    certificateSha1: String = null,
-    certificateSubjectName: String = null,
-    compression: CompressionLevel = null,
-    cscKeyPassword: String = null,
-    cscLink: String = null,
+    additionalCertificateFile: js.UndefOr[Null | String] = js.undefined,
+    appId: js.UndefOr[Null | String] = js.undefined,
+    artifactName: js.UndefOr[Null | String] = js.undefined,
+    asar: js.UndefOr[Null | AsarOptions | Boolean] = js.undefined,
+    asarUnpack: js.UndefOr[Null | js.Array[String] | String] = js.undefined,
+    certificateFile: js.UndefOr[Null | String] = js.undefined,
+    certificatePassword: js.UndefOr[Null | String] = js.undefined,
+    certificateSha1: js.UndefOr[Null | String] = js.undefined,
+    certificateSubjectName: js.UndefOr[Null | String] = js.undefined,
+    compression: js.UndefOr[Null | CompressionLevel] = js.undefined,
+    cscKeyPassword: js.UndefOr[Null | String] = js.undefined,
+    cscLink: js.UndefOr[Null | String] = js.undefined,
     detectUpdateChannel: js.UndefOr[Boolean] = js.undefined,
-    electronUpdaterCompatibility: String = null,
-    extraFiles: (js.Array[FileSet | String]) | FileSet | String = null,
-    extraResources: (js.Array[FileSet | String]) | FileSet | String = null,
+    electronUpdaterCompatibility: js.UndefOr[Null | String] = js.undefined,
+    extraFiles: js.UndefOr[Null | (js.Array[FileSet | String]) | FileSet | String] = js.undefined,
+    extraResources: js.UndefOr[Null | (js.Array[FileSet | String]) | FileSet | String] = js.undefined,
     fileAssociations: js.Array[FileAssociation] | FileAssociation = null,
-    files: (js.Array[FileSet | String]) | FileSet | String = null,
+    files: js.UndefOr[Null | (js.Array[FileSet | String]) | FileSet | String] = js.undefined,
     forceCodeSigning: js.UndefOr[Boolean] = js.undefined,
     generateUpdatesFilesForAllChannels: js.UndefOr[Boolean] = js.undefined,
-    icon: String = null,
-    legalTrademarks: String = null,
+    icon: js.UndefOr[Null | String] = js.undefined,
+    legalTrademarks: js.UndefOr[Null | String] = js.undefined,
     protocols: js.Array[Protocol] | Protocol = null,
-    publish: Publish = null,
-    publisherName: String | js.Array[String] = null,
+    publish: js.UndefOr[Null | Publish] = js.undefined,
+    publisherName: js.UndefOr[Null | String | js.Array[String]] = js.undefined,
     releaseInfo: ReleaseInfo = null,
-    requestedExecutionLevel: RequestedExecutionLevel = null,
-    rfc3161TimeStampServer: String = null,
-    sign: CustomWindowsSign | String = null,
+    requestedExecutionLevel: js.UndefOr[Null | RequestedExecutionLevel] = js.undefined,
+    rfc3161TimeStampServer: js.UndefOr[Null | String] = js.undefined,
+    sign: js.UndefOr[Null | CustomWindowsSign | String] = js.undefined,
     signAndEditExecutable: js.UndefOr[Boolean] = js.undefined,
     signDlls: js.UndefOr[Boolean] = js.undefined,
-    signingHashAlgorithms: js.Array[sha1 | sha256] = null,
-    target: TargetConfigType = null,
-    timeStampServer: String = null,
+    signingHashAlgorithms: js.UndefOr[Null | (js.Array[sha1 | sha256])] = js.undefined,
+    target: js.UndefOr[Null | TargetConfigType] = js.undefined,
+    timeStampServer: js.UndefOr[Null | String] = js.undefined,
     verifyUpdateCodeSignature: js.UndefOr[Boolean] = js.undefined
   ): WindowsConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (additionalCertificateFile != null) __obj.updateDynamic("additionalCertificateFile")(additionalCertificateFile.asInstanceOf[js.Any])
-    if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
-    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
-    if (asar != null) __obj.updateDynamic("asar")(asar.asInstanceOf[js.Any])
-    if (asarUnpack != null) __obj.updateDynamic("asarUnpack")(asarUnpack.asInstanceOf[js.Any])
-    if (certificateFile != null) __obj.updateDynamic("certificateFile")(certificateFile.asInstanceOf[js.Any])
-    if (certificatePassword != null) __obj.updateDynamic("certificatePassword")(certificatePassword.asInstanceOf[js.Any])
-    if (certificateSha1 != null) __obj.updateDynamic("certificateSha1")(certificateSha1.asInstanceOf[js.Any])
-    if (certificateSubjectName != null) __obj.updateDynamic("certificateSubjectName")(certificateSubjectName.asInstanceOf[js.Any])
-    if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
-    if (cscKeyPassword != null) __obj.updateDynamic("cscKeyPassword")(cscKeyPassword.asInstanceOf[js.Any])
-    if (cscLink != null) __obj.updateDynamic("cscLink")(cscLink.asInstanceOf[js.Any])
-    if (!js.isUndefined(detectUpdateChannel)) __obj.updateDynamic("detectUpdateChannel")(detectUpdateChannel.asInstanceOf[js.Any])
-    if (electronUpdaterCompatibility != null) __obj.updateDynamic("electronUpdaterCompatibility")(electronUpdaterCompatibility.asInstanceOf[js.Any])
-    if (extraFiles != null) __obj.updateDynamic("extraFiles")(extraFiles.asInstanceOf[js.Any])
-    if (extraResources != null) __obj.updateDynamic("extraResources")(extraResources.asInstanceOf[js.Any])
+    if (!js.isUndefined(additionalCertificateFile)) __obj.updateDynamic("additionalCertificateFile")(additionalCertificateFile.asInstanceOf[js.Any])
+    if (!js.isUndefined(appId)) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
+    if (!js.isUndefined(artifactName)) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
+    if (!js.isUndefined(asar)) __obj.updateDynamic("asar")(asar.asInstanceOf[js.Any])
+    if (!js.isUndefined(asarUnpack)) __obj.updateDynamic("asarUnpack")(asarUnpack.asInstanceOf[js.Any])
+    if (!js.isUndefined(certificateFile)) __obj.updateDynamic("certificateFile")(certificateFile.asInstanceOf[js.Any])
+    if (!js.isUndefined(certificatePassword)) __obj.updateDynamic("certificatePassword")(certificatePassword.asInstanceOf[js.Any])
+    if (!js.isUndefined(certificateSha1)) __obj.updateDynamic("certificateSha1")(certificateSha1.asInstanceOf[js.Any])
+    if (!js.isUndefined(certificateSubjectName)) __obj.updateDynamic("certificateSubjectName")(certificateSubjectName.asInstanceOf[js.Any])
+    if (!js.isUndefined(compression)) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
+    if (!js.isUndefined(cscKeyPassword)) __obj.updateDynamic("cscKeyPassword")(cscKeyPassword.asInstanceOf[js.Any])
+    if (!js.isUndefined(cscLink)) __obj.updateDynamic("cscLink")(cscLink.asInstanceOf[js.Any])
+    if (!js.isUndefined(detectUpdateChannel)) __obj.updateDynamic("detectUpdateChannel")(detectUpdateChannel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(electronUpdaterCompatibility)) __obj.updateDynamic("electronUpdaterCompatibility")(electronUpdaterCompatibility.asInstanceOf[js.Any])
+    if (!js.isUndefined(extraFiles)) __obj.updateDynamic("extraFiles")(extraFiles.asInstanceOf[js.Any])
+    if (!js.isUndefined(extraResources)) __obj.updateDynamic("extraResources")(extraResources.asInstanceOf[js.Any])
     if (fileAssociations != null) __obj.updateDynamic("fileAssociations")(fileAssociations.asInstanceOf[js.Any])
-    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceCodeSigning)) __obj.updateDynamic("forceCodeSigning")(forceCodeSigning.asInstanceOf[js.Any])
-    if (!js.isUndefined(generateUpdatesFilesForAllChannels)) __obj.updateDynamic("generateUpdatesFilesForAllChannels")(generateUpdatesFilesForAllChannels.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (legalTrademarks != null) __obj.updateDynamic("legalTrademarks")(legalTrademarks.asInstanceOf[js.Any])
+    if (!js.isUndefined(files)) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceCodeSigning)) __obj.updateDynamic("forceCodeSigning")(forceCodeSigning.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(generateUpdatesFilesForAllChannels)) __obj.updateDynamic("generateUpdatesFilesForAllChannels")(generateUpdatesFilesForAllChannels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(legalTrademarks)) __obj.updateDynamic("legalTrademarks")(legalTrademarks.asInstanceOf[js.Any])
     if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
-    if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
-    if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
+    if (!js.isUndefined(publish)) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
+    if (!js.isUndefined(publisherName)) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
     if (releaseInfo != null) __obj.updateDynamic("releaseInfo")(releaseInfo.asInstanceOf[js.Any])
-    if (requestedExecutionLevel != null) __obj.updateDynamic("requestedExecutionLevel")(requestedExecutionLevel.asInstanceOf[js.Any])
-    if (rfc3161TimeStampServer != null) __obj.updateDynamic("rfc3161TimeStampServer")(rfc3161TimeStampServer.asInstanceOf[js.Any])
-    if (sign != null) __obj.updateDynamic("sign")(sign.asInstanceOf[js.Any])
-    if (!js.isUndefined(signAndEditExecutable)) __obj.updateDynamic("signAndEditExecutable")(signAndEditExecutable.asInstanceOf[js.Any])
-    if (!js.isUndefined(signDlls)) __obj.updateDynamic("signDlls")(signDlls.asInstanceOf[js.Any])
-    if (signingHashAlgorithms != null) __obj.updateDynamic("signingHashAlgorithms")(signingHashAlgorithms.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (timeStampServer != null) __obj.updateDynamic("timeStampServer")(timeStampServer.asInstanceOf[js.Any])
-    if (!js.isUndefined(verifyUpdateCodeSignature)) __obj.updateDynamic("verifyUpdateCodeSignature")(verifyUpdateCodeSignature.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestedExecutionLevel)) __obj.updateDynamic("requestedExecutionLevel")(requestedExecutionLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(rfc3161TimeStampServer)) __obj.updateDynamic("rfc3161TimeStampServer")(rfc3161TimeStampServer.asInstanceOf[js.Any])
+    if (!js.isUndefined(sign)) __obj.updateDynamic("sign")(sign.asInstanceOf[js.Any])
+    if (!js.isUndefined(signAndEditExecutable)) __obj.updateDynamic("signAndEditExecutable")(signAndEditExecutable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(signDlls)) __obj.updateDynamic("signDlls")(signDlls.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(signingHashAlgorithms)) __obj.updateDynamic("signingHashAlgorithms")(signingHashAlgorithms.asInstanceOf[js.Any])
+    if (!js.isUndefined(target)) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeStampServer)) __obj.updateDynamic("timeStampServer")(timeStampServer.asInstanceOf[js.Any])
+    if (!js.isUndefined(verifyUpdateCodeSignature)) __obj.updateDynamic("verifyUpdateCodeSignature")(verifyUpdateCodeSignature.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsConfiguration]
   }
 }

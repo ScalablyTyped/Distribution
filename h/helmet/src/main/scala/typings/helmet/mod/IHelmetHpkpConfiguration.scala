@@ -33,9 +33,9 @@ object IHelmetHpkpConfiguration {
     setIf: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => Boolean = null
   ): IHelmetHpkpConfiguration = {
     val __obj = js.Dynamic.literal(maxAge = maxAge.asInstanceOf[js.Any], sha256s = sha256s.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeSubDomains)) __obj.updateDynamic("includeSubDomains")(includeSubDomains.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeSubdomains)) __obj.updateDynamic("includeSubdomains")(includeSubdomains.asInstanceOf[js.Any])
-    if (!js.isUndefined(reportOnly)) __obj.updateDynamic("reportOnly")(reportOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeSubDomains)) __obj.updateDynamic("includeSubDomains")(includeSubDomains.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeSubdomains)) __obj.updateDynamic("includeSubdomains")(includeSubdomains.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reportOnly)) __obj.updateDynamic("reportOnly")(reportOnly.get.asInstanceOf[js.Any])
     if (reportUri != null) __obj.updateDynamic("reportUri")(reportUri.asInstanceOf[js.Any])
     if (setIf != null) __obj.updateDynamic("setIf")(js.Any.fromFunction2(setIf))
     __obj.asInstanceOf[IHelmetHpkpConfiguration]

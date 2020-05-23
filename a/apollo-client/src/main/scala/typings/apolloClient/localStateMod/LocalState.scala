@@ -1,13 +1,14 @@
 package typings.apolloClient.localStateMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.apolloClient.AnonCache
-import typings.apolloClient.AnonContext
+import typings.apolloClient.anon.Cache
+import typings.apolloClient.anon.Context
 import typings.apolloClient.typesMod.OperationVariables
 import typings.apolloClient.typesMod.Resolvers
+import typings.apolloLink.typesMod.FetchResult
 import typings.graphql.astMod.ASTNode
 import typings.graphql.astMod.DocumentNode
-import typings.graphql.executeMod.ExecutionResult
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,9 +34,9 @@ class LocalState[TCacheShape] protected () extends js.Object {
   def clientQuery(document: DocumentNode): DocumentNode | Null = js.native
   def getFragmentMatcher(): FragmentMatcher = js.native
   def getResolvers(): Resolvers = js.native
-  def prepareContext(): AnonCache[TCacheShape] = js.native
-  def prepareContext(context: js.Object): AnonCache[TCacheShape] = js.native
-  def runResolvers[TData](hasDocumentRemoteResultContextVariablesOnlyRunForcedResolvers: AnonContext[TData]): js.Promise[ExecutionResult[TData]] = js.native
+  def prepareContext(): Cache[TCacheShape] = js.native
+  def prepareContext(context: js.Object): Cache[TCacheShape] = js.native
+  def runResolvers[TData](hasDocumentRemoteResultContextVariablesOnlyRunForcedResolvers: Context[TData]): js.Promise[FetchResult[TData, Record[String, _], Record[String, _]]] = js.native
   def serverQuery(document: DocumentNode): DocumentNode | Null = js.native
   def setFragmentMatcher(fragmentMatcher: FragmentMatcher): Unit = js.native
   def setResolvers(resolvers: js.Array[Resolvers]): Unit = js.native

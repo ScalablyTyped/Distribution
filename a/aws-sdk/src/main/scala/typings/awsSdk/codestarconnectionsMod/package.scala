@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object codestarconnectionsMod {
   type AccountId = java.lang.String
+  type AmazonResourceName = java.lang.String
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.codestarconnectionsMod.ClientApiVersions
   type ConnectionArn = java.lang.String
   type ConnectionList = js.Array[typings.awsSdk.codestarconnectionsMod.Connection]
@@ -20,6 +21,10 @@ package object codestarconnectionsMod {
   type MaxResults = scala.Double
   type NextToken = java.lang.String
   type ProviderType = typings.awsSdk.awsSdkStrings.Bitbucket_ | java.lang.String
+  type TagKey = java.lang.String
+  type TagKeyList = js.Array[typings.awsSdk.codestarconnectionsMod.TagKey]
+  type TagList = js.Array[typings.awsSdk.codestarconnectionsMod.Tag]
+  type TagValue = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`2019-12-01`
     - typings.awsSdk.awsSdkStrings.latest_

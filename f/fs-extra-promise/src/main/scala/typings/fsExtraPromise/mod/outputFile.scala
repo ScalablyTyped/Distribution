@@ -1,6 +1,6 @@
 package typings.fsExtraPromise.mod
 
-import typings.node.fsMod.WriteFileOptions
+import typings.fsExtra.mod.WriteFileOptions
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

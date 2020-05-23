@@ -121,7 +121,7 @@ object VerifyAssertionResponse {
     nickName: String = null,
     oauthAccessToken: String = null,
     oauthAuthorizationCode: String = null,
-    oauthExpireIn: Int | Double = null,
+    oauthExpireIn: js.UndefOr[Double] = js.undefined,
     oauthIdToken: String = null,
     oauthRequestToken: String = null,
     oauthScope: String = null,
@@ -143,8 +143,8 @@ object VerifyAssertionResponse {
     if (dateOfBirth != null) __obj.updateDynamic("dateOfBirth")(dateOfBirth.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (!js.isUndefined(emailRecycled)) __obj.updateDynamic("emailRecycled")(emailRecycled.asInstanceOf[js.Any])
-    if (!js.isUndefined(emailVerified)) __obj.updateDynamic("emailVerified")(emailVerified.asInstanceOf[js.Any])
+    if (!js.isUndefined(emailRecycled)) __obj.updateDynamic("emailRecycled")(emailRecycled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(emailVerified)) __obj.updateDynamic("emailVerified")(emailVerified.get.asInstanceOf[js.Any])
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
     if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn.asInstanceOf[js.Any])
     if (federatedId != null) __obj.updateDynamic("federatedId")(federatedId.asInstanceOf[js.Any])
@@ -152,17 +152,17 @@ object VerifyAssertionResponse {
     if (fullName != null) __obj.updateDynamic("fullName")(fullName.asInstanceOf[js.Any])
     if (idToken != null) __obj.updateDynamic("idToken")(idToken.asInstanceOf[js.Any])
     if (inputEmail != null) __obj.updateDynamic("inputEmail")(inputEmail.asInstanceOf[js.Any])
-    if (!js.isUndefined(isNewUser)) __obj.updateDynamic("isNewUser")(isNewUser.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNewUser)) __obj.updateDynamic("isNewUser")(isNewUser.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (lastName != null) __obj.updateDynamic("lastName")(lastName.asInstanceOf[js.Any])
     if (localId != null) __obj.updateDynamic("localId")(localId.asInstanceOf[js.Any])
-    if (!js.isUndefined(needConfirmation)) __obj.updateDynamic("needConfirmation")(needConfirmation.asInstanceOf[js.Any])
-    if (!js.isUndefined(needEmail)) __obj.updateDynamic("needEmail")(needEmail.asInstanceOf[js.Any])
+    if (!js.isUndefined(needConfirmation)) __obj.updateDynamic("needConfirmation")(needConfirmation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(needEmail)) __obj.updateDynamic("needEmail")(needEmail.get.asInstanceOf[js.Any])
     if (nickName != null) __obj.updateDynamic("nickName")(nickName.asInstanceOf[js.Any])
     if (oauthAccessToken != null) __obj.updateDynamic("oauthAccessToken")(oauthAccessToken.asInstanceOf[js.Any])
     if (oauthAuthorizationCode != null) __obj.updateDynamic("oauthAuthorizationCode")(oauthAuthorizationCode.asInstanceOf[js.Any])
-    if (oauthExpireIn != null) __obj.updateDynamic("oauthExpireIn")(oauthExpireIn.asInstanceOf[js.Any])
+    if (!js.isUndefined(oauthExpireIn)) __obj.updateDynamic("oauthExpireIn")(oauthExpireIn.get.asInstanceOf[js.Any])
     if (oauthIdToken != null) __obj.updateDynamic("oauthIdToken")(oauthIdToken.asInstanceOf[js.Any])
     if (oauthRequestToken != null) __obj.updateDynamic("oauthRequestToken")(oauthRequestToken.asInstanceOf[js.Any])
     if (oauthScope != null) __obj.updateDynamic("oauthScope")(oauthScope.asInstanceOf[js.Any])

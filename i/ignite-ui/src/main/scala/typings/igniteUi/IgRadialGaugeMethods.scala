@@ -6,94 +6,94 @@ import scala.scalajs.js.annotation._
 
 trait IgRadialGaugeMethods extends js.Object {
   /**
-  	 * Adds a new range to the radial gauge.
-  	 *
-  	 * @param value
-  	 */
+    * Adds a new range to the radial gauge.
+    *
+    * @param value
+    */
   def addRange(value: js.Object): Unit
   /**
-  	 * Changes the widget language to global language. Global language is the value in $.ig.util.language
-  	 */
+    * Changes the widget language to global language. Global language is the value in $.ig.util.language
+    */
   def changeGlobalLanguage(): Unit
   /**
-  	 * Changes the widget regional settins to global regional settings. Global regional settings are container in $.ig.util.regional
-  	 */
+    * Changes the widget regional settins to global regional settings. Global regional settings are container in $.ig.util.regional
+    */
   def changeGlobalRegional(): Unit
   /**
-  	 * Changes the all locales contained into a specified container to the language specified in [options.language](ui.igwidget#options:language)
-  	 * Note that this method is for rare scenarios, use [language](ui.igwidget#options:language) or [locale](ui.igwidget#options:locale) option setter
-  	 *
-  	 * @param $container Optional parameter - if not set it would use the element of the widget as $container
-  	 */
+    * Changes the all locales contained into a specified container to the language specified in [options.language](ui.igwidget#options:language)
+    * Note that this method is for rare scenarios, use [language](ui.igwidget#options:language) or [locale](ui.igwidget#options:locale) option setter
+    *
+    * @param $container Optional parameter - if not set it would use the element of the widget as $container
+    */
   def changeLocale($container: js.Object): Unit
   /**
-  	 * Clears the ranges in the radial gauge.
-  	 */
+    * Clears the ranges in the radial gauge.
+    */
   def clearRanges(): Unit
   /**
-  	 * Destroys widget.
-  	 */
+    * Destroys widget.
+    */
   def destroy(): Unit
   /**
-  	 * Exports the visual data for the radial gauge.
-  	 */
+    * Exports the visual data for the radial gauge.
+    */
   def exportVisualData(): Unit
   /**
-  	 * Flushes the gauge.
-  	 */
+    * Flushes the gauge.
+    */
   def flush(): Unit
   /**
-  	 * Gets the point on the gauge for a given scale value and extent.
-  	 *
-  	 * @param value
-  	 * @param extent
-  	 */
+    * Gets the point on the gauge for a given scale value and extent.
+    *
+    * @param value
+    * @param extent
+    */
   def getPointForValue(value: js.Object, extent: js.Object): Unit
   /**
-  	 * Returns a string containing the names of all the ranges delimited with a \n symbol.
-  	 */
+    * Returns a string containing the names of all the ranges delimited with a \n symbol.
+    */
   def getRangeNames(): String
   /**
-  	 * Gets the value for the main scale of the gauge for a given point within the bounds of the gauge.
-  	 *
-  	 * @param x
-  	 * @param y
-  	 */
+    * Gets the value for the main scale of the gauge for a given point within the bounds of the gauge.
+    *
+    * @param x
+    * @param y
+    */
   def getValueForPoint(x: js.Object, y: js.Object): Double
   /**
-  	 * Returns true if the main gauge needle bounding box contains the point provided, otherwise false.
-  	 *
-  	 * @param x
-  	 * @param y
-  	 */
+    * Returns true if the main gauge needle bounding box contains the point provided, otherwise false.
+    *
+    * @param x
+    * @param y
+    */
   def needleContainsPoint(x: js.Object, y: js.Object): Boolean
   /**
-  	 * Removes a specified range.
-  	 *
-  	 * @param value
-  	 */
+    * Removes a specified range.
+    *
+    * @param value
+    */
   def removeRange(value: js.Object): Unit
   /**
-  	 * Scales a value on the gauge's main scale to an angle around the center point of the gauge, in radians.
-  	 *
-  	 * @param value
-  	 */
+    * Scales a value on the gauge's main scale to an angle around the center point of the gauge, in radians.
+    *
+    * @param value
+    */
   def scaleValue(value: js.Object): Unit
   /**
-  	 * Returns true if the style was updated for the radial gauge.
-  	 */
+    * Returns true if the style was updated for the radial gauge.
+    */
   def styleUpdated(): Unit
   /**
-  	 * Unscales a value from an angle in radians to the represented value along the main scale of the gauge.
-  	 *
-  	 * @param value
-  	 */
+    * Unscales a value from an angle in radians to the represented value along the main scale of the gauge.
+    *
+    * @param value
+    */
   def unscaleValue(value: js.Object): Unit
   /**
-  	 * Updates the range.
-  	 *
-  	 * @param value
-  	 */
+    * Updates the range.
+    *
+    * @param value
+    */
   def updateRange(value: js.Object): Unit
 }
 

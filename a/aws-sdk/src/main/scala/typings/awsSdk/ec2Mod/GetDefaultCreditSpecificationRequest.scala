@@ -18,9 +18,9 @@ trait GetDefaultCreditSpecificationRequest extends js.Object {
 
 object GetDefaultCreditSpecificationRequest {
   @scala.inline
-  def apply(InstanceFamily: UnlimitedSupportedInstanceFamily, DryRun: js.UndefOr[scala.Boolean] = js.undefined): GetDefaultCreditSpecificationRequest = {
+  def apply(InstanceFamily: UnlimitedSupportedInstanceFamily, DryRun: js.UndefOr[Boolean] = js.undefined): GetDefaultCreditSpecificationRequest = {
     val __obj = js.Dynamic.literal(InstanceFamily = InstanceFamily.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDefaultCreditSpecificationRequest]
   }
 }

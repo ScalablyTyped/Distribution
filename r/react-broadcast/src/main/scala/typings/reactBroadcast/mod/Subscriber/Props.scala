@@ -21,7 +21,7 @@ object Props {
   ): Props[T] = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
-    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.asInstanceOf[js.Any])
+    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props[T]]
   }
 }

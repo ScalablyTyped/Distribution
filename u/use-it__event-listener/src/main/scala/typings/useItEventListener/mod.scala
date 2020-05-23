@@ -2,7 +2,7 @@ package typings.useItEventListener
 
 import typings.react.mod.EventHandler
 import typings.react.mod.SyntheticEvent
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ object mod extends js.Object {
   /**
     * A custom React Hook that provides a declarative useEventListener.
     */
-  def default[T /* <: SyntheticEvent[_, Event_] */](eventName: String, handler: EventHandler[T]): Unit = js.native
-  def default[T /* <: SyntheticEvent[_, Event_] */](eventName: String, handler: EventHandler[T], element: HTMLElement): Unit = js.native
+  def default[T /* <: SyntheticEvent[_, Event] */](eventName: String, handler: EventHandler[T]): Unit = js.native
+  def default[T /* <: SyntheticEvent[_, Event] */](eventName: String, handler: EventHandler[T], element: HTMLElement): Unit = js.native
 }
 

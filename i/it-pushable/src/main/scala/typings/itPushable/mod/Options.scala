@@ -15,7 +15,7 @@ object Options {
   def apply(onEnd: /* err */ js.UndefOr[Error] => _ = null, writev: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
     if (onEnd != null) __obj.updateDynamic("onEnd")(js.Any.fromFunction1(onEnd))
-    if (!js.isUndefined(writev)) __obj.updateDynamic("writev")(writev.asInstanceOf[js.Any])
+    if (!js.isUndefined(writev)) __obj.updateDynamic("writev")(writev.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

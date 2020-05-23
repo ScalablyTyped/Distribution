@@ -31,7 +31,7 @@ object CellModel {
     result: String | Double | js.Any = null,
     sharedFormula: String = null,
     text: String = null,
-    value: CellValue = null
+    value: js.UndefOr[Null | CellValue] = js.undefined
   ): CellModel = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], master = master.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -40,7 +40,7 @@ object CellModel {
     if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     if (sharedFormula != null) __obj.updateDynamic("sharedFormula")(sharedFormula.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellModel]
   }
 }

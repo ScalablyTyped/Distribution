@@ -11,7 +11,7 @@ trait UpdatePatchBaselineRequest extends js.Object {
     */
   var ApprovalRules: js.UndefOr[PatchRuleGroup] = js.native
   /**
-    * A list of explicitly approved patches for the baseline. For information about accepted formats for lists of approved patches and rejected patches, see Package Name Formats for Approved and Rejected Patch Lists in the AWS Systems Manager User Guide.
+    * A list of explicitly approved patches for the baseline. For information about accepted formats for lists of approved patches and rejected patches, see About package name formats for approved and rejected patch lists in the AWS Systems Manager User Guide.
     */
   var ApprovedPatches: js.UndefOr[PatchIdList] = js.native
   /**
@@ -39,7 +39,7 @@ trait UpdatePatchBaselineRequest extends js.Object {
     */
   var Name: js.UndefOr[BaselineName] = js.native
   /**
-    * A list of explicitly rejected patches for the baseline. For information about accepted formats for lists of approved patches and rejected patches, see Package Name Formats for Approved and Rejected Patch Lists in the AWS Systems Manager User Guide.
+    * A list of explicitly rejected patches for the baseline. For information about accepted formats for lists of approved patches and rejected patches, see About package name formats for approved and rejected patch lists in the AWS Systems Manager User Guide.
     */
   var RejectedPatches: js.UndefOr[PatchIdList] = js.native
   /**
@@ -63,26 +63,26 @@ object UpdatePatchBaselineRequest {
     ApprovalRules: PatchRuleGroup = null,
     ApprovedPatches: PatchIdList = null,
     ApprovedPatchesComplianceLevel: PatchComplianceLevel = null,
-    ApprovedPatchesEnableNonSecurity: js.UndefOr[scala.Boolean] = js.undefined,
+    ApprovedPatchesEnableNonSecurity: js.UndefOr[Boolean] = js.undefined,
     Description: BaselineDescription = null,
     GlobalFilters: PatchFilterGroup = null,
     Name: BaselineName = null,
     RejectedPatches: PatchIdList = null,
     RejectedPatchesAction: PatchAction = null,
-    Replace: js.UndefOr[scala.Boolean] = js.undefined,
+    Replace: js.UndefOr[Boolean] = js.undefined,
     Sources: PatchSourceList = null
   ): UpdatePatchBaselineRequest = {
     val __obj = js.Dynamic.literal(BaselineId = BaselineId.asInstanceOf[js.Any])
     if (ApprovalRules != null) __obj.updateDynamic("ApprovalRules")(ApprovalRules.asInstanceOf[js.Any])
     if (ApprovedPatches != null) __obj.updateDynamic("ApprovedPatches")(ApprovedPatches.asInstanceOf[js.Any])
     if (ApprovedPatchesComplianceLevel != null) __obj.updateDynamic("ApprovedPatchesComplianceLevel")(ApprovedPatchesComplianceLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(ApprovedPatchesEnableNonSecurity)) __obj.updateDynamic("ApprovedPatchesEnableNonSecurity")(ApprovedPatchesEnableNonSecurity.asInstanceOf[js.Any])
+    if (!js.isUndefined(ApprovedPatchesEnableNonSecurity)) __obj.updateDynamic("ApprovedPatchesEnableNonSecurity")(ApprovedPatchesEnableNonSecurity.get.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (GlobalFilters != null) __obj.updateDynamic("GlobalFilters")(GlobalFilters.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (RejectedPatches != null) __obj.updateDynamic("RejectedPatches")(RejectedPatches.asInstanceOf[js.Any])
     if (RejectedPatchesAction != null) __obj.updateDynamic("RejectedPatchesAction")(RejectedPatchesAction.asInstanceOf[js.Any])
-    if (!js.isUndefined(Replace)) __obj.updateDynamic("Replace")(Replace.asInstanceOf[js.Any])
+    if (!js.isUndefined(Replace)) __obj.updateDynamic("Replace")(Replace.get.asInstanceOf[js.Any])
     if (Sources != null) __obj.updateDynamic("Sources")(Sources.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePatchBaselineRequest]
   }

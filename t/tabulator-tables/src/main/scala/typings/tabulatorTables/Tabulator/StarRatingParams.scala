@@ -11,9 +11,9 @@ trait StarRatingParams extends _FormatterParams {
 
 object StarRatingParams {
   @scala.inline
-  def apply(stars: Int | Double = null): StarRatingParams = {
+  def apply(stars: js.UndefOr[Double] = js.undefined): StarRatingParams = {
     val __obj = js.Dynamic.literal()
-    if (stars != null) __obj.updateDynamic("stars")(stars.asInstanceOf[js.Any])
+    if (!js.isUndefined(stars)) __obj.updateDynamic("stars")(stars.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StarRatingParams]
   }
 }

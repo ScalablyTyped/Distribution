@@ -7,7 +7,7 @@ import typings.devextreme.devextremeStrings.before
 import typings.devextreme.devextremeStrings.center
 import typings.devextreme.devextremeStrings.inMenu
 import typings.devextreme.devextremeStrings.never
-import typings.devextreme.mod._Global_.JQuery
+import typings.devextreme.mod.global.JQuery
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -52,7 +52,7 @@ object dxToolbarItem {
   ): dxToolbarItem = {
     val __obj = js.Dynamic.literal()
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
     if (locateInMenu != null) __obj.updateDynamic("locateInMenu")(locateInMenu.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
@@ -61,7 +61,7 @@ object dxToolbarItem {
     if (showText != null) __obj.updateDynamic("showText")(showText.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     if (widget != null) __obj.updateDynamic("widget")(widget.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxToolbarItem]
   }

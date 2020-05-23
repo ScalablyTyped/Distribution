@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,8 +20,4 @@ trait PortalRating extends Accessor {
     */
   var rating: Double = js.native
 }
-
-@JSGlobal("__esri.PortalRating")
-@js.native
-object PortalRating extends TopLevel[PortalRatingConstructor]
 

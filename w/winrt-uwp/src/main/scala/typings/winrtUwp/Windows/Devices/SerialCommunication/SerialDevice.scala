@@ -1,7 +1,6 @@
 package typings.winrtUwp.Windows.Devices.SerialCommunication
 
 import typings.winrtUwp.Windows.Foundation.EventHandler
-import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.TypedEventHandler
 import typings.winrtUwp.Windows.Storage.Streams.IInputStream
 import typings.winrtUwp.Windows.Storage.Streams.IOutputStream
@@ -13,9 +12,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a serial port. The object provides methods and properties that an app can use to find the port (in the system). */
-@JSGlobal("Windows.Devices.SerialCommunication.SerialDevice")
 @js.native
-abstract class SerialDevice () extends js.Object {
+trait SerialDevice extends js.Object {
   /** Gets or sets the baud rate. */
   var baudRate: Double = js.native
   /** Gets or sets the break signal state. */
@@ -76,35 +74,5 @@ abstract class SerialDevice () extends js.Object {
   def removeEventListener_errorreceived(`type`: errorreceived, listener: TypedEventHandler[SerialDevice, ErrorReceivedEventArgs]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_pinchanged(`type`: pinchanged, listener: TypedEventHandler[SerialDevice, PinChangedEventArgs]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Devices.SerialCommunication.SerialDevice")
-@js.native
-object SerialDevice extends js.Object {
-  /**
-    * Starts an asynchronous operation that creates a SerialDevice object.
-    * @param deviceId The device instance path of the device. To obtain that value, get the DeviceInformation.Id property value.
-    * @return Returns an IAsyncOperation(SerialDevice) object that returns the results of the operation.
-    */
-  def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[SerialDevice] = js.native
-  /**
-    * Gets an Advanced Query Syntax (AQS) string that the app can pass to DeviceInformation.FindAllAsync in order to find all serial devices on the system.
-    * @return String formatted as an AQS query.
-    */
-  def getDeviceSelector(): String = js.native
-  /**
-    * Gets an Advanced Query Syntax (AQS) string that the app can pass to DeviceInformation.FindAllAsync in order to find a serial device by specifying its port name.
-    * @param portName The serial port name. For example, "COM1".
-    * @return String formatted as an AQS query.
-    */
-  def getDeviceSelector(portName: String): String = js.native
-  /**
-    * Gets an Advanced Query Syntax (AQS) string that the app can pass to DeviceInformation.FindAllAsync in order to find a specific Serial-to-USB device by specifying it's VID and PID.
-    * @param vendorId Specifies the vendor identifier for the device as assigned by the USB specification committee. Possible values are 0 through 0xffff.
-    * @param productId Specifies the product identifier. This value is assigned by the manufacturer and is device-specific. Possible values are 0 through 0xffff.
-    * @return String formatted as an AQS query.
-    */
-  def getDeviceSelectorFromUsbVidPid(vendorId: Double, productId: Double): String = js.native
 }
 

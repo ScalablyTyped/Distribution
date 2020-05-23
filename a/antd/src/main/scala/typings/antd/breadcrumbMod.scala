@@ -1,5 +1,8 @@
 package typings.antd
 
+import typings.antd.anon.Separator
+import typings.antd.anon.TypeofBreadcrumbItem
+import typings.antd.anon.TypeofBreadcrumbSeparator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +19,7 @@ object breadcrumbMod extends js.Object {
   object default extends js.Object {
     var Item: TypeofBreadcrumbItem = js.native
     var Separator: TypeofBreadcrumbSeparator = js.native
-    var defaultProps: AnonSeparator = js.native
+    var defaultProps: Separator = js.native
   }
   
 }

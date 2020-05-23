@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.NumberDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,8 +13,4 @@ trait SpeechRecognitionResult extends /* index */ NumberDictionary[SpeechRecogni
   val length: Double = js.native
   def item(index: Double): SpeechRecognitionAlternative = js.native
 }
-
-@JSGlobal("SpeechRecognitionResult")
-@js.native
-object SpeechRecognitionResult extends Instantiable0[SpeechRecognitionResult]
 

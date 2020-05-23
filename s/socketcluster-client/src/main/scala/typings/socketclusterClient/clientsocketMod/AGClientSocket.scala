@@ -4,9 +4,9 @@ import typings.agChannel.mod.Client
 import typings.asyncStreamEmitter.mod.AsyncStreamEmitter
 import typings.scErrors.mod.SocketProtocolErrorStatuses_
 import typings.scErrors.mod.SocketProtocolIgnoreStatuses_
-import typings.socketclusterClient.AnonAckTimeout
-import typings.socketclusterClient.AnonError
-import typings.socketclusterClient.AnonOldAuthToken
+import typings.socketclusterClient.anon.AckTimeout
+import typings.socketclusterClient.anon.Error
+import typings.socketclusterClient.anon.OldAuthToken
 import typings.socketclusterClient.authMod.AGAuthEngine
 import typings.socketclusterClient.socketclusterClientStrings.authStateChange
 import typings.socketclusterClient.socketclusterClientStrings.authenticate
@@ -117,11 +117,11 @@ trait AGClientSocket
   @JSName("emit")
   def emit_disconnect(eventName: disconnect, data: CloseData): Unit = js.native
   @JSName("emit")
-  def emit_error(eventName: error, data: AnonError): Unit = js.native
+  def emit_error(eventName: error, data: Error): Unit = js.native
   @JSName("emit")
   def emit_kickOut(eventName: kickOut, data: KickOutData): Unit = js.native
   @JSName("emit")
-  def emit_removeAuthToken(eventName: removeAuthToken, data: AnonOldAuthToken): Unit = js.native
+  def emit_removeAuthToken(eventName: removeAuthToken, data: OldAuthToken): Unit = js.native
   @JSName("emit")
   def emit_subscribe(eventName: subscribe, data: SubscribeData): Unit = js.native
   @JSName("emit")
@@ -165,7 +165,7 @@ trait AGClientSocket
   def hasProcedureConsumer(procedureName: String, consumerId: Double): Boolean = js.native
   def hasReceiverConsumer(receiverName: String, consumerId: Double): Boolean = js.native
   def invoke(event: String, data: js.Any): js.Promise[_] = js.native
-  def invoke(event: String, data: js.Any, options: AnonAckTimeout): js.Promise[_] = js.native
+  def invoke(event: String, data: js.Any, options: AckTimeout): js.Promise[_] = js.native
   def killAllChannelListeners(): Unit = js.native
   def killAllChannelOutputs(): Unit = js.native
   def killAllChannels(): Unit = js.native
@@ -192,11 +192,11 @@ trait AGClientSocket
   @JSName("listener")
   def listener_disconnect(eventName: disconnect): typings.consumableStream.mod.^[CloseData] = js.native
   @JSName("listener")
-  def listener_error(eventName: error): typings.consumableStream.mod.^[AnonError] = js.native
+  def listener_error(eventName: error): typings.consumableStream.mod.^[Error] = js.native
   @JSName("listener")
   def listener_kickOut(eventName: kickOut): typings.consumableStream.mod.^[KickOutData] = js.native
   @JSName("listener")
-  def listener_removeAuthToken(eventName: removeAuthToken): typings.consumableStream.mod.^[AnonOldAuthToken] = js.native
+  def listener_removeAuthToken(eventName: removeAuthToken): typings.consumableStream.mod.^[OldAuthToken] = js.native
   @JSName("listener")
   def listener_subscribe(eventName: subscribe): typings.consumableStream.mod.^[SubscribeData] = js.native
   @JSName("listener")
@@ -224,6 +224,6 @@ trait AGClientSocket
   def subscriptions(): js.Array[String] = js.native
   def subscriptions(includePending: Boolean): js.Array[String] = js.native
   def transmit(event: String, data: js.Any): js.Promise[Unit] = js.native
-  def transmit(event: String, data: js.Any, options: AnonAckTimeout): js.Promise[Unit] = js.native
+  def transmit(event: String, data: js.Any, options: AckTimeout): js.Promise[Unit] = js.native
 }
 

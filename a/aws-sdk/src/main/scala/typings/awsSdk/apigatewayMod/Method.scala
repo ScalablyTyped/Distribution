@@ -55,7 +55,7 @@ trait Method extends js.Object {
 object Method {
   @scala.inline
   def apply(
-    apiKeyRequired: js.UndefOr[scala.Boolean] = js.undefined,
+    apiKeyRequired: js.UndefOr[NullableBoolean] = js.undefined,
     authorizationScopes: ListOfString = null,
     authorizationType: String = null,
     authorizerId: String = null,
@@ -68,7 +68,7 @@ object Method {
     requestValidatorId: String = null
   ): Method = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(apiKeyRequired)) __obj.updateDynamic("apiKeyRequired")(apiKeyRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(apiKeyRequired)) __obj.updateDynamic("apiKeyRequired")(apiKeyRequired.get.asInstanceOf[js.Any])
     if (authorizationScopes != null) __obj.updateDynamic("authorizationScopes")(authorizationScopes.asInstanceOf[js.Any])
     if (authorizationType != null) __obj.updateDynamic("authorizationType")(authorizationType.asInstanceOf[js.Any])
     if (authorizerId != null) __obj.updateDynamic("authorizerId")(authorizerId.asInstanceOf[js.Any])

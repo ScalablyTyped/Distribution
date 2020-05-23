@@ -36,14 +36,14 @@ object Options {
   def apply(
     detectIndent: js.UndefOr[Boolean] = js.undefined,
     indent: String | Double = null,
-    mode: Int | Double = null,
+    mode: js.UndefOr[Double] = js.undefined,
     replacer: Replacer | (js.Array[Double | String]) = null,
     sortKeys: Boolean | SortKeys = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(detectIndent)) __obj.updateDynamic("detectIndent")(detectIndent.asInstanceOf[js.Any])
+    if (!js.isUndefined(detectIndent)) __obj.updateDynamic("detectIndent")(detectIndent.get.asInstanceOf[js.Any])
     if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(mode)) __obj.updateDynamic("mode")(mode.get.asInstanceOf[js.Any])
     if (replacer != null) __obj.updateDynamic("replacer")(replacer.asInstanceOf[js.Any])
     if (sortKeys != null) __obj.updateDynamic("sortKeys")(sortKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

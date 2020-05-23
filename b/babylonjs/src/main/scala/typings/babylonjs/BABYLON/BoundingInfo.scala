@@ -4,21 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.BoundingInfo")
 @js.native
-class BoundingInfo protected () extends ICullable {
-  /**
-    * Constructs bounding info
-    * @param minimum min vector of the bounding box/sphere
-    * @param maximum max vector of the bounding box/sphere
-    * @param worldMatrix defines the new world matrix
-    */
-  def this(minimum: DeepImmutable[Vector3], maximum: DeepImmutable[Vector3]) = this()
-  def this(
-    minimum: DeepImmutable[Vector3],
-    maximum: DeepImmutable[Vector3],
-    worldMatrix: DeepImmutable[Matrix]
-  ) = this()
+trait BoundingInfo extends ICullable {
   var _isLocked: js.Any = js.native
   /**
     * Bounding box for the mesh
@@ -56,21 +43,6 @@ class BoundingInfo protected () extends ICullable {
     * @returns if the point intersects
     */
   def intersectsPoint(point: DeepImmutable[Vector3]): Boolean = js.native
-  /**
-    * Checks if a cullable object (mesh...) is in the camera frustum
-    * Unlike isInFrustum this cheks the full bounding box
-    * @param frustumPlanes Camera near/planes
-    * @returns true if the object is in frustum otherwise false
-    */
-  /* CompleteClass */
-  override def isCompletelyInFrustum(frustumPlanes: js.Array[Plane]): Boolean = js.native
-  /**
-    * Checks if the object or part of the object is in the frustum
-    * @param frustumPlanes Camera near/planes
-    * @returns true if the object is in frustum otherwise false
-    */
-  /* CompleteClass */
-  override def isInFrustum(frustumPlanes: js.Array[Plane]): Boolean = js.native
   def isInFrustum(frustumPlanes: js.Array[DeepImmutable[Plane]], strategy: Double): Boolean = js.native
   /**
     * If the info is locked and won't be updated to avoid perf overhead
@@ -104,12 +76,5 @@ class BoundingInfo protected () extends ICullable {
     * @param world world matrix to be used to update
     */
   def update(world: DeepImmutable[Matrix]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.BoundingInfo")
-@js.native
-object BoundingInfo extends js.Object {
-  val TmpVector3: js.Any = js.native
 }
 

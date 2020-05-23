@@ -4,34 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.ReflectionProbe")
 @js.native
-class ReflectionProbe protected () extends js.Object {
-  /**
-    * Creates a new reflection probe
-    * @param name defines the name of the probe
-    * @param size defines the texture resolution (for each face)
-    * @param scene defines the hosting scene
-    * @param generateMipMaps defines if mip maps should be generated automatically (true by default)
-    * @param useFloat defines if HDR data (flaot data) should be used to store colors (false by default)
-    */
-  def this(/** defines the name of the probe */
-  name: String, size: Double, scene: Scene) = this()
-  def this(
-    /** defines the name of the probe */
-  name: String,
-    size: Double,
-    scene: Scene,
-    generateMipMaps: Boolean
-  ) = this()
-  def this(
-    /** defines the name of the probe */
-  name: String,
-    size: Double,
-    scene: Scene,
-    generateMipMaps: Boolean,
-    useFloat: Boolean
-  ) = this()
+trait ReflectionProbe extends js.Object {
   var _add: js.Any = js.native
   var _attachedMesh: js.Any = js.native
   var _invertYAxis: js.Any = js.native
@@ -85,19 +59,5 @@ class ReflectionProbe protected () extends js.Object {
     */
   def setRenderingAutoClearDepthStencil(renderingGroupId: Double, autoClearDepthStencil: Boolean): Unit = js.native
   def toString(fullDetails: Boolean): String = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.ReflectionProbe")
-@js.native
-object ReflectionProbe extends js.Object {
-  /**
-    * Parse the JSON representation of a reflection probe in order to recreate the reflection probe in the given scene.
-    * @param parsedReflectionProbe Define the JSON representation of the reflection probe
-    * @param scene Define the scene the parsed reflection probe should be instantiated in
-    * @param rootUrl Define the root url of the parsing sequence in the case of relative dependencies
-    * @returns The parsed reflection probe if successful
-    */
-  def Parse(parsedReflectionProbe: js.Any, scene: Scene, rootUrl: String): Nullable[ReflectionProbe] = js.native
 }
 

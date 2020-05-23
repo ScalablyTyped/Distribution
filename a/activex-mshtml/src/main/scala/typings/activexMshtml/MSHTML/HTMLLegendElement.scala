@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLLegendElement")
 @js.native
-class HTMLLegendElement protected () extends js.Object {
+trait HTMLLegendElement extends js.Object {
   @JSName("MSHTML.HTMLLegendElement_typekey")
   var MSHTMLDotHTMLLegendElement_typekey: HTMLLegendElement = js.native
   var accessKey: String = js.native

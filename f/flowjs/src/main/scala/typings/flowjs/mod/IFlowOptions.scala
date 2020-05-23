@@ -35,23 +35,23 @@ object IFlowOptions {
   @scala.inline
   def apply(
     allowDuplicateUploads: js.UndefOr[Boolean] = js.undefined,
-    chunkRetryInterval: Int | Double = null,
-    chunkSize: Int | Double = null,
+    chunkRetryInterval: js.UndefOr[Double] = js.undefined,
+    chunkSize: js.UndefOr[Double] = js.undefined,
     fileParameterName: String = null,
     forceChunkSize: js.UndefOr[Boolean] = js.undefined,
     generateUniqueIdentifier: js.Function = null,
     headers: js.Object = null,
     initFileFn: js.Function = null,
-    maxChunkRetries: Int | Double = null,
+    maxChunkRetries: js.UndefOr[Double] = js.undefined,
     method: String = null,
     permanentErrors: js.Array[String] = null,
     preprocess: js.Function = null,
     prioritizeFirstAndLastChunk: js.UndefOr[Boolean] = js.undefined,
-    progressCallbacksInterval: Int | Double = null,
+    progressCallbacksInterval: js.UndefOr[Double] = js.undefined,
     query: js.Object = null,
-    simultaneousUploads: Int | Double = null,
+    simultaneousUploads: js.UndefOr[Double] = js.undefined,
     singleFile: js.UndefOr[Boolean] = js.undefined,
-    speedSmoothingFactor: Int | Double = null,
+    speedSmoothingFactor: js.UndefOr[Double] = js.undefined,
     successStatuses: js.Array[String] = null,
     target: String = null,
     testChunks: js.UndefOr[Boolean] = js.undefined,
@@ -60,30 +60,30 @@ object IFlowOptions {
     withCredentials: js.UndefOr[Boolean] = js.undefined
   ): IFlowOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDuplicateUploads)) __obj.updateDynamic("allowDuplicateUploads")(allowDuplicateUploads.asInstanceOf[js.Any])
-    if (chunkRetryInterval != null) __obj.updateDynamic("chunkRetryInterval")(chunkRetryInterval.asInstanceOf[js.Any])
-    if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDuplicateUploads)) __obj.updateDynamic("allowDuplicateUploads")(allowDuplicateUploads.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(chunkRetryInterval)) __obj.updateDynamic("chunkRetryInterval")(chunkRetryInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(chunkSize)) __obj.updateDynamic("chunkSize")(chunkSize.get.asInstanceOf[js.Any])
     if (fileParameterName != null) __obj.updateDynamic("fileParameterName")(fileParameterName.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceChunkSize)) __obj.updateDynamic("forceChunkSize")(forceChunkSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceChunkSize)) __obj.updateDynamic("forceChunkSize")(forceChunkSize.get.asInstanceOf[js.Any])
     if (generateUniqueIdentifier != null) __obj.updateDynamic("generateUniqueIdentifier")(generateUniqueIdentifier.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (initFileFn != null) __obj.updateDynamic("initFileFn")(initFileFn.asInstanceOf[js.Any])
-    if (maxChunkRetries != null) __obj.updateDynamic("maxChunkRetries")(maxChunkRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxChunkRetries)) __obj.updateDynamic("maxChunkRetries")(maxChunkRetries.get.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (permanentErrors != null) __obj.updateDynamic("permanentErrors")(permanentErrors.asInstanceOf[js.Any])
     if (preprocess != null) __obj.updateDynamic("preprocess")(preprocess.asInstanceOf[js.Any])
-    if (!js.isUndefined(prioritizeFirstAndLastChunk)) __obj.updateDynamic("prioritizeFirstAndLastChunk")(prioritizeFirstAndLastChunk.asInstanceOf[js.Any])
-    if (progressCallbacksInterval != null) __obj.updateDynamic("progressCallbacksInterval")(progressCallbacksInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(prioritizeFirstAndLastChunk)) __obj.updateDynamic("prioritizeFirstAndLastChunk")(prioritizeFirstAndLastChunk.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressCallbacksInterval)) __obj.updateDynamic("progressCallbacksInterval")(progressCallbacksInterval.get.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (simultaneousUploads != null) __obj.updateDynamic("simultaneousUploads")(simultaneousUploads.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleFile)) __obj.updateDynamic("singleFile")(singleFile.asInstanceOf[js.Any])
-    if (speedSmoothingFactor != null) __obj.updateDynamic("speedSmoothingFactor")(speedSmoothingFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(simultaneousUploads)) __obj.updateDynamic("simultaneousUploads")(simultaneousUploads.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleFile)) __obj.updateDynamic("singleFile")(singleFile.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(speedSmoothingFactor)) __obj.updateDynamic("speedSmoothingFactor")(speedSmoothingFactor.get.asInstanceOf[js.Any])
     if (successStatuses != null) __obj.updateDynamic("successStatuses")(successStatuses.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (!js.isUndefined(testChunks)) __obj.updateDynamic("testChunks")(testChunks.asInstanceOf[js.Any])
+    if (!js.isUndefined(testChunks)) __obj.updateDynamic("testChunks")(testChunks.get.asInstanceOf[js.Any])
     if (testMethod != null) __obj.updateDynamic("testMethod")(testMethod.asInstanceOf[js.Any])
     if (uploadMethod != null) __obj.updateDynamic("uploadMethod")(uploadMethod.asInstanceOf[js.Any])
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.asInstanceOf[js.Any])
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFlowOptions]
   }
 }

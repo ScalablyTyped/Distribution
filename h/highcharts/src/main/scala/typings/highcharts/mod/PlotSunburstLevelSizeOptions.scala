@@ -27,10 +27,10 @@ trait PlotSunburstLevelSizeOptions extends js.Object {
 
 object PlotSunburstLevelSizeOptions {
   @scala.inline
-  def apply(unit: OptionsUnitValue = null, value: Int | Double = null): PlotSunburstLevelSizeOptions = {
+  def apply(unit: OptionsUnitValue = null, value: js.UndefOr[Double] = js.undefined): PlotSunburstLevelSizeOptions = {
     val __obj = js.Dynamic.literal()
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotSunburstLevelSizeOptions]
   }
 }

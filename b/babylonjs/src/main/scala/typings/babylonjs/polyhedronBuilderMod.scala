@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.babylonjs.anon.FaceUV
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
@@ -35,8 +36,8 @@ object polyhedronBuilderMod extends js.Object {
       * @returns the polyhedron mesh
       * @see https://doc.babylonjs.com/how_to/polyhedra_shapes
       */
-    def CreatePolyhedron(name: String, options: AnonFaceUV): Mesh = js.native
-    def CreatePolyhedron(name: String, options: AnonFaceUV, scene: Nullable[Scene]): Mesh = js.native
+    def CreatePolyhedron(name: String, options: FaceUV): Mesh = js.native
+    def CreatePolyhedron(name: String, options: FaceUV, scene: Nullable[Scene]): Mesh = js.native
   }
   
 }

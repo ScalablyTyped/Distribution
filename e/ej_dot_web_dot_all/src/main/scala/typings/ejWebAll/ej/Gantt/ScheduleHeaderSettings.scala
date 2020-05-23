@@ -67,7 +67,7 @@ object ScheduleHeaderSettings {
     timescaleUnitSize: String = null,
     updateTimescaleView: js.UndefOr[Boolean] = js.undefined,
     weekHeaderFormat: String = null,
-    weekStartDay: Int | Double = null,
+    weekStartDay: js.UndefOr[Double] = js.undefined,
     weekendBackground: String = null,
     yearHeaderFormat: String = null
   ): ScheduleHeaderSettings = {
@@ -79,9 +79,9 @@ object ScheduleHeaderSettings {
     if (scheduleHeaderType != null) __obj.updateDynamic("scheduleHeaderType")(scheduleHeaderType.asInstanceOf[js.Any])
     if (timescaleStartDateMode != null) __obj.updateDynamic("timescaleStartDateMode")(timescaleStartDateMode.asInstanceOf[js.Any])
     if (timescaleUnitSize != null) __obj.updateDynamic("timescaleUnitSize")(timescaleUnitSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateTimescaleView)) __obj.updateDynamic("updateTimescaleView")(updateTimescaleView.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateTimescaleView)) __obj.updateDynamic("updateTimescaleView")(updateTimescaleView.get.asInstanceOf[js.Any])
     if (weekHeaderFormat != null) __obj.updateDynamic("weekHeaderFormat")(weekHeaderFormat.asInstanceOf[js.Any])
-    if (weekStartDay != null) __obj.updateDynamic("weekStartDay")(weekStartDay.asInstanceOf[js.Any])
+    if (!js.isUndefined(weekStartDay)) __obj.updateDynamic("weekStartDay")(weekStartDay.get.asInstanceOf[js.Any])
     if (weekendBackground != null) __obj.updateDynamic("weekendBackground")(weekendBackground.asInstanceOf[js.Any])
     if (yearHeaderFormat != null) __obj.updateDynamic("yearHeaderFormat")(yearHeaderFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduleHeaderSettings]

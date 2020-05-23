@@ -23,7 +23,7 @@ object BaseFieldsProps {
   def apply[P](
     names: js.Array[String],
     component: ComponentType[_] = null,
-    format: (/* value */ js.Any, /* name */ String) => js.Any = null,
+    format: js.UndefOr[Null | ((/* value */ js.Any, /* name */ String) => js.Any)] = js.undefined,
     forwardRef: js.UndefOr[Boolean] = js.undefined,
     parse: (/* value */ js.Any, /* name */ String) => js.Any = null,
     props: P = null,
@@ -32,8 +32,8 @@ object BaseFieldsProps {
   ): BaseFieldsProps[P] = {
     val __obj = js.Dynamic.literal(names = names.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction2(format))
-    if (!js.isUndefined(forwardRef)) __obj.updateDynamic("forwardRef")(forwardRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(format)) __obj.updateDynamic("format")(if (format != null) js.Any.fromFunction2(format.asInstanceOf[(/* value */ js.Any, /* name */ String) => js.Any]) else null)
+    if (!js.isUndefined(forwardRef)) __obj.updateDynamic("forwardRef")(forwardRef.get.asInstanceOf[js.Any])
     if (parse != null) __obj.updateDynamic("parse")(js.Any.fromFunction2(parse))
     if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])

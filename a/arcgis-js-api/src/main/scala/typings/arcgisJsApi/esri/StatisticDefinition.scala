@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`percentile-continuous`
 import typings.arcgisJsApi.arcgisJsApiStrings.`percentile-discrete`
 import typings.arcgisJsApi.arcgisJsApiStrings.`var`
@@ -63,8 +62,4 @@ trait StatisticDefinition
     */
   var statisticType: count | sum | min | max | avg | stddev | `var` | `percentile-continuous` | `percentile-discrete` = js.native
 }
-
-@JSGlobal("__esri.StatisticDefinition")
-@js.native
-object StatisticDefinition extends TopLevel[StatisticDefinitionConstructor]
 

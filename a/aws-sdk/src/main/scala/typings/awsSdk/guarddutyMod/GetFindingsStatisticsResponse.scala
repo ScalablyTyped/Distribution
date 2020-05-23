@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetFindingsStatisticsResponse extends js.Object {
   /**
-    * Finding statistics object.
+    * The finding statistics object.
     */
   var FindingStatistics: typings.awsSdk.guarddutyMod.FindingStatistics = js.native
 }

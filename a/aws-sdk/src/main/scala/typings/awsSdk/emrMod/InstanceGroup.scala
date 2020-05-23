@@ -82,18 +82,18 @@ object InstanceGroup {
     AutoScalingPolicy: AutoScalingPolicyDescription = null,
     BidPrice: String = null,
     Configurations: ConfigurationList = null,
-    ConfigurationsVersion: Int | Double = null,
+    ConfigurationsVersion: js.UndefOr[Long] = js.undefined,
     EbsBlockDevices: EbsBlockDeviceList = null,
-    EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined,
+    EbsOptimized: js.UndefOr[BooleanObject] = js.undefined,
     Id: InstanceGroupId = null,
     InstanceGroupType: InstanceGroupType = null,
     InstanceType: InstanceType = null,
     LastSuccessfullyAppliedConfigurations: ConfigurationList = null,
-    LastSuccessfullyAppliedConfigurationsVersion: Int | Double = null,
+    LastSuccessfullyAppliedConfigurationsVersion: js.UndefOr[Long] = js.undefined,
     Market: MarketType = null,
     Name: String = null,
-    RequestedInstanceCount: Int | Double = null,
-    RunningInstanceCount: Int | Double = null,
+    RequestedInstanceCount: js.UndefOr[Integer] = js.undefined,
+    RunningInstanceCount: js.UndefOr[Integer] = js.undefined,
     ShrinkPolicy: ShrinkPolicy = null,
     Status: InstanceGroupStatus = null
   ): InstanceGroup = {
@@ -101,18 +101,18 @@ object InstanceGroup {
     if (AutoScalingPolicy != null) __obj.updateDynamic("AutoScalingPolicy")(AutoScalingPolicy.asInstanceOf[js.Any])
     if (BidPrice != null) __obj.updateDynamic("BidPrice")(BidPrice.asInstanceOf[js.Any])
     if (Configurations != null) __obj.updateDynamic("Configurations")(Configurations.asInstanceOf[js.Any])
-    if (ConfigurationsVersion != null) __obj.updateDynamic("ConfigurationsVersion")(ConfigurationsVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConfigurationsVersion)) __obj.updateDynamic("ConfigurationsVersion")(ConfigurationsVersion.get.asInstanceOf[js.Any])
     if (EbsBlockDevices != null) __obj.updateDynamic("EbsBlockDevices")(EbsBlockDevices.asInstanceOf[js.Any])
-    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.asInstanceOf[js.Any])
+    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.get.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     if (InstanceGroupType != null) __obj.updateDynamic("InstanceGroupType")(InstanceGroupType.asInstanceOf[js.Any])
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
     if (LastSuccessfullyAppliedConfigurations != null) __obj.updateDynamic("LastSuccessfullyAppliedConfigurations")(LastSuccessfullyAppliedConfigurations.asInstanceOf[js.Any])
-    if (LastSuccessfullyAppliedConfigurationsVersion != null) __obj.updateDynamic("LastSuccessfullyAppliedConfigurationsVersion")(LastSuccessfullyAppliedConfigurationsVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(LastSuccessfullyAppliedConfigurationsVersion)) __obj.updateDynamic("LastSuccessfullyAppliedConfigurationsVersion")(LastSuccessfullyAppliedConfigurationsVersion.get.asInstanceOf[js.Any])
     if (Market != null) __obj.updateDynamic("Market")(Market.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (RequestedInstanceCount != null) __obj.updateDynamic("RequestedInstanceCount")(RequestedInstanceCount.asInstanceOf[js.Any])
-    if (RunningInstanceCount != null) __obj.updateDynamic("RunningInstanceCount")(RunningInstanceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(RequestedInstanceCount)) __obj.updateDynamic("RequestedInstanceCount")(RequestedInstanceCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RunningInstanceCount)) __obj.updateDynamic("RunningInstanceCount")(RunningInstanceCount.get.asInstanceOf[js.Any])
     if (ShrinkPolicy != null) __obj.updateDynamic("ShrinkPolicy")(ShrinkPolicy.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceGroup]

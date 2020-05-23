@@ -96,6 +96,10 @@ trait TextInputAndroidProps extends js.Object {
     */
   var returnKeyLabel: js.UndefOr[String] = js.undefined
   /**
+    * When false, it will prevent the soft keyboard from showing when the field is focused. The default value is true
+    */
+  var showSoftInputOnFocus: js.UndefOr[Boolean] = js.undefined
+  /**
     * Vertically align text when `multiline` is set to true
     */
   var textAlignVertical: js.UndefOr[auto | top | bottom | center] = js.undefined
@@ -117,21 +121,23 @@ object TextInputAndroidProps {
     disableFullscreenUI: js.UndefOr[Boolean] = js.undefined,
     importantForAutofill: auto | no | noExcludeDescendants | yes | yesExcludeDescendants = null,
     inlineImageLeft: String = null,
-    inlineImagePadding: Int | Double = null,
-    numberOfLines: Int | Double = null,
+    inlineImagePadding: js.UndefOr[Double] = js.undefined,
+    numberOfLines: js.UndefOr[Double] = js.undefined,
     returnKeyLabel: String = null,
+    showSoftInputOnFocus: js.UndefOr[Boolean] = js.undefined,
     textAlignVertical: auto | top | bottom | center = null,
     textBreakStrategy: simple | highQuality | balanced = null,
     underlineColorAndroid: String = null
   ): TextInputAndroidProps = {
     val __obj = js.Dynamic.literal()
     if (autoCompleteType != null) __obj.updateDynamic("autoCompleteType")(autoCompleteType.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableFullscreenUI)) __obj.updateDynamic("disableFullscreenUI")(disableFullscreenUI.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableFullscreenUI)) __obj.updateDynamic("disableFullscreenUI")(disableFullscreenUI.get.asInstanceOf[js.Any])
     if (importantForAutofill != null) __obj.updateDynamic("importantForAutofill")(importantForAutofill.asInstanceOf[js.Any])
     if (inlineImageLeft != null) __obj.updateDynamic("inlineImageLeft")(inlineImageLeft.asInstanceOf[js.Any])
-    if (inlineImagePadding != null) __obj.updateDynamic("inlineImagePadding")(inlineImagePadding.asInstanceOf[js.Any])
-    if (numberOfLines != null) __obj.updateDynamic("numberOfLines")(numberOfLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(inlineImagePadding)) __obj.updateDynamic("inlineImagePadding")(inlineImagePadding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfLines)) __obj.updateDynamic("numberOfLines")(numberOfLines.get.asInstanceOf[js.Any])
     if (returnKeyLabel != null) __obj.updateDynamic("returnKeyLabel")(returnKeyLabel.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSoftInputOnFocus)) __obj.updateDynamic("showSoftInputOnFocus")(showSoftInputOnFocus.get.asInstanceOf[js.Any])
     if (textAlignVertical != null) __obj.updateDynamic("textAlignVertical")(textAlignVertical.asInstanceOf[js.Any])
     if (textBreakStrategy != null) __obj.updateDynamic("textBreakStrategy")(textBreakStrategy.asInstanceOf[js.Any])
     if (underlineColorAndroid != null) __obj.updateDynamic("underlineColorAndroid")(underlineColorAndroid.asInstanceOf[js.Any])

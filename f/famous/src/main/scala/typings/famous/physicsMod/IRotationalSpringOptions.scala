@@ -19,21 +19,21 @@ object IRotationalSpringOptions {
   @scala.inline
   def apply(
     anchor: Quaternion = null,
-    damping: Int | Double = null,
-    dampingRatio: Int | Double = null,
-    max: Int | Double = null,
-    period: Int | Double = null,
-    stiffness: Int | Double = null,
+    damping: js.UndefOr[Double] = js.undefined,
+    dampingRatio: js.UndefOr[Double] = js.undefined,
+    max: js.UndefOr[Double] = js.undefined,
+    period: js.UndefOr[Double] = js.undefined,
+    stiffness: js.UndefOr[Double] = js.undefined,
     targets: js.Array[_] = null,
     `type`: (/* dist */ js.Any, /* rMax */ js.Any) => Double = null
   ): IRotationalSpringOptions = {
     val __obj = js.Dynamic.literal()
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (damping != null) __obj.updateDynamic("damping")(damping.asInstanceOf[js.Any])
-    if (dampingRatio != null) __obj.updateDynamic("dampingRatio")(dampingRatio.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (stiffness != null) __obj.updateDynamic("stiffness")(stiffness.asInstanceOf[js.Any])
+    if (!js.isUndefined(damping)) __obj.updateDynamic("damping")(damping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dampingRatio)) __obj.updateDynamic("dampingRatio")(dampingRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(period)) __obj.updateDynamic("period")(period.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stiffness)) __obj.updateDynamic("stiffness")(stiffness.get.asInstanceOf[js.Any])
     if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(js.Any.fromFunction2(`type`))
     __obj.asInstanceOf[IRotationalSpringOptions]

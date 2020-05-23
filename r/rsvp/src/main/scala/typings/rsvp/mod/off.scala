@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object off
   extends TopLevel[
-      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EventTarget.off */ js.Any
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EventTarget.on */ js.Any
     ]
 

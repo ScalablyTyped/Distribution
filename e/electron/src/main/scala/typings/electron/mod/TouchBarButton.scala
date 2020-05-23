@@ -14,5 +14,13 @@ class TouchBarButton protected ()
     * TouchBarButton
     */
   def this(options: TouchBarButtonConstructorOptions) = this()
+  /* CompleteClass */
+  override var accessibilityLabel: String = js.native
+  /* CompleteClass */
+  override var backgroundColor: String = js.native
+  /* CompleteClass */
+  override var icon: typings.electron.Electron.NativeImage_ = js.native
+  /* CompleteClass */
+  override var label: String = js.native
 }
 

@@ -25,13 +25,13 @@ object GoogleCloudVideointelligenceV1VideoAnnotationProgress {
   @scala.inline
   def apply(
     inputUri: String = null,
-    progressPercent: Int | Double = null,
+    progressPercent: js.UndefOr[Double] = js.undefined,
     startTime: String = null,
     updateTime: String = null
   ): GoogleCloudVideointelligenceV1VideoAnnotationProgress = {
     val __obj = js.Dynamic.literal()
     if (inputUri != null) __obj.updateDynamic("inputUri")(inputUri.asInstanceOf[js.Any])
-    if (progressPercent != null) __obj.updateDynamic("progressPercent")(progressPercent.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressPercent)) __obj.updateDynamic("progressPercent")(progressPercent.get.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1VideoAnnotationProgress]

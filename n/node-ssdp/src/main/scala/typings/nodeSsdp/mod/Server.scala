@@ -26,15 +26,15 @@ class Server () extends Base {
   @JSName("once")
   def once_advertisebye(event: `advertise-bye`, listener: js.Function1[/* headers */ SsdpHeaders, Unit]): this.type = js.native
   /**
-  	 * Binds UDP socket to an interface/port and starts advertising.
-  	 * @param cb callback to socket.bind
-  	 * @returns promise when socket.bind is ready
-  	 */
+    * Binds UDP socket to an interface/port and starts advertising.
+    * @param cb callback to socket.bind
+    * @returns promise when socket.bind is ready
+    */
   def start(): Unit | js.Promise[Unit] = js.native
   def start(cb: js.Function1[/* error */ Error, Unit]): Unit | js.Promise[Unit] = js.native
   /**
-  	 * Advertise shutdown and close UDP socket.
-  	 */
+    * Advertise shutdown and close UDP socket.
+    */
   def stop(): Unit = js.native
 }
 

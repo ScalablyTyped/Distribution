@@ -119,47 +119,47 @@ object IJQuerySlimScrollOptions {
     disableFadeOut: js.UndefOr[Boolean] = js.undefined,
     distance: String = null,
     height: String = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     position: String = null,
     railBorderRadius: String = null,
     railClass: String = null,
     railColor: String = null,
     railDraggable: js.UndefOr[Boolean] = js.undefined,
-    railOpacity: Int | Double = null,
+    railOpacity: js.UndefOr[Double] = js.undefined,
     railVisible: js.UndefOr[Boolean] = js.undefined,
     scrollBy: String = null,
     scrollTo: String = null,
     size: String = null,
     start: js.Any = null,
-    touchScrollStep: Int | Double = null,
-    wheelStep: Int | Double = null,
+    touchScrollStep: js.UndefOr[Double] = js.undefined,
+    wheelStep: js.UndefOr[Double] = js.undefined,
     width: String = null,
     wrapperClass: String = null
   ): IJQuerySlimScrollOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowPageScroll)) __obj.updateDynamic("allowPageScroll")(allowPageScroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(alwaysVisible)) __obj.updateDynamic("alwaysVisible")(alwaysVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowPageScroll)) __obj.updateDynamic("allowPageScroll")(allowPageScroll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysVisible)) __obj.updateDynamic("alwaysVisible")(alwaysVisible.get.asInstanceOf[js.Any])
     if (barClass != null) __obj.updateDynamic("barClass")(barClass.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroy)) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableFadeOut)) __obj.updateDynamic("disableFadeOut")(disableFadeOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroy)) __obj.updateDynamic("destroy")(destroy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableFadeOut)) __obj.updateDynamic("disableFadeOut")(disableFadeOut.get.asInstanceOf[js.Any])
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (railBorderRadius != null) __obj.updateDynamic("railBorderRadius")(railBorderRadius.asInstanceOf[js.Any])
     if (railClass != null) __obj.updateDynamic("railClass")(railClass.asInstanceOf[js.Any])
     if (railColor != null) __obj.updateDynamic("railColor")(railColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(railDraggable)) __obj.updateDynamic("railDraggable")(railDraggable.asInstanceOf[js.Any])
-    if (railOpacity != null) __obj.updateDynamic("railOpacity")(railOpacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(railVisible)) __obj.updateDynamic("railVisible")(railVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(railDraggable)) __obj.updateDynamic("railDraggable")(railDraggable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(railOpacity)) __obj.updateDynamic("railOpacity")(railOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(railVisible)) __obj.updateDynamic("railVisible")(railVisible.get.asInstanceOf[js.Any])
     if (scrollBy != null) __obj.updateDynamic("scrollBy")(scrollBy.asInstanceOf[js.Any])
     if (scrollTo != null) __obj.updateDynamic("scrollTo")(scrollTo.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (touchScrollStep != null) __obj.updateDynamic("touchScrollStep")(touchScrollStep.asInstanceOf[js.Any])
-    if (wheelStep != null) __obj.updateDynamic("wheelStep")(wheelStep.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchScrollStep)) __obj.updateDynamic("touchScrollStep")(touchScrollStep.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wheelStep)) __obj.updateDynamic("wheelStep")(wheelStep.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (wrapperClass != null) __obj.updateDynamic("wrapperClass")(wrapperClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[IJQuerySlimScrollOptions]

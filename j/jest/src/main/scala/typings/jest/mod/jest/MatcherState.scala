@@ -27,7 +27,7 @@ object MatcherState {
     isExpectingAssertions: js.UndefOr[Boolean] = js.undefined
   ): MatcherState = {
     val __obj = js.Dynamic.literal(assertionCalls = assertionCalls.asInstanceOf[js.Any], currentTestName = currentTestName.asInstanceOf[js.Any], expand = expand.asInstanceOf[js.Any], expectedAssertionsNumber = expectedAssertionsNumber.asInstanceOf[js.Any], suppressedErrors = suppressedErrors.asInstanceOf[js.Any], testPath = testPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(isExpectingAssertions)) __obj.updateDynamic("isExpectingAssertions")(isExpectingAssertions.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExpectingAssertions)) __obj.updateDynamic("isExpectingAssertions")(isExpectingAssertions.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatcherState]
   }
 }

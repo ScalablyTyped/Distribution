@@ -1,7 +1,7 @@
 package typings.stormReactDiagrams.diagramModelMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.stormReactDiagrams.AnonGridSize
+import typings.stormReactDiagrams.anon.GridSize
 import typings.stormReactDiagrams.baseEntityMod.BaseEntity
 import typings.stormReactDiagrams.baseEntityMod.BaseEntityType
 import typings.stormReactDiagrams.baseEntityMod.BaseListener
@@ -46,7 +46,7 @@ class DiagramModel () extends BaseEntity[DiagramListener] {
   def removeLink(link: LinkModel[LinkModelListener]): Unit = js.native
   def removeNode(node: String): Unit = js.native
   def removeNode(node: NodeModel): Unit = js.native
-  def serializeDiagram(): AnonGridSize = js.native
+  def serializeDiagram(): GridSize = js.native
   def setGridSize(): Unit = js.native
   def setGridSize(size: Double): Unit = js.native
   def setOffset(offsetX: Double, offsetY: Double): Unit = js.native

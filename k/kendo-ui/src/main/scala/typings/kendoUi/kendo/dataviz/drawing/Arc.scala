@@ -4,12 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.dataviz.drawing.Arc")
 @js.native
-class Arc protected ()
+trait Arc
   extends typings.kendoUi.kendo.drawing.Element {
-  def this(geometry: typings.kendoUi.kendo.geometry.Arc) = this()
-  def this(geometry: typings.kendoUi.kendo.geometry.Arc, options: ArcOptions) = this()
   @JSName("options")
   var options_Arc: ArcOptions = js.native
   def fill(color: String): typings.kendoUi.kendo.drawing.Arc = js.native

@@ -12,7 +12,7 @@ trait UseGroupByCellProps[D /* <: js.Object */] extends js.Object {
 
 object UseGroupByCellProps {
   @scala.inline
-  def apply[D /* <: js.Object */](isAggregated: Boolean, isGrouped: Boolean, isPlaceholder: Boolean): UseGroupByCellProps[D] = {
+  def apply[D](isAggregated: Boolean, isGrouped: Boolean, isPlaceholder: Boolean): UseGroupByCellProps[D] = {
     val __obj = js.Dynamic.literal(isAggregated = isAggregated.asInstanceOf[js.Any], isGrouped = isGrouped.asInstanceOf[js.Any], isPlaceholder = isPlaceholder.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseGroupByCellProps[D]]
   }

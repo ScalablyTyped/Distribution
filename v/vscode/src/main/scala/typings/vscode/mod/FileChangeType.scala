@@ -12,20 +12,20 @@ sealed trait FileChangeType extends js.Object
 @js.native
 object FileChangeType extends js.Object {
   /**
-  		 * The contents or metadata of a file have changed.
-  		 */
+    * The contents or metadata of a file have changed.
+    */
   @js.native
   sealed trait Changed extends FileChangeType
   
   /**
-  		 * A file has been created.
-  		 */
+    * A file has been created.
+    */
   @js.native
   sealed trait Created extends FileChangeType
   
   /**
-  		 * A file has been deleted.
-  		 */
+    * A file has been deleted.
+    */
   @js.native
   sealed trait Deleted extends FileChangeType
   

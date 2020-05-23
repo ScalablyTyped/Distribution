@@ -22,6 +22,9 @@ import typings.jqueryui.JQueryUI.TooltipOptions
 import typings.jqueryui.JQueryUI.Widget
 import typings.jqueryui.JQueryUI.WidgetCommonProperties
 import typings.jqueryui.JQueryUI.WidgetOptions
+import typings.jqueryui.anon.Attribute
+import typings.jqueryui.anon.Call
+import typings.jqueryui.anon.Expression
 import typings.jqueryui.jqueryuiStrings.altField
 import typings.jqueryui.jqueryuiStrings.altFormat
 import typings.jqueryui.jqueryuiStrings.appendText
@@ -98,7 +101,7 @@ import scala.scalajs.js.annotation._
 trait JQuery extends js.Object {
   var jQuery: JQueryStatic = js.native
   @JSName("menu")
-  var menu_Original: AnonCall = js.native
+  var menu_Original: Call = js.native
   @JSName("widget")
   var widget_Original: Widget = js.native
   def accordion(): JQuery = js.native
@@ -990,11 +993,11 @@ trait JQuery extends js.Object {
   @JSName("sortable")
   def sortable_serialize(methodName: serialize): String = js.native
   @JSName("sortable")
-  def sortable_serialize(methodName: serialize, options: AnonExpression): String = js.native
+  def sortable_serialize(methodName: serialize, options: Expression): String = js.native
   @JSName("sortable")
   def sortable_toArray(methodName: toArray): js.Array[String] = js.native
   @JSName("sortable")
-  def sortable_toArray(methodName: toArray, options: AnonAttribute): js.Array[String] = js.native
+  def sortable_toArray(methodName: toArray, options: Attribute): js.Array[String] = js.native
   @JSName("sortable")
   def sortable_widget(methodName: widget): JQuery = js.native
   def spinner(): JQuery = js.native

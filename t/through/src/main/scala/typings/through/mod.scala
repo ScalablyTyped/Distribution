@@ -1,6 +1,7 @@
 package typings.through
 
 import typings.node.streamMod.Transform
+import typings.through.anon.AutoDestroy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +18,6 @@ object mod extends js.Object {
   def apply(): ThroughStream = js.native
   def apply(write: js.Function1[/* data */ js.Any, Unit]): ThroughStream = js.native
   def apply(write: js.Function1[/* data */ js.Any, Unit], end: js.Function0[Unit]): ThroughStream = js.native
-  def apply(write: js.Function1[/* data */ js.Any, Unit], end: js.Function0[Unit], opts: AnonAutoDestroy): ThroughStream = js.native
+  def apply(write: js.Function1[/* data */ js.Any, Unit], end: js.Function0[Unit], opts: AutoDestroy): ThroughStream = js.native
 }
 

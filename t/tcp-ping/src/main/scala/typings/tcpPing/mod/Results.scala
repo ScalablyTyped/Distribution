@@ -13,11 +13,15 @@ trait Results extends js.Object {
 
 object Results {
   @scala.inline
-  def apply(error: Error = null, seq: Int | Double = null, time: Int | Double = null): Results = {
+  def apply(
+    error: Error = null,
+    seq: js.UndefOr[Double] = js.undefined,
+    time: js.UndefOr[Double] = js.undefined
+  ): Results = {
     val __obj = js.Dynamic.literal()
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (seq != null) __obj.updateDynamic("seq")(seq.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (!js.isUndefined(seq)) __obj.updateDynamic("seq")(seq.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(time)) __obj.updateDynamic("time")(time.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Results]
   }
 }

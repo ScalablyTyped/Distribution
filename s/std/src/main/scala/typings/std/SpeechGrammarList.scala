@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.NumberDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,8 +16,4 @@ trait SpeechGrammarList extends /* index */ NumberDictionary[SpeechGrammar] {
   def addFromURI(src: java.lang.String, weight: Double): Unit = js.native
   def item(index: Double): SpeechGrammar = js.native
 }
-
-@JSGlobal("SpeechGrammarList")
-@js.native
-object SpeechGrammarList extends Instantiable0[SpeechGrammarList]
 

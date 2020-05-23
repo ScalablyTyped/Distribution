@@ -1,18 +1,18 @@
 package typings.resemblejs.mod
 
-import typings.resemblejs.AnonBottom
-import typings.resemblejs.AnonHeight
+import typings.resemblejs.anon.Bottom
+import typings.resemblejs.anon.Height
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ResembleComparisonResult extends js.Object {
   var analysisTime: Double
-  var diffBounds: AnonBottom
+  var diffBounds: Bottom
   /**
     * The difference in width and height between the dimensions of the two compared images
     */
-  var dimensionDifference: AnonHeight
+  var dimensionDifference: Height
   /**
     * Do the two images have the same dimensions?
     */
@@ -31,8 +31,8 @@ object ResembleComparisonResult {
   @scala.inline
   def apply(
     analysisTime: Double,
-    diffBounds: AnonBottom,
-    dimensionDifference: AnonHeight,
+    diffBounds: Bottom,
+    dimensionDifference: Height,
     getImageDataUrl: () => String,
     isSameDimensions: Boolean,
     misMatchPercentage: Double

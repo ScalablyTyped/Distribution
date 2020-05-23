@@ -9,9 +9,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Reads infrared frames from a infrared frame source. */
-@JSGlobal("Windows.Devices.Perception.PerceptionInfraredFrameReader")
 @js.native
-abstract class PerceptionInfraredFrameReader () extends js.Object {
+trait PerceptionInfraredFrameReader extends js.Object {
   /** Gets a boolean value indicating whether or not this reader is paused. */
   var isPaused: Boolean = js.native
   /** Subscribes to the FrameArrived event. This event is fired whenever a new frame arrives from the infrared frame source. */

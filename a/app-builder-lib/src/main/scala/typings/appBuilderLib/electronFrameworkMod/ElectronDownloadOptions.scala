@@ -28,24 +28,24 @@ object ElectronDownloadOptions {
   @scala.inline
   def apply(
     arch: String = null,
-    cache: String = null,
-    customDir: String = null,
-    customFilename: String = null,
+    cache: js.UndefOr[Null | String] = js.undefined,
+    customDir: js.UndefOr[Null | String] = js.undefined,
+    customFilename: js.UndefOr[Null | String] = js.undefined,
     isVerifyChecksum: js.UndefOr[Boolean] = js.undefined,
-    mirror: String = null,
+    mirror: js.UndefOr[Null | String] = js.undefined,
     platform: ElectronPlatformName = null,
     strictSSL: js.UndefOr[Boolean] = js.undefined,
     version: String = null
   ): ElectronDownloadOptions = {
     val __obj = js.Dynamic.literal()
     if (arch != null) __obj.updateDynamic("arch")(arch.asInstanceOf[js.Any])
-    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (customDir != null) __obj.updateDynamic("customDir")(customDir.asInstanceOf[js.Any])
-    if (customFilename != null) __obj.updateDynamic("customFilename")(customFilename.asInstanceOf[js.Any])
-    if (!js.isUndefined(isVerifyChecksum)) __obj.updateDynamic("isVerifyChecksum")(isVerifyChecksum.asInstanceOf[js.Any])
-    if (mirror != null) __obj.updateDynamic("mirror")(mirror.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (!js.isUndefined(customDir)) __obj.updateDynamic("customDir")(customDir.asInstanceOf[js.Any])
+    if (!js.isUndefined(customFilename)) __obj.updateDynamic("customFilename")(customFilename.asInstanceOf[js.Any])
+    if (!js.isUndefined(isVerifyChecksum)) __obj.updateDynamic("isVerifyChecksum")(isVerifyChecksum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mirror)) __obj.updateDynamic("mirror")(mirror.asInstanceOf[js.Any])
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictSSL)) __obj.updateDynamic("strictSSL")(strictSSL.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictSSL)) __obj.updateDynamic("strictSSL")(strictSSL.get.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElectronDownloadOptions]
   }

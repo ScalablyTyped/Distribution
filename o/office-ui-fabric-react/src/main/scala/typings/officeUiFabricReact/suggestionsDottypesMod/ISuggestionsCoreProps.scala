@@ -6,7 +6,7 @@ import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionModel
 import typings.react.mod.ClassAttributes
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import typings.uifabricUtilities.createRefMod.IRefObject
 import scala.scalajs.js

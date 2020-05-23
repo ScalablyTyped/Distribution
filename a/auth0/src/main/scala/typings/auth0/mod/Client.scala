@@ -1,7 +1,7 @@
 package typings.auth0.mod
 
-import typings.auth0.AnonAlg
-import typings.auth0.AnonCert
+import typings.auth0.anon.Alg
+import typings.auth0.anon.Cert
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,7 +47,7 @@ trait Client extends js.Object {
     * Free text description of the purpose of the Client. (Max character length: `140`).
     */
   var description: js.UndefOr[String] = js.undefined
-  var encryption_key: js.UndefOr[AnonCert] = js.undefined
+  var encryption_key: js.UndefOr[Cert] = js.undefined
   var form_template: js.UndefOr[String] = js.undefined
   /**
     * A set of grant types that the client is authorized to use
@@ -57,7 +57,7 @@ trait Client extends js.Object {
     * Whether this client a first party client or not.
     */
   var is_first_party: js.UndefOr[Boolean] = js.undefined
-  var jwt_configuration: js.UndefOr[AnonAlg] = js.undefined
+  var jwt_configuration: js.UndefOr[Alg] = js.undefined
   /**
     * The URL of the client logo (recommended size: 150x150).
     */
@@ -106,11 +106,11 @@ object Client {
     custom_login_page_on: js.UndefOr[Boolean] = js.undefined,
     custom_login_page_preview: String = null,
     description: String = null,
-    encryption_key: AnonCert = null,
+    encryption_key: Cert = null,
     form_template: String = null,
     grant_types: js.Array[Grant] = null,
     is_first_party: js.UndefOr[Boolean] = js.undefined,
-    jwt_configuration: AnonAlg = null,
+    jwt_configuration: Alg = null,
     logo_uri: String = null,
     mobile: js.Any = null,
     name: String = null,
@@ -132,24 +132,24 @@ object Client {
     if (client_id != null) __obj.updateDynamic("client_id")(client_id.asInstanceOf[js.Any])
     if (client_metadata != null) __obj.updateDynamic("client_metadata")(client_metadata.asInstanceOf[js.Any])
     if (client_secret != null) __obj.updateDynamic("client_secret")(client_secret.asInstanceOf[js.Any])
-    if (!js.isUndefined(cross_origin_auth)) __obj.updateDynamic("cross_origin_auth")(cross_origin_auth.asInstanceOf[js.Any])
+    if (!js.isUndefined(cross_origin_auth)) __obj.updateDynamic("cross_origin_auth")(cross_origin_auth.get.asInstanceOf[js.Any])
     if (cross_origin_loc != null) __obj.updateDynamic("cross_origin_loc")(cross_origin_loc.asInstanceOf[js.Any])
     if (custom_login_page != null) __obj.updateDynamic("custom_login_page")(custom_login_page.asInstanceOf[js.Any])
-    if (!js.isUndefined(custom_login_page_on)) __obj.updateDynamic("custom_login_page_on")(custom_login_page_on.asInstanceOf[js.Any])
+    if (!js.isUndefined(custom_login_page_on)) __obj.updateDynamic("custom_login_page_on")(custom_login_page_on.get.asInstanceOf[js.Any])
     if (custom_login_page_preview != null) __obj.updateDynamic("custom_login_page_preview")(custom_login_page_preview.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (encryption_key != null) __obj.updateDynamic("encryption_key")(encryption_key.asInstanceOf[js.Any])
     if (form_template != null) __obj.updateDynamic("form_template")(form_template.asInstanceOf[js.Any])
     if (grant_types != null) __obj.updateDynamic("grant_types")(grant_types.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_first_party)) __obj.updateDynamic("is_first_party")(is_first_party.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_first_party)) __obj.updateDynamic("is_first_party")(is_first_party.get.asInstanceOf[js.Any])
     if (jwt_configuration != null) __obj.updateDynamic("jwt_configuration")(jwt_configuration.asInstanceOf[js.Any])
     if (logo_uri != null) __obj.updateDynamic("logo_uri")(logo_uri.asInstanceOf[js.Any])
     if (mobile != null) __obj.updateDynamic("mobile")(mobile.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(oidc_conformant)) __obj.updateDynamic("oidc_conformant")(oidc_conformant.asInstanceOf[js.Any])
+    if (!js.isUndefined(oidc_conformant)) __obj.updateDynamic("oidc_conformant")(oidc_conformant.get.asInstanceOf[js.Any])
     if (signing_keys != null) __obj.updateDynamic("signing_keys")(signing_keys.asInstanceOf[js.Any])
-    if (!js.isUndefined(sso)) __obj.updateDynamic("sso")(sso.asInstanceOf[js.Any])
-    if (!js.isUndefined(sso_disabled)) __obj.updateDynamic("sso_disabled")(sso_disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(sso)) __obj.updateDynamic("sso")(sso.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sso_disabled)) __obj.updateDynamic("sso_disabled")(sso_disabled.get.asInstanceOf[js.Any])
     if (token_endpoint_auth_method != null) __obj.updateDynamic("token_endpoint_auth_method")(token_endpoint_auth_method.asInstanceOf[js.Any])
     if (web_origins != null) __obj.updateDynamic("web_origins")(web_origins.asInstanceOf[js.Any])
     __obj.asInstanceOf[Client]

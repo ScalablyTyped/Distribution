@@ -1,6 +1,6 @@
 package typings.heatmapJs.mod
 
-import typings.heatmapJs.AnonX
+import typings.heatmapJs.anon.X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -83,7 +83,7 @@ class Heatmap[V /* <: String */, X /* <: String */, Y /* <: String */] () extend
     * // get the value at x=10, y=10
     * heatmapInstance.getValueAt({ x: 10, y: 10 }); // returns 100
     */
-  def getValueAt(point: AnonX): Double = js.native
+  def getValueAt(point: X): Double = js.native
   /**
     * Repaints the whole heatmap canvas.
     */

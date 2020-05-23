@@ -3,7 +3,7 @@ package typings.parquetjs.writerMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
 import typings.node.fsMod.WriteStream
-import typings.parquetjs.AnonColumns
+import typings.parquetjs.anon.Columns
 import typings.parquetjs.rowBufferInterfaceMod.RowBufferInterface
 import typings.parquetjs.schemaMod.ParquetSchema
 import scala.scalajs.js
@@ -36,7 +36,7 @@ class ParquetEnvelopeWriter protected () extends js.Object {
   var offset: Double = js.native
   var pageSize: Double = js.native
   var rowCount: Double = js.native
-  var rowGroups: js.Array[AnonColumns] = js.native
+  var rowGroups: js.Array[Columns] = js.native
   var schema: ParquetSchema = js.native
   var useDataPageV2: Boolean = js.native
   def close(): js.Promise[Unit] = js.native

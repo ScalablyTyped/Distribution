@@ -1,6 +1,6 @@
 package typings.protractor.mod.error
 
-import typings.seleniumWebdriver.AnonError
+import typings.seleniumWebdriver.anon.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +11,6 @@ object encodeError extends js.Object {
   /**
     * Lookup the err in table of errors.
     */
-  def apply(err: js.Any): AnonError = js.native
+  def apply(err: js.Any): Error = js.native
 }
 

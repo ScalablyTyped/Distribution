@@ -10,9 +10,9 @@ trait ClientOptions extends SsdpOptions {
   /** List of interfaces to explicitly bind. By default, bind to all available interfaces. */
   var interfaces: js.UndefOr[js.Array[String]] = js.undefined
   /**
-  	 * When true socket.bind() will reuse the address, even if another process has already bound a socket on it.
-  	 * @default true
-  	 */
+    * When true socket.bind() will reuse the address, even if another process has already bound a socket on it.
+    * @default true
+    */
   var reuseAddr: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -26,21 +26,21 @@ object ClientOptions {
     interfaces: js.Array[String] = null,
     reuseAddr: js.UndefOr[Boolean] = js.undefined,
     ssdpIp: String = null,
-    ssdpPort: Int | Double = null,
+    ssdpPort: js.UndefOr[Double] = js.undefined,
     ssdpSig: String = null,
-    ssdpTtl: Int | Double = null
+    ssdpTtl: js.UndefOr[Double] = js.undefined
   ): ClientOptions = {
     val __obj = js.Dynamic.literal()
     if (customLogger != null) __obj.updateDynamic("customLogger")(js.Any.fromFunction2(customLogger))
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(explicitSocketBind)) __obj.updateDynamic("explicitSocketBind")(explicitSocketBind.asInstanceOf[js.Any])
+    if (!js.isUndefined(explicitSocketBind)) __obj.updateDynamic("explicitSocketBind")(explicitSocketBind.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (interfaces != null) __obj.updateDynamic("interfaces")(interfaces.asInstanceOf[js.Any])
-    if (!js.isUndefined(reuseAddr)) __obj.updateDynamic("reuseAddr")(reuseAddr.asInstanceOf[js.Any])
+    if (!js.isUndefined(reuseAddr)) __obj.updateDynamic("reuseAddr")(reuseAddr.get.asInstanceOf[js.Any])
     if (ssdpIp != null) __obj.updateDynamic("ssdpIp")(ssdpIp.asInstanceOf[js.Any])
-    if (ssdpPort != null) __obj.updateDynamic("ssdpPort")(ssdpPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssdpPort)) __obj.updateDynamic("ssdpPort")(ssdpPort.get.asInstanceOf[js.Any])
     if (ssdpSig != null) __obj.updateDynamic("ssdpSig")(ssdpSig.asInstanceOf[js.Any])
-    if (ssdpTtl != null) __obj.updateDynamic("ssdpTtl")(ssdpTtl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssdpTtl)) __obj.updateDynamic("ssdpTtl")(ssdpTtl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
 }

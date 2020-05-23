@@ -4,31 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.GradientBlockColorStep")
-@js.native
-class GradientBlockColorStep protected () extends js.Object {
-  /**
-    * Creates a new GradientBlockColorStep
-    * @param step defines a value indicating which step this color is associated with (between 0 and 1)
-    * @param color defines the color associated with this step
-    */
-  def this(
-    /**
-    * Gets or sets a value indicating which step this color is associated with (between 0 and 1)
-    */
-  step: Double,
-    /**
-    * Gets or sets the color associated with this step
-    */
-  color: Color3
-  ) = this()
+trait GradientBlockColorStep extends js.Object {
   /**
     * Gets or sets the color associated with this step
     */
-  var color: Color3 = js.native
+  var color: Color3
   /**
     * Gets or sets a value indicating which step this color is associated with (between 0 and 1)
     */
-  var step: Double = js.native
+  var step: Double
+}
+
+object GradientBlockColorStep {
+  @scala.inline
+  def apply(color: Color3, step: Double): GradientBlockColorStep = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GradientBlockColorStep]
+  }
 }
 

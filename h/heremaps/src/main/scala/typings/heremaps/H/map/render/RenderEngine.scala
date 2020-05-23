@@ -1,13 +1,8 @@
 package typings.heremaps.H.map.render
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
-import typings.heremaps.H.map.DataModel
-import typings.heremaps.H.map.ViewModel
-import typings.heremaps.H.map.ViewPort
-import typings.heremaps.H.map.render.RenderEngine.Options
 import typings.heremaps.H.util.EventTarget
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,17 +13,8 @@ import scala.scalajs.js.annotation._
   * specific implementation to present the current view model data in best possible way. For example, 2D engines create a two-dimensional flat
   * map composed of tiles, while 3D engines can generate panoramas displaying the same coordinates as a 'street view'.
   */
-@JSGlobal("H.map.render.RenderEngine")
 @js.native
-class RenderEngine protected () extends EventTarget {
-  /**
-    * Constructor
-    * @param viewPort {H.map.ViewPort} - An object representing the map viewport
-    * @param viewModel {H.map.ViewModel} - An object representing a view of the map
-    * @param dataModel {H.map.DataModel} - An object encapsulating the data to be rendered on the map (layers and objects)
-    * @param options {H.map.render.RenderEngine.Options} - An object containing the render engine initialization options
-    */
-  def this(viewPort: ViewPort, viewModel: ViewModel, dataModel: DataModel, options: Options) = this()
+trait RenderEngine extends EventTarget {
   /**
     * This method adds a listener for a specific event.
     * Note that to prevent potential memory leaks, you must either call removeEventListener or dispose on the given object when you no longer need it.
@@ -37,11 +23,11 @@ class RenderEngine protected () extends EventTarget {
     * @param opt_capture {boolean=} - true indicates that the method should listen in the capture phase (bubble otherwise)
     * @param opt_scope {Object=} - An object defining the scope for the handler function
     */
-  def addEventListener(`type`: String, handler: js.Function1[/* evt */ Event_, Unit]): Unit = js.native
-  def addEventListener(`type`: String, handler: js.Function1[/* evt */ Event_, Unit], opt_capture: Boolean): Unit = js.native
+  def addEventListener(`type`: String, handler: js.Function1[/* evt */ Event, Unit]): Unit = js.native
+  def addEventListener(`type`: String, handler: js.Function1[/* evt */ Event, Unit], opt_capture: Boolean): Unit = js.native
   def addEventListener(
     `type`: String,
-    handler: js.Function1[/* evt */ Event_, Unit],
+    handler: js.Function1[/* evt */ Event, Unit],
     opt_capture: Boolean,
     opt_scope: js.Object
   ): Unit = js.native
@@ -53,11 +39,11 @@ class RenderEngine protected () extends EventTarget {
     * @param opt_capture {boolean=} - true indicates that the method should listen in the capture phase (bubble otherwise)
     * @param opt_scope {Object=} - An object defining the scope for the handler function
     */
-  def removeEventListener(`type`: String, handler: js.Function1[/* evt */ Event_, Unit]): Unit = js.native
-  def removeEventListener(`type`: String, handler: js.Function1[/* evt */ Event_, Unit], opt_capture: Boolean): Unit = js.native
+  def removeEventListener(`type`: String, handler: js.Function1[/* evt */ Event, Unit]): Unit = js.native
+  def removeEventListener(`type`: String, handler: js.Function1[/* evt */ Event, Unit], opt_capture: Boolean): Unit = js.native
   def removeEventListener(
     `type`: String,
-    handler: js.Function1[/* evt */ Event_, Unit],
+    handler: js.Function1[/* evt */ Event, Unit],
     opt_capture: Boolean,
     opt_scope: js.Object
   ): Unit = js.native
@@ -93,23 +79,6 @@ object RenderEngine extends js.Object {
     /** changes zoom level during the interaction */
     @js.native
     sealed trait ZOOM extends InteractionModifiers
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[InteractionModifiers with Double] = js.native
-    /* 4 */ @js.native
-    object COORD extends TopLevel[COORD with Double]
-    
-    /* 1 */ @js.native
-    object HEADING extends TopLevel[HEADING with Double]
-    
-    /* 3 */ @js.native
-    object INCLINE extends TopLevel[INCLINE with Double]
-    
-    /* 2 */ @js.native
-    object TILT extends TopLevel[TILT with Double]
-    
-    /* 0 */ @js.native
-    object ZOOM extends TopLevel[ZOOM with Double]
     
   }
   

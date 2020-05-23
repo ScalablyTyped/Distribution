@@ -1,5 +1,8 @@
 package typings.fullcalendar
 
+import typings.fullcalendar.anon.Bottom
+import typings.fullcalendar.anon.Left
+import typings.fullcalendar.anon.Top
 import typings.fullcalendar.fullcalendarBooleans.`false`
 import typings.moment.mod.Duration_
 import scala.scalajs.js
@@ -24,7 +27,7 @@ object srcUtilMod extends js.Object {
   def computeDurationGreatestUnit(duration: js.Any, durationInput: js.Any): js.Any = js.native
   def computeGreatestUnit(start: js.Any): js.Any = js.native
   def computeGreatestUnit(start: js.Any, end: js.Any): js.Any = js.native
-  def constrainPoint(point: js.Any, rect: js.Any): AnonTop = js.native
+  def constrainPoint(point: js.Any, rect: js.Any): Top = js.native
   def copyOwnProps(src: js.Any, dest: js.Any): Unit = js.native
   def cssToStr(cssProps: js.Any): String = js.native
   def debounce(func: js.Any, wait: js.Any): js.Function0[_] = js.native
@@ -32,7 +35,7 @@ object srcUtilMod extends js.Object {
   def diffByUnit(a: js.Any, b: js.Any, unit: js.Any): Duration_ = js.native
   def diffDay(a: js.Any, b: js.Any): Duration_ = js.native
   def diffDayTime(a: js.Any, b: js.Any): Duration_ = js.native
-  def diffPoints(point1: js.Any, point2: js.Any): AnonTop = js.native
+  def diffPoints(point1: js.Any, point2: js.Any): Top = js.native
   def disableCursor(): Unit = js.native
   def distributeHeight(els: js.Any, availableHeight: js.Any, shouldRedistribute: js.Any): Unit = js.native
   def divideDurationByDuration(dur1: js.Any, dur2: js.Any): Double = js.native
@@ -41,20 +44,20 @@ object srcUtilMod extends js.Object {
   def enableCursor(): Unit = js.native
   def firstDefined(args: js.Any*): js.Any = js.native
   def flexibleCompare(a: js.Any, b: js.Any): Double = js.native
-  def getClientRect(el: js.Any): AnonBottom = js.native
-  def getClientRect(el: js.Any, origin: js.Any): AnonBottom = js.native
-  def getContentRect(el: js.Any, origin: js.Any): AnonBottom = js.native
+  def getClientRect(el: js.Any): Bottom = js.native
+  def getClientRect(el: js.Any, origin: js.Any): Bottom = js.native
+  def getContentRect(el: js.Any, origin: js.Any): Bottom = js.native
   def getEvIsTouch(ev: js.Any): Boolean = js.native
   def getEvX(ev: js.Any): js.Any = js.native
   def getEvY(ev: js.Any): js.Any = js.native
-  def getOuterRect(el: js.Any): AnonBottom = js.native
-  def getOuterRect(el: js.Any, origin: js.Any): AnonBottom = js.native
-  def getRectCenter(rect: js.Any): AnonTop = js.native
+  def getOuterRect(el: js.Any): Bottom = js.native
+  def getOuterRect(el: js.Any, origin: js.Any): Bottom = js.native
+  def getRectCenter(rect: js.Any): Top = js.native
   def getScrollParent(el: js.Any): js.Any = js.native
   def getScrollbarWidths(el: js.Any): js.Any = js.native
   def hasOwnProp(obj: js.Any, name: js.Any): js.Any = js.native
   def htmlEscape(s: js.Any): String = js.native
-  def intersectRects(rect1: js.Any, rect2: js.Any): `false` | AnonLeft = js.native
+  def intersectRects(rect1: js.Any, rect2: js.Any): `false` | Left = js.native
   def isArraysEqual(a0: js.Any, a1: js.Any): Boolean = js.native
   def isInt(n: js.Any): Boolean = js.native
   def isNativeDate(input: js.Any): Boolean = js.native

@@ -12,38 +12,38 @@ sealed trait MessageEventType extends js.Object
 @js.native
 object MessageEventType extends js.Object {
   /**
-  		*	Cancels the 'Composing' event
-  		*/
+    *    Cancels the 'Composing' event
+    */
   @js.native
   sealed trait Cancel extends MessageEventType
   
   /**
-  		*	Indicates that a reply is being composed
-  		*/
+    *    Indicates that a reply is being composed
+    */
   @js.native
   sealed trait Composing extends MessageEventType
   
   /**
-  		*	Indicates that the message has been delivered to the recipient
-  		*/
+    *    Indicates that the message has been delivered to the recipient
+    */
   @js.native
   sealed trait Delivered extends MessageEventType
   
   /**
-  		*	Indicates that the message has been displayed
-  		*/
+    *    Indicates that the message has been displayed
+    */
   @js.native
   sealed trait Displayed extends MessageEventType
   
   /**
-  		*	Invalid type
-  		*/
+    *    Invalid type
+    */
   @js.native
   sealed trait Invalid extends MessageEventType
   
   /**
-  		*	Indicates that the message has been stored offline by the intended recipient's server
-  		*/
+    *    Indicates that the message has been stored offline by the intended recipient's server
+    */
   @js.native
   sealed trait Offline extends MessageEventType
   

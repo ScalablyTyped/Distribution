@@ -26,8 +26,8 @@ object RouteInfo {
     props: js.Any = null
   ): RouteInfo = {
     val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any])
-    if (!js.isUndefined(__N_SSG)) __obj.updateDynamic("__N_SSG")(__N_SSG.asInstanceOf[js.Any])
-    if (!js.isUndefined(__N_SSP)) __obj.updateDynamic("__N_SSP")(__N_SSP.asInstanceOf[js.Any])
+    if (!js.isUndefined(__N_SSG)) __obj.updateDynamic("__N_SSG")(__N_SSG.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(__N_SSP)) __obj.updateDynamic("__N_SSP")(__N_SSP.get.asInstanceOf[js.Any])
     if (err != null) __obj.updateDynamic("err")(err.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])

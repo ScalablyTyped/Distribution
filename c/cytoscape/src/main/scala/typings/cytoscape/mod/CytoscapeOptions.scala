@@ -224,17 +224,17 @@ object CytoscapeOptions {
     autoungrabify: js.UndefOr[Boolean] = js.undefined,
     autounselectify: js.UndefOr[Boolean] = js.undefined,
     boxSelectionEnabled: js.UndefOr[Boolean] = js.undefined,
-    container: HTMLElement = null,
-    desktopTapThreshold: Int | Double = null,
+    container: js.UndefOr[Null | HTMLElement] = js.undefined,
+    desktopTapThreshold: js.UndefOr[Double] = js.undefined,
     elements: ElementsDefinition | js.Array[ElementDefinition] | (js.Promise[js.Array[ElementDefinition] | ElementsDefinition]) = null,
     headless: js.UndefOr[Boolean] = js.undefined,
     hideEdgesOnViewport: js.UndefOr[Boolean] = js.undefined,
     hideLabelsOnViewport: js.UndefOr[Boolean] = js.undefined,
     layout: LayoutOptions = null,
-    maxZoom: Int | Double = null,
-    minZoom: Int | Double = null,
+    maxZoom: js.UndefOr[Double] = js.undefined,
+    minZoom: js.UndefOr[Double] = js.undefined,
     motionBlur: js.UndefOr[Boolean] = js.undefined,
-    motionBlurOpacity: Int | Double = null,
+    motionBlurOpacity: js.UndefOr[Double] = js.undefined,
     pan: Position = null,
     panningEnabled: js.UndefOr[Boolean] = js.undefined,
     pixelRatio: Double | auto = null,
@@ -242,42 +242,42 @@ object CytoscapeOptions {
     style: js.Array[Stylesheet] | js.Promise[js.Array[Stylesheet]] = null,
     styleEnabled: js.UndefOr[Boolean] = js.undefined,
     textureOnViewport: js.UndefOr[Boolean] = js.undefined,
-    touchTapThreshold: Int | Double = null,
+    touchTapThreshold: js.UndefOr[Double] = js.undefined,
     userPanningEnabled: js.UndefOr[Boolean] = js.undefined,
     userZoomingEnabled: js.UndefOr[Boolean] = js.undefined,
-    wheelSensitivity: Int | Double = null,
-    zoom: Int | Double = null,
+    wheelSensitivity: js.UndefOr[Double] = js.undefined,
+    zoom: js.UndefOr[Double] = js.undefined,
     zoomingEnabled: js.UndefOr[Boolean] = js.undefined
   ): CytoscapeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autolock)) __obj.updateDynamic("autolock")(autolock.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoungrabify)) __obj.updateDynamic("autoungrabify")(autoungrabify.asInstanceOf[js.Any])
-    if (!js.isUndefined(autounselectify)) __obj.updateDynamic("autounselectify")(autounselectify.asInstanceOf[js.Any])
-    if (!js.isUndefined(boxSelectionEnabled)) __obj.updateDynamic("boxSelectionEnabled")(boxSelectionEnabled.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (desktopTapThreshold != null) __obj.updateDynamic("desktopTapThreshold")(desktopTapThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(autolock)) __obj.updateDynamic("autolock")(autolock.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoungrabify)) __obj.updateDynamic("autoungrabify")(autoungrabify.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autounselectify)) __obj.updateDynamic("autounselectify")(autounselectify.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(boxSelectionEnabled)) __obj.updateDynamic("boxSelectionEnabled")(boxSelectionEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(container)) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(desktopTapThreshold)) __obj.updateDynamic("desktopTapThreshold")(desktopTapThreshold.get.asInstanceOf[js.Any])
     if (elements != null) __obj.updateDynamic("elements")(elements.asInstanceOf[js.Any])
-    if (!js.isUndefined(headless)) __obj.updateDynamic("headless")(headless.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideEdgesOnViewport)) __obj.updateDynamic("hideEdgesOnViewport")(hideEdgesOnViewport.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideLabelsOnViewport)) __obj.updateDynamic("hideLabelsOnViewport")(hideLabelsOnViewport.asInstanceOf[js.Any])
+    if (!js.isUndefined(headless)) __obj.updateDynamic("headless")(headless.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideEdgesOnViewport)) __obj.updateDynamic("hideEdgesOnViewport")(hideEdgesOnViewport.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideLabelsOnViewport)) __obj.updateDynamic("hideLabelsOnViewport")(hideLabelsOnViewport.get.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(motionBlur)) __obj.updateDynamic("motionBlur")(motionBlur.asInstanceOf[js.Any])
-    if (motionBlurOpacity != null) __obj.updateDynamic("motionBlurOpacity")(motionBlurOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(motionBlur)) __obj.updateDynamic("motionBlur")(motionBlur.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(motionBlurOpacity)) __obj.updateDynamic("motionBlurOpacity")(motionBlurOpacity.get.asInstanceOf[js.Any])
     if (pan != null) __obj.updateDynamic("pan")(pan.asInstanceOf[js.Any])
-    if (!js.isUndefined(panningEnabled)) __obj.updateDynamic("panningEnabled")(panningEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(panningEnabled)) __obj.updateDynamic("panningEnabled")(panningEnabled.get.asInstanceOf[js.Any])
     if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
     if (selectionType != null) __obj.updateDynamic("selectionType")(selectionType.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(styleEnabled)) __obj.updateDynamic("styleEnabled")(styleEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(textureOnViewport)) __obj.updateDynamic("textureOnViewport")(textureOnViewport.asInstanceOf[js.Any])
-    if (touchTapThreshold != null) __obj.updateDynamic("touchTapThreshold")(touchTapThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(userPanningEnabled)) __obj.updateDynamic("userPanningEnabled")(userPanningEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(userZoomingEnabled)) __obj.updateDynamic("userZoomingEnabled")(userZoomingEnabled.asInstanceOf[js.Any])
-    if (wheelSensitivity != null) __obj.updateDynamic("wheelSensitivity")(wheelSensitivity.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomingEnabled)) __obj.updateDynamic("zoomingEnabled")(zoomingEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(styleEnabled)) __obj.updateDynamic("styleEnabled")(styleEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(textureOnViewport)) __obj.updateDynamic("textureOnViewport")(textureOnViewport.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchTapThreshold)) __obj.updateDynamic("touchTapThreshold")(touchTapThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(userPanningEnabled)) __obj.updateDynamic("userPanningEnabled")(userPanningEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(userZoomingEnabled)) __obj.updateDynamic("userZoomingEnabled")(userZoomingEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wheelSensitivity)) __obj.updateDynamic("wheelSensitivity")(wheelSensitivity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomingEnabled)) __obj.updateDynamic("zoomingEnabled")(zoomingEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CytoscapeOptions]
   }
 }

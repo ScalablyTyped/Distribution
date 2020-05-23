@@ -1,6 +1,6 @@
 package typings.istanbulLibHook.mod
 
-import typings.istanbulLibHook.PartialOptions
+import typings.istanbulLibHook.anon.PartialOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -4,25 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.PolygonMeshBuilder")
 @js.native
-class PolygonMeshBuilder protected () extends js.Object {
-  def this(name: String, contours: js.Any) = this()
-  def this(name: String, contours: js.Array[Vector2]) = this()
-  /**
-    * Creates a PolygonMeshBuilder
-    * @param name name of the builder
-    * @param contours Path of the polygon
-    * @param scene scene to add to when creating the mesh
-    * @param earcutInjection can be used to inject your own earcut reference
-    */
-  def this(name: String, contours: Path2) = this()
-  def this(name: String, contours: js.Any, scene: Scene) = this()
-  def this(name: String, contours: js.Array[Vector2], scene: Scene) = this()
-  def this(name: String, contours: Path2, scene: Scene) = this()
-  def this(name: String, contours: js.Any, scene: Scene, earcutInjection: js.Any) = this()
-  def this(name: String, contours: js.Array[Vector2], scene: Scene, earcutInjection: js.Any) = this()
-  def this(name: String, contours: Path2, scene: Scene, earcutInjection: js.Any) = this()
+trait PolygonMeshBuilder extends js.Object {
   var _addToepoint: js.Any = js.native
   var _eholes: js.Any = js.native
   var _epoints: js.Any = js.native

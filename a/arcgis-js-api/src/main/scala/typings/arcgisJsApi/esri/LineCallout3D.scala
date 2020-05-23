@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.line
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,8 +31,4 @@ trait LineCallout3D extends Callout3D {
   var size: Double = js.native
   var `type`: line = js.native
 }
-
-@JSGlobal("__esri.LineCallout3D")
-@js.native
-object LineCallout3D extends TopLevel[LineCallout3DConstructor]
 

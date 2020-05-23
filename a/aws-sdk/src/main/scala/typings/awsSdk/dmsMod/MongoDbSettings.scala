@@ -68,7 +68,7 @@ object MongoDbSettings {
     KmsKeyId: String = null,
     NestingLevel: NestingLevelValue = null,
     Password: SecretString = null,
-    Port: Int | Double = null,
+    Port: js.UndefOr[IntegerOptional] = js.undefined,
     ServerName: String = null,
     Username: String = null
   ): MongoDbSettings = {
@@ -82,7 +82,7 @@ object MongoDbSettings {
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
     if (NestingLevel != null) __obj.updateDynamic("NestingLevel")(NestingLevel.asInstanceOf[js.Any])
     if (Password != null) __obj.updateDynamic("Password")(Password.asInstanceOf[js.Any])
-    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
+    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
     if (ServerName != null) __obj.updateDynamic("ServerName")(ServerName.asInstanceOf[js.Any])
     if (Username != null) __obj.updateDynamic("Username")(Username.asInstanceOf[js.Any])
     __obj.asInstanceOf[MongoDbSettings]

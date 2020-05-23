@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 trait CustomXmlPartData extends js.Object {
   /**
     *
-    * The custom XML part's ID. Read-only.
+    * The custom XML part's ID.
     *
     * [Api set: ExcelApi 1.5]
     */
   var id: js.UndefOr[String] = js.undefined
   /**
     *
-    * The custom XML part's namespace URI. Read-only.
+    * The custom XML part's namespace URI.
     *
     * [Api set: ExcelApi 1.5]
     */

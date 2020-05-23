@@ -6,20 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.reactInteractive.AnonActive
-  - typings.reactInteractive.AnonHoverActive
+  - typings.reactInteractive.anon.Active
+  - typings.reactInteractive.anon.HoverActive
 */
 trait ActiveProps extends js.Object
 
 object ActiveProps {
   @scala.inline
-  def AnonActive(active: CSSProperties = null): ActiveProps = {
+  def Active(active: CSSProperties = null): ActiveProps = {
     val __obj = js.Dynamic.literal()
     if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveProps]
   }
   @scala.inline
-  def AnonHoverActive(
+  def HoverActive(
     hoverActive: CSSProperties = null,
     keyActive: CSSProperties = null,
     touchActive: CSSProperties = null

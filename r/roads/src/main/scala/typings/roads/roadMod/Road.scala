@@ -7,27 +7,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Road extends js.Object {
   var _request_chain: js.Array[Middleware] = js.native
-  /* protected */ def _buildNext(
-    request_method: String,
-    path: String,
-    request_body: js.UndefOr[scala.Nothing],
-    request_headers: js.UndefOr[scala.Nothing],
-    context: Context
-  ): ResponseMiddleware = js.native
-  /* protected */ def _buildNext(
-    request_method: String,
-    path: String,
-    request_body: js.UndefOr[scala.Nothing],
-    request_headers: js.Object,
-    context: Context
-  ): ResponseMiddleware = js.native
-  /* protected */ def _buildNext(
-    request_method: String,
-    path: String,
-    request_body: String,
-    request_headers: js.UndefOr[scala.Nothing],
-    context: Context
-  ): ResponseMiddleware = js.native
   /**
     * Turn an HTTP request into an executable function with a useful request context. Will also incorporate the entire
     * request handler chain
@@ -42,8 +21,8 @@ trait Road extends js.Object {
   /* protected */ def _buildNext(
     request_method: String,
     path: String,
-    request_body: String,
-    request_headers: js.Object,
+    request_body: js.UndefOr[String],
+    request_headers: js.UndefOr[js.Object],
     context: Context
   ): ResponseMiddleware = js.native
   /**

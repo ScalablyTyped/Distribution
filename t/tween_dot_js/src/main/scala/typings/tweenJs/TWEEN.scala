@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object TWEEN extends js.Object {
   @js.native
-  class Group () extends js.Object {
+  trait Group extends js.Object {
     def add(tween: Tween): Unit = js.native
     def getAll(): js.Array[Tween] = js.native
     def remove(tween: Tween): Unit = js.native
@@ -19,9 +19,7 @@ object TWEEN extends js.Object {
   }
   
   @js.native
-  class Tween () extends js.Object {
-    def this(`object`: js.Any) = this()
-    def this(`object`: js.Any, group: Group) = this()
+  trait Tween extends js.Object {
     def chain(tweens: Tween*): Tween = js.native
     def delay(amount: Double): Tween = js.native
     def duration(d: Double): Tween = js.native
@@ -36,7 +34,7 @@ object TWEEN extends js.Object {
     def onRepeat(callback: js.Function1[/* object */ js.UndefOr[js.Any], Unit]): Tween = js.native
     def onStart(callback: js.Function1[/* object */ js.UndefOr[js.Any], Unit]): Tween = js.native
     def onStop(callback: js.Function1[/* object */ js.UndefOr[js.Any], Unit]): Tween = js.native
-    def onUpdate(callback: js.Function1[/* object */ js.UndefOr[js.Any], Unit]): Tween = js.native
+    def onUpdate(callback: js.Function2[/* object */ js.UndefOr[js.Any], /* elapsed */ js.UndefOr[Double], Unit]): Tween = js.native
     def pause(): Tween = js.native
     def pause(time: Double): Tween = js.native
     def repeat(times: Double): Tween = js.native
@@ -44,6 +42,7 @@ object TWEEN extends js.Object {
     def resume(): Tween = js.native
     def resume(time: Double): Tween = js.native
     def start(): Tween = js.native
+    def start(time: String): Tween = js.native
     def start(time: Double): Tween = js.native
     def stop(): Tween = js.native
     def stopChainedTweens(): Tween = js.native
@@ -52,15 +51,5 @@ object TWEEN extends js.Object {
     def yoyo(enable: Boolean): Tween = js.native
   }
   
-  var Easing: typings.tweenJs.Easing = js.native
-  var Interpolation: typings.tweenJs.Interpolation = js.native
-  def add(tween: Tween): Unit = js.native
-  def getAll(): js.Array[Tween] = js.native
-  def now(): Double = js.native
-  def remove(tween: Tween): Unit = js.native
-  def removeAll(): Unit = js.native
-  def update(): Boolean = js.native
-  def update(time: Double): Boolean = js.native
-  def update(time: Double, preserve: Boolean): Boolean = js.native
 }
 

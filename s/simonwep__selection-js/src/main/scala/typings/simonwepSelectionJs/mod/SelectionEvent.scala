@@ -1,6 +1,6 @@
 package typings.simonwepSelectionJs.mod
 
-import typings.simonwepSelectionJs.AnonAdded
+import typings.simonwepSelectionJs.anon.Added
 import typings.std.Element
 import typings.std.MouseEvent
 import typings.std.TouchEvent
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait SelectionEvent extends js.Object {
   var area: Element
-  var changed: AnonAdded
+  var changed: Added
   var inst: Selection
   var oe: MouseEvent | TouchEvent
   var selected: js.Array[Element]
@@ -20,7 +20,7 @@ object SelectionEvent {
   @scala.inline
   def apply(
     area: Element,
-    changed: AnonAdded,
+    changed: Added,
     inst: Selection,
     oe: MouseEvent | TouchEvent,
     selected: js.Array[Element]

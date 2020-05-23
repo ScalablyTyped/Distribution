@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.DepthReducer")
 @js.native
-class DepthReducer protected () extends MinMaxReducer {
-  /**
-    * Creates a depth reducer
-    * @param camera The camera used to render the depth texture
-    */
-  def this(camera: Camera) = this()
+trait DepthReducer extends MinMaxReducer {
   var _depthRenderer: js.Any = js.native
   var _depthRendererId: js.Any = js.native
   /**

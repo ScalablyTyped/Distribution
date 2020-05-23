@@ -13,7 +13,7 @@ object ColorPaletteSpecimenProps {
   @scala.inline
   def apply(colors: js.Array[ColorSpecimenProps], horizontal: js.UndefOr[Boolean] = js.undefined): ColorPaletteSpecimenProps = {
     val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorPaletteSpecimenProps]
   }
 }

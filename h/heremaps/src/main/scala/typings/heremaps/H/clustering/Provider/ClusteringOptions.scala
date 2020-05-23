@@ -23,14 +23,14 @@ trait ClusteringOptions extends js.Object {
 object ClusteringOptions {
   @scala.inline
   def apply(
-    eps: Int | Double = null,
-    minWeight: Int | Double = null,
+    eps: js.UndefOr[Double] = js.undefined,
+    minWeight: js.UndefOr[Double] = js.undefined,
     projection: IProjection = null,
     strategy: Strategy = null
   ): ClusteringOptions = {
     val __obj = js.Dynamic.literal()
-    if (eps != null) __obj.updateDynamic("eps")(eps.asInstanceOf[js.Any])
-    if (minWeight != null) __obj.updateDynamic("minWeight")(minWeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(eps)) __obj.updateDynamic("eps")(eps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWeight)) __obj.updateDynamic("minWeight")(minWeight.get.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     if (strategy != null) __obj.updateDynamic("strategy")(strategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusteringOptions]

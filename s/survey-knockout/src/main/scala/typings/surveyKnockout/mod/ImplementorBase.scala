@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
 class ImplementorBase protected () extends js.Object {
   def this(element: Base) = this()
   var element: Base = js.native
+  def dispose(): Unit = js.native
 }
 

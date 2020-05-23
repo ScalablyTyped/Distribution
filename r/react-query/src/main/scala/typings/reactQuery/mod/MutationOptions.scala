@@ -24,8 +24,8 @@ object MutationOptions {
     if (onMutate != null) __obj.updateDynamic("onMutate")(js.Any.fromFunction1(onMutate))
     if (onSettled != null) __obj.updateDynamic("onSettled")(js.Any.fromFunction4(onSettled))
     if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction2(onSuccess))
-    if (!js.isUndefined(throwOnError)) __obj.updateDynamic("throwOnError")(throwOnError.asInstanceOf[js.Any])
-    if (!js.isUndefined(useErrorBoundary)) __obj.updateDynamic("useErrorBoundary")(useErrorBoundary.asInstanceOf[js.Any])
+    if (!js.isUndefined(throwOnError)) __obj.updateDynamic("throwOnError")(throwOnError.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useErrorBoundary)) __obj.updateDynamic("useErrorBoundary")(useErrorBoundary.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationOptions[TResult, TVariables]]
   }
 }

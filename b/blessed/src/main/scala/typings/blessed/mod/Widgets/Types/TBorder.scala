@@ -30,18 +30,18 @@ trait TBorder extends js.Object {
 object TBorder {
   @scala.inline
   def apply(
-    bg: Int | Double = null,
+    bg: js.UndefOr[Double] = js.undefined,
     bold: String = null,
     ch: String = null,
-    fg: Int | Double = null,
+    fg: js.UndefOr[Double] = js.undefined,
     `type`: line | bg = null,
     underline: String = null
   ): TBorder = {
     val __obj = js.Dynamic.literal()
-    if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
+    if (!js.isUndefined(bg)) __obj.updateDynamic("bg")(bg.get.asInstanceOf[js.Any])
     if (bold != null) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
     if (ch != null) __obj.updateDynamic("ch")(ch.asInstanceOf[js.Any])
-    if (fg != null) __obj.updateDynamic("fg")(fg.asInstanceOf[js.Any])
+    if (!js.isUndefined(fg)) __obj.updateDynamic("fg")(fg.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (underline != null) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
     __obj.asInstanceOf[TBorder]

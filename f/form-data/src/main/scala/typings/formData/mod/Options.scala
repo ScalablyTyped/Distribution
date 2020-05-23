@@ -18,7 +18,7 @@ object Options {
   @scala.inline
   def apply(
     autoDestroy: js.UndefOr[Boolean] = js.undefined,
-    dataSize: Int | Double = null,
+    dataSize: js.UndefOr[Double] = js.undefined,
     destroy: js.ThisFunction2[
       /* this */ Readable, 
       /* error */ Error | Null, 
@@ -26,8 +26,8 @@ object Options {
       Unit
     ] = null,
     encoding: String = null,
-    highWaterMark: Int | Double = null,
-    maxDataSize: Int | Double = null,
+    highWaterMark: js.UndefOr[Double] = js.undefined,
+    maxDataSize: js.UndefOr[Double] = js.undefined,
     objectMode: js.UndefOr[Boolean] = js.undefined,
     pauseStreams: js.UndefOr[Boolean] = js.undefined,
     read: js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit] = null,
@@ -35,17 +35,17 @@ object Options {
     writable: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy.asInstanceOf[js.Any])
-    if (dataSize != null) __obj.updateDynamic("dataSize")(dataSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataSize)) __obj.updateDynamic("dataSize")(dataSize.get.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
-    if (maxDataSize != null) __obj.updateDynamic("maxDataSize")(maxDataSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(pauseStreams)) __obj.updateDynamic("pauseStreams")(pauseStreams.asInstanceOf[js.Any])
+    if (!js.isUndefined(highWaterMark)) __obj.updateDynamic("highWaterMark")(highWaterMark.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDataSize)) __obj.updateDynamic("maxDataSize")(maxDataSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pauseStreams)) __obj.updateDynamic("pauseStreams")(pauseStreams.get.asInstanceOf[js.Any])
     if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
-    if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable.asInstanceOf[js.Any])
-    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable.asInstanceOf[js.Any])
+    if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

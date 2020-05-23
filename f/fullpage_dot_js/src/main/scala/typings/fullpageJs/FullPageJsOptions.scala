@@ -1,5 +1,6 @@
 package typings.fullpageJs
 
+import typings.fullpageJs.anon.Percentage
 import typings.fullpageJs.fullpageJsStrings.bottom
 import typings.fullpageJs.fullpageJsStrings.fingersonly
 import typings.fullpageJs.fullpageJsStrings.horizontal
@@ -221,7 +222,7 @@ trait FullPageJsOptions extends js.Object {
   /**
     * Allows to configure the parameters for the parallax backgrounds effect when using the option parallax:true.
     */ 
-  var parallaxOptions: js.UndefOr[AnonPercentage] = js.undefined
+  var parallaxOptions: js.UndefOr[Percentage] = js.undefined
   /**
     * (default true) Defines whether to push the state of the site to the browser's history. When set to true each section/slide of the site will act as a new page and the back and forward buttons of the browser will scroll the sections/slides to reach the previous or next state of the site. When set to false, the URL will keep changing but will have no effect on the browser's history. This option is automatically turned off when using autoScrolling:false.
     */
@@ -313,7 +314,7 @@ object FullPageJsOptions {
     anchors: js.Array[String] = null,
     animateAnchor: js.UndefOr[Boolean] = js.undefined,
     autoScrolling: js.UndefOr[Boolean] = js.undefined,
-    bigSectionsDestination: top | bottom = null,
+    bigSectionsDestination: js.UndefOr[Null | top | bottom] = js.undefined,
     continuousHorizontal: js.UndefOr[Boolean] = js.undefined,
     continuousVertical: js.UndefOr[Boolean] = js.undefined,
     controlArrows: js.UndefOr[Boolean] = js.undefined,
@@ -323,7 +324,7 @@ object FullPageJsOptions {
     easingcss3: String = null,
     fadingEffect: Boolean | sections | slides = null,
     fitToSection: js.UndefOr[Boolean] = js.undefined,
-    fitToSectionDelay: Int | Double = null,
+    fitToSectionDelay: js.UndefOr[Double] = js.undefined,
     fixedElements: String = null,
     interlockedSlides: Boolean | js.Array[Double] = null,
     keyboardScrolling: js.UndefOr[Boolean] = js.undefined,
@@ -336,7 +337,7 @@ object FullPageJsOptions {
     navigation: js.UndefOr[Boolean] = js.undefined,
     navigationPosition: String = null,
     navigationTooltips: js.Array[String] = null,
-    normalScrollElementTouchThreshold: Int | Double = null,
+    normalScrollElementTouchThreshold: js.UndefOr[Double] = js.undefined,
     normalScrollElements: String = null,
     offsetSections: js.UndefOr[Boolean] = js.undefined,
     onLeave: (/* index */ Double, /* nextIndex */ Double, /* direction */ String) => Unit = null,
@@ -344,26 +345,26 @@ object FullPageJsOptions {
     paddingBottom: String = null,
     paddingTop: String = null,
     parallax: js.UndefOr[Boolean] = js.undefined,
-    parallaxOptions: AnonPercentage = null,
+    parallaxOptions: Percentage = null,
     recordHistory: js.UndefOr[Boolean] = js.undefined,
     resetSliders: js.UndefOr[Boolean] = js.undefined,
     resize: js.UndefOr[Boolean] = js.undefined,
-    responsiveHeight: Int | Double = null,
+    responsiveHeight: js.UndefOr[Double] = js.undefined,
     responsiveSlides: js.UndefOr[Boolean] = js.undefined,
-    responsiveWidth: Int | Double = null,
+    responsiveWidth: js.UndefOr[Double] = js.undefined,
     scrollBar: js.UndefOr[Boolean] = js.undefined,
     scrollHorizontally: js.UndefOr[Boolean] = js.undefined,
     scrollOverflow: js.UndefOr[Boolean] = js.undefined,
     scrollOverflowOptions: js.Any = null,
     scrollOverflowReset: js.UndefOr[Boolean] = js.undefined,
-    scrollingSpeed: Int | Double = null,
+    scrollingSpeed: js.UndefOr[Double] = js.undefined,
     sectionSelector: String = null,
     sectionsColor: js.Array[String] = null,
     showActiveTooltip: js.UndefOr[Boolean] = js.undefined,
     slideSelector: String = null,
     slidesNavPosition: String = null,
     slidesNavigation: js.UndefOr[Boolean] = js.undefined,
-    touchSensitivity: Int | Double = null,
+    touchSensitivity: js.UndefOr[Double] = js.undefined,
     verticalCentered: js.UndefOr[Boolean] = js.undefined
   ): FullPageJsOptions = {
     val __obj = js.Dynamic.literal()
@@ -373,60 +374,60 @@ object FullPageJsOptions {
     if (afterResponsive != null) __obj.updateDynamic("afterResponsive")(js.Any.fromFunction1(afterResponsive))
     if (afterSlideLoad != null) __obj.updateDynamic("afterSlideLoad")(js.Any.fromFunction4(afterSlideLoad))
     if (anchors != null) __obj.updateDynamic("anchors")(anchors.asInstanceOf[js.Any])
-    if (!js.isUndefined(animateAnchor)) __obj.updateDynamic("animateAnchor")(animateAnchor.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoScrolling)) __obj.updateDynamic("autoScrolling")(autoScrolling.asInstanceOf[js.Any])
-    if (bigSectionsDestination != null) __obj.updateDynamic("bigSectionsDestination")(bigSectionsDestination.asInstanceOf[js.Any])
-    if (!js.isUndefined(continuousHorizontal)) __obj.updateDynamic("continuousHorizontal")(continuousHorizontal.asInstanceOf[js.Any])
-    if (!js.isUndefined(continuousVertical)) __obj.updateDynamic("continuousVertical")(continuousVertical.asInstanceOf[js.Any])
-    if (!js.isUndefined(controlArrows)) __obj.updateDynamic("controlArrows")(controlArrows.asInstanceOf[js.Any])
-    if (!js.isUndefined(css3)) __obj.updateDynamic("css3")(css3.asInstanceOf[js.Any])
+    if (!js.isUndefined(animateAnchor)) __obj.updateDynamic("animateAnchor")(animateAnchor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoScrolling)) __obj.updateDynamic("autoScrolling")(autoScrolling.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bigSectionsDestination)) __obj.updateDynamic("bigSectionsDestination")(bigSectionsDestination.asInstanceOf[js.Any])
+    if (!js.isUndefined(continuousHorizontal)) __obj.updateDynamic("continuousHorizontal")(continuousHorizontal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(continuousVertical)) __obj.updateDynamic("continuousVertical")(continuousVertical.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(controlArrows)) __obj.updateDynamic("controlArrows")(controlArrows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(css3)) __obj.updateDynamic("css3")(css3.get.asInstanceOf[js.Any])
     if (dragAndMove != null) __obj.updateDynamic("dragAndMove")(dragAndMove.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (easingcss3 != null) __obj.updateDynamic("easingcss3")(easingcss3.asInstanceOf[js.Any])
     if (fadingEffect != null) __obj.updateDynamic("fadingEffect")(fadingEffect.asInstanceOf[js.Any])
-    if (!js.isUndefined(fitToSection)) __obj.updateDynamic("fitToSection")(fitToSection.asInstanceOf[js.Any])
-    if (fitToSectionDelay != null) __obj.updateDynamic("fitToSectionDelay")(fitToSectionDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(fitToSection)) __obj.updateDynamic("fitToSection")(fitToSection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fitToSectionDelay)) __obj.updateDynamic("fitToSectionDelay")(fitToSectionDelay.get.asInstanceOf[js.Any])
     if (fixedElements != null) __obj.updateDynamic("fixedElements")(fixedElements.asInstanceOf[js.Any])
     if (interlockedSlides != null) __obj.updateDynamic("interlockedSlides")(interlockedSlides.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboardScrolling)) __obj.updateDynamic("keyboardScrolling")(keyboardScrolling.asInstanceOf[js.Any])
-    if (!js.isUndefined(lazyLoading)) __obj.updateDynamic("lazyLoading")(lazyLoading.asInstanceOf[js.Any])
-    if (!js.isUndefined(lockAnchors)) __obj.updateDynamic("lockAnchors")(lockAnchors.asInstanceOf[js.Any])
-    if (!js.isUndefined(loopBottom)) __obj.updateDynamic("loopBottom")(loopBottom.asInstanceOf[js.Any])
-    if (!js.isUndefined(loopHorizontal)) __obj.updateDynamic("loopHorizontal")(loopHorizontal.asInstanceOf[js.Any])
-    if (!js.isUndefined(loopTop)) __obj.updateDynamic("loopTop")(loopTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboardScrolling)) __obj.updateDynamic("keyboardScrolling")(keyboardScrolling.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lazyLoading)) __obj.updateDynamic("lazyLoading")(lazyLoading.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockAnchors)) __obj.updateDynamic("lockAnchors")(lockAnchors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loopBottom)) __obj.updateDynamic("loopBottom")(loopBottom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loopHorizontal)) __obj.updateDynamic("loopHorizontal")(loopHorizontal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loopTop)) __obj.updateDynamic("loopTop")(loopTop.get.asInstanceOf[js.Any])
     if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigation)) __obj.updateDynamic("navigation")(navigation.asInstanceOf[js.Any])
+    if (!js.isUndefined(navigation)) __obj.updateDynamic("navigation")(navigation.get.asInstanceOf[js.Any])
     if (navigationPosition != null) __obj.updateDynamic("navigationPosition")(navigationPosition.asInstanceOf[js.Any])
     if (navigationTooltips != null) __obj.updateDynamic("navigationTooltips")(navigationTooltips.asInstanceOf[js.Any])
-    if (normalScrollElementTouchThreshold != null) __obj.updateDynamic("normalScrollElementTouchThreshold")(normalScrollElementTouchThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(normalScrollElementTouchThreshold)) __obj.updateDynamic("normalScrollElementTouchThreshold")(normalScrollElementTouchThreshold.get.asInstanceOf[js.Any])
     if (normalScrollElements != null) __obj.updateDynamic("normalScrollElements")(normalScrollElements.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetSections)) __obj.updateDynamic("offsetSections")(offsetSections.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetSections)) __obj.updateDynamic("offsetSections")(offsetSections.get.asInstanceOf[js.Any])
     if (onLeave != null) __obj.updateDynamic("onLeave")(js.Any.fromFunction3(onLeave))
     if (onSlideLeave != null) __obj.updateDynamic("onSlideLeave")(js.Any.fromFunction5(onSlideLeave))
     if (paddingBottom != null) __obj.updateDynamic("paddingBottom")(paddingBottom.asInstanceOf[js.Any])
     if (paddingTop != null) __obj.updateDynamic("paddingTop")(paddingTop.asInstanceOf[js.Any])
-    if (!js.isUndefined(parallax)) __obj.updateDynamic("parallax")(parallax.asInstanceOf[js.Any])
+    if (!js.isUndefined(parallax)) __obj.updateDynamic("parallax")(parallax.get.asInstanceOf[js.Any])
     if (parallaxOptions != null) __obj.updateDynamic("parallaxOptions")(parallaxOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(recordHistory)) __obj.updateDynamic("recordHistory")(recordHistory.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetSliders)) __obj.updateDynamic("resetSliders")(resetSliders.asInstanceOf[js.Any])
-    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize.asInstanceOf[js.Any])
-    if (responsiveHeight != null) __obj.updateDynamic("responsiveHeight")(responsiveHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(responsiveSlides)) __obj.updateDynamic("responsiveSlides")(responsiveSlides.asInstanceOf[js.Any])
-    if (responsiveWidth != null) __obj.updateDynamic("responsiveWidth")(responsiveWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollBar)) __obj.updateDynamic("scrollBar")(scrollBar.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollHorizontally)) __obj.updateDynamic("scrollHorizontally")(scrollHorizontally.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollOverflow)) __obj.updateDynamic("scrollOverflow")(scrollOverflow.asInstanceOf[js.Any])
+    if (!js.isUndefined(recordHistory)) __obj.updateDynamic("recordHistory")(recordHistory.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetSliders)) __obj.updateDynamic("resetSliders")(resetSliders.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsiveHeight)) __obj.updateDynamic("responsiveHeight")(responsiveHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsiveSlides)) __obj.updateDynamic("responsiveSlides")(responsiveSlides.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsiveWidth)) __obj.updateDynamic("responsiveWidth")(responsiveWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollBar)) __obj.updateDynamic("scrollBar")(scrollBar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollHorizontally)) __obj.updateDynamic("scrollHorizontally")(scrollHorizontally.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollOverflow)) __obj.updateDynamic("scrollOverflow")(scrollOverflow.get.asInstanceOf[js.Any])
     if (scrollOverflowOptions != null) __obj.updateDynamic("scrollOverflowOptions")(scrollOverflowOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollOverflowReset)) __obj.updateDynamic("scrollOverflowReset")(scrollOverflowReset.asInstanceOf[js.Any])
-    if (scrollingSpeed != null) __obj.updateDynamic("scrollingSpeed")(scrollingSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollOverflowReset)) __obj.updateDynamic("scrollOverflowReset")(scrollOverflowReset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollingSpeed)) __obj.updateDynamic("scrollingSpeed")(scrollingSpeed.get.asInstanceOf[js.Any])
     if (sectionSelector != null) __obj.updateDynamic("sectionSelector")(sectionSelector.asInstanceOf[js.Any])
     if (sectionsColor != null) __obj.updateDynamic("sectionsColor")(sectionsColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(showActiveTooltip)) __obj.updateDynamic("showActiveTooltip")(showActiveTooltip.asInstanceOf[js.Any])
+    if (!js.isUndefined(showActiveTooltip)) __obj.updateDynamic("showActiveTooltip")(showActiveTooltip.get.asInstanceOf[js.Any])
     if (slideSelector != null) __obj.updateDynamic("slideSelector")(slideSelector.asInstanceOf[js.Any])
     if (slidesNavPosition != null) __obj.updateDynamic("slidesNavPosition")(slidesNavPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(slidesNavigation)) __obj.updateDynamic("slidesNavigation")(slidesNavigation.asInstanceOf[js.Any])
-    if (touchSensitivity != null) __obj.updateDynamic("touchSensitivity")(touchSensitivity.asInstanceOf[js.Any])
-    if (!js.isUndefined(verticalCentered)) __obj.updateDynamic("verticalCentered")(verticalCentered.asInstanceOf[js.Any])
+    if (!js.isUndefined(slidesNavigation)) __obj.updateDynamic("slidesNavigation")(slidesNavigation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchSensitivity)) __obj.updateDynamic("touchSensitivity")(touchSensitivity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalCentered)) __obj.updateDynamic("verticalCentered")(verticalCentered.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullPageJsOptions]
   }
 }

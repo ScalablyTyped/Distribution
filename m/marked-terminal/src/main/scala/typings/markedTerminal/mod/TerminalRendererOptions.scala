@@ -61,11 +61,11 @@ object TerminalRendererOptions {
     reflowText: js.UndefOr[Boolean] = js.undefined,
     showSectionPrefix: js.UndefOr[Boolean] = js.undefined,
     strong: Chalk | (js.Function1[/* s */ String, String]) = null,
-    tab: Int | Double = null,
+    tab: js.UndefOr[Double] = js.undefined,
     table: Chalk | (js.Function1[/* s */ String, String]) = null,
     tableOptions: js.Any = null,
     unescape: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): TerminalRendererOptions = {
     val __obj = js.Dynamic.literal()
     if (blockquote != null) __obj.updateDynamic("blockquote")(blockquote.asInstanceOf[js.Any])
@@ -73,7 +73,7 @@ object TerminalRendererOptions {
     if (codespan != null) __obj.updateDynamic("codespan")(codespan.asInstanceOf[js.Any])
     if (del != null) __obj.updateDynamic("del")(del.asInstanceOf[js.Any])
     if (em != null) __obj.updateDynamic("em")(em.asInstanceOf[js.Any])
-    if (!js.isUndefined(emoji)) __obj.updateDynamic("emoji")(emoji.asInstanceOf[js.Any])
+    if (!js.isUndefined(emoji)) __obj.updateDynamic("emoji")(emoji.get.asInstanceOf[js.Any])
     if (firstHeading != null) __obj.updateDynamic("firstHeading")(firstHeading.asInstanceOf[js.Any])
     if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
     if (hr != null) __obj.updateDynamic("hr")(hr.asInstanceOf[js.Any])
@@ -83,14 +83,14 @@ object TerminalRendererOptions {
     if (list != null) __obj.updateDynamic("list")(js.Any.fromFunction2(list))
     if (listitem != null) __obj.updateDynamic("listitem")(listitem.asInstanceOf[js.Any])
     if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph.asInstanceOf[js.Any])
-    if (!js.isUndefined(reflowText)) __obj.updateDynamic("reflowText")(reflowText.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSectionPrefix)) __obj.updateDynamic("showSectionPrefix")(showSectionPrefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(reflowText)) __obj.updateDynamic("reflowText")(reflowText.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSectionPrefix)) __obj.updateDynamic("showSectionPrefix")(showSectionPrefix.get.asInstanceOf[js.Any])
     if (strong != null) __obj.updateDynamic("strong")(strong.asInstanceOf[js.Any])
-    if (tab != null) __obj.updateDynamic("tab")(tab.asInstanceOf[js.Any])
+    if (!js.isUndefined(tab)) __obj.updateDynamic("tab")(tab.get.asInstanceOf[js.Any])
     if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     if (tableOptions != null) __obj.updateDynamic("tableOptions")(tableOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(unescape)) __obj.updateDynamic("unescape")(unescape.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(unescape)) __obj.updateDynamic("unescape")(unescape.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerminalRendererOptions]
   }
 }

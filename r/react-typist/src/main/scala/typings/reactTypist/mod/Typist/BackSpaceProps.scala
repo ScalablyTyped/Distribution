@@ -11,10 +11,10 @@ trait BackSpaceProps extends js.Object {
 
 object BackSpaceProps {
   @scala.inline
-  def apply(count: Int | Double = null, delay: Int | Double = null): BackSpaceProps = {
+  def apply(count: js.UndefOr[Double] = js.undefined, delay: js.UndefOr[Double] = js.undefined): BackSpaceProps = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackSpaceProps]
   }
 }

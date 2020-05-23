@@ -1,7 +1,7 @@
 package typings.handsontable.mod.Handsontable.plugins
 
 import typings.handsontable.mod._Handsontable.Core
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait DropdownMenu extends Base {
   var menu: Menu | Unit
   def close(): Unit
   def executeCommand(commandName: String, params: js.Any*): Unit
-  def open(event: Event_): Unit
+  def open(event: Event): Unit
 }
 
 object DropdownMenu {
@@ -38,7 +38,7 @@ object DropdownMenu {
     isPluginsReady: Boolean,
     itemsFactory: ItemsFactory | Unit,
     menu: Menu | Unit,
-    open: Event_ => Unit,
+    open: Event => Unit,
     pluginName: String,
     pluginsInitializedCallback: js.Array[_],
     removeHooks: String => Unit,

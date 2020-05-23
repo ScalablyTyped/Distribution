@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.BouncingBehavior")
 @js.native
-class BouncingBehavior () extends Behavior[ArcRotateCamera] {
+trait BouncingBehavior extends Behavior[ArcRotateCamera] {
   var _animatables: js.Any = js.native
   /**
     * Applies an animation to the radius of the camera, extending by the radiusDelta.
@@ -30,9 +29,6 @@ class BouncingBehavior () extends Behavior[ArcRotateCamera] {
     * Length of the distance animated by the transition when lower radius is reached
     */
   var lowerRadiusTransitionRange: Double = js.native
-  /** gets or sets behavior's name */
-  /* CompleteClass */
-  override var name: String = js.native
   /**
     * The duration of the animation, in milliseconds
     */
@@ -46,12 +42,6 @@ class BouncingBehavior () extends Behavior[ArcRotateCamera] {
     */
   /* protected */ def _clearAnimationLocks(): Unit = js.native
   /**
-    * Called when the behavior is attached to a target
-    * @param target defines the target where the behavior is attached to
-    */
-  /* CompleteClass */
-  override def attach(target: ArcRotateCamera): Unit = js.native
-  /**
     * Gets a value indicating if the lowerRadiusTransitionRange and upperRadiusTransitionRange are defined automatically
     */
   def autoTransitionRange: Boolean = js.native
@@ -61,16 +51,6 @@ class BouncingBehavior () extends Behavior[ArcRotateCamera] {
     */
   def autoTransitionRange(value: Boolean): js.Any = js.native
   /**
-    * Called when the behavior is detached from its target
-    */
-  /* CompleteClass */
-  override def detach(): Unit = js.native
-  /**
-    * Function called when the behavior needs to be initialized (after attaching it to a target)
-    */
-  /* CompleteClass */
-  override def init(): Unit = js.native
-  /**
     * Gets the name of the behavior.
     */
   @JSName("name")
@@ -79,19 +59,5 @@ class BouncingBehavior () extends Behavior[ArcRotateCamera] {
     * Stops and removes all animations that have been applied to the camera
     */
   def stopAllAnimations(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.BouncingBehavior")
-@js.native
-object BouncingBehavior extends js.Object {
-  /**
-    * The easing function used by animations
-    */
-  var EasingFunction: BackEase = js.native
-  /**
-    * The easing mode used by animations
-    */
-  var EasingMode: Double = js.native
 }
 

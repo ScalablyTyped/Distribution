@@ -27,7 +27,7 @@ trait DeploymentConfigInfo extends js.Object {
     */
   var minimumHealthyHosts: js.UndefOr[MinimumHealthyHosts] = js.native
   /**
-    * The configuration that specifies how the deployment traffic is routed. Only deployments with a Lambda compute platform can specify this.
+    * The configuration that specifies how the deployment traffic is routed. Used for deployments with a Lambda or ECS compute platform only.
     */
   var trafficRoutingConfig: js.UndefOr[TrafficRoutingConfig] = js.native
 }

@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.Hyperlink")
 @js.native
-class Hyperlink protected () extends js.Object {
+trait Hyperlink extends js.Object {
   var Address: String = js.native
   val Application: typings.activexExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native

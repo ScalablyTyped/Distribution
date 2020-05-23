@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 /** module Or Internal Object */
 /**
-	* @brief http query 处理模块
-	* @detail 引用方法：,```JavaScript,var querystring = require('querystring');,```
-	*/
+  * @brief http query 处理模块
+  * @detail 引用方法：,```JavaScript,var querystring = require('querystring');,```
+  */
 @JSImport("querystring", JSImport.Namespace)
 @js.native
 object querystringMod extends js.Object {

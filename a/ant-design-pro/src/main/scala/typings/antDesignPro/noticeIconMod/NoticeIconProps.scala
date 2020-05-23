@@ -1,6 +1,6 @@
 package typings.antDesignPro.noticeIconMod
 
-import typings.antDesignPro.AnonDictkey
+import typings.antDesignPro.anon.Dictkey
 import typings.antDesignPro.noticeIconTabMod.NoticeIconData
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
@@ -15,7 +15,7 @@ trait NoticeIconProps extends js.Object {
   var clearClose: js.UndefOr[Boolean] = js.undefined
   var count: js.UndefOr[Double] = js.undefined
   var loading: js.UndefOr[Boolean] = js.undefined
-  var locale: js.UndefOr[AnonDictkey] = js.undefined
+  var locale: js.UndefOr[Dictkey] = js.undefined
   var onClear: js.UndefOr[js.Function1[/* tabName */ String, Unit]] = js.undefined
   var onItemClick: js.UndefOr[js.Function2[/* item */ NoticeIconData, /* tabProps */ NoticeIconProps, Unit]] = js.undefined
   var onPopupVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
@@ -31,9 +31,9 @@ object NoticeIconProps {
     bell: ReactNode = null,
     className: String = null,
     clearClose: js.UndefOr[Boolean] = js.undefined,
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     loading: js.UndefOr[Boolean] = js.undefined,
-    locale: AnonDictkey = null,
+    locale: Dictkey = null,
     onClear: /* tabName */ String => Unit = null,
     onItemClick: (/* item */ NoticeIconData, /* tabProps */ NoticeIconProps) => Unit = null,
     onPopupVisibleChange: /* visible */ Boolean => Unit = null,
@@ -45,16 +45,16 @@ object NoticeIconProps {
     val __obj = js.Dynamic.literal()
     if (bell != null) __obj.updateDynamic("bell")(bell.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearClose)) __obj.updateDynamic("clearClose")(clearClose.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearClose)) __obj.updateDynamic("clearClose")(clearClose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.get.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (onClear != null) __obj.updateDynamic("onClear")(js.Any.fromFunction1(onClear))
     if (onItemClick != null) __obj.updateDynamic("onItemClick")(js.Any.fromFunction2(onItemClick))
     if (onPopupVisibleChange != null) __obj.updateDynamic("onPopupVisibleChange")(js.Any.fromFunction1(onPopupVisibleChange))
     if (onTabChange != null) __obj.updateDynamic("onTabChange")(js.Any.fromFunction1(onTabChange))
     if (onViewMore != null) __obj.updateDynamic("onViewMore")(js.Any.fromFunction2(onViewMore))
-    if (!js.isUndefined(popupVisible)) __obj.updateDynamic("popupVisible")(popupVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(popupVisible)) __obj.updateDynamic("popupVisible")(popupVisible.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoticeIconProps]
   }

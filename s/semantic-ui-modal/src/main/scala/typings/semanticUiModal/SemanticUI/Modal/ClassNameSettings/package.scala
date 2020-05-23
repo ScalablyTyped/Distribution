@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ClassNameSettings {
-  type Param = (typings.semanticUiModal.PickImplactive | typings.semanticUiModal.PickImplscrolling) with typings.semanticUiModal.PartialPickImplkeyofImplActive
+  type Param = (typings.semanticUiModal.anon.PickImplactive | typings.semanticUiModal.anon.PickImplscrolling) with typings.semanticUiModal.anon.PartialPickImplkeyofImplActive
 }

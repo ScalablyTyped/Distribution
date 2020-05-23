@@ -13,45 +13,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Web.AtomPub.AtomPubClient")
-@js.native
-class AtomPubClient () extends IAtomPubClient {
-  def this(serverCredential: PasswordCredential) = this()
-  /* CompleteClass */
-  override var bypassCacheOnRetrieve: Boolean = js.native
-  /* CompleteClass */
-  override var maxResponseBufferSize: Double = js.native
-  /* CompleteClass */
-  override var proxyCredential: PasswordCredential = js.native
-  /* CompleteClass */
-  override var serverCredential: PasswordCredential = js.native
-  /* CompleteClass */
-  override var timeout: Double = js.native
-  /* CompleteClass */
-  override def cancelAsyncOperations(): Unit = js.native
-  /* CompleteClass */
-  override def createMediaResourceAsync(uri: Uri, mediaType: String, description: String, mediaStream: IInputStream): IAsyncOperationWithProgress[SyndicationItem, TransferProgress] = js.native
-  /* CompleteClass */
-  override def createResourceAsync(uri: Uri, description: String, item: SyndicationItem): IAsyncOperationWithProgress[SyndicationItem, TransferProgress] = js.native
-  /* CompleteClass */
-  override def deleteResourceAsync(uri: Uri): IAsyncActionWithProgress[TransferProgress] = js.native
-  /* CompleteClass */
-  override def deleteResourceItemAsync(item: SyndicationItem): IAsyncActionWithProgress[TransferProgress] = js.native
-  /* CompleteClass */
-  override def retrieveFeedAsync(uri: Uri): IAsyncOperationWithProgress[SyndicationFeed, RetrievalProgress] = js.native
-  /* CompleteClass */
-  override def retrieveMediaResourceAsync(uri: Uri): IAsyncOperationWithProgress[IInputStream, RetrievalProgress] = js.native
-  /* CompleteClass */
-  override def retrieveResourceAsync(uri: Uri): IAsyncOperationWithProgress[SyndicationItem, RetrievalProgress] = js.native
-  /* CompleteClass */
-  override def retrieveServiceDocumentAsync(uri: Uri): IAsyncOperationWithProgress[ServiceDocument, RetrievalProgress] = js.native
-  /* CompleteClass */
-  override def setRequestHeader(name: String, value: String): Unit = js.native
-  /* CompleteClass */
-  override def updateMediaResourceAsync(uri: Uri, mediaType: String, mediaStream: IInputStream): IAsyncActionWithProgress[TransferProgress] = js.native
-  /* CompleteClass */
-  override def updateResourceAsync(uri: Uri, item: SyndicationItem): IAsyncActionWithProgress[TransferProgress] = js.native
-  /* CompleteClass */
-  override def updateResourceItemAsync(item: SyndicationItem): IAsyncActionWithProgress[TransferProgress] = js.native
+trait AtomPubClient extends IAtomPubClient
+
+object AtomPubClient {
+  @scala.inline
+  def apply(
+    bypassCacheOnRetrieve: Boolean,
+    cancelAsyncOperations: () => Unit,
+    createMediaResourceAsync: (Uri, String, String, IInputStream) => IAsyncOperationWithProgress[SyndicationItem, TransferProgress],
+    createResourceAsync: (Uri, String, SyndicationItem) => IAsyncOperationWithProgress[SyndicationItem, TransferProgress],
+    deleteResourceAsync: Uri => IAsyncActionWithProgress[TransferProgress],
+    deleteResourceItemAsync: SyndicationItem => IAsyncActionWithProgress[TransferProgress],
+    maxResponseBufferSize: Double,
+    proxyCredential: PasswordCredential,
+    retrieveFeedAsync: Uri => IAsyncOperationWithProgress[SyndicationFeed, RetrievalProgress],
+    retrieveMediaResourceAsync: Uri => IAsyncOperationWithProgress[IInputStream, RetrievalProgress],
+    retrieveResourceAsync: Uri => IAsyncOperationWithProgress[SyndicationItem, RetrievalProgress],
+    retrieveServiceDocumentAsync: Uri => IAsyncOperationWithProgress[ServiceDocument, RetrievalProgress],
+    serverCredential: PasswordCredential,
+    setRequestHeader: (String, String) => Unit,
+    timeout: Double,
+    updateMediaResourceAsync: (Uri, String, IInputStream) => IAsyncActionWithProgress[TransferProgress],
+    updateResourceAsync: (Uri, SyndicationItem) => IAsyncActionWithProgress[TransferProgress],
+    updateResourceItemAsync: SyndicationItem => IAsyncActionWithProgress[TransferProgress]
+  ): AtomPubClient = {
+    val __obj = js.Dynamic.literal(bypassCacheOnRetrieve = bypassCacheOnRetrieve.asInstanceOf[js.Any], cancelAsyncOperations = js.Any.fromFunction0(cancelAsyncOperations), createMediaResourceAsync = js.Any.fromFunction4(createMediaResourceAsync), createResourceAsync = js.Any.fromFunction3(createResourceAsync), deleteResourceAsync = js.Any.fromFunction1(deleteResourceAsync), deleteResourceItemAsync = js.Any.fromFunction1(deleteResourceItemAsync), maxResponseBufferSize = maxResponseBufferSize.asInstanceOf[js.Any], proxyCredential = proxyCredential.asInstanceOf[js.Any], retrieveFeedAsync = js.Any.fromFunction1(retrieveFeedAsync), retrieveMediaResourceAsync = js.Any.fromFunction1(retrieveMediaResourceAsync), retrieveResourceAsync = js.Any.fromFunction1(retrieveResourceAsync), retrieveServiceDocumentAsync = js.Any.fromFunction1(retrieveServiceDocumentAsync), serverCredential = serverCredential.asInstanceOf[js.Any], setRequestHeader = js.Any.fromFunction2(setRequestHeader), timeout = timeout.asInstanceOf[js.Any], updateMediaResourceAsync = js.Any.fromFunction3(updateMediaResourceAsync), updateResourceAsync = js.Any.fromFunction2(updateResourceAsync), updateResourceItemAsync = js.Any.fromFunction1(updateResourceItemAsync))
+    __obj.asInstanceOf[AtomPubClient]
+  }
 }
 

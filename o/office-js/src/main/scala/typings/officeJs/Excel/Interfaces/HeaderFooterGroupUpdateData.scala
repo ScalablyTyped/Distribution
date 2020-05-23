@@ -41,7 +41,7 @@ trait HeaderFooterGroupUpdateData extends js.Object {
   var oddPages: js.UndefOr[HeaderFooterUpdateData] = js.undefined
   /**
     *
-    * Gets or sets the state of which headers/footers are set. See Excel.HeaderFooterState for details.
+    * The state by which headers/footers are set. See Excel.HeaderFooterState for details.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -79,8 +79,8 @@ object HeaderFooterGroupUpdateData {
     if (firstPage != null) __obj.updateDynamic("firstPage")(firstPage.asInstanceOf[js.Any])
     if (oddPages != null) __obj.updateDynamic("oddPages")(oddPages.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSheetMargins)) __obj.updateDynamic("useSheetMargins")(useSheetMargins.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSheetScale)) __obj.updateDynamic("useSheetScale")(useSheetScale.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSheetMargins)) __obj.updateDynamic("useSheetMargins")(useSheetMargins.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSheetScale)) __obj.updateDynamic("useSheetScale")(useSheetScale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderFooterGroupUpdateData]
   }
 }

@@ -1,7 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,10 +51,4 @@ trait FormData extends _BodyInit {
     */
   def values(): IterableIterator[FormDataEntryValue] = js.native
 }
-
-@JSGlobal("FormData")
-@js.native
-object FormData
-  extends Instantiable0[FormData]
-     with Instantiable1[/* form */ HTMLFormElement, FormData]
 

@@ -1,8 +1,7 @@
 package typings.rcPicker
 
 import typings.rcPicker.interfaceMod.PanelSharedProps
-import typings.rcPicker.rcPickerNumbers.`10`
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object decadePanelMod extends js.Object {
   val DECADE_DISTANCE_COUNT: Double = js.native
-  val DECADE_UNIT_DIFF: `10` = js.native
+  val DECADE_UNIT_DIFF: /* 10 */ Double = js.native
   def default[DateType](props: DecadePanelProps[DateType]): Element = js.native
   type DecadePanelProps[DateType] = PanelSharedProps[DateType]
 }

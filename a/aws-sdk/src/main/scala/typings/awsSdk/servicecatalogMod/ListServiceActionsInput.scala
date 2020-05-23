@@ -22,10 +22,14 @@ trait ListServiceActionsInput extends js.Object {
 
 object ListServiceActionsInput {
   @scala.inline
-  def apply(AcceptLanguage: AcceptLanguage = null, PageSize: Int | Double = null, PageToken: PageToken = null): ListServiceActionsInput = {
+  def apply(
+    AcceptLanguage: AcceptLanguage = null,
+    PageSize: js.UndefOr[PageSize] = js.undefined,
+    PageToken: PageToken = null
+  ): ListServiceActionsInput = {
     val __obj = js.Dynamic.literal()
     if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage.asInstanceOf[js.Any])
-    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize.get.asInstanceOf[js.Any])
     if (PageToken != null) __obj.updateDynamic("PageToken")(PageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListServiceActionsInput]
   }

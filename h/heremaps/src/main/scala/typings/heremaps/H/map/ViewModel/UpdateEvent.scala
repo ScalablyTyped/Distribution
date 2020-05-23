@@ -13,13 +13,21 @@ import scala.scalajs.js.annotation._
   * @property type {string} - Name of the dispatched event
   * @property defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
   */
-@JSGlobal("H.map.ViewModel.UpdateEvent")
-@js.native
-class UpdateEvent protected () extends Event {
-  /**
-    * Constructor
-    * @param requested {any}
-    */
-  def this(requested: js.Any) = this()
+trait UpdateEvent extends Event
+
+object UpdateEvent {
+  @scala.inline
+  def apply(
+    currentTarget: js.Any,
+    defaultPrevented: Boolean,
+    preventDefault: () => Unit,
+    stopPropagation: () => Unit,
+    target: js.Any,
+    `type`: String
+  ): UpdateEvent = {
+    val __obj = js.Dynamic.literal(currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UpdateEvent]
+  }
 }
 

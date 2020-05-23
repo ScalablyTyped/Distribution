@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.ConditionalFormatRuleData
 import typings.officeJsPreview.Excel.Interfaces.ConditionalFormatRuleLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.ConditionalFormatRuleUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +16,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.6]
   */
-@JSGlobal("Excel.ConditionalFormatRule")
 @js.native
-class ConditionalFormatRule () extends ClientObject {
+trait ConditionalFormatRule extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_ConditionalFormatRule: RequestContext = js.native
@@ -50,7 +49,7 @@ class ConditionalFormatRule () extends ClientObject {
     */
   def load(): ConditionalFormatRule = js.native
   def load(options: ConditionalFormatRuleLoadOptions): ConditionalFormatRule = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ConditionalFormatRule = js.native
+  def load(propertyNamesAndPaths: Expand): ConditionalFormatRule = js.native
   def load(propertyNames: String): ConditionalFormatRule = js.native
   def load(propertyNames: js.Array[String]): ConditionalFormatRule = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

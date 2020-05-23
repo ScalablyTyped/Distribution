@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Entity metadata security privileges.
-		 */
+  * Entity metadata security privileges.
+  */
 trait SecurityPrivilegeMetadata extends js.Object {
   var CanBeBasic: Boolean
   var CanBeDeep: Boolean

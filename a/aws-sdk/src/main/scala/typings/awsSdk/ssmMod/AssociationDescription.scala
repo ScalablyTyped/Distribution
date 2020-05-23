@@ -63,7 +63,7 @@ trait AssociationDescription extends js.Object {
     */
   var Name: js.UndefOr[DocumentARN] = js.native
   /**
-    * An Amazon S3 bucket where you want to store the output details of the request.
+    * An S3 bucket where you want to store the output details of the request.
     */
   var OutputLocation: js.UndefOr[InstanceAssociationOutputLocation] = js.native
   /**
@@ -82,6 +82,10 @@ trait AssociationDescription extends js.Object {
     * The association status.
     */
   var Status: js.UndefOr[AssociationStatus] = js.native
+  /**
+    * The mode for generating association compliance. You can specify AUTO or MANUAL. In AUTO mode, the system uses the status of the association execution to determine the compliance status. If the association execution runs successfully, then the association is COMPLIANT. If the association execution doesn't run successfully, the association is NON-COMPLIANT. In MANUAL mode, you must specify the AssociationId as a parameter for the PutComplianceItems API action. In this case, compliance data is not managed by State Manager. It is managed by your direct call to the PutComplianceItems API action. By default, all associations use AUTO mode.
+    */
+  var SyncCompliance: js.UndefOr[AssociationSyncCompliance] = js.native
   /**
     * The instances targeted by the request. 
     */
@@ -110,6 +114,7 @@ object AssociationDescription {
     Parameters: Parameters = null,
     ScheduleExpression: ScheduleExpression = null,
     Status: AssociationStatus = null,
+    SyncCompliance: AssociationSyncCompliance = null,
     Targets: Targets = null
   ): AssociationDescription = {
     val __obj = js.Dynamic.literal()
@@ -132,6 +137,7 @@ object AssociationDescription {
     if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
     if (ScheduleExpression != null) __obj.updateDynamic("ScheduleExpression")(ScheduleExpression.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
+    if (SyncCompliance != null) __obj.updateDynamic("SyncCompliance")(SyncCompliance.asInstanceOf[js.Any])
     if (Targets != null) __obj.updateDynamic("Targets")(Targets.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociationDescription]
   }

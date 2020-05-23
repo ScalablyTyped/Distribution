@@ -1,6 +1,6 @@
 package typings.algoliaClientSearch.mod
 
-import typings.algoliaClientSearch.ReadonlyPromiseAssignUserCatch
+import typings.algoliaClientSearch.anon.ReadonlyPromiseAssignUserCatch
 import typings.algoliaTransporter.mod.RequestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

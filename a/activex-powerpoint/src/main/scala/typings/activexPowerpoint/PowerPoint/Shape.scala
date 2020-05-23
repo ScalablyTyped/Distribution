@@ -17,9 +17,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.Shape")
 @js.native
-class Shape protected () extends js.Object {
+trait Shape extends js.Object {
   val ActionSettings: typings.activexPowerpoint.PowerPoint.ActionSettings = js.native
   val Adjustments: typings.activexPowerpoint.PowerPoint.Adjustments = js.native
   var AlternativeText: String = js.native

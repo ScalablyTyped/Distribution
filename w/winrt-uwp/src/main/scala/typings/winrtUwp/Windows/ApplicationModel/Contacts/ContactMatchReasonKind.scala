@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,26 +34,6 @@ object ContactMatchReasonKind extends js.Object {
   /** The contact phonetic name field matched. */
   @js.native
   sealed trait yomiName extends ContactMatchReasonKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ContactMatchReasonKind with Double] = js.native
-  /* 1 */ @js.native
-  object emailAddress extends TopLevel[emailAddress with Double]
-  
-  /* 3 */ @js.native
-  object jobInfo extends TopLevel[jobInfo with Double]
-  
-  /* 0 */ @js.native
-  object name extends TopLevel[name with Double]
-  
-  /* 5 */ @js.native
-  object other extends TopLevel[other with Double]
-  
-  /* 2 */ @js.native
-  object phoneNumber extends TopLevel[phoneNumber with Double]
-  
-  /* 4 */ @js.native
-  object yomiName extends TopLevel[yomiName with Double]
   
 }
 

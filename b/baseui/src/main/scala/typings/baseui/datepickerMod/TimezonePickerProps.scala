@@ -1,7 +1,7 @@
 package typings.baseui.datepickerMod
 
-import typings.baseui.AnonId
-import typings.baseui.AnonSelect
+import typings.baseui.anon.Id
+import typings.baseui.anon.Select
 import typings.baseui.selectMod.Option
 import typings.react.mod.ReactNode
 import typings.std.Date
@@ -14,8 +14,8 @@ trait TimezonePickerProps extends js.Object {
   var disabled: js.UndefOr[Boolean] = js.undefined
   var error: js.UndefOr[Boolean] = js.undefined
   var mapLabels: js.UndefOr[js.Function1[/* args */ Option, ReactNode]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* value */ AnonId, _]] = js.undefined
-  var overrides: js.UndefOr[AnonSelect] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* value */ Id, _]] = js.undefined
+  var overrides: js.UndefOr[Select] = js.undefined
   var positive: js.UndefOr[Boolean] = js.undefined
   var value: js.UndefOr[String] = js.undefined
 }
@@ -27,19 +27,19 @@ object TimezonePickerProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     error: js.UndefOr[Boolean] = js.undefined,
     mapLabels: /* args */ Option => ReactNode = null,
-    onChange: /* value */ AnonId => _ = null,
-    overrides: AnonSelect = null,
+    onChange: /* value */ Id => _ = null,
+    overrides: Select = null,
     positive: js.UndefOr[Boolean] = js.undefined,
     value: String = null
   ): TimezonePickerProps = {
     val __obj = js.Dynamic.literal()
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.get.asInstanceOf[js.Any])
     if (mapLabels != null) __obj.updateDynamic("mapLabels")(js.Any.fromFunction1(mapLabels))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (!js.isUndefined(positive)) __obj.updateDynamic("positive")(positive.asInstanceOf[js.Any])
+    if (!js.isUndefined(positive)) __obj.updateDynamic("positive")(positive.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimezonePickerProps]
   }

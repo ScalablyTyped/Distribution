@@ -1,6 +1,7 @@
 package typings.vsoNodeApi
 
 import org.scalablytyped.runtime.TopLevel
+import typings.vsoNodeApi.anon.EnumValuesMonday
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -82,7 +83,7 @@ object systemMod extends js.Object {
   
   @js.native
   object TypeInfo extends js.Object {
-    var DayOfWeek: AnonEnumValuesAnonMonday = js.native
+    var DayOfWeek: EnumValuesMonday = js.native
   }
   
 }

@@ -6,10 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Layer
-@JSGlobal("naver.maps.Layer")
 @js.native
-class Layer protected () extends KVO {
-  def this(name: String, MapTypeRegistry: MapTypeRegistry, options: LayerOptions) = this()
+trait Layer extends KVO {
   def getLayerType(): MapType = js.native
   def getLayerTypeId(): String = js.native
   def getMap(): Map | Null = js.native

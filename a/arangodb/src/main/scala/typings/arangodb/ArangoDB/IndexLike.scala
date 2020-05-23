@@ -13,7 +13,7 @@ trait IndexLike
 
 object IndexLike {
   @scala.inline
-  def apply(id: String, StringDictionary: /* key */ StringDictionary[js.Any] = null): IndexLike = {
+  def apply(id: String, StringDictionary: /* name */ StringDictionary[js.Any] = null): IndexLike = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[IndexLike]

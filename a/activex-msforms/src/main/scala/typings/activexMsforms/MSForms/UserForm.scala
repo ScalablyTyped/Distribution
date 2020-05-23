@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSForms.UserForm")
 @js.native
-class UserForm protected () extends js.Object {
+trait UserForm extends js.Object {
   val ActiveControl: Control = js.native
   var BackColor: Double = js.native
   var BorderColor: Double = js.native

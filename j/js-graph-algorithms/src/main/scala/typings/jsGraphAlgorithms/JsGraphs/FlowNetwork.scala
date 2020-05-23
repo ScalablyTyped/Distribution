@@ -4,16 +4,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("JsGraphs.FlowNetwork")
-@js.native
-class FlowNetwork protected () extends js.Object {
-  def this(V: Double) = this()
-  var V: Double = js.native
-  var adjList: js.Any = js.native
-  var nodeInfo: js.Any = js.native
-  def addEdge(e: FlowEdge): Unit = js.native
-  def adj(v: Double): js.Array[FlowEdge] = js.native
-  def edge(v: Double, w: Double): FlowEdge | Null = js.native
-  def node(v: Double): Node = js.native
+trait FlowNetwork extends js.Object {
+  var V: Double
+  var adjList: js.Any
+  var nodeInfo: js.Any
+  def addEdge(e: FlowEdge): Unit
+  def adj(v: Double): js.Array[FlowEdge]
+  def edge(v: Double, w: Double): FlowEdge | Null
+  def node(v: Double): Node
+}
+
+object FlowNetwork {
+  @scala.inline
+  def apply(
+    V: Double,
+    addEdge: FlowEdge => Unit,
+    adj: Double => js.Array[FlowEdge],
+    adjList: js.Any,
+    edge: (Double, Double) => FlowEdge | Null,
+    node: Double => Node,
+    nodeInfo: js.Any
+  ): FlowNetwork = {
+    val __obj = js.Dynamic.literal(V = V.asInstanceOf[js.Any], addEdge = js.Any.fromFunction1(addEdge), adj = js.Any.fromFunction1(adj), adjList = adjList.asInstanceOf[js.Any], edge = js.Any.fromFunction2(edge), node = js.Any.fromFunction1(node), nodeInfo = nodeInfo.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FlowNetwork]
+  }
 }
 

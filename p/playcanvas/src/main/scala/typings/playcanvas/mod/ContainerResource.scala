@@ -5,10 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @class
-  * @name pc.ContainerResource
-  * @classdesc Container for a list of animations, textures, materials and a model.
-  * @param {object} data - The loaded GLB data.
+  * Container for a list of animations, textures, materials and a model.
+  * @param data - The loaded GLB data.
   */
 @JSImport("playcanvas", "ContainerResource")
 @js.native

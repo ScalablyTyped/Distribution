@@ -23,8 +23,7 @@ object SortState {
     multiplePriority: Double | `false`,
     sortOrder: SortOrder = null
   ): SortState[RecordType] = {
-    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], multiplePriority = multiplePriority.asInstanceOf[js.Any])
-    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], multiplePriority = multiplePriority.asInstanceOf[js.Any], sortOrder = sortOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortState[RecordType]]
   }
 }

@@ -14,36 +14,36 @@ trait IText
   /** [Config Option] (Boolean) */
   var autoCorrect: js.UndefOr[Boolean] = js.undefined
   /** [Method] Attempts to forcefully blur input focus for the field
-  		* @returns Ext.field.Text This field
-  		*/
+    * @returns Ext.field.Text This field
+    */
   var blur: js.UndefOr[js.Function0[this.type]] = js.undefined
   /** [Method] Attempts to set the field as the active input focus
-  		* @returns Ext.field.Text This field
-  		*/
+    * @returns Ext.field.Text This field
+    */
   var focus: js.UndefOr[js.Function0[this.type]] = js.undefined
   /** [Method] Returns the value of autoCapitalize
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getAutoCapitalize: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of autoComplete
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getAutoComplete: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of autoCorrect
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getAutoCorrect: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of maxLength
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMaxLength: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of placeHolder
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getPlaceHolder: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of readOnly
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getReadOnly: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Config Option] (Number) */
   var maxLength: js.UndefOr[Double] = js.undefined
@@ -52,42 +52,42 @@ trait IText
   /** [Config Option] (Boolean) */
   var readOnly: js.UndefOr[Boolean] = js.undefined
   /** [Method] Resets the current field value back to the original value on this field when it was created
-  		* @returns Ext.field.Field this
-  		*/
+    * @returns Ext.field.Field this
+    */
   @JSName("reset")
   var reset_IText: js.UndefOr[js.Function0[typings.senchaTouch.Ext.field.IField]] = js.undefined
   /** [Method] Attempts to forcefully select all the contents of the input field
-  		* @returns Ext.field.Text this
-  		*/
+    * @returns Ext.field.Text this
+    */
   var select: js.UndefOr[js.Function0[this.type]] = js.undefined
   /** [Method] Sets the value of autoCapitalize
-  		* @param autoCapitalize Boolean The new value.
-  		*/
+    * @param autoCapitalize Boolean The new value.
+    */
   var setAutoCapitalize: js.UndefOr[js.Function1[/* autoCapitalize */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of autoComplete
-  		* @param autoComplete Boolean The new value.
-  		*/
+    * @param autoComplete Boolean The new value.
+    */
   var setAutoComplete: js.UndefOr[js.Function1[/* autoComplete */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of autoCorrect
-  		* @param autoCorrect Boolean The new value.
-  		*/
+    * @param autoCorrect Boolean The new value.
+    */
   var setAutoCorrect: js.UndefOr[js.Function1[/* autoCorrect */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of bubbleEvents
-  		* @param bubbleEvents Array The new value.
-  		*/
+    * @param bubbleEvents Array The new value.
+    */
   @JSName("setBubbleEvents")
   var setBubbleEvents_IText: js.UndefOr[js.Function1[/* bubbleEvents */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Sets the value of maxLength
-  		* @param maxLength Number The new value.
-  		*/
+    * @param maxLength Number The new value.
+    */
   var setMaxLength: js.UndefOr[js.Function1[/* maxLength */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of placeHolder
-  		* @param placeHolder String The new value.
-  		*/
+    * @param placeHolder String The new value.
+    */
   var setPlaceHolder: js.UndefOr[js.Function1[/* placeHolder */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of readOnly
-  		* @param readOnly Boolean The new value.
-  		*/
+    * @param readOnly Boolean The new value.
+    */
   var setReadOnly: js.UndefOr[js.Function1[/* readOnly */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Property] (String/Number) */
   var startValue: js.UndefOr[js.Any] = js.undefined
@@ -108,7 +108,7 @@ object IText {
     getMaxLength: () => Double = null,
     getPlaceHolder: () => String = null,
     getReadOnly: () => Boolean = null,
-    maxLength: Int | Double = null,
+    maxLength: js.UndefOr[Double] = js.undefined,
     placeHolder: String = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     reset: () => typings.senchaTouch.Ext.field.IField = null,
@@ -124,9 +124,9 @@ object IText {
   ): IText = {
     val __obj = js.Dynamic.literal()
     if (IField != null) js.Dynamic.global.Object.assign(__obj, IField)
-    if (!js.isUndefined(autoCapitalize)) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoComplete)) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoCorrect)) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCapitalize)) __obj.updateDynamic("autoCapitalize")(autoCapitalize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoComplete)) __obj.updateDynamic("autoComplete")(autoComplete.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCorrect)) __obj.updateDynamic("autoCorrect")(autoCorrect.get.asInstanceOf[js.Any])
     if (blur != null) __obj.updateDynamic("blur")(js.Any.fromFunction0(blur))
     if (focus != null) __obj.updateDynamic("focus")(js.Any.fromFunction0(focus))
     if (getAutoCapitalize != null) __obj.updateDynamic("getAutoCapitalize")(js.Any.fromFunction0(getAutoCapitalize))
@@ -135,9 +135,9 @@ object IText {
     if (getMaxLength != null) __obj.updateDynamic("getMaxLength")(js.Any.fromFunction0(getMaxLength))
     if (getPlaceHolder != null) __obj.updateDynamic("getPlaceHolder")(js.Any.fromFunction0(getPlaceHolder))
     if (getReadOnly != null) __obj.updateDynamic("getReadOnly")(js.Any.fromFunction0(getReadOnly))
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
     if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction0(reset))
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction0(select))
     if (setAutoCapitalize != null) __obj.updateDynamic("setAutoCapitalize")(js.Any.fromFunction1(setAutoCapitalize))

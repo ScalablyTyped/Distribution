@@ -25,6 +25,7 @@ package object costexplorerMod {
     - java.lang.String
   */
   type Context = typings.awsSdk.costexplorerMod._Context | java.lang.String
+  type CostCategoryMaxResults = scala.Double
   type CostCategoryName = java.lang.String
   type CostCategoryReferencesList = js.Array[typings.awsSdk.costexplorerMod.CostCategoryReference]
   type CostCategoryRuleVersion = typings.awsSdk.awsSdkStrings.CostCategoryExpressionDotv1 | java.lang.String
@@ -37,10 +38,12 @@ package object costexplorerMod {
     - typings.awsSdk.awsSdkStrings.AZ
     - typings.awsSdk.awsSdkStrings.INSTANCE_TYPE
     - typings.awsSdk.awsSdkStrings.LINKED_ACCOUNT
+    - typings.awsSdk.awsSdkStrings.LINKED_ACCOUNT_NAME
     - typings.awsSdk.awsSdkStrings.OPERATION
     - typings.awsSdk.awsSdkStrings.PURCHASE_TYPE
     - typings.awsSdk.awsSdkStrings.REGION
     - typings.awsSdk.awsSdkStrings.SERVICE
+    - typings.awsSdk.awsSdkStrings.SERVICE_CODE
     - typings.awsSdk.awsSdkStrings.USAGE_TYPE
     - typings.awsSdk.awsSdkStrings.USAGE_TYPE_GROUP
     - typings.awsSdk.awsSdkStrings.RECORD_TYPE
@@ -97,6 +100,17 @@ package object costexplorerMod {
     - java.lang.String
   */
   type LookbackPeriodInDays = typings.awsSdk.costexplorerMod._LookbackPeriodInDays | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.EQUALS
+    - typings.awsSdk.awsSdkStrings.STARTS_WITH
+    - typings.awsSdk.awsSdkStrings.ENDS_WITH
+    - typings.awsSdk.awsSdkStrings.CONTAINS
+    - typings.awsSdk.awsSdkStrings.CASE_SENSITIVE
+    - typings.awsSdk.awsSdkStrings.CASE_INSENSITIVE
+    - java.lang.String
+  */
+  type MatchOption = typings.awsSdk.costexplorerMod._MatchOption | java.lang.String
+  type MatchOptions = js.Array[typings.awsSdk.costexplorerMod.MatchOption]
   type MaxResults = scala.Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.BLENDED_COST
@@ -141,6 +155,12 @@ package object costexplorerMod {
   type PredictionIntervalLevel = scala.Double
   type PurchasedHours = java.lang.String
   type PurchasedUnits = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.SAME_INSTANCE_FAMILY
+    - typings.awsSdk.awsSdkStrings.CROSS_INSTANCE_FAMILY
+    - java.lang.String
+  */
+  type RecommendationTarget = typings.awsSdk.costexplorerMod._RecommendationTarget | java.lang.String
   type ReservationCoverageGroups = js.Array[typings.awsSdk.costexplorerMod.ReservationCoverageGroup]
   type ReservationGroupKey = java.lang.String
   type ReservationGroupValue = java.lang.String

@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.dbllist")
 @js.native
-class dbllist () extends baseview {
+trait dbllist extends baseview {
   @JSName("$onLoad")
   var $onLoad_Original: WebixCallback = js.native
   @JSName("$$")

@@ -2,12 +2,13 @@ package typings.sccBrokerClient.clusterBrokerClientMod
 
 import typings.asyncStreamEmitter.mod.AsyncStreamEmitter
 import typings.jsonwebtoken.mod.Secret
-import typings.sccBrokerClient.AnonError
-import typings.sccBrokerClient.AnonNoMatchingPublishTargetError
+import typings.sccBrokerClient.anon.Error
+import typings.sccBrokerClient.anon.NoMatchingPublishTargetError
 import typings.sccBrokerClient.clientPoolMod.PublishData
 import typings.sccBrokerClient.clientPoolMod.PublishFailData
 import typings.sccBrokerClient.clientPoolMod.SubscribeData
 import typings.sccBrokerClient.clientPoolMod.SubscribeFailData
+import typings.sccBrokerClient.mod.Broker
 import typings.sccBrokerClient.mod.MappingEngine
 import typings.sccBrokerClient.sccBrokerClientStrings.error
 import typings.sccBrokerClient.sccBrokerClientStrings.message
@@ -27,16 +28,16 @@ import scala.scalajs.js.annotation._
 trait ClusterBrokerClient
   extends AsyncStreamEmitter[js.Any] {
   var authKey: js.UndefOr[Secret] = js.native
-  var broker: typings.scBroker.scbrokerMod.^ = js.native
+  var broker: Broker = js.native
   var clientPoolSize: Double = js.native
-  var errors: AnonNoMatchingPublishTargetError = js.native
+  var errors: NoMatchingPublishTargetError = js.native
   var isReady: Boolean = js.native
   var mapper: MappingEngine = js.native
   var mappingEngine: skeletonRendezvous | simple | MappingEngine = js.native
   var sccBrokerClientPools: js.Array[typings.sccBrokerClient.clientPoolMod.^] = js.native
   var sccBrokerURIList: js.Array[String] = js.native
   @JSName("emit")
-  def emit_error(eventName: error, data: AnonError): Unit = js.native
+  def emit_error(eventName: error, data: Error): Unit = js.native
   @JSName("emit")
   def emit_message(eventName: message, data: MessageData): Unit = js.native
   @JSName("emit")
@@ -54,7 +55,7 @@ trait ClusterBrokerClient
   def getAllSubscriptions(): js.Array[String] = js.native
   def invokePublish(channelName: String, data: js.Any): Unit = js.native
   @JSName("listener")
-  def listener_error(eventName: error): typings.consumableStream.mod.^[AnonError] = js.native
+  def listener_error(eventName: error): typings.consumableStream.mod.^[Error] = js.native
   @JSName("listener")
   def listener_message(eventName: message): typings.consumableStream.mod.^[MessageData] = js.native
   @JSName("listener")

@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.babylonjs.anon.SnapDistance
 import typings.babylonjs.gizmoMod.Gizmo
 import typings.babylonjs.mathColorMod.Color3
 import typings.babylonjs.mathVectorMod.Vector3
@@ -49,7 +50,7 @@ object axisDragGizmoMod extends js.Object {
       * Event that fires each time the gizmo snaps to a new location.
       * * snapDistance is the the change in distance
       */
-    var onSnapObservable: Observable[AnonSnapDistance] = js.native
+    var onSnapObservable: Observable[SnapDistance] = js.native
     /**
       * Drag distance in babylon units that the gizmo will snap to when dragged (Default: 0)
       */

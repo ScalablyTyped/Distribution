@@ -13,9 +13,8 @@ trait RowValidationResult extends js.Object {
 object RowValidationResult {
   @scala.inline
   def apply(isValid: Boolean, reason: String = null, row: Row = null): RowValidationResult = {
-    val __obj = js.Dynamic.literal(isValid = isValid.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(isValid = isValid.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
     if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
-    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowValidationResult]
   }
 }

@@ -39,13 +39,13 @@ object VRExperienceHelperOptions {
     createDeviceOrientationCamera: js.UndefOr[Boolean] = js.undefined,
     createFallbackVRDeviceOrientationFreeCamera: js.UndefOr[Boolean] = js.undefined,
     customVRButton: HTMLButtonElement = null,
-    defaultHeight: Int | Double = null,
+    defaultHeight: js.UndefOr[Double] = js.undefined,
     defaultLightingOnControllers: js.UndefOr[Boolean] = js.undefined,
     displayName: String = null,
     floorMeshes: js.Array[Mesh] = null,
     laserToggle: js.UndefOr[Boolean] = js.undefined,
-    positionScale: Int | Double = null,
-    rayLength: Int | Double = null,
+    positionScale: js.UndefOr[Double] = js.undefined,
+    rayLength: js.UndefOr[Double] = js.undefined,
     trackPosition: js.UndefOr[Boolean] = js.undefined,
     useCustomVRButton: js.UndefOr[Boolean] = js.undefined,
     useMultiview: js.UndefOr[Boolean] = js.undefined,
@@ -53,21 +53,21 @@ object VRExperienceHelperOptions {
     vrDeviceOrientationCameraMetrics: VRCameraMetrics = null
   ): VRExperienceHelperOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(controllerMeshes)) __obj.updateDynamic("controllerMeshes")(controllerMeshes.asInstanceOf[js.Any])
-    if (!js.isUndefined(createDeviceOrientationCamera)) __obj.updateDynamic("createDeviceOrientationCamera")(createDeviceOrientationCamera.asInstanceOf[js.Any])
-    if (!js.isUndefined(createFallbackVRDeviceOrientationFreeCamera)) __obj.updateDynamic("createFallbackVRDeviceOrientationFreeCamera")(createFallbackVRDeviceOrientationFreeCamera.asInstanceOf[js.Any])
+    if (!js.isUndefined(controllerMeshes)) __obj.updateDynamic("controllerMeshes")(controllerMeshes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(createDeviceOrientationCamera)) __obj.updateDynamic("createDeviceOrientationCamera")(createDeviceOrientationCamera.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(createFallbackVRDeviceOrientationFreeCamera)) __obj.updateDynamic("createFallbackVRDeviceOrientationFreeCamera")(createFallbackVRDeviceOrientationFreeCamera.get.asInstanceOf[js.Any])
     if (customVRButton != null) __obj.updateDynamic("customVRButton")(customVRButton.asInstanceOf[js.Any])
-    if (defaultHeight != null) __obj.updateDynamic("defaultHeight")(defaultHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultLightingOnControllers)) __obj.updateDynamic("defaultLightingOnControllers")(defaultLightingOnControllers.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultHeight)) __obj.updateDynamic("defaultHeight")(defaultHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultLightingOnControllers)) __obj.updateDynamic("defaultLightingOnControllers")(defaultLightingOnControllers.get.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (floorMeshes != null) __obj.updateDynamic("floorMeshes")(floorMeshes.asInstanceOf[js.Any])
-    if (!js.isUndefined(laserToggle)) __obj.updateDynamic("laserToggle")(laserToggle.asInstanceOf[js.Any])
-    if (positionScale != null) __obj.updateDynamic("positionScale")(positionScale.asInstanceOf[js.Any])
-    if (rayLength != null) __obj.updateDynamic("rayLength")(rayLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackPosition)) __obj.updateDynamic("trackPosition")(trackPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCustomVRButton)) __obj.updateDynamic("useCustomVRButton")(useCustomVRButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMultiview)) __obj.updateDynamic("useMultiview")(useMultiview.asInstanceOf[js.Any])
-    if (!js.isUndefined(useXR)) __obj.updateDynamic("useXR")(useXR.asInstanceOf[js.Any])
+    if (!js.isUndefined(laserToggle)) __obj.updateDynamic("laserToggle")(laserToggle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(positionScale)) __obj.updateDynamic("positionScale")(positionScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rayLength)) __obj.updateDynamic("rayLength")(rayLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackPosition)) __obj.updateDynamic("trackPosition")(trackPosition.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCustomVRButton)) __obj.updateDynamic("useCustomVRButton")(useCustomVRButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useMultiview)) __obj.updateDynamic("useMultiview")(useMultiview.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useXR)) __obj.updateDynamic("useXR")(useXR.get.asInstanceOf[js.Any])
     if (vrDeviceOrientationCameraMetrics != null) __obj.updateDynamic("vrDeviceOrientationCameraMetrics")(vrDeviceOrientationCameraMetrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[VRExperienceHelperOptions]
   }

@@ -3,6 +3,7 @@ package typings.plottable
 import typings.d3Collection.mod.Map_
 import typings.d3Selection.mod.Selection_
 import typings.plottable.animatorMod.IAnimator
+import typings.plottable.anon.HeightWidth
 import typings.plottable.commonsMod.IAccessorScaleBinding
 import typings.plottable.commonsMod.ILightweightPlotEntity
 import typings.plottable.commonsMod.IPlotEntity
@@ -147,8 +148,8 @@ object plotMod extends js.Object {
       * single drawer (e.g. adding text drawing capabilities).
       */
     /* protected */ def _createNodesForDataset(dataset: Dataset): typings.plottable.drawersMod.ProxyDrawer = js.native
-    /* protected */ def _entityBounds(entity: ILightweightPlotEntity): AnonHeightWidth = js.native
-    /* protected */ def _entityBounds(entity: IPlotEntity): AnonHeightWidth = js.native
+    /* protected */ def _entityBounds(entity: ILightweightPlotEntity): HeightWidth = js.native
+    /* protected */ def _entityBounds(entity: IPlotEntity): HeightWidth = js.native
     /* protected */ def _filterForProperty(property: String): IAccessor[Boolean] = js.native
     /* protected */ def _generateAttrToProjector(): AttributeToProjector = js.native
     /* protected */ def _generateDrawSteps(): js.Array[DrawStep] = js.native
@@ -366,7 +367,7 @@ object plotMod extends js.Object {
     def selections(datasets: js.Array[Dataset]): SimpleSelection[_] = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
+  /* keyof plottable.anon.Canvas */ /* Rewritten from type alias, can be one of: 
     - typings.plottable.plottableStrings.svg
     - typings.plottable.plottableStrings.canvas
   */

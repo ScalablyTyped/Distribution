@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Entity metadata security values
-		 */
+  * Entity metadata security values
+  */
 trait SecurityValues extends js.Object {
   var editable: Boolean
   var readable: Boolean

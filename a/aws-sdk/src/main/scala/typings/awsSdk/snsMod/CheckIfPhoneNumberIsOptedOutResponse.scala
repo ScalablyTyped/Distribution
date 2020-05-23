@@ -16,7 +16,7 @@ object CheckIfPhoneNumberIsOptedOutResponse {
   @scala.inline
   def apply(isOptedOut: js.UndefOr[Boolean] = js.undefined): CheckIfPhoneNumberIsOptedOutResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isOptedOut)) __obj.updateDynamic("isOptedOut")(isOptedOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOptedOut)) __obj.updateDynamic("isOptedOut")(isOptedOut.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckIfPhoneNumberIsOptedOutResponse]
   }
 }

@@ -3,13 +3,14 @@ package typings.blueprintjsTable
 import org.scalablytyped.runtime.TopLevel
 import typings.blueprintjsCore.mod.AbstractComponent2
 import typings.blueprintjsCore.propsMod.IProps
+import typings.blueprintjsTable.anon.PartialITableQuadrantProp
 import typings.blueprintjsTable.gridMod.Grid
 import typings.react.mod.CSSProperties
 import typings.react.mod.EventHandler
 import typings.react.mod.NativeUIEvent
 import typings.react.mod.UIEvent
 import typings.react.mod.WheelEvent
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import scala.scalajs.js

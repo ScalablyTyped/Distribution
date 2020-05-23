@@ -34,7 +34,7 @@ trait Metadata
 object Metadata {
   @scala.inline
   def apply(
-    StringDictionary: /* prop */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     bucket: String = null,
     cacheControl: String = null,
     contentDisposition: String = null,
@@ -49,7 +49,7 @@ object Metadata {
     metageneration: String = null,
     name: String = null,
     ref: Reference = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     timeCreated: String = null,
     `type`: String = null,
     updated: String = null
@@ -70,7 +70,7 @@ object Metadata {
     if (metageneration != null) __obj.updateDynamic("metageneration")(metageneration.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (timeCreated != null) __obj.updateDynamic("timeCreated")(timeCreated.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])

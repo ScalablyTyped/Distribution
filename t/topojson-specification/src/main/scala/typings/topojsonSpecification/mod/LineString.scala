@@ -15,7 +15,7 @@ trait LineString[P /* <: Properties */]
 
 object LineString {
   @scala.inline
-  def apply[P /* <: Properties */](
+  def apply[P](
     arcs: ArcIndexes,
     `type`: typings.topojsonSpecification.topojsonSpecificationStrings.LineString,
     bbox: BBox = null,

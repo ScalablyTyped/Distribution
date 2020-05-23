@@ -17,12 +17,12 @@ trait CookieParseOptions extends js.Object {
     * *Note* if an error is thrown from this function, the original, non-decoded
     * cookie value will be returned as the cookie's value.
     */
-  var decode: js.UndefOr[js.Function1[/* val */ String, String]] = js.undefined
+  var decode: js.UndefOr[js.Function1[/* value */ String, String]] = js.undefined
 }
 
 object CookieParseOptions {
   @scala.inline
-  def apply(decode: /* val */ String => String = null): CookieParseOptions = {
+  def apply(decode: /* value */ String => String = null): CookieParseOptions = {
     val __obj = js.Dynamic.literal()
     if (decode != null) __obj.updateDynamic("decode")(js.Any.fromFunction1(decode))
     __obj.asInstanceOf[CookieParseOptions]

@@ -23,7 +23,7 @@ object NightwatchTests {
     beforeEach: NightwatchTestHook = null
   ): NightwatchTests = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(`@disabled`)) __obj.updateDynamic("@disabled")(`@disabled`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`@disabled`)) __obj.updateDynamic("@disabled")(`@disabled`.get.asInstanceOf[js.Any])
     if (`@tags` != null) __obj.updateDynamic("@tags")(`@tags`.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
@@ -37,23 +37,23 @@ object NightwatchTests {
     abortOnAssertionFailure: js.UndefOr[Boolean] = js.undefined,
     after: NightwatchTestHook = null,
     afterEach: NightwatchTestHook = null,
-    asyncHookTimeout: Int | Double = null,
+    asyncHookTimeout: js.UndefOr[Double] = js.undefined,
     before: NightwatchTestHook = null,
     beforeEach: NightwatchTestHook = null,
     throwOnMultipleElementsReturned: js.UndefOr[Boolean] = js.undefined,
-    waitForConditionPollInterval: Int | Double = null,
-    waitForConditionTimeout: Int | Double = null
+    waitForConditionPollInterval: js.UndefOr[Double] = js.undefined,
+    waitForConditionTimeout: js.UndefOr[Double] = js.undefined
   ): NightwatchTests = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(abortOnAssertionFailure)) __obj.updateDynamic("abortOnAssertionFailure")(abortOnAssertionFailure.asInstanceOf[js.Any])
+    if (!js.isUndefined(abortOnAssertionFailure)) __obj.updateDynamic("abortOnAssertionFailure")(abortOnAssertionFailure.get.asInstanceOf[js.Any])
     if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
     if (afterEach != null) __obj.updateDynamic("afterEach")(afterEach.asInstanceOf[js.Any])
-    if (asyncHookTimeout != null) __obj.updateDynamic("asyncHookTimeout")(asyncHookTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(asyncHookTimeout)) __obj.updateDynamic("asyncHookTimeout")(asyncHookTimeout.get.asInstanceOf[js.Any])
     if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
     if (beforeEach != null) __obj.updateDynamic("beforeEach")(beforeEach.asInstanceOf[js.Any])
-    if (!js.isUndefined(throwOnMultipleElementsReturned)) __obj.updateDynamic("throwOnMultipleElementsReturned")(throwOnMultipleElementsReturned.asInstanceOf[js.Any])
-    if (waitForConditionPollInterval != null) __obj.updateDynamic("waitForConditionPollInterval")(waitForConditionPollInterval.asInstanceOf[js.Any])
-    if (waitForConditionTimeout != null) __obj.updateDynamic("waitForConditionTimeout")(waitForConditionTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(throwOnMultipleElementsReturned)) __obj.updateDynamic("throwOnMultipleElementsReturned")(throwOnMultipleElementsReturned.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForConditionPollInterval)) __obj.updateDynamic("waitForConditionPollInterval")(waitForConditionPollInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForConditionTimeout)) __obj.updateDynamic("waitForConditionTimeout")(waitForConditionTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NightwatchTests]
   }
 }

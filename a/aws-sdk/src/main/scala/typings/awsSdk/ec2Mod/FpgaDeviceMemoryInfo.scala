@@ -14,9 +14,9 @@ trait FpgaDeviceMemoryInfo extends js.Object {
 
 object FpgaDeviceMemoryInfo {
   @scala.inline
-  def apply(SizeInMiB: Int | scala.Double = null): FpgaDeviceMemoryInfo = {
+  def apply(SizeInMiB: js.UndefOr[FpgaDeviceMemorySize] = js.undefined): FpgaDeviceMemoryInfo = {
     val __obj = js.Dynamic.literal()
-    if (SizeInMiB != null) __obj.updateDynamic("SizeInMiB")(SizeInMiB.asInstanceOf[js.Any])
+    if (!js.isUndefined(SizeInMiB)) __obj.updateDynamic("SizeInMiB")(SizeInMiB.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FpgaDeviceMemoryInfo]
   }
 }

@@ -1,6 +1,6 @@
 package typings.evernote.mod.Types
 
-import typings.evernote.AnonAvailablePoints
+import typings.evernote.anon.AvailablePoints
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("evernote", "Types.Accounting")
 @js.native
 class Accounting () extends js.Object {
-  def this(args: AnonAvailablePoints) = this()
+  def this(args: AvailablePoints) = this()
   var availablePoints: js.UndefOr[Double] = js.native
   var businessId: js.UndefOr[Double] = js.native
   var businessName: js.UndefOr[String] = js.native

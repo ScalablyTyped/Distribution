@@ -60,7 +60,7 @@ object ConfigurationPropertyDefinitionSharedAttributes {
   ): ConfigurationPropertyDefinitionSharedAttributes = {
     val __obj = js.Dynamic.literal(documentation = documentation.asInstanceOf[js.Any], inputType = inputType.asInstanceOf[js.Any])
     if (imports != null) __obj.updateDynamic("imports")(imports.asInstanceOf[js.Any])
-    if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal.asInstanceOf[js.Any])
+    if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal.get.asInstanceOf[js.Any])
     if (resolvedType != null) __obj.updateDynamic("resolvedType")(resolvedType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationPropertyDefinitionSharedAttributes]
   }

@@ -28,8 +28,8 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(showControlButton)) __obj.updateDynamic("showControlButton")(showControlButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(showZoomBar)) __obj.updateDynamic("showZoomBar")(showZoomBar.asInstanceOf[js.Any])
+    if (!js.isUndefined(showControlButton)) __obj.updateDynamic("showControlButton")(showControlButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showZoomBar)) __obj.updateDynamic("showZoomBar")(showZoomBar.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

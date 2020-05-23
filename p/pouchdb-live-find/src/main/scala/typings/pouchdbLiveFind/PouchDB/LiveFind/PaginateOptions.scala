@@ -16,14 +16,14 @@ trait PaginateOptions[Content /* <: js.Object */] extends js.Object {
 
 object PaginateOptions {
   @scala.inline
-  def apply[Content /* <: js.Object */](
-    limit: Int | Double = null,
-    skip: Int | Double = null,
+  def apply[Content](
+    limit: js.UndefOr[Double] = js.undefined,
+    skip: js.UndefOr[Double] = js.undefined,
     sort: js.Array[String | (StringDictionary[asc | desc])] = null
   ): PaginateOptions[Content] = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginateOptions[Content]]
   }

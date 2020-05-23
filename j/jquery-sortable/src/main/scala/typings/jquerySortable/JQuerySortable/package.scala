@@ -12,7 +12,7 @@ package object JQuerySortable {
     /* _super */ js.UndefOr[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jquery-sortable.JQuerySortable.GenericEventHandler */ js.Object
     ], 
-    /* event */ js.UndefOr[typings.std.Event_], 
+    /* event */ js.UndefOr[typings.std.Event], 
     scala.Unit
   ]
   type OnCancelHandler = js.Function4[
@@ -21,7 +21,7 @@ package object JQuerySortable {
     /* _super */ js.UndefOr[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jquery-sortable.JQuerySortable.OnCancelHandler */ js.Object
     ], 
-    /* event */ js.UndefOr[typings.std.Event_], 
+    /* event */ js.UndefOr[typings.std.Event], 
     scala.Unit
   ]
   type OnDragEventHandler = js.Function4[
@@ -30,7 +30,7 @@ package object JQuerySortable {
     /* _super */ js.UndefOr[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jquery-sortable.JQuerySortable.OnDragEventHandler */ js.Object
     ], 
-    /* event */ js.UndefOr[typings.std.Event_], 
+    /* event */ js.UndefOr[typings.std.Event], 
     scala.Unit
   ]
   type OnMousedownHandler = js.Function3[
@@ -38,7 +38,7 @@ package object JQuerySortable {
     /* _super */ js.UndefOr[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jquery-sortable.JQuerySortable.OnMousedownHandler */ js.Object
     ], 
-    /* event */ js.UndefOr[typings.std.Event_], 
+    /* event */ js.UndefOr[typings.std.Event], 
     scala.Unit
   ]
   // Deliberately typing $children as an any here as it makes it much easier to use. Actual type is JQuery | any[]

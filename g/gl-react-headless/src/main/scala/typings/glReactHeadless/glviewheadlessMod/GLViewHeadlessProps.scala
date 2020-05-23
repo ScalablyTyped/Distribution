@@ -27,7 +27,7 @@ object GLViewHeadlessProps {
     onContextFailure: /* e */ Error => Unit = null,
     onContextLost: () => Unit = null,
     onContextRestored: /* gl */ WebGLRenderingContext => Unit = null,
-    pixelRatio: Int | Double = null,
+    pixelRatio: js.UndefOr[Double] = js.undefined,
     webglContextAttributes: WebGLContextAttributes = null
   ): GLViewHeadlessProps = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
@@ -35,7 +35,7 @@ object GLViewHeadlessProps {
     if (onContextFailure != null) __obj.updateDynamic("onContextFailure")(js.Any.fromFunction1(onContextFailure))
     if (onContextLost != null) __obj.updateDynamic("onContextLost")(js.Any.fromFunction0(onContextLost))
     if (onContextRestored != null) __obj.updateDynamic("onContextRestored")(js.Any.fromFunction1(onContextRestored))
-    if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(pixelRatio)) __obj.updateDynamic("pixelRatio")(pixelRatio.get.asInstanceOf[js.Any])
     if (webglContextAttributes != null) __obj.updateDynamic("webglContextAttributes")(webglContextAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GLViewHeadlessProps]
   }

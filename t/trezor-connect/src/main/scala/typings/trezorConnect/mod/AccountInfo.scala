@@ -1,6 +1,5 @@
 package typings.trezorConnect.mod
 
-import typings.trezorConnect.AnonAddress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +19,7 @@ trait AccountInfo extends js.Object {
   var serializedPath: String
   var transactions: Double
   var unusedAddresses: js.Array[String]
-  var usedAddresses: js.Array[AnonAddress]
+  var usedAddresses: js.Array[typings.trezorConnect.anon.Address]
   var utxo: js.Array[Utxo]
   var xpub: String
 }
@@ -39,7 +38,7 @@ object AccountInfo {
     serializedPath: String,
     transactions: Double,
     unusedAddresses: js.Array[String],
-    usedAddresses: js.Array[AnonAddress],
+    usedAddresses: js.Array[typings.trezorConnect.anon.Address],
     utxo: js.Array[Utxo],
     xpub: String
   ): AccountInfo = {

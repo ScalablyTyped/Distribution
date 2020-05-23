@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait TextEditorVisibleRangesChangeEvent extends js.Object {
   /**
-  		 * The [text editor](#TextEditor) for which the visible ranges have changed.
-  		 */
+    * The [text editor](#TextEditor) for which the visible ranges have changed.
+    */
   val textEditor: TextEditor
   /**
-  		 * The new value for the [text editor's visible ranges](#TextEditor.visibleRanges).
-  		 */
+    * The new value for the [text editor's visible ranges](#TextEditor.visibleRanges).
+    */
   val visibleRanges: js.Array[Range]
 }
 

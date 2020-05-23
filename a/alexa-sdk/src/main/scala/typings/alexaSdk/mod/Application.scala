@@ -11,7 +11,7 @@ trait Application extends /* key */ StringDictionary[String] {
 
 object Application {
   @scala.inline
-  def apply(applicationId: String, StringDictionary: /* key */ StringDictionary[String] = null): Application = {
+  def apply(applicationId: String, StringDictionary: /* name */ StringDictionary[String] = null): Application = {
     val __obj = js.Dynamic.literal(applicationId = applicationId.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Application]

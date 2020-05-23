@@ -9,49 +9,49 @@ import scala.scalajs.js.annotation._
 
 trait IRemotingMethod extends IBase {
   /** [Method] Takes the arguments for the Direct function and splits the arguments from the scope and the callback
-  		* @param args Array The arguments passed to the direct call
-  		* @returns Object An object with 3 properties, args, callback &amp; scope.
-  		*/
+    * @param args Array The arguments passed to the direct call
+    * @returns Object An object with 3 properties, args, callback &amp; scope.
+    */
   var getCallData: js.UndefOr[js.Function1[/* args */ js.UndefOr[Array], _]] = js.undefined
   /** [Method] Returns the value of formHandler
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getFormHandler: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of len
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getLen: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of name
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getName: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of ordered
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getOrdered: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of params
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getParams: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Sets the value of formHandler
-  		* @param formHandler Object The new value.
-  		*/
+    * @param formHandler Object The new value.
+    */
   var setFormHandler: js.UndefOr[js.Function1[/* formHandler */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of len
-  		* @param len Object The new value.
-  		*/
+    * @param len Object The new value.
+    */
   var setLen: js.UndefOr[js.Function1[/* len */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of name
-  		* @param name Object The new value.
-  		*/
+    * @param name Object The new value.
+    */
   var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of ordered
-  		* @param ordered Boolean The new value.
-  		*/
+    * @param ordered Boolean The new value.
+    */
   var setOrdered: js.UndefOr[js.Function1[/* ordered */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of params
-  		* @param params Object The new value.
-  		*/
+    * @param params Object The new value.
+    */
   var setParams: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -113,7 +113,7 @@ object IRemotingMethod {
     if (setName != null) __obj.updateDynamic("setName")(js.Any.fromFunction1(setName))
     if (setOrdered != null) __obj.updateDynamic("setOrdered")(js.Any.fromFunction1(setOrdered))
     if (setParams != null) __obj.updateDynamic("setParams")(js.Any.fromFunction1(setParams))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRemotingMethod]

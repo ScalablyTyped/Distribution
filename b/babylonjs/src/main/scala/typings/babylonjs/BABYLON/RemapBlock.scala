@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.RemapBlock")
 @js.native
-class RemapBlock protected () extends NodeMaterialBlock {
-  /**
-    * Creates a new RemapBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait RemapBlock extends NodeMaterialBlock {
   /**
     * Gets or sets the source range
     */

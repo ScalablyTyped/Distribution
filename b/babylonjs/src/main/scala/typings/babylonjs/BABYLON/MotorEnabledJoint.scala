@@ -4,16 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.babylonjs.BABYLON.IMotorEnabledJoint because var conflicts: physicsJoint. Inlined setMotor, setMotor, setMotor, setMotor, setLimit, setLimit, setLimit */ @JSGlobal("BABYLON.MotorEnabledJoint")
-@js.native
-class MotorEnabledJoint protected () extends PhysicsJoint {
-  /**
-    * Initializes the Motor-Enabled Joint
-    * @param type The type of the joint
-    * @param jointData The physica joint data for the joint
-    */
-  def this(`type`: Double, jointData: PhysicsJointData) = this()
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.babylonjs.BABYLON.IMotorEnabledJoint because var conflicts: physicsJoint. Inlined setMotor, setMotor, setMotor, setMotor, setLimit, setLimit, setLimit */ @js.native
+trait MotorEnabledJoint extends PhysicsJoint {
   /**
     * Set the motor's limits.
     * Attention, this function is plugin specific. Engines won't react 100% the same.

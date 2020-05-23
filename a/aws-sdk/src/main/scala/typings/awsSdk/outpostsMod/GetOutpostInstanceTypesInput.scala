@@ -13,9 +13,13 @@ trait GetOutpostInstanceTypesInput extends js.Object {
 
 object GetOutpostInstanceTypesInput {
   @scala.inline
-  def apply(OutpostId: OutpostId, MaxResults: Int | Double = null, NextToken: Token = null): GetOutpostInstanceTypesInput = {
+  def apply(
+    OutpostId: OutpostId,
+    MaxResults: js.UndefOr[MaxResults1000] = js.undefined,
+    NextToken: Token = null
+  ): GetOutpostInstanceTypesInput = {
     val __obj = js.Dynamic.literal(OutpostId = OutpostId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOutpostInstanceTypesInput]
   }

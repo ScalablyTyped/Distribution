@@ -19,10 +19,10 @@ trait UpdateSlicerSpecRequest extends js.Object {
 
 object UpdateSlicerSpecRequest {
   @scala.inline
-  def apply(fields: String = null, slicerId: Int | Double = null, spec: SlicerSpec = null): UpdateSlicerSpecRequest = {
+  def apply(fields: String = null, slicerId: js.UndefOr[Double] = js.undefined, spec: SlicerSpec = null): UpdateSlicerSpecRequest = {
     val __obj = js.Dynamic.literal()
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (slicerId != null) __obj.updateDynamic("slicerId")(slicerId.asInstanceOf[js.Any])
+    if (!js.isUndefined(slicerId)) __obj.updateDynamic("slicerId")(slicerId.get.asInstanceOf[js.Any])
     if (spec != null) __obj.updateDynamic("spec")(spec.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSlicerSpecRequest]
   }

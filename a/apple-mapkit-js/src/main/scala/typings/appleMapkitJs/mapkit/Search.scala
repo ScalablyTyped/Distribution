@@ -7,15 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * An object that retrieves map-based search results for a user-entered query.
   */
-@JSGlobal("mapkit.Search")
 @js.native
-/**
-  * Creates a search object with optional initial values that you provide.
-  *
-  * @param options Options that you may provide when creating a search object.
-  */
-class Search () extends js.Object {
-  def this(options: SearchConstructorOptions) = this()
+trait Search extends js.Object {
   def autocomplete(query: String, callback: AutocompleteSearchCallback): Unit = js.native
   def autocomplete(query: String, callback: AutocompleteSearchCallback, options: SearchOptions): Unit = js.native
   /**

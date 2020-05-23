@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -65,7 +64,19 @@ trait config extends js.Object {
   var workers: configWorkers
 }
 
-@JSGlobal("__esri.config")
-@js.native
-object config extends TopLevel[config]
+object config {
+  @scala.inline
+  def apply(
+    fontsUrl: String,
+    geoRSSServiceUrl: String,
+    geometryServiceUrl: String,
+    kmlServiceUrl: String,
+    portalUrl: String,
+    request: configRequest,
+    workers: configWorkers
+  ): config = {
+    val __obj = js.Dynamic.literal(fontsUrl = fontsUrl.asInstanceOf[js.Any], geoRSSServiceUrl = geoRSSServiceUrl.asInstanceOf[js.Any], geometryServiceUrl = geometryServiceUrl.asInstanceOf[js.Any], kmlServiceUrl = kmlServiceUrl.asInstanceOf[js.Any], portalUrl = portalUrl.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], workers = workers.asInstanceOf[js.Any])
+    __obj.asInstanceOf[config]
+  }
+}
 

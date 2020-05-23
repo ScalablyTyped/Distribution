@@ -143,77 +143,77 @@ object Connector {
   @scala.inline
   def apply(
     addInfo: js.Any = null,
-    bridgeSpace: Int | Double = null,
+    bridgeSpace: js.UndefOr[Double] = js.undefined,
     constraints: ConnectorConstraints | String = null,
-    cornerRadius: Int | Double = null,
+    cornerRadius: js.UndefOr[Double] = js.undefined,
     cssClass: String = null,
     horizontalAlign: HorizontalAlignment | String = null,
     labels: js.Array[ConnectorsLabel] = null,
     lineColor: String = null,
     lineDashArray: String = null,
-    lineHitPadding: Int | Double = null,
-    lineWidth: Int | Double = null,
-    marginBottom: Int | Double = null,
-    marginLeft: Int | Double = null,
-    marginRight: Int | Double = null,
-    marginTop: Int | Double = null,
+    lineHitPadding: js.UndefOr[Double] = js.undefined,
+    lineWidth: js.UndefOr[Double] = js.undefined,
+    marginBottom: js.UndefOr[Double] = js.undefined,
+    marginLeft: js.UndefOr[Double] = js.undefined,
+    marginRight: js.UndefOr[Double] = js.undefined,
+    marginTop: js.UndefOr[Double] = js.undefined,
     name: String = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     paletteItem: js.Any = null,
     parent: String = null,
     segments: js.Array[ConnectorsSegment] = null,
     shape: ConnectorsShape = null,
     sourceDecorator: ConnectorsSourceDecorator = null,
     sourceNode: String = null,
-    sourcePadding: Int | Double = null,
+    sourcePadding: js.UndefOr[Double] = js.undefined,
     sourcePoint: ConnectorsSourcePoint = null,
     sourcePort: String = null,
     targetDecorator: ConnectorsTargetDecorator = null,
     targetNode: String = null,
-    targetPadding: Int | Double = null,
+    targetPadding: js.UndefOr[Double] = js.undefined,
     targetPoint: ConnectorsSourcePoint = null,
     targetPort: String = null,
     tooltip: js.Any = null,
     verticalAlign: VerticalAlignment | String = null,
     visible: js.UndefOr[Boolean] = js.undefined,
-    zOrder: Int | Double = null
+    zOrder: js.UndefOr[Double] = js.undefined
   ): Connector = {
     val __obj = js.Dynamic.literal()
     if (addInfo != null) __obj.updateDynamic("addInfo")(addInfo.asInstanceOf[js.Any])
-    if (bridgeSpace != null) __obj.updateDynamic("bridgeSpace")(bridgeSpace.asInstanceOf[js.Any])
+    if (!js.isUndefined(bridgeSpace)) __obj.updateDynamic("bridgeSpace")(bridgeSpace.get.asInstanceOf[js.Any])
     if (constraints != null) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
-    if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(cornerRadius)) __obj.updateDynamic("cornerRadius")(cornerRadius.get.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (horizontalAlign != null) __obj.updateDynamic("horizontalAlign")(horizontalAlign.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
     if (lineDashArray != null) __obj.updateDynamic("lineDashArray")(lineDashArray.asInstanceOf[js.Any])
-    if (lineHitPadding != null) __obj.updateDynamic("lineHitPadding")(lineHitPadding.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (marginBottom != null) __obj.updateDynamic("marginBottom")(marginBottom.asInstanceOf[js.Any])
-    if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
-    if (marginRight != null) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
-    if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineHitPadding)) __obj.updateDynamic("lineHitPadding")(lineHitPadding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginBottom)) __obj.updateDynamic("marginBottom")(marginBottom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginLeft)) __obj.updateDynamic("marginLeft")(marginLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginRight)) __obj.updateDynamic("marginRight")(marginRight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginTop)) __obj.updateDynamic("marginTop")(marginTop.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (paletteItem != null) __obj.updateDynamic("paletteItem")(paletteItem.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     if (segments != null) __obj.updateDynamic("segments")(segments.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     if (sourceDecorator != null) __obj.updateDynamic("sourceDecorator")(sourceDecorator.asInstanceOf[js.Any])
     if (sourceNode != null) __obj.updateDynamic("sourceNode")(sourceNode.asInstanceOf[js.Any])
-    if (sourcePadding != null) __obj.updateDynamic("sourcePadding")(sourcePadding.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourcePadding)) __obj.updateDynamic("sourcePadding")(sourcePadding.get.asInstanceOf[js.Any])
     if (sourcePoint != null) __obj.updateDynamic("sourcePoint")(sourcePoint.asInstanceOf[js.Any])
     if (sourcePort != null) __obj.updateDynamic("sourcePort")(sourcePort.asInstanceOf[js.Any])
     if (targetDecorator != null) __obj.updateDynamic("targetDecorator")(targetDecorator.asInstanceOf[js.Any])
     if (targetNode != null) __obj.updateDynamic("targetNode")(targetNode.asInstanceOf[js.Any])
-    if (targetPadding != null) __obj.updateDynamic("targetPadding")(targetPadding.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetPadding)) __obj.updateDynamic("targetPadding")(targetPadding.get.asInstanceOf[js.Any])
     if (targetPoint != null) __obj.updateDynamic("targetPoint")(targetPoint.asInstanceOf[js.Any])
     if (targetPort != null) __obj.updateDynamic("targetPort")(targetPort.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (zOrder != null) __obj.updateDynamic("zOrder")(zOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zOrder)) __obj.updateDynamic("zOrder")(zOrder.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Connector]
   }
 }

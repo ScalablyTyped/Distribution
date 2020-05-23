@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/***** Save to Google Maps *****/
+// TODO find source documentation
 trait Attribution extends js.Object {
   var iosDeepLinkId: js.UndefOr[String] = js.undefined
   var source: js.UndefOr[String] = js.undefined

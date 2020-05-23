@@ -18,12 +18,12 @@ object ListMessagesResponse {
   def apply(
     messages: js.Array[Message] = null,
     nextPageToken: String = null,
-    resultSizeEstimate: Int | Double = null
+    resultSizeEstimate: js.UndefOr[Double] = js.undefined
   ): ListMessagesResponse = {
     val __obj = js.Dynamic.literal()
     if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (resultSizeEstimate != null) __obj.updateDynamic("resultSizeEstimate")(resultSizeEstimate.asInstanceOf[js.Any])
+    if (!js.isUndefined(resultSizeEstimate)) __obj.updateDynamic("resultSizeEstimate")(resultSizeEstimate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListMessagesResponse]
   }
 }

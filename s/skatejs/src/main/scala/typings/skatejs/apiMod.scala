@@ -1,5 +1,6 @@
 package typings.skatejs
 
+import typings.skatejs.anon.TypeofWithComponent
 import typings.skatejs.typesMod.ComposedCustomEvent
 import typings.skatejs.typesMod.Constructor
 import typings.skatejs.typesMod.CustomElement

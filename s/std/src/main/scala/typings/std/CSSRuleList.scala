@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.NumberDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,8 +13,4 @@ trait CSSRuleList extends /* index */ NumberDictionary[CSSRule] {
   val length: Double = js.native
   def item(index: Double): CSSRule | Null = js.native
 }
-
-@JSGlobal("CSSRuleList")
-@js.native
-object CSSRuleList extends Instantiable0[CSSRuleList]
 

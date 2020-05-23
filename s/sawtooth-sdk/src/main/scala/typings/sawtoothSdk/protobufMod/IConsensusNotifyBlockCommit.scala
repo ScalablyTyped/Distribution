@@ -12,9 +12,9 @@ trait IConsensusNotifyBlockCommit extends js.Object {
 
 object IConsensusNotifyBlockCommit {
   @scala.inline
-  def apply(blockId: Uint8Array = null): IConsensusNotifyBlockCommit = {
+  def apply(blockId: js.UndefOr[Null | Uint8Array] = js.undefined): IConsensusNotifyBlockCommit = {
     val __obj = js.Dynamic.literal()
-    if (blockId != null) __obj.updateDynamic("blockId")(blockId.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockId)) __obj.updateDynamic("blockId")(blockId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConsensusNotifyBlockCommit]
   }
 }

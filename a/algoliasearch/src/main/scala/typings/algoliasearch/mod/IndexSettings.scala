@@ -285,15 +285,15 @@ object IndexSettings {
     exactOnSingleWordQuery: String = null,
     highlightPostTag: String = null,
     highlightPreTag: String = null,
-    hitsPerPage: Int | Double = null,
+    hitsPerPage: js.UndefOr[Double] = js.undefined,
     ignorePlurals: js.UndefOr[Boolean] = js.undefined,
-    maxValuesPerFacet: Int | Double = null,
-    minProximity: Int | Double = null,
-    minWordSizefor1Typo: Int | Double = null,
-    minWordSizefor2Typos: Int | Double = null,
+    maxValuesPerFacet: js.UndefOr[Double] = js.undefined,
+    minProximity: js.UndefOr[Double] = js.undefined,
+    minWordSizefor1Typo: js.UndefOr[Double] = js.undefined,
+    minWordSizefor2Typos: js.UndefOr[Double] = js.undefined,
     numericAttributesToIndex: js.Array[String] = null,
     optionalWords: js.Array[String] = null,
-    paginationLimitedTo: Int | Double = null,
+    paginationLimitedTo: js.UndefOr[Double] = js.undefined,
     placeholders: StringDictionary[js.Array[String]] = null,
     queryLanguages: js.Array[
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 68 */ js.Any
@@ -312,9 +312,9 @@ object IndexSettings {
     unretrievableAttributes: js.Array[String] = null
   ): IndexSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(advancedSyntax)) __obj.updateDynamic("advancedSyntax")(advancedSyntax.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowCompressionOfIntegerArray)) __obj.updateDynamic("allowCompressionOfIntegerArray")(allowCompressionOfIntegerArray.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowTyposOnNumericTokens)) __obj.updateDynamic("allowTyposOnNumericTokens")(allowTyposOnNumericTokens.asInstanceOf[js.Any])
+    if (!js.isUndefined(advancedSyntax)) __obj.updateDynamic("advancedSyntax")(advancedSyntax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCompressionOfIntegerArray)) __obj.updateDynamic("allowCompressionOfIntegerArray")(allowCompressionOfIntegerArray.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowTyposOnNumericTokens)) __obj.updateDynamic("allowTyposOnNumericTokens")(allowTyposOnNumericTokens.get.asInstanceOf[js.Any])
     if (altCorrections != null) __obj.updateDynamic("altCorrections")(altCorrections.asInstanceOf[js.Any])
     if (alternativesAsExact != null) __obj.updateDynamic("alternativesAsExact")(alternativesAsExact.asInstanceOf[js.Any])
     if (attributeForDistinct != null) __obj.updateDynamic("attributeForDistinct")(attributeForDistinct.asInstanceOf[js.Any])
@@ -333,15 +333,15 @@ object IndexSettings {
     if (exactOnSingleWordQuery != null) __obj.updateDynamic("exactOnSingleWordQuery")(exactOnSingleWordQuery.asInstanceOf[js.Any])
     if (highlightPostTag != null) __obj.updateDynamic("highlightPostTag")(highlightPostTag.asInstanceOf[js.Any])
     if (highlightPreTag != null) __obj.updateDynamic("highlightPreTag")(highlightPreTag.asInstanceOf[js.Any])
-    if (hitsPerPage != null) __obj.updateDynamic("hitsPerPage")(hitsPerPage.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignorePlurals)) __obj.updateDynamic("ignorePlurals")(ignorePlurals.asInstanceOf[js.Any])
-    if (maxValuesPerFacet != null) __obj.updateDynamic("maxValuesPerFacet")(maxValuesPerFacet.asInstanceOf[js.Any])
-    if (minProximity != null) __obj.updateDynamic("minProximity")(minProximity.asInstanceOf[js.Any])
-    if (minWordSizefor1Typo != null) __obj.updateDynamic("minWordSizefor1Typo")(minWordSizefor1Typo.asInstanceOf[js.Any])
-    if (minWordSizefor2Typos != null) __obj.updateDynamic("minWordSizefor2Typos")(minWordSizefor2Typos.asInstanceOf[js.Any])
+    if (!js.isUndefined(hitsPerPage)) __obj.updateDynamic("hitsPerPage")(hitsPerPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignorePlurals)) __obj.updateDynamic("ignorePlurals")(ignorePlurals.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxValuesPerFacet)) __obj.updateDynamic("maxValuesPerFacet")(maxValuesPerFacet.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minProximity)) __obj.updateDynamic("minProximity")(minProximity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWordSizefor1Typo)) __obj.updateDynamic("minWordSizefor1Typo")(minWordSizefor1Typo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWordSizefor2Typos)) __obj.updateDynamic("minWordSizefor2Typos")(minWordSizefor2Typos.get.asInstanceOf[js.Any])
     if (numericAttributesToIndex != null) __obj.updateDynamic("numericAttributesToIndex")(numericAttributesToIndex.asInstanceOf[js.Any])
     if (optionalWords != null) __obj.updateDynamic("optionalWords")(optionalWords.asInstanceOf[js.Any])
-    if (paginationLimitedTo != null) __obj.updateDynamic("paginationLimitedTo")(paginationLimitedTo.asInstanceOf[js.Any])
+    if (!js.isUndefined(paginationLimitedTo)) __obj.updateDynamic("paginationLimitedTo")(paginationLimitedTo.get.asInstanceOf[js.Any])
     if (placeholders != null) __obj.updateDynamic("placeholders")(placeholders.asInstanceOf[js.Any])
     if (queryLanguages != null) __obj.updateDynamic("queryLanguages")(queryLanguages.asInstanceOf[js.Any])
     if (queryType != null) __obj.updateDynamic("queryType")(queryType.asInstanceOf[js.Any])
@@ -349,7 +349,7 @@ object IndexSettings {
     if (removeStopWords != null) __obj.updateDynamic("removeStopWords")(removeStopWords.asInstanceOf[js.Any])
     if (removeWordsIfNoResults != null) __obj.updateDynamic("removeWordsIfNoResults")(removeWordsIfNoResults.asInstanceOf[js.Any])
     if (replicas != null) __obj.updateDynamic("replicas")(replicas.asInstanceOf[js.Any])
-    if (!js.isUndefined(restrictHighlightAndSnippetArrays)) __obj.updateDynamic("restrictHighlightAndSnippetArrays")(restrictHighlightAndSnippetArrays.asInstanceOf[js.Any])
+    if (!js.isUndefined(restrictHighlightAndSnippetArrays)) __obj.updateDynamic("restrictHighlightAndSnippetArrays")(restrictHighlightAndSnippetArrays.get.asInstanceOf[js.Any])
     if (searchableAttributes != null) __obj.updateDynamic("searchableAttributes")(searchableAttributes.asInstanceOf[js.Any])
     if (separatorsToIndex != null) __obj.updateDynamic("separatorsToIndex")(separatorsToIndex.asInstanceOf[js.Any])
     if (snippetEllipsisText != null) __obj.updateDynamic("snippetEllipsisText")(snippetEllipsisText.asInstanceOf[js.Any])

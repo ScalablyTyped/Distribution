@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait S3OutputLocation extends js.Object {
   /**
-    * The name of the Amazon S3 bucket.
+    * The name of the S3 bucket.
     */
   var OutputS3BucketName: js.UndefOr[S3BucketName] = js.native
   /**
-    * The Amazon S3 bucket subfolder.
+    * The S3 bucket subfolder.
     */
   var OutputS3KeyPrefix: js.UndefOr[S3KeyPrefix] = js.native
   /**
-    * (Deprecated) You can no longer specify this parameter. The system ignores it. Instead, Systems Manager automatically determines the Amazon S3 bucket region.
+    * (Deprecated) You can no longer specify this parameter. The system ignores it. Instead, Systems Manager automatically determines the Region of the S3 bucket.
     */
   var OutputS3Region: js.UndefOr[S3Region] = js.native
 }

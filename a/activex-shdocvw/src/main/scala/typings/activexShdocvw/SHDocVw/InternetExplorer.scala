@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Internet Explorer Application. */
-@JSGlobal("SHDocVw.InternetExplorer")
 @js.native
-class InternetExplorer protected () extends js.Object {
+trait InternetExplorer extends js.Object {
   /** Controls whether address bar is shown */
   var AddressBar: Boolean = js.native
   /** Returns the application automation object if accessible, this automation object otherwise.. */

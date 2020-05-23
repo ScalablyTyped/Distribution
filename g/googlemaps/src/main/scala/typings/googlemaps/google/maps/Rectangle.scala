@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.maps.Rectangle")
 @js.native
-class Rectangle () extends MVCObject {
-  def this(opts: RectangleOptions) = this()
+trait Rectangle extends MVCObject {
   def getBounds(): LatLngBounds = js.native
   def getDraggable(): Boolean = js.native
   def getEditable(): Boolean = js.native

@@ -1,6 +1,6 @@
 package typings.fundamentalReact.mod
 
-import typings.fundamentalReact.FunctionComponentInputGro
+import typings.fundamentalReact.anon.FunctionComponentInputGro
 import typings.fundamentalReact.inputGroupMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`

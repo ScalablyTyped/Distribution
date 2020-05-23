@@ -1,6 +1,5 @@
 package typings.heremaps.H.ui.InfoBubble
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,14 +20,6 @@ object State extends js.Object {
   /** This value represents the state where an info bubble is open and visible (value: 'open'). */
   @js.native
   sealed trait OPEN extends State
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[State with Double] = js.native
-  /* 1 */ @js.native
-  object CLOSED extends TopLevel[CLOSED with Double]
-  
-  /* 0 */ @js.native
-  object OPEN extends TopLevel[OPEN with Double]
   
 }
 

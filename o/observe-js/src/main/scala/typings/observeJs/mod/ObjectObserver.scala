@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class ObjectObserver protected () extends ObjectObserverInstance {
   /**
-  		 * Constructor
-  		 * @param receiver the target for observation
-  		 */
+    * Constructor
+    * @param receiver the target for observation
+    */
   def this(receiver: js.Any) = this()
 }
 

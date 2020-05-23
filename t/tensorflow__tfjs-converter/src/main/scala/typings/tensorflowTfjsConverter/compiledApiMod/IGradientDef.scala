@@ -13,10 +13,13 @@ trait IGradientDef extends js.Object {
 
 object IGradientDef {
   @scala.inline
-  def apply(functionName: String = null, gradientFunc: String = null): IGradientDef = {
+  def apply(
+    functionName: js.UndefOr[Null | String] = js.undefined,
+    gradientFunc: js.UndefOr[Null | String] = js.undefined
+  ): IGradientDef = {
     val __obj = js.Dynamic.literal()
-    if (functionName != null) __obj.updateDynamic("functionName")(functionName.asInstanceOf[js.Any])
-    if (gradientFunc != null) __obj.updateDynamic("gradientFunc")(gradientFunc.asInstanceOf[js.Any])
+    if (!js.isUndefined(functionName)) __obj.updateDynamic("functionName")(functionName.asInstanceOf[js.Any])
+    if (!js.isUndefined(gradientFunc)) __obj.updateDynamic("gradientFunc")(gradientFunc.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGradientDef]
   }
 }

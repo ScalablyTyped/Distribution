@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 trait Entry
   extends /**
-  * Making this interface extendable since this is not a complete type definition of FHIR Entry
+  * Making this interface extendable since this is not a complete type definition of FHIR Resource
   */
 /* propName */ StringDictionary[js.Any] {
   /**
@@ -31,10 +31,7 @@ object Entry {
   @scala.inline
   def apply(
     resource: Resource,
-    StringDictionary: /**
-    * Making this interface extendable since this is not a complete type definition of FHIR Entry
-    */
-  /* propName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     `type`: String = null,
     versionId: String = null
   ): Entry = {

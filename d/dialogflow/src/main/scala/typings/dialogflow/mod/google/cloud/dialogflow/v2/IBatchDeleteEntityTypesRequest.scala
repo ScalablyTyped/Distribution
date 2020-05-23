@@ -14,10 +14,13 @@ trait IBatchDeleteEntityTypesRequest extends js.Object {
 
 object IBatchDeleteEntityTypesRequest {
   @scala.inline
-  def apply(entityTypeNames: js.Array[String] = null, parent: String = null): IBatchDeleteEntityTypesRequest = {
+  def apply(
+    entityTypeNames: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    parent: js.UndefOr[Null | String] = js.undefined
+  ): IBatchDeleteEntityTypesRequest = {
     val __obj = js.Dynamic.literal()
-    if (entityTypeNames != null) __obj.updateDynamic("entityTypeNames")(entityTypeNames.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(entityTypeNames)) __obj.updateDynamic("entityTypeNames")(entityTypeNames.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBatchDeleteEntityTypesRequest]
   }
 }

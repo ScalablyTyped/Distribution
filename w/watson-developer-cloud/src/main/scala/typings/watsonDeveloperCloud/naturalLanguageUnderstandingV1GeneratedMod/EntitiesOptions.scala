@@ -22,17 +22,17 @@ object EntitiesOptions {
   @scala.inline
   def apply(
     emotion: js.UndefOr[Boolean] = js.undefined,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     mentions: js.UndefOr[Boolean] = js.undefined,
     model: String = null,
     sentiment: js.UndefOr[Boolean] = js.undefined
   ): EntitiesOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(emotion)) __obj.updateDynamic("emotion")(emotion.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(mentions)) __obj.updateDynamic("mentions")(mentions.asInstanceOf[js.Any])
+    if (!js.isUndefined(emotion)) __obj.updateDynamic("emotion")(emotion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mentions)) __obj.updateDynamic("mentions")(mentions.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (!js.isUndefined(sentiment)) __obj.updateDynamic("sentiment")(sentiment.asInstanceOf[js.Any])
+    if (!js.isUndefined(sentiment)) __obj.updateDynamic("sentiment")(sentiment.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntitiesOptions]
   }
 }

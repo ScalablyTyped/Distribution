@@ -1,6 +1,6 @@
 package typings.rcMenu.menuItemMod
 
-import typings.rcMenu.AnonManualRef
+import typings.rcMenu.anon.ManualRef
 import typings.react.mod.Component
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEventHandler
@@ -37,7 +37,7 @@ class MenuItem ()
 @JSImport("rc-menu/lib/MenuItem", "MenuItem")
 @js.native
 object MenuItem extends js.Object {
-  var defaultProps: AnonManualRef = js.native
+  var defaultProps: ManualRef = js.native
   var isMenuItem: Boolean = js.native
 }
 

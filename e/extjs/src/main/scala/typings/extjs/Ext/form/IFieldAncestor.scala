@@ -13,16 +13,16 @@ trait IFieldAncestor extends IBase {
   /** [Method] Initializes the FieldAncestor s state this must be called from the initComponent method of any components importing */
   var initFieldAncestor: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Fired when the error message of any field within the container changes
-  		* @param field Ext.form.Labelable The sub-field whose active error changed
-  		* @param error String The new active error message
-  		*/
+    * @param field Ext.form.Labelable The sub-field whose active error changed
+    * @param error String The new active error message
+    */
   var onFieldErrorChange: js.UndefOr[
     js.Function2[/* field */ js.UndefOr[ILabelable], /* error */ js.UndefOr[String], Unit]
   ] = js.undefined
   /** [Method] Fired when the validity of any field within the container changes
-  		* @param field Ext.form.field.Field The sub-field whose validity changed
-  		* @param valid Boolean The new validity state
-  		*/
+    * @param field Ext.form.field.Field The sub-field whose validity changed
+    * @param valid Boolean The new validity state
+    */
   var onFieldValidityChange: js.UndefOr[
     js.Function2[
       /* field */ js.UndefOr[typings.extjs.Ext.form.field.IField], 
@@ -74,7 +74,7 @@ object IFieldAncestor {
     if (onFieldValidityChange != null) __obj.updateDynamic("onFieldValidityChange")(js.Any.fromFunction2(onFieldValidityChange))
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFieldAncestor]

@@ -32,9 +32,7 @@ trait LocaleSpecification
 object LocaleSpecification {
   @scala.inline
   def apply(
-    StringDictionary: // Allow anything: in general any property that is passed as locale spec is
-  // put in the locale object so it can be used by locale functions
-  /* x */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     calendar: CalendarSpec = null,
     invalidDate: String = null,
     isPM: /* input */ String => Boolean = null,

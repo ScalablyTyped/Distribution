@@ -20,7 +20,7 @@ trait ReverseIterator[Key, SourceT /* <: typings.tstl.uniqueSetMod.UniqueSet[Key
 
 object ReverseIterator {
   @scala.inline
-  def apply[Key, SourceT /* <: typings.tstl.uniqueSetMod.UniqueSet[Key, SourceT, IteratorT, ReverseT] */, IteratorT /* <: Iterator[Key, SourceT, IteratorT, ReverseT] */, ReverseT /* <: ReverseIterator[Key, SourceT, IteratorT, ReverseT] */](
+  def apply[Key, SourceT, IteratorT, ReverseT](
     base: () => IteratorT,
     next: () => ReverseT,
     prev: () => ReverseT,

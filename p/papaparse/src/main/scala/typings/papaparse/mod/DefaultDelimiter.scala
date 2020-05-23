@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("papaparse", "DefaultDelimiter")
 @js.native
-object DefaultDelimiter extends TopLevel[String]
+object DefaultDelimiter extends TopLevel[/* "\\u001E" */ String]
 

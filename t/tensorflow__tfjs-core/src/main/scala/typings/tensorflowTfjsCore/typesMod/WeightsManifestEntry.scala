@@ -1,6 +1,6 @@
 package typings.tensorflowTfjsCore.typesMod
 
-import typings.tensorflowTfjsCore.AnonDtype
+import typings.tensorflowTfjsCore.anon.Dtype
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.bool
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.float32
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.int32
@@ -30,7 +30,7 @@ trait WeightsManifestEntry extends js.Object {
   /**
     * Information for dequantization of the weight.
     */
-  var quantization: js.UndefOr[AnonDtype] = js.undefined
+  var quantization: js.UndefOr[Dtype] = js.undefined
   /**
     * Shape of the weight.
     */
@@ -44,7 +44,7 @@ object WeightsManifestEntry {
     name: String,
     shape: js.Array[Double],
     group: WeightGroup = null,
-    quantization: AnonDtype = null
+    quantization: Dtype = null
   ): WeightsManifestEntry = {
     val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])

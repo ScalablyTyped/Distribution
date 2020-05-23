@@ -28,12 +28,12 @@ object DocumentPermissions {
     printing: lowResolution | highResolution = null
   ): DocumentPermissions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(annotating)) __obj.updateDynamic("annotating")(annotating.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentAccessibility)) __obj.updateDynamic("contentAccessibility")(contentAccessibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(copying)) __obj.updateDynamic("copying")(copying.asInstanceOf[js.Any])
-    if (!js.isUndefined(documentAssembly)) __obj.updateDynamic("documentAssembly")(documentAssembly.asInstanceOf[js.Any])
-    if (!js.isUndefined(fillingForms)) __obj.updateDynamic("fillingForms")(fillingForms.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifying)) __obj.updateDynamic("modifying")(modifying.asInstanceOf[js.Any])
+    if (!js.isUndefined(annotating)) __obj.updateDynamic("annotating")(annotating.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentAccessibility)) __obj.updateDynamic("contentAccessibility")(contentAccessibility.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(copying)) __obj.updateDynamic("copying")(copying.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(documentAssembly)) __obj.updateDynamic("documentAssembly")(documentAssembly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fillingForms)) __obj.updateDynamic("fillingForms")(fillingForms.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(modifying)) __obj.updateDynamic("modifying")(modifying.get.asInstanceOf[js.Any])
     if (printing != null) __obj.updateDynamic("printing")(printing.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentPermissions]
   }

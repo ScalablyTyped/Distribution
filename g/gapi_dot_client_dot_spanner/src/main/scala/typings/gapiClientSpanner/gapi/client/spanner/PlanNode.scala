@@ -48,7 +48,7 @@ object PlanNode {
     childLinks: js.Array[ChildLink] = null,
     displayName: String = null,
     executionStats: Record[String, _] = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     kind: String = null,
     metadata: Record[String, _] = null,
     shortRepresentation: ShortRepresentation = null
@@ -57,7 +57,7 @@ object PlanNode {
     if (childLinks != null) __obj.updateDynamic("childLinks")(childLinks.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (executionStats != null) __obj.updateDynamic("executionStats")(executionStats.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (shortRepresentation != null) __obj.updateDynamic("shortRepresentation")(shortRepresentation.asInstanceOf[js.Any])

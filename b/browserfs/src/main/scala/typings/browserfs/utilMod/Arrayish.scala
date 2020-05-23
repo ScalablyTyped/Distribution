@@ -11,7 +11,7 @@ trait Arrayish[T] extends /* idx */ NumberDictionary[T] {
 
 object Arrayish {
   @scala.inline
-  def apply[T](length: Double, NumberDictionary: /* idx */ NumberDictionary[T] = null): Arrayish[T] = {
+  def apply[T](length: Double, NumberDictionary: /* n */ NumberDictionary[T] = null): Arrayish[T] = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
     if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[Arrayish[T]]

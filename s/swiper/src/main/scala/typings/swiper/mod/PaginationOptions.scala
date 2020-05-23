@@ -125,7 +125,7 @@ object PaginationOptions {
     clickableClass: String = null,
     currentClass: String = null,
     dynamicBullets: js.UndefOr[Boolean] = js.undefined,
-    dynamicMainBullets: Int | Double = null,
+    dynamicMainBullets: js.UndefOr[Double] = js.undefined,
     formatFractionCurrent: /* number */ Double => Double = null,
     formatFractionTotal: /* number */ Double => Double = null,
     hiddenClass: String = null,
@@ -144,18 +144,18 @@ object PaginationOptions {
     if (bulletActiveClass != null) __obj.updateDynamic("bulletActiveClass")(bulletActiveClass.asInstanceOf[js.Any])
     if (bulletClass != null) __obj.updateDynamic("bulletClass")(bulletClass.asInstanceOf[js.Any])
     if (bulletElement != null) __obj.updateDynamic("bulletElement")(bulletElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable.get.asInstanceOf[js.Any])
     if (clickableClass != null) __obj.updateDynamic("clickableClass")(clickableClass.asInstanceOf[js.Any])
     if (currentClass != null) __obj.updateDynamic("currentClass")(currentClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(dynamicBullets)) __obj.updateDynamic("dynamicBullets")(dynamicBullets.asInstanceOf[js.Any])
-    if (dynamicMainBullets != null) __obj.updateDynamic("dynamicMainBullets")(dynamicMainBullets.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamicBullets)) __obj.updateDynamic("dynamicBullets")(dynamicBullets.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamicMainBullets)) __obj.updateDynamic("dynamicMainBullets")(dynamicMainBullets.get.asInstanceOf[js.Any])
     if (formatFractionCurrent != null) __obj.updateDynamic("formatFractionCurrent")(js.Any.fromFunction1(formatFractionCurrent))
     if (formatFractionTotal != null) __obj.updateDynamic("formatFractionTotal")(js.Any.fromFunction1(formatFractionTotal))
     if (hiddenClass != null) __obj.updateDynamic("hiddenClass")(hiddenClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideOnClick)) __obj.updateDynamic("hideOnClick")(hideOnClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideOnClick)) __obj.updateDynamic("hideOnClick")(hideOnClick.get.asInstanceOf[js.Any])
     if (modifierClass != null) __obj.updateDynamic("modifierClass")(modifierClass.asInstanceOf[js.Any])
     if (progressbarFillClass != null) __obj.updateDynamic("progressbarFillClass")(progressbarFillClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(progressbarOpposite)) __obj.updateDynamic("progressbarOpposite")(progressbarOpposite.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressbarOpposite)) __obj.updateDynamic("progressbarOpposite")(progressbarOpposite.get.asInstanceOf[js.Any])
     if (renderBullet != null) __obj.updateDynamic("renderBullet")(js.Any.fromFunction2(renderBullet))
     if (renderCustom != null) __obj.updateDynamic("renderCustom")(js.Any.fromFunction3(renderCustom))
     if (renderFraction != null) __obj.updateDynamic("renderFraction")(js.Any.fromFunction2(renderFraction))

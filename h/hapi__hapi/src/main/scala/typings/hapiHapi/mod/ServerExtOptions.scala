@@ -1,7 +1,6 @@
 package typings.hapiHapi.mod
 
 import typings.hapiHapi.hapiHapiStrings.plugin
-import typings.hapiHapi.hapiHapiStrings.server
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +22,7 @@ trait ServerExtOptions extends js.Object {
     * if set to 'plugin' when adding a request extension points the extension is only added to routes defined by the current plugin. Not allowed when configuring route-level extensions, or when
     * adding server extensions. Defaults to 'server' which applies to any route added to the server the extension is added to.
     */
-  var sandbox: js.UndefOr[server | plugin] = js.undefined
+  var sandbox: js.UndefOr[typings.hapiHapi.hapiHapiStrings.server | plugin] = js.undefined
 }
 
 object ServerExtOptions {
@@ -32,7 +31,7 @@ object ServerExtOptions {
     after: String | js.Array[String] = null,
     before: String | js.Array[String] = null,
     bind: js.Object = null,
-    sandbox: server | plugin = null
+    sandbox: typings.hapiHapi.hapiHapiStrings.server | plugin = null
   ): ServerExtOptions = {
     val __obj = js.Dynamic.literal()
     if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])

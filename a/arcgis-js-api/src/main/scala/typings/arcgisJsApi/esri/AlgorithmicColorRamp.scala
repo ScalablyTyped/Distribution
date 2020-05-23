@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`cie-lab`
 import typings.arcgisJsApi.arcgisJsApiStrings.`lab-lch`
 import typings.arcgisJsApi.arcgisJsApiStrings.algorithmic
@@ -46,8 +45,4 @@ trait AlgorithmicColorRamp extends ColorRamp {
   @JSName("type")
   val type_AlgorithmicColorRamp: algorithmic = js.native
 }
-
-@JSGlobal("__esri.AlgorithmicColorRamp")
-@js.native
-object AlgorithmicColorRamp extends TopLevel[AlgorithmicColorRampConstructor]
 

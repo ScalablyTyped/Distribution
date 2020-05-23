@@ -9,25 +9,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.extjs.Ext.IClass because Already inherited
 - typings.extjs.Ext.IBase because Already inherited
 - typings.extjs.Ext.chart.IHighlight because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined highlight, highlightCfg, highlightItem, unHighlightItem
 - typings.extjs.Ext.chart.ILabel because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined label, onCreateLabel, onPlaceLabel */ trait ISeries extends IObservable {
   /** [Method] Iterate over each of the records for this series
-  		* @param fn Function The function to execute for each record.
-  		* @param scope Object Scope for the fn.
-  		*/
+    * @param fn Function The function to execute for each record.
+    * @param scope Object Scope for the fn.
+    */
   var eachRecord: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] For a given x y point relative to the Surface find a corresponding item from this series if any
-  		* @param x Number
-  		* @param y Number
-  		* @returns Object An object describing the item, or null if there is no matching item. The exact contents of this object will vary by series type, but should always contain the following:
-  		*/
+    * @param x Number
+    * @param y Number
+    * @returns Object An object describing the item, or null if there is no matching item. The exact contents of this object will vary by series type, but should always contain the following:
+    */
   var getItemForPoint: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], _]] = js.undefined
   /** [Method] Returns a string with the color to be used for the series legend item
-  		* @param index Object
-  		*/
+    * @param index Object
+    */
   var getLegendColor: js.UndefOr[js.Function1[/* index */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Return the number of records being displayed in this series  */
   var getRecordCount: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -38,34 +38,34 @@ import scala.scalajs.js.annotation._
   /** [Property] (Object) */
   var highlightCfg: js.UndefOr[js.Any] = js.undefined
   /** [Method] Highlight the given series item
-  		* @param item Object Info about the item; same format as returned by #getItemForPoint.
-  		*/
+    * @param item Object Info about the item; same format as returned by #getItemForPoint.
+    */
   var highlightItem: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Determines whether the series item at the given index has been excluded i e
-  		* @param index Object
-  		*/
+    * @param index Object
+    */
   var isExcluded: js.UndefOr[js.Function1[/* index */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Object) */
   var label: js.UndefOr[js.Any] = js.undefined
   /** [Method] Called each time a new label is created
-  		* @param storeItem Ext.data.Model The element of the store that is related to the sprite.
-  		* @param item Object The item related to the sprite. An item is an object containing the position of the shape used to describe the visualization and also pointing to the actual shape (circle, rectangle, path, etc).
-  		* @param i Number The index of the element created (i.e the first created label, second created label, etc).
-  		* @param display String The label.display type. May be false if the label is hidden
-  		* @returns Ext.draw.Sprite The created sprite that will draw the label.
-  		*/
+    * @param storeItem Ext.data.Model The element of the store that is related to the sprite.
+    * @param item Object The item related to the sprite. An item is an object containing the position of the shape used to describe the visualization and also pointing to the actual shape (circle, rectangle, path, etc).
+    * @param i Number The index of the element created (i.e the first created label, second created label, etc).
+    * @param display String The label.display type. May be false if the label is hidden
+    * @returns Ext.draw.Sprite The created sprite that will draw the label.
+    */
   var onCreateLabel: js.UndefOr[
     js.Function4[js.UndefOr[IModel], js.UndefOr[js.Any], js.UndefOr[Double], js.UndefOr[String], ISprite]
   ] = js.undefined
   /** [Method] Called for updating the position of the label
-  		* @param label Ext.draw.Sprite The sprite that draws the label.
-  		* @param storeItem Ext.data.Model The element of the store that is related to the sprite.
-  		* @param item Object The item related to the sprite. An item is an object containing the position of the shape used to describe the visualization and also pointing to the actual shape (circle, rectangle, path, etc).
-  		* @param i Number The index of the element to be updated (i.e. whether it is the first, second, third from the labelGroup)
-  		* @param display String The label.display type. May be false if the label is hidden
-  		* @param animate Boolean A boolean value to set or unset animations for the labels.
-  		* @param index Number The series index.
-  		*/
+    * @param label Ext.draw.Sprite The sprite that draws the label.
+    * @param storeItem Ext.data.Model The element of the store that is related to the sprite.
+    * @param item Object The item related to the sprite. An item is an object containing the position of the shape used to describe the visualization and also pointing to the actual shape (circle, rectangle, path, etc).
+    * @param i Number The index of the element to be updated (i.e. whether it is the first, second, third from the labelGroup)
+    * @param display String The label.display type. May be false if the label is hidden
+    * @param animate Boolean A boolean value to set or unset animations for the labels.
+    * @param index Number The series index.
+    */
   var onPlaceLabel: js.UndefOr[
     js.Function7[
       js.UndefOr[ISprite], 
@@ -81,9 +81,9 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Function) */
   var renderer: js.UndefOr[js.Any] = js.undefined
   /** [Method] Changes the value of the title for the series
-  		* @param index Number
-  		* @param title String
-  		*/
+    * @param index Number
+    * @param title String
+    */
   var setTitle: js.UndefOr[
     js.Function2[/* index */ js.UndefOr[Double], /* title */ js.UndefOr[String], Unit]
   ] = js.undefined
@@ -197,7 +197,7 @@ object ISeries {
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (isExcluded != null) __obj.updateDynamic("isExcluded")(js.Any.fromFunction1(isExcluded))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
@@ -217,8 +217,8 @@ object ISeries {
     if (setTitle != null) __obj.updateDynamic("setTitle")(js.Any.fromFunction2(setTitle))
     if (shadowAttributes != null) __obj.updateDynamic("shadowAttributes")(shadowAttributes.asInstanceOf[js.Any])
     if (showAll != null) __obj.updateDynamic("showAll")(js.Any.fromFunction0(showAll))
-    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction1(suspendEvents))

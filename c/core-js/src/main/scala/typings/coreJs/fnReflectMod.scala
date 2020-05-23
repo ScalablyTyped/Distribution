@@ -1,5 +1,6 @@
 package typings.coreJs
 
+import typings.coreJs.anon.FnCall
 import typings.std.ArrayLike
 import typings.std.IterableIterator
 import typings.std.PropertyDescriptor

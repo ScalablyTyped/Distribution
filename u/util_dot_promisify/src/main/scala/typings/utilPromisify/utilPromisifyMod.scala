@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 object utilPromisifyMod extends js.Object {
   val custom: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof util.promisify.custom */ js.Any = js.native
   /**
-  	 * @deprecated
-  	 * Not exposed by native `util.promisify` or supported by browserify's `util.promisify`.
-  	 *
-  	 * Use `util.promisify.custom` instead.
-  	 */
+    * @deprecated
+    * Not exposed by native `util.promisify` or supported by browserify's `util.promisify`.
+    *
+    * Use `util.promisify.custom` instead.
+    */
   val customPromisifyArgs: js.UndefOr[js.Symbol] = js.native
   // tslint:disable-next-line: ban-types
   def apply(fn: js.Function): js.Function = js.native
@@ -86,11 +86,11 @@ object utilPromisifyMod extends js.Object {
   @js.native
   object implementation extends js.Object {
     /**
-    	 * @deprecated
-    	 * Not exposed by native `util.promisify` or supported by browserify's `util.promisify`.
-    	 *
-    	 * Use `util.promisify.custom` instead.
-    	 */
+      * @deprecated
+      * Not exposed by native `util.promisify` or supported by browserify's `util.promisify`.
+      *
+      * Use `util.promisify.custom` instead.
+      */
     val customPromisifyArgs: js.Symbol = js.native
     def apply(fn: js.Function): js.Function = js.native
     def apply(fn: js.Function1[/* callback */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]): js.Function0[js.Promise[Unit]] = js.native

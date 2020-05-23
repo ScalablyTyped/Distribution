@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.CustomXMLNode")
 @js.native
-class CustomXMLNode protected () extends js.Object {
+trait CustomXMLNode extends js.Object {
   val Application: js.Any = js.native
   @JSName("Attributes")
   val Attributes_Original: CustomXMLNodes = js.native

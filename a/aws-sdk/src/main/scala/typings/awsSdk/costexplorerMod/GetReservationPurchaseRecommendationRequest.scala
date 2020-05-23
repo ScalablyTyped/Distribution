@@ -52,7 +52,7 @@ object GetReservationPurchaseRecommendationRequest {
     AccountScope: AccountScope = null,
     LookbackPeriodInDays: LookbackPeriodInDays = null,
     NextPageToken: NextPageToken = null,
-    PageSize: Int | Double = null,
+    PageSize: js.UndefOr[NonNegativeInteger] = js.undefined,
     PaymentOption: PaymentOption = null,
     ServiceSpecification: ServiceSpecification = null,
     TermInYears: TermInYears = null
@@ -62,7 +62,7 @@ object GetReservationPurchaseRecommendationRequest {
     if (AccountScope != null) __obj.updateDynamic("AccountScope")(AccountScope.asInstanceOf[js.Any])
     if (LookbackPeriodInDays != null) __obj.updateDynamic("LookbackPeriodInDays")(LookbackPeriodInDays.asInstanceOf[js.Any])
     if (NextPageToken != null) __obj.updateDynamic("NextPageToken")(NextPageToken.asInstanceOf[js.Any])
-    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize.get.asInstanceOf[js.Any])
     if (PaymentOption != null) __obj.updateDynamic("PaymentOption")(PaymentOption.asInstanceOf[js.Any])
     if (ServiceSpecification != null) __obj.updateDynamic("ServiceSpecification")(ServiceSpecification.asInstanceOf[js.Any])
     if (TermInYears != null) __obj.updateDynamic("TermInYears")(TermInYears.asInstanceOf[js.Any])

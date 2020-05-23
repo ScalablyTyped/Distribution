@@ -12,10 +12,14 @@ trait TrafficLayerOptions extends js.Object {
 
 object TrafficLayerOptions {
   @scala.inline
-  def apply(interval: Double, overlayMap: js.UndefOr[Boolean] = js.undefined, zIndex: Int | Double = null): TrafficLayerOptions = {
+  def apply(
+    interval: Double,
+    overlayMap: js.UndefOr[Boolean] = js.undefined,
+    zIndex: js.UndefOr[Double] = js.undefined
+  ): TrafficLayerOptions = {
     val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any])
-    if (!js.isUndefined(overlayMap)) __obj.updateDynamic("overlayMap")(overlayMap.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlayMap)) __obj.updateDynamic("overlayMap")(overlayMap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrafficLayerOptions]
   }
 }

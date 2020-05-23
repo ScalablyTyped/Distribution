@@ -17,13 +17,13 @@ object SessionTerminateOptions {
     body: String = null,
     extraHeaders: js.Array[String] = null,
     reason_phrase: String = null,
-    status_code: Int | Double = null
+    status_code: js.UndefOr[Double] = js.undefined
   ): SessionTerminateOptions = {
     val __obj = js.Dynamic.literal()
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
     if (reason_phrase != null) __obj.updateDynamic("reason_phrase")(reason_phrase.asInstanceOf[js.Any])
-    if (status_code != null) __obj.updateDynamic("status_code")(status_code.asInstanceOf[js.Any])
+    if (!js.isUndefined(status_code)) __obj.updateDynamic("status_code")(status_code.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionTerminateOptions]
   }
 }

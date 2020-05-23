@@ -4,14 +4,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.SVGMetadataElement")
-@js.native
-class SVGMetadataElement protected () extends js.Object {
+trait SVGMetadataElement extends js.Object {
   @JSName("MSHTML.SVGMetadataElement_typekey")
-  var MSHTMLDotSVGMetadataElement_typekey: SVGMetadataElement = js.native
-  var focusable: SVGAnimatedEnumeration = js.native
-  var ownerSVGElement: ISVGSVGElement = js.native
-  var viewportElement: ISVGElement = js.native
-  var xmlbase: String = js.native
+  var MSHTMLDotSVGMetadataElement_typekey: SVGMetadataElement
+  var focusable: SVGAnimatedEnumeration
+  var ownerSVGElement: ISVGSVGElement
+  var viewportElement: ISVGElement
+  var xmlbase: String
+}
+
+object SVGMetadataElement {
+  @scala.inline
+  def apply(
+    MSHTMLDotSVGMetadataElement_typekey: SVGMetadataElement,
+    focusable: SVGAnimatedEnumeration,
+    ownerSVGElement: ISVGSVGElement,
+    viewportElement: ISVGElement,
+    xmlbase: String
+  ): SVGMetadataElement = {
+    val __obj = js.Dynamic.literal(focusable = focusable.asInstanceOf[js.Any], ownerSVGElement = ownerSVGElement.asInstanceOf[js.Any], viewportElement = viewportElement.asInstanceOf[js.Any], xmlbase = xmlbase.asInstanceOf[js.Any])
+    __obj.updateDynamic("MSHTML.SVGMetadataElement_typekey")(MSHTMLDotSVGMetadataElement_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SVGMetadataElement]
+  }
 }
 

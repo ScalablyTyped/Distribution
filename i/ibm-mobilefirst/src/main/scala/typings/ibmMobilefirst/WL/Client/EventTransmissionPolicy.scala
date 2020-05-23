@@ -11,10 +11,13 @@ trait EventTransmissionPolicy extends js.Object {
 
 object EventTransmissionPolicy {
   @scala.inline
-  def apply(eventStorageEnabled: js.UndefOr[Boolean] = js.undefined, interval: Int | Double = null): EventTransmissionPolicy = {
+  def apply(
+    eventStorageEnabled: js.UndefOr[Boolean] = js.undefined,
+    interval: js.UndefOr[Double] = js.undefined
+  ): EventTransmissionPolicy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(eventStorageEnabled)) __obj.updateDynamic("eventStorageEnabled")(eventStorageEnabled.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(eventStorageEnabled)) __obj.updateDynamic("eventStorageEnabled")(eventStorageEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventTransmissionPolicy]
   }
 }

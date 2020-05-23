@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation._
 
 trait BreakpointsChangeEvent extends js.Object {
   /**
-  		 * Added breakpoints.
-  		 */
+    * Added breakpoints.
+    */
   val added: js.Array[Breakpoint]
   /**
-  		 * Changed breakpoints.
-  		 */
+    * Changed breakpoints.
+    */
   val changed: js.Array[Breakpoint]
   /**
-  		 * Removed breakpoints.
-  		 */
+    * Removed breakpoints.
+    */
   val removed: js.Array[Breakpoint]
 }
 

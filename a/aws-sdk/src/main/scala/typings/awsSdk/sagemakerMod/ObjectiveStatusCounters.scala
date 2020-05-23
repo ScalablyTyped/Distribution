@@ -22,11 +22,15 @@ trait ObjectiveStatusCounters extends js.Object {
 
 object ObjectiveStatusCounters {
   @scala.inline
-  def apply(Failed: Int | Double = null, Pending: Int | Double = null, Succeeded: Int | Double = null): ObjectiveStatusCounters = {
+  def apply(
+    Failed: js.UndefOr[ObjectiveStatusCounter] = js.undefined,
+    Pending: js.UndefOr[ObjectiveStatusCounter] = js.undefined,
+    Succeeded: js.UndefOr[ObjectiveStatusCounter] = js.undefined
+  ): ObjectiveStatusCounters = {
     val __obj = js.Dynamic.literal()
-    if (Failed != null) __obj.updateDynamic("Failed")(Failed.asInstanceOf[js.Any])
-    if (Pending != null) __obj.updateDynamic("Pending")(Pending.asInstanceOf[js.Any])
-    if (Succeeded != null) __obj.updateDynamic("Succeeded")(Succeeded.asInstanceOf[js.Any])
+    if (!js.isUndefined(Failed)) __obj.updateDynamic("Failed")(Failed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Pending)) __obj.updateDynamic("Pending")(Pending.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Succeeded)) __obj.updateDynamic("Succeeded")(Succeeded.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectiveStatusCounters]
   }
 }

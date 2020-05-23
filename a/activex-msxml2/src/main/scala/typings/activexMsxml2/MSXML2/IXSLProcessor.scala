@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** IXSLProcessor Interface */
-@JSGlobal("MSXML2.IXSLProcessor")
 @js.native
-class IXSLProcessor protected () extends js.Object {
+trait IXSLProcessor extends js.Object {
   @JSName("MSXML2.IXSLProcessor_typekey")
   var MSXML2DotIXSLProcessor_typekey: IXSLProcessor = js.native
   /** XML input tree to transform */

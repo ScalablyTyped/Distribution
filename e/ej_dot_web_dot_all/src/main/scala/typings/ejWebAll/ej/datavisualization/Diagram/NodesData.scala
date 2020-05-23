@@ -19,7 +19,7 @@ object NodesData {
   @scala.inline
   def apply(collection: js.UndefOr[Boolean] = js.undefined, `type`: BPMNDataObjects | String = null): NodesData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collection)) __obj.updateDynamic("collection")(collection.asInstanceOf[js.Any])
+    if (!js.isUndefined(collection)) __obj.updateDynamic("collection")(collection.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodesData]
   }

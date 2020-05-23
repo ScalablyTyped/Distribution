@@ -39,21 +39,21 @@ object ClientOptions {
     cert: CertMeta = null,
     checkServerIdentity: (/* servername */ String, /* cert */ CertMeta) => Boolean = null,
     ciphers: String = null,
-    family: Int | Double = null,
+    family: js.UndefOr[Double] = js.undefined,
     followRedirects: js.UndefOr[Boolean] = js.undefined,
-    handshakeTimeout: Int | Double = null,
+    handshakeTimeout: js.UndefOr[Double] = js.undefined,
     headers: StringDictionary[String] = null,
     host: String = null,
     key: CertMeta = null,
     localAddress: String = null,
-    maxPayload: Int | Double = null,
-    maxRedirects: Int | Double = null,
+    maxPayload: js.UndefOr[Double] = js.undefined,
+    maxRedirects: js.UndefOr[Double] = js.undefined,
     origin: String = null,
     passphrase: String = null,
     perMessageDeflate: Boolean | PerMessageDeflateOptions = null,
     pfx: String | Buffer = null,
     protocol: String = null,
-    protocolVersion: Int | Double = null,
+    protocolVersion: js.UndefOr[Double] = js.undefined,
     rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
   ): ClientOptions = {
     val __obj = js.Dynamic.literal()
@@ -62,22 +62,22 @@ object ClientOptions {
     if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
     if (checkServerIdentity != null) __obj.updateDynamic("checkServerIdentity")(js.Any.fromFunction2(checkServerIdentity))
     if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers.asInstanceOf[js.Any])
-    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
-    if (!js.isUndefined(followRedirects)) __obj.updateDynamic("followRedirects")(followRedirects.asInstanceOf[js.Any])
-    if (handshakeTimeout != null) __obj.updateDynamic("handshakeTimeout")(handshakeTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(family)) __obj.updateDynamic("family")(family.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(followRedirects)) __obj.updateDynamic("followRedirects")(followRedirects.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(handshakeTimeout)) __obj.updateDynamic("handshakeTimeout")(handshakeTimeout.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
-    if (maxPayload != null) __obj.updateDynamic("maxPayload")(maxPayload.asInstanceOf[js.Any])
-    if (maxRedirects != null) __obj.updateDynamic("maxRedirects")(maxRedirects.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPayload)) __obj.updateDynamic("maxPayload")(maxPayload.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRedirects)) __obj.updateDynamic("maxRedirects")(maxRedirects.get.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
     if (perMessageDeflate != null) __obj.updateDynamic("perMessageDeflate")(perMessageDeflate.asInstanceOf[js.Any])
     if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (protocolVersion != null) __obj.updateDynamic("protocolVersion")(protocolVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
+    if (!js.isUndefined(protocolVersion)) __obj.updateDynamic("protocolVersion")(protocolVersion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
 }

@@ -1,7 +1,7 @@
 package typings.rnFetchBlob.mod
 
 import typings.rnFetchBlob.rnFetchBlobBooleans.`true`
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ trait PolyfillXMLHttpRequest extends PolyfillXMLHttpRequestEventTarget {
   def abort(): Unit = js.native
   def getAllResponseHeaders(): String | Null = js.native
   def getResponseHeader(field: String): String | Null = js.native
-  def onreadystatechange(e: Event_): Unit = js.native
+  def onreadystatechange(e: Event): Unit = js.native
   /**
     * XMLHttpRequest.open, always async, user and password not supported. When
     * this method invoked, headers should becomes empty again.

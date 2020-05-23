@@ -37,7 +37,7 @@ object ToolBarOptions {
     if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
     if (overflowClose != null) __obj.updateDynamic("overflowClose")(js.Any.fromFunction1(overflowClose))
     if (overflowOpen != null) __obj.updateDynamic("overflowOpen")(js.Any.fromFunction1(overflowOpen))
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.get.asInstanceOf[js.Any])
     if (toggle != null) __obj.updateDynamic("toggle")(js.Any.fromFunction1(toggle))
     __obj.asInstanceOf[ToolBarOptions]
   }

@@ -4,19 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.m.P13nDialog")
 @js.native
-class P13nDialog protected () extends Dialog {
-  /**
-    * Constructor for a new P13nDialog.Accepts an object literal <code>mSettings</code> that defines
-    * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
-    * sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the settings
-    * object.
-    * @param sId ID for the new control, generated automatically if no ID is given
-    * @param mSettings initial settings for the new control
-    */
-  def this(sId: String) = this()
-  def this(sId: String, mSettings: js.Any) = this()
+trait P13nDialog extends Dialog {
   /**
     * Adds some panel to the aggregation <code>panels</code>.
     * @since 1.26.0

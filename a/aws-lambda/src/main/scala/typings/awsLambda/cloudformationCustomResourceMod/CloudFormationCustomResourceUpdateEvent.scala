@@ -1,7 +1,7 @@
 package typings.awsLambda.cloudformationCustomResourceMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsLambda.AnonDictKey
+import typings.awsLambda.anon.DictKey
 import typings.awsLambda.awsLambdaStrings.Update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,7 +23,7 @@ object CloudFormationCustomResourceUpdateEvent {
     PhysicalResourceId: String,
     RequestId: String,
     RequestType: Update,
-    ResourceProperties: AnonDictKey,
+    ResourceProperties: DictKey,
     ResourceType: String,
     ResponseURL: String,
     ServiceToken: String,

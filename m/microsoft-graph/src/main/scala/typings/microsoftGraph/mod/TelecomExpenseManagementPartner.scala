@@ -28,9 +28,9 @@ object TelecomExpenseManagementPartner {
     url: String = null
   ): TelecomExpenseManagementPartner = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(appAuthorized)) __obj.updateDynamic("appAuthorized")(appAuthorized.asInstanceOf[js.Any])
+    if (!js.isUndefined(appAuthorized)) __obj.updateDynamic("appAuthorized")(appAuthorized.get.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (lastConnectionDateTime != null) __obj.updateDynamic("lastConnectionDateTime")(lastConnectionDateTime.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])

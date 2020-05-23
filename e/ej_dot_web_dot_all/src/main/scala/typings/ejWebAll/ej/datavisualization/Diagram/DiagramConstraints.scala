@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.Diagram
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -74,56 +73,6 @@ object DiagramConstraints extends js.Object {
   //Enables/Disables Zooming
   @js.native
   sealed trait Zoomable extends DiagramConstraints
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DiagramConstraints with Double] = js.native
-  /* 1 */ @js.native
-  object APIUpdate extends TopLevel[APIUpdate with Double]
-  
-  /* 4 */ @js.native
-  object Bridging extends TopLevel[Bridging with Double]
-  
-  /* 10 */ @js.native
-  object CrispEdges extends TopLevel[CrispEdges with Double]
-  
-  /* 15 */ @js.native
-  object Default extends TopLevel[Default with Double]
-  
-  /* 13 */ @js.native
-  object FloatElements extends TopLevel[FloatElements with Double]
-  
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 3 */ @js.native
-  object PageEditable extends TopLevel[PageEditable with Double]
-  
-  /* 8 */ @js.native
-  object Pannable extends TopLevel[Pannable with Double]
-  
-  /* 6 */ @js.native
-  object PannableX extends TopLevel[PannableX with Double]
-  
-  /* 7 */ @js.native
-  object PannableY extends TopLevel[PannableY with Double]
-  
-  /* 11 */ @js.native
-  object Resizable extends TopLevel[Resizable with Double]
-  
-  /* 14 */ @js.native
-  object Routing extends TopLevel[Routing with Double]
-  
-  /* 9 */ @js.native
-  object Undoable extends TopLevel[Undoable with Double]
-  
-  /* 2 */ @js.native
-  object UserInteraction extends TopLevel[UserInteraction with Double]
-  
-  /* 12 */ @js.native
-  object ZoomTextEditor extends TopLevel[ZoomTextEditor with Double]
-  
-  /* 5 */ @js.native
-  object Zoomable extends TopLevel[Zoomable with Double]
   
 }
 

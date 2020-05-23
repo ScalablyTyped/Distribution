@@ -14,7 +14,7 @@ trait FetchMoreQueryOptions[TVariables, K /* <: /* keyof TVariables */ String */
 
 object FetchMoreQueryOptions {
   @scala.inline
-  def apply[TVariables, K /* <: /* keyof TVariables */ String */](context: js.Any = null, query: DocumentNode = null, variables: Pick[TVariables, K] = null): FetchMoreQueryOptions[TVariables, K] = {
+  def apply[TVariables, K](context: js.Any = null, query: DocumentNode = null, variables: Pick[TVariables, K] = null): FetchMoreQueryOptions[TVariables, K] = {
     val __obj = js.Dynamic.literal()
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])

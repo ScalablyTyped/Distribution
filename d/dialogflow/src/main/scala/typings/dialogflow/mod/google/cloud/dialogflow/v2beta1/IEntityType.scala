@@ -30,20 +30,24 @@ trait IEntityType extends js.Object {
 object IEntityType {
   @scala.inline
   def apply(
-    autoExpansionMode: AutoExpansionMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.EntityType.AutoExpansionMode * / any */ String) = null,
-    displayName: String = null,
-    enableFuzzyExtraction: js.UndefOr[Boolean] = js.undefined,
-    entities: js.Array[IEntity] = null,
-    kind: Kind | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.EntityType.Kind * / any */ String) = null,
-    name: String = null
+    autoExpansionMode: js.UndefOr[
+      Null | AutoExpansionMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.EntityType.AutoExpansionMode * / any */ String)
+    ] = js.undefined,
+    displayName: js.UndefOr[Null | String] = js.undefined,
+    enableFuzzyExtraction: js.UndefOr[Null | Boolean] = js.undefined,
+    entities: js.UndefOr[Null | js.Array[IEntity]] = js.undefined,
+    kind: js.UndefOr[
+      Null | Kind | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.EntityType.Kind * / any */ String)
+    ] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined
   ): IEntityType = {
     val __obj = js.Dynamic.literal()
-    if (autoExpansionMode != null) __obj.updateDynamic("autoExpansionMode")(autoExpansionMode.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoExpansionMode)) __obj.updateDynamic("autoExpansionMode")(autoExpansionMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayName)) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (!js.isUndefined(enableFuzzyExtraction)) __obj.updateDynamic("enableFuzzyExtraction")(enableFuzzyExtraction.asInstanceOf[js.Any])
-    if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(entities)) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
+    if (!js.isUndefined(kind)) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEntityType]
   }
 }

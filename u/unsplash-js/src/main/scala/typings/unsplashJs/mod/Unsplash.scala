@@ -1,7 +1,7 @@
 package typings.unsplashJs.mod
 
 import typings.std.Response
-import typings.unsplashJs.AnonBody
+import typings.unsplashJs.anon.Body
 import typings.unsplashJs.mod.UnsplashApi.Auth
 import typings.unsplashJs.mod.UnsplashApi.Collections
 import typings.unsplashJs.mod.UnsplashApi.CurrentUser
@@ -21,7 +21,7 @@ trait Unsplash extends js.Object {
   var search: Search
   var stats: Stats
   var users: Users
-  def request(requestOptions: AnonBody): js.Promise[Response]
+  def request(requestOptions: Body): js.Promise[Response]
 }
 
 object Unsplash {
@@ -31,7 +31,7 @@ object Unsplash {
     collections: Collections,
     currentUser: CurrentUser,
     photos: Photo,
-    request: AnonBody => js.Promise[Response],
+    request: Body => js.Promise[Response],
     search: Search,
     stats: Stats,
     users: Users

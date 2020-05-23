@@ -27,7 +27,7 @@ object GridLineOptions {
   @scala.inline
   def apply(
     borderDash: js.Array[Double] = null,
-    borderDashOffset: Int | Double = null,
+    borderDashOffset: js.UndefOr[Double] = js.undefined,
     circular: js.UndefOr[Boolean] = js.undefined,
     color: ChartColor = null,
     display: js.UndefOr[Boolean] = js.undefined,
@@ -36,30 +36,30 @@ object GridLineOptions {
     drawTicks: js.UndefOr[Boolean] = js.undefined,
     lineWidth: Double | js.Array[Double] = null,
     offsetGridLines: js.UndefOr[Boolean] = js.undefined,
-    tickMarkLength: Int | Double = null,
-    z: Int | Double = null,
+    tickMarkLength: js.UndefOr[Double] = js.undefined,
+    z: js.UndefOr[Double] = js.undefined,
     zeroLineBorderDash: js.Array[Double] = null,
-    zeroLineBorderDashOffset: Int | Double = null,
+    zeroLineBorderDashOffset: js.UndefOr[Double] = js.undefined,
     zeroLineColor: ChartColor = null,
-    zeroLineWidth: Int | Double = null
+    zeroLineWidth: js.UndefOr[Double] = js.undefined
   ): GridLineOptions = {
     val __obj = js.Dynamic.literal()
     if (borderDash != null) __obj.updateDynamic("borderDash")(borderDash.asInstanceOf[js.Any])
-    if (borderDashOffset != null) __obj.updateDynamic("borderDashOffset")(borderDashOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(circular)) __obj.updateDynamic("circular")(circular.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderDashOffset)) __obj.updateDynamic("borderDashOffset")(borderDashOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(circular)) __obj.updateDynamic("circular")(circular.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawBorder)) __obj.updateDynamic("drawBorder")(drawBorder.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawOnChartArea)) __obj.updateDynamic("drawOnChartArea")(drawOnChartArea.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawTicks)) __obj.updateDynamic("drawTicks")(drawTicks.asInstanceOf[js.Any])
+    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawBorder)) __obj.updateDynamic("drawBorder")(drawBorder.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawOnChartArea)) __obj.updateDynamic("drawOnChartArea")(drawOnChartArea.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawTicks)) __obj.updateDynamic("drawTicks")(drawTicks.get.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetGridLines)) __obj.updateDynamic("offsetGridLines")(offsetGridLines.asInstanceOf[js.Any])
-    if (tickMarkLength != null) __obj.updateDynamic("tickMarkLength")(tickMarkLength.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetGridLines)) __obj.updateDynamic("offsetGridLines")(offsetGridLines.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tickMarkLength)) __obj.updateDynamic("tickMarkLength")(tickMarkLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
     if (zeroLineBorderDash != null) __obj.updateDynamic("zeroLineBorderDash")(zeroLineBorderDash.asInstanceOf[js.Any])
-    if (zeroLineBorderDashOffset != null) __obj.updateDynamic("zeroLineBorderDashOffset")(zeroLineBorderDashOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(zeroLineBorderDashOffset)) __obj.updateDynamic("zeroLineBorderDashOffset")(zeroLineBorderDashOffset.get.asInstanceOf[js.Any])
     if (zeroLineColor != null) __obj.updateDynamic("zeroLineColor")(zeroLineColor.asInstanceOf[js.Any])
-    if (zeroLineWidth != null) __obj.updateDynamic("zeroLineWidth")(zeroLineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(zeroLineWidth)) __obj.updateDynamic("zeroLineWidth")(zeroLineWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridLineOptions]
   }
 }

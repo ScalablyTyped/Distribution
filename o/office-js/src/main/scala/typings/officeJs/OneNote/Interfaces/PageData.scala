@@ -72,7 +72,7 @@ object PageData {
     contents: js.Array[PageContentData] = null,
     id: String = null,
     inkAnalysisOrNull: InkAnalysisData = null,
-    pageLevel: Int | Double = null,
+    pageLevel: js.UndefOr[Double] = js.undefined,
     title: String = null,
     webUrl: String = null
   ): PageData = {
@@ -82,7 +82,7 @@ object PageData {
     if (contents != null) __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inkAnalysisOrNull != null) __obj.updateDynamic("inkAnalysisOrNull")(inkAnalysisOrNull.asInstanceOf[js.Any])
-    if (pageLevel != null) __obj.updateDynamic("pageLevel")(pageLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageLevel)) __obj.updateDynamic("pageLevel")(pageLevel.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (webUrl != null) __obj.updateDynamic("webUrl")(webUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageData]

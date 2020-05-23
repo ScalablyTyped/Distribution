@@ -3,8 +3,8 @@ package typings.reduxDevtoolsExtension.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.redux.mod.Action
 import typings.redux.mod.ActionCreator
-import typings.reduxDevtoolsExtension.AnonDate
-import typings.reduxDevtoolsExtension.AnonDispatch
+import typings.reduxDevtoolsExtension.anon.Date
+import typings.reduxDevtoolsExtension.anon.Dispatch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,7 +41,7 @@ trait EnhancerOptions extends js.Object {
     * Note that except `true`/`false`, `import` and `export` can be set as `custom` (which is by default for Redux enhancer), meaning that the importing/exporting occurs on the client side.
     * Otherwise, you'll get/set the data right from the monitor part.
     */
-  var features: js.UndefOr[AnonDispatch] = js.undefined
+  var features: js.UndefOr[Dispatch] = js.undefined
   /**
     * if more than one action is dispatched in the indicated interval, all new actions will be collected and sent at once.
     * It is the joint between performance and speed. When set to `0`, all actions will be sent instantly.
@@ -82,7 +82,7 @@ trait EnhancerOptions extends js.Object {
     *   For `function` key you can also specify a custom function which handles serialization.
     *   See [`jsan`](https://github.com/kolodny/jsan) for more details.
     */
-  var serialize: js.UndefOr[Boolean | AnonDate] = js.undefined
+  var serialize: js.UndefOr[Boolean | Date] = js.undefined
   /**
     * if specified as `true`, whenever there's an exception in reducers, the monitors will show the error message, and next actions will not be dispatched.
     *
@@ -132,41 +132,41 @@ object EnhancerOptions {
     actionsBlacklist: String | js.Array[String] = null,
     actionsWhitelist: String | js.Array[String] = null,
     autoPause: js.UndefOr[Boolean] = js.undefined,
-    features: AnonDispatch = null,
-    latency: Int | Double = null,
-    maxAge: Int | Double = null,
+    features: Dispatch = null,
+    latency: js.UndefOr[Double] = js.undefined,
+    maxAge: js.UndefOr[Double] = js.undefined,
     name: String = null,
     pauseActionType: String = null,
     predicate: (/* state */ js.Any, /* action */ Action[_]) => Boolean = null,
-    serialize: Boolean | AnonDate = null,
+    serialize: Boolean | Date = null,
     shouldCatchErrors: js.UndefOr[Boolean] = js.undefined,
     shouldHotReload: js.UndefOr[Boolean] = js.undefined,
     shouldRecordChanges: js.UndefOr[Boolean] = js.undefined,
     shouldStartLocked: js.UndefOr[Boolean] = js.undefined,
     stateSanitizer: (/* state */ js.Any, /* index */ Double) => _ = null,
     trace: Boolean | (js.Function1[/* action */ Action[_], String]) = null,
-    traceLimit: Int | Double = null
+    traceLimit: js.UndefOr[Double] = js.undefined
   ): EnhancerOptions = {
     val __obj = js.Dynamic.literal()
     if (actionCreators != null) __obj.updateDynamic("actionCreators")(actionCreators.asInstanceOf[js.Any])
     if (actionSanitizer != null) __obj.updateDynamic("actionSanitizer")(js.Any.fromFunction2(actionSanitizer))
     if (actionsBlacklist != null) __obj.updateDynamic("actionsBlacklist")(actionsBlacklist.asInstanceOf[js.Any])
     if (actionsWhitelist != null) __obj.updateDynamic("actionsWhitelist")(actionsWhitelist.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPause)) __obj.updateDynamic("autoPause")(autoPause.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPause)) __obj.updateDynamic("autoPause")(autoPause.get.asInstanceOf[js.Any])
     if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
-    if (latency != null) __obj.updateDynamic("latency")(latency.asInstanceOf[js.Any])
-    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
+    if (!js.isUndefined(latency)) __obj.updateDynamic("latency")(latency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAge)) __obj.updateDynamic("maxAge")(maxAge.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (pauseActionType != null) __obj.updateDynamic("pauseActionType")(pauseActionType.asInstanceOf[js.Any])
     if (predicate != null) __obj.updateDynamic("predicate")(js.Any.fromFunction2(predicate))
     if (serialize != null) __obj.updateDynamic("serialize")(serialize.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldCatchErrors)) __obj.updateDynamic("shouldCatchErrors")(shouldCatchErrors.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldHotReload)) __obj.updateDynamic("shouldHotReload")(shouldHotReload.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldRecordChanges)) __obj.updateDynamic("shouldRecordChanges")(shouldRecordChanges.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldStartLocked)) __obj.updateDynamic("shouldStartLocked")(shouldStartLocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldCatchErrors)) __obj.updateDynamic("shouldCatchErrors")(shouldCatchErrors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldHotReload)) __obj.updateDynamic("shouldHotReload")(shouldHotReload.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldRecordChanges)) __obj.updateDynamic("shouldRecordChanges")(shouldRecordChanges.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldStartLocked)) __obj.updateDynamic("shouldStartLocked")(shouldStartLocked.get.asInstanceOf[js.Any])
     if (stateSanitizer != null) __obj.updateDynamic("stateSanitizer")(js.Any.fromFunction2(stateSanitizer))
     if (trace != null) __obj.updateDynamic("trace")(trace.asInstanceOf[js.Any])
-    if (traceLimit != null) __obj.updateDynamic("traceLimit")(traceLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(traceLimit)) __obj.updateDynamic("traceLimit")(traceLimit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnhancerOptions]
   }
 }

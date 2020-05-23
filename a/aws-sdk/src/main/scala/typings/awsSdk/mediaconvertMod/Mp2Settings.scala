@@ -22,11 +22,15 @@ trait Mp2Settings extends js.Object {
 
 object Mp2Settings {
   @scala.inline
-  def apply(Bitrate: Int | Double = null, Channels: Int | Double = null, SampleRate: Int | Double = null): Mp2Settings = {
+  def apply(
+    Bitrate: js.UndefOr[integerMin32000Max384000] = js.undefined,
+    Channels: js.UndefOr[integerMin1Max2] = js.undefined,
+    SampleRate: js.UndefOr[integerMin32000Max48000] = js.undefined
+  ): Mp2Settings = {
     val __obj = js.Dynamic.literal()
-    if (Bitrate != null) __obj.updateDynamic("Bitrate")(Bitrate.asInstanceOf[js.Any])
-    if (Channels != null) __obj.updateDynamic("Channels")(Channels.asInstanceOf[js.Any])
-    if (SampleRate != null) __obj.updateDynamic("SampleRate")(SampleRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(Bitrate)) __obj.updateDynamic("Bitrate")(Bitrate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Channels)) __obj.updateDynamic("Channels")(Channels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SampleRate)) __obj.updateDynamic("SampleRate")(SampleRate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mp2Settings]
   }
 }

@@ -25,10 +25,10 @@ object PortMapping {
   def apply(
     applicationPort: NonSystemPort,
     jobPort: Port,
-    enableOnPublicIp: js.UndefOr[scala.Boolean] = js.undefined
+    enableOnPublicIp: js.UndefOr[Boolean] = js.undefined
   ): PortMapping = {
     val __obj = js.Dynamic.literal(applicationPort = applicationPort.asInstanceOf[js.Any], jobPort = jobPort.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableOnPublicIp)) __obj.updateDynamic("enableOnPublicIp")(enableOnPublicIp.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableOnPublicIp)) __obj.updateDynamic("enableOnPublicIp")(enableOnPublicIp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortMapping]
   }
 }

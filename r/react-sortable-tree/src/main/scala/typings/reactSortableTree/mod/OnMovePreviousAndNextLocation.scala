@@ -17,8 +17,7 @@ object OnMovePreviousAndNextLocation {
     prevTreeIndex: Double,
     nextParentNode: TreeItem = null
   ): OnMovePreviousAndNextLocation = {
-    val __obj = js.Dynamic.literal(nextPath = nextPath.asInstanceOf[js.Any], nextTreeIndex = nextTreeIndex.asInstanceOf[js.Any], prevPath = prevPath.asInstanceOf[js.Any], prevTreeIndex = prevTreeIndex.asInstanceOf[js.Any])
-    if (nextParentNode != null) __obj.updateDynamic("nextParentNode")(nextParentNode.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(nextPath = nextPath.asInstanceOf[js.Any], nextTreeIndex = nextTreeIndex.asInstanceOf[js.Any], prevPath = prevPath.asInstanceOf[js.Any], prevTreeIndex = prevTreeIndex.asInstanceOf[js.Any], nextParentNode = nextParentNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnMovePreviousAndNextLocation]
   }
 }

@@ -16,15 +16,15 @@ object WriteOptions {
   @scala.inline
   def apply(
     dataProjection: ProjectionLike = null,
-    decimals: Int | Double = null,
+    decimals: js.UndefOr[Double] = js.undefined,
     featureProjection: ProjectionLike = null,
     rightHanded: js.UndefOr[Boolean] = js.undefined
   ): WriteOptions = {
     val __obj = js.Dynamic.literal()
     if (dataProjection != null) __obj.updateDynamic("dataProjection")(dataProjection.asInstanceOf[js.Any])
-    if (decimals != null) __obj.updateDynamic("decimals")(decimals.asInstanceOf[js.Any])
+    if (!js.isUndefined(decimals)) __obj.updateDynamic("decimals")(decimals.get.asInstanceOf[js.Any])
     if (featureProjection != null) __obj.updateDynamic("featureProjection")(featureProjection.asInstanceOf[js.Any])
-    if (!js.isUndefined(rightHanded)) __obj.updateDynamic("rightHanded")(rightHanded.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightHanded)) __obj.updateDynamic("rightHanded")(rightHanded.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteOptions]
   }
 }

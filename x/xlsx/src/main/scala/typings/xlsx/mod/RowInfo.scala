@@ -21,15 +21,15 @@ object RowInfo {
   @scala.inline
   def apply(
     hidden: js.UndefOr[Boolean] = js.undefined,
-    hpt: Int | Double = null,
-    hpx: Int | Double = null,
-    level: Int | Double = null
+    hpt: js.UndefOr[Double] = js.undefined,
+    hpx: js.UndefOr[Double] = js.undefined,
+    level: js.UndefOr[Double] = js.undefined
   ): RowInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (hpt != null) __obj.updateDynamic("hpt")(hpt.asInstanceOf[js.Any])
-    if (hpx != null) __obj.updateDynamic("hpx")(hpx.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hpt)) __obj.updateDynamic("hpt")(hpt.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hpx)) __obj.updateDynamic("hpx")(hpx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowInfo]
   }
 }

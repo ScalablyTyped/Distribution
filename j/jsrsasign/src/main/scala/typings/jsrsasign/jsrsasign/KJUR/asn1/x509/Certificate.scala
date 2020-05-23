@@ -1,6 +1,5 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
-import typings.jsrsasign.AnonPrvkeyobj
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,10 +28,7 @@ import scala.scalajs.js.annotation._
   * //     signatureAlgorithm   AlgorithmIdentifier,
   * //     signature            BIT STRING  }
   */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.Certificate")
-@js.native
-class Certificate () extends ASN1Object {
-  def this(params: AnonPrvkeyobj) = this()
+trait Certificate extends ASN1Object {
   /**
     * get PEM formatted certificate string after signed
     * @return PEM formatted string of certificate
@@ -41,20 +37,41 @@ class Certificate () extends ASN1Object {
     * cert.sign();
     * var sPEM = cert.getPEMString();
     */
-  def getPEMString(): String = js.native
+  def getPEMString(): String
   /**
     * set signature value internally by hex string
     * @example
     * var cert = new KJUR.asn1.x509.Certificate({'tbscertobj': tbs});
     * cert.setSignatureHex('01020304');
     */
-  def setSignatureHex(sigHex: String): Unit = js.native
+  def setSignatureHex(sigHex: String): Unit
   /**
     * sign TBSCertificate and set signature value internally
     * @example
     * var cert = new KJUR.asn1.x509.Certificate({tbscertobj: tbs, prvkeyobj: prvKey});
     * cert.sign();
     */
-  def sign(): Unit = js.native
+  def sign(): Unit
+}
+
+object Certificate {
+  @scala.inline
+  def apply(
+    getEncodedHex: () => String,
+    getFreshValueHex: () => String,
+    getLengthHexFromValue: () => String,
+    getPEMString: () => String,
+    getValueHex: () => String,
+    hL: String,
+    hT: String,
+    hTLV: String,
+    hV: String,
+    isModified: String,
+    setSignatureHex: String => Unit,
+    sign: () => Unit
+  ): Certificate = {
+    val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getPEMString = js.Any.fromFunction0(getPEMString), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setSignatureHex = js.Any.fromFunction1(setSignatureHex), sign = js.Any.fromFunction0(sign))
+    __obj.asInstanceOf[Certificate]
+  }
 }
 

@@ -4,13 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Alert")
 @js.native
-/**
-  * _Presents an alert._
-  * @see https://docs.scriptable.app/alert/#-new-alert
-  */
-class Alert () extends js.Object {
+trait Alert extends js.Object {
   /**
     * _Detailed message displayed in the alert._
     * @see https://docs.scriptable.app/alert/#message

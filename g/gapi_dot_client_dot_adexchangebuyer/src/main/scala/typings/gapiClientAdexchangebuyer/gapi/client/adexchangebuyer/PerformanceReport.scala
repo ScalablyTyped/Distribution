@@ -54,52 +54,52 @@ trait PerformanceReport extends js.Object {
 object PerformanceReport {
   @scala.inline
   def apply(
-    bidRate: Int | Double = null,
-    bidRequestRate: Int | Double = null,
+    bidRate: js.UndefOr[Double] = js.undefined,
+    bidRequestRate: js.UndefOr[Double] = js.undefined,
     calloutStatusRate: js.Array[_] = null,
     cookieMatcherStatusRate: js.Array[_] = null,
     creativeStatusRate: js.Array[_] = null,
-    filteredBidRate: Int | Double = null,
+    filteredBidRate: js.UndefOr[Double] = js.undefined,
     hostedMatchStatusRate: js.Array[_] = null,
-    inventoryMatchRate: Int | Double = null,
+    inventoryMatchRate: js.UndefOr[Double] = js.undefined,
     kind: String = null,
-    latency50thPercentile: Int | Double = null,
-    latency85thPercentile: Int | Double = null,
-    latency95thPercentile: Int | Double = null,
-    noQuotaInRegion: Int | Double = null,
-    outOfQuota: Int | Double = null,
-    pixelMatchRequests: Int | Double = null,
-    pixelMatchResponses: Int | Double = null,
-    quotaConfiguredLimit: Int | Double = null,
-    quotaThrottledLimit: Int | Double = null,
+    latency50thPercentile: js.UndefOr[Double] = js.undefined,
+    latency85thPercentile: js.UndefOr[Double] = js.undefined,
+    latency95thPercentile: js.UndefOr[Double] = js.undefined,
+    noQuotaInRegion: js.UndefOr[Double] = js.undefined,
+    outOfQuota: js.UndefOr[Double] = js.undefined,
+    pixelMatchRequests: js.UndefOr[Double] = js.undefined,
+    pixelMatchResponses: js.UndefOr[Double] = js.undefined,
+    quotaConfiguredLimit: js.UndefOr[Double] = js.undefined,
+    quotaThrottledLimit: js.UndefOr[Double] = js.undefined,
     region: String = null,
-    successfulRequestRate: Int | Double = null,
+    successfulRequestRate: js.UndefOr[Double] = js.undefined,
     timestamp: String = null,
-    unsuccessfulRequestRate: Int | Double = null
+    unsuccessfulRequestRate: js.UndefOr[Double] = js.undefined
   ): PerformanceReport = {
     val __obj = js.Dynamic.literal()
-    if (bidRate != null) __obj.updateDynamic("bidRate")(bidRate.asInstanceOf[js.Any])
-    if (bidRequestRate != null) __obj.updateDynamic("bidRequestRate")(bidRequestRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(bidRate)) __obj.updateDynamic("bidRate")(bidRate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bidRequestRate)) __obj.updateDynamic("bidRequestRate")(bidRequestRate.get.asInstanceOf[js.Any])
     if (calloutStatusRate != null) __obj.updateDynamic("calloutStatusRate")(calloutStatusRate.asInstanceOf[js.Any])
     if (cookieMatcherStatusRate != null) __obj.updateDynamic("cookieMatcherStatusRate")(cookieMatcherStatusRate.asInstanceOf[js.Any])
     if (creativeStatusRate != null) __obj.updateDynamic("creativeStatusRate")(creativeStatusRate.asInstanceOf[js.Any])
-    if (filteredBidRate != null) __obj.updateDynamic("filteredBidRate")(filteredBidRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(filteredBidRate)) __obj.updateDynamic("filteredBidRate")(filteredBidRate.get.asInstanceOf[js.Any])
     if (hostedMatchStatusRate != null) __obj.updateDynamic("hostedMatchStatusRate")(hostedMatchStatusRate.asInstanceOf[js.Any])
-    if (inventoryMatchRate != null) __obj.updateDynamic("inventoryMatchRate")(inventoryMatchRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(inventoryMatchRate)) __obj.updateDynamic("inventoryMatchRate")(inventoryMatchRate.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (latency50thPercentile != null) __obj.updateDynamic("latency50thPercentile")(latency50thPercentile.asInstanceOf[js.Any])
-    if (latency85thPercentile != null) __obj.updateDynamic("latency85thPercentile")(latency85thPercentile.asInstanceOf[js.Any])
-    if (latency95thPercentile != null) __obj.updateDynamic("latency95thPercentile")(latency95thPercentile.asInstanceOf[js.Any])
-    if (noQuotaInRegion != null) __obj.updateDynamic("noQuotaInRegion")(noQuotaInRegion.asInstanceOf[js.Any])
-    if (outOfQuota != null) __obj.updateDynamic("outOfQuota")(outOfQuota.asInstanceOf[js.Any])
-    if (pixelMatchRequests != null) __obj.updateDynamic("pixelMatchRequests")(pixelMatchRequests.asInstanceOf[js.Any])
-    if (pixelMatchResponses != null) __obj.updateDynamic("pixelMatchResponses")(pixelMatchResponses.asInstanceOf[js.Any])
-    if (quotaConfiguredLimit != null) __obj.updateDynamic("quotaConfiguredLimit")(quotaConfiguredLimit.asInstanceOf[js.Any])
-    if (quotaThrottledLimit != null) __obj.updateDynamic("quotaThrottledLimit")(quotaThrottledLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(latency50thPercentile)) __obj.updateDynamic("latency50thPercentile")(latency50thPercentile.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(latency85thPercentile)) __obj.updateDynamic("latency85thPercentile")(latency85thPercentile.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(latency95thPercentile)) __obj.updateDynamic("latency95thPercentile")(latency95thPercentile.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noQuotaInRegion)) __obj.updateDynamic("noQuotaInRegion")(noQuotaInRegion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(outOfQuota)) __obj.updateDynamic("outOfQuota")(outOfQuota.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pixelMatchRequests)) __obj.updateDynamic("pixelMatchRequests")(pixelMatchRequests.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pixelMatchResponses)) __obj.updateDynamic("pixelMatchResponses")(pixelMatchResponses.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quotaConfiguredLimit)) __obj.updateDynamic("quotaConfiguredLimit")(quotaConfiguredLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quotaThrottledLimit)) __obj.updateDynamic("quotaThrottledLimit")(quotaThrottledLimit.get.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (successfulRequestRate != null) __obj.updateDynamic("successfulRequestRate")(successfulRequestRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(successfulRequestRate)) __obj.updateDynamic("successfulRequestRate")(successfulRequestRate.get.asInstanceOf[js.Any])
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
-    if (unsuccessfulRequestRate != null) __obj.updateDynamic("unsuccessfulRequestRate")(unsuccessfulRequestRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(unsuccessfulRequestRate)) __obj.updateDynamic("unsuccessfulRequestRate")(unsuccessfulRequestRate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerformanceReport]
   }
 }

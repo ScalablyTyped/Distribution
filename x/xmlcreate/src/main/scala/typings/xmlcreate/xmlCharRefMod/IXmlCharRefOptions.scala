@@ -20,7 +20,7 @@ object IXmlCharRefOptions {
   @scala.inline
   def apply(char: String, hex: js.UndefOr[Boolean] = js.undefined): IXmlCharRefOptions = {
     val __obj = js.Dynamic.literal(char = char.asInstanceOf[js.Any])
-    if (!js.isUndefined(hex)) __obj.updateDynamic("hex")(hex.asInstanceOf[js.Any])
+    if (!js.isUndefined(hex)) __obj.updateDynamic("hex")(hex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IXmlCharRefOptions]
   }
 }

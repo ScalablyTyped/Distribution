@@ -20,14 +20,7 @@ trait CustomOptions
 
 object CustomOptions {
   @scala.inline
-  def apply(
-    StringDictionary: /**
-    * Custom properties can be defined on Options.
-    * These options are forwarded along to module-deps and browser-pack directly.
-    */
-  /* propName */ StringDictionary[js.Any] = null,
-    basedir: String = null
-  ): CustomOptions = {
+  def apply(StringDictionary: /* name */ StringDictionary[js.Any] = null, basedir: String = null): CustomOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (basedir != null) __obj.updateDynamic("basedir")(basedir.asInstanceOf[js.Any])

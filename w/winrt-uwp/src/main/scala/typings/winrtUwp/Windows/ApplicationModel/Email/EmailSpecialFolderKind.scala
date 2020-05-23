@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,29 +38,6 @@ object EmailSpecialFolderKind extends js.Object {
   /** This is the sent items folder. */
   @js.native
   sealed trait sent extends EmailSpecialFolderKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EmailSpecialFolderKind with Double] = js.native
-  /* 5 */ @js.native
-  object deletedItems extends TopLevel[deletedItems with Double]
-  
-  /* 4 */ @js.native
-  object drafts extends TopLevel[drafts with Double]
-  
-  /* 2 */ @js.native
-  object inbox extends TopLevel[inbox with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 3 */ @js.native
-  object outbox extends TopLevel[outbox with Double]
-  
-  /* 1 */ @js.native
-  object root extends TopLevel[root with Double]
-  
-  /* 6 */ @js.native
-  object sent extends TopLevel[sent with Double]
   
 }
 

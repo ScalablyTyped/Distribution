@@ -16,17 +16,17 @@ object Options {
   @scala.inline
   def apply(
     block: ScrollLogicalPosition = null,
-    boundary: CustomScrollBoundary = null,
+    boundary: js.UndefOr[Null | CustomScrollBoundary] = js.undefined,
     `inline`: ScrollLogicalPosition = null,
     scrollMode: ScrollMode = null,
-    skipOverflowHiddenElements: js.UndefOr[Boolean] = js.undefined
+    skipOverflowHiddenElements: js.UndefOr[SkipOverflowHiddenElements] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (block != null) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
-    if (boundary != null) __obj.updateDynamic("boundary")(boundary.asInstanceOf[js.Any])
+    if (!js.isUndefined(boundary)) __obj.updateDynamic("boundary")(boundary.asInstanceOf[js.Any])
     if (`inline` != null) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     if (scrollMode != null) __obj.updateDynamic("scrollMode")(scrollMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipOverflowHiddenElements)) __obj.updateDynamic("skipOverflowHiddenElements")(skipOverflowHiddenElements.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipOverflowHiddenElements)) __obj.updateDynamic("skipOverflowHiddenElements")(skipOverflowHiddenElements.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

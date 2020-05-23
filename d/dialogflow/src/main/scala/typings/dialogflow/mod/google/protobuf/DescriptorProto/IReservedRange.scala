@@ -14,10 +14,10 @@ trait IReservedRange extends js.Object {
 
 object IReservedRange {
   @scala.inline
-  def apply(end: Int | Double = null, start: Int | Double = null): IReservedRange = {
+  def apply(end: js.UndefOr[Null | Double] = js.undefined, start: js.UndefOr[Null | Double] = js.undefined): IReservedRange = {
     val __obj = js.Dynamic.literal()
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[IReservedRange]
   }
 }

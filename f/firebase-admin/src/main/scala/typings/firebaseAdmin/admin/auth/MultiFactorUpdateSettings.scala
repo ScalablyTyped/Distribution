@@ -13,14 +13,15 @@ trait MultiFactorUpdateSettings extends js.Object {
     * existing list of second factors.
     * When null is passed, all of the user's existing second factors are removed.
     */
-  var enrolledFactors: js.Array[UpdateMultiFactorInfoRequest] | Null
+  var enrolledFactors: js.Array[typings.firebaseAdmin.authMod.admin.auth.UpdateMultiFactorInfoRequest] | Null
 }
 
 object MultiFactorUpdateSettings {
   @scala.inline
-  def apply(enrolledFactors: js.Array[UpdateMultiFactorInfoRequest] = null): MultiFactorUpdateSettings = {
-    val __obj = js.Dynamic.literal()
-    if (enrolledFactors != null) __obj.updateDynamic("enrolledFactors")(enrolledFactors.asInstanceOf[js.Any])
+  def apply(
+    enrolledFactors: js.Array[typings.firebaseAdmin.authMod.admin.auth.UpdateMultiFactorInfoRequest] = null
+  ): MultiFactorUpdateSettings = {
+    val __obj = js.Dynamic.literal(enrolledFactors = enrolledFactors.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiFactorUpdateSettings]
   }
 }

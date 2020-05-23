@@ -71,10 +71,10 @@ object ActivityResponse {
     ScheduledStart: string = null,
     Start: string = null,
     State: string = null,
-    SuccessfulEndpointCount: Int | Double = null,
-    TimezonesCompletedCount: Int | Double = null,
-    TimezonesTotalCount: Int | Double = null,
-    TotalEndpointCount: Int | Double = null,
+    SuccessfulEndpointCount: js.UndefOr[integer] = js.undefined,
+    TimezonesCompletedCount: js.UndefOr[integer] = js.undefined,
+    TimezonesTotalCount: js.UndefOr[integer] = js.undefined,
+    TotalEndpointCount: js.UndefOr[integer] = js.undefined,
     TreatmentId: string = null
   ): ActivityResponse = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], CampaignId = CampaignId.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
@@ -83,10 +83,10 @@ object ActivityResponse {
     if (ScheduledStart != null) __obj.updateDynamic("ScheduledStart")(ScheduledStart.asInstanceOf[js.Any])
     if (Start != null) __obj.updateDynamic("Start")(Start.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (SuccessfulEndpointCount != null) __obj.updateDynamic("SuccessfulEndpointCount")(SuccessfulEndpointCount.asInstanceOf[js.Any])
-    if (TimezonesCompletedCount != null) __obj.updateDynamic("TimezonesCompletedCount")(TimezonesCompletedCount.asInstanceOf[js.Any])
-    if (TimezonesTotalCount != null) __obj.updateDynamic("TimezonesTotalCount")(TimezonesTotalCount.asInstanceOf[js.Any])
-    if (TotalEndpointCount != null) __obj.updateDynamic("TotalEndpointCount")(TotalEndpointCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(SuccessfulEndpointCount)) __obj.updateDynamic("SuccessfulEndpointCount")(SuccessfulEndpointCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TimezonesCompletedCount)) __obj.updateDynamic("TimezonesCompletedCount")(TimezonesCompletedCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TimezonesTotalCount)) __obj.updateDynamic("TimezonesTotalCount")(TimezonesTotalCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalEndpointCount)) __obj.updateDynamic("TotalEndpointCount")(TotalEndpointCount.get.asInstanceOf[js.Any])
     if (TreatmentId != null) __obj.updateDynamic("TreatmentId")(TreatmentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityResponse]
   }

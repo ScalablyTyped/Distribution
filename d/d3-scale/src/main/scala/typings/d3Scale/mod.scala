@@ -1,5 +1,8 @@
 package typings.d3Scale
 
+import typings.d3Scale.anon.Name
+import typings.d3Scale.anon.ToString
+import typings.d3Scale.anon.ValueOf
 import typings.d3Scale.d3ScaleStrings.`implicit`
 import typings.d3Time.mod.CountableTimeInterval
 import typings.d3Time.mod.TimeInterval_
@@ -12,7 +15,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   @js.native
-  trait ScaleBand_[Domain /* <: AnonToString */] extends js.Object {
+  trait ScaleBand_[Domain /* <: ToString */] extends js.Object {
     /**
       * Given a value in the input domain, returns the start of the corresponding band derived from the output range.
       * If the given value is not in the scale’s domain, returns undefined.
@@ -102,7 +105,7 @@ object mod extends js.Object {
       *
       * @param range A two-element array of numeric values.
       */
-    def range(range: js.Tuple2[Double | AnonValueOf, Double | AnonValueOf]): this.type = js.native
+    def range(range: js.Tuple2[Double | ValueOf, Double | ValueOf]): this.type = js.native
     /**
       * Sets the scale’s range to the specified two-element array of numbers while also enabling rounding.
       * If the elements in the given array are not numbers, they will be coerced to numbers.
@@ -111,7 +114,7 @@ object mod extends js.Object {
       *
       * @param range A two-element array of numeric values.
       */
-    def rangeRound(range: js.Tuple2[Double | AnonValueOf, Double | AnonValueOf]): this.type = js.native
+    def rangeRound(range: js.Tuple2[Double | ValueOf, Double | ValueOf]): this.type = js.native
     /**
       * Returns the current rounding status for the scale: enabled (= true) or disabled (= false).
       */
@@ -143,7 +146,7 @@ object mod extends js.Object {
       * @param value A numeric value from the domain.
       */
     def apply(value: Double): Output = js.native
-    def apply(value: AnonValueOf): Output = js.native
+    def apply(value: ValueOf): Output = js.native
     /**
       * Returns whether or not the scale currently clamps values to within the range.
       */
@@ -176,7 +179,7 @@ object mod extends js.Object {
       *
       * @param domain Array of numeric domain values.
       */
-    def domain(domain: js.Array[Double | AnonValueOf]): this.type = js.native
+    def domain(domain: js.Array[Double | ValueOf]): this.type = js.native
     /**
       * Given a value from the range, returns the corresponding value from the domain. Inversion is useful for interaction,
       * say to determine the data value corresponding to the position of the mouse.
@@ -192,7 +195,7 @@ object mod extends js.Object {
       * @param value A numeric value from the range.
       */
     def invert(value: Double): Double = js.native
-    def invert(value: AnonValueOf): Double = js.native
+    def invert(value: ValueOf): Double = js.native
     /**
       * Extends the domain so that it starts and ends on nice round values.
       * This method typically modifies the scale’s domain, and may only extend the bounds to the nearest round value.
@@ -233,7 +236,7 @@ object mod extends js.Object {
       *
       * @param range Array of range values.
       */
-    def rangeRound(range: js.Array[Double | AnonValueOf]): this.type = js.native
+    def rangeRound(range: js.Array[Double | ValueOf]): this.type = js.native
     /**
       * Returns a number format function suitable for displaying a tick value, automatically computing the appropriate precision based on the fixed interval between tick values.
       * The specified count should have the same value as the count that is used to generate the tick values.
@@ -243,9 +246,9 @@ object mod extends js.Object {
       * If specifier uses the format type "s", the scale will return a SI-prefix format based on the largest value in the domain.
       * If the specifier already specifies a precision, this method is equivalent to locale.format.
       */
-    def tickFormat(): js.Function1[/* d */ Double | AnonValueOf, String] = js.native
-    def tickFormat(count: Double): js.Function1[/* d */ Double | AnonValueOf, String] = js.native
-    def tickFormat(count: Double, specifier: String): js.Function1[/* d */ Double | AnonValueOf, String] = js.native
+    def tickFormat(): js.Function1[/* d */ Double | ValueOf, String] = js.native
+    def tickFormat(count: Double): js.Function1[/* d */ Double | ValueOf, String] = js.native
+    def tickFormat(count: Double, specifier: String): js.Function1[/* d */ Double | ValueOf, String] = js.native
     /**
       * Returns approximately count representative values from the scale’s domain.
       *
@@ -271,7 +274,7 @@ object mod extends js.Object {
       * @param value A numeric value from the domain.
       */
     def apply(value: Double): Output = js.native
-    def apply(value: AnonValueOf): Output = js.native
+    def apply(value: ValueOf): Output = js.native
     /**
       * Returns whether or not the scale currently clamps values to within the range.
       */
@@ -300,7 +303,7 @@ object mod extends js.Object {
       *
       * @param domain Array of three numeric domain values.
       */
-    def domain(domain: js.Tuple3[Double | AnonValueOf, Double | AnonValueOf, Double | AnonValueOf]): this.type = js.native
+    def domain(domain: js.Tuple3[Double | ValueOf, Double | ValueOf, Double | ValueOf]): this.type = js.native
     /**
       * Returns the scale’s current interpolator.
       */
@@ -327,7 +330,7 @@ object mod extends js.Object {
       * @param value A numeric value from the domain.
       */
     def apply(value: Double): Double = js.native
-    def apply(value: AnonValueOf): Double = js.native
+    def apply(value: ValueOf): Double = js.native
     /**
       * Returns an exact copy of this scale. Changes to this scale will not affect the returned scale, and vice versa.
       */
@@ -347,7 +350,7 @@ object mod extends js.Object {
       *
       * @param domain Array of numeric domain values.
       */
-    def domain(domain: js.Array[Double | AnonValueOf]): this.type = js.native
+    def domain(domain: js.Array[Double | ValueOf]): this.type = js.native
     /**
       * Given a value from the range, returns the corresponding value from the domain. Inversion is useful for interaction,
       * say to determine the data value corresponding to the position of the mouse.
@@ -363,7 +366,7 @@ object mod extends js.Object {
       * @param value A numeric value from the range.
       */
     def invert(value: Double): Double = js.native
-    def invert(value: AnonValueOf): Double = js.native
+    def invert(value: ValueOf): Double = js.native
     /**
       * Extends the domain so that it starts and ends on nice round values.
       * This method typically modifies the scale’s domain, and may only extend the bounds to the nearest round value.
@@ -392,7 +395,7 @@ object mod extends js.Object {
       *
       * @param range Array of range values.
       */
-    def range(range: js.Array[Double | AnonValueOf]): this.type = js.native
+    def range(range: js.Array[Double | ValueOf]): this.type = js.native
     /**
       * Returns a number format function suitable for displaying a tick value, automatically computing the appropriate precision based on the fixed interval between tick values.
       * The specified count should have the same value as the count that is used to generate the tick values.
@@ -402,9 +405,9 @@ object mod extends js.Object {
       * If specifier uses the format type "s", the scale will return a SI-prefix format based on the largest value in the domain.
       * If the specifier already specifies a precision, this method is equivalent to locale.format.
       */
-    def tickFormat(): js.Function1[/* d */ Double | AnonValueOf, String] = js.native
-    def tickFormat(count: Double): js.Function1[/* d */ Double | AnonValueOf, String] = js.native
-    def tickFormat(count: Double, specifier: String): js.Function1[/* d */ Double | AnonValueOf, String] = js.native
+    def tickFormat(): js.Function1[/* d */ Double | ValueOf, String] = js.native
+    def tickFormat(count: Double): js.Function1[/* d */ Double | ValueOf, String] = js.native
+    def tickFormat(count: Double, specifier: String): js.Function1[/* d */ Double | ValueOf, String] = js.native
     /**
       * Returns approximately count representative values from the scale’s domain.
       *
@@ -503,7 +506,7 @@ object mod extends js.Object {
   }
   
   @js.native
-  trait ScaleOrdinal_[Domain /* <: AnonToString */, Range] extends js.Object {
+  trait ScaleOrdinal_[Domain /* <: ToString */, Range] extends js.Object {
     /**
       * Given a value in the input domain, returns the corresponding value in the output range.
       * If the given value is not in the scale’s domain, returns the unknown; or, if the unknown value is implicit (the default),
@@ -554,7 +557,7 @@ object mod extends js.Object {
     /**
       * Returns the current unknown value, which defaults to "implicit".
       */
-    def unknown(): Range | AnonName = js.native
+    def unknown(): Range | Name = js.native
     /**
       * Sets the output value of the scale for unknown input values and returns this scale.
       * The implicit value enables implicit domain construction. scaleImplicit can be used as a convenience to set the implicit value.
@@ -562,11 +565,11 @@ object mod extends js.Object {
       * @param value Unknown value to be used or scaleImplicit to set implicit scale generation.
       */
     def unknown(value: Range): this.type = js.native
-    def unknown(value: AnonName): this.type = js.native
+    def unknown(value: Name): this.type = js.native
   }
   
   @js.native
-  trait ScalePoint_[Domain /* <: AnonToString */] extends js.Object {
+  trait ScalePoint_[Domain /* <: ToString */] extends js.Object {
     /**
       * Given a value in the input domain, returns the corresponding point derived from the output range.
       * If the given value is not in the scale’s domain, returns undefined.
@@ -638,7 +641,7 @@ object mod extends js.Object {
       *
       * @param range A two-element array of numeric values.
       */
-    def range(range: js.Tuple2[Double | AnonValueOf, Double | AnonValueOf]): this.type = js.native
+    def range(range: js.Tuple2[Double | ValueOf, Double | ValueOf]): this.type = js.native
     /**
       * Sets the scale’s range to the specified two-element array of numbers while also enabling rounding.
       * If the elements in the given array are not numbers, they will be coerced to numbers.
@@ -647,7 +650,7 @@ object mod extends js.Object {
       *
       * @param range A two-element array of numeric values.
       */
-    def rangeRound(range: js.Tuple2[Double | AnonValueOf, Double | AnonValueOf]): this.type = js.native
+    def rangeRound(range: js.Tuple2[Double | ValueOf, Double | ValueOf]): this.type = js.native
     /**
       * Returns the current rounding status for the scale: enabled (= true) or disabled (= false).
       */
@@ -722,7 +725,7 @@ object mod extends js.Object {
       * @param value A numeric value in the input domain.
       */
     def apply(value: Double): Range = js.native
-    def apply(value: AnonValueOf): Range = js.native
+    def apply(value: ValueOf): Range = js.native
     /**
       * Returns an exact copy of this scale. Changes to this scale will not affect the returned scale, and vice versa.
       */
@@ -739,7 +742,7 @@ object mod extends js.Object {
       *
       * @param domain Array of domain values.
       */
-    def domain(domain: js.Array[js.UndefOr[Double | AnonValueOf | Null]]): this.type = js.native
+    def domain(domain: js.Array[js.UndefOr[Double | ValueOf | Null]]): this.type = js.native
     /**
       * Returns the extent of values in the domain [x0, x1] for the corresponding value in the range: the inverse of quantile.
       * This method is useful for interaction, say to determine the value in the domain that corresponds to the pixel location under the mouse.
@@ -775,7 +778,7 @@ object mod extends js.Object {
       * Given a value in the input domain, returns the corresponding value in the output range.
       */
     def apply(value: Double): Range = js.native
-    def apply(value: AnonValueOf): Range = js.native
+    def apply(value: ValueOf): Range = js.native
     /**
       * Returns an exact copy of this scale. Changes to this scale will not affect the returned scale, and vice versa.
       */
@@ -790,7 +793,7 @@ object mod extends js.Object {
       *
       * @param domain A two-element array of numeric values defining the domain.
       */
-    def domain(domain: js.Tuple2[Double | AnonValueOf, Double | AnonValueOf]): this.type = js.native
+    def domain(domain: js.Tuple2[Double | ValueOf, Double | ValueOf]): this.type = js.native
     /**
       * Returns the extent of values in the domain [x0, x1] for the corresponding value in the range: the inverse of quantize.
       * This method is useful for interaction, say to determine the value in the domain that corresponds to the pixel location under the mouse.
@@ -833,9 +836,9 @@ object mod extends js.Object {
       * If specifier uses the format type "s", the scale will return a SI-prefix format based on the largest value in the domain.
       * If the specifier already specifies a precision, this method is equivalent to locale.format.
       */
-    def tickFormat(): js.Function1[/* d */ Double | AnonValueOf, String] = js.native
-    def tickFormat(count: Double): js.Function1[/* d */ Double | AnonValueOf, String] = js.native
-    def tickFormat(count: Double, specifier: String): js.Function1[/* d */ Double | AnonValueOf, String] = js.native
+    def tickFormat(): js.Function1[/* d */ Double | ValueOf, String] = js.native
+    def tickFormat(count: Double): js.Function1[/* d */ Double | ValueOf, String] = js.native
+    def tickFormat(count: Double, specifier: String): js.Function1[/* d */ Double | ValueOf, String] = js.native
     /**
       * Returns approximately count representative values from the scale’s domain.
       *
@@ -861,7 +864,7 @@ object mod extends js.Object {
       * @param value A numeric value from the domain.
       */
     def apply(value: Double): Output = js.native
-    def apply(value: AnonValueOf): Output = js.native
+    def apply(value: ValueOf): Output = js.native
     /**
       * Returns whether or not the scale currently clamps values to within the range.
       */
@@ -889,7 +892,7 @@ object mod extends js.Object {
       *
       * @param domain A two-element array of numeric domain values.
       */
-    def domain(domain: js.Tuple2[Double | AnonValueOf, Double | AnonValueOf]): this.type = js.native
+    def domain(domain: js.Tuple2[Double | ValueOf, Double | ValueOf]): this.type = js.native
     /**
       * Returns the current interpolator underlying the scale.
       */
@@ -974,7 +977,7 @@ object mod extends js.Object {
   @js.native
   trait ScaleTime_[Range, Output] extends js.Object {
     def apply(value: Double): Output = js.native
-    def apply(value: AnonValueOf): Output = js.native
+    def apply(value: ValueOf): Output = js.native
     /**
       * Given a value from the domain, returns the corresponding value from the range, subject to interpolation, if any.
       *
@@ -1017,7 +1020,7 @@ object mod extends js.Object {
       *
       * @param domain Array of temporal domain values. Numeric values will be coerced to dates.
       */
-    def domain(domain: js.Array[Date | Double | AnonValueOf]): this.type = js.native
+    def domain(domain: js.Array[Date | Double | ValueOf]): this.type = js.native
     /**
       * Returns the scale’s current interpolator factory, which defaults to interpolate.
       */
@@ -1065,7 +1068,7 @@ object mod extends js.Object {
       * @param value A numeric value from the range.
       */
     def invert(value: Double): Date = js.native
-    def invert(value: AnonValueOf): Date = js.native
+    def invert(value: ValueOf): Date = js.native
     /**
       * Extends the domain so that it starts and ends on nice round values.
       * This method typically modifies the scale’s domain, and may only extend the bounds to the nearest round value.
@@ -1128,7 +1131,7 @@ object mod extends js.Object {
       *
       * @param range Array of range values.
       */
-    def rangeRound(range: js.Array[Double | AnonValueOf]): this.type = js.native
+    def rangeRound(range: js.Array[Double | ValueOf]): this.type = js.native
     /**
       * Returns a time format function suitable for displaying tick values.
       *
@@ -1203,7 +1206,7 @@ object mod extends js.Object {
   
   def scaleBand(): ScaleBand_[String] = js.native
   @JSName("scaleBand")
-  def scaleBand_Domain_AnonToString[Domain /* <: AnonToString */](): ScaleBand_[Domain] = js.native
+  def scaleBand_Domain_ToString[Domain /* <: ToString */](): ScaleBand_[Domain] = js.native
   def scaleDiverging[T](interpolator: js.Function1[/* t */ Double, T]): ScaleDiverging_[T] = js.native
   def scaleIdentity(): ScaleIdentity_ = js.native
   def scaleLinear(): ScaleLinear_[Double, Double] = js.native
@@ -1219,12 +1222,12 @@ object mod extends js.Object {
   def scaleOrdinal[Range](): ScaleOrdinal_[String, Range] = js.native
   def scaleOrdinal[Range](range: js.Array[Range]): ScaleOrdinal_[String, Range] = js.native
   @JSName("scaleOrdinal")
-  def scaleOrdinal_Domain_AnonToStringRange[Domain /* <: AnonToString */, Range](): ScaleOrdinal_[Domain, Range] = js.native
+  def scaleOrdinal_Domain_ToStringRange[Domain /* <: ToString */, Range](): ScaleOrdinal_[Domain, Range] = js.native
   @JSName("scaleOrdinal")
-  def scaleOrdinal_Domain_AnonToStringRange[Domain /* <: AnonToString */, Range](range: js.Array[Range]): ScaleOrdinal_[Domain, Range] = js.native
+  def scaleOrdinal_Domain_ToStringRange[Domain /* <: ToString */, Range](range: js.Array[Range]): ScaleOrdinal_[Domain, Range] = js.native
   def scalePoint(): ScalePoint_[String] = js.native
   @JSName("scalePoint")
-  def scalePoint_Domain_AnonToString[Domain /* <: AnonToString */](): ScalePoint_[Domain] = js.native
+  def scalePoint_Domain_ToString[Domain /* <: ToString */](): ScalePoint_[Domain] = js.native
   def scalePow(): ScalePower[Double, Double] = js.native
   @JSName("scalePow")
   def scalePow_Output[Output](): ScalePower[Output, Output] = js.native

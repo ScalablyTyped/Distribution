@@ -1,9 +1,9 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.ShapeGroupData
 import typings.officeJs.Excel.Interfaces.ShapeGroupLoadOptions
 import typings.officeJs.OfficeExtension.ClientObject
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,29 +14,28 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
-@JSGlobal("Excel.ShapeGroup")
 @js.native
-class ShapeGroup () extends ClientObject {
+trait ShapeGroup extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_ShapeGroup: RequestContext = js.native
   /**
     *
-    * Represents the shape identifier. Read-only.
+    * Specifies the shape identifier.
     *
     * [Api set: ExcelApi 1.9]
     */
   val id: String = js.native
   /**
     *
-    * Returns the Shape object associated with the group. Read-only.
+    * Returns the Shape object associated with the group.
     *
     * [Api set: ExcelApi 1.9]
     */
   val shape: Shape = js.native
   /**
     *
-    * Returns the collection of Shape objects. Read-only.
+    * Returns the collection of Shape objects.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -48,7 +47,7 @@ class ShapeGroup () extends ClientObject {
     */
   def load(): ShapeGroup = js.native
   def load(options: ShapeGroupLoadOptions): ShapeGroup = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ShapeGroup = js.native
+  def load(propertyNamesAndPaths: Expand): ShapeGroup = js.native
   def load(propertyNames: String): ShapeGroup = js.native
   def load(propertyNames: js.Array[String]): ShapeGroup = js.native
   /**

@@ -5,15 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BMap.WalkingRoute")
 @js.native
-class WalkingRoute protected () extends js.Object {
-  def this(location: String) = this()
-  def this(location: Map) = this()
-  def this(location: Point) = this()
-  def this(location: String, opts: WalkingRouteOptions) = this()
-  def this(location: Map, opts: WalkingRouteOptions) = this()
-  def this(location: Point, opts: WalkingRouteOptions) = this()
+trait WalkingRoute extends js.Object {
   def clearResults(): Unit = js.native
   def disableAutoViewport(): Unit = js.native
   def enableAutoViewport(): Unit = js.native

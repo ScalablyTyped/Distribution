@@ -16,12 +16,7 @@ trait Attachment
 
 object Attachment {
   @scala.inline
-  def apply(
-    contentType: String,
-    media: String,
-    StringDictionary: /** Other properties */
-  /* name */ StringDictionary[js.Any] = null
-  ): Attachment = {
+  def apply(contentType: String, media: String, StringDictionary: /* name */ StringDictionary[js.Any] = null): Attachment = {
     val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Attachment]

@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.DataBarConditionalFormatData
 import typings.officeJsPreview.Excel.Interfaces.DataBarConditionalFormatLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.DataBarConditionalFormatUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.Automatic
 import typings.officeJsPreview.officeJsPreviewStrings.CellMidPoint
 import typings.officeJsPreview.officeJsPreviewStrings.Context
@@ -22,12 +22,11 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.6]
   */
-@JSGlobal("Excel.DataBarConditionalFormat")
 @js.native
-class DataBarConditionalFormat () extends ClientObject {
+trait DataBarConditionalFormat extends ClientObject {
   /**
     *
-    * HTML color code representing the color of the Axis line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+    * HTML color code representing the color of the Axis line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     "" (empty string) if no axis is present or set.
     *
     * [Api set: ExcelApi 1.6]
@@ -42,7 +41,7 @@ class DataBarConditionalFormat () extends ClientObject {
   var axisFormat: ConditionalDataBarAxisFormat | Automatic | None | CellMidPoint = js.native
   /**
     *
-    * Represents the direction that the data bar graphic should be based on.
+    * Specifies the direction that the data bar graphic should be based on.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -60,14 +59,14 @@ class DataBarConditionalFormat () extends ClientObject {
   var lowerBoundRule: ConditionalDataBarRule = js.native
   /**
     *
-    * Representation of all values to the left of the axis in an Excel data bar. Read-only.
+    * Representation of all values to the left of the axis in an Excel data bar.
     *
     * [Api set: ExcelApi 1.6]
     */
   val negativeFormat: ConditionalDataBarNegativeFormat = js.native
   /**
     *
-    * Representation of all values to the right of the axis in an Excel data bar. Read-only.
+    * Representation of all values to the right of the axis in an Excel data bar.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -94,7 +93,7 @@ class DataBarConditionalFormat () extends ClientObject {
     */
   def load(): DataBarConditionalFormat = js.native
   def load(options: DataBarConditionalFormatLoadOptions): DataBarConditionalFormat = js.native
-  def load(propertyNamesAndPaths: AnonExpand): DataBarConditionalFormat = js.native
+  def load(propertyNamesAndPaths: Expand): DataBarConditionalFormat = js.native
   def load(propertyNames: String): DataBarConditionalFormat = js.native
   def load(propertyNames: js.Array[String]): DataBarConditionalFormat = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

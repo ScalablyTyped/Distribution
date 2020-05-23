@@ -41,7 +41,7 @@ object IParseOptions {
   def apply(
     allowDots: js.UndefOr[Boolean] = js.undefined,
     allowPrototypes: js.UndefOr[Boolean] = js.undefined,
-    arrayLimit: Int | Double = null,
+    arrayLimit: js.UndefOr[Double] = js.undefined,
     charset: `utf-8` | `iso-8859-1` = null,
     charsetSentinel: js.UndefOr[Boolean] = js.undefined,
     comma: js.UndefOr[Boolean] = js.undefined,
@@ -50,27 +50,27 @@ object IParseOptions {
     depth: Double | `false` = null,
     ignoreQueryPrefix: js.UndefOr[Boolean] = js.undefined,
     interpretNumericEntities: js.UndefOr[Boolean] = js.undefined,
-    parameterLimit: Int | Double = null,
+    parameterLimit: js.UndefOr[Double] = js.undefined,
     parseArrays: js.UndefOr[Boolean] = js.undefined,
     plainObjects: js.UndefOr[Boolean] = js.undefined,
     strictNullHandling: js.UndefOr[Boolean] = js.undefined
   ): IParseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDots)) __obj.updateDynamic("allowDots")(allowDots.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowPrototypes)) __obj.updateDynamic("allowPrototypes")(allowPrototypes.asInstanceOf[js.Any])
-    if (arrayLimit != null) __obj.updateDynamic("arrayLimit")(arrayLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDots)) __obj.updateDynamic("allowDots")(allowDots.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowPrototypes)) __obj.updateDynamic("allowPrototypes")(allowPrototypes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrayLimit)) __obj.updateDynamic("arrayLimit")(arrayLimit.get.asInstanceOf[js.Any])
     if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
-    if (!js.isUndefined(charsetSentinel)) __obj.updateDynamic("charsetSentinel")(charsetSentinel.asInstanceOf[js.Any])
-    if (!js.isUndefined(comma)) __obj.updateDynamic("comma")(comma.asInstanceOf[js.Any])
+    if (!js.isUndefined(charsetSentinel)) __obj.updateDynamic("charsetSentinel")(charsetSentinel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(comma)) __obj.updateDynamic("comma")(comma.get.asInstanceOf[js.Any])
     if (decoder != null) __obj.updateDynamic("decoder")(js.Any.fromFunction4(decoder))
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreQueryPrefix)) __obj.updateDynamic("ignoreQueryPrefix")(ignoreQueryPrefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(interpretNumericEntities)) __obj.updateDynamic("interpretNumericEntities")(interpretNumericEntities.asInstanceOf[js.Any])
-    if (parameterLimit != null) __obj.updateDynamic("parameterLimit")(parameterLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(parseArrays)) __obj.updateDynamic("parseArrays")(parseArrays.asInstanceOf[js.Any])
-    if (!js.isUndefined(plainObjects)) __obj.updateDynamic("plainObjects")(plainObjects.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictNullHandling)) __obj.updateDynamic("strictNullHandling")(strictNullHandling.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreQueryPrefix)) __obj.updateDynamic("ignoreQueryPrefix")(ignoreQueryPrefix.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(interpretNumericEntities)) __obj.updateDynamic("interpretNumericEntities")(interpretNumericEntities.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(parameterLimit)) __obj.updateDynamic("parameterLimit")(parameterLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(parseArrays)) __obj.updateDynamic("parseArrays")(parseArrays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(plainObjects)) __obj.updateDynamic("plainObjects")(plainObjects.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictNullHandling)) __obj.updateDynamic("strictNullHandling")(strictNullHandling.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IParseOptions]
   }
 }

@@ -16,14 +16,14 @@ object FindByNameOptions {
   def apply(
     deleted: js.UndefOr[Boolean] = js.undefined,
     httpCache: js.UndefOr[Boolean] = js.undefined,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     removed: js.UndefOr[Boolean] = js.undefined
   ): FindByNameOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
-    if (!js.isUndefined(httpCache)) __obj.updateDynamic("httpCache")(httpCache.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(removed)) __obj.updateDynamic("removed")(removed.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(httpCache)) __obj.updateDynamic("httpCache")(httpCache.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(removed)) __obj.updateDynamic("removed")(removed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindByNameOptions]
   }
 }

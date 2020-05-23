@@ -12,11 +12,15 @@ trait Credential extends js.Object {
 
 object Credential {
   @scala.inline
-  def apply(authToken: String = null, timestamp: Int | Double = null, ttl: Int | Double = null): Credential = {
+  def apply(
+    authToken: String = null,
+    timestamp: js.UndefOr[Double] = js.undefined,
+    ttl: js.UndefOr[Double] = js.undefined
+  ): Credential = {
     val __obj = js.Dynamic.literal()
     if (authToken != null) __obj.updateDynamic("authToken")(authToken.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Credential]
   }
 }

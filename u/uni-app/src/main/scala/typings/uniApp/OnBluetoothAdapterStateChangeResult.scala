@@ -19,8 +19,8 @@ object OnBluetoothAdapterStateChangeResult {
   @scala.inline
   def apply(available: js.UndefOr[Boolean] = js.undefined, discovering: js.UndefOr[Boolean] = js.undefined): OnBluetoothAdapterStateChangeResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(available)) __obj.updateDynamic("available")(available.asInstanceOf[js.Any])
-    if (!js.isUndefined(discovering)) __obj.updateDynamic("discovering")(discovering.asInstanceOf[js.Any])
+    if (!js.isUndefined(available)) __obj.updateDynamic("available")(available.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(discovering)) __obj.updateDynamic("discovering")(discovering.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnBluetoothAdapterStateChangeResult]
   }
 }

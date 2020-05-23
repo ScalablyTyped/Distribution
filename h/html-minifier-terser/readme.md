@@ -1,7 +1,7 @@
 
 # Scala.js typings for html-minifier-terser
 
-Typings are for version 5.0
+Typings are for version 5.1
 
 ## Library description:
 Highly configurable, well-tested, JavaScript-based HTML minifier.

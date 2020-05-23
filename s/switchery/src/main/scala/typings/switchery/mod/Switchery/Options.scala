@@ -33,7 +33,7 @@ trait Options extends js.Object {
   /**
     * color of unchecked jack/handle element
     * @default 'null'
-  		 */
+    */
   var jackSecondaryColor: js.UndefOr[String] = js.undefined
   /**
     * secondary color for background color and border, when the switch is off
@@ -58,7 +58,7 @@ object Options {
     className: String = null,
     color: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    disabledOpacity: Int | Double = null,
+    disabledOpacity: js.UndefOr[Double] = js.undefined,
     jackColor: String = null,
     jackSecondaryColor: String = null,
     secondaryColor: String = null,
@@ -68,8 +68,8 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (disabledOpacity != null) __obj.updateDynamic("disabledOpacity")(disabledOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabledOpacity)) __obj.updateDynamic("disabledOpacity")(disabledOpacity.get.asInstanceOf[js.Any])
     if (jackColor != null) __obj.updateDynamic("jackColor")(jackColor.asInstanceOf[js.Any])
     if (jackSecondaryColor != null) __obj.updateDynamic("jackSecondaryColor")(jackSecondaryColor.asInstanceOf[js.Any])
     if (secondaryColor != null) __obj.updateDynamic("secondaryColor")(secondaryColor.asInstanceOf[js.Any])

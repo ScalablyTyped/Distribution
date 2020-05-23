@@ -39,7 +39,7 @@ object DeviceManagementPartner {
     val __obj = js.Dynamic.literal()
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isConfigured)) __obj.updateDynamic("isConfigured")(isConfigured.asInstanceOf[js.Any])
+    if (!js.isUndefined(isConfigured)) __obj.updateDynamic("isConfigured")(isConfigured.get.asInstanceOf[js.Any])
     if (lastHeartbeatDateTime != null) __obj.updateDynamic("lastHeartbeatDateTime")(lastHeartbeatDateTime.asInstanceOf[js.Any])
     if (partnerAppType != null) __obj.updateDynamic("partnerAppType")(partnerAppType.asInstanceOf[js.Any])
     if (partnerState != null) __obj.updateDynamic("partnerState")(partnerState.asInstanceOf[js.Any])

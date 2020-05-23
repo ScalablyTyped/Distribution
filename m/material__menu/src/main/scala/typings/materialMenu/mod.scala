@@ -1,6 +1,7 @@
 package typings.materialMenu
 
 import typings.materialMenu.adapterMod.MDCMenuAdapter
+import typings.materialMenu.anon.`0`
 import typings.materialMenu.foundationMod.AnchorMargin
 import typings.materialMenu.foundationMod.default
 import typings.std.Element
@@ -35,7 +36,7 @@ object mod extends js.Object {
     def setAnchorCorner(corner: Double): Unit = js.native
     def setAnchorMargin(margin: AnchorMargin): Unit = js.native
     def show(): Unit = js.native
-    def show(options: Anon0): Unit = js.native
+    def show(options: `0`): Unit = js.native
   }
   
   @js.native

@@ -14,12 +14,12 @@ import scala.scalajs.js.annotation._
   * @interface
   * @property {string} path HTTP path (relative to the model) at which the method is exposed.
   * @property {'get' | 'post' | 'patch' | 'put' | 'del' | 'all'} verb HTTP method (verb) at which the method is available.
-  * @property {number} status	Default HTTP status set when the callback is called without an error.
-  * @property {number} errorStatus	Default HTTP status set when the callback is called with an error.
+  * @property {number} status    Default HTTP status set when the callback is called without an error.
+  * @property {number} errorStatus    Default HTTP status set when the callback is called with an error.
   */
 trait RemoteHttpOptions extends js.Object {
   /**
-    * errorStatus	Default HTTP status set when the callback is called with an error.
+    * errorStatus    Default HTTP status set when the callback is called with an error.
     * ```
     * {errorStatus: 400}
     * ```
@@ -33,7 +33,7 @@ trait RemoteHttpOptions extends js.Object {
     */
   var path: String
   /**
-    * status	Default HTTP status set when the callback is called without an error.
+    * status    Default HTTP status set when the callback is called without an error.
     * ```
     * {status: 201}
     * ```
@@ -54,12 +54,12 @@ object RemoteHttpOptions {
   def apply(
     path: String,
     verb: get | post | patch | put | del | all,
-    errorStatus: Int | Double = null,
-    status: Int | Double = null
+    errorStatus: js.UndefOr[Double] = js.undefined,
+    status: js.UndefOr[Double] = js.undefined
   ): RemoteHttpOptions = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], verb = verb.asInstanceOf[js.Any])
-    if (errorStatus != null) __obj.updateDynamic("errorStatus")(errorStatus.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorStatus)) __obj.updateDynamic("errorStatus")(errorStatus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteHttpOptions]
   }
 }

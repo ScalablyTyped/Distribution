@@ -7,7 +7,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.microflowsMod.microflows.ShowPageAction
 import typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.workflowsMod.workflows.UserTask
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -119,14 +118,5 @@ object PageSettings extends js.Object {
     * of the parent microflows.ShowPageAction element passed as argument.
     */
   def createInShowPageActionUnderPageSettings(container: ShowPageAction): typings.mendixmodelsdk.pagesMod.pages.PageSettings = js.native
-  /**
-    * Creates and returns a new PageSettings instance in the SDK and on the server.
-    * The new PageSettings will be automatically stored in the 'page' property
-    * of the parent workflows.UserTask element passed as argument.
-    *
-    * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.8.0 and higher
-    */
-  def createInUserTaskUnderPage(container: UserTask): typings.mendixmodelsdk.pagesMod.pages.PageSettings = js.native
 }
 

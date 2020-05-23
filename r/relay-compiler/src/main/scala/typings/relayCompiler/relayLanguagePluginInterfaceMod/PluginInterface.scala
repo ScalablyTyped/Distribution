@@ -1,6 +1,6 @@
 package typings.relayCompiler.relayLanguagePluginInterfaceMod
 
-import typings.relayCompiler.AnonConcreteText
+import typings.relayCompiler.anon.ConcreteText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ trait PluginInterface extends js.Object {
   var outputExtension: String = js.native
   var typeGenerator: TypeGenerator = js.native
   def findGraphQLTags(text: String, filePath: String): js.Array[GraphQLTag] = js.native
-  def formatModule(options: AnonConcreteText): String = js.native
+  def formatModule(options: ConcreteText): String = js.native
 }
 

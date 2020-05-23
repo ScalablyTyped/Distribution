@@ -4,16 +4,39 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.earth.KmlAltitudeGeometry")
-@js.native
-class KmlAltitudeGeometry () extends KmlObject {
+trait KmlAltitudeGeometry extends KmlObject {
   /**
     * Specifies how altitude components in the geometry coordinates are interpreted.
     */
-  def getAltitudeMode(): KmlAltitudeModeEnum = js.native
+  def getAltitudeMode(): KmlAltitudeModeEnum
   /**
     * Specifies how altitude components in the geometry coordinates are interpreted.
     */
-  def setAltitudeMode(altitudeMode: KmlAltitudeModeEnum): Unit = js.native
+  def setAltitudeMode(altitudeMode: KmlAltitudeModeEnum): Unit
+}
+
+object KmlAltitudeGeometry {
+  @scala.inline
+  def apply(
+    click: KmlMouseEvent => Unit,
+    dblclick: KmlMouseEvent => Unit,
+    equals: KmlObject => Boolean,
+    getAltitudeMode: () => KmlAltitudeModeEnum,
+    getId: () => String,
+    getOwnerDocument: () => KmlDocument,
+    getParentNode: () => KmlObject,
+    getType: () => String,
+    getUrl: () => String,
+    mousedown: KmlMouseEvent => Unit,
+    mousemove: KmlMouseEvent => Unit,
+    mouseout: KmlMouseEvent => Unit,
+    mouseover: KmlMouseEvent => Unit,
+    mouseup: KmlMouseEvent => Unit,
+    release: () => Unit,
+    setAltitudeMode: KmlAltitudeModeEnum => Unit
+  ): KmlAltitudeGeometry = {
+    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), dblclick = js.Any.fromFunction1(dblclick), equals = js.Any.fromFunction1(equals), getAltitudeMode = js.Any.fromFunction0(getAltitudeMode), getId = js.Any.fromFunction0(getId), getOwnerDocument = js.Any.fromFunction0(getOwnerDocument), getParentNode = js.Any.fromFunction0(getParentNode), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), mouseout = js.Any.fromFunction1(mouseout), mouseover = js.Any.fromFunction1(mouseover), mouseup = js.Any.fromFunction1(mouseup), release = js.Any.fromFunction0(release), setAltitudeMode = js.Any.fromFunction1(setAltitudeMode))
+    __obj.asInstanceOf[KmlAltitudeGeometry]
+  }
 }
 

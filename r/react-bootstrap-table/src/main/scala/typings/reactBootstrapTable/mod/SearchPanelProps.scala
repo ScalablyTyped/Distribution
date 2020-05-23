@@ -7,28 +7,28 @@ import scala.scalajs.js.annotation._
 
 trait SearchPanelProps extends js.Object {
   /**
-  	 * Default clear search field button component.
-  	 */
+    * Default clear search field button component.
+    */
   var clearBtn: ReactElement
   /**
-  	 * The default search text.
-  	 */
+    * The default search text.
+    */
   var defaultValue: String
   /**
-  	 * The placeholder text for the search field.
-  	 */
+    * The placeholder text for the search field.
+    */
   var placeholder: String
   /**
-  	 * Default search field component.
-  	 */
+    * Default search field component.
+    */
   var searchField: ReactElement
   /**
-  	 * A callback to trigger the clear search field event.
-  	 */
+    * A callback to trigger the clear search field event.
+    */
   def clearBtnClick(): Unit
   /**
-  	 * A callback to trigger a search, takes the search text as an input.
-  	 */
+    * A callback to trigger a search, takes the search text as an input.
+    */
   def search(searchText: String): Unit
 }
 

@@ -1,6 +1,6 @@
 package typings.jweixin.mod
 
-import typings.jweixin.AnonCardList
+import typings.jweixin.anon.CardList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ trait IchooseCard extends BaseParams {
   var timestamp: Double
    // 卡券签名
   @JSName("success")
-  def success_MIchooseCard(res: AnonCardList): Unit
+  def success_MIchooseCard(res: CardList): Unit
 }
 
 object IchooseCard {
@@ -34,7 +34,7 @@ object IchooseCard {
     nonceStr: String,
     shopId: String,
     signType: String,
-    success: AnonCardList => Unit,
+    success: CardList => Unit,
     timestamp: Double,
     complete: /* repeated */ js.Any => Unit = null,
     fail: /* repeated */ js.Any => Unit = null

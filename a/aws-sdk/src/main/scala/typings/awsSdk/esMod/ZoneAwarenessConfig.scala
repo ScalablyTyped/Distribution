@@ -14,9 +14,9 @@ trait ZoneAwarenessConfig extends js.Object {
 
 object ZoneAwarenessConfig {
   @scala.inline
-  def apply(AvailabilityZoneCount: Int | scala.Double = null): ZoneAwarenessConfig = {
+  def apply(AvailabilityZoneCount: js.UndefOr[IntegerClass] = js.undefined): ZoneAwarenessConfig = {
     val __obj = js.Dynamic.literal()
-    if (AvailabilityZoneCount != null) __obj.updateDynamic("AvailabilityZoneCount")(AvailabilityZoneCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(AvailabilityZoneCount)) __obj.updateDynamic("AvailabilityZoneCount")(AvailabilityZoneCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoneAwarenessConfig]
   }
 }

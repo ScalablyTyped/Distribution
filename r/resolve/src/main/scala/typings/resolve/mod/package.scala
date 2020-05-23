@@ -28,6 +28,17 @@ package object mod {
     scala.Unit
   ]
   /**
+    * Callback invoked when resolving a potential symlink
+    *
+    * @param error
+    * @param resolved Absolute path to the resolved file
+    */
+  type realpathCallback = js.Function2[
+    /* err */ typings.std.Error | scala.Null, 
+    /* resolved */ js.UndefOr[java.lang.String], 
+    scala.Unit
+  ]
+  /**
     * Callback invoked when resolving asynchronously
     *
     * @param error

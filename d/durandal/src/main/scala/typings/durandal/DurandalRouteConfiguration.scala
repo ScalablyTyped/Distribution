@@ -32,7 +32,7 @@ object DurandalRouteConfiguration {
     viewUrl: String = null
   ): DurandalRouteConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasChildRoutes)) __obj.updateDynamic("hasChildRoutes")(hasChildRoutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasChildRoutes)) __obj.updateDynamic("hasChildRoutes")(hasChildRoutes.get.asInstanceOf[js.Any])
     if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
     if (isActive != null) __obj.updateDynamic("isActive")(isActive.asInstanceOf[js.Any])
     if (moduleId != null) __obj.updateDynamic("moduleId")(moduleId.asInstanceOf[js.Any])

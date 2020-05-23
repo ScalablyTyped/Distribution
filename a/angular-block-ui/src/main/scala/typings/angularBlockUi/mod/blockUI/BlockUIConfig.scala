@@ -113,7 +113,7 @@ object BlockUIConfig {
     autoInjectBodyBlock: js.UndefOr[Boolean] = js.undefined,
     blockBrowserNavigation: js.UndefOr[Boolean] = js.undefined,
     cssClass: String = null,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     message: String = null,
     requestFilter: /* config */ IRequestConfig => String | Boolean = null,
     resetOnException: js.UndefOr[Boolean] = js.undefined,
@@ -121,14 +121,14 @@ object BlockUIConfig {
     templateUrl: String = null
   ): BlockUIConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoBlock)) __obj.updateDynamic("autoBlock")(autoBlock.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoInjectBodyBlock)) __obj.updateDynamic("autoInjectBodyBlock")(autoInjectBodyBlock.asInstanceOf[js.Any])
-    if (!js.isUndefined(blockBrowserNavigation)) __obj.updateDynamic("blockBrowserNavigation")(blockBrowserNavigation.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoBlock)) __obj.updateDynamic("autoBlock")(autoBlock.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoInjectBodyBlock)) __obj.updateDynamic("autoInjectBodyBlock")(autoInjectBodyBlock.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockBrowserNavigation)) __obj.updateDynamic("blockBrowserNavigation")(blockBrowserNavigation.get.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (requestFilter != null) __obj.updateDynamic("requestFilter")(js.Any.fromFunction1(requestFilter))
-    if (!js.isUndefined(resetOnException)) __obj.updateDynamic("resetOnException")(resetOnException.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetOnException)) __obj.updateDynamic("resetOnException")(resetOnException.get.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockUIConfig]

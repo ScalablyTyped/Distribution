@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-hot-loader" : "4.12.20"
+      "react-hot-loader" : "4.12.21"
     }
   ],
   "test-dependencies" : [
     {
-      "react-hot-loader" : "4.12.20"
+      "react-hot-loader" : "4.12.21"
     }
   ],
   "compile-devDependencies" : [

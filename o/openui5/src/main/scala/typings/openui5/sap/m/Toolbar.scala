@@ -5,28 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.m.Toolbar")
 @js.native
-/**
-  * Constructor for a new Toolbar.Accepts an object literal <code>mSettings</code> that defines
-  * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
-  * sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the settings
-  * object.
-  * @param sId ID for the new control, generated automatically if no id is given
-  * @param mSettings Initial settings for the new control
-  */
-class Toolbar () extends Control {
-  def this(mSettings: js.Any) = this()
-  /**
-    * Constructor for a new Toolbar.Accepts an object literal <code>mSettings</code> that defines
-    * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
-    * sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the settings
-    * object.
-    * @param sId ID for the new control, generated automatically if no id is given
-    * @param mSettings Initial settings for the new control
-    */
-  def this(sId: String) = this()
-  def this(sId: String, mSettings: js.Any) = this()
+trait Toolbar extends Control {
   /**
     * Sets classes and tag according to the context in the page. Possible contexts are header, footer,
     * subheader

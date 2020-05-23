@@ -29,23 +29,23 @@ object IModalPropTypes {
     animationType: none | fade | `slide-up` | `slide-down`,
     visible: Boolean,
     animateAppear: js.UndefOr[Boolean] = js.undefined,
-    animationDuration: Int | Double = null,
+    animationDuration: js.UndefOr[Double] = js.undefined,
     maskClosable: js.UndefOr[Boolean] = js.undefined,
-    maskStyle: StyleProp[ViewStyle] = null,
+    maskStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     onAnimationEnd: /* visible */ Boolean => Unit = null,
     onClose: () => Unit = null,
     style: js.Object = null,
-    wrapStyle: StyleProp[ViewStyle] = null
+    wrapStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined
   ): IModalPropTypes = {
     val __obj = js.Dynamic.literal(animationType = animationType.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
-    if (!js.isUndefined(animateAppear)) __obj.updateDynamic("animateAppear")(animateAppear.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable.asInstanceOf[js.Any])
-    if (maskStyle != null) __obj.updateDynamic("maskStyle")(maskStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(animateAppear)) __obj.updateDynamic("animateAppear")(animateAppear.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maskStyle)) __obj.updateDynamic("maskStyle")(maskStyle.asInstanceOf[js.Any])
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (wrapStyle != null) __obj.updateDynamic("wrapStyle")(wrapStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapStyle)) __obj.updateDynamic("wrapStyle")(wrapStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModalPropTypes]
   }
 }

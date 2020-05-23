@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ADODB.Record")
 @js.native
-class Record protected () extends js.Object {
+trait Record extends js.Object {
   @JSName("ADODB.Record_typekey")
   var ADODBDotRecord_typekey: Record = js.native
   /**

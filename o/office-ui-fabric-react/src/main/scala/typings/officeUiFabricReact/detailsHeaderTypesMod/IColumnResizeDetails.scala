@@ -12,9 +12,9 @@ trait IColumnResizeDetails extends js.Object {
 
 object IColumnResizeDetails {
   @scala.inline
-  def apply(columnIndex: Double, columnMinWidth: Double, originX: Int | Double = null): IColumnResizeDetails = {
+  def apply(columnIndex: Double, columnMinWidth: Double, originX: js.UndefOr[Double] = js.undefined): IColumnResizeDetails = {
     val __obj = js.Dynamic.literal(columnIndex = columnIndex.asInstanceOf[js.Any], columnMinWidth = columnMinWidth.asInstanceOf[js.Any])
-    if (originX != null) __obj.updateDynamic("originX")(originX.asInstanceOf[js.Any])
+    if (!js.isUndefined(originX)) __obj.updateDynamic("originX")(originX.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColumnResizeDetails]
   }
 }

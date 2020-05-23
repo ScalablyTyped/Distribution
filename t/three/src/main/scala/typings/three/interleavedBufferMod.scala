@@ -1,6 +1,7 @@
 package typings.three
 
 import typings.std.ArrayLike
+import typings.three.anon.Count
 import typings.three.constantsMod.Usage
 import typings.three.interleavedBufferAttributeMod.InterleavedBufferAttribute
 import scala.scalajs.js
@@ -18,7 +19,7 @@ object interleavedBufferMod extends js.Object {
     var length: Double = js.native
     var needsUpdate: Boolean = js.native
     var stride: Double = js.native
-    var updateRange: AnonCount = js.native
+    var updateRange: Count = js.native
     var usage: Usage = js.native
     var version: Double = js.native
     def copy(source: InterleavedBuffer): this.type = js.native

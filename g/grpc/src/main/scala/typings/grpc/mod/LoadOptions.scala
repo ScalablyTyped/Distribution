@@ -39,10 +39,10 @@ object LoadOptions {
     longsAsStrings: js.UndefOr[Boolean] = js.undefined
   ): LoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(binaryAsBase64)) __obj.updateDynamic("binaryAsBase64")(binaryAsBase64.asInstanceOf[js.Any])
-    if (!js.isUndefined(convertFieldsToCamelCase)) __obj.updateDynamic("convertFieldsToCamelCase")(convertFieldsToCamelCase.asInstanceOf[js.Any])
-    if (!js.isUndefined(deprecatedArgumentOrder)) __obj.updateDynamic("deprecatedArgumentOrder")(deprecatedArgumentOrder.asInstanceOf[js.Any])
-    if (!js.isUndefined(longsAsStrings)) __obj.updateDynamic("longsAsStrings")(longsAsStrings.asInstanceOf[js.Any])
+    if (!js.isUndefined(binaryAsBase64)) __obj.updateDynamic("binaryAsBase64")(binaryAsBase64.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(convertFieldsToCamelCase)) __obj.updateDynamic("convertFieldsToCamelCase")(convertFieldsToCamelCase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deprecatedArgumentOrder)) __obj.updateDynamic("deprecatedArgumentOrder")(deprecatedArgumentOrder.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(longsAsStrings)) __obj.updateDynamic("longsAsStrings")(longsAsStrings.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadOptions]
   }
 }

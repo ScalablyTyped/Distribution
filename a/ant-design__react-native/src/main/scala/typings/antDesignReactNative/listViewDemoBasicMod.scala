@@ -1,9 +1,8 @@
 package typings.antDesignReactNative
 
-import typings.antDesignReactNative.antDesignReactNativeStrings.ListView
-import typings.antDesignReactNative.antDesignReactNativeStrings.`ListView Example`
+import typings.antDesignReactNative.anon.Layout
 import typings.react.mod.Component
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,14 +14,9 @@ object listViewDemoBasicMod extends js.Object {
   trait BasicListExample
     extends Component[js.Any, js.Any, js.Any] {
     @JSName("state")
-    var state_BasicListExample: AnonLayout = js.native
+    var state_BasicListExample: Layout = js.native
     def onFetch(
-      page: js.UndefOr[scala.Nothing],
-      startFetch: js.Function2[/* arg0 */ js.Array[String], /* arg1 */ Double, Unit],
-      abortFetch: js.Function0[Unit]
-    ): js.Promise[Unit] = js.native
-    def onFetch(
-      page: Double,
+      page: js.UndefOr[Double],
       startFetch: js.Function2[/* arg0 */ js.Array[String], /* arg1 */ Double, Unit],
       abortFetch: js.Function0[Unit]
     ): js.Promise[Unit] = js.native
@@ -33,7 +27,7 @@ object listViewDemoBasicMod extends js.Object {
   @js.native
   class default () extends BasicListExample
   
-  val description: `ListView Example` = js.native
-  val title: ListView = js.native
+  val description: /* "ListView Example" */ String = js.native
+  val title: /* "ListView" */ String = js.native
 }
 

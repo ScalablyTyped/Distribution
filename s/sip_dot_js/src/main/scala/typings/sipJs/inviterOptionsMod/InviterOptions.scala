@@ -1,6 +1,6 @@
 package typings.sipJs.inviterOptionsMod
 
-import typings.sipJs.AnonFromDisplayName
+import typings.sipJs.anon.FromDisplayName
 import typings.sipJs.apiSessionDescriptionHandlerMod.SessionDescriptionHandlerModifier
 import typings.sipJs.apiSessionDescriptionHandlerMod.SessionDescriptionHandlerOptions
 import typings.sipJs.sessionDelegateMod.SessionDelegate
@@ -24,7 +24,7 @@ trait InviterOptions extends SessionOptions {
   /** If true, send INVITE without SDP. Default is false. */
   var inviteWithoutSdp: js.UndefOr[Boolean] = js.undefined
   /** @deprecated TODO: provide alternative. */
-  var params: js.UndefOr[AnonFromDisplayName] = js.undefined
+  var params: js.UndefOr[FromDisplayName] = js.undefined
   /** @deprecated TODO: provide alternative. */
   var renderbody: js.UndefOr[String] = js.undefined
   /** @deprecated TODO: provide alternative. */
@@ -43,18 +43,18 @@ object InviterOptions {
     earlyMedia: js.UndefOr[Boolean] = js.undefined,
     extraHeaders: js.Array[String] = null,
     inviteWithoutSdp: js.UndefOr[Boolean] = js.undefined,
-    params: AnonFromDisplayName = null,
+    params: FromDisplayName = null,
     renderbody: String = null,
     rendertype: String = null,
     sessionDescriptionHandlerModifiers: js.Array[SessionDescriptionHandlerModifier] = null,
     sessionDescriptionHandlerOptions: SessionDescriptionHandlerOptions = null
   ): InviterOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(anonymous)) __obj.updateDynamic("anonymous")(anonymous.asInstanceOf[js.Any])
+    if (!js.isUndefined(anonymous)) __obj.updateDynamic("anonymous")(anonymous.get.asInstanceOf[js.Any])
     if (delegate != null) __obj.updateDynamic("delegate")(delegate.asInstanceOf[js.Any])
-    if (!js.isUndefined(earlyMedia)) __obj.updateDynamic("earlyMedia")(earlyMedia.asInstanceOf[js.Any])
+    if (!js.isUndefined(earlyMedia)) __obj.updateDynamic("earlyMedia")(earlyMedia.get.asInstanceOf[js.Any])
     if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(inviteWithoutSdp)) __obj.updateDynamic("inviteWithoutSdp")(inviteWithoutSdp.asInstanceOf[js.Any])
+    if (!js.isUndefined(inviteWithoutSdp)) __obj.updateDynamic("inviteWithoutSdp")(inviteWithoutSdp.get.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (renderbody != null) __obj.updateDynamic("renderbody")(renderbody.asInstanceOf[js.Any])
     if (rendertype != null) __obj.updateDynamic("rendertype")(rendertype.asInstanceOf[js.Any])

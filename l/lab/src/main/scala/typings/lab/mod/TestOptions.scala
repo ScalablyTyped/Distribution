@@ -14,16 +14,16 @@ object TestOptions {
   def apply(
     only: js.UndefOr[Boolean] = js.undefined,
     parallel: js.UndefOr[Boolean] = js.undefined,
-    plan: Int | Double = null,
+    plan: js.UndefOr[Double] = js.undefined,
     skip: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): TestOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(only)) __obj.updateDynamic("only")(only.asInstanceOf[js.Any])
-    if (!js.isUndefined(parallel)) __obj.updateDynamic("parallel")(parallel.asInstanceOf[js.Any])
-    if (plan != null) __obj.updateDynamic("plan")(plan.asInstanceOf[js.Any])
-    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(only)) __obj.updateDynamic("only")(only.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(parallel)) __obj.updateDynamic("parallel")(parallel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(plan)) __obj.updateDynamic("plan")(plan.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestOptions]
   }
 }

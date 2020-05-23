@@ -48,7 +48,7 @@ object ITransactionListOptions {
     created: ICreated = null,
     dispute: String = null,
     ending_before: String = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     settlement: String = null,
     starting_after: String = null
   ): ITransactionListOptions = {
@@ -58,7 +58,7 @@ object ITransactionListOptions {
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (dispute != null) __obj.updateDynamic("dispute")(dispute.asInstanceOf[js.Any])
     if (ending_before != null) __obj.updateDynamic("ending_before")(ending_before.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (settlement != null) __obj.updateDynamic("settlement")(settlement.asInstanceOf[js.Any])
     if (starting_after != null) __obj.updateDynamic("starting_after")(starting_after.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITransactionListOptions]

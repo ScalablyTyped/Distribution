@@ -16,11 +16,11 @@ object applePayCreateOptions {
   def apply(
     displayName: String,
     paymentRequest: js.Any,
-    applePaySessionVersion: Int | Double = null,
+    applePaySessionVersion: js.UndefOr[Double] = js.undefined,
     buttonStyle: String = null
   ): applePayCreateOptions = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], paymentRequest = paymentRequest.asInstanceOf[js.Any])
-    if (applePaySessionVersion != null) __obj.updateDynamic("applePaySessionVersion")(applePaySessionVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(applePaySessionVersion)) __obj.updateDynamic("applePaySessionVersion")(applePaySessionVersion.get.asInstanceOf[js.Any])
     if (buttonStyle != null) __obj.updateDynamic("buttonStyle")(buttonStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[applePayCreateOptions]
   }

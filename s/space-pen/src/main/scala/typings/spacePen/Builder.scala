@@ -4,18 +4,35 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Builder")
-@js.native
-class Builder () extends js.Object {
-  var document: js.Array[_] = js.native
-  var postProcessingSteps: js.Array[_] = js.native
-  def buildHtml(): js.Array[_] = js.native
-  def closeTag(name: String): Unit = js.native
-  def extractOptions(args: js.Any): js.Any = js.native
-  def openTag(name: String, attributes: js.Any): Unit = js.native
-  def raw(str: String): Unit = js.native
-  def subview(outletName: js.Any, subview: View): Unit = js.native
-  def tag(name: String, args: js.Any*): Unit = js.native
-  def text(str: String): Unit = js.native
+trait Builder extends js.Object {
+  var document: js.Array[_]
+  var postProcessingSteps: js.Array[_]
+  def buildHtml(): js.Array[_]
+  def closeTag(name: String): Unit
+  def extractOptions(args: js.Any): js.Any
+  def openTag(name: String, attributes: js.Any): Unit
+  def raw(str: String): Unit
+  def subview(outletName: js.Any, subview: View): Unit
+  def tag(name: String, args: js.Any*): Unit
+  def text(str: String): Unit
+}
+
+object Builder {
+  @scala.inline
+  def apply(
+    buildHtml: () => js.Array[_],
+    closeTag: String => Unit,
+    document: js.Array[_],
+    extractOptions: js.Any => js.Any,
+    openTag: (String, js.Any) => Unit,
+    postProcessingSteps: js.Array[_],
+    raw: String => Unit,
+    subview: (js.Any, View) => Unit,
+    tag: (String, /* repeated */ js.Any) => Unit,
+    text: String => Unit
+  ): Builder = {
+    val __obj = js.Dynamic.literal(buildHtml = js.Any.fromFunction0(buildHtml), closeTag = js.Any.fromFunction1(closeTag), document = document.asInstanceOf[js.Any], extractOptions = js.Any.fromFunction1(extractOptions), openTag = js.Any.fromFunction2(openTag), postProcessingSteps = postProcessingSteps.asInstanceOf[js.Any], raw = js.Any.fromFunction1(raw), subview = js.Any.fromFunction2(subview), tag = js.Any.fromFunction2(tag), text = js.Any.fromFunction1(text))
+    __obj.asInstanceOf[Builder]
+  }
 }
 

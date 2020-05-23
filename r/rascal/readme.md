@@ -1,7 +1,7 @@
 
 # Scala.js typings for rascal
 
-Typings are for version 8.0
+Typings are for version 10.0
 
 ## Library description:
 A config driven wrapper for amqplib supporting multi-host connections, automatic error recovery, redelivery flood protection, transparent encryption / decription and channel pooling

@@ -21,7 +21,7 @@ object ModelPopulateOptions {
     select: js.Any = null
   ): ModelPopulateOptions = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (!js.isUndefined(justOne)) __obj.updateDynamic("justOne")(justOne.asInstanceOf[js.Any])
+    if (!js.isUndefined(justOne)) __obj.updateDynamic("justOne")(justOne.get.asInstanceOf[js.Any])
     if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])

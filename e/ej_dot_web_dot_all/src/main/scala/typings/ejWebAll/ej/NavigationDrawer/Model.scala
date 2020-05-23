@@ -92,7 +92,7 @@ object Model {
     swipe: /* e */ SwipeEventArgs => Unit = null,
     targetId: String = null,
     `type`: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): Model = {
     val __obj = js.Dynamic.literal()
     if (ajaxComplete != null) __obj.updateDynamic("ajaxComplete")(js.Any.fromFunction1(ajaxComplete))
@@ -103,8 +103,8 @@ object Model {
     if (contentId != null) __obj.updateDynamic("contentId")(contentId.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableListView)) __obj.updateDynamic("enableListView")(enableListView.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPaneOpen)) __obj.updateDynamic("isPaneOpen")(isPaneOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableListView)) __obj.updateDynamic("enableListView")(enableListView.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPaneOpen)) __obj.updateDynamic("isPaneOpen")(isPaneOpen.get.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (listViewSettings != null) __obj.updateDynamic("listViewSettings")(listViewSettings.asInstanceOf[js.Any])
     if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
@@ -112,7 +112,7 @@ object Model {
     if (swipe != null) __obj.updateDynamic("swipe")(js.Any.fromFunction1(swipe))
     if (targetId != null) __obj.updateDynamic("targetId")(targetId.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
 }

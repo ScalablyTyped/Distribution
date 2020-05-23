@@ -18,7 +18,7 @@ trait WorkbookProtectionLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Indicates if the workbook is protected. Read-Only.
+    * Specifies if the workbook is protected.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -29,8 +29,8 @@ object WorkbookProtectionLoadOptions {
   @scala.inline
   def apply($all: js.UndefOr[Boolean] = js.undefined, `protected`: js.UndefOr[Boolean] = js.undefined): WorkbookProtectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(`protected`)) __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`protected`)) __obj.updateDynamic("protected")(`protected`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookProtectionLoadOptions]
   }
 }

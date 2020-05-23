@@ -4,17 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.ChartBorder")
-@js.native
-class ChartBorder protected () extends js.Object {
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
-  var Color: js.Any = js.native
-  var ColorIndex: js.Any = js.native
-  val Creator: Double = js.native
-  var LineStyle: js.Any = js.native
-  val Parent: js.Any = js.native
+trait ChartBorder extends js.Object {
+  val Application: typings.activexPowerpoint.PowerPoint.Application
+  var Color: js.Any
+  var ColorIndex: js.Any
+  val Creator: Double
+  var LineStyle: js.Any
+  val Parent: js.Any
   @JSName("PowerPoint.ChartBorder_typekey")
-  var PowerPointDotChartBorder_typekey: ChartBorder = js.native
-  var Weight: js.Any = js.native
+  var PowerPointDotChartBorder_typekey: ChartBorder
+  var Weight: js.Any
+}
+
+object ChartBorder {
+  @scala.inline
+  def apply(
+    Application: Application,
+    Color: js.Any,
+    ColorIndex: js.Any,
+    Creator: Double,
+    LineStyle: js.Any,
+    Parent: js.Any,
+    PowerPointDotChartBorder_typekey: ChartBorder,
+    Weight: js.Any
+  ): ChartBorder = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Color = Color.asInstanceOf[js.Any], ColorIndex = ColorIndex.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], LineStyle = LineStyle.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Weight = Weight.asInstanceOf[js.Any])
+    __obj.updateDynamic("PowerPoint.ChartBorder_typekey")(PowerPointDotChartBorder_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartBorder]
+  }
 }
 

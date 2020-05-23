@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ASPxDesignerUndoEngine")
 @js.native
-class ASPxDesignerUndoEngine () extends js.Object {
+trait ASPxDesignerUndoEngine extends js.Object {
   @JSName("isDirty")
   var isDirty_Original: KnockoutObservable[Boolean] = js.native
   @JSName("redoEnabled")

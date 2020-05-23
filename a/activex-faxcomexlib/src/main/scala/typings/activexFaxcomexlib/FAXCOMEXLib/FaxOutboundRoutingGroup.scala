@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** FaxOutboundRoutingGroup Class */
-@JSGlobal("FAXCOMEXLib.FaxOutboundRoutingGroup")
 @js.native
-class FaxOutboundRoutingGroup protected () extends js.Object {
+trait FaxOutboundRoutingGroup extends js.Object {
   /** Ordered collection of device IDs */
   @JSName("DeviceIds")
   val DeviceIds_Original: FaxDeviceIds = js.native

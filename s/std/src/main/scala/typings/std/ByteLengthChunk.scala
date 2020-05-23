@@ -10,9 +10,9 @@ trait ByteLengthChunk extends js.Object {
 
 object ByteLengthChunk {
   @scala.inline
-  def apply(byteLength: Int | Double = null): ByteLengthChunk = {
+  def apply(byteLength: js.UndefOr[Double] = js.undefined): ByteLengthChunk = {
     val __obj = js.Dynamic.literal()
-    if (byteLength != null) __obj.updateDynamic("byteLength")(byteLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(byteLength)) __obj.updateDynamic("byteLength")(byteLength.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ByteLengthChunk]
   }
 }

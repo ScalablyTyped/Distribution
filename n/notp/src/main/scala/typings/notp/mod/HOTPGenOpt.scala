@@ -14,9 +14,9 @@ trait HOTPGenOpt extends js.Object {
 
 object HOTPGenOpt {
   @scala.inline
-  def apply(counter: Int | Double = null): HOTPGenOpt = {
+  def apply(counter: js.UndefOr[Double] = js.undefined): HOTPGenOpt = {
     val __obj = js.Dynamic.literal()
-    if (counter != null) __obj.updateDynamic("counter")(counter.asInstanceOf[js.Any])
+    if (!js.isUndefined(counter)) __obj.updateDynamic("counter")(counter.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HOTPGenOpt]
   }
 }

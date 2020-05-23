@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AuthorizeClientVpnIngressRequest extends js.Object {
   /**
-    * The ID of the Active Directory group to grant access.
+    * The ID of the group to grant access to, for example, the Active Directory group or identity provider (IdP) group.
     */
   var AccessGroupId: js.UndefOr[String] = js.native
   /**
@@ -42,17 +42,17 @@ object AuthorizeClientVpnIngressRequest {
     ClientVpnEndpointId: ClientVpnEndpointId,
     TargetNetworkCidr: String,
     AccessGroupId: String = null,
-    AuthorizeAllGroups: js.UndefOr[scala.Boolean] = js.undefined,
+    AuthorizeAllGroups: js.UndefOr[Boolean] = js.undefined,
     ClientToken: String = null,
     Description: String = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined
   ): AuthorizeClientVpnIngressRequest = {
     val __obj = js.Dynamic.literal(ClientVpnEndpointId = ClientVpnEndpointId.asInstanceOf[js.Any], TargetNetworkCidr = TargetNetworkCidr.asInstanceOf[js.Any])
     if (AccessGroupId != null) __obj.updateDynamic("AccessGroupId")(AccessGroupId.asInstanceOf[js.Any])
-    if (!js.isUndefined(AuthorizeAllGroups)) __obj.updateDynamic("AuthorizeAllGroups")(AuthorizeAllGroups.asInstanceOf[js.Any])
+    if (!js.isUndefined(AuthorizeAllGroups)) __obj.updateDynamic("AuthorizeAllGroups")(AuthorizeAllGroups.get.asInstanceOf[js.Any])
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizeClientVpnIngressRequest]
   }
 }

@@ -8,17 +8,18 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientDateEdit.CalendarCellClick event.
   */
-@JSGlobal("ASPxClientCalendarCellClickEventArgs")
-@js.native
-class ASPxClientCalendarCellClickEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientCalendarCellClickEventArgs class.
-    * @param date A DateTime object representing the clicked date cell.
-    */
-  def this(date: Date) = this()
+trait ASPxClientCalendarCellClickEventArgs extends ASPxClientEventArgs {
   /**
     * Gets the date that relates to the processed calendar's cell click.
     */
-  var date: Date = js.native
+  var date: Date
+}
+
+object ASPxClientCalendarCellClickEventArgs {
+  @scala.inline
+  def apply(date: Date): ASPxClientCalendarCellClickEventArgs = {
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientCalendarCellClickEventArgs]
+  }
 }
 

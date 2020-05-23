@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   * transmitting JSON via XHR. Most Ember.js apps that consume a JSON API
   * should use the REST adapter.
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.emberData.mod.DS.BuildURLMixin because Inheritance from two classes. Inlined buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, buildURL, urlForFindRecord, urlForFindAll, urlForQuery, urlForQueryRecord, urlForFindMany, urlForFindHasMany, urlForFindBelongsTo, urlForCreateRecord, urlForUpdateRecord, urlForDeleteRecord, pathForType */ @JSImport("ember-data", "DS.RESTAdapter")
 @js.native
 class RESTAdapter () extends Adapter {

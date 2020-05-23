@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.Global")
 @js.native
-class Global protected () extends js.Object {
+trait Global extends js.Object {
   val ActiveDocument: Document = js.native
   var ActivePrinter: String = js.native
   val ActiveProtectedViewWindow: ProtectedViewWindow = js.native

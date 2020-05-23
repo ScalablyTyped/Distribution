@@ -4,7 +4,7 @@ import typings.flatpickr.instanceMod.Instance
 import typings.flatpickr.mod.flatpickr.Options.Hook
 import typings.flatpickr.mod.flatpickr.Options.Options
 import typings.react.mod.ReactElement
-import typings.reactFlatpickr.OmitDateTimePickerPropsop
+import typings.reactFlatpickr.anon.OmitDateTimePickerPropsop
 import typings.reactFlatpickr.reactFlatpickrStrings.a
 import typings.reactFlatpickr.reactFlatpickrStrings.backward
 import typings.reactFlatpickr.reactFlatpickrStrings.forward
@@ -22,12 +22,12 @@ import typings.std.DOMRectList
 import typings.std.DOMStringMap
 import typings.std.DOMTokenList
 import typings.std.Date
-import typings.std.Document_
+import typings.std.Document
 import typings.std.DragEvent
 import typings.std.Element
 import typings.std.Error
+import typings.std.Event
 import typings.std.EventTarget
-import typings.std.Event_
 import typings.std.FileList
 import typings.std.FocusEvent
 import typings.std.HTMLAnchorElement
@@ -87,7 +87,7 @@ trait DateTimePickerProps extends js.Object {
   var addEventListener: js.UndefOr[
     js.Function2[
       fullscreenchange, 
-      /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _], 
+      /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event, _], 
       Unit
     ]
   ] = js.undefined
@@ -129,7 +129,7 @@ trait DateTimePickerProps extends js.Object {
   var dir: js.UndefOr[String] = js.undefined
   var dirName: js.UndefOr[String] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var dispatchEvent: js.UndefOr[js.Function1[/* event */ Event_, Boolean]] = js.undefined
+  var dispatchEvent: js.UndefOr[js.Function1[/* event */ Event, Boolean]] = js.undefined
   var draggable: js.UndefOr[Boolean] = js.undefined
   var files: js.UndefOr[FileList] = js.undefined
   var firstChild: js.UndefOr[ChildNode] = js.undefined
@@ -226,42 +226,42 @@ trait DateTimePickerProps extends js.Object {
   var onanimationstart: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, _]] = js.undefined
   var onauxclick: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]] = js.undefined
   var onblur: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]] = js.undefined
-  var oncancel: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
-  var oncanplay: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
-  var oncanplaythrough: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
-  var onchange: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
+  var oncancel: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
+  var oncanplay: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
+  var oncanplaythrough: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
+  var onchange: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
   var onclick: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]] = js.undefined
-  var onclose: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
+  var onclose: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
   var oncontextmenu: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]] = js.undefined
   var oncopy: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _]] = js.undefined
-  var oncuechange: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
+  var oncuechange: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
   var oncut: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _]] = js.undefined
   var ondblclick: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]] = js.undefined
   var ondrag: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]] = js.undefined
   var ondragend: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]] = js.undefined
   var ondragenter: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]] = js.undefined
-  var ondragexit: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
+  var ondragexit: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
   var ondragleave: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]] = js.undefined
   var ondragover: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]] = js.undefined
   var ondragstart: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]] = js.undefined
   var ondrop: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]] = js.undefined
-  var ondurationchange: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
-  var onemptied: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
-  var onended: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
+  var ondurationchange: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
+  var onemptied: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
+  var onended: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
   var onerror: js.UndefOr[OnErrorEventHandler] = js.undefined
   var onfocus: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]] = js.undefined
-  var onfullscreenchange: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
-  var onfullscreenerror: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
+  var onfullscreenchange: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
+  var onfullscreenerror: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
   var ongotpointercapture: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]] = js.undefined
-  var oninput: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
-  var oninvalid: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
+  var oninput: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
+  var oninvalid: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
   var onkeydown: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]] = js.undefined
   var onkeypress: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]] = js.undefined
   var onkeyup: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]] = js.undefined
-  var onload: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
-  var onloadeddata: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
-  var onloadedmetadata: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
-  var onloadstart: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
+  var onload: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
+  var onloadeddata: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
+  var onloadedmetadata: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
+  var onloadstart: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
   var onlostpointercapture: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]] = js.undefined
   var onmousedown: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]] = js.undefined
   var onmouseenter: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]] = js.undefined
@@ -271,9 +271,9 @@ trait DateTimePickerProps extends js.Object {
   var onmouseover: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]] = js.undefined
   var onmouseup: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]] = js.undefined
   var onpaste: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _]] = js.undefined
-  var onpause: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
-  var onplay: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
-  var onplaying: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
+  var onpause: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
+  var onplay: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
+  var onplaying: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
   var onpointercancel: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]] = js.undefined
   var onpointerdown: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]] = js.undefined
   var onpointerenter: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]] = js.undefined
@@ -283,21 +283,21 @@ trait DateTimePickerProps extends js.Object {
   var onpointerover: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]] = js.undefined
   var onpointerup: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]] = js.undefined
   var onprogress: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], _]] = js.undefined
-  var onratechange: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
-  var onreset: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
+  var onratechange: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
+  var onreset: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
   var onresize: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]] = js.undefined
-  var onscroll: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
+  var onscroll: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
   var onsecuritypolicyviolation: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ SecurityPolicyViolationEvent, _]] = js.undefined
-  var onseeked: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
-  var onseeking: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
-  var onselect: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
-  var onselectionchange: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
-  var onselectstart: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
-  var onstalled: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
-  var onsubmit: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
-  var onsuspend: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
-  var ontimeupdate: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
-  var ontoggle: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
+  var onseeked: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
+  var onseeking: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
+  var onselect: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
+  var onselectionchange: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
+  var onselectstart: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
+  var onstalled: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
+  var onsubmit: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
+  var onsuspend: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
+  var ontimeupdate: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
+  var ontoggle: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
   var ontouchcancel: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]] = js.undefined
   var ontouchend: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]] = js.undefined
   var ontouchmove: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]] = js.undefined
@@ -306,12 +306,12 @@ trait DateTimePickerProps extends js.Object {
   var ontransitionend: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, _]] = js.undefined
   var ontransitionrun: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, _]] = js.undefined
   var ontransitionstart: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, _]] = js.undefined
-  var onvolumechange: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
-  var onwaiting: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.undefined
+  var onvolumechange: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
+  var onwaiting: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]] = js.undefined
   var onwheel: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, _]] = js.undefined
   var options: js.UndefOr[Options] = js.undefined
   var outerHTML: js.UndefOr[String] = js.undefined
-  var ownerDocument: js.UndefOr[Document_] = js.undefined
+  var ownerDocument: js.UndefOr[Document] = js.undefined
   var parentElement: js.UndefOr[HTMLElement] = js.undefined
   var parentNode: js.UndefOr[Node with ParentNode] = js.undefined
   var pattern: js.UndefOr[String] = js.undefined
@@ -332,7 +332,7 @@ trait DateTimePickerProps extends js.Object {
   var removeEventListener: js.UndefOr[
     js.Function2[
       fullscreenchange, 
-      /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _], 
+      /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event, _], 
       Unit
     ]
   ] = js.undefined
@@ -401,28 +401,28 @@ trait DateTimePickerProps extends js.Object {
 object DateTimePickerProps {
   @scala.inline
   def apply(
-    ATTRIBUTE_NODE: Int | Double = null,
-    CDATA_SECTION_NODE: Int | Double = null,
-    COMMENT_NODE: Int | Double = null,
-    DOCUMENT_FRAGMENT_NODE: Int | Double = null,
-    DOCUMENT_NODE: Int | Double = null,
-    DOCUMENT_POSITION_CONTAINED_BY: Int | Double = null,
-    DOCUMENT_POSITION_CONTAINS: Int | Double = null,
-    DOCUMENT_POSITION_DISCONNECTED: Int | Double = null,
-    DOCUMENT_POSITION_FOLLOWING: Int | Double = null,
-    DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: Int | Double = null,
-    DOCUMENT_POSITION_PRECEDING: Int | Double = null,
-    DOCUMENT_TYPE_NODE: Int | Double = null,
-    ELEMENT_NODE: Int | Double = null,
-    ENTITY_NODE: Int | Double = null,
-    ENTITY_REFERENCE_NODE: Int | Double = null,
-    NOTATION_NODE: Int | Double = null,
-    PROCESSING_INSTRUCTION_NODE: Int | Double = null,
-    TEXT_NODE: Int | Double = null,
+    ATTRIBUTE_NODE: js.UndefOr[Double] = js.undefined,
+    CDATA_SECTION_NODE: js.UndefOr[Double] = js.undefined,
+    COMMENT_NODE: js.UndefOr[Double] = js.undefined,
+    DOCUMENT_FRAGMENT_NODE: js.UndefOr[Double] = js.undefined,
+    DOCUMENT_NODE: js.UndefOr[Double] = js.undefined,
+    DOCUMENT_POSITION_CONTAINED_BY: js.UndefOr[Double] = js.undefined,
+    DOCUMENT_POSITION_CONTAINS: js.UndefOr[Double] = js.undefined,
+    DOCUMENT_POSITION_DISCONNECTED: js.UndefOr[Double] = js.undefined,
+    DOCUMENT_POSITION_FOLLOWING: js.UndefOr[Double] = js.undefined,
+    DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: js.UndefOr[Double] = js.undefined,
+    DOCUMENT_POSITION_PRECEDING: js.UndefOr[Double] = js.undefined,
+    DOCUMENT_TYPE_NODE: js.UndefOr[Double] = js.undefined,
+    ELEMENT_NODE: js.UndefOr[Double] = js.undefined,
+    ENTITY_NODE: js.UndefOr[Double] = js.undefined,
+    ENTITY_REFERENCE_NODE: js.UndefOr[Double] = js.undefined,
+    NOTATION_NODE: js.UndefOr[Double] = js.undefined,
+    PROCESSING_INSTRUCTION_NODE: js.UndefOr[Double] = js.undefined,
+    TEXT_NODE: js.UndefOr[Double] = js.undefined,
     accept: String = null,
     accessKey: String = null,
     accessKeyLabel: String = null,
-    addEventListener: (fullscreenchange, /* listener */ js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _]) => Unit = null,
+    addEventListener: (fullscreenchange, /* listener */ js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _]) => Unit = null,
     after: /* repeated */ Node | String => Unit = null,
     align: String = null,
     alt: String = null,
@@ -440,16 +440,16 @@ object DateTimePickerProps {
     blur: () => Unit = null,
     checkValidity: () => Boolean = null,
     checked: js.UndefOr[Boolean] = js.undefined,
-    childElementCount: Int | Double = null,
+    childElementCount: js.UndefOr[Double] = js.undefined,
     childNodes: NodeListOf[ChildNode] = null,
     children: HTMLCollection = null,
     classList: DOMTokenList = null,
     className: String = null,
     click: () => Unit = null,
-    clientHeight: Int | Double = null,
-    clientLeft: Int | Double = null,
-    clientTop: Int | Double = null,
-    clientWidth: Int | Double = null,
+    clientHeight: js.UndefOr[Double] = js.undefined,
+    clientLeft: js.UndefOr[Double] = js.undefined,
+    clientTop: js.UndefOr[Double] = js.undefined,
+    clientWidth: js.UndefOr[Double] = js.undefined,
     cloneNode: () => Node = null,
     closest: a => HTMLAnchorElement | Null = null,
     compareDocumentPosition: /* other */ Node => Double = null,
@@ -461,7 +461,7 @@ object DateTimePickerProps {
     dir: String = null,
     dirName: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    dispatchEvent: /* event */ Event_ => Boolean = null,
+    dispatchEvent: /* event */ Event => Boolean = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
     files: FileList = null,
     firstChild: ChildNode = null,
@@ -490,7 +490,7 @@ object DateTimePickerProps {
     hasAttributes: () => Boolean = null,
     hasChildNodes: () => Boolean = null,
     hasPointerCapture: /* pointerId */ Double => Boolean = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     indeterminate: js.UndefOr[Boolean] = js.undefined,
@@ -516,9 +516,9 @@ object DateTimePickerProps {
     lookupPrefix: /* namespace */ String => String | Null = null,
     matches: /* selectors */ String => Boolean = null,
     max: String = null,
-    maxLength: Int | Double = null,
+    maxLength: js.UndefOr[Double] = js.undefined,
     min: String = null,
-    minLength: Int | Double = null,
+    minLength: js.UndefOr[Double] = js.undefined,
     msGetRegionContent: () => _ = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
@@ -526,23 +526,23 @@ object DateTimePickerProps {
     nextElementSibling: Element = null,
     nextSibling: ChildNode = null,
     nodeName: String = null,
-    nodeType: Int | Double = null,
+    nodeType: js.UndefOr[Double] = js.undefined,
     nodeValue: String = null,
     nonce: String = null,
     normalize: () => Unit = null,
-    offsetHeight: Int | Double = null,
-    offsetLeft: Int | Double = null,
+    offsetHeight: js.UndefOr[Double] = js.undefined,
+    offsetLeft: js.UndefOr[Double] = js.undefined,
     offsetParent: Element = null,
-    offsetTop: Int | Double = null,
-    offsetWidth: Int | Double = null,
-    onChange: (/* dates */ js.Array[typings.flatpickr.globalsMod._Global_.Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit = null,
-    onClose: (/* dates */ js.Array[typings.flatpickr.globalsMod._Global_.Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit = null,
-    onDayCreate: (/* dates */ js.Array[typings.flatpickr.globalsMod._Global_.Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit = null,
-    onMonthChange: (/* dates */ js.Array[typings.flatpickr.globalsMod._Global_.Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit = null,
-    onOpen: (/* dates */ js.Array[typings.flatpickr.globalsMod._Global_.Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit = null,
-    onReady: (/* dates */ js.Array[typings.flatpickr.globalsMod._Global_.Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit = null,
-    onValueUpdate: (/* dates */ js.Array[typings.flatpickr.globalsMod._Global_.Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit = null,
-    onYearChange: (/* dates */ js.Array[typings.flatpickr.globalsMod._Global_.Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit = null,
+    offsetTop: js.UndefOr[Double] = js.undefined,
+    offsetWidth: js.UndefOr[Double] = js.undefined,
+    onChange: (/* dates */ js.Array[typings.flatpickr.globalsMod.global.Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit = null,
+    onClose: (/* dates */ js.Array[typings.flatpickr.globalsMod.global.Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit = null,
+    onDayCreate: (/* dates */ js.Array[typings.flatpickr.globalsMod.global.Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit = null,
+    onMonthChange: (/* dates */ js.Array[typings.flatpickr.globalsMod.global.Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit = null,
+    onOpen: (/* dates */ js.Array[typings.flatpickr.globalsMod.global.Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit = null,
+    onReady: (/* dates */ js.Array[typings.flatpickr.globalsMod.global.Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit = null,
+    onValueUpdate: (/* dates */ js.Array[typings.flatpickr.globalsMod.global.Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit = null,
+    onYearChange: (/* dates */ js.Array[typings.flatpickr.globalsMod.global.Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit = null,
     onabort: js.ThisFunction1[DateTimePickerProps, /* ev */ UIEvent, _] = null,
     onanimationcancel: js.ThisFunction1[DateTimePickerProps, /* ev */ AnimationEvent, _] = null,
     onanimationend: js.ThisFunction1[DateTimePickerProps, /* ev */ AnimationEvent, _] = null,
@@ -550,42 +550,44 @@ object DateTimePickerProps {
     onanimationstart: js.ThisFunction1[DateTimePickerProps, /* ev */ AnimationEvent, _] = null,
     onauxclick: js.ThisFunction1[DateTimePickerProps, /* ev */ MouseEvent, _] = null,
     onblur: js.ThisFunction1[DateTimePickerProps, /* ev */ FocusEvent, _] = null,
-    oncancel: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
-    oncanplay: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
-    oncanplaythrough: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
-    onchange: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
+    oncancel: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
+    oncanplay: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
+    oncanplaythrough: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
+    onchange: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
     onclick: js.ThisFunction1[DateTimePickerProps, /* ev */ MouseEvent, _] = null,
-    onclose: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
+    onclose: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
     oncontextmenu: js.ThisFunction1[DateTimePickerProps, /* ev */ MouseEvent, _] = null,
     oncopy: js.ThisFunction1[DateTimePickerProps, /* ev */ ClipboardEvent, _] = null,
-    oncuechange: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
+    oncuechange: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
     oncut: js.ThisFunction1[DateTimePickerProps, /* ev */ ClipboardEvent, _] = null,
     ondblclick: js.ThisFunction1[DateTimePickerProps, /* ev */ MouseEvent, _] = null,
     ondrag: js.ThisFunction1[DateTimePickerProps, /* ev */ DragEvent, _] = null,
     ondragend: js.ThisFunction1[DateTimePickerProps, /* ev */ DragEvent, _] = null,
     ondragenter: js.ThisFunction1[DateTimePickerProps, /* ev */ DragEvent, _] = null,
-    ondragexit: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
+    ondragexit: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
     ondragleave: js.ThisFunction1[DateTimePickerProps, /* ev */ DragEvent, _] = null,
     ondragover: js.ThisFunction1[DateTimePickerProps, /* ev */ DragEvent, _] = null,
     ondragstart: js.ThisFunction1[DateTimePickerProps, /* ev */ DragEvent, _] = null,
     ondrop: js.ThisFunction1[DateTimePickerProps, /* ev */ DragEvent, _] = null,
-    ondurationchange: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
-    onemptied: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
-    onended: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
-    onerror: (/* event */ Event_ | String, /* source */ js.UndefOr[String], /* lineno */ js.UndefOr[Double], /* colno */ js.UndefOr[Double], /* error */ js.UndefOr[Error]) => js.Any = null,
+    ondurationchange: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
+    onemptied: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
+    onended: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
+    onerror: js.UndefOr[
+      Null | ((/* event */ Event | String, /* source */ js.UndefOr[String], /* lineno */ js.UndefOr[Double], /* colno */ js.UndefOr[Double], /* error */ js.UndefOr[Error]) => js.Any)
+    ] = js.undefined,
     onfocus: js.ThisFunction1[DateTimePickerProps, /* ev */ FocusEvent, _] = null,
-    onfullscreenchange: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
-    onfullscreenerror: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
+    onfullscreenchange: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
+    onfullscreenerror: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
     ongotpointercapture: js.ThisFunction1[DateTimePickerProps, /* ev */ PointerEvent, _] = null,
-    oninput: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
-    oninvalid: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
+    oninput: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
+    oninvalid: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
     onkeydown: js.ThisFunction1[DateTimePickerProps, /* ev */ KeyboardEvent, _] = null,
     onkeypress: js.ThisFunction1[DateTimePickerProps, /* ev */ KeyboardEvent, _] = null,
     onkeyup: js.ThisFunction1[DateTimePickerProps, /* ev */ KeyboardEvent, _] = null,
-    onload: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
-    onloadeddata: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
-    onloadedmetadata: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
-    onloadstart: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
+    onload: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
+    onloadeddata: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
+    onloadedmetadata: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
+    onloadstart: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
     onlostpointercapture: js.ThisFunction1[DateTimePickerProps, /* ev */ PointerEvent, _] = null,
     onmousedown: js.ThisFunction1[DateTimePickerProps, /* ev */ MouseEvent, _] = null,
     onmouseenter: js.ThisFunction1[DateTimePickerProps, /* ev */ MouseEvent, _] = null,
@@ -595,9 +597,9 @@ object DateTimePickerProps {
     onmouseover: js.ThisFunction1[DateTimePickerProps, /* ev */ MouseEvent, _] = null,
     onmouseup: js.ThisFunction1[DateTimePickerProps, /* ev */ MouseEvent, _] = null,
     onpaste: js.ThisFunction1[DateTimePickerProps, /* ev */ ClipboardEvent, _] = null,
-    onpause: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
-    onplay: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
-    onplaying: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
+    onpause: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
+    onplay: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
+    onplaying: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
     onpointercancel: js.ThisFunction1[DateTimePickerProps, /* ev */ PointerEvent, _] = null,
     onpointerdown: js.ThisFunction1[DateTimePickerProps, /* ev */ PointerEvent, _] = null,
     onpointerenter: js.ThisFunction1[DateTimePickerProps, /* ev */ PointerEvent, _] = null,
@@ -607,21 +609,21 @@ object DateTimePickerProps {
     onpointerover: js.ThisFunction1[DateTimePickerProps, /* ev */ PointerEvent, _] = null,
     onpointerup: js.ThisFunction1[DateTimePickerProps, /* ev */ PointerEvent, _] = null,
     onprogress: js.ThisFunction1[DateTimePickerProps, /* ev */ ProgressEvent[EventTarget], _] = null,
-    onratechange: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
-    onreset: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
+    onratechange: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
+    onreset: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
     onresize: js.ThisFunction1[DateTimePickerProps, /* ev */ UIEvent, _] = null,
-    onscroll: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
+    onscroll: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
     onsecuritypolicyviolation: js.ThisFunction1[DateTimePickerProps, /* ev */ SecurityPolicyViolationEvent, _] = null,
-    onseeked: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
-    onseeking: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
-    onselect: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
-    onselectionchange: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
-    onselectstart: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
-    onstalled: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
-    onsubmit: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
-    onsuspend: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
-    ontimeupdate: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
-    ontoggle: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
+    onseeked: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
+    onseeking: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
+    onselect: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
+    onselectionchange: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
+    onselectstart: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
+    onstalled: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
+    onsubmit: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
+    onsuspend: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
+    ontimeupdate: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
+    ontoggle: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
     ontouchcancel: js.ThisFunction1[DateTimePickerProps, /* ev */ TouchEvent, _] = null,
     ontouchend: js.ThisFunction1[DateTimePickerProps, /* ev */ TouchEvent, _] = null,
     ontouchmove: js.ThisFunction1[DateTimePickerProps, /* ev */ TouchEvent, _] = null,
@@ -630,12 +632,12 @@ object DateTimePickerProps {
     ontransitionend: js.ThisFunction1[DateTimePickerProps, /* ev */ TransitionEvent, _] = null,
     ontransitionrun: js.ThisFunction1[DateTimePickerProps, /* ev */ TransitionEvent, _] = null,
     ontransitionstart: js.ThisFunction1[DateTimePickerProps, /* ev */ TransitionEvent, _] = null,
-    onvolumechange: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
-    onwaiting: js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _] = null,
+    onvolumechange: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
+    onwaiting: js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _] = null,
     onwheel: js.ThisFunction1[DateTimePickerProps, /* ev */ WheelEvent, _] = null,
     options: Options = null,
     outerHTML: String = null,
-    ownerDocument: Document_ = null,
+    ownerDocument: Document = null,
     parentElement: HTMLElement = null,
     parentNode: Node with ParentNode = null,
     pattern: String = null,
@@ -653,28 +655,28 @@ object DateTimePickerProps {
     removeAttributeNS: (/* namespace */ String, /* localName */ String) => Unit = null,
     removeAttributeNode: /* attr */ Attr => Attr = null,
     removeChild: /* oldChild */ Node => Node = null,
-    removeEventListener: (fullscreenchange, /* listener */ js.ThisFunction1[DateTimePickerProps, /* ev */ Event_, _]) => Unit = null,
+    removeEventListener: (fullscreenchange, /* listener */ js.ThisFunction1[DateTimePickerProps, /* ev */ Event, _]) => Unit = null,
     render: (/* props */ OmitDateTimePickerPropsop, /* ref */ js.Function1[/* node */ HTMLInputElement, Unit]) => ReactElement = null
   ): DateTimePickerProps = {
     val __obj = js.Dynamic.literal()
-    if (ATTRIBUTE_NODE != null) __obj.updateDynamic("ATTRIBUTE_NODE")(ATTRIBUTE_NODE.asInstanceOf[js.Any])
-    if (CDATA_SECTION_NODE != null) __obj.updateDynamic("CDATA_SECTION_NODE")(CDATA_SECTION_NODE.asInstanceOf[js.Any])
-    if (COMMENT_NODE != null) __obj.updateDynamic("COMMENT_NODE")(COMMENT_NODE.asInstanceOf[js.Any])
-    if (DOCUMENT_FRAGMENT_NODE != null) __obj.updateDynamic("DOCUMENT_FRAGMENT_NODE")(DOCUMENT_FRAGMENT_NODE.asInstanceOf[js.Any])
-    if (DOCUMENT_NODE != null) __obj.updateDynamic("DOCUMENT_NODE")(DOCUMENT_NODE.asInstanceOf[js.Any])
-    if (DOCUMENT_POSITION_CONTAINED_BY != null) __obj.updateDynamic("DOCUMENT_POSITION_CONTAINED_BY")(DOCUMENT_POSITION_CONTAINED_BY.asInstanceOf[js.Any])
-    if (DOCUMENT_POSITION_CONTAINS != null) __obj.updateDynamic("DOCUMENT_POSITION_CONTAINS")(DOCUMENT_POSITION_CONTAINS.asInstanceOf[js.Any])
-    if (DOCUMENT_POSITION_DISCONNECTED != null) __obj.updateDynamic("DOCUMENT_POSITION_DISCONNECTED")(DOCUMENT_POSITION_DISCONNECTED.asInstanceOf[js.Any])
-    if (DOCUMENT_POSITION_FOLLOWING != null) __obj.updateDynamic("DOCUMENT_POSITION_FOLLOWING")(DOCUMENT_POSITION_FOLLOWING.asInstanceOf[js.Any])
-    if (DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC != null) __obj.updateDynamic("DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC")(DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC.asInstanceOf[js.Any])
-    if (DOCUMENT_POSITION_PRECEDING != null) __obj.updateDynamic("DOCUMENT_POSITION_PRECEDING")(DOCUMENT_POSITION_PRECEDING.asInstanceOf[js.Any])
-    if (DOCUMENT_TYPE_NODE != null) __obj.updateDynamic("DOCUMENT_TYPE_NODE")(DOCUMENT_TYPE_NODE.asInstanceOf[js.Any])
-    if (ELEMENT_NODE != null) __obj.updateDynamic("ELEMENT_NODE")(ELEMENT_NODE.asInstanceOf[js.Any])
-    if (ENTITY_NODE != null) __obj.updateDynamic("ENTITY_NODE")(ENTITY_NODE.asInstanceOf[js.Any])
-    if (ENTITY_REFERENCE_NODE != null) __obj.updateDynamic("ENTITY_REFERENCE_NODE")(ENTITY_REFERENCE_NODE.asInstanceOf[js.Any])
-    if (NOTATION_NODE != null) __obj.updateDynamic("NOTATION_NODE")(NOTATION_NODE.asInstanceOf[js.Any])
-    if (PROCESSING_INSTRUCTION_NODE != null) __obj.updateDynamic("PROCESSING_INSTRUCTION_NODE")(PROCESSING_INSTRUCTION_NODE.asInstanceOf[js.Any])
-    if (TEXT_NODE != null) __obj.updateDynamic("TEXT_NODE")(TEXT_NODE.asInstanceOf[js.Any])
+    if (!js.isUndefined(ATTRIBUTE_NODE)) __obj.updateDynamic("ATTRIBUTE_NODE")(ATTRIBUTE_NODE.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(CDATA_SECTION_NODE)) __obj.updateDynamic("CDATA_SECTION_NODE")(CDATA_SECTION_NODE.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(COMMENT_NODE)) __obj.updateDynamic("COMMENT_NODE")(COMMENT_NODE.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DOCUMENT_FRAGMENT_NODE)) __obj.updateDynamic("DOCUMENT_FRAGMENT_NODE")(DOCUMENT_FRAGMENT_NODE.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DOCUMENT_NODE)) __obj.updateDynamic("DOCUMENT_NODE")(DOCUMENT_NODE.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DOCUMENT_POSITION_CONTAINED_BY)) __obj.updateDynamic("DOCUMENT_POSITION_CONTAINED_BY")(DOCUMENT_POSITION_CONTAINED_BY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DOCUMENT_POSITION_CONTAINS)) __obj.updateDynamic("DOCUMENT_POSITION_CONTAINS")(DOCUMENT_POSITION_CONTAINS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DOCUMENT_POSITION_DISCONNECTED)) __obj.updateDynamic("DOCUMENT_POSITION_DISCONNECTED")(DOCUMENT_POSITION_DISCONNECTED.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DOCUMENT_POSITION_FOLLOWING)) __obj.updateDynamic("DOCUMENT_POSITION_FOLLOWING")(DOCUMENT_POSITION_FOLLOWING.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC)) __obj.updateDynamic("DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC")(DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DOCUMENT_POSITION_PRECEDING)) __obj.updateDynamic("DOCUMENT_POSITION_PRECEDING")(DOCUMENT_POSITION_PRECEDING.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DOCUMENT_TYPE_NODE)) __obj.updateDynamic("DOCUMENT_TYPE_NODE")(DOCUMENT_TYPE_NODE.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ELEMENT_NODE)) __obj.updateDynamic("ELEMENT_NODE")(ELEMENT_NODE.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ENTITY_NODE)) __obj.updateDynamic("ENTITY_NODE")(ENTITY_NODE.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ENTITY_REFERENCE_NODE)) __obj.updateDynamic("ENTITY_REFERENCE_NODE")(ENTITY_REFERENCE_NODE.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(NOTATION_NODE)) __obj.updateDynamic("NOTATION_NODE")(NOTATION_NODE.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(PROCESSING_INSTRUCTION_NODE)) __obj.updateDynamic("PROCESSING_INSTRUCTION_NODE")(PROCESSING_INSTRUCTION_NODE.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TEXT_NODE)) __obj.updateDynamic("TEXT_NODE")(TEXT_NODE.get.asInstanceOf[js.Any])
     if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
     if (accessKeyLabel != null) __obj.updateDynamic("accessKeyLabel")(accessKeyLabel.asInstanceOf[js.Any])
@@ -690,35 +692,35 @@ object DateTimePickerProps {
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (autocapitalize != null) __obj.updateDynamic("autocapitalize")(autocapitalize.asInstanceOf[js.Any])
     if (autocomplete != null) __obj.updateDynamic("autocomplete")(autocomplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus.get.asInstanceOf[js.Any])
     if (baseURI != null) __obj.updateDynamic("baseURI")(baseURI.asInstanceOf[js.Any])
     if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction1(before))
     if (blur != null) __obj.updateDynamic("blur")(js.Any.fromFunction0(blur))
     if (checkValidity != null) __obj.updateDynamic("checkValidity")(js.Any.fromFunction0(checkValidity))
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
-    if (childElementCount != null) __obj.updateDynamic("childElementCount")(childElementCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(childElementCount)) __obj.updateDynamic("childElementCount")(childElementCount.get.asInstanceOf[js.Any])
     if (childNodes != null) __obj.updateDynamic("childNodes")(childNodes.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (classList != null) __obj.updateDynamic("classList")(classList.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction0(click))
-    if (clientHeight != null) __obj.updateDynamic("clientHeight")(clientHeight.asInstanceOf[js.Any])
-    if (clientLeft != null) __obj.updateDynamic("clientLeft")(clientLeft.asInstanceOf[js.Any])
-    if (clientTop != null) __obj.updateDynamic("clientTop")(clientTop.asInstanceOf[js.Any])
-    if (clientWidth != null) __obj.updateDynamic("clientWidth")(clientWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientHeight)) __obj.updateDynamic("clientHeight")(clientHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientLeft)) __obj.updateDynamic("clientLeft")(clientLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientTop)) __obj.updateDynamic("clientTop")(clientTop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientWidth)) __obj.updateDynamic("clientWidth")(clientWidth.get.asInstanceOf[js.Any])
     if (cloneNode != null) __obj.updateDynamic("cloneNode")(js.Any.fromFunction0(cloneNode))
     if (closest != null) __obj.updateDynamic("closest")(js.Any.fromFunction1(closest))
     if (compareDocumentPosition != null) __obj.updateDynamic("compareDocumentPosition")(js.Any.fromFunction1(compareDocumentPosition))
     if (contains != null) __obj.updateDynamic("contains")(js.Any.fromFunction1(contains))
     if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (dataset != null) __obj.updateDynamic("dataset")(dataset.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.get.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (dirName != null) __obj.updateDynamic("dirName")(dirName.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (dispatchEvent != null) __obj.updateDynamic("dispatchEvent")(js.Any.fromFunction1(dispatchEvent))
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
     if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
     if (firstChild != null) __obj.updateDynamic("firstChild")(firstChild.asInstanceOf[js.Any])
     if (firstElementChild != null) __obj.updateDynamic("firstElementChild")(firstElementChild.asInstanceOf[js.Any])
@@ -727,7 +729,7 @@ object DateTimePickerProps {
     if (formAction != null) __obj.updateDynamic("formAction")(formAction.asInstanceOf[js.Any])
     if (formEnctype != null) __obj.updateDynamic("formEnctype")(formEnctype.asInstanceOf[js.Any])
     if (formMethod != null) __obj.updateDynamic("formMethod")(formMethod.asInstanceOf[js.Any])
-    if (!js.isUndefined(formNoValidate)) __obj.updateDynamic("formNoValidate")(formNoValidate.asInstanceOf[js.Any])
+    if (!js.isUndefined(formNoValidate)) __obj.updateDynamic("formNoValidate")(formNoValidate.get.asInstanceOf[js.Any])
     if (formTarget != null) __obj.updateDynamic("formTarget")(formTarget.asInstanceOf[js.Any])
     if (getAnimations != null) __obj.updateDynamic("getAnimations")(js.Any.fromFunction0(getAnimations))
     if (getAttribute != null) __obj.updateDynamic("getAttribute")(js.Any.fromFunction1(getAttribute))
@@ -746,10 +748,10 @@ object DateTimePickerProps {
     if (hasAttributes != null) __obj.updateDynamic("hasAttributes")(js.Any.fromFunction0(hasAttributes))
     if (hasChildNodes != null) __obj.updateDynamic("hasChildNodes")(js.Any.fromFunction0(hasChildNodes))
     if (hasPointerCapture != null) __obj.updateDynamic("hasPointerCapture")(js.Any.fromFunction1(hasPointerCapture))
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(indeterminate)) __obj.updateDynamic("indeterminate")(indeterminate.asInstanceOf[js.Any])
+    if (!js.isUndefined(indeterminate)) __obj.updateDynamic("indeterminate")(indeterminate.get.asInstanceOf[js.Any])
     if (innerHTML != null) __obj.updateDynamic("innerHTML")(innerHTML.asInstanceOf[js.Any])
     if (innerText != null) __obj.updateDynamic("innerText")(innerText.asInstanceOf[js.Any])
     if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
@@ -757,8 +759,8 @@ object DateTimePickerProps {
     if (insertAdjacentHTML != null) __obj.updateDynamic("insertAdjacentHTML")(js.Any.fromFunction2(insertAdjacentHTML))
     if (insertAdjacentText != null) __obj.updateDynamic("insertAdjacentText")(js.Any.fromFunction2(insertAdjacentText))
     if (insertBefore != null) __obj.updateDynamic("insertBefore")(js.Any.fromFunction2(insertBefore))
-    if (!js.isUndefined(isConnected)) __obj.updateDynamic("isConnected")(isConnected.asInstanceOf[js.Any])
-    if (!js.isUndefined(isContentEditable)) __obj.updateDynamic("isContentEditable")(isContentEditable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isConnected)) __obj.updateDynamic("isConnected")(isConnected.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isContentEditable)) __obj.updateDynamic("isContentEditable")(isContentEditable.get.asInstanceOf[js.Any])
     if (isDefaultNamespace != null) __obj.updateDynamic("isDefaultNamespace")(js.Any.fromFunction1(isDefaultNamespace))
     if (isEqualNode != null) __obj.updateDynamic("isEqualNode")(js.Any.fromFunction1(isEqualNode))
     if (isSameNode != null) __obj.updateDynamic("isSameNode")(js.Any.fromFunction1(isSameNode))
@@ -772,25 +774,25 @@ object DateTimePickerProps {
     if (lookupPrefix != null) __obj.updateDynamic("lookupPrefix")(js.Any.fromFunction1(lookupPrefix))
     if (matches != null) __obj.updateDynamic("matches")(js.Any.fromFunction1(matches))
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(minLength)) __obj.updateDynamic("minLength")(minLength.get.asInstanceOf[js.Any])
     if (msGetRegionContent != null) __obj.updateDynamic("msGetRegionContent")(js.Any.fromFunction0(msGetRegionContent))
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (namespaceURI != null) __obj.updateDynamic("namespaceURI")(namespaceURI.asInstanceOf[js.Any])
     if (nextElementSibling != null) __obj.updateDynamic("nextElementSibling")(nextElementSibling.asInstanceOf[js.Any])
     if (nextSibling != null) __obj.updateDynamic("nextSibling")(nextSibling.asInstanceOf[js.Any])
     if (nodeName != null) __obj.updateDynamic("nodeName")(nodeName.asInstanceOf[js.Any])
-    if (nodeType != null) __obj.updateDynamic("nodeType")(nodeType.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeType)) __obj.updateDynamic("nodeType")(nodeType.get.asInstanceOf[js.Any])
     if (nodeValue != null) __obj.updateDynamic("nodeValue")(nodeValue.asInstanceOf[js.Any])
     if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
     if (normalize != null) __obj.updateDynamic("normalize")(js.Any.fromFunction0(normalize))
-    if (offsetHeight != null) __obj.updateDynamic("offsetHeight")(offsetHeight.asInstanceOf[js.Any])
-    if (offsetLeft != null) __obj.updateDynamic("offsetLeft")(offsetLeft.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetHeight)) __obj.updateDynamic("offsetHeight")(offsetHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetLeft)) __obj.updateDynamic("offsetLeft")(offsetLeft.get.asInstanceOf[js.Any])
     if (offsetParent != null) __obj.updateDynamic("offsetParent")(offsetParent.asInstanceOf[js.Any])
-    if (offsetTop != null) __obj.updateDynamic("offsetTop")(offsetTop.asInstanceOf[js.Any])
-    if (offsetWidth != null) __obj.updateDynamic("offsetWidth")(offsetWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetTop)) __obj.updateDynamic("offsetTop")(offsetTop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetWidth)) __obj.updateDynamic("offsetWidth")(offsetWidth.get.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction4(onChange))
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction4(onClose))
     if (onDayCreate != null) __obj.updateDynamic("onDayCreate")(js.Any.fromFunction4(onDayCreate))
@@ -828,7 +830,7 @@ object DateTimePickerProps {
     if (ondurationchange != null) __obj.updateDynamic("ondurationchange")(ondurationchange.asInstanceOf[js.Any])
     if (onemptied != null) __obj.updateDynamic("onemptied")(onemptied.asInstanceOf[js.Any])
     if (onended != null) __obj.updateDynamic("onended")(onended.asInstanceOf[js.Any])
-    if (onerror != null) __obj.updateDynamic("onerror")(js.Any.fromFunction5(onerror))
+    if (!js.isUndefined(onerror)) __obj.updateDynamic("onerror")(if (onerror != null) js.Any.fromFunction5(onerror.asInstanceOf[(/* event */ Event | String, /* source */ js.UndefOr[String], /* lineno */ js.UndefOr[Double], /* colno */ js.UndefOr[Double], /* error */ js.UndefOr[Error]) => js.Any]) else null)
     if (onfocus != null) __obj.updateDynamic("onfocus")(onfocus.asInstanceOf[js.Any])
     if (onfullscreenchange != null) __obj.updateDynamic("onfullscreenchange")(onfullscreenchange.asInstanceOf[js.Any])
     if (onfullscreenerror != null) __obj.updateDynamic("onfullscreenerror")(onfullscreenerror.asInstanceOf[js.Any])
@@ -902,7 +904,7 @@ object DateTimePickerProps {
     if (previousSibling != null) __obj.updateDynamic("previousSibling")(previousSibling.asInstanceOf[js.Any])
     if (querySelector != null) __obj.updateDynamic("querySelector")(js.Any.fromFunction1(querySelector))
     if (querySelectorAll != null) __obj.updateDynamic("querySelectorAll")(js.Any.fromFunction1(querySelectorAll))
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     if (releasePointerCapture != null) __obj.updateDynamic("releasePointerCapture")(js.Any.fromFunction1(releasePointerCapture))
     if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction0(remove))
     if (removeAttribute != null) __obj.updateDynamic("removeAttribute")(js.Any.fromFunction1(removeAttribute))

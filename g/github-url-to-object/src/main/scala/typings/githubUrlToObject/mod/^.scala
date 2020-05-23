@@ -1,6 +1,6 @@
 package typings.githubUrlToObject.mod
 
-import typings.githubUrlToObject.AnonUrl
+import typings.githubUrlToObject.anon.Url
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(url: String): Result | Null = js.native
   def apply(url: String, options: Options): Result | Null = js.native
-  def apply(url: AnonUrl): Result | Null = js.native
-  def apply(url: AnonUrl, options: Options): Result | Null = js.native
+  def apply(url: Url): Result | Null = js.native
+  def apply(url: Url, options: Options): Result | Null = js.native
 }
 

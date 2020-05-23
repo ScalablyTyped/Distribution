@@ -4,9 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.Input.Spatial.SpatialManipulationDelta")
-@js.native
-abstract class SpatialManipulationDelta () extends js.Object {
-  var translation: js.Any = js.native
+trait SpatialManipulationDelta extends js.Object {
+  var translation: js.Any
+}
+
+object SpatialManipulationDelta {
+  @scala.inline
+  def apply(translation: js.Any): SpatialManipulationDelta = {
+    val __obj = js.Dynamic.literal(translation = translation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpatialManipulationDelta]
+  }
 }
 

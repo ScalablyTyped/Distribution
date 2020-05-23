@@ -11,11 +11,11 @@ trait CreateDetectorRequest extends js.Object {
     */
   var ClientToken: js.UndefOr[typings.awsSdk.guarddutyMod.ClientToken] = js.native
   /**
-    * A boolean value that specifies whether the detector is to be enabled.
+    * A Boolean value that specifies whether the detector is to be enabled.
     */
   var Enable: Boolean = js.native
   /**
-    * A enum value that specifies how frequently customer got Finding updates published.
+    * An enum value that specifies how frequently updated findings are exported.
     */
   var FindingPublishingFrequency: js.UndefOr[typings.awsSdk.guarddutyMod.FindingPublishingFrequency] = js.native
   /**

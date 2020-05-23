@@ -1,5 +1,9 @@
 package typings.agGrid
 
+import typings.agGrid.anon.Column
+import typings.agGrid.anon.EPopup
+import typings.agGrid.anon.EventSource
+import typings.agGrid.anon.KeepWithinBounds
 import typings.std.MouseEvent
 import typings.std.Touch
 import scala.scalajs.js
@@ -33,10 +37,10 @@ object popupServiceMod extends js.Object {
     /* private */ def keepXWithinBounds(params: js.Any, x: js.Any): js.Any = js.native
     /* private */ def keepYWithinBounds(params: js.Any, y: js.Any): js.Any = js.native
     /* private */ def positionPopup(params: js.Any): js.Any = js.native
-    def positionPopupForMenu(params: AnonEPopup): Unit = js.native
-    def positionPopupOverComponent(params: AnonKeepWithinBounds): Unit = js.native
-    def positionPopupUnderComponent(params: AnonEventSource): Unit = js.native
-    def positionPopupUnderMouseEvent(params: AnonColumn): Unit = js.native
+    def positionPopupForMenu(params: EPopup): Unit = js.native
+    def positionPopupOverComponent(params: KeepWithinBounds): Unit = js.native
+    def positionPopupUnderComponent(params: EventSource): Unit = js.native
+    def positionPopupUnderMouseEvent(params: Column): Unit = js.native
   }
   
 }

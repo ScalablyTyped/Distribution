@@ -68,7 +68,7 @@ trait PlusNativeUI extends js.Object {
   /**
     * 系统等待对话框对象
     * 从NativeUIObj对象继承而来，通过plus.nativeUI.showWaiting方法创建时返回。
-    * 	用于控制系统样式等待对话框的操作，如关闭、设置标题内容等。
+    *     用于控制系统样式等待对话框的操作，如关闭、设置标题内容等。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
@@ -82,7 +82,7 @@ trait PlusNativeUI extends js.Object {
   /**
     * 弹出系统选择按钮框
     * 从底部动画弹出系统样式选择按钮框，可设置选择框的标题、按钮文字等。
-    * 	弹出的提示框为非阻塞模式，用户点击选择框上的按钮后关闭，并通过actionsheetCallback回调函数通知用户选择的按钮。
+    *     弹出的提示框为非阻塞模式，用户点击选择框上的按钮后关闭，并通过actionsheetCallback回调函数通知用户选择的按钮。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
@@ -95,7 +95,7 @@ trait PlusNativeUI extends js.Object {
   /**
     * 弹出系统提示对话框
     * 创建并显示系统样式提示对话框，可设置提示对话框的标题、内容、按钮文字等。
-    * 	弹出的提示对话框为非阻塞模式，用户点击提示对话框上的按钮后关闭，并通过alertCB回调函数通知对话框已关闭。
+    *     弹出的提示对话框为非阻塞模式，用户点击提示对话框上的按钮后关闭，并通过alertCB回调函数通知对话框已关闭。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
@@ -126,7 +126,7 @@ trait PlusNativeUI extends js.Object {
   /**
     * 弹出系统确认对话框
     * 创建并显示系统样式确认对话框，可设置确认对话框的标题、内容、按钮数目及其文字。
-    * 	弹出的确认对话框为非阻塞模式，用户点击确认对话框上的按钮后关闭，并通过confirmCB回调函数通知用户点击的按钮索引值。
+    *     弹出的确认对话框为非阻塞模式，用户点击确认对话框上的按钮后关闭，并通过confirmCB回调函数通知用户点击的按钮索引值。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
@@ -147,7 +147,7 @@ trait PlusNativeUI extends js.Object {
   /**
     * 弹出系统日期选择对话框
     * 创建并显示系统样式日期选择对话框，可进行日期的选择。
-    * 	用户操作确认后通过successCB回调函数返回用户选择的日期，若用户取消选择则通过errorCB回调。
+    *     用户操作确认后通过successCB回调函数返回用户选择的日期，若用户取消选择则通过errorCB回调。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
@@ -165,7 +165,7 @@ trait PlusNativeUI extends js.Object {
   /**
     * 弹出系统时间选择对话框
     * 创建并弹出系统样式时间选择对话框，可进行时间的选择。
-    * 	用户操作确认后通过successCB回调函数返回用户选择的时间，若用户取消选择则通过errorCB回调。
+    *     用户操作确认后通过successCB回调函数返回用户选择的时间，若用户取消选择则通过errorCB回调。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
@@ -192,7 +192,7 @@ trait PlusNativeUI extends js.Object {
   /**
     * 弹出系统输入对话框
     * 创建并显示系统样式输入对话框，可设置输入对话框的标题、内容、提示输入信息、按钮数目及其文字。
-    * 	弹出的输入对话框为非阻塞模式，其中包含编辑框供用户输入内容，用户点击输入对话框上的按钮后自动关闭，并通过promptCB回调函数返回用户点击的按钮及输入的内容。
+    *     弹出的输入对话框为非阻塞模式，其中包含编辑框供用户输入内容，用户点击输入对话框上的按钮后自动关闭，并通过promptCB回调函数返回用户点击的按钮及输入的内容。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
@@ -220,7 +220,7 @@ trait PlusNativeUI extends js.Object {
   /**
     * 显示自动消失的提示消息
     * 创建并显示系统样式提示消息，弹出的提示消息为非阻塞模式，显示指定时间后自动消失。
-    * 	提示消息显示时间可通过options的duration属性控制，长时间提示消息显示时间约为3.5s，短时间提示消息显示时间约为2s。
+    *     提示消息显示时间可通过options的duration属性控制，长时间提示消息显示时间约为3.5s，短时间提示消息显示时间约为2s。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */

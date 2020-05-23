@@ -51,27 +51,27 @@ trait ConflictMetadata extends js.Object {
 object ConflictMetadata {
   @scala.inline
   def apply(
-    contentConflict: js.UndefOr[Boolean] = js.undefined,
-    fileModeConflict: js.UndefOr[Boolean] = js.undefined,
+    contentConflict: js.UndefOr[IsContentConflict] = js.undefined,
+    fileModeConflict: js.UndefOr[IsFileModeConflict] = js.undefined,
     fileModes: FileModes = null,
     filePath: Path = null,
     fileSizes: FileSizes = null,
     isBinaryFile: IsBinaryFile = null,
     mergeOperations: MergeOperations = null,
-    numberOfConflicts: Int | Double = null,
-    objectTypeConflict: js.UndefOr[Boolean] = js.undefined,
+    numberOfConflicts: js.UndefOr[NumberOfConflicts] = js.undefined,
+    objectTypeConflict: js.UndefOr[IsObjectTypeConflict] = js.undefined,
     objectTypes: ObjectTypes = null
   ): ConflictMetadata = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(contentConflict)) __obj.updateDynamic("contentConflict")(contentConflict.asInstanceOf[js.Any])
-    if (!js.isUndefined(fileModeConflict)) __obj.updateDynamic("fileModeConflict")(fileModeConflict.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentConflict)) __obj.updateDynamic("contentConflict")(contentConflict.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fileModeConflict)) __obj.updateDynamic("fileModeConflict")(fileModeConflict.get.asInstanceOf[js.Any])
     if (fileModes != null) __obj.updateDynamic("fileModes")(fileModes.asInstanceOf[js.Any])
     if (filePath != null) __obj.updateDynamic("filePath")(filePath.asInstanceOf[js.Any])
     if (fileSizes != null) __obj.updateDynamic("fileSizes")(fileSizes.asInstanceOf[js.Any])
     if (isBinaryFile != null) __obj.updateDynamic("isBinaryFile")(isBinaryFile.asInstanceOf[js.Any])
     if (mergeOperations != null) __obj.updateDynamic("mergeOperations")(mergeOperations.asInstanceOf[js.Any])
-    if (numberOfConflicts != null) __obj.updateDynamic("numberOfConflicts")(numberOfConflicts.asInstanceOf[js.Any])
-    if (!js.isUndefined(objectTypeConflict)) __obj.updateDynamic("objectTypeConflict")(objectTypeConflict.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfConflicts)) __obj.updateDynamic("numberOfConflicts")(numberOfConflicts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(objectTypeConflict)) __obj.updateDynamic("objectTypeConflict")(objectTypeConflict.get.asInstanceOf[js.Any])
     if (objectTypes != null) __obj.updateDynamic("objectTypes")(objectTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConflictMetadata]
   }

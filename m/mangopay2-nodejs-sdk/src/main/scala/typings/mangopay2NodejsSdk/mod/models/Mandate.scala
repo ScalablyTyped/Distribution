@@ -1,6 +1,6 @@
 package typings.mangopay2NodejsSdk.mod.models
 
-import typings.mangopay2NodejsSdk.PartialMandateData
+import typings.mangopay2NodejsSdk.anon.PartialMandateData
 import typings.mangopay2NodejsSdk.mod.mandate.MandateCultureCode
 import typings.mangopay2NodejsSdk.mod.mandate.MandateData
 import typings.mangopay2NodejsSdk.mod.mandate.MandateExecutionType

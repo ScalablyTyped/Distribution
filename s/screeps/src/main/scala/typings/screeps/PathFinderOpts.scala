@@ -54,23 +54,23 @@ object PathFinderOpts {
   @scala.inline
   def apply(
     flee: js.UndefOr[Boolean] = js.undefined,
-    heuristicWeight: Int | Double = null,
-    maxCost: Int | Double = null,
-    maxOps: Int | Double = null,
-    maxRooms: Int | Double = null,
-    plainCost: Int | Double = null,
+    heuristicWeight: js.UndefOr[Double] = js.undefined,
+    maxCost: js.UndefOr[Double] = js.undefined,
+    maxOps: js.UndefOr[Double] = js.undefined,
+    maxRooms: js.UndefOr[Double] = js.undefined,
+    plainCost: js.UndefOr[Double] = js.undefined,
     roomCallback: /* roomName */ String => Boolean | CostMatrix = null,
-    swampCost: Int | Double = null
+    swampCost: js.UndefOr[Double] = js.undefined
   ): PathFinderOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(flee)) __obj.updateDynamic("flee")(flee.asInstanceOf[js.Any])
-    if (heuristicWeight != null) __obj.updateDynamic("heuristicWeight")(heuristicWeight.asInstanceOf[js.Any])
-    if (maxCost != null) __obj.updateDynamic("maxCost")(maxCost.asInstanceOf[js.Any])
-    if (maxOps != null) __obj.updateDynamic("maxOps")(maxOps.asInstanceOf[js.Any])
-    if (maxRooms != null) __obj.updateDynamic("maxRooms")(maxRooms.asInstanceOf[js.Any])
-    if (plainCost != null) __obj.updateDynamic("plainCost")(plainCost.asInstanceOf[js.Any])
+    if (!js.isUndefined(flee)) __obj.updateDynamic("flee")(flee.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(heuristicWeight)) __obj.updateDynamic("heuristicWeight")(heuristicWeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxCost)) __obj.updateDynamic("maxCost")(maxCost.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxOps)) __obj.updateDynamic("maxOps")(maxOps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRooms)) __obj.updateDynamic("maxRooms")(maxRooms.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(plainCost)) __obj.updateDynamic("plainCost")(plainCost.get.asInstanceOf[js.Any])
     if (roomCallback != null) __obj.updateDynamic("roomCallback")(js.Any.fromFunction1(roomCallback))
-    if (swampCost != null) __obj.updateDynamic("swampCost")(swampCost.asInstanceOf[js.Any])
+    if (!js.isUndefined(swampCost)) __obj.updateDynamic("swampCost")(swampCost.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathFinderOpts]
   }
 }

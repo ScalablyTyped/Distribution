@@ -35,17 +35,17 @@ object ChartParallelAxesGridOptions {
   @scala.inline
   def apply(
     borderColor: ColorString = null,
-    borderWidth: Int | Double = null,
-    cellHeight: Int | Double = null,
+    borderWidth: js.UndefOr[Double] = js.undefined,
+    cellHeight: js.UndefOr[Double] = js.undefined,
     columns: js.Array[XAxisOptions] = null,
     enabled: js.UndefOr[Boolean] = js.undefined
   ): ChartParallelAxesGridOptions = {
     val __obj = js.Dynamic.literal()
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (cellHeight != null) __obj.updateDynamic("cellHeight")(cellHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellHeight)) __obj.updateDynamic("cellHeight")(cellHeight.get.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartParallelAxesGridOptions]
   }
 }

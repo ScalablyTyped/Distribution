@@ -1,16 +1,12 @@
 package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.JQuery
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.PDFViewer")
 @js.native
-class PDFViewer protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: PDFViewerOptions) = this()
+trait PDFViewer extends Widget {
   @JSName("options")
   var options_PDFViewer: PDFViewerOptions = js.native
   var wrapper: JQuery = js.native
@@ -19,13 +15,5 @@ class PDFViewer protected () extends Widget {
   def fromFile(): Unit = js.native
   def loadPage(): Unit = js.native
   def setOptions(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.PDFViewer")
-@js.native
-object PDFViewer extends js.Object {
-  var fn: PDFViewer = js.native
-  def extend(proto: js.Object): PDFViewer = js.native
 }
 

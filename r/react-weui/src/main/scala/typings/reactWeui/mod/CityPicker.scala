@@ -1,6 +1,6 @@
 package typings.reactWeui.mod
 
-import typings.reactWeui.AnonData
+import typings.reactWeui.anon.Data
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ class CityPicker protected () extends js.Object {
 @JSImport("react-weui", "CityPicker")
 @js.native
 object CityPicker extends js.Object {
-  var defaultProps: AnonData = js.native
+  var defaultProps: Data = js.native
   @js.native
   object propTypes extends js.Object {
     def data(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native

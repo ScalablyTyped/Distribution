@@ -1,6 +1,6 @@
 package typings.exceljs.mod
 
-import typings.exceljs.PartialColor
+import typings.exceljs.anon.PartialColor
 import typings.exceljs.exceljsStrings.pattern
 import scala.scalajs.js
 import scala.scalajs.js.`|`

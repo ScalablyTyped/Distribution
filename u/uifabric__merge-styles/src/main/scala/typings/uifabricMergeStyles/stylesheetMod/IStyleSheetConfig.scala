@@ -58,7 +58,7 @@ object IStyleSheetConfig {
     if (injectionMode != null) __obj.updateDynamic("injectionMode")(injectionMode.asInstanceOf[js.Any])
     if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
     if (onInsertRule != null) __obj.updateDynamic("onInsertRule")(js.Any.fromFunction1(onInsertRule))
-    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStyleSheetConfig]
   }
 }

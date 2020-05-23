@@ -16,10 +16,10 @@ trait ExpansionFile extends js.Object {
 
 object ExpansionFile {
   @scala.inline
-  def apply(fileSize: String = null, referencesVersion: Int | Double = null): ExpansionFile = {
+  def apply(fileSize: String = null, referencesVersion: js.UndefOr[Double] = js.undefined): ExpansionFile = {
     val __obj = js.Dynamic.literal()
     if (fileSize != null) __obj.updateDynamic("fileSize")(fileSize.asInstanceOf[js.Any])
-    if (referencesVersion != null) __obj.updateDynamic("referencesVersion")(referencesVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(referencesVersion)) __obj.updateDynamic("referencesVersion")(referencesVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpansionFile]
   }
 }

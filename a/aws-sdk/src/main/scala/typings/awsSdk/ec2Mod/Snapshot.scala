@@ -69,7 +69,7 @@ object Snapshot {
   def apply(
     DataEncryptionKeyId: String = null,
     Description: String = null,
-    Encrypted: js.UndefOr[scala.Boolean] = js.undefined,
+    Encrypted: js.UndefOr[Boolean] = js.undefined,
     KmsKeyId: String = null,
     OwnerAlias: String = null,
     OwnerId: String = null,
@@ -80,12 +80,12 @@ object Snapshot {
     StateMessage: String = null,
     Tags: TagList = null,
     VolumeId: String = null,
-    VolumeSize: Int | scala.Double = null
+    VolumeSize: js.UndefOr[Integer] = js.undefined
   ): Snapshot = {
     val __obj = js.Dynamic.literal()
     if (DataEncryptionKeyId != null) __obj.updateDynamic("DataEncryptionKeyId")(DataEncryptionKeyId.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.asInstanceOf[js.Any])
+    if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.get.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
     if (OwnerAlias != null) __obj.updateDynamic("OwnerAlias")(OwnerAlias.asInstanceOf[js.Any])
     if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
@@ -96,7 +96,7 @@ object Snapshot {
     if (StateMessage != null) __obj.updateDynamic("StateMessage")(StateMessage.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     if (VolumeId != null) __obj.updateDynamic("VolumeId")(VolumeId.asInstanceOf[js.Any])
-    if (VolumeSize != null) __obj.updateDynamic("VolumeSize")(VolumeSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(VolumeSize)) __obj.updateDynamic("VolumeSize")(VolumeSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Snapshot]
   }
 }

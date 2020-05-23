@@ -13,9 +13,8 @@ import scala.scalajs.js.annotation._
   * @class LoaderResource
   * @memberof PIXI
   */
-@JSGlobal("PIXI.LoaderResource")
 @js.native
-class LoaderResource_ () extends js.Object {
+trait LoaderResource_ extends js.Object {
   var children: js.Array[LoaderResource] = js.native
   var crossOrigin: Boolean | String = js.native
   var data: js.Any = js.native

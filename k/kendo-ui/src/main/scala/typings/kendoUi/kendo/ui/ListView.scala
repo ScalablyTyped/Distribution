@@ -9,11 +9,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.ListView")
 @js.native
-class ListView protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: ListViewOptions) = this()
+trait ListView extends Widget {
   var dataSource: DataSource = js.native
   @JSName("options")
   var options_ListView: ListViewOptions = js.native
@@ -34,13 +31,5 @@ class ListView protected () extends Widget {
   def select(items: js.Any): Unit = js.native
   def select(items: JQuery): Unit = js.native
   def setDataSource(dataSource: DataSource): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.ListView")
-@js.native
-object ListView extends js.Object {
-  var fn: ListView = js.native
-  def extend(proto: js.Object): ListView = js.native
 }
 

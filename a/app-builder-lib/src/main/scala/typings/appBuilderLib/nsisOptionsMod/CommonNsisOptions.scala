@@ -29,16 +29,16 @@ trait CommonNsisOptions extends js.Object {
 object CommonNsisOptions {
   @scala.inline
   def apply(
-    guid: String = null,
+    guid: js.UndefOr[Null | String] = js.undefined,
     unicode: js.UndefOr[Boolean] = js.undefined,
     useZip: js.UndefOr[Boolean] = js.undefined,
     warningsAsErrors: js.UndefOr[Boolean] = js.undefined
   ): CommonNsisOptions = {
     val __obj = js.Dynamic.literal()
-    if (guid != null) __obj.updateDynamic("guid")(guid.asInstanceOf[js.Any])
-    if (!js.isUndefined(unicode)) __obj.updateDynamic("unicode")(unicode.asInstanceOf[js.Any])
-    if (!js.isUndefined(useZip)) __obj.updateDynamic("useZip")(useZip.asInstanceOf[js.Any])
-    if (!js.isUndefined(warningsAsErrors)) __obj.updateDynamic("warningsAsErrors")(warningsAsErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(guid)) __obj.updateDynamic("guid")(guid.asInstanceOf[js.Any])
+    if (!js.isUndefined(unicode)) __obj.updateDynamic("unicode")(unicode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useZip)) __obj.updateDynamic("useZip")(useZip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(warningsAsErrors)) __obj.updateDynamic("warningsAsErrors")(warningsAsErrors.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonNsisOptions]
   }
 }

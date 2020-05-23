@@ -3,7 +3,7 @@ package typings.cookies.mod
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import typings.connect.mod.NextHandleFunction
-import typings.cookies.AnonInstantiable
+import typings.cookies.anon.Instantiable
 import typings.express.mod.Handler
 import typings.keygrip.mod.Keygrip
 import typings.node.httpMod.IncomingMessage
@@ -28,7 +28,7 @@ Instantiable3[
       Cookies
     ]
      with Instantiable2[/* request */ IncomingMessage, /* response */ ServerResponse, Cookies] {
-  var Cookie: AnonInstantiable = js.native
+  var Cookie: Instantiable = js.native
   def apply(request: IncomingMessage, response: ServerResponse): Cookies = js.native
   /**
     * "options" array of key strings is deprecated, provide using options {"keys": keygrip}

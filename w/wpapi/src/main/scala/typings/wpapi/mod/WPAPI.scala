@@ -13,11 +13,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait WPAPI
   extends /**
-  * An API client can define its parameter methods, like .authors(), .cart(),
-  * .products(). They are usually decided by WPAPI namespaces configuration
-  * object. They have WPRequest return type.
+  * A request can define its parameter methods, like .id(), .date(),
+  * .author(). They are usually decided by WPAPI routes configuration
+  * object.
   */
-/* customRoutesMethod */ StringDictionary[js.Any] {
+/* customParamsMethod */ StringDictionary[js.Any] {
   /**
     * Set the authentication to use for a WPAPI site handler instance. Accepts
     * basic HTTP authentication credentials (string username & password) or a

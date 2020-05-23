@@ -50,15 +50,15 @@ object HumanLoopConfig {
     TaskTitle: FlowDefinitionTaskTitle,
     WorkteamArn: WorkteamArn,
     PublicWorkforceTaskPrice: PublicWorkforceTaskPrice = null,
-    TaskAvailabilityLifetimeInSeconds: Int | Double = null,
+    TaskAvailabilityLifetimeInSeconds: js.UndefOr[FlowDefinitionTaskAvailabilityLifetimeInSeconds] = js.undefined,
     TaskKeywords: FlowDefinitionTaskKeywords = null,
-    TaskTimeLimitInSeconds: Int | Double = null
+    TaskTimeLimitInSeconds: js.UndefOr[FlowDefinitionTaskTimeLimitInSeconds] = js.undefined
   ): HumanLoopConfig = {
     val __obj = js.Dynamic.literal(HumanTaskUiArn = HumanTaskUiArn.asInstanceOf[js.Any], TaskCount = TaskCount.asInstanceOf[js.Any], TaskDescription = TaskDescription.asInstanceOf[js.Any], TaskTitle = TaskTitle.asInstanceOf[js.Any], WorkteamArn = WorkteamArn.asInstanceOf[js.Any])
     if (PublicWorkforceTaskPrice != null) __obj.updateDynamic("PublicWorkforceTaskPrice")(PublicWorkforceTaskPrice.asInstanceOf[js.Any])
-    if (TaskAvailabilityLifetimeInSeconds != null) __obj.updateDynamic("TaskAvailabilityLifetimeInSeconds")(TaskAvailabilityLifetimeInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(TaskAvailabilityLifetimeInSeconds)) __obj.updateDynamic("TaskAvailabilityLifetimeInSeconds")(TaskAvailabilityLifetimeInSeconds.get.asInstanceOf[js.Any])
     if (TaskKeywords != null) __obj.updateDynamic("TaskKeywords")(TaskKeywords.asInstanceOf[js.Any])
-    if (TaskTimeLimitInSeconds != null) __obj.updateDynamic("TaskTimeLimitInSeconds")(TaskTimeLimitInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(TaskTimeLimitInSeconds)) __obj.updateDynamic("TaskTimeLimitInSeconds")(TaskTimeLimitInSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HumanLoopConfig]
   }
 }

@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the switch value changes.
-		 */
+  * Fired when the switch value changes.
+  */
 trait SwitchChangeEvent extends SwitchBaseEvent {
   /**
-  			 * New value of the switch.
-  			 */
+    * New value of the switch.
+    */
   var value: Boolean
 }
 

@@ -19,16 +19,16 @@ trait ITpProcessRequest extends js.Object {
 object ITpProcessRequest {
   @scala.inline
   def apply(
-    contextId: String = null,
-    header: ITransactionHeader = null,
-    payload: Uint8Array = null,
-    signature: String = null
+    contextId: js.UndefOr[Null | String] = js.undefined,
+    header: js.UndefOr[Null | ITransactionHeader] = js.undefined,
+    payload: js.UndefOr[Null | Uint8Array] = js.undefined,
+    signature: js.UndefOr[Null | String] = js.undefined
   ): ITpProcessRequest = {
     val __obj = js.Dynamic.literal()
-    if (contextId != null) __obj.updateDynamic("contextId")(contextId.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
+    if (!js.isUndefined(contextId)) __obj.updateDynamic("contextId")(contextId.asInstanceOf[js.Any])
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (!js.isUndefined(payload)) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (!js.isUndefined(signature)) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITpProcessRequest]
   }
 }

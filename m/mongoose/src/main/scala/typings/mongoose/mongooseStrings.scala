@@ -51,6 +51,9 @@ object mongooseStrings {
   sealed trait aggregate extends js.Object
   
   @js.native
+  sealed trait autoCreate extends js.Object
+  
+  @js.native
   sealed trait autoIndex extends js.Object
   
   @js.native
@@ -150,6 +153,9 @@ object mongooseStrings {
   sealed trait strict extends js.Object
   
   @js.native
+  sealed trait strictQuery extends js.Object
+  
+  @js.native
   sealed trait `throw` extends js.Object
   
   @js.native
@@ -228,6 +234,8 @@ object mongooseStrings {
   @scala.inline
   def aggregate: aggregate = "aggregate".asInstanceOf[aggregate]
   @scala.inline
+  def autoCreate: autoCreate = "autoCreate".asInstanceOf[autoCreate]
+  @scala.inline
   def autoIndex: autoIndex = "autoIndex".asInstanceOf[autoIndex]
   @scala.inline
   def bufferCommands: bufferCommands = "bufferCommands".asInstanceOf[bufferCommands]
@@ -293,6 +301,8 @@ object mongooseStrings {
   def storeSubdocValidationError: storeSubdocValidationError = "storeSubdocValidationError".asInstanceOf[storeSubdocValidationError]
   @scala.inline
   def strict: strict = "strict".asInstanceOf[strict]
+  @scala.inline
+  def strictQuery: strictQuery = "strictQuery".asInstanceOf[strictQuery]
   @scala.inline
   def `throw`: `throw` = "throw".asInstanceOf[`throw`]
   @scala.inline

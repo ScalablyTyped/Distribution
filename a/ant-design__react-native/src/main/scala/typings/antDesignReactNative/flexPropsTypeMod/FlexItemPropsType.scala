@@ -15,7 +15,7 @@ object FlexItemPropsType {
   def apply(children: ReactNode = null, disabled: js.UndefOr[Boolean] = js.undefined): FlexItemPropsType = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlexItemPropsType]
   }
 }

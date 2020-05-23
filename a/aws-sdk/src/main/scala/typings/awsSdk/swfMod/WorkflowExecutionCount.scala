@@ -18,9 +18,9 @@ trait WorkflowExecutionCount extends js.Object {
 
 object WorkflowExecutionCount {
   @scala.inline
-  def apply(count: Count, truncated: js.UndefOr[Boolean] = js.undefined): WorkflowExecutionCount = {
+  def apply(count: Count, truncated: js.UndefOr[Truncated] = js.undefined): WorkflowExecutionCount = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
-    if (!js.isUndefined(truncated)) __obj.updateDynamic("truncated")(truncated.asInstanceOf[js.Any])
+    if (!js.isUndefined(truncated)) __obj.updateDynamic("truncated")(truncated.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkflowExecutionCount]
   }
 }

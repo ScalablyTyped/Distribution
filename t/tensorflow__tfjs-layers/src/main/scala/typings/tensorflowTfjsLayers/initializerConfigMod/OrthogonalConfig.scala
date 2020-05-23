@@ -11,10 +11,10 @@ trait OrthogonalConfig extends js.Object {
 
 object OrthogonalConfig {
   @scala.inline
-  def apply(gain: Int | Double = null, seed: Int | Double = null): OrthogonalConfig = {
+  def apply(gain: js.UndefOr[Double] = js.undefined, seed: js.UndefOr[Double] = js.undefined): OrthogonalConfig = {
     val __obj = js.Dynamic.literal()
-    if (gain != null) __obj.updateDynamic("gain")(gain.asInstanceOf[js.Any])
-    if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
+    if (!js.isUndefined(gain)) __obj.updateDynamic("gain")(gain.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(seed)) __obj.updateDynamic("seed")(seed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrthogonalConfig]
   }
 }

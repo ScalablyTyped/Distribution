@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.FollowCameraKeyboardMoveInput")
 @js.native
-class FollowCameraKeyboardMoveInput () extends ICameraInput[FollowCamera] {
+trait FollowCameraKeyboardMoveInput extends ICameraInput[FollowCamera] {
   var _altPressed: js.Any = js.native
   var _ctrlPressed: js.Any = js.native
   var _engine: js.Any = js.native

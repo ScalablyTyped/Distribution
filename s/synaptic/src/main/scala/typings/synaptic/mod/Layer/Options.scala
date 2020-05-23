@@ -14,12 +14,12 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    bias: Int | Double = null,
+    bias: js.UndefOr[Double] = js.undefined,
     label: js.Any = null,
     squash: (/* x */ Double, /* derivate */ Boolean) => Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (bias != null) __obj.updateDynamic("bias")(bias.asInstanceOf[js.Any])
+    if (!js.isUndefined(bias)) __obj.updateDynamic("bias")(bias.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (squash != null) __obj.updateDynamic("squash")(js.Any.fromFunction2(squash))
     __obj.asInstanceOf[Options]

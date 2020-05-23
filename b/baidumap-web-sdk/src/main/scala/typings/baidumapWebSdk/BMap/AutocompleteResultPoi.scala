@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait AutocompleteResultPoi extends js.Object {
   var City: String
   var business: String
-  			// wtf
+              // wtf
   var district: String
   var province: String
   var street: String

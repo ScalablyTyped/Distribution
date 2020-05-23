@@ -44,22 +44,22 @@ object ModifyDBInstanceMessage {
   @scala.inline
   def apply(
     DBInstanceIdentifier: String,
-    ApplyImmediately: js.UndefOr[scala.Boolean] = js.undefined,
-    AutoMinorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
+    ApplyImmediately: js.UndefOr[Boolean] = js.undefined,
+    AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined,
     CACertificateIdentifier: String = null,
     DBInstanceClass: String = null,
     NewDBInstanceIdentifier: String = null,
     PreferredMaintenanceWindow: String = null,
-    PromotionTier: Int | Double = null
+    PromotionTier: js.UndefOr[IntegerOptional] = js.undefined
   ): ModifyDBInstanceMessage = {
     val __obj = js.Dynamic.literal(DBInstanceIdentifier = DBInstanceIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(ApplyImmediately)) __obj.updateDynamic("ApplyImmediately")(ApplyImmediately.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade.asInstanceOf[js.Any])
+    if (!js.isUndefined(ApplyImmediately)) __obj.updateDynamic("ApplyImmediately")(ApplyImmediately.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade.get.asInstanceOf[js.Any])
     if (CACertificateIdentifier != null) __obj.updateDynamic("CACertificateIdentifier")(CACertificateIdentifier.asInstanceOf[js.Any])
     if (DBInstanceClass != null) __obj.updateDynamic("DBInstanceClass")(DBInstanceClass.asInstanceOf[js.Any])
     if (NewDBInstanceIdentifier != null) __obj.updateDynamic("NewDBInstanceIdentifier")(NewDBInstanceIdentifier.asInstanceOf[js.Any])
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow.asInstanceOf[js.Any])
-    if (PromotionTier != null) __obj.updateDynamic("PromotionTier")(PromotionTier.asInstanceOf[js.Any])
+    if (!js.isUndefined(PromotionTier)) __obj.updateDynamic("PromotionTier")(PromotionTier.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyDBInstanceMessage]
   }
 }

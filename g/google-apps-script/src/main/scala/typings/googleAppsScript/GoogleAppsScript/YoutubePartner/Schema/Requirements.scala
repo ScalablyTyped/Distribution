@@ -24,12 +24,12 @@ object Requirements {
     trailer: js.UndefOr[Boolean] = js.undefined
   ): Requirements = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(caption)) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (!js.isUndefined(hdTranscode)) __obj.updateDynamic("hdTranscode")(hdTranscode.asInstanceOf[js.Any])
-    if (!js.isUndefined(posterArt)) __obj.updateDynamic("posterArt")(posterArt.asInstanceOf[js.Any])
-    if (!js.isUndefined(spotlightArt)) __obj.updateDynamic("spotlightArt")(spotlightArt.asInstanceOf[js.Any])
-    if (!js.isUndefined(spotlightReview)) __obj.updateDynamic("spotlightReview")(spotlightReview.asInstanceOf[js.Any])
-    if (!js.isUndefined(trailer)) __obj.updateDynamic("trailer")(trailer.asInstanceOf[js.Any])
+    if (!js.isUndefined(caption)) __obj.updateDynamic("caption")(caption.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hdTranscode)) __obj.updateDynamic("hdTranscode")(hdTranscode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(posterArt)) __obj.updateDynamic("posterArt")(posterArt.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spotlightArt)) __obj.updateDynamic("spotlightArt")(spotlightArt.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spotlightReview)) __obj.updateDynamic("spotlightReview")(spotlightReview.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trailer)) __obj.updateDynamic("trailer")(trailer.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Requirements]
   }
 }

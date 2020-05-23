@@ -8,7 +8,7 @@ import typings.react.mod.Key
 import typings.react.mod.LegacyRef
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
@@ -106,7 +106,7 @@ object IDialogContentProps {
     isMultiline: js.UndefOr[Boolean] = js.undefined,
     key: Key = null,
     onDismiss: /* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]] => _ = null,
-    ref: LegacyRef[DialogContentBase] = null,
+    ref: js.UndefOr[Null | LegacyRef[DialogContentBase]] = js.undefined,
     responsiveMode: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode = null,
     showCloseButton: js.UndefOr[Boolean] = js.undefined,
     styles: IStyleFunctionOrObject[IDialogContentStyleProps, IDialogContentStyles] = null,
@@ -124,12 +124,12 @@ object IDialogContentProps {
     if (closeButtonAriaLabel != null) __obj.updateDynamic("closeButtonAriaLabel")(closeButtonAriaLabel.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
     if (draggableHeaderClassName != null) __obj.updateDynamic("draggableHeaderClassName")(draggableHeaderClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMultiline)) __obj.updateDynamic("isMultiline")(isMultiline.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMultiline)) __obj.updateDynamic("isMultiline")(isMultiline.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction1(onDismiss))
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (responsiveMode != null) __obj.updateDynamic("responsiveMode")(responsiveMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton.get.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (subText != null) __obj.updateDynamic("subText")(subText.asInstanceOf[js.Any])
     if (subTextId != null) __obj.updateDynamic("subTextId")(subTextId.asInstanceOf[js.Any])

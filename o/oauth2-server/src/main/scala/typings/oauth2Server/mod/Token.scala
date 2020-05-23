@@ -26,7 +26,7 @@ object Token {
     accessToken: String,
     client: Client,
     user: User,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     accessTokenExpiresAt: Date = null,
     refreshToken: String = null,
     refreshTokenExpiresAt: Date = null,

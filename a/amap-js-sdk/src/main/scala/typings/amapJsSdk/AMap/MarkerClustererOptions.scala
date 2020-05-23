@@ -18,21 +18,21 @@ object MarkerClustererOptions {
   @scala.inline
   def apply(
     averageCenter: js.UndefOr[Boolean] = js.undefined,
-    gridSize: Int | Double = null,
-    maxZoom: Int | Double = null,
-    minClusterSize: Int | Double = null,
+    gridSize: js.UndefOr[Double] = js.undefined,
+    maxZoom: js.UndefOr[Double] = js.undefined,
+    minClusterSize: js.UndefOr[Double] = js.undefined,
     renderCluserMarker: /* obj */ js.Any => Unit = null,
     styles: js.Array[_] = null,
     zoomOnClick: js.UndefOr[Boolean] = js.undefined
   ): MarkerClustererOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(averageCenter)) __obj.updateDynamic("averageCenter")(averageCenter.asInstanceOf[js.Any])
-    if (gridSize != null) __obj.updateDynamic("gridSize")(gridSize.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minClusterSize != null) __obj.updateDynamic("minClusterSize")(minClusterSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(averageCenter)) __obj.updateDynamic("averageCenter")(averageCenter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridSize)) __obj.updateDynamic("gridSize")(gridSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minClusterSize)) __obj.updateDynamic("minClusterSize")(minClusterSize.get.asInstanceOf[js.Any])
     if (renderCluserMarker != null) __obj.updateDynamic("renderCluserMarker")(js.Any.fromFunction1(renderCluserMarker))
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomOnClick)) __obj.updateDynamic("zoomOnClick")(zoomOnClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomOnClick)) __obj.updateDynamic("zoomOnClick")(zoomOnClick.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerClustererOptions]
   }
 }

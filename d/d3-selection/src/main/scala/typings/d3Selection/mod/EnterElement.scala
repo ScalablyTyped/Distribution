@@ -1,6 +1,6 @@
 package typings.d3Selection.mod
 
-import typings.std.Document_
+import typings.std.Document
 import typings.std.Element
 import typings.std.Node
 import typings.std.NodeListOf
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait EnterElement extends js.Object {
   var namespaceURI: String
-  var ownerDocument: Document_
+  var ownerDocument: Document
   def appendChild(newChild: Node): Node
   def insertBefore(newChild: Node, refChild: Node): Node
   def querySelector(selectors: String): Element
@@ -23,7 +23,7 @@ object EnterElement {
     appendChild: Node => Node,
     insertBefore: (Node, Node) => Node,
     namespaceURI: String,
-    ownerDocument: Document_,
+    ownerDocument: Document,
     querySelector: String => Element,
     querySelectorAll: String => NodeListOf[Element]
   ): EnterElement = {

@@ -10,8 +10,8 @@ package object mod {
     /* this */ typings.jimp.mod.DepreciatedJimp, 
     /* err */ typings.std.Error | scala.Null, 
     /* value */ typings.jimp.mod.DepreciatedJimp, 
-    /* coords */ typings.jimp.AnonX, 
+    /* coords */ typings.jimp.anon.X, 
     U
   ]
-  type PrintableText = js.Any | typings.jimp.AnonAlignmentX
+  type PrintableText = js.Any | typings.jimp.anon.AlignmentX
 }

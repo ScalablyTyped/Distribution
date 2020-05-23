@@ -15,18 +15,18 @@ trait PostStarParams extends js.Object {
 object PostStarParams {
   @scala.inline
   def apply(
-    commentId: Int | Double = null,
-    issueId: Int | Double = null,
-    pullRequestCommentId: Int | Double = null,
-    pullRequestId: Int | Double = null,
-    wikiId: Int | Double = null
+    commentId: js.UndefOr[Double] = js.undefined,
+    issueId: js.UndefOr[Double] = js.undefined,
+    pullRequestCommentId: js.UndefOr[Double] = js.undefined,
+    pullRequestId: js.UndefOr[Double] = js.undefined,
+    wikiId: js.UndefOr[Double] = js.undefined
   ): PostStarParams = {
     val __obj = js.Dynamic.literal()
-    if (commentId != null) __obj.updateDynamic("commentId")(commentId.asInstanceOf[js.Any])
-    if (issueId != null) __obj.updateDynamic("issueId")(issueId.asInstanceOf[js.Any])
-    if (pullRequestCommentId != null) __obj.updateDynamic("pullRequestCommentId")(pullRequestCommentId.asInstanceOf[js.Any])
-    if (pullRequestId != null) __obj.updateDynamic("pullRequestId")(pullRequestId.asInstanceOf[js.Any])
-    if (wikiId != null) __obj.updateDynamic("wikiId")(wikiId.asInstanceOf[js.Any])
+    if (!js.isUndefined(commentId)) __obj.updateDynamic("commentId")(commentId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(issueId)) __obj.updateDynamic("issueId")(issueId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pullRequestCommentId)) __obj.updateDynamic("pullRequestCommentId")(pullRequestCommentId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pullRequestId)) __obj.updateDynamic("pullRequestId")(pullRequestId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wikiId)) __obj.updateDynamic("wikiId")(wikiId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostStarParams]
   }
 }

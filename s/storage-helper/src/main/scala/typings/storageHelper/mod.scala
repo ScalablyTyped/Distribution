@@ -1,6 +1,7 @@
 package typings.storageHelper
 
 import typings.std.NonNullable
+import typings.storageHelper.anon.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

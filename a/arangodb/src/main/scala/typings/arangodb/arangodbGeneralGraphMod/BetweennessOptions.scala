@@ -13,9 +13,13 @@ trait BetweennessOptions extends js.Object {
 
 object BetweennessOptions {
   @scala.inline
-  def apply(defaultWeight: Int | Double = null, direction: EdgeDirection = null, weight: String = null): BetweennessOptions = {
+  def apply(
+    defaultWeight: js.UndefOr[Double] = js.undefined,
+    direction: EdgeDirection = null,
+    weight: String = null
+  ): BetweennessOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultWeight != null) __obj.updateDynamic("defaultWeight")(defaultWeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultWeight)) __obj.updateDynamic("defaultWeight")(defaultWeight.get.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[BetweennessOptions]

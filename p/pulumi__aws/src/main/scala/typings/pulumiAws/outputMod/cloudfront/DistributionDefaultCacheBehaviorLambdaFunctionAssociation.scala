@@ -26,7 +26,7 @@ object DistributionDefaultCacheBehaviorLambdaFunctionAssociation {
   @scala.inline
   def apply(eventType: String, lambdaArn: String, includeBody: js.UndefOr[Boolean] = js.undefined): DistributionDefaultCacheBehaviorLambdaFunctionAssociation = {
     val __obj = js.Dynamic.literal(eventType = eventType.asInstanceOf[js.Any], lambdaArn = lambdaArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeBody)) __obj.updateDynamic("includeBody")(includeBody.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeBody)) __obj.updateDynamic("includeBody")(includeBody.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionDefaultCacheBehaviorLambdaFunctionAssociation]
   }
 }

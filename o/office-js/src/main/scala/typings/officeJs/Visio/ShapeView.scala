@@ -1,12 +1,12 @@
 package typings.officeJs.Visio
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.ClientResult
 import typings.officeJs.OfficeExtension.UpdateOptions
 import typings.officeJs.Visio.Interfaces.ShapeViewData
 import typings.officeJs.Visio.Interfaces.ShapeViewLoadOptions
 import typings.officeJs.Visio.Interfaces.ShapeViewUpdateData
+import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.Bottom
 import typings.officeJs.officeJsStrings.Center
 import typings.officeJs.officeJsStrings.Html
@@ -26,9 +26,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set:  1.1]
   */
-@JSGlobal("Visio.ShapeView")
 @js.native
-class ShapeView () extends ClientObject {
+trait ShapeView extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_ShapeView: RequestContext = js.native
@@ -99,8 +98,8 @@ class ShapeView () extends ClientObject {
   def load(): ShapeView = js.native
   def load(option: String): ShapeView = js.native
   def load(option: js.Array[String]): ShapeView = js.native
-  def load(option: AnonExpand): ShapeView = js.native
   def load(option: ShapeViewLoadOptions): ShapeView = js.native
+  def load(option: Expand): ShapeView = js.native
   /**
     *
     * Removes particular overlay or all overlays on the Shape.

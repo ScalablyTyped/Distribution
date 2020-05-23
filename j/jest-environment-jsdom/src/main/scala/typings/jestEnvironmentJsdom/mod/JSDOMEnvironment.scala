@@ -1,7 +1,7 @@
 package typings.jestEnvironmentJsdom.mod
 
 import typings.jestEnvironment.mod.JestEnvironment
-import typings.jestEnvironmentJsdom.EventerrorError
+import typings.jestEnvironmentJsdom.anon.EventerrorError
 import typings.jestFakeTimers.mod.JestFakeTimers
 import typings.jsdom.mod.JSDOM
 import scala.scalajs.js

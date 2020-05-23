@@ -77,7 +77,7 @@ trait PlusBarcode extends js.Object {
   /**
     * EAN条形码标准版，数值为1
     * 国际物品编码协会在全球推广应用的商品条码，是由13位数字组成。
-    * 	目前使用最广泛的一维条形码。
+    *     目前使用最广泛的一维条形码。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
     */
@@ -113,7 +113,7 @@ trait PlusBarcode extends js.Object {
   /**
     * QR二维码，数值为0
     * 1994年由日本Denso-Wave公司发明，QR来自英文Quick Response的缩写，即快速反应的意思，源自发明者希望QR码可让其内容快速被解码。
-    * 	目前使用最广泛的二维码。
+    *     目前使用最广泛的二维码。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
     */
@@ -149,7 +149,7 @@ trait PlusBarcode extends js.Object {
   /**
     * 创建Barcode对象
     * 调用此方法创建后并不会显示，需要调用Webview窗口的append方法将其添加到Webview窗口后才能显示。
-    * 	注意：此时需要通过styles参数的top/left/width/height属性设置控件的位置及大小。
+    *     注意：此时需要通过styles参数的top/left/width/height属性设置控件的位置及大小。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
     */

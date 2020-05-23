@@ -17,7 +17,7 @@ object UserAgent {
     browser: String,
     prefix: String,
     version: Double,
-    StringDictionary: /* value */ StringDictionary[String | Double] = null
+    StringDictionary: /* key */ StringDictionary[String | Double] = null
   ): UserAgent = {
     val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

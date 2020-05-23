@@ -274,7 +274,7 @@ trait Router[StateT, CustomT] extends js.Object {
   /**
     * Run middleware for named route parameters. Useful for auto-loading or validation.
     */
-  def param(param: String, middleware: IParamMiddleware): Router[StateT, CustomT] = js.native
+  def param(param: String, middleware: IParamMiddleware[StateT, CustomT]): Router[StateT, CustomT] = js.native
   /**
     * HTTP patch method
     */

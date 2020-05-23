@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation._
   */
 trait TwitchExtRig extends js.Object {
   /**
-  	 * Print a message to the developer rig console.
-  	 *
-  	 * @param message The message to print.
-  	 * @see https://github.com/twitchdev/developer-rig#rig-console
-  	 */
+    * Print a message to the developer rig console.
+    *
+    * @param message The message to print.
+    * @see https://github.com/twitchdev/developer-rig#rig-console
+    */
   def log(message: String): Unit
 }
 

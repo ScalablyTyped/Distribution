@@ -30,7 +30,7 @@ object Definition {
     port: Double | String = null,
     reqheaders: Record[String, RequestHeaderMatcher] = null,
     response: ReplyBody = null,
-    status: Int | Double = null
+    status: js.UndefOr[Double] = js.undefined
   ): Definition = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
@@ -40,7 +40,7 @@ object Definition {
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (reqheaders != null) __obj.updateDynamic("reqheaders")(reqheaders.asInstanceOf[js.Any])
     if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Definition]
   }
 }

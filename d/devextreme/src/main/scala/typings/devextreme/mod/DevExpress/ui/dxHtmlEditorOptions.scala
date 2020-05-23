@@ -1,11 +1,11 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.AnonComponentElement
-import typings.devextreme.AnonElement
-import typings.devextreme.AnonEventModel
-import typings.devextreme.AnonJQueryEvent
-import typings.devextreme.AnonModel
-import typings.devextreme.AnonName
+import typings.devextreme.anon.ComponentElement
+import typings.devextreme.anon.Element
+import typings.devextreme.anon.EventModel
+import typings.devextreme.anon.JQueryEvent
+import typings.devextreme.anon.Model
+import typings.devextreme.anon.Name
 import typings.devextreme.devextremeStrings.always
 import typings.devextreme.devextremeStrings.auto
 import typings.devextreme.devextremeStrings.html
@@ -27,9 +27,9 @@ trait dxHtmlEditorOptions extends EditorOptions[dxHtmlEditor] {
   /** @name dxHtmlEditor.Options.name */
   var name: js.UndefOr[String] = js.undefined
   /** @name dxHtmlEditor.Options.onFocusIn */
-  var onFocusIn: js.UndefOr[js.Function1[/* e */ AnonEventModel, _]] = js.undefined
+  var onFocusIn: js.UndefOr[js.Function1[/* e */ EventModel, _]] = js.undefined
   /** @name dxHtmlEditor.Options.onFocusOut */
-  var onFocusOut: js.UndefOr[js.Function1[/* e */ AnonEventModel, _]] = js.undefined
+  var onFocusOut: js.UndefOr[js.Function1[/* e */ EventModel, _]] = js.undefined
   /** @name dxHtmlEditor.Options.placeholder */
   var placeholder: js.UndefOr[String] = js.undefined
   /** @name dxHtmlEditor.Options.toolbar */
@@ -57,17 +57,17 @@ object dxHtmlEditorOptions {
     mediaResizing: dxHtmlEditorMediaResizing = null,
     mentions: js.Array[dxHtmlEditorMention] = null,
     name: String = null,
-    onContentReady: /* e */ AnonComponentElement[dxHtmlEditor] => _ = null,
-    onDisposing: /* e */ AnonModel[dxHtmlEditor] => _ = null,
-    onFocusIn: /* e */ AnonEventModel => _ = null,
-    onFocusOut: /* e */ AnonEventModel => _ = null,
-    onInitialized: /* e */ AnonElement[dxHtmlEditor] => _ = null,
-    onOptionChanged: /* e */ AnonName[dxHtmlEditor] => _ = null,
-    onValueChanged: /* e */ AnonJQueryEvent[dxHtmlEditor] => _ = null,
+    onContentReady: /* e */ ComponentElement[dxHtmlEditor] => _ = null,
+    onDisposing: /* e */ Model[dxHtmlEditor] => _ = null,
+    onFocusIn: /* e */ EventModel => _ = null,
+    onFocusOut: /* e */ EventModel => _ = null,
+    onInitialized: /* e */ Element[dxHtmlEditor] => _ = null,
+    onOptionChanged: /* e */ Name[dxHtmlEditor] => _ = null,
+    onValueChanged: /* e */ JQueryEvent[dxHtmlEditor] => _ = null,
     placeholder: String = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    tabIndex: Int | Double = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
     toolbar: dxHtmlEditorToolbar = null,
     validationError: js.Any = null,
     validationErrors: js.Array[_] = null,
@@ -81,16 +81,16 @@ object dxHtmlEditorOptions {
   ): dxHtmlEditorOptions = {
     val __obj = js.Dynamic.literal()
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.get.asInstanceOf[js.Any])
     if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
     if (customizeModules != null) __obj.updateDynamic("customizeModules")(js.Any.fromFunction1(customizeModules))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(isValid)) __obj.updateDynamic("isValid")(isValid.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isValid)) __obj.updateDynamic("isValid")(isValid.get.asInstanceOf[js.Any])
     if (mediaResizing != null) __obj.updateDynamic("mediaResizing")(mediaResizing.asInstanceOf[js.Any])
     if (mentions != null) __obj.updateDynamic("mentions")(mentions.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
@@ -102,9 +102,9 @@ object dxHtmlEditorOptions {
     if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1(onOptionChanged))
     if (onValueChanged != null) __obj.updateDynamic("onValueChanged")(js.Any.fromFunction1(onValueChanged))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
     if (validationError != null) __obj.updateDynamic("validationError")(validationError.asInstanceOf[js.Any])
     if (validationErrors != null) __obj.updateDynamic("validationErrors")(validationErrors.asInstanceOf[js.Any])
@@ -113,7 +113,7 @@ object dxHtmlEditorOptions {
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (valueType != null) __obj.updateDynamic("valueType")(valueType.asInstanceOf[js.Any])
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxHtmlEditorOptions]
   }

@@ -33,13 +33,13 @@ object ReplaceTransitGatewayRouteRequest {
   def apply(
     DestinationCidrBlock: String,
     TransitGatewayRouteTableId: TransitGatewayRouteTableId,
-    Blackhole: js.UndefOr[scala.Boolean] = js.undefined,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    Blackhole: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     TransitGatewayAttachmentId: TransitGatewayAttachmentId = null
   ): ReplaceTransitGatewayRouteRequest = {
     val __obj = js.Dynamic.literal(DestinationCidrBlock = DestinationCidrBlock.asInstanceOf[js.Any], TransitGatewayRouteTableId = TransitGatewayRouteTableId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Blackhole)) __obj.updateDynamic("Blackhole")(Blackhole.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(Blackhole)) __obj.updateDynamic("Blackhole")(Blackhole.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (TransitGatewayAttachmentId != null) __obj.updateDynamic("TransitGatewayAttachmentId")(TransitGatewayAttachmentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceTransitGatewayRouteRequest]
   }

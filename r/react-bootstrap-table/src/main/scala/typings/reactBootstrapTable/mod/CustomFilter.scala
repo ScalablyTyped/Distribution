@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait CustomFilter[FParams /* <: js.Object */, FElement /* <: CustomFilterElement */] extends js.Object {
   /**
-  	 * Custom filter parameters to be passed to the generator function
-  	 */
+    * Custom filter parameters to be passed to the generator function
+    */
   var customFilterParameters: CustomFilterParameters[FParams]
   /**
-  	 * Type must be 'CustomFilter'
-  	 */
+    * Type must be 'CustomFilter'
+    */
   var `type`: typings.reactBootstrapTable.reactBootstrapTableStrings.CustomFilter
   /**
-  	 * Function to generate the filter component
-  	 */
+    * Function to generate the filter component
+    */
   @JSName("getElement")
   def getElement_CustomFilter(
     filterHandler: js.Function2[
@@ -30,7 +30,7 @@ trait CustomFilter[FParams /* <: js.Object */, FElement /* <: CustomFilterElemen
 
 object CustomFilter {
   @scala.inline
-  def apply[FParams /* <: js.Object */, FElement /* <: CustomFilterElement */](
+  def apply[FParams, FElement](
     customFilterParameters: CustomFilterParameters[FParams],
     getElement: (js.Function2[
       /* value */ js.UndefOr[CustomFilterParameters[FParams]], 

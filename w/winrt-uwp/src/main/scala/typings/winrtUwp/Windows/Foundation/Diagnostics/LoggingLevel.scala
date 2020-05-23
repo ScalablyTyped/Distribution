@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Foundation.Diagnostics
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object LoggingLevel extends js.Object {
   /** Log messages of warning level and higher. */
   @js.native
   sealed trait warning extends LoggingLevel
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[LoggingLevel with Double] = js.native
-  /* 4 */ @js.native
-  object critical extends TopLevel[critical with Double]
-  
-  /* 3 */ @js.native
-  object error extends TopLevel[error with Double]
-  
-  /* 1 */ @js.native
-  object information extends TopLevel[information with Double]
-  
-  /* 0 */ @js.native
-  object verbose extends TopLevel[verbose with Double]
-  
-  /* 2 */ @js.native
-  object warning extends TopLevel[warning with Double]
   
 }
 

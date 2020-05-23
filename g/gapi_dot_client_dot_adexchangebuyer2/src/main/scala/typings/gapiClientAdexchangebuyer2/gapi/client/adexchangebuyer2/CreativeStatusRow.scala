@@ -20,12 +20,12 @@ object CreativeStatusRow {
   @scala.inline
   def apply(
     bidCount: MetricValue = null,
-    creativeStatusId: Int | Double = null,
+    creativeStatusId: js.UndefOr[Double] = js.undefined,
     rowDimensions: RowDimensions = null
   ): CreativeStatusRow = {
     val __obj = js.Dynamic.literal()
     if (bidCount != null) __obj.updateDynamic("bidCount")(bidCount.asInstanceOf[js.Any])
-    if (creativeStatusId != null) __obj.updateDynamic("creativeStatusId")(creativeStatusId.asInstanceOf[js.Any])
+    if (!js.isUndefined(creativeStatusId)) __obj.updateDynamic("creativeStatusId")(creativeStatusId.get.asInstanceOf[js.Any])
     if (rowDimensions != null) __obj.updateDynamic("rowDimensions")(rowDimensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreativeStatusRow]
   }

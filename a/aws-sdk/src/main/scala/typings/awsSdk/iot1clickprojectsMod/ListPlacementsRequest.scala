@@ -22,9 +22,13 @@ trait ListPlacementsRequest extends js.Object {
 
 object ListPlacementsRequest {
   @scala.inline
-  def apply(projectName: ProjectName, maxResults: Int | Double = null, nextToken: NextToken = null): ListPlacementsRequest = {
+  def apply(
+    projectName: ProjectName,
+    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    nextToken: NextToken = null
+  ): ListPlacementsRequest = {
     val __obj = js.Dynamic.literal(projectName = projectName.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPlacementsRequest]
   }

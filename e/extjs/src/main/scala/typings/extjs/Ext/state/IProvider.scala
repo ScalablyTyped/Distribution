@@ -9,33 +9,33 @@ import scala.scalajs.js.annotation._
 
 trait IProvider extends IObservable {
   /** [Method] Clears a value from the state
-  		* @param name String The key name
-  		*/
+    * @param name String The key name
+    */
   var clear: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Decodes a string previously encoded with encodeValue
-  		* @param value String The value to decode
-  		* @returns Object The decoded value
-  		*/
+    * @param value String The value to decode
+    * @returns Object The decoded value
+    */
   var decodeValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[String], _]] = js.undefined
   /** [Method] Encodes a value including type information
-  		* @param value Object The value to encode
-  		* @returns String The encoded value
-  		*/
+    * @param value Object The value to encode
+    * @returns String The encoded value
+    */
   var encodeValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], String]] = js.undefined
   /** [Method] Returns the current value for a key
-  		* @param name String The key name
-  		* @param defaultValue Object A default value to return if the key's value is not found
-  		* @returns Object The state data
-  		*/
+    * @param name String The key name
+    * @param defaultValue Object A default value to return if the key's value is not found
+    * @returns Object The state data
+    */
   var get: js.UndefOr[
     js.Function2[/* name */ js.UndefOr[String], /* defaultValue */ js.UndefOr[js.Any], _]
   ] = js.undefined
   /** [Config Option] (String) */
   var prefix: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value for a key
-  		* @param name String The key name
-  		* @param value Object The value to set
-  		*/
+    * @param name String The key name
+    * @param value Object The value to set
+    */
   var set: js.UndefOr[
     js.Function2[/* name */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
@@ -115,7 +115,7 @@ object IProvider {
     if (hasListeners != null) __obj.updateDynamic("hasListeners")(hasListeners.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
@@ -130,7 +130,7 @@ object IProvider {
     if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction0(resumeEvents))
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (set != null) __obj.updateDynamic("set")(js.Any.fromFunction2(set))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction1(suspendEvents))

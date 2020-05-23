@@ -10,16 +10,17 @@ import typings.openfin.mod.fin.OpenFinGlobalHotkeyEventType
 import typings.openfin.mod.fin.OpenFinSystemEventType
 import typings.openfin.mod.fin.OpenFinWindowEventType
 import typings.openfin.shapesMod.AnchorType
+import typings.openfin.utilsMod.LayoutPresetTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object openfinStrings {
   @js.native
-  sealed trait `Not implemented in this environment` extends js.Object
+  sealed trait `abnormal-termination` extends js.Object
   
   @js.native
-  sealed trait `abnormal-termination` extends js.Object
+  sealed trait app extends js.Object
   
   @js.native
   sealed trait application extends js.Object
@@ -88,6 +89,9 @@ object openfinStrings {
   sealed trait channel extends js.Object
   
   @js.native
+  sealed trait `channel-changed` extends js.Object
+  
+  @js.native
   sealed trait clean extends js.Object
   
   @js.native
@@ -107,6 +111,9 @@ object openfinStrings {
   
   @js.native
   sealed trait closing extends OpenFinExternalWindowEventType
+  
+  @js.native
+  sealed trait columns extends LayoutPresetTypes
   
   @js.native
   sealed trait connected
@@ -195,6 +202,15 @@ object openfinStrings {
   sealed trait fatal extends LogLevel
   
   @js.native
+  sealed trait fdc3Dotcontact extends js.Object
+  
+  @js.native
+  sealed trait fdc3Dotinstrument extends js.Object
+  
+  @js.native
+  sealed trait fdc3Dotorganization extends js.Object
+  
+  @js.native
   sealed trait focused
     extends OpenFinExternalWindowEventType
        with OpenFinWindowEventType
@@ -212,6 +228,9 @@ object openfinStrings {
   sealed trait `global-hotkey` extends js.Object
   
   @js.native
+  sealed trait grid extends LayoutPresetTypes
+  
+  @js.native
   sealed trait `group-changed`
     extends OpenFinExternalWindowEventType
        with OpenFinWindowEventType
@@ -226,6 +245,9 @@ object openfinStrings {
   
   @js.native
   sealed trait `hide-on-close` extends js.Object
+  
+  @js.native
+  sealed trait hotkey extends js.Object
   
   @js.native
   sealed trait `idle-state-changed` extends OpenFinSystemEventType
@@ -248,10 +270,22 @@ object openfinStrings {
   sealed trait join extends js.Object
   
   @js.native
+  sealed trait keyDown extends js.Object
+  
+  @js.native
+  sealed trait keyUp extends js.Object
+  
+  @js.native
   sealed trait killed extends js.Object
   
   @js.native
   sealed trait `launch-failed` extends js.Object
+  
+  @js.native
+  sealed trait `layout-initialized` extends js.Object
+  
+  @js.native
+  sealed trait `layout-ready` extends js.Object
   
   @js.native
   sealed trait leave extends js.Object
@@ -324,9 +358,6 @@ object openfinStrings {
   sealed trait `object` extends js.Object
   
   @js.native
-  sealed trait `of-window-message` extends js.Object
-  
-  @js.native
   sealed trait `options-changed` extends js.Object
   
   @js.native
@@ -337,6 +368,12 @@ object openfinStrings {
   
   @js.native
   sealed trait `performance-report` extends js.Object
+  
+  @js.native
+  sealed trait `platform-api-ready` extends js.Object
+  
+  @js.native
+  sealed trait `platform-snapshot-applied` extends js.Object
   
   @js.native
   sealed trait `preload-scripts-state-changed` extends js.Object
@@ -377,6 +414,9 @@ object openfinStrings {
   sealed trait restored
     extends OpenFinExternalWindowEventType
        with OpenFinWindowEventType
+  
+  @js.native
+  sealed trait rows extends LayoutPresetTypes
   
   @js.native
   sealed trait `run-requested` extends OpenFinApplicationEventType
@@ -424,6 +464,9 @@ object openfinStrings {
   
   @js.native
   sealed trait system extends js.Object
+  
+  @js.native
+  sealed trait tabs extends LayoutPresetTypes
   
   @js.native
   sealed trait target extends js.Object
@@ -485,7 +528,13 @@ object openfinStrings {
   sealed trait `view-did-change-theme-color` extends js.Object
   
   @js.native
+  sealed trait `view-focused` extends js.Object
+  
+  @js.native
   sealed trait `view-hidden` extends js.Object
+  
+  @js.native
+  sealed trait `view-hotkey` extends js.Object
   
   @js.native
   sealed trait `view-navigation-rejected` extends js.Object
@@ -522,6 +571,9 @@ object openfinStrings {
   
   @js.native
   sealed trait window extends EntityType
+  
+  @js.native
+  sealed trait `window-added` extends js.Object
   
   @js.native
   sealed trait `window-alert-requested` extends OpenFinApplicationEventType
@@ -587,7 +639,16 @@ object openfinStrings {
   sealed trait `window-hidden` extends js.Object
   
   @js.native
+  sealed trait `window-hotkey` extends js.Object
+  
+  @js.native
   sealed trait `window-initialized` extends js.Object
+  
+  @js.native
+  sealed trait `window-layout-initialized` extends js.Object
+  
+  @js.native
+  sealed trait `window-layout-ready` extends js.Object
   
   @js.native
   sealed trait `window-maximized` extends js.Object
@@ -621,6 +682,9 @@ object openfinStrings {
   
   @js.native
   sealed trait `window-reloaded` extends js.Object
+  
+  @js.native
+  sealed trait `window-removed` extends js.Object
   
   @js.native
   sealed trait `window-resource-load-failed` extends js.Object
@@ -659,9 +723,9 @@ object openfinStrings {
   sealed trait xhr extends js.Object
   
   @scala.inline
-  def `Not implemented in this environment`: `Not implemented in this environment` = ("Not implemented in this environment").asInstanceOf[`Not implemented in this environment`]
-  @scala.inline
   def `abnormal-termination`: `abnormal-termination` = "abnormal-termination".asInstanceOf[`abnormal-termination`]
+  @scala.inline
+  def app: app = "app".asInstanceOf[app]
   @scala.inline
   def application: application = "application".asInstanceOf[application]
   @scala.inline
@@ -703,6 +767,8 @@ object openfinStrings {
   @scala.inline
   def channel: channel = "channel".asInstanceOf[channel]
   @scala.inline
+  def `channel-changed`: `channel-changed` = "channel-changed".asInstanceOf[`channel-changed`]
+  @scala.inline
   def clean: clean = "clean".asInstanceOf[clean]
   @scala.inline
   def click: click = "click".asInstanceOf[click]
@@ -714,6 +780,8 @@ object openfinStrings {
   def closed: closed = "closed".asInstanceOf[closed]
   @scala.inline
   def closing: closing = "closing".asInstanceOf[closing]
+  @scala.inline
+  def columns: columns = "columns".asInstanceOf[columns]
   @scala.inline
   def connected: connected = "connected".asInstanceOf[connected]
   @scala.inline
@@ -771,6 +839,12 @@ object openfinStrings {
   @scala.inline
   def fatal: fatal = "fatal".asInstanceOf[fatal]
   @scala.inline
+  def fdc3Dotcontact: fdc3Dotcontact = "fdc3.contact".asInstanceOf[fdc3Dotcontact]
+  @scala.inline
+  def fdc3Dotinstrument: fdc3Dotinstrument = "fdc3.instrument".asInstanceOf[fdc3Dotinstrument]
+  @scala.inline
+  def fdc3Dotorganization: fdc3Dotorganization = "fdc3.organization".asInstanceOf[fdc3Dotorganization]
+  @scala.inline
   def focused: focused = "focused".asInstanceOf[focused]
   @scala.inline
   def frame: frame = "frame".asInstanceOf[frame]
@@ -781,6 +855,8 @@ object openfinStrings {
   @scala.inline
   def `global-hotkey`: `global-hotkey` = "global-hotkey".asInstanceOf[`global-hotkey`]
   @scala.inline
+  def grid: grid = "grid".asInstanceOf[grid]
+  @scala.inline
   def `group-changed`: `group-changed` = "group-changed".asInstanceOf[`group-changed`]
   @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
@@ -788,6 +864,8 @@ object openfinStrings {
   def hide: hide = "hide".asInstanceOf[hide]
   @scala.inline
   def `hide-on-close`: `hide-on-close` = "hide-on-close".asInstanceOf[`hide-on-close`]
+  @scala.inline
+  def hotkey: hotkey = "hotkey".asInstanceOf[hotkey]
   @scala.inline
   def `idle-state-changed`: `idle-state-changed` = "idle-state-changed".asInstanceOf[`idle-state-changed`]
   @scala.inline
@@ -801,9 +879,17 @@ object openfinStrings {
   @scala.inline
   def join: join = "join".asInstanceOf[join]
   @scala.inline
+  def keyDown: keyDown = "keyDown".asInstanceOf[keyDown]
+  @scala.inline
+  def keyUp: keyUp = "keyUp".asInstanceOf[keyUp]
+  @scala.inline
   def killed: killed = "killed".asInstanceOf[killed]
   @scala.inline
   def `launch-failed`: `launch-failed` = "launch-failed".asInstanceOf[`launch-failed`]
+  @scala.inline
+  def `layout-initialized`: `layout-initialized` = "layout-initialized".asInstanceOf[`layout-initialized`]
+  @scala.inline
+  def `layout-ready`: `layout-ready` = "layout-ready".asInstanceOf[`layout-ready`]
   @scala.inline
   def leave: leave = "leave".asInstanceOf[leave]
   @scala.inline
@@ -849,8 +935,6 @@ object openfinStrings {
   @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
   @scala.inline
-  def `of-window-message`: `of-window-message` = "of-window-message".asInstanceOf[`of-window-message`]
-  @scala.inline
   def `options-changed`: `options-changed` = "options-changed".asInstanceOf[`options-changed`]
   @scala.inline
   def other: other = "other".asInstanceOf[other]
@@ -858,6 +942,10 @@ object openfinStrings {
   def `out-of-memory`: `out-of-memory` = "out-of-memory".asInstanceOf[`out-of-memory`]
   @scala.inline
   def `performance-report`: `performance-report` = "performance-report".asInstanceOf[`performance-report`]
+  @scala.inline
+  def `platform-api-ready`: `platform-api-ready` = "platform-api-ready".asInstanceOf[`platform-api-ready`]
+  @scala.inline
+  def `platform-snapshot-applied`: `platform-snapshot-applied` = "platform-snapshot-applied".asInstanceOf[`platform-snapshot-applied`]
   @scala.inline
   def `preload-scripts-state-changed`: `preload-scripts-state-changed` = "preload-scripts-state-changed".asInstanceOf[`preload-scripts-state-changed`]
   @scala.inline
@@ -882,6 +970,8 @@ object openfinStrings {
   def responding: responding = "responding".asInstanceOf[responding]
   @scala.inline
   def restored: restored = "restored".asInstanceOf[restored]
+  @scala.inline
+  def rows: rows = "rows".asInstanceOf[rows]
   @scala.inline
   def `run-requested`: `run-requested` = "run-requested".asInstanceOf[`run-requested`]
   @scala.inline
@@ -912,6 +1002,8 @@ object openfinStrings {
   def succeeded: succeeded = "succeeded".asInstanceOf[succeeded]
   @scala.inline
   def system: system = "system".asInstanceOf[system]
+  @scala.inline
+  def tabs: tabs = "tabs".asInstanceOf[tabs]
   @scala.inline
   def target: target = "target".asInstanceOf[target]
   @scala.inline
@@ -951,7 +1043,11 @@ object openfinStrings {
   @scala.inline
   def `view-did-change-theme-color`: `view-did-change-theme-color` = "view-did-change-theme-color".asInstanceOf[`view-did-change-theme-color`]
   @scala.inline
+  def `view-focused`: `view-focused` = "view-focused".asInstanceOf[`view-focused`]
+  @scala.inline
   def `view-hidden`: `view-hidden` = "view-hidden".asInstanceOf[`view-hidden`]
+  @scala.inline
+  def `view-hotkey`: `view-hotkey` = "view-hotkey".asInstanceOf[`view-hotkey`]
   @scala.inline
   def `view-navigation-rejected`: `view-navigation-rejected` = "view-navigation-rejected".asInstanceOf[`view-navigation-rejected`]
   @scala.inline
@@ -976,6 +1072,8 @@ object openfinStrings {
   def `will-resize`: `will-resize` = "will-resize".asInstanceOf[`will-resize`]
   @scala.inline
   def window: window = "window".asInstanceOf[window]
+  @scala.inline
+  def `window-added`: `window-added` = "window-added".asInstanceOf[`window-added`]
   @scala.inline
   def `window-alert-requested`: `window-alert-requested` = "window-alert-requested".asInstanceOf[`window-alert-requested`]
   @scala.inline
@@ -1019,7 +1117,13 @@ object openfinStrings {
   @scala.inline
   def `window-hidden`: `window-hidden` = "window-hidden".asInstanceOf[`window-hidden`]
   @scala.inline
+  def `window-hotkey`: `window-hotkey` = "window-hotkey".asInstanceOf[`window-hotkey`]
+  @scala.inline
   def `window-initialized`: `window-initialized` = "window-initialized".asInstanceOf[`window-initialized`]
+  @scala.inline
+  def `window-layout-initialized`: `window-layout-initialized` = "window-layout-initialized".asInstanceOf[`window-layout-initialized`]
+  @scala.inline
+  def `window-layout-ready`: `window-layout-ready` = "window-layout-ready".asInstanceOf[`window-layout-ready`]
   @scala.inline
   def `window-maximized`: `window-maximized` = "window-maximized".asInstanceOf[`window-maximized`]
   @scala.inline
@@ -1042,6 +1146,8 @@ object openfinStrings {
   def `window-preload-scripts-state-changing`: `window-preload-scripts-state-changing` = "window-preload-scripts-state-changing".asInstanceOf[`window-preload-scripts-state-changing`]
   @scala.inline
   def `window-reloaded`: `window-reloaded` = "window-reloaded".asInstanceOf[`window-reloaded`]
+  @scala.inline
+  def `window-removed`: `window-removed` = "window-removed".asInstanceOf[`window-removed`]
   @scala.inline
   def `window-resource-load-failed`: `window-resource-load-failed` = "window-resource-load-failed".asInstanceOf[`window-resource-load-failed`]
   @scala.inline

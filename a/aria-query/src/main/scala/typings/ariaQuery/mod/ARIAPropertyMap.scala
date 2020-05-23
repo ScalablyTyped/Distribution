@@ -68,7 +68,7 @@ object ARIAPropertyMap {
     `aria-colindex`: js.Any = null,
     `aria-colspan`: js.Any = null,
     `aria-controls`: js.Any = null,
-    `aria-current`: ARIAPropertyCurrent = null,
+    `aria-current`: js.UndefOr[Null | ARIAPropertyCurrent] = js.undefined,
     `aria-describedat`: js.Any = null,
     `aria-describedby`: js.Any = null,
     `aria-details`: js.Any = null,
@@ -119,7 +119,7 @@ object ARIAPropertyMap {
     if (`aria-colindex` != null) __obj.updateDynamic("aria-colindex")(`aria-colindex`.asInstanceOf[js.Any])
     if (`aria-colspan` != null) __obj.updateDynamic("aria-colspan")(`aria-colspan`.asInstanceOf[js.Any])
     if (`aria-controls` != null) __obj.updateDynamic("aria-controls")(`aria-controls`.asInstanceOf[js.Any])
-    if (`aria-current` != null) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-current`)) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
     if (`aria-describedat` != null) __obj.updateDynamic("aria-describedat")(`aria-describedat`.asInstanceOf[js.Any])
     if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
     if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`.asInstanceOf[js.Any])

@@ -5,13 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Storage.Streams.InputStreamOverStream")
-@js.native
-class InputStreamOverStream () extends IInputStream {
-  /* CompleteClass */
-  override def close(): Unit = js.native
-  def dispose(): Unit = js.native
-  /* CompleteClass */
-  override def readAsync(buffer: IBuffer, count: Double, options: InputStreamOptions): IAsyncOperationWithProgress[IBuffer, Double] = js.native
+trait InputStreamOverStream extends IInputStream {
+  def dispose(): Unit
+}
+
+object InputStreamOverStream {
+  @scala.inline
+  def apply(
+    close: () => Unit,
+    dispose: () => Unit,
+    readAsync: (IBuffer, Double, InputStreamOptions) => IAsyncOperationWithProgress[IBuffer, Double]
+  ): InputStreamOverStream = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), dispose = js.Any.fromFunction0(dispose), readAsync = js.Any.fromFunction3(readAsync))
+    __obj.asInstanceOf[InputStreamOverStream]
+  }
 }
 

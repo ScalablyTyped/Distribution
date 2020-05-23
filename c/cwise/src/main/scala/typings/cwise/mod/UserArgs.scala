@@ -20,18 +20,18 @@ object UserArgs {
   def apply(
     args: js.Array[ArgType],
     body: (Double, /* repeated */ js.Any) => Unit,
-    blockSize: Int | Double = null,
+    blockSize: js.UndefOr[Double] = js.undefined,
     funcName: String = null,
     post: (/* a */ Double, /* repeated */ js.Any) => Unit = null,
     pre: (/* a */ Double, /* repeated */ js.Any) => Unit = null,
     printCode: js.UndefOr[Boolean] = js.undefined
   ): UserArgs = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], body = js.Any.fromFunction2(body))
-    if (blockSize != null) __obj.updateDynamic("blockSize")(blockSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockSize)) __obj.updateDynamic("blockSize")(blockSize.get.asInstanceOf[js.Any])
     if (funcName != null) __obj.updateDynamic("funcName")(funcName.asInstanceOf[js.Any])
     if (post != null) __obj.updateDynamic("post")(js.Any.fromFunction2(post))
     if (pre != null) __obj.updateDynamic("pre")(js.Any.fromFunction2(pre))
-    if (!js.isUndefined(printCode)) __obj.updateDynamic("printCode")(printCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(printCode)) __obj.updateDynamic("printCode")(printCode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserArgs]
   }
 }

@@ -16,40 +16,40 @@ trait IAssociation extends IBase {
   /** [Config Option] (String) */
   var associationKey: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of associatedModel
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getAssociatedModel: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of associatedName
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getAssociatedName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of associationKey
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getAssociationKey: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of name
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getName: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of ownerModel
-  		* @returns Ext.data.Model/String
-  		*/
+    * @returns Ext.data.Model/String
+    */
   var getOwnerModel: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of ownerName
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getOwnerName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of primaryKey
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getPrimaryKey: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of reader
-  		* @returns Ext.data.reader.Reader
-  		*/
+    * @returns Ext.data.reader.Reader
+    */
   var getReader: js.UndefOr[js.Function0[IReader]] = js.undefined
   /** [Method] Returns the value of type
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getType: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (Ext.data.Model/String) */
   var ownerModel: js.UndefOr[js.Any] = js.undefined
@@ -58,40 +58,40 @@ trait IAssociation extends IBase {
   /** [Config Option] (Ext.data.reader.Reader) */
   var reader: js.UndefOr[IReader] = js.undefined
   /** [Method] Sets the value of associatedModel
-  		* @param associatedModel String The new value.
-  		*/
+    * @param associatedModel String The new value.
+    */
   var setAssociatedModel: js.UndefOr[js.Function1[/* associatedModel */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of associatedName
-  		* @param associatedName String The new value.
-  		*/
+    * @param associatedName String The new value.
+    */
   var setAssociatedName: js.UndefOr[js.Function1[/* associatedName */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of associationKey
-  		* @param associationKey String The new value.
-  		*/
+    * @param associationKey String The new value.
+    */
   var setAssociationKey: js.UndefOr[js.Function1[/* associationKey */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of name
-  		* @param name Object The new value.
-  		*/
+    * @param name Object The new value.
+    */
   var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of ownerModel
-  		* @param ownerModel Ext.data.Model/String The new value.
-  		*/
+    * @param ownerModel Ext.data.Model/String The new value.
+    */
   var setOwnerModel: js.UndefOr[js.Function1[/* ownerModel */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of ownerName
-  		* @param ownerName String The new value.
-  		*/
+    * @param ownerName String The new value.
+    */
   var setOwnerName: js.UndefOr[js.Function1[/* ownerName */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of primaryKey
-  		* @param primaryKey String The new value.
-  		*/
+    * @param primaryKey String The new value.
+    */
   var setPrimaryKey: js.UndefOr[js.Function1[/* primaryKey */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of reader
-  		* @param reader Ext.data.reader.Reader The new value.
-  		*/
+    * @param reader Ext.data.reader.Reader The new value.
+    */
   var setReader: js.UndefOr[js.Function1[/* reader */ js.UndefOr[IReader], Unit]] = js.undefined
   /** [Method] Sets the value of type
-  		* @param type String The new value.
-  		*/
+    * @param type String The new value.
+    */
   var setType: js.UndefOr[js.Function1[/* type */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (String) */
   var `type`: js.UndefOr[String] = js.undefined
@@ -182,7 +182,7 @@ object IAssociation {
     if (setPrimaryKey != null) __obj.updateDynamic("setPrimaryKey")(js.Any.fromFunction1(setPrimaryKey))
     if (setReader != null) __obj.updateDynamic("setReader")(js.Any.fromFunction1(setReader))
     if (setType != null) __obj.updateDynamic("setType")(js.Any.fromFunction1(setType))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.TextRange2")
 @js.native
-class TextRange2 protected () extends js.Object {
+trait TextRange2 extends js.Object {
   val Application: js.Any = js.native
   val BoundHeight: Double = js.native
   val BoundLeft: Double = js.native

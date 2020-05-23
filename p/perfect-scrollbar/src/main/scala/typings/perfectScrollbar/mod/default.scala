@@ -1,6 +1,6 @@
 package typings.perfectScrollbar.mod
 
-import typings.perfectScrollbar.AnonX
+import typings.perfectScrollbar.anon.X
 import typings.perfectScrollbar.mod.PerfectScrollbar.Options
 import typings.std.Element
 import typings.std.HTMLElement
@@ -58,7 +58,7 @@ class default protected () extends PerfectScrollbar {
   /* CompleteClass */
   override var railYRatio: Double = js.native
   /* CompleteClass */
-  override var reach: AnonX = js.native
+  override var reach: X = js.native
   /* CompleteClass */
   override var scrollbarX: HTMLElement = js.native
   /* CompleteClass */

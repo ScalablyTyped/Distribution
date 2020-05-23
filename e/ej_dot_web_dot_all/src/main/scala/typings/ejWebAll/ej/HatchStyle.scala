@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -158,119 +157,6 @@ object HatchStyle extends js.Object {
   //Set background as ZigZag to Captcha
   @js.native
   sealed trait ZigZag extends HatchStyle
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[HatchStyle with Double] = js.native
-  /* 1 */ @js.native
-  object BackwardDiagonal extends TopLevel[BackwardDiagonal with Double]
-  
-  /* 2 */ @js.native
-  object Cross extends TopLevel[Cross with Double]
-  
-  /* 3 */ @js.native
-  object DarkDownwardDiagonal extends TopLevel[DarkDownwardDiagonal with Double]
-  
-  /* 4 */ @js.native
-  object DarkHorizontal extends TopLevel[DarkHorizontal with Double]
-  
-  /* 5 */ @js.native
-  object DarkUpwardDiagonal extends TopLevel[DarkUpwardDiagonal with Double]
-  
-  /* 6 */ @js.native
-  object DarkVertical extends TopLevel[DarkVertical with Double]
-  
-  /* 7 */ @js.native
-  object DashedDownwardDiagonal extends TopLevel[DashedDownwardDiagonal with Double]
-  
-  /* 8 */ @js.native
-  object DashedHorizontal extends TopLevel[DashedHorizontal with Double]
-  
-  /* 9 */ @js.native
-  object DashedUpwardDiagonal extends TopLevel[DashedUpwardDiagonal with Double]
-  
-  /* 10 */ @js.native
-  object DashedVertical extends TopLevel[DashedVertical with Double]
-  
-  /* 11 */ @js.native
-  object DiagonalBrick extends TopLevel[DiagonalBrick with Double]
-  
-  /* 12 */ @js.native
-  object DiagonalCross extends TopLevel[DiagonalCross with Double]
-  
-  /* 13 */ @js.native
-  object Divot extends TopLevel[Divot with Double]
-  
-  /* 14 */ @js.native
-  object DottedDiamond extends TopLevel[DottedDiamond with Double]
-  
-  /* 15 */ @js.native
-  object DottedGrid extends TopLevel[DottedGrid with Double]
-  
-  /* 16 */ @js.native
-  object ForwardDiagonal extends TopLevel[ForwardDiagonal with Double]
-  
-  /* 17 */ @js.native
-  object Horizontal extends TopLevel[Horizontal with Double]
-  
-  /* 18 */ @js.native
-  object HorizontalBrick extends TopLevel[HorizontalBrick with Double]
-  
-  /* 19 */ @js.native
-  object LargeCheckerBoard extends TopLevel[LargeCheckerBoard with Double]
-  
-  /* 20 */ @js.native
-  object LargeConfetti extends TopLevel[LargeConfetti with Double]
-  
-  /* 21 */ @js.native
-  object LargeGrid extends TopLevel[LargeGrid with Double]
-  
-  /* 22 */ @js.native
-  object LightDownwardDiagonal extends TopLevel[LightDownwardDiagonal with Double]
-  
-  /* 23 */ @js.native
-  object LightHorizontal extends TopLevel[LightHorizontal with Double]
-  
-  /* 24 */ @js.native
-  object LightUpwardDiagonal extends TopLevel[LightUpwardDiagonal with Double]
-  
-  /* 25 */ @js.native
-  object LightVertical extends TopLevel[LightVertical with Double]
-  
-  /* 26 */ @js.native
-  object Max extends TopLevel[Max with Double]
-  
-  /* 27 */ @js.native
-  object Min extends TopLevel[Min with Double]
-  
-  /* 28 */ @js.native
-  object NarrowHorizontal extends TopLevel[NarrowHorizontal with Double]
-  
-  /* 29 */ @js.native
-  object NarrowVertical extends TopLevel[NarrowVertical with Double]
-  
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 30 */ @js.native
-  object OutlinedDiamond extends TopLevel[OutlinedDiamond with Double]
-  
-  /* 31 */ @js.native
-  object Percent90 extends TopLevel[Percent90 with Double]
-  
-  /* 32 */ @js.native
-  object Wave extends TopLevel[Wave with Double]
-  
-  /* 33 */ @js.native
-  object Weave extends TopLevel[Weave with Double]
-  
-  /* 34 */ @js.native
-  object WideDownwardDiagonal extends TopLevel[WideDownwardDiagonal with Double]
-  
-  /* 35 */ @js.native
-  object WideUpwardDiagonal extends TopLevel[WideUpwardDiagonal with Double]
-  
-  /* 36 */ @js.native
-  object ZigZag extends TopLevel[ZigZag with Double]
   
 }
 

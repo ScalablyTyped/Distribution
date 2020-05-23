@@ -1,6 +1,6 @@
 package typings.rax.mod
 
-import typings.rax.ReadonlychildrenRaxNode
+import typings.rax.anon.ReadonlychildrenRaxNode
 import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`

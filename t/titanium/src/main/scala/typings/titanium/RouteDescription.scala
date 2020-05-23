@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
   */
 trait RouteDescription extends js.Object {
   /**
-  	 * An Array of current input ports for the session. See the `AUDIO_SESSION_PORT` constants.
-  	 */
+    * An Array of current input ports for the session. See the `AUDIO_SESSION_PORT` constants.
+    */
   var inputs: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
-  	 * An Array of current output ports for the session. See the `AUDIO_SESSION_PORT` constants.
-  	 */
+    * An Array of current output ports for the session. See the `AUDIO_SESSION_PORT` constants.
+    */
   var outputs: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 

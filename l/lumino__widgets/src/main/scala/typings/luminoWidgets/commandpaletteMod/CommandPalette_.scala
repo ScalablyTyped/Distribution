@@ -6,7 +6,7 @@ import typings.luminoWidgets.commandpaletteMod.CommandPalette.IItemOptions
 import typings.luminoWidgets.commandpaletteMod.CommandPalette.IOptions
 import typings.luminoWidgets.commandpaletteMod.CommandPalette.IRenderer
 import typings.luminoWidgets.widgetMod.Widget
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
 import typings.std.HTMLUListElement
@@ -111,7 +111,7 @@ class CommandPalette_ protected () extends Widget {
     * called in response to events on the command palette's DOM node.
     * It should not be called directly by user code.
     */
-  def handleEvent(event: Event_): Unit = js.native
+  def handleEvent(event: Event): Unit = js.native
   /**
     * Clear the search results and schedule an update.
     *

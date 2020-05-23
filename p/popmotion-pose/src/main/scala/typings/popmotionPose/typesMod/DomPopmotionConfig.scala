@@ -22,7 +22,7 @@ trait DomPopmotionConfig
 object DomPopmotionConfig {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     dragBounds: DragBounds | (js.Function1[/* props */ ResolverProps, DragBounds]) = null,
     draggable: Draggable = null,
     hoverable: js.UndefOr[Boolean] = js.undefined,
@@ -36,7 +36,7 @@ object DomPopmotionConfig {
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (dragBounds != null) __obj.updateDynamic("dragBounds")(dragBounds.asInstanceOf[js.Any])
     if (draggable != null) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverable)) __obj.updateDynamic("hoverable")(hoverable.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverable)) __obj.updateDynamic("hoverable")(hoverable.get.asInstanceOf[js.Any])
     if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction1(onDragEnd))
     if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1(onDragStart))
     if (onPressEnd != null) __obj.updateDynamic("onPressEnd")(js.Any.fromFunction1(onPressEnd))

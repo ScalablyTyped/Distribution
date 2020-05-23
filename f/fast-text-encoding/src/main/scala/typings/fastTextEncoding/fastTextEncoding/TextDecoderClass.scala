@@ -8,11 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * TextDecoder instance.
   */
-@JSGlobal("fastTextEncoding.TextDecoderClass")
 @js.native
-class TextDecoderClass () extends js.Object {
-  def this(utfLabel: String) = this()
-  def this(utfLabel: String, options: TextDecoderOptions) = this()
+trait TextDecoderClass extends js.Object {
   var encoding: String = js.native
   var fatal: Boolean = js.native
   var ignoreBOM: Boolean = js.native

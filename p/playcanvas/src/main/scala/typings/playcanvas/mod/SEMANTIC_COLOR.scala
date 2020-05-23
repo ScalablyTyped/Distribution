@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.SEMANTIC_COLOR
-  * @type {string}
-  * @description Vertex attribute to be treated as a color.
+  * Vertex attribute to be treated as a color.
   */
 @JSImport("playcanvas", "SEMANTIC_COLOR")
 @js.native

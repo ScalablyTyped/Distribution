@@ -33,22 +33,22 @@ object TypingProps {
     onBeforeType: () => Unit = null,
     onFinishedTyping: () => Unit = null,
     onStartedTyping: () => Unit = null,
-    speed: Int | Double = null,
-    startDelay: Int | Double = null
+    speed: js.UndefOr[Double] = js.undefined,
+    startDelay: js.UndefOr[Double] = js.undefined
   ): TypingProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (cursorClassName != null) __obj.updateDynamic("cursorClassName")(cursorClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideCursor)) __obj.updateDynamic("hideCursor")(hideCursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideCursor)) __obj.updateDynamic("hideCursor")(hideCursor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
     if (onAfterType != null) __obj.updateDynamic("onAfterType")(js.Any.fromFunction0(onAfterType))
     if (onBeforeType != null) __obj.updateDynamic("onBeforeType")(js.Any.fromFunction0(onBeforeType))
     if (onFinishedTyping != null) __obj.updateDynamic("onFinishedTyping")(js.Any.fromFunction0(onFinishedTyping))
     if (onStartedTyping != null) __obj.updateDynamic("onStartedTyping")(js.Any.fromFunction0(onStartedTyping))
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
-    if (startDelay != null) __obj.updateDynamic("startDelay")(startDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startDelay)) __obj.updateDynamic("startDelay")(startDelay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypingProps]
   }
 }

@@ -1,6 +1,5 @@
 package typings.dwt
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,38 +55,6 @@ object EnumDWTVideoProperty extends js.Object {
   /** Specifies the white balance, as a color temperature in degrees Kelvin. The range of values depends on the device. */
   @js.native
   sealed trait VP_WHITEBALANCE extends EnumDWTVideoProperty
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EnumDWTVideoProperty with Double] = js.native
-  /* 8 */ @js.native
-  object VP_BACKLIGHTCOMPENSATION extends TopLevel[VP_BACKLIGHTCOMPENSATION with Double]
-  
-  /* 0 */ @js.native
-  object VP_BRIGHTNESS extends TopLevel[VP_BRIGHTNESS with Double]
-  
-  /* 6 */ @js.native
-  object VP_COLORENABLE extends TopLevel[VP_COLORENABLE with Double]
-  
-  /* 1 */ @js.native
-  object VP_CONTRAST extends TopLevel[VP_CONTRAST with Double]
-  
-  /* 9 */ @js.native
-  object VP_GAIN extends TopLevel[VP_GAIN with Double]
-  
-  /* 5 */ @js.native
-  object VP_GAMMA extends TopLevel[VP_GAMMA with Double]
-  
-  /* 2 */ @js.native
-  object VP_HUE extends TopLevel[VP_HUE with Double]
-  
-  /* 3 */ @js.native
-  object VP_SATURATION extends TopLevel[VP_SATURATION with Double]
-  
-  /* 4 */ @js.native
-  object VP_SHARPNESS extends TopLevel[VP_SHARPNESS with Double]
-  
-  /* 7 */ @js.native
-  object VP_WHITEBALANCE extends TopLevel[VP_WHITEBALANCE with Double]
   
 }
 

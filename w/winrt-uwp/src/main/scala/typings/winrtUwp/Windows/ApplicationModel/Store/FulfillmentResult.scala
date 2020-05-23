@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Store
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object FulfillmentResult extends js.Object {
   /** The purchased consumable in-app product was fulfilled. */
   @js.native
   sealed trait succeeded extends FulfillmentResult
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FulfillmentResult with Double] = js.native
-  /* 1 */ @js.native
-  object nothingToFulfill extends TopLevel[nothingToFulfill with Double]
-  
-  /* 2 */ @js.native
-  object purchasePending extends TopLevel[purchasePending with Double]
-  
-  /* 3 */ @js.native
-  object purchaseReverted extends TopLevel[purchaseReverted with Double]
-  
-  /* 4 */ @js.native
-  object serverError extends TopLevel[serverError with Double]
-  
-  /* 0 */ @js.native
-  object succeeded extends TopLevel[succeeded with Double]
   
 }
 

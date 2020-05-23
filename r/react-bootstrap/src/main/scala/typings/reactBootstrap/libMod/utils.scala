@@ -1,6 +1,6 @@
 package typings.reactBootstrap.libMod
 
-import typings.reactBootstrap.AnonBsClass
+import typings.reactBootstrap.anon.BsClass
 import typings.reactBootstrap.bootstrapUtilsMod.BSProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,8 +19,8 @@ object utils extends js.Object {
     def getBsProps(props: js.Any): BSProps = js.native
     def getClassSet(props: js.Any): js.Any = js.native
     def isBsProp(propName: String): Boolean = js.native
-    def prefix(props: AnonBsClass): String = js.native
-    def prefix(props: AnonBsClass, variant: String): String = js.native
+    def prefix(props: BsClass): String = js.native
+    def prefix(props: BsClass, variant: String): String = js.native
     def splitBsProps(props: js.Any): js.Tuple2[BSProps, _] = js.native
     def splitBsPropsAndOmit(props: js.Any, omittedPropNames: js.Any): js.Tuple2[BSProps, _] = js.native
   }

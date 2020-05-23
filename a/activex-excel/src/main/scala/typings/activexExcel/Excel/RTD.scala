@@ -4,13 +4,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.RTD")
-@js.native
-class RTD protected () extends js.Object {
+trait RTD extends js.Object {
   @JSName("Excel.RTD_typekey")
-  var ExcelDotRTD_typekey: RTD = js.native
-  var ThrottleInterval: Double = js.native
-  def RefreshData(): Unit = js.native
-  def RestartServers(): Unit = js.native
+  var ExcelDotRTD_typekey: RTD
+  var ThrottleInterval: Double
+  def RefreshData(): Unit
+  def RestartServers(): Unit
+}
+
+object RTD {
+  @scala.inline
+  def apply(
+    ExcelDotRTD_typekey: RTD,
+    RefreshData: () => Unit,
+    RestartServers: () => Unit,
+    ThrottleInterval: Double
+  ): RTD = {
+    val __obj = js.Dynamic.literal(RefreshData = js.Any.fromFunction0(RefreshData), RestartServers = js.Any.fromFunction0(RestartServers), ThrottleInterval = ThrottleInterval.asInstanceOf[js.Any])
+    __obj.updateDynamic("Excel.RTD_typekey")(ExcelDotRTD_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RTD]
+  }
 }
 

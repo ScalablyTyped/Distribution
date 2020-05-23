@@ -13,7 +13,7 @@ object CalendarProps {
   @scala.inline
   def apply(
     date: DateInputType,
-    firstDayOfWeek: Int | Double = null,
+    firstDayOfWeek: js.UndefOr[Double] = js.undefined,
     format: String = null,
     lang: LanguageType = null,
     maxDate: DateInputType = null,
@@ -23,7 +23,7 @@ object CalendarProps {
     theme: CalendarTheme = null
   ): CalendarProps = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
-    if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstDayOfWeek)) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])

@@ -29,11 +29,11 @@ object NotifyApplicationStateRequest {
   def apply(
     ApplicationId: ApplicationId,
     Status: ApplicationStatus,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[DryRun] = js.undefined,
     UpdateDateTime: UpdateDateTime = null
   ): NotifyApplicationStateRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (UpdateDateTime != null) __obj.updateDynamic("UpdateDateTime")(UpdateDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotifyApplicationStateRequest]
   }

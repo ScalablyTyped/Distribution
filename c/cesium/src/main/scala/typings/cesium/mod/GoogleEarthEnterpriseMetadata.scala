@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonLevel
+import typings.cesium.anon.Level
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,7 +27,7 @@ class GoogleEarthEnterpriseMetadata protected () extends js.Object {
 @JSImport("cesium", "GoogleEarthEnterpriseMetadata")
 @js.native
 object GoogleEarthEnterpriseMetadata extends js.Object {
-  def quadKeyToTileXY(quadkey: String): AnonLevel = js.native
+  def quadKeyToTileXY(quadkey: String): Level = js.native
   def tileXYToQuadKey(x: Double, y: Double, level: Double): String = js.native
 }
 

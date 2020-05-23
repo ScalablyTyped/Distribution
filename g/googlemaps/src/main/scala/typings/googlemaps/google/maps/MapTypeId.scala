@@ -1,6 +1,5 @@
 package typings.googlemaps.google.maps
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,20 +30,6 @@ object MapTypeId extends js.Object {
   /** This map type displays maps with physical features such as terrain and vegetation. */
   @js.native
   sealed trait TERRAIN extends MapTypeId
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[MapTypeId with String] = js.native
-  /* "hybrid" */ @js.native
-  object HYBRID extends TopLevel[HYBRID with String]
-  
-  /* "roadmap" */ @js.native
-  object ROADMAP extends TopLevel[ROADMAP with String]
-  
-  /* "satellite" */ @js.native
-  object SATELLITE extends TopLevel[SATELLITE with String]
-  
-  /* "terrain" */ @js.native
-  object TERRAIN extends TopLevel[TERRAIN with String]
   
 }
 

@@ -5,18 +5,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** FaxFolders Class */
-@JSGlobal("FAXCOMEXLib.FaxFolders")
-@js.native
-class FaxFolders protected () extends js.Object {
+trait FaxFolders extends js.Object {
   @JSName("FAXCOMEXLib.FaxFolders_typekey")
-  var FAXCOMEXLibDotFaxFolders_typekey: FaxFolders = js.native
+  var FAXCOMEXLibDotFaxFolders_typekey: FaxFolders
   /** Incoming archive */
-  val IncomingArchive: FaxIncomingArchive = js.native
+  val IncomingArchive: FaxIncomingArchive
   /** Incoming queue */
-  val IncomingQueue: FaxIncomingQueue = js.native
+  val IncomingQueue: FaxIncomingQueue
   /** Outgoing archive */
-  val OutgoingArchive: FaxOutgoingArchive = js.native
+  val OutgoingArchive: FaxOutgoingArchive
   /** Outgoing queue */
-  val OutgoingQueue: FaxOutgoingQueue = js.native
+  val OutgoingQueue: FaxOutgoingQueue
+}
+
+object FaxFolders {
+  @scala.inline
+  def apply(
+    FAXCOMEXLibDotFaxFolders_typekey: FaxFolders,
+    IncomingArchive: FaxIncomingArchive,
+    IncomingQueue: FaxIncomingQueue,
+    OutgoingArchive: FaxOutgoingArchive,
+    OutgoingQueue: FaxOutgoingQueue
+  ): FaxFolders = {
+    val __obj = js.Dynamic.literal(IncomingArchive = IncomingArchive.asInstanceOf[js.Any], IncomingQueue = IncomingQueue.asInstanceOf[js.Any], OutgoingArchive = OutgoingArchive.asInstanceOf[js.Any], OutgoingQueue = OutgoingQueue.asInstanceOf[js.Any])
+    __obj.updateDynamic("FAXCOMEXLib.FaxFolders_typekey")(FAXCOMEXLibDotFaxFolders_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FaxFolders]
+  }
 }
 

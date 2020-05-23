@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.Layer")
 @js.native
-abstract class Layer_ () extends EventEmitter {
+trait Layer_ extends EventEmitter {
   /**
     * 图层获取DOM节点
     */

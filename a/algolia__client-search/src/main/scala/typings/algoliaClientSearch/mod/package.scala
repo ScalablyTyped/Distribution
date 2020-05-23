@@ -8,7 +8,7 @@ package object mod {
   type CreateIndex = js.Function2[
     /* indexName */ java.lang.String, 
     /* options */ js.UndefOr[
-      typings.algoliaClientSearch.AnonMethods[
+      typings.algoliaClientSearch.anon.Methods[
         org.scalablytyped.runtime.StringDictionary[
           js.Function1[
             /* base */ typings.algoliaClientSearch.mod.SearchIndex, 

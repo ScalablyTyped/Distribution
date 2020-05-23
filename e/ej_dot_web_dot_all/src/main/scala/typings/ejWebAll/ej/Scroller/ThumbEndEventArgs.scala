@@ -32,7 +32,7 @@ object ThumbEndEventArgs {
     `type`: String = null
   ): ThumbEndEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent.asInstanceOf[js.Any])
     if (scrollData != null) __obj.updateDynamic("scrollData")(scrollData.asInstanceOf[js.Any])

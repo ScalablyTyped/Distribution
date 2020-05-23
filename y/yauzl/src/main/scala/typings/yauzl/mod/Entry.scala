@@ -1,7 +1,7 @@
 package typings.yauzl.mod
 
 import typings.std.Date
-import typings.yauzl.AnonData
+import typings.yauzl.anon.Data
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ class Entry () extends js.Object {
   var crc32: Double = js.native
   var externalFileAttributes: Double = js.native
   var extraFieldLength: Double = js.native
-  var extraFields: js.Array[AnonData] = js.native
+  var extraFields: js.Array[Data] = js.native
   var fileCommentLength: Double = js.native
   var fileName: String = js.native
   var fileNameLength: Double = js.native

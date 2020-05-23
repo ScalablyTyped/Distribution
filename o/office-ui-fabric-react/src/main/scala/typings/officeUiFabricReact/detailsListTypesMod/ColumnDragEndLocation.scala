@@ -11,21 +11,15 @@ sealed trait ColumnDragEndLocation extends js.Object
 @JSImport("office-ui-fabric-react/lib/components/DetailsList/DetailsList.types", "ColumnDragEndLocation")
 @js.native
 object ColumnDragEndLocation extends js.Object {
-  /**
-    * Drag ended on Header
-    */
+  /** Drag ended on header */
   @js.native
   sealed trait header extends ColumnDragEndLocation
   
-  /**
-    * Drag ended outside of current list
-    */
+  /** Drag ended outside of current list */
   @js.native
   sealed trait outside extends ColumnDragEndLocation
   
-  /**
-    * Drag ended on current List
-    */
+  /** Drag ended within current list */
   @js.native
   sealed trait surface extends ColumnDragEndLocation
   

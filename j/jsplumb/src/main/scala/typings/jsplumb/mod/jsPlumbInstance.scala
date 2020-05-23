@@ -1,10 +1,10 @@
 package typings.jsplumb.mod
 
-import typings.jsplumb.AnonEach
+import typings.jsplumb.anon.Each
 import typings.jsplumb.jsplumbStrings.click
 import typings.jsplumb.jsplumbStrings.connection
 import typings.std.Element
-import typings.std.Event_
+import typings.std.Event
 import typings.std.Map
 import typings.std.Selection
 import scala.scalajs.js
@@ -26,30 +26,30 @@ class jsPlumbInstance () extends js.Object {
   def batch(fn: js.Function, doNotRepaintAfterwards: Boolean): Unit = js.native
   def bind(
     event: String,
-    callback: js.Function2[/* info */ OnConnectionBindInfo, /* originalEvent */ Event_, Unit]
+    callback: js.Function2[/* info */ OnConnectionBindInfo, /* originalEvent */ Event, Unit]
   ): Unit = js.native
   def bind(
     event: String,
-    callback: js.Function2[/* info */ OnConnectionBindInfo, /* originalEvent */ Event_, Unit],
+    callback: js.Function2[/* info */ OnConnectionBindInfo, /* originalEvent */ Event, Unit],
     insertAtStart: Boolean
   ): Unit = js.native
   @JSName("bind")
-  def bind_click(event: click, callback: js.Function2[/* info */ Connection, /* originalEvent */ Event_, Unit]): Unit = js.native
+  def bind_click(event: click, callback: js.Function2[/* info */ Connection, /* originalEvent */ Event, Unit]): Unit = js.native
   @JSName("bind")
   def bind_click(
     event: click,
-    callback: js.Function2[/* info */ Connection, /* originalEvent */ Event_, Unit],
+    callback: js.Function2[/* info */ Connection, /* originalEvent */ Event, Unit],
     insertAtStart: Boolean
   ): Unit = js.native
   @JSName("bind")
   def bind_connection(
     event: connection,
-    callback: js.Function2[/* info */ ConnectionMadeEventInfo, /* originalEvent */ Event_, Unit]
+    callback: js.Function2[/* info */ ConnectionMadeEventInfo, /* originalEvent */ Event, Unit]
   ): Unit = js.native
   @JSName("bind")
   def bind_connection(
     event: connection,
-    callback: js.Function2[/* info */ ConnectionMadeEventInfo, /* originalEvent */ Event_, Unit],
+    callback: js.Function2[/* info */ ConnectionMadeEventInfo, /* originalEvent */ Event, Unit],
     insertAtStart: Boolean
   ): Unit = js.native
   def cleanupListeners(): Unit = js.native
@@ -67,7 +67,7 @@ class jsPlumbInstance () extends js.Object {
   def draggable(el: js.Object, options: DragOptions): jsPlumbInstance = js.native
   def empty(el: Selector | String): Unit = js.native
   def empty(el: Element): Unit = js.native
-  def fire(event: String, value: js.Object, originalEvent: Event_): Unit = js.native
+  def fire(event: String, value: js.Object, originalEvent: Event): Unit = js.native
   def getAllConnections(): js.Array[Connection] = js.native
   def getConnections(scope: String, options: js.Object): js.Array[_] | (Map[_, _]) = js.native
   def getConnections(scope: String, options: js.Object, scope2: String): js.Array[_] | (Map[_, _]) = js.native
@@ -212,18 +212,18 @@ class jsPlumbInstance () extends js.Object {
   def restoreDefaults(): jsPlumbInstance = js.native
   def revalidate(el: Selector | String): Unit = js.native
   def revalidate(el: Element): Unit = js.native
-  def select(): AnonEach = js.native
-  def select(params: js.Object): AnonEach = js.native
-  def select(params: js.Object, scope: String): AnonEach = js.native
-  def select(params: js.Object, scope: String, source: String): AnonEach = js.native
-  def select(params: js.Object, scope: String, source: String, target: String): AnonEach = js.native
+  def select(): Each = js.native
+  def select(params: js.Object): Each = js.native
+  def select(params: js.Object, scope: String): Each = js.native
+  def select(params: js.Object, scope: String, source: String): Each = js.native
+  def select(params: js.Object, scope: String, source: String, target: String): Each = js.native
   def select(
     params: js.Object,
     scope: String,
     source: String,
     target: String,
     connections: js.Array[Connection]
-  ): AnonEach = js.native
+  ): Each = js.native
   def setContainer(el: Selector | String): Unit = js.native
   def setContainer(el: Element): Unit = js.native
   def setDefaultScope(scope: String): jsPlumbInstance = js.native

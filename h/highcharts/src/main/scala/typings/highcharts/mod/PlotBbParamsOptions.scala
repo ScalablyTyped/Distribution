@@ -25,11 +25,15 @@ trait PlotBbParamsOptions extends js.Object {
 
 object PlotBbParamsOptions {
   @scala.inline
-  def apply(index: Int | Double = null, period: Int | Double = null, standardDeviation: Int | Double = null): PlotBbParamsOptions = {
+  def apply(
+    index: js.UndefOr[Double] = js.undefined,
+    period: js.UndefOr[Double] = js.undefined,
+    standardDeviation: js.UndefOr[Double] = js.undefined
+  ): PlotBbParamsOptions = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (standardDeviation != null) __obj.updateDynamic("standardDeviation")(standardDeviation.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(period)) __obj.updateDynamic("period")(period.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(standardDeviation)) __obj.updateDynamic("standardDeviation")(standardDeviation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotBbParamsOptions]
   }
 }

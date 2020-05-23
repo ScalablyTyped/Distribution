@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.ReportViewer
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object PrintOptions extends js.Object {
   ///Specifies the None property in printOptions.
   @js.native
   sealed trait None extends PrintOptions
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PrintOptions with Double] = js.native
-  /* 0 */ @js.native
-  object Default extends TopLevel[Default with Double]
-  
-  /* 1 */ @js.native
-  object NewTab extends TopLevel[NewTab with Double]
-  
-  /* 2 */ @js.native
-  object None extends TopLevel[None with Double]
   
 }
 

@@ -22,9 +22,13 @@ trait RenewDomainRequest extends js.Object {
 
 object RenewDomainRequest {
   @scala.inline
-  def apply(CurrentExpiryYear: CurrentExpiryYear, DomainName: DomainName, DurationInYears: Int | Double = null): RenewDomainRequest = {
+  def apply(
+    CurrentExpiryYear: CurrentExpiryYear,
+    DomainName: DomainName,
+    DurationInYears: js.UndefOr[DurationInYears] = js.undefined
+  ): RenewDomainRequest = {
     val __obj = js.Dynamic.literal(CurrentExpiryYear = CurrentExpiryYear.asInstanceOf[js.Any], DomainName = DomainName.asInstanceOf[js.Any])
-    if (DurationInYears != null) __obj.updateDynamic("DurationInYears")(DurationInYears.asInstanceOf[js.Any])
+    if (!js.isUndefined(DurationInYears)) __obj.updateDynamic("DurationInYears")(DurationInYears.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenewDomainRequest]
   }
 }

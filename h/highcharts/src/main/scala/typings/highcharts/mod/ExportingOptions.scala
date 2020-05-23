@@ -204,42 +204,42 @@ object ExportingOptions {
     formAttributes: HTMLAttributes = null,
     libURL: String = null,
     menuItemDefinitions: Dictionary[ExportingMenuObject] = null,
-    printMaxWidth: Int | Double = null,
-    scale: Int | Double = null,
+    printMaxWidth: js.UndefOr[Double] = js.undefined,
+    scale: js.UndefOr[Double] = js.undefined,
     showTable: js.UndefOr[Boolean] = js.undefined,
-    sourceHeight: Int | Double = null,
-    sourceWidth: Int | Double = null,
+    sourceHeight: js.UndefOr[Double] = js.undefined,
+    sourceWidth: js.UndefOr[Double] = js.undefined,
     tableCaption: Boolean | String = null,
     `type`: ExportingMimeTypeValue = null,
     url: String = null,
     useMultiLevelHeaders: js.UndefOr[Boolean] = js.undefined,
     useRowspanHeaders: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): ExportingOptions = {
     val __obj = js.Dynamic.literal()
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowHTML)) __obj.updateDynamic("allowHTML")(allowHTML.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowHTML)) __obj.updateDynamic("allowHTML")(allowHTML.get.asInstanceOf[js.Any])
     if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
     if (chartOptions != null) __obj.updateDynamic("chartOptions")(chartOptions.asInstanceOf[js.Any])
     if (csv != null) __obj.updateDynamic("csv")(csv.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction2(error))
-    if (!js.isUndefined(fallbackToExportServer)) __obj.updateDynamic("fallbackToExportServer")(fallbackToExportServer.asInstanceOf[js.Any])
+    if (!js.isUndefined(fallbackToExportServer)) __obj.updateDynamic("fallbackToExportServer")(fallbackToExportServer.get.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (formAttributes != null) __obj.updateDynamic("formAttributes")(formAttributes.asInstanceOf[js.Any])
     if (libURL != null) __obj.updateDynamic("libURL")(libURL.asInstanceOf[js.Any])
     if (menuItemDefinitions != null) __obj.updateDynamic("menuItemDefinitions")(menuItemDefinitions.asInstanceOf[js.Any])
-    if (printMaxWidth != null) __obj.updateDynamic("printMaxWidth")(printMaxWidth.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTable)) __obj.updateDynamic("showTable")(showTable.asInstanceOf[js.Any])
-    if (sourceHeight != null) __obj.updateDynamic("sourceHeight")(sourceHeight.asInstanceOf[js.Any])
-    if (sourceWidth != null) __obj.updateDynamic("sourceWidth")(sourceWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(printMaxWidth)) __obj.updateDynamic("printMaxWidth")(printMaxWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTable)) __obj.updateDynamic("showTable")(showTable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceHeight)) __obj.updateDynamic("sourceHeight")(sourceHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceWidth)) __obj.updateDynamic("sourceWidth")(sourceWidth.get.asInstanceOf[js.Any])
     if (tableCaption != null) __obj.updateDynamic("tableCaption")(tableCaption.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMultiLevelHeaders)) __obj.updateDynamic("useMultiLevelHeaders")(useMultiLevelHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(useRowspanHeaders)) __obj.updateDynamic("useRowspanHeaders")(useRowspanHeaders.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(useMultiLevelHeaders)) __obj.updateDynamic("useMultiLevelHeaders")(useMultiLevelHeaders.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useRowspanHeaders)) __obj.updateDynamic("useRowspanHeaders")(useRowspanHeaders.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportingOptions]
   }
 }

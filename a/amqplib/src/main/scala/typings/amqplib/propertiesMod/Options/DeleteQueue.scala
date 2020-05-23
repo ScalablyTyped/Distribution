@@ -13,8 +13,8 @@ object DeleteQueue {
   @scala.inline
   def apply(ifEmpty: js.UndefOr[Boolean] = js.undefined, ifUnused: js.UndefOr[Boolean] = js.undefined): DeleteQueue = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ifEmpty)) __obj.updateDynamic("ifEmpty")(ifEmpty.asInstanceOf[js.Any])
-    if (!js.isUndefined(ifUnused)) __obj.updateDynamic("ifUnused")(ifUnused.asInstanceOf[js.Any])
+    if (!js.isUndefined(ifEmpty)) __obj.updateDynamic("ifEmpty")(ifEmpty.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ifUnused)) __obj.updateDynamic("ifUnused")(ifUnused.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteQueue]
   }
 }

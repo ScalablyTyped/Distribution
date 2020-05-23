@@ -10,8 +10,8 @@ package object mod {
     - java.lang.String
     - js.Array[java.lang.String]
     - typings.bemCn.mod.BemBlock
-    - typings.bemCn.AnonToString
-    - `js.undefined`
+    - typings.bemCn.anon.ToString
+    - js.UndefOr[scala.Nothing]
   */
   type BemMix = js.UndefOr[typings.bemCn.mod._BemMix | js.Array[java.lang.String] | java.lang.String]
   type BemMods = org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Boolean | js.Any]

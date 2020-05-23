@@ -1,6 +1,6 @@
 package typings.css.mod
 
-import typings.css.AnonContent
+import typings.css.anon.Content
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ object FontFace {
   def apply(
     declarations: js.Array[Declaration | Comment] = null,
     parent: Node = null,
-    position: AnonContent = null,
+    position: Content = null,
     `type`: String = null
   ): FontFace = {
     val __obj = js.Dynamic.literal()

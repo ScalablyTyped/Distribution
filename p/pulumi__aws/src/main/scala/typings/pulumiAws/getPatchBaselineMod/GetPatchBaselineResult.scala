@@ -36,7 +36,7 @@ object GetPatchBaselineResult {
     operatingSystem: String = null
   ): GetPatchBaselineResult = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultBaseline)) __obj.updateDynamic("defaultBaseline")(defaultBaseline.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultBaseline)) __obj.updateDynamic("defaultBaseline")(defaultBaseline.get.asInstanceOf[js.Any])
     if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
     if (operatingSystem != null) __obj.updateDynamic("operatingSystem")(operatingSystem.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPatchBaselineResult]

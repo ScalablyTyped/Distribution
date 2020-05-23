@@ -133,7 +133,7 @@ package object interfaceMod {
   type CustomizeComponent = typings.rcTable.interfaceMod.Component[js.Any]
   type CustomizeScrollBody[RecordType] = js.Function2[
     /* data */ js.Array[RecordType], 
-    /* info */ typings.rcTable.AnonOnScroll, 
+    /* info */ typings.rcTable.anon.OnScroll, 
     typings.react.mod.ReactNode
   ]
   type DataIndex = java.lang.String | scala.Double | (js.Array[java.lang.String | scala.Double])

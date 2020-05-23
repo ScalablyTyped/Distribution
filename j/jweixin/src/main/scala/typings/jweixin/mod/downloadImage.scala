@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object downloadImage extends js.Object {
   /**
-  	 * 下载图片接口
-  	 */
+    * 下载图片接口
+    */
   def apply(params: IdownloadImage): Unit = js.native
 }
 

@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("InfoPath.Application")
 @js.native
-class Application protected () extends js.Object {
+trait Application extends js.Object {
   val ActiveWindow: Window = js.native
   @JSName("InfoPath.Application_typekey")
   var InfoPathDotApplication_typekey: Application = js.native

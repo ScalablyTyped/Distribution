@@ -25,30 +25,30 @@ trait MsiOptions
 object MsiOptions {
   @scala.inline
   def apply(
-    artifactName: String = null,
+    artifactName: js.UndefOr[Null | String] = js.undefined,
     createDesktopShortcut: Boolean | always = null,
     createStartMenuShortcut: js.UndefOr[Boolean] = js.undefined,
     menuCategory: Boolean | String = null,
     oneClick: js.UndefOr[Boolean] = js.undefined,
     perMachine: js.UndefOr[Boolean] = js.undefined,
-    publish: Publish = null,
+    publish: js.UndefOr[Null | Publish] = js.undefined,
     runAfterFinish: js.UndefOr[Boolean] = js.undefined,
-    shortcutName: String = null,
-    upgradeCode: String = null,
+    shortcutName: js.UndefOr[Null | String] = js.undefined,
+    upgradeCode: js.UndefOr[Null | String] = js.undefined,
     warningsAsErrors: js.UndefOr[Boolean] = js.undefined
   ): MsiOptions = {
     val __obj = js.Dynamic.literal()
-    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
+    if (!js.isUndefined(artifactName)) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
     if (createDesktopShortcut != null) __obj.updateDynamic("createDesktopShortcut")(createDesktopShortcut.asInstanceOf[js.Any])
-    if (!js.isUndefined(createStartMenuShortcut)) __obj.updateDynamic("createStartMenuShortcut")(createStartMenuShortcut.asInstanceOf[js.Any])
+    if (!js.isUndefined(createStartMenuShortcut)) __obj.updateDynamic("createStartMenuShortcut")(createStartMenuShortcut.get.asInstanceOf[js.Any])
     if (menuCategory != null) __obj.updateDynamic("menuCategory")(menuCategory.asInstanceOf[js.Any])
-    if (!js.isUndefined(oneClick)) __obj.updateDynamic("oneClick")(oneClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(perMachine)) __obj.updateDynamic("perMachine")(perMachine.asInstanceOf[js.Any])
-    if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
-    if (!js.isUndefined(runAfterFinish)) __obj.updateDynamic("runAfterFinish")(runAfterFinish.asInstanceOf[js.Any])
-    if (shortcutName != null) __obj.updateDynamic("shortcutName")(shortcutName.asInstanceOf[js.Any])
-    if (upgradeCode != null) __obj.updateDynamic("upgradeCode")(upgradeCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(warningsAsErrors)) __obj.updateDynamic("warningsAsErrors")(warningsAsErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(oneClick)) __obj.updateDynamic("oneClick")(oneClick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(perMachine)) __obj.updateDynamic("perMachine")(perMachine.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(publish)) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
+    if (!js.isUndefined(runAfterFinish)) __obj.updateDynamic("runAfterFinish")(runAfterFinish.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shortcutName)) __obj.updateDynamic("shortcutName")(shortcutName.asInstanceOf[js.Any])
+    if (!js.isUndefined(upgradeCode)) __obj.updateDynamic("upgradeCode")(upgradeCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(warningsAsErrors)) __obj.updateDynamic("warningsAsErrors")(warningsAsErrors.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MsiOptions]
   }
 }

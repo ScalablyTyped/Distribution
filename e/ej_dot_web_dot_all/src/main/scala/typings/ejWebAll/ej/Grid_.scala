@@ -1,20 +1,14 @@
 package typings.ejWebAll.ej
 
 import typings.ejWebAll.JQuery
-import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.HTMLTableElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.Grid")
 @js.native
-class Grid_ protected () extends Widget_ {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.Grid.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.Grid.Model) = this()
+trait Grid_ extends Widget_ {
   var defaults: typings.ejWebAll.ej.Grid.Model = js.native
   @JSName("model")
   var model_Grid_ : typings.ejWebAll.ej.Grid.Model = js.native

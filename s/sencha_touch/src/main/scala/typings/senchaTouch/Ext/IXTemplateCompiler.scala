@@ -6,73 +6,73 @@ import scala.scalajs.js.annotation._
 
 trait IXTemplateCompiler extends IXTemplateParser {
   /** [Method] This method is called to process lt tpl case action gt
-  		* @param action Object
-  		*/
+    * @param action Object
+    */
   @JSName("doCase")
   var doCase_IXTemplateCompiler: js.UndefOr[js.Function1[/* action */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] This method is called to process lt tpl elseif action gt
-  		* @param action Object
-  		* @param actions Object
-  		*/
+    * @param action Object
+    * @param actions Object
+    */
   @JSName("doElseIf")
   var doElseIf_IXTemplateCompiler: js.UndefOr[
     js.Function2[/* action */ js.UndefOr[js.Any], /* actions */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Method] This method is called to process lt tpl gt
-  		* @param type Object
-  		* @param actions Object
-  		*/
+    * @param type Object
+    * @param actions Object
+    */
   @JSName("doEnd")
   var doEnd_IXTemplateCompiler: js.UndefOr[
     js.Function2[/* type */ js.UndefOr[js.Any], /* actions */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Method] This method is called to process text
-  		* @param text Object
-  		*/
+    * @param text Object
+    */
   @JSName("doEval")
   var doEval_IXTemplateCompiler: js.UndefOr[js.Function1[/* text */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] This method is called to process lt tpl exec action gt
-  		* @param action Object
-  		* @param actions Object
-  		*/
+    * @param action Object
+    * @param actions Object
+    */
   @JSName("doExec")
   var doExec_IXTemplateCompiler: js.UndefOr[
     js.Function2[/* action */ js.UndefOr[js.Any], /* actions */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Method] This method is called to process expressions like  expr
-  		* @param expr Object
-  		*/
+    * @param expr Object
+    */
   @JSName("doExpr")
   var doExpr_IXTemplateCompiler: js.UndefOr[js.Function1[/* expr */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] This method is called to process lt tpl for action gt
-  		* @param action Object
-  		* @param actions Object
-  		*/
+    * @param action Object
+    * @param actions Object
+    */
   @JSName("doFor")
   var doFor_IXTemplateCompiler: js.UndefOr[
     js.Function2[/* action */ js.UndefOr[js.Any], /* actions */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Method] This method is called to process lt tpl if action gt
-  		* @param action Object
-  		* @param actions Object
-  		*/
+    * @param action Object
+    * @param actions Object
+    */
   @JSName("doIf")
   var doIf_IXTemplateCompiler: js.UndefOr[
     js.Function2[/* action */ js.UndefOr[js.Any], /* actions */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Method] This method is called to process lt tpl switch action gt
-  		* @param action Object
-  		*/
+    * @param action Object
+    */
   @JSName("doSwitch")
   var doSwitch_IXTemplateCompiler: js.UndefOr[js.Function1[/* action */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] This method is called to process simple tags like tag
-  		* @param tag Object
-  		*/
+    * @param tag Object
+    */
   @JSName("doTag")
   var doTag_IXTemplateCompiler: js.UndefOr[js.Function1[/* tag */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] This method is called to process a piece of raw text from the tpl
-  		* @param text Object
-  		*/
+    * @param text Object
+    */
   @JSName("doText")
   var doText_IXTemplateCompiler: js.UndefOr[js.Function1[/* text */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
@@ -105,7 +105,7 @@ object IXTemplateCompiler {
     getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    level: Int | Double = null,
+    level: js.UndefOr[Double] = js.undefined,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
     self: IClass = null,
@@ -139,11 +139,11 @@ object IXTemplateCompiler {
     if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IXTemplateCompiler]

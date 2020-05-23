@@ -1,7 +1,6 @@
 package typings.vorpal.mod
 
-import typings.vorpal.AnonData
-import typings.vorpal.AnonString
+import typings.vorpal.anon.Data
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +17,7 @@ class Command () extends js.Object {
   def alias(command: String): this.type = js.native
   def allowUnknownOptions(): this.type = js.native
   def autocomplete(values: js.Array[String]): this.type = js.native
-  def autocomplete(values: AnonData): this.type = js.native
+  def autocomplete(values: Data): this.type = js.native
   def cancel(cancel: Cancel): this.type = js.native
   def help(value: js.Function1[/* args */ Args, Unit]): this.type = js.native
   def hidden(): this.type = js.native
@@ -26,7 +25,7 @@ class Command () extends js.Object {
   def option(option: String, description: String, autocomplete: js.Array[String]): this.type = js.native
   def parse(value: js.Function2[/* command */ String, /* args */ Args, String]): this.type = js.native
   def remove(): this.type = js.native
-  def types(types: AnonString): this.type = js.native
+  def types(types: typings.vorpal.anon.String): this.type = js.native
   def validate(value: js.Function1[/* args */ Args, Boolean | String]): this.type = js.native
 }
 

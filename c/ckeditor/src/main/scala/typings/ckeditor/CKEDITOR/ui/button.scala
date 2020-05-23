@@ -1,26 +1,28 @@
 package typings.ckeditor.CKEDITOR.ui
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.ckeditor.CKEDITOR.editor
 import typings.ckeditor.CKEDITOR.feature
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CKEDITOR.ui.button")
-@js.native
-class button protected () extends js.Object {
-  def this(definition: StringDictionary[js.Any]) = this()
-  def getState(): Double = js.native
-  def render(editor: editor, output: js.Array[String]): Unit = js.native
-  def setState(state: Double): Unit = js.native
-  def toFeature(editor: editor): feature = js.native
+trait button extends js.Object {
+  def getState(): Double
+  def render(editor: editor, output: js.Array[String]): Unit
+  def setState(state: Double): Unit
+  def toFeature(editor: editor): feature
 }
 
-/* static members */
-@JSGlobal("CKEDITOR.ui.button")
-@js.native
-object button extends js.Object {
-  val handler: handlerDefinition[button] = js.native
+object button {
+  @scala.inline
+  def apply(
+    getState: () => Double,
+    render: (editor, js.Array[String]) => Unit,
+    setState: Double => Unit,
+    toFeature: editor => feature
+  ): button = {
+    val __obj = js.Dynamic.literal(getState = js.Any.fromFunction0(getState), render = js.Any.fromFunction2(render), setState = js.Any.fromFunction1(setState), toFeature = js.Any.fromFunction1(toFeature))
+    __obj.asInstanceOf[button]
+  }
 }
 

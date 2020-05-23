@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * 图片图层
   */
-@JSGlobal("AMap.ImageLayer")
 @js.native
-class ImageLayer () extends MediaLayer[HTMLImageElement] {
+trait ImageLayer extends MediaLayer[HTMLImageElement] {
   /**
     * 返回Image的Url
     */

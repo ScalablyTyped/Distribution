@@ -28,7 +28,7 @@ object HTTPTransportOptions {
     hostname: String = null,
     method: POST | GET = null,
     path: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
   ): HTTPTransportOptions = {
     val __obj = js.Dynamic.literal()
@@ -38,8 +38,8 @@ object HTTPTransportOptions {
     if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTTPTransportOptions]
   }
 }

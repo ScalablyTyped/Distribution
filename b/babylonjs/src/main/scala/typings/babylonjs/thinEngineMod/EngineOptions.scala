@@ -66,35 +66,35 @@ object EngineOptions {
     doNotHandleContextLost: js.UndefOr[Boolean] = js.undefined,
     doNotHandleTouchAction: js.UndefOr[Boolean] = js.undefined,
     failIfMajorPerformanceCaveat: js.UndefOr[Boolean] = js.undefined,
-    limitDeviceRatio: Int | Double = null,
-    lockstepMaxSteps: Int | Double = null,
+    limitDeviceRatio: js.UndefOr[Double] = js.undefined,
+    lockstepMaxSteps: js.UndefOr[Double] = js.undefined,
     powerPreference: WebGLPowerPreference = null,
     premultipliedAlpha: js.UndefOr[Boolean] = js.undefined,
     preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined,
     stencil: js.UndefOr[Boolean] = js.undefined,
-    timeStep: Int | Double = null,
+    timeStep: js.UndefOr[Double] = js.undefined,
     useHighPrecisionFloats: js.UndefOr[Boolean] = js.undefined
   ): EngineOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    if (!js.isUndefined(antialias)) __obj.updateDynamic("antialias")(antialias.asInstanceOf[js.Any])
-    if (!js.isUndefined(audioEngine)) __obj.updateDynamic("audioEngine")(audioEngine.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoEnableWebVR)) __obj.updateDynamic("autoEnableWebVR")(autoEnableWebVR.asInstanceOf[js.Any])
-    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    if (!js.isUndefined(desynchronized)) __obj.updateDynamic("desynchronized")(desynchronized.asInstanceOf[js.Any])
-    if (!js.isUndefined(deterministicLockstep)) __obj.updateDynamic("deterministicLockstep")(deterministicLockstep.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableWebGL2Support)) __obj.updateDynamic("disableWebGL2Support")(disableWebGL2Support.asInstanceOf[js.Any])
-    if (!js.isUndefined(doNotHandleContextLost)) __obj.updateDynamic("doNotHandleContextLost")(doNotHandleContextLost.asInstanceOf[js.Any])
-    if (!js.isUndefined(doNotHandleTouchAction)) __obj.updateDynamic("doNotHandleTouchAction")(doNotHandleTouchAction.asInstanceOf[js.Any])
-    if (!js.isUndefined(failIfMajorPerformanceCaveat)) __obj.updateDynamic("failIfMajorPerformanceCaveat")(failIfMajorPerformanceCaveat.asInstanceOf[js.Any])
-    if (limitDeviceRatio != null) __obj.updateDynamic("limitDeviceRatio")(limitDeviceRatio.asInstanceOf[js.Any])
-    if (lockstepMaxSteps != null) __obj.updateDynamic("lockstepMaxSteps")(lockstepMaxSteps.asInstanceOf[js.Any])
+    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(antialias)) __obj.updateDynamic("antialias")(antialias.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(audioEngine)) __obj.updateDynamic("audioEngine")(audioEngine.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoEnableWebVR)) __obj.updateDynamic("autoEnableWebVR")(autoEnableWebVR.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(desynchronized)) __obj.updateDynamic("desynchronized")(desynchronized.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deterministicLockstep)) __obj.updateDynamic("deterministicLockstep")(deterministicLockstep.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableWebGL2Support)) __obj.updateDynamic("disableWebGL2Support")(disableWebGL2Support.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(doNotHandleContextLost)) __obj.updateDynamic("doNotHandleContextLost")(doNotHandleContextLost.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(doNotHandleTouchAction)) __obj.updateDynamic("doNotHandleTouchAction")(doNotHandleTouchAction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(failIfMajorPerformanceCaveat)) __obj.updateDynamic("failIfMajorPerformanceCaveat")(failIfMajorPerformanceCaveat.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limitDeviceRatio)) __obj.updateDynamic("limitDeviceRatio")(limitDeviceRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockstepMaxSteps)) __obj.updateDynamic("lockstepMaxSteps")(lockstepMaxSteps.get.asInstanceOf[js.Any])
     if (powerPreference != null) __obj.updateDynamic("powerPreference")(powerPreference.asInstanceOf[js.Any])
-    if (!js.isUndefined(premultipliedAlpha)) __obj.updateDynamic("premultipliedAlpha")(premultipliedAlpha.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer.asInstanceOf[js.Any])
-    if (!js.isUndefined(stencil)) __obj.updateDynamic("stencil")(stencil.asInstanceOf[js.Any])
-    if (timeStep != null) __obj.updateDynamic("timeStep")(timeStep.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHighPrecisionFloats)) __obj.updateDynamic("useHighPrecisionFloats")(useHighPrecisionFloats.asInstanceOf[js.Any])
+    if (!js.isUndefined(premultipliedAlpha)) __obj.updateDynamic("premultipliedAlpha")(premultipliedAlpha.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stencil)) __obj.updateDynamic("stencil")(stencil.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeStep)) __obj.updateDynamic("timeStep")(timeStep.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useHighPrecisionFloats)) __obj.updateDynamic("useHighPrecisionFloats")(useHighPrecisionFloats.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EngineOptions]
   }
 }

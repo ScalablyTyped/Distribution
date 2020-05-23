@@ -19,8 +19,8 @@ object SliderCommonProps {
   ): SliderCommonProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(isVertical)) __obj.updateDynamic("isVertical")(isVertical.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isVertical)) __obj.updateDynamic("isVertical")(isVertical.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliderCommonProps]
   }
 }

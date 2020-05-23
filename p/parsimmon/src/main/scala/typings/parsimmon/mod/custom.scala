@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object custom extends js.Object {
   /**
-  	 * allows to add custom primitive parsers.
-  	 */
+    * allows to add custom primitive parsers.
+    */
   def apply[U](
     parsingFunction: js.Function2[
       /* success */ SuccessFunctionType[U], 

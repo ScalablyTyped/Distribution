@@ -45,11 +45,8 @@ object utilsEventsMod extends js.Object {
     def listenToOnce(obj: EventDispatcher, name: String, callback: EventCallback): js.Any = js.native
     def listenToOnce(obj: EventDispatcher, name: String, callback: EventCallback, priority: Double): js.Any = js.native
     def off(): js.Any = js.native
-    def off(eventMap: js.UndefOr[scala.Nothing], context: js.Any): js.Any = js.native
     def off(eventMap: EventMap): js.Any = js.native
     def off(eventMap: EventMap, context: js.Any): js.Any = js.native
-    def off(name: js.UndefOr[scala.Nothing], callback: EventCallback): js.Any = js.native
-    def off(name: js.UndefOr[scala.Nothing], callback: EventCallback, context: js.Any): js.Any = js.native
     def off(name: String): js.Any = js.native
     def off(name: String, callback: EventCallback): js.Any = js.native
     def off(name: String, callback: EventCallback, context: js.Any): js.Any = js.native

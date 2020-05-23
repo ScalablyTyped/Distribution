@@ -2,7 +2,7 @@ package typings.uiGrid.mod
 
 import typings.angular.mod.IScope
 import typings.std.FileList
-import typings.uiGrid.AnonGroupPriority
+import typings.uiGrid.anon.GroupPriority
 import typings.uiGrid.mod.edit.IEditDropdown
 import typings.uiGrid.mod.treeBase.IGridTreeBaseAggregationObject
 import scala.scalajs.js
@@ -266,16 +266,16 @@ object IColumnDefOf {
     footerCellClass: String | IHeaderFooterCellClassGetter[TEntity] = null,
     footerCellFilter: String = null,
     footerCellTemplate: String = null,
-    grouping: AnonGroupPriority = null,
+    grouping: GroupPriority = null,
     groupingShowAggregationMenu: js.UndefOr[Boolean] = js.undefined,
     groupingShowGroupingMenu: js.UndefOr[Boolean] = js.undefined,
     headerCellClass: String | IHeaderFooterCellClassGetter[TEntity] = null,
     headerCellFilter: String = null,
     headerCellTemplate: String = null,
     headerTooltip: Boolean | String | IHeaderTooltipGetter[TEntity] = null,
-    maxWidth: Int | Double = null,
+    maxWidth: js.UndefOr[Double] = js.undefined,
     menuItems: js.Array[IMenuItem] = null,
-    minWidth: Int | Double = null,
+    minWidth: js.UndefOr[Double] = js.undefined,
     name: String = null,
     pinnedLeft: js.UndefOr[Boolean] = js.undefined,
     pinnedRight: js.UndefOr[Boolean] = js.undefined,
@@ -292,9 +292,9 @@ object IColumnDefOf {
     width: Double | String = null
   ): IColumnDefOf[TEntity] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(aggregationHideLabel)) __obj.updateDynamic("aggregationHideLabel")(aggregationHideLabel.asInstanceOf[js.Any])
+    if (!js.isUndefined(aggregationHideLabel)) __obj.updateDynamic("aggregationHideLabel")(aggregationHideLabel.get.asInstanceOf[js.Any])
     if (aggregationType != null) __obj.updateDynamic("aggregationType")(aggregationType.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowCellFocus)) __obj.updateDynamic("allowCellFocus")(allowCellFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCellFocus)) __obj.updateDynamic("allowCellFocus")(allowCellFocus.get.asInstanceOf[js.Any])
     if (cellClass != null) __obj.updateDynamic("cellClass")(cellClass.asInstanceOf[js.Any])
     if (cellEditableCondition != null) __obj.updateDynamic("cellEditableCondition")(cellEditableCondition.asInstanceOf[js.Any])
     if (cellFilter != null) __obj.updateDynamic("cellFilter")(cellFilter.asInstanceOf[js.Any])
@@ -312,50 +312,50 @@ object IColumnDefOf {
     if (editFileChooserCallback != null) __obj.updateDynamic("editFileChooserCallback")(js.Any.fromFunction3(editFileChooserCallback))
     if (editModelField != null) __obj.updateDynamic("editModelField")(editModelField.asInstanceOf[js.Any])
     if (editableCellTemplate != null) __obj.updateDynamic("editableCellTemplate")(editableCellTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCellEdit)) __obj.updateDynamic("enableCellEdit")(enableCellEdit.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCellEditOnFocus)) __obj.updateDynamic("enableCellEditOnFocus")(enableCellEditOnFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableColumnMenu)) __obj.updateDynamic("enableColumnMenu")(enableColumnMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableColumnMenus)) __obj.updateDynamic("enableColumnMenus")(enableColumnMenus.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableColumnMoving)) __obj.updateDynamic("enableColumnMoving")(enableColumnMoving.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableColumnResizing)) __obj.updateDynamic("enableColumnResizing")(enableColumnResizing.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableFiltering)) __obj.updateDynamic("enableFiltering")(enableFiltering.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGrouping)) __obj.updateDynamic("enableGrouping")(enableGrouping.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableHiding)) __obj.updateDynamic("enableHiding")(enableHiding.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePinning)) __obj.updateDynamic("enablePinning")(enablePinning.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSorting)) __obj.updateDynamic("enableSorting")(enableSorting.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCellEdit)) __obj.updateDynamic("enableCellEdit")(enableCellEdit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCellEditOnFocus)) __obj.updateDynamic("enableCellEditOnFocus")(enableCellEditOnFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableColumnMenu)) __obj.updateDynamic("enableColumnMenu")(enableColumnMenu.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableColumnMenus)) __obj.updateDynamic("enableColumnMenus")(enableColumnMenus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableColumnMoving)) __obj.updateDynamic("enableColumnMoving")(enableColumnMoving.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableColumnResizing)) __obj.updateDynamic("enableColumnResizing")(enableColumnResizing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableFiltering)) __obj.updateDynamic("enableFiltering")(enableFiltering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGrouping)) __obj.updateDynamic("enableGrouping")(enableGrouping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableHiding)) __obj.updateDynamic("enableHiding")(enableHiding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePinning)) __obj.updateDynamic("enablePinning")(enablePinning.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSorting)) __obj.updateDynamic("enableSorting")(enableSorting.get.asInstanceOf[js.Any])
     if (exporterPdfAlign != null) __obj.updateDynamic("exporterPdfAlign")(exporterPdfAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(exporterSuppressExport)) __obj.updateDynamic("exporterSuppressExport")(exporterSuppressExport.asInstanceOf[js.Any])
+    if (!js.isUndefined(exporterSuppressExport)) __obj.updateDynamic("exporterSuppressExport")(exporterSuppressExport.get.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(filterCellFiltered)) __obj.updateDynamic("filterCellFiltered")(filterCellFiltered.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterCellFiltered)) __obj.updateDynamic("filterCellFiltered")(filterCellFiltered.get.asInstanceOf[js.Any])
     if (filterHeaderTemplate != null) __obj.updateDynamic("filterHeaderTemplate")(filterHeaderTemplate.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     if (footerCellClass != null) __obj.updateDynamic("footerCellClass")(footerCellClass.asInstanceOf[js.Any])
     if (footerCellFilter != null) __obj.updateDynamic("footerCellFilter")(footerCellFilter.asInstanceOf[js.Any])
     if (footerCellTemplate != null) __obj.updateDynamic("footerCellTemplate")(footerCellTemplate.asInstanceOf[js.Any])
     if (grouping != null) __obj.updateDynamic("grouping")(grouping.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupingShowAggregationMenu)) __obj.updateDynamic("groupingShowAggregationMenu")(groupingShowAggregationMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupingShowGroupingMenu)) __obj.updateDynamic("groupingShowGroupingMenu")(groupingShowGroupingMenu.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupingShowAggregationMenu)) __obj.updateDynamic("groupingShowAggregationMenu")(groupingShowAggregationMenu.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupingShowGroupingMenu)) __obj.updateDynamic("groupingShowGroupingMenu")(groupingShowGroupingMenu.get.asInstanceOf[js.Any])
     if (headerCellClass != null) __obj.updateDynamic("headerCellClass")(headerCellClass.asInstanceOf[js.Any])
     if (headerCellFilter != null) __obj.updateDynamic("headerCellFilter")(headerCellFilter.asInstanceOf[js.Any])
     if (headerCellTemplate != null) __obj.updateDynamic("headerCellTemplate")(headerCellTemplate.asInstanceOf[js.Any])
     if (headerTooltip != null) __obj.updateDynamic("headerTooltip")(headerTooltip.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
     if (menuItems != null) __obj.updateDynamic("menuItems")(menuItems.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(pinnedLeft)) __obj.updateDynamic("pinnedLeft")(pinnedLeft.asInstanceOf[js.Any])
-    if (!js.isUndefined(pinnedRight)) __obj.updateDynamic("pinnedRight")(pinnedRight.asInstanceOf[js.Any])
+    if (!js.isUndefined(pinnedLeft)) __obj.updateDynamic("pinnedLeft")(pinnedLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pinnedRight)) __obj.updateDynamic("pinnedRight")(pinnedRight.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortCellFiltered)) __obj.updateDynamic("sortCellFiltered")(sortCellFiltered.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortCellFiltered)) __obj.updateDynamic("sortCellFiltered")(sortCellFiltered.get.asInstanceOf[js.Any])
     if (sortDirectionCycle != null) __obj.updateDynamic("sortDirectionCycle")(sortDirectionCycle.asInstanceOf[js.Any])
     if (sortingAlgorithm != null) __obj.updateDynamic("sortingAlgorithm")(js.Any.fromFunction5(sortingAlgorithm))
-    if (!js.isUndefined(suppressRemoveSort)) __obj.updateDynamic("suppressRemoveSort")(suppressRemoveSort.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressRemoveSort)) __obj.updateDynamic("suppressRemoveSort")(suppressRemoveSort.get.asInstanceOf[js.Any])
     if (treeAggregationLabel != null) __obj.updateDynamic("treeAggregationLabel")(treeAggregationLabel.asInstanceOf[js.Any])
     if (treeAggregationType != null) __obj.updateDynamic("treeAggregationType")(treeAggregationType.asInstanceOf[js.Any])
-    if (!js.isUndefined(treeAggregationUpdateEntity)) __obj.updateDynamic("treeAggregationUpdateEntity")(treeAggregationUpdateEntity.asInstanceOf[js.Any])
+    if (!js.isUndefined(treeAggregationUpdateEntity)) __obj.updateDynamic("treeAggregationUpdateEntity")(treeAggregationUpdateEntity.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColumnDefOf[TEntity]]
   }

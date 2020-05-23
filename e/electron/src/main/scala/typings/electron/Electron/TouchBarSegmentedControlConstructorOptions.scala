@@ -48,13 +48,13 @@ object TouchBarSegmentedControlConstructorOptions {
     change: (/* selectedIndex */ Double, /* isSelected */ Boolean) => Unit = null,
     mode: single | multiple | buttons = null,
     segmentStyle: automatic | rounded | `textured-rounded` | `round-rect` | `textured-square` | capsule | `small-square` | separated = null,
-    selectedIndex: Int | Double = null
+    selectedIndex: js.UndefOr[Double] = js.undefined
   ): TouchBarSegmentedControlConstructorOptions = {
     val __obj = js.Dynamic.literal(segments = segments.asInstanceOf[js.Any])
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (segmentStyle != null) __obj.updateDynamic("segmentStyle")(segmentStyle.asInstanceOf[js.Any])
-    if (selectedIndex != null) __obj.updateDynamic("selectedIndex")(selectedIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedIndex)) __obj.updateDynamic("selectedIndex")(selectedIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchBarSegmentedControlConstructorOptions]
   }
 }

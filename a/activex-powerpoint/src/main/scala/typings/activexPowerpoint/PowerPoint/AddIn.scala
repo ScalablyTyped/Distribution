@@ -5,20 +5,39 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.AddIn")
-@js.native
-class AddIn protected () extends js.Object {
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
-  var AutoLoad: MsoTriState = js.native
-  var DisplayAlerts: MsoTriState = js.native
-  val FullName: String = js.native
-  var Loaded: MsoTriState = js.native
-  val Name: String = js.native
-  val Parent: js.Any = js.native
-  val Path: String = js.native
+trait AddIn extends js.Object {
+  val Application: typings.activexPowerpoint.PowerPoint.Application
+  var AutoLoad: MsoTriState
+  var DisplayAlerts: MsoTriState
+  val FullName: String
+  var Loaded: MsoTriState
+  val Name: String
+  val Parent: js.Any
+  val Path: String
   @JSName("PowerPoint.AddIn_typekey")
-  var PowerPointDotAddIn_typekey: AddIn = js.native
-  var Registered: MsoTriState = js.native
-  val RegisteredInHKLM: MsoTriState = js.native
+  var PowerPointDotAddIn_typekey: AddIn
+  var Registered: MsoTriState
+  val RegisteredInHKLM: MsoTriState
+}
+
+object AddIn {
+  @scala.inline
+  def apply(
+    Application: Application,
+    AutoLoad: MsoTriState,
+    DisplayAlerts: MsoTriState,
+    FullName: String,
+    Loaded: MsoTriState,
+    Name: String,
+    Parent: js.Any,
+    Path: String,
+    PowerPointDotAddIn_typekey: AddIn,
+    Registered: MsoTriState,
+    RegisteredInHKLM: MsoTriState
+  ): AddIn = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], AutoLoad = AutoLoad.asInstanceOf[js.Any], DisplayAlerts = DisplayAlerts.asInstanceOf[js.Any], FullName = FullName.asInstanceOf[js.Any], Loaded = Loaded.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Path = Path.asInstanceOf[js.Any], Registered = Registered.asInstanceOf[js.Any], RegisteredInHKLM = RegisteredInHKLM.asInstanceOf[js.Any])
+    __obj.updateDynamic("PowerPoint.AddIn_typekey")(PowerPointDotAddIn_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AddIn]
+  }
 }
 

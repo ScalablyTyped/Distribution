@@ -1,6 +1,6 @@
 package typings.materialTabs.tabBarAdapterMod
 
-import typings.materialTabs.AnonActiveTabIndex
+import typings.materialTabs.anon.ActiveTabIndex
 import typings.materialTabs.materialTabsBooleans.`true`
 import typings.std.EventListener
 import scala.scalajs.js
@@ -19,7 +19,7 @@ trait MDCTabBarAdapter extends js.Object {
   def isDefaultPreventedOnClickForTabAtIndex(index: Double): Boolean
   def isTabActiveAtIndex(index: Double): Boolean
   def measureTabAtIndex(index: Double): Unit
-  def notifyChange(evtData: AnonActiveTabIndex): Unit
+  def notifyChange(evtData: ActiveTabIndex): Unit
   def registerResizeHandler(handler: EventListener): Unit
   def removeClass(className: String): Unit
   def setPreventDefaultOnClickForTabAtIndex(index: Double, preventDefaultOnClick: Boolean): Unit
@@ -43,7 +43,7 @@ object MDCTabBarAdapter {
     isDefaultPreventedOnClickForTabAtIndex: Double => Boolean,
     isTabActiveAtIndex: Double => Boolean,
     measureTabAtIndex: Double => Unit,
-    notifyChange: AnonActiveTabIndex => Unit,
+    notifyChange: ActiveTabIndex => Unit,
     registerResizeHandler: EventListener => Unit,
     removeClass: String => Unit,
     setPreventDefaultOnClickForTabAtIndex: (Double, Boolean) => Unit,

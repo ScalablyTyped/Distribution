@@ -1,5 +1,6 @@
 package typings.ionicCore
 
+import typings.ionicCore.anon.Visible
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
@@ -24,7 +25,7 @@ object splitPaneMod extends js.Object {
     /**
       * Expression to be called when the split-pane visibility has changed
       */
-    var ionSplitPaneVisible: EventEmitter[AnonVisible] = js.native
+    var ionSplitPaneVisible: EventEmitter[Visible] = js.native
     var isPane: js.Any = js.native
     var rmL: js.Any = js.native
     var styleChildren: js.Any = js.native

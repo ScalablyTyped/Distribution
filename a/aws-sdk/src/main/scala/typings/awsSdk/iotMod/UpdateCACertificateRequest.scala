@@ -35,13 +35,13 @@ object UpdateCACertificateRequest {
     newAutoRegistrationStatus: AutoRegistrationStatus = null,
     newStatus: CACertificateStatus = null,
     registrationConfig: RegistrationConfig = null,
-    removeAutoRegistration: js.UndefOr[scala.Boolean] = js.undefined
+    removeAutoRegistration: js.UndefOr[RemoveAutoRegistration] = js.undefined
   ): UpdateCACertificateRequest = {
     val __obj = js.Dynamic.literal(certificateId = certificateId.asInstanceOf[js.Any])
     if (newAutoRegistrationStatus != null) __obj.updateDynamic("newAutoRegistrationStatus")(newAutoRegistrationStatus.asInstanceOf[js.Any])
     if (newStatus != null) __obj.updateDynamic("newStatus")(newStatus.asInstanceOf[js.Any])
     if (registrationConfig != null) __obj.updateDynamic("registrationConfig")(registrationConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeAutoRegistration)) __obj.updateDynamic("removeAutoRegistration")(removeAutoRegistration.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeAutoRegistration)) __obj.updateDynamic("removeAutoRegistration")(removeAutoRegistration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateCACertificateRequest]
   }
 }

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.ParagraphFormat2")
 @js.native
-class ParagraphFormat2 protected () extends js.Object {
+trait ParagraphFormat2 extends js.Object {
   var Alignment: MsoParagraphAlignment = js.native
   val Application: js.Any = js.native
   var BaselineAlignment: MsoBaselineAlignment = js.native

@@ -4,11 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CKEDITOR.styleCommand")
-@js.native
-class styleCommand protected () extends js.Object {
-  def this(style: style) = this()
-  def this(style: style, ext: js.Any) = this()
-  def exec(editor: editor): Unit = js.native
+trait styleCommand extends js.Object {
+  def exec(editor: editor): Unit
+}
+
+object styleCommand {
+  @scala.inline
+  def apply(exec: editor => Unit): styleCommand = {
+    val __obj = js.Dynamic.literal(exec = js.Any.fromFunction1(exec))
+    __obj.asInstanceOf[styleCommand]
+  }
 }
 

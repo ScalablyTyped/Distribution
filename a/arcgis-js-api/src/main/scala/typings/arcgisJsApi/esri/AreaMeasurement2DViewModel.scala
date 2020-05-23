@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`square-feet`
 import typings.arcgisJsApi.arcgisJsApiStrings.`square-inches`
 import typings.arcgisJsApi.arcgisJsApiStrings.`square-kilometers`
@@ -96,7 +95,23 @@ trait AreaMeasurement2DViewModel extends js.Object {
   def newMeasurement(): Unit
 }
 
-@JSGlobal("__esri.AreaMeasurement2DViewModel")
-@js.native
-object AreaMeasurement2DViewModel extends TopLevel[AreaMeasurement2DViewModelConstructor]
+object AreaMeasurement2DViewModel {
+  @scala.inline
+  def apply(
+    clearMeasurement: () => Unit,
+    geodesicDistanceThreshold: Double,
+    measurement: AreaMeasurement2DViewModelMeasurement,
+    measurementLabel: AreaMeasurement2DViewModelMeasurementLabel,
+    newMeasurement: () => Unit,
+    state: disabled | ready | measuring | measured,
+    unit: metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares,
+    unitOptions: js.Array[
+      metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares
+    ],
+    view: MapView
+  ): AreaMeasurement2DViewModel = {
+    val __obj = js.Dynamic.literal(clearMeasurement = js.Any.fromFunction0(clearMeasurement), geodesicDistanceThreshold = geodesicDistanceThreshold.asInstanceOf[js.Any], measurement = measurement.asInstanceOf[js.Any], measurementLabel = measurementLabel.asInstanceOf[js.Any], newMeasurement = js.Any.fromFunction0(newMeasurement), state = state.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any], unitOptions = unitOptions.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AreaMeasurement2DViewModel]
+  }
+}
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait WorksheetCustomPropertyData extends js.Object {
   /**
     *
-    * Gets the key of the custom property. Read only.
+    * Gets the key of the custom property. Custom property keys are case-insensitive.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -16,7 +16,7 @@ trait WorksheetCustomPropertyData extends js.Object {
   var key: js.UndefOr[String] = js.undefined
   /**
     *
-    * Gets the value of the custom property. Read only.
+    * Gets or sets the value of the custom property.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

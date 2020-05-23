@@ -40,7 +40,7 @@ object IResizeGroupState {
   ): IResizeGroupState = {
     val __obj = js.Dynamic.literal()
     if (dataToMeasure != null) __obj.updateDynamic("dataToMeasure")(dataToMeasure.asInstanceOf[js.Any])
-    if (!js.isUndefined(measureContainer)) __obj.updateDynamic("measureContainer")(measureContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(measureContainer)) __obj.updateDynamic("measureContainer")(measureContainer.get.asInstanceOf[js.Any])
     if (renderedData != null) __obj.updateDynamic("renderedData")(renderedData.asInstanceOf[js.Any])
     if (resizeDirection != null) __obj.updateDynamic("resizeDirection")(resizeDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[IResizeGroupState]

@@ -15,15 +15,15 @@ object OrderLineItemShippingDetailsMethod {
   @scala.inline
   def apply(
     carrier: String = null,
-    maxDaysInTransit: Int | Double = null,
+    maxDaysInTransit: js.UndefOr[Double] = js.undefined,
     methodName: String = null,
-    minDaysInTransit: Int | Double = null
+    minDaysInTransit: js.UndefOr[Double] = js.undefined
   ): OrderLineItemShippingDetailsMethod = {
     val __obj = js.Dynamic.literal()
     if (carrier != null) __obj.updateDynamic("carrier")(carrier.asInstanceOf[js.Any])
-    if (maxDaysInTransit != null) __obj.updateDynamic("maxDaysInTransit")(maxDaysInTransit.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDaysInTransit)) __obj.updateDynamic("maxDaysInTransit")(maxDaysInTransit.get.asInstanceOf[js.Any])
     if (methodName != null) __obj.updateDynamic("methodName")(methodName.asInstanceOf[js.Any])
-    if (minDaysInTransit != null) __obj.updateDynamic("minDaysInTransit")(minDaysInTransit.asInstanceOf[js.Any])
+    if (!js.isUndefined(minDaysInTransit)) __obj.updateDynamic("minDaysInTransit")(minDaysInTransit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderLineItemShippingDetailsMethod]
   }
 }

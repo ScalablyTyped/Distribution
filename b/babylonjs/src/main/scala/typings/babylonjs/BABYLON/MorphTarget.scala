@@ -4,21 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.MorphTarget")
 @js.native
-class MorphTarget protected () extends IAnimatable {
-  /**
-    * Creates a new MorphTarget
-    * @param name defines the name of the target
-    * @param influence defines the influence to use
-    * @param scene defines the scene the morphtarget belongs to
-    */
-  def this(/** defines the name of the target */
-  name: String) = this()
-  def this(/** defines the name of the target */
-  name: String, influence: Double) = this()
-  def this(/** defines the name of the target */
-  name: String, influence: Double, scene: Nullable[Scene]) = this()
+trait MorphTarget extends IAnimatable {
   var _animationPropertiesOverride: js.Any = js.native
   var _influence: js.Any = js.native
   var _normals: js.Any = js.native
@@ -29,11 +16,6 @@ class MorphTarget protected () extends IAnimatable {
   var _tangents: js.Any = js.native
   var _uniqueId: js.Any = js.native
   var _uvs: js.Any = js.native
-  /**
-    * Array of animations
-    */
-  /* CompleteClass */
-  override var animations: Nullable[js.Array[Animation]] = js.native
   /**
     * Gets or sets the list of animations
     */
@@ -129,27 +111,5 @@ class MorphTarget protected () extends IAnimatable {
     * Gets the unique ID of this manager
     */
   def uniqueId: Double = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.MorphTarget")
-@js.native
-object MorphTarget extends js.Object {
-  /**
-    * Creates a MorphTarget from mesh data
-    * @param mesh defines the source mesh
-    * @param name defines the name to use for the new target
-    * @param influence defines the influence to attach to the target
-    * @returns a new MorphTarget
-    */
-  def FromMesh(mesh: AbstractMesh): MorphTarget = js.native
-  def FromMesh(mesh: AbstractMesh, name: String): MorphTarget = js.native
-  def FromMesh(mesh: AbstractMesh, name: String, influence: Double): MorphTarget = js.native
-  /**
-    * Creates a new target from serialized data
-    * @param serializationObject defines the serialized data to use
-    * @returns a new MorphTarget
-    */
-  def Parse(serializationObject: js.Any): MorphTarget = js.native
 }
 

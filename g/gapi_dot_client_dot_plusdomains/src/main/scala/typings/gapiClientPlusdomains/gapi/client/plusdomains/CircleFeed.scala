@@ -33,7 +33,7 @@ object CircleFeed {
     nextPageToken: String = null,
     selfLink: String = null,
     title: String = null,
-    totalItems: Int | Double = null
+    totalItems: js.UndefOr[Double] = js.undefined
   ): CircleFeed = {
     val __obj = js.Dynamic.literal()
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
@@ -43,7 +43,7 @@ object CircleFeed {
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (totalItems != null) __obj.updateDynamic("totalItems")(totalItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalItems)) __obj.updateDynamic("totalItems")(totalItems.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CircleFeed]
   }
 }

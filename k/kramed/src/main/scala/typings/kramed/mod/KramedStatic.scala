@@ -1,15 +1,15 @@
 package typings.kramed.mod
 
-import typings.kramed.AnonInstantiable
-import typings.kramed.AnonInstantiableKramedParser
+import typings.kramed.anon.Instantiable
+import typings.kramed.anon.InstantiableKramedParser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait KramedStatic extends js.Object {
-  var Parser: AnonInstantiableKramedParser = js.native
-  var Renderer: AnonInstantiable = js.native
+  var Parser: InstantiableKramedParser = js.native
+  var Renderer: Instantiable = js.native
   /**
     * Compiles kramdown to HTML.
     *

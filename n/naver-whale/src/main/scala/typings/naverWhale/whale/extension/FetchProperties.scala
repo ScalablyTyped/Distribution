@@ -13,10 +13,10 @@ trait FetchProperties extends js.Object {
 
 object FetchProperties {
   @scala.inline
-  def apply(`type`: String = null, windowId: Int | Double = null): FetchProperties = {
+  def apply(`type`: String = null, windowId: js.UndefOr[Double] = js.undefined): FetchProperties = {
     val __obj = js.Dynamic.literal()
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowId)) __obj.updateDynamic("windowId")(windowId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchProperties]
   }
 }

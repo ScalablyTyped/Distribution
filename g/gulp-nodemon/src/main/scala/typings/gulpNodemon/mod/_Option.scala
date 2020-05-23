@@ -67,7 +67,7 @@ object _Option {
   @scala.inline
   def apply(
     args: js.Array[String] = null,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     env: StringDictionary[String | Boolean | Double] = null,
     events: StringDictionary[String] = null,
     exec: String = null,
@@ -81,7 +81,7 @@ object _Option {
     restartable: String = null,
     runOnChangeOnly: js.UndefOr[Boolean] = js.undefined,
     script: String = null,
-    scriptPosition: Int | Double = null,
+    scriptPosition: js.UndefOr[Double] = js.undefined,
     stdin: js.UndefOr[Boolean] = js.undefined,
     stdout: js.UndefOr[Boolean] = js.undefined,
     verbose: js.UndefOr[Boolean] = js.undefined,
@@ -89,24 +89,24 @@ object _Option {
   ): _Option = {
     val __obj = js.Dynamic.literal()
     if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (exec != null) __obj.updateDynamic("exec")(exec.asInstanceOf[js.Any])
     if (execMap != null) __obj.updateDynamic("execMap")(execMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(exitcrash)) __obj.updateDynamic("exitcrash")(exitcrash.asInstanceOf[js.Any])
+    if (!js.isUndefined(exitcrash)) __obj.updateDynamic("exitcrash")(exitcrash.get.asInstanceOf[js.Any])
     if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(legacyWatch)) __obj.updateDynamic("legacyWatch")(legacyWatch.asInstanceOf[js.Any])
+    if (!js.isUndefined(legacyWatch)) __obj.updateDynamic("legacyWatch")(legacyWatch.get.asInstanceOf[js.Any])
     if (nodeArgs != null) __obj.updateDynamic("nodeArgs")(nodeArgs.asInstanceOf[js.Any])
-    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.asInstanceOf[js.Any])
+    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.get.asInstanceOf[js.Any])
     if (restartable != null) __obj.updateDynamic("restartable")(restartable.asInstanceOf[js.Any])
-    if (!js.isUndefined(runOnChangeOnly)) __obj.updateDynamic("runOnChangeOnly")(runOnChangeOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(runOnChangeOnly)) __obj.updateDynamic("runOnChangeOnly")(runOnChangeOnly.get.asInstanceOf[js.Any])
     if (script != null) __obj.updateDynamic("script")(script.asInstanceOf[js.Any])
-    if (scriptPosition != null) __obj.updateDynamic("scriptPosition")(scriptPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(stdin)) __obj.updateDynamic("stdin")(stdin.asInstanceOf[js.Any])
-    if (!js.isUndefined(stdout)) __obj.updateDynamic("stdout")(stdout.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
+    if (!js.isUndefined(scriptPosition)) __obj.updateDynamic("scriptPosition")(scriptPosition.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stdin)) __obj.updateDynamic("stdin")(stdin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stdout)) __obj.updateDynamic("stdout")(stdout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     if (watch != null) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Option]
   }

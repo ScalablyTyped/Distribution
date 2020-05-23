@@ -28,14 +28,14 @@ object SmtpMsa {
   def apply(
     host: String = null,
     password: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     securityMode: String = null,
     username: String = null
   ): SmtpMsa = {
     val __obj = js.Dynamic.literal()
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (securityMode != null) __obj.updateDynamic("securityMode")(securityMode.asInstanceOf[js.Any])
     if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmtpMsa]

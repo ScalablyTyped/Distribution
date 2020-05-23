@@ -22,11 +22,10 @@ object AnimationStyleMetadata {
   def apply(
     styles: Asterisk | (StringDictionary[String | Double]) | (js.Array[(StringDictionary[String | Double]) | Asterisk]),
     `type`: AnimationMetadataType,
-    offset: Int | Double = null
+    offset: Double = null.asInstanceOf[Double]
   ): AnimationStyleMetadata = {
-    val __obj = js.Dynamic.literal(styles = styles.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(styles = styles.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationStyleMetadata]
   }
 }

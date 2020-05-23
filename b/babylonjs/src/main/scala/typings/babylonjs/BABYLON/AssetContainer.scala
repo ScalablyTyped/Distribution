@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.AssetContainer")
 @js.native
-class AssetContainer protected () extends AbstractScene {
-  /**
-    * Instantiates an AssetContainer.
-    * @param scene The scene the AssetContainer belongs to.
-    */
-  def this(scene: Scene) = this()
+trait AssetContainer extends AbstractScene {
   var _moveAssets: js.Any = js.native
   var _wasAddedToScene: js.Any = js.native
   /**
@@ -41,27 +35,15 @@ class AssetContainer protected () extends AbstractScene {
   def instantiateModelsToScene(): InstantiatedEntries = js.native
   def instantiateModelsToScene(nameFunction: js.Function1[/* sourceName */ String, String]): InstantiatedEntries = js.native
   def instantiateModelsToScene(nameFunction: js.Function1[/* sourceName */ String, String], cloneMaterials: Boolean): InstantiatedEntries = js.native
-  def mergeAnimationsTo(scene: js.UndefOr[scala.Nothing], animatables: js.Array[Animatable]): Unit = js.native
-  def mergeAnimationsTo(
-    scene: js.UndefOr[scala.Nothing],
-    animatables: js.Array[Animatable],
-    targetConverter: Nullable[js.Function1[/* target */ _, Nullable[Node]]]
-  ): Unit = js.native
-  def mergeAnimationsTo(scene: Null, animatables: js.Array[Animatable]): Unit = js.native
-  def mergeAnimationsTo(
-    scene: Null,
-    animatables: js.Array[Animatable],
-    targetConverter: Nullable[js.Function1[/* target */ _, Nullable[Node]]]
-  ): Unit = js.native
   /**
     * Merge animations from this asset container into a scene
     * @param scene is the instance of BABYLON.Scene to append to (default: last created scene)
     * @param animatables set of animatables to retarget to a node from the scene
     * @param targetConverter defines a function used to convert animation targets from the asset container to the scene (default: search node by name)
     */
-  def mergeAnimationsTo(scene: Scene, animatables: js.Array[Animatable]): Unit = js.native
+  def mergeAnimationsTo(scene: js.UndefOr[Null | Scene], animatables: js.Array[Animatable]): Unit = js.native
   def mergeAnimationsTo(
-    scene: Scene,
+    scene: js.UndefOr[Null | Scene],
     animatables: js.Array[Animatable],
     targetConverter: Nullable[js.Function1[/* target */ _, Nullable[Node]]]
   ): Unit = js.native

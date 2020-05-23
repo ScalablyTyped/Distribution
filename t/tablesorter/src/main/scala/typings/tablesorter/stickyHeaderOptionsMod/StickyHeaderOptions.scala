@@ -1,8 +1,8 @@
 package typings.tablesorter.stickyHeaderOptionsMod
 
-import typings.jquery.JQuery_.Selector
-import typings.tablesorter.mod._Global_.HTMLElement
-import typings.tablesorter.mod._Global_.JQuery
+import typings.jquery.JQuery.Selector
+import typings.tablesorter.mod.global.HTMLElement
+import typings.tablesorter.mod.global.JQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -67,20 +67,20 @@ object StickyHeaderOptions {
     stickyHeaders_offset: Double | Selector | JQuery[HTMLElement] = null,
     stickyHeaders_xScroll: Selector | JQuery[HTMLElement] = null,
     stickyHeaders_yScroll: Selector | JQuery[HTMLElement] = null,
-    stickyHeaders_zindex: Int | Double = null
+    stickyHeaders_zindex: js.UndefOr[Double] = js.undefined
   ): StickyHeaderOptions = {
     val __obj = js.Dynamic.literal()
     if (stickyHeaders != null) __obj.updateDynamic("stickyHeaders")(stickyHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(stickyHeaders_addResizeEvent)) __obj.updateDynamic("stickyHeaders_addResizeEvent")(stickyHeaders_addResizeEvent.asInstanceOf[js.Any])
+    if (!js.isUndefined(stickyHeaders_addResizeEvent)) __obj.updateDynamic("stickyHeaders_addResizeEvent")(stickyHeaders_addResizeEvent.get.asInstanceOf[js.Any])
     if (stickyHeaders_appendTo != null) __obj.updateDynamic("stickyHeaders_appendTo")(stickyHeaders_appendTo.asInstanceOf[js.Any])
     if (stickyHeaders_attachTo != null) __obj.updateDynamic("stickyHeaders_attachTo")(stickyHeaders_attachTo.asInstanceOf[js.Any])
     if (stickyHeaders_cloneId != null) __obj.updateDynamic("stickyHeaders_cloneId")(stickyHeaders_cloneId.asInstanceOf[js.Any])
-    if (!js.isUndefined(stickyHeaders_filteredToTop)) __obj.updateDynamic("stickyHeaders_filteredToTop")(stickyHeaders_filteredToTop.asInstanceOf[js.Any])
-    if (!js.isUndefined(stickyHeaders_includeCaption)) __obj.updateDynamic("stickyHeaders_includeCaption")(stickyHeaders_includeCaption.asInstanceOf[js.Any])
+    if (!js.isUndefined(stickyHeaders_filteredToTop)) __obj.updateDynamic("stickyHeaders_filteredToTop")(stickyHeaders_filteredToTop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stickyHeaders_includeCaption)) __obj.updateDynamic("stickyHeaders_includeCaption")(stickyHeaders_includeCaption.get.asInstanceOf[js.Any])
     if (stickyHeaders_offset != null) __obj.updateDynamic("stickyHeaders_offset")(stickyHeaders_offset.asInstanceOf[js.Any])
     if (stickyHeaders_xScroll != null) __obj.updateDynamic("stickyHeaders_xScroll")(stickyHeaders_xScroll.asInstanceOf[js.Any])
     if (stickyHeaders_yScroll != null) __obj.updateDynamic("stickyHeaders_yScroll")(stickyHeaders_yScroll.asInstanceOf[js.Any])
-    if (stickyHeaders_zindex != null) __obj.updateDynamic("stickyHeaders_zindex")(stickyHeaders_zindex.asInstanceOf[js.Any])
+    if (!js.isUndefined(stickyHeaders_zindex)) __obj.updateDynamic("stickyHeaders_zindex")(stickyHeaders_zindex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StickyHeaderOptions]
   }
 }

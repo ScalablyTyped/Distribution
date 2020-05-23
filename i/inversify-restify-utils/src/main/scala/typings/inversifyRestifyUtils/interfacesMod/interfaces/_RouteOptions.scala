@@ -9,7 +9,7 @@ trait _RouteOptions extends js.Object
 
 object _RouteOptions {
   @scala.inline
-  def AnonPath(path: StrOrRegex): _RouteOptions = {
+  def Path(path: StrOrRegex): _RouteOptions = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[_RouteOptions]
   }

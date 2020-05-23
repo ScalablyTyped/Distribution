@@ -76,9 +76,6 @@ object uifabricUtilitiesStrings {
   sealed trait caption extends js.Object
   
   @js.native
-  sealed trait change extends js.Object
-  
-  @js.native
   sealed trait circle extends js.Object
   
   @js.native
@@ -106,16 +103,10 @@ object uifabricUtilitiesStrings {
   sealed trait data extends js.Object
   
   @js.native
-  sealed trait `data-is-scrollable` extends js.Object
-  
-  @js.native
   sealed trait `data-no-horizontal-wrap` extends js.Object
   
   @js.native
   sealed trait `data-no-vertical-wrap` extends js.Object
-  
-  @js.native
-  sealed trait `data-portal-element` extends js.Object
   
   @js.native
   sealed trait datalist extends js.Object
@@ -370,12 +361,6 @@ object uifabricUtilitiesStrings {
   sealed trait mpath extends js.Object
   
   @js.native
-  sealed trait `ms-Fabric--isFocusHidden` extends js.Object
-  
-  @js.native
-  sealed trait `ms-Fabric--isFocusVisible` extends js.Object
-  
-  @js.native
   sealed trait nav extends js.Object
   
   @js.native
@@ -611,8 +596,6 @@ object uifabricUtilitiesStrings {
   @scala.inline
   def caption: caption = "caption".asInstanceOf[caption]
   @scala.inline
-  def change: change = "change".asInstanceOf[change]
-  @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
   @scala.inline
   def cite: cite = "cite".asInstanceOf[cite]
@@ -631,13 +614,9 @@ object uifabricUtilitiesStrings {
   @scala.inline
   def data: data = "data".asInstanceOf[data]
   @scala.inline
-  def `data-is-scrollable`: `data-is-scrollable` = "data-is-scrollable".asInstanceOf[`data-is-scrollable`]
-  @scala.inline
   def `data-no-horizontal-wrap`: `data-no-horizontal-wrap` = "data-no-horizontal-wrap".asInstanceOf[`data-no-horizontal-wrap`]
   @scala.inline
   def `data-no-vertical-wrap`: `data-no-vertical-wrap` = "data-no-vertical-wrap".asInstanceOf[`data-no-vertical-wrap`]
-  @scala.inline
-  def `data-portal-element`: `data-portal-element` = "data-portal-element".asInstanceOf[`data-portal-element`]
   @scala.inline
   def datalist: datalist = "datalist".asInstanceOf[datalist]
   @scala.inline
@@ -806,10 +785,6 @@ object uifabricUtilitiesStrings {
   def meter: meter = "meter".asInstanceOf[meter]
   @scala.inline
   def mpath: mpath = "mpath".asInstanceOf[mpath]
-  @scala.inline
-  def `ms-Fabric--isFocusHidden`: `ms-Fabric--isFocusHidden` = "ms-Fabric--isFocusHidden".asInstanceOf[`ms-Fabric--isFocusHidden`]
-  @scala.inline
-  def `ms-Fabric--isFocusVisible`: `ms-Fabric--isFocusVisible` = "ms-Fabric--isFocusVisible".asInstanceOf[`ms-Fabric--isFocusVisible`]
   @scala.inline
   def nav: nav = "nav".asInstanceOf[nav]
   @scala.inline

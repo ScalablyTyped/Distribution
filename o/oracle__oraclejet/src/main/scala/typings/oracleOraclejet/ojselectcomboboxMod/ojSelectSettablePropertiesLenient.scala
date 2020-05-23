@@ -1,9 +1,9 @@
 package typings.oracleOraclejet.ojselectcomboboxMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.AnonConverterHint
-import typings.oracleOraclejet.AnonDefinition
-import typings.oracleOraclejet.AnonInstruction
+import typings.oracleOraclejet.anon.ConverterHint
+import typings.oracleOraclejet.anon.Definition
+import typings.oracleOraclejet.anon.Instruction
 import typings.oracleOraclejet.ojmessagingMod.^
 import typings.oracleOraclejet.oracleOraclejetStrings.invalidHidden
 import typings.oracleOraclejet.oracleOraclejetStrings.invalidShown
@@ -18,9 +18,9 @@ trait ojSelectSettablePropertiesLenient[V, SV]
   extends /* key */ StringDictionary[js.Any] {
   var describedBy: js.UndefOr[String] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var displayOptions: js.UndefOr[AnonConverterHint] = js.undefined
-  var help: js.UndefOr[AnonInstruction] = js.undefined
-  var helpHints: js.UndefOr[AnonDefinition] = js.undefined
+  var displayOptions: js.UndefOr[ConverterHint] = js.undefined
+  var help: js.UndefOr[Instruction] = js.undefined
+  var helpHints: js.UndefOr[Definition] = js.undefined
   var labelHint: js.UndefOr[String] = js.undefined
   var messagesCustom: js.UndefOr[js.Array[^]] = js.undefined
   var translations: js.UndefOr[js.Object] = js.undefined
@@ -33,12 +33,12 @@ trait ojSelectSettablePropertiesLenient[V, SV]
 object ojSelectSettablePropertiesLenient {
   @scala.inline
   def apply[V, SV](
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     describedBy: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    displayOptions: AnonConverterHint = null,
-    help: AnonInstruction = null,
-    helpHints: AnonDefinition = null,
+    displayOptions: ConverterHint = null,
+    help: Instruction = null,
+    helpHints: Definition = null,
     labelHint: String = null,
     messagesCustom: js.Array[^] = null,
     translations: js.Object = null,
@@ -48,7 +48,7 @@ object ojSelectSettablePropertiesLenient {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (displayOptions != null) __obj.updateDynamic("displayOptions")(displayOptions.asInstanceOf[js.Any])
     if (help != null) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
     if (helpHints != null) __obj.updateDynamic("helpHints")(helpHints.asInstanceOf[js.Any])

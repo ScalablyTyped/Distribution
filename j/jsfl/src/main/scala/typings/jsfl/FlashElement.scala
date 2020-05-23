@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.jsfl.FlashSymbolInstance because var conflicts: accName, actionScript, description, forceSimple, shortcut, silent, tabIndex. Inlined backgroundColor, bitmapRenderMode, blendMode, buttonTracking, cacheAsBitmap, colorAlphaAmount, colorAlphaPercent, colorBlueAmount, colorBluePercent, colorGreenAmount, colorGreenPercent, colorMode, colorRedAmount, colorRedPercent, filters, firstFrame, loop, symbolType, useBackgroundColor, visible */ trait FlashElement
   extends FlashShape
      with FlashInstance
@@ -27,10 +27,10 @@ import scala.scalajs.js.annotation._
   var colorRedPercent: Double
   var depth: Double
   /**
-  	 * Read-only property; a string that represents the type of the specified element.
-  	 * The value is one of the following: "shape", "text", "instance", or "shapeObj".
-  	 * A "shapeObj" is created with an extensible tool.
-  	 */
+    * Read-only property; a string that represents the type of the specified element.
+    * The value is one of the following: "shape", "text", "instance", or "shapeObj".
+    * A "shapeObj" is created with an extensible tool.
+    */
   var elementType: String
   var filters: js.Array[FlashFilter]
   var firstFrame: Double

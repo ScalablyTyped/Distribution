@@ -11,31 +11,36 @@ import scala.scalajs.js.annotation._
   * @class
   * @memberof PIXI
   */
-@JSGlobal("PIXI.MeshBatchUvs")
-@js.native
-class MeshBatchUvs protected () extends js.Object {
-  def this(uvBuffer: Buffer, uvMatrix: TextureMatrix) = this()
+trait MeshBatchUvs extends js.Object {
   /**
     * UV Buffer data
     * @member {Float32Array} PIXI.MeshBatchUvs#data
     * @readonly
     */
-  val data: Float32Array = js.native
+  val data: Float32Array
   /**
     * Buffer with normalized UV's
     * @member {PIXI.Buffer} PIXI.MeshBatchUvs#uvBuffer
     */
-  var uvBuffer: Buffer = js.native
+  var uvBuffer: Buffer
   /**
     * Material UV matrix
     * @member {PIXI.TextureMatrix} PIXI.MeshBatchUvs#uvMatrix
     */
-  var uvMatrix: TextureMatrix = js.native
+  var uvMatrix: TextureMatrix
   /**
     * updates
     *
     * @param {boolean} forceUpdate - force the update
     */
-  def update(forceUpdate: Boolean): Unit = js.native
+  def update(forceUpdate: Boolean): Unit
+}
+
+object MeshBatchUvs {
+  @scala.inline
+  def apply(data: Float32Array, update: Boolean => Unit, uvBuffer: Buffer, uvMatrix: TextureMatrix): MeshBatchUvs = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], update = js.Any.fromFunction1(update), uvBuffer = uvBuffer.asInstanceOf[js.Any], uvMatrix = uvMatrix.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MeshBatchUvs]
+  }
 }
 

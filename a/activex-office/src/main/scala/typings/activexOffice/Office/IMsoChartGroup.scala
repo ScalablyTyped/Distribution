@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.IMsoChartGroup")
 @js.native
-class IMsoChartGroup protected () extends js.Object {
+trait IMsoChartGroup extends js.Object {
   val Application: js.Any = js.native
   var AxisGroup: Double = js.native
   var BinWidthValue: Double = js.native

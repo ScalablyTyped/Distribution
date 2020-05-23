@@ -1,6 +1,6 @@
 package typings.reactInstantsearchCore.mod
 
-import typings.reactInstantsearchCore.HitcountnumberisRefinedbo
+import typings.reactInstantsearchCore.anon.HitcountnumberisRefinedbo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -52,7 +52,7 @@ object ActionExecution {
     externalExecutionUrl: Url = null,
     lastStatusChange: Timestamp = null,
     lastUpdatedBy: LastUpdatedBy = null,
-    percentComplete: Int | Double = null,
+    percentComplete: js.UndefOr[Percentage] = js.undefined,
     status: ActionExecutionStatus = null,
     summary: ExecutionSummary = null,
     token: ActionExecutionToken = null
@@ -63,7 +63,7 @@ object ActionExecution {
     if (externalExecutionUrl != null) __obj.updateDynamic("externalExecutionUrl")(externalExecutionUrl.asInstanceOf[js.Any])
     if (lastStatusChange != null) __obj.updateDynamic("lastStatusChange")(lastStatusChange.asInstanceOf[js.Any])
     if (lastUpdatedBy != null) __obj.updateDynamic("lastUpdatedBy")(lastUpdatedBy.asInstanceOf[js.Any])
-    if (percentComplete != null) __obj.updateDynamic("percentComplete")(percentComplete.asInstanceOf[js.Any])
+    if (!js.isUndefined(percentComplete)) __obj.updateDynamic("percentComplete")(percentComplete.get.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
     if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])

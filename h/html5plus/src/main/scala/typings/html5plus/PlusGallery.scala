@@ -55,8 +55,8 @@ trait PlusGallery extends js.Object {
   /**
     * 保存文件到系统相册中
     * 保存文件到系统相册中。
-    * 	每次仅能保存一个文件，支持图片类型（jpg/jpeg、png、bmp等格式）和视频文件（3gp、mov等格式）。
-    * 	若保存的文件系统不支持，则通过errorCB返回错误信息。
+    *     每次仅能保存一个文件，支持图片类型（jpg/jpeg、png、bmp等格式）和视频文件（3gp、mov等格式）。
+    *     若保存的文件系统不支持，则通过errorCB返回错误信息。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/gallery.html](http://www.html5plus.org/doc/zh_cn/gallery.html)
     */

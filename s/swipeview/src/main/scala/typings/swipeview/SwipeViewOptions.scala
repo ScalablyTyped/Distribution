@@ -17,15 +17,15 @@ object SwipeViewOptions {
   def apply(
     hastyPageFlip: js.UndefOr[Boolean] = js.undefined,
     loop: js.UndefOr[Boolean] = js.undefined,
-    numberOfPages: Int | Double = null,
-    snapThreshold: Int | Double = null,
+    numberOfPages: js.UndefOr[Double] = js.undefined,
+    snapThreshold: js.UndefOr[Double] = js.undefined,
     text: String = null
   ): SwipeViewOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hastyPageFlip)) __obj.updateDynamic("hastyPageFlip")(hastyPageFlip.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (numberOfPages != null) __obj.updateDynamic("numberOfPages")(numberOfPages.asInstanceOf[js.Any])
-    if (snapThreshold != null) __obj.updateDynamic("snapThreshold")(snapThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(hastyPageFlip)) __obj.updateDynamic("hastyPageFlip")(hastyPageFlip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfPages)) __obj.updateDynamic("numberOfPages")(numberOfPages.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapThreshold)) __obj.updateDynamic("snapThreshold")(snapThreshold.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwipeViewOptions]
   }

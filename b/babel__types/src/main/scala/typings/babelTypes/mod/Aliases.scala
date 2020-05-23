@@ -42,6 +42,7 @@ trait Aliases extends js.Object {
   var Pureish: typings.babelTypes.mod.Pureish
   var Scopable: typings.babelTypes.mod.Scopable
   var Statement: typings.babelTypes.mod.Statement
+  var TSBaseType: typings.babelTypes.mod.TSBaseType
   var TSEntityName: typings.babelTypes.mod.TSEntityName
   var TSType: typings.babelTypes.mod.TSType
   var TSTypeElement: typings.babelTypes.mod.TSTypeElement
@@ -91,6 +92,7 @@ object Aliases {
     Pureish: Pureish,
     Scopable: Scopable,
     Statement: Statement,
+    TSBaseType: TSBaseType,
     TSEntityName: TSEntityName,
     TSType: TSType,
     TSTypeElement: TSTypeElement,
@@ -99,7 +101,7 @@ object Aliases {
     UserWhitespacable: UserWhitespacable,
     While: While
   ): Aliases = {
-    val __obj = js.Dynamic.literal(Binary = Binary.asInstanceOf[js.Any], Block = Block.asInstanceOf[js.Any], BlockParent = BlockParent.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], CompletionStatement = CompletionStatement.asInstanceOf[js.Any], Conditional = Conditional.asInstanceOf[js.Any], Declaration = Declaration.asInstanceOf[js.Any], EnumBody = EnumBody.asInstanceOf[js.Any], EnumMember = EnumMember.asInstanceOf[js.Any], ExportDeclaration = ExportDeclaration.asInstanceOf[js.Any], Expression = Expression.asInstanceOf[js.Any], ExpressionWrapper = ExpressionWrapper.asInstanceOf[js.Any], Flow = Flow.asInstanceOf[js.Any], FlowBaseAnnotation = FlowBaseAnnotation.asInstanceOf[js.Any], FlowDeclaration = FlowDeclaration.asInstanceOf[js.Any], FlowPredicate = FlowPredicate.asInstanceOf[js.Any], FlowType = FlowType.asInstanceOf[js.Any], For = For.asInstanceOf[js.Any], ForXStatement = ForXStatement.asInstanceOf[js.Any], Function = Function.asInstanceOf[js.Any], FunctionParent = FunctionParent.asInstanceOf[js.Any], Immutable = Immutable.asInstanceOf[js.Any], JSX = JSX.asInstanceOf[js.Any], LVal = LVal.asInstanceOf[js.Any], Literal = Literal.asInstanceOf[js.Any], Loop = Loop.asInstanceOf[js.Any], Method = Method.asInstanceOf[js.Any], ModuleDeclaration = ModuleDeclaration.asInstanceOf[js.Any], ModuleSpecifier = ModuleSpecifier.asInstanceOf[js.Any], ObjectMember = ObjectMember.asInstanceOf[js.Any], Pattern = Pattern.asInstanceOf[js.Any], PatternLike = PatternLike.asInstanceOf[js.Any], Private = Private.asInstanceOf[js.Any], Property = Property.asInstanceOf[js.Any], Pureish = Pureish.asInstanceOf[js.Any], Scopable = Scopable.asInstanceOf[js.Any], Statement = Statement.asInstanceOf[js.Any], TSEntityName = TSEntityName.asInstanceOf[js.Any], TSType = TSType.asInstanceOf[js.Any], TSTypeElement = TSTypeElement.asInstanceOf[js.Any], Terminatorless = Terminatorless.asInstanceOf[js.Any], UnaryLike = UnaryLike.asInstanceOf[js.Any], UserWhitespacable = UserWhitespacable.asInstanceOf[js.Any], While = While.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Binary = Binary.asInstanceOf[js.Any], Block = Block.asInstanceOf[js.Any], BlockParent = BlockParent.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], CompletionStatement = CompletionStatement.asInstanceOf[js.Any], Conditional = Conditional.asInstanceOf[js.Any], Declaration = Declaration.asInstanceOf[js.Any], EnumBody = EnumBody.asInstanceOf[js.Any], EnumMember = EnumMember.asInstanceOf[js.Any], ExportDeclaration = ExportDeclaration.asInstanceOf[js.Any], Expression = Expression.asInstanceOf[js.Any], ExpressionWrapper = ExpressionWrapper.asInstanceOf[js.Any], Flow = Flow.asInstanceOf[js.Any], FlowBaseAnnotation = FlowBaseAnnotation.asInstanceOf[js.Any], FlowDeclaration = FlowDeclaration.asInstanceOf[js.Any], FlowPredicate = FlowPredicate.asInstanceOf[js.Any], FlowType = FlowType.asInstanceOf[js.Any], For = For.asInstanceOf[js.Any], ForXStatement = ForXStatement.asInstanceOf[js.Any], Function = Function.asInstanceOf[js.Any], FunctionParent = FunctionParent.asInstanceOf[js.Any], Immutable = Immutable.asInstanceOf[js.Any], JSX = JSX.asInstanceOf[js.Any], LVal = LVal.asInstanceOf[js.Any], Literal = Literal.asInstanceOf[js.Any], Loop = Loop.asInstanceOf[js.Any], Method = Method.asInstanceOf[js.Any], ModuleDeclaration = ModuleDeclaration.asInstanceOf[js.Any], ModuleSpecifier = ModuleSpecifier.asInstanceOf[js.Any], ObjectMember = ObjectMember.asInstanceOf[js.Any], Pattern = Pattern.asInstanceOf[js.Any], PatternLike = PatternLike.asInstanceOf[js.Any], Private = Private.asInstanceOf[js.Any], Property = Property.asInstanceOf[js.Any], Pureish = Pureish.asInstanceOf[js.Any], Scopable = Scopable.asInstanceOf[js.Any], Statement = Statement.asInstanceOf[js.Any], TSBaseType = TSBaseType.asInstanceOf[js.Any], TSEntityName = TSEntityName.asInstanceOf[js.Any], TSType = TSType.asInstanceOf[js.Any], TSTypeElement = TSTypeElement.asInstanceOf[js.Any], Terminatorless = Terminatorless.asInstanceOf[js.Any], UnaryLike = UnaryLike.asInstanceOf[js.Any], UserWhitespacable = UserWhitespacable.asInstanceOf[js.Any], While = While.asInstanceOf[js.Any])
     __obj.asInstanceOf[Aliases]
   }
 }

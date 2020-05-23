@@ -21,9 +21,9 @@ object Line_ {
   ): Line_ = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(hard)) __obj.updateDynamic("hard")(hard.asInstanceOf[js.Any])
-    if (!js.isUndefined(literal)) __obj.updateDynamic("literal")(literal.asInstanceOf[js.Any])
-    if (!js.isUndefined(soft)) __obj.updateDynamic("soft")(soft.asInstanceOf[js.Any])
+    if (!js.isUndefined(hard)) __obj.updateDynamic("hard")(hard.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(literal)) __obj.updateDynamic("literal")(literal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(soft)) __obj.updateDynamic("soft")(soft.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Line_]
   }
 }

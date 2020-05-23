@@ -13,26 +13,26 @@ trait Options extends OperationOptions {
 object Options {
   @scala.inline
   def apply(
-    factor: Int | Double = null,
+    factor: js.UndefOr[Double] = js.undefined,
     forever: js.UndefOr[Boolean] = js.undefined,
-    maxRetryTime: Int | Double = null,
-    maxTimeout: Int | Double = null,
-    minTimeout: Int | Double = null,
+    maxRetryTime: js.UndefOr[Double] = js.undefined,
+    maxTimeout: js.UndefOr[Double] = js.undefined,
+    minTimeout: js.UndefOr[Double] = js.undefined,
     onRetry: (/* e */ Error, /* attempt */ Double) => _ = null,
     randomize: js.UndefOr[Boolean] = js.undefined,
-    retries: Int | Double = null,
+    retries: js.UndefOr[Double] = js.undefined,
     unref: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (factor != null) __obj.updateDynamic("factor")(factor.asInstanceOf[js.Any])
-    if (!js.isUndefined(forever)) __obj.updateDynamic("forever")(forever.asInstanceOf[js.Any])
-    if (maxRetryTime != null) __obj.updateDynamic("maxRetryTime")(maxRetryTime.asInstanceOf[js.Any])
-    if (maxTimeout != null) __obj.updateDynamic("maxTimeout")(maxTimeout.asInstanceOf[js.Any])
-    if (minTimeout != null) __obj.updateDynamic("minTimeout")(minTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(factor)) __obj.updateDynamic("factor")(factor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forever)) __obj.updateDynamic("forever")(forever.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetryTime)) __obj.updateDynamic("maxRetryTime")(maxRetryTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTimeout)) __obj.updateDynamic("maxTimeout")(maxTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minTimeout)) __obj.updateDynamic("minTimeout")(minTimeout.get.asInstanceOf[js.Any])
     if (onRetry != null) __obj.updateDynamic("onRetry")(js.Any.fromFunction2(onRetry))
-    if (!js.isUndefined(randomize)) __obj.updateDynamic("randomize")(randomize.asInstanceOf[js.Any])
-    if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
-    if (!js.isUndefined(unref)) __obj.updateDynamic("unref")(unref.asInstanceOf[js.Any])
+    if (!js.isUndefined(randomize)) __obj.updateDynamic("randomize")(randomize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retries)) __obj.updateDynamic("retries")(retries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unref)) __obj.updateDynamic("unref")(unref.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

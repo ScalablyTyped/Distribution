@@ -30,11 +30,11 @@ object SceneLayerCreatePopupTemplateOptions {
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     ignoreFieldTypes: js.Array[String] = null,
-    maximumFields: Int | Double = null
+    maximumFields: js.UndefOr[Double] = js.undefined
   ): SceneLayerCreatePopupTemplateOptions = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (ignoreFieldTypes != null) __obj.updateDynamic("ignoreFieldTypes")(ignoreFieldTypes.asInstanceOf[js.Any])
-    if (maximumFields != null) __obj.updateDynamic("maximumFields")(maximumFields.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumFields)) __obj.updateDynamic("maximumFields")(maximumFields.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneLayerCreatePopupTemplateOptions]
   }
 }

@@ -13,19 +13,19 @@ object GetQueueMessagesOptions {
   @scala.inline
   def apply(
     locationMode: String = null,
-    maximumExecutionTimeInMs: Int | Double = null,
-    numofmessages: Int | Double = null,
+    maximumExecutionTimeInMs: js.UndefOr[Double] = js.undefined,
+    numofmessages: js.UndefOr[Double] = js.undefined,
     peekonly: js.UndefOr[Boolean] = js.undefined,
-    timeoutIntervalInMs: Int | Double = null,
-    visibilitytimeout: Int | Double = null
+    timeoutIntervalInMs: js.UndefOr[Double] = js.undefined,
+    visibilitytimeout: js.UndefOr[Double] = js.undefined
   ): GetQueueMessagesOptions = {
     val __obj = js.Dynamic.literal()
     if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode.asInstanceOf[js.Any])
-    if (maximumExecutionTimeInMs != null) __obj.updateDynamic("maximumExecutionTimeInMs")(maximumExecutionTimeInMs.asInstanceOf[js.Any])
-    if (numofmessages != null) __obj.updateDynamic("numofmessages")(numofmessages.asInstanceOf[js.Any])
-    if (!js.isUndefined(peekonly)) __obj.updateDynamic("peekonly")(peekonly.asInstanceOf[js.Any])
-    if (timeoutIntervalInMs != null) __obj.updateDynamic("timeoutIntervalInMs")(timeoutIntervalInMs.asInstanceOf[js.Any])
-    if (visibilitytimeout != null) __obj.updateDynamic("visibilitytimeout")(visibilitytimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumExecutionTimeInMs)) __obj.updateDynamic("maximumExecutionTimeInMs")(maximumExecutionTimeInMs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numofmessages)) __obj.updateDynamic("numofmessages")(numofmessages.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(peekonly)) __obj.updateDynamic("peekonly")(peekonly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutIntervalInMs)) __obj.updateDynamic("timeoutIntervalInMs")(timeoutIntervalInMs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visibilitytimeout)) __obj.updateDynamic("visibilitytimeout")(visibilitytimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetQueueMessagesOptions]
   }
 }

@@ -18,12 +18,12 @@ object PropOptions {
   def apply[T](
     observer: (/* value */ T, /* old */ T, /* changedPath */ String) => Unit = null,
     `type`: Prop[T] | js.Array[Prop[T]] = null,
-    value: T | js.Function0[js.Object] = null
+    value: js.UndefOr[Null | T | js.Function0[js.Object]] = js.undefined
   ): PropOptions[T] = {
     val __obj = js.Dynamic.literal()
     if (observer != null) __obj.updateDynamic("observer")(js.Any.fromFunction3(observer))
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropOptions[T]]
   }
 }

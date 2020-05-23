@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,8 +26,4 @@ trait CanvasRenderingContext2D
      with RenderingContext {
   val canvas: HTMLCanvasElement = js.native
 }
-
-@JSGlobal("CanvasRenderingContext2D")
-@js.native
-object CanvasRenderingContext2D extends Instantiable0[CanvasRenderingContext2D]
 

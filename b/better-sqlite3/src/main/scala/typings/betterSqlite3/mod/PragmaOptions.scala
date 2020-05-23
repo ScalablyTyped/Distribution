@@ -12,7 +12,7 @@ object PragmaOptions {
   @scala.inline
   def apply(simple: js.UndefOr[Boolean] = js.undefined): PragmaOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(simple)) __obj.updateDynamic("simple")(simple.asInstanceOf[js.Any])
+    if (!js.isUndefined(simple)) __obj.updateDynamic("simple")(simple.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PragmaOptions]
   }
 }

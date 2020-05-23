@@ -1,7 +1,7 @@
 
 # Scala.js typings for algolia__client-recommendation
 
-Typings are for version 4.1.0
+Typings are for version 4.2.0
 
 
 

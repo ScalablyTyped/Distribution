@@ -1,6 +1,5 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1
 
-import typings.jsrsasign.jsrsasignBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,13 +39,7 @@ import scala.scalajs.js.annotation._
   * //     }
   * //   }
   */
-@JSGlobal("jsrsasign.KJUR.asn1.DERBitString")
-@js.native
-class DERBitString () extends ASN1Object {
-  def this(params: ASN1ObjectParam) = this()
-  def this(params: ArrayParam[Boolean]) = this()
-  def this(params: BinParam) = this()
-  def this(params: HexParam) = this()
+trait DERBitString extends ASN1Object {
   /**
     * set ASN.1 DER BitString by binary string
     * @param binaryString binary value string (i.e. '10111')
@@ -59,7 +52,7 @@ class DERBitString () extends ASN1Object {
     * o = new KJUR.asn1.DERBitString();
     * o.setByBooleanArray("01011");
     */
-  def setByBinaryString(binaryString: String): Unit = js.native
+  def setByBinaryString(binaryString: String): Unit
   /**
     * set ASN.1 TLV value(V) by an array of boolean
     * @param booleanArray array of boolean (ex. [true, false, true])
@@ -69,31 +62,36 @@ class DERBitString () extends ASN1Object {
     * o = new KJUR.asn1.DERBitString();
     * o.setByBooleanArray([false, true, false, true, true]);
     */
-  def setByBooleanArray(booleanArray: js.Array[Boolean]): Unit = js.native
+  def setByBooleanArray(booleanArray: js.Array[Boolean]): Unit
   /**
     * set ASN.1 value(V) by a hexadecimal string including unused bits
     */
-  def setHexValueIncludingUnusedBits(newHexStringIncludingUnusedBits: String): Unit = js.native
+  def setHexValueIncludingUnusedBits(newHexStringIncludingUnusedBits: String): Unit
   /**
     * set ASN.1 value(V) by unused bit and hexadecimal string of value
     */
-  def setUnusedBitsAndHexValue(unusedBits: Double, hValue: String): Unit = js.native
+  def setUnusedBitsAndHexValue(unusedBits: Double, hValue: String): Unit
 }
 
-/* static members */
-@JSGlobal("jsrsasign.KJUR.asn1.DERBitString")
-@js.native
-object DERBitString extends js.Object {
-  /**
-    * generate an array of falses with specified length
-    * @param nLength length of array to generate
-    * @return array of boolean falses
-    * @description
-    * This static method may be useful to initialize boolean array.
-    * @example
-    * o = new KJUR.asn1.DERBitString();
-    * o.newFalseArray(3) → [false, false, false]
-    */
-  def newFalseArray(nLength: Double): js.Array[`false`] = js.native
+object DERBitString {
+  @scala.inline
+  def apply(
+    getEncodedHex: () => String,
+    getFreshValueHex: () => String,
+    getLengthHexFromValue: () => String,
+    getValueHex: () => String,
+    hL: String,
+    hT: String,
+    hTLV: String,
+    hV: String,
+    isModified: String,
+    setByBinaryString: String => Unit,
+    setByBooleanArray: js.Array[Boolean] => Unit,
+    setHexValueIncludingUnusedBits: String => Unit,
+    setUnusedBitsAndHexValue: (Double, String) => Unit
+  ): DERBitString = {
+    val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setByBinaryString = js.Any.fromFunction1(setByBinaryString), setByBooleanArray = js.Any.fromFunction1(setByBooleanArray), setHexValueIncludingUnusedBits = js.Any.fromFunction1(setHexValueIncludingUnusedBits), setUnusedBitsAndHexValue = js.Any.fromFunction2(setUnusedBitsAndHexValue))
+    __obj.asInstanceOf[DERBitString]
+  }
 }
 

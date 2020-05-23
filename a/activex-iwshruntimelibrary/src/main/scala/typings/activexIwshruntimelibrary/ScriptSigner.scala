@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ScriptSigner extends js.Object {
   @js.native
-  class Signer protected () extends js.Object {
+  trait Signer extends js.Object {
     @JSName("ScriptSigner.Signer_typekey")
     var ScriptSignerDotSigner_typekey: Signer = js.native
     /** @param Store [Store='my'] */

@@ -18,9 +18,9 @@ trait DeleteVpcEndpointConnectionNotificationsRequest extends js.Object {
 
 object DeleteVpcEndpointConnectionNotificationsRequest {
   @scala.inline
-  def apply(ConnectionNotificationIds: ValueStringList, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeleteVpcEndpointConnectionNotificationsRequest = {
+  def apply(ConnectionNotificationIds: ValueStringList, DryRun: js.UndefOr[Boolean] = js.undefined): DeleteVpcEndpointConnectionNotificationsRequest = {
     val __obj = js.Dynamic.literal(ConnectionNotificationIds = ConnectionNotificationIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVpcEndpointConnectionNotificationsRequest]
   }
 }

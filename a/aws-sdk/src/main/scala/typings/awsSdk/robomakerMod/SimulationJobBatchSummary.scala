@@ -41,19 +41,19 @@ object SimulationJobBatchSummary {
   def apply(
     arn: Arn = null,
     createdAt: CreatedAt = null,
-    createdRequestCount: Int | Double = null,
-    failedRequestCount: Int | Double = null,
+    createdRequestCount: js.UndefOr[Integer] = js.undefined,
+    failedRequestCount: js.UndefOr[Integer] = js.undefined,
     lastUpdatedAt: LastUpdatedAt = null,
-    pendingRequestCount: Int | Double = null,
+    pendingRequestCount: js.UndefOr[Integer] = js.undefined,
     status: SimulationJobBatchStatus = null
   ): SimulationJobBatchSummary = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (createdRequestCount != null) __obj.updateDynamic("createdRequestCount")(createdRequestCount.asInstanceOf[js.Any])
-    if (failedRequestCount != null) __obj.updateDynamic("failedRequestCount")(failedRequestCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(createdRequestCount)) __obj.updateDynamic("createdRequestCount")(createdRequestCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(failedRequestCount)) __obj.updateDynamic("failedRequestCount")(failedRequestCount.get.asInstanceOf[js.Any])
     if (lastUpdatedAt != null) __obj.updateDynamic("lastUpdatedAt")(lastUpdatedAt.asInstanceOf[js.Any])
-    if (pendingRequestCount != null) __obj.updateDynamic("pendingRequestCount")(pendingRequestCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(pendingRequestCount)) __obj.updateDynamic("pendingRequestCount")(pendingRequestCount.get.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimulationJobBatchSummary]
   }

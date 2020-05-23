@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Networking.Connectivity.DataUsage")
-@js.native
-class DataUsage () extends IDataUsage {
-  /* CompleteClass */
-  override var bytesReceived: Double = js.native
-  /* CompleteClass */
-  override var bytesSent: Double = js.native
+trait DataUsage extends IDataUsage
+
+object DataUsage {
+  @scala.inline
+  def apply(bytesReceived: Double, bytesSent: Double): DataUsage = {
+    val __obj = js.Dynamic.literal(bytesReceived = bytesReceived.asInstanceOf[js.Any], bytesSent = bytesSent.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataUsage]
+  }
 }
 

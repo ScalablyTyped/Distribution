@@ -1,6 +1,6 @@
 package typings.reactPhoneNumberInput.mod
 
-import typings.reactPhoneNumberInput.AnonIcon
+import typings.reactPhoneNumberInput.anon.Icon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait CountrySelectComponentProps extends js.Object {
   /**
     * The list of all selectable countries (including "International")
     */
-  var options: js.UndefOr[js.Array[AnonIcon]] = js.undefined
+  var options: js.UndefOr[js.Array[Icon]] = js.undefined
   var tabIndex: js.UndefOr[Double | String] = js.undefined
   /**
     * The currently selected country code
@@ -32,13 +32,13 @@ object CountrySelectComponentProps {
     onBlur: () => Unit = null,
     onChange: /* value */ js.UndefOr[String] => Unit = null,
     onFocus: () => Unit = null,
-    options: js.Array[AnonIcon] = null,
+    options: js.Array[Icon] = null,
     tabIndex: Double | String = null,
     value: String = null
   ): CountrySelectComponentProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction0(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))

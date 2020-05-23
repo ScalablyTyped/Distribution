@@ -10,9 +10,9 @@ trait DocumentTimelineOptions extends js.Object {
 
 object DocumentTimelineOptions {
   @scala.inline
-  def apply(originTime: Int | Double = null): DocumentTimelineOptions = {
+  def apply(originTime: js.UndefOr[Double] = js.undefined): DocumentTimelineOptions = {
     val __obj = js.Dynamic.literal()
-    if (originTime != null) __obj.updateDynamic("originTime")(originTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(originTime)) __obj.updateDynamic("originTime")(originTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentTimelineOptions]
   }
 }

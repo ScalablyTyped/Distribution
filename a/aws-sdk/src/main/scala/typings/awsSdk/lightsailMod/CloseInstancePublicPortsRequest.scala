@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CloseInstancePublicPortsRequest extends js.Object {
   /**
-    * The name of the instance on which you're attempting to close the public ports.
+    * The name of the instance for which to close ports.
     */
   var instanceName: ResourceName = js.native
   /**
-    * Information about the public port you are trying to close.
+    * An object to describe the ports to close for the specified instance.
     */
   var portInfo: PortInfo = js.native
 }

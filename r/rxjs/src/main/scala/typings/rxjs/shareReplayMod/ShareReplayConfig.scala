@@ -16,14 +16,14 @@ object ShareReplayConfig {
   @scala.inline
   def apply(
     refCount: Boolean,
-    bufferSize: Int | Double = null,
+    bufferSize: js.UndefOr[Double] = js.undefined,
     scheduler: SchedulerLike = null,
-    windowTime: Int | Double = null
+    windowTime: js.UndefOr[Double] = js.undefined
   ): ShareReplayConfig = {
     val __obj = js.Dynamic.literal(refCount = refCount.asInstanceOf[js.Any])
-    if (bufferSize != null) __obj.updateDynamic("bufferSize")(bufferSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(bufferSize)) __obj.updateDynamic("bufferSize")(bufferSize.get.asInstanceOf[js.Any])
     if (scheduler != null) __obj.updateDynamic("scheduler")(scheduler.asInstanceOf[js.Any])
-    if (windowTime != null) __obj.updateDynamic("windowTime")(windowTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowTime)) __obj.updateDynamic("windowTime")(windowTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareReplayConfig]
   }
 }

@@ -1,5 +1,7 @@
 package typings.stardustUiReactComponentEventListener
 
+import typings.stardustUiReactComponentEventListener.anon.Capture
+import typings.stardustUiReactComponentEventListener.anon.Listener
 import typings.stardustUiReactComponentEventListener.stardustUiReactComponentEventListenerStrings.abort
 import typings.stardustUiReactComponentEventListener.stardustUiReactComponentEventListenerStrings.animationcancel
 import typings.stardustUiReactComponentEventListener.stardustUiReactComponentEventListenerStrings.animationend
@@ -111,7 +113,7 @@ object mod extends js.Object {
   @js.native
   object EventListener extends js.Object {
     var displayName: String = js.native
-    var propTypes: AnonCapture | AnonListener = js.native
+    var propTypes: Capture | Listener = js.native
     def apply(
       props: EventListenerOptions[
           abort | animationcancel | animationend | animationiteration | animationstart | auxclick | blur | cancel | canplay | canplaythrough | change | click | close | contextmenu | copy | cuechange | cut | dblclick | drag | dragend | dragenter | dragexit | dragleave | dragover | dragstart | drop | durationchange | emptied | ended | error | focus | focusin | focusout | fullscreenchange | fullscreenerror | gotpointercapture | input | invalid | keydown | keypress | keyup | load | loadeddata | loadedmetadata | loadstart | lostpointercapture | mousedown | mouseenter | mouseleave | mousemove | mouseout | mouseover | mouseup | paste | pause | play | playing | pointercancel | pointerdown | pointerenter | pointerleave | pointerlockchange | pointerlockerror | pointermove | pointerout | pointerover | pointerup | progress | ratechange | readystatechange | reset | resize | scroll | securitypolicyviolation | seeked | seeking | select | selectionchange | selectstart | stalled | submit | suspend | timeupdate | toggle | touchcancel | touchend | touchmove | touchstart | transitioncancel | transitionend | transitionrun | transitionstart | visibilitychange | volumechange | waiting | wheel

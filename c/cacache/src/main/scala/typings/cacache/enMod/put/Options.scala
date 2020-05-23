@@ -58,16 +58,16 @@ object Options {
   def apply(
     algorithms: js.Array[String] = null,
     integrity: String = null,
-    memoize: js.UndefOr[Boolean] = js.undefined,
+    memoize: js.UndefOr[Null | Boolean] = js.undefined,
     metadata: js.Any = null,
-    size: Int | Double = null
+    size: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms.asInstanceOf[js.Any])
     if (integrity != null) __obj.updateDynamic("integrity")(integrity.asInstanceOf[js.Any])
     if (!js.isUndefined(memoize)) __obj.updateDynamic("memoize")(memoize.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

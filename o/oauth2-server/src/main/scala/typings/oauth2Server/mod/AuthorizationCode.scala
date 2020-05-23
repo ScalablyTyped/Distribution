@@ -27,7 +27,7 @@ object AuthorizationCode {
     expiresAt: Date,
     redirectUri: String,
     user: User,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     scope: String | js.Array[String] = null
   ): AuthorizationCode = {
     val __obj = js.Dynamic.literal(authorizationCode = authorizationCode.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any], expiresAt = expiresAt.asInstanceOf[js.Any], redirectUri = redirectUri.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])

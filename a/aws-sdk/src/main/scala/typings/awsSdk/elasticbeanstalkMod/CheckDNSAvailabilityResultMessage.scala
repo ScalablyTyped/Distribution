@@ -18,9 +18,9 @@ trait CheckDNSAvailabilityResultMessage extends js.Object {
 
 object CheckDNSAvailabilityResultMessage {
   @scala.inline
-  def apply(Available: js.UndefOr[Boolean] = js.undefined, FullyQualifiedCNAME: DNSCname = null): CheckDNSAvailabilityResultMessage = {
+  def apply(Available: js.UndefOr[CnameAvailability] = js.undefined, FullyQualifiedCNAME: DNSCname = null): CheckDNSAvailabilityResultMessage = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Available)) __obj.updateDynamic("Available")(Available.asInstanceOf[js.Any])
+    if (!js.isUndefined(Available)) __obj.updateDynamic("Available")(Available.get.asInstanceOf[js.Any])
     if (FullyQualifiedCNAME != null) __obj.updateDynamic("FullyQualifiedCNAME")(FullyQualifiedCNAME.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckDNSAvailabilityResultMessage]
   }

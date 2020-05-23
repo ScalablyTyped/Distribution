@@ -58,7 +58,7 @@ object ReplicationRun {
     amiId: AmiId = null,
     completedTime: Timestamp = null,
     description: Description = null,
-    encrypted: js.UndefOr[Boolean] = js.undefined,
+    encrypted: js.UndefOr[Encrypted] = js.undefined,
     kmsKeyId: KmsKeyId = null,
     replicationRunId: ReplicationRunId = null,
     scheduledStartTime: Timestamp = null,
@@ -71,7 +71,7 @@ object ReplicationRun {
     if (amiId != null) __obj.updateDynamic("amiId")(amiId.asInstanceOf[js.Any])
     if (completedTime != null) __obj.updateDynamic("completedTime")(completedTime.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(encrypted)) __obj.updateDynamic("encrypted")(encrypted.asInstanceOf[js.Any])
+    if (!js.isUndefined(encrypted)) __obj.updateDynamic("encrypted")(encrypted.get.asInstanceOf[js.Any])
     if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
     if (replicationRunId != null) __obj.updateDynamic("replicationRunId")(replicationRunId.asInstanceOf[js.Any])
     if (scheduledStartTime != null) __obj.updateDynamic("scheduledStartTime")(scheduledStartTime.asInstanceOf[js.Any])

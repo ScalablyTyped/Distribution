@@ -18,16 +18,16 @@ trait DiskUtilization extends js.Object {
 object DiskUtilization {
   @scala.inline
   def apply(
-    targetReadBytesPerSecond: Int | Double = null,
-    targetReadOpsPerSecond: Int | Double = null,
-    targetWriteBytesPerSecond: Int | Double = null,
-    targetWriteOpsPerSecond: Int | Double = null
+    targetReadBytesPerSecond: js.UndefOr[Double] = js.undefined,
+    targetReadOpsPerSecond: js.UndefOr[Double] = js.undefined,
+    targetWriteBytesPerSecond: js.UndefOr[Double] = js.undefined,
+    targetWriteOpsPerSecond: js.UndefOr[Double] = js.undefined
   ): DiskUtilization = {
     val __obj = js.Dynamic.literal()
-    if (targetReadBytesPerSecond != null) __obj.updateDynamic("targetReadBytesPerSecond")(targetReadBytesPerSecond.asInstanceOf[js.Any])
-    if (targetReadOpsPerSecond != null) __obj.updateDynamic("targetReadOpsPerSecond")(targetReadOpsPerSecond.asInstanceOf[js.Any])
-    if (targetWriteBytesPerSecond != null) __obj.updateDynamic("targetWriteBytesPerSecond")(targetWriteBytesPerSecond.asInstanceOf[js.Any])
-    if (targetWriteOpsPerSecond != null) __obj.updateDynamic("targetWriteOpsPerSecond")(targetWriteOpsPerSecond.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetReadBytesPerSecond)) __obj.updateDynamic("targetReadBytesPerSecond")(targetReadBytesPerSecond.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetReadOpsPerSecond)) __obj.updateDynamic("targetReadOpsPerSecond")(targetReadOpsPerSecond.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetWriteBytesPerSecond)) __obj.updateDynamic("targetWriteBytesPerSecond")(targetWriteBytesPerSecond.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetWriteOpsPerSecond)) __obj.updateDynamic("targetWriteOpsPerSecond")(targetWriteOpsPerSecond.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiskUtilization]
   }
 }

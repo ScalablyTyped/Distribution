@@ -11,9 +11,9 @@ trait IRoleList extends js.Object {
 
 object IRoleList {
   @scala.inline
-  def apply(roles: js.Array[IRole] = null): IRoleList = {
+  def apply(roles: js.UndefOr[Null | js.Array[IRole]] = js.undefined): IRoleList = {
     val __obj = js.Dynamic.literal()
-    if (roles != null) __obj.updateDynamic("roles")(roles.asInstanceOf[js.Any])
+    if (!js.isUndefined(roles)) __obj.updateDynamic("roles")(roles.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRoleList]
   }
 }

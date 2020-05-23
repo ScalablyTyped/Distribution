@@ -18,11 +18,15 @@ trait ClickOptions extends js.Object {
 
 object ClickOptions {
   @scala.inline
-  def apply(button: MouseButtons = null, clickCount: Int | Double = null, delay: Int | Double = null): ClickOptions = {
+  def apply(
+    button: MouseButtons = null,
+    clickCount: js.UndefOr[Double] = js.undefined,
+    delay: js.UndefOr[Double] = js.undefined
+  ): ClickOptions = {
     val __obj = js.Dynamic.literal()
     if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
-    if (clickCount != null) __obj.updateDynamic("clickCount")(clickCount.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickCount)) __obj.updateDynamic("clickCount")(clickCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClickOptions]
   }
 }

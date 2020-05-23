@@ -16,7 +16,7 @@ object CreatePromptModuleOptions {
     onFallback: /* question */ PromptQuestion => PromptValue | Unit = null
   ): CreatePromptModuleOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
+    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.get.asInstanceOf[js.Any])
     if (onFallback != null) __obj.updateDynamic("onFallback")(js.Any.fromFunction1(onFallback))
     __obj.asInstanceOf[CreatePromptModuleOptions]
   }

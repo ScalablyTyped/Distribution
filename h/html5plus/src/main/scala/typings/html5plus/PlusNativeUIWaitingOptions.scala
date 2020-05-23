@@ -90,7 +90,7 @@ trait PlusNativeUIWaitingOptions extends js.Object {
   /**
     * 等待对话框样式
     * 可取值"black"、"white"，black表示等待框为黑色雪花样式，通常在背景主色为浅色时使用；white表示等待框为白色雪花样式，通常在背景主色为深色时使用。
-    * 	仅在iOS平台有效，其它平台忽略此值，未设置时默认值为white。
+    *     仅在iOS平台有效，其它平台忽略此值，未设置时默认值为white。
     * - black: 黑色雪花样式，适合浅色界面使用
     * - white: 白色雪花样式，适合深色界面使用
     * 
@@ -124,7 +124,7 @@ object PlusNativeUIWaitingOptions {
     modal: js.UndefOr[Boolean] = js.undefined,
     padding: String = null,
     padlock: js.UndefOr[Boolean] = js.undefined,
-    round: Int | Double = null,
+    round: js.UndefOr[Double] = js.undefined,
     size: String = null,
     style: black | white = null,
     textalign: String = null,
@@ -136,10 +136,10 @@ object PlusNativeUIWaitingOptions {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.get.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (!js.isUndefined(padlock)) __obj.updateDynamic("padlock")(padlock.asInstanceOf[js.Any])
-    if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
+    if (!js.isUndefined(padlock)) __obj.updateDynamic("padlock")(padlock.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (textalign != null) __obj.updateDynamic("textalign")(textalign.asInstanceOf[js.Any])

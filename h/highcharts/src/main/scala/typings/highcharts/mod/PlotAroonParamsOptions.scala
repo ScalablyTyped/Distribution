@@ -13,9 +13,9 @@ trait PlotAroonParamsOptions extends js.Object {
 
 object PlotAroonParamsOptions {
   @scala.inline
-  def apply(period: Int | Double = null): PlotAroonParamsOptions = {
+  def apply(period: js.UndefOr[Double] = js.undefined): PlotAroonParamsOptions = {
     val __obj = js.Dynamic.literal()
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
+    if (!js.isUndefined(period)) __obj.updateDynamic("period")(period.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotAroonParamsOptions]
   }
 }

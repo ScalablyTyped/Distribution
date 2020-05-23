@@ -57,10 +57,10 @@ object TerminologyProperties {
     EncryptionKey: EncryptionKey = null,
     LastUpdatedAt: Timestamp = null,
     Name: ResourceName = null,
-    SizeBytes: Int | Double = null,
+    SizeBytes: js.UndefOr[Integer] = js.undefined,
     SourceLanguageCode: LanguageCodeString = null,
     TargetLanguageCodes: LanguageCodeStringList = null,
-    TermCount: Int | Double = null
+    TermCount: js.UndefOr[Integer] = js.undefined
   ): TerminologyProperties = {
     val __obj = js.Dynamic.literal()
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
@@ -69,10 +69,10 @@ object TerminologyProperties {
     if (EncryptionKey != null) __obj.updateDynamic("EncryptionKey")(EncryptionKey.asInstanceOf[js.Any])
     if (LastUpdatedAt != null) __obj.updateDynamic("LastUpdatedAt")(LastUpdatedAt.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (SizeBytes != null) __obj.updateDynamic("SizeBytes")(SizeBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(SizeBytes)) __obj.updateDynamic("SizeBytes")(SizeBytes.get.asInstanceOf[js.Any])
     if (SourceLanguageCode != null) __obj.updateDynamic("SourceLanguageCode")(SourceLanguageCode.asInstanceOf[js.Any])
     if (TargetLanguageCodes != null) __obj.updateDynamic("TargetLanguageCodes")(TargetLanguageCodes.asInstanceOf[js.Any])
-    if (TermCount != null) __obj.updateDynamic("TermCount")(TermCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(TermCount)) __obj.updateDynamic("TermCount")(TermCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerminologyProperties]
   }
 }

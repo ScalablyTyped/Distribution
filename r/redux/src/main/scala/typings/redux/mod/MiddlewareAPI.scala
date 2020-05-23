@@ -11,7 +11,7 @@ trait MiddlewareAPI[D /* <: Dispatch[AnyAction] */, S] extends js.Object {
 
 object MiddlewareAPI {
   @scala.inline
-  def apply[D /* <: Dispatch[AnyAction] */, S](dispatch: D, getState: () => S): MiddlewareAPI[D, S] = {
+  def apply[D, S](dispatch: D, getState: () => S): MiddlewareAPI[D, S] = {
     val __obj = js.Dynamic.literal(dispatch = dispatch.asInstanceOf[js.Any], getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[MiddlewareAPI[D, S]]
   }

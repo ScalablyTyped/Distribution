@@ -24,13 +24,9 @@ object OptionData {
     id: String,
     selected: Boolean,
     text: String,
-    title: String,
-    children: js.UndefOr[scala.Nothing] = js.undefined,
-    loading: js.UndefOr[scala.Nothing] = js.undefined
+    title: String
   ): OptionData = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    if (!js.isUndefined(children)) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionData]
   }
 }

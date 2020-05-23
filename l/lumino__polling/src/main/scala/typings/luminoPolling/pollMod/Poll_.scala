@@ -1,7 +1,7 @@
 package typings.luminoPolling.pollMod
 
 import typings.luminoDisposable.mod.IObservableDisposable
-import typings.luminoPolling.AnonCancel
+import typings.luminoPolling.anon.Cancel
 import typings.luminoPolling.mod.IPoll
 import typings.luminoPolling.mod.IPoll.Frequency
 import typings.luminoPolling.mod.IPoll.State
@@ -128,7 +128,7 @@ class Poll_[T, U, V /* <: String */] protected ()
     * to allow poll instances to be composed into classes that schedule ticks.
     */
   def schedule(): js.Promise[Unit] = js.native
-  def schedule(next: Partial[(State[T, U, V]) with (AnonCancel[T, U, V])]): js.Promise[Unit] = js.native
+  def schedule(next: Partial[(State[T, U, V]) with (Cancel[T, U, V])]): js.Promise[Unit] = js.native
   /**
     * Starts the poll. Schedules `started` tick if necessary.
     *

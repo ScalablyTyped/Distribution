@@ -11,7 +11,7 @@ trait ListMembersResponse extends js.Object {
     */
   var Members: js.UndefOr[typings.awsSdk.guarddutyMod.Members] = js.native
   /**
-    * Pagination parameter to be used on the next list operation to retrieve more items.
+    * The pagination parameter to be used on the next list operation to retrieve more items.
     */
   var NextToken: js.UndefOr[String] = js.native
 }

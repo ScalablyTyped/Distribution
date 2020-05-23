@@ -19,8 +19,8 @@ object TimerCreateOptions {
   @scala.inline
   def apply(
     description: String = null,
-    frequency: Int | Double = null,
-    repeats: Int | Double = null,
+    frequency: js.UndefOr[Double] = js.undefined,
+    repeats: js.UndefOr[Double] = js.undefined,
     service_name: String = null,
     start_time: Date = null,
     user_id: String = null,
@@ -28,8 +28,8 @@ object TimerCreateOptions {
   ): TimerCreateOptions = {
     val __obj = js.Dynamic.literal()
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
-    if (repeats != null) __obj.updateDynamic("repeats")(repeats.asInstanceOf[js.Any])
+    if (!js.isUndefined(frequency)) __obj.updateDynamic("frequency")(frequency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeats)) __obj.updateDynamic("repeats")(repeats.get.asInstanceOf[js.Any])
     if (service_name != null) __obj.updateDynamic("service_name")(service_name.asInstanceOf[js.Any])
     if (start_time != null) __obj.updateDynamic("start_time")(start_time.asInstanceOf[js.Any])
     if (user_id != null) __obj.updateDynamic("user_id")(user_id.asInstanceOf[js.Any])

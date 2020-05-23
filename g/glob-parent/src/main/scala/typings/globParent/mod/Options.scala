@@ -12,7 +12,7 @@ object Options {
   @scala.inline
   def apply(flipBackslashes: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(flipBackslashes)) __obj.updateDynamic("flipBackslashes")(flipBackslashes.asInstanceOf[js.Any])
+    if (!js.isUndefined(flipBackslashes)) __obj.updateDynamic("flipBackslashes")(flipBackslashes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

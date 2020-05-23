@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Information summarized from a list of other resources
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait List extends DomainResource {
   /**
     * Contains extended information for property 'date'.

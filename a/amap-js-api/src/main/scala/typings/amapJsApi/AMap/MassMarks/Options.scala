@@ -32,13 +32,13 @@ object Options {
     alwayRender: js.UndefOr[Boolean] = js.undefined,
     cursor: String = null,
     map: Map = null,
-    zIndex: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
-    if (!js.isUndefined(alwayRender)) __obj.updateDynamic("alwayRender")(alwayRender.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwayRender)) __obj.updateDynamic("alwayRender")(alwayRender.get.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -6,24 +6,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.System.LauncherOptions")
-@js.native
-class LauncherOptions () extends ILauncherOptions {
-  /* CompleteClass */
-  override var contentType: String = js.native
-  /* CompleteClass */
-  override var desiredRemainingView: ViewSizePreference = js.native
-  /* CompleteClass */
-  override var displayApplicationPicker: Boolean = js.native
-  /* CompleteClass */
-  override var fallbackUri: Uri = js.native
-  /* CompleteClass */
-  override var preferredApplicationDisplayName: String = js.native
-  /* CompleteClass */
-  override var preferredApplicationPackageFamilyName: String = js.native
-  /* CompleteClass */
-  override var treatAsUntrusted: Boolean = js.native
-  /* CompleteClass */
-  override var uI: LauncherUIOptions = js.native
+trait LauncherOptions extends ILauncherOptions
+
+object LauncherOptions {
+  @scala.inline
+  def apply(
+    contentType: String,
+    desiredRemainingView: ViewSizePreference,
+    displayApplicationPicker: Boolean,
+    fallbackUri: Uri,
+    preferredApplicationDisplayName: String,
+    preferredApplicationPackageFamilyName: String,
+    treatAsUntrusted: Boolean,
+    uI: LauncherUIOptions
+  ): LauncherOptions = {
+    val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], desiredRemainingView = desiredRemainingView.asInstanceOf[js.Any], displayApplicationPicker = displayApplicationPicker.asInstanceOf[js.Any], fallbackUri = fallbackUri.asInstanceOf[js.Any], preferredApplicationDisplayName = preferredApplicationDisplayName.asInstanceOf[js.Any], preferredApplicationPackageFamilyName = preferredApplicationPackageFamilyName.asInstanceOf[js.Any], treatAsUntrusted = treatAsUntrusted.asInstanceOf[js.Any], uI = uI.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LauncherOptions]
+  }
 }
 

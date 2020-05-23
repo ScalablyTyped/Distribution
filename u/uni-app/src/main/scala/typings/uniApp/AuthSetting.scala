@@ -66,15 +66,15 @@ object AuthSetting {
     scopeDotwritePhotosAlbum: js.UndefOr[Boolean] = js.undefined
   ): AuthSetting = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(scopeDotaddress)) __obj.updateDynamic("scope.address")(scopeDotaddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(scopeDotcamera)) __obj.updateDynamic("scope.camera")(scopeDotcamera.asInstanceOf[js.Any])
-    if (!js.isUndefined(scopeDotinvoice)) __obj.updateDynamic("scope.invoice")(scopeDotinvoice.asInstanceOf[js.Any])
-    if (!js.isUndefined(scopeDotinvoiceTitle)) __obj.updateDynamic("scope.invoiceTitle")(scopeDotinvoiceTitle.asInstanceOf[js.Any])
-    if (!js.isUndefined(scopeDotrecord)) __obj.updateDynamic("scope.record")(scopeDotrecord.asInstanceOf[js.Any])
-    if (!js.isUndefined(scopeDotuserInfo)) __obj.updateDynamic("scope.userInfo")(scopeDotuserInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(scopeDotuserLocation)) __obj.updateDynamic("scope.userLocation")(scopeDotuserLocation.asInstanceOf[js.Any])
-    if (!js.isUndefined(scopeDotwerun)) __obj.updateDynamic("scope.werun")(scopeDotwerun.asInstanceOf[js.Any])
-    if (!js.isUndefined(scopeDotwritePhotosAlbum)) __obj.updateDynamic("scope.writePhotosAlbum")(scopeDotwritePhotosAlbum.asInstanceOf[js.Any])
+    if (!js.isUndefined(scopeDotaddress)) __obj.updateDynamic("scope.address")(scopeDotaddress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scopeDotcamera)) __obj.updateDynamic("scope.camera")(scopeDotcamera.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scopeDotinvoice)) __obj.updateDynamic("scope.invoice")(scopeDotinvoice.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scopeDotinvoiceTitle)) __obj.updateDynamic("scope.invoiceTitle")(scopeDotinvoiceTitle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scopeDotrecord)) __obj.updateDynamic("scope.record")(scopeDotrecord.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scopeDotuserInfo)) __obj.updateDynamic("scope.userInfo")(scopeDotuserInfo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scopeDotuserLocation)) __obj.updateDynamic("scope.userLocation")(scopeDotuserLocation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scopeDotwerun)) __obj.updateDynamic("scope.werun")(scopeDotwerun.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scopeDotwritePhotosAlbum)) __obj.updateDynamic("scope.writePhotosAlbum")(scopeDotwritePhotosAlbum.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthSetting]
   }
 }

@@ -33,12 +33,12 @@ object ParserOptions {
   def apply(
     allowEmpty: js.UndefOr[Boolean] = js.undefined,
     canParse: Boolean | RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean]) = null,
-    order: Int | Double = null
+    order: js.UndefOr[Double] = js.undefined
   ): ParserOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowEmpty)) __obj.updateDynamic("allowEmpty")(allowEmpty.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowEmpty)) __obj.updateDynamic("allowEmpty")(allowEmpty.get.asInstanceOf[js.Any])
     if (canParse != null) __obj.updateDynamic("canParse")(canParse.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (!js.isUndefined(order)) __obj.updateDynamic("order")(order.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParserOptions]
   }
 }

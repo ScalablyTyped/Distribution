@@ -36,19 +36,19 @@ object VideoMetadata {
   @scala.inline
   def apply(
     Codec: String = null,
-    DurationMillis: Int | Double = null,
+    DurationMillis: js.UndefOr[ULong] = js.undefined,
     Format: String = null,
-    FrameHeight: Int | Double = null,
-    FrameRate: Int | Double = null,
-    FrameWidth: Int | Double = null
+    FrameHeight: js.UndefOr[ULong] = js.undefined,
+    FrameRate: js.UndefOr[Float] = js.undefined,
+    FrameWidth: js.UndefOr[ULong] = js.undefined
   ): VideoMetadata = {
     val __obj = js.Dynamic.literal()
     if (Codec != null) __obj.updateDynamic("Codec")(Codec.asInstanceOf[js.Any])
-    if (DurationMillis != null) __obj.updateDynamic("DurationMillis")(DurationMillis.asInstanceOf[js.Any])
+    if (!js.isUndefined(DurationMillis)) __obj.updateDynamic("DurationMillis")(DurationMillis.get.asInstanceOf[js.Any])
     if (Format != null) __obj.updateDynamic("Format")(Format.asInstanceOf[js.Any])
-    if (FrameHeight != null) __obj.updateDynamic("FrameHeight")(FrameHeight.asInstanceOf[js.Any])
-    if (FrameRate != null) __obj.updateDynamic("FrameRate")(FrameRate.asInstanceOf[js.Any])
-    if (FrameWidth != null) __obj.updateDynamic("FrameWidth")(FrameWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(FrameHeight)) __obj.updateDynamic("FrameHeight")(FrameHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(FrameRate)) __obj.updateDynamic("FrameRate")(FrameRate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(FrameWidth)) __obj.updateDynamic("FrameWidth")(FrameWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoMetadata]
   }
 }

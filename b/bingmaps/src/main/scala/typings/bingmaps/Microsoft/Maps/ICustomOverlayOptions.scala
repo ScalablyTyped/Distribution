@@ -18,7 +18,7 @@ object ICustomOverlayOptions {
   @scala.inline
   def apply(beneathLabels: js.UndefOr[Boolean] = js.undefined): ICustomOverlayOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(beneathLabels)) __obj.updateDynamic("beneathLabels")(beneathLabels.asInstanceOf[js.Any])
+    if (!js.isUndefined(beneathLabels)) __obj.updateDynamic("beneathLabels")(beneathLabels.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomOverlayOptions]
   }
 }

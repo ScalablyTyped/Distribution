@@ -43,24 +43,20 @@ trait RequestOptions
 object RequestOptions {
   @scala.inline
   def apply(
-    StringDictionary: /**
-    * Additional request body values. It's only taken in
-    * consideration in `POST` and `PUT` requests.
-    */
-  /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     cacheable: js.UndefOr[Boolean] = js.undefined,
     data: Record[String, _] = null,
     headers: Record[String, String] = null,
     queryParameters: Record[String, _] = null,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): RequestOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(cacheable)) __obj.updateDynamic("cacheable")(cacheable.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheable)) __obj.updateDynamic("cacheable")(cacheable.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (queryParameters != null) __obj.updateDynamic("queryParameters")(queryParameters.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOptions]
   }
 }

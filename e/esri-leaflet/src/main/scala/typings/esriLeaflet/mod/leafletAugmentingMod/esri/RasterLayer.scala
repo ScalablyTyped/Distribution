@@ -17,7 +17,7 @@ abstract class RasterLayer () extends ImageOverlay_ {
     */
   def authenticate(token: String): this.type = js.native
   /**
-    * 	Returns the current opacity of the layer.
+    *     Returns the current opacity of the layer.
     */
   def getOpacity(): Double = js.native
   /**

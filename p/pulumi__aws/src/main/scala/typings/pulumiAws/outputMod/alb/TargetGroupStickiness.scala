@@ -22,11 +22,15 @@ trait TargetGroupStickiness extends js.Object {
 
 object TargetGroupStickiness {
   @scala.inline
-  def apply(`type`: String, cookieDuration: Int | Double = null, enabled: js.UndefOr[Boolean] = js.undefined): TargetGroupStickiness = {
+  def apply(
+    `type`: String,
+    cookieDuration: js.UndefOr[Double] = js.undefined,
+    enabled: js.UndefOr[Boolean] = js.undefined
+  ): TargetGroupStickiness = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (cookieDuration != null) __obj.updateDynamic("cookieDuration")(cookieDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(cookieDuration)) __obj.updateDynamic("cookieDuration")(cookieDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetGroupStickiness]
   }
 }

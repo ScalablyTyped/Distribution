@@ -14,16 +14,16 @@ trait HslaColor extends js.Object {
 object HslaColor {
   @scala.inline
   def apply(
-    alpha: Int | Double = null,
-    hue: Int | Double = null,
-    lightness: Int | Double = null,
-    saturation: Int | Double = null
+    alpha: js.UndefOr[Double] = js.undefined,
+    hue: js.UndefOr[Double] = js.undefined,
+    lightness: js.UndefOr[Double] = js.undefined,
+    saturation: js.UndefOr[Double] = js.undefined
   ): HslaColor = {
     val __obj = js.Dynamic.literal()
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    if (hue != null) __obj.updateDynamic("hue")(hue.asInstanceOf[js.Any])
-    if (lightness != null) __obj.updateDynamic("lightness")(lightness.asInstanceOf[js.Any])
-    if (saturation != null) __obj.updateDynamic("saturation")(saturation.asInstanceOf[js.Any])
+    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hue)) __obj.updateDynamic("hue")(hue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lightness)) __obj.updateDynamic("lightness")(lightness.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(saturation)) __obj.updateDynamic("saturation")(saturation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HslaColor]
   }
 }

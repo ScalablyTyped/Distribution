@@ -23,12 +23,12 @@ object JobInformation {
     key: String,
     name: String,
     next: Double,
-    endDate: Int | Double = null,
+    endDate: js.UndefOr[Double] = js.undefined,
     id: String = null,
     tz: String = null
   ): JobInformation = {
     val __obj = js.Dynamic.literal(cron = cron.asInstanceOf[js.Any], every = every.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any])
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(endDate)) __obj.updateDynamic("endDate")(endDate.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (tz != null) __obj.updateDynamic("tz")(tz.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobInformation]

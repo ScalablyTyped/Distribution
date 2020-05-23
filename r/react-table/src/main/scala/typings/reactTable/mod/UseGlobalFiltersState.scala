@@ -10,7 +10,7 @@ trait UseGlobalFiltersState[D /* <: js.Object */] extends js.Object {
 
 object UseGlobalFiltersState {
   @scala.inline
-  def apply[D /* <: js.Object */](globalFilter: js.Any): UseGlobalFiltersState[D] = {
+  def apply[D](globalFilter: js.Any): UseGlobalFiltersState[D] = {
     val __obj = js.Dynamic.literal(globalFilter = globalFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseGlobalFiltersState[D]]
   }

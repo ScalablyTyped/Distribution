@@ -1,6 +1,6 @@
 package typings.antDesignPro.mod
 
-import typings.antDesignPro.TypeofTagSelectOption
+import typings.antDesignPro.anon.TypeofTagSelectOption
 import typings.antDesignPro.tagSelectMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`

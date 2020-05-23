@@ -1,7 +1,7 @@
 package typings.ionicReact.ionToastMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ionicReact.ToastOptionsReactControll
+import typings.ionicReact.anon.ToastOptionsReactControll
 import typings.react.mod.ForwardRefExoticComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

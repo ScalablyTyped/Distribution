@@ -1,7 +1,7 @@
 package typings.reactImageMagnify.mod
 
 import typings.react.mod.CSSProperties
-import typings.reactImageMagnify.AnonHeight
+import typings.reactImageMagnify.anon.Height
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ trait ReactImageMagnifyProps extends js.Object {
     * Percentage is based on small image dimension. Number is pixels.
     * Not applied when enlargedImagePosition is set to 'over', the default for touch input.
     */
-  var enlargedImageContainerDimensions: js.UndefOr[AnonHeight] = js.undefined
+  var enlargedImageContainerDimensions: js.UndefOr[Height] = js.undefined
   /**
     * Style applied to enlarged image container element.
     */
@@ -161,17 +161,17 @@ object ReactImageMagnifyProps {
     className: String = null,
     enlargedImageClassName: String = null,
     enlargedImageContainerClassName: String = null,
-    enlargedImageContainerDimensions: AnonHeight = null,
+    enlargedImageContainerDimensions: Height = null,
     enlargedImageContainerStyle: CSSProperties = null,
     enlargedImagePortalId: String = null,
     enlargedImagePosition: String = null,
     enlargedImageStyle: CSSProperties = null,
-    fadeDurationInMs: Int | Double = null,
+    fadeDurationInMs: js.UndefOr[Double] = js.undefined,
     hintComponent: () => Unit = null,
     hintTextMouse: String = null,
     hintTextTouch: String = null,
-    hoverDelayInMs: Int | Double = null,
-    hoverOffDelayInMs: Int | Double = null,
+    hoverDelayInMs: js.UndefOr[Double] = js.undefined,
+    hoverOffDelayInMs: js.UndefOr[Double] = js.undefined,
     imageClassName: String = null,
     imageStyle: CSSProperties = null,
     isActivatedOnTouch: js.UndefOr[Boolean] = js.undefined,
@@ -179,8 +179,8 @@ object ReactImageMagnifyProps {
     isHintEnabled: js.UndefOr[Boolean] = js.undefined,
     lensComponent: () => Unit = null,
     lensStyle: CSSProperties = null,
-    pressDuration: Int | Double = null,
-    pressMoveThreshold: Int | Double = null,
+    pressDuration: js.UndefOr[Double] = js.undefined,
+    pressMoveThreshold: js.UndefOr[Double] = js.undefined,
     shouldHideHintAfterFirstActivation: js.UndefOr[Boolean] = js.undefined,
     shouldUsePositiveSpaceLens: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null
@@ -194,23 +194,23 @@ object ReactImageMagnifyProps {
     if (enlargedImagePortalId != null) __obj.updateDynamic("enlargedImagePortalId")(enlargedImagePortalId.asInstanceOf[js.Any])
     if (enlargedImagePosition != null) __obj.updateDynamic("enlargedImagePosition")(enlargedImagePosition.asInstanceOf[js.Any])
     if (enlargedImageStyle != null) __obj.updateDynamic("enlargedImageStyle")(enlargedImageStyle.asInstanceOf[js.Any])
-    if (fadeDurationInMs != null) __obj.updateDynamic("fadeDurationInMs")(fadeDurationInMs.asInstanceOf[js.Any])
+    if (!js.isUndefined(fadeDurationInMs)) __obj.updateDynamic("fadeDurationInMs")(fadeDurationInMs.get.asInstanceOf[js.Any])
     if (hintComponent != null) __obj.updateDynamic("hintComponent")(js.Any.fromFunction0(hintComponent))
     if (hintTextMouse != null) __obj.updateDynamic("hintTextMouse")(hintTextMouse.asInstanceOf[js.Any])
     if (hintTextTouch != null) __obj.updateDynamic("hintTextTouch")(hintTextTouch.asInstanceOf[js.Any])
-    if (hoverDelayInMs != null) __obj.updateDynamic("hoverDelayInMs")(hoverDelayInMs.asInstanceOf[js.Any])
-    if (hoverOffDelayInMs != null) __obj.updateDynamic("hoverOffDelayInMs")(hoverOffDelayInMs.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverDelayInMs)) __obj.updateDynamic("hoverDelayInMs")(hoverDelayInMs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverOffDelayInMs)) __obj.updateDynamic("hoverOffDelayInMs")(hoverOffDelayInMs.get.asInstanceOf[js.Any])
     if (imageClassName != null) __obj.updateDynamic("imageClassName")(imageClassName.asInstanceOf[js.Any])
     if (imageStyle != null) __obj.updateDynamic("imageStyle")(imageStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(isActivatedOnTouch)) __obj.updateDynamic("isActivatedOnTouch")(isActivatedOnTouch.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEnlargedImagePortalEnabledForTouch)) __obj.updateDynamic("isEnlargedImagePortalEnabledForTouch")(isEnlargedImagePortalEnabledForTouch.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHintEnabled)) __obj.updateDynamic("isHintEnabled")(isHintEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(isActivatedOnTouch)) __obj.updateDynamic("isActivatedOnTouch")(isActivatedOnTouch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEnlargedImagePortalEnabledForTouch)) __obj.updateDynamic("isEnlargedImagePortalEnabledForTouch")(isEnlargedImagePortalEnabledForTouch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHintEnabled)) __obj.updateDynamic("isHintEnabled")(isHintEnabled.get.asInstanceOf[js.Any])
     if (lensComponent != null) __obj.updateDynamic("lensComponent")(js.Any.fromFunction0(lensComponent))
     if (lensStyle != null) __obj.updateDynamic("lensStyle")(lensStyle.asInstanceOf[js.Any])
-    if (pressDuration != null) __obj.updateDynamic("pressDuration")(pressDuration.asInstanceOf[js.Any])
-    if (pressMoveThreshold != null) __obj.updateDynamic("pressMoveThreshold")(pressMoveThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldHideHintAfterFirstActivation)) __obj.updateDynamic("shouldHideHintAfterFirstActivation")(shouldHideHintAfterFirstActivation.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldUsePositiveSpaceLens)) __obj.updateDynamic("shouldUsePositiveSpaceLens")(shouldUsePositiveSpaceLens.asInstanceOf[js.Any])
+    if (!js.isUndefined(pressDuration)) __obj.updateDynamic("pressDuration")(pressDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pressMoveThreshold)) __obj.updateDynamic("pressMoveThreshold")(pressMoveThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldHideHintAfterFirstActivation)) __obj.updateDynamic("shouldHideHintAfterFirstActivation")(shouldHideHintAfterFirstActivation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldUsePositiveSpaceLens)) __obj.updateDynamic("shouldUsePositiveSpaceLens")(shouldUsePositiveSpaceLens.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactImageMagnifyProps]
   }

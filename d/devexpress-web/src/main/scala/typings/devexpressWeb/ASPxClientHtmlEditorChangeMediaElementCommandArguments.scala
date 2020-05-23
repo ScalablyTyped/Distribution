@@ -7,29 +7,41 @@ import scala.scalajs.js.annotation._
 /**
   * The base class for parameters related to inserting or changing media elements in the ASPxHtmlEditor.
   */
-@JSGlobal("ASPxClientHtmlEditorChangeMediaElementCommandArguments")
-@js.native
-class ASPxClientHtmlEditorChangeMediaElementCommandArguments protected () extends ASPxClientHtmlEditorCommandArguments {
-  protected def this(htmlEditor: ASPxClientHtmlEditor, selectedElement: js.Any) = this()
+trait ASPxClientHtmlEditorChangeMediaElementCommandArguments extends ASPxClientHtmlEditorCommandArguments {
   /**
     * Determines the position of the target media element.
     */
-  var align: String = js.native
+  var align: String
   /**
     * Defines the <a href="http://www.w3schools.com/tags/att_global_id.asp">HTML &quot;id&quot;</a> attribute of the target media element.
     */
-  var id: String = js.native
+  var id: String
   /**
     * Defines the source of the target media element.
     */
-  var src: String = js.native
+  var src: String
   /**
     * Contains the style settings defining the appearance of the target media element.
     */
-  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings = js.native
+  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings
   /**
     * Returns the name of the client-side command corresponding to the parameter.
     */
-  def GetCommandName(): String = js.native
+  def GetCommandName(): String
+}
+
+object ASPxClientHtmlEditorChangeMediaElementCommandArguments {
+  @scala.inline
+  def apply(
+    GetCommandName: () => String,
+    align: String,
+    id: String,
+    selectedElement: js.Any,
+    src: String,
+    styleSettings: ASPxClientHtmlEditorCommandStyleSettings
+  ): ASPxClientHtmlEditorChangeMediaElementCommandArguments = {
+    val __obj = js.Dynamic.literal(GetCommandName = js.Any.fromFunction0(GetCommandName), align = align.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], selectedElement = selectedElement.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], styleSettings = styleSettings.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientHtmlEditorChangeMediaElementCommandArguments]
+  }
 }
 

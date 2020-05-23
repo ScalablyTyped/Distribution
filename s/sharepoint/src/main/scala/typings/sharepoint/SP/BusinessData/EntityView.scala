@@ -8,9 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.BusinessData.EntityView")
 @js.native
-class EntityView () extends ClientObject {
+trait EntityView extends ClientObject {
   def getDefaultValues(): EntityFieldValueDictionary = js.native
   def getType(fieldDotNotation: String): StringResult = js.native
   def getTypeDescriptor(fieldDotNotation: String): TypeDescriptor = js.native

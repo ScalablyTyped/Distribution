@@ -1,5 +1,6 @@
 package typings.isErrorConstructor
 
+import typings.isErrorConstructor.anon.Call
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ object mod extends js.Object {
   // declare function isErrorConstructor(value: unknown): value is ErrorConstructor;
   // export = isErrorConstructor;
   @JSName("default")
-  var default_Original: AnonCall = js.native
+  var default_Original: Call = js.native
   /**
   	Check if a value is an error constructor.
   	@example

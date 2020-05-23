@@ -17,16 +17,16 @@ object RevoluteConstraintOptions {
     collideConnected: js.UndefOr[Boolean] = js.undefined,
     localPivotA: js.Tuple2[Double, Double] = null,
     localPivotB: js.Tuple2[Double, Double] = null,
-    maxForce: Int | Double = null,
+    maxForce: js.UndefOr[Double] = js.undefined,
     wakeUpBodies: js.UndefOr[Boolean] = js.undefined,
     worldPivot: js.Tuple2[Double, Double] = null
   ): RevoluteConstraintOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collideConnected)) __obj.updateDynamic("collideConnected")(collideConnected.asInstanceOf[js.Any])
+    if (!js.isUndefined(collideConnected)) __obj.updateDynamic("collideConnected")(collideConnected.get.asInstanceOf[js.Any])
     if (localPivotA != null) __obj.updateDynamic("localPivotA")(localPivotA.asInstanceOf[js.Any])
     if (localPivotB != null) __obj.updateDynamic("localPivotB")(localPivotB.asInstanceOf[js.Any])
-    if (maxForce != null) __obj.updateDynamic("maxForce")(maxForce.asInstanceOf[js.Any])
-    if (!js.isUndefined(wakeUpBodies)) __obj.updateDynamic("wakeUpBodies")(wakeUpBodies.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxForce)) __obj.updateDynamic("maxForce")(maxForce.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wakeUpBodies)) __obj.updateDynamic("wakeUpBodies")(wakeUpBodies.get.asInstanceOf[js.Any])
     if (worldPivot != null) __obj.updateDynamic("worldPivot")(worldPivot.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevoluteConstraintOptions]
   }

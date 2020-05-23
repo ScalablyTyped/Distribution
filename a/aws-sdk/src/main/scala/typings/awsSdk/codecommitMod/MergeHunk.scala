@@ -29,13 +29,13 @@ object MergeHunk {
   def apply(
     base: MergeHunkDetail = null,
     destination: MergeHunkDetail = null,
-    isConflict: js.UndefOr[Boolean] = js.undefined,
+    isConflict: js.UndefOr[IsHunkConflict] = js.undefined,
     source: MergeHunkDetail = null
   ): MergeHunk = {
     val __obj = js.Dynamic.literal()
     if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
     if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    if (!js.isUndefined(isConflict)) __obj.updateDynamic("isConflict")(isConflict.asInstanceOf[js.Any])
+    if (!js.isUndefined(isConflict)) __obj.updateDynamic("isConflict")(isConflict.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergeHunk]
   }

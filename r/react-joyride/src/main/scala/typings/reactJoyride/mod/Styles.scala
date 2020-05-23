@@ -1,7 +1,7 @@
 package typings.reactJoyride.mod
 
 import typings.react.mod.CSSProperties
-import typings.reactJoyride.AnonArrowColor
+import typings.reactJoyride.anon.ArrowColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait Styles extends js.Object {
   var buttonClose: js.UndefOr[CSSProperties] = js.undefined
   var buttonNext: js.UndefOr[CSSProperties] = js.undefined
   var buttonSkip: js.UndefOr[CSSProperties] = js.undefined
-  var options: js.UndefOr[AnonArrowColor] = js.undefined
+  var options: js.UndefOr[ArrowColor] = js.undefined
   var overlay: js.UndefOr[CSSProperties] = js.undefined
   var overlayLegacy: js.UndefOr[CSSProperties] = js.undefined
   var overlayLegacyCenter: js.UndefOr[CSSProperties] = js.undefined
@@ -38,7 +38,7 @@ object Styles {
     buttonClose: CSSProperties = null,
     buttonNext: CSSProperties = null,
     buttonSkip: CSSProperties = null,
-    options: AnonArrowColor = null,
+    options: ArrowColor = null,
     overlay: CSSProperties = null,
     overlayLegacy: CSSProperties = null,
     overlayLegacyCenter: CSSProperties = null,

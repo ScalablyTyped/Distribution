@@ -25,14 +25,14 @@ object OrdersCustomBatchRequestEntryCancelLineItem {
   def apply(
     amount: Price = null,
     lineItemId: String = null,
-    quantity: Int | Double = null,
+    quantity: js.UndefOr[Double] = js.undefined,
     reason: String = null,
     reasonText: String = null
   ): OrdersCustomBatchRequestEntryCancelLineItem = {
     val __obj = js.Dynamic.literal()
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
     if (lineItemId != null) __obj.updateDynamic("lineItemId")(lineItemId.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity.get.asInstanceOf[js.Any])
     if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     if (reasonText != null) __obj.updateDynamic("reasonText")(reasonText.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrdersCustomBatchRequestEntryCancelLineItem]

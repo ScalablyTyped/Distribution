@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`not-loaded`
 import typings.arcgisJsApi.arcgisJsApiStrings.failed
 import typings.arcgisJsApi.arcgisJsApiStrings.loaded
@@ -97,8 +96,4 @@ trait Loadable extends js.Object {
   def when(callback: js.Function): js.Promise[_] = js.native
   def when(callback: js.Function, errback: js.Function): js.Promise[_] = js.native
 }
-
-@JSGlobal("__esri.Loadable")
-@js.native
-object Loadable extends TopLevel[LoadableConstructor]
 

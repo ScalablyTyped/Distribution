@@ -1,5 +1,6 @@
 package typings.dwt
 
+import typings.dwt.anon.Detail
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -750,7 +751,7 @@ trait WebTwain extends js.Object {
     * @type {string}
     */
   var containerClass: String = js.native
-  /* ignored 
+  /* ignored
     style
     _AutoCropMethod
     */
@@ -951,7 +952,6 @@ trait WebTwain extends js.Object {
     * @param {Array} indices indices specifies which images are to be converted to base64.
     * @param {EnumDWT_ImageType} enumImageType the image format in which the images are to be converted to base64.
     * @return {Base64Result}
-    
     ConvertToBase64(indices: number[], enumImageType: EnumDWT_ImageType): Base64Result;
     */
   /**
@@ -1272,7 +1272,7 @@ trait WebTwain extends js.Object {
   def FeedPage(): Boolean = js.native
   /**
     * Specifies a tag and use it to filter images
-    * @method WebTwain#FilterImagesByTag     
+    * @method WebTwain#FilterImagesByTag
     * @param {string} tagName specifies a tag
     * @return {boolean}
     */
@@ -1395,7 +1395,7 @@ trait WebTwain extends js.Object {
     * Return the runtime license info.
     * @method WebTwain#GetLicenseInfo
     */
-  def GetLicenseInfo(): AnonDetail = js.native
+  def GetLicenseInfo(): Detail = js.native
   /**
     * Returns the index of the selected image.
     * @method WebTwain#GetSelectedImageIndex
@@ -2112,7 +2112,7 @@ trait WebTwain extends js.Object {
     * @return {boolean}
     */
   def MoveImage(sSourceImageIndex: Double, sTargetImageIndex: Double): Boolean = js.native
-  /*ignored 
+  /*ignored
     OnRefreshUI
     */
   /**
@@ -2614,7 +2614,7 @@ trait WebTwain extends js.Object {
     * @param {string} elEditorDIV Specifies a DIV by its ID to put the editor in
     * @param {number} width Specifies the width of the DIV
     * @param {number} height Specifies the height of the DIV
-    * @param {boolean} bHideToolBar Specifies whether to show the toolbar or not 
+    * @param {boolean} bHideToolBar Specifies whether to show the toolbar or not
     * @return {boolean}
     */
   def ShowImageEditor(): Boolean = js.native
@@ -2657,7 +2657,7 @@ trait WebTwain extends js.Object {
     * @return {boolean}
     */
   def UnregisterEvent(name: String, evt: js.Object): Boolean = js.native
-  /*ingored    
+  /*ingored
     SourceNameItems
     */
   /**

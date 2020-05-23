@@ -21,7 +21,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/indexeddb_mutation_queue", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_mutation_queue", JSImport.Namespace)
 @js.native
 object indexeddbMutationQueueMod extends js.Object {
   @js.native
@@ -166,8 +166,7 @@ object indexeddbMutationQueueMod extends js.Object {
       * `removeMutationBatches()` has been called. Secondary clients return a
       * cached result until `removeCachedMutationKeys()` is invoked.
       */
-    /* CompleteClass */
-    override def lookupMutationKeys(transaction: PersistenceTransaction, batchId: BatchId): PersistencePromise[DocumentKeySet_ | Null] = js.native
+    def lookupMutationKeys(transaction: PersistenceTransaction, batchId: BatchId): PersistencePromise[DocumentKeySet_ | Null] = js.native
     /**
       * Performs a consistency check, examining the mutation queue for any
       * leaks, if possible.
@@ -182,8 +181,7 @@ object indexeddbMutationQueueMod extends js.Object {
       * the corresponding cache entries are cleared when an acknowledged or
       * rejected batch is removed from the mutation queue.
       */
-    /* CompleteClass */
-    override def removeCachedMutationKeys(batchId: BatchId): Unit = js.native
+    def removeCachedMutationKeys(batchId: BatchId): Unit = js.native
     /**
       * Removes the given mutation batch from the queue. This is useful in two
       * circumstances:

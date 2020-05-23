@@ -1,7 +1,5 @@
 package typings.blueprintjsCore.iconMod
 
-import typings.blueprintjsCore.blueprintjsCoreNumbers.`16`
-import typings.blueprintjsCore.blueprintjsCoreNumbers.`20`
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.react.mod.DOMAttributes
 import typings.std.HTMLElement
@@ -21,8 +19,8 @@ class Icon ()
 @JSImport("@blueprintjs/core/lib/esm/components/icon/icon", "Icon")
 @js.native
 object Icon extends js.Object {
-  val SIZE_LARGE: `20` = js.native
-  val SIZE_STANDARD: `16` = js.native
+  val SIZE_LARGE: /* 20 */ Double = js.native
+  val SIZE_STANDARD: /* 16 */ Double = js.native
   var displayName: String = js.native
 }
 

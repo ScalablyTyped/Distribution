@@ -34,13 +34,13 @@ object StartContentModerationRequest {
     Video: Video,
     ClientRequestToken: ClientRequestToken = null,
     JobTag: JobTag = null,
-    MinConfidence: Int | Double = null,
+    MinConfidence: js.UndefOr[Percent] = js.undefined,
     NotificationChannel: NotificationChannel = null
   ): StartContentModerationRequest = {
     val __obj = js.Dynamic.literal(Video = Video.asInstanceOf[js.Any])
     if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken.asInstanceOf[js.Any])
     if (JobTag != null) __obj.updateDynamic("JobTag")(JobTag.asInstanceOf[js.Any])
-    if (MinConfidence != null) __obj.updateDynamic("MinConfidence")(MinConfidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinConfidence)) __obj.updateDynamic("MinConfidence")(MinConfidence.get.asInstanceOf[js.Any])
     if (NotificationChannel != null) __obj.updateDynamic("NotificationChannel")(NotificationChannel.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartContentModerationRequest]
   }

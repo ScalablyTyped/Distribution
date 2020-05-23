@@ -22,10 +22,14 @@ trait ListGatewaysRequest extends js.Object {
 
 object ListGatewaysRequest {
   @scala.inline
-  def apply(GatewayGroupArn: Arn = null, MaxResults: Int | Double = null, NextToken: NextToken = null): ListGatewaysRequest = {
+  def apply(
+    GatewayGroupArn: Arn = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    NextToken: NextToken = null
+  ): ListGatewaysRequest = {
     val __obj = js.Dynamic.literal()
     if (GatewayGroupArn != null) __obj.updateDynamic("GatewayGroupArn")(GatewayGroupArn.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGatewaysRequest]
   }

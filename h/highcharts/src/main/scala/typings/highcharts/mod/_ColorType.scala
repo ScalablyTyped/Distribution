@@ -22,11 +22,11 @@ object _ColorType {
   def PatternObject(
     pattern: PatternOptionsObject,
     animation: Boolean | AnimationOptionsObject = null,
-    patternIndex: Int | Double = null
+    patternIndex: js.UndefOr[Double] = js.undefined
   ): _ColorType = {
     val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (patternIndex != null) __obj.updateDynamic("patternIndex")(patternIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(patternIndex)) __obj.updateDynamic("patternIndex")(patternIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ColorType]
   }
 }

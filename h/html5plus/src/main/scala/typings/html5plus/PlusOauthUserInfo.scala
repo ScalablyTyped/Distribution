@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 /**
   * 登录授权用户信息
   * 用于保存登录授权用户的信息。
-  * 	此对象仅定义标准属性，登录授权认证服务可扩展自定义数据。
-  * 	例如“微信”登录授权服务，可能包括以下自定义数据：
-  * 	privilege - 用户特权信息，json数组，如微信沃卡用户为（chinaunicom）；
-  * 	unionid - 用户统一标识，针对一个微信开放平台帐号下的应用，同一用户的unionid是唯一的。
+  *     此对象仅定义标准属性，登录授权认证服务可扩展自定义数据。
+  *     例如“微信”登录授权服务，可能包括以下自定义数据：
+  *     privilege - 用户特权信息，json数组，如微信沃卡用户为（chinaunicom）；
+  *     unionid - 用户统一标识，针对一个微信开放平台帐号下的应用，同一用户的unionid是唯一的。
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
   */
@@ -74,7 +74,7 @@ trait PlusOauthUserInfo extends js.Object {
   /**
     * 登录授权用户的性别
     * 1为男性，2为女性。
-    * 	如果登录授权服务不支持此属性，则返回"undefined"。
+    *     如果登录授权服务不支持此属性，则返回"undefined"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */

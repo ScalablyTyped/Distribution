@@ -14,11 +14,11 @@ object GameRequestDialogResponse {
   def apply(
     request: String,
     to: js.Array[String],
-    error_code: Int | Double = null,
+    error_code: js.UndefOr[Double] = js.undefined,
     error_message: String = null
   ): GameRequestDialogResponse = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
-    if (error_code != null) __obj.updateDynamic("error_code")(error_code.asInstanceOf[js.Any])
+    if (!js.isUndefined(error_code)) __obj.updateDynamic("error_code")(error_code.get.asInstanceOf[js.Any])
     if (error_message != null) __obj.updateDynamic("error_message")(error_message.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameRequestDialogResponse]
   }

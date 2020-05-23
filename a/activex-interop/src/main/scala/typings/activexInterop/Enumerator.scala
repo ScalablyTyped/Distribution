@@ -1,6 +1,5 @@
 package typings.activexInterop
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +29,11 @@ trait Enumerator[T] extends js.Object {
   def moveNext(): Unit
 }
 
-@JSGlobal("Enumerator")
-@js.native
-object Enumerator extends TopLevel[EnumeratorConstructor]
+object Enumerator {
+  @scala.inline
+  def apply[T](atEnd: () => Boolean, item: () => T, moveFirst: () => Unit, moveNext: () => Unit): Enumerator[T] = {
+    val __obj = js.Dynamic.literal(atEnd = js.Any.fromFunction0(atEnd), item = js.Any.fromFunction0(item), moveFirst = js.Any.fromFunction0(moveFirst), moveNext = js.Any.fromFunction0(moveNext))
+    __obj.asInstanceOf[Enumerator[T]]
+  }
+}
 

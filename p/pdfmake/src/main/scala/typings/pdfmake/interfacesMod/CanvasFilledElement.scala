@@ -12,10 +12,14 @@ trait CanvasFilledElement extends js.Object {
 
 object CanvasFilledElement {
   @scala.inline
-  def apply(color: String = null, fillOpacity: Int | Double = null, linearGradient: js.Array[String] = null): CanvasFilledElement = {
+  def apply(
+    color: String = null,
+    fillOpacity: js.UndefOr[Double] = js.undefined,
+    linearGradient: js.Array[String] = null
+  ): CanvasFilledElement = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(fillOpacity)) __obj.updateDynamic("fillOpacity")(fillOpacity.get.asInstanceOf[js.Any])
     if (linearGradient != null) __obj.updateDynamic("linearGradient")(linearGradient.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanvasFilledElement]
   }

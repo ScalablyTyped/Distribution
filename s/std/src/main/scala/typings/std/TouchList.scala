@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.NumberDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,8 +13,4 @@ trait TouchList extends /* index */ NumberDictionary[Touch] {
   val length: Double = js.native
   def item(index: Double): Touch | Null = js.native
 }
-
-@JSGlobal("TouchList")
-@js.native
-object TouchList extends Instantiable0[TouchList]
 

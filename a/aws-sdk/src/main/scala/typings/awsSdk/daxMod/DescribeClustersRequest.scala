@@ -22,10 +22,14 @@ trait DescribeClustersRequest extends js.Object {
 
 object DescribeClustersRequest {
   @scala.inline
-  def apply(ClusterNames: ClusterNameList = null, MaxResults: Int | Double = null, NextToken: String = null): DescribeClustersRequest = {
+  def apply(
+    ClusterNames: ClusterNameList = null,
+    MaxResults: js.UndefOr[IntegerOptional] = js.undefined,
+    NextToken: String = null
+  ): DescribeClustersRequest = {
     val __obj = js.Dynamic.literal()
     if (ClusterNames != null) __obj.updateDynamic("ClusterNames")(ClusterNames.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeClustersRequest]
   }

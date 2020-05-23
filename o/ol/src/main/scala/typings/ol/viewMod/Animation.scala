@@ -30,20 +30,20 @@ object Animation {
     start: Double,
     anchor: Coordinate = null,
     sourceCenter: Coordinate = null,
-    sourceResolution: Int | Double = null,
-    sourceRotation: Int | Double = null,
+    sourceResolution: js.UndefOr[Double] = js.undefined,
+    sourceRotation: js.UndefOr[Double] = js.undefined,
     targetCenter: Coordinate = null,
-    targetResolution: Int | Double = null,
-    targetRotation: Int | Double = null
+    targetResolution: js.UndefOr[Double] = js.undefined,
+    targetRotation: js.UndefOr[Double] = js.undefined
   ): Animation = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), complete = complete.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], easing = js.Any.fromFunction1(easing), start = start.asInstanceOf[js.Any])
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
     if (sourceCenter != null) __obj.updateDynamic("sourceCenter")(sourceCenter.asInstanceOf[js.Any])
-    if (sourceResolution != null) __obj.updateDynamic("sourceResolution")(sourceResolution.asInstanceOf[js.Any])
-    if (sourceRotation != null) __obj.updateDynamic("sourceRotation")(sourceRotation.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceResolution)) __obj.updateDynamic("sourceResolution")(sourceResolution.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceRotation)) __obj.updateDynamic("sourceRotation")(sourceRotation.get.asInstanceOf[js.Any])
     if (targetCenter != null) __obj.updateDynamic("targetCenter")(targetCenter.asInstanceOf[js.Any])
-    if (targetResolution != null) __obj.updateDynamic("targetResolution")(targetResolution.asInstanceOf[js.Any])
-    if (targetRotation != null) __obj.updateDynamic("targetRotation")(targetRotation.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetResolution)) __obj.updateDynamic("targetResolution")(targetResolution.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetRotation)) __obj.updateDynamic("targetRotation")(targetRotation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Animation]
   }
 }

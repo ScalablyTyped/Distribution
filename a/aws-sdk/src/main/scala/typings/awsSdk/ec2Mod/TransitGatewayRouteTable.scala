@@ -40,8 +40,8 @@ object TransitGatewayRouteTable {
   @scala.inline
   def apply(
     CreationTime: DateTime = null,
-    DefaultAssociationRouteTable: js.UndefOr[scala.Boolean] = js.undefined,
-    DefaultPropagationRouteTable: js.UndefOr[scala.Boolean] = js.undefined,
+    DefaultAssociationRouteTable: js.UndefOr[Boolean] = js.undefined,
+    DefaultPropagationRouteTable: js.UndefOr[Boolean] = js.undefined,
     State: TransitGatewayRouteTableState = null,
     Tags: TagList = null,
     TransitGatewayId: String = null,
@@ -49,8 +49,8 @@ object TransitGatewayRouteTable {
   ): TransitGatewayRouteTable = {
     val __obj = js.Dynamic.literal()
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(DefaultAssociationRouteTable)) __obj.updateDynamic("DefaultAssociationRouteTable")(DefaultAssociationRouteTable.asInstanceOf[js.Any])
-    if (!js.isUndefined(DefaultPropagationRouteTable)) __obj.updateDynamic("DefaultPropagationRouteTable")(DefaultPropagationRouteTable.asInstanceOf[js.Any])
+    if (!js.isUndefined(DefaultAssociationRouteTable)) __obj.updateDynamic("DefaultAssociationRouteTable")(DefaultAssociationRouteTable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DefaultPropagationRouteTable)) __obj.updateDynamic("DefaultPropagationRouteTable")(DefaultPropagationRouteTable.get.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     if (TransitGatewayId != null) __obj.updateDynamic("TransitGatewayId")(TransitGatewayId.asInstanceOf[js.Any])

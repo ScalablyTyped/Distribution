@@ -11,10 +11,10 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(chunkBegin: Int | Double = null, chunkLength: Int | Double = null): Options = {
+  def apply(chunkBegin: js.UndefOr[Double] = js.undefined, chunkLength: js.UndefOr[Double] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (chunkBegin != null) __obj.updateDynamic("chunkBegin")(chunkBegin.asInstanceOf[js.Any])
-    if (chunkLength != null) __obj.updateDynamic("chunkLength")(chunkLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(chunkBegin)) __obj.updateDynamic("chunkBegin")(chunkBegin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(chunkLength)) __obj.updateDynamic("chunkLength")(chunkLength.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

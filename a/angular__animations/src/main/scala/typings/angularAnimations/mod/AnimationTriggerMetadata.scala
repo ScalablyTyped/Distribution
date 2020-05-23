@@ -1,6 +1,6 @@
 package typings.angularAnimations.mod
 
-import typings.angularAnimations.Anon0
+import typings.angularAnimations.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait AnimationTriggerMetadata extends AnimationMetadata {
     * developer-defined parameters that provide styling defaults and
     * can be overridden on invocation. Default delay is 0.
     */
-  var options: Anon0 | Null
+  var options: `0` | Null
 }
 
 object AnimationTriggerMetadata {
@@ -28,11 +28,10 @@ object AnimationTriggerMetadata {
     definitions: js.Array[AnimationMetadata],
     name: String,
     `type`: AnimationMetadataType,
-    options: Anon0 = null
+    options: `0` = null
   ): AnimationTriggerMetadata = {
-    val __obj = js.Dynamic.literal(definitions = definitions.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(definitions = definitions.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationTriggerMetadata]
   }
 }

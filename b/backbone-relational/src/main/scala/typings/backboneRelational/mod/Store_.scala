@@ -2,7 +2,8 @@ package typings.backboneRelational.mod
 
 import typings.backbone.mod.Collection
 import typings.backbone.mod.EventsMixin
-import typings.backboneRelational.TypeofModel
+import typings.backbone.mod.ModelSetOptions
+import typings.backboneRelational.anon.TypeofModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +16,7 @@ class Store_ () extends EventsMixin {
   def addReverseRelation(relation: js.Any): Unit = js.native
   def addSubModels(subModelTypes: Model, superModelType: Model): Unit = js.native
   def checkId(model: Model, id: js.Any): Unit = js.native
-  def getCollection(`type`: Model, create: Boolean): Collection[typings.backbone.mod.Model] = js.native
+  def getCollection(`type`: Model, create: Boolean): Collection[typings.backbone.mod.Model[_, ModelSetOptions]] = js.native
   def getObjectByName(name: String): js.Any = js.native
   def initializeRelation(model: js.Any, relation: js.Any, options: js.Any): js.Any = js.native
   def processOrphanRelations(): Unit = js.native
@@ -23,7 +24,7 @@ class Store_ () extends EventsMixin {
   def removeModelScope(scope: js.Any): Unit = js.native
   def reset(): Unit = js.native
   def resolveIdForItem(`type`: js.Any, item: js.Any): js.Any = js.native
-  def retroFitRelation(relation: Model, create: Boolean): Collection[typings.backbone.mod.Model] = js.native
+  def retroFitRelation(relation: Model, create: Boolean): Collection[typings.backbone.mod.Model[_, ModelSetOptions]] = js.native
   def setupSuperModel(modelType: Model): Unit = js.native
   def unregister(`type`: Collection[Model]): Unit = js.native
   def unregister(`type`: TypeofModel): Unit = js.native

@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
 trait ConditionalColorScaleCriterion extends js.Object {
   /**
     *
-    * HTML color code representation of the color scale color. E.g. #FF0000 represents Red.
+    * HTML color code representation of the color scale color. e.g., #FF0000 represents Red.
     *
     * [Api set: ExcelApi 1.6]
     */

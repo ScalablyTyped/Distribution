@@ -35,8 +35,7 @@ object EventContent {
     topic: String = null,
     url: String = null
   ): EventContent = {
-    val __obj = js.Dynamic.literal(is_direct = is_direct.asInstanceOf[js.Any])
-    if (avatar_url != null) __obj.updateDynamic("avatar_url")(avatar_url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(is_direct = is_direct.asInstanceOf[js.Any], avatar_url = avatar_url.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (displayname != null) __obj.updateDynamic("displayname")(displayname.asInstanceOf[js.Any])
     if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])

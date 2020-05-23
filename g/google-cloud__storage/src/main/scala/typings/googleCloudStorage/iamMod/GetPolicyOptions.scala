@@ -11,9 +11,9 @@ trait GetPolicyOptions extends js.Object {
 
 object GetPolicyOptions {
   @scala.inline
-  def apply(requestedPolicyVersion: Int | Double = null, userProject: String = null): GetPolicyOptions = {
+  def apply(requestedPolicyVersion: js.UndefOr[Double] = js.undefined, userProject: String = null): GetPolicyOptions = {
     val __obj = js.Dynamic.literal()
-    if (requestedPolicyVersion != null) __obj.updateDynamic("requestedPolicyVersion")(requestedPolicyVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestedPolicyVersion)) __obj.updateDynamic("requestedPolicyVersion")(requestedPolicyVersion.get.asInstanceOf[js.Any])
     if (userProject != null) __obj.updateDynamic("userProject")(userProject.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPolicyOptions]
   }

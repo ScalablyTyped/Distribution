@@ -1,6 +1,6 @@
 package typings.hoxy.mod
 
-import typings.hoxy.PartialSlow
+import typings.hoxy.anon.PartialSlow
 import typings.node.Buffer
 import typings.node.streamMod.Writable
 import typings.std.Record

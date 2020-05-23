@@ -5,11 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.dataviz.drawing.MultiPath")
 @js.native
-class MultiPath ()
+trait MultiPath
   extends typings.kendoUi.kendo.drawing.Element {
-  def this(options: MultiPathOptions) = this()
   @JSName("options")
   var options_MultiPath: MultiPathOptions = js.native
   var paths: js.Any = js.native

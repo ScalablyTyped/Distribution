@@ -1,11 +1,11 @@
 package typings.officeJs.Word
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
 import typings.officeJs.Word.Interfaces.TableBorderData
 import typings.officeJs.Word.Interfaces.TableBorderLoadOptions
 import typings.officeJs.Word.Interfaces.TableBorderUpdateData
+import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.DashDotStroked
 import typings.officeJs.officeJsStrings.Dashed
 import typings.officeJs.officeJsStrings.DashedSmall
@@ -40,9 +40,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: WordApi 1.3]
   */
-@JSGlobal("Word.TableBorder")
 @js.native
-class TableBorder () extends ClientObject {
+trait TableBorder extends ClientObject {
   /**
     *
     * Gets or sets the table border color.
@@ -85,8 +84,8 @@ class TableBorder () extends ClientObject {
   def load(): TableBorder = js.native
   def load(option: String): TableBorder = js.native
   def load(option: js.Array[String]): TableBorder = js.native
-  def load(option: AnonExpand): TableBorder = js.native
   def load(option: TableBorderLoadOptions): TableBorder = js.native
+  def load(option: Expand): TableBorder = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *
     * @remarks

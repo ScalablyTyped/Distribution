@@ -33,14 +33,14 @@ object ListSuppressedDestinationsRequest {
   def apply(
     EndDate: Timestamp = null,
     NextToken: NextToken = null,
-    PageSize: Int | Double = null,
+    PageSize: js.UndefOr[MaxItems] = js.undefined,
     Reasons: SuppressionListReasons = null,
     StartDate: Timestamp = null
   ): ListSuppressedDestinationsRequest = {
     val __obj = js.Dynamic.literal()
     if (EndDate != null) __obj.updateDynamic("EndDate")(EndDate.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize.get.asInstanceOf[js.Any])
     if (Reasons != null) __obj.updateDynamic("Reasons")(Reasons.asInstanceOf[js.Any])
     if (StartDate != null) __obj.updateDynamic("StartDate")(StartDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSuppressedDestinationsRequest]

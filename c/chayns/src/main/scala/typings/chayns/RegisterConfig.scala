@@ -26,16 +26,16 @@ object RegisterConfig {
     autoResize: js.UndefOr[Boolean] = js.undefined,
     callbackPrefix: String = null,
     cssPrefix: String = null,
-    initialHeight: Int | Double = null,
+    initialHeight: js.UndefOr[Double] = js.undefined,
     strictMode: js.UndefOr[Boolean] = js.undefined
   ): RegisterConfig = {
     val __obj = js.Dynamic.literal()
     if (appName != null) __obj.updateDynamic("appName")(appName.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize.get.asInstanceOf[js.Any])
     if (callbackPrefix != null) __obj.updateDynamic("callbackPrefix")(callbackPrefix.asInstanceOf[js.Any])
     if (cssPrefix != null) __obj.updateDynamic("cssPrefix")(cssPrefix.asInstanceOf[js.Any])
-    if (initialHeight != null) __obj.updateDynamic("initialHeight")(initialHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictMode)) __obj.updateDynamic("strictMode")(strictMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialHeight)) __obj.updateDynamic("initialHeight")(initialHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictMode)) __obj.updateDynamic("strictMode")(strictMode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterConfig]
   }
 }

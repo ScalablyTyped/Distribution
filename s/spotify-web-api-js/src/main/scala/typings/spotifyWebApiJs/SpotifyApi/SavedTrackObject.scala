@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * Saved Track Object in Playlists
-  * [](https://developer.spotify.com/web-api/object-model/)
+  * [](https://developer.spotify.com/documentation/web-api/reference/object-model/#saved-track-object)
   */
 trait SavedTrackObject extends js.Object {
   var added_at: String

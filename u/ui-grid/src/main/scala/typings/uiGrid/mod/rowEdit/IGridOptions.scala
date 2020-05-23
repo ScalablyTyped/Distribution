@@ -15,9 +15,9 @@ trait IGridOptions extends js.Object {
 
 object IGridOptions {
   @scala.inline
-  def apply(rowEditWaitInterval: Int | Double = null): IGridOptions = {
+  def apply(rowEditWaitInterval: js.UndefOr[Double] = js.undefined): IGridOptions = {
     val __obj = js.Dynamic.literal()
-    if (rowEditWaitInterval != null) __obj.updateDynamic("rowEditWaitInterval")(rowEditWaitInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowEditWaitInterval)) __obj.updateDynamic("rowEditWaitInterval")(rowEditWaitInterval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridOptions]
   }
 }

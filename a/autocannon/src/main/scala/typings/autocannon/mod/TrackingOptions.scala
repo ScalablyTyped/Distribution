@@ -45,9 +45,9 @@ object TrackingOptions {
     val __obj = js.Dynamic.literal()
     if (outputStream != null) __obj.updateDynamic("outputStream")(outputStream.asInstanceOf[js.Any])
     if (progressBarString != null) __obj.updateDynamic("progressBarString")(progressBarString.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderLatencyTable)) __obj.updateDynamic("renderLatencyTable")(renderLatencyTable.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderProgressBar)) __obj.updateDynamic("renderProgressBar")(renderProgressBar.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderResultsTable)) __obj.updateDynamic("renderResultsTable")(renderResultsTable.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderLatencyTable)) __obj.updateDynamic("renderLatencyTable")(renderLatencyTable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderProgressBar)) __obj.updateDynamic("renderProgressBar")(renderProgressBar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderResultsTable)) __obj.updateDynamic("renderResultsTable")(renderResultsTable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackingOptions]
   }
 }

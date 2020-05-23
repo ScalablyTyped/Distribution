@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Slides
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,20 +27,6 @@ object LineCategory extends js.Object {
   
   @js.native
   sealed trait UNSUPPORTED extends LineCategory
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[LineCategory with Double] = js.native
-  /* 2 */ @js.native
-  object BENT extends TopLevel[BENT with Double]
-  
-  /* 3 */ @js.native
-  object CURVED extends TopLevel[CURVED with Double]
-  
-  /* 1 */ @js.native
-  object STRAIGHT extends TopLevel[STRAIGHT with Double]
-  
-  /* 0 */ @js.native
-  object UNSUPPORTED extends TopLevel[UNSUPPORTED with Double]
   
 }
 

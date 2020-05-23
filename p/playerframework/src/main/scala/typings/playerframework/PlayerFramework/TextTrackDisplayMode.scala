@@ -1,6 +1,5 @@
 package typings.playerframework.PlayerFramework
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,42 +11,28 @@ sealed trait TextTrackDisplayMode extends js.Object
 @js.native
 object TextTrackDisplayMode extends js.Object {
   /**
-  		* Indicates tracks should be displayed using both custom and native UI. This is useful for debugging.
-  		*/
+    * Indicates tracks should be displayed using both custom and native UI. This is useful for debugging.
+    */
   @js.native
   sealed trait all extends TextTrackDisplayMode
   
   /**
-  		* Indicates tracks should be displayed using custom UI.
-  		*/
+    * Indicates tracks should be displayed using custom UI.
+    */
   @js.native
   sealed trait custom extends TextTrackDisplayMode
   
   /**
-  		* Indicates tracks should be displayed using native UI.
-  		*/
+    * Indicates tracks should be displayed using native UI.
+    */
   @js.native
   sealed trait native extends TextTrackDisplayMode
   
   /**
-  		* Indicates tracks should not be displayed.
-  		*/
+    * Indicates tracks should not be displayed.
+    */
   @js.native
   sealed trait none extends TextTrackDisplayMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TextTrackDisplayMode with Double] = js.native
-  /* 3 */ @js.native
-  object all extends TopLevel[all with Double]
-  
-  /* 1 */ @js.native
-  object custom extends TopLevel[custom with Double]
-  
-  /* 2 */ @js.native
-  object native extends TopLevel[native with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
   
 }
 

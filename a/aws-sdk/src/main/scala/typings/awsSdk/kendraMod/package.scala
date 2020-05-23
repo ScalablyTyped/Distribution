@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 package object kendraMod {
   type AdditionalResultAttributeList = js.Array[typings.awsSdk.kendraMod.AdditionalResultAttribute]
   type AdditionalResultAttributeValueType = typings.awsSdk.awsSdkStrings.TEXT_WITH_HIGHLIGHTS_VALUE | java.lang.String
+  type AmazonResourceName = java.lang.String
   type AttributeFilterList = js.Array[typings.awsSdk.kendraMod.AttributeFilter]
   type BatchDeleteDocumentResponseFailedDocuments = js.Array[typings.awsSdk.kendraMod.BatchDeleteDocumentResponseFailedDocument]
   type BatchPutDocumentResponseFailedDocuments = js.Array[typings.awsSdk.kendraMod.BatchPutDocumentResponseFailedDocument]
@@ -42,6 +43,7 @@ package object kendraMod {
   type DataSourceStatus = typings.awsSdk.kendraMod._DataSourceStatus | java.lang.String
   type DataSourceSummaryList = js.Array[typings.awsSdk.kendraMod.DataSourceSummary]
   type DataSourceSyncJobHistoryList = js.Array[typings.awsSdk.kendraMod.DataSourceSyncJob]
+  type DataSourceSyncJobId = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.FAILED
     - typings.awsSdk.awsSdkStrings.SUCCEEDED
@@ -49,6 +51,7 @@ package object kendraMod {
     - typings.awsSdk.awsSdkStrings.INCOMPLETE
     - typings.awsSdk.awsSdkStrings.STOPPING
     - typings.awsSdk.awsSdkStrings.ABORTED
+    - typings.awsSdk.awsSdkStrings.SYNCING_INDEXING
     - java.lang.String
   */
   type DataSourceSyncJobStatus = typings.awsSdk.kendraMod._DataSourceSyncJobStatus | java.lang.String
@@ -57,6 +60,9 @@ package object kendraMod {
     - typings.awsSdk.awsSdkStrings.S3
     - typings.awsSdk.awsSdkStrings.SHAREPOINT
     - typings.awsSdk.awsSdkStrings.DATABASE
+    - typings.awsSdk.awsSdkStrings.SALESFORCE
+    - typings.awsSdk.awsSdkStrings.ONEDRIVE
+    - typings.awsSdk.awsSdkStrings.SERVICENOW
     - java.lang.String
   */
   type DataSourceType = typings.awsSdk.kendraMod._DataSourceType | java.lang.String
@@ -117,6 +123,12 @@ package object kendraMod {
   type HighlightList = js.Array[typings.awsSdk.kendraMod.Highlight]
   type Importance = scala.Double
   type IndexConfigurationSummaryList = js.Array[typings.awsSdk.kendraMod.IndexConfigurationSummary]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.DEVELOPER_EDITION
+    - typings.awsSdk.awsSdkStrings.ENTERPRISE_EDITION
+    - java.lang.String
+  */
+  type IndexEdition = typings.awsSdk.kendraMod._IndexEdition | java.lang.String
   type IndexFieldName = java.lang.String
   type IndexId = java.lang.String
   type IndexName = java.lang.String
@@ -125,11 +137,13 @@ package object kendraMod {
     - typings.awsSdk.awsSdkStrings.ACTIVE
     - typings.awsSdk.awsSdkStrings.DELETING
     - typings.awsSdk.awsSdkStrings.FAILED
+    - typings.awsSdk.awsSdkStrings.UPDATING
     - typings.awsSdk.awsSdkStrings.SYSTEM_UPDATING
     - java.lang.String
   */
   type IndexStatus = typings.awsSdk.kendraMod._IndexStatus | java.lang.String
   type IndexedQuestionAnswersCount = scala.Double
+  type IndexedTextBytes = scala.Double
   type IndexedTextDocumentsCount = scala.Double
   type Integer = scala.Double
   type KmsKeyId = java.lang.String
@@ -138,7 +152,10 @@ package object kendraMod {
   type MaxResultsIntegerForListDataSourcesRequest = scala.Double
   type MaxResultsIntegerForListFaqsRequest = scala.Double
   type MaxResultsIntegerForListIndicesRequest = scala.Double
+  type MetricValue = java.lang.String
   type NextToken = java.lang.String
+  type OneDriveUser = java.lang.String
+  type OneDriveUserList = js.Array[typings.awsSdk.kendraMod.OneDriveUser]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.ASCENDING
     - typings.awsSdk.awsSdkStrings.DESCENDING
@@ -153,6 +170,7 @@ package object kendraMod {
     - java.lang.String
   */
   type PrincipalType = typings.awsSdk.kendraMod._PrincipalType | java.lang.String
+  type QueryCapacityUnit = scala.Double
   type QueryId = java.lang.String
   type QueryResultItemList = js.Array[typings.awsSdk.kendraMod.QueryResultItem]
   /* Rewritten from type alias, can be one of: 
@@ -180,15 +198,67 @@ package object kendraMod {
   type RoleArn = java.lang.String
   type S3BucketName = java.lang.String
   type S3ObjectKey = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ACTIVE_USER
+    - typings.awsSdk.awsSdkStrings.STANDARD_USER
+    - java.lang.String
+  */
+  type SalesforceChatterFeedIncludeFilterType = typings.awsSdk.kendraMod._SalesforceChatterFeedIncludeFilterType | java.lang.String
+  type SalesforceChatterFeedIncludeFilterTypes = js.Array[typings.awsSdk.kendraMod.SalesforceChatterFeedIncludeFilterType]
+  type SalesforceCustomKnowledgeArticleTypeConfigurationList = js.Array[typings.awsSdk.kendraMod.SalesforceCustomKnowledgeArticleTypeConfiguration]
+  type SalesforceCustomKnowledgeArticleTypeName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.DRAFT
+    - typings.awsSdk.awsSdkStrings.PUBLISHED
+    - typings.awsSdk.awsSdkStrings.ARCHIVED
+    - java.lang.String
+  */
+  type SalesforceKnowledgeArticleState = typings.awsSdk.kendraMod._SalesforceKnowledgeArticleState | java.lang.String
+  type SalesforceKnowledgeArticleStateList = js.Array[typings.awsSdk.kendraMod.SalesforceKnowledgeArticleState]
+  type SalesforceStandardObjectConfigurationList = js.Array[typings.awsSdk.kendraMod.SalesforceStandardObjectConfiguration]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ACCOUNT
+    - typings.awsSdk.awsSdkStrings.CAMPAIGN
+    - typings.awsSdk.awsSdkStrings.CASE
+    - typings.awsSdk.awsSdkStrings.CONTACT
+    - typings.awsSdk.awsSdkStrings.CONTRACT
+    - typings.awsSdk.awsSdkStrings.DOCUMENT
+    - typings.awsSdk.awsSdkStrings.GROUP
+    - typings.awsSdk.awsSdkStrings.IDEA
+    - typings.awsSdk.awsSdkStrings.LEAD
+    - typings.awsSdk.awsSdkStrings.OPPORTUNITY
+    - typings.awsSdk.awsSdkStrings.PARTNER
+    - typings.awsSdk.awsSdkStrings.PRICEBOOK
+    - typings.awsSdk.awsSdkStrings.PRODUCT
+    - typings.awsSdk.awsSdkStrings.PROFILE
+    - typings.awsSdk.awsSdkStrings.SOLUTION
+    - typings.awsSdk.awsSdkStrings.TASK
+    - typings.awsSdk.awsSdkStrings.USER
+    - java.lang.String
+  */
+  type SalesforceStandardObjectName = typings.awsSdk.kendraMod._SalesforceStandardObjectName | java.lang.String
   type ScanSchedule = java.lang.String
   type SecretArn = java.lang.String
   type SecurityGroupIdList = js.Array[typings.awsSdk.kendraMod.VpcSecurityGroupId]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.LONDON
+    - typings.awsSdk.awsSdkStrings.OTHERS
+    - java.lang.String
+  */
+  type ServiceNowBuildVersionType = typings.awsSdk.kendraMod._ServiceNowBuildVersionType | java.lang.String
+  type ServiceNowHostUrl = java.lang.String
   type SharePointUrlList = js.Array[typings.awsSdk.kendraMod.Url]
   type SharePointVersion = typings.awsSdk.awsSdkStrings.SHAREPOINT_ONLINE | java.lang.String
+  type StorageCapacityUnit = scala.Double
   type String = java.lang.String
   type SubnetId = java.lang.String
   type SubnetIdList = js.Array[typings.awsSdk.kendraMod.SubnetId]
   type TableName = java.lang.String
+  type TagKey = java.lang.String
+  type TagKeyList = js.Array[typings.awsSdk.kendraMod.TagKey]
+  type TagList = js.Array[typings.awsSdk.kendraMod.Tag]
+  type TagValue = java.lang.String
+  type TenantDomain = java.lang.String
   type Timestamp = typings.std.Date
   type Title = java.lang.String
   type Url = java.lang.String

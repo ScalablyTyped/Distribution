@@ -33,7 +33,7 @@ object AlertableOptions {
     if (cancelButton != null) __obj.updateDynamic("cancelButton")(cancelButton.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (hide != null) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.get.asInstanceOf[js.Any])
     if (modal != null) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
     if (okButton != null) __obj.updateDynamic("okButton")(okButton.asInstanceOf[js.Any])
     if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])

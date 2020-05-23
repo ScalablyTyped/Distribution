@@ -38,7 +38,7 @@ object BingProviderOptions {
     inclnb: `-1` | `0` | `1` = null,
     include: String = null,
     includeNeighborhood: `-1` | `0` | `1` = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[Double] = js.undefined,
     ul: String = null,
     umv: String = null,
     ur: String = null,
@@ -55,7 +55,7 @@ object BingProviderOptions {
     if (inclnb != null) __obj.updateDynamic("inclnb")(inclnb.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (includeNeighborhood != null) __obj.updateDynamic("includeNeighborhood")(includeNeighborhood.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (ul != null) __obj.updateDynamic("ul")(ul.asInstanceOf[js.Any])
     if (umv != null) __obj.updateDynamic("umv")(umv.asInstanceOf[js.Any])
     if (ur != null) __obj.updateDynamic("ur")(ur.asInstanceOf[js.Any])

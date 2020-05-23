@@ -22,10 +22,14 @@ trait DescribeBrokerEngineTypesRequest extends js.Object {
 
 object DescribeBrokerEngineTypesRequest {
   @scala.inline
-  def apply(EngineType: string = null, MaxResults: Int | Double = null, NextToken: string = null): DescribeBrokerEngineTypesRequest = {
+  def apply(
+    EngineType: string = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    NextToken: string = null
+  ): DescribeBrokerEngineTypesRequest = {
     val __obj = js.Dynamic.literal()
     if (EngineType != null) __obj.updateDynamic("EngineType")(EngineType.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeBrokerEngineTypesRequest]
   }

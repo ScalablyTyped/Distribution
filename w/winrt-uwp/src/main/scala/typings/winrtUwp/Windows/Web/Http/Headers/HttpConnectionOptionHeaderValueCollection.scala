@@ -1,18 +1,17 @@
 package typings.winrtUwp.Windows.Web.Http.Headers
 
 import typings.std.Array
-import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsHttpConnectionOptionHeaderValue
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import typings.winrtUwp.anon.Index
+import typings.winrtUwp.anon.ItemsHttpConnectionOptionHeaderValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the value of the Connection HTTP header on an HTTP request. */
-@JSGlobal("Windows.Web.Http.Headers.HttpConnectionOptionHeaderValueCollection")
 @js.native
-abstract class HttpConnectionOptionHeaderValueCollection () extends Array[HttpConnectionOptionHeaderValue] {
+trait HttpConnectionOptionHeaderValueCollection extends Array[HttpConnectionOptionHeaderValue] {
   /** Gets the number of HttpConnectionOptionHeaderValue objects in the collection. */
   var size: Double = js.native
   /**
@@ -37,13 +36,13 @@ abstract class HttpConnectionOptionHeaderValueCollection () extends Array[HttpCo
     * Retrieves the HttpConnectionOptionHeaderValue items that start at the specified index in the collection.
     * @param startIndex The zero-based index of the start of the HttpConnectionOptionHeaderValue items in the HttpConnectionOptionHeaderValueCollection .
     */
-  def getMany(startIndex: Double): AnonItemsHttpConnectionOptionHeaderValue = js.native
+  def getMany(startIndex: Double): ItemsHttpConnectionOptionHeaderValue = js.native
   /**
     * Returns an immutable view of the HttpConnectionOptionHeaderValueCollection .
     * @return The view of the HttpConnectionOptionHeaderValueCollection .
     */
   def getView(): IVectorView[HttpConnectionOptionHeaderValue] = js.native
-  def indexOf(value: HttpConnectionOptionHeaderValue, extra: js.Any*): AnonIndex = js.native
+  def indexOf(value: HttpConnectionOptionHeaderValue, extra: js.Any*): Index = js.native
   /**
     * Determines the index of a specific item in the collection.
     * @param item The object to locate in the collection.

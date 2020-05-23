@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * 对机动车行驶证正本所有关键字段进行识别
-		 */
+  * 对机动车行驶证正本所有关键字段进行识别
+  */
 trait ocrVehicleLicenseOptions
   extends BaseOptions[js.Any, js.Any] {
    // 是否检测图像旋转，可检验图像的选装方向和旋转角度。true：检测旋转角度并矫正识别。针对摆放情况不可控制的情况建议本参数置为true; false:不检测旋转角度，默认不检测。
@@ -33,7 +33,7 @@ object ocrVehicleLicenseOptions {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
     if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (!js.isUndefined(detect_direction)) __obj.updateDynamic("detect_direction")(detect_direction.asInstanceOf[js.Any])
+    if (!js.isUndefined(detect_direction)) __obj.updateDynamic("detect_direction")(detect_direction.get.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[ocrVehicleLicenseOptions]

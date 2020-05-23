@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Vex.Flow.Fraction")
 @js.native
-class Fraction protected () extends js.Object {
-  def this(numerator: Double, denominator: Double) = this()
+trait Fraction extends js.Object {
   def abs(): Fraction = js.native
   def add(param1: Double, param2: Double): Fraction = js.native
   def add(param1: Fraction, param2: Fraction): Fraction = js.native
@@ -31,14 +29,5 @@ class Fraction protected () extends js.Object {
   def toMixedString(): String = js.native
   def toSimplifiedString(): String = js.native
   def value(): Double = js.native
-}
-
-/* static members */
-@JSGlobal("Vex.Flow.Fraction")
-@js.native
-object Fraction extends js.Object {
-  def GCD(a: Double, b: Double): Double = js.native
-  def LCM(a: Double, b: Double): Double = js.native
-  def LCMM(a: Double, b: Double): Double = js.native
 }
 

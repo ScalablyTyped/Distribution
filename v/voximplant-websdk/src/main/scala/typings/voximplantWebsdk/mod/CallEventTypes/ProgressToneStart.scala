@@ -7,12 +7,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		*	Event dispatched when progress tone playback starts
-		*/
+  *    Event dispatched when progress tone playback starts
+  */
 trait ProgressToneStart extends VoxImplantCallEvent {
   /**
-  			*	Call that dispatched the event
-  			*/
+    *    Call that dispatched the event
+    */
   var call: Call
 }
 

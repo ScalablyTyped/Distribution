@@ -67,7 +67,7 @@ object PricingInfo {
     if (latestTicketingTime != null) __obj.updateDynamic("latestTicketingTime")(latestTicketingTime.asInstanceOf[js.Any])
     if (passengers != null) __obj.updateDynamic("passengers")(passengers.asInstanceOf[js.Any])
     if (ptc != null) __obj.updateDynamic("ptc")(ptc.asInstanceOf[js.Any])
-    if (!js.isUndefined(refundable)) __obj.updateDynamic("refundable")(refundable.asInstanceOf[js.Any])
+    if (!js.isUndefined(refundable)) __obj.updateDynamic("refundable")(refundable.get.asInstanceOf[js.Any])
     if (saleFareTotal != null) __obj.updateDynamic("saleFareTotal")(saleFareTotal.asInstanceOf[js.Any])
     if (saleTaxTotal != null) __obj.updateDynamic("saleTaxTotal")(saleTaxTotal.asInstanceOf[js.Any])
     if (saleTotal != null) __obj.updateDynamic("saleTotal")(saleTotal.asInstanceOf[js.Any])

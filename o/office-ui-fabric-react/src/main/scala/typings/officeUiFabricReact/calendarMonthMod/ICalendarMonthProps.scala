@@ -45,7 +45,7 @@ object ICalendarMonthProps {
     maxDate: Date = null,
     minDate: Date = null,
     onHeaderSelect: /* focus */ Boolean => Unit = null,
-    ref: LegacyRef[CalendarMonth] = null,
+    ref: js.UndefOr[Null | LegacyRef[CalendarMonth]] = js.undefined,
     today: Date = null,
     yearPickerHidden: js.UndefOr[Boolean] = js.undefined
   ): ICalendarMonthProps = {
@@ -55,9 +55,9 @@ object ICalendarMonthProps {
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
     if (onHeaderSelect != null) __obj.updateDynamic("onHeaderSelect")(js.Any.fromFunction1(onHeaderSelect))
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (today != null) __obj.updateDynamic("today")(today.asInstanceOf[js.Any])
-    if (!js.isUndefined(yearPickerHidden)) __obj.updateDynamic("yearPickerHidden")(yearPickerHidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(yearPickerHidden)) __obj.updateDynamic("yearPickerHidden")(yearPickerHidden.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICalendarMonthProps]
   }
 }

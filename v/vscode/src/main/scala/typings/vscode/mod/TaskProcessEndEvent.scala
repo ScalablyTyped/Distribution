@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait TaskProcessEndEvent extends js.Object {
   /**
-  		 * The task execution for which the process got started.
-  		 */
+    * The task execution for which the process got started.
+    */
   val execution: TaskExecution
   /**
-  		 * The process's exit code.
-  		 */
+    * The process's exit code.
+    */
   val exitCode: Double
 }
 

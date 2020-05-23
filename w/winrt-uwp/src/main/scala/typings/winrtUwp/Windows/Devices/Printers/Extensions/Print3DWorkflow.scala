@@ -9,9 +9,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a customized printing experience for a 3D printer. */
-@JSGlobal("Windows.Devices.Printers.Extensions.Print3DWorkflow")
 @js.native
-abstract class Print3DWorkflow () extends js.Object {
+trait Print3DWorkflow extends js.Object {
   /** Gets the device identifier of the 3D printer. */
   var deviceID: String = js.native
   /** Gets or sets a value that indicates the 3D object is ready for printing and no further user interaction is required. */

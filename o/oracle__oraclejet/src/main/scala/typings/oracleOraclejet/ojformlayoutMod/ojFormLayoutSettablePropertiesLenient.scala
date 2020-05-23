@@ -24,12 +24,12 @@ trait ojFormLayoutSettablePropertiesLenient
 object ojFormLayoutSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     direction: column | row = null,
     labelEdge: start | top = null,
     labelWidth: String = null,
     labelWrapping: truncate | wrap = null,
-    maxColumns: Int | Double = null
+    maxColumns: js.UndefOr[Double] = js.undefined
   ): ojFormLayoutSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
@@ -37,7 +37,7 @@ object ojFormLayoutSettablePropertiesLenient {
     if (labelEdge != null) __obj.updateDynamic("labelEdge")(labelEdge.asInstanceOf[js.Any])
     if (labelWidth != null) __obj.updateDynamic("labelWidth")(labelWidth.asInstanceOf[js.Any])
     if (labelWrapping != null) __obj.updateDynamic("labelWrapping")(labelWrapping.asInstanceOf[js.Any])
-    if (maxColumns != null) __obj.updateDynamic("maxColumns")(maxColumns.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxColumns)) __obj.updateDynamic("maxColumns")(maxColumns.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojFormLayoutSettablePropertiesLenient]
   }
 }

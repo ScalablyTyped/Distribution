@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait RetrieveMultipleResponse extends js.Object {
   /**
-  			 * An array of JSON objects, where each object represents the retrieved entity record containing attributes and their values
-  			 */
+    * An array of JSON objects, where each object represents the retrieved entity record containing attributes and their values
+    */
   var entities: js.Array[Entity]
   /**
-  			 * If the number of records being retrieved is more than the value specified in the 'maxPageSize' parameter in the request, this attribute returns the URL to return next set of records.
-  			 */
+    * If the number of records being retrieved is more than the value specified in the 'maxPageSize' parameter in the request, this attribute returns the URL to return next set of records.
+    */
   var nextLink: String
 }
 

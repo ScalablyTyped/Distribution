@@ -1,26 +1,26 @@
 package typings.arangodb.ArangoDB
 
-import typings.arangodb.AnonBytesRead
-import typings.arangodb.AnonCount
-import typings.arangodb.AnonDeletion
-import typings.arangodb.AnonFileSize
+import typings.arangodb.anon.BytesRead
+import typings.arangodb.anon.Count
+import typings.arangodb.anon.Deletion
+import typings.arangodb.anon.FileSize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CollectionFigures extends js.Object {
-  var alive: AnonCount
-  var attributes: AnonCount
-  var compactionStatus: AnonBytesRead
-  var compactors: AnonFileSize
-  var datafiles: AnonFileSize
-  var dead: AnonDeletion
+  var alive: Count
+  var attributes: Count
+  var compactionStatus: BytesRead
+  var compactors: FileSize
+  var datafiles: FileSize
+  var dead: Deletion
   var documentReferences: Double
-  var indexes: AnonCount
-  var journals: AnonFileSize
+  var indexes: Count
+  var journals: FileSize
   var lastTick: Double
-  var shapefiles: AnonFileSize
-  var shapes: AnonCount
+  var shapefiles: FileSize
+  var shapes: Count
   var uncollectedLogfileEntries: Double
   var waitingFor: String
 }
@@ -28,18 +28,18 @@ trait CollectionFigures extends js.Object {
 object CollectionFigures {
   @scala.inline
   def apply(
-    alive: AnonCount,
-    attributes: AnonCount,
-    compactionStatus: AnonBytesRead,
-    compactors: AnonFileSize,
-    datafiles: AnonFileSize,
-    dead: AnonDeletion,
+    alive: Count,
+    attributes: Count,
+    compactionStatus: BytesRead,
+    compactors: FileSize,
+    datafiles: FileSize,
+    dead: Deletion,
     documentReferences: Double,
-    indexes: AnonCount,
-    journals: AnonFileSize,
+    indexes: Count,
+    journals: FileSize,
     lastTick: Double,
-    shapefiles: AnonFileSize,
-    shapes: AnonCount,
+    shapefiles: FileSize,
+    shapes: Count,
     uncollectedLogfileEntries: Double,
     waitingFor: String
   ): CollectionFigures = {

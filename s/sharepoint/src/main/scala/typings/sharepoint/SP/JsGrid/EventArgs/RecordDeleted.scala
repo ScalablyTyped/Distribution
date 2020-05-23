@@ -6,12 +6,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.JsGrid.EventArgs.RecordDeleted")
-@js.native
-class RecordDeleted protected () extends IEventArgs {
-  def this(recordKey: Double, recordIdx: Double, changeKey: IChangeKey) = this()
-  var changeKey: IChangeKey = js.native
-  var recordIdx: Double = js.native
-  var recordKey: Double = js.native
+trait RecordDeleted extends IEventArgs {
+  var changeKey: IChangeKey
+  var recordIdx: Double
+  var recordKey: Double
+}
+
+object RecordDeleted {
+  @scala.inline
+  def apply(changeKey: IChangeKey, recordIdx: Double, recordKey: Double): RecordDeleted = {
+    val __obj = js.Dynamic.literal(changeKey = changeKey.asInstanceOf[js.Any], recordIdx = recordIdx.asInstanceOf[js.Any], recordKey = recordKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RecordDeleted]
+  }
 }
 

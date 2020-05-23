@@ -1,21 +1,20 @@
 package typings.matrixJsSdk.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.matrixJsSdk.AnonAllowJoin
-import typings.matrixJsSdk.AnonAvatarurl
-import typings.matrixJsSdk.AnonBody
-import typings.matrixJsSdk.AnonCallback
-import typings.matrixJsSdk.AnonDisablePresence
-import typings.matrixJsSdk.AnonFilter
-import typings.matrixJsSdk.AnonInviteSignUrl
-import typings.matrixJsSdk.AnonKeys
-import typings.matrixJsSdk.AnonLimit
-import typings.matrixJsSdk.AnonLimited
-import typings.matrixJsSdk.AnonLongdescription
-import typings.matrixJsSdk.AnonReplacementroom
-import typings.matrixJsSdk.AnonRoomalias
-import typings.matrixJsSdk.AnonStatusmsg
-import typings.matrixJsSdk.AnonTerm
+import typings.matrixJsSdk.anon.AllowJoin
+import typings.matrixJsSdk.anon.Avatarurl
+import typings.matrixJsSdk.anon.Body
+import typings.matrixJsSdk.anon.Callback
+import typings.matrixJsSdk.anon.DisablePresence
+import typings.matrixJsSdk.anon.InviteSignUrl
+import typings.matrixJsSdk.anon.Keys
+import typings.matrixJsSdk.anon.Limit
+import typings.matrixJsSdk.anon.Limited
+import typings.matrixJsSdk.anon.Longdescription
+import typings.matrixJsSdk.anon.Replacementroom
+import typings.matrixJsSdk.anon.Roomalias
+import typings.matrixJsSdk.anon.Statusmsg
+import typings.matrixJsSdk.anon.Term
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -62,8 +61,8 @@ class MatrixClient () extends EventEmitter {
   def createFilter(content: js.Object): js.Promise[Filter] = js.native
   def createGroup(content: js.Object): js.Promise[StringDictionary[String]] = js.native
   def createKeyBackupVersion(info: js.Object): js.Promise[js.Object] = js.native
-  def createRoom(options: CreateRoomOptions): js.Promise[AnonRoomalias] = js.native
-  def createRoom(options: CreateRoomOptions, callback: MatrixCallback): js.Promise[AnonRoomalias] = js.native
+  def createRoom(options: CreateRoomOptions): js.Promise[Roomalias] = js.native
+  def createRoom(options: CreateRoomOptions, callback: MatrixCallback): js.Promise[Roomalias] = js.native
   def deactivateAccount(auth: js.Object, erase: Boolean): js.Promise[Unit] = js.native
   def deleteAlias(alias: String): js.Promise[Unit] = js.native
   def deleteAlias(alias: String, callback: MatrixCallback): js.Promise[Unit] = js.native
@@ -126,9 +125,9 @@ class MatrixClient () extends EventEmitter {
   def getOrCreateFilter(filterName: String, filter: Filter): js.Promise[String] = js.native
   def getPresenceList(): js.Promise[js.Array[js.Object]] = js.native
   def getPresenceList(callback: MatrixCallback): js.Promise[js.Array[js.Object]] = js.native
-  def getProfileInfo(userId: String): js.Promise[AnonAvatarurl] = js.native
-  def getProfileInfo(userId: String, info: String): js.Promise[AnonAvatarurl] = js.native
-  def getProfileInfo(userId: String, info: String, callback: MatrixCallback): js.Promise[AnonAvatarurl] = js.native
+  def getProfileInfo(userId: String): js.Promise[Avatarurl] = js.native
+  def getProfileInfo(userId: String, info: String): js.Promise[Avatarurl] = js.native
+  def getProfileInfo(userId: String, info: String, callback: MatrixCallback): js.Promise[Avatarurl] = js.native
   def getPublicisedGroups(userIds: js.Array[String]): js.Promise[js.Object] = js.native
   def getPushActionsForEvent(event: MatrixEvent): PushAction = js.native
   def getPushRules(): js.Promise[js.Object] = js.native
@@ -187,8 +186,8 @@ class MatrixClient () extends EventEmitter {
   def isUsernameAvailable(username: String): js.Promise[Boolean] = js.native
   def joinGroup(groupId: String): js.Promise[Unit] = js.native
   def joinRoom(roomIdOrAlias: String): js.Promise[Room] = js.native
-  def joinRoom(roomIdOrAlias: String, opts: AnonInviteSignUrl): js.Promise[Room] = js.native
-  def joinRoom(roomIdOrAlias: String, opts: AnonInviteSignUrl, callback: MatrixCallback): js.Promise[Room] = js.native
+  def joinRoom(roomIdOrAlias: String, opts: InviteSignUrl): js.Promise[Room] = js.native
+  def joinRoom(roomIdOrAlias: String, opts: InviteSignUrl, callback: MatrixCallback): js.Promise[Room] = js.native
   def kick(roomId: String, userId: String): js.Promise[Unit] = js.native
   def kick(roomId: String, userId: String, reason: String): js.Promise[Unit] = js.native
   def kick(roomId: String, userId: String, reason: String, callback: MatrixCallback): js.Promise[Unit] = js.native
@@ -224,8 +223,8 @@ class MatrixClient () extends EventEmitter {
   def paginateEventTimeline(eventTimeline: EventTimeline, opts: js.Object): js.Promise[Boolean] = js.native
   def peekInRoom(roomId: String): js.Promise[js.Object] = js.native
   def prepareKeyBackupVersion(password: String): js.Promise[js.Object] = js.native
-  def publicRooms(options: AnonFilter): js.Promise[Unit] = js.native
-  def publicRooms(options: AnonFilter, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[Unit] = js.native
+  def publicRooms(options: typings.matrixJsSdk.anon.Filter): js.Promise[Unit] = js.native
+  def publicRooms(options: typings.matrixJsSdk.anon.Filter, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[Unit] = js.native
   def redactEvent(roomId: String, eventId: String, txnIdopt: String): js.Promise[Unit] = js.native
   def redactEvent(roomId: String, eventId: String, txnIdopt: String, callback: MatrixCallback): js.Promise[Unit] = js.native
   def register(
@@ -300,12 +299,12 @@ class MatrixClient () extends EventEmitter {
   def scheduleAllGroupSessionsForBackup(): Unit = js.native
   def scrollback(room: Room, limit: Double): js.Promise[Room] = js.native
   def scrollback(room: Room, limit: Double, callback: MatrixCallback): js.Promise[Room] = js.native
-  def search(opts: AnonBody): js.Promise[Unit] = js.native
-  def search(opts: AnonBody, callback: MatrixCallback): js.Promise[Unit] = js.native
-  def searchMessageText(opts: AnonKeys): js.Promise[Unit] = js.native
-  def searchMessageText(opts: AnonKeys, callback: MatrixCallback): js.Promise[Unit] = js.native
-  def searchRoomEvents(opts: AnonTerm): js.Promise[js.Object] = js.native
-  def searchUserDirectory(opts: AnonLimit): js.Promise[AnonLimited] = js.native
+  def search(opts: Body): js.Promise[Unit] = js.native
+  def search(opts: Body, callback: MatrixCallback): js.Promise[Unit] = js.native
+  def searchMessageText(opts: Keys): js.Promise[Unit] = js.native
+  def searchMessageText(opts: Keys, callback: MatrixCallback): js.Promise[Unit] = js.native
+  def searchRoomEvents(opts: Term): js.Promise[js.Object] = js.native
+  def searchUserDirectory(opts: Limit): js.Promise[Limited] = js.native
   def sendEmoteMessage(roomId: String, body: String, txnId: String): js.Promise[Unit] = js.native
   def sendEmoteMessage(roomId: String, body: String, txnId: String, callback: MatrixCallback): js.Promise[Unit] = js.native
   def sendEvent(roomId: String, eventType: EventType, content: js.Object, txnId: String): js.Promise[Unit] = js.native
@@ -360,10 +359,10 @@ class MatrixClient () extends EventEmitter {
   def setForceTURN(forceTURN: Boolean): Unit = js.native
   def setGlobalBlacklistUnverifiedDevices(value: Boolean): Unit = js.native
   def setGroupJoinPolicy(groupId: String, policy: js.Object): js.Promise[Unit] = js.native
-  def setGroupProfile(groupId: String, profile: AnonLongdescription): js.Promise[Unit] = js.native
+  def setGroupProfile(groupId: String, profile: Longdescription): js.Promise[Unit] = js.native
   def setGroupPublicity(groupId: String, isPublic: Boolean): js.Promise[Unit] = js.native
   def setGuest(isGuest: Boolean): Unit = js.native
-  def setGuestAccess(roomId: String, opts: AnonAllowJoin): js.Promise[Unit] = js.native
+  def setGuestAccess(roomId: String, opts: AllowJoin): js.Promise[Unit] = js.native
   def setIgnoredUsers(userIds: js.Array[String]): js.Promise[js.Object] = js.native
   def setIgnoredUsers(userIds: js.Array[String], callback: MatrixCallback): js.Promise[js.Object] = js.native
   def setNotifTimelineSet(notifTimelineSet: EventTimelineSet): Unit = js.native
@@ -371,8 +370,8 @@ class MatrixClient () extends EventEmitter {
   def setPassword(authDict: js.Object, newPassword: String, callback: MatrixCallback): js.Promise[Unit] = js.native
   def setPowerLevel(roomId: String, userId: String, powerLevel: Double, event: MatrixEvent): js.Promise[Unit] = js.native
   def setPowerLevel(roomId: String, userId: String, powerLevel: Double, event: MatrixEvent, callback: MatrixCallback): js.Promise[Unit] = js.native
-  def setPresence(opts: AnonStatusmsg): js.Promise[Unit] = js.native
-  def setPresence(opts: AnonStatusmsg, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[Unit] = js.native
+  def setPresence(opts: Statusmsg): js.Promise[Unit] = js.native
+  def setPresence(opts: Statusmsg, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[Unit] = js.native
   def setProfileInfo(info: String, data: js.Object): js.Promise[Unit] = js.native
   def setProfileInfo(info: String, data: js.Object, callback: MatrixCallback): js.Promise[Unit] = js.native
   def setPushRuleActions(scope: String, kind: String, ruleId: String, actions: js.Array[String]): js.Promise[js.Object] = js.native
@@ -399,7 +398,7 @@ class MatrixClient () extends EventEmitter {
   def setRoomTopic(roomId: String, topic: String, callback: MatrixCallback): js.Promise[Unit] = js.native
   def startClient(): js.Promise[Unit] = js.native
   def startClient(opts: Double): js.Promise[Unit] = js.native
-  def startClient(opts: AnonDisablePresence): js.Promise[Unit] = js.native
+  def startClient(opts: DisablePresence): js.Promise[Unit] = js.native
   def stopClient(): Unit = js.native
   def stopPeeking(): Unit = js.native
   def submitMsisdnToken(sid: String, clientSecret: String, token: String): js.Promise[js.Object] = js.native
@@ -410,8 +409,8 @@ class MatrixClient () extends EventEmitter {
   def unban(roomId: String, userId: String): js.Promise[Unit] = js.native
   def unban(roomId: String, userId: String, callback: MatrixCallback): js.Promise[Unit] = js.native
   def updateGroupRoomVisibility(groupId: String, roomId: String, isPublic: Boolean): js.Promise[Unit] = js.native
-  def upgradeRoom(roomId: String, newVersion: String): js.Promise[AnonReplacementroom] = js.native
-  def uploadContent(file: js.Any, opts: AnonCallback): js.Promise[String] = js.native
+  def upgradeRoom(roomId: String, newVersion: String): js.Promise[Replacementroom] = js.native
+  def uploadContent(file: js.Any, opts: Callback): js.Promise[String] = js.native
   def uploadKeys(): js.Object = js.native
   def uploadKeysRequest(content: js.Object): js.Promise[js.Object] = js.native
   def uploadKeysRequest(content: js.Object, opts: js.Object): js.Promise[js.Object] = js.native

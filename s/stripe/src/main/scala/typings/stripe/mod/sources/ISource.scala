@@ -1,10 +1,10 @@
 package typings.stripe.mod.sources
 
-import typings.stripe.AnonAmountcharged
-import typings.stripe.AnonAttemptsremaining
-import typings.stripe.AnonBankname
-import typings.stripe.AnonFailurereason
-import typings.stripe.AnonPhone
+import typings.stripe.anon.Amountcharged
+import typings.stripe.anon.Attemptsremaining
+import typings.stripe.anon.Bankname
+import typings.stripe.anon.Failurereason
+import typings.stripe.anon.Phone
 import typings.stripe.mod.ICardHashInfo
 import typings.stripe.mod.IMetadata
 import typings.stripe.mod.IResourceObject
@@ -44,11 +44,11 @@ import scala.scalajs.js.annotation._
 trait ISource
   extends IResourceObject
      with IStripeSource {
-  var ach_credit_transfer: js.UndefOr[AnonBankname] = js.undefined
+  var ach_credit_transfer: js.UndefOr[Bankname] = js.undefined
   var amount: js.UndefOr[Double | Null] = js.undefined
   var card: js.UndefOr[ICardHashInfo] = js.undefined
   var client_secret: String
-  var code_verification: js.UndefOr[AnonAttemptsremaining] = js.undefined
+  var code_verification: js.UndefOr[Attemptsremaining] = js.undefined
   var created: Double
   var currency: js.UndefOr[String] = js.undefined
   var customer: js.UndefOr[String] = js.undefined
@@ -57,9 +57,9 @@ trait ISource
   var metadata: IMetadata
   @JSName("object")
   var object_ISource: source
-  var owner: AnonPhone
-  var receiver: js.UndefOr[AnonAmountcharged] = js.undefined
-  var redirect: js.UndefOr[AnonFailurereason] = js.undefined
+  var owner: Phone
+  var receiver: js.UndefOr[Amountcharged] = js.undefined
+  var redirect: js.UndefOr[Failurereason] = js.undefined
   var statement_descriptor: js.UndefOr[String | Null] = js.undefined
   var status: canceled | chargeable | consumed | failed | pending
   var `type`: ach_credit_transfer | ach_debit | alipay | bancontact | card | card_present | eps | giropay | ideal | multibanco | p24 | sepa_debit | sofort | three_d_secure | wechat
@@ -76,32 +76,32 @@ object ISource {
     livemode: Boolean,
     metadata: IMetadata,
     `object`: source,
-    owner: AnonPhone,
+    owner: Phone,
     status: canceled | chargeable | consumed | failed | pending,
     `type`: ach_credit_transfer | ach_debit | alipay | bancontact | card | card_present | eps | giropay | ideal | multibanco | p24 | sepa_debit | sofort | three_d_secure | wechat,
     usage: reusable | single_use,
-    ach_credit_transfer: AnonBankname = null,
-    amount: Int | Double = null,
+    ach_credit_transfer: Bankname = null,
+    amount: js.UndefOr[Null | Double] = js.undefined,
     card: ICardHashInfo = null,
-    code_verification: AnonAttemptsremaining = null,
+    code_verification: Attemptsremaining = null,
     currency: String = null,
     customer: String = null,
-    receiver: AnonAmountcharged = null,
-    redirect: AnonFailurereason = null,
-    statement_descriptor: String = null
+    receiver: Amountcharged = null,
+    redirect: Failurereason = null,
+    statement_descriptor: js.UndefOr[Null | String] = js.undefined
   ): ISource = {
     val __obj = js.Dynamic.literal(client_secret = client_secret.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], flow = flow.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (ach_credit_transfer != null) __obj.updateDynamic("ach_credit_transfer")(ach_credit_transfer.asInstanceOf[js.Any])
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
     if (card != null) __obj.updateDynamic("card")(card.asInstanceOf[js.Any])
     if (code_verification != null) __obj.updateDynamic("code_verification")(code_verification.asInstanceOf[js.Any])
     if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
     if (receiver != null) __obj.updateDynamic("receiver")(receiver.asInstanceOf[js.Any])
     if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
-    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor.asInstanceOf[js.Any])
+    if (!js.isUndefined(statement_descriptor)) __obj.updateDynamic("statement_descriptor")(statement_descriptor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISource]
   }
 }

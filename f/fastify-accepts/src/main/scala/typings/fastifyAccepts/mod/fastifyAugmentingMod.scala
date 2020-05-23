@@ -1,8 +1,8 @@
 package typings.fastifyAccepts.mod
 
 import typings.accepts.mod.Accepts
-import typings.fastifyAccepts.FnCall
-import typings.fastifyAccepts.FnCallTypes
+import typings.fastifyAccepts.anon.FnCall
+import typings.fastifyAccepts.anon.FnCallTypes
 import typings.fastifyAccepts.fastifyAcceptsBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`

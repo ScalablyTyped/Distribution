@@ -31,11 +31,11 @@ object IMapOptions {
     autoFitToViewport: none | ifNull | always = null,
     avoidFractionalZoom: js.UndefOr[Boolean] = js.undefined,
     exitFullscreenByEsc: js.UndefOr[Boolean] = js.undefined,
-    fullscreenZIndex: Int | Double = null,
+    fullscreenZIndex: js.UndefOr[Double] = js.undefined,
     mapAutoFocus: js.UndefOr[Boolean] = js.undefined,
-    maxAnimationZoomDifference: Int | Double = null,
-    maxZoom: Int | Double = null,
-    minZoom: Int | Double = null,
+    maxAnimationZoomDifference: js.UndefOr[Double] = js.undefined,
+    maxZoom: js.UndefOr[Double] = js.undefined,
+    minZoom: js.UndefOr[Double] = js.undefined,
     nativeFullscreen: js.UndefOr[Boolean] = js.undefined,
     projection: IProjection = null,
     restrictMapArea: js.UndefOr[Boolean] = js.undefined,
@@ -46,20 +46,20 @@ object IMapOptions {
   ): IMapOptions = {
     val __obj = js.Dynamic.literal()
     if (autoFitToViewport != null) __obj.updateDynamic("autoFitToViewport")(autoFitToViewport.asInstanceOf[js.Any])
-    if (!js.isUndefined(avoidFractionalZoom)) __obj.updateDynamic("avoidFractionalZoom")(avoidFractionalZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(exitFullscreenByEsc)) __obj.updateDynamic("exitFullscreenByEsc")(exitFullscreenByEsc.asInstanceOf[js.Any])
-    if (fullscreenZIndex != null) __obj.updateDynamic("fullscreenZIndex")(fullscreenZIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(mapAutoFocus)) __obj.updateDynamic("mapAutoFocus")(mapAutoFocus.asInstanceOf[js.Any])
-    if (maxAnimationZoomDifference != null) __obj.updateDynamic("maxAnimationZoomDifference")(maxAnimationZoomDifference.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(nativeFullscreen)) __obj.updateDynamic("nativeFullscreen")(nativeFullscreen.asInstanceOf[js.Any])
+    if (!js.isUndefined(avoidFractionalZoom)) __obj.updateDynamic("avoidFractionalZoom")(avoidFractionalZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exitFullscreenByEsc)) __obj.updateDynamic("exitFullscreenByEsc")(exitFullscreenByEsc.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullscreenZIndex)) __obj.updateDynamic("fullscreenZIndex")(fullscreenZIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mapAutoFocus)) __obj.updateDynamic("mapAutoFocus")(mapAutoFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAnimationZoomDifference)) __obj.updateDynamic("maxAnimationZoomDifference")(maxAnimationZoomDifference.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nativeFullscreen)) __obj.updateDynamic("nativeFullscreen")(nativeFullscreen.get.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (!js.isUndefined(restrictMapArea)) __obj.updateDynamic("restrictMapArea")(restrictMapArea.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressMapOpenBlock)) __obj.updateDynamic("suppressMapOpenBlock")(suppressMapOpenBlock.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressObsoleteBrowserNotifier)) __obj.updateDynamic("suppressObsoleteBrowserNotifier")(suppressObsoleteBrowserNotifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(yandexMapAutoSwitch)) __obj.updateDynamic("yandexMapAutoSwitch")(yandexMapAutoSwitch.asInstanceOf[js.Any])
-    if (!js.isUndefined(yandexMapDisablePoiInteractivity)) __obj.updateDynamic("yandexMapDisablePoiInteractivity")(yandexMapDisablePoiInteractivity.asInstanceOf[js.Any])
+    if (!js.isUndefined(restrictMapArea)) __obj.updateDynamic("restrictMapArea")(restrictMapArea.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressMapOpenBlock)) __obj.updateDynamic("suppressMapOpenBlock")(suppressMapOpenBlock.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressObsoleteBrowserNotifier)) __obj.updateDynamic("suppressObsoleteBrowserNotifier")(suppressObsoleteBrowserNotifier.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yandexMapAutoSwitch)) __obj.updateDynamic("yandexMapAutoSwitch")(yandexMapAutoSwitch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yandexMapDisablePoiInteractivity)) __obj.updateDynamic("yandexMapDisablePoiInteractivity")(yandexMapDisablePoiInteractivity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMapOptions]
   }
 }

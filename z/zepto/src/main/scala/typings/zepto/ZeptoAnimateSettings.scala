@@ -12,10 +12,10 @@ trait ZeptoAnimateSettings extends js.Object {
 
 object ZeptoAnimateSettings {
   @scala.inline
-  def apply(complete: () => Unit = null, duration: Int | Double = null, easing: String = null): ZeptoAnimateSettings = {
+  def apply(complete: () => Unit = null, duration: js.UndefOr[Double] = js.undefined, easing: String = null): ZeptoAnimateSettings = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZeptoAnimateSettings]
   }

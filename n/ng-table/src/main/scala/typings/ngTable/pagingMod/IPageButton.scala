@@ -17,12 +17,12 @@ object IPageButton {
     active: Boolean,
     `type`: String,
     current: js.UndefOr[Boolean] = js.undefined,
-    number: Int | Double = null
+    number: js.UndefOr[Double] = js.undefined
   ): IPageButton = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(current)) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
-    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (!js.isUndefined(current)) __obj.updateDynamic("current")(current.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPageButton]
   }
 }

@@ -33,7 +33,7 @@ object LoginItemProps {
     `type`: String,
     updateActive: js.Any => Unit,
     buttonText: ReactNode = null,
-    countDown: Int | Double = null,
+    countDown: js.UndefOr[Double] = js.undefined,
     customprops: js.Any = null,
     defaultValue: String = null,
     getCaptchaButtonText: String = null,
@@ -49,7 +49,7 @@ object LoginItemProps {
     val __obj = js.Dynamic.literal(form = form.asInstanceOf[js.Any], updateActive = js.Any.fromFunction1(updateActive))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText.asInstanceOf[js.Any])
-    if (countDown != null) __obj.updateDynamic("countDown")(countDown.asInstanceOf[js.Any])
+    if (!js.isUndefined(countDown)) __obj.updateDynamic("countDown")(countDown.get.asInstanceOf[js.Any])
     if (customprops != null) __obj.updateDynamic("customprops")(customprops.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (getCaptchaButtonText != null) __obj.updateDynamic("getCaptchaButtonText")(getCaptchaButtonText.asInstanceOf[js.Any])

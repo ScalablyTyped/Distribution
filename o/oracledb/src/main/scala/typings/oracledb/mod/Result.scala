@@ -75,7 +75,7 @@ object Result {
     outBinds: T = null,
     resultSet: ResultSet[T] = null,
     rows: js.Array[T] = null,
-    rowsAffected: Int | Double = null
+    rowsAffected: js.UndefOr[Double] = js.undefined
   ): Result[T] = {
     val __obj = js.Dynamic.literal()
     if (implicitResults != null) __obj.updateDynamic("implicitResults")(implicitResults.asInstanceOf[js.Any])
@@ -84,7 +84,7 @@ object Result {
     if (outBinds != null) __obj.updateDynamic("outBinds")(outBinds.asInstanceOf[js.Any])
     if (resultSet != null) __obj.updateDynamic("resultSet")(resultSet.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (rowsAffected != null) __obj.updateDynamic("rowsAffected")(rowsAffected.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowsAffected)) __obj.updateDynamic("rowsAffected")(rowsAffected.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result[T]]
   }
 }

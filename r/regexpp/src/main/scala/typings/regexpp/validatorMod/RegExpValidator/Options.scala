@@ -166,7 +166,7 @@ object Options {
     if (onQuantifier != null) __obj.updateDynamic("onQuantifier")(js.Any.fromFunction5(onQuantifier))
     if (onUnicodePropertyCharacterSet != null) __obj.updateDynamic("onUnicodePropertyCharacterSet")(js.Any.fromFunction6(onUnicodePropertyCharacterSet))
     if (onWordBoundaryAssertion != null) __obj.updateDynamic("onWordBoundaryAssertion")(js.Any.fromFunction4(onWordBoundaryAssertion))
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

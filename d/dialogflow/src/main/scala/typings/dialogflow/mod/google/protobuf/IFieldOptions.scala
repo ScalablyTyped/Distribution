@@ -39,25 +39,29 @@ trait IFieldOptions extends js.Object {
 object IFieldOptions {
   @scala.inline
   def apply(
-    DotgoogleDotapiDotfieldBehavior: js.Array[FieldBehavior] = null,
-    DotgoogleDotapiDotresourceReference: IResourceReference = null,
-    ctype: CType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.FieldOptions.CType * / any */ String) = null,
-    deprecated: js.UndefOr[Boolean] = js.undefined,
-    jstype: JSType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.FieldOptions.JSType * / any */ String) = null,
-    `lazy`: js.UndefOr[Boolean] = js.undefined,
-    packed: js.UndefOr[Boolean] = js.undefined,
-    uninterpretedOption: js.Array[IUninterpretedOption] = null,
-    weak: js.UndefOr[Boolean] = js.undefined
+    DotgoogleDotapiDotfieldBehavior: js.UndefOr[Null | js.Array[FieldBehavior]] = js.undefined,
+    DotgoogleDotapiDotresourceReference: js.UndefOr[Null | IResourceReference] = js.undefined,
+    ctype: js.UndefOr[
+      Null | CType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.FieldOptions.CType * / any */ String)
+    ] = js.undefined,
+    deprecated: js.UndefOr[Null | Boolean] = js.undefined,
+    jstype: js.UndefOr[
+      Null | JSType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.FieldOptions.JSType * / any */ String)
+    ] = js.undefined,
+    `lazy`: js.UndefOr[Null | Boolean] = js.undefined,
+    packed: js.UndefOr[Null | Boolean] = js.undefined,
+    uninterpretedOption: js.UndefOr[Null | js.Array[IUninterpretedOption]] = js.undefined,
+    weak: js.UndefOr[Null | Boolean] = js.undefined
   ): IFieldOptions = {
     val __obj = js.Dynamic.literal()
-    if (DotgoogleDotapiDotfieldBehavior != null) __obj.updateDynamic(".google.api.fieldBehavior")(DotgoogleDotapiDotfieldBehavior.asInstanceOf[js.Any])
-    if (DotgoogleDotapiDotresourceReference != null) __obj.updateDynamic(".google.api.resourceReference")(DotgoogleDotapiDotresourceReference.asInstanceOf[js.Any])
-    if (ctype != null) __obj.updateDynamic("ctype")(ctype.asInstanceOf[js.Any])
+    if (!js.isUndefined(DotgoogleDotapiDotfieldBehavior)) __obj.updateDynamic(".google.api.fieldBehavior")(DotgoogleDotapiDotfieldBehavior.asInstanceOf[js.Any])
+    if (!js.isUndefined(DotgoogleDotapiDotresourceReference)) __obj.updateDynamic(".google.api.resourceReference")(DotgoogleDotapiDotresourceReference.asInstanceOf[js.Any])
+    if (!js.isUndefined(ctype)) __obj.updateDynamic("ctype")(ctype.asInstanceOf[js.Any])
     if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
-    if (jstype != null) __obj.updateDynamic("jstype")(jstype.asInstanceOf[js.Any])
+    if (!js.isUndefined(jstype)) __obj.updateDynamic("jstype")(jstype.asInstanceOf[js.Any])
     if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
     if (!js.isUndefined(packed)) __obj.updateDynamic("packed")(packed.asInstanceOf[js.Any])
-    if (uninterpretedOption != null) __obj.updateDynamic("uninterpretedOption")(uninterpretedOption.asInstanceOf[js.Any])
+    if (!js.isUndefined(uninterpretedOption)) __obj.updateDynamic("uninterpretedOption")(uninterpretedOption.asInstanceOf[js.Any])
     if (!js.isUndefined(weak)) __obj.updateDynamic("weak")(weak.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFieldOptions]
   }

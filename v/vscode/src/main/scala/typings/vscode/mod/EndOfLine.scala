@@ -12,14 +12,14 @@ sealed trait EndOfLine extends js.Object
 @js.native
 object EndOfLine extends js.Object {
   /**
-  		 * The carriage return line feed `\r\n` sequence.
-  		 */
+    * The carriage return line feed `\r\n` sequence.
+    */
   @js.native
   sealed trait CRLF extends EndOfLine
   
   /**
-  		 * The line feed `\n` character.
-  		 */
+    * The line feed `\n` character.
+    */
   @js.native
   sealed trait LF extends EndOfLine
   

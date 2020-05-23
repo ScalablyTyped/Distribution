@@ -18,10 +18,7 @@ object State {
     initialClientOffset: XYCoord = null,
     initialSourceClientOffset: XYCoord = null
   ): State = {
-    val __obj = js.Dynamic.literal()
-    if (clientOffset != null) __obj.updateDynamic("clientOffset")(clientOffset.asInstanceOf[js.Any])
-    if (initialClientOffset != null) __obj.updateDynamic("initialClientOffset")(initialClientOffset.asInstanceOf[js.Any])
-    if (initialSourceClientOffset != null) __obj.updateDynamic("initialSourceClientOffset")(initialSourceClientOffset.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clientOffset = clientOffset.asInstanceOf[js.Any], initialClientOffset = initialClientOffset.asInstanceOf[js.Any], initialSourceClientOffset = initialSourceClientOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[State]
   }
 }

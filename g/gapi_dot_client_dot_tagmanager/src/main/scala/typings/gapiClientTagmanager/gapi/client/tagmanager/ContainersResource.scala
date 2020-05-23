@@ -1,10 +1,10 @@
 package typings.gapiClientTagmanager.gapi.client.tagmanager
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientTagmanager.AnonAlt
-import typings.gapiClientTagmanager.AnonFields
-import typings.gapiClientTagmanager.AnonFingerprint
-import typings.gapiClientTagmanager.AnonKey
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientTagmanager.anon.Alt
+import typings.gapiClientTagmanager.anon.Fields
+import typings.gapiClientTagmanager.anon.Fingerprint
+import typings.gapiClientTagmanager.anon.Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,26 +15,26 @@ trait ContainersResource extends js.Object {
   var versions: VersionsResource
   var workspaces: WorkspacesResource
   /** Creates a Container. */
-  def create(request: AnonAlt): Request_[Container]
+  def create(request: Alt): Request[Container]
   /** Deletes a Container. */
-  def delete(request: AnonFields): Request_[Unit]
+  def delete(request: Fields): Request[Unit]
   /** Gets a Container. */
-  def get(request: AnonFields): Request_[Container]
+  def get(request: Fields): Request[Container]
   /** Lists all Containers that belongs to a GTM Account. */
-  def list(request: AnonKey): Request_[ListContainersResponse]
+  def list(request: Key): Request[ListContainersResponse]
   /** Updates a Container. */
-  def update(request: AnonFingerprint): Request_[Container]
+  def update(request: Fingerprint): Request[Container]
 }
 
 object ContainersResource {
   @scala.inline
   def apply(
-    create: AnonAlt => Request_[Container],
-    delete: AnonFields => Request_[Unit],
+    create: Alt => Request[Container],
+    delete: Fields => Request[Unit],
     environments: EnvironmentsResource,
-    get: AnonFields => Request_[Container],
-    list: AnonKey => Request_[ListContainersResponse],
-    update: AnonFingerprint => Request_[Container],
+    get: Fields => Request[Container],
+    list: Key => Request[ListContainersResponse],
+    update: Fingerprint => Request[Container],
     version_headers: VersionHeadersResource,
     versions: VersionsResource,
     workspaces: WorkspacesResource

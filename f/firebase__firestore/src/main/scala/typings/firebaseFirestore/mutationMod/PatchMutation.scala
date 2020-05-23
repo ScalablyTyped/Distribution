@@ -1,12 +1,12 @@
 package typings.firebaseFirestore.mutationMod
 
 import typings.firebaseFirestore.documentKeyMod.DocumentKey
-import typings.firebaseFirestore.modelFieldValueMod.ObjectValue
+import typings.firebaseFirestore.objectValueMod.ObjectValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/model/mutation", "PatchMutation")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/model/mutation", "PatchMutation")
 @js.native
 class PatchMutation protected () extends Mutation {
   def this(key: DocumentKey, data: ObjectValue, fieldMask: FieldMask, precondition: Precondition) = this()

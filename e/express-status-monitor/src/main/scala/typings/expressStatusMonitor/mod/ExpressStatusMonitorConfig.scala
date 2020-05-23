@@ -1,13 +1,13 @@
 package typings.expressStatusMonitor.mod
 
-import typings.expressStatusMonitor.AnonCpu
+import typings.expressStatusMonitor.anon.Cpu
 import typings.socketIo.mod.Server
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ExpressStatusMonitorConfig extends js.Object {
-  var chartVisibility: js.UndefOr[AnonCpu] = js.undefined
+  var chartVisibility: js.UndefOr[Cpu] = js.undefined
   var healthChecks: js.UndefOr[js.Array[HealthCheck]] = js.undefined
   var ignoreStartsWith: js.UndefOr[String] = js.undefined
   var path: js.UndefOr[String] = js.undefined
@@ -22,7 +22,7 @@ trait ExpressStatusMonitorConfig extends js.Object {
 object ExpressStatusMonitorConfig {
   @scala.inline
   def apply(
-    chartVisibility: AnonCpu = null,
+    chartVisibility: Cpu = null,
     healthChecks: js.Array[HealthCheck] = null,
     ignoreStartsWith: String = null,
     path: String = null,
@@ -30,7 +30,7 @@ object ExpressStatusMonitorConfig {
     spans: js.Array[RetentionSpan] = null,
     theme: String = null,
     title: String = null,
-    websocket: Server = null
+    websocket: js.UndefOr[Null | Server] = js.undefined
   ): ExpressStatusMonitorConfig = {
     val __obj = js.Dynamic.literal()
     if (chartVisibility != null) __obj.updateDynamic("chartVisibility")(chartVisibility.asInstanceOf[js.Any])
@@ -41,7 +41,7 @@ object ExpressStatusMonitorConfig {
     if (spans != null) __obj.updateDynamic("spans")(spans.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (websocket != null) __obj.updateDynamic("websocket")(websocket.asInstanceOf[js.Any])
+    if (!js.isUndefined(websocket)) __obj.updateDynamic("websocket")(websocket.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpressStatusMonitorConfig]
   }
 }

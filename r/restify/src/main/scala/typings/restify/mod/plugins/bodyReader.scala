@@ -1,6 +1,6 @@
 package typings.restify.mod.plugins
 
-import typings.restify.AnonMaxBodySize
+import typings.restify.anon.MaxBodySize
 import typings.restify.mod.RequestHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,6 +13,6 @@ object bodyReader extends js.Object {
     * Reads the body of the request.
     */
   def apply(): RequestHandler = js.native
-  def apply(options: AnonMaxBodySize): RequestHandler = js.native
+  def apply(options: MaxBodySize): RequestHandler = js.native
 }
 

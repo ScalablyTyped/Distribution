@@ -18,9 +18,9 @@ trait StreamPlayError extends js.Object {
     * - "pause": The stream playback might be paused by the user. See [pause event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/pause_event).
     * - "suspend": The failure might be caused by the browser policy. See [suspend event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/suspend_event).
     * - "canplay": Some browsers automatically stop the playback when the playback window is not displayed on the screen. See [canplay event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/canplay_event).
-    * - "timer": The playback failure is caused by an unknown reason and captured by the internal timer.
+    * - "error": The playback failure is usually caused by autoplay restriction.
     *
-    * Due to the differences in browsers, `reason` might have different values for the same event.
+    * Due to the differences in browsers, `reason` may have different values for the same event.
     */
   val reason: String
   /**

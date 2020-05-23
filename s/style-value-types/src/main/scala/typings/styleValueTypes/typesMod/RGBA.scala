@@ -13,9 +13,9 @@ trait RGBA extends Color {
 
 object RGBA {
   @scala.inline
-  def apply(blue: Double, green: Double, red: Double, alpha: Int | Double = null): RGBA = {
+  def apply(blue: Double, green: Double, red: Double, alpha: js.UndefOr[Double] = js.undefined): RGBA = {
     val __obj = js.Dynamic.literal(blue = blue.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any])
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RGBA]
   }
 }

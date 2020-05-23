@@ -13,9 +13,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides access to the results of a query that lists the folder (or file groups) in the folder being queried (which is represented by a storageFolder ). You can use a storageFolderQueryResult to enumerate folders or file groups in that folder. */
-@JSGlobal("Windows.Storage.Search.StorageFolderQueryResult")
 @js.native
-abstract class StorageFolderQueryResult () extends js.Object {
+trait StorageFolderQueryResult extends js.Object {
   /** Gets the folder originally used to create the StorageFolderQueryResult object. This folder represents the scope of the query. */
   var folder: StorageFolder = js.native
   /** Fires when a file is added to, deleted from, or modified in the folder being queried. This event only fires after GetFilesAsync has been called at least once. */

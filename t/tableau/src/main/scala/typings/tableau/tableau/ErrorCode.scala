@@ -1,6 +1,5 @@
 package typings.tableau.tableau
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -149,107 +148,6 @@ object ErrorCode extends js.Object {
   /** A Viz object has already been created as a child of the parentElement specified in the Viz constructor. */
   @js.native
   sealed trait VIZ_ALREADY_IN_MANAGER extends ErrorCode
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ErrorCode with String] = js.native
-  /* "browserNotCapable" */ @js.native
-  object BROWSER_NOT_CAPABLE extends TopLevel[BROWSER_NOT_CAPABLE with String]
-  
-  /* "downloadWorkbookNotAllowed" */ @js.native
-  object DOWNLOAD_WORKBOOK_NOT_ALLOWED extends TopLevel[DOWNLOAD_WORKBOOK_NOT_ALLOWED with String]
-  
-  /* "filterCannotBePerformed" */ @js.native
-  object FILTER_CANNOT_BE_PERFORMED extends TopLevel[FILTER_CANNOT_BE_PERFORMED with String]
-  
-  /* "indexOutOfRange" */ @js.native
-  object INDEX_OUT_OF_RANGE extends TopLevel[INDEX_OUT_OF_RANGE with String]
-  
-  /* "internalError" */ @js.native
-  object INTERNAL_ERROR extends TopLevel[INTERNAL_ERROR with String]
-  
-  /* "invalidAggregationFieldName" */ @js.native
-  object INVALID_AGGREGATION_FIELD_NAME extends TopLevel[INVALID_AGGREGATION_FIELD_NAME with String]
-  
-  /* "invalidCustomViewName" */ @js.native
-  object INVALID_CUSTOM_VIEW_NAME extends TopLevel[INVALID_CUSTOM_VIEW_NAME with String]
-  
-  /* "invalidDateParameter" */ @js.native
-  object INVALID_DATE_PARAMETER extends TopLevel[INVALID_DATE_PARAMETER with String]
-  
-  /* "invalidFilterFieldName" */ @js.native
-  object INVALID_FILTER_FIELDNAME extends TopLevel[INVALID_FILTER_FIELDNAME with String]
-  
-  /* "invalidFilterFieldNameOrValue" */ @js.native
-  object INVALID_FILTER_FIELDNAME_OR_VALUE extends TopLevel[INVALID_FILTER_FIELDNAME_OR_VALUE with String]
-  
-  /* "invalidFilterFieldValue" */ @js.native
-  object INVALID_FILTER_FIELDVALUE extends TopLevel[INVALID_FILTER_FIELDVALUE with String]
-  
-  /* "invalidParameter" */ @js.native
-  object INVALID_PARAMETER extends TopLevel[INVALID_PARAMETER with String]
-  
-  /* "invalidSelectionDate" */ @js.native
-  object INVALID_SELECTION_DATE extends TopLevel[INVALID_SELECTION_DATE with String]
-  
-  /* "invalidSelectionFieldName" */ @js.native
-  object INVALID_SELECTION_FIELDNAME extends TopLevel[INVALID_SELECTION_FIELDNAME with String]
-  
-  /* "invalidSelectionValue" */ @js.native
-  object INVALID_SELECTION_VALUE extends TopLevel[INVALID_SELECTION_VALUE with String]
-  
-  /* "invalidSize" */ @js.native
-  object INVALID_SIZE extends TopLevel[INVALID_SIZE with String]
-  
-  /* "invalidSizeBehaviorOnWorksheet" */ @js.native
-  object INVALID_SIZE_BEHAVIOR_ON_WORKSHEET extends TopLevel[INVALID_SIZE_BEHAVIOR_ON_WORKSHEET with String]
-  
-  /* "invalidToolbarButtonName" */ @js.native
-  object INVALID_TOOLBAR_BUTTON_NAME extends TopLevel[INVALID_TOOLBAR_BUTTON_NAME with String]
-  
-  /* "invalidUrl" */ @js.native
-  object INVALID_URL extends TopLevel[INVALID_URL with String]
-  
-  /* "maxVizResizeAttempts" */ @js.native
-  object MAX_VIZ_RESIZE_ATTEMPTS extends TopLevel[MAX_VIZ_RESIZE_ATTEMPTS with String]
-  
-  /* "missingMaxSize" */ @js.native
-  object MISSING_MAX_SIZE extends TopLevel[MISSING_MAX_SIZE with String]
-  
-  /* "missingMinMaxSize" */ @js.native
-  object MISSING_MINMAX_SIZE extends TopLevel[MISSING_MINMAX_SIZE with String]
-  
-  /* "missingMinSize" */ @js.native
-  object MISSING_MIN_SIZE extends TopLevel[MISSING_MIN_SIZE with String]
-  
-  /* "missingRangeNForRelativeDateFilters" */ @js.native
-  object MISSING_RANGEN_FOR_RELATIVE_DATE_FILTERS extends TopLevel[MISSING_RANGEN_FOR_RELATIVE_DATE_FILTERS with String]
-  
-  /* "notActiveSheet" */ @js.native
-  object NOT_ACTIVE_SHEET extends TopLevel[NOT_ACTIVE_SHEET with String]
-  
-  /* "noUrlForHiddenWorksheet" */ @js.native
-  object NO_URL_FOR_HIDDEN_WORKSHEET extends TopLevel[NO_URL_FOR_HIDDEN_WORKSHEET with String]
-  
-  /* "noUrlOrParentElementNotFound" */ @js.native
-  object NO_URL_OR_PARENT_ELEMENT_NOT_FOUND extends TopLevel[NO_URL_OR_PARENT_ELEMENT_NOT_FOUND with String]
-  
-  /* "nullOrEmptyParameter" */ @js.native
-  object NULL_OR_EMPTY_PARAMETER extends TopLevel[NULL_OR_EMPTY_PARAMETER with String]
-  
-  /* "serverError" */ @js.native
-  object SERVER_ERROR extends TopLevel[SERVER_ERROR with String]
-  
-  /* "sheetNotInWorkbook" */ @js.native
-  object SHEET_NOT_IN_WORKBOOK extends TopLevel[SHEET_NOT_IN_WORKBOOK with String]
-  
-  /* "staleDataReference" */ @js.native
-  object STALE_DATA_REFERENCE extends TopLevel[STALE_DATA_REFERENCE with String]
-  
-  /* "unsupportedEventName" */ @js.native
-  object UNSUPPORTED_EVENT_NAME extends TopLevel[UNSUPPORTED_EVENT_NAME with String]
-  
-  /* "vizAlreadyInManager" */ @js.native
-  object VIZ_ALREADY_IN_MANAGER extends TopLevel[VIZ_ALREADY_IN_MANAGER with String]
   
 }
 

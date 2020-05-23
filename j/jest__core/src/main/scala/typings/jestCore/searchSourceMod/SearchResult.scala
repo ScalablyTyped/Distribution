@@ -22,13 +22,13 @@ object SearchResult {
     collectCoverageFrom: Set[String] = null,
     noSCM: js.UndefOr[Boolean] = js.undefined,
     stats: Stats = null,
-    total: Int | Double = null
+    total: js.UndefOr[Double] = js.undefined
   ): SearchResult = {
     val __obj = js.Dynamic.literal(tests = tests.asInstanceOf[js.Any])
     if (collectCoverageFrom != null) __obj.updateDynamic("collectCoverageFrom")(collectCoverageFrom.asInstanceOf[js.Any])
-    if (!js.isUndefined(noSCM)) __obj.updateDynamic("noSCM")(noSCM.asInstanceOf[js.Any])
+    if (!js.isUndefined(noSCM)) __obj.updateDynamic("noSCM")(noSCM.get.asInstanceOf[js.Any])
     if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchResult]
   }
 }

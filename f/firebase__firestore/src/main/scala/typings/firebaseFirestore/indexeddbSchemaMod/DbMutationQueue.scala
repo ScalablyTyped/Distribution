@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/indexeddb_schema", "DbMutationQueue")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbMutationQueue")
 @js.native
 class DbMutationQueue protected () extends js.Object {
   def this(
@@ -58,7 +58,7 @@ class DbMutationQueue protected () extends js.Object {
 }
 
 /* static members */
-@JSImport("@firebase/firestore/dist/lib/src/local/indexeddb_schema", "DbMutationQueue")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbMutationQueue")
 @js.native
 object DbMutationQueue extends js.Object {
   /** Keys are automatically assigned via the userId property. */

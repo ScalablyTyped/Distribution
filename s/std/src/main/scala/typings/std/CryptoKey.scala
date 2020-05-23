@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +12,12 @@ trait CryptoKey extends js.Object {
   val usages: js.Array[KeyUsage]
 }
 
-@JSGlobal("CryptoKey")
-@js.native
-object CryptoKey extends Instantiable0[CryptoKey]
+object CryptoKey {
+  @scala.inline
+  def apply(algorithm: KeyAlgorithm, extractable: scala.Boolean, `type`: KeyType, usages: js.Array[KeyUsage]): CryptoKey = {
+    val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], extractable = extractable.asInstanceOf[js.Any], usages = usages.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CryptoKey]
+  }
+}
 

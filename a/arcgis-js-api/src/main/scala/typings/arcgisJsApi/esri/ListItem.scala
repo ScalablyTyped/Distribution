@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -112,7 +111,27 @@ trait ListItem extends js.Object {
   val visibleAtCurrentScale: Boolean
 }
 
-@JSGlobal("__esri.ListItem")
-@js.native
-object ListItem extends TopLevel[ListItemConstructor]
+object ListItem {
+  @scala.inline
+  def apply(
+    actionsOpen: Boolean,
+    actionsSections: Collection[Collection[ActionButton | ActionToggle]],
+    children: Collection[ListItem],
+    error: Error,
+    layer: Layer,
+    layerView: LayerView,
+    open: Boolean,
+    panel: ListItemPanel,
+    parent: ListItem,
+    title: String,
+    updating: Boolean,
+    view: MapView | SceneView,
+    visibilityMode: String,
+    visible: Boolean,
+    visibleAtCurrentScale: Boolean
+  ): ListItem = {
+    val __obj = js.Dynamic.literal(actionsOpen = actionsOpen.asInstanceOf[js.Any], actionsSections = actionsSections.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], layerView = layerView.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], panel = panel.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updating = updating.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], visibilityMode = visibilityMode.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], visibleAtCurrentScale = visibleAtCurrentScale.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListItem]
+  }
+}
 

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait SessionManager extends js.Object {
   /**
-  			 * Indicates whether the manager is ready.
-  			 */
+    * Indicates whether the manager is ready.
+    */
   val isReady: Boolean
   /**
-  			 * A Thenable that is fulfilled when the manager is ready.
-  			 */
+    * A Thenable that is fulfilled when the manager is ready.
+    */
   val ready: Thenable[Unit]
   val specs: js.UndefOr[IAllKernels] = js.undefined
   def shutdown(id: String): Thenable[Unit]

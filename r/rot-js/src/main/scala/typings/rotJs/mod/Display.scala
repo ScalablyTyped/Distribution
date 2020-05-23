@@ -1,9 +1,9 @@
 package typings.rotJs.mod
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.rotJs.PartialDisplayOptions
-import typings.rotJs.TypeofRect
-import typings.rotJs.TypeofTileGL
+import typings.rotJs.anon.PartialDisplayOptions
+import typings.rotJs.anon.TypeofRect
+import typings.rotJs.anon.TypeofTileGL
 import typings.rotJs.displayMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`

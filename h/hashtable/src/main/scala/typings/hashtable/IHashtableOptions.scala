@@ -22,7 +22,7 @@ object IHashtableOptions {
     val __obj = js.Dynamic.literal()
     if (equals != null) __obj.updateDynamic("equals")(js.Any.fromFunction2(equals))
     if (hashCode != null) __obj.updateDynamic("hashCode")(js.Any.fromFunction1(hashCode))
-    if (!js.isUndefined(replaceDuplicateKey)) __obj.updateDynamic("replaceDuplicateKey")(replaceDuplicateKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(replaceDuplicateKey)) __obj.updateDynamic("replaceDuplicateKey")(replaceDuplicateKey.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHashtableOptions[TKey]]
   }
 }

@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired for each frame change during an animation.
-		 */
+  * Fired for each frame change during an animation.
+  */
 trait ImageViewChangeEvent extends ImageViewBaseEvent {
   /**
-  			 * Index of the image frame being displayed.
-  			 */
+    * Index of the image frame being displayed.
+    */
   var index: Double
 }
 

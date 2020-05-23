@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -67,8 +66,4 @@ trait fieldUtils extends js.Object {
     */
   def getTimeFields(layer: FeatureLayer): js.Promise[js.Array[String]] = js.native
 }
-
-@JSGlobal("__esri.fieldUtils")
-@js.native
-object fieldUtils extends TopLevel[fieldUtils]
 

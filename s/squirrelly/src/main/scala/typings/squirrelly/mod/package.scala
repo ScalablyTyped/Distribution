@@ -6,10 +6,11 @@ import scala.scalajs.js.annotation._
 
 package object mod {
   type Blocks = typings.std.Record[java.lang.String, js.Function0[java.lang.String]]
-  type SqrlFn = js.Function2[
-    /* options */ typings.squirrelly.mod.TemplateOptions, 
-    /* Sqrl */ js.Any, 
+  type HelperCallback = js.Function3[
+    /* args */ js.Array[java.lang.String], 
+    /* content */ js.Function0[java.lang.String], 
+    /* blocks */ typings.squirrelly.mod.Blocks, 
     java.lang.String
   ]
-  type TemplateOptions = typings.std.Record[java.lang.String, java.lang.String | scala.Double]
+  type SqrlFn = js.Function2[/* options */ js.Object, /* Sqrl */ js.Any, java.lang.String]
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Describes the results of a TestScript execution
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait TestReport extends DomainResource {
   /**
     * Contains extended information for property 'issued'.
@@ -111,7 +111,7 @@ object TestReport {
     name: String = null,
     participant: js.Array[TestReportParticipant] = null,
     resourceType: code = null,
-    score: Int | Double = null,
+    score: js.UndefOr[decimal] = js.undefined,
     setup: TestReportSetup = null,
     teardown: TestReportTeardown = null,
     test: js.Array[TestReportTest] = null,
@@ -141,7 +141,7 @@ object TestReport {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (participant != null) __obj.updateDynamic("participant")(participant.asInstanceOf[js.Any])
     if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     if (setup != null) __obj.updateDynamic("setup")(setup.asInstanceOf[js.Any])
     if (teardown != null) __obj.updateDynamic("teardown")(teardown.asInstanceOf[js.Any])
     if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])

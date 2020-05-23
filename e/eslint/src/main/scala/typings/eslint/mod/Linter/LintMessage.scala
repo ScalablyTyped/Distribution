@@ -30,8 +30,8 @@ object LintMessage {
     message: String,
     nodeType: String,
     severity: Severity,
-    endColumn: Int | Double = null,
-    endLine: Int | Double = null,
+    endColumn: js.UndefOr[Double] = js.undefined,
+    endLine: js.UndefOr[Double] = js.undefined,
     fatal: `true` = null,
     fix: Fix = null,
     messageId: String = null,
@@ -39,14 +39,12 @@ object LintMessage {
     source: String = null,
     suggestions: js.Array[LintSuggestion] = null
   ): LintMessage = {
-    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any])
-    if (endColumn != null) __obj.updateDynamic("endColumn")(endColumn.asInstanceOf[js.Any])
-    if (endLine != null) __obj.updateDynamic("endLine")(endLine.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any], ruleId = ruleId.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    if (!js.isUndefined(endColumn)) __obj.updateDynamic("endColumn")(endColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(endLine)) __obj.updateDynamic("endLine")(endLine.get.asInstanceOf[js.Any])
     if (fatal != null) __obj.updateDynamic("fatal")(fatal.asInstanceOf[js.Any])
     if (fix != null) __obj.updateDynamic("fix")(fix.asInstanceOf[js.Any])
     if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    if (ruleId != null) __obj.updateDynamic("ruleId")(ruleId.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])
     __obj.asInstanceOf[LintMessage]
   }

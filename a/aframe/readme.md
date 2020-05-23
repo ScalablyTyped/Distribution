@@ -1,7 +1,7 @@
 
 # Scala.js typings for aframe
 
-Typings are for version 0.8
+Typings are for version 1.0
 
 ## Library description:
 A web framework for building virtual reality experiences.

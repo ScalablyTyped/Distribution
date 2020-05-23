@@ -4,12 +4,10 @@ import typings.node.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.ClientRequest
 import typings.node.httpMod.IncomingMessage
-import typings.std.Error
-import typings.ws.AnonBinary
-import typings.ws.AnonCode
-import typings.ws.AnonData
-import typings.ws.AnonError
-import typings.ws.AnonTarget
+import typings.ws.anon.Binary
+import typings.ws.anon.Code
+import typings.ws.anon.Error
+import typings.ws.anon.Target
 import typings.ws.wsStrings.`unexpected-response`
 import typings.ws.wsStrings.close
 import typings.ws.wsStrings.error
@@ -40,24 +38,24 @@ trait WebSocket extends EventEmitter {
   @JSName("addEventListener")
   def addEventListener_close(method: close): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_close(method: close, cb: js.Function1[/* event */ AnonCode, Unit]): Unit = js.native
+  def addEventListener_close(method: close, cb: js.Function1[/* event */ Code, Unit]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(method: error): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_error(method: error, cb: js.Function1[/* event */ AnonError, Unit]): Unit = js.native
+  def addEventListener_error(method: error, cb: js.Function1[/* event */ Error, Unit]): Unit = js.native
   // HTML5 WebSocket events
   @JSName("addEventListener")
   def addEventListener_message(method: message): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_message(method: message, cb: js.Function1[/* event */ AnonData, Unit]): Unit = js.native
+  def addEventListener_message(method: message, cb: js.Function1[/* event */ typings.ws.anon.Data, Unit]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_open(method: open): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_open(method: open, cb: js.Function1[/* event */ AnonTarget, Unit]): Unit = js.native
+  def addEventListener_open(method: open, cb: js.Function1[/* event */ Target, Unit]): Unit = js.native
   @JSName("addListener")
   def addListener_close(event: close, listener: js.Function2[/* code */ Double, /* message */ String, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  def addListener_error(event: error, listener: js.Function1[/* err */ typings.std.Error, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_message(event: message, listener: js.Function1[/* data */ Data, Unit]): this.type = js.native
   @JSName("addListener")
@@ -85,7 +83,7 @@ trait WebSocket extends EventEmitter {
     listener: js.ThisFunction2[/* this */ this.type, /* code */ Double, /* reason */ String, Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_error(event: error, listener: js.ThisFunction1[/* this */ this.type, /* err */ Error, Unit]): this.type = js.native
+  def on_error(event: error, listener: js.ThisFunction1[/* this */ this.type, /* err */ typings.std.Error, Unit]): this.type = js.native
   @JSName("on")
   def on_message(event: message, listener: js.ThisFunction1[/* this */ this.type, /* data */ Data, Unit]): this.type = js.native
   @JSName("on")
@@ -116,33 +114,33 @@ trait WebSocket extends EventEmitter {
   def ping(): Unit = js.native
   def ping(data: js.Any): Unit = js.native
   def ping(data: js.Any, mask: Boolean): Unit = js.native
-  def ping(data: js.Any, mask: Boolean, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def ping(data: js.Any, mask: Boolean, cb: js.Function1[/* err */ typings.std.Error, Unit]): Unit = js.native
   def pong(): Unit = js.native
   def pong(data: js.Any): Unit = js.native
   def pong(data: js.Any, mask: Boolean): Unit = js.native
-  def pong(data: js.Any, mask: Boolean, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def pong(data: js.Any, mask: Boolean, cb: js.Function1[/* err */ typings.std.Error, Unit]): Unit = js.native
   def removeEventListener(method: String): Unit = js.native
   def removeEventListener(method: String, listener: js.Function0[Unit]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_close(method: close): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_close(method: close, cb: js.Function1[/* event */ AnonCode, Unit]): Unit = js.native
+  def removeEventListener_close(method: close, cb: js.Function1[/* event */ Code, Unit]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_error(method: error): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_error(method: error, cb: js.Function1[/* event */ AnonError, Unit]): Unit = js.native
+  def removeEventListener_error(method: error, cb: js.Function1[/* event */ Error, Unit]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_message(method: message): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_message(method: message, cb: js.Function1[/* event */ AnonData, Unit]): Unit = js.native
+  def removeEventListener_message(method: message, cb: js.Function1[/* event */ typings.ws.anon.Data, Unit]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_open(method: open): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_open(method: open, cb: js.Function1[/* event */ AnonTarget, Unit]): Unit = js.native
+  def removeEventListener_open(method: open, cb: js.Function1[/* event */ Target, Unit]): Unit = js.native
   @JSName("removeListener")
   def removeListener_close(event: close, listener: js.Function2[/* code */ Double, /* message */ String, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  def removeListener_error(event: error, listener: js.Function1[/* err */ typings.std.Error, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_message(event: message, listener: js.Function1[/* data */ Data, Unit]): this.type = js.native
   @JSName("removeListener")
@@ -159,9 +157,9 @@ trait WebSocket extends EventEmitter {
   @JSName("removeListener")
   def removeListener_upgrade(event: upgrade, listener: js.Function1[/* request */ IncomingMessage, Unit]): this.type = js.native
   def send(data: js.Any): Unit = js.native
-  def send(data: js.Any, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
-  def send(data: js.Any, options: AnonBinary): Unit = js.native
-  def send(data: js.Any, options: AnonBinary, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+  def send(data: js.Any, cb: js.Function1[/* err */ js.UndefOr[typings.std.Error], Unit]): Unit = js.native
+  def send(data: js.Any, options: Binary): Unit = js.native
+  def send(data: js.Any, options: Binary, cb: js.Function1[/* err */ js.UndefOr[typings.std.Error], Unit]): Unit = js.native
   def terminate(): Unit = js.native
 }
 

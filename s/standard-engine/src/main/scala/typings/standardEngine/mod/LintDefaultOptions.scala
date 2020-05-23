@@ -16,7 +16,7 @@ object LintDefaultOptions {
   @scala.inline
   def apply(usePackageJson: js.UndefOr[Boolean] = js.undefined): LintDefaultOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(usePackageJson)) __obj.updateDynamic("usePackageJson")(usePackageJson.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePackageJson)) __obj.updateDynamic("usePackageJson")(usePackageJson.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LintDefaultOptions]
   }
 }

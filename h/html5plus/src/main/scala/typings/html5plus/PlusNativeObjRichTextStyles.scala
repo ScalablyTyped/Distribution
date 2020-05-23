@@ -17,11 +17,11 @@ trait PlusNativeObjRichTextStyles extends js.Object {
   /**
     * 富文本内容的水平对齐方式
     * 对整体内容有效，无法单独控制每行的内容。
-    * 	可取值：
-    * 	"left"-字体在指定的区域中水平居左对齐；
-    * 	"center"-字体在指定的区域中水平居中对齐；
-    * 	"right"-字体在指定的区域中水平居右对齐。
-    * 	默认值为"left"。
+    *     可取值：
+    *     "left"-字体在指定的区域中水平居左对齐；
+    *     "center"-字体在指定的区域中水平居中对齐；
+    *     "right"-字体在指定的区域中水平居右对齐。
+    *     默认值为"left"。
     * - left: 富文本内容水平居左对齐
     * - center: 富文本内容水平居中对齐
     * - right: 富文本内容水平居右对齐
@@ -31,7 +31,7 @@ trait PlusNativeObjRichTextStyles extends js.Object {
   var align: js.UndefOr[left | center | right] = js.undefined
   /**
     * 富文本默认使用的字体名称
-    * 例如"Times New Roman"，	如果指定名称的字体不存在，则使用系统默认字体。
+    * 例如"Times New Roman"，    如果指定名称的字体不存在，则使用系统默认字体。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -46,7 +46,7 @@ trait PlusNativeObjRichTextStyles extends js.Object {
   /**
     * 点击事件回调函数
     * 如果设置此属性，则表示拦截所有RichText上的点击事件（不透传事件）。
-    * 	如果没有设置此属性，则仅拦截操作包含onclick属性的a/img标签的点击事件。
+    *     如果没有设置此属性，则仅拦截操作包含onclick属性的a/img标签的点击事件。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */

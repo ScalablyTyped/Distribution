@@ -89,11 +89,11 @@ object GCMMessage {
     Priority: string = null,
     RawContent: string = null,
     RestrictedPackageName: string = null,
-    SilentPush: js.UndefOr[Boolean] = js.undefined,
+    SilentPush: js.UndefOr[boolean] = js.undefined,
     SmallImageIconUrl: string = null,
     Sound: string = null,
     Substitutions: MapOfListOfString = null,
-    TimeToLive: Int | Double = null,
+    TimeToLive: js.UndefOr[integer] = js.undefined,
     Title: string = null,
     Url: string = null
   ): GCMMessage = {
@@ -108,11 +108,11 @@ object GCMMessage {
     if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
     if (RawContent != null) __obj.updateDynamic("RawContent")(RawContent.asInstanceOf[js.Any])
     if (RestrictedPackageName != null) __obj.updateDynamic("RestrictedPackageName")(RestrictedPackageName.asInstanceOf[js.Any])
-    if (!js.isUndefined(SilentPush)) __obj.updateDynamic("SilentPush")(SilentPush.asInstanceOf[js.Any])
+    if (!js.isUndefined(SilentPush)) __obj.updateDynamic("SilentPush")(SilentPush.get.asInstanceOf[js.Any])
     if (SmallImageIconUrl != null) __obj.updateDynamic("SmallImageIconUrl")(SmallImageIconUrl.asInstanceOf[js.Any])
     if (Sound != null) __obj.updateDynamic("Sound")(Sound.asInstanceOf[js.Any])
     if (Substitutions != null) __obj.updateDynamic("Substitutions")(Substitutions.asInstanceOf[js.Any])
-    if (TimeToLive != null) __obj.updateDynamic("TimeToLive")(TimeToLive.asInstanceOf[js.Any])
+    if (!js.isUndefined(TimeToLive)) __obj.updateDynamic("TimeToLive")(TimeToLive.get.asInstanceOf[js.Any])
     if (Title != null) __obj.updateDynamic("Title")(Title.asInstanceOf[js.Any])
     if (Url != null) __obj.updateDynamic("Url")(Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[GCMMessage]

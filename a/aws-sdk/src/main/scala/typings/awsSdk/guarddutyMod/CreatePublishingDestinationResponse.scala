@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreatePublishingDestinationResponse extends js.Object {
   /**
-    * The ID of the publishing destination created.
+    * The ID of the publishing destination that is created.
     */
   var DestinationId: String = js.native
 }

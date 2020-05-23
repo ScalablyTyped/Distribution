@@ -1,6 +1,6 @@
 package typings.algoliaCacheCommon.mod
 
-import typings.algoliaCacheCommon.ReadonlyPromiseany
+import typings.algoliaCacheCommon.anon.ReadonlyPromiseany
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

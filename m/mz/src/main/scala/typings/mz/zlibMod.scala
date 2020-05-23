@@ -1,20 +1,19 @@
 package typings.mz
 
 import typings.node.Buffer
-import typings.node.zlibMod.BrotliCompress
-import typings.node.zlibMod.BrotliDecompress
+import typings.node.zlibMod.BrotliCompress_
+import typings.node.zlibMod.BrotliDecompress_
 import typings.node.zlibMod.BrotliOptions
 import typings.node.zlibMod.CompressCallback
-import typings.node.zlibMod.Deflate
-import typings.node.zlibMod.DeflateRaw
-import typings.node.zlibMod.Gunzip
-import typings.node.zlibMod.Gzip
-import typings.node.zlibMod.Inflate
-import typings.node.zlibMod.InflateRaw
+import typings.node.zlibMod.DeflateRaw_
+import typings.node.zlibMod.Deflate_
+import typings.node.zlibMod.Gunzip_
+import typings.node.zlibMod.Gzip_
+import typings.node.zlibMod.InflateRaw_
+import typings.node.zlibMod.Inflate_
 import typings.node.zlibMod.InputType
-import typings.node.zlibMod.Unzip
+import typings.node.zlibMod.Unzip_
 import typings.node.zlibMod.ZlibOptions
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -142,71 +141,75 @@ object zlibMod extends js.Object {
     * @deprecated
     */
   val Z_VERSION_ERROR: Double = js.native
+  def brotliCompress(buf: InputType): js.Promise[Buffer] = js.native
   def brotliCompress(buf: InputType, callback: CompressCallback): Unit = js.native
+  def brotliCompress(buf: InputType, options: BrotliOptions): js.Promise[Buffer] = js.native
   def brotliCompress(buf: InputType, options: BrotliOptions, callback: CompressCallback): Unit = js.native
   def brotliCompressSync(buf: InputType): Buffer = js.native
   def brotliCompressSync(buf: InputType, options: BrotliOptions): Buffer = js.native
+  def brotliDecompress(buf: InputType): js.Promise[Buffer] = js.native
   def brotliDecompress(buf: InputType, callback: CompressCallback): Unit = js.native
+  def brotliDecompress(buf: InputType, options: BrotliOptions): js.Promise[Buffer] = js.native
   def brotliDecompress(buf: InputType, options: BrotliOptions, callback: CompressCallback): Unit = js.native
   def brotliDecompressSync(buf: InputType): Buffer = js.native
   def brotliDecompressSync(buf: InputType, options: BrotliOptions): Buffer = js.native
-  def createBrotliCompress(): BrotliCompress = js.native
-  def createBrotliCompress(options: BrotliOptions): BrotliCompress = js.native
-  def createBrotliDecompress(): BrotliDecompress = js.native
-  def createBrotliDecompress(options: BrotliOptions): BrotliDecompress = js.native
-  def createDeflate(): Deflate = js.native
-  def createDeflate(options: ZlibOptions): Deflate = js.native
-  def createDeflateRaw(): DeflateRaw = js.native
-  def createDeflateRaw(options: ZlibOptions): DeflateRaw = js.native
-  def createGunzip(): Gunzip = js.native
-  def createGunzip(options: ZlibOptions): Gunzip = js.native
-  def createGzip(): Gzip = js.native
-  def createGzip(options: ZlibOptions): Gzip = js.native
-  def createInflate(): Inflate = js.native
-  def createInflate(options: ZlibOptions): Inflate = js.native
-  def createInflateRaw(): InflateRaw = js.native
-  def createInflateRaw(options: ZlibOptions): InflateRaw = js.native
-  def createUnzip(): Unzip = js.native
-  def createUnzip(options: ZlibOptions): Unzip = js.native
-  def deflate(buf: Buffer): js.Promise[Buffer] = js.native
-  def deflate(buf: Buffer, callback: js.Function2[/* error */ Error, /* result */ Buffer, Unit]): Unit = js.native
+  def createBrotliCompress(): BrotliCompress_ = js.native
+  def createBrotliCompress(options: BrotliOptions): BrotliCompress_ = js.native
+  def createBrotliDecompress(): BrotliDecompress_ = js.native
+  def createBrotliDecompress(options: BrotliOptions): BrotliDecompress_ = js.native
+  def createDeflate(): Deflate_ = js.native
+  def createDeflate(options: ZlibOptions): Deflate_ = js.native
+  def createDeflateRaw(): DeflateRaw_ = js.native
+  def createDeflateRaw(options: ZlibOptions): DeflateRaw_ = js.native
+  def createGunzip(): Gunzip_ = js.native
+  def createGunzip(options: ZlibOptions): Gunzip_ = js.native
+  def createGzip(): Gzip_ = js.native
+  def createGzip(options: ZlibOptions): Gzip_ = js.native
+  def createInflate(): Inflate_ = js.native
+  def createInflate(options: ZlibOptions): Inflate_ = js.native
+  def createInflateRaw(): InflateRaw_ = js.native
+  def createInflateRaw(options: ZlibOptions): InflateRaw_ = js.native
+  def createUnzip(): Unzip_ = js.native
+  def createUnzip(options: ZlibOptions): Unzip_ = js.native
+  def deflate(buf: InputType): js.Promise[Buffer] = js.native
   def deflate(buf: InputType, callback: CompressCallback): Unit = js.native
+  def deflate(buf: InputType, options: ZlibOptions): js.Promise[Buffer] = js.native
   def deflate(buf: InputType, options: ZlibOptions, callback: CompressCallback): Unit = js.native
-  def deflateRaw(buf: Buffer): js.Promise[Buffer] = js.native
-  def deflateRaw(buf: Buffer, callback: js.Function2[/* error */ Error, /* result */ Buffer, Unit]): Unit = js.native
+  def deflateRaw(buf: InputType): js.Promise[Buffer] = js.native
   def deflateRaw(buf: InputType, callback: CompressCallback): Unit = js.native
+  def deflateRaw(buf: InputType, options: ZlibOptions): js.Promise[Buffer] = js.native
   def deflateRaw(buf: InputType, options: ZlibOptions, callback: CompressCallback): Unit = js.native
   def deflateRawSync(buf: InputType): Buffer = js.native
   def deflateRawSync(buf: InputType, options: ZlibOptions): Buffer = js.native
   def deflateSync(buf: InputType): Buffer = js.native
   def deflateSync(buf: InputType, options: ZlibOptions): Buffer = js.native
-  def gunzip(buf: Buffer): js.Promise[Buffer] = js.native
-  def gunzip(buf: Buffer, callback: js.Function2[/* error */ Error, /* result */ Buffer, Unit]): Unit = js.native
+  def gunzip(buf: InputType): js.Promise[Buffer] = js.native
   def gunzip(buf: InputType, callback: CompressCallback): Unit = js.native
+  def gunzip(buf: InputType, options: ZlibOptions): js.Promise[Buffer] = js.native
   def gunzip(buf: InputType, options: ZlibOptions, callback: CompressCallback): Unit = js.native
   def gunzipSync(buf: InputType): Buffer = js.native
   def gunzipSync(buf: InputType, options: ZlibOptions): Buffer = js.native
-  def gzip(buf: Buffer): js.Promise[Buffer] = js.native
-  def gzip(buf: Buffer, callback: js.Function2[/* error */ Error, /* result */ Buffer, Unit]): Unit = js.native
+  def gzip(buf: InputType): js.Promise[Buffer] = js.native
   def gzip(buf: InputType, callback: CompressCallback): Unit = js.native
+  def gzip(buf: InputType, options: ZlibOptions): js.Promise[Buffer] = js.native
   def gzip(buf: InputType, options: ZlibOptions, callback: CompressCallback): Unit = js.native
   def gzipSync(buf: InputType): Buffer = js.native
   def gzipSync(buf: InputType, options: ZlibOptions): Buffer = js.native
-  def inflate(buf: Buffer): js.Promise[Buffer] = js.native
-  def inflate(buf: Buffer, callback: js.Function2[/* error */ Error, /* result */ Buffer, Unit]): Unit = js.native
+  def inflate(buf: InputType): js.Promise[Buffer] = js.native
   def inflate(buf: InputType, callback: CompressCallback): Unit = js.native
+  def inflate(buf: InputType, options: ZlibOptions): js.Promise[Buffer] = js.native
   def inflate(buf: InputType, options: ZlibOptions, callback: CompressCallback): Unit = js.native
-  def inflateRaw(buf: Buffer): js.Promise[Buffer] = js.native
-  def inflateRaw(buf: Buffer, callback: js.Function2[/* error */ Error, /* result */ Buffer, Unit]): Unit = js.native
+  def inflateRaw(buf: InputType): js.Promise[Buffer] = js.native
   def inflateRaw(buf: InputType, callback: CompressCallback): Unit = js.native
+  def inflateRaw(buf: InputType, options: ZlibOptions): js.Promise[Buffer] = js.native
   def inflateRaw(buf: InputType, options: ZlibOptions, callback: CompressCallback): Unit = js.native
   def inflateRawSync(buf: InputType): Buffer = js.native
   def inflateRawSync(buf: InputType, options: ZlibOptions): Buffer = js.native
   def inflateSync(buf: InputType): Buffer = js.native
   def inflateSync(buf: InputType, options: ZlibOptions): Buffer = js.native
-  def unzip(buf: Buffer): js.Promise[Buffer] = js.native
-  def unzip(buf: Buffer, callback: js.Function2[/* error */ Error, /* result */ Buffer, Unit]): Unit = js.native
+  def unzip(buf: InputType): js.Promise[Buffer] = js.native
   def unzip(buf: InputType, callback: CompressCallback): Unit = js.native
+  def unzip(buf: InputType, options: ZlibOptions): js.Promise[Buffer] = js.native
   def unzip(buf: InputType, options: ZlibOptions, callback: CompressCallback): Unit = js.native
   def unzipSync(buf: InputType): Buffer = js.native
   def unzipSync(buf: InputType, options: ZlibOptions): Buffer = js.native

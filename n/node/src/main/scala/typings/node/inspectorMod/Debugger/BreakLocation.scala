@@ -23,9 +23,14 @@ trait BreakLocation extends js.Object {
 
 object BreakLocation {
   @scala.inline
-  def apply(lineNumber: Double, scriptId: ScriptId, columnNumber: Int | Double = null, `type`: String = null): BreakLocation = {
+  def apply(
+    lineNumber: Double,
+    scriptId: ScriptId,
+    columnNumber: js.UndefOr[Double] = js.undefined,
+    `type`: String = null
+  ): BreakLocation = {
     val __obj = js.Dynamic.literal(lineNumber = lineNumber.asInstanceOf[js.Any], scriptId = scriptId.asInstanceOf[js.Any])
-    if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnNumber)) __obj.updateDynamic("columnNumber")(columnNumber.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BreakLocation]
   }

@@ -13,10 +13,7 @@ trait ProxyAgentConfigurationType extends js.Object {
 object ProxyAgentConfigurationType {
   @scala.inline
   def apply(HTTPS_PROXY: String = null, HTTP_PROXY: String = null, NO_PROXY: String = null): ProxyAgentConfigurationType = {
-    val __obj = js.Dynamic.literal()
-    if (HTTPS_PROXY != null) __obj.updateDynamic("HTTPS_PROXY")(HTTPS_PROXY.asInstanceOf[js.Any])
-    if (HTTP_PROXY != null) __obj.updateDynamic("HTTP_PROXY")(HTTP_PROXY.asInstanceOf[js.Any])
-    if (NO_PROXY != null) __obj.updateDynamic("NO_PROXY")(NO_PROXY.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(HTTPS_PROXY = HTTPS_PROXY.asInstanceOf[js.Any], HTTP_PROXY = HTTP_PROXY.asInstanceOf[js.Any], NO_PROXY = NO_PROXY.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxyAgentConfigurationType]
   }
 }

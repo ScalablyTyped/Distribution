@@ -1,8 +1,9 @@
 package typings.pixiJs.mod
 
-import typings.pixiJs.AnonDevice
-import typings.pixiJs.AnonPhone
 import typings.pixiJs.PIXI.utils.DecomposedDataUri
+import typings.pixiJs.anon.Device
+import typings.pixiJs.anon.Phone
+import typings.std.CanvasRenderingContext2D
 import typings.std.Float32Array
 import typings.std.HTMLCanvasElement
 import typings.std.Uint16Array
@@ -43,6 +44,48 @@ object utils extends js.Object {
     extends typings.pixiJs.PIXI.utils.CanvasRenderTarget {
     def this(width: Double, height: Double) = this()
     def this(width: Double, height: Double, resolution: Double) = this()
+    /**
+      * The Canvas object that belongs to this CanvasRenderTarget.
+      *
+      * @member {HTMLCanvasElement} PIXI.utils.CanvasRenderTarget#canvas
+      */
+    /* CompleteClass */
+    override var canvas: HTMLCanvasElement = js.native
+    /**
+      * A CanvasRenderingContext2D object representing a two-dimensional rendering context.
+      *
+      * @member {CanvasRenderingContext2D} PIXI.utils.CanvasRenderTarget#context
+      */
+    /* CompleteClass */
+    override var context: CanvasRenderingContext2D = js.native
+    /**
+      * The height of the canvas buffer in pixels.
+      *
+      * @member {number}
+      */
+    /* CompleteClass */
+    override var height: Double = js.native
+    /**
+      * The width of the canvas buffer in pixels.
+      *
+      * @member {number}
+      */
+    /* CompleteClass */
+    override var width: Double = js.native
+    /**
+      * Destroys this canvas.
+      *
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    /**
+      * Resizes the canvas to the specified width and height.
+      *
+      * @param {number} width - the new width of the canvas
+      * @param {number} height - the new height of the canvas
+      */
+    /* CompleteClass */
+    override def resize(width: Double, height: Double): Unit = js.native
   }
   
   /**
@@ -396,13 +439,13 @@ object utils extends js.Object {
     */
   @js.native
   object isMobile extends js.Object {
-    var amazon: AnonPhone = js.native
-    var android: AnonPhone = js.native
+    var amazon: Phone = js.native
+    var android: Phone = js.native
     var any: Boolean = js.native
-    var apple: AnonDevice = js.native
+    var apple: Device = js.native
     var phone: Boolean = js.native
     var tablet: Boolean = js.native
-    var windows: AnonPhone = js.native
+    var windows: Phone = js.native
   }
   
 }

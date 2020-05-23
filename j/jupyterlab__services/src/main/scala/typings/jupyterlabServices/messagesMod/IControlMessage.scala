@@ -1,24 +1,24 @@
 package typings.jupyterlabServices.messagesMod
 
-import typings.jupyterlabServices.AnonAllowstdin
-import typings.jupyterlabServices.AnonArguments
-import typings.jupyterlabServices.AnonBody
-import typings.jupyterlabServices.AnonCode
-import typings.jupyterlabServices.AnonCodeString
-import typings.jupyterlabServices.AnonCommid
-import typings.jupyterlabServices.AnonCursorpos
-import typings.jupyterlabServices.AnonData
-import typings.jupyterlabServices.AnonEname
-import typings.jupyterlabServices.AnonEvent
-import typings.jupyterlabServices.AnonExecutioncount
-import typings.jupyterlabServices.AnonExecutionstate
-import typings.jupyterlabServices.AnonMetadata
-import typings.jupyterlabServices.AnonName
-import typings.jupyterlabServices.AnonPassword
-import typings.jupyterlabServices.AnonTargetname
-import typings.jupyterlabServices.AnonTransient
-import typings.jupyterlabServices.AnonTransientAnonDisplayidString
-import typings.jupyterlabServices.AnonWait
+import typings.jupyterlabServices.anon.Allowstdin
+import typings.jupyterlabServices.anon.Arguments
+import typings.jupyterlabServices.anon.Body
+import typings.jupyterlabServices.anon.Code
+import typings.jupyterlabServices.anon.CodeString
+import typings.jupyterlabServices.anon.Commid
+import typings.jupyterlabServices.anon.Cursorpos
+import typings.jupyterlabServices.anon.Data
+import typings.jupyterlabServices.anon.Ename
+import typings.jupyterlabServices.anon.Event
+import typings.jupyterlabServices.anon.Executioncount
+import typings.jupyterlabServices.anon.Executionstate
+import typings.jupyterlabServices.anon.Metadata
+import typings.jupyterlabServices.anon.Name
+import typings.jupyterlabServices.anon.Password
+import typings.jupyterlabServices.anon.Targetname
+import typings.jupyterlabServices.anon.Transient
+import typings.jupyterlabServices.anon.TransientDisplayidString
+import typings.jupyterlabServices.anon.Wait
 import typings.jupyterlabServices.jupyterlabServicesStrings.control
 import typings.luminoCoreutils.jsonMod.JSONObject
 import typings.std.ArrayBuffer
@@ -34,11 +34,11 @@ trait IControlMessage[T /* <: ControlMessageType */] extends IMessage[T] {
 
 object IControlMessage {
   @scala.inline
-  def apply[T /* <: ControlMessageType */](
+  def apply[T](
     channel: control,
-    content: AnonWait | AnonCommid | (ReplyContent[
+    content: Wait | Commid | (ReplyContent[
       ICommInfoReply | ICompleteReply | IHistoryReply | IInfoReply | IInputReply | IInspectReply | IIsCompleteReplyIncomplete | IIsCompleteReplyOther
-    ]) | AnonTargetname | AnonData | AnonCode | AnonMetadata | AnonEname | AnonExecutioncount | (ReplyContent[IExecuteReply] with IExecuteCount) | AnonAllowstdin | AnonTransient | IHistoryRequestRange | IHistoryRequestSearch | IHistoryRequestTail | js.Object | AnonPassword | AnonCursorpos | AnonCodeString | AnonExecutionstate | AnonName | ((/* import warning: importer.ImportType#apply Failed type conversion: @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.IDisplayDataMsg['content'] */ js.Any) with AnonTransientAnonDisplayidString) | AnonArguments | AnonBody | AnonEvent,
+    ]) | Targetname | Data | Code | Metadata | Ename | Executioncount | (ReplyContent[IExecuteReply] with IExecuteCount) | Allowstdin | Transient | IHistoryRequestRange | IHistoryRequestSearch | IHistoryRequestTail | js.Object | Password | Cursorpos | CodeString | Executionstate | Name | ((/* import warning: importer.ImportType#apply Failed type conversion: @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.IDisplayDataMsg['content'] */ js.Any) with TransientDisplayidString) | Arguments | Body | Event,
     header: IHeader[T],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,

@@ -23,18 +23,18 @@ trait IOperation extends js.Object {
 object IOperation {
   @scala.inline
   def apply(
-    done: js.UndefOr[Boolean] = js.undefined,
-    error: IStatus = null,
-    metadata: IAny = null,
-    name: String = null,
-    response: IAny = null
+    done: js.UndefOr[Null | Boolean] = js.undefined,
+    error: js.UndefOr[Null | IStatus] = js.undefined,
+    metadata: js.UndefOr[Null | IAny] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined,
+    response: js.UndefOr[Null | IAny] = js.undefined
   ): IOperation = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(done)) __obj.updateDynamic("done")(done.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (!js.isUndefined(metadata)) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(response)) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOperation]
   }
 }

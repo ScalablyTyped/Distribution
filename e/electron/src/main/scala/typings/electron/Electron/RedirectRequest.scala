@@ -16,12 +16,12 @@ object RedirectRequest {
   def apply(
     url: String,
     method: String = null,
-    session: Session_ = null,
+    session: js.UndefOr[Null | Session_] = js.undefined,
     uploadData: ProtocolResponseUploadData = null
   ): RedirectRequest = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
+    if (!js.isUndefined(session)) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     if (uploadData != null) __obj.updateDynamic("uploadData")(uploadData.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedirectRequest]
   }

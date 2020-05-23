@@ -1,6 +1,6 @@
 package typings.stripe.mod.charges
 
-import typings.stripe.AnonAmountDestination
+import typings.stripe.anon.AmountDestination
 import typings.stripe.mod.IDataOptionsWithMetadata
 import typings.stripe.mod.IOptionsMetadata
 import typings.stripe.mod.IShippingInformation
@@ -97,7 +97,7 @@ trait IChargeCreationOptions extends IDataOptionsWithMetadata {
     * An optional dictionary including the account to automatically transfer
     * to as part of a destination charge. See the Connect documentation for details.
     */
-  var transfer_data: js.UndefOr[AnonAmountDestination] = js.undefined
+  var transfer_data: js.UndefOr[AmountDestination] = js.undefined
   /**
     * A string that identifies this transaction as part of a group.
     * See the Connect documentation for details.
@@ -112,7 +112,7 @@ object IChargeCreationOptions {
   def apply(
     amount: Double,
     currency: String,
-    application_fee_amount: Int | Double = null,
+    application_fee_amount: js.UndefOr[Double] = js.undefined,
     capture: js.UndefOr[Boolean] = js.undefined,
     customer: String = null,
     description: String = null,
@@ -125,12 +125,12 @@ object IChargeCreationOptions {
     source: String | ICardSourceCreationOptions = null,
     statement_descriptor: String = null,
     statement_descriptor_suffix: String = null,
-    transfer_data: AnonAmountDestination = null,
+    transfer_data: AmountDestination = null,
     transfer_group: String = null
   ): IChargeCreationOptions = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any])
-    if (application_fee_amount != null) __obj.updateDynamic("application_fee_amount")(application_fee_amount.asInstanceOf[js.Any])
-    if (!js.isUndefined(capture)) __obj.updateDynamic("capture")(capture.asInstanceOf[js.Any])
+    if (!js.isUndefined(application_fee_amount)) __obj.updateDynamic("application_fee_amount")(application_fee_amount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(capture)) __obj.updateDynamic("capture")(capture.get.asInstanceOf[js.Any])
     if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])

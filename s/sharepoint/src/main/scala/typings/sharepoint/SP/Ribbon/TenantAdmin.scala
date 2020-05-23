@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("SP.Ribbon.TenantAdmin")
 @js.native
 object TenantAdmin extends js.Object {
-  @js.native
-  class TenantAdminPageComponent () extends PageComponent
-  
+  type TenantAdminPageComponent = PageComponent
 }
 

@@ -1,5 +1,7 @@
 package typings.emberObject
 
+import typings.emberObject.anon.Id
+import typings.emberObject.anon.Until
 import typings.std.PropertyDecorator
 import typings.std.RegExp
 import scala.scalajs.js
@@ -9,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ember/object/computed", JSImport.Namespace)
 @js.native
 object computedMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.emberObject.typesMod.ComputedPropertyMarker because Inheritance from two classes. Inlined ______getType, ______setType */ @js.native
   trait ComputedProperty[Get, Set] extends PropertyDecorator {
     // Necessary in order to avoid losing type information
@@ -52,8 +54,8 @@ object computedMod extends js.Object {
   def bool(dependentKey: String): ComputedProperty[Boolean, Boolean] = js.native
   def collect(dependentKeys: String*): ComputedProperty[js.Array[_], js.Array[_]] = js.native
   def deprecatingAlias(dependentKey: String): ComputedProperty[_, _] = js.native
-  def deprecatingAlias(dependentKey: String, options: AnonId): ComputedProperty[_, _] = js.native
-  def deprecatingAlias(dependentKey: String, options: AnonUntil): ComputedProperty[_, _] = js.native
+  def deprecatingAlias(dependentKey: String, options: Id): ComputedProperty[_, _] = js.native
+  def deprecatingAlias(dependentKey: String, options: Until): ComputedProperty[_, _] = js.native
   def empty(dependentKey: String): ComputedProperty[Boolean, Boolean] = js.native
   def equal(dependentKey: String, value: js.Any): ComputedProperty[Boolean, Boolean] = js.native
   def expandProperties(pattern: String, callback: js.Function1[/* expanded */ String, Unit]): Unit = js.native

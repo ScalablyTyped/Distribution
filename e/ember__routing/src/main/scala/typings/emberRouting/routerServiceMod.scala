@@ -1,5 +1,7 @@
 package typings.emberRouting
 
+import typings.emberRouting.anon.QueryParam
+import typings.emberRouting.anon.QueryParams
 import typings.emberRouting.emberRoutingStrings.routeDidChange
 import typings.emberRouting.emberRoutingStrings.routeWillChange
 import typings.emberRouting.routeInfoMod.RouteInfo
@@ -87,19 +89,19 @@ object routerServiceMod extends js.Object {
       modelsB: RouteModel,
       modelsC: RouteModel,
       modelsD: RouteModel,
-      options: AnonQueryParams
+      options: QueryParams
     ): Boolean = js.native
     def isActive(
       routeName: String,
       modelsA: RouteModel,
       modelsB: RouteModel,
       modelsC: RouteModel,
-      options: AnonQueryParams
+      options: QueryParams
     ): Boolean = js.native
-    def isActive(routeName: String, modelsA: RouteModel, modelsB: RouteModel, options: AnonQueryParams): Boolean = js.native
+    def isActive(routeName: String, modelsA: RouteModel, modelsB: RouteModel, options: QueryParams): Boolean = js.native
     def isActive(routeName: String, models: RouteModel): Boolean = js.native
-    def isActive(routeName: String, models: RouteModel, options: AnonQueryParams): Boolean = js.native
-    def isActive(routeName: String, options: AnonQueryParams): Boolean = js.native
+    def isActive(routeName: String, models: RouteModel, options: QueryParams): Boolean = js.native
+    def isActive(routeName: String, options: QueryParams): Boolean = js.native
     // https://api.emberjs.com/ember/3.6/classes/RouterService/events/routeDidChange?anchor=routeDidChange
     /**
       * Register a callback for an event.
@@ -146,20 +148,20 @@ object routerServiceMod extends js.Object {
       modelsB: RouteModel,
       modelsC: RouteModel,
       modelsD: RouteModel,
-      options: AnonQueryParams
+      options: QueryParams
     ): Transition = js.native
     def replaceWith(
       routeNameOrUrl: String,
       modelsA: RouteModel,
       modelsB: RouteModel,
       modelsC: RouteModel,
-      options: AnonQueryParams
+      options: QueryParams
     ): Transition = js.native
-    def replaceWith(routeNameOrUrl: String, modelsA: RouteModel, modelsB: RouteModel, options: AnonQueryParams): Transition = js.native
+    def replaceWith(routeNameOrUrl: String, modelsA: RouteModel, modelsB: RouteModel, options: QueryParams): Transition = js.native
     def replaceWith(routeNameOrUrl: String, models: RouteModel): Transition = js.native
-    def replaceWith(routeNameOrUrl: String, models: RouteModel, options: AnonQueryParams): Transition = js.native
-    def replaceWith(routeNameOrUrl: String, options: AnonQueryParams): Transition = js.native
-    def transitionTo(options: AnonQueryParams): Transition = js.native
+    def replaceWith(routeNameOrUrl: String, models: RouteModel, options: QueryParams): Transition = js.native
+    def replaceWith(routeNameOrUrl: String, options: QueryParams): Transition = js.native
+    def transitionTo(options: QueryParams): Transition = js.native
     // https://emberjs.com/api/ember/release/classes/RouterService/methods/isActive?anchor=transitionTo
     /**
       * Transition the application into another route. The route may
@@ -214,19 +216,19 @@ object routerServiceMod extends js.Object {
       modelsB: RouteModel,
       modelsC: RouteModel,
       modelsD: RouteModel,
-      options: AnonQueryParams
+      options: QueryParams
     ): Transition = js.native
     def transitionTo(
       routeNameOrUrl: String,
       modelsA: RouteModel,
       modelsB: RouteModel,
       modelsC: RouteModel,
-      options: AnonQueryParams
+      options: QueryParams
     ): Transition = js.native
-    def transitionTo(routeNameOrUrl: String, modelsA: RouteModel, modelsB: RouteModel, options: AnonQueryParams): Transition = js.native
+    def transitionTo(routeNameOrUrl: String, modelsA: RouteModel, modelsB: RouteModel, options: QueryParams): Transition = js.native
     def transitionTo(routeNameOrUrl: String, models: RouteModel): Transition = js.native
-    def transitionTo(routeNameOrUrl: String, models: RouteModel, options: AnonQueryParams): Transition = js.native
-    def transitionTo(routeNameOrUrl: String, options: AnonQueryParam): Transition = js.native
+    def transitionTo(routeNameOrUrl: String, models: RouteModel, options: QueryParams): Transition = js.native
+    def transitionTo(routeNameOrUrl: String, options: QueryParam): Transition = js.native
     // https://emberjs.com/api/ember/2.18/classes/RouterService/methods/isActive?anchor=urlFor
     /**
       * Generate a URL based on the supplied route name.
@@ -254,19 +256,19 @@ object routerServiceMod extends js.Object {
       modelsB: RouteModel,
       modelsC: RouteModel,
       modelsD: RouteModel,
-      options: AnonQueryParams
+      options: QueryParams
     ): String = js.native
     def urlFor(
       routeName: String,
       modelsA: RouteModel,
       modelsB: RouteModel,
       modelsC: RouteModel,
-      options: AnonQueryParams
+      options: QueryParams
     ): String = js.native
-    def urlFor(routeName: String, modelsA: RouteModel, modelsB: RouteModel, options: AnonQueryParams): String = js.native
+    def urlFor(routeName: String, modelsA: RouteModel, modelsB: RouteModel, options: QueryParams): String = js.native
     def urlFor(routeName: String, models: RouteModel): String = js.native
-    def urlFor(routeName: String, models: RouteModel, options: AnonQueryParams): String = js.native
-    def urlFor(routeName: String, options: AnonQueryParams): String = js.native
+    def urlFor(routeName: String, models: RouteModel, options: QueryParams): String = js.native
+    def urlFor(routeName: String, options: QueryParams): String = js.native
   }
   
   @js.native

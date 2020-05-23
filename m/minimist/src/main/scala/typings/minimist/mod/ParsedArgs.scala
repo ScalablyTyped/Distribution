@@ -23,7 +23,7 @@ object ParsedArgs {
   def apply(
     _underscore: js.Array[String],
     `--`: js.Array[String] = null,
-    StringDictionary: /* arg */ StringDictionary[js.Any] = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null
   ): ParsedArgs = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("_")(_underscore.asInstanceOf[js.Any])

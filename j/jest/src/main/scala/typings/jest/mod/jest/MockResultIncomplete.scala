@@ -16,10 +16,9 @@ trait MockResultIncomplete
 
 object MockResultIncomplete {
   @scala.inline
-  def apply(`type`: incomplete, value: js.UndefOr[scala.Nothing] = js.undefined): MockResultIncomplete = {
+  def apply(`type`: incomplete): MockResultIncomplete = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[MockResultIncomplete]
   }
 }

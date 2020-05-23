@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 
 /**
   * Represents the properties of the recurrence.
-  * 
+  *
   * [Api set: Mailbox 1.7]
-  * 
+  *
   * @remarks
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 trait RecurrenceProperties extends js.Object {
@@ -32,7 +32,7 @@ trait RecurrenceProperties extends js.Object {
     */
   var days: js.UndefOr[js.Array[Days | String]] = js.undefined
   /**
-    * Represents your chosen first day of the week otherwise the default is the value in the current user's settings. 
+    * Represents your chosen first day of the week otherwise the default is the value in the current user's settings.
     * Valid values are: 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', and 'Sun'.
     */
   var firstDayOfWeek: js.UndefOr[Days | String] = js.undefined
@@ -45,7 +45,7 @@ trait RecurrenceProperties extends js.Object {
     */
   var month: js.UndefOr[Month | String] = js.undefined
   /**
-    * Represents the number of the week in the selected month e.g. 'first' for first week of the month.
+    * Represents the number of the week in the selected month e.g., 'first' for first week of the month.
     */
   var weekNumber: js.UndefOr[WeekNumber | String] = js.undefined
 }
@@ -54,7 +54,7 @@ object RecurrenceProperties {
   @scala.inline
   def apply(
     interval: Double,
-    dayOfMonth: Int | Double = null,
+    dayOfMonth: js.UndefOr[Double] = js.undefined,
     dayOfWeek: Days | String = null,
     days: js.Array[Days | String] = null,
     firstDayOfWeek: Days | String = null,
@@ -62,7 +62,7 @@ object RecurrenceProperties {
     weekNumber: WeekNumber | String = null
   ): RecurrenceProperties = {
     val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any])
-    if (dayOfMonth != null) __obj.updateDynamic("dayOfMonth")(dayOfMonth.asInstanceOf[js.Any])
+    if (!js.isUndefined(dayOfMonth)) __obj.updateDynamic("dayOfMonth")(dayOfMonth.get.asInstanceOf[js.Any])
     if (dayOfWeek != null) __obj.updateDynamic("dayOfWeek")(dayOfWeek.asInstanceOf[js.Any])
     if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
     if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])

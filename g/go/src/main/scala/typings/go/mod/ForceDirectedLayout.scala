@@ -1,6 +1,6 @@
 package typings.go.mod
 
-import typings.go.AnonRandom
+import typings.go.anon.Random
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,7 +44,7 @@ class ForceDirectedLayout () extends Layout {
   /**Gets or sets the maximum number of iterations to perform when doing the force-directed auto layout.*/
   var maxIterations: Double = js.native
   /**Gets or sets a random number generator with a random() method; set to null in order to use and reset an internal repeatable pseudo-random number generator.*/
-  var randomNumberGenerator: AnonRandom = js.native
+  var randomNumberGenerator: Random = js.native
   /**Gets or sets whether the fromSpot and the toSpot of every Link should be set to Spot.Default.*/
   var setsPortSpots: Boolean = js.native
   /**

@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,17 @@ trait MediaDeviceInfo extends js.Object {
   def toJSON(): js.Any
 }
 
-@JSGlobal("MediaDeviceInfo")
-@js.native
-object MediaDeviceInfo extends Instantiable0[MediaDeviceInfo]
+object MediaDeviceInfo {
+  @scala.inline
+  def apply(
+    deviceId: java.lang.String,
+    groupId: java.lang.String,
+    kind: MediaDeviceKind,
+    label: java.lang.String,
+    toJSON: () => js.Any
+  ): MediaDeviceInfo = {
+    val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any], groupId = groupId.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
+    __obj.asInstanceOf[MediaDeviceInfo]
+  }
+}
 

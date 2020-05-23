@@ -39,6 +39,11 @@ trait ReactourProps extends js.Object {
     */
   var disableDotsNavigation: js.UndefOr[Boolean] = js.undefined
   /**
+    * Disable FocusLock component
+    * @default false
+    */
+  var disableFocusLock: js.UndefOr[Boolean] = js.undefined
+  /**
     * Disable the ability to click or intercat in any way with the _Highlighted_ element
     */
   var disableInteraction: js.UndefOr[Boolean] = js.undefined
@@ -176,66 +181,68 @@ object ReactourProps {
     className: String = null,
     closeWithMask: js.UndefOr[Boolean] = js.undefined,
     disableDotsNavigation: js.UndefOr[Boolean] = js.undefined,
+    disableFocusLock: js.UndefOr[Boolean] = js.undefined,
     disableInteraction: js.UndefOr[Boolean] = js.undefined,
     disableKeyboardNavigation: Boolean | (js.Array[esc | right | left]) = null,
     getCurrentStep: /* currentStep */ Double => Unit = null,
-    goToStep: Int | Double = null,
+    goToStep: js.UndefOr[Double] = js.undefined,
     highlightedMaskClassName: String = null,
-    inViewThreshold: Int | Double = null,
+    inViewThreshold: js.UndefOr[Double] = js.undefined,
     lastStepNextButton: ReactNode = null,
     maskClassName: String = null,
-    maskSpace: Int | Double = null,
+    maskSpace: js.UndefOr[Double] = js.undefined,
     nextButton: ReactNode = null,
     nextStep: () => Unit = null,
     onAfterOpen: /* target */ HTMLDivElement => Unit = null,
     onBeforeClose: /* target */ HTMLDivElement => Unit = null,
     prevButton: ReactNode = null,
     prevStep: () => Unit = null,
-    rounded: Int | Double = null,
-    scrollDuration: Int | Double = null,
-    scrollOffset: Int | Double = null,
+    rounded: js.UndefOr[Double] = js.undefined,
+    scrollDuration: js.UndefOr[Double] = js.undefined,
+    scrollOffset: js.UndefOr[Double] = js.undefined,
     showButtons: js.UndefOr[Boolean] = js.undefined,
     showCloseButton: js.UndefOr[Boolean] = js.undefined,
     showNavigation: js.UndefOr[Boolean] = js.undefined,
     showNavigationNumber: js.UndefOr[Boolean] = js.undefined,
     showNumber: js.UndefOr[Boolean] = js.undefined,
-    startAt: Int | Double = null,
+    startAt: js.UndefOr[Double] = js.undefined,
     update: String = null,
-    updateDelay: Int | Double = null
+    updateDelay: js.UndefOr[Double] = js.undefined
   ): ReactourProps = {
     val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any], onRequestClose = js.Any.fromFunction1(onRequestClose), steps = steps.asInstanceOf[js.Any])
     if (accentColor != null) __obj.updateDynamic("accentColor")(accentColor.asInstanceOf[js.Any])
     if (badgeContent != null) __obj.updateDynamic("badgeContent")(js.Any.fromFunction2(badgeContent))
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeWithMask)) __obj.updateDynamic("closeWithMask")(closeWithMask.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableDotsNavigation)) __obj.updateDynamic("disableDotsNavigation")(disableDotsNavigation.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableInteraction)) __obj.updateDynamic("disableInteraction")(disableInteraction.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeWithMask)) __obj.updateDynamic("closeWithMask")(closeWithMask.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableDotsNavigation)) __obj.updateDynamic("disableDotsNavigation")(disableDotsNavigation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableFocusLock)) __obj.updateDynamic("disableFocusLock")(disableFocusLock.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableInteraction)) __obj.updateDynamic("disableInteraction")(disableInteraction.get.asInstanceOf[js.Any])
     if (disableKeyboardNavigation != null) __obj.updateDynamic("disableKeyboardNavigation")(disableKeyboardNavigation.asInstanceOf[js.Any])
     if (getCurrentStep != null) __obj.updateDynamic("getCurrentStep")(js.Any.fromFunction1(getCurrentStep))
-    if (goToStep != null) __obj.updateDynamic("goToStep")(goToStep.asInstanceOf[js.Any])
+    if (!js.isUndefined(goToStep)) __obj.updateDynamic("goToStep")(goToStep.get.asInstanceOf[js.Any])
     if (highlightedMaskClassName != null) __obj.updateDynamic("highlightedMaskClassName")(highlightedMaskClassName.asInstanceOf[js.Any])
-    if (inViewThreshold != null) __obj.updateDynamic("inViewThreshold")(inViewThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(inViewThreshold)) __obj.updateDynamic("inViewThreshold")(inViewThreshold.get.asInstanceOf[js.Any])
     if (lastStepNextButton != null) __obj.updateDynamic("lastStepNextButton")(lastStepNextButton.asInstanceOf[js.Any])
     if (maskClassName != null) __obj.updateDynamic("maskClassName")(maskClassName.asInstanceOf[js.Any])
-    if (maskSpace != null) __obj.updateDynamic("maskSpace")(maskSpace.asInstanceOf[js.Any])
+    if (!js.isUndefined(maskSpace)) __obj.updateDynamic("maskSpace")(maskSpace.get.asInstanceOf[js.Any])
     if (nextButton != null) __obj.updateDynamic("nextButton")(nextButton.asInstanceOf[js.Any])
     if (nextStep != null) __obj.updateDynamic("nextStep")(js.Any.fromFunction0(nextStep))
     if (onAfterOpen != null) __obj.updateDynamic("onAfterOpen")(js.Any.fromFunction1(onAfterOpen))
     if (onBeforeClose != null) __obj.updateDynamic("onBeforeClose")(js.Any.fromFunction1(onBeforeClose))
     if (prevButton != null) __obj.updateDynamic("prevButton")(prevButton.asInstanceOf[js.Any])
     if (prevStep != null) __obj.updateDynamic("prevStep")(js.Any.fromFunction0(prevStep))
-    if (rounded != null) __obj.updateDynamic("rounded")(rounded.asInstanceOf[js.Any])
-    if (scrollDuration != null) __obj.updateDynamic("scrollDuration")(scrollDuration.asInstanceOf[js.Any])
-    if (scrollOffset != null) __obj.updateDynamic("scrollOffset")(scrollOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(showButtons)) __obj.updateDynamic("showButtons")(showButtons.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNavigation)) __obj.updateDynamic("showNavigation")(showNavigation.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNavigationNumber)) __obj.updateDynamic("showNavigationNumber")(showNavigationNumber.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNumber)) __obj.updateDynamic("showNumber")(showNumber.asInstanceOf[js.Any])
-    if (startAt != null) __obj.updateDynamic("startAt")(startAt.asInstanceOf[js.Any])
+    if (!js.isUndefined(rounded)) __obj.updateDynamic("rounded")(rounded.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollDuration)) __obj.updateDynamic("scrollDuration")(scrollDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollOffset)) __obj.updateDynamic("scrollOffset")(scrollOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showButtons)) __obj.updateDynamic("showButtons")(showButtons.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNavigation)) __obj.updateDynamic("showNavigation")(showNavigation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNavigationNumber)) __obj.updateDynamic("showNavigationNumber")(showNavigationNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNumber)) __obj.updateDynamic("showNumber")(showNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startAt)) __obj.updateDynamic("startAt")(startAt.get.asInstanceOf[js.Any])
     if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
-    if (updateDelay != null) __obj.updateDynamic("updateDelay")(updateDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateDelay)) __obj.updateDynamic("updateDelay")(updateDelay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactourProps]
   }
 }

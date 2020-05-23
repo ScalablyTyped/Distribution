@@ -1,7 +1,7 @@
 package typings.emberData.mod.DS
 
-import typings.emberData.AnonAdapterOptions
-import typings.emberData.AnonBackgroundReload
+import typings.emberData.anon.AdapterOptions
+import typings.emberData.anon.BackgroundReload
 import typings.rsvp.mod.default.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -47,7 +47,7 @@ class Store () extends js.Object {
   def findAll[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K): PromiseArray[
     /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
   ] = js.native
-  def findAll[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, options: AnonBackgroundReload): PromiseArray[
+  def findAll[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, options: BackgroundReload): PromiseArray[
     /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
   ] = js.native
   /**
@@ -120,7 +120,7 @@ class Store () extends js.Object {
   ]) with (PromiseArray[
     /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
   ]) = js.native
-  def query[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, query: js.Object, options: AnonAdapterOptions): (AdapterPopulatedRecordArray[
+  def query[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, query: js.Object, options: AdapterOptions): (AdapterPopulatedRecordArray[
     /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
   ]) with (PromiseArray[
     /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
@@ -133,7 +133,7 @@ class Store () extends js.Object {
   def queryRecord[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, query: js.Object): Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
   ] = js.native
-  def queryRecord[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, query: js.Object, options: AnonAdapterOptions): Promise[
+  def queryRecord[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, query: js.Object, options: AdapterOptions): Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
   ] = js.native
   /**

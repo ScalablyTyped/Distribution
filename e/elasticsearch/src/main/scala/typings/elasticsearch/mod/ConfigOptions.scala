@@ -38,21 +38,21 @@ object ConfigOptions {
     apiVersion: String = null,
     connectionClass: String | (Instantiable2[/* host */ js.Any, /* config */ js.Any, ^]) = null,
     createNodeAgent: js.Any = null,
-    deadTimeout: Int | Double = null,
+    deadTimeout: js.UndefOr[Double] = js.undefined,
     defer: () => Unit = null,
     host: js.Any = null,
     hosts: js.Any = null,
     httpAuth: String = null,
     keepAlive: js.UndefOr[Boolean] = js.undefined,
     log: js.Any = null,
-    maxRetries: Int | Double = null,
-    maxSockets: Int | Double = null,
+    maxRetries: js.UndefOr[Double] = js.undefined,
+    maxSockets: js.UndefOr[Double] = js.undefined,
     nodesToHostCallback: js.Any = null,
-    pingTimeout: Int | Double = null,
+    pingTimeout: js.UndefOr[Double] = js.undefined,
     plugins: js.Any = null,
-    requestTimeout: Int | Double = null,
+    requestTimeout: js.UndefOr[Double] = js.undefined,
     selector: js.Any = null,
-    sniffInterval: Int | Double = null,
+    sniffInterval: js.UndefOr[Double] = js.undefined,
     sniffOnConnectionFault: js.UndefOr[Boolean] = js.undefined,
     sniffOnStart: js.UndefOr[Boolean] = js.undefined,
     sniffedNodesProtocol: String = null,
@@ -63,26 +63,26 @@ object ConfigOptions {
     if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion.asInstanceOf[js.Any])
     if (connectionClass != null) __obj.updateDynamic("connectionClass")(connectionClass.asInstanceOf[js.Any])
     if (createNodeAgent != null) __obj.updateDynamic("createNodeAgent")(createNodeAgent.asInstanceOf[js.Any])
-    if (deadTimeout != null) __obj.updateDynamic("deadTimeout")(deadTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(deadTimeout)) __obj.updateDynamic("deadTimeout")(deadTimeout.get.asInstanceOf[js.Any])
     if (defer != null) __obj.updateDynamic("defer")(js.Any.fromFunction0(defer))
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (hosts != null) __obj.updateDynamic("hosts")(hosts.asInstanceOf[js.Any])
     if (httpAuth != null) __obj.updateDynamic("httpAuth")(httpAuth.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.get.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (maxSockets != null) __obj.updateDynamic("maxSockets")(maxSockets.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSockets)) __obj.updateDynamic("maxSockets")(maxSockets.get.asInstanceOf[js.Any])
     if (nodesToHostCallback != null) __obj.updateDynamic("nodesToHostCallback")(nodesToHostCallback.asInstanceOf[js.Any])
-    if (pingTimeout != null) __obj.updateDynamic("pingTimeout")(pingTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(pingTimeout)) __obj.updateDynamic("pingTimeout")(pingTimeout.get.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestTimeout)) __obj.updateDynamic("requestTimeout")(requestTimeout.get.asInstanceOf[js.Any])
     if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (sniffInterval != null) __obj.updateDynamic("sniffInterval")(sniffInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(sniffOnConnectionFault)) __obj.updateDynamic("sniffOnConnectionFault")(sniffOnConnectionFault.asInstanceOf[js.Any])
-    if (!js.isUndefined(sniffOnStart)) __obj.updateDynamic("sniffOnStart")(sniffOnStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(sniffInterval)) __obj.updateDynamic("sniffInterval")(sniffInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sniffOnConnectionFault)) __obj.updateDynamic("sniffOnConnectionFault")(sniffOnConnectionFault.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sniffOnStart)) __obj.updateDynamic("sniffOnStart")(sniffOnStart.get.asInstanceOf[js.Any])
     if (sniffedNodesProtocol != null) __obj.updateDynamic("sniffedNodesProtocol")(sniffedNodesProtocol.asInstanceOf[js.Any])
     if (ssl != null) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
-    if (!js.isUndefined(suggestCompression)) __obj.updateDynamic("suggestCompression")(suggestCompression.asInstanceOf[js.Any])
+    if (!js.isUndefined(suggestCompression)) __obj.updateDynamic("suggestCompression")(suggestCompression.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]
   }
 }

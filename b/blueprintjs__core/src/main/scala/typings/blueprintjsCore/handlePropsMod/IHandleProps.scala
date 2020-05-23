@@ -2,6 +2,7 @@ package typings.blueprintjsCore.handlePropsMod
 
 import typings.blueprintjsCore.intentMod.Intent
 import typings.blueprintjsCore.propsMod.IProps
+import typings.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,6 +25,10 @@ trait IHandleProps extends IProps {
   var onChange: js.UndefOr[js.Function1[/* newValue */ Double, Unit]] = js.undefined
   /** Callback invoked when this handle is released (the end of a drag interaction). */
   var onRelease: js.UndefOr[js.Function1[/* newValue */ Double, Unit]] = js.undefined
+  /** Style to use for the track segment immediately after this handle, taking priority over `trackStyleBefore`. */
+  var trackStyleAfter: js.UndefOr[CSSProperties] = js.undefined
+  /** Style to use for the track segment immediately before this handle */
+  var trackStyleBefore: js.UndefOr[CSSProperties] = js.undefined
   /**
     * Handle appearance type.
     * @default "full"
@@ -43,6 +48,8 @@ object IHandleProps {
     interactionKind: HandleInteractionKind = null,
     onChange: /* newValue */ Double => Unit = null,
     onRelease: /* newValue */ Double => Unit = null,
+    trackStyleAfter: CSSProperties = null,
+    trackStyleBefore: CSSProperties = null,
     `type`: HandleType = null
   ): IHandleProps = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
@@ -52,6 +59,8 @@ object IHandleProps {
     if (interactionKind != null) __obj.updateDynamic("interactionKind")(interactionKind.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onRelease != null) __obj.updateDynamic("onRelease")(js.Any.fromFunction1(onRelease))
+    if (trackStyleAfter != null) __obj.updateDynamic("trackStyleAfter")(trackStyleAfter.asInstanceOf[js.Any])
+    if (trackStyleBefore != null) __obj.updateDynamic("trackStyleBefore")(trackStyleBefore.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHandleProps]
   }

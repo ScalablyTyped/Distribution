@@ -14,9 +14,9 @@ trait AppOptions extends js.Object {
 
 object AppOptions {
   @scala.inline
-  def apply(height: Int | Double = null, mode: `1` | `2` | `3` = null): AppOptions = {
+  def apply(height: js.UndefOr[Double] = js.undefined, mode: `1` | `2` | `3` = null): AppOptions = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppOptions]
   }

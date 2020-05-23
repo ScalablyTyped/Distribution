@@ -119,15 +119,15 @@ object CoerceOptions {
     undefined: js.UndefOr[Boolean] = js.undefined
   ): CoerceOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(boolean)) __obj.updateDynamic("boolean")(boolean.asInstanceOf[js.Any])
-    if (!js.isUndefined(date)) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (!js.isUndefined(function)) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
-    if (!js.isUndefined(`null`)) __obj.updateDynamic("null")(`null`.asInstanceOf[js.Any])
-    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
-    if (!js.isUndefined(set)) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
-    if (!js.isUndefined(string)) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbol)) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(undefined)) __obj.updateDynamic("undefined")(undefined.asInstanceOf[js.Any])
+    if (!js.isUndefined(boolean)) __obj.updateDynamic("boolean")(boolean.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(date)) __obj.updateDynamic("date")(date.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(function)) __obj.updateDynamic("function")(function.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`null`)) __obj.updateDynamic("null")(`null`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(set)) __obj.updateDynamic("set")(set.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(string)) __obj.updateDynamic("string")(string.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbol)) __obj.updateDynamic("symbol")(symbol.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(undefined)) __obj.updateDynamic("undefined")(undefined.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoerceOptions]
   }
 }

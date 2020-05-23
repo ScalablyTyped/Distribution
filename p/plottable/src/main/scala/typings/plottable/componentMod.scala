@@ -1,6 +1,8 @@
 package typings.plottable
 
 import typings.d3Selection.mod.Selection_
+import typings.plottable.anon.Height
+import typings.plottable.anon.Width
 import typings.plottable.componentContainerMod.ComponentContainer
 import typings.plottable.interfacesMod.Bounds
 import typings.plottable.interfacesMod.Point
@@ -78,7 +80,7 @@ object componentMod extends js.Object {
       * Override in subclasses to provide additional functionality.
       */
     /* protected */ def _setup(): Unit = js.native
-    /* protected */ def _sizeFromOffer(availableWidth: Double, availableHeight: Double): AnonHeight = js.native
+    /* protected */ def _sizeFromOffer(availableWidth: Double, availableHeight: Double): Height = js.native
     /**
       * Adds a given CSS class to the Component.
       *
@@ -342,14 +344,14 @@ object componentMod extends js.Object {
     def yAlignment(yAlignment: YAlignment): this.type = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
+  /* keyof plottable.anon.Center */ /* Rewritten from type alias, can be one of: 
     - typings.plottable.plottableStrings.left
     - typings.plottable.plottableStrings.right
     - typings.plottable.plottableStrings.center
   */
   trait XAlignment extends js.Object
   
-  /* Rewritten from type alias, can be one of: 
+  /* keyof plottable.anon.BottomCenter */ /* Rewritten from type alias, can be one of: 
     - typings.plottable.plottableStrings.center
     - typings.plottable.plottableStrings.top
     - typings.plottable.plottableStrings.bottom
@@ -378,6 +380,6 @@ object componentMod extends js.Object {
   }
   
   type ComponentCallback = js.Function1[/* component */ Component, Unit]
-  type IResizeHandler = js.Function1[/* size */ AnonWidth, Unit]
+  type IResizeHandler = js.Function1[/* size */ Width, Unit]
 }
 

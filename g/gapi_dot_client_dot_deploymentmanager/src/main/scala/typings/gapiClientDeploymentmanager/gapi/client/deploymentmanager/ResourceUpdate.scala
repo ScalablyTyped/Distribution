@@ -1,7 +1,7 @@
 package typings.gapiClientDeploymentmanager.gapi.client.deploymentmanager
 
-import typings.gapiClientDeploymentmanager.AnonData
-import typings.gapiClientDeploymentmanager.AnonErrors
+import typings.gapiClientDeploymentmanager.anon.Data
+import typings.gapiClientDeploymentmanager.anon.Errors
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait ResourceUpdate extends js.Object {
   /** The Access Control Policy to set on this resource after updating the resource itself. */
   var accessControl: js.UndefOr[ResourceAccessControl] = js.undefined
   /** Output only. If errors are generated during update of the resource, this field will be populated. */
-  var error: js.UndefOr[AnonErrors] = js.undefined
+  var error: js.UndefOr[Errors] = js.undefined
   /** Output only. The expanded properties of the resource with reference values expanded. Returned as serialized YAML. */
   var finalProperties: js.UndefOr[String] = js.undefined
   /** Output only. The intent of the resource: PREVIEW, UPDATE, or CANCEL. */
@@ -22,20 +22,20 @@ trait ResourceUpdate extends js.Object {
   /** Output only. The state of the resource. */
   var state: js.UndefOr[String] = js.undefined
   /** Output only. If warning messages are generated during processing of this resource, this field will be populated. */
-  var warnings: js.UndefOr[js.Array[AnonData]] = js.undefined
+  var warnings: js.UndefOr[js.Array[Data]] = js.undefined
 }
 
 object ResourceUpdate {
   @scala.inline
   def apply(
     accessControl: ResourceAccessControl = null,
-    error: AnonErrors = null,
+    error: Errors = null,
     finalProperties: String = null,
     intent: String = null,
     manifest: String = null,
     properties: String = null,
     state: String = null,
-    warnings: js.Array[AnonData] = null
+    warnings: js.Array[Data] = null
   ): ResourceUpdate = {
     val __obj = js.Dynamic.literal()
     if (accessControl != null) __obj.updateDynamic("accessControl")(accessControl.asInstanceOf[js.Any])

@@ -24,13 +24,13 @@ object TabRemoveEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     model: js.Any = null,
-    removedIndex: Int | Double = null,
+    removedIndex: js.UndefOr[Double] = js.undefined,
     `type`: String = null
   ): TabRemoveEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (removedIndex != null) __obj.updateDynamic("removedIndex")(removedIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(removedIndex)) __obj.updateDynamic("removedIndex")(removedIndex.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabRemoveEventArgs]
   }

@@ -58,7 +58,7 @@ object ReplicationRule {
     Filter: ReplicationRuleFilter = null,
     ID: String = null,
     Prefix: String = null,
-    Priority: Int | Double = null,
+    Priority: js.UndefOr[Double] = js.undefined,
     SourceSelectionCriteria: SourceSelectionCriteria = null
   ): ReplicationRule = {
     val __obj = js.Dynamic.literal(Destination = Destination.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
@@ -66,7 +66,7 @@ object ReplicationRule {
     if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
     if (ID != null) __obj.updateDynamic("ID")(ID.asInstanceOf[js.Any])
     if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
-    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority.get.asInstanceOf[js.Any])
     if (SourceSelectionCriteria != null) __obj.updateDynamic("SourceSelectionCriteria")(SourceSelectionCriteria.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicationRule]
   }

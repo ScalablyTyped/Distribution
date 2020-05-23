@@ -4,17 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.SetAccessorSyntax")
 @js.native
-class SetAccessorSyntax protected () extends SyntaxNode {
-  def this(
-    modifiers: ISyntaxList,
-    setKeyword: ISyntaxToken,
-    propertyName: ISyntaxToken,
-    parameterList: ParameterListSyntax,
-    block: BlockSyntax,
-    parsedInStrictMode: Boolean
-  ) = this()
+trait SetAccessorSyntax extends SyntaxNode {
   var block: BlockSyntax = js.native
   var modifiers: ISyntaxList = js.native
   var parameterList: ParameterListSyntax = js.native
@@ -35,18 +26,5 @@ class SetAccessorSyntax protected () extends SyntaxNode {
   def withParameterList(parameterList: ParameterListSyntax): SetAccessorSyntax = js.native
   def withPropertyName(propertyName: ISyntaxToken): SetAccessorSyntax = js.native
   def withSetKeyword(setKeyword: ISyntaxToken): SetAccessorSyntax = js.native
-}
-
-/* static members */
-@JSGlobal("TypeScript.SetAccessorSyntax")
-@js.native
-object SetAccessorSyntax extends js.Object {
-  def create(
-    setKeyword: ISyntaxToken,
-    propertyName: ISyntaxToken,
-    parameterList: ParameterListSyntax,
-    block: BlockSyntax
-  ): SetAccessorSyntax = js.native
-  def create1(propertyName: ISyntaxToken): SetAccessorSyntax = js.native
 }
 

@@ -56,23 +56,23 @@ object IPaymentIntentConfirmOptions {
     payment_method: String = null,
     payment_method_options: IPaymentMethodOptions = null,
     payment_method_types: js.Array[PaymentIntentPaymentMethodType] = null,
-    receipt_email: String = null,
+    receipt_email: js.UndefOr[Null | String] = js.undefined,
     return_url: String = null,
     save_payment_method: js.UndefOr[Boolean] = js.undefined,
     setup_future_usage: PaymentIntentFutureUsageType = null,
-    shipping: IShippingInformation = null
+    shipping: js.UndefOr[Null | IShippingInformation] = js.undefined
   ): IPaymentIntentConfirmOptions = {
     val __obj = js.Dynamic.literal()
     if (client_secret != null) __obj.updateDynamic("client_secret")(client_secret.asInstanceOf[js.Any])
-    if (!js.isUndefined(off_session)) __obj.updateDynamic("off_session")(off_session.asInstanceOf[js.Any])
+    if (!js.isUndefined(off_session)) __obj.updateDynamic("off_session")(off_session.get.asInstanceOf[js.Any])
     if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method.asInstanceOf[js.Any])
     if (payment_method_options != null) __obj.updateDynamic("payment_method_options")(payment_method_options.asInstanceOf[js.Any])
     if (payment_method_types != null) __obj.updateDynamic("payment_method_types")(payment_method_types.asInstanceOf[js.Any])
-    if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email.asInstanceOf[js.Any])
+    if (!js.isUndefined(receipt_email)) __obj.updateDynamic("receipt_email")(receipt_email.asInstanceOf[js.Any])
     if (return_url != null) __obj.updateDynamic("return_url")(return_url.asInstanceOf[js.Any])
-    if (!js.isUndefined(save_payment_method)) __obj.updateDynamic("save_payment_method")(save_payment_method.asInstanceOf[js.Any])
+    if (!js.isUndefined(save_payment_method)) __obj.updateDynamic("save_payment_method")(save_payment_method.get.asInstanceOf[js.Any])
     if (setup_future_usage != null) __obj.updateDynamic("setup_future_usage")(setup_future_usage.asInstanceOf[js.Any])
-    if (shipping != null) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
+    if (!js.isUndefined(shipping)) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentIntentConfirmOptions]
   }
 }

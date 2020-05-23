@@ -1,21 +1,21 @@
 package typings.ember.mod.default
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ember.TypeofEventTarget
-import typings.ember.TypeofPromise
+import typings.ember.anon.TypeofEventTarget
+import typings.ember.anon.TypeofPromise
 import typings.ember.emberBooleans.`false`
 import typings.ember.emberBooleans.`true`
 import typings.ember.emberStrings.^
-import typings.rsvp.Anon0
-import typings.rsvp.Anon1
-import typings.rsvp.Anon2
-import typings.rsvp.Anon3
-import typings.rsvp.Anon4
-import typings.rsvp.Anon5
-import typings.rsvp.Anon6
-import typings.rsvp.Anon7
-import typings.rsvp.Anon8
-import typings.rsvp.AnonLength
+import typings.rsvp.anon.Length
+import typings.rsvp.anon.`0`
+import typings.rsvp.anon.`1`
+import typings.rsvp.anon.`2`
+import typings.rsvp.anon.`3`
+import typings.rsvp.anon.`4`
+import typings.rsvp.anon.`5`
+import typings.rsvp.anon.`6`
+import typings.rsvp.anon.`7`
+import typings.rsvp.anon.`8`
 import typings.rsvp.mod.RSVP.Arg
 import typings.rsvp.mod.RSVP.Deferred
 import typings.rsvp.mod.RSVP.Promise
@@ -34,7 +34,7 @@ object RSVP extends js.Object {
   val off: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EventTarget.off */ js.Any = js.native
   val on: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EventTarget.on */ js.Any = js.native
   def all[T](values: js.Array[T | js.Thenable[T]]): js.Promise[js.Array[T]] = js.native
-  def all[TAll](values: Iterable[TAll | js.Thenable[TAll]]): js.Promise[js.Array[TAll]] = js.native
+  def all[T](values: Iterable[T | js.Thenable[T]]): js.Promise[js.Array[T]] = js.native
   def all[T1, T2](values: js.Tuple2[T1 | js.Thenable[T1], T2 | js.Thenable[T2]]): js.Promise[js.Tuple2[T1, T2]] = js.native
   def all[T1, T2, T3](values: js.Tuple3[T1 | js.Thenable[T1], T2 | js.Thenable[T2], T3 | js.Thenable[T3]]): js.Promise[js.Tuple3[T1, T2, T3]] = js.native
   def all[T1, T2, T3, T4](
@@ -422,12 +422,12 @@ object RSVP extends js.Object {
   def filter[T1, T2, T3, T4, T5, T6](
     entries: js.Tuple6[Arg[T1], Arg[T2], Arg[T3], Arg[T4], Arg[T5], Arg[T6]],
     filterFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6, Boolean]
-  ): Promise[(js.Array[T1 | T2 | T3 | T4 | T5 | T6]) with Anon3] = js.native
+  ): Promise[(js.Array[T1 | T2 | T3 | T4 | T5 | T6]) with `3`] = js.native
   def filter[T1, T2, T3, T4, T5, T6](
     entries: js.Tuple6[Arg[T1], Arg[T2], Arg[T3], Arg[T4], Arg[T5], Arg[T6]],
     filterFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6, Boolean],
     label: java.lang.String
-  ): Promise[(js.Array[T1 | T2 | T3 | T4 | T5 | T6]) with Anon3] = js.native
+  ): Promise[(js.Array[T1 | T2 | T3 | T4 | T5 | T6]) with `3`] = js.native
   def filter[T1, T2, T3, T4, T5, T6, T7](
     entries: js.Tuple7[Arg[T1], Arg[T2], Arg[T3], Arg[T4], Arg[T5], Arg[T6], Arg[T7]],
     filterFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6 | T7, Boolean]
@@ -495,83 +495,83 @@ object RSVP extends js.Object {
   {[ P in keyof T ]: rsvp.rsvp.RSVP.PromiseState<T[P]>}
     */ ^  with TopLevel[T]
   ] = js.native
-  def map[T, U](entries: js.Array[Arg[T]], mapFn: js.Function1[/* item */ T, U]): Promise[js.Array[U] with Anon8] = js.native
-  def map[T, U](entries: js.Array[Arg[T]], mapFn: js.Function1[/* item */ T, U], label: java.lang.String): Promise[js.Array[U] with Anon8] = js.native
-  def map[T1, T2, U](entries: js.Tuple2[Arg[T1], Arg[T2]], mapFn: js.Function1[/* item */ T1 | T2, U]): Promise[js.Array[U] with Anon7] = js.native
+  def map[T, U](entries: js.Array[Arg[T]], mapFn: js.Function1[/* item */ T, U]): Promise[js.Array[U] with `8`] = js.native
+  def map[T, U](entries: js.Array[Arg[T]], mapFn: js.Function1[/* item */ T, U], label: java.lang.String): Promise[js.Array[U] with `8`] = js.native
+  def map[T1, T2, U](entries: js.Tuple2[Arg[T1], Arg[T2]], mapFn: js.Function1[/* item */ T1 | T2, U]): Promise[js.Array[U] with `7`] = js.native
   def map[T1, T2, U](
     entries: js.Tuple2[Arg[T1], Arg[T2]],
     mapFn: js.Function1[/* item */ T1 | T2, U],
     label: java.lang.String
-  ): Promise[js.Array[U] with Anon7] = js.native
-  def map[T1, T2, T3, U](entries: js.Tuple3[Arg[T1], Arg[T2], Arg[T3]], mapFn: js.Function1[/* item */ T1 | T2 | T3, U]): Promise[js.Array[U] with Anon6] = js.native
+  ): Promise[js.Array[U] with `7`] = js.native
+  def map[T1, T2, T3, U](entries: js.Tuple3[Arg[T1], Arg[T2], Arg[T3]], mapFn: js.Function1[/* item */ T1 | T2 | T3, U]): Promise[js.Array[U] with `6`] = js.native
   def map[T1, T2, T3, U](
     entries: js.Tuple3[Arg[T1], Arg[T2], Arg[T3]],
     mapFn: js.Function1[/* item */ T1 | T2 | T3, U],
     label: java.lang.String
-  ): Promise[js.Array[U] with Anon6] = js.native
+  ): Promise[js.Array[U] with `6`] = js.native
   def map[T1, T2, T3, T4, U](
     entries: js.Tuple4[Arg[T1], Arg[T2], Arg[T3], Arg[T4]],
     mapFn: js.Function1[/* item */ T1 | T2 | T3 | T4, U]
-  ): Promise[js.Array[U] with Anon5] = js.native
+  ): Promise[js.Array[U] with `5`] = js.native
   def map[T1, T2, T3, T4, U](
     entries: js.Tuple4[Arg[T1], Arg[T2], Arg[T3], Arg[T4]],
     mapFn: js.Function1[/* item */ T1 | T2 | T3 | T4, U],
     label: java.lang.String
-  ): Promise[js.Array[U] with Anon5] = js.native
+  ): Promise[js.Array[U] with `5`] = js.native
   def map[T1, T2, T3, T4, T5, U](
     entries: js.Tuple5[Arg[T1], Arg[T2], Arg[T3], Arg[T4], Arg[T5]],
     mapFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5, U]
-  ): Promise[js.Array[U] with Anon4] = js.native
+  ): Promise[js.Array[U] with `4`] = js.native
   def map[T1, T2, T3, T4, T5, U](
     entries: js.Tuple5[Arg[T1], Arg[T2], Arg[T3], Arg[T4], Arg[T5]],
     mapFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5, U],
     label: java.lang.String
-  ): Promise[js.Array[U] with Anon4] = js.native
+  ): Promise[js.Array[U] with `4`] = js.native
   def map[T1, T2, T3, T4, T5, T6, U](
     entries: js.Tuple6[Arg[T1], Arg[T2], Arg[T3], Arg[T4], Arg[T5], Arg[T6]],
     mapFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6, U]
-  ): Promise[js.Array[U] with Anon3] = js.native
+  ): Promise[js.Array[U] with `3`] = js.native
   def map[T1, T2, T3, T4, T5, T6, U](
     entries: js.Tuple6[Arg[T1], Arg[T2], Arg[T3], Arg[T4], Arg[T5], Arg[T6]],
     mapFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6, U],
     label: java.lang.String
-  ): Promise[js.Array[U] with Anon3] = js.native
+  ): Promise[js.Array[U] with `3`] = js.native
   def map[T1, T2, T3, T4, T5, T6, T7, U](
     entries: js.Tuple7[Arg[T1], Arg[T2], Arg[T3], Arg[T4], Arg[T5], Arg[T6], Arg[T7]],
     mapFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6 | T7, U]
-  ): Promise[js.Array[U] with Anon2] = js.native
+  ): Promise[js.Array[U] with `2`] = js.native
   def map[T1, T2, T3, T4, T5, T6, T7, U](
     entries: js.Tuple7[Arg[T1], Arg[T2], Arg[T3], Arg[T4], Arg[T5], Arg[T6], Arg[T7]],
     mapFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6 | T7, U],
     label: java.lang.String
-  ): Promise[js.Array[U] with Anon2] = js.native
+  ): Promise[js.Array[U] with `2`] = js.native
   def map[T1, T2, T3, T4, T5, T6, T7, T8, U](
     entries: js.Tuple8[Arg[T1], Arg[T2], Arg[T3], Arg[T4], Arg[T5], Arg[T6], Arg[T7], Arg[T8]],
     mapFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8, U]
-  ): Promise[js.Array[U] with Anon1] = js.native
+  ): Promise[js.Array[U] with `1`] = js.native
   def map[T1, T2, T3, T4, T5, T6, T7, T8, U](
     entries: js.Tuple8[Arg[T1], Arg[T2], Arg[T3], Arg[T4], Arg[T5], Arg[T6], Arg[T7], Arg[T8]],
     mapFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8, U],
     label: java.lang.String
-  ): Promise[js.Array[U] with Anon1] = js.native
+  ): Promise[js.Array[U] with `1`] = js.native
   def map[T1, T2, T3, T4, T5, T6, T7, T8, T9, U](
     entries: js.Tuple9[Arg[T1], Arg[T2], Arg[T3], Arg[T4], Arg[T5], Arg[T6], Arg[T7], Arg[T8], Arg[T9]],
     mapFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9, U]
-  ): Promise[js.Array[U] with Anon0] = js.native
+  ): Promise[js.Array[U] with `0`] = js.native
   def map[T1, T2, T3, T4, T5, T6, T7, T8, T9, U](
     entries: js.Tuple9[Arg[T1], Arg[T2], Arg[T3], Arg[T4], Arg[T5], Arg[T6], Arg[T7], Arg[T8], Arg[T9]],
     mapFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9, U],
     label: java.lang.String
-  ): Promise[js.Array[U] with Anon0] = js.native
+  ): Promise[js.Array[U] with `0`] = js.native
   def map[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, U](
     entries: js.Tuple10[Arg[T1], Arg[T2], Arg[T3], Arg[T4], Arg[T5], Arg[T6], Arg[T7], Arg[T8], Arg[T9], Arg[T10]],
     mapFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10, U]
-  ): Promise[js.Array[U] with AnonLength] = js.native
+  ): Promise[js.Array[U] with Length] = js.native
   def map[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, U](
     entries: js.Tuple10[Arg[T1], Arg[T2], Arg[T3], Arg[T4], Arg[T5], Arg[T6], Arg[T7], Arg[T8], Arg[T9], Arg[T10]],
     mapFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10, U],
     label: java.lang.String
-  ): Promise[js.Array[U] with AnonLength] = js.native
+  ): Promise[js.Array[U] with Length] = js.native
   def race[T](values: js.Array[T]): js.Promise[T] = js.native
   def race[T](values: Iterable[T | js.Thenable[T]]): js.Promise[T] = js.native
   def reject[T](): js.Promise[T] = js.native

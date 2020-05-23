@@ -113,33 +113,39 @@ object OptionsData {
   def apply(
     schema: GraphQLSchema,
     context: js.Any = null,
-    customExecuteFn: /* args */ ExecutionArgs => js.Promise[ExecutionResult[ExecutionResultDataDefault]] = null,
-    customFormatErrorFn: /* error */ GraphQLError => _ = null,
+    customExecuteFn: js.UndefOr[
+      Null | (/* args */ ExecutionArgs => js.Promise[ExecutionResult[ExecutionResultDataDefault]])
+    ] = js.undefined,
+    customFormatErrorFn: js.UndefOr[Null | (/* error */ GraphQLError => _)] = js.undefined,
     customParseFn: /* source */ Source => DocumentNode | Null = null,
-    customValidateFn: (/* schema */ GraphQLSchema, /* documentAST */ DocumentNode, /* rules */ js.Array[ValidationRule]) => js.Array[GraphQLError] = null,
-    extensions: /* info */ RequestInfo => StringDictionary[_] = null,
-    fieldResolver: (_, StringDictionary[_], _, /* info */ GraphQLResolveInfo) => js.Any = null,
-    formatError: /* error */ GraphQLError => _ = null,
-    graphiql: js.UndefOr[Boolean] = js.undefined,
-    pretty: js.UndefOr[Boolean] = js.undefined,
+    customValidateFn: js.UndefOr[
+      Null | ((/* schema */ GraphQLSchema, /* documentAST */ DocumentNode, /* rules */ js.Array[ValidationRule]) => js.Array[GraphQLError])
+    ] = js.undefined,
+    extensions: js.UndefOr[Null | (/* info */ RequestInfo => StringDictionary[_])] = js.undefined,
+    fieldResolver: js.UndefOr[Null | ((_, StringDictionary[_], _, /* info */ GraphQLResolveInfo) => js.Any)] = js.undefined,
+    formatError: js.UndefOr[Null | (/* error */ GraphQLError => _)] = js.undefined,
+    graphiql: js.UndefOr[Null | Boolean] = js.undefined,
+    pretty: js.UndefOr[Null | Boolean] = js.undefined,
     rootValue: js.Any = null,
-    typeResolver: (_, _, /* info */ GraphQLResolveInfo, /* abstractType */ GraphQLAbstractType) => PromiseOrValue[Maybe[(GraphQLObjectType[_, _, StringDictionary[_]]) | String]] = null,
-    validationRules: js.Array[js.Function1[/* ctx */ ValidationContext, ASTVisitor]] = null
+    typeResolver: js.UndefOr[
+      Null | ((_, _, /* info */ GraphQLResolveInfo, /* abstractType */ GraphQLAbstractType) => PromiseOrValue[Maybe[(GraphQLObjectType[_, _, StringDictionary[_]]) | String]])
+    ] = js.undefined,
+    validationRules: js.UndefOr[Null | (js.Array[js.Function1[/* ctx */ ValidationContext, ASTVisitor]])] = js.undefined
   ): OptionsData = {
     val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (customExecuteFn != null) __obj.updateDynamic("customExecuteFn")(js.Any.fromFunction1(customExecuteFn))
-    if (customFormatErrorFn != null) __obj.updateDynamic("customFormatErrorFn")(js.Any.fromFunction1(customFormatErrorFn))
+    if (!js.isUndefined(customExecuteFn)) __obj.updateDynamic("customExecuteFn")(if (customExecuteFn != null) js.Any.fromFunction1(customExecuteFn.asInstanceOf[/* args */ ExecutionArgs => js.Promise[ExecutionResult[ExecutionResultDataDefault]]]) else null)
+    if (!js.isUndefined(customFormatErrorFn)) __obj.updateDynamic("customFormatErrorFn")(if (customFormatErrorFn != null) js.Any.fromFunction1(customFormatErrorFn.asInstanceOf[/* error */ GraphQLError => _]) else null)
     if (customParseFn != null) __obj.updateDynamic("customParseFn")(js.Any.fromFunction1(customParseFn))
-    if (customValidateFn != null) __obj.updateDynamic("customValidateFn")(js.Any.fromFunction3(customValidateFn))
-    if (extensions != null) __obj.updateDynamic("extensions")(js.Any.fromFunction1(extensions))
-    if (fieldResolver != null) __obj.updateDynamic("fieldResolver")(js.Any.fromFunction4(fieldResolver))
-    if (formatError != null) __obj.updateDynamic("formatError")(js.Any.fromFunction1(formatError))
+    if (!js.isUndefined(customValidateFn)) __obj.updateDynamic("customValidateFn")(if (customValidateFn != null) js.Any.fromFunction3(customValidateFn.asInstanceOf[(/* schema */ GraphQLSchema, /* documentAST */ DocumentNode, /* rules */ js.Array[ValidationRule]) => js.Array[GraphQLError]]) else null)
+    if (!js.isUndefined(extensions)) __obj.updateDynamic("extensions")(if (extensions != null) js.Any.fromFunction1(extensions.asInstanceOf[/* info */ RequestInfo => StringDictionary[_]]) else null)
+    if (!js.isUndefined(fieldResolver)) __obj.updateDynamic("fieldResolver")(if (fieldResolver != null) js.Any.fromFunction4(fieldResolver.asInstanceOf[(_, StringDictionary[_], _, /* info */ GraphQLResolveInfo) => js.Any]) else null)
+    if (!js.isUndefined(formatError)) __obj.updateDynamic("formatError")(if (formatError != null) js.Any.fromFunction1(formatError.asInstanceOf[/* error */ GraphQLError => _]) else null)
     if (!js.isUndefined(graphiql)) __obj.updateDynamic("graphiql")(graphiql.asInstanceOf[js.Any])
     if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])
     if (rootValue != null) __obj.updateDynamic("rootValue")(rootValue.asInstanceOf[js.Any])
-    if (typeResolver != null) __obj.updateDynamic("typeResolver")(js.Any.fromFunction4(typeResolver))
-    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules.asInstanceOf[js.Any])
+    if (!js.isUndefined(typeResolver)) __obj.updateDynamic("typeResolver")(if (typeResolver != null) js.Any.fromFunction4(typeResolver.asInstanceOf[(_, _, /* info */ GraphQLResolveInfo, /* abstractType */ GraphQLAbstractType) => PromiseOrValue[Maybe[(GraphQLObjectType[_, _, StringDictionary[_]]) | String]]]) else null)
+    if (!js.isUndefined(validationRules)) __obj.updateDynamic("validationRules")(validationRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsData]
   }
 }

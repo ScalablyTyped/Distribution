@@ -4,9 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Perception.Spatial.SpatialStationaryFrameOfReference")
-@js.native
-abstract class SpatialStationaryFrameOfReference () extends js.Object {
-  var coordinateSystem: js.Any = js.native
+trait SpatialStationaryFrameOfReference extends js.Object {
+  var coordinateSystem: js.Any
+}
+
+object SpatialStationaryFrameOfReference {
+  @scala.inline
+  def apply(coordinateSystem: js.Any): SpatialStationaryFrameOfReference = {
+    val __obj = js.Dynamic.literal(coordinateSystem = coordinateSystem.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpatialStationaryFrameOfReference]
+  }
 }
 

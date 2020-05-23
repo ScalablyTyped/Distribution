@@ -1,5 +1,7 @@
 package typings.azureArmResource
 
+import typings.azureArmResource.anon.CustomHeaders
+import typings.azureArmResource.anon.Filter
 import typings.azureArmResource.linkModelsMod.OperationListResult
 import typings.azureArmResource.linkModelsMod.ResourceLink
 import typings.azureArmResource.linkModelsMod.ResourceLinkResult
@@ -46,8 +48,8 @@ object linkOperationsMod extends js.Object {
       */
     def list(): js.Promise[OperationListResult] = js.native
     def list(callback: ServiceCallback[OperationListResult]): Unit = js.native
-    def list(options: AnonCustomHeaders): js.Promise[OperationListResult] = js.native
-    def list(options: AnonCustomHeaders, callback: ServiceCallback[OperationListResult]): Unit = js.native
+    def list(options: CustomHeaders): js.Promise[OperationListResult] = js.native
+    def list(options: CustomHeaders, callback: ServiceCallback[OperationListResult]): Unit = js.native
     /**
       * Lists all of the available Microsoft.Resources REST API operations.
       *
@@ -83,8 +85,8 @@ object linkOperationsMod extends js.Object {
       */
     def listNext(nextPageLink: String): js.Promise[OperationListResult] = js.native
     def listNext(nextPageLink: String, callback: ServiceCallback[OperationListResult]): Unit = js.native
-    def listNext(nextPageLink: String, options: AnonCustomHeaders): js.Promise[OperationListResult] = js.native
-    def listNext(nextPageLink: String, options: AnonCustomHeaders, callback: ServiceCallback[OperationListResult]): Unit = js.native
+    def listNext(nextPageLink: String, options: CustomHeaders): js.Promise[OperationListResult] = js.native
+    def listNext(nextPageLink: String, options: CustomHeaders, callback: ServiceCallback[OperationListResult]): Unit = js.native
     /**
       * Lists all of the available Microsoft.Resources REST API operations.
       *
@@ -103,7 +105,7 @@ object linkOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
-    def listNextWithHttpOperationResponse(nextPageLink: String, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
+    def listNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
     /**
       * Lists all of the available Microsoft.Resources REST API operations.
       *
@@ -119,7 +121,7 @@ object linkOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listWithHttpOperationResponse(): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
-    def listWithHttpOperationResponse(options: AnonCustomHeaders): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
+    def listWithHttpOperationResponse(options: CustomHeaders): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
   }
   
   @js.native
@@ -172,11 +174,11 @@ object linkOperationsMod extends js.Object {
       */
     def createOrUpdate(linkId: String, parameters: ResourceLink): js.Promise[ResourceLink] = js.native
     def createOrUpdate(linkId: String, parameters: ResourceLink, callback: ServiceCallback[ResourceLink]): Unit = js.native
-    def createOrUpdate(linkId: String, parameters: ResourceLink, options: AnonCustomHeaders): js.Promise[ResourceLink] = js.native
+    def createOrUpdate(linkId: String, parameters: ResourceLink, options: CustomHeaders): js.Promise[ResourceLink] = js.native
     def createOrUpdate(
       linkId: String,
       parameters: ResourceLink,
-      options: AnonCustomHeaders,
+      options: CustomHeaders,
       callback: ServiceCallback[ResourceLink]
     ): Unit = js.native
     /**
@@ -210,7 +212,7 @@ object linkOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def createOrUpdateWithHttpOperationResponse(linkId: String, parameters: ResourceLink): js.Promise[HttpOperationResponse[ResourceLink]] = js.native
-    def createOrUpdateWithHttpOperationResponse(linkId: String, parameters: ResourceLink, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[ResourceLink]] = js.native
+    def createOrUpdateWithHttpOperationResponse(linkId: String, parameters: ResourceLink, options: CustomHeaders): js.Promise[HttpOperationResponse[ResourceLink]] = js.native
     /**
       * Deletes a resource link with the specified ID.
       *
@@ -248,8 +250,8 @@ object linkOperationsMod extends js.Object {
       */
     def deleteMethod(linkId: String): js.Promise[Unit] = js.native
     def deleteMethod(linkId: String, callback: ServiceCallback[Unit]): Unit = js.native
-    def deleteMethod(linkId: String, options: AnonCustomHeaders): js.Promise[Unit] = js.native
-    def deleteMethod(linkId: String, options: AnonCustomHeaders, callback: ServiceCallback[Unit]): Unit = js.native
+    def deleteMethod(linkId: String, options: CustomHeaders): js.Promise[Unit] = js.native
+    def deleteMethod(linkId: String, options: CustomHeaders, callback: ServiceCallback[Unit]): Unit = js.native
     /**
       * Deletes a resource link with the specified ID.
       *
@@ -271,7 +273,7 @@ object linkOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def deleteMethodWithHttpOperationResponse(linkId: String): js.Promise[HttpOperationResponse[Unit]] = js.native
-    def deleteMethodWithHttpOperationResponse(linkId: String, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[Unit]] = js.native
+    def deleteMethodWithHttpOperationResponse(linkId: String, options: CustomHeaders): js.Promise[HttpOperationResponse[Unit]] = js.native
     /**
       * Gets a resource link with the specified ID.
       *
@@ -308,8 +310,8 @@ object linkOperationsMod extends js.Object {
       */
     def get(linkId: String): js.Promise[ResourceLink] = js.native
     def get(linkId: String, callback: ServiceCallback[ResourceLink]): Unit = js.native
-    def get(linkId: String, options: AnonCustomHeaders): js.Promise[ResourceLink] = js.native
-    def get(linkId: String, options: AnonCustomHeaders, callback: ServiceCallback[ResourceLink]): Unit = js.native
+    def get(linkId: String, options: CustomHeaders): js.Promise[ResourceLink] = js.native
+    def get(linkId: String, options: CustomHeaders, callback: ServiceCallback[ResourceLink]): Unit = js.native
     /**
       * Gets a resource link with the specified ID.
       *
@@ -329,7 +331,7 @@ object linkOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def getWithHttpOperationResponse(linkId: String): js.Promise[HttpOperationResponse[ResourceLink]] = js.native
-    def getWithHttpOperationResponse(linkId: String, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[ResourceLink]] = js.native
+    def getWithHttpOperationResponse(linkId: String, options: CustomHeaders): js.Promise[HttpOperationResponse[ResourceLink]] = js.native
     /**
       * Gets a list of resource links at and below the specified source scope.
       *
@@ -371,8 +373,8 @@ object linkOperationsMod extends js.Object {
       */
     def listAtSourceScope(scope: String): js.Promise[ResourceLinkResult] = js.native
     def listAtSourceScope(scope: String, callback: ServiceCallback[ResourceLinkResult]): Unit = js.native
-    def listAtSourceScope(scope: String, options: AnonFilter): js.Promise[ResourceLinkResult] = js.native
-    def listAtSourceScope(scope: String, options: AnonFilter, callback: ServiceCallback[ResourceLinkResult]): Unit = js.native
+    def listAtSourceScope(scope: String, options: Filter): js.Promise[ResourceLinkResult] = js.native
+    def listAtSourceScope(scope: String, options: Filter, callback: ServiceCallback[ResourceLinkResult]): Unit = js.native
     /**
       * Gets a list of resource links at and below the specified source scope.
       *
@@ -408,8 +410,8 @@ object linkOperationsMod extends js.Object {
       */
     def listAtSourceScopeNext(nextPageLink: String): js.Promise[ResourceLinkResult] = js.native
     def listAtSourceScopeNext(nextPageLink: String, callback: ServiceCallback[ResourceLinkResult]): Unit = js.native
-    def listAtSourceScopeNext(nextPageLink: String, options: AnonCustomHeaders): js.Promise[ResourceLinkResult] = js.native
-    def listAtSourceScopeNext(nextPageLink: String, options: AnonCustomHeaders, callback: ServiceCallback[ResourceLinkResult]): Unit = js.native
+    def listAtSourceScopeNext(nextPageLink: String, options: CustomHeaders): js.Promise[ResourceLinkResult] = js.native
+    def listAtSourceScopeNext(nextPageLink: String, options: CustomHeaders, callback: ServiceCallback[ResourceLinkResult]): Unit = js.native
     /**
       * Gets a list of resource links at and below the specified source scope.
       *
@@ -428,7 +430,7 @@ object linkOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listAtSourceScopeNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[ResourceLinkResult]] = js.native
-    def listAtSourceScopeNextWithHttpOperationResponse(nextPageLink: String, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[ResourceLinkResult]] = js.native
+    def listAtSourceScopeNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[ResourceLinkResult]] = js.native
     /**
       * Gets a list of resource links at and below the specified source scope.
       *
@@ -453,7 +455,7 @@ object linkOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listAtSourceScopeWithHttpOperationResponse(scope: String): js.Promise[HttpOperationResponse[ResourceLinkResult]] = js.native
-    def listAtSourceScopeWithHttpOperationResponse(scope: String, options: AnonFilter): js.Promise[HttpOperationResponse[ResourceLinkResult]] = js.native
+    def listAtSourceScopeWithHttpOperationResponse(scope: String, options: Filter): js.Promise[HttpOperationResponse[ResourceLinkResult]] = js.native
     /**
       * Gets all the linked resources for the subscription.
       *
@@ -490,8 +492,8 @@ object linkOperationsMod extends js.Object {
       */
     def listAtSubscription(): js.Promise[ResourceLinkResult] = js.native
     def listAtSubscription(callback: ServiceCallback[ResourceLinkResult]): Unit = js.native
-    def listAtSubscription(options: AnonFilter): js.Promise[ResourceLinkResult] = js.native
-    def listAtSubscription(options: AnonFilter, callback: ServiceCallback[ResourceLinkResult]): Unit = js.native
+    def listAtSubscription(options: Filter): js.Promise[ResourceLinkResult] = js.native
+    def listAtSubscription(options: Filter, callback: ServiceCallback[ResourceLinkResult]): Unit = js.native
     /**
       * Gets all the linked resources for the subscription.
       *
@@ -527,8 +529,8 @@ object linkOperationsMod extends js.Object {
       */
     def listAtSubscriptionNext(nextPageLink: String): js.Promise[ResourceLinkResult] = js.native
     def listAtSubscriptionNext(nextPageLink: String, callback: ServiceCallback[ResourceLinkResult]): Unit = js.native
-    def listAtSubscriptionNext(nextPageLink: String, options: AnonCustomHeaders): js.Promise[ResourceLinkResult] = js.native
-    def listAtSubscriptionNext(nextPageLink: String, options: AnonCustomHeaders, callback: ServiceCallback[ResourceLinkResult]): Unit = js.native
+    def listAtSubscriptionNext(nextPageLink: String, options: CustomHeaders): js.Promise[ResourceLinkResult] = js.native
+    def listAtSubscriptionNext(nextPageLink: String, options: CustomHeaders, callback: ServiceCallback[ResourceLinkResult]): Unit = js.native
     /**
       * Gets all the linked resources for the subscription.
       *
@@ -547,7 +549,7 @@ object linkOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listAtSubscriptionNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[ResourceLinkResult]] = js.native
-    def listAtSubscriptionNextWithHttpOperationResponse(nextPageLink: String, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[ResourceLinkResult]] = js.native
+    def listAtSubscriptionNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[ResourceLinkResult]] = js.native
     /**
       * Gets all the linked resources for the subscription.
       *
@@ -567,7 +569,7 @@ object linkOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listAtSubscriptionWithHttpOperationResponse(): js.Promise[HttpOperationResponse[ResourceLinkResult]] = js.native
-    def listAtSubscriptionWithHttpOperationResponse(options: AnonFilter): js.Promise[HttpOperationResponse[ResourceLinkResult]] = js.native
+    def listAtSubscriptionWithHttpOperationResponse(options: Filter): js.Promise[HttpOperationResponse[ResourceLinkResult]] = js.native
   }
   
 }

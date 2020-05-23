@@ -114,44 +114,44 @@ trait PkgOptions extends TargetSpecificOptions {
 object PkgOptions {
   @scala.inline
   def apply(
-    allowAnywhere: js.UndefOr[Boolean] = js.undefined,
-    allowCurrentUserHome: js.UndefOr[Boolean] = js.undefined,
-    allowRootDirectory: js.UndefOr[Boolean] = js.undefined,
-    artifactName: String = null,
-    background: PkgBackgroundOptions = null,
-    conclusion: String = null,
-    hasStrictIdentifier: js.UndefOr[Boolean] = js.undefined,
-    identity: String = null,
-    installLocation: String = null,
-    isRelocatable: js.UndefOr[Boolean] = js.undefined,
-    isVersionChecked: js.UndefOr[Boolean] = js.undefined,
-    license: String = null,
-    mustClose: js.Array[String] = null,
-    overwriteAction: upgrade | update = null,
-    productbuild: js.Array[String] = null,
-    publish: Publish = null,
-    scripts: String = null,
-    welcome: String = null
+    allowAnywhere: js.UndefOr[Null | Boolean] = js.undefined,
+    allowCurrentUserHome: js.UndefOr[Null | Boolean] = js.undefined,
+    allowRootDirectory: js.UndefOr[Null | Boolean] = js.undefined,
+    artifactName: js.UndefOr[Null | String] = js.undefined,
+    background: js.UndefOr[Null | PkgBackgroundOptions] = js.undefined,
+    conclusion: js.UndefOr[Null | String] = js.undefined,
+    hasStrictIdentifier: js.UndefOr[Null | Boolean] = js.undefined,
+    identity: js.UndefOr[Null | String] = js.undefined,
+    installLocation: js.UndefOr[Null | String] = js.undefined,
+    isRelocatable: js.UndefOr[Null | Boolean] = js.undefined,
+    isVersionChecked: js.UndefOr[Null | Boolean] = js.undefined,
+    license: js.UndefOr[Null | String] = js.undefined,
+    mustClose: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    overwriteAction: js.UndefOr[Null | upgrade | update] = js.undefined,
+    productbuild: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    publish: js.UndefOr[Null | Publish] = js.undefined,
+    scripts: js.UndefOr[Null | String] = js.undefined,
+    welcome: js.UndefOr[Null | String] = js.undefined
   ): PkgOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowAnywhere)) __obj.updateDynamic("allowAnywhere")(allowAnywhere.asInstanceOf[js.Any])
     if (!js.isUndefined(allowCurrentUserHome)) __obj.updateDynamic("allowCurrentUserHome")(allowCurrentUserHome.asInstanceOf[js.Any])
     if (!js.isUndefined(allowRootDirectory)) __obj.updateDynamic("allowRootDirectory")(allowRootDirectory.asInstanceOf[js.Any])
-    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (conclusion != null) __obj.updateDynamic("conclusion")(conclusion.asInstanceOf[js.Any])
+    if (!js.isUndefined(artifactName)) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
+    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (!js.isUndefined(conclusion)) __obj.updateDynamic("conclusion")(conclusion.asInstanceOf[js.Any])
     if (!js.isUndefined(hasStrictIdentifier)) __obj.updateDynamic("hasStrictIdentifier")(hasStrictIdentifier.asInstanceOf[js.Any])
-    if (identity != null) __obj.updateDynamic("identity")(identity.asInstanceOf[js.Any])
-    if (installLocation != null) __obj.updateDynamic("installLocation")(installLocation.asInstanceOf[js.Any])
+    if (!js.isUndefined(identity)) __obj.updateDynamic("identity")(identity.asInstanceOf[js.Any])
+    if (!js.isUndefined(installLocation)) __obj.updateDynamic("installLocation")(installLocation.asInstanceOf[js.Any])
     if (!js.isUndefined(isRelocatable)) __obj.updateDynamic("isRelocatable")(isRelocatable.asInstanceOf[js.Any])
     if (!js.isUndefined(isVersionChecked)) __obj.updateDynamic("isVersionChecked")(isVersionChecked.asInstanceOf[js.Any])
-    if (license != null) __obj.updateDynamic("license")(license.asInstanceOf[js.Any])
-    if (mustClose != null) __obj.updateDynamic("mustClose")(mustClose.asInstanceOf[js.Any])
-    if (overwriteAction != null) __obj.updateDynamic("overwriteAction")(overwriteAction.asInstanceOf[js.Any])
-    if (productbuild != null) __obj.updateDynamic("productbuild")(productbuild.asInstanceOf[js.Any])
-    if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
-    if (scripts != null) __obj.updateDynamic("scripts")(scripts.asInstanceOf[js.Any])
-    if (welcome != null) __obj.updateDynamic("welcome")(welcome.asInstanceOf[js.Any])
+    if (!js.isUndefined(license)) __obj.updateDynamic("license")(license.asInstanceOf[js.Any])
+    if (!js.isUndefined(mustClose)) __obj.updateDynamic("mustClose")(mustClose.asInstanceOf[js.Any])
+    if (!js.isUndefined(overwriteAction)) __obj.updateDynamic("overwriteAction")(overwriteAction.asInstanceOf[js.Any])
+    if (!js.isUndefined(productbuild)) __obj.updateDynamic("productbuild")(productbuild.asInstanceOf[js.Any])
+    if (!js.isUndefined(publish)) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
+    if (!js.isUndefined(scripts)) __obj.updateDynamic("scripts")(scripts.asInstanceOf[js.Any])
+    if (!js.isUndefined(welcome)) __obj.updateDynamic("welcome")(welcome.asInstanceOf[js.Any])
     __obj.asInstanceOf[PkgOptions]
   }
 }

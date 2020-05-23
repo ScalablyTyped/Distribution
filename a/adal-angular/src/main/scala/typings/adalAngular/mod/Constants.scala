@@ -1,8 +1,5 @@
 package typings.adalAngular.mod
 
-import typings.adalAngular.Anon0
-import typings.adalAngular.AnonACCESSTOKENKEY
-import typings.adalAngular.AnonERROR
 import typings.adalAngular.adalAngularNumbers.`483`
 import typings.adalAngular.adalAngularNumbers.`600`
 import typings.adalAngular.adalAngularStrings.Canceled
@@ -15,6 +12,9 @@ import typings.adalAngular.adalAngularStrings.error_description
 import typings.adalAngular.adalAngularStrings.expires_in
 import typings.adalAngular.adalAngularStrings.id_token
 import typings.adalAngular.adalAngularStrings.session_state
+import typings.adalAngular.anon.ACCESSTOKENKEY
+import typings.adalAngular.anon.ERROR
+import typings.adalAngular.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,14 +27,14 @@ trait Constants extends js.Object {
   var ERROR_DESCRIPTION: error_description
   var EXPIRES_IN: expires_in
   var ID_TOKEN: id_token
-  var LEVEL_STRING_MAP: Anon0
+  var LEVEL_STRING_MAP: `0`
   var LOADFRAME_TIMEOUT: `6000`
-  var LOGGING_LEVEL: AnonERROR
+  var LOGGING_LEVEL: ERROR
   var POPUP_HEIGHT: `600`
   var POPUP_WIDTH: `483`
   var RESOURCE_DELIMETER: Verticalline
   var SESSION_STATE: session_state
-  var STORAGE: AnonACCESSTOKENKEY
+  var STORAGE: ACCESSTOKENKEY
   var TOKEN_RENEW_STATUS_CANCELED: Canceled
   var TOKEN_RENEW_STATUS_COMPLETED: Completed
   var TOKEN_RENEW_STATUS_IN_PROGRESS: `In Progress`
@@ -47,14 +47,14 @@ object Constants {
     ERROR_DESCRIPTION: error_description,
     EXPIRES_IN: expires_in,
     ID_TOKEN: id_token,
-    LEVEL_STRING_MAP: Anon0,
+    LEVEL_STRING_MAP: `0`,
     LOADFRAME_TIMEOUT: `6000`,
-    LOGGING_LEVEL: AnonERROR,
+    LOGGING_LEVEL: ERROR,
     POPUP_HEIGHT: `600`,
     POPUP_WIDTH: `483`,
     RESOURCE_DELIMETER: Verticalline,
     SESSION_STATE: session_state,
-    STORAGE: AnonACCESSTOKENKEY,
+    STORAGE: ACCESSTOKENKEY,
     TOKEN_RENEW_STATUS_CANCELED: Canceled,
     TOKEN_RENEW_STATUS_COMPLETED: Completed,
     TOKEN_RENEW_STATUS_IN_PROGRESS: `In Progress`

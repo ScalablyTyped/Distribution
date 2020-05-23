@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.RTE
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,14 +17,6 @@ object ToolbarOverflowMode extends js.Object {
   ///To display the RTE toolbar overflow items as popup
   @js.native
   sealed trait Popup extends ToolbarOverflowMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ToolbarOverflowMode with Double] = js.native
-  /* 1 */ @js.native
-  object Inline extends TopLevel[Inline with Double]
-  
-  /* 0 */ @js.native
-  object Popup extends TopLevel[Popup with Double]
   
 }
 

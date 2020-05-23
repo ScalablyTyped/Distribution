@@ -93,7 +93,7 @@ class SpinButton protected ()
   @JSName("componentWillUnmount")
   def componentWillUnmount_MSpinButton(): Unit = js.native
   /**
-    * Sets focus to the spin button.
+    * Sets focus to the control.
     */
   /* CompleteClass */
   override def focus(): Unit = js.native

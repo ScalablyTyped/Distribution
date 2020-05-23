@@ -1,6 +1,6 @@
 package typings.reactNativeGoogleSignin.mod
 
-import typings.reactNativeGoogleSignin.AnonEmail
+import typings.reactNativeGoogleSignin.anon.Email
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,25 +18,21 @@ trait User extends js.Object {
     * specified in configure().
     */
   var serverAuthCode: String | Null
-  var user: AnonEmail
+  var user: Email
 }
 
 object User {
   @scala.inline
   def apply(
-    user: AnonEmail,
+    user: Email,
     accessToken: String = null,
-    accessTokenExpirationDate: Int | Double = null,
+    accessTokenExpirationDate: Double = null.asInstanceOf[Double],
     idToken: String = null,
     scopes: js.Array[String] = null,
     serverAuthCode: String = null
   ): User = {
-    val __obj = js.Dynamic.literal(user = user.asInstanceOf[js.Any])
-    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
-    if (accessTokenExpirationDate != null) __obj.updateDynamic("accessTokenExpirationDate")(accessTokenExpirationDate.asInstanceOf[js.Any])
-    if (idToken != null) __obj.updateDynamic("idToken")(idToken.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(user = user.asInstanceOf[js.Any], accessToken = accessToken.asInstanceOf[js.Any], accessTokenExpirationDate = accessTokenExpirationDate.asInstanceOf[js.Any], idToken = idToken.asInstanceOf[js.Any], serverAuthCode = serverAuthCode.asInstanceOf[js.Any])
     if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
-    if (serverAuthCode != null) __obj.updateDynamic("serverAuthCode")(serverAuthCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[User]
   }
 }

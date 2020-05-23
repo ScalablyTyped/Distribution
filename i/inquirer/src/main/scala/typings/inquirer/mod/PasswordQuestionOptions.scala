@@ -1,6 +1,6 @@
 package typings.inquirer.mod
 
-import typings.inquirer.AnonIsFinal
+import typings.inquirer.anon.IsFinal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ trait PasswordQuestionOptions[T /* <: Answers */] extends InputQuestionOptions[T
 
 object PasswordQuestionOptions {
   @scala.inline
-  def apply[T /* <: Answers */](
+  def apply[T](
     default: AsyncDynamicQuestionProperty[_, T] = null,
     filter: /* input */ js.Any => _ = null,
     mask: String = null,
@@ -28,7 +28,7 @@ object PasswordQuestionOptions {
     name: KeyUnion[T] = null,
     prefix: String = null,
     suffix: String = null,
-    transformer: (/* input */ js.Any, T, /* flags */ AnonIsFinal) => String | js.Promise[String] = null,
+    transformer: (/* input */ js.Any, T, /* flags */ IsFinal) => String | js.Promise[String] = null,
     `type`: String = null,
     validate: (/* input */ js.Any, /* answers */ js.UndefOr[T]) => Boolean | String | (js.Promise[Boolean | String]) = null,
     when: AsyncDynamicQuestionProperty[Boolean, T] = null

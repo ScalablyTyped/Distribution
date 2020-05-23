@@ -10,55 +10,55 @@ import scala.scalajs.js.annotation._
   */
 trait AttachmentCommon extends js.Object {
   /**
-  	 * A MD5 hash of the message content.
-  	 */
+    * A MD5 hash of the message content.
+    */
   var checksum: String
   /**
-  	 * `contentId` without `<` and `>`.
-  	 */
+    * `contentId` without `<` and `>`.
+    */
   var cid: js.UndefOr[String] = js.undefined
   /**
-  	 * Attachment contents.
-  	 */
+    * Attachment contents.
+    */
   var content: js.Any
   /**
-  	 * Content disposition type for the attachment,
-  	 * most probably `'attachment'`.
-  	 */
+    * Content disposition type for the attachment,
+    * most probably `'attachment'`.
+    */
   var contentDisposition: String
   /**
-  	 * The header value from `Content-ID`.
-  	 */
+    * The header value from `Content-ID`.
+    */
   var contentId: js.UndefOr[String] = js.undefined
   /**
-  	 * MIME type of the message.
-  	 */
+    * MIME type of the message.
+    */
   var contentType: String
   /**
-  	 * File name of the attachment.
-  	 */
+    * File name of the attachment.
+    */
   var filename: js.UndefOr[String] = js.undefined
   /**
-  	 * An array of raw header lines for the attachment node.
-  	 */
+    * An array of raw header lines for the attachment node.
+    */
   var headerLines: HeaderLines
   /**
-  	 * A Map value that holds MIME headers for the attachment node.
-  	 */
+    * A Map value that holds MIME headers for the attachment node.
+    */
   var headers: Headers
      // e.g. '5.1321281380971@localhost'
   /**
-  	 * If true then this attachment should not be offered for download
-  	 * (at least not in the main attachments list).
-  	 */
+    * If true then this attachment should not be offered for download
+    * (at least not in the main attachments list).
+    */
   var related: js.UndefOr[Boolean] = js.undefined
   /**
-  	 * Message size in bytes.
-  	 */
+    * Message size in bytes.
+    */
   var size: Double
   /**
-  	 * Message type.
-  	 */
+    * Message type.
+    */
   var `type`: attachment
 }
 
@@ -83,7 +83,7 @@ object AttachmentCommon {
     if (cid != null) __obj.updateDynamic("cid")(cid.asInstanceOf[js.Any])
     if (contentId != null) __obj.updateDynamic("contentId")(contentId.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (!js.isUndefined(related)) __obj.updateDynamic("related")(related.asInstanceOf[js.Any])
+    if (!js.isUndefined(related)) __obj.updateDynamic("related")(related.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentCommon]
   }
 }

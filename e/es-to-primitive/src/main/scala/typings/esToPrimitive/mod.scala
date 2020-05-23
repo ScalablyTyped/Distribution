@@ -1,6 +1,7 @@
 package typings.esToPrimitive
 
 import org.scalablytyped.runtime.TopLevel
+import typings.esToPrimitive.anon.ES2015
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +16,6 @@ object mod
           /* import warning: importer.ImportType#apply Failed type conversion: typeof String */ js.Any
         ], 
         js.UndefOr[String | Double | Boolean | js.Symbol | Null]
-      ]) with AnonES2015
+      ]) with ES2015
     ]
 

@@ -1,7 +1,7 @@
 package typings.hapiYar.mod
 
 import typings.hapiHapi.mod.CachePolicyOptions
-import typings.hapiYar.AnonClearInvalid
+import typings.hapiYar.anon.ClearInvalid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait YarOptions extends js.Object {
   /**
     * the configuration for cookie-specific features:
     */
-  var cookieOptions: AnonClearInvalid
+  var cookieOptions: ClearInvalid
   /**
     * will cause yar to throw an exception if trying to persist to cache when the cache is unavailable.
     * Setting this to false will allow applications using yar to run uninterrupted if the cache is not ready (however sessions will not be saving).
@@ -41,19 +41,19 @@ trait YarOptions extends js.Object {
 object YarOptions {
   @scala.inline
   def apply(
-    cookieOptions: AnonClearInvalid,
+    cookieOptions: ClearInvalid,
     cache: CachePolicyOptions[_] = null,
     errorOnCacheNotReady: js.UndefOr[Boolean] = js.undefined,
-    maxCookieSize: Int | Double = null,
+    maxCookieSize: js.UndefOr[Double] = js.undefined,
     name: String = null,
     storeBlank: js.UndefOr[Boolean] = js.undefined
   ): YarOptions = {
     val __obj = js.Dynamic.literal(cookieOptions = cookieOptions.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (!js.isUndefined(errorOnCacheNotReady)) __obj.updateDynamic("errorOnCacheNotReady")(errorOnCacheNotReady.asInstanceOf[js.Any])
-    if (maxCookieSize != null) __obj.updateDynamic("maxCookieSize")(maxCookieSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorOnCacheNotReady)) __obj.updateDynamic("errorOnCacheNotReady")(errorOnCacheNotReady.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxCookieSize)) __obj.updateDynamic("maxCookieSize")(maxCookieSize.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(storeBlank)) __obj.updateDynamic("storeBlank")(storeBlank.asInstanceOf[js.Any])
+    if (!js.isUndefined(storeBlank)) __obj.updateDynamic("storeBlank")(storeBlank.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[YarOptions]
   }
 }

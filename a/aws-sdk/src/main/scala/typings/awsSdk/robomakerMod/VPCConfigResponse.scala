@@ -27,13 +27,13 @@ trait VPCConfigResponse extends js.Object {
 object VPCConfigResponse {
   @scala.inline
   def apply(
-    assignPublicIp: js.UndefOr[scala.Boolean] = js.undefined,
+    assignPublicIp: js.UndefOr[Boolean] = js.undefined,
     securityGroups: SecurityGroups = null,
     subnets: Subnets = null,
     vpcId: GenericString = null
   ): VPCConfigResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(assignPublicIp)) __obj.updateDynamic("assignPublicIp")(assignPublicIp.asInstanceOf[js.Any])
+    if (!js.isUndefined(assignPublicIp)) __obj.updateDynamic("assignPublicIp")(assignPublicIp.get.asInstanceOf[js.Any])
     if (securityGroups != null) __obj.updateDynamic("securityGroups")(securityGroups.asInstanceOf[js.Any])
     if (subnets != null) __obj.updateDynamic("subnets")(subnets.asInstanceOf[js.Any])
     if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])

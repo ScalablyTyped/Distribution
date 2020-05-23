@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@theme-ui/components", "IconButton")
 @js.native
-object IconButton extends TopLevel[ForwardRef[HTMLButtonElement, BoxProps]]
+object IconButton extends TopLevel[ForwardRef[HTMLButtonElement, IconButtonProps]]
 

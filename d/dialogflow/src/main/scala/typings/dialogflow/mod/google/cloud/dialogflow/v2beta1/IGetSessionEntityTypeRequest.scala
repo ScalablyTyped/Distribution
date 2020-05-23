@@ -12,9 +12,9 @@ trait IGetSessionEntityTypeRequest extends js.Object {
 
 object IGetSessionEntityTypeRequest {
   @scala.inline
-  def apply(name: String = null): IGetSessionEntityTypeRequest = {
+  def apply(name: js.UndefOr[Null | String] = js.undefined): IGetSessionEntityTypeRequest = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGetSessionEntityTypeRequest]
   }
 }

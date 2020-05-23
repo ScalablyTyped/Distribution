@@ -16,7 +16,7 @@ trait IFloatingFilterWrapperComp[M, F /* <: FloatingFilterChange */, PC /* <: IF
 
 object IFloatingFilterWrapperComp {
   @scala.inline
-  def apply[M, F /* <: FloatingFilterChange */, PC /* <: IFloatingFilterParams[M, F] */, P /* <: IFloatingFilterWrapperParams[M, F, PC] */](
+  def apply[M, F, PC, P](
     getGui: () => HTMLElement,
     onParentModelChanged: M => Unit,
     afterGuiAttached: /* params */ js.UndefOr[IAfterGuiAttachedParams] => Unit = null,

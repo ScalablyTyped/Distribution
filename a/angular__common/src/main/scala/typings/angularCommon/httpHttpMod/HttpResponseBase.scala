@@ -1,6 +1,6 @@
 package typings.angularCommon.httpHttpMod
 
-import typings.angularCommon.AnonHeaders
+import typings.angularCommon.anon.Headers
 import typings.angularCommon.httpHttpMod.HttpEventType.Response
 import typings.angularCommon.httpHttpMod.HttpEventType.ResponseHeader
 import scala.scalajs.js
@@ -16,9 +16,9 @@ abstract class HttpResponseBase protected () extends js.Object {
     * The single parameter accepted is an initialization hash. Any properties
     * of the response passed there will override the default values.
     */
-  def this(init: AnonHeaders) = this()
-  def this(init: AnonHeaders, defaultStatus: Double) = this()
-  def this(init: AnonHeaders, defaultStatus: Double, defaultStatusText: String) = this()
+  def this(init: Headers) = this()
+  def this(init: Headers, defaultStatus: Double) = this()
+  def this(init: Headers, defaultStatus: Double, defaultStatusText: String) = this()
   /**
     * All response headers.
     */

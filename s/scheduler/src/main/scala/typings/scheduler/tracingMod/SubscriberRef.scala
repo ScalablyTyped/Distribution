@@ -11,8 +11,7 @@ trait SubscriberRef extends js.Object {
 object SubscriberRef {
   @scala.inline
   def apply(current: Subscriber = null): SubscriberRef = {
-    val __obj = js.Dynamic.literal()
-    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriberRef]
   }
 }

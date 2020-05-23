@@ -17,9 +17,9 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(opacity: Int | Double = null, projection: IProjection = null): Options = {
+  def apply(opacity: js.UndefOr[Double] = js.undefined, projection: IProjection = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

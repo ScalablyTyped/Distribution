@@ -1,5 +1,6 @@
 package typings.d3Axis
 
+import typings.d3Axis.anon.ValueOf
 import typings.d3Selection.mod.Selection_
 import typings.d3Selection.mod.TransitionLike
 import typings.std.Date
@@ -249,6 +250,6 @@ object mod extends js.Object {
   def axisRight[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = js.native
   def axisTop[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = js.native
   type AxisContainerElement = SVGSVGElement | SVGGElement
-  type AxisDomain = Double | String | Date | AnonValueOf
+  type AxisDomain = Double | String | Date | ValueOf
 }
 

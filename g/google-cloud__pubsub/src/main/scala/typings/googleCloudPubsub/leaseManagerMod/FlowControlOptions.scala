@@ -15,15 +15,15 @@ object FlowControlOptions {
   @scala.inline
   def apply(
     allowExcessMessages: js.UndefOr[Boolean] = js.undefined,
-    maxBytes: Int | Double = null,
-    maxExtension: Int | Double = null,
-    maxMessages: Int | Double = null
+    maxBytes: js.UndefOr[Double] = js.undefined,
+    maxExtension: js.UndefOr[Double] = js.undefined,
+    maxMessages: js.UndefOr[Double] = js.undefined
   ): FlowControlOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowExcessMessages)) __obj.updateDynamic("allowExcessMessages")(allowExcessMessages.asInstanceOf[js.Any])
-    if (maxBytes != null) __obj.updateDynamic("maxBytes")(maxBytes.asInstanceOf[js.Any])
-    if (maxExtension != null) __obj.updateDynamic("maxExtension")(maxExtension.asInstanceOf[js.Any])
-    if (maxMessages != null) __obj.updateDynamic("maxMessages")(maxMessages.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowExcessMessages)) __obj.updateDynamic("allowExcessMessages")(allowExcessMessages.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxBytes)) __obj.updateDynamic("maxBytes")(maxBytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxExtension)) __obj.updateDynamic("maxExtension")(maxExtension.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxMessages)) __obj.updateDynamic("maxMessages")(maxMessages.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowControlOptions]
   }
 }

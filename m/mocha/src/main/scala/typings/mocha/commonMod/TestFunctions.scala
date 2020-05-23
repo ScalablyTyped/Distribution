@@ -1,7 +1,7 @@
 package typings.mocha.commonMod
 
-import typings.mocha.Mocha_
-import typings.mocha.Mocha_.Test_
+import typings.mocha.Mocha
+import typings.mocha.Mocha.Test
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait TestFunctions extends js.Object {
   /**
     * Exclusive test-case.
     */
-  def only(mocha: Mocha_, test: Test_): Test_
+  def only(mocha: Mocha, test: Test): Test
   /**
     * Number of retry attempts
     */
@@ -23,7 +23,7 @@ trait TestFunctions extends js.Object {
 
 object TestFunctions {
   @scala.inline
-  def apply(only: (Mocha_, Test_) => Test_, retries: Double => Unit, skip: String => Unit): TestFunctions = {
+  def apply(only: (Mocha, Test) => Test, retries: Double => Unit, skip: String => Unit): TestFunctions = {
     val __obj = js.Dynamic.literal(only = js.Any.fromFunction2(only), retries = js.Any.fromFunction1(retries), skip = js.Any.fromFunction1(skip))
     __obj.asInstanceOf[TestFunctions]
   }

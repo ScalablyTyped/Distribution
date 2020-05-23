@@ -46,7 +46,7 @@ object DialogRuntimeResponseGeneric {
     source: String = null,
     suggestions: js.Array[DialogSuggestion] = null,
     text: String = null,
-    time: Int | Double = null,
+    time: js.UndefOr[Double] = js.undefined,
     title: String = null,
     topic: String = null,
     typing: js.UndefOr[Boolean] = js.undefined
@@ -60,10 +60,10 @@ object DialogRuntimeResponseGeneric {
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (!js.isUndefined(time)) __obj.updateDynamic("time")(time.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (topic != null) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
-    if (!js.isUndefined(typing)) __obj.updateDynamic("typing")(typing.asInstanceOf[js.Any])
+    if (!js.isUndefined(typing)) __obj.updateDynamic("typing")(typing.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogRuntimeResponseGeneric]
   }
 }

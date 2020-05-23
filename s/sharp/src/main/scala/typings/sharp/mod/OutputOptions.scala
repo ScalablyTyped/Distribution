@@ -13,10 +13,10 @@ trait OutputOptions extends js.Object {
 
 object OutputOptions {
   @scala.inline
-  def apply(force: js.UndefOr[Boolean] = js.undefined, quality: Int | Double = null): OutputOptions = {
+  def apply(force: js.UndefOr[Boolean] = js.undefined, quality: js.UndefOr[Double] = js.undefined): OutputOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputOptions]
   }
 }

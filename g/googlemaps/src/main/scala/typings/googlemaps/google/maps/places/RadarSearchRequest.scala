@@ -8,6 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// TODO find source documentation
 trait RadarSearchRequest extends js.Object {
   var bounds: js.UndefOr[LatLngBounds | LatLngBoundsLiteral] = js.undefined
   var keyword: js.UndefOr[String] = js.undefined
@@ -25,7 +26,7 @@ object RadarSearchRequest {
     keyword: String = null,
     location: LatLng | LatLngLiteral = null,
     name: String = null,
-    radius: Int | Double = null,
+    radius: js.UndefOr[Double] = js.undefined,
     `type`: String = null,
     types: js.Array[String] = null
   ): RadarSearchRequest = {
@@ -34,7 +35,7 @@ object RadarSearchRequest {
     if (keyword != null) __obj.updateDynamic("keyword")(keyword.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadarSearchRequest]

@@ -123,8 +123,8 @@ package object mod {
   type FunctionDeclarations[FunctionType /* <: typings.nodeSass.mod.SassFunction */] = typings.std.Record[java.lang.String, FunctionType]
   type Importer = typings.nodeSass.mod.AsyncImporter | typings.nodeSass.mod.SyncImporter
   /* Rewritten from type alias, can be one of: 
-    - typings.nodeSass.AnonFile
-    - typings.nodeSass.AnonContents
+    - typings.nodeSass.anon.File
+    - typings.nodeSass.anon.Contents
     - typings.std.Error
     - scala.Null
     - typings.nodeSass.mod.types.Null

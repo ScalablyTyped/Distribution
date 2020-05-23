@@ -15,15 +15,15 @@ object OperationDebugMeta {
   @scala.inline
   def apply(
     cacheOutcome: CacheOutcome = null,
-    networkLatency: Int | Double = null,
+    networkLatency: js.UndefOr[Double] = js.undefined,
     source: String = null,
-    startTime: Int | Double = null
+    startTime: js.UndefOr[Double] = js.undefined
   ): OperationDebugMeta = {
     val __obj = js.Dynamic.literal()
     if (cacheOutcome != null) __obj.updateDynamic("cacheOutcome")(cacheOutcome.asInstanceOf[js.Any])
-    if (networkLatency != null) __obj.updateDynamic("networkLatency")(networkLatency.asInstanceOf[js.Any])
+    if (!js.isUndefined(networkLatency)) __obj.updateDynamic("networkLatency")(networkLatency.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(startTime)) __obj.updateDynamic("startTime")(startTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationDebugMeta]
   }
 }

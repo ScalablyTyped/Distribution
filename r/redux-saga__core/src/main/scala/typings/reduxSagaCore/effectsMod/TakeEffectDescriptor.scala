@@ -16,7 +16,7 @@ object TakeEffectDescriptor {
     maybe: js.UndefOr[Boolean] = js.undefined
   ): TakeEffectDescriptor = {
     val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
-    if (!js.isUndefined(maybe)) __obj.updateDynamic("maybe")(maybe.asInstanceOf[js.Any])
+    if (!js.isUndefined(maybe)) __obj.updateDynamic("maybe")(maybe.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TakeEffectDescriptor]
   }
 }

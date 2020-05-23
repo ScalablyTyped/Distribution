@@ -1,7 +1,7 @@
 package typings.surveyKnockout.mod
 
 import typings.std.File
-import typings.surveyKnockout.AnonCanAddRow
+import typings.surveyKnockout.anon.CanAddRow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 trait ISurvey
   extends ISurveyErrorOwner
      with ITextProcessor {
+  var areEmptyElementsHidden: Boolean
   var areInvisibleElementsShowing: Boolean
   var clearValueOnDisableItems: Boolean
   var currentPage: IPage
@@ -26,12 +27,14 @@ trait ISurvey
   var questionTitlePattern: String
   var questionsOrder: String
   var requiredText: String
+  var state: String
   var storeOthersAsComment: Boolean
   def afterRenderPage(htmlElement: js.Any): js.Any
   def afterRenderPanel(panel: IElement, htmlElement: js.Any): js.Any
   def afterRenderQuestion(question: IQuestion, htmlElement: js.Any): js.Any
   def afterRenderQuestionInput(question: IQuestion, htmlElement: js.Any): js.Any
   def beforeSettingQuestionErrors(question: IQuestion, errors: js.Array[SurveyError]): Unit
+  def cancelPreviewByPage(panel: IPanel): js.Any
   def clearFiles(
     name: String,
     value: js.Any,
@@ -51,7 +54,7 @@ trait ISurvey
   def isPageStarted(page: IPage): Boolean
   def matrixAfterCellRender(question: IQuestion, options: js.Any): js.Any
   def matrixAllowRemoveRow(question: IQuestion, rowIndex: Double, row: js.Any): Boolean
-  def matrixBeforeRowAdded(options: AnonCanAddRow): js.Any
+  def matrixBeforeRowAdded(options: CanAddRow): js.Any
   def matrixCellCreated(question: IQuestion, options: js.Any): js.Any
   def matrixCellValidate(question: IQuestion, options: js.Any): SurveyError
   def matrixCellValueChanged(question: IQuestion, options: js.Any): js.Any
@@ -65,6 +68,7 @@ trait ISurvey
   def processHtml(html: String): String
   def questionAdded(question: IQuestion, index: Double, parentPanel: js.Any, rootPanel: js.Any): js.Any
   def questionCountByValueName(valueName: String): Double
+  def questionCreated(question: IQuestion): js.Any
   def questionRemoved(question: IQuestion): js.Any
   def questionRenamed(question: IQuestion, oldName: String, oldValueName: String): js.Any
   def questionVisibilityChanged(question: IQuestion, newValue: Boolean): js.Any
@@ -74,6 +78,7 @@ trait ISurvey
   def updatePanelCssClasses(panel: IPanel, cssClasses: js.Any): js.Any
   def updateQuestionCssClasses(question: IQuestion, cssClasses: js.Any): js.Any
   def uploadFiles(
+    question: IQuestion,
     name: String,
     files: js.Array[File],
     uploadingCallback: js.Function2[/* status */ String, /* data */ js.Any, _]
@@ -89,8 +94,10 @@ object ISurvey {
     afterRenderPanel: (IElement, js.Any) => js.Any,
     afterRenderQuestion: (IQuestion, js.Any) => js.Any,
     afterRenderQuestionInput: (IQuestion, js.Any) => js.Any,
+    areEmptyElementsHidden: Boolean,
     areInvisibleElementsShowing: Boolean,
     beforeSettingQuestionErrors: (IQuestion, js.Array[SurveyError]) => Unit,
+    cancelPreviewByPage: IPanel => js.Any,
     clearFiles: (String, js.Any, String, js.Function2[/* status */ String, /* data */ js.Any, _]) => js.Any,
     clearValueOnDisableItems: Boolean,
     currentPage: IPage,
@@ -115,7 +122,7 @@ object ISurvey {
     isUpdateValueTextOnTyping: Boolean,
     matrixAfterCellRender: (IQuestion, js.Any) => js.Any,
     matrixAllowRemoveRow: (IQuestion, Double, js.Any) => Boolean,
-    matrixBeforeRowAdded: AnonCanAddRow => js.Any,
+    matrixBeforeRowAdded: CanAddRow => js.Any,
     matrixCellCreated: (IQuestion, js.Any) => js.Any,
     matrixCellValidate: (IQuestion, js.Any) => SurveyError,
     matrixCellValueChanged: (IQuestion, js.Any) => js.Any,
@@ -134,6 +141,7 @@ object ISurvey {
     processTextEx: (String, Boolean, Boolean) => js.Any,
     questionAdded: (IQuestion, Double, js.Any, js.Any) => js.Any,
     questionCountByValueName: String => Double,
+    questionCreated: IQuestion => js.Any,
     questionDescriptionLocation: String,
     questionErrorLocation: String,
     questionRemoved: IQuestion => js.Any,
@@ -145,16 +153,17 @@ object ISurvey {
     questionsOrder: String,
     requiredText: String,
     scrollElementToTop: (ISurveyElement, IQuestion, IPage, String) => js.Any,
+    state: String,
     storeOthersAsComment: Boolean,
     updateChoicesFromServer: (IQuestion, js.Array[_], js.Any) => js.Array[_],
     updatePageCssClasses: (IPanel, js.Any) => js.Any,
     updatePanelCssClasses: (IPanel, js.Any) => js.Any,
     updateQuestionCssClasses: (IQuestion, js.Any) => js.Any,
-    uploadFiles: (String, js.Array[File], js.Function2[/* status */ String, /* data */ js.Any, _]) => js.Any,
+    uploadFiles: (IQuestion, String, js.Array[File], js.Function2[/* status */ String, /* data */ js.Any, _]) => js.Any,
     validatePanel: IPanel => SurveyError,
     validateQuestion: IQuestion => SurveyError
   ): ISurvey = {
-    val __obj = js.Dynamic.literal(afterRenderPage = js.Any.fromFunction1(afterRenderPage), afterRenderPanel = js.Any.fromFunction2(afterRenderPanel), afterRenderQuestion = js.Any.fromFunction2(afterRenderQuestion), afterRenderQuestionInput = js.Any.fromFunction2(afterRenderQuestionInput), areInvisibleElementsShowing = areInvisibleElementsShowing.asInstanceOf[js.Any], beforeSettingQuestionErrors = js.Any.fromFunction2(beforeSettingQuestionErrors), clearFiles = js.Any.fromFunction4(clearFiles), clearValueOnDisableItems = clearValueOnDisableItems.asInstanceOf[js.Any], currentPage = currentPage.asInstanceOf[js.Any], downloadFile = js.Any.fromFunction3(downloadFile), dragAndDropAllow = js.Any.fromFunction1(dragAndDropAllow), dynamicPanelAdded = js.Any.fromFunction1(dynamicPanelAdded), dynamicPanelItemValueChanged = js.Any.fromFunction2(dynamicPanelItemValueChanged), dynamicPanelRemoved = js.Any.fromFunction3(dynamicPanelRemoved), getCss = js.Any.fromFunction0(getCss), getErrorCustomText = js.Any.fromFunction2(getErrorCustomText), getLocale = js.Any.fromFunction0(getLocale), getMarkdownHtml = js.Any.fromFunction1(getMarkdownHtml), getProcessedText = js.Any.fromFunction1(getProcessedText), getQuestionByValueNameFromArray = js.Any.fromFunction3(getQuestionByValueNameFromArray), getSurveyMarkdownHtml = js.Any.fromFunction2(getSurveyMarkdownHtml), getUpdatedQuestionTitle = js.Any.fromFunction2(getUpdatedQuestionTitle), hasVisibleQuestionByValueName = js.Any.fromFunction1(hasVisibleQuestionByValueName), isDesignMode = isDesignMode.asInstanceOf[js.Any], isDisplayMode = isDisplayMode.asInstanceOf[js.Any], isLoadingFromJson = isLoadingFromJson.asInstanceOf[js.Any], isPageStarted = js.Any.fromFunction1(isPageStarted), isUpdateValueTextOnTyping = isUpdateValueTextOnTyping.asInstanceOf[js.Any], matrixAfterCellRender = js.Any.fromFunction2(matrixAfterCellRender), matrixAllowRemoveRow = js.Any.fromFunction3(matrixAllowRemoveRow), matrixBeforeRowAdded = js.Any.fromFunction1(matrixBeforeRowAdded), matrixCellCreated = js.Any.fromFunction2(matrixCellCreated), matrixCellValidate = js.Any.fromFunction2(matrixCellValidate), matrixCellValueChanged = js.Any.fromFunction2(matrixCellValueChanged), matrixCellValueChanging = js.Any.fromFunction2(matrixCellValueChanging), matrixRowAdded = js.Any.fromFunction2(matrixRowAdded), matrixRowRemoved = js.Any.fromFunction3(matrixRowRemoved), maxOthersLength = maxOthersLength.asInstanceOf[js.Any], maxTextLength = maxTextLength.asInstanceOf[js.Any], pageVisibilityChanged = js.Any.fromFunction2(pageVisibilityChanged), pages = pages.asInstanceOf[js.Any], panelAdded = js.Any.fromFunction4(panelAdded), panelRemoved = js.Any.fromFunction1(panelRemoved), panelVisibilityChanged = js.Any.fromFunction2(panelVisibilityChanged), processHtml = js.Any.fromFunction1(processHtml), processText = js.Any.fromFunction2(processText), processTextEx = js.Any.fromFunction3(processTextEx), questionAdded = js.Any.fromFunction4(questionAdded), questionCountByValueName = js.Any.fromFunction1(questionCountByValueName), questionDescriptionLocation = questionDescriptionLocation.asInstanceOf[js.Any], questionErrorLocation = questionErrorLocation.asInstanceOf[js.Any], questionRemoved = js.Any.fromFunction1(questionRemoved), questionRenamed = js.Any.fromFunction3(questionRenamed), questionStartIndex = questionStartIndex.asInstanceOf[js.Any], questionTitleLocation = questionTitleLocation.asInstanceOf[js.Any], questionTitlePattern = questionTitlePattern.asInstanceOf[js.Any], questionVisibilityChanged = js.Any.fromFunction2(questionVisibilityChanged), questionsOrder = questionsOrder.asInstanceOf[js.Any], requiredText = requiredText.asInstanceOf[js.Any], scrollElementToTop = js.Any.fromFunction4(scrollElementToTop), storeOthersAsComment = storeOthersAsComment.asInstanceOf[js.Any], updateChoicesFromServer = js.Any.fromFunction3(updateChoicesFromServer), updatePageCssClasses = js.Any.fromFunction2(updatePageCssClasses), updatePanelCssClasses = js.Any.fromFunction2(updatePanelCssClasses), updateQuestionCssClasses = js.Any.fromFunction2(updateQuestionCssClasses), uploadFiles = js.Any.fromFunction3(uploadFiles), validatePanel = js.Any.fromFunction1(validatePanel), validateQuestion = js.Any.fromFunction1(validateQuestion))
+    val __obj = js.Dynamic.literal(afterRenderPage = js.Any.fromFunction1(afterRenderPage), afterRenderPanel = js.Any.fromFunction2(afterRenderPanel), afterRenderQuestion = js.Any.fromFunction2(afterRenderQuestion), afterRenderQuestionInput = js.Any.fromFunction2(afterRenderQuestionInput), areEmptyElementsHidden = areEmptyElementsHidden.asInstanceOf[js.Any], areInvisibleElementsShowing = areInvisibleElementsShowing.asInstanceOf[js.Any], beforeSettingQuestionErrors = js.Any.fromFunction2(beforeSettingQuestionErrors), cancelPreviewByPage = js.Any.fromFunction1(cancelPreviewByPage), clearFiles = js.Any.fromFunction4(clearFiles), clearValueOnDisableItems = clearValueOnDisableItems.asInstanceOf[js.Any], currentPage = currentPage.asInstanceOf[js.Any], downloadFile = js.Any.fromFunction3(downloadFile), dragAndDropAllow = js.Any.fromFunction1(dragAndDropAllow), dynamicPanelAdded = js.Any.fromFunction1(dynamicPanelAdded), dynamicPanelItemValueChanged = js.Any.fromFunction2(dynamicPanelItemValueChanged), dynamicPanelRemoved = js.Any.fromFunction3(dynamicPanelRemoved), getCss = js.Any.fromFunction0(getCss), getErrorCustomText = js.Any.fromFunction2(getErrorCustomText), getLocale = js.Any.fromFunction0(getLocale), getMarkdownHtml = js.Any.fromFunction1(getMarkdownHtml), getProcessedText = js.Any.fromFunction1(getProcessedText), getQuestionByValueNameFromArray = js.Any.fromFunction3(getQuestionByValueNameFromArray), getSurveyMarkdownHtml = js.Any.fromFunction2(getSurveyMarkdownHtml), getUpdatedQuestionTitle = js.Any.fromFunction2(getUpdatedQuestionTitle), hasVisibleQuestionByValueName = js.Any.fromFunction1(hasVisibleQuestionByValueName), isDesignMode = isDesignMode.asInstanceOf[js.Any], isDisplayMode = isDisplayMode.asInstanceOf[js.Any], isLoadingFromJson = isLoadingFromJson.asInstanceOf[js.Any], isPageStarted = js.Any.fromFunction1(isPageStarted), isUpdateValueTextOnTyping = isUpdateValueTextOnTyping.asInstanceOf[js.Any], matrixAfterCellRender = js.Any.fromFunction2(matrixAfterCellRender), matrixAllowRemoveRow = js.Any.fromFunction3(matrixAllowRemoveRow), matrixBeforeRowAdded = js.Any.fromFunction1(matrixBeforeRowAdded), matrixCellCreated = js.Any.fromFunction2(matrixCellCreated), matrixCellValidate = js.Any.fromFunction2(matrixCellValidate), matrixCellValueChanged = js.Any.fromFunction2(matrixCellValueChanged), matrixCellValueChanging = js.Any.fromFunction2(matrixCellValueChanging), matrixRowAdded = js.Any.fromFunction2(matrixRowAdded), matrixRowRemoved = js.Any.fromFunction3(matrixRowRemoved), maxOthersLength = maxOthersLength.asInstanceOf[js.Any], maxTextLength = maxTextLength.asInstanceOf[js.Any], pageVisibilityChanged = js.Any.fromFunction2(pageVisibilityChanged), pages = pages.asInstanceOf[js.Any], panelAdded = js.Any.fromFunction4(panelAdded), panelRemoved = js.Any.fromFunction1(panelRemoved), panelVisibilityChanged = js.Any.fromFunction2(panelVisibilityChanged), processHtml = js.Any.fromFunction1(processHtml), processText = js.Any.fromFunction2(processText), processTextEx = js.Any.fromFunction3(processTextEx), questionAdded = js.Any.fromFunction4(questionAdded), questionCountByValueName = js.Any.fromFunction1(questionCountByValueName), questionCreated = js.Any.fromFunction1(questionCreated), questionDescriptionLocation = questionDescriptionLocation.asInstanceOf[js.Any], questionErrorLocation = questionErrorLocation.asInstanceOf[js.Any], questionRemoved = js.Any.fromFunction1(questionRemoved), questionRenamed = js.Any.fromFunction3(questionRenamed), questionStartIndex = questionStartIndex.asInstanceOf[js.Any], questionTitleLocation = questionTitleLocation.asInstanceOf[js.Any], questionTitlePattern = questionTitlePattern.asInstanceOf[js.Any], questionVisibilityChanged = js.Any.fromFunction2(questionVisibilityChanged), questionsOrder = questionsOrder.asInstanceOf[js.Any], requiredText = requiredText.asInstanceOf[js.Any], scrollElementToTop = js.Any.fromFunction4(scrollElementToTop), state = state.asInstanceOf[js.Any], storeOthersAsComment = storeOthersAsComment.asInstanceOf[js.Any], updateChoicesFromServer = js.Any.fromFunction3(updateChoicesFromServer), updatePageCssClasses = js.Any.fromFunction2(updatePageCssClasses), updatePanelCssClasses = js.Any.fromFunction2(updatePanelCssClasses), updateQuestionCssClasses = js.Any.fromFunction2(updateQuestionCssClasses), uploadFiles = js.Any.fromFunction4(uploadFiles), validatePanel = js.Any.fromFunction1(validatePanel), validateQuestion = js.Any.fromFunction1(validateQuestion))
     __obj.asInstanceOf[ISurvey]
   }
 }

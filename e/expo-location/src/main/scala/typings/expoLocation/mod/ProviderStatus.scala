@@ -22,9 +22,9 @@ object ProviderStatus {
     passiveAvailable: js.UndefOr[Boolean] = js.undefined
   ): ProviderStatus = {
     val __obj = js.Dynamic.literal(backgroundModeEnabled = backgroundModeEnabled.asInstanceOf[js.Any], locationServicesEnabled = locationServicesEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(gpsAvailable)) __obj.updateDynamic("gpsAvailable")(gpsAvailable.asInstanceOf[js.Any])
-    if (!js.isUndefined(networkAvailable)) __obj.updateDynamic("networkAvailable")(networkAvailable.asInstanceOf[js.Any])
-    if (!js.isUndefined(passiveAvailable)) __obj.updateDynamic("passiveAvailable")(passiveAvailable.asInstanceOf[js.Any])
+    if (!js.isUndefined(gpsAvailable)) __obj.updateDynamic("gpsAvailable")(gpsAvailable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(networkAvailable)) __obj.updateDynamic("networkAvailable")(networkAvailable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passiveAvailable)) __obj.updateDynamic("passiveAvailable")(passiveAvailable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderStatus]
   }
 }

@@ -1,5 +1,6 @@
 package typings.javascriptAstar
 
+import typings.javascriptAstar.anon.X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +11,7 @@ trait Heuristics extends js.Object {
   var diagonal_Original: Heuristic = js.native
   @JSName("manhattan")
   var manhattan_Original: Heuristic = js.native
-  def diagonal(pos0: AnonX, pos1: AnonX): Double = js.native
-  def manhattan(pos0: AnonX, pos1: AnonX): Double = js.native
+  def diagonal(pos0: X, pos1: X): Double = js.native
+  def manhattan(pos0: X, pos1: X): Double = js.native
 }
 

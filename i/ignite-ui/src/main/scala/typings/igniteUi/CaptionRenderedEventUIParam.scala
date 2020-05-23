@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait CaptionRenderedEventUIParam extends js.Object {
   /**
-  	 * Gets a reference to the caption container.
-  	 */
+    * Gets a reference to the caption container.
+    */
   var captionContainer: js.UndefOr[Element] = js.undefined
   /**
-  	 * Gets a reference to the grid.
-  	 */
+    * Gets a reference to the grid.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 

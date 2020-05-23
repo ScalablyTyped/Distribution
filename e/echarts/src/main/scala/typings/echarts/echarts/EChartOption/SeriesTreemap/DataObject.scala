@@ -1,9 +1,9 @@
 package typings.echarts.echarts.EChartOption.SeriesTreemap
 
-import typings.echarts.AnonBorderColorSaturation
-import typings.echarts.AnonEllipsis
-import typings.echarts.AnonTextShadowOffsetX
-import typings.echarts.AnonUpperLabel
+import typings.echarts.anon.BorderColorSaturation
+import typings.echarts.anon.Ellipsis
+import typings.echarts.anon.TextShadowOffsetX
+import typings.echarts.anon.UpperLabel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -202,7 +202,7 @@ trait DataObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis
     */
-  var emphasis: js.UndefOr[AnonUpperLabel] = js.undefined
+  var emphasis: js.UndefOr[UpperLabel] = js.undefined
   /**
     * `id` is not mandatory.
     * But if using API, id is used to locate node.
@@ -232,7 +232,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderColorSaturation] = js.undefined
+  var itemStyle: js.UndefOr[BorderColorSaturation] = js.undefined
   /**
     * `label` decribes the style of the label in each node.
     *
@@ -255,7 +255,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.label
     */
-  var label: js.UndefOr[AnonEllipsis] = js.undefined
+  var label: js.UndefOr[Ellipsis] = js.undefined
   /**
     * Show the description text in rectangle.
     *
@@ -309,7 +309,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel
     */
-  var upperLabel: js.UndefOr[AnonTextShadowOffsetX] = js.undefined
+  var upperLabel: js.UndefOr[TextShadowOffsetX] = js.undefined
   /**
     * The value of this node, indicating the area size.
     *
@@ -425,30 +425,30 @@ object DataObject {
   @scala.inline
   def apply(
     children: js.Array[DataObject] = null,
-    childrenVisibleMin: Int | Double = null,
+    childrenVisibleMin: js.UndefOr[Double] = js.undefined,
     color: js.Array[_] = null,
     colorAlpha: js.Array[_] = null,
     colorMappingBy: String = null,
-    colorSaturation: Int | Double = null,
-    emphasis: AnonUpperLabel = null,
+    colorSaturation: js.UndefOr[Double] = js.undefined,
+    emphasis: UpperLabel = null,
     id: String = null,
-    itemStyle: AnonBorderColorSaturation = null,
-    label: AnonEllipsis = null,
+    itemStyle: BorderColorSaturation = null,
+    label: Ellipsis = null,
     name: String = null,
-    upperLabel: AnonTextShadowOffsetX = null,
+    upperLabel: TextShadowOffsetX = null,
     value: js.Array[_] | Double = null,
-    visibleMin: Int | Double = null,
-    visualDimension: Int | Double = null,
-    visualMax: Int | Double = null,
-    visualMin: Int | Double = null
+    visibleMin: js.UndefOr[Double] = js.undefined,
+    visualDimension: js.UndefOr[Double] = js.undefined,
+    visualMax: js.UndefOr[Double] = js.undefined,
+    visualMin: js.UndefOr[Double] = js.undefined
   ): DataObject = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (childrenVisibleMin != null) __obj.updateDynamic("childrenVisibleMin")(childrenVisibleMin.asInstanceOf[js.Any])
+    if (!js.isUndefined(childrenVisibleMin)) __obj.updateDynamic("childrenVisibleMin")(childrenVisibleMin.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (colorAlpha != null) __obj.updateDynamic("colorAlpha")(colorAlpha.asInstanceOf[js.Any])
     if (colorMappingBy != null) __obj.updateDynamic("colorMappingBy")(colorMappingBy.asInstanceOf[js.Any])
-    if (colorSaturation != null) __obj.updateDynamic("colorSaturation")(colorSaturation.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorSaturation)) __obj.updateDynamic("colorSaturation")(colorSaturation.get.asInstanceOf[js.Any])
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
@@ -456,10 +456,10 @@ object DataObject {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (upperLabel != null) __obj.updateDynamic("upperLabel")(upperLabel.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (visibleMin != null) __obj.updateDynamic("visibleMin")(visibleMin.asInstanceOf[js.Any])
-    if (visualDimension != null) __obj.updateDynamic("visualDimension")(visualDimension.asInstanceOf[js.Any])
-    if (visualMax != null) __obj.updateDynamic("visualMax")(visualMax.asInstanceOf[js.Any])
-    if (visualMin != null) __obj.updateDynamic("visualMin")(visualMin.asInstanceOf[js.Any])
+    if (!js.isUndefined(visibleMin)) __obj.updateDynamic("visibleMin")(visibleMin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visualDimension)) __obj.updateDynamic("visualDimension")(visualDimension.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visualMax)) __obj.updateDynamic("visualMax")(visualMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visualMin)) __obj.updateDynamic("visualMin")(visualMin.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataObject]
   }
 }

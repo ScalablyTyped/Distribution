@@ -1,7 +1,7 @@
 package typings.babelTraverse.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.babelTraverse.AnonId
+import typings.babelTraverse.anon.Id
 import typings.babelTypes.mod.Identifier_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -70,7 +70,7 @@ class Scope protected () extends js.Object {
   def moveBindingTo(name: String, scope: Scope): Unit = js.native
   def parentHasBinding(name: String): Boolean = js.native
   def parentHasBinding(name: String, noGlobals: Boolean): Boolean = js.native
-  def push(opts: AnonId): Unit = js.native
+  def push(opts: Id): Unit = js.native
   def registerBinding(kind: String, path: NodePath[Node]): Unit = js.native
   def registerBinding(kind: String, path: NodePath[Node], bindingPath: NodePath[Node]): Unit = js.native
   def registerConstantViolation(path: NodePath[Node]): Unit = js.native

@@ -11,9 +11,9 @@ trait DOMAttributes[T] extends js.Object {
 
 object DOMAttributes {
   @scala.inline
-  def apply[T](css: InterpolationWithTheme[_] = null): DOMAttributes[T] = {
+  def apply[T](css: js.UndefOr[Null | InterpolationWithTheme[_]] = js.undefined): DOMAttributes[T] = {
     val __obj = js.Dynamic.literal()
-    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
+    if (!js.isUndefined(css)) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     __obj.asInstanceOf[DOMAttributes[T]]
   }
 }

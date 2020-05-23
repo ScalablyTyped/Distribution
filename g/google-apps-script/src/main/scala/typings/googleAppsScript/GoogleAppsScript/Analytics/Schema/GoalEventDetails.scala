@@ -17,7 +17,7 @@ object GoalEventDetails {
   ): GoalEventDetails = {
     val __obj = js.Dynamic.literal()
     if (eventConditions != null) __obj.updateDynamic("eventConditions")(eventConditions.asInstanceOf[js.Any])
-    if (!js.isUndefined(useEventValue)) __obj.updateDynamic("useEventValue")(useEventValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(useEventValue)) __obj.updateDynamic("useEventValue")(useEventValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoalEventDetails]
   }
 }

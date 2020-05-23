@@ -3,38 +3,36 @@ package typings.firebaseFirestore
 import typings.firebaseFirestore.asyncQueueMod.AsyncQueue
 import typings.firebaseFirestore.databaseInfoMod.DatabaseInfo
 import typings.firebaseFirestore.documentKeyMod.DocumentKey
-import typings.firebaseFirestore.firestoreClientMod.PersistenceSettings
 import typings.firebaseFirestore.indexManagerMod.IndexManager
+import typings.firebaseFirestore.listenSequenceMod.SequenceNumberSyncer
 import typings.firebaseFirestore.lruGarbageCollectorMod.ActiveTargets
 import typings.firebaseFirestore.lruGarbageCollectorMod.LruDelegate
 import typings.firebaseFirestore.lruGarbageCollectorMod.LruGarbageCollector
 import typings.firebaseFirestore.lruGarbageCollectorMod.LruParams
 import typings.firebaseFirestore.mutationQueueMod.MutationQueue
-import typings.firebaseFirestore.persistenceMod.GarbageCollectionScheduler
 import typings.firebaseFirestore.persistenceMod.Persistence
-import typings.firebaseFirestore.persistenceMod.PersistenceProvider
 import typings.firebaseFirestore.persistenceMod.PersistenceTransaction
 import typings.firebaseFirestore.persistenceMod.PersistenceTransactionMode
 import typings.firebaseFirestore.persistenceMod.PrimaryStateListener
 import typings.firebaseFirestore.persistenceMod.ReferenceDelegate
 import typings.firebaseFirestore.persistencePromiseMod.PersistencePromise
 import typings.firebaseFirestore.platformMod.Platform
-import typings.firebaseFirestore.referenceSetMod.ReferenceSet
 import typings.firebaseFirestore.remoteDocumentCacheMod.RemoteDocumentCache
+import typings.firebaseFirestore.serializerMod.JsonProtoSerializer
 import typings.firebaseFirestore.sharedClientStateMod.ClientId
-import typings.firebaseFirestore.sharedClientStateMod.SharedClientState
 import typings.firebaseFirestore.simpleDbMod.SimpleDbStore
 import typings.firebaseFirestore.simpleDbMod.SimpleDbTransaction
 import typings.firebaseFirestore.targetCacheMod.TargetCache
 import typings.firebaseFirestore.targetDataMod.TargetData
 import typings.firebaseFirestore.typesMod.ListenSequenceNumber
+import typings.firebaseFirestore.typesMod.TargetId
 import typings.firebaseFirestore.userMod.User
 import typings.std.IDBValidKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/indexeddb_persistence", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_persistence", JSImport.Namespace)
 @js.native
 object indexeddbPersistenceMod extends js.Object {
   @js.native
@@ -52,7 +50,6 @@ object indexeddbPersistenceMod extends js.Object {
     var forEachOrphanedDocument: js.Any = js.native
     /* CompleteClass */
     override val garbageCollector: LruGarbageCollector = js.native
-    var inMemoryPins: js.Any = js.native
     /**
       * Returns true if anything would prevent this document from being garbage
       * collected, given that the document in question is not present in any
@@ -60,10 +57,10 @@ object indexeddbPersistenceMod extends js.Object {
       * the collection run.
       */
     var isPinned: js.Any = js.native
-    var orphanedDocmentCount: js.Any = js.native
+    var orphanedDocumentCount: js.Any = js.native
     /** Notify the delegate that the given document was added to a target. */
     /* CompleteClass */
-    override def addReference(txn: PersistenceTransaction, doc: DocumentKey): PersistencePromise[Unit] = js.native
+    override def addReference(txn: PersistenceTransaction, targetId: TargetId, doc: DocumentKey): PersistencePromise[Unit] = js.native
     /**
       * Enumerates sequence numbers for documents not associated with a target.
       * Note that this may include duplicate sequence numbers.
@@ -77,9 +74,12 @@ object indexeddbPersistenceMod extends js.Object {
     override def getCacheSize(txn: PersistenceTransaction): PersistencePromise[Double] = js.native
     /* CompleteClass */
     override def getSequenceNumberCount(txn: PersistenceTransaction): PersistencePromise[Double] = js.native
-    /** Notify the delegate that a document is no longer being mutated by the user. */
+    /**
+      * Notify the delegate that a document may no longer be part of any views or
+      * have any mutations associated.
+      */
     /* CompleteClass */
-    override def removeMutationReference(txn: PersistenceTransaction, doc: DocumentKey): PersistencePromise[Unit] = js.native
+    override def markPotentiallyOrphaned(txn: PersistenceTransaction, doc: DocumentKey): PersistencePromise[Unit] = js.native
     /**
       * Removes all unreferenced documents from the cache that have a sequence number less than or
       * equal to the given `upperBound`.
@@ -90,7 +90,7 @@ object indexeddbPersistenceMod extends js.Object {
     override def removeOrphanedDocuments(txn: PersistenceTransaction, upperBound: ListenSequenceNumber): PersistencePromise[Double] = js.native
     /** Notify the delegate that the given document was removed from a target. */
     /* CompleteClass */
-    override def removeReference(txn: PersistenceTransaction, doc: DocumentKey): PersistencePromise[Unit] = js.native
+    override def removeReference(txn: PersistenceTransaction, targetId: TargetId, doc: DocumentKey): PersistencePromise[Unit] = js.native
     /**
       * Notify the delegate that a target was removed. The delegate may, but is not obligated to,
       * actually delete the target and associated data.
@@ -105,12 +105,6 @@ object indexeddbPersistenceMod extends js.Object {
       */
     /* CompleteClass */
     override def removeTargets(txn: PersistenceTransaction, upperBound: ListenSequenceNumber, activeTargetIds: ActiveTargets): PersistencePromise[Double] = js.native
-    /**
-      * Registers a ReferenceSet of documents that should be considered 'referenced' and not eligible
-      * for removal during garbage collection.
-      */
-    /* CompleteClass */
-    override def setInMemoryPins(pins: ReferenceSet): Unit = js.native
     /** Notify the delegate that a limbo document was updated. */
     /* CompleteClass */
     override def updateLimboDocument(txn: PersistenceTransaction, doc: DocumentKey): PersistencePromise[Unit] = js.native
@@ -118,6 +112,16 @@ object indexeddbPersistenceMod extends js.Object {
   
   @js.native
   class IndexedDbPersistence protected () extends Persistence {
+    def this(
+      allowTabSynchronization: Boolean,
+      persistenceKey: String,
+      clientId: ClientId,
+      platform: Platform,
+      lruParams: LruParams,
+      queue: AsyncQueue,
+      serializer: JsonProtoSerializer,
+      sequenceNumberSyncer: SequenceNumberSyncer
+    ) = this()
     var _started: js.Any = js.native
     /**
       * Obtains or extends the new primary lease for the local client. This
@@ -210,12 +214,6 @@ object indexeddbPersistenceMod extends js.Object {
     var serializer: js.Any = js.native
     var simpleDb: js.Any = js.native
     /**
-      * Attempt to start IndexedDb persistence.
-      *
-      * @return {Promise<void>} Whether persistence was enabled.
-      */
-    var start: js.Any = js.native
-    /**
       * Whether or not this persistence instance has been started.
       */
     /* CompleteClass */
@@ -246,8 +244,7 @@ object indexeddbPersistenceMod extends js.Object {
       *
       * PORTING NOTE: This is only used for Web multi-tab.
       */
-    /* CompleteClass */
-    override def getActiveClients(): js.Promise[js.Array[ClientId]] = js.native
+    def getActiveClients(): js.Promise[js.Array[ClientId]] = js.native
     /**
       * Returns an IndexManager instance that manages our persisted query indexes.
       *
@@ -329,8 +326,7 @@ object indexeddbPersistenceMod extends js.Object {
       *
       * PORTING NOTE: This is only used for Web multi-tab.
       */
-    /* CompleteClass */
-    override def setNetworkEnabled(networkEnabled: Boolean): Unit = js.native
+    def setNetworkEnabled(networkEnabled: Boolean): Unit = js.native
     /**
       * Registers a listener that gets called when the primary state of the
       * instance changes. Upon registering, this listener is invoked immediately
@@ -338,39 +334,17 @@ object indexeddbPersistenceMod extends js.Object {
       *
       * PORTING NOTE: This is only used for Web multi-tab.
       */
-    /* CompleteClass */
-    override def setPrimaryStateListener(primaryStateListener: PrimaryStateListener): js.Promise[Unit] = js.native
+    def setPrimaryStateListener(primaryStateListener: PrimaryStateListener): js.Promise[Unit] = js.native
     /**
       * Releases any resources held during eager shutdown.
       */
     /* CompleteClass */
     override def shutdown(): js.Promise[Unit] = js.native
+    /** Starts persistence. */
+    /* CompleteClass */
+    override def start(): js.Promise[Unit] = js.native
     @JSName("started")
-    def started_MIndexedDbPersistence(): Boolean = js.native
-  }
-  
-  @js.native
-  class IndexedDbPersistenceProvider () extends PersistenceProvider {
-    var gcScheduler: js.UndefOr[js.Any] = js.native
-    var persistence: js.UndefOr[js.Any] = js.native
-    var sharedClientState: js.UndefOr[js.Any] = js.native
-    /* CompleteClass */
-    override def clearPersistence(databaseId: DatabaseInfo): js.Promise[Unit] = js.native
-    /* CompleteClass */
-    override def getGarbageCollectionScheduler(): GarbageCollectionScheduler = js.native
-    /* CompleteClass */
-    override def getPersistence(): Persistence = js.native
-    /* CompleteClass */
-    override def getSharedClientState(): SharedClientState = js.native
-    /* CompleteClass */
-    override def initialize(
-      asyncQueue: AsyncQueue,
-      databaseInfo: DatabaseInfo,
-      platform: Platform,
-      clientId: ClientId,
-      initialUser: User,
-      settings: PersistenceSettings
-    ): js.Promise[Unit] = js.native
+    def started_MIndexedDbPersistence: Boolean = js.native
   }
   
   @js.native
@@ -393,7 +367,6 @@ object indexeddbPersistenceMod extends js.Object {
       */
     def buildStoragePrefix(databaseInfo: DatabaseInfo): String = js.native
     def clearPersistence(persistenceKey: String): js.Promise[Unit] = js.native
-    def createIndexedDbPersistence(options: AnonAllowTabSynchronization): js.Promise[IndexedDbPersistence] = js.native
     def getStore[Key /* <: IDBValidKey */, Value](txn: PersistenceTransaction, store: String): SimpleDbStore[Key, Value] = js.native
     def isAvailable(): Boolean = js.native
   }

@@ -6,6 +6,7 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactNodeArray
 import typings.std.Intl.DateTimeFormatPart
+import typings.std.Intl.LDMLPluralRule
 import typings.std.Intl.NumberFormatPart
 import typings.std.Record
 import typings.std.ReturnType
@@ -21,20 +22,20 @@ trait IntlFormatters extends js.Object {
   def formatDateToParts(value: String, opts: FormatDateOptions): js.Array[DateTimeFormatPart] = js.native
   @JSName("formatDateToParts")
   def formatDateToParts_0(
-    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.FnCallDate>[0] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCallDate>[0] */ js.Any
   ): js.Array[DateTimeFormatPart] = js.native
   @JSName("formatDateToParts")
   def formatDateToParts_0(
-    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.FnCallDate>[0] */ js.Any,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCallDate>[0] */ js.Any,
     opts: FormatDateOptions
   ): js.Array[DateTimeFormatPart] = js.native
   @JSName("formatDate")
   def formatDate_0(
-    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.FnCallDate>[0] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCallDate>[0] */ js.Any
   ): String = js.native
   @JSName("formatDate")
   def formatDate_0(
-    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.FnCallDate>[0] */ js.Any,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCallDate>[0] */ js.Any,
     opts: FormatDateOptions
   ): String = js.native
   def formatDisplayName(
@@ -81,13 +82,13 @@ trait IntlFormatters extends js.Object {
   ): String = js.native
   @JSName("formatPlural")
   def formatPlural_0(
-    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(n : number): string>[0] */ js.Any
-  ): ReturnType[js.Function1[/* n */ Double, String]] = js.native
+    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(n : number): std.Intl.LDMLPluralRule>[0] */ js.Any
+  ): ReturnType[js.Function1[/* n */ Double, LDMLPluralRule]] = js.native
   @JSName("formatPlural")
   def formatPlural_0(
-    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(n : number): string>[0] */ js.Any,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(n : number): std.Intl.LDMLPluralRule>[0] */ js.Any,
     opts: FormatPluralOptions
-  ): ReturnType[js.Function1[/* n */ Double, String]] = js.native
+  ): ReturnType[js.Function1[/* n */ Double, LDMLPluralRule]] = js.native
   def formatRelativeTime(
     value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : number, unit : @formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.FormattableUnit): string>[0] */ js.Any,
     unit: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : number, unit : @formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.FormattableUnit): string>[1] */ js.Any
@@ -107,20 +108,20 @@ trait IntlFormatters extends js.Object {
   def formatTimeToParts(value: String, opts: FormatDateOptions): js.Array[DateTimeFormatPart] = js.native
   @JSName("formatTimeToParts")
   def formatTimeToParts_0(
-    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.FnCallDate>[0] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCallDate>[0] */ js.Any
   ): js.Array[DateTimeFormatPart] = js.native
   @JSName("formatTimeToParts")
   def formatTimeToParts_0(
-    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.FnCallDate>[0] */ js.Any,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCallDate>[0] */ js.Any,
     opts: FormatDateOptions
   ): js.Array[DateTimeFormatPart] = js.native
   @JSName("formatTime")
   def formatTime_0(
-    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.FnCallDate>[0] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCallDate>[0] */ js.Any
   ): String = js.native
   @JSName("formatTime")
   def formatTime_0(
-    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.FnCallDate>[0] */ js.Any,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCallDate>[0] */ js.Any,
     opts: FormatDateOptions
   ): String = js.native
 }

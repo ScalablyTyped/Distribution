@@ -11,5 +11,5 @@ package object mod {
     /* flags */ typings.hapiCatbox.mod.GenerateFuncFlags, 
     js.Promise[T]
   ]
-  type Id = java.lang.String | typings.hapiCatbox.AnonId
+  type Id = java.lang.String | typings.hapiCatbox.anon.Id
 }

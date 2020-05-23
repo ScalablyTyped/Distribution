@@ -13,6 +13,8 @@ trait CheerioOptionsInterface extends js.Object {
   var normalizeWhitespace: js.UndefOr[Boolean] = js.undefined
   var recognizeCDATA: js.UndefOr[Boolean] = js.undefined
   var recognizeSelfClosing: js.UndefOr[Boolean] = js.undefined
+  var withEndIndices: js.UndefOr[Boolean] = js.undefined
+  var withStartIndices: js.UndefOr[Boolean] = js.undefined
   // Document References
   // Cheerio https://github.com/cheeriojs/cheerio
   // HTMLParser2 https://github.com/fb55/htmlparser2/wiki/Parser-options
@@ -31,18 +33,22 @@ object CheerioOptionsInterface {
     normalizeWhitespace: js.UndefOr[Boolean] = js.undefined,
     recognizeCDATA: js.UndefOr[Boolean] = js.undefined,
     recognizeSelfClosing: js.UndefOr[Boolean] = js.undefined,
+    withEndIndices: js.UndefOr[Boolean] = js.undefined,
+    withStartIndices: js.UndefOr[Boolean] = js.undefined,
     xmlMode: js.UndefOr[Boolean] = js.undefined
   ): CheerioOptionsInterface = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(_useHtmlParser2)) __obj.updateDynamic("_useHtmlParser2")(_useHtmlParser2.asInstanceOf[js.Any])
-    if (!js.isUndefined(decodeEntities)) __obj.updateDynamic("decodeEntities")(decodeEntities.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreWhitespace)) __obj.updateDynamic("ignoreWhitespace")(ignoreWhitespace.asInstanceOf[js.Any])
-    if (!js.isUndefined(lowerCaseAttributeNames)) __obj.updateDynamic("lowerCaseAttributeNames")(lowerCaseAttributeNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(lowerCaseTags)) __obj.updateDynamic("lowerCaseTags")(lowerCaseTags.asInstanceOf[js.Any])
-    if (!js.isUndefined(normalizeWhitespace)) __obj.updateDynamic("normalizeWhitespace")(normalizeWhitespace.asInstanceOf[js.Any])
-    if (!js.isUndefined(recognizeCDATA)) __obj.updateDynamic("recognizeCDATA")(recognizeCDATA.asInstanceOf[js.Any])
-    if (!js.isUndefined(recognizeSelfClosing)) __obj.updateDynamic("recognizeSelfClosing")(recognizeSelfClosing.asInstanceOf[js.Any])
-    if (!js.isUndefined(xmlMode)) __obj.updateDynamic("xmlMode")(xmlMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(_useHtmlParser2)) __obj.updateDynamic("_useHtmlParser2")(_useHtmlParser2.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(decodeEntities)) __obj.updateDynamic("decodeEntities")(decodeEntities.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreWhitespace)) __obj.updateDynamic("ignoreWhitespace")(ignoreWhitespace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lowerCaseAttributeNames)) __obj.updateDynamic("lowerCaseAttributeNames")(lowerCaseAttributeNames.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lowerCaseTags)) __obj.updateDynamic("lowerCaseTags")(lowerCaseTags.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(normalizeWhitespace)) __obj.updateDynamic("normalizeWhitespace")(normalizeWhitespace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(recognizeCDATA)) __obj.updateDynamic("recognizeCDATA")(recognizeCDATA.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(recognizeSelfClosing)) __obj.updateDynamic("recognizeSelfClosing")(recognizeSelfClosing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(withEndIndices)) __obj.updateDynamic("withEndIndices")(withEndIndices.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(withStartIndices)) __obj.updateDynamic("withStartIndices")(withStartIndices.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xmlMode)) __obj.updateDynamic("xmlMode")(xmlMode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheerioOptionsInterface]
   }
 }

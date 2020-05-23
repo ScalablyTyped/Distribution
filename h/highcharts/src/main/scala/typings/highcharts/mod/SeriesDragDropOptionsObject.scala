@@ -124,13 +124,13 @@ object SeriesDragDropOptionsObject {
   @scala.inline
   def apply(
     dragHandle: DragDropHandleOptionsObject = null,
-    dragMaxX: Int | Double = null,
-    dragMaxY: Int | Double = null,
-    dragMinX: Int | Double = null,
-    dragMinY: Int | Double = null,
-    dragPrecisionX: Int | Double = null,
-    dragPrecisionY: Int | Double = null,
-    dragSensitivity: Int | Double = null,
+    dragMaxX: js.UndefOr[Double] = js.undefined,
+    dragMaxY: js.UndefOr[Double] = js.undefined,
+    dragMinX: js.UndefOr[Double] = js.undefined,
+    dragMinY: js.UndefOr[Double] = js.undefined,
+    dragPrecisionX: js.UndefOr[Double] = js.undefined,
+    dragPrecisionY: js.UndefOr[Double] = js.undefined,
+    dragSensitivity: js.UndefOr[Double] = js.undefined,
     draggableClose: js.UndefOr[Boolean] = js.undefined,
     draggableEnd: js.UndefOr[Boolean] = js.undefined,
     draggableHigh: js.UndefOr[Boolean] = js.undefined,
@@ -150,29 +150,29 @@ object SeriesDragDropOptionsObject {
   ): SeriesDragDropOptionsObject = {
     val __obj = js.Dynamic.literal()
     if (dragHandle != null) __obj.updateDynamic("dragHandle")(dragHandle.asInstanceOf[js.Any])
-    if (dragMaxX != null) __obj.updateDynamic("dragMaxX")(dragMaxX.asInstanceOf[js.Any])
-    if (dragMaxY != null) __obj.updateDynamic("dragMaxY")(dragMaxY.asInstanceOf[js.Any])
-    if (dragMinX != null) __obj.updateDynamic("dragMinX")(dragMinX.asInstanceOf[js.Any])
-    if (dragMinY != null) __obj.updateDynamic("dragMinY")(dragMinY.asInstanceOf[js.Any])
-    if (dragPrecisionX != null) __obj.updateDynamic("dragPrecisionX")(dragPrecisionX.asInstanceOf[js.Any])
-    if (dragPrecisionY != null) __obj.updateDynamic("dragPrecisionY")(dragPrecisionY.asInstanceOf[js.Any])
-    if (dragSensitivity != null) __obj.updateDynamic("dragSensitivity")(dragSensitivity.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggableClose)) __obj.updateDynamic("draggableClose")(draggableClose.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggableEnd)) __obj.updateDynamic("draggableEnd")(draggableEnd.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggableHigh)) __obj.updateDynamic("draggableHigh")(draggableHigh.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggableLow)) __obj.updateDynamic("draggableLow")(draggableLow.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggableOpen)) __obj.updateDynamic("draggableOpen")(draggableOpen.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggableQ1)) __obj.updateDynamic("draggableQ1")(draggableQ1.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggableQ3)) __obj.updateDynamic("draggableQ3")(draggableQ3.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggableStart)) __obj.updateDynamic("draggableStart")(draggableStart.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggableTarget)) __obj.updateDynamic("draggableTarget")(draggableTarget.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggableX)) __obj.updateDynamic("draggableX")(draggableX.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggableX1)) __obj.updateDynamic("draggableX1")(draggableX1.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggableX2)) __obj.updateDynamic("draggableX2")(draggableX2.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggableY)) __obj.updateDynamic("draggableY")(draggableY.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragMaxX)) __obj.updateDynamic("dragMaxX")(dragMaxX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragMaxY)) __obj.updateDynamic("dragMaxY")(dragMaxY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragMinX)) __obj.updateDynamic("dragMinX")(dragMinX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragMinY)) __obj.updateDynamic("dragMinY")(dragMinY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragPrecisionX)) __obj.updateDynamic("dragPrecisionX")(dragPrecisionX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragPrecisionY)) __obj.updateDynamic("dragPrecisionY")(dragPrecisionY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragSensitivity)) __obj.updateDynamic("dragSensitivity")(dragSensitivity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggableClose)) __obj.updateDynamic("draggableClose")(draggableClose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggableEnd)) __obj.updateDynamic("draggableEnd")(draggableEnd.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggableHigh)) __obj.updateDynamic("draggableHigh")(draggableHigh.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggableLow)) __obj.updateDynamic("draggableLow")(draggableLow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggableOpen)) __obj.updateDynamic("draggableOpen")(draggableOpen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggableQ1)) __obj.updateDynamic("draggableQ1")(draggableQ1.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggableQ3)) __obj.updateDynamic("draggableQ3")(draggableQ3.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggableStart)) __obj.updateDynamic("draggableStart")(draggableStart.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggableTarget)) __obj.updateDynamic("draggableTarget")(draggableTarget.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggableX)) __obj.updateDynamic("draggableX")(draggableX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggableX1)) __obj.updateDynamic("draggableX1")(draggableX1.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggableX2)) __obj.updateDynamic("draggableX2")(draggableX2.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggableY)) __obj.updateDynamic("draggableY")(draggableY.get.asInstanceOf[js.Any])
     if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy.asInstanceOf[js.Any])
     if (guideBox != null) __obj.updateDynamic("guideBox")(guideBox.asInstanceOf[js.Any])
-    if (!js.isUndefined(liveRedraw)) __obj.updateDynamic("liveRedraw")(liveRedraw.asInstanceOf[js.Any])
+    if (!js.isUndefined(liveRedraw)) __obj.updateDynamic("liveRedraw")(liveRedraw.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesDragDropOptionsObject]
   }
 }

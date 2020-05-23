@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation._
 
 trait ResponsiveModeChangedEventUIParam extends js.Object {
   /**
-  	 * Gets the newly assumed mode.
-  	 */
+    * Gets the newly assumed mode.
+    */
   var mode: js.UndefOr[String] = js.undefined
   /**
-  	 * Gets the reference to the igGridResponsive widget.
-  	 */
+    * Gets the reference to the igGridResponsive widget.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Gets the previously assumed mode.
-  	 */
+    * Gets the previously assumed mode.
+    */
   var previousMode: js.UndefOr[String] = js.undefined
 }
 

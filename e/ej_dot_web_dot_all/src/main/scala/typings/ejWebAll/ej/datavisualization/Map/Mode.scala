@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.Map
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,14 +17,6 @@ object Mode extends js.Object {
   //specifies the interactive mode
   @js.native
   sealed trait Interactive extends Mode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Mode with Double] = js.native
-  /* 0 */ @js.native
-  object Default extends TopLevel[Default with Double]
-  
-  /* 1 */ @js.native
-  object Interactive extends TopLevel[Interactive with Double]
   
 }
 

@@ -10,8 +10,6 @@ import scala.scalajs.js.annotation._
 object useParams extends js.Object {
   def apply[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.reactRouterDom.reactRouterDomStrings.useParams with TopLevel[js.Any] */](): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ p in keyof Params ]: keyof Params[p] extends undefined? string | undefined : string}
-    */ typings.reactRouterDom.reactRouterDomStrings.useParams with TopLevel[js.Any] = js.native
+    */ typings.reactRouterDom.reactRouterDomStrings.useParams with TopLevel[js.Any] */](): Params = js.native
 }
 

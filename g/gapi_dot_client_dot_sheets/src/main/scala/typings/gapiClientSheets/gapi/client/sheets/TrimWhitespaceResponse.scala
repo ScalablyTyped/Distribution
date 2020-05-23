@@ -11,9 +11,9 @@ trait TrimWhitespaceResponse extends js.Object {
 
 object TrimWhitespaceResponse {
   @scala.inline
-  def apply(cellsChangedCount: Int | Double = null): TrimWhitespaceResponse = {
+  def apply(cellsChangedCount: js.UndefOr[Double] = js.undefined): TrimWhitespaceResponse = {
     val __obj = js.Dynamic.literal()
-    if (cellsChangedCount != null) __obj.updateDynamic("cellsChangedCount")(cellsChangedCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellsChangedCount)) __obj.updateDynamic("cellsChangedCount")(cellsChangedCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrimWhitespaceResponse]
   }
 }

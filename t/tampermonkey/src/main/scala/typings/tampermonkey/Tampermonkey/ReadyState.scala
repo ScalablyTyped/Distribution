@@ -1,6 +1,5 @@
 package typings.tampermonkey.Tampermonkey
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,23 +25,6 @@ object ReadyState extends js.Object {
   
   @js.native
   sealed trait Unsent extends ReadyState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ReadyState with Double] = js.native
-  /* 4 */ @js.native
-  object Done extends TopLevel[Done with Double]
-  
-  /* 2 */ @js.native
-  object HeadersReceived extends TopLevel[HeadersReceived with Double]
-  
-  /* 3 */ @js.native
-  object Loading extends TopLevel[Loading with Double]
-  
-  /* 1 */ @js.native
-  object Opened extends TopLevel[Opened with Double]
-  
-  /* 0 */ @js.native
-  object Unsent extends TopLevel[Unsent with Double]
   
 }
 

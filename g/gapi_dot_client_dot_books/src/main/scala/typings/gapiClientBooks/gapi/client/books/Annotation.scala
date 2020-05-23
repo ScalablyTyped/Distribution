@@ -1,7 +1,7 @@
 package typings.gapiClientBooks.gapi.client.books
 
-import typings.gapiClientBooks.AnonAllowedCharacterCount
-import typings.gapiClientBooks.AnonCfiRange
+import typings.gapiClientBooks.anon.AllowedCharacterCount
+import typings.gapiClientBooks.anon.CfiRange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,11 +12,11 @@ trait Annotation extends js.Object {
   /** Anchor text before excerpt. For requests, if the user bookmarked a screen that has no flowing text on it, then this field should be empty. */
   var beforeSelectedText: js.UndefOr[String] = js.undefined
   /** Selection ranges sent from the client. */
-  var clientVersionRanges: js.UndefOr[AnonCfiRange] = js.undefined
+  var clientVersionRanges: js.UndefOr[CfiRange] = js.undefined
   /** Timestamp for the created time of this annotation. */
   var created: js.UndefOr[String] = js.undefined
   /** Selection ranges for the most recent content version. */
-  var currentVersionRanges: js.UndefOr[AnonCfiRange] = js.undefined
+  var currentVersionRanges: js.UndefOr[CfiRange] = js.undefined
   /** User-created data for this annotation. */
   var data: js.UndefOr[String] = js.undefined
   /** Indicates that this annotation is deleted. */
@@ -29,7 +29,7 @@ trait Annotation extends js.Object {
   var kind: js.UndefOr[String] = js.undefined
   /** The layer this annotation is for. */
   var layerId: js.UndefOr[String] = js.undefined
-  var layerSummary: js.UndefOr[AnonAllowedCharacterCount] = js.undefined
+  var layerSummary: js.UndefOr[AllowedCharacterCount] = js.undefined
   /** Pages that this annotation spans. */
   var pageIds: js.UndefOr[js.Array[String]] = js.undefined
   /** Excerpt from the volume. */
@@ -47,16 +47,16 @@ object Annotation {
   def apply(
     afterSelectedText: String = null,
     beforeSelectedText: String = null,
-    clientVersionRanges: AnonCfiRange = null,
+    clientVersionRanges: CfiRange = null,
     created: String = null,
-    currentVersionRanges: AnonCfiRange = null,
+    currentVersionRanges: CfiRange = null,
     data: String = null,
     deleted: js.UndefOr[Boolean] = js.undefined,
     highlightStyle: String = null,
     id: String = null,
     kind: String = null,
     layerId: String = null,
-    layerSummary: AnonAllowedCharacterCount = null,
+    layerSummary: AllowedCharacterCount = null,
     pageIds: js.Array[String] = null,
     selectedText: String = null,
     selfLink: String = null,
@@ -70,7 +70,7 @@ object Annotation {
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (currentVersionRanges != null) __obj.updateDynamic("currentVersionRanges")(currentVersionRanges.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
     if (highlightStyle != null) __obj.updateDynamic("highlightStyle")(highlightStyle.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])

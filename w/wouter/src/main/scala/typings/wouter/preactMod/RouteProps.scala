@@ -14,13 +14,15 @@ trait RouteProps[T /* <: DefaultParams */] extends js.Object {
 
 object RouteProps {
   @scala.inline
-  def apply[T /* <: DefaultParams */](
+  def apply[T](
     path: Path,
-    children: (js.Function1[/* params */ Params[T], ComponentChildren]) | ComponentChildren = null,
+    children: js.UndefOr[
+      Null | (js.Function1[/* params */ Params[T], ComponentChildren]) | ComponentChildren
+    ] = js.undefined,
     component: ComponentType[RouteComponentProps[T]] = null
   ): RouteProps[T] = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(children)) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteProps[T]]
   }

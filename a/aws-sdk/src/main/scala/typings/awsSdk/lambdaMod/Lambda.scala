@@ -1,7 +1,7 @@
 package typings.awsSdk.lambdaMod
 
-import typings.awsSdk.GetFunctionConfigurationR
-import typings.awsSdk.GetFunctionRequestwaiterW
+import typings.awsSdk.anon.GetFunctionConfigurationR
+import typings.awsSdk.anon.GetFunctionRequestwaiterW
 import typings.awsSdk.awsSdkStrings.functionActive
 import typings.awsSdk.awsSdkStrings.functionExists
 import typings.awsSdk.awsSdkStrings.functionUpdated

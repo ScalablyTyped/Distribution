@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListDetectorsResponse extends js.Object {
   /**
-    * A list of detector Ids.
+    * A list of detector IDs.
     */
   var DetectorIds: typings.awsSdk.guarddutyMod.DetectorIds = js.native
   /**
-    * Pagination parameter to be used on the next list operation to retrieve more items.
+    * The pagination parameter to be used on the next list operation to retrieve more items.
     */
   var NextToken: js.UndefOr[String] = js.native
 }

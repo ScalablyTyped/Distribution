@@ -29,8 +29,7 @@ object RTCRtpTransceiver {
     stopped: Boolean,
     mid: String = null
   ): RTCRtpTransceiver = {
-    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], receiver = receiver.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], setCodecPreferences = js.Any.fromFunction1(setCodecPreferences), setDirection = js.Any.fromFunction1(setDirection), stop = js.Any.fromFunction0(stop), stopped = stopped.asInstanceOf[js.Any])
-    if (mid != null) __obj.updateDynamic("mid")(mid.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], receiver = receiver.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], setCodecPreferences = js.Any.fromFunction1(setCodecPreferences), setDirection = js.Any.fromFunction1(setDirection), stop = js.Any.fromFunction0(stop), stopped = stopped.asInstanceOf[js.Any], mid = mid.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpTransceiver]
   }
 }

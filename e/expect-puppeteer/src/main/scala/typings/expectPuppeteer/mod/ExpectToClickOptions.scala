@@ -31,21 +31,21 @@ object ExpectToClickOptions {
   @scala.inline
   def apply(
     button: left | right | middle = null,
-    clickCount: Int | Double = null,
-    delay: Int | Double = null,
+    clickCount: js.UndefOr[Double] = js.undefined,
+    delay: js.UndefOr[Double] = js.undefined,
     polling: ExpectPolling = null,
     text: String | RegExp = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined
   ): ExpectToClickOptions = {
     val __obj = js.Dynamic.literal()
     if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
-    if (clickCount != null) __obj.updateDynamic("clickCount")(clickCount.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickCount)) __obj.updateDynamic("clickCount")(clickCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (polling != null) __obj.updateDynamic("polling")(polling.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpectToClickOptions]
   }
 }

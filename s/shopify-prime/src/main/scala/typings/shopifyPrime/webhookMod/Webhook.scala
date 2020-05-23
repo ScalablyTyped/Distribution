@@ -48,7 +48,7 @@ object Webhook {
     created_at: String = null,
     fields: js.Array[String] = null,
     format: json | xml = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     metafield_namespaces: js.Array[String] = null,
     updated_at: String = null
   ): Webhook = {
@@ -57,7 +57,7 @@ object Webhook {
     if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (metafield_namespaces != null) __obj.updateDynamic("metafield_namespaces")(metafield_namespaces.asInstanceOf[js.Any])
     if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[Webhook]

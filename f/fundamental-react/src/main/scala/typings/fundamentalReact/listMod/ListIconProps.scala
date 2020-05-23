@@ -10,12 +10,3 @@ trait ListIconProps extends js.Object {
   var glyph: IconGlyph
 }
 
-object ListIconProps {
-  @scala.inline
-  def apply(glyph: IconGlyph, className: String = null): ListIconProps = {
-    val __obj = js.Dynamic.literal(glyph = glyph.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ListIconProps]
-  }
-}
-

@@ -1,6 +1,5 @@
 package typings.officeJs.Office.MailboxEnums
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,17 +36,6 @@ object ItemNotificationMessageType extends js.Object {
     */
   @js.native
   sealed trait ProgressIndicator extends ItemNotificationMessageType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ItemNotificationMessageType with String] = js.native
-  /* "errorMessage" */ @js.native
-  object ErrorMessage extends TopLevel[ErrorMessage with String]
-  
-  /* "informationalMessage" */ @js.native
-  object InformationalMessage extends TopLevel[InformationalMessage with String]
-  
-  /* "progressIndicator" */ @js.native
-  object ProgressIndicator extends TopLevel[ProgressIndicator with String]
   
 }
 

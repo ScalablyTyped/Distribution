@@ -14,10 +14,13 @@ trait IListSnapshotsResponse extends js.Object {
 
 object IListSnapshotsResponse {
   @scala.inline
-  def apply(nextPageToken: String = null, snapshots: js.Array[ISnapshot] = null): IListSnapshotsResponse = {
+  def apply(
+    nextPageToken: js.UndefOr[Null | String] = js.undefined,
+    snapshots: js.UndefOr[Null | js.Array[ISnapshot]] = js.undefined
+  ): IListSnapshotsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (snapshots != null) __obj.updateDynamic("snapshots")(snapshots.asInstanceOf[js.Any])
+    if (!js.isUndefined(nextPageToken)) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapshots)) __obj.updateDynamic("snapshots")(snapshots.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListSnapshotsResponse]
   }
 }

@@ -51,27 +51,27 @@ trait MethodSetting extends js.Object {
 object MethodSetting {
   @scala.inline
   def apply(
-    cacheDataEncrypted: js.UndefOr[scala.Boolean] = js.undefined,
-    cacheTtlInSeconds: Int | scala.Double = null,
-    cachingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    dataTraceEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    cacheDataEncrypted: js.UndefOr[Boolean] = js.undefined,
+    cacheTtlInSeconds: js.UndefOr[Integer] = js.undefined,
+    cachingEnabled: js.UndefOr[Boolean] = js.undefined,
+    dataTraceEnabled: js.UndefOr[Boolean] = js.undefined,
     loggingLevel: String = null,
-    metricsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    requireAuthorizationForCacheControl: js.UndefOr[scala.Boolean] = js.undefined,
-    throttlingBurstLimit: Int | scala.Double = null,
-    throttlingRateLimit: Int | scala.Double = null,
+    metricsEnabled: js.UndefOr[Boolean] = js.undefined,
+    requireAuthorizationForCacheControl: js.UndefOr[Boolean] = js.undefined,
+    throttlingBurstLimit: js.UndefOr[Integer] = js.undefined,
+    throttlingRateLimit: js.UndefOr[Double] = js.undefined,
     unauthorizedCacheControlHeaderStrategy: UnauthorizedCacheControlHeaderStrategy = null
   ): MethodSetting = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cacheDataEncrypted)) __obj.updateDynamic("cacheDataEncrypted")(cacheDataEncrypted.asInstanceOf[js.Any])
-    if (cacheTtlInSeconds != null) __obj.updateDynamic("cacheTtlInSeconds")(cacheTtlInSeconds.asInstanceOf[js.Any])
-    if (!js.isUndefined(cachingEnabled)) __obj.updateDynamic("cachingEnabled")(cachingEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(dataTraceEnabled)) __obj.updateDynamic("dataTraceEnabled")(dataTraceEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheDataEncrypted)) __obj.updateDynamic("cacheDataEncrypted")(cacheDataEncrypted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheTtlInSeconds)) __obj.updateDynamic("cacheTtlInSeconds")(cacheTtlInSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cachingEnabled)) __obj.updateDynamic("cachingEnabled")(cachingEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataTraceEnabled)) __obj.updateDynamic("dataTraceEnabled")(dataTraceEnabled.get.asInstanceOf[js.Any])
     if (loggingLevel != null) __obj.updateDynamic("loggingLevel")(loggingLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(metricsEnabled)) __obj.updateDynamic("metricsEnabled")(metricsEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireAuthorizationForCacheControl)) __obj.updateDynamic("requireAuthorizationForCacheControl")(requireAuthorizationForCacheControl.asInstanceOf[js.Any])
-    if (throttlingBurstLimit != null) __obj.updateDynamic("throttlingBurstLimit")(throttlingBurstLimit.asInstanceOf[js.Any])
-    if (throttlingRateLimit != null) __obj.updateDynamic("throttlingRateLimit")(throttlingRateLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(metricsEnabled)) __obj.updateDynamic("metricsEnabled")(metricsEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireAuthorizationForCacheControl)) __obj.updateDynamic("requireAuthorizationForCacheControl")(requireAuthorizationForCacheControl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(throttlingBurstLimit)) __obj.updateDynamic("throttlingBurstLimit")(throttlingBurstLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(throttlingRateLimit)) __obj.updateDynamic("throttlingRateLimit")(throttlingRateLimit.get.asInstanceOf[js.Any])
     if (unauthorizedCacheControlHeaderStrategy != null) __obj.updateDynamic("unauthorizedCacheControlHeaderStrategy")(unauthorizedCacheControlHeaderStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[MethodSetting]
   }

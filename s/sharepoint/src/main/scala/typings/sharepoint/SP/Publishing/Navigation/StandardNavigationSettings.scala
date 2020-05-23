@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Publishing.Navigation.StandardNavigationSettings")
 @js.native
-class StandardNavigationSettings () extends ClientObject {
+trait StandardNavigationSettings extends ClientObject {
   def get_source(): StandardNavigationSource = js.native
   def get_termSetId(): Guid = js.native
   def get_termStoreId(): Guid = js.native

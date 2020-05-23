@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListLiteral
   extends Expression
-     with Instantiable1[/* value (repeated) */ js.Any, Expression] {
+     with Instantiable1[/* value */ js.Any, Expression] {
   def toAQL(): String = js.native
 }
 

@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.SubtractBlock")
 @js.native
-class SubtractBlock protected () extends NodeMaterialBlock {
-  /**
-    * Creates a new SubtractBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait SubtractBlock extends NodeMaterialBlock {
   /**
     * Gets the left operand input component
     */

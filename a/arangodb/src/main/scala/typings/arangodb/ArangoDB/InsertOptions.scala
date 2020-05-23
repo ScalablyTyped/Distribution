@@ -18,9 +18,9 @@ object InsertOptions {
     waitForSync: js.UndefOr[Boolean] = js.undefined
   ): InsertOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(returnNew)) __obj.updateDynamic("returnNew")(returnNew.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForSync)) __obj.updateDynamic("waitForSync")(waitForSync.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnNew)) __obj.updateDynamic("returnNew")(returnNew.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForSync)) __obj.updateDynamic("waitForSync")(waitForSync.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsertOptions]
   }
 }

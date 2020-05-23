@@ -50,19 +50,19 @@ object SubscribeOpts {
   def apply(
     subscription: String,
     topic: String,
-    ackTimeoutMs: Int | Double = null,
+    ackTimeoutMs: js.UndefOr[Double] = js.undefined,
     consumerName: String = null,
     properties: MessageProperties = null,
-    receiverQueueSize: Int | Double = null,
-    receiverQueueSizeAcrossPartitions: Int | Double = null,
+    receiverQueueSize: js.UndefOr[Double] = js.undefined,
+    receiverQueueSizeAcrossPartitions: js.UndefOr[Double] = js.undefined,
     subscriptionType: SubscriptionType = null
   ): SubscribeOpts = {
     val __obj = js.Dynamic.literal(subscription = subscription.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
-    if (ackTimeoutMs != null) __obj.updateDynamic("ackTimeoutMs")(ackTimeoutMs.asInstanceOf[js.Any])
+    if (!js.isUndefined(ackTimeoutMs)) __obj.updateDynamic("ackTimeoutMs")(ackTimeoutMs.get.asInstanceOf[js.Any])
     if (consumerName != null) __obj.updateDynamic("consumerName")(consumerName.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (receiverQueueSize != null) __obj.updateDynamic("receiverQueueSize")(receiverQueueSize.asInstanceOf[js.Any])
-    if (receiverQueueSizeAcrossPartitions != null) __obj.updateDynamic("receiverQueueSizeAcrossPartitions")(receiverQueueSizeAcrossPartitions.asInstanceOf[js.Any])
+    if (!js.isUndefined(receiverQueueSize)) __obj.updateDynamic("receiverQueueSize")(receiverQueueSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(receiverQueueSizeAcrossPartitions)) __obj.updateDynamic("receiverQueueSizeAcrossPartitions")(receiverQueueSizeAcrossPartitions.get.asInstanceOf[js.Any])
     if (subscriptionType != null) __obj.updateDynamic("subscriptionType")(subscriptionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscribeOpts]
   }

@@ -13,7 +13,7 @@ object OptionsWithDefault {
   @scala.inline
   def apply(default: Boolean, lenient: js.UndefOr[Boolean] = js.undefined): OptionsWithDefault = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
-    if (!js.isUndefined(lenient)) __obj.updateDynamic("lenient")(lenient.asInstanceOf[js.Any])
+    if (!js.isUndefined(lenient)) __obj.updateDynamic("lenient")(lenient.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsWithDefault]
   }
 }

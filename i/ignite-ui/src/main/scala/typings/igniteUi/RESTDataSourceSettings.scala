@@ -7,22 +7,19 @@ import scala.scalajs.js.annotation._
 
 trait RESTDataSourceSettings
   extends /**
-	 * Option for RESTDataSourceSettings
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   /**
-  	 * Settings related to REST compliant update routine
-  	 */
+    * Settings related to REST compliant update routine
+    */
   var restSettings: js.UndefOr[RESTDataSourceSettingsRestSettings] = js.undefined
 }
 
 object RESTDataSourceSettings {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for RESTDataSourceSettings
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     restSettings: RESTDataSourceSettingsRestSettings = null
   ): RESTDataSourceSettings = {
     val __obj = js.Dynamic.literal()

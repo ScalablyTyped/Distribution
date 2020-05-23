@@ -1,6 +1,6 @@
 package typings.d3.mod
 
-import typings.d3Fetch.PartialHTMLImageElement
+import typings.d3Fetch.anon.PartialHTMLImageElement
 import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.FieldLink")
 @js.native
-class FieldLink () extends ClientObject {
+trait FieldLink extends ClientObject {
   def deleteObject(): Unit = js.native
   def get_hidden(): Boolean = js.native
   def get_id(): Guid = js.native

@@ -162,7 +162,7 @@ object Column {
     headerTooltip: String = null,
     isFrozen: js.UndefOr[Boolean] = js.undefined,
     isTemplateColumn: js.UndefOr[Boolean] = js.undefined,
-    priority: Int | Double = null,
+    priority: js.UndefOr[Double] = js.undefined,
     showCheckbox: js.UndefOr[Boolean] = js.undefined,
     showInColumnChooser: js.UndefOr[Boolean] = js.undefined,
     template: String = null,
@@ -171,19 +171,19 @@ object Column {
     tooltip: String = null,
     validationRules: js.Any = null,
     visible: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): Column = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowCellSelection)) __obj.updateDynamic("allowCellSelection")(allowCellSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowEditing)) __obj.updateDynamic("allowEditing")(allowEditing.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFilteringBlankContent)) __obj.updateDynamic("allowFilteringBlankContent")(allowFilteringBlankContent.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFreezing)) __obj.updateDynamic("allowFreezing")(allowFreezing.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCellSelection)) __obj.updateDynamic("allowCellSelection")(allowCellSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowEditing)) __obj.updateDynamic("allowEditing")(allowEditing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFilteringBlankContent)) __obj.updateDynamic("allowFilteringBlankContent")(allowFilteringBlankContent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFreezing)) __obj.updateDynamic("allowFreezing")(allowFreezing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting.get.asInstanceOf[js.Any])
     if (angularTemplate != null) __obj.updateDynamic("angularTemplate")(angularTemplate.asInstanceOf[js.Any])
     if (clipMode != null) __obj.updateDynamic("clipMode")(clipMode.asInstanceOf[js.Any])
     if (commands != null) __obj.updateDynamic("commands")(commands.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayAsCheckbox)) __obj.updateDynamic("displayAsCheckbox")(displayAsCheckbox.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayAsCheckbox)) __obj.updateDynamic("displayAsCheckbox")(displayAsCheckbox.get.asInstanceOf[js.Any])
     if (dropdownData != null) __obj.updateDynamic("dropdownData")(dropdownData.asInstanceOf[js.Any])
     if (editParams != null) __obj.updateDynamic("editParams")(editParams.asInstanceOf[js.Any])
     if (editTemplate != null) __obj.updateDynamic("editTemplate")(editTemplate.asInstanceOf[js.Any])
@@ -196,18 +196,18 @@ object Column {
     if (headerText != null) __obj.updateDynamic("headerText")(headerText.asInstanceOf[js.Any])
     if (headerTextAlign != null) __obj.updateDynamic("headerTextAlign")(headerTextAlign.asInstanceOf[js.Any])
     if (headerTooltip != null) __obj.updateDynamic("headerTooltip")(headerTooltip.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFrozen)) __obj.updateDynamic("isFrozen")(isFrozen.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTemplateColumn)) __obj.updateDynamic("isTemplateColumn")(isTemplateColumn.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCheckbox)) __obj.updateDynamic("showCheckbox")(showCheckbox.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInColumnChooser)) __obj.updateDynamic("showInColumnChooser")(showInColumnChooser.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFrozen)) __obj.updateDynamic("isFrozen")(isFrozen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTemplateColumn)) __obj.updateDynamic("isTemplateColumn")(isTemplateColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCheckbox)) __obj.updateDynamic("showCheckbox")(showCheckbox.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInColumnChooser)) __obj.updateDynamic("showInColumnChooser")(showInColumnChooser.get.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (templateID != null) __obj.updateDynamic("templateID")(templateID.asInstanceOf[js.Any])
     if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Column]
   }
 }

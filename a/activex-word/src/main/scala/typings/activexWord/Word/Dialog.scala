@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.Dialog")
 @js.native
-class Dialog protected () extends js.Object {
+trait Dialog extends js.Object {
   val Application: typings.activexWord.Word.Application = js.native
   val CommandBarId: Double = js.native
   val CommandName: String = js.native

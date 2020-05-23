@@ -1,6 +1,6 @@
 package typings.babylonjs.basisMod
 
-import typings.babylonjs.AnonEtc1
+import typings.babylonjs.anon.Etc1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,6 +19,6 @@ class BasisTranscodeConfiguration () extends js.Object {
   /**
     * Supported compression formats used to determine the supported output format of the transcoder
     */
-  var supportedCompressionFormats: js.UndefOr[AnonEtc1] = js.native
+  var supportedCompressionFormats: js.UndefOr[Etc1] = js.native
 }
 

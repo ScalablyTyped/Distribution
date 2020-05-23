@@ -26,22 +26,22 @@ trait IArgDef extends js.Object {
 object IArgDef {
   @scala.inline
   def apply(
-    description: String = null,
-    isRef: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    numberAttr: String = null,
-    `type`: DataType = null,
-    typeAttr: String = null,
-    typeListAttr: String = null
+    description: js.UndefOr[Null | String] = js.undefined,
+    isRef: js.UndefOr[Null | Boolean] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined,
+    numberAttr: js.UndefOr[Null | String] = js.undefined,
+    `type`: js.UndefOr[Null | DataType] = js.undefined,
+    typeAttr: js.UndefOr[Null | String] = js.undefined,
+    typeListAttr: js.UndefOr[Null | String] = js.undefined
   ): IArgDef = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (!js.isUndefined(isRef)) __obj.updateDynamic("isRef")(isRef.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (numberAttr != null) __obj.updateDynamic("numberAttr")(numberAttr.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (typeAttr != null) __obj.updateDynamic("typeAttr")(typeAttr.asInstanceOf[js.Any])
-    if (typeListAttr != null) __obj.updateDynamic("typeListAttr")(typeListAttr.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberAttr)) __obj.updateDynamic("numberAttr")(numberAttr.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(typeAttr)) __obj.updateDynamic("typeAttr")(typeAttr.asInstanceOf[js.Any])
+    if (!js.isUndefined(typeListAttr)) __obj.updateDynamic("typeListAttr")(typeListAttr.asInstanceOf[js.Any])
     __obj.asInstanceOf[IArgDef]
   }
 }

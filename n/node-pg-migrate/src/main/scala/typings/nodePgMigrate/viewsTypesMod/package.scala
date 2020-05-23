@@ -16,7 +16,7 @@ package object viewsTypesMod {
     /* options */ typings.nodePgMigrate.viewsTypesMod.AlterViewColumnOptions, 
     java.lang.String | js.Array[java.lang.String]
   ]
-  type CreateView = typings.nodePgMigrate.viewsTypesMod.CreateViewFn with typings.nodePgMigrate.AnonReverseCreateViewFn
+  type CreateView = typings.nodePgMigrate.viewsTypesMod.CreateViewFn with typings.nodePgMigrate.anon.ReverseCreateViewFn
   type CreateViewFn = js.Function3[
     /* viewName */ typings.nodePgMigrate.generalTypesMod.Name, 
     /* options */ typings.nodePgMigrate.viewsTypesMod.CreateViewOptions with typings.nodePgMigrate.generalTypesMod.DropOptions, 
@@ -28,7 +28,7 @@ package object viewsTypesMod {
     /* options */ js.UndefOr[typings.nodePgMigrate.generalTypesMod.DropOptions], 
     java.lang.String | js.Array[java.lang.String]
   ]
-  type RenameView = typings.nodePgMigrate.viewsTypesMod.RenameViewFn with typings.nodePgMigrate.AnonReverseRenameViewFn
+  type RenameView = typings.nodePgMigrate.viewsTypesMod.RenameViewFn with typings.nodePgMigrate.anon.ReverseRenameViewFn
   type RenameViewFn = js.Function2[
     /* viewName */ typings.nodePgMigrate.generalTypesMod.Name, 
     /* newViewName */ typings.nodePgMigrate.generalTypesMod.Name, 

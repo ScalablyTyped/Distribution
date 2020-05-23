@@ -1,15 +1,14 @@
 package typings.webix.webix.ui
 
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.webix.webix.WebixCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.segmented")
 @js.native
-class segmented () extends baseview {
+trait segmented extends baseview {
   @JSName("$allowsClear")
   var $allowsClear: Boolean = js.native
   @JSName("$compareValue")
@@ -50,7 +49,7 @@ class segmented () extends baseview {
   @JSName("$tooltipIn")
   def $tooltipIn(node: HTMLElement): HTMLElement = js.native
   @JSName("$tooltipMove")
-  def $tooltipMove(t: HTMLElement, e: Event_, text: String): Unit = js.native
+  def $tooltipMove(t: HTMLElement, e: Event, text: String): Unit = js.native
   @JSName("$tooltipOut")
   def $tooltipOut(): Unit = js.native
   def addOption(id: String, value: js.Any): Unit = js.native

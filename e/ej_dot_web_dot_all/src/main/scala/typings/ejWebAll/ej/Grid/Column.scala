@@ -188,7 +188,7 @@ object Column {
     isFrozen: js.UndefOr[Boolean] = js.undefined,
     isIdentity: js.UndefOr[Boolean] = js.undefined,
     isPrimaryKey: js.UndefOr[Boolean] = js.undefined,
-    priority: Int | Double = null,
+    priority: js.UndefOr[Double] = js.undefined,
     showInColumnChooser: js.UndefOr[Boolean] = js.undefined,
     template: Boolean | String = null,
     textAlign: TextAlign | String = null,
@@ -196,26 +196,26 @@ object Column {
     `type`: String = null,
     validationRules: js.Any = null,
     visible: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): Column = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowEditing)) __obj.updateDynamic("allowEditing")(allowEditing.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowGrouping)) __obj.updateDynamic("allowGrouping")(allowGrouping.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowResizing)) __obj.updateDynamic("allowResizing")(allowResizing.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowEditing)) __obj.updateDynamic("allowEditing")(allowEditing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowGrouping)) __obj.updateDynamic("allowGrouping")(allowGrouping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowResizing)) __obj.updateDynamic("allowResizing")(allowResizing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting.get.asInstanceOf[js.Any])
     if (clipMode != null) __obj.updateDynamic("clipMode")(clipMode.asInstanceOf[js.Any])
     if (commands != null) __obj.updateDynamic("commands")(commands.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (customAttributes != null) __obj.updateDynamic("customAttributes")(customAttributes.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableHtmlEncode)) __obj.updateDynamic("disableHtmlEncode")(disableHtmlEncode.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayAsCheckbox)) __obj.updateDynamic("displayAsCheckbox")(displayAsCheckbox.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableHtmlEncode)) __obj.updateDynamic("disableHtmlEncode")(disableHtmlEncode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayAsCheckbox)) __obj.updateDynamic("displayAsCheckbox")(displayAsCheckbox.get.asInstanceOf[js.Any])
     if (editParams != null) __obj.updateDynamic("editParams")(editParams.asInstanceOf[js.Any])
     if (editTemplate != null) __obj.updateDynamic("editTemplate")(editTemplate.asInstanceOf[js.Any])
     if (editType != null) __obj.updateDynamic("editType")(editType.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGroupByFormat)) __obj.updateDynamic("enableGroupByFormat")(enableGroupByFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGroupByFormat)) __obj.updateDynamic("enableGroupByFormat")(enableGroupByFormat.get.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (filterBarTemplate != null) __obj.updateDynamic("filterBarTemplate")(filterBarTemplate.asInstanceOf[js.Any])
     if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
@@ -226,18 +226,18 @@ object Column {
     if (headerText != null) __obj.updateDynamic("headerText")(headerText.asInstanceOf[js.Any])
     if (headerTextAlign != null) __obj.updateDynamic("headerTextAlign")(headerTextAlign.asInstanceOf[js.Any])
     if (headerTooltip != null) __obj.updateDynamic("headerTooltip")(headerTooltip.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFrozen)) __obj.updateDynamic("isFrozen")(isFrozen.asInstanceOf[js.Any])
-    if (!js.isUndefined(isIdentity)) __obj.updateDynamic("isIdentity")(isIdentity.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPrimaryKey)) __obj.updateDynamic("isPrimaryKey")(isPrimaryKey.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInColumnChooser)) __obj.updateDynamic("showInColumnChooser")(showInColumnChooser.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFrozen)) __obj.updateDynamic("isFrozen")(isFrozen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isIdentity)) __obj.updateDynamic("isIdentity")(isIdentity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPrimaryKey)) __obj.updateDynamic("isPrimaryKey")(isPrimaryKey.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInColumnChooser)) __obj.updateDynamic("showInColumnChooser")(showInColumnChooser.get.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Column]
   }
 }

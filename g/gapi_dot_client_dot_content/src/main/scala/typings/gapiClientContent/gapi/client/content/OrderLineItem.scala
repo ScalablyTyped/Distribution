@@ -45,12 +45,12 @@ object OrderLineItem {
     id: String = null,
     price: Price = null,
     product: OrderLineItemProduct = null,
-    quantityCanceled: Int | Double = null,
-    quantityDelivered: Int | Double = null,
-    quantityOrdered: Int | Double = null,
-    quantityPending: Int | Double = null,
-    quantityReturned: Int | Double = null,
-    quantityShipped: Int | Double = null,
+    quantityCanceled: js.UndefOr[Double] = js.undefined,
+    quantityDelivered: js.UndefOr[Double] = js.undefined,
+    quantityOrdered: js.UndefOr[Double] = js.undefined,
+    quantityPending: js.UndefOr[Double] = js.undefined,
+    quantityReturned: js.UndefOr[Double] = js.undefined,
+    quantityShipped: js.UndefOr[Double] = js.undefined,
     returnInfo: OrderLineItemReturnInfo = null,
     returns: js.Array[OrderReturn] = null,
     shippingDetails: OrderLineItemShippingDetails = null,
@@ -62,12 +62,12 @@ object OrderLineItem {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
     if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
-    if (quantityCanceled != null) __obj.updateDynamic("quantityCanceled")(quantityCanceled.asInstanceOf[js.Any])
-    if (quantityDelivered != null) __obj.updateDynamic("quantityDelivered")(quantityDelivered.asInstanceOf[js.Any])
-    if (quantityOrdered != null) __obj.updateDynamic("quantityOrdered")(quantityOrdered.asInstanceOf[js.Any])
-    if (quantityPending != null) __obj.updateDynamic("quantityPending")(quantityPending.asInstanceOf[js.Any])
-    if (quantityReturned != null) __obj.updateDynamic("quantityReturned")(quantityReturned.asInstanceOf[js.Any])
-    if (quantityShipped != null) __obj.updateDynamic("quantityShipped")(quantityShipped.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantityCanceled)) __obj.updateDynamic("quantityCanceled")(quantityCanceled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantityDelivered)) __obj.updateDynamic("quantityDelivered")(quantityDelivered.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantityOrdered)) __obj.updateDynamic("quantityOrdered")(quantityOrdered.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantityPending)) __obj.updateDynamic("quantityPending")(quantityPending.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantityReturned)) __obj.updateDynamic("quantityReturned")(quantityReturned.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantityShipped)) __obj.updateDynamic("quantityShipped")(quantityShipped.get.asInstanceOf[js.Any])
     if (returnInfo != null) __obj.updateDynamic("returnInfo")(returnInfo.asInstanceOf[js.Any])
     if (returns != null) __obj.updateDynamic("returns")(returns.asInstanceOf[js.Any])
     if (shippingDetails != null) __obj.updateDynamic("shippingDetails")(shippingDetails.asInstanceOf[js.Any])

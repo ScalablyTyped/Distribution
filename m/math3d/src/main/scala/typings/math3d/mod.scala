@@ -1,6 +1,9 @@
 package typings.math3d
 
 import org.scalablytyped.runtime.TopLevel
+import typings.math3d.anon.Angle
+import typings.math3d.anon.Columns
+import typings.math3d.anon.X
 import typings.math3d.mod.Transform.Space
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,7 +33,7 @@ object mod extends js.Object {
     var m43: Double = js.native
     var m44: Double = js.native
     var rows: js.Array[js.Array[Double]] = js.native
-    var size: AnonColumns = js.native
+    var size: Columns = js.native
     var values: js.Array[Double] = js.native
     def add(matrix4x4: Matrix4x4): Matrix4x4 = js.native
     def determinant(): Double = js.native
@@ -49,8 +52,8 @@ object mod extends js.Object {
     def this(x: Double, y: Double) = this()
     def this(x: Double, y: Double, z: Double) = this()
     def this(x: Double, y: Double, z: Double, w: Double) = this()
-    var angleAxis: AnonAngle = js.native
-    var eulerAngles: AnonX = js.native
+    var angleAxis: Angle = js.native
+    var eulerAngles: X = js.native
     var w: Double = js.native
     var x: Double = js.native
     var y: Double = js.native

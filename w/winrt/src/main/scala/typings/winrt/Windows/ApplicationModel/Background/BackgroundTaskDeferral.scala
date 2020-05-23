@@ -4,10 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.Background.BackgroundTaskDeferral")
-@js.native
-class BackgroundTaskDeferral () extends IBackgroundTaskDeferral {
-  /* CompleteClass */
-  override def complete(): Unit = js.native
+trait BackgroundTaskDeferral extends IBackgroundTaskDeferral
+
+object BackgroundTaskDeferral {
+  @scala.inline
+  def apply(complete: () => Unit): BackgroundTaskDeferral = {
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
+    __obj.asInstanceOf[BackgroundTaskDeferral]
+  }
 }
 

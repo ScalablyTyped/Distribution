@@ -1,16 +1,16 @@
 package typings.gapiClientBlogger.gapi.client.blogger
 
-import typings.gapiClientBlogger.AnonDisplayName
-import typings.gapiClientBlogger.AnonId
+import typings.gapiClientBlogger.anon.DisplayName
+import typings.gapiClientBlogger.anon.Id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Page extends js.Object {
   /** The author of this Page. */
-  var author: js.UndefOr[AnonDisplayName] = js.undefined
+  var author: js.UndefOr[DisplayName] = js.undefined
   /** Data about the blog containing this Page. */
-  var blog: js.UndefOr[AnonId] = js.undefined
+  var blog: js.UndefOr[Id] = js.undefined
   /** The body content of this Page, in HTML. */
   var content: js.UndefOr[String] = js.undefined
   /** Etag of the resource. */
@@ -36,8 +36,8 @@ trait Page extends js.Object {
 object Page {
   @scala.inline
   def apply(
-    author: AnonDisplayName = null,
-    blog: AnonId = null,
+    author: DisplayName = null,
+    blog: Id = null,
     content: String = null,
     etag: String = null,
     id: String = null,

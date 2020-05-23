@@ -1,13 +1,13 @@
 package typings.antd.tooltipMod
 
-import typings.antd.AnonAdjustY
+import typings.antd.anon.AdjustY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TooltipAlignConfig extends js.Object {
   var offset: js.UndefOr[js.Tuple2[Double | String, Double | String]] = js.undefined
-  var overflow: js.UndefOr[AnonAdjustY] = js.undefined
+  var overflow: js.UndefOr[AdjustY] = js.undefined
   var points: js.UndefOr[js.Tuple2[String, String]] = js.undefined
   var targetOffset: js.UndefOr[js.Tuple2[Double | String, Double | String]] = js.undefined
   var useCssBottom: js.UndefOr[Boolean] = js.undefined
@@ -19,7 +19,7 @@ object TooltipAlignConfig {
   @scala.inline
   def apply(
     offset: js.Tuple2[Double | String, Double | String] = null,
-    overflow: AnonAdjustY = null,
+    overflow: AdjustY = null,
     points: js.Tuple2[String, String] = null,
     targetOffset: js.Tuple2[Double | String, Double | String] = null,
     useCssBottom: js.UndefOr[Boolean] = js.undefined,
@@ -31,9 +31,9 @@ object TooltipAlignConfig {
     if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
     if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
     if (targetOffset != null) __obj.updateDynamic("targetOffset")(targetOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCssBottom)) __obj.updateDynamic("useCssBottom")(useCssBottom.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCssRight)) __obj.updateDynamic("useCssRight")(useCssRight.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCssTransform)) __obj.updateDynamic("useCssTransform")(useCssTransform.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCssBottom)) __obj.updateDynamic("useCssBottom")(useCssBottom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCssRight)) __obj.updateDynamic("useCssRight")(useCssRight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCssTransform)) __obj.updateDynamic("useCssTransform")(useCssTransform.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipAlignConfig]
   }
 }

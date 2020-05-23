@@ -8,7 +8,7 @@ package object layoutMod {
   /* Rewritten from type alias, can be one of: 
     - scala.Double
     - typings.vegaTypings.signalMod.SignalRef
-    - typings.vegaTypings.AnonColumnFooter
+    - typings.vegaTypings.anon.ColumnFooter
   */
   type LayoutOffset = typings.vegaTypings.layoutMod._LayoutOffset | scala.Double
 }

@@ -33,7 +33,7 @@ object LikeOptions {
     pageUrl: String = null,
     `type`: button | mini | vertical | full = null,
     verb: NumericBoolean = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): LikeOptions = {
     val __obj = js.Dynamic.literal()
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
@@ -42,7 +42,7 @@ object LikeOptions {
     if (pageUrl != null) __obj.updateDynamic("pageUrl")(pageUrl.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (verb != null) __obj.updateDynamic("verb")(verb.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LikeOptions]
   }
 }

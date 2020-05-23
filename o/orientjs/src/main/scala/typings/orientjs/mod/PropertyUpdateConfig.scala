@@ -1,6 +1,6 @@
 package typings.orientjs.mod
 
-import typings.orientjs.AnonFields
+import typings.orientjs.anon.Fields
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait PropertyUpdateConfig extends js.Object {
   var collate: js.UndefOr[String] = js.undefined
-  var custom: js.UndefOr[AnonFields] = js.undefined
+  var custom: js.UndefOr[Fields] = js.undefined
   var default: js.UndefOr[js.Any] = js.undefined
   var linkedClass: js.UndefOr[String] = js.undefined
   var linkedType: js.UndefOr[String] = js.undefined
@@ -28,13 +28,13 @@ object PropertyUpdateConfig {
     name: String,
     `type`: PropertyType,
     collate: String = null,
-    custom: AnonFields = null,
+    custom: Fields = null,
     default: js.Any = null,
     linkedClass: String = null,
     linkedType: String = null,
     mandatory: js.UndefOr[Boolean] = js.undefined,
-    max: Int | Double = null,
-    min: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
     notNull: js.UndefOr[Boolean] = js.undefined,
     readonly: js.UndefOr[Boolean] = js.undefined,
     regexp: RegExp | String = null
@@ -46,11 +46,11 @@ object PropertyUpdateConfig {
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (linkedClass != null) __obj.updateDynamic("linkedClass")(linkedClass.asInstanceOf[js.Any])
     if (linkedType != null) __obj.updateDynamic("linkedType")(linkedType.asInstanceOf[js.Any])
-    if (!js.isUndefined(mandatory)) __obj.updateDynamic("mandatory")(mandatory.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (!js.isUndefined(notNull)) __obj.updateDynamic("notNull")(notNull.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
+    if (!js.isUndefined(mandatory)) __obj.updateDynamic("mandatory")(mandatory.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(notNull)) __obj.updateDynamic("notNull")(notNull.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.get.asInstanceOf[js.Any])
     if (regexp != null) __obj.updateDynamic("regexp")(regexp.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyUpdateConfig]
   }

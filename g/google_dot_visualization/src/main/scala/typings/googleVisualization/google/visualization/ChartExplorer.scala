@@ -19,17 +19,17 @@ object ChartExplorer {
     actions: js.Array[String] = null,
     axis: String = null,
     keepInBounds: js.UndefOr[Boolean] = js.undefined,
-    maxZoomIn: Int | Double = null,
-    maxZoomOut: Int | Double = null,
-    zoomDelta: Int | Double = null
+    maxZoomIn: js.UndefOr[Double] = js.undefined,
+    maxZoomOut: js.UndefOr[Double] = js.undefined,
+    zoomDelta: js.UndefOr[Double] = js.undefined
   ): ChartExplorer = {
     val __obj = js.Dynamic.literal()
     if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
     if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepInBounds)) __obj.updateDynamic("keepInBounds")(keepInBounds.asInstanceOf[js.Any])
-    if (maxZoomIn != null) __obj.updateDynamic("maxZoomIn")(maxZoomIn.asInstanceOf[js.Any])
-    if (maxZoomOut != null) __obj.updateDynamic("maxZoomOut")(maxZoomOut.asInstanceOf[js.Any])
-    if (zoomDelta != null) __obj.updateDynamic("zoomDelta")(zoomDelta.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepInBounds)) __obj.updateDynamic("keepInBounds")(keepInBounds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxZoomIn)) __obj.updateDynamic("maxZoomIn")(maxZoomIn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxZoomOut)) __obj.updateDynamic("maxZoomOut")(maxZoomOut.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomDelta)) __obj.updateDynamic("zoomDelta")(zoomDelta.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartExplorer]
   }
 }

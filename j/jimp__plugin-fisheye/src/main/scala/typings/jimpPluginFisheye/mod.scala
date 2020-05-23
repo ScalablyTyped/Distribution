@@ -1,6 +1,7 @@
 package typings.jimpPluginFisheye
 
 import typings.jimpCore.etcMod.ImageCallback
+import typings.jimpPluginFisheye.anon.R
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,8 +13,8 @@ object mod extends js.Object {
   trait Fisheye extends js.Object {
     def fishEye(): this.type = js.native
     def fishEye(cb: ImageCallback[this.type]): this.type = js.native
-    def fishEye(opts: AnonR): this.type = js.native
-    def fishEye(opts: AnonR, cb: ImageCallback[this.type]): this.type = js.native
+    def fishEye(opts: R): this.type = js.native
+    def fishEye(opts: R, cb: ImageCallback[this.type]): this.type = js.native
   }
   
   def default(): Fisheye = js.native

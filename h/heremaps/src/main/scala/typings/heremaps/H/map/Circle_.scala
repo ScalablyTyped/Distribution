@@ -2,7 +2,6 @@ package typings.heremaps.H.map
 
 import typings.heremaps.H.geo.IPoint
 import typings.heremaps.H.geo.Point
-import typings.heremaps.H.map.Circle.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,17 +9,8 @@ import scala.scalajs.js.annotation._
 /**
   * A Polygon with a circular shape.
   */
-@JSGlobal("H.map.Circle")
 @js.native
-class Circle_ protected () extends Polygon {
-  /**
-    * Constructor
-    * @param center {H.geo.IPoint} - The geographical coordinates of the circle's center
-    * @param radius {number} - The radius of the circle in meters
-    * @param opt_options {H.map.Circle.Options=} - An object that specifies circle options and their initial values (among these, precision has a significant impact on the shape of the circle
-    */
-  def this(center: IPoint, radius: Double) = this()
-  def this(center: IPoint, radius: Double, opt_options: Options) = this()
+trait Circle_ extends Polygon {
   /**
     * To get the center point of this circle You must not modify the returned Point instance without calling setCenter immediately afterwards.
     * @returns {H.geo.Point}

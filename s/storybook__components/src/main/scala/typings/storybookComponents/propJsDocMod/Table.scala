@@ -5,7 +5,7 @@ import typings.emotionStyledBase.mod.StyledComponent
 import typings.react.mod.DetailedHTMLProps
 import typings.react.mod.TableHTMLAttributes
 import typings.std.HTMLTableElement
-import typings.storybookComponents.PickDetailedHTMLPropsTabl
+import typings.storybookComponents.anon.PickDetailedHTMLPropsTabl
 import typings.storybookTheming.typesMod.Theme
 import scala.scalajs.js
 import scala.scalajs.js.`|`

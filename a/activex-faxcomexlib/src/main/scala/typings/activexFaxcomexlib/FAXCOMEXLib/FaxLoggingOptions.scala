@@ -5,14 +5,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** FaxLoggingOptions Class */
-@JSGlobal("FAXCOMEXLib.FaxLoggingOptions")
-@js.native
-class FaxLoggingOptions protected () extends js.Object {
+trait FaxLoggingOptions extends js.Object {
   /** Activity logging configuration object */
-  val ActivityLogging: FaxActivityLogging = js.native
+  val ActivityLogging: FaxActivityLogging
   /** Event logging configuration object */
-  val EventLogging: FaxEventLogging = js.native
+  val EventLogging: FaxEventLogging
   @JSName("FAXCOMEXLib.FaxLoggingOptions_typekey")
-  var FAXCOMEXLibDotFaxLoggingOptions_typekey: FaxLoggingOptions = js.native
+  var FAXCOMEXLibDotFaxLoggingOptions_typekey: FaxLoggingOptions
+}
+
+object FaxLoggingOptions {
+  @scala.inline
+  def apply(
+    ActivityLogging: FaxActivityLogging,
+    EventLogging: FaxEventLogging,
+    FAXCOMEXLibDotFaxLoggingOptions_typekey: FaxLoggingOptions
+  ): FaxLoggingOptions = {
+    val __obj = js.Dynamic.literal(ActivityLogging = ActivityLogging.asInstanceOf[js.Any], EventLogging = EventLogging.asInstanceOf[js.Any])
+    __obj.updateDynamic("FAXCOMEXLib.FaxLoggingOptions_typekey")(FAXCOMEXLibDotFaxLoggingOptions_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FaxLoggingOptions]
+  }
 }
 

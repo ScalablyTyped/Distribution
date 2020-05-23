@@ -22,13 +22,13 @@ object Options {
   @scala.inline
   def apply(
     onSpaceCreated: /* space */ Space => Unit = null,
-    pixelRatio: Int | Double = null,
-    tileCacheSize: Int | Double = null
+    pixelRatio: js.UndefOr[Double] = js.undefined,
+    tileCacheSize: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (onSpaceCreated != null) __obj.updateDynamic("onSpaceCreated")(js.Any.fromFunction1(onSpaceCreated))
-    if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
-    if (tileCacheSize != null) __obj.updateDynamic("tileCacheSize")(tileCacheSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pixelRatio)) __obj.updateDynamic("pixelRatio")(pixelRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tileCacheSize)) __obj.updateDynamic("tileCacheSize")(tileCacheSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

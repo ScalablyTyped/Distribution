@@ -1,7 +1,7 @@
 package typings.storybookTheming.typesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.storybookTheming.AnonBorder
+import typings.storybookTheming.anon.Border
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait Theme
   var code: StringDictionary[String | js.Object]
   var color: Color
   var easing: Easing
-  var input: AnonBorder
+  var input: Border
   var layoutMargin: Double
   var typography: Typography
 }
@@ -38,10 +38,10 @@ object Theme {
     code: StringDictionary[String | js.Object],
     color: Color,
     easing: Easing,
-    input: AnonBorder,
+    input: Border,
     layoutMargin: Double,
     typography: Typography,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null
   ): Theme = {
     val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], appBorderColor = appBorderColor.asInstanceOf[js.Any], appBorderRadius = appBorderRadius.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], barBg = barBg.asInstanceOf[js.Any], barSelectedColor = barSelectedColor.asInstanceOf[js.Any], barTextColor = barTextColor.asInstanceOf[js.Any], brand = brand.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], easing = easing.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], layoutMargin = layoutMargin.asInstanceOf[js.Any], typography = typography.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

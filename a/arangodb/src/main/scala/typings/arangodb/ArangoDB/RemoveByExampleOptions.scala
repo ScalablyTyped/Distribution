@@ -11,10 +11,10 @@ trait RemoveByExampleOptions extends js.Object {
 
 object RemoveByExampleOptions {
   @scala.inline
-  def apply(limit: Int | Double = null, waitForSync: js.UndefOr[Boolean] = js.undefined): RemoveByExampleOptions = {
+  def apply(limit: js.UndefOr[Double] = js.undefined, waitForSync: js.UndefOr[Boolean] = js.undefined): RemoveByExampleOptions = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForSync)) __obj.updateDynamic("waitForSync")(waitForSync.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForSync)) __obj.updateDynamic("waitForSync")(waitForSync.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveByExampleOptions]
   }
 }

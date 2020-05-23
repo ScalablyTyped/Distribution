@@ -19,7 +19,7 @@ object GetBLEDeviceServicesSuccessData {
   @scala.inline
   def apply(isPrimary: js.UndefOr[Boolean] = js.undefined, uuid: String = null): GetBLEDeviceServicesSuccessData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isPrimary)) __obj.updateDynamic("isPrimary")(isPrimary.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPrimary)) __obj.updateDynamic("isPrimary")(isPrimary.get.asInstanceOf[js.Any])
     if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBLEDeviceServicesSuccessData]
   }

@@ -14,8 +14,7 @@ trait IDisplayChangedEventArgs extends js.Object {
 object IDisplayChangedEventArgs {
   @scala.inline
   def apply(vrSupported: Boolean, vrDisplay: Nullable[_] = null): IDisplayChangedEventArgs = {
-    val __obj = js.Dynamic.literal(vrSupported = vrSupported.asInstanceOf[js.Any])
-    if (vrDisplay != null) __obj.updateDynamic("vrDisplay")(vrDisplay.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(vrSupported = vrSupported.asInstanceOf[js.Any], vrDisplay = vrDisplay.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDisplayChangedEventArgs]
   }
 }

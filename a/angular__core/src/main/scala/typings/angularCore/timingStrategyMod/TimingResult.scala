@@ -13,9 +13,8 @@ trait TimingResult extends js.Object {
 object TimingResult {
   @scala.inline
   def apply(message: String = null, timing: QueryTiming = null): TimingResult = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(timing = timing.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (timing != null) __obj.updateDynamic("timing")(timing.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimingResult]
   }
 }

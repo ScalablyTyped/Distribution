@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.WiFiDirect
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object WiFiDirectPairingProcedure extends js.Object {
   /** P2P Invitation. The accepting device chooses the configuration method. */
   @js.native
   sealed trait invitation extends WiFiDirectPairingProcedure
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WiFiDirectPairingProcedure with Double] = js.native
-  /* 0 */ @js.native
-  object groupOwnerNegotiation extends TopLevel[groupOwnerNegotiation with Double]
-  
-  /* 1 */ @js.native
-  object invitation extends TopLevel[invitation with Double]
   
 }
 

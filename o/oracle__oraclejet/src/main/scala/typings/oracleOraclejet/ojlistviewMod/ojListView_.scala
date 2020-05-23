@@ -1,13 +1,13 @@
 package typings.oracleOraclejet.ojlistviewMod
 
-import typings.oracleOraclejet.AnonAccessibleNavigateSkipItems
-import typings.oracleOraclejet.AnonDragDrop
-import typings.oracleOraclejet.AnonFetchSize
-import typings.oracleOraclejet.AnonFocusable
-import typings.oracleOraclejet.AnonKey
-import typings.oracleOraclejet.AnonKeyK
-import typings.oracleOraclejet.AnonOffsetX
-import typings.oracleOraclejet.AnonParent
+import typings.oracleOraclejet.anon.AccessibleNavigateSkipItems
+import typings.oracleOraclejet.anon.DragDrop
+import typings.oracleOraclejet.anon.FetchSize
+import typings.oracleOraclejet.anon.Focusable
+import typings.oracleOraclejet.anon.Key
+import typings.oracleOraclejet.anon.KeyK
+import typings.oracleOraclejet.anon.OffsetX
+import typings.oracleOraclejet.anon.Parent
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.baseComponent
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
@@ -73,21 +73,21 @@ trait ojListView_[K, D] extends baseComponent[ojListViewSettableProperties[K, D]
   var as: String = js.native
   var currentItem: K = js.native
   var data: DataProvider[K, D] = js.native
-  var dnd: AnonDragDrop = js.native
+  var dnd: DragDrop = js.native
   var drillMode: collapsible | none = js.native
   var expanded: KeySet[K] = js.native
-  val firstSelectedItem: AnonKey[K, D] = js.native
+  val firstSelectedItem: Key[K, D] = js.native
   var groupHeaderPosition: static | sticky = js.native
-  var item: AnonFocusable[K, D] = js.native
+  var item: Focusable[K, D] = js.native
   var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var onCurrentItemChanged: (js.Function1[/* event */ JetElementCustomEvent[K], _]) | Null = js.native
   var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[DataProvider[K, D]], _]) | Null = js.native
-  var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonDragDrop], _]) | Null = js.native
+  var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[DragDrop], _]) | Null = js.native
   var onDrillModeChanged: (js.Function1[/* event */ JetElementCustomEvent[collapsible | none], _]) | Null = js.native
   var onExpandedChanged: (js.Function1[/* event */ JetElementCustomEvent[KeySet[K]], _]) | Null = js.native
-  var onFirstSelectedItemChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonKey[K, D]], _]) | Null = js.native
+  var onFirstSelectedItemChanged: (js.Function1[/* event */ JetElementCustomEvent[Key[K, D]], _]) | Null = js.native
   var onGroupHeaderPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[static | sticky], _]) | Null = js.native
-  var onItemChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonFocusable[K, D]], _]) | Null = js.native
+  var onItemChanged: (js.Function1[/* event */ JetElementCustomEvent[Focusable[K, D]], _]) | Null = js.native
   var onOjAnimateEnd: (js.Function1[/* event */ ojAnimateEnd, _]) | Null = js.native
   var onOjAnimateStart: (js.Function1[/* event */ ojAnimateStart, _]) | Null = js.native
   var onOjBeforeCollapse: (js.Function1[/* event */ ojBeforeCollapse[K], _]) | Null = js.native
@@ -100,19 +100,19 @@ trait ojListView_[K, D] extends baseComponent[ojListViewSettableProperties[K, D]
   var onOjPaste: (js.Function1[/* event */ ojPaste, _]) | Null = js.native
   var onOjReorder: (js.Function1[/* event */ ojReorder, _]) | Null = js.native
   var onScrollPolicyChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | loadMoreOnScroll], _]) | Null = js.native
-  var onScrollPolicyOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonFetchSize], _]) | Null = js.native
-  var onScrollPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonOffsetX[K]], _]) | Null = js.native
+  var onScrollPolicyOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[FetchSize], _]) | Null = js.native
+  var onScrollPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[OffsetX[K]], _]) | Null = js.native
   var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K]], _]) | Null = js.native
   var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | single | multiple], _]) | Null = js.native
   var onSelectionRequiredChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
   var scrollPolicy: auto | loadMoreOnScroll = js.native
-  var scrollPolicyOptions: AnonFetchSize = js.native
-  var scrollPosition: AnonOffsetX[K] = js.native
+  var scrollPolicyOptions: FetchSize = js.native
+  var scrollPosition: OffsetX[K] = js.native
   var selection: js.Array[K] = js.native
   var selectionMode: none | single | multiple = js.native
   var selectionRequired: Boolean = js.native
   @JSName("translations")
-  var translations_ojListView_ : AnonAccessibleNavigateSkipItems = js.native
+  var translations_ojListView_ : AccessibleNavigateSkipItems = js.native
   def addEventListener(
     `type`: drillModeChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[collapsible | none], _]
@@ -185,12 +185,12 @@ trait ojListView_[K, D] extends baseComponent[ojListViewSettableProperties[K, D]
   @JSName("addEventListener")
   def addEventListener_dndChanged(
     `type`: dndChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonDragDrop], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[DragDrop], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dndChanged(
     `type`: dndChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonDragDrop], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[DragDrop], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -207,23 +207,23 @@ trait ojListView_[K, D] extends baseComponent[ojListViewSettableProperties[K, D]
   @JSName("addEventListener")
   def addEventListener_firstSelectedItemChanged(
     `type`: firstSelectedItemChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonKey[K, D]], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Key[K, D]], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_firstSelectedItemChanged(
     `type`: firstSelectedItemChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonKey[K, D]], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Key[K, D]], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_itemChanged(
     `type`: itemChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonFocusable[K, D]], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Focusable[K, D]], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_itemChanged(
     `type`: itemChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonFocusable[K, D]], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Focusable[K, D]], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -350,23 +350,23 @@ trait ojListView_[K, D] extends baseComponent[ojListViewSettableProperties[K, D]
   @JSName("addEventListener")
   def addEventListener_scrollPolicyOptionsChanged(
     `type`: scrollPolicyOptionsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonFetchSize], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[FetchSize], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scrollPolicyOptionsChanged(
     `type`: scrollPolicyOptionsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonFetchSize], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[FetchSize], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scrollPositionChanged(
     `type`: scrollPositionChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonOffsetX[K]], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[OffsetX[K]], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scrollPositionChanged(
     `type`: scrollPositionChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonOffsetX[K]], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[OffsetX[K]], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -392,7 +392,7 @@ trait ojListView_[K, D] extends baseComponent[ojListViewSettableProperties[K, D]
     useCapture: Boolean
   ): Unit = js.native
   def getContextByNode(node: Element): ContextByNode[K] | Null = js.native
-  def getDataForVisibleItem(context: AnonParent[K]): D = js.native
+  def getDataForVisibleItem(context: Parent[K]): D = js.native
   @JSName("getProperty")
   def getProperty_as(property: as): String = js.native
   @JSName("getProperty")
@@ -400,30 +400,30 @@ trait ojListView_[K, D] extends baseComponent[ojListViewSettableProperties[K, D]
   @JSName("getProperty")
   def getProperty_data(property: data): DataProvider[K, D] = js.native
   @JSName("getProperty")
-  def getProperty_dnd(property: dnd): AnonDragDrop = js.native
+  def getProperty_dnd(property: dnd): DragDrop = js.native
   @JSName("getProperty")
   def getProperty_drillMode(property: drillMode): collapsible | none = js.native
   @JSName("getProperty")
   def getProperty_expanded(property: expanded): KeySet[K] = js.native
   @JSName("getProperty")
-  def getProperty_firstSelectedItem(property: typings.oracleOraclejet.oracleOraclejetStrings.firstSelectedItem): AnonKey[K, D] = js.native
+  def getProperty_firstSelectedItem(property: typings.oracleOraclejet.oracleOraclejetStrings.firstSelectedItem): Key[K, D] = js.native
   @JSName("getProperty")
   def getProperty_groupHeaderPosition(property: groupHeaderPosition): static | sticky = js.native
   @JSName("getProperty")
-  def getProperty_item(property: item): AnonFocusable[K, D] = js.native
+  def getProperty_item(property: item): Focusable[K, D] = js.native
   @JSName("getProperty")
   def getProperty_scrollPolicy(property: scrollPolicy): auto | loadMoreOnScroll = js.native
   @JSName("getProperty")
-  def getProperty_scrollPolicyOptions(property: scrollPolicyOptions): AnonFetchSize = js.native
+  def getProperty_scrollPolicyOptions(property: scrollPolicyOptions): FetchSize = js.native
   @JSName("getProperty")
-  def getProperty_scrollPosition(property: scrollPosition): AnonOffsetX[K] = js.native
+  def getProperty_scrollPosition(property: scrollPosition): OffsetX[K] = js.native
   @JSName("getProperty")
   def getProperty_selection(property: selection): js.Array[K] = js.native
   @JSName("getProperty")
   def getProperty_selectionMode(property: selectionMode): none | single | multiple = js.native
   @JSName("getProperty")
   def getProperty_selectionRequired(property: selectionRequired): Boolean = js.native
-  def scrollToItem(item: AnonKeyK[K]): Unit = js.native
+  def scrollToItem(item: KeyK[K]): Unit = js.native
   def setProperties(properties: ojListViewSettablePropertiesLenient[K, D]): Unit = js.native
   def setProperty(property: drillMode, value: collapsible): Unit = js.native
   def setProperty(property: drillMode, value: none): Unit = js.native
@@ -441,22 +441,22 @@ trait ojListView_[K, D] extends baseComponent[ojListViewSettableProperties[K, D]
   @JSName("setProperty")
   def setProperty_data(property: data, value: DataProvider[K, D]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_dnd(property: dnd, value: AnonDragDrop): Unit = js.native
+  def setProperty_dnd(property: dnd, value: DragDrop): Unit = js.native
   @JSName("setProperty")
   def setProperty_expanded(property: expanded, value: KeySet[K]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_firstSelectedItem(property: typings.oracleOraclejet.oracleOraclejetStrings.firstSelectedItem, value: AnonKey[K, D]): Unit = js.native
+  def setProperty_firstSelectedItem(property: typings.oracleOraclejet.oracleOraclejetStrings.firstSelectedItem, value: Key[K, D]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_item(property: item, value: AnonFocusable[K, D]): Unit = js.native
+  def setProperty_item(property: item, value: Focusable[K, D]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_scrollPolicyOptions(property: scrollPolicyOptions, value: AnonFetchSize): Unit = js.native
+  def setProperty_scrollPolicyOptions(property: scrollPolicyOptions, value: FetchSize): Unit = js.native
   @JSName("setProperty")
-  def setProperty_scrollPosition(property: scrollPosition, value: AnonOffsetX[K]): Unit = js.native
+  def setProperty_scrollPosition(property: scrollPosition, value: OffsetX[K]): Unit = js.native
   @JSName("setProperty")
   def setProperty_selection(property: selection, value: js.Array[K]): Unit = js.native
   @JSName("setProperty")
   def setProperty_selectionRequired(property: selectionRequired, value: Boolean): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonAccessibleNavigateSkipItems): Unit = js.native
+  def setProperty_translations(property: translations, value: AccessibleNavigateSkipItems): Unit = js.native
 }
 

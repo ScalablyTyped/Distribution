@@ -39,9 +39,9 @@ object CommentOptions {
     if (blockCommentEnd != null) __obj.updateDynamic("blockCommentEnd")(blockCommentEnd.asInstanceOf[js.Any])
     if (blockCommentLead != null) __obj.updateDynamic("blockCommentLead")(blockCommentLead.asInstanceOf[js.Any])
     if (blockCommentStart != null) __obj.updateDynamic("blockCommentStart")(blockCommentStart.asInstanceOf[js.Any])
-    if (!js.isUndefined(commentBlankLines)) __obj.updateDynamic("commentBlankLines")(commentBlankLines.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullLines)) __obj.updateDynamic("fullLines")(fullLines.asInstanceOf[js.Any])
-    if (!js.isUndefined(indent)) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
+    if (!js.isUndefined(commentBlankLines)) __obj.updateDynamic("commentBlankLines")(commentBlankLines.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullLines)) __obj.updateDynamic("fullLines")(fullLines.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(indent)) __obj.updateDynamic("indent")(indent.get.asInstanceOf[js.Any])
     if (lineComment != null) __obj.updateDynamic("lineComment")(lineComment.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentOptions]

@@ -31,18 +31,18 @@ trait GenerateFrameNumbers extends js.Object {
 object GenerateFrameNumbers {
   @scala.inline
   def apply(
-    end: Int | Double = null,
+    end: js.UndefOr[integer] = js.undefined,
     first: Boolean | integer = null,
     frames: Boolean | js.Array[integer] = null,
     outputArray: js.Array[AnimationFrame] = null,
-    start: Int | Double = null
+    start: js.UndefOr[integer] = js.undefined
   ): GenerateFrameNumbers = {
     val __obj = js.Dynamic.literal()
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
     if (first != null) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
     if (frames != null) __obj.updateDynamic("frames")(frames.asInstanceOf[js.Any])
     if (outputArray != null) __obj.updateDynamic("outputArray")(outputArray.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateFrameNumbers]
   }
 }

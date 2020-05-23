@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.DataPivotHierarchyData
 import typings.officeJsPreview.Excel.Interfaces.DataPivotHierarchyLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.DataPivotHierarchyUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.Automatic
 import typings.officeJsPreview.officeJsPreviewStrings.Average
 import typings.officeJsPreview.officeJsPreviewStrings.Count
@@ -29,9 +29,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.8]
   */
-@JSGlobal("Excel.DataPivotHierarchy")
 @js.native
-class DataPivotHierarchy () extends ClientObject {
+trait DataPivotHierarchy extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_DataPivotHierarchy: RequestContext = js.native
@@ -72,14 +71,14 @@ class DataPivotHierarchy () extends ClientObject {
   var position: Double = js.native
   /**
     *
-    * Determines whether the data should be shown as a specific summary calculation or not.
+    * Specifies if the data should be shown as a specific summary calculation.
     *
     * [Api set: ExcelApi 1.8]
     */
   var showAs: ShowAsRule = js.native
   /**
     *
-    * Determines whether to show all items of the DataPivotHierarchy.
+    * Specifies if all items of the DataPivotHierarchy are shown.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -91,7 +90,7 @@ class DataPivotHierarchy () extends ClientObject {
     */
   def load(): DataPivotHierarchy = js.native
   def load(options: DataPivotHierarchyLoadOptions): DataPivotHierarchy = js.native
-  def load(propertyNamesAndPaths: AnonExpand): DataPivotHierarchy = js.native
+  def load(propertyNamesAndPaths: Expand): DataPivotHierarchy = js.native
   def load(propertyNames: String): DataPivotHierarchy = js.native
   def load(propertyNames: js.Array[String]): DataPivotHierarchy = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

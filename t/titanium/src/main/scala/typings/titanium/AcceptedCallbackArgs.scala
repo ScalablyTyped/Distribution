@@ -11,12 +11,12 @@ import scala.scalajs.js.annotation._
   */
 trait AcceptedCallbackArgs extends js.Object {
   /**
-  	 * Socket which represents the inbound connection.
-  	 */
+    * Socket which represents the inbound connection.
+    */
   var inbound: js.UndefOr[TCP] = js.undefined
   /**
-  	 * Socket which received the connection.
-  	 */
+    * Socket which received the connection.
+    */
   var socket: js.UndefOr[TCP] = js.undefined
 }
 

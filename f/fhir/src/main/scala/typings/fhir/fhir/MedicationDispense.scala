@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Dispensing a medication to a named patient
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait MedicationDispense extends DomainResource {
   /**
     * Contains extended information for property 'notDone'.
@@ -205,7 +205,7 @@ object MedicationDispense {
     if (medicationReference != null) __obj.updateDynamic("medicationReference")(medicationReference.asInstanceOf[js.Any])
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (!js.isUndefined(notDone)) __obj.updateDynamic("notDone")(notDone.asInstanceOf[js.Any])
+    if (!js.isUndefined(notDone)) __obj.updateDynamic("notDone")(notDone.get.asInstanceOf[js.Any])
     if (notDoneReasonCodeableConcept != null) __obj.updateDynamic("notDoneReasonCodeableConcept")(notDoneReasonCodeableConcept.asInstanceOf[js.Any])
     if (notDoneReasonReference != null) __obj.updateDynamic("notDoneReasonReference")(notDoneReasonReference.asInstanceOf[js.Any])
     if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])

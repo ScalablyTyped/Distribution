@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation._
 
 trait ZeptoEffectsSpeeds extends js.Object {
   /**
-  	* Default = 400ms.
-  	**/
+    * Default = 400ms.
+    **/
   var _default: Double
   /**
-  	* Default = 200ms.
-  	**/
+    * Default = 200ms.
+    **/
   var fast: Double
   /**
-  	* Default = 600ms.
-  	**/
+    * Default = 600ms.
+    **/
   var slow: Double
 }
 

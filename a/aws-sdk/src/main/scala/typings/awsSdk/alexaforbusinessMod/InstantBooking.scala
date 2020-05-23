@@ -18,10 +18,10 @@ trait InstantBooking extends js.Object {
 
 object InstantBooking {
   @scala.inline
-  def apply(DurationInMinutes: Int | Double = null, Enabled: js.UndefOr[scala.Boolean] = js.undefined): InstantBooking = {
+  def apply(DurationInMinutes: js.UndefOr[Minutes] = js.undefined, Enabled: js.UndefOr[Boolean] = js.undefined): InstantBooking = {
     val __obj = js.Dynamic.literal()
-    if (DurationInMinutes != null) __obj.updateDynamic("DurationInMinutes")(DurationInMinutes.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(DurationInMinutes)) __obj.updateDynamic("DurationInMinutes")(DurationInMinutes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstantBooking]
   }
 }

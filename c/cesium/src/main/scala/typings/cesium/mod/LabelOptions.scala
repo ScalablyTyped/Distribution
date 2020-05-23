@@ -39,11 +39,11 @@ object LabelOptions {
     heightReference: HeightReference = null,
     horizontalOrigin: HorizontalOrigin = null,
     outlineColor: Color = null,
-    outlineWidth: Int | Double = null,
+    outlineWidth: js.UndefOr[Double] = js.undefined,
     pixelOffset: Cartesian2 = null,
     pixelOffsetScaleByDistance: NearFarScalar = null,
     position: Cartesian3 = null,
-    scale: Int | Double = null,
+    scale: js.UndefOr[Double] = js.undefined,
     show: js.UndefOr[Boolean] = js.undefined,
     showBackground: js.UndefOr[Boolean] = js.undefined,
     style: LabelStyle = null,
@@ -61,13 +61,13 @@ object LabelOptions {
     if (heightReference != null) __obj.updateDynamic("heightReference")(heightReference.asInstanceOf[js.Any])
     if (horizontalOrigin != null) __obj.updateDynamic("horizontalOrigin")(horizontalOrigin.asInstanceOf[js.Any])
     if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
-    if (outlineWidth != null) __obj.updateDynamic("outlineWidth")(outlineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(outlineWidth)) __obj.updateDynamic("outlineWidth")(outlineWidth.get.asInstanceOf[js.Any])
     if (pixelOffset != null) __obj.updateDynamic("pixelOffset")(pixelOffset.asInstanceOf[js.Any])
     if (pixelOffsetScaleByDistance != null) __obj.updateDynamic("pixelOffsetScaleByDistance")(pixelOffsetScaleByDistance.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (!js.isUndefined(showBackground)) __obj.updateDynamic("showBackground")(showBackground.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showBackground)) __obj.updateDynamic("showBackground")(showBackground.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (translucencyByDistance != null) __obj.updateDynamic("translucencyByDistance")(translucencyByDistance.asInstanceOf[js.Any])

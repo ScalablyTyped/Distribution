@@ -22,9 +22,9 @@ trait ListDataSetRevisionsRequest extends js.Object {
 
 object ListDataSetRevisionsRequest {
   @scala.inline
-  def apply(DataSetId: string, MaxResults: Int | Double = null, NextToken: string = null): ListDataSetRevisionsRequest = {
+  def apply(DataSetId: string, MaxResults: js.UndefOr[MaxResults] = js.undefined, NextToken: string = null): ListDataSetRevisionsRequest = {
     val __obj = js.Dynamic.literal(DataSetId = DataSetId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDataSetRevisionsRequest]
   }

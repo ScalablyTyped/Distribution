@@ -26,8 +26,8 @@ object VerifyOptions {
   def apply(
     algorithms: js.Array[String] = null,
     audience: String | js.Array[String] = null,
-    clockTimestamp: Int | Double = null,
-    clockTolerance: Int | Double = null,
+    clockTimestamp: js.UndefOr[Double] = js.undefined,
+    clockTolerance: js.UndefOr[Double] = js.undefined,
     ignoreExpiration: js.UndefOr[Boolean] = js.undefined,
     ignoreNotBefore: js.UndefOr[Boolean] = js.undefined,
     issuer: String | js.Array[String] = null,
@@ -38,10 +38,10 @@ object VerifyOptions {
     val __obj = js.Dynamic.literal()
     if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms.asInstanceOf[js.Any])
     if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
-    if (clockTimestamp != null) __obj.updateDynamic("clockTimestamp")(clockTimestamp.asInstanceOf[js.Any])
-    if (clockTolerance != null) __obj.updateDynamic("clockTolerance")(clockTolerance.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreExpiration)) __obj.updateDynamic("ignoreExpiration")(ignoreExpiration.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreNotBefore)) __obj.updateDynamic("ignoreNotBefore")(ignoreNotBefore.asInstanceOf[js.Any])
+    if (!js.isUndefined(clockTimestamp)) __obj.updateDynamic("clockTimestamp")(clockTimestamp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clockTolerance)) __obj.updateDynamic("clockTolerance")(clockTolerance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreExpiration)) __obj.updateDynamic("ignoreExpiration")(ignoreExpiration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreNotBefore)) __obj.updateDynamic("ignoreNotBefore")(ignoreNotBefore.get.asInstanceOf[js.Any])
     if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
     if (jwtid != null) __obj.updateDynamic("jwtid")(jwtid.asInstanceOf[js.Any])
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -58,8 +57,4 @@ trait KMLSublayer
     */
   var visible: Boolean = js.native
 }
-
-@JSGlobal("__esri.KMLSublayer")
-@js.native
-object KMLSublayer extends TopLevel[KMLSublayerConstructor]
 

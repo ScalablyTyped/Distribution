@@ -23,7 +23,7 @@ object OrdersInStoreRefundLineItemRequest {
     lineItemId: String = null,
     operationId: String = null,
     productId: String = null,
-    quantity: Int | Double = null,
+    quantity: js.UndefOr[Double] = js.undefined,
     reason: String = null,
     reasonText: String = null
   ): OrdersInStoreRefundLineItemRequest = {
@@ -33,7 +33,7 @@ object OrdersInStoreRefundLineItemRequest {
     if (lineItemId != null) __obj.updateDynamic("lineItemId")(lineItemId.asInstanceOf[js.Any])
     if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
     if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity.get.asInstanceOf[js.Any])
     if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     if (reasonText != null) __obj.updateDynamic("reasonText")(reasonText.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrdersInStoreRefundLineItemRequest]

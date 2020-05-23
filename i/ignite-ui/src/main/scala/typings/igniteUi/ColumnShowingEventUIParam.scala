@@ -6,24 +6,24 @@ import scala.scalajs.js.annotation._
 
 trait ColumnShowingEventUIParam extends js.Object {
   /**
-  	 * Gets the shown column index.
-  	 */
+    * Gets the shown column index.
+    */
   var columnIndex: js.UndefOr[Double] = js.undefined
   /**
-  	 * Gets the shown column key.
-  	 */
+    * Gets the shown column key.
+    */
   var columnKey: js.UndefOr[String] = js.undefined
   /**
-  	 * Gets a reference to the GridHiding widget.
-  	 */
+    * Gets a reference to the GridHiding widget.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
 object ColumnShowingEventUIParam {
   @scala.inline
-  def apply(columnIndex: Int | Double = null, columnKey: String = null, owner: js.Any = null): ColumnShowingEventUIParam = {
+  def apply(columnIndex: js.UndefOr[Double] = js.undefined, columnKey: String = null, owner: js.Any = null): ColumnShowingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnIndex)) __obj.updateDynamic("columnIndex")(columnIndex.get.asInstanceOf[js.Any])
     if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
     if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnShowingEventUIParam]

@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		* Event dispatched if chat room was created successfully
-		*/
+  * Event dispatched if chat room was created successfully
+  */
 trait ChatRoomCreated extends VoxImplantIMEvent {
   /**
-  			* Room id
-  			*/
+    * Room id
+    */
   var room: String
 }
 

@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.ProtectedViewWindow")
 @js.native
-class ProtectedViewWindow protected () extends js.Object {
+trait ProtectedViewWindow extends js.Object {
   var Caption: String = js.native
   var EnableResize: Boolean = js.native
   @JSName("Excel.ProtectedViewWindow_typekey")

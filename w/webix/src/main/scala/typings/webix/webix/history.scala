@@ -1,6 +1,5 @@
 package typings.webix.webix
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,11 @@ trait history extends js.Object {
   def track(view: String, url: String): Unit
 }
 
-@JSGlobal("webix.history")
-@js.native
-object history extends TopLevel[history]
+object history {
+  @scala.inline
+  def apply(push: (String, String, js.Any) => Unit, track: (String, String) => Unit): history = {
+    val __obj = js.Dynamic.literal(push = js.Any.fromFunction3(push), track = js.Any.fromFunction2(track))
+    __obj.asInstanceOf[history]
+  }
+}
 

@@ -35,7 +35,7 @@ trait ListTypeRegistrationsInput extends js.Object {
 object ListTypeRegistrationsInput {
   @scala.inline
   def apply(
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: NextToken = null,
     RegistrationStatusFilter: RegistrationStatus = null,
     Type: RegistryType = null,
@@ -43,7 +43,7 @@ object ListTypeRegistrationsInput {
     TypeName: TypeName = null
   ): ListTypeRegistrationsInput = {
     val __obj = js.Dynamic.literal()
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (RegistrationStatusFilter != null) __obj.updateDynamic("RegistrationStatusFilter")(RegistrationStatusFilter.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])

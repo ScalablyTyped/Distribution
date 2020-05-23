@@ -22,14 +22,14 @@ object HelloJSLoginOptions {
   def apply(
     default_service: String = null,
     display: HelloJSDisplayType = null,
-    force: js.UndefOr[Boolean] = js.undefined,
+    force: js.UndefOr[Null | Boolean] = js.undefined,
     oauth_proxy: String = null,
     popup: HelloJSPopupOptions = null,
     redirect_uri: String = null,
     response_type: HelloJSTokenResponseType = null,
     scope: String = null,
     state: String = null,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): HelloJSLoginOptions = {
     val __obj = js.Dynamic.literal()
     if (default_service != null) __obj.updateDynamic("default_service")(default_service.asInstanceOf[js.Any])
@@ -41,7 +41,7 @@ object HelloJSLoginOptions {
     if (response_type != null) __obj.updateDynamic("response_type")(response_type.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HelloJSLoginOptions]
   }
 }

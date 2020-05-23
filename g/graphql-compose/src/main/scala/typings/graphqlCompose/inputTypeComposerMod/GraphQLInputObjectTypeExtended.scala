@@ -1,6 +1,6 @@
 package typings.graphqlCompose.inputTypeComposerMod
 
-import typings.graphql.GraphQLInputObjectTypeCon
+import typings.graphql.anon.GraphQLInputObjectTypeCon
 import typings.graphql.astMod.InputObjectTypeDefinitionNode
 import typings.graphql.astMod.InputObjectTypeExtensionNode
 import typings.graphql.definitionMod.GraphQLInputFieldMap
@@ -37,18 +37,18 @@ object GraphQLInputObjectTypeExtended {
     toJSON: () => String,
     _gqcExtensions: Extensions = null,
     _gqcFields: ComposeInputFieldConfigMap = null,
-    astNode: Maybe[InputObjectTypeDefinitionNode] = null,
-    description: Maybe[String] = null,
-    extensionASTNodes: Maybe[js.Array[InputObjectTypeExtensionNode]] = null,
-    extensions: Maybe[Record[String, _]] = null
+    astNode: js.UndefOr[Null | Maybe[InputObjectTypeDefinitionNode]] = js.undefined,
+    description: js.UndefOr[Null | Maybe[String]] = js.undefined,
+    extensionASTNodes: js.UndefOr[Null | Maybe[js.Array[InputObjectTypeExtensionNode]]] = js.undefined,
+    extensions: js.UndefOr[Null | (Maybe[Record[String, _]])] = js.undefined
   ): GraphQLInputObjectTypeExtended = {
     val __obj = js.Dynamic.literal(getFields = js.Any.fromFunction0(getFields), inspect = js.Any.fromFunction0(inspect), name = name.asInstanceOf[js.Any], toConfig = js.Any.fromFunction0(toConfig), toJSON = js.Any.fromFunction0(toJSON))
     if (_gqcExtensions != null) __obj.updateDynamic("_gqcExtensions")(_gqcExtensions.asInstanceOf[js.Any])
     if (_gqcFields != null) __obj.updateDynamic("_gqcFields")(_gqcFields.asInstanceOf[js.Any])
-    if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (extensionASTNodes != null) __obj.updateDynamic("extensionASTNodes")(extensionASTNodes.asInstanceOf[js.Any])
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (!js.isUndefined(astNode)) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(extensionASTNodes)) __obj.updateDynamic("extensionASTNodes")(extensionASTNodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(extensions)) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLInputObjectTypeExtended]
   }
 }

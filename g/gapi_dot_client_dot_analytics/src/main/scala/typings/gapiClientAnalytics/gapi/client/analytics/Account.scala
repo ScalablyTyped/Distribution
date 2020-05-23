@@ -1,14 +1,14 @@
 package typings.gapiClientAnalytics.gapi.client.analytics
 
-import typings.gapiClientAnalytics.AnonEffective
-import typings.gapiClientAnalytics.AnonHref
+import typings.gapiClientAnalytics.anon.Effective
+import typings.gapiClientAnalytics.anon.Href
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Account extends js.Object {
   /** Child link for an account entry. Points to the list of web properties for this account. */
-  var childLink: js.UndefOr[AnonHref] = js.undefined
+  var childLink: js.UndefOr[Href] = js.undefined
   /** Time the account was created. */
   var created: js.UndefOr[String] = js.undefined
   /** Account ID. */
@@ -18,7 +18,7 @@ trait Account extends js.Object {
   /** Account name. */
   var name: js.UndefOr[String] = js.undefined
   /** Permissions the user has for this account. */
-  var permissions: js.UndefOr[AnonEffective] = js.undefined
+  var permissions: js.UndefOr[Effective] = js.undefined
   /** Link for this account. */
   var selfLink: js.UndefOr[String] = js.undefined
   /** Indicates whether this account is starred or not. */
@@ -30,12 +30,12 @@ trait Account extends js.Object {
 object Account {
   @scala.inline
   def apply(
-    childLink: AnonHref = null,
+    childLink: Href = null,
     created: String = null,
     id: String = null,
     kind: String = null,
     name: String = null,
-    permissions: AnonEffective = null,
+    permissions: Effective = null,
     selfLink: String = null,
     starred: js.UndefOr[Boolean] = js.undefined,
     updated: String = null
@@ -48,7 +48,7 @@ object Account {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (!js.isUndefined(starred)) __obj.updateDynamic("starred")(starred.asInstanceOf[js.Any])
+    if (!js.isUndefined(starred)) __obj.updateDynamic("starred")(starred.get.asInstanceOf[js.Any])
     if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Account]
   }

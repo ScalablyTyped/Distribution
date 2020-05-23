@@ -11,7 +11,7 @@ trait GrpcRetryPolicy extends js.Object {
     */
   var grpcRetryEvents: js.UndefOr[GrpcRetryPolicyEvents] = js.native
   /**
-    * Specify at least one of the following values.
+    * Specify at least one of the following values. 
     
     
     

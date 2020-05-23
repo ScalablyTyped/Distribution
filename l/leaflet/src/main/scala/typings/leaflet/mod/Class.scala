@@ -1,7 +1,7 @@
 package typings.leaflet.mod
 
-import typings.leaflet.TypeofClass
-import typings.leaflet.newargsanyanyextendpropsa
+import typings.leaflet.anon.TypeofClass
+import typings.leaflet.anon.newargsanyanyextendpropsa
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

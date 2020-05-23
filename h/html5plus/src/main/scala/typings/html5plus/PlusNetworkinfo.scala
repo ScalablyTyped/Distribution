@@ -72,22 +72,22 @@ object PlusNetworkinfo {
   @scala.inline
   def apply(
     getCurrentType: () => Double,
-    CONNECTION_CELL2G: Int | Double = null,
-    CONNECTION_CELL3G: Int | Double = null,
-    CONNECTION_CELL4G: Int | Double = null,
-    CONNECTION_ETHERNET: Int | Double = null,
-    CONNECTION_NONE: Int | Double = null,
-    CONNECTION_UNKNOW: Int | Double = null,
-    CONNECTION_WIFI: Int | Double = null
+    CONNECTION_CELL2G: js.UndefOr[Double] = js.undefined,
+    CONNECTION_CELL3G: js.UndefOr[Double] = js.undefined,
+    CONNECTION_CELL4G: js.UndefOr[Double] = js.undefined,
+    CONNECTION_ETHERNET: js.UndefOr[Double] = js.undefined,
+    CONNECTION_NONE: js.UndefOr[Double] = js.undefined,
+    CONNECTION_UNKNOW: js.UndefOr[Double] = js.undefined,
+    CONNECTION_WIFI: js.UndefOr[Double] = js.undefined
   ): PlusNetworkinfo = {
     val __obj = js.Dynamic.literal(getCurrentType = js.Any.fromFunction0(getCurrentType))
-    if (CONNECTION_CELL2G != null) __obj.updateDynamic("CONNECTION_CELL2G")(CONNECTION_CELL2G.asInstanceOf[js.Any])
-    if (CONNECTION_CELL3G != null) __obj.updateDynamic("CONNECTION_CELL3G")(CONNECTION_CELL3G.asInstanceOf[js.Any])
-    if (CONNECTION_CELL4G != null) __obj.updateDynamic("CONNECTION_CELL4G")(CONNECTION_CELL4G.asInstanceOf[js.Any])
-    if (CONNECTION_ETHERNET != null) __obj.updateDynamic("CONNECTION_ETHERNET")(CONNECTION_ETHERNET.asInstanceOf[js.Any])
-    if (CONNECTION_NONE != null) __obj.updateDynamic("CONNECTION_NONE")(CONNECTION_NONE.asInstanceOf[js.Any])
-    if (CONNECTION_UNKNOW != null) __obj.updateDynamic("CONNECTION_UNKNOW")(CONNECTION_UNKNOW.asInstanceOf[js.Any])
-    if (CONNECTION_WIFI != null) __obj.updateDynamic("CONNECTION_WIFI")(CONNECTION_WIFI.asInstanceOf[js.Any])
+    if (!js.isUndefined(CONNECTION_CELL2G)) __obj.updateDynamic("CONNECTION_CELL2G")(CONNECTION_CELL2G.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(CONNECTION_CELL3G)) __obj.updateDynamic("CONNECTION_CELL3G")(CONNECTION_CELL3G.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(CONNECTION_CELL4G)) __obj.updateDynamic("CONNECTION_CELL4G")(CONNECTION_CELL4G.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(CONNECTION_ETHERNET)) __obj.updateDynamic("CONNECTION_ETHERNET")(CONNECTION_ETHERNET.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(CONNECTION_NONE)) __obj.updateDynamic("CONNECTION_NONE")(CONNECTION_NONE.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(CONNECTION_UNKNOW)) __obj.updateDynamic("CONNECTION_UNKNOW")(CONNECTION_UNKNOW.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(CONNECTION_WIFI)) __obj.updateDynamic("CONNECTION_WIFI")(CONNECTION_WIFI.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNetworkinfo]
   }
 }

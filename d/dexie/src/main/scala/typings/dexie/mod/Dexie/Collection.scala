@@ -1,8 +1,8 @@
 package typings.dexie.mod.Dexie
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.dexie.AnonKey
-import typings.dexie.AnonValue
+import typings.dexie.anon.PrimaryKey
+import typings.dexie.anon.Value
 import typings.dexie.mod.IndexableType
 import typings.dexie.mod.IndexableTypeArray
 import typings.dexie.mod.ThenShortcut
@@ -19,10 +19,10 @@ trait Collection[T, Key] extends js.Object {
   // Mutating methods
   def delete(): Promise[Double] = js.native
   def distinct(): Collection[T, Key] = js.native
-  def each(callback: js.Function2[/* obj */ T, /* cursor */ AnonKey[Key], _]): Promise[Unit] = js.native
-  def eachKey(callback: js.Function2[/* key */ IndexableType, /* cursor */ AnonKey[Key], _]): Promise[Unit] = js.native
-  def eachPrimaryKey(callback: js.Function2[/* key */ Key, /* cursor */ AnonKey[Key], _]): Promise[Unit] = js.native
-  def eachUniqueKey(callback: js.Function2[/* key */ IndexableType, /* cursor */ AnonKey[Key], _]): Promise[Unit] = js.native
+  def each(callback: js.Function2[/* obj */ T, /* cursor */ PrimaryKey[Key], _]): Promise[Unit] = js.native
+  def eachKey(callback: js.Function2[/* key */ IndexableType, /* cursor */ PrimaryKey[Key], _]): Promise[Unit] = js.native
+  def eachPrimaryKey(callback: js.Function2[/* key */ Key, /* cursor */ PrimaryKey[Key], _]): Promise[Unit] = js.native
+  def eachUniqueKey(callback: js.Function2[/* key */ IndexableType, /* cursor */ PrimaryKey[Key], _]): Promise[Unit] = js.native
   def filter(filter: js.Function1[/* x */ T, Boolean]): Collection[T, Key] = js.native
   def first(): Promise[js.UndefOr[T]] = js.native
   def first[R](thenShortcut: ThenShortcut[js.UndefOr[T], R]): Promise[R] = js.native
@@ -31,7 +31,7 @@ trait Collection[T, Key] extends js.Object {
   def last(): Promise[js.UndefOr[T]] = js.native
   def last[R](thenShortcut: ThenShortcut[js.UndefOr[T], R]): Promise[R] = js.native
   def limit(n: Double): Collection[T, Key] = js.native
-  def modify(changeCallback: js.Function2[/* obj */ T, /* ctx */ AnonValue[T], Unit]): Promise[Double] = js.native
+  def modify(changeCallback: js.Function2[/* obj */ T, /* ctx */ Value[T], Unit]): Promise[Double] = js.native
   def modify(changes: StringDictionary[js.Any]): Promise[Double] = js.native
   def offset(n: Double): Collection[T, Key] = js.native
   def or(indexOrPrimayKey: String): WhereClause[T, Key] = js.native

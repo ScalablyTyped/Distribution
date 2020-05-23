@@ -45,8 +45,8 @@ object ResolvedUnifiedNumberFormatOptions {
     currency: String = null,
     currencyDisplay: String = null,
     currencySign: NonNullable[js.UndefOr[UnifiedNumberFormatOptionsCurrencySign]] = null,
-    maximumSignificantDigits: Int | Double = null,
-    minimumSignificantDigits: Int | Double = null,
+    maximumSignificantDigits: js.UndefOr[Double] = js.undefined,
+    minimumSignificantDigits: js.UndefOr[Double] = js.undefined,
     notation: NonNullable[js.UndefOr[UnifiedNumberFormatOptionsNotation]] = null,
     signDisplay: NonNullable[js.UndefOr[UnifiedNumberFormatOptionsSignDisplay]] = null,
     unit: String = null,
@@ -57,8 +57,8 @@ object ResolvedUnifiedNumberFormatOptions {
     if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     if (currencyDisplay != null) __obj.updateDynamic("currencyDisplay")(currencyDisplay.asInstanceOf[js.Any])
     if (currencySign != null) __obj.updateDynamic("currencySign")(currencySign.asInstanceOf[js.Any])
-    if (maximumSignificantDigits != null) __obj.updateDynamic("maximumSignificantDigits")(maximumSignificantDigits.asInstanceOf[js.Any])
-    if (minimumSignificantDigits != null) __obj.updateDynamic("minimumSignificantDigits")(minimumSignificantDigits.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumSignificantDigits)) __obj.updateDynamic("maximumSignificantDigits")(maximumSignificantDigits.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumSignificantDigits)) __obj.updateDynamic("minimumSignificantDigits")(minimumSignificantDigits.get.asInstanceOf[js.Any])
     if (notation != null) __obj.updateDynamic("notation")(notation.asInstanceOf[js.Any])
     if (signDisplay != null) __obj.updateDynamic("signDisplay")(signDisplay.asInstanceOf[js.Any])
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])

@@ -77,7 +77,7 @@ object IContextualMenuItemStyleProps {
     if (dividerClassName != null) __obj.updateDynamic("dividerClassName")(dividerClassName.asInstanceOf[js.Any])
     if (iconClassName != null) __obj.updateDynamic("iconClassName")(iconClassName.asInstanceOf[js.Any])
     if (itemClassName != null) __obj.updateDynamic("itemClassName")(itemClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(primaryDisabled)) __obj.updateDynamic("primaryDisabled")(primaryDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(primaryDisabled)) __obj.updateDynamic("primaryDisabled")(primaryDisabled.get.asInstanceOf[js.Any])
     if (subMenuClassName != null) __obj.updateDynamic("subMenuClassName")(subMenuClassName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContextualMenuItemStyleProps]
   }

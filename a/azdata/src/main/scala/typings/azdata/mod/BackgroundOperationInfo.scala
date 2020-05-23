@@ -7,28 +7,28 @@ import scala.scalajs.js.annotation._
 
 trait BackgroundOperationInfo extends js.Object {
   /**
-  		 * Connection information
-  		 */
+    * Connection information
+    */
   var connection: js.UndefOr[Connection] = js.undefined
   /**
-  		 * Operation Description
-  		 */
+    * Operation Description
+    */
   var description: String
   /**
-  		 * Operation Display Name
-  		 */
+    * Operation Display Name
+    */
   var displayName: String
   /**
-  		 * True if the operation is cancelable
-  		 */
+    * True if the operation is cancelable
+    */
   var isCancelable: Boolean
   /**
-  		 * The operation id. A unique id will be assigned to it If not specified a
-  		 */
+    * The operation id. A unique id will be assigned to it If not specified a
+    */
   var operationId: js.UndefOr[String] = js.undefined
   /**
-  		 * The actual operation to execute
-  		 */
+    * The actual operation to execute
+    */
   def operation(operation: BackgroundOperation): Unit
 }
 

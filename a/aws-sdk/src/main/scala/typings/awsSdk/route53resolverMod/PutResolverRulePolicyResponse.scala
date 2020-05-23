@@ -14,9 +14,9 @@ trait PutResolverRulePolicyResponse extends js.Object {
 
 object PutResolverRulePolicyResponse {
   @scala.inline
-  def apply(ReturnValue: js.UndefOr[scala.Boolean] = js.undefined): PutResolverRulePolicyResponse = {
+  def apply(ReturnValue: js.UndefOr[Boolean] = js.undefined): PutResolverRulePolicyResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ReturnValue)) __obj.updateDynamic("ReturnValue")(ReturnValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReturnValue)) __obj.updateDynamic("ReturnValue")(ReturnValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutResolverRulePolicyResponse]
   }
 }

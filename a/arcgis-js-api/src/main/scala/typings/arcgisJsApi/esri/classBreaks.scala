@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,10 +43,11 @@ trait classBreaks extends js.Object {
   def classBreaks(params: classBreaksClassBreaksParams): js.Promise[ClassBreaksResult]
 }
 
-@JSGlobal("__esri.classBreaks")
-@js.native
-object classBreaks
-  extends TopLevel[
-      js.Function1[/* params */ classBreaksClassBreaksParams, js.Promise[ClassBreaksResult]]
-    ]
+object classBreaks {
+  @scala.inline
+  def apply(classBreaks: classBreaksClassBreaksParams => js.Promise[ClassBreaksResult]): classBreaks = {
+    val __obj = js.Dynamic.literal(classBreaks = js.Any.fromFunction1(classBreaks))
+    __obj.asInstanceOf[classBreaks]
+  }
+}
 

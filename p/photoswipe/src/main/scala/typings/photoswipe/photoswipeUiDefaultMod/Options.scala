@@ -1,7 +1,7 @@
 package typings.photoswipe.photoswipeUiDefaultMod
 
-import typings.photoswipe.AnonBottom
-import typings.photoswipe.AnonW
+import typings.photoswipe.anon.Bottom
+import typings.photoswipe.anon.W
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -47,7 +47,7 @@ trait Options
     *
     * Default {top: 44, bottom: "auto"}.
     */
-  var barsSize: js.UndefOr[AnonBottom] = js.undefined
+  var barsSize: js.UndefOr[Bottom] = js.undefined
   /**
     * Whether to show the caption.
     *
@@ -221,8 +221,8 @@ object Options {
     allowNoPanText: js.UndefOr[Boolean] = js.undefined,
     arrowEl: js.UndefOr[Boolean] = js.undefined,
     arrowKeys: js.UndefOr[Boolean] = js.undefined,
-    barsSize: AnonBottom = null,
-    bgOpacity: Int | Double = null,
+    barsSize: Bottom = null,
+    bgOpacity: js.UndefOr[Double] = js.undefined,
     captionEl: js.UndefOr[Boolean] = js.undefined,
     clickToCloseNonZoomable: js.UndefOr[Boolean] = js.undefined,
     closeEl: js.UndefOr[Boolean] = js.undefined,
@@ -234,93 +234,93 @@ object Options {
     escKey: js.UndefOr[Boolean] = js.undefined,
     focus: js.UndefOr[Boolean] = js.undefined,
     fullscreenEl: js.UndefOr[Boolean] = js.undefined,
-    galleryUID: Int | Double = null,
+    galleryUID: js.UndefOr[Double] = js.undefined,
     getDoubleTapZoom: (/* isMouseClick */ Boolean, /* item */ typings.photoswipe.mod.Item) => Double = null,
     getImageURLForShare: /* shareButtonData */ ShareButtonData => String = null,
     getNumItemsFn: () => Double = null,
     getPageURLForShare: /* shareButtonData */ ShareButtonData => String = null,
     getTextForShare: /* shareButtonData */ ShareButtonData => String = null,
-    getThumbBoundsFn: /* index */ Double => AnonW = null,
-    hideAnimationDuration: Int | Double = null,
+    getThumbBoundsFn: /* index */ Double => W = null,
+    hideAnimationDuration: js.UndefOr[Double] = js.undefined,
     history: js.UndefOr[Boolean] = js.undefined,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     indexIndicatorSep: String = null,
     isClickableElement: /* el */ HTMLElement => Boolean = null,
-    loadingIndicatorDelay: Int | Double = null,
+    loadingIndicatorDelay: js.UndefOr[Double] = js.undefined,
     loop: js.UndefOr[Boolean] = js.undefined,
     mainClass: String = null,
-    mainScrollEndFriction: Int | Double = null,
-    maxSpreadZoom: Int | Double = null,
+    mainScrollEndFriction: js.UndefOr[Double] = js.undefined,
+    maxSpreadZoom: js.UndefOr[Double] = js.undefined,
     modal: js.UndefOr[Boolean] = js.undefined,
     mouseUsed: js.UndefOr[Boolean] = js.undefined,
-    panEndFriction: Int | Double = null,
+    panEndFriction: js.UndefOr[Double] = js.undefined,
     parseShareButtonOut: (/* shareButtonData */ ShareButtonData, /* shareButtonOut */ String) => String = null,
     pinchToClose: js.UndefOr[Boolean] = js.undefined,
     preload: js.Array[Double] = null,
     preloaderEl: js.UndefOr[Boolean] = js.undefined,
     shareButtons: js.Array[ShareButtonData] = null,
     shareEl: js.UndefOr[Boolean] = js.undefined,
-    showAnimationDuration: Int | Double = null,
+    showAnimationDuration: js.UndefOr[Double] = js.undefined,
     showHideOpacity: js.UndefOr[Boolean] = js.undefined,
-    spacing: Int | Double = null,
+    spacing: js.UndefOr[Double] = js.undefined,
     tapToClose: js.UndefOr[Boolean] = js.undefined,
     tapToToggleControls: js.UndefOr[Boolean] = js.undefined,
-    timeToIdle: Int | Double = null,
-    timeToIdleOutside: Int | Double = null,
+    timeToIdle: js.UndefOr[Double] = js.undefined,
+    timeToIdleOutside: js.UndefOr[Double] = js.undefined,
     zoomEl: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (addCaptionHTMLFn != null) __obj.updateDynamic("addCaptionHTMLFn")(js.Any.fromFunction3(addCaptionHTMLFn))
-    if (!js.isUndefined(allowNoPanText)) __obj.updateDynamic("allowNoPanText")(allowNoPanText.asInstanceOf[js.Any])
-    if (!js.isUndefined(arrowEl)) __obj.updateDynamic("arrowEl")(arrowEl.asInstanceOf[js.Any])
-    if (!js.isUndefined(arrowKeys)) __obj.updateDynamic("arrowKeys")(arrowKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowNoPanText)) __obj.updateDynamic("allowNoPanText")(allowNoPanText.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrowEl)) __obj.updateDynamic("arrowEl")(arrowEl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrowKeys)) __obj.updateDynamic("arrowKeys")(arrowKeys.get.asInstanceOf[js.Any])
     if (barsSize != null) __obj.updateDynamic("barsSize")(barsSize.asInstanceOf[js.Any])
-    if (bgOpacity != null) __obj.updateDynamic("bgOpacity")(bgOpacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(captionEl)) __obj.updateDynamic("captionEl")(captionEl.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickToCloseNonZoomable)) __obj.updateDynamic("clickToCloseNonZoomable")(clickToCloseNonZoomable.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeEl)) __obj.updateDynamic("closeEl")(closeEl.asInstanceOf[js.Any])
+    if (!js.isUndefined(bgOpacity)) __obj.updateDynamic("bgOpacity")(bgOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(captionEl)) __obj.updateDynamic("captionEl")(captionEl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickToCloseNonZoomable)) __obj.updateDynamic("clickToCloseNonZoomable")(clickToCloseNonZoomable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeEl)) __obj.updateDynamic("closeEl")(closeEl.get.asInstanceOf[js.Any])
     if (closeElClasses != null) __obj.updateDynamic("closeElClasses")(closeElClasses.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnScroll)) __obj.updateDynamic("closeOnScroll")(closeOnScroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnVerticalDrag)) __obj.updateDynamic("closeOnVerticalDrag")(closeOnVerticalDrag.asInstanceOf[js.Any])
-    if (!js.isUndefined(counterEl)) __obj.updateDynamic("counterEl")(counterEl.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnScroll)) __obj.updateDynamic("closeOnScroll")(closeOnScroll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnVerticalDrag)) __obj.updateDynamic("closeOnVerticalDrag")(closeOnVerticalDrag.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(counterEl)) __obj.updateDynamic("counterEl")(counterEl.get.asInstanceOf[js.Any])
     if (errorMsg != null) __obj.updateDynamic("errorMsg")(errorMsg.asInstanceOf[js.Any])
-    if (!js.isUndefined(escKey)) __obj.updateDynamic("escKey")(escKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullscreenEl)) __obj.updateDynamic("fullscreenEl")(fullscreenEl.asInstanceOf[js.Any])
-    if (galleryUID != null) __obj.updateDynamic("galleryUID")(galleryUID.asInstanceOf[js.Any])
+    if (!js.isUndefined(escKey)) __obj.updateDynamic("escKey")(escKey.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullscreenEl)) __obj.updateDynamic("fullscreenEl")(fullscreenEl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(galleryUID)) __obj.updateDynamic("galleryUID")(galleryUID.get.asInstanceOf[js.Any])
     if (getDoubleTapZoom != null) __obj.updateDynamic("getDoubleTapZoom")(js.Any.fromFunction2(getDoubleTapZoom))
     if (getImageURLForShare != null) __obj.updateDynamic("getImageURLForShare")(js.Any.fromFunction1(getImageURLForShare))
     if (getNumItemsFn != null) __obj.updateDynamic("getNumItemsFn")(js.Any.fromFunction0(getNumItemsFn))
     if (getPageURLForShare != null) __obj.updateDynamic("getPageURLForShare")(js.Any.fromFunction1(getPageURLForShare))
     if (getTextForShare != null) __obj.updateDynamic("getTextForShare")(js.Any.fromFunction1(getTextForShare))
     if (getThumbBoundsFn != null) __obj.updateDynamic("getThumbBoundsFn")(js.Any.fromFunction1(getThumbBoundsFn))
-    if (hideAnimationDuration != null) __obj.updateDynamic("hideAnimationDuration")(hideAnimationDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideAnimationDuration)) __obj.updateDynamic("hideAnimationDuration")(hideAnimationDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (indexIndicatorSep != null) __obj.updateDynamic("indexIndicatorSep")(indexIndicatorSep.asInstanceOf[js.Any])
     if (isClickableElement != null) __obj.updateDynamic("isClickableElement")(js.Any.fromFunction1(isClickableElement))
-    if (loadingIndicatorDelay != null) __obj.updateDynamic("loadingIndicatorDelay")(loadingIndicatorDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (!js.isUndefined(loadingIndicatorDelay)) __obj.updateDynamic("loadingIndicatorDelay")(loadingIndicatorDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
     if (mainClass != null) __obj.updateDynamic("mainClass")(mainClass.asInstanceOf[js.Any])
-    if (mainScrollEndFriction != null) __obj.updateDynamic("mainScrollEndFriction")(mainScrollEndFriction.asInstanceOf[js.Any])
-    if (maxSpreadZoom != null) __obj.updateDynamic("maxSpreadZoom")(maxSpreadZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
-    if (!js.isUndefined(mouseUsed)) __obj.updateDynamic("mouseUsed")(mouseUsed.asInstanceOf[js.Any])
-    if (panEndFriction != null) __obj.updateDynamic("panEndFriction")(panEndFriction.asInstanceOf[js.Any])
+    if (!js.isUndefined(mainScrollEndFriction)) __obj.updateDynamic("mainScrollEndFriction")(mainScrollEndFriction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSpreadZoom)) __obj.updateDynamic("maxSpreadZoom")(maxSpreadZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mouseUsed)) __obj.updateDynamic("mouseUsed")(mouseUsed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(panEndFriction)) __obj.updateDynamic("panEndFriction")(panEndFriction.get.asInstanceOf[js.Any])
     if (parseShareButtonOut != null) __obj.updateDynamic("parseShareButtonOut")(js.Any.fromFunction2(parseShareButtonOut))
-    if (!js.isUndefined(pinchToClose)) __obj.updateDynamic("pinchToClose")(pinchToClose.asInstanceOf[js.Any])
+    if (!js.isUndefined(pinchToClose)) __obj.updateDynamic("pinchToClose")(pinchToClose.get.asInstanceOf[js.Any])
     if (preload != null) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
-    if (!js.isUndefined(preloaderEl)) __obj.updateDynamic("preloaderEl")(preloaderEl.asInstanceOf[js.Any])
+    if (!js.isUndefined(preloaderEl)) __obj.updateDynamic("preloaderEl")(preloaderEl.get.asInstanceOf[js.Any])
     if (shareButtons != null) __obj.updateDynamic("shareButtons")(shareButtons.asInstanceOf[js.Any])
-    if (!js.isUndefined(shareEl)) __obj.updateDynamic("shareEl")(shareEl.asInstanceOf[js.Any])
-    if (showAnimationDuration != null) __obj.updateDynamic("showAnimationDuration")(showAnimationDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHideOpacity)) __obj.updateDynamic("showHideOpacity")(showHideOpacity.asInstanceOf[js.Any])
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
-    if (!js.isUndefined(tapToClose)) __obj.updateDynamic("tapToClose")(tapToClose.asInstanceOf[js.Any])
-    if (!js.isUndefined(tapToToggleControls)) __obj.updateDynamic("tapToToggleControls")(tapToToggleControls.asInstanceOf[js.Any])
-    if (timeToIdle != null) __obj.updateDynamic("timeToIdle")(timeToIdle.asInstanceOf[js.Any])
-    if (timeToIdleOutside != null) __obj.updateDynamic("timeToIdleOutside")(timeToIdleOutside.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomEl)) __obj.updateDynamic("zoomEl")(zoomEl.asInstanceOf[js.Any])
+    if (!js.isUndefined(shareEl)) __obj.updateDynamic("shareEl")(shareEl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAnimationDuration)) __obj.updateDynamic("showAnimationDuration")(showAnimationDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHideOpacity)) __obj.updateDynamic("showHideOpacity")(showHideOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spacing)) __obj.updateDynamic("spacing")(spacing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tapToClose)) __obj.updateDynamic("tapToClose")(tapToClose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tapToToggleControls)) __obj.updateDynamic("tapToToggleControls")(tapToToggleControls.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeToIdle)) __obj.updateDynamic("timeToIdle")(timeToIdle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeToIdleOutside)) __obj.updateDynamic("timeToIdleOutside")(timeToIdleOutside.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomEl)) __obj.updateDynamic("zoomEl")(zoomEl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

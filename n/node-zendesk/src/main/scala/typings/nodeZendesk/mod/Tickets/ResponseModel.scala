@@ -72,40 +72,28 @@ object ResponseModel {
     tags: js.Array[String],
     url: String,
     via: Via,
-    assignee_id: Int | Double = null,
-    brand_id: Int | Double = null,
-    comment_count: Int | Double = null,
+    assignee_id: ZendeskID = null.asInstanceOf[ZendeskID],
+    brand_id: js.UndefOr[Null | Double] = js.undefined,
+    comment_count: js.UndefOr[Double] = js.undefined,
     due_at: String = null,
     external_id: String = null,
-    forum_topic_id: Int | Double = null,
-    group_id: Int | Double = null,
+    forum_topic_id: Double = null.asInstanceOf[Double],
+    group_id: Double = null.asInstanceOf[Double],
     priority: Priority = null,
-    problem_id: Int | Double = null,
+    problem_id: Double = null.asInstanceOf[Double],
     raw_subject: String = null,
     recipient: String = null,
     satisfaction_rating: js.Object | String = null,
     subject: String = null,
-    ticket_form_id: Int | Double = null,
+    ticket_form_id: js.UndefOr[Null | Double] = js.undefined,
     `type`: TicketType = null,
     updated_at: String = null
   ): ResponseModel = {
-    val __obj = js.Dynamic.literal(allow_attachments = allow_attachments.asInstanceOf[js.Any], allow_channelback = allow_channelback.asInstanceOf[js.Any], collaborator_ids = collaborator_ids.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], custom_fields = custom_fields.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], email_cc_ids = email_cc_ids.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], follower_ids = follower_ids.asInstanceOf[js.Any], followup_ids = followup_ids.asInstanceOf[js.Any], has_incidents = has_incidents.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_public = is_public.asInstanceOf[js.Any], organization_id = organization_id.asInstanceOf[js.Any], requester_id = requester_id.asInstanceOf[js.Any], sharing_agreement_ids = sharing_agreement_ids.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], submitter_id = submitter_id.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], via = via.asInstanceOf[js.Any])
-    if (assignee_id != null) __obj.updateDynamic("assignee_id")(assignee_id.asInstanceOf[js.Any])
-    if (brand_id != null) __obj.updateDynamic("brand_id")(brand_id.asInstanceOf[js.Any])
-    if (comment_count != null) __obj.updateDynamic("comment_count")(comment_count.asInstanceOf[js.Any])
-    if (due_at != null) __obj.updateDynamic("due_at")(due_at.asInstanceOf[js.Any])
-    if (external_id != null) __obj.updateDynamic("external_id")(external_id.asInstanceOf[js.Any])
-    if (forum_topic_id != null) __obj.updateDynamic("forum_topic_id")(forum_topic_id.asInstanceOf[js.Any])
-    if (group_id != null) __obj.updateDynamic("group_id")(group_id.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (problem_id != null) __obj.updateDynamic("problem_id")(problem_id.asInstanceOf[js.Any])
-    if (raw_subject != null) __obj.updateDynamic("raw_subject")(raw_subject.asInstanceOf[js.Any])
-    if (recipient != null) __obj.updateDynamic("recipient")(recipient.asInstanceOf[js.Any])
-    if (satisfaction_rating != null) __obj.updateDynamic("satisfaction_rating")(satisfaction_rating.asInstanceOf[js.Any])
-    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    if (ticket_form_id != null) __obj.updateDynamic("ticket_form_id")(ticket_form_id.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(allow_attachments = allow_attachments.asInstanceOf[js.Any], allow_channelback = allow_channelback.asInstanceOf[js.Any], collaborator_ids = collaborator_ids.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], custom_fields = custom_fields.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], email_cc_ids = email_cc_ids.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], follower_ids = follower_ids.asInstanceOf[js.Any], followup_ids = followup_ids.asInstanceOf[js.Any], has_incidents = has_incidents.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_public = is_public.asInstanceOf[js.Any], organization_id = organization_id.asInstanceOf[js.Any], requester_id = requester_id.asInstanceOf[js.Any], sharing_agreement_ids = sharing_agreement_ids.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], submitter_id = submitter_id.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], via = via.asInstanceOf[js.Any], assignee_id = assignee_id.asInstanceOf[js.Any], due_at = due_at.asInstanceOf[js.Any], external_id = external_id.asInstanceOf[js.Any], forum_topic_id = forum_topic_id.asInstanceOf[js.Any], group_id = group_id.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], problem_id = problem_id.asInstanceOf[js.Any], raw_subject = raw_subject.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], satisfaction_rating = satisfaction_rating.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any])
+    if (!js.isUndefined(brand_id)) __obj.updateDynamic("brand_id")(brand_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(comment_count)) __obj.updateDynamic("comment_count")(comment_count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ticket_form_id)) __obj.updateDynamic("ticket_form_id")(ticket_form_id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseModel]
   }
 }

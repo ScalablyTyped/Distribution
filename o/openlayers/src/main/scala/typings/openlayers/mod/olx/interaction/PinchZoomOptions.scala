@@ -11,10 +11,13 @@ trait PinchZoomOptions extends js.Object {
 
 object PinchZoomOptions {
   @scala.inline
-  def apply(constrainResolution: js.UndefOr[Boolean] = js.undefined, duration: Int | Double = null): PinchZoomOptions = {
+  def apply(
+    constrainResolution: js.UndefOr[Boolean] = js.undefined,
+    duration: js.UndefOr[Double] = js.undefined
+  ): PinchZoomOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(constrainResolution)) __obj.updateDynamic("constrainResolution")(constrainResolution.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(constrainResolution)) __obj.updateDynamic("constrainResolution")(constrainResolution.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PinchZoomOptions]
   }
 }

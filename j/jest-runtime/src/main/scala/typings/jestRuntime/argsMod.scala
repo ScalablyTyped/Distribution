@@ -1,6 +1,5 @@
 package typings.jestRuntime
 
-import typings.jestRuntime.jestRuntimeStrings.`UsageColon $0 [--configEqualssignLessthansignpathToConfigFileGreaterthansign] LessthansignfileGreaterthansign`
 import typings.yargs.mod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("jest-runtime/build/cli/args", JSImport.Namespace)
 @js.native
 object argsMod extends js.Object {
-  val usage: `UsageColon $0 [--configEqualssignLessthansignpathToConfigFileGreaterthansign] LessthansignfileGreaterthansign` = js.native
+  val usage: /* "Usage: $0 [--config=<pathToConfigFile>] <file>" */ String = js.native
   @js.native
   object options extends js.Object {
     var cache: Options = js.native

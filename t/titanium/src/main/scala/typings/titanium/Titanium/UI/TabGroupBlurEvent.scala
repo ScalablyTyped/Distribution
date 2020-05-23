@@ -5,28 +5,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when this tab group loses focus. On Android, fired when a tab in this tab group
-		 * loses focus.
-		 */
+  * Fired when this tab group loses focus. On Android, fired when a tab in this tab group
+  * loses focus.
+  */
 trait TabGroupBlurEvent extends TabGroupBaseEvent {
   /**
-  			 * Index of the current active tab. On iOS, a value of `undefined` indicates that the
-  			 * **More** tab was the active tab.
-  			 */
+    * Index of the current active tab. On iOS, a value of `undefined` indicates that the
+    * **More** tab was the active tab.
+    */
   var index: Double
   /**
-  			 * Index of the previous active tab. On iOS, a value of `undefined` indicates that the
-  			 * **More** tab was the previous tab.
-  			 */
+    * Index of the previous active tab. On iOS, a value of `undefined` indicates that the
+    * **More** tab was the previous tab.
+    */
   var previousIndex: Double
   /**
-  			 * Previous active tab. On iOS, a value of `undefined` indicates that the **More** tab was
-  			 * the previous tab.
-  			 */
+    * Previous active tab. On iOS, a value of `undefined` indicates that the **More** tab was
+    * the previous tab.
+    */
   var previousTab: Tab
   /**
-  			 * Active tab.
-  			 */
+    * Active tab.
+    */
   var tab: Tab
 }
 

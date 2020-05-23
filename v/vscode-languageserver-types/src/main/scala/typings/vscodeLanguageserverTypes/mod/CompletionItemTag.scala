@@ -1,6 +1,5 @@
 package typings.vscodeLanguageserverTypes.mod
 
-import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +10,6 @@ object CompletionItemTag extends js.Object {
   /**
     * Render a completion as obsolete, usually using a strike-out.
     */
-  val Deprecated: `1` = js.native
+  val Deprecated: /* 1 */ Double = js.native
 }
 

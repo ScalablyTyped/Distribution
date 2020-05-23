@@ -16,7 +16,7 @@ trait CellValueConditionalFormatUpdateData extends js.Object {
   var format: js.UndefOr[ConditionalRangeFormatUpdateData] = js.undefined
   /**
     *
-    * Represents the Rule object on this conditional format.
+    * Specifies the Rule object on this conditional format.
     *
     * [Api set: ExcelApi 1.6]
     */

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.forminput")
 @js.native
-class forminput () extends baseview {
+trait forminput extends baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
   @JSName("config")

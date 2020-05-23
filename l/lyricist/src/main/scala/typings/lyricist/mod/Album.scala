@@ -1,6 +1,6 @@
 package typings.lyricist.mod
 
-import typings.lyricist.AnonExcludedpermissionsInteractions
+import typings.lyricist.anon.ExcludedpermissionsInteractions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait Album extends js.Object {
   var comment_count: Double
   var cover_art_url: String
   var cover_arts: js.Array[_]
-  var current_user_metadata: AnonExcludedpermissionsInteractions
+  var current_user_metadata: ExcludedpermissionsInteractions
   var custom_header_image_url: js.UndefOr[js.Any] = js.undefined
   var description_annotation: DescriptionAnnotation
   var full_title: String
@@ -37,7 +37,7 @@ object Album {
     comment_count: Double,
     cover_art_url: String,
     cover_arts: js.Array[_],
-    current_user_metadata: AnonExcludedpermissionsInteractions,
+    current_user_metadata: ExcludedpermissionsInteractions,
     description_annotation: DescriptionAnnotation,
     full_title: String,
     header_image_url: String,

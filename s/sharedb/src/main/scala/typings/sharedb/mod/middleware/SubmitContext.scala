@@ -40,19 +40,14 @@ object SubmitContext {
     retries: Double,
     start: Double,
     channels: js.Array[String] = null,
-    maxRetries: Int | Double = null,
+    maxRetries: Double = null.asInstanceOf[Double],
     projection: Projection = null,
-    saveMilestoneSnapshot: js.UndefOr[Boolean] = js.undefined,
+    saveMilestoneSnapshot: Boolean = null.asInstanceOf[Boolean],
     snapshot: Snapshot = null,
-    suppressPublish: js.UndefOr[Boolean] = js.undefined
+    suppressPublish: Boolean = null.asInstanceOf[Boolean]
   ): SubmitContext = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], collection = collection.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], ops = ops.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], retries = retries.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], collection = collection.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], ops = ops.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], retries = retries.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], channels = channels.asInstanceOf[js.Any], maxRetries = maxRetries.asInstanceOf[js.Any], saveMilestoneSnapshot = saveMilestoneSnapshot.asInstanceOf[js.Any], snapshot = snapshot.asInstanceOf[js.Any], suppressPublish = suppressPublish.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (!js.isUndefined(saveMilestoneSnapshot)) __obj.updateDynamic("saveMilestoneSnapshot")(saveMilestoneSnapshot.asInstanceOf[js.Any])
-    if (snapshot != null) __obj.updateDynamic("snapshot")(snapshot.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressPublish)) __obj.updateDynamic("suppressPublish")(suppressPublish.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubmitContext]
   }
 }

@@ -32,49 +32,49 @@ object CMsgProtoBufHeader {
   @scala.inline
   def apply(
     admin_spoofing_user: js.UndefOr[Boolean] = js.undefined,
-    auth_account_flags: Int | Double = null,
-    client_sessionid: Int | Double = null,
-    eresult: Int | Double = null,
+    auth_account_flags: js.UndefOr[Double] = js.undefined,
+    client_sessionid: js.UndefOr[Double] = js.undefined,
+    eresult: js.UndefOr[Double] = js.undefined,
     error_message: String = null,
     forward_to_sysid: js.Array[Double] = null,
-    ip: Int | Double = null,
+    ip: js.UndefOr[Double] = js.undefined,
     is_from_external_source: js.UndefOr[Boolean] = js.undefined,
     jobid_source: String = null,
     jobid_target: String = null,
     messageid: String = null,
-    publisher_group_id: Int | Double = null,
-    routing_appid: Int | Double = null,
-    seq_num: Int | Double = null,
+    publisher_group_id: js.UndefOr[Double] = js.undefined,
+    routing_appid: js.UndefOr[Double] = js.undefined,
+    seq_num: js.UndefOr[Double] = js.undefined,
     steamid: String = null,
-    sysid: Int | Double = null,
+    sysid: js.UndefOr[Double] = js.undefined,
     target_job_name: String = null,
-    token_source: Int | Double = null,
+    token_source: js.UndefOr[Double] = js.undefined,
     trace_tag: String = null,
-    transport_error: Int | Double = null,
-    webapi_key_id: Int | Double = null
+    transport_error: js.UndefOr[Double] = js.undefined,
+    webapi_key_id: js.UndefOr[Double] = js.undefined
   ): CMsgProtoBufHeader = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(admin_spoofing_user)) __obj.updateDynamic("admin_spoofing_user")(admin_spoofing_user.asInstanceOf[js.Any])
-    if (auth_account_flags != null) __obj.updateDynamic("auth_account_flags")(auth_account_flags.asInstanceOf[js.Any])
-    if (client_sessionid != null) __obj.updateDynamic("client_sessionid")(client_sessionid.asInstanceOf[js.Any])
-    if (eresult != null) __obj.updateDynamic("eresult")(eresult.asInstanceOf[js.Any])
+    if (!js.isUndefined(admin_spoofing_user)) __obj.updateDynamic("admin_spoofing_user")(admin_spoofing_user.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(auth_account_flags)) __obj.updateDynamic("auth_account_flags")(auth_account_flags.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(client_sessionid)) __obj.updateDynamic("client_sessionid")(client_sessionid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(eresult)) __obj.updateDynamic("eresult")(eresult.get.asInstanceOf[js.Any])
     if (error_message != null) __obj.updateDynamic("error_message")(error_message.asInstanceOf[js.Any])
     if (forward_to_sysid != null) __obj.updateDynamic("forward_to_sysid")(forward_to_sysid.asInstanceOf[js.Any])
-    if (ip != null) __obj.updateDynamic("ip")(ip.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_from_external_source)) __obj.updateDynamic("is_from_external_source")(is_from_external_source.asInstanceOf[js.Any])
+    if (!js.isUndefined(ip)) __obj.updateDynamic("ip")(ip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_from_external_source)) __obj.updateDynamic("is_from_external_source")(is_from_external_source.get.asInstanceOf[js.Any])
     if (jobid_source != null) __obj.updateDynamic("jobid_source")(jobid_source.asInstanceOf[js.Any])
     if (jobid_target != null) __obj.updateDynamic("jobid_target")(jobid_target.asInstanceOf[js.Any])
     if (messageid != null) __obj.updateDynamic("messageid")(messageid.asInstanceOf[js.Any])
-    if (publisher_group_id != null) __obj.updateDynamic("publisher_group_id")(publisher_group_id.asInstanceOf[js.Any])
-    if (routing_appid != null) __obj.updateDynamic("routing_appid")(routing_appid.asInstanceOf[js.Any])
-    if (seq_num != null) __obj.updateDynamic("seq_num")(seq_num.asInstanceOf[js.Any])
+    if (!js.isUndefined(publisher_group_id)) __obj.updateDynamic("publisher_group_id")(publisher_group_id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(routing_appid)) __obj.updateDynamic("routing_appid")(routing_appid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(seq_num)) __obj.updateDynamic("seq_num")(seq_num.get.asInstanceOf[js.Any])
     if (steamid != null) __obj.updateDynamic("steamid")(steamid.asInstanceOf[js.Any])
-    if (sysid != null) __obj.updateDynamic("sysid")(sysid.asInstanceOf[js.Any])
+    if (!js.isUndefined(sysid)) __obj.updateDynamic("sysid")(sysid.get.asInstanceOf[js.Any])
     if (target_job_name != null) __obj.updateDynamic("target_job_name")(target_job_name.asInstanceOf[js.Any])
-    if (token_source != null) __obj.updateDynamic("token_source")(token_source.asInstanceOf[js.Any])
+    if (!js.isUndefined(token_source)) __obj.updateDynamic("token_source")(token_source.get.asInstanceOf[js.Any])
     if (trace_tag != null) __obj.updateDynamic("trace_tag")(trace_tag.asInstanceOf[js.Any])
-    if (transport_error != null) __obj.updateDynamic("transport_error")(transport_error.asInstanceOf[js.Any])
-    if (webapi_key_id != null) __obj.updateDynamic("webapi_key_id")(webapi_key_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(transport_error)) __obj.updateDynamic("transport_error")(transport_error.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(webapi_key_id)) __obj.updateDynamic("webapi_key_id")(webapi_key_id.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CMsgProtoBufHeader]
   }
 }

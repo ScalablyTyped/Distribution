@@ -6,24 +6,24 @@ import scala.scalajs.js.annotation._
 
 trait DragStartEventUIParam extends js.Object {
   /**
-  	 * Gets a reference to the helper.
-  	 */
+    * Gets a reference to the helper.
+    */
   var helper: js.UndefOr[String] = js.undefined
   /**
-  	 * Gets a reference to the data.
-  	 */
+    * Gets a reference to the data.
+    */
   var metadata: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Gets a reference to the offset.
-  	 */
+    * Gets a reference to the offset.
+    */
   var offset: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Gets a reference to the original position of the draggable element.
-  	 */
+    * Gets a reference to the original position of the draggable element.
+    */
   var originalPosition: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Gets a reference to the current position of the draggable element.
-  	 */
+    * Gets a reference to the current position of the draggable element.
+    */
   var position: js.UndefOr[js.Any] = js.undefined
 }
 

@@ -22,11 +22,15 @@ trait HopDestination extends js.Object {
 
 object HopDestination {
   @scala.inline
-  def apply(Priority: Int | Double = null, Queue: string = null, WaitMinutes: Int | Double = null): HopDestination = {
+  def apply(
+    Priority: js.UndefOr[integerMinNegative50Max50] = js.undefined,
+    Queue: string = null,
+    WaitMinutes: js.UndefOr[integer] = js.undefined
+  ): HopDestination = {
     val __obj = js.Dynamic.literal()
-    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority.get.asInstanceOf[js.Any])
     if (Queue != null) __obj.updateDynamic("Queue")(Queue.asInstanceOf[js.Any])
-    if (WaitMinutes != null) __obj.updateDynamic("WaitMinutes")(WaitMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(WaitMinutes)) __obj.updateDynamic("WaitMinutes")(WaitMinutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HopDestination]
   }
 }

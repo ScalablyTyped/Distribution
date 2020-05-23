@@ -14,10 +14,13 @@ trait IClientEventsGetResponse extends js.Object {
 
 object IClientEventsGetResponse {
   @scala.inline
-  def apply(events: js.Array[IEvent] = null, status: Status = null): IClientEventsGetResponse = {
+  def apply(
+    events: js.UndefOr[Null | js.Array[IEvent]] = js.undefined,
+    status: js.UndefOr[Null | Status] = js.undefined
+  ): IClientEventsGetResponse = {
     val __obj = js.Dynamic.literal()
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(events)) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientEventsGetResponse]
   }
 }

@@ -1,6 +1,6 @@
 package typings.antd.tabsMod
 
-import typings.antd.AnonHideAdd
+import typings.antd.anon.HideAdd
 import typings.react.mod.ClassicComponentClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,6 +15,6 @@ class default () extends Tabs
 @js.native
 object default extends js.Object {
   var TabPane: ClassicComponentClass[TabPaneProps] = js.native
-  var defaultProps: AnonHideAdd = js.native
+  var defaultProps: HideAdd = js.native
 }
 

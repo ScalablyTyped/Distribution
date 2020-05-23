@@ -22,21 +22,21 @@ object Options {
     bgcolor: String = null,
     cachebust: js.UndefOr[Boolean] = js.undefined,
     filter: /* node */ Node => Boolean = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     imagePlaceholder: String = null,
-    quality: Int | Double = null,
+    quality: js.UndefOr[Double] = js.undefined,
     style: js.Object = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (bgcolor != null) __obj.updateDynamic("bgcolor")(bgcolor.asInstanceOf[js.Any])
-    if (!js.isUndefined(cachebust)) __obj.updateDynamic("cachebust")(cachebust.asInstanceOf[js.Any])
+    if (!js.isUndefined(cachebust)) __obj.updateDynamic("cachebust")(cachebust.get.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (imagePlaceholder != null) __obj.updateDynamic("imagePlaceholder")(imagePlaceholder.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

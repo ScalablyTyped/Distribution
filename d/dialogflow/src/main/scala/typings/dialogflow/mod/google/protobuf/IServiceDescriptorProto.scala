@@ -17,14 +17,14 @@ trait IServiceDescriptorProto extends js.Object {
 object IServiceDescriptorProto {
   @scala.inline
   def apply(
-    method: js.Array[IMethodDescriptorProto] = null,
-    name: String = null,
-    options: IServiceOptions = null
+    method: js.UndefOr[Null | js.Array[IMethodDescriptorProto]] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined,
+    options: js.UndefOr[Null | IServiceOptions] = js.undefined
   ): IServiceDescriptorProto = {
     val __obj = js.Dynamic.literal()
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (!js.isUndefined(method)) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(options)) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[IServiceDescriptorProto]
   }
 }

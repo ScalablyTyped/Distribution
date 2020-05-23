@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @type {string}
-  * @name pc.EVENT_TOUCHMOVE
-  * @description Name of event fired when a touch moves.
+  * Name of event fired when a touch moves.
   */
 @JSImport("playcanvas", "EVENT_TOUCHMOVE")
 @js.native

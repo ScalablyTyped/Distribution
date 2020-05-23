@@ -13,12 +13,12 @@ trait IntersectionObserverInit extends js.Object {
 object IntersectionObserverInit {
   @scala.inline
   def apply(
-    root: Element = null,
+    root: js.UndefOr[Null | Element] = js.undefined,
     rootMargin: java.lang.String = null,
     threshold: Double | js.Array[Double] = null
   ): IntersectionObserverInit = {
     val __obj = js.Dynamic.literal()
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     if (rootMargin != null) __obj.updateDynamic("rootMargin")(rootMargin.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntersectionObserverInit]

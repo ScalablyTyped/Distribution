@@ -49,17 +49,17 @@ object Rule {
     lineBreaks: js.UndefOr[Boolean] = js.undefined,
     `match`: RegExp | String | js.Array[String] = null,
     next: String = null,
-    pop: Int | Double = null,
+    pop: js.UndefOr[Double] = js.undefined,
     push: String = null,
     `type`: /* x */ String => String = null,
     value: /* x */ String => String = null
   ): Rule = {
     val __obj = js.Dynamic.literal()
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineBreaks)) __obj.updateDynamic("lineBreaks")(lineBreaks.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineBreaks)) __obj.updateDynamic("lineBreaks")(lineBreaks.get.asInstanceOf[js.Any])
     if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
-    if (pop != null) __obj.updateDynamic("pop")(pop.asInstanceOf[js.Any])
+    if (!js.isUndefined(pop)) __obj.updateDynamic("pop")(pop.get.asInstanceOf[js.Any])
     if (push != null) __obj.updateDynamic("push")(push.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(js.Any.fromFunction1(`type`))
     if (value != null) __obj.updateDynamic("value")(js.Any.fromFunction1(value))

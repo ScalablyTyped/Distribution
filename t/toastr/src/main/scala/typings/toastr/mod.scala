@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("toastr", JSImport.Namespace)
 @js.native
-object mod extends TopLevel[Toastr_]
+object mod extends TopLevel[Toastr]
 

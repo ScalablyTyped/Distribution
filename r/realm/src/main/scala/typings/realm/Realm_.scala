@@ -1,6 +1,5 @@
 package typings.realm
 
-import typings.realm.Realm.Configuration
 import typings.realm.Realm.List
 import typings.realm.Realm.Object
 import typings.realm.Realm.ObjectClass
@@ -21,14 +20,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Realm")
 @js.native
-/**
-  * @param  {Realm.Configuration} config?
-  */
-class Realm_ () extends js.Object {
-  def this(config: Configuration) = this()
-  def this(path: String) = this()
+trait Realm_ extends js.Object {
   val empty: Boolean = js.native
   val isClosed: Boolean = js.native
   val isInTransaction: Boolean = js.native

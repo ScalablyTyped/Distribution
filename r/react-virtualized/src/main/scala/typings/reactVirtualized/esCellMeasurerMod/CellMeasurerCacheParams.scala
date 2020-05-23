@@ -17,22 +17,22 @@ trait CellMeasurerCacheParams extends js.Object {
 object CellMeasurerCacheParams {
   @scala.inline
   def apply(
-    defaultHeight: Int | Double = null,
-    defaultWidth: Int | Double = null,
+    defaultHeight: js.UndefOr[Double] = js.undefined,
+    defaultWidth: js.UndefOr[Double] = js.undefined,
     fixedHeight: js.UndefOr[Boolean] = js.undefined,
     fixedWidth: js.UndefOr[Boolean] = js.undefined,
     keyMapper: (/* rowIndex */ Double, /* columnIndex */ Double) => js.Any = null,
-    minHeight: Int | Double = null,
-    minWidth: Int | Double = null
+    minHeight: js.UndefOr[Double] = js.undefined,
+    minWidth: js.UndefOr[Double] = js.undefined
   ): CellMeasurerCacheParams = {
     val __obj = js.Dynamic.literal()
-    if (defaultHeight != null) __obj.updateDynamic("defaultHeight")(defaultHeight.asInstanceOf[js.Any])
-    if (defaultWidth != null) __obj.updateDynamic("defaultWidth")(defaultWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedHeight)) __obj.updateDynamic("fixedHeight")(fixedHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedWidth)) __obj.updateDynamic("fixedWidth")(fixedWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultHeight)) __obj.updateDynamic("defaultHeight")(defaultHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultWidth)) __obj.updateDynamic("defaultWidth")(defaultWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedHeight)) __obj.updateDynamic("fixedHeight")(fixedHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedWidth)) __obj.updateDynamic("fixedWidth")(fixedWidth.get.asInstanceOf[js.Any])
     if (keyMapper != null) __obj.updateDynamic("keyMapper")(js.Any.fromFunction2(keyMapper))
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellMeasurerCacheParams]
   }
 }

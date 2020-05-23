@@ -12,18 +12,8 @@ import scala.scalajs.js.annotation._
   * the response as an image.
   * @see https://docs.scriptable.app/request/#-new-request
   */
-@JSGlobal("Request")
 @js.native
-class Request protected () extends js.Object {
-  /**
-    * _Performs HTTP requests._
-    *
-    * Constructs a new request that will be sent to the provided URL. The request is not sent until an appropriate load method is called, e.g. loadImage for downloading and interpreting
-    * the response as an image.
-    * @param url - URL to send request to.
-    * @see https://docs.scriptable.app/request/#-new-request
-    */
-  def this(url: String) = this()
+trait Request extends js.Object {
   /**
     * _Allow the request even if it is deemed insecure._
     *

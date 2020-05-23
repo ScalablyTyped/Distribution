@@ -6,7 +6,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TagResourceRequest extends js.Object {
+  /**
+    * The ARN of the resource.
+    */
   var ResourceArn: string = js.native
+  /**
+    * Tags associated with the resource.
+    */
   var Tags: typings.awsSdk.schemasMod.Tags = js.native
 }
 

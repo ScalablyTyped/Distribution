@@ -1,6 +1,6 @@
 package typings.facebookJsSdk.facebook
 
-import typings.facebookJsSdk.AnonName
+import typings.facebookJsSdk.anon.Name
 import typings.facebookJsSdk.facebookJsSdkStrings.app_non_users
 import typings.facebookJsSdk.facebookJsSdkStrings.app_users
 import typings.facebookJsSdk.facebookJsSdkStrings.apprequests
@@ -19,7 +19,7 @@ trait GameRequestDialogParams extends DialogParams {
   var action_type: js.UndefOr[send | askfor | turn] = js.undefined
   var data: js.UndefOr[String] = js.undefined
   var exclude_ids: js.UndefOr[js.Array[String]] = js.undefined
-  var filters: js.UndefOr[app_users | app_non_users | js.Array[AnonName]] = js.undefined
+  var filters: js.UndefOr[app_users | app_non_users | js.Array[Name]] = js.undefined
   var max_recipients: js.UndefOr[Double] = js.undefined
   var message: String
   var method: apprequests
@@ -39,8 +39,8 @@ object GameRequestDialogParams {
     data: String = null,
     display: page | iframe | async | popup = null,
     exclude_ids: js.Array[String] = null,
-    filters: app_users | app_non_users | js.Array[AnonName] = null,
-    max_recipients: Int | Double = null,
+    filters: app_users | app_non_users | js.Array[Name] = null,
+    max_recipients: js.UndefOr[Double] = js.undefined,
     object_id: String = null,
     redirect_uri: String = null,
     suggestions: js.Array[String] = null,
@@ -54,7 +54,7 @@ object GameRequestDialogParams {
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (exclude_ids != null) __obj.updateDynamic("exclude_ids")(exclude_ids.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (max_recipients != null) __obj.updateDynamic("max_recipients")(max_recipients.asInstanceOf[js.Any])
+    if (!js.isUndefined(max_recipients)) __obj.updateDynamic("max_recipients")(max_recipients.get.asInstanceOf[js.Any])
     if (object_id != null) __obj.updateDynamic("object_id")(object_id.asInstanceOf[js.Any])
     if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
     if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])

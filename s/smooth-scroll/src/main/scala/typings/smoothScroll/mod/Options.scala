@@ -37,8 +37,8 @@ object Options {
   def apply(
     clip: js.UndefOr[Boolean] = js.undefined,
     customEasing: /* time */ Double => Double = null,
-    durationMax: Int | Double = null,
-    durationMin: Int | Double = null,
+    durationMax: js.UndefOr[Null | Double] = js.undefined,
+    durationMin: js.UndefOr[Null | Double] = js.undefined,
     easing: Easing = null,
     emitEvents: js.UndefOr[Boolean] = js.undefined,
     header: String = null,
@@ -49,26 +49,26 @@ object Options {
       Double
     ]) = null,
     popstate: js.UndefOr[Boolean] = js.undefined,
-    speed: Int | Double = null,
+    speed: js.UndefOr[Double] = js.undefined,
     speedAsDuration: js.UndefOr[Boolean] = js.undefined,
     topOnEmptyHash: js.UndefOr[Boolean] = js.undefined,
     updateURL: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
+    if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip.get.asInstanceOf[js.Any])
     if (customEasing != null) __obj.updateDynamic("customEasing")(js.Any.fromFunction1(customEasing))
-    if (durationMax != null) __obj.updateDynamic("durationMax")(durationMax.asInstanceOf[js.Any])
-    if (durationMin != null) __obj.updateDynamic("durationMin")(durationMin.asInstanceOf[js.Any])
+    if (!js.isUndefined(durationMax)) __obj.updateDynamic("durationMax")(durationMax.asInstanceOf[js.Any])
+    if (!js.isUndefined(durationMin)) __obj.updateDynamic("durationMin")(durationMin.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (!js.isUndefined(emitEvents)) __obj.updateDynamic("emitEvents")(emitEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(emitEvents)) __obj.updateDynamic("emitEvents")(emitEvents.get.asInstanceOf[js.Any])
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(popstate)) __obj.updateDynamic("popstate")(popstate.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
-    if (!js.isUndefined(speedAsDuration)) __obj.updateDynamic("speedAsDuration")(speedAsDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(topOnEmptyHash)) __obj.updateDynamic("topOnEmptyHash")(topOnEmptyHash.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateURL)) __obj.updateDynamic("updateURL")(updateURL.asInstanceOf[js.Any])
+    if (!js.isUndefined(popstate)) __obj.updateDynamic("popstate")(popstate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(speedAsDuration)) __obj.updateDynamic("speedAsDuration")(speedAsDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(topOnEmptyHash)) __obj.updateDynamic("topOnEmptyHash")(topOnEmptyHash.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateURL)) __obj.updateDynamic("updateURL")(updateURL.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

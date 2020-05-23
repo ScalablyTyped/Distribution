@@ -1,7 +1,7 @@
 package typings.baseui.mod
 
-import typings.baseui.AnonClassName
-import typings.baseui.AnonTheme
+import typings.baseui.anon.ClassName
+import typings.baseui.anon.Theme
 import typings.baseui.baseuiStrings.canvas
 import typings.react.mod.ComponentProps
 import typings.std.Exclude
@@ -15,16 +15,16 @@ import scala.scalajs.js.annotation._
 @JSImport("baseui", "styled")
 @js.native
 object styled_canvas extends js.Object {
-  def apply[P /* <: js.Object */, T](component: canvas, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[
+  def apply[P /* <: js.Object */, T](component: canvas, styledFn: js.Function1[/* props */ Theme[T] with P, StyleObject]): StyletronComponent[
     (Pick[
       ComponentProps[canvas], 
-      Exclude[/* keyof react.react.ComponentProps<'canvas'> */ String, AnonClassName]
+      Exclude[/* keyof react.react.ComponentProps<'canvas'> */ String, ClassName]
     ]) with P
   ] = js.native
   def apply[P /* <: js.Object */, T](component: canvas, styledFn: StyleObject): StyletronComponent[
     (Pick[
       ComponentProps[canvas], 
-      Exclude[/* keyof react.react.ComponentProps<'canvas'> */ String, AnonClassName]
+      Exclude[/* keyof react.react.ComponentProps<'canvas'> */ String, ClassName]
     ]) with P
   ] = js.native
 }

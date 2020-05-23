@@ -29,11 +29,11 @@ object IonTab {
     active: Boolean,
     setActive: () => js.Promise[Unit],
     tab: String,
-    component: ComponentRef = null,
+    component: js.UndefOr[Null | ComponentRef] = js.undefined,
     delegate: FrameworkDelegate = null
   ): IonTab = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], setActive = js.Any.fromFunction0(setActive), tab = tab.asInstanceOf[js.Any])
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (!js.isUndefined(component)) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (delegate != null) __obj.updateDynamic("delegate")(delegate.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonTab]
   }

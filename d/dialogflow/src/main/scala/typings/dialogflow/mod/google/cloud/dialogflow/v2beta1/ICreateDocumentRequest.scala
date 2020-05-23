@@ -14,10 +14,13 @@ trait ICreateDocumentRequest extends js.Object {
 
 object ICreateDocumentRequest {
   @scala.inline
-  def apply(document: IDocument = null, parent: String = null): ICreateDocumentRequest = {
+  def apply(
+    document: js.UndefOr[Null | IDocument] = js.undefined,
+    parent: js.UndefOr[Null | String] = js.undefined
+  ): ICreateDocumentRequest = {
     val __obj = js.Dynamic.literal()
-    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(document)) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICreateDocumentRequest]
   }
 }

@@ -21,7 +21,7 @@ trait IChangedArgs[T, OldT, U /* <: String */] extends js.Object {
 
 object IChangedArgs {
   @scala.inline
-  def apply[T, OldT, U /* <: String */](name: U, newValue: T, oldValue: OldT): IChangedArgs[T, OldT, U] = {
+  def apply[T, OldT, U](name: U, newValue: T, oldValue: OldT): IChangedArgs[T, OldT, U] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChangedArgs[T, OldT, U]]
   }

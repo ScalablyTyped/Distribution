@@ -1,7 +1,7 @@
 package typings.reactGamepad.mod
 
 import typings.react.mod.Component
-import typings.reactGamepad.AnonXBOX
+import typings.reactGamepad.anon.XBOX
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class default ()
 @JSImport("react-gamepad", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var layouts: AnonXBOX = js.native
+  var layouts: XBOX = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.antdMobileRn.resultIndexNativeMod
 
-import typings.antdMobileRn.AnonButtonClick
+import typings.antdMobileRn.anon.ButtonClick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends Result
 @JSImport("antd-mobile-rn/lib/result/index.native", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonButtonClick = js.native
+  var defaultProps: ButtonClick = js.native
 }
 

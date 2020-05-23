@@ -5,29 +5,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Sets the friction (e.g. the amount of velocity reduced over time) of the physics body when moving horizontally in the X axis. The higher than friction, the faster the body will slow down once force stops being applied to it.
+  * Methods for setting the friction of an Arcade Physics Body.
+  * 
+  * In Arcade Physics, friction is a special case of motion transfer from an "immovable" body to a riding body.
   */
 @js.native
 trait Friction extends js.Object {
   /**
-    * Sets the friction (e.g. the amount of velocity reduced over time) of the physics body when moving.
-    * The higher than friction, the faster the body will slow down once force stops being applied to it.
-    * @param x The amount of horizontal friction to apply.
-    * @param y The amount of vertical friction to apply. Default x.
+    * Sets the friction of this game object's physics body.
+    * In Arcade Physics, friction is a special case of motion transfer from an "immovable" body to a riding body.
+    * @param x The amount of horizontal friction to apply, [0, 1].
+    * @param y The amount of vertical friction to apply, [0, 1]. Default x.
     */
   def setFriction(x: Double): this.type = js.native
   def setFriction(x: Double, y: Double): this.type = js.native
   /**
-    * Sets the friction (e.g. the amount of velocity reduced over time) of the physics body when moving horizontally in the X axis.
-    * The higher than friction, the faster the body will slow down once force stops being applied to it.
-    * @param x The amount of friction to apply.
+    * Sets the horizontal friction of this game object's physics body.
+    * This can move a riding body horizontally when it collides with this one on the vertical axis.
+    * @param x The amount of friction to apply, [0, 1].
     */
   def setFrictionX(x: Double): this.type = js.native
   /**
-    * Sets the friction (e.g. the amount of velocity reduced over time) of the physics body when moving vertically in the Y axis.
-    * The higher than friction, the faster the body will slow down once force stops being applied to it.
-    * @param x The amount of friction to apply.
+    * Sets the vertical friction of this game object's physics body.
+    * This can move a riding body vertically when it collides with this one on the horizontal axis.
+    * @param y The amount of friction to apply, [0, 1].
     */
-  def setFrictionY(x: Double): this.type = js.native
+  def setFrictionY(y: Double): this.type = js.native
 }
 

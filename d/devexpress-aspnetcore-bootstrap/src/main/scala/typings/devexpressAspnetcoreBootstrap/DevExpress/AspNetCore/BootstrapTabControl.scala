@@ -10,9 +10,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapTabControl")
 @js.native
-class BootstrapTabControl () extends Control {
+trait BootstrapTabControl extends Control {
   def adjustSize(): Unit = js.native
   def getActiveTab(): BootstrapTab | Null = js.native
   def getActiveTabIndex(): Double = js.native

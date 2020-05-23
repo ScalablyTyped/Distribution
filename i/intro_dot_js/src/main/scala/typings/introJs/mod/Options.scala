@@ -49,10 +49,10 @@ object Options {
     hints: js.Array[Hint] = null,
     keyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     nextLabel: String = null,
-    overlayOpacity: Int | Double = null,
+    overlayOpacity: js.UndefOr[Double] = js.undefined,
     positionPrecedence: js.Array[String] = null,
     prevLabel: String = null,
-    scrollPadding: Int | Double = null,
+    scrollPadding: js.UndefOr[Double] = js.undefined,
     scrollToElement: js.UndefOr[Boolean] = js.undefined,
     showBullets: js.UndefOr[Boolean] = js.undefined,
     showButtons: js.UndefOr[Boolean] = js.undefined,
@@ -64,28 +64,28 @@ object Options {
     tooltipPosition: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableInteraction)) __obj.updateDynamic("disableInteraction")(disableInteraction.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableInteraction)) __obj.updateDynamic("disableInteraction")(disableInteraction.get.asInstanceOf[js.Any])
     if (doneLabel != null) __obj.updateDynamic("doneLabel")(doneLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(exitOnEsc)) __obj.updateDynamic("exitOnEsc")(exitOnEsc.asInstanceOf[js.Any])
-    if (!js.isUndefined(exitOnOverlayClick)) __obj.updateDynamic("exitOnOverlayClick")(exitOnOverlayClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideNext)) __obj.updateDynamic("hideNext")(hideNext.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidePrev)) __obj.updateDynamic("hidePrev")(hidePrev.asInstanceOf[js.Any])
+    if (!js.isUndefined(exitOnEsc)) __obj.updateDynamic("exitOnEsc")(exitOnEsc.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exitOnOverlayClick)) __obj.updateDynamic("exitOnOverlayClick")(exitOnOverlayClick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideNext)) __obj.updateDynamic("hideNext")(hideNext.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidePrev)) __obj.updateDynamic("hidePrev")(hidePrev.get.asInstanceOf[js.Any])
     if (highlightClass != null) __obj.updateDynamic("highlightClass")(highlightClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(hintAnimation)) __obj.updateDynamic("hintAnimation")(hintAnimation.asInstanceOf[js.Any])
+    if (!js.isUndefined(hintAnimation)) __obj.updateDynamic("hintAnimation")(hintAnimation.get.asInstanceOf[js.Any])
     if (hintButtonLabel != null) __obj.updateDynamic("hintButtonLabel")(hintButtonLabel.asInstanceOf[js.Any])
     if (hintPosition != null) __obj.updateDynamic("hintPosition")(hintPosition.asInstanceOf[js.Any])
     if (hints != null) __obj.updateDynamic("hints")(hints.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboardNavigation)) __obj.updateDynamic("keyboardNavigation")(keyboardNavigation.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboardNavigation)) __obj.updateDynamic("keyboardNavigation")(keyboardNavigation.get.asInstanceOf[js.Any])
     if (nextLabel != null) __obj.updateDynamic("nextLabel")(nextLabel.asInstanceOf[js.Any])
-    if (overlayOpacity != null) __obj.updateDynamic("overlayOpacity")(overlayOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlayOpacity)) __obj.updateDynamic("overlayOpacity")(overlayOpacity.get.asInstanceOf[js.Any])
     if (positionPrecedence != null) __obj.updateDynamic("positionPrecedence")(positionPrecedence.asInstanceOf[js.Any])
     if (prevLabel != null) __obj.updateDynamic("prevLabel")(prevLabel.asInstanceOf[js.Any])
-    if (scrollPadding != null) __obj.updateDynamic("scrollPadding")(scrollPadding.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollToElement)) __obj.updateDynamic("scrollToElement")(scrollToElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(showBullets)) __obj.updateDynamic("showBullets")(showBullets.asInstanceOf[js.Any])
-    if (!js.isUndefined(showButtons)) __obj.updateDynamic("showButtons")(showButtons.asInstanceOf[js.Any])
-    if (!js.isUndefined(showProgress)) __obj.updateDynamic("showProgress")(showProgress.asInstanceOf[js.Any])
-    if (!js.isUndefined(showStepNumbers)) __obj.updateDynamic("showStepNumbers")(showStepNumbers.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollPadding)) __obj.updateDynamic("scrollPadding")(scrollPadding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollToElement)) __obj.updateDynamic("scrollToElement")(scrollToElement.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showBullets)) __obj.updateDynamic("showBullets")(showBullets.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showButtons)) __obj.updateDynamic("showButtons")(showButtons.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showProgress)) __obj.updateDynamic("showProgress")(showProgress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showStepNumbers)) __obj.updateDynamic("showStepNumbers")(showStepNumbers.get.asInstanceOf[js.Any])
     if (skipLabel != null) __obj.updateDynamic("skipLabel")(skipLabel.asInstanceOf[js.Any])
     if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
     if (tooltipClass != null) __obj.updateDynamic("tooltipClass")(tooltipClass.asInstanceOf[js.Any])

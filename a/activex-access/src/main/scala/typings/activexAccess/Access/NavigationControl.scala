@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.NavigationControl")
 @js.native
-class NavigationControl protected () extends js.Object {
+trait NavigationControl extends js.Object {
   @JSName("Access.NavigationControl_typekey")
   var AccessDotNavigationControl_typekey: NavigationControl = js.native
   var AllowedText: Double = js.native

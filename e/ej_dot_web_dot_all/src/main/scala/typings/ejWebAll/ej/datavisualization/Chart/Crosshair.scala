@@ -38,7 +38,7 @@ object Crosshair {
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
     if (trackballTooltipSettings != null) __obj.updateDynamic("trackballTooltipSettings")(trackballTooltipSettings.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Crosshair]
   }
 }

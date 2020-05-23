@@ -19,12 +19,12 @@ trait EvaluationParameters extends js.Object {
 object EvaluationParameters {
   @scala.inline
   def apply(
-    BackTestWindowOffset: Int | scala.Double = null,
-    NumberOfBacktestWindows: Int | scala.Double = null
+    BackTestWindowOffset: js.UndefOr[Integer] = js.undefined,
+    NumberOfBacktestWindows: js.UndefOr[Integer] = js.undefined
   ): EvaluationParameters = {
     val __obj = js.Dynamic.literal()
-    if (BackTestWindowOffset != null) __obj.updateDynamic("BackTestWindowOffset")(BackTestWindowOffset.asInstanceOf[js.Any])
-    if (NumberOfBacktestWindows != null) __obj.updateDynamic("NumberOfBacktestWindows")(NumberOfBacktestWindows.asInstanceOf[js.Any])
+    if (!js.isUndefined(BackTestWindowOffset)) __obj.updateDynamic("BackTestWindowOffset")(BackTestWindowOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfBacktestWindows)) __obj.updateDynamic("NumberOfBacktestWindows")(NumberOfBacktestWindows.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EvaluationParameters]
   }
 }

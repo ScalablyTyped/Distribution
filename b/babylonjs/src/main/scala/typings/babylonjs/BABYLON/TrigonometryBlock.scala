@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.TrigonometryBlock")
 @js.native
-class TrigonometryBlock protected () extends NodeMaterialBlock {
-  /**
-    * Creates a new TrigonometryBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait TrigonometryBlock extends NodeMaterialBlock {
   /**
     * Gets or sets the operation applied by the block
     */

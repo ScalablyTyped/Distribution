@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,8 +60,4 @@ trait SpatialReference
     */
   def equals(spatialReference: SpatialReference): Boolean = js.native
 }
-
-@JSGlobal("__esri.SpatialReference")
-@js.native
-object SpatialReference extends TopLevel[SpatialReferenceConstructor]
 

@@ -1,5 +1,6 @@
 package typings.knockoutPaging
 
+import typings.knockoutPaging.anon.Paged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait KnockoutObservableArray[T]
   extends KnockoutObservable[js.Array[T]]
      with KnockoutObservableArrayFunctions[T] {
-  def extend(requestedExtenders: AnonPaged): KnockoutPagedObservableArray[T] = js.native
+  def extend(requestedExtenders: Paged): KnockoutPagedObservableArray[T] = js.native
 }
 

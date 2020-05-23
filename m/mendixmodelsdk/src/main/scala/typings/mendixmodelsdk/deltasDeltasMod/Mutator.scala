@@ -16,16 +16,15 @@ trait Mutator extends js.Object
 
 object Mutator {
   @scala.inline
-  def IChangeMutator(mutatorType: CHANGE, updateIndex: Int | Double = null, value: PrimitiveValue = null): Mutator = {
-    val __obj = js.Dynamic.literal(mutatorType = mutatorType.asInstanceOf[js.Any])
-    if (updateIndex != null) __obj.updateDynamic("updateIndex")(updateIndex.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+  def IChangeMutator(mutatorType: CHANGE, updateIndex: js.UndefOr[Double] = js.undefined, value: PrimitiveValue = null): Mutator = {
+    val __obj = js.Dynamic.literal(mutatorType = mutatorType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateIndex)) __obj.updateDynamic("updateIndex")(updateIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mutator]
   }
   @scala.inline
-  def IAddMutator(mutatorType: ADD, value: PrimitiveValue, insertionIndex: Int | Double = null): Mutator = {
+  def IAddMutator(mutatorType: ADD, value: PrimitiveValue, insertionIndex: js.UndefOr[Double] = js.undefined): Mutator = {
     val __obj = js.Dynamic.literal(mutatorType = mutatorType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (insertionIndex != null) __obj.updateDynamic("insertionIndex")(insertionIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(insertionIndex)) __obj.updateDynamic("insertionIndex")(insertionIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mutator]
   }
   @scala.inline

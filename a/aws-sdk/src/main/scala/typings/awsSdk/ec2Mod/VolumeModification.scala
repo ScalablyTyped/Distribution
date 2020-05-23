@@ -61,28 +61,28 @@ object VolumeModification {
   def apply(
     EndTime: DateTime = null,
     ModificationState: VolumeModificationState = null,
-    OriginalIops: Int | scala.Double = null,
-    OriginalSize: Int | scala.Double = null,
+    OriginalIops: js.UndefOr[Integer] = js.undefined,
+    OriginalSize: js.UndefOr[Integer] = js.undefined,
     OriginalVolumeType: VolumeType = null,
-    Progress: Int | scala.Double = null,
+    Progress: js.UndefOr[Long] = js.undefined,
     StartTime: DateTime = null,
     StatusMessage: String = null,
-    TargetIops: Int | scala.Double = null,
-    TargetSize: Int | scala.Double = null,
+    TargetIops: js.UndefOr[Integer] = js.undefined,
+    TargetSize: js.UndefOr[Integer] = js.undefined,
     TargetVolumeType: VolumeType = null,
     VolumeId: String = null
   ): VolumeModification = {
     val __obj = js.Dynamic.literal()
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
     if (ModificationState != null) __obj.updateDynamic("ModificationState")(ModificationState.asInstanceOf[js.Any])
-    if (OriginalIops != null) __obj.updateDynamic("OriginalIops")(OriginalIops.asInstanceOf[js.Any])
-    if (OriginalSize != null) __obj.updateDynamic("OriginalSize")(OriginalSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(OriginalIops)) __obj.updateDynamic("OriginalIops")(OriginalIops.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(OriginalSize)) __obj.updateDynamic("OriginalSize")(OriginalSize.get.asInstanceOf[js.Any])
     if (OriginalVolumeType != null) __obj.updateDynamic("OriginalVolumeType")(OriginalVolumeType.asInstanceOf[js.Any])
-    if (Progress != null) __obj.updateDynamic("Progress")(Progress.asInstanceOf[js.Any])
+    if (!js.isUndefined(Progress)) __obj.updateDynamic("Progress")(Progress.get.asInstanceOf[js.Any])
     if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
     if (StatusMessage != null) __obj.updateDynamic("StatusMessage")(StatusMessage.asInstanceOf[js.Any])
-    if (TargetIops != null) __obj.updateDynamic("TargetIops")(TargetIops.asInstanceOf[js.Any])
-    if (TargetSize != null) __obj.updateDynamic("TargetSize")(TargetSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(TargetIops)) __obj.updateDynamic("TargetIops")(TargetIops.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TargetSize)) __obj.updateDynamic("TargetSize")(TargetSize.get.asInstanceOf[js.Any])
     if (TargetVolumeType != null) __obj.updateDynamic("TargetVolumeType")(TargetVolumeType.asInstanceOf[js.Any])
     if (VolumeId != null) __obj.updateDynamic("VolumeId")(VolumeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeModification]

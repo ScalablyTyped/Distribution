@@ -10,8 +10,8 @@ object pTimeoutMod extends js.Object {
   def default(
     promise: js.Promise[_],
     ms: Double,
-    clearTimeout: /* import warning: importer.ImportType#apply Failed type conversion: jest-jasmine2.jest-jasmine2/build/types._Global_.NodeJS.Global['clearTimeout'] */ js.Any,
-    setTimeout: /* import warning: importer.ImportType#apply Failed type conversion: jest-jasmine2.jest-jasmine2/build/types._Global_.NodeJS.Global['setTimeout'] */ js.Any,
+    clearTimeout: /* import warning: importer.ImportType#apply Failed type conversion: jest-jasmine2.jest-jasmine2/build/types.<global>.NodeJS.Global['clearTimeout'] */ js.Any,
+    setTimeout: /* import warning: importer.ImportType#apply Failed type conversion: jest-jasmine2.jest-jasmine2/build/types.<global>.NodeJS.Global['setTimeout'] */ js.Any,
     onTimeout: js.Function0[_]
   ): js.Promise[_] = js.native
 }

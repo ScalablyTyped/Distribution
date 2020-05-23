@@ -19,7 +19,7 @@ object Provider {
   @scala.inline
   def apply(
     handleAPI: API => Unit,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     channel: Channel = null,
     renderPreview: () => ReactElement = null
   ): Provider = {

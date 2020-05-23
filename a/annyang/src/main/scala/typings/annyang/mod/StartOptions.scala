@@ -19,8 +19,8 @@ object StartOptions {
   @scala.inline
   def apply(autoRestart: js.UndefOr[Boolean] = js.undefined, continuous: js.UndefOr[Boolean] = js.undefined): StartOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoRestart)) __obj.updateDynamic("autoRestart")(autoRestart.asInstanceOf[js.Any])
-    if (!js.isUndefined(continuous)) __obj.updateDynamic("continuous")(continuous.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoRestart)) __obj.updateDynamic("autoRestart")(autoRestart.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(continuous)) __obj.updateDynamic("continuous")(continuous.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartOptions]
   }
 }

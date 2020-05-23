@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.handleMod
 
-import typings.blueprintjsCore.AnonIsMoving
+import typings.blueprintjsCore.anon.IsMoving
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.TouchEvent
@@ -32,7 +32,7 @@ class Handle ()
   var refHandlers: js.Any = js.native
   var removeDocumentEventListeners: js.Any = js.native
   @JSName("state")
-  var state_Handle: AnonIsMoving = js.native
+  var state_Handle: IsMoving = js.native
   def beginHandleMovement(event: typings.react.mod.MouseEvent[HTMLElement, MouseEvent]): Unit = js.native
   def beginHandleMovement(event: MouseEvent): Unit = js.native
   def beginHandleTouchMovement(event: TouchEvent[HTMLElement]): Unit = js.native

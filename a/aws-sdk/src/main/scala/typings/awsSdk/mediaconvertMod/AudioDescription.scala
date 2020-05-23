@@ -53,7 +53,7 @@ object AudioDescription {
   def apply(
     AudioNormalizationSettings: AudioNormalizationSettings = null,
     AudioSourceName: string = null,
-    AudioType: Int | Double = null,
+    AudioType: js.UndefOr[integerMin0Max255] = js.undefined,
     AudioTypeControl: AudioTypeControl = null,
     CodecSettings: AudioCodecSettings = null,
     CustomLanguageCode: stringPatternAZaZ23AZaZ = null,
@@ -65,7 +65,7 @@ object AudioDescription {
     val __obj = js.Dynamic.literal()
     if (AudioNormalizationSettings != null) __obj.updateDynamic("AudioNormalizationSettings")(AudioNormalizationSettings.asInstanceOf[js.Any])
     if (AudioSourceName != null) __obj.updateDynamic("AudioSourceName")(AudioSourceName.asInstanceOf[js.Any])
-    if (AudioType != null) __obj.updateDynamic("AudioType")(AudioType.asInstanceOf[js.Any])
+    if (!js.isUndefined(AudioType)) __obj.updateDynamic("AudioType")(AudioType.get.asInstanceOf[js.Any])
     if (AudioTypeControl != null) __obj.updateDynamic("AudioTypeControl")(AudioTypeControl.asInstanceOf[js.Any])
     if (CodecSettings != null) __obj.updateDynamic("CodecSettings")(CodecSettings.asInstanceOf[js.Any])
     if (CustomLanguageCode != null) __obj.updateDynamic("CustomLanguageCode")(CustomLanguageCode.asInstanceOf[js.Any])

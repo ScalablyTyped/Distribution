@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation._
 @js.native
 object classMethod_method extends js.Object {
   def apply(
-    kind: method,
+    kind: js.UndefOr[method],
     key: Expression,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_
   ): ClassMethod_ = js.native
   def apply(
-    kind: method,
+    kind: js.UndefOr[method],
     key: Expression,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,
     computed: Boolean
   ): ClassMethod_ = js.native
   def apply(
-    kind: method,
+    kind: js.UndefOr[method],
     key: Expression,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,
@@ -30,7 +30,7 @@ object classMethod_method extends js.Object {
     _static: Boolean
   ): ClassMethod_ = js.native
   def apply(
-    kind: method,
+    kind: js.UndefOr[method],
     key: Expression,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,
@@ -39,7 +39,7 @@ object classMethod_method extends js.Object {
     generator: Boolean
   ): ClassMethod_ = js.native
   def apply(
-    kind: method,
+    kind: js.UndefOr[method],
     key: Expression,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,
@@ -49,20 +49,20 @@ object classMethod_method extends js.Object {
     async: Boolean
   ): ClassMethod_ = js.native
   def apply(
-    kind: method,
+    kind: js.UndefOr[method],
     key: Identifier_,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_
   ): ClassMethod_ = js.native
   def apply(
-    kind: method,
+    kind: js.UndefOr[method],
     key: Identifier_,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,
     computed: Boolean
   ): ClassMethod_ = js.native
   def apply(
-    kind: method,
+    kind: js.UndefOr[method],
     key: Identifier_,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,
@@ -70,7 +70,7 @@ object classMethod_method extends js.Object {
     _static: Boolean
   ): ClassMethod_ = js.native
   def apply(
-    kind: method,
+    kind: js.UndefOr[method],
     key: Identifier_,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,
@@ -79,7 +79,7 @@ object classMethod_method extends js.Object {
     generator: Boolean
   ): ClassMethod_ = js.native
   def apply(
-    kind: method,
+    kind: js.UndefOr[method],
     key: Identifier_,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,
@@ -89,20 +89,20 @@ object classMethod_method extends js.Object {
     async: Boolean
   ): ClassMethod_ = js.native
   def apply(
-    kind: method,
+    kind: js.UndefOr[method],
     key: NumericLiteral_,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_
   ): ClassMethod_ = js.native
   def apply(
-    kind: method,
+    kind: js.UndefOr[method],
     key: NumericLiteral_,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,
     computed: Boolean
   ): ClassMethod_ = js.native
   def apply(
-    kind: method,
+    kind: js.UndefOr[method],
     key: NumericLiteral_,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,
@@ -110,7 +110,7 @@ object classMethod_method extends js.Object {
     _static: Boolean
   ): ClassMethod_ = js.native
   def apply(
-    kind: method,
+    kind: js.UndefOr[method],
     key: NumericLiteral_,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,
@@ -119,7 +119,7 @@ object classMethod_method extends js.Object {
     generator: Boolean
   ): ClassMethod_ = js.native
   def apply(
-    kind: method,
+    kind: js.UndefOr[method],
     key: NumericLiteral_,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,
@@ -129,20 +129,20 @@ object classMethod_method extends js.Object {
     async: Boolean
   ): ClassMethod_ = js.native
   def apply(
-    kind: method,
+    kind: js.UndefOr[method],
     key: StringLiteral_,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_
   ): ClassMethod_ = js.native
   def apply(
-    kind: method,
+    kind: js.UndefOr[method],
     key: StringLiteral_,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,
     computed: Boolean
   ): ClassMethod_ = js.native
   def apply(
-    kind: method,
+    kind: js.UndefOr[method],
     key: StringLiteral_,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,
@@ -150,7 +150,7 @@ object classMethod_method extends js.Object {
     _static: Boolean
   ): ClassMethod_ = js.native
   def apply(
-    kind: method,
+    kind: js.UndefOr[method],
     key: StringLiteral_,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,
@@ -159,7 +159,7 @@ object classMethod_method extends js.Object {
     generator: Boolean
   ): ClassMethod_ = js.native
   def apply(
-    kind: method,
+    kind: js.UndefOr[method],
     key: StringLiteral_,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,

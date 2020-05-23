@@ -3,6 +3,7 @@ package typings.jupyterlabCodemirror
 import typings.codemirror.mod.Editor
 import typings.codemirror.mod.StyleActiveLine
 import typings.jupyterlabCodeeditor.tokensMod.IEditorServices
+import typings.jupyterlabCodemirror.anon.PartialIConfig
 import typings.jupyterlabCodemirror.editorMod.CodeMirrorEditor.IOptions
 import typings.jupyterlabCodemirror.jupyterlabCodemirrorStrings.bounded
 import typings.jupyterlabCodemirror.jupyterlabCodemirrorStrings.off

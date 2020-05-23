@@ -18,9 +18,9 @@ trait StopDeploymentInput extends js.Object {
 
 object StopDeploymentInput {
   @scala.inline
-  def apply(deploymentId: DeploymentId, autoRollbackEnabled: js.UndefOr[scala.Boolean] = js.undefined): StopDeploymentInput = {
+  def apply(deploymentId: DeploymentId, autoRollbackEnabled: js.UndefOr[NullableBoolean] = js.undefined): StopDeploymentInput = {
     val __obj = js.Dynamic.literal(deploymentId = deploymentId.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoRollbackEnabled)) __obj.updateDynamic("autoRollbackEnabled")(autoRollbackEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoRollbackEnabled)) __obj.updateDynamic("autoRollbackEnabled")(autoRollbackEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopDeploymentInput]
   }
 }

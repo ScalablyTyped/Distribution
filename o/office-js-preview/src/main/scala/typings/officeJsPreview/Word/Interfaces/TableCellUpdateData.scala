@@ -65,7 +65,7 @@ object TableCellUpdateData {
   @scala.inline
   def apply(
     body: BodyUpdateData = null,
-    columnWidth: Int | Double = null,
+    columnWidth: js.UndefOr[Double] = js.undefined,
     horizontalAlignment: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified = null,
     shadingColor: String = null,
     value: String = null,
@@ -73,7 +73,7 @@ object TableCellUpdateData {
   ): TableCellUpdateData = {
     val __obj = js.Dynamic.literal()
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnWidth)) __obj.updateDynamic("columnWidth")(columnWidth.get.asInstanceOf[js.Any])
     if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
     if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

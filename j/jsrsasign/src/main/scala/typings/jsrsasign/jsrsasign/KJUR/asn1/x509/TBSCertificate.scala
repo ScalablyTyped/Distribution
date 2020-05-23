@@ -1,6 +1,6 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
-import typings.jsrsasign.AnonE
+import typings.jsrsasign.anon.E
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
 import typings.jsrsasign.jsrsasign.KJUR.asn1.IntegerParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.NameParam
@@ -28,9 +28,8 @@ import scala.scalajs.js.annotation._
   *  o.appendExtension(new KJUR.asn1.x509.BasicConstraints({'cA':true}));
   *  o.appendExtension(new KJUR.asn1.x509.KeyUsage({'bin':'11'}));
   */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.TBSCertificate")
 @js.native
-class TBSCertificate () extends ASN1Object {
+trait TBSCertificate extends ASN1Object {
   /* private */ def _initialize(): Unit = js.native
   /**
     * append X.509v3 extension to this object
@@ -114,7 +113,7 @@ class TBSCertificate () extends ASN1Object {
   def setSubjectPublicKey(param: ECDSA): Unit = js.native
   def setSubjectPublicKey(param: RSAKey): Unit = js.native
   def setSubjectPublicKeyByGetKey(keyParam: String): Unit = js.native
-  def setSubjectPublicKeyByGetKey(keyParam: AnonE): Unit = js.native
+  def setSubjectPublicKeyByGetKey(keyParam: E): Unit = js.native
   def setSubjectPublicKeyByGetKey(keyParam: DSA): Unit = js.native
   def setSubjectPublicKeyByGetKey(keyParam: ECDSA): Unit = js.native
   def setSubjectPublicKeyByGetKey(keyParam: JsonWebKey): Unit = js.native

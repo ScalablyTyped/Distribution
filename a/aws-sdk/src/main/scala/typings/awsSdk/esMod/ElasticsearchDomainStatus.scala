@@ -108,8 +108,8 @@ object ElasticsearchDomainStatus {
     AdvancedOptions: AdvancedOptions = null,
     AdvancedSecurityOptions: AdvancedSecurityOptions = null,
     CognitoOptions: CognitoOptions = null,
-    Created: js.UndefOr[scala.Boolean] = js.undefined,
-    Deleted: js.UndefOr[scala.Boolean] = js.undefined,
+    Created: js.UndefOr[Boolean] = js.undefined,
+    Deleted: js.UndefOr[Boolean] = js.undefined,
     DomainEndpointOptions: DomainEndpointOptions = null,
     EBSOptions: EBSOptions = null,
     ElasticsearchVersion: ElasticsearchVersionString = null,
@@ -118,10 +118,10 @@ object ElasticsearchDomainStatus {
     Endpoints: EndpointsMap = null,
     LogPublishingOptions: LogPublishingOptions = null,
     NodeToNodeEncryptionOptions: NodeToNodeEncryptionOptions = null,
-    Processing: js.UndefOr[scala.Boolean] = js.undefined,
+    Processing: js.UndefOr[Boolean] = js.undefined,
     ServiceSoftwareOptions: ServiceSoftwareOptions = null,
     SnapshotOptions: SnapshotOptions = null,
-    UpgradeProcessing: js.UndefOr[scala.Boolean] = js.undefined,
+    UpgradeProcessing: js.UndefOr[Boolean] = js.undefined,
     VPCOptions: VPCDerivedInfo = null
   ): ElasticsearchDomainStatus = {
     val __obj = js.Dynamic.literal(ARN = ARN.asInstanceOf[js.Any], DomainId = DomainId.asInstanceOf[js.Any], DomainName = DomainName.asInstanceOf[js.Any], ElasticsearchClusterConfig = ElasticsearchClusterConfig.asInstanceOf[js.Any])
@@ -129,8 +129,8 @@ object ElasticsearchDomainStatus {
     if (AdvancedOptions != null) __obj.updateDynamic("AdvancedOptions")(AdvancedOptions.asInstanceOf[js.Any])
     if (AdvancedSecurityOptions != null) __obj.updateDynamic("AdvancedSecurityOptions")(AdvancedSecurityOptions.asInstanceOf[js.Any])
     if (CognitoOptions != null) __obj.updateDynamic("CognitoOptions")(CognitoOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(Created)) __obj.updateDynamic("Created")(Created.asInstanceOf[js.Any])
-    if (!js.isUndefined(Deleted)) __obj.updateDynamic("Deleted")(Deleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(Created)) __obj.updateDynamic("Created")(Created.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Deleted)) __obj.updateDynamic("Deleted")(Deleted.get.asInstanceOf[js.Any])
     if (DomainEndpointOptions != null) __obj.updateDynamic("DomainEndpointOptions")(DomainEndpointOptions.asInstanceOf[js.Any])
     if (EBSOptions != null) __obj.updateDynamic("EBSOptions")(EBSOptions.asInstanceOf[js.Any])
     if (ElasticsearchVersion != null) __obj.updateDynamic("ElasticsearchVersion")(ElasticsearchVersion.asInstanceOf[js.Any])
@@ -139,10 +139,10 @@ object ElasticsearchDomainStatus {
     if (Endpoints != null) __obj.updateDynamic("Endpoints")(Endpoints.asInstanceOf[js.Any])
     if (LogPublishingOptions != null) __obj.updateDynamic("LogPublishingOptions")(LogPublishingOptions.asInstanceOf[js.Any])
     if (NodeToNodeEncryptionOptions != null) __obj.updateDynamic("NodeToNodeEncryptionOptions")(NodeToNodeEncryptionOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(Processing)) __obj.updateDynamic("Processing")(Processing.asInstanceOf[js.Any])
+    if (!js.isUndefined(Processing)) __obj.updateDynamic("Processing")(Processing.get.asInstanceOf[js.Any])
     if (ServiceSoftwareOptions != null) __obj.updateDynamic("ServiceSoftwareOptions")(ServiceSoftwareOptions.asInstanceOf[js.Any])
     if (SnapshotOptions != null) __obj.updateDynamic("SnapshotOptions")(SnapshotOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(UpgradeProcessing)) __obj.updateDynamic("UpgradeProcessing")(UpgradeProcessing.asInstanceOf[js.Any])
+    if (!js.isUndefined(UpgradeProcessing)) __obj.updateDynamic("UpgradeProcessing")(UpgradeProcessing.get.asInstanceOf[js.Any])
     if (VPCOptions != null) __obj.updateDynamic("VPCOptions")(VPCOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElasticsearchDomainStatus]
   }

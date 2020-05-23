@@ -12,11 +12,11 @@ trait Config extends js.Object {
 
 object Config {
   @scala.inline
-  def apply(apiKey: js.Any = null, opts: ConfigOptions = null, timeout: Int | Double = null): Config = {
+  def apply(apiKey: js.Any = null, opts: ConfigOptions = null, timeout: js.UndefOr[Double] = js.undefined): Config = {
     val __obj = js.Dynamic.literal()
     if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey.asInstanceOf[js.Any])
     if (opts != null) __obj.updateDynamic("opts")(opts.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

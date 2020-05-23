@@ -19,12 +19,12 @@ trait ResourceCreationLimitPolicy extends js.Object {
 object ResourceCreationLimitPolicy {
   @scala.inline
   def apply(
-    NewGameSessionsPerCreator: Int | scala.Double = null,
-    PolicyPeriodInMinutes: Int | scala.Double = null
+    NewGameSessionsPerCreator: js.UndefOr[WholeNumber] = js.undefined,
+    PolicyPeriodInMinutes: js.UndefOr[WholeNumber] = js.undefined
   ): ResourceCreationLimitPolicy = {
     val __obj = js.Dynamic.literal()
-    if (NewGameSessionsPerCreator != null) __obj.updateDynamic("NewGameSessionsPerCreator")(NewGameSessionsPerCreator.asInstanceOf[js.Any])
-    if (PolicyPeriodInMinutes != null) __obj.updateDynamic("PolicyPeriodInMinutes")(PolicyPeriodInMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(NewGameSessionsPerCreator)) __obj.updateDynamic("NewGameSessionsPerCreator")(NewGameSessionsPerCreator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(PolicyPeriodInMinutes)) __obj.updateDynamic("PolicyPeriodInMinutes")(PolicyPeriodInMinutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceCreationLimitPolicy]
   }
 }

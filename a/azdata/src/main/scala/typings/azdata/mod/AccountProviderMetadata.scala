@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation._
 
 trait AccountProviderMetadata extends js.Object {
   /**
-  		 * Any arguments that identify an instantiation of the provider
-  		 */
+    * Any arguments that identify an instantiation of the provider
+    */
   var args: js.UndefOr[js.Any] = js.undefined
   /**
-  		 * Display name of the provider
-  		 */
+    * Display name of the provider
+    */
   var displayName: String
   /**
-  		 * The identifier of the provider
-  		 */
+    * The identifier of the provider
+    */
   var id: String
   /**
-  		 * Optional settings that identify an instantiation of a provider
-  		 */
+    * Optional settings that identify an instantiation of a provider
+    */
   var settings: js.UndefOr[js.Object] = js.undefined
 }
 

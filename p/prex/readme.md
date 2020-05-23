@@ -1,7 +1,7 @@
 
 # Scala.js typings for prex
 
-Typings are for version 0.4.6
+Typings are for version 0.4.7
 
 ## Library description:
 Async coordination primitives and extensions on top of ES6 Promises

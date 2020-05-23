@@ -1,6 +1,6 @@
 package typings.vue.optionsMod
 
-import typings.vue.AnonEvent
+import typings.vue.anon.Event
 import typings.vue.vnodeMod.VNode
 import typings.vue.vueMod.CreateElement
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait FunctionalComponentOptions[Props, PropDefs] extends js.Object {
   var functional: Boolean
   var inject: js.UndefOr[InjectOptions] = js.undefined
-  var model: js.UndefOr[AnonEvent] = js.undefined
+  var model: js.UndefOr[Event] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var props: js.UndefOr[PropDefs] = js.undefined
   var render: js.UndefOr[
@@ -28,7 +28,7 @@ object FunctionalComponentOptions {
   def apply[Props, PropDefs](
     functional: Boolean,
     inject: InjectOptions = null,
-    model: AnonEvent = null,
+    model: Event = null,
     name: String = null,
     props: PropDefs = null,
     render: js.ThisFunction2[

@@ -175,18 +175,18 @@ object SceneViewProperties {
     padding: ViewPadding = null,
     popup: PopupProperties = null,
     qualityProfile: low | medium | high = null,
-    scale: Int | Double = null,
+    scale: js.UndefOr[Double] = js.undefined,
     spatialReference: SpatialReferenceProperties = null,
     timeExtent: TimeExtentProperties = null,
     ui: DefaultUIProperties = null,
     viewingMode: global | local = null,
     viewpoint: ViewpointProperties = null,
     widthBreakpoint: xsmall | small | medium | large | xlarge = null,
-    zoom: Int | Double = null
+    zoom: js.UndefOr[Double] = js.undefined
   ): SceneViewProperties = {
     val __obj = js.Dynamic.literal()
     if (allLayerViews != null) __obj.updateDynamic("allLayerViews")(allLayerViews.asInstanceOf[js.Any])
-    if (!js.isUndefined(alphaCompositingEnabled)) __obj.updateDynamic("alphaCompositingEnabled")(alphaCompositingEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(alphaCompositingEnabled)) __obj.updateDynamic("alphaCompositingEnabled")(alphaCompositingEnabled.get.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (basemapView != null) __obj.updateDynamic("basemapView")(basemapView.asInstanceOf[js.Any])
     if (breakpoints != null) __obj.updateDynamic("breakpoints")(breakpoints.asInstanceOf[js.Any])
@@ -207,14 +207,14 @@ object SceneViewProperties {
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (popup != null) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
     if (qualityProfile != null) __obj.updateDynamic("qualityProfile")(qualityProfile.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
     if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent.asInstanceOf[js.Any])
     if (ui != null) __obj.updateDynamic("ui")(ui.asInstanceOf[js.Any])
     if (viewingMode != null) __obj.updateDynamic("viewingMode")(viewingMode.asInstanceOf[js.Any])
     if (viewpoint != null) __obj.updateDynamic("viewpoint")(viewpoint.asInstanceOf[js.Any])
     if (widthBreakpoint != null) __obj.updateDynamic("widthBreakpoint")(widthBreakpoint.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneViewProperties]
   }
 }

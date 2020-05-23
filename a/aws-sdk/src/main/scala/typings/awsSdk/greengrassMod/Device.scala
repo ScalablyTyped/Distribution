@@ -30,10 +30,10 @@ object Device {
     CertificateArn: string,
     Id: string,
     ThingArn: string,
-    SyncShadow: js.UndefOr[Boolean] = js.undefined
+    SyncShadow: js.UndefOr[boolean] = js.undefined
   ): Device = {
     val __obj = js.Dynamic.literal(CertificateArn = CertificateArn.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], ThingArn = ThingArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(SyncShadow)) __obj.updateDynamic("SyncShadow")(SyncShadow.asInstanceOf[js.Any])
+    if (!js.isUndefined(SyncShadow)) __obj.updateDynamic("SyncShadow")(SyncShadow.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Device]
   }
 }

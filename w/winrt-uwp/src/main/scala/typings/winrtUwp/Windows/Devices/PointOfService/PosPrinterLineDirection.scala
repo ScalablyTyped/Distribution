@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.PointOfService
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object PosPrinterLineDirection extends js.Object {
   /** Prints a vertical ruled line. */
   @js.native
   sealed trait vertical extends PosPrinterLineDirection
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PosPrinterLineDirection with Double] = js.native
-  /* 0 */ @js.native
-  object horizontal extends TopLevel[horizontal with Double]
-  
-  /* 1 */ @js.native
-  object vertical extends TopLevel[vertical with Double]
   
 }
 

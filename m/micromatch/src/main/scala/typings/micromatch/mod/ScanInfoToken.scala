@@ -32,13 +32,13 @@ object ScanInfoToken {
     negated: js.UndefOr[Boolean] = js.undefined
   ): ScanInfoToken = {
     val __obj = js.Dynamic.literal(depth = depth.asInstanceOf[js.Any], isGlob = isGlob.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (!js.isUndefined(backslashes)) __obj.updateDynamic("backslashes")(backslashes.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBrace)) __obj.updateDynamic("isBrace")(isBrace.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBracket)) __obj.updateDynamic("isBracket")(isBracket.asInstanceOf[js.Any])
-    if (!js.isUndefined(isExtglob)) __obj.updateDynamic("isExtglob")(isExtglob.asInstanceOf[js.Any])
-    if (!js.isUndefined(isGlobstar)) __obj.updateDynamic("isGlobstar")(isGlobstar.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPrefix)) __obj.updateDynamic("isPrefix")(isPrefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(negated)) __obj.updateDynamic("negated")(negated.asInstanceOf[js.Any])
+    if (!js.isUndefined(backslashes)) __obj.updateDynamic("backslashes")(backslashes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBrace)) __obj.updateDynamic("isBrace")(isBrace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBracket)) __obj.updateDynamic("isBracket")(isBracket.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExtglob)) __obj.updateDynamic("isExtglob")(isExtglob.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isGlobstar)) __obj.updateDynamic("isGlobstar")(isGlobstar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPrefix)) __obj.updateDynamic("isPrefix")(isPrefix.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(negated)) __obj.updateDynamic("negated")(negated.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScanInfoToken]
   }
 }

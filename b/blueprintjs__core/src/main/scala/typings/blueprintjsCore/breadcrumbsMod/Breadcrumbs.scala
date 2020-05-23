@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.breadcrumbsMod
 
-import typings.blueprintjsCore.PartialIBreadcrumbsProps
+import typings.blueprintjsCore.anon.PartialIBreadcrumbsProps
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import scala.scalajs.js
 import scala.scalajs.js.`|`

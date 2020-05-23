@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "agentkeepalive" : "4.1.0"
+      "agentkeepalive" : "4.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "agentkeepalive" : "4.1.0"
+      "agentkeepalive" : "4.1.2"
     }
   ],
   "compile-devDependencies" : [

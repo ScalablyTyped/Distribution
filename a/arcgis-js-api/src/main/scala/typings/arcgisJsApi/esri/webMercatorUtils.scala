@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -70,8 +69,4 @@ trait webMercatorUtils extends js.Object {
     */
   def xyToLngLat(x: Double, y: Double): js.Array[Double] = js.native
 }
-
-@JSGlobal("__esri.webMercatorUtils")
-@js.native
-object webMercatorUtils extends TopLevel[webMercatorUtils]
 

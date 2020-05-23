@@ -112,13 +112,13 @@ trait PartialTheme extends js.Object {
 object PartialTheme {
   @scala.inline
   def apply(
-    action_sheet_zindex: Int | Double = null,
-    actionsheet_item_font_size: Int | Double = null,
-    actionsheet_item_height: Int | Double = null,
+    action_sheet_zindex: js.UndefOr[Double] = js.undefined,
+    actionsheet_item_font_size: js.UndefOr[Double] = js.undefined,
+    actionsheet_item_height: js.UndefOr[Double] = js.undefined,
     border_color_base: String = null,
-    border_width_lg: Int | Double = null,
-    border_width_md: Int | Double = null,
-    border_width_sm: Int | Double = null,
+    border_width_lg: js.UndefOr[Double] = js.undefined,
+    border_width_md: js.UndefOr[Double] = js.undefined,
+    border_width_sm: js.UndefOr[Double] = js.undefined,
     brand_error: String = null,
     brand_important: String = null,
     brand_primary: String = null,
@@ -126,10 +126,10 @@ object PartialTheme {
     brand_success: String = null,
     brand_wait: String = null,
     brand_warning: String = null,
-    button_font_size: Int | Double = null,
-    button_font_size_sm: Int | Double = null,
-    button_height: Int | Double = null,
-    button_height_sm: Int | Double = null,
+    button_font_size: js.UndefOr[Double] = js.undefined,
+    button_font_size_sm: js.UndefOr[Double] = js.undefined,
+    button_height: js.UndefOr[Double] = js.undefined,
+    button_height_sm: js.UndefOr[Double] = js.undefined,
     color_icon_base: String = null,
     color_link: String = null,
     color_text_base: String = null,
@@ -146,82 +146,82 @@ object PartialTheme {
     fill_grey: String = null,
     fill_mask: String = null,
     fill_tap: String = null,
-    font_size_base: Int | Double = null,
-    font_size_caption: Int | Double = null,
-    font_size_caption_sm: Int | Double = null,
-    font_size_heading: Int | Double = null,
-    font_size_icontext: Int | Double = null,
-    font_size_subhead: Int | Double = null,
+    font_size_base: js.UndefOr[Double] = js.undefined,
+    font_size_caption: js.UndefOr[Double] = js.undefined,
+    font_size_caption_sm: js.UndefOr[Double] = js.undefined,
+    font_size_heading: js.UndefOr[Double] = js.undefined,
+    font_size_icontext: js.UndefOr[Double] = js.undefined,
+    font_size_subhead: js.UndefOr[Double] = js.undefined,
     ghost_button_color: String = null,
     ghost_button_fill_tap: String = null,
-    h_spacing_lg: Int | Double = null,
-    h_spacing_md: Int | Double = null,
-    h_spacing_sm: Int | Double = null,
-    icon_size_lg: Int | Double = null,
-    icon_size_md: Int | Double = null,
-    icon_size_sm: Int | Double = null,
-    icon_size_xs: Int | Double = null,
-    icon_size_xxs: Int | Double = null,
+    h_spacing_lg: js.UndefOr[Double] = js.undefined,
+    h_spacing_md: js.UndefOr[Double] = js.undefined,
+    h_spacing_sm: js.UndefOr[Double] = js.undefined,
+    icon_size_lg: js.UndefOr[Double] = js.undefined,
+    icon_size_md: js.UndefOr[Double] = js.undefined,
+    icon_size_sm: js.UndefOr[Double] = js.undefined,
+    icon_size_xs: js.UndefOr[Double] = js.undefined,
+    icon_size_xxs: js.UndefOr[Double] = js.undefined,
     input_color_icon: String = null,
     input_color_icon_tap: String = null,
-    input_font_size: Int | Double = null,
-    input_label_width: Int | Double = null,
-    line_height_base: Int | Double = null,
-    line_height_paragraph: Int | Double = null,
+    input_font_size: js.UndefOr[Double] = js.undefined,
+    input_label_width: js.UndefOr[Double] = js.undefined,
+    line_height_base: js.UndefOr[Double] = js.undefined,
+    line_height_paragraph: js.UndefOr[Double] = js.undefined,
     link_button_fill_tap: String = null,
-    link_button_font_size: Int | Double = null,
-    list_item_height: Int | Double = null,
-    list_item_height_sm: Int | Double = null,
-    list_title_height: Int | Double = null,
-    modal_button_font_size: Int | Double = null,
-    modal_button_height: Int | Double = null,
-    modal_font_size_heading: Int | Double = null,
-    modal_zindex: Int | Double = null,
+    link_button_font_size: js.UndefOr[Double] = js.undefined,
+    list_item_height: js.UndefOr[Double] = js.undefined,
+    list_item_height_sm: js.UndefOr[Double] = js.undefined,
+    list_title_height: js.UndefOr[Double] = js.undefined,
+    modal_button_font_size: js.UndefOr[Double] = js.undefined,
+    modal_button_height: js.UndefOr[Double] = js.undefined,
+    modal_font_size_heading: js.UndefOr[Double] = js.undefined,
+    modal_zindex: js.UndefOr[Double] = js.undefined,
     notice_bar_fill: String = null,
-    notice_bar_height: Int | Double = null,
+    notice_bar_height: js.UndefOr[Double] = js.undefined,
     opacity_disabled: String = null,
-    option_height: Int | Double = null,
-    popup_zindex: Int | Double = null,
+    option_height: js.UndefOr[Double] = js.undefined,
+    popup_zindex: js.UndefOr[Double] = js.undefined,
     primary_button_fill: String = null,
     primary_button_fill_tap: String = null,
-    radius_lg: Int | Double = null,
-    radius_md: Int | Double = null,
-    radius_sm: Int | Double = null,
-    radius_xs: Int | Double = null,
+    radius_lg: js.UndefOr[Double] = js.undefined,
+    radius_md: js.UndefOr[Double] = js.undefined,
+    radius_sm: js.UndefOr[Double] = js.undefined,
+    radius_xs: js.UndefOr[Double] = js.undefined,
     search_bar_fill: String = null,
-    search_bar_font_size: Int | Double = null,
-    search_bar_height: Int | Double = null,
-    search_bar_input_height: Int | Double = null,
+    search_bar_font_size: js.UndefOr[Double] = js.undefined,
+    search_bar_height: js.UndefOr[Double] = js.undefined,
+    search_bar_input_height: js.UndefOr[Double] = js.undefined,
     search_color_icon: String = null,
     segmented_control_color: String = null,
     segmented_control_fill_tap: String = null,
-    segmented_control_height: Int | Double = null,
+    segmented_control_height: js.UndefOr[Double] = js.undefined,
     switch_fill: String = null,
     tab_bar_fill: String = null,
-    tab_bar_height: Int | Double = null,
+    tab_bar_height: js.UndefOr[Double] = js.undefined,
     tabs_color: String = null,
-    tabs_font_size_heading: Int | Double = null,
-    tabs_height: Int | Double = null,
-    tag_height: Int | Double = null,
-    tag_small_height: Int | Double = null,
+    tabs_font_size_heading: js.UndefOr[Double] = js.undefined,
+    tabs_height: js.UndefOr[Double] = js.undefined,
+    tag_height: js.UndefOr[Double] = js.undefined,
+    tag_small_height: js.UndefOr[Double] = js.undefined,
     toast_fill: String = null,
-    toast_zindex: Int | Double = null,
-    v_spacing_lg: Int | Double = null,
-    v_spacing_md: Int | Double = null,
-    v_spacing_sm: Int | Double = null,
-    v_spacing_xl: Int | Double = null,
-    v_spacing_xs: Int | Double = null,
+    toast_zindex: js.UndefOr[Double] = js.undefined,
+    v_spacing_lg: js.UndefOr[Double] = js.undefined,
+    v_spacing_md: js.UndefOr[Double] = js.undefined,
+    v_spacing_sm: js.UndefOr[Double] = js.undefined,
+    v_spacing_xl: js.UndefOr[Double] = js.undefined,
+    v_spacing_xs: js.UndefOr[Double] = js.undefined,
     warning_button_fill: String = null,
     warning_button_fill_tap: String = null
   ): PartialTheme = {
     val __obj = js.Dynamic.literal()
-    if (action_sheet_zindex != null) __obj.updateDynamic("action_sheet_zindex")(action_sheet_zindex.asInstanceOf[js.Any])
-    if (actionsheet_item_font_size != null) __obj.updateDynamic("actionsheet_item_font_size")(actionsheet_item_font_size.asInstanceOf[js.Any])
-    if (actionsheet_item_height != null) __obj.updateDynamic("actionsheet_item_height")(actionsheet_item_height.asInstanceOf[js.Any])
+    if (!js.isUndefined(action_sheet_zindex)) __obj.updateDynamic("action_sheet_zindex")(action_sheet_zindex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(actionsheet_item_font_size)) __obj.updateDynamic("actionsheet_item_font_size")(actionsheet_item_font_size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(actionsheet_item_height)) __obj.updateDynamic("actionsheet_item_height")(actionsheet_item_height.get.asInstanceOf[js.Any])
     if (border_color_base != null) __obj.updateDynamic("border_color_base")(border_color_base.asInstanceOf[js.Any])
-    if (border_width_lg != null) __obj.updateDynamic("border_width_lg")(border_width_lg.asInstanceOf[js.Any])
-    if (border_width_md != null) __obj.updateDynamic("border_width_md")(border_width_md.asInstanceOf[js.Any])
-    if (border_width_sm != null) __obj.updateDynamic("border_width_sm")(border_width_sm.asInstanceOf[js.Any])
+    if (!js.isUndefined(border_width_lg)) __obj.updateDynamic("border_width_lg")(border_width_lg.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(border_width_md)) __obj.updateDynamic("border_width_md")(border_width_md.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(border_width_sm)) __obj.updateDynamic("border_width_sm")(border_width_sm.get.asInstanceOf[js.Any])
     if (brand_error != null) __obj.updateDynamic("brand_error")(brand_error.asInstanceOf[js.Any])
     if (brand_important != null) __obj.updateDynamic("brand_important")(brand_important.asInstanceOf[js.Any])
     if (brand_primary != null) __obj.updateDynamic("brand_primary")(brand_primary.asInstanceOf[js.Any])
@@ -229,10 +229,10 @@ object PartialTheme {
     if (brand_success != null) __obj.updateDynamic("brand_success")(brand_success.asInstanceOf[js.Any])
     if (brand_wait != null) __obj.updateDynamic("brand_wait")(brand_wait.asInstanceOf[js.Any])
     if (brand_warning != null) __obj.updateDynamic("brand_warning")(brand_warning.asInstanceOf[js.Any])
-    if (button_font_size != null) __obj.updateDynamic("button_font_size")(button_font_size.asInstanceOf[js.Any])
-    if (button_font_size_sm != null) __obj.updateDynamic("button_font_size_sm")(button_font_size_sm.asInstanceOf[js.Any])
-    if (button_height != null) __obj.updateDynamic("button_height")(button_height.asInstanceOf[js.Any])
-    if (button_height_sm != null) __obj.updateDynamic("button_height_sm")(button_height_sm.asInstanceOf[js.Any])
+    if (!js.isUndefined(button_font_size)) __obj.updateDynamic("button_font_size")(button_font_size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(button_font_size_sm)) __obj.updateDynamic("button_font_size_sm")(button_font_size_sm.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(button_height)) __obj.updateDynamic("button_height")(button_height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(button_height_sm)) __obj.updateDynamic("button_height_sm")(button_height_sm.get.asInstanceOf[js.Any])
     if (color_icon_base != null) __obj.updateDynamic("color_icon_base")(color_icon_base.asInstanceOf[js.Any])
     if (color_link != null) __obj.updateDynamic("color_link")(color_link.asInstanceOf[js.Any])
     if (color_text_base != null) __obj.updateDynamic("color_text_base")(color_text_base.asInstanceOf[js.Any])
@@ -249,71 +249,71 @@ object PartialTheme {
     if (fill_grey != null) __obj.updateDynamic("fill_grey")(fill_grey.asInstanceOf[js.Any])
     if (fill_mask != null) __obj.updateDynamic("fill_mask")(fill_mask.asInstanceOf[js.Any])
     if (fill_tap != null) __obj.updateDynamic("fill_tap")(fill_tap.asInstanceOf[js.Any])
-    if (font_size_base != null) __obj.updateDynamic("font_size_base")(font_size_base.asInstanceOf[js.Any])
-    if (font_size_caption != null) __obj.updateDynamic("font_size_caption")(font_size_caption.asInstanceOf[js.Any])
-    if (font_size_caption_sm != null) __obj.updateDynamic("font_size_caption_sm")(font_size_caption_sm.asInstanceOf[js.Any])
-    if (font_size_heading != null) __obj.updateDynamic("font_size_heading")(font_size_heading.asInstanceOf[js.Any])
-    if (font_size_icontext != null) __obj.updateDynamic("font_size_icontext")(font_size_icontext.asInstanceOf[js.Any])
-    if (font_size_subhead != null) __obj.updateDynamic("font_size_subhead")(font_size_subhead.asInstanceOf[js.Any])
+    if (!js.isUndefined(font_size_base)) __obj.updateDynamic("font_size_base")(font_size_base.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(font_size_caption)) __obj.updateDynamic("font_size_caption")(font_size_caption.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(font_size_caption_sm)) __obj.updateDynamic("font_size_caption_sm")(font_size_caption_sm.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(font_size_heading)) __obj.updateDynamic("font_size_heading")(font_size_heading.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(font_size_icontext)) __obj.updateDynamic("font_size_icontext")(font_size_icontext.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(font_size_subhead)) __obj.updateDynamic("font_size_subhead")(font_size_subhead.get.asInstanceOf[js.Any])
     if (ghost_button_color != null) __obj.updateDynamic("ghost_button_color")(ghost_button_color.asInstanceOf[js.Any])
     if (ghost_button_fill_tap != null) __obj.updateDynamic("ghost_button_fill_tap")(ghost_button_fill_tap.asInstanceOf[js.Any])
-    if (h_spacing_lg != null) __obj.updateDynamic("h_spacing_lg")(h_spacing_lg.asInstanceOf[js.Any])
-    if (h_spacing_md != null) __obj.updateDynamic("h_spacing_md")(h_spacing_md.asInstanceOf[js.Any])
-    if (h_spacing_sm != null) __obj.updateDynamic("h_spacing_sm")(h_spacing_sm.asInstanceOf[js.Any])
-    if (icon_size_lg != null) __obj.updateDynamic("icon_size_lg")(icon_size_lg.asInstanceOf[js.Any])
-    if (icon_size_md != null) __obj.updateDynamic("icon_size_md")(icon_size_md.asInstanceOf[js.Any])
-    if (icon_size_sm != null) __obj.updateDynamic("icon_size_sm")(icon_size_sm.asInstanceOf[js.Any])
-    if (icon_size_xs != null) __obj.updateDynamic("icon_size_xs")(icon_size_xs.asInstanceOf[js.Any])
-    if (icon_size_xxs != null) __obj.updateDynamic("icon_size_xxs")(icon_size_xxs.asInstanceOf[js.Any])
+    if (!js.isUndefined(h_spacing_lg)) __obj.updateDynamic("h_spacing_lg")(h_spacing_lg.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(h_spacing_md)) __obj.updateDynamic("h_spacing_md")(h_spacing_md.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(h_spacing_sm)) __obj.updateDynamic("h_spacing_sm")(h_spacing_sm.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(icon_size_lg)) __obj.updateDynamic("icon_size_lg")(icon_size_lg.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(icon_size_md)) __obj.updateDynamic("icon_size_md")(icon_size_md.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(icon_size_sm)) __obj.updateDynamic("icon_size_sm")(icon_size_sm.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(icon_size_xs)) __obj.updateDynamic("icon_size_xs")(icon_size_xs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(icon_size_xxs)) __obj.updateDynamic("icon_size_xxs")(icon_size_xxs.get.asInstanceOf[js.Any])
     if (input_color_icon != null) __obj.updateDynamic("input_color_icon")(input_color_icon.asInstanceOf[js.Any])
     if (input_color_icon_tap != null) __obj.updateDynamic("input_color_icon_tap")(input_color_icon_tap.asInstanceOf[js.Any])
-    if (input_font_size != null) __obj.updateDynamic("input_font_size")(input_font_size.asInstanceOf[js.Any])
-    if (input_label_width != null) __obj.updateDynamic("input_label_width")(input_label_width.asInstanceOf[js.Any])
-    if (line_height_base != null) __obj.updateDynamic("line_height_base")(line_height_base.asInstanceOf[js.Any])
-    if (line_height_paragraph != null) __obj.updateDynamic("line_height_paragraph")(line_height_paragraph.asInstanceOf[js.Any])
+    if (!js.isUndefined(input_font_size)) __obj.updateDynamic("input_font_size")(input_font_size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(input_label_width)) __obj.updateDynamic("input_label_width")(input_label_width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(line_height_base)) __obj.updateDynamic("line_height_base")(line_height_base.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(line_height_paragraph)) __obj.updateDynamic("line_height_paragraph")(line_height_paragraph.get.asInstanceOf[js.Any])
     if (link_button_fill_tap != null) __obj.updateDynamic("link_button_fill_tap")(link_button_fill_tap.asInstanceOf[js.Any])
-    if (link_button_font_size != null) __obj.updateDynamic("link_button_font_size")(link_button_font_size.asInstanceOf[js.Any])
-    if (list_item_height != null) __obj.updateDynamic("list_item_height")(list_item_height.asInstanceOf[js.Any])
-    if (list_item_height_sm != null) __obj.updateDynamic("list_item_height_sm")(list_item_height_sm.asInstanceOf[js.Any])
-    if (list_title_height != null) __obj.updateDynamic("list_title_height")(list_title_height.asInstanceOf[js.Any])
-    if (modal_button_font_size != null) __obj.updateDynamic("modal_button_font_size")(modal_button_font_size.asInstanceOf[js.Any])
-    if (modal_button_height != null) __obj.updateDynamic("modal_button_height")(modal_button_height.asInstanceOf[js.Any])
-    if (modal_font_size_heading != null) __obj.updateDynamic("modal_font_size_heading")(modal_font_size_heading.asInstanceOf[js.Any])
-    if (modal_zindex != null) __obj.updateDynamic("modal_zindex")(modal_zindex.asInstanceOf[js.Any])
+    if (!js.isUndefined(link_button_font_size)) __obj.updateDynamic("link_button_font_size")(link_button_font_size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(list_item_height)) __obj.updateDynamic("list_item_height")(list_item_height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(list_item_height_sm)) __obj.updateDynamic("list_item_height_sm")(list_item_height_sm.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(list_title_height)) __obj.updateDynamic("list_title_height")(list_title_height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal_button_font_size)) __obj.updateDynamic("modal_button_font_size")(modal_button_font_size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal_button_height)) __obj.updateDynamic("modal_button_height")(modal_button_height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal_font_size_heading)) __obj.updateDynamic("modal_font_size_heading")(modal_font_size_heading.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal_zindex)) __obj.updateDynamic("modal_zindex")(modal_zindex.get.asInstanceOf[js.Any])
     if (notice_bar_fill != null) __obj.updateDynamic("notice_bar_fill")(notice_bar_fill.asInstanceOf[js.Any])
-    if (notice_bar_height != null) __obj.updateDynamic("notice_bar_height")(notice_bar_height.asInstanceOf[js.Any])
+    if (!js.isUndefined(notice_bar_height)) __obj.updateDynamic("notice_bar_height")(notice_bar_height.get.asInstanceOf[js.Any])
     if (opacity_disabled != null) __obj.updateDynamic("opacity_disabled")(opacity_disabled.asInstanceOf[js.Any])
-    if (option_height != null) __obj.updateDynamic("option_height")(option_height.asInstanceOf[js.Any])
-    if (popup_zindex != null) __obj.updateDynamic("popup_zindex")(popup_zindex.asInstanceOf[js.Any])
+    if (!js.isUndefined(option_height)) __obj.updateDynamic("option_height")(option_height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(popup_zindex)) __obj.updateDynamic("popup_zindex")(popup_zindex.get.asInstanceOf[js.Any])
     if (primary_button_fill != null) __obj.updateDynamic("primary_button_fill")(primary_button_fill.asInstanceOf[js.Any])
     if (primary_button_fill_tap != null) __obj.updateDynamic("primary_button_fill_tap")(primary_button_fill_tap.asInstanceOf[js.Any])
-    if (radius_lg != null) __obj.updateDynamic("radius_lg")(radius_lg.asInstanceOf[js.Any])
-    if (radius_md != null) __obj.updateDynamic("radius_md")(radius_md.asInstanceOf[js.Any])
-    if (radius_sm != null) __obj.updateDynamic("radius_sm")(radius_sm.asInstanceOf[js.Any])
-    if (radius_xs != null) __obj.updateDynamic("radius_xs")(radius_xs.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius_lg)) __obj.updateDynamic("radius_lg")(radius_lg.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius_md)) __obj.updateDynamic("radius_md")(radius_md.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius_sm)) __obj.updateDynamic("radius_sm")(radius_sm.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius_xs)) __obj.updateDynamic("radius_xs")(radius_xs.get.asInstanceOf[js.Any])
     if (search_bar_fill != null) __obj.updateDynamic("search_bar_fill")(search_bar_fill.asInstanceOf[js.Any])
-    if (search_bar_font_size != null) __obj.updateDynamic("search_bar_font_size")(search_bar_font_size.asInstanceOf[js.Any])
-    if (search_bar_height != null) __obj.updateDynamic("search_bar_height")(search_bar_height.asInstanceOf[js.Any])
-    if (search_bar_input_height != null) __obj.updateDynamic("search_bar_input_height")(search_bar_input_height.asInstanceOf[js.Any])
+    if (!js.isUndefined(search_bar_font_size)) __obj.updateDynamic("search_bar_font_size")(search_bar_font_size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(search_bar_height)) __obj.updateDynamic("search_bar_height")(search_bar_height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(search_bar_input_height)) __obj.updateDynamic("search_bar_input_height")(search_bar_input_height.get.asInstanceOf[js.Any])
     if (search_color_icon != null) __obj.updateDynamic("search_color_icon")(search_color_icon.asInstanceOf[js.Any])
     if (segmented_control_color != null) __obj.updateDynamic("segmented_control_color")(segmented_control_color.asInstanceOf[js.Any])
     if (segmented_control_fill_tap != null) __obj.updateDynamic("segmented_control_fill_tap")(segmented_control_fill_tap.asInstanceOf[js.Any])
-    if (segmented_control_height != null) __obj.updateDynamic("segmented_control_height")(segmented_control_height.asInstanceOf[js.Any])
+    if (!js.isUndefined(segmented_control_height)) __obj.updateDynamic("segmented_control_height")(segmented_control_height.get.asInstanceOf[js.Any])
     if (switch_fill != null) __obj.updateDynamic("switch_fill")(switch_fill.asInstanceOf[js.Any])
     if (tab_bar_fill != null) __obj.updateDynamic("tab_bar_fill")(tab_bar_fill.asInstanceOf[js.Any])
-    if (tab_bar_height != null) __obj.updateDynamic("tab_bar_height")(tab_bar_height.asInstanceOf[js.Any])
+    if (!js.isUndefined(tab_bar_height)) __obj.updateDynamic("tab_bar_height")(tab_bar_height.get.asInstanceOf[js.Any])
     if (tabs_color != null) __obj.updateDynamic("tabs_color")(tabs_color.asInstanceOf[js.Any])
-    if (tabs_font_size_heading != null) __obj.updateDynamic("tabs_font_size_heading")(tabs_font_size_heading.asInstanceOf[js.Any])
-    if (tabs_height != null) __obj.updateDynamic("tabs_height")(tabs_height.asInstanceOf[js.Any])
-    if (tag_height != null) __obj.updateDynamic("tag_height")(tag_height.asInstanceOf[js.Any])
-    if (tag_small_height != null) __obj.updateDynamic("tag_small_height")(tag_small_height.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabs_font_size_heading)) __obj.updateDynamic("tabs_font_size_heading")(tabs_font_size_heading.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabs_height)) __obj.updateDynamic("tabs_height")(tabs_height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tag_height)) __obj.updateDynamic("tag_height")(tag_height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tag_small_height)) __obj.updateDynamic("tag_small_height")(tag_small_height.get.asInstanceOf[js.Any])
     if (toast_fill != null) __obj.updateDynamic("toast_fill")(toast_fill.asInstanceOf[js.Any])
-    if (toast_zindex != null) __obj.updateDynamic("toast_zindex")(toast_zindex.asInstanceOf[js.Any])
-    if (v_spacing_lg != null) __obj.updateDynamic("v_spacing_lg")(v_spacing_lg.asInstanceOf[js.Any])
-    if (v_spacing_md != null) __obj.updateDynamic("v_spacing_md")(v_spacing_md.asInstanceOf[js.Any])
-    if (v_spacing_sm != null) __obj.updateDynamic("v_spacing_sm")(v_spacing_sm.asInstanceOf[js.Any])
-    if (v_spacing_xl != null) __obj.updateDynamic("v_spacing_xl")(v_spacing_xl.asInstanceOf[js.Any])
-    if (v_spacing_xs != null) __obj.updateDynamic("v_spacing_xs")(v_spacing_xs.asInstanceOf[js.Any])
+    if (!js.isUndefined(toast_zindex)) __obj.updateDynamic("toast_zindex")(toast_zindex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(v_spacing_lg)) __obj.updateDynamic("v_spacing_lg")(v_spacing_lg.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(v_spacing_md)) __obj.updateDynamic("v_spacing_md")(v_spacing_md.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(v_spacing_sm)) __obj.updateDynamic("v_spacing_sm")(v_spacing_sm.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(v_spacing_xl)) __obj.updateDynamic("v_spacing_xl")(v_spacing_xl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(v_spacing_xs)) __obj.updateDynamic("v_spacing_xs")(v_spacing_xs.get.asInstanceOf[js.Any])
     if (warning_button_fill != null) __obj.updateDynamic("warning_button_fill")(warning_button_fill.asInstanceOf[js.Any])
     if (warning_button_fill_tap != null) __obj.updateDynamic("warning_button_fill_tap")(warning_button_fill_tap.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialTheme]

@@ -1,6 +1,6 @@
 package typings.onionoo.mod.Onionoo
 
-import typings.onionoo.PartialRecord3days1week1m
+import typings.onionoo.anon.PartialRecord3days1week1m
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

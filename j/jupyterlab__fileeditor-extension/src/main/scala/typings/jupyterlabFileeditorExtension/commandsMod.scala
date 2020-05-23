@@ -10,20 +10,6 @@ import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModel
 import typings.jupyterlabDocregistry.registryMod.IDocumentWidget
 import typings.jupyterlabFilebrowser.tokensMod.IFileBrowserFactory
 import typings.jupyterlabFileeditor.mod.FileEditor
-import typings.jupyterlabFileeditorExtension.jupyterlabFileeditorExtensionStrings.Editor
-import typings.jupyterlabFileeditorExtension.jupyterlabFileeditorExtensionStrings.`fileeditorColonchange-font-size`
-import typings.jupyterlabFileeditorExtension.jupyterlabFileeditorExtensionStrings.`fileeditorColonchange-tabs`
-import typings.jupyterlabFileeditorExtension.jupyterlabFileeditorExtensionStrings.`fileeditorColoncreate-console`
-import typings.jupyterlabFileeditorExtension.jupyterlabFileeditorExtensionStrings.`fileeditorColoncreate-new-markdown-file`
-import typings.jupyterlabFileeditorExtension.jupyterlabFileeditorExtensionStrings.`fileeditorColoncreate-new`
-import typings.jupyterlabFileeditorExtension.jupyterlabFileeditorExtensionStrings.`fileeditorColonmarkdown-preview`
-import typings.jupyterlabFileeditorExtension.jupyterlabFileeditorExtensionStrings.`fileeditorColonreplace-selection`
-import typings.jupyterlabFileeditorExtension.jupyterlabFileeditorExtensionStrings.`fileeditorColonrun-all`
-import typings.jupyterlabFileeditorExtension.jupyterlabFileeditorExtensionStrings.`fileeditorColonrun-code`
-import typings.jupyterlabFileeditorExtension.jupyterlabFileeditorExtensionStrings.`fileeditorColontoggle-autoclosing-brackets`
-import typings.jupyterlabFileeditorExtension.jupyterlabFileeditorExtensionStrings.`fileeditorColontoggle-line-numbers`
-import typings.jupyterlabFileeditorExtension.jupyterlabFileeditorExtensionStrings.`fileeditorColontoggle-line-wrap`
-import typings.jupyterlabFileeditorExtension.jupyterlabFileeditorExtensionStrings.`fileeditorColontoggle-match-brackets`
 import typings.jupyterlabLauncher.mod.ILauncher
 import typings.jupyterlabMainmenu.tokensMod.IMainMenu
 import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry
@@ -36,22 +22,22 @@ import scala.scalajs.js.annotation._
 @JSImport("@jupyterlab/fileeditor-extension/lib/commands", JSImport.Namespace)
 @js.native
 object commandsMod extends js.Object {
-  val FACTORY: Editor = js.native
+  val FACTORY: /* "Editor" */ String = js.native
   @js.native
   object CommandIDs extends js.Object {
-    val autoClosingBrackets: `fileeditorColontoggle-autoclosing-brackets` = js.native
-    val changeFontSize: `fileeditorColonchange-font-size` = js.native
-    val changeTabs: `fileeditorColonchange-tabs` = js.native
-    val createConsole: `fileeditorColoncreate-console` = js.native
-    val createNew: `fileeditorColoncreate-new` = js.native
-    val createNewMarkdown: `fileeditorColoncreate-new-markdown-file` = js.native
-    val lineNumbers: `fileeditorColontoggle-line-numbers` = js.native
-    val lineWrap: `fileeditorColontoggle-line-wrap` = js.native
-    val markdownPreview: `fileeditorColonmarkdown-preview` = js.native
-    val matchBrackets: `fileeditorColontoggle-match-brackets` = js.native
-    val replaceSelection: `fileeditorColonreplace-selection` = js.native
-    val runAllCode: `fileeditorColonrun-all` = js.native
-    val runCode: `fileeditorColonrun-code` = js.native
+    val autoClosingBrackets: /* "fileeditor:toggle-autoclosing-brackets" */ String = js.native
+    val changeFontSize: /* "fileeditor:change-font-size" */ String = js.native
+    val changeTabs: /* "fileeditor:change-tabs" */ String = js.native
+    val createConsole: /* "fileeditor:create-console" */ String = js.native
+    val createNew: /* "fileeditor:create-new" */ String = js.native
+    val createNewMarkdown: /* "fileeditor:create-new-markdown-file" */ String = js.native
+    val lineNumbers: /* "fileeditor:toggle-line-numbers" */ String = js.native
+    val lineWrap: /* "fileeditor:toggle-line-wrap" */ String = js.native
+    val markdownPreview: /* "fileeditor:markdown-preview" */ String = js.native
+    val matchBrackets: /* "fileeditor:toggle-match-brackets" */ String = js.native
+    val replaceSelection: /* "fileeditor:replace-selection" */ String = js.native
+    val runAllCode: /* "fileeditor:run-all" */ String = js.native
+    val runCode: /* "fileeditor:run-code" */ String = js.native
   }
   
   @js.native

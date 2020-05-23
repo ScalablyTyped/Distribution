@@ -16,8 +16,7 @@ object SequenceNumberSyncer {
     writeSequenceNumber: ListenSequenceNumber => Unit,
     sequenceNumberHandler: /* sequenceNumber */ ListenSequenceNumber => Unit = null
   ): SequenceNumberSyncer = {
-    val __obj = js.Dynamic.literal(writeSequenceNumber = js.Any.fromFunction1(writeSequenceNumber))
-    if (sequenceNumberHandler != null) __obj.updateDynamic("sequenceNumberHandler")(js.Any.fromFunction1(sequenceNumberHandler))
+    val __obj = js.Dynamic.literal(writeSequenceNumber = js.Any.fromFunction1(writeSequenceNumber), sequenceNumberHandler = js.Any.fromFunction1(sequenceNumberHandler))
     __obj.asInstanceOf[SequenceNumberSyncer]
   }
 }

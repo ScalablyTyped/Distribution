@@ -20,8 +20,8 @@ object Relative {
     relativeOnly: js.UndefOr[Boolean] = js.undefined
   ): Relative = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowQuerySquareBrackets)) __obj.updateDynamic("allowQuerySquareBrackets")(allowQuerySquareBrackets.asInstanceOf[js.Any])
-    if (!js.isUndefined(relativeOnly)) __obj.updateDynamic("relativeOnly")(relativeOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowQuerySquareBrackets)) __obj.updateDynamic("allowQuerySquareBrackets")(allowQuerySquareBrackets.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(relativeOnly)) __obj.updateDynamic("relativeOnly")(relativeOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Relative]
   }
 }

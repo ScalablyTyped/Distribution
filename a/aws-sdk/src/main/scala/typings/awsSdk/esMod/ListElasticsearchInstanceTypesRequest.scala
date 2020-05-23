@@ -29,12 +29,12 @@ object ListElasticsearchInstanceTypesRequest {
   def apply(
     ElasticsearchVersion: ElasticsearchVersionString,
     DomainName: DomainName = null,
-    MaxResults: Int | scala.Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: NextToken = null
   ): ListElasticsearchInstanceTypesRequest = {
     val __obj = js.Dynamic.literal(ElasticsearchVersion = ElasticsearchVersion.asInstanceOf[js.Any])
     if (DomainName != null) __obj.updateDynamic("DomainName")(DomainName.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListElasticsearchInstanceTypesRequest]
   }

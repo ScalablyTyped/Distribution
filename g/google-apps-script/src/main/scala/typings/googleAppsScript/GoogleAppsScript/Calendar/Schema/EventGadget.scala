@@ -19,23 +19,23 @@ object EventGadget {
   @scala.inline
   def apply(
     display: String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     iconLink: String = null,
     link: String = null,
     preferences: js.Object = null,
     title: String = null,
     `type`: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): EventGadget = {
     val __obj = js.Dynamic.literal()
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (iconLink != null) __obj.updateDynamic("iconLink")(iconLink.asInstanceOf[js.Any])
     if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
     if (preferences != null) __obj.updateDynamic("preferences")(preferences.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventGadget]
   }
 }

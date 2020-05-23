@@ -1,13 +1,13 @@
 package typings.commonErrors.mod
 
-import typings.std.SyntaxErrorConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("common-errors", "SyntaxError")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.SyntaxError * / any */ @JSImport("common-errors", "SyntaxError")
 @js.native
-class SyntaxError protected () extends SyntaxErrorConstructor {
+class SyntaxError protected () extends js.Object {
   /**
     * @param message     any message
     * @param inner_error the Error instance that caused the current error.

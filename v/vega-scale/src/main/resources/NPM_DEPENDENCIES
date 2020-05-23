@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vega-scale" : "6.0.0"
+      "vega-scale" : "7.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "vega-scale" : "6.0.0"
+      "vega-scale" : "7.0.0"
     }
   ],
   "compile-devDependencies" : [

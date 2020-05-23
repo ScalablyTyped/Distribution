@@ -1,6 +1,6 @@
 package typings.babylonjs.nodeIndexMod
 
-import typings.babylonjs.PartialINodeMaterialOptio
+import typings.babylonjs.anon.PartialINodeMaterialOptio
 import typings.babylonjs.sceneMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`

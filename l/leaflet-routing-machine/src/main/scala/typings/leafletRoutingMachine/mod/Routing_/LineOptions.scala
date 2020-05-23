@@ -19,7 +19,7 @@ object LineOptions {
     styles: js.Array[PathOptions] = null
   ): LineOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addWaypoints)) __obj.updateDynamic("addWaypoints")(addWaypoints.asInstanceOf[js.Any])
+    if (!js.isUndefined(addWaypoints)) __obj.updateDynamic("addWaypoints")(addWaypoints.get.asInstanceOf[js.Any])
     if (missingRouteStyles != null) __obj.updateDynamic("missingRouteStyles")(missingRouteStyles.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineOptions]

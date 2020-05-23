@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "dotnet-deps-parser" : "4.10.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "dotnet-deps-parser" : "4.10.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

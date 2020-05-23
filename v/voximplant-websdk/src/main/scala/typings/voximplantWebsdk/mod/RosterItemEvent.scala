@@ -12,32 +12,32 @@ sealed trait RosterItemEvent extends js.Object
 @js.native
 object RosterItemEvent extends js.Object {
   /**
-  		*	Roster item added
-  		*/
+    *    Roster item added
+    */
   @js.native
   sealed trait Added extends RosterItemEvent
   
   /**
-  		*	Roster item removed
-  		*/
+    *    Roster item removed
+    */
   @js.native
   sealed trait Removed extends RosterItemEvent
   
   /**
-  		*	User subscribed on your status updates (authorized the request)
-  		*/
+    *    User subscribed on your status updates (authorized the request)
+    */
   @js.native
   sealed trait Subscribed extends RosterItemEvent
   
   /**
-  		*	User unsubscribed from your status updates (didn't authorize the request)
-  		*/
+    *    User unsubscribed from your status updates (didn't authorize the request)
+    */
   @js.native
   sealed trait Unsubscribed extends RosterItemEvent
   
   /**
-  		*	Roster item updated
-  		*/
+    *    Roster item updated
+    */
   @js.native
   sealed trait Updated extends RosterItemEvent
   

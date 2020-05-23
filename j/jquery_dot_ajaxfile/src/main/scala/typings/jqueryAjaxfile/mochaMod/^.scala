@@ -1,14 +1,14 @@
 package typings.jqueryAjaxfile.mochaMod
 
-import typings.jqueryAjaxfile.AnonBail
-import typings.jqueryAjaxfile.Mocha_
+import typings.jqueryAjaxfile.Mocha
+import typings.jqueryAjaxfile.anon.Bail
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("mocha", JSImport.Namespace)
 @js.native
-class ^ () extends Mocha_ {
-  def this(options: AnonBail) = this()
+class ^ () extends Mocha {
+  def this(options: Bail) = this()
 }
 

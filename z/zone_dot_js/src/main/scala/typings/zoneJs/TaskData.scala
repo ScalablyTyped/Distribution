@@ -24,14 +24,14 @@ trait TaskData extends js.Object {
 object TaskData {
   @scala.inline
   def apply(
-    delay: Int | Double = null,
-    handleId: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
+    handleId: js.UndefOr[Double] = js.undefined,
     isPeriodic: js.UndefOr[Boolean] = js.undefined
   ): TaskData = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (handleId != null) __obj.updateDynamic("handleId")(handleId.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPeriodic)) __obj.updateDynamic("isPeriodic")(isPeriodic.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleId)) __obj.updateDynamic("handleId")(handleId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPeriodic)) __obj.updateDynamic("isPeriodic")(isPeriodic.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskData]
   }
 }

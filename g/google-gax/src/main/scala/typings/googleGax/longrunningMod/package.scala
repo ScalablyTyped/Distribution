@@ -12,4 +12,5 @@ package object longrunningMod {
     /* rawResponse */ js.UndefOr[typings.googleGax.longrunningMod.LROOperation], 
     scala.Unit
   ]
+  type LROOperation = typings.googleGax.operationsMod.google.longrunning.Operation
 }

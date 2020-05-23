@@ -29,13 +29,13 @@ object ITileSourceOptions {
   def apply(
     uriConstructor: String | (js.Function1[/* tile */ PyramidTileId, String]),
     bounds: LocationRect = null,
-    maxZoom: Int | Double = null,
-    minZoom: Int | Double = null
+    maxZoom: js.UndefOr[Double] = js.undefined,
+    minZoom: js.UndefOr[Double] = js.undefined
   ): ITileSourceOptions = {
     val __obj = js.Dynamic.literal(uriConstructor = uriConstructor.asInstanceOf[js.Any])
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITileSourceOptions]
   }
 }

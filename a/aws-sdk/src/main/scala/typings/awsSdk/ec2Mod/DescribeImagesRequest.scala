@@ -31,14 +31,14 @@ trait DescribeImagesRequest extends js.Object {
 object DescribeImagesRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     ExecutableUsers: ExecutableByStringList = null,
     Filters: FilterList = null,
     ImageIds: ImageIdStringList = null,
     Owners: OwnerStringList = null
   ): DescribeImagesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (ExecutableUsers != null) __obj.updateDynamic("ExecutableUsers")(ExecutableUsers.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
     if (ImageIds != null) __obj.updateDynamic("ImageIds")(ImageIds.asInstanceOf[js.Any])

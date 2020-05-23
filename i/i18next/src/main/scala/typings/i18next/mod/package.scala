@@ -27,7 +27,7 @@ package object mod {
   ]
   type ReadCallback = js.Function2[
     /* err */ typings.i18next.mod.CallbackError, 
-    /* data */ typings.i18next.mod.ResourceKey, 
+    /* data */ typings.i18next.mod.ResourceKey | scala.Boolean, 
     scala.Unit
   ]
   type Resource = org.scalablytyped.runtime.StringDictionary[typings.i18next.mod.ResourceLanguage]

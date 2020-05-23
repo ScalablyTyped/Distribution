@@ -1,6 +1,6 @@
 package typings.jupyterlabServices.contentsMod.Contents
 
-import typings.jupyterlabServices.PartialIModel
+import typings.jupyterlabServices.anon.PartialIModel
 import typings.jupyterlabServices.jupyterlabServicesStrings.`new`
 import typings.jupyterlabServices.jupyterlabServicesStrings.delete
 import typings.jupyterlabServices.jupyterlabServicesStrings.rename
@@ -34,10 +34,8 @@ object IChangedArgs {
     newValue: PartialIModel = null,
     oldValue: PartialIModel = null
   ): IChangedArgs = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (newValue != null) __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
-    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChangedArgs]
   }
 }

@@ -1,6 +1,6 @@
 package typings.openpgp.mod.key
 
-import typings.openpgp.AnonKeyid
+import typings.openpgp.anon.Keyid
 import typings.openpgp.mod.enums.keyStatus
 import typings.openpgp.mod.packet.List
 import typings.openpgp.mod.packet.PublicKey
@@ -67,7 +67,7 @@ class User () extends js.Object {
     * @returns Status of user
     */
   def verify(primaryKey: SecretKey, date: Date): js.Promise[keyStatus] = js.native
-  def verifyAllCertifications(primaryKey: PublicKey, keys: js.Array[_], date: Date): js.Promise[js.Array[AnonKeyid]] = js.native
+  def verifyAllCertifications(primaryKey: PublicKey, keys: js.Array[_], date: Date): js.Promise[js.Array[Keyid]] = js.native
   /**
     * Verifies all user certificates
     * @param primaryKey The primary key packet
@@ -75,7 +75,7 @@ class User () extends js.Object {
     * @param date Use the given date instead of the current time
     * @returns List of signer's keyid and validity of signature
     */
-  def verifyAllCertifications(primaryKey: SecretKey, keys: js.Array[_], date: Date): js.Promise[js.Array[AnonKeyid]] = js.native
+  def verifyAllCertifications(primaryKey: SecretKey, keys: js.Array[_], date: Date): js.Promise[js.Array[Keyid]] = js.native
   def verifyCertificate(primaryKey: PublicKey, certificate: Signature, keys: js.Array[_], date: Date): js.Promise[keyStatus] = js.native
   /**
     * Verifies the user certificate

@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/test/unit/specs/spec_test_runner", "runSpec")
+@JSImport("@firebase/firestore/dist/packages/firestore/test/unit/specs/spec_test_runner", "runSpec")
 @js.native
 object runSpec extends js.Object {
   def apply(

@@ -10,48 +10,48 @@ import scala.scalajs.js.annotation._
 
 trait ICartesian extends ISeries {
   /** [Method] For a given x y point relative to the main region find a corresponding item from this series if any
-  		* @param x Object
-  		* @param y Object
-  		* @returns Object An object describing the item, or null if there is no matching item. The exact contents of this object will vary by series type, but should always contain at least the following:
-  		*/
+    * @param x Object
+    * @param y Object
+    * @returns Object An object describing the item, or null if there is no matching item. The exact contents of this object will vary by series type, but should always contain at least the following:
+    */
   @JSName("getItemForPoint")
   var getItemForPoint_ICartesian: js.UndefOr[js.Function2[/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Returns the value of xAxis
-  		* @returns Ext.chart.axis.Axis
-  		*/
+    * @returns Ext.chart.axis.Axis
+    */
   var getXAxis: js.UndefOr[js.Function0[IAxis]] = js.undefined
   /** [Method] Returns the value of xField
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getXField: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of yAxis
-  		* @returns Ext.chart.axis.Axis
-  		*/
+    * @returns Ext.chart.axis.Axis
+    */
   var getYAxis: js.UndefOr[js.Function0[IAxis]] = js.undefined
   /** [Method] Returns the value of yField
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getYField: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Provide legend information to target array
-  		* @param target Object
-  		*/
+    * @param target Object
+    */
   @JSName("provideLegendInfo")
   var provideLegendInfo_ICartesian: js.UndefOr[js.Function1[/* target */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of xAxis
-  		* @param xAxis Ext.chart.axis.Axis The new value.
-  		*/
+    * @param xAxis Ext.chart.axis.Axis The new value.
+    */
   var setXAxis: js.UndefOr[js.Function1[/* xAxis */ js.UndefOr[IAxis], Unit]] = js.undefined
   /** [Method] Sets the value of xField
-  		* @param xField String The new value.
-  		*/
+    * @param xField String The new value.
+    */
   var setXField: js.UndefOr[js.Function1[/* xField */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of yAxis
-  		* @param yAxis Ext.chart.axis.Axis The new value.
-  		*/
+    * @param yAxis Ext.chart.axis.Axis The new value.
+    */
   var setYAxis: js.UndefOr[js.Function1[/* yAxis */ js.UndefOr[IAxis], Unit]] = js.undefined
   /** [Method] Sets the value of yField
-  		* @param yField String The new value.
-  		*/
+    * @param yField String The new value.
+    */
   var setYField: js.UndefOr[js.Function1[/* yField */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (Ext.chart.axis.Axis) */
   var xAxis: js.UndefOr[IAxis] = js.undefined
@@ -125,7 +125,7 @@ object ICartesian {
     itemInstancing: js.Any = null,
     label: js.Any = null,
     labelField: js.Any = null,
-    labelOverflowPadding: Int | Double = null,
+    labelOverflowPadding: js.UndefOr[Double] = js.undefined,
     listeners: js.Any = null,
     marker: js.Any = null,
     markerSubStyle: js.Any = null,
@@ -253,7 +253,7 @@ object ICartesian {
     if (itemInstancing != null) __obj.updateDynamic("itemInstancing")(itemInstancing.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelField != null) __obj.updateDynamic("labelField")(labelField.asInstanceOf[js.Any])
-    if (labelOverflowPadding != null) __obj.updateDynamic("labelOverflowPadding")(labelOverflowPadding.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelOverflowPadding)) __obj.updateDynamic("labelOverflowPadding")(labelOverflowPadding.get.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
     if (markerSubStyle != null) __obj.updateDynamic("markerSubStyle")(markerSubStyle.asInstanceOf[js.Any])
@@ -302,8 +302,8 @@ object ICartesian {
     if (setXField != null) __obj.updateDynamic("setXField")(js.Any.fromFunction1(setXField))
     if (setYAxis != null) __obj.updateDynamic("setYAxis")(js.Any.fromFunction1(setYAxis))
     if (setYField != null) __obj.updateDynamic("setYField")(js.Any.fromFunction1(setYField))
-    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

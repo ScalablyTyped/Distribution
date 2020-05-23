@@ -12,10 +12,13 @@ trait IFabricStyles extends js.Object {
 
 object IFabricStyles {
   @scala.inline
-  def apply(bodyThemed: IStyle = null, root: IStyle = null): IFabricStyles = {
+  def apply(
+    bodyThemed: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined
+  ): IFabricStyles = {
     val __obj = js.Dynamic.literal()
-    if (bodyThemed != null) __obj.updateDynamic("bodyThemed")(bodyThemed.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(bodyThemed)) __obj.updateDynamic("bodyThemed")(bodyThemed.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFabricStyles]
   }
 }

@@ -24,13 +24,13 @@ object ITrafficOptions {
     flowVisible: js.UndefOr[Boolean] = js.undefined,
     incidentsVisible: js.UndefOr[Boolean] = js.undefined,
     legendVisible: js.UndefOr[Boolean] = js.undefined,
-    opacity: Int | Double = null
+    opacity: js.UndefOr[Double] = js.undefined
   ): ITrafficOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(flowVisible)) __obj.updateDynamic("flowVisible")(flowVisible.asInstanceOf[js.Any])
-    if (!js.isUndefined(incidentsVisible)) __obj.updateDynamic("incidentsVisible")(incidentsVisible.asInstanceOf[js.Any])
-    if (!js.isUndefined(legendVisible)) __obj.updateDynamic("legendVisible")(legendVisible.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(flowVisible)) __obj.updateDynamic("flowVisible")(flowVisible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(incidentsVisible)) __obj.updateDynamic("incidentsVisible")(incidentsVisible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(legendVisible)) __obj.updateDynamic("legendVisible")(legendVisible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITrafficOptions]
   }
 }

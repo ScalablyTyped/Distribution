@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.CanvasLayer")
 @js.native
-class CanvasLayer () extends MediaLayer[HTMLCanvasElement] {
+trait CanvasLayer extends MediaLayer[HTMLCanvasElement] {
   /**
     * 返回Canvas对象
     */

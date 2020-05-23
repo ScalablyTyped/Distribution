@@ -1,8 +1,8 @@
 package typings.fundamentalReact.searchInputMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.fundamentalReact.AnonCallback
-import typings.fundamentalReact.AnonText
+import typings.fundamentalReact.anon.Callback
+import typings.fundamentalReact.anon.Text
 import typings.react.mod.ChangeEvent
 import typings.std.HTMLInputElement
 import scala.scalajs.js
@@ -25,14 +25,14 @@ trait SearchInputProps
   var placeholder: js.UndefOr[String] = js.undefined
   var popoverProps: js.UndefOr[js.Any] = js.undefined
   var searchBtnProps: js.UndefOr[js.Any] = js.undefined
-  var searchList: js.UndefOr[js.Array[AnonCallback]] = js.undefined
-  var validationState: js.UndefOr[AnonText] = js.undefined
+  var searchList: js.UndefOr[js.Array[Callback]] = js.undefined
+  var validationState: js.UndefOr[Text] = js.undefined
 }
 
 object SearchInputProps {
   @scala.inline
   def apply(
-    StringDictionary: /* x */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     className: String = null,
     compact: js.UndefOr[Boolean] = js.undefined,
     disableStyles: js.UndefOr[Boolean] = js.undefined,
@@ -47,20 +47,20 @@ object SearchInputProps {
     placeholder: String = null,
     popoverProps: js.Any = null,
     searchBtnProps: js.Any = null,
-    searchList: js.Array[AnonCallback] = null,
-    validationState: AnonText = null
+    searchList: js.Array[Callback] = null,
+    validationState: Text = null
   ): SearchInputProps = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(inShellbar)) __obj.updateDynamic("inShellbar")(inShellbar.asInstanceOf[js.Any])
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inShellbar)) __obj.updateDynamic("inShellbar")(inShellbar.get.asInstanceOf[js.Any])
     if (inputGroupAddonProps != null) __obj.updateDynamic("inputGroupAddonProps")(inputGroupAddonProps.asInstanceOf[js.Any])
     if (inputGroupProps != null) __obj.updateDynamic("inputGroupProps")(inputGroupProps.asInstanceOf[js.Any])
     if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
     if (listProps != null) __obj.updateDynamic("listProps")(listProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(noSearchBtn)) __obj.updateDynamic("noSearchBtn")(noSearchBtn.asInstanceOf[js.Any])
+    if (!js.isUndefined(noSearchBtn)) __obj.updateDynamic("noSearchBtn")(noSearchBtn.get.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction1(onEnter))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])

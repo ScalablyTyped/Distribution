@@ -22,8 +22,8 @@ object FileInfoOptions {
     val __obj = js.Dynamic.literal()
     if (ignorePath != null) __obj.updateDynamic("ignorePath")(ignorePath.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (!js.isUndefined(resolveConfig)) __obj.updateDynamic("resolveConfig")(resolveConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(withNodeModules)) __obj.updateDynamic("withNodeModules")(withNodeModules.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolveConfig)) __obj.updateDynamic("resolveConfig")(resolveConfig.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(withNodeModules)) __obj.updateDynamic("withNodeModules")(withNodeModules.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileInfoOptions]
   }
 }

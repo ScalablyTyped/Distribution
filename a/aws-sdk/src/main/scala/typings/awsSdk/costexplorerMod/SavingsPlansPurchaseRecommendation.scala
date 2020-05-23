@@ -19,7 +19,7 @@ trait SavingsPlansPurchaseRecommendation extends js.Object {
     */
   var PaymentOption: js.UndefOr[typings.awsSdk.costexplorerMod.PaymentOption] = js.native
   /**
-    * Details for the Savings Plans we recommend you to purchase to cover existing, Savings Plans eligible workloads.
+    * Details for the Savings Plans we recommend that you purchase to cover existing Savings Plans eligible workloads.
     */
   var SavingsPlansPurchaseRecommendationDetails: js.UndefOr[SavingsPlansPurchaseRecommendationDetailList] = js.native
   /**

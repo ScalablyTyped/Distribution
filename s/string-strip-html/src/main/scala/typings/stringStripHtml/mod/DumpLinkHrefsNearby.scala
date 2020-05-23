@@ -20,8 +20,8 @@ object DumpLinkHrefsNearby {
     wrapTails: String = null
   ): DumpLinkHrefsNearby = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(putOnNewLine)) __obj.updateDynamic("putOnNewLine")(putOnNewLine.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(putOnNewLine)) __obj.updateDynamic("putOnNewLine")(putOnNewLine.get.asInstanceOf[js.Any])
     if (wrapHeads != null) __obj.updateDynamic("wrapHeads")(wrapHeads.asInstanceOf[js.Any])
     if (wrapTails != null) __obj.updateDynamic("wrapTails")(wrapTails.asInstanceOf[js.Any])
     __obj.asInstanceOf[DumpLinkHrefsNearby]

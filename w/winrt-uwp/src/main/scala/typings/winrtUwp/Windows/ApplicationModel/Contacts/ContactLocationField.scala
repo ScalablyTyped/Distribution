@@ -5,58 +5,46 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains information about a user's location and address. */
-@JSGlobal("Windows.ApplicationModel.Contacts.ContactLocationField")
-@js.native
-class ContactLocationField protected () extends js.Object {
-  /**
-    * Creates a new ContactLocationField object.
-    * @param unstructuredAddress The address of the contact in an unstructured format.
-    */
-  def this(unstructuredAddress: String) = this()
-  /**
-    * Creates a new ContactLocationField object.
-    * @param unstructuredAddress The address of the contact in an unstructured format.
-    * @param category The category the field belongs to.
-    */
-  def this(unstructuredAddress: String, category: ContactFieldCategory) = this()
-  /**
-    * Creates a new ContactLocationField object.
-    * @param unstructuredAddress The address of the contact in an unstructured format.
-    * @param category The category for the contact data.
-    * @param street The street address of the contact.
-    * @param city The name of the city for this contact's address.
-    * @param region The name of the region for this contact's address.
-    * @param country The name of the country for this contact's address.
-    * @param postalCode The postal code for this contact's address.
-    */
-  def this(
-    unstructuredAddress: String,
-    category: ContactFieldCategory,
-    street: String,
-    city: String,
-    region: String,
-    country: String,
-    postalCode: String
-  ) = this()
+trait ContactLocationField extends js.Object {
   /** Gets the category for the contact data. */
-  var category: ContactFieldCategory = js.native
+  var category: ContactFieldCategory
   /** Gets the contact's city. */
-  var city: String = js.native
+  var city: String
   /** Gets the contact's country. */
-  var country: String = js.native
+  var country: String
   /** Gets the name of the field. */
-  var name: String = js.native
+  var name: String
   /** Gets the contact's postal code. */
-  var postalCode: String = js.native
+  var postalCode: String
   /** Gets the contact's region. */
-  var region: String = js.native
+  var region: String
   /** Gets the contact's street. */
-  var street: String = js.native
+  var street: String
   /** Gets the contact field type for the data. */
-  var `type`: ContactFieldType = js.native
+  var `type`: ContactFieldType
   /** Gets a string that represents an unstructured address. */
-  var unstructuredAddress: String = js.native
+  var unstructuredAddress: String
   /** Gets the value of the contact data. */
-  var value: String = js.native
+  var value: String
+}
+
+object ContactLocationField {
+  @scala.inline
+  def apply(
+    category: ContactFieldCategory,
+    city: String,
+    country: String,
+    name: String,
+    postalCode: String,
+    region: String,
+    street: String,
+    `type`: ContactFieldType,
+    unstructuredAddress: String,
+    value: String
+  ): ContactLocationField = {
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], city = city.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], street = street.asInstanceOf[js.Any], unstructuredAddress = unstructuredAddress.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ContactLocationField]
+  }
 }
 

@@ -18,44 +18,44 @@ trait DebOptions extends LinuxTargetSpecificOptions {
 object DebOptions {
   @scala.inline
   def apply(
-    afterInstall: String = null,
-    afterRemove: String = null,
-    artifactName: String = null,
-    category: String = null,
-    compression: gz | bzip2 | xz = null,
-    depends: js.Array[String] = null,
-    description: String = null,
-    desktop: js.Any = null,
-    executableArgs: js.Array[String] = null,
-    fpm: js.Array[String] = null,
+    afterInstall: js.UndefOr[Null | String] = js.undefined,
+    afterRemove: js.UndefOr[Null | String] = js.undefined,
+    artifactName: js.UndefOr[Null | String] = js.undefined,
+    category: js.UndefOr[Null | String] = js.undefined,
+    compression: js.UndefOr[Null | gz | bzip2 | xz] = js.undefined,
+    depends: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    description: js.UndefOr[Null | String] = js.undefined,
+    desktop: js.UndefOr[Null | js.Any] = js.undefined,
+    executableArgs: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    fpm: js.UndefOr[Null | js.Array[String]] = js.undefined,
     icon: String = null,
-    maintainer: String = null,
-    mimeTypes: js.Array[String] = null,
-    packageCategory: String = null,
-    priority: String = null,
-    publish: Publish = null,
-    synopsis: String = null,
-    vendor: String = null
+    maintainer: js.UndefOr[Null | String] = js.undefined,
+    mimeTypes: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    packageCategory: js.UndefOr[Null | String] = js.undefined,
+    priority: js.UndefOr[Null | String] = js.undefined,
+    publish: js.UndefOr[Null | Publish] = js.undefined,
+    synopsis: js.UndefOr[Null | String] = js.undefined,
+    vendor: js.UndefOr[Null | String] = js.undefined
   ): DebOptions = {
     val __obj = js.Dynamic.literal()
-    if (afterInstall != null) __obj.updateDynamic("afterInstall")(afterInstall.asInstanceOf[js.Any])
-    if (afterRemove != null) __obj.updateDynamic("afterRemove")(afterRemove.asInstanceOf[js.Any])
-    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
-    if (depends != null) __obj.updateDynamic("depends")(depends.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (desktop != null) __obj.updateDynamic("desktop")(desktop.asInstanceOf[js.Any])
-    if (executableArgs != null) __obj.updateDynamic("executableArgs")(executableArgs.asInstanceOf[js.Any])
-    if (fpm != null) __obj.updateDynamic("fpm")(fpm.asInstanceOf[js.Any])
+    if (!js.isUndefined(afterInstall)) __obj.updateDynamic("afterInstall")(afterInstall.asInstanceOf[js.Any])
+    if (!js.isUndefined(afterRemove)) __obj.updateDynamic("afterRemove")(afterRemove.asInstanceOf[js.Any])
+    if (!js.isUndefined(artifactName)) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
+    if (!js.isUndefined(category)) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (!js.isUndefined(compression)) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
+    if (!js.isUndefined(depends)) __obj.updateDynamic("depends")(depends.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(desktop)) __obj.updateDynamic("desktop")(desktop.asInstanceOf[js.Any])
+    if (!js.isUndefined(executableArgs)) __obj.updateDynamic("executableArgs")(executableArgs.asInstanceOf[js.Any])
+    if (!js.isUndefined(fpm)) __obj.updateDynamic("fpm")(fpm.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (maintainer != null) __obj.updateDynamic("maintainer")(maintainer.asInstanceOf[js.Any])
-    if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes.asInstanceOf[js.Any])
-    if (packageCategory != null) __obj.updateDynamic("packageCategory")(packageCategory.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
-    if (synopsis != null) __obj.updateDynamic("synopsis")(synopsis.asInstanceOf[js.Any])
-    if (vendor != null) __obj.updateDynamic("vendor")(vendor.asInstanceOf[js.Any])
+    if (!js.isUndefined(maintainer)) __obj.updateDynamic("maintainer")(maintainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(mimeTypes)) __obj.updateDynamic("mimeTypes")(mimeTypes.asInstanceOf[js.Any])
+    if (!js.isUndefined(packageCategory)) __obj.updateDynamic("packageCategory")(packageCategory.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(publish)) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
+    if (!js.isUndefined(synopsis)) __obj.updateDynamic("synopsis")(synopsis.asInstanceOf[js.Any])
+    if (!js.isUndefined(vendor)) __obj.updateDynamic("vendor")(vendor.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebOptions]
   }
 }

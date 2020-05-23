@@ -18,9 +18,9 @@ trait ListSecretsRequest extends js.Object {
 
 object ListSecretsRequest {
   @scala.inline
-  def apply(MaxResults: Int | Double = null, NextToken: NextTokenType = null): ListSecretsRequest = {
+  def apply(MaxResults: js.UndefOr[MaxResultsType] = js.undefined, NextToken: NextTokenType = null): ListSecretsRequest = {
     val __obj = js.Dynamic.literal()
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSecretsRequest]
   }

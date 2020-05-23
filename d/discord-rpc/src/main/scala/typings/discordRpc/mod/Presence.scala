@@ -32,8 +32,8 @@ object Presence {
     largeImageKey: String = null,
     largeImageText: String = null,
     matchSecret: String = null,
-    partyMax: Int | Double = null,
-    partySize: Int | Double = null,
+    partyMax: js.UndefOr[Double] = js.undefined,
+    partySize: js.UndefOr[Double] = js.undefined,
     smallImageKey: String = null,
     smallImageText: String = null,
     spectateSecret: String = null,
@@ -43,13 +43,13 @@ object Presence {
     val __obj = js.Dynamic.literal()
     if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
     if (endTimestamp != null) __obj.updateDynamic("endTimestamp")(endTimestamp.asInstanceOf[js.Any])
-    if (!js.isUndefined(instance)) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
+    if (!js.isUndefined(instance)) __obj.updateDynamic("instance")(instance.get.asInstanceOf[js.Any])
     if (joinSecret != null) __obj.updateDynamic("joinSecret")(joinSecret.asInstanceOf[js.Any])
     if (largeImageKey != null) __obj.updateDynamic("largeImageKey")(largeImageKey.asInstanceOf[js.Any])
     if (largeImageText != null) __obj.updateDynamic("largeImageText")(largeImageText.asInstanceOf[js.Any])
     if (matchSecret != null) __obj.updateDynamic("matchSecret")(matchSecret.asInstanceOf[js.Any])
-    if (partyMax != null) __obj.updateDynamic("partyMax")(partyMax.asInstanceOf[js.Any])
-    if (partySize != null) __obj.updateDynamic("partySize")(partySize.asInstanceOf[js.Any])
+    if (!js.isUndefined(partyMax)) __obj.updateDynamic("partyMax")(partyMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(partySize)) __obj.updateDynamic("partySize")(partySize.get.asInstanceOf[js.Any])
     if (smallImageKey != null) __obj.updateDynamic("smallImageKey")(smallImageKey.asInstanceOf[js.Any])
     if (smallImageText != null) __obj.updateDynamic("smallImageText")(smallImageText.asInstanceOf[js.Any])
     if (spectateSecret != null) __obj.updateDynamic("spectateSecret")(spectateSecret.asInstanceOf[js.Any])

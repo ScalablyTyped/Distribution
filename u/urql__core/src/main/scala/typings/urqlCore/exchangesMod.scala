@@ -5,6 +5,7 @@ import typings.urqlCore.ssrMod.SSRExchange_
 import typings.urqlCore.subscriptionMod.SubscriptionExchangeOpts
 import typings.urqlCore.typesMod.Exchange
 import typings.urqlCore.typesMod.ExchangeIO
+import typings.urqlCore.typesMod.ExchangeInput
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +19,7 @@ object exchangesMod extends js.Object {
   val defaultExchanges: js.Array[Exchange] = js.native
   val fallbackExchangeIO: ExchangeIO = js.native
   val fetchExchange: Exchange = js.native
-  def composeExchanges(exchanges: js.Array[Exchange]): Exchange = js.native
+  def composeExchanges(exchanges: js.Array[Exchange]): js.Function1[/* hasClientForwardDispatchDebug */ ExchangeInput, ExchangeIO] = js.native
   def ssrExchange(): SSRExchange_ = js.native
   def ssrExchange(params: SSRExchangeParams): SSRExchange_ = js.native
   def subscriptionExchange(hasForwardSubscriptionEnableAllOperations: SubscriptionExchangeOpts): Exchange = js.native

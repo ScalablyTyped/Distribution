@@ -10,9 +10,9 @@ trait ActivableRendererFactoryOptions extends js.Object {
 
 object ActivableRendererFactoryOptions {
   @scala.inline
-  def apply(delay: Int | Double = null): ActivableRendererFactoryOptions = {
+  def apply(delay: js.UndefOr[Double] = js.undefined): ActivableRendererFactoryOptions = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivableRendererFactoryOptions]
   }
 }

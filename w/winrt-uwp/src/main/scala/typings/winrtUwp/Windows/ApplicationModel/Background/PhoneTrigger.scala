@@ -6,18 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a phone event that triggers a background task. */
-@JSGlobal("Windows.ApplicationModel.Background.PhoneTrigger")
-@js.native
-class PhoneTrigger protected () extends js.Object {
-  /**
-    * Initializes a new instance of the PhoneTrigger class.
-    * @param type Specifies the type of phone event.
-    * @param oneShot Indicates if the trigger is a one-shot notification. If you weren't subscribed when a one-shot notification was sent, you get nothing. If you weren't connected when you fired a one-shot notification, nothing happens.
-    */
-  def this(`type`: PhoneTriggerType, oneShot: Boolean) = this()
+trait PhoneTrigger extends js.Object {
   /** Gets a Boolean value indicating if the trigger is a one-shot notification. */
-  var oneShot: Boolean = js.native
+  var oneShot: Boolean
   /** Gets the type of phone event indicated by the trigger. */
-  var triggerType: PhoneTriggerType = js.native
+  var triggerType: PhoneTriggerType
+}
+
+object PhoneTrigger {
+  @scala.inline
+  def apply(oneShot: Boolean, triggerType: PhoneTriggerType): PhoneTrigger = {
+    val __obj = js.Dynamic.literal(oneShot = oneShot.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PhoneTrigger]
+  }
 }
 

@@ -1,20 +1,20 @@
 package typings.oracleOraclejet.ojchartMod
 
-import typings.oracleOraclejet.AnonAlignTickMarks
-import typings.oracleOraclejet.AnonAnimationDownColor
-import typings.oracleOraclejet.AnonAxisLine
-import typings.oracleOraclejet.AnonBackgroundColor
-import typings.oracleOraclejet.AnonBaselineScaling
-import typings.oracleOraclejet.AnonBorderWidth
-import typings.oracleOraclejet.AnonClose
-import typings.oracleOraclejet.AnonComponentName
-import typings.oracleOraclejet.AnonContent
-import typings.oracleOraclejet.AnonConverter
-import typings.oracleOraclejet.AnonDrag
-import typings.oracleOraclejet.AnonInsert
-import typings.oracleOraclejet.AnonPreventDefault
-import typings.oracleOraclejet.AnonRenderer
-import typings.oracleOraclejet.AnonX
+import typings.oracleOraclejet.anon.AlignTickMarks
+import typings.oracleOraclejet.anon.AnimationDownColor
+import typings.oracleOraclejet.anon.AxisLine
+import typings.oracleOraclejet.anon.BackgroundColor
+import typings.oracleOraclejet.anon.BaselineScaling
+import typings.oracleOraclejet.anon.BorderWidth
+import typings.oracleOraclejet.anon.Close
+import typings.oracleOraclejet.anon.ComponentName
+import typings.oracleOraclejet.anon.Content
+import typings.oracleOraclejet.anon.Converter
+import typings.oracleOraclejet.anon.Drag
+import typings.oracleOraclejet.anon.Insert
+import typings.oracleOraclejet.anon.PreventDefault
+import typings.oracleOraclejet.anon.Renderer
+import typings.oracleOraclejet.anon.X
 import typings.oracleOraclejet.ojchartMod.ojChart.DataLabelContext
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponentSettableProperties
@@ -85,8 +85,8 @@ trait ojChartSettableProperties[K, D] extends dvtBaseComponentSettableProperties
   var data: (DataProvider[K, D]) | Null
   var dataCursor: off | on | auto
   var dataCursorBehavior: smooth | snap | auto
-  var dataCursorPosition: AnonX
-  var dnd: AnonDrag
+  var dataCursorPosition: X
+  var dnd: Drag
   var dragMode: pan | zoom | select | off | user
   var drilling: on | seriesOnly | groupsOnly | off
   var groupComparator: (js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]) | Null
@@ -96,12 +96,12 @@ trait ojChartSettableProperties[K, D] extends dvtBaseComponentSettableProperties
   var highlightedCategories: js.Array[String]
   var hoverBehavior: dim | none
   var initialZooming: first | last | none
-  var legend: AnonBackgroundColor
+  var legend: BackgroundColor
   var orientation: horizontal | vertical
   var otherThreshold: Double
-  var overview: AnonContent
-  var pieCenter: AnonConverter
-  var plotArea: AnonBorderWidth
+  var overview: Content
+  var pieCenter: Converter
+  var plotArea: BorderWidth
   var polarGridShape: polygon | circle
   var selection: js.Array[K]
   var selectionMode: single | multiple | none
@@ -111,20 +111,20 @@ trait ojChartSettableProperties[K, D] extends dvtBaseComponentSettableProperties
   var splitterPosition: Double
   var stack: on | off
   var stackLabel: on | off
-  var styleDefaults: AnonAnimationDownColor
+  var styleDefaults: AnimationDownColor
   var timeAxisType: enabled | mixedFrequency | skipGaps | disabled | auto
-  var tooltip: AnonRenderer
+  var tooltip: Renderer
   var touchResponse: touchStart | auto
   @JSName("translations")
-  var translations_ojChartSettableProperties: AnonComponentName
+  var translations_ojChartSettableProperties: ComponentName
   var `type`: line | area | lineWithArea | stock | boxPlot | combo | pie | scatter | bubble | funnel | pyramid | bar
-  var valueFormats: AnonClose
-  var xAxis: AnonAxisLine
-  var y2Axis: AnonAlignTickMarks
-  var yAxis: AnonBaselineScaling
+  var valueFormats: Close
+  var xAxis: AxisLine
+  var y2Axis: AlignTickMarks
+  var yAxis: BaselineScaling
   var zoomAndScroll: delayedScrollOnly | liveScrollOnly | delayed | live | off
   var zoomDirection: x | y | auto
-  def dataLabel(context: DataLabelContext): AnonInsert | AnonPreventDefault
+  def dataLabel(context: DataLabelContext): Insert | PreventDefault
 }
 
 object ojChartSettableProperties {
@@ -136,9 +136,9 @@ object ojChartSettableProperties {
     coordinateSystem: polar | cartesian,
     dataCursor: off | on | auto,
     dataCursorBehavior: smooth | snap | auto,
-    dataCursorPosition: AnonX,
-    dataLabel: DataLabelContext => AnonInsert | AnonPreventDefault,
-    dnd: AnonDrag,
+    dataCursorPosition: X,
+    dataLabel: DataLabelContext => Insert | PreventDefault,
+    dnd: Drag,
     dragMode: pan | zoom | select | off | user,
     drilling: on | seriesOnly | groupsOnly | off,
     hiddenCategories: js.Array[String],
@@ -147,12 +147,12 @@ object ojChartSettableProperties {
     highlightedCategories: js.Array[String],
     hoverBehavior: dim | none,
     initialZooming: first | last | none,
-    legend: AnonBackgroundColor,
+    legend: BackgroundColor,
     orientation: horizontal | vertical,
     otherThreshold: Double,
-    overview: AnonContent,
-    pieCenter: AnonConverter,
-    plotArea: AnonBorderWidth,
+    overview: Content,
+    pieCenter: Converter,
+    plotArea: BorderWidth,
     polarGridShape: polygon | circle,
     selection: js.Array[K],
     selectionMode: single | multiple | none,
@@ -161,28 +161,25 @@ object ojChartSettableProperties {
     splitterPosition: Double,
     stack: on | off,
     stackLabel: on | off,
-    styleDefaults: AnonAnimationDownColor,
+    styleDefaults: AnimationDownColor,
     timeAxisType: enabled | mixedFrequency | skipGaps | disabled | auto,
-    tooltip: AnonRenderer,
+    tooltip: Renderer,
     touchResponse: touchStart | auto,
     trackResize: on | off,
-    translations: AnonComponentName,
+    translations: ComponentName,
     `type`: line | area | lineWithArea | stock | boxPlot | combo | pie | scatter | bubble | funnel | pyramid | bar,
-    valueFormats: AnonClose,
-    xAxis: AnonAxisLine,
-    y2Axis: AnonAlignTickMarks,
-    yAxis: AnonBaselineScaling,
+    valueFormats: Close,
+    xAxis: AxisLine,
+    y2Axis: AlignTickMarks,
+    yAxis: BaselineScaling,
     zoomAndScroll: delayedScrollOnly | liveScrollOnly | delayed | live | off,
     zoomDirection: x | y | auto,
     data: DataProvider[K, D] = null,
     groupComparator: (/* param0 */ js.Object, /* param1 */ js.Object) => Double = null,
     seriesComparator: (/* param0 */ js.Object, /* param1 */ js.Object) => Double = null
   ): ojChartSettableProperties[K, D] = {
-    val __obj = js.Dynamic.literal(animationOnDataChange = animationOnDataChange.asInstanceOf[js.Any], animationOnDisplay = animationOnDisplay.asInstanceOf[js.Any], as = as.asInstanceOf[js.Any], coordinateSystem = coordinateSystem.asInstanceOf[js.Any], dataCursor = dataCursor.asInstanceOf[js.Any], dataCursorBehavior = dataCursorBehavior.asInstanceOf[js.Any], dataCursorPosition = dataCursorPosition.asInstanceOf[js.Any], dataLabel = js.Any.fromFunction1(dataLabel), dnd = dnd.asInstanceOf[js.Any], dragMode = dragMode.asInstanceOf[js.Any], drilling = drilling.asInstanceOf[js.Any], hiddenCategories = hiddenCategories.asInstanceOf[js.Any], hideAndShowBehavior = hideAndShowBehavior.asInstanceOf[js.Any], highlightMatch = highlightMatch.asInstanceOf[js.Any], highlightedCategories = highlightedCategories.asInstanceOf[js.Any], hoverBehavior = hoverBehavior.asInstanceOf[js.Any], initialZooming = initialZooming.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], otherThreshold = otherThreshold.asInstanceOf[js.Any], overview = overview.asInstanceOf[js.Any], pieCenter = pieCenter.asInstanceOf[js.Any], plotArea = plotArea.asInstanceOf[js.Any], polarGridShape = polarGridShape.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any], sorting = sorting.asInstanceOf[js.Any], splitDualY = splitDualY.asInstanceOf[js.Any], splitterPosition = splitterPosition.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any], stackLabel = stackLabel.asInstanceOf[js.Any], styleDefaults = styleDefaults.asInstanceOf[js.Any], timeAxisType = timeAxisType.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any], touchResponse = touchResponse.asInstanceOf[js.Any], trackResize = trackResize.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valueFormats = valueFormats.asInstanceOf[js.Any], xAxis = xAxis.asInstanceOf[js.Any], y2Axis = y2Axis.asInstanceOf[js.Any], yAxis = yAxis.asInstanceOf[js.Any], zoomAndScroll = zoomAndScroll.asInstanceOf[js.Any], zoomDirection = zoomDirection.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(animationOnDataChange = animationOnDataChange.asInstanceOf[js.Any], animationOnDisplay = animationOnDisplay.asInstanceOf[js.Any], as = as.asInstanceOf[js.Any], coordinateSystem = coordinateSystem.asInstanceOf[js.Any], dataCursor = dataCursor.asInstanceOf[js.Any], dataCursorBehavior = dataCursorBehavior.asInstanceOf[js.Any], dataCursorPosition = dataCursorPosition.asInstanceOf[js.Any], dataLabel = js.Any.fromFunction1(dataLabel), dnd = dnd.asInstanceOf[js.Any], dragMode = dragMode.asInstanceOf[js.Any], drilling = drilling.asInstanceOf[js.Any], hiddenCategories = hiddenCategories.asInstanceOf[js.Any], hideAndShowBehavior = hideAndShowBehavior.asInstanceOf[js.Any], highlightMatch = highlightMatch.asInstanceOf[js.Any], highlightedCategories = highlightedCategories.asInstanceOf[js.Any], hoverBehavior = hoverBehavior.asInstanceOf[js.Any], initialZooming = initialZooming.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], otherThreshold = otherThreshold.asInstanceOf[js.Any], overview = overview.asInstanceOf[js.Any], pieCenter = pieCenter.asInstanceOf[js.Any], plotArea = plotArea.asInstanceOf[js.Any], polarGridShape = polarGridShape.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any], sorting = sorting.asInstanceOf[js.Any], splitDualY = splitDualY.asInstanceOf[js.Any], splitterPosition = splitterPosition.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any], stackLabel = stackLabel.asInstanceOf[js.Any], styleDefaults = styleDefaults.asInstanceOf[js.Any], timeAxisType = timeAxisType.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any], touchResponse = touchResponse.asInstanceOf[js.Any], trackResize = trackResize.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valueFormats = valueFormats.asInstanceOf[js.Any], xAxis = xAxis.asInstanceOf[js.Any], y2Axis = y2Axis.asInstanceOf[js.Any], yAxis = yAxis.asInstanceOf[js.Any], zoomAndScroll = zoomAndScroll.asInstanceOf[js.Any], zoomDirection = zoomDirection.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], groupComparator = js.Any.fromFunction2(groupComparator), seriesComparator = js.Any.fromFunction2(seriesComparator))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (groupComparator != null) __obj.updateDynamic("groupComparator")(js.Any.fromFunction2(groupComparator))
-    if (seriesComparator != null) __obj.updateDynamic("seriesComparator")(js.Any.fromFunction2(seriesComparator))
     __obj.asInstanceOf[ojChartSettableProperties[K, D]]
   }
 }

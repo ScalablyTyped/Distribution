@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * App received user info from apple watch in background. Will be called on startup if the user info finished
-	 * transferring when the receiver was not running.
-	 */
+  * App received user info from apple watch in background. Will be called on startup if the user info finished
+  * transferring when the receiver was not running.
+  */
 trait WatchSessionReceiveuserinfoEvent extends WatchSessionBaseEvent {
   /**
-  		 * The user info content
-  		 */
+    * The user info content
+    */
   var userInfo: js.Any
 }
 

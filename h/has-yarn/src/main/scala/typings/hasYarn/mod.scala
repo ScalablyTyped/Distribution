@@ -1,5 +1,6 @@
 package typings.hasYarn
 
+import typings.hasYarn.anon.Call
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ object mod extends js.Object {
   // declare function hasYarn(cwd?: string): boolean;
   // export = hasYarn;
   @JSName("default")
-  var default_Original: AnonCall = js.native
+  var default_Original: Call = js.native
   /**
   	 * Check if a project is using [Yarn](https://yarnpkg.com).
   	 *

@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonDebugShowShadowVolume
+import typings.cesium.anon.DebugShowShadowVolume
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "GroundPolylinePrimitive")
 @js.native
 class GroundPolylinePrimitive protected () extends js.Object {
-  def this(options: AnonDebugShowShadowVolume) = this()
+  def this(options: DebugShowShadowVolume) = this()
   val allowPicking: Boolean = js.native
   var appearance: Appearance = js.native
   val asynchronous: Boolean = js.native

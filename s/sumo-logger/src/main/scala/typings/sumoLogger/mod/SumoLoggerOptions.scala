@@ -81,11 +81,11 @@ object SumoLoggerOptions {
   @scala.inline
   def apply(
     endpoint: String,
-    batchSize: Int | Double = null,
+    batchSize: js.UndefOr[Double] = js.undefined,
     clientUrl: String = null,
     graphite: js.UndefOr[Boolean] = js.undefined,
     hostName: String = null,
-    interval: Int | Double = null,
+    interval: js.UndefOr[Double] = js.undefined,
     onError: () => Unit = null,
     onSuccess: () => Unit = null,
     raw: js.UndefOr[Boolean] = js.undefined,
@@ -96,19 +96,19 @@ object SumoLoggerOptions {
     useIntervalOnly: js.UndefOr[Boolean] = js.undefined
   ): SumoLoggerOptions = {
     val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any])
-    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
     if (clientUrl != null) __obj.updateDynamic("clientUrl")(clientUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(graphite)) __obj.updateDynamic("graphite")(graphite.asInstanceOf[js.Any])
+    if (!js.isUndefined(graphite)) __obj.updateDynamic("graphite")(graphite.get.asInstanceOf[js.Any])
     if (hostName != null) __obj.updateDynamic("hostName")(hostName.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction0(onError))
     if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction0(onSuccess))
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
-    if (!js.isUndefined(sendErrors)) __obj.updateDynamic("sendErrors")(sendErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendErrors)) __obj.updateDynamic("sendErrors")(sendErrors.get.asInstanceOf[js.Any])
     if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey.asInstanceOf[js.Any])
     if (sourceCategory != null) __obj.updateDynamic("sourceCategory")(sourceCategory.asInstanceOf[js.Any])
     if (sourceName != null) __obj.updateDynamic("sourceName")(sourceName.asInstanceOf[js.Any])
-    if (!js.isUndefined(useIntervalOnly)) __obj.updateDynamic("useIntervalOnly")(useIntervalOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(useIntervalOnly)) __obj.updateDynamic("useIntervalOnly")(useIntervalOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SumoLoggerOptions]
   }
 }

@@ -18,9 +18,9 @@ trait OutputDetail extends js.Object {
 
 object OutputDetail {
   @scala.inline
-  def apply(DurationInMs: Int | Double = null, VideoDetails: VideoDetail = null): OutputDetail = {
+  def apply(DurationInMs: js.UndefOr[integer] = js.undefined, VideoDetails: VideoDetail = null): OutputDetail = {
     val __obj = js.Dynamic.literal()
-    if (DurationInMs != null) __obj.updateDynamic("DurationInMs")(DurationInMs.asInstanceOf[js.Any])
+    if (!js.isUndefined(DurationInMs)) __obj.updateDynamic("DurationInMs")(DurationInMs.get.asInstanceOf[js.Any])
     if (VideoDetails != null) __obj.updateDynamic("VideoDetails")(VideoDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputDetail]
   }

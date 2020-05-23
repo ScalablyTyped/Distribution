@@ -1,6 +1,6 @@
 package typings.babylonjs.buildersIndexMod
 
-import typings.babylonjs.AnonRadiusFunction
+import typings.babylonjs.anon.RadiusFunction
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
@@ -39,7 +39,7 @@ object TubeBuilder extends js.Object {
     * @see https://doc.babylonjs.com/how_to/parametric_shapes
     * @see https://doc.babylonjs.com/how_to/set_shapes#tube
     */
-  def CreateTube(name: String, options: AnonRadiusFunction): Mesh = js.native
-  def CreateTube(name: String, options: AnonRadiusFunction, scene: Nullable[Scene]): Mesh = js.native
+  def CreateTube(name: String, options: RadiusFunction): Mesh = js.native
+  def CreateTube(name: String, options: RadiusFunction, scene: Nullable[Scene]): Mesh = js.native
 }
 

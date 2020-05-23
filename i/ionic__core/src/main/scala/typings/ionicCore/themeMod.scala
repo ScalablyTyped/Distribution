@@ -2,7 +2,7 @@ package typings.ionicCore
 
 import typings.ionicCore.interfaceMod.RouterDirection
 import typings.ionicCore.mod.CssClassMap
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,14 +20,6 @@ object themeMod extends js.Object {
   def getClassMap(classes: String): CssClassMap = js.native
   def getClassMap(classes: js.Array[String]): CssClassMap = js.native
   def hostContext(selector: String, el: HTMLElement): Boolean = js.native
-  def openURL(url: js.UndefOr[scala.Nothing], ev: js.UndefOr[scala.Nothing], direction: RouterDirection): js.Promise[Boolean] = js.native
-  def openURL(url: js.UndefOr[scala.Nothing], ev: Null, direction: RouterDirection): js.Promise[Boolean] = js.native
-  def openURL(url: js.UndefOr[scala.Nothing], ev: Event_, direction: RouterDirection): js.Promise[Boolean] = js.native
-  def openURL(url: String, ev: js.UndefOr[scala.Nothing], direction: RouterDirection): js.Promise[Boolean] = js.native
-  def openURL(url: String, ev: Null, direction: RouterDirection): js.Promise[Boolean] = js.native
-  def openURL(url: String, ev: Event_, direction: RouterDirection): js.Promise[Boolean] = js.native
-  def openURL(url: Null, ev: js.UndefOr[scala.Nothing], direction: RouterDirection): js.Promise[Boolean] = js.native
-  def openURL(url: Null, ev: Null, direction: RouterDirection): js.Promise[Boolean] = js.native
-  def openURL(url: Null, ev: Event_, direction: RouterDirection): js.Promise[Boolean] = js.native
+  def openURL(url: js.UndefOr[Null | String], ev: js.UndefOr[Event | Null], direction: RouterDirection): js.Promise[Boolean] = js.native
 }
 

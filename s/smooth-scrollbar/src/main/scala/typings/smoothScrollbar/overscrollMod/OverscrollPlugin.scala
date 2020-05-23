@@ -1,7 +1,7 @@
 package typings.smoothScrollbar.overscrollMod
 
 import typings.smoothScrollbar.mod.ScrollbarPlugin
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,6 +27,6 @@ trait OverscrollPlugin extends ScrollbarPlugin {
   @JSName("options")
   var options_OverscrollPlugin: OverscrollOptions = js.native
   def onRender(remainMomentum: Data2d): Unit = js.native
-  def transformDelta(delta: Data2d, fromEvent: Event_): Data2d = js.native
+  def transformDelta(delta: Data2d, fromEvent: Event): Data2d = js.native
 }
 

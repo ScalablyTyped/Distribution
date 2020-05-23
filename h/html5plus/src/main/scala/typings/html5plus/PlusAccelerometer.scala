@@ -36,7 +36,7 @@ trait PlusAccelerometer extends js.Object {
   /**
     * 获取当前设备的加速度信息
     * 加速度是设备在当前方向上所做相对运动变化（增、减量）的运动传感器。加速度信息包括x、y、z三个方向的信息。
-    * 	加速度信息可通过successCB回调函数返回。加速度信息获取失败则调用回调函数errorCB。
+    *     加速度信息可通过successCB回调函数返回。加速度信息获取失败则调用回调函数errorCB。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/accelerometer.html](http://www.html5plus.org/doc/zh_cn/accelerometer.html)
     */

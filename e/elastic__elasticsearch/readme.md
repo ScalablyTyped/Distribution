@@ -1,7 +1,7 @@
 
 # Scala.js typings for elastic__elasticsearch
 
-Typings are for version 7.6.1
+Typings are for version 7.7.1
 
 ## Library description:
 The official Elasticsearch client for Node.js

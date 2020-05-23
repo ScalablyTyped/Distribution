@@ -11,8 +11,8 @@ trait IAbstract extends IBase {
   /** [Method] Used to close the browser if one is opened  */
   var close: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Used to open a new browser window
-  		* @param options Object The options to use when opening a new browser window.
-  		*/
+    * @param options Object The options to use when opening a new browser window.
+    */
   var open: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -56,7 +56,7 @@ object IAbstract {
     if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAbstract]

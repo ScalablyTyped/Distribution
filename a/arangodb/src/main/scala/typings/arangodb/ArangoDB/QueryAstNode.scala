@@ -15,7 +15,7 @@ object QueryAstNode {
   @scala.inline
   def apply(
     `type`: String,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     subNodes: js.Array[QueryAstNode] = null
   ): QueryAstNode = {
     val __obj = js.Dynamic.literal()

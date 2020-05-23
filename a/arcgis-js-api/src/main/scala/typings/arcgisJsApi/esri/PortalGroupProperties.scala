@@ -1,6 +1,7 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.`private`
+import typings.arcgisJsApi.arcgisJsApiStrings.org_
 import typings.arcgisJsApi.arcgisJsApiStrings.public
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +13,7 @@ trait PortalGroupProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalGroup.html#access)
     */
-  var access: js.UndefOr[`private` | typings.arcgisJsApi.arcgisJsApiStrings.org | public] = js.undefined
+  var access: js.UndefOr[`private` | org_ | public] = js.undefined
   /**
     * The date the group was created.
     *
@@ -80,7 +81,7 @@ trait PortalGroupProperties extends js.Object {
 object PortalGroupProperties {
   @scala.inline
   def apply(
-    access: `private` | typings.arcgisJsApi.arcgisJsApiStrings.org | public = null,
+    access: `private` | org_ | public = null,
     created: DateProperties = null,
     description: String = null,
     id: String = null,
@@ -97,7 +98,7 @@ object PortalGroupProperties {
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInvitationOnly)) __obj.updateDynamic("isInvitationOnly")(isInvitationOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInvitationOnly)) __obj.updateDynamic("isInvitationOnly")(isInvitationOnly.get.asInstanceOf[js.Any])
     if (modified != null) __obj.updateDynamic("modified")(modified.asInstanceOf[js.Any])
     if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     if (portal != null) __obj.updateDynamic("portal")(portal.asInstanceOf[js.Any])

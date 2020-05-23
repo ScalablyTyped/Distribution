@@ -1,19 +1,19 @@
 package typings.gapiClientClassroom.gapi.client.classroom
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientClassroom.AnonFieldsInvitationId
-import typings.gapiClientClassroom.AnonInvitationId
-import typings.gapiClientClassroom.AnonInvitationIdKey
-import typings.gapiClientClassroom.AnonInvitedEmailAddress
-import typings.gapiClientClassroom.AnonQuotaUserStudentId
-import typings.gapiClientClassroom.AnonStudentId
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientClassroom.anon.FieldsInvitationId
+import typings.gapiClientClassroom.anon.InvitationId
+import typings.gapiClientClassroom.anon.InvitationIdKey
+import typings.gapiClientClassroom.anon.InvitedEmailAddress
+import typings.gapiClientClassroom.anon.QuotaUserStudentId
+import typings.gapiClientClassroom.anon.StudentId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait GuardianInvitationsResource extends js.Object {
-  def create(request: AnonQuotaUserStudentId, body: GuardianInvitation): Request_[GuardianInvitation] = js.native
+  def create(request: QuotaUserStudentId, body: GuardianInvitation): Request[GuardianInvitation] = js.native
   /**
     * Creates a guardian invitation, and sends an email to the guardian asking
     * them to confirm that they are the student's guardian.
@@ -46,7 +46,7 @@ trait GuardianInvitationsResource extends js.Object {
     * `invited_email_address` matches the Google account of an existing
     * `Guardian` for this user.
     */
-  def create(request: AnonStudentId): Request_[GuardianInvitation] = js.native
+  def create(request: StudentId): Request[GuardianInvitation] = js.native
   /**
     * Returns a specific guardian invitation.
     *
@@ -63,7 +63,8 @@ trait GuardianInvitationsResource extends js.Object {
     * `invitation_id`. May also be returned if the student exists, but the
     * requesting user does not have access to see that student.
     */
-  def get(request: AnonInvitationId): Request_[GuardianInvitation] = js.native
+  def get(): Request[GuardianInvitation] = js.native
+  def get(request: InvitationId): Request[GuardianInvitation] = js.native
   /**
     * Returns a list of guardian invitations that the requesting user is
     * permitted to view, filtered by the parameters provided.
@@ -82,7 +83,8 @@ trait GuardianInvitationsResource extends js.Object {
     * &#42; `NOT_FOUND` if a `student_id` is specified, and its format can be
     * recognized, but Classroom has no record of that student.
     */
-  def list(request: AnonInvitedEmailAddress): Request_[ListGuardianInvitationsResponse] = js.native
+  def list(): Request[ListGuardianInvitationsResponse] = js.native
+  def list(request: InvitedEmailAddress): Request[ListGuardianInvitationsResponse] = js.native
   /**
     * Modifies a guardian invitation.
     *
@@ -103,7 +105,7 @@ trait GuardianInvitationsResource extends js.Object {
     * Classroom has no record of that student, or if the `id` field does not
     * refer to a guardian invitation known to Classroom.
     */
-  def patch(request: AnonFieldsInvitationId): Request_[GuardianInvitation] = js.native
-  def patch(request: AnonInvitationIdKey, body: GuardianInvitation): Request_[GuardianInvitation] = js.native
+  def patch(request: FieldsInvitationId): Request[GuardianInvitation] = js.native
+  def patch(request: InvitationIdKey, body: GuardianInvitation): Request[GuardianInvitation] = js.native
 }
 

@@ -1,14 +1,11 @@
 package typings.jsonEditor
 
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("JSONEditor")
 @js.native
-class JSONEditor[TValue] protected () extends js.Object {
-  def this(element: HTMLElement, options: JSONEditorOptions[TValue]) = this()
+trait JSONEditor[TValue] extends js.Object {
   def destroy(): Unit = js.native
   def disable(): Unit = js.native
   def enable(): Unit = js.native
@@ -22,13 +19,5 @@ class JSONEditor[TValue] protected () extends js.Object {
   def validate(): js.Array[JSONEditorError] = js.native
   def validate(value: TValue): js.Array[JSONEditorError] = js.native
   def watch(event: String, fn: js.Function): JSONEditor[TValue] = js.native
-}
-
-/* static members */
-@JSGlobal("JSONEditor")
-@js.native
-object JSONEditor extends js.Object {
-  var defaults: AnonCustomvalidators = js.native
-  var plugins: AnonAce = js.native
 }
 

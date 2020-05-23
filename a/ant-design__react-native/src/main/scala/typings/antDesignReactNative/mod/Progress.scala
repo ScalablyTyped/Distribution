@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.mod
 
-import typings.antDesignReactNative.AnonAppearTransition
+import typings.antDesignReactNative.anon.AppearTransition
 import typings.antDesignReactNative.progressMod.ProgressProps
 import typings.antDesignReactNative.progressMod.default
 import scala.scalajs.js
@@ -17,6 +17,6 @@ class Progress protected () extends default {
 @JSImport("@ant-design/react-native", "Progress")
 @js.native
 object Progress extends js.Object {
-  var defaultProps: AnonAppearTransition = js.native
+  var defaultProps: AppearTransition = js.native
 }
 

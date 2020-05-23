@@ -1,6 +1,6 @@
 package typings.angularCompiler.compileMetadataMod
 
-import typings.angularCompiler.AnonBootstrapComponents
+import typings.angularCompiler.anon.BootstrapComponents
 import typings.angularCompiler.coreMod.SchemaMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/src/compile_metadata", "CompileNgModuleMetadata")
 @js.native
 class CompileNgModuleMetadata protected () extends js.Object {
-  def this(hasTypeProvidersDeclaredDirectivesExportedDirectivesDeclaredPipesExportedPipesEntryComponentsBootstrapComponentsImportedModulesExportedModulesSchemasTransitiveModuleId: AnonBootstrapComponents) = this()
+  def this(hasTypeProvidersDeclaredDirectivesExportedDirectivesDeclaredPipesExportedPipesEntryComponentsBootstrapComponentsImportedModulesExportedModulesSchemasTransitiveModuleId: BootstrapComponents) = this()
   var bootstrapComponents: js.Array[CompileIdentifierMetadata] = js.native
   var declaredDirectives: js.Array[CompileIdentifierMetadata] = js.native
   var declaredPipes: js.Array[CompileIdentifierMetadata] = js.native

@@ -1,7 +1,8 @@
 package typings.jqueryAjaxfile
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Document_
+import typings.jqueryAjaxfile.anon.Interval
+import typings.std.Document
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.Node
@@ -28,7 +29,7 @@ trait JQueryStatic extends js.Object {
   /**
     * Effects
     */
-  var fx: AnonInterval = js.native
+  var fx: Interval = js.native
     //TODO: Decide how we want to type this
   var isReady: Boolean = js.native
   /**
@@ -41,45 +42,45 @@ trait JQueryStatic extends js.Object {
   /**
     * Specify a function to execute when the DOM is fully loaded.
     */
-  def apply(): JQuery_ = js.native
+  def apply(): JQuery = js.native
   /**
     * Binds a function to be executed when the DOM has finished loading.
     *
     * @param callback A function to execute after the DOM is ready.
     */
-  def apply(callback: js.Function1[/* jQueryAlias */ js.UndefOr[this.type], _]): JQuery_ = js.native
+  def apply(callback: js.Function1[/* jQueryAlias */ js.UndefOr[this.type], _]): JQuery = js.native
   /**
     * Accepts a string containing a CSS selector which is then used to match a set of elements.
     *
     * @param elementArray An array containing a set of DOM elements to wrap in a jQuery object.
     */
-  def apply(elementArray: js.Array[Element]): JQuery_ = js.native
+  def apply(elementArray: js.Array[Element]): JQuery = js.native
   /**
     * Accepts a string containing a CSS selector which is then used to match a set of elements.
     *
     * @param element A DOM element to wrap in a jQuery object.
     */
-  def apply(element: Element): JQuery_ = js.native
+  def apply(element: Element): JQuery = js.native
   /**
     * Creates DOM elements on the fly from the provided string of raw HTML.
     *
     * @param html A string defining a single, standalone, HTML element (e.g. <div/> or <div></div>).
     * @param attributes An object of attributes, events, and methods to call on the newly-created element.
     */
-  def apply(html: String, attributes: Object): JQuery_ = js.native
-  def apply(html: String, ownerDocument: Document_): JQuery_ = js.native
+  def apply(html: String, attributes: Object): JQuery = js.native
+  def apply(html: String, ownerDocument: Document): JQuery = js.native
   /**
     * Accepts a string containing a CSS selector which is then used to match a set of elements.
     *
     * @param object A plain object to wrap in a jQuery object.
     */
-  def apply(`object`: js.Object): JQuery_ = js.native
+  def apply(`object`: js.Object): JQuery = js.native
   /**
     * Accepts a string containing a CSS selector which is then used to match a set of elements.
     *
     * @param object An existing jQuery object to clone.
     */
-  def apply(`object`: JQuery_): JQuery_ = js.native
+  def apply(`object`: JQuery): JQuery = js.native
   /**
     * Accepts a string containing a CSS selector which is then used to match a set of elements.
     *
@@ -92,9 +93,9 @@ trait JQueryStatic extends js.Object {
     * @param html A string of HTML to create on the fly. Note that this parses HTML, not XML.
     * @param ownerDocument A document in which the new elements will be created.
     */
-  def apply(selector: String): JQuery_ = js.native
-  def apply(selector: String, context: JQuery_): JQuery_ = js.native
-  def apply(selector: String, context: Element): JQuery_ = js.native
+  def apply(selector: String): JQuery = js.native
+  def apply(selector: String, context: JQuery): JQuery = js.native
+  def apply(selector: String, context: Element): JQuery = js.native
   /**
     * A multi-purpose callbacks list object that provides a powerful way to manage callback lists.
     *
@@ -210,7 +211,7 @@ trait JQueryStatic extends js.Object {
     *
     * @param message The message to send out.
     */
-  def error(message: js.Any): JQuery_ = js.native
+  def error(message: js.Any): JQuery = js.native
   /**
     * Merge the contents of two or more objects together into the first object.
     *
@@ -456,8 +457,8 @@ trait JQueryStatic extends js.Object {
     * @param keepScripts A Boolean indicating whether to include scripts passed in the HTML string
     */
   def parseHTML(data: String): js.Array[_] = js.native
-  def parseHTML(data: String, context: Document_): js.Array[_] = js.native
-  def parseHTML(data: String, context: Document_, keepScripts: Boolean): js.Array[_] = js.native
+  def parseHTML(data: String, context: Document): js.Array[_] = js.native
+  def parseHTML(data: String, context: Document, keepScripts: Boolean): js.Array[_] = js.native
   def parseHTML(data: String, context: HTMLElement): js.Array[_] = js.native
   def parseHTML(data: String, context: HTMLElement, keepScripts: Boolean): js.Array[_] = js.native
   /**
@@ -544,7 +545,7 @@ trait JQueryStatic extends js.Object {
     * @param queueName A string containing the name of the queue. Defaults to fx, the standard effects queue.
     * @param callback The new function to add to the queue.
     */
-  def queue(element: Element, queueName: String, callback: js.Function): JQuery_ = js.native
+  def queue(element: Element, queueName: String, callback: js.Function): JQuery = js.native
   /**
     * Manipulate the queue of functions to be executed on the matched element.
     *
@@ -552,15 +553,15 @@ trait JQueryStatic extends js.Object {
     * @param queueName A string containing the name of the queue. Defaults to fx, the standard effects queue.
     * @param newQueue An array of functions to replace the current queue contents.
     */
-  def queue(element: Element, queueName: String, newQueue: js.Array[js.Function]): JQuery_ = js.native
+  def queue(element: Element, queueName: String, newQueue: js.Array[js.Function]): JQuery = js.native
   /**
     * Remove a previously-stored piece of data.
     *
     * @param element A DOM element from which to remove data.
     * @param name A string naming the piece of data to remove.
     */
-  def removeData(element: Element): JQuery_ = js.native
-  def removeData(element: Element, name: String): JQuery_ = js.native
+  def removeData(element: Element): JQuery = js.native
+  def removeData(element: Element, name: String): JQuery = js.native
   /**
     * Remove the whitespace from the beginning and end of a string.
     * 

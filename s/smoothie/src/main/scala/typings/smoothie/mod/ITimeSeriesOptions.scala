@@ -11,10 +11,13 @@ trait ITimeSeriesOptions extends js.Object {
 
 object ITimeSeriesOptions {
   @scala.inline
-  def apply(resetBounds: js.UndefOr[Boolean] = js.undefined, resetBoundsInterval: Int | Double = null): ITimeSeriesOptions = {
+  def apply(
+    resetBounds: js.UndefOr[Boolean] = js.undefined,
+    resetBoundsInterval: js.UndefOr[Double] = js.undefined
+  ): ITimeSeriesOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(resetBounds)) __obj.updateDynamic("resetBounds")(resetBounds.asInstanceOf[js.Any])
-    if (resetBoundsInterval != null) __obj.updateDynamic("resetBoundsInterval")(resetBoundsInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetBounds)) __obj.updateDynamic("resetBounds")(resetBounds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetBoundsInterval)) __obj.updateDynamic("resetBoundsInterval")(resetBoundsInterval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITimeSeriesOptions]
   }
 }

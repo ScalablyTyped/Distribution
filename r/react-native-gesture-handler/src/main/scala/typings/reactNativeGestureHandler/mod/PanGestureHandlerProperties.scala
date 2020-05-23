@@ -1,11 +1,11 @@
 package typings.reactNativeGestureHandler.mod
 
 import typings.react.mod.Ref
-import typings.reactNativeGestureHandler.AnonBottom
-import typings.reactNativeGestureHandler.AnonBottomHeight
-import typings.reactNativeGestureHandler.AnonHeight
-import typings.reactNativeGestureHandler.AnonLeft
-import typings.reactNativeGestureHandler.AnonRight
+import typings.reactNativeGestureHandler.anon.Bottom
+import typings.reactNativeGestureHandler.anon.BottomHeight
+import typings.reactNativeGestureHandler.anon.Height
+import typings.reactNativeGestureHandler.anon.Left
+import typings.reactNativeGestureHandler.anon.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,52 +47,52 @@ object PanGestureHandlerProperties {
     enabled: js.UndefOr[Boolean] = js.undefined,
     failOffsetX: Double | js.Array[Double] = null,
     failOffsetY: Double | js.Array[Double] = null,
-    hitSlop: Double | AnonBottom | AnonLeft | AnonRight | AnonHeight | AnonBottomHeight = null,
+    hitSlop: Double | Bottom | Left | Right | Height | BottomHeight = null,
     id: String = null,
-    maxDeltaX: Int | Double = null,
-    maxDeltaY: Int | Double = null,
-    maxPointers: Int | Double = null,
-    minDeltaX: Int | Double = null,
-    minDeltaY: Int | Double = null,
-    minDist: Int | Double = null,
-    minOffsetX: Int | Double = null,
-    minOffsetY: Int | Double = null,
-    minPointers: Int | Double = null,
-    minVelocity: Int | Double = null,
-    minVelocityX: Int | Double = null,
-    minVelocityY: Int | Double = null,
+    maxDeltaX: js.UndefOr[Double] = js.undefined,
+    maxDeltaY: js.UndefOr[Double] = js.undefined,
+    maxPointers: js.UndefOr[Double] = js.undefined,
+    minDeltaX: js.UndefOr[Double] = js.undefined,
+    minDeltaY: js.UndefOr[Double] = js.undefined,
+    minDist: js.UndefOr[Double] = js.undefined,
+    minOffsetX: js.UndefOr[Double] = js.undefined,
+    minOffsetY: js.UndefOr[Double] = js.undefined,
+    minPointers: js.UndefOr[Double] = js.undefined,
+    minVelocity: js.UndefOr[Double] = js.undefined,
+    minVelocityX: js.UndefOr[Double] = js.undefined,
+    minVelocityY: js.UndefOr[Double] = js.undefined,
     onGestureEvent: /* event */ PanGestureHandlerGestureEvent => Unit = null,
     onHandlerStateChange: /* event */ PanGestureHandlerStateChangeEvent => Unit = null,
     shouldCancelWhenOutside: js.UndefOr[Boolean] = js.undefined,
-    simultaneousHandlers: Ref[_] | js.Array[Ref[_]] = null,
-    waitFor: Ref[_] | js.Array[Ref[_]] = null
+    simultaneousHandlers: js.UndefOr[Null | Ref[_] | js.Array[Ref[_]]] = js.undefined,
+    waitFor: js.UndefOr[Null | Ref[_] | js.Array[Ref[_]]] = js.undefined
   ): PanGestureHandlerProperties = {
     val __obj = js.Dynamic.literal()
     if (activeOffsetX != null) __obj.updateDynamic("activeOffsetX")(activeOffsetX.asInstanceOf[js.Any])
     if (activeOffsetY != null) __obj.updateDynamic("activeOffsetY")(activeOffsetY.asInstanceOf[js.Any])
-    if (!js.isUndefined(avgTouches)) __obj.updateDynamic("avgTouches")(avgTouches.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(avgTouches)) __obj.updateDynamic("avgTouches")(avgTouches.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (failOffsetX != null) __obj.updateDynamic("failOffsetX")(failOffsetX.asInstanceOf[js.Any])
     if (failOffsetY != null) __obj.updateDynamic("failOffsetY")(failOffsetY.asInstanceOf[js.Any])
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (maxDeltaX != null) __obj.updateDynamic("maxDeltaX")(maxDeltaX.asInstanceOf[js.Any])
-    if (maxDeltaY != null) __obj.updateDynamic("maxDeltaY")(maxDeltaY.asInstanceOf[js.Any])
-    if (maxPointers != null) __obj.updateDynamic("maxPointers")(maxPointers.asInstanceOf[js.Any])
-    if (minDeltaX != null) __obj.updateDynamic("minDeltaX")(minDeltaX.asInstanceOf[js.Any])
-    if (minDeltaY != null) __obj.updateDynamic("minDeltaY")(minDeltaY.asInstanceOf[js.Any])
-    if (minDist != null) __obj.updateDynamic("minDist")(minDist.asInstanceOf[js.Any])
-    if (minOffsetX != null) __obj.updateDynamic("minOffsetX")(minOffsetX.asInstanceOf[js.Any])
-    if (minOffsetY != null) __obj.updateDynamic("minOffsetY")(minOffsetY.asInstanceOf[js.Any])
-    if (minPointers != null) __obj.updateDynamic("minPointers")(minPointers.asInstanceOf[js.Any])
-    if (minVelocity != null) __obj.updateDynamic("minVelocity")(minVelocity.asInstanceOf[js.Any])
-    if (minVelocityX != null) __obj.updateDynamic("minVelocityX")(minVelocityX.asInstanceOf[js.Any])
-    if (minVelocityY != null) __obj.updateDynamic("minVelocityY")(minVelocityY.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDeltaX)) __obj.updateDynamic("maxDeltaX")(maxDeltaX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDeltaY)) __obj.updateDynamic("maxDeltaY")(maxDeltaY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPointers)) __obj.updateDynamic("maxPointers")(maxPointers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minDeltaX)) __obj.updateDynamic("minDeltaX")(minDeltaX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minDeltaY)) __obj.updateDynamic("minDeltaY")(minDeltaY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minDist)) __obj.updateDynamic("minDist")(minDist.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minOffsetX)) __obj.updateDynamic("minOffsetX")(minOffsetX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minOffsetY)) __obj.updateDynamic("minOffsetY")(minOffsetY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minPointers)) __obj.updateDynamic("minPointers")(minPointers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minVelocity)) __obj.updateDynamic("minVelocity")(minVelocity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minVelocityX)) __obj.updateDynamic("minVelocityX")(minVelocityX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minVelocityY)) __obj.updateDynamic("minVelocityY")(minVelocityY.get.asInstanceOf[js.Any])
     if (onGestureEvent != null) __obj.updateDynamic("onGestureEvent")(js.Any.fromFunction1(onGestureEvent))
     if (onHandlerStateChange != null) __obj.updateDynamic("onHandlerStateChange")(js.Any.fromFunction1(onHandlerStateChange))
-    if (!js.isUndefined(shouldCancelWhenOutside)) __obj.updateDynamic("shouldCancelWhenOutside")(shouldCancelWhenOutside.asInstanceOf[js.Any])
-    if (simultaneousHandlers != null) __obj.updateDynamic("simultaneousHandlers")(simultaneousHandlers.asInstanceOf[js.Any])
-    if (waitFor != null) __obj.updateDynamic("waitFor")(waitFor.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldCancelWhenOutside)) __obj.updateDynamic("shouldCancelWhenOutside")(shouldCancelWhenOutside.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(simultaneousHandlers)) __obj.updateDynamic("simultaneousHandlers")(simultaneousHandlers.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitFor)) __obj.updateDynamic("waitFor")(waitFor.asInstanceOf[js.Any])
     __obj.asInstanceOf[PanGestureHandlerProperties]
   }
 }

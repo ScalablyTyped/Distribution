@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLTitleElement")
 @js.native
-class HTMLTitleElement protected () extends js.Object {
+trait HTMLTitleElement extends js.Object {
   @JSName("MSHTML.HTMLTitleElement_typekey")
   var MSHTMLDotHTMLTitleElement_typekey: HTMLTitleElement = js.native
   var accessKey: String = js.native

@@ -1,6 +1,6 @@
 package typings.autolinker.urlMatcherMod
 
-import typings.autolinker.RequiredStripPrefixConfig
+import typings.autolinker.anon.RequiredStripPrefixConfig
 import typings.autolinker.matcherMatcherMod.Matcher
 import typings.std.RegExp
 import scala.scalajs.js

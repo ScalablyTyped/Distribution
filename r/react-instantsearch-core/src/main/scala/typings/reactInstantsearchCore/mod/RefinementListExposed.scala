@@ -34,20 +34,20 @@ object RefinementListExposed {
   def apply(
     attribute: String,
     defaultRefinement: js.Array[String] = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     operator: or | and = null,
     searchable: js.UndefOr[Boolean] = js.undefined,
     showMore: js.UndefOr[Boolean] = js.undefined,
-    showMoreLimit: Int | Double = null,
+    showMoreLimit: js.UndefOr[Double] = js.undefined,
     transformItems: /* repeated */ js.Any => _ = null
   ): RefinementListExposed = {
     val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any])
     if (defaultRefinement != null) __obj.updateDynamic("defaultRefinement")(defaultRefinement.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchable)) __obj.updateDynamic("searchable")(searchable.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMore)) __obj.updateDynamic("showMore")(showMore.asInstanceOf[js.Any])
-    if (showMoreLimit != null) __obj.updateDynamic("showMoreLimit")(showMoreLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(searchable)) __obj.updateDynamic("searchable")(searchable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMore)) __obj.updateDynamic("showMore")(showMore.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMoreLimit)) __obj.updateDynamic("showMoreLimit")(showMoreLimit.get.asInstanceOf[js.Any])
     if (transformItems != null) __obj.updateDynamic("transformItems")(js.Any.fromFunction1(transformItems))
     __obj.asInstanceOf[RefinementListExposed]
   }

@@ -27,14 +27,14 @@ trait RandomColorOptionsSingle extends js.Object {
 object RandomColorOptionsSingle {
   @scala.inline
   def apply(
-    alpha: Int | Double = null,
+    alpha: js.UndefOr[Double] = js.undefined,
     format: hsvArray | hslArray | hsl | hsla | rgbArray | rgb | rgba | hex = null,
     hue: Double | String = null,
     luminosity: bright | light | dark | random = null,
     seed: Double | String = null
   ): RandomColorOptionsSingle = {
     val __obj = js.Dynamic.literal()
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (hue != null) __obj.updateDynamic("hue")(hue.asInstanceOf[js.Any])
     if (luminosity != null) __obj.updateDynamic("luminosity")(luminosity.asInstanceOf[js.Any])

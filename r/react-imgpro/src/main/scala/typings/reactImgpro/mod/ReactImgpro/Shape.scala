@@ -12,11 +12,15 @@ trait Shape extends js.Object {
 
 object Shape {
   @scala.inline
-  def apply(height: Int | Double = null, mode: Mode = null, width: Int | Double = null): Shape = {
+  def apply(
+    height: js.UndefOr[Double] = js.undefined,
+    mode: Mode = null,
+    width: js.UndefOr[Double] = js.undefined
+  ): Shape = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Shape]
   }
 }

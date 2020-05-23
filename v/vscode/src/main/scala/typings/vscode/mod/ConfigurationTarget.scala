@@ -12,20 +12,20 @@ sealed trait ConfigurationTarget extends js.Object
 @js.native
 object ConfigurationTarget extends js.Object {
   /**
-  		 * Global configuration
-  		*/
+    * Global configuration
+    */
   @js.native
   sealed trait Global extends ConfigurationTarget
   
   /**
-  		 * Workspace configuration
-  		 */
+    * Workspace configuration
+    */
   @js.native
   sealed trait Workspace extends ConfigurationTarget
   
   /**
-  		 * Workspace folder configuration
-  		 */
+    * Workspace folder configuration
+    */
   @js.native
   sealed trait WorkspaceFolder extends ConfigurationTarget
   

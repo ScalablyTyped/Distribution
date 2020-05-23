@@ -21,9 +21,9 @@ trait PlusStreamStreamRestoreOptions extends js.Object {
   /**
     * 应用启动界面样式
     * 可取值：
-    * 	"auto"：自动选择启动界面，如果流应用自动关闭时截图成功则使用截图，如果splash图片已经下载则显示splash图片，否则使用默认加载流应用界面；
-    * 	"default"：使用默认加载流应用界面（如在360浏览器环境中在标题栏下显示加载进度条）。
-    * 	默认值为"auto"。
+    *     "auto"：自动选择启动界面，如果流应用自动关闭时截图成功则使用截图，如果splash图片已经下载则显示splash图片，否则使用默认加载流应用界面；
+    *     "default"：使用默认加载流应用界面（如在360浏览器环境中在标题栏下显示加载进度条）。
+    *     默认值为"auto"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */

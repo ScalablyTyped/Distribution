@@ -1,6 +1,6 @@
 package typings.karmaCoverage.mod
 
-import typings.karmaCoverage.KarmaCoverageReporterrepo
+import typings.karmaCoverage.anon.KarmaCoverageReporterrepo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

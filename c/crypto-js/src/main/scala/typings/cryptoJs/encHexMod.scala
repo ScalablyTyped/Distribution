@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object encHexMod
   extends TopLevel[
-      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof enc.Hex */ js.Any
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof mode.CFB */ js.Any
     ]
 

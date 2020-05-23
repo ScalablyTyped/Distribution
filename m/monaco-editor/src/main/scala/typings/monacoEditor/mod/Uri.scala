@@ -1,7 +1,7 @@
 package typings.monacoEditor.mod
 
-import typings.monacoEditor.AnonAuthority
-import typings.monacoEditor.AnonFragment
+import typings.monacoEditor.anon.Authority
+import typings.monacoEditor.anon.Fragment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,7 +46,7 @@ class Uri () extends UriComponents {
   def fsPath: String = js.native
   def toJSON(): UriComponents = js.native
   def toString(skipEncoding: Boolean): String = js.native
-  def `with`(change: AnonAuthority): Uri = js.native
+  def `with`(change: Authority): Uri = js.native
 }
 
 /* static members */
@@ -75,7 +75,7 @@ object Uri extends js.Object {
     * @param path A file system path (see `Uri#fsPath`)
     */
   def file(path: String): Uri = js.native
-  def from(components: AnonFragment): Uri = js.native
+  def from(components: Fragment): Uri = js.native
   def isUri(thing: js.Any): /* is monaco-editor.monaco-editor.Uri */ Boolean = js.native
   /**
     * Creates a new Uri from a string, e.g. `http://www.msft.com/some/path`,

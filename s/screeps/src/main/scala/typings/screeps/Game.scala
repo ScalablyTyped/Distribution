@@ -1,7 +1,6 @@
 package typings.screeps
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -98,8 +97,4 @@ trait Game extends js.Object {
   def notify(message: String): js.UndefOr[scala.Nothing] = js.native
   def notify(message: String, groupInterval: Double): js.UndefOr[scala.Nothing] = js.native
 }
-
-@JSGlobal("Game")
-@js.native
-object Game extends TopLevel[Game]
 

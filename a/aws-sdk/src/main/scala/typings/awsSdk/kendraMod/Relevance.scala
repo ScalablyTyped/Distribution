@@ -32,15 +32,15 @@ object Relevance {
   @scala.inline
   def apply(
     Duration: Duration = null,
-    Freshness: js.UndefOr[scala.Boolean] = js.undefined,
-    Importance: Int | Double = null,
+    Freshness: js.UndefOr[DocumentMetadataBoolean] = js.undefined,
+    Importance: js.UndefOr[Importance] = js.undefined,
     RankOrder: Order = null,
     ValueImportanceMap: ValueImportanceMap = null
   ): Relevance = {
     val __obj = js.Dynamic.literal()
     if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(Freshness)) __obj.updateDynamic("Freshness")(Freshness.asInstanceOf[js.Any])
-    if (Importance != null) __obj.updateDynamic("Importance")(Importance.asInstanceOf[js.Any])
+    if (!js.isUndefined(Freshness)) __obj.updateDynamic("Freshness")(Freshness.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Importance)) __obj.updateDynamic("Importance")(Importance.get.asInstanceOf[js.Any])
     if (RankOrder != null) __obj.updateDynamic("RankOrder")(RankOrder.asInstanceOf[js.Any])
     if (ValueImportanceMap != null) __obj.updateDynamic("ValueImportanceMap")(ValueImportanceMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[Relevance]

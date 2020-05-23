@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.PickerDialog")
 @js.native
-class PickerDialog protected () extends js.Object {
+trait PickerDialog extends js.Object {
   val Application: js.Any = js.native
   val Creator: Double = js.native
   var DataHandlerId: String = js.native

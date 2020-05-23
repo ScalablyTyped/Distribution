@@ -10,9 +10,9 @@ trait RefObject[T] extends js.Object {
 
 object RefObject {
   @scala.inline
-  def apply[T](current: T = null): RefObject[T] = {
+  def apply[T](current: js.UndefOr[Null | T] = js.undefined): RefObject[T] = {
     val __obj = js.Dynamic.literal()
-    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
+    if (!js.isUndefined(current)) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefObject[T]]
   }
 }

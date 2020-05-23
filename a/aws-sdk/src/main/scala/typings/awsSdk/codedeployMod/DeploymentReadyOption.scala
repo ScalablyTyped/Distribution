@@ -11,17 +11,20 @@ trait DeploymentReadyOption extends js.Object {
     */
   var actionOnTimeout: js.UndefOr[DeploymentReadyAction] = js.native
   /**
-    * The number of minutes to wait before the status of a blue/green deployment is changed to Stopped if rerouting is not started manually. Applies only to the STOP_DEPLOYMENT option for actionOnTimeout
+    * The number of minutes to wait before the status of a blue/green deployment is changed to Stopped if rerouting is not started manually. Applies only to the STOP_DEPLOYMENT option for actionOnTimeout.
     */
   var waitTimeInMinutes: js.UndefOr[Duration] = js.native
 }
 
 object DeploymentReadyOption {
   @scala.inline
-  def apply(actionOnTimeout: DeploymentReadyAction = null, waitTimeInMinutes: Int | Double = null): DeploymentReadyOption = {
+  def apply(
+    actionOnTimeout: DeploymentReadyAction = null,
+    waitTimeInMinutes: js.UndefOr[Duration] = js.undefined
+  ): DeploymentReadyOption = {
     val __obj = js.Dynamic.literal()
     if (actionOnTimeout != null) __obj.updateDynamic("actionOnTimeout")(actionOnTimeout.asInstanceOf[js.Any])
-    if (waitTimeInMinutes != null) __obj.updateDynamic("waitTimeInMinutes")(waitTimeInMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitTimeInMinutes)) __obj.updateDynamic("waitTimeInMinutes")(waitTimeInMinutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentReadyOption]
   }
 }

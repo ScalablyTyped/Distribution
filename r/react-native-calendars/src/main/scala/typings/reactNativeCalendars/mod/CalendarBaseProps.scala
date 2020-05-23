@@ -111,7 +111,7 @@ object CalendarBaseProps {
     disableMonthChange: js.UndefOr[Boolean] = js.undefined,
     disabledByDefault: js.UndefOr[Boolean] = js.undefined,
     displayLoadingIndicator: js.UndefOr[Boolean] = js.undefined,
-    firstDay: Int | Double = null,
+    firstDay: js.UndefOr[Double] = js.undefined,
     hideArrows: js.UndefOr[Boolean] = js.undefined,
     hideDayNames: js.UndefOr[Boolean] = js.undefined,
     hideExtraDays: js.UndefOr[Boolean] = js.undefined,
@@ -126,19 +126,19 @@ object CalendarBaseProps {
     onVisibleMonthsChange: /* months */ js.Array[DateObject] => Unit = null,
     renderArrow: /* direction */ left | right => ReactNode = null,
     showWeekNumbers: js.UndefOr[Boolean] = js.undefined,
-    style: StyleProp[ViewStyle] = null,
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     theme: CalendarTheme = null
   ): CalendarBaseProps = {
     val __obj = js.Dynamic.literal()
     if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
     if (dayComponent != null) __obj.updateDynamic("dayComponent")(dayComponent.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableMonthChange)) __obj.updateDynamic("disableMonthChange")(disableMonthChange.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabledByDefault)) __obj.updateDynamic("disabledByDefault")(disabledByDefault.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayLoadingIndicator)) __obj.updateDynamic("displayLoadingIndicator")(displayLoadingIndicator.asInstanceOf[js.Any])
-    if (firstDay != null) __obj.updateDynamic("firstDay")(firstDay.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideArrows)) __obj.updateDynamic("hideArrows")(hideArrows.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideDayNames)) __obj.updateDynamic("hideDayNames")(hideDayNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideExtraDays)) __obj.updateDynamic("hideExtraDays")(hideExtraDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableMonthChange)) __obj.updateDynamic("disableMonthChange")(disableMonthChange.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabledByDefault)) __obj.updateDynamic("disabledByDefault")(disabledByDefault.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayLoadingIndicator)) __obj.updateDynamic("displayLoadingIndicator")(displayLoadingIndicator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstDay)) __obj.updateDynamic("firstDay")(firstDay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideArrows)) __obj.updateDynamic("hideArrows")(hideArrows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideDayNames)) __obj.updateDynamic("hideDayNames")(hideDayNames.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideExtraDays)) __obj.updateDynamic("hideExtraDays")(hideExtraDays.get.asInstanceOf[js.Any])
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
     if (monthFormat != null) __obj.updateDynamic("monthFormat")(monthFormat.asInstanceOf[js.Any])
@@ -149,8 +149,8 @@ object CalendarBaseProps {
     if (onPressArrowRight != null) __obj.updateDynamic("onPressArrowRight")(js.Any.fromFunction1(onPressArrowRight))
     if (onVisibleMonthsChange != null) __obj.updateDynamic("onVisibleMonthsChange")(js.Any.fromFunction1(onVisibleMonthsChange))
     if (renderArrow != null) __obj.updateDynamic("renderArrow")(js.Any.fromFunction1(renderArrow))
-    if (!js.isUndefined(showWeekNumbers)) __obj.updateDynamic("showWeekNumbers")(showWeekNumbers.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(showWeekNumbers)) __obj.updateDynamic("showWeekNumbers")(showWeekNumbers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarBaseProps]
   }

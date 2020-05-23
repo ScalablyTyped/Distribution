@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.vegaTypings.markMod.From
-  - typings.vegaTypings.FromfacetFacet
+  - typings.vegaTypings.anon.FromfacetFacet
 */
 trait FromFacet extends js.Object
 

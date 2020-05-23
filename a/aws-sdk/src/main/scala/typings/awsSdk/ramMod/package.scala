@@ -77,6 +77,7 @@ package object ramMod {
     - java.lang.String
   */
   type ResourceStatus = typings.awsSdk.ramMod._ResourceStatus | java.lang.String
+  type ServiceNameAndResourceTypeList = js.Array[typings.awsSdk.ramMod.ServiceNameAndResourceType]
   type String = java.lang.String
   type TagFilters = js.Array[typings.awsSdk.ramMod.TagFilter]
   type TagKey = java.lang.String

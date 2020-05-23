@@ -1,6 +1,6 @@
 package typings.ionic.libProjectMod
 
-import typings.ionic.PartialReadonlyIProjectCo
+import typings.ionic.anon.PartialReadonlyIProjectCo
 import typings.ionic.definitionsMod.IProjectConfig
 import typings.ionic.definitionsMod.ProjectType
 import typings.ionicCliFramework.mod.BaseConfig

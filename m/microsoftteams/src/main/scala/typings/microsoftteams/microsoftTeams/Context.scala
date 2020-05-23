@@ -89,7 +89,7 @@ object Context {
     if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
     if (channelName != null) __obj.updateDynamic("channelName")(channelName.asInstanceOf[js.Any])
     if (groupId != null) __obj.updateDynamic("groupId")(groupId.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFullScreen)) __obj.updateDynamic("isFullScreen")(isFullScreen.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFullScreen)) __obj.updateDynamic("isFullScreen")(isFullScreen.get.asInstanceOf[js.Any])
     if (subEntityId != null) __obj.updateDynamic("subEntityId")(subEntityId.asInstanceOf[js.Any])
     if (teamId != null) __obj.updateDynamic("teamId")(teamId.asInstanceOf[js.Any])
     if (teamName != null) __obj.updateDynamic("teamName")(teamName.asInstanceOf[js.Any])

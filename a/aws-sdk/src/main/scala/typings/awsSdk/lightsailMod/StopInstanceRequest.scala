@@ -20,7 +20,7 @@ object StopInstanceRequest {
   @scala.inline
   def apply(instanceName: ResourceName, force: js.UndefOr[Boolean] = js.undefined): StopInstanceRequest = {
     val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopInstanceRequest]
   }
 }

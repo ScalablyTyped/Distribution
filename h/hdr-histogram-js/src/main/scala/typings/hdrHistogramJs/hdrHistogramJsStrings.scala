@@ -6,16 +6,11 @@ import scala.scalajs.js.annotation._
 
 object hdrHistogramJsStrings {
   @js.native
-  sealed trait `NO TAG` extends js.Object
-  
-  @js.native
   sealed trait packed extends js.Object
   
   @js.native
   sealed trait sparse_array extends js.Object
   
-  @scala.inline
-  def `NO TAG`: `NO TAG` = ("NO TAG").asInstanceOf[`NO TAG`]
   @scala.inline
   def packed: packed = "packed".asInstanceOf[packed]
   @scala.inline

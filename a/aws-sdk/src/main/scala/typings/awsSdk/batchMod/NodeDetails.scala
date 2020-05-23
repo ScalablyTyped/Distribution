@@ -18,10 +18,10 @@ trait NodeDetails extends js.Object {
 
 object NodeDetails {
   @scala.inline
-  def apply(isMainNode: js.UndefOr[scala.Boolean] = js.undefined, nodeIndex: Int | Double = null): NodeDetails = {
+  def apply(isMainNode: js.UndefOr[Boolean] = js.undefined, nodeIndex: js.UndefOr[Integer] = js.undefined): NodeDetails = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isMainNode)) __obj.updateDynamic("isMainNode")(isMainNode.asInstanceOf[js.Any])
-    if (nodeIndex != null) __obj.updateDynamic("nodeIndex")(nodeIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMainNode)) __obj.updateDynamic("isMainNode")(isMainNode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeIndex)) __obj.updateDynamic("nodeIndex")(nodeIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeDetails]
   }
 }

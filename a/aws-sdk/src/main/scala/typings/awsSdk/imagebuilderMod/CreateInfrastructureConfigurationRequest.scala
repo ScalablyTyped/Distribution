@@ -70,7 +70,7 @@ object CreateInfrastructureConfigurationRequest {
     snsTopicArn: SnsTopicArn = null,
     subnetId: NonEmptyString = null,
     tags: TagMap = null,
-    terminateInstanceOnFailure: js.UndefOr[Boolean] = js.undefined
+    terminateInstanceOnFailure: js.UndefOr[NullableBoolean] = js.undefined
   ): CreateInfrastructureConfigurationRequest = {
     val __obj = js.Dynamic.literal(clientToken = clientToken.asInstanceOf[js.Any], instanceProfileName = instanceProfileName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
@@ -81,7 +81,7 @@ object CreateInfrastructureConfigurationRequest {
     if (snsTopicArn != null) __obj.updateDynamic("snsTopicArn")(snsTopicArn.asInstanceOf[js.Any])
     if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(terminateInstanceOnFailure)) __obj.updateDynamic("terminateInstanceOnFailure")(terminateInstanceOnFailure.asInstanceOf[js.Any])
+    if (!js.isUndefined(terminateInstanceOnFailure)) __obj.updateDynamic("terminateInstanceOnFailure")(terminateInstanceOnFailure.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateInfrastructureConfigurationRequest]
   }
 }

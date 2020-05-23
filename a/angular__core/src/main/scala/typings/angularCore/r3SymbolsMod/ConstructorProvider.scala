@@ -38,7 +38,7 @@ object ConstructorProvider {
   def apply(provide: Type[_], deps: js.Array[_] = null, multi: js.UndefOr[Boolean] = js.undefined): ConstructorProvider = {
     val __obj = js.Dynamic.literal(provide = provide.asInstanceOf[js.Any])
     if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
+    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstructorProvider]
   }
 }

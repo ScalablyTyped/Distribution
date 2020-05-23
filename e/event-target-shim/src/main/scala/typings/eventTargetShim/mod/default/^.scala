@@ -2,7 +2,7 @@ package typings.eventTargetShim.mod.default
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.TopLevel
-import typings.eventTargetShim.EventTargetloose
+import typings.eventTargetShim.anon.EventTargetloose
 import typings.eventTargetShim.mod.EventTarget
 import typings.eventTargetShim.mod.EventTarget.EventDefinition
 import typings.eventTargetShim.mod.EventTarget.Mode

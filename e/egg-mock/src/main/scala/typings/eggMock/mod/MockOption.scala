@@ -43,9 +43,9 @@ object MockOption {
   ): MockOption = {
     val __obj = js.Dynamic.literal()
     if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir.asInstanceOf[js.Any])
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (!js.isUndefined(clean)) __obj.updateDynamic("clean")(clean.asInstanceOf[js.Any])
-    if (!js.isUndefined(coverage)) __obj.updateDynamic("coverage")(coverage.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clean)) __obj.updateDynamic("clean")(clean.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(coverage)) __obj.updateDynamic("coverage")(coverage.get.asInstanceOf[js.Any])
     if (framework != null) __obj.updateDynamic("framework")(framework.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     __obj.asInstanceOf[MockOption]

@@ -1,7 +1,6 @@
 package typings.ckeditor.CKEDITOR
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.ckeditor.CKEDITOR.filter.allowedContentRules
 import typings.ckeditor.CKEDITOR.filter.contentRule
 import typings.ckeditor.CKEDITOR.filter.disallowedContentRules
@@ -12,11 +11,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CKEDITOR.filter")
 @js.native
-class filter protected () extends js.Object {
-  def this(editorOrRules: typings.ckeditor.CKEDITOR.editor) = this()
-  def this(editorOrRules: allowedContentRules) = this()
+trait filter extends js.Object {
   val allowedContent: js.Array[allowedContentRules] = js.native
   val customConfig: Boolean = js.native
   val disabled: Boolean = js.native
@@ -50,7 +46,6 @@ class filter protected () extends js.Object {
   def getAllowedEnterMode(defaultMode: Double, reverse: Boolean): Double = js.native
 }
 
-/* static members */
 @JSGlobal("CKEDITOR.filter")
 @js.native
 object filter extends js.Object {
@@ -79,10 +74,6 @@ object filter extends js.Object {
     def transform(element: element, form: String): Unit = js.native
     def transform(element: element, form: style): Unit = js.native
   }
-  
-  var instances: StringDictionary[filter] = js.native
-  @js.native
-  object transformationTools extends TopLevel[transformationTools]
   
   type allowedContentRule = String | style | StringDictionary[js.Any]
   type allowedContentRules = allowedContentRule | js.Array[allowedContentRule]

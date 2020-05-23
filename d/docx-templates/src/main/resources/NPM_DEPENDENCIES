@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "docx-templates" : "4.0.0"
+      "docx-templates" : "4.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "docx-templates" : "4.0.0"
+      "docx-templates" : "4.1.0"
     }
   ],
   "compile-devDependencies" : [

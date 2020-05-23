@@ -24,7 +24,7 @@ object LoopStatus {
     isIf: js.UndefOr[Boolean] = js.undefined
   ): LoopStatus = {
     val __obj = js.Dynamic.literal(idx = idx.asInstanceOf[js.Any], loopOver = loopOver.asInstanceOf[js.Any], refNode = refNode.asInstanceOf[js.Any], refNodeLevel = refNodeLevel.asInstanceOf[js.Any], varName = varName.asInstanceOf[js.Any])
-    if (!js.isUndefined(isIf)) __obj.updateDynamic("isIf")(isIf.asInstanceOf[js.Any])
+    if (!js.isUndefined(isIf)) __obj.updateDynamic("isIf")(isIf.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoopStatus]
   }
 }

@@ -273,20 +273,20 @@ object ElementDefinitionExample {
     valueCount: Count = null,
     valueDate: date = null,
     valueDateTime: dateTime = null,
-    valueDecimal: Int | Double = null,
+    valueDecimal: js.UndefOr[decimal] = js.undefined,
     valueDistance: Distance = null,
     valueDuration: Duration = null,
     valueHumanName: HumanName = null,
     valueId: id = null,
     valueIdentifier: Identifier = null,
     valueInstant: instant = null,
-    valueInteger: Int | Double = null,
+    valueInteger: js.UndefOr[integer] = js.undefined,
     valueMarkdown: markdown = null,
     valueMeta: Meta = null,
     valueMoney: Money = null,
     valueOid: oid = null,
     valuePeriod: Period = null,
-    valuePositiveInt: Int | Double = null,
+    valuePositiveInt: js.UndefOr[positiveInt] = js.undefined,
     valueQuantity: Quantity = null,
     valueRange: Range = null,
     valueRatio: Ratio = null,
@@ -296,7 +296,7 @@ object ElementDefinitionExample {
     valueString: String = null,
     valueTime: time = null,
     valueTiming: Timing = null,
-    valueUnsignedInt: Int | Double = null,
+    valueUnsignedInt: js.UndefOr[unsignedInt] = js.undefined,
     valueUri: uri = null
   ): ElementDefinitionExample = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
@@ -327,7 +327,7 @@ object ElementDefinitionExample {
     if (valueAnnotation != null) __obj.updateDynamic("valueAnnotation")(valueAnnotation.asInstanceOf[js.Any])
     if (valueAttachment != null) __obj.updateDynamic("valueAttachment")(valueAttachment.asInstanceOf[js.Any])
     if (valueBase64Binary != null) __obj.updateDynamic("valueBase64Binary")(valueBase64Binary.asInstanceOf[js.Any])
-    if (!js.isUndefined(valueBoolean)) __obj.updateDynamic("valueBoolean")(valueBoolean.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueBoolean)) __obj.updateDynamic("valueBoolean")(valueBoolean.get.asInstanceOf[js.Any])
     if (valueCode != null) __obj.updateDynamic("valueCode")(valueCode.asInstanceOf[js.Any])
     if (valueCodeableConcept != null) __obj.updateDynamic("valueCodeableConcept")(valueCodeableConcept.asInstanceOf[js.Any])
     if (valueCoding != null) __obj.updateDynamic("valueCoding")(valueCoding.asInstanceOf[js.Any])
@@ -335,20 +335,20 @@ object ElementDefinitionExample {
     if (valueCount != null) __obj.updateDynamic("valueCount")(valueCount.asInstanceOf[js.Any])
     if (valueDate != null) __obj.updateDynamic("valueDate")(valueDate.asInstanceOf[js.Any])
     if (valueDateTime != null) __obj.updateDynamic("valueDateTime")(valueDateTime.asInstanceOf[js.Any])
-    if (valueDecimal != null) __obj.updateDynamic("valueDecimal")(valueDecimal.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueDecimal)) __obj.updateDynamic("valueDecimal")(valueDecimal.get.asInstanceOf[js.Any])
     if (valueDistance != null) __obj.updateDynamic("valueDistance")(valueDistance.asInstanceOf[js.Any])
     if (valueDuration != null) __obj.updateDynamic("valueDuration")(valueDuration.asInstanceOf[js.Any])
     if (valueHumanName != null) __obj.updateDynamic("valueHumanName")(valueHumanName.asInstanceOf[js.Any])
     if (valueId != null) __obj.updateDynamic("valueId")(valueId.asInstanceOf[js.Any])
     if (valueIdentifier != null) __obj.updateDynamic("valueIdentifier")(valueIdentifier.asInstanceOf[js.Any])
     if (valueInstant != null) __obj.updateDynamic("valueInstant")(valueInstant.asInstanceOf[js.Any])
-    if (valueInteger != null) __obj.updateDynamic("valueInteger")(valueInteger.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueInteger)) __obj.updateDynamic("valueInteger")(valueInteger.get.asInstanceOf[js.Any])
     if (valueMarkdown != null) __obj.updateDynamic("valueMarkdown")(valueMarkdown.asInstanceOf[js.Any])
     if (valueMeta != null) __obj.updateDynamic("valueMeta")(valueMeta.asInstanceOf[js.Any])
     if (valueMoney != null) __obj.updateDynamic("valueMoney")(valueMoney.asInstanceOf[js.Any])
     if (valueOid != null) __obj.updateDynamic("valueOid")(valueOid.asInstanceOf[js.Any])
     if (valuePeriod != null) __obj.updateDynamic("valuePeriod")(valuePeriod.asInstanceOf[js.Any])
-    if (valuePositiveInt != null) __obj.updateDynamic("valuePositiveInt")(valuePositiveInt.asInstanceOf[js.Any])
+    if (!js.isUndefined(valuePositiveInt)) __obj.updateDynamic("valuePositiveInt")(valuePositiveInt.get.asInstanceOf[js.Any])
     if (valueQuantity != null) __obj.updateDynamic("valueQuantity")(valueQuantity.asInstanceOf[js.Any])
     if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange.asInstanceOf[js.Any])
     if (valueRatio != null) __obj.updateDynamic("valueRatio")(valueRatio.asInstanceOf[js.Any])
@@ -358,7 +358,7 @@ object ElementDefinitionExample {
     if (valueString != null) __obj.updateDynamic("valueString")(valueString.asInstanceOf[js.Any])
     if (valueTime != null) __obj.updateDynamic("valueTime")(valueTime.asInstanceOf[js.Any])
     if (valueTiming != null) __obj.updateDynamic("valueTiming")(valueTiming.asInstanceOf[js.Any])
-    if (valueUnsignedInt != null) __obj.updateDynamic("valueUnsignedInt")(valueUnsignedInt.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueUnsignedInt)) __obj.updateDynamic("valueUnsignedInt")(valueUnsignedInt.get.asInstanceOf[js.Any])
     if (valueUri != null) __obj.updateDynamic("valueUri")(valueUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementDefinitionExample]
   }

@@ -27,14 +27,14 @@ object BeginEditEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     cellElement: js.Any = null,
-    columnIndex: Int | Double = null,
+    columnIndex: js.UndefOr[Double] = js.undefined,
     data: js.Any = null,
     rowElement: js.Any = null
   ): BeginEditEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (cellElement != null) __obj.updateDynamic("cellElement")(cellElement.asInstanceOf[js.Any])
-    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnIndex)) __obj.updateDynamic("columnIndex")(columnIndex.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (rowElement != null) __obj.updateDynamic("rowElement")(rowElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeginEditEventArgs]

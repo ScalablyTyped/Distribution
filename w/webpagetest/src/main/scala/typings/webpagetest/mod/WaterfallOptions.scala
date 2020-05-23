@@ -29,9 +29,9 @@ object WaterfallOptions {
   @scala.inline
   def apply(
     chartType: String = null,
-    chartWidth: Int | Double = null,
+    chartWidth: js.UndefOr[Double] = js.undefined,
     colorByMime: js.UndefOr[Boolean] = js.undefined,
-    maxTime: Int | Double = null,
+    maxTime: js.UndefOr[Double] = js.undefined,
     noBandwidth: js.UndefOr[Boolean] = js.undefined,
     noCPU: js.UndefOr[Boolean] = js.undefined,
     noEllipsis: js.UndefOr[Boolean] = js.undefined,
@@ -40,13 +40,13 @@ object WaterfallOptions {
   ): WaterfallOptions = {
     val __obj = js.Dynamic.literal()
     if (chartType != null) __obj.updateDynamic("chartType")(chartType.asInstanceOf[js.Any])
-    if (chartWidth != null) __obj.updateDynamic("chartWidth")(chartWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorByMime)) __obj.updateDynamic("colorByMime")(colorByMime.asInstanceOf[js.Any])
-    if (maxTime != null) __obj.updateDynamic("maxTime")(maxTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(noBandwidth)) __obj.updateDynamic("noBandwidth")(noBandwidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(noCPU)) __obj.updateDynamic("noCPU")(noCPU.asInstanceOf[js.Any])
-    if (!js.isUndefined(noEllipsis)) __obj.updateDynamic("noEllipsis")(noEllipsis.asInstanceOf[js.Any])
-    if (!js.isUndefined(noLabels)) __obj.updateDynamic("noLabels")(noLabels.asInstanceOf[js.Any])
+    if (!js.isUndefined(chartWidth)) __obj.updateDynamic("chartWidth")(chartWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorByMime)) __obj.updateDynamic("colorByMime")(colorByMime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTime)) __obj.updateDynamic("maxTime")(maxTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noBandwidth)) __obj.updateDynamic("noBandwidth")(noBandwidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noCPU)) __obj.updateDynamic("noCPU")(noCPU.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noEllipsis)) __obj.updateDynamic("noEllipsis")(noEllipsis.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noLabels)) __obj.updateDynamic("noLabels")(noLabels.get.asInstanceOf[js.Any])
     if (requests != null) __obj.updateDynamic("requests")(requests.asInstanceOf[js.Any])
     __obj.asInstanceOf[WaterfallOptions]
   }

@@ -21,6 +21,7 @@ object webcontentsWebcontentsMod extends js.Object {
     def executeJavaScript(code: String): js.Promise[Unit] = js.native
     def findInPage(searchTerm: String): js.Promise[Unit] = js.native
     def findInPage(searchTerm: String, options: FindInPageOptions): js.Promise[Unit] = js.native
+    def focus(): js.Promise[Unit] = js.native
     def getPrinters(): js.Promise[PrinterInfo] = js.native
     def getZoomLevel(): js.Promise[Double] = js.native
     def navigate(url: String): js.Promise[Unit] = js.native
@@ -31,6 +32,7 @@ object webcontentsWebcontentsMod extends js.Object {
     def reload(): js.Promise[Unit] = js.native
     def reload(ignoreCache: Boolean): js.Promise[Unit] = js.native
     def setZoomLevel(level: Double): js.Promise[Unit] = js.native
+    def showDeveloperTools(): js.Promise[Unit] = js.native
     def stopFindInPage(action: String): js.Promise[Unit] = js.native
     def stopNavigation(): js.Promise[Unit] = js.native
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/test/unit/local/test_index_manager", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/test/unit/local/test_index_manager", JSImport.Namespace)
 @js.native
 object testIndexManagerMod extends js.Object {
   @js.native

@@ -1,5 +1,10 @@
 package typings.expo
 
+import typings.expo.anon.Data
+import typings.expo.anon.Day
+import typings.expo.anon.GcmSenderId
+import typings.expo.anon.Interval
+import typings.expo.anon.IntervalMs
 import typings.expo.notificationsTypesMod.ActionType
 import typings.expo.notificationsTypesMod.Channel
 import typings.expo.notificationsTypesMod.LocalNotification
@@ -27,14 +32,14 @@ object notificationsMod extends js.Object {
     def dismissAllNotificationsAsync(): js.Promise[Unit] = js.native
     def dismissNotificationAsync(notificationId: ReactText): js.Promise[Unit] = js.native
     def getBadgeNumberAsync(): js.Promise[Double] = js.native
-    def getDevicePushTokenAsync(config: AnonGcmSenderId): js.Promise[AnonData] = js.native
+    def getDevicePushTokenAsync(config: GcmSenderId): js.Promise[Data] = js.native
     def getExpoPushTokenAsync(): js.Promise[String] = js.native
     def presentLocalNotificationAsync(notification: LocalNotification): js.Promise[ReactText] = js.native
     def scheduleLocalNotificationAsync(notification: LocalNotification): js.Promise[ReactText] = js.native
-    def scheduleLocalNotificationAsync(notification: LocalNotification, options: AnonIntervalMs): js.Promise[ReactText] = js.native
+    def scheduleLocalNotificationAsync(notification: LocalNotification, options: IntervalMs): js.Promise[ReactText] = js.native
     def scheduleNotificationWithCalendarAsync(notification: LocalNotification): js.Promise[String] = js.native
-    def scheduleNotificationWithCalendarAsync(notification: LocalNotification, options: AnonDay): js.Promise[String] = js.native
-    def scheduleNotificationWithTimerAsync(notification: LocalNotification, options: AnonInterval): js.Promise[String] = js.native
+    def scheduleNotificationWithCalendarAsync(notification: LocalNotification, options: Day): js.Promise[String] = js.native
+    def scheduleNotificationWithTimerAsync(notification: LocalNotification, options: Interval): js.Promise[String] = js.native
     def setBadgeNumberAsync(number: Double): js.Promise[Unit] = js.native
   }
   

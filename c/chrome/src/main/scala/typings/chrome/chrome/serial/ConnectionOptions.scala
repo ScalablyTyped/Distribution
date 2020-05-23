@@ -46,27 +46,27 @@ trait ConnectionOptions extends js.Object {
 object ConnectionOptions {
   @scala.inline
   def apply(
-    bitrate: Int | Double = null,
-    bufferSize: Int | Double = null,
+    bitrate: js.UndefOr[Double] = js.undefined,
+    bufferSize: js.UndefOr[Double] = js.undefined,
     ctsFlowControl: js.UndefOr[Boolean] = js.undefined,
     dataBits: seven | eight = null,
     name: String = null,
     parityBit: no | odd | even = null,
     peristent: js.UndefOr[Boolean] = js.undefined,
-    receiveTimeout: Int | Double = null,
-    sendTimeout: Int | Double = null,
+    receiveTimeout: js.UndefOr[Double] = js.undefined,
+    sendTimeout: js.UndefOr[Double] = js.undefined,
     stopBits: one | two = null
   ): ConnectionOptions = {
     val __obj = js.Dynamic.literal()
-    if (bitrate != null) __obj.updateDynamic("bitrate")(bitrate.asInstanceOf[js.Any])
-    if (bufferSize != null) __obj.updateDynamic("bufferSize")(bufferSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(ctsFlowControl)) __obj.updateDynamic("ctsFlowControl")(ctsFlowControl.asInstanceOf[js.Any])
+    if (!js.isUndefined(bitrate)) __obj.updateDynamic("bitrate")(bitrate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bufferSize)) __obj.updateDynamic("bufferSize")(bufferSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ctsFlowControl)) __obj.updateDynamic("ctsFlowControl")(ctsFlowControl.get.asInstanceOf[js.Any])
     if (dataBits != null) __obj.updateDynamic("dataBits")(dataBits.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (parityBit != null) __obj.updateDynamic("parityBit")(parityBit.asInstanceOf[js.Any])
-    if (!js.isUndefined(peristent)) __obj.updateDynamic("peristent")(peristent.asInstanceOf[js.Any])
-    if (receiveTimeout != null) __obj.updateDynamic("receiveTimeout")(receiveTimeout.asInstanceOf[js.Any])
-    if (sendTimeout != null) __obj.updateDynamic("sendTimeout")(sendTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(peristent)) __obj.updateDynamic("peristent")(peristent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(receiveTimeout)) __obj.updateDynamic("receiveTimeout")(receiveTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendTimeout)) __obj.updateDynamic("sendTimeout")(sendTimeout.get.asInstanceOf[js.Any])
     if (stopBits != null) __obj.updateDynamic("stopBits")(stopBits.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionOptions]
   }

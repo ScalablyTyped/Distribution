@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * A command to toggle bottom borders for selected cells on/off.
   */
-@JSGlobal("ToggleTableCellBottomBorderCommand")
-@js.native
-class ToggleTableCellBottomBorderCommand () extends CommandWithBooleanStateBase {
+trait ToggleTableCellBottomBorderCommand extends CommandWithBooleanStateBase {
   /**
     * Executes the ToggleTableCellBottomBorderCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
+}
+
+object ToggleTableCellBottomBorderCommand {
+  @scala.inline
+  def apply(execute: () => Boolean, getState: () => CommandState[Boolean]): ToggleTableCellBottomBorderCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
+    __obj.asInstanceOf[ToggleTableCellBottomBorderCommand]
+  }
 }
 

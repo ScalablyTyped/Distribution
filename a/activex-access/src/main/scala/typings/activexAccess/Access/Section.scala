@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.Section")
 @js.native
-class Section protected () extends js.Object {
+trait Section extends js.Object {
   @JSName("Access.Section_typekey")
   var AccessDotSection_typekey: Section = js.native
   var AlternateBackColor: Double = js.native

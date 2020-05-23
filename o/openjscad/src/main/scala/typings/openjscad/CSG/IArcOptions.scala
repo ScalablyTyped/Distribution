@@ -14,19 +14,19 @@ object IArcOptions {
   @scala.inline
   def apply(
     center: Vector2D | js.Array[Double] = null,
-    endangle: Int | Double = null,
+    endangle: js.UndefOr[Double] = js.undefined,
     maketangent: js.UndefOr[Boolean] = js.undefined,
-    radius: Int | Double = null,
-    resolution: Int | Double = null,
-    startangle: Int | Double = null
+    radius: js.UndefOr[Double] = js.undefined,
+    resolution: js.UndefOr[Double] = js.undefined,
+    startangle: js.UndefOr[Double] = js.undefined
   ): IArcOptions = {
     val __obj = js.Dynamic.literal()
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (endangle != null) __obj.updateDynamic("endangle")(endangle.asInstanceOf[js.Any])
-    if (!js.isUndefined(maketangent)) __obj.updateDynamic("maketangent")(maketangent.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
-    if (startangle != null) __obj.updateDynamic("startangle")(startangle.asInstanceOf[js.Any])
+    if (!js.isUndefined(endangle)) __obj.updateDynamic("endangle")(endangle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maketangent)) __obj.updateDynamic("maketangent")(maketangent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolution)) __obj.updateDynamic("resolution")(resolution.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startangle)) __obj.updateDynamic("startangle")(startangle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IArcOptions]
   }
 }

@@ -11,8 +11,8 @@ package object mod {
     /* isTabActive */ scala.Boolean, 
     /* onPressHandler */ js.Function1[/* pageNumber */ scala.Double, scala.Unit], 
     /* onLayoutHandler */ js.UndefOr[js.Function1[/* event */ typings.reactNative.mod.LayoutChangeEvent, scala.Unit]], 
-    typings.react.mod._Global_.JSX.Element
+    typings.react.mod.global.JSX.Element
   ]
-  type TabBarProps[T] = T with typings.reactNativeScrollableTabView.AnonActiveTab
-  type TabProps[T] = T with typings.reactNativeScrollableTabView.AnonTabLabel
+  type TabBarProps[T] = T with typings.reactNativeScrollableTabView.anon.ActiveTab
+  type TabProps[T] = T with typings.reactNativeScrollableTabView.anon.TabLabel
 }

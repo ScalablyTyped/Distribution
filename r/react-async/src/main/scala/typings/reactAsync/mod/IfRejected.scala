@@ -1,8 +1,8 @@
 package typings.reactAsync.mod
 
-import typings.react.mod._Global_.JSX.Element
-import typings.reactAsync.AnonChildrenPersist
-import typings.reactAsync.AnonPersist
+import typings.react.mod.global.JSX.Element
+import typings.reactAsync.anon.ChildrenPersist
+import typings.reactAsync.anon.Persist
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-async", "IfRejected")
 @js.native
 object IfRejected extends js.Object {
-  var propTypes: AnonPersist = js.native
-  def apply[T /* <: js.Object */](hasChildrenPersistState: AnonChildrenPersist[T]): Element = js.native
+  var propTypes: Persist = js.native
+  def apply[T /* <: js.Object */](hasChildrenPersistState: ChildrenPersist[T]): Element = js.native
 }
 

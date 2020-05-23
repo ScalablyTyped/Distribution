@@ -87,9 +87,9 @@ object CreateAppRequest {
     buildSpec: BuildSpec = null,
     customRules: CustomRules = null,
     description: Description = null,
-    enableAutoBranchCreation: js.UndefOr[Boolean] = js.undefined,
-    enableBasicAuth: js.UndefOr[Boolean] = js.undefined,
-    enableBranchAutoBuild: js.UndefOr[Boolean] = js.undefined,
+    enableAutoBranchCreation: js.UndefOr[EnableAutoBranchCreation] = js.undefined,
+    enableBasicAuth: js.UndefOr[EnableBasicAuth] = js.undefined,
+    enableBranchAutoBuild: js.UndefOr[EnableBranchAutoBuild] = js.undefined,
     environmentVariables: EnvironmentVariables = null,
     iamServiceRoleArn: ServiceRoleArn = null,
     oauthToken: OauthToken = null,
@@ -105,9 +105,9 @@ object CreateAppRequest {
     if (buildSpec != null) __obj.updateDynamic("buildSpec")(buildSpec.asInstanceOf[js.Any])
     if (customRules != null) __obj.updateDynamic("customRules")(customRules.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAutoBranchCreation)) __obj.updateDynamic("enableAutoBranchCreation")(enableAutoBranchCreation.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableBasicAuth)) __obj.updateDynamic("enableBasicAuth")(enableBasicAuth.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableBranchAutoBuild)) __obj.updateDynamic("enableBranchAutoBuild")(enableBranchAutoBuild.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAutoBranchCreation)) __obj.updateDynamic("enableAutoBranchCreation")(enableAutoBranchCreation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableBasicAuth)) __obj.updateDynamic("enableBasicAuth")(enableBasicAuth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableBranchAutoBuild)) __obj.updateDynamic("enableBranchAutoBuild")(enableBranchAutoBuild.get.asInstanceOf[js.Any])
     if (environmentVariables != null) __obj.updateDynamic("environmentVariables")(environmentVariables.asInstanceOf[js.Any])
     if (iamServiceRoleArn != null) __obj.updateDynamic("iamServiceRoleArn")(iamServiceRoleArn.asInstanceOf[js.Any])
     if (oauthToken != null) __obj.updateDynamic("oauthToken")(oauthToken.asInstanceOf[js.Any])

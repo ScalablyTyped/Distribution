@@ -22,10 +22,10 @@ trait HOTPVerifyOpt extends HOTPGenOpt {
 
 object HOTPVerifyOpt {
   @scala.inline
-  def apply(counter: Int | Double = null, window: Int | Double = null): HOTPVerifyOpt = {
+  def apply(counter: js.UndefOr[Double] = js.undefined, window: js.UndefOr[Double] = js.undefined): HOTPVerifyOpt = {
     val __obj = js.Dynamic.literal()
-    if (counter != null) __obj.updateDynamic("counter")(counter.asInstanceOf[js.Any])
-    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
+    if (!js.isUndefined(counter)) __obj.updateDynamic("counter")(counter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(window)) __obj.updateDynamic("window")(window.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HOTPVerifyOpt]
   }
 }

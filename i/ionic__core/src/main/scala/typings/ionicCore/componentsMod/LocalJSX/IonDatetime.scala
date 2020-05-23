@@ -146,9 +146,9 @@ object IonDatetime {
     onIonFocus: /* event */ CustomEvent[Unit] => Unit = null,
     pickerFormat: String = null,
     pickerOptions: DatetimeOptions = null,
-    placeholder: String = null,
+    placeholder: js.UndefOr[Null | String] = js.undefined,
     readonly: js.UndefOr[Boolean] = js.undefined,
-    value: String = null,
+    value: js.UndefOr[Null | String] = js.undefined,
     yearValues: js.Array[Double] | Double | String = null
   ): IonDatetime = {
     val __obj = js.Dynamic.literal()
@@ -156,7 +156,7 @@ object IonDatetime {
     if (dayNames != null) __obj.updateDynamic("dayNames")(dayNames.asInstanceOf[js.Any])
     if (dayShortNames != null) __obj.updateDynamic("dayShortNames")(dayShortNames.asInstanceOf[js.Any])
     if (dayValues != null) __obj.updateDynamic("dayValues")(dayValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (displayFormat != null) __obj.updateDynamic("displayFormat")(displayFormat.asInstanceOf[js.Any])
     if (displayTimezone != null) __obj.updateDynamic("displayTimezone")(displayTimezone.asInstanceOf[js.Any])
     if (doneText != null) __obj.updateDynamic("doneText")(doneText.asInstanceOf[js.Any])
@@ -175,9 +175,9 @@ object IonDatetime {
     if (onIonFocus != null) __obj.updateDynamic("onIonFocus")(js.Any.fromFunction1(onIonFocus))
     if (pickerFormat != null) __obj.updateDynamic("pickerFormat")(pickerFormat.asInstanceOf[js.Any])
     if (pickerOptions != null) __obj.updateDynamic("pickerOptions")(pickerOptions.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(placeholder)) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (yearValues != null) __obj.updateDynamic("yearValues")(yearValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonDatetime]
   }

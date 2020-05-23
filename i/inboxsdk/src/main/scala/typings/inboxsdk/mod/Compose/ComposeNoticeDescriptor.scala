@@ -10,9 +10,9 @@ trait ComposeNoticeDescriptor extends js.Object {
 
 object ComposeNoticeDescriptor {
   @scala.inline
-  def apply(orderHint: Int | Double = null): ComposeNoticeDescriptor = {
+  def apply(orderHint: js.UndefOr[Double] = js.undefined): ComposeNoticeDescriptor = {
     val __obj = js.Dynamic.literal()
-    if (orderHint != null) __obj.updateDynamic("orderHint")(orderHint.asInstanceOf[js.Any])
+    if (!js.isUndefined(orderHint)) __obj.updateDynamic("orderHint")(orderHint.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComposeNoticeDescriptor]
   }
 }

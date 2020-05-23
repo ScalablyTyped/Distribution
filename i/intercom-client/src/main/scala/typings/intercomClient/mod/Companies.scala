@@ -1,7 +1,7 @@
 package typings.intercomClient.mod
 
-import typings.intercomClient.AnonSegmentid
-import typings.intercomClient.PartialCompany
+import typings.intercomClient.anon.PartialCompany
+import typings.intercomClient.anon.Segmentid
 import typings.intercomClient.companyMod.Company
 import typings.intercomClient.companyMod.CompanyIdentifier
 import typings.intercomClient.companyMod.List
@@ -21,8 +21,8 @@ class Companies () extends js.Object {
   def find(identifier: CompanyIdentifier, cb: callback[ApiResponse[Company]]): Unit = js.native
   def list(): js.Promise[ApiResponse[List]] = js.native
   def list(cb: callback[ApiResponse[List]]): Unit = js.native
-  def listBy(params: AnonSegmentid): js.Promise[ApiResponse[List]] = js.native
-  def listBy(params: AnonSegmentid, cb: callback[ApiResponse[List]]): Unit = js.native
+  def listBy(params: Segmentid): js.Promise[ApiResponse[List]] = js.native
+  def listBy(params: Segmentid, cb: callback[ApiResponse[List]]): Unit = js.native
   def update(company: CompanyIdentifier with PartialCompany): js.Promise[ApiResponse[Company]] = js.native
   def update(company: CompanyIdentifier with PartialCompany, cb: callback[ApiResponse[Company]]): Unit = js.native
 }

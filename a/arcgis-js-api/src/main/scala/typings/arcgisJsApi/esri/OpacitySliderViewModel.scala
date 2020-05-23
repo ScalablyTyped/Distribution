@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,8 +21,4 @@ trait OpacitySliderViewModel extends SmartMappingSliderViewModel {
     */
   def getStopInfo(): js.Array[OpacitySliderViewModelStopInfo] = js.native
 }
-
-@JSGlobal("__esri.OpacitySliderViewModel")
-@js.native
-object OpacitySliderViewModel extends TopLevel[OpacitySliderViewModelConstructor]
 

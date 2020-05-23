@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * Get available genre seeds
-  * 
+  *
   * GET /v1/recommendations/available-genre-seeds
   * https://developer.spotify.com/web-api/get-recommendations/#available-genre-seeds
   */

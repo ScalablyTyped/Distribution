@@ -39,18 +39,18 @@ object RtmpGroupSettings {
   def apply(
     AuthenticationScheme: AuthenticationScheme = null,
     CacheFullBehavior: RtmpCacheFullBehavior = null,
-    CacheLength: Int | Double = null,
+    CacheLength: js.UndefOr[integerMin30] = js.undefined,
     CaptionData: RtmpCaptionData = null,
     InputLossAction: InputLossActionForRtmpOut = null,
-    RestartDelay: Int | Double = null
+    RestartDelay: js.UndefOr[integerMin0] = js.undefined
   ): RtmpGroupSettings = {
     val __obj = js.Dynamic.literal()
     if (AuthenticationScheme != null) __obj.updateDynamic("AuthenticationScheme")(AuthenticationScheme.asInstanceOf[js.Any])
     if (CacheFullBehavior != null) __obj.updateDynamic("CacheFullBehavior")(CacheFullBehavior.asInstanceOf[js.Any])
-    if (CacheLength != null) __obj.updateDynamic("CacheLength")(CacheLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(CacheLength)) __obj.updateDynamic("CacheLength")(CacheLength.get.asInstanceOf[js.Any])
     if (CaptionData != null) __obj.updateDynamic("CaptionData")(CaptionData.asInstanceOf[js.Any])
     if (InputLossAction != null) __obj.updateDynamic("InputLossAction")(InputLossAction.asInstanceOf[js.Any])
-    if (RestartDelay != null) __obj.updateDynamic("RestartDelay")(RestartDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(RestartDelay)) __obj.updateDynamic("RestartDelay")(RestartDelay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RtmpGroupSettings]
   }
 }

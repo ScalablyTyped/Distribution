@@ -15,12 +15,12 @@ object DragAndZoomToolOptions {
   def apply(
     autoClose: js.UndefOr[Boolean] = js.undefined,
     followText: String = null,
-    zoomType: Int | Double = null
+    zoomType: js.UndefOr[ZoomType] = js.undefined
   ): DragAndZoomToolOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose.get.asInstanceOf[js.Any])
     if (followText != null) __obj.updateDynamic("followText")(followText.asInstanceOf[js.Any])
-    if (zoomType != null) __obj.updateDynamic("zoomType")(zoomType.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomType)) __obj.updateDynamic("zoomType")(zoomType.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragAndZoomToolOptions]
   }
 }

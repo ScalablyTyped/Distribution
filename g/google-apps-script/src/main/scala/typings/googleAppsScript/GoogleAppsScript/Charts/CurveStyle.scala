@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Charts
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object CurveStyle extends js.Object {
   
   @js.native
   sealed trait SMOOTH extends CurveStyle
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CurveStyle with Double] = js.native
-  /* 0 */ @js.native
-  object NORMAL extends TopLevel[NORMAL with Double]
-  
-  /* 1 */ @js.native
-  object SMOOTH extends TopLevel[SMOOTH with Double]
   
 }
 

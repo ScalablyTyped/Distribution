@@ -36,12 +36,12 @@ object GeneralizeParametersProperties {
   def apply(
     deviationUnit: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards = null,
     geometries: js.Array[GeometryProperties] = null,
-    maxDeviation: Int | Double = null
+    maxDeviation: js.UndefOr[Double] = js.undefined
   ): GeneralizeParametersProperties = {
     val __obj = js.Dynamic.literal()
     if (deviationUnit != null) __obj.updateDynamic("deviationUnit")(deviationUnit.asInstanceOf[js.Any])
     if (geometries != null) __obj.updateDynamic("geometries")(geometries.asInstanceOf[js.Any])
-    if (maxDeviation != null) __obj.updateDynamic("maxDeviation")(maxDeviation.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDeviation)) __obj.updateDynamic("maxDeviation")(maxDeviation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeneralizeParametersProperties]
   }
 }

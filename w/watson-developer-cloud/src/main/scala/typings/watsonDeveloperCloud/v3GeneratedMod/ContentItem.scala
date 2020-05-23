@@ -31,23 +31,23 @@ object ContentItem {
   def apply(
     content: String,
     contenttype: String = null,
-    created: Int | Double = null,
+    created: js.UndefOr[Double] = js.undefined,
     forward: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     language: String = null,
     parentid: String = null,
     reply: js.UndefOr[Boolean] = js.undefined,
-    updated: Int | Double = null
+    updated: js.UndefOr[Double] = js.undefined
   ): ContentItem = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     if (contenttype != null) __obj.updateDynamic("contenttype")(contenttype.asInstanceOf[js.Any])
-    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (!js.isUndefined(forward)) __obj.updateDynamic("forward")(forward.asInstanceOf[js.Any])
+    if (!js.isUndefined(created)) __obj.updateDynamic("created")(created.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forward)) __obj.updateDynamic("forward")(forward.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (parentid != null) __obj.updateDynamic("parentid")(parentid.asInstanceOf[js.Any])
-    if (!js.isUndefined(reply)) __obj.updateDynamic("reply")(reply.asInstanceOf[js.Any])
-    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
+    if (!js.isUndefined(reply)) __obj.updateDynamic("reply")(reply.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(updated)) __obj.updateDynamic("updated")(updated.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentItem]
   }
 }

@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 
 trait ISimple extends IBase {
   /** [Method] Returns the value of prefix
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getPrefix: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Sets the value of prefix
-  		* @param prefix String The new value.
-  		*/
+    * @param prefix String The new value.
+    */
   var setPrefix: js.UndefOr[js.Function1[/* prefix */ js.UndefOr[String], Unit]] = js.undefined
 }
 
@@ -58,7 +58,7 @@ object ISimple {
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setPrefix != null) __obj.updateDynamic("setPrefix")(js.Any.fromFunction1(setPrefix))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISimple]

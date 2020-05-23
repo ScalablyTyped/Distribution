@@ -32,7 +32,7 @@ object TabAddEventArgs {
     `type`: String = null
   ): TabAddEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (tabContent != null) __obj.updateDynamic("tabContent")(tabContent.asInstanceOf[js.Any])
     if (tabHeader != null) __obj.updateDynamic("tabHeader")(tabHeader.asInstanceOf[js.Any])

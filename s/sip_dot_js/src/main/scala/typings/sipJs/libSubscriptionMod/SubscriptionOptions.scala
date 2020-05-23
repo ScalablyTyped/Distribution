@@ -16,13 +16,13 @@ object SubscriptionOptions {
   def apply(
     body: String = null,
     contentType: String = null,
-    expires: Int | Double = null,
+    expires: js.UndefOr[Double] = js.undefined,
     extraHeaders: js.Array[String] = null
   ): SubscriptionOptions = {
     val __obj = js.Dynamic.literal()
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    if (!js.isUndefined(expires)) __obj.updateDynamic("expires")(expires.get.asInstanceOf[js.Any])
     if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionOptions]
   }

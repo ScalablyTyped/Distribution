@@ -9,36 +9,36 @@ import scala.scalajs.js.annotation._
 
 trait IAbstract extends IBase {
   /** [Method] Returns the value of args
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   var getArgs: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the value of callback
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getCallback: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of element
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getElement: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of scope
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getScope: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Sets the value of args
-  		* @param args Array The new value.
-  		*/
+    * @param args Array The new value.
+    */
   var setArgs: js.UndefOr[js.Function1[/* args */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Sets the value of callback
-  		* @param callback Object The new value.
-  		*/
+    * @param callback Object The new value.
+    */
   var setCallback: js.UndefOr[js.Function1[/* callback */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of element
-  		* @param element Object The new value.
-  		*/
+    * @param element Object The new value.
+    */
   var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of scope
-  		* @param scope Object The new value.
-  		*/
+    * @param scope Object The new value.
+    */
   var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -94,7 +94,7 @@ object IAbstract {
     if (setCallback != null) __obj.updateDynamic("setCallback")(js.Any.fromFunction1(setCallback))
     if (setElement != null) __obj.updateDynamic("setElement")(js.Any.fromFunction1(setElement))
     if (setScope != null) __obj.updateDynamic("setScope")(js.Any.fromFunction1(setScope))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAbstract]

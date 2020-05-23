@@ -48,16 +48,16 @@ object RouteOptionsCors {
     credentials: js.UndefOr[Boolean] = js.undefined,
     exposedHeaders: js.Array[String] = null,
     headers: js.Array[String] = null,
-    maxAge: Int | Double = null,
+    maxAge: js.UndefOr[Double] = js.undefined,
     origin: js.Array[String] | Asterisk | ignore = null
   ): RouteOptionsCors = {
     val __obj = js.Dynamic.literal()
     if (additionalExposedHeaders != null) __obj.updateDynamic("additionalExposedHeaders")(additionalExposedHeaders.asInstanceOf[js.Any])
     if (additionalHeaders != null) __obj.updateDynamic("additionalHeaders")(additionalHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(credentials)) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
+    if (!js.isUndefined(credentials)) __obj.updateDynamic("credentials")(credentials.get.asInstanceOf[js.Any])
     if (exposedHeaders != null) __obj.updateDynamic("exposedHeaders")(exposedHeaders.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAge)) __obj.updateDynamic("maxAge")(maxAge.get.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteOptionsCors]
   }

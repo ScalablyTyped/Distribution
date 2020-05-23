@@ -36,9 +36,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapGridView")
 @js.native
-class BootstrapGridView () extends BootstrapGridBase {
+trait BootstrapGridView extends BootstrapGridBase {
   val batchEditApi: BootstrapGridViewBatchEditApi | Null = js.native
   def addNewRow(): Unit = js.native
   def applyFilter(filterExpression: String): Unit = js.native

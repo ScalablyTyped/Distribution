@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
 trait RangeFormatUpdateData extends js.Object {
   /**
     *
-    * Indicates if text is automatically indented when text alignment is set to equal distribution.
+    * Specifies if text is automatically indented when text alignment is set to equal distribution.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -38,7 +38,7 @@ trait RangeFormatUpdateData extends js.Object {
   var borders: js.UndefOr[RangeBorderCollectionUpdateData] = js.undefined
   /**
     *
-    * Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be returned.
+    * Specifies the width of all colums within the range. If the column widths are not uniform, null will be returned.
     *
     * [Api set: ExcelApi 1.2]
     */
@@ -89,21 +89,21 @@ trait RangeFormatUpdateData extends js.Object {
   var readingOrder: js.UndefOr[ReadingOrder | Context | LeftToRight | RightToLeft] = js.undefined
   /**
     *
-    * Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned.
+    * The height of all rows in the range. If the row heights are not uniform, null will be returned.
     *
     * [Api set: ExcelApi 1.2]
     */
   var rowHeight: js.UndefOr[Double] = js.undefined
   /**
     *
-    * Indicates if text automatically shrinks to fit in the available column width.
+    * Specifies if text automatically shrinks to fit in the available column width.
     *
     * [Api set: ExcelApi 1.9]
     */
   var shrinkToFit: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Gets or sets the text orientation of all the cells within the range.
+    * The text orientation of all the cells within the range.
     The text orientation should be an integer either from -90 to 90, or 180 for vertically-oriented text.
     If the orientation within a range are not uniform, then null will be returned.
     *
@@ -122,7 +122,7 @@ trait RangeFormatUpdateData extends js.Object {
   var useStandardHeight: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Indicates whether the column width of the Range object equals the standard width of the sheet.
+    * Specifies if the column width of the Range object equals the standard width of the sheet.
     Returns True if the column width of the Range object equals the standard width of the sheet.
     Returns Null if the range contains more than one column and the columns aren't all the same height.
     Returns False otherwise.
@@ -139,7 +139,7 @@ trait RangeFormatUpdateData extends js.Object {
   var verticalAlignment: js.UndefOr[VerticalAlignment | Top | Center | Bottom | Justify | Distributed] = js.undefined
   /**
     *
-    * Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting
+    * Specifies if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -151,38 +151,38 @@ object RangeFormatUpdateData {
   def apply(
     autoIndent: js.UndefOr[Boolean] = js.undefined,
     borders: RangeBorderCollectionUpdateData = null,
-    columnWidth: Int | Double = null,
+    columnWidth: js.UndefOr[Double] = js.undefined,
     fill: RangeFillUpdateData = null,
     font: RangeFontUpdateData = null,
     horizontalAlignment: HorizontalAlignment | General | Left | Center | Right | Fill | Justify | CenterAcrossSelection | Distributed = null,
-    indentLevel: Int | Double = null,
+    indentLevel: js.UndefOr[Double] = js.undefined,
     protection: FormatProtectionUpdateData = null,
     readingOrder: ReadingOrder | Context | LeftToRight | RightToLeft = null,
-    rowHeight: Int | Double = null,
+    rowHeight: js.UndefOr[Double] = js.undefined,
     shrinkToFit: js.UndefOr[Boolean] = js.undefined,
-    textOrientation: Int | Double = null,
+    textOrientation: js.UndefOr[Double] = js.undefined,
     useStandardHeight: js.UndefOr[Boolean] = js.undefined,
     useStandardWidth: js.UndefOr[Boolean] = js.undefined,
     verticalAlignment: VerticalAlignment | Top | Center | Bottom | Justify | Distributed = null,
     wrapText: js.UndefOr[Boolean] = js.undefined
   ): RangeFormatUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoIndent)) __obj.updateDynamic("autoIndent")(autoIndent.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoIndent)) __obj.updateDynamic("autoIndent")(autoIndent.get.asInstanceOf[js.Any])
     if (borders != null) __obj.updateDynamic("borders")(borders.asInstanceOf[js.Any])
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnWidth)) __obj.updateDynamic("columnWidth")(columnWidth.get.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (indentLevel != null) __obj.updateDynamic("indentLevel")(indentLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(indentLevel)) __obj.updateDynamic("indentLevel")(indentLevel.get.asInstanceOf[js.Any])
     if (protection != null) __obj.updateDynamic("protection")(protection.asInstanceOf[js.Any])
     if (readingOrder != null) __obj.updateDynamic("readingOrder")(readingOrder.asInstanceOf[js.Any])
-    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(shrinkToFit)) __obj.updateDynamic("shrinkToFit")(shrinkToFit.asInstanceOf[js.Any])
-    if (textOrientation != null) __obj.updateDynamic("textOrientation")(textOrientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(useStandardHeight)) __obj.updateDynamic("useStandardHeight")(useStandardHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(useStandardWidth)) __obj.updateDynamic("useStandardWidth")(useStandardWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowHeight)) __obj.updateDynamic("rowHeight")(rowHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shrinkToFit)) __obj.updateDynamic("shrinkToFit")(shrinkToFit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(textOrientation)) __obj.updateDynamic("textOrientation")(textOrientation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useStandardHeight)) __obj.updateDynamic("useStandardHeight")(useStandardHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useStandardWidth)) __obj.updateDynamic("useStandardWidth")(useStandardWidth.get.asInstanceOf[js.Any])
     if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapText)) __obj.updateDynamic("wrapText")(wrapText.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapText)) __obj.updateDynamic("wrapText")(wrapText.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeFormatUpdateData]
   }
 }

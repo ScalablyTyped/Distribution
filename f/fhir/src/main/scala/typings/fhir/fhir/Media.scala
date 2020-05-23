@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A photo, video, or audio recording acquired or used in healthcare. The actual content may be inline or provided by direct reference
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait Media extends DomainResource {
   /**
     * Contains extended information for property 'duration'.
@@ -131,10 +131,10 @@ object Media {
     contained: js.Array[Resource] = null,
     context: Reference = null,
     device: Reference = null,
-    duration: Int | Double = null,
+    duration: js.UndefOr[unsignedInt] = js.undefined,
     extension: js.Array[Extension] = null,
-    frames: Int | Double = null,
-    height: Int | Double = null,
+    frames: js.UndefOr[positiveInt] = js.undefined,
+    height: js.UndefOr[positiveInt] = js.undefined,
     id: id = null,
     identifier: js.Array[Identifier] = null,
     implicitRules: uri = null,
@@ -151,7 +151,7 @@ object Media {
     subtype: CodeableConcept = null,
     text: Narrative = null,
     view: CodeableConcept = null,
-    width: Int | Double = null
+    width: js.UndefOr[positiveInt] = js.undefined
   ): Media = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -170,10 +170,10 @@ object Media {
     if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (frames != null) __obj.updateDynamic("frames")(frames.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(frames)) __obj.updateDynamic("frames")(frames.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
     if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
@@ -190,7 +190,7 @@ object Media {
     if (subtype != null) __obj.updateDynamic("subtype")(subtype.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Media]
   }
 }

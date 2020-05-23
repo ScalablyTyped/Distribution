@@ -73,8 +73,7 @@ object observable extends js.Object {
   def deep(target: js.Object, property: String, descriptor: PropertyDescriptor): Unit = js.native
   def deep(target: js.Object, property: js.Symbol): Unit = js.native
   def deep(target: js.Object, property: js.Symbol, descriptor: PropertyDescriptor): Unit = js.native
-  def enhancer(newValue: js.Any, oldValue: js.UndefOr[scala.Nothing], name: String): js.Any = js.native
-  def enhancer(newValue: js.Any, oldValue: js.Any, name: String): js.Any = js.native
+  def enhancer(newValue: js.Any, oldValue: js.UndefOr[js.Any], name: String): js.Any = js.native
   def map[K, V](): ObservableMap[K, V] = js.native
   def map[K, V](initialValues: IObservableMapInitialValues[K, V]): ObservableMap[K, V] = js.native
   def map[K, V](initialValues: IObservableMapInitialValues[K, V], options: CreateObservableOptions): ObservableMap[K, V] = js.native

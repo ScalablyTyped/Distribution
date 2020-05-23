@@ -1,7 +1,7 @@
 package typings.shopifyPrime.shopifyErrorMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.shopifyPrime.AnonStatus
+import typings.shopifyPrime.anon.Status
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @JSImport("shopify-prime/dist/infrastructure/shopify_error", "ShopifyError")
 @js.native
 class ShopifyError protected () extends Error {
-  def this(response: AnonStatus, body: ErrorType1) = this()
-  def this(response: AnonStatus, body: ErrorType2) = this()
-  def this(response: AnonStatus, body: ErrorType3) = this()
+  def this(response: Status, body: ErrorType1) = this()
+  def this(response: Status, body: ErrorType2) = this()
+  def this(response: Status, body: ErrorType3) = this()
   /**
     * True when the requesting application has made too many requests and reached Shopify's API rate limit.
     */

@@ -9,13 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object resource extends js.Object {
   @js.native
-  class ResourceModel protected () extends Model {
-    /**
-      * Constructor for a new ResourceModel.
-      * @param oData parameters used to initialize the ResourceModel; at least either bundleUrl or
-      * bundleName must be set on this object; if both are set, bundleName wins
-      */
-    def this(oData: js.Any) = this()
+  trait ResourceModel extends Model {
     /**
       * Enhances the resource model with a custom resource bundle. The resource modelcan be enhanced with
       * multiple resource bundles. The last enhanced resourcebundle wins against the previous ones and the

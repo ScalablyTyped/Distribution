@@ -3,7 +3,6 @@ package typings.heremaps.H.service
 import typings.heremaps.H.map.layer.TileLayer
 import typings.heremaps.H.map.provider.ImageTileProvider
 import typings.heremaps.H.service.MapTileService.Info
-import typings.heremaps.H.service.MapTileService.Options
 import typings.heremaps.H.util.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,16 +11,10 @@ import scala.scalajs.js.annotation._
 /**
   * This class encapsulates a map tile end point of the HERE Map Tile API.
   */
-@JSGlobal("H.service.MapTileService")
 @js.native
-/**
-  * Constructor
-  * @param opt_options {H.service.MapTileService.Options=}
-  */
-class MapTileService_ ()
+trait MapTileService_
   extends EventTarget
      with IConfigurable {
-  def this(opt_options: Options) = this()
   /**
     * This method creates a tile layer. This layer can be used as a layer on a map's data model.
     * @param tileType {string} - the tile type

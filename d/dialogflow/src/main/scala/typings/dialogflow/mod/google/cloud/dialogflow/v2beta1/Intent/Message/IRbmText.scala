@@ -14,10 +14,13 @@ trait IRbmText extends js.Object {
 
 object IRbmText {
   @scala.inline
-  def apply(rbmSuggestion: js.Array[IRbmSuggestion] = null, text: String = null): IRbmText = {
+  def apply(
+    rbmSuggestion: js.UndefOr[Null | js.Array[IRbmSuggestion]] = js.undefined,
+    text: js.UndefOr[Null | String] = js.undefined
+  ): IRbmText = {
     val __obj = js.Dynamic.literal()
-    if (rbmSuggestion != null) __obj.updateDynamic("rbmSuggestion")(rbmSuggestion.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (!js.isUndefined(rbmSuggestion)) __obj.updateDynamic("rbmSuggestion")(rbmSuggestion.asInstanceOf[js.Any])
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRbmText]
   }
 }

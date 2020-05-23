@@ -1,5 +1,6 @@
 package typings.ionic
 
+import typings.ionic.anon.Host
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation._
 object sshConfigMod extends js.Object {
   def ensureHostAndKeyPath(
     conf: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSHConfig.SSHConfig */ js.Any,
-    conn: AnonHost,
+    conn: Host,
     keyPath: String
   ): Unit = js.native
   def findHostSection(

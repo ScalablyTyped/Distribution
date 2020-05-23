@@ -1,8 +1,9 @@
 package typings.antd.anchorAnchorMod
 
-import typings.antd.AnonAffix
-import typings.antd.AnonAntAnchor
-import typings.antd.TypeofAnchorLink
+import typings.antd.anon.Affix
+import typings.antd.anon.TypeofAnchorLink
+import typings.antd.configProviderContextMod.ConfigConsumerProps
+import typings.react.mod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +17,7 @@ class default () extends Anchor
 @js.native
 object default extends js.Object {
   var Link: TypeofAnchorLink = js.native
-  var childContextTypes: AnonAntAnchor = js.native
-  var defaultProps: AnonAffix = js.native
+  var contextType: Context[ConfigConsumerProps] = js.native
+  var defaultProps: Affix = js.native
 }
 

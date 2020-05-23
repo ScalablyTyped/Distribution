@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Country extends js.Object {
   /**
-    * Country code of the remote IP address.
+    * The country code of the remote IP address.
     */
   var CountryCode: js.UndefOr[String] = js.native
   /**
-    * Country name of the remote IP address.
+    * The country name of the remote IP address.
     */
   var CountryName: js.UndefOr[String] = js.native
 }

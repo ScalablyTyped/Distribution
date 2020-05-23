@@ -1,15 +1,15 @@
 package typings.kafkaNode.mod
 
-import typings.kafkaNode.AnonName
-import typings.kafkaNode.AnonPartition
+import typings.kafkaNode.anon.Name
+import typings.kafkaNode.anon.Partition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CreateTopicRequest extends js.Object {
-  var configEntries: js.UndefOr[js.Array[AnonName]] = js.undefined
+  var configEntries: js.UndefOr[js.Array[Name]] = js.undefined
   var partitions: Double
-  var replicaAssignment: js.UndefOr[js.Array[AnonPartition]] = js.undefined
+  var replicaAssignment: js.UndefOr[js.Array[Partition]] = js.undefined
   var replicationFactor: Double
   var topic: String
 }
@@ -20,8 +20,8 @@ object CreateTopicRequest {
     partitions: Double,
     replicationFactor: Double,
     topic: String,
-    configEntries: js.Array[AnonName] = null,
-    replicaAssignment: js.Array[AnonPartition] = null
+    configEntries: js.Array[Name] = null,
+    replicaAssignment: js.Array[Partition] = null
   ): CreateTopicRequest = {
     val __obj = js.Dynamic.literal(partitions = partitions.asInstanceOf[js.Any], replicationFactor = replicationFactor.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
     if (configEntries != null) __obj.updateDynamic("configEntries")(configEntries.asInstanceOf[js.Any])

@@ -18,14 +18,14 @@ object ServerPattern {
   @scala.inline
   def apply(
     topic: String,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    maxMessages$: Int | Double = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    maxMessages$: js.UndefOr[Double] = js.undefined,
     pubsub$: js.UndefOr[Boolean] = js.undefined
   ): ServerPattern = {
     val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (maxMessages$ != null) __obj.updateDynamic("maxMessages$")(maxMessages$.asInstanceOf[js.Any])
-    if (!js.isUndefined(pubsub$)) __obj.updateDynamic("pubsub$")(pubsub$.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxMessages$)) __obj.updateDynamic("maxMessages$")(maxMessages$.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pubsub$)) __obj.updateDynamic("pubsub$")(pubsub$.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerPattern]
   }
 }

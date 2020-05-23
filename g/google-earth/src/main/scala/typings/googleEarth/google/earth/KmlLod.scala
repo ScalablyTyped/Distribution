@@ -4,24 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.earth.KmlLod")
-@js.native
-class KmlLod () extends KmlObject {
+trait KmlLod extends KmlObject {
   /**
     * Distance over which the geometry fades, from fully transparent to fully opaque.
     * This ramp value, expressed in screen pixels, is applied at the maximum end of the LOD (visibility) limits.
     */
-  def getMaxFadeExtent(): Double = js.native
+  def getMaxFadeExtent(): Double
   /**
     * Measurement in screen pixels that represents the maximum limit of the visibility range for a given Region.
     * A value of -1, the default, indicates "active to infinite size."
     */
-  def getMaxLodPixels(): Double = js.native
+  def getMaxLodPixels(): Double
   /**
     * Distance over which the geometry fades, from fully opaque to fully transparent.
     * This ramp value, expressed in screen pixels, is applied at the minimum end of the LOD (visibility) limits.
     */
-  def getMinFadeExtent(): Double = js.native
+  def getMinFadeExtent(): Double
   /**
     * Specifies measurement in screen pixels that represents the minimum limit of the visibility range for a given Region.
     * Google Earth calculates the size of the region when projected onto screen space.
@@ -29,26 +27,26 @@ class KmlLod () extends KmlObject {
     * If this measurement falls within the limits defined by minLodPixels and maxLodPixels (and if the LatLonAltBox is in view), the region is active.
     * If this limit is not reached, the associated geometry is considered to be too far from the user's viewpoint to be drawn.
     */
-  def getMinLodPixels(): Double = js.native
+  def getMinLodPixels(): Double
   /**
     * Sets the minLodPixels, maxLodPixels, minFadeExtent, and maxFadeExtent for the projected region on the screen.
     */
-  def set(minLodPixels: Double, maxLodPixels: Double, minFadeExtent: Double, maxFadeExtent: Double): Unit = js.native
+  def set(minLodPixels: Double, maxLodPixels: Double, minFadeExtent: Double, maxFadeExtent: Double): Unit
   /**
     * Distance over which the geometry fades, from fully transparent to fully opaque.
     * This ramp value, expressed in screen pixels, is applied at the maximum end of the LOD (visibility) limits.
     */
-  def setMaxFadeExtent(maxFadeExtent: Double): Unit = js.native
+  def setMaxFadeExtent(maxFadeExtent: Double): Unit
   /**
     * Measurement in screen pixels that represents the maximum limit of the visibility range for a given Region.
     * A value of -1, the default, indicates "active to infinite size."
     */
-  def setMaxLodPixels(maxLogPixels: Double): Unit = js.native
+  def setMaxLodPixels(maxLogPixels: Double): Unit
   /**
     * Distance over which the geometry fades, from fully opaque to fully transparent.
     * This ramp value, expressed in screen pixels, is applied at the minimum end of the LOD (visibility) limits.
     */
-  def setMinFadeExtent(minFadeExtent: Double): Unit = js.native
+  def setMinFadeExtent(minFadeExtent: Double): Unit
   /**
     * Specifies measurement in screen pixels that represents the minimum limit of the visibility range for a given Region.
     * Google Earth calculates the size of the region when projected onto screen space.
@@ -56,6 +54,38 @@ class KmlLod () extends KmlObject {
     * If this measurement falls within the limits defined by minLodPixels and maxLodPixels (and if the LatLonAltBox is in view), the region is active.
     * If this limit is not reached, the associated geometry is considered to be too far from the user's viewpoint to be drawn.
     */
-  def setMinLodPixels(minLodPixels: Double): Unit = js.native
+  def setMinLodPixels(minLodPixels: Double): Unit
+}
+
+object KmlLod {
+  @scala.inline
+  def apply(
+    click: KmlMouseEvent => Unit,
+    dblclick: KmlMouseEvent => Unit,
+    equals: KmlObject => Boolean,
+    getId: () => String,
+    getMaxFadeExtent: () => Double,
+    getMaxLodPixels: () => Double,
+    getMinFadeExtent: () => Double,
+    getMinLodPixels: () => Double,
+    getOwnerDocument: () => KmlDocument,
+    getParentNode: () => KmlObject,
+    getType: () => String,
+    getUrl: () => String,
+    mousedown: KmlMouseEvent => Unit,
+    mousemove: KmlMouseEvent => Unit,
+    mouseout: KmlMouseEvent => Unit,
+    mouseover: KmlMouseEvent => Unit,
+    mouseup: KmlMouseEvent => Unit,
+    release: () => Unit,
+    set: (Double, Double, Double, Double) => Unit,
+    setMaxFadeExtent: Double => Unit,
+    setMaxLodPixels: Double => Unit,
+    setMinFadeExtent: Double => Unit,
+    setMinLodPixels: Double => Unit
+  ): KmlLod = {
+    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), dblclick = js.Any.fromFunction1(dblclick), equals = js.Any.fromFunction1(equals), getId = js.Any.fromFunction0(getId), getMaxFadeExtent = js.Any.fromFunction0(getMaxFadeExtent), getMaxLodPixels = js.Any.fromFunction0(getMaxLodPixels), getMinFadeExtent = js.Any.fromFunction0(getMinFadeExtent), getMinLodPixels = js.Any.fromFunction0(getMinLodPixels), getOwnerDocument = js.Any.fromFunction0(getOwnerDocument), getParentNode = js.Any.fromFunction0(getParentNode), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), mouseout = js.Any.fromFunction1(mouseout), mouseover = js.Any.fromFunction1(mouseover), mouseup = js.Any.fromFunction1(mouseup), release = js.Any.fromFunction0(release), set = js.Any.fromFunction4(set), setMaxFadeExtent = js.Any.fromFunction1(setMaxFadeExtent), setMaxLodPixels = js.Any.fromFunction1(setMaxLodPixels), setMinFadeExtent = js.Any.fromFunction1(setMinFadeExtent), setMinLodPixels = js.Any.fromFunction1(setMinLodPixels))
+    __obj.asInstanceOf[KmlLod]
+  }
 }
 

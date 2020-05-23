@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait FormattingOptions
   extends /**
-		 * Signature for further properties.
-		 */
+  * Signature for further properties.
+  */
 /* key */ StringDictionary[Boolean | Double | String] {
   /**
-  		 * Prefer spaces over tabs.
-  		 */
+    * Prefer spaces over tabs.
+    */
   var insertSpaces: Boolean
   /**
-  		 * Size of a tab in spaces.
-  		 */
+    * Size of a tab in spaces.
+    */
   var tabSize: Double
 }
 
@@ -26,8 +26,8 @@ object FormattingOptions {
     insertSpaces: Boolean,
     tabSize: Double,
     StringDictionary: /**
-  		 * Signature for further properties.
-  		 */
+    * Signature for further properties.
+    */
   /* key */ StringDictionary[Boolean | Double | String] = null
   ): FormattingOptions = {
     val __obj = js.Dynamic.literal(insertSpaces = insertSpaces.asInstanceOf[js.Any], tabSize = tabSize.asInstanceOf[js.Any])

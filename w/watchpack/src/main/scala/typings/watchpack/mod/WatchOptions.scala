@@ -12,12 +12,12 @@ trait WatchOptions extends WatcherOptions {
 object WatchOptions {
   @scala.inline
   def apply(
-    aggregateTimeout: Int | Double = null,
+    aggregateTimeout: js.UndefOr[Double] = js.undefined,
     ignored: js.Array[String] | String | RegExp | (js.Function1[/* path */ String, Boolean]) = null,
     poll: Boolean | Double = null
   ): WatchOptions = {
     val __obj = js.Dynamic.literal()
-    if (aggregateTimeout != null) __obj.updateDynamic("aggregateTimeout")(aggregateTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(aggregateTimeout)) __obj.updateDynamic("aggregateTimeout")(aggregateTimeout.get.asInstanceOf[js.Any])
     if (ignored != null) __obj.updateDynamic("ignored")(ignored.asInstanceOf[js.Any])
     if (poll != null) __obj.updateDynamic("poll")(poll.asInstanceOf[js.Any])
     __obj.asInstanceOf[WatchOptions]

@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Document
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,17 +25,6 @@ object TextAlignment extends js.Object {
   
   @js.native
   sealed trait SUPERSCRIPT extends TextAlignment
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TextAlignment with Double] = js.native
-  /* 0 */ @js.native
-  object NORMAL extends TopLevel[NORMAL with Double]
-  
-  /* 2 */ @js.native
-  object SUBSCRIPT extends TopLevel[SUBSCRIPT with Double]
-  
-  /* 1 */ @js.native
-  object SUPERSCRIPT extends TopLevel[SUPERSCRIPT with Double]
   
 }
 

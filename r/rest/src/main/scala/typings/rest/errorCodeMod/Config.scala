@@ -10,9 +10,9 @@ trait Config extends js.Object {
 
 object Config {
   @scala.inline
-  def apply(code: Int | Double = null): Config = {
+  def apply(code: js.UndefOr[Double] = js.undefined): Config = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (!js.isUndefined(code)) __obj.updateDynamic("code")(code.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

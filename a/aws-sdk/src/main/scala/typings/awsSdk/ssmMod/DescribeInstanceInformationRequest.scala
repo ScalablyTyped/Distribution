@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeInstanceInformationRequest extends js.Object {
   /**
-    * One or more filters. Use a filter to return a more specific list of instances. You can filter on Amazon EC2 tag. Specify tags by using a key-value mapping.
+    * One or more filters. Use a filter to return a more specific list of instances. You can filter based on tags applied to EC2 instances. Use this Filters data type instead of InstanceInformationFilterList, which is deprecated.
     */
   var Filters: js.UndefOr[InstanceInformationStringFilterList] = js.native
   /**
-    * This is a legacy method. We recommend that you don't use this method. Instead, use the InstanceInformationFilter action. The InstanceInformationFilter action enables you to return instance information by using tags that are specified as a key-value mapping.  If you do use this method, then you can't use the InstanceInformationFilter action. Using this method and the InstanceInformationFilter action causes an exception error. 
+    * This is a legacy method. We recommend that you don't use this method. Instead, use the Filters data type. Filters enables you to return instance information by filtering based on tags applied to managed instances.  Attempting to use InstanceInformationFilterList and Filters leads to an exception error.  
     */
   var InstanceInformationFilterList: js.UndefOr[typings.awsSdk.ssmMod.InstanceInformationFilterList] = js.native
   /**
@@ -29,13 +29,13 @@ object DescribeInstanceInformationRequest {
   def apply(
     Filters: InstanceInformationStringFilterList = null,
     InstanceInformationFilterList: InstanceInformationFilterList = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResultsEC2Compatible] = js.undefined,
     NextToken: NextToken = null
   ): DescribeInstanceInformationRequest = {
     val __obj = js.Dynamic.literal()
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
     if (InstanceInformationFilterList != null) __obj.updateDynamic("InstanceInformationFilterList")(InstanceInformationFilterList.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeInstanceInformationRequest]
   }

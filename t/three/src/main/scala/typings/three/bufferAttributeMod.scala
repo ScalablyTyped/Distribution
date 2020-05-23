@@ -4,6 +4,12 @@ import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
 import typings.std.ArrayLike
 import typings.std.Iterable
+import typings.three.anon.Array
+import typings.three.anon.B
+import typings.three.anon.Count
+import typings.three.anon.W
+import typings.three.anon.X
+import typings.three.anon.Y
 import typings.three.constantsMod.Usage
 import typings.three.matrix3Mod.Matrix3
 import typings.three.matrix4Mod.Matrix4
@@ -26,7 +32,7 @@ object bufferAttributeMod extends js.Object {
      // array parameter should be TypedArray.
     var name: String = js.native
     var normalized: Boolean = js.native
-    var updateRange: AnonCount = js.native
+    var updateRange: Count = js.native
     var usage: Usage = js.native
     var version: Double = js.native
     def applyMatrix3(m: Matrix3): this.type = js.native
@@ -35,10 +41,10 @@ object bufferAttributeMod extends js.Object {
     def copy(source: BufferAttribute): this.type = js.native
     def copyArray(array: ArrayLike[Double]): this.type = js.native
     def copyAt(index1: Double, attribute: BufferAttribute, index2: Double): this.type = js.native
-    def copyColorsArray(colors: js.Array[AnonB]): this.type = js.native
-    def copyVector2sArray(vectors: js.Array[AnonX]): this.type = js.native
-    def copyVector3sArray(vectors: js.Array[AnonY]): this.type = js.native
-    def copyVector4sArray(vectors: js.Array[AnonW]): this.type = js.native
+    def copyColorsArray(colors: js.Array[B]): this.type = js.native
+    def copyVector2sArray(vectors: js.Array[X]): this.type = js.native
+    def copyVector3sArray(vectors: js.Array[Y]): this.type = js.native
+    def copyVector4sArray(vectors: js.Array[W]): this.type = js.native
     def getW(index: Double): Double = js.native
     def getX(index: Double): Double = js.native
     def getY(index: Double): Double = js.native
@@ -58,7 +64,7 @@ object bufferAttributeMod extends js.Object {
     def setXYZW(index: Double, x: Double, y: Double, z: Double, w: Double): this.type = js.native
     def setY(index: Double, y: Double): this.type = js.native
     def setZ(index: Double, z: Double): this.type = js.native
-    def toJSON(): AnonArray = js.native
+    def toJSON(): Array = js.native
     def transformDirection(m: Matrix4): this.type = js.native
   }
   

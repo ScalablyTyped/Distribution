@@ -1,7 +1,7 @@
 package typings.baseui.paginationMod
 
-import typings.baseui.AnonEventAny
-import typings.baseui.AnonNextPage
+import typings.baseui.anon.EventAny
+import typings.baseui.anon.NextPage
 import typings.baseui.baseuiStrings.compact
 import typings.baseui.baseuiStrings.default_
 import typings.baseui.baseuiStrings.large_
@@ -24,9 +24,9 @@ object PaginationProps {
     currentPage: Double,
     numPages: Double,
     labels: Labels = null,
-    onNextClick: /* args */ AnonEventAny => _ = null,
-    onPageChange: /* args */ AnonNextPage => _ = null,
-    onPrevClick: /* args */ AnonEventAny => _ = null,
+    onNextClick: /* args */ EventAny => _ = null,
+    onPageChange: /* args */ NextPage => _ = null,
+    onPrevClick: /* args */ EventAny => _ = null,
     overrides: PaginationOverrides = null,
     size: mini | default_ | compact | large_ = null
   ): PaginationProps = {

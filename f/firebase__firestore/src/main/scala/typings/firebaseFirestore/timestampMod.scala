@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/api/timestamp", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/api/timestamp", JSImport.Namespace)
 @js.native
 object timestampMod extends js.Object {
   @js.native

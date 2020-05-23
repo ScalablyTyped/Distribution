@@ -32,15 +32,15 @@ object ModifyInstanceMetadataOptionsRequest {
   @scala.inline
   def apply(
     InstanceId: InstanceId,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     HttpEndpoint: InstanceMetadataEndpointState = null,
-    HttpPutResponseHopLimit: Int | scala.Double = null,
+    HttpPutResponseHopLimit: js.UndefOr[Integer] = js.undefined,
     HttpTokens: HttpTokensState = null
   ): ModifyInstanceMetadataOptionsRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (HttpEndpoint != null) __obj.updateDynamic("HttpEndpoint")(HttpEndpoint.asInstanceOf[js.Any])
-    if (HttpPutResponseHopLimit != null) __obj.updateDynamic("HttpPutResponseHopLimit")(HttpPutResponseHopLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(HttpPutResponseHopLimit)) __obj.updateDynamic("HttpPutResponseHopLimit")(HttpPutResponseHopLimit.get.asInstanceOf[js.Any])
     if (HttpTokens != null) __obj.updateDynamic("HttpTokens")(HttpTokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyInstanceMetadataOptionsRequest]
   }

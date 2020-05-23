@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.hoverCardBaseMod
 
-import typings.officeUiFabricReact.AnonCardDismissDelay
+import typings.officeUiFabricReact.anon.CardDismissDelay
 import typings.officeUiFabricReact.hoverCardTypesMod.IHoverCard
 import typings.officeUiFabricReact.hoverCardTypesMod.IHoverCardProps
 import typings.react.mod.Component
@@ -50,6 +50,6 @@ class HoverCardBase protected ()
 @JSImport("office-ui-fabric-react/lib/components/HoverCard/HoverCard.base", "HoverCardBase")
 @js.native
 object HoverCardBase extends js.Object {
-  var defaultProps: AnonCardDismissDelay = js.native
+  var defaultProps: CardDismissDelay = js.native
 }
 

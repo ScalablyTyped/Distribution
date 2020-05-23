@@ -18,10 +18,10 @@ trait NodeOverrides extends js.Object {
 
 object NodeOverrides {
   @scala.inline
-  def apply(nodePropertyOverrides: NodePropertyOverrides = null, numNodes: Int | Double = null): NodeOverrides = {
+  def apply(nodePropertyOverrides: NodePropertyOverrides = null, numNodes: js.UndefOr[Integer] = js.undefined): NodeOverrides = {
     val __obj = js.Dynamic.literal()
     if (nodePropertyOverrides != null) __obj.updateDynamic("nodePropertyOverrides")(nodePropertyOverrides.asInstanceOf[js.Any])
-    if (numNodes != null) __obj.updateDynamic("numNodes")(numNodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(numNodes)) __obj.updateDynamic("numNodes")(numNodes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeOverrides]
   }
 }

@@ -27,7 +27,7 @@ object ModeSwitchConfig {
   ): ModeSwitchConfig = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), items = items.asInstanceOf[js.Any])
     if (headline != null) __obj.updateDynamic("headline")(headline.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventclose)) __obj.updateDynamic("preventclose")(preventclose.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventclose)) __obj.updateDynamic("preventclose")(preventclose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModeSwitchConfig]
   }
 }

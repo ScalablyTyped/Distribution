@@ -23,14 +23,14 @@ trait JobDetails extends js.Object {
 object JobDetails {
   @scala.inline
   def apply(
-    DocumentsWithErrorsCount: Int | Double = null,
-    InputDocumentsCount: Int | Double = null,
-    TranslatedDocumentsCount: Int | Double = null
+    DocumentsWithErrorsCount: js.UndefOr[Integer] = js.undefined,
+    InputDocumentsCount: js.UndefOr[Integer] = js.undefined,
+    TranslatedDocumentsCount: js.UndefOr[Integer] = js.undefined
   ): JobDetails = {
     val __obj = js.Dynamic.literal()
-    if (DocumentsWithErrorsCount != null) __obj.updateDynamic("DocumentsWithErrorsCount")(DocumentsWithErrorsCount.asInstanceOf[js.Any])
-    if (InputDocumentsCount != null) __obj.updateDynamic("InputDocumentsCount")(InputDocumentsCount.asInstanceOf[js.Any])
-    if (TranslatedDocumentsCount != null) __obj.updateDynamic("TranslatedDocumentsCount")(TranslatedDocumentsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(DocumentsWithErrorsCount)) __obj.updateDynamic("DocumentsWithErrorsCount")(DocumentsWithErrorsCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(InputDocumentsCount)) __obj.updateDynamic("InputDocumentsCount")(InputDocumentsCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TranslatedDocumentsCount)) __obj.updateDynamic("TranslatedDocumentsCount")(TranslatedDocumentsCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobDetails]
   }
 }

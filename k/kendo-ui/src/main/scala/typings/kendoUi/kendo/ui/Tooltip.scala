@@ -1,16 +1,12 @@
 package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.JQuery
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.Tooltip")
 @js.native
-class Tooltip protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: TooltipOptions) = this()
+trait Tooltip extends Widget {
   @JSName("options")
   var options_Tooltip: TooltipOptions = js.native
   var popup: Popup = js.native
@@ -19,13 +15,5 @@ class Tooltip protected () extends Widget {
   def refresh(): Unit = js.native
   def show(element: JQuery): Unit = js.native
   def target(): JQuery = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.Tooltip")
-@js.native
-object Tooltip extends js.Object {
-  var fn: Tooltip = js.native
-  def extend(proto: js.Object): Tooltip = js.native
 }
 

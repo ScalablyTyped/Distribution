@@ -61,7 +61,7 @@ object WriteLogEntriesRequest {
     if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (logName != null) __obj.updateDynamic("logName")(logName.asInstanceOf[js.Any])
-    if (!js.isUndefined(partialSuccess)) __obj.updateDynamic("partialSuccess")(partialSuccess.asInstanceOf[js.Any])
+    if (!js.isUndefined(partialSuccess)) __obj.updateDynamic("partialSuccess")(partialSuccess.get.asInstanceOf[js.Any])
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteLogEntriesRequest]
   }

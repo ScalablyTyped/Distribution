@@ -15,8 +15,8 @@ trait ICycle extends ISplit {
   /** [Config Option] (String) */
   var forceIcon: js.UndefOr[String] = js.undefined
   /** [Method] Gets the currently active menu item
-  		* @returns Ext.menu.CheckItem The active item
-  		*/
+    * @returns Ext.menu.CheckItem The active item
+    */
   var getActiveItem: js.UndefOr[js.Function0[ICheckItem]] = js.undefined
   /** [Config Option] (Object[]) */
   var items: js.UndefOr[Array] = js.undefined
@@ -26,9 +26,9 @@ trait ICycle extends ISplit {
   /** [Config Option] (String) */
   var prependText: js.UndefOr[String] = js.undefined
   /** [Method] Sets the button s active menu item
-  		* @param item Ext.menu.CheckItem The item to activate
-  		* @param suppressEvent Boolean True to prevent the button's change event from firing.
-  		*/
+    * @param item Ext.menu.CheckItem The item to activate
+    * @param suppressEvent Boolean True to prevent the button's change event from firing.
+    */
   var setActiveItem: js.UndefOr[
     js.Function2[/* item */ js.UndefOr[ICheckItem], /* suppressEvent */ js.UndefOr[Boolean], Unit]
   ] = js.undefined
@@ -63,7 +63,7 @@ object ICycle {
     if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
     if (prependText != null) __obj.updateDynamic("prependText")(prependText.asInstanceOf[js.Any])
     if (setActiveItem != null) __obj.updateDynamic("setActiveItem")(js.Any.fromFunction2(setActiveItem))
-    if (!js.isUndefined(showText)) __obj.updateDynamic("showText")(showText.asInstanceOf[js.Any])
+    if (!js.isUndefined(showText)) __obj.updateDynamic("showText")(showText.get.asInstanceOf[js.Any])
     if (toggleSelected != null) __obj.updateDynamic("toggleSelected")(js.Any.fromFunction0(toggleSelected))
     __obj.asInstanceOf[ICycle]
   }

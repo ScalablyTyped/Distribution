@@ -2,7 +2,6 @@ package typings.rxjs
 
 import org.scalablytyped.runtime.Instantiable2
 import typings.rxjs.actionMod.Action
-import typings.rxjs.typesMod.SchedulerAction
 import typings.rxjs.typesMod.SchedulerLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +15,7 @@ object schedulerMod extends js.Object {
     def this(SchedulerAction: Instantiable2[
             /* scheduler */ Scheduler, 
             /* work */ js.ThisFunction1[
-              /* this */ SchedulerAction[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+              /* this */ typings.rxjs.typesMod.SchedulerAction[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
               /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
               Unit
             ], 
@@ -26,7 +25,7 @@ object schedulerMod extends js.Object {
       SchedulerAction: Instantiable2[
             /* scheduler */ Scheduler, 
             /* work */ js.ThisFunction1[
-              /* this */ SchedulerAction[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+              /* this */ typings.rxjs.typesMod.SchedulerAction[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
               /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
               Unit
             ], 

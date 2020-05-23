@@ -1,6 +1,6 @@
 package typings.zapierPlatformCore.mod
 
-import typings.zapierPlatformCore.AnonInject
+import typings.zapierPlatformCore.anon.Inject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("zapier-platform-core", "tools")
 @js.native
 object tools extends js.Object {
-  var env: AnonInject = js.native
+  var env: Inject = js.native
 }
 

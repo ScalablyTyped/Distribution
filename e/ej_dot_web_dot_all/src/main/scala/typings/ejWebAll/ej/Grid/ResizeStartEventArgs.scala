@@ -29,17 +29,17 @@ object ResizeStartEventArgs {
   @scala.inline
   def apply(
     column: js.Any = null,
-    columnIndex: Int | Double = null,
+    columnIndex: js.UndefOr[Double] = js.undefined,
     model: js.Any = null,
-    oldWidth: Int | Double = null,
+    oldWidth: js.UndefOr[Double] = js.undefined,
     target: js.Any = null,
     `type`: String = null
   ): ResizeStartEventArgs = {
     val __obj = js.Dynamic.literal()
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnIndex)) __obj.updateDynamic("columnIndex")(columnIndex.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (oldWidth != null) __obj.updateDynamic("oldWidth")(oldWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(oldWidth)) __obj.updateDynamic("oldWidth")(oldWidth.get.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResizeStartEventArgs]

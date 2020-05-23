@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.Paragraph")
 @js.native
-class Paragraph protected () extends js.Object {
+trait Paragraph extends js.Object {
   var AddSpaceBetweenFarEastAndAlpha: Double = js.native
   var AddSpaceBetweenFarEastAndDigit: Double = js.native
   var Alignment: WdParagraphAlignment = js.native

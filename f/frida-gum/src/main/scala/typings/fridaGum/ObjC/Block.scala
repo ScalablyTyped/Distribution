@@ -1,8 +1,6 @@
 package typings.fridaGum.ObjC
 
 import typings.fridaGum.AnyFunction
-import typings.fridaGum.NativeFunctionOptions
-import typings.fridaGum.NativePointer
 import typings.fridaGum.ObjectWrapper
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,15 +12,8 @@ import scala.scalajs.js.annotation._
   * Also supports implementing a block from scratch by passing in an
   * implementation.
   */
-@JSGlobal("ObjC.Block")
 @js.native
-class Block protected () extends ObjectWrapper {
-  def this(target: NativePointer) = this()
-  def this(target: MethodSpec[BlockMethodImplementation]) = this()
-  def this(target: NativePointer, options: NativeFunctionOptions) = this()
-  def this(target: MethodSpec[BlockMethodImplementation], options: NativeFunctionOptions) = this()
-  /* CompleteClass */
-  override var handle: NativePointer = js.native
+trait Block extends ObjectWrapper {
   /**
     * Current implementation. You may replace it by assigning to this property.
     */

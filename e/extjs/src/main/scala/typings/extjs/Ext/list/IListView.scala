@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 
 trait IListView extends ITable {
   /** [Method] Reconfigures the grid with a new store columns
-  		* @param store Ext.data.Store The new store.
-  		* @param columns Object[] An array of column configs
-  		*/
+    * @param store Ext.data.Store The new store.
+    * @param columns Object[] An array of column configs
+    */
   var reconfigure: js.UndefOr[
     js.Function2[/* store */ js.UndefOr[IStore], /* columns */ js.UndefOr[Array], Unit]
   ] = js.undefined

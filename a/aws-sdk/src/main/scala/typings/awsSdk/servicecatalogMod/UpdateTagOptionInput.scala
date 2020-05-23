@@ -22,9 +22,9 @@ trait UpdateTagOptionInput extends js.Object {
 
 object UpdateTagOptionInput {
   @scala.inline
-  def apply(Id: TagOptionId, Active: js.UndefOr[Boolean] = js.undefined, Value: TagOptionValue = null): UpdateTagOptionInput = {
+  def apply(Id: TagOptionId, Active: js.UndefOr[TagOptionActive] = js.undefined, Value: TagOptionValue = null): UpdateTagOptionInput = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-    if (!js.isUndefined(Active)) __obj.updateDynamic("Active")(Active.asInstanceOf[js.Any])
+    if (!js.isUndefined(Active)) __obj.updateDynamic("Active")(Active.get.asInstanceOf[js.Any])
     if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTagOptionInput]
   }

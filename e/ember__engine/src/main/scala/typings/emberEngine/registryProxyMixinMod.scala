@@ -1,5 +1,6 @@
 package typings.emberEngine
 
+import typings.emberEngine.anon.Instantiate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +29,7 @@ object registryProxyMixinMod extends js.Object {
       * a full name including two parts: `type:name`.
       */
     def register(fullName: String, factory: js.Any): js.Any = js.native
-    def register(fullName: String, factory: js.Any, options: AnonInstantiate): js.Any = js.native
+    def register(fullName: String, factory: js.Any, options: Instantiate): js.Any = js.native
     /**
       * Register an option for a particular factory.
       */

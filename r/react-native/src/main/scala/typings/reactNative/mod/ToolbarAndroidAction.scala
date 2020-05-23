@@ -37,7 +37,7 @@ object ToolbarAndroidAction {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (!js.isUndefined(showWithText)) __obj.updateDynamic("showWithText")(showWithText.asInstanceOf[js.Any])
+    if (!js.isUndefined(showWithText)) __obj.updateDynamic("showWithText")(showWithText.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolbarAndroidAction]
   }
 }

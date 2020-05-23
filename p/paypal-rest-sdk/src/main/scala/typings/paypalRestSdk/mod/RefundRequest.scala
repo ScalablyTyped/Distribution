@@ -36,7 +36,7 @@ object RefundRequest {
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (payer_info != null) __obj.updateDynamic("payer_info")(payer_info.asInstanceOf[js.Any])
     if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
-    if (!js.isUndefined(refund_advice)) __obj.updateDynamic("refund_advice")(refund_advice.asInstanceOf[js.Any])
+    if (!js.isUndefined(refund_advice)) __obj.updateDynamic("refund_advice")(refund_advice.get.asInstanceOf[js.Any])
     if (refund_source != null) __obj.updateDynamic("refund_source")(refund_source.asInstanceOf[js.Any])
     if (supplementary_data != null) __obj.updateDynamic("supplementary_data")(supplementary_data.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefundRequest]

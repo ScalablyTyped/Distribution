@@ -22,10 +22,9 @@ trait DataTransform[T /* <: ReadonlyPartialJSONValue */] extends js.Object {
 
 object DataTransform {
   @scala.inline
-  def apply[T /* <: ReadonlyPartialJSONValue */](`type`: cancel | clear | merge | overwrite, contents: Content[T] = null): DataTransform[T] = {
-    val __obj = js.Dynamic.literal()
+  def apply[T](`type`: cancel | clear | merge | overwrite, contents: Content[T] = null): DataTransform[T] = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (contents != null) __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTransform[T]]
   }
 }

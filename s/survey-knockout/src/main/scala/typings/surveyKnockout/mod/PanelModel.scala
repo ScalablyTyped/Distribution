@@ -4,13 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.surveyKnockout.mod.ISurveyElement because Already inherited
 - typings.surveyKnockout.mod.IConditionRunner because Already inherited
 - typings.surveyKnockout.mod.IElement because var conflicts: containsErrors, isPage, isPanel, isReadOnly, isVisible, name, parent, visible. Inlined renderWidth, width, rightIndent, startWithNewLine */ @JSImport("survey-knockout", "PanelModel")
 @js.native
 class PanelModel () extends PanelModelBase {
   def this(name: String) = this()
+  val hasEditButton: Boolean = js.native
   /**
     * The left indent. Set this property to increase the panel left indent.
     */
@@ -92,6 +93,7 @@ class PanelModel () extends PanelModelBase {
     * The Panel width.
     */
   var width: String = js.native
+  def cancelPreview(): Unit = js.native
   def clearOnDeletingContainer(): Unit = js.native
   /**
     * Collapse the Panel

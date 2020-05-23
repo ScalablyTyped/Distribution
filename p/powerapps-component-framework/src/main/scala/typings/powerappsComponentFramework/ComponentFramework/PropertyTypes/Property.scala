@@ -7,8 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Interface for context.parameters.[property_key]
-		 */
+  * Interface for context.parameters.[property_key]
+  */
 trait Property extends js.Object {
   var attribute: js.UndefOr[Metadata] = js.undefined
   var error: Boolean

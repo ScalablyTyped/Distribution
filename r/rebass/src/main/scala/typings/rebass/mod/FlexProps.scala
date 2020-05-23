@@ -1,5 +1,6 @@
 package typings.rebass.mod
 
+import typings.csstype.mod.AlignContentProperty
 import typings.csstype.mod.AlignItemsProperty
 import typings.csstype.mod.AlignSelfProperty
 import typings.csstype.mod.DisplayProperty
@@ -9,6 +10,8 @@ import typings.csstype.mod.FlexWrapProperty
 import typings.csstype.mod.GlobalsNumber
 import typings.csstype.mod.HeightProperty
 import typings.csstype.mod.JustifyContentProperty
+import typings.csstype.mod.JustifyItemsProperty
+import typings.csstype.mod.JustifySelfProperty
 import typings.csstype.mod.MaxHeightProperty
 import typings.csstype.mod.MaxWidthProperty
 import typings.csstype.mod.MinHeightProperty
@@ -18,42 +21,26 @@ import typings.csstype.mod.OverflowXProperty
 import typings.csstype.mod.OverflowYProperty
 import typings.csstype.mod.VerticalAlignProperty
 import typings.csstype.mod.WidthProperty
-import typings.react.AnonHtml
-import typings.react.mod.AnimationEvent
+import typings.react.anon.Html
 import typings.react.mod.AnimationEventHandler
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
-import typings.react.mod.ClipboardEvent
 import typings.react.mod.ClipboardEventHandler
-import typings.react.mod.CompositionEvent
 import typings.react.mod.CompositionEventHandler
-import typings.react.mod.DragEvent
 import typings.react.mod.DragEventHandler
 import typings.react.mod.ElementType
-import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
-import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
 import typings.react.mod.Key
-import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
-import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
-import typings.react.mod.NativeMouseEvent
-import typings.react.mod.NativeUIEvent
-import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
-import typings.react.mod.SyntheticEvent
-import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
-import typings.react.mod.TransitionEvent
 import typings.react.mod.TransitionEventHandler
-import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
-import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.rebass.rebassStrings.`additions text`
 import typings.rebass.rebassStrings.`inline`
@@ -103,7 +90,6 @@ import typings.rebass.rebassStrings.tree
 import typings.rebass.rebassStrings.url
 import typings.rebass.rebassStrings.vertical
 import typings.rebass.rebassStrings.yes
-import typings.std.Event_
 import typings.std.HTMLDivElement
 import typings.styledComponents.styledComponentsMod.CSSObject
 import typings.styledComponents.styledComponentsMod.FlattenSimpleInterpolation
@@ -116,10 +102,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent rebass.rebass.BoxKnownProps */
+/* Inlined parent styled-system.styled-system.FlexGrowProps<styled-system.styled-system.RequiredTheme> */
+/* Inlined parent styled-system.styled-system.FlexShrinkProps<styled-system.styled-system.RequiredTheme> */
 /* Inlined parent styled-system.styled-system.FlexWrapProps<styled-system.styled-system.RequiredTheme> */
 /* Inlined parent styled-system.styled-system.FlexDirectionProps<styled-system.styled-system.RequiredTheme> */
 /* Inlined parent styled-system.styled-system.AlignItemsProps<styled-system.styled-system.RequiredTheme> */
+/* Inlined parent styled-system.styled-system.AlignContentProps<styled-system.styled-system.RequiredTheme> */
+/* Inlined parent styled-system.styled-system.AlignSelfProps<styled-system.styled-system.RequiredTheme> */
+/* Inlined parent styled-system.styled-system.JustifyItemsProps<styled-system.styled-system.RequiredTheme> */
 /* Inlined parent styled-system.styled-system.JustifyContentProps<styled-system.styled-system.RequiredTheme> */
+/* Inlined parent styled-system.styled-system.JustifySelfProps<styled-system.styled-system.RequiredTheme> */
 /* Inlined parent rebass.rebass.Omit<react.react.HTMLProps<std.HTMLDivElement>, keyof rebass.rebass.FlexKnownProps> */
 trait FlexProps extends js.Object {
   var about: js.UndefOr[String] = js.undefined
@@ -127,6 +119,13 @@ trait FlexProps extends js.Object {
   var acceptCharset: js.UndefOr[String] = js.undefined
   var accessKey: js.UndefOr[String] = js.undefined
   var action: js.UndefOr[String] = js.undefined
+  /**
+    * The CSS align-content property sets how the browser distributes space between and around content items
+    * along the cross-axis of a flexbox container, and the main-axis of a grid container.
+    *
+    * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)
+    */
+  var alignContent: js.UndefOr[ResponsiveValue[AlignContentProperty, RequiredTheme]] = js.undefined
   /**
     * The CSS align-items property sets the align-self value on all direct children as a group. The align-self
     * property sets the alignment of an item within its containing block.
@@ -245,7 +244,7 @@ trait FlexProps extends js.Object {
   var coords: js.UndefOr[String] = js.undefined
   var crossOrigin: js.UndefOr[String] = js.undefined
   var css: js.UndefOr[CSSObject | FlattenSimpleInterpolation | String] = js.undefined
-  var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.undefined
+  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
   var data: js.UndefOr[String] = js.undefined
   var datatype: js.UndefOr[String] = js.undefined
   var dateTime: js.UndefOr[String] = js.undefined
@@ -280,6 +279,20 @@ trait FlexProps extends js.Object {
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction)
     */
   var flexDirection: js.UndefOr[ResponsiveValue[FlexDirectionProperty, RequiredTheme]] = js.undefined
+  /**
+    * The flex-grow CSS property sets the flex grow factor of a flex item main size. It specifies how much of the
+    * remaining space in the flex container should be assigned to the item (the flex grow factor).
+    *
+    * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow)
+    */
+  var flexGrow: js.UndefOr[ResponsiveValue[GlobalsNumber, RequiredTheme]] = js.undefined
+  /**
+    * The flex-shrink CSS property sets the flex shrink factor of a flex item. If the size of all flex items is larger
+    * than the flex container, items shrink to fit according to flex-shrink.
+    *
+    * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink)
+    */
+  var flexShrink: js.UndefOr[ResponsiveValue[GlobalsNumber, RequiredTheme]] = js.undefined
   /**
     * The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines.
     * If wrapping is allowed, it sets the direction that lines are stacked.
@@ -335,6 +348,20 @@ trait FlexProps extends js.Object {
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)
     */
   var justifyContent: js.UndefOr[ResponsiveValue[JustifyContentProperty, RequiredTheme]] = js.undefined
+  /**
+    * The CSS justify-items property defines the default justify-self for all items of the box, giving them all
+    * a default way of justifying each box along the appropriate axis.
+    *
+    * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items)
+    */
+  var justifyItems: js.UndefOr[ResponsiveValue[JustifyItemsProperty, RequiredTheme]] = js.undefined
+  /**
+    * The CSS justify-self property set the way a box is justified inside its alignment container along
+    * the appropriate axis.
+    *
+    * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self)
+    */
+  var justifySelf: js.UndefOr[ResponsiveValue[JustifySelfProperty, RequiredTheme]] = js.undefined
   var key: js.UndefOr[Key] = js.undefined
   var keyParams: js.UndefOr[String] = js.undefined
   var keyType: js.UndefOr[String] = js.undefined
@@ -633,522 +660,5 @@ trait FlexProps extends js.Object {
   var width: js.UndefOr[ResponsiveValue[WidthProperty[TLengthStyledSystem], RequiredTheme]] = js.undefined
   var wmode: js.UndefOr[String] = js.undefined
   var wrap: js.UndefOr[String] = js.undefined
-}
-
-object FlexProps {
-  @scala.inline
-  def apply(
-    about: String = null,
-    accept: String = null,
-    acceptCharset: String = null,
-    accessKey: String = null,
-    action: String = null,
-    alignItems: ResponsiveValue[AlignItemsProperty, RequiredTheme] = null,
-    alignSelf: ResponsiveValue[AlignSelfProperty, RequiredTheme] = null,
-    allowFullScreen: js.UndefOr[Boolean] = js.undefined,
-    allowTransparency: js.UndefOr[Boolean] = js.undefined,
-    alt: String = null,
-    `aria-activedescendant`: String = null,
-    `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
-    `aria-autocomplete`: none | `inline` | list | both = null,
-    `aria-busy`: js.UndefOr[Boolean] = js.undefined,
-    `aria-checked`: Boolean | mixed = null,
-    `aria-colcount`: Int | Double = null,
-    `aria-colindex`: Int | Double = null,
-    `aria-colspan`: Int | Double = null,
-    `aria-controls`: String = null,
-    `aria-current`: Boolean | page | step | location | date | time = null,
-    `aria-describedby`: String = null,
-    `aria-details`: String = null,
-    `aria-disabled`: js.UndefOr[Boolean] = js.undefined,
-    `aria-dropeffect`: none | copy | execute | link | move | popup = null,
-    `aria-errormessage`: String = null,
-    `aria-expanded`: js.UndefOr[Boolean] = js.undefined,
-    `aria-flowto`: String = null,
-    `aria-grabbed`: js.UndefOr[Boolean] = js.undefined,
-    `aria-haspopup`: Boolean | menu | listbox | tree | grid | dialog = null,
-    `aria-hidden`: js.UndefOr[Boolean] = js.undefined,
-    `aria-invalid`: Boolean | grammar | spelling = null,
-    `aria-keyshortcuts`: String = null,
-    `aria-label`: String = null,
-    `aria-labelledby`: String = null,
-    `aria-level`: Int | Double = null,
-    `aria-live`: off | assertive | polite = null,
-    `aria-modal`: js.UndefOr[Boolean] = js.undefined,
-    `aria-multiline`: js.UndefOr[Boolean] = js.undefined,
-    `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined,
-    `aria-orientation`: horizontal | vertical = null,
-    `aria-owns`: String = null,
-    `aria-placeholder`: String = null,
-    `aria-posinset`: Int | Double = null,
-    `aria-pressed`: Boolean | mixed = null,
-    `aria-readonly`: js.UndefOr[Boolean] = js.undefined,
-    `aria-relevant`: additions | (`additions text`) | all | removals | text = null,
-    `aria-required`: js.UndefOr[Boolean] = js.undefined,
-    `aria-roledescription`: String = null,
-    `aria-rowcount`: Int | Double = null,
-    `aria-rowindex`: Int | Double = null,
-    `aria-rowspan`: Int | Double = null,
-    `aria-selected`: js.UndefOr[Boolean] = js.undefined,
-    `aria-setsize`: Int | Double = null,
-    `aria-sort`: none | ascending | descending | other = null,
-    `aria-valuemax`: Int | Double = null,
-    `aria-valuemin`: Int | Double = null,
-    `aria-valuenow`: Int | Double = null,
-    `aria-valuetext`: String = null,
-    as: ElementType[_] = null,
-    async: js.UndefOr[Boolean] = js.undefined,
-    autoCapitalize: String = null,
-    autoComplete: String = null,
-    autoCorrect: String = null,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    autoPlay: js.UndefOr[Boolean] = js.undefined,
-    autoSave: String = null,
-    backgroundColor: ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme] = null,
-    bg: ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme] = null,
-    capture: Boolean | String = null,
-    cellPadding: Double | String = null,
-    cellSpacing: Double | String = null,
-    challenge: String = null,
-    charSet: String = null,
-    checked: js.UndefOr[Boolean] = js.undefined,
-    children: ReactNode = null,
-    cite: String = null,
-    classID: String = null,
-    className: String = null,
-    colSpan: Int | Double = null,
-    color: ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme] = null,
-    cols: Int | Double = null,
-    content: String = null,
-    contentEditable: Booleanish | inherit = null,
-    contextMenu: String = null,
-    controls: js.UndefOr[Boolean] = js.undefined,
-    coords: String = null,
-    crossOrigin: String = null,
-    css: CSSObject | FlattenSimpleInterpolation | String = null,
-    dangerouslySetInnerHTML: AnonHtml = null,
-    data: String = null,
-    datatype: String = null,
-    dateTime: String = null,
-    default: js.UndefOr[Boolean] = js.undefined,
-    defaultChecked: js.UndefOr[Boolean] = js.undefined,
-    defaultValue: String | Double | js.Array[String] = null,
-    defer: js.UndefOr[Boolean] = js.undefined,
-    dir: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    display: ResponsiveValue[DisplayProperty, RequiredTheme] = null,
-    download: js.Any = null,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    encType: String = null,
-    flex: ResponsiveValue[FlexProperty[TLengthStyledSystem], RequiredTheme] = null,
-    flexDirection: ResponsiveValue[FlexDirectionProperty, RequiredTheme] = null,
-    flexWrap: ResponsiveValue[FlexWrapProperty, RequiredTheme] = null,
-    fontSize: ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, _], RequiredTheme] = null,
-    form: String = null,
-    formAction: String = null,
-    formEncType: String = null,
-    formMethod: String = null,
-    formNoValidate: js.UndefOr[Boolean] = js.undefined,
-    formTarget: String = null,
-    frameBorder: Double | String = null,
-    headers: String = null,
-    height: ResponsiveValue[HeightProperty[TLengthStyledSystem], RequiredTheme] = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    high: Int | Double = null,
-    href: String = null,
-    hrefLang: String = null,
-    htmlFor: String = null,
-    httpEquiv: String = null,
-    id: String = null,
-    inlist: js.Any = null,
-    inputMode: none | text | tel | url | email | numeric | decimal | search = null,
-    integrity: String = null,
-    is: String = null,
-    itemID: String = null,
-    itemProp: String = null,
-    itemRef: String = null,
-    itemScope: js.UndefOr[Boolean] = js.undefined,
-    itemType: String = null,
-    justifyContent: ResponsiveValue[JustifyContentProperty, RequiredTheme] = null,
-    key: Key = null,
-    keyParams: String = null,
-    keyType: String = null,
-    kind: String = null,
-    label: String = null,
-    lang: String = null,
-    list: String = null,
-    loop: js.UndefOr[Boolean] = js.undefined,
-    low: Int | Double = null,
-    m: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    manifest: String = null,
-    margin: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    marginBottom: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    marginHeight: Int | Double = null,
-    marginLeft: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    marginRight: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    marginTop: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    marginWidth: Int | Double = null,
-    marginX: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    marginY: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    max: Double | String = null,
-    maxHeight: ResponsiveValue[MaxHeightProperty[TLengthStyledSystem], RequiredTheme] = null,
-    maxLength: Int | Double = null,
-    maxWidth: ResponsiveValue[MaxWidthProperty[TLengthStyledSystem], RequiredTheme] = null,
-    mb: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    media: String = null,
-    mediaGroup: String = null,
-    method: String = null,
-    min: Double | String = null,
-    minHeight: ResponsiveValue[MinHeightProperty[TLengthStyledSystem], RequiredTheme] = null,
-    minLength: Int | Double = null,
-    minWidth: ResponsiveValue[MinWidthProperty[TLengthStyledSystem], RequiredTheme] = null,
-    ml: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    mr: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    mt: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    multiple: js.UndefOr[Boolean] = js.undefined,
-    muted: js.UndefOr[Boolean] = js.undefined,
-    mx: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    my: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    name: String = null,
-    noValidate: js.UndefOr[Boolean] = js.undefined,
-    nonce: String = null,
-    onAbort: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onAnimationEnd: AnimationEvent[HTMLDivElement] => Unit = null,
-    onAnimationIteration: AnimationEvent[HTMLDivElement] => Unit = null,
-    onAnimationStart: AnimationEvent[HTMLDivElement] => Unit = null,
-    onAuxClick: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
-    onBeforeInput: FormEvent[HTMLDivElement] => Unit = null,
-    onBlur: FocusEvent[HTMLDivElement] => Unit = null,
-    onCanPlay: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onCanPlayThrough: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onChange: FormEvent[HTMLDivElement] => Unit = null,
-    onClick: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
-    onCompositionEnd: CompositionEvent[HTMLDivElement] => Unit = null,
-    onCompositionStart: CompositionEvent[HTMLDivElement] => Unit = null,
-    onCompositionUpdate: CompositionEvent[HTMLDivElement] => Unit = null,
-    onContextMenu: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
-    onCopy: ClipboardEvent[HTMLDivElement] => Unit = null,
-    onCut: ClipboardEvent[HTMLDivElement] => Unit = null,
-    onDoubleClick: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
-    onDrag: DragEvent[HTMLDivElement] => Unit = null,
-    onDragEnd: DragEvent[HTMLDivElement] => Unit = null,
-    onDragEnter: DragEvent[HTMLDivElement] => Unit = null,
-    onDragExit: DragEvent[HTMLDivElement] => Unit = null,
-    onDragLeave: DragEvent[HTMLDivElement] => Unit = null,
-    onDragOver: DragEvent[HTMLDivElement] => Unit = null,
-    onDragStart: DragEvent[HTMLDivElement] => Unit = null,
-    onDrop: DragEvent[HTMLDivElement] => Unit = null,
-    onDurationChange: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onEmptied: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onEncrypted: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onEnded: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onError: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onFocus: FocusEvent[HTMLDivElement] => Unit = null,
-    onInput: FormEvent[HTMLDivElement] => Unit = null,
-    onInvalid: FormEvent[HTMLDivElement] => Unit = null,
-    onKeyDown: KeyboardEvent[HTMLDivElement] => Unit = null,
-    onKeyPress: KeyboardEvent[HTMLDivElement] => Unit = null,
-    onKeyUp: KeyboardEvent[HTMLDivElement] => Unit = null,
-    onLoad: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onLoadStart: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onLoadedData: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onLoadedMetadata: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onMouseDown: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
-    onMouseEnter: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
-    onMouseLeave: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
-    onMouseMove: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
-    onMouseOut: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
-    onMouseOver: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
-    onMouseUp: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
-    onPaste: ClipboardEvent[HTMLDivElement] => Unit = null,
-    onPause: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onPlay: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onPlaying: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onPointerCancel: PointerEvent[HTMLDivElement] => Unit = null,
-    onPointerDown: PointerEvent[HTMLDivElement] => Unit = null,
-    onPointerEnter: PointerEvent[HTMLDivElement] => Unit = null,
-    onPointerLeave: PointerEvent[HTMLDivElement] => Unit = null,
-    onPointerMove: PointerEvent[HTMLDivElement] => Unit = null,
-    onPointerOut: PointerEvent[HTMLDivElement] => Unit = null,
-    onPointerOver: PointerEvent[HTMLDivElement] => Unit = null,
-    onPointerUp: PointerEvent[HTMLDivElement] => Unit = null,
-    onProgress: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onRateChange: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onReset: FormEvent[HTMLDivElement] => Unit = null,
-    onScroll: UIEvent[HTMLDivElement, NativeUIEvent] => Unit = null,
-    onSeeked: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onSeeking: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onSelect: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onStalled: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onSubmit: FormEvent[HTMLDivElement] => Unit = null,
-    onSuspend: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onTimeUpdate: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onTouchCancel: TouchEvent[HTMLDivElement] => Unit = null,
-    onTouchEnd: TouchEvent[HTMLDivElement] => Unit = null,
-    onTouchMove: TouchEvent[HTMLDivElement] => Unit = null,
-    onTouchStart: TouchEvent[HTMLDivElement] => Unit = null,
-    onTransitionEnd: TransitionEvent[HTMLDivElement] => Unit = null,
-    onVolumeChange: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onWaiting: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onWheel: WheelEvent[HTMLDivElement] => Unit = null,
-    opacity: ResponsiveValue[GlobalsNumber, RequiredTheme] = null
-  ): FlexProps = {
-    val __obj = js.Dynamic.literal()
-    if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
-    if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
-    if (acceptCharset != null) __obj.updateDynamic("acceptCharset")(acceptCharset.asInstanceOf[js.Any])
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (alignItems != null) __obj.updateDynamic("alignItems")(alignItems.asInstanceOf[js.Any])
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFullScreen)) __obj.updateDynamic("allowFullScreen")(allowFullScreen.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowTransparency)) __obj.updateDynamic("allowTransparency")(allowTransparency.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
-    if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.asInstanceOf[js.Any])
-    if (`aria-checked` != null) __obj.updateDynamic("aria-checked")(`aria-checked`.asInstanceOf[js.Any])
-    if (`aria-colcount` != null) __obj.updateDynamic("aria-colcount")(`aria-colcount`.asInstanceOf[js.Any])
-    if (`aria-colindex` != null) __obj.updateDynamic("aria-colindex")(`aria-colindex`.asInstanceOf[js.Any])
-    if (`aria-colspan` != null) __obj.updateDynamic("aria-colspan")(`aria-colspan`.asInstanceOf[js.Any])
-    if (`aria-controls` != null) __obj.updateDynamic("aria-controls")(`aria-controls`.asInstanceOf[js.Any])
-    if (`aria-current` != null) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
-    if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
-    if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.asInstanceOf[js.Any])
-    if (`aria-dropeffect` != null) __obj.updateDynamic("aria-dropeffect")(`aria-dropeffect`.asInstanceOf[js.Any])
-    if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
-    if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.asInstanceOf[js.Any])
-    if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.asInstanceOf[js.Any])
-    if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
-    if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`.asInstanceOf[js.Any])
-    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
-    if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (`aria-level` != null) __obj.updateDynamic("aria-level")(`aria-level`.asInstanceOf[js.Any])
-    if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.asInstanceOf[js.Any])
-    if (`aria-orientation` != null) __obj.updateDynamic("aria-orientation")(`aria-orientation`.asInstanceOf[js.Any])
-    if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`.asInstanceOf[js.Any])
-    if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`.asInstanceOf[js.Any])
-    if (`aria-posinset` != null) __obj.updateDynamic("aria-posinset")(`aria-posinset`.asInstanceOf[js.Any])
-    if (`aria-pressed` != null) __obj.updateDynamic("aria-pressed")(`aria-pressed`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.asInstanceOf[js.Any])
-    if (`aria-relevant` != null) __obj.updateDynamic("aria-relevant")(`aria-relevant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.asInstanceOf[js.Any])
-    if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`.asInstanceOf[js.Any])
-    if (`aria-rowcount` != null) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.asInstanceOf[js.Any])
-    if (`aria-rowindex` != null) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.asInstanceOf[js.Any])
-    if (`aria-rowspan` != null) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.asInstanceOf[js.Any])
-    if (`aria-setsize` != null) __obj.updateDynamic("aria-setsize")(`aria-setsize`.asInstanceOf[js.Any])
-    if (`aria-sort` != null) __obj.updateDynamic("aria-sort")(`aria-sort`.asInstanceOf[js.Any])
-    if (`aria-valuemax` != null) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.asInstanceOf[js.Any])
-    if (`aria-valuemin` != null) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.asInstanceOf[js.Any])
-    if (`aria-valuenow` != null) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.asInstanceOf[js.Any])
-    if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
-    if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
-    if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
-    if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay.asInstanceOf[js.Any])
-    if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
-    if (capture != null) __obj.updateDynamic("capture")(capture.asInstanceOf[js.Any])
-    if (cellPadding != null) __obj.updateDynamic("cellPadding")(cellPadding.asInstanceOf[js.Any])
-    if (cellSpacing != null) __obj.updateDynamic("cellSpacing")(cellSpacing.asInstanceOf[js.Any])
-    if (challenge != null) __obj.updateDynamic("challenge")(challenge.asInstanceOf[js.Any])
-    if (charSet != null) __obj.updateDynamic("charSet")(charSet.asInstanceOf[js.Any])
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (cite != null) __obj.updateDynamic("cite")(cite.asInstanceOf[js.Any])
-    if (classID != null) __obj.updateDynamic("classID")(classID.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
-    if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
-    if (coords != null) __obj.updateDynamic("coords")(coords.asInstanceOf[js.Any])
-    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
-    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
-    if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
-    if (dateTime != null) __obj.updateDynamic("dateTime")(dateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (download != null) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (encType != null) __obj.updateDynamic("encType")(encType.asInstanceOf[js.Any])
-    if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
-    if (flexDirection != null) __obj.updateDynamic("flexDirection")(flexDirection.asInstanceOf[js.Any])
-    if (flexWrap != null) __obj.updateDynamic("flexWrap")(flexWrap.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
-    if (formAction != null) __obj.updateDynamic("formAction")(formAction.asInstanceOf[js.Any])
-    if (formEncType != null) __obj.updateDynamic("formEncType")(formEncType.asInstanceOf[js.Any])
-    if (formMethod != null) __obj.updateDynamic("formMethod")(formMethod.asInstanceOf[js.Any])
-    if (!js.isUndefined(formNoValidate)) __obj.updateDynamic("formNoValidate")(formNoValidate.asInstanceOf[js.Any])
-    if (formTarget != null) __obj.updateDynamic("formTarget")(formTarget.asInstanceOf[js.Any])
-    if (frameBorder != null) __obj.updateDynamic("frameBorder")(frameBorder.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (high != null) __obj.updateDynamic("high")(high.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (hrefLang != null) __obj.updateDynamic("hrefLang")(hrefLang.asInstanceOf[js.Any])
-    if (htmlFor != null) __obj.updateDynamic("htmlFor")(htmlFor.asInstanceOf[js.Any])
-    if (httpEquiv != null) __obj.updateDynamic("httpEquiv")(httpEquiv.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
-    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
-    if (integrity != null) __obj.updateDynamic("integrity")(integrity.asInstanceOf[js.Any])
-    if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
-    if (itemID != null) __obj.updateDynamic("itemID")(itemID.asInstanceOf[js.Any])
-    if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp.asInstanceOf[js.Any])
-    if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.asInstanceOf[js.Any])
-    if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
-    if (justifyContent != null) __obj.updateDynamic("justifyContent")(justifyContent.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (keyParams != null) __obj.updateDynamic("keyParams")(keyParams.asInstanceOf[js.Any])
-    if (keyType != null) __obj.updateDynamic("keyType")(keyType.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (low != null) __obj.updateDynamic("low")(low.asInstanceOf[js.Any])
-    if (m != null) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
-    if (manifest != null) __obj.updateDynamic("manifest")(manifest.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (marginBottom != null) __obj.updateDynamic("marginBottom")(marginBottom.asInstanceOf[js.Any])
-    if (marginHeight != null) __obj.updateDynamic("marginHeight")(marginHeight.asInstanceOf[js.Any])
-    if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
-    if (marginRight != null) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
-    if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
-    if (marginWidth != null) __obj.updateDynamic("marginWidth")(marginWidth.asInstanceOf[js.Any])
-    if (marginX != null) __obj.updateDynamic("marginX")(marginX.asInstanceOf[js.Any])
-    if (marginY != null) __obj.updateDynamic("marginY")(marginY.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (mb != null) __obj.updateDynamic("mb")(mb.asInstanceOf[js.Any])
-    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
-    if (mediaGroup != null) __obj.updateDynamic("mediaGroup")(mediaGroup.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (ml != null) __obj.updateDynamic("ml")(ml.asInstanceOf[js.Any])
-    if (mr != null) __obj.updateDynamic("mr")(mr.asInstanceOf[js.Any])
-    if (mt != null) __obj.updateDynamic("mt")(mt.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
-    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.asInstanceOf[js.Any])
-    if (mx != null) __obj.updateDynamic("mx")(mx.asInstanceOf[js.Any])
-    if (my != null) __obj.updateDynamic("my")(my.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(noValidate)) __obj.updateDynamic("noValidate")(noValidate.asInstanceOf[js.Any])
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
-    if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1(onAbort))
-    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
-    if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(js.Any.fromFunction1(onAnimationIteration))
-    if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(js.Any.fromFunction1(onAnimationStart))
-    if (onAuxClick != null) __obj.updateDynamic("onAuxClick")(js.Any.fromFunction1(onAuxClick))
-    if (onBeforeInput != null) __obj.updateDynamic("onBeforeInput")(js.Any.fromFunction1(onBeforeInput))
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (onCanPlay != null) __obj.updateDynamic("onCanPlay")(js.Any.fromFunction1(onCanPlay))
-    if (onCanPlayThrough != null) __obj.updateDynamic("onCanPlayThrough")(js.Any.fromFunction1(onCanPlayThrough))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (onCompositionEnd != null) __obj.updateDynamic("onCompositionEnd")(js.Any.fromFunction1(onCompositionEnd))
-    if (onCompositionStart != null) __obj.updateDynamic("onCompositionStart")(js.Any.fromFunction1(onCompositionStart))
-    if (onCompositionUpdate != null) __obj.updateDynamic("onCompositionUpdate")(js.Any.fromFunction1(onCompositionUpdate))
-    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(js.Any.fromFunction1(onContextMenu))
-    if (onCopy != null) __obj.updateDynamic("onCopy")(js.Any.fromFunction1(onCopy))
-    if (onCut != null) __obj.updateDynamic("onCut")(js.Any.fromFunction1(onCut))
-    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(js.Any.fromFunction1(onDoubleClick))
-    if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction1(onDrag))
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction1(onDragEnd))
-    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(js.Any.fromFunction1(onDragEnter))
-    if (onDragExit != null) __obj.updateDynamic("onDragExit")(js.Any.fromFunction1(onDragExit))
-    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(js.Any.fromFunction1(onDragLeave))
-    if (onDragOver != null) __obj.updateDynamic("onDragOver")(js.Any.fromFunction1(onDragOver))
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1(onDragStart))
-    if (onDrop != null) __obj.updateDynamic("onDrop")(js.Any.fromFunction1(onDrop))
-    if (onDurationChange != null) __obj.updateDynamic("onDurationChange")(js.Any.fromFunction1(onDurationChange))
-    if (onEmptied != null) __obj.updateDynamic("onEmptied")(js.Any.fromFunction1(onEmptied))
-    if (onEncrypted != null) __obj.updateDynamic("onEncrypted")(js.Any.fromFunction1(onEncrypted))
-    if (onEnded != null) __obj.updateDynamic("onEnded")(js.Any.fromFunction1(onEnded))
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))
-    if (onInvalid != null) __obj.updateDynamic("onInvalid")(js.Any.fromFunction1(onInvalid))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1(onKeyUp))
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
-    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(js.Any.fromFunction1(onLoadStart))
-    if (onLoadedData != null) __obj.updateDynamic("onLoadedData")(js.Any.fromFunction1(onLoadedData))
-    if (onLoadedMetadata != null) __obj.updateDynamic("onLoadedMetadata")(js.Any.fromFunction1(onLoadedMetadata))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
-    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(js.Any.fromFunction1(onMouseOut))
-    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(js.Any.fromFunction1(onMouseOver))
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1(onMouseUp))
-    if (onPaste != null) __obj.updateDynamic("onPaste")(js.Any.fromFunction1(onPaste))
-    if (onPause != null) __obj.updateDynamic("onPause")(js.Any.fromFunction1(onPause))
-    if (onPlay != null) __obj.updateDynamic("onPlay")(js.Any.fromFunction1(onPlay))
-    if (onPlaying != null) __obj.updateDynamic("onPlaying")(js.Any.fromFunction1(onPlaying))
-    if (onPointerCancel != null) __obj.updateDynamic("onPointerCancel")(js.Any.fromFunction1(onPointerCancel))
-    if (onPointerDown != null) __obj.updateDynamic("onPointerDown")(js.Any.fromFunction1(onPointerDown))
-    if (onPointerEnter != null) __obj.updateDynamic("onPointerEnter")(js.Any.fromFunction1(onPointerEnter))
-    if (onPointerLeave != null) __obj.updateDynamic("onPointerLeave")(js.Any.fromFunction1(onPointerLeave))
-    if (onPointerMove != null) __obj.updateDynamic("onPointerMove")(js.Any.fromFunction1(onPointerMove))
-    if (onPointerOut != null) __obj.updateDynamic("onPointerOut")(js.Any.fromFunction1(onPointerOut))
-    if (onPointerOver != null) __obj.updateDynamic("onPointerOver")(js.Any.fromFunction1(onPointerOver))
-    if (onPointerUp != null) __obj.updateDynamic("onPointerUp")(js.Any.fromFunction1(onPointerUp))
-    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
-    if (onRateChange != null) __obj.updateDynamic("onRateChange")(js.Any.fromFunction1(onRateChange))
-    if (onReset != null) __obj.updateDynamic("onReset")(js.Any.fromFunction1(onReset))
-    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
-    if (onSeeked != null) __obj.updateDynamic("onSeeked")(js.Any.fromFunction1(onSeeked))
-    if (onSeeking != null) __obj.updateDynamic("onSeeking")(js.Any.fromFunction1(onSeeking))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
-    if (onStalled != null) __obj.updateDynamic("onStalled")(js.Any.fromFunction1(onStalled))
-    if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1(onSubmit))
-    if (onSuspend != null) __obj.updateDynamic("onSuspend")(js.Any.fromFunction1(onSuspend))
-    if (onTimeUpdate != null) __obj.updateDynamic("onTimeUpdate")(js.Any.fromFunction1(onTimeUpdate))
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1(onTouchCancel))
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
-    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction1(onTransitionEnd))
-    if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(js.Any.fromFunction1(onVolumeChange))
-    if (onWaiting != null) __obj.updateDynamic("onWaiting")(js.Any.fromFunction1(onWaiting))
-    if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlexProps]
-  }
 }
 

@@ -1,18 +1,17 @@
 package typings.winrtUwp.Windows.Web.Http.Headers
 
 import typings.std.Array
-import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsHttpContentCodingWithQualityHeaderValue
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import typings.winrtUwp.anon.Index
+import typings.winrtUwp.anon.ItemsHttpContentCodingWithQualityHeaderValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the value of the Accept-Encoding HTTP header on an HTTP request. */
-@JSGlobal("Windows.Web.Http.Headers.HttpContentCodingWithQualityHeaderValueCollection")
 @js.native
-abstract class HttpContentCodingWithQualityHeaderValueCollection () extends Array[HttpContentCodingWithQualityHeaderValue] {
+trait HttpContentCodingWithQualityHeaderValueCollection extends Array[HttpContentCodingWithQualityHeaderValue] {
   /** Gets the number of HttpContentCodingWithQualityHeaderValue objects in the collection. */
   var size: Double = js.native
   /**
@@ -37,13 +36,13 @@ abstract class HttpContentCodingWithQualityHeaderValueCollection () extends Arra
     * Retrieves the HttpContentCodingWithQualityHeaderValue items that start at the specified index in the collection.
     * @param startIndex The zero-based index of the start of the HttpContentCodingWithQualityHeaderValue items in the HttpContentCodingWithQualityHeaderValueCollection .
     */
-  def getMany(startIndex: Double): AnonItemsHttpContentCodingWithQualityHeaderValue = js.native
+  def getMany(startIndex: Double): ItemsHttpContentCodingWithQualityHeaderValue = js.native
   /**
     * Returns an immutable view of the HttpContentCodingWithQualityHeaderValueCollection .
     * @return The view of the HttpContentCodingWithQualityHeaderValueCollection .
     */
   def getView(): IVectorView[HttpContentCodingWithQualityHeaderValue] = js.native
-  def indexOf(value: HttpContentCodingWithQualityHeaderValue, extra: js.Any*): AnonIndex = js.native
+  def indexOf(value: HttpContentCodingWithQualityHeaderValue, extra: js.Any*): Index = js.native
   /**
     * Determines the index of a specific item in the collection.
     * @param item The object to locate in the collection.

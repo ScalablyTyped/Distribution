@@ -22,10 +22,10 @@ trait CreateApiKeyRequest extends js.Object {
 
 object CreateApiKeyRequest {
   @scala.inline
-  def apply(apiId: String, description: String = null, expires: Int | Double = null): CreateApiKeyRequest = {
+  def apply(apiId: String, description: String = null, expires: js.UndefOr[Long] = js.undefined): CreateApiKeyRequest = {
     val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    if (!js.isUndefined(expires)) __obj.updateDynamic("expires")(expires.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateApiKeyRequest]
   }
 }

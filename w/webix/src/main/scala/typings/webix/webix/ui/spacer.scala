@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.spacer")
 @js.native
-class spacer () extends baseview {
+trait spacer extends baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
   @JSName("config")

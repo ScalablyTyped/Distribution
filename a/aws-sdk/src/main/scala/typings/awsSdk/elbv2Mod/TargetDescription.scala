@@ -22,10 +22,10 @@ trait TargetDescription extends js.Object {
 
 object TargetDescription {
   @scala.inline
-  def apply(Id: TargetId, AvailabilityZone: ZoneName = null, Port: Int | Double = null): TargetDescription = {
+  def apply(Id: TargetId, AvailabilityZone: ZoneName = null, Port: js.UndefOr[Port] = js.undefined): TargetDescription = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
+    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetDescription]
   }
 }

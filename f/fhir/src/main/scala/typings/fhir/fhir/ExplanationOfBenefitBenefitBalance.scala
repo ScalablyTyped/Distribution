@@ -87,7 +87,7 @@ object ExplanationOfBenefitBenefitBalance {
     if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
     if (_name != null) __obj.updateDynamic("_name")(_name.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(excluded)) __obj.updateDynamic("excluded")(excluded.asInstanceOf[js.Any])
+    if (!js.isUndefined(excluded)) __obj.updateDynamic("excluded")(excluded.get.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (financial != null) __obj.updateDynamic("financial")(financial.asInstanceOf[js.Any])

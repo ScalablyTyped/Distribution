@@ -1,6 +1,6 @@
 package typings.antdMobile.checkboxItemMod
 
-import typings.antdMobile.AnonCheckboxProps
+import typings.antdMobile.anon.CheckboxProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends CheckboxItem
 @JSImport("antd-mobile/lib/checkbox/CheckboxItem", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonCheckboxProps = js.native
+  var defaultProps: CheckboxProps = js.native
 }
 

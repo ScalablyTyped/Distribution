@@ -1,9 +1,9 @@
 package typings.rax.mod
 
-import typings.rax.AnonHtml
+import typings.rax.anon.Html
 import typings.rax.raxStrings.off
 import typings.rax.raxStrings.on
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -72,12 +72,12 @@ object HTMLAttributes {
     autoCapitalize: String = null,
     autoCorrect: String = null,
     autoSave: String = null,
-    children: RaxNode = null,
+    children: js.UndefOr[Null | RaxNode] = js.undefined,
     className: String = null,
     color: String = null,
     contentEditable: js.UndefOr[Boolean] = js.undefined,
     contextMenu: String = null,
-    dangerouslySetInnerHTML: AnonHtml = null,
+    dangerouslySetInnerHTML: Html = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
     defaultValue: String | js.Array[String] = null,
@@ -94,8 +94,8 @@ object HTMLAttributes {
     itemScope: js.UndefOr[Boolean] = js.undefined,
     itemType: String = null,
     lang: String = null,
-    onAbort: SyntheticEvent[T, Event_] => Unit = null,
-    onAbortCapture: SyntheticEvent[T, Event_] => Unit = null,
+    onAbort: SyntheticEvent[T, Event] => Unit = null,
+    onAbortCapture: SyntheticEvent[T, Event] => Unit = null,
     onAnimationEnd: AnimationEvent[T] => Unit = null,
     onAnimationEndCapture: AnimationEvent[T] => Unit = null,
     onAnimationIteration: AnimationEvent[T] => Unit = null,
@@ -109,10 +109,10 @@ object HTMLAttributes {
     onBeforeInputCapture: FormEvent[T] => Unit = null,
     onBlur: FocusEvent[T] => Unit = null,
     onBlurCapture: FocusEvent[T] => Unit = null,
-    onCanPlay: SyntheticEvent[T, Event_] => Unit = null,
-    onCanPlayCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onCanPlayThrough: SyntheticEvent[T, Event_] => Unit = null,
-    onCanPlayThroughCapture: SyntheticEvent[T, Event_] => Unit = null,
+    onCanPlay: SyntheticEvent[T, Event] => Unit = null,
+    onCanPlayCapture: SyntheticEvent[T, Event] => Unit = null,
+    onCanPlayThrough: SyntheticEvent[T, Event] => Unit = null,
+    onCanPlayThroughCapture: SyntheticEvent[T, Event] => Unit = null,
     onChange: FormEvent[T] => Unit = null,
     onChangeCapture: FormEvent[T] => Unit = null,
     onClick: MouseEvent[T, NativeMouseEvent] => Unit = null,
@@ -148,16 +148,16 @@ object HTMLAttributes {
     onDragStartCapture: DragEvent[T] => Unit = null,
     onDrop: DragEvent[T] => Unit = null,
     onDropCapture: DragEvent[T] => Unit = null,
-    onDurationChange: SyntheticEvent[T, Event_] => Unit = null,
-    onDurationChangeCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onEmptied: SyntheticEvent[T, Event_] => Unit = null,
-    onEmptiedCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onEncrypted: SyntheticEvent[T, Event_] => Unit = null,
-    onEncryptedCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onEnded: SyntheticEvent[T, Event_] => Unit = null,
-    onEndedCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onError: SyntheticEvent[T, Event_] => Unit = null,
-    onErrorCapture: SyntheticEvent[T, Event_] => Unit = null,
+    onDurationChange: SyntheticEvent[T, Event] => Unit = null,
+    onDurationChangeCapture: SyntheticEvent[T, Event] => Unit = null,
+    onEmptied: SyntheticEvent[T, Event] => Unit = null,
+    onEmptiedCapture: SyntheticEvent[T, Event] => Unit = null,
+    onEncrypted: SyntheticEvent[T, Event] => Unit = null,
+    onEncryptedCapture: SyntheticEvent[T, Event] => Unit = null,
+    onEnded: SyntheticEvent[T, Event] => Unit = null,
+    onEndedCapture: SyntheticEvent[T, Event] => Unit = null,
+    onError: SyntheticEvent[T, Event] => Unit = null,
+    onErrorCapture: SyntheticEvent[T, Event] => Unit = null,
     onFocus: FocusEvent[T] => Unit = null,
     onFocusCapture: FocusEvent[T] => Unit = null,
     onGotPointerCapture: PointerEvent[T] => Unit = null,
@@ -172,14 +172,14 @@ object HTMLAttributes {
     onKeyPressCapture: KeyboardEvent[T] => Unit = null,
     onKeyUp: KeyboardEvent[T] => Unit = null,
     onKeyUpCapture: KeyboardEvent[T] => Unit = null,
-    onLoad: SyntheticEvent[T, Event_] => Unit = null,
-    onLoadCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onLoadStart: SyntheticEvent[T, Event_] => Unit = null,
-    onLoadStartCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onLoadedData: SyntheticEvent[T, Event_] => Unit = null,
-    onLoadedDataCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onLoadedMetadata: SyntheticEvent[T, Event_] => Unit = null,
-    onLoadedMetadataCapture: SyntheticEvent[T, Event_] => Unit = null,
+    onLoad: SyntheticEvent[T, Event] => Unit = null,
+    onLoadCapture: SyntheticEvent[T, Event] => Unit = null,
+    onLoadStart: SyntheticEvent[T, Event] => Unit = null,
+    onLoadStartCapture: SyntheticEvent[T, Event] => Unit = null,
+    onLoadedData: SyntheticEvent[T, Event] => Unit = null,
+    onLoadedDataCapture: SyntheticEvent[T, Event] => Unit = null,
+    onLoadedMetadata: SyntheticEvent[T, Event] => Unit = null,
+    onLoadedMetadataCapture: SyntheticEvent[T, Event] => Unit = null,
     onLongpress: MouseEvent[T, NativeMouseEvent] => Unit = null,
     onLostPointerCapture: PointerEvent[T] => Unit = null,
     onLostPointerCaptureCapture: PointerEvent[T] => Unit = null,
@@ -197,12 +197,12 @@ object HTMLAttributes {
     onMouseUpCapture: MouseEvent[T, NativeMouseEvent] => Unit = null,
     onPaste: ClipboardEvent[T] => Unit = null,
     onPasteCapture: ClipboardEvent[T] => Unit = null,
-    onPause: SyntheticEvent[T, Event_] => Unit = null,
-    onPauseCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onPlay: SyntheticEvent[T, Event_] => Unit = null,
-    onPlayCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onPlaying: SyntheticEvent[T, Event_] => Unit = null,
-    onPlayingCapture: SyntheticEvent[T, Event_] => Unit = null,
+    onPause: SyntheticEvent[T, Event] => Unit = null,
+    onPauseCapture: SyntheticEvent[T, Event] => Unit = null,
+    onPlay: SyntheticEvent[T, Event] => Unit = null,
+    onPlayCapture: SyntheticEvent[T, Event] => Unit = null,
+    onPlaying: SyntheticEvent[T, Event] => Unit = null,
+    onPlayingCapture: SyntheticEvent[T, Event] => Unit = null,
     onPointerCancel: PointerEvent[T] => Unit = null,
     onPointerCancelCapture: PointerEvent[T] => Unit = null,
     onPointerDown: PointerEvent[T] => Unit = null,
@@ -219,28 +219,28 @@ object HTMLAttributes {
     onPointerOverCapture: PointerEvent[T] => Unit = null,
     onPointerUp: PointerEvent[T] => Unit = null,
     onPointerUpCapture: PointerEvent[T] => Unit = null,
-    onProgress: SyntheticEvent[T, Event_] => Unit = null,
-    onProgressCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onRateChange: SyntheticEvent[T, Event_] => Unit = null,
-    onRateChangeCapture: SyntheticEvent[T, Event_] => Unit = null,
+    onProgress: SyntheticEvent[T, Event] => Unit = null,
+    onProgressCapture: SyntheticEvent[T, Event] => Unit = null,
+    onRateChange: SyntheticEvent[T, Event] => Unit = null,
+    onRateChangeCapture: SyntheticEvent[T, Event] => Unit = null,
     onReset: FormEvent[T] => Unit = null,
     onResetCapture: FormEvent[T] => Unit = null,
     onScroll: UIEvent[T] => Unit = null,
     onScrollCapture: UIEvent[T] => Unit = null,
-    onSeeked: SyntheticEvent[T, Event_] => Unit = null,
-    onSeekedCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onSeeking: SyntheticEvent[T, Event_] => Unit = null,
-    onSeekingCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onSelect: SyntheticEvent[T, Event_] => Unit = null,
-    onSelectCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onStalled: SyntheticEvent[T, Event_] => Unit = null,
-    onStalledCapture: SyntheticEvent[T, Event_] => Unit = null,
+    onSeeked: SyntheticEvent[T, Event] => Unit = null,
+    onSeekedCapture: SyntheticEvent[T, Event] => Unit = null,
+    onSeeking: SyntheticEvent[T, Event] => Unit = null,
+    onSeekingCapture: SyntheticEvent[T, Event] => Unit = null,
+    onSelect: SyntheticEvent[T, Event] => Unit = null,
+    onSelectCapture: SyntheticEvent[T, Event] => Unit = null,
+    onStalled: SyntheticEvent[T, Event] => Unit = null,
+    onStalledCapture: SyntheticEvent[T, Event] => Unit = null,
     onSubmit: FormEvent[T] => Unit = null,
     onSubmitCapture: FormEvent[T] => Unit = null,
-    onSuspend: SyntheticEvent[T, Event_] => Unit = null,
-    onSuspendCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onTimeUpdate: SyntheticEvent[T, Event_] => Unit = null,
-    onTimeUpdateCapture: SyntheticEvent[T, Event_] => Unit = null,
+    onSuspend: SyntheticEvent[T, Event] => Unit = null,
+    onSuspendCapture: SyntheticEvent[T, Event] => Unit = null,
+    onTimeUpdate: SyntheticEvent[T, Event] => Unit = null,
+    onTimeUpdateCapture: SyntheticEvent[T, Event] => Unit = null,
     onTouchCancel: TouchEvent[T] => Unit = null,
     onTouchCancelCapture: TouchEvent[T] => Unit = null,
     onTouchEnd: TouchEvent[T] => Unit = null,
@@ -251,10 +251,10 @@ object HTMLAttributes {
     onTouchStartCapture: TouchEvent[T] => Unit = null,
     onTransitionEnd: TransitionEvent[T] => Unit = null,
     onTransitionEndCapture: TransitionEvent[T] => Unit = null,
-    onVolumeChange: SyntheticEvent[T, Event_] => Unit = null,
-    onVolumeChangeCapture: SyntheticEvent[T, Event_] => Unit = null,
-    onWaiting: SyntheticEvent[T, Event_] => Unit = null,
-    onWaitingCapture: SyntheticEvent[T, Event_] => Unit = null,
+    onVolumeChange: SyntheticEvent[T, Event] => Unit = null,
+    onVolumeChangeCapture: SyntheticEvent[T, Event] => Unit = null,
+    onWaiting: SyntheticEvent[T, Event] => Unit = null,
+    onWaitingCapture: SyntheticEvent[T, Event] => Unit = null,
     onWheel: WheelEvent[T] => Unit = null,
     onWheelCapture: WheelEvent[T] => Unit = null,
     placeholder: String = null,
@@ -262,7 +262,7 @@ object HTMLAttributes {
     property: String = null,
     radioGroup: String = null,
     resource: String = null,
-    results: Int | Double = null,
+    results: js.UndefOr[Double] = js.undefined,
     role: String = null,
     security: String = null,
     slot: String = null,
@@ -270,7 +270,7 @@ object HTMLAttributes {
     style: CSSProperties = null,
     suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined,
     suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
-    tabIndex: Int | Double = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
     title: String = null,
     typeof: String = null,
     unselectable: on | off = null,
@@ -283,18 +283,18 @@ object HTMLAttributes {
     if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
     if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
     if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(children)) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.get.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.get.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
     if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
@@ -302,7 +302,7 @@ object HTMLAttributes {
     if (itemID != null) __obj.updateDynamic("itemID")(itemID.asInstanceOf[js.Any])
     if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp.asInstanceOf[js.Any])
     if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.get.asInstanceOf[js.Any])
     if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1(onAbort))
@@ -473,15 +473,15 @@ object HTMLAttributes {
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     if (radioGroup != null) __obj.updateDynamic("radioGroup")(radioGroup.asInstanceOf[js.Any])
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
+    if (!js.isUndefined(results)) __obj.updateDynamic("results")(results.get.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
     if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressContentEditableWarning)) __obj.updateDynamic("suppressContentEditableWarning")(suppressContentEditableWarning.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressContentEditableWarning)) __obj.updateDynamic("suppressContentEditableWarning")(suppressContentEditableWarning.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])

@@ -23,27 +23,27 @@ object TransactionConfig {
   @scala.inline
   def apply(
     chain: String = null,
-    chainId: Int | Double = null,
+    chainId: js.UndefOr[Double] = js.undefined,
     common: Common = null,
     data: String = null,
     from: String | Double = null,
     gas: Double | String = null,
     gasPrice: Double | String | ^  = null,
     hardfork: String = null,
-    nonce: Int | Double = null,
+    nonce: js.UndefOr[Double] = js.undefined,
     to: String = null,
     value: Double | String | ^  = null
   ): TransactionConfig = {
     val __obj = js.Dynamic.literal()
     if (chain != null) __obj.updateDynamic("chain")(chain.asInstanceOf[js.Any])
-    if (chainId != null) __obj.updateDynamic("chainId")(chainId.asInstanceOf[js.Any])
+    if (!js.isUndefined(chainId)) __obj.updateDynamic("chainId")(chainId.get.asInstanceOf[js.Any])
     if (common != null) __obj.updateDynamic("common")(common.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (gas != null) __obj.updateDynamic("gas")(gas.asInstanceOf[js.Any])
     if (gasPrice != null) __obj.updateDynamic("gasPrice")(gasPrice.asInstanceOf[js.Any])
     if (hardfork != null) __obj.updateDynamic("hardfork")(hardfork.asInstanceOf[js.Any])
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
+    if (!js.isUndefined(nonce)) __obj.updateDynamic("nonce")(nonce.get.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionConfig]

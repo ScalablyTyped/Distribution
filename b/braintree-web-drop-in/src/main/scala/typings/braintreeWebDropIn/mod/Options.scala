@@ -50,10 +50,10 @@ object Options {
     if (paymentOptionPriority != null) __obj.updateDynamic("paymentOptionPriority")(paymentOptionPriority.asInstanceOf[js.Any])
     if (paypal != null) __obj.updateDynamic("paypal")(paypal.asInstanceOf[js.Any])
     if (paypalCredit != null) __obj.updateDynamic("paypalCredit")(paypalCredit.asInstanceOf[js.Any])
-    if (!js.isUndefined(preselectVaultedPaymentMethod)) __obj.updateDynamic("preselectVaultedPaymentMethod")(preselectVaultedPaymentMethod.asInstanceOf[js.Any])
+    if (!js.isUndefined(preselectVaultedPaymentMethod)) __obj.updateDynamic("preselectVaultedPaymentMethod")(preselectVaultedPaymentMethod.get.asInstanceOf[js.Any])
     if (threeDSecure != null) __obj.updateDynamic("threeDSecure")(threeDSecure.asInstanceOf[js.Any])
     if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
-    if (!js.isUndefined(vaultManager)) __obj.updateDynamic("vaultManager")(vaultManager.asInstanceOf[js.Any])
+    if (!js.isUndefined(vaultManager)) __obj.updateDynamic("vaultManager")(vaultManager.get.asInstanceOf[js.Any])
     if (venmo != null) __obj.updateDynamic("venmo")(venmo.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

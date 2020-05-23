@@ -1,11 +1,11 @@
 package typings.postmanCollection.mod
 
-import typings.postmanCollection.AnonPattern
+import typings.postmanCollection.anon.Pattern
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.postmanCollection.mod.PropertyBaseDefinition because Already inherited
 - typings.postmanCollection.mod.PropertyDefinition because Already inherited
 - typings.postmanCollection.mod.ProxyConfigDefinition because var conflicts: description, disabled, id, name. Inlined `match`, host, port, tunnel */ @JSImport("postman-collection", "ProxyConfig")
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 class ProxyConfig () extends Property[ProxyConfigDefinition] {
   def this(options: ProxyConfigDefinition) = this()
   var host: js.UndefOr[String] = js.native
-  var `match`: js.UndefOr[AnonPattern | String | UrlMatchPattern] = js.native
+  var `match`: js.UndefOr[Pattern | String | UrlMatchPattern] = js.native
   var port: js.UndefOr[Double] = js.native
   var tunnel: js.UndefOr[Boolean] = js.native
   def getProtocols(): js.Array[String] = js.native

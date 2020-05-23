@@ -11,7 +11,7 @@ trait GetMembersResponse extends js.Object {
     */
   var Members: typings.awsSdk.guarddutyMod.Members = js.native
   /**
-    * A list of objects containing the unprocessed account and a result string explaining why it was unprocessed.
+    * A list of objects that contain the unprocessed account and a result string that explains why it was unprocessed.
     */
   var UnprocessedAccounts: typings.awsSdk.guarddutyMod.UnprocessedAccounts = js.native
 }

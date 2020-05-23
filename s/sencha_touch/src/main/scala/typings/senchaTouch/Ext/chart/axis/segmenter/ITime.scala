@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 
 trait ITime extends ISegmenter {
   /** [Method] Add step units to the value
-  		* @param value Object
-  		* @param step Object
-  		* @param unit Object
-  		*/
+    * @param value Object
+    * @param step Object
+    * @param unit Object
+    */
   @JSName("add")
   var add_ITime: js.UndefOr[
     js.Function3[
@@ -23,11 +23,11 @@ trait ITime extends ISegmenter {
     ]
   ] = js.undefined
   /** [Method] Align value with step of units
-  		* @param date Object
-  		* @param step Object
-  		* @param unit Object
-  		* @returns * Aligned value.
-  		*/
+    * @param date Object
+    * @param step Object
+    * @param unit Object
+    * @returns * Aligned value.
+    */
   @JSName("align")
   var align_ITime: js.UndefOr[
     js.Function3[
@@ -38,12 +38,12 @@ trait ITime extends ISegmenter {
     ]
   ] = js.undefined
   /** [Method] Returns the value of step
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getStep: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Sets the value of step
-  		* @param step Object The new value.
-  		*/
+    * @param step Object The new value.
+    */
   var setStep: js.UndefOr[js.Function1[/* step */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Object) */
   var step: js.UndefOr[js.Any] = js.undefined
@@ -108,7 +108,7 @@ object ITime {
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setAxis != null) __obj.updateDynamic("setAxis")(js.Any.fromFunction1(setAxis))
     if (setStep != null) __obj.updateDynamic("setStep")(js.Any.fromFunction1(setStep))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])

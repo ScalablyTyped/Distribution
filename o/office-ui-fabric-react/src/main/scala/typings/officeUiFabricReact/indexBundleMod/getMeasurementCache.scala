@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.indexBundleMod
 
-import typings.officeUiFabricReact.AnonAddMeasurementToCache
+import typings.officeUiFabricReact.anon.AddMeasurementToCache
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/index.bundle", "getMeasurementCache")
 @js.native
 object getMeasurementCache extends js.Object {
-  def apply(): AnonAddMeasurementToCache = js.native
+  def apply(): AddMeasurementToCache = js.native
 }
 

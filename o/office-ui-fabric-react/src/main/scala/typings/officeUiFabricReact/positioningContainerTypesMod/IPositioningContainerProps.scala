@@ -6,8 +6,8 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.uifabricUtilities.baseComponentTypesMod.IBaseProps
 import typings.uifabricUtilities.createRefMod.IRefObject
-import typings.uifabricUtilities.ipointMod.IPoint
 import typings.uifabricUtilities.irectangleMod.IRectangle
+import typings.uifabricUtilities.pointMod.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -126,13 +126,13 @@ trait IPositioningContainerProps extends IBaseProps[IPositioningContainer] {
     * It can be either an HTMLElement a querySelector string of a valid HTMLElement
     * or a MouseEvent. If MouseEvent is given then the origin point of the event will be used.
     */
-  var target: js.UndefOr[HTMLElement | String | MouseEvent | IPoint | Null] = js.undefined
+  var target: js.UndefOr[HTMLElement | String | MouseEvent | Point | Null] = js.undefined
   /**
     * Point used to position the positioningContainer.
     * Deprecated, use `target` instead.
     * @deprecated Use `target` instead.
     */
-  var targetPoint: js.UndefOr[IPoint] = js.undefined
+  var targetPoint: js.UndefOr[Point] = js.undefined
   /**
     * If true use a point rather than rectangle to position the positioningContainer.
     * For example it can be used to position based on a click.
@@ -156,19 +156,19 @@ object IPositioningContainerProps {
     directionalHintFixed: js.UndefOr[Boolean] = js.undefined,
     directionalHintForRTL: DirectionalHint = null,
     doNotLayer: js.UndefOr[Boolean] = js.undefined,
-    finalHeight: Int | Double = null,
-    minPagePadding: Int | Double = null,
-    offsetFromTarget: Int | Double = null,
+    finalHeight: js.UndefOr[Double] = js.undefined,
+    minPagePadding: js.UndefOr[Double] = js.undefined,
+    offsetFromTarget: js.UndefOr[Double] = js.undefined,
     onDismiss: /* ev */ js.UndefOr[js.Any] => Unit = null,
     onLayerMounted: () => Unit = null,
     onPositioned: /* positions */ js.UndefOr[IPositionedData] => Unit = null,
-    positioningContainerMaxHeight: Int | Double = null,
-    positioningContainerWidth: Int | Double = null,
+    positioningContainerMaxHeight: js.UndefOr[Double] = js.undefined,
+    positioningContainerWidth: js.UndefOr[Double] = js.undefined,
     preventDismissOnScroll: js.UndefOr[Boolean] = js.undefined,
     role: String = null,
     setInitialFocus: js.UndefOr[Boolean] = js.undefined,
-    target: HTMLElement | String | MouseEvent | IPoint = null,
-    targetPoint: IPoint = null,
+    target: js.UndefOr[Null | HTMLElement | String | MouseEvent | Point] = js.undefined,
+    targetPoint: Point = null,
     useTargetPoint: js.UndefOr[Boolean] = js.undefined
   ): IPositioningContainerProps = {
     val __obj = js.Dynamic.literal()
@@ -179,25 +179,25 @@ object IPositioningContainerProps {
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(coverTarget)) __obj.updateDynamic("coverTarget")(coverTarget.asInstanceOf[js.Any])
+    if (!js.isUndefined(coverTarget)) __obj.updateDynamic("coverTarget")(coverTarget.get.asInstanceOf[js.Any])
     if (directionalHint != null) __obj.updateDynamic("directionalHint")(directionalHint.asInstanceOf[js.Any])
-    if (!js.isUndefined(directionalHintFixed)) __obj.updateDynamic("directionalHintFixed")(directionalHintFixed.asInstanceOf[js.Any])
+    if (!js.isUndefined(directionalHintFixed)) __obj.updateDynamic("directionalHintFixed")(directionalHintFixed.get.asInstanceOf[js.Any])
     if (directionalHintForRTL != null) __obj.updateDynamic("directionalHintForRTL")(directionalHintForRTL.asInstanceOf[js.Any])
-    if (!js.isUndefined(doNotLayer)) __obj.updateDynamic("doNotLayer")(doNotLayer.asInstanceOf[js.Any])
-    if (finalHeight != null) __obj.updateDynamic("finalHeight")(finalHeight.asInstanceOf[js.Any])
-    if (minPagePadding != null) __obj.updateDynamic("minPagePadding")(minPagePadding.asInstanceOf[js.Any])
-    if (offsetFromTarget != null) __obj.updateDynamic("offsetFromTarget")(offsetFromTarget.asInstanceOf[js.Any])
+    if (!js.isUndefined(doNotLayer)) __obj.updateDynamic("doNotLayer")(doNotLayer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(finalHeight)) __obj.updateDynamic("finalHeight")(finalHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minPagePadding)) __obj.updateDynamic("minPagePadding")(minPagePadding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetFromTarget)) __obj.updateDynamic("offsetFromTarget")(offsetFromTarget.get.asInstanceOf[js.Any])
     if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction1(onDismiss))
     if (onLayerMounted != null) __obj.updateDynamic("onLayerMounted")(js.Any.fromFunction0(onLayerMounted))
     if (onPositioned != null) __obj.updateDynamic("onPositioned")(js.Any.fromFunction1(onPositioned))
-    if (positioningContainerMaxHeight != null) __obj.updateDynamic("positioningContainerMaxHeight")(positioningContainerMaxHeight.asInstanceOf[js.Any])
-    if (positioningContainerWidth != null) __obj.updateDynamic("positioningContainerWidth")(positioningContainerWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventDismissOnScroll)) __obj.updateDynamic("preventDismissOnScroll")(preventDismissOnScroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(positioningContainerMaxHeight)) __obj.updateDynamic("positioningContainerMaxHeight")(positioningContainerMaxHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(positioningContainerWidth)) __obj.updateDynamic("positioningContainerWidth")(positioningContainerWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventDismissOnScroll)) __obj.updateDynamic("preventDismissOnScroll")(preventDismissOnScroll.get.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (!js.isUndefined(setInitialFocus)) __obj.updateDynamic("setInitialFocus")(setInitialFocus.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (!js.isUndefined(setInitialFocus)) __obj.updateDynamic("setInitialFocus")(setInitialFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(target)) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (targetPoint != null) __obj.updateDynamic("targetPoint")(targetPoint.asInstanceOf[js.Any])
-    if (!js.isUndefined(useTargetPoint)) __obj.updateDynamic("useTargetPoint")(useTargetPoint.asInstanceOf[js.Any])
+    if (!js.isUndefined(useTargetPoint)) __obj.updateDynamic("useTargetPoint")(useTargetPoint.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPositioningContainerProps]
   }
 }

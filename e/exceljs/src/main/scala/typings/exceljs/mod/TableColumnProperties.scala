@@ -50,7 +50,7 @@ object TableColumnProperties {
     totalsRowLabel: String = null
   ): TableColumnProperties = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (!js.isUndefined(filterButton)) __obj.updateDynamic("filterButton")(filterButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterButton)) __obj.updateDynamic("filterButton")(filterButton.get.asInstanceOf[js.Any])
     if (totalsRowFormula != null) __obj.updateDynamic("totalsRowFormula")(totalsRowFormula.asInstanceOf[js.Any])
     if (totalsRowFunction != null) __obj.updateDynamic("totalsRowFunction")(totalsRowFunction.asInstanceOf[js.Any])
     if (totalsRowLabel != null) __obj.updateDynamic("totalsRowLabel")(totalsRowLabel.asInstanceOf[js.Any])

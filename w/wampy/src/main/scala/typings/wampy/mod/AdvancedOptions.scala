@@ -20,10 +20,10 @@ object AdvancedOptions {
     exclude_me: js.UndefOr[Boolean] = js.undefined
   ): AdvancedOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disclose_me)) __obj.updateDynamic("disclose_me")(disclose_me.asInstanceOf[js.Any])
+    if (!js.isUndefined(disclose_me)) __obj.updateDynamic("disclose_me")(disclose_me.get.asInstanceOf[js.Any])
     if (eligible != null) __obj.updateDynamic("eligible")(eligible.asInstanceOf[js.Any])
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclude_me)) __obj.updateDynamic("exclude_me")(exclude_me.asInstanceOf[js.Any])
+    if (!js.isUndefined(exclude_me)) __obj.updateDynamic("exclude_me")(exclude_me.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdvancedOptions]
   }
 }

@@ -1,24 +1,24 @@
 package typings.firefoxWebextBrowser.browser.manifest
 
-import typings.firefoxWebextBrowser.AnonAccentcolor
-import typings.firefoxWebextBrowser.AnonAdditionalbackgrounds
-import typings.firefoxWebextBrowser.AnonAdditionalbackgroundsalignment
+import typings.firefoxWebextBrowser.anon.Accentcolor
+import typings.firefoxWebextBrowser.anon.Additionalbackgrounds
+import typings.firefoxWebextBrowser.anon.Additionalbackgroundsalignment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ThemeType extends js.Object {
-  var colors: js.UndefOr[AnonAccentcolor] = js.undefined
-  var images: js.UndefOr[AnonAdditionalbackgrounds] = js.undefined
-  var properties: js.UndefOr[AnonAdditionalbackgroundsalignment] = js.undefined
+  var colors: js.UndefOr[Accentcolor] = js.undefined
+  var images: js.UndefOr[Additionalbackgrounds] = js.undefined
+  var properties: js.UndefOr[Additionalbackgroundsalignment] = js.undefined
 }
 
 object ThemeType {
   @scala.inline
   def apply(
-    colors: AnonAccentcolor = null,
-    images: AnonAdditionalbackgrounds = null,
-    properties: AnonAdditionalbackgroundsalignment = null
+    colors: Accentcolor = null,
+    images: Additionalbackgrounds = null,
+    properties: Additionalbackgroundsalignment = null
   ): ThemeType = {
     val __obj = js.Dynamic.literal()
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])

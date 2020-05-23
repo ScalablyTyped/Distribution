@@ -26,7 +26,7 @@ object Options {
   def apply(_package: String = null, lernaTags: js.UndefOr[Boolean] = js.undefined, tagPrefix: String = null): Options = {
     val __obj = js.Dynamic.literal()
     if (_package != null) __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
-    if (!js.isUndefined(lernaTags)) __obj.updateDynamic("lernaTags")(lernaTags.asInstanceOf[js.Any])
+    if (!js.isUndefined(lernaTags)) __obj.updateDynamic("lernaTags")(lernaTags.get.asInstanceOf[js.Any])
     if (tagPrefix != null) __obj.updateDynamic("tagPrefix")(tagPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

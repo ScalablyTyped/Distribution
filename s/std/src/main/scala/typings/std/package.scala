@@ -64,8 +64,8 @@ package object std {
     ]
   ])
   type EvalError = typings.std.Error
-  type EventHandlerNonNull = js.Function1[/* event */ typings.std.Event_, js.Any]
-  type EventListener = js.Function1[/* evt */ typings.std.Event_, scala.Unit]
+  type EventHandlerNonNull = js.Function1[/* event */ typings.std.Event, js.Any]
+  type EventListener = js.Function1[/* evt */ typings.std.Event, scala.Unit]
   type EventListenerOrEventListenerObject = typings.std.EventListener | typings.std.EventListenerObject
   /**
     * Exclude from T those types that are assignable to U
@@ -75,6 +75,7 @@ package object std {
     * Extract from T those types that are assignable to U
     */
   type Extract[T, U] = T
+  type FlatArray[Arr, Depth /* <: scala.Double */] = /* import warning: importer.ImportType#apply Failed type conversion: std.anon.Done<Arr>[Depth extends -1 ? 'done' : 'recur'] */ js.Any
   type Float32List = typings.std.Float32Array | js.Array[typings.std.GLfloat]
   type ForEachCallback = js.Function2[
     /* keyId */ typings.std.Int8Array | typings.std.Int16Array | typings.std.Int32Array | typings.std.Uint8Array | typings.std.Uint16Array | typings.std.Uint32Array | typings.std.Uint8ClampedArray | typings.std.Float32Array | typings.std.Float64Array | typings.std.DataView | typings.std.ArrayBuffer | scala.Null, 
@@ -158,10 +159,10 @@ package object std {
     */
   type OmitThisParameter[T] = T | (js.Function1[/* args */ js.Any, js.Any])
   type OnBeforeUnloadEventHandler = typings.std.OnBeforeUnloadEventHandlerNonNull | scala.Null
-  type OnBeforeUnloadEventHandlerNonNull = js.Function1[/* event */ typings.std.Event_, java.lang.String | scala.Null]
+  type OnBeforeUnloadEventHandlerNonNull = js.Function1[/* event */ typings.std.Event, java.lang.String | scala.Null]
   type OnErrorEventHandler = typings.std.OnErrorEventHandlerNonNull | scala.Null
   type OnErrorEventHandlerNonNull = js.Function5[
-    /* event */ typings.std.Event_ | java.lang.String, 
+    /* event */ typings.std.Event | java.lang.String, 
     /* source */ js.UndefOr[java.lang.String], 
     /* lineno */ js.UndefOr[scala.Double], 
     /* colno */ js.UndefOr[scala.Double], 
@@ -300,7 +301,7 @@ package object std {
   type WebGLVertexArrayObject = typings.std.WebGLObject
   type WebGLVertexArrayObjectOES = typings.std.WebGLObject
   type WebKitCSSMatrix = typings.std.DOMMatrix
-  type WindowProxy = typings.std.Window_
+  type WindowProxy = typings.std.Window
   type WritableStreamDefaultControllerCloseCallback = js.Function0[scala.Unit | js.Thenable[scala.Unit]]
   type WritableStreamDefaultControllerStartCallback = js.Function1[
     /* controller */ typings.std.WritableStreamDefaultController, 
@@ -314,6 +315,6 @@ package object std {
   type WritableStreamErrorCallback = js.Function1[/* reason */ js.Any, scala.Unit | js.Thenable[scala.Unit]]
   /** The XPathEvaluator interface allows to compile and evaluate XPath expressions. */
   type XPathEvaluator = typings.std.XPathEvaluatorBase
-  type XPathNSResolver = (js.Function1[/* prefix */ java.lang.String | scala.Null, java.lang.String | scala.Null]) | typings.std.AnonLookupNamespaceURI
+  type XPathNSResolver = (js.Function1[/* prefix */ java.lang.String | scala.Null, java.lang.String | scala.Null]) | typings.std.anon.LookupNamespaceURI
   type webkitURL = typings.std.URL
 }

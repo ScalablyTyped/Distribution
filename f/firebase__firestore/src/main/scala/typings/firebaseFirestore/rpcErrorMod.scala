@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/remote/rpc_error", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/remote/rpc_error", JSImport.Namespace)
 @js.native
 object rpcErrorMod extends js.Object {
   def isPermanentError(code: Code): Boolean = js.native

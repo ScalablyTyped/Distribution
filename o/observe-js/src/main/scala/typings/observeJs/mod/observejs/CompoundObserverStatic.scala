@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /*----------------------
-		CompounObserver
-	----------------------*/
+  CompounObserver
+  ----------------------*/
 @js.native
 trait CompoundObserverStatic extends /**
-		 * Constructor
-		 */
+  * Constructor
+  */
 Instantiable0[CompoundObserverInstance]
 

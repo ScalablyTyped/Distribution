@@ -1,6 +1,6 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.PartialFont
+import typings.plotlyJs.anon.PartialFont
 import typings.plotlyJs.plotlyJsStrings.auto
 import typings.plotlyJs.plotlyJsStrings.left
 import typings.plotlyJs.plotlyJsStrings.right
@@ -9,13 +9,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HoverLabel extends Label {
-  /** Sets the horizontal alignment of the text content within hover label box. */
+  /**
+    * Sets the horizontal alignment of the text content within hover label box.
+    * @default "auto"
+    */
   var align: left | right | auto
   /**
-  	 * Sets the default length (in number of characters) (default 15) of the trace name
-  	 * in the hover labels for all traces.
-  	 * -1 shows the whole name regardless of length.
-  	 */
+    * Sets the default length (in number of characters) of the trace name
+    * in the hover labels for all traces.
+    * -1 shows the whole name regardless of length.
+    * @default 15
+    */
   var namelength: Double
 }
 

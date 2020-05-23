@@ -66,11 +66,11 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
-    if (!js.isUndefined(extract)) __obj.updateDynamic("extract")(extract.asInstanceOf[js.Any])
+    if (!js.isUndefined(extract)) __obj.updateDynamic("extract")(extract.get.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(minify)) __obj.updateDynamic("minify")(minify.asInstanceOf[js.Any])
+    if (!js.isUndefined(minify)) __obj.updateDynamic("minify")(minify.get.asInstanceOf[js.Any])
     if (noscript != null) __obj.updateDynamic("noscript")(noscript.asInstanceOf[js.Any])
-    if (!js.isUndefined(polyfill)) __obj.updateDynamic("polyfill")(polyfill.asInstanceOf[js.Any])
+    if (!js.isUndefined(polyfill)) __obj.updateDynamic("polyfill")(polyfill.get.asInstanceOf[js.Any])
     if (replaceStylesheets != null) __obj.updateDynamic("replaceStylesheets")(replaceStylesheets.asInstanceOf[js.Any])
     if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

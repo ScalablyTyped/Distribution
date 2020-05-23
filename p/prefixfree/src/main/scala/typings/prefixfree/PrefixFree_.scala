@@ -12,19 +12,19 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PrefixFree_ extends js.Object {
   /**
-  	 * The prefix used for CSS properties in `CSSStyleDeclaration`.
-  	 *
-  	 * Eg.: `Moz`, `Ms`, `O` or `Webkit`.
-  	 */
+    * The prefix used for CSS properties in `CSSStyleDeclaration`.
+    *
+    * Eg.: `Moz`, `Ms`, `O` or `Webkit`.
+    */
   var Prefix: KnownPrefixJS | String = js.native
   var atrules: js.Array[String] = js.native
   var functions: js.Array[String] = js.native
   var keywords: js.Array[String] = js.native
   /**
-  	 * The prefix used for CSS properties.
-  	 *
-  	 * Eg.: `-moz-`, `-ms-`, `-o-` or `-webkit-`.
-  	 */
+    * The prefix used for CSS properties.
+    *
+    * Eg.: `-moz-`, `-ms-`, `-o-` or `-webkit-`.
+    */
   var prefix: KnownPrefixCSS | String = js.native
   @JSName("prefixCSS")
   var prefixCSS_Original: StyleFixer = js.native

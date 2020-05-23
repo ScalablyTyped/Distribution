@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * A command to decrease the font size of characters in a selected range to the closest smaller predefined value.
   */
-@JSGlobal("DecreaseFontSizeCommand")
-@js.native
-class DecreaseFontSizeCommand () extends CommandWithSimpleStateBase {
+trait DecreaseFontSizeCommand extends CommandWithSimpleStateBase {
   /**
     * Executes the DecreaseFontSizeCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
+}
+
+object DecreaseFontSizeCommand {
+  @scala.inline
+  def apply(execute: () => Boolean, getState: () => SimpleCommandState): DecreaseFontSizeCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
+    __obj.asInstanceOf[DecreaseFontSizeCommand]
+  }
 }
 

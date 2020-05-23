@@ -18,7 +18,6 @@ object backdropMod extends js.Object {
       * Emitted when the backdrop is tapped.
       */
     var ionBackdropTap: EventEmitter[Unit] = js.native
-    var lastClick: js.Any = js.native
     /**
       * If `true`, the backdrop will stop propagation on tap.
       */
@@ -36,7 +35,6 @@ object backdropMod extends js.Object {
     @JSName("disconnectedCallback")
     def disconnectedCallback_MBackdrop(): Unit = js.native
     /* protected */ def onMouseDown(ev: TouchEvent): Unit = js.native
-    /* protected */ def onTouchStart(ev: TouchEvent): Unit = js.native
     @JSName("render")
     def render_MBackdrop(): js.Any = js.native
   }

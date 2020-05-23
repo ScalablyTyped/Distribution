@@ -1,5 +1,6 @@
 package typings.dateFns
 
+import typings.dateFns.anon.Step
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +12,7 @@ object esmEachDayOfIntervalIndexMod extends js.Object {
   @js.native
   object default extends js.Object {
     def apply(interval: Interval): js.Array[Date] = js.native
-    def apply(interval: Interval, options: AnonStep): js.Array[Date] = js.native
+    def apply(interval: Interval, options: Step): js.Array[Date] = js.native
   }
   
 }

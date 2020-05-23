@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type DomElement = js.Object with typings.sindresorhusIs.AnonNodeName
-  type NodeStream = js.Object with typings.sindresorhusIs.AnonPipe
+  type DomElement = js.Object with typings.sindresorhusIs.anon.NodeName
+  type NodeStream = js.Object with typings.sindresorhusIs.anon.Pipe
   type Primitive = js.UndefOr[
     scala.Null | java.lang.String | scala.Double | scala.Boolean | typings.std.Symbol
   ]

@@ -13,7 +13,7 @@ object IconButtonProps {
   def apply(ButtonProps: ButtonProps = null, raised: js.UndefOr[Boolean] = js.undefined): IconButtonProps = {
     val __obj = js.Dynamic.literal()
     if (ButtonProps != null) js.Dynamic.global.Object.assign(__obj, ButtonProps)
-    if (!js.isUndefined(raised)) __obj.updateDynamic("raised")(raised.asInstanceOf[js.Any])
+    if (!js.isUndefined(raised)) __obj.updateDynamic("raised")(raised.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconButtonProps]
   }
 }

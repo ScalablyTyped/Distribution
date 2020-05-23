@@ -2,12 +2,18 @@ package typings.ionicCore
 
 import typings.ionicCore.inputInterfaceMod.InputChangeEventDetail
 import typings.ionicCore.ionicCoreStrings.decimal
+import typings.ionicCore.ionicCoreStrings.done
 import typings.ionicCore.ionicCoreStrings.email
+import typings.ionicCore.ionicCoreStrings.enter
+import typings.ionicCore.ionicCoreStrings.go
+import typings.ionicCore.ionicCoreStrings.next
 import typings.ionicCore.ionicCoreStrings.none
 import typings.ionicCore.ionicCoreStrings.numeric
 import typings.ionicCore.ionicCoreStrings.off
 import typings.ionicCore.ionicCoreStrings.on
+import typings.ionicCore.ionicCoreStrings.previous
 import typings.ionicCore.ionicCoreStrings.search
+import typings.ionicCore.ionicCoreStrings.send
 import typings.ionicCore.ionicCoreStrings.tel
 import typings.ionicCore.ionicCoreStrings.text
 import typings.ionicCore.ionicCoreStrings.url
@@ -74,6 +80,12 @@ object inputMod extends js.Object {
     var disabled: Boolean = js.native
     var el: HTMLElement = js.native
     var emitStyle: js.Any = js.native
+    /**
+      * A hint to the browser for which enter key to display.
+      * Possible values: `"enter"`, `"done"`, `"go"`, `"next"`,
+      * `"previous"`, `"search"`, and `"send"`.
+      */
+    var enterkeyhint: js.UndefOr[enter | done | go | next | previous | search | send] = js.native
     var focusChanged: js.Any = js.native
     var getValue: js.Any = js.native
     var hasFocus: Boolean = js.native
@@ -136,7 +148,7 @@ object inputMod extends js.Object {
     var onInput: js.Any = js.native
     var onKeydown: js.Any = js.native
     /**
-      * A regular expression that the value is checked against. The pattern must match the entire value, not just some subset. Use the title attribute to describe the pattern to help the user. This attribute applies when the value of the type attribute is `"text"`, `"search"`, `"tel"`, `"url"`, `"email"`, or `"password"`, otherwise it is ignored.
+      * A regular expression that the value is checked against. The pattern must match the entire value, not just some subset. Use the title attribute to describe the pattern to help the user. This attribute applies when the value of the type attribute is `"text"`, `"search"`, `"tel"`, `"url"`, `"email"`, `"date"`, or `"password"`, otherwise it is ignored. When the type attribute is `"date"`, `pattern` will only be used in browsers that do not support the `"date"` input type natively. See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date for more information.
       */
     var pattern: js.UndefOr[String] = js.native
     /**
@@ -165,6 +177,7 @@ object inputMod extends js.Object {
       * Possible values are: `"any"` or a positive floating point number.
       */
     var step: js.UndefOr[String] = js.native
+    var tabindex: js.UndefOr[js.Any] = js.native
     /**
       * The type of control to display. The default type is text.
       */
@@ -173,6 +186,8 @@ object inputMod extends js.Object {
       * The value of the input.
       */
     var value: js.UndefOr[String | Double | Null] = js.native
+    @JSName("componentWillLoad")
+    def componentWillLoad_MInput(): Unit = js.native
     @JSName("connectedCallback")
     def connectedCallback_MInput(): Unit = js.native
     /* protected */ def debounceChanged(): Unit = js.native

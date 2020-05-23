@@ -1,6 +1,6 @@
 package typings.when.mod
 
-import typings.when.When.Promise_
+import typings.when.When.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ object join extends js.Object {
     * @return a promise that will fulfill when *all* the input promises
     * have fulfilled, or will reject when *any one* of the input promises rejects.
     */
-  def apply[T](promises: (js.Any | Promise_[T])*): Promise_[js.Array[T]] = js.native
+  def apply[T](promises: (js.Any | Promise[T])*): Promise[js.Array[T]] = js.native
 }
 

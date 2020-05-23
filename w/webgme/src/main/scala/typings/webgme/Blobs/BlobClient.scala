@@ -15,13 +15,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Blobs.BlobClient")
 @js.native
-class BlobClient protected () extends js.Object {
-  /**
-    * @param paramters
-    */
-  def this(parameters: BlobClientParamters) = this()
+trait BlobClient extends js.Object {
   /**
     * Creates a new artifact 
     * and adds it to array of artifacts of the instance.

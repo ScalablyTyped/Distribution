@@ -7,10 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Spotify.SpotifyPlayer")
 @js.native
-class SpotifyPlayer protected () extends js.Object {
-  def this(options: PlayerInit) = this()
+trait SpotifyPlayer extends js.Object {
   @JSName("addListener")
   var addListener_Original: AddListenerFn = js.native
   @JSName("on")

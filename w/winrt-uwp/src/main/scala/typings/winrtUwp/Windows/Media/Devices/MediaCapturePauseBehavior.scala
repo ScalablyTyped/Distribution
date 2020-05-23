@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Devices
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object MediaCapturePauseBehavior extends js.Object {
   /** The calling app keeps control of the hardware resources, such as the camera, while capturing is paused. */
   @js.native
   sealed trait retainHardwareResources extends MediaCapturePauseBehavior
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MediaCapturePauseBehavior with Double] = js.native
-  /* 1 */ @js.native
-  object releaseHardwareResources extends TopLevel[releaseHardwareResources with Double]
-  
-  /* 0 */ @js.native
-  object retainHardwareResources extends TopLevel[retainHardwareResources with Double]
   
 }
 

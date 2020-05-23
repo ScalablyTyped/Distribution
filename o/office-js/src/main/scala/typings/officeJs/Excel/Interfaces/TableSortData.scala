@@ -12,21 +12,21 @@ import scala.scalajs.js.annotation._
 trait TableSortData extends js.Object {
   /**
     *
-    * Represents the current conditions used to last sort the table. Read-only.
+    * Specifies the current conditions used to last sort the table.
     *
     * [Api set: ExcelApi 1.2]
     */
   var fields: js.UndefOr[js.Array[SortField]] = js.undefined
   /**
     *
-    * Represents whether the casing impacted the last sort of the table. Read-only.
+    * Specifies if the casing impacts the last sort of the table.
     *
     * [Api set: ExcelApi 1.2]
     */
   var matchCase: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents Chinese character ordering method last used to sort the table. Read-only.
+    * Represents Chinese character ordering method last used to sort the table.
     *
     * [Api set: ExcelApi 1.2]
     */
@@ -42,7 +42,7 @@ object TableSortData {
   ): TableSortData = {
     val __obj = js.Dynamic.literal()
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase.get.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableSortData]
   }

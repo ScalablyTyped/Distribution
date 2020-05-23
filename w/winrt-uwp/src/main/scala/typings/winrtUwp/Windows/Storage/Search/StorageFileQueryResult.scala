@@ -15,9 +15,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides access to the results of a query of the files in the location that is represented by a storageFolder object. You can use storageFileQueryResult to enumerate the files in that storageFolder location. */
-@JSGlobal("Windows.Storage.Search.StorageFileQueryResult")
 @js.native
-abstract class StorageFileQueryResult () extends js.Object {
+trait StorageFileQueryResult extends js.Object {
   /** Gets the folder that was queried to create the StorageFileQueryResult object. This folder represents the scope of the query. */
   var folder: StorageFolder = js.native
   /** Fires when a file is added to, deleted from, or modified in the folder being queried. This event only fires after GetFilesAsync has been called at least once. */

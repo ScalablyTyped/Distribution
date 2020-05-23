@@ -1,7 +1,7 @@
 package typings.antDesignReactNative.mod
 
-import typings.antDesignReactNative.AnonAnimateAppear
-import typings.antDesignReactNative.AnonAntLocale
+import typings.antDesignReactNative.anon.AnimateAppear
+import typings.antDesignReactNative.anon.AntLocale
 import typings.antDesignReactNative.modalMod.default
 import typings.antDesignReactNative.modalPropsTypeMod.Action
 import typings.antDesignReactNative.modalPropsTypeMod.CallbackOnBackHandler
@@ -27,8 +27,8 @@ object Modal extends js.Object {
     /* onBackHandler */ js.UndefOr[CallbackOnBackHandler], 
     Double
   ] = js.native
-  var contextTypes: AnonAntLocale = js.native
-  var defaultProps: AnonAnimateAppear = js.native
+  var contextTypes: AntLocale = js.native
+  var defaultProps: AnimateAppear = js.native
   var operation: js.Function2[
     /* actions */ js.Array[_], 
     /* onBackHandler */ js.UndefOr[CallbackOnBackHandler], 

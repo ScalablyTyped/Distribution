@@ -4,11 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.Background.NetworkOperatorNotificationTrigger")
-@js.native
-class NetworkOperatorNotificationTrigger protected () extends INetworkOperatorNotificationTrigger {
-  def this(networkAccountId: String) = this()
-  /* CompleteClass */
-  override var networkAccountId: String = js.native
+trait NetworkOperatorNotificationTrigger extends INetworkOperatorNotificationTrigger
+
+object NetworkOperatorNotificationTrigger {
+  @scala.inline
+  def apply(networkAccountId: String): NetworkOperatorNotificationTrigger = {
+    val __obj = js.Dynamic.literal(networkAccountId = networkAccountId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NetworkOperatorNotificationTrigger]
+  }
 }
 

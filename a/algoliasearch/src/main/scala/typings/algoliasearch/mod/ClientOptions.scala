@@ -1,6 +1,6 @@
 package typings.algoliasearch.mod
 
-import typings.algoliasearch.AnonRead
+import typings.algoliasearch.anon.Read
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait ClientOptions extends js.Object {
     * read: array of read hosts to use to call  servers, computed automatically
     * write: array of read hosts to use to call  servers, computed automatically
     */
-  var hosts: js.UndefOr[AnonRead] = js.undefined
+  var hosts: js.UndefOr[Read] = js.undefined
   /**
     * (node only) httpAgent instance to use when communicating with  servers.
     */
@@ -38,17 +38,17 @@ object ClientOptions {
   @scala.inline
   def apply(
     _useRequestCache: js.UndefOr[Boolean] = js.undefined,
-    hosts: AnonRead = null,
+    hosts: Read = null,
     httpAgent: js.Any = null,
     protocol: String = null,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): ClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(_useRequestCache)) __obj.updateDynamic("_useRequestCache")(_useRequestCache.asInstanceOf[js.Any])
+    if (!js.isUndefined(_useRequestCache)) __obj.updateDynamic("_useRequestCache")(_useRequestCache.get.asInstanceOf[js.Any])
     if (hosts != null) __obj.updateDynamic("hosts")(hosts.asInstanceOf[js.Any])
     if (httpAgent != null) __obj.updateDynamic("httpAgent")(httpAgent.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
 }

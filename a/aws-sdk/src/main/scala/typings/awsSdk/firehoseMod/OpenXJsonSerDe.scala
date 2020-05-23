@@ -23,14 +23,14 @@ trait OpenXJsonSerDe extends js.Object {
 object OpenXJsonSerDe {
   @scala.inline
   def apply(
-    CaseInsensitive: js.UndefOr[Boolean] = js.undefined,
+    CaseInsensitive: js.UndefOr[BooleanObject] = js.undefined,
     ColumnToJsonKeyMappings: ColumnToJsonKeyMappings = null,
-    ConvertDotsInJsonKeysToUnderscores: js.UndefOr[Boolean] = js.undefined
+    ConvertDotsInJsonKeysToUnderscores: js.UndefOr[BooleanObject] = js.undefined
   ): OpenXJsonSerDe = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CaseInsensitive)) __obj.updateDynamic("CaseInsensitive")(CaseInsensitive.asInstanceOf[js.Any])
+    if (!js.isUndefined(CaseInsensitive)) __obj.updateDynamic("CaseInsensitive")(CaseInsensitive.get.asInstanceOf[js.Any])
     if (ColumnToJsonKeyMappings != null) __obj.updateDynamic("ColumnToJsonKeyMappings")(ColumnToJsonKeyMappings.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConvertDotsInJsonKeysToUnderscores)) __obj.updateDynamic("ConvertDotsInJsonKeysToUnderscores")(ConvertDotsInJsonKeysToUnderscores.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConvertDotsInJsonKeysToUnderscores)) __obj.updateDynamic("ConvertDotsInJsonKeysToUnderscores")(ConvertDotsInJsonKeysToUnderscores.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenXJsonSerDe]
   }
 }

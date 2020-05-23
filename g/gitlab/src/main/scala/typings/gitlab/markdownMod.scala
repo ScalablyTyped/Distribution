@@ -1,5 +1,6 @@
 package typings.gitlab
 
+import typings.gitlab.anon.gfmstringprojectstringnum
 import typings.gitlab.infrastructureMod.BaseService
 import scala.scalajs.js
 import scala.scalajs.js.`|`

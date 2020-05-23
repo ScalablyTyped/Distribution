@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the popup control's cancellable client events, such as the ASPxClientPopupControlBase.Closing.
   */
-@JSGlobal("ASPxClientPopupWindowCancelEventArgs")
-@js.native
-class ASPxClientPopupWindowCancelEventArgs protected () extends ASPxClientCancelEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientPopupWindowCancelEventArgs class with the specified settings.
-    * @param window An ASPxClientPopupWindow object that is a popup window related to the generated event.
-    * @param closeReason One of the ASPxClientPopupControlCloseReason enumeration values that specifies the reason the popup window is about to close.
-    */
-  def this(window: ASPxClientPopupWindow, closeReason: ASPxClientPopupControlCloseReason) = this()
+trait ASPxClientPopupWindowCancelEventArgs extends ASPxClientCancelEventArgs {
   /**
     * Gets the value that identifies the reason the popup window is about to close.
     */
-  var closeReason: ASPxClientPopupControlCloseReason = js.native
+  var closeReason: ASPxClientPopupControlCloseReason
   /**
     * Gets the popup window object related to the event.
     */
-  var window: ASPxClientPopupWindow = js.native
+  var window: ASPxClientPopupWindow
+}
+
+object ASPxClientPopupWindowCancelEventArgs {
+  @scala.inline
+  def apply(cancel: Boolean, closeReason: ASPxClientPopupControlCloseReason, window: ASPxClientPopupWindow): ASPxClientPopupWindowCancelEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], closeReason = closeReason.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientPopupWindowCancelEventArgs]
+  }
 }
 

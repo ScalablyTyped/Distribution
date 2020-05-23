@@ -1,18 +1,18 @@
 package typings.passport.mod
 
-import typings.passport.AnonFamilyName
-import typings.passport.AnonType
-import typings.passport.AnonValue
+import typings.passport.anon.FamilyName
+import typings.passport.anon.Type
+import typings.passport.anon.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Profile extends js.Object {
   var displayName: String
-  var emails: js.UndefOr[js.Array[AnonType]] = js.undefined
+  var emails: js.UndefOr[js.Array[Type]] = js.undefined
   var id: String
-  var name: js.UndefOr[AnonFamilyName] = js.undefined
-  var photos: js.UndefOr[js.Array[AnonValue]] = js.undefined
+  var name: js.UndefOr[FamilyName] = js.undefined
+  var photos: js.UndefOr[js.Array[Value]] = js.undefined
   var provider: String
   var username: js.UndefOr[String] = js.undefined
 }
@@ -23,9 +23,9 @@ object Profile {
     displayName: String,
     id: String,
     provider: String,
-    emails: js.Array[AnonType] = null,
-    name: AnonFamilyName = null,
-    photos: js.Array[AnonValue] = null,
+    emails: js.Array[Type] = null,
+    name: FamilyName = null,
+    photos: js.Array[Value] = null,
     username: String = null
   ): Profile = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])

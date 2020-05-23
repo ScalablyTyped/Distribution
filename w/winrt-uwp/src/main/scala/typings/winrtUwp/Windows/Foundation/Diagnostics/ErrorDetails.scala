@@ -1,32 +1,25 @@
 package typings.winrtUwp.Windows.Foundation.Diagnostics
 
-import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.Uri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides information about an error that occurred. */
-@JSGlobal("Windows.Foundation.Diagnostics.ErrorDetails")
-@js.native
-abstract class ErrorDetails () extends js.Object {
+trait ErrorDetails extends js.Object {
   /** Gets a short description of the error. */
-  var description: String = js.native
+  var description: String
   /** Gets the address to a help page about the error. */
-  var helpUri: Uri = js.native
+  var helpUri: Uri
   /** Gets a detailed description of the error. */
-  var longDescription: String = js.native
+  var longDescription: String
 }
 
-/* static members */
-@JSGlobal("Windows.Foundation.Diagnostics.ErrorDetails")
-@js.native
-object ErrorDetails extends js.Object {
-  /**
-    * Asynchronously creates an ErrorDetails object based on an HRESULT error code.
-    * @param errorCode The unique code representing the error.
-    * @return The newly created ErrorDetails object representing the error.
-    */
-  def createFromHResultAsync(errorCode: Double): IPromiseWithIAsyncOperation[ErrorDetails] = js.native
+object ErrorDetails {
+  @scala.inline
+  def apply(description: String, helpUri: Uri, longDescription: String): ErrorDetails = {
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], helpUri = helpUri.asInstanceOf[js.Any], longDescription = longDescription.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ErrorDetails]
+  }
 }
 

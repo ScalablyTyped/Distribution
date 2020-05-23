@@ -1,6 +1,5 @@
 package typings.babylonjs.BABYLON
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,35 +45,6 @@ object NodeMaterialSystemValues extends js.Object {
   /** WorldViewProjection */
   @js.native
   sealed trait WorldViewProjection extends NodeMaterialSystemValues
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NodeMaterialSystemValues with Double] = js.native
-  /* 7 */ @js.native
-  object CameraPosition extends TopLevel[CameraPosition with Double]
-  
-  /* 9 */ @js.native
-  object DeltaTime extends TopLevel[DeltaTime with Double]
-  
-  /* 8 */ @js.native
-  object FogColor extends TopLevel[FogColor with Double]
-  
-  /* 3 */ @js.native
-  object Projection extends TopLevel[Projection with Double]
-  
-  /* 2 */ @js.native
-  object View extends TopLevel[View with Double]
-  
-  /* 4 */ @js.native
-  object ViewProjection extends TopLevel[ViewProjection with Double]
-  
-  /* 1 */ @js.native
-  object World extends TopLevel[World with Double]
-  
-  /* 5 */ @js.native
-  object WorldView extends TopLevel[WorldView with Double]
-  
-  /* 6 */ @js.native
-  object WorldViewProjection extends TopLevel[WorldViewProjection with Double]
   
 }
 

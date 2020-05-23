@@ -48,7 +48,7 @@ object RelationalDatabaseBlueprint {
     if (engineDescription != null) __obj.updateDynamic("engineDescription")(engineDescription.asInstanceOf[js.Any])
     if (engineVersion != null) __obj.updateDynamic("engineVersion")(engineVersion.asInstanceOf[js.Any])
     if (engineVersionDescription != null) __obj.updateDynamic("engineVersionDescription")(engineVersionDescription.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEngineDefault)) __obj.updateDynamic("isEngineDefault")(isEngineDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEngineDefault)) __obj.updateDynamic("isEngineDefault")(isEngineDefault.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelationalDatabaseBlueprint]
   }
 }

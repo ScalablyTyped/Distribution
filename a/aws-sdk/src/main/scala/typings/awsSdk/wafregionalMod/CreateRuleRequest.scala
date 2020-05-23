@@ -18,6 +18,9 @@ trait CreateRuleRequest extends js.Object {
     * A friendly name or description of the Rule. You can't change the name of a Rule after you create it.
     */
   var Name: ResourceName = js.native
+  /**
+    * 
+    */
   var Tags: js.UndefOr[TagList] = js.native
 }
 

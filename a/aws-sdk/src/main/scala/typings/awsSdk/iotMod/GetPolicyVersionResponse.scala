@@ -45,7 +45,7 @@ object GetPolicyVersionResponse {
   def apply(
     creationDate: DateType = null,
     generationId: GenerationId = null,
-    isDefaultVersion: js.UndefOr[scala.Boolean] = js.undefined,
+    isDefaultVersion: js.UndefOr[IsDefaultVersion] = js.undefined,
     lastModifiedDate: DateType = null,
     policyArn: PolicyArn = null,
     policyDocument: PolicyDocument = null,
@@ -55,7 +55,7 @@ object GetPolicyVersionResponse {
     val __obj = js.Dynamic.literal()
     if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
     if (generationId != null) __obj.updateDynamic("generationId")(generationId.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDefaultVersion)) __obj.updateDynamic("isDefaultVersion")(isDefaultVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDefaultVersion)) __obj.updateDynamic("isDefaultVersion")(isDefaultVersion.get.asInstanceOf[js.Any])
     if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate.asInstanceOf[js.Any])
     if (policyArn != null) __obj.updateDynamic("policyArn")(policyArn.asInstanceOf[js.Any])
     if (policyDocument != null) __obj.updateDynamic("policyDocument")(policyDocument.asInstanceOf[js.Any])

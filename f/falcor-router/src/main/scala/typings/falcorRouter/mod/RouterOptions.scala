@@ -14,13 +14,13 @@ object RouterOptions {
   @scala.inline
   def apply(
     debug: js.UndefOr[Boolean] = js.undefined,
-    maxPaths: Int | Double = null,
-    maxRefFollow: Int | Double = null
+    maxPaths: js.UndefOr[Double] = js.undefined,
+    maxRefFollow: js.UndefOr[Double] = js.undefined
   ): RouterOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (maxPaths != null) __obj.updateDynamic("maxPaths")(maxPaths.asInstanceOf[js.Any])
-    if (maxRefFollow != null) __obj.updateDynamic("maxRefFollow")(maxRefFollow.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPaths)) __obj.updateDynamic("maxPaths")(maxPaths.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRefFollow)) __obj.updateDynamic("maxRefFollow")(maxRefFollow.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouterOptions]
   }
 }

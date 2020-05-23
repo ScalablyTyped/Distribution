@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.AxisTitle")
 @js.native
-class AxisTitle protected () extends js.Object {
+trait AxisTitle extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   var AutoScaleFont: js.Any = js.native
   val Border: typings.activexExcel.Excel.Border = js.native

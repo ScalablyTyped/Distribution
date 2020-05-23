@@ -1,7 +1,7 @@
 package typings.blueprintjsCore.collapseMod
 
-import typings.blueprintjsCore.AnonAnimationState
-import typings.blueprintjsCore.AnonHeight
+import typings.blueprintjsCore.anon.AnimationState
+import typings.blueprintjsCore.anon.Height
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,6 +26,6 @@ class Collapse ()
 object Collapse extends js.Object {
   var defaultProps: ICollapseProps = js.native
   var displayName: String = js.native
-  def getDerivedStateFromProps(props: ICollapseProps, state: ICollapseState): AnonAnimationState | AnonHeight = js.native
+  def getDerivedStateFromProps(props: ICollapseProps, state: ICollapseState): AnimationState | Height = js.native
 }
 

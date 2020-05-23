@@ -23,12 +23,12 @@ object Collection {
   @scala.inline
   def apply(
     id: String,
-    defaultTtl: Int | Double = null,
+    defaultTtl: js.UndefOr[Double] = js.undefined,
     indexingPolicy: IndexingPolicy = null,
     partitionKey: CollectionPartitionKey = null
   ): Collection = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    if (defaultTtl != null) __obj.updateDynamic("defaultTtl")(defaultTtl.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultTtl)) __obj.updateDynamic("defaultTtl")(defaultTtl.get.asInstanceOf[js.Any])
     if (indexingPolicy != null) __obj.updateDynamic("indexingPolicy")(indexingPolicy.asInstanceOf[js.Any])
     if (partitionKey != null) __obj.updateDynamic("partitionKey")(partitionKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Collection]

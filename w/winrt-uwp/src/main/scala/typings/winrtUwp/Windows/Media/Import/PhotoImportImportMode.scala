@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Import
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object PhotoImportImportMode extends js.Object {
   /** All files are imported. */
   @js.native
   sealed trait importEverything extends PhotoImportImportMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PhotoImportImportMode with Double] = js.native
-  /* 2 */ @js.native
-  object ignoreSiblings extends TopLevel[ignoreSiblings with Double]
-  
-  /* 1 */ @js.native
-  object ignoreSidecars extends TopLevel[ignoreSidecars with Double]
-  
-  /* 3 */ @js.native
-  object ignoreSidecarsAndSiblings extends TopLevel[ignoreSidecarsAndSiblings with Double]
-  
-  /* 0 */ @js.native
-  object importEverything extends TopLevel[importEverything with Double]
   
 }
 

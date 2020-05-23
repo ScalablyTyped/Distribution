@@ -11,9 +11,9 @@ trait SyncContext extends Context {
 
 object SyncContext {
   @scala.inline
-  def apply(options: Options, callback: js.UndefOr[scala.Nothing] = js.undefined): SyncContext = {
+  def apply(options: Options, callback: (/* err */ SassError, /* result */ Result) => js.Any = null): SyncContext = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
-    if (!js.isUndefined(callback)) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
     __obj.asInstanceOf[SyncContext]
   }
 }

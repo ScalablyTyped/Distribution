@@ -1,9 +1,9 @@
 package typings.officeJs.Visio
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.Visio.Interfaces.HyperlinkData
 import typings.officeJs.Visio.Interfaces.HyperlinkLoadOptions
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,9 +14,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set:  1.1]
   */
-@JSGlobal("Visio.Hyperlink")
 @js.native
-class Hyperlink () extends ClientObject {
+trait Hyperlink extends ClientObject {
   /**
     *
     * Gets the address of the Hyperlink object. Read-only.
@@ -66,8 +65,8 @@ class Hyperlink () extends ClientObject {
   def load(): Hyperlink = js.native
   def load(option: String): Hyperlink = js.native
   def load(option: js.Array[String]): Hyperlink = js.native
-  def load(option: AnonExpand): Hyperlink = js.native
   def load(option: HyperlinkLoadOptions): Hyperlink = js.native
+  def load(option: Expand): Hyperlink = js.native
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Visio.Hyperlink object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.HyperlinkData`) that contains shallow copies of any loaded child properties from the original object.

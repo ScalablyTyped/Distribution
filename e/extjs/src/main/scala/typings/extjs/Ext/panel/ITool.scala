@@ -15,9 +15,9 @@ trait ITool extends IComponent {
   /** [Config Option] (Object) */
   var scope: js.UndefOr[js.Any] = js.undefined
   /** [Method] Sets the type of the tool
-  		* @param type String The new type. See the type config.
-  		* @returns Ext.panel.Tool this
-  		*/
+    * @param type String The new type. See the type config.
+    * @returns Ext.panel.Tool this
+    */
   var setType: js.UndefOr[js.Function1[/* type */ js.UndefOr[String], this.type]] = js.undefined
   /** [Config Option] (Boolean) */
   var stopEvent: js.UndefOr[Boolean] = js.undefined
@@ -50,10 +50,10 @@ object ITool {
     if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
     if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
     if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTool)) __obj.updateDynamic("isTool")(isTool.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTool)) __obj.updateDynamic("isTool")(isTool.get.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (setType != null) __obj.updateDynamic("setType")(js.Any.fromFunction1(setType))
-    if (!js.isUndefined(stopEvent)) __obj.updateDynamic("stopEvent")(stopEvent.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopEvent)) __obj.updateDynamic("stopEvent")(stopEvent.get.asInstanceOf[js.Any])
     if (toolOwner != null) __obj.updateDynamic("toolOwner")(toolOwner.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (tooltipType != null) __obj.updateDynamic("tooltipType")(tooltipType.asInstanceOf[js.Any])

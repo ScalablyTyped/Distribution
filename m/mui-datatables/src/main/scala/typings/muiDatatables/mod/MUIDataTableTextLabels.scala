@@ -1,11 +1,11 @@
 package typings.muiDatatables.mod
 
-import typings.muiDatatables.PartialMUIDataTableTextLa
-import typings.muiDatatables.PartialMUIDataTableTextLaAll
-import typings.muiDatatables.PartialMUIDataTableTextLaDelete
-import typings.muiDatatables.PartialMUIDataTableTextLaDisplayRows
-import typings.muiDatatables.PartialMUIDataTableTextLaDownloadCsv
-import typings.muiDatatables.PartialMUIDataTableTextLaTitle
+import typings.muiDatatables.anon.PartialMUIDataTableTextLa
+import typings.muiDatatables.anon.PartialMUIDataTableTextLaAll
+import typings.muiDatatables.anon.PartialMUIDataTableTextLaDelete
+import typings.muiDatatables.anon.PartialMUIDataTableTextLaDisplayRows
+import typings.muiDatatables.anon.PartialMUIDataTableTextLaDownloadCsv
+import typings.muiDatatables.anon.PartialMUIDataTableTextLaTitle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

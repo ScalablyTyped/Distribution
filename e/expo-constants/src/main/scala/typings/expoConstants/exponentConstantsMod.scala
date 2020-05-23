@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object exponentConstantsMod extends js.Object {
   @js.native
   object default
-    extends /* propertyName */ StringDictionary[js.Any] {
+    extends /* key */ StringDictionary[js.Any] {
     def addListener(eventName: String): Unit = js.native
     def removeListeners(count: Double): Unit = js.native
   }

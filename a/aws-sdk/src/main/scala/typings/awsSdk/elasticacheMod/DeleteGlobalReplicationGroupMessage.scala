@@ -11,7 +11,7 @@ trait DeleteGlobalReplicationGroupMessage extends js.Object {
     */
   var GlobalReplicationGroupId: String = js.native
   /**
-    * If set to true, the primary replication is retained as a standalone replication group. 
+    * The primary replication group is retained as a standalone replication group. 
     */
   var RetainPrimaryReplicationGroup: Boolean = js.native
 }

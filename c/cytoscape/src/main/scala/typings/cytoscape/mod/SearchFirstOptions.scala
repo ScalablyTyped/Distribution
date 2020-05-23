@@ -18,7 +18,7 @@ object SearchFirstOptions {
     visit: (/* v */ NodeSingular, /* e */ EdgeSingular, /* u */ NodeSingular, /* i */ Double, /* depth */ Double) => Boolean | Unit = null
   ): SearchFirstOptions = {
     val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
-    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed.asInstanceOf[js.Any])
+    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed.get.asInstanceOf[js.Any])
     if (visit != null) __obj.updateDynamic("visit")(js.Any.fromFunction5(visit))
     __obj.asInstanceOf[SearchFirstOptions]
   }
@@ -29,7 +29,7 @@ object SearchFirstOptions {
     visit: (/* v */ NodeSingular, /* e */ EdgeSingular, /* u */ NodeSingular, /* i */ Double, /* depth */ Double) => Boolean | Unit = null
   ): SearchFirstOptions = {
     val __obj = js.Dynamic.literal(roots = roots.asInstanceOf[js.Any])
-    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed.asInstanceOf[js.Any])
+    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed.get.asInstanceOf[js.Any])
     if (visit != null) __obj.updateDynamic("visit")(js.Any.fromFunction5(visit))
     __obj.asInstanceOf[SearchFirstOptions]
   }

@@ -45,41 +45,41 @@ object MouseWheelInputEvent {
     `type`: mouseWheel,
     x: Double,
     y: Double,
-    accelerationRatioX: Int | Double = null,
-    accelerationRatioY: Int | Double = null,
+    accelerationRatioX: js.UndefOr[Double] = js.undefined,
+    accelerationRatioY: js.UndefOr[Double] = js.undefined,
     button: left | middle | right = null,
     canScroll: js.UndefOr[Boolean] = js.undefined,
-    clickCount: Int | Double = null,
-    deltaX: Int | Double = null,
-    deltaY: Int | Double = null,
-    globalX: Int | Double = null,
-    globalY: Int | Double = null,
+    clickCount: js.UndefOr[Double] = js.undefined,
+    deltaX: js.UndefOr[Double] = js.undefined,
+    deltaY: js.UndefOr[Double] = js.undefined,
+    globalX: js.UndefOr[Double] = js.undefined,
+    globalY: js.UndefOr[Double] = js.undefined,
     hasPreciseScrollingDeltas: js.UndefOr[Boolean] = js.undefined,
     modifiers: js.Array[
       shift | control | ctrl | alt | meta | command | cmd | isKeypad | isAutoRepeat | leftButtonDown | middleButtonDown | rightButtonDown | capsLock | numLock | left | right
     ] = null,
-    movementX: Int | Double = null,
-    movementY: Int | Double = null,
-    wheelTicksX: Int | Double = null,
-    wheelTicksY: Int | Double = null
+    movementX: js.UndefOr[Double] = js.undefined,
+    movementY: js.UndefOr[Double] = js.undefined,
+    wheelTicksX: js.UndefOr[Double] = js.undefined,
+    wheelTicksY: js.UndefOr[Double] = js.undefined
   ): MouseWheelInputEvent = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (accelerationRatioX != null) __obj.updateDynamic("accelerationRatioX")(accelerationRatioX.asInstanceOf[js.Any])
-    if (accelerationRatioY != null) __obj.updateDynamic("accelerationRatioY")(accelerationRatioY.asInstanceOf[js.Any])
+    if (!js.isUndefined(accelerationRatioX)) __obj.updateDynamic("accelerationRatioX")(accelerationRatioX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(accelerationRatioY)) __obj.updateDynamic("accelerationRatioY")(accelerationRatioY.get.asInstanceOf[js.Any])
     if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
-    if (!js.isUndefined(canScroll)) __obj.updateDynamic("canScroll")(canScroll.asInstanceOf[js.Any])
-    if (clickCount != null) __obj.updateDynamic("clickCount")(clickCount.asInstanceOf[js.Any])
-    if (deltaX != null) __obj.updateDynamic("deltaX")(deltaX.asInstanceOf[js.Any])
-    if (deltaY != null) __obj.updateDynamic("deltaY")(deltaY.asInstanceOf[js.Any])
-    if (globalX != null) __obj.updateDynamic("globalX")(globalX.asInstanceOf[js.Any])
-    if (globalY != null) __obj.updateDynamic("globalY")(globalY.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasPreciseScrollingDeltas)) __obj.updateDynamic("hasPreciseScrollingDeltas")(hasPreciseScrollingDeltas.asInstanceOf[js.Any])
+    if (!js.isUndefined(canScroll)) __obj.updateDynamic("canScroll")(canScroll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickCount)) __obj.updateDynamic("clickCount")(clickCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deltaX)) __obj.updateDynamic("deltaX")(deltaX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deltaY)) __obj.updateDynamic("deltaY")(deltaY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(globalX)) __obj.updateDynamic("globalX")(globalX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(globalY)) __obj.updateDynamic("globalY")(globalY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasPreciseScrollingDeltas)) __obj.updateDynamic("hasPreciseScrollingDeltas")(hasPreciseScrollingDeltas.get.asInstanceOf[js.Any])
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
-    if (movementX != null) __obj.updateDynamic("movementX")(movementX.asInstanceOf[js.Any])
-    if (movementY != null) __obj.updateDynamic("movementY")(movementY.asInstanceOf[js.Any])
-    if (wheelTicksX != null) __obj.updateDynamic("wheelTicksX")(wheelTicksX.asInstanceOf[js.Any])
-    if (wheelTicksY != null) __obj.updateDynamic("wheelTicksY")(wheelTicksY.asInstanceOf[js.Any])
+    if (!js.isUndefined(movementX)) __obj.updateDynamic("movementX")(movementX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(movementY)) __obj.updateDynamic("movementY")(movementY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wheelTicksX)) __obj.updateDynamic("wheelTicksX")(wheelTicksX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wheelTicksY)) __obj.updateDynamic("wheelTicksY")(wheelTicksY.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MouseWheelInputEvent]
   }
 }

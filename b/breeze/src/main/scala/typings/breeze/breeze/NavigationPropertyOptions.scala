@@ -31,7 +31,7 @@ object NavigationPropertyOptions {
     if (associationName != null) __obj.updateDynamic("associationName")(associationName.asInstanceOf[js.Any])
     if (foreignKeyNames != null) __obj.updateDynamic("foreignKeyNames")(foreignKeyNames.asInstanceOf[js.Any])
     if (foreignKeyNamesOnServer != null) __obj.updateDynamic("foreignKeyNamesOnServer")(foreignKeyNamesOnServer.asInstanceOf[js.Any])
-    if (!js.isUndefined(isScalar)) __obj.updateDynamic("isScalar")(isScalar.asInstanceOf[js.Any])
+    if (!js.isUndefined(isScalar)) __obj.updateDynamic("isScalar")(isScalar.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (nameOnServer != null) __obj.updateDynamic("nameOnServer")(nameOnServer.asInstanceOf[js.Any])
     if (validators != null) __obj.updateDynamic("validators")(validators.asInstanceOf[js.Any])

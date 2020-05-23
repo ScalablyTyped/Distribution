@@ -32,15 +32,15 @@ object BeforeExpandCollapseEventArgs {
     collapsed: js.Any = null,
     expanded: js.Any = null,
     model: Model = null,
-    splitbarIndex: Int | Double = null,
+    splitbarIndex: js.UndefOr[Double] = js.undefined,
     `type`: String = null
   ): BeforeExpandCollapseEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (collapsed != null) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
     if (expanded != null) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (splitbarIndex != null) __obj.updateDynamic("splitbarIndex")(splitbarIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(splitbarIndex)) __obj.updateDynamic("splitbarIndex")(splitbarIndex.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeforeExpandCollapseEventArgs]
   }

@@ -18,9 +18,9 @@ trait PendingTaskCount extends js.Object {
 
 object PendingTaskCount {
   @scala.inline
-  def apply(count: Count, truncated: js.UndefOr[Boolean] = js.undefined): PendingTaskCount = {
+  def apply(count: Count, truncated: js.UndefOr[Truncated] = js.undefined): PendingTaskCount = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
-    if (!js.isUndefined(truncated)) __obj.updateDynamic("truncated")(truncated.asInstanceOf[js.Any])
+    if (!js.isUndefined(truncated)) __obj.updateDynamic("truncated")(truncated.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PendingTaskCount]
   }
 }

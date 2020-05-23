@@ -11,10 +11,10 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(filter: /* contentType */ String => Boolean = null, threshold: Int | Double = null): Options = {
+  def apply(filter: /* contentType */ String => Boolean = null, threshold: js.UndefOr[Double] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

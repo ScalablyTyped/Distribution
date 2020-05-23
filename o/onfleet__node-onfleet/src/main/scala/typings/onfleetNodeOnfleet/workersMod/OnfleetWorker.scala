@@ -1,6 +1,6 @@
 package typings.onfleetNodeOnfleet.workersMod
 
-import typings.onfleetNodeOnfleet.AnonAppVersion
+import typings.onfleetNodeOnfleet.anon.AppVersion
 import typings.onfleetNodeOnfleet.destinationsMod.Location
 import typings.onfleetNodeOnfleet.metadataMod.OnfleetMetadata
 import scala.scalajs.js
@@ -26,7 +26,7 @@ trait OnfleetWorker extends js.Object {
   var timeCreated: Double
   var timeLastModified: Double
   var timeLastSeen: Double
-  var userData: AnonAppVersion
+  var userData: AppVersion
   var vehicle: Vehicle | Null
 }
 
@@ -48,17 +48,13 @@ object OnfleetWorker {
     timeCreated: Double,
     timeLastModified: Double,
     timeLastSeen: Double,
-    userData: AnonAppVersion,
+    userData: AppVersion,
     activeTask: String = null,
-    delayTime: Int | Double = null,
+    delayTime: Double = null.asInstanceOf[Double],
     imageUrl: String = null,
     vehicle: Vehicle = null
   ): OnfleetWorker = {
-    val __obj = js.Dynamic.literal(accountStatus = accountStatus.asInstanceOf[js.Any], capacity = capacity.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], onDuty = onDuty.asInstanceOf[js.Any], organization = organization.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], tasks = tasks.asInstanceOf[js.Any], teams = teams.asInstanceOf[js.Any], timeCreated = timeCreated.asInstanceOf[js.Any], timeLastModified = timeLastModified.asInstanceOf[js.Any], timeLastSeen = timeLastSeen.asInstanceOf[js.Any], userData = userData.asInstanceOf[js.Any])
-    if (activeTask != null) __obj.updateDynamic("activeTask")(activeTask.asInstanceOf[js.Any])
-    if (delayTime != null) __obj.updateDynamic("delayTime")(delayTime.asInstanceOf[js.Any])
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
-    if (vehicle != null) __obj.updateDynamic("vehicle")(vehicle.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(accountStatus = accountStatus.asInstanceOf[js.Any], capacity = capacity.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], onDuty = onDuty.asInstanceOf[js.Any], organization = organization.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], tasks = tasks.asInstanceOf[js.Any], teams = teams.asInstanceOf[js.Any], timeCreated = timeCreated.asInstanceOf[js.Any], timeLastModified = timeLastModified.asInstanceOf[js.Any], timeLastSeen = timeLastSeen.asInstanceOf[js.Any], userData = userData.asInstanceOf[js.Any], activeTask = activeTask.asInstanceOf[js.Any], delayTime = delayTime.asInstanceOf[js.Any], imageUrl = imageUrl.asInstanceOf[js.Any], vehicle = vehicle.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnfleetWorker]
   }
 }

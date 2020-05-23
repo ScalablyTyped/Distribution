@@ -4,15 +4,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.SoundFormat")
-@js.native
-class SoundFormat protected () extends js.Object {
+trait SoundFormat extends js.Object {
   @JSName("PowerPoint.SoundFormat_typekey")
-  var PowerPointDotSoundFormat_typekey: SoundFormat = js.native
-  val SourceFullName: String = js.native
-  val Type: PpSoundFormatType = js.native
-  def Export(FileName: String): PpSoundFormatType = js.native
-  def Import(FileName: String): Unit = js.native
-  def Play(): Unit = js.native
+  var PowerPointDotSoundFormat_typekey: SoundFormat
+  val SourceFullName: String
+  val Type: PpSoundFormatType
+  def Export(FileName: String): PpSoundFormatType
+  def Import(FileName: String): Unit
+  def Play(): Unit
+}
+
+object SoundFormat {
+  @scala.inline
+  def apply(
+    Export: String => PpSoundFormatType,
+    Import: String => Unit,
+    Play: () => Unit,
+    PowerPointDotSoundFormat_typekey: SoundFormat,
+    SourceFullName: String,
+    Type: PpSoundFormatType
+  ): SoundFormat = {
+    val __obj = js.Dynamic.literal(Export = js.Any.fromFunction1(Export), Import = js.Any.fromFunction1(Import), Play = js.Any.fromFunction0(Play), SourceFullName = SourceFullName.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
+    __obj.updateDynamic("PowerPoint.SoundFormat_typekey")(PowerPointDotSoundFormat_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SoundFormat]
+  }
 }
 

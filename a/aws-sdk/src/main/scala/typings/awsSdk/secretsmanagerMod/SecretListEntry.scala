@@ -76,7 +76,7 @@ object SecretListEntry {
     LastRotatedDate: LastRotatedDateType = null,
     Name: SecretNameType = null,
     OwningService: OwningServiceType = null,
-    RotationEnabled: js.UndefOr[Boolean] = js.undefined,
+    RotationEnabled: js.UndefOr[RotationEnabledType] = js.undefined,
     RotationLambdaARN: RotationLambdaARNType = null,
     RotationRules: RotationRulesType = null,
     SecretVersionsToStages: SecretVersionsToStagesMapType = null,
@@ -92,7 +92,7 @@ object SecretListEntry {
     if (LastRotatedDate != null) __obj.updateDynamic("LastRotatedDate")(LastRotatedDate.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (OwningService != null) __obj.updateDynamic("OwningService")(OwningService.asInstanceOf[js.Any])
-    if (!js.isUndefined(RotationEnabled)) __obj.updateDynamic("RotationEnabled")(RotationEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(RotationEnabled)) __obj.updateDynamic("RotationEnabled")(RotationEnabled.get.asInstanceOf[js.Any])
     if (RotationLambdaARN != null) __obj.updateDynamic("RotationLambdaARN")(RotationLambdaARN.asInstanceOf[js.Any])
     if (RotationRules != null) __obj.updateDynamic("RotationRules")(RotationRules.asInstanceOf[js.Any])
     if (SecretVersionsToStages != null) __obj.updateDynamic("SecretVersionsToStages")(SecretVersionsToStages.asInstanceOf[js.Any])

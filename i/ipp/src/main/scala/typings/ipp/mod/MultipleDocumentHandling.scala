@@ -1,0 +1,25 @@
+package typings.ipp.mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.ipp.ippStrings.`separate-documents-collated-copies`
+  - typings.ipp.ippStrings.`separate-documents-uncollated-copies`
+  - typings.ipp.ippStrings.`single-document`
+  - typings.ipp.ippStrings.`single-document-new-sheet`
+*/
+trait MultipleDocumentHandling extends js.Object
+
+object MultipleDocumentHandling {
+  @scala.inline
+  def `separate-documents-collated-copies`: typings.ipp.ippStrings.`separate-documents-collated-copies` = "separate-documents-collated-copies".asInstanceOf[typings.ipp.ippStrings.`separate-documents-collated-copies`]
+  @scala.inline
+  def `separate-documents-uncollated-copies`: typings.ipp.ippStrings.`separate-documents-uncollated-copies` = "separate-documents-uncollated-copies".asInstanceOf[typings.ipp.ippStrings.`separate-documents-uncollated-copies`]
+  @scala.inline
+  def `single-document`: typings.ipp.ippStrings.`single-document` = "single-document".asInstanceOf[typings.ipp.ippStrings.`single-document`]
+  @scala.inline
+  def `single-document-new-sheet`: typings.ipp.ippStrings.`single-document-new-sheet` = "single-document-new-sheet".asInstanceOf[typings.ipp.ippStrings.`single-document-new-sheet`]
+}
+

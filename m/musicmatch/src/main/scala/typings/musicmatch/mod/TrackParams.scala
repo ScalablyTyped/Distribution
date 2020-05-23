@@ -11,10 +11,10 @@ trait TrackParams extends js.Object {
 
 object TrackParams {
   @scala.inline
-  def apply(track_id: Int | Double = null, track_mbid: Int | Double = null): TrackParams = {
+  def apply(track_id: js.UndefOr[Double] = js.undefined, track_mbid: js.UndefOr[Double] = js.undefined): TrackParams = {
     val __obj = js.Dynamic.literal()
-    if (track_id != null) __obj.updateDynamic("track_id")(track_id.asInstanceOf[js.Any])
-    if (track_mbid != null) __obj.updateDynamic("track_mbid")(track_mbid.asInstanceOf[js.Any])
+    if (!js.isUndefined(track_id)) __obj.updateDynamic("track_id")(track_id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(track_mbid)) __obj.updateDynamic("track_mbid")(track_mbid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackParams]
   }
 }

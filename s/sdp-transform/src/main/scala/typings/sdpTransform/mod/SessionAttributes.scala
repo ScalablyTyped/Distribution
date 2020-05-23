@@ -1,11 +1,11 @@
 package typings.sdpTransform.mod
 
-import typings.sdpTransform.AnonAddressTypes
-import typings.sdpTransform.AnonHash
-import typings.sdpTransform.AnonMids
-import typings.sdpTransform.AnonSemantic
-import typings.sdpTransform.AnonUri
-import typings.sdpTransform.AnonValueString
+import typings.sdpTransform.anon.AddressTypes
+import typings.sdpTransform.anon.Hash
+import typings.sdpTransform.anon.Mids
+import typings.sdpTransform.anon.Semantic
+import typings.sdpTransform.anon.Uri
+import typings.sdpTransform.anon.ValueString
 import typings.sdpTransform.sdpTransformStrings.inactive
 import typings.sdpTransform.sdpTransformStrings.recvonly
 import typings.sdpTransform.sdpTransformStrings.sendonly
@@ -16,12 +16,12 @@ import scala.scalajs.js.annotation._
 
 trait SessionAttributes extends SharedAttributes {
   // a=group:BUNDLE audio video
-  var groups: js.UndefOr[js.Array[AnonMids]] = js.undefined
+  var groups: js.UndefOr[js.Array[Mids]] = js.undefined
   // a=ice-options:google-ice
   var iceOptions: js.UndefOr[String] = js.undefined
   var icelite: js.UndefOr[String] = js.undefined
   // a=msid-semantic: WMS Jvlam5X3SX1OP6pn20zWogvaKJz5Hjf9OnlV
-  var msidSemantic: js.UndefOr[AnonSemantic] = js.undefined
+  var msidSemantic: js.UndefOr[Semantic] = js.undefined
 }
 
 object SessionAttributes {
@@ -29,17 +29,17 @@ object SessionAttributes {
   def apply(
     control: String = null,
     direction: sendrecv | recvonly | sendonly | inactive = null,
-    ext: js.Array[AnonUri] = null,
-    fingerprint: AnonHash = null,
-    groups: js.Array[AnonMids] = null,
+    ext: js.Array[Uri] = null,
+    fingerprint: Hash = null,
+    groups: js.Array[Mids] = null,
     iceOptions: String = null,
     icePwd: String = null,
     iceUfrag: String = null,
     icelite: String = null,
-    invalid: js.Array[AnonValueString] = null,
-    msidSemantic: AnonSemantic = null,
+    invalid: js.Array[ValueString] = null,
+    msidSemantic: Semantic = null,
     setup: String = null,
-    sourceFilter: AnonAddressTypes = null
+    sourceFilter: AddressTypes = null
   ): SessionAttributes = {
     val __obj = js.Dynamic.literal()
     if (control != null) __obj.updateDynamic("control")(control.asInstanceOf[js.Any])

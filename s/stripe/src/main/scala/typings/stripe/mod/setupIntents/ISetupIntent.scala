@@ -107,24 +107,21 @@ object ISetupIntent {
     payment_method_types: js.Array[SetupIntentPaymentMethodType],
     status: requires_payment_method | requires_confirmation | requires_action | processing | canceled | succeeded,
     usage: SetupIntentUsageType,
-    application: String | IApplication = null,
+    application: js.UndefOr[Null | String | IApplication] = js.undefined,
     cancelation_reason: SetupIntentCancelationReason = null,
     customer: String | ICustomer = null,
     description: String = null,
     last_setup_error: IStripeError = null,
-    on_behalf_of: String = null,
-    payment_method: String = null,
+    on_behalf_of: js.UndefOr[Null | String] = js.undefined,
+    payment_method: js.UndefOr[Null | String] = js.undefined,
     payment_method_options: ISetupIntentPaymentMethodOptions = null
   ): ISetupIntent = {
-    val __obj = js.Dynamic.literal(client_secret = client_secret.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], next_action = next_action.asInstanceOf[js.Any], payment_method_types = payment_method_types.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(client_secret = client_secret.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], next_action = next_action.asInstanceOf[js.Any], payment_method_types = payment_method_types.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any], cancelation_reason = cancelation_reason.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], last_setup_error = last_setup_error.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
-    if (cancelation_reason != null) __obj.updateDynamic("cancelation_reason")(cancelation_reason.asInstanceOf[js.Any])
-    if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
+    if (!js.isUndefined(application)) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (last_setup_error != null) __obj.updateDynamic("last_setup_error")(last_setup_error.asInstanceOf[js.Any])
-    if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of.asInstanceOf[js.Any])
-    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method.asInstanceOf[js.Any])
+    if (!js.isUndefined(on_behalf_of)) __obj.updateDynamic("on_behalf_of")(on_behalf_of.asInstanceOf[js.Any])
+    if (!js.isUndefined(payment_method)) __obj.updateDynamic("payment_method")(payment_method.asInstanceOf[js.Any])
     if (payment_method_options != null) __obj.updateDynamic("payment_method_options")(payment_method_options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISetupIntent]
   }

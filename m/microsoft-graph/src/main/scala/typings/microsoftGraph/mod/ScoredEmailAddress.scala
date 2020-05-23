@@ -22,13 +22,13 @@ object ScoredEmailAddress {
   def apply(
     address: String = null,
     itemId: String = null,
-    relevanceScore: Int | Double = null,
+    relevanceScore: js.UndefOr[Double] = js.undefined,
     selectionLikelihood: SelectionLikelihoodInfo = null
   ): ScoredEmailAddress = {
     val __obj = js.Dynamic.literal()
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
-    if (relevanceScore != null) __obj.updateDynamic("relevanceScore")(relevanceScore.asInstanceOf[js.Any])
+    if (!js.isUndefined(relevanceScore)) __obj.updateDynamic("relevanceScore")(relevanceScore.get.asInstanceOf[js.Any])
     if (selectionLikelihood != null) __obj.updateDynamic("selectionLikelihood")(selectionLikelihood.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScoredEmailAddress]
   }

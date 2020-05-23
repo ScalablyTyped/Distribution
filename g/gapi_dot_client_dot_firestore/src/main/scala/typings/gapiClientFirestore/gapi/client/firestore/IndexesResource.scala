@@ -1,9 +1,8 @@
 package typings.gapiClientFirestore.gapi.client.firestore
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientFirestore.AnonFilter
-import typings.gapiClientFirestore.AnonKey
-import typings.gapiClientFirestore.AnonName
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientFirestore.anon.Key
+import typings.gapiClientFirestore.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,22 +23,22 @@ trait IndexesResource extends js.Object {
     *
     * Indexes with a single field cannot be created.
     */
-  def create(request: AnonKey): Request_[Operation]
+  def create(request: Key): Request[Operation]
   /** Deletes an index. */
-  def delete(request: AnonName): Request_[js.Object]
+  def delete(request: Name): Request[js.Object]
   /** Gets an index. */
-  def get(request: AnonName): Request_[Index]
+  def get(request: Name): Request[Index]
   /** Lists the indexes that match the specified filters. */
-  def list(request: AnonFilter): Request_[ListIndexesResponse]
+  def list(request: typings.gapiClientFirestore.anon.Filter): Request[ListIndexesResponse]
 }
 
 object IndexesResource {
   @scala.inline
   def apply(
-    create: AnonKey => Request_[Operation],
-    delete: AnonName => Request_[js.Object],
-    get: AnonName => Request_[Index],
-    list: AnonFilter => Request_[ListIndexesResponse]
+    create: Key => Request[Operation],
+    delete: Name => Request[js.Object],
+    get: Name => Request[Index],
+    list: typings.gapiClientFirestore.anon.Filter => Request[ListIndexesResponse]
   ): IndexesResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
     __obj.asInstanceOf[IndexesResource]

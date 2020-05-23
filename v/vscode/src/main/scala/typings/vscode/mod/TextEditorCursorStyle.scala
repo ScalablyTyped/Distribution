@@ -12,38 +12,38 @@ sealed trait TextEditorCursorStyle extends js.Object
 @js.native
 object TextEditorCursorStyle extends js.Object {
   /**
-  		 * Render the cursor as a block filled.
-  		 */
+    * Render the cursor as a block filled.
+    */
   @js.native
   sealed trait Block extends TextEditorCursorStyle
   
   /**
-  		 * Render the cursor as a block outlined.
-  		 */
+    * Render the cursor as a block outlined.
+    */
   @js.native
   sealed trait BlockOutline extends TextEditorCursorStyle
   
   /**
-  		 * Render the cursor as a vertical thick line.
-  		 */
+    * Render the cursor as a vertical thick line.
+    */
   @js.native
   sealed trait Line extends TextEditorCursorStyle
   
   /**
-  		 * Render the cursor as a vertical thin line.
-  		 */
+    * Render the cursor as a vertical thin line.
+    */
   @js.native
   sealed trait LineThin extends TextEditorCursorStyle
   
   /**
-  		 * Render the cursor as a thick horizontal line.
-  		 */
+    * Render the cursor as a thick horizontal line.
+    */
   @js.native
   sealed trait Underline extends TextEditorCursorStyle
   
   /**
-  		 * Render the cursor as a thin horizontal line.
-  		 */
+    * Render the cursor as a thin horizontal line.
+    */
   @js.native
   sealed trait UnderlineThin extends TextEditorCursorStyle
   

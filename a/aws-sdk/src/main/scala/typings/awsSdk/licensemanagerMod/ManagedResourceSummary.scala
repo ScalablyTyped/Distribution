@@ -18,9 +18,9 @@ trait ManagedResourceSummary extends js.Object {
 
 object ManagedResourceSummary {
   @scala.inline
-  def apply(AssociationCount: Int | Double = null, ResourceType: ResourceType = null): ManagedResourceSummary = {
+  def apply(AssociationCount: js.UndefOr[BoxLong] = js.undefined, ResourceType: ResourceType = null): ManagedResourceSummary = {
     val __obj = js.Dynamic.literal()
-    if (AssociationCount != null) __obj.updateDynamic("AssociationCount")(AssociationCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(AssociationCount)) __obj.updateDynamic("AssociationCount")(AssociationCount.get.asInstanceOf[js.Any])
     if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedResourceSummary]
   }

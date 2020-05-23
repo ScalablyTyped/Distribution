@@ -24,12 +24,12 @@ object DescribeDestinationsRequest {
   @scala.inline
   def apply(
     DestinationNamePrefix: DestinationName = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[DescribeLimit] = js.undefined,
     nextToken: NextToken = null
   ): DescribeDestinationsRequest = {
     val __obj = js.Dynamic.literal()
     if (DestinationNamePrefix != null) __obj.updateDynamic("DestinationNamePrefix")(DestinationNamePrefix.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDestinationsRequest]
   }

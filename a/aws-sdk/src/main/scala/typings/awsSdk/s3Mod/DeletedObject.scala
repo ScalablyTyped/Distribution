@@ -27,13 +27,13 @@ trait DeletedObject extends js.Object {
 object DeletedObject {
   @scala.inline
   def apply(
-    DeleteMarker: js.UndefOr[Boolean] = js.undefined,
+    DeleteMarker: js.UndefOr[DeleteMarker] = js.undefined,
     DeleteMarkerVersionId: DeleteMarkerVersionId = null,
     Key: ObjectKey = null,
     VersionId: ObjectVersionId = null
   ): DeletedObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DeleteMarker)) __obj.updateDynamic("DeleteMarker")(DeleteMarker.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeleteMarker)) __obj.updateDynamic("DeleteMarker")(DeleteMarker.get.asInstanceOf[js.Any])
     if (DeleteMarkerVersionId != null) __obj.updateDynamic("DeleteMarkerVersionId")(DeleteMarkerVersionId.asInstanceOf[js.Any])
     if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
     if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])

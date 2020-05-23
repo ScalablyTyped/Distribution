@@ -2,7 +2,6 @@ package typings.tensorflowTfjsData
 
 import typings.tensorflowTfjsCore.tensorTypesMod.TensorContainer
 import typings.tensorflowTfjsData.lazyIteratorMod.LazyIterator
-import typings.tensorflowTfjsData.tensorflowTfjsDataNumbers.`10000`
 import typings.tensorflowTfjsData.typesMod.Container
 import typings.tensorflowTfjsData.typesMod.DataElement
 import scala.scalajs.js
@@ -281,7 +280,7 @@ object datasetMod extends js.Object {
   /* static members */
   @js.native
   object Dataset extends js.Object {
-    val MAX_BUFFER_SIZE: `10000` = js.native
+    val MAX_BUFFER_SIZE: /* 10000 */ Double = js.native
   }
   
   type DatasetContainer = Container[Dataset[DataElement]]

@@ -11,10 +11,8 @@ trait splitterTapsTypes extends js.Object {
 
 object splitterTapsTypes {
   @scala.inline
-  def apply(splitter: Int | Double = null, timeoutId: js.Object = null): splitterTapsTypes = {
-    val __obj = js.Dynamic.literal()
-    if (splitter != null) __obj.updateDynamic("splitter")(splitter.asInstanceOf[js.Any])
-    if (timeoutId != null) __obj.updateDynamic("timeoutId")(timeoutId.asInstanceOf[js.Any])
+  def apply(splitter: Double = null.asInstanceOf[Double], timeoutId: js.Object = null): splitterTapsTypes = {
+    val __obj = js.Dynamic.literal(splitter = splitter.asInstanceOf[js.Any], timeoutId = timeoutId.asInstanceOf[js.Any])
     __obj.asInstanceOf[splitterTapsTypes]
   }
 }

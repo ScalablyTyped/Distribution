@@ -59,16 +59,16 @@ object IPushpinOptions {
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableClickedStyle)) __obj.updateDynamic("enableClickedStyle")(enableClickedStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableHoverStyle)) __obj.updateDynamic("enableHoverStyle")(enableHoverStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableClickedStyle)) __obj.updateDynamic("enableClickedStyle")(enableClickedStyle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableHoverStyle)) __obj.updateDynamic("enableHoverStyle")(enableHoverStyle.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(roundClickableArea)) __obj.updateDynamic("roundClickableArea")(roundClickableArea.asInstanceOf[js.Any])
+    if (!js.isUndefined(roundClickableArea)) __obj.updateDynamic("roundClickableArea")(roundClickableArea.get.asInstanceOf[js.Any])
     if (subTitle != null) __obj.updateDynamic("subTitle")(subTitle.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (textOffset != null) __obj.updateDynamic("textOffset")(textOffset.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPushpinOptions]
   }
 }

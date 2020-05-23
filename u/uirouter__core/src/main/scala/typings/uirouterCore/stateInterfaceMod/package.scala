@@ -8,7 +8,7 @@ package object stateInterfaceMod {
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - typings.uirouterCore.targetStateMod.TargetState
-    - typings.uirouterCore.AnonParams
+    - typings.uirouterCore.anon.Params
     - scala.Unit
   */
   type RedirectToResult = typings.uirouterCore.stateInterfaceMod._RedirectToResult | java.lang.String | scala.Unit

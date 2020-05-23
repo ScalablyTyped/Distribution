@@ -24,17 +24,17 @@ object ColumnState {
     aggFunc: String | IAggFunc = null,
     hide: js.UndefOr[Boolean] = js.undefined,
     pinned: Boolean | String | left | right = null,
-    pivotIndex: Int | Double = null,
-    rowGroupIndex: Int | Double = null,
-    width: Int | Double = null
+    pivotIndex: js.UndefOr[Double] = js.undefined,
+    rowGroupIndex: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): ColumnState = {
     val __obj = js.Dynamic.literal(colId = colId.asInstanceOf[js.Any])
     if (aggFunc != null) __obj.updateDynamic("aggFunc")(aggFunc.asInstanceOf[js.Any])
-    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
+    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide.get.asInstanceOf[js.Any])
     if (pinned != null) __obj.updateDynamic("pinned")(pinned.asInstanceOf[js.Any])
-    if (pivotIndex != null) __obj.updateDynamic("pivotIndex")(pivotIndex.asInstanceOf[js.Any])
-    if (rowGroupIndex != null) __obj.updateDynamic("rowGroupIndex")(rowGroupIndex.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(pivotIndex)) __obj.updateDynamic("pivotIndex")(pivotIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowGroupIndex)) __obj.updateDynamic("rowGroupIndex")(rowGroupIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnState]
   }
 }

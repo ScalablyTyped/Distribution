@@ -23,11 +23,11 @@ object PutStreamOptions {
     meta: UserMeta,
     mime: String,
     timeout: Double,
-    contentLength: Int | Double = null,
+    contentLength: js.UndefOr[Double] = js.undefined,
     headers: js.Object = null
   ): PutStreamOptions = {
     val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], mime = mime.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
-    if (contentLength != null) __obj.updateDynamic("contentLength")(contentLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentLength)) __obj.updateDynamic("contentLength")(contentLength.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutStreamOptions]
   }

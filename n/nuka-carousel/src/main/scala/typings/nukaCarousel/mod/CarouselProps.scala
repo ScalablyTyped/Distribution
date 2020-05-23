@@ -1,8 +1,8 @@
 package typings.nukaCarousel.mod
 
-import typings.nukaCarousel.AnonContainerClassName
+import typings.nukaCarousel.anon.ContainerClassName
+import typings.nukaCarousel.anon.slideActioninCarouselSlid
 import typings.nukaCarousel.nukaCarouselStrings.zoom
-import typings.nukaCarousel.slideActioninCarouselSlid
 import typings.react.mod.ReactNode
 import typings.react.mod.RefObject
 import typings.std.HTMLInputElement
@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation._
 trait CarouselProps extends js.Object {
   /**
     * Hook to be called after a slide is changed
-    * @param prevSlide Index of the previous slide
+    * @param index Index of the current slide
     */
-  var afterSlide: js.UndefOr[js.Function1[/* prevSlide */ Double, Unit]] = js.undefined
+  var afterSlide: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
   /**
     * Adds a zoom effect on the currently visible slide.
     */
@@ -62,7 +62,7 @@ trait CarouselProps extends js.Object {
   /**
     * This prop lets you apply custom classes and styles to the default Next, Previous, and Paging Dots controls
     */
-  var defaultControlsConfig: js.UndefOr[AnonContainerClassName] = js.undefined
+  var defaultControlsConfig: js.UndefOr[ContainerClassName] = js.undefined
   /**
     * Disable slides animation
     * @default false
@@ -107,7 +107,7 @@ trait CarouselProps extends js.Object {
   /**
     * Optional callback to apply styles to the container of a control.
     */
-  var getControlsContainerStyle: js.UndefOr[js.Function1[/* key */ CarouselControlContainerProp, CSSProperties]] = js.undefined
+  var getControlsContainerStyles: js.UndefOr[js.Function1[/* key */ CarouselControlContainerProp, CSSProperties]] = js.undefined
   /**
     * Used to hardcode the slider height
     * @example '80%'
@@ -255,17 +255,17 @@ trait CarouselProps extends js.Object {
 object CarouselProps {
   @scala.inline
   def apply(
-    afterSlide: /* prevSlide */ Double => Unit = null,
+    afterSlide: /* index */ Double => Unit = null,
     animation: zoom = null,
     autoGenerateStyleTag: js.UndefOr[Boolean] = js.undefined,
     autoplay: js.UndefOr[Boolean] = js.undefined,
-    autoplayInterval: Int | Double = null,
+    autoplayInterval: js.UndefOr[Double] = js.undefined,
     autoplayReverse: js.UndefOr[Boolean] = js.undefined,
     beforeSlide: (/* currentSlide */ Double, /* endSlide */ Double) => Unit = null,
     cellAlign: CarouselCellAlignProp = null,
-    cellSpacing: Int | Double = null,
+    cellSpacing: js.UndefOr[Double] = js.undefined,
     className: String = null,
-    defaultControlsConfig: AnonContainerClassName = null,
+    defaultControlsConfig: ContainerClassName = null,
     disableAnimation: js.UndefOr[Boolean] = js.undefined,
     disableEdgeSwiping: js.UndefOr[Boolean] = js.undefined,
     dragging: js.UndefOr[Boolean] = js.undefined,
@@ -274,32 +274,32 @@ object CarouselProps {
     enableKeyboardControls: js.UndefOr[Boolean] = js.undefined,
     frameOverflow: String = null,
     framePadding: String = null,
-    getControlsContainerStyle: /* key */ CarouselControlContainerProp => CSSProperties = null,
+    getControlsContainerStyles: /* key */ CarouselControlContainerProp => CSSProperties = null,
     height: String = null,
     heightMode: CarouselHeightModeProp = null,
-    initialSlideHeight: Int | Double = null,
-    initialSlideWidth: Int | Double = null,
+    initialSlideHeight: js.UndefOr[Double] = js.undefined,
+    initialSlideWidth: js.UndefOr[Double] = js.undefined,
     innerRef: RefObject[HTMLInputElement] = null,
     keyCodeConfig: slideActioninCarouselSlid = null,
     onDragStart: () => Unit = null,
     onResize: () => Unit = null,
     pauseOnHover: js.UndefOr[Boolean] = js.undefined,
     renderAnnounceSlideMessage: /* hasCurrentSlideSlideCount */ CarouselSlideRenderControlProps => String = null,
-    renderBottomCenterControls: /* props */ CarouselSlideRenderControlProps => ReactNode = null,
-    renderBottomLeftControls: /* props */ CarouselSlideRenderControlProps => ReactNode = null,
-    renderBottomRightControls: /* props */ CarouselSlideRenderControlProps => ReactNode = null,
-    renderCenterCenterControls: /* props */ CarouselSlideRenderControlProps => ReactNode = null,
-    renderCenterLeftControls: /* props */ CarouselSlideRenderControlProps => ReactNode = null,
-    renderCenterRightControls: /* props */ CarouselSlideRenderControlProps => ReactNode = null,
-    renderTopCenterControls: /* props */ CarouselSlideRenderControlProps => ReactNode = null,
-    renderTopLeftControls: /* props */ CarouselSlideRenderControlProps => ReactNode = null,
-    renderTopRightControls: /* props */ CarouselSlideRenderControlProps => ReactNode = null,
+    renderBottomCenterControls: js.UndefOr[Null | (/* props */ CarouselSlideRenderControlProps => ReactNode)] = js.undefined,
+    renderBottomLeftControls: js.UndefOr[Null | (/* props */ CarouselSlideRenderControlProps => ReactNode)] = js.undefined,
+    renderBottomRightControls: js.UndefOr[Null | (/* props */ CarouselSlideRenderControlProps => ReactNode)] = js.undefined,
+    renderCenterCenterControls: js.UndefOr[Null | (/* props */ CarouselSlideRenderControlProps => ReactNode)] = js.undefined,
+    renderCenterLeftControls: js.UndefOr[Null | (/* props */ CarouselSlideRenderControlProps => ReactNode)] = js.undefined,
+    renderCenterRightControls: js.UndefOr[Null | (/* props */ CarouselSlideRenderControlProps => ReactNode)] = js.undefined,
+    renderTopCenterControls: js.UndefOr[Null | (/* props */ CarouselSlideRenderControlProps => ReactNode)] = js.undefined,
+    renderTopLeftControls: js.UndefOr[Null | (/* props */ CarouselSlideRenderControlProps => ReactNode)] = js.undefined,
+    renderTopRightControls: js.UndefOr[Null | (/* props */ CarouselSlideRenderControlProps => ReactNode)] = js.undefined,
     scrollMode: CarouselScrollModeProp = null,
-    slideIndex: Int | Double = null,
+    slideIndex: js.UndefOr[Double] = js.undefined,
     slideWidth: CarouselSlideWidthProp = null,
     slidesToScroll: CarouselSlidesToScrollProp = null,
-    slidesToShow: Int | Double = null,
-    speed: Int | Double = null,
+    slidesToShow: js.UndefOr[Double] = js.undefined,
+    speed: js.UndefOr[Double] = js.undefined,
     style: CSSProperties = null,
     swiping: js.UndefOr[Boolean] = js.undefined,
     transitionMode: CarouselTransitionModeProp = null,
@@ -311,56 +311,56 @@ object CarouselProps {
     val __obj = js.Dynamic.literal()
     if (afterSlide != null) __obj.updateDynamic("afterSlide")(js.Any.fromFunction1(afterSlide))
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoGenerateStyleTag)) __obj.updateDynamic("autoGenerateStyleTag")(autoGenerateStyleTag.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
-    if (autoplayInterval != null) __obj.updateDynamic("autoplayInterval")(autoplayInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplayReverse)) __obj.updateDynamic("autoplayReverse")(autoplayReverse.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoGenerateStyleTag)) __obj.updateDynamic("autoGenerateStyleTag")(autoGenerateStyleTag.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoplayInterval)) __obj.updateDynamic("autoplayInterval")(autoplayInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoplayReverse)) __obj.updateDynamic("autoplayReverse")(autoplayReverse.get.asInstanceOf[js.Any])
     if (beforeSlide != null) __obj.updateDynamic("beforeSlide")(js.Any.fromFunction2(beforeSlide))
     if (cellAlign != null) __obj.updateDynamic("cellAlign")(cellAlign.asInstanceOf[js.Any])
-    if (cellSpacing != null) __obj.updateDynamic("cellSpacing")(cellSpacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellSpacing)) __obj.updateDynamic("cellSpacing")(cellSpacing.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (defaultControlsConfig != null) __obj.updateDynamic("defaultControlsConfig")(defaultControlsConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableAnimation)) __obj.updateDynamic("disableAnimation")(disableAnimation.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableEdgeSwiping)) __obj.updateDynamic("disableEdgeSwiping")(disableEdgeSwiping.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragging)) __obj.updateDynamic("dragging")(dragging.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableAnimation)) __obj.updateDynamic("disableAnimation")(disableAnimation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableEdgeSwiping)) __obj.updateDynamic("disableEdgeSwiping")(disableEdgeSwiping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragging)) __obj.updateDynamic("dragging")(dragging.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (edgeEasing != null) __obj.updateDynamic("edgeEasing")(edgeEasing.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableKeyboardControls)) __obj.updateDynamic("enableKeyboardControls")(enableKeyboardControls.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableKeyboardControls)) __obj.updateDynamic("enableKeyboardControls")(enableKeyboardControls.get.asInstanceOf[js.Any])
     if (frameOverflow != null) __obj.updateDynamic("frameOverflow")(frameOverflow.asInstanceOf[js.Any])
     if (framePadding != null) __obj.updateDynamic("framePadding")(framePadding.asInstanceOf[js.Any])
-    if (getControlsContainerStyle != null) __obj.updateDynamic("getControlsContainerStyle")(js.Any.fromFunction1(getControlsContainerStyle))
+    if (getControlsContainerStyles != null) __obj.updateDynamic("getControlsContainerStyles")(js.Any.fromFunction1(getControlsContainerStyles))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (heightMode != null) __obj.updateDynamic("heightMode")(heightMode.asInstanceOf[js.Any])
-    if (initialSlideHeight != null) __obj.updateDynamic("initialSlideHeight")(initialSlideHeight.asInstanceOf[js.Any])
-    if (initialSlideWidth != null) __obj.updateDynamic("initialSlideWidth")(initialSlideWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialSlideHeight)) __obj.updateDynamic("initialSlideHeight")(initialSlideHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialSlideWidth)) __obj.updateDynamic("initialSlideWidth")(initialSlideWidth.get.asInstanceOf[js.Any])
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (keyCodeConfig != null) __obj.updateDynamic("keyCodeConfig")(keyCodeConfig.asInstanceOf[js.Any])
     if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction0(onDragStart))
     if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction0(onResize))
-    if (!js.isUndefined(pauseOnHover)) __obj.updateDynamic("pauseOnHover")(pauseOnHover.asInstanceOf[js.Any])
+    if (!js.isUndefined(pauseOnHover)) __obj.updateDynamic("pauseOnHover")(pauseOnHover.get.asInstanceOf[js.Any])
     if (renderAnnounceSlideMessage != null) __obj.updateDynamic("renderAnnounceSlideMessage")(js.Any.fromFunction1(renderAnnounceSlideMessage))
-    if (renderBottomCenterControls != null) __obj.updateDynamic("renderBottomCenterControls")(js.Any.fromFunction1(renderBottomCenterControls))
-    if (renderBottomLeftControls != null) __obj.updateDynamic("renderBottomLeftControls")(js.Any.fromFunction1(renderBottomLeftControls))
-    if (renderBottomRightControls != null) __obj.updateDynamic("renderBottomRightControls")(js.Any.fromFunction1(renderBottomRightControls))
-    if (renderCenterCenterControls != null) __obj.updateDynamic("renderCenterCenterControls")(js.Any.fromFunction1(renderCenterCenterControls))
-    if (renderCenterLeftControls != null) __obj.updateDynamic("renderCenterLeftControls")(js.Any.fromFunction1(renderCenterLeftControls))
-    if (renderCenterRightControls != null) __obj.updateDynamic("renderCenterRightControls")(js.Any.fromFunction1(renderCenterRightControls))
-    if (renderTopCenterControls != null) __obj.updateDynamic("renderTopCenterControls")(js.Any.fromFunction1(renderTopCenterControls))
-    if (renderTopLeftControls != null) __obj.updateDynamic("renderTopLeftControls")(js.Any.fromFunction1(renderTopLeftControls))
-    if (renderTopRightControls != null) __obj.updateDynamic("renderTopRightControls")(js.Any.fromFunction1(renderTopRightControls))
+    if (!js.isUndefined(renderBottomCenterControls)) __obj.updateDynamic("renderBottomCenterControls")(if (renderBottomCenterControls != null) js.Any.fromFunction1(renderBottomCenterControls.asInstanceOf[/* props */ CarouselSlideRenderControlProps => ReactNode]) else null)
+    if (!js.isUndefined(renderBottomLeftControls)) __obj.updateDynamic("renderBottomLeftControls")(if (renderBottomLeftControls != null) js.Any.fromFunction1(renderBottomLeftControls.asInstanceOf[/* props */ CarouselSlideRenderControlProps => ReactNode]) else null)
+    if (!js.isUndefined(renderBottomRightControls)) __obj.updateDynamic("renderBottomRightControls")(if (renderBottomRightControls != null) js.Any.fromFunction1(renderBottomRightControls.asInstanceOf[/* props */ CarouselSlideRenderControlProps => ReactNode]) else null)
+    if (!js.isUndefined(renderCenterCenterControls)) __obj.updateDynamic("renderCenterCenterControls")(if (renderCenterCenterControls != null) js.Any.fromFunction1(renderCenterCenterControls.asInstanceOf[/* props */ CarouselSlideRenderControlProps => ReactNode]) else null)
+    if (!js.isUndefined(renderCenterLeftControls)) __obj.updateDynamic("renderCenterLeftControls")(if (renderCenterLeftControls != null) js.Any.fromFunction1(renderCenterLeftControls.asInstanceOf[/* props */ CarouselSlideRenderControlProps => ReactNode]) else null)
+    if (!js.isUndefined(renderCenterRightControls)) __obj.updateDynamic("renderCenterRightControls")(if (renderCenterRightControls != null) js.Any.fromFunction1(renderCenterRightControls.asInstanceOf[/* props */ CarouselSlideRenderControlProps => ReactNode]) else null)
+    if (!js.isUndefined(renderTopCenterControls)) __obj.updateDynamic("renderTopCenterControls")(if (renderTopCenterControls != null) js.Any.fromFunction1(renderTopCenterControls.asInstanceOf[/* props */ CarouselSlideRenderControlProps => ReactNode]) else null)
+    if (!js.isUndefined(renderTopLeftControls)) __obj.updateDynamic("renderTopLeftControls")(if (renderTopLeftControls != null) js.Any.fromFunction1(renderTopLeftControls.asInstanceOf[/* props */ CarouselSlideRenderControlProps => ReactNode]) else null)
+    if (!js.isUndefined(renderTopRightControls)) __obj.updateDynamic("renderTopRightControls")(if (renderTopRightControls != null) js.Any.fromFunction1(renderTopRightControls.asInstanceOf[/* props */ CarouselSlideRenderControlProps => ReactNode]) else null)
     if (scrollMode != null) __obj.updateDynamic("scrollMode")(scrollMode.asInstanceOf[js.Any])
-    if (slideIndex != null) __obj.updateDynamic("slideIndex")(slideIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(slideIndex)) __obj.updateDynamic("slideIndex")(slideIndex.get.asInstanceOf[js.Any])
     if (slideWidth != null) __obj.updateDynamic("slideWidth")(slideWidth.asInstanceOf[js.Any])
     if (slidesToScroll != null) __obj.updateDynamic("slidesToScroll")(slidesToScroll.asInstanceOf[js.Any])
-    if (slidesToShow != null) __obj.updateDynamic("slidesToShow")(slidesToShow.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
+    if (!js.isUndefined(slidesToShow)) __obj.updateDynamic("slidesToShow")(slidesToShow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(swiping)) __obj.updateDynamic("swiping")(swiping.asInstanceOf[js.Any])
+    if (!js.isUndefined(swiping)) __obj.updateDynamic("swiping")(swiping.get.asInstanceOf[js.Any])
     if (transitionMode != null) __obj.updateDynamic("transitionMode")(transitionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(withoutControls)) __obj.updateDynamic("withoutControls")(withoutControls.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapAround)) __obj.updateDynamic("wrapAround")(wrapAround.asInstanceOf[js.Any])
+    if (!js.isUndefined(withoutControls)) __obj.updateDynamic("withoutControls")(withoutControls.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapAround)) __obj.updateDynamic("wrapAround")(wrapAround.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CarouselProps]
   }
 }

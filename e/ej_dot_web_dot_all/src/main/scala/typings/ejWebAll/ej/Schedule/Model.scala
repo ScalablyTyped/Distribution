@@ -388,7 +388,7 @@ object Model {
     enablePersistence: js.UndefOr[Boolean] = js.undefined,
     enableRTL: js.UndefOr[Boolean] = js.undefined,
     enableRecurrenceValidation: js.UndefOr[Boolean] = js.undefined,
-    endHour: Int | Double = null,
+    endHour: js.UndefOr[Double] = js.undefined,
     firstDayOfWeek: String = null,
     group: Group = null,
     height: String = null,
@@ -425,7 +425,7 @@ object Model {
     showQuickWindow: js.UndefOr[Boolean] = js.undefined,
     showTimeZoneFields: js.UndefOr[Boolean] = js.undefined,
     showWeekend: js.UndefOr[Boolean] = js.undefined,
-    startHour: Int | Double = null,
+    startHour: js.UndefOr[Double] = js.undefined,
     timeMode: String | TimeMode = null,
     timeScale: TimeScale = null,
     timeZone: String = null,
@@ -442,10 +442,10 @@ object Model {
     if (actionComplete != null) __obj.updateDynamic("actionComplete")(js.Any.fromFunction1(actionComplete))
     if (agendaViewSettings != null) __obj.updateDynamic("agendaViewSettings")(agendaViewSettings.asInstanceOf[js.Any])
     if (allDayCellsTemplateId != null) __obj.updateDynamic("allDayCellsTemplateId")(allDayCellsTemplateId.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDelete)) __obj.updateDynamic("allowDelete")(allowDelete.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDragAndDrop)) __obj.updateDynamic("allowDragAndDrop")(allowDragAndDrop.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowInline)) __obj.updateDynamic("allowInline")(allowInline.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDelete)) __obj.updateDynamic("allowDelete")(allowDelete.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDragAndDrop)) __obj.updateDynamic("allowDragAndDrop")(allowDragAndDrop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowInline)) __obj.updateDynamic("allowInline")(allowInline.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation.get.asInstanceOf[js.Any])
     if (appointmentChanged != null) __obj.updateDynamic("appointmentChanged")(js.Any.fromFunction1(appointmentChanged))
     if (appointmentClick != null) __obj.updateDynamic("appointmentClick")(js.Any.fromFunction1(appointmentClick))
     if (appointmentCreated != null) __obj.updateDynamic("appointmentCreated")(js.Any.fromFunction1(appointmentCreated))
@@ -477,17 +477,17 @@ object Model {
     if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction1(drag))
     if (dragStart != null) __obj.updateDynamic("dragStart")(js.Any.fromFunction1(dragStart))
     if (dragStop != null) __obj.updateDynamic("dragStop")(js.Any.fromFunction1(dragStop))
-    if (!js.isUndefined(enableAppointmentResize)) __obj.updateDynamic("enableAppointmentResize")(enableAppointmentResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLoadOnDemand)) __obj.updateDynamic("enableLoadOnDemand")(enableLoadOnDemand.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRecurrenceValidation)) __obj.updateDynamic("enableRecurrenceValidation")(enableRecurrenceValidation.asInstanceOf[js.Any])
-    if (endHour != null) __obj.updateDynamic("endHour")(endHour.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAppointmentResize)) __obj.updateDynamic("enableAppointmentResize")(enableAppointmentResize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableLoadOnDemand)) __obj.updateDynamic("enableLoadOnDemand")(enableLoadOnDemand.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRecurrenceValidation)) __obj.updateDynamic("enableRecurrenceValidation")(enableRecurrenceValidation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(endHour)) __obj.updateDynamic("endHour")(endHour.get.asInstanceOf[js.Any])
     if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDST)) __obj.updateDynamic("isDST")(isDST.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDST)) __obj.updateDynamic("isDST")(isDST.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.get.asInstanceOf[js.Any])
     if (keyDown != null) __obj.updateDynamic("keyDown")(js.Any.fromFunction1(keyDown))
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
@@ -499,7 +499,7 @@ object Model {
     if (overflowButtonHover != null) __obj.updateDynamic("overflowButtonHover")(js.Any.fromFunction1(overflowButtonHover))
     if (prioritySettings != null) __obj.updateDynamic("prioritySettings")(prioritySettings.asInstanceOf[js.Any])
     if (queryCellInfo != null) __obj.updateDynamic("queryCellInfo")(js.Any.fromFunction1(queryCellInfo))
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     if (reminder != null) __obj.updateDynamic("reminder")(js.Any.fromFunction1(reminder))
     if (reminderSettings != null) __obj.updateDynamic("reminderSettings")(reminderSettings.asInstanceOf[js.Any])
     if (renderDates != null) __obj.updateDynamic("renderDates")(renderDates.asInstanceOf[js.Any])
@@ -508,18 +508,18 @@ object Model {
     if (resizeStop != null) __obj.updateDynamic("resizeStop")(js.Any.fromFunction1(resizeStop))
     if (resourceHeaderTemplateId != null) __obj.updateDynamic("resourceHeaderTemplateId")(resourceHeaderTemplateId.asInstanceOf[js.Any])
     if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAllDayRow)) __obj.updateDynamic("showAllDayRow")(showAllDayRow.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAppointmentNavigator)) __obj.updateDynamic("showAppointmentNavigator")(showAppointmentNavigator.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCurrentTimeIndicator)) __obj.updateDynamic("showCurrentTimeIndicator")(showCurrentTimeIndicator.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDeleteConfirmationDialog)) __obj.updateDynamic("showDeleteConfirmationDialog")(showDeleteConfirmationDialog.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHeaderBar)) __obj.updateDynamic("showHeaderBar")(showHeaderBar.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLocationField)) __obj.updateDynamic("showLocationField")(showLocationField.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNextPrevMonth)) __obj.updateDynamic("showNextPrevMonth")(showNextPrevMonth.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOverflowButton)) __obj.updateDynamic("showOverflowButton")(showOverflowButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(showQuickWindow)) __obj.updateDynamic("showQuickWindow")(showQuickWindow.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTimeZoneFields)) __obj.updateDynamic("showTimeZoneFields")(showTimeZoneFields.asInstanceOf[js.Any])
-    if (!js.isUndefined(showWeekend)) __obj.updateDynamic("showWeekend")(showWeekend.asInstanceOf[js.Any])
-    if (startHour != null) __obj.updateDynamic("startHour")(startHour.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAllDayRow)) __obj.updateDynamic("showAllDayRow")(showAllDayRow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAppointmentNavigator)) __obj.updateDynamic("showAppointmentNavigator")(showAppointmentNavigator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCurrentTimeIndicator)) __obj.updateDynamic("showCurrentTimeIndicator")(showCurrentTimeIndicator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDeleteConfirmationDialog)) __obj.updateDynamic("showDeleteConfirmationDialog")(showDeleteConfirmationDialog.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHeaderBar)) __obj.updateDynamic("showHeaderBar")(showHeaderBar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLocationField)) __obj.updateDynamic("showLocationField")(showLocationField.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNextPrevMonth)) __obj.updateDynamic("showNextPrevMonth")(showNextPrevMonth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOverflowButton)) __obj.updateDynamic("showOverflowButton")(showOverflowButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showQuickWindow)) __obj.updateDynamic("showQuickWindow")(showQuickWindow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTimeZoneFields)) __obj.updateDynamic("showTimeZoneFields")(showTimeZoneFields.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showWeekend)) __obj.updateDynamic("showWeekend")(showWeekend.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startHour)) __obj.updateDynamic("startHour")(startHour.get.asInstanceOf[js.Any])
     if (timeMode != null) __obj.updateDynamic("timeMode")(timeMode.asInstanceOf[js.Any])
     if (timeScale != null) __obj.updateDynamic("timeScale")(timeScale.asInstanceOf[js.Any])
     if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])

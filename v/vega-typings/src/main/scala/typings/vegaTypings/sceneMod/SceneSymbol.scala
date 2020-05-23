@@ -1,6 +1,6 @@
 package typings.vegaTypings.sceneMod
 
-import typings.vegaTypings.AnonRole
+import typings.vegaTypings.anon.Role
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait SceneSymbol extends js.Object {
   var bounds: Bounds
   var datum: js.UndefOr[js.Object] = js.undefined
   var fill: String
-  var mark: AnonRole
+  var mark: Role
   var shape: String
   var size: Double
   var strokeWidth: Double
@@ -23,7 +23,7 @@ object SceneSymbol {
   def apply(
     bounds: Bounds,
     fill: String,
-    mark: AnonRole,
+    mark: Role,
     shape: String,
     size: Double,
     strokeWidth: Double,

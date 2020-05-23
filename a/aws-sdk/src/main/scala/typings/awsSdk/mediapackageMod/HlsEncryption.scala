@@ -32,14 +32,14 @@ object HlsEncryption {
     SpekeKeyProvider: SpekeKeyProvider,
     ConstantInitializationVector: string = null,
     EncryptionMethod: EncryptionMethod = null,
-    KeyRotationIntervalSeconds: Int | Double = null,
-    RepeatExtXKey: js.UndefOr[Boolean] = js.undefined
+    KeyRotationIntervalSeconds: js.UndefOr[integer] = js.undefined,
+    RepeatExtXKey: js.UndefOr[boolean] = js.undefined
   ): HlsEncryption = {
     val __obj = js.Dynamic.literal(SpekeKeyProvider = SpekeKeyProvider.asInstanceOf[js.Any])
     if (ConstantInitializationVector != null) __obj.updateDynamic("ConstantInitializationVector")(ConstantInitializationVector.asInstanceOf[js.Any])
     if (EncryptionMethod != null) __obj.updateDynamic("EncryptionMethod")(EncryptionMethod.asInstanceOf[js.Any])
-    if (KeyRotationIntervalSeconds != null) __obj.updateDynamic("KeyRotationIntervalSeconds")(KeyRotationIntervalSeconds.asInstanceOf[js.Any])
-    if (!js.isUndefined(RepeatExtXKey)) __obj.updateDynamic("RepeatExtXKey")(RepeatExtXKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(KeyRotationIntervalSeconds)) __obj.updateDynamic("KeyRotationIntervalSeconds")(KeyRotationIntervalSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RepeatExtXKey)) __obj.updateDynamic("RepeatExtXKey")(RepeatExtXKey.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HlsEncryption]
   }
 }

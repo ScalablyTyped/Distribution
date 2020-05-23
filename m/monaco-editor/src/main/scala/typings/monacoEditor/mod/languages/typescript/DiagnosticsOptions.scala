@@ -21,9 +21,9 @@ object DiagnosticsOptions {
   ): DiagnosticsOptions = {
     val __obj = js.Dynamic.literal()
     if (diagnosticCodesToIgnore != null) __obj.updateDynamic("diagnosticCodesToIgnore")(diagnosticCodesToIgnore.asInstanceOf[js.Any])
-    if (!js.isUndefined(noSemanticValidation)) __obj.updateDynamic("noSemanticValidation")(noSemanticValidation.asInstanceOf[js.Any])
-    if (!js.isUndefined(noSuggestionDiagnostics)) __obj.updateDynamic("noSuggestionDiagnostics")(noSuggestionDiagnostics.asInstanceOf[js.Any])
-    if (!js.isUndefined(noSyntaxValidation)) __obj.updateDynamic("noSyntaxValidation")(noSyntaxValidation.asInstanceOf[js.Any])
+    if (!js.isUndefined(noSemanticValidation)) __obj.updateDynamic("noSemanticValidation")(noSemanticValidation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noSuggestionDiagnostics)) __obj.updateDynamic("noSuggestionDiagnostics")(noSuggestionDiagnostics.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noSyntaxValidation)) __obj.updateDynamic("noSyntaxValidation")(noSyntaxValidation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagnosticsOptions]
   }
 }

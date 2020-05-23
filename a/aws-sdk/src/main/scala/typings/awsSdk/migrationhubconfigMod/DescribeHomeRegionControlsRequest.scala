@@ -33,14 +33,14 @@ object DescribeHomeRegionControlsRequest {
   def apply(
     ControlId: ControlId = null,
     HomeRegion: HomeRegion = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[DescribeHomeRegionControlsMaxResults] = js.undefined,
     NextToken: Token = null,
     Target: Target = null
   ): DescribeHomeRegionControlsRequest = {
     val __obj = js.Dynamic.literal()
     if (ControlId != null) __obj.updateDynamic("ControlId")(ControlId.asInstanceOf[js.Any])
     if (HomeRegion != null) __obj.updateDynamic("HomeRegion")(HomeRegion.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (Target != null) __obj.updateDynamic("Target")(Target.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeHomeRegionControlsRequest]

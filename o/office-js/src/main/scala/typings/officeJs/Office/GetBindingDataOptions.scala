@@ -61,23 +61,23 @@ object GetBindingDataOptions {
   def apply(
     asyncContext: js.Any = null,
     coercionType: CoercionType | String = null,
-    columnCount: Int | Double = null,
+    columnCount: js.UndefOr[Double] = js.undefined,
     filterType: FilterType | String = null,
-    rowCount: Int | Double = null,
+    rowCount: js.UndefOr[Double] = js.undefined,
     rows: String = null,
-    startColumn: Int | Double = null,
-    startRow: Int | Double = null,
+    startColumn: js.UndefOr[Double] = js.undefined,
+    startRow: js.UndefOr[Double] = js.undefined,
     valueFormat: ValueFormat | String = null
   ): GetBindingDataOptions = {
     val __obj = js.Dynamic.literal()
     if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext.asInstanceOf[js.Any])
     if (coercionType != null) __obj.updateDynamic("coercionType")(coercionType.asInstanceOf[js.Any])
-    if (columnCount != null) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnCount)) __obj.updateDynamic("columnCount")(columnCount.get.asInstanceOf[js.Any])
     if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
-    if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount.get.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (startColumn != null) __obj.updateDynamic("startColumn")(startColumn.asInstanceOf[js.Any])
-    if (startRow != null) __obj.updateDynamic("startRow")(startRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(startColumn)) __obj.updateDynamic("startColumn")(startColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startRow)) __obj.updateDynamic("startRow")(startRow.get.asInstanceOf[js.Any])
     if (valueFormat != null) __obj.updateDynamic("valueFormat")(valueFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBindingDataOptions]
   }

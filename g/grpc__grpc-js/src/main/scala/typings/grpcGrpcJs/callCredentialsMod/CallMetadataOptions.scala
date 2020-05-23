@@ -12,7 +12,6 @@ object CallMetadataOptions {
   @scala.inline
   def apply(service_url: String): CallMetadataOptions = {
     val __obj = js.Dynamic.literal(service_url = service_url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CallMetadataOptions]
   }
 }

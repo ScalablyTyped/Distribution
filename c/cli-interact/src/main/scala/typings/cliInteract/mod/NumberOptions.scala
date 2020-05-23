@@ -16,8 +16,8 @@ object NumberOptions {
     requireInteger: js.UndefOr[Boolean] = js.undefined
   ): NumberOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowNoAnswer)) __obj.updateDynamic("allowNoAnswer")(allowNoAnswer.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireInteger)) __obj.updateDynamic("requireInteger")(requireInteger.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowNoAnswer)) __obj.updateDynamic("allowNoAnswer")(allowNoAnswer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireInteger)) __obj.updateDynamic("requireInteger")(requireInteger.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberOptions]
   }
 }

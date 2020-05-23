@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SavingsPlansCoverageData extends js.Object {
   /**
-    * The percentage of your existing Savings Planscovered usage, divided by all of your eligible Savings Plans usage in an account(or set of accounts).
+    * The percentage of your existing Savings Plans covered usage, divided by all of your eligible Savings Plans usage in an account(or set of accounts).
     */
   var CoveragePercentage: js.UndefOr[GenericString] = js.native
   /**

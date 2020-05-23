@@ -1,7 +1,7 @@
 package typings.typeCheck
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typeCheck.TypeCheck_.TC
+import typings.typeCheck.TypeCheck.TC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -12,7 +12,7 @@ object CreateGenerateIdOptions {
   @scala.inline
   def apply(minify: js.UndefOr[Boolean] = js.undefined): CreateGenerateIdOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(minify)) __obj.updateDynamic("minify")(minify.asInstanceOf[js.Any])
+    if (!js.isUndefined(minify)) __obj.updateDynamic("minify")(minify.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateGenerateIdOptions]
   }
 }

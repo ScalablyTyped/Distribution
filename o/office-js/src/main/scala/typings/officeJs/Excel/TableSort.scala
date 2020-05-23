@@ -1,9 +1,9 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.TableSortData
 import typings.officeJs.Excel.Interfaces.TableSortLoadOptions
 import typings.officeJs.OfficeExtension.ClientObject
+import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.PinYin
 import typings.officeJs.officeJsStrings.StrokeCount
 import scala.scalajs.js
@@ -16,29 +16,28 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.2]
   */
-@JSGlobal("Excel.TableSort")
 @js.native
-class TableSort () extends ClientObject {
+trait TableSort extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_TableSort: RequestContext = js.native
   /**
     *
-    * Represents the current conditions used to last sort the table. Read-only.
+    * Specifies the current conditions used to last sort the table.
     *
     * [Api set: ExcelApi 1.2]
     */
   val fields: js.Array[SortField] = js.native
   /**
     *
-    * Represents whether the casing impacted the last sort of the table. Read-only.
+    * Specifies if the casing impacts the last sort of the table.
     *
     * [Api set: ExcelApi 1.2]
     */
   val matchCase: Boolean = js.native
   /**
     *
-    * Represents Chinese character ordering method last used to sort the table. Read-only.
+    * Represents Chinese character ordering method last used to sort the table.
     *
     * [Api set: ExcelApi 1.2]
     */
@@ -75,7 +74,7 @@ class TableSort () extends ClientObject {
     */
   def load(): TableSort = js.native
   def load(options: TableSortLoadOptions): TableSort = js.native
-  def load(propertyNamesAndPaths: AnonExpand): TableSort = js.native
+  def load(propertyNamesAndPaths: Expand): TableSort = js.native
   def load(propertyNames: String): TableSort = js.native
   def load(propertyNames: js.Array[String]): TableSort = js.native
   /**

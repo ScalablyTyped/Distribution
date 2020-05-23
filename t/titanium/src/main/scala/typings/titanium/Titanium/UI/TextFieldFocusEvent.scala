@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the field gains focus.
-		 */
+  * Fired when the field gains focus.
+  */
 trait TextFieldFocusEvent extends TextFieldBaseEvent {
   /**
-  			 * Value of the field.
-  			 */
+    * Value of the field.
+    */
   var value: String
 }
 

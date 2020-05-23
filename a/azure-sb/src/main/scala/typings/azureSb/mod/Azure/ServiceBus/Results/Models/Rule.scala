@@ -1,6 +1,6 @@
 package typings.azureSb.mod.Azure.ServiceBus.Results.Models
 
-import typings.azureSb.AnonAuthor
+import typings.azureSb.anon.Author
 import typings.azureSb.mod.Azure.ServiceBus.DateString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,7 +25,7 @@ object Rule {
     RuleName: String,
     SubscriptionName: String,
     TopicName: String,
-    _underscore: AnonAuthor
+    _underscore: Author
   ): Rule = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], CreatedAt = CreatedAt.asInstanceOf[js.Any], Filter = Filter.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], RuleName = RuleName.asInstanceOf[js.Any], SubscriptionName = SubscriptionName.asInstanceOf[js.Any], TopicName = TopicName.asInstanceOf[js.Any])
     __obj.updateDynamic("_")(_underscore.asInstanceOf[js.Any])

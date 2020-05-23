@@ -1,7 +1,7 @@
 package typings.gapiClientPlaymoviespartner.gapi.client.playmoviespartner
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientPlaymoviespartner.AnonCallback
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientPlaymoviespartner.anon.Callback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,12 +13,12 @@ trait CountryResource extends js.Object {
     * See _Authentication and Authorization rules_ and
     * _Get methods rules_ for more information about this method.
     */
-  def get(request: AnonCallback): Request_[StoreInfo]
+  def get(request: Callback): Request[StoreInfo]
 }
 
 object CountryResource {
   @scala.inline
-  def apply(get: AnonCallback => Request_[StoreInfo]): CountryResource = {
+  def apply(get: Callback => Request[StoreInfo]): CountryResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
     __obj.asInstanceOf[CountryResource]
   }

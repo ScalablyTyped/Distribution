@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation._
   * The Item object is a container for an item on an imaging device object. See the Items property on the Device or Item object for details on accessing
   * Item objects.
   */
-@JSGlobal("WIA.Item")
 @js.native
-class Item protected () extends js.Object {
+trait Item extends js.Object {
   /** A collection of all commands for this item */
   @JSName("Commands")
   val Commands_Original: DeviceCommands = js.native

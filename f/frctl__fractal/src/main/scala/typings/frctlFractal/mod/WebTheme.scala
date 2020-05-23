@@ -1,9 +1,9 @@
 package typings.frctlFractal.mod
 
-import typings.frctlFractal.AnonHandleString
-import typings.frctlFractal.AnonMount
-import typings.frctlFractal.AnonParams
-import typings.frctlFractal.AnonPath
+import typings.frctlFractal.anon.HandleString
+import typings.frctlFractal.anon.Mount
+import typings.frctlFractal.anon.Params
+import typings.frctlFractal.anon.Path
 import typings.frctlFractal.frctlFractalBooleans.`false`
 import typings.frctlFractal.frctlFractalStrings.favicon
 import typings.frctlFractal.frctlFractalStrings.format
@@ -22,7 +22,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.frctlFractal.mod.fractal.core.mixins.Configurable because Inheritance from two classes. Inlined config, config, set, set, get, get */ @JSImport("@frctl/fractal", "WebTheme")
 @js.native
 class WebTheme protected () extends EventEmitter {
@@ -30,8 +30,8 @@ class WebTheme protected () extends EventEmitter {
   def this(viewPaths: js.Array[String], options: WebThemeOptions) = this()
   def addLoadPath(path: String): this.type = js.native
   def addResolver(handle: String, resolvers: js.Any): this.type = js.native
-  def addRoute(path: String, opts: AnonHandleString): this.type = js.native
-  def addRoute(path: String, opts: AnonHandleString, resolver: js.Any): this.type = js.native
+  def addRoute(path: String, opts: HandleString): this.type = js.native
+  def addRoute(path: String, opts: HandleString, resolver: js.Any): this.type = js.native
   def addStatic(path: String, mount: String): Unit = js.native
   def config(): WebThemeOptions = js.native
   def config(config: WebThemeOptions): this.type = js.native
@@ -59,7 +59,7 @@ class WebTheme protected () extends EventEmitter {
   @JSName("getOption")
   def getOption_skin(key: skin): String = js.native
   @JSName("getOption")
-  def getOption_static(key: static): AnonMount = js.native
+  def getOption_static(key: static): Mount = js.native
   @JSName("getOption")
   def getOption_staticmount(key: staticDotmount): String = js.native
   @JSName("getOption")
@@ -67,7 +67,7 @@ class WebTheme protected () extends EventEmitter {
   @JSName("getOption")
   def getOption_version(key: version): String = js.native
   def loadPaths(): js.Array[String] = js.native
-  def matchRoute(urlPath: String): AnonParams | `false` = js.native
+  def matchRoute(urlPath: String): Params | `false` = js.native
   def options(): WebThemeOptions = js.native
   def options(value: WebThemeOptions): this.type = js.native
   def redirectView(): String = js.native
@@ -96,7 +96,7 @@ class WebTheme protected () extends EventEmitter {
   @JSName("setOption")
   def setOption_skin(key: skin, value: String): this.type = js.native
   @JSName("setOption")
-  def setOption_static(key: static, value: AnonMount): this.type = js.native
+  def setOption_static(key: static, value: Mount): this.type = js.native
   @JSName("setOption")
   def setOption_staticmount(key: staticDotmount, value: String): this.type = js.native
   @JSName("setOption")
@@ -104,7 +104,7 @@ class WebTheme protected () extends EventEmitter {
   @JSName("setOption")
   def setOption_version(key: version, value: String): this.type = js.native
   def setRedirectView(view: String): Unit = js.native
-  def static(): js.Array[AnonPath] = js.native
+  def static(): js.Array[Path] = js.native
   def urlFromRoute(handle: String, params: js.Any): String | Null = js.native
   def urlFromRoute(handle: String, params: js.Any, noRedirect: Boolean): String | Null = js.native
 }

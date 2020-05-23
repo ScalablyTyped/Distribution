@@ -30,11 +30,11 @@ object OrderListOptions {
     financial_status: FinancialStatus = null,
     fulfillment_status: FulfillmentStatus = null,
     ids: String = null,
-    limit: Int | Double = null,
-    page: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
+    page: js.UndefOr[Double] = js.undefined,
     processed_at_max: String = null,
     processed_at_min: String = null,
-    since_id: Int | Double = null,
+    since_id: js.UndefOr[Double] = js.undefined,
     status: OrderStatus = null,
     updated_at_max: String = null,
     updated_at_min: String = null
@@ -46,11 +46,11 @@ object OrderListOptions {
     if (financial_status != null) __obj.updateDynamic("financial_status")(financial_status.asInstanceOf[js.Any])
     if (fulfillment_status != null) __obj.updateDynamic("fulfillment_status")(fulfillment_status.asInstanceOf[js.Any])
     if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
     if (processed_at_max != null) __obj.updateDynamic("processed_at_max")(processed_at_max.asInstanceOf[js.Any])
     if (processed_at_min != null) __obj.updateDynamic("processed_at_min")(processed_at_min.asInstanceOf[js.Any])
-    if (since_id != null) __obj.updateDynamic("since_id")(since_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(since_id)) __obj.updateDynamic("since_id")(since_id.get.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (updated_at_max != null) __obj.updateDynamic("updated_at_max")(updated_at_max.asInstanceOf[js.Any])
     if (updated_at_min != null) __obj.updateDynamic("updated_at_min")(updated_at_min.asInstanceOf[js.Any])

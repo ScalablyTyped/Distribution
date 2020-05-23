@@ -29,15 +29,15 @@ trait ChromePerfLoggingPrefs extends js.Object {
 object ChromePerfLoggingPrefs {
   @scala.inline
   def apply(
-    bufferUsageReportingInterval: Int | Double = null,
+    bufferUsageReportingInterval: js.UndefOr[Double] = js.undefined,
     enableNetwork: js.UndefOr[Boolean] = js.undefined,
     enablePage: js.UndefOr[Boolean] = js.undefined,
     traceCategories: String = null
   ): ChromePerfLoggingPrefs = {
     val __obj = js.Dynamic.literal()
-    if (bufferUsageReportingInterval != null) __obj.updateDynamic("bufferUsageReportingInterval")(bufferUsageReportingInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableNetwork)) __obj.updateDynamic("enableNetwork")(enableNetwork.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePage)) __obj.updateDynamic("enablePage")(enablePage.asInstanceOf[js.Any])
+    if (!js.isUndefined(bufferUsageReportingInterval)) __obj.updateDynamic("bufferUsageReportingInterval")(bufferUsageReportingInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableNetwork)) __obj.updateDynamic("enableNetwork")(enableNetwork.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePage)) __obj.updateDynamic("enablePage")(enablePage.get.asInstanceOf[js.Any])
     if (traceCategories != null) __obj.updateDynamic("traceCategories")(traceCategories.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChromePerfLoggingPrefs]
   }

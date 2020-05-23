@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/remote/serializer", "isValidResourceName")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/remote/serializer", "isValidResourceName")
 @js.native
 object isValidResourceName extends js.Object {
   def apply(path: ResourcePath): Boolean = js.native

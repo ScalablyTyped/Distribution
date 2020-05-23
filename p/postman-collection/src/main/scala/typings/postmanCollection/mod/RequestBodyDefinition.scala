@@ -1,12 +1,12 @@
 package typings.postmanCollection.mod
 
-import typings.postmanCollection.AnonSrcString
+import typings.postmanCollection.anon.SrcString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RequestBodyDefinition extends PropertyBaseDefinition {
-  var file: js.UndefOr[String | AnonSrcString] = js.undefined
+  var file: js.UndefOr[String | SrcString] = js.undefined
   var formdata: js.UndefOr[js.Array[FormParamDefinition] | PropertyList[FormParam]] = js.undefined
   var mode: String
   var raw: js.UndefOr[String] = js.undefined
@@ -18,7 +18,7 @@ object RequestBodyDefinition {
   def apply(
     mode: String,
     description: String | DescriptionDefinition = null,
-    file: String | AnonSrcString = null,
+    file: String | SrcString = null,
     formdata: js.Array[FormParamDefinition] | PropertyList[FormParam] = null,
     raw: String = null,
     urlencoded: js.Array[QueryParamDefinition] | PropertyList[QueryParam] | String = null

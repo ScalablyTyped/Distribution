@@ -1,7 +1,7 @@
 package typings.materialComponentsWeb.mod
 
-import typings.materialDataTable.PartialMDCDataTableAdapte
 import typings.materialDataTable.adapterMod.MDCDataTableAdapter
+import typings.materialDataTable.anon.PartialMDCDataTableAdapte
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

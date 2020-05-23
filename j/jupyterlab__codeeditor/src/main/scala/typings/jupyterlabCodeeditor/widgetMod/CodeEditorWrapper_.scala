@@ -5,7 +5,7 @@ import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IModel
 import typings.jupyterlabCodeeditor.widgetMod.CodeEditorWrapper.IOptions
 import typings.luminoWidgets.mod.Widget
 import typings.luminoWidgets.mod.Widget.ResizeMessage
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,7 +53,7 @@ class CodeEditorWrapper_ protected () extends Widget {
     * called in response to events on the notebook panel's node. It should
     * not be called directly by user code.
     */
-  def handleEvent(event: Event_): Unit = js.native
+  def handleEvent(event: Event): Unit = js.native
   /**
     * Get the model used by the widget.
     */

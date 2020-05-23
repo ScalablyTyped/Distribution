@@ -1,6 +1,6 @@
 package typings.reactWeui.mod
 
-import typings.reactWeui.AnonDot
+import typings.reactWeui.anon.Dot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ class Badge protected () extends js.Object {
 @JSImport("react-weui", "Badge")
 @js.native
 object Badge extends js.Object {
-  var defaultProps: AnonDot = js.native
+  var defaultProps: Dot = js.native
   @js.native
   object propTypes extends js.Object {
     @js.native

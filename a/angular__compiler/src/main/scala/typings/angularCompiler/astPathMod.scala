@@ -1,5 +1,6 @@
 package typings.angularCompiler
 
+import typings.angularCompiler.anon.Instantiable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +16,7 @@ object astPathMod extends js.Object {
     var position: Double = js.native
     def childOf(node: T): js.UndefOr[T] = js.native
     def empty: Boolean = js.native
-    def first[N /* <: T */](ctor: AnonInstantiable[N, T]): js.UndefOr[N] = js.native
+    def first[N /* <: T */](ctor: Instantiable[N, T]): js.UndefOr[N] = js.native
     def head: js.UndefOr[T] = js.native
     def parentOf(): js.UndefOr[T] = js.native
     def parentOf(node: T): js.UndefOr[T] = js.native

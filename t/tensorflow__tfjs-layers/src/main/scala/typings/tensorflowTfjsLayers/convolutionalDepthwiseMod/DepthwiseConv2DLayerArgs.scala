@@ -56,12 +56,12 @@ object DepthwiseConv2DLayerArgs {
     activation: ActivationIdentifier = null,
     activityRegularizer: RegularizerIdentifier | Regularizer = null,
     batchInputShape: Shape = null,
-    batchSize: Int | Double = null,
+    batchSize: js.UndefOr[Double] = js.undefined,
     biasConstraint: ConstraintIdentifier | Constraint = null,
     biasInitializer: InitializerIdentifier | Initializer = null,
     biasRegularizer: RegularizerIdentifier | Regularizer = null,
     dataFormat: DataFormat = null,
-    depthMultiplier: Int | Double = null,
+    depthMultiplier: js.UndefOr[Double] = js.undefined,
     depthwiseConstraint: ConstraintIdentifier | Constraint = null,
     depthwiseInitializer: InitializerIdentifier | Initializer = null,
     depthwiseRegularizer: RegularizerIdentifier | Regularizer = null,
@@ -83,12 +83,12 @@ object DepthwiseConv2DLayerArgs {
     if (activation != null) __obj.updateDynamic("activation")(activation.asInstanceOf[js.Any])
     if (activityRegularizer != null) __obj.updateDynamic("activityRegularizer")(activityRegularizer.asInstanceOf[js.Any])
     if (batchInputShape != null) __obj.updateDynamic("batchInputShape")(batchInputShape.asInstanceOf[js.Any])
-    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
     if (biasConstraint != null) __obj.updateDynamic("biasConstraint")(biasConstraint.asInstanceOf[js.Any])
     if (biasInitializer != null) __obj.updateDynamic("biasInitializer")(biasInitializer.asInstanceOf[js.Any])
     if (biasRegularizer != null) __obj.updateDynamic("biasRegularizer")(biasRegularizer.asInstanceOf[js.Any])
     if (dataFormat != null) __obj.updateDynamic("dataFormat")(dataFormat.asInstanceOf[js.Any])
-    if (depthMultiplier != null) __obj.updateDynamic("depthMultiplier")(depthMultiplier.asInstanceOf[js.Any])
+    if (!js.isUndefined(depthMultiplier)) __obj.updateDynamic("depthMultiplier")(depthMultiplier.get.asInstanceOf[js.Any])
     if (depthwiseConstraint != null) __obj.updateDynamic("depthwiseConstraint")(depthwiseConstraint.asInstanceOf[js.Any])
     if (depthwiseInitializer != null) __obj.updateDynamic("depthwiseInitializer")(depthwiseInitializer.asInstanceOf[js.Any])
     if (depthwiseRegularizer != null) __obj.updateDynamic("depthwiseRegularizer")(depthwiseRegularizer.asInstanceOf[js.Any])
@@ -102,8 +102,8 @@ object DepthwiseConv2DLayerArgs {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (strides != null) __obj.updateDynamic("strides")(strides.asInstanceOf[js.Any])
-    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable.asInstanceOf[js.Any])
-    if (!js.isUndefined(useBias)) __obj.updateDynamic("useBias")(useBias.asInstanceOf[js.Any])
+    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useBias)) __obj.updateDynamic("useBias")(useBias.get.asInstanceOf[js.Any])
     if (weights != null) __obj.updateDynamic("weights")(weights.asInstanceOf[js.Any])
     __obj.asInstanceOf[DepthwiseConv2DLayerArgs]
   }

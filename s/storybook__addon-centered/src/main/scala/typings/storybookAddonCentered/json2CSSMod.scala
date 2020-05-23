@@ -1,5 +1,6 @@
 package typings.storybookAddonCentered
 
+import typings.storybookAddonCentered.anon.PartialCSSStyleDeclaratio
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

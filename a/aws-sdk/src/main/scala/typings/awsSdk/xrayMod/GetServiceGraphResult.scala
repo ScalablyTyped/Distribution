@@ -31,14 +31,14 @@ trait GetServiceGraphResult extends js.Object {
 object GetServiceGraphResult {
   @scala.inline
   def apply(
-    ContainsOldGroupVersions: js.UndefOr[scala.Boolean] = js.undefined,
+    ContainsOldGroupVersions: js.UndefOr[Boolean] = js.undefined,
     EndTime: Timestamp = null,
     NextToken: String = null,
     Services: ServiceList = null,
     StartTime: Timestamp = null
   ): GetServiceGraphResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ContainsOldGroupVersions)) __obj.updateDynamic("ContainsOldGroupVersions")(ContainsOldGroupVersions.asInstanceOf[js.Any])
+    if (!js.isUndefined(ContainsOldGroupVersions)) __obj.updateDynamic("ContainsOldGroupVersions")(ContainsOldGroupVersions.get.asInstanceOf[js.Any])
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (Services != null) __obj.updateDynamic("Services")(Services.asInstanceOf[js.Any])

@@ -6,36 +6,36 @@ import scala.scalajs.js.annotation._
 
 trait ColumnMovingEventUIParam extends js.Object {
   /**
-  	 * Gets the column index of the column that was being moved.
-  	 */
+    * Gets the column index of the column that was being moved.
+    */
   var columnIndex: js.UndefOr[Double] = js.undefined
   /**
-  	 * Gets the column key of the column that was being moved.
-  	 */
+    * Gets the column key of the column that was being moved.
+    */
   var columnKey: js.UndefOr[String] = js.undefined
   /**
-  	 * Gets a reference to the widget.
-  	 */
+    * Gets a reference to the widget.
+    */
   var owner: js.UndefOr[String] = js.undefined
   /**
-  	 * Gets the new column index of the column that was being moved.
-  	 */
+    * Gets the new column index of the column that was being moved.
+    */
   var targetIndex: js.UndefOr[Double] = js.undefined
 }
 
 object ColumnMovingEventUIParam {
   @scala.inline
   def apply(
-    columnIndex: Int | Double = null,
+    columnIndex: js.UndefOr[Double] = js.undefined,
     columnKey: String = null,
     owner: String = null,
-    targetIndex: Int | Double = null
+    targetIndex: js.UndefOr[Double] = js.undefined
   ): ColumnMovingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnIndex)) __obj.updateDynamic("columnIndex")(columnIndex.get.asInstanceOf[js.Any])
     if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
     if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (targetIndex != null) __obj.updateDynamic("targetIndex")(targetIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetIndex)) __obj.updateDynamic("targetIndex")(targetIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnMovingEventUIParam]
   }
 }

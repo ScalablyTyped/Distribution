@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.Tooltip
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,20 +25,6 @@ object Collision extends js.Object {
   ///No collision detection is take place
   @js.native
   sealed trait None extends Collision
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Collision with Double] = js.native
-  /* 1 */ @js.native
-  object Fit extends TopLevel[Fit with Double]
-  
-  /* 0 */ @js.native
-  object Flip extends TopLevel[Flip with Double]
-  
-  /* 2 */ @js.native
-  object FlipFit extends TopLevel[FlipFit with Double]
-  
-  /* 3 */ @js.native
-  object None extends TopLevel[None with Double]
   
 }
 

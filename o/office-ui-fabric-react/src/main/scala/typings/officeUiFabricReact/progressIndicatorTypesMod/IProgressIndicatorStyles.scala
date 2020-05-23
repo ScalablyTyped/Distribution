@@ -20,20 +20,20 @@ trait IProgressIndicatorStyles extends js.Object {
 object IProgressIndicatorStyles {
   @scala.inline
   def apply(
-    itemDescription: IStyle = null,
-    itemName: IStyle = null,
-    itemProgress: IStyle = null,
-    progressBar: IStyle = null,
-    progressTrack: IStyle = null,
-    root: IStyle = null
+    itemDescription: js.UndefOr[Null | IStyle] = js.undefined,
+    itemName: js.UndefOr[Null | IStyle] = js.undefined,
+    itemProgress: js.UndefOr[Null | IStyle] = js.undefined,
+    progressBar: js.UndefOr[Null | IStyle] = js.undefined,
+    progressTrack: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined
   ): IProgressIndicatorStyles = {
     val __obj = js.Dynamic.literal()
-    if (itemDescription != null) __obj.updateDynamic("itemDescription")(itemDescription.asInstanceOf[js.Any])
-    if (itemName != null) __obj.updateDynamic("itemName")(itemName.asInstanceOf[js.Any])
-    if (itemProgress != null) __obj.updateDynamic("itemProgress")(itemProgress.asInstanceOf[js.Any])
-    if (progressBar != null) __obj.updateDynamic("progressBar")(progressBar.asInstanceOf[js.Any])
-    if (progressTrack != null) __obj.updateDynamic("progressTrack")(progressTrack.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemDescription)) __obj.updateDynamic("itemDescription")(itemDescription.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemName)) __obj.updateDynamic("itemName")(itemName.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemProgress)) __obj.updateDynamic("itemProgress")(itemProgress.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressBar)) __obj.updateDynamic("progressBar")(progressBar.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressTrack)) __obj.updateDynamic("progressTrack")(progressTrack.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProgressIndicatorStyles]
   }
 }

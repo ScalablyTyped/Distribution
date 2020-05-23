@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("whatwg-url", "URLSearchParams")
 @js.native
-class URLSearchParams protected () extends js.Object {
+class URLSearchParams () extends js.Object {
   def this(init: String) = this()
   def this(init: js.Array[js.Tuple2[String, String]]) = this()
   def this(init: StringDictionary[String]) = this()

@@ -1,6 +1,7 @@
 package typings.firebaseAdmin.admin.auth
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.firebaseAdmin.authMod.admin.auth.MultiFactorSettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +37,7 @@ trait UserRecord extends js.Object {
   /**
     * Additional metadata about the user.
     */
-  var metadata: UserMetadata
+  var metadata: typings.firebaseAdmin.authMod.admin.auth.UserMetadata
   /**
     * The multi-factor related properties for the current user, if available.
     */
@@ -72,7 +73,7 @@ trait UserRecord extends js.Object {
   /**
     * An array of providers (for example, Google, Facebook) linked to the user.
     */
-  var providerData: js.Array[UserInfo]
+  var providerData: js.Array[typings.firebaseAdmin.authMod.admin.auth.UserInfo]
   /**
     * The ID of the tenant the user belongs to, if available.
     */
@@ -100,8 +101,8 @@ object UserRecord {
   def apply(
     disabled: Boolean,
     emailVerified: Boolean,
-    metadata: UserMetadata,
-    providerData: js.Array[UserInfo],
+    metadata: typings.firebaseAdmin.authMod.admin.auth.UserMetadata,
+    providerData: js.Array[typings.firebaseAdmin.authMod.admin.auth.UserInfo],
     toJSON: () => js.Object,
     uid: String,
     customClaims: StringDictionary[js.Any] = null,
@@ -112,7 +113,7 @@ object UserRecord {
     passwordSalt: String = null,
     phoneNumber: String = null,
     photoURL: String = null,
-    tenantId: String = null,
+    tenantId: js.UndefOr[Null | String] = js.undefined,
     tokensValidAfterTime: String = null
   ): UserRecord = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], emailVerified = emailVerified.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], providerData = providerData.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), uid = uid.asInstanceOf[js.Any])
@@ -124,7 +125,7 @@ object UserRecord {
     if (passwordSalt != null) __obj.updateDynamic("passwordSalt")(passwordSalt.asInstanceOf[js.Any])
     if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
     if (photoURL != null) __obj.updateDynamic("photoURL")(photoURL.asInstanceOf[js.Any])
-    if (tenantId != null) __obj.updateDynamic("tenantId")(tenantId.asInstanceOf[js.Any])
+    if (!js.isUndefined(tenantId)) __obj.updateDynamic("tenantId")(tenantId.asInstanceOf[js.Any])
     if (tokensValidAfterTime != null) __obj.updateDynamic("tokensValidAfterTime")(tokensValidAfterTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserRecord]
   }

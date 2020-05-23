@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jpush-react-native" : "2.8.0"
+      "jpush-react-native" : "2.8.1"
     }
   ],
   "test-dependencies" : [
     {
-      "jpush-react-native" : "2.8.0"
+      "jpush-react-native" : "2.8.1"
     }
   ],
   "compile-devDependencies" : [

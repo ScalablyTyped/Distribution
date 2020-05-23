@@ -1,10 +1,10 @@
 package typings.reactNativeFirebase.mod
 
 import org.scalablytyped.runtime.Instantiable2
-import typings.reactNativeFirebase.TypeofBlob
-import typings.reactNativeFirebase.TypeofFieldPath
-import typings.reactNativeFirebase.TypeofFieldValue
-import typings.reactNativeFirebase.TypeofTimestamp
+import typings.reactNativeFirebase.anon.TypeofBlob
+import typings.reactNativeFirebase.anon.TypeofFieldPath
+import typings.reactNativeFirebase.anon.TypeofFieldValue
+import typings.reactNativeFirebase.anon.TypeofTimestamp
 import typings.reactNativeFirebase.mod.RNFirebase.firestore.Firestore
 import typings.reactNativeFirebase.reactNativeFirebaseStrings.debug
 import typings.reactNativeFirebase.reactNativeFirebaseStrings.error_

@@ -7,10 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.dataviz.drawing.Element")
 @js.native
-class Element () extends Class {
-  def this(options: ElementOptions) = this()
+trait Element extends Class {
   var options: ElementOptions = js.native
   var parent: typings.kendoUi.kendo.drawing.Group = js.native
   def bbox(): typings.kendoUi.kendo.geometry.Rect = js.native

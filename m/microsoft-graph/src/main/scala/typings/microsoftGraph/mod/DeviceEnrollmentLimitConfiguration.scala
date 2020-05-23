@@ -18,9 +18,9 @@ object DeviceEnrollmentLimitConfiguration {
     displayName: String = null,
     id: String = null,
     lastModifiedDateTime: String = null,
-    limit: Int | Double = null,
-    priority: Int | Double = null,
-    version: Int | Double = null
+    limit: js.UndefOr[Double] = js.undefined,
+    priority: js.UndefOr[Double] = js.undefined,
+    version: js.UndefOr[Double] = js.undefined
   ): DeviceEnrollmentLimitConfiguration = {
     val __obj = js.Dynamic.literal()
     if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
@@ -29,9 +29,9 @@ object DeviceEnrollmentLimitConfiguration {
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceEnrollmentLimitConfiguration]
   }
 }

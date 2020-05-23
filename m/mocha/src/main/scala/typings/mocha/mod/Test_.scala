@@ -1,5 +1,6 @@
 package typings.mocha.mod
 
+import typings.mocha.Mocha.Test
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +12,5 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("mocha", "Test")
 @js.native
-class Test_ ()
-  extends typings.mocha.Mocha_.Test_
+class Test_ () extends Test
 

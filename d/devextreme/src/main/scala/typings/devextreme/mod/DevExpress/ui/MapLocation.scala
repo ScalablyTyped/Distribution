@@ -13,10 +13,10 @@ trait MapLocation extends js.Object {
 
 object MapLocation {
   @scala.inline
-  def apply(lat: Int | Double = null, lng: Int | Double = null): MapLocation = {
+  def apply(lat: js.UndefOr[Double] = js.undefined, lng: js.UndefOr[Double] = js.undefined): MapLocation = {
     val __obj = js.Dynamic.literal()
-    if (lat != null) __obj.updateDynamic("lat")(lat.asInstanceOf[js.Any])
-    if (lng != null) __obj.updateDynamic("lng")(lng.asInstanceOf[js.Any])
+    if (!js.isUndefined(lat)) __obj.updateDynamic("lat")(lat.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lng)) __obj.updateDynamic("lng")(lng.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapLocation]
   }
 }

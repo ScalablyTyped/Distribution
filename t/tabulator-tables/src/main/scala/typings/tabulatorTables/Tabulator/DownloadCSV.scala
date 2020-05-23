@@ -15,7 +15,7 @@ object DownloadCSV {
   @scala.inline
   def apply(bom: js.UndefOr[Boolean] = js.undefined, delimiter: String = null): DownloadCSV = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bom)) __obj.updateDynamic("bom")(bom.asInstanceOf[js.Any])
+    if (!js.isUndefined(bom)) __obj.updateDynamic("bom")(bom.get.asInstanceOf[js.Any])
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadCSV]
   }

@@ -35,6 +35,10 @@ trait IonicConfig extends js.Object {
     */
   var animated: js.UndefOr[Boolean] = js.undefined
   /**
+    * Overrides the default defaultHref in all `<ion-back-button>` components.
+    */
+  var backButtonDefaultHref: js.UndefOr[String] = js.undefined
+  /**
     * Overrides the default icon in all `<ion-back-button>` components.
     */
   var backButtonIcon: js.UndefOr[String] = js.undefined
@@ -128,6 +132,10 @@ trait IonicConfig extends js.Object {
     * Defaults to `true`.
     */
   var rippleEffect: js.UndefOr[Boolean] = js.undefined
+  /**
+    * If `true`, Ionic will enable a basic DOM sanitizer on component properties that accept custom HTML.
+    */
+  var sanitizerEnabled: js.UndefOr[Boolean] = js.undefined
   var scrollAssist: js.UndefOr[Boolean] = js.undefined
   var scrollPadding: js.UndefOr[Boolean] = js.undefined
   /**
@@ -170,18 +178,19 @@ object IonicConfig {
     alertEnter: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     alertLeave: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     animated: js.UndefOr[Boolean] = js.undefined,
+    backButtonDefaultHref: String = null,
     backButtonIcon: String = null,
     backButtonText: String = null,
     experimentalTransitionShadow: js.UndefOr[Boolean] = js.undefined,
     hardwareBackButton: js.UndefOr[Boolean] = js.undefined,
     hideCaretOnScroll: js.UndefOr[Boolean] = js.undefined,
-    infiniteLoadingSpinner: SpinnerTypes = null,
+    infiniteLoadingSpinner: js.UndefOr[Null | SpinnerTypes] = js.undefined,
     inputBlurring: js.UndefOr[Boolean] = js.undefined,
     inputShims: js.UndefOr[Boolean] = js.undefined,
-    keyboardHeight: Int | Double = null,
+    keyboardHeight: js.UndefOr[Double] = js.undefined,
     loadingEnter: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     loadingLeave: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
-    loadingSpinner: SpinnerTypes = null,
+    loadingSpinner: js.UndefOr[Null | SpinnerTypes] = js.undefined,
     menuIcon: String = null,
     menuType: String = null,
     modalEnter: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
@@ -194,8 +203,9 @@ object IonicConfig {
     popoverEnter: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     popoverLeave: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     refreshingIcon: String = null,
-    refreshingSpinner: SpinnerTypes = null,
+    refreshingSpinner: js.UndefOr[Null | SpinnerTypes] = js.undefined,
     rippleEffect: js.UndefOr[Boolean] = js.undefined,
+    sanitizerEnabled: js.UndefOr[Boolean] = js.undefined,
     scrollAssist: js.UndefOr[Boolean] = js.undefined,
     scrollPadding: js.UndefOr[Boolean] = js.undefined,
     spinner: SpinnerTypes = null,
@@ -206,45 +216,47 @@ object IonicConfig {
     toastLeave: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null
   ): IonicConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(_forceStatusbarPadding)) __obj.updateDynamic("_forceStatusbarPadding")(_forceStatusbarPadding.asInstanceOf[js.Any])
-    if (!js.isUndefined(_testing)) __obj.updateDynamic("_testing")(_testing.asInstanceOf[js.Any])
+    if (!js.isUndefined(_forceStatusbarPadding)) __obj.updateDynamic("_forceStatusbarPadding")(_forceStatusbarPadding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(_testing)) __obj.updateDynamic("_testing")(_testing.get.asInstanceOf[js.Any])
     if (_zoneGate != null) __obj.updateDynamic("_zoneGate")(js.Any.fromFunction1(_zoneGate))
     if (actionSheetEnter != null) __obj.updateDynamic("actionSheetEnter")(js.Any.fromFunction2(actionSheetEnter))
     if (actionSheetLeave != null) __obj.updateDynamic("actionSheetLeave")(js.Any.fromFunction2(actionSheetLeave))
     if (alertEnter != null) __obj.updateDynamic("alertEnter")(js.Any.fromFunction2(alertEnter))
     if (alertLeave != null) __obj.updateDynamic("alertLeave")(js.Any.fromFunction2(alertLeave))
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
+    if (backButtonDefaultHref != null) __obj.updateDynamic("backButtonDefaultHref")(backButtonDefaultHref.asInstanceOf[js.Any])
     if (backButtonIcon != null) __obj.updateDynamic("backButtonIcon")(backButtonIcon.asInstanceOf[js.Any])
     if (backButtonText != null) __obj.updateDynamic("backButtonText")(backButtonText.asInstanceOf[js.Any])
-    if (!js.isUndefined(experimentalTransitionShadow)) __obj.updateDynamic("experimentalTransitionShadow")(experimentalTransitionShadow.asInstanceOf[js.Any])
-    if (!js.isUndefined(hardwareBackButton)) __obj.updateDynamic("hardwareBackButton")(hardwareBackButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideCaretOnScroll)) __obj.updateDynamic("hideCaretOnScroll")(hideCaretOnScroll.asInstanceOf[js.Any])
-    if (infiniteLoadingSpinner != null) __obj.updateDynamic("infiniteLoadingSpinner")(infiniteLoadingSpinner.asInstanceOf[js.Any])
-    if (!js.isUndefined(inputBlurring)) __obj.updateDynamic("inputBlurring")(inputBlurring.asInstanceOf[js.Any])
-    if (!js.isUndefined(inputShims)) __obj.updateDynamic("inputShims")(inputShims.asInstanceOf[js.Any])
-    if (keyboardHeight != null) __obj.updateDynamic("keyboardHeight")(keyboardHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(experimentalTransitionShadow)) __obj.updateDynamic("experimentalTransitionShadow")(experimentalTransitionShadow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hardwareBackButton)) __obj.updateDynamic("hardwareBackButton")(hardwareBackButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideCaretOnScroll)) __obj.updateDynamic("hideCaretOnScroll")(hideCaretOnScroll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(infiniteLoadingSpinner)) __obj.updateDynamic("infiniteLoadingSpinner")(infiniteLoadingSpinner.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputBlurring)) __obj.updateDynamic("inputBlurring")(inputBlurring.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputShims)) __obj.updateDynamic("inputShims")(inputShims.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboardHeight)) __obj.updateDynamic("keyboardHeight")(keyboardHeight.get.asInstanceOf[js.Any])
     if (loadingEnter != null) __obj.updateDynamic("loadingEnter")(js.Any.fromFunction2(loadingEnter))
     if (loadingLeave != null) __obj.updateDynamic("loadingLeave")(js.Any.fromFunction2(loadingLeave))
-    if (loadingSpinner != null) __obj.updateDynamic("loadingSpinner")(loadingSpinner.asInstanceOf[js.Any])
+    if (!js.isUndefined(loadingSpinner)) __obj.updateDynamic("loadingSpinner")(loadingSpinner.asInstanceOf[js.Any])
     if (menuIcon != null) __obj.updateDynamic("menuIcon")(menuIcon.asInstanceOf[js.Any])
     if (menuType != null) __obj.updateDynamic("menuType")(menuType.asInstanceOf[js.Any])
     if (modalEnter != null) __obj.updateDynamic("modalEnter")(js.Any.fromFunction2(modalEnter))
     if (modalLeave != null) __obj.updateDynamic("modalLeave")(js.Any.fromFunction2(modalLeave))
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (navAnimation != null) __obj.updateDynamic("navAnimation")(js.Any.fromFunction2(navAnimation))
-    if (!js.isUndefined(persistConfig)) __obj.updateDynamic("persistConfig")(persistConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistConfig)) __obj.updateDynamic("persistConfig")(persistConfig.get.asInstanceOf[js.Any])
     if (pickerEnter != null) __obj.updateDynamic("pickerEnter")(js.Any.fromFunction2(pickerEnter))
     if (pickerLeave != null) __obj.updateDynamic("pickerLeave")(js.Any.fromFunction2(pickerLeave))
     if (popoverEnter != null) __obj.updateDynamic("popoverEnter")(js.Any.fromFunction2(popoverEnter))
     if (popoverLeave != null) __obj.updateDynamic("popoverLeave")(js.Any.fromFunction2(popoverLeave))
     if (refreshingIcon != null) __obj.updateDynamic("refreshingIcon")(refreshingIcon.asInstanceOf[js.Any])
-    if (refreshingSpinner != null) __obj.updateDynamic("refreshingSpinner")(refreshingSpinner.asInstanceOf[js.Any])
-    if (!js.isUndefined(rippleEffect)) __obj.updateDynamic("rippleEffect")(rippleEffect.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollAssist)) __obj.updateDynamic("scrollAssist")(scrollAssist.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollPadding)) __obj.updateDynamic("scrollPadding")(scrollPadding.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshingSpinner)) __obj.updateDynamic("refreshingSpinner")(refreshingSpinner.asInstanceOf[js.Any])
+    if (!js.isUndefined(rippleEffect)) __obj.updateDynamic("rippleEffect")(rippleEffect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sanitizerEnabled)) __obj.updateDynamic("sanitizerEnabled")(sanitizerEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollAssist)) __obj.updateDynamic("scrollAssist")(scrollAssist.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollPadding)) __obj.updateDynamic("scrollPadding")(scrollPadding.get.asInstanceOf[js.Any])
     if (spinner != null) __obj.updateDynamic("spinner")(spinner.asInstanceOf[js.Any])
-    if (!js.isUndefined(statusTap)) __obj.updateDynamic("statusTap")(statusTap.asInstanceOf[js.Any])
-    if (!js.isUndefined(swipeBackEnabled)) __obj.updateDynamic("swipeBackEnabled")(swipeBackEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusTap)) __obj.updateDynamic("statusTap")(statusTap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(swipeBackEnabled)) __obj.updateDynamic("swipeBackEnabled")(swipeBackEnabled.get.asInstanceOf[js.Any])
     if (tabButtonLayout != null) __obj.updateDynamic("tabButtonLayout")(tabButtonLayout.asInstanceOf[js.Any])
     if (toastEnter != null) __obj.updateDynamic("toastEnter")(js.Any.fromFunction2(toastEnter))
     if (toastLeave != null) __obj.updateDynamic("toastLeave")(js.Any.fromFunction2(toastLeave))

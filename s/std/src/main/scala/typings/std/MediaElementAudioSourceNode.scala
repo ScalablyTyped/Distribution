@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,12 +9,4 @@ import scala.scalajs.js.annotation._
 trait MediaElementAudioSourceNode extends AudioNode {
   val mediaElement: HTMLMediaElement = js.native
 }
-
-@JSGlobal("MediaElementAudioSourceNode")
-@js.native
-object MediaElementAudioSourceNode extends Instantiable2[
-      /* context */ AudioContext, 
-      /* options */ MediaElementAudioSourceOptions, 
-      MediaElementAudioSourceNode
-    ]
 

@@ -1,14 +1,14 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.Anon0
-import typings.devextreme.AnonCancelComponentData
-import typings.devextreme.AnonComponentElementModelTarget
-import typings.devextreme.AnonComponentTElementDxElementModelAny
-import typings.devextreme.AnonElement
-import typings.devextreme.AnonFormatModel
-import typings.devextreme.AnonModel
-import typings.devextreme.AnonName
-import typings.devextreme.AnonTargetAny
+import typings.devextreme.anon.CancelComponentData
+import typings.devextreme.anon.ComponentElementModelTarget
+import typings.devextreme.anon.ComponentTElementDxElementModelAny
+import typings.devextreme.anon.Element
+import typings.devextreme.anon.FormatModel
+import typings.devextreme.anon.Model
+import typings.devextreme.anon.Name
+import typings.devextreme.anon.TargetAny
+import typings.devextreme.anon.`0`
 import typings.devextreme.devextremeStrings.genericDotcarmine
 import typings.devextreme.devextremeStrings.genericDotcontrast
 import typings.devextreme.devextremeStrings.genericDotdark
@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation._
 
 trait dxLinearGaugeOptions extends BaseGaugeOptions[dxLinearGauge] {
   /** @name dxLinearGauge.Options.geometry */
-  var geometry: js.UndefOr[Anon0] = js.undefined
+  var geometry: js.UndefOr[`0`] = js.undefined
   /** @name dxLinearGauge.Options.rangeContainer */
   @JSName("rangeContainer")
   var rangeContainer_dxLinearGaugeOptions: js.UndefOr[dxLinearGaugeRangeContainer] = js.undefined
@@ -51,20 +51,20 @@ object dxLinearGaugeOptions {
     disabled: js.UndefOr[Boolean] = js.undefined,
     elementAttr: js.Any = null,
     export: BaseWidgetExport = null,
-    geometry: Anon0 = null,
+    geometry: `0` = null,
     height: Double | String | (js.Function0[Double | String]) = null,
     loadingIndicator: BaseGaugeLoadingIndicator = null,
     margin: BaseWidgetMargin = null,
-    onDisposing: /* e */ AnonModel[dxLinearGauge] => _ = null,
-    onDrawn: /* e */ AnonComponentTElementDxElementModelAny[dxLinearGauge] => _ = null,
-    onExported: /* e */ AnonComponentTElementDxElementModelAny[dxLinearGauge] => _ = null,
-    onExporting: /* e */ AnonFormatModel[dxLinearGauge] => _ = null,
-    onFileSaving: /* e */ AnonCancelComponentData[dxLinearGauge] => _ = null,
-    onIncidentOccurred: /* e */ AnonTargetAny[dxLinearGauge] => _ = null,
-    onInitialized: /* e */ AnonElement[dxLinearGauge] => _ = null,
-    onOptionChanged: /* e */ AnonName[dxLinearGauge] => _ = null,
-    onTooltipHidden: /* e */ AnonComponentElementModelTarget[dxLinearGauge] => _ = null,
-    onTooltipShown: /* e */ AnonComponentElementModelTarget[dxLinearGauge] => _ = null,
+    onDisposing: /* e */ Model[dxLinearGauge] => _ = null,
+    onDrawn: /* e */ ComponentTElementDxElementModelAny[dxLinearGauge] => _ = null,
+    onExported: /* e */ ComponentTElementDxElementModelAny[dxLinearGauge] => _ = null,
+    onExporting: /* e */ FormatModel[dxLinearGauge] => _ = null,
+    onFileSaving: /* e */ CancelComponentData[dxLinearGauge] => _ = null,
+    onIncidentOccurred: /* e */ TargetAny[dxLinearGauge] => _ = null,
+    onInitialized: /* e */ Element[dxLinearGauge] => _ = null,
+    onOptionChanged: /* e */ Name[dxLinearGauge] => _ = null,
+    onTooltipHidden: /* e */ ComponentElementModelTarget[dxLinearGauge] => _ = null,
+    onTooltipShown: /* e */ ComponentElementModelTarget[dxLinearGauge] => _ = null,
     pathModified: js.UndefOr[Boolean] = js.undefined,
     rangeContainer: dxLinearGaugeRangeContainer = null,
     redrawOnResize: js.UndefOr[Boolean] = js.undefined,
@@ -76,7 +76,7 @@ object dxLinearGaugeOptions {
     theme: genericDotdark | genericDotlight | genericDotcontrast | ios7Dotdefault | genericDotcarmine | genericDotdarkmoon | genericDotdarkviolet | genericDotgreenmist | genericDotsoftblue | materialDotblueDotlight | materialDotlimeDotlight | materialDotorangeDotlight | materialDotpurpleDotlight | materialDottealDotlight = null,
     title: BaseWidgetTitle | String = null,
     tooltip: BaseGaugeTooltip = null,
-    value: Int | Double = null,
+    value: js.UndefOr[Double] = js.undefined,
     valueIndicator: GaugeIndicator = null,
     width: Double | String | (js.Function0[Double | String]) = null
   ): dxLinearGaugeOptions = {
@@ -84,7 +84,7 @@ object dxLinearGaugeOptions {
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
     if (containerBackgroundColor != null) __obj.updateDynamic("containerBackgroundColor")(containerBackgroundColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
     if (export != null) __obj.updateDynamic("export")(export.asInstanceOf[js.Any])
     if (geometry != null) __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
@@ -101,10 +101,10 @@ object dxLinearGaugeOptions {
     if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1(onOptionChanged))
     if (onTooltipHidden != null) __obj.updateDynamic("onTooltipHidden")(js.Any.fromFunction1(onTooltipHidden))
     if (onTooltipShown != null) __obj.updateDynamic("onTooltipShown")(js.Any.fromFunction1(onTooltipShown))
-    if (!js.isUndefined(pathModified)) __obj.updateDynamic("pathModified")(pathModified.asInstanceOf[js.Any])
+    if (!js.isUndefined(pathModified)) __obj.updateDynamic("pathModified")(pathModified.get.asInstanceOf[js.Any])
     if (rangeContainer != null) __obj.updateDynamic("rangeContainer")(rangeContainer.asInstanceOf[js.Any])
-    if (!js.isUndefined(redrawOnResize)) __obj.updateDynamic("redrawOnResize")(redrawOnResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(redrawOnResize)) __obj.updateDynamic("redrawOnResize")(redrawOnResize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (subvalueIndicator != null) __obj.updateDynamic("subvalueIndicator")(subvalueIndicator.asInstanceOf[js.Any])
@@ -112,7 +112,7 @@ object dxLinearGaugeOptions {
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     if (valueIndicator != null) __obj.updateDynamic("valueIndicator")(valueIndicator.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxLinearGaugeOptions]

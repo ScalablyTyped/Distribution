@@ -60,21 +60,21 @@ object HlsManifestCreateOrUpdateParameters {
     AdMarkers: AdMarkers = null,
     AdTriggers: AdTriggers = null,
     AdsOnDeliveryRestrictions: AdsOnDeliveryRestrictions = null,
-    IncludeIframeOnlyStream: js.UndefOr[Boolean] = js.undefined,
+    IncludeIframeOnlyStream: js.UndefOr[boolean] = js.undefined,
     ManifestName: string = null,
     PlaylistType: PlaylistType = null,
-    PlaylistWindowSeconds: Int | Double = null,
-    ProgramDateTimeIntervalSeconds: Int | Double = null
+    PlaylistWindowSeconds: js.UndefOr[integer] = js.undefined,
+    ProgramDateTimeIntervalSeconds: js.UndefOr[integer] = js.undefined
   ): HlsManifestCreateOrUpdateParameters = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     if (AdMarkers != null) __obj.updateDynamic("AdMarkers")(AdMarkers.asInstanceOf[js.Any])
     if (AdTriggers != null) __obj.updateDynamic("AdTriggers")(AdTriggers.asInstanceOf[js.Any])
     if (AdsOnDeliveryRestrictions != null) __obj.updateDynamic("AdsOnDeliveryRestrictions")(AdsOnDeliveryRestrictions.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeIframeOnlyStream)) __obj.updateDynamic("IncludeIframeOnlyStream")(IncludeIframeOnlyStream.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeIframeOnlyStream)) __obj.updateDynamic("IncludeIframeOnlyStream")(IncludeIframeOnlyStream.get.asInstanceOf[js.Any])
     if (ManifestName != null) __obj.updateDynamic("ManifestName")(ManifestName.asInstanceOf[js.Any])
     if (PlaylistType != null) __obj.updateDynamic("PlaylistType")(PlaylistType.asInstanceOf[js.Any])
-    if (PlaylistWindowSeconds != null) __obj.updateDynamic("PlaylistWindowSeconds")(PlaylistWindowSeconds.asInstanceOf[js.Any])
-    if (ProgramDateTimeIntervalSeconds != null) __obj.updateDynamic("ProgramDateTimeIntervalSeconds")(ProgramDateTimeIntervalSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(PlaylistWindowSeconds)) __obj.updateDynamic("PlaylistWindowSeconds")(PlaylistWindowSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ProgramDateTimeIntervalSeconds)) __obj.updateDynamic("ProgramDateTimeIntervalSeconds")(ProgramDateTimeIntervalSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HlsManifestCreateOrUpdateParameters]
   }
 }

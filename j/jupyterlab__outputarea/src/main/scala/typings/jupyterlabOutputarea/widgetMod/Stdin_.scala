@@ -1,7 +1,7 @@
 package typings.jupyterlabOutputarea.widgetMod
 
 import typings.jupyterlabOutputarea.widgetMod.Stdin.IOptions
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +27,7 @@ class Stdin_ protected () extends IStdin {
     * called in response to events on the dock panel's node. It should
     * not be called directly by user code.
     */
-  def handleEvent(event: Event_): Unit = js.native
+  def handleEvent(event: Event): Unit = js.native
   /**
     * The value of the widget.
     */

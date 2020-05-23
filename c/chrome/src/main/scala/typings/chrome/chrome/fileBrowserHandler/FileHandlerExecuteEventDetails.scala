@@ -13,9 +13,9 @@ trait FileHandlerExecuteEventDetails extends js.Object {
 
 object FileHandlerExecuteEventDetails {
   @scala.inline
-  def apply(entries: js.Array[_], tab_id: Int | Double = null): FileHandlerExecuteEventDetails = {
+  def apply(entries: js.Array[_], tab_id: js.UndefOr[Double] = js.undefined): FileHandlerExecuteEventDetails = {
     val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any])
-    if (tab_id != null) __obj.updateDynamic("tab_id")(tab_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(tab_id)) __obj.updateDynamic("tab_id")(tab_id.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileHandlerExecuteEventDetails]
   }
 }

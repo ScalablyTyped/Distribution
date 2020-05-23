@@ -101,12 +101,12 @@ trait Settings extends js.Object {
 object Settings {
   @scala.inline
   def apply(
-    animationsTime: Int | Double = null,
+    animationsTime: js.UndefOr[Double] = js.undefined,
     autoRescale: js.Any = null,
     autoResize: js.UndefOr[Boolean] = js.undefined,
     batchEdgesDrawing: js.UndefOr[Boolean] = js.undefined,
-    borderSize: Int | Double = null,
-    canvasEdgesBatchSize: Int | Double = null,
+    borderSize: js.UndefOr[Double] = js.undefined,
+    canvasEdgesBatchSize: js.UndefOr[Double] = js.undefined,
     clone: js.UndefOr[Boolean] = js.undefined,
     defaultEdgeColor: String = null,
     defaultEdgeHoverColor: String = null,
@@ -120,20 +120,20 @@ object Settings {
     defaultNodeHoverColor: String = null,
     defaultNodeType: String = null,
     doubleClickEnabled: js.UndefOr[Boolean] = js.undefined,
-    doubleClickTimeout: Int | Double = null,
-    doubleClickZoomDuration: Int | Double = null,
-    doubleClickZoomingRatio: Int | Double = null,
-    doubleTapTimeout: Int | Double = null,
-    dragTimeout: Int | Double = null,
+    doubleClickTimeout: js.UndefOr[Double] = js.undefined,
+    doubleClickZoomDuration: js.UndefOr[Double] = js.undefined,
+    doubleClickZoomingRatio: js.UndefOr[Double] = js.undefined,
+    doubleTapTimeout: js.UndefOr[Double] = js.undefined,
+    dragTimeout: js.UndefOr[Double] = js.undefined,
     drawEdges: js.UndefOr[Boolean] = js.undefined,
     drawLabels: js.UndefOr[Boolean] = js.undefined,
     drawNodes: js.UndefOr[Boolean] = js.undefined,
     edgeColor: String = null,
     edgeHoverColor: String = null,
     edgeHoverExtremities: js.UndefOr[Boolean] = js.undefined,
-    edgeHoverPrecision: Int | Double = null,
-    edgeHoverSizeRatio: Int | Double = null,
-    edgesPowRatio: Int | Double = null,
+    edgeHoverPrecision: js.UndefOr[Double] = js.undefined,
+    edgeHoverSizeRatio: js.UndefOr[Double] = js.undefined,
+    edgesPowRatio: js.UndefOr[Double] = js.undefined,
     enableCamera: js.UndefOr[Boolean] = js.undefined,
     enableEdgeHovering: js.UndefOr[Boolean] = js.undefined,
     enableHovering: js.UndefOr[Boolean] = js.undefined,
@@ -141,7 +141,7 @@ object Settings {
     font: String = null,
     fontStyle: String = null,
     hideEdgesOnMove: js.UndefOr[Boolean] = js.undefined,
-    hoverFont: Int | Double = null,
+    hoverFont: js.UndefOr[Double] = js.undefined,
     hoverFontStyle: String = null,
     immutable: js.UndefOr[Boolean] = js.undefined,
     labelAlignment: String = null,
@@ -152,42 +152,42 @@ object Settings {
     labelHoverShadowColor: String = null,
     labelSize: String = null,
     labelSizeRatio: String = null,
-    labelThreshold: Int | Double = null,
-    maxEdgeSize: Int | Double = null,
-    maxNodeSize: Int | Double = null,
-    minArrowSize: Int | Double = null,
-    minEdgeSize: Int | Double = null,
-    minNodeSize: Int | Double = null,
+    labelThreshold: js.UndefOr[Double] = js.undefined,
+    maxEdgeSize: js.UndefOr[Double] = js.undefined,
+    maxNodeSize: js.UndefOr[Double] = js.undefined,
+    minArrowSize: js.UndefOr[Double] = js.undefined,
+    minEdgeSize: js.UndefOr[Double] = js.undefined,
+    minNodeSize: js.UndefOr[Double] = js.undefined,
     mouseEnabled: js.UndefOr[Boolean] = js.undefined,
-    mouseInertiaDuration: Int | Double = null,
-    mouseInertiaRatio: Int | Double = null,
+    mouseInertiaDuration: js.UndefOr[Double] = js.undefined,
+    mouseInertiaRatio: js.UndefOr[Double] = js.undefined,
     mouseWheelEnabled: js.UndefOr[Boolean] = js.undefined,
-    mouseZoomDuration: Int | Double = null,
+    mouseZoomDuration: js.UndefOr[Double] = js.undefined,
     nodeHoverColor: String = null,
-    nodesPowRatio: Int | Double = null,
+    nodesPowRatio: js.UndefOr[Double] = js.undefined,
     rescaleIgnoreSize: js.UndefOr[Boolean] = js.undefined,
     scalingMode: String = null,
-    sideMargin: Int | Double = null,
+    sideMargin: js.UndefOr[Double] = js.undefined,
     singleHover: js.UndefOr[Boolean] = js.undefined,
     skipErrors: js.UndefOr[Boolean] = js.undefined,
     touchEnabled: js.UndefOr[Boolean] = js.undefined,
-    touchInertiaDuration: Int | Double = null,
-    touchInertiaRatio: Int | Double = null,
+    touchInertiaDuration: js.UndefOr[Double] = js.undefined,
+    touchInertiaRatio: js.UndefOr[Double] = js.undefined,
     verbose: js.UndefOr[Boolean] = js.undefined,
-    webglEdgesBatchSize: Int | Double = null,
-    webglOversamplingRatio: Int | Double = null,
-    zoomMax: Int | Double = null,
-    zoomMin: Int | Double = null,
-    zoomingRatio: Int | Double = null
+    webglEdgesBatchSize: js.UndefOr[Double] = js.undefined,
+    webglOversamplingRatio: js.UndefOr[Double] = js.undefined,
+    zoomMax: js.UndefOr[Double] = js.undefined,
+    zoomMin: js.UndefOr[Double] = js.undefined,
+    zoomingRatio: js.UndefOr[Double] = js.undefined
   ): Settings = {
     val __obj = js.Dynamic.literal()
-    if (animationsTime != null) __obj.updateDynamic("animationsTime")(animationsTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationsTime)) __obj.updateDynamic("animationsTime")(animationsTime.get.asInstanceOf[js.Any])
     if (autoRescale != null) __obj.updateDynamic("autoRescale")(autoRescale.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(batchEdgesDrawing)) __obj.updateDynamic("batchEdgesDrawing")(batchEdgesDrawing.asInstanceOf[js.Any])
-    if (borderSize != null) __obj.updateDynamic("borderSize")(borderSize.asInstanceOf[js.Any])
-    if (canvasEdgesBatchSize != null) __obj.updateDynamic("canvasEdgesBatchSize")(canvasEdgesBatchSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchEdgesDrawing)) __obj.updateDynamic("batchEdgesDrawing")(batchEdgesDrawing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderSize)) __obj.updateDynamic("borderSize")(borderSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(canvasEdgesBatchSize)) __obj.updateDynamic("canvasEdgesBatchSize")(canvasEdgesBatchSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone.get.asInstanceOf[js.Any])
     if (defaultEdgeColor != null) __obj.updateDynamic("defaultEdgeColor")(defaultEdgeColor.asInstanceOf[js.Any])
     if (defaultEdgeHoverColor != null) __obj.updateDynamic("defaultEdgeHoverColor")(defaultEdgeHoverColor.asInstanceOf[js.Any])
     if (defaultEdgeType != null) __obj.updateDynamic("defaultEdgeType")(defaultEdgeType.asInstanceOf[js.Any])
@@ -199,31 +199,31 @@ object Settings {
     if (defaultNodeColor != null) __obj.updateDynamic("defaultNodeColor")(defaultNodeColor.asInstanceOf[js.Any])
     if (defaultNodeHoverColor != null) __obj.updateDynamic("defaultNodeHoverColor")(defaultNodeHoverColor.asInstanceOf[js.Any])
     if (defaultNodeType != null) __obj.updateDynamic("defaultNodeType")(defaultNodeType.asInstanceOf[js.Any])
-    if (!js.isUndefined(doubleClickEnabled)) __obj.updateDynamic("doubleClickEnabled")(doubleClickEnabled.asInstanceOf[js.Any])
-    if (doubleClickTimeout != null) __obj.updateDynamic("doubleClickTimeout")(doubleClickTimeout.asInstanceOf[js.Any])
-    if (doubleClickZoomDuration != null) __obj.updateDynamic("doubleClickZoomDuration")(doubleClickZoomDuration.asInstanceOf[js.Any])
-    if (doubleClickZoomingRatio != null) __obj.updateDynamic("doubleClickZoomingRatio")(doubleClickZoomingRatio.asInstanceOf[js.Any])
-    if (doubleTapTimeout != null) __obj.updateDynamic("doubleTapTimeout")(doubleTapTimeout.asInstanceOf[js.Any])
-    if (dragTimeout != null) __obj.updateDynamic("dragTimeout")(dragTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawEdges)) __obj.updateDynamic("drawEdges")(drawEdges.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawLabels)) __obj.updateDynamic("drawLabels")(drawLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawNodes)) __obj.updateDynamic("drawNodes")(drawNodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleClickEnabled)) __obj.updateDynamic("doubleClickEnabled")(doubleClickEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleClickTimeout)) __obj.updateDynamic("doubleClickTimeout")(doubleClickTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleClickZoomDuration)) __obj.updateDynamic("doubleClickZoomDuration")(doubleClickZoomDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleClickZoomingRatio)) __obj.updateDynamic("doubleClickZoomingRatio")(doubleClickZoomingRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleTapTimeout)) __obj.updateDynamic("doubleTapTimeout")(doubleTapTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragTimeout)) __obj.updateDynamic("dragTimeout")(dragTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawEdges)) __obj.updateDynamic("drawEdges")(drawEdges.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawLabels)) __obj.updateDynamic("drawLabels")(drawLabels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawNodes)) __obj.updateDynamic("drawNodes")(drawNodes.get.asInstanceOf[js.Any])
     if (edgeColor != null) __obj.updateDynamic("edgeColor")(edgeColor.asInstanceOf[js.Any])
     if (edgeHoverColor != null) __obj.updateDynamic("edgeHoverColor")(edgeHoverColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeHoverExtremities)) __obj.updateDynamic("edgeHoverExtremities")(edgeHoverExtremities.asInstanceOf[js.Any])
-    if (edgeHoverPrecision != null) __obj.updateDynamic("edgeHoverPrecision")(edgeHoverPrecision.asInstanceOf[js.Any])
-    if (edgeHoverSizeRatio != null) __obj.updateDynamic("edgeHoverSizeRatio")(edgeHoverSizeRatio.asInstanceOf[js.Any])
-    if (edgesPowRatio != null) __obj.updateDynamic("edgesPowRatio")(edgesPowRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCamera)) __obj.updateDynamic("enableCamera")(enableCamera.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableEdgeHovering)) __obj.updateDynamic("enableEdgeHovering")(enableEdgeHovering.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableHovering)) __obj.updateDynamic("enableHovering")(enableHovering.asInstanceOf[js.Any])
-    if (!js.isUndefined(eventsEnabled)) __obj.updateDynamic("eventsEnabled")(eventsEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeHoverExtremities)) __obj.updateDynamic("edgeHoverExtremities")(edgeHoverExtremities.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeHoverPrecision)) __obj.updateDynamic("edgeHoverPrecision")(edgeHoverPrecision.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeHoverSizeRatio)) __obj.updateDynamic("edgeHoverSizeRatio")(edgeHoverSizeRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgesPowRatio)) __obj.updateDynamic("edgesPowRatio")(edgesPowRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCamera)) __obj.updateDynamic("enableCamera")(enableCamera.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableEdgeHovering)) __obj.updateDynamic("enableEdgeHovering")(enableEdgeHovering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableHovering)) __obj.updateDynamic("enableHovering")(enableHovering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(eventsEnabled)) __obj.updateDynamic("eventsEnabled")(eventsEnabled.get.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideEdgesOnMove)) __obj.updateDynamic("hideEdgesOnMove")(hideEdgesOnMove.asInstanceOf[js.Any])
-    if (hoverFont != null) __obj.updateDynamic("hoverFont")(hoverFont.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideEdgesOnMove)) __obj.updateDynamic("hideEdgesOnMove")(hideEdgesOnMove.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverFont)) __obj.updateDynamic("hoverFont")(hoverFont.get.asInstanceOf[js.Any])
     if (hoverFontStyle != null) __obj.updateDynamic("hoverFontStyle")(hoverFontStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(immutable)) __obj.updateDynamic("immutable")(immutable.asInstanceOf[js.Any])
+    if (!js.isUndefined(immutable)) __obj.updateDynamic("immutable")(immutable.get.asInstanceOf[js.Any])
     if (labelAlignment != null) __obj.updateDynamic("labelAlignment")(labelAlignment.asInstanceOf[js.Any])
     if (labelColor != null) __obj.updateDynamic("labelColor")(labelColor.asInstanceOf[js.Any])
     if (labelHoverBGColor != null) __obj.updateDynamic("labelHoverBGColor")(labelHoverBGColor.asInstanceOf[js.Any])
@@ -232,33 +232,33 @@ object Settings {
     if (labelHoverShadowColor != null) __obj.updateDynamic("labelHoverShadowColor")(labelHoverShadowColor.asInstanceOf[js.Any])
     if (labelSize != null) __obj.updateDynamic("labelSize")(labelSize.asInstanceOf[js.Any])
     if (labelSizeRatio != null) __obj.updateDynamic("labelSizeRatio")(labelSizeRatio.asInstanceOf[js.Any])
-    if (labelThreshold != null) __obj.updateDynamic("labelThreshold")(labelThreshold.asInstanceOf[js.Any])
-    if (maxEdgeSize != null) __obj.updateDynamic("maxEdgeSize")(maxEdgeSize.asInstanceOf[js.Any])
-    if (maxNodeSize != null) __obj.updateDynamic("maxNodeSize")(maxNodeSize.asInstanceOf[js.Any])
-    if (minArrowSize != null) __obj.updateDynamic("minArrowSize")(minArrowSize.asInstanceOf[js.Any])
-    if (minEdgeSize != null) __obj.updateDynamic("minEdgeSize")(minEdgeSize.asInstanceOf[js.Any])
-    if (minNodeSize != null) __obj.updateDynamic("minNodeSize")(minNodeSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(mouseEnabled)) __obj.updateDynamic("mouseEnabled")(mouseEnabled.asInstanceOf[js.Any])
-    if (mouseInertiaDuration != null) __obj.updateDynamic("mouseInertiaDuration")(mouseInertiaDuration.asInstanceOf[js.Any])
-    if (mouseInertiaRatio != null) __obj.updateDynamic("mouseInertiaRatio")(mouseInertiaRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(mouseWheelEnabled)) __obj.updateDynamic("mouseWheelEnabled")(mouseWheelEnabled.asInstanceOf[js.Any])
-    if (mouseZoomDuration != null) __obj.updateDynamic("mouseZoomDuration")(mouseZoomDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelThreshold)) __obj.updateDynamic("labelThreshold")(labelThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxEdgeSize)) __obj.updateDynamic("maxEdgeSize")(maxEdgeSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxNodeSize)) __obj.updateDynamic("maxNodeSize")(maxNodeSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minArrowSize)) __obj.updateDynamic("minArrowSize")(minArrowSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minEdgeSize)) __obj.updateDynamic("minEdgeSize")(minEdgeSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minNodeSize)) __obj.updateDynamic("minNodeSize")(minNodeSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mouseEnabled)) __obj.updateDynamic("mouseEnabled")(mouseEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mouseInertiaDuration)) __obj.updateDynamic("mouseInertiaDuration")(mouseInertiaDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mouseInertiaRatio)) __obj.updateDynamic("mouseInertiaRatio")(mouseInertiaRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mouseWheelEnabled)) __obj.updateDynamic("mouseWheelEnabled")(mouseWheelEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mouseZoomDuration)) __obj.updateDynamic("mouseZoomDuration")(mouseZoomDuration.get.asInstanceOf[js.Any])
     if (nodeHoverColor != null) __obj.updateDynamic("nodeHoverColor")(nodeHoverColor.asInstanceOf[js.Any])
-    if (nodesPowRatio != null) __obj.updateDynamic("nodesPowRatio")(nodesPowRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(rescaleIgnoreSize)) __obj.updateDynamic("rescaleIgnoreSize")(rescaleIgnoreSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodesPowRatio)) __obj.updateDynamic("nodesPowRatio")(nodesPowRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rescaleIgnoreSize)) __obj.updateDynamic("rescaleIgnoreSize")(rescaleIgnoreSize.get.asInstanceOf[js.Any])
     if (scalingMode != null) __obj.updateDynamic("scalingMode")(scalingMode.asInstanceOf[js.Any])
-    if (sideMargin != null) __obj.updateDynamic("sideMargin")(sideMargin.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleHover)) __obj.updateDynamic("singleHover")(singleHover.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipErrors)) __obj.updateDynamic("skipErrors")(skipErrors.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchEnabled)) __obj.updateDynamic("touchEnabled")(touchEnabled.asInstanceOf[js.Any])
-    if (touchInertiaDuration != null) __obj.updateDynamic("touchInertiaDuration")(touchInertiaDuration.asInstanceOf[js.Any])
-    if (touchInertiaRatio != null) __obj.updateDynamic("touchInertiaRatio")(touchInertiaRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
-    if (webglEdgesBatchSize != null) __obj.updateDynamic("webglEdgesBatchSize")(webglEdgesBatchSize.asInstanceOf[js.Any])
-    if (webglOversamplingRatio != null) __obj.updateDynamic("webglOversamplingRatio")(webglOversamplingRatio.asInstanceOf[js.Any])
-    if (zoomMax != null) __obj.updateDynamic("zoomMax")(zoomMax.asInstanceOf[js.Any])
-    if (zoomMin != null) __obj.updateDynamic("zoomMin")(zoomMin.asInstanceOf[js.Any])
-    if (zoomingRatio != null) __obj.updateDynamic("zoomingRatio")(zoomingRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(sideMargin)) __obj.updateDynamic("sideMargin")(sideMargin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleHover)) __obj.updateDynamic("singleHover")(singleHover.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipErrors)) __obj.updateDynamic("skipErrors")(skipErrors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchEnabled)) __obj.updateDynamic("touchEnabled")(touchEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchInertiaDuration)) __obj.updateDynamic("touchInertiaDuration")(touchInertiaDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchInertiaRatio)) __obj.updateDynamic("touchInertiaRatio")(touchInertiaRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(webglEdgesBatchSize)) __obj.updateDynamic("webglEdgesBatchSize")(webglEdgesBatchSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(webglOversamplingRatio)) __obj.updateDynamic("webglOversamplingRatio")(webglOversamplingRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomMax)) __obj.updateDynamic("zoomMax")(zoomMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomMin)) __obj.updateDynamic("zoomMin")(zoomMin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomingRatio)) __obj.updateDynamic("zoomingRatio")(zoomingRatio.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
 }

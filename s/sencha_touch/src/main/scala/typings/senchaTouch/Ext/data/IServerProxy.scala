@@ -10,23 +10,23 @@ import scala.scalajs.js.annotation._
 trait IServerProxy
   extends typings.senchaTouch.Ext.data.proxy.IProxy {
   /** [Method] Optional callback function which can be used to clean up after a request has been completed
-  		* @param request Ext.data.Request The Request object
-  		* @param success Boolean True if the request was successful
-  		*/
+    * @param request Ext.data.Request The Request object
+    * @param success Boolean True if the request was successful
+    */
   var afterRequest: js.UndefOr[
     js.Function2[/* request */ js.UndefOr[IRequest], /* success */ js.UndefOr[Boolean], Unit]
   ] = js.undefined
   /** [Config Option] (Object) */
   var api: js.UndefOr[js.Any] = js.undefined
   /** [Method] Creates and returns an Ext data Request object based on the options passed by the Store that this Proxy is attached to
-  		* @param operation Ext.data.Operation The Operation object to execute
-  		* @returns Ext.data.Request The request object
-  		*/
+    * @param operation Ext.data.Operation The Operation object to execute
+    * @returns Ext.data.Request The request object
+    */
   var buildRequest: js.UndefOr[js.Function1[/* operation */ js.UndefOr[IOperation], IRequest]] = js.undefined
   /** [Method] Generates a url based on a given Ext data Request object
-  		* @param request Ext.data.Request The request object
-  		* @returns String The url
-  		*/
+    * @param request Ext.data.Request The request object
+    * @returns String The url
+    */
   var buildUrl: js.UndefOr[js.Function1[/* request */ js.UndefOr[IRequest], String]] = js.undefined
   /** [Config Option] (String) */
   var cacheString: js.UndefOr[String] = js.undefined
@@ -36,10 +36,10 @@ trait IServerProxy
   /** [Config Option] (String) */
   var directionParam: js.UndefOr[String] = js.undefined
   /** [Method] In ServerProxy subclasses the create read update and destroy methods all pass through to doRequest
-  		* @param operation Ext.data.Operation The Ext.data.Operation object
-  		* @param callback Function The callback function to call when the Operation has completed
-  		* @param scope Object The scope in which to execute the callback
-  		*/
+    * @param operation Ext.data.Operation The Ext.data.Operation object
+    * @param callback Function The callback function to call when the Operation has completed
+    * @param scope Object The scope in which to execute the callback
+    */
   var doRequest: js.UndefOr[
     js.Function3[
       /* operation */ js.UndefOr[IOperation], 
@@ -51,74 +51,74 @@ trait IServerProxy
   /** [Config Option] (Boolean) */
   var enablePagingParams: js.UndefOr[Boolean] = js.undefined
   /** [Method] Encodes the array of Ext util Filter objects into a string to be sent in the request url
-  		* @param filters Ext.util.Filter[] The array of Filter objects
-  		* @returns String The encoded filters
-  		*/
+    * @param filters Ext.util.Filter[] The array of Filter objects
+    * @returns String The encoded filters
+    */
   var encodeFilters: js.UndefOr[js.Function1[/* filters */ js.UndefOr[Array], String]] = js.undefined
   /** [Method] Encodes the array of Ext util Sorter objects into a string to be sent in the request url
-  		* @param sorters Ext.util.Sorter[] The array of Sorter objects
-  		* @returns String The encoded sorters
-  		*/
+    * @param sorters Ext.util.Sorter[] The array of Sorter objects
+    * @returns String The encoded sorters
+    */
   var encodeSorters: js.UndefOr[js.Function1[/* sorters */ js.UndefOr[Array], String]] = js.undefined
   /** [Config Option] (Object) */
   var extraParams: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
   var filterParam: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of api
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getApi: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of cacheString
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getCacheString: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of directionParam
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getDirectionParam: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of enablePagingParams
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getEnablePagingParams: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of extraParams
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getExtraParams: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of filterParam
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getFilterParam: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of groupParam
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getGroupParam: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of limitParam
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getLimitParam: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of noCache
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getNoCache: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of pageParam
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getPageParam: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of simpleSortMode
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getSimpleSortMode: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of sortParam
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getSortParam: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of startParam
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getStartParam: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of timeout
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getTimeout: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Config Option] (String) */
   var groupParam: js.UndefOr[String] = js.undefined
@@ -129,13 +129,13 @@ trait IServerProxy
   /** [Config Option] (String) */
   var pageParam: js.UndefOr[String] = js.undefined
   /** [Method] This method handles the processing of the response and is usually overridden by subclasses to do additional processing
-  		* @param success Boolean Whether or not this request was successful
-  		* @param operation Ext.data.Operation The operation we made this request for
-  		* @param request Ext.data.Request The request that was made
-  		* @param response Object The response that we got
-  		* @param callback Function The callback to be fired onces the response is processed
-  		* @param scope Object The scope in which we call the callback
-  		*/
+    * @param success Boolean Whether or not this request was successful
+    * @param operation Ext.data.Operation The operation we made this request for
+    * @param request Ext.data.Request The request that was made
+    * @param response Object The response that we got
+    * @param callback Function The callback to be fired onces the response is processed
+    * @param scope Object The scope in which we call the callback
+    */
   var processResponse: js.UndefOr[
     js.Function6[
       /* success */ js.UndefOr[Boolean], 
@@ -151,71 +151,71 @@ trait IServerProxy
   @JSName("read")
   var read_IServerProxy: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Sets the value of api
-  		* @param api Object The new value.
-  		*/
+    * @param api Object The new value.
+    */
   var setApi: js.UndefOr[js.Function1[/* api */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of cacheString
-  		* @param cacheString String The new value.
-  		*/
+    * @param cacheString String The new value.
+    */
   var setCacheString: js.UndefOr[js.Function1[/* cacheString */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of directionParam
-  		* @param directionParam String The new value.
-  		*/
+    * @param directionParam String The new value.
+    */
   var setDirectionParam: js.UndefOr[js.Function1[/* directionParam */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of enablePagingParams
-  		* @param enablePagingParams Boolean The new value.
-  		*/
+    * @param enablePagingParams Boolean The new value.
+    */
   var setEnablePagingParams: js.UndefOr[js.Function1[/* enablePagingParams */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets a value in the underlying extraParams
-  		* @param name String The key for the new value
-  		* @param value Object The value
-  		*/
+    * @param name String The key for the new value
+    * @param value Object The value
+    */
   var setExtraParam: js.UndefOr[
     js.Function2[/* name */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Method] Sets the value of extraParams
-  		* @param extraParams Object The new value.
-  		*/
+    * @param extraParams Object The new value.
+    */
   var setExtraParams: js.UndefOr[js.Function1[/* extraParams */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of filterParam
-  		* @param filterParam String The new value.
-  		*/
+    * @param filterParam String The new value.
+    */
   var setFilterParam: js.UndefOr[js.Function1[/* filterParam */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of groupParam
-  		* @param groupParam String The new value.
-  		*/
+    * @param groupParam String The new value.
+    */
   var setGroupParam: js.UndefOr[js.Function1[/* groupParam */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of limitParam
-  		* @param limitParam String The new value.
-  		*/
+    * @param limitParam String The new value.
+    */
   var setLimitParam: js.UndefOr[js.Function1[/* limitParam */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of noCache
-  		* @param noCache Boolean The new value.
-  		*/
+    * @param noCache Boolean The new value.
+    */
   var setNoCache: js.UndefOr[js.Function1[/* noCache */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of pageParam
-  		* @param pageParam String The new value.
-  		*/
+    * @param pageParam String The new value.
+    */
   var setPageParam: js.UndefOr[js.Function1[/* pageParam */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of simpleSortMode
-  		* @param simpleSortMode Boolean The new value.
-  		*/
+    * @param simpleSortMode Boolean The new value.
+    */
   var setSimpleSortMode: js.UndefOr[js.Function1[/* simpleSortMode */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of sortParam
-  		* @param sortParam String The new value.
-  		*/
+    * @param sortParam String The new value.
+    */
   var setSortParam: js.UndefOr[js.Function1[/* sortParam */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of startParam
-  		* @param startParam String The new value.
-  		*/
+    * @param startParam String The new value.
+    */
   var setStartParam: js.UndefOr[js.Function1[/* startParam */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of timeout
-  		* @param timeout Number The new value.
-  		*/
+    * @param timeout Number The new value.
+    */
   var setTimeout: js.UndefOr[js.Function1[/* timeout */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of url
-  		* @param url String The new value.
-  		*/
+    * @param url String The new value.
+    */
   var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (Boolean) */
   var simpleSortMode: js.UndefOr[Boolean] = js.undefined
@@ -347,7 +347,7 @@ object IServerProxy {
     startParam: String = null,
     statics: js.Any = null,
     suspendEvents: () => Unit = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
@@ -367,7 +367,7 @@ object IServerProxy {
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
     if (api != null) __obj.updateDynamic("api")(api.asInstanceOf[js.Any])
     if (batch != null) __obj.updateDynamic("batch")(js.Any.fromFunction1(batch))
-    if (!js.isUndefined(batchActions)) __obj.updateDynamic("batchActions")(batchActions.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchActions)) __obj.updateDynamic("batchActions")(batchActions.get.asInstanceOf[js.Any])
     if (batchOrder != null) __obj.updateDynamic("batchOrder")(batchOrder.asInstanceOf[js.Any])
     if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents.asInstanceOf[js.Any])
     if (buildRequest != null) __obj.updateDynamic("buildRequest")(js.Any.fromFunction1(buildRequest))
@@ -383,7 +383,7 @@ object IServerProxy {
     if (directionParam != null) __obj.updateDynamic("directionParam")(directionParam.asInstanceOf[js.Any])
     if (doRequest != null) __obj.updateDynamic("doRequest")(js.Any.fromFunction3(doRequest))
     if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
-    if (!js.isUndefined(enablePagingParams)) __obj.updateDynamic("enablePagingParams")(enablePagingParams.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePagingParams)) __obj.updateDynamic("enablePagingParams")(enablePagingParams.get.asInstanceOf[js.Any])
     if (encodeFilters != null) __obj.updateDynamic("encodeFilters")(js.Any.fromFunction1(encodeFilters))
     if (encodeSorters != null) __obj.updateDynamic("encodeSorters")(js.Any.fromFunction1(encodeSorters))
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
@@ -424,7 +424,7 @@ object IServerProxy {
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
     if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
-    if (!js.isUndefined(noCache)) __obj.updateDynamic("noCache")(noCache.asInstanceOf[js.Any])
+    if (!js.isUndefined(noCache)) __obj.updateDynamic("noCache")(noCache.get.asInstanceOf[js.Any])
     if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5(on))
     if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4(onAfter))
     if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4(onBefore))
@@ -463,13 +463,13 @@ object IServerProxy {
     if (setTimeout != null) __obj.updateDynamic("setTimeout")(js.Any.fromFunction1(setTimeout))
     if (setUrl != null) __obj.updateDynamic("setUrl")(js.Any.fromFunction1(setUrl))
     if (setWriter != null) __obj.updateDynamic("setWriter")(js.Any.fromFunction1(setWriter))
-    if (!js.isUndefined(simpleSortMode)) __obj.updateDynamic("simpleSortMode")(simpleSortMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(simpleSortMode)) __obj.updateDynamic("simpleSortMode")(simpleSortMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (sortParam != null) __obj.updateDynamic("sortParam")(sortParam.asInstanceOf[js.Any])
     if (startParam != null) __obj.updateDynamic("startParam")(startParam.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
     if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
     if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))

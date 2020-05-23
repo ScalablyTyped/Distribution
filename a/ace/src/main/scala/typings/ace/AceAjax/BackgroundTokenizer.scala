@@ -1,6 +1,5 @@
 package typings.ace.AceAjax
 
-import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,13 +43,20 @@ trait BackgroundTokenizer extends js.Object {
   def stop(): Unit
 }
 
-@JSGlobal("AceAjax.BackgroundTokenizer")
-@js.native
-object BackgroundTokenizer
-  extends /**
-  * Creates a new `BackgroundTokenizer` object.
-  * @param tokenizer The tokenizer to use
-  * @param editor The editor to associate with
-  **/
-Instantiable2[/* tokenizer */ Tokenizer, /* editor */ Editor, BackgroundTokenizer]
+object BackgroundTokenizer {
+  @scala.inline
+  def apply(
+    fireUpdateEvent: (Double, Double) => Unit,
+    getState: Double => String,
+    getTokens: Double => js.Array[TokenInfo],
+    setDocument: Document => Unit,
+    setTokenizer: Tokenizer => Unit,
+    start: Double => Unit,
+    states: js.Array[_],
+    stop: () => Unit
+  ): BackgroundTokenizer = {
+    val __obj = js.Dynamic.literal(fireUpdateEvent = js.Any.fromFunction2(fireUpdateEvent), getState = js.Any.fromFunction1(getState), getTokens = js.Any.fromFunction1(getTokens), setDocument = js.Any.fromFunction1(setDocument), setTokenizer = js.Any.fromFunction1(setTokenizer), start = js.Any.fromFunction1(start), states = states.asInstanceOf[js.Any], stop = js.Any.fromFunction0(stop))
+    __obj.asInstanceOf[BackgroundTokenizer]
+  }
+}
 

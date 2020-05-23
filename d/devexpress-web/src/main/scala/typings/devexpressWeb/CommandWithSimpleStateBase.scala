@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * Serves as a base for commands with a simple common command state.
   */
-@JSGlobal("CommandWithSimpleStateBase")
-@js.native
-abstract class CommandWithSimpleStateBase () extends CommandBase {
+trait CommandWithSimpleStateBase extends CommandBase {
   /**
     * Gets information about the command's state.
     */
-  def getState(): SimpleCommandState = js.native
+  def getState(): SimpleCommandState
+}
+
+object CommandWithSimpleStateBase {
+  @scala.inline
+  def apply(getState: () => SimpleCommandState): CommandWithSimpleStateBase = {
+    val __obj = js.Dynamic.literal(getState = js.Any.fromFunction0(getState))
+    __obj.asInstanceOf[CommandWithSimpleStateBase]
+  }
 }
 

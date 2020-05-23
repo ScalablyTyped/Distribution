@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapProgressBar")
 @js.native
-class BootstrapProgressBar () extends Control {
+trait BootstrapProgressBar extends Control {
   def getCaption(): String = js.native
   def getDisplayText(): String = js.native
   def getEnabled(): Boolean = js.native

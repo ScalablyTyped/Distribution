@@ -1,9 +1,10 @@
 package typings.antd.tableInterfaceMod
 
-import typings.antd.PartialOmitCheckboxPropsc
+import typings.antd.anon.PartialOmitCheckboxPropsc
+import typings.antd.useSelectionMod.INTERNAL_SELECTION_ITEM
 import typings.rcTable.interfaceMod.RenderedCell
 import typings.react.mod.ReactNode
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,7 +48,7 @@ trait TableRowSelection[T] extends js.Object {
     ]
   ] = js.undefined
   var selectedRowKeys: js.UndefOr[js.Array[Key]] = js.undefined
-  var selections: js.UndefOr[js.Array[SelectionItem] | Boolean] = js.undefined
+  var selections: js.UndefOr[js.Array[INTERNAL_SELECTION_ITEM] | Boolean] = js.undefined
   var `type`: js.UndefOr[RowSelectionType] = js.undefined
 }
 
@@ -60,21 +61,21 @@ object TableRowSelection {
     getCheckboxProps: /* record */ T => PartialOmitCheckboxPropsc = null,
     hideDefaultSelections: js.UndefOr[Boolean] = js.undefined,
     onChange: (/* selectedRowKeys */ js.Array[Key], /* selectedRows */ js.Array[T]) => Unit = null,
-    onSelect: (T, /* selected */ Boolean, /* selectedRows */ js.Array[js.Object], /* nativeEvent */ Event_) => Unit = null,
+    onSelect: (T, /* selected */ Boolean, /* selectedRows */ js.Array[js.Object], /* nativeEvent */ Event) => Unit = null,
     onSelectAll: (/* selected */ Boolean, /* selectedRows */ js.Array[T], /* changeRows */ js.Array[T]) => Unit = null,
     onSelectInvert: /* selectedRowKeys */ js.Array[Key] => Unit = null,
     onSelectMultiple: (/* selected */ Boolean, /* selectedRows */ js.Array[T], /* changeRows */ js.Array[T]) => Unit = null,
     renderCell: (/* value */ Boolean, /* record */ T, /* index */ Double, /* originNode */ ReactNode) => ReactNode | RenderedCell[T] = null,
     selectedRowKeys: js.Array[Key] = null,
-    selections: js.Array[SelectionItem] | Boolean = null,
+    selections: js.Array[INTERNAL_SELECTION_ITEM] | Boolean = null,
     `type`: RowSelectionType = null
   ): TableRowSelection[T] = {
     val __obj = js.Dynamic.literal()
     if (columnTitle != null) __obj.updateDynamic("columnTitle")(columnTitle.asInstanceOf[js.Any])
     if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.get.asInstanceOf[js.Any])
     if (getCheckboxProps != null) __obj.updateDynamic("getCheckboxProps")(js.Any.fromFunction1(getCheckboxProps))
-    if (!js.isUndefined(hideDefaultSelections)) __obj.updateDynamic("hideDefaultSelections")(hideDefaultSelections.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideDefaultSelections)) __obj.updateDynamic("hideDefaultSelections")(hideDefaultSelections.get.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction4(onSelect))
     if (onSelectAll != null) __obj.updateDynamic("onSelectAll")(js.Any.fromFunction3(onSelectAll))

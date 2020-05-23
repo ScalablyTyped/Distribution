@@ -1,6 +1,6 @@
 package typings.grahamScan.mod
 
-import typings.grahamScan.AnonX
+import typings.grahamScan.anon.X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +11,6 @@ class ^ () extends ConvexHullGrahamScan {
   /* CompleteClass */
   override def addPoint(x: Double, y: Double): Unit = js.native
   /* CompleteClass */
-  override def getHull(): js.Array[AnonX] = js.native
+  override def getHull(): js.Array[X] = js.native
 }
 

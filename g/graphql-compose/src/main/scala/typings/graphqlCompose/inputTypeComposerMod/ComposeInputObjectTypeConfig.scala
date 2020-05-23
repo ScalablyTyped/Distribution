@@ -18,11 +18,11 @@ object ComposeInputObjectTypeConfig {
   def apply(
     fields: Thunk[ComposeInputFieldConfigMap],
     name: String,
-    description: String = null,
+    description: js.UndefOr[Null | String] = js.undefined,
     extensions: Extensions = null
   ): ComposeInputObjectTypeConfig = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComposeInputObjectTypeConfig]
   }

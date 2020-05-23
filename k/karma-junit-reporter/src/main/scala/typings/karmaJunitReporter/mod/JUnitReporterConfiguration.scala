@@ -34,7 +34,7 @@ object JUnitReporterConfiguration {
     properties: StringDictionary[js.Any] = null,
     suite: String = null,
     useBrowserName: js.UndefOr[Boolean] = js.undefined,
-    xmlVersion: Int | Double = null
+    xmlVersion: js.UndefOr[Null | Double] = js.undefined
   ): JUnitReporterConfiguration = {
     val __obj = js.Dynamic.literal()
     if (classNameFormatter != null) __obj.updateDynamic("classNameFormatter")(js.Any.fromFunction2(classNameFormatter))
@@ -43,8 +43,8 @@ object JUnitReporterConfiguration {
     if (outputFile != null) __obj.updateDynamic("outputFile")(outputFile.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (suite != null) __obj.updateDynamic("suite")(suite.asInstanceOf[js.Any])
-    if (!js.isUndefined(useBrowserName)) __obj.updateDynamic("useBrowserName")(useBrowserName.asInstanceOf[js.Any])
-    if (xmlVersion != null) __obj.updateDynamic("xmlVersion")(xmlVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(useBrowserName)) __obj.updateDynamic("useBrowserName")(useBrowserName.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xmlVersion)) __obj.updateDynamic("xmlVersion")(xmlVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[JUnitReporterConfiguration]
   }
 }

@@ -17,9 +17,9 @@ trait DataSet extends js.Object {
 
 object DataSet {
   @scala.inline
-  def apply(data: js.Array[Data], max: Int | Double = null): DataSet = {
+  def apply(data: js.Array[Data], max: js.UndefOr[Double] = js.undefined): DataSet = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSet]
   }
 }

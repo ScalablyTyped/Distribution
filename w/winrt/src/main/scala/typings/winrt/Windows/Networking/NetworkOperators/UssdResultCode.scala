@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Networking.NetworkOperators
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,26 +27,6 @@ object UssdResultCode extends js.Object {
   
   @js.native
   sealed trait terminated extends UssdResultCode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UssdResultCode with Double] = js.native
-  /* 1 */ @js.native
-  object actionRequired extends TopLevel[actionRequired with Double]
-  
-  /* 5 */ @js.native
-  object networkTimeout extends TopLevel[networkTimeout with Double]
-  
-  /* 0 */ @js.native
-  object noActionRequired extends TopLevel[noActionRequired with Double]
-  
-  /* 4 */ @js.native
-  object operationNotSupported extends TopLevel[operationNotSupported with Double]
-  
-  /* 3 */ @js.native
-  object otherLocalClient extends TopLevel[otherLocalClient with Double]
-  
-  /* 2 */ @js.native
-  object terminated extends TopLevel[terminated with Double]
   
 }
 

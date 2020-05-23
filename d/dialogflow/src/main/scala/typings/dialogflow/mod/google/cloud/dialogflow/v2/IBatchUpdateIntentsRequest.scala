@@ -26,20 +26,22 @@ trait IBatchUpdateIntentsRequest extends js.Object {
 object IBatchUpdateIntentsRequest {
   @scala.inline
   def apply(
-    intentBatchInline: IIntentBatch = null,
-    intentBatchUri: String = null,
-    intentView: IntentView | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.IntentView * / any */ String) = null,
-    languageCode: String = null,
-    parent: String = null,
-    updateMask: IFieldMask = null
+    intentBatchInline: js.UndefOr[Null | IIntentBatch] = js.undefined,
+    intentBatchUri: js.UndefOr[Null | String] = js.undefined,
+    intentView: js.UndefOr[
+      Null | IntentView | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.IntentView * / any */ String)
+    ] = js.undefined,
+    languageCode: js.UndefOr[Null | String] = js.undefined,
+    parent: js.UndefOr[Null | String] = js.undefined,
+    updateMask: js.UndefOr[Null | IFieldMask] = js.undefined
   ): IBatchUpdateIntentsRequest = {
     val __obj = js.Dynamic.literal()
-    if (intentBatchInline != null) __obj.updateDynamic("intentBatchInline")(intentBatchInline.asInstanceOf[js.Any])
-    if (intentBatchUri != null) __obj.updateDynamic("intentBatchUri")(intentBatchUri.asInstanceOf[js.Any])
-    if (intentView != null) __obj.updateDynamic("intentView")(intentView.asInstanceOf[js.Any])
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
+    if (!js.isUndefined(intentBatchInline)) __obj.updateDynamic("intentBatchInline")(intentBatchInline.asInstanceOf[js.Any])
+    if (!js.isUndefined(intentBatchUri)) __obj.updateDynamic("intentBatchUri")(intentBatchUri.asInstanceOf[js.Any])
+    if (!js.isUndefined(intentView)) __obj.updateDynamic("intentView")(intentView.asInstanceOf[js.Any])
+    if (!js.isUndefined(languageCode)) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateMask)) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBatchUpdateIntentsRequest]
   }
 }

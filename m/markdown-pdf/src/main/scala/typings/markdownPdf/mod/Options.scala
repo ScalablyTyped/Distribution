@@ -38,7 +38,7 @@ object Options {
     cssPath: String = null,
     cwd: String = null,
     highlightCssPath: String = null,
-    loadTimeout: Int | Double = null,
+    loadTimeout: js.UndefOr[Double] = js.undefined,
     paperBorder: String = null,
     paperFormat: PaperFormat = null,
     paperOrientation: PaperOrientation = null,
@@ -46,14 +46,14 @@ object Options {
     preProcessHtml: () => _ = null,
     preProcessMd: () => _ = null,
     remarkable: js.Any = null,
-    renderDelay: Int | Double = null,
+    renderDelay: js.UndefOr[Double] = js.undefined,
     runningsPath: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (cssPath != null) __obj.updateDynamic("cssPath")(cssPath.asInstanceOf[js.Any])
     if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
     if (highlightCssPath != null) __obj.updateDynamic("highlightCssPath")(highlightCssPath.asInstanceOf[js.Any])
-    if (loadTimeout != null) __obj.updateDynamic("loadTimeout")(loadTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(loadTimeout)) __obj.updateDynamic("loadTimeout")(loadTimeout.get.asInstanceOf[js.Any])
     if (paperBorder != null) __obj.updateDynamic("paperBorder")(paperBorder.asInstanceOf[js.Any])
     if (paperFormat != null) __obj.updateDynamic("paperFormat")(paperFormat.asInstanceOf[js.Any])
     if (paperOrientation != null) __obj.updateDynamic("paperOrientation")(paperOrientation.asInstanceOf[js.Any])
@@ -61,7 +61,7 @@ object Options {
     if (preProcessHtml != null) __obj.updateDynamic("preProcessHtml")(js.Any.fromFunction0(preProcessHtml))
     if (preProcessMd != null) __obj.updateDynamic("preProcessMd")(js.Any.fromFunction0(preProcessMd))
     if (remarkable != null) __obj.updateDynamic("remarkable")(remarkable.asInstanceOf[js.Any])
-    if (renderDelay != null) __obj.updateDynamic("renderDelay")(renderDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderDelay)) __obj.updateDynamic("renderDelay")(renderDelay.get.asInstanceOf[js.Any])
     if (runningsPath != null) __obj.updateDynamic("runningsPath")(runningsPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

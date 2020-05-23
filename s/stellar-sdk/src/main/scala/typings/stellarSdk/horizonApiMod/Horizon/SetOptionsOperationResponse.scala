@@ -45,23 +45,23 @@ object SetOptionsOperationResponse {
     transaction_hash: String,
     `type`: setOptions,
     type_i: typings.stellarSdk.horizonApiMod.Horizon.OperationResponseTypeI.setOptions,
-    high_threshold: Int | Double = null,
+    high_threshold: js.UndefOr[Double] = js.undefined,
     home_domain: String = null,
-    low_threshold: Int | Double = null,
-    master_key_weight: Int | Double = null,
-    med_threshold: Int | Double = null,
+    low_threshold: js.UndefOr[Double] = js.undefined,
+    master_key_weight: js.UndefOr[Double] = js.undefined,
+    med_threshold: js.UndefOr[Double] = js.undefined,
     signer_key: String = null,
-    signer_weight: Int | Double = null
+    signer_weight: js.UndefOr[Double] = js.undefined
   ): SetOptionsOperationResponse = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], clear_flags = clear_flags.asInstanceOf[js.Any], clear_flags_s = clear_flags_s.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], paging_token = paging_token.asInstanceOf[js.Any], set_flags = set_flags.asInstanceOf[js.Any], set_flags_s = set_flags_s.asInstanceOf[js.Any], source_account = source_account.asInstanceOf[js.Any], transaction_hash = transaction_hash.asInstanceOf[js.Any], type_i = type_i.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (high_threshold != null) __obj.updateDynamic("high_threshold")(high_threshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(high_threshold)) __obj.updateDynamic("high_threshold")(high_threshold.get.asInstanceOf[js.Any])
     if (home_domain != null) __obj.updateDynamic("home_domain")(home_domain.asInstanceOf[js.Any])
-    if (low_threshold != null) __obj.updateDynamic("low_threshold")(low_threshold.asInstanceOf[js.Any])
-    if (master_key_weight != null) __obj.updateDynamic("master_key_weight")(master_key_weight.asInstanceOf[js.Any])
-    if (med_threshold != null) __obj.updateDynamic("med_threshold")(med_threshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(low_threshold)) __obj.updateDynamic("low_threshold")(low_threshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(master_key_weight)) __obj.updateDynamic("master_key_weight")(master_key_weight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(med_threshold)) __obj.updateDynamic("med_threshold")(med_threshold.get.asInstanceOf[js.Any])
     if (signer_key != null) __obj.updateDynamic("signer_key")(signer_key.asInstanceOf[js.Any])
-    if (signer_weight != null) __obj.updateDynamic("signer_weight")(signer_weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(signer_weight)) __obj.updateDynamic("signer_weight")(signer_weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetOptionsOperationResponse]
   }
 }

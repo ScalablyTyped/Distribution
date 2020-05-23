@@ -25,19 +25,19 @@ import scala.scalajs.js.annotation._
   */
 trait IHistoryService extends js.Object {
   /**
-  		* @ngdoc method
-  		* @name umbraco.services.historyService#add
-  		* @methodOf umbraco.services.historyService
-  		*
-  		* @description
-  		* Adds a given history item to the users history collection.
-  		*
-  		* @param {Object} item the history item
-  		* @param {String} item.icon icon css class for the list, ex: "icon-image", "icon-doc"
-  		* @param {String} item.link route to the editor, ex: "/content/edit/1234"
-  		* @param {String} item.name friendly name for the history listing
-  		* @returns {Object} history item object
-  		*/
+    * @ngdoc method
+    * @name umbraco.services.historyService#add
+    * @methodOf umbraco.services.historyService
+    *
+    * @description
+    * Adds a given history item to the users history collection.
+    *
+    * @param {Object} item the history item
+    * @param {String} item.icon icon css class for the list, ex: "icon-image", "icon-doc"
+    * @param {String} item.link route to the editor, ex: "/content/edit/1234"
+    * @param {String} item.name friendly name for the history listing
+    * @returns {Object} history item object
+    */
   def add(item: IHistoryItem): IHistoryItem
   /**
     * @ngdoc method
@@ -49,15 +49,15 @@ trait IHistoryService extends js.Object {
     */
   def getCurrent(): js.Array[IHistoryItem]
   /**
-  		 * @ngdoc method
-  		 * @name umbraco.services.historyService#remove
-  		 * @methodOf umbraco.services.historyService
-  		 *
-  		 * @description
-  		 * Removes a history item from the users history collection, given an index to remove from.
-  		 *
-  		 * @param {Int} index index to remove item from
-  		 */
+    * @ngdoc method
+    * @name umbraco.services.historyService#remove
+    * @methodOf umbraco.services.historyService
+    *
+    * @description
+    * Removes a history item from the users history collection, given an index to remove from.
+    *
+    * @param {Int} index index to remove item from
+    */
   def remove(index: Double): Unit
   /**
     * @ngdoc method

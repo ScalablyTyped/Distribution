@@ -8,18 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a navigation command in a NavBarContainer.
   **/
-@JSGlobal("WinJS.UI.NavBarCommand")
 @js.native
-//#region Constructors
-/**
-  * Creates a new NavBarCommand.
-  * @constructor
-  * @param element The DOM element hosts the new NavBarCommand.
-  * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-  **/
-class NavBarCommand () extends js.Object {
-  def this(element: HTMLElement) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+trait NavBarCommand extends js.Object {
   //#endregion Methods
   //#region Properties
   /**
@@ -90,15 +80,5 @@ class NavBarCommand () extends js.Object {
     **/
   def removeEventListener(eventName: String, eventCallback: js.Function): Unit = js.native
   def removeEventListener(eventName: String, eventCallback: js.Function, useCapture: Boolean): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("WinJS.UI.NavBarCommand")
-@js.native
-object NavBarCommand extends js.Object {
-  /**
-    * Indicates that the object is compatibile with declarative processing.
-    **/
-  var supportedForProcessing: Boolean = js.native
 }
 

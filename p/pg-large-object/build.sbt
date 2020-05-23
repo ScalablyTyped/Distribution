@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "pg-large-object"
-version := "2.0-dt-20190904Z-fd7df4"
-scalaVersion := "2.13.1"
+version := "2.0-dt-20190904Z-cc9dc5"
+scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "13.13-dt-20200417Z-f3d81d",
-  "org.scalablytyped" %%% "pg" % "7.14-dt-20200314Z-c478a6",
-  "org.scalablytyped" %%% "pg-types" % "1.11-dt-20191101Z-86ed48",
-  "org.scalablytyped" %%% "std" % "3.8-9b2470")
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200521Z-3aabb7",
+  "org.scalablytyped" %%% "pg" % "7.14-dt-20200515Z-c95339",
+  "org.scalablytyped" %%% "pg-types" % "1.11-dt-20200515Z-8f4eea",
+  "org.scalablytyped" %%% "std" % "3.9-18cbeb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

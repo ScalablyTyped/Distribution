@@ -25,11 +25,15 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(encoding: Encoding = null, length: Double | String = null, limit: Double | String = null): Options = {
+  def apply(
+    encoding: js.UndefOr[Null | Encoding] = js.undefined,
+    length: js.UndefOr[Null | Double | String] = js.undefined,
+    limit: js.UndefOr[Null | Double | String] = js.undefined
+  ): Options = {
     val __obj = js.Dynamic.literal()
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(encoding)) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

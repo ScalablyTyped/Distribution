@@ -168,7 +168,7 @@ trait MessageRead extends Item {
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     * 
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-  		 *
+    *
     * The `itemClass` property specifies the message class of the selected item.
     * The following are the default message classes for the message or appointment item.
     * 

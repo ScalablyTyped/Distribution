@@ -25,11 +25,11 @@ object IonRouteRedirect {
   def apply(
     from: String,
     onIonRouteRedirectChanged: /* event */ CustomEvent[_] => Unit = null,
-    to: String = null
+    to: js.UndefOr[Null | String] = js.undefined
   ): IonRouteRedirect = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
     if (onIonRouteRedirectChanged != null) __obj.updateDynamic("onIonRouteRedirectChanged")(js.Any.fromFunction1(onIonRouteRedirectChanged))
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (!js.isUndefined(to)) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonRouteRedirect]
   }
 }

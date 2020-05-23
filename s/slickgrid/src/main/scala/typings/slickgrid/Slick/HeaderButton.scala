@@ -28,7 +28,7 @@ object HeaderButton {
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOnHover)) __obj.updateDynamic("showOnHover")(showOnHover.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOnHover)) __obj.updateDynamic("showOnHover")(showOnHover.get.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderButton]
   }

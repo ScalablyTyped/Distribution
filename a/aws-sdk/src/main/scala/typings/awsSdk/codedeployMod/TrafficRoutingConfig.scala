@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TrafficRoutingConfig extends js.Object {
   /**
-    * A configuration that shifts traffic from one version of a Lambda function to another in two increments. The original and target Lambda function versions are specified in the deployment's AppSpec file.
+    * A configuration that shifts traffic from one version of a Lambda function or ECS task set to another in two increments. The original and target Lambda function versions or ECS task sets are specified in the deployment's AppSpec file.
     */
   var timeBasedCanary: js.UndefOr[TimeBasedCanary] = js.native
   /**
-    * A configuration that shifts traffic from one version of a Lambda function to another in equal increments, with an equal number of minutes between each increment. The original and target Lambda function versions are specified in the deployment's AppSpec file.
+    * A configuration that shifts traffic from one version of a Lambda function or ECS task set to another in equal increments, with an equal number of minutes between each increment. The original and target Lambda function versions or ECS task sets are specified in the deployment's AppSpec file.
     */
   var timeBasedLinear: js.UndefOr[TimeBasedLinear] = js.native
   /**
-    * The type of traffic shifting (TimeBasedCanary or TimeBasedLinear) used by a deployment configuration .
+    * The type of traffic shifting (TimeBasedCanary or TimeBasedLinear) used by a deployment configuration.
     */
   var `type`: js.UndefOr[TrafficRoutingType] = js.native
 }

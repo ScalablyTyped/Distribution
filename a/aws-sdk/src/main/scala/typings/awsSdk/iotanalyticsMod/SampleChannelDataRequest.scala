@@ -29,12 +29,12 @@ object SampleChannelDataRequest {
   def apply(
     channelName: ChannelName,
     endTime: EndTime = null,
-    maxMessages: Int | Double = null,
+    maxMessages: js.UndefOr[MaxMessages] = js.undefined,
     startTime: StartTime = null
   ): SampleChannelDataRequest = {
     val __obj = js.Dynamic.literal(channelName = channelName.asInstanceOf[js.Any])
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (maxMessages != null) __obj.updateDynamic("maxMessages")(maxMessages.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxMessages)) __obj.updateDynamic("maxMessages")(maxMessages.get.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SampleChannelDataRequest]
   }

@@ -22,7 +22,7 @@ trait ojLegendSectionSettablePropertiesLenient
 object ojLegendSectionSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     collapsible: on | off = null,
     text: String = null,
     textHalign: center | end | start = null,

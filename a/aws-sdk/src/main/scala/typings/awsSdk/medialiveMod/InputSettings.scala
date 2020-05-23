@@ -38,6 +38,12 @@ trait InputSettings extends js.Object {
     */
   var NetworkInputSettings: js.UndefOr[typings.awsSdk.medialiveMod.NetworkInputSettings] = js.native
   /**
+    * Specifies whether to extract applicable ancillary data from a SMPTE-2038 source in this input. Applicable data types are captions, timecode, AFD, and SCTE-104 messages.
+  - PREFER: Extract from SMPTE-2038 if present in this input, otherwise extract from another source (if any).
+  - IGNORE: Never extract any ancillary data from SMPTE-2038.
+    */
+  var Smpte2038DataPreference: js.UndefOr[typings.awsSdk.medialiveMod.Smpte2038DataPreference] = js.native
+  /**
     * Loop input if it is a file. This allows a file input to be streamed indefinitely.
     */
   var SourceEndBehavior: js.UndefOr[InputSourceEndBehavior] = js.native
@@ -54,9 +60,10 @@ object InputSettings {
     CaptionSelectors: listOfCaptionSelector = null,
     DeblockFilter: InputDeblockFilter = null,
     DenoiseFilter: InputDenoiseFilter = null,
-    FilterStrength: Int | Double = null,
+    FilterStrength: js.UndefOr[integerMin1Max5] = js.undefined,
     InputFilter: InputFilter = null,
     NetworkInputSettings: NetworkInputSettings = null,
+    Smpte2038DataPreference: Smpte2038DataPreference = null,
     SourceEndBehavior: InputSourceEndBehavior = null,
     VideoSelector: VideoSelector = null
   ): InputSettings = {
@@ -65,9 +72,10 @@ object InputSettings {
     if (CaptionSelectors != null) __obj.updateDynamic("CaptionSelectors")(CaptionSelectors.asInstanceOf[js.Any])
     if (DeblockFilter != null) __obj.updateDynamic("DeblockFilter")(DeblockFilter.asInstanceOf[js.Any])
     if (DenoiseFilter != null) __obj.updateDynamic("DenoiseFilter")(DenoiseFilter.asInstanceOf[js.Any])
-    if (FilterStrength != null) __obj.updateDynamic("FilterStrength")(FilterStrength.asInstanceOf[js.Any])
+    if (!js.isUndefined(FilterStrength)) __obj.updateDynamic("FilterStrength")(FilterStrength.get.asInstanceOf[js.Any])
     if (InputFilter != null) __obj.updateDynamic("InputFilter")(InputFilter.asInstanceOf[js.Any])
     if (NetworkInputSettings != null) __obj.updateDynamic("NetworkInputSettings")(NetworkInputSettings.asInstanceOf[js.Any])
+    if (Smpte2038DataPreference != null) __obj.updateDynamic("Smpte2038DataPreference")(Smpte2038DataPreference.asInstanceOf[js.Any])
     if (SourceEndBehavior != null) __obj.updateDynamic("SourceEndBehavior")(SourceEndBehavior.asInstanceOf[js.Any])
     if (VideoSelector != null) __obj.updateDynamic("VideoSelector")(VideoSelector.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputSettings]

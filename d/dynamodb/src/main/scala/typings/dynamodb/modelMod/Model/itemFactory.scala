@@ -2,7 +2,7 @@ package typings.dynamodb.modelMod.Model
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.TopLevel
-import typings.dynamodb.TypeofModel
+import typings.dynamodb.anon.TypeofModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

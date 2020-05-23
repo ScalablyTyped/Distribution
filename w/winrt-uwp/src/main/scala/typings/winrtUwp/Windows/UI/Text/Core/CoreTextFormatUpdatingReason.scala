@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.Text.Core
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object CoreTextFormatUpdatingReason extends js.Object {
   /** The reason for the format updating is unknown. */
   @js.native
   sealed trait none extends CoreTextFormatUpdatingReason
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CoreTextFormatUpdatingReason with Double] = js.native
-  /* 2 */ @js.native
-  object compositionConverted extends TopLevel[compositionConverted with Double]
-  
-  /* 4 */ @js.native
-  object compositionTargetConverted extends TopLevel[compositionTargetConverted with Double]
-  
-  /* 3 */ @js.native
-  object compositionTargetUnconverted extends TopLevel[compositionTargetUnconverted with Double]
-  
-  /* 1 */ @js.native
-  object compositionUnconverted extends TopLevel[compositionUnconverted with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
   
 }
 

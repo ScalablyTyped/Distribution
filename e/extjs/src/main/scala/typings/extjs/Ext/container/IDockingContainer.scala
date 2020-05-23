@@ -10,47 +10,47 @@ import scala.scalajs.js.annotation._
 
 trait IDockingContainer extends IBase {
   /** [Method] Adds docked item s to the container
-  		* @param component Object/Object[] The Component or array of components to add. The components must include a 'dock' parameter on each component to indicate where it should be docked ('top', 'right', 'bottom', 'left').
-  		* @param pos Number The index at which the Component will be added
-  		* @returns Ext.Component[] The added components.
-  		*/
+    * @param component Object/Object[] The Component or array of components to add. The components must include a 'dock' parameter on each component to indicate where it should be docked ('top', 'right', 'bottom', 'left').
+    * @param pos Number The index at which the Component will be added
+    * @returns Ext.Component[] The added components.
+    */
   var addDocked: js.UndefOr[
     js.Function2[/* component */ js.UndefOr[js.Any], /* pos */ js.UndefOr[Double], Array]
   ] = js.undefined
   /** [Config Option] (Object) */
   var defaultDockWeights: js.UndefOr[js.Any] = js.undefined
   /** [Method] Finds a docked component by id itemId or position
-  		* @param comp String/Number The id, itemId or position of the docked component (see getComponent for details)
-  		* @returns Ext.Component The docked component (if found)
-  		*/
+    * @param comp String/Number The id, itemId or position of the docked component (see getComponent for details)
+    * @returns Ext.Component The docked component (if found)
+    */
   var getDockedComponent: js.UndefOr[js.Function1[/* comp */ js.UndefOr[js.Any], IComponent]] = js.undefined
   /** [Method] Retrieves an array of all currently docked Components
-  		* @param selector String A ComponentQuery selector string to filter the returned items.
-  		* @param beforeBody Boolean An optional flag to limit the set of items to only those before the body (true) or after the body (false). All components are returned by default.
-  		* @returns Ext.Component[] The array of docked components meeting the specified criteria.
-  		*/
+    * @param selector String A ComponentQuery selector string to filter the returned items.
+    * @param beforeBody Boolean An optional flag to limit the set of items to only those before the body (true) or after the body (false). All components are returned by default.
+    * @returns Ext.Component[] The array of docked components meeting the specified criteria.
+    */
   var getDockedItems: js.UndefOr[
     js.Function2[/* selector */ js.UndefOr[String], /* beforeBody */ js.UndefOr[Boolean], Array]
   ] = js.undefined
   /** [Method] Inserts docked item s to the panel at the indicated position
-  		* @param pos Number The index at which the Component will be inserted
-  		* @param component Object/Object[] The Component or array of components to add. The components must include a 'dock' paramater on each component to indicate where it should be docked ('top', 'right', 'bottom', 'left').
-  		*/
+    * @param pos Number The index at which the Component will be inserted
+    * @param component Object/Object[] The Component or array of components to add. The components must include a 'dock' paramater on each component to indicate where it should be docked ('top', 'right', 'bottom', 'left').
+    */
   var insertDocked: js.UndefOr[
     js.Function2[/* pos */ js.UndefOr[Double], /* component */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Method] Invoked after a docked item is added to the Panel
-  		* @param component Ext.Component
-  		*/
+    * @param component Ext.Component
+    */
   var onDockedAdd: js.UndefOr[js.Function1[/* component */ js.UndefOr[IComponent], Unit]] = js.undefined
   /** [Method] Invoked after a docked item is removed from the Panel
-  		* @param component Ext.Component
-  		*/
+    * @param component Ext.Component
+    */
   var onDockedRemove: js.UndefOr[js.Function1[/* component */ js.UndefOr[IComponent], Unit]] = js.undefined
   /** [Method] Removes the docked item from the panel
-  		* @param item Ext.Component The Component to remove.
-  		* @param autoDestroy Boolean Destroy the component after removal.
-  		*/
+    * @param item Ext.Component The Component to remove.
+    * @param autoDestroy Boolean Destroy the component after removal.
+    */
   var removeDocked: js.UndefOr[
     js.Function2[/* item */ js.UndefOr[IComponent], /* autoDestroy */ js.UndefOr[Boolean], Unit]
   ] = js.undefined
@@ -106,7 +106,7 @@ object IDockingContainer {
     if (removeDocked != null) __obj.updateDynamic("removeDocked")(js.Any.fromFunction2(removeDocked))
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDockingContainer]

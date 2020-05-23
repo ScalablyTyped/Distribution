@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,17 +33,6 @@ object PrintComments extends js.Object {
     */
   @js.native
   sealed trait noComments extends PrintComments
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[PrintComments with String] = js.native
-  /* "EndSheet" */ @js.native
-  object endSheet extends TopLevel[endSheet with String]
-  
-  /* "InPlace" */ @js.native
-  object inPlace extends TopLevel[inPlace with String]
-  
-  /* "NoComments" */ @js.native
-  object noComments extends TopLevel[noComments with String]
   
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait EmailChannelRequest extends js.Object {
   /**
-    * The configuration set that you want to apply to email that you send through the channel by using the Amazon Pinpoint Email API.
+    * The Amazon SES configuration set that you want to apply to messages that you send through the channel.
     */
   var ConfigurationSet: js.UndefOr[string] = js.native
   /**
@@ -34,12 +34,12 @@ object EmailChannelRequest {
     FromAddress: string,
     Identity: string,
     ConfigurationSet: string = null,
-    Enabled: js.UndefOr[Boolean] = js.undefined,
+    Enabled: js.UndefOr[boolean] = js.undefined,
     RoleArn: string = null
   ): EmailChannelRequest = {
     val __obj = js.Dynamic.literal(FromAddress = FromAddress.asInstanceOf[js.Any], Identity = Identity.asInstanceOf[js.Any])
     if (ConfigurationSet != null) __obj.updateDynamic("ConfigurationSet")(ConfigurationSet.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailChannelRequest]
   }

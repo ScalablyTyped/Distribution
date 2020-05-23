@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Serves as a base class for the ASPxClientDockPanel and ASPxClientPopupControl classes.
   */
-@JSGlobal("ASPxClientPopupControlBase")
 @js.native
-class ASPxClientPopupControlBase () extends ASPxClientControl {
+trait ASPxClientPopupControlBase extends ASPxClientControl {
   /**
     * Occurs on the client side when window resizing completes.
     */

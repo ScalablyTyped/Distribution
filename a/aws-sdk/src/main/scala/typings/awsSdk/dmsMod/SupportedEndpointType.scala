@@ -19,6 +19,10 @@ trait SupportedEndpointType extends js.Object {
     */
   var EngineName: js.UndefOr[String] = js.native
   /**
+    * The earliest AWS DMS engine version that supports this endpoint engine. Note that endpoint engines released with AWS DMS versions earlier than 3.1.1 do not return a value for this parameter.
+    */
+  var ReplicationInstanceEngineMinimumVersion: js.UndefOr[String] = js.native
+  /**
     * Indicates if Change Data Capture (CDC) is supported.
     */
   var SupportsCDC: js.UndefOr[Boolean] = js.native
@@ -30,13 +34,15 @@ object SupportedEndpointType {
     EndpointType: ReplicationEndpointTypeValue = null,
     EngineDisplayName: String = null,
     EngineName: String = null,
-    SupportsCDC: js.UndefOr[scala.Boolean] = js.undefined
+    ReplicationInstanceEngineMinimumVersion: String = null,
+    SupportsCDC: js.UndefOr[Boolean] = js.undefined
   ): SupportedEndpointType = {
     val __obj = js.Dynamic.literal()
     if (EndpointType != null) __obj.updateDynamic("EndpointType")(EndpointType.asInstanceOf[js.Any])
     if (EngineDisplayName != null) __obj.updateDynamic("EngineDisplayName")(EngineDisplayName.asInstanceOf[js.Any])
     if (EngineName != null) __obj.updateDynamic("EngineName")(EngineName.asInstanceOf[js.Any])
-    if (!js.isUndefined(SupportsCDC)) __obj.updateDynamic("SupportsCDC")(SupportsCDC.asInstanceOf[js.Any])
+    if (ReplicationInstanceEngineMinimumVersion != null) __obj.updateDynamic("ReplicationInstanceEngineMinimumVersion")(ReplicationInstanceEngineMinimumVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(SupportsCDC)) __obj.updateDynamic("SupportsCDC")(SupportsCDC.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupportedEndpointType]
   }
 }

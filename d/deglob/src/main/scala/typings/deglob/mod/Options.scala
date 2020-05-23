@@ -28,8 +28,8 @@ object Options {
     if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
     if (gitIgnoreFile != null) __obj.updateDynamic("gitIgnoreFile")(gitIgnoreFile.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(useGitIgnore)) __obj.updateDynamic("useGitIgnore")(useGitIgnore.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePackageJson)) __obj.updateDynamic("usePackageJson")(usePackageJson.asInstanceOf[js.Any])
+    if (!js.isUndefined(useGitIgnore)) __obj.updateDynamic("useGitIgnore")(useGitIgnore.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePackageJson)) __obj.updateDynamic("usePackageJson")(usePackageJson.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

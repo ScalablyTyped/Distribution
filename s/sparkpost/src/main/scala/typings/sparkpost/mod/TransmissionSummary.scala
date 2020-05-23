@@ -1,6 +1,6 @@
 package typings.sparkpost.mod
 
-import typings.sparkpost.AnonTemplateidString
+import typings.sparkpost.anon.TemplateidString
 import typings.sparkpost.sparkpostStrings.Canceled
 import typings.sparkpost.sparkpostStrings.Generating
 import typings.sparkpost.sparkpostStrings.Success
@@ -13,7 +13,7 @@ trait TransmissionSummary extends js.Object {
   /** Name of the campaign */
   var campaign_id: String
   /** Content that will be used to construct a message */
-  var content: AnonTemplateidString
+  var content: TemplateidString
   /** Description of the transmission */
   var description: String
   /** ID of the transmission */
@@ -26,7 +26,7 @@ object TransmissionSummary {
   @scala.inline
   def apply(
     campaign_id: String,
-    content: AnonTemplateidString,
+    content: TemplateidString,
     description: String,
     id: String,
     state: submitted | Generating | Success | Canceled

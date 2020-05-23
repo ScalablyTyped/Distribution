@@ -15,15 +15,15 @@ trait HotspotOptions extends js.Object {
 object HotspotOptions {
   @scala.inline
   def apply(
-    maxZoom: Int | Double = null,
-    minZoom: Int | Double = null,
+    maxZoom: js.UndefOr[Double] = js.undefined,
+    minZoom: js.UndefOr[Double] = js.undefined,
     offsets: js.Array[Double] = null,
     text: String = null,
     userData: js.Any = null
   ): HotspotOptions = {
     val __obj = js.Dynamic.literal()
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
     if (offsets != null) __obj.updateDynamic("offsets")(offsets.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])

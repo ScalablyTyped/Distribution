@@ -67,7 +67,7 @@ object TOptionsBase {
   @scala.inline
   def apply(
     context: js.Any = null,
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     defaultValue: js.Any = null,
     fallbackLng: FallbackLng = null,
     interpolation: InterpolationOptions = null,
@@ -83,7 +83,7 @@ object TOptionsBase {
   ): TOptionsBase = {
     val __obj = js.Dynamic.literal()
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (fallbackLng != null) __obj.updateDynamic("fallbackLng")(fallbackLng.asInstanceOf[js.Any])
     if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation.asInstanceOf[js.Any])
@@ -95,7 +95,7 @@ object TOptionsBase {
     if (nsSeparator != null) __obj.updateDynamic("nsSeparator")(nsSeparator.asInstanceOf[js.Any])
     if (postProcess != null) __obj.updateDynamic("postProcess")(postProcess.asInstanceOf[js.Any])
     if (replace != null) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnObjects)) __obj.updateDynamic("returnObjects")(returnObjects.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnObjects)) __obj.updateDynamic("returnObjects")(returnObjects.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TOptionsBase]
   }
 }

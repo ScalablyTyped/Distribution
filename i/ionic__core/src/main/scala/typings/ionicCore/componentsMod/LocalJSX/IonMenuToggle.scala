@@ -19,7 +19,7 @@ object IonMenuToggle {
   @scala.inline
   def apply(autoHide: js.UndefOr[Boolean] = js.undefined, menu: String = null): IonMenuToggle = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide.get.asInstanceOf[js.Any])
     if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonMenuToggle]
   }

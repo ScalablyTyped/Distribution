@@ -39,7 +39,7 @@ object ExportOptions {
   ): ExportOptions = {
     val __obj = js.Dynamic.literal()
     if (destinationType != null) __obj.updateDynamic("destinationType")(destinationType.asInstanceOf[js.Any])
-    if (!js.isUndefined(excelExportAll)) __obj.updateDynamic("excelExportAll")(excelExportAll.asInstanceOf[js.Any])
+    if (!js.isUndefined(excelExportAll)) __obj.updateDynamic("excelExportAll")(excelExportAll.get.asInstanceOf[js.Any])
     if (excelSheetName != null) __obj.updateDynamic("excelSheetName")(excelSheetName.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (fontUrl != null) __obj.updateDynamic("fontUrl")(fontUrl.asInstanceOf[js.Any])
@@ -47,10 +47,10 @@ object ExportOptions {
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (pageOrientation != null) __obj.updateDynamic("pageOrientation")(pageOrientation.asInstanceOf[js.Any])
     if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFilters)) __obj.updateDynamic("showFilters")(showFilters.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFilters)) __obj.updateDynamic("showFilters")(showFilters.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCustomizeCellForData)) __obj.updateDynamic("useCustomizeCellForData")(useCustomizeCellForData.asInstanceOf[js.Any])
-    if (!js.isUndefined(useOlapFormattingInExcel)) __obj.updateDynamic("useOlapFormattingInExcel")(useOlapFormattingInExcel.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCustomizeCellForData)) __obj.updateDynamic("useCustomizeCellForData")(useCustomizeCellForData.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useOlapFormattingInExcel)) __obj.updateDynamic("useOlapFormattingInExcel")(useOlapFormattingInExcel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportOptions]
   }
 }

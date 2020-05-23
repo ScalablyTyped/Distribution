@@ -1,6 +1,6 @@
 package typings.babylonjs.babylonjsIndexMod
 
-import typings.babylonjs.AnonHoles
+import typings.babylonjs.anon.Holes
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
@@ -30,9 +30,9 @@ object PolygonBuilder extends js.Object {
     * @param earcutInjection can be used to inject your own earcut reference
     * @returns the polygon mesh
     */
-  def CreatePolygon(name: String, options: AnonHoles): typings.babylonjs.meshMod.Mesh = js.native
-  def CreatePolygon(name: String, options: AnonHoles, scene: Nullable[Scene]): typings.babylonjs.meshMod.Mesh = js.native
-  def CreatePolygon(name: String, options: AnonHoles, scene: Nullable[Scene], earcutInjection: js.Any): typings.babylonjs.meshMod.Mesh = js.native
+  def CreatePolygon(name: String, options: Holes): typings.babylonjs.meshMod.Mesh = js.native
+  def CreatePolygon(name: String, options: Holes, scene: Nullable[Scene]): typings.babylonjs.meshMod.Mesh = js.native
+  def CreatePolygon(name: String, options: Holes, scene: Nullable[Scene], earcutInjection: js.Any): typings.babylonjs.meshMod.Mesh = js.native
   /**
     * Creates an extruded polygon mesh, with depth in the Y direction.
     * * You can set different colors and different images to the top, bottom and extruded side by using the parameters `faceColors` (an array of 3 Color3 elements) and `faceUV` (an array of 3 Vector4 elements)
@@ -43,8 +43,8 @@ object PolygonBuilder extends js.Object {
     * @param earcutInjection can be used to inject your own earcut reference
     * @returns the polygon mesh
     */
-  def ExtrudePolygon(name: String, options: AnonHoles): typings.babylonjs.meshMod.Mesh = js.native
-  def ExtrudePolygon(name: String, options: AnonHoles, scene: Nullable[Scene]): typings.babylonjs.meshMod.Mesh = js.native
-  def ExtrudePolygon(name: String, options: AnonHoles, scene: Nullable[Scene], earcutInjection: js.Any): typings.babylonjs.meshMod.Mesh = js.native
+  def ExtrudePolygon(name: String, options: Holes): typings.babylonjs.meshMod.Mesh = js.native
+  def ExtrudePolygon(name: String, options: Holes, scene: Nullable[Scene]): typings.babylonjs.meshMod.Mesh = js.native
+  def ExtrudePolygon(name: String, options: Holes, scene: Nullable[Scene], earcutInjection: js.Any): typings.babylonjs.meshMod.Mesh = js.native
 }
 

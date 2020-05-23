@@ -17,39 +17,39 @@ trait IResponse extends js.Object {
   def appendBody(value: String): Unit = js.native
   def appendBody(value: js.Object): Unit = js.native
   /**
-  	 * Gets the response body.
-  	 */
+    * Gets the response body.
+    */
   def getBody(): js.Object = js.native
   @JSName("getBody")
   def getBody_T_T[T](): T = js.native
   /**
-  	 * Gets a maximum quota allowed for the resource associated with a post-trigger
-  	 * Note: this method is only available in post-triggers
-  	 */
+    * Gets a maximum quota allowed for the resource associated with a post-trigger
+    * Note: this method is only available in post-triggers
+    */
   def getMaxResourceQuota(): String = js.native
   /**
-  	 * Gets a current quota usage for the resource associated with a post-trigger
-  	 * Note: this method is only available in post-triggers
-  	 */
+    * Gets a current quota usage for the resource associated with a post-trigger
+    * Note: this method is only available in post-triggers
+    */
   def getResourceQuotaCurrentUsage(): String = js.native
   /**
-  	 * Gets a specified response header value.
-  	 * @param key the name of the header to retrieve
-  	 */
+    * Gets a specified response header value.
+    * @param key the name of the header to retrieve
+    */
   def getValue(key: String): String = js.native
   /**
-  	 * Sets a specified response header value.
-  	 * Note: this method cannot be used to create new headers.
-  	 * @param key the name of the header
-  	 * @param value the value of the header
-  	 */
+    * Sets a specified response header value.
+    * Note: this method cannot be used to create new headers.
+    * @param key the name of the header
+    * @param value the value of the header
+    */
   def getValue(key: String, value: String): Unit = js.native
   /**
-  	 * Sets the response body.
-  	 * Note: This cannot be done in pre-triggers.
-  	 * In post-triggers, the response body is already set with the requested resource and will be overwritten with this call.
-  	 * In stored procedures, this call can be used to set the response message body as output to the calling client.
-  	 */
+    * Sets the response body.
+    * Note: This cannot be done in pre-triggers.
+    * In post-triggers, the response body is already set with the requested resource and will be overwritten with this call.
+    * In stored procedures, this call can be used to set the response message body as output to the calling client.
+    */
   def setBody(value: String): Unit = js.native
   def setBody(value: js.Object): Unit = js.native
 }

@@ -62,9 +62,9 @@ object SyncStateOptions {
     `then`: () => Unit = null
   ): SyncStateOptions = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-    if (!js.isUndefined(asArray)) __obj.updateDynamic("asArray")(asArray.asInstanceOf[js.Any])
+    if (!js.isUndefined(asArray)) __obj.updateDynamic("asArray")(asArray.get.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepKeys)) __obj.updateDynamic("keepKeys")(keepKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepKeys)) __obj.updateDynamic("keepKeys")(keepKeys.get.asInstanceOf[js.Any])
     if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction0(onFailure))
     if (queries != null) __obj.updateDynamic("queries")(queries.asInstanceOf[js.Any])
     if (`then` != null) __obj.updateDynamic("then")(js.Any.fromFunction0(`then`))

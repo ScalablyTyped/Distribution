@@ -12,7 +12,7 @@ trait Module
 
 object Module {
   @scala.inline
-  def apply(StringDictionary: /* exportName */ StringDictionary[js.Any] = null, default: js.Any = null): Module = {
+  def apply(StringDictionary: /* name */ StringDictionary[js.Any] = null, default: js.Any = null): Module = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])

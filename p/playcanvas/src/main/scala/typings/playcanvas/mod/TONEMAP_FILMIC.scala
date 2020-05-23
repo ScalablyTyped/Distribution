@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.TONEMAP_FILMIC
-  * @type {number}
-  * @description Filmic tonemapping curve.
+  * Filmic tonemapping curve.
   */
 @JSImport("playcanvas", "TONEMAP_FILMIC")
 @js.native

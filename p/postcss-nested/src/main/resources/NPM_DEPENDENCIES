@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "postcss-nested" : "4.2.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "postcss-nested" : "4.2.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

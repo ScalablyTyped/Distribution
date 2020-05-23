@@ -14,10 +14,13 @@ trait ISelectItemInfo extends js.Object {
 
 object ISelectItemInfo {
   @scala.inline
-  def apply(key: String = null, synonyms: js.Array[String] = null): ISelectItemInfo = {
+  def apply(
+    key: js.UndefOr[Null | String] = js.undefined,
+    synonyms: js.UndefOr[Null | js.Array[String]] = js.undefined
+  ): ISelectItemInfo = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (synonyms != null) __obj.updateDynamic("synonyms")(synonyms.asInstanceOf[js.Any])
+    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(synonyms)) __obj.updateDynamic("synonyms")(synonyms.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISelectItemInfo]
   }
 }

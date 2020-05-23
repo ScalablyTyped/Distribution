@@ -32,7 +32,7 @@ object AreYouSureOptions {
     if (dirtyClass != null) __obj.updateDynamic("dirtyClass")(dirtyClass.asInstanceOf[js.Any])
     if (fieldSelector != null) __obj.updateDynamic("fieldSelector")(fieldSelector.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AreYouSureOptions]
   }
 }

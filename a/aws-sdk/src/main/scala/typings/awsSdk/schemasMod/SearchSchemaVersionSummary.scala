@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SearchSchemaVersionSummary extends js.Object {
+  /**
+    * The date the schema version was created.
+    */
   var CreatedDate: js.UndefOr[timestampIso8601] = js.native
   /**
     * The version number of the schema

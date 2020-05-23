@@ -13,11 +13,15 @@ trait InflateFunctionOptions extends js.Object {
 
 object InflateFunctionOptions {
   @scala.inline
-  def apply(raw: js.UndefOr[Boolean] = js.undefined, to: string = null, windowBits: Int | Double = null): InflateFunctionOptions = {
+  def apply(
+    raw: js.UndefOr[Boolean] = js.undefined,
+    to: string = null,
+    windowBits: js.UndefOr[Double] = js.undefined
+  ): InflateFunctionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.get.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
-    if (windowBits != null) __obj.updateDynamic("windowBits")(windowBits.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowBits)) __obj.updateDynamic("windowBits")(windowBits.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InflateFunctionOptions]
   }
 }

@@ -25,18 +25,18 @@ object OverlayProps {
     children: ReactNode = null,
     key: Key = null,
     onClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
-    ref: LegacyRef[Overlay] = null,
+    ref: js.UndefOr[Null | LegacyRef[Overlay]] = js.undefined,
     show: js.UndefOr[Boolean] = js.undefined,
     transitionEnabled: js.UndefOr[Boolean] = js.undefined
   ): OverlayProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoLockScrolling)) __obj.updateDynamic("autoLockScrolling")(autoLockScrolling.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoLockScrolling)) __obj.updateDynamic("autoLockScrolling")(autoLockScrolling.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (!js.isUndefined(transitionEnabled)) __obj.updateDynamic("transitionEnabled")(transitionEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitionEnabled)) __obj.updateDynamic("transitionEnabled")(transitionEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverlayProps]
   }
 }

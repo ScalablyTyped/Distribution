@@ -1,13 +1,13 @@
 package typings.sailthruClient.mod
 
-import typings.sailthruClient.AnonFull
+import typings.sailthruClient.anon.Full
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PurchaseItem extends js.Object {
   var id: String | Double
-  var images: js.UndefOr[AnonFull] = js.undefined
+  var images: js.UndefOr[Full] = js.undefined
   var price: Double
   var qty: Double
   var tags: js.UndefOr[js.Array[String]] = js.undefined
@@ -24,7 +24,7 @@ object PurchaseItem {
     qty: Double,
     title: String,
     url: String,
-    images: AnonFull = null,
+    images: Full = null,
     tags: js.Array[String] = null,
     vars: js.Object = null
   ): PurchaseItem = {

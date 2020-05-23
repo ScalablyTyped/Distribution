@@ -35,22 +35,22 @@ trait TetherProps extends js.Object {
 object TetherProps {
   @scala.inline
   def apply(
-    anchorRef: Ref[HTMLElement] = null,
-    arrowRef: Ref[HTMLElement] = null,
+    anchorRef: js.UndefOr[Null | Ref[HTMLElement]] = js.undefined,
+    arrowRef: js.UndefOr[Null | Ref[HTMLElement]] = js.undefined,
     children: ReactNode = null,
     onPopperUpdate: (/* offsets */ NormalizedOffsets, /* popper */ PopperDataObject) => _ = null,
     placement: topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top = null,
     popperOptions: js.Any = null,
-    popperRef: Ref[HTMLElement] = null
+    popperRef: js.UndefOr[Null | Ref[HTMLElement]] = js.undefined
   ): TetherProps = {
     val __obj = js.Dynamic.literal()
-    if (anchorRef != null) __obj.updateDynamic("anchorRef")(anchorRef.asInstanceOf[js.Any])
-    if (arrowRef != null) __obj.updateDynamic("arrowRef")(arrowRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(anchorRef)) __obj.updateDynamic("anchorRef")(anchorRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrowRef)) __obj.updateDynamic("arrowRef")(arrowRef.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (onPopperUpdate != null) __obj.updateDynamic("onPopperUpdate")(js.Any.fromFunction2(onPopperUpdate))
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (popperOptions != null) __obj.updateDynamic("popperOptions")(popperOptions.asInstanceOf[js.Any])
-    if (popperRef != null) __obj.updateDynamic("popperRef")(popperRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(popperRef)) __obj.updateDynamic("popperRef")(popperRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[TetherProps]
   }
 }

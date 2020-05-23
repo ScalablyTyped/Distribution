@@ -1,6 +1,6 @@
 package typings.sipJs.publisherOptionsMod
 
-import typings.sipJs.AnonFromTag
+import typings.sipJs.anon.FromTag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ trait PublisherOptions extends js.Object {
     */
   var extraHeaders: js.UndefOr[js.Array[String]] = js.undefined
   /** @deprecated TODO: provide alternative. */
-  var params: js.UndefOr[AnonFromTag] = js.undefined
+  var params: js.UndefOr[FromTag] = js.undefined
   /**
     * If set true, UA will gracefully unpublish for the event on UA close.
     * @defaultValue true
@@ -33,18 +33,18 @@ object PublisherOptions {
   def apply(
     body: String = null,
     contentType: String = null,
-    expires: Int | Double = null,
+    expires: js.UndefOr[Double] = js.undefined,
     extraHeaders: js.Array[String] = null,
-    params: AnonFromTag = null,
+    params: FromTag = null,
     unpublishOnClose: js.UndefOr[Boolean] = js.undefined
   ): PublisherOptions = {
     val __obj = js.Dynamic.literal()
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    if (!js.isUndefined(expires)) __obj.updateDynamic("expires")(expires.get.asInstanceOf[js.Any])
     if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (!js.isUndefined(unpublishOnClose)) __obj.updateDynamic("unpublishOnClose")(unpublishOnClose.asInstanceOf[js.Any])
+    if (!js.isUndefined(unpublishOnClose)) __obj.updateDynamic("unpublishOnClose")(unpublishOnClose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublisherOptions]
   }
 }

@@ -172,7 +172,7 @@ object Options {
     hide: /* color */ Instance => Unit = null,
     hideAfterPaletteSelect: js.UndefOr[Boolean] = js.undefined,
     localStorageKey: String = null,
-    maxSelectionSize: Int | Double = null,
+    maxSelectionSize: js.UndefOr[Double] = js.undefined,
     move: /* color */ Instance => Unit = null,
     palette: js.Array[js.Array[String]] = null,
     preferredFormat: String = null,
@@ -191,37 +191,37 @@ object Options {
     togglePaletteOnly: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowEmpty)) __obj.updateDynamic("allowEmpty")(allowEmpty.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowEmpty)) __obj.updateDynamic("allowEmpty")(allowEmpty.get.asInstanceOf[js.Any])
     if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
     if (beforeShow != null) __obj.updateDynamic("beforeShow")(js.Any.fromFunction1(beforeShow))
     if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText.asInstanceOf[js.Any])
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (chooseText != null) __obj.updateDynamic("chooseText")(chooseText.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickoutFiresChange)) __obj.updateDynamic("clickoutFiresChange")(clickoutFiresChange.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickoutFiresChange)) __obj.updateDynamic("clickoutFiresChange")(clickoutFiresChange.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (containerClassName != null) __obj.updateDynamic("containerClassName")(containerClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(flat)) __obj.updateDynamic("flat")(flat.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flat)) __obj.updateDynamic("flat")(flat.get.asInstanceOf[js.Any])
     if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction1(hide))
-    if (!js.isUndefined(hideAfterPaletteSelect)) __obj.updateDynamic("hideAfterPaletteSelect")(hideAfterPaletteSelect.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideAfterPaletteSelect)) __obj.updateDynamic("hideAfterPaletteSelect")(hideAfterPaletteSelect.get.asInstanceOf[js.Any])
     if (localStorageKey != null) __obj.updateDynamic("localStorageKey")(localStorageKey.asInstanceOf[js.Any])
-    if (maxSelectionSize != null) __obj.updateDynamic("maxSelectionSize")(maxSelectionSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSelectionSize)) __obj.updateDynamic("maxSelectionSize")(maxSelectionSize.get.asInstanceOf[js.Any])
     if (move != null) __obj.updateDynamic("move")(js.Any.fromFunction1(move))
     if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
     if (preferredFormat != null) __obj.updateDynamic("preferredFormat")(preferredFormat.asInstanceOf[js.Any])
     if (replacerClassName != null) __obj.updateDynamic("replacerClassName")(replacerClassName.asInstanceOf[js.Any])
     if (selectionPalette != null) __obj.updateDynamic("selectionPalette")(selectionPalette.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
-    if (!js.isUndefined(showAlpha)) __obj.updateDynamic("showAlpha")(showAlpha.asInstanceOf[js.Any])
-    if (!js.isUndefined(showButtons)) __obj.updateDynamic("showButtons")(showButtons.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInitial)) __obj.updateDynamic("showInitial")(showInitial.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInput)) __obj.updateDynamic("showInput")(showInput.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPalette)) __obj.updateDynamic("showPalette")(showPalette.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPaletteOnly)) __obj.updateDynamic("showPaletteOnly")(showPaletteOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSelectionPalette)) __obj.updateDynamic("showSelectionPalette")(showSelectionPalette.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAlpha)) __obj.updateDynamic("showAlpha")(showAlpha.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showButtons)) __obj.updateDynamic("showButtons")(showButtons.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInitial)) __obj.updateDynamic("showInitial")(showInitial.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInput)) __obj.updateDynamic("showInput")(showInput.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPalette)) __obj.updateDynamic("showPalette")(showPalette.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPaletteOnly)) __obj.updateDynamic("showPaletteOnly")(showPaletteOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSelectionPalette)) __obj.updateDynamic("showSelectionPalette")(showSelectionPalette.get.asInstanceOf[js.Any])
     if (togglePaletteLessText != null) __obj.updateDynamic("togglePaletteLessText")(togglePaletteLessText.asInstanceOf[js.Any])
     if (togglePaletteMoreText != null) __obj.updateDynamic("togglePaletteMoreText")(togglePaletteMoreText.asInstanceOf[js.Any])
-    if (!js.isUndefined(togglePaletteOnly)) __obj.updateDynamic("togglePaletteOnly")(togglePaletteOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(togglePaletteOnly)) __obj.updateDynamic("togglePaletteOnly")(togglePaletteOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -1,6 +1,6 @@
 package typings.numeric.mod
 
-import typings.numeric.AnonE
+import typings.numeric.anon.E
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ trait Tensor extends js.Object {
   def div(tensor: TensorValue): Tensor = js.native
   def dot(tensor: Tensor): Tensor = js.native
   def dot(tensor: TensorValue): Tensor = js.native
-  def eig(): AnonE = js.native
+  def eig(): E = js.native
   def exp(): Tensor = js.native
   // fast fourier transforms
   def fft(): Tensor = js.native

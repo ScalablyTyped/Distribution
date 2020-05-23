@@ -16,16 +16,19 @@ trait MessagingPayload extends js.Object {
   /**
     * The data message payload.
     */
-  var data: js.UndefOr[DataMessagePayload] = js.undefined
+  var data: js.UndefOr[typings.firebaseAdmin.messagingMod.admin.messaging.DataMessagePayload] = js.undefined
   /**
     * The notification message payload.
     */
-  var notification: js.UndefOr[NotificationMessagePayload] = js.undefined
+  var notification: js.UndefOr[typings.firebaseAdmin.messagingMod.admin.messaging.NotificationMessagePayload] = js.undefined
 }
 
 object MessagingPayload {
   @scala.inline
-  def apply(data: DataMessagePayload = null, notification: NotificationMessagePayload = null): MessagingPayload = {
+  def apply(
+    data: typings.firebaseAdmin.messagingMod.admin.messaging.DataMessagePayload = null,
+    notification: typings.firebaseAdmin.messagingMod.admin.messaging.NotificationMessagePayload = null
+  ): MessagingPayload = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (notification != null) __obj.updateDynamic("notification")(notification.asInstanceOf[js.Any])

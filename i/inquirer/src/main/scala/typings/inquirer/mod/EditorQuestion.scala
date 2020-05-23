@@ -21,7 +21,7 @@ trait EditorQuestion[T /* <: Answers */] extends Question[T] {
 
 object EditorQuestion {
   @scala.inline
-  def apply[T /* <: Answers */](
+  def apply[T](
     `type`: editor,
     default: AsyncDynamicQuestionProperty[_, T] = null,
     filter: /* input */ js.Any => _ = null,

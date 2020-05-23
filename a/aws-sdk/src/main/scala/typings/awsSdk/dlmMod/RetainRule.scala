@@ -23,13 +23,13 @@ trait RetainRule extends js.Object {
 object RetainRule {
   @scala.inline
   def apply(
-    Count: Int | Double = null,
-    Interval: Int | Double = null,
+    Count: js.UndefOr[Count] = js.undefined,
+    Interval: js.UndefOr[Interval] = js.undefined,
     IntervalUnit: RetentionIntervalUnitValues = null
   ): RetainRule = {
     val __obj = js.Dynamic.literal()
-    if (Count != null) __obj.updateDynamic("Count")(Count.asInstanceOf[js.Any])
-    if (Interval != null) __obj.updateDynamic("Interval")(Interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Interval)) __obj.updateDynamic("Interval")(Interval.get.asInstanceOf[js.Any])
     if (IntervalUnit != null) __obj.updateDynamic("IntervalUnit")(IntervalUnit.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetainRule]
   }

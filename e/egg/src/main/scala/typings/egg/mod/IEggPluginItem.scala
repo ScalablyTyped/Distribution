@@ -22,7 +22,7 @@ object IEggPluginItem {
   ): IEggPluginItem = {
     val __obj = js.Dynamic.literal()
     if (_package != null) __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.get.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEggPluginItem]

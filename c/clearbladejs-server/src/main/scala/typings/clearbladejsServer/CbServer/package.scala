@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object CbServer {
   type CbCallback = js.Function2[
     /* error */ scala.Boolean, 
-    /* response */ typings.clearbladejsServer.CbServer.Resp_, 
+    /* response */ typings.clearbladejsServer.CbServer.Resp, 
     scala.Unit
   ]
   type ItemOptions = typings.clearbladejsServer.CbServer.CollectionOptionsWithID

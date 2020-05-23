@@ -1,6 +1,6 @@
 package typings.koa2SessionRedis.mod
 
-import typings.koa2SessionRedis.PartialSessionexpirenumbe
+import typings.koa2SessionRedis.anon.PartialSessionexpirenumbe
 import typings.koa2SessionRedis.koa2SessionRedisStrings.session
 import typings.koaSession.mod.stores
 import scala.scalajs.js

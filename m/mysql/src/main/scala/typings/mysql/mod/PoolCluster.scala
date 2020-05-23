@@ -29,12 +29,11 @@ trait PoolCluster extends js.Object {
     selector: String,
     callback: js.Function2[/* err */ MysqlError, /* connection */ PoolConnection, Unit]
   ): Unit = js.native
-  def of(pattern: js.UndefOr[scala.Nothing], selector: String): Pool = js.native
+  def of(pattern: js.UndefOr[Null], selector: String): Pool = js.native
   def of(pattern: String): Pool = js.native
   def of(pattern: String, selector: String): Pool = js.native
-  def of(pattern: Null, selector: String): Pool = js.native
   @JSName("of")
-  def of_false(pattern: `false`, selector: String): Pool = js.native
+  def of_false(pattern: js.UndefOr[`false`], selector: String): Pool = js.native
   /**
     * Set handler to be run on a certain event.
     */

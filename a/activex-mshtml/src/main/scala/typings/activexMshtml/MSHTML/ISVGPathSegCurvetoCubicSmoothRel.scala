@@ -4,14 +4,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.ISVGPathSegCurvetoCubicSmoothRel")
-@js.native
-class ISVGPathSegCurvetoCubicSmoothRel protected () extends js.Object {
+trait ISVGPathSegCurvetoCubicSmoothRel extends js.Object {
   @JSName("MSHTML.ISVGPathSegCurvetoCubicSmoothRel_typekey")
-  var MSHTMLDotISVGPathSegCurvetoCubicSmoothRel_typekey: ISVGPathSegCurvetoCubicSmoothRel = js.native
-  var x: Double = js.native
-  var x2: Double = js.native
-  var y: Double = js.native
-  var y2: Double = js.native
+  var MSHTMLDotISVGPathSegCurvetoCubicSmoothRel_typekey: ISVGPathSegCurvetoCubicSmoothRel
+  var x: Double
+  var x2: Double
+  var y: Double
+  var y2: Double
+}
+
+object ISVGPathSegCurvetoCubicSmoothRel {
+  @scala.inline
+  def apply(
+    MSHTMLDotISVGPathSegCurvetoCubicSmoothRel_typekey: ISVGPathSegCurvetoCubicSmoothRel,
+    x: Double,
+    x2: Double,
+    y: Double,
+    y2: Double
+  ): ISVGPathSegCurvetoCubicSmoothRel = {
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
+    __obj.updateDynamic("MSHTML.ISVGPathSegCurvetoCubicSmoothRel_typekey")(MSHTMLDotISVGPathSegCurvetoCubicSmoothRel_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ISVGPathSegCurvetoCubicSmoothRel]
+  }
 }
 

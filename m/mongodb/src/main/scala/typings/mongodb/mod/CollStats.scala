@@ -1,6 +1,6 @@
 package typings.mongodb.mod
 
-import typings.mongodb.AnonDictindex
+import typings.mongodb.anon.Dictindex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ trait CollStats extends js.Object {
   /**
     * Size of specific indexes in bytes.
     */
-  var indexSizes: AnonDictindex
+  var indexSizes: Dictindex
   /**
     * Size of the most recently created extent in bytes.
     */
@@ -77,7 +77,7 @@ object CollStats {
     avgObjSize: scala.Double,
     capped: Boolean,
     count: scala.Double,
-    indexSizes: AnonDictindex,
+    indexSizes: Dictindex,
     lastExtentSize: scala.Double,
     max: scala.Double,
     maxSize: scala.Double,
@@ -90,12 +90,12 @@ object CollStats {
     storageSize: scala.Double,
     totalIndexSize: scala.Double,
     indexDetails: js.Any = null,
-    userFlags: Int | scala.Double = null,
+    userFlags: js.UndefOr[scala.Double] = js.undefined,
     wiredTiger: WiredTigerData = null
   ): CollStats = {
     val __obj = js.Dynamic.literal(avgObjSize = avgObjSize.asInstanceOf[js.Any], capped = capped.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], indexSizes = indexSizes.asInstanceOf[js.Any], lastExtentSize = lastExtentSize.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], maxSize = maxSize.asInstanceOf[js.Any], nindexes = nindexes.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], numExtents = numExtents.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], paddingFactor = paddingFactor.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], storageSize = storageSize.asInstanceOf[js.Any], totalIndexSize = totalIndexSize.asInstanceOf[js.Any])
     if (indexDetails != null) __obj.updateDynamic("indexDetails")(indexDetails.asInstanceOf[js.Any])
-    if (userFlags != null) __obj.updateDynamic("userFlags")(userFlags.asInstanceOf[js.Any])
+    if (!js.isUndefined(userFlags)) __obj.updateDynamic("userFlags")(userFlags.get.asInstanceOf[js.Any])
     if (wiredTiger != null) __obj.updateDynamic("wiredTiger")(wiredTiger.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollStats]
   }

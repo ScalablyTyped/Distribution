@@ -20,22 +20,22 @@ object ModalViewOptions {
   def apply(
     beforeOpen: /* e */ ModalViewBeforeOpenEvent => Unit = null,
     close: /* e */ ModalViewCloseEvent => Unit = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     init: /* e */ ModalViewInitEvent => Unit = null,
     modal: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     open: /* e */ ModalViewOpenEvent => Unit = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): ModalViewOptions = {
     val __obj = js.Dynamic.literal()
     if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(js.Any.fromFunction1(beforeOpen))
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalViewOptions]
   }
 }

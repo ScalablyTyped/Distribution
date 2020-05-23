@@ -4,7 +4,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapToolbar")
 @js.native
-class BootstrapToolbar () extends BootstrapMenu
+trait BootstrapToolbar extends BootstrapMenu
 

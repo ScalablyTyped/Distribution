@@ -64,9 +64,9 @@ object ReservedNode {
   @scala.inline
   def apply(
     CurrencyCode: String = null,
-    Duration: Int | scala.Double = null,
-    FixedPrice: Int | scala.Double = null,
-    NodeCount: Int | scala.Double = null,
+    Duration: js.UndefOr[Integer] = js.undefined,
+    FixedPrice: js.UndefOr[Double] = js.undefined,
+    NodeCount: js.UndefOr[Integer] = js.undefined,
     NodeType: String = null,
     OfferingType: String = null,
     RecurringCharges: RecurringChargeList = null,
@@ -75,13 +75,13 @@ object ReservedNode {
     ReservedNodeOfferingType: ReservedNodeOfferingType = null,
     StartTime: TStamp = null,
     State: String = null,
-    UsagePrice: Int | scala.Double = null
+    UsagePrice: js.UndefOr[Double] = js.undefined
   ): ReservedNode = {
     val __obj = js.Dynamic.literal()
     if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode.asInstanceOf[js.Any])
-    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
-    if (FixedPrice != null) __obj.updateDynamic("FixedPrice")(FixedPrice.asInstanceOf[js.Any])
-    if (NodeCount != null) __obj.updateDynamic("NodeCount")(NodeCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(FixedPrice)) __obj.updateDynamic("FixedPrice")(FixedPrice.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(NodeCount)) __obj.updateDynamic("NodeCount")(NodeCount.get.asInstanceOf[js.Any])
     if (NodeType != null) __obj.updateDynamic("NodeType")(NodeType.asInstanceOf[js.Any])
     if (OfferingType != null) __obj.updateDynamic("OfferingType")(OfferingType.asInstanceOf[js.Any])
     if (RecurringCharges != null) __obj.updateDynamic("RecurringCharges")(RecurringCharges.asInstanceOf[js.Any])
@@ -90,7 +90,7 @@ object ReservedNode {
     if (ReservedNodeOfferingType != null) __obj.updateDynamic("ReservedNodeOfferingType")(ReservedNodeOfferingType.asInstanceOf[js.Any])
     if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (UsagePrice != null) __obj.updateDynamic("UsagePrice")(UsagePrice.asInstanceOf[js.Any])
+    if (!js.isUndefined(UsagePrice)) __obj.updateDynamic("UsagePrice")(UsagePrice.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReservedNode]
   }
 }

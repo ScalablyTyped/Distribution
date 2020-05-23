@@ -1,9 +1,9 @@
 package typings.dygraphs.dygraphs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.dygraphs.AnonLabel
-import typings.dygraphs.AnonX
 import typings.dygraphs.Dygraph
+import typings.dygraphs.anon.Label
+import typings.dygraphs.anon.X
 import typings.dygraphs.dygraphsStrings.always
 import typings.dygraphs.dygraphsStrings.follow
 import typings.dygraphs.dygraphsStrings.never
@@ -82,7 +82,7 @@ trait Options
     * See also documentation on <a href='http://dygraphs.com/per-axis.html'>per-series and
     * per-axis options</a>.
     */
-  var axes: js.UndefOr[AnonX] = js.undefined
+  var axes: js.UndefOr[X] = js.undefined
   /**
     * A function to call when the canvas is clicked.
     */
@@ -506,26 +506,26 @@ object Options {
     annotationDblClickHandler: (/* annotation */ Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => _ = null,
     annotationMouseOutHandler: (/* annotation */ Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => _ = null,
     annotationMouseOverHandler: (/* annotation */ Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => _ = null,
-    axes: AnonX = null,
+    axes: X = null,
     axis: y1 | y2 = null,
     axisLabelColor: String = null,
-    axisLabelFontSize: Int | Double = null,
+    axisLabelFontSize: js.UndefOr[Double] = js.undefined,
     axisLabelFormatter: (/* v */ Double | Date, /* granularity */ Double, /* opts */ js.Function1[/* name */ String, _], /* dygraph */ Dygraph) => _ = null,
-    axisLabelWidth: Int | Double = null,
+    axisLabelWidth: js.UndefOr[Double] = js.undefined,
     axisLineColor: String = null,
-    axisLineWidth: Int | Double = null,
-    axisTickSize: Int | Double = null,
+    axisLineWidth: js.UndefOr[Double] = js.undefined,
+    axisTickSize: js.UndefOr[Double] = js.undefined,
     clickCallback: (/* e */ MouseEvent, /* xval */ Double, /* points */ js.Array[Point]) => _ = null,
     color: String = null,
-    colorSaturation: Int | Double = null,
-    colorValue: Int | Double = null,
+    colorSaturation: js.UndefOr[Double] = js.undefined,
+    colorValue: js.UndefOr[Double] = js.undefined,
     colors: js.Array[String] = null,
     connectSeparatedPoints: js.UndefOr[Boolean] = js.undefined,
     customBars: js.UndefOr[Boolean] = js.undefined,
     dataHandler: js.Any = null,
     dateWindow: js.Array[Double] = null,
     delimiter: String = null,
-    digitsAfterDecimal: Int | Double = null,
+    digitsAfterDecimal: js.UndefOr[Double] = js.undefined,
     displayAnnotations: js.UndefOr[Boolean] = js.undefined,
     drawAxesAtZero: js.UndefOr[Boolean] = js.undefined,
     drawAxis: js.UndefOr[Boolean] = js.undefined,
@@ -537,17 +537,17 @@ object Options {
     drawPoints: js.UndefOr[Boolean] = js.undefined,
     errorBars: js.UndefOr[Boolean] = js.undefined,
     file: Data = null,
-    fillAlpha: Int | Double = null,
+    fillAlpha: js.UndefOr[Double] = js.undefined,
     fillGraph: js.UndefOr[Boolean] = js.undefined,
     fractions: js.UndefOr[Boolean] = js.undefined,
     gridLineColor: String = null,
     gridLinePattern: js.Array[Double] = null,
-    gridLineWidth: Int | Double = null,
-    height: Int | Double = null,
+    gridLineWidth: js.UndefOr[Double] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
     hideOverlayOnMouseOut: js.UndefOr[Boolean] = js.undefined,
     highlightCallback: (/* event */ MouseEvent, /* xval */ Double, /* points */ js.Array[Point], /* row */ Double, /* seriesName */ String) => _ = null,
-    highlightCircleSize: Int | Double = null,
-    highlightSeriesBackgroundAlpha: Int | Double = null,
+    highlightCircleSize: js.UndefOr[Double] = js.undefined,
+    highlightSeriesBackgroundAlpha: js.UndefOr[Double] = js.undefined,
     highlightSeriesBackgroundColor: String = null,
     highlightSeriesOpts: PerSeriesOptions = null,
     includeZero: js.UndefOr[Boolean] = js.undefined,
@@ -557,7 +557,7 @@ object Options {
     labels: js.Array[String] = null,
     labelsDiv: String | HTMLElement = null,
     labelsDivStyles: StringDictionary[String] = null,
-    labelsDivWidth: Int | Double = null,
+    labelsDivWidth: js.UndefOr[Double] = js.undefined,
     labelsKMB: js.UndefOr[Boolean] = js.undefined,
     labelsKMG2: js.UndefOr[Boolean] = js.undefined,
     labelsSeparateLines: js.UndefOr[Boolean] = js.undefined,
@@ -566,55 +566,55 @@ object Options {
     legend: always | follow | onmouseover | never = null,
     legendFormatter: /* legendData */ LegendData => String = null,
     logscale: js.UndefOr[Boolean] = js.undefined,
-    maxNumberWidth: Int | Double = null,
-    panEdgeFraction: Int | Double = null,
-    pixelsPerLabel: Int | Double = null,
+    maxNumberWidth: js.UndefOr[Double] = js.undefined,
+    panEdgeFraction: js.UndefOr[Double] = js.undefined,
+    pixelsPerLabel: js.UndefOr[Double] = js.undefined,
     plotter: js.Any = null,
     plugins: js.Array[_] = null,
     pointClickCallback: (/* e */ MouseEvent, /* point */ Point) => _ = null,
-    pointSize: Int | Double = null,
-    rangeSelectorHeight: Int | Double = null,
+    pointSize: js.UndefOr[Double] = js.undefined,
+    rangeSelectorHeight: js.UndefOr[Double] = js.undefined,
     rangeSelectorPlotFillColor: String = null,
     rangeSelectorPlotStrokeColor: String = null,
-    rightGap: Int | Double = null,
-    rollPeriod: Int | Double = null,
+    rightGap: js.UndefOr[Double] = js.undefined,
+    rollPeriod: js.UndefOr[Double] = js.undefined,
     series: StringDictionary[PerSeriesOptions] = null,
     showInRangeSelector: js.UndefOr[Boolean] = js.undefined,
     showLabelsOnHighlight: js.UndefOr[Boolean] = js.undefined,
     showRangeSelector: js.UndefOr[Boolean] = js.undefined,
     showRoller: js.UndefOr[Boolean] = js.undefined,
-    sigFigs: Int | Double = null,
-    sigma: Int | Double = null,
+    sigFigs: js.UndefOr[Double] = js.undefined,
+    sigma: js.UndefOr[Double] = js.undefined,
     stackedGraph: js.UndefOr[Boolean] = js.undefined,
     stackedGraphNaNFill: String = null,
     stepPlot: js.UndefOr[Boolean] = js.undefined,
     strokeBorderColor: String = null,
-    strokeBorderWidth: Int | Double = null,
+    strokeBorderWidth: js.UndefOr[Double] = js.undefined,
     strokePattern: js.Array[Double] = null,
-    strokeWidth: Int | Double = null,
-    ticker: (/* min */ Double, /* max */ Double, /* pixels */ Double, /* opts */ js.Function1[/* name */ String, _], /* dygraph */ Dygraph, /* vals */ js.Array[Double]) => js.Array[AnonLabel] = null,
+    strokeWidth: js.UndefOr[Double] = js.undefined,
+    ticker: (/* min */ Double, /* max */ Double, /* pixels */ Double, /* opts */ js.Function1[/* name */ String, _], /* dygraph */ Dygraph, /* vals */ js.Array[Double]) => js.Array[Label] = null,
     title: String = null,
-    titleHeight: Int | Double = null,
+    titleHeight: js.UndefOr[Double] = js.undefined,
     underlayCallback: (/* context */ CanvasRenderingContext2D, /* area */ Area, /* dygraph */ Dygraph) => _ = null,
     unhighlightCallback: /* event */ MouseEvent => _ = null,
     valueFormatter: (/* v */ Double, /* opts */ js.Function1[/* name */ String, _], /* seriesName */ String, /* dygraph */ Dygraph, /* row */ Double, /* col */ Double) => _ = null,
     valueRange: js.Array[Double] = null,
     visibility: js.Array[Boolean] = null,
-    width: Int | Double = null,
+    width: js.UndefOr[Double] = js.undefined,
     wilsonInterval: js.UndefOr[Boolean] = js.undefined,
-    xAxisHeight: Int | Double = null,
-    xLabelHeight: Int | Double = null,
-    xRangePad: Int | Double = null,
+    xAxisHeight: js.UndefOr[Double] = js.undefined,
+    xLabelHeight: js.UndefOr[Double] = js.undefined,
+    xRangePad: js.UndefOr[Double] = js.undefined,
     xValueParser: /* val */ String => Double = null,
     xlabel: String = null,
     y2label: String = null,
-    yLabelWidth: Int | Double = null,
-    yRangePad: Int | Double = null,
+    yLabelWidth: js.UndefOr[Double] = js.undefined,
+    yRangePad: js.UndefOr[Double] = js.undefined,
     ylabel: String = null,
     zoomCallback: (/* minDate */ Double, /* maxDate */ Double, /* yRanges */ js.Array[js.Tuple2[Double, Double]]) => _ = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animatedZooms)) __obj.updateDynamic("animatedZooms")(animatedZooms.asInstanceOf[js.Any])
+    if (!js.isUndefined(animatedZooms)) __obj.updateDynamic("animatedZooms")(animatedZooms.get.asInstanceOf[js.Any])
     if (annotationClickHandler != null) __obj.updateDynamic("annotationClickHandler")(js.Any.fromFunction4(annotationClickHandler))
     if (annotationDblClickHandler != null) __obj.updateDynamic("annotationDblClickHandler")(js.Any.fromFunction4(annotationDblClickHandler))
     if (annotationMouseOutHandler != null) __obj.updateDynamic("annotationMouseOutHandler")(js.Any.fromFunction4(annotationMouseOutHandler))
@@ -622,107 +622,107 @@ object Options {
     if (axes != null) __obj.updateDynamic("axes")(axes.asInstanceOf[js.Any])
     if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
     if (axisLabelColor != null) __obj.updateDynamic("axisLabelColor")(axisLabelColor.asInstanceOf[js.Any])
-    if (axisLabelFontSize != null) __obj.updateDynamic("axisLabelFontSize")(axisLabelFontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(axisLabelFontSize)) __obj.updateDynamic("axisLabelFontSize")(axisLabelFontSize.get.asInstanceOf[js.Any])
     if (axisLabelFormatter != null) __obj.updateDynamic("axisLabelFormatter")(js.Any.fromFunction4(axisLabelFormatter))
-    if (axisLabelWidth != null) __obj.updateDynamic("axisLabelWidth")(axisLabelWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(axisLabelWidth)) __obj.updateDynamic("axisLabelWidth")(axisLabelWidth.get.asInstanceOf[js.Any])
     if (axisLineColor != null) __obj.updateDynamic("axisLineColor")(axisLineColor.asInstanceOf[js.Any])
-    if (axisLineWidth != null) __obj.updateDynamic("axisLineWidth")(axisLineWidth.asInstanceOf[js.Any])
-    if (axisTickSize != null) __obj.updateDynamic("axisTickSize")(axisTickSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(axisLineWidth)) __obj.updateDynamic("axisLineWidth")(axisLineWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(axisTickSize)) __obj.updateDynamic("axisTickSize")(axisTickSize.get.asInstanceOf[js.Any])
     if (clickCallback != null) __obj.updateDynamic("clickCallback")(js.Any.fromFunction3(clickCallback))
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (colorSaturation != null) __obj.updateDynamic("colorSaturation")(colorSaturation.asInstanceOf[js.Any])
-    if (colorValue != null) __obj.updateDynamic("colorValue")(colorValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorSaturation)) __obj.updateDynamic("colorSaturation")(colorSaturation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorValue)) __obj.updateDynamic("colorValue")(colorValue.get.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (!js.isUndefined(connectSeparatedPoints)) __obj.updateDynamic("connectSeparatedPoints")(connectSeparatedPoints.asInstanceOf[js.Any])
-    if (!js.isUndefined(customBars)) __obj.updateDynamic("customBars")(customBars.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectSeparatedPoints)) __obj.updateDynamic("connectSeparatedPoints")(connectSeparatedPoints.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(customBars)) __obj.updateDynamic("customBars")(customBars.get.asInstanceOf[js.Any])
     if (dataHandler != null) __obj.updateDynamic("dataHandler")(dataHandler.asInstanceOf[js.Any])
     if (dateWindow != null) __obj.updateDynamic("dateWindow")(dateWindow.asInstanceOf[js.Any])
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (digitsAfterDecimal != null) __obj.updateDynamic("digitsAfterDecimal")(digitsAfterDecimal.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayAnnotations)) __obj.updateDynamic("displayAnnotations")(displayAnnotations.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawAxesAtZero)) __obj.updateDynamic("drawAxesAtZero")(drawAxesAtZero.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawAxis)) __obj.updateDynamic("drawAxis")(drawAxis.asInstanceOf[js.Any])
+    if (!js.isUndefined(digitsAfterDecimal)) __obj.updateDynamic("digitsAfterDecimal")(digitsAfterDecimal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayAnnotations)) __obj.updateDynamic("displayAnnotations")(displayAnnotations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawAxesAtZero)) __obj.updateDynamic("drawAxesAtZero")(drawAxesAtZero.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawAxis)) __obj.updateDynamic("drawAxis")(drawAxis.get.asInstanceOf[js.Any])
     if (drawCallback != null) __obj.updateDynamic("drawCallback")(js.Any.fromFunction2(drawCallback))
-    if (!js.isUndefined(drawGapEdgePoints)) __obj.updateDynamic("drawGapEdgePoints")(drawGapEdgePoints.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawGrid)) __obj.updateDynamic("drawGrid")(drawGrid.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawGapEdgePoints)) __obj.updateDynamic("drawGapEdgePoints")(drawGapEdgePoints.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawGrid)) __obj.updateDynamic("drawGrid")(drawGrid.get.asInstanceOf[js.Any])
     if (drawHighlightPointCallback != null) __obj.updateDynamic("drawHighlightPointCallback")(js.Any.fromFunction7(drawHighlightPointCallback))
     if (drawPointCallback != null) __obj.updateDynamic("drawPointCallback")(js.Any.fromFunction7(drawPointCallback))
-    if (!js.isUndefined(drawPoints)) __obj.updateDynamic("drawPoints")(drawPoints.asInstanceOf[js.Any])
-    if (!js.isUndefined(errorBars)) __obj.updateDynamic("errorBars")(errorBars.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawPoints)) __obj.updateDynamic("drawPoints")(drawPoints.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorBars)) __obj.updateDynamic("errorBars")(errorBars.get.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (fillAlpha != null) __obj.updateDynamic("fillAlpha")(fillAlpha.asInstanceOf[js.Any])
-    if (!js.isUndefined(fillGraph)) __obj.updateDynamic("fillGraph")(fillGraph.asInstanceOf[js.Any])
-    if (!js.isUndefined(fractions)) __obj.updateDynamic("fractions")(fractions.asInstanceOf[js.Any])
+    if (!js.isUndefined(fillAlpha)) __obj.updateDynamic("fillAlpha")(fillAlpha.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fillGraph)) __obj.updateDynamic("fillGraph")(fillGraph.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fractions)) __obj.updateDynamic("fractions")(fractions.get.asInstanceOf[js.Any])
     if (gridLineColor != null) __obj.updateDynamic("gridLineColor")(gridLineColor.asInstanceOf[js.Any])
     if (gridLinePattern != null) __obj.updateDynamic("gridLinePattern")(gridLinePattern.asInstanceOf[js.Any])
-    if (gridLineWidth != null) __obj.updateDynamic("gridLineWidth")(gridLineWidth.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideOverlayOnMouseOut)) __obj.updateDynamic("hideOverlayOnMouseOut")(hideOverlayOnMouseOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridLineWidth)) __obj.updateDynamic("gridLineWidth")(gridLineWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideOverlayOnMouseOut)) __obj.updateDynamic("hideOverlayOnMouseOut")(hideOverlayOnMouseOut.get.asInstanceOf[js.Any])
     if (highlightCallback != null) __obj.updateDynamic("highlightCallback")(js.Any.fromFunction5(highlightCallback))
-    if (highlightCircleSize != null) __obj.updateDynamic("highlightCircleSize")(highlightCircleSize.asInstanceOf[js.Any])
-    if (highlightSeriesBackgroundAlpha != null) __obj.updateDynamic("highlightSeriesBackgroundAlpha")(highlightSeriesBackgroundAlpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightCircleSize)) __obj.updateDynamic("highlightCircleSize")(highlightCircleSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightSeriesBackgroundAlpha)) __obj.updateDynamic("highlightSeriesBackgroundAlpha")(highlightSeriesBackgroundAlpha.get.asInstanceOf[js.Any])
     if (highlightSeriesBackgroundColor != null) __obj.updateDynamic("highlightSeriesBackgroundColor")(highlightSeriesBackgroundColor.asInstanceOf[js.Any])
     if (highlightSeriesOpts != null) __obj.updateDynamic("highlightSeriesOpts")(highlightSeriesOpts.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeZero)) __obj.updateDynamic("includeZero")(includeZero.asInstanceOf[js.Any])
-    if (!js.isUndefined(independentTicks)) __obj.updateDynamic("independentTicks")(independentTicks.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeZero)) __obj.updateDynamic("includeZero")(includeZero.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(independentTicks)) __obj.updateDynamic("independentTicks")(independentTicks.get.asInstanceOf[js.Any])
     if (interactionModel != null) __obj.updateDynamic("interactionModel")(interactionModel.asInstanceOf[js.Any])
-    if (!js.isUndefined(isZoomedIgnoreProgrammaticZoom)) __obj.updateDynamic("isZoomedIgnoreProgrammaticZoom")(isZoomedIgnoreProgrammaticZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(isZoomedIgnoreProgrammaticZoom)) __obj.updateDynamic("isZoomedIgnoreProgrammaticZoom")(isZoomedIgnoreProgrammaticZoom.get.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (labelsDiv != null) __obj.updateDynamic("labelsDiv")(labelsDiv.asInstanceOf[js.Any])
     if (labelsDivStyles != null) __obj.updateDynamic("labelsDivStyles")(labelsDivStyles.asInstanceOf[js.Any])
-    if (labelsDivWidth != null) __obj.updateDynamic("labelsDivWidth")(labelsDivWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(labelsKMB)) __obj.updateDynamic("labelsKMB")(labelsKMB.asInstanceOf[js.Any])
-    if (!js.isUndefined(labelsKMG2)) __obj.updateDynamic("labelsKMG2")(labelsKMG2.asInstanceOf[js.Any])
-    if (!js.isUndefined(labelsSeparateLines)) __obj.updateDynamic("labelsSeparateLines")(labelsSeparateLines.asInstanceOf[js.Any])
-    if (!js.isUndefined(labelsShowZeroValues)) __obj.updateDynamic("labelsShowZeroValues")(labelsShowZeroValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(labelsUTC)) __obj.updateDynamic("labelsUTC")(labelsUTC.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelsDivWidth)) __obj.updateDynamic("labelsDivWidth")(labelsDivWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelsKMB)) __obj.updateDynamic("labelsKMB")(labelsKMB.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelsKMG2)) __obj.updateDynamic("labelsKMG2")(labelsKMG2.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelsSeparateLines)) __obj.updateDynamic("labelsSeparateLines")(labelsSeparateLines.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelsShowZeroValues)) __obj.updateDynamic("labelsShowZeroValues")(labelsShowZeroValues.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelsUTC)) __obj.updateDynamic("labelsUTC")(labelsUTC.get.asInstanceOf[js.Any])
     if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
     if (legendFormatter != null) __obj.updateDynamic("legendFormatter")(js.Any.fromFunction1(legendFormatter))
-    if (!js.isUndefined(logscale)) __obj.updateDynamic("logscale")(logscale.asInstanceOf[js.Any])
-    if (maxNumberWidth != null) __obj.updateDynamic("maxNumberWidth")(maxNumberWidth.asInstanceOf[js.Any])
-    if (panEdgeFraction != null) __obj.updateDynamic("panEdgeFraction")(panEdgeFraction.asInstanceOf[js.Any])
-    if (pixelsPerLabel != null) __obj.updateDynamic("pixelsPerLabel")(pixelsPerLabel.asInstanceOf[js.Any])
+    if (!js.isUndefined(logscale)) __obj.updateDynamic("logscale")(logscale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxNumberWidth)) __obj.updateDynamic("maxNumberWidth")(maxNumberWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(panEdgeFraction)) __obj.updateDynamic("panEdgeFraction")(panEdgeFraction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pixelsPerLabel)) __obj.updateDynamic("pixelsPerLabel")(pixelsPerLabel.get.asInstanceOf[js.Any])
     if (plotter != null) __obj.updateDynamic("plotter")(plotter.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     if (pointClickCallback != null) __obj.updateDynamic("pointClickCallback")(js.Any.fromFunction2(pointClickCallback))
-    if (pointSize != null) __obj.updateDynamic("pointSize")(pointSize.asInstanceOf[js.Any])
-    if (rangeSelectorHeight != null) __obj.updateDynamic("rangeSelectorHeight")(rangeSelectorHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointSize)) __obj.updateDynamic("pointSize")(pointSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rangeSelectorHeight)) __obj.updateDynamic("rangeSelectorHeight")(rangeSelectorHeight.get.asInstanceOf[js.Any])
     if (rangeSelectorPlotFillColor != null) __obj.updateDynamic("rangeSelectorPlotFillColor")(rangeSelectorPlotFillColor.asInstanceOf[js.Any])
     if (rangeSelectorPlotStrokeColor != null) __obj.updateDynamic("rangeSelectorPlotStrokeColor")(rangeSelectorPlotStrokeColor.asInstanceOf[js.Any])
-    if (rightGap != null) __obj.updateDynamic("rightGap")(rightGap.asInstanceOf[js.Any])
-    if (rollPeriod != null) __obj.updateDynamic("rollPeriod")(rollPeriod.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightGap)) __obj.updateDynamic("rightGap")(rightGap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rollPeriod)) __obj.updateDynamic("rollPeriod")(rollPeriod.get.asInstanceOf[js.Any])
     if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInRangeSelector)) __obj.updateDynamic("showInRangeSelector")(showInRangeSelector.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLabelsOnHighlight)) __obj.updateDynamic("showLabelsOnHighlight")(showLabelsOnHighlight.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRangeSelector)) __obj.updateDynamic("showRangeSelector")(showRangeSelector.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRoller)) __obj.updateDynamic("showRoller")(showRoller.asInstanceOf[js.Any])
-    if (sigFigs != null) __obj.updateDynamic("sigFigs")(sigFigs.asInstanceOf[js.Any])
-    if (sigma != null) __obj.updateDynamic("sigma")(sigma.asInstanceOf[js.Any])
-    if (!js.isUndefined(stackedGraph)) __obj.updateDynamic("stackedGraph")(stackedGraph.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInRangeSelector)) __obj.updateDynamic("showInRangeSelector")(showInRangeSelector.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLabelsOnHighlight)) __obj.updateDynamic("showLabelsOnHighlight")(showLabelsOnHighlight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRangeSelector)) __obj.updateDynamic("showRangeSelector")(showRangeSelector.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRoller)) __obj.updateDynamic("showRoller")(showRoller.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sigFigs)) __obj.updateDynamic("sigFigs")(sigFigs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sigma)) __obj.updateDynamic("sigma")(sigma.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stackedGraph)) __obj.updateDynamic("stackedGraph")(stackedGraph.get.asInstanceOf[js.Any])
     if (stackedGraphNaNFill != null) __obj.updateDynamic("stackedGraphNaNFill")(stackedGraphNaNFill.asInstanceOf[js.Any])
-    if (!js.isUndefined(stepPlot)) __obj.updateDynamic("stepPlot")(stepPlot.asInstanceOf[js.Any])
+    if (!js.isUndefined(stepPlot)) __obj.updateDynamic("stepPlot")(stepPlot.get.asInstanceOf[js.Any])
     if (strokeBorderColor != null) __obj.updateDynamic("strokeBorderColor")(strokeBorderColor.asInstanceOf[js.Any])
-    if (strokeBorderWidth != null) __obj.updateDynamic("strokeBorderWidth")(strokeBorderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(strokeBorderWidth)) __obj.updateDynamic("strokeBorderWidth")(strokeBorderWidth.get.asInstanceOf[js.Any])
     if (strokePattern != null) __obj.updateDynamic("strokePattern")(strokePattern.asInstanceOf[js.Any])
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(strokeWidth)) __obj.updateDynamic("strokeWidth")(strokeWidth.get.asInstanceOf[js.Any])
     if (ticker != null) __obj.updateDynamic("ticker")(js.Any.fromFunction6(ticker))
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titleHeight != null) __obj.updateDynamic("titleHeight")(titleHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(titleHeight)) __obj.updateDynamic("titleHeight")(titleHeight.get.asInstanceOf[js.Any])
     if (underlayCallback != null) __obj.updateDynamic("underlayCallback")(js.Any.fromFunction3(underlayCallback))
     if (unhighlightCallback != null) __obj.updateDynamic("unhighlightCallback")(js.Any.fromFunction1(unhighlightCallback))
     if (valueFormatter != null) __obj.updateDynamic("valueFormatter")(js.Any.fromFunction6(valueFormatter))
     if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange.asInstanceOf[js.Any])
     if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(wilsonInterval)) __obj.updateDynamic("wilsonInterval")(wilsonInterval.asInstanceOf[js.Any])
-    if (xAxisHeight != null) __obj.updateDynamic("xAxisHeight")(xAxisHeight.asInstanceOf[js.Any])
-    if (xLabelHeight != null) __obj.updateDynamic("xLabelHeight")(xLabelHeight.asInstanceOf[js.Any])
-    if (xRangePad != null) __obj.updateDynamic("xRangePad")(xRangePad.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wilsonInterval)) __obj.updateDynamic("wilsonInterval")(wilsonInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xAxisHeight)) __obj.updateDynamic("xAxisHeight")(xAxisHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xLabelHeight)) __obj.updateDynamic("xLabelHeight")(xLabelHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xRangePad)) __obj.updateDynamic("xRangePad")(xRangePad.get.asInstanceOf[js.Any])
     if (xValueParser != null) __obj.updateDynamic("xValueParser")(js.Any.fromFunction1(xValueParser))
     if (xlabel != null) __obj.updateDynamic("xlabel")(xlabel.asInstanceOf[js.Any])
     if (y2label != null) __obj.updateDynamic("y2label")(y2label.asInstanceOf[js.Any])
-    if (yLabelWidth != null) __obj.updateDynamic("yLabelWidth")(yLabelWidth.asInstanceOf[js.Any])
-    if (yRangePad != null) __obj.updateDynamic("yRangePad")(yRangePad.asInstanceOf[js.Any])
+    if (!js.isUndefined(yLabelWidth)) __obj.updateDynamic("yLabelWidth")(yLabelWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yRangePad)) __obj.updateDynamic("yRangePad")(yRangePad.get.asInstanceOf[js.Any])
     if (ylabel != null) __obj.updateDynamic("ylabel")(ylabel.asInstanceOf[js.Any])
     if (zoomCallback != null) __obj.updateDynamic("zoomCallback")(js.Any.fromFunction3(zoomCallback))
     __obj.asInstanceOf[Options]

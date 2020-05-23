@@ -1,6 +1,6 @@
 package typings.gfc.mod
 
-import typings.gfc.AnonStderr
+import typings.gfc.anon.Stderr
 import typings.node.Buffer
 import typings.node.childProcessMod.ExecException
 import scala.scalajs.js
@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 @JSImport("gfc", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(): js.Promise[AnonStderr] = js.native
-  def apply(cwd: String): js.Promise[AnonStderr] = js.native
+  def apply(): js.Promise[Stderr] = js.native
+  def apply(cwd: String): js.Promise[Stderr] = js.native
   def apply(
     cwd: String,
     callback: js.Function3[
@@ -21,7 +21,7 @@ object ^ extends js.Object {
       Unit
     ]
   ): Unit = js.native
-  def apply(cwd: String, options: Options[ExecOptionsWithEncoding]): js.Promise[AnonStderr] = js.native
+  def apply(cwd: String, options: Options[ExecOptionsWithEncoding]): js.Promise[Stderr] = js.native
   def apply(
     cwd: String,
     options: Options[ExecOptionsWithEncoding],
@@ -32,6 +32,6 @@ object ^ extends js.Object {
       Unit
     ]
   ): Unit = js.native
-  def apply(options: Options[ExecOptionsWithEncoding]): js.Promise[AnonStderr] = js.native
+  def apply(options: Options[ExecOptionsWithEncoding]): js.Promise[Stderr] = js.native
 }
 

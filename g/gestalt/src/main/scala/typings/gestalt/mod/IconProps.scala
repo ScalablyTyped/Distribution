@@ -1,6 +1,6 @@
 package typings.gestalt.mod
 
-import typings.gestalt.AnonPath
+import typings.gestalt.anon.Path
 import typings.gestalt.gestaltStrings.blue
 import typings.gestalt.gestaltStrings.darkGray
 import typings.gestalt.gestaltStrings.eggplant
@@ -27,7 +27,7 @@ trait IconProps extends js.Object {
   var color: js.UndefOr[
     blue | darkGray | eggplant | gray | green | lightGray | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | watermelon | white
   ] = js.undefined
-  var dangerouslySetSvgPath: js.UndefOr[AnonPath] = js.undefined
+  var dangerouslySetSvgPath: js.UndefOr[Path] = js.undefined
   var icon: js.UndefOr[Icons] = js.undefined
   var `inline`: js.UndefOr[Boolean] = js.undefined
   var size: js.UndefOr[Double | String] = js.undefined
@@ -38,7 +38,7 @@ object IconProps {
   def apply(
     accessibilityLabel: String,
     color: blue | darkGray | eggplant | gray | green | lightGray | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | watermelon | white = null,
-    dangerouslySetSvgPath: AnonPath = null,
+    dangerouslySetSvgPath: Path = null,
     icon: Icons = null,
     `inline`: js.UndefOr[Boolean] = js.undefined,
     size: Double | String = null
@@ -47,7 +47,7 @@ object IconProps {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (dangerouslySetSvgPath != null) __obj.updateDynamic("dangerouslySetSvgPath")(dangerouslySetSvgPath.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconProps]
   }

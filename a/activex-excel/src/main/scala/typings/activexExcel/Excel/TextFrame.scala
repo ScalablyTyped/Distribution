@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.TextFrame")
 @js.native
-class TextFrame protected () extends js.Object {
+trait TextFrame extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   var AutoMargins: Boolean = js.native
   var AutoSize: Boolean = js.native

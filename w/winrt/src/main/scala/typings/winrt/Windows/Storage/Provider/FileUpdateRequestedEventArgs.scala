@@ -4,10 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Storage.Provider.FileUpdateRequestedEventArgs")
-@js.native
-class FileUpdateRequestedEventArgs () extends IFileUpdateRequestedEventArgs {
-  /* CompleteClass */
-  override var request: FileUpdateRequest = js.native
+trait FileUpdateRequestedEventArgs extends IFileUpdateRequestedEventArgs
+
+object FileUpdateRequestedEventArgs {
+  @scala.inline
+  def apply(request: FileUpdateRequest): FileUpdateRequestedEventArgs = {
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FileUpdateRequestedEventArgs]
+  }
 }
 

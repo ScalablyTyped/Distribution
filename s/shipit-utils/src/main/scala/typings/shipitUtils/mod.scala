@@ -1,5 +1,6 @@
 package typings.shipitUtils
 
+import typings.shipitUtils.anon.Typeofshipit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

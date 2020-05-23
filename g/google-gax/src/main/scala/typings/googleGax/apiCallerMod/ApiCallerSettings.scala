@@ -13,7 +13,6 @@ object ApiCallerSettings {
   @scala.inline
   def apply(promise: PromiseConstructor): ApiCallerSettings = {
     val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ApiCallerSettings]
   }
 }

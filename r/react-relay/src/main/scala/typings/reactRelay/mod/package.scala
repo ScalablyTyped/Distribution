@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object mod {
   type Container[Props] = typings.react.mod.ComponentType[
-    typings.reactRelay.mod.ContainerProps[Props] with typings.reactRelay.AnonComponentRef
+    typings.reactRelay.mod.ContainerProps[Props] with typings.reactRelay.anon.ComponentRef
   ]
   type ContainerProps[Props] = typings.reactRelay.mod.MappedFragmentProps[
     typings.std.Pick[
@@ -21,7 +21,7 @@ package object mod {
   type ObserverOrCallback = typings.relayRuntime.relayObservableMod.Observer[scala.Unit] | (js.Function1[/* error */ js.UndefOr[typings.std.Error | scala.Null], scala.Unit])
   type ReactRelayLocalQueryRenderer[TOperation /* <: typings.relayRuntime.relayRuntimeTypesMod.OperationType */] = typings.react.mod.Component[typings.reactRelay.mod.QueryRendererProps[TOperation], js.Object, js.Any]
   type ReactRelayQueryRenderer[TOperation /* <: typings.relayRuntime.relayRuntimeTypesMod.OperationType */] = typings.react.mod.Component[
-    typings.reactRelay.AnonCacheConfig with typings.reactRelay.mod.QueryRendererProps[TOperation], 
+    typings.reactRelay.anon.CacheConfig with typings.reactRelay.mod.QueryRendererProps[TOperation], 
     js.Object, 
     js.Any
   ]

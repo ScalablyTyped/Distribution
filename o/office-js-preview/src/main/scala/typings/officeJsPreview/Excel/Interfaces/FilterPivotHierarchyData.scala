@@ -50,14 +50,14 @@ object FilterPivotHierarchyData {
     fields: js.Array[PivotFieldData] = null,
     id: String = null,
     name: String = null,
-    position: Int | Double = null
+    position: js.UndefOr[Double] = js.undefined
   ): FilterPivotHierarchyData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableMultipleFilterItems)) __obj.updateDynamic("enableMultipleFilterItems")(enableMultipleFilterItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableMultipleFilterItems)) __obj.updateDynamic("enableMultipleFilterItems")(enableMultipleFilterItems.get.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterPivotHierarchyData]
   }
 }

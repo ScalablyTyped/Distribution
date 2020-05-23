@@ -40,21 +40,21 @@ object Dataset {
   @scala.inline
   def apply(
     CreationDate: Date = null,
-    DataStorage: Int | Double = null,
+    DataStorage: js.UndefOr[Long] = js.undefined,
     DatasetName: DatasetName = null,
     IdentityId: IdentityId = null,
     LastModifiedBy: String = null,
     LastModifiedDate: Date = null,
-    NumRecords: Int | Double = null
+    NumRecords: js.UndefOr[Long] = js.undefined
   ): Dataset = {
     val __obj = js.Dynamic.literal()
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (DataStorage != null) __obj.updateDynamic("DataStorage")(DataStorage.asInstanceOf[js.Any])
+    if (!js.isUndefined(DataStorage)) __obj.updateDynamic("DataStorage")(DataStorage.get.asInstanceOf[js.Any])
     if (DatasetName != null) __obj.updateDynamic("DatasetName")(DatasetName.asInstanceOf[js.Any])
     if (IdentityId != null) __obj.updateDynamic("IdentityId")(IdentityId.asInstanceOf[js.Any])
     if (LastModifiedBy != null) __obj.updateDynamic("LastModifiedBy")(LastModifiedBy.asInstanceOf[js.Any])
     if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate.asInstanceOf[js.Any])
-    if (NumRecords != null) __obj.updateDynamic("NumRecords")(NumRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumRecords)) __obj.updateDynamic("NumRecords")(NumRecords.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dataset]
   }
 }

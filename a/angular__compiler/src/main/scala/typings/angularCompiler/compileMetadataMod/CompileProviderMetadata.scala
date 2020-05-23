@@ -27,7 +27,7 @@ object CompileProviderMetadata {
   ): CompileProviderMetadata = {
     val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
     if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
+    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.get.asInstanceOf[js.Any])
     if (useClass != null) __obj.updateDynamic("useClass")(useClass.asInstanceOf[js.Any])
     if (useExisting != null) __obj.updateDynamic("useExisting")(useExisting.asInstanceOf[js.Any])
     if (useFactory != null) __obj.updateDynamic("useFactory")(useFactory.asInstanceOf[js.Any])

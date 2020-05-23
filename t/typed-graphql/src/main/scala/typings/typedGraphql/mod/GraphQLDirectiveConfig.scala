@@ -26,9 +26,9 @@ object GraphQLDirectiveConfig {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(onField)) __obj.updateDynamic("onField")(onField.asInstanceOf[js.Any])
-    if (!js.isUndefined(onFragment)) __obj.updateDynamic("onFragment")(onFragment.asInstanceOf[js.Any])
-    if (!js.isUndefined(onOperation)) __obj.updateDynamic("onOperation")(onOperation.asInstanceOf[js.Any])
+    if (!js.isUndefined(onField)) __obj.updateDynamic("onField")(onField.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(onFragment)) __obj.updateDynamic("onFragment")(onFragment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(onOperation)) __obj.updateDynamic("onOperation")(onOperation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLDirectiveConfig]
   }
 }

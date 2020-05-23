@@ -13,10 +13,15 @@ trait SparklinesTextProps extends js.Object {
 
 object SparklinesTextProps {
   @scala.inline
-  def apply(fontFamily: String = null, fontSize: Int | Double = null, point: Point = null, text: String = null): SparklinesTextProps = {
+  def apply(
+    fontFamily: String = null,
+    fontSize: js.UndefOr[Double] = js.undefined,
+    point: Point = null,
+    text: String = null
+  ): SparklinesTextProps = {
     val __obj = js.Dynamic.literal()
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
     if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparklinesTextProps]

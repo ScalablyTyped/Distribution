@@ -1,6 +1,6 @@
 package typings.welldoneSoftwareWhyDidYouRender.mod
 
-import typings.welldoneSoftwareWhyDidYouRender.TypeofReact
+import typings.welldoneSoftwareWhyDidYouRender.anon.TypeofReact
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

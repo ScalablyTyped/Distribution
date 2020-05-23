@@ -27,7 +27,7 @@ object MapReduceOptions {
     finalize: js.Function | String = null,
     jsMode: js.UndefOr[Boolean] = js.undefined,
     keeptemp: js.UndefOr[Boolean] = js.undefined,
-    limit: Int | scala.Double = null,
+    limit: js.UndefOr[scala.Double] = js.undefined,
     out: js.Object = null,
     query: js.Object = null,
     readPreference: ReadPreferenceOrMode = null,
@@ -37,18 +37,18 @@ object MapReduceOptions {
     verbose: js.UndefOr[Boolean] = js.undefined
   ): MapReduceOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bypassDocumentValidation)) __obj.updateDynamic("bypassDocumentValidation")(bypassDocumentValidation.asInstanceOf[js.Any])
+    if (!js.isUndefined(bypassDocumentValidation)) __obj.updateDynamic("bypassDocumentValidation")(bypassDocumentValidation.get.asInstanceOf[js.Any])
     if (finalize != null) __obj.updateDynamic("finalize")(finalize.asInstanceOf[js.Any])
-    if (!js.isUndefined(jsMode)) __obj.updateDynamic("jsMode")(jsMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(keeptemp)) __obj.updateDynamic("keeptemp")(keeptemp.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(jsMode)) __obj.updateDynamic("jsMode")(jsMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keeptemp)) __obj.updateDynamic("keeptemp")(keeptemp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (out != null) __obj.updateDynamic("out")(out.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapReduceOptions]
   }
 }

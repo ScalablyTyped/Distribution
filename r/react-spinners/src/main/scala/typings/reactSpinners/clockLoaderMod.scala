@@ -1,6 +1,7 @@
 package typings.reactSpinners
 
 import typings.react.mod.Component
+import typings.reactSpinners.anon.RequiredLoaderSizeProps
 import typings.reactSpinners.interfacesMod.LoaderSizeProps
 import typings.reactSpinners.interfacesMod.StyleFunction
 import scala.scalajs.js

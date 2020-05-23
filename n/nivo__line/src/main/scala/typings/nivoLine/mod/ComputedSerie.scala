@@ -17,7 +17,7 @@ object ComputedSerie {
   def apply(
     data: js.Array[ComputedDatum],
     id: String | Double,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     color: String = null
   ): ComputedSerie = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])

@@ -22,9 +22,9 @@ trait DescribeImageBuildersRequest extends js.Object {
 
 object DescribeImageBuildersRequest {
   @scala.inline
-  def apply(MaxResults: Int | Double = null, Names: StringList = null, NextToken: String = null): DescribeImageBuildersRequest = {
+  def apply(MaxResults: js.UndefOr[Integer] = js.undefined, Names: StringList = null, NextToken: String = null): DescribeImageBuildersRequest = {
     val __obj = js.Dynamic.literal()
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (Names != null) __obj.updateDynamic("Names")(Names.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeImageBuildersRequest]

@@ -99,8 +99,8 @@ object UpdateStackRequest {
     HostnameTheme: String = null,
     Name: String = null,
     ServiceRoleArn: String = null,
-    UseCustomCookbooks: js.UndefOr[scala.Boolean] = js.undefined,
-    UseOpsworksSecurityGroups: js.UndefOr[scala.Boolean] = js.undefined
+    UseCustomCookbooks: js.UndefOr[Boolean] = js.undefined,
+    UseOpsworksSecurityGroups: js.UndefOr[Boolean] = js.undefined
   ): UpdateStackRequest = {
     val __obj = js.Dynamic.literal(StackId = StackId.asInstanceOf[js.Any])
     if (AgentVersion != null) __obj.updateDynamic("AgentVersion")(AgentVersion.asInstanceOf[js.Any])
@@ -118,8 +118,8 @@ object UpdateStackRequest {
     if (HostnameTheme != null) __obj.updateDynamic("HostnameTheme")(HostnameTheme.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (ServiceRoleArn != null) __obj.updateDynamic("ServiceRoleArn")(ServiceRoleArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(UseCustomCookbooks)) __obj.updateDynamic("UseCustomCookbooks")(UseCustomCookbooks.asInstanceOf[js.Any])
-    if (!js.isUndefined(UseOpsworksSecurityGroups)) __obj.updateDynamic("UseOpsworksSecurityGroups")(UseOpsworksSecurityGroups.asInstanceOf[js.Any])
+    if (!js.isUndefined(UseCustomCookbooks)) __obj.updateDynamic("UseCustomCookbooks")(UseCustomCookbooks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(UseOpsworksSecurityGroups)) __obj.updateDynamic("UseOpsworksSecurityGroups")(UseOpsworksSecurityGroups.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateStackRequest]
   }
 }

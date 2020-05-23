@@ -1,5 +1,7 @@
 package typings.tempy
 
+import typings.tempy.anon.Extension
+import typings.tempy.anon.Name
 import typings.typeFest.mergeExclusiveMod.MergeExclusive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -40,6 +42,6 @@ object mod extends js.Object {
   	*/
   def file(): String = js.native
   def file(options: Options): String = js.native
-  type Options = MergeExclusive[AnonExtension, AnonName]
+  type Options = MergeExclusive[Extension, Name]
 }
 

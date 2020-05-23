@@ -4,9 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MatterJS.CompositesFactory")
-@js.native
-class CompositesFactory () extends js.Object {
+trait CompositesFactory extends js.Object {
   /**
     * Creates a composite with simple car setup of bodies and constraints.
     * @method car
@@ -17,7 +15,7 @@ class CompositesFactory () extends js.Object {
     * @param {number} wheelSize
     * @return {composite} A new composite car body
     */
-  def car(xx: Double, yy: Double, width: Double, height: Double, wheelSize: Double): CompositeType = js.native
+  def car(xx: Double, yy: Double, width: Double, height: Double, wheelSize: Double): CompositeType
   /**
     * Chains all bodies in the given composite together using constraints.
     * @method chain
@@ -36,7 +34,7 @@ class CompositesFactory () extends js.Object {
     xOffsetB: Double,
     yOffsetB: Double,
     options: js.Any
-  ): CompositeType = js.native
+  ): CompositeType
   /**
     * Connects bodies in the composite with constraints in a grid pattern, with optional cross braces.
     * @method mesh
@@ -47,7 +45,7 @@ class CompositesFactory () extends js.Object {
     * @param {object} options
     * @return {composite} The composite containing objects meshed together with constraints
     */
-  def mesh(composite: CompositeType, columns: Double, rows: Double, crossBrace: Boolean, options: js.Any): CompositeType = js.native
+  def mesh(composite: CompositeType, columns: Double, rows: Double, crossBrace: Boolean, options: js.Any): CompositeType
   /**
     * Creates a composite with a Newton's Cradle setup of bodies and constraints.
     * @method newtonsCradle
@@ -58,7 +56,7 @@ class CompositesFactory () extends js.Object {
     * @param {number} length
     * @return {composite} A new composite newtonsCradle body
     */
-  def newtonsCradle(xx: Double, yy: Double, number: Double, size: Double, length: Double): CompositeType = js.native
+  def newtonsCradle(xx: Double, yy: Double, number: Double, size: Double, length: Double): CompositeType
   /**
     * Create a new composite containing bodies created in the callback in a pyramid arrangement.
     * This function uses the body's bounds to prevent overlaps.
@@ -80,7 +78,7 @@ class CompositesFactory () extends js.Object {
     columnGap: Double,
     rowGap: Double,
     callback: js.Function
-  ): CompositeType = js.native
+  ): CompositeType
   /**
     * Creates a simple soft body like object.
     * @method softBody
@@ -107,7 +105,7 @@ class CompositesFactory () extends js.Object {
     particleRadius: Double,
     particleOptions: js.Any,
     constraintOptions: js.Any
-  ): CompositeType = js.native
+  ): CompositeType
   /**
     * Create a new composite containing bodies created in the callback in a grid arrangement.
     * This function uses the body's bounds to prevent overlaps.
@@ -129,6 +127,22 @@ class CompositesFactory () extends js.Object {
     columnGap: Double,
     rowGap: Double,
     callback: js.Function
-  ): CompositeType = js.native
+  ): CompositeType
+}
+
+object CompositesFactory {
+  @scala.inline
+  def apply(
+    car: (Double, Double, Double, Double, Double) => CompositeType,
+    chain: (CompositeType, Double, Double, Double, Double, js.Any) => CompositeType,
+    mesh: (CompositeType, Double, Double, Boolean, js.Any) => CompositeType,
+    newtonsCradle: (Double, Double, Double, Double, Double) => CompositeType,
+    pyramid: (Double, Double, Double, Double, Double, Double, js.Function) => CompositeType,
+    softBody: (Double, Double, Double, Double, Double, Double, Boolean, Double, js.Any, js.Any) => CompositeType,
+    stack: (Double, Double, Double, Double, Double, Double, js.Function) => CompositeType
+  ): CompositesFactory = {
+    val __obj = js.Dynamic.literal(car = js.Any.fromFunction5(car), chain = js.Any.fromFunction6(chain), mesh = js.Any.fromFunction5(mesh), newtonsCradle = js.Any.fromFunction5(newtonsCradle), pyramid = js.Any.fromFunction7(pyramid), softBody = js.Any.fromFunction10(softBody), stack = js.Any.fromFunction7(stack))
+    __obj.asInstanceOf[CompositesFactory]
+  }
 }
 

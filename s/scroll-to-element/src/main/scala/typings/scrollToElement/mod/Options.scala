@@ -19,12 +19,12 @@ object Options {
   def apply(
     offset: Double,
     align: top | middle | bottom = null,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     ease: String = null
   ): Options = {
     val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (ease != null) __obj.updateDynamic("ease")(ease.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

@@ -74,10 +74,10 @@ object MessageBoxSyncOptions {
   def apply(
     message: String,
     buttons: js.Array[String] = null,
-    cancelId: Int | Double = null,
+    cancelId: js.UndefOr[Double] = js.undefined,
     checkboxChecked: js.UndefOr[Boolean] = js.undefined,
     checkboxLabel: String = null,
-    defaultId: Int | Double = null,
+    defaultId: js.UndefOr[Double] = js.undefined,
     detail: String = null,
     icon: NativeImage_ | String = null,
     noLink: js.UndefOr[Boolean] = js.undefined,
@@ -87,14 +87,14 @@ object MessageBoxSyncOptions {
   ): MessageBoxSyncOptions = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (cancelId != null) __obj.updateDynamic("cancelId")(cancelId.asInstanceOf[js.Any])
-    if (!js.isUndefined(checkboxChecked)) __obj.updateDynamic("checkboxChecked")(checkboxChecked.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelId)) __obj.updateDynamic("cancelId")(cancelId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkboxChecked)) __obj.updateDynamic("checkboxChecked")(checkboxChecked.get.asInstanceOf[js.Any])
     if (checkboxLabel != null) __obj.updateDynamic("checkboxLabel")(checkboxLabel.asInstanceOf[js.Any])
-    if (defaultId != null) __obj.updateDynamic("defaultId")(defaultId.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultId)) __obj.updateDynamic("defaultId")(defaultId.get.asInstanceOf[js.Any])
     if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(noLink)) __obj.updateDynamic("noLink")(noLink.asInstanceOf[js.Any])
-    if (!js.isUndefined(normalizeAccessKeys)) __obj.updateDynamic("normalizeAccessKeys")(normalizeAccessKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(noLink)) __obj.updateDynamic("noLink")(noLink.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(normalizeAccessKeys)) __obj.updateDynamic("normalizeAccessKeys")(normalizeAccessKeys.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageBoxSyncOptions]

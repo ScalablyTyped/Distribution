@@ -54,7 +54,7 @@ object ApiKey {
     createdDate: Timestamp = null,
     customerId: String = null,
     description: String = null,
-    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     lastUpdatedDate: Timestamp = null,
     name: String = null,
@@ -66,7 +66,7 @@ object ApiKey {
     if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate.asInstanceOf[js.Any])
     if (customerId != null) __obj.updateDynamic("customerId")(customerId.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (lastUpdatedDate != null) __obj.updateDynamic("lastUpdatedDate")(lastUpdatedDate.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

@@ -39,7 +39,7 @@ trait StartAutomationExecutionRequest extends js.Object {
     */
   var Tags: js.UndefOr[TagList] = js.native
   /**
-    * A location is a combination of AWS Regions and/or AWS accounts where you want to run the Automation. Use this action to start an Automation in multiple Regions and multiple accounts. For more information, see Executing Automations in Multiple AWS Regions and Accounts in the AWS Systems Manager User Guide. 
+    * A location is a combination of AWS Regions and/or AWS accounts where you want to run the Automation. Use this action to start an Automation in multiple Regions and multiple accounts. For more information, see Running Automation workflows in multiple AWS Regions and accounts in the AWS Systems Manager User Guide. 
     */
   var TargetLocations: js.UndefOr[typings.awsSdk.ssmMod.TargetLocations] = js.native
   /**

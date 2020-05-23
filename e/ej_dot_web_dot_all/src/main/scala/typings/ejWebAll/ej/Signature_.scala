@@ -1,18 +1,11 @@
 package typings.ejWebAll.ej
 
-import typings.ejWebAll.JQuery
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.Signature")
 @js.native
-class Signature_ protected () extends Widget_ {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.Signature.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.Signature.Model) = this()
+trait Signature_ extends Widget_ {
   var defaults: typings.ejWebAll.ej.Signature.Model = js.native
   @JSName("model")
   var model_Signature_ : typings.ejWebAll.ej.Signature.Model = js.native

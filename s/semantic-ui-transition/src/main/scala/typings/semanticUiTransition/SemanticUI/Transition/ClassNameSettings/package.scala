@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ClassNameSettings {
-  type Param = (typings.semanticUiTransition.PickImplanimating | typings.semanticUiTransition.PickImpldisabled | typings.semanticUiTransition.PickImplhidden | typings.semanticUiTransition.PickImplinward | typings.semanticUiTransition.PickImplloading | typings.semanticUiTransition.PickImpllooping | typings.semanticUiTransition.PickImploutward | typings.semanticUiTransition.PickImpltransition | typings.semanticUiTransition.PickImplvisible) with typings.semanticUiTransition.PartialPickImplkeyofImplAnimating
+  type Param = (typings.semanticUiTransition.anon.PickImplanimating | typings.semanticUiTransition.anon.PickImpldisabled | typings.semanticUiTransition.anon.PickImplhidden | typings.semanticUiTransition.anon.PickImplinward | typings.semanticUiTransition.anon.PickImplloading | typings.semanticUiTransition.anon.PickImpllooping | typings.semanticUiTransition.anon.PickImploutward | typings.semanticUiTransition.anon.PickImpltransition | typings.semanticUiTransition.anon.PickImplvisible) with typings.semanticUiTransition.anon.PartialPickImplkeyofImplAnimating
 }

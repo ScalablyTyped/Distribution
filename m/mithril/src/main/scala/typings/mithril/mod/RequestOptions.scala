@@ -37,10 +37,10 @@ trait RequestOptions[T] extends js.Object {
   /** A constructor to be applied to each object in the response. */
   var `type`: js.UndefOr[Instantiable1[/* o */ js.Any, js.Any]] = js.undefined
   /**
-  		 * Force the use of the HTTP body section for data in GET requests when set to true,
-  		 * or the use of querystring for other HTTP methods when set to false.
-  		 * Defaults to false for GET requests and true for other methods.
-  		 */
+    * Force the use of the HTTP body section for data in GET requests when set to true,
+    * or the use of querystring for other HTTP methods when set to false.
+    * Defaults to false for GET requests and true for other methods.
+    */
   var useBody: js.UndefOr[Boolean] = js.undefined
   /** A username for HTTP authorization. */
   var user: js.UndefOr[String] = js.undefined
@@ -62,15 +62,15 @@ object RequestOptions {
     params: StringDictionary[js.Any] = null,
     password: String = null,
     serialize: /* data */ js.Any => _ = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     `type`: Instantiable1[/* o */ js.Any, js.Any] = null,
     useBody: js.UndefOr[Boolean] = js.undefined,
     user: String = null,
     withCredentials: js.UndefOr[Boolean] = js.undefined
   ): RequestOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
-    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background.get.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(js.Any.fromFunction2(config))
     if (deserialize != null) __obj.updateDynamic("deserialize")(js.Any.fromFunction1(deserialize))
@@ -80,11 +80,11 @@ object RequestOptions {
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (serialize != null) __obj.updateDynamic("serialize")(js.Any.fromFunction1(serialize))
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(useBody)) __obj.updateDynamic("useBody")(useBody.asInstanceOf[js.Any])
+    if (!js.isUndefined(useBody)) __obj.updateDynamic("useBody")(useBody.get.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.asInstanceOf[js.Any])
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOptions[T]]
   }
 }

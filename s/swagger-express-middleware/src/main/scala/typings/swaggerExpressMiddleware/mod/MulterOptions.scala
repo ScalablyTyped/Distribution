@@ -4,7 +4,7 @@ import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import typings.std.Error
-import typings.swaggerExpressMiddleware.AnonFieldNameSize
+import typings.swaggerExpressMiddleware.anon.FieldNameSize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ trait MulterOptions extends js.Object {
     ]
   ] = js.undefined
   /** An object specifying the size limits of the following optional properties. This object is passed to busboy directly, and the details of properties can be found on https://github.com/mscdex/busboy#busboy-methods */
-  var limits: js.UndefOr[AnonFieldNameSize] = js.undefined
+  var limits: js.UndefOr[FieldNameSize] = js.undefined
   /** The storage engine to use for uploaded files. */
   var storage: js.UndefOr[StorageEngine] = js.undefined
 }
@@ -32,7 +32,7 @@ object MulterOptions {
   def apply(
     dest: String = null,
     fileFilter: (/* req */ Request_[ParamsDictionary, _, _, Query], /* file */ File, /* callback */ js.Function2[/* error */ Error, /* acceptFile */ Boolean, Unit]) => Unit = null,
-    limits: AnonFieldNameSize = null,
+    limits: FieldNameSize = null,
     storage: StorageEngine = null
   ): MulterOptions = {
     val __obj = js.Dynamic.literal()

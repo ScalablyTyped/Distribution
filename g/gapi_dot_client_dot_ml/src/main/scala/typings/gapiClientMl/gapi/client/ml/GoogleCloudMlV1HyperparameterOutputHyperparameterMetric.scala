@@ -13,9 +13,9 @@ trait GoogleCloudMlV1HyperparameterOutputHyperparameterMetric extends js.Object 
 
 object GoogleCloudMlV1HyperparameterOutputHyperparameterMetric {
   @scala.inline
-  def apply(objectiveValue: Int | Double = null, trainingStep: String = null): GoogleCloudMlV1HyperparameterOutputHyperparameterMetric = {
+  def apply(objectiveValue: js.UndefOr[Double] = js.undefined, trainingStep: String = null): GoogleCloudMlV1HyperparameterOutputHyperparameterMetric = {
     val __obj = js.Dynamic.literal()
-    if (objectiveValue != null) __obj.updateDynamic("objectiveValue")(objectiveValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(objectiveValue)) __obj.updateDynamic("objectiveValue")(objectiveValue.get.asInstanceOf[js.Any])
     if (trainingStep != null) __obj.updateDynamic("trainingStep")(trainingStep.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudMlV1HyperparameterOutputHyperparameterMetric]
   }

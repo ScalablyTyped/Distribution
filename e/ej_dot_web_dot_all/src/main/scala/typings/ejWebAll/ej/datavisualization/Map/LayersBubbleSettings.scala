@@ -50,26 +50,26 @@ trait LayersBubbleSettings extends js.Object {
 object LayersBubbleSettings {
   @scala.inline
   def apply(
-    bubbleOpacity: Int | Double = null,
+    bubbleOpacity: js.UndefOr[Double] = js.undefined,
     color: String = null,
     colorMappings: LayersBubbleSettingsColorMappings = null,
     colorValuePath: String = null,
-    maxValue: Int | Double = null,
-    minValue: Int | Double = null,
+    maxValue: js.UndefOr[Double] = js.undefined,
+    minValue: js.UndefOr[Double] = js.undefined,
     showBubble: js.UndefOr[Boolean] = js.undefined,
     showTooltip: js.UndefOr[Boolean] = js.undefined,
     tooltipTemplate: String = null,
     valuePath: String = null
   ): LayersBubbleSettings = {
     val __obj = js.Dynamic.literal()
-    if (bubbleOpacity != null) __obj.updateDynamic("bubbleOpacity")(bubbleOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(bubbleOpacity)) __obj.updateDynamic("bubbleOpacity")(bubbleOpacity.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (colorMappings != null) __obj.updateDynamic("colorMappings")(colorMappings.asInstanceOf[js.Any])
     if (colorValuePath != null) __obj.updateDynamic("colorValuePath")(colorValuePath.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(showBubble)) __obj.updateDynamic("showBubble")(showBubble.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minValue)) __obj.updateDynamic("minValue")(minValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showBubble)) __obj.updateDynamic("showBubble")(showBubble.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip.get.asInstanceOf[js.Any])
     if (tooltipTemplate != null) __obj.updateDynamic("tooltipTemplate")(tooltipTemplate.asInstanceOf[js.Any])
     if (valuePath != null) __obj.updateDynamic("valuePath")(valuePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayersBubbleSettings]

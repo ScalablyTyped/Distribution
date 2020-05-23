@@ -1,6 +1,5 @@
 package typings.cassandraDriver.typesMod.types
 
-import typings.cassandraDriver.AnonDate
 import typings.cassandraDriver.mod.ValueCallback
 import typings.node.Buffer
 import typings.std.Date
@@ -12,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TimeUuid () extends Uuid {
   def getDate(): Date = js.native
-  def getDatePrecision(): AnonDate = js.native
+  def getDatePrecision(): typings.cassandraDriver.anon.Date = js.native
 }
 
 /* static members */

@@ -39,15 +39,15 @@ trait ParallelOptions extends js.Object {
 object ParallelOptions {
   @scala.inline
   def apply(
-    aggregatedReporterTest: (js.Function1[/* reporter */ js.Object, Boolean]) | RegExp = null,
+    aggregatedReporterTest: js.UndefOr[Null | (js.Function1[/* reporter */ js.Object, Boolean]) | RegExp] = js.undefined,
     customShardStrategy: /* options */ ShardStrategOptions => Boolean = null,
-    executors: Int | Double = null,
+    executors: js.UndefOr[Double] = js.undefined,
     shardStrategy: `round-robin` | `description-length` | custom = null
   ): ParallelOptions = {
     val __obj = js.Dynamic.literal()
-    if (aggregatedReporterTest != null) __obj.updateDynamic("aggregatedReporterTest")(aggregatedReporterTest.asInstanceOf[js.Any])
+    if (!js.isUndefined(aggregatedReporterTest)) __obj.updateDynamic("aggregatedReporterTest")(aggregatedReporterTest.asInstanceOf[js.Any])
     if (customShardStrategy != null) __obj.updateDynamic("customShardStrategy")(js.Any.fromFunction1(customShardStrategy))
-    if (executors != null) __obj.updateDynamic("executors")(executors.asInstanceOf[js.Any])
+    if (!js.isUndefined(executors)) __obj.updateDynamic("executors")(executors.get.asInstanceOf[js.Any])
     if (shardStrategy != null) __obj.updateDynamic("shardStrategy")(shardStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParallelOptions]
   }

@@ -47,14 +47,14 @@ object WebConfig {
   @scala.inline
   def apply(
     builder: WebBuilderConfig = null,
-    builderDotconcurrency: Int | Double = null,
+    builderDotconcurrency: js.UndefOr[Double] = js.undefined,
     builderDotdest: String = null,
     builderDotext: String = null,
     builderDottheme: WebTheme | String = null,
     builderDoturls: WebBuilderUrls = null,
     builderDoturlsDotext: String = null,
     server: WebServerConfig = null,
-    serverDotport: Int | Double = null,
+    serverDotport: js.UndefOr[Double] = js.undefined,
     serverDotsync: js.UndefOr[Boolean] = js.undefined,
     serverDotsyncOptions: WebServerSyncOptions = null,
     serverDotsyncOptionsDotbrowser: js.Array[String] = null,
@@ -68,21 +68,21 @@ object WebConfig {
   ): WebConfig = {
     val __obj = js.Dynamic.literal()
     if (builder != null) __obj.updateDynamic("builder")(builder.asInstanceOf[js.Any])
-    if (builderDotconcurrency != null) __obj.updateDynamic("builder.concurrency")(builderDotconcurrency.asInstanceOf[js.Any])
+    if (!js.isUndefined(builderDotconcurrency)) __obj.updateDynamic("builder.concurrency")(builderDotconcurrency.get.asInstanceOf[js.Any])
     if (builderDotdest != null) __obj.updateDynamic("builder.dest")(builderDotdest.asInstanceOf[js.Any])
     if (builderDotext != null) __obj.updateDynamic("builder.ext")(builderDotext.asInstanceOf[js.Any])
     if (builderDottheme != null) __obj.updateDynamic("builder.theme")(builderDottheme.asInstanceOf[js.Any])
     if (builderDoturls != null) __obj.updateDynamic("builder.urls")(builderDoturls.asInstanceOf[js.Any])
     if (builderDoturlsDotext != null) __obj.updateDynamic("builder.urls.ext")(builderDoturlsDotext.asInstanceOf[js.Any])
     if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
-    if (serverDotport != null) __obj.updateDynamic("server.port")(serverDotport.asInstanceOf[js.Any])
-    if (!js.isUndefined(serverDotsync)) __obj.updateDynamic("server.sync")(serverDotsync.asInstanceOf[js.Any])
+    if (!js.isUndefined(serverDotport)) __obj.updateDynamic("server.port")(serverDotport.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(serverDotsync)) __obj.updateDynamic("server.sync")(serverDotsync.get.asInstanceOf[js.Any])
     if (serverDotsyncOptions != null) __obj.updateDynamic("server.syncOptions")(serverDotsyncOptions.asInstanceOf[js.Any])
     if (serverDotsyncOptionsDotbrowser != null) __obj.updateDynamic("server.syncOptions.browser")(serverDotsyncOptionsDotbrowser.asInstanceOf[js.Any])
-    if (!js.isUndefined(serverDotsyncOptionsDotnotify)) __obj.updateDynamic("server.syncOptions.notify")(serverDotsyncOptionsDotnotify.asInstanceOf[js.Any])
-    if (!js.isUndefined(serverDotsyncOptionsDotopen)) __obj.updateDynamic("server.syncOptions.open")(serverDotsyncOptionsDotopen.asInstanceOf[js.Any])
+    if (!js.isUndefined(serverDotsyncOptionsDotnotify)) __obj.updateDynamic("server.syncOptions.notify")(serverDotsyncOptionsDotnotify.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(serverDotsyncOptionsDotopen)) __obj.updateDynamic("server.syncOptions.open")(serverDotsyncOptionsDotopen.get.asInstanceOf[js.Any])
     if (serverDottheme != null) __obj.updateDynamic("server.theme")(serverDottheme.asInstanceOf[js.Any])
-    if (!js.isUndefined(serverDotwatch)) __obj.updateDynamic("server.watch")(serverDotwatch.asInstanceOf[js.Any])
+    if (!js.isUndefined(serverDotwatch)) __obj.updateDynamic("server.watch")(serverDotwatch.get.asInstanceOf[js.Any])
     if (static != null) __obj.updateDynamic("static")(static.asInstanceOf[js.Any])
     if (staticDotmount != null) __obj.updateDynamic("static.mount")(staticDotmount.asInstanceOf[js.Any])
     if (staticDotpath != null) __obj.updateDynamic("static.path")(staticDotpath.asInstanceOf[js.Any])

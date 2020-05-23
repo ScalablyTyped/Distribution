@@ -50,13 +50,13 @@ object GetSavingsPlansPurchaseRecommendationRequest {
     AccountScope: AccountScope = null,
     Filter: Expression = null,
     NextPageToken: NextPageToken = null,
-    PageSize: Int | Double = null
+    PageSize: js.UndefOr[NonNegativeInteger] = js.undefined
   ): GetSavingsPlansPurchaseRecommendationRequest = {
     val __obj = js.Dynamic.literal(LookbackPeriodInDays = LookbackPeriodInDays.asInstanceOf[js.Any], PaymentOption = PaymentOption.asInstanceOf[js.Any], SavingsPlansType = SavingsPlansType.asInstanceOf[js.Any], TermInYears = TermInYears.asInstanceOf[js.Any])
     if (AccountScope != null) __obj.updateDynamic("AccountScope")(AccountScope.asInstanceOf[js.Any])
     if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
     if (NextPageToken != null) __obj.updateDynamic("NextPageToken")(NextPageToken.asInstanceOf[js.Any])
-    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSavingsPlansPurchaseRecommendationRequest]
   }
 }

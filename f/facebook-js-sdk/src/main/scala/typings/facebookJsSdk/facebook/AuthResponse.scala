@@ -26,11 +26,11 @@ object AuthResponse {
     signedRequest: String,
     userID: String,
     grantedScopes: String = null,
-    reauthorize_required_in: Int | Double = null
+    reauthorize_required_in: js.UndefOr[Double] = js.undefined
   ): AuthResponse = {
     val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], expiresIn = expiresIn.asInstanceOf[js.Any], signedRequest = signedRequest.asInstanceOf[js.Any], userID = userID.asInstanceOf[js.Any])
     if (grantedScopes != null) __obj.updateDynamic("grantedScopes")(grantedScopes.asInstanceOf[js.Any])
-    if (reauthorize_required_in != null) __obj.updateDynamic("reauthorize_required_in")(reauthorize_required_in.asInstanceOf[js.Any])
+    if (!js.isUndefined(reauthorize_required_in)) __obj.updateDynamic("reauthorize_required_in")(reauthorize_required_in.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthResponse]
   }
 }

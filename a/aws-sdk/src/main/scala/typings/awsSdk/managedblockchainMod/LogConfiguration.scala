@@ -14,9 +14,9 @@ trait LogConfiguration extends js.Object {
 
 object LogConfiguration {
   @scala.inline
-  def apply(Enabled: js.UndefOr[Boolean] = js.undefined): LogConfiguration = {
+  def apply(Enabled: js.UndefOr[Enabled] = js.undefined): LogConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogConfiguration]
   }
 }

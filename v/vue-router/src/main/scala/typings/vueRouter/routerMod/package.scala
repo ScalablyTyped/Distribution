@@ -23,17 +23,18 @@ package object routerMod {
   type NavigationGuard[V /* <: typings.vue.vueMod.Vue */] = js.Function3[
     /* to */ typings.vueRouter.routerMod.Route, 
     /* from */ typings.vueRouter.routerMod.Route, 
-    /* next */ js.Function1[
-      /* to */ js.UndefOr[
-        typings.vueRouter.routerMod.RawLocation | typings.vueRouter.vueRouterBooleans.`false` | (js.Function1[/* vm */ V, js.Any]) | scala.Unit
-      ], 
-      scala.Unit
-    ], 
+    /* next */ typings.vueRouter.routerMod.NavigationGuardNext[V], 
     js.Any
+  ]
+  type NavigationGuardNext[V /* <: typings.vue.vueMod.Vue */] = js.Function1[
+    /* to */ js.UndefOr[
+      typings.vueRouter.routerMod.RawLocation | typings.vueRouter.vueRouterBooleans.`false` | (js.Function1[/* vm */ V, js.Any]) | scala.Unit
+    ], 
+    scala.Unit
   ]
   /* Rewritten from type alias, can be one of: 
     - typings.vueRouter.routerMod.Position
-    - typings.vueRouter.AnonOffset
+    - typings.vueRouter.anon.Offset
     - scala.Unit
   */
   type PositionResult = typings.vueRouter.routerMod._PositionResult | scala.Unit

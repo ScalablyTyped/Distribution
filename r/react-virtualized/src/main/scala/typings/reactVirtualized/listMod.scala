@@ -1,5 +1,6 @@
 package typings.reactVirtualized
 
+import typings.reactVirtualized.anon.AutoHeight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +15,7 @@ object listMod extends js.Object {
   /* static members */
   @js.native
   object List extends js.Object {
-    var defaultProps: AnonAutoHeight = js.native
+    var defaultProps: AutoHeight = js.native
   }
   
 }

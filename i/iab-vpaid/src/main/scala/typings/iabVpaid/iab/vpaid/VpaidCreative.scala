@@ -279,22 +279,6 @@ trait VpaidCreative extends js.Object {
     * @returns The proposed VPAID version
     */
   def handshakeVersion(playerVPAIDVersion: String): String = js.native
-  def initAd(
-    width: Double,
-    height: Double,
-    viewMode: ViewMode,
-    desiredBitrate: Double,
-    creativeData: js.UndefOr[scala.Nothing],
-    environmentVars: EnvironmentVars
-  ): Unit = js.native
-  def initAd(
-    width: Double,
-    height: Double,
-    viewMode: ViewMode,
-    desiredBitrate: Double,
-    creativeData: Null,
-    environmentVars: EnvironmentVars
-  ): Unit = js.native
   /**
     * After the ad unit is loaded and the video player calls `handshakeVersion`, the video player
     * calls `initAd()` to initialize the ad experience. The video player may preload the ad unit and
@@ -321,7 +305,7 @@ trait VpaidCreative extends js.Object {
     height: Double,
     viewMode: ViewMode,
     desiredBitrate: Double,
-    creativeData: CreativeData,
+    creativeData: js.UndefOr[CreativeData | Null],
     environmentVars: EnvironmentVars
   ): Unit = js.native
   /**

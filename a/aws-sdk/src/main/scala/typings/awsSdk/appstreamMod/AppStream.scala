@@ -1,6 +1,6 @@
 package typings.awsSdk.appstreamMod
 
-import typings.awsSdk.DescribeFleetsRequestwait
+import typings.awsSdk.anon.DescribeFleetsRequestwait
 import typings.awsSdk.awsSdkStrings.fleetStarted
 import typings.awsSdk.awsSdkStrings.fleetStopped
 import typings.awsSdk.configMod.ConfigBase

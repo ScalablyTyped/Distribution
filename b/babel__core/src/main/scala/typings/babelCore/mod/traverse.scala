@@ -53,42 +53,26 @@ object traverse extends js.Object {
   def apply[S](
     parent: js.Array[typings.babelTraverse.mod.Node],
     opts: TraverseOptions[S],
-    scope: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[Scope],
     state: S
   ): Unit = js.native
   def apply[S](
     parent: js.Array[typings.babelTraverse.mod.Node],
     opts: TraverseOptions[S],
-    scope: js.UndefOr[scala.Nothing],
-    state: S,
-    parentPath: typings.babelTraverse.mod.NodePath[typings.babelTraverse.mod.Node]
-  ): Unit = js.native
-  def apply[S](parent: js.Array[typings.babelTraverse.mod.Node], opts: TraverseOptions[S], scope: Scope, state: S): Unit = js.native
-  def apply[S](
-    parent: js.Array[typings.babelTraverse.mod.Node],
-    opts: TraverseOptions[S],
-    scope: Scope,
+    scope: js.UndefOr[Scope],
     state: S,
     parentPath: typings.babelTraverse.mod.NodePath[typings.babelTraverse.mod.Node]
   ): Unit = js.native
   def apply[S](
     parent: typings.babelTraverse.mod.Node,
     opts: TraverseOptions[S],
-    scope: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[Scope],
     state: S
   ): Unit = js.native
   def apply[S](
     parent: typings.babelTraverse.mod.Node,
     opts: TraverseOptions[S],
-    scope: js.UndefOr[scala.Nothing],
-    state: S,
-    parentPath: typings.babelTraverse.mod.NodePath[typings.babelTraverse.mod.Node]
-  ): Unit = js.native
-  def apply[S](parent: typings.babelTraverse.mod.Node, opts: TraverseOptions[S], scope: Scope, state: S): Unit = js.native
-  def apply[S](
-    parent: typings.babelTraverse.mod.Node,
-    opts: TraverseOptions[S],
-    scope: Scope,
+    scope: js.UndefOr[Scope],
     state: S,
     parentPath: typings.babelTraverse.mod.NodePath[typings.babelTraverse.mod.Node]
   ): Unit = js.native

@@ -34,24 +34,24 @@ object ReactStarsProps {
     className: String = null,
     color1: String = null,
     color2: String = null,
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     edit: js.UndefOr[Boolean] = js.undefined,
     half: js.UndefOr[Boolean] = js.undefined,
     onChange: /* new_rating */ Double => Unit = null,
-    size: Int | Double = null,
-    value: Int | Double = null
+    size: js.UndefOr[Double] = js.undefined,
+    value: js.UndefOr[Double] = js.undefined
   ): ReactStarsProps = {
     val __obj = js.Dynamic.literal()
     if (char != null) __obj.updateDynamic("char")(char.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color1 != null) __obj.updateDynamic("color1")(color1.asInstanceOf[js.Any])
     if (color2 != null) __obj.updateDynamic("color2")(color2.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (!js.isUndefined(edit)) __obj.updateDynamic("edit")(edit.asInstanceOf[js.Any])
-    if (!js.isUndefined(half)) __obj.updateDynamic("half")(half.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(edit)) __obj.updateDynamic("edit")(edit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(half)) __obj.updateDynamic("half")(half.get.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactStarsProps]
   }
 }

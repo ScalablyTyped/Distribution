@@ -1,6 +1,6 @@
 package typings.reduxApiMiddleware.mod
 
-import typings.reduxApiMiddleware.FnCall
+import typings.reduxApiMiddleware.anon.FnCall
 import typings.std.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`

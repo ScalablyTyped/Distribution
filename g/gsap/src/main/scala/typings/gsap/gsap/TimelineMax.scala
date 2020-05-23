@@ -1,15 +1,13 @@
 package typings.gsap.gsap
 
-import typings.gsap.AnonName
+import typings.gsap.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.gsap.gsap.Timeline because Already inherited */ @JSGlobal("gsap.TimelineMax")
-@js.native
-class TimelineMax () extends TimelineLite {
-  def this(vars: js.Object) = this()
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.gsap.gsap.Timeline because Already inherited */ @js.native
+trait TimelineMax extends TimelineLite {
   def addCallback(callback: js.Function1[/* repeated */ js.Any, Unit], position: js.Any): TimelineMax = js.native
   def addCallback(callback: js.Function1[/* repeated */ js.Any, Unit], position: js.Any, params: js.Array[_]): TimelineMax = js.native
   def addCallback(
@@ -26,7 +24,7 @@ class TimelineMax () extends TimelineLite {
   def getActive(nested: Boolean, tweens: Boolean, timelines: Boolean): Tween | js.Array[Timeline] = js.native
   def getLabelAfter(time: Double): String = js.native
   def getLabelBefore(time: Double): String = js.native
-  def getLabelsArray(): js.Array[AnonName] = js.native
+  def getLabelsArray(): js.Array[Name] = js.native
   def removeCallback(callback: js.Function1[/* repeated */ js.Any, Unit]): TimelineMax = js.native
   def removeCallback(callback: js.Function1[/* repeated */ js.Any, Unit], timeOrLabel: js.Any): TimelineMax = js.native
   def removePause(position: js.Any): TimelineMax = js.native

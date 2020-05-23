@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -76,8 +75,4 @@ trait BaseLayerView2D extends LayerView {
     */
   def tilesChanged(added: js.Array[Tile], removed: js.Array[Tile]): Unit = js.native
 }
-
-@JSGlobal("__esri.BaseLayerView2D")
-@js.native
-object BaseLayerView2D extends TopLevel[BaseLayerView2DConstructor]
 

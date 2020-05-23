@@ -34,7 +34,7 @@ object RaygunOptions {
     offlineStorage: RaygunOfflineStorageProvider[RaygunPayload, String] = null,
     offlineStorageOptions: js.Any = null,
     onBeforeSend: (/* payload */ RaygunPayload, /* exception */ Error, /* customData */ KeyValueObject, /* request */ RaygunRequest, /* tags */ js.Array[String]) => Boolean | RaygunPayload = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     reportColumnNumbers: js.UndefOr[Boolean] = js.undefined,
     tags: js.Array[String] = null,
     useSSL: js.UndefOr[Boolean] = js.undefined,
@@ -45,15 +45,15 @@ object RaygunOptions {
     if (groupingKey != null) __obj.updateDynamic("groupingKey")(groupingKey.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (innerErrorFieldName != null) __obj.updateDynamic("innerErrorFieldName")(innerErrorFieldName.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOffline)) __obj.updateDynamic("isOffline")(isOffline.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOffline)) __obj.updateDynamic("isOffline")(isOffline.get.asInstanceOf[js.Any])
     if (offlineStorage != null) __obj.updateDynamic("offlineStorage")(offlineStorage.asInstanceOf[js.Any])
     if (offlineStorageOptions != null) __obj.updateDynamic("offlineStorageOptions")(offlineStorageOptions.asInstanceOf[js.Any])
     if (onBeforeSend != null) __obj.updateDynamic("onBeforeSend")(js.Any.fromFunction5(onBeforeSend))
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(reportColumnNumbers)) __obj.updateDynamic("reportColumnNumbers")(reportColumnNumbers.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reportColumnNumbers)) __obj.updateDynamic("reportColumnNumbers")(reportColumnNumbers.get.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSSL)) __obj.updateDynamic("useSSL")(useSSL.asInstanceOf[js.Any])
-    if (!js.isUndefined(userHumanStringForObject)) __obj.updateDynamic("userHumanStringForObject")(userHumanStringForObject.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSSL)) __obj.updateDynamic("useSSL")(useSSL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(userHumanStringForObject)) __obj.updateDynamic("userHumanStringForObject")(userHumanStringForObject.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaygunOptions]
   }
 }

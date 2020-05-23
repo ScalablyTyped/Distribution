@@ -191,8 +191,8 @@ object RoyalSliderOptions {
     arrowsNavHideOnTouch: js.UndefOr[Boolean] = js.undefined,
     autoHeight: js.UndefOr[Boolean] = js.undefined,
     autoScaleSlider: js.UndefOr[Boolean] = js.undefined,
-    autoScaleSliderHeight: Int | Double = null,
-    autoScaleSliderWidth: Int | Double = null,
+    autoScaleSliderHeight: js.UndefOr[Double] = js.undefined,
+    autoScaleSliderWidth: js.UndefOr[Double] = js.undefined,
     autoplay: RoyalSliderAutoplayOptions = null,
     block: RoyalSliderBlockOptions = null,
     controlNavigation: String = null,
@@ -205,71 +205,71 @@ object RoyalSliderOptions {
     globalCaption: js.UndefOr[Boolean] = js.undefined,
     imageAlignCenter: js.UndefOr[Boolean] = js.undefined,
     imageScaleMode: String = null,
-    imageScalePadding: Int | Double = null,
-    imgHeight: Int | Double = null,
-    imgWidth: Int | Double = null,
+    imageScalePadding: js.UndefOr[Double] = js.undefined,
+    imgHeight: js.UndefOr[Double] = js.undefined,
+    imgWidth: js.UndefOr[Double] = js.undefined,
     keyboardNavEnabled: js.UndefOr[Boolean] = js.undefined,
     loop: js.UndefOr[Boolean] = js.undefined,
     loopRewind: js.UndefOr[Boolean] = js.undefined,
-    minSlideOffset: Int | Double = null,
+    minSlideOffset: js.UndefOr[Double] = js.undefined,
     navigateByClick: js.UndefOr[Boolean] = js.undefined,
-    numImagesToPreload: Int | Double = null,
+    numImagesToPreload: js.UndefOr[Double] = js.undefined,
     randomizeSlides: js.UndefOr[Boolean] = js.undefined,
     sliderDrag: js.UndefOr[Boolean] = js.undefined,
     sliderTouch: js.UndefOr[Boolean] = js.undefined,
     slides: Element = null,
     slidesOrientation: String = null,
-    slidesSpacing: Int | Double = null,
-    startSlideId: Int | Double = null,
+    slidesSpacing: js.UndefOr[Double] = js.undefined,
+    startSlideId: js.UndefOr[Double] = js.undefined,
     thumbs: RoyalSliderThumbsOptions = null,
-    transitionSpeed: Int | Double = null,
+    transitionSpeed: js.UndefOr[Double] = js.undefined,
     transitionType: String = null,
     usePreloader: js.UndefOr[Boolean] = js.undefined,
     video: RoyalSliderVideoOptions = null,
     visibleNearby: RoyalSliderVisibleOptions = null
   ): RoyalSliderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addActiveClass)) __obj.updateDynamic("addActiveClass")(addActiveClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowCSS3)) __obj.updateDynamic("allowCSS3")(allowCSS3.asInstanceOf[js.Any])
-    if (!js.isUndefined(arrowsNav)) __obj.updateDynamic("arrowsNav")(arrowsNav.asInstanceOf[js.Any])
-    if (!js.isUndefined(arrowsNavAutoHide)) __obj.updateDynamic("arrowsNavAutoHide")(arrowsNavAutoHide.asInstanceOf[js.Any])
-    if (!js.isUndefined(arrowsNavHideOnTouch)) __obj.updateDynamic("arrowsNavHideOnTouch")(arrowsNavHideOnTouch.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoScaleSlider)) __obj.updateDynamic("autoScaleSlider")(autoScaleSlider.asInstanceOf[js.Any])
-    if (autoScaleSliderHeight != null) __obj.updateDynamic("autoScaleSliderHeight")(autoScaleSliderHeight.asInstanceOf[js.Any])
-    if (autoScaleSliderWidth != null) __obj.updateDynamic("autoScaleSliderWidth")(autoScaleSliderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(addActiveClass)) __obj.updateDynamic("addActiveClass")(addActiveClass.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCSS3)) __obj.updateDynamic("allowCSS3")(allowCSS3.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrowsNav)) __obj.updateDynamic("arrowsNav")(arrowsNav.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrowsNavAutoHide)) __obj.updateDynamic("arrowsNavAutoHide")(arrowsNavAutoHide.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrowsNavHideOnTouch)) __obj.updateDynamic("arrowsNavHideOnTouch")(arrowsNavHideOnTouch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoScaleSlider)) __obj.updateDynamic("autoScaleSlider")(autoScaleSlider.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoScaleSliderHeight)) __obj.updateDynamic("autoScaleSliderHeight")(autoScaleSliderHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoScaleSliderWidth)) __obj.updateDynamic("autoScaleSliderWidth")(autoScaleSliderWidth.get.asInstanceOf[js.Any])
     if (autoplay != null) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
     if (block != null) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
     if (controlNavigation != null) __obj.updateDynamic("controlNavigation")(controlNavigation.asInstanceOf[js.Any])
-    if (!js.isUndefined(controlsInside)) __obj.updateDynamic("controlsInside")(controlsInside.asInstanceOf[js.Any])
+    if (!js.isUndefined(controlsInside)) __obj.updateDynamic("controlsInside")(controlsInside.get.asInstanceOf[js.Any])
     if (deeplinking != null) __obj.updateDynamic("deeplinking")(deeplinking.asInstanceOf[js.Any])
     if (easeInOut != null) __obj.updateDynamic("easeInOut")(easeInOut.asInstanceOf[js.Any])
     if (easeOut != null) __obj.updateDynamic("easeOut")(easeOut.asInstanceOf[js.Any])
-    if (!js.isUndefined(fadeinLoadedSlide)) __obj.updateDynamic("fadeinLoadedSlide")(fadeinLoadedSlide.asInstanceOf[js.Any])
+    if (!js.isUndefined(fadeinLoadedSlide)) __obj.updateDynamic("fadeinLoadedSlide")(fadeinLoadedSlide.get.asInstanceOf[js.Any])
     if (fullscreen != null) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
-    if (!js.isUndefined(globalCaption)) __obj.updateDynamic("globalCaption")(globalCaption.asInstanceOf[js.Any])
-    if (!js.isUndefined(imageAlignCenter)) __obj.updateDynamic("imageAlignCenter")(imageAlignCenter.asInstanceOf[js.Any])
+    if (!js.isUndefined(globalCaption)) __obj.updateDynamic("globalCaption")(globalCaption.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageAlignCenter)) __obj.updateDynamic("imageAlignCenter")(imageAlignCenter.get.asInstanceOf[js.Any])
     if (imageScaleMode != null) __obj.updateDynamic("imageScaleMode")(imageScaleMode.asInstanceOf[js.Any])
-    if (imageScalePadding != null) __obj.updateDynamic("imageScalePadding")(imageScalePadding.asInstanceOf[js.Any])
-    if (imgHeight != null) __obj.updateDynamic("imgHeight")(imgHeight.asInstanceOf[js.Any])
-    if (imgWidth != null) __obj.updateDynamic("imgWidth")(imgWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboardNavEnabled)) __obj.updateDynamic("keyboardNavEnabled")(keyboardNavEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (!js.isUndefined(loopRewind)) __obj.updateDynamic("loopRewind")(loopRewind.asInstanceOf[js.Any])
-    if (minSlideOffset != null) __obj.updateDynamic("minSlideOffset")(minSlideOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigateByClick)) __obj.updateDynamic("navigateByClick")(navigateByClick.asInstanceOf[js.Any])
-    if (numImagesToPreload != null) __obj.updateDynamic("numImagesToPreload")(numImagesToPreload.asInstanceOf[js.Any])
-    if (!js.isUndefined(randomizeSlides)) __obj.updateDynamic("randomizeSlides")(randomizeSlides.asInstanceOf[js.Any])
-    if (!js.isUndefined(sliderDrag)) __obj.updateDynamic("sliderDrag")(sliderDrag.asInstanceOf[js.Any])
-    if (!js.isUndefined(sliderTouch)) __obj.updateDynamic("sliderTouch")(sliderTouch.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageScalePadding)) __obj.updateDynamic("imageScalePadding")(imageScalePadding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(imgHeight)) __obj.updateDynamic("imgHeight")(imgHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(imgWidth)) __obj.updateDynamic("imgWidth")(imgWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboardNavEnabled)) __obj.updateDynamic("keyboardNavEnabled")(keyboardNavEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loopRewind)) __obj.updateDynamic("loopRewind")(loopRewind.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSlideOffset)) __obj.updateDynamic("minSlideOffset")(minSlideOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(navigateByClick)) __obj.updateDynamic("navigateByClick")(navigateByClick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numImagesToPreload)) __obj.updateDynamic("numImagesToPreload")(numImagesToPreload.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(randomizeSlides)) __obj.updateDynamic("randomizeSlides")(randomizeSlides.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sliderDrag)) __obj.updateDynamic("sliderDrag")(sliderDrag.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sliderTouch)) __obj.updateDynamic("sliderTouch")(sliderTouch.get.asInstanceOf[js.Any])
     if (slides != null) __obj.updateDynamic("slides")(slides.asInstanceOf[js.Any])
     if (slidesOrientation != null) __obj.updateDynamic("slidesOrientation")(slidesOrientation.asInstanceOf[js.Any])
-    if (slidesSpacing != null) __obj.updateDynamic("slidesSpacing")(slidesSpacing.asInstanceOf[js.Any])
-    if (startSlideId != null) __obj.updateDynamic("startSlideId")(startSlideId.asInstanceOf[js.Any])
+    if (!js.isUndefined(slidesSpacing)) __obj.updateDynamic("slidesSpacing")(slidesSpacing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startSlideId)) __obj.updateDynamic("startSlideId")(startSlideId.get.asInstanceOf[js.Any])
     if (thumbs != null) __obj.updateDynamic("thumbs")(thumbs.asInstanceOf[js.Any])
-    if (transitionSpeed != null) __obj.updateDynamic("transitionSpeed")(transitionSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitionSpeed)) __obj.updateDynamic("transitionSpeed")(transitionSpeed.get.asInstanceOf[js.Any])
     if (transitionType != null) __obj.updateDynamic("transitionType")(transitionType.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePreloader)) __obj.updateDynamic("usePreloader")(usePreloader.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePreloader)) __obj.updateDynamic("usePreloader")(usePreloader.get.asInstanceOf[js.Any])
     if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
     if (visibleNearby != null) __obj.updateDynamic("visibleNearby")(visibleNearby.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoyalSliderOptions]

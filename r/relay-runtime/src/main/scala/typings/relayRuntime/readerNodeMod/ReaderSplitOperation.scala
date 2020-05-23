@@ -19,10 +19,10 @@ object ReaderSplitOperation {
     kind: String,
     name: String,
     selections: js.Array[ReaderSelection],
-    metadata: StringDictionary[js.Any] = null
+    metadata: js.UndefOr[Null | StringDictionary[js.Any]] = js.undefined
   ): ReaderSplitOperation = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(metadata)) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReaderSplitOperation]
   }
 }

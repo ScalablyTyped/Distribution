@@ -5,24 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when a user taps the Application Shortcut.
-		 */
+  * Fired when a user taps the Application Shortcut.
+  */
 trait iOSShortcutitemclickEvent extends iOSBaseEvent {
   /**
-  			 * The unique identifier for the application shortcut.
-  			 */
+    * The unique identifier for the application shortcut.
+    */
   var itemtype: String
   /**
-  			 * The subtitle of the application shortcut.
-  			 */
+    * The subtitle of the application shortcut.
+    */
   var subtitle: String
   /**
-  			 * The title of the application shortcut.
-  			 */
+    * The title of the application shortcut.
+    */
   var title: String
   /**
-  			 * The payload passed by the application shortcut.
-  			 */
+    * The payload passed by the application shortcut.
+    */
   var userInfo: js.Any
 }
 

@@ -15,7 +15,7 @@ object ParserOptions {
   @scala.inline
   def apply(silent: js.UndefOr[Boolean] = js.undefined, source: String = null): ParserOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParserOptions]
   }

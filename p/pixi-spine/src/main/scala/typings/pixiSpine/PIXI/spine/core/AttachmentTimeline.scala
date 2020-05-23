@@ -4,27 +4,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PIXI.spine.core.AttachmentTimeline")
-@js.native
-class AttachmentTimeline protected () extends Timeline {
-  def this(frameCount: Double) = this()
-  var attachmentNames: js.Array[String] = js.native
-  var frames: ArrayLike[Double] = js.native
-  var slotIndex: Double = js.native
-  /* CompleteClass */
-  @JSName("apply")
-  override def apply(
-    skeleton: Skeleton,
-    lastTime: Double,
-    time: Double,
-    events: js.Array[Event],
-    alpha: Double,
-    blend: MixBlend,
-    direction: MixDirection
-  ): Unit = js.native
-  def getFrameCount(): Double = js.native
-  /* CompleteClass */
-  override def getPropertyId(): Double = js.native
-  def setFrame(frameIndex: Double, time: Double, attachmentName: String): Unit = js.native
+trait AttachmentTimeline extends Timeline {
+  var attachmentNames: js.Array[String]
+  var frames: ArrayLike[Double]
+  var slotIndex: Double
+  def getFrameCount(): Double
+  def setFrame(frameIndex: Double, time: Double, attachmentName: String): Unit
+}
+
+object AttachmentTimeline {
+  @scala.inline
+  def apply(
+    apply: (Skeleton, Double, Double, js.Array[Event], Double, MixBlend, MixDirection) => Unit,
+    attachmentNames: js.Array[String],
+    frames: ArrayLike[Double],
+    getFrameCount: () => Double,
+    getPropertyId: () => Double,
+    setFrame: (Double, Double, String) => Unit,
+    slotIndex: Double
+  ): AttachmentTimeline = {
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction7(apply), attachmentNames = attachmentNames.asInstanceOf[js.Any], frames = frames.asInstanceOf[js.Any], getFrameCount = js.Any.fromFunction0(getFrameCount), getPropertyId = js.Any.fromFunction0(getPropertyId), setFrame = js.Any.fromFunction3(setFrame), slotIndex = slotIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AttachmentTimeline]
+  }
 }
 

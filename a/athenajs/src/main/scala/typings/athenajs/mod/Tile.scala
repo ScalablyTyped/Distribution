@@ -1,6 +1,6 @@
 package typings.athenajs.mod
 
-import typings.athenajs.AnonAIR
+import typings.athenajs.anon.AIR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,6 +22,6 @@ class Tile protected () extends js.Object {
 @JSImport("athenajs", "Tile")
 @js.native
 object Tile extends js.Object {
-  var TYPE: AnonAIR = js.native
+  var TYPE: AIR = js.native
 }
 

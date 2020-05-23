@@ -3,7 +3,7 @@ package typings.reactPdf.pageMod
 import typings.pdfjsDist.mod.PDFPageProxy
 import typings.react.mod.LegacyRef
 import typings.react.mod.ReactElement
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.reactPdf.reactPdfStrings.canvas
 import typings.reactPdf.reactPdfStrings.none
 import typings.reactPdf.reactPdfStrings.svg
@@ -145,8 +145,8 @@ object Props {
     className: String | js.Array[String] = null,
     customTextRenderer: /* layer */ TextLayerItemInternal => Element = null,
     error: String | ReactElement | RenderFunction = null,
-    height: Int | Double = null,
-    inputRef: LegacyRef[HTMLDivElement] = null,
+    height: js.UndefOr[Double] = js.undefined,
+    inputRef: js.UndefOr[Null | LegacyRef[HTMLDivElement]] = js.undefined,
     loading: String | ReactElement | RenderFunction = null,
     noData: String | ReactElement | RenderFunction = null,
     onGetAnnotationsError: /* error */ Error => Unit = null,
@@ -158,22 +158,22 @@ object Props {
     onLoadSuccess: /* page */ PDFPageProxy => Unit = null,
     onRenderError: /* error */ Error => Unit = null,
     onRenderSuccess: () => Unit = null,
-    pageIndex: Int | Double = null,
-    pageNumber: Int | Double = null,
+    pageIndex: js.UndefOr[Double] = js.undefined,
+    pageNumber: js.UndefOr[Double] = js.undefined,
     renderAnnotationLayer: js.UndefOr[Boolean] = js.undefined,
     renderInteractiveForms: js.UndefOr[Boolean] = js.undefined,
     renderMode: canvas | svg | none = null,
     renderTextLayer: js.UndefOr[Boolean] = js.undefined,
-    rotate: Int | Double = null,
-    scale: Int | Double = null,
-    width: Int | Double = null
+    rotate: js.UndefOr[Double] = js.undefined,
+    scale: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): Props = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (customTextRenderer != null) __obj.updateDynamic("customTextRenderer")(js.Any.fromFunction1(customTextRenderer))
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputRef)) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
     if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
     if (noData != null) __obj.updateDynamic("noData")(noData.asInstanceOf[js.Any])
     if (onGetAnnotationsError != null) __obj.updateDynamic("onGetAnnotationsError")(js.Any.fromFunction1(onGetAnnotationsError))
@@ -185,15 +185,15 @@ object Props {
     if (onLoadSuccess != null) __obj.updateDynamic("onLoadSuccess")(js.Any.fromFunction1(onLoadSuccess))
     if (onRenderError != null) __obj.updateDynamic("onRenderError")(js.Any.fromFunction1(onRenderError))
     if (onRenderSuccess != null) __obj.updateDynamic("onRenderSuccess")(js.Any.fromFunction0(onRenderSuccess))
-    if (pageIndex != null) __obj.updateDynamic("pageIndex")(pageIndex.asInstanceOf[js.Any])
-    if (pageNumber != null) __obj.updateDynamic("pageNumber")(pageNumber.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderAnnotationLayer)) __obj.updateDynamic("renderAnnotationLayer")(renderAnnotationLayer.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderInteractiveForms)) __obj.updateDynamic("renderInteractiveForms")(renderInteractiveForms.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageIndex)) __obj.updateDynamic("pageIndex")(pageIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageNumber)) __obj.updateDynamic("pageNumber")(pageNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderAnnotationLayer)) __obj.updateDynamic("renderAnnotationLayer")(renderAnnotationLayer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderInteractiveForms)) __obj.updateDynamic("renderInteractiveForms")(renderInteractiveForms.get.asInstanceOf[js.Any])
     if (renderMode != null) __obj.updateDynamic("renderMode")(renderMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderTextLayer)) __obj.updateDynamic("renderTextLayer")(renderTextLayer.asInstanceOf[js.Any])
-    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderTextLayer)) __obj.updateDynamic("renderTextLayer")(renderTextLayer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotate)) __obj.updateDynamic("rotate")(rotate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

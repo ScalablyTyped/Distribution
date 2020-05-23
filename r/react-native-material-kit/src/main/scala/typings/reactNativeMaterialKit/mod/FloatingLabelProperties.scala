@@ -17,16 +17,16 @@ object FloatingLabelProperties {
   @scala.inline
   def apply(
     allowFontScaling: js.UndefOr[Boolean] = js.undefined,
-    floatingLabelAniDuration: Int | Double = null,
-    floatingLabelBottomMargin: Int | Double = null,
+    floatingLabelAniDuration: js.UndefOr[Double] = js.undefined,
+    floatingLabelBottomMargin: js.UndefOr[Double] = js.undefined,
     floatingLabelEnabled: js.UndefOr[Boolean] = js.undefined,
     floatingLabelFont: font = null
   ): FloatingLabelProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowFontScaling)) __obj.updateDynamic("allowFontScaling")(allowFontScaling.asInstanceOf[js.Any])
-    if (floatingLabelAniDuration != null) __obj.updateDynamic("floatingLabelAniDuration")(floatingLabelAniDuration.asInstanceOf[js.Any])
-    if (floatingLabelBottomMargin != null) __obj.updateDynamic("floatingLabelBottomMargin")(floatingLabelBottomMargin.asInstanceOf[js.Any])
-    if (!js.isUndefined(floatingLabelEnabled)) __obj.updateDynamic("floatingLabelEnabled")(floatingLabelEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFontScaling)) __obj.updateDynamic("allowFontScaling")(allowFontScaling.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(floatingLabelAniDuration)) __obj.updateDynamic("floatingLabelAniDuration")(floatingLabelAniDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(floatingLabelBottomMargin)) __obj.updateDynamic("floatingLabelBottomMargin")(floatingLabelBottomMargin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(floatingLabelEnabled)) __obj.updateDynamic("floatingLabelEnabled")(floatingLabelEnabled.get.asInstanceOf[js.Any])
     if (floatingLabelFont != null) __obj.updateDynamic("floatingLabelFont")(floatingLabelFont.asInstanceOf[js.Any])
     __obj.asInstanceOf[FloatingLabelProperties]
   }

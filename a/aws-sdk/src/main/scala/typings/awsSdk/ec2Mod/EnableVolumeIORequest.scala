@@ -18,9 +18,9 @@ trait EnableVolumeIORequest extends js.Object {
 
 object EnableVolumeIORequest {
   @scala.inline
-  def apply(VolumeId: VolumeId, DryRun: js.UndefOr[scala.Boolean] = js.undefined): EnableVolumeIORequest = {
+  def apply(VolumeId: VolumeId, DryRun: js.UndefOr[Boolean] = js.undefined): EnableVolumeIORequest = {
     val __obj = js.Dynamic.literal(VolumeId = VolumeId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableVolumeIORequest]
   }
 }

@@ -15,25 +15,8 @@ import scala.scalajs.js.annotation._
   * All the paths in a compound path take on the style of the compound path and
   * can be accessed through its {@link Item#children} list.
   */
-@JSGlobal("paper.CompoundPath")
 @js.native
-class CompoundPath protected () extends PathItem {
-  /** 
-    * Creates a new compound path item from an object description and places it
-    * at the top of the active layer.
-    * 
-    * @param object - an object containing properties to be set on the
-    *     path
-    */
-  def this(`object`: js.Object) = this()
-  /** 
-    * Creates a new compound path item from SVG path-data and places it at the
-    * top of the active layer.
-    * 
-    * @param pathData - the SVG path-data that describes the geometry
-    * of this path
-    */
-  def this(pathData: String) = this()
+trait CompoundPath extends PathItem {
   /** 
     * The area that the compound-path's geometry is covering, calculated by
     * getting the {@link Path#area} of each sub-path and it adding up.

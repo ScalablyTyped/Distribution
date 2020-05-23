@@ -7,30 +7,27 @@ import scala.scalajs.js.annotation._
 
 trait IgSplitButtonItem
   extends /**
-	 * Option for IgSplitButtonItem
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   /**
-  	 * Css class to represent the iconClass of the item
-  	 */
+    * Css class to represent the iconClass of the item
+    */
   var iconClass: js.UndefOr[String] = js.undefined
   /**
-  	 * Item display label
-  	 */
+    * Item display label
+    */
   var label: js.UndefOr[String] = js.undefined
   /**
-  	 * Item name
-  	 */
+    * Item name
+    */
   var name: js.UndefOr[String] = js.undefined
 }
 
 object IgSplitButtonItem {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for IgSplitButtonItem
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     iconClass: String = null,
     label: String = null,
     name: String = null

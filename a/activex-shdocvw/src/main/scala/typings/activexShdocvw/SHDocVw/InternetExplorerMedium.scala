@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Internet Explorer Application with default integrity of Medium */
-@JSGlobal("SHDocVw.InternetExplorerMedium")
 @js.native
-class InternetExplorerMedium protected () extends js.Object {
+trait InternetExplorerMedium extends js.Object {
   /** Controls whether address bar is shown */
   var AddressBar: Boolean = js.native
   /** Returns the application automation object if accessible, this automation object otherwise.. */

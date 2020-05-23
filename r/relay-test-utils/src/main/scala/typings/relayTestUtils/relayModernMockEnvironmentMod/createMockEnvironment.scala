@@ -1,6 +1,6 @@
 package typings.relayTestUtils.relayModernMockEnvironmentMod
 
-import typings.relayTestUtils.AnonHandlerProvider
+import typings.relayTestUtils.anon.HandlerProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object createMockEnvironment extends js.Object {
   def apply(): RelayMockEnvironment = js.native
-  def apply(config: AnonHandlerProvider): RelayMockEnvironment = js.native
+  def apply(config: HandlerProvider): RelayMockEnvironment = js.native
 }
 

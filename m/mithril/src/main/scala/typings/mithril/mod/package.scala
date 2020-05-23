@@ -14,28 +14,28 @@ package object mod {
   type ChildArrayOrPrimitive = typings.mithril.mod.ChildArray | java.lang.String | scala.Double | scala.Boolean
   type Children = typings.mithril.mod.Child | typings.mithril.mod.ChildArray
   /**
-  	 * Components are a mechanism to encapsulate parts of a view to make code easier to organize and/or reuse.
-  	 * Any function that returns an object with a view method can be used as a Mithril component.
-  	 * Components can be consumed via the m() utility.
-  	 */
+    * Components are a mechanism to encapsulate parts of a view to make code easier to organize and/or reuse.
+    * Any function that returns an object with a view method can be used as a Mithril component.
+    * Components can be consumed via the m() utility.
+    */
   type ClosureComponent[A] = typings.mithril.mod.FactoryComponent[A]
   /**
-  	 * Components are a mechanism to encapsulate parts of a view to make code easier to organize and/or reuse.
-  	 * Any Javascript object that has a view method is a Mithril component. Components can be consumed via the m() utility.
-  	 */
+    * Components are a mechanism to encapsulate parts of a view to make code easier to organize and/or reuse.
+    * Any Javascript object that has a view method is a Mithril component. Components can be consumed via the m() utility.
+    */
   type Comp[Attrs, State /* <: typings.mithril.mod.Lifecycle[Attrs, State] */] = (typings.mithril.mod.Component[Attrs, State]) with State
   /** Components are a mechanism to encapsulate parts of a view to make code easier to organize and/or reuse. Components can be consumed via the m() utility. */
   /* Rewritten from type alias, can be one of: 
     - typings.mithril.mod.Component[A, S]
-    - typings.mithril.AnonInstantiable[A]
+    - typings.mithril.anon.Instantiable[A]
     - typings.mithril.mod.FactoryComponent[A]
   */
   type ComponentTypes[A, S /* <: typings.mithril.mod.Lifecycle[A, S] */] = (typings.mithril.mod._ComponentTypes[A, S]) | typings.mithril.mod.FactoryComponent[A]
   /**
-  	 * Components are a mechanism to encapsulate parts of a view to make code easier to organize and/or reuse.
-  	 * Any function that returns an object with a view method can be used as a Mithril component.
-  	 * Components can be consumed via the m() utility.
-  	 */
+    * Components are a mechanism to encapsulate parts of a view to make code easier to organize and/or reuse.
+    * Any function that returns an object with a view method can be used as a Mithril component.
+    * Components can be consumed via the m() utility.
+    */
   type FactoryComponent[A] = js.Function1[
     /* vnode */ typings.mithril.mod.Vnode[A, js.Object], 
     typings.mithril.mod.Component[A, js.Object]

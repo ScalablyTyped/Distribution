@@ -17,29 +17,29 @@ import scala.scalajs.js.annotation._
 object updateProperty extends js.Object {
   def apply(
     node: PropertyDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.UndefOr[scala.Nothing],
+    decorators: js.UndefOr[js.Array[Decorator]],
+    modifiers: js.UndefOr[js.Array[Modifier]],
     name: String
   ): PropertyDeclaration = js.native
   def apply(
     node: PropertyDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.UndefOr[scala.Nothing],
+    decorators: js.UndefOr[js.Array[Decorator]],
+    modifiers: js.UndefOr[js.Array[Modifier]],
     name: String,
     questionOrExclamationToken: ExclamationToken | QuestionToken
   ): PropertyDeclaration = js.native
   def apply(
     node: PropertyDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.UndefOr[scala.Nothing],
+    decorators: js.UndefOr[js.Array[Decorator]],
+    modifiers: js.UndefOr[js.Array[Modifier]],
     name: String,
     questionOrExclamationToken: ExclamationToken | QuestionToken,
     `type`: TypeNode
   ): PropertyDeclaration = js.native
   def apply(
     node: PropertyDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.UndefOr[scala.Nothing],
+    decorators: js.UndefOr[js.Array[Decorator]],
+    modifiers: js.UndefOr[js.Array[Modifier]],
     name: String,
     questionOrExclamationToken: ExclamationToken | QuestionToken,
     `type`: TypeNode,
@@ -47,209 +47,29 @@ object updateProperty extends js.Object {
   ): PropertyDeclaration = js.native
   def apply(
     node: PropertyDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.UndefOr[scala.Nothing],
+    decorators: js.UndefOr[js.Array[Decorator]],
+    modifiers: js.UndefOr[js.Array[Modifier]],
     name: PropertyName
   ): PropertyDeclaration = js.native
   def apply(
     node: PropertyDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.UndefOr[scala.Nothing],
+    decorators: js.UndefOr[js.Array[Decorator]],
+    modifiers: js.UndefOr[js.Array[Modifier]],
     name: PropertyName,
     questionOrExclamationToken: ExclamationToken | QuestionToken
   ): PropertyDeclaration = js.native
   def apply(
     node: PropertyDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.UndefOr[scala.Nothing],
+    decorators: js.UndefOr[js.Array[Decorator]],
+    modifiers: js.UndefOr[js.Array[Modifier]],
     name: PropertyName,
     questionOrExclamationToken: ExclamationToken | QuestionToken,
     `type`: TypeNode
   ): PropertyDeclaration = js.native
   def apply(
     node: PropertyDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: PropertyName,
-    questionOrExclamationToken: ExclamationToken | QuestionToken,
-    `type`: TypeNode,
-    initializer: Expression
-  ): PropertyDeclaration = js.native
-  def apply(
-    node: PropertyDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[Modifier],
-    name: String
-  ): PropertyDeclaration = js.native
-  def apply(
-    node: PropertyDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[Modifier],
-    name: String,
-    questionOrExclamationToken: ExclamationToken | QuestionToken
-  ): PropertyDeclaration = js.native
-  def apply(
-    node: PropertyDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[Modifier],
-    name: String,
-    questionOrExclamationToken: ExclamationToken | QuestionToken,
-    `type`: TypeNode
-  ): PropertyDeclaration = js.native
-  def apply(
-    node: PropertyDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[Modifier],
-    name: String,
-    questionOrExclamationToken: ExclamationToken | QuestionToken,
-    `type`: TypeNode,
-    initializer: Expression
-  ): PropertyDeclaration = js.native
-  def apply(
-    node: PropertyDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[Modifier],
-    name: PropertyName
-  ): PropertyDeclaration = js.native
-  def apply(
-    node: PropertyDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    questionOrExclamationToken: ExclamationToken | QuestionToken
-  ): PropertyDeclaration = js.native
-  def apply(
-    node: PropertyDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    questionOrExclamationToken: ExclamationToken | QuestionToken,
-    `type`: TypeNode
-  ): PropertyDeclaration = js.native
-  def apply(
-    node: PropertyDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    questionOrExclamationToken: ExclamationToken | QuestionToken,
-    `type`: TypeNode,
-    initializer: Expression
-  ): PropertyDeclaration = js.native
-  def apply(
-    node: PropertyDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: String
-  ): PropertyDeclaration = js.native
-  def apply(
-    node: PropertyDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: String,
-    questionOrExclamationToken: ExclamationToken | QuestionToken
-  ): PropertyDeclaration = js.native
-  def apply(
-    node: PropertyDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: String,
-    questionOrExclamationToken: ExclamationToken | QuestionToken,
-    `type`: TypeNode
-  ): PropertyDeclaration = js.native
-  def apply(
-    node: PropertyDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: String,
-    questionOrExclamationToken: ExclamationToken | QuestionToken,
-    `type`: TypeNode,
-    initializer: Expression
-  ): PropertyDeclaration = js.native
-  def apply(
-    node: PropertyDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: PropertyName
-  ): PropertyDeclaration = js.native
-  def apply(
-    node: PropertyDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: PropertyName,
-    questionOrExclamationToken: ExclamationToken | QuestionToken
-  ): PropertyDeclaration = js.native
-  def apply(
-    node: PropertyDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: PropertyName,
-    questionOrExclamationToken: ExclamationToken | QuestionToken,
-    `type`: TypeNode
-  ): PropertyDeclaration = js.native
-  def apply(
-    node: PropertyDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: PropertyName,
-    questionOrExclamationToken: ExclamationToken | QuestionToken,
-    `type`: TypeNode,
-    initializer: Expression
-  ): PropertyDeclaration = js.native
-  def apply(
-    node: PropertyDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: String
-  ): PropertyDeclaration = js.native
-  def apply(
-    node: PropertyDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: String,
-    questionOrExclamationToken: ExclamationToken | QuestionToken
-  ): PropertyDeclaration = js.native
-  def apply(
-    node: PropertyDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: String,
-    questionOrExclamationToken: ExclamationToken | QuestionToken,
-    `type`: TypeNode
-  ): PropertyDeclaration = js.native
-  def apply(
-    node: PropertyDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: String,
-    questionOrExclamationToken: ExclamationToken | QuestionToken,
-    `type`: TypeNode,
-    initializer: Expression
-  ): PropertyDeclaration = js.native
-  def apply(
-    node: PropertyDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: PropertyName
-  ): PropertyDeclaration = js.native
-  def apply(
-    node: PropertyDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    questionOrExclamationToken: ExclamationToken | QuestionToken
-  ): PropertyDeclaration = js.native
-  def apply(
-    node: PropertyDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    questionOrExclamationToken: ExclamationToken | QuestionToken,
-    `type`: TypeNode
-  ): PropertyDeclaration = js.native
-  def apply(
-    node: PropertyDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    decorators: js.UndefOr[js.Array[Decorator]],
+    modifiers: js.UndefOr[js.Array[Modifier]],
     name: PropertyName,
     questionOrExclamationToken: ExclamationToken | QuestionToken,
     `type`: TypeNode,

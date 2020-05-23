@@ -24,11 +24,11 @@ object DeleteRepositoryRequest {
   @scala.inline
   def apply(
     repositoryName: RepositoryName,
-    force: js.UndefOr[Boolean] = js.undefined,
+    force: js.UndefOr[ForceFlag] = js.undefined,
     registryId: RegistryId = null
   ): DeleteRepositoryRequest = {
     val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
     if (registryId != null) __obj.updateDynamic("registryId")(registryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRepositoryRequest]
   }

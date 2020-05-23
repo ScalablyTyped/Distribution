@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.CustomXMLPart")
 @js.native
-class CustomXMLPart protected () extends js.Object {
+trait CustomXMLPart extends js.Object {
   val Application: js.Any = js.native
   val BuiltIn: Boolean = js.native
   val Creator: Double = js.native

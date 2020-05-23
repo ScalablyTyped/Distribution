@@ -32,11 +32,17 @@ trait IonRadio extends js.Object {
 
 object IonRadio {
   @scala.inline
-  def apply(disabled: Boolean, name: String, color: Color = null, mode: ios | md = null, value: js.Any = null): IonRadio = {
+  def apply(
+    disabled: Boolean,
+    name: String,
+    color: Color = null,
+    mode: ios | md = null,
+    value: js.UndefOr[Null | js.Any] = js.undefined
+  ): IonRadio = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonRadio]
   }
 }

@@ -42,10 +42,10 @@ object AuthorizationRequest {
     ticket: String = null
   ): AuthorizationRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(incrementalAuthorization)) __obj.updateDynamic("incrementalAuthorization")(incrementalAuthorization.asInstanceOf[js.Any])
+    if (!js.isUndefined(incrementalAuthorization)) __obj.updateDynamic("incrementalAuthorization")(incrementalAuthorization.get.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
-    if (!js.isUndefined(submitRequest)) __obj.updateDynamic("submitRequest")(submitRequest.asInstanceOf[js.Any])
+    if (!js.isUndefined(submitRequest)) __obj.updateDynamic("submitRequest")(submitRequest.get.asInstanceOf[js.Any])
     if (ticket != null) __obj.updateDynamic("ticket")(ticket.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizationRequest]
   }

@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.tabBarItemMod
 
-import typings.antDesignReactNative.Anon0
+import typings.antDesignReactNative.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends TabBarItem
 @JSImport("@ant-design/react-native/lib/tab-bar/TabBarItem", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: Anon0 = js.native
+  var defaultProps: `0` = js.native
 }
 

@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 package object AngularFormly {
   /**
-  	 * see http://docs.angular-formly.com/docs/formly-expressions#expressionproperties-validators--messages
-  	 */
+    * see http://docs.angular-formly.com/docs/formly-expressions#expressionproperties-validators--messages
+    */
   type IExpressionFunction = js.Function3[
     /* $viewValue */ js.Any, 
     /* $modelValue */ js.Any, 

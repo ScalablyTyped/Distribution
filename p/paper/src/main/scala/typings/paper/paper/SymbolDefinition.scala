@@ -11,17 +11,8 @@ import scala.scalajs.js.annotation._
   * internal properties such as segment lists and gradient positions don't need
   * to be updated with every transformation.
   */
-@JSGlobal("paper.SymbolDefinition")
 @js.native
-class SymbolDefinition protected () extends js.Object {
-  /** 
-    * Creates a Symbol definition.
-    * 
-    * @param item - the source item which is removed from the scene graph
-    *     and becomes the symbol's definition.
-    */
-  def this(item: Item) = this()
-  def this(item: Item, dontCenter: Boolean) = this()
+trait SymbolDefinition extends js.Object {
   /** 
     * The item used as the symbol's definition.
     */

@@ -1,13 +1,13 @@
 package typings.reactRouterNavigationCore.mod
 
-import typings.reactRouterNavigationCore.AnonTestID
+import typings.reactRouterNavigationCore.anon.TestID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TabsRendererProps extends js.Object {
   var loadedTabs: js.Array[String]
-  var navigationState: NavigationState[AnonTestID]
+  var navigationState: NavigationState[TestID]
   var tabs: js.Array[Tab]
   def onIndexChange(index: Double): Unit
 }
@@ -16,7 +16,7 @@ object TabsRendererProps {
   @scala.inline
   def apply(
     loadedTabs: js.Array[String],
-    navigationState: NavigationState[AnonTestID],
+    navigationState: NavigationState[TestID],
     onIndexChange: Double => Unit,
     tabs: js.Array[Tab]
   ): TabsRendererProps = {

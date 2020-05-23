@@ -12,38 +12,38 @@ sealed trait UserStatuses extends js.Object
 @js.native
 object UserStatuses extends js.Object {
   /**
-  		*	User is away
-  		*/
+    *    User is away
+    */
   @js.native
   sealed trait Away extends UserStatuses
   
   /**
-  		*	User is available for chat
-  		*/
+    *    User is available for chat
+    */
   @js.native
   sealed trait Chat extends UserStatuses
   
   /**
-  		*	User is in DND state (Do Not Disturbed)
-  		*/
+    *    User is in DND state (Do Not Disturbed)
+    */
   @js.native
   sealed trait DND extends UserStatuses
   
   /**
-  		*	User is offline
-  		*/
+    *    User is offline
+    */
   @js.native
   sealed trait Offline extends UserStatuses
   
   /**
-  		*	User is online
-  		*/
+    *    User is online
+    */
   @js.native
   sealed trait Online extends UserStatuses
   
   /**
-  		*	User is in XA state (eXtended Away)
-  		*/
+    *    User is in XA state (eXtended Away)
+    */
   @js.native
   sealed trait XA extends UserStatuses
   

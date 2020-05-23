@@ -47,7 +47,7 @@ object ConstructorOptions {
   def apply(
     delimiter: String = null,
     ignoreErrors: js.UndefOr[Boolean] = js.undefined,
-    maxListeners: Int | Double = null,
+    maxListeners: js.UndefOr[Double] = js.undefined,
     newListener: js.UndefOr[Boolean] = js.undefined,
     removeListener: js.UndefOr[Boolean] = js.undefined,
     verboseMemoryLeak: js.UndefOr[Boolean] = js.undefined,
@@ -55,12 +55,12 @@ object ConstructorOptions {
   ): ConstructorOptions = {
     val __obj = js.Dynamic.literal()
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors.asInstanceOf[js.Any])
-    if (maxListeners != null) __obj.updateDynamic("maxListeners")(maxListeners.asInstanceOf[js.Any])
-    if (!js.isUndefined(newListener)) __obj.updateDynamic("newListener")(newListener.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeListener)) __obj.updateDynamic("removeListener")(removeListener.asInstanceOf[js.Any])
-    if (!js.isUndefined(verboseMemoryLeak)) __obj.updateDynamic("verboseMemoryLeak")(verboseMemoryLeak.asInstanceOf[js.Any])
-    if (!js.isUndefined(wildcard)) __obj.updateDynamic("wildcard")(wildcard.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxListeners)) __obj.updateDynamic("maxListeners")(maxListeners.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(newListener)) __obj.updateDynamic("newListener")(newListener.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeListener)) __obj.updateDynamic("removeListener")(removeListener.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verboseMemoryLeak)) __obj.updateDynamic("verboseMemoryLeak")(verboseMemoryLeak.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wildcard)) __obj.updateDynamic("wildcard")(wildcard.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstructorOptions]
   }
 }

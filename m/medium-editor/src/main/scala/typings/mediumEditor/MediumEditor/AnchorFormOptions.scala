@@ -26,9 +26,9 @@ object AnchorFormOptions {
     val __obj = js.Dynamic.literal()
     if (customClassOption != null) __obj.updateDynamic("customClassOption")(customClassOption.asInstanceOf[js.Any])
     if (customClassOptionText != null) __obj.updateDynamic("customClassOptionText")(customClassOptionText.asInstanceOf[js.Any])
-    if (!js.isUndefined(linkValidation)) __obj.updateDynamic("linkValidation")(linkValidation.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkValidation)) __obj.updateDynamic("linkValidation")(linkValidation.get.asInstanceOf[js.Any])
     if (placeholderText != null) __obj.updateDynamic("placeholderText")(placeholderText.asInstanceOf[js.Any])
-    if (!js.isUndefined(targetCheckbox)) __obj.updateDynamic("targetCheckbox")(targetCheckbox.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetCheckbox)) __obj.updateDynamic("targetCheckbox")(targetCheckbox.get.asInstanceOf[js.Any])
     if (targetCheckboxText != null) __obj.updateDynamic("targetCheckboxText")(targetCheckboxText.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnchorFormOptions]
   }

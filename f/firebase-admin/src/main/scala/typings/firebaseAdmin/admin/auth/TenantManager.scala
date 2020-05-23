@@ -22,7 +22,7 @@ trait TenantManager extends js.Object {
     *
     * @return The `TenantAwareAuth` instance corresponding to this tenant identifier.
     */
-  def authForTenant(tenantId: String): TenantAwareAuth = js.native
+  def authForTenant(tenantId: String): typings.firebaseAdmin.authMod.admin.auth.TenantAwareAuth = js.native
   /**
     * Creates a new tenant.
     * When creating new tenants, tenants that use separate billing and quota will require their
@@ -33,7 +33,7 @@ trait TenantManager extends js.Object {
     * @return A promise fulfilled with the tenant configuration corresponding to the newly
     *   created tenant.
     */
-  def createTenant(tenantOptions: CreateTenantRequest): js.Promise[Tenant] = js.native
+  def createTenant(tenantOptions: typings.firebaseAdmin.authMod.admin.auth.CreateTenantRequest): js.Promise[typings.firebaseAdmin.authMod.admin.auth.Tenant] = js.native
   /**
     * Deletes an existing tenant.
     *
@@ -49,7 +49,7 @@ trait TenantManager extends js.Object {
     *
     * @return A promise fulfilled with the tenant configuration to the provided `tenantId`.
     */
-  def getTenant(tenantId: String): js.Promise[Tenant] = js.native
+  def getTenant(tenantId: String): js.Promise[typings.firebaseAdmin.authMod.admin.auth.Tenant] = js.native
   /**
     * Retrieves a list of tenants (single batch only) with a size of `maxResults`
     * starting from the offset as specified by `pageToken`. This is used to
@@ -63,9 +63,9 @@ trait TenantManager extends js.Object {
     * @return A promise that resolves with
     *   a batch of downloaded tenants and the next page token.
     */
-  def listTenants(): js.Promise[ListTenantsResult] = js.native
-  def listTenants(maxResults: Double): js.Promise[ListTenantsResult] = js.native
-  def listTenants(maxResults: Double, pageToken: String): js.Promise[ListTenantsResult] = js.native
+  def listTenants(): js.Promise[typings.firebaseAdmin.authMod.admin.auth.ListTenantsResult] = js.native
+  def listTenants(maxResults: Double): js.Promise[typings.firebaseAdmin.authMod.admin.auth.ListTenantsResult] = js.native
+  def listTenants(maxResults: Double, pageToken: String): js.Promise[typings.firebaseAdmin.authMod.admin.auth.ListTenantsResult] = js.native
   /**
     * Updates an existing tenant configuration.
     *
@@ -74,6 +74,6 @@ trait TenantManager extends js.Object {
     *
     * @return A promise fulfilled with the update tenant data.
     */
-  def updateTenant(tenantId: String, tenantOptions: UpdateTenantRequest): js.Promise[Tenant] = js.native
+  def updateTenant(tenantId: String, tenantOptions: typings.firebaseAdmin.authMod.admin.auth.UpdateTenantRequest): js.Promise[typings.firebaseAdmin.authMod.admin.auth.Tenant] = js.native
 }
 

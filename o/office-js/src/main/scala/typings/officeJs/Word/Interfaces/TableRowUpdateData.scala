@@ -66,7 +66,7 @@ object TableRowUpdateData {
   def apply(
     font: FontUpdateData = null,
     horizontalAlignment: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified = null,
-    preferredHeight: Int | Double = null,
+    preferredHeight: js.UndefOr[Double] = js.undefined,
     shadingColor: String = null,
     values: js.Array[js.Array[String]] = null,
     verticalAlignment: VerticalAlignment | Mixed | Top | Center | Bottom = null
@@ -74,7 +74,7 @@ object TableRowUpdateData {
     val __obj = js.Dynamic.literal()
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (preferredHeight != null) __obj.updateDynamic("preferredHeight")(preferredHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferredHeight)) __obj.updateDynamic("preferredHeight")(preferredHeight.get.asInstanceOf[js.Any])
     if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])

@@ -14,9 +14,15 @@ trait CustomAuthenticationResponse extends js.Object {
 
 object CustomAuthenticationResponse {
   @scala.inline
-  def apply(command: String, response: String, status: Double, text: String, code: Int | Double = null): CustomAuthenticationResponse = {
+  def apply(
+    command: String,
+    response: String,
+    status: Double,
+    text: String,
+    code: js.UndefOr[Double] = js.undefined
+  ): CustomAuthenticationResponse = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (!js.isUndefined(code)) __obj.updateDynamic("code")(code.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomAuthenticationResponse]
   }
 }

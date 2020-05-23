@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 
 trait IXml extends IReader {
   /** [Method] Normalizes the data object
-  		* @param data Object The raw data object
-  		* @returns Object The documentElement property of the data object if present, or the same object if not.
-  		*/
+    * @param data Object The raw data object
+    * @returns Object The documentElement property of the data object if present, or the same object if not.
+    */
   var getData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Config Option] (String) */
   var namespace: js.UndefOr[String] = js.undefined
@@ -102,10 +102,10 @@ object IXml {
     if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
     if (hasListeners != null) __obj.updateDynamic("hasListeners")(hasListeners.asInstanceOf[js.Any])
     if (idProperty != null) __obj.updateDynamic("idProperty")(idProperty.asInstanceOf[js.Any])
-    if (!js.isUndefined(implicitIncludes)) __obj.updateDynamic("implicitIncludes")(implicitIncludes.asInstanceOf[js.Any])
+    if (!js.isUndefined(implicitIncludes)) __obj.updateDynamic("implicitIncludes")(implicitIncludes.get.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (messageProperty != null) __obj.updateDynamic("messageProperty")(messageProperty.asInstanceOf[js.Any])
     if (metaData != null) __obj.updateDynamic("metaData")(metaData.asInstanceOf[js.Any])
@@ -117,7 +117,7 @@ object IXml {
     if (rawData != null) __obj.updateDynamic("rawData")(rawData.asInstanceOf[js.Any])
     if (read != null) __obj.updateDynamic("read")(js.Any.fromFunction1(read))
     if (readRecords != null) __obj.updateDynamic("readRecords")(js.Any.fromFunction1(readRecords))
-    if (!js.isUndefined(readRecordsOnFailure)) __obj.updateDynamic("readRecordsOnFailure")(readRecordsOnFailure.asInstanceOf[js.Any])
+    if (!js.isUndefined(readRecordsOnFailure)) __obj.updateDynamic("readRecordsOnFailure")(readRecordsOnFailure.get.asInstanceOf[js.Any])
     if (record != null) __obj.updateDynamic("record")(record.asInstanceOf[js.Any])
     if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction3(relayEvents))
     if (removeListener != null) __obj.updateDynamic("removeListener")(js.Any.fromFunction3(removeListener))
@@ -127,7 +127,7 @@ object IXml {
     if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction0(resumeEvents))
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (successProperty != null) __obj.updateDynamic("successProperty")(successProperty.asInstanceOf[js.Any])
     if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))

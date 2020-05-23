@@ -11,21 +11,15 @@ sealed trait CheckboxVisibility extends js.Object
 @JSImport("office-ui-fabric-react/lib/components/DetailsList/DetailsList.types", "CheckboxVisibility")
 @js.native
 object CheckboxVisibility extends js.Object {
-  /**
-    * Visible always.
-    */
+  /** Visible always. */
   @js.native
   sealed trait always extends CheckboxVisibility
   
-  /**
-    * Hide checkboxes.
-    */
+  /** Hide checkboxes. */
   @js.native
   sealed trait hidden extends CheckboxVisibility
   
-  /**
-    * Visible on hover.
-    */
+  /** Visible on hover. */
   @js.native
   sealed trait onHover extends CheckboxVisibility
   

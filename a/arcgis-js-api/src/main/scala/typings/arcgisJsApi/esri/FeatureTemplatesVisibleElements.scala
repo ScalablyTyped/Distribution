@@ -24,7 +24,7 @@ object FeatureTemplatesVisibleElements {
     filter: js.UndefOr[Boolean] = js.undefined
   ): FeatureTemplatesVisibleElements = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureTemplatesVisibleElements]
   }
 }

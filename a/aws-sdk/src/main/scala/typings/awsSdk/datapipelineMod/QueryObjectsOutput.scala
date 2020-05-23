@@ -24,7 +24,7 @@ object QueryObjectsOutput {
   @scala.inline
   def apply(hasMoreResults: js.UndefOr[Boolean] = js.undefined, ids: idList = null, marker: String = null): QueryObjectsOutput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasMoreResults)) __obj.updateDynamic("hasMoreResults")(hasMoreResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasMoreResults)) __obj.updateDynamic("hasMoreResults")(hasMoreResults.get.asInstanceOf[js.Any])
     if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryObjectsOutput]

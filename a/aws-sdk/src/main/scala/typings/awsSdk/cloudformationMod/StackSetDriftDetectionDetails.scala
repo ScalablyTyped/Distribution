@@ -45,22 +45,22 @@ object StackSetDriftDetectionDetails {
   def apply(
     DriftDetectionStatus: StackSetDriftDetectionStatus = null,
     DriftStatus: StackSetDriftStatus = null,
-    DriftedStackInstancesCount: Int | Double = null,
-    FailedStackInstancesCount: Int | Double = null,
-    InProgressStackInstancesCount: Int | Double = null,
-    InSyncStackInstancesCount: Int | Double = null,
+    DriftedStackInstancesCount: js.UndefOr[DriftedStackInstancesCount] = js.undefined,
+    FailedStackInstancesCount: js.UndefOr[FailedStackInstancesCount] = js.undefined,
+    InProgressStackInstancesCount: js.UndefOr[InProgressStackInstancesCount] = js.undefined,
+    InSyncStackInstancesCount: js.UndefOr[InSyncStackInstancesCount] = js.undefined,
     LastDriftCheckTimestamp: Timestamp = null,
-    TotalStackInstancesCount: Int | Double = null
+    TotalStackInstancesCount: js.UndefOr[TotalStackInstancesCount] = js.undefined
   ): StackSetDriftDetectionDetails = {
     val __obj = js.Dynamic.literal()
     if (DriftDetectionStatus != null) __obj.updateDynamic("DriftDetectionStatus")(DriftDetectionStatus.asInstanceOf[js.Any])
     if (DriftStatus != null) __obj.updateDynamic("DriftStatus")(DriftStatus.asInstanceOf[js.Any])
-    if (DriftedStackInstancesCount != null) __obj.updateDynamic("DriftedStackInstancesCount")(DriftedStackInstancesCount.asInstanceOf[js.Any])
-    if (FailedStackInstancesCount != null) __obj.updateDynamic("FailedStackInstancesCount")(FailedStackInstancesCount.asInstanceOf[js.Any])
-    if (InProgressStackInstancesCount != null) __obj.updateDynamic("InProgressStackInstancesCount")(InProgressStackInstancesCount.asInstanceOf[js.Any])
-    if (InSyncStackInstancesCount != null) __obj.updateDynamic("InSyncStackInstancesCount")(InSyncStackInstancesCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(DriftedStackInstancesCount)) __obj.updateDynamic("DriftedStackInstancesCount")(DriftedStackInstancesCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(FailedStackInstancesCount)) __obj.updateDynamic("FailedStackInstancesCount")(FailedStackInstancesCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(InProgressStackInstancesCount)) __obj.updateDynamic("InProgressStackInstancesCount")(InProgressStackInstancesCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(InSyncStackInstancesCount)) __obj.updateDynamic("InSyncStackInstancesCount")(InSyncStackInstancesCount.get.asInstanceOf[js.Any])
     if (LastDriftCheckTimestamp != null) __obj.updateDynamic("LastDriftCheckTimestamp")(LastDriftCheckTimestamp.asInstanceOf[js.Any])
-    if (TotalStackInstancesCount != null) __obj.updateDynamic("TotalStackInstancesCount")(TotalStackInstancesCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalStackInstancesCount)) __obj.updateDynamic("TotalStackInstancesCount")(TotalStackInstancesCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackSetDriftDetectionDetails]
   }
 }

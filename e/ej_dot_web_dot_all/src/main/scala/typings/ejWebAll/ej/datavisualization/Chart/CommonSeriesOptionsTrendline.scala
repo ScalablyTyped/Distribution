@@ -63,36 +63,36 @@ trait CommonSeriesOptionsTrendline extends js.Object {
 object CommonSeriesOptionsTrendline {
   @scala.inline
   def apply(
-    backwardForecast: Int | Double = null,
+    backwardForecast: js.UndefOr[Double] = js.undefined,
     dashArray: String = null,
     fill: String = null,
-    forwardForecast: Int | Double = null,
-    intercept: Int | Double = null,
+    forwardForecast: js.UndefOr[Double] = js.undefined,
+    intercept: js.UndefOr[Double] = js.undefined,
     name: String = null,
-    opacity: Int | Double = null,
-    period: Int | Double = null,
-    polynomialOrder: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
+    period: js.UndefOr[Double] = js.undefined,
+    polynomialOrder: js.UndefOr[Double] = js.undefined,
     tooltip: CommonSeriesOptionsTrendlinesTooltip = null,
     `type`: TrendlinesType | String = null,
     visibility: js.UndefOr[Boolean] = js.undefined,
     visibleOnLegend: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): CommonSeriesOptionsTrendline = {
     val __obj = js.Dynamic.literal()
-    if (backwardForecast != null) __obj.updateDynamic("backwardForecast")(backwardForecast.asInstanceOf[js.Any])
+    if (!js.isUndefined(backwardForecast)) __obj.updateDynamic("backwardForecast")(backwardForecast.get.asInstanceOf[js.Any])
     if (dashArray != null) __obj.updateDynamic("dashArray")(dashArray.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (forwardForecast != null) __obj.updateDynamic("forwardForecast")(forwardForecast.asInstanceOf[js.Any])
-    if (intercept != null) __obj.updateDynamic("intercept")(intercept.asInstanceOf[js.Any])
+    if (!js.isUndefined(forwardForecast)) __obj.updateDynamic("forwardForecast")(forwardForecast.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(intercept)) __obj.updateDynamic("intercept")(intercept.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (polynomialOrder != null) __obj.updateDynamic("polynomialOrder")(polynomialOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(period)) __obj.updateDynamic("period")(period.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(polynomialOrder)) __obj.updateDynamic("polynomialOrder")(polynomialOrder.get.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(visibility)) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
+    if (!js.isUndefined(visibility)) __obj.updateDynamic("visibility")(visibility.get.asInstanceOf[js.Any])
     if (visibleOnLegend != null) __obj.updateDynamic("visibleOnLegend")(visibleOnLegend.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonSeriesOptionsTrendline]
   }
 }

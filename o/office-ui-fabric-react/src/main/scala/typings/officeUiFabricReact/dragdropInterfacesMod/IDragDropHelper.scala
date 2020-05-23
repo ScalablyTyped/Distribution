@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.dragdropInterfacesMod
 
-import typings.officeUiFabricReact.AnonDispose
+import typings.officeUiFabricReact.anon.Dispose
 import typings.officeUiFabricReact.utilitiesMod.EventGroup
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -15,7 +15,7 @@ trait IDragDropHelper extends js.Object {
   /**
     * Subscribe to events on a DOM node with drag and drop configuration.
     */
-  def subscribe(root: HTMLElement, events: EventGroup, options: IDragDropOptions): AnonDispose
+  def subscribe(root: HTMLElement, events: EventGroup, options: IDragDropOptions): Dispose
   /**
     * Unsubscribe to events registered on a DOM node with key.
     */
@@ -26,7 +26,7 @@ object IDragDropHelper {
   @scala.inline
   def apply(
     dispose: () => Unit,
-    subscribe: (HTMLElement, EventGroup, IDragDropOptions) => AnonDispose,
+    subscribe: (HTMLElement, EventGroup, IDragDropOptions) => Dispose,
     unsubscribe: (HTMLElement, String) => Unit
   ): IDragDropHelper = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), subscribe = js.Any.fromFunction3(subscribe), unsubscribe = js.Any.fromFunction2(unsubscribe))

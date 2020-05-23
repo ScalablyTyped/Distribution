@@ -1,5 +1,7 @@
 package typings.expoLinearGradient
 
+import typings.expoLinearGradient.anon.OnLayout
+import typings.expoLinearGradient.anon.TypeofView
 import typings.react.mod.ComponentProps
 import typings.react.mod.FunctionComponent
 import scala.scalajs.js
@@ -11,6 +13,6 @@ import scala.scalajs.js.annotation._
 object nativeLinearGradientWebMod extends js.Object {
   val default: FunctionComponent[Props] = js.native
   type Point = js.Tuple2[Double, Double]
-  type Props = AnonOnLayout with ComponentProps[TypeofView]
+  type Props = OnLayout with ComponentProps[TypeofView]
 }
 

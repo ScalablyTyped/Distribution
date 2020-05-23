@@ -1,6 +1,6 @@
 package typings.griddleReact.mod
 
-import typings.griddleReact.AnonFilterPlaceholder
+import typings.griddleReact.anon.FilterPlaceholder
 import typings.redux.mod.AnyAction
 import typings.redux.mod.Dispatch
 import typings.redux.mod.Middleware
@@ -38,13 +38,13 @@ object GriddleProps {
     sortProperties: js.Array[GriddleSortKey] = null,
     storeKey: String = null,
     styleConfig: GriddleStyleConfig = null,
-    textProperties: AnonFilterPlaceholder = null
+    textProperties: FilterPlaceholder = null
   ): GriddleProps[T] = {
     val __obj = js.Dynamic.literal()
     if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
     if (core != null) __obj.updateDynamic("core")(core.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSettings)) __obj.updateDynamic("enableSettings")(enableSettings.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSettings)) __obj.updateDynamic("enableSettings")(enableSettings.get.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])

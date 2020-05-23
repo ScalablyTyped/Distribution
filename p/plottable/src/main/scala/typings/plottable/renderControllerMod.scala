@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("plottable/build/src/core/renderController", JSImport.Namespace)
 @js.native
 object renderControllerMod extends js.Object {
-  /* Rewritten from type alias, can be one of: 
+  /* keyof plottable.anon.AnimationFrame */ /* Rewritten from type alias, can be one of: 
     - typings.plottable.plottableStrings.immediate
     - typings.plottable.plottableStrings.animationFrame
     - typings.plottable.plottableStrings.timeout

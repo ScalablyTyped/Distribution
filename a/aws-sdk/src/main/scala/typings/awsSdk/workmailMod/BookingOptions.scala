@@ -23,14 +23,14 @@ trait BookingOptions extends js.Object {
 object BookingOptions {
   @scala.inline
   def apply(
-    AutoAcceptRequests: js.UndefOr[scala.Boolean] = js.undefined,
-    AutoDeclineConflictingRequests: js.UndefOr[scala.Boolean] = js.undefined,
-    AutoDeclineRecurringRequests: js.UndefOr[scala.Boolean] = js.undefined
+    AutoAcceptRequests: js.UndefOr[Boolean] = js.undefined,
+    AutoDeclineConflictingRequests: js.UndefOr[Boolean] = js.undefined,
+    AutoDeclineRecurringRequests: js.UndefOr[Boolean] = js.undefined
   ): BookingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AutoAcceptRequests)) __obj.updateDynamic("AutoAcceptRequests")(AutoAcceptRequests.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoDeclineConflictingRequests)) __obj.updateDynamic("AutoDeclineConflictingRequests")(AutoDeclineConflictingRequests.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoDeclineRecurringRequests)) __obj.updateDynamic("AutoDeclineRecurringRequests")(AutoDeclineRecurringRequests.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoAcceptRequests)) __obj.updateDynamic("AutoAcceptRequests")(AutoAcceptRequests.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoDeclineConflictingRequests)) __obj.updateDynamic("AutoDeclineConflictingRequests")(AutoDeclineConflictingRequests.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoDeclineRecurringRequests)) __obj.updateDynamic("AutoDeclineRecurringRequests")(AutoDeclineRecurringRequests.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BookingOptions]
   }
 }

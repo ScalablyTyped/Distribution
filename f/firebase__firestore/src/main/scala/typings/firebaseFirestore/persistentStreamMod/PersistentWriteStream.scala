@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/remote/persistent_stream", "PersistentWriteStream")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/remote/persistent_stream", "PersistentWriteStream")
 @js.native
 class PersistentWriteStream protected ()
   extends PersistentStream[
@@ -40,7 +40,7 @@ class PersistentWriteStream protected ()
     * Tracks whether or not a handshake has been successfully exchanged and
     * the stream is ready to accept mutations.
     */
-  def handshakeComplete(): Boolean = js.native
+  def handshakeComplete: Boolean = js.native
   /**
     * Sends an initial streamToken to the server, performing the handshake
     * required to make the StreamingWrite RPC work. Subsequent

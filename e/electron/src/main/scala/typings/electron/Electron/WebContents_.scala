@@ -73,6 +73,7 @@ import typings.electron.electronStrings.offscreen
 import typings.electron.electronStrings.other
 import typings.electron.electronStrings.out
 import typings.electron.electronStrings.paint
+import typings.electron.electronStrings.remote
 import typings.electron.electronStrings.responsive
 import typings.electron.electronStrings.unresponsive
 import typings.electron.electronStrings.webview
@@ -85,12 +86,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Electron.WebContents")
 @js.native
-class WebContents_ () extends EventEmitter {
+trait WebContents_ extends EventEmitter {
   var audioMuted: Boolean = js.native
   val debugger: Debugger = js.native
-  val devToolsWebContents: WebContents_ = js.native
+  val devToolsWebContents: WebContents_ | Null = js.native
   var frameRate: Double = js.native
   val hostWebContents: WebContents_ = js.native
   val id: Double = js.native
@@ -101,7 +101,7 @@ class WebContents_ () extends EventEmitter {
   def addListener(
     event: `new-window`,
     listener: js.Function7[
-      /* event */ Event, 
+      /* event */ NewWindowEvent, 
       /* url */ String, 
       /* frameName */ String, 
       /* disposition */ default | `foreground-tab` | `background-tab` | `new-window` | `save-to-disk` | other, 
@@ -593,7 +593,7 @@ class WebContents_ () extends EventEmitter {
     * the type of the webContent. Can be `backgroundPage`, `window`, `browserView`,
     * `remote`, `webview` or `offscreen`.
     */
-  def getType(): backgroundPage | window | browserView | typings.electron.electronStrings.remote | webview | offscreen = js.native
+  def getType(): backgroundPage | window | browserView | remote | webview | offscreen = js.native
   /**
     * The URL of the current web page.
     */
@@ -773,7 +773,7 @@ class WebContents_ () extends EventEmitter {
   def on(
     event: `new-window`,
     listener: js.Function7[
-      /* event */ Event, 
+      /* event */ NewWindowEvent, 
       /* url */ String, 
       /* frameName */ String, 
       /* disposition */ default | `foreground-tab` | `background-tab` | `new-window` | `save-to-disk` | other, 
@@ -1360,7 +1360,7 @@ class WebContents_ () extends EventEmitter {
   def once(
     event: `new-window`,
     listener: js.Function7[
-      /* event */ Event, 
+      /* event */ NewWindowEvent, 
       /* url */ String, 
       /* frameName */ String, 
       /* disposition */ default | `foreground-tab` | `background-tab` | `new-window` | `save-to-disk` | other, 
@@ -1754,7 +1754,7 @@ class WebContents_ () extends EventEmitter {
   def removeListener(
     event: `new-window`,
     listener: js.Function7[
-      /* event */ Event, 
+      /* event */ NewWindowEvent, 
       /* url */ String, 
       /* frameName */ String, 
       /* disposition */ default | `foreground-tab` | `background-tab` | `new-window` | `save-to-disk` | other, 
@@ -2289,25 +2289,5 @@ class WebContents_ () extends EventEmitter {
     * Executes the editing command `unselect` in web page.
     */
   def unselect(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("Electron.WebContents")
-@js.native
-object WebContents_ extends js.Object {
-  // Docs: http://electronjs.org/docs/api/web-contents
-  /**
-    * A WebContents instance with the given ID.
-    */
-  def fromId(id: Double): WebContents_ = js.native
-  /**
-    * An array of all `WebContents` instances. This will contain web contents for all
-    * windows, webviews, opened devtools, and devtools extension background pages.
-    */
-  def getAllWebContents(): js.Array[WebContents_] = js.native
-  /**
-    * The web contents that is focused in this application, otherwise returns `null`.
-    */
-  def getFocusedWebContents(): WebContents_ = js.native
 }
 

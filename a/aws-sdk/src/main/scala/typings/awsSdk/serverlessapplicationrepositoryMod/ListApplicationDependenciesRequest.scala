@@ -28,12 +28,12 @@ object ListApplicationDependenciesRequest {
   @scala.inline
   def apply(
     ApplicationId: string,
-    MaxItems: Int | Double = null,
+    MaxItems: js.UndefOr[MaxItems] = js.undefined,
     NextToken: string = null,
     SemanticVersion: string = null
   ): ListApplicationDependenciesRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
-    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (SemanticVersion != null) __obj.updateDynamic("SemanticVersion")(SemanticVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListApplicationDependenciesRequest]

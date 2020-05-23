@@ -17,12 +17,12 @@ object EveryRepeatOptions {
   def apply(
     every: Double,
     endDate: Date | String | Double = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     tz: String = null
   ): EveryRepeatOptions = {
     val __obj = js.Dynamic.literal(every = every.asInstanceOf[js.Any])
     if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (tz != null) __obj.updateDynamic("tz")(tz.asInstanceOf[js.Any])
     __obj.asInstanceOf[EveryRepeatOptions]
   }

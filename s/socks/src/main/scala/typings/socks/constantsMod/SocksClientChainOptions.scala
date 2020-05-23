@@ -24,11 +24,11 @@ object SocksClientChainOptions {
     destination: SocksRemoteHost,
     proxies: js.Array[SocksProxy],
     randomizeChain: `false` = null,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): SocksClientChainOptions = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], proxies = proxies.asInstanceOf[js.Any])
     if (randomizeChain != null) __obj.updateDynamic("randomizeChain")(randomizeChain.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocksClientChainOptions]
   }
 }

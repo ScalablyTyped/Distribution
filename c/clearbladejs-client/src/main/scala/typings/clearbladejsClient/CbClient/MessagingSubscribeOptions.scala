@@ -19,14 +19,14 @@ object MessagingSubscribeOptions {
     onFailure: js.Function = null,
     onSuccess: js.Function = null,
     qos: MessagingQOS = null,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): MessagingSubscribeOptions = {
     val __obj = js.Dynamic.literal()
     if (invocationContext != null) __obj.updateDynamic("invocationContext")(invocationContext.asInstanceOf[js.Any])
     if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure.asInstanceOf[js.Any])
     if (onSuccess != null) __obj.updateDynamic("onSuccess")(onSuccess.asInstanceOf[js.Any])
     if (qos != null) __obj.updateDynamic("qos")(qos.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessagingSubscribeOptions]
   }
 }

@@ -12,9 +12,9 @@ trait IConsensusNotifyBlockInvalid extends js.Object {
 
 object IConsensusNotifyBlockInvalid {
   @scala.inline
-  def apply(blockId: Uint8Array = null): IConsensusNotifyBlockInvalid = {
+  def apply(blockId: js.UndefOr[Null | Uint8Array] = js.undefined): IConsensusNotifyBlockInvalid = {
     val __obj = js.Dynamic.literal()
-    if (blockId != null) __obj.updateDynamic("blockId")(blockId.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockId)) __obj.updateDynamic("blockId")(blockId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConsensusNotifyBlockInvalid]
   }
 }

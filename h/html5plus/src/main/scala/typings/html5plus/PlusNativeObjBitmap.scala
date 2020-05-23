@@ -29,7 +29,7 @@ trait PlusNativeObjBitmap extends js.Object {
   /**
     * 静态方法，获取指定标识的Bitmap图片对象
     * 在应用中已创建的图片对象中查找指定标识的Bitmap对象并返回。
-    * 	若存在多个相同标识的Bitmap图片，则返回第一个创建的Bitmap图片。
+    *     若存在多个相同标识的Bitmap图片，则返回第一个创建的Bitmap图片。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -45,7 +45,7 @@ trait PlusNativeObjBitmap extends js.Object {
   /**
     * 加载Bitmap图片
     * 从指定的路径（仅支持本地文件系统）中加载图片，此操作将覆盖之前的图片内容，
-    * 	如果加载图片失败则保留之前的图片内容。
+    *     如果加载图片失败则保留之前的图片内容。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -60,7 +60,7 @@ trait PlusNativeObjBitmap extends js.Object {
   /**
     * 加载Base64编码格式图片到Bitmap对象
     * 从Base64编码格式图片数据中加载图片，此操作将覆盖之前的图片内容，
-    * 	如果加载图片失败则保留之前的图片内容。
+    *     如果加载图片失败则保留之前的图片内容。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -75,7 +75,7 @@ trait PlusNativeObjBitmap extends js.Object {
   /**
     * 回收Bitmap图片内存
     * 释放Bitmap图片占用的内存资源，但不销毁图片对象，依然可以继续使用图片对象。
-    * 	当图片对象再次被使用时会自动从设置的路径（构造函数或load/save方法设置）加载到内存中。
+    *     当图片对象再次被使用时会自动从设置的路径（构造函数或load/save方法设置）加载到内存中。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */

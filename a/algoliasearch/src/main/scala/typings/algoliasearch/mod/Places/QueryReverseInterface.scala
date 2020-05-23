@@ -25,9 +25,9 @@ trait QueryReverseInterface extends js.Object {
 
 object QueryReverseInterface {
   @scala.inline
-  def apply(aroundLatLng: String, hitsPerPage: Int | Double = null): QueryReverseInterface = {
+  def apply(aroundLatLng: String, hitsPerPage: js.UndefOr[Double] = js.undefined): QueryReverseInterface = {
     val __obj = js.Dynamic.literal(aroundLatLng = aroundLatLng.asInstanceOf[js.Any])
-    if (hitsPerPage != null) __obj.updateDynamic("hitsPerPage")(hitsPerPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(hitsPerPage)) __obj.updateDynamic("hitsPerPage")(hitsPerPage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryReverseInterface]
   }
 }

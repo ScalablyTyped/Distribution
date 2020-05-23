@@ -17,73 +17,10 @@ import scala.scalajs.js.annotation._
 object updateArrowFunction extends js.Object {
   def apply(
     node: ArrowFunction,
-    modifiers: js.UndefOr[scala.Nothing],
-    typeParameters: js.UndefOr[scala.Nothing],
+    modifiers: js.UndefOr[js.Array[Modifier]],
+    typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
     parameters: js.Array[ParameterDeclaration],
-    `type`: js.UndefOr[scala.Nothing],
-    equalsGreaterThanToken: Token[EqualsGreaterThanToken],
-    body: ConciseBody
-  ): ArrowFunction = js.native
-  def apply(
-    node: ArrowFunction,
-    modifiers: js.UndefOr[scala.Nothing],
-    typeParameters: js.UndefOr[scala.Nothing],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode,
-    equalsGreaterThanToken: Token[EqualsGreaterThanToken],
-    body: ConciseBody
-  ): ArrowFunction = js.native
-  def apply(
-    node: ArrowFunction,
-    modifiers: js.UndefOr[scala.Nothing],
-    typeParameters: js.Array[TypeParameterDeclaration],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: js.UndefOr[scala.Nothing],
-    equalsGreaterThanToken: Token[EqualsGreaterThanToken],
-    body: ConciseBody
-  ): ArrowFunction = js.native
-  def apply(
-    node: ArrowFunction,
-    modifiers: js.UndefOr[scala.Nothing],
-    typeParameters: js.Array[TypeParameterDeclaration],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode,
-    equalsGreaterThanToken: Token[EqualsGreaterThanToken],
-    body: ConciseBody
-  ): ArrowFunction = js.native
-  def apply(
-    node: ArrowFunction,
-    modifiers: js.Array[Modifier],
-    typeParameters: js.UndefOr[scala.Nothing],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: js.UndefOr[scala.Nothing],
-    equalsGreaterThanToken: Token[EqualsGreaterThanToken],
-    body: ConciseBody
-  ): ArrowFunction = js.native
-  def apply(
-    node: ArrowFunction,
-    modifiers: js.Array[Modifier],
-    typeParameters: js.UndefOr[scala.Nothing],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode,
-    equalsGreaterThanToken: Token[EqualsGreaterThanToken],
-    body: ConciseBody
-  ): ArrowFunction = js.native
-  def apply(
-    node: ArrowFunction,
-    modifiers: js.Array[Modifier],
-    typeParameters: js.Array[TypeParameterDeclaration],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: js.UndefOr[scala.Nothing],
-    equalsGreaterThanToken: Token[EqualsGreaterThanToken],
-    body: ConciseBody
-  ): ArrowFunction = js.native
-  def apply(
-    node: ArrowFunction,
-    modifiers: js.Array[Modifier],
-    typeParameters: js.Array[TypeParameterDeclaration],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode,
+    `type`: js.UndefOr[TypeNode],
     equalsGreaterThanToken: Token[EqualsGreaterThanToken],
     body: ConciseBody
   ): ArrowFunction = js.native

@@ -14,17 +14,17 @@ trait UseExpandedOptions[D /* <: js.Object */] extends js.Object {
 
 object UseExpandedOptions {
   @scala.inline
-  def apply[D /* <: js.Object */](
+  def apply[D](
     autoResetExpanded: js.UndefOr[Boolean] = js.undefined,
     expandSubRows: js.UndefOr[Boolean] = js.undefined,
     manualExpandedKey: IdType[D] = null,
     paginateExpandedRows: js.UndefOr[Boolean] = js.undefined
   ): UseExpandedOptions[D] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoResetExpanded)) __obj.updateDynamic("autoResetExpanded")(autoResetExpanded.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandSubRows)) __obj.updateDynamic("expandSubRows")(expandSubRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoResetExpanded)) __obj.updateDynamic("autoResetExpanded")(autoResetExpanded.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandSubRows)) __obj.updateDynamic("expandSubRows")(expandSubRows.get.asInstanceOf[js.Any])
     if (manualExpandedKey != null) __obj.updateDynamic("manualExpandedKey")(manualExpandedKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(paginateExpandedRows)) __obj.updateDynamic("paginateExpandedRows")(paginateExpandedRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(paginateExpandedRows)) __obj.updateDynamic("paginateExpandedRows")(paginateExpandedRows.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseExpandedOptions[D]]
   }
 }

@@ -39,7 +39,7 @@ object UnparseConfig {
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     if (escapeChar != null) __obj.updateDynamic("escapeChar")(escapeChar.asInstanceOf[js.Any])
-    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.get.asInstanceOf[js.Any])
     if (newline != null) __obj.updateDynamic("newline")(newline.asInstanceOf[js.Any])
     if (quoteChar != null) __obj.updateDynamic("quoteChar")(quoteChar.asInstanceOf[js.Any])
     if (quotes != null) __obj.updateDynamic("quotes")(quotes.asInstanceOf[js.Any])

@@ -15,16 +15,14 @@ import scala.scalajs.js.annotation._
 class MutableFile protected () extends File {
   def this(options: String, storage: Storage) = this()
   def this(options: FileOptions, storage: Storage) = this()
-  def delete(permanent: js.UndefOr[scala.Nothing], cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Readable = js.native
   @JSName("delete")
-  def delete_true(permanent: `true`, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Readable = js.native
+  def delete_true(permanent: js.UndefOr[`true`], cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Readable = js.native
   def importFile(file: String, cb: js.Function2[/* err */ js.UndefOr[Error], /* file */ this.type, Unit]): Readable = js.native
   def importFile(file: File, cb: js.Function2[/* err */ js.UndefOr[Error], /* file */ this.type, Unit]): Readable = js.native
   def link(
-    options: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[LinkOptions],
     cb: js.Function2[/* err */ js.UndefOr[Error], /* url */ String, Unit]
   ): Readable = js.native
-  def link(options: LinkOptions, cb: js.Function2[/* err */ js.UndefOr[Error], /* url */ String, Unit]): Readable = js.native
   def mkdir(options: String): Readable = js.native
   def mkdir(options: String, cb: js.Any): Readable = js.native
   def mkdir(options: MakeDirectoryOptions): Readable = js.native
@@ -36,10 +34,9 @@ class MutableFile protected () extends File {
   def setFavorite(isFavorite: Boolean, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Readable = js.native
   def setLabel(label: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Readable = js.native
   def shareFolder(
-    options: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[LinkOptions],
     cb: js.Function2[/* err */ js.UndefOr[Error], /* url */ String, Unit]
   ): Readable = js.native
-  def shareFolder(options: LinkOptions, cb: js.Function2[/* err */ js.UndefOr[Error], /* url */ String, Unit]): Readable = js.native
   def upload(options: String): Writable = js.native
   def upload(options: String, buffer: Buffer): Writable = js.native
   def upload(options: String, buffer: Buffer, cb: js.Any): Writable = js.native

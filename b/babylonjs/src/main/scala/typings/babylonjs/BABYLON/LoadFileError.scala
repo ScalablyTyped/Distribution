@@ -1,23 +1,24 @@
 package typings.babylonjs.BABYLON
 
+import typings.std.Error
 import typings.std.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.LoadFileError")
-@js.native
-class LoadFileError protected () extends BaseError {
-  /**
-    * Creates a new LoadFileError
-    * @param message defines the message of the error
-    * @param request defines the optional web request
-    * @param file defines the optional file
-    */
-  def this(message: String) = this()
-  def this(message: String, `object`: WebRequest) = this()
-  def this(message: String, `object`: File) = this()
-  var file: js.UndefOr[File] = js.native
-  var request: js.UndefOr[WebRequest] = js.native
+trait LoadFileError extends Error {
+  var file: js.UndefOr[File] = js.undefined
+  var request: js.UndefOr[WebRequest] = js.undefined
+}
+
+object LoadFileError {
+  @scala.inline
+  def apply(message: String, name: String, file: File = null, request: WebRequest = null, stack: String = null): LoadFileError = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LoadFileError]
+  }
 }
 

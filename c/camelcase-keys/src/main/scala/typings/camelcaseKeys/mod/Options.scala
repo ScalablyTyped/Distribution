@@ -63,9 +63,9 @@ object Options {
     stopPaths: js.Array[String] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep.asInstanceOf[js.Any])
+    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep.get.asInstanceOf[js.Any])
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (!js.isUndefined(pascalCase)) __obj.updateDynamic("pascalCase")(pascalCase.asInstanceOf[js.Any])
+    if (!js.isUndefined(pascalCase)) __obj.updateDynamic("pascalCase")(pascalCase.get.asInstanceOf[js.Any])
     if (stopPaths != null) __obj.updateDynamic("stopPaths")(stopPaths.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

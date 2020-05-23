@@ -285,7 +285,7 @@ object Options {
     compression: js.UndefOr[Boolean] = js.undefined,
     correlativeTemplate: Boolean | js.Array[_] = null,
     debug: js.UndefOr[Boolean] = js.undefined,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     display: js.Array[String] = null,
     dropdownFilter: Boolean | string | js.Array[DropdownFilterItem] = null,
     dynamic: js.UndefOr[Boolean] = js.undefined,
@@ -302,7 +302,6 @@ object Options {
       /* resultCountPerGroup */ js.UndefOr[Double], 
       js.Array[_]
     ]) = null,
-    groupTemplate: js.UndefOr[scala.Nothing] = js.undefined,
     highlight: any | Boolean = null,
     hint: Boolean | CssObject = null,
     href: String | (js.Function1[/* item */ js.UndefOr[js.Any], String]) = null,
@@ -310,9 +309,9 @@ object Options {
     loadingAnimation: `true` = null,
     matcher: (/* item */ js.UndefOr[js.Any], /* displayKey */ js.UndefOr[String]) => Boolean = null,
     maxItem: `false` | Double = null,
-    maxItemPerGroup: Int | Double = null,
+    maxItemPerGroup: js.UndefOr[Double] = js.undefined,
     maxLength: `false` | Double = null,
-    minLength: Int | Double = null,
+    minLength: js.UndefOr[Double] = js.undefined,
     multiselect: MultiSelectSettings = null,
     mustSelectItem: js.UndefOr[Boolean] = js.undefined,
     offset: js.UndefOr[Boolean] = js.undefined,
@@ -323,30 +322,29 @@ object Options {
     source: Source | js.Array[Source] | SourceTable = null,
     template: String | (js.Function2[/* query */ js.UndefOr[String], /* item */ js.UndefOr[js.Any], String]) = null,
     templateValue: String = null,
-    ttl: Int | Double = null
+    ttl: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (accent != null) __obj.updateDynamic("accent")(accent.asInstanceOf[js.Any])
     if (backdrop != null) __obj.updateDynamic("backdrop")(backdrop.asInstanceOf[js.Any])
     if (backdropOnFocus != null) __obj.updateDynamic("backdropOnFocus")(backdropOnFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(blurOnTab)) __obj.updateDynamic("blurOnTab")(blurOnTab.asInstanceOf[js.Any])
+    if (!js.isUndefined(blurOnTab)) __obj.updateDynamic("blurOnTab")(blurOnTab.get.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelButton)) __obj.updateDynamic("cancelButton")(cancelButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(compression)) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelButton)) __obj.updateDynamic("cancelButton")(cancelButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(compression)) __obj.updateDynamic("compression")(compression.get.asInstanceOf[js.Any])
     if (correlativeTemplate != null) __obj.updateDynamic("correlativeTemplate")(correlativeTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (dropdownFilter != null) __obj.updateDynamic("dropdownFilter")(dropdownFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(dynamic)) __obj.updateDynamic("dynamic")(dynamic.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamic)) __obj.updateDynamic("dynamic")(dynamic.get.asInstanceOf[js.Any])
     if (dynamicFilter != null) __obj.updateDynamic("dynamicFilter")(dynamicFilter.asInstanceOf[js.Any])
     if (emptyTemplate != null) __obj.updateDynamic("emptyTemplate")(emptyTemplate.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(generateOnLoad)) __obj.updateDynamic("generateOnLoad")(generateOnLoad.asInstanceOf[js.Any])
+    if (!js.isUndefined(generateOnLoad)) __obj.updateDynamic("generateOnLoad")(generateOnLoad.get.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (groupOrder != null) __obj.updateDynamic("groupOrder")(groupOrder.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupTemplate)) __obj.updateDynamic("groupTemplate")(groupTemplate.asInstanceOf[js.Any])
     if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
     if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
@@ -354,20 +352,20 @@ object Options {
     if (loadingAnimation != null) __obj.updateDynamic("loadingAnimation")(loadingAnimation.asInstanceOf[js.Any])
     if (matcher != null) __obj.updateDynamic("matcher")(js.Any.fromFunction2(matcher))
     if (maxItem != null) __obj.updateDynamic("maxItem")(maxItem.asInstanceOf[js.Any])
-    if (maxItemPerGroup != null) __obj.updateDynamic("maxItemPerGroup")(maxItemPerGroup.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxItemPerGroup)) __obj.updateDynamic("maxItemPerGroup")(maxItemPerGroup.get.asInstanceOf[js.Any])
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(minLength)) __obj.updateDynamic("minLength")(minLength.get.asInstanceOf[js.Any])
     if (multiselect != null) __obj.updateDynamic("multiselect")(multiselect.asInstanceOf[js.Any])
-    if (!js.isUndefined(mustSelectItem)) __obj.updateDynamic("mustSelectItem")(mustSelectItem.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(mustSelectItem)) __obj.updateDynamic("mustSelectItem")(mustSelectItem.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     if (resultContainer != null) __obj.updateDynamic("resultContainer")(resultContainer.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchOnFocus)) __obj.updateDynamic("searchOnFocus")(searchOnFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(searchOnFocus)) __obj.updateDynamic("searchOnFocus")(searchOnFocus.get.asInstanceOf[js.Any])
     if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (templateValue != null) __obj.updateDynamic("templateValue")(templateValue.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

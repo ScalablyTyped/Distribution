@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AwsS3BucketServerSideEncryptionRule extends js.Object {
   /**
-    * Specifies the default server-side encryption to apply to new objects in the bucket. If a PUT Object request doesn't specify any server-side encryption, this default encryption is applied.
+    * Specifies the default server-side encryption to apply to new objects in the bucket. If a PUT object request doesn't specify any server-side encryption, this default encryption is applied.
     */
   var ApplyServerSideEncryptionByDefault: js.UndefOr[AwsS3BucketServerSideEncryptionByDefault] = js.native
 }

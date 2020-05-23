@@ -4,8 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.cesium.mod.Property because Inheritance from two classes. Inlined isConstant, definitionChanged, getValue, getValue, equals, equals
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.cesium.mod.Property because Inheritance from two classes. Inlined isConstant, definitionChanged, getValue, getValue, getValue, equals, equals
 - typings.cesium.mod.PositionProperty because Inheritance from two classes. Inlined referenceFrame, getValueInReferenceFrame, getValueInReferenceFrame */ @JSImport("cesium", "Cartesian3")
 @js.native
 class Cartesian3 () extends Packable {
@@ -24,6 +24,7 @@ class Cartesian3 () extends Packable {
   def equals(right: Cartesian3): Boolean = js.native
   def equalsEpsilon(right: Cartesian3, relativeEpsilon: Double): Boolean = js.native
   def equalsEpsilon(right: Cartesian3, relativeEpsilon: Double, absoluteEpsilon: Double): Boolean = js.native
+  def getValue(): js.Any = js.native
   def getValue(time: JulianDate): js.Any = js.native
   def getValue(time: JulianDate, result: js.Any): js.Any = js.native
   def getValue(time: JulianDate, result: Cartesian3): Cartesian3 = js.native

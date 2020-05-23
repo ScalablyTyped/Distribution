@@ -20,12 +20,12 @@ object EventObject {
     data: js.Any,
     event: String,
     callback: (/* error */ Error, /* eventObject */ EventObject) => Unit = null,
-    cid: Int | Double = null,
+    cid: js.UndefOr[Double] = js.undefined,
     timeout: Timer = null
   ): EventObject = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
-    if (cid != null) __obj.updateDynamic("cid")(cid.asInstanceOf[js.Any])
+    if (!js.isUndefined(cid)) __obj.updateDynamic("cid")(cid.get.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventObject]
   }

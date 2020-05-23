@@ -18,6 +18,18 @@ object BingMapsStyle extends js.Object {
   sealed trait AERIAL_WITH_LABELS extends BingMapsStyle
   
   @js.native
+  sealed trait AERIAL_WITH_LABELS_ON_DEMAND extends BingMapsStyle
+  
+  @js.native
+  sealed trait CANVAS_DARK extends BingMapsStyle
+  
+  @js.native
+  sealed trait CANVAS_GRAY extends BingMapsStyle
+  
+  @js.native
+  sealed trait CANVAS_LIGHT extends BingMapsStyle
+  
+  @js.native
   sealed trait COLLINS_BART extends BingMapsStyle
   
   @js.native
@@ -26,22 +38,40 @@ object BingMapsStyle extends js.Object {
   @js.native
   sealed trait ROAD extends BingMapsStyle
   
+  @js.native
+  sealed trait ROAD_ON_DEMAND extends BingMapsStyle
+  
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BingMapsStyle with Double] = js.native
-  /* 0 */ @js.native
-  object AERIAL extends TopLevel[AERIAL with Double]
+  def apply(value: String): js.UndefOr[BingMapsStyle with String] = js.native
+  /* "Aerial" */ @js.native
+  object AERIAL extends TopLevel[AERIAL with String]
   
-  /* 1 */ @js.native
-  object AERIAL_WITH_LABELS extends TopLevel[AERIAL_WITH_LABELS with Double]
+  /* "AerialWithLabels" */ @js.native
+  object AERIAL_WITH_LABELS extends TopLevel[AERIAL_WITH_LABELS with String]
   
-  /* 4 */ @js.native
-  object COLLINS_BART extends TopLevel[COLLINS_BART with Double]
+  /* "AerialWithLabelsOnDemand" */ @js.native
+  object AERIAL_WITH_LABELS_ON_DEMAND extends TopLevel[AERIAL_WITH_LABELS_ON_DEMAND with String]
   
-  /* 3 */ @js.native
-  object ORDNANCE_SURVEY extends TopLevel[ORDNANCE_SURVEY with Double]
+  /* "CanvasDark" */ @js.native
+  object CANVAS_DARK extends TopLevel[CANVAS_DARK with String]
   
-  /* 2 */ @js.native
-  object ROAD extends TopLevel[ROAD with Double]
+  /* "CanvasGray" */ @js.native
+  object CANVAS_GRAY extends TopLevel[CANVAS_GRAY with String]
+  
+  /* "CanvasLight" */ @js.native
+  object CANVAS_LIGHT extends TopLevel[CANVAS_LIGHT with String]
+  
+  /* "CollinsBart" */ @js.native
+  object COLLINS_BART extends TopLevel[COLLINS_BART with String]
+  
+  /* "OrdnanceSurvey" */ @js.native
+  object ORDNANCE_SURVEY extends TopLevel[ORDNANCE_SURVEY with String]
+  
+  /* "Road" */ @js.native
+  object ROAD extends TopLevel[ROAD with String]
+  
+  /* "RoadOnDemand" */ @js.native
+  object ROAD_ON_DEMAND extends TopLevel[ROAD_ON_DEMAND with String]
   
 }
 

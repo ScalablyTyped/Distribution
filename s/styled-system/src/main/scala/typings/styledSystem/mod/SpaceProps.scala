@@ -65,65 +65,65 @@ trait SpaceProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends js
 
 object SpaceProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](
-    m: ResponsiveValue[TVal, ThemeType] = null,
-    margin: ResponsiveValue[TVal, ThemeType] = null,
-    marginBottom: ResponsiveValue[TVal, ThemeType] = null,
-    marginLeft: ResponsiveValue[TVal, ThemeType] = null,
-    marginRight: ResponsiveValue[TVal, ThemeType] = null,
-    marginTop: ResponsiveValue[TVal, ThemeType] = null,
-    marginX: ResponsiveValue[TVal, ThemeType] = null,
-    marginY: ResponsiveValue[TVal, ThemeType] = null,
-    mb: ResponsiveValue[TVal, ThemeType] = null,
-    ml: ResponsiveValue[TVal, ThemeType] = null,
-    mr: ResponsiveValue[TVal, ThemeType] = null,
-    mt: ResponsiveValue[TVal, ThemeType] = null,
-    mx: ResponsiveValue[TVal, ThemeType] = null,
-    my: ResponsiveValue[TVal, ThemeType] = null,
-    p: ResponsiveValue[TVal, ThemeType] = null,
-    padding: ResponsiveValue[TVal, ThemeType] = null,
-    paddingBottom: ResponsiveValue[TVal, ThemeType] = null,
-    paddingLeft: ResponsiveValue[TVal, ThemeType] = null,
-    paddingRight: ResponsiveValue[TVal, ThemeType] = null,
-    paddingTop: ResponsiveValue[TVal, ThemeType] = null,
-    paddingX: ResponsiveValue[TVal, ThemeType] = null,
-    paddingY: ResponsiveValue[TVal, ThemeType] = null,
-    pb: ResponsiveValue[TVal, ThemeType] = null,
-    pl: ResponsiveValue[TVal, ThemeType] = null,
-    pr: ResponsiveValue[TVal, ThemeType] = null,
-    pt: ResponsiveValue[TVal, ThemeType] = null,
-    px: ResponsiveValue[TVal, ThemeType] = null,
-    py: ResponsiveValue[TVal, ThemeType] = null
+  def apply[ThemeType, TVal](
+    m: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    margin: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    marginBottom: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    marginLeft: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    marginRight: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    marginTop: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    marginX: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    marginY: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    mb: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    ml: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    mr: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    mt: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    mx: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    my: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    p: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    padding: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    paddingBottom: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    paddingLeft: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    paddingRight: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    paddingTop: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    paddingX: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    paddingY: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    pb: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    pl: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    pr: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    pt: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    px: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    py: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined
   ): SpaceProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
-    if (m != null) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (marginBottom != null) __obj.updateDynamic("marginBottom")(marginBottom.asInstanceOf[js.Any])
-    if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
-    if (marginRight != null) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
-    if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
-    if (marginX != null) __obj.updateDynamic("marginX")(marginX.asInstanceOf[js.Any])
-    if (marginY != null) __obj.updateDynamic("marginY")(marginY.asInstanceOf[js.Any])
-    if (mb != null) __obj.updateDynamic("mb")(mb.asInstanceOf[js.Any])
-    if (ml != null) __obj.updateDynamic("ml")(ml.asInstanceOf[js.Any])
-    if (mr != null) __obj.updateDynamic("mr")(mr.asInstanceOf[js.Any])
-    if (mt != null) __obj.updateDynamic("mt")(mt.asInstanceOf[js.Any])
-    if (mx != null) __obj.updateDynamic("mx")(mx.asInstanceOf[js.Any])
-    if (my != null) __obj.updateDynamic("my")(my.asInstanceOf[js.Any])
-    if (p != null) __obj.updateDynamic("p")(p.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (paddingBottom != null) __obj.updateDynamic("paddingBottom")(paddingBottom.asInstanceOf[js.Any])
-    if (paddingLeft != null) __obj.updateDynamic("paddingLeft")(paddingLeft.asInstanceOf[js.Any])
-    if (paddingRight != null) __obj.updateDynamic("paddingRight")(paddingRight.asInstanceOf[js.Any])
-    if (paddingTop != null) __obj.updateDynamic("paddingTop")(paddingTop.asInstanceOf[js.Any])
-    if (paddingX != null) __obj.updateDynamic("paddingX")(paddingX.asInstanceOf[js.Any])
-    if (paddingY != null) __obj.updateDynamic("paddingY")(paddingY.asInstanceOf[js.Any])
-    if (pb != null) __obj.updateDynamic("pb")(pb.asInstanceOf[js.Any])
-    if (pl != null) __obj.updateDynamic("pl")(pl.asInstanceOf[js.Any])
-    if (pr != null) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])
-    if (pt != null) __obj.updateDynamic("pt")(pt.asInstanceOf[js.Any])
-    if (px != null) __obj.updateDynamic("px")(px.asInstanceOf[js.Any])
-    if (py != null) __obj.updateDynamic("py")(py.asInstanceOf[js.Any])
+    if (!js.isUndefined(m)) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
+    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginBottom)) __obj.updateDynamic("marginBottom")(marginBottom.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginLeft)) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginRight)) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginTop)) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginX)) __obj.updateDynamic("marginX")(marginX.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginY)) __obj.updateDynamic("marginY")(marginY.asInstanceOf[js.Any])
+    if (!js.isUndefined(mb)) __obj.updateDynamic("mb")(mb.asInstanceOf[js.Any])
+    if (!js.isUndefined(ml)) __obj.updateDynamic("ml")(ml.asInstanceOf[js.Any])
+    if (!js.isUndefined(mr)) __obj.updateDynamic("mr")(mr.asInstanceOf[js.Any])
+    if (!js.isUndefined(mt)) __obj.updateDynamic("mt")(mt.asInstanceOf[js.Any])
+    if (!js.isUndefined(mx)) __obj.updateDynamic("mx")(mx.asInstanceOf[js.Any])
+    if (!js.isUndefined(my)) __obj.updateDynamic("my")(my.asInstanceOf[js.Any])
+    if (!js.isUndefined(p)) __obj.updateDynamic("p")(p.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingBottom)) __obj.updateDynamic("paddingBottom")(paddingBottom.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingLeft)) __obj.updateDynamic("paddingLeft")(paddingLeft.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingRight)) __obj.updateDynamic("paddingRight")(paddingRight.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingTop)) __obj.updateDynamic("paddingTop")(paddingTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingX)) __obj.updateDynamic("paddingX")(paddingX.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingY)) __obj.updateDynamic("paddingY")(paddingY.asInstanceOf[js.Any])
+    if (!js.isUndefined(pb)) __obj.updateDynamic("pb")(pb.asInstanceOf[js.Any])
+    if (!js.isUndefined(pl)) __obj.updateDynamic("pl")(pl.asInstanceOf[js.Any])
+    if (!js.isUndefined(pr)) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])
+    if (!js.isUndefined(pt)) __obj.updateDynamic("pt")(pt.asInstanceOf[js.Any])
+    if (!js.isUndefined(px)) __obj.updateDynamic("px")(px.asInstanceOf[js.Any])
+    if (!js.isUndefined(py)) __obj.updateDynamic("py")(py.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpaceProps[ThemeType, TVal]]
   }
 }

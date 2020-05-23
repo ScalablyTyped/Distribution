@@ -98,16 +98,16 @@ object AndroidWorkProfileGeneralDeviceConfiguration {
     lastModifiedDateTime: String = null,
     passwordBlockFingerprintUnlock: js.UndefOr[Boolean] = js.undefined,
     passwordBlockTrustAgents: js.UndefOr[Boolean] = js.undefined,
-    passwordExpirationDays: Int | Double = null,
-    passwordMinimumLength: Int | Double = null,
-    passwordMinutesOfInactivityBeforeScreenTimeout: Int | Double = null,
-    passwordPreviousPasswordBlockCount: Int | Double = null,
+    passwordExpirationDays: js.UndefOr[Double] = js.undefined,
+    passwordMinimumLength: js.UndefOr[Double] = js.undefined,
+    passwordMinutesOfInactivityBeforeScreenTimeout: js.UndefOr[Double] = js.undefined,
+    passwordPreviousPasswordBlockCount: js.UndefOr[Double] = js.undefined,
     passwordRequiredType: AndroidWorkProfileRequiredPasswordType = null,
-    passwordSignInFailureCountBeforeFactoryReset: Int | Double = null,
+    passwordSignInFailureCountBeforeFactoryReset: js.UndefOr[Double] = js.undefined,
     securityRequireVerifyApps: js.UndefOr[Boolean] = js.undefined,
     userStatusOverview: DeviceConfigurationUserOverview = null,
     userStatuses: js.Array[DeviceConfigurationUserStatus] = null,
-    version: Int | Double = null,
+    version: js.UndefOr[Double] = js.undefined,
     workProfileBlockAddingAccounts: js.UndefOr[Boolean] = js.undefined,
     workProfileBlockCamera: js.UndefOr[Boolean] = js.undefined,
     workProfileBlockCrossProfileCallerId: js.UndefOr[Boolean] = js.undefined,
@@ -120,18 +120,18 @@ object AndroidWorkProfileGeneralDeviceConfiguration {
     workProfileDefaultAppPermissionPolicy: AndroidWorkProfileDefaultAppPermissionPolicyType = null,
     workProfilePasswordBlockFingerprintUnlock: js.UndefOr[Boolean] = js.undefined,
     workProfilePasswordBlockTrustAgents: js.UndefOr[Boolean] = js.undefined,
-    workProfilePasswordExpirationDays: Int | Double = null,
-    workProfilePasswordMinLetterCharacters: Int | Double = null,
-    workProfilePasswordMinLowerCaseCharacters: Int | Double = null,
-    workProfilePasswordMinNonLetterCharacters: Int | Double = null,
-    workProfilePasswordMinNumericCharacters: Int | Double = null,
-    workProfilePasswordMinSymbolCharacters: Int | Double = null,
-    workProfilePasswordMinUpperCaseCharacters: Int | Double = null,
-    workProfilePasswordMinimumLength: Int | Double = null,
-    workProfilePasswordMinutesOfInactivityBeforeScreenTimeout: Int | Double = null,
-    workProfilePasswordPreviousPasswordBlockCount: Int | Double = null,
+    workProfilePasswordExpirationDays: js.UndefOr[Double] = js.undefined,
+    workProfilePasswordMinLetterCharacters: js.UndefOr[Double] = js.undefined,
+    workProfilePasswordMinLowerCaseCharacters: js.UndefOr[Double] = js.undefined,
+    workProfilePasswordMinNonLetterCharacters: js.UndefOr[Double] = js.undefined,
+    workProfilePasswordMinNumericCharacters: js.UndefOr[Double] = js.undefined,
+    workProfilePasswordMinSymbolCharacters: js.UndefOr[Double] = js.undefined,
+    workProfilePasswordMinUpperCaseCharacters: js.UndefOr[Double] = js.undefined,
+    workProfilePasswordMinimumLength: js.UndefOr[Double] = js.undefined,
+    workProfilePasswordMinutesOfInactivityBeforeScreenTimeout: js.UndefOr[Double] = js.undefined,
+    workProfilePasswordPreviousPasswordBlockCount: js.UndefOr[Double] = js.undefined,
     workProfilePasswordRequiredType: AndroidWorkProfileRequiredPasswordType = null,
-    workProfilePasswordSignInFailureCountBeforeFactoryReset: Int | Double = null,
+    workProfilePasswordSignInFailureCountBeforeFactoryReset: js.UndefOr[Double] = js.undefined,
     workProfileRequirePassword: js.UndefOr[Boolean] = js.undefined
   ): AndroidWorkProfileGeneralDeviceConfiguration = {
     val __obj = js.Dynamic.literal()
@@ -144,43 +144,43 @@ object AndroidWorkProfileGeneralDeviceConfiguration {
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(passwordBlockFingerprintUnlock)) __obj.updateDynamic("passwordBlockFingerprintUnlock")(passwordBlockFingerprintUnlock.asInstanceOf[js.Any])
-    if (!js.isUndefined(passwordBlockTrustAgents)) __obj.updateDynamic("passwordBlockTrustAgents")(passwordBlockTrustAgents.asInstanceOf[js.Any])
-    if (passwordExpirationDays != null) __obj.updateDynamic("passwordExpirationDays")(passwordExpirationDays.asInstanceOf[js.Any])
-    if (passwordMinimumLength != null) __obj.updateDynamic("passwordMinimumLength")(passwordMinimumLength.asInstanceOf[js.Any])
-    if (passwordMinutesOfInactivityBeforeScreenTimeout != null) __obj.updateDynamic("passwordMinutesOfInactivityBeforeScreenTimeout")(passwordMinutesOfInactivityBeforeScreenTimeout.asInstanceOf[js.Any])
-    if (passwordPreviousPasswordBlockCount != null) __obj.updateDynamic("passwordPreviousPasswordBlockCount")(passwordPreviousPasswordBlockCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordBlockFingerprintUnlock)) __obj.updateDynamic("passwordBlockFingerprintUnlock")(passwordBlockFingerprintUnlock.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordBlockTrustAgents)) __obj.updateDynamic("passwordBlockTrustAgents")(passwordBlockTrustAgents.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordExpirationDays)) __obj.updateDynamic("passwordExpirationDays")(passwordExpirationDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordMinimumLength)) __obj.updateDynamic("passwordMinimumLength")(passwordMinimumLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordMinutesOfInactivityBeforeScreenTimeout)) __obj.updateDynamic("passwordMinutesOfInactivityBeforeScreenTimeout")(passwordMinutesOfInactivityBeforeScreenTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordPreviousPasswordBlockCount)) __obj.updateDynamic("passwordPreviousPasswordBlockCount")(passwordPreviousPasswordBlockCount.get.asInstanceOf[js.Any])
     if (passwordRequiredType != null) __obj.updateDynamic("passwordRequiredType")(passwordRequiredType.asInstanceOf[js.Any])
-    if (passwordSignInFailureCountBeforeFactoryReset != null) __obj.updateDynamic("passwordSignInFailureCountBeforeFactoryReset")(passwordSignInFailureCountBeforeFactoryReset.asInstanceOf[js.Any])
-    if (!js.isUndefined(securityRequireVerifyApps)) __obj.updateDynamic("securityRequireVerifyApps")(securityRequireVerifyApps.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordSignInFailureCountBeforeFactoryReset)) __obj.updateDynamic("passwordSignInFailureCountBeforeFactoryReset")(passwordSignInFailureCountBeforeFactoryReset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(securityRequireVerifyApps)) __obj.updateDynamic("securityRequireVerifyApps")(securityRequireVerifyApps.get.asInstanceOf[js.Any])
     if (userStatusOverview != null) __obj.updateDynamic("userStatusOverview")(userStatusOverview.asInstanceOf[js.Any])
     if (userStatuses != null) __obj.updateDynamic("userStatuses")(userStatuses.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (!js.isUndefined(workProfileBlockAddingAccounts)) __obj.updateDynamic("workProfileBlockAddingAccounts")(workProfileBlockAddingAccounts.asInstanceOf[js.Any])
-    if (!js.isUndefined(workProfileBlockCamera)) __obj.updateDynamic("workProfileBlockCamera")(workProfileBlockCamera.asInstanceOf[js.Any])
-    if (!js.isUndefined(workProfileBlockCrossProfileCallerId)) __obj.updateDynamic("workProfileBlockCrossProfileCallerId")(workProfileBlockCrossProfileCallerId.asInstanceOf[js.Any])
-    if (!js.isUndefined(workProfileBlockCrossProfileContactsSearch)) __obj.updateDynamic("workProfileBlockCrossProfileContactsSearch")(workProfileBlockCrossProfileContactsSearch.asInstanceOf[js.Any])
-    if (!js.isUndefined(workProfileBlockCrossProfileCopyPaste)) __obj.updateDynamic("workProfileBlockCrossProfileCopyPaste")(workProfileBlockCrossProfileCopyPaste.asInstanceOf[js.Any])
-    if (!js.isUndefined(workProfileBlockNotificationsWhileDeviceLocked)) __obj.updateDynamic("workProfileBlockNotificationsWhileDeviceLocked")(workProfileBlockNotificationsWhileDeviceLocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(workProfileBlockScreenCapture)) __obj.updateDynamic("workProfileBlockScreenCapture")(workProfileBlockScreenCapture.asInstanceOf[js.Any])
-    if (!js.isUndefined(workProfileBluetoothEnableContactSharing)) __obj.updateDynamic("workProfileBluetoothEnableContactSharing")(workProfileBluetoothEnableContactSharing.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(workProfileBlockAddingAccounts)) __obj.updateDynamic("workProfileBlockAddingAccounts")(workProfileBlockAddingAccounts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(workProfileBlockCamera)) __obj.updateDynamic("workProfileBlockCamera")(workProfileBlockCamera.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(workProfileBlockCrossProfileCallerId)) __obj.updateDynamic("workProfileBlockCrossProfileCallerId")(workProfileBlockCrossProfileCallerId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(workProfileBlockCrossProfileContactsSearch)) __obj.updateDynamic("workProfileBlockCrossProfileContactsSearch")(workProfileBlockCrossProfileContactsSearch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(workProfileBlockCrossProfileCopyPaste)) __obj.updateDynamic("workProfileBlockCrossProfileCopyPaste")(workProfileBlockCrossProfileCopyPaste.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(workProfileBlockNotificationsWhileDeviceLocked)) __obj.updateDynamic("workProfileBlockNotificationsWhileDeviceLocked")(workProfileBlockNotificationsWhileDeviceLocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(workProfileBlockScreenCapture)) __obj.updateDynamic("workProfileBlockScreenCapture")(workProfileBlockScreenCapture.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(workProfileBluetoothEnableContactSharing)) __obj.updateDynamic("workProfileBluetoothEnableContactSharing")(workProfileBluetoothEnableContactSharing.get.asInstanceOf[js.Any])
     if (workProfileDataSharingType != null) __obj.updateDynamic("workProfileDataSharingType")(workProfileDataSharingType.asInstanceOf[js.Any])
     if (workProfileDefaultAppPermissionPolicy != null) __obj.updateDynamic("workProfileDefaultAppPermissionPolicy")(workProfileDefaultAppPermissionPolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(workProfilePasswordBlockFingerprintUnlock)) __obj.updateDynamic("workProfilePasswordBlockFingerprintUnlock")(workProfilePasswordBlockFingerprintUnlock.asInstanceOf[js.Any])
-    if (!js.isUndefined(workProfilePasswordBlockTrustAgents)) __obj.updateDynamic("workProfilePasswordBlockTrustAgents")(workProfilePasswordBlockTrustAgents.asInstanceOf[js.Any])
-    if (workProfilePasswordExpirationDays != null) __obj.updateDynamic("workProfilePasswordExpirationDays")(workProfilePasswordExpirationDays.asInstanceOf[js.Any])
-    if (workProfilePasswordMinLetterCharacters != null) __obj.updateDynamic("workProfilePasswordMinLetterCharacters")(workProfilePasswordMinLetterCharacters.asInstanceOf[js.Any])
-    if (workProfilePasswordMinLowerCaseCharacters != null) __obj.updateDynamic("workProfilePasswordMinLowerCaseCharacters")(workProfilePasswordMinLowerCaseCharacters.asInstanceOf[js.Any])
-    if (workProfilePasswordMinNonLetterCharacters != null) __obj.updateDynamic("workProfilePasswordMinNonLetterCharacters")(workProfilePasswordMinNonLetterCharacters.asInstanceOf[js.Any])
-    if (workProfilePasswordMinNumericCharacters != null) __obj.updateDynamic("workProfilePasswordMinNumericCharacters")(workProfilePasswordMinNumericCharacters.asInstanceOf[js.Any])
-    if (workProfilePasswordMinSymbolCharacters != null) __obj.updateDynamic("workProfilePasswordMinSymbolCharacters")(workProfilePasswordMinSymbolCharacters.asInstanceOf[js.Any])
-    if (workProfilePasswordMinUpperCaseCharacters != null) __obj.updateDynamic("workProfilePasswordMinUpperCaseCharacters")(workProfilePasswordMinUpperCaseCharacters.asInstanceOf[js.Any])
-    if (workProfilePasswordMinimumLength != null) __obj.updateDynamic("workProfilePasswordMinimumLength")(workProfilePasswordMinimumLength.asInstanceOf[js.Any])
-    if (workProfilePasswordMinutesOfInactivityBeforeScreenTimeout != null) __obj.updateDynamic("workProfilePasswordMinutesOfInactivityBeforeScreenTimeout")(workProfilePasswordMinutesOfInactivityBeforeScreenTimeout.asInstanceOf[js.Any])
-    if (workProfilePasswordPreviousPasswordBlockCount != null) __obj.updateDynamic("workProfilePasswordPreviousPasswordBlockCount")(workProfilePasswordPreviousPasswordBlockCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(workProfilePasswordBlockFingerprintUnlock)) __obj.updateDynamic("workProfilePasswordBlockFingerprintUnlock")(workProfilePasswordBlockFingerprintUnlock.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(workProfilePasswordBlockTrustAgents)) __obj.updateDynamic("workProfilePasswordBlockTrustAgents")(workProfilePasswordBlockTrustAgents.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(workProfilePasswordExpirationDays)) __obj.updateDynamic("workProfilePasswordExpirationDays")(workProfilePasswordExpirationDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(workProfilePasswordMinLetterCharacters)) __obj.updateDynamic("workProfilePasswordMinLetterCharacters")(workProfilePasswordMinLetterCharacters.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(workProfilePasswordMinLowerCaseCharacters)) __obj.updateDynamic("workProfilePasswordMinLowerCaseCharacters")(workProfilePasswordMinLowerCaseCharacters.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(workProfilePasswordMinNonLetterCharacters)) __obj.updateDynamic("workProfilePasswordMinNonLetterCharacters")(workProfilePasswordMinNonLetterCharacters.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(workProfilePasswordMinNumericCharacters)) __obj.updateDynamic("workProfilePasswordMinNumericCharacters")(workProfilePasswordMinNumericCharacters.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(workProfilePasswordMinSymbolCharacters)) __obj.updateDynamic("workProfilePasswordMinSymbolCharacters")(workProfilePasswordMinSymbolCharacters.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(workProfilePasswordMinUpperCaseCharacters)) __obj.updateDynamic("workProfilePasswordMinUpperCaseCharacters")(workProfilePasswordMinUpperCaseCharacters.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(workProfilePasswordMinimumLength)) __obj.updateDynamic("workProfilePasswordMinimumLength")(workProfilePasswordMinimumLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(workProfilePasswordMinutesOfInactivityBeforeScreenTimeout)) __obj.updateDynamic("workProfilePasswordMinutesOfInactivityBeforeScreenTimeout")(workProfilePasswordMinutesOfInactivityBeforeScreenTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(workProfilePasswordPreviousPasswordBlockCount)) __obj.updateDynamic("workProfilePasswordPreviousPasswordBlockCount")(workProfilePasswordPreviousPasswordBlockCount.get.asInstanceOf[js.Any])
     if (workProfilePasswordRequiredType != null) __obj.updateDynamic("workProfilePasswordRequiredType")(workProfilePasswordRequiredType.asInstanceOf[js.Any])
-    if (workProfilePasswordSignInFailureCountBeforeFactoryReset != null) __obj.updateDynamic("workProfilePasswordSignInFailureCountBeforeFactoryReset")(workProfilePasswordSignInFailureCountBeforeFactoryReset.asInstanceOf[js.Any])
-    if (!js.isUndefined(workProfileRequirePassword)) __obj.updateDynamic("workProfileRequirePassword")(workProfileRequirePassword.asInstanceOf[js.Any])
+    if (!js.isUndefined(workProfilePasswordSignInFailureCountBeforeFactoryReset)) __obj.updateDynamic("workProfilePasswordSignInFailureCountBeforeFactoryReset")(workProfilePasswordSignInFailureCountBeforeFactoryReset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(workProfileRequirePassword)) __obj.updateDynamic("workProfileRequirePassword")(workProfileRequirePassword.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidWorkProfileGeneralDeviceConfiguration]
   }
 }

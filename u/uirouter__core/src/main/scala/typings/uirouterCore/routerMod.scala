@@ -1,5 +1,6 @@
 package typings.uirouterCore
 
+import typings.uirouterCore.anon.InstantiableT
 import typings.uirouterCore.coreservicesMod.LocationConfig
 import typings.uirouterCore.coreservicesMod.LocationServices
 import typings.uirouterCore.globalsMod.UIRouterGlobals
@@ -98,8 +99,8 @@ object routerMod extends js.Object {
       options: js.Any
     ): T = js.native
     /** Add plugin (as ES6 class) */
-    def plugin[T /* <: UIRouterPlugin */](plugin: AnonInstantiableT[T]): T = js.native
-    def plugin[T /* <: UIRouterPlugin */](plugin: AnonInstantiableT[T], options: js.Any): T = js.native
+    def plugin[T /* <: UIRouterPlugin */](plugin: InstantiableT[T]): T = js.native
+    def plugin[T /* <: UIRouterPlugin */](plugin: InstantiableT[T], options: js.Any): T = js.native
   }
   
   type PluginFactory[T] = js.Function2[/* router */ UIRouter, /* options */ js.UndefOr[js.Any], T]

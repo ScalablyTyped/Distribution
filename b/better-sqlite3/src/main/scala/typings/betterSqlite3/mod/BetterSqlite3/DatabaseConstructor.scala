@@ -2,7 +2,7 @@ package typings.betterSqlite3.mod.BetterSqlite3
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.betterSqlite3.TypeofInteger
+import typings.betterSqlite3.anon.TypeofInteger
 import typings.betterSqlite3.mod.Options
 import typings.integer.mod.IntClass
 import typings.integer.mod.IntLike

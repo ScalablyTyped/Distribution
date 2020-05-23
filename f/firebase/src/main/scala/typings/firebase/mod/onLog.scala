@@ -1,7 +1,7 @@
 package typings.firebase.mod
 
-import typings.firebase.AnonArgs
-import typings.firebase.AnonLevel
+import typings.firebase.anon.Args
+import typings.firebase.anon.Level
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ object onLog extends js.Object {
     * @param logCallback An optional custom log handler that executes user code whenever
     * the Firebase SDK makes a logging call.
     */
-  def apply(logCallback: js.Function1[/* callbackParams */ AnonArgs, Unit]): Unit = js.native
-  def apply(logCallback: js.Function1[/* callbackParams */ AnonArgs, Unit], options: AnonLevel): Unit = js.native
+  def apply(logCallback: js.Function1[/* callbackParams */ Args, Unit]): Unit = js.native
+  def apply(logCallback: js.Function1[/* callbackParams */ Args, Unit], options: Level): Unit = js.native
 }
 

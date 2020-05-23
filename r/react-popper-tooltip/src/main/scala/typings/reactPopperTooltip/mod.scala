@@ -1,5 +1,6 @@
 package typings.reactPopperTooltip
 
+import typings.reactPopperTooltip.anon.CloseOnOutOfBoundaries
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +15,7 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonCloseOnOutOfBoundaries = js.native
+    var defaultProps: CloseOnOutOfBoundaries = js.native
   }
   
 }

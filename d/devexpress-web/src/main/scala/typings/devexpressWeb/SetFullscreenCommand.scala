@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A command to toggle the fullscreen mode.
   */
-@JSGlobal("SetFullscreenCommand")
 @js.native
-class SetFullscreenCommand () extends CommandWithBooleanStateBase {
+trait SetFullscreenCommand extends CommandWithBooleanStateBase {
   /**
     * Executes the ChangePageMarginsCommand command. true if the command has been successfully executed; false if the command execution has failed.
     * @param show true, to enable fullscreen mode; otherwise, false.

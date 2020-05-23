@@ -1,6 +1,6 @@
 package typings.ionicUtilsSubprocess.mod
 
-import typings.ionicUtilsSubprocess.ForkOptionsPickSpawnOptio
+import typings.ionicUtilsSubprocess.anon.ForkOptionsPickSpawnOptio
 import typings.node.childProcessMod.ChildProcess
 import scala.scalajs.js
 import scala.scalajs.js.`|`

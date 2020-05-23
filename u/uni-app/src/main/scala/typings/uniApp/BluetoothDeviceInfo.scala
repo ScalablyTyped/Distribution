@@ -38,7 +38,7 @@ trait BluetoothDeviceInfo extends js.Object {
 object BluetoothDeviceInfo {
   @scala.inline
   def apply(
-    RSSI: Int | Double = null,
+    RSSI: js.UndefOr[Double] = js.undefined,
     advertisData: js.Array[_] = null,
     advertisServiceUUIDs: js.Array[_] = null,
     deviceId: String = null,
@@ -47,7 +47,7 @@ object BluetoothDeviceInfo {
     serviceData: js.Array[_] = null
   ): BluetoothDeviceInfo = {
     val __obj = js.Dynamic.literal()
-    if (RSSI != null) __obj.updateDynamic("RSSI")(RSSI.asInstanceOf[js.Any])
+    if (!js.isUndefined(RSSI)) __obj.updateDynamic("RSSI")(RSSI.get.asInstanceOf[js.Any])
     if (advertisData != null) __obj.updateDynamic("advertisData")(advertisData.asInstanceOf[js.Any])
     if (advertisServiceUUIDs != null) __obj.updateDynamic("advertisServiceUUIDs")(advertisServiceUUIDs.asInstanceOf[js.Any])
     if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])

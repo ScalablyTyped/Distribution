@@ -59,7 +59,7 @@ object MergePullRequestByThreeWayInput {
     conflictResolution: ConflictResolution = null,
     conflictResolutionStrategy: ConflictResolutionStrategyTypeEnum = null,
     email: Email = null,
-    keepEmptyFolders: js.UndefOr[Boolean] = js.undefined,
+    keepEmptyFolders: js.UndefOr[KeepEmptyFolders] = js.undefined,
     sourceCommitId: ObjectId = null
   ): MergePullRequestByThreeWayInput = {
     val __obj = js.Dynamic.literal(pullRequestId = pullRequestId.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
@@ -69,7 +69,7 @@ object MergePullRequestByThreeWayInput {
     if (conflictResolution != null) __obj.updateDynamic("conflictResolution")(conflictResolution.asInstanceOf[js.Any])
     if (conflictResolutionStrategy != null) __obj.updateDynamic("conflictResolutionStrategy")(conflictResolutionStrategy.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepEmptyFolders)) __obj.updateDynamic("keepEmptyFolders")(keepEmptyFolders.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepEmptyFolders)) __obj.updateDynamic("keepEmptyFolders")(keepEmptyFolders.get.asInstanceOf[js.Any])
     if (sourceCommitId != null) __obj.updateDynamic("sourceCommitId")(sourceCommitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergePullRequestByThreeWayInput]
   }

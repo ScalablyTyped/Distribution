@@ -14,9 +14,9 @@ trait DvbSubSourceSettings extends js.Object {
 
 object DvbSubSourceSettings {
   @scala.inline
-  def apply(Pid: Int | Double = null): DvbSubSourceSettings = {
+  def apply(Pid: js.UndefOr[integerMin1] = js.undefined): DvbSubSourceSettings = {
     val __obj = js.Dynamic.literal()
-    if (Pid != null) __obj.updateDynamic("Pid")(Pid.asInstanceOf[js.Any])
+    if (!js.isUndefined(Pid)) __obj.updateDynamic("Pid")(Pid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DvbSubSourceSettings]
   }
 }

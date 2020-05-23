@@ -45,7 +45,7 @@ import typings.fundamentalReact.fundamentalReactStrings.tree
 import typings.fundamentalReact.fundamentalReactStrings.url
 import typings.fundamentalReact.fundamentalReactStrings.vertical
 import typings.fundamentalReact.fundamentalReactStrings.yes
-import typings.react.AnonHtml
+import typings.react.anon.Html
 import typings.react.mod.AnimationEventHandler
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
@@ -275,7 +275,7 @@ object tokenMod extends js.Object {
     var compact: js.UndefOr[Boolean] = js.native
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
     var contextMenu: js.UndefOr[String] = js.native
-    var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.native
+    var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
     var datatype: js.UndefOr[String] = js.native
     // React-specific Attributes
     var defaultChecked: js.UndefOr[Boolean] = js.native

@@ -1,6 +1,6 @@
 package typings.nightwatch.mod
 
-import typings.nightwatch.AnonCliargs
+import typings.nightwatch.anon.Cliargs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -64,7 +64,7 @@ trait NightwatchOptions extends js.Object {
   /**
     * Allows for webdriver config (mostly the same as selenium)
     */
-  var webdriver: js.UndefOr[AnonCliargs] = js.undefined
+  var webdriver: js.UndefOr[Cliargs] = js.undefined
 }
 
 object NightwatchOptions {
@@ -79,21 +79,21 @@ object NightwatchOptions {
     live_output: js.UndefOr[Boolean] = js.undefined,
     output_folder: String = null,
     page_objects_path: String | js.Array[String] = null,
-    parallel_process_delay: Int | Double = null,
+    parallel_process_delay: js.UndefOr[Double] = js.undefined,
     selenium: NightwatchSeleniumOptions = null,
     test_runner: String | NightwatchTestRunner = null,
     test_workers: Boolean | NightwatchTestWorker = null,
-    webdriver: AnonCliargs = null
+    webdriver: Cliargs = null
   ): NightwatchOptions = {
     val __obj = js.Dynamic.literal(src_folders = src_folders.asInstanceOf[js.Any], test_settings = test_settings.asInstanceOf[js.Any])
     if (custom_assertions_path != null) __obj.updateDynamic("custom_assertions_path")(custom_assertions_path.asInstanceOf[js.Any])
     if (custom_commands_path != null) __obj.updateDynamic("custom_commands_path")(custom_commands_path.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_color)) __obj.updateDynamic("disable_color")(disable_color.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable_color)) __obj.updateDynamic("disable_color")(disable_color.get.asInstanceOf[js.Any])
     if (globals_path != null) __obj.updateDynamic("globals_path")(globals_path.asInstanceOf[js.Any])
-    if (!js.isUndefined(live_output)) __obj.updateDynamic("live_output")(live_output.asInstanceOf[js.Any])
+    if (!js.isUndefined(live_output)) __obj.updateDynamic("live_output")(live_output.get.asInstanceOf[js.Any])
     if (output_folder != null) __obj.updateDynamic("output_folder")(output_folder.asInstanceOf[js.Any])
     if (page_objects_path != null) __obj.updateDynamic("page_objects_path")(page_objects_path.asInstanceOf[js.Any])
-    if (parallel_process_delay != null) __obj.updateDynamic("parallel_process_delay")(parallel_process_delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(parallel_process_delay)) __obj.updateDynamic("parallel_process_delay")(parallel_process_delay.get.asInstanceOf[js.Any])
     if (selenium != null) __obj.updateDynamic("selenium")(selenium.asInstanceOf[js.Any])
     if (test_runner != null) __obj.updateDynamic("test_runner")(test_runner.asInstanceOf[js.Any])
     if (test_workers != null) __obj.updateDynamic("test_workers")(test_workers.asInstanceOf[js.Any])

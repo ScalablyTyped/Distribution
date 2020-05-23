@@ -22,11 +22,11 @@ trait CreateGroupResponse extends js.Object {
 
 object CreateGroupResponse {
   @scala.inline
-  def apply(Group: Group = null, RequestId: String = null, Status: Int | scala.Double = null): CreateGroupResponse = {
+  def apply(Group: Group = null, RequestId: String = null, Status: js.UndefOr[StatusCode] = js.undefined): CreateGroupResponse = {
     val __obj = js.Dynamic.literal()
     if (Group != null) __obj.updateDynamic("Group")(Group.asInstanceOf[js.Any])
     if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
+    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateGroupResponse]
   }
 }

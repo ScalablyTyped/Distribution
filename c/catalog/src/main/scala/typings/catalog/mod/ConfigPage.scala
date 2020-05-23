@@ -29,7 +29,7 @@ object ConfigPage {
   ): ConfigPage = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideFromMenu)) __obj.updateDynamic("hideFromMenu")(hideFromMenu.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideFromMenu)) __obj.updateDynamic("hideFromMenu")(hideFromMenu.get.asInstanceOf[js.Any])
     if (imports != null) __obj.updateDynamic("imports")(imports.asInstanceOf[js.Any])
     if (scripts != null) __obj.updateDynamic("scripts")(scripts.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])

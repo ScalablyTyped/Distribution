@@ -10,30 +10,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * A dashboard item is a view that is displayed as an icon in a <Titanium.UI.DashboardView>.
-		 */
-@JSGlobal("Titanium.UI.DashboardItem")
+  * A dashboard item is a view that is displayed as an icon in a <Titanium.UI.DashboardView>.
+  */
 @js.native
-class DashboardItem () extends Proxy {
+trait DashboardItem extends Proxy {
   /**
-  			 * Integer value displayed in a badge.
-  			 */
+    * Integer value displayed in a badge.
+    */
   var badge: Double = js.native
   /**
-  			 * Determines whether this item can be deleted when it edit mode.
-  			 */
+    * Determines whether this item can be deleted when it edit mode.
+    */
   var canDelete: Boolean = js.native
   /**
-  			 * Image or path to image to display in the item by default.
-  			 */
+    * Image or path to image to display in the item by default.
+    */
   var image: String | Blob = js.native
   /**
-  			 * Image or path to image to display in the item as it is selected.
-  			 */
+    * Image or path to image to display in the item as it is selected.
+    */
   var selectedImage: String | Blob = js.native
   /**
-  			 * Adds the specified callback as an event listener for the named event.
-  			 */
+    * Adds the specified callback as an event listener for the named event.
+    */
   @JSName("addEventListener")
   def addEventListener_click(
     name: click,
@@ -50,8 +49,8 @@ class DashboardItem () extends Proxy {
     callback: js.ThisFunction1[/* this */ this.type, /* event */ DashboardItemMoveEvent, Unit]
   ): Unit = js.native
   /**
-  			 * Fires a synthesized event to any registered listeners.
-  			 */
+    * Fires a synthesized event to any registered listeners.
+    */
   @JSName("fireEvent")
   def fireEvent_click(name: click): Unit = js.native
   @JSName("fireEvent")
@@ -65,28 +64,28 @@ class DashboardItem () extends Proxy {
   @JSName("fireEvent")
   def fireEvent_move(name: move, event: DashboardItemMoveEvent): Unit = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.DashboardItem.badge> property.
-  			 * @deprecated Access <Titanium.UI.DashboardItem.badge> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.DashboardItem.badge> property.
+    * @deprecated Access <Titanium.UI.DashboardItem.badge> instead.
+    */
   def getBadge(): Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.DashboardItem.canDelete> property.
-  			 * @deprecated Access <Titanium.UI.DashboardItem.canDelete> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.DashboardItem.canDelete> property.
+    * @deprecated Access <Titanium.UI.DashboardItem.canDelete> instead.
+    */
   def getCanDelete(): Boolean = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.DashboardItem.image> property.
-  			 * @deprecated Access <Titanium.UI.DashboardItem.image> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.DashboardItem.image> property.
+    * @deprecated Access <Titanium.UI.DashboardItem.image> instead.
+    */
   def getImage(): String | Blob = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.DashboardItem.selectedImage> property.
-  			 * @deprecated Access <Titanium.UI.DashboardItem.selectedImage> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.DashboardItem.selectedImage> property.
+    * @deprecated Access <Titanium.UI.DashboardItem.selectedImage> instead.
+    */
   def getSelectedImage(): String | Blob = js.native
   /**
-  			 * Removes the specified callback as an event listener for the named event.
-  			 */
+    * Removes the specified callback as an event listener for the named event.
+    */
   @JSName("removeEventListener")
   def removeEventListener_click(
     name: click,
@@ -103,25 +102,25 @@ class DashboardItem () extends Proxy {
     callback: js.ThisFunction1[/* this */ this.type, /* event */ DashboardItemMoveEvent, Unit]
   ): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.DashboardItem.badge> property.
-  			 * @deprecated Set the value using <Titanium.UI.DashboardItem.badge> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.DashboardItem.badge> property.
+    * @deprecated Set the value using <Titanium.UI.DashboardItem.badge> instead.
+    */
   def setBadge(badge: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.DashboardItem.canDelete> property.
-  			 * @deprecated Set the value using <Titanium.UI.DashboardItem.canDelete> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.DashboardItem.canDelete> property.
+    * @deprecated Set the value using <Titanium.UI.DashboardItem.canDelete> instead.
+    */
   def setCanDelete(canDelete: Boolean): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.DashboardItem.image> property.
-  			 * @deprecated Set the value using <Titanium.UI.DashboardItem.image> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.DashboardItem.image> property.
+    * @deprecated Set the value using <Titanium.UI.DashboardItem.image> instead.
+    */
   def setImage(image: String): Unit = js.native
   def setImage(image: Blob): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.DashboardItem.selectedImage> property.
-  			 * @deprecated Set the value using <Titanium.UI.DashboardItem.selectedImage> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.DashboardItem.selectedImage> property.
+    * @deprecated Set the value using <Titanium.UI.DashboardItem.selectedImage> instead.
+    */
   def setSelectedImage(selectedImage: String): Unit = js.native
   def setSelectedImage(selectedImage: Blob): Unit = js.native
 }

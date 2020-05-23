@@ -6,7 +6,9 @@ import typings.openfin.openfinStrings.`target-changed`
 import typings.openfin.openfinStrings.attached
 import typings.openfin.openfinStrings.created
 import typings.openfin.openfinStrings.destroyed
+import typings.openfin.openfinStrings.focused
 import typings.openfin.openfinStrings.hidden
+import typings.openfin.openfinStrings.hotkey
 import typings.openfin.openfinStrings.shown
 import typings.openfin.openfinStrings.view
 import typings.openfin.webcontentsMod.CertificateErrorEvent
@@ -26,8 +28,10 @@ trait ViewEvents extends js.Object {
   var created: WindowEvent[view, typings.openfin.openfinStrings.created]
   var destroyed: WindowEvent[view, typings.openfin.openfinStrings.destroyed]
   var `did-change-theme-color`: WindowEvent[String, String]
+  var focused: WindowEvent[view, typings.openfin.openfinStrings.focused]
   var `found-in-page`: WindowEvent[String, String]
   var hidden: WindowEvent[view, typings.openfin.openfinStrings.hidden]
+  var hotkey: InputEvent with (WindowEvent[view, typings.openfin.openfinStrings.hotkey])
   var listenerRemoved: String
   var `navigation-rejected`: WindowNavigationRejectedEvent[String, String]
   var newListener: String
@@ -36,7 +40,7 @@ trait ViewEvents extends js.Object {
   var `resource-load-failed`: WindowResourceLoadFailedEvent[String, String]
   var `resource-response-received`: WindowResourceResponseReceivedEvent[String, String]
   var shown: WindowEvent[view, typings.openfin.openfinStrings.shown]
-  var `target-changed`: WindowEvent[view, typings.openfin.openfinStrings.`target-changed`]
+  var `target-changed`: TargetChangedEvent[view, typings.openfin.openfinStrings.`target-changed`]
 }
 
 object ViewEvents {
@@ -48,8 +52,10 @@ object ViewEvents {
     created: WindowEvent[view, created],
     destroyed: WindowEvent[view, destroyed],
     `did-change-theme-color`: WindowEvent[String, String],
+    focused: WindowEvent[view, focused],
     `found-in-page`: WindowEvent[String, String],
     hidden: WindowEvent[view, hidden],
+    hotkey: InputEvent with (WindowEvent[view, hotkey]),
     listenerRemoved: String,
     `navigation-rejected`: WindowNavigationRejectedEvent[String, String],
     newListener: String,
@@ -58,9 +64,9 @@ object ViewEvents {
     `resource-load-failed`: WindowResourceLoadFailedEvent[String, String],
     `resource-response-received`: WindowResourceResponseReceivedEvent[String, String],
     shown: WindowEvent[view, shown],
-    `target-changed`: WindowEvent[view, `target-changed`]
+    `target-changed`: TargetChangedEvent[view, `target-changed`]
   ): ViewEvents = {
-    val __obj = js.Dynamic.literal(attached = attached.asInstanceOf[js.Any], crashed = crashed.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], destroyed = destroyed.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], listenerRemoved = listenerRemoved.asInstanceOf[js.Any], newListener = newListener.asInstanceOf[js.Any], shown = shown.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attached = attached.asInstanceOf[js.Any], crashed = crashed.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], destroyed = destroyed.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], hotkey = hotkey.asInstanceOf[js.Any], listenerRemoved = listenerRemoved.asInstanceOf[js.Any], newListener = newListener.asInstanceOf[js.Any], shown = shown.asInstanceOf[js.Any])
     __obj.updateDynamic("certificate-error")(`certificate-error`.asInstanceOf[js.Any])
     __obj.updateDynamic("did-change-theme-color")(`did-change-theme-color`.asInstanceOf[js.Any])
     __obj.updateDynamic("found-in-page")(`found-in-page`.asInstanceOf[js.Any])

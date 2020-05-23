@@ -1,25 +1,25 @@
 package typings.requestIp.mod
 
-import typings.requestIp.AnonRemoteAddress
-import typings.requestIp.AnonSocket
+import typings.requestIp.anon.RemoteAddress
+import typings.requestIp.anon.Socket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Request extends js.Object {
-  var connection: AnonSocket
+  var connection: Socket
   var headers: RequestHeaders
-  var info: js.UndefOr[AnonRemoteAddress] = js.undefined
-  var socket: js.UndefOr[AnonRemoteAddress] = js.undefined
+  var info: js.UndefOr[RemoteAddress] = js.undefined
+  var socket: js.UndefOr[RemoteAddress] = js.undefined
 }
 
 object Request {
   @scala.inline
   def apply(
-    connection: AnonSocket,
+    connection: Socket,
     headers: RequestHeaders,
-    info: AnonRemoteAddress = null,
-    socket: AnonRemoteAddress = null
+    info: RemoteAddress = null,
+    socket: RemoteAddress = null
   ): Request = {
     val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any])
     if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])

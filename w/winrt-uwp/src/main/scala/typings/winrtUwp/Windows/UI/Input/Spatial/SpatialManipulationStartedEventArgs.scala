@@ -4,10 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.Input.Spatial.SpatialManipulationStartedEventArgs")
-@js.native
-abstract class SpatialManipulationStartedEventArgs () extends js.Object {
-  var interactionSourceKind: js.Any = js.native
-   /* unmapped type */ var tryGetPointerPose: js.Any = js.native
+trait SpatialManipulationStartedEventArgs extends js.Object {
+  var interactionSourceKind: js.Any
+   /* unmapped type */ var tryGetPointerPose: js.Any
+}
+
+object SpatialManipulationStartedEventArgs {
+  @scala.inline
+  def apply(interactionSourceKind: js.Any, tryGetPointerPose: js.Any): SpatialManipulationStartedEventArgs = {
+    val __obj = js.Dynamic.literal(interactionSourceKind = interactionSourceKind.asInstanceOf[js.Any], tryGetPointerPose = tryGetPointerPose.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpatialManipulationStartedEventArgs]
+  }
 }
 

@@ -18,10 +18,13 @@ trait StoppingCondition extends js.Object {
 
 object StoppingCondition {
   @scala.inline
-  def apply(MaxRuntimeInSeconds: Int | Double = null, MaxWaitTimeInSeconds: Int | Double = null): StoppingCondition = {
+  def apply(
+    MaxRuntimeInSeconds: js.UndefOr[MaxRuntimeInSeconds] = js.undefined,
+    MaxWaitTimeInSeconds: js.UndefOr[MaxWaitTimeInSeconds] = js.undefined
+  ): StoppingCondition = {
     val __obj = js.Dynamic.literal()
-    if (MaxRuntimeInSeconds != null) __obj.updateDynamic("MaxRuntimeInSeconds")(MaxRuntimeInSeconds.asInstanceOf[js.Any])
-    if (MaxWaitTimeInSeconds != null) __obj.updateDynamic("MaxWaitTimeInSeconds")(MaxWaitTimeInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRuntimeInSeconds)) __obj.updateDynamic("MaxRuntimeInSeconds")(MaxRuntimeInSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxWaitTimeInSeconds)) __obj.updateDynamic("MaxWaitTimeInSeconds")(MaxWaitTimeInSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoppingCondition]
   }
 }

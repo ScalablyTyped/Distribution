@@ -4,7 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.electron.Electron.BrowserWindow
 import typings.electron.Electron.ContextMenuParams
 import typings.electron.Electron.Menu
-import typings.electron.Electron.WebviewTag_
+import typings.electron.Electron.WebviewTag
+import typings.electronSpellchecker.anon.Word
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,10 +17,10 @@ object mod extends js.Object {
   class ContextMenuBuilder () extends js.Object {
     def this(spellCheckHandler: SpellCheckHandler) = this()
     def this(spellCheckHandler: SpellCheckHandler, target: BrowserWindow) = this()
-    def this(spellCheckHandler: SpellCheckHandler, target: WebviewTag_) = this()
+    def this(spellCheckHandler: SpellCheckHandler, target: WebviewTag) = this()
     def this(spellCheckHandler: SpellCheckHandler, target: Null, debugMode: Boolean) = this()
     def this(spellCheckHandler: SpellCheckHandler, target: BrowserWindow, debugMode: Boolean) = this()
-    def this(spellCheckHandler: SpellCheckHandler, target: WebviewTag_, debugMode: Boolean) = this()
+    def this(spellCheckHandler: SpellCheckHandler, target: WebviewTag, debugMode: Boolean) = this()
     def this(
       spellCheckHandler: SpellCheckHandler,
       target: Null,
@@ -34,7 +35,7 @@ object mod extends js.Object {
     ) = this()
     def this(
       spellCheckHandler: SpellCheckHandler,
-      target: WebviewTag_,
+      target: WebviewTag,
       debugMode: Boolean,
       processMenu: js.Function1[/* menu */ Menu, Menu]
     ) = this()
@@ -46,7 +47,7 @@ object mod extends js.Object {
   class ContextMenuListener protected () extends js.Object {
     def this(handler: js.Function1[/* info */ ContextMenuParams, Unit]) = this()
     def this(handler: js.Function1[/* info */ ContextMenuParams, Unit], target: BrowserWindow) = this()
-    def this(handler: js.Function1[/* info */ ContextMenuParams, Unit], target: WebviewTag_) = this()
+    def this(handler: js.Function1[/* info */ ContextMenuParams, Unit], target: WebviewTag) = this()
     def unsubscribe(): Unit = js.native
   }
   
@@ -62,6 +63,6 @@ object mod extends js.Object {
     def unsubscribe(): Unit = js.native
   }
   
-  type ContextMenuFormatter = js.Function1[/* options */ AnonWord, String]
+  type ContextMenuFormatter = js.Function1[/* options */ Word, String]
 }
 

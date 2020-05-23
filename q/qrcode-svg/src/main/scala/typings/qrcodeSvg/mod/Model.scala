@@ -1,6 +1,6 @@
 package typings.qrcodeSvg.mod
 
-import typings.qrcodeSvg.AnonData
+import typings.qrcodeSvg.anon.Data
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ trait Model extends js.Object {
   /** The cache used to store data during the creation of this QRCode. */
   var dataCache: js.Array[Double] | Null
   /** A list of the data added to this QRCode. */
-  var dataList: js.Array[AnonData]
+  var dataList: js.Array[Data]
   /** The numerical error correction level for this QRCode. */
   var errorCorrectLevel: Double
   /** The width/length of this QRCode's modules matrix. */
@@ -45,7 +45,7 @@ object Model {
   @scala.inline
   def apply(
     addData: String => Unit,
-    dataList: js.Array[AnonData],
+    dataList: js.Array[Data],
     errorCorrectLevel: Double,
     getModuleCount: () => Double,
     isDark: (Double, Double) => Boolean,
@@ -55,8 +55,7 @@ object Model {
     typeNumber: Double,
     dataCache: js.Array[Double] = null
   ): Model = {
-    val __obj = js.Dynamic.literal(addData = js.Any.fromFunction1(addData), dataList = dataList.asInstanceOf[js.Any], errorCorrectLevel = errorCorrectLevel.asInstanceOf[js.Any], getModuleCount = js.Any.fromFunction0(getModuleCount), isDark = js.Any.fromFunction2(isDark), make = js.Any.fromFunction0(make), moduleCount = moduleCount.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any], typeNumber = typeNumber.asInstanceOf[js.Any])
-    if (dataCache != null) __obj.updateDynamic("dataCache")(dataCache.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addData = js.Any.fromFunction1(addData), dataList = dataList.asInstanceOf[js.Any], errorCorrectLevel = errorCorrectLevel.asInstanceOf[js.Any], getModuleCount = js.Any.fromFunction0(getModuleCount), isDark = js.Any.fromFunction2(isDark), make = js.Any.fromFunction0(make), moduleCount = moduleCount.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any], typeNumber = typeNumber.asInstanceOf[js.Any], dataCache = dataCache.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
 }

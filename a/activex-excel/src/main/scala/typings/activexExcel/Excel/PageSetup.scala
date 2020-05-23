@@ -8,9 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.PageSetup")
 @js.native
-class PageSetup protected () extends js.Object {
+trait PageSetup extends js.Object {
   var AlignMarginsHeaderFooter: Boolean = js.native
   val Application: typings.activexExcel.Excel.Application = js.native
   var BlackAndWhite: Boolean = js.native

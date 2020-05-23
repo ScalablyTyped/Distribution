@@ -5,10 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides data for the SpeechRecognitionQualityDegradingEvent event. */
-@JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionQualityDegradingEventArgs")
-@js.native
-abstract class SpeechRecognitionQualityDegradingEventArgs () extends js.Object {
+trait SpeechRecognitionQualityDegradingEventArgs extends js.Object {
   /** Gets the audio problem that occurred. */
-  var problem: SpeechRecognitionAudioProblem = js.native
+  var problem: SpeechRecognitionAudioProblem
+}
+
+object SpeechRecognitionQualityDegradingEventArgs {
+  @scala.inline
+  def apply(problem: SpeechRecognitionAudioProblem): SpeechRecognitionQualityDegradingEventArgs = {
+    val __obj = js.Dynamic.literal(problem = problem.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpeechRecognitionQualityDegradingEventArgs]
+  }
 }
 

@@ -7,9 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides functionality to mange the regions of interest on a device. */
-@JSGlobal("Windows.Media.Devices.RegionsOfInterestControl")
 @js.native
-abstract class RegionsOfInterestControl () extends js.Object {
+trait RegionsOfInterestControl extends js.Object {
   /** Gets a value that specifies if auto exposure is supported on the capture device. */
   var autoExposureSupported: Boolean = js.native
   /** Gets a value that specifies if auto focus is supported on the capture device. */

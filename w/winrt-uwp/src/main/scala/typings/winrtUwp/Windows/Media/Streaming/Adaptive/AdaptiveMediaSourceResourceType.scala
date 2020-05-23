@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Streaming.Adaptive
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object AdaptiveMediaSourceResourceType extends js.Object {
   /** The resource is a media segment. */
   @js.native
   sealed trait mediaSegment extends AdaptiveMediaSourceResourceType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AdaptiveMediaSourceResourceType with Double] = js.native
-  /* 1 */ @js.native
-  object initializationSegment extends TopLevel[initializationSegment with Double]
-  
-  /* 4 */ @js.native
-  object initializationVector extends TopLevel[initializationVector with Double]
-  
-  /* 3 */ @js.native
-  object key extends TopLevel[key with Double]
-  
-  /* 0 */ @js.native
-  object manifest extends TopLevel[manifest with Double]
-  
-  /* 2 */ @js.native
-  object mediaSegment extends TopLevel[mediaSegment with Double]
   
 }
 

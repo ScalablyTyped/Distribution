@@ -1,6 +1,5 @@
 package typings.amcharts.amStockChartMod
 
-import typings.amcharts.AnonDate
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -122,7 +121,7 @@ trait AmStockChart extends js.Object {
     * "rollOverStockEvent", "zoomed".
     * @param handler - The event handler.
     */
-  def addListener(`type`: String, handler: js.Function1[/* e */ AnonDate, Unit]): Unit
+  def addListener(`type`: String, handler: js.Function1[/* e */ typings.amcharts.anon.Date, Unit]): Unit
   /**
     * Adds panel to the stock chart. Requires stockChart.validateNow() method to be called after this action.
     */
@@ -173,7 +172,7 @@ trait AmStockChart extends js.Object {
 object AmStockChart {
   @scala.inline
   def apply(
-    addListener: (String, js.Function1[/* e */ AnonDate, Unit]) => Unit,
+    addListener: (String, js.Function1[/* e */ typings.amcharts.anon.Date, Unit]) => Unit,
     addPanel: typings.amcharts.stockPanelMod.default => Unit,
     addPanelAt: (typings.amcharts.stockPanelMod.default, Double) => Unit,
     animationPlayed: Boolean,

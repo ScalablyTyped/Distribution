@@ -36,7 +36,7 @@ object GetAccountAuthorizationDetailsResponse {
   @scala.inline
   def apply(
     GroupDetailList: groupDetailListType = null,
-    IsTruncated: js.UndefOr[Boolean] = js.undefined,
+    IsTruncated: js.UndefOr[booleanType] = js.undefined,
     Marker: responseMarkerType = null,
     Policies: ManagedPolicyDetailListType = null,
     RoleDetailList: roleDetailListType = null,
@@ -44,7 +44,7 @@ object GetAccountAuthorizationDetailsResponse {
   ): GetAccountAuthorizationDetailsResponse = {
     val __obj = js.Dynamic.literal()
     if (GroupDetailList != null) __obj.updateDynamic("GroupDetailList")(GroupDetailList.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.get.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     if (Policies != null) __obj.updateDynamic("Policies")(Policies.asInstanceOf[js.Any])
     if (RoleDetailList != null) __obj.updateDynamic("RoleDetailList")(RoleDetailList.asInstanceOf[js.Any])

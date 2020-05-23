@@ -138,7 +138,7 @@ object EducationUser {
     userType: String = null
   ): EducationUser = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(accountEnabled)) __obj.updateDynamic("accountEnabled")(accountEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(accountEnabled)) __obj.updateDynamic("accountEnabled")(accountEnabled.get.asInstanceOf[js.Any])
     if (assignedLicenses != null) __obj.updateDynamic("assignedLicenses")(assignedLicenses.asInstanceOf[js.Any])
     if (assignedPlans != null) __obj.updateDynamic("assignedPlans")(assignedPlans.asInstanceOf[js.Any])
     if (businessPhones != null) __obj.updateDynamic("businessPhones")(businessPhones.asInstanceOf[js.Any])
@@ -163,7 +163,7 @@ object EducationUser {
     if (refreshTokensValidFromDateTime != null) __obj.updateDynamic("refreshTokensValidFromDateTime")(refreshTokensValidFromDateTime.asInstanceOf[js.Any])
     if (residenceAddress != null) __obj.updateDynamic("residenceAddress")(residenceAddress.asInstanceOf[js.Any])
     if (schools != null) __obj.updateDynamic("schools")(schools.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInAddressList)) __obj.updateDynamic("showInAddressList")(showInAddressList.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInAddressList)) __obj.updateDynamic("showInAddressList")(showInAddressList.get.asInstanceOf[js.Any])
     if (student != null) __obj.updateDynamic("student")(student.asInstanceOf[js.Any])
     if (surname != null) __obj.updateDynamic("surname")(surname.asInstanceOf[js.Any])
     if (teacher != null) __obj.updateDynamic("teacher")(teacher.asInstanceOf[js.Any])

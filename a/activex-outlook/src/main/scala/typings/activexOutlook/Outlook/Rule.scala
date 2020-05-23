@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Outlook.Rule")
 @js.native
-class Rule protected () extends js.Object {
+trait Rule extends js.Object {
   val Actions: RuleActions = js.native
   val Application: typings.activexOutlook.Outlook.Application = js.native
   val Class: OlObjectClass = js.native

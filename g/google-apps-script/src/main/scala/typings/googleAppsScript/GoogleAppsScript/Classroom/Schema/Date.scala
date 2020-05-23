@@ -12,11 +12,15 @@ trait Date extends js.Object {
 
 object Date {
   @scala.inline
-  def apply(day: Int | Double = null, month: Int | Double = null, year: Int | Double = null): Date = {
+  def apply(
+    day: js.UndefOr[Double] = js.undefined,
+    month: js.UndefOr[Double] = js.undefined,
+    year: js.UndefOr[Double] = js.undefined
+  ): Date = {
     val __obj = js.Dynamic.literal()
-    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
-    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
-    if (year != null) __obj.updateDynamic("year")(year.asInstanceOf[js.Any])
+    if (!js.isUndefined(day)) __obj.updateDynamic("day")(day.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(month)) __obj.updateDynamic("month")(month.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(year)) __obj.updateDynamic("year")(year.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Date]
   }
 }

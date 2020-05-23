@@ -52,14 +52,14 @@ object BatchWriteItemInput {
     RequestItems: (StringDictionary[js.Array[WriteRequest] | Iterable[WriteRequest]]) | (Iterable[js.Tuple2[String, js.Array[WriteRequest] | Iterable[WriteRequest]]]),
     $abortSignal: AbortSignal = null,
     $httpOptions: NodeHttpOptions = null,
-    $maxRetries: Int | Double = null,
+    $maxRetries: js.UndefOr[Double] = js.undefined,
     ReturnConsumedCapacity: INDEXES | TOTAL | NONE | String = null,
     ReturnItemCollectionMetrics: SIZE | NONE | String = null
   ): BatchWriteItemInput = {
     val __obj = js.Dynamic.literal(RequestItems = RequestItems.asInstanceOf[js.Any])
     if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
     if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
-    if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined($maxRetries)) __obj.updateDynamic("$maxRetries")($maxRetries.get.asInstanceOf[js.Any])
     if (ReturnConsumedCapacity != null) __obj.updateDynamic("ReturnConsumedCapacity")(ReturnConsumedCapacity.asInstanceOf[js.Any])
     if (ReturnItemCollectionMetrics != null) __obj.updateDynamic("ReturnItemCollectionMetrics")(ReturnItemCollectionMetrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchWriteItemInput]

@@ -25,10 +25,10 @@ object PutFileSystemPolicyRequest {
   def apply(
     FileSystemId: FileSystemId,
     Policy: Policy,
-    BypassPolicyLockoutSafetyCheck: js.UndefOr[Boolean] = js.undefined
+    BypassPolicyLockoutSafetyCheck: js.UndefOr[BypassPolicyLockoutSafetyCheck] = js.undefined
   ): PutFileSystemPolicyRequest = {
     val __obj = js.Dynamic.literal(FileSystemId = FileSystemId.asInstanceOf[js.Any], Policy = Policy.asInstanceOf[js.Any])
-    if (!js.isUndefined(BypassPolicyLockoutSafetyCheck)) __obj.updateDynamic("BypassPolicyLockoutSafetyCheck")(BypassPolicyLockoutSafetyCheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(BypassPolicyLockoutSafetyCheck)) __obj.updateDynamic("BypassPolicyLockoutSafetyCheck")(BypassPolicyLockoutSafetyCheck.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutFileSystemPolicyRequest]
   }
 }

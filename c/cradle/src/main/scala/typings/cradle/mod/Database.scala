@@ -1,7 +1,7 @@
 package typings.cradle.mod
 
-import typings.cradle.AnonDescending
-import typings.cradle.AnonId
+import typings.cradle.anon.Descending
+import typings.cradle.anon.Id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,11 +42,11 @@ class Database () extends js.Object {
   def save[T](document: T, callback: Callback): Unit = js.native
   def save[T](id: String, document: T, callback: Callback): Unit = js.native
   def save[T](id: String, revision: String, document: T, callback: Callback): Unit = js.native
-  def saveAttachment(idAndRevData: AnonId, attachmentData: js.Any, callback: Callback): Unit = js.native
+  def saveAttachment(idAndRevData: Id, attachmentData: js.Any, callback: Callback): Unit = js.native
   def temporaryView(view: js.Any, callback: Callback): Unit = js.native
   def update(name: String, id: String, queryObject: js.Any, documentBody: js.Any, callback: Callback): Unit = js.native
   def view(name: String, callback: Callback): Unit = js.native
-  def view(name: String, options: AnonDescending, callback: Callback): Unit = js.native
+  def view(name: String, options: Descending, callback: Callback): Unit = js.native
   def viewCleanup(callback: Callback): Unit = js.native
 }
 

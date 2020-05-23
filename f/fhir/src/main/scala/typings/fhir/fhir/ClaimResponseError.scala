@@ -47,13 +47,13 @@ object ClaimResponseError {
     _id: Element = null,
     _sequenceLinkId: Element = null,
     _subdetailSequenceLinkId: Element = null,
-    detailSequenceLinkId: Int | Double = null,
+    detailSequenceLinkId: js.UndefOr[positiveInt] = js.undefined,
     extension: js.Array[Extension] = null,
     fhir_comments: js.Array[String] = null,
     id: String = null,
     modifierExtension: js.Array[Extension] = null,
-    sequenceLinkId: Int | Double = null,
-    subdetailSequenceLinkId: Int | Double = null
+    sequenceLinkId: js.UndefOr[positiveInt] = js.undefined,
+    subdetailSequenceLinkId: js.UndefOr[positiveInt] = js.undefined
   ): ClaimResponseError = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
     if (_detailSequenceLinkId != null) __obj.updateDynamic("_detailSequenceLinkId")(_detailSequenceLinkId.asInstanceOf[js.Any])
@@ -61,13 +61,13 @@ object ClaimResponseError {
     if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
     if (_sequenceLinkId != null) __obj.updateDynamic("_sequenceLinkId")(_sequenceLinkId.asInstanceOf[js.Any])
     if (_subdetailSequenceLinkId != null) __obj.updateDynamic("_subdetailSequenceLinkId")(_subdetailSequenceLinkId.asInstanceOf[js.Any])
-    if (detailSequenceLinkId != null) __obj.updateDynamic("detailSequenceLinkId")(detailSequenceLinkId.asInstanceOf[js.Any])
+    if (!js.isUndefined(detailSequenceLinkId)) __obj.updateDynamic("detailSequenceLinkId")(detailSequenceLinkId.get.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (sequenceLinkId != null) __obj.updateDynamic("sequenceLinkId")(sequenceLinkId.asInstanceOf[js.Any])
-    if (subdetailSequenceLinkId != null) __obj.updateDynamic("subdetailSequenceLinkId")(subdetailSequenceLinkId.asInstanceOf[js.Any])
+    if (!js.isUndefined(sequenceLinkId)) __obj.updateDynamic("sequenceLinkId")(sequenceLinkId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(subdetailSequenceLinkId)) __obj.updateDynamic("subdetailSequenceLinkId")(subdetailSequenceLinkId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClaimResponseError]
   }
 }

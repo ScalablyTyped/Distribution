@@ -30,11 +30,11 @@ object Options {
     source: Context = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowRegexp)) __obj.updateDynamic("allowRegexp")(allowRegexp.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowRegexp)) __obj.updateDynamic("allowRegexp")(allowRegexp.get.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
-    if (!js.isUndefined(globals)) __obj.updateDynamic("globals")(globals.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(globals)) __obj.updateDynamic("globals")(globals.get.asInstanceOf[js.Any])
     if (locals != null) __obj.updateDynamic("locals")(locals.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     if (rootContext != null) __obj.updateDynamic("rootContext")(rootContext.asInstanceOf[js.Any])

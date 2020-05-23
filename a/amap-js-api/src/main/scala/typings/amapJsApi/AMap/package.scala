@@ -8,9 +8,14 @@ package object AMap {
   type BezierCurve[ExtraData] = typings.amapJsApi.AMap.BezierCurve_[ExtraData]
   type Buildings = typings.amapJsApi.AMap.Buildings_
   type Circle[ExtraData] = typings.amapJsApi.AMap.Circle_[ExtraData]
+  // tslint:disable-next-line;
+  /**
+    * 圆点标记
+    */
+  type CircleMarker[ExtraData] = typings.amapJsApi.AMap.Circle[ExtraData]
   type ContextMenu[ExtraData] = typings.amapJsApi.AMap.ContextMenu_[ExtraData]
   type Ellipse[ExtraData] = typings.amapJsApi.AMap.Ellipse_[ExtraData]
-  type Event_[N /* <: java.lang.String */, V] = typings.amapJsApi.AnonType[N] with (typings.amapJsApi.AnonValue[V] | js.Object | V)
+  type Event_[N /* <: java.lang.String */, V] = typings.amapJsApi.anon.Type[N] with (typings.amapJsApi.anon.Value[V] | js.Object | V)
   type GeoJSON[ExtraData] = typings.amapJsApi.AMap.GeoJSON_[ExtraData]
   type Icon = typings.amapJsApi.AMap.Icon_
   type InfoWindow[ExtraData] = typings.amapJsApi.AMap.InfoWindow_[ExtraData]
@@ -19,9 +24,9 @@ package object AMap {
   type Layer = typings.amapJsApi.AMap.Layer_
   type LocationValue = typings.amapJsApi.AMap.LngLat | (js.Tuple2[scala.Double, scala.Double])
   type Map = typings.amapJsApi.AMap.Map_
-  type MapsEvent[N /* <: java.lang.String */, I] = typings.amapJsApi.AMap.Event_[N, typings.amapJsApi.AnonLnglat[I]]
+  type MapsEvent[N /* <: java.lang.String */, I] = typings.amapJsApi.AMap.Event_[N, typings.amapJsApi.anon.Lnglat[I]]
   type Marker[ExtraData] = typings.amapJsApi.AMap.Marker_[ExtraData]
-  type MarkerShape = typings.amapJsApi.AMap.MarkerShape_
+  type MarkerShape = typings.amapJsApi.AMap.EventEmitter
   type MassMarks[D /* <: typings.amapJsApi.AMap.MassMarks.Data */] = typings.amapJsApi.AMap.MassMarks_[D]
   type MediaLayer[E /* <: typings.std.HTMLElement */] = typings.amapJsApi.AMap.MediaLayer_[E]
   type Merge[O, T] = O with T
@@ -38,5 +43,5 @@ package object AMap {
   type SizeValue = typings.amapJsApi.AMap.Size | (js.Tuple2[scala.Double, scala.Double])
   type Text[ExtraData] = typings.amapJsApi.AMap.Text_[ExtraData]
   type TileLayer = typings.amapJsApi.AMap.TileLayer_
-  type View2D = typings.amapJsApi.AMap.View2D_
+  type View2D = typings.amapJsApi.AMap.EventEmitter
 }

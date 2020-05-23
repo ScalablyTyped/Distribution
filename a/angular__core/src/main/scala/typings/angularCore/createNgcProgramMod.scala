@@ -1,5 +1,6 @@
 package typings.angularCore
 
+import typings.angularCore.anon.Compiler
 import typings.typescript.mod.CompilerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +15,6 @@ object createNgcProgramMod extends js.Object {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CompilerHost */ _
     ],
     tsconfigPath: String
-  ): AnonCompiler = js.native
+  ): Compiler = js.native
 }
 

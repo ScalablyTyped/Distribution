@@ -11,7 +11,7 @@ trait DeleteDomainRequest extends js.Object {
     */
   var DomainId: typings.awsSdk.sagemakerMod.DomainId = js.native
   /**
-    * The retention policy for this domain, which specifies which resources will be retained after the Domain is deleted. By default, all resources are retained (not automatically deleted). 
+    * The retention policy for this domain, which specifies whether resources will be retained after the Domain is deleted. By default, all resources are retained (not automatically deleted). 
     */
   var RetentionPolicy: js.UndefOr[typings.awsSdk.sagemakerMod.RetentionPolicy] = js.native
 }

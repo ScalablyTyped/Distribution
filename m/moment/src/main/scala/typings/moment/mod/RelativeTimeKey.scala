@@ -3,6 +3,7 @@ package typings.moment.mod
 import typings.moment.momentStrings.d_
 import typings.moment.momentStrings.m_
 import typings.moment.momentStrings.mm_
+import typings.moment.momentStrings.w_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,6 +17,7 @@ import scala.scalajs.js.annotation._
   - typings.moment.momentStrings.hh
   - typings.moment.momentStrings.d_
   - typings.moment.momentStrings.dd
+  - typings.moment.momentStrings.w_
   - typings.moment.momentStrings.M
   - typings.moment.momentStrings.MM
   - typings.moment.momentStrings.y
@@ -44,6 +46,8 @@ object RelativeTimeKey {
   def s: typings.moment.momentStrings.s = "s".asInstanceOf[typings.moment.momentStrings.s]
   @scala.inline
   def ss: typings.moment.momentStrings.ss = "ss".asInstanceOf[typings.moment.momentStrings.ss]
+  @scala.inline
+  def w: w_ = "w".asInstanceOf[w_]
   @scala.inline
   def y: typings.moment.momentStrings.y = "y".asInstanceOf[typings.moment.momentStrings.y]
   @scala.inline

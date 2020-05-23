@@ -1,7 +1,7 @@
 package typings.gapiClientStorage.gapi.client.storage
 
-import typings.gapiClientStorage.AnonEncryptionAlgorithm
-import typings.gapiClientStorage.AnonEntity
+import typings.gapiClientStorage.anon.EncryptionAlgorithm
+import typings.gapiClientStorage.anon.Entity
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,7 +30,7 @@ trait Object extends js.Object {
     */
   var crc32c: js.UndefOr[String] = js.undefined
   /** Metadata of customer-supplied encryption key, if the object is encrypted by such a key. */
-  var customerEncryption: js.UndefOr[AnonEncryptionAlgorithm] = js.undefined
+  var customerEncryption: js.UndefOr[EncryptionAlgorithm] = js.undefined
   /** HTTP 1.1 Entity tag for the object. */
   var etag: js.UndefOr[String] = js.undefined
   /** The content generation of this object. Used for object versioning. */
@@ -55,7 +55,7 @@ trait Object extends js.Object {
   /** The name of the object. Required if not specified by URL parameter. */
   var name: js.UndefOr[String] = js.undefined
   /** The owner of the object. This will always be the uploader of the object. */
-  var owner: js.UndefOr[AnonEntity] = js.undefined
+  var owner: js.UndefOr[Entity] = js.undefined
   /** The link to this object. */
   var selfLink: js.UndefOr[String] = js.undefined
   /** Content-Length of the data in bytes. */
@@ -78,13 +78,13 @@ object Object {
     acl: js.Array[ObjectAccessControl] = null,
     bucket: String = null,
     cacheControl: String = null,
-    componentCount: Int | Double = null,
+    componentCount: js.UndefOr[Double] = js.undefined,
     contentDisposition: String = null,
     contentEncoding: String = null,
     contentLanguage: String = null,
     contentType: String = null,
     crc32c: String = null,
-    customerEncryption: AnonEncryptionAlgorithm = null,
+    customerEncryption: EncryptionAlgorithm = null,
     etag: String = null,
     generation: String = null,
     id: String = null,
@@ -95,7 +95,7 @@ object Object {
     metadata: Record[String, String] = null,
     metageneration: String = null,
     name: String = null,
-    owner: AnonEntity = null,
+    owner: Entity = null,
     selfLink: String = null,
     size: String = null,
     storageClass: String = null,
@@ -108,7 +108,7 @@ object Object {
     if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
     if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
     if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl.asInstanceOf[js.Any])
-    if (componentCount != null) __obj.updateDynamic("componentCount")(componentCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(componentCount)) __obj.updateDynamic("componentCount")(componentCount.get.asInstanceOf[js.Any])
     if (contentDisposition != null) __obj.updateDynamic("contentDisposition")(contentDisposition.asInstanceOf[js.Any])
     if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding.asInstanceOf[js.Any])
     if (contentLanguage != null) __obj.updateDynamic("contentLanguage")(contentLanguage.asInstanceOf[js.Any])

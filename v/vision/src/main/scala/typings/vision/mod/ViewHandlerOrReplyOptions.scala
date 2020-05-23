@@ -74,8 +74,8 @@ object ViewHandlerOrReplyOptions {
     runtimeOptions: RuntimeOptions = null
   ): ViewHandlerOrReplyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowAbsolutePaths)) __obj.updateDynamic("allowAbsolutePaths")(allowAbsolutePaths.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowInsecureAccess)) __obj.updateDynamic("allowInsecureAccess")(allowInsecureAccess.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowAbsolutePaths)) __obj.updateDynamic("allowAbsolutePaths")(allowAbsolutePaths.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowInsecureAccess)) __obj.updateDynamic("allowInsecureAccess")(allowInsecureAccess.get.asInstanceOf[js.Any])
     if (compileMode != null) __obj.updateDynamic("compileMode")(compileMode.asInstanceOf[js.Any])
     if (compileOptions != null) __obj.updateDynamic("compileOptions")(compileOptions.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])

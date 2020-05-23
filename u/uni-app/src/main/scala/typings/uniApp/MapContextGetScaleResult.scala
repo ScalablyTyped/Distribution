@@ -13,9 +13,9 @@ trait MapContextGetScaleResult extends js.Object {
 
 object MapContextGetScaleResult {
   @scala.inline
-  def apply(scale: Int | Double = null): MapContextGetScaleResult = {
+  def apply(scale: js.UndefOr[Double] = js.undefined): MapContextGetScaleResult = {
     val __obj = js.Dynamic.literal()
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapContextGetScaleResult]
   }
 }

@@ -4,7 +4,7 @@ import typings.node.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Stream
-import typings.nodeTelegramBotApi.PartialAnswerCallbackQuer
+import typings.nodeTelegramBotApi.anon.PartialAnswerCallbackQuer
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.callback_query
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.channel_post
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.chosen_inline_result

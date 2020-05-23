@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CKEDITOR.ui.richCombo")
-@js.native
-class richCombo () extends js.Object {
-  def render(editor: editor, output: js.Array[String]): Unit = js.native
+trait richCombo extends js.Object {
+  def render(editor: editor, output: js.Array[String]): Unit
 }
 
-/* static members */
-@JSGlobal("CKEDITOR.ui.richCombo")
-@js.native
-object richCombo extends js.Object {
-  val handler: handlerDefinition[richCombo] = js.native
+object richCombo {
+  @scala.inline
+  def apply(render: (editor, js.Array[String]) => Unit): richCombo = {
+    val __obj = js.Dynamic.literal(render = js.Any.fromFunction2(render))
+    __obj.asInstanceOf[richCombo]
+  }
 }
 

@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.Autocomplete
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,14 +17,6 @@ object MultiSelectMode extends js.Object {
   ///Each values are displayed in separate box with close button.
   @js.native
   sealed trait VisualMode extends MultiSelectMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MultiSelectMode with Double] = js.native
-  /* 0 */ @js.native
-  object Delimiter extends TopLevel[Delimiter with Double]
-  
-  /* 1 */ @js.native
-  object VisualMode extends TopLevel[VisualMode with Double]
   
 }
 

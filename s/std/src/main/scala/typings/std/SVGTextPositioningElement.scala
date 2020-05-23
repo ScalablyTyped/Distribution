@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +13,4 @@ trait SVGTextPositioningElement extends SVGTextContentElement {
   val x: SVGAnimatedLengthList = js.native
   val y: SVGAnimatedLengthList = js.native
 }
-
-@JSGlobal("SVGTextPositioningElement")
-@js.native
-object SVGTextPositioningElement extends Instantiable0[SVGTextPositioningElement]
 

@@ -23,14 +23,14 @@ trait H264QvbrSettings extends js.Object {
 object H264QvbrSettings {
   @scala.inline
   def apply(
-    MaxAverageBitrate: Int | Double = null,
-    QvbrQualityLevel: Int | Double = null,
-    QvbrQualityLevelFineTune: Int | Double = null
+    MaxAverageBitrate: js.UndefOr[integerMin1000Max1152000000] = js.undefined,
+    QvbrQualityLevel: js.UndefOr[integerMin1Max10] = js.undefined,
+    QvbrQualityLevelFineTune: js.UndefOr[doubleMin0Max1] = js.undefined
   ): H264QvbrSettings = {
     val __obj = js.Dynamic.literal()
-    if (MaxAverageBitrate != null) __obj.updateDynamic("MaxAverageBitrate")(MaxAverageBitrate.asInstanceOf[js.Any])
-    if (QvbrQualityLevel != null) __obj.updateDynamic("QvbrQualityLevel")(QvbrQualityLevel.asInstanceOf[js.Any])
-    if (QvbrQualityLevelFineTune != null) __obj.updateDynamic("QvbrQualityLevelFineTune")(QvbrQualityLevelFineTune.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxAverageBitrate)) __obj.updateDynamic("MaxAverageBitrate")(MaxAverageBitrate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(QvbrQualityLevel)) __obj.updateDynamic("QvbrQualityLevel")(QvbrQualityLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(QvbrQualityLevelFineTune)) __obj.updateDynamic("QvbrQualityLevelFineTune")(QvbrQualityLevelFineTune.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[H264QvbrSettings]
   }
 }

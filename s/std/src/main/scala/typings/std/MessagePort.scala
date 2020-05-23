@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.std.stdStrings.message
 import typings.std.stdStrings.messageerror
 import scala.scalajs.js
@@ -88,8 +87,4 @@ trait MessagePort
     */
   def start(): Unit = js.native
 }
-
-@JSGlobal("MessagePort")
-@js.native
-object MessagePort extends Instantiable0[MessagePort]
 

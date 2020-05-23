@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ResendContactReachabilityEmailRequest extends js.Object {
   /**
-    * The name of the domain for which you want Amazon Route 53 to resend a confirmation email to the registrant contact.
+    * The name of the domain for which you want Route 53 to resend a confirmation email to the registrant contact.
     */
   var domainName: js.UndefOr[DomainName] = js.native
 }

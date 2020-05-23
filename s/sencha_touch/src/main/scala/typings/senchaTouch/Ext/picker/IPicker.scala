@@ -10,121 +10,121 @@ trait IPicker extends ISheet {
   /** [Config Option] (String) */
   var activeCls: js.UndefOr[String] = js.undefined
   /** [Method] Updates the cancelButton configuration
-  		* @param config Object
-  		* @returns Object
-  		*/
+    * @param config Object
+    * @returns Object
+    */
   var applyCancelButton: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Updates the doneButton configuration
-  		* @param config Object
-  		* @returns Object
-  		*/
+    * @param config Object
+    * @returns Object
+    */
   var applyDoneButton: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Config Option] (String/Mixed) */
   var cancelButton: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String/Mixed) */
   var doneButton: js.UndefOr[js.Any] = js.undefined
   /** [Method] Returns the value of bottom
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   @JSName("getBottom")
   var getBottom_IPicker: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of cancelButton
-  		* @returns String/Mixed
-  		*/
+    * @returns String/Mixed
+    */
   var getCancelButton: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of activeItem
-  		* @returns Object/String/Number
-  		*/
+    * @returns Object/String/Number
+    */
   var getCard: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of doneButton
-  		* @returns String/Mixed
-  		*/
+    * @returns String/Mixed
+    */
   var getDoneButton: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of layout
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getLayout: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of slots
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   var getSlots: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the value of toolbar
-  		* @returns Ext.TitleBar/Ext.Toolbar/Object
-  		*/
+    * @returns Ext.TitleBar/Ext.Toolbar/Object
+    */
   var getToolbar: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of toolbarPosition
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getToolbarPosition: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of useTitles
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getUseTitles: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the values of each of the pickers slots
-  		* @param useDom Object
-  		* @returns Object The values of the pickers slots
-  		*/
+    * @param useDom Object
+    * @returns Object The values of the pickers slots
+    */
   var getValue: js.UndefOr[js.Function1[/* useDom */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Returns the values of each of the pickers slots
-  		* @returns Object The values of the pickers slots.
-  		*/
+    * @returns Object The values of the pickers slots.
+    */
   var getValues: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Config Option] (Number) */
   @JSName("height")
   var height_IPicker: js.UndefOr[Double] = js.undefined
   /** [Method] Sets the value of bottom
-  		* @param bottom Number The new value.
-  		*/
+    * @param bottom Number The new value.
+    */
   @JSName("setBottom")
   var setBottom_IPicker: js.UndefOr[js.Function1[/* bottom */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of cancelButton
-  		* @param cancelButton String/Mixed The new value.
-  		*/
+    * @param cancelButton String/Mixed The new value.
+    */
   var setCancelButton: js.UndefOr[js.Function1[/* cancelButton */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of activeItem
-  		* @param activeItem Object/String/Number The new value.
-  		*/
+    * @param activeItem Object/String/Number The new value.
+    */
   var setCard: js.UndefOr[js.Function1[/* activeItem */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of doneButton
-  		* @param doneButton String/Mixed The new value.
-  		*/
+    * @param doneButton String/Mixed The new value.
+    */
   var setDoneButton: js.UndefOr[js.Function1[/* doneButton */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of height
-  		* @param height Number The new value.
-  		*/
+    * @param height Number The new value.
+    */
   @JSName("setHeight")
   var setHeight_IPicker: js.UndefOr[js.Function1[/* height */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of left
-  		* @param left Number The new value.
-  		*/
+    * @param left Number The new value.
+    */
   @JSName("setLeft")
   var setLeft_IPicker: js.UndefOr[js.Function1[/* left */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of right
-  		* @param right Number The new value.
-  		*/
+    * @param right Number The new value.
+    */
   @JSName("setRight")
   var setRight_IPicker: js.UndefOr[js.Function1[/* right */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of slots
-  		* @param slots Array The new value.
-  		*/
+    * @param slots Array The new value.
+    */
   var setSlots: js.UndefOr[js.Function1[/* slots */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Sets the value of toolbar
-  		* @param toolbar Ext.TitleBar/Ext.Toolbar/Object The new value.
-  		*/
+    * @param toolbar Ext.TitleBar/Ext.Toolbar/Object The new value.
+    */
   var setToolbar: js.UndefOr[js.Function1[/* toolbar */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of toolbarPosition
-  		* @param toolbarPosition String The new value.
-  		*/
+    * @param toolbarPosition String The new value.
+    */
   var setToolbarPosition: js.UndefOr[js.Function1[/* toolbarPosition */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of useTitles
-  		* @param useTitles Boolean The new value.
-  		*/
+    * @param useTitles Boolean The new value.
+    */
   var setUseTitles: js.UndefOr[js.Function1[/* useTitles */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the values of the pickers slots
-  		* @param values Object The values in a {name:'value'} format.
-  		* @param animated Boolean true to animate setting the values.
-  		* @returns Ext.Picker this This picker.
-  		*/
+    * @param values Object The values in a {name:'value'} format.
+    * @param animated Boolean true to animate setting the values.
+    * @returns Ext.Picker this This picker.
+    */
   var setValue: js.UndefOr[
     js.Function2[/* values */ js.UndefOr[js.Any], /* animated */ js.UndefOr[Boolean], this.type]
   ] = js.undefined
@@ -158,7 +158,7 @@ object IPicker {
     getUseTitles: () => Boolean = null,
     getValue: /* useDom */ js.UndefOr[js.Any] => _ = null,
     getValues: () => _ = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     setBottom: /* bottom */ js.UndefOr[Double] => Unit = null,
     setCancelButton: /* cancelButton */ js.UndefOr[js.Any] => Unit = null,
     setCard: /* activeItem */ js.UndefOr[js.Any] => Unit = null,
@@ -194,7 +194,7 @@ object IPicker {
     if (getUseTitles != null) __obj.updateDynamic("getUseTitles")(js.Any.fromFunction0(getUseTitles))
     if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction1(getValue))
     if (getValues != null) __obj.updateDynamic("getValues")(js.Any.fromFunction0(getValues))
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (setBottom != null) __obj.updateDynamic("setBottom")(js.Any.fromFunction1(setBottom))
     if (setCancelButton != null) __obj.updateDynamic("setCancelButton")(js.Any.fromFunction1(setCancelButton))
     if (setCard != null) __obj.updateDynamic("setCard")(js.Any.fromFunction1(setCard))
@@ -209,7 +209,7 @@ object IPicker {
     if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction2(setValue))
     if (slots != null) __obj.updateDynamic("slots")(slots.asInstanceOf[js.Any])
     if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
-    if (!js.isUndefined(useTitles)) __obj.updateDynamic("useTitles")(useTitles.asInstanceOf[js.Any])
+    if (!js.isUndefined(useTitles)) __obj.updateDynamic("useTitles")(useTitles.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPicker]
   }

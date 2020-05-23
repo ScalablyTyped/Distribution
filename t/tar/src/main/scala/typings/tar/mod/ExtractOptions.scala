@@ -148,15 +148,15 @@ object ExtractOptions {
     Directory: js.UndefOr[Boolean] = js.undefined,
     cwd: String = null,
     filter: (/* path */ String, /* stat */ FileStat) => Boolean = null,
-    gid: Int | Double = null,
+    gid: js.UndefOr[Double] = js.undefined,
     k: js.UndefOr[Boolean] = js.undefined,
     keep: js.UndefOr[Boolean] = js.undefined,
     `keep-existing`: js.UndefOr[Boolean] = js.undefined,
     `keep-newer`: js.UndefOr[Boolean] = js.undefined,
     `keep-newer-files`: js.UndefOr[Boolean] = js.undefined,
     m: js.UndefOr[Boolean] = js.undefined,
-    maxMetaEntrySize: Int | Double = null,
-    maxReadSize: Int | Double = null,
+    maxMetaEntrySize: js.UndefOr[Double] = js.undefined,
+    maxReadSize: js.UndefOr[Double] = js.undefined,
     newer: js.UndefOr[Boolean] = js.undefined,
     `no-mtime`: js.UndefOr[Boolean] = js.undefined,
     noMtime: js.UndefOr[Boolean] = js.undefined,
@@ -166,44 +166,44 @@ object ExtractOptions {
     path: String = null,
     preserveOwner: js.UndefOr[Boolean] = js.undefined,
     strict: js.UndefOr[Boolean] = js.undefined,
-    strip: Int | Double = null,
-    `strip-components`: Int | Double = null,
-    stripComponents: Int | Double = null,
+    strip: js.UndefOr[Double] = js.undefined,
+    `strip-components`: js.UndefOr[Double] = js.undefined,
+    stripComponents: js.UndefOr[Double] = js.undefined,
     transform: /* entry */ ReadEntry => js.UndefOr[WritableStream | `false` | Null] = null,
     `type`: String = null,
-    uid: Int | Double = null,
+    uid: js.UndefOr[Double] = js.undefined,
     unlink: js.UndefOr[Boolean] = js.undefined
   ): ExtractOptions = {
     val __obj = js.Dynamic.literal()
     if (C != null) __obj.updateDynamic("C")(C.asInstanceOf[js.Any])
-    if (!js.isUndefined(Directory)) __obj.updateDynamic("Directory")(Directory.asInstanceOf[js.Any])
+    if (!js.isUndefined(Directory)) __obj.updateDynamic("Directory")(Directory.get.asInstanceOf[js.Any])
     if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction2(filter))
-    if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
-    if (!js.isUndefined(k)) __obj.updateDynamic("k")(k.asInstanceOf[js.Any])
-    if (!js.isUndefined(keep)) __obj.updateDynamic("keep")(keep.asInstanceOf[js.Any])
-    if (!js.isUndefined(`keep-existing`)) __obj.updateDynamic("keep-existing")(`keep-existing`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`keep-newer`)) __obj.updateDynamic("keep-newer")(`keep-newer`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`keep-newer-files`)) __obj.updateDynamic("keep-newer-files")(`keep-newer-files`.asInstanceOf[js.Any])
-    if (!js.isUndefined(m)) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
-    if (maxMetaEntrySize != null) __obj.updateDynamic("maxMetaEntrySize")(maxMetaEntrySize.asInstanceOf[js.Any])
-    if (maxReadSize != null) __obj.updateDynamic("maxReadSize")(maxReadSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(newer)) __obj.updateDynamic("newer")(newer.asInstanceOf[js.Any])
-    if (!js.isUndefined(`no-mtime`)) __obj.updateDynamic("no-mtime")(`no-mtime`.asInstanceOf[js.Any])
-    if (!js.isUndefined(noMtime)) __obj.updateDynamic("noMtime")(noMtime.asInstanceOf[js.Any])
+    if (!js.isUndefined(gid)) __obj.updateDynamic("gid")(gid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(k)) __obj.updateDynamic("k")(k.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keep)) __obj.updateDynamic("keep")(keep.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`keep-existing`)) __obj.updateDynamic("keep-existing")(`keep-existing`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`keep-newer`)) __obj.updateDynamic("keep-newer")(`keep-newer`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`keep-newer-files`)) __obj.updateDynamic("keep-newer-files")(`keep-newer-files`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(m)) __obj.updateDynamic("m")(m.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxMetaEntrySize)) __obj.updateDynamic("maxMetaEntrySize")(maxMetaEntrySize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxReadSize)) __obj.updateDynamic("maxReadSize")(maxReadSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(newer)) __obj.updateDynamic("newer")(newer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`no-mtime`)) __obj.updateDynamic("no-mtime")(`no-mtime`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noMtime)) __obj.updateDynamic("noMtime")(noMtime.get.asInstanceOf[js.Any])
     if (onentry != null) __obj.updateDynamic("onentry")(js.Any.fromFunction1(onentry))
     if (onwarn != null) __obj.updateDynamic("onwarn")(js.Any.fromFunction2(onwarn))
-    if (!js.isUndefined(p)) __obj.updateDynamic("p")(p.asInstanceOf[js.Any])
+    if (!js.isUndefined(p)) __obj.updateDynamic("p")(p.get.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveOwner)) __obj.updateDynamic("preserveOwner")(preserveOwner.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
-    if (strip != null) __obj.updateDynamic("strip")(strip.asInstanceOf[js.Any])
-    if (`strip-components` != null) __obj.updateDynamic("strip-components")(`strip-components`.asInstanceOf[js.Any])
-    if (stripComponents != null) __obj.updateDynamic("stripComponents")(stripComponents.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveOwner)) __obj.updateDynamic("preserveOwner")(preserveOwner.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strip)) __obj.updateDynamic("strip")(strip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`strip-components`)) __obj.updateDynamic("strip-components")(`strip-components`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripComponents)) __obj.updateDynamic("stripComponents")(stripComponents.get.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
-    if (!js.isUndefined(unlink)) __obj.updateDynamic("unlink")(unlink.asInstanceOf[js.Any])
+    if (!js.isUndefined(uid)) __obj.updateDynamic("uid")(uid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unlink)) __obj.updateDynamic("unlink")(unlink.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtractOptions]
   }
 }

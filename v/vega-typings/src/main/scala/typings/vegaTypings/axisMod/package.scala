@@ -14,6 +14,7 @@ package object axisMod {
   /* Rewritten from type alias, can be one of: 
     - scala.Double
     - typings.vegaTypings.scaleMod.TimeInterval
+    - typings.vegaTypings.scaleMod.TimeIntervalStep
     - typings.vegaTypings.signalMod.SignalRef
   */
   type TickCount = typings.vegaTypings.axisMod._TickCount | scala.Double

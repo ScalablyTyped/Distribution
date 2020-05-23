@@ -9,27 +9,27 @@ import scala.scalajs.js.annotation._
 
 trait ISurface extends IObservable {
   /** [Method] Adds a Sprite to the surface
-  		* @param args Ext.draw.Sprite[]/Ext.draw.Sprite... One or more Sprite objects or configs.
-  		* @returns Ext.draw.Sprite[]/Ext.draw.Sprite The sprites added.
-  		*/
+    * @param args Ext.draw.Sprite[]/Ext.draw.Sprite... One or more Sprite objects or configs.
+    * @returns Ext.draw.Sprite[]/Ext.draw.Sprite The sprites added.
+    */
   var add: js.UndefOr[js.Function1[/* args */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Adds one or more CSS classes to the element
-  		* @param sprite Object The sprite to add the class to.
-  		* @param className String/String[] The CSS class to add, or an array of classes
-  		*/
+    * @param sprite Object The sprite to add the class to.
+    * @param className String/String[] The CSS class to add, or an array of classes
+    */
   var addCls: js.UndefOr[
     js.Function2[/* sprite */ js.UndefOr[js.Any], /* className */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Method] Adds a gradient definition to the Surface
-  		* @param gradient Object A gradient config.
-  		*/
+    * @param gradient Object A gradient config.
+    */
   var addGradient: js.UndefOr[js.Function1[/* gradient */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Destroys the surface  */
   var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Returns a new group or an existent group associated with the current surface
-  		* @param id String The unique identifier of the group.
-  		* @returns Object The Ext.draw.CompositeSprite.
-  		*/
+    * @param id String The unique identifier of the group.
+    * @returns Object The Ext.draw.CompositeSprite.
+    */
   var getGroup: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], _]] = js.undefined
   /** [Method] Retrieves the id of this component  */
   var getId: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -38,39 +38,39 @@ trait ISurface extends IObservable {
   /** [Config Option] (Ext.draw.Sprite[]) */
   var items: js.UndefOr[Array] = js.undefined
   /** [Method] Removes a given sprite from the surface optionally destroying the sprite in the process
-  		* @param sprite Ext.draw.Sprite
-  		* @param destroySprite Boolean
-  		*/
+    * @param sprite Ext.draw.Sprite
+    * @param destroySprite Boolean
+    */
   var remove: js.UndefOr[
     js.Function2[/* sprite */ js.UndefOr[ISprite], /* destroySprite */ js.UndefOr[Boolean], Unit]
   ] = js.undefined
   /** [Method] Removes all sprites from the surface optionally destroying the sprites in the process
-  		* @param destroySprites Boolean Whether to destroy all sprites when removing them.
-  		*/
+    * @param destroySprites Boolean Whether to destroy all sprites when removing them.
+    */
   var removeAll: js.UndefOr[js.Function1[/* destroySprites */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Removes one or more CSS classes from the element
-  		* @param sprite Object The sprite to remove the class from.
-  		* @param className String/String[] The CSS class to remove, or an array of classes
-  		*/
+    * @param sprite Object The sprite to remove the class from.
+    * @param className String/String[] The CSS class to remove, or an array of classes
+    */
   var removeCls: js.UndefOr[
     js.Function2[/* sprite */ js.UndefOr[js.Any], /* className */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Method] Sets the size of the surface
-  		* @param w Number The new width of the canvas.
-  		* @param h Number The new height of the canvas.
-  		*/
+    * @param w Number The new width of the canvas.
+    * @param h Number The new height of the canvas.
+    */
   var setSize: js.UndefOr[js.Function2[/* w */ js.UndefOr[Double], /* h */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets CSS style attributes to an element
-  		* @param sprite Object The sprite to add, or an array of classes to
-  		* @param styles Object An Object with CSS styles.
-  		*/
+    * @param sprite Object The sprite to add, or an array of classes to
+    * @param styles Object An Object with CSS styles.
+    */
   var setStyle: js.UndefOr[
     js.Function2[/* sprite */ js.UndefOr[js.Any], /* styles */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Method] Changes the text in the sprite element
-  		* @param sprite Object The Sprite to change the text.
-  		* @param text String The new text to be set.
-  		*/
+    * @param sprite Object The Sprite to change the text.
+    * @param text String The new text to be set.
+    */
   var setText: js.UndefOr[
     js.Function2[/* sprite */ js.UndefOr[js.Any], /* text */ js.UndefOr[String], Unit]
   ] = js.undefined
@@ -105,7 +105,7 @@ object ISurface {
     getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => ISurface = null,
     isObservable: js.UndefOr[Boolean] = js.undefined,
@@ -134,7 +134,7 @@ object ISurface {
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
     un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): ISurface = {
     val __obj = js.Dynamic.literal()
     if (add != null) __obj.updateDynamic("add")(js.Any.fromFunction1(add))
@@ -161,10 +161,10 @@ object ISurface {
     if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
     if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
     if (hasListeners != null) __obj.updateDynamic("hasListeners")(hasListeners.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
@@ -184,13 +184,13 @@ object ISurface {
     if (setSize != null) __obj.updateDynamic("setSize")(js.Any.fromFunction2(setSize))
     if (setStyle != null) __obj.updateDynamic("setStyle")(js.Any.fromFunction2(setStyle))
     if (setText != null) __obj.updateDynamic("setText")(js.Any.fromFunction2(setText))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction1(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction3(un))
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISurface]
   }
 }

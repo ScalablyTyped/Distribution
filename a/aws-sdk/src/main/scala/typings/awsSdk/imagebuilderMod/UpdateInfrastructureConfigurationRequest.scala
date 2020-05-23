@@ -65,7 +65,7 @@ object UpdateInfrastructureConfigurationRequest {
     securityGroupIds: SecurityGroupIds = null,
     snsTopicArn: SnsTopicArn = null,
     subnetId: NonEmptyString = null,
-    terminateInstanceOnFailure: js.UndefOr[Boolean] = js.undefined
+    terminateInstanceOnFailure: js.UndefOr[NullableBoolean] = js.undefined
   ): UpdateInfrastructureConfigurationRequest = {
     val __obj = js.Dynamic.literal(clientToken = clientToken.asInstanceOf[js.Any], infrastructureConfigurationArn = infrastructureConfigurationArn.asInstanceOf[js.Any], instanceProfileName = instanceProfileName.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
@@ -75,7 +75,7 @@ object UpdateInfrastructureConfigurationRequest {
     if (securityGroupIds != null) __obj.updateDynamic("securityGroupIds")(securityGroupIds.asInstanceOf[js.Any])
     if (snsTopicArn != null) __obj.updateDynamic("snsTopicArn")(snsTopicArn.asInstanceOf[js.Any])
     if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
-    if (!js.isUndefined(terminateInstanceOnFailure)) __obj.updateDynamic("terminateInstanceOnFailure")(terminateInstanceOnFailure.asInstanceOf[js.Any])
+    if (!js.isUndefined(terminateInstanceOnFailure)) __obj.updateDynamic("terminateInstanceOnFailure")(terminateInstanceOnFailure.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateInfrastructureConfigurationRequest]
   }
 }

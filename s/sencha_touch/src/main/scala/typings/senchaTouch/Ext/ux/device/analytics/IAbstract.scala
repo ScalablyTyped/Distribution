@@ -9,24 +9,24 @@ import scala.scalajs.js.annotation._
 
 trait IAbstract extends IBase {
   /** [Method] Returns the value of accountID
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getAccountID: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Registers yur Google Analytics account
-  		* @param accountID String Your Google Analytics account ID
-  		*/
+    * @param accountID String Your Google Analytics account ID
+    */
   var registerAccount: js.UndefOr[js.Function1[/* accountID */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of accountID
-  		* @param accountID Object The new value.
-  		*/
+    * @param accountID Object The new value.
+    */
   var setAccountID: js.UndefOr[js.Function1[/* accountID */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Track an event in your application
-  		* @param config Object
-  		*/
+    * @param config Object
+    */
   var trackEvent: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Track an pageview in your application
-  		* @param config String The page you want to track (must start with a slash).
-  		*/
+    * @param config String The page you want to track (must start with a slash).
+    */
   var trackPageview: js.UndefOr[js.Function1[/* config */ js.UndefOr[String], Unit]] = js.undefined
 }
 
@@ -74,7 +74,7 @@ object IAbstract {
     if (registerAccount != null) __obj.updateDynamic("registerAccount")(js.Any.fromFunction1(registerAccount))
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setAccountID != null) __obj.updateDynamic("setAccountID")(js.Any.fromFunction1(setAccountID))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (trackEvent != null) __obj.updateDynamic("trackEvent")(js.Any.fromFunction1(trackEvent))
     if (trackPageview != null) __obj.updateDynamic("trackPageview")(js.Any.fromFunction1(trackPageview))

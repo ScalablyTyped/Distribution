@@ -13,11 +13,15 @@ trait MouseOptions extends js.Object {
 
 object MouseOptions {
   @scala.inline
-  def apply(cancel: String = null, delay: Int | Double = null, distance: Int | Double = null): MouseOptions = {
+  def apply(
+    cancel: String = null,
+    delay: js.UndefOr[Double] = js.undefined,
+    distance: js.UndefOr[Double] = js.undefined
+  ): MouseOptions = {
     val __obj = js.Dynamic.literal()
     if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MouseOptions]
   }
 }

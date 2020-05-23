@@ -1,9 +1,9 @@
 package typings.fibers.futureMod
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.fibers.futureMod._Global_.Function
-import typings.fibers.futureMod._Global_.FutureFunction
-import typings.fibers.futureMod._Global_.FutureObject
+import typings.fibers.futureMod.global.Function
+import typings.fibers.futureMod.global.FutureFunction
+import typings.fibers.futureMod.global.FutureObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

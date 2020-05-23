@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.detailsHeaderTypesMod
 
-import typings.officeUiFabricReact.AnonDropLocation
+import typings.officeUiFabricReact.anon.DropLocation
 import typings.officeUiFabricReact.detailsListTypesMod.ColumnDragEndLocation
 import typings.officeUiFabricReact.detailsListTypesMod.IColumnDragDropDetails
 import typings.officeUiFabricReact.detailsListTypesMod.IColumnReorderOptions
@@ -14,23 +14,23 @@ trait IColumnReorderHeaderProps extends IColumnReorderOptions {
     * Need this to check whether the dragEnd has happened on
     * corresponding list or outside of the list
     */
-  var onColumnDragEnd: js.UndefOr[js.Function2[/* props */ AnonDropLocation, /* event */ MouseEvent, Unit]] = js.undefined
+  var onColumnDragEnd: js.UndefOr[js.Function2[/* props */ DropLocation, /* event */ MouseEvent, Unit]] = js.undefined
 }
 
 object IColumnReorderHeaderProps {
   @scala.inline
   def apply(
-    frozenColumnCountFromEnd: Int | Double = null,
-    frozenColumnCountFromStart: Int | Double = null,
+    frozenColumnCountFromEnd: js.UndefOr[Double] = js.undefined,
+    frozenColumnCountFromStart: js.UndefOr[Double] = js.undefined,
     handleColumnReorder: (/* draggedIndex */ Double, /* targetIndex */ Double) => Unit = null,
-    onColumnDragEnd: (/* props */ AnonDropLocation, /* event */ MouseEvent) => Unit = null,
+    onColumnDragEnd: (/* props */ DropLocation, /* event */ MouseEvent) => Unit = null,
     onColumnDragStart: /* dragStarted */ Boolean => Unit = null,
     onColumnDrop: /* dragDropDetails */ IColumnDragDropDetails => Unit = null,
     onDragEnd: /* columnDropLocationDetails */ ColumnDragEndLocation => Unit = null
   ): IColumnReorderHeaderProps = {
     val __obj = js.Dynamic.literal()
-    if (frozenColumnCountFromEnd != null) __obj.updateDynamic("frozenColumnCountFromEnd")(frozenColumnCountFromEnd.asInstanceOf[js.Any])
-    if (frozenColumnCountFromStart != null) __obj.updateDynamic("frozenColumnCountFromStart")(frozenColumnCountFromStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(frozenColumnCountFromEnd)) __obj.updateDynamic("frozenColumnCountFromEnd")(frozenColumnCountFromEnd.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(frozenColumnCountFromStart)) __obj.updateDynamic("frozenColumnCountFromStart")(frozenColumnCountFromStart.get.asInstanceOf[js.Any])
     if (handleColumnReorder != null) __obj.updateDynamic("handleColumnReorder")(js.Any.fromFunction2(handleColumnReorder))
     if (onColumnDragEnd != null) __obj.updateDynamic("onColumnDragEnd")(js.Any.fromFunction2(onColumnDragEnd))
     if (onColumnDragStart != null) __obj.updateDynamic("onColumnDragStart")(js.Any.fromFunction1(onColumnDragStart))

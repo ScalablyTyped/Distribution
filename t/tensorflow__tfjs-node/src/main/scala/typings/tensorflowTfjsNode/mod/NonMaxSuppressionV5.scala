@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@tensorflow/tfjs-node", "NonMaxSuppressionV5")
 @js.native
-object NonMaxSuppressionV5
-  extends TopLevel[typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.NonMaxSuppressionV5]
+object NonMaxSuppressionV5 extends TopLevel[/* "Identity" */ String]
 

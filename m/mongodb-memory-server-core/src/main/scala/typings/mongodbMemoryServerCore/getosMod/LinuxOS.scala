@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.mongodbMemoryServerCore.getosMod.AnyOS because Already inherited */ trait LinuxOS extends OtherOS {
   var codename: js.UndefOr[String] = js.undefined
   var dist: String

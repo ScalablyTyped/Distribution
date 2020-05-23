@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +13,4 @@ trait websceneApplicationProperties extends Accessor {
     */
   var viewing: Viewing = js.native
 }
-
-@JSGlobal("__esri.websceneApplicationProperties")
-@js.native
-object websceneApplicationProperties extends TopLevel[websceneApplicationPropertiesConstructor]
 

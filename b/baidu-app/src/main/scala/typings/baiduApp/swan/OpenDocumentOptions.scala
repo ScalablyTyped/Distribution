@@ -14,12 +14,12 @@ import scala.scalajs.js.annotation._
 trait OpenDocumentOptions
   extends BaseOptions[js.Any, js.Any] {
   /**
-  		 * 文件路径，可通过 downFile 获得
-  		 */
+    * 文件路径，可通过 downFile 获得
+    */
   var filePath: String
   /**
-  		 * 文件类型，指定文件类型打开文件，有效值 doc, xls, ppt, pdf, docx, xlsx, pptx
-  		 */
+    * 文件类型，指定文件类型打开文件，有效值 doc, xls, ppt, pdf, docx, xlsx, pptx
+    */
   var fileType: js.UndefOr[doc | xls | ppt | pdf | docx | xlsx | pptx] = js.undefined
 }
 

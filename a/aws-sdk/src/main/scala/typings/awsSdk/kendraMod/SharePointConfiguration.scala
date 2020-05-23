@@ -15,7 +15,7 @@ trait SharePointConfiguration extends js.Object {
     */
   var DocumentTitleFieldName: js.UndefOr[DataSourceFieldName] = js.native
   /**
-    * A list of regular expression patterns. Documents that match the patterns are excluded from the index. Documents that don't match the patterns are included in the index. If a document matches both an exclusion pattern and an inclusion pattern, the document is not included in the index. The regex is applied to the display URL of the SharePoint document.
+    * A list of regulary expression patterns. Documents that match the patterns are excluded from the index. Documents that don't match the patterns are included in the index. If a document matches both an exclusion pattern and an inclusion pattern, the document is not included in the index. The regex is applied to the display URL of the SharePoint document.
     */
   var ExclusionPatterns: js.UndefOr[DataSourceInclusionsExclusionsStrings] = js.native
   /**
@@ -51,21 +51,21 @@ object SharePointConfiguration {
     SecretArn: SecretArn,
     SharePointVersion: SharePointVersion,
     Urls: SharePointUrlList,
-    CrawlAttachments: js.UndefOr[scala.Boolean] = js.undefined,
+    CrawlAttachments: js.UndefOr[Boolean] = js.undefined,
     DocumentTitleFieldName: DataSourceFieldName = null,
     ExclusionPatterns: DataSourceInclusionsExclusionsStrings = null,
     FieldMappings: DataSourceToIndexFieldMappingList = null,
     InclusionPatterns: DataSourceInclusionsExclusionsStrings = null,
-    UseChangeLog: js.UndefOr[scala.Boolean] = js.undefined,
+    UseChangeLog: js.UndefOr[Boolean] = js.undefined,
     VpcConfiguration: DataSourceVpcConfiguration = null
   ): SharePointConfiguration = {
     val __obj = js.Dynamic.literal(SecretArn = SecretArn.asInstanceOf[js.Any], SharePointVersion = SharePointVersion.asInstanceOf[js.Any], Urls = Urls.asInstanceOf[js.Any])
-    if (!js.isUndefined(CrawlAttachments)) __obj.updateDynamic("CrawlAttachments")(CrawlAttachments.asInstanceOf[js.Any])
+    if (!js.isUndefined(CrawlAttachments)) __obj.updateDynamic("CrawlAttachments")(CrawlAttachments.get.asInstanceOf[js.Any])
     if (DocumentTitleFieldName != null) __obj.updateDynamic("DocumentTitleFieldName")(DocumentTitleFieldName.asInstanceOf[js.Any])
     if (ExclusionPatterns != null) __obj.updateDynamic("ExclusionPatterns")(ExclusionPatterns.asInstanceOf[js.Any])
     if (FieldMappings != null) __obj.updateDynamic("FieldMappings")(FieldMappings.asInstanceOf[js.Any])
     if (InclusionPatterns != null) __obj.updateDynamic("InclusionPatterns")(InclusionPatterns.asInstanceOf[js.Any])
-    if (!js.isUndefined(UseChangeLog)) __obj.updateDynamic("UseChangeLog")(UseChangeLog.asInstanceOf[js.Any])
+    if (!js.isUndefined(UseChangeLog)) __obj.updateDynamic("UseChangeLog")(UseChangeLog.get.asInstanceOf[js.Any])
     if (VpcConfiguration != null) __obj.updateDynamic("VpcConfiguration")(VpcConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharePointConfiguration]
   }

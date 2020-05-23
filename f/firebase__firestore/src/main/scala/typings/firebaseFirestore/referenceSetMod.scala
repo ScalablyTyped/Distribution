@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/reference_set", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/reference_set", JSImport.Namespace)
 @js.native
 object referenceSetMod extends js.Object {
   @js.native

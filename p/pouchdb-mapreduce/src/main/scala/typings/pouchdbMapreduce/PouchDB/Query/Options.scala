@@ -52,39 +52,39 @@ trait Options[Content /* <: js.Object */, Reduction] extends js.Object {
 
 object Options {
   @scala.inline
-  def apply[Content /* <: js.Object */, Reduction](
+  def apply[Content, Reduction](
     attachments: js.UndefOr[Boolean] = js.undefined,
     binary: js.UndefOr[Boolean] = js.undefined,
     conflicts: js.UndefOr[Boolean] = js.undefined,
     descending: js.UndefOr[Boolean] = js.undefined,
     endkey: js.Any = null,
     group: js.UndefOr[Boolean] = js.undefined,
-    group_level: Int | Double = null,
+    group_level: js.UndefOr[Double] = js.undefined,
     include_docs: js.UndefOr[Boolean] = js.undefined,
     inclusive_end: js.UndefOr[Boolean] = js.undefined,
     key: js.Any = null,
     keys: js.Array[_] = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     reduce: (Reducer[Content, Reduction]) | BuiltInReducers | Boolean = null,
-    skip: Int | Double = null,
+    skip: js.UndefOr[Double] = js.undefined,
     stale: ok | update_after = null,
     startkey: js.Any = null
   ): Options[Content, Reduction] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
-    if (!js.isUndefined(conflicts)) __obj.updateDynamic("conflicts")(conflicts.asInstanceOf[js.Any])
-    if (!js.isUndefined(descending)) __obj.updateDynamic("descending")(descending.asInstanceOf[js.Any])
+    if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(conflicts)) __obj.updateDynamic("conflicts")(conflicts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(descending)) __obj.updateDynamic("descending")(descending.get.asInstanceOf[js.Any])
     if (endkey != null) __obj.updateDynamic("endkey")(endkey.asInstanceOf[js.Any])
-    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (group_level != null) __obj.updateDynamic("group_level")(group_level.asInstanceOf[js.Any])
-    if (!js.isUndefined(include_docs)) __obj.updateDynamic("include_docs")(include_docs.asInstanceOf[js.Any])
-    if (!js.isUndefined(inclusive_end)) __obj.updateDynamic("inclusive_end")(inclusive_end.asInstanceOf[js.Any])
+    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(group_level)) __obj.updateDynamic("group_level")(group_level.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(include_docs)) __obj.updateDynamic("include_docs")(include_docs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inclusive_end)) __obj.updateDynamic("inclusive_end")(inclusive_end.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (reduce != null) __obj.updateDynamic("reduce")(reduce.asInstanceOf[js.Any])
-    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.get.asInstanceOf[js.Any])
     if (stale != null) __obj.updateDynamic("stale")(stale.asInstanceOf[js.Any])
     if (startkey != null) __obj.updateDynamic("startkey")(startkey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[Content, Reduction]]

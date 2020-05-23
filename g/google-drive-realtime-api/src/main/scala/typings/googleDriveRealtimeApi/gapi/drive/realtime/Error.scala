@@ -4,16 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("gapi.drive.realtime.Error")
-@js.native
-class Error protected () extends js.Object {
-  def this(`type`: String, message: String, isFatal: Boolean) = this()
+trait Error extends js.Object {
   // Whether the error is fatal. Fatal errors cannot be recovered
   // from and require the document to be reloaded.
-  var isFatal: Boolean = js.native
+  var isFatal: Boolean
   // A message describing the error.
-  var message: String = js.native
+  var message: String
   // The type of the error that occurred.
-  var `type`: ErrorType = js.native
+  var `type`: ErrorType
+}
+
+object Error {
+  @scala.inline
+  def apply(isFatal: Boolean, message: String, `type`: ErrorType): Error = {
+    val __obj = js.Dynamic.literal(isFatal = isFatal.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Error]
+  }
 }
 

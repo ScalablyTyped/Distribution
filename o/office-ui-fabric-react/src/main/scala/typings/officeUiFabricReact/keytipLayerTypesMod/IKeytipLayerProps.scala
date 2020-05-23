@@ -69,7 +69,7 @@ object IKeytipLayerProps {
     keytipStartSequences: js.Array[IKeytipTransitionKey] = null,
     onEnterKeytipMode: () => Unit = null,
     onExitKeytipMode: /* ev */ js.UndefOr[KeyboardEvent[HTMLElement] | (MouseEvent[HTMLElement, NativeMouseEvent])] => Unit = null,
-    ref: LegacyRef[IKeytipLayer] = null,
+    ref: js.UndefOr[Null | LegacyRef[IKeytipLayer]] = js.undefined,
     styles: IStyleFunctionOrObject[IKeytipLayerStyleProps, IKeytipLayerStyles] = null
   ): IKeytipLayerProps = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
@@ -80,7 +80,7 @@ object IKeytipLayerProps {
     if (keytipStartSequences != null) __obj.updateDynamic("keytipStartSequences")(keytipStartSequences.asInstanceOf[js.Any])
     if (onEnterKeytipMode != null) __obj.updateDynamic("onEnterKeytipMode")(js.Any.fromFunction0(onEnterKeytipMode))
     if (onExitKeytipMode != null) __obj.updateDynamic("onExitKeytipMode")(js.Any.fromFunction1(onExitKeytipMode))
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKeytipLayerProps]
   }

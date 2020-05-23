@@ -1,5 +1,8 @@
 package typings.angularCompiler
 
+import typings.angularCompiler.anon.Json
+import typings.angularCompiler.anon.Metadata
+import typings.angularCompiler.anon.ModuleName
 import typings.angularCompiler.srcSummaryResolverMod.SummaryResolver
 import typings.angularCompiler.srcUtilMod.OutputContext
 import typings.angularCompiler.staticSymbolMod.StaticSymbol
@@ -19,40 +22,40 @@ object summarySerializerMod extends js.Object {
     summaryResolver: SummaryResolver[StaticSymbol],
     libraryFileName: String,
     json: String
-  ): AnonModuleName = js.native
+  ): ModuleName = js.native
   def serializeSummaries(
     srcFileName: String,
     forJitCtx: Null,
     summaryResolver: SummaryResolver[StaticSymbol],
     symbolResolver: StaticSymbolResolver,
     symbols: js.Array[ResolvedStaticSymbol],
-    types: js.Array[AnonMetadata]
-  ): AnonJson = js.native
+    types: js.Array[Metadata]
+  ): Json = js.native
   def serializeSummaries(
     srcFileName: String,
     forJitCtx: Null,
     summaryResolver: SummaryResolver[StaticSymbol],
     symbolResolver: StaticSymbolResolver,
     symbols: js.Array[ResolvedStaticSymbol],
-    types: js.Array[AnonMetadata],
+    types: js.Array[Metadata],
     createExternalSymbolReexports: Boolean
-  ): AnonJson = js.native
+  ): Json = js.native
   def serializeSummaries(
     srcFileName: String,
     forJitCtx: OutputContext,
     summaryResolver: SummaryResolver[StaticSymbol],
     symbolResolver: StaticSymbolResolver,
     symbols: js.Array[ResolvedStaticSymbol],
-    types: js.Array[AnonMetadata]
-  ): AnonJson = js.native
+    types: js.Array[Metadata]
+  ): Json = js.native
   def serializeSummaries(
     srcFileName: String,
     forJitCtx: OutputContext,
     summaryResolver: SummaryResolver[StaticSymbol],
     symbolResolver: StaticSymbolResolver,
     symbols: js.Array[ResolvedStaticSymbol],
-    types: js.Array[AnonMetadata],
+    types: js.Array[Metadata],
     createExternalSymbolReexports: Boolean
-  ): AnonJson = js.native
+  ): Json = js.native
 }
 

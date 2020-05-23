@@ -1,7 +1,7 @@
 package typings.ionic.libSshMod
 
-import typings.ionic.AnonIdNumber
-import typings.ionic.PartialPaginateArgsResponMax
+import typings.ionic.anon.IdNumber
+import typings.ionic.anon.PartialPaginateArgsResponMax
 import typings.ionic.definitionsMod.IClient
 import typings.ionic.definitionsMod.IPaginator
 import typings.ionic.definitionsMod.PaginatorState
@@ -27,7 +27,7 @@ class SSHKeyClient protected ()
   def this(hasClientTokenUser: SSHKeyClientDeps) = this()
   var client: IClient = js.native
   var token: String = js.native
-  var user: AnonIdNumber = js.native
+  var user: IdNumber = js.native
   /* CompleteClass */
   override def create(details: SSHKeyCreateDetails): js.Promise[SSHKey] = js.native
   def load(id: String): js.Promise[SSHKey] = js.native

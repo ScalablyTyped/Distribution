@@ -1,6 +1,6 @@
 package typings.elasticsearch.mod
 
-import typings.elasticsearch.AnonHits
+import typings.elasticsearch.anon.Hits
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ trait SearchResponse[T] extends js.Object {
   var _scroll_id: js.UndefOr[String] = js.undefined
   var _shards: ShardsResponse
   var aggregations: js.UndefOr[js.Any] = js.undefined
-  var hits: AnonHits[T]
+  var hits: Hits[T]
   var timed_out: Boolean
   var took: Double
 }
@@ -18,7 +18,7 @@ object SearchResponse {
   @scala.inline
   def apply[T](
     _shards: ShardsResponse,
-    hits: AnonHits[T],
+    hits: Hits[T],
     timed_out: Boolean,
     took: Double,
     _scroll_id: String = null,

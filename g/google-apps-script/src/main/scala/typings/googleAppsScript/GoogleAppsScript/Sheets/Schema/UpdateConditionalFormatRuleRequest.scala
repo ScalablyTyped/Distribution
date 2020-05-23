@@ -14,16 +14,16 @@ trait UpdateConditionalFormatRuleRequest extends js.Object {
 object UpdateConditionalFormatRuleRequest {
   @scala.inline
   def apply(
-    index: Int | Double = null,
-    newIndex: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
+    newIndex: js.UndefOr[Double] = js.undefined,
     rule: ConditionalFormatRule = null,
-    sheetId: Int | Double = null
+    sheetId: js.UndefOr[Double] = js.undefined
   ): UpdateConditionalFormatRuleRequest = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (newIndex != null) __obj.updateDynamic("newIndex")(newIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(newIndex)) __obj.updateDynamic("newIndex")(newIndex.get.asInstanceOf[js.Any])
     if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
-    if (sheetId != null) __obj.updateDynamic("sheetId")(sheetId.asInstanceOf[js.Any])
+    if (!js.isUndefined(sheetId)) __obj.updateDynamic("sheetId")(sheetId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateConditionalFormatRuleRequest]
   }
 }

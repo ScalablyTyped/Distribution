@@ -31,7 +31,7 @@ object Options {
     protocol: httpColon | httpsColon = null,
     proxyAuth: String = null,
     proxyHttpsOptions: StringDictionary[js.Any] = null,
-    sockets: Int | Double = null
+    sockets: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
     if (connect != null) __obj.updateDynamic("connect")(connect.asInstanceOf[js.Any])
@@ -39,7 +39,7 @@ object Options {
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (proxyAuth != null) __obj.updateDynamic("proxyAuth")(proxyAuth.asInstanceOf[js.Any])
     if (proxyHttpsOptions != null) __obj.updateDynamic("proxyHttpsOptions")(proxyHttpsOptions.asInstanceOf[js.Any])
-    if (sockets != null) __obj.updateDynamic("sockets")(sockets.asInstanceOf[js.Any])
+    if (!js.isUndefined(sockets)) __obj.updateDynamic("sockets")(sockets.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -10,9 +10,9 @@ trait GanttCurrentTimeMarker extends js.Object {
 
 object GanttCurrentTimeMarker {
   @scala.inline
-  def apply(updateInterval: Int | Double = null): GanttCurrentTimeMarker = {
+  def apply(updateInterval: js.UndefOr[Double] = js.undefined): GanttCurrentTimeMarker = {
     val __obj = js.Dynamic.literal()
-    if (updateInterval != null) __obj.updateDynamic("updateInterval")(updateInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateInterval)) __obj.updateDynamic("updateInterval")(updateInterval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttCurrentTimeMarker]
   }
 }

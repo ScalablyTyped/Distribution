@@ -16,7 +16,7 @@ object PlotVbpVolumeDivisionOptions {
   @scala.inline
   def apply(enabled: js.UndefOr[Boolean] = js.undefined, styles: PlotVbpVolumeDivisionStylesOptions = null): PlotVbpVolumeDivisionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotVbpVolumeDivisionOptions]
   }

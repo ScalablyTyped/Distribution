@@ -61,12 +61,12 @@ trait ProgressBarProps extends Props {
 object ProgressBarProps {
   @scala.inline
   def apply(
-    buffer: Int | Double = null,
+    buffer: js.UndefOr[Double] = js.undefined,
     className: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     key: Key = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
     mode: determinate | indeterminate = null,
     multicolor: js.UndefOr[Boolean] = js.undefined,
     onClick: js.Function = null,
@@ -94,17 +94,17 @@ object ProgressBarProps {
     style: CSSProperties = null,
     theme: ProgressBarTheme = null,
     `type`: linear | circular = null,
-    value: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined
   ): ProgressBarProps = {
     val __obj = js.Dynamic.literal()
-    if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(multicolor)) __obj.updateDynamic("multicolor")(multicolor.asInstanceOf[js.Any])
+    if (!js.isUndefined(multicolor)) __obj.updateDynamic("multicolor")(multicolor.get.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
     if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(onContextMenu.asInstanceOf[js.Any])
     if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(onDoubleClick.asInstanceOf[js.Any])
@@ -130,7 +130,7 @@ object ProgressBarProps {
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressBarProps]
   }
 }

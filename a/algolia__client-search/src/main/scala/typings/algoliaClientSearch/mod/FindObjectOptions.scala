@@ -21,7 +21,7 @@ object FindObjectOptions {
   @scala.inline
   def apply(paginate: js.UndefOr[Boolean] = js.undefined, query: String = null): FindObjectOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(paginate)) __obj.updateDynamic("paginate")(paginate.asInstanceOf[js.Any])
+    if (!js.isUndefined(paginate)) __obj.updateDynamic("paginate")(paginate.get.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindObjectOptions]
   }

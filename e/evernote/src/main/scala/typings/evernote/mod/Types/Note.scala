@@ -1,6 +1,6 @@
 package typings.evernote.mod.Types
 
-import typings.evernote.AnonActive
+import typings.evernote.anon.Active
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("evernote", "Types.Note")
 @js.native
 class Note () extends js.Object {
-  def this(args: AnonActive) = this()
+  def this(args: Active) = this()
   var active: js.UndefOr[Boolean] = js.native
   var attributes: js.UndefOr[NoteAttributes] = js.native
   var content: js.UndefOr[String] = js.native

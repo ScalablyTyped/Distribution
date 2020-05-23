@@ -10,11 +10,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.Scheduler")
 @js.native
-class Scheduler protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: SchedulerOptions) = this()
+trait Scheduler extends Widget {
   var calendar: Calendar = js.native
   var dataSource: DataSource = js.native
   @JSName("options")
@@ -51,13 +48,5 @@ class Scheduler protected () extends Widget {
   def viewName(): String = js.native
   @JSName("view")
   def view_Unit(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.Scheduler")
-@js.native
-object Scheduler extends js.Object {
-  var fn: Scheduler = js.native
-  def extend(proto: js.Object): Scheduler = js.native
 }
 

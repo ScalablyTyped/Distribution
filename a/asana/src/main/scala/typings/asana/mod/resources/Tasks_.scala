@@ -1,6 +1,6 @@
 package typings.asana.mod.resources
 
-import typings.asana.CreateParamsworkspacestri
+import typings.asana.anon.CreateParamsworkspacestri
 import typings.asana.mod.resources.Stories.Type
 import typings.asana.mod.resources.Tasks.AddProjectParams
 import typings.asana.mod.resources.Tasks.CommentParams

@@ -26,6 +26,9 @@ object spotifyWebApiJsStrings {
   sealed trait context extends PlaybackRepeatState
   
   @js.native
+  sealed trait episode extends js.Object
+  
+  @js.native
   sealed trait genre extends js.Object
   
   @js.native
@@ -33,6 +36,9 @@ object spotifyWebApiJsStrings {
   
   @js.native
   sealed trait playlist extends ContextObjectType
+  
+  @js.native
+  sealed trait show extends js.Object
   
   @js.native
   sealed trait track extends PlaybackRepeatState
@@ -53,11 +59,15 @@ object spotifyWebApiJsStrings {
   @scala.inline
   def context: context = "context".asInstanceOf[context]
   @scala.inline
+  def episode: episode = "episode".asInstanceOf[episode]
+  @scala.inline
   def genre: genre = "genre".asInstanceOf[genre]
   @scala.inline
   def off: off = "off".asInstanceOf[off]
   @scala.inline
   def playlist: playlist = "playlist".asInstanceOf[playlist]
+  @scala.inline
+  def show: show = "show".asInstanceOf[show]
   @scala.inline
   def track: track = "track".asInstanceOf[track]
   @scala.inline

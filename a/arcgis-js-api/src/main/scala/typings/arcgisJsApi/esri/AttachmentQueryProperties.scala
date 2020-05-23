@@ -83,11 +83,11 @@ object AttachmentQueryProperties {
     globalIds: js.Array[Double] = null,
     keywords: js.Array[String] = null,
     name: String = null,
-    num: Int | Double = null,
+    num: js.UndefOr[Double] = js.undefined,
     objectIds: js.Array[Double] = null,
     returnMetadata: js.UndefOr[Boolean] = js.undefined,
     size: js.Array[Double] = null,
-    start: Int | Double = null,
+    start: js.UndefOr[Double] = js.undefined,
     where: String = null
   ): AttachmentQueryProperties = {
     val __obj = js.Dynamic.literal()
@@ -96,11 +96,11 @@ object AttachmentQueryProperties {
     if (globalIds != null) __obj.updateDynamic("globalIds")(globalIds.asInstanceOf[js.Any])
     if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (num != null) __obj.updateDynamic("num")(num.asInstanceOf[js.Any])
+    if (!js.isUndefined(num)) __obj.updateDynamic("num")(num.get.asInstanceOf[js.Any])
     if (objectIds != null) __obj.updateDynamic("objectIds")(objectIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnMetadata)) __obj.updateDynamic("returnMetadata")(returnMetadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnMetadata)) __obj.updateDynamic("returnMetadata")(returnMetadata.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentQueryProperties]
   }

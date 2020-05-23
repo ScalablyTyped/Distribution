@@ -1,5 +1,6 @@
 package typings.phaser.Phaser.GameObjects
 
+import typings.phaser.MatterJS.BodyType
 import typings.phaser.Phaser.Cameras.Scene2D.Camera
 import typings.phaser.Phaser.Data.DataManager
 import typings.phaser.Phaser.Events.EventEmitter
@@ -21,18 +22,11 @@ import scala.scalajs.js.annotation._
   * You don't create GameObjects directly and they cannot be added to the display list.
   * Instead, use them as the base for your own custom classes.
   */
-@JSGlobal("Phaser.GameObjects.GameObject")
 @js.native
-class GameObject protected ()
+trait GameObject
   extends EventEmitter
      with MatterBody
      with _ArcadeColliderType {
-  /**
-    * 
-    * @param scene The Scene to which this Game Object belongs.
-    * @param type A textual representation of the type of Game Object, i.e. `sprite`.
-    */
-  def this(scene: Scene, `type`: String) = this()
   /**
     * The active state of this Game Object.
     * A Game Object with an active state of `true` is processed by the Scenes UpdateList, if added to it.
@@ -40,9 +34,9 @@ class GameObject protected ()
     */
   var active: Boolean = js.native
   /**
-    * If this Game Object is enabled for physics then this property will contain a reference to a Physics Body.
+    * If this Game Object is enabled for Arcade or Matter Physics then this property will contain a reference to a Physics Body.
     */
-  var body: js.Object | Body | typings.phaser.Phaser.Physics.Impact.Body = js.native
+  var body: js.Object | Body | BodyType = js.native
   /**
     * A bitmask that controls if this Game Object is drawn by a Camera or not.
     * Not usually set directly, instead call `Camera.ignore`, however you can
@@ -154,6 +148,22 @@ class GameObject protected ()
     * this Game Object and all of its ancestors.
     */
   def getIndexList(): js.Array[integer] = js.native
+  /**
+    * Increase a value for the given key within this Game Objects Data Manager. If the key doesn't already exist in the Data Manager then it is increased from 0.
+    * 
+    * If the Game Object has not been enabled for data (via `setDataEnabled`) then it will be enabled
+    * before setting the value.
+    * 
+    * If the key doesn't already exist in the Data Manager then it is created.
+    * 
+    * When the value is first set, a `setdata` event is emitted from this Game Object.
+    * @param key The key to increase the value for.
+    * @param data The value to increase for the given key.
+    */
+  def incData(key: String): this.type = js.native
+  def incData(key: String, data: js.Any): this.type = js.native
+  def incData(key: js.Object): this.type = js.native
+  def incData(key: js.Object, data: js.Any): this.type = js.native
   /**
     * If this Game Object has previously been enabled for input, this will queue it
     * for removal, causing it to no longer be interactive. The removal happens on
@@ -277,6 +287,19 @@ class GameObject protected ()
     */
   def toJSON(): JSONGameObject = js.native
   /**
+    * Toggle a boolean value for the given key within this Game Objects Data Manager. If the key doesn't already exist in the Data Manager then it is toggled from false.
+    * 
+    * If the Game Object has not been enabled for data (via `setDataEnabled`) then it will be enabled
+    * before setting the value.
+    * 
+    * If the key doesn't already exist in the Data Manager then it is created.
+    * 
+    * When the value is first set, a `setdata` event is emitted from this Game Object.
+    * @param key The key to toggle the value for.
+    */
+  def toggleData(key: String): this.type = js.native
+  def toggleData(key: js.Object): this.type = js.native
+  /**
     * To be overridden by custom GameObjects. Allows base objects to be used in a Pool.
     * @param args args
     */
@@ -287,15 +310,5 @@ class GameObject protected ()
     * @param camera The Camera to check against this Game Object.
     */
   def willRender(camera: Camera): Boolean = js.native
-}
-
-/* static members */
-@JSGlobal("Phaser.GameObjects.GameObject")
-@js.native
-object GameObject extends js.Object {
-  /**
-    * The bitmask that `GameObject.renderFlags` is compared against to determine if the Game Object will render or not.
-    */
-  val RENDER_MASK: integer = js.native
 }
 

@@ -1,5 +1,6 @@
 package typings.pkgDir
 
+import typings.pkgDir.anon.Call
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   // TODO: Remove this for the next major release
   @JSName("default")
-  var default_Original: AnonCall = js.native
+  var default_Original: Call = js.native
   /**
   	Find the root directory of a Node.js project or npm package.
   	@param cwd - Directory to start from. Default: `process.cwd()`.

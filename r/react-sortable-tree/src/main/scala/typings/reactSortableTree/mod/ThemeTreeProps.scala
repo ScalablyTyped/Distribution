@@ -1,7 +1,7 @@
 package typings.reactSortableTree.mod
 
 import typings.react.mod.CSSProperties
-import typings.reactSortableTree.PartialListProps
+import typings.reactSortableTree.anon.PartialListProps
 import typings.reactVirtualized.mod.Index
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,8 +26,8 @@ object ThemeTreeProps {
     placeholderRenderer: PlaceholderRenderer = null,
     reactVirtualizedListProps: PartialListProps = null,
     rowHeight: (js.Function1[/* info */ Index, Double]) | Double = null,
-    scaffoldBlockPxWidth: Int | Double = null,
-    slideRegionSize: Int | Double = null,
+    scaffoldBlockPxWidth: js.UndefOr[Double] = js.undefined,
+    slideRegionSize: js.UndefOr[Double] = js.undefined,
     style: CSSProperties = null
   ): ThemeTreeProps = {
     val __obj = js.Dynamic.literal()
@@ -36,8 +36,8 @@ object ThemeTreeProps {
     if (placeholderRenderer != null) __obj.updateDynamic("placeholderRenderer")(placeholderRenderer.asInstanceOf[js.Any])
     if (reactVirtualizedListProps != null) __obj.updateDynamic("reactVirtualizedListProps")(reactVirtualizedListProps.asInstanceOf[js.Any])
     if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
-    if (scaffoldBlockPxWidth != null) __obj.updateDynamic("scaffoldBlockPxWidth")(scaffoldBlockPxWidth.asInstanceOf[js.Any])
-    if (slideRegionSize != null) __obj.updateDynamic("slideRegionSize")(slideRegionSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaffoldBlockPxWidth)) __obj.updateDynamic("scaffoldBlockPxWidth")(scaffoldBlockPxWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(slideRegionSize)) __obj.updateDynamic("slideRegionSize")(slideRegionSize.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeTreeProps]
   }

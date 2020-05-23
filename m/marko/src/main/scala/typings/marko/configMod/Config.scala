@@ -32,15 +32,15 @@ object Config {
     writeVersionComment: js.UndefOr[Boolean] = js.undefined
   ): Config = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(assumeUpToDate)) __obj.updateDynamic("assumeUpToDate")(assumeUpToDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoKeyEnabled)) __obj.updateDynamic("autoKeyEnabled")(autoKeyEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(checkUpToDate)) __obj.updateDynamic("checkUpToDate")(checkUpToDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(escapeAtTags)) __obj.updateDynamic("escapeAtTags")(escapeAtTags.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUnrecognizedTags)) __obj.updateDynamic("ignoreUnrecognizedTags")(ignoreUnrecognizedTags.asInstanceOf[js.Any])
+    if (!js.isUndefined(assumeUpToDate)) __obj.updateDynamic("assumeUpToDate")(assumeUpToDate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoKeyEnabled)) __obj.updateDynamic("autoKeyEnabled")(autoKeyEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkUpToDate)) __obj.updateDynamic("checkUpToDate")(checkUpToDate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(escapeAtTags)) __obj.updateDynamic("escapeAtTags")(escapeAtTags.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUnrecognizedTags)) __obj.updateDynamic("ignoreUnrecognizedTags")(ignoreUnrecognizedTags.get.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveWhitespace)) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace.asInstanceOf[js.Any])
-    if (!js.isUndefined(writeToDisk)) __obj.updateDynamic("writeToDisk")(writeToDisk.asInstanceOf[js.Any])
-    if (!js.isUndefined(writeVersionComment)) __obj.updateDynamic("writeVersionComment")(writeVersionComment.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveWhitespace)) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(writeToDisk)) __obj.updateDynamic("writeToDisk")(writeToDisk.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(writeVersionComment)) __obj.updateDynamic("writeVersionComment")(writeVersionComment.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

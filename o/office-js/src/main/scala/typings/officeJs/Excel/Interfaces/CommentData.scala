@@ -24,7 +24,7 @@ trait CommentData extends js.Object {
   var authorName: js.UndefOr[String] = js.undefined
   /**
     *
-    * Gets or sets the comment's content. The string is plain text.
+    * The comment's content. The string is plain text.
     *
     * [Api set: ExcelApi 1.10]
     */
@@ -38,30 +38,37 @@ trait CommentData extends js.Object {
   var creationDate: js.UndefOr[Date] = js.undefined
   /**
     *
-    * Represents the comment identifier. Read-only.
+    * Specifies the comment identifier.
     *
     * [Api set: ExcelApi 1.10]
     */
   var id: js.UndefOr[String] = js.undefined
   /**
     *
-    * Gets the entities (e.g. people) that are mentioned in comments.
+    * Gets the entities (e.g., people) that are mentioned in comments.
     *
-    * [Api set: ExcelApiOnline 1.1]
+    * [Api set: ExcelApi 1.11]
     */
   var mentions: js.UndefOr[js.Array[CommentMention]] = js.undefined
   /**
     *
-    * Represents a collection of reply objects associated with the comment. Read-only.
+    * Represents a collection of reply objects associated with the comment.
     *
     * [Api set: ExcelApi 1.10]
     */
   var replies: js.UndefOr[js.Array[CommentReplyData]] = js.undefined
   /**
     *
-    * Gets the rich comment content (e.g. mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
+    * The comment thread status. A value of "true" means the comment thread is resolved.
     *
-    * [Api set: ExcelApiOnline 1.1]
+    * [Api set: ExcelApi 1.11]
+    */
+  var resolved: js.UndefOr[Boolean] = js.undefined
+  /**
+    *
+    * Gets the rich comment content (e.g., mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
+    *
+    * [Api set: ExcelApi 1.11]
     */
   var richContent: js.UndefOr[String] = js.undefined
 }
@@ -76,6 +83,7 @@ object CommentData {
     id: String = null,
     mentions: js.Array[CommentMention] = null,
     replies: js.Array[CommentReplyData] = null,
+    resolved: js.UndefOr[Boolean] = js.undefined,
     richContent: String = null
   ): CommentData = {
     val __obj = js.Dynamic.literal()
@@ -86,6 +94,7 @@ object CommentData {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (mentions != null) __obj.updateDynamic("mentions")(mentions.asInstanceOf[js.Any])
     if (replies != null) __obj.updateDynamic("replies")(replies.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolved)) __obj.updateDynamic("resolved")(resolved.get.asInstanceOf[js.Any])
     if (richContent != null) __obj.updateDynamic("richContent")(richContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentData]
   }

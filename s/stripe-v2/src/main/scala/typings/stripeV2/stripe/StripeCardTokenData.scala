@@ -31,8 +31,8 @@ object StripeCardTokenData {
     address_zip: String = null,
     cvc: String = null,
     exp: String = null,
-    exp_month: Int | Double = null,
-    exp_year: Int | Double = null,
+    exp_month: js.UndefOr[Double] = js.undefined,
+    exp_year: js.UndefOr[Double] = js.undefined,
     name: String = null
   ): StripeCardTokenData = {
     val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any])
@@ -44,8 +44,8 @@ object StripeCardTokenData {
     if (address_zip != null) __obj.updateDynamic("address_zip")(address_zip.asInstanceOf[js.Any])
     if (cvc != null) __obj.updateDynamic("cvc")(cvc.asInstanceOf[js.Any])
     if (exp != null) __obj.updateDynamic("exp")(exp.asInstanceOf[js.Any])
-    if (exp_month != null) __obj.updateDynamic("exp_month")(exp_month.asInstanceOf[js.Any])
-    if (exp_year != null) __obj.updateDynamic("exp_year")(exp_year.asInstanceOf[js.Any])
+    if (!js.isUndefined(exp_month)) __obj.updateDynamic("exp_month")(exp_month.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exp_year)) __obj.updateDynamic("exp_year")(exp_year.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[StripeCardTokenData]
   }

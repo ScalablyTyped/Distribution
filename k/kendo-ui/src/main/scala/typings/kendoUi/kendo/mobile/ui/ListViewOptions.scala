@@ -50,29 +50,29 @@ object ListViewOptions {
     style: String = null,
     template: String | js.Function = null,
     `type`: String = null,
-    virtualViewSize: Int | Double = null
+    virtualViewSize: js.UndefOr[Double] = js.undefined
   ): ListViewOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(appendOnRefresh)) __obj.updateDynamic("appendOnRefresh")(appendOnRefresh.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.asInstanceOf[js.Any])
+    if (!js.isUndefined(appendOnRefresh)) __obj.updateDynamic("appendOnRefresh")(appendOnRefresh.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.get.asInstanceOf[js.Any])
     if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
     if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction1(dataBinding))
     if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(endlessScroll)) __obj.updateDynamic("endlessScroll")(endlessScroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(endlessScroll)) __obj.updateDynamic("endlessScroll")(endlessScroll.get.asInstanceOf[js.Any])
     if (filterable != null) __obj.updateDynamic("filterable")(filterable.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedHeaders)) __obj.updateDynamic("fixedHeaders")(fixedHeaders.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedHeaders)) __obj.updateDynamic("fixedHeaders")(fixedHeaders.get.asInstanceOf[js.Any])
     if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate.asInstanceOf[js.Any])
     if (itemChange != null) __obj.updateDynamic("itemChange")(js.Any.fromFunction1(itemChange))
-    if (!js.isUndefined(loadMore)) __obj.updateDynamic("loadMore")(loadMore.asInstanceOf[js.Any])
+    if (!js.isUndefined(loadMore)) __obj.updateDynamic("loadMore")(loadMore.get.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (pullParameters != null) __obj.updateDynamic("pullParameters")(pullParameters.asInstanceOf[js.Any])
-    if (!js.isUndefined(pullToRefresh)) __obj.updateDynamic("pullToRefresh")(pullToRefresh.asInstanceOf[js.Any])
+    if (!js.isUndefined(pullToRefresh)) __obj.updateDynamic("pullToRefresh")(pullToRefresh.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (virtualViewSize != null) __obj.updateDynamic("virtualViewSize")(virtualViewSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(virtualViewSize)) __obj.updateDynamic("virtualViewSize")(virtualViewSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListViewOptions]
   }
 }

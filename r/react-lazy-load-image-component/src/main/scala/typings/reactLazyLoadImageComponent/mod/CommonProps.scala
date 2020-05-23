@@ -32,10 +32,10 @@ object CommonProps {
     afterLoad: () => _ = null,
     beforeLoad: () => _ = null,
     delayMethod: DelayMethod = null,
-    delayTime: Int | Double = null,
-    placeholder: ReactElement = null,
+    delayTime: js.UndefOr[Double] = js.undefined,
+    placeholder: js.UndefOr[Null | ReactElement] = js.undefined,
     scrollPosition: ScrollPosition = null,
-    threshold: Int | Double = null,
+    threshold: js.UndefOr[Double] = js.undefined,
     useIntersectionObserver: js.UndefOr[Boolean] = js.undefined,
     visibleByDefault: js.UndefOr[Boolean] = js.undefined
   ): CommonProps = {
@@ -43,12 +43,12 @@ object CommonProps {
     if (afterLoad != null) __obj.updateDynamic("afterLoad")(js.Any.fromFunction0(afterLoad))
     if (beforeLoad != null) __obj.updateDynamic("beforeLoad")(js.Any.fromFunction0(beforeLoad))
     if (delayMethod != null) __obj.updateDynamic("delayMethod")(delayMethod.asInstanceOf[js.Any])
-    if (delayTime != null) __obj.updateDynamic("delayTime")(delayTime.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayTime)) __obj.updateDynamic("delayTime")(delayTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(placeholder)) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (scrollPosition != null) __obj.updateDynamic("scrollPosition")(scrollPosition.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(useIntersectionObserver)) __obj.updateDynamic("useIntersectionObserver")(useIntersectionObserver.asInstanceOf[js.Any])
-    if (!js.isUndefined(visibleByDefault)) __obj.updateDynamic("visibleByDefault")(visibleByDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useIntersectionObserver)) __obj.updateDynamic("useIntersectionObserver")(useIntersectionObserver.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visibleByDefault)) __obj.updateDynamic("visibleByDefault")(visibleByDefault.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonProps]
   }
 }

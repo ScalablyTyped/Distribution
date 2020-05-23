@@ -22,11 +22,11 @@ object ConvertOptions {
     rearg: js.UndefOr[Boolean] = js.undefined
   ): ConvertOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cap)) __obj.updateDynamic("cap")(cap.asInstanceOf[js.Any])
-    if (!js.isUndefined(curry)) __obj.updateDynamic("curry")(curry.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
-    if (!js.isUndefined(immutable)) __obj.updateDynamic("immutable")(immutable.asInstanceOf[js.Any])
-    if (!js.isUndefined(rearg)) __obj.updateDynamic("rearg")(rearg.asInstanceOf[js.Any])
+    if (!js.isUndefined(cap)) __obj.updateDynamic("cap")(cap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(curry)) __obj.updateDynamic("curry")(curry.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(immutable)) __obj.updateDynamic("immutable")(immutable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rearg)) __obj.updateDynamic("rearg")(rearg.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConvertOptions]
   }
 }

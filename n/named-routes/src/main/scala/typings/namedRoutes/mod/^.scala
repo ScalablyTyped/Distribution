@@ -1,6 +1,6 @@
 package typings.namedRoutes.mod
 
-import typings.namedRoutes.PartialRouterOptions
+import typings.namedRoutes.anon.PartialRouterOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

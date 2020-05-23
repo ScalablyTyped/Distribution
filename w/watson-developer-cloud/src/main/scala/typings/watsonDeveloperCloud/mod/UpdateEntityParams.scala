@@ -41,10 +41,10 @@ object UpdateEntityParams {
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (new_description != null) __obj.updateDynamic("new_description")(new_description.asInstanceOf[js.Any])
     if (new_entity != null) __obj.updateDynamic("new_entity")(new_entity.asInstanceOf[js.Any])
-    if (!js.isUndefined(new_fuzzy_match)) __obj.updateDynamic("new_fuzzy_match")(new_fuzzy_match.asInstanceOf[js.Any])
+    if (!js.isUndefined(new_fuzzy_match)) __obj.updateDynamic("new_fuzzy_match")(new_fuzzy_match.get.asInstanceOf[js.Any])
     if (new_metadata != null) __obj.updateDynamic("new_metadata")(new_metadata.asInstanceOf[js.Any])
     if (new_values != null) __obj.updateDynamic("new_values")(new_values.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEntityParams]
   }
 }

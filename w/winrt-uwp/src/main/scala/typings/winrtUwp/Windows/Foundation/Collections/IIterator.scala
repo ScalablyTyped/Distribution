@@ -1,6 +1,6 @@
 package typings.winrtUwp.Windows.Foundation.Collections
 
-import typings.winrtUwp.AnonItems
+import typings.winrtUwp.anon.Items
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait IIterator[T] extends js.Object {
   /**
     * Retrieves all items in the collection.
     */
-  def getMany(): AnonItems[T]
+  def getMany(): Items[T]
   /**
     * Advances the iterator to the next item in the collection.
     * @return True if the iterator refers to a valid item in the collection; false if the iterator passes the end of the collection.
@@ -24,7 +24,7 @@ trait IIterator[T] extends js.Object {
 
 object IIterator {
   @scala.inline
-  def apply[T](current: T, getMany: () => AnonItems[T], hasCurrent: Boolean, moveNext: () => Boolean): IIterator[T] = {
+  def apply[T](current: T, getMany: () => Items[T], hasCurrent: Boolean, moveNext: () => Boolean): IIterator[T] = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], getMany = js.Any.fromFunction0(getMany), hasCurrent = hasCurrent.asInstanceOf[js.Any], moveNext = js.Any.fromFunction0(moveNext))
     __obj.asInstanceOf[IIterator[T]]
   }

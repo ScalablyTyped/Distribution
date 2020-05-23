@@ -17,54 +17,54 @@ trait IHasManyAssociation
   /** [Config Option] (String) */
   var foreignKey: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of autoLoad
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getAutoLoad: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of autoSync
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getAutoSync: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of filterProperty
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getFilterProperty: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of foreignKey
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getForeignKey: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of store
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getStore: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of storeName
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getStoreName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (String) */
   var name: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of autoLoad
-  		* @param autoLoad Boolean The new value.
-  		*/
+    * @param autoLoad Boolean The new value.
+    */
   var setAutoLoad: js.UndefOr[js.Function1[/* autoLoad */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of autoSync
-  		* @param autoSync Boolean The new value.
-  		*/
+    * @param autoSync Boolean The new value.
+    */
   var setAutoSync: js.UndefOr[js.Function1[/* autoSync */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of filterProperty
-  		* @param filterProperty String The new value.
-  		*/
+    * @param filterProperty String The new value.
+    */
   var setFilterProperty: js.UndefOr[js.Function1[/* filterProperty */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of foreignKey
-  		* @param foreignKey String The new value.
-  		*/
+    * @param foreignKey String The new value.
+    */
   var setForeignKey: js.UndefOr[js.Function1[/* foreignKey */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of store
-  		* @param store Object The new value.
-  		*/
+    * @param store Object The new value.
+    */
   var setStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of storeName
-  		* @param storeName String The new value.
-  		*/
+    * @param storeName String The new value.
+    */
   var setStoreName: js.UndefOr[js.Function1[/* storeName */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (Object) */
   var store: js.UndefOr[js.Any] = js.undefined
@@ -146,8 +146,8 @@ object IHasManyAssociation {
     if (associatedModel != null) __obj.updateDynamic("associatedModel")(associatedModel.asInstanceOf[js.Any])
     if (associatedName != null) __obj.updateDynamic("associatedName")(associatedName.asInstanceOf[js.Any])
     if (associationKey != null) __obj.updateDynamic("associationKey")(associationKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoLoad)) __obj.updateDynamic("autoLoad")(autoLoad.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoSync)) __obj.updateDynamic("autoSync")(autoSync.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoLoad)) __obj.updateDynamic("autoLoad")(autoLoad.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoSync)) __obj.updateDynamic("autoSync")(autoSync.get.asInstanceOf[js.Any])
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
     if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
     if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
@@ -196,7 +196,7 @@ object IHasManyAssociation {
     if (setStore != null) __obj.updateDynamic("setStore")(js.Any.fromFunction1(setStore))
     if (setStoreName != null) __obj.updateDynamic("setStoreName")(js.Any.fromFunction1(setStoreName))
     if (setType != null) __obj.updateDynamic("setType")(js.Any.fromFunction1(setType))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
     if (storeConfig != null) __obj.updateDynamic("storeConfig")(storeConfig.asInstanceOf[js.Any])

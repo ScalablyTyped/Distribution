@@ -1,42 +1,26 @@
 package typings.materializeCss.M
 
-import typings.materializeCss.MElements
-import typings.materializeCss.PartialFloatingActionButt
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("M.FloatingActionButton")
-@js.native
-class FloatingActionButton ()
+trait FloatingActionButton
   extends Component[FloatingActionButtonOptions]
-     with Openable {
-  /* CompleteClass */
-  override var isOpen: Boolean = js.native
-  /* CompleteClass */
-  override def close(): Unit = js.native
-  /* CompleteClass */
-  override def open(): Unit = js.native
-}
+     with Openable
 
-/* static members */
-@JSGlobal("M.FloatingActionButton")
-@js.native
-object FloatingActionButton extends js.Object {
-  /**
-    * Get Instance
-    */
-  def getInstance(elem: Element): FloatingActionButton = js.native
-  /**
-    * Init FloatingActionButtons
-    */
-  def init(els: MElements): js.Array[FloatingActionButton] = js.native
-  def init(els: MElements, options: PartialFloatingActionButt): js.Array[FloatingActionButton] = js.native
-  /**
-    * Init FloatingActionButton
-    */
-  def init(els: Element): FloatingActionButton = js.native
-  def init(els: Element, options: PartialFloatingActionButt): FloatingActionButton = js.native
+object FloatingActionButton {
+  @scala.inline
+  def apply(
+    close: () => Unit,
+    destroy: () => Unit,
+    el: Element,
+    isOpen: Boolean,
+    open: () => Unit,
+    options: FloatingActionButtonOptions
+  ): FloatingActionButton = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), destroy = js.Any.fromFunction0(destroy), el = el.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], open = js.Any.fromFunction0(open), options = options.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FloatingActionButton]
+  }
 }
 

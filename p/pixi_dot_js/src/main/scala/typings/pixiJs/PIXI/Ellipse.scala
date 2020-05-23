@@ -10,18 +10,12 @@ import scala.scalajs.js.annotation._
   * @class
   * @memberof PIXI
   */
-@JSGlobal("PIXI.Ellipse")
-@js.native
-class Ellipse () extends js.Object {
-  def this(x: Double) = this()
-  def this(x: Double, y: Double) = this()
-  def this(x: Double, y: Double, halfWidth: Double) = this()
-  def this(x: Double, y: Double, halfWidth: Double, halfHeight: Double) = this()
+trait Ellipse extends js.Object {
   /**
     * @member {number} PIXI.Ellipse#height
     * @default 0
     */
-  var height: Double = js.native
+  var height: Double
   /**
     * The type of the object, mainly used to avoid `instanceof` checks
     *
@@ -30,22 +24,22 @@ class Ellipse () extends js.Object {
     * @default PIXI.SHAPES.ELIP
     * @see PIXI.SHAPES
     */
-  val `type`: Double = js.native
+  val `type`: Double
   /**
     * @member {number} PIXI.Ellipse#width
     * @default 0
     */
-  var width: Double = js.native
+  var width: Double
   /**
     * @member {number} PIXI.Ellipse#x
     * @default 0
     */
-  var x: Double = js.native
+  var x: Double
   /**
     * @member {number} PIXI.Ellipse#y
     * @default 0
     */
-  var y: Double = js.native
+  var y: Double
   /**
     * Checks whether the x and y coordinates given are contained within this ellipse
     *
@@ -53,12 +47,29 @@ class Ellipse () extends js.Object {
     * @param {number} y - The Y coordinate of the point to test
     * @return {boolean} Whether the x/y coords are within this ellipse
     */
-  def contains(x: Double, y: Double): Boolean = js.native
+  def contains(x: Double, y: Double): Boolean
   /**
     * Returns the framing rectangle of the ellipse as a Rectangle object
     *
     * @return {PIXI.Rectangle} the framing rectangle
     */
-  def getBounds(): Rectangle = js.native
+  def getBounds(): Rectangle
+}
+
+object Ellipse {
+  @scala.inline
+  def apply(
+    contains: (Double, Double) => Boolean,
+    getBounds: () => Rectangle,
+    height: Double,
+    `type`: Double,
+    width: Double,
+    x: Double,
+    y: Double
+  ): Ellipse = {
+    val __obj = js.Dynamic.literal(contains = js.Any.fromFunction2(contains), getBounds = js.Any.fromFunction0(getBounds), height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Ellipse]
+  }
 }
 

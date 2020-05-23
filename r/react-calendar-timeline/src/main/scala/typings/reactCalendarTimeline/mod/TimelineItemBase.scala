@@ -41,8 +41,8 @@ object TimelineItemBase {
     title: ReactNode = null
   ): TimelineItemBase[DateType] = {
     val __obj = js.Dynamic.literal(end_time = end_time.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], start_time = start_time.asInstanceOf[js.Any])
-    if (!js.isUndefined(canChangeGroup)) __obj.updateDynamic("canChangeGroup")(canChangeGroup.asInstanceOf[js.Any])
-    if (!js.isUndefined(canMove)) __obj.updateDynamic("canMove")(canMove.asInstanceOf[js.Any])
+    if (!js.isUndefined(canChangeGroup)) __obj.updateDynamic("canChangeGroup")(canChangeGroup.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(canMove)) __obj.updateDynamic("canMove")(canMove.get.asInstanceOf[js.Any])
     if (canResize != null) __obj.updateDynamic("canResize")(canResize.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (itemProps != null) __obj.updateDynamic("itemProps")(itemProps.asInstanceOf[js.Any])

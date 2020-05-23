@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait ThemableDecorationInstanceRenderOptions extends js.Object {
   /**
-  		 * Defines the rendering options of the attachment that is inserted after the decorated text.
-  		 */
+    * Defines the rendering options of the attachment that is inserted after the decorated text.
+    */
   var after: js.UndefOr[ThemableDecorationAttachmentRenderOptions] = js.undefined
   /**
-  		 * Defines the rendering options of the attachment that is inserted before the decorated text.
-  		 */
+    * Defines the rendering options of the attachment that is inserted before the decorated text.
+    */
   var before: js.UndefOr[ThemableDecorationAttachmentRenderOptions] = js.undefined
 }
 

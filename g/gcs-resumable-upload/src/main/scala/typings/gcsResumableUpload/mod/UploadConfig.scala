@@ -106,11 +106,11 @@ object UploadConfig {
     authClient: GoogleAuth = null,
     authConfig: GoogleAuthOptions = null,
     configPath: String = null,
-    generation: Int | Double = null,
+    generation: js.UndefOr[Double] = js.undefined,
     key: String | Buffer = null,
     kmsKeyName: String = null,
     metadata: ConfigMetadata = null,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     origin: String = null,
     params: QueryParameters = null,
     predefinedAcl: PredefinedAcl = null,
@@ -124,16 +124,16 @@ object UploadConfig {
     if (authClient != null) __obj.updateDynamic("authClient")(authClient.asInstanceOf[js.Any])
     if (authConfig != null) __obj.updateDynamic("authConfig")(authConfig.asInstanceOf[js.Any])
     if (configPath != null) __obj.updateDynamic("configPath")(configPath.asInstanceOf[js.Any])
-    if (generation != null) __obj.updateDynamic("generation")(generation.asInstanceOf[js.Any])
+    if (!js.isUndefined(generation)) __obj.updateDynamic("generation")(generation.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (kmsKeyName != null) __obj.updateDynamic("kmsKeyName")(kmsKeyName.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (predefinedAcl != null) __obj.updateDynamic("predefinedAcl")(predefinedAcl.asInstanceOf[js.Any])
-    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
-    if (!js.isUndefined(public)) __obj.updateDynamic("public")(public.asInstanceOf[js.Any])
+    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(public)) __obj.updateDynamic("public")(public.get.asInstanceOf[js.Any])
     if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     if (userProject != null) __obj.updateDynamic("userProject")(userProject.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadConfig]

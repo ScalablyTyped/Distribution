@@ -10,16 +10,16 @@ object vnode extends js.Object {
   def createEmptyElement(): VirtualElement = js.native
   // function isValidAttribute<A>(value: A): boolean;
   /**
-  		 * Create a node path, eg. (23,5,2,4) => '23.5.2.4'
-  		 */
+    * Create a node path, eg. (23,5,2,4) => '23.5.2.4'
+    */
   def createPath(paths: (Double | String)*): String = js.native
   /**
-  		 * Text nodes are stored as objects to keep things simple
-  		 */
+    * Text nodes are stored as objects to keep things simple
+    */
   def createTextElement(text: String): VirtualElement = js.native
   /**
-  		 * Lazily-rendered virtual nodes
-  		 */
+    * Lazily-rendered virtual nodes
+    */
   def createThunkElement[P, T, O](
     fn: js.Function1[/* model */ Model, VirtualElement],
     key: String,

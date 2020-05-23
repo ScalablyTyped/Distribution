@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact.docPageTypesMod
 
-import typings.officeUiFabricReact.AnonSection
-import typings.react.mod._Global_.JSX.Element
+import typings.officeUiFabricReact.anon.Section
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,7 +41,7 @@ trait IDocPageProps extends js.Object {
     */
   var nativePropsElement: js.UndefOr[String | js.Array[String]] = js.undefined
   /** Pass through other sections for ComponentPage */
-  var otherSections: js.UndefOr[js.Array[AnonSection]] = js.undefined
+  var otherSections: js.UndefOr[js.Array[Section]] = js.undefined
   /** Overview of the component as markdown string */
   var overview: js.UndefOr[String] = js.undefined
   /** Properties table(s) as markdown string */
@@ -73,21 +73,21 @@ object IDocPageProps {
     isFeedbackVisible: js.UndefOr[Boolean] = js.undefined,
     jsonDocs: IPageJson = null,
     nativePropsElement: String | js.Array[String] = null,
-    otherSections: js.Array[AnonSection] = null,
+    otherSections: js.Array[Section] = null,
     overview: String = null,
     propertiesTablesSources: js.Array[String] = null,
     related: Element = null
   ): IDocPageProps = {
     val __obj = js.Dynamic.literal(componentName = componentName.asInstanceOf[js.Any], componentUrl = componentUrl.asInstanceOf[js.Any], isHeaderVisible = isHeaderVisible.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowNativeProps)) __obj.updateDynamic("allowNativeProps")(allowNativeProps.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowNativeProps)) __obj.updateDynamic("allowNativeProps")(allowNativeProps.get.asInstanceOf[js.Any])
     if (allowNativePropsForComponentName != null) __obj.updateDynamic("allowNativePropsForComponentName")(allowNativePropsForComponentName.asInstanceOf[js.Any])
     if (bestPractices != null) __obj.updateDynamic("bestPractices")(bestPractices.asInstanceOf[js.Any])
     if (donts != null) __obj.updateDynamic("donts")(donts.asInstanceOf[js.Any])
     if (dos != null) __obj.updateDynamic("dos")(dos.asInstanceOf[js.Any])
     if (exampleKnobs != null) __obj.updateDynamic("exampleKnobs")(exampleKnobs.asInstanceOf[js.Any])
     if (examples != null) __obj.updateDynamic("examples")(examples.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFeedbackVisible)) __obj.updateDynamic("isFeedbackVisible")(isFeedbackVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFeedbackVisible)) __obj.updateDynamic("isFeedbackVisible")(isFeedbackVisible.get.asInstanceOf[js.Any])
     if (jsonDocs != null) __obj.updateDynamic("jsonDocs")(jsonDocs.asInstanceOf[js.Any])
     if (nativePropsElement != null) __obj.updateDynamic("nativePropsElement")(nativePropsElement.asInstanceOf[js.Any])
     if (otherSections != null) __obj.updateDynamic("otherSections")(otherSections.asInstanceOf[js.Any])

@@ -1,60 +1,49 @@
 package typings.materializeCss.M
 
-import typings.materializeCss.MElements
-import typings.materializeCss.PartialAutocompleteOption
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("M.Autocomplete")
-@js.native
-class Autocomplete ()
+trait Autocomplete
   extends Component[AutocompleteOptions]
      with Openable {
   /**
     * Index of the current selected option.
     */
-  var activeIndex: Double = js.native
+  var activeIndex: Double
   /**
     * Number of matching autocomplete options.
     */
-  var count: Double = js.native
-  /* CompleteClass */
-  override var isOpen: Boolean = js.native
-  /* CompleteClass */
-  override def close(): Unit = js.native
-  /* CompleteClass */
-  override def open(): Unit = js.native
+  var count: Double
   /**
     * Select a specific autocomplete options.
     * @param el Element of the autocomplete option.
     */
-  def selectOption(el: Element): Unit = js.native
+  def selectOption(el: Element): Unit
   /**
     * Update autocomplete options data.
     * @param data Autocomplete options data object.
     */
-  def updateData(data: AutocompleteData): Unit = js.native
+  def updateData(data: AutocompleteData): Unit
 }
 
-/* static members */
-@JSGlobal("M.Autocomplete")
-@js.native
-object Autocomplete extends js.Object {
-  /**
-    * Get Instance
-    */
-  def getInstance(elem: Element): Autocomplete = js.native
-  /**
-    * Init autocompletes
-    */
-  def init(els: MElements): js.Array[Autocomplete] = js.native
-  def init(els: MElements, options: PartialAutocompleteOption): js.Array[Autocomplete] = js.native
-  /**
-    * Init autocomplete
-    */
-  def init(els: Element): Autocomplete = js.native
-  def init(els: Element, options: PartialAutocompleteOption): Autocomplete = js.native
+object Autocomplete {
+  @scala.inline
+  def apply(
+    activeIndex: Double,
+    close: () => Unit,
+    count: Double,
+    destroy: () => Unit,
+    el: Element,
+    isOpen: Boolean,
+    open: () => Unit,
+    options: AutocompleteOptions,
+    selectOption: Element => Unit,
+    updateData: AutocompleteData => Unit
+  ): Autocomplete = {
+    val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], close = js.Any.fromFunction0(close), count = count.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), el = el.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], open = js.Any.fromFunction0(open), options = options.asInstanceOf[js.Any], selectOption = js.Any.fromFunction1(selectOption), updateData = js.Any.fromFunction1(updateData))
+    __obj.asInstanceOf[Autocomplete]
+  }
 }
 

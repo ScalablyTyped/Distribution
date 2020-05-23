@@ -1,6 +1,6 @@
 package typings.escpos.mod
 
-import typings.escpos.AnonAutoOpen
+import typings.escpos.anon.AutoOpen
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Serial protected () extends Adapter {
   def this(port: Double) = this()
-  def this(port: Double, options: AnonAutoOpen) = this()
+  def this(port: Double, options: AutoOpen) = this()
   def close(): Serial = js.native
   def close(callback: js.Function2[/* error */ js.Any, /* device */ this.type, Unit]): Serial = js.native
   def close(callback: js.Function2[/* error */ js.Any, /* device */ this.type, Unit], timeout: Double): Serial = js.native

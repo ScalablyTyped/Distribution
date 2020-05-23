@@ -97,7 +97,7 @@ object SonificationOptions {
       String | typings.highcharts.sonificationMod.highchartsAugmentingMod.Earcon | (js.Array[String | typings.highcharts.sonificationMod.highchartsAugmentingMod.Earcon])
     ]),
     pointPlayTime: String | js.Function,
-    afterSeriesWait: Int | Double = null,
+    afterSeriesWait: js.UndefOr[Double] = js.undefined,
     dataExtremes: Dictionary[RangeObject] = null,
     earcons: js.Array[typings.highcharts.sonificationMod.highchartsAugmentingMod.EarconConfiguration] = null,
     instruments: js.Array[typings.highcharts.sonificationMod.highchartsAugmentingMod.PointInstrumentObject] = null,
@@ -107,7 +107,7 @@ object SonificationOptions {
     seriesOptions: js.Object | js.Array[js.Object] = null
   ): SonificationOptions = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], pointPlayTime = pointPlayTime.asInstanceOf[js.Any])
-    if (afterSeriesWait != null) __obj.updateDynamic("afterSeriesWait")(afterSeriesWait.asInstanceOf[js.Any])
+    if (!js.isUndefined(afterSeriesWait)) __obj.updateDynamic("afterSeriesWait")(afterSeriesWait.get.asInstanceOf[js.Any])
     if (dataExtremes != null) __obj.updateDynamic("dataExtremes")(dataExtremes.asInstanceOf[js.Any])
     if (earcons != null) __obj.updateDynamic("earcons")(earcons.asInstanceOf[js.Any])
     if (instruments != null) __obj.updateDynamic("instruments")(instruments.asInstanceOf[js.Any])

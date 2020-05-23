@@ -51,22 +51,22 @@ object PlotGaugeDialOptions {
   def apply(
     backgroundColor: ColorString | GradientColorObject | PatternObject = null,
     baseLength: String = null,
-    baseWidth: Int | Double = null,
+    baseWidth: js.UndefOr[Double] = js.undefined,
     borderColor: ColorString | GradientColorObject | PatternObject = null,
-    borderWidth: Int | Double = null,
+    borderWidth: js.UndefOr[Double] = js.undefined,
     radius: String = null,
     rearLength: String = null,
-    topWidth: Int | Double = null
+    topWidth: js.UndefOr[Double] = js.undefined
   ): PlotGaugeDialOptions = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (baseLength != null) __obj.updateDynamic("baseLength")(baseLength.asInstanceOf[js.Any])
-    if (baseWidth != null) __obj.updateDynamic("baseWidth")(baseWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(baseWidth)) __obj.updateDynamic("baseWidth")(baseWidth.get.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     if (rearLength != null) __obj.updateDynamic("rearLength")(rearLength.asInstanceOf[js.Any])
-    if (topWidth != null) __obj.updateDynamic("topWidth")(topWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(topWidth)) __obj.updateDynamic("topWidth")(topWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotGaugeDialOptions]
   }
 }

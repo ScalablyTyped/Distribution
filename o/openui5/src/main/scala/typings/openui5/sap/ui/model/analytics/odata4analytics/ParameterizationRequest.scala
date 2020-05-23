@@ -4,24 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.model.analytics.odata4analytics.ParameterizationRequest")
-@js.native
-class ParameterizationRequest protected () extends js.Object {
-  /**
-    * Create a request object for interaction with a query parameterization.
-    * @param oParameterization Description of a query parameterization
-    */
-  def this(oParameterization: Parameterization) = this()
+trait ParameterizationRequest extends js.Object {
   /**
     * Get the description of the parameterization on which this requestoperates on
     * @returns Description of a         query parameterization
     */
-  def getParameterization(): Parameterization = js.native
+  def getParameterization(): Parameterization
   /**
     * Get the URI to locate the entity set for the query parameterization.
     * @param sServiceRootURI (optional) Identifies the root of the OData           service
     */
-  def getURIToParameterizationEntitySet(sServiceRootURI: String): Unit = js.native
+  def getURIToParameterizationEntitySet(sServiceRootURI: String): Unit
   /**
     * Get the URI to locate the parameterization entity for the values assignedto all parameters
     * beforehand. Notice that a value must be supplied forevery parameter including those marked as
@@ -29,7 +22,7 @@ class ParameterizationRequest protected () extends js.Object {
     * an"omitted" value. For example, for services based on BW Easy Queries, thiswould be an empty string.
     * @param sServiceRootURI (optional) Identifies the root of the OData           service
     */
-  def getURIToParameterizationEntry(sServiceRootURI: String): Unit = js.native
+  def getURIToParameterizationEntry(sServiceRootURI: String): Unit
   /**
     * Assign a value to a parameter
     * @param sParameterName Name of the parameter. In case of a range           value, provide the name of
@@ -38,6 +31,19 @@ class ParameterizationRequest protected () extends js.Object {
     * @param sToValue Omit it or set it to null for single values. If set,           it will be assigned
     * to the upper boundary parameter
     */
-  def setParameterValue(sParameterName: String, sValue: String, sToValue: String): Unit = js.native
+  def setParameterValue(sParameterName: String, sValue: String, sToValue: String): Unit
+}
+
+object ParameterizationRequest {
+  @scala.inline
+  def apply(
+    getParameterization: () => Parameterization,
+    getURIToParameterizationEntitySet: String => Unit,
+    getURIToParameterizationEntry: String => Unit,
+    setParameterValue: (String, String, String) => Unit
+  ): ParameterizationRequest = {
+    val __obj = js.Dynamic.literal(getParameterization = js.Any.fromFunction0(getParameterization), getURIToParameterizationEntitySet = js.Any.fromFunction1(getURIToParameterizationEntitySet), getURIToParameterizationEntry = js.Any.fromFunction1(getURIToParameterizationEntry), setParameterValue = js.Any.fromFunction3(setParameterValue))
+    __obj.asInstanceOf[ParameterizationRequest]
+  }
 }
 

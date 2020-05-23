@@ -13,6 +13,7 @@ trait WatchCompilerHostOfConfigFile[T /* <: BuilderProgram */]
      with ConfigFileDiagnosticsReporter {
   /** Name of the config file to compile */
   var configFileName: java.lang.String = js.native
+  var extraFileExtensions: js.UndefOr[js.Array[FileExtensionInfo]] = js.native
   /** Options to extend */
   var optionsToExtend: js.UndefOr[CompilerOptions] = js.native
   var watchOptionsToExtend: js.UndefOr[WatchOptions] = js.native

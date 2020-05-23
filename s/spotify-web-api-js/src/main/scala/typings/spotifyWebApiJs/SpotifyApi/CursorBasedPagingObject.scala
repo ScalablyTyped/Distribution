@@ -25,10 +25,10 @@ object CursorBasedPagingObject {
     items: js.Array[T],
     limit: Double,
     next: String,
-    total: Int | Double = null
+    total: js.UndefOr[Double] = js.undefined
   ): CursorBasedPagingObject[T] = {
     val __obj = js.Dynamic.literal(cursors = cursors.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CursorBasedPagingObject[T]]
   }
 }

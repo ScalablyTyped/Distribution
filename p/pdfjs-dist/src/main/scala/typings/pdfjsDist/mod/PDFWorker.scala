@@ -14,9 +14,7 @@ trait PDFWorker extends js.Object {
 object PDFWorker {
   @scala.inline
   def apply(destroy: () => Unit, promise: js.Promise[_], messageHandler: js.Any = null, port: js.Any = null): PDFWorker = {
-    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), promise = promise.asInstanceOf[js.Any])
-    if (messageHandler != null) __obj.updateDynamic("messageHandler")(messageHandler.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), promise = promise.asInstanceOf[js.Any], messageHandler = messageHandler.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFWorker]
   }
 }

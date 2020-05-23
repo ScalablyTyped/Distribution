@@ -18,19 +18,19 @@ object ChannelPoolOptions {
   @scala.inline
   def apply(
     channelOptions: ChannelOptions = null,
-    freeExcessTimeout: Int | Double = null,
-    maxChannels: Int | Double = null,
-    minChannels: Int | Double = null,
-    minFreeChannels: Int | Double = null,
-    requestChannelTimeout: Int | Double = null
+    freeExcessTimeout: js.UndefOr[Double] = js.undefined,
+    maxChannels: js.UndefOr[Double] = js.undefined,
+    minChannels: js.UndefOr[Double] = js.undefined,
+    minFreeChannels: js.UndefOr[Double] = js.undefined,
+    requestChannelTimeout: js.UndefOr[Double] = js.undefined
   ): ChannelPoolOptions = {
     val __obj = js.Dynamic.literal()
     if (channelOptions != null) __obj.updateDynamic("channelOptions")(channelOptions.asInstanceOf[js.Any])
-    if (freeExcessTimeout != null) __obj.updateDynamic("freeExcessTimeout")(freeExcessTimeout.asInstanceOf[js.Any])
-    if (maxChannels != null) __obj.updateDynamic("maxChannels")(maxChannels.asInstanceOf[js.Any])
-    if (minChannels != null) __obj.updateDynamic("minChannels")(minChannels.asInstanceOf[js.Any])
-    if (minFreeChannels != null) __obj.updateDynamic("minFreeChannels")(minFreeChannels.asInstanceOf[js.Any])
-    if (requestChannelTimeout != null) __obj.updateDynamic("requestChannelTimeout")(requestChannelTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(freeExcessTimeout)) __obj.updateDynamic("freeExcessTimeout")(freeExcessTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxChannels)) __obj.updateDynamic("maxChannels")(maxChannels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minChannels)) __obj.updateDynamic("minChannels")(minChannels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minFreeChannels)) __obj.updateDynamic("minFreeChannels")(minFreeChannels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestChannelTimeout)) __obj.updateDynamic("requestChannelTimeout")(requestChannelTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelPoolOptions]
   }
 }

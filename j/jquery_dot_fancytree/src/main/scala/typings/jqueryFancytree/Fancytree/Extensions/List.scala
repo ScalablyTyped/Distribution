@@ -15,7 +15,7 @@ trait List
 object List {
   @scala.inline
   def apply(
-    StringDictionary: /* extension */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     dnd5: DragAndDrop5 = null,
     filter: Filter = null,
     table: Table = null

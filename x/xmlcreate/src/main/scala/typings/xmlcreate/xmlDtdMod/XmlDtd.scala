@@ -68,20 +68,20 @@ trait XmlDtd[Parent] extends js.Object {
     * and returns the new processing instruction.
     */
   def procInst(options: IXmlProcInstOptions): typings.xmlcreate.xmlProcInstMod.default[this.type] = js.native
-  def pubId(): js.Any = js.native
   /**
     * Sets the public identifier of the DTD.
     */
+  def pubId(): js.Any = js.native
   def pubId(pubId: String): js.Any = js.native
   /**
     * Gets the public identifier of the DTD.
     */
   @JSName("pubId")
   def pubId_Union: js.UndefOr[String] = js.native
-  def sysId(): js.Any = js.native
   /**
     * Sets the system identifier of the DTD.
     */
+  def sysId(): js.Any = js.native
   def sysId(sysId: String): js.Any = js.native
   /**
     * Gets the system identifier of the DTD.

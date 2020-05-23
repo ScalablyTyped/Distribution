@@ -5,15 +5,15 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable6
-import typings.paper.TypeofColor
-import typings.paper.TypeofKey
-import typings.paper.TypeofPaperScope
-import typings.paper.TypeofPaperScript
-import typings.paper.TypeofPath
-import typings.paper.TypeofPathItem
-import typings.paper.TypeofPoint
-import typings.paper.TypeofShape
-import typings.paper.TypeofSize
+import typings.paper.anon.TypeofColor
+import typings.paper.anon.TypeofKey
+import typings.paper.anon.TypeofPaperScope
+import typings.paper.anon.TypeofPaperScript
+import typings.paper.anon.TypeofPath
+import typings.paper.anon.TypeofPathItem
+import typings.paper.anon.TypeofPoint
+import typings.paper.anon.TypeofShape
+import typings.paper.anon.TypeofSize
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import scala.scalajs.js
@@ -40,12 +40,8 @@ import scala.scalajs.js.annotation._
   * The global {@link paper} object is simply a reference to the currently active
   * `PaperScope`.
   */
-@JSGlobal("paper.PaperScope")
 @js.native
-/** 
-  * Creates a PaperScope object.
-  */
-class PaperScope () extends js.Object {
+trait PaperScope extends js.Object {
   var Color: TypeofColor = js.native
   var CompoundPath: Instantiable1[/* pathData */ String, typings.paper.paper.CompoundPath] = js.native
   var Curve: Instantiable2[/* segment1 */ Segment, /* segment2 */ Segment, typings.paper.paper.Curve] = js.native
@@ -200,15 +196,5 @@ class PaperScope () extends js.Object {
     * worker.
     */
   def setup(element: HTMLCanvasElement): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("paper.PaperScope")
-@js.native
-object PaperScope extends js.Object {
-  /** 
-    * Retrieves a PaperScope object with the given scope id.
-    */
-  def get(id: js.Any): PaperScope = js.native
 }
 

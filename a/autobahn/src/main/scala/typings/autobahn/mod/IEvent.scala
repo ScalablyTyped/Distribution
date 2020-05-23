@@ -12,9 +12,9 @@ trait IEvent extends js.Object {
 
 object IEvent {
   @scala.inline
-  def apply(publication: Double, topic: String, publisher: Int | Double = null): IEvent = {
+  def apply(publication: Double, topic: String, publisher: js.UndefOr[Double] = js.undefined): IEvent = {
     val __obj = js.Dynamic.literal(publication = publication.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
-    if (publisher != null) __obj.updateDynamic("publisher")(publisher.asInstanceOf[js.Any])
+    if (!js.isUndefined(publisher)) __obj.updateDynamic("publisher")(publisher.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEvent]
   }
 }

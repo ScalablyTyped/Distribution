@@ -42,24 +42,24 @@ trait MatterConstraintRenderConfig extends js.Object {
 object MatterConstraintRenderConfig {
   @scala.inline
   def apply(
-    anchorColor: Int | Double = null,
-    anchorSize: Int | Double = null,
+    anchorColor: js.UndefOr[Double] = js.undefined,
+    anchorSize: js.UndefOr[Double] = js.undefined,
     anchors: js.UndefOr[Boolean] = js.undefined,
-    lineColor: Int | Double = null,
-    lineOpacity: Int | Double = null,
-    lineThickness: Int | Double = null,
-    pinSize: Int | Double = null,
+    lineColor: js.UndefOr[Double] = js.undefined,
+    lineOpacity: js.UndefOr[Double] = js.undefined,
+    lineThickness: js.UndefOr[Double] = js.undefined,
+    pinSize: js.UndefOr[Double] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined
   ): MatterConstraintRenderConfig = {
     val __obj = js.Dynamic.literal()
-    if (anchorColor != null) __obj.updateDynamic("anchorColor")(anchorColor.asInstanceOf[js.Any])
-    if (anchorSize != null) __obj.updateDynamic("anchorSize")(anchorSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(anchors)) __obj.updateDynamic("anchors")(anchors.asInstanceOf[js.Any])
-    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
-    if (lineOpacity != null) __obj.updateDynamic("lineOpacity")(lineOpacity.asInstanceOf[js.Any])
-    if (lineThickness != null) __obj.updateDynamic("lineThickness")(lineThickness.asInstanceOf[js.Any])
-    if (pinSize != null) __obj.updateDynamic("pinSize")(pinSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(anchorColor)) __obj.updateDynamic("anchorColor")(anchorColor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(anchorSize)) __obj.updateDynamic("anchorSize")(anchorSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(anchors)) __obj.updateDynamic("anchors")(anchors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineColor)) __obj.updateDynamic("lineColor")(lineColor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineOpacity)) __obj.updateDynamic("lineOpacity")(lineOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineThickness)) __obj.updateDynamic("lineThickness")(lineThickness.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pinSize)) __obj.updateDynamic("pinSize")(pinSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatterConstraintRenderConfig]
   }
 }

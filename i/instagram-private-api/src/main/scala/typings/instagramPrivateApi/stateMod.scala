@@ -1,5 +1,10 @@
 package typings.instagramPrivateApi
 
+import typings.instagramPrivateApi.anon.Androidrelease
+import typings.instagramPrivateApi.anon.Constants
+import typings.instagramPrivateApi.anon.Name
+import typings.instagramPrivateApi.anon.TypeofConstants
+import typings.instagramPrivateApi.anon.Value
 import typings.instagramPrivateApi.challengeStateResponseMod.ChallengeStateResponse
 import typings.instagramPrivateApi.checkpointResponseMod.CheckpointResponse
 import typings.request.mod.CookieJar
@@ -40,7 +45,7 @@ object stateMod extends js.Object {
     var pigeonSessionIdLifetime: Double = js.native
     var proxyUrl: String = js.native
     var radioType: String = js.native
-    var supportedCapabilities: js.Array[AnonName | AnonValue] = js.native
+    var supportedCapabilities: js.Array[Name | Value] = js.native
     var thumbnailCacheBustingValue: Double = js.native
     var timezoneOffset: String = js.native
     var uuid: String = js.native
@@ -58,7 +63,7 @@ object stateMod extends js.Object {
     def deserialize(state: js.Any): js.Promise[Unit] = js.native
     def deserializeCookieJar(cookies: String): js.Promise[Unit] = js.native
     def deserializeCookieJar(cookies: Serialized): js.Promise[Unit] = js.native
-    def devicePayload: AnonAndroidrelease = js.native
+    def devicePayload: Androidrelease = js.native
     def experiments: String = js.native
     def extractCookie(key: String): Cookie | Null = js.native
     def extractCookieValue(key: String): String = js.native
@@ -71,7 +76,7 @@ object stateMod extends js.Object {
     def isExperimentEnabled(experiment: js.Any): Boolean = js.native
     def loginExperiments: String = js.native
     def pigeonSessionId: String = js.native
-    def serialize(): js.Promise[AnonConstants with js.Any] = js.native
+    def serialize(): js.Promise[Constants with js.Any] = js.native
     def serializeCookieJar(): js.Promise[Serialized] = js.native
     def signatureKey: String = js.native
     def signatureVersion: String = js.native

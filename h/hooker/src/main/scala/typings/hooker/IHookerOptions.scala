@@ -20,8 +20,8 @@ object IHookerOptions {
     pre: /* repeated */ js.Any => IHookerPreHookResult | Unit = null
   ): IHookerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.asInstanceOf[js.Any])
-    if (!js.isUndefined(passName)) __obj.updateDynamic("passName")(passName.asInstanceOf[js.Any])
+    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passName)) __obj.updateDynamic("passName")(passName.get.asInstanceOf[js.Any])
     if (post != null) __obj.updateDynamic("post")(js.Any.fromFunction2(post))
     if (pre != null) __obj.updateDynamic("pre")(js.Any.fromFunction1(pre))
     __obj.asInstanceOf[IHookerOptions]

@@ -5,14 +5,14 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable6
-import typings.paper.TypeofColor
-import typings.paper.TypeofKey
-import typings.paper.TypeofPaperScope
-import typings.paper.TypeofPath
-import typings.paper.TypeofPathItem
-import typings.paper.TypeofPoint
-import typings.paper.TypeofShape
-import typings.paper.TypeofSize
+import typings.paper.anon.TypeofColor
+import typings.paper.anon.TypeofKey
+import typings.paper.anon.TypeofPaperScope
+import typings.paper.anon.TypeofPath
+import typings.paper.anon.TypeofPathItem
+import typings.paper.anon.TypeofPoint
+import typings.paper.anon.TypeofShape
+import typings.paper.anon.TypeofSize
 import typings.paper.paper.Color
 import typings.paper.paper.Point
 import typings.paper.paper.Size
@@ -108,11 +108,8 @@ object ^ extends js.Object {
   var View: Instantiable0[typings.paper.paper.View] = js.native
   @JSName("activate")
   var activate_Original: js.Function0[Unit] = js.native
-  @JSName("constructor")
-  var constructor_Original: js.Function0[js.Any] = js.native
   @JSName("execute")
   var execute_Original: js.Function2[/* code */ String, /* options */ js.UndefOr[js.Object], Unit] = js.native
-  var get: js.Any = js.native
   @JSName("install")
   var install_Original: js.Function1[/* scope */ js.Any, Unit] = js.native
   var project: typings.paper.paper.Project = js.native

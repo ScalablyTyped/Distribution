@@ -75,9 +75,9 @@ trait PackeryOptions extends js.Object {
 object PackeryOptions {
   @scala.inline
   def apply(
-    columnWidth: Int | Double = null,
+    columnWidth: js.UndefOr[Double] = js.undefined,
     containerStyle: js.Object = null,
-    gutter: Int | Double = null,
+    gutter: js.UndefOr[Double] = js.undefined,
     isHorizontal: js.UndefOr[Boolean] = js.undefined,
     isInitLayout: js.UndefOr[Boolean] = js.undefined,
     isOriginLeft: js.UndefOr[Boolean] = js.undefined,
@@ -85,22 +85,22 @@ object PackeryOptions {
     isResizeBound: js.UndefOr[Boolean] = js.undefined,
     itemSelector: String = null,
     percentPosition: js.UndefOr[Boolean] = js.undefined,
-    rowHeight: Int | Double = null,
+    rowHeight: js.UndefOr[Double] = js.undefined,
     stamp: String = null,
     transitionDuration: String = null
   ): PackeryOptions = {
     val __obj = js.Dynamic.literal()
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnWidth)) __obj.updateDynamic("columnWidth")(columnWidth.get.asInstanceOf[js.Any])
     if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
-    if (gutter != null) __obj.updateDynamic("gutter")(gutter.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHorizontal)) __obj.updateDynamic("isHorizontal")(isHorizontal.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInitLayout)) __obj.updateDynamic("isInitLayout")(isInitLayout.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOriginLeft)) __obj.updateDynamic("isOriginLeft")(isOriginLeft.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOriginTop)) __obj.updateDynamic("isOriginTop")(isOriginTop.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResizeBound)) __obj.updateDynamic("isResizeBound")(isResizeBound.asInstanceOf[js.Any])
+    if (!js.isUndefined(gutter)) __obj.updateDynamic("gutter")(gutter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHorizontal)) __obj.updateDynamic("isHorizontal")(isHorizontal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInitLayout)) __obj.updateDynamic("isInitLayout")(isInitLayout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOriginLeft)) __obj.updateDynamic("isOriginLeft")(isOriginLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOriginTop)) __obj.updateDynamic("isOriginTop")(isOriginTop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResizeBound)) __obj.updateDynamic("isResizeBound")(isResizeBound.get.asInstanceOf[js.Any])
     if (itemSelector != null) __obj.updateDynamic("itemSelector")(itemSelector.asInstanceOf[js.Any])
-    if (!js.isUndefined(percentPosition)) __obj.updateDynamic("percentPosition")(percentPosition.asInstanceOf[js.Any])
-    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(percentPosition)) __obj.updateDynamic("percentPosition")(percentPosition.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowHeight)) __obj.updateDynamic("rowHeight")(rowHeight.get.asInstanceOf[js.Any])
     if (stamp != null) __obj.updateDynamic("stamp")(stamp.asInstanceOf[js.Any])
     if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PackeryOptions]

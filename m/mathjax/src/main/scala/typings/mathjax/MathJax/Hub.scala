@@ -1,6 +1,5 @@
 package typings.mathjax.MathJax
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -134,7 +133,49 @@ trait Hub extends js.Object {
   def setRenderer(renderer: String, `type`: String): Unit
 }
 
-@JSGlobal("MathJax.Hub")
-@js.native
-object Hub extends TopLevel[Hub]
+object Hub {
+  @scala.inline
+  def apply(
+    Config: Config => Unit,
+    Configured: () => Unit,
+    Insert: (js.Any, js.Any) => js.Any,
+    PreProcess: (js.Any, js.Any) => js.Any,
+    Process: (js.Any, js.Any) => js.Any,
+    Queue: js.Any => js.Any,
+    Reprocess: (js.Any, js.Any) => js.Any,
+    Rerender: (js.Any, js.Any) => js.Any,
+    Typeset: (js.Any, js.Any) => js.Any,
+    Update: (js.Any, js.Any) => js.Any,
+    formatError: (js.Any, js.Any) => Unit,
+    getAllJax: js.Any => js.Array[_],
+    getJaxByInputType: (String, js.Any) => Unit,
+    getJaxByType: (String, js.Any) => Unit,
+    getJaxFor: js.Any => js.Any,
+    isJax: js.Any => Double,
+    setRenderer: (String, String) => Unit,
+    Browser: BrowserInfo = null,
+    Register: Register = null,
+    config: Config = null,
+    inputJax: js.Any = null,
+    outputJax: js.Any = null,
+    processSectionDelay: js.UndefOr[Double] = js.undefined,
+    processUpdateDelay: js.UndefOr[Double] = js.undefined,
+    processUpdateTime: js.UndefOr[Double] = js.undefined,
+    queue: js.Any = null,
+    signal: Signal = null
+  ): Hub = {
+    val __obj = js.Dynamic.literal(Config = js.Any.fromFunction1(Config), Configured = js.Any.fromFunction0(Configured), Insert = js.Any.fromFunction2(Insert), PreProcess = js.Any.fromFunction2(PreProcess), Process = js.Any.fromFunction2(Process), Queue = js.Any.fromFunction1(Queue), Reprocess = js.Any.fromFunction2(Reprocess), Rerender = js.Any.fromFunction2(Rerender), Typeset = js.Any.fromFunction2(Typeset), Update = js.Any.fromFunction2(Update), formatError = js.Any.fromFunction2(formatError), getAllJax = js.Any.fromFunction1(getAllJax), getJaxByInputType = js.Any.fromFunction2(getJaxByInputType), getJaxByType = js.Any.fromFunction2(getJaxByType), getJaxFor = js.Any.fromFunction1(getJaxFor), isJax = js.Any.fromFunction1(isJax), setRenderer = js.Any.fromFunction2(setRenderer))
+    if (Browser != null) __obj.updateDynamic("Browser")(Browser.asInstanceOf[js.Any])
+    if (Register != null) __obj.updateDynamic("Register")(Register.asInstanceOf[js.Any])
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (inputJax != null) __obj.updateDynamic("inputJax")(inputJax.asInstanceOf[js.Any])
+    if (outputJax != null) __obj.updateDynamic("outputJax")(outputJax.asInstanceOf[js.Any])
+    if (!js.isUndefined(processSectionDelay)) __obj.updateDynamic("processSectionDelay")(processSectionDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(processUpdateDelay)) __obj.updateDynamic("processUpdateDelay")(processUpdateDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(processUpdateTime)) __obj.updateDynamic("processUpdateTime")(processUpdateTime.get.asInstanceOf[js.Any])
+    if (queue != null) __obj.updateDynamic("queue")(queue.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Hub]
+  }
+}
 

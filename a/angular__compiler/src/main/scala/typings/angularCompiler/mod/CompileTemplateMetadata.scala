@@ -1,6 +1,6 @@
 package typings.angularCompiler.mod
 
-import typings.angularCompiler.AnonAnimations
+import typings.angularCompiler.anon.Animations
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class CompileTemplateMetadata protected ()
   extends typings.angularCompiler.publicApiMod.CompileTemplateMetadata {
-  def this(hasEncapsulationTemplateTemplateUrlHtmlAstStylesStyleUrlsExternalStylesheetsAnimationsNgContentSelectorsInterpolationIsInlinePreserveWhitespaces: AnonAnimations) = this()
+  def this(hasEncapsulationTemplateTemplateUrlHtmlAstStylesStyleUrlsExternalStylesheetsAnimationsNgContentSelectorsInterpolationIsInlinePreserveWhitespaces: Animations) = this()
 }
 

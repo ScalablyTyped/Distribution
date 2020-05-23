@@ -1,10 +1,10 @@
 package typings.gapiClientCalendar.gapi.client.calendar
 
-import typings.gapiClientCalendar.AnonDisplay
-import typings.gapiClientCalendar.AnonDisplayName
-import typings.gapiClientCalendar.AnonOverrides
-import typings.gapiClientCalendar.AnonPrivate
-import typings.gapiClientCalendar.AnonTitle
+import typings.gapiClientCalendar.anon.Display
+import typings.gapiClientCalendar.anon.DisplayName
+import typings.gapiClientCalendar.anon.Overrides
+import typings.gapiClientCalendar.anon.Private
+import typings.gapiClientCalendar.anon.Title
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +27,16 @@ trait Event extends js.Object {
   var attendeesOmitted: js.UndefOr[Boolean] = js.undefined
   /** The color of the event. This is an ID referring to an entry in the event section of the colors definition (see the  colors endpoint). Optional. */
   var colorId: js.UndefOr[String] = js.undefined
+  /**
+    * The conference-related information, such as details of a Google Meet conference. To create new conference details use the createRequest field. To
+    * persist your changes, remember to set the conferenceDataVersion request parameter to 1 for all event modification requests.
+    */
+  var conferenceData: js.UndefOr[ConferenceData] = js.undefined
   /** Creation time of the event (as a RFC3339 timestamp). Read-only. */
   var created: js.UndefOr[String] = js.undefined
   /** The creator of the event. Read-only. */
-  var creator: js.UndefOr[AnonDisplayName] = js.undefined
-  /** Description of the event. Optional. */
+  var creator: js.UndefOr[DisplayName] = js.undefined
+  /** Description of the event. Can contain HTML. Optional. */
   var description: js.UndefOr[String] = js.undefined
   /** The (exclusive) end time of the event. For a recurring event, this is the end time of the first instance. */
   var end: js.UndefOr[EventDateTime] = js.undefined
@@ -43,9 +48,9 @@ trait Event extends js.Object {
   /** ETag of the resource. */
   var etag: js.UndefOr[String] = js.undefined
   /** Extended properties of the event. */
-  var extendedProperties: js.UndefOr[AnonPrivate] = js.undefined
+  var extendedProperties: js.UndefOr[Private] = js.undefined
   /** A gadget that extends this event. */
-  var gadget: js.UndefOr[AnonDisplay] = js.undefined
+  var gadget: js.UndefOr[Display] = js.undefined
   /** Whether attendees other than the organizer can invite others to the event. Optional. The default is True. */
   var guestsCanInviteOthers: js.UndefOr[Boolean] = js.undefined
   /** Whether attendees other than the organizer can modify the event. Optional. The default is False. */
@@ -87,13 +92,17 @@ trait Event extends js.Object {
     * The organizer of the event. If the organizer is also an attendee, this is indicated with a separate entry in attendees with the organizer field set to
     * True. To change the organizer, use the move operation. Read-only, except when importing an event.
     */
-  var organizer: js.UndefOr[AnonDisplayName] = js.undefined
+  var organizer: js.UndefOr[DisplayName] = js.undefined
   /**
     * For an instance of a recurring event, this is the time at which this event would start according to the recurrence data in the recurring event
-    * identified by recurringEventId. Immutable.
+    * identified by recurringEventId. It uniquely identifies the instance within the recurring event series even if the instance was moved to a different
+    * time. Immutable.
     */
   var originalStartTime: js.UndefOr[EventDateTime] = js.undefined
-  /** Whether this is a private event copy where changes are not shared with other copies on other calendars. Optional. Immutable. The default is False. */
+  /**
+    * If set to True, Event propagation is disabled. Note that it is not the same thing as Private event properties. Optional. Immutable. The default is
+    * False.
+    */
   var privateCopy: js.UndefOr[Boolean] = js.undefined
   /**
     * List of RRULE, EXRULE, RDATE and EXDATE lines for a recurring event, as specified in RFC5545. Note that DTSTART and DTEND lines are not allowed in this
@@ -103,21 +112,34 @@ trait Event extends js.Object {
   /** For an instance of a recurring event, this is the id of the recurring event to which this instance belongs. Immutable. */
   var recurringEventId: js.UndefOr[String] = js.undefined
   /** Information about the event's reminders for the authenticated user. */
-  var reminders: js.UndefOr[AnonOverrides] = js.undefined
+  var reminders: js.UndefOr[Overrides] = js.undefined
   /** Sequence number as per iCalendar. */
   var sequence: js.UndefOr[Double] = js.undefined
   /**
     * Source from which the event was created. For example, a web page, an email message or any document identifiable by an URL with HTTP or HTTPS scheme.
     * Can only be seen or modified by the creator of the event.
     */
-  var source: js.UndefOr[AnonTitle] = js.undefined
+  var source: js.UndefOr[Title] = js.undefined
   /** The (inclusive) start time of the event. For a recurring event, this is the start time of the first instance. */
   var start: js.UndefOr[EventDateTime] = js.undefined
   /**
     * Status of the event. Optional. Possible values are:
     * - "confirmed" - The event is confirmed. This is the default status.
     * - "tentative" - The event is tentatively confirmed.
-    * - "cancelled" - The event is cancelled.
+    * - "cancelled" - The event is cancelled (deleted). The list method returns cancelled events only on incremental sync (when syncToken or updatedMin are
+    * specified) or if the showDeleted flag is set to true. The get method always returns them.
+    * A cancelled status represents two different states depending on the event type:
+    * - Cancelled exceptions of an uncancelled recurring event indicate that this instance should no longer be presented to the user. Clients should store
+    * these events for the lifetime of the parent recurring event.
+    * Cancelled exceptions are only guaranteed to have values for the id, recurringEventId and originalStartTime fields populated. The other fields might be
+    * empty.
+    * - All other cancelled events represent deleted events. Clients should remove their locally synced copies. Such cancelled events will eventually
+    * disappear, so do not rely on them being available indefinitely.
+    * Deleted events are only guaranteed to have the id field populated.   On the organizer's calendar, cancelled events continue to expose event details
+    * (summary, location, etc.) so that they can be restored (undeleted). Similarly, the events to which the user was invited and that they manually removed
+    * continue to provide details. However, incremental sync requests with showDeleted set to false will not return these details.
+    * If an event changes its organizer (for example via the move operation) and the original organizer is not on the attendee list, it will leave behind a
+    * cancelled event where only the id field is guaranteed to be populated.
     */
   var status: js.UndefOr[String] = js.undefined
   /** Title of the event. */
@@ -148,14 +170,15 @@ object Event {
     attendees: js.Array[EventAttendee] = null,
     attendeesOmitted: js.UndefOr[Boolean] = js.undefined,
     colorId: String = null,
+    conferenceData: ConferenceData = null,
     created: String = null,
-    creator: AnonDisplayName = null,
+    creator: DisplayName = null,
     description: String = null,
     end: EventDateTime = null,
     endTimeUnspecified: js.UndefOr[Boolean] = js.undefined,
     etag: String = null,
-    extendedProperties: AnonPrivate = null,
-    gadget: AnonDisplay = null,
+    extendedProperties: Private = null,
+    gadget: Display = null,
     guestsCanInviteOthers: js.UndefOr[Boolean] = js.undefined,
     guestsCanModify: js.UndefOr[Boolean] = js.undefined,
     guestsCanSeeOtherGuests: js.UndefOr[Boolean] = js.undefined,
@@ -166,14 +189,14 @@ object Event {
     kind: String = null,
     location: String = null,
     locked: js.UndefOr[Boolean] = js.undefined,
-    organizer: AnonDisplayName = null,
+    organizer: DisplayName = null,
     originalStartTime: EventDateTime = null,
     privateCopy: js.UndefOr[Boolean] = js.undefined,
     recurrence: js.Array[String] = null,
     recurringEventId: String = null,
-    reminders: AnonOverrides = null,
-    sequence: Int | Double = null,
-    source: AnonTitle = null,
+    reminders: Overrides = null,
+    sequence: js.UndefOr[Double] = js.undefined,
+    source: Title = null,
     start: EventDateTime = null,
     status: String = null,
     summary: String = null,
@@ -182,36 +205,37 @@ object Event {
     visibility: String = null
   ): Event = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(anyoneCanAddSelf)) __obj.updateDynamic("anyoneCanAddSelf")(anyoneCanAddSelf.asInstanceOf[js.Any])
+    if (!js.isUndefined(anyoneCanAddSelf)) __obj.updateDynamic("anyoneCanAddSelf")(anyoneCanAddSelf.get.asInstanceOf[js.Any])
     if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
     if (attendees != null) __obj.updateDynamic("attendees")(attendees.asInstanceOf[js.Any])
-    if (!js.isUndefined(attendeesOmitted)) __obj.updateDynamic("attendeesOmitted")(attendeesOmitted.asInstanceOf[js.Any])
+    if (!js.isUndefined(attendeesOmitted)) __obj.updateDynamic("attendeesOmitted")(attendeesOmitted.get.asInstanceOf[js.Any])
     if (colorId != null) __obj.updateDynamic("colorId")(colorId.asInstanceOf[js.Any])
+    if (conferenceData != null) __obj.updateDynamic("conferenceData")(conferenceData.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (creator != null) __obj.updateDynamic("creator")(creator.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (!js.isUndefined(endTimeUnspecified)) __obj.updateDynamic("endTimeUnspecified")(endTimeUnspecified.asInstanceOf[js.Any])
+    if (!js.isUndefined(endTimeUnspecified)) __obj.updateDynamic("endTimeUnspecified")(endTimeUnspecified.get.asInstanceOf[js.Any])
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
     if (extendedProperties != null) __obj.updateDynamic("extendedProperties")(extendedProperties.asInstanceOf[js.Any])
     if (gadget != null) __obj.updateDynamic("gadget")(gadget.asInstanceOf[js.Any])
-    if (!js.isUndefined(guestsCanInviteOthers)) __obj.updateDynamic("guestsCanInviteOthers")(guestsCanInviteOthers.asInstanceOf[js.Any])
-    if (!js.isUndefined(guestsCanModify)) __obj.updateDynamic("guestsCanModify")(guestsCanModify.asInstanceOf[js.Any])
-    if (!js.isUndefined(guestsCanSeeOtherGuests)) __obj.updateDynamic("guestsCanSeeOtherGuests")(guestsCanSeeOtherGuests.asInstanceOf[js.Any])
+    if (!js.isUndefined(guestsCanInviteOthers)) __obj.updateDynamic("guestsCanInviteOthers")(guestsCanInviteOthers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(guestsCanModify)) __obj.updateDynamic("guestsCanModify")(guestsCanModify.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(guestsCanSeeOtherGuests)) __obj.updateDynamic("guestsCanSeeOtherGuests")(guestsCanSeeOtherGuests.get.asInstanceOf[js.Any])
     if (hangoutLink != null) __obj.updateDynamic("hangoutLink")(hangoutLink.asInstanceOf[js.Any])
     if (htmlLink != null) __obj.updateDynamic("htmlLink")(htmlLink.asInstanceOf[js.Any])
     if (iCalUID != null) __obj.updateDynamic("iCalUID")(iCalUID.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.asInstanceOf[js.Any])
+    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.get.asInstanceOf[js.Any])
     if (organizer != null) __obj.updateDynamic("organizer")(organizer.asInstanceOf[js.Any])
     if (originalStartTime != null) __obj.updateDynamic("originalStartTime")(originalStartTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(privateCopy)) __obj.updateDynamic("privateCopy")(privateCopy.asInstanceOf[js.Any])
+    if (!js.isUndefined(privateCopy)) __obj.updateDynamic("privateCopy")(privateCopy.get.asInstanceOf[js.Any])
     if (recurrence != null) __obj.updateDynamic("recurrence")(recurrence.asInstanceOf[js.Any])
     if (recurringEventId != null) __obj.updateDynamic("recurringEventId")(recurringEventId.asInstanceOf[js.Any])
     if (reminders != null) __obj.updateDynamic("reminders")(reminders.asInstanceOf[js.Any])
-    if (sequence != null) __obj.updateDynamic("sequence")(sequence.asInstanceOf[js.Any])
+    if (!js.isUndefined(sequence)) __obj.updateDynamic("sequence")(sequence.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])

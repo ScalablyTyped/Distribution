@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-adal
 
-Typings are for version 0.4
+Typings are for version 0.5
 
 ## Library description:
 Azure Active Directory (ADAL) support for ReactJS

@@ -10,9 +10,9 @@ trait IntegerParams extends js.Object {
 
 object IntegerParams {
   @scala.inline
-  def apply(value: Int | Double = null): IntegerParams = {
+  def apply(value: js.UndefOr[Double] = js.undefined): IntegerParams = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntegerParams]
   }
 }

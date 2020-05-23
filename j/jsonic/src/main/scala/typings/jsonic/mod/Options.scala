@@ -15,17 +15,17 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    depth: Int | Double = null,
+    depth: js.UndefOr[Double] = js.undefined,
     exclude: js.Array[String] = null,
-    maxchars: Int | Double = null,
-    maxitems: Int | Double = null,
+    maxchars: js.UndefOr[Double] = js.undefined,
+    maxitems: js.UndefOr[Double] = js.undefined,
     omit: js.Array[String] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (maxchars != null) __obj.updateDynamic("maxchars")(maxchars.asInstanceOf[js.Any])
-    if (maxitems != null) __obj.updateDynamic("maxitems")(maxitems.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxchars)) __obj.updateDynamic("maxchars")(maxchars.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxitems)) __obj.updateDynamic("maxitems")(maxitems.get.asInstanceOf[js.Any])
     if (omit != null) __obj.updateDynamic("omit")(omit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

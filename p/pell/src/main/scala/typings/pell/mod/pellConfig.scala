@@ -16,7 +16,7 @@ trait pellConfig[T /* <: HTMLElement */] extends js.Object {
 
 object pellConfig {
   @scala.inline
-  def apply[T /* <: HTMLElement */](
+  def apply[T](
     actions: js.Array[pellAction],
     element: T,
     onChange: String => Unit,
@@ -27,7 +27,7 @@ object pellConfig {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (defaultParagraphSeparator != null) __obj.updateDynamic("defaultParagraphSeparator")(defaultParagraphSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(styleWithCSS)) __obj.updateDynamic("styleWithCSS")(styleWithCSS.asInstanceOf[js.Any])
+    if (!js.isUndefined(styleWithCSS)) __obj.updateDynamic("styleWithCSS")(styleWithCSS.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[pellConfig[T]]
   }
 }

@@ -15,20 +15,20 @@ class TaskGroup protected () extends js.Object {
 @js.native
 object TaskGroup extends js.Object {
   /**
-  		 * The build task group;
-  		 */
+    * The build task group;
+    */
   var Build: TaskGroup = js.native
   /**
-  		 * The clean task group;
-  		 */
+    * The clean task group;
+    */
   var Clean: TaskGroup = js.native
   /**
-  		 * The rebuild all task group;
-  		 */
+    * The rebuild all task group;
+    */
   var Rebuild: TaskGroup = js.native
   /**
-  		 * The test all task group;
-  		 */
+    * The test all task group;
+    */
   var Test: TaskGroup = js.native
 }
 

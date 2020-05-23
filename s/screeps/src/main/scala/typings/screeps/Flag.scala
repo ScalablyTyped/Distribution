@@ -1,6 +1,6 @@
 package typings.screeps
 
-import org.scalablytyped.runtime.TopLevel
+import typings.screeps.anon.Pos
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,13 +43,13 @@ trait Flag extends RoomObject {
     */
   def setColor(color: ColorConstant): OK | ERR_INVALID_ARGS = js.native
   def setColor(color: ColorConstant, secondaryColor: ColorConstant): OK | ERR_INVALID_ARGS = js.native
-  def setPosition(pos: AnonPos): OK | ERR_INVALID_ARGS = js.native
   /**
     * Set new position of the flag.
     * @param pos Can be a RoomPosition object or any object containing RoomPosition.
     * @returns Result Code: OK, ERR_INVALID_TARGET
     */
   def setPosition(pos: RoomPosition): OK | ERR_INVALID_ARGS = js.native
+  def setPosition(pos: Pos): OK | ERR_INVALID_ARGS = js.native
   /**
     * Set new position of the flag.
     * @param x The X position in the room.
@@ -58,8 +58,4 @@ trait Flag extends RoomObject {
     */
   def setPosition(x: Double, y: Double): OK | ERR_INVALID_ARGS = js.native
 }
-
-@JSGlobal("Flag")
-@js.native
-object Flag extends TopLevel[FlagConstructor]
 

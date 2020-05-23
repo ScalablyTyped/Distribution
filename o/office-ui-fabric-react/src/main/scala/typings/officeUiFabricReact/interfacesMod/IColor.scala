@@ -26,12 +26,12 @@ object IColor {
     s: Double,
     str: String,
     v: Double,
-    a: Int | Double = null,
-    t: Int | Double = null
+    a: js.UndefOr[Double] = js.undefined,
+    t: js.UndefOr[Double] = js.undefined
   ): IColor = {
     val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], hex = hex.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], str = str.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
-    if (a != null) __obj.updateDynamic("a")(a.asInstanceOf[js.Any])
-    if (t != null) __obj.updateDynamic("t")(t.asInstanceOf[js.Any])
+    if (!js.isUndefined(a)) __obj.updateDynamic("a")(a.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(t)) __obj.updateDynamic("t")(t.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColor]
   }
 }

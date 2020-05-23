@@ -35,14 +35,14 @@ object MessengerOptions {
   @scala.inline
   def apply(
     extraClasses: String = null,
-    maxMessages: Int | Double = null,
+    maxMessages: js.UndefOr[Double] = js.undefined,
     messageDefaults: MessageOptions = null,
     parentLocations: js.Array[String] = null,
     theme: String = null
   ): MessengerOptions = {
     val __obj = js.Dynamic.literal()
     if (extraClasses != null) __obj.updateDynamic("extraClasses")(extraClasses.asInstanceOf[js.Any])
-    if (maxMessages != null) __obj.updateDynamic("maxMessages")(maxMessages.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxMessages)) __obj.updateDynamic("maxMessages")(maxMessages.get.asInstanceOf[js.Any])
     if (messageDefaults != null) __obj.updateDynamic("messageDefaults")(messageDefaults.asInstanceOf[js.Any])
     if (parentLocations != null) __obj.updateDynamic("parentLocations")(parentLocations.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])

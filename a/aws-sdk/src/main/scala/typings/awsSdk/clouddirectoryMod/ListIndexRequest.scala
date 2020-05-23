@@ -38,13 +38,13 @@ object ListIndexRequest {
     DirectoryArn: Arn,
     IndexReference: ObjectReference,
     ConsistencyLevel: ConsistencyLevel = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[NumberResults] = js.undefined,
     NextToken: NextToken = null,
     RangesOnIndexedValues: ObjectAttributeRangeList = null
   ): ListIndexRequest = {
     val __obj = js.Dynamic.literal(DirectoryArn = DirectoryArn.asInstanceOf[js.Any], IndexReference = IndexReference.asInstanceOf[js.Any])
     if (ConsistencyLevel != null) __obj.updateDynamic("ConsistencyLevel")(ConsistencyLevel.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (RangesOnIndexedValues != null) __obj.updateDynamic("RangesOnIndexedValues")(RangesOnIndexedValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListIndexRequest]

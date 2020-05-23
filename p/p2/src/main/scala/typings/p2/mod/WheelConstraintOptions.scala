@@ -15,12 +15,12 @@ object WheelConstraintOptions {
   def apply(
     localForwardVector: js.Tuple2[Double, Double] = null,
     localPosition: js.Tuple2[Double, Double] = null,
-    sideFriction: Int | Double = null
+    sideFriction: js.UndefOr[Double] = js.undefined
   ): WheelConstraintOptions = {
     val __obj = js.Dynamic.literal()
     if (localForwardVector != null) __obj.updateDynamic("localForwardVector")(localForwardVector.asInstanceOf[js.Any])
     if (localPosition != null) __obj.updateDynamic("localPosition")(localPosition.asInstanceOf[js.Any])
-    if (sideFriction != null) __obj.updateDynamic("sideFriction")(sideFriction.asInstanceOf[js.Any])
+    if (!js.isUndefined(sideFriction)) __obj.updateDynamic("sideFriction")(sideFriction.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WheelConstraintOptions]
   }
 }

@@ -1,5 +1,6 @@
 package typings.authmosphere
 
+import typings.authmosphere.anon.Accesstoken
 import typings.authmosphere.mockOptionsMod.MockOptions
 import typings.nock.mod.Scope
 import scala.scalajs.js
@@ -33,7 +34,7 @@ object mockToolingMod extends js.Object {
     * @throws on parse error of options.url
     */
   def mockTokeninfoEndpoint(options: MockOptions): Scope = js.native
-  def mockTokeninfoEndpoint(options: MockOptions, tokens: js.Array[AnonAccesstoken]): Scope = js.native
+  def mockTokeninfoEndpoint(options: MockOptions, tokens: js.Array[Accesstoken]): Scope = js.native
   def mockTokeninfoEndpointWithErrorResponse(options: MockOptions, httpStatus: Double): Scope = js.native
   def mockTokeninfoEndpointWithErrorResponse(options: MockOptions, httpStatus: Double, responseBody: js.Object): Scope = js.native
 }

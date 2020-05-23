@@ -44,9 +44,9 @@ trait PlusIoFileEntry extends js.Object {
   /**
     * 拷贝文件
     * 以下情况拷贝文件将会导致失败：
-    * 	要拷贝到的目标目录无效；
-    * 	要拷贝到的目标路径被其它文件占用；
-    * 	拷贝文件成功通过succesCB回调返回，失败则通过errorCB返回。
+    *     要拷贝到的目标目录无效；
+    *     要拷贝到的目标路径被其它文件占用；
+    *     拷贝文件成功通过succesCB回调返回，失败则通过errorCB返回。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
@@ -91,7 +91,7 @@ trait PlusIoFileEntry extends js.Object {
   /**
     * 获取文件的属性信息
     * 用于获取文件的属性信息。
-    * 	获取属性信息成功通过succesCB回调返回，失败则通过errorCB返回。
+    *     获取属性信息成功通过succesCB回调返回，失败则通过errorCB返回。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
@@ -116,9 +116,9 @@ trait PlusIoFileEntry extends js.Object {
   /**
     * 移动文件
     * 以下情况移动目录将会导致失败：
-    * 	要移动到的目标目录无效；
-    * 	要移动到的目标路径被其它文件占用；
-    * 	移动文件成功通过succesCB回调返回，失败则通过errorCB返回。
+    *     要移动到的目标目录无效；
+    *     要移动到的目标路径被其它文件占用；
+    *     移动文件成功通过succesCB回调返回，失败则通过errorCB返回。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */

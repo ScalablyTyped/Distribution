@@ -24,96 +24,95 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * A control used to select one or more fixed values.
-		 */
-@JSGlobal("Titanium.UI.Picker")
+  * A control used to select one or more fixed values.
+  */
 @js.native
-class Picker () extends View {
+trait Picker extends View {
   /**
-  			 * Determines whether the calenderView is visible.
-  			 */
+    * Determines whether the calenderView is visible.
+    */
   var calendarViewShown: Boolean = js.native
   /**
-  			 * Columns used for this picker, as an array of <Titanium.UI.PickerColumn> objects.
-  			 */
+    * Columns used for this picker, as an array of <Titanium.UI.PickerColumn> objects.
+    */
   var columns: js.Array[PickerColumn] = js.native
   /**
-  			 * Duration in milliseconds used for a Countdown Timer picker.
-  			 */
+    * Duration in milliseconds used for a Countdown Timer picker.
+    */
   var countDownDuration: Double = js.native
   /**
-  			 * Sets the text color of date- and time-pickers.
-  			 */
+    * Sets the text color of date- and time-pickers.
+    */
   var dateTimeColor: String = js.native
   /**
-  			 * Font to use for text.
-  			 */
+    * Font to use for text.
+    */
   var font: Font = js.native
   /**
-  			 * Determines whether the Time pickers display in 24-hour or 12-hour clock format.
-  			 */
+    * Determines whether the Time pickers display in 24-hour or 12-hour clock format.
+    */
   var format24: Boolean = js.native
   /**
-  			 * Locale used when displaying Date and Time picker values.
-  			 */
+    * Locale used when displaying Date and Time picker values.
+    */
   var locale: String = js.native
   /**
-  			 * Maximum date displayed when a Date picker is in use.
-  			 */
+    * Maximum date displayed when a Date picker is in use.
+    */
   var maxDate: Date = js.native
   /**
-  			 * Minimum date displayed when a Date picker is in use.
-  			 */
+    * Minimum date displayed when a Date picker is in use.
+    */
   var minDate: Date = js.native
   /**
-  			 * Interval in minutes displayed when one of the Time types of pickers is in use.
-  			 */
+    * Interval in minutes displayed when one of the Time types of pickers is in use.
+    */
   var minuteInterval: Double = js.native
   /**
-  			 * Creates a native Android control for creating a Time Spinner with Type `Ti.UI.PICKER_TYPE_TIME`.
-  			 * This is invoked rather than the default native "dropdown" style.
-  			 */
+    * Creates a native Android control for creating a Time Spinner with Type `Ti.UI.PICKER_TYPE_TIME`.
+    * This is invoked rather than the default native "dropdown" style.
+    */
   var nativeSpinner: Boolean = js.native
   /**
-  			 * Determines whether the visual selection indicator is shown.
-  			 */
+    * Determines whether the visual selection indicator is shown.
+    */
   var selectionIndicator: Boolean = js.native
   /**
-  			 * Determines whether calling the method `setSelectedRow` opens when called
-  			 */
+    * Determines whether calling the method `setSelectedRow` opens when called
+    */
   var selectionOpens: Boolean = js.native
   /**
-  			 * Determines the type of picker displayed
-  			 */
+    * Determines the type of picker displayed
+    */
   var `type`: Double = js.native
   /**
-  			 * Determines whether the non-native Android control, with a spinning wheel that looks and
-  			 * behaves like the iOS picker, is invoked rather than the default native "dropdown" style.
-  			 * @deprecated This property is deprecated. Please use the default native "dropdown" style.
-  			 */
+    * Determines whether the non-native Android control, with a spinning wheel that looks and
+    * behaves like the iOS picker, is invoked rather than the default native "dropdown" style.
+    * @deprecated This property is deprecated. Please use the default native "dropdown" style.
+    */
   var useSpinner: Boolean = js.native
   /**
-  			 * Date and time value for Date and Time pickers.
-  			 */
+    * Date and time value for Date and Time pickers.
+    */
   var value: Date = js.native
   /**
-  			 * Number of visible rows to display. This is only applicable to a plain picker and when the
-  			 * `useSpinner` is `true`.
-  			 */
+    * Number of visible rows to display. This is only applicable to a plain picker and when the
+    * `useSpinner` is `true`.
+    */
   var visibleItems: Double = js.native
   def add(data: PickerColumn): Unit = js.native
   def add(data: PickerRow): Unit = js.native
   /**
-  			 * Adds the specified callback as an event listener for the named event.
-  			 */
+    * Adds the specified callback as an event listener for the named event.
+    */
   @JSName("addEventListener")
   def addEventListener_change(
     name: change,
     callback: js.ThisFunction1[/* this */ this.type, /* event */ PickerChangeEvent, Unit]
   ): Unit = js.native
   /**
-  			 * Fires a synthesized event to any registered listeners.
-  			 */
+    * Fires a synthesized event to any registered listeners.
+    */
   @JSName("fireEvent")
   def fireEvent_change(name: change): Unit = js.native
   @JSName("fireEvent")
@@ -151,202 +150,202 @@ class Picker () extends View {
   @JSName("fireEvent")
   def fireEvent_twofingertap(name: twofingertap, event: PickerTwofingertapEvent): Unit = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Picker.calendarViewShown> property.
-  			 * @deprecated Access <Titanium.UI.Picker.calendarViewShown> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Picker.calendarViewShown> property.
+    * @deprecated Access <Titanium.UI.Picker.calendarViewShown> instead.
+    */
   def getCalendarViewShown(): Boolean = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Picker.columns> property.
-  			 * @deprecated Access <Titanium.UI.Picker.columns> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Picker.columns> property.
+    * @deprecated Access <Titanium.UI.Picker.columns> instead.
+    */
   def getColumns(): js.Array[PickerColumn] = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Picker.countDownDuration> property.
-  			 * @deprecated Access <Titanium.UI.Picker.countDownDuration> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Picker.countDownDuration> property.
+    * @deprecated Access <Titanium.UI.Picker.countDownDuration> instead.
+    */
   def getCountDownDuration(): Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Picker.dateTimeColor> property.
-  			 * @deprecated Access <Titanium.UI.Picker.dateTimeColor> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Picker.dateTimeColor> property.
+    * @deprecated Access <Titanium.UI.Picker.dateTimeColor> instead.
+    */
   def getDateTimeColor(): String = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Picker.font> property.
-  			 * @deprecated Access <Titanium.UI.Picker.font> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Picker.font> property.
+    * @deprecated Access <Titanium.UI.Picker.font> instead.
+    */
   def getFont(): Font = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Picker.format24> property.
-  			 * @deprecated Access <Titanium.UI.Picker.format24> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Picker.format24> property.
+    * @deprecated Access <Titanium.UI.Picker.format24> instead.
+    */
   def getFormat24(): Boolean = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Picker.locale> property.
-  			 * @deprecated Access <Titanium.UI.Picker.locale> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Picker.locale> property.
+    * @deprecated Access <Titanium.UI.Picker.locale> instead.
+    */
   def getLocale(): String = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Picker.maxDate> property.
-  			 * @deprecated Access <Titanium.UI.Picker.maxDate> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Picker.maxDate> property.
+    * @deprecated Access <Titanium.UI.Picker.maxDate> instead.
+    */
   def getMaxDate(): Date = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Picker.minDate> property.
-  			 * @deprecated Access <Titanium.UI.Picker.minDate> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Picker.minDate> property.
+    * @deprecated Access <Titanium.UI.Picker.minDate> instead.
+    */
   def getMinDate(): Date = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Picker.minuteInterval> property.
-  			 * @deprecated Access <Titanium.UI.Picker.minuteInterval> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Picker.minuteInterval> property.
+    * @deprecated Access <Titanium.UI.Picker.minuteInterval> instead.
+    */
   def getMinuteInterval(): Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Picker.nativeSpinner> property.
-  			 * @deprecated Access <Titanium.UI.Picker.nativeSpinner> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Picker.nativeSpinner> property.
+    * @deprecated Access <Titanium.UI.Picker.nativeSpinner> instead.
+    */
   def getNativeSpinner(): Boolean = js.native
   /**
-  			 * Gets the selected row for a column, or `null` if none exists.
-  			 */
+    * Gets the selected row for a column, or `null` if none exists.
+    */
   def getSelectedRow(index: Double): PickerRow = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Picker.selectionIndicator> property.
-  			 * @deprecated Access <Titanium.UI.Picker.selectionIndicator> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Picker.selectionIndicator> property.
+    * @deprecated Access <Titanium.UI.Picker.selectionIndicator> instead.
+    */
   def getSelectionIndicator(): Boolean = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Picker.selectionOpens> property.
-  			 * @deprecated Access <Titanium.UI.Picker.selectionOpens> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Picker.selectionOpens> property.
+    * @deprecated Access <Titanium.UI.Picker.selectionOpens> instead.
+    */
   def getSelectionOpens(): Boolean = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Picker.type> property.
-  			 * @deprecated Access <Titanium.UI.Picker.type> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Picker.type> property.
+    * @deprecated Access <Titanium.UI.Picker.type> instead.
+    */
   def getType(): Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Picker.useSpinner> property.
-  			 * @deprecated This property is deprecated. Please use the default native "dropdown" style.
-  			 */
+    * Gets the value of the <Titanium.UI.Picker.useSpinner> property.
+    * @deprecated This property is deprecated. Please use the default native "dropdown" style.
+    */
   def getUseSpinner(): Boolean = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Picker.value> property.
-  			 * @deprecated Access <Titanium.UI.Picker.value> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Picker.value> property.
+    * @deprecated Access <Titanium.UI.Picker.value> instead.
+    */
   def getValue(): Date = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Picker.visibleItems> property.
-  			 * @deprecated Access <Titanium.UI.Picker.visibleItems> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Picker.visibleItems> property.
+    * @deprecated Access <Titanium.UI.Picker.visibleItems> instead.
+    */
   def getVisibleItems(): Double = js.native
   /**
-  			 * Repopulates values for a column.
-  			 */
+    * Repopulates values for a column.
+    */
   def reloadColumn(column: PickerColumn): Unit = js.native
   /**
-  			 * Removes the specified callback as an event listener for the named event.
-  			 */
+    * Removes the specified callback as an event listener for the named event.
+    */
   @JSName("removeEventListener")
   def removeEventListener_change(
     name: change,
     callback: js.ThisFunction1[/* this */ this.type, /* event */ PickerChangeEvent, Unit]
   ): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Picker.calendarViewShown> property.
-  			 * @deprecated Set the value using <Titanium.UI.Picker.calendarViewShown> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Picker.calendarViewShown> property.
+    * @deprecated Set the value using <Titanium.UI.Picker.calendarViewShown> instead.
+    */
   def setCalendarViewShown(calendarViewShown: Boolean): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Picker.columns> property.
-  			 * @deprecated Set the value using <Titanium.UI.Picker.columns> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Picker.columns> property.
+    * @deprecated Set the value using <Titanium.UI.Picker.columns> instead.
+    */
   def setColumns(columns: js.Array[PickerColumn]): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Picker.countDownDuration> property.
-  			 * @deprecated Set the value using <Titanium.UI.Picker.countDownDuration> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Picker.countDownDuration> property.
+    * @deprecated Set the value using <Titanium.UI.Picker.countDownDuration> instead.
+    */
   def setCountDownDuration(countDownDuration: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Picker.dateTimeColor> property.
-  			 * @deprecated Set the value using <Titanium.UI.Picker.dateTimeColor> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Picker.dateTimeColor> property.
+    * @deprecated Set the value using <Titanium.UI.Picker.dateTimeColor> instead.
+    */
   def setDateTimeColor(dateTimeColor: String): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Picker.font> property.
-  			 * @deprecated Set the value using <Titanium.UI.Picker.font> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Picker.font> property.
+    * @deprecated Set the value using <Titanium.UI.Picker.font> instead.
+    */
   def setFont(font: Font): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Picker.format24> property.
-  			 * @deprecated Set the value using <Titanium.UI.Picker.format24> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Picker.format24> property.
+    * @deprecated Set the value using <Titanium.UI.Picker.format24> instead.
+    */
   def setFormat24(format24: Boolean): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Picker.locale> property.
-  			 * @deprecated Set the value using <Titanium.UI.Picker.locale> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Picker.locale> property.
+    * @deprecated Set the value using <Titanium.UI.Picker.locale> instead.
+    */
   def setLocale(locale: String): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Picker.maxDate> property.
-  			 * @deprecated Set the value using <Titanium.UI.Picker.maxDate> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Picker.maxDate> property.
+    * @deprecated Set the value using <Titanium.UI.Picker.maxDate> instead.
+    */
   def setMaxDate(maxDate: Date): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Picker.minDate> property.
-  			 * @deprecated Set the value using <Titanium.UI.Picker.minDate> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Picker.minDate> property.
+    * @deprecated Set the value using <Titanium.UI.Picker.minDate> instead.
+    */
   def setMinDate(minDate: Date): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Picker.minuteInterval> property.
-  			 * @deprecated Set the value using <Titanium.UI.Picker.minuteInterval> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Picker.minuteInterval> property.
+    * @deprecated Set the value using <Titanium.UI.Picker.minuteInterval> instead.
+    */
   def setMinuteInterval(minuteInterval: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Picker.nativeSpinner> property.
-  			 * @deprecated Set the value using <Titanium.UI.Picker.nativeSpinner> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Picker.nativeSpinner> property.
+    * @deprecated Set the value using <Titanium.UI.Picker.nativeSpinner> instead.
+    */
   def setNativeSpinner(nativeSpinner: Boolean): Unit = js.native
   /**
-  			 * Selects a column's row.
-  			 */
+    * Selects a column's row.
+    */
   def setSelectedRow(column: Double, row: Double): Unit = js.native
   def setSelectedRow(column: Double, row: Double, animated: Boolean): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Picker.selectionIndicator> property.
-  			 * @deprecated Set the value using <Titanium.UI.Picker.selectionIndicator> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Picker.selectionIndicator> property.
+    * @deprecated Set the value using <Titanium.UI.Picker.selectionIndicator> instead.
+    */
   def setSelectionIndicator(selectionIndicator: Boolean): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Picker.selectionOpens> property.
-  			 * @deprecated Set the value using <Titanium.UI.Picker.selectionOpens> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Picker.selectionOpens> property.
+    * @deprecated Set the value using <Titanium.UI.Picker.selectionOpens> instead.
+    */
   def setSelectionOpens(selectionOpens: Boolean): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Picker.type> property.
-  			 * @deprecated Set the value using <Titanium.UI.Picker.type> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Picker.type> property.
+    * @deprecated Set the value using <Titanium.UI.Picker.type> instead.
+    */
   def setType(`type`: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Picker.useSpinner> property.
-  			 * @deprecated This property is deprecated. Please use the default native "dropdown" style.
-  			 */
+    * Sets the value of the <Titanium.UI.Picker.useSpinner> property.
+    * @deprecated This property is deprecated. Please use the default native "dropdown" style.
+    */
   def setUseSpinner(useSpinner: Boolean): Unit = js.native
   /**
-  			 * Sets the date and time value property for Date pickers.
-  			 */
+    * Sets the date and time value property for Date pickers.
+    */
   def setValue(date: js.Any, suppressEvent: Boolean): PickerRow = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Picker.visibleItems> property.
-  			 * @deprecated Set the value using <Titanium.UI.Picker.visibleItems> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Picker.visibleItems> property.
+    * @deprecated Set the value using <Titanium.UI.Picker.visibleItems> instead.
+    */
   def setVisibleItems(visibleItems: Double): Unit = js.native
   /**
-  			 * Shows Date picker as a modal dialog.
-  			 */
+    * Shows Date picker as a modal dialog.
+    */
   def showDatePickerDialog(dictObj: js.Any): Unit = js.native
   /**
-  			 * Shows Time picker as a modal dialog.
-  			 */
+    * Shows Time picker as a modal dialog.
+    */
   def showTimePickerDialog(dictObj: js.Any): Unit = js.native
 }
 

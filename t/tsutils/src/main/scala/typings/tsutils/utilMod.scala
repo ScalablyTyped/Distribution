@@ -1,6 +1,8 @@
 package typings.tsutils
 
 import typings.std.Map
+import typings.tsutils.anon.BindingElementnameIdentif
+import typings.tsutils.anon.Name
 import typings.tsutils.controlFlowMod.ControlFlowEnd
 import typings.tsutils.convertAstMod.ConvertedAst
 import typings.tsutils.convertAstMod.NodeWrap
@@ -93,7 +95,7 @@ object utilMod extends js.Object {
   def forEachComment(node: Node, cb: ForEachCommentCallback, sourceFile: SourceFile): Unit = js.native
   def forEachDeclaredVariable[T](
     declarationList: VariableDeclarationList,
-    cb: js.Function1[/* element */ (VariableDeclaration | BindingElement) with AnonName, T]
+    cb: js.Function1[/* element */ (VariableDeclaration | BindingElement) with Name, T]
   ): js.UndefOr[T] = js.native
   def forEachDestructuringIdentifier[T](pattern: BindingPattern, fn: js.Function1[/* element */ BindingElementnameIdentif, T]): js.UndefOr[T] = js.native
   def forEachToken(node: Node, cb: js.Function1[/* node */ Node, Unit]): Unit = js.native
@@ -145,9 +147,7 @@ object utilMod extends js.Object {
   def getWrappedNodeAtPosition(wrap: NodeWrap, pos: Double): js.UndefOr[NodeWrap] = js.native
   def hasAccessModifier(node: ClassElement): Boolean = js.native
   def hasAccessModifier(node: ParameterDeclaration): Boolean = js.native
-  def hasModifier(
-    kinds: (AbstractKeyword | AsyncKeyword | ConstKeyword | DeclareKeyword | DefaultKeyword | ExportKeyword | PublicKeyword | PrivateKeyword | ProtectedKeyword | ReadonlyKeyword | StaticKeyword)*
-  ): Boolean = js.native
+  def hasModifier(): Boolean = js.native
   def hasModifier(
     modifiers: ModifiersArray,
     kinds: (AbstractKeyword | AsyncKeyword | ConstKeyword | DeclareKeyword | DefaultKeyword | ExportKeyword | PublicKeyword | PrivateKeyword | ProtectedKeyword | ReadonlyKeyword | StaticKeyword)*

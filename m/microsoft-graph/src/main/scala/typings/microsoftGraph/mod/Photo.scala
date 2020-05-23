@@ -28,21 +28,21 @@ object Photo {
   def apply(
     cameraMake: String = null,
     cameraModel: String = null,
-    exposureDenominator: Int | Double = null,
-    exposureNumerator: Int | Double = null,
-    fNumber: Int | Double = null,
-    focalLength: Int | Double = null,
-    iso: Int | Double = null,
+    exposureDenominator: js.UndefOr[Double] = js.undefined,
+    exposureNumerator: js.UndefOr[Double] = js.undefined,
+    fNumber: js.UndefOr[Double] = js.undefined,
+    focalLength: js.UndefOr[Double] = js.undefined,
+    iso: js.UndefOr[Double] = js.undefined,
     takenDateTime: String = null
   ): Photo = {
     val __obj = js.Dynamic.literal()
     if (cameraMake != null) __obj.updateDynamic("cameraMake")(cameraMake.asInstanceOf[js.Any])
     if (cameraModel != null) __obj.updateDynamic("cameraModel")(cameraModel.asInstanceOf[js.Any])
-    if (exposureDenominator != null) __obj.updateDynamic("exposureDenominator")(exposureDenominator.asInstanceOf[js.Any])
-    if (exposureNumerator != null) __obj.updateDynamic("exposureNumerator")(exposureNumerator.asInstanceOf[js.Any])
-    if (fNumber != null) __obj.updateDynamic("fNumber")(fNumber.asInstanceOf[js.Any])
-    if (focalLength != null) __obj.updateDynamic("focalLength")(focalLength.asInstanceOf[js.Any])
-    if (iso != null) __obj.updateDynamic("iso")(iso.asInstanceOf[js.Any])
+    if (!js.isUndefined(exposureDenominator)) __obj.updateDynamic("exposureDenominator")(exposureDenominator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exposureNumerator)) __obj.updateDynamic("exposureNumerator")(exposureNumerator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fNumber)) __obj.updateDynamic("fNumber")(fNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(focalLength)) __obj.updateDynamic("focalLength")(focalLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(iso)) __obj.updateDynamic("iso")(iso.get.asInstanceOf[js.Any])
     if (takenDateTime != null) __obj.updateDynamic("takenDateTime")(takenDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Photo]
   }

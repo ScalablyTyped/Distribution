@@ -1,9 +1,9 @@
 package typings.wordpressApiFetch.mod.Schema
 
 import typings.std.Record
-import typings.wordpressApiFetch.AnonBlockversion
-import typings.wordpressApiFetch.AnonDictk
-import typings.wordpressApiFetch.AnonProtected
+import typings.wordpressApiFetch.anon.Blockversion
+import typings.wordpressApiFetch.anon.Dictk
+import typings.wordpressApiFetch.anon.Protected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation._
 /* Inlined parent std.Omit<@wordpress/api-fetch.@wordpress/api-fetch.Schema.BasePost<T>, 'categories' | 'format' | 'sticky' | 'tags'> */
 trait BasePage[T /* <: Context */] extends js.Object {
   var _embedded: js.UndefOr[Record[String, js.Array[_]]] = js.undefined
-  var _links: Record[String, js.Array[AnonDictk]]
+  var _links: Record[String, js.Array[Dictk]]
   var author: Double
   var comment_status: OpenOrClosed
-  var content: Contextual[T, AnonProtected, AnonBlockversion]
+  var content: Contextual[T, Protected, Blockversion]
   var date: String
   var date_gmt: String
-  var excerpt: Contextual[T, AnonProtected, js.Object]
+  var excerpt: Contextual[T, Protected, js.Object]
   var featured_media: Double
   var generated_slug: String
   var guid: Contextual[T, js.Object, js.Object]
@@ -40,14 +40,14 @@ trait BasePage[T /* <: Context */] extends js.Object {
 
 object BasePage {
   @scala.inline
-  def apply[T /* <: Context */](
-    _links: Record[String, js.Array[AnonDictk]],
+  def apply[T](
+    _links: Record[String, js.Array[Dictk]],
     author: Double,
     comment_status: OpenOrClosed,
-    content: Contextual[T, AnonProtected, AnonBlockversion],
+    content: Contextual[T, Protected, Blockversion],
     date: String,
     date_gmt: String,
-    excerpt: Contextual[T, AnonProtected, js.Object],
+    excerpt: Contextual[T, Protected, js.Object],
     featured_media: Double,
     generated_slug: String,
     guid: Contextual[T, js.Object, js.Object],

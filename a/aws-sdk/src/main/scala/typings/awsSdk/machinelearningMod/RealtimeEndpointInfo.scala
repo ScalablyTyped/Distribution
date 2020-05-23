@@ -30,13 +30,13 @@ object RealtimeEndpointInfo {
     CreatedAt: EpochTime = null,
     EndpointStatus: RealtimeEndpointStatus = null,
     EndpointUrl: VipURL = null,
-    PeakRequestsPerSecond: Int | Double = null
+    PeakRequestsPerSecond: js.UndefOr[IntegerType] = js.undefined
   ): RealtimeEndpointInfo = {
     val __obj = js.Dynamic.literal()
     if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
     if (EndpointStatus != null) __obj.updateDynamic("EndpointStatus")(EndpointStatus.asInstanceOf[js.Any])
     if (EndpointUrl != null) __obj.updateDynamic("EndpointUrl")(EndpointUrl.asInstanceOf[js.Any])
-    if (PeakRequestsPerSecond != null) __obj.updateDynamic("PeakRequestsPerSecond")(PeakRequestsPerSecond.asInstanceOf[js.Any])
+    if (!js.isUndefined(PeakRequestsPerSecond)) __obj.updateDynamic("PeakRequestsPerSecond")(PeakRequestsPerSecond.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RealtimeEndpointInfo]
   }
 }

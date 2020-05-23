@@ -1,6 +1,5 @@
 package typings.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,23 +50,6 @@ object ShapeLineStyle extends js.Object {
     */
   @js.native
   sealed trait thinThin extends ShapeLineStyle
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ShapeLineStyle with String] = js.native
-  /* "Single" */ @js.native
-  object single extends TopLevel[single with String]
-  
-  /* "ThickBetweenThin" */ @js.native
-  object thickBetweenThin extends TopLevel[thickBetweenThin with String]
-  
-  /* "ThickThin" */ @js.native
-  object thickThin extends TopLevel[thickThin with String]
-  
-  /* "ThinThick" */ @js.native
-  object thinThick extends TopLevel[thinThick with String]
-  
-  /* "ThinThin" */ @js.native
-  object thinThin extends TopLevel[thinThin with String]
   
 }
 

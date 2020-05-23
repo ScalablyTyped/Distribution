@@ -2,9 +2,9 @@ package typings.webpack.mod.compilation
 
 import typings.std.Map
 import typings.tapable.mod.Tapable
-import typings.webpack.AnonBasename
-import typings.webpack.AnonJavascript
-import typings.webpack.TypeofDependency
+import typings.webpack.anon.Basename
+import typings.webpack.anon.Javascript
+import typings.webpack.anon.TypeofDependency
 import typings.webpack.mod.Compiler_
 import typings.webpack.mod.Logger
 import typings.webpack.mod.SortableSet
@@ -44,7 +44,7 @@ class Compilation () extends Tapable {
   var inputFileSystem: js.Any = js.native
   var mainTemplate: MainTemplate = js.native
   var missingDependencies: SortableSet[String] = js.native
-  var moduleTemplates: AnonJavascript = js.native
+  var moduleTemplates: Javascript = js.native
   var modules: js.Array[_] = js.native
   var namedChunkGroups: Map[_, _] = js.native
   var namedChunks: Map[_, _] = js.native
@@ -67,7 +67,7 @@ class Compilation () extends Tapable {
   def addEntry(context: js.Any, entry: js.Any, name: js.Any, callback: js.Function): Unit = js.native
   def addModule(module: CompilationModule, cacheGroup: js.Any): js.Any = js.native
   def getLogger(pluginName: String): Logger = js.native
-  def getPath(filename: String, data: AnonBasename): String = js.native
+  def getPath(filename: String, data: Basename): String = js.native
   def getStats(): Stats = js.native
   def isChild(): Boolean = js.native
 }

@@ -58,7 +58,7 @@ object AchievementDefinition {
     kind: String = null,
     name: String = null,
     revealedIconUrl: String = null,
-    totalSteps: Int | Double = null,
+    totalSteps: js.UndefOr[Double] = js.undefined,
     unlockedIconUrl: String = null
   ): AchievementDefinition = {
     val __obj = js.Dynamic.literal()
@@ -68,12 +68,12 @@ object AchievementDefinition {
     if (formattedTotalSteps != null) __obj.updateDynamic("formattedTotalSteps")(formattedTotalSteps.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRevealedIconUrlDefault)) __obj.updateDynamic("isRevealedIconUrlDefault")(isRevealedIconUrlDefault.asInstanceOf[js.Any])
-    if (!js.isUndefined(isUnlockedIconUrlDefault)) __obj.updateDynamic("isUnlockedIconUrlDefault")(isUnlockedIconUrlDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRevealedIconUrlDefault)) __obj.updateDynamic("isRevealedIconUrlDefault")(isRevealedIconUrlDefault.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isUnlockedIconUrlDefault)) __obj.updateDynamic("isUnlockedIconUrlDefault")(isUnlockedIconUrlDefault.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (revealedIconUrl != null) __obj.updateDynamic("revealedIconUrl")(revealedIconUrl.asInstanceOf[js.Any])
-    if (totalSteps != null) __obj.updateDynamic("totalSteps")(totalSteps.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalSteps)) __obj.updateDynamic("totalSteps")(totalSteps.get.asInstanceOf[js.Any])
     if (unlockedIconUrl != null) __obj.updateDynamic("unlockedIconUrl")(unlockedIconUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[AchievementDefinition]
   }

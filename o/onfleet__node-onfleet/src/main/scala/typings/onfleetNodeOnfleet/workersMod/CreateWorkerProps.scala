@@ -28,12 +28,12 @@ object CreateWorkerProps {
     name: String,
     phone: String,
     teams: String,
-    capacity: Int | Double = null,
+    capacity: js.UndefOr[Double] = js.undefined,
     displayName: String = null,
     vehicle: Vehicle = null
   ): CreateWorkerProps = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], teams = teams.asInstanceOf[js.Any])
-    if (capacity != null) __obj.updateDynamic("capacity")(capacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(capacity)) __obj.updateDynamic("capacity")(capacity.get.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (vehicle != null) __obj.updateDynamic("vehicle")(vehicle.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateWorkerProps]

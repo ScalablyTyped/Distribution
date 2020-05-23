@@ -7,16 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * Contains information on a grid cell.
   */
-@JSGlobal("ASPxClientCardViewCellInfo")
-@js.native
-class ASPxClientCardViewCellInfo () extends js.Object {
+trait ASPxClientCardViewCellInfo extends js.Object {
   /**
     * Gets the visible index of the card that contains the cell currently being processed.
     */
-  var cardVisibleIndex: Double = js.native
+  var cardVisibleIndex: Double
   /**
     * Gets the data column that contains the cell currently being processed.
     */
-  var column: ASPxClientCardViewColumn = js.native
+  var column: ASPxClientCardViewColumn
+}
+
+object ASPxClientCardViewCellInfo {
+  @scala.inline
+  def apply(cardVisibleIndex: Double, column: ASPxClientCardViewColumn): ASPxClientCardViewCellInfo = {
+    val __obj = js.Dynamic.literal(cardVisibleIndex = cardVisibleIndex.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientCardViewCellInfo]
+  }
 }
 

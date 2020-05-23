@@ -35,13 +35,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Tabulator.prototype.(?!registerModule|helpers|_)\w+
-@JSGlobal("Tabulator")
 @js.native
-class Tabulator_ protected () extends js.Object {
-  def this(selector: String) = this()
-  def this(selector: HTMLElement) = this()
-  def this(selector: String, options: Options) = this()
-  def this(selector: HTMLElement, options: Options) = this()
+trait Tabulator_ extends js.Object {
   /** If you want to add another filter to the existing filters then you can call the addFilter function: */
   @JSName("addFilter")
   var addFilter_Original: FilterFunction = js.native

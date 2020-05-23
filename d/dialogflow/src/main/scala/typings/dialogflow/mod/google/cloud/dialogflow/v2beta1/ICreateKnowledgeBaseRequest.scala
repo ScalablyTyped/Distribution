@@ -14,10 +14,13 @@ trait ICreateKnowledgeBaseRequest extends js.Object {
 
 object ICreateKnowledgeBaseRequest {
   @scala.inline
-  def apply(knowledgeBase: IKnowledgeBase = null, parent: String = null): ICreateKnowledgeBaseRequest = {
+  def apply(
+    knowledgeBase: js.UndefOr[Null | IKnowledgeBase] = js.undefined,
+    parent: js.UndefOr[Null | String] = js.undefined
+  ): ICreateKnowledgeBaseRequest = {
     val __obj = js.Dynamic.literal()
-    if (knowledgeBase != null) __obj.updateDynamic("knowledgeBase")(knowledgeBase.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(knowledgeBase)) __obj.updateDynamic("knowledgeBase")(knowledgeBase.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICreateKnowledgeBaseRequest]
   }
 }

@@ -27,10 +27,10 @@ trait EnclosureObject extends js.Object {
 
 object EnclosureObject {
   @scala.inline
-  def apply(url: String, file: String = null, size: Int | Double = null, `type`: String = null): EnclosureObject = {
+  def apply(url: String, file: String = null, size: js.UndefOr[Double] = js.undefined, `type`: String = null): EnclosureObject = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnclosureObject]
   }

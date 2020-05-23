@@ -1,0 +1,24 @@
+package typings.activexLibreoffice.com_.sun.star.media
+
+import typings.activexLibreoffice.com_.sun.star.graphic.XGraphic
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/** This interface provides an easy access to a stream images using their position in the time. */
+trait XFrameGrabber extends js.Object {
+  /**
+    * returns the image of the underlying stream at a given position
+    * @param fMediaTime the time in seconds of the image to get. This time has to be a positive value inferior to the stream duration.
+    */
+  def grabFrame(fMediaTime: Double): XGraphic
+}
+
+object XFrameGrabber {
+  @scala.inline
+  def apply(grabFrame: Double => XGraphic): XFrameGrabber = {
+    val __obj = js.Dynamic.literal(grabFrame = js.Any.fromFunction1(grabFrame))
+    __obj.asInstanceOf[XFrameGrabber]
+  }
+}
+

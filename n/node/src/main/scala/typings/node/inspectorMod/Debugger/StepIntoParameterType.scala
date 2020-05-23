@@ -16,7 +16,7 @@ object StepIntoParameterType {
   @scala.inline
   def apply(breakOnAsyncCall: js.UndefOr[Boolean] = js.undefined): StepIntoParameterType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(breakOnAsyncCall)) __obj.updateDynamic("breakOnAsyncCall")(breakOnAsyncCall.asInstanceOf[js.Any])
+    if (!js.isUndefined(breakOnAsyncCall)) __obj.updateDynamic("breakOnAsyncCall")(breakOnAsyncCall.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepIntoParameterType]
   }
 }

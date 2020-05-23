@@ -18,10 +18,10 @@ trait LogInfo extends js.Object {
 
 object LogInfo {
   @scala.inline
-  def apply(handler: /* msg */ String => Unit = null, level: Int | Double = null): LogInfo = {
+  def apply(handler: /* msg */ String => Unit = null, level: js.UndefOr[Double] = js.undefined): LogInfo = {
     val __obj = js.Dynamic.literal()
     if (handler != null) __obj.updateDynamic("handler")(js.Any.fromFunction1(handler))
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogInfo]
   }
 }

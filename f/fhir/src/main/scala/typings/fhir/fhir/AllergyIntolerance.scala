@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Allergy or Intolerance (generally: Risk of adverse reaction to a substance)
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait AllergyIntolerance extends DomainResource {
   /**
     * Contains extended information for property 'assertedDate'.

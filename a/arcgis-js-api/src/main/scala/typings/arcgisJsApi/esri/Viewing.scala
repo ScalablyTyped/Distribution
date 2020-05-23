@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +13,4 @@ trait Viewing extends Accessor {
     */
   var search: Search = js.native
 }
-
-@JSGlobal("__esri.Viewing")
-@js.native
-object Viewing extends TopLevel[ViewingConstructor]
 

@@ -31,7 +31,7 @@ trait ModalProps
     * A `react-transition-group@2.0.0` `<Transition/>` component used
     * to control animations for the backdrop components.
     */
-  var backdropTransition: js.UndefOr[ComponentType[TransitionProps]] = js.undefined
+  var backdropTransition: js.UndefOr[ComponentType[TransitionProps[js.UndefOr[scala.Nothing]]]] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   /**
     * A css class or set of classes applied to the modal container when the modal is open,
@@ -104,7 +104,7 @@ trait ModalProps
     * A `react-transition-group@2.0.0` `<Transition/>` component used
     * to control animations for the dialog component.
     */
-  var transition: js.UndefOr[ComponentType[TransitionProps]] = js.undefined
+  var transition: js.UndefOr[ComponentType[TransitionProps[js.UndefOr[scala.Nothing]]]] = js.undefined
 }
 
 object ModalProps {
@@ -112,7 +112,7 @@ object ModalProps {
   def apply(
     autoFocus: js.UndefOr[Boolean] = js.undefined,
     backdrop: Boolean | static = null,
-    backdropTransition: ComponentType[TransitionProps] = null,
+    backdropTransition: ComponentType[TransitionProps[js.UndefOr[scala.Nothing]]] = null,
     className: String = null,
     container: ReactNode | js.Function = null,
     containerClassName: String = null,
@@ -134,17 +134,17 @@ object ModalProps {
     renderDialog: /* props */ js.Any => ReactNode = null,
     restoreFocus: js.UndefOr[Boolean] = js.undefined,
     show: js.UndefOr[Boolean] = js.undefined,
-    transition: ComponentType[TransitionProps] = null
+    transition: ComponentType[TransitionProps[js.UndefOr[scala.Nothing]]] = null
   ): ModalProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
     if (backdrop != null) __obj.updateDynamic("backdrop")(backdrop.asInstanceOf[js.Any])
     if (backdropTransition != null) __obj.updateDynamic("backdropTransition")(backdropTransition.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (containerClassName != null) __obj.updateDynamic("containerClassName")(containerClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(enforceFocus)) __obj.updateDynamic("enforceFocus")(enforceFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
+    if (!js.isUndefined(enforceFocus)) __obj.updateDynamic("enforceFocus")(enforceFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.get.asInstanceOf[js.Any])
     if (manager != null) __obj.updateDynamic("manager")(manager.asInstanceOf[js.Any])
     if (onBackdropClick != null) __obj.updateDynamic("onBackdropClick")(onBackdropClick.asInstanceOf[js.Any])
     if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction1(onEnter))
@@ -159,8 +159,8 @@ object ModalProps {
     if (onShow != null) __obj.updateDynamic("onShow")(onShow.asInstanceOf[js.Any])
     if (renderBackdrop != null) __obj.updateDynamic("renderBackdrop")(js.Any.fromFunction1(renderBackdrop))
     if (renderDialog != null) __obj.updateDynamic("renderDialog")(js.Any.fromFunction1(renderDialog))
-    if (!js.isUndefined(restoreFocus)) __obj.updateDynamic("restoreFocus")(restoreFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (!js.isUndefined(restoreFocus)) __obj.updateDynamic("restoreFocus")(restoreFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
     if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalProps]
   }

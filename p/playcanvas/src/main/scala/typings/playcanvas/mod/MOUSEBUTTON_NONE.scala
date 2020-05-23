@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @type {number}
-  * @name pc.MOUSEBUTTON_NONE
-  * @description No mouse buttons pressed.
+  * No mouse buttons pressed.
   */
 @JSImport("playcanvas", "MOUSEBUTTON_NONE")
 @js.native

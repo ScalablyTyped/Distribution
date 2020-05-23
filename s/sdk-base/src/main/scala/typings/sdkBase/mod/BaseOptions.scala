@@ -12,7 +12,7 @@ trait BaseOptions
 
 object BaseOptions {
   @scala.inline
-  def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null, initMethod: String = null): BaseOptions = {
+  def apply(StringDictionary: /* name */ StringDictionary[js.Any] = null, initMethod: String = null): BaseOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (initMethod != null) __obj.updateDynamic("initMethod")(initMethod.asInstanceOf[js.Any])

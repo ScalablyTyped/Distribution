@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("VBIDE.Window")
 @js.native
-class Window protected () extends js.Object {
+trait Window extends js.Object {
   val Caption: String = js.native
   @JSName("Collection")
   val Collection_Original: Windows = js.native

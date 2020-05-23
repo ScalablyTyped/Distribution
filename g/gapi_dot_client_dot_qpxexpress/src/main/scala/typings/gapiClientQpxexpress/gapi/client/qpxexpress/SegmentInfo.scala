@@ -42,10 +42,10 @@ object SegmentInfo {
   @scala.inline
   def apply(
     bookingCode: String = null,
-    bookingCodeCount: Int | Double = null,
+    bookingCodeCount: js.UndefOr[Double] = js.undefined,
     cabin: String = null,
-    connectionDuration: Int | Double = null,
-    duration: Int | Double = null,
+    connectionDuration: js.UndefOr[Double] = js.undefined,
+    duration: js.UndefOr[Double] = js.undefined,
     flight: FlightInfo = null,
     id: String = null,
     kind: String = null,
@@ -55,16 +55,16 @@ object SegmentInfo {
   ): SegmentInfo = {
     val __obj = js.Dynamic.literal()
     if (bookingCode != null) __obj.updateDynamic("bookingCode")(bookingCode.asInstanceOf[js.Any])
-    if (bookingCodeCount != null) __obj.updateDynamic("bookingCodeCount")(bookingCodeCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(bookingCodeCount)) __obj.updateDynamic("bookingCodeCount")(bookingCodeCount.get.asInstanceOf[js.Any])
     if (cabin != null) __obj.updateDynamic("cabin")(cabin.asInstanceOf[js.Any])
-    if (connectionDuration != null) __obj.updateDynamic("connectionDuration")(connectionDuration.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectionDuration)) __obj.updateDynamic("connectionDuration")(connectionDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (flight != null) __obj.updateDynamic("flight")(flight.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (leg != null) __obj.updateDynamic("leg")(leg.asInstanceOf[js.Any])
     if (marriedSegmentGroup != null) __obj.updateDynamic("marriedSegmentGroup")(marriedSegmentGroup.asInstanceOf[js.Any])
-    if (!js.isUndefined(subjectToGovernmentApproval)) __obj.updateDynamic("subjectToGovernmentApproval")(subjectToGovernmentApproval.asInstanceOf[js.Any])
+    if (!js.isUndefined(subjectToGovernmentApproval)) __obj.updateDynamic("subjectToGovernmentApproval")(subjectToGovernmentApproval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentInfo]
   }
 }

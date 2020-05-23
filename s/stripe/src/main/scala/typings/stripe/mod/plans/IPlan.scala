@@ -117,26 +117,18 @@ object IPlan {
     `object`: plan,
     usage_type: metered | licensed,
     aggregate_usage: sum | last_during_period | last_ever | max = null,
-    amount: Int | Double = null,
+    amount: Double = null.asInstanceOf[Double],
     amount_decimal: String = null,
     nickname: String = null,
     product: String | IProduct = null,
     tiers: js.Array[ITier] = null,
     tiers_mode: graduated | volume = null,
     transform_usage: ITransformUsage = null,
-    trial_period_days: Int | Double = null
+    trial_period_days: Double = null.asInstanceOf[Double]
   ): IPlan = {
-    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], billing_scheme = billing_scheme.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], interval_count = interval_count.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], usage_type = usage_type.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], billing_scheme = billing_scheme.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], interval_count = interval_count.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], usage_type = usage_type.asInstanceOf[js.Any], aggregate_usage = aggregate_usage.asInstanceOf[js.Any], amount = amount.asInstanceOf[js.Any], amount_decimal = amount_decimal.asInstanceOf[js.Any], nickname = nickname.asInstanceOf[js.Any], tiers = tiers.asInstanceOf[js.Any], tiers_mode = tiers_mode.asInstanceOf[js.Any], transform_usage = transform_usage.asInstanceOf[js.Any], trial_period_days = trial_period_days.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (aggregate_usage != null) __obj.updateDynamic("aggregate_usage")(aggregate_usage.asInstanceOf[js.Any])
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (amount_decimal != null) __obj.updateDynamic("amount_decimal")(amount_decimal.asInstanceOf[js.Any])
-    if (nickname != null) __obj.updateDynamic("nickname")(nickname.asInstanceOf[js.Any])
     if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
-    if (tiers != null) __obj.updateDynamic("tiers")(tiers.asInstanceOf[js.Any])
-    if (tiers_mode != null) __obj.updateDynamic("tiers_mode")(tiers_mode.asInstanceOf[js.Any])
-    if (transform_usage != null) __obj.updateDynamic("transform_usage")(transform_usage.asInstanceOf[js.Any])
-    if (trial_period_days != null) __obj.updateDynamic("trial_period_days")(trial_period_days.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPlan]
   }
 }

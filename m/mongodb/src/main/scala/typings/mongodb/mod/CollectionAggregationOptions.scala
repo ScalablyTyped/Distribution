@@ -1,6 +1,6 @@
 package typings.mongodb.mod
 
-import typings.mongodb.AnonBatchSizeNumber
+import typings.mongodb.anon.BatchSizeNumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait CollectionAggregationOptions extends js.Object {
     * Return the query as cursor, on 2.6 > it returns as a real cursor
     * on pre 2.6 it returns as an emulated cursor.
     */
-  var cursor: js.UndefOr[AnonBatchSizeNumber] = js.undefined
+  var cursor: js.UndefOr[BatchSizeNumber] = js.undefined
   /**
     * Explain returns the aggregation execution plan (requires mongodb 2.6 >).
     */
@@ -47,10 +47,10 @@ object CollectionAggregationOptions {
     bypassDocumentValidation: js.UndefOr[Boolean] = js.undefined,
     collation: CollationDocument = null,
     comment: String = null,
-    cursor: AnonBatchSizeNumber = null,
+    cursor: BatchSizeNumber = null,
     explain: js.UndefOr[Boolean] = js.undefined,
     hint: String | js.Object = null,
-    maxTimeMS: Int | scala.Double = null,
+    maxTimeMS: js.UndefOr[scala.Double] = js.undefined,
     promoteBuffers: js.UndefOr[Boolean] = js.undefined,
     promoteLongs: js.UndefOr[Boolean] = js.undefined,
     promoteValues: js.UndefOr[Boolean] = js.undefined,
@@ -59,18 +59,18 @@ object CollectionAggregationOptions {
     session: ClientSession = null
   ): CollectionAggregationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDiskUse)) __obj.updateDynamic("allowDiskUse")(allowDiskUse.asInstanceOf[js.Any])
-    if (!js.isUndefined(bypassDocumentValidation)) __obj.updateDynamic("bypassDocumentValidation")(bypassDocumentValidation.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDiskUse)) __obj.updateDynamic("allowDiskUse")(allowDiskUse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bypassDocumentValidation)) __obj.updateDynamic("bypassDocumentValidation")(bypassDocumentValidation.get.asInstanceOf[js.Any])
     if (collation != null) __obj.updateDynamic("collation")(collation.asInstanceOf[js.Any])
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(explain)) __obj.updateDynamic("explain")(explain.asInstanceOf[js.Any])
+    if (!js.isUndefined(explain)) __obj.updateDynamic("explain")(explain.get.asInstanceOf[js.Any])
     if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (maxTimeMS != null) __obj.updateDynamic("maxTimeMS")(maxTimeMS.asInstanceOf[js.Any])
-    if (!js.isUndefined(promoteBuffers)) __obj.updateDynamic("promoteBuffers")(promoteBuffers.asInstanceOf[js.Any])
-    if (!js.isUndefined(promoteLongs)) __obj.updateDynamic("promoteLongs")(promoteLongs.asInstanceOf[js.Any])
-    if (!js.isUndefined(promoteValues)) __obj.updateDynamic("promoteValues")(promoteValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTimeMS)) __obj.updateDynamic("maxTimeMS")(maxTimeMS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(promoteBuffers)) __obj.updateDynamic("promoteBuffers")(promoteBuffers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(promoteLongs)) __obj.updateDynamic("promoteLongs")(promoteLongs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(promoteValues)) __obj.updateDynamic("promoteValues")(promoteValues.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.get.asInstanceOf[js.Any])
     if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionAggregationOptions]

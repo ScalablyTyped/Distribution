@@ -1,7 +1,7 @@
 
 # Scala.js typings for tslint
 
-Typings are for version 6.1.1
+Typings are for version 6.1.2
 
 ## Library description:
 An extensible static analysis linter for the TypeScript language

@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.ChartGridlinesData
 import typings.officeJsPreview.Excel.Interfaces.ChartGridlinesLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.ChartGridlinesUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,22 +16,21 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
-@JSGlobal("Excel.ChartGridlines")
 @js.native
-class ChartGridlines () extends ClientObject {
+trait ChartGridlines extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_ChartGridlines: RequestContext = js.native
   /**
     *
-    * Represents the formatting of chart gridlines. Read-only.
+    * Represents the formatting of chart gridlines.
     *
     * [Api set: ExcelApi 1.1]
     */
   val format: ChartGridlinesFormat = js.native
   /**
     *
-    * Boolean value representing if the axis gridlines are visible or not.
+    * Specifies if the axis gridlines are visible.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -43,7 +42,7 @@ class ChartGridlines () extends ClientObject {
     */
   def load(): ChartGridlines = js.native
   def load(options: ChartGridlinesLoadOptions): ChartGridlines = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ChartGridlines = js.native
+  def load(propertyNamesAndPaths: Expand): ChartGridlines = js.native
   def load(propertyNames: String): ChartGridlines = js.native
   def load(propertyNames: js.Array[String]): ChartGridlines = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

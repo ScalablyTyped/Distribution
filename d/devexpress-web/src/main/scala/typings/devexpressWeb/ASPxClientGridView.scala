@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side equivalent of the ASPxGridView object.
   */
-@JSGlobal("ASPxClientGridView")
 @js.native
-class ASPxClientGridView () extends ASPxClientGridBase {
+trait ASPxClientGridView extends ASPxClientGridBase {
   /**
     * Occurs on the client side before data changes are canceled in batch edit mode.
     */
@@ -772,16 +771,5 @@ class ASPxClientGridView () extends ASPxClientGridBase {
     * Saves all the changes made and switches the grid to browse mode.
     */
   def UpdateEdit(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("ASPxClientGridView")
-@js.native
-object ASPxClientGridView extends js.Object {
-  /**
-    * Converts the specified object to the ASPxClientGridView type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): ASPxClientGridView = js.native
 }
 

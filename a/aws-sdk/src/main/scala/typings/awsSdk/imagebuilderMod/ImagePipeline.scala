@@ -82,7 +82,7 @@ object ImagePipeline {
     dateUpdated: DateTime = null,
     description: NonEmptyString = null,
     distributionConfigurationArn: Arn = null,
-    enhancedImageMetadataEnabled: js.UndefOr[Boolean] = js.undefined,
+    enhancedImageMetadataEnabled: js.UndefOr[NullableBoolean] = js.undefined,
     imageRecipeArn: Arn = null,
     imageTestsConfiguration: ImageTestsConfiguration = null,
     infrastructureConfigurationArn: Arn = null,
@@ -100,7 +100,7 @@ object ImagePipeline {
     if (dateUpdated != null) __obj.updateDynamic("dateUpdated")(dateUpdated.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (distributionConfigurationArn != null) __obj.updateDynamic("distributionConfigurationArn")(distributionConfigurationArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(enhancedImageMetadataEnabled)) __obj.updateDynamic("enhancedImageMetadataEnabled")(enhancedImageMetadataEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enhancedImageMetadataEnabled)) __obj.updateDynamic("enhancedImageMetadataEnabled")(enhancedImageMetadataEnabled.get.asInstanceOf[js.Any])
     if (imageRecipeArn != null) __obj.updateDynamic("imageRecipeArn")(imageRecipeArn.asInstanceOf[js.Any])
     if (imageTestsConfiguration != null) __obj.updateDynamic("imageTestsConfiguration")(imageTestsConfiguration.asInstanceOf[js.Any])
     if (infrastructureConfigurationArn != null) __obj.updateDynamic("infrastructureConfigurationArn")(infrastructureConfigurationArn.asInstanceOf[js.Any])

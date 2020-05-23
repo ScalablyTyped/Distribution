@@ -1,6 +1,6 @@
 package typings.css.mod
 
-import typings.css.AnonContent
+import typings.css.anon.Content
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ object Rule {
   def apply(
     declarations: js.Array[Declaration | Comment] = null,
     parent: Node = null,
-    position: AnonContent = null,
+    position: Content = null,
     selectors: js.Array[String] = null,
     `type`: String = null
   ): Rule = {

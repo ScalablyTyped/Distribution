@@ -1,5 +1,6 @@
 package typings.typedoc
 
+import typings.typedoc.anon.PickArrayTypetype
 import typings.typedoc.modelsMod.ArrayType
 import typings.typedoc.serializationComponentsMod.TypeSerializerComponent
 import scala.scalajs.js

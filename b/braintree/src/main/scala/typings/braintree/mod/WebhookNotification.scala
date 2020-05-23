@@ -1,6 +1,6 @@
 package typings.braintree.mod
 
-import typings.braintree.AnonCustomerId
+import typings.braintree.anon.CustomerId
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,7 +33,7 @@ object WebhookNotification {
     __obj.asInstanceOf[WebhookNotification]
   }
   @scala.inline
-  def PaymentMethodNotification(kind: PaymentMethodNotificationKind, revokedPaymentMethodMetadata: AnonCustomerId, timestamp: Date): WebhookNotification = {
+  def PaymentMethodNotification(kind: PaymentMethodNotificationKind, revokedPaymentMethodMetadata: CustomerId, timestamp: Date): WebhookNotification = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], revokedPaymentMethodMetadata = revokedPaymentMethodMetadata.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebhookNotification]
   }

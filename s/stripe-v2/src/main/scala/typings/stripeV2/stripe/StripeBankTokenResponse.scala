@@ -1,18 +1,18 @@
 package typings.stripeV2.stripe
 
-import typings.stripeV2.AnonBankname
+import typings.stripeV2.anon.Bankname
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait StripeBankTokenResponse extends StripeTokenResponse {
-  var bank_account: AnonBankname
+  var bank_account: Bankname
 }
 
 object StripeBankTokenResponse {
   @scala.inline
   def apply(
-    bank_account: AnonBankname,
+    bank_account: Bankname,
     client_ip: String,
     created: Double,
     id: String,

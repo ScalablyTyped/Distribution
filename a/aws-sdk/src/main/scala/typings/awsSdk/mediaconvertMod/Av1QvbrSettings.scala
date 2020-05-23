@@ -18,10 +18,13 @@ trait Av1QvbrSettings extends js.Object {
 
 object Av1QvbrSettings {
   @scala.inline
-  def apply(QvbrQualityLevel: Int | Double = null, QvbrQualityLevelFineTune: Int | Double = null): Av1QvbrSettings = {
+  def apply(
+    QvbrQualityLevel: js.UndefOr[integerMin1Max10] = js.undefined,
+    QvbrQualityLevelFineTune: js.UndefOr[doubleMin0Max1] = js.undefined
+  ): Av1QvbrSettings = {
     val __obj = js.Dynamic.literal()
-    if (QvbrQualityLevel != null) __obj.updateDynamic("QvbrQualityLevel")(QvbrQualityLevel.asInstanceOf[js.Any])
-    if (QvbrQualityLevelFineTune != null) __obj.updateDynamic("QvbrQualityLevelFineTune")(QvbrQualityLevelFineTune.asInstanceOf[js.Any])
+    if (!js.isUndefined(QvbrQualityLevel)) __obj.updateDynamic("QvbrQualityLevel")(QvbrQualityLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(QvbrQualityLevelFineTune)) __obj.updateDynamic("QvbrQualityLevelFineTune")(QvbrQualityLevelFineTune.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Av1QvbrSettings]
   }
 }

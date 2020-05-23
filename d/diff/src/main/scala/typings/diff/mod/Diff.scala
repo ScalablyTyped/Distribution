@@ -1,6 +1,6 @@
 package typings.diff.mod
 
-import typings.diff.ArrayOptionsanyanyPartial
+import typings.diff.anon.ArrayOptionsanyanyPartial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

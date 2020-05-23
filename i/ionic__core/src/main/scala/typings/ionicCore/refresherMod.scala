@@ -1,6 +1,6 @@
 package typings.ionicCore
 
-import typings.ionicCore.componentsMod._Global_.HTMLIonRefresherElement
+import typings.ionicCore.componentsMod.global.HTMLIonRefresherElement
 import typings.ionicCore.refresherInterfaceMod.RefresherEventDetail
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter

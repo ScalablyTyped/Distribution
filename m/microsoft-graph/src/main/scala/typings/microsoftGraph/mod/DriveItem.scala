@@ -119,7 +119,7 @@ object DriveItem {
     searchResult: SearchResult = null,
     shared: Shared = null,
     sharepointIds: SharepointIds = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     specialFolder: SpecialFolder = null,
     subscriptions: js.Array[Subscription] = null,
     thumbnails: js.Array[ThumbnailSet] = null,
@@ -162,7 +162,7 @@ object DriveItem {
     if (searchResult != null) __obj.updateDynamic("searchResult")(searchResult.asInstanceOf[js.Any])
     if (shared != null) __obj.updateDynamic("shared")(shared.asInstanceOf[js.Any])
     if (sharepointIds != null) __obj.updateDynamic("sharepointIds")(sharepointIds.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (specialFolder != null) __obj.updateDynamic("specialFolder")(specialFolder.asInstanceOf[js.Any])
     if (subscriptions != null) __obj.updateDynamic("subscriptions")(subscriptions.asInstanceOf[js.Any])
     if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails.asInstanceOf[js.Any])

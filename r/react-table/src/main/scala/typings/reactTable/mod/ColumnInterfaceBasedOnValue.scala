@@ -10,7 +10,7 @@ trait ColumnInterfaceBasedOnValue[D /* <: js.Object */, V] extends js.Object {
 
 object ColumnInterfaceBasedOnValue {
   @scala.inline
-  def apply[D /* <: js.Object */, V](Cell: Renderer[CellProps[D, V]] = null): ColumnInterfaceBasedOnValue[D, V] = {
+  def apply[D, V](Cell: Renderer[CellProps[D, V]] = null): ColumnInterfaceBasedOnValue[D, V] = {
     val __obj = js.Dynamic.literal()
     if (Cell != null) __obj.updateDynamic("Cell")(Cell.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnInterfaceBasedOnValue[D, V]]

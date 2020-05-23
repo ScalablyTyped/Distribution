@@ -38,15 +38,15 @@ object OptionsPreview {
     actions: js.Array[OptionsPreviewAction] = null,
     commit: js.UndefOr[Boolean] = js.undefined,
     height: `100` = null,
-    reactTag: Int | Double = null,
-    width: Int | Double = null
+    reactTag: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): OptionsPreview = {
     val __obj = js.Dynamic.literal()
     if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
-    if (!js.isUndefined(commit)) __obj.updateDynamic("commit")(commit.asInstanceOf[js.Any])
+    if (!js.isUndefined(commit)) __obj.updateDynamic("commit")(commit.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (reactTag != null) __obj.updateDynamic("reactTag")(reactTag.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(reactTag)) __obj.updateDynamic("reactTag")(reactTag.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsPreview]
   }
 }

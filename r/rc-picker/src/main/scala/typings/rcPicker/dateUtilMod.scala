@@ -3,7 +3,6 @@ package typings.rcPicker
 import typings.rcPicker.generateMod.GenerateConfig
 import typings.rcPicker.interfaceMod.NullableDateType
 import typings.rcPicker.interfaceMod.PickerMode
-import typings.rcPicker.rcPickerNumbers.`7`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("rc-picker/lib/utils/dateUtil", JSImport.Namespace)
 @js.native
 object dateUtilMod extends js.Object {
-  val WEEK_DAY_COUNT: `7` = js.native
+  val WEEK_DAY_COUNT: /* 7 */ Double = js.native
   def getClosingViewDate[DateType](viewDate: DateType, picker: PickerMode, generateConfig: GenerateConfig[DateType]): DateType = js.native
   def getClosingViewDate[DateType](viewDate: DateType, picker: PickerMode, generateConfig: GenerateConfig[DateType], offset: Double): DateType = js.native
   def getQuarter[DateType](generateConfig: GenerateConfig[DateType], date: DateType): Double = js.native

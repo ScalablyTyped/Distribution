@@ -1,6 +1,6 @@
 package typings.inputMoment.mod
 
-import typings.inputMoment.ReadonlyInputMomentProps
+import typings.inputMoment.anon.ReadonlyInputMomentProps
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -310,7 +310,7 @@ object RouteParametersProperties {
     ignoreInvalidLocations: js.UndefOr[Boolean] = js.undefined,
     impedanceAttribute: String = null,
     outSpatialReference: SpatialReferenceProperties | String = null,
-    outputGeometryPrecision: Int | Double = null,
+    outputGeometryPrecision: js.UndefOr[Double] = js.undefined,
     outputGeometryPrecisionUnits: centimeters | `decimal-degrees` | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | points | yards = null,
     outputLines: none | straight | `true-shape` | `true-shape-with-measure` = null,
     pointBarriers: DataLayerProperties | FeatureSetProperties = null,
@@ -343,34 +343,34 @@ object RouteParametersProperties {
     if (directionsOutputType != null) __obj.updateDynamic("directionsOutputType")(directionsOutputType.asInstanceOf[js.Any])
     if (directionsStyleName != null) __obj.updateDynamic("directionsStyleName")(directionsStyleName.asInstanceOf[js.Any])
     if (directionsTimeAttribute != null) __obj.updateDynamic("directionsTimeAttribute")(directionsTimeAttribute.asInstanceOf[js.Any])
-    if (!js.isUndefined(doNotLocateOnRestrictedElements)) __obj.updateDynamic("doNotLocateOnRestrictedElements")(doNotLocateOnRestrictedElements.asInstanceOf[js.Any])
-    if (!js.isUndefined(findBestSequence)) __obj.updateDynamic("findBestSequence")(findBestSequence.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreInvalidLocations)) __obj.updateDynamic("ignoreInvalidLocations")(ignoreInvalidLocations.asInstanceOf[js.Any])
+    if (!js.isUndefined(doNotLocateOnRestrictedElements)) __obj.updateDynamic("doNotLocateOnRestrictedElements")(doNotLocateOnRestrictedElements.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(findBestSequence)) __obj.updateDynamic("findBestSequence")(findBestSequence.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreInvalidLocations)) __obj.updateDynamic("ignoreInvalidLocations")(ignoreInvalidLocations.get.asInstanceOf[js.Any])
     if (impedanceAttribute != null) __obj.updateDynamic("impedanceAttribute")(impedanceAttribute.asInstanceOf[js.Any])
     if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference.asInstanceOf[js.Any])
-    if (outputGeometryPrecision != null) __obj.updateDynamic("outputGeometryPrecision")(outputGeometryPrecision.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputGeometryPrecision)) __obj.updateDynamic("outputGeometryPrecision")(outputGeometryPrecision.get.asInstanceOf[js.Any])
     if (outputGeometryPrecisionUnits != null) __obj.updateDynamic("outputGeometryPrecisionUnits")(outputGeometryPrecisionUnits.asInstanceOf[js.Any])
     if (outputLines != null) __obj.updateDynamic("outputLines")(outputLines.asInstanceOf[js.Any])
     if (pointBarriers != null) __obj.updateDynamic("pointBarriers")(pointBarriers.asInstanceOf[js.Any])
     if (polygonBarriers != null) __obj.updateDynamic("polygonBarriers")(polygonBarriers.asInstanceOf[js.Any])
     if (polylineBarriers != null) __obj.updateDynamic("polylineBarriers")(polylineBarriers.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveFirstStop)) __obj.updateDynamic("preserveFirstStop")(preserveFirstStop.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveLastStop)) __obj.updateDynamic("preserveLastStop")(preserveLastStop.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveFirstStop)) __obj.updateDynamic("preserveFirstStop")(preserveFirstStop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveLastStop)) __obj.updateDynamic("preserveLastStop")(preserveLastStop.get.asInstanceOf[js.Any])
     if (restrictUTurns != null) __obj.updateDynamic("restrictUTurns")(restrictUTurns.asInstanceOf[js.Any])
     if (restrictionAttributes != null) __obj.updateDynamic("restrictionAttributes")(restrictionAttributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnBarriers)) __obj.updateDynamic("returnBarriers")(returnBarriers.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnDirections)) __obj.updateDynamic("returnDirections")(returnDirections.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnPolygonBarriers)) __obj.updateDynamic("returnPolygonBarriers")(returnPolygonBarriers.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnPolylineBarriers)) __obj.updateDynamic("returnPolylineBarriers")(returnPolylineBarriers.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnRoutes)) __obj.updateDynamic("returnRoutes")(returnRoutes.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnStops)) __obj.updateDynamic("returnStops")(returnStops.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnZ)) __obj.updateDynamic("returnZ")(returnZ.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnBarriers)) __obj.updateDynamic("returnBarriers")(returnBarriers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnDirections)) __obj.updateDynamic("returnDirections")(returnDirections.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnPolygonBarriers)) __obj.updateDynamic("returnPolygonBarriers")(returnPolygonBarriers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnPolylineBarriers)) __obj.updateDynamic("returnPolylineBarriers")(returnPolylineBarriers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnRoutes)) __obj.updateDynamic("returnRoutes")(returnRoutes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnStops)) __obj.updateDynamic("returnStops")(returnStops.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnZ)) __obj.updateDynamic("returnZ")(returnZ.get.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(startTimeIsUTC)) __obj.updateDynamic("startTimeIsUTC")(startTimeIsUTC.asInstanceOf[js.Any])
+    if (!js.isUndefined(startTimeIsUTC)) __obj.updateDynamic("startTimeIsUTC")(startTimeIsUTC.get.asInstanceOf[js.Any])
     if (stops != null) __obj.updateDynamic("stops")(stops.asInstanceOf[js.Any])
     if (travelMode != null) __obj.updateDynamic("travelMode")(travelMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHierarchy)) __obj.updateDynamic("useHierarchy")(useHierarchy.asInstanceOf[js.Any])
-    if (!js.isUndefined(useTimeWindows)) __obj.updateDynamic("useTimeWindows")(useTimeWindows.asInstanceOf[js.Any])
+    if (!js.isUndefined(useHierarchy)) __obj.updateDynamic("useHierarchy")(useHierarchy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useTimeWindows)) __obj.updateDynamic("useTimeWindows")(useTimeWindows.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteParametersProperties]
   }
 }

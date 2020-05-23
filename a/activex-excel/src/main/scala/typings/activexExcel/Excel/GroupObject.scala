@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.GroupObject")
 @js.native
-class GroupObject protected () extends js.Object {
+trait GroupObject extends js.Object {
   var AddIndent: Boolean = js.native
   val Application: typings.activexExcel.Excel.Application = js.native
   var ArrowHeadLength: js.Any = js.native

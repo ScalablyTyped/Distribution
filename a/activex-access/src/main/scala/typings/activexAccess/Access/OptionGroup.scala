@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.OptionGroup")
 @js.native
-class OptionGroup protected () extends js.Object {
+trait OptionGroup extends js.Object {
   @JSName("Access.OptionGroup_typekey")
   var AccessDotOptionGroup_typekey: OptionGroup = js.native
   var AddColon: Boolean = js.native

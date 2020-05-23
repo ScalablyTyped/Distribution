@@ -14,15 +14,15 @@ object LookupOneOptions {
   @scala.inline
   def apply(
     all: `false` = null,
-    family: Int | Double = null,
-    hints: Int | Double = null,
+    family: js.UndefOr[Double] = js.undefined,
+    hints: js.UndefOr[Double] = js.undefined,
     verbatim: js.UndefOr[Boolean] = js.undefined
   ): LookupOneOptions = {
     val __obj = js.Dynamic.literal()
     if (all != null) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
-    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
-    if (hints != null) __obj.updateDynamic("hints")(hints.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbatim)) __obj.updateDynamic("verbatim")(verbatim.asInstanceOf[js.Any])
+    if (!js.isUndefined(family)) __obj.updateDynamic("family")(family.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hints)) __obj.updateDynamic("hints")(hints.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbatim)) __obj.updateDynamic("verbatim")(verbatim.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LookupOneOptions]
   }
 }

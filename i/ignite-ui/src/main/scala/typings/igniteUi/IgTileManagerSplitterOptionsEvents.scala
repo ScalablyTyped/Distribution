@@ -7,34 +7,31 @@ import scala.scalajs.js.annotation._
 
 trait IgTileManagerSplitterOptionsEvents
   extends /**
-	 * Option for IgTileManagerSplitterOptionsEvents
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   /**
-  	 * Event fired after collapsing is performed. Not cancellable.
-  	 *
-  	 *                     Function takes arguments evt and ui.
-  	 *                     Use ui.owner to get a reference to the splitter instance.
-  	 *                     Use ui.index to get an index of collased panel.
-  	 */
+    * Event fired after collapsing is performed. Not cancellable.
+    *
+    *                     Function takes arguments evt and ui.
+    *                     Use ui.owner to get a reference to the splitter instance.
+    *                     Use ui.index to get an index of collased panel.
+    */
   var collapsed: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Event fired after expanding is performed. Not cancellable.
-  	 *
-  	 *                     Function takes arguments evt and ui.
-  	 *                     Use ui.owner to get a reference to the splitter instance.
-  	 *                     Use ui.index to get an index of expanded panel.
-  	 */
+    * Event fired after expanding is performed. Not cancellable.
+    *
+    *                     Function takes arguments evt and ui.
+    *                     Use ui.owner to get a reference to the splitter instance.
+    *                     Use ui.index to get an index of expanded panel.
+    */
   var expanded: js.UndefOr[js.Any] = js.undefined
 }
 
 object IgTileManagerSplitterOptionsEvents {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for IgTileManagerSplitterOptionsEvents
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     collapsed: js.Any = null,
     expanded: js.Any = null
   ): IgTileManagerSplitterOptionsEvents = {

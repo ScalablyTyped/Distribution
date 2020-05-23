@@ -32,6 +32,69 @@ class TextMetrics protected ()
     maxLineWidth: Double,
     fontProperties: js.Any
   ) = this()
+  /**
+    * The font properties object from TextMetrics.measureFont
+    *
+    * @member {PIXI.IFontMetrics} PIXI.TextMetrics#fontProperties
+    */
+  /* CompleteClass */
+  override var fontProperties: IFontMetrics = js.native
+  /**
+    * The measured height of the text
+    *
+    * @member {number} PIXI.TextMetrics#height
+    */
+  /* CompleteClass */
+  override var height: Double = js.native
+  /**
+    * The measured line height for this style
+    *
+    * @member {number} PIXI.TextMetrics#lineHeight
+    */
+  /* CompleteClass */
+  override var lineHeight: Double = js.native
+  /**
+    * An array of the line widths for each line matched to `lines`
+    *
+    * @member {number[]} PIXI.TextMetrics#lineWidths
+    */
+  /* CompleteClass */
+  override var lineWidths: js.Array[Double] = js.native
+  /**
+    * An array of lines of the text broken by new lines and wrapping is specified in style
+    *
+    * @member {string[]} PIXI.TextMetrics#lines
+    */
+  /* CompleteClass */
+  override var lines: js.Array[String] = js.native
+  /**
+    * The maximum line width for all measured lines
+    *
+    * @member {number} PIXI.TextMetrics#maxLineWidth
+    */
+  /* CompleteClass */
+  override var maxLineWidth: Double = js.native
+  /**
+    * The style that was measured
+    *
+    * @member {PIXI.TextStyle} PIXI.TextMetrics#style
+    */
+  /* CompleteClass */
+  override var style: typings.pixiJs.PIXI.TextStyle = js.native
+  /**
+    * The text that was measured
+    *
+    * @member {string} PIXI.TextMetrics#text
+    */
+  /* CompleteClass */
+  override var text: String = js.native
+  /**
+    * The measured width of the text
+    *
+    * @member {number} PIXI.TextMetrics#width
+    */
+  /* CompleteClass */
+  override var width: Double = js.native
 }
 
 /* static members */

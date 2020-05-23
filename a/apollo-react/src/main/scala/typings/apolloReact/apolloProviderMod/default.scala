@@ -1,7 +1,7 @@
 package typings.apolloReact.apolloProviderMod
 
-import typings.apolloReact.AnonChildren
-import typings.apolloReact.AnonClient
+import typings.apolloReact.anon.Children
+import typings.apolloReact.anon.Client
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ class default protected () extends ApolloProvider {
 @JSImport("apollo-react/lib/ApolloProvider", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var childContextTypes: AnonClient = js.native
-  var propTypes: AnonChildren = js.native
+  var childContextTypes: Client = js.native
+  var propTypes: Children = js.native
 }
 

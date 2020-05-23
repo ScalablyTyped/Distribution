@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Fields
-  extends /* filedName */ StringDictionary[js.Any] {
+  extends /* otherData */ StringDictionary[js.Any] {
   var args: js.UndefOr[js.Any] = js.undefined
   var cat: js.UndefOr[js.Any] = js.undefined
 }
@@ -14,7 +14,7 @@ trait Fields
 object Fields {
   @scala.inline
   def apply(
-    StringDictionary: /* filedName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     args: js.Any = null,
     cat: js.Any = null
   ): Fields = {

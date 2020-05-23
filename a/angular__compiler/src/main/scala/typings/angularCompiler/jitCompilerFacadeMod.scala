@@ -1,6 +1,7 @@
 package typings.angularCompiler
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.angularCompiler.anon.InstantiableResourceLoader
 import typings.angularCompiler.compilerFacadeInterfaceMod.CompilerFacade
 import typings.angularCompiler.compilerFacadeInterfaceMod.CoreEnvironment
 import typings.angularCompiler.compilerFacadeInterfaceMod.ParseSourceSpan
@@ -28,7 +29,7 @@ object jitCompilerFacadeMod extends js.Object {
     /* CompleteClass */
     override var R3ResolvedDependencyType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof R3ResolvedDependencyType */ js.Any = js.native
     /* CompleteClass */
-    override var ResourceLoader: AnonInstantiableResourceLoader = js.native
+    override var ResourceLoader: InstantiableResourceLoader = js.native
     @JSName("ResourceLoader")
     var ResourceLoader_CompilerFacadeImpl: Instantiable0[ResourceLoader] = js.native
     var elementSchemaRegistry: js.Any = js.native

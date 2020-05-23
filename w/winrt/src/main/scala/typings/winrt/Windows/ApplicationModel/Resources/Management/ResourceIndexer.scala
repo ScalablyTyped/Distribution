@@ -7,13 +7,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.Resources.Management.ResourceIndexer")
-@js.native
-class ResourceIndexer protected () extends IResourceIndexer {
-  def this(projectRoot: Uri) = this()
-  /* CompleteClass */
-  override def indexFileContentsAsync(file: Uri): IAsyncOperation[IVectorView[IndexedResourceCandidate]] = js.native
-  /* CompleteClass */
-  override def indexFilePath(filePath: Uri): IndexedResourceCandidate = js.native
+trait ResourceIndexer extends IResourceIndexer
+
+object ResourceIndexer {
+  @scala.inline
+  def apply(
+    indexFileContentsAsync: Uri => IAsyncOperation[IVectorView[IndexedResourceCandidate]],
+    indexFilePath: Uri => IndexedResourceCandidate
+  ): ResourceIndexer = {
+    val __obj = js.Dynamic.literal(indexFileContentsAsync = js.Any.fromFunction1(indexFileContentsAsync), indexFilePath = js.Any.fromFunction1(indexFilePath))
+    __obj.asInstanceOf[ResourceIndexer]
+  }
 }
 

@@ -1,5 +1,10 @@
 package typings.octokitEndpoint
 
+import typings.octokitTypes.endpointDefaultsMod.EndpointDefaults
+import typings.octokitTypes.endpointOptionsMod.EndpointOptions
+import typings.octokitTypes.requestOptionsMod.RequestOptions
+import typings.octokitTypes.requestParametersMod.RequestParameters
+import typings.octokitTypes.routeMod.Route
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,14 +12,9 @@ import scala.scalajs.js.annotation._
 @JSImport("@octokit/endpoint/dist-types/endpoint-with-defaults", JSImport.Namespace)
 @js.native
 object endpointWithDefaultsMod extends js.Object {
-  def endpointWithDefaults(
-    defaults: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EndpointDefaults */ js.Any,
-    route: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Route */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EndpointOptions */ js.Any
-  ): js.Any = js.native
-  def endpointWithDefaults(
-    defaults: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EndpointDefaults */ js.Any,
-    route: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Route */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EndpointOptions */ js.Any,
-    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestParameters */ js.Any
-  ): js.Any = js.native
+  def endpointWithDefaults(defaults: EndpointDefaults, route: EndpointOptions): RequestOptions = js.native
+  def endpointWithDefaults(defaults: EndpointDefaults, route: EndpointOptions, options: RequestParameters): RequestOptions = js.native
+  def endpointWithDefaults(defaults: EndpointDefaults, route: Route): RequestOptions = js.native
+  def endpointWithDefaults(defaults: EndpointDefaults, route: Route, options: RequestParameters): RequestOptions = js.native
 }
 

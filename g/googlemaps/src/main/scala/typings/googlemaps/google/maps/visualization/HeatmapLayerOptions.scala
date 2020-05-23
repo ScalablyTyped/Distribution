@@ -23,17 +23,17 @@ object HeatmapLayerOptions {
     dissipating: js.UndefOr[Boolean] = js.undefined,
     gradient: js.Array[String] = null,
     map: Map[Element] = null,
-    maxIntensity: Int | Double = null,
-    opacity: Int | Double = null,
-    radius: Int | Double = null
+    maxIntensity: js.UndefOr[Double] = js.undefined,
+    opacity: js.UndefOr[Double] = js.undefined,
+    radius: js.UndefOr[Double] = js.undefined
   ): HeatmapLayerOptions = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (!js.isUndefined(dissipating)) __obj.updateDynamic("dissipating")(dissipating.asInstanceOf[js.Any])
+    if (!js.isUndefined(dissipating)) __obj.updateDynamic("dissipating")(dissipating.get.asInstanceOf[js.Any])
     if (gradient != null) __obj.updateDynamic("gradient")(gradient.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (maxIntensity != null) __obj.updateDynamic("maxIntensity")(maxIntensity.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxIntensity)) __obj.updateDynamic("maxIntensity")(maxIntensity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeatmapLayerOptions]
   }
 }

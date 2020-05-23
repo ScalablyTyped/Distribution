@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TransferDomainResponse extends js.Object {
   /**
-    * Identifier for tracking the progress of the request. To use this ID to query the operation status, use GetOperationDetail.
+    * Identifier for tracking the progress of the request. To query the operation status, use GetOperationDetail.
     */
   var OperationId: typings.awsSdk.route53domainsMod.OperationId = js.native
 }

@@ -1,11 +1,11 @@
 package typings.jupyterlabNbformat.mod
 
-import typings.jupyterlabNbformat.PartialIBaseCellJupyterMe
+import typings.jupyterlabNbformat.anon.PartialIBaseCellJupyterMe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.jupyterlabNbformat.mod.ICellMetadata because Already inherited */ trait IRawCellMetadata extends IBaseCellMetadata {
   /**
     * Raw cell metadata format for nbconvert.

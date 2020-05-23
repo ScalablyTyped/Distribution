@@ -12,7 +12,7 @@ package object interfacesMod {
   type RedeemScript = typings.node.Buffer
   type SighashType = scala.Double
   type TransactionFromBuffer = js.Function1[/* buffer */ typings.node.Buffer, typings.bip174.interfacesMod.Transaction]
-  type TransactionIOCountGetter = js.Function1[/* txBuffer */ typings.node.Buffer, typings.bip174.AnonInputCount]
+  type TransactionIOCountGetter = js.Function1[/* txBuffer */ typings.node.Buffer, typings.bip174.anon.InputCount]
   type TransactionInputAdder = js.Function2[
     /* input */ typings.bip174.interfacesMod.TransactionInput, 
     /* txBuffer */ typings.node.Buffer, 

@@ -13,11 +13,16 @@ trait Props extends js.Object {
 
 object Props {
   @scala.inline
-  def apply(isOpen: Boolean, className: String = null, onRest: () => Unit = null, transition: String = null): Props = {
+  def apply(
+    isOpen: Boolean,
+    className: js.UndefOr[Null | String] = js.undefined,
+    onRest: () => Unit = null,
+    transition: js.UndefOr[Null | String] = js.undefined
+  ): Props = {
     val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(className)) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (onRest != null) __obj.updateDynamic("onRest")(js.Any.fromFunction0(onRest))
-    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
+    if (!js.isUndefined(transition)) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

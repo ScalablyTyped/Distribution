@@ -5,7 +5,7 @@ import typings.react.mod.Key
 import typings.react.mod.LegacyRef
 import typings.react.mod.Props
 import typings.react.mod.ReactNode
-import typings.reactDatagrid.AnonPageSize
+import typings.reactDatagrid.anon.PageSize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait DataGridProps extends Props[DataGrid] {
     * to render in the grid. For remote data, a string url, or a function
     * that returns a promise.
     */
-  var dataSource: js.Array[_] | String | (js.Function1[/* query */ AnonPageSize, js.Promise[js.Array[_]]])
+  var dataSource: js.Array[_] | String | (js.Function1[/* query */ PageSize, js.Promise[js.Array[_]]])
   var dataSourceCount: js.UndefOr[Double] = js.undefined
   var defaultPage: js.UndefOr[Double] = js.undefined
   var defaultPageSize: js.UndefOr[Double] = js.undefined
@@ -154,12 +154,12 @@ object DataGridProps {
   @scala.inline
   def apply(
     columns: js.Array[Column],
-    dataSource: js.Array[_] | String | (js.Function1[/* query */ AnonPageSize, js.Promise[js.Array[_]]]),
+    dataSource: js.Array[_] | String | (js.Function1[/* query */ PageSize, js.Promise[js.Array[_]]]),
     idProperty: String,
     children: ReactNode = null,
-    dataSourceCount: Int | Double = null,
-    defaultPage: Int | Double = null,
-    defaultPageSize: Int | Double = null,
+    dataSourceCount: js.UndefOr[Double] = js.undefined,
+    defaultPage: js.UndefOr[Double] = js.undefined,
+    defaultPageSize: js.UndefOr[Double] = js.undefined,
     emptyText: String = null,
     groupBy: js.Array[_] = null,
     key: Key = null,
@@ -174,12 +174,12 @@ object DataGridProps {
     onPageSizeChange: (/* pageSize */ Double, /* props */ DataGridProps) => Unit = null,
     onSelectionChange: (/* newSelected */ js.Object, /* data */ js.Any) => Unit = null,
     onSortChange: /* sortInfo */ js.Array[SortInfo] => Unit = null,
-    page: Int | Double = null,
-    pageSize: Int | Double = null,
+    page: js.UndefOr[Double] = js.undefined,
+    pageSize: js.UndefOr[Double] = js.undefined,
     pagination: js.UndefOr[Boolean] = js.undefined,
     paginationToolbarProps: PaginationToolbarProps = null,
-    ref: LegacyRef[DataGrid] = null,
-    rowHeight: Int | Double = null,
+    ref: js.UndefOr[Null | LegacyRef[DataGrid]] = js.undefined,
+    rowHeight: js.UndefOr[Double] = js.undefined,
     rowStyle: CSSProperties | (js.Function2[/* data */ js.Any, /* props */ RowProps, CSSProperties]) = null,
     selected: js.Object = null,
     showCellBorders: Boolean | String = null,
@@ -189,15 +189,15 @@ object DataGridProps {
   ): DataGridProps = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], dataSource = dataSource.asInstanceOf[js.Any], idProperty = idProperty.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (dataSourceCount != null) __obj.updateDynamic("dataSourceCount")(dataSourceCount.asInstanceOf[js.Any])
-    if (defaultPage != null) __obj.updateDynamic("defaultPage")(defaultPage.asInstanceOf[js.Any])
-    if (defaultPageSize != null) __obj.updateDynamic("defaultPageSize")(defaultPageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataSourceCount)) __obj.updateDynamic("dataSourceCount")(dataSourceCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultPage)) __obj.updateDynamic("defaultPage")(defaultPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultPageSize)) __obj.updateDynamic("defaultPageSize")(defaultPageSize.get.asInstanceOf[js.Any])
     if (emptyText != null) __obj.updateDynamic("emptyText")(emptyText.asInstanceOf[js.Any])
     if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(liveFilter)) __obj.updateDynamic("liveFilter")(liveFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(loadMaskOverHeader)) __obj.updateDynamic("loadMaskOverHeader")(loadMaskOverHeader.asInstanceOf[js.Any])
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
+    if (!js.isUndefined(liveFilter)) __obj.updateDynamic("liveFilter")(liveFilter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loadMaskOverHeader)) __obj.updateDynamic("loadMaskOverHeader")(loadMaskOverHeader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.get.asInstanceOf[js.Any])
     if (onColumnOrderChange != null) __obj.updateDynamic("onColumnOrderChange")(js.Any.fromFunction2(onColumnOrderChange))
     if (onColumnResize != null) __obj.updateDynamic("onColumnResize")(js.Any.fromFunction4(onColumnResize))
     if (onColumnVisibilityChange != null) __obj.updateDynamic("onColumnVisibilityChange")(js.Any.fromFunction2(onColumnVisibilityChange))
@@ -206,18 +206,18 @@ object DataGridProps {
     if (onPageSizeChange != null) __obj.updateDynamic("onPageSizeChange")(js.Any.fromFunction2(onPageSizeChange))
     if (onSelectionChange != null) __obj.updateDynamic("onSelectionChange")(js.Any.fromFunction2(onSelectionChange))
     if (onSortChange != null) __obj.updateDynamic("onSortChange")(js.Any.fromFunction1(onSortChange))
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination.get.asInstanceOf[js.Any])
     if (paginationToolbarProps != null) __obj.updateDynamic("paginationToolbarProps")(paginationToolbarProps.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowHeight)) __obj.updateDynamic("rowHeight")(rowHeight.get.asInstanceOf[js.Any])
     if (rowStyle != null) __obj.updateDynamic("rowStyle")(rowStyle.asInstanceOf[js.Any])
     if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     if (showCellBorders != null) __obj.updateDynamic("showCellBorders")(showCellBorders.asInstanceOf[js.Any])
     if (sortInfo != null) __obj.updateDynamic("sortInfo")(sortInfo.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(withColumnMenu)) __obj.updateDynamic("withColumnMenu")(withColumnMenu.asInstanceOf[js.Any])
+    if (!js.isUndefined(withColumnMenu)) __obj.updateDynamic("withColumnMenu")(withColumnMenu.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataGridProps]
   }
 }

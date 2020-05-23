@@ -15,7 +15,7 @@ object ISavedScrollFocus {
   def apply(colName: String = null, focus: js.UndefOr[Boolean] = js.undefined, rowVal: IRowVal = null): ISavedScrollFocus = {
     val __obj = js.Dynamic.literal()
     if (colName != null) __obj.updateDynamic("colName")(colName.asInstanceOf[js.Any])
-    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
+    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.get.asInstanceOf[js.Any])
     if (rowVal != null) __obj.updateDynamic("rowVal")(rowVal.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISavedScrollFocus]
   }

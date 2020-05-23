@@ -26,7 +26,7 @@ object XMLVersionOptions {
   def apply(defaultXMLVersion: `1Dot0` | `1Dot1` = null, forceXMLVersion: js.UndefOr[Boolean] = js.undefined): XMLVersionOptions = {
     val __obj = js.Dynamic.literal()
     if (defaultXMLVersion != null) __obj.updateDynamic("defaultXMLVersion")(defaultXMLVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceXMLVersion)) __obj.updateDynamic("forceXMLVersion")(forceXMLVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceXMLVersion)) __obj.updateDynamic("forceXMLVersion")(forceXMLVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[XMLVersionOptions]
   }
 }

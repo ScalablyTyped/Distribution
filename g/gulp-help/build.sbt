@@ -1,25 +1,25 @@
 organization := "org.scalablytyped"
 name := "gulp-help"
-version := "0.0-unknown-dt-20200225Z-3e0a7c"
-scalaVersion := "2.13.1"
+version := "0.0-unknown-dt-20200515Z-64fe52"
+scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "chokidar" % "3.3.1-80b43c",
-  "org.scalablytyped" %%% "glob" % "7.1-dt-20200226Z-74ac81",
-  "org.scalablytyped" %%% "glob-stream" % "v6.1.0-dt-20200226Z-107c95",
-  "org.scalablytyped" %%% "gulp" % "4.0-dt-20200225Z-6208e7",
-  "org.scalablytyped" %%% "minimatch" % "3.0-dt-20200226Z-23b1d1",
-  "org.scalablytyped" %%% "node" % "13.13-dt-20200417Z-f3d81d",
-  "org.scalablytyped" %%% "orchestrator" % "0.3-dt-20200225Z-51c953",
-  "org.scalablytyped" %%% "q" % "1.5-dt-20200225Z-5715c4",
-  "org.scalablytyped" %%% "std" % "3.8-9b2470",
-  "org.scalablytyped" %%% "undertaker" % "1.2-dt-20200225Z-718066",
-  "org.scalablytyped" %%% "undertaker-registry" % "1.0-dt-20200225Z-3d3200",
-  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20200225Z-bbc6a1",
-  "org.scalablytyped" %%% "vinyl-fs" % "2.4-dt-20200227Z-8fd70b")
+  "org.scalablytyped" %%% "chokidar" % "3.4.0-81d9ae",
+  "org.scalablytyped" %%% "glob" % "7.1-dt-20200515Z-32d5c3",
+  "org.scalablytyped" %%% "glob-stream" % "v6.1.0-dt-20200515Z-c2d019",
+  "org.scalablytyped" %%% "gulp" % "4.0-dt-20200515Z-f43e38",
+  "org.scalablytyped" %%% "minimatch" % "3.0-dt-20200515Z-f9eae7",
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200521Z-3aabb7",
+  "org.scalablytyped" %%% "orchestrator" % "0.3-dt-20200515Z-4be6b0",
+  "org.scalablytyped" %%% "q" % "1.5-dt-20200515Z-2e7e19",
+  "org.scalablytyped" %%% "std" % "3.9-18cbeb",
+  "org.scalablytyped" %%% "undertaker" % "1.2-dt-20200515Z-718c5e",
+  "org.scalablytyped" %%% "undertaker-registry" % "1.0-dt-20200515Z-31949f",
+  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20200515Z-eed32d",
+  "org.scalablytyped" %%% "vinyl-fs" % "2.4-dt-20200515Z-227334")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

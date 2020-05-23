@@ -22,11 +22,15 @@ trait UtilizationMetric extends js.Object {
 
 object UtilizationMetric {
   @scala.inline
-  def apply(name: MetricName = null, statistic: MetricStatistic = null, value: Int | Double = null): UtilizationMetric = {
+  def apply(
+    name: MetricName = null,
+    statistic: MetricStatistic = null,
+    value: js.UndefOr[MetricValue] = js.undefined
+  ): UtilizationMetric = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (statistic != null) __obj.updateDynamic("statistic")(statistic.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UtilizationMetric]
   }
 }

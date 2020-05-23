@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,8 +35,4 @@ trait DimensionalDefinition
     */
   var variableName: String = js.native
 }
-
-@JSGlobal("__esri.DimensionalDefinition")
-@js.native
-object DimensionalDefinition extends TopLevel[DimensionalDefinitionConstructor]
 

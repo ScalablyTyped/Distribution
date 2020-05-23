@@ -15,12 +15,12 @@ object UpdateJobOutput {
   @scala.inline
   def apply(
     ArtifactList: ArtifactList = null,
-    Success: js.UndefOr[Boolean] = js.undefined,
+    Success: js.UndefOr[Success] = js.undefined,
     WarningMessage: WarningMessage = null
   ): UpdateJobOutput = {
     val __obj = js.Dynamic.literal()
     if (ArtifactList != null) __obj.updateDynamic("ArtifactList")(ArtifactList.asInstanceOf[js.Any])
-    if (!js.isUndefined(Success)) __obj.updateDynamic("Success")(Success.asInstanceOf[js.Any])
+    if (!js.isUndefined(Success)) __obj.updateDynamic("Success")(Success.get.asInstanceOf[js.Any])
     if (WarningMessage != null) __obj.updateDynamic("WarningMessage")(WarningMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateJobOutput]
   }

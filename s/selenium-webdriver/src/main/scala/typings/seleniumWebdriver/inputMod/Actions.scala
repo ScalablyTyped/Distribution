@@ -1,9 +1,9 @@
 package typings.seleniumWebdriver.inputMod
 
-import typings.seleniumWebdriver.AnonAsync
-import typings.seleniumWebdriver.AnonAsyncBoolean
-import typings.seleniumWebdriver.AnonBridge
-import typings.seleniumWebdriver.AnonX
+import typings.seleniumWebdriver.anon.Async
+import typings.seleniumWebdriver.anon.AsyncBoolean
+import typings.seleniumWebdriver.anon.Bridge
+import typings.seleniumWebdriver.anon.X
 import typings.seleniumWebdriver.commandMod.Executor
 import typings.seleniumWebdriver.mod.ILocation
 import typings.seleniumWebdriver.mod.WebElement
@@ -16,9 +16,9 @@ import scala.scalajs.js.annotation._
 class Actions protected () extends js.Object {
   // region Constructors
   def this(executor: Executor) = this()
-  def this(executor: Executor, options: AnonAsync) = this()
-  def this(executor: Executor, options: AnonAsyncBoolean) = this()
-  def this(executor: Executor, options: AnonBridge) = this()
+  def this(executor: Executor, options: Async) = this()
+  def this(executor: Executor, options: AsyncBoolean) = this()
+  def this(executor: Executor, options: Bridge) = this()
   /**
     * Executes this action sequence.
     * @return {!Promise} A promise that will be resolved once
@@ -89,7 +89,7 @@ class Actions protected () extends js.Object {
     * pixels).
     */
   def dragAndDrop(from: WebElement): Actions = js.native
-  def dragAndDrop(from: WebElement, to: AnonX): Actions = js.native
+  def dragAndDrop(from: WebElement, to: X): Actions = js.native
   def dragAndDrop(from: WebElement, to: WebElement): Actions = js.native
   /**
     * Performs a modifier key press. The modifier key is <em>not released</em>

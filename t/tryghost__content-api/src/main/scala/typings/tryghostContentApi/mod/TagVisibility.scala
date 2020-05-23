@@ -6,17 +6,14 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.tryghostContentApi.tryghostContentApiStrings.public
-  - typings.tryghostContentApi.tryghostContentApiStrings.draft
-  - typings.tryghostContentApi.tryghostContentApiStrings.scheduled
+  - typings.tryghostContentApi.tryghostContentApiStrings.internal
 */
 trait TagVisibility extends js.Object
 
 object TagVisibility {
   @scala.inline
-  def draft: typings.tryghostContentApi.tryghostContentApiStrings.draft = "draft".asInstanceOf[typings.tryghostContentApi.tryghostContentApiStrings.draft]
+  def internal: typings.tryghostContentApi.tryghostContentApiStrings.internal = "internal".asInstanceOf[typings.tryghostContentApi.tryghostContentApiStrings.internal]
   @scala.inline
   def public: typings.tryghostContentApi.tryghostContentApiStrings.public = "public".asInstanceOf[typings.tryghostContentApi.tryghostContentApiStrings.public]
-  @scala.inline
-  def scheduled: typings.tryghostContentApi.tryghostContentApiStrings.scheduled = "scheduled".asInstanceOf[typings.tryghostContentApi.tryghostContentApiStrings.scheduled]
 }
 

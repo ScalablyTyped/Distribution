@@ -35,7 +35,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (arrayMerge != null) __obj.updateDynamic("arrayMerge")(js.Any.fromFunction3(arrayMerge))
-    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone.asInstanceOf[js.Any])
+    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone.get.asInstanceOf[js.Any])
     if (customMerge != null) __obj.updateDynamic("customMerge")(js.Any.fromFunction2(customMerge))
     if (isMergeableObject != null) __obj.updateDynamic("isMergeableObject")(js.Any.fromFunction1(isMergeableObject))
     __obj.asInstanceOf[Options]

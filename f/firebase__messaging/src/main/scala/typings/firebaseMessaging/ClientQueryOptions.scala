@@ -19,8 +19,8 @@ object ClientQueryOptions {
     `type`: ClientTypes = null
   ): ClientQueryOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeReserved)) __obj.updateDynamic("includeReserved")(includeReserved.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeUncontrolled)) __obj.updateDynamic("includeUncontrolled")(includeUncontrolled.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeReserved)) __obj.updateDynamic("includeReserved")(includeReserved.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeUncontrolled)) __obj.updateDynamic("includeUncontrolled")(includeUncontrolled.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientQueryOptions]
   }

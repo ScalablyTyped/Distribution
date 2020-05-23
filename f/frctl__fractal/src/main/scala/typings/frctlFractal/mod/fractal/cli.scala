@@ -1,9 +1,8 @@
 package typings.frctlFractal.mod.fractal
 
-import typings.frctlFractal.AnonCli
-import typings.frctlFractal.AnonCurrent
-import typings.frctlFractal.AnonDescription
-import typings.frctlFractal.ClifractalFractal
+import typings.frctlFractal.anon.ClifractalFractal
+import typings.frctlFractal.anon.Current
+import typings.frctlFractal.anon.Description
 import typings.frctlFractal.mod.CliTheme
 import typings.std.Error
 import scala.scalajs.js
@@ -30,7 +29,7 @@ object cli extends js.Object {
     def command(
       commandString: String,
       callback: js.ThisFunction2[/* this */ ClifractalFractal, /* args */ js.Any, /* done */ js.Function0[Unit], Unit],
-      opts: AnonDescription
+      opts: Description
     ): Unit = js.native
     def error(message: String): Unit = js.native
     def exec(command: String): Unit = js.native
@@ -72,8 +71,8 @@ object cli extends js.Object {
   
   @js.native
   class Notifier () extends js.Object {
-    def updateAvailable(details: AnonCurrent): Unit = js.native
-    def versionMismatch(details: AnonCli): Unit = js.native
+    def updateAvailable(details: Current): Unit = js.native
+    def versionMismatch(details: typings.frctlFractal.anon.Cli): Unit = js.native
   }
   
 }

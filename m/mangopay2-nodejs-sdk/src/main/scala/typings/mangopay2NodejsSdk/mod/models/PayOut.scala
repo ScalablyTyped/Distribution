@@ -1,6 +1,6 @@
 package typings.mangopay2NodejsSdk.mod.models
 
-import typings.mangopay2NodejsSdk.PartialCreatePayOut
+import typings.mangopay2NodejsSdk.anon.PartialCreatePayOut
 import typings.mangopay2NodejsSdk.mod.PayOut.PayOutData
 import scala.scalajs.js
 import scala.scalajs.js.`|`

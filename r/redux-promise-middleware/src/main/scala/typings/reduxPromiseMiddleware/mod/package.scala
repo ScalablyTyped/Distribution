@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object mod {
   // Action payload types
   type AsyncFunction = js.Function0[js.Promise[js.Any]]
-  type AsyncPayload = js.Promise[js.Any] | typings.reduxPromiseMiddleware.mod.AsyncFunction | typings.reduxPromiseMiddleware.AnonData
+  type AsyncPayload = js.Promise[js.Any] | typings.reduxPromiseMiddleware.mod.AsyncFunction | typings.reduxPromiseMiddleware.anon.Data
   type FulfilledActionType = typings.reduxPromiseMiddleware.mod.ActionType.Fulfilled | java.lang.String
   // Action type types
   type PendingActionType = typings.reduxPromiseMiddleware.mod.ActionType.Pending | java.lang.String

@@ -1,6 +1,6 @@
 package typings.vinyl.mod
 
-import typings.vinyl.ConstructorOptionscontent
+import typings.vinyl.anon.ConstructorOptionscontent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

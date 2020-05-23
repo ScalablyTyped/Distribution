@@ -1,12 +1,12 @@
 package typings.naja.mod
 
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait InitEvent extends Event_ {
+trait InitEvent extends Event {
   val defaultOptions: NajaOptions = js.native
 }
 

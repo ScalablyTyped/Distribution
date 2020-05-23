@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,8 +35,4 @@ trait SmartMappingSliderViewModel extends SliderViewModel {
     */
   def getUnzoomedMin(): Unit = js.native
 }
-
-@JSGlobal("__esri.SmartMappingSliderViewModel")
-@js.native
-object SmartMappingSliderViewModel extends TopLevel[SmartMappingSliderViewModelConstructor]
 

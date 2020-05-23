@@ -11,7 +11,7 @@ trait DescribeLocalGatewayRouteTablesRequest extends js.Object {
     */
   var DryRun: js.UndefOr[Boolean] = js.native
   /**
-    * One or more filters.
+    * One or more filters.    local-gateway-id - The ID of a local gateway.    local-gateway-route-table-id - The ID of a local gateway route table.    outpost-arn - The Amazon Resource Name (ARN) of the Outpost.    state - The state of the local gateway route table.  
     */
   var Filters: js.UndefOr[FilterList] = js.native
   /**
@@ -31,17 +31,17 @@ trait DescribeLocalGatewayRouteTablesRequest extends js.Object {
 object DescribeLocalGatewayRouteTablesRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     Filters: FilterList = null,
     LocalGatewayRouteTableIds: LocalGatewayRouteTableIdSet = null,
-    MaxResults: Int | scala.Double = null,
+    MaxResults: js.UndefOr[LocalGatewayMaxResults] = js.undefined,
     NextToken: String = null
   ): DescribeLocalGatewayRouteTablesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
     if (LocalGatewayRouteTableIds != null) __obj.updateDynamic("LocalGatewayRouteTableIds")(LocalGatewayRouteTableIds.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLocalGatewayRouteTablesRequest]
   }

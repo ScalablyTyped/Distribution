@@ -1,6 +1,5 @@
 package typings.phonegap
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +11,11 @@ trait Acceleration extends js.Object {
   var z: Double
 }
 
-@JSGlobal("Acceleration")
-@js.native
-object Acceleration extends Instantiable0[Acceleration]
+object Acceleration {
+  @scala.inline
+  def apply(timestamp: Double, x: Double, y: Double, z: Double): Acceleration = {
+    val __obj = js.Dynamic.literal(timestamp = timestamp.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Acceleration]
+  }
+}
 

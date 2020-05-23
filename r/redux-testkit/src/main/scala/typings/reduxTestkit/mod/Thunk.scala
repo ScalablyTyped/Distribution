@@ -1,6 +1,6 @@
 package typings.reduxTestkit.mod
 
-import typings.reduxTestkit.ThunkTestkitwithStatestat
+import typings.reduxTestkit.anon.ThunkTestkitwithStatestat
 import typings.reduxThunk.mod.ThunkAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`

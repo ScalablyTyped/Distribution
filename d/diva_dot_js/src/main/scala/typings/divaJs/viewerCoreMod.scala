@@ -1,5 +1,8 @@
 package typings.divaJs
 
+import typings.divaJs.anon.AnchorPage
+import typings.divaJs.anon.Document
+import typings.divaJs.anon.GetAllZoomLevelsForPage
 import typings.divaJs.interfacesMod.Dimensions
 import typings.divaJs.interfacesMod.Offset
 import typings.divaJs.interfacesMod.Options
@@ -36,13 +39,13 @@ object viewerCoreMod extends js.Object {
     def enableScrollable(): Unit = js.native
     def escapeListener(e: KeyboardEvent): Unit = js.native
     def getCurrentLayout(): typings.divaJs.documentLayoutMod.default = js.native
-    def getCurrentSourceProvider(): AnonGetAllZoomLevelsForPage = js.native
+    def getCurrentSourceProvider(): GetAllZoomLevelsForPage = js.native
     def getInternalState(): ViewerState = js.native
-    def getPadding(): AnonDocument = js.native
+    def getPadding(): Document = js.native
     def getPageData(pageIndex: Double, attribute: String): js.Any = js.native
     def getPageData(pageIndex: Double, attribute: js.Symbol): js.Any = js.native
     def getPageName(pageIndex: Double): String = js.native
-    def getPagePositionAtViewportOffset(coords: Offset): AnonAnchorPage = js.native
+    def getPagePositionAtViewportOffset(coords: Offset): AnchorPage = js.native
     def getPageRegion(pageIndex: Double, options: js.Object): Region = js.native
     def getPageTools(): js.Object = js.native
     def getPublicInstance(): Diva = js.native

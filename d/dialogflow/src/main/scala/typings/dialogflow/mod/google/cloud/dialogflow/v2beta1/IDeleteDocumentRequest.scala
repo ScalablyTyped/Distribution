@@ -12,9 +12,9 @@ trait IDeleteDocumentRequest extends js.Object {
 
 object IDeleteDocumentRequest {
   @scala.inline
-  def apply(name: String = null): IDeleteDocumentRequest = {
+  def apply(name: js.UndefOr[Null | String] = js.undefined): IDeleteDocumentRequest = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDeleteDocumentRequest]
   }
 }

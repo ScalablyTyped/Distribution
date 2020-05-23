@@ -21,8 +21,7 @@ trait IHeaderRenderData extends js.Object {
 object IHeaderRenderData {
   @scala.inline
   def apply(category: String, indices: js.Array[Double] = null): IHeaderRenderData = {
-    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any])
-    if (indices != null) __obj.updateDynamic("indices")(indices.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], indices = indices.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHeaderRenderData]
   }
 }

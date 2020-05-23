@@ -11,7 +11,7 @@ trait DistTags extends /* tagName */ StringDictionary[String] {
 
 object DistTags {
   @scala.inline
-  def apply(latest: String, StringDictionary: /* tagName */ StringDictionary[String] = null): DistTags = {
+  def apply(latest: String, StringDictionary: /* name */ StringDictionary[String] = null): DistTags = {
     val __obj = js.Dynamic.literal(latest = latest.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[DistTags]

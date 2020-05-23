@@ -1,12 +1,12 @@
 package typings.firebaseFirestore
 
-import org.scalablytyped.runtime.Instantiable1
-import typings.firebaseFirestoreTypes.mod.FieldValue
+import typings.firebaseFirestore.mutationMod.FieldTransform
+import typings.firebaseFirestore.userDataReaderMod.ParseContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/api/field_value", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/api/field_value", JSImport.Namespace)
 @js.native
 object fieldValueMod extends js.Object {
   @js.native
@@ -18,64 +18,43 @@ object fieldValueMod extends js.Object {
   @js.native
   class ArrayUnionFieldValueImpl protected () extends FieldValueImpl {
     def this(_elements: js.Array[_]) = this()
-    val _elements: js.Array[_] = js.native
+    val _elements: js.Any = js.native
   }
   
   @js.native
-  class DeleteFieldValueImpl protected () extends FieldValueImpl
+  class DeleteFieldValueImpl () extends FieldValueImpl
   
   @js.native
-  abstract class FieldValueImpl protected () extends FieldValue {
+  class FieldValue ()
+    extends typings.firebaseFirestoreTypes.mod.FieldValue {
+    def isEqual(other: FieldValue): Boolean = js.native
+  }
+  
+  @js.native
+  abstract class FieldValueImpl protected () extends js.Object {
     protected def this(_methodName: String) = this()
     val _methodName: String = js.native
-    def isEqual(other: FieldValueImpl): Boolean = js.native
+    def isEqual(other: FieldValue): Boolean = js.native
+    def toFieldTransform(context: ParseContext): FieldTransform | Null = js.native
   }
   
   @js.native
   class NumericIncrementFieldValueImpl protected () extends FieldValueImpl {
     def this(_operand: Double) = this()
-    val _operand: Double = js.native
+    val _operand: js.Any = js.native
   }
   
   @js.native
-  class PublicFieldValue protected () extends FieldValueImpl {
-    def this(_methodName: String) = this()
-  }
-  
-  @js.native
-  class ServerTimestampFieldValueImpl protected () extends FieldValueImpl
+  class ServerTimestampFieldValueImpl () extends FieldValueImpl
   
   /* static members */
   @js.native
-  object DeleteFieldValueImpl extends js.Object {
-    /** Singleton instance. */
-    var instance: DeleteFieldValueImpl = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object FieldValueImpl extends js.Object {
+  object FieldValue extends js.Object {
     def arrayRemove(elements: js.Any*): FieldValueImpl = js.native
     def arrayUnion(elements: js.Any*): FieldValueImpl = js.native
     def delete(): FieldValueImpl = js.native
     def increment(n: Double): FieldValueImpl = js.native
     def serverTimestamp(): FieldValueImpl = js.native
-  }
-  
-  @js.native
-  object PublicFieldValue extends Instantiable1[/* _methodName */ String, FieldValueImpl] {
-    def arrayRemove(elements: js.Any*): FieldValueImpl = js.native
-    def arrayUnion(elements: js.Any*): FieldValueImpl = js.native
-    def delete(): FieldValueImpl = js.native
-    def increment(n: Double): FieldValueImpl = js.native
-    def serverTimestamp(): FieldValueImpl = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object ServerTimestampFieldValueImpl extends js.Object {
-    /** Singleton instance. */
-    var instance: ServerTimestampFieldValueImpl = js.native
   }
   
 }

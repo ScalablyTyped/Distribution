@@ -10,9 +10,9 @@ trait ISwatchColorPickerState extends js.Object {
 
 object ISwatchColorPickerState {
   @scala.inline
-  def apply(selectedIndex: Int | Double = null): ISwatchColorPickerState = {
+  def apply(selectedIndex: js.UndefOr[Double] = js.undefined): ISwatchColorPickerState = {
     val __obj = js.Dynamic.literal()
-    if (selectedIndex != null) __obj.updateDynamic("selectedIndex")(selectedIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedIndex)) __obj.updateDynamic("selectedIndex")(selectedIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISwatchColorPickerState]
   }
 }

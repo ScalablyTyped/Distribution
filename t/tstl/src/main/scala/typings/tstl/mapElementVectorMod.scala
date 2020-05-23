@@ -46,7 +46,7 @@ object mapElementVectorMod extends js.Object {
       *
       * @author Jeongho Nam - https://github.com/samchon
       */
-    /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+    /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
     - typings.tstl.itreemapMod.ITreeMap.Iterator because var conflicts: value. Inlined first, second */ @js.native
     class Iterator[Key, T, Unique /* <: Boolean */, Source /* <: ITreeMap[
         Key, 
@@ -97,7 +97,7 @@ object mapElementVectorMod extends js.Object {
       *
       * @author Jeongho Nam - https://github.com/samchon
       */
-    /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+    /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
     - typings.tstl.itreemapMod.ITreeMap.ReverseIterator because var conflicts: value. Inlined first, second */ @js.native
     class ReverseIterator[Key, T, Unique /* <: Boolean */, Source /* <: ITreeMap[
         Key, 

@@ -1,6 +1,6 @@
 package typings.storybookReactNative.previewMod
 
-import typings.storybookReactNative.AnonBackgroundColor
+import typings.storybookReactNative.anon.BackgroundColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ trait Params extends js.Object {
   var shouldDisableKeyboardAvoidingView: Boolean
   var shouldPersistSelection: Boolean
   var tabOpen: Double
-  var theme: AnonBackgroundColor
+  var theme: BackgroundColor
 }
 
 object Params {
@@ -39,11 +39,11 @@ object Params {
     shouldDisableKeyboardAvoidingView: Boolean,
     shouldPersistSelection: Boolean,
     tabOpen: Double,
-    theme: AnonBackgroundColor,
-    asyncStorage: AsyncStorage = null
+    theme: BackgroundColor,
+    asyncStorage: js.UndefOr[Null | AsyncStorage] = js.undefined
   ): Params = {
     val __obj = js.Dynamic.literal(disableWebsockets = disableWebsockets.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], initialSelection = initialSelection.asInstanceOf[js.Any], isUIHidden = isUIHidden.asInstanceOf[js.Any], keyboardAvoidingViewVerticalOffset = keyboardAvoidingViewVerticalOffset.asInstanceOf[js.Any], onDeviceUI = onDeviceUI.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], resetStorybook = resetStorybook.asInstanceOf[js.Any], secured = secured.asInstanceOf[js.Any], shouldDisableKeyboardAvoidingView = shouldDisableKeyboardAvoidingView.asInstanceOf[js.Any], shouldPersistSelection = shouldPersistSelection.asInstanceOf[js.Any], tabOpen = tabOpen.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
-    if (asyncStorage != null) __obj.updateDynamic("asyncStorage")(asyncStorage.asInstanceOf[js.Any])
+    if (!js.isUndefined(asyncStorage)) __obj.updateDynamic("asyncStorage")(asyncStorage.asInstanceOf[js.Any])
     __obj.asInstanceOf[Params]
   }
 }

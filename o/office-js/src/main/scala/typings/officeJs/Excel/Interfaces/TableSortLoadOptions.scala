@@ -18,21 +18,21 @@ trait TableSortLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the current conditions used to last sort the table. Read-only.
+    * Specifies the current conditions used to last sort the table.
     *
     * [Api set: ExcelApi 1.2]
     */
   var fields: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents whether the casing impacted the last sort of the table. Read-only.
+    * Specifies if the casing impacts the last sort of the table.
     *
     * [Api set: ExcelApi 1.2]
     */
   var matchCase: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents Chinese character ordering method last used to sort the table. Read-only.
+    * Represents Chinese character ordering method last used to sort the table.
     *
     * [Api set: ExcelApi 1.2]
     */
@@ -48,10 +48,10 @@ object TableSortLoadOptions {
     method: js.UndefOr[Boolean] = js.undefined
   ): TableSortLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(fields)) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase.asInstanceOf[js.Any])
-    if (!js.isUndefined(method)) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fields)) __obj.updateDynamic("fields")(fields.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(method)) __obj.updateDynamic("method")(method.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableSortLoadOptions]
   }
 }

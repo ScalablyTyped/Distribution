@@ -30,11 +30,11 @@ trait LinearUnitProperties extends js.Object {
 object LinearUnitProperties {
   @scala.inline
   def apply(
-    distance: Int | Double = null,
+    distance: js.UndefOr[Double] = js.undefined,
     units: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards = null
   ): LinearUnitProperties = {
     val __obj = js.Dynamic.literal()
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
     if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinearUnitProperties]
   }

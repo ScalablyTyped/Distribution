@@ -47,7 +47,7 @@ trait InstanceAssociationStatusInfo extends js.Object {
     */
   var Name: js.UndefOr[DocumentARN] = js.native
   /**
-    * A URL for an Amazon S3 bucket where you want to store the results of this request.
+    * A URL for an S3 bucket where you want to store the results of this request.
     */
   var OutputUrl: js.UndefOr[InstanceAssociationOutputUrl] = js.native
   /**

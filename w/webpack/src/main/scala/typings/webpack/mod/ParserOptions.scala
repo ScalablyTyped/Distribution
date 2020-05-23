@@ -13,12 +13,12 @@ trait ParserOptions
 object ParserOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* optName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     system: js.UndefOr[Boolean] = js.undefined
   ): ParserOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(system)) __obj.updateDynamic("system")(system.asInstanceOf[js.Any])
+    if (!js.isUndefined(system)) __obj.updateDynamic("system")(system.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParserOptions]
   }
 }

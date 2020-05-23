@@ -4,23 +4,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("jsrsasign.BigInteger")
-@js.native
-class BigInteger () extends js.Object {
-  def abs(): BigInteger = js.native
-  def bitLength(): Double = js.native
-  def compareTo(a: BigInteger): Double = js.native
-  def mod(a: BigInteger): BigInteger = js.native
-  def modPowInt(e: Double, m: BigInteger): BigInteger = js.native
-  def negate(): BigInteger = js.native
-  def toString(b: Double): String = js.native
+trait BigInteger extends js.Object {
+  def abs(): BigInteger
+  def bitLength(): Double
+  def compareTo(a: BigInteger): Double
+  def mod(a: BigInteger): BigInteger
+  def modPowInt(e: Double, m: BigInteger): BigInteger
+  def negate(): BigInteger
+  def toString(b: Double): String
 }
 
-/* static members */
-@JSGlobal("jsrsasign.BigInteger")
-@js.native
-object BigInteger extends js.Object {
-  val ONE: BigInteger = js.native
-  val ZERO: BigInteger = js.native
+object BigInteger {
+  @scala.inline
+  def apply(
+    abs: () => BigInteger,
+    bitLength: () => Double,
+    compareTo: BigInteger => Double,
+    mod: BigInteger => BigInteger,
+    modPowInt: (Double, BigInteger) => BigInteger,
+    negate: () => BigInteger,
+    toString: Double => String
+  ): BigInteger = {
+    val __obj = js.Dynamic.literal(abs = js.Any.fromFunction0(abs), bitLength = js.Any.fromFunction0(bitLength), compareTo = js.Any.fromFunction1(compareTo), mod = js.Any.fromFunction1(mod), modPowInt = js.Any.fromFunction2(modPowInt), negate = js.Any.fromFunction0(negate), toString = js.Any.fromFunction1(toString))
+    __obj.asInstanceOf[BigInteger]
+  }
 }
 

@@ -1,6 +1,7 @@
 package typings.octokitPluginPaginateRest
 
 import typings.octokitCore.mod.Octokit
+import typings.octokitPluginPaginateRest.anon.Paginate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ object mod extends js.Object {
   @js.native
   object paginateRest extends js.Object {
     var VERSION: String = js.native
-    def apply(octokit: Octokit): AnonPaginate = js.native
+    def apply(octokit: Octokit): Paginate = js.native
   }
   
 }

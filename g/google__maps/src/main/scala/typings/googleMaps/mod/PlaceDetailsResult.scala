@@ -19,7 +19,7 @@ trait PlaceDetailsResult extends js.Object {
     *    and can change over time for the same address. A component can change position in the array.
     *    The type of the component can change. A particular component may be missing in a later response.
     */
-  var address_components: js.Array[AddressComponent]
+  var address_components: js.Array[AddressComponent[AddressType | PlaceDetailsAddressComponentType]]
   /** is a representation of the place's address in the [adr microformat](http://microformats.org/wiki/adr). */
   var adr_address: String
   /**
@@ -151,7 +151,7 @@ trait PlaceDetailsResult extends js.Object {
 object PlaceDetailsResult {
   @scala.inline
   def apply(
-    address_components: js.Array[AddressComponent],
+    address_components: js.Array[AddressComponent[AddressType | PlaceDetailsAddressComponentType]],
     adr_address: String,
     alt_ids: js.Array[AlternativePlaceId],
     formatted_address: String,

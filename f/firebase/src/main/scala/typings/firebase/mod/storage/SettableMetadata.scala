@@ -35,20 +35,20 @@ trait SettableMetadata extends js.Object {
 object SettableMetadata {
   @scala.inline
   def apply(
-    cacheControl: String = null,
-    contentDisposition: String = null,
-    contentEncoding: String = null,
-    contentLanguage: String = null,
-    contentType: String = null,
-    customMetadata: StringDictionary[String] = null
+    cacheControl: js.UndefOr[Null | String] = js.undefined,
+    contentDisposition: js.UndefOr[Null | String] = js.undefined,
+    contentEncoding: js.UndefOr[Null | String] = js.undefined,
+    contentLanguage: js.UndefOr[Null | String] = js.undefined,
+    contentType: js.UndefOr[Null | String] = js.undefined,
+    customMetadata: js.UndefOr[Null | StringDictionary[String]] = js.undefined
   ): SettableMetadata = {
     val __obj = js.Dynamic.literal()
-    if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl.asInstanceOf[js.Any])
-    if (contentDisposition != null) __obj.updateDynamic("contentDisposition")(contentDisposition.asInstanceOf[js.Any])
-    if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding.asInstanceOf[js.Any])
-    if (contentLanguage != null) __obj.updateDynamic("contentLanguage")(contentLanguage.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (customMetadata != null) __obj.updateDynamic("customMetadata")(customMetadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheControl)) __obj.updateDynamic("cacheControl")(cacheControl.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentDisposition)) __obj.updateDynamic("contentDisposition")(contentDisposition.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentEncoding)) __obj.updateDynamic("contentEncoding")(contentEncoding.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentLanguage)) __obj.updateDynamic("contentLanguage")(contentLanguage.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentType)) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (!js.isUndefined(customMetadata)) __obj.updateDynamic("customMetadata")(customMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettableMetadata]
   }
 }

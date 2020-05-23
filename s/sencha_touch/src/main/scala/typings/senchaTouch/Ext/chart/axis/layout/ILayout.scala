@@ -13,36 +13,36 @@ trait ILayout extends IBase {
   /** [Config Option] (Ext.chart.axis.Axis) */
   var axis: js.UndefOr[IAxis] = js.undefined
   /** [Method] Calculates the position of tick marks for the axis
-  		* @param context Object
-  		* @returns *
-  		*/
+    * @param context Object
+    * @returns *
+    */
   var calculateLayout: js.UndefOr[js.Function1[/* context */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Calculates the position of major ticks for the axis
-  		* @param context Object
-  		*/
+    * @param context Object
+    */
   var calculateMajorTicks: js.UndefOr[js.Function1[/* context */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Calculates the position of sub ticks for the axis
-  		* @param context Object
-  		*/
+    * @param context Object
+    */
   var calculateMinorTicks: js.UndefOr[js.Function1[/* context */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Returns the value of axis
-  		* @returns Ext.chart.axis.Axis
-  		*/
+    * @returns Ext.chart.axis.Axis
+    */
   var getAxis: js.UndefOr[js.Function0[IAxis]] = js.undefined
   /** [Method] Processes the data of the series bound to the axis
-  		* @param series Ext.chart.series.Series The bound series.
-  		*/
+    * @param series Ext.chart.series.Series The bound series.
+    */
   var processData: js.UndefOr[js.Function1[/* series */ js.UndefOr[ISeries], Unit]] = js.undefined
   /** [Method] Sets the value of axis
-  		* @param axis Ext.chart.axis.Axis The new value.
-  		*/
+    * @param axis Ext.chart.axis.Axis The new value.
+    */
   var setAxis: js.UndefOr[js.Function1[/* axis */ js.UndefOr[IAxis], Unit]] = js.undefined
   /** [Method] Snaps the data bound to the axis to meaningful tick marks
-  		* @param context Object
-  		* @param min Number
-  		* @param max Number
-  		* @param estStepSize Number
-  		*/
+    * @param context Object
+    * @param min Number
+    * @param max Number
+    * @param estStepSize Number
+    */
   var snapEnds: js.UndefOr[
     js.Function4[
       /* context */ js.UndefOr[js.Any], 
@@ -53,11 +53,11 @@ trait ILayout extends IBase {
     ]
   ] = js.undefined
   /** [Method] Trims the layout of the axis by the defined minimum and maximum
-  		* @param context Object
-  		* @param out Object
-  		* @param trimMin Number
-  		* @param trimMax Number
-  		*/
+    * @param context Object
+    * @param out Object
+    * @param trimMin Number
+    * @param trimMax Number
+    */
   var trimByRange: js.UndefOr[
     js.Function4[
       /* context */ js.UndefOr[js.Any], 
@@ -121,7 +121,7 @@ object ILayout {
     if (processData != null) __obj.updateDynamic("processData")(js.Any.fromFunction1(processData))
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setAxis != null) __obj.updateDynamic("setAxis")(js.Any.fromFunction1(setAxis))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (snapEnds != null) __obj.updateDynamic("snapEnds")(js.Any.fromFunction4(snapEnds))
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (trimByRange != null) __obj.updateDynamic("trimByRange")(js.Any.fromFunction4(trimByRange))

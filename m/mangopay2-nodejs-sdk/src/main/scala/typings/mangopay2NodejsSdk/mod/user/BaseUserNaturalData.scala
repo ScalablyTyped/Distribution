@@ -28,7 +28,7 @@ object BaseUserNaturalData {
   def apply(
     PersonType: NATURAL,
     Address: String | AddressData = null,
-    Birthday: Int | Double = null,
+    Birthday: js.UndefOr[Timestamp] = js.undefined,
     CountryOfResidence: CountryISO = null,
     Email: String = null,
     FirstName: String = null,
@@ -40,7 +40,7 @@ object BaseUserNaturalData {
   ): BaseUserNaturalData = {
     val __obj = js.Dynamic.literal(PersonType = PersonType.asInstanceOf[js.Any])
     if (Address != null) __obj.updateDynamic("Address")(Address.asInstanceOf[js.Any])
-    if (Birthday != null) __obj.updateDynamic("Birthday")(Birthday.asInstanceOf[js.Any])
+    if (!js.isUndefined(Birthday)) __obj.updateDynamic("Birthday")(Birthday.get.asInstanceOf[js.Any])
     if (CountryOfResidence != null) __obj.updateDynamic("CountryOfResidence")(CountryOfResidence.asInstanceOf[js.Any])
     if (Email != null) __obj.updateDynamic("Email")(Email.asInstanceOf[js.Any])
     if (FirstName != null) __obj.updateDynamic("FirstName")(FirstName.asInstanceOf[js.Any])

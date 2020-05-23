@@ -1,7 +1,7 @@
 package typings.reactIntl.providerMod
 
-import typings.reactIntl.PartialState
-import typings.reactIntl.PickIntlConfigformatsmess
+import typings.reactIntl.anon.PartialState
+import typings.reactIntl.anon.PickIntlConfigformatsmess
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

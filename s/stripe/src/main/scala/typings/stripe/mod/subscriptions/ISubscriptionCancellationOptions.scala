@@ -32,11 +32,11 @@ object ISubscriptionCancellationOptions {
     prorate: js.UndefOr[Boolean] = js.undefined
   ): ISubscriptionCancellationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(at_period_end)) __obj.updateDynamic("at_period_end")(at_period_end.asInstanceOf[js.Any])
+    if (!js.isUndefined(at_period_end)) __obj.updateDynamic("at_period_end")(at_period_end.get.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (!js.isUndefined(invoice_now)) __obj.updateDynamic("invoice_now")(invoice_now.asInstanceOf[js.Any])
-    if (!js.isUndefined(prorate)) __obj.updateDynamic("prorate")(prorate.asInstanceOf[js.Any])
+    if (!js.isUndefined(invoice_now)) __obj.updateDynamic("invoice_now")(invoice_now.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(prorate)) __obj.updateDynamic("prorate")(prorate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISubscriptionCancellationOptions]
   }
 }

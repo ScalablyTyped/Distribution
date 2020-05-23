@@ -4,9 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.Weather")
-@js.native
-class Weather () extends js.Object {
+trait Weather extends js.Object {
   /**
     * 查询四天预报天气，包括查询当天天气信息
     * @param district 支持城市名称/区域编码（如：“杭州市”/“330100”）
@@ -15,7 +13,7 @@ class Weather () extends js.Object {
   def getForecast(
     district: String,
     callback: js.Function2[/* errorStatus */ js.Any, /* result */ WeatherForecastResult, Unit]
-  ): Unit = js.native
+  ): Unit
   /**
     * 查询实时天气信息
     * @param district 支持城市名称/区域编码（如：“杭州市”/“330100”）
@@ -24,6 +22,17 @@ class Weather () extends js.Object {
   def getLive(
     district: String,
     callback: js.Function2[/* errorStatus */ js.Any, /* result */ WeatherLiveResult, Unit]
-  ): Unit = js.native
+  ): Unit
+}
+
+object Weather {
+  @scala.inline
+  def apply(
+    getForecast: (String, js.Function2[/* errorStatus */ js.Any, /* result */ WeatherForecastResult, Unit]) => Unit,
+    getLive: (String, js.Function2[/* errorStatus */ js.Any, /* result */ WeatherLiveResult, Unit]) => Unit
+  ): Weather = {
+    val __obj = js.Dynamic.literal(getForecast = js.Any.fromFunction2(getForecast), getLive = js.Any.fromFunction2(getLive))
+    __obj.asInstanceOf[Weather]
+  }
 }
 

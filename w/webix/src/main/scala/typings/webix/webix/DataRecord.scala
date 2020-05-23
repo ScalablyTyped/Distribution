@@ -1,7 +1,6 @@
 package typings.webix.webix
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,8 +34,4 @@ trait DataRecord extends js.Object {
   def unbind(): Unit = js.native
   def unblockEvent(): Unit = js.native
 }
-
-@JSGlobal("webix.DataRecord")
-@js.native
-object DataRecord extends TopLevel[DataRecordFactory]
 

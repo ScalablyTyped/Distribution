@@ -12,9 +12,9 @@ trait GetFileIconOptions extends js.Object {
 
 object GetFileIconOptions {
   @scala.inline
-  def apply(size: Int | Double = null): GetFileIconOptions = {
+  def apply(size: js.UndefOr[Double] = js.undefined): GetFileIconOptions = {
     val __obj = js.Dynamic.literal()
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFileIconOptions]
   }
 }

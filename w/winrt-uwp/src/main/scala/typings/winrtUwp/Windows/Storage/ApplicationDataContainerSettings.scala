@@ -14,9 +14,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides access to the settings in a settings container. The ApplicationDataContainer.Values property returns an object that can be cast to this type. */
-@JSGlobal("Windows.Storage.ApplicationDataContainerSettings")
 @js.native
-abstract class ApplicationDataContainerSettings () extends js.Object {
+trait ApplicationDataContainerSettings extends js.Object {
   /** Occurs when the map changes. */
   @JSName("onmapchanged")
   var onmapchanged_Original: MapChangedEventHandler[String, _] = js.native

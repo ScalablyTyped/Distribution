@@ -21,10 +21,10 @@ object SetCookieOptions {
     secure: js.UndefOr[Boolean] = js.undefined
   ): SetCookieOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(http)) __obj.updateDynamic("http")(http.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreError)) __obj.updateDynamic("ignoreError")(ignoreError.asInstanceOf[js.Any])
+    if (!js.isUndefined(http)) __obj.updateDynamic("http")(http.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreError)) __obj.updateDynamic("ignoreError")(ignoreError.get.asInstanceOf[js.Any])
     if (now != null) __obj.updateDynamic("now")(now.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetCookieOptions]
   }
 }

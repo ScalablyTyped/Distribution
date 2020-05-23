@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("InfoPath.XDocumentsCollection")
 @js.native
-class XDocumentsCollection protected () extends js.Object {
+trait XDocumentsCollection extends js.Object {
   val Count: Double = js.native
   @JSName("InfoPath.XDocumentsCollection_typekey")
   var InfoPathDotXDocumentsCollection_typekey: XDocumentsCollection = js.native

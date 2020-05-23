@@ -20,7 +20,7 @@ object FieldSetProps {
   def apply[V](
     choices: js.Array[_] = null,
     dangerousRawHTMLLabels: js.UndefOr[Boolean] = js.undefined,
-    elementRef: Ref[_] = null,
+    elementRef: js.UndefOr[Null | Ref[_]] = js.undefined,
     isChecked: js.UndefOr[Boolean] = js.undefined,
     onChange: () => Unit = null,
     `type`: String = null,
@@ -28,9 +28,9 @@ object FieldSetProps {
   ): FieldSetProps[V] = {
     val __obj = js.Dynamic.literal()
     if (choices != null) __obj.updateDynamic("choices")(choices.asInstanceOf[js.Any])
-    if (!js.isUndefined(dangerousRawHTMLLabels)) __obj.updateDynamic("dangerousRawHTMLLabels")(dangerousRawHTMLLabels.asInstanceOf[js.Any])
-    if (elementRef != null) __obj.updateDynamic("elementRef")(elementRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(isChecked)) __obj.updateDynamic("isChecked")(isChecked.asInstanceOf[js.Any])
+    if (!js.isUndefined(dangerousRawHTMLLabels)) __obj.updateDynamic("dangerousRawHTMLLabels")(dangerousRawHTMLLabels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(elementRef)) __obj.updateDynamic("elementRef")(elementRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(isChecked)) __obj.updateDynamic("isChecked")(isChecked.get.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction0(onChange))
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

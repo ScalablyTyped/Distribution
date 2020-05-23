@@ -13,12 +13,10 @@ trait PersistenceTransactionMode extends js.Object
 
 object PersistenceTransactionMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def readonly: typings.firebaseFirestore.firebaseFirestoreStrings.readonly = "readonly".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.readonly]
   @scala.inline
-  def readonly: typings.firebaseFirestore.firebaseFirestoreStrings.readonly = this.cast("readonly")
+  def readwrite: typings.firebaseFirestore.firebaseFirestoreStrings.readwrite = "readwrite".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.readwrite]
   @scala.inline
-  def readwrite: typings.firebaseFirestore.firebaseFirestoreStrings.readwrite = this.cast("readwrite")
-  @scala.inline
-  def `readwrite-primary`: typings.firebaseFirestore.firebaseFirestoreStrings.`readwrite-primary` = this.cast("readwrite-primary")
+  def `readwrite-primary`: typings.firebaseFirestore.firebaseFirestoreStrings.`readwrite-primary` = "readwrite-primary".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.`readwrite-primary`]
 }
 

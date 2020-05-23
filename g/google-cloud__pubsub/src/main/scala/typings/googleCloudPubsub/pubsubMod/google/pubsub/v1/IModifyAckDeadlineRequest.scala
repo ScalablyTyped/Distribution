@@ -17,14 +17,14 @@ trait IModifyAckDeadlineRequest extends js.Object {
 object IModifyAckDeadlineRequest {
   @scala.inline
   def apply(
-    ackDeadlineSeconds: Int | Double = null,
-    ackIds: js.Array[String] = null,
-    subscription: String = null
+    ackDeadlineSeconds: js.UndefOr[Null | Double] = js.undefined,
+    ackIds: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    subscription: js.UndefOr[Null | String] = js.undefined
   ): IModifyAckDeadlineRequest = {
     val __obj = js.Dynamic.literal()
-    if (ackDeadlineSeconds != null) __obj.updateDynamic("ackDeadlineSeconds")(ackDeadlineSeconds.asInstanceOf[js.Any])
-    if (ackIds != null) __obj.updateDynamic("ackIds")(ackIds.asInstanceOf[js.Any])
-    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
+    if (!js.isUndefined(ackDeadlineSeconds)) __obj.updateDynamic("ackDeadlineSeconds")(ackDeadlineSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(ackIds)) __obj.updateDynamic("ackIds")(ackIds.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscription)) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModifyAckDeadlineRequest]
   }
 }

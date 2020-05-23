@@ -1,18 +1,14 @@
 package typings.typescriptServices.TypeScript
 
-import typings.typescriptServices.AnonEnclosingTypeWalkerState1
-import typings.typescriptServices.AnonIndexSigs1
-import typings.typescriptServices.AnonStateWhenStartedWalkingTypes1
+import typings.typescriptServices.anon.EnclosingTypeWalkerState1
+import typings.typescriptServices.anon.IndexSigs1
+import typings.typescriptServices.anon.StateWhenStartedWalkingTypes1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.PullTypeResolutionContext")
 @js.native
-class PullTypeResolutionContext protected () extends js.Object {
-  def this(resolver: PullTypeResolver) = this()
-  def this(resolver: PullTypeResolver, inTypeCheck: Boolean) = this()
-  def this(resolver: PullTypeResolver, inTypeCheck: Boolean, fileName: String) = this()
+trait PullTypeResolutionContext extends js.Object {
   var contextStack: js.Any = js.native
   var enclosingTypeWalker1: js.Any = js.native
   var enclosingTypeWalker2: js.Any = js.native
@@ -24,10 +20,10 @@ class PullTypeResolutionContext protected () extends js.Object {
   /* private */ def _pushAnyContextualType(`type`: js.Any, provisional: js.Any, isInferentiallyTyping: js.Any, argContext: js.Any): js.Any = js.native
   def canTypeCheckAST(ast: AST): Boolean = js.native
   def doneBaseTypeResolution(wasInBaseTypeResolution: Boolean): Unit = js.native
-  def endWalkingTypes(statesWhenStartedWalkingTypes: AnonStateWhenStartedWalkingTypes1): Unit = js.native
+  def endWalkingTypes(statesWhenStartedWalkingTypes: StateWhenStartedWalkingTypes1): Unit = js.native
   def fixAllTypeParametersReferencedByType(`type`: PullTypeSymbol, resolver: PullTypeResolver): PullTypeSymbol = js.native
   def fixAllTypeParametersReferencedByType(`type`: PullTypeSymbol, resolver: PullTypeResolver, argContext: TypeArgumentInferenceContext): PullTypeSymbol = js.native
-  def getBothKindOfIndexSignatures(includeAugmentedType1: Boolean, includeAugmentedType2: Boolean): AnonIndexSigs1 = js.native
+  def getBothKindOfIndexSignatures(includeAugmentedType1: Boolean, includeAugmentedType2: Boolean): IndexSigs1 = js.native
   def getContextualType(): PullTypeSymbol = js.native
   /* private */ def getCurrentTypeArgumentInferenceContext(): js.Any = js.native
   def getSymbolForAST(ast: AST): PullSymbol = js.native
@@ -50,19 +46,19 @@ class PullTypeResolutionContext protected () extends js.Object {
   def pushInferentialType(`type`: PullTypeSymbol, typeArgumentInferenceContext: TypeArgumentInferenceContext): Unit = js.native
   def pushNewContextualType(`type`: PullTypeSymbol): Unit = js.native
   def pushProvisionalType(`type`: PullTypeSymbol): Unit = js.native
-  def resetEnclosingTypeWalkerStates(): AnonEnclosingTypeWalkerState1 = js.native
-  def setEnclosingTypeForSymbols(symbol1: PullSymbol, symbol2: PullSymbol): AnonEnclosingTypeWalkerState1 = js.native
-  def setEnclosingTypeWalkerStates(enclosingTypeWalkerStates: AnonEnclosingTypeWalkerState1): Unit = js.native
+  def resetEnclosingTypeWalkerStates(): EnclosingTypeWalkerState1 = js.native
+  def setEnclosingTypeForSymbols(symbol1: PullSymbol, symbol2: PullSymbol): EnclosingTypeWalkerState1 = js.native
+  def setEnclosingTypeWalkerStates(enclosingTypeWalkerStates: EnclosingTypeWalkerState1): Unit = js.native
   def setSymbolForAST(ast: AST, symbol: PullSymbol): Unit = js.native
   def setTypeChecked(ast: AST): Unit = js.native
   def setTypeInContext(symbol: PullSymbol, `type`: PullTypeSymbol): Unit = js.native
   def startBaseTypeResolution(): Boolean = js.native
-  def startWalkingTypes(symbol1: PullTypeSymbol, symbol2: PullTypeSymbol): AnonStateWhenStartedWalkingTypes1 = js.native
+  def startWalkingTypes(symbol1: PullTypeSymbol, symbol2: PullTypeSymbol): StateWhenStartedWalkingTypes1 = js.native
   def swapEnclosingTypeWalkers(): Unit = js.native
   def typeCheck(): Boolean = js.native
-  def walkIndexSignatureReturnTypes(indexSigs: AnonIndexSigs1, useStringIndexSignature1: Boolean, useStringIndexSignature2: Boolean): Unit = js.native
+  def walkIndexSignatureReturnTypes(indexSigs: IndexSigs1, useStringIndexSignature1: Boolean, useStringIndexSignature2: Boolean): Unit = js.native
   def walkIndexSignatureReturnTypes(
-    indexSigs: AnonIndexSigs1,
+    indexSigs: IndexSigs1,
     useStringIndexSignature1: Boolean,
     useStringIndexSignature2: Boolean,
     onlySignature: Boolean

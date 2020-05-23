@@ -42,7 +42,7 @@ object FetchOptions {
     `then`: /* result */ js.Any => Unit = null
   ): FetchOptions = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
-    if (!js.isUndefined(asArray)) __obj.updateDynamic("asArray")(asArray.asInstanceOf[js.Any])
+    if (!js.isUndefined(asArray)) __obj.updateDynamic("asArray")(asArray.get.asInstanceOf[js.Any])
     if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction0(onFailure))
     if (queries != null) __obj.updateDynamic("queries")(queries.asInstanceOf[js.Any])
     if (`then` != null) __obj.updateDynamic("then")(js.Any.fromFunction1(`then`))

@@ -1,20 +1,20 @@
 package typings.primereact.gmapMod
 
-import typings.primereact.AnonMap
-import typings.std.Event_
+import typings.primereact.anon.Map
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GMapProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
-  var onMapClick: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
+  var onMapClick: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   var onMapDragEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onMapReady: js.UndefOr[js.Function1[/* map */ js.Any, Unit]] = js.undefined
-  var onOverlayClick: js.UndefOr[js.Function1[/* e */ AnonMap, Unit]] = js.undefined
-  var onOverlayDrag: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
-  var onOverlayDragEnd: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
-  var onOverlayDragStart: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
+  var onOverlayClick: js.UndefOr[js.Function1[/* e */ Map, Unit]] = js.undefined
+  var onOverlayDrag: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
+  var onOverlayDragEnd: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
+  var onOverlayDragStart: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   var onZoomChanged: js.UndefOr[js.Function0[Unit]] = js.undefined
   var options: js.UndefOr[js.Object] = js.undefined
   var overlays: js.UndefOr[js.Array[_]] = js.undefined
@@ -25,13 +25,13 @@ object GMapProps {
   @scala.inline
   def apply(
     className: String = null,
-    onMapClick: /* event */ Event_ => Unit = null,
+    onMapClick: /* event */ Event => Unit = null,
     onMapDragEnd: () => Unit = null,
     onMapReady: /* map */ js.Any => Unit = null,
-    onOverlayClick: /* e */ AnonMap => Unit = null,
-    onOverlayDrag: /* event */ Event_ => Unit = null,
-    onOverlayDragEnd: /* event */ Event_ => Unit = null,
-    onOverlayDragStart: /* event */ Event_ => Unit = null,
+    onOverlayClick: /* e */ Map => Unit = null,
+    onOverlayDrag: /* event */ Event => Unit = null,
+    onOverlayDragEnd: /* event */ Event => Unit = null,
+    onOverlayDragStart: /* event */ Event => Unit = null,
     onZoomChanged: () => Unit = null,
     options: js.Object = null,
     overlays: js.Array[_] = null,

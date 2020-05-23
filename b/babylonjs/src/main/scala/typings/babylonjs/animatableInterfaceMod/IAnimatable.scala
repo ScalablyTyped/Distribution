@@ -16,8 +16,7 @@ trait IAnimatable extends js.Object {
 object IAnimatable {
   @scala.inline
   def apply(animations: Nullable[js.Array[Animation]] = null): IAnimatable = {
-    val __obj = js.Dynamic.literal()
-    if (animations != null) __obj.updateDynamic("animations")(animations.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(animations = animations.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAnimatable]
   }
 }

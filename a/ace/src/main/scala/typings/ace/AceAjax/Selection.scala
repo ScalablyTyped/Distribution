@@ -1,6 +1,5 @@
 package typings.ace.AceAjax
 
-import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -206,13 +205,4 @@ trait Selection extends js.Object {
     **/
   def shiftSelection(columns: Double): Unit = js.native
 }
-
-@JSGlobal("AceAjax.Selection")
-@js.native
-object Selection
-  extends /**
-  * Creates a new `Selection` object.
-  * @param session The session to use
-  **/
-Instantiable1[/* session */ IEditSession, Selection]
 

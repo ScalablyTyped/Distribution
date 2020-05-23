@@ -1,7 +1,9 @@
 package typings.rmcDialog
 
 import typings.react.mod.Component
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
+import typings.rmcDialog.anon.OnClose
+import typings.rmcDialog.anon.Visible
 import typings.rmcDialog.idialogproptypesMod.IDialogPropTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,7 +29,7 @@ object mod extends js.Object {
     def renderDialog(visible: js.Any): Unit = js.native
     def saveRef(node: js.Any): Unit = js.native
     @JSName("shouldComponentUpdate")
-    def shouldComponentUpdate_MDialogWrap(hasVisible: AnonVisible): Boolean = js.native
+    def shouldComponentUpdate_MDialogWrap(hasVisible: Visible): Boolean = js.native
   }
   
   @js.native
@@ -36,7 +38,7 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonOnClose = js.native
+    var defaultProps: OnClose = js.native
   }
   
 }

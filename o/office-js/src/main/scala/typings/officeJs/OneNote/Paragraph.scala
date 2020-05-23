@@ -1,12 +1,12 @@
 package typings.officeJs.OneNote
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.ClientResult
 import typings.officeJs.OfficeExtension.UpdateOptions
 import typings.officeJs.OneNote.Interfaces.ParagraphData
 import typings.officeJs.OneNote.Interfaces.ParagraphLoadOptions
 import typings.officeJs.OneNote.Interfaces.ParagraphUpdateData
+import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.Address
 import typings.officeJs.officeJsStrings.After
 import typings.officeJs.officeJsStrings.Before
@@ -39,9 +39,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: OneNoteApi 1.1]
   */
-@JSGlobal("OneNote.Paragraph")
 @js.native
-class Paragraph () extends ClientObject {
+trait Paragraph extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Paragraph: RequestContext = js.native
@@ -318,8 +317,8 @@ class Paragraph () extends ClientObject {
   def load(): Paragraph = js.native
   def load(option: String): Paragraph = js.native
   def load(option: js.Array[String]): Paragraph = js.native
-  def load(option: AnonExpand): Paragraph = js.native
   def load(option: ParagraphLoadOptions): Paragraph = js.native
+  def load(option: Expand): Paragraph = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *
     * @remarks

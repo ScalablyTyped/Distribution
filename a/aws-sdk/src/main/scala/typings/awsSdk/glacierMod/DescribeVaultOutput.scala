@@ -37,16 +37,16 @@ object DescribeVaultOutput {
   def apply(
     CreationDate: String = null,
     LastInventoryDate: String = null,
-    NumberOfArchives: Int | Double = null,
-    SizeInBytes: Int | Double = null,
+    NumberOfArchives: js.UndefOr[long] = js.undefined,
+    SizeInBytes: js.UndefOr[long] = js.undefined,
     VaultARN: String = null,
     VaultName: String = null
   ): DescribeVaultOutput = {
     val __obj = js.Dynamic.literal()
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
     if (LastInventoryDate != null) __obj.updateDynamic("LastInventoryDate")(LastInventoryDate.asInstanceOf[js.Any])
-    if (NumberOfArchives != null) __obj.updateDynamic("NumberOfArchives")(NumberOfArchives.asInstanceOf[js.Any])
-    if (SizeInBytes != null) __obj.updateDynamic("SizeInBytes")(SizeInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfArchives)) __obj.updateDynamic("NumberOfArchives")(NumberOfArchives.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SizeInBytes)) __obj.updateDynamic("SizeInBytes")(SizeInBytes.get.asInstanceOf[js.Any])
     if (VaultARN != null) __obj.updateDynamic("VaultARN")(VaultARN.asInstanceOf[js.Any])
     if (VaultName != null) __obj.updateDynamic("VaultName")(VaultName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeVaultOutput]

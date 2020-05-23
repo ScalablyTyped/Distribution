@@ -98,7 +98,7 @@ object ClassBreaksRendererProperties {
     field: String = null,
     legendOptions: ClassBreaksRendererLegendOptions = null,
     normalizationField: String = null,
-    normalizationTotal: Int | Double = null,
+    normalizationTotal: js.UndefOr[Double] = js.undefined,
     normalizationType: field | log | `percent-of-total` = null,
     valueExpression: String = null,
     valueExpressionTitle: String = null,
@@ -113,7 +113,7 @@ object ClassBreaksRendererProperties {
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions.asInstanceOf[js.Any])
     if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField.asInstanceOf[js.Any])
-    if (normalizationTotal != null) __obj.updateDynamic("normalizationTotal")(normalizationTotal.asInstanceOf[js.Any])
+    if (!js.isUndefined(normalizationTotal)) __obj.updateDynamic("normalizationTotal")(normalizationTotal.get.asInstanceOf[js.Any])
     if (normalizationType != null) __obj.updateDynamic("normalizationType")(normalizationType.asInstanceOf[js.Any])
     if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression.asInstanceOf[js.Any])
     if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 
 # Scala.js typings for menubar
 
-Typings are for version 8.0.1
+Typings are for version 8.0.2
 
 ## Library description:
 high level way to create menubar desktop applications with electron

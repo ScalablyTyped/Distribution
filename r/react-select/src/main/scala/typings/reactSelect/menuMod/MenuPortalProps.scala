@@ -31,10 +31,10 @@ trait MenuPortalProps[OptionType /* <: OptionTypeBase */] extends js.Object {
   def clearValue(): Unit = js.native
   def cx(): String | Unit = js.native
   def cx(a: String): String | Unit = js.native
-  def cx(a: String, b: js.UndefOr[ClassNamesState], c: String): String | Unit = js.native
   def cx(a: String, b: ClassNamesState): String | Unit = js.native
-  def cx(a: Null, b: js.UndefOr[ClassNamesState], c: String): String | Unit = js.native
+  def cx(a: String, b: ClassNamesState, c: String): String | Unit = js.native
   def cx(a: Null, b: ClassNamesState): String | Unit = js.native
+  def cx(a: Null, b: ClassNamesState, c: String): String | Unit = js.native
   /*
     Get the styles of a particular part of the select. Pass in the name of the
     property as the first argument, and the current props as the second argument.

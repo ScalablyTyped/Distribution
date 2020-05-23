@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MatterJS.BodyFactory")
 @js.native
-class BodyFactory () extends js.Object {
+trait BodyFactory extends js.Object {
   /**
     * Applies a force to a body from a given world-space position, including resulting torque.
     * @method applyForce

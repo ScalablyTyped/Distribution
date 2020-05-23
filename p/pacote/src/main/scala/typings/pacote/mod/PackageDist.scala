@@ -43,18 +43,18 @@ object PackageDist {
   @scala.inline
   def apply(
     tarball: String,
-    fileCount: Int | Double = null,
+    fileCount: js.UndefOr[Double] = js.undefined,
     integrity: String = null,
     `npm-signature`: String = null,
     shasum: String = null,
-    unpackedSize: Int | Double = null
+    unpackedSize: js.UndefOr[Double] = js.undefined
   ): PackageDist = {
     val __obj = js.Dynamic.literal(tarball = tarball.asInstanceOf[js.Any])
-    if (fileCount != null) __obj.updateDynamic("fileCount")(fileCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(fileCount)) __obj.updateDynamic("fileCount")(fileCount.get.asInstanceOf[js.Any])
     if (integrity != null) __obj.updateDynamic("integrity")(integrity.asInstanceOf[js.Any])
     if (`npm-signature` != null) __obj.updateDynamic("npm-signature")(`npm-signature`.asInstanceOf[js.Any])
     if (shasum != null) __obj.updateDynamic("shasum")(shasum.asInstanceOf[js.Any])
-    if (unpackedSize != null) __obj.updateDynamic("unpackedSize")(unpackedSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(unpackedSize)) __obj.updateDynamic("unpackedSize")(unpackedSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PackageDist]
   }
 }

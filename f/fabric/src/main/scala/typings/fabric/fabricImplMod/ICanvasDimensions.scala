@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 //////////////////////////////////////////////////////////////////////////////
 trait ICanvasDimensions extends js.Object {
   /**
-  	 * Height of canvas element
-  	 */
+    * Height of canvas element
+    */
   var height: Double | String
   /**
-  	 * Width of canvas element
-  	 */
+    * Width of canvas element
+    */
   var width: Double | String
 }
 

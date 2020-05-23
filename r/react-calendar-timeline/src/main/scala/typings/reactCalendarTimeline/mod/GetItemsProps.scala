@@ -9,7 +9,7 @@ import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
 import typings.std.Element
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +30,7 @@ object GetItemsProps {
   @scala.inline
   def apply(
     className: String = null,
-    onContextMenu: SyntheticEvent[Element, Event_] => scala.Unit = null,
+    onContextMenu: SyntheticEvent[Element, Event] => scala.Unit = null,
     onDoubleClick: MouseEvent[Element, NativeMouseEvent] => scala.Unit = null,
     onMouseDown: MouseEvent[Element, NativeMouseEvent] => scala.Unit = null,
     onMouseUp: MouseEvent[Element, NativeMouseEvent] => scala.Unit = null,

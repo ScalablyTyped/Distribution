@@ -1,6 +1,6 @@
 package typings.firebaseAdmin.admin.auth
 
-import typings.firebaseAdmin.AnonAlgorithm
+import typings.firebaseAdmin.anon.Algorithm
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,12 +14,12 @@ trait UserImportOptions extends js.Object {
   /**
     * The password hashing information.
     */
-  var hash: AnonAlgorithm
+  var hash: Algorithm
 }
 
 object UserImportOptions {
   @scala.inline
-  def apply(hash: AnonAlgorithm): UserImportOptions = {
+  def apply(hash: Algorithm): UserImportOptions = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserImportOptions]
   }

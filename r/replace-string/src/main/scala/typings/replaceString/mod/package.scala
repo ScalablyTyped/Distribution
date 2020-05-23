@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object mod {
   type ReplacementFunction = js.Function4[
-    /* needle */ java.lang.String, 
+    /* matchedSubstring */ java.lang.String, 
     /* matchCount */ scala.Double, 
     /* input */ java.lang.String, 
     /* matchIndex */ scala.Double, 

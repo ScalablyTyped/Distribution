@@ -14,7 +14,7 @@ object Options {
   @scala.inline
   def apply(path: String, omitPermissive: js.UndefOr[Boolean] = js.undefined, overrides: LicenseLookup = null): Options = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (!js.isUndefined(omitPermissive)) __obj.updateDynamic("omitPermissive")(omitPermissive.asInstanceOf[js.Any])
+    if (!js.isUndefined(omitPermissive)) __obj.updateDynamic("omitPermissive")(omitPermissive.get.asInstanceOf[js.Any])
     if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

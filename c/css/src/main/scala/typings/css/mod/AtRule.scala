@@ -1,6 +1,6 @@
 package typings.css.mod
 
-import typings.css.AnonContent
+import typings.css.anon.Content
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +24,7 @@ object AtRule {
   @scala.inline
   def Supports(
     parent: Node = null,
-    position: AnonContent = null,
+    position: Content = null,
     rules: js.Array[Rule | Comment | AtRule] = null,
     supports: String = null,
     `type`: String = null
@@ -38,7 +38,7 @@ object AtRule {
     __obj.asInstanceOf[AtRule]
   }
   @scala.inline
-  def Namespace(namespace: String = null, parent: Node = null, position: AnonContent = null, `type`: String = null): AtRule = {
+  def Namespace(namespace: String = null, parent: Node = null, position: Content = null, `type`: String = null): AtRule = {
     val __obj = js.Dynamic.literal()
     if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
@@ -50,7 +50,7 @@ object AtRule {
   def FontFace(
     declarations: js.Array[Declaration | Comment] = null,
     parent: Node = null,
-    position: AnonContent = null,
+    position: Content = null,
     `type`: String = null
   ): AtRule = {
     val __obj = js.Dynamic.literal()
@@ -65,7 +65,7 @@ object AtRule {
     keyframes: js.Array[KeyFrame | Comment] = null,
     name: String = null,
     parent: Node = null,
-    position: AnonContent = null,
+    position: Content = null,
     `type`: String = null,
     vendor: String = null
   ): AtRule = {
@@ -83,7 +83,7 @@ object AtRule {
     media: String = null,
     name: String = null,
     parent: Node = null,
-    position: AnonContent = null,
+    position: Content = null,
     `type`: String = null
   ): AtRule = {
     val __obj = js.Dynamic.literal()
@@ -98,7 +98,7 @@ object AtRule {
   def Page(
     declarations: js.Array[Declaration | Comment] = null,
     parent: Node = null,
-    position: AnonContent = null,
+    position: Content = null,
     selectors: js.Array[String] = null,
     `type`: String = null
   ): AtRule = {
@@ -114,7 +114,7 @@ object AtRule {
   def Document(
     document: String = null,
     parent: Node = null,
-    position: AnonContent = null,
+    position: Content = null,
     rules: js.Array[Rule | Comment | AtRule] = null,
     `type`: String = null,
     vendor: String = null
@@ -129,7 +129,7 @@ object AtRule {
     __obj.asInstanceOf[AtRule]
   }
   @scala.inline
-  def Import(`import`: String = null, parent: Node = null, position: AnonContent = null, `type`: String = null): AtRule = {
+  def Import(`import`: String = null, parent: Node = null, position: Content = null, `type`: String = null): AtRule = {
     val __obj = js.Dynamic.literal()
     if (`import` != null) __obj.updateDynamic("import")(`import`.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
@@ -140,7 +140,7 @@ object AtRule {
   @scala.inline
   def Host(
     parent: Node = null,
-    position: AnonContent = null,
+    position: Content = null,
     rules: js.Array[Rule | Comment | AtRule] = null,
     `type`: String = null
   ): AtRule = {
@@ -155,7 +155,7 @@ object AtRule {
   def Media(
     media: String = null,
     parent: Node = null,
-    position: AnonContent = null,
+    position: Content = null,
     rules: js.Array[Rule | Comment | AtRule] = null,
     `type`: String = null
   ): AtRule = {
@@ -168,7 +168,7 @@ object AtRule {
     __obj.asInstanceOf[AtRule]
   }
   @scala.inline
-  def Charset(charset: String = null, parent: Node = null, position: AnonContent = null, `type`: String = null): AtRule = {
+  def Charset(charset: String = null, parent: Node = null, position: Content = null, `type`: String = null): AtRule = {
     val __obj = js.Dynamic.literal()
     if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])

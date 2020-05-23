@@ -65,19 +65,19 @@ object KeywordDefinition {
     validate: SchemaValidateFunction | ValidateFunction = null
   ): KeywordDefinition = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($data)) __obj.updateDynamic("$data")($data.asInstanceOf[js.Any])
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (!js.isUndefined($data)) __obj.updateDynamic("$data")($data.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
     if (compile != null) __obj.updateDynamic("compile")(js.Any.fromFunction3(compile))
     if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
     if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     if (`inline` != null) __obj.updateDynamic("inline")(js.Any.fromFunction4(`inline`))
     if (`macro` != null) __obj.updateDynamic("macro")(js.Any.fromFunction3(`macro`))
     if (metaSchema != null) __obj.updateDynamic("metaSchema")(metaSchema.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifying)) __obj.updateDynamic("modifying")(modifying.asInstanceOf[js.Any])
-    if (!js.isUndefined(schema)) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
-    if (!js.isUndefined(statements)) __obj.updateDynamic("statements")(statements.asInstanceOf[js.Any])
+    if (!js.isUndefined(modifying)) __obj.updateDynamic("modifying")(modifying.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(schema)) __obj.updateDynamic("schema")(schema.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(statements)) __obj.updateDynamic("statements")(statements.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
+    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid.get.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeywordDefinition]
   }

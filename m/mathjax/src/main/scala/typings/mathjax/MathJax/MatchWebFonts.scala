@@ -16,13 +16,13 @@ trait MatchWebFonts extends js.Object {
 object MatchWebFonts {
   @scala.inline
   def apply(
-    fontCheckDelay: Int | Double = null,
-    fontCheckTimeout: Int | Double = null,
+    fontCheckDelay: js.UndefOr[Double] = js.undefined,
+    fontCheckTimeout: js.UndefOr[Double] = js.undefined,
     matchFor: MatchFor = null
   ): MatchWebFonts = {
     val __obj = js.Dynamic.literal()
-    if (fontCheckDelay != null) __obj.updateDynamic("fontCheckDelay")(fontCheckDelay.asInstanceOf[js.Any])
-    if (fontCheckTimeout != null) __obj.updateDynamic("fontCheckTimeout")(fontCheckTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontCheckDelay)) __obj.updateDynamic("fontCheckDelay")(fontCheckDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontCheckTimeout)) __obj.updateDynamic("fontCheckTimeout")(fontCheckTimeout.get.asInstanceOf[js.Any])
     if (matchFor != null) __obj.updateDynamic("matchFor")(matchFor.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchWebFonts]
   }

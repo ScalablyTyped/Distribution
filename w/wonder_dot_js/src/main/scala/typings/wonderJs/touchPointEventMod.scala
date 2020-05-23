@@ -1,5 +1,6 @@
 package typings.wonderJs
 
+import typings.wonderJs.anon.X
 import typings.wonderJs.eventNameHandlerMod.EEventName
 import typings.wonderJs.pointEventMod.PointEvent
 import typings.wonderJs.touchEventMod.TouchEvent
@@ -17,7 +18,7 @@ object touchPointEventMod extends js.Object {
     @JSName("eventObj")
     var eventObj_TouchPointEvent: TouchEvent = js.native
     @JSName("movementDelta")
-    val movementDelta_TouchPointEvent: AnonX = js.native
+    val movementDelta_TouchPointEvent: X = js.native
   }
   
   /* static members */

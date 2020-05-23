@@ -1,0 +1,22 @@
+package typings.graphqlConfig.anon
+
+import typings.graphql.introspectionQueryMod.IntrospectionSchema
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Inlined graphql.graphql.IntrospectionQuery & {  errors  :undefined,   data  :undefined} */
+trait IntrospectionQueryerrorsu extends js.Object {
+  val __schema: IntrospectionSchema
+  var data: js.UndefOr[scala.Nothing] = js.undefined
+  var errors: js.UndefOr[scala.Nothing] = js.undefined
+}
+
+object IntrospectionQueryerrorsu {
+  @scala.inline
+  def apply(__schema: IntrospectionSchema): IntrospectionQueryerrorsu = {
+    val __obj = js.Dynamic.literal(__schema = __schema.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IntrospectionQueryerrorsu]
+  }
+}
+

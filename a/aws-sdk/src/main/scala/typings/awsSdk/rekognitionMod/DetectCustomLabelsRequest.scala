@@ -26,12 +26,12 @@ object DetectCustomLabelsRequest {
   def apply(
     Image: Image,
     ProjectVersionArn: ProjectVersionArn,
-    MaxResults: Int | Double = null,
-    MinConfidence: Int | Double = null
+    MaxResults: js.UndefOr[UInteger] = js.undefined,
+    MinConfidence: js.UndefOr[Percent] = js.undefined
   ): DetectCustomLabelsRequest = {
     val __obj = js.Dynamic.literal(Image = Image.asInstanceOf[js.Any], ProjectVersionArn = ProjectVersionArn.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
-    if (MinConfidence != null) __obj.updateDynamic("MinConfidence")(MinConfidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinConfidence)) __obj.updateDynamic("MinConfidence")(MinConfidence.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectCustomLabelsRequest]
   }
 }

@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Scope {
-  type Definition = typings.eslint.mod.Scope.DefinitionType with typings.eslint.AnonName
+  type Definition = typings.eslint.mod.Scope.DefinitionType with typings.eslint.anon.Name
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CampaignLimits extends js.Object {
   /**
-    * The maximum number of messages that a campaign can send to a single endpoint during a 24-hour period. The maximum value is 100.
+    * The maximum number of messages that a campaign can send to a single endpoint during a 24-hour period. For an application, this value specifies the default limit for the number of messages that campaigns and journeys can send to a single endpoint during a 24-hour period. The maximum value is 100.
     */
   var Daily: js.UndefOr[integer] = js.native
   /**
@@ -15,11 +15,11 @@ trait CampaignLimits extends js.Object {
     */
   var MaximumDuration: js.UndefOr[integer] = js.native
   /**
-    * The maximum number of messages that a campaign can send each second. The minimum value is 50. The maximum value is 20,000.
+    * The maximum number of messages that a campaign can send each second. For an application, this value specifies the default limit for the number of messages that campaigns and journeys can send each second. The minimum value is 50. The maximum value is 20,000.
     */
   var MessagesPerSecond: js.UndefOr[integer] = js.native
   /**
-    * The maximum number of messages that a campaign can send to a single endpoint during the course of the campaign. The maximum value is 100.
+    * The maximum number of messages that a campaign can send to a single endpoint during the course of the campaign. If a campaign recurs, this setting applies to all runs of the campaign. The maximum value is 100.
     */
   var Total: js.UndefOr[integer] = js.native
 }
@@ -27,16 +27,16 @@ trait CampaignLimits extends js.Object {
 object CampaignLimits {
   @scala.inline
   def apply(
-    Daily: Int | Double = null,
-    MaximumDuration: Int | Double = null,
-    MessagesPerSecond: Int | Double = null,
-    Total: Int | Double = null
+    Daily: js.UndefOr[integer] = js.undefined,
+    MaximumDuration: js.UndefOr[integer] = js.undefined,
+    MessagesPerSecond: js.UndefOr[integer] = js.undefined,
+    Total: js.UndefOr[integer] = js.undefined
   ): CampaignLimits = {
     val __obj = js.Dynamic.literal()
-    if (Daily != null) __obj.updateDynamic("Daily")(Daily.asInstanceOf[js.Any])
-    if (MaximumDuration != null) __obj.updateDynamic("MaximumDuration")(MaximumDuration.asInstanceOf[js.Any])
-    if (MessagesPerSecond != null) __obj.updateDynamic("MessagesPerSecond")(MessagesPerSecond.asInstanceOf[js.Any])
-    if (Total != null) __obj.updateDynamic("Total")(Total.asInstanceOf[js.Any])
+    if (!js.isUndefined(Daily)) __obj.updateDynamic("Daily")(Daily.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaximumDuration)) __obj.updateDynamic("MaximumDuration")(MaximumDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MessagesPerSecond)) __obj.updateDynamic("MessagesPerSecond")(MessagesPerSecond.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Total)) __obj.updateDynamic("Total")(Total.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CampaignLimits]
   }
 }

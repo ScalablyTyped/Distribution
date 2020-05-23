@@ -6,54 +6,53 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * An action the user selects in response to an interactive notification.
-			 */
-@JSGlobal("Titanium.App.iOS.UserNotificationAction")
+  * An action the user selects in response to an interactive notification.
+  */
 @js.native
-class UserNotificationAction () extends Proxy {
+trait UserNotificationAction extends Proxy {
   /**
-  				 * Selects how to activate the application.
-  				 */
+    * Selects how to activate the application.
+    */
   var activationMode: Double = js.native
   /**
-  				 * Set to true if the action requires the device to be unlocked. On the Apple Watch actions never require authentication.
-  				 */
+    * Set to true if the action requires the device to be unlocked. On the Apple Watch actions never require authentication.
+    */
   var authenticationRequired: Boolean = js.native
   /**
-  				 * Custom behavior the user notification supports.
-  				 */
+    * Custom behavior the user notification supports.
+    */
   var behavior: Double = js.native
   /**
-  				 * Set to true if the action causes destructive behavior to the user's data or the application.
-  				 */
+    * Set to true if the action causes destructive behavior to the user's data or the application.
+    */
   var destructive: Boolean = js.native
   /**
-  				 * Identifier for this action. Used to identify the action the user pressed.
-  				 */
+    * Identifier for this action. Used to identify the action the user pressed.
+    */
   var identifier: String = js.native
   /**
-  				 * Title of the button displayed in the notification.
-  				 */
+    * Title of the button displayed in the notification.
+    */
   var title: String = js.native
   /**
-  				 * Gets the value of the <Titanium.App.iOS.UserNotificationAction.activationMode> property.
-  				 * @deprecated Access <Titanium.App.iOS.UserNotificationAction.activationMode> instead.
-  				 */
+    * Gets the value of the <Titanium.App.iOS.UserNotificationAction.activationMode> property.
+    * @deprecated Access <Titanium.App.iOS.UserNotificationAction.activationMode> instead.
+    */
   def getActivationMode(): Double = js.native
   /**
-  				 * Gets the value of the <Titanium.App.iOS.UserNotificationAction.behavior> property.
-  				 * @deprecated Access <Titanium.App.iOS.UserNotificationAction.behavior> instead.
-  				 */
+    * Gets the value of the <Titanium.App.iOS.UserNotificationAction.behavior> property.
+    * @deprecated Access <Titanium.App.iOS.UserNotificationAction.behavior> instead.
+    */
   def getBehavior(): Double = js.native
   /**
-  				 * Sets the value of the <Titanium.App.iOS.UserNotificationAction.activationMode> property.
-  				 * @deprecated Set the value using <Titanium.App.iOS.UserNotificationAction.activationMode> instead.
-  				 */
+    * Sets the value of the <Titanium.App.iOS.UserNotificationAction.activationMode> property.
+    * @deprecated Set the value using <Titanium.App.iOS.UserNotificationAction.activationMode> instead.
+    */
   def setActivationMode(activationMode: Double): Unit = js.native
   /**
-  				 * Sets the value of the <Titanium.App.iOS.UserNotificationAction.behavior> property.
-  				 * @deprecated Set the value using <Titanium.App.iOS.UserNotificationAction.behavior> instead.
-  				 */
+    * Sets the value of the <Titanium.App.iOS.UserNotificationAction.behavior> property.
+    * @deprecated Set the value using <Titanium.App.iOS.UserNotificationAction.behavior> instead.
+    */
   def setBehavior(behavior: Double): Unit = js.native
 }
 

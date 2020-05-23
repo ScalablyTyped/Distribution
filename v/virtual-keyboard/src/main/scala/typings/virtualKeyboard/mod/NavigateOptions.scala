@@ -22,8 +22,8 @@ object NavigateOptions {
     val __obj = js.Dynamic.literal()
     if (focusClass != null) __obj.updateDynamic("focusClass")(focusClass.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowLooping)) __obj.updateDynamic("rowLooping")(rowLooping.asInstanceOf[js.Any])
-    if (!js.isUndefined(toggleMode)) __obj.updateDynamic("toggleMode")(toggleMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowLooping)) __obj.updateDynamic("rowLooping")(rowLooping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(toggleMode)) __obj.updateDynamic("toggleMode")(toggleMode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigateOptions]
   }
 }

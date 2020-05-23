@@ -27,9 +27,9 @@ trait PlusMapsMap extends js.Object {
   /**
     * 向地图中添加覆盖物
     * 此方法用于向地图中添加覆盖物。
-    * 	支持各种从maps.Overlay对象继承的各种覆盖物对象；
-    * 	如果添加不支持的对象则直接返回false；
-    * 	同一覆盖物对象只能添加到地图中一次，已在地图中的覆盖物再次添加时则返回false。
+    *     支持各种从maps.Overlay对象继承的各种覆盖物对象；
+    *     如果添加不支持的对象则直接返回false；
+    *     同一覆盖物对象只能添加到地图中一次，已在地图中的覆盖物再次添加时则返回false。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
@@ -38,7 +38,7 @@ trait PlusMapsMap extends js.Object {
   /**
     * 静态方法，计算面积
     * 计算指定地理区域的面积，单位为平方米。
-    * 	注：此功能仅百度地图支持，高德地图暂不支持此功能。
+    *     注：此功能仅百度地图支持，高德地图暂不支持此功能。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
@@ -73,9 +73,9 @@ trait PlusMapsMap extends js.Object {
   /**
     * 设置地图初始中心点和缩放级别
     * 用于设置地图的初始中心点和缩放级别，通常在创建地图后立即调用。
-    * 	默认中心点为天安门，默认缩放级别为12；
-    * 	该方法设置的中心点和缩放级别可通过reset()方法恢复；
-    * 	如果在地图显示后调用将改变地图的中心点和缩放级别并立即更新，并将初始值更新。
+    *     默认中心点为天安门，默认缩放级别为12；
+    *     该方法设置的中心点和缩放级别可通过reset()方法恢复；
+    *     如果在地图显示后调用将改变地图的中心点和缩放级别并立即更新，并将初始值更新。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
@@ -85,7 +85,7 @@ trait PlusMapsMap extends js.Object {
   /**
     * 清除地图中所有覆盖物对象
     * 此方法用于清除地图中所有覆盖物对象。
-    * 	清除地图中的覆盖物对象后会自动更新地图视图。
+    *     清除地图中的覆盖物对象后会自动更新地图视图。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
@@ -100,7 +100,7 @@ trait PlusMapsMap extends js.Object {
   /**
     * 静态方法，坐标转换
     * 将第三方坐标系坐标转换成当前地图的坐标系坐标。
-    * 	转换成功通过successCallback返回，转换失败则通过errorCallback返回。
+    *     转换成功通过successCallback返回，转换失败则通过errorCallback返回。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
@@ -121,7 +121,7 @@ trait PlusMapsMap extends js.Object {
   /**
     * 静态方法，地理编码
     * 将地理位置信息转换为坐标点。
-    * 	转换成功通过successCallback返回，转换失败则通过errorCallback返回。
+    *     转换成功通过successCallback返回，转换失败则通过errorCallback返回。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
@@ -170,7 +170,7 @@ trait PlusMapsMap extends js.Object {
   /**
     * 获取用户的当前位置信息
     * 此方法用于获取用户的当前位置信息，获取成功后通过callback回调返回。
-    * 	获取用户当前位置信息将打开定位设备。
+    *     获取用户当前位置信息将打开定位设备。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
@@ -179,8 +179,8 @@ trait PlusMapsMap extends js.Object {
   /**
     * 获取地图的缩放级别
     * 此方法用于设置地图的缩放级别，用于切换当前显示地图缩放级别。
-    * 	该方法改变缩放级别后地图显示内容将立即更新；
-    * 	该方法不会改变地图显示区域，以当前地图显示的中心点位置来缩放地图。
+    *     该方法改变缩放级别后地图显示内容将立即更新；
+    *     该方法不会改变地图显示区域，以当前地图显示的中心点位置来缩放地图。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
@@ -188,7 +188,7 @@ trait PlusMapsMap extends js.Object {
   /**
     * 隐藏地图控件
     * 此方法用于隐藏地图控件，通常在显示后调用此方法来隐藏。
-    * 	如果地图已经隐藏再调用此方法将无效果。
+    *     如果地图已经隐藏再调用此方法将无效果。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
@@ -214,7 +214,7 @@ trait PlusMapsMap extends js.Object {
   /**
     * 从地图中删除覆盖物对象
     * 此方法用于从地图中删除覆盖物对象。
-    * 	支持各种从maps.Overlay对象继承的各种覆盖物对象。
+    *     支持各种从maps.Overlay对象继承的各种覆盖物对象。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
@@ -223,7 +223,7 @@ trait PlusMapsMap extends js.Object {
   /**
     * 重置地图
     * 此方法用于重新设置地图，恢复地图的初始化时的中心点和缩放级别。
-    * 	该方法将导致显示内容将立即更新。
+    *     该方法将导致显示内容将立即更新。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
@@ -238,7 +238,7 @@ trait PlusMapsMap extends js.Object {
   /**
     * 静态方法，反向地理编码
     * 将坐标点转换为地理位置信息。
-    * 	转换成功通过successCallback返回，转换失败则通过errorCallback返回。
+    *     转换成功通过successCallback返回，转换失败则通过errorCallback返回。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
@@ -259,8 +259,8 @@ trait PlusMapsMap extends js.Object {
   /**
     * 设置地图的中心点
     * 此方法用于设置地图的中心点，用于切换当前显示地图位置。
-    * 	该方法改变中心点后地图显示内容将立即更新；
-    * 	该方法不会改变地图显示的缩放级别。
+    *     该方法改变中心点后地图显示内容将立即更新；
+    *     该方法不会改变地图显示的缩放级别。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
@@ -285,7 +285,7 @@ trait PlusMapsMap extends js.Object {
   /**
     * 是否打开地图交通信息图层
     * 此方法用于设置是否打开地图交通信息图层，默认不显示。
-    * 	该方法改变是否显示交通图层后地图显示内容将立即更新。
+    *     该方法改变是否显示交通图层后地图显示内容将立即更新。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
@@ -294,8 +294,8 @@ trait PlusMapsMap extends js.Object {
   /**
     * 设置地图的缩放级别
     * 此方法用于设置地图的缩放级别，用于切换当前显示地图缩放级别。
-    * 	该方法改变缩放级别后地图显示内容将立即更新；
-    * 	该方法不会改变地图显示区域，以当前地图显示的中心点位置来缩放地图。
+    *     该方法改变缩放级别后地图显示内容将立即更新；
+    *     该方法不会改变地图显示区域，以当前地图显示的中心点位置来缩放地图。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
@@ -304,7 +304,7 @@ trait PlusMapsMap extends js.Object {
   /**
     * 显示地图控件
     * 此方法用于显示地图控件，通常在隐藏后调用此方法来显示。
-    * 	如果地图已经显示再调用此方法将无效果。
+    *     如果地图已经显示再调用此方法将无效果。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
@@ -312,7 +312,7 @@ trait PlusMapsMap extends js.Object {
   /**
     * 显示用户位置
     * 此方法将在地图上显示用户位置信息。
-    * 	显示用户位置将打开定位设备。
+    *     显示用户位置将打开定位设备。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */

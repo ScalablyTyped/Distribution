@@ -37,14 +37,14 @@ object SeriesZonesOptionsObject {
     color: ColorString | GradientColorObject | PatternObject = null,
     dashStyle: DashStyleValue = null,
     fillColor: ColorString | GradientColorObject | PatternObject = null,
-    value: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined
   ): SeriesZonesOptionsObject = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesZonesOptionsObject]
   }
 }

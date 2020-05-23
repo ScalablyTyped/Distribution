@@ -15,7 +15,7 @@ object PostWikiParams {
   @scala.inline
   def apply(content: String, name: String, projectId: Double, mailNotify: js.UndefOr[Boolean] = js.undefined): PostWikiParams = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any])
-    if (!js.isUndefined(mailNotify)) __obj.updateDynamic("mailNotify")(mailNotify.asInstanceOf[js.Any])
+    if (!js.isUndefined(mailNotify)) __obj.updateDynamic("mailNotify")(mailNotify.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostWikiParams]
   }
 }

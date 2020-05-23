@@ -20,23 +20,23 @@ object FfmpegCommandOptions {
   @scala.inline
   def apply(
     logger: FfmpegCommandLogger = null,
-    niceness: Int | Double = null,
+    niceness: js.UndefOr[Double] = js.undefined,
     preset: String = null,
     presets: String = null,
-    priority: Int | Double = null,
+    priority: js.UndefOr[Double] = js.undefined,
     source: String | Readable = null,
-    stdoutLines: Int | Double = null,
-    timeout: Int | Double = null
+    stdoutLines: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined
   ): FfmpegCommandOptions = {
     val __obj = js.Dynamic.literal()
     if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
-    if (niceness != null) __obj.updateDynamic("niceness")(niceness.asInstanceOf[js.Any])
+    if (!js.isUndefined(niceness)) __obj.updateDynamic("niceness")(niceness.get.asInstanceOf[js.Any])
     if (preset != null) __obj.updateDynamic("preset")(preset.asInstanceOf[js.Any])
     if (presets != null) __obj.updateDynamic("presets")(presets.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (stdoutLines != null) __obj.updateDynamic("stdoutLines")(stdoutLines.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(stdoutLines)) __obj.updateDynamic("stdoutLines")(stdoutLines.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FfmpegCommandOptions]
   }
 }

@@ -24,12 +24,12 @@ object DescribeDirectConnectGatewaysRequest {
   @scala.inline
   def apply(
     directConnectGatewayId: DirectConnectGatewayId = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[MaxResultSetSize] = js.undefined,
     nextToken: PaginationToken = null
   ): DescribeDirectConnectGatewaysRequest = {
     val __obj = js.Dynamic.literal()
     if (directConnectGatewayId != null) __obj.updateDynamic("directConnectGatewayId")(directConnectGatewayId.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDirectConnectGatewaysRequest]
   }

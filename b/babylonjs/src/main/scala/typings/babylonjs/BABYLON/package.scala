@@ -17,6 +17,7 @@ package object BABYLON {
     /* rootUrl */ java.lang.String, 
     scala.Unit
   ]
+  type BaseError = typings.std.Error
   type CameraInputsMap[TCamera /* <: typings.babylonjs.BABYLON.Camera */] = (/**
     * Accessor to the input by input type.
     */
@@ -31,12 +32,14 @@ package object BABYLON {
   type DeepImmutableObject[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ K in keyof T ]: babylonjs.BABYLON.DeepImmutable<T[K]>}
     */ typings.babylonjs.babylonjsStrings.DeepImmutableObject with org.scalablytyped.runtime.TopLevel[T]
+  type DisplayPassPostProcess = typings.babylonjs.BABYLON.PostProcess
   type EvaluateSubMeshStageAction = js.Function2[
     /* mesh */ typings.babylonjs.BABYLON.AbstractMesh, 
     /* subMesh */ typings.babylonjs.BABYLON.SubMesh, 
     scala.Unit
   ]
   type FloatArray = js.Array[scala.Double] | typings.std.Float32Array
+  type HighlightsPostProcess = typings.babylonjs.BABYLON.PostProcess
   type IMotionControllerLayoutMap = /**
     * Layouts with handness type as a key
     */
@@ -44,7 +47,7 @@ package object BABYLON {
   type ISceneLoaderPluginExtensions = /**
     * Defines the list of supported extensions
     */
-  org.scalablytyped.runtime.StringDictionary[typings.babylonjs.AnonIsBinary]
+  org.scalablytyped.runtime.StringDictionary[typings.babylonjs.anon.IsBinary]
   type Immutable[T] = typings.babylonjs.BABYLON.DeepImmutable[T] | js.Array[js.Any] | T
   type IndicesArray = js.Array[scala.Double] | typings.std.Int32Array | typings.std.Uint32Array | typings.std.Uint16Array
   type IndividualBabylonFileParser = js.Function3[
@@ -53,6 +56,7 @@ package object BABYLON {
     /* rootUrl */ java.lang.String, 
     js.Any
   ]
+  type KeepAssets = typings.babylonjs.BABYLON.AbstractScene
   type MeshStageAction = js.Function2[
     /* mesh */ typings.babylonjs.BABYLON.AbstractMesh, 
     /* hardwareInstancedRendering */ scala.Boolean, 
@@ -70,6 +74,7 @@ package object BABYLON {
     js.Function0[typings.babylonjs.BABYLON.Node]
   ]
   type Nullable[T] = T | scala.Null
+  type PassPostProcess = typings.babylonjs.BABYLON.PostProcess
   type PointerMoveStageAction = js.Function5[
     /* unTranslatedPointerX */ scala.Double, 
     /* unTranslatedPointerY */ scala.Double, 
@@ -110,6 +115,7 @@ package object BABYLON {
     /* ray */ typings.babylonjs.BABYLON.Ray, 
     scala.Boolean
   ]
+  type VRMultiviewToSingleviewPostProcess = typings.babylonjs.BABYLON.PostProcess
   type WebXRFeatureConstructor = js.Function2[
     /* xrSessionManager */ typings.babylonjs.BABYLON.WebXRSessionManager, 
     /* options */ js.UndefOr[js.Any], 

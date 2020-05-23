@@ -108,21 +108,21 @@ object SpotFleetRequestConfigData {
     AllocationStrategy: AllocationStrategy = null,
     ClientToken: String = null,
     ExcessCapacityTerminationPolicy: ExcessCapacityTerminationPolicy = null,
-    FulfilledCapacity: Int | scala.Double = null,
+    FulfilledCapacity: js.UndefOr[Double] = js.undefined,
     InstanceInterruptionBehavior: InstanceInterruptionBehavior = null,
-    InstancePoolsToUseCount: Int | scala.Double = null,
+    InstancePoolsToUseCount: js.UndefOr[Integer] = js.undefined,
     LaunchSpecifications: LaunchSpecsList = null,
     LaunchTemplateConfigs: LaunchTemplateConfigList = null,
     LoadBalancersConfig: LoadBalancersConfig = null,
     OnDemandAllocationStrategy: OnDemandAllocationStrategy = null,
-    OnDemandFulfilledCapacity: Int | scala.Double = null,
+    OnDemandFulfilledCapacity: js.UndefOr[Double] = js.undefined,
     OnDemandMaxTotalPrice: String = null,
-    OnDemandTargetCapacity: Int | scala.Double = null,
-    ReplaceUnhealthyInstances: js.UndefOr[scala.Boolean] = js.undefined,
+    OnDemandTargetCapacity: js.UndefOr[Integer] = js.undefined,
+    ReplaceUnhealthyInstances: js.UndefOr[Boolean] = js.undefined,
     SpotMaxTotalPrice: String = null,
     SpotPrice: String = null,
     TagSpecifications: TagSpecificationList = null,
-    TerminateInstancesWithExpiration: js.UndefOr[scala.Boolean] = js.undefined,
+    TerminateInstancesWithExpiration: js.UndefOr[Boolean] = js.undefined,
     Type: FleetType = null,
     ValidFrom: DateTime = null,
     ValidUntil: DateTime = null
@@ -131,21 +131,21 @@ object SpotFleetRequestConfigData {
     if (AllocationStrategy != null) __obj.updateDynamic("AllocationStrategy")(AllocationStrategy.asInstanceOf[js.Any])
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
     if (ExcessCapacityTerminationPolicy != null) __obj.updateDynamic("ExcessCapacityTerminationPolicy")(ExcessCapacityTerminationPolicy.asInstanceOf[js.Any])
-    if (FulfilledCapacity != null) __obj.updateDynamic("FulfilledCapacity")(FulfilledCapacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(FulfilledCapacity)) __obj.updateDynamic("FulfilledCapacity")(FulfilledCapacity.get.asInstanceOf[js.Any])
     if (InstanceInterruptionBehavior != null) __obj.updateDynamic("InstanceInterruptionBehavior")(InstanceInterruptionBehavior.asInstanceOf[js.Any])
-    if (InstancePoolsToUseCount != null) __obj.updateDynamic("InstancePoolsToUseCount")(InstancePoolsToUseCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstancePoolsToUseCount)) __obj.updateDynamic("InstancePoolsToUseCount")(InstancePoolsToUseCount.get.asInstanceOf[js.Any])
     if (LaunchSpecifications != null) __obj.updateDynamic("LaunchSpecifications")(LaunchSpecifications.asInstanceOf[js.Any])
     if (LaunchTemplateConfigs != null) __obj.updateDynamic("LaunchTemplateConfigs")(LaunchTemplateConfigs.asInstanceOf[js.Any])
     if (LoadBalancersConfig != null) __obj.updateDynamic("LoadBalancersConfig")(LoadBalancersConfig.asInstanceOf[js.Any])
     if (OnDemandAllocationStrategy != null) __obj.updateDynamic("OnDemandAllocationStrategy")(OnDemandAllocationStrategy.asInstanceOf[js.Any])
-    if (OnDemandFulfilledCapacity != null) __obj.updateDynamic("OnDemandFulfilledCapacity")(OnDemandFulfilledCapacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(OnDemandFulfilledCapacity)) __obj.updateDynamic("OnDemandFulfilledCapacity")(OnDemandFulfilledCapacity.get.asInstanceOf[js.Any])
     if (OnDemandMaxTotalPrice != null) __obj.updateDynamic("OnDemandMaxTotalPrice")(OnDemandMaxTotalPrice.asInstanceOf[js.Any])
-    if (OnDemandTargetCapacity != null) __obj.updateDynamic("OnDemandTargetCapacity")(OnDemandTargetCapacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReplaceUnhealthyInstances)) __obj.updateDynamic("ReplaceUnhealthyInstances")(ReplaceUnhealthyInstances.asInstanceOf[js.Any])
+    if (!js.isUndefined(OnDemandTargetCapacity)) __obj.updateDynamic("OnDemandTargetCapacity")(OnDemandTargetCapacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReplaceUnhealthyInstances)) __obj.updateDynamic("ReplaceUnhealthyInstances")(ReplaceUnhealthyInstances.get.asInstanceOf[js.Any])
     if (SpotMaxTotalPrice != null) __obj.updateDynamic("SpotMaxTotalPrice")(SpotMaxTotalPrice.asInstanceOf[js.Any])
     if (SpotPrice != null) __obj.updateDynamic("SpotPrice")(SpotPrice.asInstanceOf[js.Any])
     if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications.asInstanceOf[js.Any])
-    if (!js.isUndefined(TerminateInstancesWithExpiration)) __obj.updateDynamic("TerminateInstancesWithExpiration")(TerminateInstancesWithExpiration.asInstanceOf[js.Any])
+    if (!js.isUndefined(TerminateInstancesWithExpiration)) __obj.updateDynamic("TerminateInstancesWithExpiration")(TerminateInstancesWithExpiration.get.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     if (ValidFrom != null) __obj.updateDynamic("ValidFrom")(ValidFrom.asInstanceOf[js.Any])
     if (ValidUntil != null) __obj.updateDynamic("ValidUntil")(ValidUntil.asInstanceOf[js.Any])

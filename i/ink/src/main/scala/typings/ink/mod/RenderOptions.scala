@@ -1,7 +1,7 @@
 package typings.ink.mod
 
-import typings.node.processMod._Global_.NodeJS.ReadStream
-import typings.node.processMod._Global_.NodeJS.WriteStream
+import typings.node.processMod.global.NodeJS.ReadStream
+import typings.node.processMod.global.NodeJS.WriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,9 +50,9 @@ object RenderOptions {
     stdout: WriteStream = null
   ): RenderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (!js.isUndefined(exitOnCtrlC)) __obj.updateDynamic("exitOnCtrlC")(exitOnCtrlC.asInstanceOf[js.Any])
-    if (!js.isUndefined(experimental)) __obj.updateDynamic("experimental")(experimental.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exitOnCtrlC)) __obj.updateDynamic("exitOnCtrlC")(exitOnCtrlC.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(experimental)) __obj.updateDynamic("experimental")(experimental.get.asInstanceOf[js.Any])
     if (stdin != null) __obj.updateDynamic("stdin")(stdin.asInstanceOf[js.Any])
     if (stdout != null) __obj.updateDynamic("stdout")(stdout.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderOptions]

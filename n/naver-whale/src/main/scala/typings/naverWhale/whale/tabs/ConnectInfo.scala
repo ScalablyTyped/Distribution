@@ -16,9 +16,9 @@ trait ConnectInfo extends js.Object {
 
 object ConnectInfo {
   @scala.inline
-  def apply(frameId: Int | Double = null, name: String = null): ConnectInfo = {
+  def apply(frameId: js.UndefOr[Double] = js.undefined, name: String = null): ConnectInfo = {
     val __obj = js.Dynamic.literal()
-    if (frameId != null) __obj.updateDynamic("frameId")(frameId.asInstanceOf[js.Any])
+    if (!js.isUndefined(frameId)) __obj.updateDynamic("frameId")(frameId.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectInfo]
   }

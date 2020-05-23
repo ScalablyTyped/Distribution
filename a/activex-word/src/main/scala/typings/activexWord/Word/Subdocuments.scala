@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.Subdocuments")
 @js.native
-class Subdocuments protected () extends js.Object {
+trait Subdocuments extends js.Object {
   val Application: typings.activexWord.Word.Application = js.native
   val Count: Double = js.native
   val Creator: Double = js.native

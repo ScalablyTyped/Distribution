@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.BuildingBlocks")
 @js.native
-class BuildingBlocks protected () extends js.Object {
+trait BuildingBlocks extends js.Object {
   val Application: typings.activexWord.Word.Application = js.native
   val Count: Double = js.native
   val Creator: Double = js.native

@@ -31,7 +31,7 @@ object WorkbookWorksheet {
     name: String = null,
     names: js.Array[WorkbookNamedItem] = null,
     pivotTables: js.Array[WorkbookPivotTable] = null,
-    position: Int | Double = null,
+    position: js.UndefOr[Double] = js.undefined,
     protection: WorkbookWorksheetProtection = null,
     tables: js.Array[WorkbookTable] = null,
     visibility: String = null
@@ -42,7 +42,7 @@ object WorkbookWorksheet {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (names != null) __obj.updateDynamic("names")(names.asInstanceOf[js.Any])
     if (pivotTables != null) __obj.updateDynamic("pivotTables")(pivotTables.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.get.asInstanceOf[js.Any])
     if (protection != null) __obj.updateDynamic("protection")(protection.asInstanceOf[js.Any])
     if (tables != null) __obj.updateDynamic("tables")(tables.asInstanceOf[js.Any])
     if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])

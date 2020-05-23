@@ -4,15 +4,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.InvocationTypeArgumentInferenceContext")
-@js.native
-class InvocationTypeArgumentInferenceContext protected () extends TypeArgumentInferenceContext {
-  def this(
-    resolver: PullTypeResolver,
+trait InvocationTypeArgumentInferenceContext extends TypeArgumentInferenceContext {
+  var argumentASTs: ISeparatedSyntaxList2
+}
+
+object InvocationTypeArgumentInferenceContext {
+  @scala.inline
+  def apply(
+    _finalizeInferredTypeArguments: () => js.Array[PullTypeSymbol],
+    addCandidateForInference: (PullTypeParameterSymbol, PullTypeSymbol) => Unit,
+    addInferenceRoot: PullTypeParameterSymbol => Unit,
+    alreadyRelatingTypes: (PullTypeSymbol, PullTypeSymbol) => Boolean,
+    argumentASTs: ISeparatedSyntaxList2,
+    candidateCache: js.Array[CandidateInferenceInfo],
     context: PullTypeResolutionContext,
-    signatureBeingInferred: PullSignatureSymbol,
-    argumentASTs: ISeparatedSyntaxList2
-  ) = this()
-  var argumentASTs: ISeparatedSyntaxList2 = js.native
+    fixTypeParameter: PullTypeParameterSymbol => Unit,
+    getInferenceInfo: PullTypeParameterSymbol => CandidateInferenceInfo,
+    inferTypeArguments: () => js.Array[PullTypeSymbol],
+    inferenceCache: IBitMatrix,
+    isInvocationInferenceContext: () => Boolean,
+    resetRelationshipCache: () => Unit,
+    resolver: PullTypeResolver,
+    signatureBeingInferred: PullSignatureSymbol
+  ): InvocationTypeArgumentInferenceContext = {
+    val __obj = js.Dynamic.literal(_finalizeInferredTypeArguments = js.Any.fromFunction0(_finalizeInferredTypeArguments), addCandidateForInference = js.Any.fromFunction2(addCandidateForInference), addInferenceRoot = js.Any.fromFunction1(addInferenceRoot), alreadyRelatingTypes = js.Any.fromFunction2(alreadyRelatingTypes), argumentASTs = argumentASTs.asInstanceOf[js.Any], candidateCache = candidateCache.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], fixTypeParameter = js.Any.fromFunction1(fixTypeParameter), getInferenceInfo = js.Any.fromFunction1(getInferenceInfo), inferTypeArguments = js.Any.fromFunction0(inferTypeArguments), inferenceCache = inferenceCache.asInstanceOf[js.Any], isInvocationInferenceContext = js.Any.fromFunction0(isInvocationInferenceContext), resetRelationshipCache = js.Any.fromFunction0(resetRelationshipCache), resolver = resolver.asInstanceOf[js.Any], signatureBeingInferred = signatureBeingInferred.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InvocationTypeArgumentInferenceContext]
+  }
 }
 

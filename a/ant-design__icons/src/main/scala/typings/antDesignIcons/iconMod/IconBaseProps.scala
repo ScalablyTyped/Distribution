@@ -19,14 +19,14 @@ object IconBaseProps {
   def apply(
     AllHTMLAttributes: AllHTMLAttributes[HTMLSpanElement] = null,
     ClassAttributes: ClassAttributes[HTMLSpanElement] = null,
-    rotate: Int | Double = null,
+    rotate: js.UndefOr[Double] = js.undefined,
     spin: js.UndefOr[Boolean] = js.undefined
   ): IconBaseProps = {
     val __obj = js.Dynamic.literal()
     if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
     if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
-    if (!js.isUndefined(spin)) __obj.updateDynamic("spin")(spin.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotate)) __obj.updateDynamic("rotate")(rotate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spin)) __obj.updateDynamic("spin")(spin.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconBaseProps]
   }
 }

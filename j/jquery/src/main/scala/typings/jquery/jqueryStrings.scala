@@ -1,18 +1,15 @@
 package typings.jquery
 
-import typings.jquery.JQuery_.Ajax.ErrorTextStatus
-import typings.jquery.JQuery_.Ajax.SuccessTextStatus
-import typings.jquery.JQuery_.Ajax.TextStatus
-import typings.jquery.JQuery_._Duration
-import typings.jquery.JQuery_._Falsy
+import typings.jquery.JQuery.Ajax.ErrorTextStatus
+import typings.jquery.JQuery.Ajax.SuccessTextStatus
+import typings.jquery.JQuery.Ajax.TextStatus
+import typings.jquery.JQuery._Duration
+import typings.jquery.JQuery._Falsy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object jqueryStrings {
-  @js.native
-  sealed trait Promise extends js.Object
-  
   @js.native
   sealed trait _empty extends _Falsy
   
@@ -732,8 +729,6 @@ object jqueryStrings {
   @js.native
   sealed trait xml extends js.Object
   
-  @scala.inline
-  def Promise: Promise = "Promise".asInstanceOf[Promise]
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline

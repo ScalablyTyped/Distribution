@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object default extends js.Object {
   def apply[RecordType](
-    hasPrefixClsDropdownPrefixClsColumnsChildrenOnFilterChangeGetPopupContainerLocale: FilterConfig[RecordType]
+    hasPrefixClsDropdownPrefixClsMergedColumnsOnFilterChangeGetPopupContainerLocale: FilterConfig[RecordType]
   ): js.Tuple3[
     TransformColumns[RecordType], 
     js.Array[FilterState[RecordType]], 

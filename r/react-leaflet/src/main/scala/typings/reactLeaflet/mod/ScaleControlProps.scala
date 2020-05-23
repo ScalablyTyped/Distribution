@@ -20,18 +20,18 @@ object ScaleControlProps {
   def apply(
     imperial: js.UndefOr[Boolean] = js.undefined,
     leaflet: LeafletContext = null,
-    maxWidth: Int | Double = null,
+    maxWidth: js.UndefOr[Double] = js.undefined,
     metric: js.UndefOr[Boolean] = js.undefined,
     position: ControlPosition = null,
     updateWhenIdle: js.UndefOr[Boolean] = js.undefined
   ): ScaleControlProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(imperial)) __obj.updateDynamic("imperial")(imperial.asInstanceOf[js.Any])
+    if (!js.isUndefined(imperial)) __obj.updateDynamic("imperial")(imperial.get.asInstanceOf[js.Any])
     if (leaflet != null) __obj.updateDynamic("leaflet")(leaflet.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(metric)) __obj.updateDynamic("metric")(metric.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(metric)) __obj.updateDynamic("metric")(metric.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateWhenIdle)) __obj.updateDynamic("updateWhenIdle")(updateWhenIdle.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateWhenIdle)) __obj.updateDynamic("updateWhenIdle")(updateWhenIdle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleControlProps]
   }
 }

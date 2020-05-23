@@ -37,13 +37,13 @@ trait InstanceIncrementDecrementOptions extends js.Object {
 object InstanceIncrementDecrementOptions {
   @scala.inline
   def apply(
-    by: Int | Double = null,
+    by: js.UndefOr[Double] = js.undefined,
     logging: Boolean | js.Function = null,
     transaction: Transaction = null,
     where: AnyWhereOptions | (js.Array[col | and | or | String]) = null
   ): InstanceIncrementDecrementOptions = {
     val __obj = js.Dynamic.literal()
-    if (by != null) __obj.updateDynamic("by")(by.asInstanceOf[js.Any])
+    if (!js.isUndefined(by)) __obj.updateDynamic("by")(by.get.asInstanceOf[js.Any])
     if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
     if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])

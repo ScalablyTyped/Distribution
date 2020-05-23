@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("ejs", "delimiter")
 @js.native
-object delimiter extends TopLevel[String]
+object delimiter
+  extends TopLevel[js.UndefOr[String]]
 

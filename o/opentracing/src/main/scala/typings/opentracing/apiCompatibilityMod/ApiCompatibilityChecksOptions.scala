@@ -17,8 +17,8 @@ object ApiCompatibilityChecksOptions {
     skipInjectExtractChecks: js.UndefOr[Boolean] = js.undefined
   ): ApiCompatibilityChecksOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(skipBaggageChecks)) __obj.updateDynamic("skipBaggageChecks")(skipBaggageChecks.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipInjectExtractChecks)) __obj.updateDynamic("skipInjectExtractChecks")(skipInjectExtractChecks.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipBaggageChecks)) __obj.updateDynamic("skipBaggageChecks")(skipBaggageChecks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipInjectExtractChecks)) __obj.updateDynamic("skipInjectExtractChecks")(skipInjectExtractChecks.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiCompatibilityChecksOptions]
   }
 }

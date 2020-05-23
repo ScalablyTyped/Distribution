@@ -27,13 +27,13 @@ object TableCellStyle {
     borderLeft: TableCellBorder = null,
     borderRight: TableCellBorder = null,
     borderTop: TableCellBorder = null,
-    columnSpan: Int | Double = null,
+    columnSpan: js.UndefOr[Double] = js.undefined,
     contentAlignment: String = null,
     paddingBottom: Dimension = null,
     paddingLeft: Dimension = null,
     paddingRight: Dimension = null,
     paddingTop: Dimension = null,
-    rowSpan: Int | Double = null
+    rowSpan: js.UndefOr[Double] = js.undefined
   ): TableCellStyle = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
@@ -41,13 +41,13 @@ object TableCellStyle {
     if (borderLeft != null) __obj.updateDynamic("borderLeft")(borderLeft.asInstanceOf[js.Any])
     if (borderRight != null) __obj.updateDynamic("borderRight")(borderRight.asInstanceOf[js.Any])
     if (borderTop != null) __obj.updateDynamic("borderTop")(borderTop.asInstanceOf[js.Any])
-    if (columnSpan != null) __obj.updateDynamic("columnSpan")(columnSpan.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnSpan)) __obj.updateDynamic("columnSpan")(columnSpan.get.asInstanceOf[js.Any])
     if (contentAlignment != null) __obj.updateDynamic("contentAlignment")(contentAlignment.asInstanceOf[js.Any])
     if (paddingBottom != null) __obj.updateDynamic("paddingBottom")(paddingBottom.asInstanceOf[js.Any])
     if (paddingLeft != null) __obj.updateDynamic("paddingLeft")(paddingLeft.asInstanceOf[js.Any])
     if (paddingRight != null) __obj.updateDynamic("paddingRight")(paddingRight.asInstanceOf[js.Any])
     if (paddingTop != null) __obj.updateDynamic("paddingTop")(paddingTop.asInstanceOf[js.Any])
-    if (rowSpan != null) __obj.updateDynamic("rowSpan")(rowSpan.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowSpan)) __obj.updateDynamic("rowSpan")(rowSpan.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableCellStyle]
   }
 }

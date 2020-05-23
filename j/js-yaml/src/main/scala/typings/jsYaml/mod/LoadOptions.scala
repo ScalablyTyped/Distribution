@@ -30,7 +30,7 @@ object LoadOptions {
   ): LoadOptions = {
     val __obj = js.Dynamic.literal()
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
+    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.get.asInstanceOf[js.Any])
     if (listener != null) __obj.updateDynamic("listener")(listener.asInstanceOf[js.Any])
     if (onWarning != null) __obj.updateDynamic("onWarning")(onWarning.asInstanceOf[js.Any])
     if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])

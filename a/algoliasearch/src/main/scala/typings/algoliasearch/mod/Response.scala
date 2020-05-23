@@ -1,7 +1,7 @@
 package typings.algoliasearch.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.algoliasearch.AnonAvg
+import typings.algoliasearch.anon.Avg
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,7 +52,7 @@ trait Response[T] extends js.Object {
   /**
     * Statistics for numerical facets.
     */
-  var facets_stats: js.UndefOr[StringDictionary[AnonAvg]] = js.undefined
+  var facets_stats: js.UndefOr[StringDictionary[Avg]] = js.undefined
   /**
     * Contains all the hits matching the query
     */
@@ -147,12 +147,12 @@ object Response {
     params: String,
     processingTimeMS: Double,
     query: String,
-    abTestVariantID: Int | Double = null,
+    abTestVariantID: js.UndefOr[Double] = js.undefined,
     aroundLatLng: String = null,
     automaticRadius: String = null,
     cursor: String = null,
     facets: StringDictionary[StringDictionary[Double]] = null,
-    facets_stats: StringDictionary[AnonAvg] = null,
+    facets_stats: StringDictionary[Avg] = null,
     index: String = null,
     indexUsed: String = null,
     message: String = null,
@@ -164,7 +164,7 @@ object Response {
     userData: js.Array[StringDictionary[_]] = null
   ): Response[T] = {
     val __obj = js.Dynamic.literal(exhaustiveFacetsCount = exhaustiveFacetsCount.asInstanceOf[js.Any], exhaustiveNbHits = exhaustiveNbHits.asInstanceOf[js.Any], hits = hits.asInstanceOf[js.Any], hitsPerPage = hitsPerPage.asInstanceOf[js.Any], nbHits = nbHits.asInstanceOf[js.Any], nbPages = nbPages.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], processingTimeMS = processingTimeMS.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
-    if (abTestVariantID != null) __obj.updateDynamic("abTestVariantID")(abTestVariantID.asInstanceOf[js.Any])
+    if (!js.isUndefined(abTestVariantID)) __obj.updateDynamic("abTestVariantID")(abTestVariantID.get.asInstanceOf[js.Any])
     if (aroundLatLng != null) __obj.updateDynamic("aroundLatLng")(aroundLatLng.asInstanceOf[js.Any])
     if (automaticRadius != null) __obj.updateDynamic("automaticRadius")(automaticRadius.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
@@ -174,7 +174,7 @@ object Response {
     if (indexUsed != null) __obj.updateDynamic("indexUsed")(indexUsed.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (parsedQuery != null) __obj.updateDynamic("parsedQuery")(parsedQuery.asInstanceOf[js.Any])
-    if (!js.isUndefined(processed)) __obj.updateDynamic("processed")(processed.asInstanceOf[js.Any])
+    if (!js.isUndefined(processed)) __obj.updateDynamic("processed")(processed.get.asInstanceOf[js.Any])
     if (queryAfterRemoval != null) __obj.updateDynamic("queryAfterRemoval")(queryAfterRemoval.asInstanceOf[js.Any])
     if (queryID != null) __obj.updateDynamic("queryID")(queryID.asInstanceOf[js.Any])
     if (serverUsed != null) __obj.updateDynamic("serverUsed")(serverUsed.asInstanceOf[js.Any])

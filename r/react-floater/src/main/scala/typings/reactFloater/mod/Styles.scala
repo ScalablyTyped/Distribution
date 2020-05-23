@@ -1,8 +1,8 @@
 package typings.reactFloater.mod
 
 import typings.react.mod.CSSProperties
-import typings.reactFloater.AnonZIndex
-import typings.reactFloater.CSSPropertieslengthnumber
+import typings.reactFloater.anon.CSSPropertieslengthnumber
+import typings.reactFloater.anon.ZIndex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait Styles extends js.Object {
   var floaterWithAnimation: CSSProperties
   var floaterWithComponent: CSSProperties
   var footer: CSSProperties
-  var options: AnonZIndex
+  var options: ZIndex
   var title: CSSProperties
   var wrapper: CSSProperties
   var wrapperPosition: CSSProperties
@@ -39,7 +39,7 @@ object Styles {
     floaterWithAnimation: CSSProperties,
     floaterWithComponent: CSSProperties,
     footer: CSSProperties,
-    options: AnonZIndex,
+    options: ZIndex,
     title: CSSProperties,
     wrapper: CSSProperties,
     wrapperPosition: CSSProperties

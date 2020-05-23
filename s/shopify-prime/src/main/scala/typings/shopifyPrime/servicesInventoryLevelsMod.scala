@@ -1,5 +1,7 @@
 package typings.shopifyPrime
 
+import typings.shopifyPrime.anon.Disconnectifnecessary
+import typings.shopifyPrime.anon.Relocateifnecessary
 import typings.shopifyPrime.infrastructureMod.BaseService
 import typings.shopifyPrime.inventoryLevelMod.InventoryLevel
 import typings.shopifyPrime.inventoryLevelsMod.InventoryLevelListOptions
@@ -25,7 +27,7 @@ object servicesInventoryLevelsMod extends js.Object {
       * @param options Options for connecting an inventory level.
       */
     def connect(inventoryItemId: Double, locationId: Double): js.Promise[Unit] = js.native
-    def connect(inventoryItemId: Double, locationId: Double, options: AnonRelocateifnecessary): js.Promise[Unit] = js.native
+    def connect(inventoryItemId: Double, locationId: Double, options: Relocateifnecessary): js.Promise[Unit] = js.native
     /**
       * Deletes an inventory level of an inventory item at a location.
       * @param inventoryItemId Id of the inventory item.
@@ -44,7 +46,7 @@ object servicesInventoryLevelsMod extends js.Object {
       * @param options Options for adjusting an inventory level.
       */
     def set(inventoryLevel: InventoryLevel): js.Promise[Unit] = js.native
-    def set(inventoryLevel: InventoryLevel, options: AnonDisconnectifnecessary): js.Promise[Unit] = js.native
+    def set(inventoryLevel: InventoryLevel, options: Disconnectifnecessary): js.Promise[Unit] = js.native
   }
   
   @js.native

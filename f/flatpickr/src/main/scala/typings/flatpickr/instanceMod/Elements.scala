@@ -1,6 +1,6 @@
 package typings.flatpickr.instanceMod
 
-import typings.flatpickr.globalsMod._Global_.HTMLElement
+import typings.flatpickr.globalsMod.global.HTMLElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
 import typings.std.HTMLSelectElement

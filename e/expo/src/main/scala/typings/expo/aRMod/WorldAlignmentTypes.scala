@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object WorldAlignmentTypes
   extends TopLevel[
-      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WorldAlignment */ js.Any
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlaneDetection */ js.Any
     ]
 

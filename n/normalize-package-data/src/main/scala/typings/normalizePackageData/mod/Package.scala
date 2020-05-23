@@ -1,9 +1,9 @@
 package typings.normalizePackageData.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.normalizePackageData.AnonEmail
-import typings.normalizePackageData.AnonType
-import typings.normalizePackageData.AnonUrl
+import typings.normalizePackageData.anon.Email
+import typings.normalizePackageData.anon.Type
+import typings.normalizePackageData.anon.Url
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait Package
   var _id: String
   var author: js.UndefOr[Person] = js.undefined
   var bin: js.UndefOr[StringDictionary[String]] = js.undefined
-  var bugs: js.UndefOr[AnonEmail | AnonUrl] = js.undefined
+  var bugs: js.UndefOr[Email | Url] = js.undefined
   var bundleDependencies: js.UndefOr[StringDictionary[String]] = js.undefined
   var contributors: js.UndefOr[js.Array[Person]] = js.undefined
   var dependencies: js.UndefOr[StringDictionary[String]] = js.undefined
@@ -29,7 +29,7 @@ trait Package
   var name: String
   var optionalDependencies: js.UndefOr[StringDictionary[String]] = js.undefined
   var readme: String
-  var repository: js.UndefOr[AnonType] = js.undefined
+  var repository: js.UndefOr[Type] = js.undefined
   var scripts: js.UndefOr[StringDictionary[String]] = js.undefined
   var version: String
 }
@@ -41,10 +41,10 @@ object Package {
     name: String,
     readme: String,
     version: String,
-    StringDictionary: /* k */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     author: Person = null,
     bin: StringDictionary[String] = null,
-    bugs: AnonEmail | AnonUrl = null,
+    bugs: Email | Url = null,
     bundleDependencies: StringDictionary[String] = null,
     contributors: js.Array[Person] = null,
     dependencies: StringDictionary[String] = null,
@@ -58,7 +58,7 @@ object Package {
     maintainers: js.Array[Person] = null,
     man: js.Array[String] = null,
     optionalDependencies: StringDictionary[String] = null,
-    repository: AnonType = null,
+    repository: Type = null,
     scripts: StringDictionary[String] = null
   ): Package = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], readme = readme.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])

@@ -12,7 +12,7 @@ trait Session
 
 object Session {
   @scala.inline
-  def apply(cookie: js.Any, StringDictionary: /* key */ StringDictionary[js.Any] = null): Session = {
+  def apply(cookie: js.Any, StringDictionary: /* name */ StringDictionary[js.Any] = null): Session = {
     val __obj = js.Dynamic.literal(cookie = cookie.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Session]

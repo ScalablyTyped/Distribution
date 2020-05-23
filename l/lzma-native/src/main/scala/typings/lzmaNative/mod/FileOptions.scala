@@ -16,10 +16,10 @@ object FileOptions {
   def apply(
     fileSize: Double,
     read: (Double, Double, js.Function2[/* err */ js.Any, /* buffer */ Buffer, Unit]) => Unit,
-    memlimit: Int | Double = null
+    memlimit: js.UndefOr[Double] = js.undefined
   ): FileOptions = {
     val __obj = js.Dynamic.literal(fileSize = fileSize.asInstanceOf[js.Any], read = js.Any.fromFunction3(read))
-    if (memlimit != null) __obj.updateDynamic("memlimit")(memlimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(memlimit)) __obj.updateDynamic("memlimit")(memlimit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileOptions]
   }
 }

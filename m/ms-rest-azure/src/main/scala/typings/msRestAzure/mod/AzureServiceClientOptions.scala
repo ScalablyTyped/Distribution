@@ -35,19 +35,19 @@ object AzureServiceClientOptions {
     acceptLanguage: String = null,
     filters: js.Array[_] = null,
     generateClientRequestId: js.UndefOr[Boolean] = js.undefined,
-    longRunningOperationRetryTimeout: Int | Double = null,
+    longRunningOperationRetryTimeout: js.UndefOr[Double] = js.undefined,
     noRetryPolicy: js.UndefOr[Boolean] = js.undefined,
     requestOptions: ClientRequestOptions = null,
-    rpRegistrationRetryTimeout: Int | Double = null
+    rpRegistrationRetryTimeout: js.UndefOr[Double] = js.undefined
   ): AzureServiceClientOptions = {
     val __obj = js.Dynamic.literal()
     if (acceptLanguage != null) __obj.updateDynamic("acceptLanguage")(acceptLanguage.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(generateClientRequestId)) __obj.updateDynamic("generateClientRequestId")(generateClientRequestId.asInstanceOf[js.Any])
-    if (longRunningOperationRetryTimeout != null) __obj.updateDynamic("longRunningOperationRetryTimeout")(longRunningOperationRetryTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(noRetryPolicy)) __obj.updateDynamic("noRetryPolicy")(noRetryPolicy.asInstanceOf[js.Any])
+    if (!js.isUndefined(generateClientRequestId)) __obj.updateDynamic("generateClientRequestId")(generateClientRequestId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(longRunningOperationRetryTimeout)) __obj.updateDynamic("longRunningOperationRetryTimeout")(longRunningOperationRetryTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noRetryPolicy)) __obj.updateDynamic("noRetryPolicy")(noRetryPolicy.get.asInstanceOf[js.Any])
     if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions.asInstanceOf[js.Any])
-    if (rpRegistrationRetryTimeout != null) __obj.updateDynamic("rpRegistrationRetryTimeout")(rpRegistrationRetryTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(rpRegistrationRetryTimeout)) __obj.updateDynamic("rpRegistrationRetryTimeout")(rpRegistrationRetryTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AzureServiceClientOptions]
   }
 }

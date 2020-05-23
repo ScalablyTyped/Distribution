@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.ThemeFontScheme")
 @js.native
-class ThemeFontScheme protected () extends js.Object {
+trait ThemeFontScheme extends js.Object {
   val Application: js.Any = js.native
   val Creator: Double = js.native
   @JSName("MajorFont")

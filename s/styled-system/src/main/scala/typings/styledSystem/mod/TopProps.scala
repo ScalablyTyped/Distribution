@@ -16,9 +16,9 @@ trait TopProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends js.O
 
 object TopProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](top: ResponsiveValue[TVal, ThemeType] = null): TopProps[ThemeType, TVal] = {
+  def apply[ThemeType, TVal](top: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): TopProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopProps[ThemeType, TVal]]
   }
 }

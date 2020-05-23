@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cordova", JSImport.Namespace)
 @js.native
-object mod extends TopLevel[Cordova_]
+object mod extends TopLevel[Cordova]
 

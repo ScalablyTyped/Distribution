@@ -80,7 +80,7 @@ object InfrastructureConfiguration {
     snsTopicArn: NonEmptyString = null,
     subnetId: NonEmptyString = null,
     tags: TagMap = null,
-    terminateInstanceOnFailure: js.UndefOr[Boolean] = js.undefined
+    terminateInstanceOnFailure: js.UndefOr[NullableBoolean] = js.undefined
   ): InfrastructureConfiguration = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
@@ -96,7 +96,7 @@ object InfrastructureConfiguration {
     if (snsTopicArn != null) __obj.updateDynamic("snsTopicArn")(snsTopicArn.asInstanceOf[js.Any])
     if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(terminateInstanceOnFailure)) __obj.updateDynamic("terminateInstanceOnFailure")(terminateInstanceOnFailure.asInstanceOf[js.Any])
+    if (!js.isUndefined(terminateInstanceOnFailure)) __obj.updateDynamic("terminateInstanceOnFailure")(terminateInstanceOnFailure.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InfrastructureConfiguration]
   }
 }

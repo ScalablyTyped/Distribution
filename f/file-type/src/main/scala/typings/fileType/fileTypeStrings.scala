@@ -47,6 +47,9 @@ object fileTypeStrings {
   sealed trait applicationSlashdicom extends MimeType
   
   @js.native
+  sealed trait applicationSlasheps extends MimeType
+  
+  @js.native
   sealed trait applicationSlashepubPlussignzip extends MimeType
   
   @js.native
@@ -95,6 +98,9 @@ object fileTypeStrings {
   sealed trait `applicationSlashvndDotopenxmlformats-officedocumentDotwordprocessingmlDotdocument` extends MimeType
   
   @js.native
+  sealed trait applicationSlashvndDotsketchupDotskp extends MimeType
+  
+  @js.native
   sealed trait applicationSlashvndDottcpdumpDotpcap extends MimeType
   
   @js.native
@@ -126,6 +132,9 @@ object fileTypeStrings {
   
   @js.native
   sealed trait `applicationSlashx-google-chrome-extension` extends MimeType
+  
+  @js.native
+  sealed trait `applicationSlashx-lzh-compressed` extends MimeType
   
   @js.native
   sealed trait `applicationSlashx-lzip` extends MimeType
@@ -263,6 +272,9 @@ object fileTypeStrings {
   sealed trait avi extends FileExtension
   
   @js.native
+  sealed trait avif extends FileExtension
+  
+  @js.native
   sealed trait blend extends FileExtension
   
   @js.native
@@ -320,6 +332,9 @@ object fileTypeStrings {
   sealed trait eot extends FileExtension
   
   @js.native
+  sealed trait eps extends FileExtension
+  
+  @js.native
   sealed trait epub extends FileExtension
   
   @js.native
@@ -374,6 +389,9 @@ object fileTypeStrings {
   sealed trait heic extends FileExtension
   
   @js.native
+  sealed trait icns extends FileExtension
+  
+  @js.native
   sealed trait ico extends FileExtension
   
   @js.native
@@ -381,6 +399,9 @@ object fileTypeStrings {
   
   @js.native
   sealed trait imageSlashapng extends MimeType
+  
+  @js.native
+  sealed trait imageSlashavif extends MimeType
   
   @js.native
   sealed trait imageSlashbmp extends MimeType
@@ -405,6 +426,9 @@ object fileTypeStrings {
   
   @js.native
   sealed trait `imageSlashheif-sequence` extends MimeType
+  
+  @js.native
+  sealed trait imageSlashicns extends MimeType
   
   @js.native
   sealed trait imageSlashjp2 extends MimeType
@@ -492,6 +516,9 @@ object fileTypeStrings {
   
   @js.native
   sealed trait lz extends FileExtension
+  
+  @js.native
+  sealed trait lzh extends FileExtension
   
   @js.native
   sealed trait m4a extends FileExtension
@@ -644,6 +671,9 @@ object fileTypeStrings {
   sealed trait shp extends FileExtension
   
   @js.native
+  sealed trait skp extends FileExtension
+  
+  @js.native
   sealed trait spx extends FileExtension
   
   @js.native
@@ -784,6 +814,8 @@ object fileTypeStrings {
   @scala.inline
   def applicationSlashdicom: applicationSlashdicom = "application/dicom".asInstanceOf[applicationSlashdicom]
   @scala.inline
+  def applicationSlasheps: applicationSlasheps = "application/eps".asInstanceOf[applicationSlasheps]
+  @scala.inline
   def applicationSlashepubPlussignzip: applicationSlashepubPlussignzip = "application/epub+zip".asInstanceOf[applicationSlashepubPlussignzip]
   @scala.inline
   def applicationSlashgzip: applicationSlashgzip = "application/gzip".asInstanceOf[applicationSlashgzip]
@@ -816,6 +848,8 @@ object fileTypeStrings {
   @scala.inline
   def `applicationSlashvndDotopenxmlformats-officedocumentDotwordprocessingmlDotdocument`: `applicationSlashvndDotopenxmlformats-officedocumentDotwordprocessingmlDotdocument` = "application/vnd.openxmlformats-officedocument.wordprocessingml.document".asInstanceOf[`applicationSlashvndDotopenxmlformats-officedocumentDotwordprocessingmlDotdocument`]
   @scala.inline
+  def applicationSlashvndDotsketchupDotskp: applicationSlashvndDotsketchupDotskp = "application/vnd.sketchup.skp".asInstanceOf[applicationSlashvndDotsketchupDotskp]
+  @scala.inline
   def applicationSlashvndDottcpdumpDotpcap: applicationSlashvndDottcpdumpDotpcap = "application/vnd.tcpdump.pcap".asInstanceOf[applicationSlashvndDottcpdumpDotpcap]
   @scala.inline
   def applicationSlashwasm: applicationSlashwasm = "application/wasm".asInstanceOf[applicationSlashwasm]
@@ -837,6 +871,8 @@ object fileTypeStrings {
   def `applicationSlashx-esri-shape`: `applicationSlashx-esri-shape` = "application/x-esri-shape".asInstanceOf[`applicationSlashx-esri-shape`]
   @scala.inline
   def `applicationSlashx-google-chrome-extension`: `applicationSlashx-google-chrome-extension` = "application/x-google-chrome-extension".asInstanceOf[`applicationSlashx-google-chrome-extension`]
+  @scala.inline
+  def `applicationSlashx-lzh-compressed`: `applicationSlashx-lzh-compressed` = "application/x-lzh-compressed".asInstanceOf[`applicationSlashx-lzh-compressed`]
   @scala.inline
   def `applicationSlashx-lzip`: `applicationSlashx-lzip` = "application/x-lzip".asInstanceOf[`applicationSlashx-lzip`]
   @scala.inline
@@ -928,6 +964,8 @@ object fileTypeStrings {
   @scala.inline
   def avi: avi = "avi".asInstanceOf[avi]
   @scala.inline
+  def avif: avif = "avif".asInstanceOf[avif]
+  @scala.inline
   def blend: blend = "blend".asInstanceOf[blend]
   @scala.inline
   def bmp: bmp = "bmp".asInstanceOf[bmp]
@@ -966,6 +1004,8 @@ object fileTypeStrings {
   @scala.inline
   def eot: eot = "eot".asInstanceOf[eot]
   @scala.inline
+  def eps: eps = "eps".asInstanceOf[eps]
+  @scala.inline
   def epub: epub = "epub".asInstanceOf[epub]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
@@ -1002,11 +1042,15 @@ object fileTypeStrings {
   @scala.inline
   def heic: heic = "heic".asInstanceOf[heic]
   @scala.inline
+  def icns: icns = "icns".asInstanceOf[icns]
+  @scala.inline
   def ico: ico = "ico".asInstanceOf[ico]
   @scala.inline
   def ics: ics = "ics".asInstanceOf[ics]
   @scala.inline
   def imageSlashapng: imageSlashapng = "image/apng".asInstanceOf[imageSlashapng]
+  @scala.inline
+  def imageSlashavif: imageSlashavif = "image/avif".asInstanceOf[imageSlashavif]
   @scala.inline
   def imageSlashbmp: imageSlashbmp = "image/bmp".asInstanceOf[imageSlashbmp]
   @scala.inline
@@ -1023,6 +1067,8 @@ object fileTypeStrings {
   def imageSlashheif: imageSlashheif = "image/heif".asInstanceOf[imageSlashheif]
   @scala.inline
   def `imageSlashheif-sequence`: `imageSlashheif-sequence` = "image/heif-sequence".asInstanceOf[`imageSlashheif-sequence`]
+  @scala.inline
+  def imageSlashicns: imageSlashicns = "image/icns".asInstanceOf[imageSlashicns]
   @scala.inline
   def imageSlashjp2: imageSlashjp2 = "image/jp2".asInstanceOf[imageSlashjp2]
   @scala.inline
@@ -1081,6 +1127,8 @@ object fileTypeStrings {
   def lnk: lnk = "lnk".asInstanceOf[lnk]
   @scala.inline
   def lz: lz = "lz".asInstanceOf[lz]
+  @scala.inline
+  def lzh: lzh = "lzh".asInstanceOf[lzh]
   @scala.inline
   def m4a: m4a = "m4a".asInstanceOf[m4a]
   @scala.inline
@@ -1181,6 +1229,8 @@ object fileTypeStrings {
   def s3m: s3m = "s3m".asInstanceOf[s3m]
   @scala.inline
   def shp: shp = "shp".asInstanceOf[shp]
+  @scala.inline
+  def skp: skp = "skp".asInstanceOf[skp]
   @scala.inline
   def spx: spx = "spx".asInstanceOf[spx]
   @scala.inline

@@ -1,7 +1,7 @@
 
 # Scala.js typings for googlepay
 
-Typings are for version 0.3
+Typings are for version 0.4
 
 
 

@@ -37,7 +37,7 @@ object TooltipSettingsFont {
     color: String = null,
     family: String = null,
     fontStyle: String = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     size: String = null,
     weight: String = null
   ): TooltipSettingsFont = {
@@ -45,7 +45,7 @@ object TooltipSettingsFont {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
     if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipSettingsFont]

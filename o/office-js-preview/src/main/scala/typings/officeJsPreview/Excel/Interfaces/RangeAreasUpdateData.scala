@@ -15,7 +15,7 @@ trait RangeAreasUpdateData extends js.Object {
   var dataValidation: js.UndefOr[DataValidationUpdateData] = js.undefined
   /**
     *
-    * Returns a rangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the RangeAreas object.
+    * Returns a RangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the RangeAreas object.
     *
     * [Api set: ExcelApi 1.9]
     */

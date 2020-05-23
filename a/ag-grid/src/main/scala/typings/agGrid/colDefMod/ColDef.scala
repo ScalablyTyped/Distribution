@@ -1,11 +1,11 @@
 package typings.agGrid.colDefMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.agGrid.AnonInstantiableAny
-import typings.agGrid.AnonInstantiableICellEditorComp
-import typings.agGrid.AnonInstantiableICellRendererComp
-import typings.agGrid.AnonInstantiableIFilterComp
-import typings.agGrid.AnonInstantiableIFloatingFilterComp
+import typings.agGrid.anon.InstantiableAny
+import typings.agGrid.anon.InstantiableICellEditorComp
+import typings.agGrid.anon.InstantiableICellRendererComp
+import typings.agGrid.anon.InstantiableIFilterComp
+import typings.agGrid.anon.InstantiableIFloatingFilterComp
 import typings.agGrid.columnMod.Column
 import typings.agGrid.componentResolverMod.ComponentHolder
 import typings.agGrid.componentResolverMod.DynamicComponentDef
@@ -36,12 +36,12 @@ trait ColDef
   /** Rules for applying css classes */
   var cellClassRules: js.UndefOr[StringDictionary[js.Function | String]] = js.undefined
   /** Cell editor */
-  var cellEditor: js.UndefOr[AnonInstantiableICellEditorComp | String] = js.undefined
+  var cellEditor: js.UndefOr[InstantiableICellEditorComp | String] = js.undefined
   var cellEditorFramework: js.UndefOr[js.Any] = js.undefined
   var cellEditorParams: js.UndefOr[js.Any] = js.undefined
   var cellEditorSelector: js.UndefOr[js.Function1[/* params */ DynamicComponentParams, DynamicComponentDef]] = js.undefined
   /** A function for rendering a cell. */
-  var cellRenderer: js.UndefOr[AnonInstantiableICellRendererComp | ICellRendererFunc | String] = js.undefined
+  var cellRenderer: js.UndefOr[InstantiableICellRendererComp | ICellRendererFunc | String] = js.undefined
   var cellRendererFramework: js.UndefOr[js.Any] = js.undefined
   var cellRendererParams: js.UndefOr[js.Any] = js.undefined
   var cellRendererSelector: js.UndefOr[js.Function1[/* params */ DynamicComponentParams, DynamicComponentDef]] = js.undefined
@@ -81,15 +81,15 @@ trait ColDef
   /** The field of the row to get the cells data from */
   var field: js.UndefOr[String] = js.undefined
   /** one of the built in filter names: [set, number, text], or a filter function*/
-  var filter: js.UndefOr[String | AnonInstantiableIFilterComp] = js.undefined
+  var filter: js.UndefOr[String | InstantiableIFilterComp] = js.undefined
   var filterFramework: js.UndefOr[js.Any] = js.undefined
   /** The filter params are specific to each filter! */
   var filterParams: js.UndefOr[js.Any] = js.undefined
   /** Expression or function to get the cells value for filtering. */
   var filterValueGetter: js.UndefOr[(js.Function1[/* params */ ValueGetterParams, _]) | String] = js.undefined
   /** The custom header component to be used for rendering the floating filter. If none specified the default ag-Grid is used**/
-  var floatingFilterComponent: js.UndefOr[AnonInstantiableIFloatingFilterComp] = js.undefined
-  var floatingFilterComponentFramework: js.UndefOr[AnonInstantiableAny] = js.undefined
+  var floatingFilterComponent: js.UndefOr[InstantiableIFloatingFilterComp] = js.undefined
+  var floatingFilterComponentFramework: js.UndefOr[InstantiableAny] = js.undefined
   var floatingFilterComponentParams: js.UndefOr[js.Any] = js.undefined
   /** To create the quick filter text for this column, if toString is not good enough on the value. */
   var getQuickFilterText: js.UndefOr[js.Function1[/* params */ GetQuickFilterTextParams, String]] = js.undefined
@@ -98,9 +98,9 @@ trait ColDef
   /** If true, the header checkbox selection will work on filtered items*/
   var headerCheckboxSelectionFilteredOnly: js.UndefOr[Boolean] = js.undefined
   /** The custom header component to be used for rendering the component header. If none specified the default ag-Grid is used**/
-  var headerComponent: js.UndefOr[String | AnonInstantiableAny] = js.undefined
+  var headerComponent: js.UndefOr[String | InstantiableAny] = js.undefined
   /** The custom header component to be used for rendering the component header in the hosting framework (ie: React/Angular). If none specified the default ag-Grid is used**/
-  var headerComponentFramework: js.UndefOr[AnonInstantiableAny] = js.undefined
+  var headerComponentFramework: js.UndefOr[InstantiableAny] = js.undefined
   /** The custom header component parameters**/
   var headerComponentParams: js.UndefOr[js.Any] = js.undefined
   /** Set to true for this column to be hidden. Naturally you might think, it would make more sense to call this field 'visible' and mark it false to hide,
@@ -140,7 +140,7 @@ trait ColDef
   /** Whether this column is pinned or not. */
   var pinned: js.UndefOr[Boolean | String] = js.undefined
   /** A function for rendering a pinned row cell. */
-  var pinnedRowCellRenderer: js.UndefOr[AnonInstantiableICellRendererComp | ICellRendererFunc | String] = js.undefined
+  var pinnedRowCellRenderer: js.UndefOr[InstantiableICellRendererComp | ICellRendererFunc | String] = js.undefined
   var pinnedRowCellRendererFramework: js.UndefOr[js.Any] = js.undefined
   var pinnedRowCellRendererParams: js.UndefOr[js.Any] = js.undefined
   /** A function to format a pinned row value, should return a string. Not used for CSV export or copy to clipboard, only for UI cell rendering. */
@@ -226,11 +226,11 @@ object ColDef {
     autoHeight: js.UndefOr[Boolean] = js.undefined,
     cellClass: String | js.Array[String] | (js.Function1[/* cellClassParams */ CellClassParams, String | js.Array[String]]) = null,
     cellClassRules: StringDictionary[js.Function | String] = null,
-    cellEditor: AnonInstantiableICellEditorComp | String = null,
+    cellEditor: InstantiableICellEditorComp | String = null,
     cellEditorFramework: js.Any = null,
     cellEditorParams: js.Any = null,
     cellEditorSelector: /* params */ DynamicComponentParams => DynamicComponentDef = null,
-    cellRenderer: AnonInstantiableICellRendererComp | ICellRendererFunc | String = null,
+    cellRenderer: InstantiableICellRendererComp | ICellRendererFunc | String = null,
     cellRendererFramework: js.Any = null,
     cellRendererParams: js.Any = null,
     cellRendererSelector: /* params */ DynamicComponentParams => DynamicComponentDef = null,
@@ -247,19 +247,19 @@ object ColDef {
     enableValue: js.UndefOr[Boolean] = js.undefined,
     equals: (/* valueA */ js.Any, /* valueB */ js.Any) => Boolean = null,
     field: String = null,
-    filter: String | AnonInstantiableIFilterComp = null,
+    filter: String | InstantiableIFilterComp = null,
     filterFramework: js.Any = null,
     filterParams: js.Any = null,
     filterValueGetter: (js.Function1[/* params */ ValueGetterParams, _]) | String = null,
-    floatingFilterComponent: AnonInstantiableIFloatingFilterComp = null,
-    floatingFilterComponentFramework: AnonInstantiableAny = null,
+    floatingFilterComponent: InstantiableIFloatingFilterComp = null,
+    floatingFilterComponentFramework: InstantiableAny = null,
     floatingFilterComponentParams: js.Any = null,
     getQuickFilterText: /* params */ GetQuickFilterTextParams => String = null,
     headerCheckboxSelection: Boolean | (js.Function1[/* params */ js.Any, Boolean]) = null,
     headerCheckboxSelectionFilteredOnly: js.UndefOr[Boolean] = js.undefined,
     headerClass: String | js.Array[String] | (js.Function1[/* params */ js.Any, String | js.Array[String]]) = null,
-    headerComponent: String | AnonInstantiableAny = null,
-    headerComponentFramework: AnonInstantiableAny = null,
+    headerComponent: String | InstantiableAny = null,
+    headerComponentFramework: InstantiableAny = null,
     headerComponentParams: js.Any = null,
     headerName: String = null,
     headerTooltip: String = null,
@@ -270,34 +270,34 @@ object ColDef {
     lockPinned: js.UndefOr[Boolean] = js.undefined,
     lockPosition: js.UndefOr[Boolean] = js.undefined,
     lockVisible: js.UndefOr[Boolean] = js.undefined,
-    maxWidth: Int | Double = null,
+    maxWidth: js.UndefOr[Double] = js.undefined,
     menuTabs: js.Array[String] = null,
-    minWidth: Int | Double = null,
+    minWidth: js.UndefOr[Double] = js.undefined,
     newValueHandler: /* params */ js.Any => Boolean = null,
     onCellClicked: /* event */ CellClickedEvent => Unit = null,
     onCellContextMenu: /* event */ CellContextMenuEvent => Unit = null,
     onCellDoubleClicked: /* event */ CellDoubleClickedEvent => Unit = null,
     onCellValueChanged: js.Function = null,
     pinned: Boolean | String = null,
-    pinnedRowCellRenderer: AnonInstantiableICellRendererComp | ICellRendererFunc | String = null,
+    pinnedRowCellRenderer: InstantiableICellRendererComp | ICellRendererFunc | String = null,
     pinnedRowCellRendererFramework: js.Any = null,
     pinnedRowCellRendererParams: js.Any = null,
     pinnedRowValueFormatter: /* params */ ValueFormatterParams => String = null,
     pivot: js.UndefOr[Boolean] = js.undefined,
     pivotComparator: (/* valueA */ String, /* valueB */ String) => Double = null,
-    pivotIndex: Int | Double = null,
+    pivotIndex: js.UndefOr[Double] = js.undefined,
     pivotKeys: js.Array[String] = null,
     pivotTotalColumnIds: js.Array[String] = null,
     pivotValueColumn: Column = null,
     refData: StringDictionary[String] = null,
     rowDrag: Boolean | (js.Function1[/* params */ js.Any, Boolean]) = null,
     rowGroup: js.UndefOr[Boolean] = js.undefined,
-    rowGroupIndex: Int | Double = null,
+    rowGroupIndex: js.UndefOr[Double] = js.undefined,
     rowSpan: /* params */ RowSpanParams => Double = null,
     showRowGroup: String | Boolean = null,
     singleClickEdit: js.UndefOr[Boolean] = js.undefined,
     sort: String = null,
-    sortedAt: Int | Double = null,
+    sortedAt: js.UndefOr[Double] = js.undefined,
     sortingOrder: js.Array[String] = null,
     suppressAutoSize: js.UndefOr[Boolean] = js.undefined,
     suppressCellFlash: js.UndefOr[Boolean] = js.undefined,
@@ -322,12 +322,12 @@ object ColDef {
     valueGetter: (js.Function1[/* params */ ValueGetterParams, _]) | String = null,
     valueParser: /* params */ ValueParserParams => _ | String = null,
     valueSetter: (js.Function1[/* params */ ValueSetterParams, Boolean]) | String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): ColDef = {
     val __obj = js.Dynamic.literal()
     if (aggFunc != null) __obj.updateDynamic("aggFunc")(aggFunc.asInstanceOf[js.Any])
     if (allowedAggFuncs != null) __obj.updateDynamic("allowedAggFuncs")(allowedAggFuncs.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight.get.asInstanceOf[js.Any])
     if (cellClass != null) __obj.updateDynamic("cellClass")(cellClass.asInstanceOf[js.Any])
     if (cellClassRules != null) __obj.updateDynamic("cellClassRules")(cellClassRules.asInstanceOf[js.Any])
     if (cellEditor != null) __obj.updateDynamic("cellEditor")(cellEditor.asInstanceOf[js.Any])
@@ -345,10 +345,10 @@ object ColDef {
     if (columnGroupShow != null) __obj.updateDynamic("columnGroupShow")(columnGroupShow.asInstanceOf[js.Any])
     if (comparator != null) __obj.updateDynamic("comparator")(js.Any.fromFunction5(comparator))
     if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCellChangeFlash)) __obj.updateDynamic("enableCellChangeFlash")(enableCellChangeFlash.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePivot)) __obj.updateDynamic("enablePivot")(enablePivot.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRowGroup)) __obj.updateDynamic("enableRowGroup")(enableRowGroup.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableValue)) __obj.updateDynamic("enableValue")(enableValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCellChangeFlash)) __obj.updateDynamic("enableCellChangeFlash")(enableCellChangeFlash.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePivot)) __obj.updateDynamic("enablePivot")(enablePivot.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRowGroup)) __obj.updateDynamic("enableRowGroup")(enableRowGroup.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableValue)) __obj.updateDynamic("enableValue")(enableValue.get.asInstanceOf[js.Any])
     if (equals != null) __obj.updateDynamic("equals")(js.Any.fromFunction2(equals))
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
@@ -360,7 +360,7 @@ object ColDef {
     if (floatingFilterComponentParams != null) __obj.updateDynamic("floatingFilterComponentParams")(floatingFilterComponentParams.asInstanceOf[js.Any])
     if (getQuickFilterText != null) __obj.updateDynamic("getQuickFilterText")(js.Any.fromFunction1(getQuickFilterText))
     if (headerCheckboxSelection != null) __obj.updateDynamic("headerCheckboxSelection")(headerCheckboxSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(headerCheckboxSelectionFilteredOnly)) __obj.updateDynamic("headerCheckboxSelectionFilteredOnly")(headerCheckboxSelectionFilteredOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerCheckboxSelectionFilteredOnly)) __obj.updateDynamic("headerCheckboxSelectionFilteredOnly")(headerCheckboxSelectionFilteredOnly.get.asInstanceOf[js.Any])
     if (headerClass != null) __obj.updateDynamic("headerClass")(headerClass.asInstanceOf[js.Any])
     if (headerComponent != null) __obj.updateDynamic("headerComponent")(headerComponent.asInstanceOf[js.Any])
     if (headerComponentFramework != null) __obj.updateDynamic("headerComponentFramework")(headerComponentFramework.asInstanceOf[js.Any])
@@ -368,15 +368,15 @@ object ColDef {
     if (headerName != null) __obj.updateDynamic("headerName")(headerName.asInstanceOf[js.Any])
     if (headerTooltip != null) __obj.updateDynamic("headerTooltip")(headerTooltip.asInstanceOf[js.Any])
     if (headerValueGetter != null) __obj.updateDynamic("headerValueGetter")(headerValueGetter.asInstanceOf[js.Any])
-    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
+    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide.get.asInstanceOf[js.Any])
     if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
     if (keyCreator != null) __obj.updateDynamic("keyCreator")(keyCreator.asInstanceOf[js.Any])
-    if (!js.isUndefined(lockPinned)) __obj.updateDynamic("lockPinned")(lockPinned.asInstanceOf[js.Any])
-    if (!js.isUndefined(lockPosition)) __obj.updateDynamic("lockPosition")(lockPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(lockVisible)) __obj.updateDynamic("lockVisible")(lockVisible.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockPinned)) __obj.updateDynamic("lockPinned")(lockPinned.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockPosition)) __obj.updateDynamic("lockPosition")(lockPosition.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockVisible)) __obj.updateDynamic("lockVisible")(lockVisible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
     if (menuTabs != null) __obj.updateDynamic("menuTabs")(menuTabs.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
     if (newValueHandler != null) __obj.updateDynamic("newValueHandler")(js.Any.fromFunction1(newValueHandler))
     if (onCellClicked != null) __obj.updateDynamic("onCellClicked")(js.Any.fromFunction1(onCellClicked))
     if (onCellContextMenu != null) __obj.updateDynamic("onCellContextMenu")(js.Any.fromFunction1(onCellContextMenu))
@@ -387,46 +387,46 @@ object ColDef {
     if (pinnedRowCellRendererFramework != null) __obj.updateDynamic("pinnedRowCellRendererFramework")(pinnedRowCellRendererFramework.asInstanceOf[js.Any])
     if (pinnedRowCellRendererParams != null) __obj.updateDynamic("pinnedRowCellRendererParams")(pinnedRowCellRendererParams.asInstanceOf[js.Any])
     if (pinnedRowValueFormatter != null) __obj.updateDynamic("pinnedRowValueFormatter")(js.Any.fromFunction1(pinnedRowValueFormatter))
-    if (!js.isUndefined(pivot)) __obj.updateDynamic("pivot")(pivot.asInstanceOf[js.Any])
+    if (!js.isUndefined(pivot)) __obj.updateDynamic("pivot")(pivot.get.asInstanceOf[js.Any])
     if (pivotComparator != null) __obj.updateDynamic("pivotComparator")(js.Any.fromFunction2(pivotComparator))
-    if (pivotIndex != null) __obj.updateDynamic("pivotIndex")(pivotIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(pivotIndex)) __obj.updateDynamic("pivotIndex")(pivotIndex.get.asInstanceOf[js.Any])
     if (pivotKeys != null) __obj.updateDynamic("pivotKeys")(pivotKeys.asInstanceOf[js.Any])
     if (pivotTotalColumnIds != null) __obj.updateDynamic("pivotTotalColumnIds")(pivotTotalColumnIds.asInstanceOf[js.Any])
     if (pivotValueColumn != null) __obj.updateDynamic("pivotValueColumn")(pivotValueColumn.asInstanceOf[js.Any])
     if (refData != null) __obj.updateDynamic("refData")(refData.asInstanceOf[js.Any])
     if (rowDrag != null) __obj.updateDynamic("rowDrag")(rowDrag.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowGroup)) __obj.updateDynamic("rowGroup")(rowGroup.asInstanceOf[js.Any])
-    if (rowGroupIndex != null) __obj.updateDynamic("rowGroupIndex")(rowGroupIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowGroup)) __obj.updateDynamic("rowGroup")(rowGroup.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowGroupIndex)) __obj.updateDynamic("rowGroupIndex")(rowGroupIndex.get.asInstanceOf[js.Any])
     if (rowSpan != null) __obj.updateDynamic("rowSpan")(js.Any.fromFunction1(rowSpan))
     if (showRowGroup != null) __obj.updateDynamic("showRowGroup")(showRowGroup.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleClickEdit)) __obj.updateDynamic("singleClickEdit")(singleClickEdit.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleClickEdit)) __obj.updateDynamic("singleClickEdit")(singleClickEdit.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (sortedAt != null) __obj.updateDynamic("sortedAt")(sortedAt.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortedAt)) __obj.updateDynamic("sortedAt")(sortedAt.get.asInstanceOf[js.Any])
     if (sortingOrder != null) __obj.updateDynamic("sortingOrder")(sortingOrder.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressAutoSize)) __obj.updateDynamic("suppressAutoSize")(suppressAutoSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressCellFlash)) __obj.updateDynamic("suppressCellFlash")(suppressCellFlash.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressFilter)) __obj.updateDynamic("suppressFilter")(suppressFilter.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressAutoSize)) __obj.updateDynamic("suppressAutoSize")(suppressAutoSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressCellFlash)) __obj.updateDynamic("suppressCellFlash")(suppressCellFlash.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressFilter)) __obj.updateDynamic("suppressFilter")(suppressFilter.get.asInstanceOf[js.Any])
     if (suppressKeyboardEvent != null) __obj.updateDynamic("suppressKeyboardEvent")(js.Any.fromFunction1(suppressKeyboardEvent))
-    if (!js.isUndefined(suppressMenu)) __obj.updateDynamic("suppressMenu")(suppressMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressMovable)) __obj.updateDynamic("suppressMovable")(suppressMovable.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressMenu)) __obj.updateDynamic("suppressMenu")(suppressMenu.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressMovable)) __obj.updateDynamic("suppressMovable")(suppressMovable.get.asInstanceOf[js.Any])
     if (suppressNavigable != null) __obj.updateDynamic("suppressNavigable")(suppressNavigable.asInstanceOf[js.Any])
     if (suppressPaste != null) __obj.updateDynamic("suppressPaste")(suppressPaste.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressResize)) __obj.updateDynamic("suppressResize")(suppressResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressSizeToFit)) __obj.updateDynamic("suppressSizeToFit")(suppressSizeToFit.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressSorting)) __obj.updateDynamic("suppressSorting")(suppressSorting.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressToolPanel)) __obj.updateDynamic("suppressToolPanel")(suppressToolPanel.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressResize)) __obj.updateDynamic("suppressResize")(suppressResize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressSizeToFit)) __obj.updateDynamic("suppressSizeToFit")(suppressSizeToFit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressSorting)) __obj.updateDynamic("suppressSorting")(suppressSorting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressToolPanel)) __obj.updateDynamic("suppressToolPanel")(suppressToolPanel.get.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
     if (toolPanelClass != null) __obj.updateDynamic("toolPanelClass")(toolPanelClass.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(js.Any.fromFunction1(tooltip))
     if (tooltipField != null) __obj.updateDynamic("tooltipField")(tooltipField.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(unSortIcon)) __obj.updateDynamic("unSortIcon")(unSortIcon.asInstanceOf[js.Any])
+    if (!js.isUndefined(unSortIcon)) __obj.updateDynamic("unSortIcon")(unSortIcon.get.asInstanceOf[js.Any])
     if (valueFormatter != null) __obj.updateDynamic("valueFormatter")(js.Any.fromFunction1(valueFormatter))
     if (valueGetter != null) __obj.updateDynamic("valueGetter")(valueGetter.asInstanceOf[js.Any])
     if (valueParser != null) __obj.updateDynamic("valueParser")(js.Any.fromFunction1(valueParser))
     if (valueSetter != null) __obj.updateDynamic("valueSetter")(valueSetter.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColDef]
   }
 }

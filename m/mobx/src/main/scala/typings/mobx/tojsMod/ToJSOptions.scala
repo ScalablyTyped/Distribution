@@ -18,9 +18,9 @@ object ToJSOptions {
     recurseEverything: js.UndefOr[Boolean] = js.undefined
   ): ToJSOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(detectCycles)) __obj.updateDynamic("detectCycles")(detectCycles.asInstanceOf[js.Any])
-    if (!js.isUndefined(exportMapsAsObjects)) __obj.updateDynamic("exportMapsAsObjects")(exportMapsAsObjects.asInstanceOf[js.Any])
-    if (!js.isUndefined(recurseEverything)) __obj.updateDynamic("recurseEverything")(recurseEverything.asInstanceOf[js.Any])
+    if (!js.isUndefined(detectCycles)) __obj.updateDynamic("detectCycles")(detectCycles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exportMapsAsObjects)) __obj.updateDynamic("exportMapsAsObjects")(exportMapsAsObjects.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(recurseEverything)) __obj.updateDynamic("recurseEverything")(recurseEverything.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToJSOptions]
   }
 }

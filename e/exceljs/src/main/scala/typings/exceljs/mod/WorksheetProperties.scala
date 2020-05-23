@@ -1,6 +1,6 @@
 package typings.exceljs.mod
 
-import typings.exceljs.PartialColor
+import typings.exceljs.anon.PartialColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,10 +42,10 @@ object WorksheetProperties {
     outlineLevelRow: Double,
     showGridLines: Boolean,
     tabColor: PartialColor,
-    defaultColWidth: Int | Double = null
+    defaultColWidth: js.UndefOr[Double] = js.undefined
   ): WorksheetProperties = {
     val __obj = js.Dynamic.literal(defaultRowHeight = defaultRowHeight.asInstanceOf[js.Any], dyDescent = dyDescent.asInstanceOf[js.Any], outlineLevelCol = outlineLevelCol.asInstanceOf[js.Any], outlineLevelRow = outlineLevelRow.asInstanceOf[js.Any], showGridLines = showGridLines.asInstanceOf[js.Any], tabColor = tabColor.asInstanceOf[js.Any])
-    if (defaultColWidth != null) __obj.updateDynamic("defaultColWidth")(defaultColWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultColWidth)) __obj.updateDynamic("defaultColWidth")(defaultColWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorksheetProperties]
   }
 }

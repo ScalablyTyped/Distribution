@@ -20,7 +20,7 @@ object UncontrolledCollapseProps {
   ): UncontrolledCollapseProps = {
     val __obj = js.Dynamic.literal(toggler = toggler.asInstanceOf[js.Any])
     if (CollapseProps != null) js.Dynamic.global.Object.assign(__obj, CollapseProps)
-    if (!js.isUndefined(defaultOpen)) __obj.updateDynamic("defaultOpen")(defaultOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultOpen)) __obj.updateDynamic("defaultOpen")(defaultOpen.get.asInstanceOf[js.Any])
     if (toggleEvents != null) __obj.updateDynamic("toggleEvents")(toggleEvents.asInstanceOf[js.Any])
     __obj.asInstanceOf[UncontrolledCollapseProps]
   }

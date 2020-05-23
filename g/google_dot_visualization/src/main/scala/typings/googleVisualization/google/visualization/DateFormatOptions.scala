@@ -28,11 +28,11 @@ trait DateFormatOptions extends js.Object {
 
 object DateFormatOptions {
   @scala.inline
-  def apply(formatType: String = null, pattern: String = null, timeZone: Int | Double = null): DateFormatOptions = {
+  def apply(formatType: String = null, pattern: String = null, timeZone: js.UndefOr[Double] = js.undefined): DateFormatOptions = {
     val __obj = js.Dynamic.literal()
     if (formatType != null) __obj.updateDynamic("formatType")(formatType.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeZone)) __obj.updateDynamic("timeZone")(timeZone.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateFormatOptions]
   }
 }

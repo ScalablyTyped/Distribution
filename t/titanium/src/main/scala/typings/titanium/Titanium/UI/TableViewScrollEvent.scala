@@ -7,34 +7,34 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the table view is scrolled.
-		 */
+  * Fired when the table view is scrolled.
+  */
 trait TableViewScrollEvent extends TableViewBaseEvent {
   /**
-  			 * Dictionary with `x` and `y` properties containing the content offset.
-  			 */
+    * Dictionary with `x` and `y` properties containing the content offset.
+    */
   var contentOffset: Point
   /**
-  			 * Dictionary with `width` and `height` properties containing the size of the content
-  			 * (regardless of the display size in the case of scrolling).
-  			 */
+    * Dictionary with `width` and `height` properties containing the size of the content
+    * (regardless of the display size in the case of scrolling).
+    */
   var contentSize: Size
   /**
-  			 * Row index of the topmost visible row in the view.
-  			 */
+    * Row index of the topmost visible row in the view.
+    */
   var firstVisibleItem: Double
   /**
-  			 * Dictionary with `width` and `height` properties containing the size of the visible
-  			 * table view
-  			 */
+    * Dictionary with `width` and `height` properties containing the size of the visible
+    * table view
+    */
   var size: Size
   /**
-  			 * Total number of rows in the view.
-  			 */
+    * Total number of rows in the view.
+    */
   var totalItemCount: Double
   /**
-  			 * Number of rows currently visible in the view.
-  			 */
+    * Number of rows currently visible in the view.
+    */
   var visibleItemCount: Double
 }
 

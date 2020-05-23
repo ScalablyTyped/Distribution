@@ -13,9 +13,9 @@ trait ArrowFormatOptions extends js.Object {
 
 object ArrowFormatOptions {
   @scala.inline
-  def apply(base: Int | Double = null): ArrowFormatOptions = {
+  def apply(base: js.UndefOr[Double] = js.undefined): ArrowFormatOptions = {
     val __obj = js.Dynamic.literal()
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (!js.isUndefined(base)) __obj.updateDynamic("base")(base.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrowFormatOptions]
   }
 }

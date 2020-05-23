@@ -17,7 +17,7 @@ object IColumnDef {
   @scala.inline
   def apply(allowCellFocus: js.UndefOr[Boolean] = js.undefined): IColumnDef = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowCellFocus)) __obj.updateDynamic("allowCellFocus")(allowCellFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCellFocus)) __obj.updateDynamic("allowCellFocus")(allowCellFocus.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColumnDef]
   }
 }

@@ -52,12 +52,12 @@ object BriefReporterOptions {
     suppressErrorReport: js.UndefOr[Boolean] = js.undefined
   ): BriefReporterOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(earlyErrorReport)) __obj.updateDynamic("earlyErrorReport")(earlyErrorReport.asInstanceOf[js.Any])
-    if (!js.isUndefined(omitExternalStackFrames)) __obj.updateDynamic("omitExternalStackFrames")(omitExternalStackFrames.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderOnRunCompleteOnly)) __obj.updateDynamic("renderOnRunCompleteOnly")(renderOnRunCompleteOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressBrowserLogs)) __obj.updateDynamic("suppressBrowserLogs")(suppressBrowserLogs.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressErrorHighlighting)) __obj.updateDynamic("suppressErrorHighlighting")(suppressErrorHighlighting.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressErrorReport)) __obj.updateDynamic("suppressErrorReport")(suppressErrorReport.asInstanceOf[js.Any])
+    if (!js.isUndefined(earlyErrorReport)) __obj.updateDynamic("earlyErrorReport")(earlyErrorReport.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(omitExternalStackFrames)) __obj.updateDynamic("omitExternalStackFrames")(omitExternalStackFrames.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderOnRunCompleteOnly)) __obj.updateDynamic("renderOnRunCompleteOnly")(renderOnRunCompleteOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressBrowserLogs)) __obj.updateDynamic("suppressBrowserLogs")(suppressBrowserLogs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressErrorHighlighting)) __obj.updateDynamic("suppressErrorHighlighting")(suppressErrorHighlighting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressErrorReport)) __obj.updateDynamic("suppressErrorReport")(suppressErrorReport.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BriefReporterOptions]
   }
 }

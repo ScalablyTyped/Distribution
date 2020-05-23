@@ -12,9 +12,9 @@ trait Configuration extends js.Object {
 
 object Configuration {
   @scala.inline
-  def apply(password: String, username: String, timeout: Int | Double = null): Configuration = {
+  def apply(password: String, username: String, timeout: js.UndefOr[Double] = js.undefined): Configuration = {
     val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }
 }

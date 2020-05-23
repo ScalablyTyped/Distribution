@@ -13,7 +13,7 @@ object MathMLInputProcessor {
   @scala.inline
   def apply(useMathMLspacing: js.UndefOr[Boolean] = js.undefined): MathMLInputProcessor = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(useMathMLspacing)) __obj.updateDynamic("useMathMLspacing")(useMathMLspacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(useMathMLspacing)) __obj.updateDynamic("useMathMLspacing")(useMathMLspacing.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MathMLInputProcessor]
   }
 }

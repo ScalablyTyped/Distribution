@@ -35,7 +35,7 @@ object TouchableWithoutFeedbackPropsIOS {
     tvParallaxProperties: TVParallaxProperties = null
   ): TouchableWithoutFeedbackPropsIOS = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.get.asInstanceOf[js.Any])
     if (tvParallaxProperties != null) __obj.updateDynamic("tvParallaxProperties")(tvParallaxProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchableWithoutFeedbackPropsIOS]
   }

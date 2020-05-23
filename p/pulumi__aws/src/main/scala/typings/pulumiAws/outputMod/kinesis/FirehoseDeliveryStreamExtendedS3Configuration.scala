@@ -68,8 +68,8 @@ object FirehoseDeliveryStreamExtendedS3Configuration {
     bucketArn: String,
     cloudwatchLoggingOptions: FirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptions,
     roleArn: String,
-    bufferInterval: Int | Double = null,
-    bufferSize: Int | Double = null,
+    bufferInterval: js.UndefOr[Double] = js.undefined,
+    bufferSize: js.UndefOr[Double] = js.undefined,
     compressionFormat: String = null,
     dataFormatConversionConfiguration: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration = null,
     errorOutputPrefix: String = null,
@@ -80,8 +80,8 @@ object FirehoseDeliveryStreamExtendedS3Configuration {
     s3BackupMode: String = null
   ): FirehoseDeliveryStreamExtendedS3Configuration = {
     val __obj = js.Dynamic.literal(bucketArn = bucketArn.asInstanceOf[js.Any], cloudwatchLoggingOptions = cloudwatchLoggingOptions.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
-    if (bufferInterval != null) __obj.updateDynamic("bufferInterval")(bufferInterval.asInstanceOf[js.Any])
-    if (bufferSize != null) __obj.updateDynamic("bufferSize")(bufferSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(bufferInterval)) __obj.updateDynamic("bufferInterval")(bufferInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bufferSize)) __obj.updateDynamic("bufferSize")(bufferSize.get.asInstanceOf[js.Any])
     if (compressionFormat != null) __obj.updateDynamic("compressionFormat")(compressionFormat.asInstanceOf[js.Any])
     if (dataFormatConversionConfiguration != null) __obj.updateDynamic("dataFormatConversionConfiguration")(dataFormatConversionConfiguration.asInstanceOf[js.Any])
     if (errorOutputPrefix != null) __obj.updateDynamic("errorOutputPrefix")(errorOutputPrefix.asInstanceOf[js.Any])

@@ -93,44 +93,44 @@ object TraceSummary {
   def apply(
     Annotations: Annotations = null,
     AvailabilityZones: TraceAvailabilityZones = null,
-    Duration: Int | scala.Double = null,
+    Duration: js.UndefOr[NullableDouble] = js.undefined,
     EntryPoint: ServiceId = null,
     ErrorRootCauses: ErrorRootCauses = null,
     FaultRootCauses: FaultRootCauses = null,
-    HasError: js.UndefOr[scala.Boolean] = js.undefined,
-    HasFault: js.UndefOr[scala.Boolean] = js.undefined,
-    HasThrottle: js.UndefOr[scala.Boolean] = js.undefined,
+    HasError: js.UndefOr[NullableBoolean] = js.undefined,
+    HasFault: js.UndefOr[NullableBoolean] = js.undefined,
+    HasThrottle: js.UndefOr[NullableBoolean] = js.undefined,
     Http: Http = null,
     Id: TraceId = null,
     InstanceIds: TraceInstanceIds = null,
-    IsPartial: js.UndefOr[scala.Boolean] = js.undefined,
+    IsPartial: js.UndefOr[NullableBoolean] = js.undefined,
     MatchedEventTime: Timestamp = null,
     ResourceARNs: TraceResourceARNs = null,
-    ResponseTime: Int | scala.Double = null,
+    ResponseTime: js.UndefOr[NullableDouble] = js.undefined,
     ResponseTimeRootCauses: ResponseTimeRootCauses = null,
-    Revision: Int | scala.Double = null,
+    Revision: js.UndefOr[Integer] = js.undefined,
     ServiceIds: ServiceIds = null,
     Users: TraceUsers = null
   ): TraceSummary = {
     val __obj = js.Dynamic.literal()
     if (Annotations != null) __obj.updateDynamic("Annotations")(Annotations.asInstanceOf[js.Any])
     if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones.asInstanceOf[js.Any])
-    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration.get.asInstanceOf[js.Any])
     if (EntryPoint != null) __obj.updateDynamic("EntryPoint")(EntryPoint.asInstanceOf[js.Any])
     if (ErrorRootCauses != null) __obj.updateDynamic("ErrorRootCauses")(ErrorRootCauses.asInstanceOf[js.Any])
     if (FaultRootCauses != null) __obj.updateDynamic("FaultRootCauses")(FaultRootCauses.asInstanceOf[js.Any])
-    if (!js.isUndefined(HasError)) __obj.updateDynamic("HasError")(HasError.asInstanceOf[js.Any])
-    if (!js.isUndefined(HasFault)) __obj.updateDynamic("HasFault")(HasFault.asInstanceOf[js.Any])
-    if (!js.isUndefined(HasThrottle)) __obj.updateDynamic("HasThrottle")(HasThrottle.asInstanceOf[js.Any])
+    if (!js.isUndefined(HasError)) __obj.updateDynamic("HasError")(HasError.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(HasFault)) __obj.updateDynamic("HasFault")(HasFault.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(HasThrottle)) __obj.updateDynamic("HasThrottle")(HasThrottle.get.asInstanceOf[js.Any])
     if (Http != null) __obj.updateDynamic("Http")(Http.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     if (InstanceIds != null) __obj.updateDynamic("InstanceIds")(InstanceIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsPartial)) __obj.updateDynamic("IsPartial")(IsPartial.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsPartial)) __obj.updateDynamic("IsPartial")(IsPartial.get.asInstanceOf[js.Any])
     if (MatchedEventTime != null) __obj.updateDynamic("MatchedEventTime")(MatchedEventTime.asInstanceOf[js.Any])
     if (ResourceARNs != null) __obj.updateDynamic("ResourceARNs")(ResourceARNs.asInstanceOf[js.Any])
-    if (ResponseTime != null) __obj.updateDynamic("ResponseTime")(ResponseTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(ResponseTime)) __obj.updateDynamic("ResponseTime")(ResponseTime.get.asInstanceOf[js.Any])
     if (ResponseTimeRootCauses != null) __obj.updateDynamic("ResponseTimeRootCauses")(ResponseTimeRootCauses.asInstanceOf[js.Any])
-    if (Revision != null) __obj.updateDynamic("Revision")(Revision.asInstanceOf[js.Any])
+    if (!js.isUndefined(Revision)) __obj.updateDynamic("Revision")(Revision.get.asInstanceOf[js.Any])
     if (ServiceIds != null) __obj.updateDynamic("ServiceIds")(ServiceIds.asInstanceOf[js.Any])
     if (Users != null) __obj.updateDynamic("Users")(Users.asInstanceOf[js.Any])
     __obj.asInstanceOf[TraceSummary]

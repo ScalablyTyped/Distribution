@@ -14,10 +14,10 @@ object CapabilitiesProvider {
   def apply(
     getServerCapabilities: DataProtocolClientCapabilities => Thenable[DataProtocolServerCapabilities],
     providerId: String,
-    handle: Int | Double = null
+    handle: js.UndefOr[Double] = js.undefined
   ): CapabilitiesProvider = {
     val __obj = js.Dynamic.literal(getServerCapabilities = js.Any.fromFunction1(getServerCapabilities), providerId = providerId.asInstanceOf[js.Any])
-    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
+    if (!js.isUndefined(handle)) __obj.updateDynamic("handle")(handle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CapabilitiesProvider]
   }
 }

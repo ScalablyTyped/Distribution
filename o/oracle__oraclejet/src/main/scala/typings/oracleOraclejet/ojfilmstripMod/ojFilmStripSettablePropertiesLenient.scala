@@ -1,8 +1,8 @@
 package typings.oracleOraclejet.ojfilmstripMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.AnonId
-import typings.oracleOraclejet.AnonLabelAccArrowNextPage
+import typings.oracleOraclejet.anon.Id
+import typings.oracleOraclejet.anon.LabelAccArrowNextPage
 import typings.oracleOraclejet.oracleOraclejetStrings.adjacent
 import typings.oracleOraclejet.oracleOraclejetStrings.auto
 import typings.oracleOraclejet.oracleOraclejetStrings.hidden
@@ -22,24 +22,24 @@ trait ojFilmStripSettablePropertiesLenient
   extends /* key */ StringDictionary[js.Any] {
   var arrowPlacement: js.UndefOr[adjacent | overlay] = js.undefined
   var arrowVisibility: js.UndefOr[visible | hidden | hover | auto] = js.undefined
-  var currentItem: js.UndefOr[AnonId] = js.undefined
+  var currentItem: js.UndefOr[Id] = js.undefined
   var looping: js.UndefOr[off | page] = js.undefined
   var maxItemsPerPage: js.UndefOr[Double] = js.undefined
   var orientation: js.UndefOr[horizontal | vertical] = js.undefined
-  var translations: js.UndefOr[AnonLabelAccArrowNextPage] = js.undefined
+  var translations: js.UndefOr[LabelAccArrowNextPage] = js.undefined
 }
 
 object ojFilmStripSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     arrowPlacement: adjacent | overlay = null,
     arrowVisibility: visible | hidden | hover | auto = null,
-    currentItem: AnonId = null,
+    currentItem: Id = null,
     looping: off | page = null,
-    maxItemsPerPage: Int | Double = null,
+    maxItemsPerPage: js.UndefOr[Double] = js.undefined,
     orientation: horizontal | vertical = null,
-    translations: AnonLabelAccArrowNextPage = null
+    translations: LabelAccArrowNextPage = null
   ): ojFilmStripSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
@@ -47,7 +47,7 @@ object ojFilmStripSettablePropertiesLenient {
     if (arrowVisibility != null) __obj.updateDynamic("arrowVisibility")(arrowVisibility.asInstanceOf[js.Any])
     if (currentItem != null) __obj.updateDynamic("currentItem")(currentItem.asInstanceOf[js.Any])
     if (looping != null) __obj.updateDynamic("looping")(looping.asInstanceOf[js.Any])
-    if (maxItemsPerPage != null) __obj.updateDynamic("maxItemsPerPage")(maxItemsPerPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxItemsPerPage)) __obj.updateDynamic("maxItemsPerPage")(maxItemsPerPage.get.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojFilmStripSettablePropertiesLenient]

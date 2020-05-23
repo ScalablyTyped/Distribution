@@ -23,8 +23,8 @@ object Participant {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInLobby)) __obj.updateDynamic("isInLobby")(isInLobby.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMuted)) __obj.updateDynamic("isMuted")(isMuted.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInLobby)) __obj.updateDynamic("isInLobby")(isInLobby.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMuted)) __obj.updateDynamic("isMuted")(isMuted.get.asInstanceOf[js.Any])
     if (mediaStreams != null) __obj.updateDynamic("mediaStreams")(mediaStreams.asInstanceOf[js.Any])
     __obj.asInstanceOf[Participant]
   }

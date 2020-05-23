@@ -1,25 +1,11 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.AnonName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.Action")
 @js.native
-class Action protected () extends IAction {
-  /**
-    * Creates a new Action
-    * @param triggerOptions the trigger, with or without parameters, for the action
-    * @param condition an optional determinant of action
-    */
-  def this(/** the trigger, with or without parameters, for the action */
-  triggerOptions: js.Any) = this()
-  def this(
-    /** the trigger, with or without parameters, for the action */
-  triggerOptions: js.Any,
-    condition: Condition
-  ) = this()
+trait Action extends IAction {
   /**
     * Internal only - manager for action
     * @hidden
@@ -67,22 +53,5 @@ class Action protected () extends IAction {
     * @see https://www.babylonjs-playground.com/#1T30HR#0
     */
   def `then`(action: Action): Action = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.Action")
-@js.native
-object Action extends js.Object {
-  /**
-    * Internal only
-    * @hidden
-    */
-  def _GetTargetProperty(target: Node): AnonName = js.native
-  def _GetTargetProperty(target: Scene): AnonName = js.native
-  /**
-    * Internal only
-    * @hidden
-    */
-  def _SerializeValueAsString(value: js.Any): String = js.native
 }
 

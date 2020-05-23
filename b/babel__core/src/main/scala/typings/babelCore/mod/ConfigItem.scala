@@ -1,6 +1,6 @@
 package typings.babelCore.mod
 
-import typings.babelCore.AnonRequest
+import typings.babelCore.anon.Request
 import typings.babelCore.babelCoreBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ trait ConfigItem extends js.Object {
     * Information about the plugin's file, if Babel knows it.
     *  *
     */
-  var file: js.UndefOr[AnonRequest | Null] = js.undefined
+  var file: js.UndefOr[Request | Null] = js.undefined
   /**
     * The name that the user gave the plugin instance, e.g. `plugins: [ ['env', {}, 'my-env'] ]`
     */
@@ -35,12 +35,12 @@ object ConfigItem {
   def apply(
     dirname: String,
     value: js.Object | (js.Function1[/* repeated */ js.Any, _]),
-    file: AnonRequest = null,
+    file: js.UndefOr[Null | Request] = js.undefined,
     name: String = null,
     options: js.Object | `false` = null
   ): ConfigItem = {
     val __obj = js.Dynamic.literal(dirname = dirname.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (!js.isUndefined(file)) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigItem]

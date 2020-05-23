@@ -35,19 +35,19 @@ trait Ebs extends js.Object {
 object Ebs {
   @scala.inline
   def apply(
-    DeleteOnTermination: js.UndefOr[Boolean] = js.undefined,
-    Encrypted: js.UndefOr[Boolean] = js.undefined,
-    Iops: Int | Double = null,
+    DeleteOnTermination: js.UndefOr[BlockDeviceEbsDeleteOnTermination] = js.undefined,
+    Encrypted: js.UndefOr[BlockDeviceEbsEncrypted] = js.undefined,
+    Iops: js.UndefOr[BlockDeviceEbsIops] = js.undefined,
     SnapshotId: XmlStringMaxLen255 = null,
-    VolumeSize: Int | Double = null,
+    VolumeSize: js.UndefOr[BlockDeviceEbsVolumeSize] = js.undefined,
     VolumeType: BlockDeviceEbsVolumeType = null
   ): Ebs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DeleteOnTermination)) __obj.updateDynamic("DeleteOnTermination")(DeleteOnTermination.asInstanceOf[js.Any])
-    if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.asInstanceOf[js.Any])
-    if (Iops != null) __obj.updateDynamic("Iops")(Iops.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeleteOnTermination)) __obj.updateDynamic("DeleteOnTermination")(DeleteOnTermination.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops.get.asInstanceOf[js.Any])
     if (SnapshotId != null) __obj.updateDynamic("SnapshotId")(SnapshotId.asInstanceOf[js.Any])
-    if (VolumeSize != null) __obj.updateDynamic("VolumeSize")(VolumeSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(VolumeSize)) __obj.updateDynamic("VolumeSize")(VolumeSize.get.asInstanceOf[js.Any])
     if (VolumeType != null) __obj.updateDynamic("VolumeType")(VolumeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ebs]
   }

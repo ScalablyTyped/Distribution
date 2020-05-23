@@ -1,5 +1,6 @@
 package typings.grammarkdown.mod
 
+import typings.esfxCancelable.distMod.Cancelable
 import typings.grammarkdown.optionsMod.CompilerOptions
 import typings.prex.mod.CancellationToken
 import typings.std.Iterable
@@ -26,6 +27,7 @@ class Grammar protected ()
 @JSImport("grammarkdown", "Grammar")
 @js.native
 object Grammar extends js.Object {
+  /** @deprecated since 2.1.0 - `prex.CancellationToken` may no longer be accepted in future releases. Please use a token that implements `@esfx/cancelable.Cancelable` */
   def convert(content: String): String = js.native
   def convert(content: String, options: CompilerOptions): String = js.native
   def convert(content: String, options: CompilerOptions, hostFallback: typings.grammarkdown.hostMod.AsyncHost): String = js.native
@@ -33,21 +35,39 @@ object Grammar extends js.Object {
     content: String,
     options: CompilerOptions,
     hostFallback: typings.grammarkdown.hostMod.AsyncHost,
-    cancellationToken: CancellationToken
+    cancelable: Cancelable
+  ): String = js.native
+  def convert(
+    content: String,
+    options: CompilerOptions,
+    hostFallback: typings.grammarkdown.hostMod.AsyncHost,
+    cancelable: CancellationToken
   ): String = js.native
   def convert(content: String, options: CompilerOptions, hostFallback: typings.grammarkdown.hostMod.Host): String = js.native
   def convert(
     content: String,
     options: CompilerOptions,
     hostFallback: typings.grammarkdown.hostMod.Host,
-    cancellationToken: CancellationToken
+    cancelable: Cancelable
+  ): String = js.native
+  def convert(
+    content: String,
+    options: CompilerOptions,
+    hostFallback: typings.grammarkdown.hostMod.Host,
+    cancelable: CancellationToken
   ): String = js.native
   def convert(content: String, options: CompilerOptions, hostFallback: typings.grammarkdown.hostMod.SyncHost): String = js.native
   def convert(
     content: String,
     options: CompilerOptions,
     hostFallback: typings.grammarkdown.hostMod.SyncHost,
-    cancellationToken: CancellationToken
+    cancelable: Cancelable
+  ): String = js.native
+  def convert(
+    content: String,
+    options: CompilerOptions,
+    hostFallback: typings.grammarkdown.hostMod.SyncHost,
+    cancelable: CancellationToken
   ): String = js.native
 }
 

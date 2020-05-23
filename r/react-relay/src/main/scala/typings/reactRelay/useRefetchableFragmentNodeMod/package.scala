@@ -22,7 +22,9 @@ package object useRefetchableFragmentNodeMod {
     TOptions
   ]
   type RefetchFnInexact[TQuery /* <: typings.relayRuntime.relayRuntimeTypesMod.OperationType */, TOptions] = typings.reactRelay.useRefetchableFragmentNodeMod.RefetchFnBase[
-    /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any, 
+    typings.std.Partial[
+      /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any
+    ], 
     TOptions
   ]
   type RefetchInexact[TQuery /* <: typings.relayRuntime.relayRuntimeTypesMod.OperationType */, TOptions] = js.Function1[

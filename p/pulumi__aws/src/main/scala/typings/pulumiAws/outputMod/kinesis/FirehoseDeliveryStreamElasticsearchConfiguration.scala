@@ -59,20 +59,20 @@ object FirehoseDeliveryStreamElasticsearchConfiguration {
     domainArn: String,
     indexName: String,
     roleArn: String,
-    bufferingInterval: Int | Double = null,
-    bufferingSize: Int | Double = null,
+    bufferingInterval: js.UndefOr[Double] = js.undefined,
+    bufferingSize: js.UndefOr[Double] = js.undefined,
     indexRotationPeriod: String = null,
     processingConfiguration: FirehoseDeliveryStreamElasticsearchConfigurationProcessingConfiguration = null,
-    retryDuration: Int | Double = null,
+    retryDuration: js.UndefOr[Double] = js.undefined,
     s3BackupMode: String = null,
     typeName: String = null
   ): FirehoseDeliveryStreamElasticsearchConfiguration = {
     val __obj = js.Dynamic.literal(cloudwatchLoggingOptions = cloudwatchLoggingOptions.asInstanceOf[js.Any], domainArn = domainArn.asInstanceOf[js.Any], indexName = indexName.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
-    if (bufferingInterval != null) __obj.updateDynamic("bufferingInterval")(bufferingInterval.asInstanceOf[js.Any])
-    if (bufferingSize != null) __obj.updateDynamic("bufferingSize")(bufferingSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(bufferingInterval)) __obj.updateDynamic("bufferingInterval")(bufferingInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bufferingSize)) __obj.updateDynamic("bufferingSize")(bufferingSize.get.asInstanceOf[js.Any])
     if (indexRotationPeriod != null) __obj.updateDynamic("indexRotationPeriod")(indexRotationPeriod.asInstanceOf[js.Any])
     if (processingConfiguration != null) __obj.updateDynamic("processingConfiguration")(processingConfiguration.asInstanceOf[js.Any])
-    if (retryDuration != null) __obj.updateDynamic("retryDuration")(retryDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(retryDuration)) __obj.updateDynamic("retryDuration")(retryDuration.get.asInstanceOf[js.Any])
     if (s3BackupMode != null) __obj.updateDynamic("s3BackupMode")(s3BackupMode.asInstanceOf[js.Any])
     if (typeName != null) __obj.updateDynamic("typeName")(typeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirehoseDeliveryStreamElasticsearchConfiguration]

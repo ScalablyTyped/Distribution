@@ -1,6 +1,5 @@
 package typings.typedoc
 
-import typings.typedoc.typedocStrings.predicate
 import typings.typedoc.typesAbstractMod.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,8 +15,6 @@ object typesPredicateMod extends js.Object {
     var asserts: Boolean = js.native
     var name: String = js.native
     var targetType: js.UndefOr[Type] = js.native
-    @JSName("type")
-    val type_PredicateType: predicate = js.native
   }
   
 }

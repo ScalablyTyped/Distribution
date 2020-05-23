@@ -1,7 +1,7 @@
 package typings.hapiAuthCookie.mod
 
 import typings.hapi.mod.Request
-import typings.hapiAuthCookie.ServerStateCookieOptionsn
+import typings.hapiAuthCookie.anon.ServerStateCookieOptionsn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,7 +61,7 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (appendNext != null) __obj.updateDynamic("appendNext")(appendNext.asInstanceOf[js.Any])
     if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.get.asInstanceOf[js.Any])
     if (redirectTo != null) __obj.updateDynamic("redirectTo")(redirectTo.asInstanceOf[js.Any])
     if (requestDecoratorName != null) __obj.updateDynamic("requestDecoratorName")(requestDecoratorName.asInstanceOf[js.Any])
     if (validateFunc != null) __obj.updateDynamic("validateFunc")(js.Any.fromFunction2(validateFunc))

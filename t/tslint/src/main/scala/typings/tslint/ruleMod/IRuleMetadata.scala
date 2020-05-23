@@ -1,6 +1,6 @@
 package typings.tslint.ruleMod
 
-import typings.tslint.AnonOptionsAny
+import typings.tslint.anon.OptionsAny
 import typings.tslint.tslintBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,7 +31,7 @@ trait IRuleMetadata extends js.Object {
     * Examples of what a standard config for the rule might look like.
     * Using a string[] here is deprecated. Write the options as a JSON object instead.
     */
-  var optionExamples: js.UndefOr[js.Array[`true` | AnonOptionsAny | js.Array[_] | String]] = js.undefined
+  var optionExamples: js.UndefOr[js.Array[`true` | js.Array[_] | OptionsAny | String]] = js.undefined
   /**
     * Schema of the options the rule accepts.
     * The first boolean for whether the rule is enabled or not is already implied.
@@ -78,7 +78,7 @@ object IRuleMetadata {
     deprecationMessage: String = null,
     descriptionDetails: String = null,
     hasFix: js.UndefOr[Boolean] = js.undefined,
-    optionExamples: js.Array[`true` | AnonOptionsAny | js.Array[_] | String] = null,
+    optionExamples: js.Array[`true` | js.Array[_] | OptionsAny | String] = null,
     rationale: String = null,
     requiresTypeInfo: js.UndefOr[Boolean] = js.undefined
   ): IRuleMetadata = {
@@ -87,10 +87,10 @@ object IRuleMetadata {
     if (codeExamples != null) __obj.updateDynamic("codeExamples")(codeExamples.asInstanceOf[js.Any])
     if (deprecationMessage != null) __obj.updateDynamic("deprecationMessage")(deprecationMessage.asInstanceOf[js.Any])
     if (descriptionDetails != null) __obj.updateDynamic("descriptionDetails")(descriptionDetails.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasFix)) __obj.updateDynamic("hasFix")(hasFix.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasFix)) __obj.updateDynamic("hasFix")(hasFix.get.asInstanceOf[js.Any])
     if (optionExamples != null) __obj.updateDynamic("optionExamples")(optionExamples.asInstanceOf[js.Any])
     if (rationale != null) __obj.updateDynamic("rationale")(rationale.asInstanceOf[js.Any])
-    if (!js.isUndefined(requiresTypeInfo)) __obj.updateDynamic("requiresTypeInfo")(requiresTypeInfo.asInstanceOf[js.Any])
+    if (!js.isUndefined(requiresTypeInfo)) __obj.updateDynamic("requiresTypeInfo")(requiresTypeInfo.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRuleMetadata]
   }
 }

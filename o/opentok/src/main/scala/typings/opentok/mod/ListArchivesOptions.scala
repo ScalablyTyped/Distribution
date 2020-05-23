@@ -12,10 +12,14 @@ trait ListArchivesOptions extends js.Object {
 
 object ListArchivesOptions {
   @scala.inline
-  def apply(count: Int | Double = null, offset: Int | Double = null, sessionId: String = null): ListArchivesOptions = {
+  def apply(
+    count: js.UndefOr[Double] = js.undefined,
+    offset: js.UndefOr[Double] = js.undefined,
+    sessionId: String = null
+  ): ListArchivesOptions = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListArchivesOptions]
   }

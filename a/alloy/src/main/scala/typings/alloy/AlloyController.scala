@@ -1,6 +1,7 @@
 package typings.alloy
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.alloy.anon.PartialProxy
 import typings.backbone.mod.EventsMixin
 import typings.std.Partial
 import typings.titanium.Titanium.Proxy
@@ -13,6 +14,9 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait AlloyController extends EventsMixin {
+  /**
+    * Provides convenience methods for working with Titanium Views in Alloy
+    */
   var UI: AlloyControllerUI = js.native
   var args: js.Any = js.native
   /**
@@ -41,10 +45,32 @@ trait AlloyController extends EventsMixin {
     * @returns Dictionary of properties that can be passed to a view factory function or applyProperties().
     */
   def createStyle(opts: js.Any): PartialProxy = js.native
+  /**
+    * Frees binding resources associated with this controller and its UI
+    * components.
+    *
+    * It is critical that this is called when employing model/collection binding
+    * in order to avoid potential memory leaks. `$.destroy()` should be called
+    * whenever a controller's UI is to be "closed" or removed from the app.
+    */
   def destroy(): Unit = js.native
+  /**
+    * Gets all the tracked event listeners of the view-controller or only the
+    * ones specified by the parameters.
+    *
+    * Passing no parameters, retrieves all tracked event listeners. Set a
+    * parameter to null if you do not want to restrict the match to that
+    * parameter.
+    *
+    * @param proxy Proxy view object.
+    * @param type Name of the event.
+    */
   def getListener(): js.Array[_] = js.native
   def getListener(proxy: Proxy): js.Array[_] = js.native
   def getListener(proxy: Proxy, `type`: String): js.Array[_] = js.native
+  /**
+    * Returns a list of the root view elements associated with this controller.
+    */
   def getTopLevelViews(): js.Array[_] = js.native
   /**
     * Returns the specified view associated with this controller.

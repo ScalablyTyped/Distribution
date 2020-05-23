@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-rnd" : "10.1.9"
+      "react-rnd" : "10.1.10"
     }
   ],
   "test-dependencies" : [
     {
-      "react-rnd" : "10.1.9"
+      "react-rnd" : "10.1.10"
     }
   ],
   "compile-devDependencies" : [

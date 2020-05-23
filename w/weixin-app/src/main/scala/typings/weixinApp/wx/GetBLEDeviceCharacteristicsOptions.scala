@@ -1,6 +1,6 @@
 package typings.weixinApp.wx
 
-import typings.weixinApp.characteristicsArrayuuids
+import typings.weixinApp.anon.characteristicsArrayuuids
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation._
 trait GetBLEDeviceCharacteristicsOptions
   extends BaseOptions[js.Any, js.Any] {
   /**
-  		 * 蓝牙设备 id，参考 device 对象
-  		 */
+    * 蓝牙设备 id，参考 device 对象
+    */
   var deviceId: String
   /**
-  		 * 蓝牙服务 uuid
-  		 */
+    * 蓝牙服务 uuid
+    */
   var serviceId: String
   /**
-  		 * 成功则返回本机蓝牙适配器状态
-  		 */
+    * 成功则返回本机蓝牙适配器状态
+    */
   @JSName("success")
   def success_MGetBLEDeviceCharacteristicsOptions(res: characteristicsArrayuuids): Unit
 }

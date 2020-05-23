@@ -3,35 +3,35 @@ package typings.reactPopperTooltip.typesMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.SyntheticEvent
 import typings.std.Element
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetTriggerPropsArg
   extends /* key */ StringDictionary[js.Any] {
-  var onBlur: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event_], Unit]] = js.undefined
-  var onClick: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event_], Unit]] = js.undefined
-  var onContextMenu: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event_], Unit]] = js.undefined
-  var onFocus: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event_], Unit]] = js.undefined
-  var onMouseEnter: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event_], Unit]] = js.undefined
-  var onMouseLeave: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event_], Unit]] = js.undefined
-  var onMouseMove: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event_], Unit]] = js.undefined
-  var onTouchEnd: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event_], Unit]] = js.undefined
+  var onBlur: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.undefined
+  var onContextMenu: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.undefined
+  var onFocus: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.undefined
+  var onMouseEnter: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.undefined
+  var onMouseLeave: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.undefined
+  var onMouseMove: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.undefined
+  var onTouchEnd: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.undefined
 }
 
 object GetTriggerPropsArg {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    onBlur: /* event */ SyntheticEvent[Element, Event_] => Unit = null,
-    onClick: /* event */ SyntheticEvent[Element, Event_] => Unit = null,
-    onContextMenu: /* event */ SyntheticEvent[Element, Event_] => Unit = null,
-    onFocus: /* event */ SyntheticEvent[Element, Event_] => Unit = null,
-    onMouseEnter: /* event */ SyntheticEvent[Element, Event_] => Unit = null,
-    onMouseLeave: /* event */ SyntheticEvent[Element, Event_] => Unit = null,
-    onMouseMove: /* event */ SyntheticEvent[Element, Event_] => Unit = null,
-    onTouchEnd: /* event */ SyntheticEvent[Element, Event_] => Unit = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    onBlur: /* event */ SyntheticEvent[Element, Event] => Unit = null,
+    onClick: /* event */ SyntheticEvent[Element, Event] => Unit = null,
+    onContextMenu: /* event */ SyntheticEvent[Element, Event] => Unit = null,
+    onFocus: /* event */ SyntheticEvent[Element, Event] => Unit = null,
+    onMouseEnter: /* event */ SyntheticEvent[Element, Event] => Unit = null,
+    onMouseLeave: /* event */ SyntheticEvent[Element, Event] => Unit = null,
+    onMouseMove: /* event */ SyntheticEvent[Element, Event] => Unit = null,
+    onTouchEnd: /* event */ SyntheticEvent[Element, Event] => Unit = null
   ): GetTriggerPropsArg = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

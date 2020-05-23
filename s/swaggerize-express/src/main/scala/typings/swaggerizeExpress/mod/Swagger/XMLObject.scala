@@ -17,7 +17,7 @@ trait XMLObject
 object XMLObject {
   @scala.inline
   def apply(
-    StringDictionary: /* index */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     attribute: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     namespace: String = null,
@@ -26,11 +26,11 @@ object XMLObject {
   ): XMLObject = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(attribute)) __obj.updateDynamic("attribute")(attribute.asInstanceOf[js.Any])
+    if (!js.isUndefined(attribute)) __obj.updateDynamic("attribute")(attribute.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapped)) __obj.updateDynamic("wrapped")(wrapped.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapped)) __obj.updateDynamic("wrapped")(wrapped.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[XMLObject]
   }
 }

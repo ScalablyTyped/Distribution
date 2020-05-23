@@ -57,7 +57,7 @@ object ListFeedbackParams {
     include_total: js.UndefOr[Boolean] = js.undefined,
     model_id: String = null,
     model_version: String = null,
-    page_limit: Int | Double = null,
+    page_limit: js.UndefOr[Double] = js.undefined,
     return_response: js.UndefOr[Boolean] = js.undefined,
     sort: String = null,
     type_added: String = null,
@@ -74,11 +74,11 @@ object ListFeedbackParams {
     if (document_title != null) __obj.updateDynamic("document_title")(document_title.asInstanceOf[js.Any])
     if (feedback_type != null) __obj.updateDynamic("feedback_type")(feedback_type.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(include_total)) __obj.updateDynamic("include_total")(include_total.asInstanceOf[js.Any])
+    if (!js.isUndefined(include_total)) __obj.updateDynamic("include_total")(include_total.get.asInstanceOf[js.Any])
     if (model_id != null) __obj.updateDynamic("model_id")(model_id.asInstanceOf[js.Any])
     if (model_version != null) __obj.updateDynamic("model_version")(model_version.asInstanceOf[js.Any])
-    if (page_limit != null) __obj.updateDynamic("page_limit")(page_limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(page_limit)) __obj.updateDynamic("page_limit")(page_limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (type_added != null) __obj.updateDynamic("type_added")(type_added.asInstanceOf[js.Any])
     if (type_not_changed != null) __obj.updateDynamic("type_not_changed")(type_not_changed.asInstanceOf[js.Any])

@@ -17,14 +17,14 @@ object PathsOptions {
   def apply(
     direction: EdgeDirection = null,
     followCycles: js.UndefOr[Boolean] = js.undefined,
-    maxLength: Int | Double = null,
-    minLength: Int | Double = null
+    maxLength: js.UndefOr[Double] = js.undefined,
+    minLength: js.UndefOr[Double] = js.undefined
   ): PathsOptions = {
     val __obj = js.Dynamic.literal()
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(followCycles)) __obj.updateDynamic("followCycles")(followCycles.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(followCycles)) __obj.updateDynamic("followCycles")(followCycles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minLength)) __obj.updateDynamic("minLength")(minLength.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathsOptions]
   }
 }

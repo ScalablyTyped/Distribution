@@ -29,25 +29,25 @@ trait ILoremIpsumParams extends js.Object {
 object ILoremIpsumParams {
   @scala.inline
   def apply(
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     format: plain | html = null,
-    paragraphLowerBound: Int | Double = null,
-    paragraphUpperBound: Int | Double = null,
+    paragraphLowerBound: js.UndefOr[Double] = js.undefined,
+    paragraphUpperBound: js.UndefOr[Double] = js.undefined,
     random: () => Double = null,
-    sentenceLowerBound: Int | Double = null,
-    sentenceUpperBound: Int | Double = null,
+    sentenceLowerBound: js.UndefOr[Double] = js.undefined,
+    sentenceUpperBound: js.UndefOr[Double] = js.undefined,
     suffix: String = null,
     units: words | word | sentences | sentence | paragraphs | paragraph = null,
     words: js.Array[String] = null
   ): ILoremIpsumParams = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (paragraphLowerBound != null) __obj.updateDynamic("paragraphLowerBound")(paragraphLowerBound.asInstanceOf[js.Any])
-    if (paragraphUpperBound != null) __obj.updateDynamic("paragraphUpperBound")(paragraphUpperBound.asInstanceOf[js.Any])
+    if (!js.isUndefined(paragraphLowerBound)) __obj.updateDynamic("paragraphLowerBound")(paragraphLowerBound.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(paragraphUpperBound)) __obj.updateDynamic("paragraphUpperBound")(paragraphUpperBound.get.asInstanceOf[js.Any])
     if (random != null) __obj.updateDynamic("random")(js.Any.fromFunction0(random))
-    if (sentenceLowerBound != null) __obj.updateDynamic("sentenceLowerBound")(sentenceLowerBound.asInstanceOf[js.Any])
-    if (sentenceUpperBound != null) __obj.updateDynamic("sentenceUpperBound")(sentenceUpperBound.asInstanceOf[js.Any])
+    if (!js.isUndefined(sentenceLowerBound)) __obj.updateDynamic("sentenceLowerBound")(sentenceLowerBound.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sentenceUpperBound)) __obj.updateDynamic("sentenceUpperBound")(sentenceUpperBound.get.asInstanceOf[js.Any])
     if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     if (words != null) __obj.updateDynamic("words")(words.asInstanceOf[js.Any])

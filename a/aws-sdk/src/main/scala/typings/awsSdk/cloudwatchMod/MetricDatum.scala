@@ -51,20 +51,20 @@ object MetricDatum {
     Counts: Counts = null,
     Dimensions: Dimensions = null,
     StatisticValues: StatisticSet = null,
-    StorageResolution: Int | Double = null,
+    StorageResolution: js.UndefOr[StorageResolution] = js.undefined,
     Timestamp: Timestamp = null,
     Unit: StandardUnit = null,
-    Value: Int | Double = null,
+    Value: js.UndefOr[DatapointValue] = js.undefined,
     Values: Values = null
   ): MetricDatum = {
     val __obj = js.Dynamic.literal(MetricName = MetricName.asInstanceOf[js.Any])
     if (Counts != null) __obj.updateDynamic("Counts")(Counts.asInstanceOf[js.Any])
     if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions.asInstanceOf[js.Any])
     if (StatisticValues != null) __obj.updateDynamic("StatisticValues")(StatisticValues.asInstanceOf[js.Any])
-    if (StorageResolution != null) __obj.updateDynamic("StorageResolution")(StorageResolution.asInstanceOf[js.Any])
+    if (!js.isUndefined(StorageResolution)) __obj.updateDynamic("StorageResolution")(StorageResolution.get.asInstanceOf[js.Any])
     if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp.asInstanceOf[js.Any])
     if (Unit != null) __obj.updateDynamic("Unit")(Unit.asInstanceOf[js.Any])
-    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
+    if (!js.isUndefined(Value)) __obj.updateDynamic("Value")(Value.get.asInstanceOf[js.Any])
     if (Values != null) __obj.updateDynamic("Values")(Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricDatum]
   }

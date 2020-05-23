@@ -1,6 +1,6 @@
 package typings.xstate.interpreterMod
 
-import typings.xstate.PartialInterpreterOptions
+import typings.xstate.anon.PartialInterpreterOptions
 import typings.xstate.typesMod.EventObject
 import typings.xstate.typesMod.StateMachine
 import typings.xstate.typesMod.StateSchema

@@ -48,7 +48,7 @@ object GetReservedInstancesExchangeQuoteResult {
   @scala.inline
   def apply(
     CurrencyCode: String = null,
-    IsValidExchange: js.UndefOr[scala.Boolean] = js.undefined,
+    IsValidExchange: js.UndefOr[Boolean] = js.undefined,
     OutputReservedInstancesWillExpireAt: DateTime = null,
     PaymentDue: String = null,
     ReservedInstanceValueRollup: ReservationValue = null,
@@ -59,7 +59,7 @@ object GetReservedInstancesExchangeQuoteResult {
   ): GetReservedInstancesExchangeQuoteResult = {
     val __obj = js.Dynamic.literal()
     if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsValidExchange)) __obj.updateDynamic("IsValidExchange")(IsValidExchange.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsValidExchange)) __obj.updateDynamic("IsValidExchange")(IsValidExchange.get.asInstanceOf[js.Any])
     if (OutputReservedInstancesWillExpireAt != null) __obj.updateDynamic("OutputReservedInstancesWillExpireAt")(OutputReservedInstancesWillExpireAt.asInstanceOf[js.Any])
     if (PaymentDue != null) __obj.updateDynamic("PaymentDue")(PaymentDue.asInstanceOf[js.Any])
     if (ReservedInstanceValueRollup != null) __obj.updateDynamic("ReservedInstanceValueRollup")(ReservedInstanceValueRollup.asInstanceOf[js.Any])

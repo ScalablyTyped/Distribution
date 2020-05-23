@@ -12,6 +12,7 @@ trait UploadListProps[T] extends js.Object {
   var iconRender: js.UndefOr[
     js.Function2[/* file */ UploadFile[T], /* listType */ js.UndefOr[UploadListType], ReactNode]
   ] = js.undefined
+  var isImageUrl: js.UndefOr[js.Function1[/* file */ UploadFile[_], Boolean]] = js.undefined
   var items: js.UndefOr[js.Array[UploadFile[T]]] = js.undefined
   var listType: js.UndefOr[UploadListType] = js.undefined
   var locale: UploadLocale
@@ -33,6 +34,7 @@ object UploadListProps {
     locale: UploadLocale,
     downloadIcon: ReactNode = null,
     iconRender: (/* file */ UploadFile[T], /* listType */ js.UndefOr[UploadListType]) => ReactNode = null,
+    isImageUrl: /* file */ UploadFile[_] => Boolean = null,
     items: js.Array[UploadFile[T]] = null,
     listType: UploadListType = null,
     onDownload: /* file */ UploadFile[T] => Unit = null,
@@ -49,6 +51,7 @@ object UploadListProps {
     val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any])
     if (downloadIcon != null) __obj.updateDynamic("downloadIcon")(downloadIcon.asInstanceOf[js.Any])
     if (iconRender != null) __obj.updateDynamic("iconRender")(js.Any.fromFunction2(iconRender))
+    if (isImageUrl != null) __obj.updateDynamic("isImageUrl")(js.Any.fromFunction1(isImageUrl))
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (listType != null) __obj.updateDynamic("listType")(listType.asInstanceOf[js.Any])
     if (onDownload != null) __obj.updateDynamic("onDownload")(js.Any.fromFunction1(onDownload))
@@ -58,9 +61,9 @@ object UploadListProps {
     if (previewFile != null) __obj.updateDynamic("previewFile")(js.Any.fromFunction1(previewFile))
     if (progressAttr != null) __obj.updateDynamic("progressAttr")(progressAttr.asInstanceOf[js.Any])
     if (removeIcon != null) __obj.updateDynamic("removeIcon")(removeIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDownloadIcon)) __obj.updateDynamic("showDownloadIcon")(showDownloadIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPreviewIcon)) __obj.updateDynamic("showPreviewIcon")(showPreviewIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRemoveIcon)) __obj.updateDynamic("showRemoveIcon")(showRemoveIcon.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDownloadIcon)) __obj.updateDynamic("showDownloadIcon")(showDownloadIcon.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPreviewIcon)) __obj.updateDynamic("showPreviewIcon")(showPreviewIcon.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRemoveIcon)) __obj.updateDynamic("showRemoveIcon")(showRemoveIcon.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadListProps[T]]
   }
 }

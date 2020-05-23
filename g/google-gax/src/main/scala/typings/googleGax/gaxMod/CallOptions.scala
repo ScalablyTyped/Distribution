@@ -26,31 +26,31 @@ object CallOptions {
   @scala.inline
   def apply(
     autoPaginate: js.UndefOr[Boolean] = js.undefined,
-    bundleOptions: BundleOptions = null,
+    bundleOptions: js.UndefOr[Null | BundleOptions] = js.undefined,
     isBundling: js.UndefOr[Boolean] = js.undefined,
     longrunning: BackoffSettings = null,
-    maxResults: Int | Double = null,
-    maxRetries: Int | Double = null,
+    maxResults: js.UndefOr[Double] = js.undefined,
+    maxRetries: js.UndefOr[Double] = js.undefined,
     otherArgs: StringDictionary[js.Any] = null,
-    pageSize: Int | Double = null,
+    pageSize: js.UndefOr[Double] = js.undefined,
     pageToken: String = null,
     promise: PromiseConstructor = null,
-    retry: RetryOptions = null,
-    timeout: Int | Double = null
+    retry: js.UndefOr[Null | RetryOptions] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined
   ): CallOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoPaginate)) __obj.updateDynamic("autoPaginate")(autoPaginate.asInstanceOf[js.Any])
-    if (bundleOptions != null) __obj.updateDynamic("bundleOptions")(bundleOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBundling)) __obj.updateDynamic("isBundling")(isBundling.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPaginate)) __obj.updateDynamic("autoPaginate")(autoPaginate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bundleOptions)) __obj.updateDynamic("bundleOptions")(bundleOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBundling)) __obj.updateDynamic("isBundling")(isBundling.get.asInstanceOf[js.Any])
     if (longrunning != null) __obj.updateDynamic("longrunning")(longrunning.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
     if (otherArgs != null) __obj.updateDynamic("otherArgs")(otherArgs.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     if (promise != null) __obj.updateDynamic("promise")(promise.asInstanceOf[js.Any])
-    if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(retry)) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallOptions]
   }
 }

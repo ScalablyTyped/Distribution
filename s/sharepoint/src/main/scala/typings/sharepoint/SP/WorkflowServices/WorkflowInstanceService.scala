@@ -10,9 +10,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Reads the SharePoint workflow instances from the external workflow host and manages the instance execution. */
-@JSGlobal("SP.WorkflowServices.WorkflowInstanceService")
 @js.native
-class WorkflowInstanceService () extends ClientObject {
+trait WorkflowInstanceService extends ClientObject {
   /** Sends a cancel message to the specified workflow instance and permits the instance to execute a cancellation scope. */
   def cancelWorkflow(instance: WorkflowInstance): Unit = js.native
   /** Retrieves a count of all the instances of the specified WorkflowSubscription. */

@@ -1,6 +1,6 @@
 package typings.bmpJs.mod
 
-import typings.bmpJs.AnonBlue
+import typings.bmpJs.anon.Blue
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,7 +24,7 @@ class BmpDecoder protected () extends ImageData {
   var hr: Double = js.native
   var importantColors: Double = js.native
   var offset: Double = js.native
-  var palette: js.Array[AnonBlue] = js.native
+  var palette: js.Array[Blue] = js.native
   var planes: Double = js.native
   var pos: Double = js.native
   var rawSize: Double = js.native

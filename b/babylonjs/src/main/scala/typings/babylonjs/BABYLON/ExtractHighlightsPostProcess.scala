@@ -4,75 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.ExtractHighlightsPostProcess")
 @js.native
-class ExtractHighlightsPostProcess protected () extends PostProcess {
-  def this(name: String, options: Double, camera: Nullable[Camera]) = this()
-  def this(name: String, options: PostProcessOptions, camera: Nullable[Camera]) = this()
-  def this(name: String, options: Double, camera: Nullable[Camera], samplingMode: Double) = this()
-  def this(name: String, options: PostProcessOptions, camera: Nullable[Camera], samplingMode: Double) = this()
-  def this(name: String, options: Double, camera: Nullable[Camera], samplingMode: Double, engine: Engine) = this()
-  def this(
-    name: String,
-    options: PostProcessOptions,
-    camera: Nullable[Camera],
-    samplingMode: Double,
-    engine: Engine
-  ) = this()
-  def this(
-    name: String,
-    options: Double,
-    camera: Nullable[Camera],
-    samplingMode: Double,
-    engine: Engine,
-    reusable: Boolean
-  ) = this()
-  def this(
-    name: String,
-    options: PostProcessOptions,
-    camera: Nullable[Camera],
-    samplingMode: Double,
-    engine: Engine,
-    reusable: Boolean
-  ) = this()
-  def this(
-    name: String,
-    options: Double,
-    camera: Nullable[Camera],
-    samplingMode: Double,
-    engine: Engine,
-    reusable: Boolean,
-    textureType: Double
-  ) = this()
-  def this(
-    name: String,
-    options: PostProcessOptions,
-    camera: Nullable[Camera],
-    samplingMode: Double,
-    engine: Engine,
-    reusable: Boolean,
-    textureType: Double
-  ) = this()
-  def this(
-    name: String,
-    options: Double,
-    camera: Nullable[Camera],
-    samplingMode: Double,
-    engine: Engine,
-    reusable: Boolean,
-    textureType: Double,
-    blockCompilation: Boolean
-  ) = this()
-  def this(
-    name: String,
-    options: PostProcessOptions,
-    camera: Nullable[Camera],
-    samplingMode: Double,
-    engine: Engine,
-    reusable: Boolean,
-    textureType: Double,
-    blockCompilation: Boolean
-  ) = this()
+trait ExtractHighlightsPostProcess extends PostProcess {
   /** @hidden */
   var _exposure: Double = js.native
   /**

@@ -16,14 +16,14 @@ import scala.scalajs.js.annotation._
 trait PivotLayoutData extends js.Object {
   /**
     *
-    * Specifies whether formatting will be automatically formatted when it’s refreshed or when fields are moved
+    * Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
     *
     * [Api set: ExcelApi 1.9]
     */
   var autoFormat: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Specifies whether the field list can be shown in the UI.
+    * Specifies if the field list can be shown in the UI.
     *
     * [Api set: ExcelApi 1.10]
     */
@@ -37,21 +37,21 @@ trait PivotLayoutData extends js.Object {
   var layoutType: js.UndefOr[PivotLayoutType | Compact | Tabular | Outline] = js.undefined
   /**
     *
-    * Specifies whether formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
+    * Specifies if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
     *
     * [Api set: ExcelApi 1.9]
     */
   var preserveFormatting: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Specifies whether the PivotTable report shows grand totals for columns.
+    * Specifies if the PivotTable report shows grand totals for columns.
     *
     * [Api set: ExcelApi 1.8]
     */
   var showColumnGrandTotals: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Specifies whether the PivotTable report shows grand totals for rows.
+    * Specifies if the PivotTable report shows grand totals for rows.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -77,12 +77,12 @@ object PivotLayoutData {
     subtotalLocation: SubtotalLocationType | AtTop | AtBottom | Off = null
   ): PivotLayoutData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFormat)) __obj.updateDynamic("autoFormat")(autoFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableFieldList)) __obj.updateDynamic("enableFieldList")(enableFieldList.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFormat)) __obj.updateDynamic("autoFormat")(autoFormat.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableFieldList)) __obj.updateDynamic("enableFieldList")(enableFieldList.get.asInstanceOf[js.Any])
     if (layoutType != null) __obj.updateDynamic("layoutType")(layoutType.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveFormatting)) __obj.updateDynamic("preserveFormatting")(preserveFormatting.asInstanceOf[js.Any])
-    if (!js.isUndefined(showColumnGrandTotals)) __obj.updateDynamic("showColumnGrandTotals")(showColumnGrandTotals.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRowGrandTotals)) __obj.updateDynamic("showRowGrandTotals")(showRowGrandTotals.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveFormatting)) __obj.updateDynamic("preserveFormatting")(preserveFormatting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showColumnGrandTotals)) __obj.updateDynamic("showColumnGrandTotals")(showColumnGrandTotals.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRowGrandTotals)) __obj.updateDynamic("showRowGrandTotals")(showRowGrandTotals.get.asInstanceOf[js.Any])
     if (subtotalLocation != null) __obj.updateDynamic("subtotalLocation")(subtotalLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotLayoutData]
   }

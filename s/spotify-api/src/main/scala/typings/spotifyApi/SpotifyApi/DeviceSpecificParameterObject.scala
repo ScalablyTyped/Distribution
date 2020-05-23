@@ -18,14 +18,14 @@ object DeviceSpecificParameterObject {
     context_uri: String = null,
     device_id: String = null,
     offset: js.Object = null,
-    position_ms: Int | Double = null,
+    position_ms: js.UndefOr[Double] = js.undefined,
     uris: js.Array[String] = null
   ): DeviceSpecificParameterObject = {
     val __obj = js.Dynamic.literal()
     if (context_uri != null) __obj.updateDynamic("context_uri")(context_uri.asInstanceOf[js.Any])
     if (device_id != null) __obj.updateDynamic("device_id")(device_id.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (position_ms != null) __obj.updateDynamic("position_ms")(position_ms.asInstanceOf[js.Any])
+    if (!js.isUndefined(position_ms)) __obj.updateDynamic("position_ms")(position_ms.get.asInstanceOf[js.Any])
     if (uris != null) __obj.updateDynamic("uris")(uris.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceSpecificParameterObject]
   }

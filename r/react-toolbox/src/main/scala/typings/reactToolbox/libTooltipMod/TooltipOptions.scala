@@ -23,7 +23,7 @@ object TooltipOptions {
   @scala.inline
   def apply(
     className: String = null,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     hideOnClick: js.UndefOr[Boolean] = js.undefined,
     passthrough: js.UndefOr[Boolean] = js.undefined,
     position: bottom | horizontal | left | right | top | vertical = null,
@@ -31,11 +31,11 @@ object TooltipOptions {
   ): TooltipOptions = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideOnClick)) __obj.updateDynamic("hideOnClick")(hideOnClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(passthrough)) __obj.updateDynamic("passthrough")(passthrough.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideOnClick)) __obj.updateDynamic("hideOnClick")(hideOnClick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passthrough)) __obj.updateDynamic("passthrough")(passthrough.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOnClick)) __obj.updateDynamic("showOnClick")(showOnClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOnClick)) __obj.updateDynamic("showOnClick")(showOnClick.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipOptions]
   }
 }

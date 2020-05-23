@@ -1,8 +1,8 @@
 package typings.gapiClientGenomics.gapi.client.genomics
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientGenomics.AnonAccesstoken
-import typings.gapiClientGenomics.AnonReferenceSetId
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientGenomics.anon.Accesstoken
+import typings.gapiClientGenomics.anon.ReferenceSetId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait ReferencesetsResource extends js.Object {
     * Implements
     * [GlobalAllianceApi.getReferenceSet](https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/referencemethods.avdl#L83).
     */
-  def get(request: AnonReferenceSetId): Request_[ReferenceSet]
+  def get(request: ReferenceSetId): Request[ReferenceSet]
   /**
     * Searches for reference sets which match the given criteria.
     *
@@ -29,14 +29,14 @@ trait ReferencesetsResource extends js.Object {
     * Implements
     * [GlobalAllianceApi.searchReferenceSets](https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/referencemethods.avdl#L71)
     */
-  def search(request: AnonAccesstoken): Request_[SearchReferenceSetsResponse]
+  def search(request: Accesstoken): Request[SearchReferenceSetsResponse]
 }
 
 object ReferencesetsResource {
   @scala.inline
   def apply(
-    get: AnonReferenceSetId => Request_[ReferenceSet],
-    search: AnonAccesstoken => Request_[SearchReferenceSetsResponse]
+    get: ReferenceSetId => Request[ReferenceSet],
+    search: Accesstoken => Request[SearchReferenceSetsResponse]
   ): ReferencesetsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), search = js.Any.fromFunction1(search))
     __obj.asInstanceOf[ReferencesetsResource]

@@ -14,11 +14,13 @@ trait Scene
   var behaviors: js.Array[Behavior] = js.native
   var camera: Camera = js.native
   var canvas: HTMLCanvasElement = js.native
+  var effect: js.UndefOr[js.Any] = js.native
   var isMobile: Boolean = js.native
   @JSName("object3D")
   var object3D_Scene: typings.three.mod.Scene = js.native
   var renderStarted: Boolean = js.native
   var renderer: WebGLRenderer = js.native
+   // THREE.VREffect
   var systems: ObjectMap[System[_]] = js.native
   var time: Double = js.native
   def addEventListener(`type`: SceneEvents, listener: EventListener): Unit = js.native

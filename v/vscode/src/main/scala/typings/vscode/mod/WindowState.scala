@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait WindowState extends js.Object {
   /**
-  		 * Whether the current window is focused.
-  		 */
+    * Whether the current window is focused.
+    */
   val focused: Boolean
 }
 

@@ -1,6 +1,5 @@
 package typings.applicationinsightsJs.Microsoft.ApplicationInsights
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,20 +25,6 @@ object FieldType extends js.Object {
   
   @js.native
   sealed trait Required extends FieldType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FieldType with Double] = js.native
-  /* 2 */ @js.native
-  object Array extends TopLevel[Array with Double]
-  
-  /* 0 */ @js.native
-  object Default extends TopLevel[Default with Double]
-  
-  /* 4 */ @js.native
-  object Hidden extends TopLevel[Hidden with Double]
-  
-  /* 1 */ @js.native
-  object Required extends TopLevel[Required with Double]
   
 }
 

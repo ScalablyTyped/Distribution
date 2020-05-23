@@ -31,22 +31,22 @@ object NativeAndroidChannel {
     group: String = null,
     lightColor: String = null,
     lightsEnabled: js.UndefOr[Boolean] = js.undefined,
-    lockScreenVisibility: Int | Double = null,
+    lockScreenVisibility: js.UndefOr[Double] = js.undefined,
     showBadge: js.UndefOr[Boolean] = js.undefined,
     sound: String = null,
     vibrationEnabled: js.UndefOr[Boolean] = js.undefined,
     vibrationPattern: js.Array[Double] = null
   ): NativeAndroidChannel = {
     val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any], importance = importance.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (!js.isUndefined(bypassDnd)) __obj.updateDynamic("bypassDnd")(bypassDnd.asInstanceOf[js.Any])
+    if (!js.isUndefined(bypassDnd)) __obj.updateDynamic("bypassDnd")(bypassDnd.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (lightColor != null) __obj.updateDynamic("lightColor")(lightColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(lightsEnabled)) __obj.updateDynamic("lightsEnabled")(lightsEnabled.asInstanceOf[js.Any])
-    if (lockScreenVisibility != null) __obj.updateDynamic("lockScreenVisibility")(lockScreenVisibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(showBadge)) __obj.updateDynamic("showBadge")(showBadge.asInstanceOf[js.Any])
+    if (!js.isUndefined(lightsEnabled)) __obj.updateDynamic("lightsEnabled")(lightsEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockScreenVisibility)) __obj.updateDynamic("lockScreenVisibility")(lockScreenVisibility.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showBadge)) __obj.updateDynamic("showBadge")(showBadge.get.asInstanceOf[js.Any])
     if (sound != null) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
-    if (!js.isUndefined(vibrationEnabled)) __obj.updateDynamic("vibrationEnabled")(vibrationEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(vibrationEnabled)) __obj.updateDynamic("vibrationEnabled")(vibrationEnabled.get.asInstanceOf[js.Any])
     if (vibrationPattern != null) __obj.updateDynamic("vibrationPattern")(vibrationPattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeAndroidChannel]
   }

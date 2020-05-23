@@ -10,9 +10,9 @@ trait LoadProcessConfig extends js.Object {
 
 object LoadProcessConfig {
   @scala.inline
-  def apply(sampleInterval: Int | Double = null): LoadProcessConfig = {
+  def apply(sampleInterval: js.UndefOr[Double] = js.undefined): LoadProcessConfig = {
     val __obj = js.Dynamic.literal()
-    if (sampleInterval != null) __obj.updateDynamic("sampleInterval")(sampleInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampleInterval)) __obj.updateDynamic("sampleInterval")(sampleInterval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadProcessConfig]
   }
 }

@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Storage.Search
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,17 +18,6 @@ object IndexerOption extends js.Object {
   
   @js.native
   sealed trait useIndexerWhenAvailable extends IndexerOption
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[IndexerOption with Double] = js.native
-  /* 2 */ @js.native
-  object doNotUseIndexer extends TopLevel[doNotUseIndexer with Double]
-  
-  /* 1 */ @js.native
-  object onlyUseIndexer extends TopLevel[onlyUseIndexer with Double]
-  
-  /* 0 */ @js.native
-  object useIndexerWhenAvailable extends TopLevel[useIndexerWhenAvailable with Double]
   
 }
 

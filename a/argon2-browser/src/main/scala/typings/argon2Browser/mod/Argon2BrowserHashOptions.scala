@@ -22,18 +22,18 @@ object Argon2BrowserHashOptions {
     pass: String | Uint8Array,
     salt: String | Uint8Array,
     distPath: String = null,
-    hashLen: Int | Double = null,
-    mem: Int | Double = null,
-    parallelism: Int | Double = null,
-    time: Int | Double = null,
+    hashLen: js.UndefOr[Double] = js.undefined,
+    mem: js.UndefOr[Double] = js.undefined,
+    parallelism: js.UndefOr[Double] = js.undefined,
+    time: js.UndefOr[Double] = js.undefined,
     `type`: ArgonType = null
   ): Argon2BrowserHashOptions = {
     val __obj = js.Dynamic.literal(pass = pass.asInstanceOf[js.Any], salt = salt.asInstanceOf[js.Any])
     if (distPath != null) __obj.updateDynamic("distPath")(distPath.asInstanceOf[js.Any])
-    if (hashLen != null) __obj.updateDynamic("hashLen")(hashLen.asInstanceOf[js.Any])
-    if (mem != null) __obj.updateDynamic("mem")(mem.asInstanceOf[js.Any])
-    if (parallelism != null) __obj.updateDynamic("parallelism")(parallelism.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (!js.isUndefined(hashLen)) __obj.updateDynamic("hashLen")(hashLen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mem)) __obj.updateDynamic("mem")(mem.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(parallelism)) __obj.updateDynamic("parallelism")(parallelism.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(time)) __obj.updateDynamic("time")(time.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Argon2BrowserHashOptions]
   }

@@ -9,31 +9,31 @@ import scala.scalajs.js.annotation._
   */
 trait YQLResponse extends ErrorResponse {
   /**
-  	 * The data payload received from the YQL.
-  	 */
+    * The data payload received from the YQL.
+    */
   var data: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Error message, if any returned. Use `error` instead
-  	 * @deprecated
-  	 */
+    * Error message, if any returned. Use `error` instead
+    * @deprecated
+    */
   var message: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object YQLResponse {
   @scala.inline
   def apply(
-    code: Int | Double = null,
+    code: js.UndefOr[Double] = js.undefined,
     data: js.Any = null,
     error: java.lang.String = null,
     message: java.lang.String = null,
     success: js.UndefOr[Boolean] = js.undefined
   ): YQLResponse = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (!js.isUndefined(code)) __obj.updateDynamic("code")(code.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[YQLResponse]
   }
 }

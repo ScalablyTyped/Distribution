@@ -1,11 +1,11 @@
 package typings.reactPlaidLink.mod
 
 import typings.react.mod.CSSProperties
-import typings.reactPlaidLink.AnonAccounts
-import typings.reactPlaidLink.AnonDisplaymessage
-import typings.reactPlaidLink.AnonEmailAddress
-import typings.reactPlaidLink.AnonErrorcode
-import typings.reactPlaidLink.AnonInstitution
+import typings.reactPlaidLink.anon.Accounts
+import typings.reactPlaidLink.anon.Displaymessage
+import typings.reactPlaidLink.anon.EmailAddress
+import typings.reactPlaidLink.anon.Errorcode
+import typings.reactPlaidLink.anon.Institution
 import typings.reactPlaidLink.reactPlaidLinkStrings.ERROR
 import typings.reactPlaidLink.reactPlaidLinkStrings.EXIT
 import typings.reactPlaidLink.reactPlaidLinkStrings.HANDOFF
@@ -51,13 +51,13 @@ trait PlaidLinkProps extends js.Object {
   var onEvent: js.UndefOr[
     js.Function2[
       /* eventName */ ERROR | EXIT | HANDOFF | OPEN | OPEN_MY_PLAID | SEARCH_INSTITUTION | SELECT_INSTITUTION | SUBMIT_CREDENTIALS | SUBMIT_MFA | TRANSITION_VIEW, 
-      /* metadata */ AnonErrorcode, 
+      /* metadata */ Errorcode, 
       Unit
     ]
   ] = js.undefined
   // A function that is called when a user has specifically exited Link flow
   var onExit: js.UndefOr[
-    js.Function2[/* error */ AnonDisplaymessage | Null, /* metadata */ AnonInstitution, Unit]
+    js.Function2[/* error */ Displaymessage | Null, /* metadata */ Institution, Unit]
   ] = js.undefined
   // A function that is called when the Link module has finished loading.
   // Calls to plaidLinkHandler.open() prior to the onLoad callback will be
@@ -83,13 +83,13 @@ trait PlaidLinkProps extends js.Object {
   // Specify a user object to enable all Auth features. Reach out to your
   // account manager or integrations@plaid.com to get enabled. See the Auth
   // [https://plaid.com/docs#auth] docs for integration details.
-  var user: js.UndefOr[AnonEmailAddress] = js.undefined
+  var user: js.UndefOr[EmailAddress] = js.undefined
   // Specify a webhook to associate with a user.
   var webhook: js.UndefOr[String] = js.undefined
   // A function that is called when a user has successfully onboarded their
   // account. The function should expect two arguments, the public_key and a
   // metadata object
-  def onSuccess(publicToken: String, metadata: AnonAccounts): Unit
+  def onSuccess(publicToken: String, metadata: Accounts): Unit
 }
 
 object PlaidLinkProps {
@@ -97,7 +97,7 @@ object PlaidLinkProps {
   def apply(
     clientName: String,
     env: tartan | sandbox | development | production,
-    onSuccess: (String, AnonAccounts) => Unit,
+    onSuccess: (String, Accounts) => Unit,
     product: js.Array[
       connect | info | auth | identity | income | transactions | assets | liabilities | investments | payment_initiation
     ],
@@ -105,13 +105,13 @@ object PlaidLinkProps {
     apiVersion: String = null,
     className: String = null,
     institution: String = null,
-    onEvent: (/* eventName */ ERROR | EXIT | HANDOFF | OPEN | OPEN_MY_PLAID | SEARCH_INSTITUTION | SELECT_INSTITUTION | SUBMIT_CREDENTIALS | SUBMIT_MFA | TRANSITION_VIEW, /* metadata */ AnonErrorcode) => Unit = null,
-    onExit: (/* error */ AnonDisplaymessage | Null, /* metadata */ AnonInstitution) => Unit = null,
+    onEvent: (/* eventName */ ERROR | EXIT | HANDOFF | OPEN | OPEN_MY_PLAID | SEARCH_INSTITUTION | SELECT_INSTITUTION | SUBMIT_CREDENTIALS | SUBMIT_MFA | TRANSITION_VIEW, /* metadata */ Errorcode) => Unit = null,
+    onExit: (/* error */ Displaymessage | Null, /* metadata */ Institution) => Unit = null,
     onLoad: () => Unit = null,
     selectAccount: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
     token: String = null,
-    user: AnonEmailAddress = null,
+    user: EmailAddress = null,
     webhook: String = null
   ): PlaidLinkProps = {
     val __obj = js.Dynamic.literal(clientName = clientName.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], onSuccess = js.Any.fromFunction2(onSuccess), product = product.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
@@ -121,7 +121,7 @@ object PlaidLinkProps {
     if (onEvent != null) __obj.updateDynamic("onEvent")(js.Any.fromFunction2(onEvent))
     if (onExit != null) __obj.updateDynamic("onExit")(js.Any.fromFunction2(onExit))
     if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction0(onLoad))
-    if (!js.isUndefined(selectAccount)) __obj.updateDynamic("selectAccount")(selectAccount.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectAccount)) __obj.updateDynamic("selectAccount")(selectAccount.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])

@@ -7,16 +7,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		*	Event dispatched in case of instant messaging subsystem error
-		*/
+  *    Event dispatched in case of instant messaging subsystem error
+  */
 trait SystemError extends VoxImplantIMEvent {
   /**
-  			*	Error data object, contains the error details
-  			*/
+    *    Error data object, contains the error details
+    */
   var errorData: js.Object
   /**
-  			*	Error type
-  			*/
+    *    Error type
+    */
   var errorType: IMErrorType
 }
 

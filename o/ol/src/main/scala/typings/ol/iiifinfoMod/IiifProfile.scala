@@ -17,17 +17,17 @@ object IiifProfile {
   @scala.inline
   def apply(
     formats: js.Array[String] = null,
-    maxArea: Int | Double = null,
-    maxHeight: Int | Double = null,
-    maxWidth: Int | Double = null,
+    maxArea: js.UndefOr[Double] = js.undefined,
+    maxHeight: js.UndefOr[Double] = js.undefined,
+    maxWidth: js.UndefOr[Double] = js.undefined,
     qualities: js.Array[String] = null,
     supports: js.Array[String] = null
   ): IiifProfile = {
     val __obj = js.Dynamic.literal()
     if (formats != null) __obj.updateDynamic("formats")(formats.asInstanceOf[js.Any])
-    if (maxArea != null) __obj.updateDynamic("maxArea")(maxArea.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxArea)) __obj.updateDynamic("maxArea")(maxArea.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
     if (qualities != null) __obj.updateDynamic("qualities")(qualities.asInstanceOf[js.Any])
     if (supports != null) __obj.updateDynamic("supports")(supports.asInstanceOf[js.Any])
     __obj.asInstanceOf[IiifProfile]

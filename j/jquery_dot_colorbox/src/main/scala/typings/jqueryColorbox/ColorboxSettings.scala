@@ -251,7 +251,7 @@ object ColorboxSettings {
     current: String = null,
     data: js.Any = null,
     escKey: js.UndefOr[Boolean] = js.undefined,
-    fadeOut: Int | Double = null,
+    fadeOut: js.UndefOr[Double] = js.undefined,
     fastIframe: js.UndefOr[Boolean] = js.undefined,
     fixed: js.UndefOr[Boolean] = js.undefined,
     height: Double | String = null,
@@ -274,7 +274,7 @@ object ColorboxSettings {
     onComplete: js.Any = null,
     onLoad: js.Any = null,
     onOpen: js.Any = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     open: js.UndefOr[Boolean] = js.undefined,
     overlayClose: js.UndefOr[Boolean] = js.undefined,
     photo: js.UndefOr[Boolean] = js.undefined,
@@ -291,10 +291,10 @@ object ColorboxSettings {
     scrolling: js.UndefOr[Boolean] = js.undefined,
     slideshow: js.UndefOr[Boolean] = js.undefined,
     slideshowAuto: js.UndefOr[Boolean] = js.undefined,
-    slideshowSpeed: Int | Double = null,
+    slideshowSpeed: js.UndefOr[Double] = js.undefined,
     slideshowStart: String = null,
     slideshowStop: String = null,
-    speed: Int | Double = null,
+    speed: js.UndefOr[Double] = js.undefined,
     title: js.Any = null,
     top: js.Any = null,
     transition: String = null,
@@ -303,29 +303,29 @@ object ColorboxSettings {
   ): ColorboxSettings = {
     val __obj = js.Dynamic.literal()
     if (ajax != null) __obj.updateDynamic("ajax")(ajax.asInstanceOf[js.Any])
-    if (!js.isUndefined(arrowKey)) __obj.updateDynamic("arrowKey")(arrowKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrowKey)) __obj.updateDynamic("arrowKey")(arrowKey.get.asInstanceOf[js.Any])
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.get.asInstanceOf[js.Any])
     if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(escKey)) __obj.updateDynamic("escKey")(escKey.asInstanceOf[js.Any])
-    if (fadeOut != null) __obj.updateDynamic("fadeOut")(fadeOut.asInstanceOf[js.Any])
-    if (!js.isUndefined(fastIframe)) __obj.updateDynamic("fastIframe")(fastIframe.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
+    if (!js.isUndefined(escKey)) __obj.updateDynamic("escKey")(escKey.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fadeOut)) __obj.updateDynamic("fadeOut")(fadeOut.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fastIframe)) __obj.updateDynamic("fastIframe")(fastIframe.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (!js.isUndefined(iframe)) __obj.updateDynamic("iframe")(iframe.asInstanceOf[js.Any])
+    if (!js.isUndefined(iframe)) __obj.updateDynamic("iframe")(iframe.get.asInstanceOf[js.Any])
     if (imgError != null) __obj.updateDynamic("imgError")(imgError.asInstanceOf[js.Any])
     if (initialHeight != null) __obj.updateDynamic("initialHeight")(initialHeight.asInstanceOf[js.Any])
     if (initialWidth != null) __obj.updateDynamic("initialWidth")(initialWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
     if (innerHeight != null) __obj.updateDynamic("innerHeight")(innerHeight.asInstanceOf[js.Any])
     if (innerWidth != null) __obj.updateDynamic("innerWidth")(innerWidth.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
@@ -334,27 +334,27 @@ object ColorboxSettings {
     if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete.asInstanceOf[js.Any])
     if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad.asInstanceOf[js.Any])
     if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
-    if (!js.isUndefined(overlayClose)) __obj.updateDynamic("overlayClose")(overlayClose.asInstanceOf[js.Any])
-    if (!js.isUndefined(photo)) __obj.updateDynamic("photo")(photo.asInstanceOf[js.Any])
-    if (!js.isUndefined(preloading)) __obj.updateDynamic("preloading")(preloading.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlayClose)) __obj.updateDynamic("overlayClose")(overlayClose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(photo)) __obj.updateDynamic("photo")(photo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preloading)) __obj.updateDynamic("preloading")(preloading.get.asInstanceOf[js.Any])
     if (previous != null) __obj.updateDynamic("previous")(previous.asInstanceOf[js.Any])
     if (rel != null) __obj.updateDynamic("rel")(rel.asInstanceOf[js.Any])
-    if (!js.isUndefined(reposition)) __obj.updateDynamic("reposition")(reposition.asInstanceOf[js.Any])
-    if (!js.isUndefined(retinaImage)) __obj.updateDynamic("retinaImage")(retinaImage.asInstanceOf[js.Any])
+    if (!js.isUndefined(reposition)) __obj.updateDynamic("reposition")(reposition.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retinaImage)) __obj.updateDynamic("retinaImage")(retinaImage.get.asInstanceOf[js.Any])
     if (retinaSuffix != null) __obj.updateDynamic("retinaSuffix")(retinaSuffix.asInstanceOf[js.Any])
-    if (!js.isUndefined(retinaUrl)) __obj.updateDynamic("retinaUrl")(retinaUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnFocus)) __obj.updateDynamic("returnFocus")(returnFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(retinaUrl)) __obj.updateDynamic("retinaUrl")(retinaUrl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnFocus)) __obj.updateDynamic("returnFocus")(returnFocus.get.asInstanceOf[js.Any])
     if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (!js.isUndefined(scalePhotos)) __obj.updateDynamic("scalePhotos")(scalePhotos.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrolling)) __obj.updateDynamic("scrolling")(scrolling.asInstanceOf[js.Any])
-    if (!js.isUndefined(slideshow)) __obj.updateDynamic("slideshow")(slideshow.asInstanceOf[js.Any])
-    if (!js.isUndefined(slideshowAuto)) __obj.updateDynamic("slideshowAuto")(slideshowAuto.asInstanceOf[js.Any])
-    if (slideshowSpeed != null) __obj.updateDynamic("slideshowSpeed")(slideshowSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(scalePhotos)) __obj.updateDynamic("scalePhotos")(scalePhotos.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrolling)) __obj.updateDynamic("scrolling")(scrolling.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(slideshow)) __obj.updateDynamic("slideshow")(slideshow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(slideshowAuto)) __obj.updateDynamic("slideshowAuto")(slideshowAuto.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(slideshowSpeed)) __obj.updateDynamic("slideshowSpeed")(slideshowSpeed.get.asInstanceOf[js.Any])
     if (slideshowStart != null) __obj.updateDynamic("slideshowStart")(slideshowStart.asInstanceOf[js.Any])
     if (slideshowStop != null) __obj.updateDynamic("slideshowStop")(slideshowStop.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
+    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])

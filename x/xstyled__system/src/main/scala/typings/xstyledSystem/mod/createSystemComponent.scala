@@ -2,7 +2,7 @@ package typings.xstyledSystem.mod
 
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
-import typings.xstyledSystem.TypeofReact
+import typings.xstyledSystem.anon.TypeofReact
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

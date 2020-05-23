@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation._
 
 trait ContentManager extends js.Object {
   /* Reads contents from a Uri representing a local or remote notebook and returns a
-  			 * JSON object containing the cells and metadata about the notebook
-  			 */
+    * JSON object containing the cells and metadata about the notebook
+    */
   def getNotebookContents(notebookUri: Uri): Thenable[INotebookContents]
   /**
-  			 * Save a file.
-  			 *
-  			 * @param notebookUri - The desired file path.
-  			 *
-  			 * @param notebook - notebook to be saved.
-  			 *
-  			 * @returns A thenable which resolves with the file content model when the
-  			 *   file is saved.
-  			 */
+    * Save a file.
+    *
+    * @param notebookUri - The desired file path.
+    *
+    * @param notebook - notebook to be saved.
+    *
+    * @returns A thenable which resolves with the file content model when the
+    *   file is saved.
+    */
   def save(notebookUri: Uri, notebook: INotebookContents): Thenable[INotebookContents]
 }
 

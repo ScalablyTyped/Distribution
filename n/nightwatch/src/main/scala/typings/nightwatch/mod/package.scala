@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type EnhancedPageObject[Commands, Elements, Sections /* <: typings.nightwatch.mod.EnhancedPageObjectSections */] = typings.nightwatch.mod.Nightwatch with typings.nightwatch.mod.SharedCommands with typings.nightwatch.mod.NightwatchCustomCommands with Commands with typings.nightwatch.AnonElements[Sections]
+  type EnhancedPageObject[Commands, Elements, Sections /* <: typings.nightwatch.mod.EnhancedPageObjectSections */] = typings.nightwatch.mod.Nightwatch with typings.nightwatch.mod.SharedCommands with typings.nightwatch.mod.NightwatchCustomCommands with Commands with typings.nightwatch.anon.Elements[Sections]
   type EnhancedSectionInstance[Commands, Elements, Sections] = typings.nightwatch.mod.EnhancedPageObject[Commands, Elements, Sections]
   type NightwatchAssert = js.Function6[
     /* passed */ scala.Boolean, 

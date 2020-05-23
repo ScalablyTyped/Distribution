@@ -49,16 +49,16 @@ object EmailOptions {
   def apply(
     allowUnicode: js.UndefOr[Boolean] = js.undefined,
     ignoreLength: js.UndefOr[Boolean] = js.undefined,
-    minDomainSegments: Int | Double = null,
+    minDomainSegments: js.UndefOr[Double] = js.undefined,
     multiple: js.UndefOr[Boolean] = js.undefined,
     separator: String | js.Array[String] = null,
     tlds: TopLevelDomainOptions | `false` = null
   ): EmailOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowUnicode)) __obj.updateDynamic("allowUnicode")(allowUnicode.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreLength)) __obj.updateDynamic("ignoreLength")(ignoreLength.asInstanceOf[js.Any])
-    if (minDomainSegments != null) __obj.updateDynamic("minDomainSegments")(minDomainSegments.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowUnicode)) __obj.updateDynamic("allowUnicode")(allowUnicode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreLength)) __obj.updateDynamic("ignoreLength")(ignoreLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minDomainSegments)) __obj.updateDynamic("minDomainSegments")(minDomainSegments.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     if (tlds != null) __obj.updateDynamic("tlds")(tlds.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailOptions]

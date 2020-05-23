@@ -1,5 +1,7 @@
 package typings.fastGlob
 
+import typings.fastGlob.anon.FnCallDirectoryOptionsOrSettings
+import typings.fastGlob.anon.FnCallPathOptionsOrSettings
 import typings.fastGlob.typesMod.Entry
 import typings.nodelibFsStat.settingsMod.Options
 import typings.nodelibFsStat.typesMod.Stats

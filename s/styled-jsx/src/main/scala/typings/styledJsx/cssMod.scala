@@ -1,6 +1,7 @@
 package typings.styledJsx
 
 import typings.std.TemplateStringsArray
+import typings.styledJsx.anon.ClassName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +11,6 @@ import scala.scalajs.js.annotation._
 object cssMod extends js.Object {
   def apply(chunks: TemplateStringsArray, args: js.Any*): String = js.native
   def global(chunks: TemplateStringsArray, args: js.Any*): String = js.native
-  def resolve(chunks: TemplateStringsArray, args: js.Any*): AnonClassName = js.native
+  def resolve(chunks: TemplateStringsArray, args: js.Any*): ClassName = js.native
 }
 

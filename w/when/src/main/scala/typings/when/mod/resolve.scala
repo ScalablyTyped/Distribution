@@ -1,6 +1,6 @@
 package typings.when.mod
 
-import typings.when.When.Promise_
+import typings.when.When.Promise
 import typings.when.When.Thenable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,9 +16,9 @@ object resolve extends js.Object {
     *    - fulfilled with promiseOrValue's value after it is fulfilled
     *    - rejected with promiseOrValue's reason after it is rejected
     */
-  def apply(): Promise_[Unit] = js.native
-  def apply[T](promiseOrValue: T): Promise_[T] = js.native
-  def apply[T](promiseOrValue: Promise_[T]): Promise_[T] = js.native
-  def apply[T](promiseOrValue: Thenable[T]): Promise_[T] = js.native
+  def apply(): Promise[Unit] = js.native
+  def apply[T](promiseOrValue: T): Promise[T] = js.native
+  def apply[T](promiseOrValue: Promise[T]): Promise[T] = js.native
+  def apply[T](promiseOrValue: Thenable[T]): Promise[T] = js.native
 }
 

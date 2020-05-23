@@ -79,8 +79,8 @@ object TurnBasedMatch {
     kind: String = null,
     lastUpdateDetails: TurnBasedMatchModification = null,
     matchId: String = null,
-    matchNumber: Int | Double = null,
-    matchVersion: Int | Double = null,
+    matchNumber: js.UndefOr[Double] = js.undefined,
+    matchVersion: js.UndefOr[Double] = js.undefined,
     participants: js.Array[TurnBasedMatchParticipant] = null,
     pendingParticipantId: String = null,
     previousMatchData: TurnBasedMatchData = null,
@@ -88,7 +88,7 @@ object TurnBasedMatch {
     results: js.Array[ParticipantResult] = null,
     status: String = null,
     userMatchStatus: String = null,
-    variant: Int | Double = null,
+    variant: js.UndefOr[Double] = js.undefined,
     withParticipantId: String = null
   ): TurnBasedMatch = {
     val __obj = js.Dynamic.literal()
@@ -101,8 +101,8 @@ object TurnBasedMatch {
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (lastUpdateDetails != null) __obj.updateDynamic("lastUpdateDetails")(lastUpdateDetails.asInstanceOf[js.Any])
     if (matchId != null) __obj.updateDynamic("matchId")(matchId.asInstanceOf[js.Any])
-    if (matchNumber != null) __obj.updateDynamic("matchNumber")(matchNumber.asInstanceOf[js.Any])
-    if (matchVersion != null) __obj.updateDynamic("matchVersion")(matchVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchNumber)) __obj.updateDynamic("matchNumber")(matchNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchVersion)) __obj.updateDynamic("matchVersion")(matchVersion.get.asInstanceOf[js.Any])
     if (participants != null) __obj.updateDynamic("participants")(participants.asInstanceOf[js.Any])
     if (pendingParticipantId != null) __obj.updateDynamic("pendingParticipantId")(pendingParticipantId.asInstanceOf[js.Any])
     if (previousMatchData != null) __obj.updateDynamic("previousMatchData")(previousMatchData.asInstanceOf[js.Any])
@@ -110,7 +110,7 @@ object TurnBasedMatch {
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (userMatchStatus != null) __obj.updateDynamic("userMatchStatus")(userMatchStatus.asInstanceOf[js.Any])
-    if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
+    if (!js.isUndefined(variant)) __obj.updateDynamic("variant")(variant.get.asInstanceOf[js.Any])
     if (withParticipantId != null) __obj.updateDynamic("withParticipantId")(withParticipantId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TurnBasedMatch]
   }

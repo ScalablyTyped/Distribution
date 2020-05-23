@@ -12,9 +12,7 @@ trait Images extends js.Object {
 object Images {
   @scala.inline
   def apply(hiResImageSrc: IVImage = null, imageSrc: IVImage = null): Images = {
-    val __obj = js.Dynamic.literal()
-    if (hiResImageSrc != null) __obj.updateDynamic("hiResImageSrc")(hiResImageSrc.asInstanceOf[js.Any])
-    if (imageSrc != null) __obj.updateDynamic("imageSrc")(imageSrc.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(hiResImageSrc = hiResImageSrc.asInstanceOf[js.Any], imageSrc = imageSrc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Images]
   }
 }

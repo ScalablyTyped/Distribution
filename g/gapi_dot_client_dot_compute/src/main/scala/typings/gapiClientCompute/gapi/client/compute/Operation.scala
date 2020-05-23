@@ -1,7 +1,7 @@
 package typings.gapiClientCompute.gapi.client.compute
 
-import typings.gapiClientCompute.AnonCode
-import typings.gapiClientCompute.AnonErrors
+import typings.gapiClientCompute.anon.Code
+import typings.gapiClientCompute.anon.Errors
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait Operation extends js.Object {
   /** [Output Only] The time that this operation was completed. This value is in RFC3339 text format. */
   var endTime: js.UndefOr[String] = js.undefined
   /** [Output Only] If errors are generated during processing of the operation, this field will be populated. */
-  var error: js.UndefOr[AnonErrors] = js.undefined
+  var error: js.UndefOr[Errors] = js.undefined
   /** [Output Only] If the operation fails, this field contains the HTTP error message that was returned, such as NOT FOUND. */
   var httpErrorMessage: js.UndefOr[String] = js.undefined
   /**
@@ -60,7 +60,7 @@ trait Operation extends js.Object {
   /** [Output Only] User who requested the operation, for example: user@example.com. */
   var user: js.UndefOr[String] = js.undefined
   /** [Output Only] If warning messages are generated during processing of the operation, this field will be populated. */
-  var warnings: js.UndefOr[js.Array[AnonCode]] = js.undefined
+  var warnings: js.UndefOr[js.Array[Code]] = js.undefined
   /** [Output Only] The URL of the zone where the operation resides. Only available when performing per-zone operations. */
   var zone: js.UndefOr[String] = js.undefined
 }
@@ -72,15 +72,15 @@ object Operation {
     creationTimestamp: String = null,
     description: String = null,
     endTime: String = null,
-    error: AnonErrors = null,
+    error: Errors = null,
     httpErrorMessage: String = null,
-    httpErrorStatusCode: Int | Double = null,
+    httpErrorStatusCode: js.UndefOr[Double] = js.undefined,
     id: String = null,
     insertTime: String = null,
     kind: String = null,
     name: String = null,
     operationType: String = null,
-    progress: Int | Double = null,
+    progress: js.UndefOr[Double] = js.undefined,
     region: String = null,
     selfLink: String = null,
     startTime: String = null,
@@ -89,7 +89,7 @@ object Operation {
     targetId: String = null,
     targetLink: String = null,
     user: String = null,
-    warnings: js.Array[AnonCode] = null,
+    warnings: js.Array[Code] = null,
     zone: String = null
   ): Operation = {
     val __obj = js.Dynamic.literal()
@@ -99,13 +99,13 @@ object Operation {
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (httpErrorMessage != null) __obj.updateDynamic("httpErrorMessage")(httpErrorMessage.asInstanceOf[js.Any])
-    if (httpErrorStatusCode != null) __obj.updateDynamic("httpErrorStatusCode")(httpErrorStatusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(httpErrorStatusCode)) __obj.updateDynamic("httpErrorStatusCode")(httpErrorStatusCode.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (insertTime != null) __obj.updateDynamic("insertTime")(insertTime.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (operationType != null) __obj.updateDynamic("operationType")(operationType.asInstanceOf[js.Any])
-    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
+    if (!js.isUndefined(progress)) __obj.updateDynamic("progress")(progress.get.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])

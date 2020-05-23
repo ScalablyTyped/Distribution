@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLOptionElement")
 @js.native
-class HTMLOptionElement protected () extends js.Object {
+trait HTMLOptionElement extends js.Object {
   @JSName("MSHTML.HTMLOptionElement_typekey")
   var MSHTMLDotHTMLOptionElement_typekey: HTMLOptionElement = js.native
   var accessKey: String = js.native

@@ -173,6 +173,13 @@ import typings.std.SVGTextElement
 import typings.std.SVGTextPathElement
 import typings.std.SVGUseElement
 import typings.std.SVGViewElement
+import typings.storybookComponents.anon.PartialDetailedHTMLPropsF
+import typings.storybookComponents.anon.PickDetailedHTMLPropsForm
+import typings.storybookComponents.anon.PropsWithChildrenDetailed
+import typings.storybookComponents.anon.StyledComponentPickPickHT
+import typings.storybookComponents.anon.StyledComponentPickPickTe
+import typings.storybookComponents.anon.StyledComponentPickSelect
+import typings.storybookComponents.anon.WeakValidationMapDetailed
 import typings.storybookComponents.fieldMod.FieldProps
 import typings.storybookComponents.storybookComponentsStrings.`object`
 import typings.storybookComponents.storybookComponentsStrings.`var`

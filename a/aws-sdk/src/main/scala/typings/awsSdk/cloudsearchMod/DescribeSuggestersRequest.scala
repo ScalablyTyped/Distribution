@@ -24,11 +24,11 @@ object DescribeSuggestersRequest {
   @scala.inline
   def apply(
     DomainName: DomainName,
-    Deployed: js.UndefOr[scala.Boolean] = js.undefined,
+    Deployed: js.UndefOr[Boolean] = js.undefined,
     SuggesterNames: StandardNameList = null
   ): DescribeSuggestersRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
-    if (!js.isUndefined(Deployed)) __obj.updateDynamic("Deployed")(Deployed.asInstanceOf[js.Any])
+    if (!js.isUndefined(Deployed)) __obj.updateDynamic("Deployed")(Deployed.get.asInstanceOf[js.Any])
     if (SuggesterNames != null) __obj.updateDynamic("SuggesterNames")(SuggesterNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSuggestersRequest]
   }

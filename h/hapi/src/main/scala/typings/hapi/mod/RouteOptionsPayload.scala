@@ -1,6 +1,6 @@
 package typings.hapi.mod
 
-import typings.hapi.AnonOutput
+import typings.hapi.anon.Output
 import typings.hapi.hapiBooleans.`false`
 import typings.hapi.hapiStrings.gunzip
 import typings.hapi.mod.Lifecycle.FailAction
@@ -59,7 +59,7 @@ trait RouteOptionsPayload extends js.Object {
     * * * * payload - the processed part payload.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionspayloadmultipart)
     */
-  var multipart: js.UndefOr[`false` | AnonOutput] = js.undefined
+  var multipart: js.UndefOr[`false` | Output] = js.undefined
   /**
     * Default value: 'data'.
     * The processed payload format. The value must be one of:
@@ -113,8 +113,8 @@ object RouteOptionsPayload {
     compression: Dictionary[PayloadCompressionDecoderSettings] = null,
     defaultContentType: String = null,
     failAction: FailAction = null,
-    maxBytes: Int | Double = null,
-    multipart: `false` | AnonOutput = null,
+    maxBytes: js.UndefOr[Double] = js.undefined,
+    multipart: `false` | Output = null,
     output: PayloadOutput = null,
     `override`: String = null,
     parse: Boolean | gunzip = null,
@@ -126,7 +126,7 @@ object RouteOptionsPayload {
     if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
     if (defaultContentType != null) __obj.updateDynamic("defaultContentType")(defaultContentType.asInstanceOf[js.Any])
     if (failAction != null) __obj.updateDynamic("failAction")(failAction.asInstanceOf[js.Any])
-    if (maxBytes != null) __obj.updateDynamic("maxBytes")(maxBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxBytes)) __obj.updateDynamic("maxBytes")(maxBytes.get.asInstanceOf[js.Any])
     if (multipart != null) __obj.updateDynamic("multipart")(multipart.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     if (`override` != null) __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])

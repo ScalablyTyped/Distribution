@@ -44,23 +44,23 @@ object NetworkAclEntry {
   @scala.inline
   def apply(
     CidrBlock: String = null,
-    Egress: js.UndefOr[scala.Boolean] = js.undefined,
+    Egress: js.UndefOr[Boolean] = js.undefined,
     IcmpTypeCode: IcmpTypeCode = null,
     Ipv6CidrBlock: String = null,
     PortRange: PortRange = null,
     Protocol: String = null,
     RuleAction: RuleAction = null,
-    RuleNumber: Int | scala.Double = null
+    RuleNumber: js.UndefOr[Integer] = js.undefined
   ): NetworkAclEntry = {
     val __obj = js.Dynamic.literal()
     if (CidrBlock != null) __obj.updateDynamic("CidrBlock")(CidrBlock.asInstanceOf[js.Any])
-    if (!js.isUndefined(Egress)) __obj.updateDynamic("Egress")(Egress.asInstanceOf[js.Any])
+    if (!js.isUndefined(Egress)) __obj.updateDynamic("Egress")(Egress.get.asInstanceOf[js.Any])
     if (IcmpTypeCode != null) __obj.updateDynamic("IcmpTypeCode")(IcmpTypeCode.asInstanceOf[js.Any])
     if (Ipv6CidrBlock != null) __obj.updateDynamic("Ipv6CidrBlock")(Ipv6CidrBlock.asInstanceOf[js.Any])
     if (PortRange != null) __obj.updateDynamic("PortRange")(PortRange.asInstanceOf[js.Any])
     if (Protocol != null) __obj.updateDynamic("Protocol")(Protocol.asInstanceOf[js.Any])
     if (RuleAction != null) __obj.updateDynamic("RuleAction")(RuleAction.asInstanceOf[js.Any])
-    if (RuleNumber != null) __obj.updateDynamic("RuleNumber")(RuleNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(RuleNumber)) __obj.updateDynamic("RuleNumber")(RuleNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkAclEntry]
   }
 }

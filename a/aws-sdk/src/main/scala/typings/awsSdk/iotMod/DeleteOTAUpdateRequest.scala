@@ -24,12 +24,12 @@ object DeleteOTAUpdateRequest {
   @scala.inline
   def apply(
     otaUpdateId: OTAUpdateId,
-    deleteStream: js.UndefOr[scala.Boolean] = js.undefined,
-    forceDeleteAWSJob: js.UndefOr[scala.Boolean] = js.undefined
+    deleteStream: js.UndefOr[DeleteStream] = js.undefined,
+    forceDeleteAWSJob: js.UndefOr[ForceDeleteAWSJob] = js.undefined
   ): DeleteOTAUpdateRequest = {
     val __obj = js.Dynamic.literal(otaUpdateId = otaUpdateId.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleteStream)) __obj.updateDynamic("deleteStream")(deleteStream.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceDeleteAWSJob)) __obj.updateDynamic("forceDeleteAWSJob")(forceDeleteAWSJob.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleteStream)) __obj.updateDynamic("deleteStream")(deleteStream.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceDeleteAWSJob)) __obj.updateDynamic("forceDeleteAWSJob")(forceDeleteAWSJob.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteOTAUpdateRequest]
   }
 }

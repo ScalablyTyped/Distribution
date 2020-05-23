@@ -15,7 +15,7 @@ object MathJSON {
   @scala.inline
   def apply(unit: String, value: Double, fixPrefix: js.UndefOr[Boolean] = js.undefined, mathjs: String = null): MathJSON = {
     val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixPrefix)) __obj.updateDynamic("fixPrefix")(fixPrefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixPrefix)) __obj.updateDynamic("fixPrefix")(fixPrefix.get.asInstanceOf[js.Any])
     if (mathjs != null) __obj.updateDynamic("mathjs")(mathjs.asInstanceOf[js.Any])
     __obj.asInstanceOf[MathJSON]
   }

@@ -26,12 +26,12 @@ object SubscribeOptions {
   def apply(
     async: js.UndefOr[Boolean] = js.undefined,
     persist: js.UndefOr[Boolean] = js.undefined,
-    priority: Int | Double = null
+    priority: js.UndefOr[Double] = js.undefined
   ): SubscribeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
-    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscribeOptions]
   }
 }

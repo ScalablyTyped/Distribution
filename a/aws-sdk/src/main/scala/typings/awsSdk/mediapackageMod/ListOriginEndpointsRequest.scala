@@ -22,10 +22,14 @@ trait ListOriginEndpointsRequest extends js.Object {
 
 object ListOriginEndpointsRequest {
   @scala.inline
-  def apply(ChannelId: string = null, MaxResults: Int | Double = null, NextToken: string = null): ListOriginEndpointsRequest = {
+  def apply(
+    ChannelId: string = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    NextToken: string = null
+  ): ListOriginEndpointsRequest = {
     val __obj = js.Dynamic.literal()
     if (ChannelId != null) __obj.updateDynamic("ChannelId")(ChannelId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOriginEndpointsRequest]
   }

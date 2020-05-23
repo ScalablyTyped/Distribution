@@ -1,8 +1,8 @@
 package typings.seleniumWebdriver.mod
 
-import typings.seleniumWebdriver.AnonAsync
-import typings.seleniumWebdriver.AnonAsyncBoolean
-import typings.seleniumWebdriver.AnonBridge
+import typings.seleniumWebdriver.anon.Async
+import typings.seleniumWebdriver.anon.AsyncBoolean
+import typings.seleniumWebdriver.anon.Bridge
 import typings.seleniumWebdriver.commandMod.Executor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,8 +14,8 @@ class Actions protected ()
   extends typings.seleniumWebdriver.inputMod.Actions {
   // region Constructors
   def this(executor: Executor) = this()
-  def this(executor: Executor, options: AnonAsync) = this()
-  def this(executor: Executor, options: AnonAsyncBoolean) = this()
-  def this(executor: Executor, options: AnonBridge) = this()
+  def this(executor: Executor, options: Async) = this()
+  def this(executor: Executor, options: AsyncBoolean) = this()
+  def this(executor: Executor, options: Bridge) = this()
 }
 

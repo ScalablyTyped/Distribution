@@ -116,10 +116,7 @@ object LFrame {
     currentNamespace: String = null,
     currentSanitizer: (/* prop */ String, /* value */ String | ɵSafeValue | Null, /* mode */ js.UndefOr[StyleSanitizeMode]) => js.Any = null
   ): LFrame = {
-    val __obj = js.Dynamic.literal(bindingIndex = bindingIndex.asInstanceOf[js.Any], bindingRootIndex = bindingRootIndex.asInstanceOf[js.Any], contextLView = contextLView.asInstanceOf[js.Any], currentDirectiveIndex = currentDirectiveIndex.asInstanceOf[js.Any], currentQueryIndex = currentQueryIndex.asInstanceOf[js.Any], elementDepthCount = elementDepthCount.asInstanceOf[js.Any], isParent = isParent.asInstanceOf[js.Any], lView = lView.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], previousOrParentTNode = previousOrParentTNode.asInstanceOf[js.Any], selectedIndex = selectedIndex.asInstanceOf[js.Any], tView = tView.asInstanceOf[js.Any])
-    if (child != null) __obj.updateDynamic("child")(child.asInstanceOf[js.Any])
-    if (currentNamespace != null) __obj.updateDynamic("currentNamespace")(currentNamespace.asInstanceOf[js.Any])
-    if (currentSanitizer != null) __obj.updateDynamic("currentSanitizer")(js.Any.fromFunction3(currentSanitizer))
+    val __obj = js.Dynamic.literal(bindingIndex = bindingIndex.asInstanceOf[js.Any], bindingRootIndex = bindingRootIndex.asInstanceOf[js.Any], contextLView = contextLView.asInstanceOf[js.Any], currentDirectiveIndex = currentDirectiveIndex.asInstanceOf[js.Any], currentQueryIndex = currentQueryIndex.asInstanceOf[js.Any], elementDepthCount = elementDepthCount.asInstanceOf[js.Any], isParent = isParent.asInstanceOf[js.Any], lView = lView.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], previousOrParentTNode = previousOrParentTNode.asInstanceOf[js.Any], selectedIndex = selectedIndex.asInstanceOf[js.Any], tView = tView.asInstanceOf[js.Any], child = child.asInstanceOf[js.Any], currentNamespace = currentNamespace.asInstanceOf[js.Any], currentSanitizer = js.Any.fromFunction3(currentSanitizer))
     __obj.asInstanceOf[LFrame]
   }
 }

@@ -43,7 +43,7 @@ trait ElementRef[T /* <: js.Any */] extends js.Object {
 
 object ElementRef {
   @scala.inline
-  def apply[T /* <: js.Any */](nativeElement: T): ElementRef[T] = {
+  def apply[T](nativeElement: T): ElementRef[T] = {
     val __obj = js.Dynamic.literal(nativeElement = nativeElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementRef[T]]
   }

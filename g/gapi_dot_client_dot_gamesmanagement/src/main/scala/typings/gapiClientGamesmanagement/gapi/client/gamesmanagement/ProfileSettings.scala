@@ -16,7 +16,7 @@ object ProfileSettings {
   def apply(kind: String = null, profileVisible: js.UndefOr[Boolean] = js.undefined): ProfileSettings = {
     val __obj = js.Dynamic.literal()
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(profileVisible)) __obj.updateDynamic("profileVisible")(profileVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(profileVisible)) __obj.updateDynamic("profileVisible")(profileVisible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProfileSettings]
   }
 }

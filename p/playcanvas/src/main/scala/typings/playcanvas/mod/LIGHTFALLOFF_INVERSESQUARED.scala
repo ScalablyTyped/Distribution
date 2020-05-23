@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.LIGHTFALLOFF_INVERSESQUARED
-  * @type {number}
-  * @description Inverse squared distance falloff model for light attenuation.
+  * Inverse squared distance falloff model for light attenuation.
   */
 @JSImport("playcanvas", "LIGHTFALLOFF_INVERSESQUARED")
 @js.native

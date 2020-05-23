@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeCacheOutput extends js.Object {
   /**
-    * The amount of cache in bytes allocated to the a gateway.
+    * The amount of cache in bytes allocated to a gateway.
     */
   var CacheAllocatedInBytes: js.UndefOr[long] = js.native
   /**
@@ -27,7 +27,7 @@ trait DescribeCacheOutput extends js.Object {
     */
   var CacheUsedPercentage: js.UndefOr[double] = js.native
   /**
-    * An array of strings that identify disks that are to be configured as working storage. Each string have a minimum length of 1 and maximum length of 300. You can get the disk IDs from the ListLocalDisks API.
+    * An array of strings that identify disks that are to be configured as working storage. Each string has a minimum length of 1 and maximum length of 300. You can get the disk IDs from the ListLocalDisks API.
     */
   var DiskIds: js.UndefOr[typings.awsSdk.storagegatewayMod.DiskIds] = js.native
   var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.native
@@ -36,20 +36,20 @@ trait DescribeCacheOutput extends js.Object {
 object DescribeCacheOutput {
   @scala.inline
   def apply(
-    CacheAllocatedInBytes: Int | Double = null,
-    CacheDirtyPercentage: Int | Double = null,
-    CacheHitPercentage: Int | Double = null,
-    CacheMissPercentage: Int | Double = null,
-    CacheUsedPercentage: Int | Double = null,
+    CacheAllocatedInBytes: js.UndefOr[long] = js.undefined,
+    CacheDirtyPercentage: js.UndefOr[double] = js.undefined,
+    CacheHitPercentage: js.UndefOr[double] = js.undefined,
+    CacheMissPercentage: js.UndefOr[double] = js.undefined,
+    CacheUsedPercentage: js.UndefOr[double] = js.undefined,
     DiskIds: DiskIds = null,
     GatewayARN: GatewayARN = null
   ): DescribeCacheOutput = {
     val __obj = js.Dynamic.literal()
-    if (CacheAllocatedInBytes != null) __obj.updateDynamic("CacheAllocatedInBytes")(CacheAllocatedInBytes.asInstanceOf[js.Any])
-    if (CacheDirtyPercentage != null) __obj.updateDynamic("CacheDirtyPercentage")(CacheDirtyPercentage.asInstanceOf[js.Any])
-    if (CacheHitPercentage != null) __obj.updateDynamic("CacheHitPercentage")(CacheHitPercentage.asInstanceOf[js.Any])
-    if (CacheMissPercentage != null) __obj.updateDynamic("CacheMissPercentage")(CacheMissPercentage.asInstanceOf[js.Any])
-    if (CacheUsedPercentage != null) __obj.updateDynamic("CacheUsedPercentage")(CacheUsedPercentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(CacheAllocatedInBytes)) __obj.updateDynamic("CacheAllocatedInBytes")(CacheAllocatedInBytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(CacheDirtyPercentage)) __obj.updateDynamic("CacheDirtyPercentage")(CacheDirtyPercentage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(CacheHitPercentage)) __obj.updateDynamic("CacheHitPercentage")(CacheHitPercentage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(CacheMissPercentage)) __obj.updateDynamic("CacheMissPercentage")(CacheMissPercentage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(CacheUsedPercentage)) __obj.updateDynamic("CacheUsedPercentage")(CacheUsedPercentage.get.asInstanceOf[js.Any])
     if (DiskIds != null) __obj.updateDynamic("DiskIds")(DiskIds.asInstanceOf[js.Any])
     if (GatewayARN != null) __obj.updateDynamic("GatewayARN")(GatewayARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCacheOutput]

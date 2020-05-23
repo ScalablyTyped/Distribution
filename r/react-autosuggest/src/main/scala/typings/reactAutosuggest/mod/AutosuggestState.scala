@@ -18,16 +18,12 @@ object AutosuggestState {
   def apply[TSuggestion](
     isCollapsed: Boolean,
     isFocused: Boolean,
-    highlightedSectionIndex: Int | Double = null,
+    highlightedSectionIndex: Double = null.asInstanceOf[Double],
     highlightedSuggestion: TSuggestion = null,
-    highlightedSuggestionIndex: Int | Double = null,
+    highlightedSuggestionIndex: Double = null.asInstanceOf[Double],
     valueBeforeUpDown: TSuggestion = null
   ): AutosuggestState[TSuggestion] = {
-    val __obj = js.Dynamic.literal(isCollapsed = isCollapsed.asInstanceOf[js.Any], isFocused = isFocused.asInstanceOf[js.Any])
-    if (highlightedSectionIndex != null) __obj.updateDynamic("highlightedSectionIndex")(highlightedSectionIndex.asInstanceOf[js.Any])
-    if (highlightedSuggestion != null) __obj.updateDynamic("highlightedSuggestion")(highlightedSuggestion.asInstanceOf[js.Any])
-    if (highlightedSuggestionIndex != null) __obj.updateDynamic("highlightedSuggestionIndex")(highlightedSuggestionIndex.asInstanceOf[js.Any])
-    if (valueBeforeUpDown != null) __obj.updateDynamic("valueBeforeUpDown")(valueBeforeUpDown.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(isCollapsed = isCollapsed.asInstanceOf[js.Any], isFocused = isFocused.asInstanceOf[js.Any], highlightedSectionIndex = highlightedSectionIndex.asInstanceOf[js.Any], highlightedSuggestion = highlightedSuggestion.asInstanceOf[js.Any], highlightedSuggestionIndex = highlightedSuggestionIndex.asInstanceOf[js.Any], valueBeforeUpDown = valueBeforeUpDown.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutosuggestState[TSuggestion]]
   }
 }

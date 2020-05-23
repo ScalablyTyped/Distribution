@@ -1,5 +1,9 @@
 package typings.reactSpinners
 
+import typings.reactSpinners.anon.RequiredLoaderHeightWidth
+import typings.reactSpinners.anon.RequiredLoaderHeightWidthColor
+import typings.reactSpinners.anon.RequiredLoaderSizeMarginP
+import typings.reactSpinners.anon.RequiredLoaderSizeProps
 import typings.reactSpinners.colorsMod.RgbaFunction
 import typings.reactSpinners.interfacesMod.LengthObject
 import scala.scalajs.js

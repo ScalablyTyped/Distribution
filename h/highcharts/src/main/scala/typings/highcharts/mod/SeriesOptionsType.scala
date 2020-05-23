@@ -4,108 +4,107 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Inlined highcharts.highcharts.SeriesOptionsRegistry[keyof highcharts.highcharts.SeriesOptionsRegistry] */
 /* Rewritten from type alias, can be one of: 
-  - typings.highcharts.mod.SeriesAbandsOptions
-  - typings.highcharts.mod.SeriesAdOptions
-  - typings.highcharts.mod.SeriesAoOptions
-  - typings.highcharts.mod.SeriesApoOptions
-  - typings.highcharts.mod.SeriesAreaOptions
-  - typings.highcharts.mod.SeriesArearangeOptions
-  - typings.highcharts.mod.SeriesAreasplineOptions
-  - typings.highcharts.mod.SeriesAreasplinerangeOptions
-  - typings.highcharts.mod.SeriesAroonOptions
-  - typings.highcharts.mod.SeriesAroonoscillatorOptions
-  - typings.highcharts.mod.SeriesAtrOptions
-  - typings.highcharts.mod.SeriesBarOptions
-  - typings.highcharts.mod.SeriesBbOptions
-  - typings.highcharts.mod.SeriesBellcurveOptions
-  - typings.highcharts.mod.SeriesBoxplotOptions
-  - typings.highcharts.mod.SeriesBubbleOptions
-  - typings.highcharts.mod.SeriesBulletOptions
-  - typings.highcharts.mod.SeriesCandlestickOptions
-  - typings.highcharts.mod.SeriesCciOptions
-  - typings.highcharts.mod.SeriesChaikinOptions
-  - typings.highcharts.mod.SeriesCmfOptions
-  - typings.highcharts.mod.SeriesColumnOptions
-  - typings.highcharts.mod.SeriesColumnpyramidOptions
-  - typings.highcharts.mod.SeriesColumnrangeOptions
-  - typings.highcharts.mod.SeriesCylinderOptions
-  - typings.highcharts.mod.SeriesDemaOptions
-  - typings.highcharts.mod.SeriesDependencywheelOptions
-  - typings.highcharts.mod.SeriesDpoOptions
-  - typings.highcharts.mod.SeriesDumbbellOptions
-  - typings.highcharts.mod.SeriesEmaOptions
-  - typings.highcharts.mod.SeriesErrorbarOptions
-  - typings.highcharts.mod.SeriesFlagsOptions
-  - typings.highcharts.mod.SeriesFunnel3dOptions
-  - typings.highcharts.mod.SeriesFunnelOptions
-  - typings.highcharts.mod.SeriesGanttOptions
-  - typings.highcharts.mod.SeriesGaugeOptions
-  - typings.highcharts.mod.SeriesHeatmapOptions
-  - typings.highcharts.mod.SeriesHistogramOptions
-  - typings.highcharts.mod.SeriesIkhOptions
-  - typings.highcharts.mod.SeriesItemOptions
-  - typings.highcharts.mod.SeriesKeltnerchannelsOptions
-  - typings.highcharts.mod.SeriesLinearregressionangleOptions
-  - typings.highcharts.mod.SeriesLinearregressioninterceptOptions
-  - typings.highcharts.mod.SeriesLinearregressionOptions
-  - typings.highcharts.mod.SeriesLinearregressionslopeOptions
-  - typings.highcharts.mod.SeriesLineOptions
-  - typings.highcharts.mod.SeriesLollipopOptions
-  - typings.highcharts.mod.SeriesMacdOptions
-  - typings.highcharts.mod.SeriesMapbubbleOptions
-  - typings.highcharts.mod.SeriesMaplineOptions
-  - typings.highcharts.mod.SeriesMapOptions
-  - typings.highcharts.mod.SeriesMappointOptions
-  - typings.highcharts.mod.SeriesMfiOptions
-  - typings.highcharts.mod.SeriesMomentumOptions
-  - typings.highcharts.mod.SeriesNatrOptions
-  - typings.highcharts.mod.SeriesNetworkgraphOptions
-  - typings.highcharts.mod.SeriesOhlcOptions
-  - typings.highcharts.mod.SeriesOrganizationOptions
-  - typings.highcharts.mod.SeriesPackedbubbleOptions
-  - typings.highcharts.mod.SeriesParetoOptions
-  - typings.highcharts.mod.SeriesPcOptions
-  - typings.highcharts.mod.SeriesPieOptions
-  - typings.highcharts.mod.SeriesPivotpointsOptions
-  - typings.highcharts.mod.SeriesPolygonOptions
-  - typings.highcharts.mod.SeriesPpoOptions
-  - typings.highcharts.mod.SeriesPriceenvelopesOptions
-  - typings.highcharts.mod.SeriesPsarOptions
-  - typings.highcharts.mod.SeriesPyramid3dOptions
-  - typings.highcharts.mod.SeriesPyramidOptions
-  - typings.highcharts.mod.SeriesRocOptions
-  - typings.highcharts.mod.SeriesRsiOptions
-  - typings.highcharts.mod.SeriesSankeyOptions
-  - typings.highcharts.mod.SeriesScatter3dOptions
-  - typings.highcharts.mod.SeriesScatterOptions
-  - typings.highcharts.mod.SeriesSlowstochasticOptions
-  - typings.highcharts.mod.SeriesSmaOptions
-  - typings.highcharts.mod.SeriesSolidgaugeOptions
-  - typings.highcharts.mod.SeriesSplineOptions
-  - typings.highcharts.mod.SeriesStochasticOptions
-  - typings.highcharts.mod.SeriesStreamgraphOptions
-  - typings.highcharts.mod.SeriesSunburstOptions
-  - typings.highcharts.mod.SeriesSupertrendOptions
-  - typings.highcharts.mod.SeriesTemaOptions
-  - typings.highcharts.mod.SeriesTilemapOptions
-  - typings.highcharts.mod.SeriesTimelineOptions
-  - typings.highcharts.mod.SeriesTreemapOptions
-  - typings.highcharts.mod.SeriesTrendlineOptions
-  - typings.highcharts.mod.SeriesTrixOptions
-  - typings.highcharts.mod.SeriesVariablepieOptions
-  - typings.highcharts.mod.SeriesVariwideOptions
-  - typings.highcharts.mod.SeriesVbpOptions
-  - typings.highcharts.mod.SeriesVectorOptions
-  - typings.highcharts.mod.SeriesVennOptions
-  - typings.highcharts.mod.SeriesVwapOptions
-  - typings.highcharts.mod.SeriesWaterfallOptions
-  - typings.highcharts.mod.SeriesWilliamsrOptions
-  - typings.highcharts.mod.SeriesWindbarbOptions
-  - typings.highcharts.mod.SeriesWmaOptions
-  - typings.highcharts.mod.SeriesWordcloudOptions
-  - typings.highcharts.mod.SeriesXrangeOptions
-  - typings.highcharts.mod.SeriesZigzagOptions
+  - typings.highcharts.highchartsStrings.dial
+  - typings.highcharts.highchartsStrings.steps
+  - typings.highcharts.highchartsStrings.colorByPoint
+  - typings.highcharts.highchartsStrings.dataParser
+  - typings.highcharts.highchartsStrings.pointPadding
+  - typings.highcharts.highchartsStrings.nodes
+  - typings.highcharts.highchartsStrings.groupZPadding
+  - typings.highcharts.highchartsStrings.edgeWidth
+  - typings.highcharts.highchartsStrings.fillOpacity
+  - typings.highcharts.highchartsStrings.yAxis
+  - typings.highcharts.highchartsStrings.aroonDown
+  - typings.highcharts.highchartsStrings.groupPadding
+  - typings.highcharts.highchartsStrings.stack
+  - typings.highcharts.highchartsStrings.useOhlcData
+  - typings.highcharts.highchartsStrings.dataURL
+  - typings.highcharts.highchartsStrings.pivot
+  - typings.highcharts.highchartsStrings.depth
+  - typings.highcharts.highchartsStrings.wrap
+  - typings.highcharts.highchartsStrings.edgeColor
+  - typings.highcharts.highchartsStrings.mapData
+  - typings.highcharts.highchartsStrings.xAxis
+  - typings.highcharts.highchartsStrings.data
+  - typings.highcharts.highchartsStrings.fillColor
+  - typings.highcharts.highchartsStrings.pointWidth
+  - typings.highcharts.highchartsStrings.trackByArea
+  - typings.highcharts.highchartsStrings.baseSeries
+  - typings.highcharts.highchartsStrings.borderRadius
+  - typings.highcharts.highchartsStrings.grouping
+  - typings.highcharts.highchartsStrings.cluster
+  - typings.highcharts.highchartsStrings.maxPointWidth
+  - typings.highcharts.highchartsStrings.`type`
+  - typings.highcharts.highchartsStrings.lowColor
 */
 trait SeriesOptionsType extends js.Object
+
+object SeriesOptionsType {
+  @scala.inline
+  def aroonDown: typings.highcharts.highchartsStrings.aroonDown = "aroonDown".asInstanceOf[typings.highcharts.highchartsStrings.aroonDown]
+  @scala.inline
+  def baseSeries: typings.highcharts.highchartsStrings.baseSeries = "baseSeries".asInstanceOf[typings.highcharts.highchartsStrings.baseSeries]
+  @scala.inline
+  def borderRadius: typings.highcharts.highchartsStrings.borderRadius = "borderRadius".asInstanceOf[typings.highcharts.highchartsStrings.borderRadius]
+  @scala.inline
+  def cluster: typings.highcharts.highchartsStrings.cluster = "cluster".asInstanceOf[typings.highcharts.highchartsStrings.cluster]
+  @scala.inline
+  def colorByPoint: typings.highcharts.highchartsStrings.colorByPoint = "colorByPoint".asInstanceOf[typings.highcharts.highchartsStrings.colorByPoint]
+  @scala.inline
+  def data: typings.highcharts.highchartsStrings.data = "data".asInstanceOf[typings.highcharts.highchartsStrings.data]
+  @scala.inline
+  def dataParser: typings.highcharts.highchartsStrings.dataParser = "dataParser".asInstanceOf[typings.highcharts.highchartsStrings.dataParser]
+  @scala.inline
+  def dataURL: typings.highcharts.highchartsStrings.dataURL = "dataURL".asInstanceOf[typings.highcharts.highchartsStrings.dataURL]
+  @scala.inline
+  def depth: typings.highcharts.highchartsStrings.depth = "depth".asInstanceOf[typings.highcharts.highchartsStrings.depth]
+  @scala.inline
+  def dial: typings.highcharts.highchartsStrings.dial = "dial".asInstanceOf[typings.highcharts.highchartsStrings.dial]
+  @scala.inline
+  def edgeColor: typings.highcharts.highchartsStrings.edgeColor = "edgeColor".asInstanceOf[typings.highcharts.highchartsStrings.edgeColor]
+  @scala.inline
+  def edgeWidth: typings.highcharts.highchartsStrings.edgeWidth = "edgeWidth".asInstanceOf[typings.highcharts.highchartsStrings.edgeWidth]
+  @scala.inline
+  def fillColor: typings.highcharts.highchartsStrings.fillColor = "fillColor".asInstanceOf[typings.highcharts.highchartsStrings.fillColor]
+  @scala.inline
+  def fillOpacity: typings.highcharts.highchartsStrings.fillOpacity = "fillOpacity".asInstanceOf[typings.highcharts.highchartsStrings.fillOpacity]
+  @scala.inline
+  def groupPadding: typings.highcharts.highchartsStrings.groupPadding = "groupPadding".asInstanceOf[typings.highcharts.highchartsStrings.groupPadding]
+  @scala.inline
+  def groupZPadding: typings.highcharts.highchartsStrings.groupZPadding = "groupZPadding".asInstanceOf[typings.highcharts.highchartsStrings.groupZPadding]
+  @scala.inline
+  def grouping: typings.highcharts.highchartsStrings.grouping = "grouping".asInstanceOf[typings.highcharts.highchartsStrings.grouping]
+  @scala.inline
+  def lowColor: typings.highcharts.highchartsStrings.lowColor = "lowColor".asInstanceOf[typings.highcharts.highchartsStrings.lowColor]
+  @scala.inline
+  def mapData: typings.highcharts.highchartsStrings.mapData = "mapData".asInstanceOf[typings.highcharts.highchartsStrings.mapData]
+  @scala.inline
+  def maxPointWidth: typings.highcharts.highchartsStrings.maxPointWidth = "maxPointWidth".asInstanceOf[typings.highcharts.highchartsStrings.maxPointWidth]
+  @scala.inline
+  def nodes: typings.highcharts.highchartsStrings.nodes = "nodes".asInstanceOf[typings.highcharts.highchartsStrings.nodes]
+  @scala.inline
+  def pivot: typings.highcharts.highchartsStrings.pivot = "pivot".asInstanceOf[typings.highcharts.highchartsStrings.pivot]
+  @scala.inline
+  def pointPadding: typings.highcharts.highchartsStrings.pointPadding = "pointPadding".asInstanceOf[typings.highcharts.highchartsStrings.pointPadding]
+  @scala.inline
+  def pointWidth: typings.highcharts.highchartsStrings.pointWidth = "pointWidth".asInstanceOf[typings.highcharts.highchartsStrings.pointWidth]
+  @scala.inline
+  def stack: typings.highcharts.highchartsStrings.stack = "stack".asInstanceOf[typings.highcharts.highchartsStrings.stack]
+  @scala.inline
+  def steps: typings.highcharts.highchartsStrings.steps = "steps".asInstanceOf[typings.highcharts.highchartsStrings.steps]
+  @scala.inline
+  def trackByArea: typings.highcharts.highchartsStrings.trackByArea = "trackByArea".asInstanceOf[typings.highcharts.highchartsStrings.trackByArea]
+  @scala.inline
+  def `type`: typings.highcharts.highchartsStrings.`type` = "type".asInstanceOf[typings.highcharts.highchartsStrings.`type`]
+  @scala.inline
+  def useOhlcData: typings.highcharts.highchartsStrings.useOhlcData = "useOhlcData".asInstanceOf[typings.highcharts.highchartsStrings.useOhlcData]
+  @scala.inline
+  def wrap: typings.highcharts.highchartsStrings.wrap = "wrap".asInstanceOf[typings.highcharts.highchartsStrings.wrap]
+  @scala.inline
+  def xAxis: typings.highcharts.highchartsStrings.xAxis = "xAxis".asInstanceOf[typings.highcharts.highchartsStrings.xAxis]
+  @scala.inline
+  def yAxis: typings.highcharts.highchartsStrings.yAxis = "yAxis".asInstanceOf[typings.highcharts.highchartsStrings.yAxis]
+}
 

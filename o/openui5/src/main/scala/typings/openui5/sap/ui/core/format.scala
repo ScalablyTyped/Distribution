@@ -1,6 +1,5 @@
 package typings.openui5.sap.ui.core
 
-import org.scalablytyped.runtime.TopLevel
 import typings.openui5.sap.ui.base.Object
 import typings.std.Date
 import scala.scalajs.js
@@ -11,11 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object format extends js.Object {
   @js.native
-  /**
-    * Constructor for DateFormat - must not be used: To get a DateFormat instance, please use getInstance,
-    * getDateTimeInstance or getTimeInstance.
-    */
-  class DateFormat () extends js.Object {
+  trait DateFormat extends js.Object {
     /**
       * Format a date according to the given format options.
       * @param oDate the value to format
@@ -58,11 +53,7 @@ object format extends js.Object {
   }
   
   @js.native
-  /**
-    * Constructor for FileSizeFormat - must not be used: To get a FileSizeFormat instance, please use
-    * getInstance.
-    */
-  class FileSizeFormat () extends Object {
+  trait FileSizeFormat extends Object {
     def format(oValue: String): String = js.native
     /**
       * Format a filesize (in bytes) according to the given format options.
@@ -89,14 +80,7 @@ object format extends js.Object {
   }
   
   @js.native
-  class NumberFormat protected () extends Object {
-    /**
-      * Constructor for NumberFormat - must not be used: To get a NumberFormat instance, please use
-      * getInstance, getFloatInstance or getIntegerInstance.
-      * @param oFormatOptions The option object which support the following parameters. If no options is
-      * given, default values according to the type and locale settings are used.
-      */
-    def this(oFormatOptions: js.Any) = this()
+  trait NumberFormat extends Object {
     def format(oValue: js.Array[_]): String = js.native
     def format(oValue: js.Array[_], sMeasure: String): String = js.native
     /**
@@ -196,32 +180,6 @@ object format extends js.Object {
       
       @js.native
       sealed trait TOWARDS_ZERO extends RoundingMode
-      
-      @JSBracketAccess
-      def apply(value: Double): js.UndefOr[RoundingMode with Double] = js.native
-      /* 0 */ @js.native
-      object AWAY_FROM_ZERO extends TopLevel[AWAY_FROM_ZERO with Double]
-      
-      /* 1 */ @js.native
-      object CEILING extends TopLevel[CEILING with Double]
-      
-      /* 2 */ @js.native
-      object FLOOR extends TopLevel[FLOOR with Double]
-      
-      /* 3 */ @js.native
-      object HALF_AWAY_FROM_ZERO extends TopLevel[HALF_AWAY_FROM_ZERO with Double]
-      
-      /* 4 */ @js.native
-      object HALF_CEILING extends TopLevel[HALF_CEILING with Double]
-      
-      /* 5 */ @js.native
-      object HALF_FLOOR extends TopLevel[HALF_FLOOR with Double]
-      
-      /* 6 */ @js.native
-      object HALF_TOWARDS_ZERO extends TopLevel[HALF_TOWARDS_ZERO with Double]
-      
-      /* 7 */ @js.native
-      object TOWARDS_ZERO extends TopLevel[TOWARDS_ZERO with Double]
       
     }
     

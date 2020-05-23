@@ -4,15 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.FlyCameraMouseInput")
 @js.native
-/**
-  * Listen to mouse events to control the camera.
-  * @param touchEnabled Define if touch is enabled. (Default is true.)
-  * @see http://doc.babylonjs.com/how_to/customizing_camera_inputs
-  */
-class FlyCameraMouseInput () extends ICameraInput[FlyCamera] {
-  def this(touchEnabled: Boolean) = this()
+trait FlyCameraMouseInput extends ICameraInput[FlyCamera] {
   var _mousemoveCallback: js.Any = js.native
   var _observer: js.Any = js.native
   var _onMouseMove: js.Any = js.native

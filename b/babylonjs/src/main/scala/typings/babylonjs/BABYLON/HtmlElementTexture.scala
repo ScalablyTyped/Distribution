@@ -6,18 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.HtmlElementTexture")
 @js.native
-class HtmlElementTexture protected () extends BaseTexture {
-  def this(name: String, element: HTMLCanvasElement, options: IHtmlElementTextureOptions) = this()
-  /**
-    * Instantiates a HtmlElementTexture from the following parameters.
-    *
-    * @param name Defines the name of the texture
-    * @param element Defines the video or canvas the texture is filled with
-    * @param options Defines the other none mandatory texture creation options
-    */
-  def this(name: String, element: HTMLVideoElement, options: IHtmlElementTextureOptions) = this()
+trait HtmlElementTexture extends BaseTexture {
   var _createInternalTexture: js.Any = js.native
   var _engine: js.Any = js.native
   var _generateMipMaps: js.Any = js.native
@@ -34,12 +24,5 @@ class HtmlElementTexture protected () extends BaseTexture {
     */
   def update(): Unit = js.native
   def update(invertY: Nullable[Boolean]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.HtmlElementTexture")
-@js.native
-object HtmlElementTexture extends js.Object {
-  val DefaultOptions: js.Any = js.native
 }
 

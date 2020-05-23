@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.rollup.AnonMissing
+  - typings.rollup.anon.Missing
   - typings.rollup.mod.ExistingDecodedSourceMap
 */
 trait DecodedSourceMapOrMissing extends js.Object
 
 object DecodedSourceMapOrMissing {
   @scala.inline
-  def AnonMissing(missing: `true`, plugin: String): DecodedSourceMapOrMissing = {
+  def Missing(missing: `true`, plugin: String): DecodedSourceMapOrMissing = {
     val __obj = js.Dynamic.literal(missing = missing.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecodedSourceMapOrMissing]
   }

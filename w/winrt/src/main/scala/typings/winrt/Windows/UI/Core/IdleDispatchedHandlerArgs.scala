@@ -4,10 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.Core.IdleDispatchedHandlerArgs")
-@js.native
-class IdleDispatchedHandlerArgs () extends IIdleDispatchedHandlerArgs {
-  /* CompleteClass */
-  override var isDispatcherIdle: Boolean = js.native
+trait IdleDispatchedHandlerArgs extends IIdleDispatchedHandlerArgs
+
+object IdleDispatchedHandlerArgs {
+  @scala.inline
+  def apply(isDispatcherIdle: Boolean): IdleDispatchedHandlerArgs = {
+    val __obj = js.Dynamic.literal(isDispatcherIdle = isDispatcherIdle.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IdleDispatchedHandlerArgs]
+  }
 }
 

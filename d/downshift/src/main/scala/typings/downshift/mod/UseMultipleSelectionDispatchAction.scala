@@ -14,7 +14,7 @@ object UseMultipleSelectionDispatchAction {
   @scala.inline
   def apply(
     `type`: UseMultipleSelectionStateChangeTypes,
-    StringDictionary: /* data */ StringDictionary[js.Any] = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null
   ): UseMultipleSelectionDispatchAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

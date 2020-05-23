@@ -1,6 +1,7 @@
 package typings.luminoAlgorithm
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.luminoAlgorithm.anon.Index
 import typings.luminoAlgorithm.arrayMod.ArrayExt.MutableArrayLike
 import typings.luminoAlgorithm.arrayMod.ArrayExt.slice.IOptions
 import typings.luminoAlgorithm.iterMod.IIterator
@@ -906,14 +907,14 @@ object mod extends js.Object {
       * ArrayExt.removeFirstWhere(data, isEven, 4);  // { index: -1, value: undefined }
       * ```
       */
-    def removeFirstWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): AnonIndex[T] = js.native
-    def removeFirstWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): AnonIndex[T] = js.native
+    def removeFirstWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Index[T] = js.native
+    def removeFirstWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): Index[T] = js.native
     def removeFirstWhere[T](
       array: js.Array[T],
       fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
       start: Double,
       stop: Double
-    ): AnonIndex[T] = js.native
+    ): Index[T] = js.native
     /**
       * Remove the last occurrence of a value from an array.
       *
@@ -991,14 +992,14 @@ object mod extends js.Object {
       * ArrayExt.removeLastWhere(data, isEven, 2, 1);  // { index: -1, value: undefined }
       * ```
       */
-    def removeLastWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): AnonIndex[T] = js.native
-    def removeLastWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): AnonIndex[T] = js.native
+    def removeLastWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Index[T] = js.native
+    def removeLastWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): Index[T] = js.native
     def removeLastWhere[T](
       array: js.Array[T],
       fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
       start: Double,
       stop: Double
-    ): AnonIndex[T] = js.native
+    ): Index[T] = js.native
     /**
       * Reverse an array in-place.
       *

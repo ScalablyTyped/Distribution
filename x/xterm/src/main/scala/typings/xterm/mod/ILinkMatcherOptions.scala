@@ -23,7 +23,8 @@ trait ILinkMatcherOptions extends js.Object {
     */
   var priority: js.UndefOr[Double] = js.undefined
   /**
-    * A callback that fires when the mouse hovers over a link for a moment.
+    * A callback that fires when the mouse hovers over a link for a period of
+    * time (defined by {@link ITerminalOptions.linkTooltipHoverDuration}).
     */
   var tooltipCallback: js.UndefOr[
     js.Function3[
@@ -53,16 +54,16 @@ object ILinkMatcherOptions {
   @scala.inline
   def apply(
     leaveCallback: () => Unit = null,
-    matchIndex: Int | Double = null,
-    priority: Int | Double = null,
+    matchIndex: js.UndefOr[Double] = js.undefined,
+    priority: js.UndefOr[Double] = js.undefined,
     tooltipCallback: (/* event */ MouseEvent, /* uri */ String, /* location */ IViewportRange) => Boolean | Unit = null,
     validationCallback: (/* uri */ String, /* callback */ js.Function1[/* isValid */ Boolean, Unit]) => Unit = null,
     willLinkActivate: (/* event */ MouseEvent, /* uri */ String) => Boolean = null
   ): ILinkMatcherOptions = {
     val __obj = js.Dynamic.literal()
     if (leaveCallback != null) __obj.updateDynamic("leaveCallback")(js.Any.fromFunction0(leaveCallback))
-    if (matchIndex != null) __obj.updateDynamic("matchIndex")(matchIndex.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchIndex)) __obj.updateDynamic("matchIndex")(matchIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     if (tooltipCallback != null) __obj.updateDynamic("tooltipCallback")(js.Any.fromFunction3(tooltipCallback))
     if (validationCallback != null) __obj.updateDynamic("validationCallback")(js.Any.fromFunction2(validationCallback))
     if (willLinkActivate != null) __obj.updateDynamic("willLinkActivate")(js.Any.fromFunction2(willLinkActivate))

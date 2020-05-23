@@ -1,6 +1,6 @@
 package typings.segmentAnalytics.SegmentAnalytics
 
-import typings.segmentAnalytics.AnonDictintegration
+import typings.segmentAnalytics.anon.Dictintegration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait InitOptions extends js.Object {
   var cookie: js.UndefOr[CookieOptions] = js.undefined
   var group: js.UndefOr[GroupOptions] = js.undefined
-  var integrations: js.UndefOr[AnonDictintegration] = js.undefined
+  var integrations: js.UndefOr[Dictintegration] = js.undefined
   var localStorage: js.UndefOr[StoreOptions] = js.undefined
   var metrics: js.UndefOr[MetricsOptions] = js.undefined
   var user: js.UndefOr[UserOptions] = js.undefined
@@ -19,7 +19,7 @@ object InitOptions {
   def apply(
     cookie: CookieOptions = null,
     group: GroupOptions = null,
-    integrations: AnonDictintegration = null,
+    integrations: Dictintegration = null,
     localStorage: StoreOptions = null,
     metrics: MetricsOptions = null,
     user: UserOptions = null

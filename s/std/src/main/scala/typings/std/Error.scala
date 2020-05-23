@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +10,12 @@ trait Error extends js.Object {
   var stack: js.UndefOr[java.lang.String] = js.undefined
 }
 
-@JSGlobal("Error")
-@js.native
-object Error extends TopLevel[ErrorConstructor]
+object Error {
+  @scala.inline
+  def apply(message: java.lang.String, name: java.lang.String, stack: java.lang.String = null): Error = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Error]
+  }
+}
 

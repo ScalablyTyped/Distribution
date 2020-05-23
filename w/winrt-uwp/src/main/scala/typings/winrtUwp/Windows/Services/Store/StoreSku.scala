@@ -7,9 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides info for a SKU of a product in the Windows Store. */
-@JSGlobal("Windows.Services.Store.StoreSku")
 @js.native
-abstract class StoreSku () extends js.Object {
+trait StoreSku extends js.Object {
   /** Gets the availabilities for the current product SKU. Each product SKU can have one or more availabilities that have different prices. */
   var availabilities: IVectorView[StoreAvailability] = js.native
   /** Gets the list of Store IDs for the apps or add-ons that are bundled with this product SKU. */

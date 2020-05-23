@@ -12,8 +12,7 @@ trait QueueItem extends js.Object {
 object QueueItem {
   @scala.inline
   def apply(task: QueueChildMessage, next: QueueItem = null): QueueItem = {
-    val __obj = js.Dynamic.literal(task = task.asInstanceOf[js.Any])
-    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(task = task.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueueItem]
   }
 }

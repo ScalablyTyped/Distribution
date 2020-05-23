@@ -26,16 +26,12 @@ trait IStatusTransitions extends js.Object {
 object IStatusTransitions {
   @scala.inline
   def apply(
-    finalized_at: Int | Double = null,
-    marked_uncollectible_at: Int | Double = null,
-    paid_at: Int | Double = null,
-    voided_at: Int | Double = null
+    finalized_at: Double = null.asInstanceOf[Double],
+    marked_uncollectible_at: Double = null.asInstanceOf[Double],
+    paid_at: Double = null.asInstanceOf[Double],
+    voided_at: Double = null.asInstanceOf[Double]
   ): IStatusTransitions = {
-    val __obj = js.Dynamic.literal()
-    if (finalized_at != null) __obj.updateDynamic("finalized_at")(finalized_at.asInstanceOf[js.Any])
-    if (marked_uncollectible_at != null) __obj.updateDynamic("marked_uncollectible_at")(marked_uncollectible_at.asInstanceOf[js.Any])
-    if (paid_at != null) __obj.updateDynamic("paid_at")(paid_at.asInstanceOf[js.Any])
-    if (voided_at != null) __obj.updateDynamic("voided_at")(voided_at.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(finalized_at = finalized_at.asInstanceOf[js.Any], marked_uncollectible_at = marked_uncollectible_at.asInstanceOf[js.Any], paid_at = paid_at.asInstanceOf[js.Any], voided_at = voided_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStatusTransitions]
   }
 }

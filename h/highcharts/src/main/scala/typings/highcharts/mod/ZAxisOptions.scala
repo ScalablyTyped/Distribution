@@ -542,67 +542,67 @@ object ZAxisOptions {
     alignTicks: js.UndefOr[Boolean] = js.undefined,
     allowDecimals: js.UndefOr[Boolean] = js.undefined,
     alternateGridColor: ColorString | GradientColorObject | PatternObject = null,
-    angle: Int | Double = null,
+    angle: js.UndefOr[Double] = js.undefined,
     categories: js.Array[String] = null,
-    ceiling: Int | Double = null,
+    ceiling: js.UndefOr[Double] = js.undefined,
     className: String = null,
     currentDateIndicator: Boolean | AxisCurrentDateIndicatorOptions = null,
     dateTimeLabelFormats: AxisDateTimeLabelFormatsOptions = null,
     endOnTick: js.UndefOr[Boolean] = js.undefined,
     events: ZAxisEventsOptions = null,
-    floor: Int | Double = null,
+    floor: js.UndefOr[Double] = js.undefined,
     grid: ZAxisGridOptions = null,
     gridLineColor: ColorString | GradientColorObject | PatternObject = null,
     gridLineDashStyle: DashStyleValue = null,
     gridLineInterpolation: OptionsGridLineInterpolationValue = null,
-    gridLineWidth: Int | Double = null,
-    gridZIndex: Int | Double = null,
+    gridLineWidth: js.UndefOr[Double] = js.undefined,
+    gridZIndex: js.UndefOr[Double] = js.undefined,
     id: String = null,
     labels: ZAxisLabelsOptions = null,
-    linkedTo: Int | Double = null,
-    margin: Int | Double = null,
-    max: Int | Double = null,
-    maxPadding: Int | Double = null,
-    maxRange: Int | Double = null,
-    min: Int | Double = null,
-    minPadding: Int | Double = null,
-    minRange: Int | Double = null,
-    minTickInterval: Int | Double = null,
+    linkedTo: js.UndefOr[Double] = js.undefined,
+    margin: js.UndefOr[Double] = js.undefined,
+    max: js.UndefOr[Null | Double] = js.undefined,
+    maxPadding: js.UndefOr[Double] = js.undefined,
+    maxRange: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Null | Double] = js.undefined,
+    minPadding: js.UndefOr[Double] = js.undefined,
+    minRange: js.UndefOr[Double] = js.undefined,
+    minTickInterval: js.UndefOr[Double] = js.undefined,
     minorGridLineColor: ColorString | GradientColorObject | PatternObject = null,
     minorGridLineDashStyle: DashStyleValue = null,
-    minorGridLineWidth: Int | Double = null,
+    minorGridLineWidth: js.UndefOr[Double] = js.undefined,
     minorTickColor: ColorString | GradientColorObject | PatternObject = null,
-    minorTickInterval: Double | String = null,
-    minorTickLength: Int | Double = null,
+    minorTickInterval: js.UndefOr[Null | Double | String] = js.undefined,
+    minorTickLength: js.UndefOr[Double] = js.undefined,
     minorTickPosition: OptionsMinorTickPositionValue = null,
-    minorTickWidth: Int | Double = null,
+    minorTickWidth: js.UndefOr[Double] = js.undefined,
     minorTicks: js.UndefOr[Boolean] = js.undefined,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     opposite: js.UndefOr[Boolean] = js.undefined,
     ordinal: js.UndefOr[Boolean] = js.undefined,
-    overscroll: Int | Double = null,
-    pane: Int | Double = null,
+    overscroll: js.UndefOr[Double] = js.undefined,
+    pane: js.UndefOr[Double] = js.undefined,
     plotBands: js.Array[ZAxisPlotBandsOptions] = null,
     plotLines: js.Array[ZAxisPlotLinesOptions] = null,
-    range: Int | Double = null,
+    range: js.UndefOr[Double] = js.undefined,
     reversed: js.UndefOr[Boolean] = js.undefined,
     reversedStacks: js.UndefOr[Boolean] = js.undefined,
     scrollbar: ZAxisScrollbarOptions = null,
     showFirstLabel: js.UndefOr[Boolean] = js.undefined,
     showLastLabel: js.UndefOr[Boolean] = js.undefined,
-    softMax: Int | Double = null,
-    softMin: Int | Double = null,
-    startOfWeek: Int | Double = null,
+    softMax: js.UndefOr[Double] = js.undefined,
+    softMin: js.UndefOr[Double] = js.undefined,
+    startOfWeek: js.UndefOr[Double] = js.undefined,
     startOnTick: js.UndefOr[Boolean] = js.undefined,
-    tickAmount: Int | Double = null,
+    tickAmount: js.UndefOr[Double] = js.undefined,
     tickColor: ColorString | GradientColorObject | PatternObject = null,
-    tickInterval: Int | Double = null,
-    tickLength: Int | Double = null,
-    tickPixelInterval: Int | Double = null,
+    tickInterval: js.UndefOr[Double] = js.undefined,
+    tickLength: js.UndefOr[Double] = js.undefined,
+    tickPixelInterval: js.UndefOr[Double] = js.undefined,
     tickPosition: OptionsTickPositionValue = null,
     tickPositioner: AxisTickPositionerCallbackFunction = null,
     tickPositions: js.Array[Double] = null,
-    tickWidth: Int | Double = null,
+    tickWidth: js.UndefOr[Double] = js.undefined,
     tickmarkPlacement: OptionsTickmarkPlacementValue = null,
     title: ZAxisTitleOptions = null,
     `type`: AxisTypeValue = null,
@@ -613,77 +613,77 @@ object ZAxisOptions {
   ): ZAxisOptions = {
     val __obj = js.Dynamic.literal()
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(alignTicks)) __obj.updateDynamic("alignTicks")(alignTicks.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDecimals)) __obj.updateDynamic("allowDecimals")(allowDecimals.asInstanceOf[js.Any])
+    if (!js.isUndefined(alignTicks)) __obj.updateDynamic("alignTicks")(alignTicks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDecimals)) __obj.updateDynamic("allowDecimals")(allowDecimals.get.asInstanceOf[js.Any])
     if (alternateGridColor != null) __obj.updateDynamic("alternateGridColor")(alternateGridColor.asInstanceOf[js.Any])
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
     if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
-    if (ceiling != null) __obj.updateDynamic("ceiling")(ceiling.asInstanceOf[js.Any])
+    if (!js.isUndefined(ceiling)) __obj.updateDynamic("ceiling")(ceiling.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (currentDateIndicator != null) __obj.updateDynamic("currentDateIndicator")(currentDateIndicator.asInstanceOf[js.Any])
     if (dateTimeLabelFormats != null) __obj.updateDynamic("dateTimeLabelFormats")(dateTimeLabelFormats.asInstanceOf[js.Any])
-    if (!js.isUndefined(endOnTick)) __obj.updateDynamic("endOnTick")(endOnTick.asInstanceOf[js.Any])
+    if (!js.isUndefined(endOnTick)) __obj.updateDynamic("endOnTick")(endOnTick.get.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (floor != null) __obj.updateDynamic("floor")(floor.asInstanceOf[js.Any])
+    if (!js.isUndefined(floor)) __obj.updateDynamic("floor")(floor.get.asInstanceOf[js.Any])
     if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
     if (gridLineColor != null) __obj.updateDynamic("gridLineColor")(gridLineColor.asInstanceOf[js.Any])
     if (gridLineDashStyle != null) __obj.updateDynamic("gridLineDashStyle")(gridLineDashStyle.asInstanceOf[js.Any])
     if (gridLineInterpolation != null) __obj.updateDynamic("gridLineInterpolation")(gridLineInterpolation.asInstanceOf[js.Any])
-    if (gridLineWidth != null) __obj.updateDynamic("gridLineWidth")(gridLineWidth.asInstanceOf[js.Any])
-    if (gridZIndex != null) __obj.updateDynamic("gridZIndex")(gridZIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridLineWidth)) __obj.updateDynamic("gridLineWidth")(gridLineWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridZIndex)) __obj.updateDynamic("gridZIndex")(gridZIndex.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (linkedTo != null) __obj.updateDynamic("linkedTo")(linkedTo.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (maxPadding != null) __obj.updateDynamic("maxPadding")(maxPadding.asInstanceOf[js.Any])
-    if (maxRange != null) __obj.updateDynamic("maxRange")(maxRange.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minPadding != null) __obj.updateDynamic("minPadding")(minPadding.asInstanceOf[js.Any])
-    if (minRange != null) __obj.updateDynamic("minRange")(minRange.asInstanceOf[js.Any])
-    if (minTickInterval != null) __obj.updateDynamic("minTickInterval")(minTickInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkedTo)) __obj.updateDynamic("linkedTo")(linkedTo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPadding)) __obj.updateDynamic("maxPadding")(maxPadding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRange)) __obj.updateDynamic("maxRange")(maxRange.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(minPadding)) __obj.updateDynamic("minPadding")(minPadding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minRange)) __obj.updateDynamic("minRange")(minRange.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minTickInterval)) __obj.updateDynamic("minTickInterval")(minTickInterval.get.asInstanceOf[js.Any])
     if (minorGridLineColor != null) __obj.updateDynamic("minorGridLineColor")(minorGridLineColor.asInstanceOf[js.Any])
     if (minorGridLineDashStyle != null) __obj.updateDynamic("minorGridLineDashStyle")(minorGridLineDashStyle.asInstanceOf[js.Any])
-    if (minorGridLineWidth != null) __obj.updateDynamic("minorGridLineWidth")(minorGridLineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(minorGridLineWidth)) __obj.updateDynamic("minorGridLineWidth")(minorGridLineWidth.get.asInstanceOf[js.Any])
     if (minorTickColor != null) __obj.updateDynamic("minorTickColor")(minorTickColor.asInstanceOf[js.Any])
-    if (minorTickInterval != null) __obj.updateDynamic("minorTickInterval")(minorTickInterval.asInstanceOf[js.Any])
-    if (minorTickLength != null) __obj.updateDynamic("minorTickLength")(minorTickLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(minorTickInterval)) __obj.updateDynamic("minorTickInterval")(minorTickInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(minorTickLength)) __obj.updateDynamic("minorTickLength")(minorTickLength.get.asInstanceOf[js.Any])
     if (minorTickPosition != null) __obj.updateDynamic("minorTickPosition")(minorTickPosition.asInstanceOf[js.Any])
-    if (minorTickWidth != null) __obj.updateDynamic("minorTickWidth")(minorTickWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(minorTicks)) __obj.updateDynamic("minorTicks")(minorTicks.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(opposite)) __obj.updateDynamic("opposite")(opposite.asInstanceOf[js.Any])
-    if (!js.isUndefined(ordinal)) __obj.updateDynamic("ordinal")(ordinal.asInstanceOf[js.Any])
-    if (overscroll != null) __obj.updateDynamic("overscroll")(overscroll.asInstanceOf[js.Any])
-    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
+    if (!js.isUndefined(minorTickWidth)) __obj.updateDynamic("minorTickWidth")(minorTickWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minorTicks)) __obj.updateDynamic("minorTicks")(minorTicks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opposite)) __obj.updateDynamic("opposite")(opposite.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ordinal)) __obj.updateDynamic("ordinal")(ordinal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overscroll)) __obj.updateDynamic("overscroll")(overscroll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pane)) __obj.updateDynamic("pane")(pane.get.asInstanceOf[js.Any])
     if (plotBands != null) __obj.updateDynamic("plotBands")(plotBands.asInstanceOf[js.Any])
     if (plotLines != null) __obj.updateDynamic("plotLines")(plotLines.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.asInstanceOf[js.Any])
-    if (!js.isUndefined(reversedStacks)) __obj.updateDynamic("reversedStacks")(reversedStacks.asInstanceOf[js.Any])
+    if (!js.isUndefined(range)) __obj.updateDynamic("range")(range.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reversedStacks)) __obj.updateDynamic("reversedStacks")(reversedStacks.get.asInstanceOf[js.Any])
     if (scrollbar != null) __obj.updateDynamic("scrollbar")(scrollbar.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFirstLabel)) __obj.updateDynamic("showFirstLabel")(showFirstLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLastLabel)) __obj.updateDynamic("showLastLabel")(showLastLabel.asInstanceOf[js.Any])
-    if (softMax != null) __obj.updateDynamic("softMax")(softMax.asInstanceOf[js.Any])
-    if (softMin != null) __obj.updateDynamic("softMin")(softMin.asInstanceOf[js.Any])
-    if (startOfWeek != null) __obj.updateDynamic("startOfWeek")(startOfWeek.asInstanceOf[js.Any])
-    if (!js.isUndefined(startOnTick)) __obj.updateDynamic("startOnTick")(startOnTick.asInstanceOf[js.Any])
-    if (tickAmount != null) __obj.updateDynamic("tickAmount")(tickAmount.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFirstLabel)) __obj.updateDynamic("showFirstLabel")(showFirstLabel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLastLabel)) __obj.updateDynamic("showLastLabel")(showLastLabel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(softMax)) __obj.updateDynamic("softMax")(softMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(softMin)) __obj.updateDynamic("softMin")(softMin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startOfWeek)) __obj.updateDynamic("startOfWeek")(startOfWeek.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startOnTick)) __obj.updateDynamic("startOnTick")(startOnTick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tickAmount)) __obj.updateDynamic("tickAmount")(tickAmount.get.asInstanceOf[js.Any])
     if (tickColor != null) __obj.updateDynamic("tickColor")(tickColor.asInstanceOf[js.Any])
-    if (tickInterval != null) __obj.updateDynamic("tickInterval")(tickInterval.asInstanceOf[js.Any])
-    if (tickLength != null) __obj.updateDynamic("tickLength")(tickLength.asInstanceOf[js.Any])
-    if (tickPixelInterval != null) __obj.updateDynamic("tickPixelInterval")(tickPixelInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(tickInterval)) __obj.updateDynamic("tickInterval")(tickInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tickLength)) __obj.updateDynamic("tickLength")(tickLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tickPixelInterval)) __obj.updateDynamic("tickPixelInterval")(tickPixelInterval.get.asInstanceOf[js.Any])
     if (tickPosition != null) __obj.updateDynamic("tickPosition")(tickPosition.asInstanceOf[js.Any])
     if (tickPositioner != null) __obj.updateDynamic("tickPositioner")(tickPositioner.asInstanceOf[js.Any])
     if (tickPositions != null) __obj.updateDynamic("tickPositions")(tickPositions.asInstanceOf[js.Any])
-    if (tickWidth != null) __obj.updateDynamic("tickWidth")(tickWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(tickWidth)) __obj.updateDynamic("tickWidth")(tickWidth.get.asInstanceOf[js.Any])
     if (tickmarkPlacement != null) __obj.updateDynamic("tickmarkPlacement")(tickmarkPlacement.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(uniqueNames)) __obj.updateDynamic("uniqueNames")(uniqueNames.asInstanceOf[js.Any])
+    if (!js.isUndefined(uniqueNames)) __obj.updateDynamic("uniqueNames")(uniqueNames.get.asInstanceOf[js.Any])
     if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomEnabled)) __obj.updateDynamic("zoomEnabled")(zoomEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomEnabled)) __obj.updateDynamic("zoomEnabled")(zoomEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZAxisOptions]
   }
 }

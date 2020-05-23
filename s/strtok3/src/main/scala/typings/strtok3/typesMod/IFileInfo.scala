@@ -25,11 +25,16 @@ trait IFileInfo extends js.Object {
 
 object IFileInfo {
   @scala.inline
-  def apply(mimeType: String = null, path: String = null, size: Int | Double = null, url: String = null): IFileInfo = {
+  def apply(
+    mimeType: String = null,
+    path: String = null,
+    size: js.UndefOr[Double] = js.undefined,
+    url: String = null
+  ): IFileInfo = {
     val __obj = js.Dynamic.literal()
     if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileInfo]
   }

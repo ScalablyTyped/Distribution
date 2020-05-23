@@ -1,9 +1,9 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.AnonColorsrc
-import typings.plotlyJs.PartialColorBar
-import typings.plotlyJs.PartialPadding
-import typings.plotlyJs.PartialScatterMarkerLine
+import typings.plotlyJs.anon.Colorsrc
+import typings.plotlyJs.anon.PartialColorBar
+import typings.plotlyJs.anon.PartialPadding
+import typings.plotlyJs.anon.PartialScatterMarkerLine
 import typings.plotlyJs.plotlyJsStrings.area
 import typings.plotlyJs.plotlyJsStrings.diameter
 import scala.scalajs.js
@@ -19,7 +19,7 @@ trait PlotMarker extends js.Object {
   var colorbar: PartialColorBar
   var colors: js.Array[Color]
   var colorscale: ColorScale
-  var gradient: AnonColorsrc
+  var gradient: Colorsrc
   var line: PartialScatterMarkerLine
   var maxdisplayed: Double
   var opacity: Double | js.Array[Double]
@@ -46,7 +46,7 @@ object PlotMarker {
     colorbar: PartialColorBar,
     colors: js.Array[Color],
     colorscale: ColorScale,
-    gradient: AnonColorsrc,
+    gradient: Colorsrc,
     line: PartialScatterMarkerLine,
     maxdisplayed: Double,
     opacity: Double | js.Array[Double],

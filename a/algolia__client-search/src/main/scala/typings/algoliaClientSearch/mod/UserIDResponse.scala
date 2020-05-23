@@ -8,19 +8,19 @@ trait UserIDResponse extends js.Object {
   /**
     * Cluster on which the user is assigned
     */
-  val clusterName: String
+  var clusterName: String
   /**
     * Data size used by the user.
     */
-  val dataSize: Double
+  var dataSize: Double
   /**
     * Number of records belonging to the user.
     */
-  val nbRecords: Double
+  var nbRecords: Double
   /**
     * userID of the user.
     */
-  val userID: String
+  var userID: String
 }
 
 object UserIDResponse {

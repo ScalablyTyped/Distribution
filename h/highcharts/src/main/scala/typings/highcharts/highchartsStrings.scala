@@ -54,6 +54,7 @@ import typings.highcharts.mod.PaneBackgroundShapeValue
 import typings.highcharts.mod.PointStateValue
 import typings.highcharts.mod.RangeSelectorButtonTypeValue
 import typings.highcharts.mod.SVGPathCommand
+import typings.highcharts.mod.SeriesOptionsType
 import typings.highcharts.mod.SeriesOrganizationNodesLayoutValue
 import typings.highcharts.mod.SeriesStateValue
 import typings.highcharts.mod.SymbolKeyValue
@@ -272,6 +273,9 @@ object highchartsStrings {
   sealed trait aroon extends js.Object
   
   @js.native
+  sealed trait aroonDown extends SeriesOptionsType
+  
+  @js.native
   sealed trait aroonoscillator extends js.Object
   
   @js.native
@@ -298,6 +302,9 @@ object highchartsStrings {
   sealed trait `barnes-hut` extends OptionsApproximationValue
   
   @js.native
+  sealed trait baseSeries extends SeriesOptionsType
+  
+  @js.native
   sealed trait bb extends js.Object
   
   @js.native
@@ -305,6 +312,9 @@ object highchartsStrings {
   
   @js.native
   sealed trait between extends OptionsTickmarkPlacementValue
+  
+  @js.native
+  sealed trait borderRadius extends SeriesOptionsType
   
   @js.native
   sealed trait bottom extends VerticalAlignValue
@@ -384,10 +394,16 @@ object highchartsStrings {
        with OptionsPointValKeyValue
   
   @js.native
+  sealed trait cluster extends SeriesOptionsType
+  
+  @js.native
   sealed trait cmf extends js.Object
   
   @js.native
   sealed trait `col-resize` extends CursorValue
+  
+  @js.native
+  sealed trait colorByPoint extends SeriesOptionsType
   
   @js.native
   sealed trait column extends js.Object
@@ -422,6 +438,15 @@ object highchartsStrings {
   sealed trait darken extends OptionsBoostBlendingValue
   
   @js.native
+  sealed trait data extends SeriesOptionsType
+  
+  @js.native
+  sealed trait dataParser extends SeriesOptionsType
+  
+  @js.native
+  sealed trait dataURL extends SeriesOptionsType
+  
+  @js.native
   sealed trait datetime extends AxisTypeValue
   
   @js.native
@@ -443,6 +468,12 @@ object highchartsStrings {
   
   @js.native
   sealed trait dependencywheel extends js.Object
+  
+  @js.native
+  sealed trait depth extends SeriesOptionsType
+  
+  @js.native
+  sealed trait dial extends SeriesOptionsType
   
   @js.native
   sealed trait diamond
@@ -477,6 +508,12 @@ object highchartsStrings {
   sealed trait `e-resize` extends CursorValue
   
   @js.native
+  sealed trait edgeColor extends SeriesOptionsType
+  
+  @js.native
+  sealed trait edgeWidth extends SeriesOptionsType
+  
+  @js.native
   sealed trait ema extends js.Object
   
   @js.native
@@ -496,6 +533,12 @@ object highchartsStrings {
   
   @js.native
   sealed trait fastAvoid extends _PathfinderTypeValue
+  
+  @js.native
+  sealed trait fillColor extends SeriesOptionsType
+  
+  @js.native
+  sealed trait fillOpacity extends SeriesOptionsType
   
   @js.native
   sealed trait flag extends FlagsShapeValue
@@ -523,6 +566,15 @@ object highchartsStrings {
   
   @js.native
   sealed trait grabbing extends CursorValue
+  
+  @js.native
+  sealed trait groupPadding extends SeriesOptionsType
+  
+  @js.native
+  sealed trait groupZPadding extends SeriesOptionsType
+  
+  @js.native
+  sealed trait grouping extends SeriesOptionsType
   
   @js.native
   sealed trait h_ extends SVGPathCommand
@@ -646,10 +698,16 @@ object highchartsStrings {
        with OptionsPointValKeyValue
   
   @js.native
+  sealed trait lowColor extends SeriesOptionsType
+  
+  @js.native
   sealed trait m_ extends SVGPathCommand
   
   @js.native
   sealed trait macd extends js.Object
+  
+  @js.native
+  sealed trait mapData extends SeriesOptionsType
   
   @js.native
   sealed trait map_ extends js.Object
@@ -662,6 +720,9 @@ object highchartsStrings {
   
   @js.native
   sealed trait mappoint extends js.Object
+  
+  @js.native
+  sealed trait maxPointWidth extends SeriesOptionsType
   
   @js.native
   sealed trait menu extends js.Object
@@ -728,6 +789,9 @@ object highchartsStrings {
   
   @js.native
   sealed trait `no-drop` extends CursorValue
+  
+  @js.native
+  sealed trait nodes extends SeriesOptionsType
   
   @js.native
   sealed trait none
@@ -818,6 +882,9 @@ object highchartsStrings {
   sealed trait pie extends js.Object
   
   @js.native
+  sealed trait pivot extends SeriesOptionsType
+  
+  @js.native
   sealed trait pivotpoints extends js.Object
   
   @js.native
@@ -831,6 +898,12 @@ object highchartsStrings {
   
   @js.native
   sealed trait pointInBreak extends js.Object
+  
+  @js.native
+  sealed trait pointPadding extends SeriesOptionsType
+  
+  @js.native
+  sealed trait pointWidth extends SeriesOptionsType
   
   @js.native
   sealed trait pointer extends CursorValue
@@ -986,7 +1059,13 @@ object highchartsStrings {
   sealed trait squarified extends OptionsLayoutAlgorithmValue
   
   @js.native
+  sealed trait stack extends SeriesOptionsType
+  
+  @js.native
   sealed trait start extends OptionsRotationOriginValue
+  
+  @js.native
+  sealed trait steps extends SeriesOptionsType
   
   @js.native
   sealed trait stochastic extends js.Object
@@ -1040,6 +1119,9 @@ object highchartsStrings {
   sealed trait top extends VerticalAlignValue
   
   @js.native
+  sealed trait trackByArea extends SeriesOptionsType
+  
+  @js.native
   sealed trait traverseUpButton extends AxisExtremesTriggerValue
   
   @js.native
@@ -1062,6 +1144,12 @@ object highchartsStrings {
   
   @js.native
   sealed trait tween extends OptionsDataClassColorValue
+  
+  @js.native
+  sealed trait `type` extends SeriesOptionsType
+  
+  @js.native
+  sealed trait useOhlcData extends SeriesOptionsType
   
   @js.native
   sealed trait v_ extends SVGPathCommand
@@ -1129,12 +1217,18 @@ object highchartsStrings {
   sealed trait wordcloud extends js.Object
   
   @js.native
+  sealed trait wrap extends SeriesOptionsType
+  
+  @js.native
   sealed trait x
     extends AnnotationDraggableValue
        with OptionsFindNearestPointByValue
        with OptionsPinchTypeValue
        with OptionsTypeValue
        with OptionsZoomTypeValue
+  
+  @js.native
+  sealed trait xAxis extends SeriesOptionsType
   
   @js.native
   sealed trait xml extends js.Object
@@ -1157,6 +1251,9 @@ object highchartsStrings {
        with OptionsPinchTypeValue
        with OptionsTypeValue
        with OptionsZoomTypeValue
+  
+  @js.native
+  sealed trait yAxis extends SeriesOptionsType
   
   @js.native
   sealed trait year
@@ -1310,6 +1407,8 @@ object highchartsStrings {
   @scala.inline
   def aroon: aroon = "aroon".asInstanceOf[aroon]
   @scala.inline
+  def aroonDown: aroonDown = "aroonDown".asInstanceOf[aroonDown]
+  @scala.inline
   def aroonoscillator: aroonoscillator = "aroonoscillator".asInstanceOf[aroonoscillator]
   @scala.inline
   def arrow: arrow = "arrow".asInstanceOf[arrow]
@@ -1326,11 +1425,15 @@ object highchartsStrings {
   @scala.inline
   def `barnes-hut`: `barnes-hut` = "barnes-hut".asInstanceOf[`barnes-hut`]
   @scala.inline
+  def baseSeries: baseSeries = "baseSeries".asInstanceOf[baseSeries]
+  @scala.inline
   def bb: bb = "bb".asInstanceOf[bb]
   @scala.inline
   def bellcurve: bellcurve = "bellcurve".asInstanceOf[bellcurve]
   @scala.inline
   def between: between = "between".asInstanceOf[between]
+  @scala.inline
+  def borderRadius: borderRadius = "borderRadius".asInstanceOf[borderRadius]
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline
@@ -1372,9 +1475,13 @@ object highchartsStrings {
   @scala.inline
   def close: close = "close".asInstanceOf[close]
   @scala.inline
+  def cluster: cluster = "cluster".asInstanceOf[cluster]
+  @scala.inline
   def cmf: cmf = "cmf".asInstanceOf[cmf]
   @scala.inline
   def `col-resize`: `col-resize` = "col-resize".asInstanceOf[`col-resize`]
+  @scala.inline
+  def colorByPoint: colorByPoint = "colorByPoint".asInstanceOf[colorByPoint]
   @scala.inline
   def column: column = "column".asInstanceOf[column]
   @scala.inline
@@ -1396,6 +1503,12 @@ object highchartsStrings {
   @scala.inline
   def darken: darken = "darken".asInstanceOf[darken]
   @scala.inline
+  def data: data = "data".asInstanceOf[data]
+  @scala.inline
+  def dataParser: dataParser = "dataParser".asInstanceOf[dataParser]
+  @scala.inline
+  def dataURL: dataURL = "dataURL".asInstanceOf[dataURL]
+  @scala.inline
   def datetime: datetime = "datetime".asInstanceOf[datetime]
   @scala.inline
   def day_ : day_ = "day".asInstanceOf[day_]
@@ -1409,6 +1522,10 @@ object highchartsStrings {
   def dema: dema = "dema".asInstanceOf[dema]
   @scala.inline
   def dependencywheel: dependencywheel = "dependencywheel".asInstanceOf[dependencywheel]
+  @scala.inline
+  def depth: depth = "depth".asInstanceOf[depth]
+  @scala.inline
+  def dial: dial = "dial".asInstanceOf[dial]
   @scala.inline
   def diamond: diamond = "diamond".asInstanceOf[diamond]
   @scala.inline
@@ -1430,6 +1547,10 @@ object highchartsStrings {
   @scala.inline
   def `e-resize`: `e-resize` = "e-resize".asInstanceOf[`e-resize`]
   @scala.inline
+  def edgeColor: edgeColor = "edgeColor".asInstanceOf[edgeColor]
+  @scala.inline
+  def edgeWidth: edgeWidth = "edgeWidth".asInstanceOf[edgeWidth]
+  @scala.inline
   def ema: ema = "ema".asInstanceOf[ema]
   @scala.inline
   def end: end = "end".asInstanceOf[end]
@@ -1443,6 +1564,10 @@ object highchartsStrings {
   def exportIcon: exportIcon = "exportIcon".asInstanceOf[exportIcon]
   @scala.inline
   def fastAvoid: fastAvoid = "fastAvoid".asInstanceOf[fastAvoid]
+  @scala.inline
+  def fillColor: fillColor = "fillColor".asInstanceOf[fillColor]
+  @scala.inline
+  def fillOpacity: fillOpacity = "fillOpacity".asInstanceOf[fillOpacity]
   @scala.inline
   def flag: flag = "flag".asInstanceOf[flag]
   @scala.inline
@@ -1461,6 +1586,12 @@ object highchartsStrings {
   def grab: grab = "grab".asInstanceOf[grab]
   @scala.inline
   def grabbing: grabbing = "grabbing".asInstanceOf[grabbing]
+  @scala.inline
+  def groupPadding: groupPadding = "groupPadding".asInstanceOf[groupPadding]
+  @scala.inline
+  def groupZPadding: groupZPadding = "groupZPadding".asInstanceOf[groupZPadding]
+  @scala.inline
+  def grouping: grouping = "grouping".asInstanceOf[grouping]
   @scala.inline
   def h_ : h_ = "h".asInstanceOf[h_]
   @scala.inline
@@ -1526,9 +1657,13 @@ object highchartsStrings {
   @scala.inline
   def low: low = "low".asInstanceOf[low]
   @scala.inline
+  def lowColor: lowColor = "lowColor".asInstanceOf[lowColor]
+  @scala.inline
   def m_ : m_ = "m".asInstanceOf[m_]
   @scala.inline
   def macd: macd = "macd".asInstanceOf[macd]
+  @scala.inline
+  def mapData: mapData = "mapData".asInstanceOf[mapData]
   @scala.inline
   def map_ : map_ = "map".asInstanceOf[map_]
   @scala.inline
@@ -1537,6 +1672,8 @@ object highchartsStrings {
   def mapline: mapline = "mapline".asInstanceOf[mapline]
   @scala.inline
   def mappoint: mappoint = "mappoint".asInstanceOf[mappoint]
+  @scala.inline
+  def maxPointWidth: maxPointWidth = "maxPointWidth".asInstanceOf[maxPointWidth]
   @scala.inline
   def menu: menu = "menu".asInstanceOf[menu]
   @scala.inline
@@ -1577,6 +1714,8 @@ object highchartsStrings {
   def networkgraph: networkgraph = "networkgraph".asInstanceOf[networkgraph]
   @scala.inline
   def `no-drop`: `no-drop` = "no-drop".asInstanceOf[`no-drop`]
+  @scala.inline
+  def nodes: nodes = "nodes".asInstanceOf[nodes]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
@@ -1628,6 +1767,8 @@ object highchartsStrings {
   @scala.inline
   def pie: pie = "pie".asInstanceOf[pie]
   @scala.inline
+  def pivot: pivot = "pivot".asInstanceOf[pivot]
+  @scala.inline
   def pivotpoints: pivotpoints = "pivotpoints".asInstanceOf[pivotpoints]
   @scala.inline
   def pixels: pixels = "pixels".asInstanceOf[pixels]
@@ -1637,6 +1778,10 @@ object highchartsStrings {
   def pointBreak: pointBreak = "pointBreak".asInstanceOf[pointBreak]
   @scala.inline
   def pointInBreak: pointInBreak = "pointInBreak".asInstanceOf[pointInBreak]
+  @scala.inline
+  def pointPadding: pointPadding = "pointPadding".asInstanceOf[pointPadding]
+  @scala.inline
+  def pointWidth: pointWidth = "pointWidth".asInstanceOf[pointWidth]
   @scala.inline
   def pointer: pointer = "pointer".asInstanceOf[pointer]
   @scala.inline
@@ -1730,7 +1875,11 @@ object highchartsStrings {
   @scala.inline
   def squarified: squarified = "squarified".asInstanceOf[squarified]
   @scala.inline
+  def stack: stack = "stack".asInstanceOf[stack]
+  @scala.inline
   def start: start = "start".asInstanceOf[start]
+  @scala.inline
+  def steps: steps = "steps".asInstanceOf[steps]
   @scala.inline
   def stochastic: stochastic = "stochastic".asInstanceOf[stochastic]
   @scala.inline
@@ -1766,6 +1915,8 @@ object highchartsStrings {
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline
+  def trackByArea: trackByArea = "trackByArea".asInstanceOf[trackByArea]
+  @scala.inline
   def traverseUpButton: traverseUpButton = "traverseUpButton".asInstanceOf[traverseUpButton]
   @scala.inline
   def treegrid: treegrid = "treegrid".asInstanceOf[treegrid]
@@ -1781,6 +1932,10 @@ object highchartsStrings {
   def trix: trix = "trix".asInstanceOf[trix]
   @scala.inline
   def tween: tween = "tween".asInstanceOf[tween]
+  @scala.inline
+  def `type`: `type` = "type".asInstanceOf[`type`]
+  @scala.inline
+  def useOhlcData: useOhlcData = "useOhlcData".asInstanceOf[useOhlcData]
   @scala.inline
   def v_ : v_ = "v".asInstanceOf[v_]
   @scala.inline
@@ -1822,7 +1977,11 @@ object highchartsStrings {
   @scala.inline
   def wordcloud: wordcloud = "wordcloud".asInstanceOf[wordcloud]
   @scala.inline
+  def wrap: wrap = "wrap".asInstanceOf[wrap]
+  @scala.inline
   def x: x = "x".asInstanceOf[x]
+  @scala.inline
+  def xAxis: xAxis = "xAxis".asInstanceOf[xAxis]
   @scala.inline
   def xml: xml = "xml".asInstanceOf[xml]
   @scala.inline
@@ -1831,6 +1990,8 @@ object highchartsStrings {
   def xy: xy = "xy".asInstanceOf[xy]
   @scala.inline
   def y: y = "y".asInstanceOf[y]
+  @scala.inline
+  def yAxis: yAxis = "yAxis".asInstanceOf[yAxis]
   @scala.inline
   def year: year = "year".asInstanceOf[year]
   @scala.inline

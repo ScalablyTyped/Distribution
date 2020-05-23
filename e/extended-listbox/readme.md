@@ -1,7 +1,7 @@
 
 # Scala.js typings for extended-listbox
 
-Typings are for version 5.0.1
+Typings are for version 5.0.2
 
 ## Library description:
 A simple to use javascript component as powerful alternative to the HTML <select> tag

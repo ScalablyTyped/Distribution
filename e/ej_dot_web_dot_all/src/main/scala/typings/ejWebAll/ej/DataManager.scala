@@ -6,12 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.DataManager")
 @js.native
-class DataManager () extends js.Object {
-  def this(dataSource: js.Any) = this()
-  def this(dataSource: js.Any, query: Query) = this()
-  def this(dataSource: js.Any, query: Query, adaptor: js.Any) = this()
+trait DataManager extends js.Object {
   def executeLocal(): DataManager = js.native
   def executeLocal(query: Query): DataManager = js.native
   def executeQuery(): JQueryPromise[_] = js.native

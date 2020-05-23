@@ -6,34 +6,34 @@ import scala.scalajs.js.annotation._
 
 trait LaunchOptions extends js.Object {
   /**
-  		 * 打开小程序的路径
-  		 */
+    * 打开小程序的路径
+    */
   var path: String
   /**
-  		 * 打开小程序的query
-  		 */
+    * 打开小程序的query
+    */
   var query: js.Object
   /**
-  		 * 当场景为由从另一个小程序或公众号或App打开时，返回此字段
-  		 */
+    * 当场景为由从另一个小程序或公众号或App打开时，返回此字段
+    */
   var referrerInfo: js.Object
   /**
-  		 * 来源小程序或公众号或App的 appId，详见下方说明
-  		 */
+    * 来源小程序或公众号或App的 appId，详见下方说明
+    */
   @JSName("referrerInfo.appId")
   var referrerInfoDotappId: String
   /**
-  		 * 来源小程序传过来的数据，scene=1037或1038时支持
-  		 */
+    * 来源小程序传过来的数据，scene=1037或1038时支持
+    */
   @JSName("referrerInfo.extraData")
   var referrerInfoDotextraData: js.Object
   /**
-  		 * 打开小程序的[场景值]
-  		 */
+    * 打开小程序的[场景值]
+    */
   var scene: Double
   /**
-  		 * shareTicket，详见 获取更多[转发信息]
-  		 */
+    * shareTicket，详见 获取更多[转发信息]
+    */
   var shareTicket: String
 }
 

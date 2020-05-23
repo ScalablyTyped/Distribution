@@ -1,5 +1,6 @@
 package typings.domHelpers
 
+import typings.domHelpers.anon.FnCall
 import typings.domHelpers.domHelpersStrings.pageXOffset
 import typings.domHelpers.domHelpersStrings.pageYOffset
 import scala.scalajs.js

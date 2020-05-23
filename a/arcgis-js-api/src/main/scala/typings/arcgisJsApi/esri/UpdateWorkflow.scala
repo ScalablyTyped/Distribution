@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,8 +15,4 @@ trait UpdateWorkflow extends Workflow {
   @JSName("type")
   val type_UpdateWorkflow: update = js.native
 }
-
-@JSGlobal("__esri.UpdateWorkflow")
-@js.native
-object UpdateWorkflow extends TopLevel[UpdateWorkflowConstructor]
 

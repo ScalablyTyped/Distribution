@@ -1,10 +1,10 @@
 package typings.stormReactDiagrams.defaultLinkModelMod
 
-import typings.stormReactDiagrams.AnonLocked
-import typings.stormReactDiagrams.BaseEventBaseModelBaseEnt
-import typings.stormReactDiagrams.BaseEventDefaultLinkModel
-import typings.stormReactDiagrams.BaseEventDefaultLinkModelEntity
-import typings.stormReactDiagrams.BaseEventLinkModelLinkMod
+import typings.stormReactDiagrams.anon.BaseEventBaseModelBaseEnt
+import typings.stormReactDiagrams.anon.BaseEventDefaultLinkModel
+import typings.stormReactDiagrams.anon.BaseEventDefaultLinkModelEntity
+import typings.stormReactDiagrams.anon.BaseEventLinkModelLinkMod
+import typings.stormReactDiagrams.anon.Locked
 import typings.stormReactDiagrams.baseEntityMod.BaseEntity
 import typings.stormReactDiagrams.baseEntityMod.BaseEvent
 import typings.stormReactDiagrams.baseEntityMod.BaseListener
@@ -24,7 +24,7 @@ object DefaultLinkModelListener {
   def apply(
     colorChanged: /* event */ BaseEventDefaultLinkModel => Unit = null,
     entityRemoved: /* event */ BaseEvent[BaseModel[BaseEntity[BaseListener[_]], DefaultLinkModelListener]] => Unit = null,
-    lockChanged: /* event */ BaseEvent[js.Any] with AnonLocked => Unit = null,
+    lockChanged: /* event */ BaseEvent[js.Any] with Locked => Unit = null,
     selectionChanged: /* event */ BaseEventBaseModelBaseEnt => Unit = null,
     sourcePortChanged: /* event */ BaseEventLinkModelLinkMod => Unit = null,
     targetPortChanged: /* event */ BaseEventLinkModelLinkMod => Unit = null,

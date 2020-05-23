@@ -1,13 +1,13 @@
 package typings.gapiClientPlus.gapi.client.plus
 
-import typings.gapiClientPlus.AnonCoverInfo
-import typings.gapiClientPlus.AnonDepartment
-import typings.gapiClientPlus.AnonFormatted
-import typings.gapiClientPlus.AnonIsDefault
-import typings.gapiClientPlus.AnonLabel
-import typings.gapiClientPlus.AnonMax
-import typings.gapiClientPlus.AnonPrimary
-import typings.gapiClientPlus.AnonValue
+import typings.gapiClientPlus.anon.CoverInfo
+import typings.gapiClientPlus.anon.Department
+import typings.gapiClientPlus.anon.Formatted
+import typings.gapiClientPlus.anon.IsDefault
+import typings.gapiClientPlus.anon.Label
+import typings.gapiClientPlus.anon.Max
+import typings.gapiClientPlus.anon.Primary
+import typings.gapiClientPlus.anon.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait Person extends js.Object {
     * The age range of the person. Valid ranges are 17 or younger, 18 to 20, and 21 or older. Age is determined from the user's birthday using Western age
     * reckoning.
     */
-  var ageRange: js.UndefOr[AnonMax] = js.undefined
+  var ageRange: js.UndefOr[Max] = js.undefined
   /** The person's date of birth, represented as YYYY-MM-DD. */
   var birthday: js.UndefOr[String] = js.undefined
   /** The "bragging rights" line of this person. */
@@ -27,7 +27,7 @@ trait Person extends js.Object {
   /** For followers who are visible, the number of people who have added this person or page to a circle. */
   var circledByCount: js.UndefOr[Double] = js.undefined
   /** The cover photo content. */
-  var cover: js.UndefOr[AnonCoverInfo] = js.undefined
+  var cover: js.UndefOr[CoverInfo] = js.undefined
   /** (this field is not currently used) */
   var currentLocation: js.UndefOr[String] = js.undefined
   /** The name of this person, which is suitable for display. */
@@ -42,7 +42,7 @@ trait Person extends js.Object {
     * profile. The plus.profile.emails.read scope is needed to retrieve these email addresses, or the email scope can be used to retrieve just the Google
     * account email address.
     */
-  var emails: js.UndefOr[js.Array[AnonValue]] = js.undefined
+  var emails: js.UndefOr[js.Array[Value]] = js.undefined
   /** ETag of this response for caching purposes. */
   var etag: js.UndefOr[String] = js.undefined
   /**
@@ -55,7 +55,7 @@ trait Person extends js.Object {
   /** The ID of this person. */
   var id: js.UndefOr[String] = js.undefined
   /** The representation of the person's profile photo. */
-  var image: js.UndefOr[AnonIsDefault] = js.undefined
+  var image: js.UndefOr[IsDefault] = js.undefined
   /** Whether this user has signed up for Google+. */
   var isPlusUser: js.UndefOr[Boolean] = js.undefined
   /** Identifies this resource as a person. Value: "plus#person". */
@@ -63,7 +63,7 @@ trait Person extends js.Object {
   /** The user's preferred language for rendering. */
   var language: js.UndefOr[String] = js.undefined
   /** An object representation of the individual components of a person's name. */
-  var name: js.UndefOr[AnonFormatted] = js.undefined
+  var name: js.UndefOr[Formatted] = js.undefined
   /** The nickname of this person. */
   var nickname: js.UndefOr[String] = js.undefined
   /**
@@ -75,9 +75,9 @@ trait Person extends js.Object {
   /** The occupation of this person. */
   var occupation: js.UndefOr[String] = js.undefined
   /** A list of current or past organizations with which this person is associated. */
-  var organizations: js.UndefOr[js.Array[AnonDepartment]] = js.undefined
+  var organizations: js.UndefOr[js.Array[Department]] = js.undefined
   /** A list of places where this person has lived. */
-  var placesLived: js.UndefOr[js.Array[AnonPrimary]] = js.undefined
+  var placesLived: js.UndefOr[js.Array[Primary]] = js.undefined
   /** If a Google+ Page, the number of people who have +1'd this page. */
   var plusOneCount: js.UndefOr[Double] = js.undefined
   /**
@@ -100,7 +100,7 @@ trait Person extends js.Object {
   /** The URL of this person's profile. */
   var url: js.UndefOr[String] = js.undefined
   /** A list of URLs for this person. */
-  var urls: js.UndefOr[js.Array[AnonLabel]] = js.undefined
+  var urls: js.UndefOr[js.Array[Label]] = js.undefined
   /** Whether the person or Google+ Page has been verified. */
   var verified: js.UndefOr[Boolean] = js.undefined
 }
@@ -109,34 +109,34 @@ object Person {
   @scala.inline
   def apply(
     aboutMe: String = null,
-    ageRange: AnonMax = null,
+    ageRange: Max = null,
     birthday: String = null,
     braggingRights: String = null,
-    circledByCount: Int | Double = null,
-    cover: AnonCoverInfo = null,
+    circledByCount: js.UndefOr[Double] = js.undefined,
+    cover: CoverInfo = null,
     currentLocation: String = null,
     displayName: String = null,
     domain: String = null,
-    emails: js.Array[AnonValue] = null,
+    emails: js.Array[Value] = null,
     etag: String = null,
     gender: String = null,
     id: String = null,
-    image: AnonIsDefault = null,
+    image: IsDefault = null,
     isPlusUser: js.UndefOr[Boolean] = js.undefined,
     kind: String = null,
     language: String = null,
-    name: AnonFormatted = null,
+    name: Formatted = null,
     nickname: String = null,
     objectType: String = null,
     occupation: String = null,
-    organizations: js.Array[AnonDepartment] = null,
-    placesLived: js.Array[AnonPrimary] = null,
-    plusOneCount: Int | Double = null,
+    organizations: js.Array[Department] = null,
+    placesLived: js.Array[Primary] = null,
+    plusOneCount: js.UndefOr[Double] = js.undefined,
     relationshipStatus: String = null,
     skills: String = null,
     tagline: String = null,
     url: String = null,
-    urls: js.Array[AnonLabel] = null,
+    urls: js.Array[Label] = null,
     verified: js.UndefOr[Boolean] = js.undefined
   ): Person = {
     val __obj = js.Dynamic.literal()
@@ -144,7 +144,7 @@ object Person {
     if (ageRange != null) __obj.updateDynamic("ageRange")(ageRange.asInstanceOf[js.Any])
     if (birthday != null) __obj.updateDynamic("birthday")(birthday.asInstanceOf[js.Any])
     if (braggingRights != null) __obj.updateDynamic("braggingRights")(braggingRights.asInstanceOf[js.Any])
-    if (circledByCount != null) __obj.updateDynamic("circledByCount")(circledByCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(circledByCount)) __obj.updateDynamic("circledByCount")(circledByCount.get.asInstanceOf[js.Any])
     if (cover != null) __obj.updateDynamic("cover")(cover.asInstanceOf[js.Any])
     if (currentLocation != null) __obj.updateDynamic("currentLocation")(currentLocation.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
@@ -154,7 +154,7 @@ object Person {
     if (gender != null) __obj.updateDynamic("gender")(gender.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPlusUser)) __obj.updateDynamic("isPlusUser")(isPlusUser.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPlusUser)) __obj.updateDynamic("isPlusUser")(isPlusUser.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
@@ -163,13 +163,13 @@ object Person {
     if (occupation != null) __obj.updateDynamic("occupation")(occupation.asInstanceOf[js.Any])
     if (organizations != null) __obj.updateDynamic("organizations")(organizations.asInstanceOf[js.Any])
     if (placesLived != null) __obj.updateDynamic("placesLived")(placesLived.asInstanceOf[js.Any])
-    if (plusOneCount != null) __obj.updateDynamic("plusOneCount")(plusOneCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(plusOneCount)) __obj.updateDynamic("plusOneCount")(plusOneCount.get.asInstanceOf[js.Any])
     if (relationshipStatus != null) __obj.updateDynamic("relationshipStatus")(relationshipStatus.asInstanceOf[js.Any])
     if (skills != null) __obj.updateDynamic("skills")(skills.asInstanceOf[js.Any])
     if (tagline != null) __obj.updateDynamic("tagline")(tagline.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
-    if (!js.isUndefined(verified)) __obj.updateDynamic("verified")(verified.asInstanceOf[js.Any])
+    if (!js.isUndefined(verified)) __obj.updateDynamic("verified")(verified.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Person]
   }
 }

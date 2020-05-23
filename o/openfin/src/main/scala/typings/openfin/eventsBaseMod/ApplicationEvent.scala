@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.openfin.eventsBaseMod.RuntimeEvent because Already inherited */ trait ApplicationEvent[Topic, Type] extends BaseEvent[Topic, Type] {
   var uuid: String
 }

@@ -1,6 +1,5 @@
 package typings.officeJs.OneNote
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,20 +24,6 @@ object PageContentType extends js.Object {
   
   @js.native
   sealed trait outline extends PageContentType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[PageContentType with String] = js.native
-  /* "Image" */ @js.native
-  object image extends TopLevel[image with String]
-  
-  /* "Ink" */ @js.native
-  object ink extends TopLevel[ink with String]
-  
-  /* "Other" */ @js.native
-  object other extends TopLevel[other with String]
-  
-  /* "Outline" */ @js.native
-  object outline extends TopLevel[outline with String]
   
 }
 

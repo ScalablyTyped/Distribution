@@ -23,29 +23,29 @@ object HeaderProperties {
   @scala.inline
   def apply(
     path: String,
-    devmaj: Int | Double = null,
-    devmin: Int | Double = null,
-    gid: Int | Double = null,
+    devmaj: js.UndefOr[Double] = js.undefined,
+    devmin: js.UndefOr[Double] = js.undefined,
+    gid: js.UndefOr[Double] = js.undefined,
     gname: String = null,
-    mode: Int | Double = null,
-    mtime: Int | Double = null,
+    mode: js.UndefOr[Double] = js.undefined,
+    mtime: js.UndefOr[Double] = js.undefined,
     noProprietary: js.UndefOr[Boolean] = js.undefined,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     `type`: String = null,
-    uid: Int | Double = null,
+    uid: js.UndefOr[Double] = js.undefined,
     uname: String = null
   ): HeaderProperties = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (devmaj != null) __obj.updateDynamic("devmaj")(devmaj.asInstanceOf[js.Any])
-    if (devmin != null) __obj.updateDynamic("devmin")(devmin.asInstanceOf[js.Any])
-    if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
+    if (!js.isUndefined(devmaj)) __obj.updateDynamic("devmaj")(devmaj.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(devmin)) __obj.updateDynamic("devmin")(devmin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gid)) __obj.updateDynamic("gid")(gid.get.asInstanceOf[js.Any])
     if (gname != null) __obj.updateDynamic("gname")(gname.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (mtime != null) __obj.updateDynamic("mtime")(mtime.asInstanceOf[js.Any])
-    if (!js.isUndefined(noProprietary)) __obj.updateDynamic("noProprietary")(noProprietary.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(mode)) __obj.updateDynamic("mode")(mode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mtime)) __obj.updateDynamic("mtime")(mtime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noProprietary)) __obj.updateDynamic("noProprietary")(noProprietary.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
+    if (!js.isUndefined(uid)) __obj.updateDynamic("uid")(uid.get.asInstanceOf[js.Any])
     if (uname != null) __obj.updateDynamic("uname")(uname.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderProperties]
   }

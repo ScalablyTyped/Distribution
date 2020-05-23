@@ -17,9 +17,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.FillFormat")
 @js.native
-class FillFormat protected () extends js.Object {
+trait FillFormat extends js.Object {
   val Application: typings.activexWord.Word.Application = js.native
   val BackColor: ColorFormat = js.native
   val Creator: Double = js.native

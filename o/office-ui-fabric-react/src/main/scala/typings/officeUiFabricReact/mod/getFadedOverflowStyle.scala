@@ -158,94 +158,94 @@ object getFadedOverflowStyle extends js.Object {
   ): IRawStyle = js.native
   def apply(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 60 */ js.Any
+    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70 */ js.Any
   ): IRawStyle = js.native
   def apply(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 60 */ js.Any,
+    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70 */ js.Any,
     direction: horizontal
   ): IRawStyle = js.native
   def apply(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 60 */ js.Any,
+    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70 */ js.Any,
     direction: horizontal,
     width: String
   ): IRawStyle = js.native
   def apply(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 60 */ js.Any,
+    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70 */ js.Any,
     direction: horizontal,
     width: String,
     height: String
   ): IRawStyle = js.native
   def apply(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 60 */ js.Any,
+    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70 */ js.Any,
     direction: horizontal,
     width: String,
     height: Double
   ): IRawStyle = js.native
   def apply(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 60 */ js.Any,
+    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70 */ js.Any,
     direction: horizontal,
     width: Double
   ): IRawStyle = js.native
   def apply(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 60 */ js.Any,
+    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70 */ js.Any,
     direction: horizontal,
     width: Double,
     height: String
   ): IRawStyle = js.native
   def apply(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 60 */ js.Any,
+    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70 */ js.Any,
     direction: horizontal,
     width: Double,
     height: Double
   ): IRawStyle = js.native
   def apply(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 60 */ js.Any,
+    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70 */ js.Any,
     direction: vertical
   ): IRawStyle = js.native
   def apply(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 60 */ js.Any,
+    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70 */ js.Any,
     direction: vertical,
     width: String
   ): IRawStyle = js.native
   def apply(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 60 */ js.Any,
+    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70 */ js.Any,
     direction: vertical,
     width: String,
     height: String
   ): IRawStyle = js.native
   def apply(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 60 */ js.Any,
+    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70 */ js.Any,
     direction: vertical,
     width: String,
     height: Double
   ): IRawStyle = js.native
   def apply(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 60 */ js.Any,
+    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70 */ js.Any,
     direction: vertical,
     width: Double
   ): IRawStyle = js.native
   def apply(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 60 */ js.Any,
+    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70 */ js.Any,
     direction: vertical,
     width: Double,
     height: String
   ): IRawStyle = js.native
   def apply(
     theme: ITheme,
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 60 */ js.Any,
+    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70 */ js.Any,
     direction: vertical,
     width: Double,
     height: Double

@@ -4,10 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("InfoPath.Button")
-@js.native
-class Button protected () extends js.Object {
+trait Button extends js.Object {
   @JSName("InfoPath.Button_typekey")
-  var InfoPathDotButton_typekey: Button = js.native
+  var InfoPathDotButton_typekey: Button
+}
+
+object Button {
+  @scala.inline
+  def apply(InfoPathDotButton_typekey: Button): Button = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("InfoPath.Button_typekey")(InfoPathDotButton_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Button]
+  }
 }
 

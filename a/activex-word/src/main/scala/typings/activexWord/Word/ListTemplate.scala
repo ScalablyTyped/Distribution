@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.ListTemplate")
 @js.native
-class ListTemplate protected () extends js.Object {
+trait ListTemplate extends js.Object {
   val Application: typings.activexWord.Word.Application = js.native
   val Creator: Double = js.native
   val ListLevels: typings.activexWord.Word.ListLevels = js.native

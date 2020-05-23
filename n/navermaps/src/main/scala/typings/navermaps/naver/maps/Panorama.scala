@@ -1,15 +1,11 @@
 package typings.navermaps.naver.maps
 
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("naver.maps.Panorama")
 @js.native
-class Panorama protected () extends KVO {
-  def this(panoramaDiv: String, panoramaOptions: PanoramaOptions) = this()
-  def this(panoramaDiv: HTMLElement, panoramaOptions: PanoramaOptions) = this()
+trait Panorama extends KVO {
   def getLocation(): PanoramaLocation = js.native
   def getMaxScale(): Double = js.native
   def getMaxZoom(): Double = js.native

@@ -10,10 +10,14 @@ trait FilePropertyBag extends BlobPropertyBag {
 
 object FilePropertyBag {
   @scala.inline
-  def apply(endings: EndingType = null, lastModified: Int | Double = null, `type`: java.lang.String = null): FilePropertyBag = {
+  def apply(
+    endings: EndingType = null,
+    lastModified: js.UndefOr[Double] = js.undefined,
+    `type`: java.lang.String = null
+  ): FilePropertyBag = {
     val __obj = js.Dynamic.literal()
     if (endings != null) __obj.updateDynamic("endings")(endings.asInstanceOf[js.Any])
-    if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastModified)) __obj.updateDynamic("lastModified")(lastModified.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilePropertyBag]
   }

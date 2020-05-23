@@ -42,19 +42,19 @@ object ISkuListOptions {
     ids: js.Array[String] = null,
     in_stock: js.UndefOr[Boolean] = js.undefined,
     include: js.Array[String] = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     product: String = null,
     starting_after: String = null
   ): ISkuListOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (ending_before != null) __obj.updateDynamic("ending_before")(ending_before.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
-    if (!js.isUndefined(in_stock)) __obj.updateDynamic("in_stock")(in_stock.asInstanceOf[js.Any])
+    if (!js.isUndefined(in_stock)) __obj.updateDynamic("in_stock")(in_stock.get.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
     if (starting_after != null) __obj.updateDynamic("starting_after")(starting_after.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISkuListOptions]

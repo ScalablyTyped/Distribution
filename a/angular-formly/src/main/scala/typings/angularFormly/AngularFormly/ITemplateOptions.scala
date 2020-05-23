@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * see http://docs.angular-formly.com/docs/ngmodelattrstemplatemanipulator
-	 */
+  * see http://docs.angular-formly.com/docs/ngmodelattrstemplatemanipulator
+  */
 trait ITemplateOptions
   extends /* key */ StringDictionary[js.Any] {
   var description: js.UndefOr[String] = js.undefined
@@ -45,16 +45,16 @@ trait ITemplateOptions
 object ITemplateOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     description: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     groupProp: String = null,
     label: String = null,
     labelProp: String = null,
-    max: Int | Double = null,
-    maxlength: Int | Double = null,
-    min: Int | Double = null,
-    minlength: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
+    maxlength: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
+    minlength: js.UndefOr[Double] = js.undefined,
     onBlur: String | IExpressionFunction = null,
     onChange: String | IExpressionFunction = null,
     onClick: String | IExpressionFunction = null,
@@ -66,21 +66,21 @@ object ITemplateOptions {
     pattern: String = null,
     placeholder: Double | String = null,
     required: js.UndefOr[Boolean] = js.undefined,
-    tabindex: Int | Double = null,
+    tabindex: js.UndefOr[Double] = js.undefined,
     `type`: String = null,
     valueProp: String = null
   ): ITemplateOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (groupProp != null) __obj.updateDynamic("groupProp")(groupProp.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelProp != null) __obj.updateDynamic("labelProp")(labelProp.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (maxlength != null) __obj.updateDynamic("maxlength")(maxlength.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minlength != null) __obj.updateDynamic("minlength")(minlength.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxlength)) __obj.updateDynamic("maxlength")(maxlength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minlength)) __obj.updateDynamic("minlength")(minlength.get.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(onChange.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
@@ -91,8 +91,8 @@ object ITemplateOptions {
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
-    if (tabindex != null) __obj.updateDynamic("tabindex")(tabindex.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabindex)) __obj.updateDynamic("tabindex")(tabindex.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (valueProp != null) __obj.updateDynamic("valueProp")(valueProp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITemplateOptions]

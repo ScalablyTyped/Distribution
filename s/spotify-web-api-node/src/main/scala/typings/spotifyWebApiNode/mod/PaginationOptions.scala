@@ -10,10 +10,10 @@ trait PaginationOptions extends LimitOptions {
 
 object PaginationOptions {
   @scala.inline
-  def apply(limit: Int | Double = null, offset: Int | Double = null): PaginationOptions = {
+  def apply(limit: js.UndefOr[Double] = js.undefined, offset: js.UndefOr[Double] = js.undefined): PaginationOptions = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationOptions]
   }
 }

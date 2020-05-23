@@ -1,7 +1,7 @@
 package typings.storybookUi
 
 import typings.react.mod.FunctionComponent
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.RegExp
 import typings.storybookUi.sidebarSidebarStoriesMod.StoriesProps
 import scala.scalajs.js

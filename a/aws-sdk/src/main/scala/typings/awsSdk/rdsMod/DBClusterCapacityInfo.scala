@@ -31,17 +31,17 @@ trait DBClusterCapacityInfo extends js.Object {
 object DBClusterCapacityInfo {
   @scala.inline
   def apply(
-    CurrentCapacity: Int | scala.Double = null,
+    CurrentCapacity: js.UndefOr[IntegerOptional] = js.undefined,
     DBClusterIdentifier: String = null,
-    PendingCapacity: Int | scala.Double = null,
-    SecondsBeforeTimeout: Int | scala.Double = null,
+    PendingCapacity: js.UndefOr[IntegerOptional] = js.undefined,
+    SecondsBeforeTimeout: js.UndefOr[IntegerOptional] = js.undefined,
     TimeoutAction: String = null
   ): DBClusterCapacityInfo = {
     val __obj = js.Dynamic.literal()
-    if (CurrentCapacity != null) __obj.updateDynamic("CurrentCapacity")(CurrentCapacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(CurrentCapacity)) __obj.updateDynamic("CurrentCapacity")(CurrentCapacity.get.asInstanceOf[js.Any])
     if (DBClusterIdentifier != null) __obj.updateDynamic("DBClusterIdentifier")(DBClusterIdentifier.asInstanceOf[js.Any])
-    if (PendingCapacity != null) __obj.updateDynamic("PendingCapacity")(PendingCapacity.asInstanceOf[js.Any])
-    if (SecondsBeforeTimeout != null) __obj.updateDynamic("SecondsBeforeTimeout")(SecondsBeforeTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(PendingCapacity)) __obj.updateDynamic("PendingCapacity")(PendingCapacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SecondsBeforeTimeout)) __obj.updateDynamic("SecondsBeforeTimeout")(SecondsBeforeTimeout.get.asInstanceOf[js.Any])
     if (TimeoutAction != null) __obj.updateDynamic("TimeoutAction")(TimeoutAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBClusterCapacityInfo]
   }

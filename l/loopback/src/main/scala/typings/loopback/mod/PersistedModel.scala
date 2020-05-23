@@ -1,14 +1,14 @@
 package typings.loopback.mod
 
-import typings.loopback.AnonConflicts
-import typings.loopback.AnonCreated
-import typings.loopback.AnonFields
-import typings.loopback.AnonInclude
-import typings.loopback.AnonInfo
-import typings.loopback.AnonOrder
-import typings.loopback.AnonThrows
-import typings.loopback.AnonValidate
-import typings.loopback.AnonWhere
+import typings.loopback.anon.Conflicts
+import typings.loopback.anon.Created
+import typings.loopback.anon.Fields
+import typings.loopback.anon.Include
+import typings.loopback.anon.Info
+import typings.loopback.anon.Order
+import typings.loopback.anon.Throws
+import typings.loopback.anon.Validate
+import typings.loopback.anon.Where
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -82,7 +82,7 @@ class PersistedModel () extends Model {
     * @param {any} instance Replaced instance
     */
   def replaceAttributes[T](data: js.Any, callback: CallbackWithResult[T]): Unit = js.native
-  def replaceAttributes[T](data: js.Any, options: AnonValidate): js.Promise[T] = js.native
+  def replaceAttributes[T](data: js.Any, options: Validate): js.Promise[T] = js.native
   /**
     * Replace attributes for a model instance and persist it into the datasource.
     * Performs validation before replacing
@@ -93,7 +93,7 @@ class PersistedModel () extends Model {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {any} instance Replaced instance
     */
-  def replaceAttributes[T](data: js.Any, options: AnonValidate, callback: CallbackWithResult[T]): Unit = js.native
+  def replaceAttributes[T](data: js.Any, options: Validate, callback: CallbackWithResult[T]): Unit = js.native
   /**
     * Save model instance. If the instance doesn't have an ID, then calls [create](#persistedmodelcreatedata-cb) instead.
     * Triggers: validate, save, update, or create.
@@ -111,7 +111,7 @@ class PersistedModel () extends Model {
     * @param {any} instance Model instance saved or created
     */
   def save[T](callback: CallbackWithResult[T]): Unit = js.native
-  def save[T](options: AnonThrows): js.Promise[T] = js.native
+  def save[T](options: Throws): js.Promise[T] = js.native
   /**
     * Save model instance. If the instance doesn't have an ID, then calls [create](#persistedmodelcreatedata-cb) instead.
     * Triggers: validate, save, update, or create.
@@ -123,7 +123,7 @@ class PersistedModel () extends Model {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {any} instance Model instance saved or created
     */
-  def save[T](options: AnonThrows, callback: CallbackWithResult[T]): Unit = js.native
+  def save[T](options: Throws, callback: CallbackWithResult[T]): Unit = js.native
   /**
     * Set the correct `id` property for the `PersistedModel`. Uses the `setId` method if the model is attached to
     * connector that defines it.  Otherwise, uses the default lookup.
@@ -265,13 +265,13 @@ object PersistedModel extends js.Object {
     * @param {any} options Only changes to models matching this where filter will be included in the ChangeStream.
     * @returns {any} changes
     */
-  def createChangeStream(options: AnonWhere): js.Promise[_] = js.native
+  def createChangeStream(options: Where): js.Promise[_] = js.native
   /**
     * Create a change stream. See here for more info http://loopback.io/doc/en/lb2/Realtime-server-sent-events.html
     * @param {any} options Only changes to models matching this where filter will be included in the ChangeStream.
     * @param {() => void} callback
     */
-  def createChangeStream(options: AnonWhere, callback: CallbackWithResult[_]): Unit = js.native
+  def createChangeStream(options: Where, callback: CallbackWithResult[_]): Unit = js.native
   /**
     * Create an update list (for `Model.bulkUpdate()`) from a delta list
     * (result of `Change.diff()`)
@@ -308,8 +308,8 @@ object PersistedModel extends js.Object {
     *
     * @returns {Promise<{ count: number }>} number of instances (rows, documents) destroyed
     */
-  def destroyAll(): js.Promise[AnonInfo] = js.native
-  def destroyAll(where: js.Any): js.Promise[AnonInfo] = js.native
+  def destroyAll(): js.Promise[Info] = js.native
+  def destroyAll(where: js.Any): js.Promise[Info] = js.native
   /**
     * Destroy all model instances that match the optional `where` specification
     * @param {any} [where] Optional where filter, like:
@@ -393,7 +393,7 @@ object PersistedModel extends js.Object {
     * [Where filter](docs.strongloop.com/display/LB/Where+filter#Wherefilter-Whereclauseforqueries)
     */
   def find[T](): js.Promise[js.Array[T] | Null] = js.native
-  def find[T](filter: AnonFields): js.Promise[js.Array[T] | Null] = js.native
+  def find[T](filter: Fields): js.Promise[js.Array[T] | Null] = js.native
   /**
     * Find all model instances that match `filter` specification.
     * See [Querying models](docs.strongloop.com/display/LB/Querying+models)
@@ -418,7 +418,7 @@ object PersistedModel extends js.Object {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {Array} models Model instances matching the filter, or null if none found
     */
-  def find[T](filter: AnonFields, callback: CallbackWithResult[js.Array[T]]): Unit = js.native
+  def find[T](filter: Fields, callback: CallbackWithResult[js.Array[T]]): Unit = js.native
   /**
     * Find object by ID with an optional filter for include/fields
     * @param {*} id Primary key value
@@ -437,7 +437,7 @@ object PersistedModel extends js.Object {
     * @param {any} instance Model instance matching the specified ID or null if no instance matches
     */
   def findById[T](id: js.Any, callback: CallbackWithResult[T]): Unit = js.native
-  def findById[T](id: js.Any, filter: AnonInclude): js.Promise[T | Null] = js.native
+  def findById[T](id: js.Any, filter: Include): js.Promise[T | Null] = js.native
   /**
     * Find object by ID with an optional filter for include/fields
     * @param {*} id Primary key value
@@ -450,7 +450,7 @@ object PersistedModel extends js.Object {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {any} instance Model instance matching the specified ID or null if no instance matches
     */
-  def findById[T](id: js.Any, filter: AnonInclude, callback: CallbackWithResult[T]): Unit = js.native
+  def findById[T](id: js.Any, filter: Include, callback: CallbackWithResult[T]): Unit = js.native
   /**
     * Find one model instance that matches `filter` specification.
     * Same as `find`, but limited to one result;
@@ -481,7 +481,7 @@ object PersistedModel extends js.Object {
     * @param {Array} model First model instance that matches the filter or null if none found
     */
   def findOne[T](callback: CallbackWithResult[T]): Unit = js.native
-  def findOne[T](filter: AnonOrder): js.Promise[T | Null] = js.native
+  def findOne[T](filter: Order): js.Promise[T | Null] = js.native
   /**
     * Find one model instance that matches `filter` specification.
     * Same as `find`, but limited to one result;
@@ -505,7 +505,7 @@ object PersistedModel extends js.Object {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {Array} model First model instance that matches the filter or null if none found
     */
-  def findOne[T](filter: AnonOrder, callback: CallbackWithResult[T]): Unit = js.native
+  def findOne[T](filter: Order, callback: CallbackWithResult[T]): Unit = js.native
   /**
     * Finds one record matching the optional filter object. If not found, creates
     * the object using the data provided as second argument. In this sense it is
@@ -532,7 +532,7 @@ object PersistedModel extends js.Object {
     * [Where filter](docs.strongloop.com/display/LB/Where+filter#Wherefilter-Whereclauseforqueries).
     * @param {any} data Data to insert if object matching the `where` filter is not found.
     */
-  def findOrCreate[T](data: js.Any): js.Promise[AnonCreated[T] | Null] = js.native
+  def findOrCreate[T](data: js.Any): js.Promise[Created[T] | Null] = js.native
   /**
     * Finds one record matching the optional filter object. If not found, creates
     * the object using the data provided as second argument. In this sense it is
@@ -547,7 +547,7 @@ object PersistedModel extends js.Object {
     * @param {boolean} created True if the instance matching the `where` filter was created
     */
   def findOrCreate[T](data: js.Any, callback: CallbackWithMultipleResults[T, Boolean]): Unit = js.native
-  def findOrCreate[T](data: js.Any, filter: AnonFields): js.Promise[AnonCreated[T] | Null] = js.native
+  def findOrCreate[T](data: js.Any, filter: Fields): js.Promise[Created[T] | Null] = js.native
   /**
     * Finds one record matching the optional filter object. If not found, creates
     * the object using the data provided as second argument. In this sense it is
@@ -578,7 +578,7 @@ object PersistedModel extends js.Object {
     * @param {any} instance Model instance matching the `where` filter, if found.
     * @param {boolean} created True if the instance matching the `where` filter was created
     */
-  def findOrCreate[T](data: js.Any, filter: AnonFields, callback: CallbackWithMultipleResults[T, Boolean]): Unit = js.native
+  def findOrCreate[T](data: js.Any, filter: Fields, callback: CallbackWithMultipleResults[T, Boolean]): Unit = js.native
   /**
     * Get the `Change` model.
     * Throws an error if the change model is not correctly setup.
@@ -639,7 +639,7 @@ object PersistedModel extends js.Object {
     * @param {any} instance Replaced instance
     */
   def replaceById[T](id: js.Any, data: js.Any, callback: CallbackWithResult[T]): Unit = js.native
-  def replaceById[T](id: js.Any, data: js.Any, options: AnonValidate): js.Promise[T] = js.native
+  def replaceById[T](id: js.Any, data: js.Any, options: Validate): js.Promise[T] = js.native
   /**
     * Replace attributes for a model instance whose id is the first input
     * argument and persist it into the datasource.
@@ -652,7 +652,7 @@ object PersistedModel extends js.Object {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {any} instance Replaced instance
     */
-  def replaceById[T](id: js.Any, data: js.Any, options: AnonValidate, callback: CallbackWithResult[T]): Unit = js.native
+  def replaceById[T](id: js.Any, data: js.Any, options: Validate, callback: CallbackWithResult[T]): Unit = js.native
   /**
     * Replace or insert a model instance; replace existing record if one is found,
     * such that parameter `data.id` matches `id` of model instance; otherwise,
@@ -672,7 +672,7 @@ object PersistedModel extends js.Object {
     * @param {any} model Replaced model instance.
     */
   def replaceOrCreate[T](data: js.Any, callback: CallbackWithResult[T]): Unit = js.native
-  def replaceOrCreate[T](data: js.Any, options: AnonValidate): js.Promise[T] = js.native
+  def replaceOrCreate[T](data: js.Any, options: Validate): js.Promise[T] = js.native
   /**
     * Replace or insert a model instance; replace existing record if one is found,
     * such that parameter `data.id` matches `id` of model instance; otherwise,
@@ -684,7 +684,7 @@ object PersistedModel extends js.Object {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {any} model Replaced model instance.
     */
-  def replaceOrCreate[T](data: js.Any, options: AnonValidate, callback: CallbackWithResult[T]): Unit = js.native
+  def replaceOrCreate[T](data: js.Any, options: Validate, callback: CallbackWithResult[T]): Unit = js.native
   /**
     * Replicate changes since the given checkpoint to the given target model
     * @param  {number}   [since]  Since this checkpoint
@@ -697,18 +697,18 @@ object PersistedModel extends js.Object {
     * @param {any} checkpoints The new checkpoints to use as the "since"
     * argument for the next replication
     */
-  def replicate(): js.Promise[AnonConflicts] | Unit = js.native
-  def replicate(since: Double): js.Promise[AnonConflicts] | Unit = js.native
-  def replicate(since: Double, targetModel: Model): js.Promise[AnonConflicts] | Unit = js.native
-  def replicate(since: Double, targetModel: Model, options: js.Any): js.Promise[AnonConflicts] | Unit = js.native
-  def replicate(since: Double, targetModel: Model, options: js.Any, optionsFilter: js.Any): js.Promise[AnonConflicts] | Unit = js.native
+  def replicate(): js.Promise[Conflicts] | Unit = js.native
+  def replicate(since: Double): js.Promise[Conflicts] | Unit = js.native
+  def replicate(since: Double, targetModel: Model): js.Promise[Conflicts] | Unit = js.native
+  def replicate(since: Double, targetModel: Model, options: js.Any): js.Promise[Conflicts] | Unit = js.native
+  def replicate(since: Double, targetModel: Model, options: js.Any, optionsFilter: js.Any): js.Promise[Conflicts] | Unit = js.native
   def replicate(
     since: Double,
     targetModel: Model,
     options: js.Any,
     optionsFilter: js.Any,
     callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
-  ): js.Promise[AnonConflicts] | Unit = js.native
+  ): js.Promise[Conflicts] | Unit = js.native
   /**
     * Update multiple instances that match the where clause.
     *

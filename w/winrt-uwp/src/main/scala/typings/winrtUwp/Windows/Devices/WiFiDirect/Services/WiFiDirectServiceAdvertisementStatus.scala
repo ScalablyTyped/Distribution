@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.WiFiDirect.Services
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object WiFiDirectServiceAdvertisementStatus extends js.Object {
   /** Advertiser has been stopped. */
   @js.native
   sealed trait stopped extends WiFiDirectServiceAdvertisementStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WiFiDirectServiceAdvertisementStatus with Double] = js.native
-  /* 3 */ @js.native
-  object aborted extends TopLevel[aborted with Double]
-  
-  /* 0 */ @js.native
-  object created extends TopLevel[created with Double]
-  
-  /* 1 */ @js.native
-  object started extends TopLevel[started with Double]
-  
-  /* 2 */ @js.native
-  object stopped extends TopLevel[stopped with Double]
   
 }
 

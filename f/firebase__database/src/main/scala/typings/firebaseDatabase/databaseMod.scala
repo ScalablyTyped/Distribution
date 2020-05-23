@@ -2,6 +2,7 @@ package typings.firebaseDatabase
 
 import typings.firebaseAppTypes.mod.FirebaseApp
 import typings.firebaseAppTypes.privateMod.FirebaseService
+import typings.firebaseDatabase.anon.TIMESTAMP
 import typings.firebaseDatabase.referenceMod.Reference
 import typings.firebaseDatabase.repoMod.Repo
 import scala.scalajs.js
@@ -67,7 +68,7 @@ object databaseMod extends js.Object {
   /* static members */
   @js.native
   object Database extends js.Object {
-    val ServerValue: AnonTIMESTAMP = js.native
+    val ServerValue: TIMESTAMP = js.native
   }
   
 }

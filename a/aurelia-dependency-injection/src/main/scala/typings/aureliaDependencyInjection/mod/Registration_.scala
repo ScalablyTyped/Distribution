@@ -14,7 +14,7 @@ trait Registration_[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] *
 
 object Registration_ {
   @scala.inline
-  def apply[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](
+  def apply[TBase, TImpl, TArgs](
     registerResolver: (Container, PrimitiveOrDependencyCtor[TBase, TImpl, TArgs], DependencyCtorOrFunctor[TBase, TImpl, TArgs]) => Resolver_
   ): Registration_[TBase, TImpl, TArgs] = {
     val __obj = js.Dynamic.literal(registerResolver = js.Any.fromFunction3(registerResolver))

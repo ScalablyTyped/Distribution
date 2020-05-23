@@ -1,7 +1,7 @@
 package typings.urql.useSubscriptionMod
 
 import typings.graphql.astMod.DocumentNode
-import typings.urql.PartialOperationContext
+import typings.urql.anon.PartialOperationContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ object UseSubscriptionArgs {
   ): UseSubscriptionArgs[V] = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (!js.isUndefined(pause)) __obj.updateDynamic("pause")(pause.asInstanceOf[js.Any])
+    if (!js.isUndefined(pause)) __obj.updateDynamic("pause")(pause.get.asInstanceOf[js.Any])
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseSubscriptionArgs[V]]
   }

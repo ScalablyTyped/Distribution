@@ -27,6 +27,10 @@ trait ReportGroup extends js.Object {
     */
   var name: js.UndefOr[ReportGroupName] = js.native
   /**
+    *  A list of tag key and value pairs associated with this report group.  These tags are available for use by AWS services that support AWS CodeBuild report group tags.
+    */
+  var tags: js.UndefOr[TagList] = js.native
+  /**
     *  The type of the ReportGroup. The one valid value is TEST. 
     */
   var `type`: js.UndefOr[ReportType] = js.native
@@ -40,6 +44,7 @@ object ReportGroup {
     exportConfig: ReportExportConfig = null,
     lastModified: Timestamp = null,
     name: ReportGroupName = null,
+    tags: TagList = null,
     `type`: ReportType = null
   ): ReportGroup = {
     val __obj = js.Dynamic.literal()
@@ -48,6 +53,7 @@ object ReportGroup {
     if (exportConfig != null) __obj.updateDynamic("exportConfig")(exportConfig.asInstanceOf[js.Any])
     if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportGroup]
   }

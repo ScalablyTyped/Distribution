@@ -2,7 +2,7 @@ package typings.reduxDevtools
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.react.mod.ReactElement
-import typings.react.mod._Global_.JSX.ElementClass
+import typings.react.mod.global.JSX.ElementClass
 import typings.redux.mod.StoreEnhancer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

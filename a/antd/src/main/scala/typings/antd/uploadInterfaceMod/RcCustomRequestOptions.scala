@@ -1,6 +1,6 @@
 package typings.antd.uploadInterfaceMod
 
-import typings.antd.AnonPercent
+import typings.antd.anon.Percent
 import typings.std.Error
 import typings.std.File
 import scala.scalajs.js
@@ -15,7 +15,7 @@ trait RcCustomRequestOptions extends js.Object {
   var headers: js.Object
   var withCredentials: Boolean
   def onError(error: Error): Unit
-  def onProgress(event: AnonPercent, file: File): Unit
+  def onProgress(event: Percent, file: File): Unit
   def onSuccess(response: js.Object, file: File): Unit
 }
 
@@ -28,7 +28,7 @@ object RcCustomRequestOptions {
     filename: String,
     headers: js.Object,
     onError: Error => Unit,
-    onProgress: (AnonPercent, File) => Unit,
+    onProgress: (Percent, File) => Unit,
     onSuccess: (js.Object, File) => Unit,
     withCredentials: Boolean
   ): RcCustomRequestOptions = {

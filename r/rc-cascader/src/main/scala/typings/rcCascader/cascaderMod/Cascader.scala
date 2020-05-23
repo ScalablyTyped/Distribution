@@ -1,6 +1,6 @@
 package typings.rcCascader.cascaderMod
 
-import typings.rcCascader.AnonVisible
+import typings.rcCascader.anon.Visible
 import typings.react.mod.Component
 import typings.react.mod.KeyboardEvent
 import typings.std.HTMLElement
@@ -18,7 +18,7 @@ trait Cascader
   def getFieldName(name: String): String = js.native
   def getFieldNames(): CascaderFieldNames = js.native
   def getPopupDOMNode(): js.Any = js.native
-  def handleChange(options: js.Array[CascaderOption], hasVisible: AnonVisible, e: KeyboardEvent[HTMLElement]): Unit = js.native
+  def handleChange(options: js.Array[CascaderOption], hasVisible: Visible, e: KeyboardEvent[HTMLElement]): Unit = js.native
   def handleItemDoubleClick(): Unit = js.native
   def handleKeyDown(e: KeyboardEvent[HTMLElement]): Unit = js.native
   def handleMenuSelect(targetOption: CascaderOption, menuIndex: Double, e: KeyboardEvent[HTMLElement]): Unit = js.native

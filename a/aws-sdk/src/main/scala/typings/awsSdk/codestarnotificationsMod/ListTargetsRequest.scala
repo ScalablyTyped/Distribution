@@ -22,10 +22,14 @@ trait ListTargetsRequest extends js.Object {
 
 object ListTargetsRequest {
   @scala.inline
-  def apply(Filters: ListTargetsFilters = null, MaxResults: Int | Double = null, NextToken: NextToken = null): ListTargetsRequest = {
+  def apply(
+    Filters: ListTargetsFilters = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    NextToken: NextToken = null
+  ): ListTargetsRequest = {
     val __obj = js.Dynamic.literal()
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTargetsRequest]
   }

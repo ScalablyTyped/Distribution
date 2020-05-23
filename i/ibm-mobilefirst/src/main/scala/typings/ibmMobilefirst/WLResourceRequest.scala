@@ -6,11 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("WLResourceRequest")
 @js.native
-class WLResourceRequest protected () extends js.Object {
-  def this(url: String, method: String) = this()
-  def this(url: String, method: String, timeout: Double) = this()
+trait WLResourceRequest extends js.Object {
   def addHeader(name: String, value: String): Unit = js.native
   def addHeader(name: String, value: Boolean): Unit = js.native
   def addHeader(name: String, value: Double): Unit = js.native
@@ -37,19 +34,5 @@ class WLResourceRequest protected () extends js.Object {
   def setQueryParameters(): Unit = js.native
   def setQueryParameters(parameters: StringDictionary[String | Double | Boolean | js.Object]): Unit = js.native
   def setTimeout(requestTimeout: Double): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("WLResourceRequest")
-@js.native
-object WLResourceRequest extends js.Object {
-  var CONNECT: String = js.native
-  var DELETE: String = js.native
-  var GET: String = js.native
-  var HEAD: String = js.native
-  var OPTIONS: String = js.native
-  var POST: String = js.native
-  var PUT: String = js.native
-  var TRACE: String = js.native
 }
 

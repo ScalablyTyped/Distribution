@@ -1,18 +1,12 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.AnonMin
+import typings.babylonjs.anon.Min
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.MinMaxReducer")
 @js.native
-class MinMaxReducer protected () extends js.Object {
-  /**
-    * Creates a min/max reducer
-    * @param camera The camera to use for the post processes
-    */
-  def this(camera: Camera) = this()
+trait MinMaxReducer extends js.Object {
   var _activated: Boolean = js.native
   var _camera: Camera = js.native
   var _forceFullscreenViewport: Boolean = js.native
@@ -23,7 +17,7 @@ class MinMaxReducer protected () extends js.Object {
   /**
     * Observable triggered when the computation has been performed
     */
-  var onAfterReductionPerformed: Observable[AnonMin] = js.native
+  var onAfterReductionPerformed: Observable[Min] = js.native
   /**
     * Activates the reduction computation.
     * When activated, the observers registered in onAfterReductionPerformed are

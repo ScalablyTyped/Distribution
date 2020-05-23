@@ -5,29 +5,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.jestTypes.AnonName
-  - typings.jestTypes.AnonAsyncError
-  - typings.jestTypes.AnonBlockName
-  - typings.jestTypes.AnonFn
-  - typings.jestTypes.AnonMode
-  - typings.jestTypes.AnonHook
-  - typings.jestTypes.AnonDescribeBlock
-  - typings.jestTypes.AnonError
-  - typings.jestTypes.AnonTest
-  - typings.jestTypes.AnonNameTest
-  - typings.jestTypes.AnonErrorName
-  - typings.jestTypes.AnonTestTestEntry
-  - typings.jestTypes.AnonNameTestTestEntry
-  - typings.jestTypes.Anon0
-  - typings.jestTypes.Anon1
-  - typings.jestTypes.Anon2
-  - typings.jestTypes.AnonDescribeBlockName
-  - typings.jestTypes.AnonDescribeBlockDescribeBlock
-  - typings.jestTypes.Anon3
-  - typings.jestTypes.Anon4
-  - typings.jestTypes.AnonErrorException
-  - typings.jestTypes.AnonParentProcess
-  - typings.jestTypes.Anon5
+  - typings.jestTypes.anon.Name
+  - typings.jestTypes.anon.AsyncError
+  - typings.jestTypes.anon.BlockName
+  - typings.jestTypes.anon.Fn
+  - typings.jestTypes.anon.Mode
+  - typings.jestTypes.anon.Hook
+  - typings.jestTypes.anon.DescribeBlock
+  - typings.jestTypes.anon.Error
+  - typings.jestTypes.anon.Test
+  - typings.jestTypes.anon.NameTest
+  - typings.jestTypes.anon.ErrorName
+  - typings.jestTypes.anon.TestTestEntry
+  - typings.jestTypes.anon.NameTestTestEntry
+  - typings.jestTypes.anon.`0`
+  - typings.jestTypes.anon.`1`
+  - typings.jestTypes.anon.`2`
+  - typings.jestTypes.anon.DescribeBlockName
+  - typings.jestTypes.anon.DescribeBlockDescribeBlock
+  - typings.jestTypes.anon.`3`
+  - typings.jestTypes.anon.`4`
+  - typings.jestTypes.anon.ErrorException
+  - typings.jestTypes.anon.ParentProcess
+  - typings.jestTypes.anon.`5`
 */
 trait Event extends js.Object
 

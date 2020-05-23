@@ -22,9 +22,13 @@ trait DescribeEndpointsRequest extends js.Object {
 
 object DescribeEndpointsRequest {
   @scala.inline
-  def apply(MaxResults: Int | Double = null, Mode: DescribeEndpointsMode = null, NextToken: string = null): DescribeEndpointsRequest = {
+  def apply(
+    MaxResults: js.UndefOr[integer] = js.undefined,
+    Mode: DescribeEndpointsMode = null,
+    NextToken: string = null
+  ): DescribeEndpointsRequest = {
     val __obj = js.Dynamic.literal()
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (Mode != null) __obj.updateDynamic("Mode")(Mode.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEndpointsRequest]

@@ -5,13 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Rx.RefCountDisposable")
-@js.native
-class RefCountDisposable protected () extends IDisposable {
-  def this(disposable: IDisposable) = this()
-  var isDisposed: Boolean = js.native
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
-  def getDisposable(): IDisposable = js.native
+trait RefCountDisposable extends IDisposable {
+  var isDisposed: Boolean
+  def getDisposable(): IDisposable
+}
+
+object RefCountDisposable {
+  @scala.inline
+  def apply(dispose: () => Unit, getDisposable: () => IDisposable, isDisposed: Boolean): RefCountDisposable = {
+    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), getDisposable = js.Any.fromFunction0(getDisposable), isDisposed = isDisposed.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RefCountDisposable]
+  }
 }
 

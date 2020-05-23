@@ -22,11 +22,11 @@ object KoaHelmetContentSecurityPolicyConfiguration {
     setAllHeaders: js.UndefOr[Boolean] = js.undefined
   ): KoaHelmetContentSecurityPolicyConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(browserSniff)) __obj.updateDynamic("browserSniff")(browserSniff.asInstanceOf[js.Any])
+    if (!js.isUndefined(browserSniff)) __obj.updateDynamic("browserSniff")(browserSniff.get.asInstanceOf[js.Any])
     if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableAndroid)) __obj.updateDynamic("disableAndroid")(disableAndroid.asInstanceOf[js.Any])
-    if (!js.isUndefined(reportOnly)) __obj.updateDynamic("reportOnly")(reportOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(setAllHeaders)) __obj.updateDynamic("setAllHeaders")(setAllHeaders.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableAndroid)) __obj.updateDynamic("disableAndroid")(disableAndroid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reportOnly)) __obj.updateDynamic("reportOnly")(reportOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setAllHeaders)) __obj.updateDynamic("setAllHeaders")(setAllHeaders.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[KoaHelmetContentSecurityPolicyConfiguration]
   }
 }

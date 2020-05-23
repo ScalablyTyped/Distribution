@@ -1433,6 +1433,19 @@ trait Glue extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ StopTriggerResponse, Unit]
   ): Request[StopTriggerResponse, AWSError] = js.native
   /**
+    * Stops the execution of the specified workflow run.
+    */
+  def stopWorkflowRun(): Request[StopWorkflowRunResponse, AWSError] = js.native
+  def stopWorkflowRun(callback: js.Function2[/* err */ AWSError, /* data */ StopWorkflowRunResponse, Unit]): Request[StopWorkflowRunResponse, AWSError] = js.native
+  /**
+    * Stops the execution of the specified workflow run.
+    */
+  def stopWorkflowRun(params: StopWorkflowRunRequest): Request[StopWorkflowRunResponse, AWSError] = js.native
+  def stopWorkflowRun(
+    params: StopWorkflowRunRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StopWorkflowRunResponse, Unit]
+  ): Request[StopWorkflowRunResponse, AWSError] = js.native
+  /**
     * Adds tags to a resource. A tag is a label you can assign to an AWS resource. In AWS Glue, you can tag only certain resources. For information about what resources you can tag, see AWS Tags in AWS Glue.
     */
   def tagResource(): Request[TagResourceResponse, AWSError] = js.native

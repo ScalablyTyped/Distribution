@@ -1,9 +1,9 @@
 package typings.officeJsPreview.OneNote
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OneNote.Interfaces.InkWordData
 import typings.officeJsPreview.OneNote.Interfaces.InkWordLoadOptions
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,9 +14,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: OneNoteApi 1.1]
   */
-@JSGlobal("OneNote.InkWord")
 @js.native
-class InkWord () extends ClientObject {
+trait InkWord extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_InkWord: RequestContext = js.native
@@ -66,8 +65,8 @@ class InkWord () extends ClientObject {
   def load(): InkWord = js.native
   def load(option: String): InkWord = js.native
   def load(option: js.Array[String]): InkWord = js.native
-  def load(option: AnonExpand): InkWord = js.native
   def load(option: InkWordLoadOptions): InkWord = js.native
+  def load(option: Expand): InkWord = js.native
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original OneNote.InkWord object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkWordData`) that contains shallow copies of any loaded child properties from the original object.

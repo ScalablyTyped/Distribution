@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object CertificateChainPolicy extends js.Object {
   /** Use the SSL client/server chain policy verification checks. */
   @js.native
   sealed trait ssl extends CertificateChainPolicy
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CertificateChainPolicy with Double] = js.native
-  /* 0 */ @js.native
-  object base extends TopLevel[base with Double]
-  
-  /* 3 */ @js.native
-  object microsoftRoot extends TopLevel[microsoftRoot with Double]
-  
-  /* 2 */ @js.native
-  object ntAuthentication extends TopLevel[ntAuthentication with Double]
-  
-  /* 1 */ @js.native
-  object ssl extends TopLevel[ssl with Double]
   
 }
 

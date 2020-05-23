@@ -39,13 +39,13 @@ object ClassSpec {
     ] = null,
     name: String = null,
     protocols: js.Array[Protocol] = null,
-    `super`: Object = null
+    `super`: js.UndefOr[Null | Object] = js.undefined
   ): ClassSpec[D, T, S] = {
     val __obj = js.Dynamic.literal()
     if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
-    if (`super` != null) __obj.updateDynamic("super")(`super`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`super`)) __obj.updateDynamic("super")(`super`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassSpec[D, T, S]]
   }
 }

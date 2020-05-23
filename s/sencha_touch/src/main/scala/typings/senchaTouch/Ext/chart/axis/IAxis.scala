@@ -17,20 +17,20 @@ trait IAxis extends IObservable {
   /** [Config Option] (Array) */
   var fields: js.UndefOr[Array] = js.undefined
   /** [Method] Returns the value of background
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getBackground: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of chart
-  		* @returns Ext.chart.AbstractChart
-  		*/
+    * @returns Ext.chart.AbstractChart
+    */
   var getChart: js.UndefOr[js.Function0[IAbstractChart]] = js.undefined
   /** [Method] Mapping data value into coordinate
-  		* @param value *
-  		* @param field String
-  		* @param idx Number
-  		* @param items Ext.util.MixedCollection
-  		* @returns Number
-  		*/
+    * @param value *
+    * @param field String
+    * @param idx Number
+    * @param items Ext.util.MixedCollection
+    * @returns Number
+    */
   var getCoordFor: js.UndefOr[
     js.Function4[
       /* value */ js.UndefOr[js.Any], 
@@ -41,92 +41,92 @@ trait IAxis extends IObservable {
     ]
   ] = js.undefined
   /** [Method] Returns the value of fields
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   var getFields: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the value of grid
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getGrid: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of hidden
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getHidden: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of increment
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getIncrement: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of label
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getLabel: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of labelInSpan
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getLabelInSpan: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of layout
-  		* @returns Object|Ext.chart.axis.layout.Layout
-  		*/
+    * @returns Object|Ext.chart.axis.layout.Layout
+    */
   var getLayout: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of majorTickSteps
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMajorTickSteps: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of maxZoom
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMaxZoom: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of maximum
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMaximum: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of minZoom
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMinZoom: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of minimum
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMinimum: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of minorTickSteps
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMinorTickSteps: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of needHighPrecision
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getNeedHighPrecision: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of position
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getPosition: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Get the range derived from all the bound series
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   var getRange: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the value of renderer
-  		* @returns Function
-  		*/
+    * @returns Function
+    */
   var getRenderer: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of segmenter
-  		* @returns Object|Ext.chart.axis.segmenter.Segmenter
-  		*/
+    * @returns Object|Ext.chart.axis.segmenter.Segmenter
+    */
   var getSegmenter: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of style
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getStyle: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of title
-  		* @returns String|Object
-  		*/
+    * @returns String|Object
+    */
   var getTitle: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of titleMargin
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getTitleMargin: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of visibleRange
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   var getVisibleRange: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Config Option] (Object) */
   var grid: js.UndefOr[js.Any] = js.undefined
@@ -159,10 +159,10 @@ trait IAxis extends IObservable {
   /** [Method] Invoked when data has changed  */
   var processData: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
-  		* @param object Object The Observable whose events this object is to relay.
-  		* @param events String/Array/Object Array of event names to relay.
-  		* @returns Ext.mixin.Observable this
-  		*/
+    * @param object Object The Observable whose events this object is to relay.
+    * @param events String/Array/Object Array of event names to relay.
+    * @returns Ext.mixin.Observable this
+    */
   @JSName("relayEvents")
   var relayEvents_IAxis: js.UndefOr[
     js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
@@ -174,97 +174,97 @@ trait IAxis extends IObservable {
   /** [Config Option] (Object|Ext.chart.axis.segmenter.Segmenter) */
   var segmenter: js.UndefOr[js.Any] = js.undefined
   /** [Method] Sets the value of background
-  		* @param background Object The new value.
-  		*/
+    * @param background Object The new value.
+    */
   var setBackground: js.UndefOr[js.Function1[/* background */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of chart
-  		* @param chart Ext.chart.AbstractChart The new value.
-  		*/
+    * @param chart Ext.chart.AbstractChart The new value.
+    */
   var setChart: js.UndefOr[js.Function1[/* chart */ js.UndefOr[IAbstractChart], Unit]] = js.undefined
   /** [Method] Sets the value of fields
-  		* @param fields Array The new value.
-  		*/
+    * @param fields Array The new value.
+    */
   var setFields: js.UndefOr[js.Function1[/* fields */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Sets the value of grid
-  		* @param grid Object The new value.
-  		*/
+    * @param grid Object The new value.
+    */
   var setGrid: js.UndefOr[js.Function1[/* grid */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of hidden
-  		* @param hidden Boolean The new value.
-  		*/
+    * @param hidden Boolean The new value.
+    */
   var setHidden: js.UndefOr[js.Function1[/* hidden */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of increment
-  		* @param increment Number The new value.
-  		*/
+    * @param increment Number The new value.
+    */
   var setIncrement: js.UndefOr[js.Function1[/* increment */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of label
-  		* @param label Object The new value.
-  		*/
+    * @param label Object The new value.
+    */
   var setLabel: js.UndefOr[js.Function1[/* label */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of labelInSpan
-  		* @param labelInSpan Boolean The new value.
-  		*/
+    * @param labelInSpan Boolean The new value.
+    */
   var setLabelInSpan: js.UndefOr[js.Function1[/* labelInSpan */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of layout
-  		* @param layout Object|Ext.chart.axis.layout.Layout The new value.
-  		*/
+    * @param layout Object|Ext.chart.axis.layout.Layout The new value.
+    */
   var setLayout: js.UndefOr[js.Function1[/* layout */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of majorTickSteps
-  		* @param majorTickSteps Number The new value.
-  		*/
+    * @param majorTickSteps Number The new value.
+    */
   var setMajorTickSteps: js.UndefOr[js.Function1[/* majorTickSteps */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of maxZoom
-  		* @param maxZoom Number The new value.
-  		*/
+    * @param maxZoom Number The new value.
+    */
   var setMaxZoom: js.UndefOr[js.Function1[/* maxZoom */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of maximum
-  		* @param maximum Number The new value.
-  		*/
+    * @param maximum Number The new value.
+    */
   var setMaximum: js.UndefOr[js.Function1[/* maximum */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of minZoom
-  		* @param minZoom Number The new value.
-  		*/
+    * @param minZoom Number The new value.
+    */
   var setMinZoom: js.UndefOr[js.Function1[/* minZoom */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of minimum
-  		* @param minimum Number The new value.
-  		*/
+    * @param minimum Number The new value.
+    */
   var setMinimum: js.UndefOr[js.Function1[/* minimum */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of minorTickSteps
-  		* @param minorTickSteps Number The new value.
-  		*/
+    * @param minorTickSteps Number The new value.
+    */
   var setMinorTickSteps: js.UndefOr[js.Function1[/* minorTickSteps */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of needHighPrecision
-  		* @param needHighPrecision Boolean The new value.
-  		*/
+    * @param needHighPrecision Boolean The new value.
+    */
   var setNeedHighPrecision: js.UndefOr[js.Function1[/* needHighPrecision */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of position
-  		* @param position String The new value.
-  		*/
+    * @param position String The new value.
+    */
   var setPosition: js.UndefOr[js.Function1[/* position */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of renderer
-  		* @param renderer Function The new value.
-  		* @returns String The label to display.
-  		*/
+    * @param renderer Function The new value.
+    * @returns String The label to display.
+    */
   var setRenderer: js.UndefOr[js.Function1[/* renderer */ js.UndefOr[js.Any], String]] = js.undefined
   /** [Method] Sets the value of segmenter
-  		* @param segmenter Object|Ext.chart.axis.segmenter.Segmenter The new value.
-  		*/
+    * @param segmenter Object|Ext.chart.axis.segmenter.Segmenter The new value.
+    */
   var setSegmenter: js.UndefOr[js.Function1[/* segmenter */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of style
-  		* @param style Object The new value.
-  		*/
+    * @param style Object The new value.
+    */
   var setStyle: js.UndefOr[js.Function1[/* style */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of title
-  		* @param title String|Object The new value.
-  		*/
+    * @param title String|Object The new value.
+    */
   var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of titleMargin
-  		* @param titleMargin Number The new value.
-  		*/
+    * @param titleMargin Number The new value.
+    */
   var setTitleMargin: js.UndefOr[js.Function1[/* titleMargin */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of visibleRange
-  		* @param visibleRange Array The new value.
-  		*/
+    * @param visibleRange Array The new value.
+    */
   var setVisibleRange: js.UndefOr[js.Function1[/* visibleRange */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Config Option] (Object) */
   var style: js.UndefOr[js.Any] = js.undefined
@@ -332,19 +332,19 @@ object IAxis {
     grid: js.Any = null,
     hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
-    increment: Int | Double = null,
+    increment: js.UndefOr[Double] = js.undefined,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     label: js.Any = null,
     labelInSpan: js.UndefOr[Boolean] = js.undefined,
     layout: js.Any = null,
     listeners: js.Any = null,
-    majorTickSteps: Int | Double = null,
-    maxZoom: Int | Double = null,
-    maximum: Int | Double = null,
-    minZoom: Int | Double = null,
-    minimum: Int | Double = null,
-    minorTickSteps: Int | Double = null,
+    majorTickSteps: js.UndefOr[Double] = js.undefined,
+    maxZoom: js.UndefOr[Double] = js.undefined,
+    maximum: js.UndefOr[Double] = js.undefined,
+    minZoom: js.UndefOr[Double] = js.undefined,
+    minimum: js.UndefOr[Double] = js.undefined,
+    minorTickSteps: js.UndefOr[Double] = js.undefined,
     mixins: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
@@ -395,7 +395,7 @@ object IAxis {
     style: js.Any = null,
     suspendEvents: () => Unit = null,
     title: js.Any = null,
-    titleMargin: Int | Double = null,
+    titleMargin: js.UndefOr[Double] = js.undefined,
     un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
@@ -455,24 +455,24 @@ object IAxis {
     if (getVisibleRange != null) __obj.updateDynamic("getVisibleRange")(js.Any.fromFunction0(getVisibleRange))
     if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
     if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (increment != null) __obj.updateDynamic("increment")(increment.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(increment)) __obj.updateDynamic("increment")(increment.get.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(labelInSpan)) __obj.updateDynamic("labelInSpan")(labelInSpan.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelInSpan)) __obj.updateDynamic("labelInSpan")(labelInSpan.get.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
-    if (majorTickSteps != null) __obj.updateDynamic("majorTickSteps")(majorTickSteps.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
-    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
-    if (minorTickSteps != null) __obj.updateDynamic("minorTickSteps")(minorTickSteps.asInstanceOf[js.Any])
+    if (!js.isUndefined(majorTickSteps)) __obj.updateDynamic("majorTickSteps")(majorTickSteps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximum)) __obj.updateDynamic("maximum")(maximum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimum)) __obj.updateDynamic("minimum")(minimum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minorTickSteps)) __obj.updateDynamic("minorTickSteps")(minorTickSteps.get.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
     if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
-    if (!js.isUndefined(needHighPrecision)) __obj.updateDynamic("needHighPrecision")(needHighPrecision.asInstanceOf[js.Any])
+    if (!js.isUndefined(needHighPrecision)) __obj.updateDynamic("needHighPrecision")(needHighPrecision.get.asInstanceOf[js.Any])
     if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5(on))
     if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4(onAfter))
     if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4(onBefore))
@@ -514,12 +514,12 @@ object IAxis {
     if (setTitle != null) __obj.updateDynamic("setTitle")(js.Any.fromFunction1(setTitle))
     if (setTitleMargin != null) __obj.updateDynamic("setTitleMargin")(js.Any.fromFunction1(setTitleMargin))
     if (setVisibleRange != null) __obj.updateDynamic("setVisibleRange")(js.Any.fromFunction1(setVisibleRange))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titleMargin != null) __obj.updateDynamic("titleMargin")(titleMargin.asInstanceOf[js.Any])
+    if (!js.isUndefined(titleMargin)) __obj.updateDynamic("titleMargin")(titleMargin.get.asInstanceOf[js.Any])
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
     if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
     if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))

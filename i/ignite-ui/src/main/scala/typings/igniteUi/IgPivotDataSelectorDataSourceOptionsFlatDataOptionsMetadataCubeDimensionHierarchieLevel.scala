@@ -7,33 +7,30 @@ import scala.scalajs.js.annotation._
 
 trait IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel
   extends /**
-	 * Option for IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   /**
-  	 * A caption for the level.
-  	 */
+    * A caption for the level.
+    */
   var caption: js.UndefOr[String] = js.undefined
   /**
-  	 * A function called for each item of the data source array when level members are created.
-  	 * Based on the item parameter the function should return a value that will form the $.ig.Member’s name and caption.
-  	 */
+    * A function called for each item of the data source array when level members are created.
+    * Based on the item parameter the function should return a value that will form the $.ig.Member’s name and caption.
+    */
   var memberProvider: js.UndefOr[js.Function] = js.undefined
   /**
-  	 * Optional="false" A name for the level.
-  	 * The unique name of the level is formed using the following pattern:
-  	 * {<hierarchy.uniqueName>}.[<levelMetadata.name>]
-  	 */
+    * Optional="false" A name for the level.
+    * The unique name of the level is formed using the following pattern:
+    * {<hierarchy.uniqueName>}.[<levelMetadata.name>]
+    */
   var name: js.UndefOr[String] = js.undefined
 }
 
 object IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     caption: String = null,
     memberProvider: js.Function = null,
     name: String = null

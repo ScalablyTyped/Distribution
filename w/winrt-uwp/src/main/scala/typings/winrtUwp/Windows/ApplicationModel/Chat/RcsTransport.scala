@@ -10,9 +10,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides functionality for accessing the Rich Communication Services (RCS) transport. */
-@JSGlobal("Windows.ApplicationModel.Chat.RcsTransport")
 @js.native
-abstract class RcsTransport () extends js.Object {
+trait RcsTransport extends js.Object {
   /** Gets a configuration object that describes the transport settings. */
   var configuration: RcsTransportConfiguration = js.native
   /** Gets a name-value pair for extensibility of service provider configuration values. */

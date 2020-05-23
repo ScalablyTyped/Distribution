@@ -44,32 +44,38 @@ trait IAgent extends js.Object {
 object IAgent {
   @scala.inline
   def apply(
-    apiVersion: ApiVersion | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Agent.ApiVersion * / any */ String) = null,
-    avatarUri: String = null,
-    classificationThreshold: Int | Double = null,
-    defaultLanguageCode: String = null,
-    description: String = null,
-    displayName: String = null,
-    enableLogging: js.UndefOr[Boolean] = js.undefined,
-    matchMode: MatchMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Agent.MatchMode * / any */ String) = null,
-    parent: String = null,
-    supportedLanguageCodes: js.Array[String] = null,
-    tier: Tier | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Agent.Tier * / any */ String) = null,
-    timeZone: String = null
+    apiVersion: js.UndefOr[
+      Null | ApiVersion | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Agent.ApiVersion * / any */ String)
+    ] = js.undefined,
+    avatarUri: js.UndefOr[Null | String] = js.undefined,
+    classificationThreshold: js.UndefOr[Null | Double] = js.undefined,
+    defaultLanguageCode: js.UndefOr[Null | String] = js.undefined,
+    description: js.UndefOr[Null | String] = js.undefined,
+    displayName: js.UndefOr[Null | String] = js.undefined,
+    enableLogging: js.UndefOr[Null | Boolean] = js.undefined,
+    matchMode: js.UndefOr[
+      Null | MatchMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Agent.MatchMode * / any */ String)
+    ] = js.undefined,
+    parent: js.UndefOr[Null | String] = js.undefined,
+    supportedLanguageCodes: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    tier: js.UndefOr[
+      Null | Tier | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Agent.Tier * / any */ String)
+    ] = js.undefined,
+    timeZone: js.UndefOr[Null | String] = js.undefined
   ): IAgent = {
     val __obj = js.Dynamic.literal()
-    if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion.asInstanceOf[js.Any])
-    if (avatarUri != null) __obj.updateDynamic("avatarUri")(avatarUri.asInstanceOf[js.Any])
-    if (classificationThreshold != null) __obj.updateDynamic("classificationThreshold")(classificationThreshold.asInstanceOf[js.Any])
-    if (defaultLanguageCode != null) __obj.updateDynamic("defaultLanguageCode")(defaultLanguageCode.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (!js.isUndefined(apiVersion)) __obj.updateDynamic("apiVersion")(apiVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(avatarUri)) __obj.updateDynamic("avatarUri")(avatarUri.asInstanceOf[js.Any])
+    if (!js.isUndefined(classificationThreshold)) __obj.updateDynamic("classificationThreshold")(classificationThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultLanguageCode)) __obj.updateDynamic("defaultLanguageCode")(defaultLanguageCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayName)) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (!js.isUndefined(enableLogging)) __obj.updateDynamic("enableLogging")(enableLogging.asInstanceOf[js.Any])
-    if (matchMode != null) __obj.updateDynamic("matchMode")(matchMode.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (supportedLanguageCodes != null) __obj.updateDynamic("supportedLanguageCodes")(supportedLanguageCodes.asInstanceOf[js.Any])
-    if (tier != null) __obj.updateDynamic("tier")(tier.asInstanceOf[js.Any])
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchMode)) __obj.updateDynamic("matchMode")(matchMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportedLanguageCodes)) __obj.updateDynamic("supportedLanguageCodes")(supportedLanguageCodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(tier)) __obj.updateDynamic("tier")(tier.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeZone)) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAgent]
   }
 }

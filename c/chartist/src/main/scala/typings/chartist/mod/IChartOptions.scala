@@ -17,7 +17,7 @@ object IChartOptions {
   def apply(plugins: js.Array[_] = null, reverseData: js.UndefOr[Boolean] = js.undefined): IChartOptions = {
     val __obj = js.Dynamic.literal()
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverseData)) __obj.updateDynamic("reverseData")(reverseData.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverseData)) __obj.updateDynamic("reverseData")(reverseData.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChartOptions]
   }
 }

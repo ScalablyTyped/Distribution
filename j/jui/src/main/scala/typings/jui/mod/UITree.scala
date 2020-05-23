@@ -1,6 +1,6 @@
 package typings.jui.mod
 
-import typings.jui.AnonDragChild
+import typings.jui.anon.DragChild
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UITree extends js.Object {
   def apply(selector: js.Any): this.type = js.native
-  def apply(selector: js.Any, options: AnonDragChild): this.type = js.native
+  def apply(selector: js.Any, options: DragChild): this.type = js.native
   /**
     * Gets the index of a node that is activated in an active state.
     *

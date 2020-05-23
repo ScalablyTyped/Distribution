@@ -1,7 +1,7 @@
 package typings.devextreme.mod.DevExpress.ui
 
 import typings.devextreme.mod.DevExpress.data.DataSource
-import typings.devextreme.mod._Global_.JQuery
+import typings.devextreme.mod.global.JQuery
 import typings.std.Date
 import typings.std.Element
 import scala.scalajs.js

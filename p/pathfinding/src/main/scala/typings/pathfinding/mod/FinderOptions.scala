@@ -14,12 +14,12 @@ object FinderOptions {
   def apply(
     diagonalMovement: DiagonalMovement = null,
     heuristic: (/* dx */ Double, /* dy */ Double) => Double = null,
-    weight: Int | Double = null
+    weight: js.UndefOr[Double] = js.undefined
   ): FinderOptions = {
     val __obj = js.Dynamic.literal()
     if (diagonalMovement != null) __obj.updateDynamic("diagonalMovement")(diagonalMovement.asInstanceOf[js.Any])
     if (heuristic != null) __obj.updateDynamic("heuristic")(js.Any.fromFunction2(heuristic))
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FinderOptions]
   }
 }

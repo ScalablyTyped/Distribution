@@ -1,6 +1,5 @@
 package typings.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -58,26 +57,6 @@ object ShapeFillType extends js.Object {
     */
   @js.native
   sealed trait solid extends ShapeFillType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ShapeFillType with String] = js.native
-  /* "Gradient" */ @js.native
-  object gradient extends TopLevel[gradient with String]
-  
-  /* "Mixed" */ @js.native
-  object mixed extends TopLevel[mixed with String]
-  
-  /* "NoFill" */ @js.native
-  object noFill extends TopLevel[noFill with String]
-  
-  /* "Pattern" */ @js.native
-  object pattern extends TopLevel[pattern with String]
-  
-  /* "PictureAndTexture" */ @js.native
-  object pictureAndTexture extends TopLevel[pictureAndTexture with String]
-  
-  /* "Solid" */ @js.native
-  object solid extends TopLevel[solid with String]
   
 }
 

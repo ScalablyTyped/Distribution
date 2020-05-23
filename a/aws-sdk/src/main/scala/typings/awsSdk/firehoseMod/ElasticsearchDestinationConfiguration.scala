@@ -54,6 +54,10 @@ trait ElasticsearchDestinationConfiguration extends js.Object {
     * The Elasticsearch type name. For Elasticsearch 6.x, there can be only one type per index. If you try to specify a new type for an existing index that already has another type, Kinesis Data Firehose returns an error during run time. For Elasticsearch 7.x, don't specify a TypeName.
     */
   var TypeName: js.UndefOr[ElasticsearchTypeName] = js.native
+  /**
+    * The details of the VPC of the Amazon ES destination.
+    */
+  var VpcConfiguration: js.UndefOr[typings.awsSdk.firehoseMod.VpcConfiguration] = js.native
 }
 
 object ElasticsearchDestinationConfiguration {
@@ -70,7 +74,8 @@ object ElasticsearchDestinationConfiguration {
     ProcessingConfiguration: ProcessingConfiguration = null,
     RetryOptions: ElasticsearchRetryOptions = null,
     S3BackupMode: ElasticsearchS3BackupMode = null,
-    TypeName: ElasticsearchTypeName = null
+    TypeName: ElasticsearchTypeName = null,
+    VpcConfiguration: VpcConfiguration = null
   ): ElasticsearchDestinationConfiguration = {
     val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any], RoleARN = RoleARN.asInstanceOf[js.Any], S3Configuration = S3Configuration.asInstanceOf[js.Any])
     if (BufferingHints != null) __obj.updateDynamic("BufferingHints")(BufferingHints.asInstanceOf[js.Any])
@@ -82,6 +87,7 @@ object ElasticsearchDestinationConfiguration {
     if (RetryOptions != null) __obj.updateDynamic("RetryOptions")(RetryOptions.asInstanceOf[js.Any])
     if (S3BackupMode != null) __obj.updateDynamic("S3BackupMode")(S3BackupMode.asInstanceOf[js.Any])
     if (TypeName != null) __obj.updateDynamic("TypeName")(TypeName.asInstanceOf[js.Any])
+    if (VpcConfiguration != null) __obj.updateDynamic("VpcConfiguration")(VpcConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElasticsearchDestinationConfiguration]
   }
 }

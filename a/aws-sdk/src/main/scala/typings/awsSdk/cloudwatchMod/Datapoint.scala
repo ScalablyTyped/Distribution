@@ -43,22 +43,22 @@ trait Datapoint extends js.Object {
 object Datapoint {
   @scala.inline
   def apply(
-    Average: Int | Double = null,
+    Average: js.UndefOr[DatapointValue] = js.undefined,
     ExtendedStatistics: DatapointValueMap = null,
-    Maximum: Int | Double = null,
-    Minimum: Int | Double = null,
-    SampleCount: Int | Double = null,
-    Sum: Int | Double = null,
+    Maximum: js.UndefOr[DatapointValue] = js.undefined,
+    Minimum: js.UndefOr[DatapointValue] = js.undefined,
+    SampleCount: js.UndefOr[DatapointValue] = js.undefined,
+    Sum: js.UndefOr[DatapointValue] = js.undefined,
     Timestamp: Timestamp = null,
     Unit: StandardUnit = null
   ): Datapoint = {
     val __obj = js.Dynamic.literal()
-    if (Average != null) __obj.updateDynamic("Average")(Average.asInstanceOf[js.Any])
+    if (!js.isUndefined(Average)) __obj.updateDynamic("Average")(Average.get.asInstanceOf[js.Any])
     if (ExtendedStatistics != null) __obj.updateDynamic("ExtendedStatistics")(ExtendedStatistics.asInstanceOf[js.Any])
-    if (Maximum != null) __obj.updateDynamic("Maximum")(Maximum.asInstanceOf[js.Any])
-    if (Minimum != null) __obj.updateDynamic("Minimum")(Minimum.asInstanceOf[js.Any])
-    if (SampleCount != null) __obj.updateDynamic("SampleCount")(SampleCount.asInstanceOf[js.Any])
-    if (Sum != null) __obj.updateDynamic("Sum")(Sum.asInstanceOf[js.Any])
+    if (!js.isUndefined(Maximum)) __obj.updateDynamic("Maximum")(Maximum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Minimum)) __obj.updateDynamic("Minimum")(Minimum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SampleCount)) __obj.updateDynamic("SampleCount")(SampleCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Sum)) __obj.updateDynamic("Sum")(Sum.get.asInstanceOf[js.Any])
     if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp.asInstanceOf[js.Any])
     if (Unit != null) __obj.updateDynamic("Unit")(Unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Datapoint]

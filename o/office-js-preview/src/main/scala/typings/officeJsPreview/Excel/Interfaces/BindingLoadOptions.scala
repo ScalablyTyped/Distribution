@@ -18,14 +18,14 @@ trait BindingLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents binding identifier. Read-only.
+    * Represents binding identifier.
     *
     * [Api set: ExcelApi 1.1]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns the type of the binding. See Excel.BindingType for details. Read-only.
+    * Returns the type of the binding. See Excel.BindingType for details.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -40,9 +40,9 @@ object BindingLoadOptions {
     `type`: js.UndefOr[Boolean] = js.undefined
   ): BindingLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindingLoadOptions]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Key information to flag to healthcare providers
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait Flag extends DomainResource {
   /**
     * Contains extended information for property 'status'.

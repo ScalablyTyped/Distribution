@@ -31,14 +31,14 @@ trait DockerVolumeConfiguration extends js.Object {
 object DockerVolumeConfiguration {
   @scala.inline
   def apply(
-    autoprovision: js.UndefOr[scala.Boolean] = js.undefined,
+    autoprovision: js.UndefOr[BoxedBoolean] = js.undefined,
     driver: String = null,
     driverOpts: StringMap = null,
     labels: StringMap = null,
     scope: Scope = null
   ): DockerVolumeConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoprovision)) __obj.updateDynamic("autoprovision")(autoprovision.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoprovision)) __obj.updateDynamic("autoprovision")(autoprovision.get.asInstanceOf[js.Any])
     if (driver != null) __obj.updateDynamic("driver")(driver.asInstanceOf[js.Any])
     if (driverOpts != null) __obj.updateDynamic("driverOpts")(driverOpts.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])

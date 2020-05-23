@@ -21,11 +21,15 @@ trait SearchUserIDsOptions extends js.Object {
 
 object SearchUserIDsOptions {
   @scala.inline
-  def apply(cluster: String = null, hitsPerPage: Int | Double = null, page: Int | Double = null): SearchUserIDsOptions = {
+  def apply(
+    cluster: String = null,
+    hitsPerPage: js.UndefOr[Double] = js.undefined,
+    page: js.UndefOr[Double] = js.undefined
+  ): SearchUserIDsOptions = {
     val __obj = js.Dynamic.literal()
     if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
-    if (hitsPerPage != null) __obj.updateDynamic("hitsPerPage")(hitsPerPage.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (!js.isUndefined(hitsPerPage)) __obj.updateDynamic("hitsPerPage")(hitsPerPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchUserIDsOptions]
   }
 }

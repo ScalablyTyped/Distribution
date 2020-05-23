@@ -177,7 +177,7 @@ object Options {
   def apply(
     benchmark: js.UndefOr[Boolean] = js.undefined,
     database: String = null,
-    databaseVersion: Int | Double = null,
+    databaseVersion: js.UndefOr[Double] = js.undefined,
     define: DefineOptions[_] = null,
     dialect: String = null,
     dialectModulePath: String = null,
@@ -190,7 +190,7 @@ object Options {
     operatorsAliases: Boolean | OperatorsAliases = null,
     password: String = null,
     pool: PoolOptions = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     protocol: String = null,
     query: QueryOptions = null,
     quoteIdentifiers: js.UndefOr[Boolean] = js.undefined,
@@ -206,9 +206,9 @@ object Options {
     username: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(benchmark)) __obj.updateDynamic("benchmark")(benchmark.asInstanceOf[js.Any])
+    if (!js.isUndefined(benchmark)) __obj.updateDynamic("benchmark")(benchmark.get.asInstanceOf[js.Any])
     if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
-    if (databaseVersion != null) __obj.updateDynamic("databaseVersion")(databaseVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(databaseVersion)) __obj.updateDynamic("databaseVersion")(databaseVersion.get.asInstanceOf[js.Any])
     if (define != null) __obj.updateDynamic("define")(define.asInstanceOf[js.Any])
     if (dialect != null) __obj.updateDynamic("dialect")(dialect.asInstanceOf[js.Any])
     if (dialectModulePath != null) __obj.updateDynamic("dialectModulePath")(dialectModulePath.asInstanceOf[js.Any])
@@ -216,24 +216,24 @@ object Options {
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (isolationLevel != null) __obj.updateDynamic("isolationLevel")(isolationLevel.asInstanceOf[js.Any])
     if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (!js.isUndefined(native)) __obj.updateDynamic("native")(native.asInstanceOf[js.Any])
-    if (!js.isUndefined(omitNull)) __obj.updateDynamic("omitNull")(omitNull.asInstanceOf[js.Any])
+    if (!js.isUndefined(native)) __obj.updateDynamic("native")(native.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(omitNull)) __obj.updateDynamic("omitNull")(omitNull.get.asInstanceOf[js.Any])
     if (operatorsAliases != null) __obj.updateDynamic("operatorsAliases")(operatorsAliases.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (pool != null) __obj.updateDynamic("pool")(pool.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (!js.isUndefined(quoteIdentifiers)) __obj.updateDynamic("quoteIdentifiers")(quoteIdentifiers.asInstanceOf[js.Any])
+    if (!js.isUndefined(quoteIdentifiers)) __obj.updateDynamic("quoteIdentifiers")(quoteIdentifiers.get.asInstanceOf[js.Any])
     if (replication != null) __obj.updateDynamic("replication")(replication.asInstanceOf[js.Any])
     if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
     if (set != null) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
-    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.get.asInstanceOf[js.Any])
     if (storage != null) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
     if (sync != null) __obj.updateDynamic("sync")(sync.asInstanceOf[js.Any])
     if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
     if (transactionType != null) __obj.updateDynamic("transactionType")(transactionType.asInstanceOf[js.Any])
-    if (!js.isUndefined(typeValidation)) __obj.updateDynamic("typeValidation")(typeValidation.asInstanceOf[js.Any])
+    if (!js.isUndefined(typeValidation)) __obj.updateDynamic("typeValidation")(typeValidation.get.asInstanceOf[js.Any])
     if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

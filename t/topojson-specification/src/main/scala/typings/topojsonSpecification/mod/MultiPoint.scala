@@ -15,7 +15,7 @@ trait MultiPoint[P /* <: Properties */]
 
 object MultiPoint {
   @scala.inline
-  def apply[P /* <: Properties */](
+  def apply[P](
     coordinates: js.Array[Positions],
     `type`: typings.topojsonSpecification.topojsonSpecificationStrings.MultiPoint,
     bbox: BBox = null,

@@ -68,7 +68,7 @@ object ITarget {
     if (setNext != null) __obj.updateDynamic("setNext")(js.Any.fromFunction1(setNext))
     if (setPrevious != null) __obj.updateDynamic("setPrevious")(js.Any.fromFunction1(setPrevious))
     if (setSprite != null) __obj.updateDynamic("setSprite")(js.Any.fromFunction1(setSprite))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (sprite != null) __obj.updateDynamic("sprite")(sprite.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])

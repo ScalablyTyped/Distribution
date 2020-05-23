@@ -16,18 +16,16 @@ trait CultureInfoData extends js.Object {
   var datetimeFormat: js.UndefOr[DatetimeFormatInfoData] = js.undefined
   /**
     *
-    * Gets the culture name in the format languagecode2-country/regioncode2 (e.g. "zh-cn" or "en-us"). This is based on current system settings.
+    * Gets the culture name in the format languagecode2-country/regioncode2 (e.g., "zh-cn" or "en-us"). This is based on current system settings.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.11]
     */
   var name: js.UndefOr[String] = js.undefined
   /**
     *
     * Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.11]
     */
   var numberFormat: js.UndefOr[NumberFormatInfoData] = js.undefined
 }

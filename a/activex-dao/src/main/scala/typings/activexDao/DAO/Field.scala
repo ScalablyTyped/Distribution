@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DAO.Field")
 @js.native
-class Field protected () extends js.Object {
+trait Field extends js.Object {
   var AllowZeroLength: Boolean = js.native
   var AppendOnly: Boolean = js.native
   var Attributes: Double = js.native

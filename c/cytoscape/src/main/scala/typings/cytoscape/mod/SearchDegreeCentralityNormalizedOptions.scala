@@ -29,12 +29,12 @@ object SearchDegreeCentralityNormalizedOptions {
   @scala.inline
   def apply(
     weight: EdgeSingular => Double,
-    alpha: Int | Double = null,
+    alpha: js.UndefOr[Double] = js.undefined,
     directed: js.UndefOr[Boolean] = js.undefined
   ): SearchDegreeCentralityNormalizedOptions = {
     val __obj = js.Dynamic.literal(weight = js.Any.fromFunction1(weight))
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed.asInstanceOf[js.Any])
+    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchDegreeCentralityNormalizedOptions]
   }
 }

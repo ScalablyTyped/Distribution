@@ -6,14 +6,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.Input.HoldingEventArgs")
-@js.native
-class HoldingEventArgs () extends IHoldingEventArgs {
-  /* CompleteClass */
-  override var holdingState: HoldingState = js.native
-  /* CompleteClass */
-  override var pointerDeviceType: PointerDeviceType = js.native
-  /* CompleteClass */
-  override var position: Point = js.native
+trait HoldingEventArgs extends IHoldingEventArgs
+
+object HoldingEventArgs {
+  @scala.inline
+  def apply(holdingState: HoldingState, pointerDeviceType: PointerDeviceType, position: Point): HoldingEventArgs = {
+    val __obj = js.Dynamic.literal(holdingState = holdingState.asInstanceOf[js.Any], pointerDeviceType = pointerDeviceType.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HoldingEventArgs]
+  }
 }
 

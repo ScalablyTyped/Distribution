@@ -13,9 +13,9 @@ trait BitmapOptions extends js.Object {
 
 object BitmapOptions {
   @scala.inline
-  def apply(scaleFactor: Int | Double = null): BitmapOptions = {
+  def apply(scaleFactor: js.UndefOr[Double] = js.undefined): BitmapOptions = {
     val __obj = js.Dynamic.literal()
-    if (scaleFactor != null) __obj.updateDynamic("scaleFactor")(scaleFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleFactor)) __obj.updateDynamic("scaleFactor")(scaleFactor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BitmapOptions]
   }
 }

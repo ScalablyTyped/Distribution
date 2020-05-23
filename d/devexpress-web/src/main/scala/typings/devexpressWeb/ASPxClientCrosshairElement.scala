@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the client-side equivalent of the CrosshairElement class.
   */
-@JSGlobal("ASPxClientCrosshairElement")
-@js.native
-class ASPxClientCrosshairElement () extends js.Object {
+trait ASPxClientCrosshairElement extends js.Object {
   /**
     * Gets a series that a crosshair element hovers over when implementing a custom draw.
     */
-  var Series: ASPxClientSeries = js.native
+  var Series: ASPxClientSeries
+}
+
+object ASPxClientCrosshairElement {
+  @scala.inline
+  def apply(Series: ASPxClientSeries): ASPxClientCrosshairElement = {
+    val __obj = js.Dynamic.literal(Series = Series.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientCrosshairElement]
+  }
 }
 

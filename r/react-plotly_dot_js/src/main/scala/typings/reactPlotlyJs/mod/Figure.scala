@@ -2,7 +2,7 @@ package typings.reactPlotlyJs.mod
 
 import typings.plotlyJs.mod.Data
 import typings.plotlyJs.mod.Frame
-import typings.reactPlotlyJs.PartialLayout
+import typings.reactPlotlyJs.anon.PartialLayout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,8 +16,7 @@ trait Figure extends js.Object {
 object Figure {
   @scala.inline
   def apply(data: js.Array[Data], layout: PartialLayout, frames: js.Array[Frame] = null): Figure = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any])
-    if (frames != null) __obj.updateDynamic("frames")(frames.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], frames = frames.asInstanceOf[js.Any])
     __obj.asInstanceOf[Figure]
   }
 }

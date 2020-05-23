@@ -18,9 +18,9 @@ trait GetPullRequestOverrideStateOutput extends js.Object {
 
 object GetPullRequestOverrideStateOutput {
   @scala.inline
-  def apply(overridden: js.UndefOr[Boolean] = js.undefined, overrider: Arn = null): GetPullRequestOverrideStateOutput = {
+  def apply(overridden: js.UndefOr[Overridden] = js.undefined, overrider: Arn = null): GetPullRequestOverrideStateOutput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(overridden)) __obj.updateDynamic("overridden")(overridden.asInstanceOf[js.Any])
+    if (!js.isUndefined(overridden)) __obj.updateDynamic("overridden")(overridden.get.asInstanceOf[js.Any])
     if (overrider != null) __obj.updateDynamic("overrider")(overrider.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPullRequestOverrideStateOutput]
   }

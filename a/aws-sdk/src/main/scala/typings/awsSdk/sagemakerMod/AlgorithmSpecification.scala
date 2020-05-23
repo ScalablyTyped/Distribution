@@ -33,13 +33,13 @@ object AlgorithmSpecification {
   def apply(
     TrainingInputMode: TrainingInputMode,
     AlgorithmName: ArnOrName = null,
-    EnableSageMakerMetricsTimeSeries: js.UndefOr[scala.Boolean] = js.undefined,
+    EnableSageMakerMetricsTimeSeries: js.UndefOr[Boolean] = js.undefined,
     MetricDefinitions: MetricDefinitionList = null,
     TrainingImage: AlgorithmImage = null
   ): AlgorithmSpecification = {
     val __obj = js.Dynamic.literal(TrainingInputMode = TrainingInputMode.asInstanceOf[js.Any])
     if (AlgorithmName != null) __obj.updateDynamic("AlgorithmName")(AlgorithmName.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableSageMakerMetricsTimeSeries)) __obj.updateDynamic("EnableSageMakerMetricsTimeSeries")(EnableSageMakerMetricsTimeSeries.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableSageMakerMetricsTimeSeries)) __obj.updateDynamic("EnableSageMakerMetricsTimeSeries")(EnableSageMakerMetricsTimeSeries.get.asInstanceOf[js.Any])
     if (MetricDefinitions != null) __obj.updateDynamic("MetricDefinitions")(MetricDefinitions.asInstanceOf[js.Any])
     if (TrainingImage != null) __obj.updateDynamic("TrainingImage")(TrainingImage.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlgorithmSpecification]

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object version extends js.Object {
   /**
-  	*	VoxImplant Web SDK lib version
-  	*/
+    *    VoxImplant Web SDK lib version
+    */
   def apply(): String = js.native
 }
 

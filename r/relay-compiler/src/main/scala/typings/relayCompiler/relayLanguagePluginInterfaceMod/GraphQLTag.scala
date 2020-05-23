@@ -1,6 +1,6 @@
 package typings.relayCompiler.relayLanguagePluginInterfaceMod
 
-import typings.relayCompiler.AnonColumn
+import typings.relayCompiler.anon.Column
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ trait GraphQLTag extends js.Object {
   /**
     * The location in the source file that the tag is placed at.
     */
-  var sourceLocationOffset: AnonColumn
+  var sourceLocationOffset: Column
   /**
     * Should hold the string content of the `graphql` tagged template literal,
     * which is either an operation or fragment.
@@ -40,9 +40,8 @@ trait GraphQLTag extends js.Object {
 
 object GraphQLTag {
   @scala.inline
-  def apply(sourceLocationOffset: AnonColumn, template: String, keyName: String = null): GraphQLTag = {
-    val __obj = js.Dynamic.literal(sourceLocationOffset = sourceLocationOffset.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
-    if (keyName != null) __obj.updateDynamic("keyName")(keyName.asInstanceOf[js.Any])
+  def apply(sourceLocationOffset: Column, template: String, keyName: String = null): GraphQLTag = {
+    val __obj = js.Dynamic.literal(sourceLocationOffset = sourceLocationOffset.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], keyName = keyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLTag]
   }
 }

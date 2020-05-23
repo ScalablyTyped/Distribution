@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ADODB.Parameter")
 @js.native
-class Parameter protected () extends js.Object {
+trait Parameter extends js.Object {
   @JSName("ADODB.Parameter_typekey")
   var ADODBDotParameter_typekey: Parameter = js.native
   /** Sum of one or more of the values in the **ParameterAttributesEnum** enum */

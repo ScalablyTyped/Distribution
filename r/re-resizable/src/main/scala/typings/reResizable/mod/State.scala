@@ -1,6 +1,6 @@
 package typings.reResizable.mod
 
-import typings.reResizable.AnonY
+import typings.reResizable.anon.Y
 import typings.reResizable.resizerMod.Direction
 import typings.react.mod.CSSProperties
 import scala.scalajs.js
@@ -13,7 +13,7 @@ trait State extends js.Object {
   var flexBasis: js.UndefOr[String | Double] = js.undefined
   var height: Double | String
   var isResizing: Boolean
-  var original: AnonY
+  var original: Y
   var width: Double | String
 }
 
@@ -24,7 +24,7 @@ object State {
     direction: Direction,
     height: Double | String,
     isResizing: Boolean,
-    original: AnonY,
+    original: Y,
     width: Double | String,
     flexBasis: String | Double = null
   ): State = {

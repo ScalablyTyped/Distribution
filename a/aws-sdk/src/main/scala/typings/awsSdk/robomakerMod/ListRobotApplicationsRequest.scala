@@ -28,13 +28,13 @@ object ListRobotApplicationsRequest {
   @scala.inline
   def apply(
     filters: Filters = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[MaxResults] = js.undefined,
     nextToken: PaginationToken = null,
     versionQualifier: VersionQualifier = null
   ): ListRobotApplicationsRequest = {
     val __obj = js.Dynamic.literal()
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (versionQualifier != null) __obj.updateDynamic("versionQualifier")(versionQualifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRobotApplicationsRequest]

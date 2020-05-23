@@ -49,14 +49,14 @@ object TrainingSpecification {
     MetricDefinitions: MetricDefinitionList = null,
     SupportedHyperParameters: HyperParameterSpecifications = null,
     SupportedTuningJobObjectiveMetrics: HyperParameterTuningJobObjectives = null,
-    SupportsDistributedTraining: js.UndefOr[scala.Boolean] = js.undefined,
+    SupportsDistributedTraining: js.UndefOr[Boolean] = js.undefined,
     TrainingImageDigest: ImageDigest = null
   ): TrainingSpecification = {
     val __obj = js.Dynamic.literal(SupportedTrainingInstanceTypes = SupportedTrainingInstanceTypes.asInstanceOf[js.Any], TrainingChannels = TrainingChannels.asInstanceOf[js.Any], TrainingImage = TrainingImage.asInstanceOf[js.Any])
     if (MetricDefinitions != null) __obj.updateDynamic("MetricDefinitions")(MetricDefinitions.asInstanceOf[js.Any])
     if (SupportedHyperParameters != null) __obj.updateDynamic("SupportedHyperParameters")(SupportedHyperParameters.asInstanceOf[js.Any])
     if (SupportedTuningJobObjectiveMetrics != null) __obj.updateDynamic("SupportedTuningJobObjectiveMetrics")(SupportedTuningJobObjectiveMetrics.asInstanceOf[js.Any])
-    if (!js.isUndefined(SupportsDistributedTraining)) __obj.updateDynamic("SupportsDistributedTraining")(SupportsDistributedTraining.asInstanceOf[js.Any])
+    if (!js.isUndefined(SupportsDistributedTraining)) __obj.updateDynamic("SupportsDistributedTraining")(SupportsDistributedTraining.get.asInstanceOf[js.Any])
     if (TrainingImageDigest != null) __obj.updateDynamic("TrainingImageDigest")(TrainingImageDigest.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrainingSpecification]
   }

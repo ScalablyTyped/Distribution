@@ -29,26 +29,26 @@ trait IHttpRule extends js.Object {
 object IHttpRule {
   @scala.inline
   def apply(
-    additionalBindings: js.Array[IHttpRule] = null,
-    body: String = null,
-    custom: ICustomHttpPattern = null,
-    delete: String = null,
-    get: String = null,
-    patch: String = null,
-    post: String = null,
-    put: String = null,
-    selector: String = null
+    additionalBindings: js.UndefOr[Null | js.Array[IHttpRule]] = js.undefined,
+    body: js.UndefOr[Null | String] = js.undefined,
+    custom: js.UndefOr[Null | ICustomHttpPattern] = js.undefined,
+    delete: js.UndefOr[Null | String] = js.undefined,
+    get: js.UndefOr[Null | String] = js.undefined,
+    patch: js.UndefOr[Null | String] = js.undefined,
+    post: js.UndefOr[Null | String] = js.undefined,
+    put: js.UndefOr[Null | String] = js.undefined,
+    selector: js.UndefOr[Null | String] = js.undefined
   ): IHttpRule = {
     val __obj = js.Dynamic.literal()
-    if (additionalBindings != null) __obj.updateDynamic("additionalBindings")(additionalBindings.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
-    if (delete != null) __obj.updateDynamic("delete")(delete.asInstanceOf[js.Any])
-    if (get != null) __obj.updateDynamic("get")(get.asInstanceOf[js.Any])
-    if (patch != null) __obj.updateDynamic("patch")(patch.asInstanceOf[js.Any])
-    if (post != null) __obj.updateDynamic("post")(post.asInstanceOf[js.Any])
-    if (put != null) __obj.updateDynamic("put")(put.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
+    if (!js.isUndefined(additionalBindings)) __obj.updateDynamic("additionalBindings")(additionalBindings.asInstanceOf[js.Any])
+    if (!js.isUndefined(body)) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (!js.isUndefined(custom)) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (!js.isUndefined(delete)) __obj.updateDynamic("delete")(delete.asInstanceOf[js.Any])
+    if (!js.isUndefined(get)) __obj.updateDynamic("get")(get.asInstanceOf[js.Any])
+    if (!js.isUndefined(patch)) __obj.updateDynamic("patch")(patch.asInstanceOf[js.Any])
+    if (!js.isUndefined(post)) __obj.updateDynamic("post")(post.asInstanceOf[js.Any])
+    if (!js.isUndefined(put)) __obj.updateDynamic("put")(put.asInstanceOf[js.Any])
+    if (!js.isUndefined(selector)) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHttpRule]
   }
 }

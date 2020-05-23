@@ -4,27 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.model.analytics.odata4analytics.Dimension")
-@js.native
-class Dimension protected () extends js.Object {
-  /**
-    * Create a representation of a dimension provided by an analytic query. Do not create your own
-    * instances.
-    * @param oQueryResult The query result containing this dimension
-    * @param oProperty The DataJS object object representing the dimension
-    */
-  def this(oQueryResult: QueryResult, oProperty: js.Any) = this()
+trait Dimension extends js.Object {
   /**
     * Find attribute by name
     * @param sName Attribute name
     * @returns The dimension attribute         object with this name or null if it does not exist
     */
-  def findAttributeByName(sName: String): Dimension = js.native
+  def findAttributeByName(sName: String): Dimension
   /**
     * Get the names of all attributes included in this dimension
     * @returns List of all attribute names
     */
-  def getAllAttributeNames(): js.Array[String] = js.native
+  def getAllAttributeNames(): js.Array[String]
   /**
     * Get all attributes of this dimension
     * @returns An object with individual JS properties for each         attribute of this dimension. The
@@ -32,54 +23,75 @@ class Dimension protected () extends js.Object {
     * names of the JS object properties are given by the OData entity         type property names
     * representing the dimension attribute keys.
     */
-  def getAllAttributes(): js.Any = js.native
+  def getAllAttributes(): js.Any
   /**
     * Get query result containing this dimension
     * @returns The query result object
     */
-  def getContainingQueryResult(): QueryResult = js.native
+  def getContainingQueryResult(): QueryResult
   /**
     * Get associated hierarchy
     * @returns The hierarchy object or null if there is none. It can         be an instance of class      
     *   odata4analytics.RecursiveHierarchy (TODO later: or a         leveled hierarchy). Use methods
     * isLeveledHierarchy and         isRecursiveHierarchy to determine object type.
     */
-  def getHierarchy(): js.Any = js.native
+  def getHierarchy(): js.Any
   /**
     * Get the key property
     * @returns The DataJS object representing the property for the         dimension key
     */
-  def getKeyProperty(): js.Any = js.native
+  def getKeyProperty(): js.Any
   /**
     * Get label
     * @returns The (possibly language-dependent) label text for this         dimension
     */
-  def getLabelText(): String = js.native
+  def getLabelText(): String
   /**
     * Get master data entity set for this dimension
     * @returns The master data entity set        for this dimension, or null, if it does not exist
     */
-  def getMasterDataEntitySet(): EntitySet = js.native
+  def getMasterDataEntitySet(): EntitySet
   /**
     * Get the name of the dimension
     * @returns The name of this dimension, which is identical to the         name of the dimension key
     * property in the entity type
     */
-  def getName(): String = js.native
+  def getName(): String
   /**
     * Get super-ordinate dimension
     * @returns The super-ordinate dimension or null if there is none
     */
-  def getSuperOrdinateDimension(): js.Any = js.native
+  def getSuperOrdinateDimension(): js.Any
   /**
     * Get text property related to this dimension
     * @returns The DataJS object representing the text property or         null if it does not exist
     */
-  def getTextProperty(): js.Any = js.native
+  def getTextProperty(): js.Any
   /**
     * Get indicator whether or not master data is available for this dimension
     * @returns True iff master data is available
     */
-  def hasMasterData(): Boolean = js.native
+  def hasMasterData(): Boolean
+}
+
+object Dimension {
+  @scala.inline
+  def apply(
+    findAttributeByName: String => Dimension,
+    getAllAttributeNames: () => js.Array[String],
+    getAllAttributes: () => js.Any,
+    getContainingQueryResult: () => QueryResult,
+    getHierarchy: () => js.Any,
+    getKeyProperty: () => js.Any,
+    getLabelText: () => String,
+    getMasterDataEntitySet: () => EntitySet,
+    getName: () => String,
+    getSuperOrdinateDimension: () => js.Any,
+    getTextProperty: () => js.Any,
+    hasMasterData: () => Boolean
+  ): Dimension = {
+    val __obj = js.Dynamic.literal(findAttributeByName = js.Any.fromFunction1(findAttributeByName), getAllAttributeNames = js.Any.fromFunction0(getAllAttributeNames), getAllAttributes = js.Any.fromFunction0(getAllAttributes), getContainingQueryResult = js.Any.fromFunction0(getContainingQueryResult), getHierarchy = js.Any.fromFunction0(getHierarchy), getKeyProperty = js.Any.fromFunction0(getKeyProperty), getLabelText = js.Any.fromFunction0(getLabelText), getMasterDataEntitySet = js.Any.fromFunction0(getMasterDataEntitySet), getName = js.Any.fromFunction0(getName), getSuperOrdinateDimension = js.Any.fromFunction0(getSuperOrdinateDimension), getTextProperty = js.Any.fromFunction0(getTextProperty), hasMasterData = js.Any.fromFunction0(hasMasterData))
+    __obj.asInstanceOf[Dimension]
+  }
 }
 

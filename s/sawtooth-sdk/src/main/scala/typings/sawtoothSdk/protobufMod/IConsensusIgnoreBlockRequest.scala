@@ -12,9 +12,9 @@ trait IConsensusIgnoreBlockRequest extends js.Object {
 
 object IConsensusIgnoreBlockRequest {
   @scala.inline
-  def apply(blockId: Uint8Array = null): IConsensusIgnoreBlockRequest = {
+  def apply(blockId: js.UndefOr[Null | Uint8Array] = js.undefined): IConsensusIgnoreBlockRequest = {
     val __obj = js.Dynamic.literal()
-    if (blockId != null) __obj.updateDynamic("blockId")(blockId.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockId)) __obj.updateDynamic("blockId")(blockId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConsensusIgnoreBlockRequest]
   }
 }

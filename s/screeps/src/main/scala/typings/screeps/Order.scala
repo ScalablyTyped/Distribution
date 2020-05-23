@@ -29,13 +29,13 @@ object Order {
     `type`: String,
     active: js.UndefOr[Boolean] = js.undefined,
     roomName: String = null,
-    totalAmount: Int | Double = null
+    totalAmount: js.UndefOr[Double] = js.undefined
   ): Order = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], remainingAmount = remainingAmount.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (roomName != null) __obj.updateDynamic("roomName")(roomName.asInstanceOf[js.Any])
-    if (totalAmount != null) __obj.updateDynamic("totalAmount")(totalAmount.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalAmount)) __obj.updateDynamic("totalAmount")(totalAmount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Order]
   }
 }

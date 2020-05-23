@@ -18,11 +18,15 @@ trait AnnotationsInfinityLineTypePointsOptions extends js.Object {
 
 object AnnotationsInfinityLineTypePointsOptions {
   @scala.inline
-  def apply(controlPoint: Int | Double = null, x: Int | Double = null, y: Int | Double = null): AnnotationsInfinityLineTypePointsOptions = {
+  def apply(
+    controlPoint: js.UndefOr[Double] = js.undefined,
+    x: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined
+  ): AnnotationsInfinityLineTypePointsOptions = {
     val __obj = js.Dynamic.literal()
-    if (controlPoint != null) __obj.updateDynamic("controlPoint")(controlPoint.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(controlPoint)) __obj.updateDynamic("controlPoint")(controlPoint.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsInfinityLineTypePointsOptions]
   }
 }

@@ -26,10 +26,10 @@ object SceneOptions {
     viewport: Viewport = null
   ): SceneOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.get.asInstanceOf[js.Any])
     if (camera != null) __obj.updateDynamic("camera")(camera.asInstanceOf[js.Any])
-    if (!js.isUndefined(cullBackfaces)) __obj.updateDynamic("cullBackfaces")(cullBackfaces.asInstanceOf[js.Any])
-    if (!js.isUndefined(fractionalPoints)) __obj.updateDynamic("fractionalPoints")(fractionalPoints.asInstanceOf[js.Any])
+    if (!js.isUndefined(cullBackfaces)) __obj.updateDynamic("cullBackfaces")(cullBackfaces.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fractionalPoints)) __obj.updateDynamic("fractionalPoints")(fractionalPoints.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (shader != null) __obj.updateDynamic("shader")(shader.asInstanceOf[js.Any])
     if (viewport != null) __obj.updateDynamic("viewport")(viewport.asInstanceOf[js.Any])

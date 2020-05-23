@@ -25,14 +25,14 @@ trait GestureRecognizerConfig extends js.Object {
 object GestureRecognizerConfig {
   @scala.inline
   def apply(
-    directionalOffsetThreshold: Int | Double = null,
-    gestureIsClickThreshold: Int | Double = null,
-    velocityThreshold: Int | Double = null
+    directionalOffsetThreshold: js.UndefOr[Double] = js.undefined,
+    gestureIsClickThreshold: js.UndefOr[Double] = js.undefined,
+    velocityThreshold: js.UndefOr[Double] = js.undefined
   ): GestureRecognizerConfig = {
     val __obj = js.Dynamic.literal()
-    if (directionalOffsetThreshold != null) __obj.updateDynamic("directionalOffsetThreshold")(directionalOffsetThreshold.asInstanceOf[js.Any])
-    if (gestureIsClickThreshold != null) __obj.updateDynamic("gestureIsClickThreshold")(gestureIsClickThreshold.asInstanceOf[js.Any])
-    if (velocityThreshold != null) __obj.updateDynamic("velocityThreshold")(velocityThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(directionalOffsetThreshold)) __obj.updateDynamic("directionalOffsetThreshold")(directionalOffsetThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gestureIsClickThreshold)) __obj.updateDynamic("gestureIsClickThreshold")(gestureIsClickThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(velocityThreshold)) __obj.updateDynamic("velocityThreshold")(velocityThreshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GestureRecognizerConfig]
   }
 }

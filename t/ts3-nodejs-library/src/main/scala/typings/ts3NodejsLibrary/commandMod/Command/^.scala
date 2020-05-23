@@ -1,8 +1,8 @@
 package typings.ts3NodejsLibrary.commandMod.Command
 
-import typings.ts3NodejsLibrary.AnonKey
-import typings.ts3NodejsLibrary.PartialPartialQueryRespon
-import typings.ts3NodejsLibrary.PickParserArgumentraw
+import typings.ts3NodejsLibrary.anon.Key
+import typings.ts3NodejsLibrary.anon.PartialPartialQueryRespon
+import typings.ts3NodejsLibrary.anon.PickParserArgumentraw
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +35,7 @@ object ^ extends js.Object {
     * retrieves the key value pair from a string
     * @param str the key value pair to unescape eg foo=bar
     */
-  def getKeyValue(str: String): AnonKey = js.native
+  def getKeyValue(str: String): Key = js.native
   /**
     * retrieves the default parsers
     */
@@ -71,12 +71,12 @@ object ^ extends js.Object {
     * @param value string to parse
     */
   def parseStringArray(value: String): js.Array[String] = js.native
-  def parseValue(k: String): js.Any = js.native
   /**
     * Parses a value to the type which the key represents
     * @param k the key which should get looked up
     * @param v the value which should get parsed
     */
+  def parseValue(k: String): js.Any = js.native
   def parseValue(k: String, v: String): js.Any = js.native
   /** unescapes a string */
   def unescape(str: String): String = js.native

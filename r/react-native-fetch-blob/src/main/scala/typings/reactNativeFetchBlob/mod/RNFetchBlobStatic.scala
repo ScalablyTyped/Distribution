@@ -1,7 +1,7 @@
 package typings.reactNativeFetchBlob.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.reactNativeFetchBlob.AnonDecode
+import typings.reactNativeFetchBlob.anon.Decode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait RNFetchBlobStatic extends js.Object {
   // this require external module https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/oboe
   var JSONStream: js.Any = js.native
   var android: AndroidApi = js.native
-  var base64: AnonDecode = js.native
+  var base64: Decode = js.native
   var fs: FS = js.native
   var ios: IOSApi = js.native
   var net: Net = js.native

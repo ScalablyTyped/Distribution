@@ -1,7 +1,7 @@
 package typings.strongLogTransformer.mod
 
 import typings.node.NodeJS.ReadWriteStream
-import typings.strongLogTransformer.PartialOptions
+import typings.strongLogTransformer.anon.PartialOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

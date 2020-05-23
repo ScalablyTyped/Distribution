@@ -1,7 +1,7 @@
 package typings.preact.mod
 
+import typings.std.Document
 import typings.std.DocumentFragment
-import typings.std.Document_
 import typings.std.Element
 import typings.std.ShadowRoot
 import typings.std.Text
@@ -12,12 +12,12 @@ import scala.scalajs.js.annotation._
 @JSImport("preact", "render")
 @js.native
 object render extends js.Object {
+  def apply(vnode: ComponentChild, parent: Document): Unit = js.native
   def apply(vnode: ComponentChild, parent: DocumentFragment): Unit = js.native
   def apply(vnode: ComponentChild, parent: DocumentFragment, replaceNode: Element): Unit = js.native
   def apply(vnode: ComponentChild, parent: DocumentFragment, replaceNode: Text): Unit = js.native
-  def apply(vnode: ComponentChild, parent: Document_): Unit = js.native
-  def apply(vnode: ComponentChild, parent: Document_, replaceNode: Element): Unit = js.native
-  def apply(vnode: ComponentChild, parent: Document_, replaceNode: Text): Unit = js.native
+  def apply(vnode: ComponentChild, parent: Document, replaceNode: Element): Unit = js.native
+  def apply(vnode: ComponentChild, parent: Document, replaceNode: Text): Unit = js.native
   //
   // Preact render
   // -----------------------------------

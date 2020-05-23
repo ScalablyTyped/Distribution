@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.data.Query")
 @js.native
-class Query protected () extends js.Object {
-  def this(data: js.Array[_]) = this()
+trait Query extends js.Object {
   var data: js.Array[_] = js.native
   def filter(filters: js.Array[DataSourceFilterItem]): Query = js.native
   def filter(filters: DataSourceFilterItem): Query = js.native
@@ -23,12 +21,5 @@ class Query protected () extends js.Object {
   def skip(count: Double): Query = js.native
   def take(count: Double): Query = js.native
   def toArray(): js.Array[_] = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.data.Query")
-@js.native
-object Query extends js.Object {
-  def process(data: js.Array[_], options: DataSourceTransportReadOptionsData): QueryResult = js.native
 }
 

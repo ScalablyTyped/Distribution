@@ -36,11 +36,11 @@ object UploadFile {
     uid: String,
     error: js.Any = null,
     fileName: String = null,
-    lastModified: Int | Double = null,
+    lastModified: js.UndefOr[Double] = js.undefined,
     lastModifiedDate: Date = null,
     linkProps: js.Any = null,
     originFileObj: File | Blob = null,
-    percent: Int | Double = null,
+    percent: js.UndefOr[Double] = js.undefined,
     preview: String = null,
     response: T = null,
     status: UploadFileStatus = null,
@@ -52,11 +52,11 @@ object UploadFile {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
-    if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastModified)) __obj.updateDynamic("lastModified")(lastModified.get.asInstanceOf[js.Any])
     if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate.asInstanceOf[js.Any])
     if (linkProps != null) __obj.updateDynamic("linkProps")(linkProps.asInstanceOf[js.Any])
     if (originFileObj != null) __obj.updateDynamic("originFileObj")(originFileObj.asInstanceOf[js.Any])
-    if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
+    if (!js.isUndefined(percent)) __obj.updateDynamic("percent")(percent.get.asInstanceOf[js.Any])
     if (preview != null) __obj.updateDynamic("preview")(preview.asInstanceOf[js.Any])
     if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])

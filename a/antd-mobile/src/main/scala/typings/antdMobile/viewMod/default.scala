@@ -1,6 +1,6 @@
 package typings.antdMobile.viewMod
 
-import typings.antdMobile.AnonComponent
+import typings.antdMobile.anon.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends View
 @JSImport("antd-mobile/lib/view", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonComponent = js.native
+  var defaultProps: Component = js.native
 }
 

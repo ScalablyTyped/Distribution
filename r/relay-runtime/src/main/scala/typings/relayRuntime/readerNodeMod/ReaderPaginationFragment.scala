@@ -1,13 +1,13 @@
 package typings.relayRuntime.readerNodeMod
 
-import typings.relayRuntime.AnonConnectionRefetch
+import typings.relayRuntime.anon.ConnectionRefetch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ReaderPaginationFragment extends ReaderFragment {
   @JSName("metadata")
-  val metadata_ReaderPaginationFragment: AnonConnectionRefetch
+  val metadata_ReaderPaginationFragment: ConnectionRefetch
 }
 
 object ReaderPaginationFragment {
@@ -15,7 +15,7 @@ object ReaderPaginationFragment {
   def apply(
     argumentDefinitions: js.Array[ReaderArgumentDefinition],
     kind: String,
-    metadata: AnonConnectionRefetch,
+    metadata: ConnectionRefetch,
     name: String,
     selections: js.Array[ReaderSelection],
     `type`: String

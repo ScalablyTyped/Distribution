@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait IUtilDomStyle extends js.Object {
   /**
-  	 * Cross-browser wrapper for setting element's style
-  	 */
+    * Cross-browser wrapper for setting element's style
+    */
   def setStyle(element: HTMLElement, styles: js.Any): HTMLElement
 }
 

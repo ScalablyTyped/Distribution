@@ -27,7 +27,7 @@ object CreateOptions {
     unpackDir: String = null
   ): CreateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dot)) __obj.updateDynamic("dot")(dot.asInstanceOf[js.Any])
+    if (!js.isUndefined(dot)) __obj.updateDynamic("dot")(dot.get.asInstanceOf[js.Any])
     if (globOptions != null) __obj.updateDynamic("globOptions")(globOptions.asInstanceOf[js.Any])
     if (ordering != null) __obj.updateDynamic("ordering")(ordering.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])

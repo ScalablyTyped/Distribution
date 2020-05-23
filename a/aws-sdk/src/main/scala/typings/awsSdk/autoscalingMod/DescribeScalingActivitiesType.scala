@@ -29,13 +29,13 @@ object DescribeScalingActivitiesType {
   def apply(
     ActivityIds: ActivityIds = null,
     AutoScalingGroupName: ResourceName = null,
-    MaxRecords: Int | Double = null,
+    MaxRecords: js.UndefOr[MaxRecords] = js.undefined,
     NextToken: XmlString = null
   ): DescribeScalingActivitiesType = {
     val __obj = js.Dynamic.literal()
     if (ActivityIds != null) __obj.updateDynamic("ActivityIds")(ActivityIds.asInstanceOf[js.Any])
     if (AutoScalingGroupName != null) __obj.updateDynamic("AutoScalingGroupName")(AutoScalingGroupName.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeScalingActivitiesType]
   }

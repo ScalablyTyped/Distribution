@@ -39,9 +39,7 @@ object InstanceDataStorage {
     instancesBuffer: Nullable[Buffer] = null,
     previousBatch: Nullable[InstancesBatch] = null
   ): InstanceDataStorage = {
-    val __obj = js.Dynamic.literal(batchCache = batchCache.asInstanceOf[js.Any], hardwareInstancedRendering = hardwareInstancedRendering.asInstanceOf[js.Any], instancesBufferSize = instancesBufferSize.asInstanceOf[js.Any], instancesData = instancesData.asInstanceOf[js.Any], isFrozen = isFrozen.asInstanceOf[js.Any], manualUpdate = manualUpdate.asInstanceOf[js.Any], overridenInstanceCount = overridenInstanceCount.asInstanceOf[js.Any], sideOrientation = sideOrientation.asInstanceOf[js.Any], visibleInstances = visibleInstances.asInstanceOf[js.Any])
-    if (instancesBuffer != null) __obj.updateDynamic("instancesBuffer")(instancesBuffer.asInstanceOf[js.Any])
-    if (previousBatch != null) __obj.updateDynamic("previousBatch")(previousBatch.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(batchCache = batchCache.asInstanceOf[js.Any], hardwareInstancedRendering = hardwareInstancedRendering.asInstanceOf[js.Any], instancesBufferSize = instancesBufferSize.asInstanceOf[js.Any], instancesData = instancesData.asInstanceOf[js.Any], isFrozen = isFrozen.asInstanceOf[js.Any], manualUpdate = manualUpdate.asInstanceOf[js.Any], overridenInstanceCount = overridenInstanceCount.asInstanceOf[js.Any], sideOrientation = sideOrientation.asInstanceOf[js.Any], visibleInstances = visibleInstances.asInstanceOf[js.Any], instancesBuffer = instancesBuffer.asInstanceOf[js.Any], previousBatch = previousBatch.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceDataStorage]
   }
 }

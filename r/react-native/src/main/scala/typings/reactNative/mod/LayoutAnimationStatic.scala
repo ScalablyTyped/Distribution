@@ -1,14 +1,14 @@
 package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.reactNative.AnonEaseInEaseOut
+import typings.reactNative.anon.EaseInEaseOut
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait LayoutAnimationStatic extends js.Object {
-  var Presets: AnonEaseInEaseOut = js.native
+  var Presets: EaseInEaseOut = js.native
   var Properties: LayoutAnimationProperties = js.native
   var Types: LayoutAnimationTypes = js.native
   def configChecker(shapeTypes: StringDictionary[js.Any]): js.Any = js.native

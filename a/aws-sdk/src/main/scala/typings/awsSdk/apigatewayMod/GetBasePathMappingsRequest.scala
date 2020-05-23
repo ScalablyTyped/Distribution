@@ -22,9 +22,9 @@ trait GetBasePathMappingsRequest extends js.Object {
 
 object GetBasePathMappingsRequest {
   @scala.inline
-  def apply(domainName: String, limit: Int | scala.Double = null, position: String = null): GetBasePathMappingsRequest = {
+  def apply(domainName: String, limit: js.UndefOr[NullableInteger] = js.undefined, position: String = null): GetBasePathMappingsRequest = {
     val __obj = js.Dynamic.literal(domainName = domainName.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBasePathMappingsRequest]
   }

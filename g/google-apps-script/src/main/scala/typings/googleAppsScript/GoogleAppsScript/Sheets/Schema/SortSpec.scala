@@ -11,9 +11,9 @@ trait SortSpec extends js.Object {
 
 object SortSpec {
   @scala.inline
-  def apply(dimensionIndex: Int | Double = null, sortOrder: String = null): SortSpec = {
+  def apply(dimensionIndex: js.UndefOr[Double] = js.undefined, sortOrder: String = null): SortSpec = {
     val __obj = js.Dynamic.literal()
-    if (dimensionIndex != null) __obj.updateDynamic("dimensionIndex")(dimensionIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(dimensionIndex)) __obj.updateDynamic("dimensionIndex")(dimensionIndex.get.asInstanceOf[js.Any])
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortSpec]
   }

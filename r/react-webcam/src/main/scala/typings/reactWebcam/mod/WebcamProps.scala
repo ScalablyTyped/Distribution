@@ -42,16 +42,16 @@ object WebcamProps {
     AllHTMLAttributes: AllHTMLAttributes[HTMLVideoElement] = null,
     ClassAttributes: ClassAttributes[HTMLVideoElement] = null,
     audioConstraints: Boolean | MediaTrackConstraints = null,
-    minScreenshotHeight: Int | Double = null,
-    minScreenshotWidth: Int | Double = null,
+    minScreenshotHeight: js.UndefOr[Double] = js.undefined,
+    minScreenshotWidth: js.UndefOr[Double] = js.undefined,
     videoConstraints: Boolean | MediaTrackConstraints = null
   ): WebcamProps = {
     val __obj = js.Dynamic.literal(audio = audio.asInstanceOf[js.Any], forceScreenshotSourceSize = forceScreenshotSourceSize.asInstanceOf[js.Any], imageSmoothing = imageSmoothing.asInstanceOf[js.Any], mirrored = mirrored.asInstanceOf[js.Any], onUserMedia = js.Any.fromFunction0(onUserMedia), onUserMediaError = js.Any.fromFunction1(onUserMediaError), screenshotFormat = screenshotFormat.asInstanceOf[js.Any], screenshotQuality = screenshotQuality.asInstanceOf[js.Any])
     if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
     if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (audioConstraints != null) __obj.updateDynamic("audioConstraints")(audioConstraints.asInstanceOf[js.Any])
-    if (minScreenshotHeight != null) __obj.updateDynamic("minScreenshotHeight")(minScreenshotHeight.asInstanceOf[js.Any])
-    if (minScreenshotWidth != null) __obj.updateDynamic("minScreenshotWidth")(minScreenshotWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(minScreenshotHeight)) __obj.updateDynamic("minScreenshotHeight")(minScreenshotHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minScreenshotWidth)) __obj.updateDynamic("minScreenshotWidth")(minScreenshotWidth.get.asInstanceOf[js.Any])
     if (videoConstraints != null) __obj.updateDynamic("videoConstraints")(videoConstraints.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebcamProps]
   }

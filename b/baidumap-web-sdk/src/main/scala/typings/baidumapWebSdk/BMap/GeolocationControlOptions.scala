@@ -15,18 +15,18 @@ trait GeolocationControlOptions extends js.Object {
 object GeolocationControlOptions {
   @scala.inline
   def apply(
-    anchor: Int | Double = null,
+    anchor: js.UndefOr[ControlAnchor] = js.undefined,
     enableAutoLocation: js.UndefOr[Boolean] = js.undefined,
     locationIcon: Icon = null,
     offset: Size = null,
     showAddressBar: js.UndefOr[Boolean] = js.undefined
   ): GeolocationControlOptions = {
     val __obj = js.Dynamic.literal()
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAutoLocation)) __obj.updateDynamic("enableAutoLocation")(enableAutoLocation.asInstanceOf[js.Any])
+    if (!js.isUndefined(anchor)) __obj.updateDynamic("anchor")(anchor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAutoLocation)) __obj.updateDynamic("enableAutoLocation")(enableAutoLocation.get.asInstanceOf[js.Any])
     if (locationIcon != null) __obj.updateDynamic("locationIcon")(locationIcon.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAddressBar)) __obj.updateDynamic("showAddressBar")(showAddressBar.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAddressBar)) __obj.updateDynamic("showAddressBar")(showAddressBar.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeolocationControlOptions]
   }
 }

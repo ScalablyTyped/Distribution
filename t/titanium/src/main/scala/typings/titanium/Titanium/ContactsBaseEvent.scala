@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * Base event for class Titanium.Contacts
-	 */
+  * Base event for class Titanium.Contacts
+  */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Ti.Event * / any */ trait ContactsBaseEvent extends js.Object {
   /**
-  		 * Source object that fired the event.
-  		 */
+    * Source object that fired the event.
+    */
   var source: Contacts
 }
 

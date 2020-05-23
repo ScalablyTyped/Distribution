@@ -25,15 +25,15 @@ trait ChartCollectionLoadOptions extends js.Object {
   var axes: js.UndefOr[ChartAxesLoadOptions] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Returns or sets a ChartCategoryLabelLevel enumeration constant referring to
-    the level of where the category labels are being sourced from. Read/Write.
+    * For EACH ITEM in the collection: Specifies a ChartCategoryLabelLevel enumeration constant referring to
+    the level of where the category labels are being sourced from. 
     *
     * [Api set: ExcelApi 1.8]
     */
   var categoryLabelLevel: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Represents the type of the chart. See Excel.ChartType for details.
+    * For EACH ITEM in the collection: Specifies the type of the chart. See Excel.ChartType for details.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -47,7 +47,7 @@ trait ChartCollectionLoadOptions extends js.Object {
   var dataLabels: js.UndefOr[ChartDataLabelsLoadOptions] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Returns or sets the way that blank cells are plotted on a chart. Read/Write.
+    * For EACH ITEM in the collection: Specifies the way that blank cells are plotted on a chart.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -61,14 +61,14 @@ trait ChartCollectionLoadOptions extends js.Object {
   var format: js.UndefOr[ChartAreaFormatLoadOptions] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Represents the height, in points, of the chart object.
+    * For EACH ITEM in the collection: Specifies the height, in points, of the chart object.
     *
     * [Api set: ExcelApi 1.1]
     */
   var height: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: The unique id of chart. Read-only.
+    * For EACH ITEM in the collection: The unique id of chart.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -89,7 +89,7 @@ trait ChartCollectionLoadOptions extends js.Object {
   var legend: js.UndefOr[ChartLegendLoadOptions] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Represents the name of a chart object.
+    * For EACH ITEM in the collection: Specifies the name of a chart object.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -110,14 +110,14 @@ trait ChartCollectionLoadOptions extends js.Object {
   var plotArea: js.UndefOr[ChartPlotAreaLoadOptions] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Returns or sets the way columns or rows are used as data series on the chart. Read/Write.
+    * For EACH ITEM in the collection: Specifies the way columns or rows are used as data series on the chart.
     *
     * [Api set: ExcelApi 1.8]
     */
   var plotBy: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: True if only visible cells are plotted. False if both visible and hidden cells are plotted. Read/Write.
+    * For EACH ITEM in the collection: True if only visible cells are plotted. False if both visible and hidden cells are plotted.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -131,22 +131,22 @@ trait ChartCollectionLoadOptions extends js.Object {
   var series: js.UndefOr[ChartSeriesCollectionLoadOptions] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Returns or sets a ChartSeriesNameLevel enumeration constant referring to
-    the level of where the series names are being sourced from. Read/Write.
+    * For EACH ITEM in the collection: Specifies a ChartSeriesNameLevel enumeration constant referring to
+    the level of where the series names are being sourced from.
     *
     * [Api set: ExcelApi 1.8]
     */
   var seriesNameLevel: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Represents whether to display all field buttons on a PivotChart.
+    * For EACH ITEM in the collection: Specifies whether to display all field buttons on a PivotChart.
     *
     * [Api set: ExcelApi 1.7]
     */
   var showAllFieldButtons: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Represents whether to show the data labels when the value is greater than the maximum value on the value axis.
+    * For EACH ITEM in the collection: Specifies whether to show the data labels when the value is greater than the maximum value on the value axis.
     If value axis became smaller than the size of data points, you can use this property to set whether to show the data labels.
     This property applies to 2-D charts only.
     *
@@ -155,28 +155,28 @@ trait ChartCollectionLoadOptions extends js.Object {
   var showDataLabelsOverMaximum: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Returns or sets the chart style for the chart. Read/Write.
+    * For EACH ITEM in the collection: Specifies the chart style for the chart.
     *
     * [Api set: ExcelApi 1.8]
     */
   var style: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.
+    * For EACH ITEM in the collection: Specifies the title of the specified chart, including the text, visibility, position, and formatting of the title.
     *
     * [Api set: ExcelApi 1.1]
     */
   var title: js.UndefOr[ChartTitleLoadOptions] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
+    * For EACH ITEM in the collection: Specifies the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
     *
     * [Api set: ExcelApi 1.1]
     */
   var top: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Represents the width, in points, of the chart object.
+    * For EACH ITEM in the collection: Specifies the width, in points, of the chart object.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -220,30 +220,30 @@ object ChartCollectionLoadOptions {
     worksheet: WorksheetLoadOptions = null
   ): ChartCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
     if (axes != null) __obj.updateDynamic("axes")(axes.asInstanceOf[js.Any])
-    if (!js.isUndefined(categoryLabelLevel)) __obj.updateDynamic("categoryLabelLevel")(categoryLabelLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(chartType)) __obj.updateDynamic("chartType")(chartType.asInstanceOf[js.Any])
+    if (!js.isUndefined(categoryLabelLevel)) __obj.updateDynamic("categoryLabelLevel")(categoryLabelLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(chartType)) __obj.updateDynamic("chartType")(chartType.get.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayBlanksAs)) __obj.updateDynamic("displayBlanksAs")(displayBlanksAs.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayBlanksAs)) __obj.updateDynamic("displayBlanksAs")(displayBlanksAs.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.get.asInstanceOf[js.Any])
     if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.get.asInstanceOf[js.Any])
     if (pivotOptions != null) __obj.updateDynamic("pivotOptions")(pivotOptions.asInstanceOf[js.Any])
     if (plotArea != null) __obj.updateDynamic("plotArea")(plotArea.asInstanceOf[js.Any])
-    if (!js.isUndefined(plotBy)) __obj.updateDynamic("plotBy")(plotBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(plotVisibleOnly)) __obj.updateDynamic("plotVisibleOnly")(plotVisibleOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(plotBy)) __obj.updateDynamic("plotBy")(plotBy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(plotVisibleOnly)) __obj.updateDynamic("plotVisibleOnly")(plotVisibleOnly.get.asInstanceOf[js.Any])
     if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
-    if (!js.isUndefined(seriesNameLevel)) __obj.updateDynamic("seriesNameLevel")(seriesNameLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAllFieldButtons)) __obj.updateDynamic("showAllFieldButtons")(showAllFieldButtons.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDataLabelsOverMaximum)) __obj.updateDynamic("showDataLabelsOverMaximum")(showDataLabelsOverMaximum.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(seriesNameLevel)) __obj.updateDynamic("seriesNameLevel")(seriesNameLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAllFieldButtons)) __obj.updateDynamic("showAllFieldButtons")(showAllFieldButtons.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDataLabelsOverMaximum)) __obj.updateDynamic("showDataLabelsOverMaximum")(showDataLabelsOverMaximum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     if (worksheet != null) __obj.updateDynamic("worksheet")(worksheet.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartCollectionLoadOptions]
   }

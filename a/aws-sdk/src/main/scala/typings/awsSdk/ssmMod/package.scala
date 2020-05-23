@@ -57,6 +57,7 @@ package object ssmMod {
     - typings.awsSdk.awsSdkStrings.LastExecutedBefore
     - typings.awsSdk.awsSdkStrings.LastExecutedAfter
     - typings.awsSdk.awsSdkStrings.AssociationName
+    - typings.awsSdk.awsSdkStrings.ResourceGroupName
     - java.lang.String
   */
   type AssociationFilterKey = typings.awsSdk.ssmMod._AssociationFilterKey | java.lang.String
@@ -83,6 +84,12 @@ package object ssmMod {
     - java.lang.String
   */
   type AssociationStatusName = typings.awsSdk.ssmMod._AssociationStatusName | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.AUTO
+    - typings.awsSdk.awsSdkStrings.MANUAL
+    - java.lang.String
+  */
+  type AssociationSyncCompliance = typings.awsSdk.ssmMod._AssociationSyncCompliance | java.lang.String
   type AssociationVersion = java.lang.String
   type AssociationVersionList = js.Array[typings.awsSdk.ssmMod.AssociationVersionInfo]
   type AttachmentContentList = js.Array[typings.awsSdk.ssmMod.AttachmentContent]
@@ -260,6 +267,12 @@ package object ssmMod {
   type ComplianceSummaryCount = scala.Double
   type ComplianceSummaryItemList = js.Array[typings.awsSdk.ssmMod.ComplianceSummaryItem]
   type ComplianceTypeName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.COMPLETE
+    - typings.awsSdk.awsSdkStrings.PARTIAL
+    - java.lang.String
+  */
+  type ComplianceUploadType = typings.awsSdk.ssmMod._ComplianceUploadType | java.lang.String
   type ComputerName = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.Connected_
@@ -603,6 +616,8 @@ package object ssmMod {
     - typings.awsSdk.awsSdkStrings.REDHAT_ENTERPRISE_LINUX
     - typings.awsSdk.awsSdkStrings.SUSE
     - typings.awsSdk.awsSdkStrings.CENTOS
+    - typings.awsSdk.awsSdkStrings.ORACLE_LINUX
+    - typings.awsSdk.awsSdkStrings.DEBIAN
     - java.lang.String
   */
   type OperatingSystem = typings.awsSdk.ssmMod._OperatingSystem | java.lang.String
@@ -699,6 +714,7 @@ package object ssmMod {
   type PSParameterSelector = java.lang.String
   type PSParameterValue = java.lang.String
   type PSParameterVersion = scala.Double
+  type ParameterDataType = java.lang.String
   type ParameterDescription = java.lang.String
   type ParameterHistoryList = js.Array[typings.awsSdk.ssmMod.ParameterHistory]
   type ParameterKeyId = java.lang.String

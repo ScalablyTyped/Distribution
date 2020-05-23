@@ -1,6 +1,6 @@
 package typings.cathoQuantum.modalMod
 
-import typings.cathoQuantum.AnonBreakpointsColors
+import typings.cathoQuantum.anon.BreakpointsColors
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
@@ -14,7 +14,7 @@ trait ModalProps extends js.Object {
   var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
   var closeButtonAriaLabel: js.UndefOr[String] = js.undefined
   var onClose: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
-  var theme: js.UndefOr[AnonBreakpointsColors] = js.undefined
+  var theme: js.UndefOr[BreakpointsColors] = js.undefined
 }
 
 object ModalProps {
@@ -23,7 +23,7 @@ object ModalProps {
     children: js.Array[ReactNode] | ReactNode = null,
     closeButtonAriaLabel: String = null,
     onClose: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit = null,
-    theme: AnonBreakpointsColors = null
+    theme: BreakpointsColors = null
   ): ModalProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

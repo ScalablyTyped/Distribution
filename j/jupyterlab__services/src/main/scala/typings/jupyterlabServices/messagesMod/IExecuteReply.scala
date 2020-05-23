@@ -1,5 +1,6 @@
 package typings.jupyterlabServices.messagesMod
 
+import typings.jupyterlabNbformat.mod.ExecutionCount
 import typings.jupyterlabServices.jupyterlabServicesStrings.ok
 import typings.luminoCoreutils.jsonMod.JSONObject
 import scala.scalajs.js
@@ -27,11 +28,10 @@ object IExecuteReply {
   def apply(
     status: ok,
     user_expressions: JSONObject,
-    execution_count: Int | Double = null,
+    execution_count: ExecutionCount = null.asInstanceOf[ExecutionCount],
     payload: js.Array[JSONObject] = null
   ): IExecuteReply = {
-    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], user_expressions = user_expressions.asInstanceOf[js.Any])
-    if (execution_count != null) __obj.updateDynamic("execution_count")(execution_count.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], user_expressions = user_expressions.asInstanceOf[js.Any], execution_count = execution_count.asInstanceOf[js.Any])
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExecuteReply]
   }

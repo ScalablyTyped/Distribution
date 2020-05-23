@@ -1,10 +1,10 @@
 package typings.pacote.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pacote.AnonCreated
-import typings.pacote.AnonDirectory
-import typings.pacote.AnonEmail
-import typings.pacote.AnonLatest
+import typings.pacote.anon.Created
+import typings.pacote.anon.Directory
+import typings.pacote.anon.Email
+import typings.pacote.anon.Latest
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,13 +18,13 @@ trait Packument_
     * An object mapping dist-tags to version numbers. This is how `foo@latest`
     * gets turned into `foo@1.2.3`.
     */
-  var `dist-tags`: AnonLatest with (Record[String, String])
+  var `dist-tags`: Latest with (Record[String, String])
   var name: String
   /**
     * In the full packument, an object mapping version numbers to publication
     * times, for the `opts.before` functionality.
     */
-  var time: js.UndefOr[(Record[String, String]) with AnonCreated] = js.undefined
+  var time: js.UndefOr[(Record[String, String]) with Created] = js.undefined
   /**
     * An object where each key is a version, and each value is the manifest for
     * that version.
@@ -35,13 +35,13 @@ trait Packument_
 object Packument_ {
   @scala.inline
   def apply(
-    `dist-tags`: AnonLatest with (Record[String, String]),
+    `dist-tags`: Latest with (Record[String, String]),
     name: String,
     versions: Record[String, Manifest_],
     StringDictionary: // Non-standard properties may also appear when fullMetadata = true.
   /* key */ StringDictionary[js.Any] = null,
     author: Person = null,
-    bugs: AnonEmail = null,
+    bugs: Email = null,
     contributors: js.Array[Person] = null,
     homepage: String = null,
     keywords: js.Array[String] = null,
@@ -49,8 +49,8 @@ object Packument_ {
     maintainers: js.Array[Person] = null,
     readme: String = null,
     readmeFilename: String = null,
-    repository: AnonDirectory = null,
-    time: (Record[String, String]) with AnonCreated = null,
+    repository: Directory = null,
+    time: (Record[String, String]) with Created = null,
     users: Record[String, Boolean] = null
   ): Packument_ = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])

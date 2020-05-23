@@ -23,15 +23,14 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
-@JSGlobal("Excel.RangeBorderCollection")
 @js.native
-class RangeBorderCollection () extends ClientObject {
+trait RangeBorderCollection extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_RangeBorderCollection: RequestContext = js.native
   /**
     *
-    * Number of border objects in the collection. Read-only.
+    * Number of border objects in the collection.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -40,7 +39,7 @@ class RangeBorderCollection () extends ClientObject {
   val items: js.Array[RangeBorder] = js.native
   /**
     *
-    * Returns or sets a double that lightens or darkens a color for Range Borders, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+    * Specifies a double that lightens or darkens a color for Range Borders, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
     A null value indicates that the entire border collections don't have uniform tintAndShade setting.
     *
     * [Api set: ExcelApi 1.9]

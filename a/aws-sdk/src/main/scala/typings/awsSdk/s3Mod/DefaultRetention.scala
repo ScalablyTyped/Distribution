@@ -22,11 +22,15 @@ trait DefaultRetention extends js.Object {
 
 object DefaultRetention {
   @scala.inline
-  def apply(Days: Int | Double = null, Mode: ObjectLockRetentionMode = null, Years: Int | Double = null): DefaultRetention = {
+  def apply(
+    Days: js.UndefOr[Days] = js.undefined,
+    Mode: ObjectLockRetentionMode = null,
+    Years: js.UndefOr[Years] = js.undefined
+  ): DefaultRetention = {
     val __obj = js.Dynamic.literal()
-    if (Days != null) __obj.updateDynamic("Days")(Days.asInstanceOf[js.Any])
+    if (!js.isUndefined(Days)) __obj.updateDynamic("Days")(Days.get.asInstanceOf[js.Any])
     if (Mode != null) __obj.updateDynamic("Mode")(Mode.asInstanceOf[js.Any])
-    if (Years != null) __obj.updateDynamic("Years")(Years.asInstanceOf[js.Any])
+    if (!js.isUndefined(Years)) __obj.updateDynamic("Years")(Years.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultRetention]
   }
 }

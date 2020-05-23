@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 
 trait IPositionMap extends IBase {
   /** [Method] Returns the value of minimumHeight
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMinimumHeight: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Sets the value of minimumHeight
-  		* @param minimumHeight Number The new value.
-  		*/
+    * @param minimumHeight Number The new value.
+    */
   var setMinimumHeight: js.UndefOr[js.Function1[/* minimumHeight */ js.UndefOr[Double], Unit]] = js.undefined
 }
 
@@ -58,7 +58,7 @@ object IPositionMap {
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setMinimumHeight != null) __obj.updateDynamic("setMinimumHeight")(js.Any.fromFunction1(setMinimumHeight))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPositionMap]

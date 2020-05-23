@@ -1,9 +1,9 @@
 package typings.textract.mod
 
 import typings.node.childProcessMod.ExecException
-import typings.textract.AnonCmd
-import typings.textract.AnonCrop
-import typings.textract.AnonLang
+import typings.textract.anon.Cmd
+import typings.textract.anon.Crop
+import typings.textract.anon.Lang
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,11 +23,11 @@ object URLConfig {
     exec: ExecException = null,
     images: extractorExecOpts = null,
     includeAltText: js.UndefOr[Boolean] = js.undefined,
-    pdftotextOptions: AnonCrop = null,
+    pdftotextOptions: Crop = null,
     preserveLineBreaks: js.UndefOr[Boolean] = js.undefined,
     preserveOnlyMultipleLineBreaks: js.UndefOr[Boolean] = js.undefined,
     rtf: extractorExecOpts = null,
-    tesseract: AnonLang | AnonCmd = null,
+    tesseract: Lang | Cmd = null,
     typeOverride: String = null
   ): URLConfig = {
     val __obj = js.Dynamic.literal()
@@ -35,10 +35,10 @@ object URLConfig {
     if (dxf != null) __obj.updateDynamic("dxf")(dxf.asInstanceOf[js.Any])
     if (exec != null) __obj.updateDynamic("exec")(exec.asInstanceOf[js.Any])
     if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeAltText)) __obj.updateDynamic("includeAltText")(includeAltText.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeAltText)) __obj.updateDynamic("includeAltText")(includeAltText.get.asInstanceOf[js.Any])
     if (pdftotextOptions != null) __obj.updateDynamic("pdftotextOptions")(pdftotextOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveLineBreaks)) __obj.updateDynamic("preserveLineBreaks")(preserveLineBreaks.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveOnlyMultipleLineBreaks)) __obj.updateDynamic("preserveOnlyMultipleLineBreaks")(preserveOnlyMultipleLineBreaks.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveLineBreaks)) __obj.updateDynamic("preserveLineBreaks")(preserveLineBreaks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveOnlyMultipleLineBreaks)) __obj.updateDynamic("preserveOnlyMultipleLineBreaks")(preserveOnlyMultipleLineBreaks.get.asInstanceOf[js.Any])
     if (rtf != null) __obj.updateDynamic("rtf")(rtf.asInstanceOf[js.Any])
     if (tesseract != null) __obj.updateDynamic("tesseract")(tesseract.asInstanceOf[js.Any])
     if (typeOverride != null) __obj.updateDynamic("typeOverride")(typeOverride.asInstanceOf[js.Any])

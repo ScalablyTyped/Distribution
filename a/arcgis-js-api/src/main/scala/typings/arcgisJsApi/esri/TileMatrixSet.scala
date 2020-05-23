@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,8 +27,4 @@ trait TileMatrixSet
     */
   var tileInfo: TileInfo = js.native
 }
-
-@JSGlobal("__esri.TileMatrixSet")
-@js.native
-object TileMatrixSet extends TopLevel[TileMatrixSetConstructor]
 

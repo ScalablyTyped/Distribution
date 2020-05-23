@@ -1,8 +1,8 @@
 package typings.leafletGeosearch.mod
 
 import typings.leaflet.mod.MarkerOptions
-import typings.leafletGeosearch.AnonButton
-import typings.leafletGeosearch.AnonQuery
+import typings.leafletGeosearch.anon.Button
+import typings.leafletGeosearch.anon.Query
 import typings.leafletGeosearch.leafletGeosearchStrings.bar
 import typings.leafletGeosearch.leafletGeosearchStrings.button
 import scala.scalajs.js
@@ -31,7 +31,7 @@ trait GeoSearchControlOptions extends js.Object {
     *      input: '';
     * }
     */
-  var classNames: js.UndefOr[AnonButton] = js.undefined
+  var classNames: js.UndefOr[Button] = js.undefined
   /** @default false */
   var keepResult: js.UndefOr[Boolean] = js.undefined
   /**
@@ -48,7 +48,7 @@ trait GeoSearchControlOptions extends js.Object {
   /** @default 'Sorry; that address could not be found.' */
   var notFoundMessage: js.UndefOr[String] = js.undefined
   /** @default ({ result }) => `${result.label}` */
-  var popupFormat: js.UndefOr[js.Function1[/* hasQueryResult */ AnonQuery, String]] = js.undefined
+  var popupFormat: js.UndefOr[js.Function1[/* hasQueryResult */ Query, String]] = js.undefined
   /** @default 'topleft' */
   var position: js.UndefOr[String] = js.undefined
   var provider: BaseProvider[js.Object, js.Object]
@@ -73,41 +73,41 @@ object GeoSearchControlOptions {
     animateZoom: js.UndefOr[Boolean] = js.undefined,
     autoClose: js.UndefOr[Boolean] = js.undefined,
     autoComplete: js.UndefOr[Boolean] = js.undefined,
-    autoCompleteDelay: Int | Double = null,
-    classNames: AnonButton = null,
+    autoCompleteDelay: js.UndefOr[Double] = js.undefined,
+    classNames: Button = null,
     keepResult: js.UndefOr[Boolean] = js.undefined,
     marker: MarkerOptions = null,
-    maxMarkers: Int | Double = null,
-    messageHideDelay: Int | Double = null,
+    maxMarkers: js.UndefOr[Double] = js.undefined,
+    messageHideDelay: js.UndefOr[Double] = js.undefined,
     notFoundMessage: String = null,
-    popupFormat: /* hasQueryResult */ AnonQuery => String = null,
+    popupFormat: /* hasQueryResult */ Query => String = null,
     position: String = null,
     retainZoomLevel: js.UndefOr[Boolean] = js.undefined,
     searchLabel: String = null,
     showMarker: js.UndefOr[Boolean] = js.undefined,
     showPopup: js.UndefOr[Boolean] = js.undefined,
     style: button | bar = null,
-    zoomLevel: Int | Double = null
+    zoomLevel: js.UndefOr[Double] = js.undefined
   ): GeoSearchControlOptions = {
     val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
-    if (!js.isUndefined(animateZoom)) __obj.updateDynamic("animateZoom")(animateZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoComplete)) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
-    if (autoCompleteDelay != null) __obj.updateDynamic("autoCompleteDelay")(autoCompleteDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(animateZoom)) __obj.updateDynamic("animateZoom")(animateZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoComplete)) __obj.updateDynamic("autoComplete")(autoComplete.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCompleteDelay)) __obj.updateDynamic("autoCompleteDelay")(autoCompleteDelay.get.asInstanceOf[js.Any])
     if (classNames != null) __obj.updateDynamic("classNames")(classNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepResult)) __obj.updateDynamic("keepResult")(keepResult.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepResult)) __obj.updateDynamic("keepResult")(keepResult.get.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (maxMarkers != null) __obj.updateDynamic("maxMarkers")(maxMarkers.asInstanceOf[js.Any])
-    if (messageHideDelay != null) __obj.updateDynamic("messageHideDelay")(messageHideDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxMarkers)) __obj.updateDynamic("maxMarkers")(maxMarkers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(messageHideDelay)) __obj.updateDynamic("messageHideDelay")(messageHideDelay.get.asInstanceOf[js.Any])
     if (notFoundMessage != null) __obj.updateDynamic("notFoundMessage")(notFoundMessage.asInstanceOf[js.Any])
     if (popupFormat != null) __obj.updateDynamic("popupFormat")(js.Any.fromFunction1(popupFormat))
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(retainZoomLevel)) __obj.updateDynamic("retainZoomLevel")(retainZoomLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(retainZoomLevel)) __obj.updateDynamic("retainZoomLevel")(retainZoomLevel.get.asInstanceOf[js.Any])
     if (searchLabel != null) __obj.updateDynamic("searchLabel")(searchLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMarker)) __obj.updateDynamic("showMarker")(showMarker.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPopup)) __obj.updateDynamic("showPopup")(showPopup.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMarker)) __obj.updateDynamic("showMarker")(showMarker.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPopup)) __obj.updateDynamic("showPopup")(showPopup.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (zoomLevel != null) __obj.updateDynamic("zoomLevel")(zoomLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomLevel)) __obj.updateDynamic("zoomLevel")(zoomLevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoSearchControlOptions]
   }
 }

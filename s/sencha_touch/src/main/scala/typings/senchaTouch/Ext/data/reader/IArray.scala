@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation._
 
 trait IArray extends IJson {
   /** [Method] Sets the value of successProperty
-  		* @param successProperty Object The new value.
-  		*/
+    * @param successProperty Object The new value.
+    */
   @JSName("setSuccessProperty")
   var setSuccessProperty_IArray: js.UndefOr[js.Function1[/* successProperty */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of totalProperty
-  		* @param totalProperty Object The new value.
-  		*/
+    * @param totalProperty Object The new value.
+    */
   @JSName("setTotalProperty")
   var setTotalProperty_IArray: js.UndefOr[js.Function1[/* totalProperty */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
@@ -146,7 +146,7 @@ object IArray {
     if (getUseSimpleAccessors != null) __obj.updateDynamic("getUseSimpleAccessors")(js.Any.fromFunction0(getUseSimpleAccessors))
     if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
     if (idProperty != null) __obj.updateDynamic("idProperty")(idProperty.asInstanceOf[js.Any])
-    if (!js.isUndefined(implicitIncludes)) __obj.updateDynamic("implicitIncludes")(implicitIncludes.asInstanceOf[js.Any])
+    if (!js.isUndefined(implicitIncludes)) __obj.updateDynamic("implicitIncludes")(implicitIncludes.get.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
@@ -184,7 +184,7 @@ object IArray {
     if (setSuccessProperty != null) __obj.updateDynamic("setSuccessProperty")(js.Any.fromFunction1(setSuccessProperty))
     if (setTotalProperty != null) __obj.updateDynamic("setTotalProperty")(js.Any.fromFunction1(setTotalProperty))
     if (setUseSimpleAccessors != null) __obj.updateDynamic("setUseSimpleAccessors")(js.Any.fromFunction1(setUseSimpleAccessors))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (successProperty != null) __obj.updateDynamic("successProperty")(successProperty.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
@@ -192,7 +192,7 @@ object IArray {
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
     if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
     if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))
-    if (!js.isUndefined(useSimpleAccessors)) __obj.updateDynamic("useSimpleAccessors")(useSimpleAccessors.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSimpleAccessors)) __obj.updateDynamic("useSimpleAccessors")(useSimpleAccessors.get.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IArray]
   }

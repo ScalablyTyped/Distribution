@@ -1,5 +1,6 @@
 package typings.firebaseFirestore
 
+import typings.firebaseFirestore.anon.TrackRemovals
 import typings.firebaseFirestore.collectionsMod.DocumentKeySet_
 import typings.firebaseFirestore.collectionsMod.DocumentMap_
 import typings.firebaseFirestore.collectionsMod.NullableMaybeDocumentMap_
@@ -14,7 +15,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/remote_document_cache", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/remote_document_cache", JSImport.Namespace)
 @js.native
 object remoteDocumentCacheMod extends js.Object {
   @js.native
@@ -28,7 +29,7 @@ object remoteDocumentCacheMod extends js.Object {
       * Cached NoDocument entries have no bearing on query results.
       *
       * @param query The query to match documents against.
-      * @param sinceReadTime If not set to SnapshotVersion.MIN, return only
+      * @param sinceReadTime If not set to SnapshotVersion.min(), return only
       *     documents that have been read since this snapshot version (exclusive).
       * @return The set of matching documents.
       */
@@ -50,16 +51,6 @@ object remoteDocumentCacheMod extends js.Object {
       */
     def getEntry(transaction: PersistenceTransaction, documentKey: DocumentKey): PersistencePromise[MaybeDocument | Null] = js.native
     /**
-      * Returns the read time of the most recently read document in the cache, or
-      * SnapshotVersion.MIN if not available.
-      */
-    def getLastReadTime(transaction: PersistenceTransaction): PersistencePromise[SnapshotVersion] = js.native
-    /**
-      * Returns the set of documents that have changed since the specified read
-      * time.
-      */
-    def getNewDocumentChanges(transaction: PersistenceTransaction, sinceReadTime: SnapshotVersion): PersistencePromise[AnonChangedDocs] = js.native
-    /**
       * Get an estimate of the size of the document cache. Note that for eager
       * garbage collection, we don't track sizes so this will return 0.
       */
@@ -75,7 +66,7 @@ object remoteDocumentCacheMod extends js.Object {
       * `getNewDocumentChanges()`.
       */
     def newChangeBuffer(): RemoteDocumentChangeBuffer = js.native
-    def newChangeBuffer(options: AnonTrackRemovals): RemoteDocumentChangeBuffer = js.native
+    def newChangeBuffer(options: TrackRemovals): RemoteDocumentChangeBuffer = js.native
   }
   
 }

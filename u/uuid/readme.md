@@ -1,7 +1,7 @@
 
 # Scala.js typings for uuid
 
-Typings are for version 7.0
+Typings are for version 8.0
 
 ## Library description:
 RFC4122 (v1, v4, and v5) UUIDs

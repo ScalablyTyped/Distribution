@@ -28,10 +28,10 @@ object Options {
     ui: UserInterface = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(getCaBuffer)) __obj.updateDynamic("getCaBuffer")(getCaBuffer.asInstanceOf[js.Any])
-    if (!js.isUndefined(getCaPath)) __obj.updateDynamic("getCaPath")(getCaPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipCertutilInstall)) __obj.updateDynamic("skipCertutilInstall")(skipCertutilInstall.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipHostsFile)) __obj.updateDynamic("skipHostsFile")(skipHostsFile.asInstanceOf[js.Any])
+    if (!js.isUndefined(getCaBuffer)) __obj.updateDynamic("getCaBuffer")(getCaBuffer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(getCaPath)) __obj.updateDynamic("getCaPath")(getCaPath.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipCertutilInstall)) __obj.updateDynamic("skipCertutilInstall")(skipCertutilInstall.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipHostsFile)) __obj.updateDynamic("skipHostsFile")(skipHostsFile.get.asInstanceOf[js.Any])
     if (ui != null) __obj.updateDynamic("ui")(ui.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

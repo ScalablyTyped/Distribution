@@ -3,8 +3,8 @@ package typings.cssFontLoadingModule.mod
 import typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loading
 import typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loadingdone
 import typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loadingerror
-import typings.cssFontLoadingModule.mod._Global_.FontFace
-import typings.cssFontLoadingModule.mod._Global_.FontFaceSetLoadEvent
+import typings.cssFontLoadingModule.mod.global.FontFace
+import typings.cssFontLoadingModule.mod.global.FontFaceSetLoadEvent
 import typings.std.AddEventListenerOptions
 import typings.std.EventListenerOptions
 import typings.std.EventTarget
@@ -26,16 +26,16 @@ trait FontFaceSet
   // loading state, "loading" while one or more fonts loading, "loaded" otherwise
   val status: FontFaceSetLoadStatus = js.native
   // EventTarget
-  def addEventListener[K /* <: loading | loadingdone | loadingerror */](
+  def addEventListener[K /* <: /* keyof css-font-loading-module.css-font-loading-module.FontFaceSetEventMap */ loading | loadingdone | loadingerror */](
     `type`: K,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: css-font-loading-module.css-font-loading-module.FontFaceSetEventMap[K] */ js.Any
   ): Unit = js.native
-  def addEventListener[K /* <: loading | loadingdone | loadingerror */](
+  def addEventListener[K /* <: /* keyof css-font-loading-module.css-font-loading-module.FontFaceSetEventMap */ loading | loadingdone | loadingerror */](
     `type`: K,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: css-font-loading-module.css-font-loading-module.FontFaceSetEventMap[K] */ js.Any,
     options: Boolean
   ): Unit = js.native
-  def addEventListener[K /* <: loading | loadingdone | loadingerror */](
+  def addEventListener[K /* <: /* keyof css-font-loading-module.css-font-loading-module.FontFaceSetEventMap */ loading | loadingdone | loadingerror */](
     `type`: K,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: css-font-loading-module.css-font-loading-module.FontFaceSetEventMap[K] */ js.Any,
     options: AddEventListenerOptions
@@ -48,16 +48,16 @@ trait FontFaceSet
   // and fulfill promise when all loads complete
   def load(font: String): js.Promise[js.Array[FontFace]] = js.native
   def load(font: String, text: String): js.Promise[js.Array[FontFace]] = js.native
-  def removeEventListener[K /* <: loading | loadingdone | loadingerror */](
+  def removeEventListener[K /* <: /* keyof css-font-loading-module.css-font-loading-module.FontFaceSetEventMap */ loading | loadingdone | loadingerror */](
     `type`: K,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: css-font-loading-module.css-font-loading-module.FontFaceSetEventMap[K] */ js.Any
   ): Unit = js.native
-  def removeEventListener[K /* <: loading | loadingdone | loadingerror */](
+  def removeEventListener[K /* <: /* keyof css-font-loading-module.css-font-loading-module.FontFaceSetEventMap */ loading | loadingdone | loadingerror */](
     `type`: K,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: css-font-loading-module.css-font-loading-module.FontFaceSetEventMap[K] */ js.Any,
     options: Boolean
   ): Unit = js.native
-  def removeEventListener[K /* <: loading | loadingdone | loadingerror */](
+  def removeEventListener[K /* <: /* keyof css-font-loading-module.css-font-loading-module.FontFaceSetEventMap */ loading | loadingdone | loadingerror */](
     `type`: K,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: css-font-loading-module.css-font-loading-module.FontFaceSetEventMap[K] */ js.Any,
     options: EventListenerOptions

@@ -1,7 +1,8 @@
 package typings.reactNavigationStack
 
 import typings.react.mod.ComponentProps
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
+import typings.reactNavigationStack.anon.ChildrenReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,8 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object maskedViewNativeMod extends js.Object {
   def default(hasChildrenRest: Props): Element = js.native
-  type Props = (ComponentProps[
-    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof RNCMaskedView */ _
-  ]) with AnonChildrenReactElement
+  type MaskedViewType = /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof imported_masked-view.default */ js.Any
+  type Props = ComponentProps[MaskedViewType] with ChildrenReactElement
 }
 

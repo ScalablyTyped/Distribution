@@ -41,7 +41,7 @@ trait PlusMapsBubble extends js.Object {
   /**
     * 从图片数据加载气泡显示的内容
     * 通过加载图片数据来自定义气泡显示的内容，加载图片后将清空气泡使用的图标及文字内容。
-    * 	图片数据可通过Canvas自定义绘制后调用toDataURL来获取。
+    *     图片数据可通过Canvas自定义绘制后调用toDataURL来获取。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */

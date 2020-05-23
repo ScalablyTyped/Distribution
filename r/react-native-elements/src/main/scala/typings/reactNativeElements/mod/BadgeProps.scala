@@ -55,20 +55,20 @@ object BadgeProps {
   @scala.inline
   def apply(
     Component: ComponentClass[js.Object, ComponentState] = null,
-    badgeStyle: StyleProp[ViewStyle] = null,
-    containerStyle: StyleProp[ViewStyle] = null,
+    badgeStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    containerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     onPress: () => Unit = null,
     status: primary | success | warning | error = null,
-    textStyle: StyleProp[TextStyle] = null,
+    textStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
     value: ReactNode = null
   ): BadgeProps = {
     val __obj = js.Dynamic.literal()
     if (Component != null) __obj.updateDynamic("Component")(Component.asInstanceOf[js.Any])
-    if (badgeStyle != null) __obj.updateDynamic("badgeStyle")(badgeStyle.asInstanceOf[js.Any])
-    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(badgeStyle)) __obj.updateDynamic("badgeStyle")(badgeStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(containerStyle)) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(textStyle)) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[BadgeProps]
   }

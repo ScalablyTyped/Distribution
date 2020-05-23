@@ -42,7 +42,7 @@ object CopyDBSnapshotMessage {
   def apply(
     SourceDBSnapshotIdentifier: String,
     TargetDBSnapshotIdentifier: String,
-    CopyTags: js.UndefOr[scala.Boolean] = js.undefined,
+    CopyTags: js.UndefOr[BooleanOptional] = js.undefined,
     KmsKeyId: String = null,
     OptionGroupName: String = null,
     PreSignedUrl: String = null,
@@ -50,7 +50,7 @@ object CopyDBSnapshotMessage {
     Tags: TagList = null
   ): CopyDBSnapshotMessage = {
     val __obj = js.Dynamic.literal(SourceDBSnapshotIdentifier = SourceDBSnapshotIdentifier.asInstanceOf[js.Any], TargetDBSnapshotIdentifier = TargetDBSnapshotIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(CopyTags)) __obj.updateDynamic("CopyTags")(CopyTags.asInstanceOf[js.Any])
+    if (!js.isUndefined(CopyTags)) __obj.updateDynamic("CopyTags")(CopyTags.get.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
     if (OptionGroupName != null) __obj.updateDynamic("OptionGroupName")(OptionGroupName.asInstanceOf[js.Any])
     if (PreSignedUrl != null) __obj.updateDynamic("PreSignedUrl")(PreSignedUrl.asInstanceOf[js.Any])

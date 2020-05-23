@@ -11,14 +11,14 @@ import scala.scalajs.js.annotation._
   */
 trait Attachment extends AttachmentCommon {
   /**
-  	 * A Buffer that contains the attachment contents.
-  	 */
+    * A Buffer that contains the attachment contents.
+    */
   @JSName("content")
   var content_Attachment: Buffer
   /**
-  	 * If true then this attachment should not be offered for download
-  	 * (at least not in the main attachments list).
-  	 */
+    * If true then this attachment should not be offered for download
+    * (at least not in the main attachments list).
+    */
   @JSName("related")
   var related_Attachment: Boolean
 }

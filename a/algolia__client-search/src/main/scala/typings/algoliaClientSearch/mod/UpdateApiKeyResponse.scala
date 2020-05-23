@@ -8,11 +8,11 @@ trait UpdateApiKeyResponse extends js.Object {
   /**
     * The api key.
     */
-  val key: String
+  var key: String
   /**
     * Date of update
     */
-  val updatedAt: String
+  var updatedAt: String
 }
 
 object UpdateApiKeyResponse {

@@ -14,14 +14,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object observablesetMod extends js.Object {
   /* Rewritten from type alias, can be one of: 
-    - typings.mobx.AnonNewValueObject[T]
-    - typings.mobx.AnonObjectOldValue[T]
+    - typings.mobx.anon.NewValueObject[T]
+    - typings.mobx.anon.ObjectOldValue[T]
   */
   trait ISetDidChange[T] extends js.Object
   
   /* Rewritten from type alias, can be one of: 
-    - typings.mobx.AnonOldValueType[T]
-    - typings.mobx.AnonNewValueObjectType[T]
+    - typings.mobx.anon.OldValueType[T]
+    - typings.mobx.anon.NewValueObjectType[T]
   */
   trait ISetWillChange[T] extends js.Object
   

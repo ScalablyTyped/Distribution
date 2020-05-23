@@ -56,9 +56,9 @@ object FeatureTableProperties {
     visibleElements: FeatureTableVisibleElements = null
   ): FeatureTableProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(attachmentsEnabled)) __obj.updateDynamic("attachmentsEnabled")(attachmentsEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(attachmentsEnabled)) __obj.updateDynamic("attachmentsEnabled")(attachmentsEnabled.get.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.get.asInstanceOf[js.Any])
     if (fieldConfigs != null) __obj.updateDynamic("fieldConfigs")(fieldConfigs.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])

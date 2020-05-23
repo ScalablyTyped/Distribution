@@ -1,6 +1,5 @@
 package typings.dwt
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,23 +44,6 @@ object EnumDWTCapType extends js.Object {
     */
   @js.native
   sealed trait TWON_RANGE extends EnumDWTCapType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EnumDWTCapType with Double] = js.native
-  /* 3 */ @js.native
-  object TWON_ARRAY extends TopLevel[TWON_ARRAY with Double]
-  
-  /* 4 */ @js.native
-  object TWON_ENUMERATION extends TopLevel[TWON_ENUMERATION with Double]
-  
-  /* 0 */ @js.native
-  object TWON_NONE extends TopLevel[TWON_NONE with Double]
-  
-  /* 5 */ @js.native
-  object TWON_ONEVALUE extends TopLevel[TWON_ONEVALUE with Double]
-  
-  /* 6 */ @js.native
-  object TWON_RANGE extends TopLevel[TWON_RANGE with Double]
   
 }
 

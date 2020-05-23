@@ -17,9 +17,13 @@ trait TransitionOpts extends js.Object {
 
 object TransitionOpts {
   @scala.inline
-  def apply(delay: Int | Double = null, duration: Double | slow | fast | String = null, easing: String = null): TransitionOpts = {
+  def apply(
+    delay: js.UndefOr[Double] = js.undefined,
+    duration: Double | slow | fast | String = null,
+    easing: String = null
+  ): TransitionOpts = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitionOpts]

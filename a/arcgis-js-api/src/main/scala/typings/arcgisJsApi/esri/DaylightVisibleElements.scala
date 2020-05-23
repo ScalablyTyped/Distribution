@@ -45,10 +45,10 @@ object DaylightVisibleElements {
     timezone: js.UndefOr[Boolean] = js.undefined
   ): DaylightVisibleElements = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (!js.isUndefined(datePicker)) __obj.updateDynamic("datePicker")(datePicker.asInstanceOf[js.Any])
-    if (!js.isUndefined(playButtons)) __obj.updateDynamic("playButtons")(playButtons.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadowsToggle)) __obj.updateDynamic("shadowsToggle")(shadowsToggle.asInstanceOf[js.Any])
-    if (!js.isUndefined(timezone)) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
+    if (!js.isUndefined(datePicker)) __obj.updateDynamic("datePicker")(datePicker.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(playButtons)) __obj.updateDynamic("playButtons")(playButtons.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadowsToggle)) __obj.updateDynamic("shadowsToggle")(shadowsToggle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timezone)) __obj.updateDynamic("timezone")(timezone.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DaylightVisibleElements]
   }
 }

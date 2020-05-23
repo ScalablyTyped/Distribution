@@ -22,7 +22,7 @@ object ScheduleOptions {
   @scala.inline
   def apply(scheduled: js.UndefOr[Boolean] = js.undefined, timezone: Timezone = null): ScheduleOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(scheduled)) __obj.updateDynamic("scheduled")(scheduled.asInstanceOf[js.Any])
+    if (!js.isUndefined(scheduled)) __obj.updateDynamic("scheduled")(scheduled.get.asInstanceOf[js.Any])
     if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduleOptions]
   }

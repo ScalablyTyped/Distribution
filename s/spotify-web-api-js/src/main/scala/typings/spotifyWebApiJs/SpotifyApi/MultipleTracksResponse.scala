@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * Get multiple tracks
-  * 
+  *
   * GET /v1/tracks?ids={ids}
   * https://developer.spotify.com/web-api/get-several-tracks/
   */

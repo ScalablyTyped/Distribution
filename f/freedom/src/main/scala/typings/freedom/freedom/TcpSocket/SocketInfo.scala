@@ -17,15 +17,15 @@ object SocketInfo {
   def apply(
     connected: Boolean,
     localAddress: String = null,
-    localPort: Int | Double = null,
+    localPort: js.UndefOr[Double] = js.undefined,
     peerAddress: String = null,
-    peerPort: Int | Double = null
+    peerPort: js.UndefOr[Double] = js.undefined
   ): SocketInfo = {
     val __obj = js.Dynamic.literal(connected = connected.asInstanceOf[js.Any])
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
-    if (localPort != null) __obj.updateDynamic("localPort")(localPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(localPort)) __obj.updateDynamic("localPort")(localPort.get.asInstanceOf[js.Any])
     if (peerAddress != null) __obj.updateDynamic("peerAddress")(peerAddress.asInstanceOf[js.Any])
-    if (peerPort != null) __obj.updateDynamic("peerPort")(peerPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(peerPort)) __obj.updateDynamic("peerPort")(peerPort.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketInfo]
   }
 }

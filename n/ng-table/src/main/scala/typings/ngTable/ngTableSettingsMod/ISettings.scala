@@ -91,27 +91,27 @@ object ISettings {
     getGroups: /* params */ NgTableParams[T] => js.Array[IDataRowGroup[T]] | IPromise[js.Array[IDataRowGroup[T]]] = null,
     groupOptions: IGroupSettings = null,
     interceptors: js.Array[IInterceptor[T]] = null,
-    paginationMaxBlocks: Int | Double = null,
-    paginationMinBlocks: Int | Double = null,
+    paginationMaxBlocks: js.UndefOr[Double] = js.undefined,
+    paginationMinBlocks: js.UndefOr[Double] = js.undefined,
     sortingIndicator: String = null,
-    total: Int | Double = null
+    total: js.UndefOr[Double] = js.undefined
   ): ISettings[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($loading)) __obj.updateDynamic("$loading")($loading.asInstanceOf[js.Any])
+    if (!js.isUndefined($loading)) __obj.updateDynamic("$loading")($loading.get.asInstanceOf[js.Any])
     if (counts != null) __obj.updateDynamic("counts")(counts.asInstanceOf[js.Any])
     if (dataOptions != null) __obj.updateDynamic("dataOptions")(dataOptions.asInstanceOf[js.Any])
     if (dataset != null) __obj.updateDynamic("dataset")(dataset.asInstanceOf[js.Any])
-    if (!js.isUndefined(debugMode)) __obj.updateDynamic("debugMode")(debugMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(debugMode)) __obj.updateDynamic("debugMode")(debugMode.get.asInstanceOf[js.Any])
     if (defaultSort != null) __obj.updateDynamic("defaultSort")(defaultSort.asInstanceOf[js.Any])
     if (filterOptions != null) __obj.updateDynamic("filterOptions")(filterOptions.asInstanceOf[js.Any])
     if (getData != null) __obj.updateDynamic("getData")(js.Any.fromFunction1(getData))
     if (getGroups != null) __obj.updateDynamic("getGroups")(js.Any.fromFunction1(getGroups))
     if (groupOptions != null) __obj.updateDynamic("groupOptions")(groupOptions.asInstanceOf[js.Any])
     if (interceptors != null) __obj.updateDynamic("interceptors")(interceptors.asInstanceOf[js.Any])
-    if (paginationMaxBlocks != null) __obj.updateDynamic("paginationMaxBlocks")(paginationMaxBlocks.asInstanceOf[js.Any])
-    if (paginationMinBlocks != null) __obj.updateDynamic("paginationMinBlocks")(paginationMinBlocks.asInstanceOf[js.Any])
+    if (!js.isUndefined(paginationMaxBlocks)) __obj.updateDynamic("paginationMaxBlocks")(paginationMaxBlocks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(paginationMinBlocks)) __obj.updateDynamic("paginationMinBlocks")(paginationMinBlocks.get.asInstanceOf[js.Any])
     if (sortingIndicator != null) __obj.updateDynamic("sortingIndicator")(sortingIndicator.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISettings[T]]
   }
 }

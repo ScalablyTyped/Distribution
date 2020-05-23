@@ -11,10 +11,10 @@ trait IMUGeneralOption extends js.Object {
 
 object IMUGeneralOption {
   @scala.inline
-  def apply(controller: String = null, freq: Int | Double = null): IMUGeneralOption = {
+  def apply(controller: String = null, freq: js.UndefOr[Double] = js.undefined): IMUGeneralOption = {
     val __obj = js.Dynamic.literal()
     if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
-    if (freq != null) __obj.updateDynamic("freq")(freq.asInstanceOf[js.Any])
+    if (!js.isUndefined(freq)) __obj.updateDynamic("freq")(freq.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMUGeneralOption]
   }
 }

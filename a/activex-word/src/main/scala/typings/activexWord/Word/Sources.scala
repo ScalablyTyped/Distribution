@@ -4,16 +4,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.Sources")
-@js.native
-class Sources protected () extends js.Object {
-  val Application: typings.activexWord.Word.Application = js.native
-  val Count: Double = js.native
-  val Creator: Double = js.native
-  val Parent: js.Any = js.native
+trait Sources extends js.Object {
+  val Application: typings.activexWord.Word.Application
+  val Count: Double
+  val Creator: Double
+  val Parent: js.Any
   @JSName("Word.Sources_typekey")
-  var WordDotSources_typekey: Sources = js.native
-  def Add(Data: String): Unit = js.native
-  def Item(Index: Double): Source = js.native
+  var WordDotSources_typekey: Sources
+  def Add(Data: String): Unit
+  def Item(Index: Double): Source
+}
+
+object Sources {
+  @scala.inline
+  def apply(
+    Add: String => Unit,
+    Application: Application,
+    Count: Double,
+    Creator: Double,
+    Item: Double => Source,
+    Parent: js.Any,
+    WordDotSources_typekey: Sources
+  ): Sources = {
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction1(Add), Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
+    __obj.updateDynamic("Word.Sources_typekey")(WordDotSources_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Sources]
+  }
 }
 

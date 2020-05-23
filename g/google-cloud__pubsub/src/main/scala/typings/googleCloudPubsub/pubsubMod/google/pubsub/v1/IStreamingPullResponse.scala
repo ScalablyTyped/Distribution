@@ -12,9 +12,9 @@ trait IStreamingPullResponse extends js.Object {
 
 object IStreamingPullResponse {
   @scala.inline
-  def apply(receivedMessages: js.Array[IReceivedMessage] = null): IStreamingPullResponse = {
+  def apply(receivedMessages: js.UndefOr[Null | js.Array[IReceivedMessage]] = js.undefined): IStreamingPullResponse = {
     val __obj = js.Dynamic.literal()
-    if (receivedMessages != null) __obj.updateDynamic("receivedMessages")(receivedMessages.asInstanceOf[js.Any])
+    if (!js.isUndefined(receivedMessages)) __obj.updateDynamic("receivedMessages")(receivedMessages.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStreamingPullResponse]
   }
 }

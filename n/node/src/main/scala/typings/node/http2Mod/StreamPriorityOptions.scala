@@ -15,15 +15,15 @@ object StreamPriorityOptions {
   @scala.inline
   def apply(
     exclusive: js.UndefOr[Boolean] = js.undefined,
-    parent: Int | Double = null,
+    parent: js.UndefOr[Double] = js.undefined,
     silent: js.UndefOr[Boolean] = js.undefined,
-    weight: Int | Double = null
+    weight: js.UndefOr[Double] = js.undefined
   ): StreamPriorityOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamPriorityOptions]
   }
 }

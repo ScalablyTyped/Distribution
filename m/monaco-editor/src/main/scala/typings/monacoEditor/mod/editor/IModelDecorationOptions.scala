@@ -75,38 +75,38 @@ trait IModelDecorationOptions extends js.Object {
 object IModelDecorationOptions {
   @scala.inline
   def apply(
-    afterContentClassName: String = null,
-    beforeContentClassName: String = null,
-    className: String = null,
-    glyphMarginClassName: String = null,
-    glyphMarginHoverMessage: IMarkdownString | js.Array[IMarkdownString] = null,
-    hoverMessage: IMarkdownString | js.Array[IMarkdownString] = null,
-    inlineClassName: String = null,
+    afterContentClassName: js.UndefOr[Null | String] = js.undefined,
+    beforeContentClassName: js.UndefOr[Null | String] = js.undefined,
+    className: js.UndefOr[Null | String] = js.undefined,
+    glyphMarginClassName: js.UndefOr[Null | String] = js.undefined,
+    glyphMarginHoverMessage: js.UndefOr[Null | IMarkdownString | js.Array[IMarkdownString]] = js.undefined,
+    hoverMessage: js.UndefOr[Null | IMarkdownString | js.Array[IMarkdownString]] = js.undefined,
+    inlineClassName: js.UndefOr[Null | String] = js.undefined,
     inlineClassNameAffectsLetterSpacing: js.UndefOr[Boolean] = js.undefined,
     isWholeLine: js.UndefOr[Boolean] = js.undefined,
-    linesDecorationsClassName: String = null,
-    marginClassName: String = null,
-    minimap: IModelDecorationMinimapOptions = null,
-    overviewRuler: IModelDecorationOverviewRulerOptions = null,
+    linesDecorationsClassName: js.UndefOr[Null | String] = js.undefined,
+    marginClassName: js.UndefOr[Null | String] = js.undefined,
+    minimap: js.UndefOr[Null | IModelDecorationMinimapOptions] = js.undefined,
+    overviewRuler: js.UndefOr[Null | IModelDecorationOverviewRulerOptions] = js.undefined,
     stickiness: TrackedRangeStickiness = null,
-    zIndex: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined
   ): IModelDecorationOptions = {
     val __obj = js.Dynamic.literal()
-    if (afterContentClassName != null) __obj.updateDynamic("afterContentClassName")(afterContentClassName.asInstanceOf[js.Any])
-    if (beforeContentClassName != null) __obj.updateDynamic("beforeContentClassName")(beforeContentClassName.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (glyphMarginClassName != null) __obj.updateDynamic("glyphMarginClassName")(glyphMarginClassName.asInstanceOf[js.Any])
-    if (glyphMarginHoverMessage != null) __obj.updateDynamic("glyphMarginHoverMessage")(glyphMarginHoverMessage.asInstanceOf[js.Any])
-    if (hoverMessage != null) __obj.updateDynamic("hoverMessage")(hoverMessage.asInstanceOf[js.Any])
-    if (inlineClassName != null) __obj.updateDynamic("inlineClassName")(inlineClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(inlineClassNameAffectsLetterSpacing)) __obj.updateDynamic("inlineClassNameAffectsLetterSpacing")(inlineClassNameAffectsLetterSpacing.asInstanceOf[js.Any])
-    if (!js.isUndefined(isWholeLine)) __obj.updateDynamic("isWholeLine")(isWholeLine.asInstanceOf[js.Any])
-    if (linesDecorationsClassName != null) __obj.updateDynamic("linesDecorationsClassName")(linesDecorationsClassName.asInstanceOf[js.Any])
-    if (marginClassName != null) __obj.updateDynamic("marginClassName")(marginClassName.asInstanceOf[js.Any])
-    if (minimap != null) __obj.updateDynamic("minimap")(minimap.asInstanceOf[js.Any])
-    if (overviewRuler != null) __obj.updateDynamic("overviewRuler")(overviewRuler.asInstanceOf[js.Any])
+    if (!js.isUndefined(afterContentClassName)) __obj.updateDynamic("afterContentClassName")(afterContentClassName.asInstanceOf[js.Any])
+    if (!js.isUndefined(beforeContentClassName)) __obj.updateDynamic("beforeContentClassName")(beforeContentClassName.asInstanceOf[js.Any])
+    if (!js.isUndefined(className)) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(glyphMarginClassName)) __obj.updateDynamic("glyphMarginClassName")(glyphMarginClassName.asInstanceOf[js.Any])
+    if (!js.isUndefined(glyphMarginHoverMessage)) __obj.updateDynamic("glyphMarginHoverMessage")(glyphMarginHoverMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverMessage)) __obj.updateDynamic("hoverMessage")(hoverMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(inlineClassName)) __obj.updateDynamic("inlineClassName")(inlineClassName.asInstanceOf[js.Any])
+    if (!js.isUndefined(inlineClassNameAffectsLetterSpacing)) __obj.updateDynamic("inlineClassNameAffectsLetterSpacing")(inlineClassNameAffectsLetterSpacing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isWholeLine)) __obj.updateDynamic("isWholeLine")(isWholeLine.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(linesDecorationsClassName)) __obj.updateDynamic("linesDecorationsClassName")(linesDecorationsClassName.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginClassName)) __obj.updateDynamic("marginClassName")(marginClassName.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimap)) __obj.updateDynamic("minimap")(minimap.asInstanceOf[js.Any])
+    if (!js.isUndefined(overviewRuler)) __obj.updateDynamic("overviewRuler")(overviewRuler.asInstanceOf[js.Any])
     if (stickiness != null) __obj.updateDynamic("stickiness")(stickiness.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModelDecorationOptions]
   }
 }

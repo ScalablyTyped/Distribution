@@ -10,9 +10,9 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(duration: Int | Double = null): Options = {
+  def apply(duration: js.UndefOr[Double] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -5,10 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains event data for the SpeechRecognizer.HypothesisGenerated event. */
-@JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionHypothesisGeneratedEventArgs")
-@js.native
-abstract class SpeechRecognitionHypothesisGeneratedEventArgs () extends js.Object {
+trait SpeechRecognitionHypothesisGeneratedEventArgs extends js.Object {
   /** Gets a recognition result fragment returned by the speech recognizer during an ongoing dictation session. */
-  var hypothesis: SpeechRecognitionHypothesis = js.native
+  var hypothesis: SpeechRecognitionHypothesis
+}
+
+object SpeechRecognitionHypothesisGeneratedEventArgs {
+  @scala.inline
+  def apply(hypothesis: SpeechRecognitionHypothesis): SpeechRecognitionHypothesisGeneratedEventArgs = {
+    val __obj = js.Dynamic.literal(hypothesis = hypothesis.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpeechRecognitionHypothesisGeneratedEventArgs]
+  }
 }
 

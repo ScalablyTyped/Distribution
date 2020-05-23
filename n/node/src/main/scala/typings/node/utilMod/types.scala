@@ -10,6 +10,7 @@ object types extends js.Object {
   def isAnyArrayBuffer(`object`: js.Any): Boolean = js.native
   def isArgumentsObject(`object`: js.Any): /* is std.IArguments */ Boolean = js.native
   def isArrayBuffer(`object`: js.Any): /* is std.ArrayBuffer */ Boolean = js.native
+  def isArrayBufferView(`object`: js.Any): /* is std.ArrayBufferView */ Boolean = js.native
   def isAsyncFunction(`object`: js.Any): Boolean = js.native
   def isBigInt64Array(value: js.Any): Boolean = js.native
   def isBigUint64Array(value: js.Any): Boolean = js.native

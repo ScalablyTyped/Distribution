@@ -1,8 +1,8 @@
 package typings.kiiCloudSdk.KiiCloud
 
-import typings.kiiCloudSdk.Anon32
-import typings.kiiCloudSdk.Anon33
-import typings.kiiCloudSdk.Anon34
+import typings.kiiCloudSdk.anon.`29`
+import typings.kiiCloudSdk.anon.`30`
+import typings.kiiCloudSdk.anon.`31`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,9 +10,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a Topic object.
   */
-@JSGlobal("KiiCloud.KiiTopic")
 @js.native
-class KiiTopic () extends js.Object {
+trait KiiTopic extends js.Object {
   /**
     * Get ACL object of this topic.
     * Access to topic can be configured by adding/removing KiiACLEntry
@@ -61,7 +60,7 @@ class KiiTopic () extends js.Object {
     *     );
     */
   def deleteTopic(): js.Promise[KiiTopic] = js.native
-  def deleteTopic(callbacks: Anon33): js.Promise[KiiTopic] = js.native
+  def deleteTopic(callbacks: `30`): js.Promise[KiiTopic] = js.native
   /**
     * Checks whether the topic already exists or not.
     *
@@ -99,7 +98,7 @@ class KiiTopic () extends js.Object {
     *         });
     */
   def exists(): js.Promise[Boolean] = js.native
-  def exists(callbacks: Anon32): js.Promise[Boolean] = js.native
+  def exists(callbacks: `29`): js.Promise[Boolean] = js.native
   /**
     * get name of this topic
     *
@@ -147,7 +146,7 @@ class KiiTopic () extends js.Object {
     *     );
     */
   def save(): js.Promise[KiiTopic] = js.native
-  def save(callbacks: Anon33): js.Promise[KiiTopic] = js.native
+  def save(callbacks: `30`): js.Promise[KiiTopic] = js.native
   /**
     * Send message to the topic.
     *
@@ -202,6 +201,6 @@ class KiiTopic () extends js.Object {
     *     );
     */
   def sendMessage[T](message: T): js.Promise[js.Tuple2[KiiTopic, T]] = js.native
-  def sendMessage[T](message: T, callbacks: Anon34[T]): js.Promise[js.Tuple2[KiiTopic, T]] = js.native
+  def sendMessage[T](message: T, callbacks: `31`[T]): js.Promise[js.Tuple2[KiiTopic, T]] = js.native
 }
 

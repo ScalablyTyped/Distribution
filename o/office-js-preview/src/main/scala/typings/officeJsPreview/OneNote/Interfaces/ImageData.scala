@@ -55,19 +55,19 @@ object ImageData {
   @scala.inline
   def apply(
     description: String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     hyperlink: String = null,
     id: String = null,
     ocrData: ImageOcrData = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): ImageData = {
     val __obj = js.Dynamic.literal()
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (ocrData != null) __obj.updateDynamic("ocrData")(ocrData.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageData]
   }
 }

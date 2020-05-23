@@ -1,24 +1,24 @@
 package typings.jupyterlabServices.messagesMod
 
-import typings.jupyterlabServices.AnonAllowstdin
-import typings.jupyterlabServices.AnonArguments
-import typings.jupyterlabServices.AnonBody
-import typings.jupyterlabServices.AnonCode
-import typings.jupyterlabServices.AnonCodeString
-import typings.jupyterlabServices.AnonCommid
-import typings.jupyterlabServices.AnonCursorpos
-import typings.jupyterlabServices.AnonData
-import typings.jupyterlabServices.AnonEname
-import typings.jupyterlabServices.AnonEvent
-import typings.jupyterlabServices.AnonExecutioncount
-import typings.jupyterlabServices.AnonExecutionstate
-import typings.jupyterlabServices.AnonMetadata
-import typings.jupyterlabServices.AnonName
-import typings.jupyterlabServices.AnonPassword
-import typings.jupyterlabServices.AnonTargetname
-import typings.jupyterlabServices.AnonTransient
-import typings.jupyterlabServices.AnonTransientAnonDisplayidString
-import typings.jupyterlabServices.AnonWait
+import typings.jupyterlabServices.anon.Allowstdin
+import typings.jupyterlabServices.anon.Arguments
+import typings.jupyterlabServices.anon.Body
+import typings.jupyterlabServices.anon.Code
+import typings.jupyterlabServices.anon.CodeString
+import typings.jupyterlabServices.anon.Commid
+import typings.jupyterlabServices.anon.Cursorpos
+import typings.jupyterlabServices.anon.Data
+import typings.jupyterlabServices.anon.Ename
+import typings.jupyterlabServices.anon.Event
+import typings.jupyterlabServices.anon.Executioncount
+import typings.jupyterlabServices.anon.Executionstate
+import typings.jupyterlabServices.anon.Metadata
+import typings.jupyterlabServices.anon.Name
+import typings.jupyterlabServices.anon.Password
+import typings.jupyterlabServices.anon.Targetname
+import typings.jupyterlabServices.anon.Transient
+import typings.jupyterlabServices.anon.TransientDisplayidString
+import typings.jupyterlabServices.anon.Wait
 import typings.jupyterlabServices.jupyterlabServicesStrings.clear_output
 import typings.jupyterlabServices.jupyterlabServicesStrings.comm_info_reply
 import typings.jupyterlabServices.jupyterlabServicesStrings.comm_info_request
@@ -63,7 +63,7 @@ object _Message {
   @scala.inline
   def IExecuteInputMsg(
     channel: iopub,
-    content: AnonExecutioncount,
+    content: Executioncount,
     header: IHeader[execute_input],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,
@@ -89,7 +89,7 @@ object _Message {
   @scala.inline
   def ICompleteRequestMsg(
     channel: shell,
-    content: AnonCode,
+    content: Code,
     header: IHeader[complete_request],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,
@@ -115,7 +115,7 @@ object _Message {
   @scala.inline
   def IDebugEventMsg(
     channel: iopub,
-    content: AnonEvent,
+    content: Event,
     header: IHeader[debug_event],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,
@@ -141,7 +141,7 @@ object _Message {
   @scala.inline
   def IErrorMsg(
     channel: iopub,
-    content: AnonEname,
+    content: Ename,
     header: IHeader[error],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,
@@ -167,7 +167,7 @@ object _Message {
   @scala.inline
   def IDebugRequestMsg(
     channel: control,
-    content: AnonArguments,
+    content: Arguments,
     header: IHeader[debug_request],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,
@@ -180,7 +180,7 @@ object _Message {
   @scala.inline
   def IExecuteRequestMsg(
     channel: shell,
-    content: AnonAllowstdin,
+    content: Allowstdin,
     header: IHeader[execute_request],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,
@@ -219,7 +219,7 @@ object _Message {
   @scala.inline
   def IDisplayDataMsg(
     channel: iopub,
-    content: AnonMetadata,
+    content: Metadata,
     header: IHeader[display_data],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,
@@ -232,7 +232,7 @@ object _Message {
   @scala.inline
   def ICommInfoRequestMsg(
     channel: shell,
-    content: AnonTargetname,
+    content: Targetname,
     header: IHeader[comm_info_request],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,
@@ -245,7 +245,7 @@ object _Message {
   @scala.inline
   def IClearOutputMsg(
     channel: iopub,
-    content: AnonWait,
+    content: Wait,
     header: IHeader[clear_output],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,
@@ -258,7 +258,7 @@ object _Message {
   @scala.inline
   def IStatusMsg(
     channel: iopub,
-    content: AnonExecutionstate,
+    content: Executionstate,
     header: IHeader[status],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,
@@ -271,7 +271,7 @@ object _Message {
   @scala.inline
   def IInspectRequestMsg(
     channel: shell,
-    content: AnonCursorpos,
+    content: Cursorpos,
     header: IHeader[inspect_request],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,
@@ -284,9 +284,9 @@ object _Message {
   @scala.inline
   def IInfoRequestMsg(
     channel: shell,
-    content: AnonWait | AnonCommid | (ReplyContent[
+    content: Wait | Commid | (ReplyContent[
       ICommInfoReply | ICompleteReply | IHistoryReply | IInfoReply | IInputReply | IInspectReply | IIsCompleteReplyIncomplete | IIsCompleteReplyOther
-    ]) | AnonTargetname | AnonData | AnonCode | AnonMetadata | AnonEname | AnonExecutioncount | (ReplyContent[IExecuteReply] with IExecuteCount) | AnonAllowstdin | AnonTransient | IHistoryRequestRange | IHistoryRequestSearch | IHistoryRequestTail | js.Object | AnonPassword | AnonCursorpos | AnonCodeString | AnonExecutionstate | AnonName | ((/* import warning: importer.ImportType#apply Failed type conversion: @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.IDisplayDataMsg['content'] */ js.Any) with AnonTransientAnonDisplayidString) | AnonArguments | AnonBody | AnonEvent,
+    ]) | Targetname | Data | Code | Metadata | Ename | Executioncount | (ReplyContent[IExecuteReply] with IExecuteCount) | Allowstdin | Transient | IHistoryRequestRange | IHistoryRequestSearch | IHistoryRequestTail | js.Object | Password | Cursorpos | CodeString | Executionstate | Name | ((/* import warning: importer.ImportType#apply Failed type conversion: @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.IDisplayDataMsg['content'] */ js.Any) with TransientDisplayidString) | Arguments | Body | Event,
     header: IHeader[kernel_info_request],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,
@@ -299,7 +299,7 @@ object _Message {
   @scala.inline
   def IIsCompleteRequestMsg(
     channel: shell,
-    content: AnonCodeString,
+    content: CodeString,
     header: IHeader[is_complete_request],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,
@@ -338,7 +338,7 @@ object _Message {
   @scala.inline
   def IUpdateDisplayDataMsg(
     channel: iopub,
-    content: AnonMetadata with AnonTransientAnonDisplayidString,
+    content: Metadata with TransientDisplayidString,
     header: IHeader[update_display_data],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,
@@ -351,7 +351,7 @@ object _Message {
   @scala.inline
   def IExecuteResultMsg(
     channel: iopub,
-    content: AnonTransient,
+    content: Transient,
     header: IHeader[execute_result],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,
@@ -364,7 +364,7 @@ object _Message {
   @scala.inline
   def IDebugReplyMsg(
     channel: control,
-    content: AnonBody,
+    content: Body,
     header: IHeader[debug_reply],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,
@@ -377,7 +377,7 @@ object _Message {
   @scala.inline
   def IInputRequestMsg(
     channel: stdin,
-    content: AnonPassword,
+    content: Password,
     header: IHeader[input_request],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,
@@ -403,7 +403,7 @@ object _Message {
   @scala.inline
   def IStreamMsg(
     channel: iopub,
-    content: AnonName,
+    content: Name,
     header: IHeader[stream],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,

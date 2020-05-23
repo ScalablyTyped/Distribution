@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation._
 
 trait TextChangedEventUIParam extends js.Object {
   /**
-  	 * Gets a reference to the old text.
-  	 */
+    * Gets a reference to the old text.
+    */
   var oldText: js.UndefOr[String] = js.undefined
   /**
-  	 * Gets a reference to the editor.
-  	 */
+    * Gets a reference to the editor.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Gets a reference to the new text.
-  	 */
+    * Gets a reference to the new text.
+    */
   var text: js.UndefOr[String] = js.undefined
 }
 

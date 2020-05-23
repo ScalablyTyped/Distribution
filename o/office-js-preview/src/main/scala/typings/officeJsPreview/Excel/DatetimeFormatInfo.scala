@@ -1,9 +1,9 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.DatetimeFormatInfoData
 import typings.officeJsPreview.Excel.Interfaces.DatetimeFormatInfoLoadOptions
 import typings.officeJsPreview.OfficeExtension.ClientObject
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,9 +15,8 @@ import scala.scalajs.js.annotation._
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
-@JSGlobal("Excel.DatetimeFormatInfo")
 @js.native
-class DatetimeFormatInfo () extends ClientObject {
+trait DatetimeFormatInfo extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_DatetimeFormatInfo: RequestContext = js.native
@@ -68,7 +67,7 @@ class DatetimeFormatInfo () extends ClientObject {
     */
   def load(): DatetimeFormatInfo = js.native
   def load(options: DatetimeFormatInfoLoadOptions): DatetimeFormatInfo = js.native
-  def load(propertyNamesAndPaths: AnonExpand): DatetimeFormatInfo = js.native
+  def load(propertyNamesAndPaths: Expand): DatetimeFormatInfo = js.native
   def load(propertyNames: String): DatetimeFormatInfo = js.native
   def load(propertyNames: js.Array[String]): DatetimeFormatInfo = js.native
   /**

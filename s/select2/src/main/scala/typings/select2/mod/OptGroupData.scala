@@ -23,11 +23,9 @@ object OptGroupData {
     element: HTMLOptGroupElement,
     selected: Boolean,
     text: String,
-    title: String,
-    loading: js.UndefOr[scala.Nothing] = js.undefined
+    title: String
   ): OptGroupData = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptGroupData]
   }
 }

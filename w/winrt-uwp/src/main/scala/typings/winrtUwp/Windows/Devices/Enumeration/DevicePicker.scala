@@ -15,10 +15,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a picker flyout that contains a list of devices for the user to choose from. */
-@JSGlobal("Windows.Devices.Enumeration.DevicePicker")
 @js.native
-/** Creates a DevicePicker object. */
-class DevicePicker () extends js.Object {
+trait DevicePicker extends js.Object {
   /** Gets the colors of the picker. */
   var appearance: DevicePickerAppearance = js.native
   /** Gets the filter used to choose what devices to show in the picker. */

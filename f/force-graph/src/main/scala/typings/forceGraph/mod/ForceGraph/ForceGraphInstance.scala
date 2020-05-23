@@ -1,6 +1,6 @@
 package typings.forceGraph.mod.ForceGraph
 
-import typings.forceGraph.ForceGraphInstancexnumber
+import typings.forceGraph.anon.ForceGraphInstancexnumber
 import typings.forceGraph.forceGraphStrings.center
 import typings.forceGraph.forceGraphStrings.charge
 import typings.forceGraph.forceGraphStrings.link

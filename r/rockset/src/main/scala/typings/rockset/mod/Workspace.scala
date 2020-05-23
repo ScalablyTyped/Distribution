@@ -20,14 +20,14 @@ trait Workspace extends js.Object {
 object Workspace {
   @scala.inline
   def apply(
-    collection_count: Int | Double = null,
+    collection_count: js.UndefOr[Double] = js.undefined,
     created_at: String = null,
     created_by: String = null,
     description: String = null,
     name: String = null
   ): Workspace = {
     val __obj = js.Dynamic.literal()
-    if (collection_count != null) __obj.updateDynamic("collection_count")(collection_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(collection_count)) __obj.updateDynamic("collection_count")(collection_count.get.asInstanceOf[js.Any])
     if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
     if (created_by != null) __obj.updateDynamic("created_by")(created_by.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])

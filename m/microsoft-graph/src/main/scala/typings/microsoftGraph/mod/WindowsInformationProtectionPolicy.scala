@@ -69,7 +69,7 @@ object WindowsInformationProtectionPolicy {
     azureRightsManagementServicesAllowed: js.UndefOr[Boolean] = js.undefined,
     createdDateTime: String = null,
     dataRecoveryCertificate: WindowsInformationProtectionDataRecoveryCertificate = null,
-    daysWithoutContactBeforeUnenroll: Int | Double = null,
+    daysWithoutContactBeforeUnenroll: js.UndefOr[Double] = js.undefined,
     description: String = null,
     displayName: String = null,
     enforcementLevel: WindowsInformationProtectionEnforcementLevel = null,
@@ -90,13 +90,13 @@ object WindowsInformationProtectionPolicy {
     isAssigned: js.UndefOr[Boolean] = js.undefined,
     lastModifiedDateTime: String = null,
     mdmEnrollmentUrl: String = null,
-    minutesOfInactivityBeforeDeviceLock: Int | Double = null,
+    minutesOfInactivityBeforeDeviceLock: js.UndefOr[Double] = js.undefined,
     neutralDomainResources: js.Array[WindowsInformationProtectionResourceCollection] = null,
-    numberOfPastPinsRemembered: Int | Double = null,
-    passwordMaximumAttemptCount: Int | Double = null,
-    pinExpirationDays: Int | Double = null,
+    numberOfPastPinsRemembered: js.UndefOr[Double] = js.undefined,
+    passwordMaximumAttemptCount: js.UndefOr[Double] = js.undefined,
+    pinExpirationDays: js.UndefOr[Double] = js.undefined,
     pinLowercaseLetters: WindowsInformationProtectionPinCharacterRequirements = null,
-    pinMinimumLength: Int | Double = null,
+    pinMinimumLength: js.UndefOr[Double] = js.undefined,
     pinSpecialCharacters: WindowsInformationProtectionPinCharacterRequirements = null,
     pinUppercaseLetters: WindowsInformationProtectionPinCharacterRequirements = null,
     protectedAppLockerFiles: js.Array[WindowsInformationProtectionAppLockerFile] = null,
@@ -111,48 +111,48 @@ object WindowsInformationProtectionPolicy {
   ): WindowsInformationProtectionPolicy = {
     val __obj = js.Dynamic.literal()
     if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
-    if (!js.isUndefined(azureRightsManagementServicesAllowed)) __obj.updateDynamic("azureRightsManagementServicesAllowed")(azureRightsManagementServicesAllowed.asInstanceOf[js.Any])
+    if (!js.isUndefined(azureRightsManagementServicesAllowed)) __obj.updateDynamic("azureRightsManagementServicesAllowed")(azureRightsManagementServicesAllowed.get.asInstanceOf[js.Any])
     if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
     if (dataRecoveryCertificate != null) __obj.updateDynamic("dataRecoveryCertificate")(dataRecoveryCertificate.asInstanceOf[js.Any])
-    if (daysWithoutContactBeforeUnenroll != null) __obj.updateDynamic("daysWithoutContactBeforeUnenroll")(daysWithoutContactBeforeUnenroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(daysWithoutContactBeforeUnenroll)) __obj.updateDynamic("daysWithoutContactBeforeUnenroll")(daysWithoutContactBeforeUnenroll.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (enforcementLevel != null) __obj.updateDynamic("enforcementLevel")(enforcementLevel.asInstanceOf[js.Any])
     if (enterpriseDomain != null) __obj.updateDynamic("enterpriseDomain")(enterpriseDomain.asInstanceOf[js.Any])
     if (enterpriseIPRanges != null) __obj.updateDynamic("enterpriseIPRanges")(enterpriseIPRanges.asInstanceOf[js.Any])
-    if (!js.isUndefined(enterpriseIPRangesAreAuthoritative)) __obj.updateDynamic("enterpriseIPRangesAreAuthoritative")(enterpriseIPRangesAreAuthoritative.asInstanceOf[js.Any])
+    if (!js.isUndefined(enterpriseIPRangesAreAuthoritative)) __obj.updateDynamic("enterpriseIPRangesAreAuthoritative")(enterpriseIPRangesAreAuthoritative.get.asInstanceOf[js.Any])
     if (enterpriseInternalProxyServers != null) __obj.updateDynamic("enterpriseInternalProxyServers")(enterpriseInternalProxyServers.asInstanceOf[js.Any])
     if (enterpriseNetworkDomainNames != null) __obj.updateDynamic("enterpriseNetworkDomainNames")(enterpriseNetworkDomainNames.asInstanceOf[js.Any])
     if (enterpriseProtectedDomainNames != null) __obj.updateDynamic("enterpriseProtectedDomainNames")(enterpriseProtectedDomainNames.asInstanceOf[js.Any])
     if (enterpriseProxiedDomains != null) __obj.updateDynamic("enterpriseProxiedDomains")(enterpriseProxiedDomains.asInstanceOf[js.Any])
     if (enterpriseProxyServers != null) __obj.updateDynamic("enterpriseProxyServers")(enterpriseProxyServers.asInstanceOf[js.Any])
-    if (!js.isUndefined(enterpriseProxyServersAreAuthoritative)) __obj.updateDynamic("enterpriseProxyServersAreAuthoritative")(enterpriseProxyServersAreAuthoritative.asInstanceOf[js.Any])
+    if (!js.isUndefined(enterpriseProxyServersAreAuthoritative)) __obj.updateDynamic("enterpriseProxyServersAreAuthoritative")(enterpriseProxyServersAreAuthoritative.get.asInstanceOf[js.Any])
     if (exemptAppLockerFiles != null) __obj.updateDynamic("exemptAppLockerFiles")(exemptAppLockerFiles.asInstanceOf[js.Any])
     if (exemptApps != null) __obj.updateDynamic("exemptApps")(exemptApps.asInstanceOf[js.Any])
-    if (!js.isUndefined(iconsVisible)) __obj.updateDynamic("iconsVisible")(iconsVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(iconsVisible)) __obj.updateDynamic("iconsVisible")(iconsVisible.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(indexingEncryptedStoresOrItemsBlocked)) __obj.updateDynamic("indexingEncryptedStoresOrItemsBlocked")(indexingEncryptedStoresOrItemsBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAssigned)) __obj.updateDynamic("isAssigned")(isAssigned.asInstanceOf[js.Any])
+    if (!js.isUndefined(indexingEncryptedStoresOrItemsBlocked)) __obj.updateDynamic("indexingEncryptedStoresOrItemsBlocked")(indexingEncryptedStoresOrItemsBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAssigned)) __obj.updateDynamic("isAssigned")(isAssigned.get.asInstanceOf[js.Any])
     if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
     if (mdmEnrollmentUrl != null) __obj.updateDynamic("mdmEnrollmentUrl")(mdmEnrollmentUrl.asInstanceOf[js.Any])
-    if (minutesOfInactivityBeforeDeviceLock != null) __obj.updateDynamic("minutesOfInactivityBeforeDeviceLock")(minutesOfInactivityBeforeDeviceLock.asInstanceOf[js.Any])
+    if (!js.isUndefined(minutesOfInactivityBeforeDeviceLock)) __obj.updateDynamic("minutesOfInactivityBeforeDeviceLock")(minutesOfInactivityBeforeDeviceLock.get.asInstanceOf[js.Any])
     if (neutralDomainResources != null) __obj.updateDynamic("neutralDomainResources")(neutralDomainResources.asInstanceOf[js.Any])
-    if (numberOfPastPinsRemembered != null) __obj.updateDynamic("numberOfPastPinsRemembered")(numberOfPastPinsRemembered.asInstanceOf[js.Any])
-    if (passwordMaximumAttemptCount != null) __obj.updateDynamic("passwordMaximumAttemptCount")(passwordMaximumAttemptCount.asInstanceOf[js.Any])
-    if (pinExpirationDays != null) __obj.updateDynamic("pinExpirationDays")(pinExpirationDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfPastPinsRemembered)) __obj.updateDynamic("numberOfPastPinsRemembered")(numberOfPastPinsRemembered.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordMaximumAttemptCount)) __obj.updateDynamic("passwordMaximumAttemptCount")(passwordMaximumAttemptCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pinExpirationDays)) __obj.updateDynamic("pinExpirationDays")(pinExpirationDays.get.asInstanceOf[js.Any])
     if (pinLowercaseLetters != null) __obj.updateDynamic("pinLowercaseLetters")(pinLowercaseLetters.asInstanceOf[js.Any])
-    if (pinMinimumLength != null) __obj.updateDynamic("pinMinimumLength")(pinMinimumLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(pinMinimumLength)) __obj.updateDynamic("pinMinimumLength")(pinMinimumLength.get.asInstanceOf[js.Any])
     if (pinSpecialCharacters != null) __obj.updateDynamic("pinSpecialCharacters")(pinSpecialCharacters.asInstanceOf[js.Any])
     if (pinUppercaseLetters != null) __obj.updateDynamic("pinUppercaseLetters")(pinUppercaseLetters.asInstanceOf[js.Any])
     if (protectedAppLockerFiles != null) __obj.updateDynamic("protectedAppLockerFiles")(protectedAppLockerFiles.asInstanceOf[js.Any])
     if (protectedApps != null) __obj.updateDynamic("protectedApps")(protectedApps.asInstanceOf[js.Any])
-    if (!js.isUndefined(protectionUnderLockConfigRequired)) __obj.updateDynamic("protectionUnderLockConfigRequired")(protectionUnderLockConfigRequired.asInstanceOf[js.Any])
-    if (!js.isUndefined(revokeOnMdmHandoffDisabled)) __obj.updateDynamic("revokeOnMdmHandoffDisabled")(revokeOnMdmHandoffDisabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(revokeOnUnenrollDisabled)) __obj.updateDynamic("revokeOnUnenrollDisabled")(revokeOnUnenrollDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(protectionUnderLockConfigRequired)) __obj.updateDynamic("protectionUnderLockConfigRequired")(protectionUnderLockConfigRequired.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(revokeOnMdmHandoffDisabled)) __obj.updateDynamic("revokeOnMdmHandoffDisabled")(revokeOnMdmHandoffDisabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(revokeOnUnenrollDisabled)) __obj.updateDynamic("revokeOnUnenrollDisabled")(revokeOnUnenrollDisabled.get.asInstanceOf[js.Any])
     if (rightsManagementServicesTemplateId != null) __obj.updateDynamic("rightsManagementServicesTemplateId")(rightsManagementServicesTemplateId.asInstanceOf[js.Any])
     if (smbAutoEncryptedFileExtensions != null) __obj.updateDynamic("smbAutoEncryptedFileExtensions")(smbAutoEncryptedFileExtensions.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowsHelloForBusinessBlocked)) __obj.updateDynamic("windowsHelloForBusinessBlocked")(windowsHelloForBusinessBlocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowsHelloForBusinessBlocked)) __obj.updateDynamic("windowsHelloForBusinessBlocked")(windowsHelloForBusinessBlocked.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsInformationProtectionPolicy]
   }
 }

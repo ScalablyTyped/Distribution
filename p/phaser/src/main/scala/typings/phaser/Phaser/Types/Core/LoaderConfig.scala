@@ -50,22 +50,22 @@ object LoaderConfig {
     async: js.UndefOr[Boolean] = js.undefined,
     baseURL: String = null,
     crossOrigin: String = null,
-    maxParallelDownloads: Int | Double = null,
+    maxParallelDownloads: js.UndefOr[integer] = js.undefined,
     password: String = null,
     path: String = null,
     responseType: String = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[integer] = js.undefined,
     user: String = null
   ): LoaderConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
     if (baseURL != null) __obj.updateDynamic("baseURL")(baseURL.asInstanceOf[js.Any])
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
-    if (maxParallelDownloads != null) __obj.updateDynamic("maxParallelDownloads")(maxParallelDownloads.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxParallelDownloads)) __obj.updateDynamic("maxParallelDownloads")(maxParallelDownloads.get.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoaderConfig]
   }

@@ -18,24 +18,24 @@ trait ServerOptions extends js.Object {
 object ServerOptions {
   @scala.inline
   def apply(
-    disconnect_delay: Int | Double = null,
-    heartbeat_delay: Int | Double = null,
+    disconnect_delay: js.UndefOr[Double] = js.undefined,
+    heartbeat_delay: js.UndefOr[Double] = js.undefined,
     jsessionid: js.Any = null,
     log: (/* severity */ String, /* message */ String) => Unit = null,
     prefix: String = null,
-    response_limit: Int | Double = null,
+    response_limit: js.UndefOr[Double] = js.undefined,
     sockjs_url: String = null,
     websocket: js.UndefOr[Boolean] = js.undefined
   ): ServerOptions = {
     val __obj = js.Dynamic.literal()
-    if (disconnect_delay != null) __obj.updateDynamic("disconnect_delay")(disconnect_delay.asInstanceOf[js.Any])
-    if (heartbeat_delay != null) __obj.updateDynamic("heartbeat_delay")(heartbeat_delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(disconnect_delay)) __obj.updateDynamic("disconnect_delay")(disconnect_delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(heartbeat_delay)) __obj.updateDynamic("heartbeat_delay")(heartbeat_delay.get.asInstanceOf[js.Any])
     if (jsessionid != null) __obj.updateDynamic("jsessionid")(jsessionid.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(js.Any.fromFunction2(log))
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (response_limit != null) __obj.updateDynamic("response_limit")(response_limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(response_limit)) __obj.updateDynamic("response_limit")(response_limit.get.asInstanceOf[js.Any])
     if (sockjs_url != null) __obj.updateDynamic("sockjs_url")(sockjs_url.asInstanceOf[js.Any])
-    if (!js.isUndefined(websocket)) __obj.updateDynamic("websocket")(websocket.asInstanceOf[js.Any])
+    if (!js.isUndefined(websocket)) __obj.updateDynamic("websocket")(websocket.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerOptions]
   }
 }

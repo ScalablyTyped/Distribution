@@ -22,9 +22,13 @@ trait PollForJobsInput extends js.Object {
 
 object PollForJobsInput {
   @scala.inline
-  def apply(actionTypeId: ActionTypeId, maxBatchSize: Int | Double = null, queryParam: QueryParamMap = null): PollForJobsInput = {
+  def apply(
+    actionTypeId: ActionTypeId,
+    maxBatchSize: js.UndefOr[MaxBatchSize] = js.undefined,
+    queryParam: QueryParamMap = null
+  ): PollForJobsInput = {
     val __obj = js.Dynamic.literal(actionTypeId = actionTypeId.asInstanceOf[js.Any])
-    if (maxBatchSize != null) __obj.updateDynamic("maxBatchSize")(maxBatchSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxBatchSize)) __obj.updateDynamic("maxBatchSize")(maxBatchSize.get.asInstanceOf[js.Any])
     if (queryParam != null) __obj.updateDynamic("queryParam")(queryParam.asInstanceOf[js.Any])
     __obj.asInstanceOf[PollForJobsInput]
   }

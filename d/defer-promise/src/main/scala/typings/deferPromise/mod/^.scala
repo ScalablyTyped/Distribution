@@ -1,6 +1,6 @@
 package typings.deferPromise.mod
 
-import typings.deferPromise.mod._Global_.DeferPromise.Deferred
+import typings.deferPromise.mod.global.DeferPromise.Deferred
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

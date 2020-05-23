@@ -4,16 +4,12 @@ import typings.kendoUi.JQuery
 import typings.kendoUi.JQueryPromise
 import typings.kendoUi.kendo.drawing.PDFOptions
 import typings.kendoUi.kendo.ui.Widget
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.dataviz.ui.QRCode")
 @js.native
-class QRCode protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: QRCodeOptions) = this()
+trait QRCode extends Widget {
   @JSName("options")
   var options_QRCode: QRCodeOptions = js.native
   var wrapper: JQuery = js.native
@@ -27,13 +23,5 @@ class QRCode protected () extends Widget {
   def svg(): String = js.native
   def value(options: String): Unit = js.native
   def value(options: Double): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.dataviz.ui.QRCode")
-@js.native
-object QRCode extends js.Object {
-  var fn: QRCode = js.native
-  def extend(proto: js.Object): QRCode = js.native
 }
 

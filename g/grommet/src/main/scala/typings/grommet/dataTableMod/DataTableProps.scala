@@ -1,14 +1,14 @@
 package typings.grommet.dataTableMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.grommet.AnonAlign
-import typings.grommet.AnonBackground
-import typings.grommet.AnonBody
-import typings.grommet.AnonDatum
-import typings.grommet.AnonDirection
-import typings.grommet.AnonExpand
-import typings.grommet.AnonFooter
-import typings.grommet.AnonHeader
+import typings.grommet.anon.Align
+import typings.grommet.anon.Background
+import typings.grommet.anon.Body
+import typings.grommet.anon.Datum
+import typings.grommet.anon.Direction
+import typings.grommet.anon.Expand
+import typings.grommet.anon.Footer
+import typings.grommet.anon.Header
 import typings.grommet.grommetStrings.all
 import typings.grommet.grommetStrings.bottom
 import typings.grommet.grommetStrings.horizontal
@@ -37,29 +37,26 @@ import scala.scalajs.js.annotation._
 trait DataTableProps extends js.Object {
   var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
   var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
-  var background: js.UndefOr[String | AnonBody] = js.undefined
-  var border: js.UndefOr[Boolean | top | left | bottom | right | horizontal | vertical | all | AnonFooter] = js.undefined
-  var columns: js.UndefOr[js.Array[AnonAlign]] = js.undefined
+  var background: js.UndefOr[String | Body] = js.undefined
+  var border: js.UndefOr[Boolean | top | left | bottom | right | horizontal | vertical | all | Footer] = js.undefined
+  var columns: js.UndefOr[js.Array[Align]] = js.undefined
   var data: js.UndefOr[js.Array[js.Object]] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
-  var groupBy: js.UndefOr[String | AnonExpand] = js.undefined
+  var groupBy: js.UndefOr[String | Expand] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
   var onClickRow: js.UndefOr[
-    js.Function1[
-      (/* event */ AnonDatum) | (/* event */ MouseEvent[Element, NativeMouseEvent]), 
-      Unit
-    ]
+    js.Function1[(/* event */ Datum) | (/* event */ MouseEvent[Element, NativeMouseEvent]), Unit]
   ] = js.undefined
   var onMore: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var onSearch: js.UndefOr[js.Function1[/* search */ String, Unit]] = js.undefined
-  var onSort: js.UndefOr[js.Function1[/* sort */ AnonDirection, Unit]] = js.undefined
-  var pad: js.UndefOr[none | xxsmall | xsmall | small | medium | large | xlarge | AnonHeader | String] = js.undefined
+  var onSort: js.UndefOr[js.Function1[/* sort */ Direction, Unit]] = js.undefined
+  var pad: js.UndefOr[none | xxsmall | xsmall | small | medium | large | xlarge | Header | String] = js.undefined
   var primaryKey: js.UndefOr[String | Boolean] = js.undefined
   var replace: js.UndefOr[Boolean] = js.undefined
   var resizeable: js.UndefOr[Boolean] = js.undefined
-  var rowProps: js.UndefOr[StringDictionary[AnonBackground]] = js.undefined
+  var rowProps: js.UndefOr[StringDictionary[Background]] = js.undefined
   var size: js.UndefOr[small | medium | large | xlarge | String] = js.undefined
-  var sort: js.UndefOr[AnonDirection] = js.undefined
+  var sort: js.UndefOr[Direction] = js.undefined
   var sortable: js.UndefOr[Boolean] = js.undefined
   var step: js.UndefOr[Double] = js.undefined
 }
@@ -69,26 +66,26 @@ object DataTableProps {
   def apply(
     a11yTitle: A11yTitleType = null,
     alignSelf: AlignSelfType = null,
-    background: String | AnonBody = null,
-    border: Boolean | top | left | bottom | right | horizontal | vertical | all | AnonFooter = null,
-    columns: js.Array[AnonAlign] = null,
+    background: String | Body = null,
+    border: Boolean | top | left | bottom | right | horizontal | vertical | all | Footer = null,
+    columns: js.Array[Align] = null,
     data: js.Array[js.Object] = null,
     gridArea: GridAreaType = null,
-    groupBy: String | AnonExpand = null,
+    groupBy: String | Expand = null,
     margin: MarginType = null,
-    onClickRow: (/* event */ AnonDatum) | (/* event */ MouseEvent[Element, NativeMouseEvent]) => Unit = null,
+    onClickRow: (/* event */ Datum) | (/* event */ MouseEvent[Element, NativeMouseEvent]) => Unit = null,
     onMore: /* repeated */ js.Any => _ = null,
     onSearch: /* search */ String => Unit = null,
-    onSort: /* sort */ AnonDirection => Unit = null,
-    pad: none | xxsmall | xsmall | small | medium | large | xlarge | AnonHeader | String = null,
+    onSort: /* sort */ Direction => Unit = null,
+    pad: none | xxsmall | xsmall | small | medium | large | xlarge | Header | String = null,
     primaryKey: String | Boolean = null,
     replace: js.UndefOr[Boolean] = js.undefined,
     resizeable: js.UndefOr[Boolean] = js.undefined,
-    rowProps: StringDictionary[AnonBackground] = null,
+    rowProps: StringDictionary[Background] = null,
     size: small | medium | large | xlarge | String = null,
-    sort: AnonDirection = null,
+    sort: Direction = null,
     sortable: js.UndefOr[Boolean] = js.undefined,
-    step: Int | Double = null
+    step: js.UndefOr[Double] = js.undefined
   ): DataTableProps = {
     val __obj = js.Dynamic.literal()
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle.asInstanceOf[js.Any])
@@ -106,13 +103,13 @@ object DataTableProps {
     if (onSort != null) __obj.updateDynamic("onSort")(js.Any.fromFunction1(onSort))
     if (pad != null) __obj.updateDynamic("pad")(pad.asInstanceOf[js.Any])
     if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizeable)) __obj.updateDynamic("resizeable")(resizeable.asInstanceOf[js.Any])
+    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizeable)) __obj.updateDynamic("resizeable")(resizeable.get.asInstanceOf[js.Any])
     if (rowProps != null) __obj.updateDynamic("rowProps")(rowProps.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTableProps]
   }
 }

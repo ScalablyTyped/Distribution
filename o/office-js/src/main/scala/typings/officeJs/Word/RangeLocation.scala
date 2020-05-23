@@ -1,6 +1,5 @@
 package typings.officeJs.Word
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,26 +60,6 @@ object RangeLocation extends js.Object {
     */
   @js.native
   sealed trait whole extends RangeLocation
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[RangeLocation with String] = js.native
-  /* "After" */ @js.native
-  object after extends TopLevel[after with String]
-  
-  /* "Before" */ @js.native
-  object before extends TopLevel[before with String]
-  
-  /* "Content" */ @js.native
-  object content extends TopLevel[content with String]
-  
-  /* "End" */ @js.native
-  object end extends TopLevel[end with String]
-  
-  /* "Start" */ @js.native
-  object start extends TopLevel[start with String]
-  
-  /* "Whole" */ @js.native
-  object whole extends TopLevel[whole with String]
   
 }
 

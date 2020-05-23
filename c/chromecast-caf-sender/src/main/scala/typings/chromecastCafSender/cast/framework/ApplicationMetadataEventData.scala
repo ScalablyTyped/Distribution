@@ -4,10 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("cast.framework.ApplicationMetadataEventData")
-@js.native
-class ApplicationMetadataEventData protected () extends EventData {
-  def this(metadata: ApplicationMetadata) = this()
-  var metadata: ApplicationMetadata = js.native
+trait ApplicationMetadataEventData extends EventData {
+  var metadata: ApplicationMetadata
+}
+
+object ApplicationMetadataEventData {
+  @scala.inline
+  def apply(metadata: ApplicationMetadata, `type`: String): ApplicationMetadataEventData = {
+    val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ApplicationMetadataEventData]
+  }
 }
 

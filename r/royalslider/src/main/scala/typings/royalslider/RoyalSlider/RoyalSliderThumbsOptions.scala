@@ -73,24 +73,24 @@ object RoyalSliderThumbsOptions {
     firstMargin: js.UndefOr[Boolean] = js.undefined,
     fitInViewport: js.UndefOr[Boolean] = js.undefined,
     orientation: String = null,
-    spacing: Int | Double = null,
+    spacing: js.UndefOr[Double] = js.undefined,
     touch: js.UndefOr[Boolean] = js.undefined,
-    transitionSpeed: Int | Double = null
+    transitionSpeed: js.UndefOr[Double] = js.undefined
   ): RoyalSliderThumbsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(appendSpan)) __obj.updateDynamic("appendSpan")(appendSpan.asInstanceOf[js.Any])
+    if (!js.isUndefined(appendSpan)) __obj.updateDynamic("appendSpan")(appendSpan.get.asInstanceOf[js.Any])
     if (arrowLeft != null) __obj.updateDynamic("arrowLeft")(arrowLeft.asInstanceOf[js.Any])
     if (arrowRight != null) __obj.updateDynamic("arrowRight")(arrowRight.asInstanceOf[js.Any])
-    if (!js.isUndefined(arrows)) __obj.updateDynamic("arrows")(arrows.asInstanceOf[js.Any])
-    if (!js.isUndefined(arrowsAutoHide)) __obj.updateDynamic("arrowsAutoHide")(arrowsAutoHide.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoCenter)) __obj.updateDynamic("autoCenter")(autoCenter.asInstanceOf[js.Any])
-    if (!js.isUndefined(drag)) __obj.updateDynamic("drag")(drag.asInstanceOf[js.Any])
-    if (!js.isUndefined(firstMargin)) __obj.updateDynamic("firstMargin")(firstMargin.asInstanceOf[js.Any])
-    if (!js.isUndefined(fitInViewport)) __obj.updateDynamic("fitInViewport")(fitInViewport.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrows)) __obj.updateDynamic("arrows")(arrows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrowsAutoHide)) __obj.updateDynamic("arrowsAutoHide")(arrowsAutoHide.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCenter)) __obj.updateDynamic("autoCenter")(autoCenter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(drag)) __obj.updateDynamic("drag")(drag.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstMargin)) __obj.updateDynamic("firstMargin")(firstMargin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fitInViewport)) __obj.updateDynamic("fitInViewport")(fitInViewport.get.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
-    if (!js.isUndefined(touch)) __obj.updateDynamic("touch")(touch.asInstanceOf[js.Any])
-    if (transitionSpeed != null) __obj.updateDynamic("transitionSpeed")(transitionSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(spacing)) __obj.updateDynamic("spacing")(spacing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(touch)) __obj.updateDynamic("touch")(touch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitionSpeed)) __obj.updateDynamic("transitionSpeed")(transitionSpeed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoyalSliderThumbsOptions]
   }
 }

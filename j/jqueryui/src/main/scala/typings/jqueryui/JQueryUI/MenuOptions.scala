@@ -31,7 +31,7 @@ object MenuOptions {
     val __obj = js.Dynamic.literal()
     if (blur != null) __obj.updateDynamic("blur")(js.Any.fromFunction2(blur))
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (focus != null) __obj.updateDynamic("focus")(js.Any.fromFunction2(focus))
     if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
     if (menus != null) __obj.updateDynamic("menus")(menus.asInstanceOf[js.Any])

@@ -25,12 +25,12 @@ object FleetSpotOptions {
   def apply(
     allocationStrategy: String = null,
     instanceInterruptionBehavior: String = null,
-    instancePoolsToUseCount: Int | Double = null
+    instancePoolsToUseCount: js.UndefOr[Double] = js.undefined
   ): FleetSpotOptions = {
     val __obj = js.Dynamic.literal()
     if (allocationStrategy != null) __obj.updateDynamic("allocationStrategy")(allocationStrategy.asInstanceOf[js.Any])
     if (instanceInterruptionBehavior != null) __obj.updateDynamic("instanceInterruptionBehavior")(instanceInterruptionBehavior.asInstanceOf[js.Any])
-    if (instancePoolsToUseCount != null) __obj.updateDynamic("instancePoolsToUseCount")(instancePoolsToUseCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(instancePoolsToUseCount)) __obj.updateDynamic("instancePoolsToUseCount")(instancePoolsToUseCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FleetSpotOptions]
   }
 }

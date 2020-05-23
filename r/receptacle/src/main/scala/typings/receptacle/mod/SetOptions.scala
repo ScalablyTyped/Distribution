@@ -12,11 +12,15 @@ trait SetOptions[X] extends js.Object {
 
 object SetOptions {
   @scala.inline
-  def apply[X](meta: X = null, refresh: js.UndefOr[Boolean] = js.undefined, ttl: Int | Double = null): SetOptions[X] = {
+  def apply[X](
+    meta: X = null,
+    refresh: js.UndefOr[Boolean] = js.undefined,
+    ttl: js.UndefOr[Double] = js.undefined
+  ): SetOptions[X] = {
     val __obj = js.Dynamic.literal()
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (!js.isUndefined(refresh)) __obj.updateDynamic("refresh")(refresh.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(refresh)) __obj.updateDynamic("refresh")(refresh.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetOptions[X]]
   }
 }

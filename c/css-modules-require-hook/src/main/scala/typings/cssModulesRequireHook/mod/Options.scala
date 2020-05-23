@@ -59,9 +59,9 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (append != null) __obj.updateDynamic("append")(append.asInstanceOf[js.Any])
-    if (!js.isUndefined(camelCase)) __obj.updateDynamic("camelCase")(camelCase.asInstanceOf[js.Any])
+    if (!js.isUndefined(camelCase)) __obj.updateDynamic("camelCase")(camelCase.get.asInstanceOf[js.Any])
     if (createImportedName != null) __obj.updateDynamic("createImportedName")(createImportedName.asInstanceOf[js.Any])
-    if (!js.isUndefined(devMode)) __obj.updateDynamic("devMode")(devMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(devMode)) __obj.updateDynamic("devMode")(devMode.get.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (generateScopedName != null) __obj.updateDynamic("generateScopedName")(generateScopedName.asInstanceOf[js.Any])
     if (hashPrefix != null) __obj.updateDynamic("hashPrefix")(hashPrefix.asInstanceOf[js.Any])

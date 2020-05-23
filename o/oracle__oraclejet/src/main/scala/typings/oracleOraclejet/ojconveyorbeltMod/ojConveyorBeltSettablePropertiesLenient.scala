@@ -18,7 +18,7 @@ trait ojConveyorBeltSettablePropertiesLenient
 object ojConveyorBeltSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     contentParent: String = null,
     orientation: horizontal | vertical = null,
     translations: js.Object = null

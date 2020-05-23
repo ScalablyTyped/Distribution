@@ -17,14 +17,14 @@ object Action {
   def apply(
     `type`: String,
     meta: Meta = null,
-    navKey: Nullable[String] = null,
+    navKey: js.UndefOr[Null | Nullable[String]] = js.undefined,
     payload: Payload = null,
     query: Query = null
   ): Action = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (navKey != null) __obj.updateDynamic("navKey")(navKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(navKey)) __obj.updateDynamic("navKey")(navKey.asInstanceOf[js.Any])
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action]

@@ -5,16 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Devices.Sensors.AccelerometerReading")
-@js.native
-class AccelerometerReading () extends IAccelerometerReading {
-  /* CompleteClass */
-  override var accelerationX: Double = js.native
-  /* CompleteClass */
-  override var accelerationY: Double = js.native
-  /* CompleteClass */
-  override var accelerationZ: Double = js.native
-  /* CompleteClass */
-  override var timestamp: Date = js.native
+trait AccelerometerReading extends IAccelerometerReading
+
+object AccelerometerReading {
+  @scala.inline
+  def apply(accelerationX: Double, accelerationY: Double, accelerationZ: Double, timestamp: Date): AccelerometerReading = {
+    val __obj = js.Dynamic.literal(accelerationX = accelerationX.asInstanceOf[js.Any], accelerationY = accelerationY.asInstanceOf[js.Any], accelerationZ = accelerationZ.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AccelerometerReading]
+  }
 }
 

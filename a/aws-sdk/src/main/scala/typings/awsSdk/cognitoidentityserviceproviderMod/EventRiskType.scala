@@ -23,12 +23,12 @@ trait EventRiskType extends js.Object {
 object EventRiskType {
   @scala.inline
   def apply(
-    CompromisedCredentialsDetected: js.UndefOr[Boolean] = js.undefined,
+    CompromisedCredentialsDetected: js.UndefOr[WrappedBooleanType] = js.undefined,
     RiskDecision: RiskDecisionType = null,
     RiskLevel: RiskLevelType = null
   ): EventRiskType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CompromisedCredentialsDetected)) __obj.updateDynamic("CompromisedCredentialsDetected")(CompromisedCredentialsDetected.asInstanceOf[js.Any])
+    if (!js.isUndefined(CompromisedCredentialsDetected)) __obj.updateDynamic("CompromisedCredentialsDetected")(CompromisedCredentialsDetected.get.asInstanceOf[js.Any])
     if (RiskDecision != null) __obj.updateDynamic("RiskDecision")(RiskDecision.asInstanceOf[js.Any])
     if (RiskLevel != null) __obj.updateDynamic("RiskLevel")(RiskLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventRiskType]

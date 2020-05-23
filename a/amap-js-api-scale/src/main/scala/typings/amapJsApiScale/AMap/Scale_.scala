@@ -2,7 +2,6 @@ package typings.amapJsApiScale.AMap
 
 import typings.amapJsApi.AMap.EventEmitter
 import typings.amapJsApi.AMap.Pixel
-import typings.amapJsApiScale.AMap.Scale.Options
 import typings.std.Position
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,10 +10,8 @@ import scala.scalajs.js.annotation._
 /**
   * 比例尺插件
   */
-@JSGlobal("AMap.Scale")
 @js.native
-class Scale_ () extends EventEmitter {
-  def this(options: Options) = this()
+trait Scale_ extends EventEmitter {
   /**
     * 相对于地图容器左上角的偏移量
     */

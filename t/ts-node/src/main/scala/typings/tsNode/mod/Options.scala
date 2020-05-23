@@ -27,22 +27,22 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    cache: js.UndefOr[Boolean] = js.undefined,
+    cache: js.UndefOr[Null | Boolean] = js.undefined,
     cacheDirectory: String = null,
     compiler: String = null,
     compilerOptions: js.Object = null,
     fileExists: /* path */ String => Boolean = null,
-    files: js.UndefOr[Boolean] = js.undefined,
+    files: js.UndefOr[Null | Boolean] = js.undefined,
     ignore: String | js.Array[String] = null,
     ignoreDiagnostics: Double | String | (js.Array[Double | String]) = null,
-    pretty: js.UndefOr[Boolean] = js.undefined,
+    pretty: js.UndefOr[Null | Boolean] = js.undefined,
     project: String = null,
     readFile: /* path */ String => js.UndefOr[String] = null,
-    skipIgnore: js.UndefOr[Boolean] = js.undefined,
-    skipProject: js.UndefOr[Boolean] = js.undefined,
+    skipIgnore: js.UndefOr[Null | Boolean] = js.undefined,
+    skipProject: js.UndefOr[Null | Boolean] = js.undefined,
     transformers: CustomTransformers = null,
-    transpileOnly: js.UndefOr[Boolean] = js.undefined,
-    typeCheck: js.UndefOr[Boolean] = js.undefined
+    transpileOnly: js.UndefOr[Null | Boolean] = js.undefined,
+    typeCheck: js.UndefOr[Null | Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])

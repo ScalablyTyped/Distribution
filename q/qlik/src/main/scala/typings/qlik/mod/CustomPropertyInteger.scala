@@ -21,7 +21,7 @@ object CustomPropertyInteger {
   def apply(
     `type`: integer,
     component: String = null,
-    defaultValue: Int | Double = null,
+    defaultValue: js.UndefOr[Double] = js.undefined,
     label: String = null,
     max: String = null,
     min: String = null,
@@ -31,7 +31,7 @@ object CustomPropertyInteger {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])

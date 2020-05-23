@@ -20,7 +20,7 @@ object pluploadFilters {
     val __obj = js.Dynamic.literal()
     if (max_file_size != null) __obj.updateDynamic("max_file_size")(max_file_size.asInstanceOf[js.Any])
     if (mime_types != null) __obj.updateDynamic("mime_types")(mime_types.asInstanceOf[js.Any])
-    if (!js.isUndefined(prevent_duplicates)) __obj.updateDynamic("prevent_duplicates")(prevent_duplicates.asInstanceOf[js.Any])
+    if (!js.isUndefined(prevent_duplicates)) __obj.updateDynamic("prevent_duplicates")(prevent_duplicates.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[pluploadFilters]
   }
 }

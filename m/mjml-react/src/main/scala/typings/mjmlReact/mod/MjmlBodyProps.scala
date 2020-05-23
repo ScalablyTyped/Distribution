@@ -12,10 +12,10 @@ trait MjmlBodyProps extends js.Object {
 
 object MjmlBodyProps {
   @scala.inline
-  def apply(backgroundColor: BackgroundColorProperty = null, width: Int | Double = null): MjmlBodyProps = {
+  def apply(backgroundColor: BackgroundColorProperty = null, width: js.UndefOr[Double] = js.undefined): MjmlBodyProps = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MjmlBodyProps]
   }
 }

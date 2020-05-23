@@ -55,9 +55,9 @@ trait CloudWatchLogsLogStream extends js.Object {
 object CloudWatchLogsLogStream {
   @scala.inline
   def apply(
-    BatchCount: Int | scala.Double = null,
-    BatchSize: Int | scala.Double = null,
-    BufferDuration: Int | scala.Double = null,
+    BatchCount: js.UndefOr[Integer] = js.undefined,
+    BatchSize: js.UndefOr[Integer] = js.undefined,
+    BufferDuration: js.UndefOr[Integer] = js.undefined,
     DatetimeFormat: String = null,
     Encoding: CloudWatchLogsEncoding = null,
     File: String = null,
@@ -68,9 +68,9 @@ object CloudWatchLogsLogStream {
     TimeZone: CloudWatchLogsTimeZone = null
   ): CloudWatchLogsLogStream = {
     val __obj = js.Dynamic.literal()
-    if (BatchCount != null) __obj.updateDynamic("BatchCount")(BatchCount.asInstanceOf[js.Any])
-    if (BatchSize != null) __obj.updateDynamic("BatchSize")(BatchSize.asInstanceOf[js.Any])
-    if (BufferDuration != null) __obj.updateDynamic("BufferDuration")(BufferDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(BatchCount)) __obj.updateDynamic("BatchCount")(BatchCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(BatchSize)) __obj.updateDynamic("BatchSize")(BatchSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(BufferDuration)) __obj.updateDynamic("BufferDuration")(BufferDuration.get.asInstanceOf[js.Any])
     if (DatetimeFormat != null) __obj.updateDynamic("DatetimeFormat")(DatetimeFormat.asInstanceOf[js.Any])
     if (Encoding != null) __obj.updateDynamic("Encoding")(Encoding.asInstanceOf[js.Any])
     if (File != null) __obj.updateDynamic("File")(File.asInstanceOf[js.Any])

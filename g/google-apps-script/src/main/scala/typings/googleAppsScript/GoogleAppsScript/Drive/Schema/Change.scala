@@ -36,7 +36,7 @@ object Change {
     `type`: String = null
   ): Change = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
     if (drive != null) __obj.updateDynamic("drive")(drive.asInstanceOf[js.Any])
     if (driveId != null) __obj.updateDynamic("driveId")(driveId.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])

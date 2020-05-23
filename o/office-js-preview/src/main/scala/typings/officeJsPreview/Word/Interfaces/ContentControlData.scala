@@ -185,7 +185,7 @@ object ContentControlData {
     color: String = null,
     contentControls: js.Array[ContentControlData] = null,
     font: FontData = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     inlinePictures: js.Array[InlinePictureData] = null,
     lists: js.Array[ListData] = null,
     paragraphs: js.Array[ParagraphData] = null,
@@ -202,17 +202,17 @@ object ContentControlData {
   ): ContentControlData = {
     val __obj = js.Dynamic.literal()
     if (appearance != null) __obj.updateDynamic("appearance")(appearance.asInstanceOf[js.Any])
-    if (!js.isUndefined(cannotDelete)) __obj.updateDynamic("cannotDelete")(cannotDelete.asInstanceOf[js.Any])
-    if (!js.isUndefined(cannotEdit)) __obj.updateDynamic("cannotEdit")(cannotEdit.asInstanceOf[js.Any])
+    if (!js.isUndefined(cannotDelete)) __obj.updateDynamic("cannotDelete")(cannotDelete.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cannotEdit)) __obj.updateDynamic("cannotEdit")(cannotEdit.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (contentControls != null) __obj.updateDynamic("contentControls")(contentControls.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (inlinePictures != null) __obj.updateDynamic("inlinePictures")(inlinePictures.asInstanceOf[js.Any])
     if (lists != null) __obj.updateDynamic("lists")(lists.asInstanceOf[js.Any])
     if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs.asInstanceOf[js.Any])
     if (placeholderText != null) __obj.updateDynamic("placeholderText")(placeholderText.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeWhenEdited)) __obj.updateDynamic("removeWhenEdited")(removeWhenEdited.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeWhenEdited)) __obj.updateDynamic("removeWhenEdited")(removeWhenEdited.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (styleBuiltIn != null) __obj.updateDynamic("styleBuiltIn")(styleBuiltIn.asInstanceOf[js.Any])
     if (subtype != null) __obj.updateDynamic("subtype")(subtype.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 package typings.atom.linterMod
 
-import typings.atom.AnonFile
-import typings.atom.AnonPosition
+import typings.atom.anon.File
+import typings.atom.anon.Position
 import typings.atom.atomStrings.error
 import typings.atom.atomStrings.info
 import typings.atom.atomStrings.warning
@@ -22,9 +22,9 @@ trait Message extends js.Object {
   /** Optionally override the displayed linter name. Defaults to provider name. */
   var linterName: js.UndefOr[String] = js.undefined
   /** The location of the issue (aka where to highlight). */
-  var location: AnonFile
+  var location: File
   /** A reference to a different location in the editor. */
-  var reference: js.UndefOr[AnonPosition] = js.undefined
+  var reference: js.UndefOr[Position] = js.undefined
   /** The severity level for the message. */
   var severity: error | warning | info
   /** Possible solutions (which the user can invoke at will). */
@@ -37,12 +37,12 @@ object Message {
   @scala.inline
   def apply(
     excerpt: String,
-    location: AnonFile,
+    location: File,
     severity: error | warning | info,
     description: String | (js.Function0[js.Promise[String] | String]) = null,
     icon: String = null,
     linterName: String = null,
-    reference: AnonPosition = null,
+    reference: Position = null,
     solutions: js.Array[ReplacementSolution | CallbackSolution] = null,
     url: String = null
   ): Message = {

@@ -18,13 +18,13 @@ object SectionListScrollParams {
     itemIndex: Double,
     sectionIndex: Double,
     animated: js.UndefOr[Boolean] = js.undefined,
-    viewOffset: Int | Double = null,
-    viewPosition: Int | Double = null
+    viewOffset: js.UndefOr[Double] = js.undefined,
+    viewPosition: js.UndefOr[Double] = js.undefined
   ): SectionListScrollParams = {
     val __obj = js.Dynamic.literal(itemIndex = itemIndex.asInstanceOf[js.Any], sectionIndex = sectionIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
-    if (viewOffset != null) __obj.updateDynamic("viewOffset")(viewOffset.asInstanceOf[js.Any])
-    if (viewPosition != null) __obj.updateDynamic("viewPosition")(viewPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewOffset)) __obj.updateDynamic("viewOffset")(viewOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewPosition)) __obj.updateDynamic("viewPosition")(viewPosition.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SectionListScrollParams]
   }
 }

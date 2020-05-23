@@ -14,6 +14,12 @@ import typings.graphql.mod.GraphQLObjectType
 import typings.graphql.mod.GraphQLScalarType
 import typings.graphql.mod.GraphQLSchema
 import typings.graphql.mod.GraphQLUnionType
+import typings.graphqlTools.anon.Args
+import typings.graphqlTools.anon.EnumType
+import typings.graphqlTools.anon.FieldObjectType
+import typings.graphqlTools.anon.ObjectType
+import typings.graphqlTools.anon.ObjectTypeGraphQLInputObjectType
+import typings.graphqlTools.anon.TypeofSchemaDirectiveVisi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +29,7 @@ import scala.scalajs.js.annotation._
 object schemaVisitorMod extends js.Object {
   @js.native
   class SchemaDirectiveVisitor protected () extends SchemaVisitor {
-    protected def this(config: AnonArgs) = this()
+    protected def this(config: Args) = this()
     var args: StringDictionary[js.Any] = js.native
     var context: StringDictionary[js.Any] = js.native
     var name: String = js.native
@@ -33,11 +39,11 @@ object schemaVisitorMod extends js.Object {
   @js.native
   abstract class SchemaVisitor () extends js.Object {
     var schema: GraphQLSchema = js.native
-    def visitArgumentDefinition(argument: GraphQLArgument, details: AnonFieldObjectType): GraphQLArgument | Unit | Null = js.native
+    def visitArgumentDefinition(argument: GraphQLArgument, details: FieldObjectType): GraphQLArgument | Unit | Null = js.native
     def visitEnum(`type`: GraphQLEnumType): GraphQLEnumType | Unit | Null = js.native
-    def visitEnumValue(value: GraphQLEnumValue, details: AnonEnumType): GraphQLEnumValue | Unit | Null = js.native
-    def visitFieldDefinition(field: GraphQLField[_, _, StringDictionary[_]], details: AnonObjectType): (GraphQLField[_, _, StringDictionary[_]]) | Unit | Null = js.native
-    def visitInputFieldDefinition(field: GraphQLInputField, details: AnonObjectTypeGraphQLInputObjectType): GraphQLInputField | Unit | Null = js.native
+    def visitEnumValue(value: GraphQLEnumValue, details: EnumType): GraphQLEnumValue | Unit | Null = js.native
+    def visitFieldDefinition(field: GraphQLField[_, _, StringDictionary[_]], details: ObjectType): (GraphQLField[_, _, StringDictionary[_]]) | Unit | Null = js.native
+    def visitInputFieldDefinition(field: GraphQLInputField, details: ObjectTypeGraphQLInputObjectType): GraphQLInputField | Unit | Null = js.native
     def visitInputObject(`object`: GraphQLInputObjectType): GraphQLInputObjectType | Unit | Null = js.native
     def visitInterface(iface: GraphQLInterfaceType): GraphQLInterfaceType | Unit | Null = js.native
     def visitObject(`object`: GraphQLObjectType[_, _, StringDictionary[_]]): (GraphQLObjectType[_, _, StringDictionary[_]]) | Unit | Null = js.native

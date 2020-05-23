@@ -1,7 +1,6 @@
 package typings.googleGax.bundleExecutorMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.googleGax.FnArguments
 import typings.googleGax.apitypesMod.GRPCCallResult
 import typings.googleGax.apitypesMod.SimpleCallbackFunction
 import typings.googleGax.bundleDescriptorMod.BundleDescriptor
@@ -44,7 +43,11 @@ class BundleExecutor protected () extends js.Object {
   var _maybeClearTimeout: js.Any = js.native
   var _options: BundleOptions = js.native
   var _tasks: StringDictionary[Task] = js.native
-  var _timers: StringDictionary[ReturnType[FnArguments]] = js.native
+  var _timers: StringDictionary[
+    ReturnType[
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof setTimeout */ _
+    ]
+  ] = js.native
   /**
     * Invokes a task.
     *

@@ -2,7 +2,7 @@ package typings.storybookAddonKnobs.checkboxesMod
 
 import typings.react.mod.ChangeEvent
 import typings.react.mod.Component
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

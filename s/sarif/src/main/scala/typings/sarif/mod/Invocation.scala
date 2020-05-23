@@ -125,13 +125,13 @@ object Invocation {
     endTimeUtc: String = null,
     environmentVariables: StringDictionary[String] = null,
     executableLocation: ArtifactLocation = null,
-    exitCode: Int | Double = null,
+    exitCode: js.UndefOr[Double] = js.undefined,
     exitCodeDescription: String = null,
     exitSignalName: String = null,
-    exitSignalNumber: Int | Double = null,
+    exitSignalNumber: js.UndefOr[Double] = js.undefined,
     machine: String = null,
     notificationConfigurationOverrides: js.Array[ConfigurationOverride] = null,
-    processId: Int | Double = null,
+    processId: js.UndefOr[Double] = js.undefined,
     processStartFailureMessage: String = null,
     properties: PropertyBag = null,
     responseFiles: js.Array[ArtifactLocation] = null,
@@ -152,13 +152,13 @@ object Invocation {
     if (endTimeUtc != null) __obj.updateDynamic("endTimeUtc")(endTimeUtc.asInstanceOf[js.Any])
     if (environmentVariables != null) __obj.updateDynamic("environmentVariables")(environmentVariables.asInstanceOf[js.Any])
     if (executableLocation != null) __obj.updateDynamic("executableLocation")(executableLocation.asInstanceOf[js.Any])
-    if (exitCode != null) __obj.updateDynamic("exitCode")(exitCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(exitCode)) __obj.updateDynamic("exitCode")(exitCode.get.asInstanceOf[js.Any])
     if (exitCodeDescription != null) __obj.updateDynamic("exitCodeDescription")(exitCodeDescription.asInstanceOf[js.Any])
     if (exitSignalName != null) __obj.updateDynamic("exitSignalName")(exitSignalName.asInstanceOf[js.Any])
-    if (exitSignalNumber != null) __obj.updateDynamic("exitSignalNumber")(exitSignalNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(exitSignalNumber)) __obj.updateDynamic("exitSignalNumber")(exitSignalNumber.get.asInstanceOf[js.Any])
     if (machine != null) __obj.updateDynamic("machine")(machine.asInstanceOf[js.Any])
     if (notificationConfigurationOverrides != null) __obj.updateDynamic("notificationConfigurationOverrides")(notificationConfigurationOverrides.asInstanceOf[js.Any])
-    if (processId != null) __obj.updateDynamic("processId")(processId.asInstanceOf[js.Any])
+    if (!js.isUndefined(processId)) __obj.updateDynamic("processId")(processId.get.asInstanceOf[js.Any])
     if (processStartFailureMessage != null) __obj.updateDynamic("processStartFailureMessage")(processStartFailureMessage.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (responseFiles != null) __obj.updateDynamic("responseFiles")(responseFiles.asInstanceOf[js.Any])

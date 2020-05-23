@@ -26,20 +26,20 @@ object Intersection {
     distance: Double,
     `object`: Object3D,
     point: Vector3,
-    distanceToRay: Int | Double = null,
-    face: Face3 = null,
-    faceIndex: Int | Double = null,
-    index: Int | Double = null,
-    instanceId: Int | Double = null,
+    distanceToRay: js.UndefOr[Double] = js.undefined,
+    face: js.UndefOr[Null | Face3] = js.undefined,
+    faceIndex: js.UndefOr[Double] = js.undefined,
+    index: js.UndefOr[Double] = js.undefined,
+    instanceId: js.UndefOr[Double] = js.undefined,
     uv: Vector2 = null
   ): Intersection = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (distanceToRay != null) __obj.updateDynamic("distanceToRay")(distanceToRay.asInstanceOf[js.Any])
-    if (face != null) __obj.updateDynamic("face")(face.asInstanceOf[js.Any])
-    if (faceIndex != null) __obj.updateDynamic("faceIndex")(faceIndex.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
+    if (!js.isUndefined(distanceToRay)) __obj.updateDynamic("distanceToRay")(distanceToRay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(face)) __obj.updateDynamic("face")(face.asInstanceOf[js.Any])
+    if (!js.isUndefined(faceIndex)) __obj.updateDynamic("faceIndex")(faceIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(instanceId)) __obj.updateDynamic("instanceId")(instanceId.get.asInstanceOf[js.Any])
     if (uv != null) __obj.updateDynamic("uv")(uv.asInstanceOf[js.Any])
     __obj.asInstanceOf[Intersection]
   }

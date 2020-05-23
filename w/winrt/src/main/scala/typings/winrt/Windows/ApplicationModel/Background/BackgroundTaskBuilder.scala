@@ -4,18 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.Background.BackgroundTaskBuilder")
-@js.native
-class BackgroundTaskBuilder () extends IBackgroundTaskBuilder {
-  /* CompleteClass */
-  override var name: String = js.native
-  /* CompleteClass */
-  override var taskEntryPoint: String = js.native
-  /* CompleteClass */
-  override def addCondition(condition: IBackgroundCondition): Unit = js.native
-  /* CompleteClass */
-  override def register(): BackgroundTaskRegistration = js.native
-  /* CompleteClass */
-  override def setTrigger(trigger: IBackgroundTrigger): Unit = js.native
+trait BackgroundTaskBuilder extends IBackgroundTaskBuilder
+
+object BackgroundTaskBuilder {
+  @scala.inline
+  def apply(
+    addCondition: IBackgroundCondition => Unit,
+    name: String,
+    register: () => BackgroundTaskRegistration,
+    setTrigger: IBackgroundTrigger => Unit,
+    taskEntryPoint: String
+  ): BackgroundTaskBuilder = {
+    val __obj = js.Dynamic.literal(addCondition = js.Any.fromFunction1(addCondition), name = name.asInstanceOf[js.Any], register = js.Any.fromFunction0(register), setTrigger = js.Any.fromFunction1(setTrigger), taskEntryPoint = taskEntryPoint.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BackgroundTaskBuilder]
+  }
 }
 

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`integrated-mesh`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,8 +20,4 @@ trait IntegratedMeshLayer
   @JSName("type")
   val type_IntegratedMeshLayer: `integrated-mesh` = js.native
 }
-
-@JSGlobal("__esri.IntegratedMeshLayer")
-@js.native
-object IntegratedMeshLayer extends TopLevel[IntegratedMeshLayerConstructor]
 

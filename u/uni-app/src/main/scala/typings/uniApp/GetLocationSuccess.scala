@@ -44,22 +44,22 @@ object GetLocationSuccess {
   def apply(
     accuracy: String = null,
     address: js.Any = null,
-    altitude: Int | Double = null,
-    horizontalAccuracy: Int | Double = null,
-    latitude: Int | Double = null,
-    longitude: Int | Double = null,
-    speed: Int | Double = null,
-    verticalAccuracy: Int | Double = null
+    altitude: js.UndefOr[Double] = js.undefined,
+    horizontalAccuracy: js.UndefOr[Double] = js.undefined,
+    latitude: js.UndefOr[Double] = js.undefined,
+    longitude: js.UndefOr[Double] = js.undefined,
+    speed: js.UndefOr[Double] = js.undefined,
+    verticalAccuracy: js.UndefOr[Double] = js.undefined
   ): GetLocationSuccess = {
     val __obj = js.Dynamic.literal()
     if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy.asInstanceOf[js.Any])
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
-    if (horizontalAccuracy != null) __obj.updateDynamic("horizontalAccuracy")(horizontalAccuracy.asInstanceOf[js.Any])
-    if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
-    if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
-    if (verticalAccuracy != null) __obj.updateDynamic("verticalAccuracy")(verticalAccuracy.asInstanceOf[js.Any])
+    if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalAccuracy)) __obj.updateDynamic("horizontalAccuracy")(horizontalAccuracy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(latitude)) __obj.updateDynamic("latitude")(latitude.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(longitude)) __obj.updateDynamic("longitude")(longitude.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalAccuracy)) __obj.updateDynamic("verticalAccuracy")(verticalAccuracy.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLocationSuccess]
   }
 }

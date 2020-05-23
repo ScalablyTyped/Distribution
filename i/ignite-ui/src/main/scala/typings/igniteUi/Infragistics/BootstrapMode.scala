@@ -1,14 +1,18 @@
 package typings.igniteUi.Infragistics
 
-import typings.igniteUi.BootstrapModeSettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Infragistics.BootstrapMode")
-@js.native
-class BootstrapMode protected () extends js.Object {
-  def this(settings: BootstrapModeSettings) = this()
-  def isActive(): Unit = js.native
+trait BootstrapMode extends js.Object {
+  def isActive(): Unit
+}
+
+object BootstrapMode {
+  @scala.inline
+  def apply(isActive: () => Unit): BootstrapMode = {
+    val __obj = js.Dynamic.literal(isActive = js.Any.fromFunction0(isActive))
+    __obj.asInstanceOf[BootstrapMode]
+  }
 }
 

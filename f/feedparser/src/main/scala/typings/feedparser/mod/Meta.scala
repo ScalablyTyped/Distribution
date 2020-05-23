@@ -47,12 +47,10 @@ object Meta {
     date: Date = null,
     pubdate: Date = null
   ): Meta = {
-    val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], copyright = copyright.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], favicon = favicon.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], xmlurl = xmlurl.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], copyright = copyright.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], favicon = favicon.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], xmlurl = xmlurl.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], pubdate = pubdate.asInstanceOf[js.Any])
     __obj.updateDynamic("#ns")(Numbersignns.asInstanceOf[js.Any])
     __obj.updateDynamic("#type")(Numbersigntype.asInstanceOf[js.Any])
     __obj.updateDynamic("#version")(Numbersignversion.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (pubdate != null) __obj.updateDynamic("pubdate")(pubdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Meta]
   }
 }

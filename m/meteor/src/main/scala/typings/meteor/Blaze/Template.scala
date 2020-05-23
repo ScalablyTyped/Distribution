@@ -1,6 +1,5 @@
 package typings.meteor.Blaze
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,7 +24,27 @@ trait Template extends js.Object {
   def onRendered(cb: js.Function): Unit
 }
 
-@JSGlobal("Blaze.Template")
-@js.native
-object Template extends TopLevel[TemplateStatic]
+object Template {
+  @scala.inline
+  def apply(
+    $: js.Any,
+    constructView: () => View,
+    created: js.Function,
+    destroyed: js.Function,
+    events: EventsMap => Unit,
+    find: String => HTMLElement,
+    findAll: String => js.Array[HTMLElement],
+    head: Template,
+    helpers: HelpersMap => Unit,
+    onCreated: js.Function => Unit,
+    onDestroyed: js.Function => Unit,
+    onRendered: js.Function => Unit,
+    renderFunction: js.Function,
+    rendered: js.Function,
+    viewName: String
+  ): Template = {
+    val __obj = js.Dynamic.literal($ = $.asInstanceOf[js.Any], constructView = js.Any.fromFunction0(constructView), created = created.asInstanceOf[js.Any], destroyed = destroyed.asInstanceOf[js.Any], events = js.Any.fromFunction1(events), find = js.Any.fromFunction1(find), findAll = js.Any.fromFunction1(findAll), head = head.asInstanceOf[js.Any], helpers = js.Any.fromFunction1(helpers), onCreated = js.Any.fromFunction1(onCreated), onDestroyed = js.Any.fromFunction1(onDestroyed), onRendered = js.Any.fromFunction1(onRendered), renderFunction = renderFunction.asInstanceOf[js.Any], rendered = rendered.asInstanceOf[js.Any], viewName = viewName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Template]
+  }
+}
 

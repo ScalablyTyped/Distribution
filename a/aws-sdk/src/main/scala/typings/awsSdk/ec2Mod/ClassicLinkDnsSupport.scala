@@ -18,9 +18,9 @@ trait ClassicLinkDnsSupport extends js.Object {
 
 object ClassicLinkDnsSupport {
   @scala.inline
-  def apply(ClassicLinkDnsSupported: js.UndefOr[scala.Boolean] = js.undefined, VpcId: String = null): ClassicLinkDnsSupport = {
+  def apply(ClassicLinkDnsSupported: js.UndefOr[Boolean] = js.undefined, VpcId: String = null): ClassicLinkDnsSupport = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ClassicLinkDnsSupported)) __obj.updateDynamic("ClassicLinkDnsSupported")(ClassicLinkDnsSupported.asInstanceOf[js.Any])
+    if (!js.isUndefined(ClassicLinkDnsSupported)) __obj.updateDynamic("ClassicLinkDnsSupported")(ClassicLinkDnsSupported.get.asInstanceOf[js.Any])
     if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassicLinkDnsSupport]
   }

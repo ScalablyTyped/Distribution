@@ -14,9 +14,9 @@ trait RetryStrategy extends js.Object {
 
 object RetryStrategy {
   @scala.inline
-  def apply(attempts: Int | Double = null): RetryStrategy = {
+  def apply(attempts: js.UndefOr[Integer] = js.undefined): RetryStrategy = {
     val __obj = js.Dynamic.literal()
-    if (attempts != null) __obj.updateDynamic("attempts")(attempts.asInstanceOf[js.Any])
+    if (!js.isUndefined(attempts)) __obj.updateDynamic("attempts")(attempts.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetryStrategy]
   }
 }

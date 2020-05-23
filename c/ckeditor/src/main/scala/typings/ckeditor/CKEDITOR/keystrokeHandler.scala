@@ -6,12 +6,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CKEDITOR.keystrokeHandler")
-@js.native
-class keystrokeHandler protected () extends js.Object {
-  def this(editor: editor) = this()
-  var blockedKeystrokes: NumberDictionary[String | Boolean] = js.native
-  var keystrokes: NumberDictionary[String | Boolean] = js.native
-  def attach(domObject: domObject): Unit = js.native
+trait keystrokeHandler extends js.Object {
+  var blockedKeystrokes: NumberDictionary[String | Boolean]
+  var keystrokes: NumberDictionary[String | Boolean]
+  def attach(domObject: domObject): Unit
+}
+
+object keystrokeHandler {
+  @scala.inline
+  def apply(
+    attach: domObject => Unit,
+    blockedKeystrokes: NumberDictionary[String | Boolean],
+    keystrokes: NumberDictionary[String | Boolean]
+  ): keystrokeHandler = {
+    val __obj = js.Dynamic.literal(attach = js.Any.fromFunction1(attach), blockedKeystrokes = blockedKeystrokes.asInstanceOf[js.Any], keystrokes = keystrokes.asInstanceOf[js.Any])
+    __obj.asInstanceOf[keystrokeHandler]
+  }
 }
 

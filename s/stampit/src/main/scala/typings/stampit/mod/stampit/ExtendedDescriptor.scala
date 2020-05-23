@@ -34,7 +34,7 @@ trait ExtendedDescriptor[Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */] extends D
 
 object ExtendedDescriptor {
   @scala.inline
-  def apply[Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](
+  def apply[Obj, S̤t̤a̤m̤p̤](
     composers: js.Array[Composer[S̤t̤a̤m̤p̤]] = null,
     conf: PropertyMap = null,
     configuration: PropertyMap = null,

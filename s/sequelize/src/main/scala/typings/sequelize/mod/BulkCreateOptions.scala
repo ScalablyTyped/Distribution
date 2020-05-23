@@ -50,17 +50,17 @@ object BulkCreateOptions {
     validate: js.UndefOr[Boolean] = js.undefined
   ): BulkCreateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(benchmark)) __obj.updateDynamic("benchmark")(benchmark.asInstanceOf[js.Any])
+    if (!js.isUndefined(benchmark)) __obj.updateDynamic("benchmark")(benchmark.get.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(hooks)) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreDuplicates)) __obj.updateDynamic("ignoreDuplicates")(ignoreDuplicates.asInstanceOf[js.Any])
-    if (!js.isUndefined(individualHooks)) __obj.updateDynamic("individualHooks")(individualHooks.asInstanceOf[js.Any])
+    if (!js.isUndefined(hooks)) __obj.updateDynamic("hooks")(hooks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreDuplicates)) __obj.updateDynamic("ignoreDuplicates")(ignoreDuplicates.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(individualHooks)) __obj.updateDynamic("individualHooks")(individualHooks.get.asInstanceOf[js.Any])
     if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (!js.isUndefined(returning)) __obj.updateDynamic("returning")(returning.asInstanceOf[js.Any])
+    if (!js.isUndefined(returning)) __obj.updateDynamic("returning")(returning.get.asInstanceOf[js.Any])
     if (searchPath != null) __obj.updateDynamic("searchPath")(searchPath.asInstanceOf[js.Any])
     if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     if (updateOnDuplicate != null) __obj.updateDynamic("updateOnDuplicate")(updateOnDuplicate.asInstanceOf[js.Any])
-    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BulkCreateOptions]
   }
 }

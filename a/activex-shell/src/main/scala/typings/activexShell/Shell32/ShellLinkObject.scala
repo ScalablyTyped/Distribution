@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Shell Link object */
-@JSGlobal("Shell32.ShellLinkObject")
 @js.native
-class ShellLinkObject protected () extends js.Object {
+trait ShellLinkObject extends js.Object {
   /** Arguments for the link */
   var Arguments: String = js.native
   /** Description of the link */

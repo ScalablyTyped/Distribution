@@ -15,7 +15,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/remote/remote_store", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/remote/remote_store", JSImport.Namespace)
 @js.native
 object remoteStoreMod extends js.Object {
   @js.native
@@ -36,6 +36,7 @@ object remoteStoreMod extends js.Object {
       * immediately if the write stream is established.
       */
     var addToWritePipeline: js.Any = js.native
+    var asyncQueue: js.Any = js.native
     /**
       * Returns true if we can add to the write pipeline (i.e. the network is
       * enabled and the write pipeline is not full).
@@ -46,10 +47,23 @@ object remoteStoreMod extends js.Object {
     /** The client-side proxy for interacting with the backend. */
     var datastore: js.Any = js.native
     var disableNetworkInternal: js.Any = js.native
+    /**
+      * Recovery logic for IndexedDB errors that takes the network offline until
+      * IndexedDb probing succeeds. Retries are scheduled with backoff using
+      * `enqueueRetryable()`.
+      */
+    var disableNetworkUntilRecovery: js.Any = js.native
+    var enableNetworkInternal: js.Any = js.native
     var handleHandshakeError: js.Any = js.native
     /** Handles an error on a target */
     var handleTargetError: js.Any = js.native
     var handleWriteError: js.Any = js.native
+    /**
+      * When set to `true`, the network was taken offline due to an IndexedDB
+      * failure. The state is flipped to `false` when access becomes available
+      * again.
+      */
+    var indexedDbFailed: js.Any = js.native
     var isPrimary: js.Any = js.native
     /**
       * A mapping of watched targets that the client cares about tracking and the

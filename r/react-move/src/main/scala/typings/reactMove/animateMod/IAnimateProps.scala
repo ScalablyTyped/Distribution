@@ -32,7 +32,7 @@ object IAnimateProps {
     if (enter != null) __obj.updateDynamic("enter")(enter.asInstanceOf[js.Any])
     if (interpolation != null) __obj.updateDynamic("interpolation")(js.Any.fromFunction4(interpolation))
     if (leave != null) __obj.updateDynamic("leave")(leave.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
     if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAnimateProps]
   }

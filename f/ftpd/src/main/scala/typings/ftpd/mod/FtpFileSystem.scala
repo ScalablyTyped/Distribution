@@ -1,11 +1,11 @@
 package typings.ftpd.mod
 
-import typings.ftpd.AnonBufferSize
-import typings.ftpd.AnonEncoding
-import typings.ftpd.AnonEncodingFlag
-import typings.ftpd.AnonFlag
-import typings.ftpd.AnonFlagString
-import typings.ftpd.AnonMode
+import typings.ftpd.anon.BufferSize
+import typings.ftpd.anon.Encoding
+import typings.ftpd.anon.EncodingFlag
+import typings.ftpd.anon.Flag
+import typings.ftpd.anon.FlagString
+import typings.ftpd.anon.Mode
 import typings.node.Buffer
 import typings.node.NodeJS.ErrnoException
 import typings.node.fsMod.ReadStream
@@ -21,14 +21,12 @@ trait FtpFileSystem extends js.Object {
     * if useReadFile option is not set or is false
     */
   var createReadStream: js.UndefOr[
-    js.Function2[/* path */ String, /* options */ js.UndefOr[AnonBufferSize], ReadStream]
+    js.Function2[/* path */ String, /* options */ js.UndefOr[BufferSize], ReadStream]
   ] = js.native
   /**
     * if useWriteFile option is not set or is false
     */
-  var createWriteStream: js.UndefOr[
-    js.Function2[/* path */ String, /* options */ js.UndefOr[AnonEncoding], WriteStream]
-  ] = js.native
+  var createWriteStream: js.UndefOr[js.Function2[/* path */ String, /* options */ js.UndefOr[Encoding], WriteStream]] = js.native
   var mkdir: (js.Function2[
     /* path */ String, 
     /* callback */ js.UndefOr[js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]], 
@@ -59,7 +57,7 @@ trait FtpFileSystem extends js.Object {
   var readFile: js.UndefOr[
     (js.Function3[
       /* filename */ String, 
-      (/* options */ AnonFlag) | (/* options */ AnonFlagString) | (/* encoding */ String), 
+      (/* options */ Flag) | (/* options */ FlagString) | (/* encoding */ String), 
       /* callback */ js.Function2[/* err */ ErrnoException, (/* data */ Buffer) | (/* data */ String), Unit], 
       Unit
     ]) | (js.Function2[
@@ -80,7 +78,7 @@ trait FtpFileSystem extends js.Object {
     ]) | (js.Function4[
       /* filename */ String, 
       /* data */ js.Any, 
-      (/* options */ AnonEncodingFlag) | (/* options */ AnonMode), 
+      (/* options */ EncodingFlag) | (/* options */ Mode), 
       js.UndefOr[js.Function1[/* err */ ErrnoException, Unit]], 
       Unit
     ])

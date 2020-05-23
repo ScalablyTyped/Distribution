@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.Sockets
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object SocketActivityConnectedStandbyAction extends js.Object {
   /** The app can receive packets even when the system goes to stand by. */
   @js.native
   sealed trait wake extends SocketActivityConnectedStandbyAction
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SocketActivityConnectedStandbyAction with Double] = js.native
-  /* 0 */ @js.native
-  object doNotWake extends TopLevel[doNotWake with Double]
-  
-  /* 1 */ @js.native
-  object wake extends TopLevel[wake with Double]
   
 }
 

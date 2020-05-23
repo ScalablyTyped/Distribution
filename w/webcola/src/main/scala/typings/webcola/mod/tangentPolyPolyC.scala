@@ -1,6 +1,6 @@
 package typings.webcola.mod
 
-import typings.webcola.AnonT1
+import typings.webcola.anon.T1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,6 +33,6 @@ object tangentPolyPolyC extends js.Object {
       /* c */ typings.webcola.geomMod.Point, 
       Boolean
     ]
-  ): AnonT1 = js.native
+  ): T1 = js.native
 }
 

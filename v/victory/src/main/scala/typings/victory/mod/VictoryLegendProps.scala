@@ -1,12 +1,12 @@
 package typings.victory.mod
 
 import typings.react.mod.ReactElement
-import typings.victory.Anon1
-import typings.victory.AnonLeft
-import typings.victory.AnonName
-import typings.victory.AnonXBoolean
-import typings.victory.AnonY
-import typings.victory.OmitBlockPropsleftright
+import typings.victory.anon.Left
+import typings.victory.anon.Name
+import typings.victory.anon.OmitBlockPropsleftright
+import typings.victory.anon.XBoolean
+import typings.victory.anon.Y
+import typings.victory.anon.`1`
 import typings.victory.victoryStrings.data
 import typings.victory.victoryStrings.horizontal
 import typings.victory.victoryStrings.labels
@@ -63,7 +63,7 @@ trait VictoryLegendProps
     * The data prop must be given as an array.
     */
   @JSName("data")
-  var data_VictoryLegendProps: js.UndefOr[js.Array[AnonName]] = js.undefined
+  var data_VictoryLegendProps: js.UndefOr[js.Array[Name]] = js.undefined
   /**
     * VictoryLegend uses the standard eventKey prop to specify how event targets
     * are addressed. This prop is not commonly used.
@@ -85,7 +85,7 @@ trait VictoryLegendProps
     * gutters are between columns. When orientation is vertical, gutters
     * are the space between rows.
     */
-  var gutter: js.UndefOr[Double | AnonLeft] = js.undefined
+  var gutter: js.UndefOr[Double | Left] = js.undefined
   /**
     * The itemsPerRow prop determines how many items to render in each row
     * of a horizontal legend, or in each column of a vertical legend. This
@@ -165,37 +165,37 @@ object VictoryLegendProps {
     centerTitle: js.UndefOr[Boolean] = js.undefined,
     colorScale: ColorScalePropType = null,
     containerComponent: ReactElement = null,
-    data: js.Array[AnonName] = null,
+    data: js.Array[Name] = null,
     dataComponent: ReactElement = null,
     domain: DomainPropType = null,
     eventKey: StringOrNumberOrCallback | js.Array[String] = null,
     events: js.Array[EventPropTypeInterface[data | labels | parent, StringOrNumberOrCallback]] = null,
     externalEventMutations: js.Array[_] = null,
     groupComponent: ReactElement = null,
-    gutter: Double | AnonLeft = null,
-    height: Int | Double = null,
+    gutter: Double | Left = null,
+    height: js.UndefOr[Double] = js.undefined,
     horizontal: js.UndefOr[Boolean] = js.undefined,
-    itemsPerRow: Int | Double = null,
+    itemsPerRow: js.UndefOr[Double] = js.undefined,
     label: String | (js.Function1[/* data */ js.Any, String]) = null,
     labelComponent: ReactElement = null,
-    maxDomain: Double | AnonY = null,
-    minDomain: Double | AnonY = null,
+    maxDomain: Double | Y = null,
+    minDomain: Double | Y = null,
     name: String = null,
     orientation: horizontal | vertical = null,
     padding: PaddingProps = null,
     rowGutter: Double | OmitBlockPropsleftright = null,
-    scale: ScalePropType | D3Scale | Anon1 = null,
-    singleQuadrantDomainPadding: Boolean | AnonXBoolean = null,
+    scale: ScalePropType | D3Scale | `1` = null,
+    singleQuadrantDomainPadding: Boolean | XBoolean = null,
     standalone: js.UndefOr[Boolean] = js.undefined,
     style: VictoryStyleInterface = null,
-    symbolSpacer: Int | Double = null,
+    symbolSpacer: js.UndefOr[Double] = js.undefined,
     theme: VictoryThemeDefinition = null,
     title: String | js.Array[String] = null,
     titleComponent: ReactElement = null,
     titleOrientation: OrientationTypes = null,
-    width: Int | Double = null,
-    x: Int | Double = null,
-    y: Int | Double = null,
+    width: js.UndefOr[Double] = js.undefined,
+    x: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined,
     y0: DataGetterPropType = null
   ): VictoryLegendProps = {
     val __obj = js.Dynamic.literal()
@@ -203,7 +203,7 @@ object VictoryLegendProps {
     if (borderComponent != null) __obj.updateDynamic("borderComponent")(borderComponent.asInstanceOf[js.Any])
     if (borderPadding != null) __obj.updateDynamic("borderPadding")(borderPadding.asInstanceOf[js.Any])
     if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
-    if (!js.isUndefined(centerTitle)) __obj.updateDynamic("centerTitle")(centerTitle.asInstanceOf[js.Any])
+    if (!js.isUndefined(centerTitle)) __obj.updateDynamic("centerTitle")(centerTitle.get.asInstanceOf[js.Any])
     if (colorScale != null) __obj.updateDynamic("colorScale")(colorScale.asInstanceOf[js.Any])
     if (containerComponent != null) __obj.updateDynamic("containerComponent")(containerComponent.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
@@ -214,9 +214,9 @@ object VictoryLegendProps {
     if (externalEventMutations != null) __obj.updateDynamic("externalEventMutations")(externalEventMutations.asInstanceOf[js.Any])
     if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent.asInstanceOf[js.Any])
     if (gutter != null) __obj.updateDynamic("gutter")(gutter.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
-    if (itemsPerRow != null) __obj.updateDynamic("itemsPerRow")(itemsPerRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemsPerRow)) __obj.updateDynamic("itemsPerRow")(itemsPerRow.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent.asInstanceOf[js.Any])
     if (maxDomain != null) __obj.updateDynamic("maxDomain")(maxDomain.asInstanceOf[js.Any])
@@ -227,16 +227,16 @@ object VictoryLegendProps {
     if (rowGutter != null) __obj.updateDynamic("rowGutter")(rowGutter.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (singleQuadrantDomainPadding != null) __obj.updateDynamic("singleQuadrantDomainPadding")(singleQuadrantDomainPadding.asInstanceOf[js.Any])
-    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone.asInstanceOf[js.Any])
+    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (symbolSpacer != null) __obj.updateDynamic("symbolSpacer")(symbolSpacer.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolSpacer)) __obj.updateDynamic("symbolSpacer")(symbolSpacer.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (titleComponent != null) __obj.updateDynamic("titleComponent")(titleComponent.asInstanceOf[js.Any])
     if (titleOrientation != null) __obj.updateDynamic("titleOrientation")(titleOrientation.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     if (y0 != null) __obj.updateDynamic("y0")(y0.asInstanceOf[js.Any])
     __obj.asInstanceOf[VictoryLegendProps]
   }

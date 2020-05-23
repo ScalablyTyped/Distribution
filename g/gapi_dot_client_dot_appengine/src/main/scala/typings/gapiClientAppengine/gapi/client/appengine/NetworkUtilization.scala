@@ -18,16 +18,16 @@ trait NetworkUtilization extends js.Object {
 object NetworkUtilization {
   @scala.inline
   def apply(
-    targetReceivedBytesPerSecond: Int | Double = null,
-    targetReceivedPacketsPerSecond: Int | Double = null,
-    targetSentBytesPerSecond: Int | Double = null,
-    targetSentPacketsPerSecond: Int | Double = null
+    targetReceivedBytesPerSecond: js.UndefOr[Double] = js.undefined,
+    targetReceivedPacketsPerSecond: js.UndefOr[Double] = js.undefined,
+    targetSentBytesPerSecond: js.UndefOr[Double] = js.undefined,
+    targetSentPacketsPerSecond: js.UndefOr[Double] = js.undefined
   ): NetworkUtilization = {
     val __obj = js.Dynamic.literal()
-    if (targetReceivedBytesPerSecond != null) __obj.updateDynamic("targetReceivedBytesPerSecond")(targetReceivedBytesPerSecond.asInstanceOf[js.Any])
-    if (targetReceivedPacketsPerSecond != null) __obj.updateDynamic("targetReceivedPacketsPerSecond")(targetReceivedPacketsPerSecond.asInstanceOf[js.Any])
-    if (targetSentBytesPerSecond != null) __obj.updateDynamic("targetSentBytesPerSecond")(targetSentBytesPerSecond.asInstanceOf[js.Any])
-    if (targetSentPacketsPerSecond != null) __obj.updateDynamic("targetSentPacketsPerSecond")(targetSentPacketsPerSecond.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetReceivedBytesPerSecond)) __obj.updateDynamic("targetReceivedBytesPerSecond")(targetReceivedBytesPerSecond.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetReceivedPacketsPerSecond)) __obj.updateDynamic("targetReceivedPacketsPerSecond")(targetReceivedPacketsPerSecond.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetSentBytesPerSecond)) __obj.updateDynamic("targetSentBytesPerSecond")(targetSentBytesPerSecond.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetSentPacketsPerSecond)) __obj.updateDynamic("targetSentPacketsPerSecond")(targetSentPacketsPerSecond.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkUtilization]
   }
 }

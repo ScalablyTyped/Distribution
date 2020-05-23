@@ -24,20 +24,20 @@ trait IMetaGraphDef extends js.Object {
 object IMetaGraphDef {
   @scala.inline
   def apply(
-    assetFileDef: js.Array[IAssetFileDef] = null,
-    collectionDef: StringDictionary[ICollectionDef] = null,
-    graphDef: IGraphDef = null,
-    metaInfoDef: IMetaInfoDef = null,
-    saverDef: ISaverDef = null,
-    signatureDef: StringDictionary[ISignatureDef] = null
+    assetFileDef: js.UndefOr[Null | js.Array[IAssetFileDef]] = js.undefined,
+    collectionDef: js.UndefOr[Null | StringDictionary[ICollectionDef]] = js.undefined,
+    graphDef: js.UndefOr[Null | IGraphDef] = js.undefined,
+    metaInfoDef: js.UndefOr[Null | IMetaInfoDef] = js.undefined,
+    saverDef: js.UndefOr[Null | ISaverDef] = js.undefined,
+    signatureDef: js.UndefOr[Null | StringDictionary[ISignatureDef]] = js.undefined
   ): IMetaGraphDef = {
     val __obj = js.Dynamic.literal()
-    if (assetFileDef != null) __obj.updateDynamic("assetFileDef")(assetFileDef.asInstanceOf[js.Any])
-    if (collectionDef != null) __obj.updateDynamic("collectionDef")(collectionDef.asInstanceOf[js.Any])
-    if (graphDef != null) __obj.updateDynamic("graphDef")(graphDef.asInstanceOf[js.Any])
-    if (metaInfoDef != null) __obj.updateDynamic("metaInfoDef")(metaInfoDef.asInstanceOf[js.Any])
-    if (saverDef != null) __obj.updateDynamic("saverDef")(saverDef.asInstanceOf[js.Any])
-    if (signatureDef != null) __obj.updateDynamic("signatureDef")(signatureDef.asInstanceOf[js.Any])
+    if (!js.isUndefined(assetFileDef)) __obj.updateDynamic("assetFileDef")(assetFileDef.asInstanceOf[js.Any])
+    if (!js.isUndefined(collectionDef)) __obj.updateDynamic("collectionDef")(collectionDef.asInstanceOf[js.Any])
+    if (!js.isUndefined(graphDef)) __obj.updateDynamic("graphDef")(graphDef.asInstanceOf[js.Any])
+    if (!js.isUndefined(metaInfoDef)) __obj.updateDynamic("metaInfoDef")(metaInfoDef.asInstanceOf[js.Any])
+    if (!js.isUndefined(saverDef)) __obj.updateDynamic("saverDef")(saverDef.asInstanceOf[js.Any])
+    if (!js.isUndefined(signatureDef)) __obj.updateDynamic("signatureDef")(signatureDef.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMetaGraphDef]
   }
 }

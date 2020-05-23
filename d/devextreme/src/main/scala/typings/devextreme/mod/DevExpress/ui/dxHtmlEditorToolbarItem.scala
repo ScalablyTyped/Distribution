@@ -17,6 +17,7 @@ import typings.devextreme.devextremeStrings.clear
 import typings.devextreme.devextremeStrings.codeBlock
 import typings.devextreme.devextremeStrings.color
 import typings.devextreme.devextremeStrings.decreaseIndent
+import typings.devextreme.devextremeStrings.font
 import typings.devextreme.devextremeStrings.header
 import typings.devextreme.devextremeStrings.image
 import typings.devextreme.devextremeStrings.inMenu
@@ -27,13 +28,14 @@ import typings.devextreme.devextremeStrings.never
 import typings.devextreme.devextremeStrings.orderedList
 import typings.devextreme.devextremeStrings.redo
 import typings.devextreme.devextremeStrings.separator
+import typings.devextreme.devextremeStrings.size
 import typings.devextreme.devextremeStrings.strike
 import typings.devextreme.devextremeStrings.subscript
 import typings.devextreme.devextremeStrings.superscript
 import typings.devextreme.devextremeStrings.underline
 import typings.devextreme.devextremeStrings.undo
 import typings.devextreme.devextremeStrings.variable
-import typings.devextreme.mod._Global_.JQuery
+import typings.devextreme.mod.global.JQuery
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -42,7 +44,7 @@ import scala.scalajs.js.annotation._
 trait dxHtmlEditorToolbarItem extends dxToolbarItem {
   /** @name dxHtmlEditorToolbarItem.formatName */
   var formatName: js.UndefOr[
-    background | bold | color | italic | link | image | strike | subscript | superscript | underline | blockquote | header | increaseIndent | decreaseIndent | orderedList | bulletList | alignLeft | alignCenter | alignRight | alignJustify | codeBlock | variable | separator | undo | redo | clear | String
+    background | bold | color | font | italic | link | image | size | strike | subscript | superscript | underline | blockquote | header | increaseIndent | decreaseIndent | orderedList | bulletList | alignLeft | alignCenter | alignRight | alignJustify | codeBlock | variable | separator | undo | redo | clear | String
   ] = js.undefined
   /** @name dxHtmlEditorToolbarItem.formatValues */
   var formatValues: js.UndefOr[js.Array[String | Double | Boolean]] = js.undefined
@@ -53,7 +55,7 @@ object dxHtmlEditorToolbarItem {
   def apply(
     cssClass: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    formatName: background | bold | color | italic | link | image | strike | subscript | superscript | underline | blockquote | header | increaseIndent | decreaseIndent | orderedList | bulletList | alignLeft | alignCenter | alignRight | alignJustify | codeBlock | variable | separator | undo | redo | clear | String = null,
+    formatName: background | bold | color | font | italic | link | image | size | strike | subscript | superscript | underline | blockquote | header | increaseIndent | decreaseIndent | orderedList | bulletList | alignLeft | alignCenter | alignRight | alignJustify | codeBlock | variable | separator | undo | redo | clear | String = null,
     formatValues: js.Array[String | Double | Boolean] = null,
     html: String = null,
     locateInMenu: always | auto | never = null,
@@ -68,7 +70,7 @@ object dxHtmlEditorToolbarItem {
   ): dxHtmlEditorToolbarItem = {
     val __obj = js.Dynamic.literal()
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (formatName != null) __obj.updateDynamic("formatName")(formatName.asInstanceOf[js.Any])
     if (formatValues != null) __obj.updateDynamic("formatValues")(formatValues.asInstanceOf[js.Any])
     if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
@@ -79,7 +81,7 @@ object dxHtmlEditorToolbarItem {
     if (showText != null) __obj.updateDynamic("showText")(showText.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     if (widget != null) __obj.updateDynamic("widget")(widget.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxHtmlEditorToolbarItem]
   }

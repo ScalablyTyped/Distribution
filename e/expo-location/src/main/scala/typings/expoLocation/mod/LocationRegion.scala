@@ -25,8 +25,8 @@ object LocationRegion {
   ): LocationRegion = {
     val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any])
     if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(notifyOnEnter)) __obj.updateDynamic("notifyOnEnter")(notifyOnEnter.asInstanceOf[js.Any])
-    if (!js.isUndefined(notifyOnExit)) __obj.updateDynamic("notifyOnExit")(notifyOnExit.asInstanceOf[js.Any])
+    if (!js.isUndefined(notifyOnEnter)) __obj.updateDynamic("notifyOnEnter")(notifyOnEnter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(notifyOnExit)) __obj.updateDynamic("notifyOnExit")(notifyOnExit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationRegion]
   }
 }

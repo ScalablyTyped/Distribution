@@ -42,8 +42,8 @@ object AuthOptions {
     val __obj = js.Dynamic.literal()
     if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext.asInstanceOf[js.Any])
     if (authChallenge != null) __obj.updateDynamic("authChallenge")(authChallenge.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceAddAccount)) __obj.updateDynamic("forceAddAccount")(forceAddAccount.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceConsent)) __obj.updateDynamic("forceConsent")(forceConsent.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceAddAccount)) __obj.updateDynamic("forceAddAccount")(forceAddAccount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceConsent)) __obj.updateDynamic("forceConsent")(forceConsent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthOptions]
   }
 }

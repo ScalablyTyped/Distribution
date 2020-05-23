@@ -2,7 +2,6 @@ package typings.parcelBundler.mod
 
 import typings.expressServeStaticCore.mod.NextFunction
 import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.expressServeStaticCore.mod.Request
 import typings.expressServeStaticCore.mod.Response
 import typings.node.httpMod.Server
@@ -12,6 +11,7 @@ import typings.parcelBundler.parcelBundlerStrings.buildEnd
 import typings.parcelBundler.parcelBundlerStrings.buildError
 import typings.parcelBundler.parcelBundlerStrings.buildStart
 import typings.parcelBundler.parcelBundlerStrings.bundled
+import typings.qs.mod.ParsedQs
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,7 +23,7 @@ trait ParcelBundler extends js.Object {
   def addPackager(`type`: String, packager: String): Unit = js.native
   def bundle(): js.Promise[ParcelBundle] = js.native
   def middleware(): js.Function3[
-    /* req */ Request[ParamsDictionary, _, _, Query], 
+    /* req */ Request[ParamsDictionary, _, _, ParsedQs], 
     /* res */ Response[_], 
     /* next */ NextFunction, 
     _

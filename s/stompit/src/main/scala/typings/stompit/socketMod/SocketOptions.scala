@@ -19,8 +19,8 @@ object SocketOptions {
   def apply(
     commandHandlers: CommandHandlers = null,
     heartbeat: Heartbeat = null,
-    heartbeatDelayMargin: Int | Double = null,
-    heartbeatOutputMargin: Int | Double = null,
+    heartbeatDelayMargin: js.UndefOr[Double] = js.undefined,
+    heartbeatOutputMargin: js.UndefOr[Double] = js.undefined,
     outgoingFrameStream: typings.stompit.outgoingFrameStreamMod.^ = null,
     resetDisconnect: js.UndefOr[Boolean] = js.undefined,
     unknownCommand: () => Unit = null
@@ -28,10 +28,10 @@ object SocketOptions {
     val __obj = js.Dynamic.literal()
     if (commandHandlers != null) __obj.updateDynamic("commandHandlers")(commandHandlers.asInstanceOf[js.Any])
     if (heartbeat != null) __obj.updateDynamic("heartbeat")(heartbeat.asInstanceOf[js.Any])
-    if (heartbeatDelayMargin != null) __obj.updateDynamic("heartbeatDelayMargin")(heartbeatDelayMargin.asInstanceOf[js.Any])
-    if (heartbeatOutputMargin != null) __obj.updateDynamic("heartbeatOutputMargin")(heartbeatOutputMargin.asInstanceOf[js.Any])
+    if (!js.isUndefined(heartbeatDelayMargin)) __obj.updateDynamic("heartbeatDelayMargin")(heartbeatDelayMargin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(heartbeatOutputMargin)) __obj.updateDynamic("heartbeatOutputMargin")(heartbeatOutputMargin.get.asInstanceOf[js.Any])
     if (outgoingFrameStream != null) __obj.updateDynamic("outgoingFrameStream")(outgoingFrameStream.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetDisconnect)) __obj.updateDynamic("resetDisconnect")(resetDisconnect.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetDisconnect)) __obj.updateDynamic("resetDisconnect")(resetDisconnect.get.asInstanceOf[js.Any])
     if (unknownCommand != null) __obj.updateDynamic("unknownCommand")(js.Any.fromFunction0(unknownCommand))
     __obj.asInstanceOf[SocketOptions]
   }

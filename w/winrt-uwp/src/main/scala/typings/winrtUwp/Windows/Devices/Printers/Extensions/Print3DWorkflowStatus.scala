@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Printers.Extensions
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object Print3DWorkflowStatus extends js.Object {
   /** The print request has been submitted. */
   @js.native
   sealed trait submitted extends Print3DWorkflowStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Print3DWorkflowStatus with Double] = js.native
-  /* 0 */ @js.native
-  object abandoned extends TopLevel[abandoned with Double]
-  
-  /* 1 */ @js.native
-  object canceled extends TopLevel[canceled with Double]
-  
-  /* 2 */ @js.native
-  object failed extends TopLevel[failed with Double]
-  
-  /* 3 */ @js.native
-  object slicing extends TopLevel[slicing with Double]
-  
-  /* 4 */ @js.native
-  object submitted extends TopLevel[submitted with Double]
   
 }
 

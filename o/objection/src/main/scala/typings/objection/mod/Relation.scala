@@ -1,6 +1,6 @@
 package typings.objection.mod
 
-import typings.objection.TypeofModel
+import typings.objection.anon.TypeofModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,7 @@
 package typings.babylonjs
 
 import typings.babylonjs.abstractMeshMod.AbstractMesh
+import typings.babylonjs.anon.BendAxis
 import typings.babylonjs.boneMod.Bone
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.typesMod.Nullable
@@ -20,7 +21,7 @@ object boneIKControllerMod extends js.Object {
       * @param options defines options to set up the controller
       */
     def this(mesh: AbstractMesh, bone: Bone) = this()
-    def this(mesh: AbstractMesh, bone: Bone, options: AnonBendAxis) = this()
+    def this(mesh: AbstractMesh, bone: Bone, options: BendAxis) = this()
     var _adjustRoll: js.Any = js.native
     var _bendAxis: js.Any = js.native
     var _bone1: js.Any = js.native

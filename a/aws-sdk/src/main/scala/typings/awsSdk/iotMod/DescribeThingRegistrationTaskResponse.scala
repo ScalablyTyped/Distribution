@@ -60,29 +60,29 @@ object DescribeThingRegistrationTaskResponse {
   @scala.inline
   def apply(
     creationDate: CreationDate = null,
-    failureCount: Int | Double = null,
+    failureCount: js.UndefOr[Count] = js.undefined,
     inputFileBucket: RegistryS3BucketName = null,
     inputFileKey: RegistryS3KeyName = null,
     lastModifiedDate: LastModifiedDate = null,
     message: ErrorMessage = null,
-    percentageProgress: Int | Double = null,
+    percentageProgress: js.UndefOr[Percentage] = js.undefined,
     roleArn: RoleArn = null,
     status: Status = null,
-    successCount: Int | Double = null,
+    successCount: js.UndefOr[Count] = js.undefined,
     taskId: TaskId = null,
     templateBody: TemplateBody = null
   ): DescribeThingRegistrationTaskResponse = {
     val __obj = js.Dynamic.literal()
     if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
-    if (failureCount != null) __obj.updateDynamic("failureCount")(failureCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(failureCount)) __obj.updateDynamic("failureCount")(failureCount.get.asInstanceOf[js.Any])
     if (inputFileBucket != null) __obj.updateDynamic("inputFileBucket")(inputFileBucket.asInstanceOf[js.Any])
     if (inputFileKey != null) __obj.updateDynamic("inputFileKey")(inputFileKey.asInstanceOf[js.Any])
     if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (percentageProgress != null) __obj.updateDynamic("percentageProgress")(percentageProgress.asInstanceOf[js.Any])
+    if (!js.isUndefined(percentageProgress)) __obj.updateDynamic("percentageProgress")(percentageProgress.get.asInstanceOf[js.Any])
     if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (successCount != null) __obj.updateDynamic("successCount")(successCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(successCount)) __obj.updateDynamic("successCount")(successCount.get.asInstanceOf[js.Any])
     if (taskId != null) __obj.updateDynamic("taskId")(taskId.asInstanceOf[js.Any])
     if (templateBody != null) __obj.updateDynamic("templateBody")(templateBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeThingRegistrationTaskResponse]

@@ -1,7 +1,7 @@
 package typings.gapiClientTranslate.gapi.client.translate
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientTranslate.AnonAccesstoken
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientTranslate.anon.Accesstoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,16 +16,12 @@ trait LanguagesResource extends js.Object {
   /** Human readable name of the language localized to the target language. */
   var name: js.UndefOr[String] = js.undefined
   /** Returns a list of supported languages for translation. */
-  def list(request: AnonAccesstoken): Request_[LanguagesListResponse]
+  def list(request: Accesstoken): Request[LanguagesListResponse]
 }
 
 object LanguagesResource {
   @scala.inline
-  def apply(
-    list: AnonAccesstoken => Request_[LanguagesListResponse],
-    language: String = null,
-    name: String = null
-  ): LanguagesResource = {
+  def apply(list: Accesstoken => Request[LanguagesListResponse], language: String = null, name: String = null): LanguagesResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

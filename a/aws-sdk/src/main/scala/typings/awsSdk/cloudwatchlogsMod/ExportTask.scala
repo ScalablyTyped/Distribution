@@ -50,23 +50,23 @@ object ExportTask {
     destination: ExportDestinationBucket = null,
     destinationPrefix: ExportDestinationPrefix = null,
     executionInfo: ExportTaskExecutionInfo = null,
-    from: Int | Double = null,
+    from: js.UndefOr[Timestamp] = js.undefined,
     logGroupName: LogGroupName = null,
     status: ExportTaskStatus = null,
     taskId: ExportTaskId = null,
     taskName: ExportTaskName = null,
-    to: Int | Double = null
+    to: js.UndefOr[Timestamp] = js.undefined
   ): ExportTask = {
     val __obj = js.Dynamic.literal()
     if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
     if (destinationPrefix != null) __obj.updateDynamic("destinationPrefix")(destinationPrefix.asInstanceOf[js.Any])
     if (executionInfo != null) __obj.updateDynamic("executionInfo")(executionInfo.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.get.asInstanceOf[js.Any])
     if (logGroupName != null) __obj.updateDynamic("logGroupName")(logGroupName.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (taskId != null) __obj.updateDynamic("taskId")(taskId.asInstanceOf[js.Any])
     if (taskName != null) __obj.updateDynamic("taskName")(taskName.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (!js.isUndefined(to)) __obj.updateDynamic("to")(to.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportTask]
   }
 }

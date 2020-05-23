@@ -24,11 +24,11 @@ object UpdateNotificationSettingsRequest {
   @scala.inline
   def apply(
     HITTypeId: EntityId,
-    Active: js.UndefOr[scala.Boolean] = js.undefined,
+    Active: js.UndefOr[Boolean] = js.undefined,
     Notification: NotificationSpecification = null
   ): UpdateNotificationSettingsRequest = {
     val __obj = js.Dynamic.literal(HITTypeId = HITTypeId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Active)) __obj.updateDynamic("Active")(Active.asInstanceOf[js.Any])
+    if (!js.isUndefined(Active)) __obj.updateDynamic("Active")(Active.get.asInstanceOf[js.Any])
     if (Notification != null) __obj.updateDynamic("Notification")(Notification.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateNotificationSettingsRequest]
   }

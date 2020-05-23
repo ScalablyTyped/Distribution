@@ -4,11 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("naver.maps.MapTypeRegistry")
 @js.native
-class MapTypeRegistry () extends KVO {
-  def this(mapTypeInfo: js.Any) = this()
-  def this(mapTypeInfo: js.Any, defaultMapTypeId: String) = this()
+trait MapTypeRegistry extends KVO {
   def getPreviousTypeId(): String = js.native
   def getSelectedType(): MapType = js.native
   def getSelectedTypeId(): String = js.native

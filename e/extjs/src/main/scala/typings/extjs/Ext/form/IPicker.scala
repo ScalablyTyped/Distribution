@@ -17,8 +17,8 @@ trait IPicker
   /** [Method] Expands this field s picker dropdown  */
   var expand: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Returns a reference to the picker component for this field creating it if necessary by calling createPicker
-  		* @returns Ext.Component The picker component
-  		*/
+    * @returns Ext.Component The picker component
+    */
   var getPicker: js.UndefOr[js.Function0[IComponent]] = js.undefined
   /** [Property] (Boolean) */
   var isExpanded: js.UndefOr[Boolean] = js.undefined
@@ -58,8 +58,8 @@ object IPicker {
     if (createPicker != null) __obj.updateDynamic("createPicker")(js.Any.fromFunction0(createPicker))
     if (expand != null) __obj.updateDynamic("expand")(js.Any.fromFunction0(expand))
     if (getPicker != null) __obj.updateDynamic("getPicker")(js.Any.fromFunction0(getPicker))
-    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchFieldWidth)) __obj.updateDynamic("matchFieldWidth")(matchFieldWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchFieldWidth)) __obj.updateDynamic("matchFieldWidth")(matchFieldWidth.get.asInstanceOf[js.Any])
     if (onTriggerClick != null) __obj.updateDynamic("onTriggerClick")(js.Any.fromFunction0(onTriggerClick))
     if (openCls != null) __obj.updateDynamic("openCls")(openCls.asInstanceOf[js.Any])
     if (pickerAlign != null) __obj.updateDynamic("pickerAlign")(pickerAlign.asInstanceOf[js.Any])

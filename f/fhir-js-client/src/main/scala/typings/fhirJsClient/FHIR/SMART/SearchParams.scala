@@ -1,6 +1,6 @@
 package typings.fhirJsClient.FHIR.SMART
 
-import typings.fhirJsClient.AnonDictpropName
+import typings.fhirJsClient.anon.DictpropName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,15 +49,15 @@ object SearchParams {
   @scala.inline
   def apply(
     `type`: String,
-    count: Int | Double = null,
-    params: AnonDictpropName = null,
+    count: js.UndefOr[Double] = js.undefined,
+    params: DictpropName = null,
     patient: String = null,
     query: js.Any = null,
     since: String = null
   ): SearchParams = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (patient != null) __obj.updateDynamic("patient")(patient.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])

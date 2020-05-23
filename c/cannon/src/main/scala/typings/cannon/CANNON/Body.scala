@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CANNON.Body")
 @js.native
-class Body () extends EventTarget {
-  def this(options: IBodyOptions) = this()
+trait Body extends EventTarget {
   var aabb: AABB = js.native
   var aabbNeedsUpdate: Boolean = js.native
   var allowSleep: Boolean = js.native
@@ -75,19 +73,5 @@ class Body () extends EventTarget {
   def vectorToWorldFrame(localVector: Vec3): Vec3 = js.native
   def vectorToWorldFrame(localVector: Vec3, result: Vec3): Vec3 = js.native
   def wakeUp(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("CANNON.Body")
-@js.native
-object Body extends js.Object {
-  var AWAKE: Double = js.native
-  var DYNAMIC: Double = js.native
-  var KINEMATIC: Double = js.native
-  var SLEEPING: Double = js.native
-  var SLEEPY: Double = js.native
-  var STATIC: Double = js.native
-  var sleepEvent: IEvent = js.native
-  var sleepyEvent: IEvent = js.native
 }
 

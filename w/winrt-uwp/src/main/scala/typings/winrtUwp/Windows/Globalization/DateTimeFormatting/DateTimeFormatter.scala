@@ -1,110 +1,14 @@
 package typings.winrtUwp.Windows.Globalization.DateTimeFormatting
 
 import typings.std.Date
-import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Formats dates and times. */
-@JSGlobal("Windows.Globalization.DateTimeFormatting.DateTimeFormatter")
 @js.native
-class DateTimeFormatter protected () extends js.Object {
-  /**
-    * Creates a DateTimeFormatter object that is initialized by a format template string.
-    * @param formatTemplate A format template string that specifies the requested components. The order of the components is irrelevant. This can also be a format pattern. See the remarks for the DateTimeFormatter class for a list of valid format templates and format patterns.
-    */
-  def this(formatTemplate: String) = this()
-  /**
-    * Creates a DateTimeFormatter object that is initialized by a format template string and language list.
-    * @param formatTemplate A format template string that specifies the requested components. The order of the components is irrelevant. This can also be a format pattern. See the remarks for the DateTimeFormatter class for a list of valid format templates and format patterns.
-    * @param languages The list of language identifiers, in priority order, that represent the choice of languages. These identifiers are used for resolving the template to a pattern and for formatting. See Remarks.
-    */
-  def this(formatTemplate: String, languages: IIterable[String]) = this()
-  /**
-    * Creates a DateTimeFormatter object that is initialized with hour, minute, and second formats.
-    * @param hourFormat The desired hour format to include in the template.
-    * @param minuteFormat The desired minute format to include in the template.
-    * @param secondFormat The desired second format to include in the template.
-    */
-  def this(hourFormat: HourFormat, minuteFormat: MinuteFormat, secondFormat: SecondFormat) = this()
-  /**
-    * Creates a DateTimeFormatter object that is initialized with year, month, day, and day of week formats.
-    * @param yearFormat The desired year format to include in the template.
-    * @param monthFormat The desired month format to include in the template.
-    * @param dayFormat The desired day format to include in the template.
-    * @param dayOfWeekFormat The desired day of week format to include in the template.
-    */
-  def this(
-    yearFormat: YearFormat,
-    monthFormat: MonthFormat,
-    dayFormat: DayFormat,
-    dayOfWeekFormat: DayOfWeekFormat
-  ) = this()
-  /**
-    * Creates a DateTimeFormatter object that is initialized by a format template string, language list, geographic region, calendar, and clock.
-    * @param formatTemplate A format template string that specifies the requested components. The order of the components is irrelevant. This can also be a format pattern. See the remarks for the DateTimeFormatter class for a list of valid format templates and format patterns.
-    * @param languages The list of language identifiers, in priority order, that represent the choice of languages. These identifiers are used for resolving the template to a pattern, and for formatting. See Remarks.
-    * @param geographicRegion The identifier for the geographic region. This identifier is used for resolving the template to a pattern.
-    * @param calendar The calendar identifier to use.
-    * @param clock The clock identifier to use.
-    */
-  def this(
-    formatTemplate: String,
-    languages: IIterable[String],
-    geographicRegion: String,
-    calendar: String,
-    clock: String
-  ) = this()
-  /**
-    * Creates a DateTimeFormatter object that is initialized with year, month, day, day of week, hour, minute, and second formats, and a language list.
-    * @param yearFormat The year format to include in the template.
-    * @param monthFormat The month format to include in the template.
-    * @param dayFormat The day format to include in the template.
-    * @param dayOfWeekFormat The day of week format to include in the template.
-    * @param hourFormat The hour format to include in the template.
-    * @param minuteFormat The minute format to include in the template.
-    * @param secondFormat The second format to include in the template.
-    * @param languages The list of language identifiers, in priority order, that represent the choice of languages. These identifiers are used for resolving the template to a pattern and for formatting. See Remarks.
-    */
-  def this(
-    yearFormat: YearFormat,
-    monthFormat: MonthFormat,
-    dayFormat: DayFormat,
-    dayOfWeekFormat: DayOfWeekFormat,
-    hourFormat: HourFormat,
-    minuteFormat: MinuteFormat,
-    secondFormat: SecondFormat,
-    languages: IIterable[String]
-  ) = this()
-  /**
-    * Creates a DateTimeFormatter object with all formats and identifiers specified.
-    * @param yearFormat The desired year format to include in the template.
-    * @param monthFormat The desired month format to include in the template.
-    * @param dayFormat The desired day format to include in the template.
-    * @param dayOfWeekFormat The desired day of week format to include in the template.
-    * @param hourFormat The desired hour format to include in the template.
-    * @param minuteFormat The desired minute format to include in the template.
-    * @param secondFormat The desired second format to include in the template.
-    * @param languages The list of language identifiers, in priority order, that represent the choice of languages. These identifiers are used for resolving the template to a pattern, and for formatting. See Remarks.
-    * @param geographicRegion The identifier for the geographic region. This identifier is used for resolving the template to a pattern.
-    * @param calendar The calendar identifier to use.
-    * @param clock The clock identifier to use.
-    */
-  def this(
-    yearFormat: YearFormat,
-    monthFormat: MonthFormat,
-    dayFormat: DayFormat,
-    dayOfWeekFormat: DayOfWeekFormat,
-    hourFormat: HourFormat,
-    minuteFormat: MinuteFormat,
-    secondFormat: SecondFormat,
-    languages: IIterable[String],
-    geographicRegion: String,
-    calendar: String,
-    clock: String
-  ) = this()
+trait DateTimeFormatter extends js.Object {
   /** Gets the calendar that is used when formatting dates. */
   var calendar: String = js.native
   /** Gets the clock that is used when formatting times. */
@@ -150,19 +54,5 @@ class DateTimeFormatter protected () extends js.Object {
     * @return A string that represents the date and time.
     */
   def format(value: Date): String = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Globalization.DateTimeFormatting.DateTimeFormatter")
-@js.native
-object DateTimeFormatter extends js.Object {
-  /** Gets the DateTimeFormatter object that formats dates according to the user's choice of long date pattern. */
-  var longDate: DateTimeFormatter = js.native
-  /** Gets the DateTimeFormatter object that formats times according to the user's choice of long time pattern. */
-  var longTime: DateTimeFormatter = js.native
-  /** Gets the DateTimeFormatter object that formats dates according to the user's choice of short date pattern. */
-  var shortDate: DateTimeFormatter = js.native
-  /** Gets the DateTimeFormatter object that formats times according to the user's choice of short time pattern. */
-  var shortTime: DateTimeFormatter = js.native
 }
 

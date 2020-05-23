@@ -1,6 +1,6 @@
 package typings.pdfmake.interfacesMod
 
-import typings.pdfmake.AnonHorizontalRatio
+import typings.pdfmake.anon.HorizontalRatio
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait Node extends js.Object {
   var pages: Double
   var qr: js.UndefOr[String] = js.undefined
   var stack: Boolean
-  var startPosition: AnonHorizontalRatio
+  var startPosition: HorizontalRatio
   var style: js.UndefOr[String | js.Array[String] | Style] = js.undefined
   var svg: js.UndefOr[String] = js.undefined
   var table: js.UndefOr[Table] = js.undefined
@@ -32,10 +32,10 @@ object Node {
     pageNumbers: js.Array[Double],
     pages: Double,
     stack: Boolean,
-    startPosition: AnonHorizontalRatio,
+    startPosition: HorizontalRatio,
     canvas: CanvasElement = null,
     columns: js.Array[Column] = null,
-    headlineLevel: Int | Double = null,
+    headlineLevel: js.UndefOr[Double] = js.undefined,
     id: String = null,
     image: String = null,
     ol: js.Array[OrderedListElement] = null,
@@ -51,7 +51,7 @@ object Node {
     val __obj = js.Dynamic.literal(pageNumbers = pageNumbers.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any], startPosition = startPosition.asInstanceOf[js.Any])
     if (canvas != null) __obj.updateDynamic("canvas")(canvas.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (headlineLevel != null) __obj.updateDynamic("headlineLevel")(headlineLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(headlineLevel)) __obj.updateDynamic("headlineLevel")(headlineLevel.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (ol != null) __obj.updateDynamic("ol")(ol.asInstanceOf[js.Any])

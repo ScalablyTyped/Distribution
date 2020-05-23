@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@firebase/logger" : "0.2.0"
+      "@firebase/logger" : "0.2.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@firebase/logger" : "0.2.0"
+      "@firebase/logger" : "0.2.4"
     }
   ],
   "compile-devDependencies" : [

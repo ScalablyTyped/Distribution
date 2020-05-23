@@ -29,12 +29,12 @@ object ListBackendEnvironmentsRequest {
   def apply(
     appId: AppId,
     environmentName: EnvironmentName = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[MaxResults] = js.undefined,
     nextToken: NextToken = null
   ): ListBackendEnvironmentsRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any])
     if (environmentName != null) __obj.updateDynamic("environmentName")(environmentName.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBackendEnvironmentsRequest]
   }

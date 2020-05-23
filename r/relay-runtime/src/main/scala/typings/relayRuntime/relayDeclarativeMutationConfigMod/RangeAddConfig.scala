@@ -1,13 +1,13 @@
 package typings.relayRuntime.relayDeclarativeMutationConfigMod
 
-import typings.relayRuntime.AnonFilters
+import typings.relayRuntime.anon.Filters
 import typings.relayRuntime.relayRuntimeStrings.RANGE_ADD
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RangeAddConfig extends DeclarativeMutationConfig {
-  var connectionInfo: js.UndefOr[js.Array[AnonFilters]] = js.undefined
+  var connectionInfo: js.UndefOr[js.Array[Filters]] = js.undefined
   var connectionName: js.UndefOr[String] = js.undefined
   var edgeName: String
   var parentID: js.UndefOr[String] = js.undefined
@@ -21,7 +21,7 @@ object RangeAddConfig {
   def apply(
     edgeName: String,
     `type`: RANGE_ADD,
-    connectionInfo: js.Array[AnonFilters] = null,
+    connectionInfo: js.Array[Filters] = null,
     connectionName: String = null,
     parentID: String = null,
     parentName: String = null,

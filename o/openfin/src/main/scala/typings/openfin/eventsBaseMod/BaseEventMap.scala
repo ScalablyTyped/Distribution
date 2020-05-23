@@ -6,7 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BaseEventMap
-  extends /* name */ StringDictionary[js.Any] {
+  extends /**
+  * @hidden
+  * Custom properties and metadata. This can be extended in specific context object.
+  */
+/* key */ StringDictionary[js.Any] {
   var listenerRemoved: String
   var newListener: String
 }

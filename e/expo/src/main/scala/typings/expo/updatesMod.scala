@@ -1,5 +1,6 @@
 package typings.expo
 
+import typings.expo.anon.EventListener
 import typings.expoConstants.constantsTypesMod.AppManifest
 import typings.fbemitter.mod.EventSubscription
 import scala.scalajs.js
@@ -10,21 +11,21 @@ import scala.scalajs.js.annotation._
 @js.native
 object updatesMod extends js.Object {
   /* Rewritten from type alias, can be one of: 
-    - typings.expo.AnonIsAvailable
-    - typings.expo.AnonManifest
+    - typings.expo.anon.IsAvailable
+    - typings.expo.anon.Manifest
   */
   trait UpdateCheckResult extends js.Object
   
   /* Rewritten from type alias, can be one of: 
-    - typings.expo.Anon0
-    - typings.expo.AnonManifestType
-    - typings.expo.AnonMessage
+    - typings.expo.anon.`0`
+    - typings.expo.anon.ManifestType
+    - typings.expo.anon.Message
   */
   trait UpdateEvent extends js.Object
   
   /* Rewritten from type alias, can be one of: 
-    - typings.expo.AnonIsNew
-    - typings.expo.AnonIsNewManifest
+    - typings.expo.anon.IsNew
+    - typings.expo.anon.IsNewManifest
   */
   trait UpdateFetchResult extends js.Object
   
@@ -32,7 +33,7 @@ object updatesMod extends js.Object {
   def checkForUpdateAsync(): js.Promise[UpdateCheckResult] = js.native
   def clearUpdateCacheExperimentalAsync(abiVersion: String): js.Promise[Unit] = js.native
   def fetchUpdateAsync(): js.Promise[UpdateFetchResult] = js.native
-  def fetchUpdateAsync(hasEventListener: AnonEventListener): js.Promise[UpdateFetchResult] = js.native
+  def fetchUpdateAsync(hasEventListener: EventListener): js.Promise[UpdateFetchResult] = js.native
   def reload(): js.Promise[Unit] = js.native
   def reloadFromCache(): js.Promise[Unit] = js.native
   @js.native

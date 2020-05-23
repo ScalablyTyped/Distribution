@@ -24,7 +24,7 @@ trait Feature[G /* <: Geometry | Null */, P] extends GeoJsonObject {
 
 object Feature {
   @scala.inline
-  def apply[G /* <: Geometry | Null */, P](
+  def apply[G, P](
     geometry: G,
     properties: P,
     `type`: typings.geojson.geojsonStrings.Feature,

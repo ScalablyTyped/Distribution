@@ -40,46 +40,46 @@ object ITouchSpinOptions {
     buttonUpClass: String = null,
     buttonUpShow: js.UndefOr[Boolean] = js.undefined,
     buttonUpTxt: String = null,
-    decimals: Int | Double = null,
+    decimals: js.UndefOr[Double] = js.undefined,
     decimalsDelimiter: String = null,
     forceStepDivisibility: StepDivisibilityType = null,
     inputReadOnly: js.UndefOr[Boolean] = js.undefined,
-    max: Int | Double = null,
-    min: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
     mousewheel: js.UndefOr[Boolean] = js.undefined,
     postfix: String = null,
     postfixExtraClass: String = null,
     prefix: String = null,
     prefixExtraClass: String = null,
-    step: Int | Double = null,
-    stepInterval: Int | Double = null,
-    stepIntervalDelay: Int | Double = null,
+    step: js.UndefOr[Double] = js.undefined,
+    stepInterval: js.UndefOr[Double] = js.undefined,
+    stepIntervalDelay: js.UndefOr[Double] = js.undefined,
     verticalButtons: js.UndefOr[Boolean] = js.undefined,
     verticalDownClass: String = null,
     verticalUpClass: String = null
   ): ITouchSpinOptions = {
     val __obj = js.Dynamic.literal()
     if (buttonDownClass != null) __obj.updateDynamic("buttonDownClass")(buttonDownClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(buttonDownShow)) __obj.updateDynamic("buttonDownShow")(buttonDownShow.asInstanceOf[js.Any])
+    if (!js.isUndefined(buttonDownShow)) __obj.updateDynamic("buttonDownShow")(buttonDownShow.get.asInstanceOf[js.Any])
     if (buttonDownTxt != null) __obj.updateDynamic("buttonDownTxt")(buttonDownTxt.asInstanceOf[js.Any])
     if (buttonUpClass != null) __obj.updateDynamic("buttonUpClass")(buttonUpClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(buttonUpShow)) __obj.updateDynamic("buttonUpShow")(buttonUpShow.asInstanceOf[js.Any])
+    if (!js.isUndefined(buttonUpShow)) __obj.updateDynamic("buttonUpShow")(buttonUpShow.get.asInstanceOf[js.Any])
     if (buttonUpTxt != null) __obj.updateDynamic("buttonUpTxt")(buttonUpTxt.asInstanceOf[js.Any])
-    if (decimals != null) __obj.updateDynamic("decimals")(decimals.asInstanceOf[js.Any])
+    if (!js.isUndefined(decimals)) __obj.updateDynamic("decimals")(decimals.get.asInstanceOf[js.Any])
     if (decimalsDelimiter != null) __obj.updateDynamic("decimalsDelimiter")(decimalsDelimiter.asInstanceOf[js.Any])
     if (forceStepDivisibility != null) __obj.updateDynamic("forceStepDivisibility")(forceStepDivisibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(inputReadOnly)) __obj.updateDynamic("inputReadOnly")(inputReadOnly.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (!js.isUndefined(mousewheel)) __obj.updateDynamic("mousewheel")(mousewheel.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputReadOnly)) __obj.updateDynamic("inputReadOnly")(inputReadOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mousewheel)) __obj.updateDynamic("mousewheel")(mousewheel.get.asInstanceOf[js.Any])
     if (postfix != null) __obj.updateDynamic("postfix")(postfix.asInstanceOf[js.Any])
     if (postfixExtraClass != null) __obj.updateDynamic("postfixExtraClass")(postfixExtraClass.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (prefixExtraClass != null) __obj.updateDynamic("prefixExtraClass")(prefixExtraClass.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (stepInterval != null) __obj.updateDynamic("stepInterval")(stepInterval.asInstanceOf[js.Any])
-    if (stepIntervalDelay != null) __obj.updateDynamic("stepIntervalDelay")(stepIntervalDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(verticalButtons)) __obj.updateDynamic("verticalButtons")(verticalButtons.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stepInterval)) __obj.updateDynamic("stepInterval")(stepInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stepIntervalDelay)) __obj.updateDynamic("stepIntervalDelay")(stepIntervalDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalButtons)) __obj.updateDynamic("verticalButtons")(verticalButtons.get.asInstanceOf[js.Any])
     if (verticalDownClass != null) __obj.updateDynamic("verticalDownClass")(verticalDownClass.asInstanceOf[js.Any])
     if (verticalUpClass != null) __obj.updateDynamic("verticalUpClass")(verticalUpClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITouchSpinOptions]

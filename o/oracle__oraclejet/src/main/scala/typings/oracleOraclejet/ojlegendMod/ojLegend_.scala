@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojlegendMod
 
-import typings.oracleOraclejet.AnonLabelAndValue
+import typings.oracleOraclejet.anon.LabelAndValue
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponent
@@ -97,7 +97,7 @@ trait ojLegend_[K, D] extends dvtBaseComponent[ojLegendSettableProperties[K, D]]
   var symbolWidth: Double = js.native
   var textStyle: js.UndefOr[js.Object] = js.native
   @JSName("translations")
-  var translations_ojLegend_ : AnonLabelAndValue = js.native
+  var translations_ojLegend_ : LabelAndValue = js.native
   var valign: middle | bottom | top = js.native
   def addEventListener(
     `type`: drillingChanged,
@@ -356,6 +356,6 @@ trait ojLegend_[K, D] extends dvtBaseComponent[ojLegendSettableProperties[K, D]]
   @JSName("setProperty")
   def setProperty_textStyle(property: textStyle, value: js.Object): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonLabelAndValue): Unit = js.native
+  def setProperty_translations(property: translations, value: LabelAndValue): Unit = js.native
 }
 

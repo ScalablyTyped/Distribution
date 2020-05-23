@@ -28,12 +28,12 @@ object AccessLog {
   @scala.inline
   def apply(
     Enabled: AccessLogEnabled,
-    EmitInterval: Int | Double = null,
+    EmitInterval: js.UndefOr[AccessLogInterval] = js.undefined,
     S3BucketName: S3BucketName = null,
     S3BucketPrefix: AccessLogPrefix = null
   ): AccessLog = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
-    if (EmitInterval != null) __obj.updateDynamic("EmitInterval")(EmitInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(EmitInterval)) __obj.updateDynamic("EmitInterval")(EmitInterval.get.asInstanceOf[js.Any])
     if (S3BucketName != null) __obj.updateDynamic("S3BucketName")(S3BucketName.asInstanceOf[js.Any])
     if (S3BucketPrefix != null) __obj.updateDynamic("S3BucketPrefix")(S3BucketPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessLog]

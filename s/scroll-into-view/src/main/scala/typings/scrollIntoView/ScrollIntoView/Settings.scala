@@ -17,13 +17,13 @@ object Settings {
   def apply(
     align: Alignment = null,
     ease: /* value */ Double => Double = null,
-    time: Int | Double = null,
+    time: js.UndefOr[Double] = js.undefined,
     validTarget: (/* target */ HTMLElement, /* parentsScrolled */ Double) => Boolean = null
   ): Settings = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (ease != null) __obj.updateDynamic("ease")(js.Any.fromFunction1(ease))
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (!js.isUndefined(time)) __obj.updateDynamic("time")(time.get.asInstanceOf[js.Any])
     if (validTarget != null) __obj.updateDynamic("validTarget")(js.Any.fromFunction2(validTarget))
     __obj.asInstanceOf[Settings]
   }

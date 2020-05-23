@@ -1,6 +1,6 @@
 package typings.wordpressHooks.mod
 
-import typings.wordpressHooks.AnonActions
+import typings.wordpressHooks.anon.Actions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@wordpress/hooks", "createHooks")
 @js.native
 object createHooks extends js.Object {
-  def apply(): AnonActions = js.native
+  def apply(): Actions = js.native
 }
 

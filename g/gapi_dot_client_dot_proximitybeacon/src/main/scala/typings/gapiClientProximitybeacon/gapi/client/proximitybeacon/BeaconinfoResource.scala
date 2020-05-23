@@ -1,7 +1,7 @@
 package typings.gapiClientProximitybeacon.gapi.client.proximitybeacon
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientProximitybeacon.AnonAccesstoken
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientProximitybeacon.anon.Accesstoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,12 +13,12 @@ trait BeaconinfoResource extends js.Object {
     * [API key](https://developers.google.com/beacons/proximity/get-started#request_a_browser_api_key)
     * for the application.
     */
-  def getforobserved(request: AnonAccesstoken): Request_[GetInfoForObservedBeaconsResponse]
+  def getforobserved(request: Accesstoken): Request[GetInfoForObservedBeaconsResponse]
 }
 
 object BeaconinfoResource {
   @scala.inline
-  def apply(getforobserved: AnonAccesstoken => Request_[GetInfoForObservedBeaconsResponse]): BeaconinfoResource = {
+  def apply(getforobserved: Accesstoken => Request[GetInfoForObservedBeaconsResponse]): BeaconinfoResource = {
     val __obj = js.Dynamic.literal(getforobserved = js.Any.fromFunction1(getforobserved))
     __obj.asInstanceOf[BeaconinfoResource]
   }

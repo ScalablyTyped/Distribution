@@ -5,30 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Globalization.GeographicRegion")
-@js.native
-class GeographicRegion () extends IGeographicRegion {
-  def this(geographicRegionCode: String) = this()
-  /* CompleteClass */
-  override var code: String = js.native
-  /* CompleteClass */
-  override var codeThreeDigit: String = js.native
-  /* CompleteClass */
-  override var codeThreeLetter: String = js.native
-  /* CompleteClass */
-  override var codeTwoLetter: String = js.native
-  /* CompleteClass */
-  override var currenciesInUse: IVectorView[String] = js.native
-  /* CompleteClass */
-  override var displayName: String = js.native
-  /* CompleteClass */
-  override var nativeName: String = js.native
-}
+trait GeographicRegion extends IGeographicRegion
 
-/* static members */
-@JSGlobal("Windows.Globalization.GeographicRegion")
-@js.native
-object GeographicRegion extends js.Object {
-  def isSupported(geographicRegionCode: String): Boolean = js.native
+object GeographicRegion {
+  @scala.inline
+  def apply(
+    code: String,
+    codeThreeDigit: String,
+    codeThreeLetter: String,
+    codeTwoLetter: String,
+    currenciesInUse: IVectorView[String],
+    displayName: String,
+    nativeName: String
+  ): GeographicRegion = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], codeThreeDigit = codeThreeDigit.asInstanceOf[js.Any], codeThreeLetter = codeThreeLetter.asInstanceOf[js.Any], codeTwoLetter = codeTwoLetter.asInstanceOf[js.Any], currenciesInUse = currenciesInUse.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], nativeName = nativeName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GeographicRegion]
+  }
 }
 

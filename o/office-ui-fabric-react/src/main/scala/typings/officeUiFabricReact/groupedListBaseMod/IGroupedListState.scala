@@ -17,12 +17,12 @@ object IGroupedListState {
   def apply(
     groups: js.Array[IGroup] = null,
     lastSelectionMode: SelectionMode = null,
-    lastWidth: Int | Double = null
+    lastWidth: js.UndefOr[Double] = js.undefined
   ): IGroupedListState = {
     val __obj = js.Dynamic.literal()
     if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
     if (lastSelectionMode != null) __obj.updateDynamic("lastSelectionMode")(lastSelectionMode.asInstanceOf[js.Any])
-    if (lastWidth != null) __obj.updateDynamic("lastWidth")(lastWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastWidth)) __obj.updateDynamic("lastWidth")(lastWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGroupedListState]
   }
 }

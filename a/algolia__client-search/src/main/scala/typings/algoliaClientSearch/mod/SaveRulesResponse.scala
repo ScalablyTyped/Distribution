@@ -8,11 +8,11 @@ trait SaveRulesResponse extends js.Object {
   /**
     * The operation task id. May be used to perform a wait task.
     */
-  val taskID: Double
+  var taskID: Double
   /**
     * When the given rules got saved.
     */
-  val updatedAt: Double
+  var updatedAt: Double
 }
 
 object SaveRulesResponse {

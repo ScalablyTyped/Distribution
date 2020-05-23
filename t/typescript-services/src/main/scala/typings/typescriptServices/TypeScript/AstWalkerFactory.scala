@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.AstWalkerFactory")
 @js.native
-class AstWalkerFactory () extends js.Object {
+trait AstWalkerFactory extends js.Object {
   def simpleWalk(ast: AST, pre: js.Function2[/* ast */ AST, /* state */ js.Any, Unit]): Unit = js.native
   def simpleWalk(
     ast: AST,

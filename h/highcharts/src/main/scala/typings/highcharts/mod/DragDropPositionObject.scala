@@ -38,13 +38,13 @@ object DragDropPositionObject {
     chartY: Double,
     points: Dictionary[Dictionary[Double]],
     guideBox: BBoxObject = null,
-    prevdX: Int | Double = null,
-    prevdY: Int | Double = null
+    prevdX: js.UndefOr[Double] = js.undefined,
+    prevdY: js.UndefOr[Double] = js.undefined
   ): DragDropPositionObject = {
     val __obj = js.Dynamic.literal(chartX = chartX.asInstanceOf[js.Any], chartY = chartY.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any])
     if (guideBox != null) __obj.updateDynamic("guideBox")(guideBox.asInstanceOf[js.Any])
-    if (prevdX != null) __obj.updateDynamic("prevdX")(prevdX.asInstanceOf[js.Any])
-    if (prevdY != null) __obj.updateDynamic("prevdY")(prevdY.asInstanceOf[js.Any])
+    if (!js.isUndefined(prevdX)) __obj.updateDynamic("prevdX")(prevdX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(prevdY)) __obj.updateDynamic("prevdY")(prevdY.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragDropPositionObject]
   }
 }

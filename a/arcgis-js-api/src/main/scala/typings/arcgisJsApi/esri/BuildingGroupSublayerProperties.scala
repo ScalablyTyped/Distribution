@@ -29,15 +29,15 @@ object BuildingGroupSublayerProperties {
   @scala.inline
   def apply(
     listMode: show | hide | `hide-children` = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     title: String = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): BuildingGroupSublayerProperties = {
     val __obj = js.Dynamic.literal()
     if (listMode != null) __obj.updateDynamic("listMode")(listMode.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildingGroupSublayerProperties]
   }
 }

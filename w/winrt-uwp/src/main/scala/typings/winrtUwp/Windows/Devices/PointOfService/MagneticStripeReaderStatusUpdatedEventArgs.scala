@@ -5,12 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides information about an operation status change. */
-@JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderStatusUpdatedEventArgs")
-@js.native
-abstract class MagneticStripeReaderStatusUpdatedEventArgs () extends js.Object {
+trait MagneticStripeReaderStatusUpdatedEventArgs extends js.Object {
   /** Gets the vendor specific error code. */
-  var extendedStatus: Double = js.native
+  var extendedStatus: Double
   /** Gets the status change information. */
-  var status: MagneticStripeReaderStatus = js.native
+  var status: MagneticStripeReaderStatus
+}
+
+object MagneticStripeReaderStatusUpdatedEventArgs {
+  @scala.inline
+  def apply(extendedStatus: Double, status: MagneticStripeReaderStatus): MagneticStripeReaderStatusUpdatedEventArgs = {
+    val __obj = js.Dynamic.literal(extendedStatus = extendedStatus.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MagneticStripeReaderStatusUpdatedEventArgs]
+  }
 }
 

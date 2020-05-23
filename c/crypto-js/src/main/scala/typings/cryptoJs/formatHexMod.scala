@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object formatHexMod
   extends TopLevel[
-      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof format.Hex */ js.Any
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof mode.CFB */ js.Any
     ]
 

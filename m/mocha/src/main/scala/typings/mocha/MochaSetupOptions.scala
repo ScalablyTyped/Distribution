@@ -1,7 +1,7 @@
 package typings.mocha
 
-import typings.mocha.Mocha_.Interface
-import typings.mocha.Mocha_.MochaOptions
+import typings.mocha.Mocha.Interface
+import typings.mocha.Mocha.MochaOptions
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,41 +36,41 @@ object MochaSetupOptions {
     ignoreLeaks: js.UndefOr[Boolean] = js.undefined,
     inlineDiffs: js.UndefOr[Boolean] = js.undefined,
     noHighlighting: js.UndefOr[Boolean] = js.undefined,
-    reporter: String | typings.mocha.Mocha_.ReporterConstructor = null,
+    reporter: String | typings.mocha.Mocha.ReporterConstructor = null,
     reporterOptions: js.Any = null,
     require: js.Array[String] = null,
-    retries: Int | Double = null,
-    slow: Int | Double = null,
+    retries: js.UndefOr[Double] = js.undefined,
+    slow: js.UndefOr[Double] = js.undefined,
     timeout: Double | String = null,
     ui: Interface = null,
     useColors: js.UndefOr[Boolean] = js.undefined
   ): MochaSetupOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowUncaught)) __obj.updateDynamic("allowUncaught")(allowUncaught.asInstanceOf[js.Any])
-    if (!js.isUndefined(asyncOnly)) __obj.updateDynamic("asyncOnly")(asyncOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(bail)) __obj.updateDynamic("bail")(bail.asInstanceOf[js.Any])
-    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTimeouts)) __obj.updateDynamic("enableTimeouts")(enableTimeouts.asInstanceOf[js.Any])
-    if (!js.isUndefined(forbidOnly)) __obj.updateDynamic("forbidOnly")(forbidOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(forbidPending)) __obj.updateDynamic("forbidPending")(forbidPending.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullStackTrace)) __obj.updateDynamic("fullStackTrace")(fullStackTrace.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullTrace)) __obj.updateDynamic("fullTrace")(fullTrace.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowUncaught)) __obj.updateDynamic("allowUncaught")(allowUncaught.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(asyncOnly)) __obj.updateDynamic("asyncOnly")(asyncOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bail)) __obj.updateDynamic("bail")(bail.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTimeouts)) __obj.updateDynamic("enableTimeouts")(enableTimeouts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forbidOnly)) __obj.updateDynamic("forbidOnly")(forbidOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forbidPending)) __obj.updateDynamic("forbidPending")(forbidPending.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullStackTrace)) __obj.updateDynamic("fullStackTrace")(fullStackTrace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullTrace)) __obj.updateDynamic("fullTrace")(fullTrace.get.asInstanceOf[js.Any])
     if (globals != null) __obj.updateDynamic("globals")(globals.asInstanceOf[js.Any])
     if (grep != null) __obj.updateDynamic("grep")(grep.asInstanceOf[js.Any])
-    if (!js.isUndefined(growl)) __obj.updateDynamic("growl")(growl.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideDiff)) __obj.updateDynamic("hideDiff")(hideDiff.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreLeaks)) __obj.updateDynamic("ignoreLeaks")(ignoreLeaks.asInstanceOf[js.Any])
-    if (!js.isUndefined(inlineDiffs)) __obj.updateDynamic("inlineDiffs")(inlineDiffs.asInstanceOf[js.Any])
-    if (!js.isUndefined(noHighlighting)) __obj.updateDynamic("noHighlighting")(noHighlighting.asInstanceOf[js.Any])
+    if (!js.isUndefined(growl)) __obj.updateDynamic("growl")(growl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideDiff)) __obj.updateDynamic("hideDiff")(hideDiff.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreLeaks)) __obj.updateDynamic("ignoreLeaks")(ignoreLeaks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inlineDiffs)) __obj.updateDynamic("inlineDiffs")(inlineDiffs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noHighlighting)) __obj.updateDynamic("noHighlighting")(noHighlighting.get.asInstanceOf[js.Any])
     if (reporter != null) __obj.updateDynamic("reporter")(reporter.asInstanceOf[js.Any])
     if (reporterOptions != null) __obj.updateDynamic("reporterOptions")(reporterOptions.asInstanceOf[js.Any])
     if (require != null) __obj.updateDynamic("require")(require.asInstanceOf[js.Any])
-    if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
-    if (slow != null) __obj.updateDynamic("slow")(slow.asInstanceOf[js.Any])
+    if (!js.isUndefined(retries)) __obj.updateDynamic("retries")(retries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(slow)) __obj.updateDynamic("slow")(slow.get.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (ui != null) __obj.updateDynamic("ui")(ui.asInstanceOf[js.Any])
-    if (!js.isUndefined(useColors)) __obj.updateDynamic("useColors")(useColors.asInstanceOf[js.Any])
+    if (!js.isUndefined(useColors)) __obj.updateDynamic("useColors")(useColors.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MochaSetupOptions]
   }
 }

@@ -19,7 +19,7 @@ object DirectOptions {
   @scala.inline
   def apply(debug: js.UndefOr[Boolean] = js.undefined, name: String = null): DirectOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectOptions]
   }

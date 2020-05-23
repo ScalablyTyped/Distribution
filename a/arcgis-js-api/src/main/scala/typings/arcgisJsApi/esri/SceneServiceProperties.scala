@@ -40,13 +40,13 @@ object SceneServiceProperties {
   @scala.inline
   def apply(
     copyright: String = null,
-    layerId: Int | Double = null,
+    layerId: js.UndefOr[Double] = js.undefined,
     spatialReference: SpatialReferenceProperties = null,
     url: String = null
   ): SceneServiceProperties = {
     val __obj = js.Dynamic.literal()
     if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
-    if (layerId != null) __obj.updateDynamic("layerId")(layerId.asInstanceOf[js.Any])
+    if (!js.isUndefined(layerId)) __obj.updateDynamic("layerId")(layerId.get.asInstanceOf[js.Any])
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneServiceProperties]

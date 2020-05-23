@@ -1,7 +1,7 @@
 package typings.antDesignReactNative.providerMod
 
-import typings.antDesignReactNative.PartialLocale
-import typings.antDesignReactNative.PartialTheme
+import typings.antDesignReactNative.anon.PartialLocale
+import typings.antDesignReactNative.anon.PartialTheme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

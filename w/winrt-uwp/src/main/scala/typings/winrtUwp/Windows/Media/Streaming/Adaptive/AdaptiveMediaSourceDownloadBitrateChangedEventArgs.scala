@@ -5,12 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides data for the DownloadBitrateChanged event. */
-@JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDownloadBitrateChangedEventArgs")
-@js.native
-abstract class AdaptiveMediaSourceDownloadBitrateChangedEventArgs () extends js.Object {
+trait AdaptiveMediaSourceDownloadBitrateChangedEventArgs extends js.Object {
   /** Gets a value indicating the new download bitrate for the media source. */
-  var newValue: Double = js.native
+  var newValue: Double
   /** Gets a value indicating the previous download bitrate for the media source. */
-  var oldValue: Double = js.native
+  var oldValue: Double
+}
+
+object AdaptiveMediaSourceDownloadBitrateChangedEventArgs {
+  @scala.inline
+  def apply(newValue: Double, oldValue: Double): AdaptiveMediaSourceDownloadBitrateChangedEventArgs = {
+    val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AdaptiveMediaSourceDownloadBitrateChangedEventArgs]
+  }
 }
 

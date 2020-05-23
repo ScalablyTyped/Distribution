@@ -8,9 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a smart card authentication challenge/response operation. */
-@JSGlobal("Windows.Devices.SmartCards.SmartCardChallengeContext")
 @js.native
-abstract class SmartCardChallengeContext () extends js.Object {
+trait SmartCardChallengeContext extends js.Object {
   /** Gets the smart card's challenge value. */
   var challenge: IBuffer = js.native
   /**

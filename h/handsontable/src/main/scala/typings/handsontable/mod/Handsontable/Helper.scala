@@ -1,9 +1,9 @@
 package typings.handsontable.mod.Handsontable
 
-import typings.handsontable.AnonA
+import typings.handsontable.anon.A
 import typings.handsontable.mod._Handsontable.Core
 import typings.std.Date
-import typings.std.Document_
+import typings.std.Document
 import typings.std.HTMLTableElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Helper extends js.Object {
-  val KEY_CODES: AnonA = js.native
+  val KEY_CODES: A = js.native
   def arrayAvg(array: js.Array[_]): Double = js.native
   def arrayEach(
     array: js.Array[_],
@@ -72,9 +72,9 @@ trait Helper extends js.Object {
   def getPrototypeOf(obj: js.Object): js.Any | Unit = js.native
   def hasCaptionProblem(): Boolean | Unit = js.native
   def htmlToGridSettings(element: String): GridSettings = js.native
-  def htmlToGridSettings(element: String, rootDocument: Document_): GridSettings = js.native
+  def htmlToGridSettings(element: String, rootDocument: Document): GridSettings = js.native
   def htmlToGridSettings(element: HTMLTableElement): GridSettings = js.native
-  def htmlToGridSettings(element: HTMLTableElement, rootDocument: Document_): GridSettings = js.native
+  def htmlToGridSettings(element: HTMLTableElement, rootDocument: Document): GridSettings = js.native
   def inherit(Child: js.Object, Parent: js.Object): js.Object = js.native
   def instanceToHTML(instance: Core): String = js.native
   def isChrome(): Boolean = js.native

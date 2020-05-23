@@ -1,6 +1,6 @@
 package typings.aliApp.my
 
-import typings.aliApp.devicesArrayBluetoothDevi
+import typings.aliApp.anon.devicesArrayBluetoothDevi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

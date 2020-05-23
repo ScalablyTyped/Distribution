@@ -15,11 +15,11 @@ object TodayMarkerProps {
   def apply(
     date: Date | Double,
     children: /* props */ CustomMarkerChildrenProps => ReactNode = null,
-    interval: Int | Double = null
+    interval: js.UndefOr[Double] = js.undefined
   ): TodayMarkerProps = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TodayMarkerProps]
   }
 }

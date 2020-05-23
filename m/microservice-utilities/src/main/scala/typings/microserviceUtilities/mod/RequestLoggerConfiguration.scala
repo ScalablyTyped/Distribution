@@ -14,12 +14,12 @@ object RequestLoggerConfiguration {
   @scala.inline
   def apply(
     extendErrorObjects: js.UndefOr[Boolean] = js.undefined,
-    jsonSpace: Int | Double = null,
+    jsonSpace: js.UndefOr[Double] = js.undefined,
     logFunction: /* msg */ js.Any => Unit = null
   ): RequestLoggerConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(extendErrorObjects)) __obj.updateDynamic("extendErrorObjects")(extendErrorObjects.asInstanceOf[js.Any])
-    if (jsonSpace != null) __obj.updateDynamic("jsonSpace")(jsonSpace.asInstanceOf[js.Any])
+    if (!js.isUndefined(extendErrorObjects)) __obj.updateDynamic("extendErrorObjects")(extendErrorObjects.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(jsonSpace)) __obj.updateDynamic("jsonSpace")(jsonSpace.get.asInstanceOf[js.Any])
     if (logFunction != null) __obj.updateDynamic("logFunction")(js.Any.fromFunction1(logFunction))
     __obj.asInstanceOf[RequestLoggerConfiguration]
   }

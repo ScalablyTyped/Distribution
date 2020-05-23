@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.ChartTrendlineData
 import typings.officeJsPreview.Excel.Interfaces.ChartTrendlineLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.ChartTrendlineUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.Exponential
 import typings.officeJsPreview.officeJsPreviewStrings.Linear
 import typings.officeJsPreview.officeJsPreviewStrings.Logarithmic
@@ -22,9 +22,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.7]
   */
-@JSGlobal("Excel.ChartTrendline")
 @js.native
-class ChartTrendline () extends ClientObject {
+trait ChartTrendline extends ClientObject {
   /**
     *
     * Represents the number of periods that the trendline extends backward.
@@ -118,7 +117,7 @@ class ChartTrendline () extends ClientObject {
     */
   def load(): ChartTrendline = js.native
   def load(options: ChartTrendlineLoadOptions): ChartTrendline = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ChartTrendline = js.native
+  def load(propertyNamesAndPaths: Expand): ChartTrendline = js.native
   def load(propertyNames: String): ChartTrendline = js.native
   def load(propertyNames: js.Array[String]): ChartTrendline = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

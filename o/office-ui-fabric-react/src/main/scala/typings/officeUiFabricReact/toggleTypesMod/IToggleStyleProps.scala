@@ -43,11 +43,11 @@ object IToggleStyleProps {
     onOffMissing: js.UndefOr[Boolean] = js.undefined
   ): IToggleStyleProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(inlineLabel)) __obj.updateDynamic("inlineLabel")(inlineLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(onOffMissing)) __obj.updateDynamic("onOffMissing")(onOffMissing.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inlineLabel)) __obj.updateDynamic("inlineLabel")(inlineLabel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(onOffMissing)) __obj.updateDynamic("onOffMissing")(onOffMissing.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IToggleStyleProps]
   }
 }

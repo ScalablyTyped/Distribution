@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,9 +9,11 @@ trait RTCCertificate extends js.Object {
   def getFingerprints(): js.Array[RTCDtlsFingerprint]
 }
 
-@JSGlobal("RTCCertificate")
-@js.native
-object RTCCertificate extends Instantiable0[RTCCertificate] {
-  def getSupportedAlgorithms(): js.Array[AlgorithmIdentifier] = js.native
+object RTCCertificate {
+  @scala.inline
+  def apply(expires: Double, getFingerprints: () => js.Array[RTCDtlsFingerprint]): RTCCertificate = {
+    val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], getFingerprints = js.Any.fromFunction0(getFingerprints))
+    __obj.asInstanceOf[RTCCertificate]
+  }
 }
 

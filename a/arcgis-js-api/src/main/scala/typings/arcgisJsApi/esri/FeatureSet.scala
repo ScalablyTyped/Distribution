@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.extent
 import typings.arcgisJsApi.arcgisJsApiStrings.mesh
 import typings.arcgisJsApi.arcgisJsApiStrings.multipoint
@@ -58,8 +57,4 @@ trait FeatureSet
     */
   var spatialReference: SpatialReference = js.native
 }
-
-@JSGlobal("__esri.FeatureSet")
-@js.native
-object FeatureSet extends TopLevel[FeatureSetConstructor]
 

@@ -13,10 +13,13 @@ trait IClientEventsSubscribeRequest extends js.Object {
 
 object IClientEventsSubscribeRequest {
   @scala.inline
-  def apply(lastKnownBlockIds: js.Array[String] = null, subscriptions: js.Array[IEventSubscription] = null): IClientEventsSubscribeRequest = {
+  def apply(
+    lastKnownBlockIds: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    subscriptions: js.UndefOr[Null | js.Array[IEventSubscription]] = js.undefined
+  ): IClientEventsSubscribeRequest = {
     val __obj = js.Dynamic.literal()
-    if (lastKnownBlockIds != null) __obj.updateDynamic("lastKnownBlockIds")(lastKnownBlockIds.asInstanceOf[js.Any])
-    if (subscriptions != null) __obj.updateDynamic("subscriptions")(subscriptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastKnownBlockIds)) __obj.updateDynamic("lastKnownBlockIds")(lastKnownBlockIds.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscriptions)) __obj.updateDynamic("subscriptions")(subscriptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientEventsSubscribeRequest]
   }
 }

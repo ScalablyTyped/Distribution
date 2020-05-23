@@ -22,9 +22,13 @@ trait ListSpeechSynthesisTasksInput extends js.Object {
 
 object ListSpeechSynthesisTasksInput {
   @scala.inline
-  def apply(MaxResults: Int | Double = null, NextToken: NextToken = null, Status: TaskStatus = null): ListSpeechSynthesisTasksInput = {
+  def apply(
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    NextToken: NextToken = null,
+    Status: TaskStatus = null
+  ): ListSpeechSynthesisTasksInput = {
     val __obj = js.Dynamic.literal()
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSpeechSynthesisTasksInput]

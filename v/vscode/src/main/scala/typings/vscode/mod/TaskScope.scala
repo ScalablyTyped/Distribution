@@ -12,14 +12,14 @@ sealed trait TaskScope extends js.Object
 @js.native
 object TaskScope extends js.Object {
   /**
-  		 * The task is a global task. Global tasks are currrently not supported.
-  		 */
+    * The task is a global task. Global tasks are currrently not supported.
+    */
   @js.native
   sealed trait Global extends TaskScope
   
   /**
-  		 * The task is a workspace task
-  		 */
+    * The task is a workspace task
+    */
   @js.native
   sealed trait Workspace extends TaskScope
   

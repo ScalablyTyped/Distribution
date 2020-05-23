@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait FirebaseConfig extends js.Object {
   /**
-  	 * Token for authorisation
-  	 */
+    * Token for authorisation
+    */
   var auth: String
   /**
-  	 * path for the Firebase instance
-  	 */
+    * path for the Firebase instance
+    */
   var url: String
 }
 

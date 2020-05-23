@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.bmp
 import typings.arcgisJsApi.arcgisJsApiStrings.gif
 import typings.arcgisJsApi.arcgisJsApiStrings.jpg
@@ -60,8 +59,4 @@ trait MapImage
     */
   var width: Double = js.native
 }
-
-@JSGlobal("__esri.MapImage")
-@js.native
-object MapImage extends TopLevel[MapImageConstructor]
 

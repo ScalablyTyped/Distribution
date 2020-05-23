@@ -13,11 +13,15 @@ trait Settings extends js.Object {
 
 object Settings {
   @scala.inline
-  def apply(columnsLimit: Int | Double = null, pasteMode: PasteModeType = null, rowsLimit: Int | Double = null): Settings = {
+  def apply(
+    columnsLimit: js.UndefOr[Double] = js.undefined,
+    pasteMode: PasteModeType = null,
+    rowsLimit: js.UndefOr[Double] = js.undefined
+  ): Settings = {
     val __obj = js.Dynamic.literal()
-    if (columnsLimit != null) __obj.updateDynamic("columnsLimit")(columnsLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnsLimit)) __obj.updateDynamic("columnsLimit")(columnsLimit.get.asInstanceOf[js.Any])
     if (pasteMode != null) __obj.updateDynamic("pasteMode")(pasteMode.asInstanceOf[js.Any])
-    if (rowsLimit != null) __obj.updateDynamic("rowsLimit")(rowsLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowsLimit)) __obj.updateDynamic("rowsLimit")(rowsLimit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
 }

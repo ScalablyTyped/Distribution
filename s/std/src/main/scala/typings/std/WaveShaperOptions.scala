@@ -12,14 +12,14 @@ trait WaveShaperOptions extends AudioNodeOptions {
 object WaveShaperOptions {
   @scala.inline
   def apply(
-    channelCount: Int | Double = null,
+    channelCount: js.UndefOr[Double] = js.undefined,
     channelCountMode: ChannelCountMode = null,
     channelInterpretation: ChannelInterpretation = null,
     curve: js.Array[Double] | Float32Array = null,
     oversample: OverSampleType = null
   ): WaveShaperOptions = {
     val __obj = js.Dynamic.literal()
-    if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(channelCount)) __obj.updateDynamic("channelCount")(channelCount.get.asInstanceOf[js.Any])
     if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
     if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
     if (curve != null) __obj.updateDynamic("curve")(curve.asInstanceOf[js.Any])

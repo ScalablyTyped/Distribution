@@ -7,17 +7,23 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the client-side equivalent of the SeriesLabelBase class.
   */
-@JSGlobal("ASPxClientSeriesLabel")
-@js.native
-class ASPxClientSeriesLabel () extends ASPxClientWebChartElement {
+trait ASPxClientSeriesLabel extends ASPxClientWebChartElement {
   /**
     * Gets the series that owns the current series label object.
     */
-  var series: ASPxClientSeries = js.native
+  var series: ASPxClientSeries
   /** @deprecated This property is obsolete and isn't used at all. */
   /**
     * Gets the common text for all series point labels.
     */
-  var text: String = js.native
+  var text: String
+}
+
+object ASPxClientSeriesLabel {
+  @scala.inline
+  def apply(chart: ASPxClientWebChart, series: ASPxClientSeries, text: String): ASPxClientSeriesLabel = {
+    val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], series = series.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientSeriesLabel]
+  }
 }
 

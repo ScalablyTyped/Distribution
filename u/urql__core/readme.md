@@ -1,7 +1,7 @@
 
 # Scala.js typings for urql__core
 
-Typings are for version 1.10.9
+Typings are for version 1.11.8
 
 ## Library description:
 The shared core for the highly customizable and versatile GraphQL client

@@ -2,8 +2,13 @@ package typings.jestSnapshot
 
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.TopLevel
-import typings.expect.readonlyprintExpectedvalu
+import typings.expect.anon.readonlyprintExpectedvalu
 import typings.expect.typesMod.Tester
+import typings.jestSnapshot.anon.Expected
+import typings.jestSnapshot.anon.FilesRemoved
+import typings.jestSnapshot.anon.Message
+import typings.jestSnapshot.anon.Name
+import typings.jestSnapshot.anon.Typeofutils
 import typings.jestSnapshot.stateMod.SnapshotStateOptions
 import typings.jestSnapshot.stateMod.default
 import typings.jestTypes.configMod.Path
@@ -52,27 +57,25 @@ object mod extends js.Object {
     hasteFS: typings.jestHasteMap.hasteFSMod.default,
     update: SnapshotUpdateState,
     snapshotResolver: typings.jestSnapshot.snapshotResolverMod.SnapshotResolver
-  ): AnonFilesRemoved = js.native
+  ): FilesRemoved = js.native
   def cleanup(
     hasteFS: typings.jestHasteMap.hasteFSMod.default,
     update: SnapshotUpdateState,
     snapshotResolver: typings.jestSnapshot.snapshotResolverMod.SnapshotResolver,
     testPathIgnorePatterns: js.Array[String]
-  ): AnonFilesRemoved = js.native
+  ): FilesRemoved = js.native
   def getSerializers(): js.Array[Plugin] = js.native
   def isSnapshotPath(path: String): Boolean = js.native
-  def toMatchInlineSnapshot(received: js.Any): AnonExpected | AnonMessage | AnonName = js.native
-  def toMatchInlineSnapshot(received: js.Any, propertyMatchersOrInlineSnapshot: js.Any): AnonExpected | AnonMessage | AnonName = js.native
-  def toMatchInlineSnapshot(received: js.Any, propertyMatchersOrInlineSnapshot: js.Any, inlineSnapshot: String): AnonExpected | AnonMessage | AnonName = js.native
-  def toMatchSnapshot(received: js.Any): AnonExpected | AnonMessage | AnonName = js.native
-  def toMatchSnapshot(received: js.Any, propertyMatchers: js.Any): AnonExpected | AnonMessage | AnonName = js.native
-  def toMatchSnapshot(received: js.Any, propertyMatchers: js.Any, hint: String): AnonExpected | AnonMessage | AnonName = js.native
-  def toThrowErrorMatchingInlineSnapshot(received: js.Any): AnonExpected | AnonMessage | AnonName = js.native
-  def toThrowErrorMatchingInlineSnapshot(received: js.Any, inlineSnapshot: js.UndefOr[scala.Nothing], fromPromise: Boolean): AnonExpected | AnonMessage | AnonName = js.native
-  def toThrowErrorMatchingInlineSnapshot(received: js.Any, inlineSnapshot: String): AnonExpected | AnonMessage | AnonName = js.native
-  def toThrowErrorMatchingInlineSnapshot(received: js.Any, inlineSnapshot: String, fromPromise: Boolean): AnonExpected | AnonMessage | AnonName = js.native
-  def toThrowErrorMatchingSnapshot(received: js.Any, hint: js.UndefOr[scala.Nothing], fromPromise: Boolean): AnonExpected | AnonMessage | AnonName = js.native
-  def toThrowErrorMatchingSnapshot(received: js.Any, hint: String, fromPromise: Boolean): AnonExpected | AnonMessage | AnonName = js.native
+  def toMatchInlineSnapshot(received: js.Any): Expected | Message | Name = js.native
+  def toMatchInlineSnapshot(received: js.Any, propertyMatchersOrInlineSnapshot: js.Any): Expected | Message | Name = js.native
+  def toMatchInlineSnapshot(received: js.Any, propertyMatchersOrInlineSnapshot: js.Any, inlineSnapshot: String): Expected | Message | Name = js.native
+  def toMatchSnapshot(received: js.Any): Expected | Message | Name = js.native
+  def toMatchSnapshot(received: js.Any, propertyMatchers: js.Any): Expected | Message | Name = js.native
+  def toMatchSnapshot(received: js.Any, propertyMatchers: js.Any, hint: String): Expected | Message | Name = js.native
+  def toThrowErrorMatchingInlineSnapshot(received: js.Any): Expected | Message | Name = js.native
+  def toThrowErrorMatchingInlineSnapshot(received: js.Any, inlineSnapshot: String): Expected | Message | Name = js.native
+  def toThrowErrorMatchingInlineSnapshot(received: js.Any, inlineSnapshot: String, fromPromise: Boolean): Expected | Message | Name = js.native
+  def toThrowErrorMatchingSnapshot(received: js.Any, hint: js.UndefOr[String], fromPromise: Boolean): Expected | Message | Name = js.native
   @js.native
   object SnapshotState extends TopLevel[
           Instantiable2[/* snapshotPath */ Path, /* options */ SnapshotStateOptions, default]

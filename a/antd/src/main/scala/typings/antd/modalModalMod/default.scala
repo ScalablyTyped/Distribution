@@ -1,7 +1,7 @@
 package typings.antd.modalModalMod
 
-import typings.antd.AnonConfirmLoading
-import typings.antd.OmitModalStaticFunctionsw
+import typings.antd.anon.ConfirmLoading
+import typings.antd.anon.OmitModalStaticFunctionsw
 import typings.react.mod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ class default () extends Modal
 @JSImport("antd/lib/modal/Modal", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonConfirmLoading = js.native
+  var defaultProps: ConfirmLoading = js.native
   var useModal: js.Function0[js.Tuple2[OmitModalStaticFunctionsw, ReactElement]] = js.native
   def destroyAll(): Unit = js.native
 }

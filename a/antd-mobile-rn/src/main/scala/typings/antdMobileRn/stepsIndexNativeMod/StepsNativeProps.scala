@@ -17,14 +17,14 @@ object StepsNativeProps {
   @scala.inline
   def apply(
     children: js.Array[ReactElement],
-    current: Int | Double = null,
+    current: js.UndefOr[Double] = js.undefined,
     direction: vertical | horizontal = null,
     finishIcon: String = null,
     size: String = null,
     styles: IStepsStyle = null
   ): StepsNativeProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
+    if (!js.isUndefined(current)) __obj.updateDynamic("current")(current.get.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (finishIcon != null) __obj.updateDynamic("finishIcon")(finishIcon.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

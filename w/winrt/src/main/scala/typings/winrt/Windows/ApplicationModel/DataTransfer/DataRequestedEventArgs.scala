@@ -4,10 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.DataTransfer.DataRequestedEventArgs")
-@js.native
-class DataRequestedEventArgs () extends IDataRequestedEventArgs {
-  /* CompleteClass */
-  override var request: DataRequest = js.native
+trait DataRequestedEventArgs extends IDataRequestedEventArgs
+
+object DataRequestedEventArgs {
+  @scala.inline
+  def apply(request: DataRequest): DataRequestedEventArgs = {
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataRequestedEventArgs]
+  }
 }
 

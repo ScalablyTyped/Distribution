@@ -22,11 +22,15 @@ trait Pose extends js.Object {
 
 object Pose {
   @scala.inline
-  def apply(Pitch: Int | Double = null, Roll: Int | Double = null, Yaw: Int | Double = null): Pose = {
+  def apply(
+    Pitch: js.UndefOr[Degree] = js.undefined,
+    Roll: js.UndefOr[Degree] = js.undefined,
+    Yaw: js.UndefOr[Degree] = js.undefined
+  ): Pose = {
     val __obj = js.Dynamic.literal()
-    if (Pitch != null) __obj.updateDynamic("Pitch")(Pitch.asInstanceOf[js.Any])
-    if (Roll != null) __obj.updateDynamic("Roll")(Roll.asInstanceOf[js.Any])
-    if (Yaw != null) __obj.updateDynamic("Yaw")(Yaw.asInstanceOf[js.Any])
+    if (!js.isUndefined(Pitch)) __obj.updateDynamic("Pitch")(Pitch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Roll)) __obj.updateDynamic("Roll")(Roll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Yaw)) __obj.updateDynamic("Yaw")(Yaw.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pose]
   }
 }

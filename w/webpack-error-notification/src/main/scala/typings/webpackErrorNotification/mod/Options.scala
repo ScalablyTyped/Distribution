@@ -13,7 +13,7 @@ object Options {
   @scala.inline
   def apply(notifyWarnings: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(notifyWarnings)) __obj.updateDynamic("notifyWarnings")(notifyWarnings.asInstanceOf[js.Any])
+    if (!js.isUndefined(notifyWarnings)) __obj.updateDynamic("notifyWarnings")(notifyWarnings.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

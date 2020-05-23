@@ -32,28 +32,28 @@ object Options {
   def apply(
     arrows: ArrowStyle | typings.heremaps.H.map.ArrowStyle.Options = null,
     data: js.Any = null,
-    elevation: Int | Double = null,
-    extrusion: Int | Double = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    provider: Provider = null,
+    elevation: js.UndefOr[Double] = js.undefined,
+    extrusion: js.UndefOr[Double] = js.undefined,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
+    provider: js.UndefOr[Null | Provider] = js.undefined,
     style: SpatialStyle | typings.heremaps.H.map.SpatialStyle.Options = null,
     visibility: js.UndefOr[Boolean] = js.undefined,
     volatility: js.UndefOr[Boolean] = js.undefined,
-    zIndex: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (arrows != null) __obj.updateDynamic("arrows")(arrows.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
-    if (extrusion != null) __obj.updateDynamic("extrusion")(extrusion.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
+    if (!js.isUndefined(elevation)) __obj.updateDynamic("elevation")(elevation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(extrusion)) __obj.updateDynamic("extrusion")(extrusion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(provider)) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(visibility)) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(volatility)) __obj.updateDynamic("volatility")(volatility.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(visibility)) __obj.updateDynamic("visibility")(visibility.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(volatility)) __obj.updateDynamic("volatility")(volatility.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

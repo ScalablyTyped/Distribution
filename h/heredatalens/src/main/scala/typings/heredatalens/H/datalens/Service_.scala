@@ -3,7 +3,6 @@ package typings.heredatalens.H.datalens
 import typings.heredatalens.H.datalens.QueryTileProvider.X
 import typings.heredatalens.H.datalens.QueryTileProvider.Y
 import typings.heredatalens.H.datalens.QueryTileProvider.Zoom
-import typings.heredatalens.H.datalens.Service.Options
 import typings.heremaps.H.service.IConfigurable
 import typings.std.Uint8Array
 import scala.scalajs.js
@@ -15,14 +14,8 @@ import scala.scalajs.js.annotation._
   * For each network source type, a service class is required. The service also stores API connection credentials.
   * The service instance must be configured with a service.Platform instance.
   */
-@JSGlobal("H.datalens.Service")
 @js.native
-/**
-  * Constructor
-  * @param options - Overrides the configuration from the service.Platform instance
-  */
-class Service_ () extends IConfigurable {
-  def this(options: Options) = this()
+trait Service_ extends IConfigurable {
   /**
     * This method fetches a layer of geometries (eg buildings or administrative boundaries).
     * @param layerName - The name of the layer

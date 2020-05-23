@@ -26,7 +26,7 @@ object BinOrdinalScale {
     domainMax: Double | SignalRef = null,
     domainMid: Double | SignalRef = null,
     domainMin: Double | SignalRef = null,
-    domainRaw: js.Array[_] | SignalRef = null,
+    domainRaw: js.UndefOr[Null | js.Array[_] | SignalRef] = js.undefined,
     interpolate: ScaleInterpolate = null,
     range: RangeScheme | ScaleData = null,
     reverse: Boolean | SignalRef = null,
@@ -39,7 +39,7 @@ object BinOrdinalScale {
     if (domainMax != null) __obj.updateDynamic("domainMax")(domainMax.asInstanceOf[js.Any])
     if (domainMid != null) __obj.updateDynamic("domainMid")(domainMid.asInstanceOf[js.Any])
     if (domainMin != null) __obj.updateDynamic("domainMin")(domainMin.asInstanceOf[js.Any])
-    if (domainRaw != null) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
+    if (!js.isUndefined(domainRaw)) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
     if (interpolate != null) __obj.updateDynamic("interpolate")(interpolate.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (reverse != null) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])

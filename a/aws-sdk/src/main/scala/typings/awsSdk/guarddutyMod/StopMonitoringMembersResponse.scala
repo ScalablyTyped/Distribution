@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StopMonitoringMembersResponse extends js.Object {
   /**
-    * A list of objects containing the unprocessed account and a result string explaining why it was unprocessed.
+    * A list of objects that contain an accountId for each account that could not be processed, and a result string that indicates why the account was not processed. 
     */
   var UnprocessedAccounts: typings.awsSdk.guarddutyMod.UnprocessedAccounts = js.native
 }

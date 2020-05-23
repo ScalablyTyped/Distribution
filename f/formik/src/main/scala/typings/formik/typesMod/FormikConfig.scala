@@ -82,7 +82,7 @@ object FormikConfig {
     val __obj = js.Dynamic.literal(initialValues = initialValues.asInstanceOf[js.Any], onSubmit = js.Any.fromFunction2(onSubmit))
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableReinitialize)) __obj.updateDynamic("enableReinitialize")(enableReinitialize.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableReinitialize)) __obj.updateDynamic("enableReinitialize")(enableReinitialize.get.asInstanceOf[js.Any])
     if (initialErrors != null) __obj.updateDynamic("initialErrors")(initialErrors.asInstanceOf[js.Any])
     if (initialStatus != null) __obj.updateDynamic("initialStatus")(initialStatus.asInstanceOf[js.Any])
     if (initialTouched != null) __obj.updateDynamic("initialTouched")(initialTouched.asInstanceOf[js.Any])
@@ -91,9 +91,9 @@ object FormikConfig {
     if (onReset != null) __obj.updateDynamic("onReset")(js.Any.fromFunction2(onReset))
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction1(validate))
-    if (!js.isUndefined(validateOnBlur)) __obj.updateDynamic("validateOnBlur")(validateOnBlur.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateOnChange)) __obj.updateDynamic("validateOnChange")(validateOnChange.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateOnMount)) __obj.updateDynamic("validateOnMount")(validateOnMount.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateOnBlur)) __obj.updateDynamic("validateOnBlur")(validateOnBlur.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateOnChange)) __obj.updateDynamic("validateOnChange")(validateOnChange.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateOnMount)) __obj.updateDynamic("validateOnMount")(validateOnMount.get.asInstanceOf[js.Any])
     if (validationSchema != null) __obj.updateDynamic("validationSchema")(validationSchema.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormikConfig[Values]]
   }

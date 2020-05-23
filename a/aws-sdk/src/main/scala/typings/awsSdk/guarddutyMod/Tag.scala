@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Tag extends js.Object {
   /**
-    * EC2 instance tag key.
+    * The EC2 instance tag key.
     */
   var Key: js.UndefOr[String] = js.native
   /**
-    * EC2 instance tag value.
+    * The EC2 instance tag value.
     */
   var Value: js.UndefOr[String] = js.native
 }

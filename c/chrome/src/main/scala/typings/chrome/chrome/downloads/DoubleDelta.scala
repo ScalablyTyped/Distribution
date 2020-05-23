@@ -11,10 +11,10 @@ trait DoubleDelta extends js.Object {
 
 object DoubleDelta {
   @scala.inline
-  def apply(current: Int | Double = null, previous: Int | Double = null): DoubleDelta = {
+  def apply(current: js.UndefOr[Double] = js.undefined, previous: js.UndefOr[Double] = js.undefined): DoubleDelta = {
     val __obj = js.Dynamic.literal()
-    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
-    if (previous != null) __obj.updateDynamic("previous")(previous.asInstanceOf[js.Any])
+    if (!js.isUndefined(current)) __obj.updateDynamic("current")(current.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(previous)) __obj.updateDynamic("previous")(previous.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DoubleDelta]
   }
 }

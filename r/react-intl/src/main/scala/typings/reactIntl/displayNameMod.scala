@@ -1,5 +1,6 @@
 package typings.reactIntl
 
+import typings.reactIntl.anon.PickIntlConfiglocaleonErr
 import typings.std.ConstructorParameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`

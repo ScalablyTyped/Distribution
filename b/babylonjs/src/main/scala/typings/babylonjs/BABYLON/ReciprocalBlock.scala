@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.ReciprocalBlock")
 @js.native
-class ReciprocalBlock protected () extends NodeMaterialBlock {
-  /**
-    * Creates a new ReciprocalBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait ReciprocalBlock extends NodeMaterialBlock {
   /**
     * Gets the input component
     */

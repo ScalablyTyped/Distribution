@@ -17,8 +17,8 @@ object packetinterfaceMod extends js.Object {
     val activeRequests: js.Any = js.native
     val channel: js.Any = js.native
     val config: js.Any = js.native
-    val isConnected: Boolean = js.native
     var storeRequest: js.Any = js.native
+    def isConnected: Boolean = js.native
     def processReply(reply: js.Any): Unit = js.native
     def send(header: Header): String = js.native
     def send(header: Header, payload: js.Any): String = js.native

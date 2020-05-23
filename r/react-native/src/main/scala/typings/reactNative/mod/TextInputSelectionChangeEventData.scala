@@ -1,17 +1,17 @@
 package typings.reactNative.mod
 
-import typings.reactNative.AnonEnd
+import typings.reactNative.anon.End
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TextInputSelectionChangeEventData extends TargetedEvent {
-  var selection: AnonEnd
+  var selection: End
 }
 
 object TextInputSelectionChangeEventData {
   @scala.inline
-  def apply(selection: AnonEnd, target: Double): TextInputSelectionChangeEventData = {
+  def apply(selection: End, target: Double): TextInputSelectionChangeEventData = {
     val __obj = js.Dynamic.literal(selection = selection.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextInputSelectionChangeEventData]
   }

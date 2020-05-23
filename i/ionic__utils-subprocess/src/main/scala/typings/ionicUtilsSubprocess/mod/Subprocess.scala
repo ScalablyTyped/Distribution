@@ -1,7 +1,7 @@
 package typings.ionicUtilsSubprocess.mod
 
-import typings.ionicUtilsSubprocess.PromisevoidpChildProcess
-import typings.ionicUtilsSubprocess.ReadonlySpawnOptions
+import typings.ionicUtilsSubprocess.anon.PromisevoidpChildProcess
+import typings.ionicUtilsSubprocess.anon.ReadonlySpawnOptions
 import typings.node.childProcessMod.ChildProcess
 import typings.node.childProcessMod.SpawnOptions
 import scala.scalajs.js

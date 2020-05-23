@@ -28,10 +28,10 @@ object NextServerConstructor {
   ): NextServerConstructor = {
     val __obj = js.Dynamic.literal()
     if (conf != null) __obj.updateDynamic("conf")(conf.asInstanceOf[js.Any])
-    if (!js.isUndefined(customServer)) __obj.updateDynamic("customServer")(customServer.asInstanceOf[js.Any])
-    if (!js.isUndefined(dev)) __obj.updateDynamic("dev")(dev.asInstanceOf[js.Any])
+    if (!js.isUndefined(customServer)) __obj.updateDynamic("customServer")(customServer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dev)) __obj.updateDynamic("dev")(dev.get.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.asInstanceOf[js.Any])
+    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NextServerConstructor]
   }
 }

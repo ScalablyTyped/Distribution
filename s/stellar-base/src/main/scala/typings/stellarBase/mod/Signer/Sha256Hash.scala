@@ -12,9 +12,9 @@ trait Sha256Hash extends js.Object {
 
 object Sha256Hash {
   @scala.inline
-  def apply(sha256Hash: Buffer, weight: Int | Double = null): Sha256Hash = {
+  def apply(sha256Hash: Buffer, weight: js.UndefOr[Double] = js.undefined): Sha256Hash = {
     val __obj = js.Dynamic.literal(sha256Hash = sha256Hash.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sha256Hash]
   }
 }

@@ -1,10 +1,10 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.AnonCrossOrigin
-import typings.babylonjs.AnonHandler
 import typings.babylonjs.HTMLCanvasElement
 import typings.babylonjs.ImageBitmap
 import typings.babylonjs.Window
+import typings.babylonjs.anon.CrossOrigin
+import typings.babylonjs.anon.Handler
 import typings.babylonjs.fileRequestMod.IFileRequest
 import typings.babylonjs.iofflineproviderMod.IOfflineProvider
 import typings.babylonjs.screenshotSizeMod.IScreenshotSize
@@ -831,7 +831,7 @@ object Tools extends js.Object {
     * @param windowElement defines the Window object to use
     * @param events defines the events to register
     */
-  def RegisterTopRootEvents(windowElement: Window, events: js.Array[AnonHandler]): Unit = js.native
+  def RegisterTopRootEvents(windowElement: Window, events: js.Array[Handler]): Unit = js.native
   /**
     * Use this object to register external classes like custom textures or material
     * to allow the laoders to instantiate them
@@ -843,8 +843,8 @@ object Tools extends js.Object {
     * @param url define the url we are trying
     * @param element define the dom element where to configure the cors policy
     */
-  def SetCorsBehavior(url: String, element: AnonCrossOrigin): Unit = js.native
-  def SetCorsBehavior(url: js.Array[String], element: AnonCrossOrigin): Unit = js.native
+  def SetCorsBehavior(url: String, element: CrossOrigin): Unit = js.native
+  def SetCorsBehavior(url: js.Array[String], element: CrossOrigin): Unit = js.native
   /**
     * Polyfill for setImmediate
     * @param action defines the action to execute after the current execution block
@@ -895,7 +895,7 @@ object Tools extends js.Object {
     * @param windowElement defines the Window object to use
     * @param events defines the events to unregister
     */
-  def UnregisterTopRootEvents(windowElement: Window, events: js.Array[AnonHandler]): Unit = js.native
+  def UnregisterTopRootEvents(windowElement: Window, events: js.Array[Handler]): Unit = js.native
   /**
     * Gets or sets a global variable indicating if fallback texture must be used when a texture cannot be loaded
     * @ignorenaming

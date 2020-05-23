@@ -62,20 +62,20 @@ object CellProps {
     lap: String | Double = null,
     palm: String | Double = null,
     portable: String | Double = null,
-    ref: LegacyRef[Cell] = null,
+    ref: js.UndefOr[Null | LegacyRef[Cell]] = js.undefined,
     size: String | Double = null
   ): CellProps = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (desk != null) __obj.updateDynamic("desk")(desk.asInstanceOf[js.Any])
-    if (!js.isUndefined(flex)) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
+    if (!js.isUndefined(flex)) __obj.updateDynamic("flex")(flex.get.asInstanceOf[js.Any])
     if (gutter != null) __obj.updateDynamic("gutter")(gutter.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (lap != null) __obj.updateDynamic("lap")(lap.asInstanceOf[js.Any])
     if (palm != null) __obj.updateDynamic("palm")(palm.asInstanceOf[js.Any])
     if (portable != null) __obj.updateDynamic("portable")(portable.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellProps]
   }

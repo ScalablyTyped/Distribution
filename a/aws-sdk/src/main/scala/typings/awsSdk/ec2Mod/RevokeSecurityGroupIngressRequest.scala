@@ -52,27 +52,27 @@ object RevokeSecurityGroupIngressRequest {
   @scala.inline
   def apply(
     CidrIp: String = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
-    FromPort: Int | scala.Double = null,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
+    FromPort: js.UndefOr[Integer] = js.undefined,
     GroupId: SecurityGroupId = null,
     GroupName: SecurityGroupName = null,
     IpPermissions: IpPermissionList = null,
     IpProtocol: String = null,
     SourceSecurityGroupName: String = null,
     SourceSecurityGroupOwnerId: String = null,
-    ToPort: Int | scala.Double = null
+    ToPort: js.UndefOr[Integer] = js.undefined
   ): RevokeSecurityGroupIngressRequest = {
     val __obj = js.Dynamic.literal()
     if (CidrIp != null) __obj.updateDynamic("CidrIp")(CidrIp.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
-    if (FromPort != null) __obj.updateDynamic("FromPort")(FromPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(FromPort)) __obj.updateDynamic("FromPort")(FromPort.get.asInstanceOf[js.Any])
     if (GroupId != null) __obj.updateDynamic("GroupId")(GroupId.asInstanceOf[js.Any])
     if (GroupName != null) __obj.updateDynamic("GroupName")(GroupName.asInstanceOf[js.Any])
     if (IpPermissions != null) __obj.updateDynamic("IpPermissions")(IpPermissions.asInstanceOf[js.Any])
     if (IpProtocol != null) __obj.updateDynamic("IpProtocol")(IpProtocol.asInstanceOf[js.Any])
     if (SourceSecurityGroupName != null) __obj.updateDynamic("SourceSecurityGroupName")(SourceSecurityGroupName.asInstanceOf[js.Any])
     if (SourceSecurityGroupOwnerId != null) __obj.updateDynamic("SourceSecurityGroupOwnerId")(SourceSecurityGroupOwnerId.asInstanceOf[js.Any])
-    if (ToPort != null) __obj.updateDynamic("ToPort")(ToPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(ToPort)) __obj.updateDynamic("ToPort")(ToPort.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevokeSecurityGroupIngressRequest]
   }
 }

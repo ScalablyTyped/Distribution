@@ -48,20 +48,20 @@ object IClusterLayerOptions {
     clusterPlacementType: ClusterPlacementType = null,
     clusteredPinCallback: /* pin */ ClusterPushpin => Unit = null,
     clusteringEnabled: js.UndefOr[Boolean] = js.undefined,
-    gridSize: Int | Double = null,
+    gridSize: js.UndefOr[Double] = js.undefined,
     layerOffset: Point = null,
     visible: js.UndefOr[Boolean] = js.undefined,
-    zIndex: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined
   ): IClusterLayerOptions = {
     val __obj = js.Dynamic.literal()
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
     if (clusterPlacementType != null) __obj.updateDynamic("clusterPlacementType")(clusterPlacementType.asInstanceOf[js.Any])
     if (clusteredPinCallback != null) __obj.updateDynamic("clusteredPinCallback")(js.Any.fromFunction1(clusteredPinCallback))
-    if (!js.isUndefined(clusteringEnabled)) __obj.updateDynamic("clusteringEnabled")(clusteringEnabled.asInstanceOf[js.Any])
-    if (gridSize != null) __obj.updateDynamic("gridSize")(gridSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(clusteringEnabled)) __obj.updateDynamic("clusteringEnabled")(clusteringEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridSize)) __obj.updateDynamic("gridSize")(gridSize.get.asInstanceOf[js.Any])
     if (layerOffset != null) __obj.updateDynamic("layerOffset")(layerOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClusterLayerOptions]
   }
 }

@@ -12,8 +12,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(images: HTMLElement = null): Options = {
-    val __obj = js.Dynamic.literal()
-    if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(images = images.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@ionic/cli-framework/lib", "ICON_SUCCESS")
 @js.native
-object ICON_SUCCESS extends TopLevel[String]
+object ICON_SUCCESS extends TopLevel[/* "ERR_ICF_IPC_UNKNOWN_PROCEDURE" */ String]
 

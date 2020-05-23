@@ -25,11 +25,11 @@ trait ReplacementDetail extends js.Object {
 
 object ReplacementDetail {
   @scala.inline
-  def apply(`0`: Pattern, `1`: ReplacementValue, `2`: MatchScope = null): ReplacementDetail = {
+  def apply(`0`: Pattern, `1`: ReplacementValue, `2`: js.UndefOr[Null | MatchScope] = js.undefined): ReplacementDetail = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
     __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
-    if (`2` != null) __obj.updateDynamic("2")(`2`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`2`)) __obj.updateDynamic("2")(`2`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplacementDetail]
   }
 }

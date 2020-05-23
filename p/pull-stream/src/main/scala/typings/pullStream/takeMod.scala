@@ -1,5 +1,6 @@
 package typings.pullStream
 
+import typings.pullStream.anon.Last
 import typings.pullStream.mod.Through_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,6 +18,6 @@ object takeMod extends js.Object {
     */
   def apply[InOut](n: Double): Through_[InOut, InOut] = js.native
   def apply[InOut](testFn: js.Function1[/* data */ InOut, Boolean]): Through_[InOut, InOut] = js.native
-  def apply[InOut](testFn: js.Function1[/* data */ InOut, Boolean], opts: AnonLast): Through_[InOut, InOut] = js.native
+  def apply[InOut](testFn: js.Function1[/* data */ InOut, Boolean], opts: Last): Through_[InOut, InOut] = js.native
 }
 

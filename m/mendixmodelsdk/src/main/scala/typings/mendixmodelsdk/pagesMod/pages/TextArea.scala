@@ -30,6 +30,11 @@ class TextArea protected () extends TextWidget {
   ) = this()
   @JSName("model")
   var model_FTextArea: IModel = js.native
+  /**
+    * In version 8.10.0: introduced
+    */
+  def autocomplete: Boolean = js.native
+  def autocomplete(newValue: Boolean): js.Any = js.native
   def counterMessage: Text = js.native
   def counterMessage(newValue: Text): js.Any = js.native
   def numberOfLines: Double = js.native

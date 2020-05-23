@@ -12,7 +12,7 @@ trait JsonOptions
 
 object JsonOptions {
   @scala.inline
-  def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null, meta: js.Object = null): JsonOptions = {
+  def apply(StringDictionary: /* name */ StringDictionary[js.Any] = null, meta: js.Object = null): JsonOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])

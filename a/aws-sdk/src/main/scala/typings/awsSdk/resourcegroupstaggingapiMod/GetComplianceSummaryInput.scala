@@ -40,7 +40,7 @@ object GetComplianceSummaryInput {
   @scala.inline
   def apply(
     GroupBy: GroupBy = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResultsGetComplianceSummary] = js.undefined,
     PaginationToken: PaginationToken = null,
     RegionFilters: RegionFilterList = null,
     ResourceTypeFilters: ResourceTypeFilterList = null,
@@ -49,7 +49,7 @@ object GetComplianceSummaryInput {
   ): GetComplianceSummaryInput = {
     val __obj = js.Dynamic.literal()
     if (GroupBy != null) __obj.updateDynamic("GroupBy")(GroupBy.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (PaginationToken != null) __obj.updateDynamic("PaginationToken")(PaginationToken.asInstanceOf[js.Any])
     if (RegionFilters != null) __obj.updateDynamic("RegionFilters")(RegionFilters.asInstanceOf[js.Any])
     if (ResourceTypeFilters != null) __obj.updateDynamic("ResourceTypeFilters")(ResourceTypeFilters.asInstanceOf[js.Any])

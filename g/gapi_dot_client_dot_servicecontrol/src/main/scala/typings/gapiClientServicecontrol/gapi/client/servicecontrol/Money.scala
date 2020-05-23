@@ -25,10 +25,10 @@ trait Money extends js.Object {
 
 object Money {
   @scala.inline
-  def apply(currencyCode: String = null, nanos: Int | Double = null, units: String = null): Money = {
+  def apply(currencyCode: String = null, nanos: js.UndefOr[Double] = js.undefined, units: String = null): Money = {
     val __obj = js.Dynamic.literal()
     if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode.asInstanceOf[js.Any])
-    if (nanos != null) __obj.updateDynamic("nanos")(nanos.asInstanceOf[js.Any])
+    if (!js.isUndefined(nanos)) __obj.updateDynamic("nanos")(nanos.get.asInstanceOf[js.Any])
     if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     __obj.asInstanceOf[Money]
   }

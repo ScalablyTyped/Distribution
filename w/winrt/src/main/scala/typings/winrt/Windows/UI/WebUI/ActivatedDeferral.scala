@@ -4,10 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.WebUI.ActivatedDeferral")
-@js.native
-class ActivatedDeferral () extends IActivatedDeferral {
-  /* CompleteClass */
-  override def complete(): Unit = js.native
+trait ActivatedDeferral extends IActivatedDeferral
+
+object ActivatedDeferral {
+  @scala.inline
+  def apply(complete: () => Unit): ActivatedDeferral = {
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
+    __obj.asInstanceOf[ActivatedDeferral]
+  }
 }
 

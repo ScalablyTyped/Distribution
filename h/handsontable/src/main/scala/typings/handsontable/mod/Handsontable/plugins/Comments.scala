@@ -1,6 +1,6 @@
 package typings.handsontable.mod.Handsontable.plugins
 
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,8 +30,8 @@ trait Comments extends Base {
   def setRange(range: CommentsRangeObject): Unit = js.native
   def show(): Boolean = js.native
   def showAtCell(row: Double, col: Double): Boolean = js.native
-  def targetIsCellWithComment(event: Event_): Boolean = js.native
-  def targetIsCommentTextArea(event: Event_): Boolean = js.native
+  def targetIsCellWithComment(event: Event): Boolean = js.native
+  def targetIsCommentTextArea(event: Event): Boolean = js.native
   def updateCommentMeta(row: Double, column: Double, metaObject: js.Object): Unit = js.native
 }
 

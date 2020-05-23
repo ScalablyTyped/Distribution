@@ -1,6 +1,6 @@
 package typings.openpgp.mod
 
-import typings.openpgp.AnonAlgorithm
+import typings.openpgp.anon.Algorithm
 import typings.openpgp.mod.enums.compression
 import typings.openpgp.mod.key.Key
 import typings.openpgp.mod.message.Message
@@ -57,7 +57,7 @@ trait EncryptOptions extends js.Object {
   /**
     * (optional) session key in the form: { data:Uint8Array, algorithm:String }
     */
-  var sessionKey: js.UndefOr[AnonAlgorithm] = js.undefined
+  var sessionKey: js.UndefOr[Algorithm] = js.undefined
   /**
     * (optional) a detached signature to add to the encrypted message
     */
@@ -89,27 +89,27 @@ object EncryptOptions {
     privateKeys: Key | js.Array[_] = null,
     publicKeys: Key | js.Array[_] = null,
     returnSessionKey: js.UndefOr[Boolean] = js.undefined,
-    sessionKey: AnonAlgorithm = null,
+    sessionKey: Algorithm = null,
     signature: Signature = null,
     streaming: web | node | `false` = null,
     toUserIds: js.Array[UserID] = null,
     wildcard: js.UndefOr[Boolean] = js.undefined
   ): EncryptOptions = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-    if (!js.isUndefined(armor)) __obj.updateDynamic("armor")(armor.asInstanceOf[js.Any])
+    if (!js.isUndefined(armor)) __obj.updateDynamic("armor")(armor.get.asInstanceOf[js.Any])
     if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached.asInstanceOf[js.Any])
+    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached.get.asInstanceOf[js.Any])
     if (fromUserIds != null) __obj.updateDynamic("fromUserIds")(fromUserIds.asInstanceOf[js.Any])
     if (passwords != null) __obj.updateDynamic("passwords")(passwords.asInstanceOf[js.Any])
     if (privateKeys != null) __obj.updateDynamic("privateKeys")(privateKeys.asInstanceOf[js.Any])
     if (publicKeys != null) __obj.updateDynamic("publicKeys")(publicKeys.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnSessionKey)) __obj.updateDynamic("returnSessionKey")(returnSessionKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnSessionKey)) __obj.updateDynamic("returnSessionKey")(returnSessionKey.get.asInstanceOf[js.Any])
     if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey.asInstanceOf[js.Any])
     if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
     if (streaming != null) __obj.updateDynamic("streaming")(streaming.asInstanceOf[js.Any])
     if (toUserIds != null) __obj.updateDynamic("toUserIds")(toUserIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(wildcard)) __obj.updateDynamic("wildcard")(wildcard.asInstanceOf[js.Any])
+    if (!js.isUndefined(wildcard)) __obj.updateDynamic("wildcard")(wildcard.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptOptions]
   }
 }

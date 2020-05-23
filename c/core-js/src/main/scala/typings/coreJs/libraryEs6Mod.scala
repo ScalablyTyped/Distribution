@@ -1,7 +1,9 @@
 package typings.coreJs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.coreJs.core.Locale_
+import typings.coreJs.anon.FnCall
+import typings.coreJs.anon.Typeofcore
+import typings.coreJs.core.Locale
 import typings.std.ArrayLike
 import typings.std.Iterable
 import typings.std.IterableIterator
@@ -69,7 +71,7 @@ object libraryEs6Mod extends js.Object {
   val _underscore: Boolean = js.native
   val global: js.Any = js.native
   val version: java.lang.String = js.native
-  def addLocale(lang: java.lang.String, locale: Locale_): Typeofcore = js.native
+  def addLocale(lang: java.lang.String, locale: Locale): Typeofcore = js.native
   def clearImmediate(handle: Double): Unit = js.native
   def delay(msec: Double): js.Promise[Unit] = js.native
   @JSName("$for")

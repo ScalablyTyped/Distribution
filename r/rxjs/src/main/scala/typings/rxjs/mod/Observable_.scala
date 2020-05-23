@@ -1,6 +1,6 @@
 package typings.rxjs.mod
 
-import typings.rxjs.FnCall
+import typings.rxjs.anon.FnCall
 import typings.rxjs.internalObservableMod.Observable
 import typings.rxjs.typesMod.SchedulerLike
 import typings.rxjs.typesMod.SubscribableOrPromise

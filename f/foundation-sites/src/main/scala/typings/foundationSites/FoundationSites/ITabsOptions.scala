@@ -22,11 +22,11 @@ object ITabsOptions {
     wrapOnKeys: js.UndefOr[Boolean] = js.undefined
   ): ITabsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
     if (linkClass != null) __obj.updateDynamic("linkClass")(linkClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchHeight)) __obj.updateDynamic("matchHeight")(matchHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchHeight)) __obj.updateDynamic("matchHeight")(matchHeight.get.asInstanceOf[js.Any])
     if (panelClass != null) __obj.updateDynamic("panelClass")(panelClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapOnKeys)) __obj.updateDynamic("wrapOnKeys")(wrapOnKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapOnKeys)) __obj.updateDynamic("wrapOnKeys")(wrapOnKeys.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITabsOptions]
   }
 }

@@ -10,9 +10,9 @@ trait PublishOptions extends js.Object {
 
 object PublishOptions {
   @scala.inline
-  def apply(publish: PublishPolicy = null): PublishOptions = {
+  def apply(publish: js.UndefOr[Null | PublishPolicy] = js.undefined): PublishOptions = {
     val __obj = js.Dynamic.literal()
-    if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
+    if (!js.isUndefined(publish)) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishOptions]
   }
 }

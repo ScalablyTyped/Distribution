@@ -26,14 +26,14 @@ object AnimateOpts {
   @scala.inline
   def apply(
     complete: /* value */ js.Any => Unit = null,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     easing: String | Easing = null,
     interpolator: String | Interpolator = null,
     step: (/* time */ Double, /* value */ js.Any) => Unit = null
   ): AnimateOpts = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (interpolator != null) __obj.updateDynamic("interpolator")(interpolator.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(js.Any.fromFunction2(step))

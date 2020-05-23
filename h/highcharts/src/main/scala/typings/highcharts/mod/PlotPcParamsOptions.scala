@@ -15,9 +15,9 @@ trait PlotPcParamsOptions extends js.Object {
 
 object PlotPcParamsOptions {
   @scala.inline
-  def apply(period: Int | Double = null): PlotPcParamsOptions = {
+  def apply(period: js.UndefOr[Double] = js.undefined): PlotPcParamsOptions = {
     val __obj = js.Dynamic.literal()
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
+    if (!js.isUndefined(period)) __obj.updateDynamic("period")(period.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotPcParamsOptions]
   }
 }

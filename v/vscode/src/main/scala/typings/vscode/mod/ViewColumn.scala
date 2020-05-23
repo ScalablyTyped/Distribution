@@ -12,72 +12,72 @@ sealed trait ViewColumn extends js.Object
 @js.native
 object ViewColumn extends js.Object {
   /**
-  		 * A *symbolic* editor column representing the currently active column. This value
-  		 * can be used when opening editors, but the *resolved* [viewColumn](#TextEditor.viewColumn)-value
-  		 * of editors will always be `One`, `Two`, `Three`,... or `undefined` but never `Active`.
-  		 */
+    * A *symbolic* editor column representing the currently active column. This value
+    * can be used when opening editors, but the *resolved* [viewColumn](#TextEditor.viewColumn)-value
+    * of editors will always be `One`, `Two`, `Three`,... or `undefined` but never `Active`.
+    */
   @js.native
   sealed trait Active extends ViewColumn
   
   /**
-  		 * A *symbolic* editor column representing the column to the side of the active one. This value
-  		 * can be used when opening editors, but the *resolved* [viewColumn](#TextEditor.viewColumn)-value
-  		 * of editors will always be `One`, `Two`, `Three`,... or `undefined` but never `Beside`.
-  		 */
+    * A *symbolic* editor column representing the column to the side of the active one. This value
+    * can be used when opening editors, but the *resolved* [viewColumn](#TextEditor.viewColumn)-value
+    * of editors will always be `One`, `Two`, `Three`,... or `undefined` but never `Beside`.
+    */
   @js.native
   sealed trait Beside extends ViewColumn
   
   /**
-  		 * The eighth editor column.
-  		 */
+    * The eighth editor column.
+    */
   @js.native
   sealed trait Eight extends ViewColumn
   
   /**
-  		 * The fifth editor column.
-  		 */
+    * The fifth editor column.
+    */
   @js.native
   sealed trait Five extends ViewColumn
   
   /**
-  		 * The fourth editor column.
-  		 */
+    * The fourth editor column.
+    */
   @js.native
   sealed trait Four extends ViewColumn
   
   /**
-  		 * The ninth editor column.
-  		 */
+    * The ninth editor column.
+    */
   @js.native
   sealed trait Nine extends ViewColumn
   
   /**
-  		 * The first editor column.
-  		 */
+    * The first editor column.
+    */
   @js.native
   sealed trait One extends ViewColumn
   
   /**
-  		 * The seventh editor column.
-  		 */
+    * The seventh editor column.
+    */
   @js.native
   sealed trait Seven extends ViewColumn
   
   /**
-  		 * The sixth editor column.
-  		 */
+    * The sixth editor column.
+    */
   @js.native
   sealed trait Six extends ViewColumn
   
   /**
-  		 * The third editor column.
-  		 */
+    * The third editor column.
+    */
   @js.native
   sealed trait Three extends ViewColumn
   
   /**
-  		 * The second editor column.
-  		 */
+    * The second editor column.
+    */
   @js.native
   sealed trait Two extends ViewColumn
   

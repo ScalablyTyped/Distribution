@@ -14,19 +14,19 @@ object Region_ extends js.Object {
   @js.native
   sealed trait as0 extends Region_
   
-  		// 代表北美区域
+          // 代表北美区域
   @js.native
   sealed trait na0 extends Region_
   
-  	// 代表华东区域
+      // 代表华东区域
   @js.native
   sealed trait z0 extends Region_
   
-  		// 代表华北区域
+          // 代表华北区域
   @js.native
   sealed trait z1 extends Region_
   
-  		// 代表华南区域
+          // 代表华南区域
   @js.native
   sealed trait z2 extends Region_
   

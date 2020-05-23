@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,11 @@ trait ChartMediaInfo extends js.Object {
   var value: ChartMediaInfoValue
 }
 
-@JSGlobal("__esri.ChartMediaInfo")
-@js.native
-object ChartMediaInfo extends TopLevel[ChartMediaInfoConstructor]
+object ChartMediaInfo {
+  @scala.inline
+  def apply(value: ChartMediaInfoValue): ChartMediaInfo = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartMediaInfo]
+  }
+}
 

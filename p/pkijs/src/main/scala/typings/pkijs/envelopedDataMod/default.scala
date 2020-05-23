@@ -1,8 +1,8 @@
 package typings.pkijs.envelopedDataMod
 
-import typings.pkijs.AnonHmacHashAlgorithm
-import typings.pkijs.AnonKdfAlgorithm
-import typings.pkijs.AnonRecipientCertificate
+import typings.pkijs.anon.HmacHashAlgorithm
+import typings.pkijs.anon.KdfAlgorithm
+import typings.pkijs.anon.RecipientCertificate
 import typings.std.Algorithm
 import typings.std.ArrayBuffer
 import scala.scalajs.js
@@ -29,7 +29,7 @@ class default () extends EnvelopedData {
     * @param {number} [variant] Variant = 1 is for "key transport", variant = 2 is for "key agreement". In fact the "variant" is unneccessary now because Google has no DH algorithm implementation. Thus key encryption scheme would be choosen by certificate type only: "key transport" for RSA and "key agreement" for ECC certificates.
     */
   /* CompleteClass */
-  override def addRecipientByCertificate(certificate: typings.pkijs.certificateMod.default, parameters: AnonKdfAlgorithm, variant: Double): Boolean = js.native
+  override def addRecipientByCertificate(certificate: typings.pkijs.certificateMod.default, parameters: KdfAlgorithm, variant: Double): Boolean = js.native
   /**
     * Add recipient based on pre-defined data like password or KEK
     * @param {ArrayBuffer} preDefinedData ArrayBuffer with pre-defined data
@@ -37,7 +37,7 @@ class default () extends EnvelopedData {
     * @param {number} variant Variant = 1 for pre-defined "key encryption key" (KEK). Variant = 2 for password-based encryption.
     */
   /* CompleteClass */
-  override def addRecipientByPreDefinedData(preDefinedData: ArrayBuffer, parameters: AnonHmacHashAlgorithm, variant: Double): Boolean = js.native
+  override def addRecipientByPreDefinedData(preDefinedData: ArrayBuffer, parameters: HmacHashAlgorithm, variant: Double): Boolean = js.native
   /**
     * Decrypt existing CMS Enveloped Data content
     * @param {number} recipientIndex Index of recipient
@@ -45,7 +45,7 @@ class default () extends EnvelopedData {
     * @returns {Promise}
     */
   /* CompleteClass */
-  override def decrypt(recipientIndex: Double, parameters: AnonRecipientCertificate): js.Thenable[ArrayBuffer] = js.native
+  override def decrypt(recipientIndex: Double, parameters: RecipientCertificate): js.Thenable[ArrayBuffer] = js.native
   /**
     * Create a new CMS Enveloped Data content with encrypted data
     * @param {Algorithm} contentEncryptionAlgorithm WebCrypto algorithm. For the moment here could be only "AES-CBC" or "AES-GCM" algorithms.

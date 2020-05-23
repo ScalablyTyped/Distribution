@@ -17,15 +17,15 @@ trait IChamfer extends js.Object {
 object IChamfer {
   @scala.inline
   def apply(
-    quality: Int | Double = null,
-    qualityMax: Int | Double = null,
-    qualityMin: Int | Double = null,
+    quality: js.UndefOr[Double] = js.undefined,
+    qualityMax: js.UndefOr[Double] = js.undefined,
+    qualityMin: js.UndefOr[Double] = js.undefined,
     radius: Double | js.Array[Double] = null
   ): IChamfer = {
     val __obj = js.Dynamic.literal()
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (qualityMax != null) __obj.updateDynamic("qualityMax")(qualityMax.asInstanceOf[js.Any])
-    if (qualityMin != null) __obj.updateDynamic("qualityMin")(qualityMin.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qualityMax)) __obj.updateDynamic("qualityMax")(qualityMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qualityMin)) __obj.updateDynamic("qualityMin")(qualityMin.get.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChamfer]
   }

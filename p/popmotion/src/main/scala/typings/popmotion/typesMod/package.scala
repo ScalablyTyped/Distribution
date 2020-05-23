@@ -5,8 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typesMod {
-  type ActionInit = js.Function1[
-    /* observer */ typings.popmotion.observerTypesMod.IObserver, 
-    typings.popmotion.PartialColdSubscription | scala.Unit
-  ]
+  type Process = js.Function1[/* data */ typings.popmotion.typesMod.FrameData, scala.Unit]
 }

@@ -44,7 +44,7 @@ object SteppedAreaChartOptions {
   def apply(
     aggregationTarget: String = null,
     animation: TransitionAnimation = null,
-    areaOpacity: Int | Double = null,
+    areaOpacity: js.UndefOr[Double] = js.undefined,
     axisTitlesPosition: ChartAxisTitlesPosition = null,
     backgroundColor: String | ChartStrokeFill = null,
     chartArea: ChartArea = null,
@@ -53,9 +53,9 @@ object SteppedAreaChartOptions {
     enableInteractivity: js.UndefOr[Boolean] = js.undefined,
     focusTarget: String = null,
     fontName: String = null,
-    fontSize: Int | Double = null,
+    fontSize: js.UndefOr[Double] = js.undefined,
     hAxis: ChartAxis = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     interpolateNulls: js.UndefOr[Boolean] = js.undefined,
     isStacked: Boolean | percent | relative | absolute = null,
     legend: ChartLegend | none = null,
@@ -69,27 +69,27 @@ object SteppedAreaChartOptions {
     tooltip: ChartTooltip = null,
     vAxes: js.Any = null,
     vAxis: ChartAxis = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): SteppedAreaChartOptions = {
     val __obj = js.Dynamic.literal()
     if (aggregationTarget != null) __obj.updateDynamic("aggregationTarget")(aggregationTarget.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (areaOpacity != null) __obj.updateDynamic("areaOpacity")(areaOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(areaOpacity)) __obj.updateDynamic("areaOpacity")(areaOpacity.get.asInstanceOf[js.Any])
     if (axisTitlesPosition != null) __obj.updateDynamic("axisTitlesPosition")(axisTitlesPosition.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (chartArea != null) __obj.updateDynamic("chartArea")(chartArea.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (!js.isUndefined(connectSteps)) __obj.updateDynamic("connectSteps")(connectSteps.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableInteractivity)) __obj.updateDynamic("enableInteractivity")(enableInteractivity.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectSteps)) __obj.updateDynamic("connectSteps")(connectSteps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableInteractivity)) __obj.updateDynamic("enableInteractivity")(enableInteractivity.get.asInstanceOf[js.Any])
     if (focusTarget != null) __obj.updateDynamic("focusTarget")(focusTarget.asInstanceOf[js.Any])
     if (fontName != null) __obj.updateDynamic("fontName")(fontName.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
     if (hAxis != null) __obj.updateDynamic("hAxis")(hAxis.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(interpolateNulls)) __obj.updateDynamic("interpolateNulls")(interpolateNulls.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(interpolateNulls)) __obj.updateDynamic("interpolateNulls")(interpolateNulls.get.asInstanceOf[js.Any])
     if (isStacked != null) __obj.updateDynamic("isStacked")(isStacked.asInstanceOf[js.Any])
     if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverseCategories)) __obj.updateDynamic("reverseCategories")(reverseCategories.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverseCategories)) __obj.updateDynamic("reverseCategories")(reverseCategories.get.asInstanceOf[js.Any])
     if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
     if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
@@ -99,7 +99,7 @@ object SteppedAreaChartOptions {
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (vAxes != null) __obj.updateDynamic("vAxes")(vAxes.asInstanceOf[js.Any])
     if (vAxis != null) __obj.updateDynamic("vAxis")(vAxis.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SteppedAreaChartOptions]
   }
 }

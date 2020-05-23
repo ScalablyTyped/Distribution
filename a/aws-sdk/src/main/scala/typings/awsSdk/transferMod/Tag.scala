@@ -11,7 +11,7 @@ trait Tag extends js.Object {
     */
   var Key: TagKey = js.native
   /**
-    * This property contains one or more values that you assigned to the key name you create.
+    * Contains one or more values that you assigned to the key name you create.
     */
   var Value: TagValue = js.native
 }

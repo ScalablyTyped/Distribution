@@ -1,7 +1,7 @@
 package typings.fundamentalReact.mod
 
-import typings.fundamentalReact.PartialCounterProps
-import typings.fundamentalReact.WeakValidationMapCounterP
+import typings.fundamentalReact.anon.PartialCounterProps
+import typings.fundamentalReact.anon.WeakValidationMapCounterP
 import typings.fundamentalReact.counterMod.CounterProps
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement

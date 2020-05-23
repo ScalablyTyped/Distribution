@@ -1,5 +1,7 @@
 package typings.fridaGum
 
+import typings.fridaGum.anon.Disp
+import typings.fridaGum.anon.Type
 import typings.fridaGum.fridaGumStrings.cimm
 import typings.fridaGum.fridaGumStrings.fp
 import typings.fridaGum.fridaGumStrings.imm
@@ -29,14 +31,14 @@ object ArmOperand {
   def ArmMemOperand(
     subtracted: Boolean,
     `type`: mem,
-    value: AnonDisp,
-    shift: AnonType = null,
-    vectorIndex: Int | Double = null
+    value: Disp,
+    shift: Type = null,
+    vectorIndex: js.UndefOr[Double] = js.undefined
   ): ArmOperand = {
     val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(vectorIndex)) __obj.updateDynamic("vectorIndex")(vectorIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArmOperand]
   }
   @scala.inline
@@ -44,13 +46,13 @@ object ArmOperand {
     subtracted: Boolean,
     `type`: pimm,
     value: Double,
-    shift: AnonType = null,
-    vectorIndex: Int | Double = null
+    shift: Type = null,
+    vectorIndex: js.UndefOr[Double] = js.undefined
   ): ArmOperand = {
     val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(vectorIndex)) __obj.updateDynamic("vectorIndex")(vectorIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArmOperand]
   }
   @scala.inline
@@ -58,13 +60,13 @@ object ArmOperand {
     subtracted: Boolean,
     `type`: cimm,
     value: Double,
-    shift: AnonType = null,
-    vectorIndex: Int | Double = null
+    shift: Type = null,
+    vectorIndex: js.UndefOr[Double] = js.undefined
   ): ArmOperand = {
     val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(vectorIndex)) __obj.updateDynamic("vectorIndex")(vectorIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArmOperand]
   }
   @scala.inline
@@ -72,13 +74,13 @@ object ArmOperand {
     subtracted: Boolean,
     `type`: setend,
     value: Endian,
-    shift: AnonType = null,
-    vectorIndex: Int | Double = null
+    shift: Type = null,
+    vectorIndex: js.UndefOr[Double] = js.undefined
   ): ArmOperand = {
     val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(vectorIndex)) __obj.updateDynamic("vectorIndex")(vectorIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArmOperand]
   }
   @scala.inline
@@ -86,13 +88,13 @@ object ArmOperand {
     subtracted: Boolean,
     `type`: imm,
     value: Double,
-    shift: AnonType = null,
-    vectorIndex: Int | Double = null
+    shift: Type = null,
+    vectorIndex: js.UndefOr[Double] = js.undefined
   ): ArmOperand = {
     val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(vectorIndex)) __obj.updateDynamic("vectorIndex")(vectorIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArmOperand]
   }
   @scala.inline
@@ -100,13 +102,13 @@ object ArmOperand {
     subtracted: Boolean,
     `type`: fp,
     value: Double,
-    shift: AnonType = null,
-    vectorIndex: Int | Double = null
+    shift: Type = null,
+    vectorIndex: js.UndefOr[Double] = js.undefined
   ): ArmOperand = {
     val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(vectorIndex)) __obj.updateDynamic("vectorIndex")(vectorIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArmOperand]
   }
   @scala.inline
@@ -114,13 +116,13 @@ object ArmOperand {
     subtracted: Boolean,
     `type`: sysreg,
     value: ArmRegister,
-    shift: AnonType = null,
-    vectorIndex: Int | Double = null
+    shift: Type = null,
+    vectorIndex: js.UndefOr[Double] = js.undefined
   ): ArmOperand = {
     val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(vectorIndex)) __obj.updateDynamic("vectorIndex")(vectorIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArmOperand]
   }
   @scala.inline
@@ -128,13 +130,13 @@ object ArmOperand {
     subtracted: Boolean,
     `type`: reg,
     value: ArmRegister,
-    shift: AnonType = null,
-    vectorIndex: Int | Double = null
+    shift: Type = null,
+    vectorIndex: js.UndefOr[Double] = js.undefined
   ): ArmOperand = {
     val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(vectorIndex)) __obj.updateDynamic("vectorIndex")(vectorIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArmOperand]
   }
 }

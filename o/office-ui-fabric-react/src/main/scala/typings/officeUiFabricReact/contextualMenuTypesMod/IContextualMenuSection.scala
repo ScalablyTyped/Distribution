@@ -33,16 +33,16 @@ object IContextualMenuSection {
     items: js.Array[IContextualMenuItem],
     bottomDivider: js.UndefOr[Boolean] = js.undefined,
     key: Key = null,
-    ref: LegacyRef[js.Any] = null,
+    ref: js.UndefOr[Null | LegacyRef[js.Any]] = js.undefined,
     title: String = null,
     topDivider: js.UndefOr[Boolean] = js.undefined
   ): IContextualMenuSection = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-    if (!js.isUndefined(bottomDivider)) __obj.updateDynamic("bottomDivider")(bottomDivider.asInstanceOf[js.Any])
+    if (!js.isUndefined(bottomDivider)) __obj.updateDynamic("bottomDivider")(bottomDivider.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(topDivider)) __obj.updateDynamic("topDivider")(topDivider.asInstanceOf[js.Any])
+    if (!js.isUndefined(topDivider)) __obj.updateDynamic("topDivider")(topDivider.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContextualMenuSection]
   }
 }

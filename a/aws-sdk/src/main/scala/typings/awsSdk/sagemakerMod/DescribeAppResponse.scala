@@ -39,7 +39,7 @@ trait DescribeAppResponse extends js.Object {
     */
   var LastUserActivityTimestamp: js.UndefOr[Timestamp] = js.native
   /**
-    * The instance type and quantity.
+    * The instance type and the Amazon Resource Name (ARN) of the SageMaker image created on the instance.
     */
   var ResourceSpec: js.UndefOr[typings.awsSdk.sagemakerMod.ResourceSpec] = js.native
   /**

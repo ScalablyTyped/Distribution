@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -85,8 +84,4 @@ trait Color_ extends js.Object {
     */
   def toRgba(): js.Array[Double] = js.native
 }
-
-@JSGlobal("__esri.Color")
-@js.native
-object Color_ extends TopLevel[ColorConstructor]
 

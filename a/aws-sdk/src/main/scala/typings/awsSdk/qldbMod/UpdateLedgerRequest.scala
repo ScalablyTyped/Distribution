@@ -18,9 +18,9 @@ trait UpdateLedgerRequest extends js.Object {
 
 object UpdateLedgerRequest {
   @scala.inline
-  def apply(Name: LedgerName, DeletionProtection: js.UndefOr[Boolean] = js.undefined): UpdateLedgerRequest = {
+  def apply(Name: LedgerName, DeletionProtection: js.UndefOr[DeletionProtection] = js.undefined): UpdateLedgerRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateLedgerRequest]
   }
 }

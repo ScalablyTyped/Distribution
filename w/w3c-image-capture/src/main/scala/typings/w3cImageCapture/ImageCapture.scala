@@ -7,10 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ImageCapture")
 @js.native
-class ImageCapture protected () extends js.Object {
-  def this(videoTrack: MediaStreamTrack) = this()
+trait ImageCapture extends js.Object {
   val track: MediaStreamTrack = js.native
   def getPhotoCapabilities(): js.Promise[PhotoCapabilities] = js.native
   def getPhotoSettings(): js.Promise[PhotoSettings] = js.native

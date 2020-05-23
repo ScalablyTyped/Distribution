@@ -13,7 +13,7 @@ import typings.jqgrid.jqgridStrings.jsonstring
 import typings.jqgrid.jqgridStrings.local
 import typings.jqgrid.jqgridStrings.xml
 import typings.jqgrid.jqgridStrings.xmlstring
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -119,7 +119,7 @@ trait JQueryJqGridOptions extends js.Object {
     * @returns {} 
     */
   var onRightClickRow: js.UndefOr[
-    js.Function4[/* rowid */ js.Any, /* iRow */ Double, /* iCol */ Double, /* e */ Event_, Unit]
+    js.Function4[/* rowid */ js.Any, /* iRow */ Double, /* iCol */ Double, /* e */ Event, Unit]
   ] = js.undefined
   /**
     * Raised immediately after row was clicked.
@@ -128,7 +128,7 @@ trait JQueryJqGridOptions extends js.Object {
     * @param e  is the event object. Can be used when multiselect is set to true. true if the row is selected, false if the row is deselected.
     * @returns {} 
     */
-  var onSelectRow: js.UndefOr[js.Function3[/* id */ String, /* status */ js.Any, /* e */ Event_, Unit]] = js.undefined
+  var onSelectRow: js.UndefOr[js.Function3[/* id */ String, /* status */ js.Any, /* e */ Event, Unit]] = js.undefined
   /**
     * Defines that we want to use a pager bar to navigate through the records.
     * This must be a valid HTML element; in our example we gave the div the id of "pager", but any name is acceptable.
@@ -213,46 +213,46 @@ object JQueryJqGridOptions {
     mtype: GET | POST = null,
     multiboxonly: js.UndefOr[Boolean] = js.undefined,
     multiselect: js.UndefOr[Boolean] = js.undefined,
-    onRightClickRow: (/* rowid */ js.Any, /* iRow */ Double, /* iCol */ Double, /* e */ Event_) => Unit = null,
-    onSelectRow: (/* id */ String, /* status */ js.Any, /* e */ Event_) => Unit = null,
+    onRightClickRow: (/* rowid */ js.Any, /* iRow */ Double, /* iCol */ Double, /* e */ Event) => Unit = null,
+    onSelectRow: (/* id */ String, /* status */ js.Any, /* e */ Event) => Unit = null,
     pager: String = null,
     rowList: js.Array[Double] = null,
-    rowNum: Int | Double = null,
+    rowNum: js.UndefOr[Double] = js.undefined,
     shrinkToFit: Boolean | Double = null,
     sortname: String = null,
     sortorder: asc | desc = null,
     url: String | clientArray = null,
     viewrecords: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): JQueryJqGridOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoencode)) __obj.updateDynamic("autoencode")(autoencode.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoencode)) __obj.updateDynamic("autoencode")(autoencode.get.asInstanceOf[js.Any])
     if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
     if (colModel != null) __obj.updateDynamic("colModel")(colModel.asInstanceOf[js.Any])
     if (colNames != null) __obj.updateDynamic("colNames")(colNames.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceFit)) __obj.updateDynamic("forceFit")(forceFit.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceFit)) __obj.updateDynamic("forceFit")(forceFit.get.asInstanceOf[js.Any])
     if (gridComplete != null) __obj.updateDynamic("gridComplete")(js.Any.fromFunction0(gridComplete))
-    if (!js.isUndefined(gridview)) __obj.updateDynamic("gridview")(gridview.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridview)) __obj.updateDynamic("gridview")(gridview.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (jsonReader != null) __obj.updateDynamic("jsonReader")(jsonReader.asInstanceOf[js.Any])
-    if (!js.isUndefined(loadonce)) __obj.updateDynamic("loadonce")(loadonce.asInstanceOf[js.Any])
+    if (!js.isUndefined(loadonce)) __obj.updateDynamic("loadonce")(loadonce.get.asInstanceOf[js.Any])
     if (mtype != null) __obj.updateDynamic("mtype")(mtype.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiboxonly)) __obj.updateDynamic("multiboxonly")(multiboxonly.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiselect)) __obj.updateDynamic("multiselect")(multiselect.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiboxonly)) __obj.updateDynamic("multiboxonly")(multiboxonly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiselect)) __obj.updateDynamic("multiselect")(multiselect.get.asInstanceOf[js.Any])
     if (onRightClickRow != null) __obj.updateDynamic("onRightClickRow")(js.Any.fromFunction4(onRightClickRow))
     if (onSelectRow != null) __obj.updateDynamic("onSelectRow")(js.Any.fromFunction3(onSelectRow))
     if (pager != null) __obj.updateDynamic("pager")(pager.asInstanceOf[js.Any])
     if (rowList != null) __obj.updateDynamic("rowList")(rowList.asInstanceOf[js.Any])
-    if (rowNum != null) __obj.updateDynamic("rowNum")(rowNum.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowNum)) __obj.updateDynamic("rowNum")(rowNum.get.asInstanceOf[js.Any])
     if (shrinkToFit != null) __obj.updateDynamic("shrinkToFit")(shrinkToFit.asInstanceOf[js.Any])
     if (sortname != null) __obj.updateDynamic("sortname")(sortname.asInstanceOf[js.Any])
     if (sortorder != null) __obj.updateDynamic("sortorder")(sortorder.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (!js.isUndefined(viewrecords)) __obj.updateDynamic("viewrecords")(viewrecords.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewrecords)) __obj.updateDynamic("viewrecords")(viewrecords.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryJqGridOptions]
   }
 }

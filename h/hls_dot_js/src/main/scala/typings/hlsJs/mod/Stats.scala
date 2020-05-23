@@ -29,12 +29,12 @@ object Stats {
     tfirst: Double,
     tload: Double,
     trequest: Double,
-    length: Int | Double = null,
-    tbuffered: Int | Double = null
+    length: js.UndefOr[Double] = js.undefined,
+    tbuffered: js.UndefOr[Double] = js.undefined
   ): Stats = {
     val __obj = js.Dynamic.literal(mtime = mtime.asInstanceOf[js.Any], tfirst = tfirst.asInstanceOf[js.Any], tload = tload.asInstanceOf[js.Any], trequest = trequest.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (tbuffered != null) __obj.updateDynamic("tbuffered")(tbuffered.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tbuffered)) __obj.updateDynamic("tbuffered")(tbuffered.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Stats]
   }
 }

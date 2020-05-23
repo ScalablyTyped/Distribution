@@ -14,9 +14,9 @@ trait MultiplexSettingsSummary extends js.Object {
 
 object MultiplexSettingsSummary {
   @scala.inline
-  def apply(TransportStreamBitrate: Int | Double = null): MultiplexSettingsSummary = {
+  def apply(TransportStreamBitrate: js.UndefOr[integerMin1000000Max100000000] = js.undefined): MultiplexSettingsSummary = {
     val __obj = js.Dynamic.literal()
-    if (TransportStreamBitrate != null) __obj.updateDynamic("TransportStreamBitrate")(TransportStreamBitrate.asInstanceOf[js.Any])
+    if (!js.isUndefined(TransportStreamBitrate)) __obj.updateDynamic("TransportStreamBitrate")(TransportStreamBitrate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiplexSettingsSummary]
   }
 }

@@ -12,7 +12,7 @@ object XMLHttpRequestOptions {
   @scala.inline
   def apply(anon: js.UndefOr[Boolean] = js.undefined): XMLHttpRequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(anon)) __obj.updateDynamic("anon")(anon.asInstanceOf[js.Any])
+    if (!js.isUndefined(anon)) __obj.updateDynamic("anon")(anon.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[XMLHttpRequestOptions]
   }
 }

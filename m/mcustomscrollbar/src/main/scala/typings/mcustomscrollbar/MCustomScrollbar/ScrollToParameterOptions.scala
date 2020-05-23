@@ -33,15 +33,15 @@ object ScrollToParameterOptions {
     callbacks: js.UndefOr[Boolean] = js.undefined,
     moveDragger: js.UndefOr[Boolean] = js.undefined,
     scrollEasing: String = null,
-    scrollInertia: Int | Double = null,
-    timeout: Int | Double = null
+    scrollInertia: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined
   ): ScrollToParameterOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(callbacks)) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
-    if (!js.isUndefined(moveDragger)) __obj.updateDynamic("moveDragger")(moveDragger.asInstanceOf[js.Any])
+    if (!js.isUndefined(callbacks)) __obj.updateDynamic("callbacks")(callbacks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(moveDragger)) __obj.updateDynamic("moveDragger")(moveDragger.get.asInstanceOf[js.Any])
     if (scrollEasing != null) __obj.updateDynamic("scrollEasing")(scrollEasing.asInstanceOf[js.Any])
-    if (scrollInertia != null) __obj.updateDynamic("scrollInertia")(scrollInertia.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollInertia)) __obj.updateDynamic("scrollInertia")(scrollInertia.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollToParameterOptions]
   }
 }

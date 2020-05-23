@@ -1,7 +1,7 @@
 package typings.ionicAngular
 
 import typings.ionicAngular.overlayMod.OverlayBaseController
-import typings.ionicCore.componentsMod._Global_.HTMLIonToastElement
+import typings.ionicCore.componentsMod.global.HTMLIonToastElement
 import typings.ionicCore.toastInterfaceMod.ToastOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

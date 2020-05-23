@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListTagsForResourceResponse extends js.Object {
   /**
-    * This value is the ARN you specified to list the tags of.
+    * The ARN you specified to list the tags of.
     */
   var Arn: js.UndefOr[typings.awsSdk.transferMod.Arn] = js.native
   /**

@@ -22,7 +22,7 @@ object testUtilMod extends js.Object {
     def fail(message: Error): Unit = js.native
   }
   
-  val TEST_EPSILON_FLOAT16: `0.1` = js.native
+  val TEST_EPSILON_FLOAT16: /* 0.1 */ Double = js.native
   def expectArrayBuffersEqual(actual: ArrayBuffer, expected: ArrayBuffer): Unit = js.native
   def expectArraysClose(actual: Double, expected: Double): Unit = js.native
   def expectArraysClose(actual: Double, expected: Double, epsilon: Double): Unit = js.native

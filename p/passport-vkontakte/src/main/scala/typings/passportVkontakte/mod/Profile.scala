@@ -1,8 +1,8 @@
 package typings.passportVkontakte.mod
 
-import typings.passport.AnonFamilyName
-import typings.passport.AnonType
-import typings.passport.AnonValue
+import typings.passport.anon.FamilyName
+import typings.passport.anon.Type
+import typings.passport.anon.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +23,10 @@ object Profile {
     displayName: String,
     id: String,
     provider: String,
-    emails: js.Array[AnonType] = null,
+    emails: js.Array[Type] = null,
     gender: String = null,
-    name: AnonFamilyName = null,
-    photos: js.Array[AnonValue] = null,
+    name: FamilyName = null,
+    photos: js.Array[Value] = null,
     profileUrl: String = null,
     username: String = null
   ): Profile = {

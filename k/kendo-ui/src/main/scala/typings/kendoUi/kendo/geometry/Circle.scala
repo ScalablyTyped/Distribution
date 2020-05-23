@@ -1,15 +1,12 @@
 package typings.kendoUi.kendo.geometry
 
-import typings.kendoUi.kendo.Observable_
+import typings.kendoUi.kendo.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.geometry.Circle")
 @js.native
-class Circle protected () extends Observable_ {
-  def this(center: js.Any, radius: Double) = this()
-  def this(center: Point, radius: Double) = this()
+trait Circle extends Observable {
   var center: Point = js.native
   var options: CircleOptions = js.native
   var radius: Double = js.native

@@ -4,7 +4,7 @@ import typings.monacoEditor.mod.editor.IDiffEditorConstructionOptions
 import typings.monacoEditor.mod.editor.IEditorOverrideServices
 import typings.monacoEditor.mod.editor.IModelContentChangedEvent
 import typings.monacoEditor.mod.editor.IStandaloneDiffEditor
-import typings.reactMonacoEditor.TypeofmonacoEditor
+import typings.reactMonacoEditor.anon.TypeofmonacoEditor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,7 +54,7 @@ object MonacoDiffEditorProps {
     options: IDiffEditorConstructionOptions = null,
     original: String = null,
     overrideServices: IEditorOverrideServices = null,
-    theme: String = null,
+    theme: js.UndefOr[Null | String] = js.undefined,
     value: String = null,
     width: String | Double = null
   ): MonacoDiffEditorProps = {
@@ -69,7 +69,7 @@ object MonacoDiffEditorProps {
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (original != null) __obj.updateDynamic("original")(original.asInstanceOf[js.Any])
     if (overrideServices != null) __obj.updateDynamic("overrideServices")(overrideServices.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (!js.isUndefined(theme)) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonacoDiffEditorProps]

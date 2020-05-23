@@ -7,38 +7,35 @@ import scala.scalajs.js.annotation._
 
 trait TriangulationDataSourceSettings
   extends /**
-	 * Option for TriangulationDataSourceSettings
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   /**
-  	 * Callback function to call when data binding is complete
-  	 */
+    * Callback function to call when data binding is complete
+    */
   var callback: js.UndefOr[js.Function] = js.undefined
   /**
-  	 * Object on which to invoke the callback function
-  	 */
+    * Object on which to invoke the callback function
+    */
   var callee: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * The unique identifier.
-  	 */
+    * The unique identifier.
+    */
   var id: js.UndefOr[String] = js.undefined
   /**
-  	 * A Uri specifying the location of the Itf file.
-  	 */
+    * A Uri specifying the location of the Itf file.
+    */
   var source: js.UndefOr[String] = js.undefined
   /**
-  	 * The TriangulationSource which is typically created after importing the Itf from the Source Uri.
-  	 */
+    * The TriangulationSource which is typically created after importing the Itf from the Source Uri.
+    */
   var triangulationSource: js.UndefOr[String] = js.undefined
 }
 
 object TriangulationDataSourceSettings {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for TriangulationDataSourceSettings
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     callback: js.Function = null,
     callee: js.Any = null,
     id: String = null,

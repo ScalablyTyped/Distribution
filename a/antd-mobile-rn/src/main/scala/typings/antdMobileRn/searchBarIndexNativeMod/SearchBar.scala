@@ -1,6 +1,6 @@
 package typings.antdMobileRn.searchBarIndexNativeMod
 
-import typings.antdMobileRn.AnonNativeEvent
+import typings.antdMobileRn.anon.NativeEvent
 import typings.antdMobileRn.searchBarPropsTypeMod.SearchBarState
 import typings.react.mod.Component
 import typings.reactNative.mod.TextInput
@@ -18,6 +18,6 @@ trait SearchBar
   def onCancel(): Unit = js.native
   def onChangeText(value: String): Unit = js.native
   def onFocus(): Unit = js.native
-  def onSubmit(_underscore: AnonNativeEvent): Unit = js.native
+  def onSubmit(_underscore: NativeEvent): Unit = js.native
 }
 

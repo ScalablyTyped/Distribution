@@ -21,9 +21,9 @@ object Options {
     unknown: /* arg */ String => Boolean = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(`--`)) __obj.updateDynamic("--")(`--`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`--`)) __obj.updateDynamic("--")(`--`.get.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(stopEarly)) __obj.updateDynamic("stopEarly")(stopEarly.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopEarly)) __obj.updateDynamic("stopEarly")(stopEarly.get.asInstanceOf[js.Any])
     if (unknown != null) __obj.updateDynamic("unknown")(js.Any.fromFunction1(unknown))
     __obj.asInstanceOf[Options]
   }

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.centuries
 import typings.arcgisJsApi.arcgisJsApiStrings.days
 import typings.arcgisJsApi.arcgisJsApiStrings.decades
@@ -34,7 +33,15 @@ trait TimeInterval extends JSONSupport {
   var value: Double
 }
 
-@JSGlobal("__esri.TimeInterval")
-@js.native
-object TimeInterval extends TopLevel[TimeIntervalConstructor]
+object TimeInterval {
+  @scala.inline
+  def apply(
+    toJSON: () => js.Any,
+    unit: milliseconds | seconds | minutes | hours | days | weeks | months | years | decades | centuries,
+    value: Double
+  ): TimeInterval = {
+    val __obj = js.Dynamic.literal(toJSON = js.Any.fromFunction0(toJSON), unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TimeInterval]
+  }
+}
 

@@ -4,13 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CANNON.Material")
-@js.native
-class Material protected () extends js.Object {
-  def this(name: String) = this()
-  var friction: Double = js.native
-  var id: Double = js.native
-  var name: String = js.native
-  var restitution: Double = js.native
+trait Material extends js.Object {
+  var friction: Double
+  var id: Double
+  var name: String
+  var restitution: Double
+}
+
+object Material {
+  @scala.inline
+  def apply(friction: Double, id: Double, name: String, restitution: Double): Material = {
+    val __obj = js.Dynamic.literal(friction = friction.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], restitution = restitution.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Material]
+  }
 }
 

@@ -1,13 +1,13 @@
 package typings.onfleetNodeOnfleet.destinationsMod
 
-import typings.onfleetNodeOnfleet.AnonApartment
+import typings.onfleetNodeOnfleet.anon.Apartment
 import typings.onfleetNodeOnfleet.metadataMod.OnfleetMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OnfleetDestination extends js.Object {
-  var address: AnonApartment
+  var address: Apartment
   var id: String
   var location: Location
   var metadata: js.Array[OnfleetMetadata]
@@ -19,7 +19,7 @@ trait OnfleetDestination extends js.Object {
 object OnfleetDestination {
   @scala.inline
   def apply(
-    address: AnonApartment,
+    address: Apartment,
     id: String,
     location: Location,
     metadata: js.Array[OnfleetMetadata],

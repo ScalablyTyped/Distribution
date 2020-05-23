@@ -9,5 +9,13 @@ import scala.scalajs.js.annotation._
 class PullDeclGroup protected ()
   extends typings.typescriptServices.TypeScript.PullDeclGroup {
   def this(name: String) = this()
+  /* CompleteClass */
+  override var _decls: js.Any = js.native
+  /* CompleteClass */
+  override var name: String = js.native
+  /* CompleteClass */
+  override def addDecl(decl: typings.typescriptServices.TypeScript.PullDecl): Unit = js.native
+  /* CompleteClass */
+  override def getDecls(): js.Array[typings.typescriptServices.TypeScript.PullDecl] = js.native
 }
 

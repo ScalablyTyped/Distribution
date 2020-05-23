@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,23 +42,6 @@ object FloatingObjectTextWrapType extends js.Object {
     */
   @js.native
   sealed trait TopAndBottom extends FloatingObjectTextWrapType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FloatingObjectTextWrapType with Double] = js.native
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 4 */ @js.native
-  object Square extends TopLevel[Square with Double]
-  
-  /* 3 */ @js.native
-  object Through extends TopLevel[Through with Double]
-  
-  /* 2 */ @js.native
-  object Tight extends TopLevel[Tight with Double]
-  
-  /* 1 */ @js.native
-  object TopAndBottom extends TopLevel[TopAndBottom with Double]
   
 }
 

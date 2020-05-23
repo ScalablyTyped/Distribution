@@ -1,6 +1,6 @@
 package typings.keycloakJs.mod
 
-import typings.keycloakJs.AnonRedirectUri
+import typings.keycloakJs.anon.RedirectUri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait KeycloakAdapter extends js.Object {
   def login(options: KeycloakLoginOptions): KeycloakPromise[Unit, Unit] = js.native
   def logout(): KeycloakPromise[Unit, Unit] = js.native
   def logout(options: js.Any): KeycloakPromise[Unit, Unit] = js.native
-  def redirectUri(options: AnonRedirectUri, encodeHash: Boolean): String = js.native
+  def redirectUri(options: RedirectUri, encodeHash: Boolean): String = js.native
   def register(): KeycloakPromise[Unit, Unit] = js.native
   def register(options: KeycloakLoginOptions): KeycloakPromise[Unit, Unit] = js.native
 }

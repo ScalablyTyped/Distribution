@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SIPml.Session.Message")
 @js.native
-class Message ()
+trait Message
   extends typings.sipml.SIPml.Session {
   def send(to: String): Double = js.native
   def send(to: String, content: js.Any): Double = js.native

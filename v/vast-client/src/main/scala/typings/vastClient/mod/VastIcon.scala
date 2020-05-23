@@ -41,16 +41,8 @@ object VastIcon {
     staticResource: String = null,
     `type`: String = null
   ): VastIcon = {
-    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], iconClickTrackingURLTemplates = iconClickTrackingURLTemplates.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], xPosition = xPosition.asInstanceOf[js.Any], yPosition = yPosition.asInstanceOf[js.Any])
-    if (apiFramework != null) __obj.updateDynamic("apiFramework")(apiFramework.asInstanceOf[js.Any])
-    if (htmlResource != null) __obj.updateDynamic("htmlResource")(htmlResource.asInstanceOf[js.Any])
-    if (iconClickThroughURLTemplate != null) __obj.updateDynamic("iconClickThroughURLTemplate")(iconClickThroughURLTemplate.asInstanceOf[js.Any])
-    if (iconViewTrackingURLTemplate != null) __obj.updateDynamic("iconViewTrackingURLTemplate")(iconViewTrackingURLTemplate.asInstanceOf[js.Any])
-    if (iframeResource != null) __obj.updateDynamic("iframeResource")(iframeResource.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (program != null) __obj.updateDynamic("program")(program.asInstanceOf[js.Any])
-    if (staticResource != null) __obj.updateDynamic("staticResource")(staticResource.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], iconClickTrackingURLTemplates = iconClickTrackingURLTemplates.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], xPosition = xPosition.asInstanceOf[js.Any], yPosition = yPosition.asInstanceOf[js.Any], apiFramework = apiFramework.asInstanceOf[js.Any], htmlResource = htmlResource.asInstanceOf[js.Any], iconClickThroughURLTemplate = iconClickThroughURLTemplate.asInstanceOf[js.Any], iconViewTrackingURLTemplate = iconViewTrackingURLTemplate.asInstanceOf[js.Any], iframeResource = iframeResource.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], program = program.asInstanceOf[js.Any], staticResource = staticResource.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VastIcon]
   }
 }

@@ -16,14 +16,14 @@ object FindOneAndDeleteOption {
   @scala.inline
   def apply(
     collation: CollationDocument = null,
-    maxTimeMS: Int | scala.Double = null,
+    maxTimeMS: js.UndefOr[scala.Double] = js.undefined,
     projection: js.Object = null,
     session: ClientSession = null,
     sort: js.Object = null
   ): FindOneAndDeleteOption = {
     val __obj = js.Dynamic.literal()
     if (collation != null) __obj.updateDynamic("collation")(collation.asInstanceOf[js.Any])
-    if (maxTimeMS != null) __obj.updateDynamic("maxTimeMS")(maxTimeMS.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTimeMS)) __obj.updateDynamic("maxTimeMS")(maxTimeMS.get.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])

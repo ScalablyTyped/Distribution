@@ -1,7 +1,7 @@
 package typings.cathoQuantum.radioGroupMod
 
-import typings.cathoQuantum.AnonColorsSpacing
-import typings.cathoQuantum.AnonDisabled
+import typings.cathoQuantum.anon.ColorsSpacing
+import typings.cathoQuantum.anon.Disabled
 import typings.cathoQuantum.cathoQuantumStrings.button
 import typings.cathoQuantum.cathoQuantumStrings.large
 import typings.cathoQuantum.cathoQuantumStrings.medium
@@ -23,9 +23,9 @@ trait RadioGroupProps extends js.Object {
   var `inline`: js.UndefOr[Boolean] = js.undefined
   var name: String
   var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
-  var options: js.UndefOr[js.Array[AnonDisabled]] = js.undefined
+  var options: js.UndefOr[js.Array[Disabled]] = js.undefined
   var size: js.UndefOr[xsmall | small | medium | large | xlarge] = js.undefined
-  var theme: js.UndefOr[AnonColorsSpacing] = js.undefined
+  var theme: js.UndefOr[ColorsSpacing] = js.undefined
   var `type`: js.UndefOr[radio | button] = js.undefined
   var value: js.UndefOr[String] = js.undefined
 }
@@ -38,16 +38,16 @@ object RadioGroupProps {
     error: String = null,
     `inline`: js.UndefOr[Boolean] = js.undefined,
     onChange: ChangeEvent[HTMLInputElement] => Unit = null,
-    options: js.Array[AnonDisabled] = null,
+    options: js.Array[Disabled] = null,
     size: xsmall | small | medium | large | xlarge = null,
-    theme: AnonColorsSpacing = null,
+    theme: ColorsSpacing = null,
     `type`: radio | button = null,
     value: String = null
   ): RadioGroupProps = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

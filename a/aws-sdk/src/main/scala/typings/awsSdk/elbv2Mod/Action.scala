@@ -48,7 +48,7 @@ object Action {
     AuthenticateOidcConfig: AuthenticateOidcActionConfig = null,
     FixedResponseConfig: FixedResponseActionConfig = null,
     ForwardConfig: ForwardActionConfig = null,
-    Order: Int | Double = null,
+    Order: js.UndefOr[ActionOrder] = js.undefined,
     RedirectConfig: RedirectActionConfig = null,
     TargetGroupArn: TargetGroupArn = null
   ): Action = {
@@ -57,7 +57,7 @@ object Action {
     if (AuthenticateOidcConfig != null) __obj.updateDynamic("AuthenticateOidcConfig")(AuthenticateOidcConfig.asInstanceOf[js.Any])
     if (FixedResponseConfig != null) __obj.updateDynamic("FixedResponseConfig")(FixedResponseConfig.asInstanceOf[js.Any])
     if (ForwardConfig != null) __obj.updateDynamic("ForwardConfig")(ForwardConfig.asInstanceOf[js.Any])
-    if (Order != null) __obj.updateDynamic("Order")(Order.asInstanceOf[js.Any])
+    if (!js.isUndefined(Order)) __obj.updateDynamic("Order")(Order.get.asInstanceOf[js.Any])
     if (RedirectConfig != null) __obj.updateDynamic("RedirectConfig")(RedirectConfig.asInstanceOf[js.Any])
     if (TargetGroupArn != null) __obj.updateDynamic("TargetGroupArn")(TargetGroupArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action]

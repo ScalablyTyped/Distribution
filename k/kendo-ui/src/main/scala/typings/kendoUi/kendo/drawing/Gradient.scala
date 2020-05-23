@@ -5,13 +5,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.drawing.Gradient")
-@js.native
-class Gradient () extends Class {
-  def this(options: GradientOptions) = this()
-  var options: GradientOptions = js.native
-  var stops: js.Any = js.native
-  def addStop(offset: Double, color: String, opacity: Double): GradientStop = js.native
-  def removeStop(stop: GradientStop): Unit = js.native
+trait Gradient extends Class {
+  var options: GradientOptions
+  var stops: js.Any
+  def addStop(offset: Double, color: String, opacity: Double): GradientStop
+  def removeStop(stop: GradientStop): Unit
+}
+
+object Gradient {
+  @scala.inline
+  def apply(
+    addStop: (Double, String, Double) => GradientStop,
+    options: GradientOptions,
+    removeStop: GradientStop => Unit,
+    stops: js.Any
+  ): Gradient = {
+    val __obj = js.Dynamic.literal(addStop = js.Any.fromFunction3(addStop), options = options.asInstanceOf[js.Any], removeStop = js.Any.fromFunction1(removeStop), stops = stops.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Gradient]
+  }
 }
 

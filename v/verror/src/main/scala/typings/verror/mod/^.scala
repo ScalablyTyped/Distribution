@@ -1,7 +1,7 @@
 package typings.verror.mod
 
 import typings.std.Error
-import typings.verror.TypeofVError
+import typings.verror.anon.TypeofVError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

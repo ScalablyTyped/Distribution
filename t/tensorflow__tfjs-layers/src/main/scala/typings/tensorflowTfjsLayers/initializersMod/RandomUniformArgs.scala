@@ -15,11 +15,15 @@ trait RandomUniformArgs extends js.Object {
 
 object RandomUniformArgs {
   @scala.inline
-  def apply(maxval: Int | Double = null, minval: Int | Double = null, seed: Int | Double = null): RandomUniformArgs = {
+  def apply(
+    maxval: js.UndefOr[Double] = js.undefined,
+    minval: js.UndefOr[Double] = js.undefined,
+    seed: js.UndefOr[Double] = js.undefined
+  ): RandomUniformArgs = {
     val __obj = js.Dynamic.literal()
-    if (maxval != null) __obj.updateDynamic("maxval")(maxval.asInstanceOf[js.Any])
-    if (minval != null) __obj.updateDynamic("minval")(minval.asInstanceOf[js.Any])
-    if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxval)) __obj.updateDynamic("maxval")(maxval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minval)) __obj.updateDynamic("minval")(minval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(seed)) __obj.updateDynamic("seed")(seed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RandomUniformArgs]
   }
 }

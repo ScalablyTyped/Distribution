@@ -1,12 +1,12 @@
 package typings.fundamentalReact.mod
 
-import typings.fundamentalReact.FunctionComponentListFoot
-import typings.fundamentalReact.FunctionComponentListHead
-import typings.fundamentalReact.FunctionComponentListIcon
-import typings.fundamentalReact.FunctionComponentListItem
-import typings.fundamentalReact.FunctionComponentListText
-import typings.fundamentalReact.PartialListProps
-import typings.fundamentalReact.WeakValidationMapListProp
+import typings.fundamentalReact.anon.FunctionComponentListFoot
+import typings.fundamentalReact.anon.FunctionComponentListHead
+import typings.fundamentalReact.anon.FunctionComponentListIcon
+import typings.fundamentalReact.anon.FunctionComponentListItem
+import typings.fundamentalReact.anon.FunctionComponentListText
+import typings.fundamentalReact.anon.PartialListProps
+import typings.fundamentalReact.anon.WeakValidationMapListProp
 import typings.fundamentalReact.listMod.ListProps
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement

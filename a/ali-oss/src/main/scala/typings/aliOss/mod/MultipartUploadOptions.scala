@@ -30,10 +30,10 @@ object MultipartUploadOptions {
     headers: js.Object = null,
     meta: UserMeta = null,
     mime: String = null,
-    parallel: Int | Double = null,
-    partSize: Int | Double = null,
+    parallel: js.UndefOr[Double] = js.undefined,
+    partSize: js.UndefOr[Double] = js.undefined,
     progress: /* repeated */ js.Any => _ = null,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): MultipartUploadOptions = {
     val __obj = js.Dynamic.literal()
     if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
@@ -42,10 +42,10 @@ object MultipartUploadOptions {
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (mime != null) __obj.updateDynamic("mime")(mime.asInstanceOf[js.Any])
-    if (parallel != null) __obj.updateDynamic("parallel")(parallel.asInstanceOf[js.Any])
-    if (partSize != null) __obj.updateDynamic("partSize")(partSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(parallel)) __obj.updateDynamic("parallel")(parallel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(partSize)) __obj.updateDynamic("partSize")(partSize.get.asInstanceOf[js.Any])
     if (progress != null) __obj.updateDynamic("progress")(js.Any.fromFunction1(progress))
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultipartUploadOptions]
   }
 }

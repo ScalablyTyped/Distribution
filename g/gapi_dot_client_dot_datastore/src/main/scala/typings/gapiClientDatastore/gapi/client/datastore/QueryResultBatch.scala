@@ -42,7 +42,7 @@ object QueryResultBatch {
     entityResults: js.Array[EntityResult] = null,
     moreResults: String = null,
     skippedCursor: String = null,
-    skippedResults: Int | Double = null,
+    skippedResults: js.UndefOr[Double] = js.undefined,
     snapshotVersion: String = null
   ): QueryResultBatch = {
     val __obj = js.Dynamic.literal()
@@ -51,7 +51,7 @@ object QueryResultBatch {
     if (entityResults != null) __obj.updateDynamic("entityResults")(entityResults.asInstanceOf[js.Any])
     if (moreResults != null) __obj.updateDynamic("moreResults")(moreResults.asInstanceOf[js.Any])
     if (skippedCursor != null) __obj.updateDynamic("skippedCursor")(skippedCursor.asInstanceOf[js.Any])
-    if (skippedResults != null) __obj.updateDynamic("skippedResults")(skippedResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(skippedResults)) __obj.updateDynamic("skippedResults")(skippedResults.get.asInstanceOf[js.Any])
     if (snapshotVersion != null) __obj.updateDynamic("snapshotVersion")(snapshotVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryResultBatch]
   }

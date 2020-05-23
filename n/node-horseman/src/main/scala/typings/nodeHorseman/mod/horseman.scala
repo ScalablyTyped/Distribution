@@ -1,6 +1,6 @@
 package typings.nodeHorseman.mod
 
-import typings.nodeHorseman.AnonFormat
+import typings.nodeHorseman.anon.Format
 import typings.nodeHorseman.nodeHorsemanStrings.GET
 import typings.nodeHorseman.nodeHorsemanStrings.PNG
 import typings.nodeHorseman.nodeHorsemanStrings.loadFinished
@@ -146,7 +146,7 @@ trait horseman extends js.Object {
   def open_GET(url: String, method: GET): this.type = js.native
   def pageMaker(url: js.Any, _page: js.Any, args: js.Any*): js.Any = js.native
   /** Save the current page as a pdf. */
-  def pdf(path: String, paperSize: AnonFormat): this.type = js.native
+  def pdf(path: String, paperSize: Format): this.type = js.native
   /** Get the plain text for the body of the page. */
   def plainText(): String = js.native
   /** Send Post data to a url. */

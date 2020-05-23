@@ -29,8 +29,8 @@ object VectorSource {
     `type`: vector,
     attribution: String = null,
     bounds: js.Array[Double] = null,
-    maxzoom: Int | Double = null,
-    minzoom: Int | Double = null,
+    maxzoom: js.UndefOr[Double] = js.undefined,
+    minzoom: js.UndefOr[Double] = js.undefined,
     promoteId: PromoteIdSpecification = null,
     scheme: xyz | tms = null,
     tiles: js.Array[String] = null,
@@ -40,8 +40,8 @@ object VectorSource {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (maxzoom != null) __obj.updateDynamic("maxzoom")(maxzoom.asInstanceOf[js.Any])
-    if (minzoom != null) __obj.updateDynamic("minzoom")(minzoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxzoom)) __obj.updateDynamic("maxzoom")(maxzoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minzoom)) __obj.updateDynamic("minzoom")(minzoom.get.asInstanceOf[js.Any])
     if (promoteId != null) __obj.updateDynamic("promoteId")(promoteId.asInstanceOf[js.Any])
     if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
     if (tiles != null) __obj.updateDynamic("tiles")(tiles.asInstanceOf[js.Any])

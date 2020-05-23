@@ -49,8 +49,8 @@ object GetInstanceArgs {
   ): GetInstanceArgs = {
     val __obj = js.Dynamic.literal()
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(getPasswordData)) __obj.updateDynamic("getPasswordData")(getPasswordData.asInstanceOf[js.Any])
-    if (!js.isUndefined(getUserData)) __obj.updateDynamic("getUserData")(getUserData.asInstanceOf[js.Any])
+    if (!js.isUndefined(getPasswordData)) __obj.updateDynamic("getPasswordData")(getPasswordData.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(getUserData)) __obj.updateDynamic("getUserData")(getUserData.get.asInstanceOf[js.Any])
     if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
     if (instanceTags != null) __obj.updateDynamic("instanceTags")(instanceTags.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

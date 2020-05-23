@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait ICheckbox extends IField {
   /** [Method] Set the checked state of the checkbox to true
-  		* @returns Ext.field.Checkbox This checkbox.
-  		*/
+    * @returns Ext.field.Checkbox This checkbox.
+    */
   var check: js.UndefOr[js.Function0[this.type]] = js.undefined
   /** [Config Option] (Boolean) */
   var checked: js.UndefOr[Boolean] = js.undefined
@@ -17,48 +17,48 @@ trait ICheckbox extends IField {
   /** [Method] Method called when this Ext field Checkbox has been unchecked  */
   var doUnChecked: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Returns the field checked value
-  		* @returns Mixed The field value.
-  		*/
+    * @returns Mixed The field value.
+    */
   var getChecked: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns an array of values from the checkboxes in the group that are checked
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   var getGroupValues: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the submit value for the checkbox which can be used when submitting forms
-  		* @returns Boolean/String value The value of value or true, if checked.
-  		*/
+    * @returns Boolean/String value The value of value or true, if checked.
+    */
   var getSubmitValue: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of value
-  		* @returns String
-  		*/
+    * @returns String
+    */
   @JSName("getValue")
   var getValue_ICheckbox: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the checked state of the checkbox
-  		* @returns Boolean true if checked, false otherwise.
-  		*/
+    * @returns Boolean true if checked, false otherwise.
+    */
   var isChecked: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Resets the status of all matched checkboxes in the same group to checked
-  		* @returns Ext.field.Checkbox This checkbox.
-  		*/
+    * @returns Ext.field.Checkbox This checkbox.
+    */
   var resetGroupValues: js.UndefOr[js.Function0[this.type]] = js.undefined
   /** [Method] Resets the current field value back to the original value on this field when it was created
-  		* @returns Ext.field.Field this
-  		*/
+    * @returns Ext.field.Field this
+    */
   @JSName("reset")
   var reset_ICheckbox: js.UndefOr[js.Function0[IField]] = js.undefined
   /** [Method] Set the status of all matched checkboxes in the same group to checked
-  		* @param values Array An array of values.
-  		* @returns Ext.field.Checkbox This checkbox.
-  		*/
+    * @param values Array An array of values.
+    * @returns Ext.field.Checkbox This checkbox.
+    */
   var setGroupValues: js.UndefOr[js.Function1[/* values */ js.UndefOr[Array], this.type]] = js.undefined
   /** [Method] Sets the value of value
-  		* @param value String The new value.
-  		*/
+    * @param value String The new value.
+    */
   @JSName("setValue")
   var setValue_ICheckbox: js.UndefOr[js.Function1[/* value */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Set the checked state of the checkbox to false
-  		* @returns Ext.field.Checkbox This checkbox.
-  		*/
+    * @returns Ext.field.Checkbox This checkbox.
+    */
   var uncheck: js.UndefOr[js.Function0[this.type]] = js.undefined
   /** [Config Option] (String) */
   @JSName("value")
@@ -88,7 +88,7 @@ object ICheckbox {
     val __obj = js.Dynamic.literal()
     if (IField != null) js.Dynamic.global.Object.assign(__obj, IField)
     if (check != null) __obj.updateDynamic("check")(js.Any.fromFunction0(check))
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
     if (doChecked != null) __obj.updateDynamic("doChecked")(js.Any.fromFunction0(doChecked))
     if (doUnChecked != null) __obj.updateDynamic("doUnChecked")(js.Any.fromFunction0(doUnChecked))
     if (getChecked != null) __obj.updateDynamic("getChecked")(js.Any.fromFunction0(getChecked))

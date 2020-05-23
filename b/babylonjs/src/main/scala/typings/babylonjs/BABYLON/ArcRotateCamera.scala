@@ -1,34 +1,13 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.AnonDistanceMax
+import typings.babylonjs.anon.DistanceMax
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.ArcRotateCamera")
 @js.native
-class ArcRotateCamera protected () extends TargetCamera {
-  /**
-    * Instantiates a new ArcRotateCamera in a given scene
-    * @param name Defines the name of the camera
-    * @param alpha Defines the camera rotation along the logitudinal axis
-    * @param beta Defines the camera rotation along the latitudinal axis
-    * @param radius Defines the camera distance from its target
-    * @param target Defines the camera target
-    * @param scene Defines the scene the camera belongs to
-    * @param setActiveOnSceneIfNoneActive Defines wheter the camera should be marked as active if not other active cameras have been defined
-    */
-  def this(name: String, alpha: Double, beta: Double, radius: Double, target: Vector3, scene: Scene) = this()
-  def this(
-    name: String,
-    alpha: Double,
-    beta: Double,
-    radius: Double,
-    target: Vector3,
-    scene: Scene,
-    setActiveOnSceneIfNoneActive: Boolean
-  ) = this()
+trait ArcRotateCamera extends TargetCamera {
   var _YToUpMatrix: Matrix = js.native
   var _autoRotationBehavior: js.Any = js.native
   var _bouncingBehavior: js.Any = js.native
@@ -223,8 +202,8 @@ class ArcRotateCamera protected () extends TargetCamera {
     */
   def focusOn(meshesOrMinMaxVectorAndDistance: js.Array[AbstractMesh]): Unit = js.native
   def focusOn(meshesOrMinMaxVectorAndDistance: js.Array[AbstractMesh], doNotUpdateMaxZ: Boolean): Unit = js.native
-  def focusOn(meshesOrMinMaxVectorAndDistance: AnonDistanceMax): Unit = js.native
-  def focusOn(meshesOrMinMaxVectorAndDistance: AnonDistanceMax, doNotUpdateMaxZ: Boolean): Unit = js.native
+  def focusOn(meshesOrMinMaxVectorAndDistance: DistanceMax): Unit = js.native
+  def focusOn(meshesOrMinMaxVectorAndDistance: DistanceMax, doNotUpdateMaxZ: Boolean): Unit = js.native
   /**
     * Gets the framing behavior of the camera if it has been enabled.
     * @see http://doc.babylonjs.com/how_to/camera_behaviors#framing-behavior

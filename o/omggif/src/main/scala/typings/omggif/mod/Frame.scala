@@ -33,14 +33,11 @@ object Frame {
     width: Double,
     x: Double,
     y: Double,
-    palette_offset: Int | Double = null,
-    palette_size: Int | Double = null,
-    transparent_index: Int | Double = null
+    palette_offset: Double = null.asInstanceOf[Double],
+    palette_size: Double = null.asInstanceOf[Double],
+    transparent_index: Double = null.asInstanceOf[Double]
   ): Frame = {
-    val __obj = js.Dynamic.literal(data_length = data_length.asInstanceOf[js.Any], data_offset = data_offset.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], disposal = disposal.asInstanceOf[js.Any], has_local_palette = has_local_palette.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], interlaced = interlaced.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    if (palette_offset != null) __obj.updateDynamic("palette_offset")(palette_offset.asInstanceOf[js.Any])
-    if (palette_size != null) __obj.updateDynamic("palette_size")(palette_size.asInstanceOf[js.Any])
-    if (transparent_index != null) __obj.updateDynamic("transparent_index")(transparent_index.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data_length = data_length.asInstanceOf[js.Any], data_offset = data_offset.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], disposal = disposal.asInstanceOf[js.Any], has_local_palette = has_local_palette.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], interlaced = interlaced.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], palette_offset = palette_offset.asInstanceOf[js.Any], palette_size = palette_size.asInstanceOf[js.Any], transparent_index = transparent_index.asInstanceOf[js.Any])
     __obj.asInstanceOf[Frame]
   }
 }

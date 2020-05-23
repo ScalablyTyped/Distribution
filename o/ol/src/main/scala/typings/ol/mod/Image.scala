@@ -12,15 +12,7 @@ import scala.scalajs.js.annotation._
 class Image protected () extends default {
   def this(
     extent: Extent,
-    resolution: js.UndefOr[scala.Nothing],
-    pixelRatio: Double,
-    src: String,
-    crossOrigin: String,
-    imageLoadFunction: LoadFunction
-  ) = this()
-  def this(
-    extent: Extent,
-    resolution: Double,
+    resolution: js.UndefOr[Double],
     pixelRatio: Double,
     src: String,
     crossOrigin: String,

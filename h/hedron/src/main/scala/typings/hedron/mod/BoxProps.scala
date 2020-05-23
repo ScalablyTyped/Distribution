@@ -93,7 +93,7 @@ object BoxProps {
     height: String = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     margin: String = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     padding: String = null,
     shiftDown: js.UndefOr[Boolean] = js.undefined,
     shiftLeft: js.UndefOr[Boolean] = js.undefined,
@@ -106,20 +106,20 @@ object BoxProps {
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.get.asInstanceOf[js.Any])
     if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
-    if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid.asInstanceOf[js.Any])
+    if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (!js.isUndefined(shiftDown)) __obj.updateDynamic("shiftDown")(shiftDown.asInstanceOf[js.Any])
-    if (!js.isUndefined(shiftLeft)) __obj.updateDynamic("shiftLeft")(shiftLeft.asInstanceOf[js.Any])
-    if (!js.isUndefined(shiftRight)) __obj.updateDynamic("shiftRight")(shiftRight.asInstanceOf[js.Any])
-    if (!js.isUndefined(shiftUp)) __obj.updateDynamic("shiftUp")(shiftUp.asInstanceOf[js.Any])
+    if (!js.isUndefined(shiftDown)) __obj.updateDynamic("shiftDown")(shiftDown.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shiftLeft)) __obj.updateDynamic("shiftLeft")(shiftLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shiftRight)) __obj.updateDynamic("shiftRight")(shiftRight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shiftUp)) __obj.updateDynamic("shiftUp")(shiftUp.get.asInstanceOf[js.Any])
     if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoxProps]

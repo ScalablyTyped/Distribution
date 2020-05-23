@@ -23,7 +23,7 @@ package object plugins {
   /* Rewritten from type alias, can be one of: 
     - typings.restify.restifyStrings.close
     - typings.restify.restifyStrings.aborted
-    - `js.undefined`
+    - js.UndefOr[scala.Nothing]
   */
   type TMetricsCallback = js.UndefOr[typings.restify.mod.plugins._TMetricsCallback]
 }

@@ -14,10 +14,13 @@ trait IReloadDocumentRequest extends js.Object {
 
 object IReloadDocumentRequest {
   @scala.inline
-  def apply(gcsSource: IGcsSource = null, name: String = null): IReloadDocumentRequest = {
+  def apply(
+    gcsSource: js.UndefOr[Null | IGcsSource] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined
+  ): IReloadDocumentRequest = {
     val __obj = js.Dynamic.literal()
-    if (gcsSource != null) __obj.updateDynamic("gcsSource")(gcsSource.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(gcsSource)) __obj.updateDynamic("gcsSource")(gcsSource.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IReloadDocumentRequest]
   }
 }

@@ -104,12 +104,12 @@ object Sheet {
     border: js.Array[SheetsBorder] = null,
     cFormatRule: js.Array[SheetsCFormatRule] = null,
     cellTypes: js.Array[_] = null,
-    colCount: Int | Double = null,
-    columnWidth: Int | Double = null,
+    colCount: js.UndefOr[Double] = js.undefined,
+    columnWidth: js.UndefOr[Double] = js.undefined,
     dataSource: js.Any = null,
     fieldAsColumnHeader: js.UndefOr[Boolean] = js.undefined,
-    frozenColumns: Int | Double = null,
-    frozenRows: Int | Double = null,
+    frozenColumns: js.UndefOr[Double] = js.undefined,
+    frozenRows: js.UndefOr[Double] = js.undefined,
     headerStyles: js.Any = null,
     hideColumns: js.Array[_] = null,
     hideRows: js.Array[_] = null,
@@ -117,7 +117,7 @@ object Sheet {
     primaryKey: String = null,
     query: js.Any = null,
     rangeSettings: js.Array[SheetsRangeSetting] = null,
-    rowCount: Int | Double = null,
+    rowCount: js.UndefOr[Double] = js.undefined,
     rows: js.Array[SheetsRow] = null,
     sheetName: String = null,
     showGridlines: js.UndefOr[Boolean] = js.undefined,
@@ -129,12 +129,12 @@ object Sheet {
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (cFormatRule != null) __obj.updateDynamic("cFormatRule")(cFormatRule.asInstanceOf[js.Any])
     if (cellTypes != null) __obj.updateDynamic("cellTypes")(cellTypes.asInstanceOf[js.Any])
-    if (colCount != null) __obj.updateDynamic("colCount")(colCount.asInstanceOf[js.Any])
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(colCount)) __obj.updateDynamic("colCount")(colCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnWidth)) __obj.updateDynamic("columnWidth")(columnWidth.get.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(fieldAsColumnHeader)) __obj.updateDynamic("fieldAsColumnHeader")(fieldAsColumnHeader.asInstanceOf[js.Any])
-    if (frozenColumns != null) __obj.updateDynamic("frozenColumns")(frozenColumns.asInstanceOf[js.Any])
-    if (frozenRows != null) __obj.updateDynamic("frozenRows")(frozenRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(fieldAsColumnHeader)) __obj.updateDynamic("fieldAsColumnHeader")(fieldAsColumnHeader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(frozenColumns)) __obj.updateDynamic("frozenColumns")(frozenColumns.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(frozenRows)) __obj.updateDynamic("frozenRows")(frozenRows.get.asInstanceOf[js.Any])
     if (headerStyles != null) __obj.updateDynamic("headerStyles")(headerStyles.asInstanceOf[js.Any])
     if (hideColumns != null) __obj.updateDynamic("hideColumns")(hideColumns.asInstanceOf[js.Any])
     if (hideRows != null) __obj.updateDynamic("hideRows")(hideRows.asInstanceOf[js.Any])
@@ -142,12 +142,12 @@ object Sheet {
     if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (rangeSettings != null) __obj.updateDynamic("rangeSettings")(rangeSettings.asInstanceOf[js.Any])
-    if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount.get.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (sheetName != null) __obj.updateDynamic("sheetName")(sheetName.asInstanceOf[js.Any])
-    if (!js.isUndefined(showGridlines)) __obj.updateDynamic("showGridlines")(showGridlines.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHeadings)) __obj.updateDynamic("showHeadings")(showHeadings.asInstanceOf[js.Any])
+    if (!js.isUndefined(showGridlines)) __obj.updateDynamic("showGridlines")(showGridlines.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHeadings)) __obj.updateDynamic("showHeadings")(showHeadings.get.asInstanceOf[js.Any])
     if (startCell != null) __obj.updateDynamic("startCell")(startCell.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sheet]
   }

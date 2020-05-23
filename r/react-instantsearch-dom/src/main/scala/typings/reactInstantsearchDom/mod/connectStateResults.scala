@@ -4,7 +4,7 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
 import typings.react.mod.StatelessComponent
-import typings.reactInstantsearchCore.PartialStateResultsProvid
+import typings.reactInstantsearchCore.anon.PartialStateResultsProvid
 import typings.reactInstantsearchCore.mod.BasicDoc
 import typings.reactInstantsearchCore.mod.ConnectedComponentClass
 import typings.reactInstantsearchCore.mod.StateResultsProvided

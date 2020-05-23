@@ -1,6 +1,6 @@
 package typings.awsSdkClientS3Browser.s3ConfigurationMod
 
-import typings.awsSdkClientS3Browser.AnonInstantiable
+import typings.awsSdkClientS3Browser.anon.Instantiable
 import typings.awsSdkTypes.credentialsMod.Credentials
 import typings.awsSdkTypes.cryptoMod.HashConstructor
 import typings.awsSdkTypes.cryptoMod.StreamHasher
@@ -81,7 +81,7 @@ trait S3Configuration extends js.Object {
   /**
     * A constructor for a class implementing the @aws-sdk/types.Hash interface that computes the MD5 checksum of a string or binary buffer
     */
-  var md5: js.UndefOr[AnonInstantiable] = js.undefined
+  var md5: js.UndefOr[Instantiable] = js.undefined
   /**
     * The configuration profile to use.
     */
@@ -155,9 +155,9 @@ object S3Configuration {
     forcePathStyle: js.UndefOr[Boolean] = js.undefined,
     handler: /* context */ HandlerExecutionContext => FinalizeHandler[js.Object, _, Blob] = null,
     httpHandler: HttpHandler[Blob, HttpOptions] = null,
-    maxRedirects: Int | Double = null,
-    maxRetries: Int | Double = null,
-    md5: AnonInstantiable = null,
+    maxRedirects: js.UndefOr[Double] = js.undefined,
+    maxRetries: js.UndefOr[Double] = js.undefined,
+    md5: Instantiable = null,
     profile: String = null,
     retryDecider: /* error */ SdkError => Boolean = null,
     sha256: HashConstructor = null,
@@ -165,7 +165,7 @@ object S3Configuration {
     signingName: String = null,
     sslEnabled: js.UndefOr[Boolean] = js.undefined,
     streamCollector: Blob => js.Promise[Uint8Array] = null,
-    streamHasher: (/* hashCtor */ typings.awsSdkTypes.AnonInstantiable, Blob) => js.Promise[Uint8Array] = null,
+    streamHasher: (/* hashCtor */ typings.awsSdkTypes.anon.Instantiable, Blob) => js.Promise[Uint8Array] = null,
     urlParser: /* url */ String => HttpEndpoint = null,
     useAccelerateEndpoint: js.UndefOr[Boolean] = js.undefined,
     useDualstackEndpoint: js.UndefOr[Boolean] = js.undefined,
@@ -175,28 +175,28 @@ object S3Configuration {
     val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
     if (base64Decoder != null) __obj.updateDynamic("base64Decoder")(js.Any.fromFunction1(base64Decoder))
     if (base64Encoder != null) __obj.updateDynamic("base64Encoder")(js.Any.fromFunction1(base64Encoder))
-    if (!js.isUndefined(bucketEndpoint)) __obj.updateDynamic("bucketEndpoint")(bucketEndpoint.asInstanceOf[js.Any])
+    if (!js.isUndefined(bucketEndpoint)) __obj.updateDynamic("bucketEndpoint")(bucketEndpoint.get.asInstanceOf[js.Any])
     if (delayDecider != null) __obj.updateDynamic("delayDecider")(js.Any.fromFunction2(delayDecider))
-    if (!js.isUndefined(disableBodySigning)) __obj.updateDynamic("disableBodySigning")(disableBodySigning.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableBodySigning)) __obj.updateDynamic("disableBodySigning")(disableBodySigning.get.asInstanceOf[js.Any])
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
     if (endpointProvider != null) __obj.updateDynamic("endpointProvider")(endpointProvider.asInstanceOf[js.Any])
-    if (!js.isUndefined(forcePathStyle)) __obj.updateDynamic("forcePathStyle")(forcePathStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(forcePathStyle)) __obj.updateDynamic("forcePathStyle")(forcePathStyle.get.asInstanceOf[js.Any])
     if (handler != null) __obj.updateDynamic("handler")(js.Any.fromFunction1(handler))
     if (httpHandler != null) __obj.updateDynamic("httpHandler")(httpHandler.asInstanceOf[js.Any])
-    if (maxRedirects != null) __obj.updateDynamic("maxRedirects")(maxRedirects.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRedirects)) __obj.updateDynamic("maxRedirects")(maxRedirects.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
     if (md5 != null) __obj.updateDynamic("md5")(md5.asInstanceOf[js.Any])
     if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
     if (retryDecider != null) __obj.updateDynamic("retryDecider")(js.Any.fromFunction1(retryDecider))
     if (sha256 != null) __obj.updateDynamic("sha256")(sha256.asInstanceOf[js.Any])
     if (signer != null) __obj.updateDynamic("signer")(signer.asInstanceOf[js.Any])
     if (signingName != null) __obj.updateDynamic("signingName")(signingName.asInstanceOf[js.Any])
-    if (!js.isUndefined(sslEnabled)) __obj.updateDynamic("sslEnabled")(sslEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(sslEnabled)) __obj.updateDynamic("sslEnabled")(sslEnabled.get.asInstanceOf[js.Any])
     if (streamCollector != null) __obj.updateDynamic("streamCollector")(js.Any.fromFunction1(streamCollector))
     if (streamHasher != null) __obj.updateDynamic("streamHasher")(js.Any.fromFunction2(streamHasher))
     if (urlParser != null) __obj.updateDynamic("urlParser")(js.Any.fromFunction1(urlParser))
-    if (!js.isUndefined(useAccelerateEndpoint)) __obj.updateDynamic("useAccelerateEndpoint")(useAccelerateEndpoint.asInstanceOf[js.Any])
-    if (!js.isUndefined(useDualstackEndpoint)) __obj.updateDynamic("useDualstackEndpoint")(useDualstackEndpoint.asInstanceOf[js.Any])
+    if (!js.isUndefined(useAccelerateEndpoint)) __obj.updateDynamic("useAccelerateEndpoint")(useAccelerateEndpoint.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useDualstackEndpoint)) __obj.updateDynamic("useDualstackEndpoint")(useDualstackEndpoint.get.asInstanceOf[js.Any])
     if (utf8Decoder != null) __obj.updateDynamic("utf8Decoder")(js.Any.fromFunction1(utf8Decoder))
     if (utf8Encoder != null) __obj.updateDynamic("utf8Encoder")(js.Any.fromFunction1(utf8Encoder))
     __obj.asInstanceOf[S3Configuration]

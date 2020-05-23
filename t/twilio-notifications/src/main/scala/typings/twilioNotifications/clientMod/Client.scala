@@ -31,10 +31,10 @@ class Client protected () extends EventEmitter {
     */
   var _routeMessage: js.Any = js.native
   var _updateTransportState: js.Any = js.native
-  val connectionState: ConnectionState = js.native
   val registrar: js.Any = js.native
   val reliableTransportState: js.Any = js.native
   var services: js.Any = js.native
+  def connectionState: ConnectionState = js.native
   /**
     * Handle incoming push notification.
     * Client application should call this method when it receives push notifications and pass the received data

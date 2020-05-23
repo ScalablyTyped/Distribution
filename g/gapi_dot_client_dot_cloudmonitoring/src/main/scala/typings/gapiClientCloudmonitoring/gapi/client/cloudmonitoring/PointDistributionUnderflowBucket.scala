@@ -13,10 +13,10 @@ trait PointDistributionUnderflowBucket extends js.Object {
 
 object PointDistributionUnderflowBucket {
   @scala.inline
-  def apply(count: String = null, upperBound: Int | Double = null): PointDistributionUnderflowBucket = {
+  def apply(count: String = null, upperBound: js.UndefOr[Double] = js.undefined): PointDistributionUnderflowBucket = {
     val __obj = js.Dynamic.literal()
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (upperBound != null) __obj.updateDynamic("upperBound")(upperBound.asInstanceOf[js.Any])
+    if (!js.isUndefined(upperBound)) __obj.updateDynamic("upperBound")(upperBound.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointDistributionUnderflowBucket]
   }
 }

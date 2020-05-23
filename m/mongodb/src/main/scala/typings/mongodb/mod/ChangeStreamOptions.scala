@@ -20,20 +20,20 @@ trait ChangeStreamOptions extends js.Object {
 object ChangeStreamOptions {
   @scala.inline
   def apply(
-    batchSize: Int | scala.Double = null,
+    batchSize: js.UndefOr[scala.Double] = js.undefined,
     collation: CollationDocument = null,
     fullDocument: default_ | updateLookup = null,
-    maxAwaitTimeMS: Int | scala.Double = null,
+    maxAwaitTimeMS: js.UndefOr[scala.Double] = js.undefined,
     readPreference: ReadPreferenceOrMode = null,
     resumeAfter: ResumeToken = null,
     startAfter: ResumeToken = null,
     startAtOperationTime: typings.bson.mod.Timestamp = null
   ): ChangeStreamOptions = {
     val __obj = js.Dynamic.literal()
-    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
     if (collation != null) __obj.updateDynamic("collation")(collation.asInstanceOf[js.Any])
     if (fullDocument != null) __obj.updateDynamic("fullDocument")(fullDocument.asInstanceOf[js.Any])
-    if (maxAwaitTimeMS != null) __obj.updateDynamic("maxAwaitTimeMS")(maxAwaitTimeMS.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAwaitTimeMS)) __obj.updateDynamic("maxAwaitTimeMS")(maxAwaitTimeMS.get.asInstanceOf[js.Any])
     if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
     if (resumeAfter != null) __obj.updateDynamic("resumeAfter")(resumeAfter.asInstanceOf[js.Any])
     if (startAfter != null) __obj.updateDynamic("startAfter")(startAfter.asInstanceOf[js.Any])

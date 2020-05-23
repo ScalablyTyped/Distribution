@@ -27,6 +27,10 @@ trait DataSourceSyncJob extends js.Object {
     */
   var ExecutionId: js.UndefOr[String] = js.native
   /**
+    * Maps a batch delete document request to a specific data source sync job. This is optional and should only be supplied when documents are deleted by a connector.
+    */
+  var Metrics: js.UndefOr[DataSourceSyncJobMetrics] = js.native
+  /**
     * The UNIX datetime that the synchronization job was started.
     */
   var StartTime: js.UndefOr[Timestamp] = js.native
@@ -44,6 +48,7 @@ object DataSourceSyncJob {
     ErrorCode: ErrorCode = null,
     ErrorMessage: ErrorMessage = null,
     ExecutionId: String = null,
+    Metrics: DataSourceSyncJobMetrics = null,
     StartTime: Timestamp = null,
     Status: DataSourceSyncJobStatus = null
   ): DataSourceSyncJob = {
@@ -53,6 +58,7 @@ object DataSourceSyncJob {
     if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode.asInstanceOf[js.Any])
     if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage.asInstanceOf[js.Any])
     if (ExecutionId != null) __obj.updateDynamic("ExecutionId")(ExecutionId.asInstanceOf[js.Any])
+    if (Metrics != null) __obj.updateDynamic("Metrics")(Metrics.asInstanceOf[js.Any])
     if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceSyncJob]

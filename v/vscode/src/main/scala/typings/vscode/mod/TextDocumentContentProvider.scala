@@ -6,23 +6,23 @@ import scala.scalajs.js.annotation._
 
 trait TextDocumentContentProvider extends js.Object {
   /**
-  		 * An event to signal a resource has changed.
-  		 */
+    * An event to signal a resource has changed.
+    */
   var onDidChange: js.UndefOr[Event[Uri]] = js.undefined
   /**
-  		 * Provide textual content for a given uri.
-  		 *
-  		 * The editor will use the returned string-content to create a readonly
-  		 * [document](#TextDocument). Resources allocated should be released when
-  		 * the corresponding document has been [closed](#workspace.onDidCloseTextDocument).
-  		 *
-  		 * **Note**: The contents of the created [document](#TextDocument) might not be
-  		 * identical to the provided text due to end-of-line-sequence normalization.
-  		 *
-  		 * @param uri An uri which scheme matches the scheme this provider was [registered](#workspace.registerTextDocumentContentProvider) for.
-  		 * @param token A cancellation token.
-  		 * @return A string or a thenable that resolves to such.
-  		 */
+    * Provide textual content for a given uri.
+    *
+    * The editor will use the returned string-content to create a readonly
+    * [document](#TextDocument). Resources allocated should be released when
+    * the corresponding document has been [closed](#workspace.onDidCloseTextDocument).
+    *
+    * **Note**: The contents of the created [document](#TextDocument) might not be
+    * identical to the provided text due to end-of-line-sequence normalization.
+    *
+    * @param uri An uri which scheme matches the scheme this provider was [registered](#workspace.registerTextDocumentContentProvider) for.
+    * @param token A cancellation token.
+    * @return A string or a thenable that resolves to such.
+    */
   def provideTextDocumentContent(uri: Uri, token: CancellationToken): ProviderResult[String]
 }
 

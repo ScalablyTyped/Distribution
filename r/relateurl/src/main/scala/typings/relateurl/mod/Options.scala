@@ -115,16 +115,16 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (defaultPorts != null) __obj.updateDynamic("defaultPorts")(defaultPorts.asInstanceOf[js.Any])
     if (directoryIndexes != null) __obj.updateDynamic("directoryIndexes")(directoryIndexes.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignore_www)) __obj.updateDynamic("ignore_www")(ignore_www.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignore_www)) __obj.updateDynamic("ignore_www")(ignore_www.get.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     if (rejectedSchemes != null) __obj.updateDynamic("rejectedSchemes")(rejectedSchemes.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeAuth)) __obj.updateDynamic("removeAuth")(removeAuth.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeDirectoryIndexes)) __obj.updateDynamic("removeDirectoryIndexes")(removeDirectoryIndexes.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeEmptyQueries)) __obj.updateDynamic("removeEmptyQueries")(removeEmptyQueries.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeRootTrailingSlash)) __obj.updateDynamic("removeRootTrailingSlash")(removeRootTrailingSlash.asInstanceOf[js.Any])
-    if (!js.isUndefined(schemeRelative)) __obj.updateDynamic("schemeRelative")(schemeRelative.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeAuth)) __obj.updateDynamic("removeAuth")(removeAuth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeDirectoryIndexes)) __obj.updateDynamic("removeDirectoryIndexes")(removeDirectoryIndexes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeEmptyQueries)) __obj.updateDynamic("removeEmptyQueries")(removeEmptyQueries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeRootTrailingSlash)) __obj.updateDynamic("removeRootTrailingSlash")(removeRootTrailingSlash.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(schemeRelative)) __obj.updateDynamic("schemeRelative")(schemeRelative.get.asInstanceOf[js.Any])
     if (site != null) __obj.updateDynamic("site")(site.asInstanceOf[js.Any])
-    if (!js.isUndefined(slashesDenoteHost)) __obj.updateDynamic("slashesDenoteHost")(slashesDenoteHost.asInstanceOf[js.Any])
+    if (!js.isUndefined(slashesDenoteHost)) __obj.updateDynamic("slashesDenoteHost")(slashesDenoteHost.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

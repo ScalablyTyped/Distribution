@@ -25,29 +25,29 @@ object Options {
   @scala.inline
   def apply(
     crossOrigin: String = null,
-    displayDpi: Int | Double = null,
+    displayDpi: js.UndefOr[Double] = js.undefined,
     hidpi: js.UndefOr[Boolean] = js.undefined,
     imageLoadFunction: (/* p0 */ ImageWrapper, /* p1 */ String) => Unit = null,
-    metersPerUnit: Int | Double = null,
+    metersPerUnit: js.UndefOr[Double] = js.undefined,
     params: js.Any = null,
     projection: ProjectionLike = null,
-    ratio: Int | Double = null,
+    ratio: js.UndefOr[Double] = js.undefined,
     resolutions: js.Array[Double] = null,
     url: String = null,
     useOverlay: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
-    if (displayDpi != null) __obj.updateDynamic("displayDpi")(displayDpi.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidpi)) __obj.updateDynamic("hidpi")(hidpi.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayDpi)) __obj.updateDynamic("displayDpi")(displayDpi.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidpi)) __obj.updateDynamic("hidpi")(hidpi.get.asInstanceOf[js.Any])
     if (imageLoadFunction != null) __obj.updateDynamic("imageLoadFunction")(js.Any.fromFunction2(imageLoadFunction))
-    if (metersPerUnit != null) __obj.updateDynamic("metersPerUnit")(metersPerUnit.asInstanceOf[js.Any])
+    if (!js.isUndefined(metersPerUnit)) __obj.updateDynamic("metersPerUnit")(metersPerUnit.get.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
+    if (!js.isUndefined(ratio)) __obj.updateDynamic("ratio")(ratio.get.asInstanceOf[js.Any])
     if (resolutions != null) __obj.updateDynamic("resolutions")(resolutions.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (!js.isUndefined(useOverlay)) __obj.updateDynamic("useOverlay")(useOverlay.asInstanceOf[js.Any])
+    if (!js.isUndefined(useOverlay)) __obj.updateDynamic("useOverlay")(useOverlay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

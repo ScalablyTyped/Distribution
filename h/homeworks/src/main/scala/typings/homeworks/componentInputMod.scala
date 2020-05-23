@@ -7,7 +7,6 @@ import typings.angularCore.mod.Renderer2
 import typings.angularForms.mod.ControlValueAccessor
 import typings.homeworks.homeworks.Event
 import typings.homeworks.managerMod.HomeworksManager
-import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,7 +53,7 @@ object componentInputMod extends js.Object {
     var validation: Boolean = js.native
     def ngAfterViewInit(): Unit = js.native
     def ngOnInit(): Unit = js.native
-    def onInput($event: Event_): Unit = js.native
+    def onInput($event: typings.std.Event): Unit = js.native
     /**
       * @description
       * Registers a callback function that is called when the control's value

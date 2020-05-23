@@ -2,7 +2,7 @@ package typings.typestubIpfs.mod
 
 import typings.node.eventsMod.EventEmitter
 import typings.std.Error
-import typings.typestubIpfs.AnonMessage
+import typings.typestubIpfs.anon.Message
 import typings.typestubIpfs.typestubIpfsStrings.error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,7 +31,7 @@ trait IPFS extends EventEmitter {
   def isOnline(): Boolean = js.native
   def on(event: String, callback: js.Function0[Unit]): this.type = js.native
   @JSName("on")
-  def on_error(event: error, callback: js.Function1[/* error */ AnonMessage, Unit]): this.type = js.native
+  def on_error(event: error, callback: js.Function1[/* error */ Message, Unit]): this.type = js.native
   def once(event: String, callback: js.Function0[Unit]): this.type = js.native
   def ping(): js.Promise[Unit] = js.native
   def ping(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native

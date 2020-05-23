@@ -127,8 +127,8 @@ object QuestionnaireItemEnableWhen {
     answerCoding: Coding = null,
     answerDate: date = null,
     answerDateTime: dateTime = null,
-    answerDecimal: Int | Double = null,
-    answerInteger: Int | Double = null,
+    answerDecimal: js.UndefOr[decimal] = js.undefined,
+    answerInteger: js.UndefOr[integer] = js.undefined,
     answerQuantity: Quantity = null,
     answerReference: Reference = null,
     answerString: String = null,
@@ -154,12 +154,12 @@ object QuestionnaireItemEnableWhen {
     if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
     if (_question != null) __obj.updateDynamic("_question")(_question.asInstanceOf[js.Any])
     if (answerAttachment != null) __obj.updateDynamic("answerAttachment")(answerAttachment.asInstanceOf[js.Any])
-    if (!js.isUndefined(answerBoolean)) __obj.updateDynamic("answerBoolean")(answerBoolean.asInstanceOf[js.Any])
+    if (!js.isUndefined(answerBoolean)) __obj.updateDynamic("answerBoolean")(answerBoolean.get.asInstanceOf[js.Any])
     if (answerCoding != null) __obj.updateDynamic("answerCoding")(answerCoding.asInstanceOf[js.Any])
     if (answerDate != null) __obj.updateDynamic("answerDate")(answerDate.asInstanceOf[js.Any])
     if (answerDateTime != null) __obj.updateDynamic("answerDateTime")(answerDateTime.asInstanceOf[js.Any])
-    if (answerDecimal != null) __obj.updateDynamic("answerDecimal")(answerDecimal.asInstanceOf[js.Any])
-    if (answerInteger != null) __obj.updateDynamic("answerInteger")(answerInteger.asInstanceOf[js.Any])
+    if (!js.isUndefined(answerDecimal)) __obj.updateDynamic("answerDecimal")(answerDecimal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(answerInteger)) __obj.updateDynamic("answerInteger")(answerInteger.get.asInstanceOf[js.Any])
     if (answerQuantity != null) __obj.updateDynamic("answerQuantity")(answerQuantity.asInstanceOf[js.Any])
     if (answerReference != null) __obj.updateDynamic("answerReference")(answerReference.asInstanceOf[js.Any])
     if (answerString != null) __obj.updateDynamic("answerString")(answerString.asInstanceOf[js.Any])
@@ -167,7 +167,7 @@ object QuestionnaireItemEnableWhen {
     if (answerUri != null) __obj.updateDynamic("answerUri")(answerUri.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasAnswer)) __obj.updateDynamic("hasAnswer")(hasAnswer.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasAnswer)) __obj.updateDynamic("hasAnswer")(hasAnswer.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuestionnaireItemEnableWhen]

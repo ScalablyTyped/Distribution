@@ -1,6 +1,6 @@
 package typings.mocha.commonMod
 
-import typings.mocha.Mocha_.Suite_
+import typings.mocha.Mocha.Suite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ trait CreateOptions extends js.Object {
   /** Filepath where this Suite resides */
   var file: js.UndefOr[String] = js.undefined
   /** Suite function */
-  var fn: js.UndefOr[js.ThisFunction0[/* this */ Suite_, Unit]] = js.undefined
+  var fn: js.UndefOr[js.ThisFunction0[/* this */ Suite, Unit]] = js.undefined
   /** Is suite exclusive? */
   var isOnly: js.UndefOr[Boolean] = js.undefined
   /** Is suite pending? */
@@ -23,15 +23,15 @@ object CreateOptions {
   def apply(
     title: String,
     file: String = null,
-    fn: js.ThisFunction0[/* this */ Suite_, Unit] = null,
+    fn: js.ThisFunction0[/* this */ Suite, Unit] = null,
     isOnly: js.UndefOr[Boolean] = js.undefined,
     pending: js.UndefOr[Boolean] = js.undefined
   ): CreateOptions = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     if (fn != null) __obj.updateDynamic("fn")(fn.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOnly)) __obj.updateDynamic("isOnly")(isOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(pending)) __obj.updateDynamic("pending")(pending.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOnly)) __obj.updateDynamic("isOnly")(isOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pending)) __obj.updateDynamic("pending")(pending.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateOptions]
   }
 }

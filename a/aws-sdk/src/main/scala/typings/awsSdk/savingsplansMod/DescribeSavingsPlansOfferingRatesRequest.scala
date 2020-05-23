@@ -52,7 +52,7 @@ object DescribeSavingsPlansOfferingRatesRequest {
   @scala.inline
   def apply(
     filters: SavingsPlanOfferingRateFiltersList = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[PageSize] = js.undefined,
     nextToken: PaginationToken = null,
     operations: SavingsPlanRateOperationList = null,
     products: SavingsPlanProductTypeList = null,
@@ -64,7 +64,7 @@ object DescribeSavingsPlansOfferingRatesRequest {
   ): DescribeSavingsPlansOfferingRatesRequest = {
     val __obj = js.Dynamic.literal()
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (operations != null) __obj.updateDynamic("operations")(operations.asInstanceOf[js.Any])
     if (products != null) __obj.updateDynamic("products")(products.asInstanceOf[js.Any])

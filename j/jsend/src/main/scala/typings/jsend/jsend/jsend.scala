@@ -1,6 +1,5 @@
 package typings.jsend.jsend
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,8 +14,4 @@ trait jsend extends jsendCore {
   def isValid(json: js.Object): Boolean = js.native
   def middleware(req: js.Any, res: js.Any, next: js.Function): js.Any = js.native
 }
-
-@JSGlobal("jsend.jsend")
-@js.native
-object jsend extends TopLevel[jsendExport]
 

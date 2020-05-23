@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the zoom scale factor changes.
-		 */
+  * Fired when the zoom scale factor changes.
+  */
 trait ScrollViewScaleEvent extends ScrollViewBaseEvent {
   /**
-  			 * New scaling factor as a float.
-  			 */
+    * New scaling factor as a float.
+    */
   var scale: Double
 }
 

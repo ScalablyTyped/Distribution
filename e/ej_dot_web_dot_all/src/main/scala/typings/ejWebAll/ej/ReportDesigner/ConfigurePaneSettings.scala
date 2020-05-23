@@ -20,7 +20,7 @@ object ConfigurePaneSettings {
   def apply(items: ConfigureItems | String = null, showConfigurePane: js.UndefOr[Boolean] = js.undefined): ConfigurePaneSettings = {
     val __obj = js.Dynamic.literal()
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (!js.isUndefined(showConfigurePane)) __obj.updateDynamic("showConfigurePane")(showConfigurePane.asInstanceOf[js.Any])
+    if (!js.isUndefined(showConfigurePane)) __obj.updateDynamic("showConfigurePane")(showConfigurePane.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurePaneSettings]
   }
 }

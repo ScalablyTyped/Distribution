@@ -7,9 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides functionality for reading batches of conversations from the ChatMessageStore . */
-@JSGlobal("Windows.ApplicationModel.Chat.ChatConversationReader")
 @js.native
-abstract class ChatConversationReader () extends js.Object {
+trait ChatConversationReader extends js.Object {
   /**
     * Asynchronously reads batches of conversations from the ChatMessageStore .
     * @return The list of conversations.

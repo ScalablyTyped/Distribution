@@ -1,6 +1,6 @@
 package typings.webPush.mod
 
-import typings.webPush.AnonPrivateKey
+import typings.webPush.anon.PrivateKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,21 +14,21 @@ trait RequestOptions extends js.Object {
    // the type of push encoding to use (e.g. 'aesgcm', by default, or 'aes128gcm').
   var proxy: js.UndefOr[String] = js.undefined
    // can be a GCM API key to be used for this request and this request only. This overrides any API key set via setGCMAPIKey().
-  var vapidDetails: js.UndefOr[AnonPrivateKey] = js.undefined
+  var vapidDetails: js.UndefOr[PrivateKey] = js.undefined
 }
 
 object RequestOptions {
   @scala.inline
   def apply(
-    TTL: Int | Double = null,
+    TTL: js.UndefOr[Double] = js.undefined,
     contentEncoding: ContentEncoding = null,
     gcmAPIKey: String = null,
     headers: Headers = null,
     proxy: String = null,
-    vapidDetails: AnonPrivateKey = null
+    vapidDetails: PrivateKey = null
   ): RequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (TTL != null) __obj.updateDynamic("TTL")(TTL.asInstanceOf[js.Any])
+    if (!js.isUndefined(TTL)) __obj.updateDynamic("TTL")(TTL.get.asInstanceOf[js.Any])
     if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding.asInstanceOf[js.Any])
     if (gcmAPIKey != null) __obj.updateDynamic("gcmAPIKey")(gcmAPIKey.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])

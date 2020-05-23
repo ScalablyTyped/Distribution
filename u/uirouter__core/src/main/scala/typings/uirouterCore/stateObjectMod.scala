@@ -1,6 +1,10 @@
 package typings.uirouterCore
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.uirouterCore.anon.Inherit
+import typings.uirouterCore.anon.InheritBoolean
+import typings.uirouterCore.anon.NameGlob
+import typings.uirouterCore.anon.State
 import typings.uirouterCore.paramMod.Param
 import typings.uirouterCore.resolvableMod.Resolvable
 import typings.uirouterCore.stateInterfaceMod.LazyLoadResult
@@ -25,7 +29,7 @@ object stateObjectMod extends js.Object {
   class StateObject () extends _StateOrName {
     def this(config: StateDeclaration) = this()
     /** @hidden */
-    var __stateObjectCache: AnonNameGlob = js.native
+    var __stateObjectCache: NameGlob = js.native
     /** Prototypally inherits from [[StateDeclaration.abstract]] */
     var `abstract`: Boolean = js.native
     /**
@@ -60,7 +64,7 @@ object stateObjectMod extends js.Object {
     /** The parent [[StateObject]] objects from this state up to the root */
     var path: js.Array[StateObject] = js.native
     /** Prototypally inherits from [[StateDeclaration.redirectTo]] */
-    var redirectTo: String | (js.Function1[/* $transition$ */ Transition, TargetState]) | AnonState = js.native
+    var redirectTo: String | (js.Function1[/* $transition$ */ Transition, TargetState]) | State = js.native
     /** A list of [[Resolvable]] objects.  The internal representation of [[resolve]]. */
     var resolvables: js.Array[Resolvable] = js.native
     /** Prototypally inherits from [[StateDeclaration.resolve]] */
@@ -115,7 +119,7 @@ object stateObjectMod extends js.Object {
       * @param opts options
       */
     def parameter(id: String): Param = js.native
-    def parameter(id: String, opts: AnonInheritBoolean): Param = js.native
+    def parameter(id: String, opts: InheritBoolean): Param = js.native
     /**
       * Gets the state's `Param` objects
       *
@@ -126,7 +130,7 @@ object stateObjectMod extends js.Object {
       * @param opts options
       */
     def parameters(): js.Array[Param] = js.native
-    def parameters(opts: AnonInherit): js.Array[Param] = js.native
+    def parameters(opts: Inherit): js.Array[Param] = js.native
     /**
       * Returns the root node of this state's tree.
       *
@@ -151,6 +155,8 @@ object stateObjectMod extends js.Object {
     def isState(obj: js.Any): /* is @uirouter/core.@uirouter/core/lib/state/stateObject.StateObject */ Boolean = js.native
     /** Predicate which returns true if the object is an class with @State() decorator */
     def isStateClass(stateDecl: _StateDeclaration): Boolean = js.native
+    /** Predicate which returns true if the object is a [[StateDeclaration]] object */
+    def isStateDeclaration(obj: js.Any): /* is @uirouter/core.@uirouter/core/lib/state/interface.StateDeclaration */ Boolean = js.native
   }
   
 }

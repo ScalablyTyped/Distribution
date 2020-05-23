@@ -58,15 +58,15 @@ object PrintViewModelProperties {
     allowedLayouts: String | js.Array[String] = null,
     printServiceUrl: String = null,
     scaleEnabled: js.UndefOr[Boolean] = js.undefined,
-    updateDelay: Int | Double = null,
+    updateDelay: js.UndefOr[Double] = js.undefined,
     view: MapViewProperties = null
   ): PrintViewModelProperties = {
     val __obj = js.Dynamic.literal()
     if (allowedFormats != null) __obj.updateDynamic("allowedFormats")(allowedFormats.asInstanceOf[js.Any])
     if (allowedLayouts != null) __obj.updateDynamic("allowedLayouts")(allowedLayouts.asInstanceOf[js.Any])
     if (printServiceUrl != null) __obj.updateDynamic("printServiceUrl")(printServiceUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(scaleEnabled)) __obj.updateDynamic("scaleEnabled")(scaleEnabled.asInstanceOf[js.Any])
-    if (updateDelay != null) __obj.updateDynamic("updateDelay")(updateDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleEnabled)) __obj.updateDynamic("scaleEnabled")(scaleEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateDelay)) __obj.updateDynamic("updateDelay")(updateDelay.get.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintViewModelProperties]
   }

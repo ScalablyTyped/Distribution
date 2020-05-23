@@ -39,27 +39,27 @@ object CacheGroupsOptions {
   def apply(
     chunks: initial | async | all | (js.Function1[/* chunk */ Chunk, Boolean]) = null,
     enforce: js.UndefOr[Boolean] = js.undefined,
-    maxAsyncRequests: Int | Double = null,
-    maxInitialRequests: Int | Double = null,
-    maxSize: Int | Double = null,
-    minChunks: Int | Double = null,
-    minSize: Int | Double = null,
+    maxAsyncRequests: js.UndefOr[Double] = js.undefined,
+    maxInitialRequests: js.UndefOr[Double] = js.undefined,
+    maxSize: js.UndefOr[Double] = js.undefined,
+    minChunks: js.UndefOr[Double] = js.undefined,
+    minSize: js.UndefOr[Double] = js.undefined,
     name: Boolean | String | (js.Function1[/* repeated */ js.Any, _]) = null,
-    priority: Int | Double = null,
+    priority: js.UndefOr[Double] = js.undefined,
     reuseExistingChunk: js.UndefOr[Boolean] = js.undefined,
     test: (js.Function1[/* repeated */ js.Any, Boolean]) | String | RegExp = null
   ): CacheGroupsOptions = {
     val __obj = js.Dynamic.literal()
     if (chunks != null) __obj.updateDynamic("chunks")(chunks.asInstanceOf[js.Any])
-    if (!js.isUndefined(enforce)) __obj.updateDynamic("enforce")(enforce.asInstanceOf[js.Any])
-    if (maxAsyncRequests != null) __obj.updateDynamic("maxAsyncRequests")(maxAsyncRequests.asInstanceOf[js.Any])
-    if (maxInitialRequests != null) __obj.updateDynamic("maxInitialRequests")(maxInitialRequests.asInstanceOf[js.Any])
-    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
-    if (minChunks != null) __obj.updateDynamic("minChunks")(minChunks.asInstanceOf[js.Any])
-    if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(enforce)) __obj.updateDynamic("enforce")(enforce.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAsyncRequests)) __obj.updateDynamic("maxAsyncRequests")(maxAsyncRequests.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxInitialRequests)) __obj.updateDynamic("maxInitialRequests")(maxInitialRequests.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSize)) __obj.updateDynamic("maxSize")(maxSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minChunks)) __obj.updateDynamic("minChunks")(minChunks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSize)) __obj.updateDynamic("minSize")(minSize.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (!js.isUndefined(reuseExistingChunk)) __obj.updateDynamic("reuseExistingChunk")(reuseExistingChunk.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reuseExistingChunk)) __obj.updateDynamic("reuseExistingChunk")(reuseExistingChunk.get.asInstanceOf[js.Any])
     if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheGroupsOptions]
   }

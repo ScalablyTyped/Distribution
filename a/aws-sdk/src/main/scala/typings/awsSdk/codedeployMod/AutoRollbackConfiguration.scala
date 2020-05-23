@@ -18,9 +18,9 @@ trait AutoRollbackConfiguration extends js.Object {
 
 object AutoRollbackConfiguration {
   @scala.inline
-  def apply(enabled: js.UndefOr[scala.Boolean] = js.undefined, events: AutoRollbackEventsList = null): AutoRollbackConfiguration = {
+  def apply(enabled: js.UndefOr[Boolean] = js.undefined, events: AutoRollbackEventsList = null): AutoRollbackConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoRollbackConfiguration]
   }

@@ -16,15 +16,15 @@ object NaverImageMapTypeOptions {
   @scala.inline
   def apply(
     hd: String = null,
-    maxZoom: Int | Double = null,
-    minZoom: Int | Double = null,
+    maxZoom: js.UndefOr[Double] = js.undefined,
+    minZoom: js.UndefOr[Double] = js.undefined,
     projection: Projection = null,
     tileSize: Size = null
   ): NaverImageMapTypeOptions = {
     val __obj = js.Dynamic.literal()
     if (hd != null) __obj.updateDynamic("hd")(hd.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[NaverImageMapTypeOptions]

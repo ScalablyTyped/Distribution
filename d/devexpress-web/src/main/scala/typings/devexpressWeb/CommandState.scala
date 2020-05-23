@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * Defines the state of a command.
   */
-@JSGlobal("CommandState")
-@js.native
-class CommandState[T] () extends SimpleCommandState {
+trait CommandState[T] extends SimpleCommandState {
   /**
     * Specifies a command value.
     */
-  var value: T = js.native
+  var value: T
+}
+
+object CommandState {
+  @scala.inline
+  def apply[T](enabled: Boolean, value: T, visible: Boolean): CommandState[T] = {
+    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CommandState[T]]
+  }
 }
 

@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.Gantt
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object TaskType extends js.Object {
   ///Work value of a task remains constant while editing duration and resource unit values.
   @js.native
   sealed trait FixedWork extends TaskType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TaskType with Double] = js.native
-  /* 2 */ @js.native
-  object FixedDuration extends TopLevel[FixedDuration with Double]
-  
-  /* 0 */ @js.native
-  object FixedUnit extends TopLevel[FixedUnit with Double]
-  
-  /* 1 */ @js.native
-  object FixedWork extends TopLevel[FixedWork with Double]
   
 }
 

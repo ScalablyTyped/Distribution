@@ -20,7 +20,7 @@ object IPositionStats {
     isWindow: js.UndefOr[Boolean] = js.undefined
   ): IPositionStats = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], scrolled = scrolled.asInstanceOf[js.Any], totalToScroll = totalToScroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(isWindow)) __obj.updateDynamic("isWindow")(isWindow.asInstanceOf[js.Any])
+    if (!js.isUndefined(isWindow)) __obj.updateDynamic("isWindow")(isWindow.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPositionStats]
   }
 }

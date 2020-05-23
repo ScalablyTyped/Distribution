@@ -1,9 +1,9 @@
 package typings.echarts.echarts.EChartOption.SeriesLine
 
-import typings.echarts.AnonBarBorderWidth
-import typings.echarts.AnonDistance
-import typings.echarts.AnonExtraCssText
-import typings.echarts.AnonItemStyleAnonBarBorderWidth
+import typings.echarts.anon.BarBorderWidth
+import typings.echarts.anon.Distance
+import typings.echarts.anon.ExtraCssText
+import typings.echarts.anon.ItemStyleBarBorderWidth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,21 +12,21 @@ trait DataObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-line.data.emphasis
     */
-  var emphasis: js.UndefOr[AnonItemStyleAnonBarBorderWidth] = js.undefined
+  var emphasis: js.UndefOr[ItemStyleBarBorderWidth] = js.undefined
   /**
     * The style of the symbol of single data point.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-line.data.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBarBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[BarBorderWidth] = js.undefined
   /**
     * The style of the text of single data point.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-line.data.label
     */
-  var label: js.UndefOr[AnonDistance] = js.undefined
+  var label: js.UndefOr[Distance] = js.undefined
   /**
     * The name of data item.
     *
@@ -134,7 +134,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-line.data.tooltip
     */
-  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
   /**
     * The value of a single data item.
     *
@@ -147,17 +147,17 @@ trait DataObject extends js.Object {
 object DataObject {
   @scala.inline
   def apply(
-    emphasis: AnonItemStyleAnonBarBorderWidth = null,
-    itemStyle: AnonBarBorderWidth = null,
-    label: AnonDistance = null,
+    emphasis: ItemStyleBarBorderWidth = null,
+    itemStyle: BarBorderWidth = null,
+    label: Distance = null,
     name: String = null,
     symbol: String = null,
     symbolKeepAspect: js.UndefOr[Boolean] = js.undefined,
     symbolOffset: js.Array[_] = null,
-    symbolRotate: Int | Double = null,
+    symbolRotate: js.UndefOr[Double] = js.undefined,
     symbolSize: js.Array[_] | Double = null,
-    tooltip: AnonExtraCssText = null,
-    value: Int | Double = null
+    tooltip: ExtraCssText = null,
+    value: js.UndefOr[Double] = js.undefined
   ): DataObject = {
     val __obj = js.Dynamic.literal()
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
@@ -165,12 +165,12 @@ object DataObject {
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbolKeepAspect)) __obj.updateDynamic("symbolKeepAspect")(symbolKeepAspect.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolKeepAspect)) __obj.updateDynamic("symbolKeepAspect")(symbolKeepAspect.get.asInstanceOf[js.Any])
     if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset.asInstanceOf[js.Any])
-    if (symbolRotate != null) __obj.updateDynamic("symbolRotate")(symbolRotate.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolRotate)) __obj.updateDynamic("symbolRotate")(symbolRotate.get.asInstanceOf[js.Any])
     if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataObject]
   }
 }

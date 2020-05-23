@@ -1,6 +1,6 @@
 package typings.sipJs.mod
 
-import typings.sipJs.AnonACCEPTEDBODYTYPES
+import typings.sipJs.anon.ACCEPTEDBODYTYPES
 import typings.sipJs.uAMod.UA.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +17,7 @@ class UA ()
 @JSImport("sip.js", "UA")
 @js.native
 object UA extends js.Object {
-  val C: AnonACCEPTEDBODYTYPES = js.native
+  val C: ACCEPTEDBODYTYPES = js.native
   @js.native
   object DtmfType extends js.Object {
     /* "info" */ val INFO: typings.sipJs.uAMod.UA.DtmfType.INFO with String = js.native

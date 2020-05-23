@@ -14,7 +14,7 @@ object parseUrl extends js.Object {
     * @param url
     *         The url to parse
     *
-    * @return	An object of url details
+    * @return    An object of url details
     */
   def apply(url: String): URLObject = js.native
 }

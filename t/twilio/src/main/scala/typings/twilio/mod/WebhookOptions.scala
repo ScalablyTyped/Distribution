@@ -21,9 +21,9 @@ object WebhookOptions {
   ): WebhookOptions = {
     val __obj = js.Dynamic.literal()
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeHelpers)) __obj.updateDynamic("includeHelpers")(includeHelpers.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeHelpers)) __obj.updateDynamic("includeHelpers")(includeHelpers.get.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebhookOptions]
   }
 }

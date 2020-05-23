@@ -1,0 +1,23 @@
+package typings.mz.mod.crypto
+
+import typings.mz.mzStrings.der
+import typings.mz.mzStrings.dsa
+import typings.mz.mzStrings.ec
+import typings.mz.mzStrings.pem
+import typings.mz.mzStrings.rsa
+import typings.node.cryptoMod.DSAKeyPairOptions
+import typings.node.cryptoMod.ECKeyPairOptions
+import typings.node.cryptoMod.KeyPairSyncResult
+import typings.node.cryptoMod.RSAKeyPairOptions
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("mz", "crypto.generateKeyPairSync")
+@js.native
+object generateKeyPairSync extends js.Object {
+  def apply(`type`: dsa, options: DSAKeyPairOptions[der | pem, der | pem]): KeyPairSyncResult[String, String] = js.native
+  def apply(`type`: ec, options: ECKeyPairOptions[der | pem, der | pem]): KeyPairSyncResult[String, String] = js.native
+  def apply(`type`: rsa, options: RSAKeyPairOptions[der | pem, der | pem]): KeyPairSyncResult[String, String] = js.native
+}
+

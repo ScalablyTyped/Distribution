@@ -20,7 +20,7 @@ package object mod {
   type PageParam = scala.Double
   type PostsOrPages = typings.tryghostContentApi.mod.BrowseResults[typings.tryghostContentApi.mod.PostOrPage]
   type ReadFunction[T] = js.Function3[
-    /* data */ typings.tryghostContentApi.AnonId | typings.tryghostContentApi.AnonSlug, 
+    /* data */ typings.tryghostContentApi.anon.Id | typings.tryghostContentApi.anon.Slug, 
     /* options */ js.UndefOr[typings.tryghostContentApi.mod.Params], 
     /* memberToken */ js.UndefOr[typings.tryghostContentApi.mod.Nullable[java.lang.String]], 
     js.Promise[T]

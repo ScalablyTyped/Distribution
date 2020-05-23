@@ -28,7 +28,7 @@ object ToolbarSettings {
   ): ToolbarSettings = {
     val __obj = js.Dynamic.literal()
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (!js.isUndefined(showToolbar)) __obj.updateDynamic("showToolbar")(showToolbar.asInstanceOf[js.Any])
+    if (!js.isUndefined(showToolbar)) __obj.updateDynamic("showToolbar")(showToolbar.get.asInstanceOf[js.Any])
     if (templateId != null) __obj.updateDynamic("templateId")(templateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolbarSettings]
   }

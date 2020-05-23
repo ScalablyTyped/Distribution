@@ -1,6 +1,6 @@
 package typings.cathoQuantum.radioGroupMod
 
-import typings.cathoQuantum.AnonColorsComponents
+import typings.cathoQuantum.anon.ColorsComponents
 import typings.cathoQuantum.cathoQuantumStrings.error
 import typings.cathoQuantum.cathoQuantumStrings.large
 import typings.cathoQuantum.cathoQuantumStrings.medium
@@ -30,7 +30,7 @@ trait RadioButtonProps extends js.Object {
   var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
   var size: js.UndefOr[xsmall | small | medium | large | xlarge] = js.undefined
   var skin: js.UndefOr[neutral | primary | success | warning | error] = js.undefined
-  var theme: js.UndefOr[AnonColorsComponents] = js.undefined
+  var theme: js.UndefOr[ColorsComponents] = js.undefined
   var value: String
 }
 
@@ -49,16 +49,16 @@ object RadioButtonProps {
     onChange: ChangeEvent[HTMLInputElement] => Unit = null,
     size: xsmall | small | medium | large | xlarge = null,
     skin: neutral | primary | success | warning | error = null,
-    theme: AnonColorsComponents = null
+    theme: ColorsComponents = null
   ): RadioButtonProps = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

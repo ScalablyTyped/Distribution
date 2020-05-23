@@ -38,14 +38,14 @@ object ListEntitiesForPolicyRequest {
     PolicyArn: arnType,
     EntityFilter: EntityType = null,
     Marker: markerType = null,
-    MaxItems: Int | Double = null,
+    MaxItems: js.UndefOr[maxItemsType] = js.undefined,
     PathPrefix: pathType = null,
     PolicyUsageFilter: PolicyUsageType = null
   ): ListEntitiesForPolicyRequest = {
     val __obj = js.Dynamic.literal(PolicyArn = PolicyArn.asInstanceOf[js.Any])
     if (EntityFilter != null) __obj.updateDynamic("EntityFilter")(EntityFilter.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems.get.asInstanceOf[js.Any])
     if (PathPrefix != null) __obj.updateDynamic("PathPrefix")(PathPrefix.asInstanceOf[js.Any])
     if (PolicyUsageFilter != null) __obj.updateDynamic("PolicyUsageFilter")(PolicyUsageFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListEntitiesForPolicyRequest]

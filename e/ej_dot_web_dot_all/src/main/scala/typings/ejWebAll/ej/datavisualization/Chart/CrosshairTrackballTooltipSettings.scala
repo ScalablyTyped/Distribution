@@ -36,17 +36,17 @@ object CrosshairTrackballTooltipSettings {
     border: CrosshairTrackballTooltipSettingsBorder = null,
     fill: String = null,
     mode: CrosshairMode | String = null,
-    opacity: Int | Double = null,
-    rx: Int | Double = null,
-    ry: Int | Double = null
+    opacity: js.UndefOr[Double] = js.undefined,
+    rx: js.UndefOr[Double] = js.undefined,
+    ry: js.UndefOr[Double] = js.undefined
   ): CrosshairTrackballTooltipSettings = {
     val __obj = js.Dynamic.literal()
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (rx != null) __obj.updateDynamic("rx")(rx.asInstanceOf[js.Any])
-    if (ry != null) __obj.updateDynamic("ry")(ry.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rx)) __obj.updateDynamic("rx")(rx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ry)) __obj.updateDynamic("ry")(ry.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrosshairTrackballTooltipSettings]
   }
 }

@@ -39,14 +39,14 @@ object ViewpointProperties {
   @scala.inline
   def apply(
     camera: CameraProperties = null,
-    rotation: Int | Double = null,
-    scale: Int | Double = null,
+    rotation: js.UndefOr[Double] = js.undefined,
+    scale: js.UndefOr[Double] = js.undefined,
     targetGeometry: GeometryProperties = null
   ): ViewpointProperties = {
     val __obj = js.Dynamic.literal()
     if (camera != null) __obj.updateDynamic("camera")(camera.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     if (targetGeometry != null) __obj.updateDynamic("targetGeometry")(targetGeometry.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewpointProperties]
   }

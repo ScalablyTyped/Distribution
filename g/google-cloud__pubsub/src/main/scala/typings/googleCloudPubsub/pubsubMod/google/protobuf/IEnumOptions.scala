@@ -17,14 +17,14 @@ trait IEnumOptions extends js.Object {
 object IEnumOptions {
   @scala.inline
   def apply(
-    allowAlias: js.UndefOr[Boolean] = js.undefined,
-    deprecated: js.UndefOr[Boolean] = js.undefined,
-    uninterpretedOption: js.Array[IUninterpretedOption] = null
+    allowAlias: js.UndefOr[Null | Boolean] = js.undefined,
+    deprecated: js.UndefOr[Null | Boolean] = js.undefined,
+    uninterpretedOption: js.UndefOr[Null | js.Array[IUninterpretedOption]] = js.undefined
   ): IEnumOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowAlias)) __obj.updateDynamic("allowAlias")(allowAlias.asInstanceOf[js.Any])
     if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
-    if (uninterpretedOption != null) __obj.updateDynamic("uninterpretedOption")(uninterpretedOption.asInstanceOf[js.Any])
+    if (!js.isUndefined(uninterpretedOption)) __obj.updateDynamic("uninterpretedOption")(uninterpretedOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEnumOptions]
   }
 }

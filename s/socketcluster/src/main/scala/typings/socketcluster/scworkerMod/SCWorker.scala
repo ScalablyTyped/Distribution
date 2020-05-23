@@ -4,7 +4,7 @@ import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.Server
 import typings.scAuth.mod.SCAuthEngine
 import typings.scBrokerCluster.mod.SCExchange
-import typings.socketcluster.AnonClientCount
+import typings.socketcluster.anon.ClientCount
 import typings.socketcluster.socketclusterStrings.connection
 import typings.socketcluster.socketclusterStrings.error
 import typings.socketcluster.socketclusterStrings.exit
@@ -39,7 +39,7 @@ trait SCWorker extends EventEmitter {
   def getHTTPServer(): Server | typings.node.httpsMod.Server = js.native
   def getSCServer(): js.Any = js.native
   def getSocketPath(): String = js.native
-  def getStatus(): AnonClientCount = js.native
+  def getStatus(): ClientCount = js.native
   @JSName("on")
   def on_connection(
     event: connection,

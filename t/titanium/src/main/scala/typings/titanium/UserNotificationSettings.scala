@@ -13,12 +13,12 @@ import scala.scalajs.js.annotation._
   */
 trait UserNotificationSettings extends js.Object {
   /**
-  	 * Set of categories of user notification actions required by the applicaiton to use.
-  	 */
+    * Set of categories of user notification actions required by the applicaiton to use.
+    */
   var categories: js.UndefOr[js.Array[UserNotificationCategory]] = js.undefined
   /**
-  	 * Notification types to use.
-  	 */
+    * Notification types to use.
+    */
   var types: js.UndefOr[js.Array[Double]] = js.undefined
 }
 

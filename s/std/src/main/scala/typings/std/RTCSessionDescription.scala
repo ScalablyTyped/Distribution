@@ -1,7 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,9 +11,12 @@ trait RTCSessionDescription extends js.Object {
   def toJSON(): js.Any
 }
 
-@JSGlobal("RTCSessionDescription")
-@js.native
-object RTCSessionDescription
-  extends Instantiable0[RTCSessionDescription]
-     with Instantiable1[/* descriptionInitDict */ RTCSessionDescriptionInit, RTCSessionDescription]
+object RTCSessionDescription {
+  @scala.inline
+  def apply(sdp: java.lang.String, toJSON: () => js.Any, `type`: RTCSdpType): RTCSessionDescription = {
+    val __obj = js.Dynamic.literal(sdp = sdp.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RTCSessionDescription]
+  }
+}
 

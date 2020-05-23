@@ -29,14 +29,14 @@ object DBClusterMember {
   def apply(
     DBClusterParameterGroupStatus: String = null,
     DBInstanceIdentifier: String = null,
-    IsClusterWriter: js.UndefOr[scala.Boolean] = js.undefined,
-    PromotionTier: Int | scala.Double = null
+    IsClusterWriter: js.UndefOr[Boolean] = js.undefined,
+    PromotionTier: js.UndefOr[IntegerOptional] = js.undefined
   ): DBClusterMember = {
     val __obj = js.Dynamic.literal()
     if (DBClusterParameterGroupStatus != null) __obj.updateDynamic("DBClusterParameterGroupStatus")(DBClusterParameterGroupStatus.asInstanceOf[js.Any])
     if (DBInstanceIdentifier != null) __obj.updateDynamic("DBInstanceIdentifier")(DBInstanceIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsClusterWriter)) __obj.updateDynamic("IsClusterWriter")(IsClusterWriter.asInstanceOf[js.Any])
-    if (PromotionTier != null) __obj.updateDynamic("PromotionTier")(PromotionTier.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsClusterWriter)) __obj.updateDynamic("IsClusterWriter")(IsClusterWriter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(PromotionTier)) __obj.updateDynamic("PromotionTier")(PromotionTier.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBClusterMember]
   }
 }

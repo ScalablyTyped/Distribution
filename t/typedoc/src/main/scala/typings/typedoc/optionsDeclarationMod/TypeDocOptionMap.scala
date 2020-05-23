@@ -1,6 +1,6 @@
 package typings.typedoc.optionsDeclarationMod
 
-import typings.typedoc.AnonFile
+import typings.typedoc.anon.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +32,7 @@ trait TypeDocOptionMap extends js.Object {
   var listInvalidSymbolLinks: Boolean
   var logger: js.Any
   var media: String
-  var mode: AnonFile
+  var mode: File
   var name: String
   var options: String
   var out: String
@@ -73,7 +73,7 @@ object TypeDocOptionMap {
     listInvalidSymbolLinks: Boolean,
     logger: js.Any,
     media: String,
-    mode: AnonFile,
+    mode: File,
     name: String,
     options: String,
     out: String,

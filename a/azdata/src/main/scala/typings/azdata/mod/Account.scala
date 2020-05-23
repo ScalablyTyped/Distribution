@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation._
 
 trait Account extends js.Object {
   /**
-  		 * Display information for the account
-  		 */
+    * Display information for the account
+    */
   var displayInfo: AccountDisplayInfo
   /**
-  		 * Indicates if the account needs refreshing
-  		 */
+    * Indicates if the account needs refreshing
+    */
   var isStale: Boolean
   /**
-  		 * The key that identifies the account
-  		 */
+    * The key that identifies the account
+    */
   var key: AccountKey
   /**
-  		 * Custom properties stored with the account
-  		 */
+    * Custom properties stored with the account
+    */
   var properties: js.Any
 }
 

@@ -1,6 +1,6 @@
 package typings.devextreme.mod.DevExpress.exporter
 
-import typings.devextreme.AnonNameValue
+import typings.devextreme.anon.NameValue
 import typings.devextreme.mod.DevExpress.ui.dxDataGridColumn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ trait ExcelDataGridCell extends js.Object {
   /** @name ExcelDataGridCell.groupIndex */
   var groupIndex: js.UndefOr[Double] = js.undefined
   /** @name ExcelDataGridCell.groupSummaryItems */
-  var groupSummaryItems: js.UndefOr[js.Array[AnonNameValue]] = js.undefined
+  var groupSummaryItems: js.UndefOr[js.Array[NameValue]] = js.undefined
   /** @name ExcelDataGridCell.rowType */
   var rowType: js.UndefOr[String] = js.undefined
   /** @name ExcelDataGridCell.totalSummaryItemName */
@@ -28,8 +28,8 @@ object ExcelDataGridCell {
   def apply(
     column: dxDataGridColumn = null,
     data: js.Any = null,
-    groupIndex: Int | Double = null,
-    groupSummaryItems: js.Array[AnonNameValue] = null,
+    groupIndex: js.UndefOr[Double] = js.undefined,
+    groupSummaryItems: js.Array[NameValue] = null,
     rowType: String = null,
     totalSummaryItemName: String = null,
     value: js.Any = null
@@ -37,7 +37,7 @@ object ExcelDataGridCell {
     val __obj = js.Dynamic.literal()
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (groupIndex != null) __obj.updateDynamic("groupIndex")(groupIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupIndex)) __obj.updateDynamic("groupIndex")(groupIndex.get.asInstanceOf[js.Any])
     if (groupSummaryItems != null) __obj.updateDynamic("groupSummaryItems")(groupSummaryItems.asInstanceOf[js.Any])
     if (rowType != null) __obj.updateDynamic("rowType")(rowType.asInstanceOf[js.Any])
     if (totalSummaryItemName != null) __obj.updateDynamic("totalSummaryItemName")(totalSummaryItemName.asInstanceOf[js.Any])

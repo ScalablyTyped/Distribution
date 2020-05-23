@@ -4,15 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.PostProcessRenderPipeline")
 @js.native
-class PostProcessRenderPipeline protected () extends js.Object {
-  /**
-    * Initializes a PostProcessRenderPipeline
-    * @param engine engine to add the pipeline to
-    * @param name name of the pipeline
-    */
-  def this(engine: Engine, name: String) = this()
+trait PostProcessRenderPipeline extends js.Object {
   /**
     * @hidden
     */

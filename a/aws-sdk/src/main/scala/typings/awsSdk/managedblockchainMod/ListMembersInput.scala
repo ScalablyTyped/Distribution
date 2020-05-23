@@ -36,15 +36,15 @@ object ListMembersInput {
   @scala.inline
   def apply(
     NetworkId: ResourceIdString,
-    IsOwned: js.UndefOr[Boolean] = js.undefined,
-    MaxResults: Int | Double = null,
+    IsOwned: js.UndefOr[IsOwned] = js.undefined,
+    MaxResults: js.UndefOr[MemberListMaxResults] = js.undefined,
     Name: String = null,
     NextToken: PaginationToken = null,
     Status: MemberStatus = null
   ): ListMembersInput = {
     val __obj = js.Dynamic.literal(NetworkId = NetworkId.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsOwned)) __obj.updateDynamic("IsOwned")(IsOwned.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsOwned)) __obj.updateDynamic("IsOwned")(IsOwned.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])

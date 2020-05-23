@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the client-side equivalent of the ASPxScheduler control.
   */
-@JSGlobal("ASPxClientScheduler")
 @js.native
-class ASPxClientScheduler () extends ASPxClientControl {
+trait ASPxClientScheduler extends ASPxClientControl {
   /**
     * Client-side event. Occurs after the active view of the ASPxScheduler has been changed.
     */
@@ -373,16 +372,5 @@ class ASPxClientScheduler () extends ASPxClientControl {
     * @param apt An ASPxClientAppointment object representing the client-side appointment.
     */
   def UpdateAppointment(apt: ASPxClientAppointment): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("ASPxClientScheduler")
-@js.native
-object ASPxClientScheduler extends js.Object {
-  /**
-    * Converts the specified object to the ASPxClientScheduler type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): ASPxClientScheduler = js.native
 }
 

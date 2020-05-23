@@ -15,15 +15,15 @@ object CookieOptions {
   @scala.inline
   def apply(
     domain: String = null,
-    maxage: Int | Double = null,
+    maxage: js.UndefOr[Double] = js.undefined,
     path: String = null,
     secure: js.UndefOr[Boolean] = js.undefined
   ): CookieOptions = {
     val __obj = js.Dynamic.literal()
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (maxage != null) __obj.updateDynamic("maxage")(maxage.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxage)) __obj.updateDynamic("maxage")(maxage.get.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CookieOptions]
   }
 }

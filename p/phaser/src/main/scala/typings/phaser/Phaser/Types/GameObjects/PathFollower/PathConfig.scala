@@ -41,22 +41,22 @@ trait PathConfig extends js.Object {
 object PathConfig {
   @scala.inline
   def apply(
-    duration: Int | Double = null,
-    from: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
+    from: js.UndefOr[Double] = js.undefined,
     positionOnPath: js.UndefOr[Boolean] = js.undefined,
     rotateToPath: js.UndefOr[Boolean] = js.undefined,
-    rotationOffset: Int | Double = null,
-    startAt: Int | Double = null,
-    to: Int | Double = null
+    rotationOffset: js.UndefOr[Double] = js.undefined,
+    startAt: js.UndefOr[Double] = js.undefined,
+    to: js.UndefOr[Double] = js.undefined
   ): PathConfig = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (!js.isUndefined(positionOnPath)) __obj.updateDynamic("positionOnPath")(positionOnPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotateToPath)) __obj.updateDynamic("rotateToPath")(rotateToPath.asInstanceOf[js.Any])
-    if (rotationOffset != null) __obj.updateDynamic("rotationOffset")(rotationOffset.asInstanceOf[js.Any])
-    if (startAt != null) __obj.updateDynamic("startAt")(startAt.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(positionOnPath)) __obj.updateDynamic("positionOnPath")(positionOnPath.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotateToPath)) __obj.updateDynamic("rotateToPath")(rotateToPath.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotationOffset)) __obj.updateDynamic("rotationOffset")(rotationOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startAt)) __obj.updateDynamic("startAt")(startAt.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(to)) __obj.updateDynamic("to")(to.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathConfig]
   }
 }

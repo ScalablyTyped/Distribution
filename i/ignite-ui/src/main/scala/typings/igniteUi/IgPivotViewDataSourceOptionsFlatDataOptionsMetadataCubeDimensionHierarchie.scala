@@ -7,40 +7,37 @@ import scala.scalajs.js.annotation._
 
 trait IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie
   extends /**
-	 * Option for IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   /**
-  	 * A caption for the hierarchy.
-  	 */
+    * A caption for the hierarchy.
+    */
   var caption: js.UndefOr[String] = js.undefined
   /**
-  	 * The path to be used when displaying the hierarchy in the user interface.
-  	 * Nested folders are indicated by a backslash (\).
-  	 * The folder hierarchy will appear under parent dimension node.
-  	 */
+    * The path to be used when displaying the hierarchy in the user interface.
+    * Nested folders are indicated by a backslash (\).
+    * The folder hierarchy will appear under parent dimension node.
+    */
   var displayFolder: js.UndefOr[String] = js.undefined
   /**
-  	 * An array of level metadata objects.
-  	 */
+    * An array of level metadata objects.
+    */
   var levels: js.UndefOr[
     js.Array[IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel]
   ] = js.undefined
   /**
-  	 * Optional="false" A name for the hierarchy.
-  	 * The unique name of the hierarchy is formed using the following pattern:
-  	 * [<parentDimension.name>].[<hierarchyMetadata.name>]
-  	 */
+    * Optional="false" A name for the hierarchy.
+    * The unique name of the hierarchy is formed using the following pattern:
+    * [<parentDimension.name>].[<hierarchyMetadata.name>]
+    */
   var name: js.UndefOr[String] = js.undefined
 }
 
 object IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     caption: String = null,
     displayFolder: String = null,
     levels: js.Array[IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel] = null,

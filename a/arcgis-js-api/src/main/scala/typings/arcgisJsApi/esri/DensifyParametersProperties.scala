@@ -43,13 +43,13 @@ object DensifyParametersProperties {
     geodesic: js.UndefOr[Boolean] = js.undefined,
     geometries: js.Array[GeometryProperties] = null,
     lengthUnit: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards = null,
-    maxSegmentLength: Int | Double = null
+    maxSegmentLength: js.UndefOr[Double] = js.undefined
   ): DensifyParametersProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic.asInstanceOf[js.Any])
+    if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic.get.asInstanceOf[js.Any])
     if (geometries != null) __obj.updateDynamic("geometries")(geometries.asInstanceOf[js.Any])
     if (lengthUnit != null) __obj.updateDynamic("lengthUnit")(lengthUnit.asInstanceOf[js.Any])
-    if (maxSegmentLength != null) __obj.updateDynamic("maxSegmentLength")(maxSegmentLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSegmentLength)) __obj.updateDynamic("maxSegmentLength")(maxSegmentLength.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DensifyParametersProperties]
   }
 }

@@ -1,30 +1,40 @@
 package typings.sipJs
 
 import typings.sipJs.ackMod.IncomingAckRequest
+import typings.sipJs.anon.SessionDescriptionHandlerModifiers
 import typings.sipJs.apiSessionDescriptionHandlerMod.SessionDescriptionHandler
 import typings.sipJs.apiSessionDescriptionHandlerMod.SessionDescriptionHandlerModifier
 import typings.sipJs.apiSessionDescriptionHandlerMod.SessionDescriptionHandlerOptions
 import typings.sipJs.bodyMod.Body
-import typings.sipJs.byeMod.IncomingByeRequest
-import typings.sipJs.byeMod.OutgoingByeRequest
 import typings.sipJs.coreMod.Logger
 import typings.sipJs.coreMod.NameAddrHeader
+import typings.sipJs.coreMod.URI
 import typings.sipJs.emitterMod.Emitter
 import typings.sipJs.inviteMod.AckableIncomingResponseWithSession
 import typings.sipJs.inviteMod.IncomingInviteRequest
 import typings.sipJs.inviteMod.OutgoingInviteRequest
 import typings.sipJs.inviterMod.Inviter
 import typings.sipJs.inviterOptionsMod.InviterOptions
+import typings.sipJs.methodsByeMod.IncomingByeRequest
+import typings.sipJs.methodsByeMod.OutgoingByeRequest
 import typings.sipJs.methodsInfoMod.IncomingInfoRequest
+import typings.sipJs.methodsInfoMod.OutgoingInfoRequest
+import typings.sipJs.methodsMessageMod.IncomingMessageRequest
+import typings.sipJs.methodsMessageMod.OutgoingMessageRequest
+import typings.sipJs.notificationMod.Notification
 import typings.sipJs.notifyMod.IncomingNotifyRequest
 import typings.sipJs.outgoingRequestMod.OutgoingRequestDelegate
 import typings.sipJs.outgoingRequestMod.RequestOptions
 import typings.sipJs.prackMod.IncomingPrackRequest
 import typings.sipJs.referMod.IncomingReferRequest
-import typings.sipJs.referrerMod.Referrer
+import typings.sipJs.referMod.OutgoingReferRequest
+import typings.sipJs.sessionByeOptionsMod.SessionByeOptions
 import typings.sipJs.sessionDelegateMod.SessionDelegate
+import typings.sipJs.sessionInfoOptionsMod.SessionInfoOptions
 import typings.sipJs.sessionInviteOptionsMod.SessionInviteOptions
+import typings.sipJs.sessionMessageOptionsMod.SessionMessageOptions
 import typings.sipJs.sessionOptionsMod.SessionOptions
+import typings.sipJs.sessionReferOptionsMod.SessionReferOptions
 import typings.sipJs.sessionStateMod.SessionState
 import typings.sipJs.userAgentMod.UserAgent
 import scala.scalajs.js
@@ -56,8 +66,6 @@ object sessionMod extends js.Object {
     /** @internal */
     var _referralInviterOptions: js.UndefOr[InviterOptions] = js.native
     /** @internal */
-    var _referrer: js.UndefOr[Referrer] = js.native
-    /** @internal */
     var _renderbody: js.UndefOr[String] = js.native
     /** @internal */
     var _rendertype: js.UndefOr[String] = js.native
@@ -79,6 +87,7 @@ object sessionMod extends js.Object {
       * The asserted identity of the remote user.
       */
     val assertedIdentity: js.UndefOr[NameAddrHeader] = js.native
+    var copyRequestOptions: js.Any = js.native
     /**
       * Property reserved for use by instance owner.
       * @defaultValue `undefined`
@@ -106,8 +115,12 @@ object sessionMod extends js.Object {
       * Logger.
       */
     var logger: Logger = js.native
+    /** If defined, NOTIFYs associated with a REFER subscription are delivered here. */
+    var onNotify: js.Any = js.native
     /** True if there is a re-INVITE request outstanding. */
     var pendingReinvite: js.Any = js.native
+    var referExtraHeaders: js.Any = js.native
+    var referToString: js.Any = js.native
     /**
       * The identity of the remote user.
       */
@@ -155,9 +168,33 @@ object sessionMod extends js.Object {
       * @param options - Request options bucket.
       * @internal
       */
-    def _info(): js.Promise[OutgoingByeRequest] = js.native
-    def _info(delegate: OutgoingRequestDelegate): js.Promise[OutgoingByeRequest] = js.native
-    def _info(delegate: OutgoingRequestDelegate, options: RequestOptions): js.Promise[OutgoingByeRequest] = js.native
+    def _info(): js.Promise[OutgoingInfoRequest] = js.native
+    def _info(delegate: OutgoingRequestDelegate): js.Promise[OutgoingInfoRequest] = js.native
+    def _info(delegate: OutgoingRequestDelegate, options: RequestOptions): js.Promise[OutgoingInfoRequest] = js.native
+    /**
+      * Send MESSAGE.
+      * @param delegate - Request delegate.
+      * @param options - Request options bucket.
+      * @internal
+      */
+    def _message(): js.Promise[OutgoingMessageRequest] = js.native
+    def _message(delegate: OutgoingRequestDelegate): js.Promise[OutgoingMessageRequest] = js.native
+    def _message(delegate: OutgoingRequestDelegate, options: RequestOptions): js.Promise[OutgoingMessageRequest] = js.native
+    /**
+      * Send REFER.
+      * @param onNotify - Notification callback.
+      * @param delegate - Request delegate.
+      * @param options - Request options bucket.
+      * @internal
+      */
+    def _refer(): js.Promise[OutgoingByeRequest] = js.native
+    def _refer(onNotify: js.Function1[/* notification */ Notification, Unit]): js.Promise[OutgoingByeRequest] = js.native
+    def _refer(onNotify: js.Function1[/* notification */ Notification, Unit], delegate: OutgoingRequestDelegate): js.Promise[OutgoingByeRequest] = js.native
+    def _refer(
+      onNotify: js.Function1[/* notification */ Notification, Unit],
+      delegate: OutgoingRequestDelegate,
+      options: RequestOptions
+    ): js.Promise[OutgoingByeRequest] = js.native
     /**
       * Send ACK and then BYE. There are unrecoverable errors which can occur
       * while handling dialog forming and in-dialog INVITE responses and when
@@ -174,6 +211,12 @@ object sessionMod extends js.Object {
     /* protected */ def ackAndBye(response: AckableIncomingResponseWithSession, statusCode: Double): Unit = js.native
     /* protected */ def ackAndBye(response: AckableIncomingResponseWithSession, statusCode: Double, reasonPhrase: String): Unit = js.native
     /**
+      * End the {@link Session}. Sends a BYE.
+      * @param options - Options bucket. See {@link SessionByeOptions} for details.
+      */
+    def bye(): js.Promise[OutgoingByeRequest] = js.native
+    def bye(options: SessionByeOptions): js.Promise[OutgoingByeRequest] = js.native
+    /**
       * Destructor.
       */
     def dispose(): js.Promise[Unit] = js.native
@@ -184,25 +227,37 @@ object sessionMod extends js.Object {
       * provided, generates a local offer.
       * @internal
       */
-    /* protected */ def generateResponseOfferAnswer(request: IncomingInviteRequest, options: AnonSessionDescriptionHandlerModifiers): js.Promise[js.UndefOr[Body]] = js.native
+    /* protected */ def generateResponseOfferAnswer(request: IncomingInviteRequest, options: SessionDescriptionHandlerModifiers): js.Promise[js.UndefOr[Body]] = js.native
     /**
       * Generate an offer or answer for a response to an INVITE request
       * when a dialog (early or otherwise) has already been established.
       * This method may NOT be called if a dialog has yet to be established.
       * @internal
       */
-    /* protected */ def generateResponseOfferAnswerInDialog(options: AnonSessionDescriptionHandlerModifiers): js.Promise[js.UndefOr[Body]] = js.native
+    /* protected */ def generateResponseOfferAnswerInDialog(options: SessionDescriptionHandlerModifiers): js.Promise[js.UndefOr[Body]] = js.native
     /**
       * Get local offer.
       * @internal
       */
-    /* protected */ def getOffer(options: AnonSessionDescriptionHandlerModifiers): js.Promise[Body] = js.native
+    /* protected */ def getOffer(options: SessionDescriptionHandlerModifiers): js.Promise[Body] = js.native
+    /**
+      * Share {@link Info} with peer. Sends an INFO.
+      * @param options - Options bucket. See {@link SessionInfoOptions} for details.
+      */
+    def info(): js.Promise[OutgoingInfoRequest] = js.native
+    def info(options: SessionInfoOptions): js.Promise[OutgoingInfoRequest] = js.native
     /**
       * Renegotiate the session. Sends a re-INVITE.
-      * @param options - Options bucket.
+      * @param options - Options bucket. See {@link SessionInviteOptions} for details.
       */
     def invite(): js.Promise[OutgoingInviteRequest] = js.native
     def invite(options: SessionInviteOptions): js.Promise[OutgoingInviteRequest] = js.native
+    /**
+      * Deliver a {@link Message}. Sends a MESSAGE.
+      * @param options - Options bucket. See {@link SessionMessageOptions} for details.
+      */
+    def message(): js.Promise[OutgoingMessageRequest] = js.native
+    def message(options: SessionMessageOptions): js.Promise[OutgoingMessageRequest] = js.native
     /**
       * Handle in dialog ACK request.
       * @internal
@@ -224,6 +279,11 @@ object sessionMod extends js.Object {
       */
     /* protected */ def onInviteRequest(request: IncomingInviteRequest): Unit = js.native
     /**
+      * Handle in dialog MESSAGE request.
+      * @internal
+      */
+    /* protected */ def onMessageRequest(request: IncomingMessageRequest): Unit = js.native
+    /**
       * Handle in dialog NOTIFY request.
       * @internal
       */
@@ -239,15 +299,14 @@ object sessionMod extends js.Object {
       */
     /* protected */ def onReferRequest(request: IncomingReferRequest): Unit = js.native
     /**
-      * Send REFER.
-      * @param referrer - Referrer.
-      * @param delegate - Request delegate.
-      * @param options - Request options bucket.
-      * @internal
+      * Proffer a {@link Referral}. Send a REFER.
+      * @param referTo - The referral target. If a `Session`, a REFER w/Replaces is sent.
+      * @param options - Options bucket. See {@link SessionReferOptions} for details.
       */
-    def refer(referrer: Referrer): js.Promise[OutgoingByeRequest] = js.native
-    def refer(referrer: Referrer, delegate: OutgoingRequestDelegate): js.Promise[OutgoingByeRequest] = js.native
-    def refer(referrer: Referrer, delegate: OutgoingRequestDelegate, options: RequestOptions): js.Promise[OutgoingByeRequest] = js.native
+    def refer(referTo: URI): js.Promise[OutgoingReferRequest] = js.native
+    def refer(referTo: URI, options: SessionReferOptions): js.Promise[OutgoingReferRequest] = js.native
+    def refer(referTo: Session): js.Promise[OutgoingReferRequest] = js.native
+    def refer(referTo: Session, options: SessionReferOptions): js.Promise[OutgoingReferRequest] = js.native
     /**
       * Rollback local/remote offer.
       * @internal
@@ -262,12 +321,12 @@ object sessionMod extends js.Object {
       * Set remote answer.
       * @internal
       */
-    /* protected */ def setAnswer(answer: Body, options: AnonSessionDescriptionHandlerModifiers): js.Promise[Unit] = js.native
+    /* protected */ def setAnswer(answer: Body, options: SessionDescriptionHandlerModifiers): js.Promise[Unit] = js.native
     /**
       * Set remote offer and get local answer.
       * @internal
       */
-    /* protected */ def setOfferAndGetAnswer(offer: Body, options: AnonSessionDescriptionHandlerModifiers): js.Promise[Body] = js.native
+    /* protected */ def setOfferAndGetAnswer(offer: Body, options: SessionDescriptionHandlerModifiers): js.Promise[Body] = js.native
     /**
       * SDH for confirmed dialog.
       * @internal

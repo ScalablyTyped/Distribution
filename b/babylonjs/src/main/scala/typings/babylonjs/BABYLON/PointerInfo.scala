@@ -6,34 +6,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.PointerInfo")
-@js.native
-class PointerInfo protected () extends PointerInfoBase {
-  def this(
-    `type`: Double,
-    event: MouseWheelEvent,
-    /**
-    * Defines the picking info associated to the info (if any)\
-    */
-  pickInfo: Nullable[PickingInfo]
-  ) = this()
-  /**
-    * Instantiates a PointerInfo to store pointer related info to the onPointerObservable event.
-    * @param type Defines the type of event (PointerEventTypes)
-    * @param event Defines the related dom event
-    * @param pickInfo Defines the picking info associated to the info (if any)\
-    */
-  def this(
-    `type`: Double,
-    event: PointerEvent,
-    /**
-    * Defines the picking info associated to the info (if any)\
-    */
-  pickInfo: Nullable[PickingInfo]
-  ) = this()
+trait PointerInfo extends PointerInfoBase {
   /**
     * Defines the picking info associated to the info (if any)\
     */
-  var pickInfo: Nullable[PickingInfo] = js.native
+  var pickInfo: Nullable[PickingInfo]
+}
+
+object PointerInfo {
+  @scala.inline
+  def apply(event: PointerEvent | MouseWheelEvent, `type`: Double, pickInfo: Nullable[PickingInfo] = null): PointerInfo = {
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], pickInfo = pickInfo.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PointerInfo]
+  }
 }
 

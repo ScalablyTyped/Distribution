@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`a3-landscape`
 import typings.arcgisJsApi.arcgisJsApiStrings.`a3-portrait`
 import typings.arcgisJsApi.arcgisJsApiStrings.`a4-landscape`
@@ -136,8 +135,4 @@ trait TemplateOptions extends Accessor {
     */
   var width: Double = js.native
 }
-
-@JSGlobal("__esri.TemplateOptions")
-@js.native
-object TemplateOptions extends TopLevel[TemplateOptionsConstructor]
 

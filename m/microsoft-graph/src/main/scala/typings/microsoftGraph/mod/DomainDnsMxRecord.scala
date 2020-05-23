@@ -18,20 +18,20 @@ object DomainDnsMxRecord {
     isOptional: js.UndefOr[Boolean] = js.undefined,
     label: String = null,
     mailExchange: String = null,
-    preference: Int | Double = null,
+    preference: js.UndefOr[Double] = js.undefined,
     recordType: String = null,
     supportedService: String = null,
-    ttl: Int | Double = null
+    ttl: js.UndefOr[Double] = js.undefined
   ): DomainDnsMxRecord = {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOptional)) __obj.updateDynamic("isOptional")(isOptional.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOptional)) __obj.updateDynamic("isOptional")(isOptional.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (mailExchange != null) __obj.updateDynamic("mailExchange")(mailExchange.asInstanceOf[js.Any])
-    if (preference != null) __obj.updateDynamic("preference")(preference.asInstanceOf[js.Any])
+    if (!js.isUndefined(preference)) __obj.updateDynamic("preference")(preference.get.asInstanceOf[js.Any])
     if (recordType != null) __obj.updateDynamic("recordType")(recordType.asInstanceOf[js.Any])
     if (supportedService != null) __obj.updateDynamic("supportedService")(supportedService.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainDnsMxRecord]
   }
 }

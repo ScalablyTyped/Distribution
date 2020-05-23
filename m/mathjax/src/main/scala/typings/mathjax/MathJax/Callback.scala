@@ -1,6 +1,5 @@
 package typings.mathjax.MathJax
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,8 +40,4 @@ trait Callback extends js.Object {
     */
   def Signal(name: String): typings.mathjax.MathJax.Signal = js.native
 }
-
-@JSGlobal("MathJax.Callback")
-@js.native
-object Callback extends TopLevel[Callback]
 

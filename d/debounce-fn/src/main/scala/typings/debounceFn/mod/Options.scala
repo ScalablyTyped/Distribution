@@ -29,12 +29,12 @@ object Options {
   def apply(
     after: js.UndefOr[Boolean] = js.undefined,
     before: js.UndefOr[Boolean] = js.undefined,
-    wait: Int | Double = null
+    wait: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(after)) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (!js.isUndefined(before)) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (wait != null) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
+    if (!js.isUndefined(after)) __obj.updateDynamic("after")(after.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(before)) __obj.updateDynamic("before")(before.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

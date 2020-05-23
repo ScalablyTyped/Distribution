@@ -14,7 +14,7 @@ package object mod {
   type MentionsInputClass = typings.react.mod.ComponentClass[typings.reactMentions.mod.MentionsInputProps, typings.react.mod.ComponentState]
   type Omit[T, K] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
   type OnChangeHandlerFunc = js.Function4[
-    /* event */ typings.reactMentions.AnonTarget, 
+    /* event */ typings.reactMentions.anon.Target, 
     /* newValue */ java.lang.String, 
     /* newPlainTextValue */ java.lang.String, 
     /* mentions */ js.Array[typings.reactMentions.mod.MentionItem], 

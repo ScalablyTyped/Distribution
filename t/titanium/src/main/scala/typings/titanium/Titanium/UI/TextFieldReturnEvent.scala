@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the return key is pressed on the keyboard.
-		 */
+  * Fired when the return key is pressed on the keyboard.
+  */
 trait TextFieldReturnEvent extends TextFieldBaseEvent {
   /**
-  			 * Value of this text area.
-  			 */
+    * Value of this text area.
+    */
   var value: String
 }
 

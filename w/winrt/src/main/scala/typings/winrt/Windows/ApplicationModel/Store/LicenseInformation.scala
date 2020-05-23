@@ -6,18 +6,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.Store.LicenseInformation")
-@js.native
-class LicenseInformation () extends ILicenseInformation {
-  /* CompleteClass */
-  override var expirationDate: Date = js.native
-  /* CompleteClass */
-  override var isActive: Boolean = js.native
-  /* CompleteClass */
-  override var isTrial: Boolean = js.native
-  /* CompleteClass */
-  override var onlicensechanged: js.Any = js.native
-  /* CompleteClass */
-  override var productLicenses: IMapView[String, ProductLicense] = js.native
+trait LicenseInformation extends ILicenseInformation
+
+object LicenseInformation {
+  @scala.inline
+  def apply(
+    expirationDate: Date,
+    isActive: Boolean,
+    isTrial: Boolean,
+    onlicensechanged: js.Any,
+    productLicenses: IMapView[String, ProductLicense]
+  ): LicenseInformation = {
+    val __obj = js.Dynamic.literal(expirationDate = expirationDate.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any], isTrial = isTrial.asInstanceOf[js.Any], onlicensechanged = onlicensechanged.asInstanceOf[js.Any], productLicenses = productLicenses.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LicenseInformation]
+  }
 }
 

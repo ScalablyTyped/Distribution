@@ -245,6 +245,7 @@ package object ec2Mod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`certificate-authentication`
     - typings.awsSdk.awsSdkStrings.`directory-service-authentication`
+    - typings.awsSdk.awsSdkStrings.`federated-authentication`
     - java.lang.String
   */
   type ClientVpnAuthenticationType = typings.awsSdk.ec2Mod._ClientVpnAuthenticationType | java.lang.String
@@ -515,6 +516,7 @@ package object ec2Mod {
   */
   type EndDateType = typings.awsSdk.ec2Mod._EndDateType | java.lang.String
   type EndpointSet = js.Array[typings.awsSdk.ec2Mod.ClientVpnEndpoint]
+  type ErrorSet = js.Array[typings.awsSdk.ec2Mod.ValidationError]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`instance-reboot`
     - typings.awsSdk.awsSdkStrings.`system-reboot`
@@ -1133,6 +1135,15 @@ package object ec2Mod {
     - typings.awsSdk.awsSdkStrings.inf1Dot2xlarge
     - typings.awsSdk.awsSdkStrings.inf1Dot6xlarge
     - typings.awsSdk.awsSdkStrings.inf1Dot24xlarge
+    - typings.awsSdk.awsSdkStrings.m6gDotmetal
+    - typings.awsSdk.awsSdkStrings.m6gDotmedium
+    - typings.awsSdk.awsSdkStrings.m6gDotlarge
+    - typings.awsSdk.awsSdkStrings.m6gDotxlarge
+    - typings.awsSdk.awsSdkStrings.m6gDot2xlarge
+    - typings.awsSdk.awsSdkStrings.m6gDot4xlarge
+    - typings.awsSdk.awsSdkStrings.m6gDot8xlarge
+    - typings.awsSdk.awsSdkStrings.m6gDot12xlarge
+    - typings.awsSdk.awsSdkStrings.m6gDot16xlarge
     - java.lang.String
   */
   type InstanceType = typings.awsSdk.ec2Mod._InstanceType | java.lang.String

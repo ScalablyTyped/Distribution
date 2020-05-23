@@ -9,6 +9,9 @@ import typings.graphql.definitionMod.GraphQLOutputType
 import typings.graphql.mod.GraphQLInputObjectType
 import typings.graphql.mod.GraphQLInterfaceType
 import typings.graphql.mod.GraphQLObjectType
+import typings.graphqlBinding.anon.Boolean
+import typings.graphqlBinding.anon.GraphQLEnumType
+import typings.graphqlBinding.anon.InputSchemaPath
 import typings.graphqlBinding.generatorMod.Generator
 import typings.graphqlBinding.typesMod.Maybe
 import scala.scalajs.js
@@ -20,9 +23,9 @@ import scala.scalajs.js.annotation._
 object flowGeneratorMod extends js.Object {
   @js.native
   class FlowGenerator protected () extends Generator {
-    def this(hasSchemaInputSchemaPathOutputBindingPathIsDefaultExport: AnonInputSchemaPath) = this()
-    var graphqlRenderers: AnonGraphQLEnumType = js.native
-    var scalarMapping: AnonBoolean = js.native
+    def this(hasSchemaInputSchemaPathOutputBindingPathIsDefaultExport: InputSchemaPath) = this()
+    var graphqlRenderers: GraphQLEnumType = js.native
+    var scalarMapping: Boolean = js.native
     def getPayloadType(operation: String, `type`: String): String = js.native
     def getTypeNames(): js.Array[String] = js.native
     def renderDescription(description: Maybe[String]): String = js.native

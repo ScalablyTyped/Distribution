@@ -10,10 +10,8 @@ import scala.scalajs.js.annotation._
   * The method documentation is still here thouh.
   * When using jQuery, slider methods like setValue(3, true) have to be called like $slider.slider('setValue', 3, true)
   */
-@JSGlobal("Slider")
 @js.native
-class Slider protected () extends js.Object {
-  def this(selector: String, opts: SliderOptions) = this()
+trait Slider extends js.Object {
   /**
     * Properly clean up and remove the slider instance
     */

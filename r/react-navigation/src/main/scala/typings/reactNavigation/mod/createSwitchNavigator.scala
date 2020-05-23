@@ -1,6 +1,6 @@
 package typings.reactNavigation.mod
 
-import typings.reactNavigation.CreateNavigatorConfigNavi
+import typings.reactNavigation.anon.CreateNavigatorConfigNavi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

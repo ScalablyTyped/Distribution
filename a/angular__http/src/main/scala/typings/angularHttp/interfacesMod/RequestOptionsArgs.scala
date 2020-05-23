@@ -25,22 +25,22 @@ object RequestOptionsArgs {
   @scala.inline
   def apply(
     body: js.Any = null,
-    headers: Headers = null,
-    method: String | RequestMethod = null,
-    params: String | URLSearchParams | (StringDictionary[js.Any | js.Array[_]]) = null,
-    responseType: ResponseContentType = null,
-    search: String | URLSearchParams | (StringDictionary[js.Any | js.Array[_]]) = null,
-    url: String = null,
-    withCredentials: js.UndefOr[Boolean] = js.undefined
+    headers: js.UndefOr[Null | Headers] = js.undefined,
+    method: js.UndefOr[Null | String | RequestMethod] = js.undefined,
+    params: js.UndefOr[Null | String | URLSearchParams | (StringDictionary[js.Any | js.Array[_]])] = js.undefined,
+    responseType: js.UndefOr[Null | ResponseContentType] = js.undefined,
+    search: js.UndefOr[Null | String | URLSearchParams | (StringDictionary[js.Any | js.Array[_]])] = js.undefined,
+    url: js.UndefOr[Null | String] = js.undefined,
+    withCredentials: js.UndefOr[Null | Boolean] = js.undefined
   ): RequestOptionsArgs = {
     val __obj = js.Dynamic.literal()
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
-    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (!js.isUndefined(headers)) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(method)) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (!js.isUndefined(params)) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (!js.isUndefined(responseType)) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
+    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
+    if (!js.isUndefined(url)) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOptionsArgs]
   }

@@ -2,8 +2,8 @@ package typings.antd.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.antd.PartialBasicProps
-import typings.antd.WeakValidationMapBasicPro
+import typings.antd.anon.PartialBasicProps
+import typings.antd.anon.WeakValidationMapBasicPro
 import typings.antd.layoutLayoutMod.BasicProps
 import typings.antd.siderMod.SiderProps
 import typings.react.mod.Component

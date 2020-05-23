@@ -20,28 +20,28 @@ trait GroupOptions extends js.Object {
 object GroupOptions {
   @scala.inline
   def apply(
-    cache: Int | Double = null,
+    cache: js.UndefOr[Double] = js.undefined,
     field: String | js.Array[String] = null,
     format: String = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     main: js.UndefOr[Boolean] = js.undefined,
     ngroups: js.UndefOr[Boolean] = js.undefined,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     on: js.UndefOr[Boolean] = js.undefined,
     sort: String = null,
     truncate: js.UndefOr[Boolean] = js.undefined
   ): GroupOptions = {
     val __obj = js.Dynamic.literal()
-    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.get.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(main)) __obj.updateDynamic("main")(main.asInstanceOf[js.Any])
-    if (!js.isUndefined(ngroups)) __obj.updateDynamic("ngroups")(ngroups.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(on)) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(main)) __obj.updateDynamic("main")(main.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ngroups)) __obj.updateDynamic("ngroups")(ngroups.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(on)) __obj.updateDynamic("on")(on.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (!js.isUndefined(truncate)) __obj.updateDynamic("truncate")(truncate.asInstanceOf[js.Any])
+    if (!js.isUndefined(truncate)) __obj.updateDynamic("truncate")(truncate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupOptions]
   }
 }

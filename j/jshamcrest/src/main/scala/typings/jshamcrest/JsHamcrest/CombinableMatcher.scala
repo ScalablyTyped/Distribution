@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("JsHamcrest.CombinableMatcher")
 @js.native
-class CombinableMatcher () extends SimpleMatcher {
+trait CombinableMatcher extends SimpleMatcher {
   /**
     * Wraps this matcher and the given matcher using JsHamcrest.Matchers.allOf().
     *

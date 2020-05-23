@@ -25,10 +25,10 @@ object UpdateThingGroupRequest {
   def apply(
     thingGroupName: ThingGroupName,
     thingGroupProperties: ThingGroupProperties,
-    expectedVersion: Int | Double = null
+    expectedVersion: js.UndefOr[OptionalVersion] = js.undefined
   ): UpdateThingGroupRequest = {
     val __obj = js.Dynamic.literal(thingGroupName = thingGroupName.asInstanceOf[js.Any], thingGroupProperties = thingGroupProperties.asInstanceOf[js.Any])
-    if (expectedVersion != null) __obj.updateDynamic("expectedVersion")(expectedVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(expectedVersion)) __obj.updateDynamic("expectedVersion")(expectedVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateThingGroupRequest]
   }
 }

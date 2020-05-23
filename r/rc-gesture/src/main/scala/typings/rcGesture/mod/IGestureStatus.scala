@@ -35,31 +35,31 @@ object IGestureStatus {
     time: Double,
     touches: js.Array[Finger],
     availablePan: js.UndefOr[Boolean] = js.undefined,
-    direction: Int | Double = null,
+    direction: js.UndefOr[Double] = js.undefined,
     moveStatus: SingeFingerMoveStatus = null,
     mutliFingerStatus: js.Array[MultiFingerStatus] = null,
     pan: js.UndefOr[Boolean] = js.undefined,
     pinch: js.UndefOr[Boolean] = js.undefined,
     press: js.UndefOr[Boolean] = js.undefined,
     rotate: js.UndefOr[Boolean] = js.undefined,
-    rotation: Int | Double = null,
-    scale: Int | Double = null,
+    rotation: js.UndefOr[Double] = js.undefined,
+    scale: js.UndefOr[Double] = js.undefined,
     startMutliFingerStatus: js.Array[MultiFingerStatus] = null,
     swipe: js.UndefOr[Boolean] = js.undefined
   ): IGestureStatus = {
     val __obj = js.Dynamic.literal(preTouches = preTouches.asInstanceOf[js.Any], srcEvent = srcEvent.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], startTouches = startTouches.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any])
-    if (!js.isUndefined(availablePan)) __obj.updateDynamic("availablePan")(availablePan.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (!js.isUndefined(availablePan)) __obj.updateDynamic("availablePan")(availablePan.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(direction)) __obj.updateDynamic("direction")(direction.get.asInstanceOf[js.Any])
     if (moveStatus != null) __obj.updateDynamic("moveStatus")(moveStatus.asInstanceOf[js.Any])
     if (mutliFingerStatus != null) __obj.updateDynamic("mutliFingerStatus")(mutliFingerStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(pan)) __obj.updateDynamic("pan")(pan.asInstanceOf[js.Any])
-    if (!js.isUndefined(pinch)) __obj.updateDynamic("pinch")(pinch.asInstanceOf[js.Any])
-    if (!js.isUndefined(press)) __obj.updateDynamic("press")(press.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotate)) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(pan)) __obj.updateDynamic("pan")(pan.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pinch)) __obj.updateDynamic("pinch")(pinch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(press)) __obj.updateDynamic("press")(press.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotate)) __obj.updateDynamic("rotate")(rotate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     if (startMutliFingerStatus != null) __obj.updateDynamic("startMutliFingerStatus")(startMutliFingerStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(swipe)) __obj.updateDynamic("swipe")(swipe.asInstanceOf[js.Any])
+    if (!js.isUndefined(swipe)) __obj.updateDynamic("swipe")(swipe.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGestureStatus]
   }
 }

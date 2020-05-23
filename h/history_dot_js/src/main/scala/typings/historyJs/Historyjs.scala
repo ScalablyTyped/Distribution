@@ -1,5 +1,6 @@
 package typings.historyJs
 
+import typings.historyJs.anon.HashChange
 import typings.std.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Historyjs extends js.Object {
   var Adapter: HistoryAdapter = js.native
-  var emulated: AnonHashChange = js.native
+  var emulated: HashChange = js.native
   var enabled: Boolean = js.native
   var options: HistoryOptions = js.native
   def back(): Unit = js.native

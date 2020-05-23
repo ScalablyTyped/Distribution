@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait Proxy extends js.Object {
   /**
-  	 * Proxy-Authorization header
-  	 */
+    * Proxy-Authorization header
+    */
   var auth: js.UndefOr[String] = js.undefined
   var ipAddress: String
   var port: Double

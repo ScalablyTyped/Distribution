@@ -20,9 +20,9 @@ object PipeOptions {
     signal: AbortSignal = null
   ): PipeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(preventAbort)) __obj.updateDynamic("preventAbort")(preventAbort.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventCancel)) __obj.updateDynamic("preventCancel")(preventCancel.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventClose)) __obj.updateDynamic("preventClose")(preventClose.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventAbort)) __obj.updateDynamic("preventAbort")(preventAbort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventCancel)) __obj.updateDynamic("preventCancel")(preventCancel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventClose)) __obj.updateDynamic("preventClose")(preventClose.get.asInstanceOf[js.Any])
     if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     __obj.asInstanceOf[PipeOptions]
   }

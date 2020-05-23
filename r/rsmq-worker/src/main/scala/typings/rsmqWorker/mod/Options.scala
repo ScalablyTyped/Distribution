@@ -27,32 +27,32 @@ object Options {
   def apply(
     autostart: js.UndefOr[Boolean] = js.undefined,
     customExceedCheck: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RedisSMQ.Message */ /* message */ js.Any => Boolean = null,
-    defaultDelay: Int | Double = null,
+    defaultDelay: js.UndefOr[Double] = js.undefined,
     host: String = null,
-    interval: Int | Double = null,
-    invisibletime: Int | Double = null,
-    maxReceiveCount: Int | Double = null,
+    interval: js.UndefOr[Double] = js.undefined,
+    invisibletime: js.UndefOr[Double] = js.undefined,
+    maxReceiveCount: js.UndefOr[Double] = js.undefined,
     options: ClientOpts = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     redis: RedisClient = null,
     redisPrefix: String = null,
     rsmq: Client = null,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autostart)) __obj.updateDynamic("autostart")(autostart.asInstanceOf[js.Any])
+    if (!js.isUndefined(autostart)) __obj.updateDynamic("autostart")(autostart.get.asInstanceOf[js.Any])
     if (customExceedCheck != null) __obj.updateDynamic("customExceedCheck")(js.Any.fromFunction1(customExceedCheck))
-    if (defaultDelay != null) __obj.updateDynamic("defaultDelay")(defaultDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultDelay)) __obj.updateDynamic("defaultDelay")(defaultDelay.get.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (invisibletime != null) __obj.updateDynamic("invisibletime")(invisibletime.asInstanceOf[js.Any])
-    if (maxReceiveCount != null) __obj.updateDynamic("maxReceiveCount")(maxReceiveCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(invisibletime)) __obj.updateDynamic("invisibletime")(invisibletime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxReceiveCount)) __obj.updateDynamic("maxReceiveCount")(maxReceiveCount.get.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (redis != null) __obj.updateDynamic("redis")(redis.asInstanceOf[js.Any])
     if (redisPrefix != null) __obj.updateDynamic("redisPrefix")(redisPrefix.asInstanceOf[js.Any])
     if (rsmq != null) __obj.updateDynamic("rsmq")(rsmq.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

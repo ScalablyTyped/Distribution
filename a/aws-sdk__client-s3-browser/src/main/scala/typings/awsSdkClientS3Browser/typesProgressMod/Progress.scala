@@ -22,14 +22,14 @@ trait Progress extends js.Object {
 object Progress {
   @scala.inline
   def apply(
-    BytesProcessed: Int | Double = null,
-    BytesReturned: Int | Double = null,
-    BytesScanned: Int | Double = null
+    BytesProcessed: js.UndefOr[Double] = js.undefined,
+    BytesReturned: js.UndefOr[Double] = js.undefined,
+    BytesScanned: js.UndefOr[Double] = js.undefined
   ): Progress = {
     val __obj = js.Dynamic.literal()
-    if (BytesProcessed != null) __obj.updateDynamic("BytesProcessed")(BytesProcessed.asInstanceOf[js.Any])
-    if (BytesReturned != null) __obj.updateDynamic("BytesReturned")(BytesReturned.asInstanceOf[js.Any])
-    if (BytesScanned != null) __obj.updateDynamic("BytesScanned")(BytesScanned.asInstanceOf[js.Any])
+    if (!js.isUndefined(BytesProcessed)) __obj.updateDynamic("BytesProcessed")(BytesProcessed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(BytesReturned)) __obj.updateDynamic("BytesReturned")(BytesReturned.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(BytesScanned)) __obj.updateDynamic("BytesScanned")(BytesScanned.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Progress]
   }
 }

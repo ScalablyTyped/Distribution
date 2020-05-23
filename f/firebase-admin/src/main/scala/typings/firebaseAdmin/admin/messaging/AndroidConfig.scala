@@ -28,11 +28,11 @@ trait AndroidConfig extends js.Object {
   /**
     * Options for features provided by the FCM SDK for Android.
     */
-  var fcmOptions: js.UndefOr[AndroidFcmOptions] = js.undefined
+  var fcmOptions: js.UndefOr[typings.firebaseAdmin.messagingMod.admin.messaging.AndroidFcmOptions] = js.undefined
   /**
     * Android notification to be included in the message.
     */
-  var notification: js.UndefOr[AndroidNotification] = js.undefined
+  var notification: js.UndefOr[typings.firebaseAdmin.messagingMod.admin.messaging.AndroidNotification] = js.undefined
   /**
     * Priority of the message. Must be either `normal` or `high`.
     */
@@ -53,11 +53,11 @@ object AndroidConfig {
   def apply(
     collapseKey: String = null,
     data: StringDictionary[String] = null,
-    fcmOptions: AndroidFcmOptions = null,
-    notification: AndroidNotification = null,
+    fcmOptions: typings.firebaseAdmin.messagingMod.admin.messaging.AndroidFcmOptions = null,
+    notification: typings.firebaseAdmin.messagingMod.admin.messaging.AndroidNotification = null,
     priority: high | normal = null,
     restrictedPackageName: String = null,
-    ttl: Int | Double = null
+    ttl: js.UndefOr[Double] = js.undefined
   ): AndroidConfig = {
     val __obj = js.Dynamic.literal()
     if (collapseKey != null) __obj.updateDynamic("collapseKey")(collapseKey.asInstanceOf[js.Any])
@@ -66,7 +66,7 @@ object AndroidConfig {
     if (notification != null) __obj.updateDynamic("notification")(notification.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (restrictedPackageName != null) __obj.updateDynamic("restrictedPackageName")(restrictedPackageName.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidConfig]
   }
 }

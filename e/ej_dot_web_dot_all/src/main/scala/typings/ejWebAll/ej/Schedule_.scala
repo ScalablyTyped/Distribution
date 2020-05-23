@@ -1,18 +1,11 @@
 package typings.ejWebAll.ej
 
-import typings.ejWebAll.JQuery
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.Schedule")
 @js.native
-class Schedule_ protected () extends Widget_ {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.Schedule.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.Schedule.Model) = this()
+trait Schedule_ extends Widget_ {
   var defaults: typings.ejWebAll.ej.Schedule.Model = js.native
   @JSName("model")
   var model_Schedule_ : typings.ejWebAll.ej.Schedule.Model = js.native

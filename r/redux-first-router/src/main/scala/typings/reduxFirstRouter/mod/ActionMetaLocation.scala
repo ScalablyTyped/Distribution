@@ -16,12 +16,12 @@ object ActionMetaLocation {
   def apply(
     current: Location,
     prev: Location,
-    history: Nullable[HistoryData] = null,
-    kind: Nullable[String] = null
+    history: js.UndefOr[Null | Nullable[HistoryData]] = js.undefined,
+    kind: js.UndefOr[Null | Nullable[String]] = js.undefined
   ): ActionMetaLocation = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any])
-    if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
+    if (!js.isUndefined(kind)) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionMetaLocation]
   }
 }

@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait IMessageBox extends ISheet {
   /** [Method] Displays a standard read only message box with an OK button comparable to the basic JavaScript alert prompt
-  		* @param title String The title bar text.
-  		* @param message String The message box body text.
-  		* @param fn Function A callback function which is called when the dialog is dismissed by clicking on the configured buttons.
-  		* @param scope Object The scope (this reference) in which the callback is executed. Defaults to: the browser window
-  		* @returns Ext.MessageBox this
-  		*/
+    * @param title String The title bar text.
+    * @param message String The message box body text.
+    * @param fn Function A callback function which is called when the dialog is dismissed by clicking on the configured buttons.
+    * @param scope Object The scope (this reference) in which the callback is executed. Defaults to: the browser window
+    * @returns Ext.MessageBox this
+    */
   var alert: js.UndefOr[
     js.Function4[
       /* title */ js.UndefOr[java.lang.String], 
@@ -24,12 +24,12 @@ trait IMessageBox extends ISheet {
   /** [Config Option] (Array/Object) */
   var buttons: js.UndefOr[js.Any] = js.undefined
   /** [Method] Displays a confirmation message box with Yes and No buttons comparable to JavaScript s confirm
-  		* @param title String The title bar text.
-  		* @param message String The message box body text.
-  		* @param fn Function A callback function which is called when the dialog is dismissed by clicking on the configured buttons.
-  		* @param scope Object The scope (this reference) in which the callback is executed. Defaults to: the browser window
-  		* @returns Ext.MessageBox this
-  		*/
+    * @param title String The title bar text.
+    * @param message String The message box body text.
+    * @param fn Function A callback function which is called when the dialog is dismissed by clicking on the configured buttons.
+    * @param scope Object The scope (this reference) in which the callback is executed. Defaults to: the browser window
+    * @returns Ext.MessageBox this
+    */
   var confirm: js.UndefOr[
     js.Function4[
       /* title */ js.UndefOr[java.lang.String], 
@@ -42,24 +42,24 @@ trait IMessageBox extends ISheet {
   /** [Config Option] (Number) */
   var defaultTextHeight: js.UndefOr[Double] = js.undefined
   /** [Method] Returns the value of buttons
-  		* @returns Array/Object
-  		*/
+    * @returns Array/Object
+    */
   var getButtons: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of defaultTextHeight
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getDefaultTextHeight: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of layout
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getLayout: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of prompt
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getPrompt: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of title
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getTitle: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   /** [Config Option] (String) */
   var icon: js.UndefOr[java.lang.String] = js.undefined
@@ -72,40 +72,40 @@ trait IMessageBox extends ISheet {
   /** [Config Option] (Object) */
   var prompt: js.UndefOr[js.Any] = js.undefined
   /** [Method] Sets the value of buttons
-  		* @param buttons Array/Object The new value.
-  		*/
+    * @param buttons Array/Object The new value.
+    */
   var setButtons: js.UndefOr[js.Function1[/* buttons */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of defaultTextHeight
-  		* @param defaultTextHeight Number The new value.
-  		*/
+    * @param defaultTextHeight Number The new value.
+    */
   var setDefaultTextHeight: js.UndefOr[js.Function1[/* defaultTextHeight */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets icon
-  		* @param iconCls String A CSS class name or empty string to clear the icon.
-  		* @returns Ext.MessageBox this
-  		*/
+    * @param iconCls String A CSS class name or empty string to clear the icon.
+    * @returns Ext.MessageBox this
+    */
   var setIcon: js.UndefOr[js.Function1[/* iconCls */ js.UndefOr[java.lang.String], this.type]] = js.undefined
   /** [Method] Sets the value of iconCls
-  		* @param iconCls String The new value.
-  		*/
+    * @param iconCls String The new value.
+    */
   var setIconCls: js.UndefOr[js.Function1[/* iconCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   /** [Method] Sets the value of message
-  		* @param message String The new value.
-  		*/
+    * @param message String The new value.
+    */
   var setMessage: js.UndefOr[js.Function1[/* message */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   /** [Method] Sets the value of prompt
-  		* @param prompt Object The new value.
-  		*/
+    * @param prompt Object The new value.
+    */
   var setPrompt: js.UndefOr[js.Function1[/* prompt */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of title
-  		* @param title String The new value.
-  		*/
+    * @param title String The new value.
+    */
   var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   /** [Config Option] (String) */
   var title: js.UndefOr[java.lang.String] = js.undefined
   /** [Method] Sets the value of message
-  		* @param message String The new value.
-  		* @returns Ext.MessageBox this
-  		*/
+    * @param message String The new value.
+    * @returns Ext.MessageBox this
+    */
   var updateText: js.UndefOr[js.Function1[/* message */ js.UndefOr[java.lang.String], this.type]] = js.undefined
 }
 
@@ -116,7 +116,7 @@ object IMessageBox {
     alert: (/* title */ js.UndefOr[java.lang.String], /* message */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IMessageBox = null,
     buttons: js.Any = null,
     confirm: (/* title */ js.UndefOr[java.lang.String], /* message */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IMessageBox = null,
-    defaultTextHeight: Int | Double = null,
+    defaultTextHeight: js.UndefOr[Double] = js.undefined,
     getButtons: () => _ = null,
     getDefaultTextHeight: () => Double = null,
     getLayout: () => _ = null,
@@ -142,7 +142,7 @@ object IMessageBox {
     if (alert != null) __obj.updateDynamic("alert")(js.Any.fromFunction4(alert))
     if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
     if (confirm != null) __obj.updateDynamic("confirm")(js.Any.fromFunction4(confirm))
-    if (defaultTextHeight != null) __obj.updateDynamic("defaultTextHeight")(defaultTextHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultTextHeight)) __obj.updateDynamic("defaultTextHeight")(defaultTextHeight.get.asInstanceOf[js.Any])
     if (getButtons != null) __obj.updateDynamic("getButtons")(js.Any.fromFunction0(getButtons))
     if (getDefaultTextHeight != null) __obj.updateDynamic("getDefaultTextHeight")(js.Any.fromFunction0(getDefaultTextHeight))
     if (getLayout != null) __obj.updateDynamic("getLayout")(js.Any.fromFunction0(getLayout))

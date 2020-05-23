@@ -12,11 +12,15 @@ trait IFillStyle extends js.Object {
 
 object IFillStyle {
   @scala.inline
-  def apply(fill: String = null, `fill-opacity`: Int | Double = null, opacity: Int | Double = null): IFillStyle = {
+  def apply(
+    fill: String = null,
+    `fill-opacity`: js.UndefOr[Double] = js.undefined,
+    opacity: js.UndefOr[Double] = js.undefined
+  ): IFillStyle = {
     val __obj = js.Dynamic.literal()
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (`fill-opacity` != null) __obj.updateDynamic("fill-opacity")(`fill-opacity`.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(`fill-opacity`)) __obj.updateDynamic("fill-opacity")(`fill-opacity`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFillStyle]
   }
 }

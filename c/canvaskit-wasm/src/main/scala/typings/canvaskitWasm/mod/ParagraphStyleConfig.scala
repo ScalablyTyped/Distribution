@@ -19,14 +19,14 @@ object ParagraphStyleConfig {
     textStyle: TextStyleConfig,
     disableHinting: js.UndefOr[Boolean] = js.undefined,
     ellipsis: String = null,
-    maxLines: Int | Double = null,
+    maxLines: js.UndefOr[Double] = js.undefined,
     textAlign: SkTextAlign = null,
     textDirection: SkTextDirection = null
   ): ParagraphStyleConfig = {
     val __obj = js.Dynamic.literal(textStyle = textStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableHinting)) __obj.updateDynamic("disableHinting")(disableHinting.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableHinting)) __obj.updateDynamic("disableHinting")(disableHinting.get.asInstanceOf[js.Any])
     if (ellipsis != null) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
-    if (maxLines != null) __obj.updateDynamic("maxLines")(maxLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLines)) __obj.updateDynamic("maxLines")(maxLines.get.asInstanceOf[js.Any])
     if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
     if (textDirection != null) __obj.updateDynamic("textDirection")(textDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParagraphStyleConfig]

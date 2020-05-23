@@ -13,10 +13,10 @@ trait BasicScaling extends js.Object {
 
 object BasicScaling {
   @scala.inline
-  def apply(idleTimeout: String = null, maxInstances: Int | Double = null): BasicScaling = {
+  def apply(idleTimeout: String = null, maxInstances: js.UndefOr[Double] = js.undefined): BasicScaling = {
     val __obj = js.Dynamic.literal()
     if (idleTimeout != null) __obj.updateDynamic("idleTimeout")(idleTimeout.asInstanceOf[js.Any])
-    if (maxInstances != null) __obj.updateDynamic("maxInstances")(maxInstances.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxInstances)) __obj.updateDynamic("maxInstances")(maxInstances.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasicScaling]
   }
 }

@@ -20,8 +20,8 @@ object ParseOptions {
     warning: (/* errorMessage */ String, /* errorCode */ ErrorCodes, /* offset */ Double) => Unit = null
   ): ParseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(forgiving)) __obj.updateDynamic("forgiving")(forgiving.asInstanceOf[js.Any])
-    if (!js.isUndefined(normalize)) __obj.updateDynamic("normalize")(normalize.asInstanceOf[js.Any])
+    if (!js.isUndefined(forgiving)) __obj.updateDynamic("forgiving")(forgiving.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(normalize)) __obj.updateDynamic("normalize")(normalize.get.asInstanceOf[js.Any])
     if (warning != null) __obj.updateDynamic("warning")(js.Any.fromFunction3(warning))
     __obj.asInstanceOf[ParseOptions]
   }

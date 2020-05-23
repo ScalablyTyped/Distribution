@@ -9,51 +9,8 @@ import scala.scalajs.js.annotation._
 object declareClass extends js.Object {
   def apply(
     id: Identifier_,
-    typeParameters: js.UndefOr[scala.Nothing],
-    _extends: js.UndefOr[scala.Nothing],
-    body: ObjectTypeAnnotation_
-  ): DeclareClass_ = js.native
-  def apply(
-    id: Identifier_,
-    typeParameters: js.UndefOr[scala.Nothing],
-    _extends: js.Array[InterfaceExtends_],
-    body: ObjectTypeAnnotation_
-  ): DeclareClass_ = js.native
-  def apply(
-    id: Identifier_,
-    typeParameters: js.UndefOr[scala.Nothing],
-    _extends: Null,
-    body: ObjectTypeAnnotation_
-  ): DeclareClass_ = js.native
-  def apply(
-    id: Identifier_,
-    typeParameters: Null,
-    _extends: js.UndefOr[scala.Nothing],
-    body: ObjectTypeAnnotation_
-  ): DeclareClass_ = js.native
-  def apply(
-    id: Identifier_,
-    typeParameters: Null,
-    _extends: js.Array[InterfaceExtends_],
-    body: ObjectTypeAnnotation_
-  ): DeclareClass_ = js.native
-  def apply(id: Identifier_, typeParameters: Null, _extends: Null, body: ObjectTypeAnnotation_): DeclareClass_ = js.native
-  def apply(
-    id: Identifier_,
-    typeParameters: TypeParameterDeclaration_,
-    _extends: js.UndefOr[scala.Nothing],
-    body: ObjectTypeAnnotation_
-  ): DeclareClass_ = js.native
-  def apply(
-    id: Identifier_,
-    typeParameters: TypeParameterDeclaration_,
-    _extends: js.Array[InterfaceExtends_],
-    body: ObjectTypeAnnotation_
-  ): DeclareClass_ = js.native
-  def apply(
-    id: Identifier_,
-    typeParameters: TypeParameterDeclaration_,
-    _extends: Null,
+    typeParameters: js.UndefOr[Null | TypeParameterDeclaration_],
+    _extends: js.UndefOr[js.Array[InterfaceExtends_] | Null],
     body: ObjectTypeAnnotation_
   ): DeclareClass_ = js.native
 }

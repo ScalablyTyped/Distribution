@@ -99,16 +99,16 @@ trait ReactNativePhoneInputProps[TextComponentType /* <: ComponentType[js.Object
 
 object ReactNativePhoneInputProps {
   @scala.inline
-  def apply[TextComponentType /* <: ComponentType[js.Object] */](
+  def apply[TextComponentType](
     allowZeroAfterCountryCode: js.UndefOr[Boolean] = js.undefined,
-    buttonTextStyle: TextStyle = null,
+    buttonTextStyle: js.UndefOr[Null | TextStyle] = js.undefined,
     cancelText: String = null,
     confirmText: String = null,
     countriesList: js.Array[CountriesListItem] = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    flagStyle: ViewStyle = null,
+    flagStyle: js.UndefOr[Null | ViewStyle] = js.undefined,
     initialCountry: String = null,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     onChangePhoneNumber: /* number */ Double => Unit = null,
     onPressCancel: () => Unit = null,
     onPressConfirm: () => Unit = null,
@@ -116,23 +116,23 @@ object ReactNativePhoneInputProps {
     onSelectCountry: /* iso2 */ String => Unit = null,
     pickerBackgroundColor: String = null,
     pickerButtonColor: String = null,
-    pickerItemStyle: ViewStyle = null,
-    style: ViewStyle = null,
+    pickerItemStyle: js.UndefOr[Null | ViewStyle] = js.undefined,
+    style: js.UndefOr[Null | ViewStyle] = js.undefined,
     textComponent: TextComponentType = null,
     textProps: ComponentProps[TextComponentType] = null,
-    textStyle: TextStyle = null,
+    textStyle: js.UndefOr[Null | TextStyle] = js.undefined,
     value: String = null
   ): ReactNativePhoneInputProps[TextComponentType] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowZeroAfterCountryCode)) __obj.updateDynamic("allowZeroAfterCountryCode")(allowZeroAfterCountryCode.asInstanceOf[js.Any])
-    if (buttonTextStyle != null) __obj.updateDynamic("buttonTextStyle")(buttonTextStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowZeroAfterCountryCode)) __obj.updateDynamic("allowZeroAfterCountryCode")(allowZeroAfterCountryCode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(buttonTextStyle)) __obj.updateDynamic("buttonTextStyle")(buttonTextStyle.asInstanceOf[js.Any])
     if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText.asInstanceOf[js.Any])
     if (confirmText != null) __obj.updateDynamic("confirmText")(confirmText.asInstanceOf[js.Any])
     if (countriesList != null) __obj.updateDynamic("countriesList")(countriesList.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (flagStyle != null) __obj.updateDynamic("flagStyle")(flagStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flagStyle)) __obj.updateDynamic("flagStyle")(flagStyle.asInstanceOf[js.Any])
     if (initialCountry != null) __obj.updateDynamic("initialCountry")(initialCountry.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (onChangePhoneNumber != null) __obj.updateDynamic("onChangePhoneNumber")(js.Any.fromFunction1(onChangePhoneNumber))
     if (onPressCancel != null) __obj.updateDynamic("onPressCancel")(js.Any.fromFunction0(onPressCancel))
     if (onPressConfirm != null) __obj.updateDynamic("onPressConfirm")(js.Any.fromFunction0(onPressConfirm))
@@ -140,11 +140,11 @@ object ReactNativePhoneInputProps {
     if (onSelectCountry != null) __obj.updateDynamic("onSelectCountry")(js.Any.fromFunction1(onSelectCountry))
     if (pickerBackgroundColor != null) __obj.updateDynamic("pickerBackgroundColor")(pickerBackgroundColor.asInstanceOf[js.Any])
     if (pickerButtonColor != null) __obj.updateDynamic("pickerButtonColor")(pickerButtonColor.asInstanceOf[js.Any])
-    if (pickerItemStyle != null) __obj.updateDynamic("pickerItemStyle")(pickerItemStyle.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(pickerItemStyle)) __obj.updateDynamic("pickerItemStyle")(pickerItemStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (textComponent != null) __obj.updateDynamic("textComponent")(textComponent.asInstanceOf[js.Any])
     if (textProps != null) __obj.updateDynamic("textProps")(textProps.asInstanceOf[js.Any])
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(textStyle)) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactNativePhoneInputProps[TextComponentType]]
   }

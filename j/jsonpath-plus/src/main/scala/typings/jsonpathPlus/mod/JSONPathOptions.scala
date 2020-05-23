@@ -135,25 +135,24 @@ object JSONPathOptions {
     flatten: js.UndefOr[Boolean] = js.undefined,
     json: Boolean | Double | String | js.Object | js.Array[_] = null,
     otherTypeCallback: /* repeated */ js.Any => Unit = null,
-    parent: js.Any = null,
-    parentProperty: js.Any = null,
+    parent: js.UndefOr[Null | js.Any] = js.undefined,
+    parentProperty: js.UndefOr[Null | js.Any] = js.undefined,
     preventEval: js.UndefOr[Boolean] = js.undefined,
     resultType: value | path | pointer | parent | parentProperty | all = null,
     sandbox: Map[String, _] = null,
     wrap: js.UndefOr[Boolean] = js.undefined
   ): JSONPathOptions = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (!js.isUndefined(autostart)) __obj.updateDynamic("autostart")(autostart.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any])
+    if (!js.isUndefined(autostart)) __obj.updateDynamic("autostart")(autostart.get.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction3(callback))
-    if (!js.isUndefined(flatten)) __obj.updateDynamic("flatten")(flatten.asInstanceOf[js.Any])
-    if (json != null) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
+    if (!js.isUndefined(flatten)) __obj.updateDynamic("flatten")(flatten.get.asInstanceOf[js.Any])
     if (otherTypeCallback != null) __obj.updateDynamic("otherTypeCallback")(js.Any.fromFunction1(otherTypeCallback))
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (parentProperty != null) __obj.updateDynamic("parentProperty")(parentProperty.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventEval)) __obj.updateDynamic("preventEval")(preventEval.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(parentProperty)) __obj.updateDynamic("parentProperty")(parentProperty.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventEval)) __obj.updateDynamic("preventEval")(preventEval.get.asInstanceOf[js.Any])
     if (resultType != null) __obj.updateDynamic("resultType")(resultType.asInstanceOf[js.Any])
     if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONPathOptions]
   }
 }

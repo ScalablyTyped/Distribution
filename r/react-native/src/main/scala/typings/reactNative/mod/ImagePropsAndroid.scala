@@ -43,16 +43,16 @@ trait ImagePropsAndroid extends js.Object {
 object ImagePropsAndroid {
   @scala.inline
   def apply(
-    fadeDuration: Int | Double = null,
-    height: Int | Double = null,
+    fadeDuration: js.UndefOr[Double] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
     resizeMethod: auto | resize | scale = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): ImagePropsAndroid = {
     val __obj = js.Dynamic.literal()
-    if (fadeDuration != null) __obj.updateDynamic("fadeDuration")(fadeDuration.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(fadeDuration)) __obj.updateDynamic("fadeDuration")(fadeDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (resizeMethod != null) __obj.updateDynamic("resizeMethod")(resizeMethod.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImagePropsAndroid]
   }
 }

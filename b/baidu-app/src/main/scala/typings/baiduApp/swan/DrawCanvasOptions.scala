@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 trait DrawCanvasOptions extends js.Object {
   /**
-  		 * 绘图动作数组，由 swan.createCanvasContext 创建的 context，
-  		 * 调用 getActions 方法导出绘图动作数组。
-  		 */
+    * 绘图动作数组，由 swan.createCanvasContext 创建的 context，
+    * 调用 getActions 方法导出绘图动作数组。
+    */
   var actions: js.Array[CanvasAction]
   /** 画布标识，传入 <canvas/> 的 cavas-id */
   var canvasId: Double | String

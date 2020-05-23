@@ -37,7 +37,7 @@ trait TaskState[A /* <: js.Array[_] */, R] extends js.Object {
 
 object TaskState {
   @scala.inline
-  def apply[A /* <: js.Array[_] */, R](
+  def apply[A, R](
     args: A,
     pending: Boolean,
     rejected: Boolean,

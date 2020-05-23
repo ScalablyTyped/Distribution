@@ -42,7 +42,7 @@ object IndexConfig {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
     if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
-    if (!js.isUndefined(ifnotexist)) __obj.updateDynamic("ifnotexist")(ifnotexist.asInstanceOf[js.Any])
+    if (!js.isUndefined(ifnotexist)) __obj.updateDynamic("ifnotexist")(ifnotexist.get.asInstanceOf[js.Any])
     if (keyType != null) __obj.updateDynamic("keyType")(keyType.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])

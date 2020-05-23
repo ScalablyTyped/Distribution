@@ -21,7 +21,7 @@ object SdkError {
     stack: String = null
   ): SdkError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (!js.isUndefined(connectionError)) __obj.updateDynamic("connectionError")(connectionError.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectionError)) __obj.updateDynamic("connectionError")(connectionError.get.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[SdkError]
   }

@@ -1,6 +1,6 @@
 package typings.jszip.mod
 
-import typings.jszip.AnonLevel
+import typings.jszip.anon.Level
 import typings.jszip.jszipStrings.DOS
 import typings.jszip.jszipStrings.UNIX
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait JSZipGeneratorOptions[T /* <: OutputType */] extends js.Object {
   var comment: js.UndefOr[String] = js.undefined
   var compression: js.UndefOr[Compression] = js.undefined
-  var compressionOptions: js.UndefOr[Null | AnonLevel] = js.undefined
+  var compressionOptions: js.UndefOr[Null | Level] = js.undefined
   var encodeFileName: js.UndefOr[js.Function1[/* filename */ String, String]] = js.undefined
   /**
     * mime-type for the generated file.
@@ -27,10 +27,10 @@ trait JSZipGeneratorOptions[T /* <: OutputType */] extends js.Object {
 
 object JSZipGeneratorOptions {
   @scala.inline
-  def apply[T /* <: OutputType */](
+  def apply[T](
     comment: String = null,
     compression: Compression = null,
-    compressionOptions: AnonLevel = null,
+    compressionOptions: js.UndefOr[Null | Level] = js.undefined,
     encodeFileName: /* filename */ String => String = null,
     mimeType: String = null,
     platform: DOS | UNIX = null,
@@ -40,11 +40,11 @@ object JSZipGeneratorOptions {
     val __obj = js.Dynamic.literal()
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
-    if (compressionOptions != null) __obj.updateDynamic("compressionOptions")(compressionOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(compressionOptions)) __obj.updateDynamic("compressionOptions")(compressionOptions.asInstanceOf[js.Any])
     if (encodeFileName != null) __obj.updateDynamic("encodeFileName")(js.Any.fromFunction1(encodeFileName))
     if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (!js.isUndefined(streamFiles)) __obj.updateDynamic("streamFiles")(streamFiles.asInstanceOf[js.Any])
+    if (!js.isUndefined(streamFiles)) __obj.updateDynamic("streamFiles")(streamFiles.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSZipGeneratorOptions[T]]
   }

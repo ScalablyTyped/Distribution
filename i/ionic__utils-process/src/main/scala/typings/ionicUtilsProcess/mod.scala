@@ -1,6 +1,7 @@
 package typings.ionicUtilsProcess
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.ionicUtilsProcess.anon.Interval
 import typings.node.NodeJS.ProcessEnv
 import typings.std.Error
 import scala.scalajs.js
@@ -24,7 +25,7 @@ object mod extends js.Object {
   def processExit(exitCode: Double): js.Promise[Unit] = js.native
   def sleep(ms: Double): js.Promise[Unit] = js.native
   def sleepForever(): js.Promise[scala.Nothing] = js.native
-  def sleepUntil(predicate: js.Function0[Boolean], hasIntervalTimeout: AnonInterval): js.Promise[Unit] = js.native
+  def sleepUntil(predicate: js.Function0[Boolean], hasIntervalTimeout: Interval): js.Promise[Unit] = js.native
   type ExitFn = js.Function0[js.Promise[Unit]]
 }
 

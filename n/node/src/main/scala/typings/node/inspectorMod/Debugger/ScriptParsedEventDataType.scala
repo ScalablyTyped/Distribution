@@ -87,16 +87,16 @@ object ScriptParsedEventDataType {
     hasSourceURL: js.UndefOr[Boolean] = js.undefined,
     isLiveEdit: js.UndefOr[Boolean] = js.undefined,
     isModule: js.UndefOr[Boolean] = js.undefined,
-    length: Int | Double = null,
+    length: js.UndefOr[Double] = js.undefined,
     sourceMapURL: String = null,
     stackTrace: StackTrace = null
   ): ScriptParsedEventDataType = {
     val __obj = js.Dynamic.literal(endColumn = endColumn.asInstanceOf[js.Any], endLine = endLine.asInstanceOf[js.Any], executionContextId = executionContextId.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], scriptId = scriptId.asInstanceOf[js.Any], startColumn = startColumn.asInstanceOf[js.Any], startLine = startLine.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     if (executionContextAuxData != null) __obj.updateDynamic("executionContextAuxData")(executionContextAuxData.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasSourceURL)) __obj.updateDynamic("hasSourceURL")(hasSourceURL.asInstanceOf[js.Any])
-    if (!js.isUndefined(isLiveEdit)) __obj.updateDynamic("isLiveEdit")(isLiveEdit.asInstanceOf[js.Any])
-    if (!js.isUndefined(isModule)) __obj.updateDynamic("isModule")(isModule.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasSourceURL)) __obj.updateDynamic("hasSourceURL")(hasSourceURL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLiveEdit)) __obj.updateDynamic("isLiveEdit")(isLiveEdit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isModule)) __obj.updateDynamic("isModule")(isModule.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
     if (sourceMapURL != null) __obj.updateDynamic("sourceMapURL")(sourceMapURL.asInstanceOf[js.Any])
     if (stackTrace != null) __obj.updateDynamic("stackTrace")(stackTrace.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScriptParsedEventDataType]

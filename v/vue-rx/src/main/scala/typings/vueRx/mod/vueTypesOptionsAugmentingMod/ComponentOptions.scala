@@ -15,7 +15,7 @@ trait ComponentOptions[V /* <: Vue */] extends js.Object {
 
 object ComponentOptions {
   @scala.inline
-  def apply[V /* <: Vue */](
+  def apply[V](
     domStreams: js.Array[String] = null,
     observableMethods: js.Array[String] | (Record[String, String]) = null,
     subscriptions: Observables | (js.ThisFunction0[/* this */ V, Observables]) = null

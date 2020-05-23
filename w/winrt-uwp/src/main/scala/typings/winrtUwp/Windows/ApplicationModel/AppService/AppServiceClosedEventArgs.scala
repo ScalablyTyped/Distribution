@@ -5,10 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides data for the AppServiceConnection.ServiceClosed event that occurs when the other endpoint closes connection to the app service. */
-@JSGlobal("Windows.ApplicationModel.AppService.AppServiceClosedEventArgs")
-@js.native
-abstract class AppServiceClosedEventArgs () extends js.Object {
+trait AppServiceClosedEventArgs extends js.Object {
   /** Gets the status that was set when the endpoint for the app service was closed. */
-  var status: AppServiceClosedStatus = js.native
+  var status: AppServiceClosedStatus
+}
+
+object AppServiceClosedEventArgs {
+  @scala.inline
+  def apply(status: AppServiceClosedStatus): AppServiceClosedEventArgs = {
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AppServiceClosedEventArgs]
+  }
 }
 

@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.NegateBlock")
 @js.native
-class NegateBlock protected () extends NodeMaterialBlock {
-  /**
-    * Creates a new NegateBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait NegateBlock extends NodeMaterialBlock {
   /**
     * Gets the output component
     */

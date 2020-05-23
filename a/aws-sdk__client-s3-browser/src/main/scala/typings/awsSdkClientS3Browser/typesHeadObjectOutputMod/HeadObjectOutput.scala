@@ -134,7 +134,7 @@ object HeadObjectOutput {
     ContentDisposition: String = null,
     ContentEncoding: String = null,
     ContentLanguage: String = null,
-    ContentLength: Int | Double = null,
+    ContentLength: js.UndefOr[Double] = js.undefined,
     ContentType: String = null,
     DeleteMarker: js.UndefOr[Boolean] = js.undefined,
     ETag: String = null,
@@ -142,8 +142,8 @@ object HeadObjectOutput {
     Expires: Date = null,
     LastModified: Date = null,
     Metadata: StringDictionary[String] = null,
-    MissingMeta: Int | Double = null,
-    PartsCount: Int | Double = null,
+    MissingMeta: js.UndefOr[Double] = js.undefined,
+    PartsCount: js.UndefOr[Double] = js.undefined,
     ReplicationStatus: COMPLETE | PENDING | FAILED | REPLICA | String = null,
     RequestCharged: requester_ | String = null,
     Restore: String = null,
@@ -161,16 +161,16 @@ object HeadObjectOutput {
     if (ContentDisposition != null) __obj.updateDynamic("ContentDisposition")(ContentDisposition.asInstanceOf[js.Any])
     if (ContentEncoding != null) __obj.updateDynamic("ContentEncoding")(ContentEncoding.asInstanceOf[js.Any])
     if (ContentLanguage != null) __obj.updateDynamic("ContentLanguage")(ContentLanguage.asInstanceOf[js.Any])
-    if (ContentLength != null) __obj.updateDynamic("ContentLength")(ContentLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(ContentLength)) __obj.updateDynamic("ContentLength")(ContentLength.get.asInstanceOf[js.Any])
     if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeleteMarker)) __obj.updateDynamic("DeleteMarker")(DeleteMarker.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeleteMarker)) __obj.updateDynamic("DeleteMarker")(DeleteMarker.get.asInstanceOf[js.Any])
     if (ETag != null) __obj.updateDynamic("ETag")(ETag.asInstanceOf[js.Any])
     if (Expiration != null) __obj.updateDynamic("Expiration")(Expiration.asInstanceOf[js.Any])
     if (Expires != null) __obj.updateDynamic("Expires")(Expires.asInstanceOf[js.Any])
     if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
     if (Metadata != null) __obj.updateDynamic("Metadata")(Metadata.asInstanceOf[js.Any])
-    if (MissingMeta != null) __obj.updateDynamic("MissingMeta")(MissingMeta.asInstanceOf[js.Any])
-    if (PartsCount != null) __obj.updateDynamic("PartsCount")(PartsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(MissingMeta)) __obj.updateDynamic("MissingMeta")(MissingMeta.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(PartsCount)) __obj.updateDynamic("PartsCount")(PartsCount.get.asInstanceOf[js.Any])
     if (ReplicationStatus != null) __obj.updateDynamic("ReplicationStatus")(ReplicationStatus.asInstanceOf[js.Any])
     if (RequestCharged != null) __obj.updateDynamic("RequestCharged")(RequestCharged.asInstanceOf[js.Any])
     if (Restore != null) __obj.updateDynamic("Restore")(Restore.asInstanceOf[js.Any])

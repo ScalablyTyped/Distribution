@@ -18,14 +18,14 @@ object SocketOptions {
   def apply(
     port: Double,
     allowHalfOpen: js.UndefOr[Boolean] = js.undefined,
-    family: Int | Double = null,
+    family: js.UndefOr[Double] = js.undefined,
     host: String = null,
     localAddress: String = null,
     localPort: String = null
   ): SocketOptions = {
     val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen.asInstanceOf[js.Any])
-    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(family)) __obj.updateDynamic("family")(family.get.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
     if (localPort != null) __obj.updateDynamic("localPort")(localPort.asInstanceOf[js.Any])

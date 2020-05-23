@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.anon.Options
 import typings.officeUiFabricReact.dropdownTypesMod.IDropdownProps
 import typings.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType
 import typings.react.mod.FunctionComponent
@@ -20,7 +21,7 @@ object dropdownMod extends js.Object {
   /* static members */
   @js.native
   object DropdownBase extends js.Object {
-    var defaultProps: AnonOptions = js.native
+    var defaultProps: Options = js.native
   }
   
   @js.native

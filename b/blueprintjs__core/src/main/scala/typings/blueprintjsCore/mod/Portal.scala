@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.ValidationMapIPortalConte
+import typings.blueprintjsCore.anon.ValidationMapIPortalConte
 import typings.blueprintjsCore.portalMod.IPortalProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`

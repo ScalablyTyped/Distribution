@@ -19,7 +19,7 @@ object MergeConfig {
     mode: typings.seamlessImmutable.seamlessImmutableStrings.replace | merge = null
   ): MergeConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep.asInstanceOf[js.Any])
+    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep.get.asInstanceOf[js.Any])
     if (merger != null) __obj.updateDynamic("merger")(js.Any.fromFunction3(merger))
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergeConfig]

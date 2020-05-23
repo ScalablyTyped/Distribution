@@ -1,12 +1,13 @@
 package typings.headroom
 
+import typings.headroom.anon.Initial
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HeadroomOptions extends js.Object {
-  var classes: js.UndefOr[AnonInitial] = js.undefined
+  var classes: js.UndefOr[Initial] = js.undefined
   var offset: js.UndefOr[Double] = js.undefined
   var onBottom: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onNotBottom: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -21,8 +22,8 @@ trait HeadroomOptions extends js.Object {
 object HeadroomOptions {
   @scala.inline
   def apply(
-    classes: AnonInitial = null,
-    offset: Int | Double = null,
+    classes: Initial = null,
+    offset: js.UndefOr[Double] = js.undefined,
     onBottom: () => Unit = null,
     onNotBottom: () => Unit = null,
     onNotTop: () => Unit = null,
@@ -34,7 +35,7 @@ object HeadroomOptions {
   ): HeadroomOptions = {
     val __obj = js.Dynamic.literal()
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (onBottom != null) __obj.updateDynamic("onBottom")(js.Any.fromFunction0(onBottom))
     if (onNotBottom != null) __obj.updateDynamic("onNotBottom")(js.Any.fromFunction0(onNotBottom))
     if (onNotTop != null) __obj.updateDynamic("onNotTop")(js.Any.fromFunction0(onNotTop))

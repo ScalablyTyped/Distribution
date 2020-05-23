@@ -2,7 +2,6 @@ package typings.reduxFirstRouter.mod
 
 import typings.redux.mod.AnyAction
 import typings.redux.mod.Store
-import typings.reduxFirstRouter.AnonAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +20,7 @@ trait NavigatorsConfig[TKeys, TState] extends js.Object {
     store: Store[TState, AnyAction],
     routesMap: RoutesMap[TKeys, TState],
     action: js.Object
-  ): AnonAction
+  ): typings.reduxFirstRouter.anon.Action
   def patchNavigators(navigators: Navigators[TState]): Unit
 }
 
@@ -29,7 +28,7 @@ object NavigatorsConfig {
   @scala.inline
   def apply[TKeys, TState](
     actionToNavigation: (Navigators[TState], js.Object, Nullable[NavigationAction], Nullable[Route[TKeys, TState]]) => js.Object,
-    navigationToAction: (Navigators[TState], Store[TState, AnyAction], RoutesMap[TKeys, TState], js.Object) => AnonAction,
+    navigationToAction: (Navigators[TState], Store[TState, AnyAction], RoutesMap[TKeys, TState], js.Object) => typings.reduxFirstRouter.anon.Action,
     navigators: Navigators[TState],
     patchNavigators: Navigators[TState] => Unit
   ): NavigatorsConfig[TKeys, TState] = {

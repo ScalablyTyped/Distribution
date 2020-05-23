@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojtableMod.ojTable
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.AnonDatasource
+import typings.oracleOraclejet.anon.Datasource
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line interface-over-type-literal
 trait ColumnsRendererContext[K, D] extends js.Object {
-  var cellContext: AnonDatasource[K, D]
+  var cellContext: Datasource[K, D]
   var columnIndex: Double
   var componentElement: Element
   var data: D
@@ -20,7 +20,7 @@ trait ColumnsRendererContext[K, D] extends js.Object {
 object ColumnsRendererContext {
   @scala.inline
   def apply[K, D](
-    cellContext: AnonDatasource[K, D],
+    cellContext: Datasource[K, D],
     columnIndex: Double,
     componentElement: Element,
     data: D,

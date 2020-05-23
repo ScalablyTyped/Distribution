@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation._
 
 trait DebugConfiguration
   extends /**
-		 * Additional debug type specific properties.
-		 */
+  * Additional debug type specific properties.
+  */
 /* key */ StringDictionary[js.Any] {
   /**
-  		 * The name of the debug session.
-  		 */
+    * The name of the debug session.
+    */
   var name: String
   /**
-  		 * The request type of the debug session.
-  		 */
+    * The request type of the debug session.
+    */
   var request: String
   /**
-  		 * The type of the debug session.
-  		 */
+    * The type of the debug session.
+    */
   var `type`: String
 }
 
@@ -30,10 +30,7 @@ object DebugConfiguration {
     name: String,
     request: String,
     `type`: String,
-    StringDictionary: /**
-  		 * Additional debug type specific properties.
-  		 */
-  /* key */ StringDictionary[js.Any] = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null
   ): DebugConfiguration = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

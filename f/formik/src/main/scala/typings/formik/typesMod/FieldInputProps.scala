@@ -1,7 +1,7 @@
 package typings.formik.typesMod
 
-import typings.formik.FnCall
-import typings.formik.FnCallE
+import typings.formik.anon.FnCall
+import typings.formik.anon.FnCallE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,8 +32,8 @@ object FieldInputProps {
     multiple: js.UndefOr[Boolean] = js.undefined
   ): FieldInputProps[Value] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], onBlur = onBlur.asInstanceOf[js.Any], onChange = onChange.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldInputProps[Value]]
   }
 }

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`select-bookmark`
 import scala.scalajs.js
@@ -75,8 +74,4 @@ trait Bookmarks
   @JSName("on")
   def on_selectbookmark(name: `select-bookmark`, eventHandler: BookmarksSelectBookmarkEventHandler): IHandle = js.native
 }
-
-@JSGlobal("__esri.Bookmarks")
-@js.native
-object Bookmarks extends TopLevel[BookmarksConstructor]
 

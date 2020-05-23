@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 
 trait IOS extends IBase {
   /** [Method] A hybrid property can be either accessed as a method call i e  if Ext os is Android
-  		* @param value String The OS name to check.
-  		* @returns Boolean
-  		*/
+    * @param value String The OS name to check.
+    * @returns Boolean
+    */
   var is: js.UndefOr[js.Function1[/* value */ js.UndefOr[String], Boolean]] = js.undefined
   /** [Property] (String) */
   var name: js.UndefOr[String] = js.undefined
@@ -61,7 +61,7 @@ object IOS {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])

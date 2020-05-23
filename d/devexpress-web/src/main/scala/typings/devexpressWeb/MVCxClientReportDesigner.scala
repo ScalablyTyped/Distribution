@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side equivalent of the MVCxReportDesigner class.
   */
-@JSGlobal("MVCxClientReportDesigner")
 @js.native
-class MVCxClientReportDesigner () extends ASPxClientReportDesigner {
+trait MVCxClientReportDesigner extends ASPxClientReportDesigner {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */

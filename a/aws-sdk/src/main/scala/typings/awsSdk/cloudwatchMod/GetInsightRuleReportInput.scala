@@ -43,12 +43,12 @@ object GetInsightRuleReportInput {
     Period: Period,
     RuleName: InsightRuleName,
     StartTime: Timestamp,
-    MaxContributorCount: Int | Double = null,
+    MaxContributorCount: js.UndefOr[InsightRuleUnboundInteger] = js.undefined,
     Metrics: InsightRuleMetricList = null,
     OrderBy: InsightRuleOrderBy = null
   ): GetInsightRuleReportInput = {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], Period = Period.asInstanceOf[js.Any], RuleName = RuleName.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
-    if (MaxContributorCount != null) __obj.updateDynamic("MaxContributorCount")(MaxContributorCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxContributorCount)) __obj.updateDynamic("MaxContributorCount")(MaxContributorCount.get.asInstanceOf[js.Any])
     if (Metrics != null) __obj.updateDynamic("Metrics")(Metrics.asInstanceOf[js.Any])
     if (OrderBy != null) __obj.updateDynamic("OrderBy")(OrderBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInsightRuleReportInput]

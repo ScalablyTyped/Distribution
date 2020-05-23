@@ -1,6 +1,5 @@
 package typings.antd.gridRowMod
 
-import typings.antd.AnonGutter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +12,6 @@ class default () extends Row
 @JSImport("antd/lib/grid/row", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonGutter = js.native
+  var defaultProps: typings.antd.anon.Gutter = js.native
 }
 

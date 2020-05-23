@@ -1,5 +1,6 @@
 package typings.antdMobile
 
+import typings.antdMobile.anon.Cols
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +15,7 @@ object pickerViewMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonCols = js.native
+    var defaultProps: Cols = js.native
   }
   
 }

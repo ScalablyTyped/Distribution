@@ -18,19 +18,19 @@ object Diagnostic {
     code: Double,
     messageText: java.lang.String | DiagnosticMessageChain,
     file: SourceFile = null,
-    length: Int | Double = null,
+    length: js.UndefOr[Double] = js.undefined,
     relatedInformation: js.Array[DiagnosticRelatedInformation] = null,
     reportsUnnecessary: js.Object = null,
     source: java.lang.String = null,
-    start: Int | Double = null
+    start: js.UndefOr[Double] = js.undefined
   ): Diagnostic = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], messageText = messageText.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
     if (relatedInformation != null) __obj.updateDynamic("relatedInformation")(relatedInformation.asInstanceOf[js.Any])
     if (reportsUnnecessary != null) __obj.updateDynamic("reportsUnnecessary")(reportsUnnecessary.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Diagnostic]
   }
 }

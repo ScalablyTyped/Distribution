@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLCanvasElement")
 @js.native
-class HTMLCanvasElement protected () extends js.Object {
+trait HTMLCanvasElement extends js.Object {
   @JSName("MSHTML.HTMLCanvasElement_typekey")
   var MSHTMLDotHTMLCanvasElement_typekey: HTMLCanvasElement = js.native
   var accessKey: String = js.native

@@ -43,7 +43,7 @@ trait OptionGroup extends js.Object {
 object OptionGroup {
   @scala.inline
   def apply(
-    AllowsVpcAndNonVpcInstanceMemberships: js.UndefOr[scala.Boolean] = js.undefined,
+    AllowsVpcAndNonVpcInstanceMemberships: js.UndefOr[Boolean] = js.undefined,
     EngineName: String = null,
     MajorEngineVersion: String = null,
     OptionGroupArn: String = null,
@@ -53,7 +53,7 @@ object OptionGroup {
     VpcId: String = null
   ): OptionGroup = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllowsVpcAndNonVpcInstanceMemberships)) __obj.updateDynamic("AllowsVpcAndNonVpcInstanceMemberships")(AllowsVpcAndNonVpcInstanceMemberships.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllowsVpcAndNonVpcInstanceMemberships)) __obj.updateDynamic("AllowsVpcAndNonVpcInstanceMemberships")(AllowsVpcAndNonVpcInstanceMemberships.get.asInstanceOf[js.Any])
     if (EngineName != null) __obj.updateDynamic("EngineName")(EngineName.asInstanceOf[js.Any])
     if (MajorEngineVersion != null) __obj.updateDynamic("MajorEngineVersion")(MajorEngineVersion.asInstanceOf[js.Any])
     if (OptionGroupArn != null) __obj.updateDynamic("OptionGroupArn")(OptionGroupArn.asInstanceOf[js.Any])

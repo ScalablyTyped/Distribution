@@ -33,7 +33,9 @@ import scala.scalajs.js.annotation._
 class Spritesheet protected ()
   extends typings.pixiJs.PIXI.Spritesheet {
   def this(baseTexture: typings.pixiJs.PIXI.BaseTexture, data: js.Any) = this()
+  def this(baseTexture: typings.pixiJs.PIXI.Texture, data: js.Any) = this()
   def this(baseTexture: typings.pixiJs.PIXI.BaseTexture, data: js.Any, resolutionFilename: String) = this()
+  def this(baseTexture: typings.pixiJs.PIXI.Texture, data: js.Any, resolutionFilename: String) = this()
 }
 
 /* static members */

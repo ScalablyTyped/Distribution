@@ -52,32 +52,32 @@ object DraggableOptions {
     create: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Unit = null,
     cursor: String = null,
     cursorAt: js.Any = null,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    distance: Int | Double = null,
+    distance: js.UndefOr[Double] = js.undefined,
     drag: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Unit = null,
     grid: js.Array[Double] = null,
     handle: js.Any = null,
     helper: js.Any = null,
     iframeFix: js.Any = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     refreshPositions: js.UndefOr[Boolean] = js.undefined,
     revert: js.Any = null,
-    revertDuration: Int | Double = null,
+    revertDuration: js.UndefOr[Double] = js.undefined,
     scope: String = null,
     scroll: js.UndefOr[Boolean] = js.undefined,
-    scrollSensitivity: Int | Double = null,
-    scrollSpeed: Int | Double = null,
+    scrollSensitivity: js.UndefOr[Double] = js.undefined,
+    scrollSpeed: js.UndefOr[Double] = js.undefined,
     snap: js.Any = null,
     snapMode: String = null,
-    snapTolerance: Int | Double = null,
+    snapTolerance: js.UndefOr[Double] = js.undefined,
     stack: String = null,
     start: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Unit = null,
     stop: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Unit = null,
-    zIndex: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined
   ): DraggableOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addClasses)) __obj.updateDynamic("addClasses")(addClasses.asInstanceOf[js.Any])
+    if (!js.isUndefined(addClasses)) __obj.updateDynamic("addClasses")(addClasses.get.asInstanceOf[js.Any])
     if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
     if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
     if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
@@ -87,29 +87,29 @@ object DraggableOptions {
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (cursorAt != null) __obj.updateDynamic("cursorAt")(cursorAt.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
     if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction2(drag))
     if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
     if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
     if (helper != null) __obj.updateDynamic("helper")(helper.asInstanceOf[js.Any])
     if (iframeFix != null) __obj.updateDynamic("iframeFix")(iframeFix.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(refreshPositions)) __obj.updateDynamic("refreshPositions")(refreshPositions.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshPositions)) __obj.updateDynamic("refreshPositions")(refreshPositions.get.asInstanceOf[js.Any])
     if (revert != null) __obj.updateDynamic("revert")(revert.asInstanceOf[js.Any])
-    if (revertDuration != null) __obj.updateDynamic("revertDuration")(revertDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(revertDuration)) __obj.updateDynamic("revertDuration")(revertDuration.get.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
-    if (scrollSensitivity != null) __obj.updateDynamic("scrollSensitivity")(scrollSensitivity.asInstanceOf[js.Any])
-    if (scrollSpeed != null) __obj.updateDynamic("scrollSpeed")(scrollSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollSensitivity)) __obj.updateDynamic("scrollSensitivity")(scrollSensitivity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollSpeed)) __obj.updateDynamic("scrollSpeed")(scrollSpeed.get.asInstanceOf[js.Any])
     if (snap != null) __obj.updateDynamic("snap")(snap.asInstanceOf[js.Any])
     if (snapMode != null) __obj.updateDynamic("snapMode")(snapMode.asInstanceOf[js.Any])
-    if (snapTolerance != null) __obj.updateDynamic("snapTolerance")(snapTolerance.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapTolerance)) __obj.updateDynamic("snapTolerance")(snapTolerance.get.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2(start))
     if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2(stop))
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggableOptions]
   }
 }

@@ -26,12 +26,12 @@ object ListAssignmentsForHITRequest {
   def apply(
     HITId: EntityId,
     AssignmentStatuses: AssignmentStatusList = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[ResultSize] = js.undefined,
     NextToken: PaginationToken = null
   ): ListAssignmentsForHITRequest = {
     val __obj = js.Dynamic.literal(HITId = HITId.asInstanceOf[js.Any])
     if (AssignmentStatuses != null) __obj.updateDynamic("AssignmentStatuses")(AssignmentStatuses.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAssignmentsForHITRequest]
   }

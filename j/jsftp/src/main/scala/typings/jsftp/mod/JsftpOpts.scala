@@ -1,6 +1,6 @@
 package typings.jsftp.mod
 
-import typings.jsftp.AnonHost
+import typings.jsftp.anon.Host
 import typings.node.netMod.Socket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait JsftpOpts extends js.Object {
   var createSocket: js.UndefOr[
-    js.Function2[/* hasPortHost */ AnonHost, /* firstAction */ js.Function0[js.Object], Socket]
+    js.Function2[/* hasPortHost */ Host, /* firstAction */ js.Function0[js.Object], Socket]
   ] = js.undefined
   var host: js.UndefOr[String] = js.undefined
   var pass: js.UndefOr[String] = js.undefined
@@ -20,10 +20,10 @@ trait JsftpOpts extends js.Object {
 object JsftpOpts {
   @scala.inline
   def apply(
-    createSocket: (/* hasPortHost */ AnonHost, /* firstAction */ js.Function0[js.Object]) => Socket = null,
+    createSocket: (/* hasPortHost */ Host, /* firstAction */ js.Function0[js.Object]) => Socket = null,
     host: String = null,
     pass: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     useList: js.UndefOr[Boolean] = js.undefined,
     user: String = null
   ): JsftpOpts = {
@@ -31,8 +31,8 @@ object JsftpOpts {
     if (createSocket != null) __obj.updateDynamic("createSocket")(js.Any.fromFunction2(createSocket))
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (pass != null) __obj.updateDynamic("pass")(pass.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(useList)) __obj.updateDynamic("useList")(useList.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useList)) __obj.updateDynamic("useList")(useList.get.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsftpOpts]
   }

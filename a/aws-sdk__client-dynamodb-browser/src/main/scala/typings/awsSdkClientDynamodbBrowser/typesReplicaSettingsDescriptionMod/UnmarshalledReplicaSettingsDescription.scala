@@ -34,17 +34,17 @@ object UnmarshalledReplicaSettingsDescription {
     RegionName: String,
     ReplicaGlobalSecondaryIndexSettings: js.Array[UnmarshalledReplicaGlobalSecondaryIndexSettingsDescription] = null,
     ReplicaProvisionedReadCapacityAutoScalingSettings: UnmarshalledAutoScalingSettingsDescription = null,
-    ReplicaProvisionedReadCapacityUnits: Int | Double = null,
+    ReplicaProvisionedReadCapacityUnits: js.UndefOr[Double] = js.undefined,
     ReplicaProvisionedWriteCapacityAutoScalingSettings: UnmarshalledAutoScalingSettingsDescription = null,
-    ReplicaProvisionedWriteCapacityUnits: Int | Double = null,
+    ReplicaProvisionedWriteCapacityUnits: js.UndefOr[Double] = js.undefined,
     ReplicaStatus: CREATING | UPDATING | DELETING | ACTIVE | String = null
   ): UnmarshalledReplicaSettingsDescription = {
     val __obj = js.Dynamic.literal(RegionName = RegionName.asInstanceOf[js.Any])
     if (ReplicaGlobalSecondaryIndexSettings != null) __obj.updateDynamic("ReplicaGlobalSecondaryIndexSettings")(ReplicaGlobalSecondaryIndexSettings.asInstanceOf[js.Any])
     if (ReplicaProvisionedReadCapacityAutoScalingSettings != null) __obj.updateDynamic("ReplicaProvisionedReadCapacityAutoScalingSettings")(ReplicaProvisionedReadCapacityAutoScalingSettings.asInstanceOf[js.Any])
-    if (ReplicaProvisionedReadCapacityUnits != null) __obj.updateDynamic("ReplicaProvisionedReadCapacityUnits")(ReplicaProvisionedReadCapacityUnits.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReplicaProvisionedReadCapacityUnits)) __obj.updateDynamic("ReplicaProvisionedReadCapacityUnits")(ReplicaProvisionedReadCapacityUnits.get.asInstanceOf[js.Any])
     if (ReplicaProvisionedWriteCapacityAutoScalingSettings != null) __obj.updateDynamic("ReplicaProvisionedWriteCapacityAutoScalingSettings")(ReplicaProvisionedWriteCapacityAutoScalingSettings.asInstanceOf[js.Any])
-    if (ReplicaProvisionedWriteCapacityUnits != null) __obj.updateDynamic("ReplicaProvisionedWriteCapacityUnits")(ReplicaProvisionedWriteCapacityUnits.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReplicaProvisionedWriteCapacityUnits)) __obj.updateDynamic("ReplicaProvisionedWriteCapacityUnits")(ReplicaProvisionedWriteCapacityUnits.get.asInstanceOf[js.Any])
     if (ReplicaStatus != null) __obj.updateDynamic("ReplicaStatus")(ReplicaStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledReplicaSettingsDescription]
   }

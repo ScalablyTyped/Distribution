@@ -17,10 +17,10 @@ trait ModelPredictConfig extends js.Object {
 
 object ModelPredictConfig {
   @scala.inline
-  def apply(batchSize: Int | Double = null, verbose: js.UndefOr[Boolean] = js.undefined): ModelPredictConfig = {
+  def apply(batchSize: js.UndefOr[Double] = js.undefined, verbose: js.UndefOr[Boolean] = js.undefined): ModelPredictConfig = {
     val __obj = js.Dynamic.literal()
-    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelPredictConfig]
   }
 }

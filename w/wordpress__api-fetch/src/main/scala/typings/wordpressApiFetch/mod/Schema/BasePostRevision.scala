@@ -1,7 +1,7 @@
 package typings.wordpressApiFetch.mod.Schema
 
 import typings.std.Record
-import typings.wordpressApiFetch.AnonDictk
+import typings.wordpressApiFetch.anon.Dictk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,8 +23,8 @@ trait BasePostRevision[T /* <: Context */] extends BaseResponse {
 
 object BasePostRevision {
   @scala.inline
-  def apply[T /* <: Context */](
-    _links: Record[String, js.Array[AnonDictk]],
+  def apply[T](
+    _links: Record[String, js.Array[Dictk]],
     author: Double,
     content: Contextual[T, js.Object, js.Object],
     date: String,

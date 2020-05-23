@@ -11,10 +11,10 @@ trait WorkbookSheetRowCellBorderRight extends js.Object {
 
 object WorkbookSheetRowCellBorderRight {
   @scala.inline
-  def apply(color: String = null, size: Int | Double = null): WorkbookSheetRowCellBorderRight = {
+  def apply(color: String = null, size: js.UndefOr[Double] = js.undefined): WorkbookSheetRowCellBorderRight = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookSheetRowCellBorderRight]
   }
 }

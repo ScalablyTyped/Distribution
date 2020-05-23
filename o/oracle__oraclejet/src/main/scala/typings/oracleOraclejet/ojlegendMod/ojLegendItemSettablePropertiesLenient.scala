@@ -70,14 +70,14 @@ trait ojLegendItemSettablePropertiesLenient
 object ojLegendItemSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     borderColor: String = null,
     categories: js.Array[String] = null,
     categoryVisibility: hidden | visible = null,
     color: String = null,
     drilling: on | off | inherit = null,
     lineStyle: dotted | dashed | solid = null,
-    lineWidth: Int | Double = null,
+    lineWidth: js.UndefOr[Double] = js.undefined,
     markerColor: String = null,
     markerShape: circle | diamond | ellipse | human | plus | rectangle | square | star | triangleDown | triangleUp | String = null,
     markerSvgClassName: String = null,
@@ -98,7 +98,7 @@ object ojLegendItemSettablePropertiesLenient {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (drilling != null) __obj.updateDynamic("drilling")(drilling.asInstanceOf[js.Any])
     if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
     if (markerColor != null) __obj.updateDynamic("markerColor")(markerColor.asInstanceOf[js.Any])
     if (markerShape != null) __obj.updateDynamic("markerShape")(markerShape.asInstanceOf[js.Any])
     if (markerSvgClassName != null) __obj.updateDynamic("markerSvgClassName")(markerSvgClassName.asInstanceOf[js.Any])

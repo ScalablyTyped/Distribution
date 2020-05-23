@@ -1,13 +1,13 @@
 package typings.officeJs.Word
 
-import typings.officeJs.AnonExpand
-import typings.officeJs.AnonIgnorePunct
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.ClientResult
 import typings.officeJs.OfficeExtension.UpdateOptions
 import typings.officeJs.Word.Interfaces.ParagraphData
 import typings.officeJs.Word.Interfaces.ParagraphLoadOptions
 import typings.officeJs.Word.Interfaces.ParagraphUpdateData
+import typings.officeJs.anon.Expand
+import typings.officeJs.anon.IgnorePunct
 import typings.officeJs.officeJsStrings.After
 import typings.officeJs.officeJsStrings.Before
 import typings.officeJs.officeJsStrings.Centered
@@ -39,9 +39,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: WordApi 1.1]
   */
-@JSGlobal("Word.Paragraph")
 @js.native
-class Paragraph () extends ClientObject {
+trait Paragraph extends ClientObject {
   /**
     *
     * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
@@ -632,8 +631,8 @@ class Paragraph () extends ClientObject {
   def load(): Paragraph = js.native
   def load(option: String): Paragraph = js.native
   def load(option: js.Array[String]): Paragraph = js.native
-  def load(option: AnonExpand): Paragraph = js.native
   def load(option: ParagraphLoadOptions): Paragraph = js.native
+  def load(option: Expand): Paragraph = js.native
   /**
     *
     * Performs a search with the specified SearchOptions on the scope of the paragraph object. The search results are a collection of range objects.
@@ -644,8 +643,8 @@ class Paragraph () extends ClientObject {
     * @param searchOptions Optional. Options for the search.
     */
   def search(searchText: String): RangeCollection = js.native
-  def search(searchText: String, searchOptions: AnonIgnorePunct): RangeCollection = js.native
   def search(searchText: String, searchOptions: SearchOptions): RangeCollection = js.native
+  def search(searchText: String, searchOptions: IgnorePunct): RangeCollection = js.native
   /**
     *
     * Selects and navigates the Word UI to the paragraph.

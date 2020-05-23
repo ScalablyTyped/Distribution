@@ -16,17 +16,17 @@ object StartOptions {
   @scala.inline
   def apply(
     env: js.Object = null,
-    shutdownTimeout: Int | Double = null,
-    size: Int | Double = null,
-    terminateTimeout: Int | Double = null,
-    throttleDelay: Int | Double = null
+    shutdownTimeout: js.UndefOr[Double] = js.undefined,
+    size: js.UndefOr[Double] = js.undefined,
+    terminateTimeout: js.UndefOr[Double] = js.undefined,
+    throttleDelay: js.UndefOr[Double] = js.undefined
   ): StartOptions = {
     val __obj = js.Dynamic.literal()
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (shutdownTimeout != null) __obj.updateDynamic("shutdownTimeout")(shutdownTimeout.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (terminateTimeout != null) __obj.updateDynamic("terminateTimeout")(terminateTimeout.asInstanceOf[js.Any])
-    if (throttleDelay != null) __obj.updateDynamic("throttleDelay")(throttleDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(shutdownTimeout)) __obj.updateDynamic("shutdownTimeout")(shutdownTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(terminateTimeout)) __obj.updateDynamic("terminateTimeout")(terminateTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(throttleDelay)) __obj.updateDynamic("throttleDelay")(throttleDelay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartOptions]
   }
 }

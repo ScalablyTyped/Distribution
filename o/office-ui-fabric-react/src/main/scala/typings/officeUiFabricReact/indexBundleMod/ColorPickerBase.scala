@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.indexBundleMod
 
-import typings.officeUiFabricReact.PartialIColorPickerProps
+import typings.officeUiFabricReact.anon.PartialIColorPickerProps
 import typings.officeUiFabricReact.colorPickerTypesMod.IColorPickerProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`

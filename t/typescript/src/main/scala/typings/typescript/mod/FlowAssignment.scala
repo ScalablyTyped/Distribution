@@ -17,10 +17,10 @@ object FlowAssignment {
     antecedent: FlowNode,
     flags: FlowFlags,
     node: Expression | VariableDeclaration | BindingElement,
-    id: Int | Double = null
+    id: js.UndefOr[Double] = js.undefined
   ): FlowAssignment = {
     val __obj = js.Dynamic.literal(antecedent = antecedent.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowAssignment]
   }
 }

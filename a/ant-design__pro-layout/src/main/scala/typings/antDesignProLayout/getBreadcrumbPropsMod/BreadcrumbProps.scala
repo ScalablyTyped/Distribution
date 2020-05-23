@@ -1,8 +1,8 @@
 package typings.antDesignProLayout.getBreadcrumbPropsMod
 
-import typings.antDesignProLayout.AnonDefaultOpenAll
-import typings.antDesignProLayout.AnonHref
-import typings.antDesignProLayout.AnonPathname
+import typings.antDesignProLayout.anon.DefaultOpenAll
+import typings.antDesignProLayout.anon.Href
+import typings.antDesignProLayout.anon.Pathname
 import typings.antDesignProLayout.typingsMod.MenuDataItem
 import typings.antDesignProLayout.typingsMod.MessageDescriptor
 import typings.history.mod.Location
@@ -13,7 +13,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BreadcrumbProps extends js.Object {
-  var breadcrumbList: js.UndefOr[js.Array[AnonHref]] = js.undefined
+  var breadcrumbList: js.UndefOr[js.Array[Href]] = js.undefined
   var breadcrumbMap: js.UndefOr[Map[String, MenuDataItem]] = js.undefined
   var breadcrumbRender: js.UndefOr[
     js.Function1[
@@ -26,21 +26,21 @@ trait BreadcrumbProps extends js.Object {
   var itemRender: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AntdBreadcrumbProps * / any['itemRender'] */ js.Any
   ] = js.undefined
-  var location: js.UndefOr[Location[LocationState] | AnonPathname] = js.undefined
-  var menu: js.UndefOr[AnonDefaultOpenAll] = js.undefined
+  var location: js.UndefOr[Location[LocationState] | Pathname] = js.undefined
+  var menu: js.UndefOr[DefaultOpenAll] = js.undefined
 }
 
 object BreadcrumbProps {
   @scala.inline
   def apply(
-    breadcrumbList: js.Array[AnonHref] = null,
+    breadcrumbList: js.Array[Href] = null,
     breadcrumbMap: Map[String, MenuDataItem] = null,
     breadcrumbRender: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AntdBreadcrumbProps * / any['routes'] */ /* routers */ js.Any => /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AntdBreadcrumbProps * / any['routes'] */ js.Any = null,
     formatMessage: /* message */ MessageDescriptor => String = null,
     home: String = null,
     itemRender: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AntdBreadcrumbProps * / any['itemRender'] */ js.Any = null,
-    location: Location[LocationState] | AnonPathname = null,
-    menu: AnonDefaultOpenAll = null
+    location: Location[LocationState] | Pathname = null,
+    menu: DefaultOpenAll = null
   ): BreadcrumbProps = {
     val __obj = js.Dynamic.literal()
     if (breadcrumbList != null) __obj.updateDynamic("breadcrumbList")(breadcrumbList.asInstanceOf[js.Any])

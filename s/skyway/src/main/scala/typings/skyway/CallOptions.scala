@@ -18,24 +18,24 @@ trait CallOptions extends js.Object {
 object CallOptions {
   @scala.inline
   def apply(
-    audioBandwidth: Int | Double = null,
+    audioBandwidth: js.UndefOr[Double] = js.undefined,
     audioCodec: String = null,
     audioReceiveEnabled: js.UndefOr[Boolean] = js.undefined,
     label: String = null,
     metadata: js.Any = null,
-    videoBandWidth: Int | Double = null,
+    videoBandWidth: js.UndefOr[Double] = js.undefined,
     videoCodec: String = null,
     videoReceiveEnabled: js.UndefOr[Boolean] = js.undefined
   ): CallOptions = {
     val __obj = js.Dynamic.literal()
-    if (audioBandwidth != null) __obj.updateDynamic("audioBandwidth")(audioBandwidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(audioBandwidth)) __obj.updateDynamic("audioBandwidth")(audioBandwidth.get.asInstanceOf[js.Any])
     if (audioCodec != null) __obj.updateDynamic("audioCodec")(audioCodec.asInstanceOf[js.Any])
-    if (!js.isUndefined(audioReceiveEnabled)) __obj.updateDynamic("audioReceiveEnabled")(audioReceiveEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(audioReceiveEnabled)) __obj.updateDynamic("audioReceiveEnabled")(audioReceiveEnabled.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (videoBandWidth != null) __obj.updateDynamic("videoBandWidth")(videoBandWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(videoBandWidth)) __obj.updateDynamic("videoBandWidth")(videoBandWidth.get.asInstanceOf[js.Any])
     if (videoCodec != null) __obj.updateDynamic("videoCodec")(videoCodec.asInstanceOf[js.Any])
-    if (!js.isUndefined(videoReceiveEnabled)) __obj.updateDynamic("videoReceiveEnabled")(videoReceiveEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(videoReceiveEnabled)) __obj.updateDynamic("videoReceiveEnabled")(videoReceiveEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallOptions]
   }
 }

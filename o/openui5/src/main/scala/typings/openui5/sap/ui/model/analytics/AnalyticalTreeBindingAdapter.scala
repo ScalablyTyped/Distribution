@@ -4,20 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.model.analytics.AnalyticalTreeBindingAdapter")
-@js.native
-class AnalyticalTreeBindingAdapter () extends js.Object {
+trait AnalyticalTreeBindingAdapter extends js.Object {
   /**
     * Retrieves the currently set number of expanded levels from the Binding (commonly an
     * AnalyticalBinding).
     * @returns the number of expanded levels
     */
-  def getNumberOfExpandedLevels(): Double = js.native
+  def getNumberOfExpandedLevels(): Double
   /**
     * Checks if the AnalyticalBinding has totaled measures available.Used for rendering sum rows.
     * @returns wether the binding has totaled measures or not
     */
-  def hasTotaledMeasures(): Boolean = js.native
+  def hasTotaledMeasures(): Boolean
   /**
     * Sets the number of expanded levels on the TreeBinding (commonly an AnalyticalBinding).This is NOT
     * the same as AnalyticalTreeBindingAdapter#collapse or AnalyticalTreeBindingAdapter#expand.Setting the
@@ -25,6 +23,18 @@ class AnalyticalTreeBindingAdapter () extends js.Object {
     * for the ungroup/ungroup-all feature.
     * @param iLevels the number of levels which should be expanded, minimum is 0
     */
-  def setNumberOfExpandedLevels(iLevels: Double): Unit = js.native
+  def setNumberOfExpandedLevels(iLevels: Double): Unit
+}
+
+object AnalyticalTreeBindingAdapter {
+  @scala.inline
+  def apply(
+    getNumberOfExpandedLevels: () => Double,
+    hasTotaledMeasures: () => Boolean,
+    setNumberOfExpandedLevels: Double => Unit
+  ): AnalyticalTreeBindingAdapter = {
+    val __obj = js.Dynamic.literal(getNumberOfExpandedLevels = js.Any.fromFunction0(getNumberOfExpandedLevels), hasTotaledMeasures = js.Any.fromFunction0(hasTotaledMeasures), setNumberOfExpandedLevels = js.Any.fromFunction1(setNumberOfExpandedLevels))
+    __obj.asInstanceOf[AnalyticalTreeBindingAdapter]
+  }
 }
 

@@ -47,7 +47,7 @@ trait IUtils[TDate] extends js.Object {
   def endOfWeek(value: TDate): TDate = js.native
   def format(
     value: TDate,
-    formatKey: fullDate | normalDate | normalDateWithWeekday | shortDate | year | month | monthShort | monthAndYear | monthAndDate | dayOfMonth | hours12h | hours24h | minutes | seconds | fullTime | fullTime12h | fullTime24h | fullDateTime | fullDateTime12h | fullDateTime24h | keyboardDate | keyboardDateTime | keyboardDateTime12h | keyboardDateTime24h
+    formatKey: /* keyof @date-io/core.@date-io/core/IUtils.DateIOFormats<string> */ fullDate | normalDate | normalDateWithWeekday | shortDate | year | month | monthShort | monthAndYear | monthAndDate | dayOfMonth | hours12h | hours24h | minutes | seconds | fullTime | fullTime12h | fullTime24h | fullDateTime | fullDateTime12h | fullDateTime24h | keyboardDate | keyboardDateTime | keyboardDateTime12h | keyboardDateTime24h
   ): String = js.native
   def formatByString(value: TDate, formatString: String): String = js.native
   def formatNumber(numberToFormat: String): String = js.native

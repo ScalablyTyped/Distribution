@@ -29,12 +29,12 @@ object CrlConfiguration {
   def apply(
     Enabled: Boolean,
     CustomCname: String253 = null,
-    ExpirationInDays: Int | Double = null,
+    ExpirationInDays: js.UndefOr[Integer1To5000] = js.undefined,
     S3BucketName: String3To255 = null
   ): CrlConfiguration = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
     if (CustomCname != null) __obj.updateDynamic("CustomCname")(CustomCname.asInstanceOf[js.Any])
-    if (ExpirationInDays != null) __obj.updateDynamic("ExpirationInDays")(ExpirationInDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(ExpirationInDays)) __obj.updateDynamic("ExpirationInDays")(ExpirationInDays.get.asInstanceOf[js.Any])
     if (S3BucketName != null) __obj.updateDynamic("S3BucketName")(S3BucketName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrlConfiguration]
   }

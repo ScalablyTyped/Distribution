@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation._
 
 trait TextEditorSelectionChangeEvent extends js.Object {
   /**
-  		 * The [change kind](#TextEditorSelectionChangeKind) which has triggered this
-  		 * event. Can be `undefined`.
-  		 */
+    * The [change kind](#TextEditorSelectionChangeKind) which has triggered this
+    * event. Can be `undefined`.
+    */
   val kind: js.UndefOr[TextEditorSelectionChangeKind] = js.undefined
   /**
-  		 * The new value for the [text editor's selections](#TextEditor.selections).
-  		 */
+    * The new value for the [text editor's selections](#TextEditor.selections).
+    */
   val selections: js.Array[Selection]
   /**
-  		 * The [text editor](#TextEditor) for which the selections have changed.
-  		 */
+    * The [text editor](#TextEditor) for which the selections have changed.
+    */
   val textEditor: TextEditor
 }
 

@@ -22,19 +22,23 @@ trait MarginBottomProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends j
 
 object MarginBottomProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](
-    marginBottom: ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
-      ThemeType
-    ] = null,
-    mb: ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
-      ThemeType
-    ] = null
+  def apply[ThemeType](
+    marginBottom: js.UndefOr[
+      Null | (ResponsiveValue[
+        ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
+        ThemeType
+      ])
+    ] = js.undefined,
+    mb: js.UndefOr[
+      Null | (ResponsiveValue[
+        ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
+        ThemeType
+      ])
+    ] = js.undefined
   ): MarginBottomProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
-    if (marginBottom != null) __obj.updateDynamic("marginBottom")(marginBottom.asInstanceOf[js.Any])
-    if (mb != null) __obj.updateDynamic("mb")(mb.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginBottom)) __obj.updateDynamic("marginBottom")(marginBottom.asInstanceOf[js.Any])
+    if (!js.isUndefined(mb)) __obj.updateDynamic("mb")(mb.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarginBottomProps[ThemeType]]
   }
 }

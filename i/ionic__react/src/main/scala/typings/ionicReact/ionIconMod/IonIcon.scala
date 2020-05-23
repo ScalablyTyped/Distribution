@@ -1,7 +1,7 @@
 package typings.ionicReact.ionIconMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ionicReact.IonIconPropsIonicReactPro
+import typings.ionicReact.anon.IonIconPropsIonicReactPro
 import typings.react.mod.ForwardRefExoticComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

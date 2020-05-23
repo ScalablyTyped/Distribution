@@ -43,7 +43,7 @@ object MessageOptions {
   @scala.inline
   def apply(
     message: String,
-    hideAfter: Int | Double = null,
+    hideAfter: js.UndefOr[Double] = js.undefined,
     hideOnNavigate: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     showCloseButton: js.UndefOr[Boolean] = js.undefined,
@@ -52,11 +52,11 @@ object MessageOptions {
     `type`: String = null
   ): MessageOptions = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-    if (hideAfter != null) __obj.updateDynamic("hideAfter")(hideAfter.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideOnNavigate)) __obj.updateDynamic("hideOnNavigate")(hideOnNavigate.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideAfter)) __obj.updateDynamic("hideAfter")(hideAfter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideOnNavigate)) __obj.updateDynamic("hideOnNavigate")(hideOnNavigate.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageOptions]

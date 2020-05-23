@@ -22,9 +22,13 @@ trait GetJobRunsRequest extends js.Object {
 
 object GetJobRunsRequest {
   @scala.inline
-  def apply(JobName: NameString, MaxResults: Int | Double = null, NextToken: GenericString = null): GetJobRunsRequest = {
+  def apply(
+    JobName: NameString,
+    MaxResults: js.UndefOr[PageSize] = js.undefined,
+    NextToken: GenericString = null
+  ): GetJobRunsRequest = {
     val __obj = js.Dynamic.literal(JobName = JobName.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetJobRunsRequest]
   }

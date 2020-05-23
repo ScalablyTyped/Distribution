@@ -5,19 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.unified.ContentSwitcher")
 @js.native
-class ContentSwitcher protected () extends Control {
-  /**
-    * Constructor for a new ContentSwitcher.Accepts an object literal <code>mSettings</code> that defines
-    * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
-    * sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the settings
-    * object.
-    * @param sId id for the new control, generated automatically if no id is given
-    * @param mSettings initial settings for the new control
-    */
-  def this(sId: String) = this()
-  def this(sId: String, mSettings: js.Any) = this()
+trait ContentSwitcher extends Control {
   /**
     * Adds some content1 to the aggregation <code>content1</code>.
     * @param oContent1 the content1 to add; if empty, nothing is inserted

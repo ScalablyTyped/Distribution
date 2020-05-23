@@ -1,6 +1,6 @@
 package typings.gitlab.resourceAccessRequestsMod
 
-import typings.gitlab.accessLevelAccessLevelSud
+import typings.gitlab.anon.accessLevelAccessLevelSud
 import typings.gitlab.baseServiceMod.BaseServiceOptions
 import typings.gitlab.infrastructureMod.BaseService
 import typings.gitlab.requestHelperMod.GetResponse

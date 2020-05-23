@@ -1,6 +1,7 @@
 package typings.jupyterlabServices
 
 import typings.jupyterlabCoreutils.interfacesMod.IChangedArgs
+import typings.jupyterlabServices.anon.PartialIModelId
 import typings.jupyterlabServices.kernelKernelMod.ConnectionStatus
 import typings.jupyterlabServices.kernelKernelMod.IAnyMessageArgs
 import typings.jupyterlabServices.kernelKernelMod.IKernelConnection

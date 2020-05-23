@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.TextureBlock")
 @js.native
-class TextureBlock protected () extends NodeMaterialBlock {
-  /**
-    * Create a new TextureBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait TextureBlock extends NodeMaterialBlock {
   var _defineName: js.Any = js.native
   var _injectVertexCode: js.Any = js.native
   var _linearDefineName: js.Any = js.native

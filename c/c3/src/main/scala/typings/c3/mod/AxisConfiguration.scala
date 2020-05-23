@@ -1,6 +1,6 @@
 package typings.c3.mod
 
-import typings.c3.AnonPosition
+import typings.c3.anon.Position
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait AxisConfiguration extends js.Object {
     * Valid horizontal axis positions: inner-right (default), inner-center, inner-left, outer-right, outer-center, outer-left
     * Valid vertical axis positions: inner-top, inner-middle, inner-bottom, outer-top, outer-middle, outer-bottom
     */
-  var label: js.UndefOr[String | AnonPosition] = js.undefined
+  var label: js.UndefOr[String | Position] = js.undefined
   /**
     * Set max value of the axis.
     */
@@ -41,19 +41,19 @@ object AxisConfiguration {
   @scala.inline
   def apply(
     inner: js.UndefOr[Boolean] = js.undefined,
-    label: String | AnonPosition = null,
+    label: String | Position = null,
     max: String | Double | Date = null,
     min: String | Double | Date = null,
     padding: Padding = null,
     show: js.UndefOr[Boolean] = js.undefined
   ): AxisConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(inner)) __obj.updateDynamic("inner")(inner.asInstanceOf[js.Any])
+    if (!js.isUndefined(inner)) __obj.updateDynamic("inner")(inner.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AxisConfiguration]
   }
 }

@@ -33,14 +33,14 @@ object UpdateTemplatePermissionsResponse {
   def apply(
     Permissions: ResourcePermissionList = null,
     RequestId: String = null,
-    Status: Int | scala.Double = null,
+    Status: js.UndefOr[StatusCode] = js.undefined,
     TemplateArn: Arn = null,
     TemplateId: RestrictiveResourceId = null
   ): UpdateTemplatePermissionsResponse = {
     val __obj = js.Dynamic.literal()
     if (Permissions != null) __obj.updateDynamic("Permissions")(Permissions.asInstanceOf[js.Any])
     if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
+    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
     if (TemplateArn != null) __obj.updateDynamic("TemplateArn")(TemplateArn.asInstanceOf[js.Any])
     if (TemplateId != null) __obj.updateDynamic("TemplateId")(TemplateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTemplatePermissionsResponse]

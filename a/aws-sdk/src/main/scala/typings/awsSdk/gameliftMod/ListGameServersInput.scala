@@ -28,12 +28,12 @@ object ListGameServersInput {
   @scala.inline
   def apply(
     GameServerGroupName: GameServerGroupNameOrArn,
-    Limit: Int | scala.Double = null,
+    Limit: js.UndefOr[PositiveInteger] = js.undefined,
     NextToken: NonZeroAndMaxString = null,
     SortOrder: SortOrder = null
   ): ListGameServersInput = {
     val __obj = js.Dynamic.literal(GameServerGroupName = GameServerGroupName.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (SortOrder != null) __obj.updateDynamic("SortOrder")(SortOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGameServersInput]

@@ -32,12 +32,12 @@ object DenseLayerConfig {
     activation: ActivationSerialization = null,
     activity_regularizer: RegularizerSerialization = null,
     batch_input_shape: Shape = null,
-    batch_size: Int | Double = null,
+    batch_size: js.UndefOr[Double] = js.undefined,
     bias_constraint: ConstraintSerialization = null,
     bias_initializer: InitializerSerialization = null,
     bias_regularizer: RegularizerSerialization = null,
     dtype: DataType = null,
-    input_dim: Int | Double = null,
+    input_dim: js.UndefOr[Double] = js.undefined,
     input_dtype: DataType = null,
     input_shape: Shape = null,
     kernel_constraint: ConstraintSerialization = null,
@@ -51,20 +51,20 @@ object DenseLayerConfig {
     if (activation != null) __obj.updateDynamic("activation")(activation.asInstanceOf[js.Any])
     if (activity_regularizer != null) __obj.updateDynamic("activity_regularizer")(activity_regularizer.asInstanceOf[js.Any])
     if (batch_input_shape != null) __obj.updateDynamic("batch_input_shape")(batch_input_shape.asInstanceOf[js.Any])
-    if (batch_size != null) __obj.updateDynamic("batch_size")(batch_size.asInstanceOf[js.Any])
+    if (!js.isUndefined(batch_size)) __obj.updateDynamic("batch_size")(batch_size.get.asInstanceOf[js.Any])
     if (bias_constraint != null) __obj.updateDynamic("bias_constraint")(bias_constraint.asInstanceOf[js.Any])
     if (bias_initializer != null) __obj.updateDynamic("bias_initializer")(bias_initializer.asInstanceOf[js.Any])
     if (bias_regularizer != null) __obj.updateDynamic("bias_regularizer")(bias_regularizer.asInstanceOf[js.Any])
     if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
-    if (input_dim != null) __obj.updateDynamic("input_dim")(input_dim.asInstanceOf[js.Any])
+    if (!js.isUndefined(input_dim)) __obj.updateDynamic("input_dim")(input_dim.get.asInstanceOf[js.Any])
     if (input_dtype != null) __obj.updateDynamic("input_dtype")(input_dtype.asInstanceOf[js.Any])
     if (input_shape != null) __obj.updateDynamic("input_shape")(input_shape.asInstanceOf[js.Any])
     if (kernel_constraint != null) __obj.updateDynamic("kernel_constraint")(kernel_constraint.asInstanceOf[js.Any])
     if (kernel_initializer != null) __obj.updateDynamic("kernel_initializer")(kernel_initializer.asInstanceOf[js.Any])
     if (kernel_regularizer != null) __obj.updateDynamic("kernel_regularizer")(kernel_regularizer.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable.asInstanceOf[js.Any])
-    if (!js.isUndefined(use_bias)) __obj.updateDynamic("use_bias")(use_bias.asInstanceOf[js.Any])
+    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(use_bias)) __obj.updateDynamic("use_bias")(use_bias.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DenseLayerConfig]
   }
 }

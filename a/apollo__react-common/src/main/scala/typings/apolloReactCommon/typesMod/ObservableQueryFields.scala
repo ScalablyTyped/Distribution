@@ -5,7 +5,7 @@ import typings.apolloClient.observableQueryMod.UpdateQueryOptions
 import typings.apolloClient.typesMod.ApolloQueryResult
 import typings.apolloClient.watchQueryOptionsMod.FetchMoreQueryOptions
 import typings.apolloClient.watchQueryOptionsMod.SubscribeToMoreOptions
-import typings.apolloReactCommon.AnonQuery
+import typings.apolloReactCommon.anon.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait ObservableQueryFields[TData, TVariables] extends js.Object {
     /* fetchMoreOptions */ (FetchMoreQueryOptions[TVariables, /* keyof TVariables */ String]) with (FetchMoreOptions[TData, TVariables]), 
     js.Promise[ApolloQueryResult[TData]]
   ]) with (js.Function1[
-    /* fetchMoreOptions */ AnonQuery with (FetchMoreQueryOptions[_, /* keyof any */ String]) with (FetchMoreOptions[_, _]), 
+    /* fetchMoreOptions */ Query with (FetchMoreQueryOptions[_, /* keyof any */ String]) with (FetchMoreOptions[_, _]), 
     js.Promise[ApolloQueryResult[_]]
   ])
   var refetch: js.Function0[js.Promise[ApolloQueryResult[TData]]]
@@ -37,7 +37,7 @@ object ObservableQueryFields {
       /* fetchMoreOptions */ (FetchMoreQueryOptions[TVariables, /* keyof TVariables */ String]) with (FetchMoreOptions[TData, TVariables]), 
       js.Promise[ApolloQueryResult[TData]]
     ]) with (js.Function1[
-      /* fetchMoreOptions */ AnonQuery with (FetchMoreQueryOptions[_, /* keyof any */ String]) with (FetchMoreOptions[_, _]), 
+      /* fetchMoreOptions */ Query with (FetchMoreQueryOptions[_, /* keyof any */ String]) with (FetchMoreOptions[_, _]), 
       js.Promise[ApolloQueryResult[_]]
     ]),
     refetch: () => js.Promise[ApolloQueryResult[TData]],

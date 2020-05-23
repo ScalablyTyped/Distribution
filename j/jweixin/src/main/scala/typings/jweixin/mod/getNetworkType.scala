@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object getNetworkType extends js.Object {
   /**
-  	 * 获取网络状态接口
-  	 */
+    * 获取网络状态接口
+    */
   def apply(params: IgetNetworkType): Unit = js.native
 }
 

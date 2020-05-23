@@ -4,12 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("createjs.Sprite")
 @js.native
-class Sprite protected () extends DisplayObject {
-  def this(spriteSheet: SpriteSheet) = this()
-  def this(spriteSheet: SpriteSheet, frameOrAnimation: String) = this()
-  def this(spriteSheet: SpriteSheet, frameOrAnimation: Double) = this()
+trait Sprite extends DisplayObject {
   // properties
   var currentAnimation: String = js.native
   var currentAnimationFrame: Double = js.native

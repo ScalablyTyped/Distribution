@@ -19,8 +19,8 @@ object Base64Options {
   @scala.inline
   def apply(paddingRequired: js.UndefOr[Boolean] = js.undefined, urlSafe: js.UndefOr[Boolean] = js.undefined): Base64Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(paddingRequired)) __obj.updateDynamic("paddingRequired")(paddingRequired.asInstanceOf[js.Any])
-    if (!js.isUndefined(urlSafe)) __obj.updateDynamic("urlSafe")(urlSafe.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingRequired)) __obj.updateDynamic("paddingRequired")(paddingRequired.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(urlSafe)) __obj.updateDynamic("urlSafe")(urlSafe.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Base64Options]
   }
 }

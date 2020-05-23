@@ -12,9 +12,8 @@ import scala.scalajs.js.annotation._
   * 
   * Affects the rendering of Game Objects using the `Light2D` pipeline.
   */
-@JSGlobal("Phaser.GameObjects.LightsManager")
 @js.native
-class LightsManager () extends js.Object {
+trait LightsManager extends js.Object {
   /**
     * Whether the Lights Manager is enabled.
     */

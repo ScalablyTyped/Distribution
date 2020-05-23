@@ -65,11 +65,11 @@ object RenderConfig {
   def apply(
     antialias: js.UndefOr[Boolean] = js.undefined,
     antialiasGL: js.UndefOr[Boolean] = js.undefined,
-    batchSize: Int | Double = null,
+    batchSize: js.UndefOr[integer] = js.undefined,
     clearBeforeRender: js.UndefOr[Boolean] = js.undefined,
     desynchronized: js.UndefOr[Boolean] = js.undefined,
     failIfMajorPerformanceCaveat: js.UndefOr[Boolean] = js.undefined,
-    maxLights: Int | Double = null,
+    maxLights: js.UndefOr[integer] = js.undefined,
     mipmapFilter: String = null,
     pixelArt: js.UndefOr[Boolean] = js.undefined,
     powerPreference: String = null,
@@ -78,19 +78,19 @@ object RenderConfig {
     transparent: js.UndefOr[Boolean] = js.undefined
   ): RenderConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(antialias)) __obj.updateDynamic("antialias")(antialias.asInstanceOf[js.Any])
-    if (!js.isUndefined(antialiasGL)) __obj.updateDynamic("antialiasGL")(antialiasGL.asInstanceOf[js.Any])
-    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearBeforeRender)) __obj.updateDynamic("clearBeforeRender")(clearBeforeRender.asInstanceOf[js.Any])
-    if (!js.isUndefined(desynchronized)) __obj.updateDynamic("desynchronized")(desynchronized.asInstanceOf[js.Any])
-    if (!js.isUndefined(failIfMajorPerformanceCaveat)) __obj.updateDynamic("failIfMajorPerformanceCaveat")(failIfMajorPerformanceCaveat.asInstanceOf[js.Any])
-    if (maxLights != null) __obj.updateDynamic("maxLights")(maxLights.asInstanceOf[js.Any])
+    if (!js.isUndefined(antialias)) __obj.updateDynamic("antialias")(antialias.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(antialiasGL)) __obj.updateDynamic("antialiasGL")(antialiasGL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearBeforeRender)) __obj.updateDynamic("clearBeforeRender")(clearBeforeRender.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(desynchronized)) __obj.updateDynamic("desynchronized")(desynchronized.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(failIfMajorPerformanceCaveat)) __obj.updateDynamic("failIfMajorPerformanceCaveat")(failIfMajorPerformanceCaveat.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLights)) __obj.updateDynamic("maxLights")(maxLights.get.asInstanceOf[js.Any])
     if (mipmapFilter != null) __obj.updateDynamic("mipmapFilter")(mipmapFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(pixelArt)) __obj.updateDynamic("pixelArt")(pixelArt.asInstanceOf[js.Any])
+    if (!js.isUndefined(pixelArt)) __obj.updateDynamic("pixelArt")(pixelArt.get.asInstanceOf[js.Any])
     if (powerPreference != null) __obj.updateDynamic("powerPreference")(powerPreference.asInstanceOf[js.Any])
-    if (!js.isUndefined(premultipliedAlpha)) __obj.updateDynamic("premultipliedAlpha")(premultipliedAlpha.asInstanceOf[js.Any])
-    if (!js.isUndefined(roundPixels)) __obj.updateDynamic("roundPixels")(roundPixels.asInstanceOf[js.Any])
-    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.asInstanceOf[js.Any])
+    if (!js.isUndefined(premultipliedAlpha)) __obj.updateDynamic("premultipliedAlpha")(premultipliedAlpha.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(roundPixels)) __obj.updateDynamic("roundPixels")(roundPixels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderConfig]
   }
 }

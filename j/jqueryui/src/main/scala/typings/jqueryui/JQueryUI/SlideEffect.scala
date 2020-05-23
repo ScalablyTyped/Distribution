@@ -11,10 +11,10 @@ trait SlideEffect extends js.Object {
 
 object SlideEffect {
   @scala.inline
-  def apply(direction: String = null, distance: Int | Double = null): SlideEffect = {
+  def apply(direction: String = null, distance: js.UndefOr[Double] = js.undefined): SlideEffect = {
     val __obj = js.Dynamic.literal()
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlideEffect]
   }
 }

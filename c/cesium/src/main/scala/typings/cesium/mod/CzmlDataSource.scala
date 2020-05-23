@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonSourceUri
+import typings.cesium.anon.SourceUri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation._
 class CzmlDataSource () extends DataSource {
   def this(name: String) = this()
   def load(czml: String): js.Promise[CzmlDataSource] = js.native
-  def load(czml: String, options: AnonSourceUri): js.Promise[CzmlDataSource] = js.native
+  def load(czml: String, options: SourceUri): js.Promise[CzmlDataSource] = js.native
   def load(czml: js.Object): js.Promise[CzmlDataSource] = js.native
-  def load(czml: js.Object, options: AnonSourceUri): js.Promise[CzmlDataSource] = js.native
+  def load(czml: js.Object, options: SourceUri): js.Promise[CzmlDataSource] = js.native
   def load(czml: Resource): js.Promise[CzmlDataSource] = js.native
-  def load(czml: Resource, options: AnonSourceUri): js.Promise[CzmlDataSource] = js.native
+  def load(czml: Resource, options: SourceUri): js.Promise[CzmlDataSource] = js.native
   def process(czml: String): js.Promise[CzmlDataSource] = js.native
-  def process(czml: String, options: AnonSourceUri): js.Promise[CzmlDataSource] = js.native
+  def process(czml: String, options: SourceUri): js.Promise[CzmlDataSource] = js.native
   def process(czml: js.Object): js.Promise[CzmlDataSource] = js.native
-  def process(czml: js.Object, options: AnonSourceUri): js.Promise[CzmlDataSource] = js.native
+  def process(czml: js.Object, options: SourceUri): js.Promise[CzmlDataSource] = js.native
   def process(czml: Resource): js.Promise[CzmlDataSource] = js.native
-  def process(czml: Resource, options: AnonSourceUri): js.Promise[CzmlDataSource] = js.native
+  def process(czml: Resource, options: SourceUri): js.Promise[CzmlDataSource] = js.native
 }
 
 /* static members */
@@ -29,11 +29,11 @@ class CzmlDataSource () extends DataSource {
 object CzmlDataSource extends js.Object {
   var updaters: js.Array[_] = js.native
   def load(czml: String): js.Promise[CzmlDataSource] = js.native
-  def load(czml: String, options: AnonSourceUri): js.Promise[CzmlDataSource] = js.native
+  def load(czml: String, options: SourceUri): js.Promise[CzmlDataSource] = js.native
   def load(czml: js.Object): js.Promise[CzmlDataSource] = js.native
-  def load(czml: js.Object, options: AnonSourceUri): js.Promise[CzmlDataSource] = js.native
+  def load(czml: js.Object, options: SourceUri): js.Promise[CzmlDataSource] = js.native
   def load(czml: Resource): js.Promise[CzmlDataSource] = js.native
-  def load(czml: Resource, options: AnonSourceUri): js.Promise[CzmlDataSource] = js.native
+  def load(czml: Resource, options: SourceUri): js.Promise[CzmlDataSource] = js.native
   def processMaterialPacketData(
     `object`: js.Object,
     propertyName: String,

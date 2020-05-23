@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,8 +25,4 @@ trait OffscreenCanvasRenderingContext2D
   val canvas: OffscreenCanvas = js.native
   def commit(): Unit = js.native
 }
-
-@JSGlobal("OffscreenCanvasRenderingContext2D")
-@js.native
-object OffscreenCanvasRenderingContext2D extends Instantiable0[OffscreenCanvasRenderingContext2D]
 

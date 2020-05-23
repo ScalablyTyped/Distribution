@@ -1,9 +1,9 @@
 package typings.victory.mod
 
 import typings.react.mod.ReactElement
-import typings.victory.Anon1
-import typings.victory.AnonXBoolean
-import typings.victory.AnonY
+import typings.victory.anon.XBoolean
+import typings.victory.anon.Y
+import typings.victory.anon.`1`
 import typings.victory.victoryStrings.all
 import typings.victory.victoryStrings.data
 import typings.victory.victoryStrings.labels
@@ -91,23 +91,23 @@ object VictoryAreaProps {
     domain: DomainPropType = null,
     events: js.Array[EventPropTypeInterface[data | labels | parent, all]] = null,
     groupComponent: ReactElement = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     horizontal: js.UndefOr[Boolean] = js.undefined,
     interpolation: InterpolationPropType = null,
     label: String | (js.Function1[/* data */ js.Any, String]) = null,
     labelComponent: ReactElement = null,
     labels: (js.Array[Double | String]) | js.Function = null,
-    maxDomain: Double | AnonY = null,
-    minDomain: Double | AnonY = null,
+    maxDomain: Double | Y = null,
+    minDomain: Double | Y = null,
     name: String = null,
     padding: PaddingProps = null,
-    samples: Int | Double = null,
-    scale: ScalePropType | D3Scale | Anon1 = null,
-    singleQuadrantDomainPadding: Boolean | AnonXBoolean = null,
+    samples: js.UndefOr[Double] = js.undefined,
+    scale: ScalePropType | D3Scale | `1` = null,
+    singleQuadrantDomainPadding: Boolean | XBoolean = null,
     standalone: js.UndefOr[Boolean] = js.undefined,
     style: VictoryStyleInterface = null,
     theme: VictoryThemeDefinition = null,
-    width: Int | Double = null,
+    width: js.UndefOr[Double] = js.undefined,
     x: DataGetterPropType = null,
     y: DataGetterPropType = null,
     y0: DataGetterPropType = null
@@ -121,8 +121,8 @@ object VictoryAreaProps {
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.get.asInstanceOf[js.Any])
     if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent.asInstanceOf[js.Any])
@@ -131,13 +131,13 @@ object VictoryAreaProps {
     if (minDomain != null) __obj.updateDynamic("minDomain")(minDomain.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (samples != null) __obj.updateDynamic("samples")(samples.asInstanceOf[js.Any])
+    if (!js.isUndefined(samples)) __obj.updateDynamic("samples")(samples.get.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (singleQuadrantDomainPadding != null) __obj.updateDynamic("singleQuadrantDomainPadding")(singleQuadrantDomainPadding.asInstanceOf[js.Any])
-    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone.asInstanceOf[js.Any])
+    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     if (y0 != null) __obj.updateDynamic("y0")(y0.asInstanceOf[js.Any])

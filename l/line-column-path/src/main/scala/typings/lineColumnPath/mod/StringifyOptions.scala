@@ -23,8 +23,8 @@ object StringifyOptions {
   @scala.inline
   def apply(column: js.UndefOr[Boolean] = js.undefined, file: js.UndefOr[Boolean] = js.undefined): StringifyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(column)) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (!js.isUndefined(file)) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (!js.isUndefined(column)) __obj.updateDynamic("column")(column.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(file)) __obj.updateDynamic("file")(file.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringifyOptions]
   }
 }

@@ -73,7 +73,7 @@ import typings.qrcodeReact.qrcodeReactStrings.time
 import typings.qrcodeReact.qrcodeReactStrings.tree
 import typings.qrcodeReact.qrcodeReactStrings.vertical
 import typings.qrcodeReact.qrcodeReactStrings.yes
-import typings.react.AnonHtml
+import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
 import typings.react.mod.Booleanish
@@ -106,7 +106,7 @@ import typings.react.mod.TransitionEventHandler
 import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEventHandler
-import typings.std.Event_
+import typings.std.Event
 import typings.std.SVGSVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -344,7 +344,7 @@ trait SvgQRCodeProps extends js.Object {
   var cx: js.UndefOr[Double | String] = js.undefined
   var cy: js.UndefOr[Double | String] = js.undefined
   var d: js.UndefOr[String] = js.undefined
-  var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.undefined
+  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
   var decelerate: js.UndefOr[Double | String] = js.undefined
   var descent: js.UndefOr[Double | String] = js.undefined
   var diffuseConstant: js.UndefOr[Double | String] = js.undefined
@@ -689,9 +689,9 @@ object SvgQRCodeProps {
     `aria-autocomplete`: none | `inline` | list | both = null,
     `aria-busy`: js.UndefOr[Boolean] = js.undefined,
     `aria-checked`: Boolean | mixed = null,
-    `aria-colcount`: Int | Double = null,
-    `aria-colindex`: Int | Double = null,
-    `aria-colspan`: Int | Double = null,
+    `aria-colcount`: js.UndefOr[Double] = js.undefined,
+    `aria-colindex`: js.UndefOr[Double] = js.undefined,
+    `aria-colspan`: js.UndefOr[Double] = js.undefined,
     `aria-controls`: String = null,
     `aria-current`: Boolean | page | step | location | date | time = null,
     `aria-describedby`: String = null,
@@ -708,7 +708,7 @@ object SvgQRCodeProps {
     `aria-keyshortcuts`: String = null,
     `aria-label`: String = null,
     `aria-labelledby`: String = null,
-    `aria-level`: Int | Double = null,
+    `aria-level`: js.UndefOr[Double] = js.undefined,
     `aria-live`: off | assertive | polite = null,
     `aria-modal`: js.UndefOr[Boolean] = js.undefined,
     `aria-multiline`: js.UndefOr[Boolean] = js.undefined,
@@ -716,26 +716,26 @@ object SvgQRCodeProps {
     `aria-orientation`: horizontal | vertical = null,
     `aria-owns`: String = null,
     `aria-placeholder`: String = null,
-    `aria-posinset`: Int | Double = null,
+    `aria-posinset`: js.UndefOr[Double] = js.undefined,
     `aria-pressed`: Boolean | mixed = null,
     `aria-readonly`: js.UndefOr[Boolean] = js.undefined,
     `aria-relevant`: additions | (`additions text`) | all | removals | text = null,
     `aria-required`: js.UndefOr[Boolean] = js.undefined,
     `aria-roledescription`: String = null,
-    `aria-rowcount`: Int | Double = null,
-    `aria-rowindex`: Int | Double = null,
-    `aria-rowspan`: Int | Double = null,
+    `aria-rowcount`: js.UndefOr[Double] = js.undefined,
+    `aria-rowindex`: js.UndefOr[Double] = js.undefined,
+    `aria-rowspan`: js.UndefOr[Double] = js.undefined,
     `aria-selected`: js.UndefOr[Boolean] = js.undefined,
-    `aria-setsize`: Int | Double = null,
+    `aria-setsize`: js.UndefOr[Double] = js.undefined,
     `aria-sort`: none | ascending | descending | other = null,
-    `aria-valuemax`: Int | Double = null,
-    `aria-valuemin`: Int | Double = null,
-    `aria-valuenow`: Int | Double = null,
+    `aria-valuemax`: js.UndefOr[Double] = js.undefined,
+    `aria-valuemin`: js.UndefOr[Double] = js.undefined,
+    `aria-valuenow`: js.UndefOr[Double] = js.undefined,
     `aria-valuetext`: String = null,
     ascent: Double | String = null,
     attributeName: String = null,
     attributeType: String = null,
-    autoReverse: js.UndefOr[Boolean] = js.undefined,
+    autoReverse: js.UndefOr[Booleanish] = js.undefined,
     azimuth: Double | String = null,
     baseFrequency: Double | String = null,
     baseProfile: Double | String = null,
@@ -765,7 +765,7 @@ object SvgQRCodeProps {
     cx: Double | String = null,
     cy: Double | String = null,
     d: String = null,
-    dangerouslySetInnerHTML: AnonHtml = null,
+    dangerouslySetInnerHTML: Html = null,
     decelerate: Double | String = null,
     descent: Double | String = null,
     diffuseConstant: Double | String = null,
@@ -781,7 +781,7 @@ object SvgQRCodeProps {
     enableBackground: Double | String = null,
     end: Double | String = null,
     exponent: Double | String = null,
-    externalResourcesRequired: js.UndefOr[Boolean] = js.undefined,
+    externalResourcesRequired: js.UndefOr[Booleanish] = js.undefined,
     fgColor: String = null,
     fill: String = null,
     fillOpacity: Double | String = null,
@@ -861,15 +861,15 @@ object SvgQRCodeProps {
     name: String = null,
     numOctaves: Double | String = null,
     offset: Double | String = null,
-    onAbort: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
+    onAbort: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
     onAnimationEnd: AnimationEvent[SVGSVGElement] => Unit = null,
     onAnimationIteration: AnimationEvent[SVGSVGElement] => Unit = null,
     onAnimationStart: AnimationEvent[SVGSVGElement] => Unit = null,
     onAuxClick: MouseEvent[SVGSVGElement, NativeMouseEvent] => Unit = null,
     onBeforeInput: FormEvent[SVGSVGElement] => Unit = null,
     onBlur: FocusEvent[SVGSVGElement] => Unit = null,
-    onCanPlay: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
-    onCanPlayThrough: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
+    onCanPlay: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
+    onCanPlayThrough: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
     onChange: FormEvent[SVGSVGElement] => Unit = null,
     onClick: MouseEvent[SVGSVGElement, NativeMouseEvent] => Unit = null,
     onCompositionEnd: CompositionEvent[SVGSVGElement] => Unit = null,
@@ -887,21 +887,21 @@ object SvgQRCodeProps {
     onDragOver: DragEvent[SVGSVGElement] => Unit = null,
     onDragStart: DragEvent[SVGSVGElement] => Unit = null,
     onDrop: DragEvent[SVGSVGElement] => Unit = null,
-    onDurationChange: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
-    onEmptied: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
-    onEncrypted: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
-    onEnded: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
-    onError: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
+    onDurationChange: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
+    onEmptied: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
+    onEncrypted: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
+    onEnded: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
+    onError: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
     onFocus: FocusEvent[SVGSVGElement] => Unit = null,
     onInput: FormEvent[SVGSVGElement] => Unit = null,
     onInvalid: FormEvent[SVGSVGElement] => Unit = null,
     onKeyDown: KeyboardEvent[SVGSVGElement] => Unit = null,
     onKeyPress: KeyboardEvent[SVGSVGElement] => Unit = null,
     onKeyUp: KeyboardEvent[SVGSVGElement] => Unit = null,
-    onLoad: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
-    onLoadStart: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
-    onLoadedData: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
-    onLoadedMetadata: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
+    onLoad: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
+    onLoadStart: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
+    onLoadedData: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
+    onLoadedMetadata: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
     onMouseDown: MouseEvent[SVGSVGElement, NativeMouseEvent] => Unit = null,
     onMouseEnter: MouseEvent[SVGSVGElement, NativeMouseEvent] => Unit = null,
     onMouseLeave: MouseEvent[SVGSVGElement, NativeMouseEvent] => Unit = null,
@@ -910,9 +910,9 @@ object SvgQRCodeProps {
     onMouseOver: MouseEvent[SVGSVGElement, NativeMouseEvent] => Unit = null,
     onMouseUp: MouseEvent[SVGSVGElement, NativeMouseEvent] => Unit = null,
     onPaste: ClipboardEvent[SVGSVGElement] => Unit = null,
-    onPause: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
-    onPlay: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
-    onPlaying: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
+    onPause: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
+    onPlay: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
+    onPlaying: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
     onPointerCancel: PointerEvent[SVGSVGElement] => Unit = null,
     onPointerDown: PointerEvent[SVGSVGElement] => Unit = null,
     onPointerEnter: PointerEvent[SVGSVGElement] => Unit = null,
@@ -921,13 +921,13 @@ object SvgQRCodeProps {
     onPointerOut: PointerEvent[SVGSVGElement] => Unit = null,
     onPointerOver: PointerEvent[SVGSVGElement] => Unit = null,
     onPointerUp: PointerEvent[SVGSVGElement] => Unit = null,
-    onProgress: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
-    onRateChange: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
+    onProgress: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
+    onRateChange: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
     onReset: FormEvent[SVGSVGElement] => Unit = null,
     onScroll: UIEvent[SVGSVGElement, NativeUIEvent] => Unit = null,
-    onSeeked: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
-    onSeeking: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
-    onSelect: SyntheticEvent[SVGSVGElement, Event_] => Unit = null
+    onSeeked: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
+    onSeeking: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
+    onSelect: SyntheticEvent[SVGSVGElement, Event] => Unit = null
   ): SvgQRCodeProps = {
     val __obj = js.Dynamic.literal(renderAs = renderAs.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (accentHeight != null) __obj.updateDynamic("accentHeight")(accentHeight.asInstanceOf[js.Any])
@@ -939,57 +939,57 @@ object SvgQRCodeProps {
     if (amplitude != null) __obj.updateDynamic("amplitude")(amplitude.asInstanceOf[js.Any])
     if (arabicForm != null) __obj.updateDynamic("arabicForm")(arabicForm.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.get.asInstanceOf[js.Any])
     if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.get.asInstanceOf[js.Any])
     if (`aria-checked` != null) __obj.updateDynamic("aria-checked")(`aria-checked`.asInstanceOf[js.Any])
-    if (`aria-colcount` != null) __obj.updateDynamic("aria-colcount")(`aria-colcount`.asInstanceOf[js.Any])
-    if (`aria-colindex` != null) __obj.updateDynamic("aria-colindex")(`aria-colindex`.asInstanceOf[js.Any])
-    if (`aria-colspan` != null) __obj.updateDynamic("aria-colspan")(`aria-colspan`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-colcount`)) __obj.updateDynamic("aria-colcount")(`aria-colcount`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-colindex`)) __obj.updateDynamic("aria-colindex")(`aria-colindex`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-colspan`)) __obj.updateDynamic("aria-colspan")(`aria-colspan`.get.asInstanceOf[js.Any])
     if (`aria-controls` != null) __obj.updateDynamic("aria-controls")(`aria-controls`.asInstanceOf[js.Any])
     if (`aria-current` != null) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
     if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
     if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.get.asInstanceOf[js.Any])
     if (`aria-dropeffect` != null) __obj.updateDynamic("aria-dropeffect")(`aria-dropeffect`.asInstanceOf[js.Any])
     if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.get.asInstanceOf[js.Any])
     if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.get.asInstanceOf[js.Any])
     if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.get.asInstanceOf[js.Any])
     if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
     if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`.asInstanceOf[js.Any])
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
     if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (`aria-level` != null) __obj.updateDynamic("aria-level")(`aria-level`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-level`)) __obj.updateDynamic("aria-level")(`aria-level`.get.asInstanceOf[js.Any])
     if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.get.asInstanceOf[js.Any])
     if (`aria-orientation` != null) __obj.updateDynamic("aria-orientation")(`aria-orientation`.asInstanceOf[js.Any])
     if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`.asInstanceOf[js.Any])
     if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`.asInstanceOf[js.Any])
-    if (`aria-posinset` != null) __obj.updateDynamic("aria-posinset")(`aria-posinset`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-posinset`)) __obj.updateDynamic("aria-posinset")(`aria-posinset`.get.asInstanceOf[js.Any])
     if (`aria-pressed` != null) __obj.updateDynamic("aria-pressed")(`aria-pressed`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.get.asInstanceOf[js.Any])
     if (`aria-relevant` != null) __obj.updateDynamic("aria-relevant")(`aria-relevant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.get.asInstanceOf[js.Any])
     if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`.asInstanceOf[js.Any])
-    if (`aria-rowcount` != null) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.asInstanceOf[js.Any])
-    if (`aria-rowindex` != null) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.asInstanceOf[js.Any])
-    if (`aria-rowspan` != null) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.asInstanceOf[js.Any])
-    if (`aria-setsize` != null) __obj.updateDynamic("aria-setsize")(`aria-setsize`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-rowcount`)) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-rowindex`)) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-rowspan`)) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-setsize`)) __obj.updateDynamic("aria-setsize")(`aria-setsize`.get.asInstanceOf[js.Any])
     if (`aria-sort` != null) __obj.updateDynamic("aria-sort")(`aria-sort`.asInstanceOf[js.Any])
-    if (`aria-valuemax` != null) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.asInstanceOf[js.Any])
-    if (`aria-valuemin` != null) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.asInstanceOf[js.Any])
-    if (`aria-valuenow` != null) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-valuemax`)) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-valuemin`)) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-valuenow`)) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.get.asInstanceOf[js.Any])
     if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`.asInstanceOf[js.Any])
     if (ascent != null) __obj.updateDynamic("ascent")(ascent.asInstanceOf[js.Any])
     if (attributeName != null) __obj.updateDynamic("attributeName")(attributeName.asInstanceOf[js.Any])
     if (attributeType != null) __obj.updateDynamic("attributeType")(attributeType.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoReverse)) __obj.updateDynamic("autoReverse")(autoReverse.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoReverse)) __obj.updateDynamic("autoReverse")(autoReverse.get.asInstanceOf[js.Any])
     if (azimuth != null) __obj.updateDynamic("azimuth")(azimuth.asInstanceOf[js.Any])
     if (baseFrequency != null) __obj.updateDynamic("baseFrequency")(baseFrequency.asInstanceOf[js.Any])
     if (baseProfile != null) __obj.updateDynamic("baseProfile")(baseProfile.asInstanceOf[js.Any])
@@ -1035,7 +1035,7 @@ object SvgQRCodeProps {
     if (enableBackground != null) __obj.updateDynamic("enableBackground")(enableBackground.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (exponent != null) __obj.updateDynamic("exponent")(exponent.asInstanceOf[js.Any])
-    if (!js.isUndefined(externalResourcesRequired)) __obj.updateDynamic("externalResourcesRequired")(externalResourcesRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(externalResourcesRequired)) __obj.updateDynamic("externalResourcesRequired")(externalResourcesRequired.get.asInstanceOf[js.Any])
     if (fgColor != null) __obj.updateDynamic("fgColor")(fgColor.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
@@ -1076,7 +1076,7 @@ object SvgQRCodeProps {
     if (imageSettings != null) __obj.updateDynamic("imageSettings")(imageSettings.asInstanceOf[js.Any])
     if (in != null) __obj.updateDynamic("in")(in.asInstanceOf[js.Any])
     if (in2 != null) __obj.updateDynamic("in2")(in2.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeMargin)) __obj.updateDynamic("includeMargin")(includeMargin.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeMargin)) __obj.updateDynamic("includeMargin")(includeMargin.get.asInstanceOf[js.Any])
     if (intercept != null) __obj.updateDynamic("intercept")(intercept.asInstanceOf[js.Any])
     if (k != null) __obj.updateDynamic("k")(k.asInstanceOf[js.Any])
     if (k1 != null) __obj.updateDynamic("k1")(k1.asInstanceOf[js.Any])

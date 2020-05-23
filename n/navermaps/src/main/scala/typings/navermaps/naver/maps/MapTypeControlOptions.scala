@@ -13,8 +13,7 @@ trait MapTypeControlOptions extends js.Object {
 object MapTypeControlOptions {
   @scala.inline
   def apply(position: Position, style: MapTypeControlStyle, mapTypeIds: js.Array[MapTypeId] = null): MapTypeControlOptions = {
-    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
-    if (mapTypeIds != null) __obj.updateDynamic("mapTypeIds")(mapTypeIds.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], mapTypeIds = mapTypeIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapTypeControlOptions]
   }
 }

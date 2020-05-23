@@ -37,7 +37,7 @@ object AccountStatusDataQualityIssue {
     id: String = null,
     lastChecked: String = null,
     location: String = null,
-    numItems: Int | Double = null,
+    numItems: js.UndefOr[Double] = js.undefined,
     severity: String = null,
     submittedValue: String = null
   ): AccountStatusDataQualityIssue = {
@@ -49,7 +49,7 @@ object AccountStatusDataQualityIssue {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (lastChecked != null) __obj.updateDynamic("lastChecked")(lastChecked.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (numItems != null) __obj.updateDynamic("numItems")(numItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(numItems)) __obj.updateDynamic("numItems")(numItems.get.asInstanceOf[js.Any])
     if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
     if (submittedValue != null) __obj.updateDynamic("submittedValue")(submittedValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountStatusDataQualityIssue]

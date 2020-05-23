@@ -4,13 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Microsoft.Maps.EntityCollection")
 @js.native
-/**
-  * @constructor Deprecated. Use the Layer class.
-  * @deprecated in V8
-  */
-class EntityCollection () extends Layer {
+trait EntityCollection extends Layer {
   /**
     * Gets the item at a specified index.
     * @param index Index of the item to get.

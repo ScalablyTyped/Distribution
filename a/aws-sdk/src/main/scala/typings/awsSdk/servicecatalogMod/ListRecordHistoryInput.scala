@@ -33,14 +33,14 @@ object ListRecordHistoryInput {
   def apply(
     AcceptLanguage: AcceptLanguage = null,
     AccessLevelFilter: AccessLevelFilter = null,
-    PageSize: Int | Double = null,
+    PageSize: js.UndefOr[PageSize] = js.undefined,
     PageToken: PageToken = null,
     SearchFilter: ListRecordHistorySearchFilter = null
   ): ListRecordHistoryInput = {
     val __obj = js.Dynamic.literal()
     if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage.asInstanceOf[js.Any])
     if (AccessLevelFilter != null) __obj.updateDynamic("AccessLevelFilter")(AccessLevelFilter.asInstanceOf[js.Any])
-    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize.get.asInstanceOf[js.Any])
     if (PageToken != null) __obj.updateDynamic("PageToken")(PageToken.asInstanceOf[js.Any])
     if (SearchFilter != null) __obj.updateDynamic("SearchFilter")(SearchFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRecordHistoryInput]

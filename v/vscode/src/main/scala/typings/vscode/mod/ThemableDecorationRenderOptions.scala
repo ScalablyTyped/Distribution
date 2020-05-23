@@ -6,107 +6,107 @@ import scala.scalajs.js.annotation._
 
 trait ThemableDecorationRenderOptions extends js.Object {
   /**
-  		 * Defines the rendering options of the attachment that is inserted after the decorated text.
-  		 */
+    * Defines the rendering options of the attachment that is inserted after the decorated text.
+    */
   var after: js.UndefOr[ThemableDecorationAttachmentRenderOptions] = js.undefined
   /**
-  		 * Background color of the decoration. Use rgba() and define transparent background colors to play well with other decorations.
-  		 * Alternatively a color from the color registry can be [referenced](#ThemeColor).
-  		 */
+    * Background color of the decoration. Use rgba() and define transparent background colors to play well with other decorations.
+    * Alternatively a color from the color registry can be [referenced](#ThemeColor).
+    */
   var backgroundColor: js.UndefOr[String | ThemeColor] = js.undefined
   /**
-  		 * Defines the rendering options of the attachment that is inserted before the decorated text.
-  		 */
+    * Defines the rendering options of the attachment that is inserted before the decorated text.
+    */
   var before: js.UndefOr[ThemableDecorationAttachmentRenderOptions] = js.undefined
   /**
-  		 * CSS styling property that will be applied to text enclosed by a decoration.
-  		 */
+    * CSS styling property that will be applied to text enclosed by a decoration.
+    */
   var border: js.UndefOr[String] = js.undefined
   /**
-  		 * CSS styling property that will be applied to text enclosed by a decoration.
-  		 * Better use 'border' for setting one or more of the individual border properties.
-  		 */
+    * CSS styling property that will be applied to text enclosed by a decoration.
+    * Better use 'border' for setting one or more of the individual border properties.
+    */
   var borderColor: js.UndefOr[String | ThemeColor] = js.undefined
   /**
-  		 * CSS styling property that will be applied to text enclosed by a decoration.
-  		 * Better use 'border' for setting one or more of the individual border properties.
-  		 */
+    * CSS styling property that will be applied to text enclosed by a decoration.
+    * Better use 'border' for setting one or more of the individual border properties.
+    */
   var borderRadius: js.UndefOr[String] = js.undefined
   /**
-  		 * CSS styling property that will be applied to text enclosed by a decoration.
-  		 * Better use 'border' for setting one or more of the individual border properties.
-  		 */
+    * CSS styling property that will be applied to text enclosed by a decoration.
+    * Better use 'border' for setting one or more of the individual border properties.
+    */
   var borderSpacing: js.UndefOr[String] = js.undefined
   /**
-  		 * CSS styling property that will be applied to text enclosed by a decoration.
-  		 * Better use 'border' for setting one or more of the individual border properties.
-  		 */
+    * CSS styling property that will be applied to text enclosed by a decoration.
+    * Better use 'border' for setting one or more of the individual border properties.
+    */
   var borderStyle: js.UndefOr[String] = js.undefined
   /**
-  		 * CSS styling property that will be applied to text enclosed by a decoration.
-  		 * Better use 'border' for setting one or more of the individual border properties.
-  		 */
+    * CSS styling property that will be applied to text enclosed by a decoration.
+    * Better use 'border' for setting one or more of the individual border properties.
+    */
   var borderWidth: js.UndefOr[String] = js.undefined
   /**
-  		 * CSS styling property that will be applied to text enclosed by a decoration.
-  		 */
+    * CSS styling property that will be applied to text enclosed by a decoration.
+    */
   var color: js.UndefOr[String | ThemeColor] = js.undefined
   /**
-  		 * CSS styling property that will be applied to text enclosed by a decoration.
-  		 */
+    * CSS styling property that will be applied to text enclosed by a decoration.
+    */
   var cursor: js.UndefOr[String] = js.undefined
   /**
-  		 * CSS styling property that will be applied to text enclosed by a decoration.
-  		 */
+    * CSS styling property that will be applied to text enclosed by a decoration.
+    */
   var fontStyle: js.UndefOr[String] = js.undefined
   /**
-  		 * CSS styling property that will be applied to text enclosed by a decoration.
-  		 */
+    * CSS styling property that will be applied to text enclosed by a decoration.
+    */
   var fontWeight: js.UndefOr[String] = js.undefined
   /**
-  		 * An **absolute path** or an URI to an image to be rendered in the gutter.
-  		 */
+    * An **absolute path** or an URI to an image to be rendered in the gutter.
+    */
   var gutterIconPath: js.UndefOr[String | Uri] = js.undefined
   /**
-  		 * Specifies the size of the gutter icon.
-  		 * Available values are 'auto', 'contain', 'cover' and any percentage value.
-  		 * For further information: https://msdn.microsoft.com/en-us/library/jj127316(v=vs.85).aspx
-  		 */
+    * Specifies the size of the gutter icon.
+    * Available values are 'auto', 'contain', 'cover' and any percentage value.
+    * For further information: https://msdn.microsoft.com/en-us/library/jj127316(v=vs.85).aspx
+    */
   var gutterIconSize: js.UndefOr[String] = js.undefined
   /**
-  		 * CSS styling property that will be applied to text enclosed by a decoration.
-  		 */
+    * CSS styling property that will be applied to text enclosed by a decoration.
+    */
   var letterSpacing: js.UndefOr[String] = js.undefined
   /**
-  		 * CSS styling property that will be applied to text enclosed by a decoration.
-  		 */
+    * CSS styling property that will be applied to text enclosed by a decoration.
+    */
   var opacity: js.UndefOr[String] = js.undefined
   /**
-  		 * CSS styling property that will be applied to text enclosed by a decoration.
-  		 */
+    * CSS styling property that will be applied to text enclosed by a decoration.
+    */
   var outline: js.UndefOr[String] = js.undefined
   /**
-  		 * CSS styling property that will be applied to text enclosed by a decoration.
-  		 * Better use 'outline' for setting one or more of the individual outline properties.
-  		 */
+    * CSS styling property that will be applied to text enclosed by a decoration.
+    * Better use 'outline' for setting one or more of the individual outline properties.
+    */
   var outlineColor: js.UndefOr[String | ThemeColor] = js.undefined
   /**
-  		 * CSS styling property that will be applied to text enclosed by a decoration.
-  		 * Better use 'outline' for setting one or more of the individual outline properties.
-  		 */
+    * CSS styling property that will be applied to text enclosed by a decoration.
+    * Better use 'outline' for setting one or more of the individual outline properties.
+    */
   var outlineStyle: js.UndefOr[String] = js.undefined
   /**
-  		 * CSS styling property that will be applied to text enclosed by a decoration.
-  		 * Better use 'outline' for setting one or more of the individual outline properties.
-  		 */
+    * CSS styling property that will be applied to text enclosed by a decoration.
+    * Better use 'outline' for setting one or more of the individual outline properties.
+    */
   var outlineWidth: js.UndefOr[String] = js.undefined
   /**
-  		 * The color of the decoration in the overview ruler. Use rgba() and define transparent colors to play well with other decorations.
-  		 */
+    * The color of the decoration in the overview ruler. Use rgba() and define transparent colors to play well with other decorations.
+    */
   var overviewRulerColor: js.UndefOr[String | ThemeColor] = js.undefined
   /**
-  		 * CSS styling property that will be applied to text enclosed by a decoration.
-  		 */
+    * CSS styling property that will be applied to text enclosed by a decoration.
+    */
   var textDecoration: js.UndefOr[String] = js.undefined
 }
 

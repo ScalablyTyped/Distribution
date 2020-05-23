@@ -23,10 +23,9 @@ object SuccessMutationResult {
     promise: js.Promise[TResult],
     reset: () => Unit,
     status: success,
-    error: js.UndefOr[scala.Nothing] = js.undefined
+    error: js.Any = null
   ): SuccessMutationResult[TResult] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], promise = promise.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), status = status.asInstanceOf[js.Any])
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], promise = promise.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), status = status.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuccessMutationResult[TResult]]
   }
 }

@@ -48,7 +48,7 @@ object pluploadSettings {
     flash_swf_url: String = null,
     headers: js.Any = null,
     init: pluploadEvents = null,
-    max_retries: Int | Double = null,
+    max_retries: js.UndefOr[Double] = js.undefined,
     multi_selection: js.UndefOr[Boolean] = js.undefined,
     multipart: js.UndefOr[Boolean] = js.undefined,
     multipart_params: js.Any = null,
@@ -67,15 +67,15 @@ object pluploadSettings {
     if (flash_swf_url != null) __obj.updateDynamic("flash_swf_url")(flash_swf_url.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
-    if (max_retries != null) __obj.updateDynamic("max_retries")(max_retries.asInstanceOf[js.Any])
-    if (!js.isUndefined(multi_selection)) __obj.updateDynamic("multi_selection")(multi_selection.asInstanceOf[js.Any])
-    if (!js.isUndefined(multipart)) __obj.updateDynamic("multipart")(multipart.asInstanceOf[js.Any])
+    if (!js.isUndefined(max_retries)) __obj.updateDynamic("max_retries")(max_retries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multi_selection)) __obj.updateDynamic("multi_selection")(multi_selection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multipart)) __obj.updateDynamic("multipart")(multipart.get.asInstanceOf[js.Any])
     if (multipart_params != null) __obj.updateDynamic("multipart_params")(multipart_params.asInstanceOf[js.Any])
     if (required_features != null) __obj.updateDynamic("required_features")(required_features.asInstanceOf[js.Any])
     if (resize != null) __obj.updateDynamic("resize")(resize.asInstanceOf[js.Any])
     if (runtimes != null) __obj.updateDynamic("runtimes")(runtimes.asInstanceOf[js.Any])
     if (silverlight_xap_url != null) __obj.updateDynamic("silverlight_xap_url")(silverlight_xap_url.asInstanceOf[js.Any])
-    if (!js.isUndefined(unique_names)) __obj.updateDynamic("unique_names")(unique_names.asInstanceOf[js.Any])
+    if (!js.isUndefined(unique_names)) __obj.updateDynamic("unique_names")(unique_names.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[pluploadSettings]
   }
 }

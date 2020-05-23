@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojpictochartMod
 
-import typings.oracleOraclejet.Anon14
-import typings.oracleOraclejet.AnonLabelAndValue
+import typings.oracleOraclejet.anon.LabelAndValue
+import typings.oracleOraclejet.anon.`14`
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponentSettableProperties
 import typings.oracleOraclejet.oracleOraclejetStrings.all
@@ -46,9 +46,9 @@ trait ojPictoChartSettableProperties[K, D] extends dvtBaseComponentSettablePrope
   var rowHeight: Double | Null
   var selection: js.Array[K]
   var selectionMode: single | multiple | none
-  var tooltip: Anon14[K]
+  var tooltip: `14`[K]
   @JSName("translations")
-  var translations_ojPictoChartSettableProperties: AnonLabelAndValue
+  var translations_ojPictoChartSettableProperties: LabelAndValue
 }
 
 object ojPictoChartSettableProperties {
@@ -67,23 +67,18 @@ object ojPictoChartSettableProperties {
     layoutOrigin: topEnd | bottomStart | bottomEnd | topStart,
     selection: js.Array[K],
     selectionMode: single | multiple | none,
-    tooltip: Anon14[K],
+    tooltip: `14`[K],
     trackResize: on | off,
-    translations: AnonLabelAndValue,
-    animationDuration: Int | Double = null,
-    columnCount: Int | Double = null,
-    columnWidth: Int | Double = null,
+    translations: LabelAndValue,
+    animationDuration: js.UndefOr[Double] = js.undefined,
+    columnCount: Double = null.asInstanceOf[Double],
+    columnWidth: Double = null.asInstanceOf[Double],
     data: DataProvider[K, D] = null,
-    rowCount: Int | Double = null,
-    rowHeight: Int | Double = null
+    rowCount: Double = null.asInstanceOf[Double],
+    rowHeight: Double = null.asInstanceOf[Double]
   ): ojPictoChartSettableProperties[K, D] = {
-    val __obj = js.Dynamic.literal(animationOnDataChange = animationOnDataChange.asInstanceOf[js.Any], animationOnDisplay = animationOnDisplay.asInstanceOf[js.Any], as = as.asInstanceOf[js.Any], drilling = drilling.asInstanceOf[js.Any], hiddenCategories = hiddenCategories.asInstanceOf[js.Any], highlightMatch = highlightMatch.asInstanceOf[js.Any], highlightedCategories = highlightedCategories.asInstanceOf[js.Any], hoverBehavior = hoverBehavior.asInstanceOf[js.Any], hoverBehaviorDelay = hoverBehaviorDelay.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], layoutOrigin = layoutOrigin.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any], trackResize = trackResize.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (columnCount != null) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
-    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(animationOnDataChange = animationOnDataChange.asInstanceOf[js.Any], animationOnDisplay = animationOnDisplay.asInstanceOf[js.Any], as = as.asInstanceOf[js.Any], drilling = drilling.asInstanceOf[js.Any], hiddenCategories = hiddenCategories.asInstanceOf[js.Any], highlightMatch = highlightMatch.asInstanceOf[js.Any], highlightedCategories = highlightedCategories.asInstanceOf[js.Any], hoverBehavior = hoverBehavior.asInstanceOf[js.Any], hoverBehaviorDelay = hoverBehaviorDelay.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], layoutOrigin = layoutOrigin.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any], trackResize = trackResize.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], columnCount = columnCount.asInstanceOf[js.Any], columnWidth = columnWidth.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], rowHeight = rowHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojPictoChartSettableProperties[K, D]]
   }
 }

@@ -7,48 +7,48 @@ import scala.scalajs.js.annotation._
 
 trait ServerInfo extends js.Object {
   /**
-  		 * The version of Azure that the instance is running on, if applicable.
-  		 */
+    * The version of Azure that the instance is running on, if applicable.
+    */
   var azureVersion: Double
   /**
-  		 * The ID of the engine edition of the instance.
-  		 */
+    * The ID of the engine edition of the instance.
+    */
   var engineEditionId: Double
   /**
-  		 * Whether the instance is running in the cloud (Azure) or not.
-  		 */
+    * Whether the instance is running in the cloud (Azure) or not.
+    */
   var isCloud: Boolean
   /**
-  		 * options for all new server properties.
-  		 */
+    * options for all new server properties.
+    */
   var options: StringDictionary[js.Any]
   /**
-  		 * The Operating System version string of the machine running the instance.
-  		 */
+    * The Operating System version string of the machine running the instance.
+    */
   var osVersion: String
   /**
-  		 * The edition of the instance.
-  		 */
+    * The edition of the instance.
+    */
   var serverEdition: String
   /**
-  		 * String describing the product level of the server.
-  		 */
+    * String describing the product level of the server.
+    */
   var serverLevel: String
   /**
-  		 * The major version of the instance.
-  		 */
+    * The major version of the instance.
+    */
   var serverMajorVersion: Double
   /**
-  		 * The minor version of the instance.
-  		 */
+    * The minor version of the instance.
+    */
   var serverMinorVersion: Double
   /**
-  		 * The build of the instance.
-  		 */
+    * The build of the instance.
+    */
   var serverReleaseVersion: Double
   /**
-  		 * String containing the full server version text.
-  		 */
+    * String containing the full server version text.
+    */
   var serverVersion: String
 }
 

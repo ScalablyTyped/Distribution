@@ -25,7 +25,7 @@ object TextTruncateProps {
     containerClassName: String = null,
     element: String = null,
     line: Double | Boolean = null,
-    maxCalculateTimes: Int | Double = null,
+    maxCalculateTimes: js.UndefOr[Double] = js.undefined,
     onCalculated: () => Unit = null,
     onToggled: /* truncated */ Boolean => Unit = null,
     onTruncated: () => Unit = null,
@@ -38,7 +38,7 @@ object TextTruncateProps {
     if (containerClassName != null) __obj.updateDynamic("containerClassName")(containerClassName.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (maxCalculateTimes != null) __obj.updateDynamic("maxCalculateTimes")(maxCalculateTimes.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxCalculateTimes)) __obj.updateDynamic("maxCalculateTimes")(maxCalculateTimes.get.asInstanceOf[js.Any])
     if (onCalculated != null) __obj.updateDynamic("onCalculated")(js.Any.fromFunction0(onCalculated))
     if (onToggled != null) __obj.updateDynamic("onToggled")(js.Any.fromFunction1(onToggled))
     if (onTruncated != null) __obj.updateDynamic("onTruncated")(js.Any.fromFunction0(onTruncated))

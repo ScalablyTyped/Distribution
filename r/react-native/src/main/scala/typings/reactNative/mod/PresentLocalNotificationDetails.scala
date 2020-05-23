@@ -20,14 +20,14 @@ object PresentLocalNotificationDetails {
     alertAction: String,
     alertBody: String,
     alertTitle: String = null,
-    applicationIconBadgeNumber: Int | Double = null,
+    applicationIconBadgeNumber: js.UndefOr[Double] = js.undefined,
     category: String = null,
     soundName: String = null,
     userInfo: js.Object = null
   ): PresentLocalNotificationDetails = {
     val __obj = js.Dynamic.literal(alertAction = alertAction.asInstanceOf[js.Any], alertBody = alertBody.asInstanceOf[js.Any])
     if (alertTitle != null) __obj.updateDynamic("alertTitle")(alertTitle.asInstanceOf[js.Any])
-    if (applicationIconBadgeNumber != null) __obj.updateDynamic("applicationIconBadgeNumber")(applicationIconBadgeNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(applicationIconBadgeNumber)) __obj.updateDynamic("applicationIconBadgeNumber")(applicationIconBadgeNumber.get.asInstanceOf[js.Any])
     if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
     if (soundName != null) __obj.updateDynamic("soundName")(soundName.asInstanceOf[js.Any])
     if (userInfo != null) __obj.updateDynamic("userInfo")(userInfo.asInstanceOf[js.Any])

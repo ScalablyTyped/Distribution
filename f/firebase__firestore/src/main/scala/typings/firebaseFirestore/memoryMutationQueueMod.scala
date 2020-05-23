@@ -1,7 +1,6 @@
 package typings.firebaseFirestore
 
 import typings.firebaseFirestore.byteStringMod.ByteString
-import typings.firebaseFirestore.collectionsMod.DocumentKeySet_
 import typings.firebaseFirestore.documentKeyMod.DocumentKey
 import typings.firebaseFirestore.indexManagerMod.IndexManager
 import typings.firebaseFirestore.mutationBatchMod.MutationBatch
@@ -18,7 +17,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/memory_mutation_queue", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/memory_mutation_queue", JSImport.Namespace)
 @js.native
 object memoryMutationQueueMod extends js.Object {
   @js.native
@@ -168,29 +167,12 @@ object memoryMutationQueueMod extends js.Object {
     /* CompleteClass */
     override def lookupMutationBatch(transaction: PersistenceTransaction, batchId: BatchId): PersistencePromise[MutationBatch | Null] = js.native
     /**
-      * Returns the document keys for the mutation batch with the given batchId.
-      * For primary clients, this method returns `null` after
-      * `removeMutationBatches()` has been called. Secondary clients return a
-      * cached result until `removeCachedMutationKeys()` is invoked.
-      */
-    /* CompleteClass */
-    override def lookupMutationKeys(transaction: PersistenceTransaction, batchId: BatchId): PersistencePromise[DocumentKeySet_ | Null] = js.native
-    /**
       * Performs a consistency check, examining the mutation queue for any
       * leaks, if possible.
       */
     /* CompleteClass */
     override def performConsistencyCheck(transaction: PersistenceTransaction): PersistencePromise[Unit] = js.native
-    /**
-      * Clears the cached keys for a mutation batch. This method should be
-      * called by secondary clients after they process mutation updates.
-      *
-      * Note that this method does not have to be called from primary clients as
-      * the corresponding cache entries are cleared when an acknowledged or
-      * rejected batch is removed from the mutation queue.
-      */
-    /* CompleteClass */
-    override def removeCachedMutationKeys(batchId: BatchId): Unit = js.native
+    def removeCachedMutationKeys(batchId: BatchId): Unit = js.native
     /**
       * Removes the given mutation batch from the queue. This is useful in two
       * circumstances:

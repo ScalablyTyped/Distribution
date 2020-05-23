@@ -23,28 +23,28 @@ object CameraOptions {
   def apply(
     allowEdit: js.UndefOr[Boolean] = js.undefined,
     correctOrientation: js.UndefOr[Boolean] = js.undefined,
-    destinationType: Int | Double = null,
-    encodingType: Int | Double = null,
-    mediaType: Int | Double = null,
+    destinationType: js.UndefOr[Double] = js.undefined,
+    encodingType: js.UndefOr[Double] = js.undefined,
+    mediaType: js.UndefOr[Double] = js.undefined,
     popoverOptions: CameraPopoverOptions = null,
-    quality: Int | Double = null,
+    quality: js.UndefOr[Double] = js.undefined,
     saveToPhotoAlbum: js.UndefOr[Boolean] = js.undefined,
-    sourceType: Int | Double = null,
-    targetHeight: Int | Double = null,
-    targetWidth: Int | Double = null
+    sourceType: js.UndefOr[Double] = js.undefined,
+    targetHeight: js.UndefOr[Double] = js.undefined,
+    targetWidth: js.UndefOr[Double] = js.undefined
   ): CameraOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowEdit)) __obj.updateDynamic("allowEdit")(allowEdit.asInstanceOf[js.Any])
-    if (!js.isUndefined(correctOrientation)) __obj.updateDynamic("correctOrientation")(correctOrientation.asInstanceOf[js.Any])
-    if (destinationType != null) __obj.updateDynamic("destinationType")(destinationType.asInstanceOf[js.Any])
-    if (encodingType != null) __obj.updateDynamic("encodingType")(encodingType.asInstanceOf[js.Any])
-    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowEdit)) __obj.updateDynamic("allowEdit")(allowEdit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(correctOrientation)) __obj.updateDynamic("correctOrientation")(correctOrientation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(destinationType)) __obj.updateDynamic("destinationType")(destinationType.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(encodingType)) __obj.updateDynamic("encodingType")(encodingType.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mediaType)) __obj.updateDynamic("mediaType")(mediaType.get.asInstanceOf[js.Any])
     if (popoverOptions != null) __obj.updateDynamic("popoverOptions")(popoverOptions.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (!js.isUndefined(saveToPhotoAlbum)) __obj.updateDynamic("saveToPhotoAlbum")(saveToPhotoAlbum.asInstanceOf[js.Any])
-    if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType.asInstanceOf[js.Any])
-    if (targetHeight != null) __obj.updateDynamic("targetHeight")(targetHeight.asInstanceOf[js.Any])
-    if (targetWidth != null) __obj.updateDynamic("targetWidth")(targetWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveToPhotoAlbum)) __obj.updateDynamic("saveToPhotoAlbum")(saveToPhotoAlbum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceType)) __obj.updateDynamic("sourceType")(sourceType.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetHeight)) __obj.updateDynamic("targetHeight")(targetHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetWidth)) __obj.updateDynamic("targetWidth")(targetWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraOptions]
   }
 }

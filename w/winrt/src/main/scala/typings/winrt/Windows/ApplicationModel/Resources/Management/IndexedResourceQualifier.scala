@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.Resources.Management.IndexedResourceQualifier")
-@js.native
-class IndexedResourceQualifier () extends IIndexedResourceQualifier {
-  /* CompleteClass */
-  override var qualifierName: String = js.native
-  /* CompleteClass */
-  override var qualifierValue: String = js.native
+trait IndexedResourceQualifier extends IIndexedResourceQualifier
+
+object IndexedResourceQualifier {
+  @scala.inline
+  def apply(qualifierName: String, qualifierValue: String): IndexedResourceQualifier = {
+    val __obj = js.Dynamic.literal(qualifierName = qualifierName.asInstanceOf[js.Any], qualifierValue = qualifierValue.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IndexedResourceQualifier]
+  }
 }
 

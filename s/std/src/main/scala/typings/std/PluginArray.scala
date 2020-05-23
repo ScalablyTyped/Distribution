@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.NumberDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,8 +16,4 @@ trait PluginArray extends /* index */ NumberDictionary[Plugin] {
   def refresh(): Unit = js.native
   def refresh(reload: scala.Boolean): Unit = js.native
 }
-
-@JSGlobal("PluginArray")
-@js.native
-object PluginArray extends Instantiable0[PluginArray]
 

@@ -22,9 +22,9 @@ object mod extends js.Object {
   def quote(args: js.Array[String]): String = js.native
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
-    - typings.shellQuote.AnonOp
-    - typings.shellQuote.AnonPattern
-    - typings.shellQuote.AnonComment
+    - typings.shellQuote.anon.Op
+    - typings.shellQuote.anon.Pattern
+    - typings.shellQuote.anon.Comment
   */
   type ParseEntry = _ParseEntry | String
 }

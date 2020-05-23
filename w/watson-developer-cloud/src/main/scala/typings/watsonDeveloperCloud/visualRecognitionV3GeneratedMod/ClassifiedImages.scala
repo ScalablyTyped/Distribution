@@ -20,13 +20,13 @@ object ClassifiedImages {
   @scala.inline
   def apply(
     images: js.Array[ClassifiedImage],
-    custom_classes: Int | Double = null,
-    images_processed: Int | Double = null,
+    custom_classes: js.UndefOr[Double] = js.undefined,
+    images_processed: js.UndefOr[Double] = js.undefined,
     warnings: js.Array[WarningInfo] = null
   ): ClassifiedImages = {
     val __obj = js.Dynamic.literal(images = images.asInstanceOf[js.Any])
-    if (custom_classes != null) __obj.updateDynamic("custom_classes")(custom_classes.asInstanceOf[js.Any])
-    if (images_processed != null) __obj.updateDynamic("images_processed")(images_processed.asInstanceOf[js.Any])
+    if (!js.isUndefined(custom_classes)) __obj.updateDynamic("custom_classes")(custom_classes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(images_processed)) __obj.updateDynamic("images_processed")(images_processed.get.asInstanceOf[js.Any])
     if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassifiedImages]
   }

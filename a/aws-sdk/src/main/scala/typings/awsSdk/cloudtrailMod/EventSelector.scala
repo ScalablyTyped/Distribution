@@ -29,13 +29,13 @@ object EventSelector {
   def apply(
     DataResources: DataResources = null,
     ExcludeManagementEventSources: ExcludeManagementEventSources = null,
-    IncludeManagementEvents: js.UndefOr[scala.Boolean] = js.undefined,
+    IncludeManagementEvents: js.UndefOr[Boolean] = js.undefined,
     ReadWriteType: ReadWriteType = null
   ): EventSelector = {
     val __obj = js.Dynamic.literal()
     if (DataResources != null) __obj.updateDynamic("DataResources")(DataResources.asInstanceOf[js.Any])
     if (ExcludeManagementEventSources != null) __obj.updateDynamic("ExcludeManagementEventSources")(ExcludeManagementEventSources.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeManagementEvents)) __obj.updateDynamic("IncludeManagementEvents")(IncludeManagementEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeManagementEvents)) __obj.updateDynamic("IncludeManagementEvents")(IncludeManagementEvents.get.asInstanceOf[js.Any])
     if (ReadWriteType != null) __obj.updateDynamic("ReadWriteType")(ReadWriteType.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventSelector]
   }

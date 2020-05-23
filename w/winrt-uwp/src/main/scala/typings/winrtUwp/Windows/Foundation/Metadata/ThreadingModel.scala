@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Foundation.Metadata
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object ThreadingModel extends js.Object {
   /** Single-threaded apartment. */
   @js.native
   sealed trait sta extends ThreadingModel
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ThreadingModel with Double] = js.native
-  /* 2 */ @js.native
-  object both extends TopLevel[both with Double]
-  
-  /* 3 */ @js.native
-  object invalidThreading extends TopLevel[invalidThreading with Double]
-  
-  /* 1 */ @js.native
-  object mta extends TopLevel[mta with Double]
-  
-  /* 0 */ @js.native
-  object sta extends TopLevel[sta with Double]
   
 }
 

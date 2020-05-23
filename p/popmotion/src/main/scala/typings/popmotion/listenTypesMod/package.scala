@@ -12,9 +12,9 @@ package object listenTypesMod {
     scala.Unit
   ]
   type ListenFactory = js.Function3[
-    /* element */ typings.std.Element | typings.std.Document_ | typings.std.Window_, 
+    /* element */ typings.std.Element | typings.std.Document | typings.std.Window, 
     /* events */ java.lang.String, 
     /* options */ js.UndefOr[typings.popmotion.listenTypesMod.EventListenerOptions | scala.Boolean], 
-    typings.popmotion.actionMod.Action
+    typings.popmotion.actionMod.Action[typings.popmotion.actionTypesMod.ColdSubscription]
   ]
 }

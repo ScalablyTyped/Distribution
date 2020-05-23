@@ -12,14 +12,14 @@ trait FailureResponse extends ErrorResponse
 object FailureResponse {
   @scala.inline
   def apply(
-    code: Int | Double = null,
+    code: js.UndefOr[Double] = js.undefined,
     error: java.lang.String = null,
     success: js.UndefOr[Boolean] = js.undefined
   ): FailureResponse = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (!js.isUndefined(code)) __obj.updateDynamic("code")(code.get.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FailureResponse]
   }
 }

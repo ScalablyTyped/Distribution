@@ -4,7 +4,7 @@ import typings.flatpickr.flatpickrNumbers.`0`
 import typings.flatpickr.flatpickrNumbers.`1`
 import typings.flatpickr.flatpickrStrings.increment
 import typings.std.EventTarget
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -82,7 +82,7 @@ object utilsMod extends js.Object {
       * Returns the type of event, e.g. "click", "hashchange", or "submit".
       */
     val `type`: String with increment = js.native
-    val view: Window_ | Null = js.native
+    val view: Window | Null = js.native
     /** @deprecated */
     val which: Double = js.native
     val x: Double = js.native
@@ -99,7 +99,7 @@ object utilsMod extends js.Object {
       typeArg: String,
       canBubbleArg: Boolean,
       cancelableArg: Boolean,
-      viewArg: Window_,
+      viewArg: Window,
       detailArg: Double,
       screenXArg: Double,
       screenYArg: Double,
@@ -115,7 +115,7 @@ object utilsMod extends js.Object {
       typeArg: String,
       canBubbleArg: Boolean,
       cancelableArg: Boolean,
-      viewArg: Window_,
+      viewArg: Window,
       detailArg: Double,
       screenXArg: Double,
       screenYArg: Double,

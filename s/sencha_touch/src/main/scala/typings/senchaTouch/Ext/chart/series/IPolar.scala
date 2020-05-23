@@ -11,40 +11,40 @@ trait IPolar extends ISeries {
   /** [Config Option] (Array) */
   var center: js.UndefOr[Array] = js.undefined
   /** [Method] Returns the value of center
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   var getCenter: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the value of offsetX
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getOffsetX: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of offsetY
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getOffsetY: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of radius
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getRadius: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of rotation
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getRotation: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of xAxis
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getXAxis: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of xField
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getXField: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of yAxis
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getYAxis: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of yField
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getYField: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (Number) */
   var offsetX: js.UndefOr[Double] = js.undefined
@@ -55,40 +55,40 @@ trait IPolar extends ISeries {
   /** [Config Option] (Number) */
   var rotation: js.UndefOr[Double] = js.undefined
   /** [Method] Sets the value of center
-  		* @param center Array The new value.
-  		*/
+    * @param center Array The new value.
+    */
   var setCenter: js.UndefOr[js.Function1[/* center */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Sets the value of offsetX
-  		* @param offsetX Number The new value.
-  		*/
+    * @param offsetX Number The new value.
+    */
   var setOffsetX: js.UndefOr[js.Function1[/* offsetX */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of offsetY
-  		* @param offsetY Number The new value.
-  		*/
+    * @param offsetY Number The new value.
+    */
   var setOffsetY: js.UndefOr[js.Function1[/* offsetY */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of radius
-  		* @param radius Number The new value.
-  		*/
+    * @param radius Number The new value.
+    */
   var setRadius: js.UndefOr[js.Function1[/* radius */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of rotation
-  		* @param rotation Number The new value.
-  		*/
+    * @param rotation Number The new value.
+    */
   var setRotation: js.UndefOr[js.Function1[/* rotation */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of xAxis
-  		* @param xAxis Object The new value.
-  		*/
+    * @param xAxis Object The new value.
+    */
   var setXAxis: js.UndefOr[js.Function1[/* xAxis */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of xField
-  		* @param xField String The new value.
-  		*/
+    * @param xField String The new value.
+    */
   var setXField: js.UndefOr[js.Function1[/* xField */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of yAxis
-  		* @param yAxis Object The new value.
-  		*/
+    * @param yAxis Object The new value.
+    */
   var setYAxis: js.UndefOr[js.Function1[/* yAxis */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of yField
-  		* @param yField String The new value.
-  		*/
+    * @param yField String The new value.
+    */
   var setYField: js.UndefOr[js.Function1[/* yField */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (String) */
   var xField: js.UndefOr[String] = js.undefined
@@ -164,22 +164,22 @@ object IPolar {
     itemInstancing: js.Any = null,
     label: js.Any = null,
     labelField: js.Any = null,
-    labelOverflowPadding: Int | Double = null,
+    labelOverflowPadding: js.UndefOr[Double] = js.undefined,
     listeners: js.Any = null,
     marker: js.Any = null,
     markerSubStyle: js.Any = null,
     mixins: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    offsetX: Int | Double = null,
-    offsetY: Int | Double = null,
+    offsetX: js.UndefOr[Double] = js.undefined,
+    offsetY: js.UndefOr[Double] = js.undefined,
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     overlaySurface: js.Any = null,
     platformConfig: js.Any = null,
     provideLegendInfo: /* target */ js.UndefOr[Array] => Unit = null,
-    radius: Int | Double = null,
+    radius: js.UndefOr[Double] = js.undefined,
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
@@ -187,7 +187,7 @@ object IPolar {
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     renderer: js.Any = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
-    rotation: Int | Double = null,
+    rotation: js.UndefOr[Double] = js.undefined,
     self: IClass = null,
     seriesType: String = null,
     setAnimate: /* animate */ js.UndefOr[js.Any] => Unit = null,
@@ -305,22 +305,22 @@ object IPolar {
     if (itemInstancing != null) __obj.updateDynamic("itemInstancing")(itemInstancing.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelField != null) __obj.updateDynamic("labelField")(labelField.asInstanceOf[js.Any])
-    if (labelOverflowPadding != null) __obj.updateDynamic("labelOverflowPadding")(labelOverflowPadding.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelOverflowPadding)) __obj.updateDynamic("labelOverflowPadding")(labelOverflowPadding.get.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
     if (markerSubStyle != null) __obj.updateDynamic("markerSubStyle")(markerSubStyle.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
     if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
-    if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX.asInstanceOf[js.Any])
-    if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetX)) __obj.updateDynamic("offsetX")(offsetX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetY)) __obj.updateDynamic("offsetY")(offsetY.get.asInstanceOf[js.Any])
     if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5(on))
     if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4(onAfter))
     if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4(onBefore))
     if (overlaySurface != null) __obj.updateDynamic("overlaySurface")(overlaySurface.asInstanceOf[js.Any])
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (provideLegendInfo != null) __obj.updateDynamic("provideLegendInfo")(js.Any.fromFunction1(provideLegendInfo))
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction2(relayEvents))
     if (removeAfterListener != null) __obj.updateDynamic("removeAfterListener")(js.Any.fromFunction4(removeAfterListener))
     if (removeBeforeListener != null) __obj.updateDynamic("removeBeforeListener")(js.Any.fromFunction4(removeBeforeListener))
@@ -328,7 +328,7 @@ object IPolar {
     if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(js.Any.fromFunction4(removeManagedListener))
     if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
     if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction1(resumeEvents))
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (seriesType != null) __obj.updateDynamic("seriesType")(seriesType.asInstanceOf[js.Any])
     if (setAnimate != null) __obj.updateDynamic("setAnimate")(js.Any.fromFunction1(setAnimate))
@@ -363,8 +363,8 @@ object IPolar {
     if (setXField != null) __obj.updateDynamic("setXField")(js.Any.fromFunction1(setXField))
     if (setYAxis != null) __obj.updateDynamic("setYAxis")(js.Any.fromFunction1(setYAxis))
     if (setYField != null) __obj.updateDynamic("setYField")(js.Any.fromFunction1(setYField))
-    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

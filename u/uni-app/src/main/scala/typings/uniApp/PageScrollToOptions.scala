@@ -17,10 +17,10 @@ trait PageScrollToOptions extends js.Object {
 
 object PageScrollToOptions {
   @scala.inline
-  def apply(duration: Int | Double = null, scrollTop: Int | Double = null): PageScrollToOptions = {
+  def apply(duration: js.UndefOr[Double] = js.undefined, scrollTop: js.UndefOr[Double] = js.undefined): PageScrollToOptions = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (scrollTop != null) __obj.updateDynamic("scrollTop")(scrollTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollTop)) __obj.updateDynamic("scrollTop")(scrollTop.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageScrollToOptions]
   }
 }

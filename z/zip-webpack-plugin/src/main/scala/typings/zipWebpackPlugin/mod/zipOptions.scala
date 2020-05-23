@@ -16,7 +16,7 @@ object zipOptions {
   @scala.inline
   def apply(forceZip64Format: js.UndefOr[Boolean] = js.undefined): zipOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(forceZip64Format)) __obj.updateDynamic("forceZip64Format")(forceZip64Format.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceZip64Format)) __obj.updateDynamic("forceZip64Format")(forceZip64Format.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[zipOptions]
   }
 }

@@ -4,7 +4,5 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Ribbon.EMailLink")
-@js.native
-class EMailLink () extends js.Object
+trait EMailLink extends js.Object
 

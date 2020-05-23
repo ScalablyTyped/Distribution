@@ -109,24 +109,24 @@ object IonRangeSliderOptions {
     drag_interval: js.UndefOr[Boolean] = js.undefined,
     extra_classes: String = null,
     force_edges: js.UndefOr[Boolean] = js.undefined,
-    from: Int | Double = null,
+    from: js.UndefOr[Double] = js.undefined,
     from_fixed: js.UndefOr[Boolean] = js.undefined,
-    from_max: Int | Double = null,
-    from_min: Int | Double = null,
+    from_max: js.UndefOr[Double] = js.undefined,
+    from_min: js.UndefOr[Double] = js.undefined,
     from_shadow: js.UndefOr[Boolean] = js.undefined,
     grid: js.UndefOr[Boolean] = js.undefined,
     grid_margin: js.UndefOr[Boolean] = js.undefined,
-    grid_num: Int | Double = null,
+    grid_num: js.UndefOr[Double] = js.undefined,
     grid_snap: js.UndefOr[Boolean] = js.undefined,
     hide_from_to: js.UndefOr[Boolean] = js.undefined,
     hide_min_max: js.UndefOr[Boolean] = js.undefined,
     input_values_separator: String = null,
     keyboard: js.UndefOr[Boolean] = js.undefined,
-    max: Int | Double = null,
-    max_interval: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
+    max_interval: js.UndefOr[Double] = js.undefined,
     max_postfix: String = null,
-    min: Int | Double = null,
-    min_interval: Int | Double = null,
+    min: js.UndefOr[Double] = js.undefined,
+    min_interval: js.UndefOr[Double] = js.undefined,
     onChange: /* obj */ IonRangeSliderEvent => Unit = null,
     onFinish: /* obj */ IonRangeSliderEvent => Unit = null,
     onStart: /* obj */ IonRangeSliderEvent => Unit = null,
@@ -138,41 +138,41 @@ object IonRangeSliderOptions {
     prettify_separator: String = null,
     scope: js.Any = null,
     skin: flat | big | modern | round | sharp | square = null,
-    step: Int | Double = null,
-    to: Int | Double = null,
+    step: js.UndefOr[Double] = js.undefined,
+    to: js.UndefOr[Double] = js.undefined,
     to_fixed: js.UndefOr[Boolean] = js.undefined,
-    to_max: Int | Double = null,
-    to_min: Int | Double = null,
+    to_max: js.UndefOr[Double] = js.undefined,
+    to_min: js.UndefOr[Double] = js.undefined,
     to_shadow: js.UndefOr[Boolean] = js.undefined,
     `type`: String = null,
     values: js.Array[_] = null,
     values_separator: String = null
   ): IonRangeSliderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
-    if (!js.isUndefined(decorate_both)) __obj.updateDynamic("decorate_both")(decorate_both.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable.asInstanceOf[js.Any])
-    if (!js.isUndefined(drag_interval)) __obj.updateDynamic("drag_interval")(drag_interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(decorate_both)) __obj.updateDynamic("decorate_both")(decorate_both.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(drag_interval)) __obj.updateDynamic("drag_interval")(drag_interval.get.asInstanceOf[js.Any])
     if (extra_classes != null) __obj.updateDynamic("extra_classes")(extra_classes.asInstanceOf[js.Any])
-    if (!js.isUndefined(force_edges)) __obj.updateDynamic("force_edges")(force_edges.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (!js.isUndefined(from_fixed)) __obj.updateDynamic("from_fixed")(from_fixed.asInstanceOf[js.Any])
-    if (from_max != null) __obj.updateDynamic("from_max")(from_max.asInstanceOf[js.Any])
-    if (from_min != null) __obj.updateDynamic("from_min")(from_min.asInstanceOf[js.Any])
-    if (!js.isUndefined(from_shadow)) __obj.updateDynamic("from_shadow")(from_shadow.asInstanceOf[js.Any])
-    if (!js.isUndefined(grid)) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (!js.isUndefined(grid_margin)) __obj.updateDynamic("grid_margin")(grid_margin.asInstanceOf[js.Any])
-    if (grid_num != null) __obj.updateDynamic("grid_num")(grid_num.asInstanceOf[js.Any])
-    if (!js.isUndefined(grid_snap)) __obj.updateDynamic("grid_snap")(grid_snap.asInstanceOf[js.Any])
-    if (!js.isUndefined(hide_from_to)) __obj.updateDynamic("hide_from_to")(hide_from_to.asInstanceOf[js.Any])
-    if (!js.isUndefined(hide_min_max)) __obj.updateDynamic("hide_min_max")(hide_min_max.asInstanceOf[js.Any])
+    if (!js.isUndefined(force_edges)) __obj.updateDynamic("force_edges")(force_edges.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(from_fixed)) __obj.updateDynamic("from_fixed")(from_fixed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(from_max)) __obj.updateDynamic("from_max")(from_max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(from_min)) __obj.updateDynamic("from_min")(from_min.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(from_shadow)) __obj.updateDynamic("from_shadow")(from_shadow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(grid)) __obj.updateDynamic("grid")(grid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(grid_margin)) __obj.updateDynamic("grid_margin")(grid_margin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(grid_num)) __obj.updateDynamic("grid_num")(grid_num.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(grid_snap)) __obj.updateDynamic("grid_snap")(grid_snap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hide_from_to)) __obj.updateDynamic("hide_from_to")(hide_from_to.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hide_min_max)) __obj.updateDynamic("hide_min_max")(hide_min_max.get.asInstanceOf[js.Any])
     if (input_values_separator != null) __obj.updateDynamic("input_values_separator")(input_values_separator.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (max_interval != null) __obj.updateDynamic("max_interval")(max_interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max_interval)) __obj.updateDynamic("max_interval")(max_interval.get.asInstanceOf[js.Any])
     if (max_postfix != null) __obj.updateDynamic("max_postfix")(max_postfix.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (min_interval != null) __obj.updateDynamic("min_interval")(min_interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min_interval)) __obj.updateDynamic("min_interval")(min_interval.get.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onFinish != null) __obj.updateDynamic("onFinish")(js.Any.fromFunction1(onFinish))
     if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction1(onStart))
@@ -180,16 +180,16 @@ object IonRangeSliderOptions {
     if (postfix != null) __obj.updateDynamic("postfix")(postfix.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (prettify != null) __obj.updateDynamic("prettify")(js.Any.fromFunction1(prettify))
-    if (!js.isUndefined(prettify_enabled)) __obj.updateDynamic("prettify_enabled")(prettify_enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettify_enabled)) __obj.updateDynamic("prettify_enabled")(prettify_enabled.get.asInstanceOf[js.Any])
     if (prettify_separator != null) __obj.updateDynamic("prettify_separator")(prettify_separator.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (skin != null) __obj.updateDynamic("skin")(skin.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
-    if (!js.isUndefined(to_fixed)) __obj.updateDynamic("to_fixed")(to_fixed.asInstanceOf[js.Any])
-    if (to_max != null) __obj.updateDynamic("to_max")(to_max.asInstanceOf[js.Any])
-    if (to_min != null) __obj.updateDynamic("to_min")(to_min.asInstanceOf[js.Any])
-    if (!js.isUndefined(to_shadow)) __obj.updateDynamic("to_shadow")(to_shadow.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(to)) __obj.updateDynamic("to")(to.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(to_fixed)) __obj.updateDynamic("to_fixed")(to_fixed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(to_max)) __obj.updateDynamic("to_max")(to_max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(to_min)) __obj.updateDynamic("to_min")(to_min.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(to_shadow)) __obj.updateDynamic("to_shadow")(to_shadow.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     if (values_separator != null) __obj.updateDynamic("values_separator")(values_separator.asInstanceOf[js.Any])

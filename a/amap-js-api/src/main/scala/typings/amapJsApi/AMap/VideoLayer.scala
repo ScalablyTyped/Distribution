@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.VideoLayer")
 @js.native
-class VideoLayer () extends MediaLayer[HTMLVideoElement] {
+trait VideoLayer extends MediaLayer[HTMLVideoElement] {
   /**
     * 返回Video的Url
     */

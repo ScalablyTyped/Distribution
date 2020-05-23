@@ -15,14 +15,14 @@ trait IterativeCalculationData extends js.Object {
   var enabled: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns or sets the maximum amount of change between each iteration as Excel resolves circular references.
+    * Specifies the maximum amount of change between each iteration as Excel resolves circular references.
     *
     * [Api set: ExcelApi 1.9]
     */
   var maxChange: js.UndefOr[Double] = js.undefined
   /**
     *
-    * Returns or sets the maximum number of iterations that Excel can use to resolve a circular reference.
+    * Specifies the maximum number of iterations that Excel can use to resolve a circular reference.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -33,13 +33,13 @@ object IterativeCalculationData {
   @scala.inline
   def apply(
     enabled: js.UndefOr[Boolean] = js.undefined,
-    maxChange: Int | Double = null,
-    maxIteration: Int | Double = null
+    maxChange: js.UndefOr[Double] = js.undefined,
+    maxIteration: js.UndefOr[Double] = js.undefined
   ): IterativeCalculationData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (maxChange != null) __obj.updateDynamic("maxChange")(maxChange.asInstanceOf[js.Any])
-    if (maxIteration != null) __obj.updateDynamic("maxIteration")(maxIteration.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxChange)) __obj.updateDynamic("maxChange")(maxChange.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxIteration)) __obj.updateDynamic("maxIteration")(maxIteration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IterativeCalculationData]
   }
 }

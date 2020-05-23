@@ -14,10 +14,13 @@ trait IListSessionEntityTypesResponse extends js.Object {
 
 object IListSessionEntityTypesResponse {
   @scala.inline
-  def apply(nextPageToken: String = null, sessionEntityTypes: js.Array[ISessionEntityType] = null): IListSessionEntityTypesResponse = {
+  def apply(
+    nextPageToken: js.UndefOr[Null | String] = js.undefined,
+    sessionEntityTypes: js.UndefOr[Null | js.Array[ISessionEntityType]] = js.undefined
+  ): IListSessionEntityTypesResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (sessionEntityTypes != null) __obj.updateDynamic("sessionEntityTypes")(sessionEntityTypes.asInstanceOf[js.Any])
+    if (!js.isUndefined(nextPageToken)) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(sessionEntityTypes)) __obj.updateDynamic("sessionEntityTypes")(sessionEntityTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListSessionEntityTypesResponse]
   }
 }

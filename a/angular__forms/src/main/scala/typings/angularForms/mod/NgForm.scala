@@ -3,8 +3,8 @@ package typings.angularForms.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.angularCore.mod.AfterViewInit
 import typings.angularCore.mod.EventEmitter
-import typings.angularForms.AnonUpdateOn
-import typings.std.Event_
+import typings.angularForms.anon.UpdateOn
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,7 +37,7 @@ class NgForm protected ()
     * Possible values: `'change'` | `'blur'` | `'submit'`.
     *
     */
-  var options: AnonUpdateOn = js.native
+  var options: UpdateOn = js.native
   /**
     * @description
     * Returns whether the form submission has been triggered.
@@ -129,7 +129,7 @@ class NgForm protected ()
     *
     * @param $event The "submit" event object
     */
-  def onSubmit($event: Event_): Boolean = js.native
+  def onSubmit($event: Event): Boolean = js.native
   /**
     * @description
     * Remove a control from this form.

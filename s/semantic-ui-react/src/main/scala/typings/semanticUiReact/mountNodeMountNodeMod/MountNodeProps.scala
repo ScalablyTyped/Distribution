@@ -16,12 +16,12 @@ object MountNodeProps {
   def apply(
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     className: String = null,
-    node: HTMLElement | Ref[_] = null
+    node: js.UndefOr[Null | HTMLElement | Ref[_]] = js.undefined
   ): MountNodeProps = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
+    if (!js.isUndefined(node)) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
     __obj.asInstanceOf[MountNodeProps]
   }
 }

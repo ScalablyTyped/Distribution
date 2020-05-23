@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Vex.Flow.BoundingBox")
 @js.native
-class BoundingBox protected () extends js.Object {
-  def this(x: Double, y: Double, w: Double, h: Double) = this()
+trait BoundingBox extends js.Object {
   def draw(ctx: IRenderContext, x: Double, y: Double): Unit = js.native
   def getH(): Double = js.native
   def getW(): Double = js.native
@@ -21,12 +19,5 @@ class BoundingBox protected () extends js.Object {
   def setW(w: Double): BoundingBox = js.native
   def setX(x: Double): BoundingBox = js.native
   def setY(y: Double): BoundingBox = js.native
-}
-
-/* static members */
-@JSGlobal("Vex.Flow.BoundingBox")
-@js.native
-object BoundingBox extends js.Object {
-  def copy(that: BoundingBox): BoundingBox = js.native
 }
 

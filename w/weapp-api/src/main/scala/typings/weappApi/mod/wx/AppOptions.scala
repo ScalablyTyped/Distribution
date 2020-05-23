@@ -36,7 +36,7 @@ trait AppOptions
 object AppOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     onError: /* error */ js.Any => Unit = null,
     onHide: () => Unit = null,
     onLaunch: /* options */ onLaunchOptions => Unit = null,

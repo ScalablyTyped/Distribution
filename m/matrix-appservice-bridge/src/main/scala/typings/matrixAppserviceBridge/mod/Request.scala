@@ -1,6 +1,6 @@
 package typings.matrixAppserviceBridge.mod
 
-import typings.matrixAppserviceBridge.AnonData
+import typings.matrixAppserviceBridge.anon.Data
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("matrix-appservice-bridge", "Request")
 @js.native
 class Request protected () extends js.Object {
-  def this(opts: AnonData) = this()
+  def this(opts: Data) = this()
   var data: Event = js.native
   var id: String = js.native
   var startTs: Double = js.native

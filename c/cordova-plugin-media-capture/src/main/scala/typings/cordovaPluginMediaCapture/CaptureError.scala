@@ -1,6 +1,5 @@
 package typings.cordovaPluginMediaCapture
 
-import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,15 +23,11 @@ trait CaptureError extends js.Object {
   var message: String
 }
 
-@JSGlobal("CaptureError")
-@js.native
-object CaptureError extends /** Constructor for CaptureError  */
-Instantiable2[/* code */ Double, /* message */ String, CaptureError] {
-  var CAPTURE_APPLICATION_BUSY: Double = js.native
-  var CAPTURE_INTERNAL_ERR: Double = js.native
-  var CAPTURE_INVALID_ARGUMENT: Double = js.native
-  var CAPTURE_NOT_SUPPORTED: Double = js.native
-  var CAPTURE_NO_MEDIA_FILES: Double = js.native
-  var CAPTURE_PERMISSION_DENIED: Double = js.native
+object CaptureError {
+  @scala.inline
+  def apply(code: Double, message: String): CaptureError = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CaptureError]
+  }
 }
 

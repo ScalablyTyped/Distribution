@@ -47,22 +47,22 @@ trait DescribeLaunchTemplateVersionsRequest extends js.Object {
 object DescribeLaunchTemplateVersionsRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     Filters: FilterList = null,
     LaunchTemplateId: LaunchTemplateId = null,
     LaunchTemplateName: LaunchTemplateName = null,
-    MaxResults: Int | scala.Double = null,
+    MaxResults: js.UndefOr[Integer] = js.undefined,
     MaxVersion: String = null,
     MinVersion: String = null,
     NextToken: String = null,
     Versions: VersionStringList = null
   ): DescribeLaunchTemplateVersionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
     if (LaunchTemplateId != null) __obj.updateDynamic("LaunchTemplateId")(LaunchTemplateId.asInstanceOf[js.Any])
     if (LaunchTemplateName != null) __obj.updateDynamic("LaunchTemplateName")(LaunchTemplateName.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (MaxVersion != null) __obj.updateDynamic("MaxVersion")(MaxVersion.asInstanceOf[js.Any])
     if (MinVersion != null) __obj.updateDynamic("MinVersion")(MinVersion.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])

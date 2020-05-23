@@ -31,15 +31,15 @@ object BabelCodeFrameOptions {
   def apply(
     forceColor: js.UndefOr[Boolean] = js.undefined,
     highlightCode: js.UndefOr[Boolean] = js.undefined,
-    linesAbove: Int | Double = null,
-    linesBelow: Int | Double = null,
+    linesAbove: js.UndefOr[Double] = js.undefined,
+    linesBelow: js.UndefOr[Double] = js.undefined,
     message: String = null
   ): BabelCodeFrameOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(forceColor)) __obj.updateDynamic("forceColor")(forceColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightCode)) __obj.updateDynamic("highlightCode")(highlightCode.asInstanceOf[js.Any])
-    if (linesAbove != null) __obj.updateDynamic("linesAbove")(linesAbove.asInstanceOf[js.Any])
-    if (linesBelow != null) __obj.updateDynamic("linesBelow")(linesBelow.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceColor)) __obj.updateDynamic("forceColor")(forceColor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightCode)) __obj.updateDynamic("highlightCode")(highlightCode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(linesAbove)) __obj.updateDynamic("linesAbove")(linesAbove.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(linesBelow)) __obj.updateDynamic("linesBelow")(linesBelow.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[BabelCodeFrameOptions]
   }

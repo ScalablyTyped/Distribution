@@ -14,9 +14,9 @@ trait VoiceChannelRequest extends js.Object {
 
 object VoiceChannelRequest {
   @scala.inline
-  def apply(Enabled: js.UndefOr[Boolean] = js.undefined): VoiceChannelRequest = {
+  def apply(Enabled: js.UndefOr[boolean] = js.undefined): VoiceChannelRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VoiceChannelRequest]
   }
 }

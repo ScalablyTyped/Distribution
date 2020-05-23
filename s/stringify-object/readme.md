@@ -1,7 +1,7 @@
 
 # Scala.js typings for stringify-object
 
-Typings are for version 3.2
+Typings are for version 3.3
 
 ## Library description:
 Stringify an object/array like JSON.stringify just without all the double-quotes

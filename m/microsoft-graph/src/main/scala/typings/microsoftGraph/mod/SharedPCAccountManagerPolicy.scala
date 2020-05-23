@@ -34,15 +34,15 @@ object SharedPCAccountManagerPolicy {
   @scala.inline
   def apply(
     accountDeletionPolicy: SharedPCAccountDeletionPolicyType = null,
-    cacheAccountsAboveDiskFreePercentage: Int | Double = null,
-    inactiveThresholdDays: Int | Double = null,
-    removeAccountsBelowDiskFreePercentage: Int | Double = null
+    cacheAccountsAboveDiskFreePercentage: js.UndefOr[Double] = js.undefined,
+    inactiveThresholdDays: js.UndefOr[Double] = js.undefined,
+    removeAccountsBelowDiskFreePercentage: js.UndefOr[Double] = js.undefined
   ): SharedPCAccountManagerPolicy = {
     val __obj = js.Dynamic.literal()
     if (accountDeletionPolicy != null) __obj.updateDynamic("accountDeletionPolicy")(accountDeletionPolicy.asInstanceOf[js.Any])
-    if (cacheAccountsAboveDiskFreePercentage != null) __obj.updateDynamic("cacheAccountsAboveDiskFreePercentage")(cacheAccountsAboveDiskFreePercentage.asInstanceOf[js.Any])
-    if (inactiveThresholdDays != null) __obj.updateDynamic("inactiveThresholdDays")(inactiveThresholdDays.asInstanceOf[js.Any])
-    if (removeAccountsBelowDiskFreePercentage != null) __obj.updateDynamic("removeAccountsBelowDiskFreePercentage")(removeAccountsBelowDiskFreePercentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheAccountsAboveDiskFreePercentage)) __obj.updateDynamic("cacheAccountsAboveDiskFreePercentage")(cacheAccountsAboveDiskFreePercentage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inactiveThresholdDays)) __obj.updateDynamic("inactiveThresholdDays")(inactiveThresholdDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeAccountsBelowDiskFreePercentage)) __obj.updateDynamic("removeAccountsBelowDiskFreePercentage")(removeAccountsBelowDiskFreePercentage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedPCAccountManagerPolicy]
   }
 }

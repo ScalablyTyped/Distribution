@@ -75,7 +75,7 @@ object DataSource {
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (cube != null) __obj.updateDynamic("cube")(cube.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAdvancedFilter)) __obj.updateDynamic("enableAdvancedFilter")(enableAdvancedFilter.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAdvancedFilter)) __obj.updateDynamic("enableAdvancedFilter")(enableAdvancedFilter.get.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     if (pagerOptions != null) __obj.updateDynamic("pagerOptions")(pagerOptions.asInstanceOf[js.Any])
     if (providerName != null) __obj.updateDynamic("providerName")(providerName.asInstanceOf[js.Any])

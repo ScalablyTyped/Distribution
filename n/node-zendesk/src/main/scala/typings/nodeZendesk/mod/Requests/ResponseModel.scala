@@ -53,36 +53,27 @@ object ResponseModel {
     subject: String,
     url: String,
     via: Via,
-    assignee_id: Int | Double = null,
+    assignee_id: ZendeskID = null.asInstanceOf[ZendeskID],
     can_be_solved_by_me: js.UndefOr[Boolean] = js.undefined,
     custom_fields: js.Array[Field] = null,
     due_at: String = null,
     fields: js.Array[Field] = null,
     followup_source_id: String = null,
-    group_id: Int | Double = null,
-    organization_id: Int | Double = null,
+    group_id: js.UndefOr[Null | ZendeskID] = js.undefined,
+    organization_id: ZendeskID = null.asInstanceOf[ZendeskID],
     priority: Priority = null,
     recipient: String = null,
     solved: js.UndefOr[Boolean] = js.undefined,
-    ticket_form_id: Int | Double = null,
+    ticket_form_id: js.UndefOr[Null | Double] = js.undefined,
     `type`: TicketType = null,
     updated_at: String = null
   ): ResponseModel = {
-    val __obj = js.Dynamic.literal(collaborator_ids = collaborator_ids.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], email_cc_ids = email_cc_ids.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_public = is_public.asInstanceOf[js.Any], requester_id = requester_id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], via = via.asInstanceOf[js.Any])
-    if (assignee_id != null) __obj.updateDynamic("assignee_id")(assignee_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_be_solved_by_me)) __obj.updateDynamic("can_be_solved_by_me")(can_be_solved_by_me.asInstanceOf[js.Any])
-    if (custom_fields != null) __obj.updateDynamic("custom_fields")(custom_fields.asInstanceOf[js.Any])
-    if (due_at != null) __obj.updateDynamic("due_at")(due_at.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (followup_source_id != null) __obj.updateDynamic("followup_source_id")(followup_source_id.asInstanceOf[js.Any])
-    if (group_id != null) __obj.updateDynamic("group_id")(group_id.asInstanceOf[js.Any])
-    if (organization_id != null) __obj.updateDynamic("organization_id")(organization_id.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (recipient != null) __obj.updateDynamic("recipient")(recipient.asInstanceOf[js.Any])
-    if (!js.isUndefined(solved)) __obj.updateDynamic("solved")(solved.asInstanceOf[js.Any])
-    if (ticket_form_id != null) __obj.updateDynamic("ticket_form_id")(ticket_form_id.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(collaborator_ids = collaborator_ids.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], email_cc_ids = email_cc_ids.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_public = is_public.asInstanceOf[js.Any], requester_id = requester_id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], via = via.asInstanceOf[js.Any], assignee_id = assignee_id.asInstanceOf[js.Any], custom_fields = custom_fields.asInstanceOf[js.Any], due_at = due_at.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], followup_source_id = followup_source_id.asInstanceOf[js.Any], organization_id = organization_id.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any])
+    if (!js.isUndefined(can_be_solved_by_me)) __obj.updateDynamic("can_be_solved_by_me")(can_be_solved_by_me.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(group_id)) __obj.updateDynamic("group_id")(group_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(solved)) __obj.updateDynamic("solved")(solved.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ticket_form_id)) __obj.updateDynamic("ticket_form_id")(ticket_form_id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseModel]
   }
 }

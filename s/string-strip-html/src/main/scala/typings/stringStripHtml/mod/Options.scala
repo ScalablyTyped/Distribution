@@ -30,10 +30,10 @@ object Options {
     if (dumpLinkHrefsNearby != null) __obj.updateDynamic("dumpLinkHrefsNearby")(dumpLinkHrefsNearby.asInstanceOf[js.Any])
     if (ignoreTags != null) __obj.updateDynamic("ignoreTags")(ignoreTags.asInstanceOf[js.Any])
     if (onlyStripTags != null) __obj.updateDynamic("onlyStripTags")(onlyStripTags.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnRangeOnly)) __obj.updateDynamic("returnRangeOnly")(returnRangeOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipHtmlDecoding)) __obj.updateDynamic("skipHtmlDecoding")(skipHtmlDecoding.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnRangeOnly)) __obj.updateDynamic("returnRangeOnly")(returnRangeOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipHtmlDecoding)) __obj.updateDynamic("skipHtmlDecoding")(skipHtmlDecoding.get.asInstanceOf[js.Any])
     if (stripTogetherWithTheirContents != null) __obj.updateDynamic("stripTogetherWithTheirContents")(stripTogetherWithTheirContents.asInstanceOf[js.Any])
-    if (!js.isUndefined(trimOnlySpaces)) __obj.updateDynamic("trimOnlySpaces")(trimOnlySpaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(trimOnlySpaces)) __obj.updateDynamic("trimOnlySpaces")(trimOnlySpaces.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -11,15 +11,21 @@ trait EventAttendee extends js.Object {
   var comment: js.UndefOr[String] = js.undefined
   /** The attendee's name, if available. Optional. */
   var displayName: js.UndefOr[String] = js.undefined
-  /** The attendee's email address, if available. This field must be present when adding an attendee. It must be a valid email address as per RFC5322. */
+  /**
+    * The attendee's email address, if available. This field must be present when adding an attendee. It must be a valid email address as per RFC5322.
+    * Required when adding an attendee.
+    */
   var email: js.UndefOr[String] = js.undefined
-  /** The attendee's Profile ID, if available. It corresponds to theid field in the People collection of the Google+ API */
+  /** The attendee's Profile ID, if available. It corresponds to the id field in the People collection of the Google+ API */
   var id: js.UndefOr[String] = js.undefined
   /** Whether this is an optional attendee. Optional. The default is False. */
   var optional: js.UndefOr[Boolean] = js.undefined
   /** Whether the attendee is the organizer of the event. Read-only. The default is False. */
   var organizer: js.UndefOr[Boolean] = js.undefined
-  /** Whether the attendee is a resource. Read-only. The default is False. */
+  /**
+    * Whether the attendee is a resource. Can only be set when the attendee is added to the event for the first time. Subsequent modifications are ignored.
+    * Optional. The default is False.
+    */
   var resource: js.UndefOr[Boolean] = js.undefined
   /**
     * The attendee's response status. Possible values are:
@@ -36,7 +42,7 @@ trait EventAttendee extends js.Object {
 object EventAttendee {
   @scala.inline
   def apply(
-    additionalGuests: Int | Double = null,
+    additionalGuests: js.UndefOr[Double] = js.undefined,
     comment: String = null,
     displayName: String = null,
     email: String = null,
@@ -48,16 +54,16 @@ object EventAttendee {
     self: js.UndefOr[Boolean] = js.undefined
   ): EventAttendee = {
     val __obj = js.Dynamic.literal()
-    if (additionalGuests != null) __obj.updateDynamic("additionalGuests")(additionalGuests.asInstanceOf[js.Any])
+    if (!js.isUndefined(additionalGuests)) __obj.updateDynamic("additionalGuests")(additionalGuests.get.asInstanceOf[js.Any])
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
-    if (!js.isUndefined(organizer)) __obj.updateDynamic("organizer")(organizer.asInstanceOf[js.Any])
-    if (!js.isUndefined(resource)) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(organizer)) __obj.updateDynamic("organizer")(organizer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resource)) __obj.updateDynamic("resource")(resource.get.asInstanceOf[js.Any])
     if (responseStatus != null) __obj.updateDynamic("responseStatus")(responseStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(self)) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
+    if (!js.isUndefined(self)) __obj.updateDynamic("self")(self.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventAttendee]
   }
 }

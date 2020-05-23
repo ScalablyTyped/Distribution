@@ -1,5 +1,6 @@
 package typings.intlFormatCache
 
+import typings.intlFormatCache.anon.Instantiable
 import typings.std.ConstructorParameters
 import typings.std.Intl.DateTimeFormat
 import typings.std.Intl.NumberFormat
@@ -15,9 +16,9 @@ object mod extends js.Object {
   val default: MemoizeFormatConstructorFn = js.native
   type CacheValue = NumberFormat | DateTimeFormat | PluralRules | js.Any
   type MemoizeFormatConstructorFn = js.Function2[
-    /* constructor */ AnonInstantiable, 
+    /* constructor */ Instantiable, 
     /* cache */ js.UndefOr[Record[String, CacheValue]], 
-    js.Function1[/* args */ ConstructorParameters[AnonInstantiable], js.Any]
+    js.Function1[/* args */ ConstructorParameters[Instantiable], js.Any]
   ]
 }
 

@@ -1,21 +1,12 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.AnonTexture
-import typings.babylonjs.PartialIEffectLayerOptionAlphaBlendingMode
+import typings.babylonjs.anon.PartialIEffectLayerOptionAlphaBlendingMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.EffectLayer")
 @js.native
-abstract class EffectLayer protected () extends js.Object {
-  /**
-    * Instantiates a new effect Layer and references it in the scene.
-    * @param name The name of the layer
-    * @param scene The scene to use the layer in
-    */
-  def this(/** The Friendly of the effect in the scene */
-  name: String, scene: Scene) = this()
+trait EffectLayer extends js.Object {
   var _cachedDefines: js.Any = js.native
   /**
     * Dispose only the render target textures and post process.
@@ -23,7 +14,7 @@ abstract class EffectLayer protected () extends js.Object {
   var _disposeTextureAndPostProcesses: js.Any = js.native
   var _effectLayerMapGenerationEffect: js.Any = js.native
   var _effectLayerOptions: js.Any = js.native
-  var _emissiveTextureAndColor: AnonTexture = js.native
+  var _emissiveTextureAndColor: typings.babylonjs.anon.Texture = js.native
   var _engine: Engine = js.native
   /**
     * Generates the index buffer of the full screen quad blending to the main canvas.
@@ -224,21 +215,5 @@ abstract class EffectLayer protected () extends js.Object {
     * @returns true if the glow layer should be rendered
     */
   def shouldRender(): Boolean = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.EffectLayer")
-@js.native
-object EffectLayer extends js.Object {
-  /**
-    * Creates an effect layer from parsed effect layer data
-    * @param parsedEffectLayer defines effect layer data
-    * @param scene defines the current scene
-    * @param rootUrl defines the root URL containing the effect layer information
-    * @returns a parsed effect Layer
-    */
-  def Parse(parsedEffectLayer: js.Any, scene: Scene, rootUrl: String): EffectLayer = js.native
-  /** @hidden */
-  def _SceneComponentInitialization(scene: Scene): Unit = js.native
 }
 

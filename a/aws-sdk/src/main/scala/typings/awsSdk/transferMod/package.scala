@@ -8,6 +8,7 @@ package object transferMod {
   type AddressAllocationId = java.lang.String
   type AddressAllocationIds = js.Array[typings.awsSdk.transferMod.AddressAllocationId]
   type Arn = java.lang.String
+  type Certificate = java.lang.String
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.transferMod.ClientApiVersions
   type DateImported = typings.std.Date
   /* Rewritten from type alias, can be one of: 
@@ -42,6 +43,14 @@ package object transferMod {
   type NextToken = java.lang.String
   type NullableRole = java.lang.String
   type Policy = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.SFTP
+    - typings.awsSdk.awsSdkStrings.FTP
+    - typings.awsSdk.awsSdkStrings.FTPS
+    - java.lang.String
+  */
+  type Protocol = typings.awsSdk.transferMod._Protocol | java.lang.String
+  type Protocols = js.Array[typings.awsSdk.transferMod.Protocol]
   type Response = java.lang.String
   type Role = java.lang.String
   type ServerId = java.lang.String

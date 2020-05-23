@@ -18,6 +18,9 @@ object kendoUiStrings {
   sealed trait half extends js.Object
   
   @js.native
+  sealed trait horizontal extends js.Object
+  
+  @js.native
   sealed trait incell extends js.Object
   
   @js.native
@@ -88,6 +91,9 @@ object kendoUiStrings {
   
   @js.native
   sealed trait kendoDraggable extends js.Object
+  
+  @js.native
+  sealed trait kendoDrawer extends js.Object
   
   @js.native
   sealed trait kendoDropDownList extends js.Object
@@ -276,6 +282,9 @@ object kendoUiStrings {
   sealed trait kendoSpreadsheet extends js.Object
   
   @js.native
+  sealed trait kendoStepper extends js.Object
+  
+  @js.native
   sealed trait kendoStockChart extends js.Object
   
   @js.native
@@ -283,6 +292,12 @@ object kendoUiStrings {
   
   @js.native
   sealed trait kendoTabStrip extends js.Object
+  
+  @js.native
+  sealed trait kendoTextBox extends js.Object
+  
+  @js.native
+  sealed trait kendoTileLayout extends js.Object
   
   @js.native
   sealed trait kendoTimePicker extends js.Object
@@ -329,6 +344,9 @@ object kendoUiStrings {
   @js.native
   sealed trait update extends js.Object
   
+  @js.native
+  sealed trait vertical extends js.Object
+  
   @scala.inline
   def continuous: continuous = "continuous".asInstanceOf[continuous]
   @scala.inline
@@ -337,6 +355,8 @@ object kendoUiStrings {
   def destroy: destroy = "destroy".asInstanceOf[destroy]
   @scala.inline
   def half: half = "half".asInstanceOf[half]
+  @scala.inline
+  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   @scala.inline
   def incell: incell = "incell".asInstanceOf[incell]
   @scala.inline
@@ -385,6 +405,8 @@ object kendoUiStrings {
   def kendoDialog: kendoDialog = "kendoDialog".asInstanceOf[kendoDialog]
   @scala.inline
   def kendoDraggable: kendoDraggable = "kendoDraggable".asInstanceOf[kendoDraggable]
+  @scala.inline
+  def kendoDrawer: kendoDrawer = "kendoDrawer".asInstanceOf[kendoDrawer]
   @scala.inline
   def kendoDropDownList: kendoDropDownList = "kendoDropDownList".asInstanceOf[kendoDropDownList]
   @scala.inline
@@ -510,11 +532,17 @@ object kendoUiStrings {
   @scala.inline
   def kendoSpreadsheet: kendoSpreadsheet = "kendoSpreadsheet".asInstanceOf[kendoSpreadsheet]
   @scala.inline
+  def kendoStepper: kendoStepper = "kendoStepper".asInstanceOf[kendoStepper]
+  @scala.inline
   def kendoStockChart: kendoStockChart = "kendoStockChart".asInstanceOf[kendoStockChart]
   @scala.inline
   def kendoSwitch: kendoSwitch = "kendoSwitch".asInstanceOf[kendoSwitch]
   @scala.inline
   def kendoTabStrip: kendoTabStrip = "kendoTabStrip".asInstanceOf[kendoTabStrip]
+  @scala.inline
+  def kendoTextBox: kendoTextBox = "kendoTextBox".asInstanceOf[kendoTextBox]
+  @scala.inline
+  def kendoTileLayout: kendoTileLayout = "kendoTileLayout".asInstanceOf[kendoTileLayout]
   @scala.inline
   def kendoTimePicker: kendoTimePicker = "kendoTimePicker".asInstanceOf[kendoTimePicker]
   @scala.inline
@@ -545,5 +573,7 @@ object kendoUiStrings {
   def single: single = "single".asInstanceOf[single]
   @scala.inline
   def update: update = "update".asInstanceOf[update]
+  @scala.inline
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
 }
 

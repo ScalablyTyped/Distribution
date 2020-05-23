@@ -2,7 +2,6 @@ package typings.antDesignIcons
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.antDesignIcons.antDesignIconsBooleans.`false`
-import typings.antDesignIcons.antDesignIconsStrings.`LinefeedDotanticon LeftcurlybracketLinefeed  displayColon inline-blockSemicolonLinefeed  colorColon inheritSemicolonLinefeed  font-styleColon normalSemicolonLinefeed  line-heightColon 0SemicolonLinefeed  text-alignColon centerSemicolonLinefeed  text-transformColon noneSemicolonLinefeed  vertical-alignColon -0Dot125emSemicolonLinefeed  text-renderingColon optimizeLegibilitySemicolonLinefeed  -webkit-font-smoothingColon antialiasedSemicolonLinefeed  -moz-osx-font-smoothingColon grayscaleSemicolonL`
 import typings.antDesignIconsSvg.typesMod.AbstractNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ant-design/icons/dist/utils", JSImport.Namespace)
 @js.native
 object utilsMod extends js.Object {
-  val iconStyles: `LinefeedDotanticon LeftcurlybracketLinefeed  displayColon inline-blockSemicolonLinefeed  colorColon inheritSemicolonLinefeed  font-styleColon normalSemicolonLinefeed  line-heightColon 0SemicolonLinefeed  text-alignColon centerSemicolonLinefeed  text-transformColon noneSemicolonLinefeed  vertical-alignColon -0Dot125emSemicolonLinefeed  text-renderingColon optimizeLegibilitySemicolonLinefeed  -webkit-font-smoothingColon antialiasedSemicolonLinefeed  -moz-osx-font-smoothingColon grayscaleSemicolonL` = js.native
+  val iconStyles: /* "\n.anticon {\n  display: inline-block;\n  color: inherit;\n  font-style: normal;\n  line-height: 0;\n  text-align: center;\n  text-transform: none;\n  vertical-align: -0.125em;\n  text-rendering: optimizeLegibility;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\n.anticon > * {\n  line-height: 1;\n}\n\n.anticon svg {\n  display: inline-block;\n}\n\n.anticon::before {\n  display: none;\n}\n\n.anticon .anticon-icon {\n  display: block;\n}\n\n.anticon[tabindex] {\n  cursor: pointer;\n}\n\n.anticon-spin::before,\n.anticon-spin {\n  display: inline-block;\n  -webkit-animation: loadingCircle 1s infinite linear;\n  animation: loadingCircle 1s infinite linear;\n}\n\n@-webkit-keyframes loadingCircle {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes loadingCircle {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n" */ String = js.native
   def generate(node: AbstractNode, key: String): js.Any = js.native
   def generate(node: AbstractNode, key: String, rootProps: StringDictionary[js.Any]): js.Any = js.native
   @JSName("generate")

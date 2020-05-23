@@ -48,14 +48,14 @@ object CarouselItemProps {
     if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule.asInstanceOf[js.Any])
-    if (!js.isUndefined(in)) __obj.updateDynamic("in")(in.asInstanceOf[js.Any])
+    if (!js.isUndefined(in)) __obj.updateDynamic("in")(in.get.asInstanceOf[js.Any])
     if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction0(onEnter))
     if (onEntered != null) __obj.updateDynamic("onEntered")(js.Any.fromFunction0(onEntered))
     if (onEntering != null) __obj.updateDynamic("onEntering")(js.Any.fromFunction0(onEntering))
     if (onExit != null) __obj.updateDynamic("onExit")(js.Any.fromFunction0(onExit))
     if (onExited != null) __obj.updateDynamic("onExited")(js.Any.fromFunction0(onExited))
     if (onExiting != null) __obj.updateDynamic("onExiting")(js.Any.fromFunction0(onExiting))
-    if (!js.isUndefined(slide)) __obj.updateDynamic("slide")(slide.asInstanceOf[js.Any])
+    if (!js.isUndefined(slide)) __obj.updateDynamic("slide")(slide.get.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[CarouselItemProps]
   }

@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,15 @@ trait TextEncoderStream
   val writable_TextEncoderStream: WritableStream[java.lang.String]
 }
 
-@JSGlobal("TextEncoderStream")
-@js.native
-object TextEncoderStream extends Instantiable0[TextEncoderStream]
+object TextEncoderStream {
+  @scala.inline
+  def apply(
+    encoding: java.lang.String,
+    readable: ReadableStream[Uint8Array],
+    writable: WritableStream[java.lang.String]
+  ): TextEncoderStream = {
+    val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any], readable = readable.asInstanceOf[js.Any], writable = writable.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TextEncoderStream]
+  }
+}
 

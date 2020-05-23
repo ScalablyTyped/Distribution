@@ -16,12 +16,12 @@ object PageInfo {
   def apply(
     hasNextPage: Boolean,
     hasPreviousPage: Boolean,
-    endCursor: String = null,
-    startCursor: String = null
+    endCursor: js.UndefOr[Null | String] = js.undefined,
+    startCursor: js.UndefOr[Null | String] = js.undefined
   ): PageInfo = {
     val __obj = js.Dynamic.literal(hasNextPage = hasNextPage.asInstanceOf[js.Any], hasPreviousPage = hasPreviousPage.asInstanceOf[js.Any])
-    if (endCursor != null) __obj.updateDynamic("endCursor")(endCursor.asInstanceOf[js.Any])
-    if (startCursor != null) __obj.updateDynamic("startCursor")(startCursor.asInstanceOf[js.Any])
+    if (!js.isUndefined(endCursor)) __obj.updateDynamic("endCursor")(endCursor.asInstanceOf[js.Any])
+    if (!js.isUndefined(startCursor)) __obj.updateDynamic("startCursor")(startCursor.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageInfo]
   }
 }

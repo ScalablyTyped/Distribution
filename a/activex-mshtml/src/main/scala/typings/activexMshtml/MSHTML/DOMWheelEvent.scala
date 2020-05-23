@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.DOMWheelEvent")
 @js.native
-class DOMWheelEvent protected () extends js.Object {
+trait DOMWheelEvent extends js.Object {
   @JSName("MSHTML.DOMWheelEvent_typekey")
   var MSHTMLDotDOMWheelEvent_typekey: DOMWheelEvent = js.native
   val altKey: Boolean = js.native

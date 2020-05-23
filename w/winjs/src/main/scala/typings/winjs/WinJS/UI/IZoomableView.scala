@@ -1,8 +1,8 @@
 package typings.winjs.WinJS.UI
 
-import typings.winjs.AnonItem
 import typings.winjs.WinJS.Promise
 import typings.winjs.WinJS.Utilities.IPosition
+import typings.winjs.anon.Item
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +33,7 @@ trait IZoomableView[T] extends js.Object {
     * Retrieves the current item of the zoomed in or zoomed out child of the custom control.
     * @returns An object that represents the selected item. This return value must be a Promise for the following: item, position.
     **/
-  def getCurrentItem(): Promise[AnonItem[T]]
+  def getCurrentItem(): Promise[Item[T]]
   /**
     * Retrieves the panning axis of the zoomed-in or zoomed-out child of the custom control.
     * @returns Identifies the panning axis of the child control. Implementation specific.
@@ -64,7 +64,7 @@ object IZoomableView {
     beginZoom: () => Unit,
     configureForZoom: (Boolean, Boolean, js.Function, Double) => Unit,
     endZoom: Boolean => Unit,
-    getCurrentItem: () => Promise[AnonItem[T]],
+    getCurrentItem: () => Promise[Item[T]],
     getPanAxis: () => String,
     handlePointer: String => Unit,
     positionItem: (T, IPosition) => Unit,

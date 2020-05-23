@@ -28,13 +28,13 @@ object AutoScalingTargetTrackingScalingPolicyConfigurationDescription {
   def apply(
     TargetValue: Double,
     DisableScaleIn: js.UndefOr[Boolean] = js.undefined,
-    ScaleInCooldown: Int | Double = null,
-    ScaleOutCooldown: Int | Double = null
+    ScaleInCooldown: js.UndefOr[Double] = js.undefined,
+    ScaleOutCooldown: js.UndefOr[Double] = js.undefined
   ): AutoScalingTargetTrackingScalingPolicyConfigurationDescription = {
     val __obj = js.Dynamic.literal(TargetValue = TargetValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisableScaleIn)) __obj.updateDynamic("DisableScaleIn")(DisableScaleIn.asInstanceOf[js.Any])
-    if (ScaleInCooldown != null) __obj.updateDynamic("ScaleInCooldown")(ScaleInCooldown.asInstanceOf[js.Any])
-    if (ScaleOutCooldown != null) __obj.updateDynamic("ScaleOutCooldown")(ScaleOutCooldown.asInstanceOf[js.Any])
+    if (!js.isUndefined(DisableScaleIn)) __obj.updateDynamic("DisableScaleIn")(DisableScaleIn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ScaleInCooldown)) __obj.updateDynamic("ScaleInCooldown")(ScaleInCooldown.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ScaleOutCooldown)) __obj.updateDynamic("ScaleOutCooldown")(ScaleOutCooldown.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoScalingTargetTrackingScalingPolicyConfigurationDescription]
   }
 }

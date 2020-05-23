@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TrustedAdvisorCostOptimizingSummary extends js.Object {
   /**
-    * The estimated monthly savings that might be realized if the recommended actions are taken.
+    * The estimated monthly savings that might be realized if the recommended operations are taken.
     */
   var estimatedMonthlySavings: Double = js.native
   /**
-    * The estimated percentage of savings that might be realized if the recommended actions are taken.
+    * The estimated percentage of savings that might be realized if the recommended operations are taken.
     */
   var estimatedPercentMonthlySavings: Double = js.native
 }

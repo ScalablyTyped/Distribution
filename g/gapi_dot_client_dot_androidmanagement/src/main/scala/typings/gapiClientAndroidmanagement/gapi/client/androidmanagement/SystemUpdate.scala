@@ -22,10 +22,14 @@ trait SystemUpdate extends js.Object {
 
 object SystemUpdate {
   @scala.inline
-  def apply(endMinutes: Int | Double = null, startMinutes: Int | Double = null, `type`: String = null): SystemUpdate = {
+  def apply(
+    endMinutes: js.UndefOr[Double] = js.undefined,
+    startMinutes: js.UndefOr[Double] = js.undefined,
+    `type`: String = null
+  ): SystemUpdate = {
     val __obj = js.Dynamic.literal()
-    if (endMinutes != null) __obj.updateDynamic("endMinutes")(endMinutes.asInstanceOf[js.Any])
-    if (startMinutes != null) __obj.updateDynamic("startMinutes")(startMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(endMinutes)) __obj.updateDynamic("endMinutes")(endMinutes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startMinutes)) __obj.updateDynamic("startMinutes")(startMinutes.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemUpdate]
   }

@@ -1,48 +1,41 @@
 package typings.makerJs.MakerJs.models
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.makerJs.MakerJs.IModel
 import typings.makerJs.MakerJs.IModelMap
+import typings.makerJs.MakerJs.IPathMap
 import typings.makerJs.MakerJs.IPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MakerJs.models.Ellipse")
-@js.native
-class Ellipse protected () extends IModel {
-  /**
-    * Class for Ellipse created with 2 radii.
-    *
-    * @param radiusX The x radius of the ellipse.
-    * @param radiusY The y radius of the ellipse.
-    * @param accuracy Optional accuracy of the underlying BezierCurve.
-    */
-  def this(radiusX: Double, radiusY: Double) = this()
-  /**
-    * Class for Ellipse created at a specific origin and 2 radii.
-    *
-    * @param origin The center of the ellipse.
-    * @param radiusX The x radius of the ellipse.
-    * @param radiusY The y radius of the ellipse.
-    * @param accuracy Optional accuracy of the underlying BezierCurve.
-    */
-  def this(origin: IPoint, radiusX: Double, radiusY: Double) = this()
-  def this(radiusX: Double, radiusY: Double, accuracy: Double) = this()
-  /**
-    * Class for Ellipse created at a specific x, y and 2 radii.
-    *
-    * @param cx The x coordinate of the center of the ellipse.
-    * @param cy The y coordinate of the center of the ellipse.
-    * @param rX The x radius of the ellipse.
-    * @param rY The y radius of the ellipse.
-    * @param accuracy Optional accuracy of the underlying BezierCurve.
-    */
-  def this(cx: Double, cy: Double, rx: Double, ry: Double) = this()
-  def this(origin: IPoint, radiusX: Double, radiusY: Double, accuracy: Double) = this()
-  def this(cx: Double, cy: Double, rx: Double, ry: Double, accuracy: Double) = this()
+trait Ellipse extends IModel {
   @JSName("models")
-  var models_Ellipse: IModelMap = js.native
+  var models_Ellipse: IModelMap
   @JSName("origin")
-  var origin_Ellipse: IPoint = js.native
+  var origin_Ellipse: IPoint
+}
+
+object Ellipse {
+  @scala.inline
+  def apply(
+    models: IModelMap,
+    origin: IPoint,
+    exporterOptions: StringDictionary[js.Any] = null,
+    layer: String = null,
+    notes: String = null,
+    paths: IPathMap = null,
+    `type`: String = null,
+    units: String = null
+  ): Ellipse = {
+    val __obj = js.Dynamic.literal(models = models.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
+    if (exporterOptions != null) __obj.updateDynamic("exporterOptions")(exporterOptions.asInstanceOf[js.Any])
+    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
+    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
+    if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Ellipse]
+  }
 }
 

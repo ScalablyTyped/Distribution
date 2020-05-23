@@ -1,8 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,10 +13,17 @@ trait TextDecoderStream
   val writable_TextDecoderStream: WritableStream[BufferSource]
 }
 
-@JSGlobal("TextDecoderStream")
-@js.native
-object TextDecoderStream
-  extends Instantiable0[TextDecoderStream]
-     with Instantiable1[/* label */ java.lang.String, TextDecoderStream]
-     with Instantiable2[/* label */ java.lang.String, /* options */ TextDecoderOptions, TextDecoderStream]
+object TextDecoderStream {
+  @scala.inline
+  def apply(
+    encoding: java.lang.String,
+    fatal: scala.Boolean,
+    ignoreBOM: scala.Boolean,
+    readable: ReadableStream[java.lang.String],
+    writable: WritableStream[BufferSource]
+  ): TextDecoderStream = {
+    val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any], fatal = fatal.asInstanceOf[js.Any], ignoreBOM = ignoreBOM.asInstanceOf[js.Any], readable = readable.asInstanceOf[js.Any], writable = writable.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TextDecoderStream]
+  }
+}
 

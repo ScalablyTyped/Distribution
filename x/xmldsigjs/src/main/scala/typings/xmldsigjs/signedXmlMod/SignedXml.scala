@@ -3,7 +3,7 @@ package typings.xmldsigjs.signedXmlMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Algorithm
 import typings.std.CryptoKey
-import typings.std.Document_
+import typings.std.Document
 import typings.std.EcdsaParams
 import typings.std.Element
 import typings.std.RsaPssParams
@@ -29,12 +29,12 @@ import scala.scalajs.js.annotation._
   * @memberOf SignedXml
   */
 class SignedXml () extends IXmlSerializable {
-  def this(node: Document_) = this()
+  def this(node: Document) = this()
   def this(node: Element) = this()
   var Algorithm: js.UndefOr[typings.std.Algorithm | RsaPssParams | EcdsaParams] = js.native
   var Key: js.UndefOr[CryptoKey] = js.native
   var Parent: js.UndefOr[Element | XmlObject] = js.native
-  var document: js.UndefOr[Document_] = js.native
+  var document: js.UndefOr[Document] = js.native
   var signature: Signature = js.native
   /* protected */ def ApplySignOptions(signature: Signature, algorithm: Algorithm, key: CryptoKey): js.Promise[Unit] = js.native
   /* protected */ def ApplySignOptions(signature: Signature, algorithm: Algorithm, key: CryptoKey, options: OptionsSign): js.Promise[Unit] = js.native
@@ -64,15 +64,15 @@ class SignedXml () extends IXmlSerializable {
     */
   def LoadXml(value: Element): Unit = js.native
   /* protected */ def ResolveTransform(transform: String): Transform = js.native
-  def Sign(algorithm: Algorithm, key: CryptoKey, data: Document_): js.Promise[Signature] = js.native
-  def Sign(algorithm: Algorithm, key: CryptoKey, data: Document_, options: OptionsSign): js.Promise[Signature] = js.native
-  def Sign(algorithm: EcdsaParams, key: CryptoKey, data: Document_): js.Promise[Signature] = js.native
-  def Sign(algorithm: EcdsaParams, key: CryptoKey, data: Document_, options: OptionsSign): js.Promise[Signature] = js.native
-  def Sign(algorithm: RsaPssParams, key: CryptoKey, data: Document_): js.Promise[Signature] = js.native
-  def Sign(algorithm: RsaPssParams, key: CryptoKey, data: Document_, options: OptionsSign): js.Promise[Signature] = js.native
+  def Sign(algorithm: Algorithm, key: CryptoKey, data: Document): js.Promise[Signature] = js.native
+  def Sign(algorithm: Algorithm, key: CryptoKey, data: Document, options: OptionsSign): js.Promise[Signature] = js.native
+  def Sign(algorithm: EcdsaParams, key: CryptoKey, data: Document): js.Promise[Signature] = js.native
+  def Sign(algorithm: EcdsaParams, key: CryptoKey, data: Document, options: OptionsSign): js.Promise[Signature] = js.native
+  def Sign(algorithm: RsaPssParams, key: CryptoKey, data: Document): js.Promise[Signature] = js.native
+  def Sign(algorithm: RsaPssParams, key: CryptoKey, data: Document, options: OptionsSign): js.Promise[Signature] = js.native
   def Signature: Uint8Array | Null = js.native
   /* protected */ def TransformSignedInfo(): String = js.native
-  /* protected */ def TransformSignedInfo(data: Document_): String = js.native
+  /* protected */ def TransformSignedInfo(data: Document): String = js.native
   /* protected */ def TransformSignedInfo(data: Element): String = js.native
   /* protected */ def ValidateReferences(doc: Element): js.Promise[Boolean] = js.native
   /* protected */ def ValidateSignatureValue(keys: js.Array[CryptoKey]): js.Promise[Boolean] = js.native

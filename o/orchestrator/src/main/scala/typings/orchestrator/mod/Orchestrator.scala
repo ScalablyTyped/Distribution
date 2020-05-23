@@ -2,8 +2,8 @@ package typings.orchestrator.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.eventsMod.EventEmitter
-import typings.orchestrator.AnonDep
-import typings.orchestrator.AnonMissingTasks
+import typings.orchestrator.anon.Dep
+import typings.orchestrator.anon.MissingTasks
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -63,7 +63,7 @@ trait Orchestrator extends EventEmitter {
     */
   def onAll(cb: js.Function1[/* e */ OnAllCallbackEvent, _]): Unit = js.native
   def reset(): Orchestrator = js.native
-  def sequence(tasks: js.Array[AnonDep], names: js.Array[String]): AnonMissingTasks = js.native
+  def sequence(tasks: js.Array[Dep], names: js.Array[String]): MissingTasks = js.native
   // TODO: TypeScript 2.1.5 cannot express varargs followed by callback as a last argument...
   def start(task1: Strings, task2: Strings): Orchestrator = js.native
   def start(task1: Strings, task2: Strings, cb: js.Function1[/* error */ js.UndefOr[js.Any], _]): Orchestrator = js.native

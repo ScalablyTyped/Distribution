@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 
 trait ITap extends IRecognizer {
   /** [Method] Returns the value of moveDistance
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMoveDistance: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Config Option] (Number) */
   var moveDistance: js.UndefOr[Double] = js.undefined
   /** [Method] Sets the value of moveDistance
-  		* @param moveDistance Number The new value.
-  		*/
+    * @param moveDistance Number The new value.
+    */
   var setMoveDistance: js.UndefOr[js.Function1[/* moveDistance */ js.UndefOr[Double], Unit]] = js.undefined
 }
 
@@ -39,7 +39,7 @@ object ITap {
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
-    moveDistance: Int | Double = null,
+    moveDistance: js.UndefOr[Double] = js.undefined,
     platformConfig: js.Any = null,
     self: IClass = null,
     setCallbackScope: /* callbackScope */ js.UndefOr[js.Any] => Unit = null,
@@ -68,14 +68,14 @@ object ITap {
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (moveDistance != null) __obj.updateDynamic("moveDistance")(moveDistance.asInstanceOf[js.Any])
+    if (!js.isUndefined(moveDistance)) __obj.updateDynamic("moveDistance")(moveDistance.get.asInstanceOf[js.Any])
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setCallbackScope != null) __obj.updateDynamic("setCallbackScope")(js.Any.fromFunction1(setCallbackScope))
     if (setMoveDistance != null) __obj.updateDynamic("setMoveDistance")(js.Any.fromFunction1(setMoveDistance))
     if (setOnFailed != null) __obj.updateDynamic("setOnFailed")(js.Any.fromFunction1(setOnFailed))
     if (setOnRecognized != null) __obj.updateDynamic("setOnRecognized")(js.Any.fromFunction1(setOnRecognized))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITap]

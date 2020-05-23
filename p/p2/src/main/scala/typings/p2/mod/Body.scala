@@ -1,7 +1,7 @@
 package typings.p2.mod
 
-import typings.p2.AnonOptimalDecomp
-import typings.p2.AnonType
+import typings.p2.anon.OptimalDecomp
+import typings.p2.anon.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,15 +41,15 @@ class Body () extends EventEmitter {
   var previousAngle: Double = js.native
   var previousPosition: js.Tuple2[Double, Double] = js.native
   var shapes: js.Array[Shape] = js.native
-  var sleepEvent: AnonType = js.native
+  var sleepEvent: Type = js.native
   var sleepSpeedLimit: Double = js.native
   var sleepState: Double = js.native
   var sleepTimeLimit: Double = js.native
-  var sleepyEvent: AnonType = js.native
+  var sleepyEvent: Type = js.native
   var `type`: Double = js.native
   var velocity: js.Tuple2[Double, Double] = js.native
   var vlambda: js.Tuple2[Double, Double] = js.native
-  var wakeUpEvent: AnonType = js.native
+  var wakeUpEvent: Type = js.native
   var wlambda: js.Tuple2[Double, Double] = js.native
   var world: World = js.native
   def addShape(shape: Shape): Unit = js.native
@@ -66,7 +66,7 @@ class Body () extends EventEmitter {
   def applyImpulseLocal(localImpulse: js.Tuple2[Double, Double]): Unit = js.native
   def applyImpulseLocal(localImpulse: js.Tuple2[Double, Double], localPoint: js.Tuple2[Double, Double]): Unit = js.native
   def fromPolygon(path: js.Array[js.Tuple2[Double, Double]]): Boolean = js.native
-  def fromPolygon(path: js.Array[js.Tuple2[Double, Double]], options: AnonOptimalDecomp): Boolean = js.native
+  def fromPolygon(path: js.Array[js.Tuple2[Double, Double]], options: OptimalDecomp): Boolean = js.native
   def getAABB(): AABB = js.native
   def getArea(): Double = js.native
   def getVelocityAtPoint(result: js.Tuple2[Double, Double], relativePoint: js.Tuple2[Double, Double]): js.Tuple2[Double, Double] = js.native

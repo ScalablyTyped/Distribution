@@ -266,81 +266,81 @@ object LegendOptions {
     alignColumns: js.UndefOr[Boolean] = js.undefined,
     backgroundColor: ColorString | GradientColorObject | PatternObject = null,
     borderColor: ColorString | GradientColorObject | PatternObject = null,
-    borderRadius: Int | Double = null,
-    borderWidth: Int | Double = null,
+    borderRadius: js.UndefOr[Double] = js.undefined,
+    borderWidth: js.UndefOr[Double] = js.undefined,
     bubbleLegend: LegendBubbleLegendOptions = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     floating: js.UndefOr[Boolean] = js.undefined,
     itemCheckboxStyle: CSSObject = null,
-    itemDistance: Int | Double = null,
+    itemDistance: js.UndefOr[Double] = js.undefined,
     itemHiddenStyle: CSSObject = null,
     itemHoverStyle: CSSObject = null,
-    itemMarginBottom: Int | Double = null,
-    itemMarginTop: Int | Double = null,
+    itemMarginBottom: js.UndefOr[Double] = js.undefined,
+    itemMarginTop: js.UndefOr[Double] = js.undefined,
     itemStyle: CSSObject = null,
-    itemWidth: Int | Double = null,
+    itemWidth: js.UndefOr[Double] = js.undefined,
     labelFormat: String = null,
     labelFormatter: FormatterCallbackFunction[Point | Series] = null,
     layout: OptionsLayoutValue = null,
-    margin: Int | Double = null,
-    maxHeight: Int | Double = null,
+    margin: js.UndefOr[Double] = js.undefined,
+    maxHeight: js.UndefOr[Double] = js.undefined,
     navigation: LegendNavigationOptions = null,
-    padding: Int | Double = null,
+    padding: js.UndefOr[Double] = js.undefined,
     reversed: js.UndefOr[Boolean] = js.undefined,
     rtl: js.UndefOr[Boolean] = js.undefined,
     shadow: Boolean | CSSObject = null,
     squareSymbol: js.UndefOr[Boolean] = js.undefined,
-    symbolHeight: Int | Double = null,
-    symbolPadding: Int | Double = null,
-    symbolRadius: Int | Double = null,
-    symbolWidth: Int | Double = null,
+    symbolHeight: js.UndefOr[Double] = js.undefined,
+    symbolPadding: js.UndefOr[Double] = js.undefined,
+    symbolRadius: js.UndefOr[Double] = js.undefined,
+    symbolWidth: js.UndefOr[Double] = js.undefined,
     title: LegendTitleOptions = null,
     useHTML: js.UndefOr[Boolean] = js.undefined,
     verticalAlign: VerticalAlignValue = null,
     width: Double | String = null,
-    x: Int | Double = null,
-    y: Int | Double = null
+    x: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined
   ): LegendOptions = {
     val __obj = js.Dynamic.literal()
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(alignColumns)) __obj.updateDynamic("alignColumns")(alignColumns.asInstanceOf[js.Any])
+    if (!js.isUndefined(alignColumns)) __obj.updateDynamic("alignColumns")(alignColumns.get.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderRadius)) __obj.updateDynamic("borderRadius")(borderRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
     if (bubbleLegend != null) __obj.updateDynamic("bubbleLegend")(bubbleLegend.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating.get.asInstanceOf[js.Any])
     if (itemCheckboxStyle != null) __obj.updateDynamic("itemCheckboxStyle")(itemCheckboxStyle.asInstanceOf[js.Any])
-    if (itemDistance != null) __obj.updateDynamic("itemDistance")(itemDistance.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemDistance)) __obj.updateDynamic("itemDistance")(itemDistance.get.asInstanceOf[js.Any])
     if (itemHiddenStyle != null) __obj.updateDynamic("itemHiddenStyle")(itemHiddenStyle.asInstanceOf[js.Any])
     if (itemHoverStyle != null) __obj.updateDynamic("itemHoverStyle")(itemHoverStyle.asInstanceOf[js.Any])
-    if (itemMarginBottom != null) __obj.updateDynamic("itemMarginBottom")(itemMarginBottom.asInstanceOf[js.Any])
-    if (itemMarginTop != null) __obj.updateDynamic("itemMarginTop")(itemMarginTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemMarginBottom)) __obj.updateDynamic("itemMarginBottom")(itemMarginBottom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemMarginTop)) __obj.updateDynamic("itemMarginTop")(itemMarginTop.get.asInstanceOf[js.Any])
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
-    if (itemWidth != null) __obj.updateDynamic("itemWidth")(itemWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemWidth)) __obj.updateDynamic("itemWidth")(itemWidth.get.asInstanceOf[js.Any])
     if (labelFormat != null) __obj.updateDynamic("labelFormat")(labelFormat.asInstanceOf[js.Any])
     if (labelFormatter != null) __obj.updateDynamic("labelFormatter")(labelFormatter.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
     if (navigation != null) __obj.updateDynamic("navigation")(navigation.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.get.asInstanceOf[js.Any])
     if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
-    if (!js.isUndefined(squareSymbol)) __obj.updateDynamic("squareSymbol")(squareSymbol.asInstanceOf[js.Any])
-    if (symbolHeight != null) __obj.updateDynamic("symbolHeight")(symbolHeight.asInstanceOf[js.Any])
-    if (symbolPadding != null) __obj.updateDynamic("symbolPadding")(symbolPadding.asInstanceOf[js.Any])
-    if (symbolRadius != null) __obj.updateDynamic("symbolRadius")(symbolRadius.asInstanceOf[js.Any])
-    if (symbolWidth != null) __obj.updateDynamic("symbolWidth")(symbolWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(squareSymbol)) __obj.updateDynamic("squareSymbol")(squareSymbol.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolHeight)) __obj.updateDynamic("symbolHeight")(symbolHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolPadding)) __obj.updateDynamic("symbolPadding")(symbolPadding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolRadius)) __obj.updateDynamic("symbolRadius")(symbolRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolWidth)) __obj.updateDynamic("symbolWidth")(symbolWidth.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHTML)) __obj.updateDynamic("useHTML")(useHTML.asInstanceOf[js.Any])
+    if (!js.isUndefined(useHTML)) __obj.updateDynamic("useHTML")(useHTML.get.asInstanceOf[js.Any])
     if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendOptions]
   }
 }

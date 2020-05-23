@@ -32,7 +32,7 @@ trait ShapeFontUpdateData extends js.Object {
   var bold: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * The HTML color code representation of the text color (e.g. "#FF0000" represents red). Returns null if the TextRange includes text fragments with different colors.
+    * HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns null if the TextRange includes text fragments with different colors.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -46,14 +46,14 @@ trait ShapeFontUpdateData extends js.Object {
   var italic: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents font name (e.g. "Calibri"). If the text is Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
+    * Represents font name (e.g., "Calibri"). If the text is Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
     *
     * [Api set: ExcelApi 1.9]
     */
   var name: js.UndefOr[String] = js.undefined
   /**
     *
-    * Represents font size in points (e.g. 11). Returns null if the TextRange includes text fragments with different font sizes.
+    * Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different font sizes.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -76,15 +76,15 @@ object ShapeFontUpdateData {
     color: String = null,
     italic: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     underline: ShapeFontUnderlineStyle | None | Single | typings.officeJsPreview.officeJsPreviewStrings.Double | Heavy | Dotted | DottedHeavy | Dash | DashHeavy | DashLong | DashLongHeavy | DotDash | DotDashHeavy | DotDotDash | DotDotDashHeavy | Wavy | WavyHeavy | WavyDouble = null
   ): ShapeFontUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
+    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.asInstanceOf[js.Any])
+    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (underline != null) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeFontUpdateData]
   }

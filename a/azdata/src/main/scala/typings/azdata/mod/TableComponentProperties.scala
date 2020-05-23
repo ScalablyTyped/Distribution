@@ -24,10 +24,10 @@ object TableComponentProperties {
     columns: js.Array[String | TableColumn],
     data: js.Array[js.Array[_]],
     CSSStyles: StringDictionary[String] = null,
-    ariaColumnCount: Int | Double = null,
+    ariaColumnCount: js.UndefOr[Double] = js.undefined,
     ariaLabel: String = null,
     ariaRole: String = null,
-    ariaRowCount: Int | Double = null,
+    ariaRowCount: js.UndefOr[Double] = js.undefined,
     ariaSelected: js.UndefOr[Boolean] = js.undefined,
     display: DisplayType = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
@@ -43,17 +43,17 @@ object TableComponentProperties {
   ): TableComponentProperties = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
     if (CSSStyles != null) __obj.updateDynamic("CSSStyles")(CSSStyles.asInstanceOf[js.Any])
-    if (ariaColumnCount != null) __obj.updateDynamic("ariaColumnCount")(ariaColumnCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(ariaColumnCount)) __obj.updateDynamic("ariaColumnCount")(ariaColumnCount.get.asInstanceOf[js.Any])
     if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
     if (ariaRole != null) __obj.updateDynamic("ariaRole")(ariaRole.asInstanceOf[js.Any])
-    if (ariaRowCount != null) __obj.updateDynamic("ariaRowCount")(ariaRowCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(ariaSelected)) __obj.updateDynamic("ariaSelected")(ariaSelected.asInstanceOf[js.Any])
+    if (!js.isUndefined(ariaRowCount)) __obj.updateDynamic("ariaRowCount")(ariaRowCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ariaSelected)) __obj.updateDynamic("ariaSelected")(ariaSelected.get.asInstanceOf[js.Any])
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (forceFitColumns != null) __obj.updateDynamic("forceFitColumns")(forceFitColumns.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(moveFocusOutWithTab)) __obj.updateDynamic("moveFocusOutWithTab")(moveFocusOutWithTab.asInstanceOf[js.Any])
+    if (!js.isUndefined(moveFocusOutWithTab)) __obj.updateDynamic("moveFocusOutWithTab")(moveFocusOutWithTab.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (selectedRows != null) __obj.updateDynamic("selectedRows")(selectedRows.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

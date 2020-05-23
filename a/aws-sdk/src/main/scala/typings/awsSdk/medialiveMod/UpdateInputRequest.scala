@@ -11,6 +11,10 @@ trait UpdateInputRequest extends js.Object {
     */
   var Destinations: js.UndefOr[listOfInputDestinationRequest] = js.native
   /**
+    * Settings for the devices.
+    */
+  var InputDevices: js.UndefOr[listOfInputDeviceRequest] = js.native
+  /**
     * Unique ID of the input.
     */
   var InputId: string = js.native
@@ -45,6 +49,7 @@ object UpdateInputRequest {
   def apply(
     InputId: string,
     Destinations: listOfInputDestinationRequest = null,
+    InputDevices: listOfInputDeviceRequest = null,
     InputSecurityGroups: listOfString = null,
     MediaConnectFlows: listOfMediaConnectFlowRequest = null,
     Name: string = null,
@@ -53,6 +58,7 @@ object UpdateInputRequest {
   ): UpdateInputRequest = {
     val __obj = js.Dynamic.literal(InputId = InputId.asInstanceOf[js.Any])
     if (Destinations != null) __obj.updateDynamic("Destinations")(Destinations.asInstanceOf[js.Any])
+    if (InputDevices != null) __obj.updateDynamic("InputDevices")(InputDevices.asInstanceOf[js.Any])
     if (InputSecurityGroups != null) __obj.updateDynamic("InputSecurityGroups")(InputSecurityGroups.asInstanceOf[js.Any])
     if (MediaConnectFlows != null) __obj.updateDynamic("MediaConnectFlows")(MediaConnectFlows.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])

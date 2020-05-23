@@ -18,12 +18,12 @@ object Token {
     show: String,
     token: String,
     `type`: Double,
-    preced: Int | Double = null,
+    preced: js.UndefOr[Double] = js.undefined,
     value: String | (js.Function2[/* a */ Double, /* b */ js.UndefOr[Double], Double]) = null
   ): Token = {
     val __obj = js.Dynamic.literal(show = show.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (preced != null) __obj.updateDynamic("preced")(preced.asInstanceOf[js.Any])
+    if (!js.isUndefined(preced)) __obj.updateDynamic("preced")(preced.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }

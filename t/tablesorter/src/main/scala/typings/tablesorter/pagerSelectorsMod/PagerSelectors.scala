@@ -1,8 +1,8 @@
 package typings.tablesorter.pagerSelectorsMod
 
-import typings.jquery.JQuery_.Selector
-import typings.tablesorter.mod._Global_.HTMLElement
-import typings.tablesorter.mod._Global_.JQuery
+import typings.jquery.JQuery.Selector
+import typings.tablesorter.mod.global.HTMLElement
+import typings.tablesorter.mod.global.JQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

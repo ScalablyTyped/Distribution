@@ -49,8 +49,8 @@ object BatchUpdateFindingsRequest {
   @scala.inline
   def apply(
     FindingIdentifiers: AwsSecurityFindingIdentifierList,
-    Confidence: Int | scala.Double = null,
-    Criticality: Int | scala.Double = null,
+    Confidence: js.UndefOr[RatioScale] = js.undefined,
+    Criticality: js.UndefOr[RatioScale] = js.undefined,
     Note: NoteUpdate = null,
     RelatedFindings: RelatedFindingList = null,
     Severity: SeverityUpdate = null,
@@ -60,8 +60,8 @@ object BatchUpdateFindingsRequest {
     Workflow: WorkflowUpdate = null
   ): BatchUpdateFindingsRequest = {
     val __obj = js.Dynamic.literal(FindingIdentifiers = FindingIdentifiers.asInstanceOf[js.Any])
-    if (Confidence != null) __obj.updateDynamic("Confidence")(Confidence.asInstanceOf[js.Any])
-    if (Criticality != null) __obj.updateDynamic("Criticality")(Criticality.asInstanceOf[js.Any])
+    if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Criticality)) __obj.updateDynamic("Criticality")(Criticality.get.asInstanceOf[js.Any])
     if (Note != null) __obj.updateDynamic("Note")(Note.asInstanceOf[js.Any])
     if (RelatedFindings != null) __obj.updateDynamic("RelatedFindings")(RelatedFindings.asInstanceOf[js.Any])
     if (Severity != null) __obj.updateDynamic("Severity")(Severity.asInstanceOf[js.Any])

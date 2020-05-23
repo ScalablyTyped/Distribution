@@ -1,7 +1,7 @@
 package typings.storybookAddonKnobs.propFormMod
 
-import typings.storybookAddonKnobs.AnonOnFieldChange
-import typings.storybookAddonKnobs.AnonOnFieldClick
+import typings.storybookAddonKnobs.anon.OnFieldChange
+import typings.storybookAddonKnobs.anon.OnFieldClick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +14,8 @@ class default () extends PropForm
 @JSImport("@storybook/addon-knobs/dist/components/PropForm", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonOnFieldChange = js.native
+  var defaultProps: OnFieldChange = js.native
   var displayName: String = js.native
-  var propTypes: AnonOnFieldClick = js.native
+  var propTypes: OnFieldClick = js.native
 }
 

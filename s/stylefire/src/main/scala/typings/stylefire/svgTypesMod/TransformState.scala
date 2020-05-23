@@ -21,7 +21,7 @@ object TransformState {
     skewX: String,
     skewY: String,
     translate: String,
-    StringDictionary: /* key */ StringDictionary[String] = null
+    StringDictionary: /* name */ StringDictionary[String] = null
   ): TransformState = {
     val __obj = js.Dynamic.literal(rotate = rotate.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], skewX = skewX.asInstanceOf[js.Any], skewY = skewY.asInstanceOf[js.Any], translate = translate.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

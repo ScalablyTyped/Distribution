@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	*	Network information
-	*/
+  *    Network information
+  */
 trait NetworkInfo extends js.Object {
   /**
-  		*	Packet loss percentage
-  		*/
+    *    Packet loss percentage
+    */
   var packetLoss: Double
 }
 

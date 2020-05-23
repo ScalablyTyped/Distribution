@@ -21,16 +21,16 @@ object RenderOptions {
     kerning: js.UndefOr[Boolean] = js.undefined,
     language: String = null,
     script: String = null,
-    xScale: Int | Double = null,
-    yScale: Int | Double = null
+    xScale: js.UndefOr[Double] = js.undefined,
+    yScale: js.UndefOr[Double] = js.undefined
   ): RenderOptions = {
     val __obj = js.Dynamic.literal()
     if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
-    if (!js.isUndefined(kerning)) __obj.updateDynamic("kerning")(kerning.asInstanceOf[js.Any])
+    if (!js.isUndefined(kerning)) __obj.updateDynamic("kerning")(kerning.get.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (script != null) __obj.updateDynamic("script")(script.asInstanceOf[js.Any])
-    if (xScale != null) __obj.updateDynamic("xScale")(xScale.asInstanceOf[js.Any])
-    if (yScale != null) __obj.updateDynamic("yScale")(yScale.asInstanceOf[js.Any])
+    if (!js.isUndefined(xScale)) __obj.updateDynamic("xScale")(xScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yScale)) __obj.updateDynamic("yScale")(yScale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderOptions]
   }
 }

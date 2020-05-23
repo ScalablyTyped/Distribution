@@ -11,7 +11,6 @@ import typings.openfin.viewViewMod.View
 import typings.openfin.webcontentsWebcontentsMod.WebContents
 import typings.openfin.windowMod.WindowEvents
 import typings.openfin.windowOptionMod.WindowOption
-import typings.std.Window_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -142,6 +141,25 @@ class Window protected () extends WebContents[WindowEvents] {
     * @tutorial Window.EventEmitter
     */
   /**
+    * Executes Javascript on the window, restricted to windows you own or windows owned by
+    * applications you have created.
+    * @param { string } code JavaScript code to be executed on the window.
+    * @function executeJavaScript
+    * @memberOf Window
+    * @instance
+    * @return {Promise.<void>}
+    * @tutorial Window.executeJavaScript
+    */
+  /**
+    * Gives focus to the window.
+    * @return {Promise.<void>}
+    * @function focus
+    * @emits focused
+    * @memberOf Window
+    * @instance
+    * @tutorial Window.focus
+    */
+  /**
     * Returns the zoom level of the window.
     * @function getZoomLevel
     * @memberOf Window
@@ -255,28 +273,11 @@ class Window protected () extends WebContents[WindowEvents] {
     */
   def enableUserMovement(): js.Promise[Unit] = js.native
   /**
-    * Executes Javascript on the window, restricted to windows you own or windows owned by
-    * applications you have created.
-    * @param { string } code JavaScript code to be executed on the window.
-    * @function executeJavaScript
-    * @memberOf Window
-    * @instance
-    * @return {Promise.<void>}
-    * @tutorial Window.executeJavaScript
-    */
-  /**
     * Flashes the window’s frame and taskbar icon until stopFlashing is called or until a focus event is fired.
     * @return {Promise.<void>}
     * @tutorial Window.flash
     */
   def flash(): js.Promise[Unit] = js.native
-  /**
-    * Gives focus to the window.
-    * @return {Promise.<void>}
-    * @emits _Window#focused
-    * @tutorial Window.focus
-    */
-  def focus(): js.Promise[Unit] = js.native
   /**
     * Retrieves an array of frame info objects representing the main frame and any
     * iframes that are currently on the page.
@@ -356,7 +357,7 @@ class Window protected () extends WebContents[WindowEvents] {
     * @return {object}
     * @tutorial Window.getWebWindow
     */
-  def getWebWindow(): Window_ = js.native
+  def getWebWindow(): typings.std.Window = js.native
   /**
     * Hides the window.
     * @return {Promise.<void>}
@@ -502,17 +503,16 @@ class Window protected () extends WebContents[WindowEvents] {
   def showAt(left: Double, top: Double, force: Boolean): js.Promise[Unit] = js.native
   def showAt(left: Double, top: Double, force: Boolean, options: WindowMovementOptions): js.Promise[Unit] = js.native
   /**
-    * Shows the Chromium Developer Tools
-    * @return {Promise.<void>}
-    * @tutorial Window.showDeveloperTools
-    */
-  def showDeveloperTools(): js.Promise[Unit] = js.native
-  /**
     * Stops the taskbar icon from flashing.
     * @return {Promise.<void>}
     * @tutorial Window.stopFlashing
     */
   def stopFlashing(): js.Promise[Unit] = js.native
+  /**
+    * Shows the Chromium Developer Tools
+    * @return {Promise.<void>}
+    * @tutorial Window.showDeveloperTools
+    */
   /**
     * Updates the window using the passed options.
     * Values that are objects are deep-merged, overwriting only the values that are provided.

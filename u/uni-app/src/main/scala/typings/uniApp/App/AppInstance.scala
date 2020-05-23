@@ -54,7 +54,7 @@ trait AppInstance[T /* <: AnyObject */] extends js.Object {
 
 object AppInstance {
   @scala.inline
-  def apply[T /* <: AnyObject */](
+  def apply[T](
     globalData: AnyObject = null,
     onError: /* error */ String => Unit = null,
     onHide: () => Unit = null,

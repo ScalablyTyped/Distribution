@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +17,11 @@ trait sql extends js.Object {
   def parseWhereClause(clause: String, fieldsIndex: FieldsIndex): js.Promise[WhereClause]
 }
 
-@JSGlobal("__esri.sql")
-@js.native
-object sql extends TopLevel[sql]
+object sql {
+  @scala.inline
+  def apply(parseWhereClause: (String, FieldsIndex) => js.Promise[WhereClause]): sql = {
+    val __obj = js.Dynamic.literal(parseWhereClause = js.Any.fromFunction2(parseWhereClause))
+    __obj.asInstanceOf[sql]
+  }
+}
 

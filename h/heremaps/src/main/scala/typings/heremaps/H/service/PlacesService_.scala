@@ -1,7 +1,6 @@
 package typings.heremaps.H.service
 
 import typings.heremaps.H.service.PlacesService.EntryPoint
-import typings.heremaps.H.service.PlacesService.Options
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,14 +9,8 @@ import scala.scalajs.js.annotation._
 /**
   * Places service implements a low level places RestApi access. Please refer to Restful API documentation for providing parameters and handling response objects.
   */
-@JSGlobal("H.service.PlacesService")
 @js.native
-/**
-  * Constructor
-  * @param opt_options {H.service.PlacesService.Options=}
-  */
-class PlacesService_ () extends AbstractRestService {
-  def this(opt_options: Options) = this()
+trait PlacesService_ extends AbstractRestService {
   /**
     * Function triggers places api 'around' entry point. Please refer to documentation for parameter specification and response handling.
     * @param aroundParams {H.service.ServiceParameters} - places api around entry point parameters please refer to places api documentation

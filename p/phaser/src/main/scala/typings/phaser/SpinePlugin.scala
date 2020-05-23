@@ -1,12 +1,11 @@
 package typings.phaser
 
 import typings.phaser.Phaser.Cache.BaseCache
-import typings.phaser.Phaser.Plugins.PluginManager
 import typings.phaser.Phaser.Plugins.ScenePlugin
 import typings.phaser.Phaser.Renderer.Canvas.CanvasRenderer
 import typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer
-import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Textures.TextureManager
+import typings.phaser.anon.Typeofspine
 import typings.phaser.spine.Bone
 import typings.phaser.spine.Skeleton
 import typings.phaser.spine.TextureAtlas
@@ -20,10 +19,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SpinePlugin")
 @js.native
-class SpinePlugin protected () extends ScenePlugin {
-  def this(scene: Scene, pluginManager: PluginManager) = this()
+trait SpinePlugin extends ScenePlugin {
   var cache: BaseCache = js.native
   var drawDebug: Boolean = js.native
   var gl: WebGLRenderingContext = js.native

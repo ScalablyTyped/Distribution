@@ -1,5 +1,8 @@
 package typings.notyf
 
+import typings.notyf.anon.DeepPartialINotyfNotifica
+import typings.notyf.anon.PartialINotyfNotification
+import typings.notyf.anon.PartialINotyfOptions
 import typings.notyf.notyfModelsMod.NotyfArray
 import typings.notyf.notyfModelsMod.NotyfNotification
 import typings.notyf.notyfOptionsMod.INotyfOptions
@@ -31,12 +34,13 @@ object notyfMod extends js.Object {
     var options: INotyfOptions = js.native
     var registerTypes: js.Any = js.native
     var view: js.Any = js.native
+    def dismiss(notification: NotyfNotification): Unit = js.native
     def dismissAll(): Unit = js.native
-    def error(payload: String): Unit = js.native
-    def error(payload: PartialINotyfNotification): Unit = js.native
-    def open(options: DeepPartialINotyfNotifica): Unit = js.native
-    def success(payload: String): Unit = js.native
-    def success(payload: PartialINotyfNotification): Unit = js.native
+    def error(payload: String): NotyfNotification = js.native
+    def error(payload: PartialINotyfNotification): NotyfNotification = js.native
+    def open(options: DeepPartialINotyfNotifica): NotyfNotification = js.native
+    def success(payload: String): NotyfNotification = js.native
+    def success(payload: PartialINotyfNotification): NotyfNotification = js.native
   }
   
   @js.native

@@ -1,12 +1,12 @@
 package typings.postmanCollection.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.postmanCollection.AnonAny
+import typings.postmanCollection.anon.Any
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.postmanCollection.mod.PropertyBaseDefinition because Already inherited
 - typings.postmanCollection.mod.PropertyDefinition because Already inherited
 - typings.postmanCollection.mod.VariableDefinition because var conflicts: description, disabled, id, name. Inlined value, `type`, key */ @JSImport("postman-collection", "Variable")
@@ -31,7 +31,7 @@ class Variable () extends Property[VariableDefinition] {
 @JSImport("postman-collection", "Variable")
 @js.native
 object Variable extends js.Object {
-  var types: AnonAny = js.native
+  var types: Any = js.native
   def isVariable(obj: js.Any): Boolean = js.native
 }
 

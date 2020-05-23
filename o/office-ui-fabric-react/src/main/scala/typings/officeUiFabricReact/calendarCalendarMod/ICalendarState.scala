@@ -28,8 +28,8 @@ object ICalendarState {
     selectedDate: Date = null
   ): ICalendarState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isDayPickerVisible)) __obj.updateDynamic("isDayPickerVisible")(isDayPickerVisible.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMonthPickerVisible)) __obj.updateDynamic("isMonthPickerVisible")(isMonthPickerVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDayPickerVisible)) __obj.updateDynamic("isDayPickerVisible")(isDayPickerVisible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMonthPickerVisible)) __obj.updateDynamic("isMonthPickerVisible")(isMonthPickerVisible.get.asInstanceOf[js.Any])
     if (navigatedDayDate != null) __obj.updateDynamic("navigatedDayDate")(navigatedDayDate.asInstanceOf[js.Any])
     if (navigatedMonthDate != null) __obj.updateDynamic("navigatedMonthDate")(navigatedMonthDate.asInstanceOf[js.Any])
     if (selectedDate != null) __obj.updateDynamic("selectedDate")(selectedDate.asInstanceOf[js.Any])

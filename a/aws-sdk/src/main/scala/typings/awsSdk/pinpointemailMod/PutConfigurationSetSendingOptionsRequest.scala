@@ -18,9 +18,9 @@ trait PutConfigurationSetSendingOptionsRequest extends js.Object {
 
 object PutConfigurationSetSendingOptionsRequest {
   @scala.inline
-  def apply(ConfigurationSetName: ConfigurationSetName, SendingEnabled: js.UndefOr[Boolean] = js.undefined): PutConfigurationSetSendingOptionsRequest = {
+  def apply(ConfigurationSetName: ConfigurationSetName, SendingEnabled: js.UndefOr[Enabled] = js.undefined): PutConfigurationSetSendingOptionsRequest = {
     val __obj = js.Dynamic.literal(ConfigurationSetName = ConfigurationSetName.asInstanceOf[js.Any])
-    if (!js.isUndefined(SendingEnabled)) __obj.updateDynamic("SendingEnabled")(SendingEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(SendingEnabled)) __obj.updateDynamic("SendingEnabled")(SendingEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutConfigurationSetSendingOptionsRequest]
   }
 }

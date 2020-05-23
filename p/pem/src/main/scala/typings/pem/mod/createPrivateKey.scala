@@ -1,6 +1,6 @@
 package typings.pem.mod
 
-import typings.pem.AnonKey
+import typings.pem.anon.Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("pem", "createPrivateKey")
 @js.native
 object createPrivateKey extends js.Object {
-  def apply(callback: Callback[AnonKey]): Unit = js.native
-  def apply(keyBitsize: Double, options: PrivateKeyCreationOptions, callback: Callback[AnonKey]): Unit = js.native
-  def apply(optionsOrKeyBitsize: Double, callback: Callback[AnonKey]): Unit = js.native
-  def apply(optionsOrKeyBitsize: PrivateKeyCreationOptions, callback: Callback[AnonKey]): Unit = js.native
+  def apply(callback: Callback[Key]): Unit = js.native
+  def apply(keyBitsize: Double, options: PrivateKeyCreationOptions, callback: Callback[Key]): Unit = js.native
+  def apply(optionsOrKeyBitsize: Double, callback: Callback[Key]): Unit = js.native
+  def apply(optionsOrKeyBitsize: PrivateKeyCreationOptions, callback: Callback[Key]): Unit = js.native
 }
 

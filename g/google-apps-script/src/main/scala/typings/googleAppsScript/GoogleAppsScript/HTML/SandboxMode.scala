@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.HTML
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,17 +43,6 @@ object SandboxMode extends js.Object {
   
   @js.native
   sealed trait NATIVE extends SandboxMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SandboxMode with Double] = js.native
-  /* 0 */ @js.native
-  object EMULATED extends TopLevel[EMULATED with Double]
-  
-  /* 1 */ @js.native
-  object IFRAME extends TopLevel[IFRAME with Double]
-  
-  /* 2 */ @js.native
-  object NATIVE extends TopLevel[NATIVE with Double]
   
 }
 

@@ -4,50 +4,50 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.WebXRDefaultExperience")
-@js.native
-class WebXRDefaultExperience protected () extends js.Object {
+trait WebXRDefaultExperience extends js.Object {
   /**
     * Base experience
     */
-  var baseExperience: WebXRExperienceHelper = js.native
+  var baseExperience: WebXRExperienceHelper
   /**
     * Enables ui for entering/exiting xr
     */
-  var enterExitUI: WebXREnterExitUI = js.native
+  var enterExitUI: WebXREnterExitUI
   /**
     * Input experience extension
     */
-  var input: WebXRInput = js.native
+  var input: WebXRInput
   /**
     * Enables laser pointer and selection
     */
-  var pointerSelection: WebXRControllerPointerSelection = js.native
+  var pointerSelection: WebXRControllerPointerSelection
   /**
     * Default target xr should render to
     */
-  var renderTarget: WebXRRenderTarget = js.native
+  var renderTarget: WebXRRenderTarget
   /**
     * Enables teleportation
     */
-  var teleportation: WebXRMotionControllerTeleportation = js.native
+  var teleportation: WebXRMotionControllerTeleportation
   /**
     * DIsposes of the experience helper
     */
-  def dispose(): Unit = js.native
+  def dispose(): Unit
 }
 
-/* static members */
-@JSGlobal("BABYLON.WebXRDefaultExperience")
-@js.native
-object WebXRDefaultExperience extends js.Object {
-  /**
-    * Creates the default xr experience
-    * @param scene scene
-    * @param options options for basic configuration
-    * @returns resulting WebXRDefaultExperience
-    */
-  def CreateAsync(scene: Scene): js.Promise[WebXRDefaultExperience] = js.native
-  def CreateAsync(scene: Scene, options: WebXRDefaultExperienceOptions): js.Promise[WebXRDefaultExperience] = js.native
+object WebXRDefaultExperience {
+  @scala.inline
+  def apply(
+    baseExperience: WebXRExperienceHelper,
+    dispose: () => Unit,
+    enterExitUI: WebXREnterExitUI,
+    input: WebXRInput,
+    pointerSelection: WebXRControllerPointerSelection,
+    renderTarget: WebXRRenderTarget,
+    teleportation: WebXRMotionControllerTeleportation
+  ): WebXRDefaultExperience = {
+    val __obj = js.Dynamic.literal(baseExperience = baseExperience.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), enterExitUI = enterExitUI.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], pointerSelection = pointerSelection.asInstanceOf[js.Any], renderTarget = renderTarget.asInstanceOf[js.Any], teleportation = teleportation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebXRDefaultExperience]
+  }
 }
 

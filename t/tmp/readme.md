@@ -1,7 +1,7 @@
 
 # Scala.js typings for tmp
 
-Typings are for version 0.1
+Typings are for version 0.2
 
 ## Library description:
 Temporary file and directory creator

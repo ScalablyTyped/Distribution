@@ -13,7 +13,7 @@ trait Store[S, A /* <: AnyAction */] extends js.Object {
 
 object Store {
   @scala.inline
-  def apply[S, A /* <: AnyAction */](
+  def apply[S, A](
     dispatch: A => A,
     getState: () => S,
     subscribe: /* callback */ js.Function0[Unit] => js.Function0[Unit]

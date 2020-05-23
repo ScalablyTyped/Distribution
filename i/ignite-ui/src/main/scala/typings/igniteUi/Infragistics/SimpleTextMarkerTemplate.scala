@@ -1,17 +1,20 @@
 package typings.igniteUi.Infragistics
 
-import typings.igniteUi.SimpleTextMarkerTemplateSettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Infragistics.SimpleTextMarkerTemplate")
-@js.native
-class SimpleTextMarkerTemplate protected () extends js.Object {
-  def this(requireThis: Boolean) = this()
-  def this(settings: SimpleTextMarkerTemplateSettings) = this()
-  def getText(item: js.Object, textDelegate: js.Object): Unit = js.native
-  def measure(measureInfo: js.Object): Unit = js.native
-  def render(renderInfo: js.Object): Unit = js.native
+trait SimpleTextMarkerTemplate extends js.Object {
+  def getText(item: js.Object, textDelegate: js.Object): Unit
+  def measure(measureInfo: js.Object): Unit
+  def render(renderInfo: js.Object): Unit
+}
+
+object SimpleTextMarkerTemplate {
+  @scala.inline
+  def apply(getText: (js.Object, js.Object) => Unit, measure: js.Object => Unit, render: js.Object => Unit): SimpleTextMarkerTemplate = {
+    val __obj = js.Dynamic.literal(getText = js.Any.fromFunction2(getText), measure = js.Any.fromFunction1(measure), render = js.Any.fromFunction1(render))
+    __obj.asInstanceOf[SimpleTextMarkerTemplate]
+  }
 }
 

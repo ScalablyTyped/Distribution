@@ -12,7 +12,7 @@ object PickOptions {
   @scala.inline
   def apply(loose: js.UndefOr[Boolean] = js.undefined): PickOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(loose)) __obj.updateDynamic("loose")(loose.asInstanceOf[js.Any])
+    if (!js.isUndefined(loose)) __obj.updateDynamic("loose")(loose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickOptions]
   }
 }

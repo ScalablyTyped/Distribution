@@ -3,6 +3,7 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`private`
 import typings.arcgisJsApi.arcgisJsApiStrings.english
 import typings.arcgisJsApi.arcgisJsApiStrings.metric
+import typings.arcgisJsApi.arcgisJsApiStrings.org_
 import typings.arcgisJsApi.arcgisJsApiStrings.org_admin
 import typings.arcgisJsApi.arcgisJsApiStrings.org_publisher
 import typings.arcgisJsApi.arcgisJsApiStrings.org_user
@@ -17,7 +18,7 @@ trait PortalUserProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#access)
     */
-  var access: js.UndefOr[`private` | typings.arcgisJsApi.arcgisJsApiStrings.org | public] = js.undefined
+  var access: js.UndefOr[`private` | org_ | public] = js.undefined
   /**
     * The date the user was created.
     *
@@ -113,7 +114,7 @@ trait PortalUserProperties extends js.Object {
 object PortalUserProperties {
   @scala.inline
   def apply(
-    access: `private` | typings.arcgisJsApi.arcgisJsApiStrings.org | public = null,
+    access: `private` | org_ | public = null,
     created: DateProperties = null,
     culture: String = null,
     description: String = null,

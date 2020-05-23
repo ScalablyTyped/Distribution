@@ -1,6 +1,5 @@
 package typings.winjs.WinJS.UI
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,17 +30,6 @@ object DataSourceStatus extends js.Object {
     **/
   @js.native
   sealed trait waiting extends DataSourceStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DataSourceStatus with Double] = js.native
-  /* 2 */ @js.native
-  object failure extends TopLevel[failure with Double]
-  
-  /* 0 */ @js.native
-  object ready extends TopLevel[ready with Double]
-  
-  /* 1 */ @js.native
-  object waiting extends TopLevel[waiting with Double]
   
 }
 

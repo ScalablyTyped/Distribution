@@ -40,12 +40,12 @@ object TemplateCompileOptions {
   ): TemplateCompileOptions = {
     val __obj = js.Dynamic.literal(compiler = compiler.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     if (compilerOptions != null) __obj.updateDynamic("compilerOptions")(compilerOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFunctional)) __obj.updateDynamic("isFunctional")(isFunctional.asInstanceOf[js.Any])
-    if (!js.isUndefined(isProduction)) __obj.updateDynamic("isProduction")(isProduction.asInstanceOf[js.Any])
-    if (!js.isUndefined(optimizeSSR)) __obj.updateDynamic("optimizeSSR")(optimizeSSR.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFunctional)) __obj.updateDynamic("isFunctional")(isFunctional.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isProduction)) __obj.updateDynamic("isProduction")(isProduction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimizeSSR)) __obj.updateDynamic("optimizeSSR")(optimizeSSR.get.asInstanceOf[js.Any])
     if (preprocessLang != null) __obj.updateDynamic("preprocessLang")(preprocessLang.asInstanceOf[js.Any])
     if (preprocessOptions != null) __obj.updateDynamic("preprocessOptions")(preprocessOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettify)) __obj.updateDynamic("prettify")(prettify.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettify)) __obj.updateDynamic("prettify")(prettify.get.asInstanceOf[js.Any])
     if (transformAssetUrls != null) __obj.updateDynamic("transformAssetUrls")(transformAssetUrls.asInstanceOf[js.Any])
     if (transpileOptions != null) __obj.updateDynamic("transpileOptions")(transpileOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateCompileOptions]

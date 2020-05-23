@@ -1,6 +1,5 @@
 package typings.screeps
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +31,21 @@ trait Mineral[T /* <: MineralConstant */] extends RoomObject {
   var ticksToRegeneration: Double
 }
 
-@JSGlobal("Mineral")
-@js.native
-object Mineral extends TopLevel[MineralConstructor]
+object Mineral {
+  @scala.inline
+  def apply[T](
+    density: Double,
+    effects: js.Array[RoomObjectEffect],
+    id: Id[Mineral[T]],
+    mineralAmount: Double,
+    mineralType: T,
+    pos: RoomPosition,
+    ticksToRegeneration: Double,
+    room: Room = null
+  ): Mineral[T] = {
+    val __obj = js.Dynamic.literal(density = density.asInstanceOf[js.Any], effects = effects.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], mineralAmount = mineralAmount.asInstanceOf[js.Any], mineralType = mineralType.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], ticksToRegeneration = ticksToRegeneration.asInstanceOf[js.Any])
+    if (room != null) __obj.updateDynamic("room")(room.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Mineral[T]]
+  }
+}
 

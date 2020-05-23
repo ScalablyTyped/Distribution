@@ -21,4 +21,5 @@ package object Background {
     scala.Unit
   ]
   type INetworkOperatorHotspotAuthenticationTrigger = typings.winrt.Windows.ApplicationModel.Background.IBackgroundTrigger
+  type PushNotificationTrigger = typings.winrt.Windows.ApplicationModel.Background.IBackgroundTrigger
 }

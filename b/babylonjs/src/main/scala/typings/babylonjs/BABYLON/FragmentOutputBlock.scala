@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.FragmentOutputBlock")
 @js.native
-class FragmentOutputBlock protected () extends NodeMaterialBlock {
-  /**
-    * Create a new FragmentOutputBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait FragmentOutputBlock extends NodeMaterialBlock {
   /**
     * Gets the a input component
     */

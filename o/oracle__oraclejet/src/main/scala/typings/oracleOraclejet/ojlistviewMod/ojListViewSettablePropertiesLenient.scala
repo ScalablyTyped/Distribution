@@ -1,12 +1,12 @@
 package typings.oracleOraclejet.ojlistviewMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.AnonAccessibleNavigateSkipItems
-import typings.oracleOraclejet.AnonDragDrop
-import typings.oracleOraclejet.AnonFetchSize
-import typings.oracleOraclejet.AnonFocusable
-import typings.oracleOraclejet.AnonKey
-import typings.oracleOraclejet.AnonOffsetX
+import typings.oracleOraclejet.anon.AccessibleNavigateSkipItems
+import typings.oracleOraclejet.anon.DragDrop
+import typings.oracleOraclejet.anon.FetchSize
+import typings.oracleOraclejet.anon.Focusable
+import typings.oracleOraclejet.anon.Key
+import typings.oracleOraclejet.anon.OffsetX
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojkeysetMod.KeySet
 import typings.oracleOraclejet.oracleOraclejetStrings.auto
@@ -27,41 +27,41 @@ trait ojListViewSettablePropertiesLenient[K, D]
   var as: js.UndefOr[String] = js.undefined
   var currentItem: js.UndefOr[K] = js.undefined
   var data: js.UndefOr[DataProvider[K, D]] = js.undefined
-  var dnd: js.UndefOr[AnonDragDrop] = js.undefined
+  var dnd: js.UndefOr[DragDrop] = js.undefined
   var drillMode: js.UndefOr[collapsible | none] = js.undefined
   var expanded: js.UndefOr[KeySet[K]] = js.undefined
-  var firstSelectedItem: js.UndefOr[AnonKey[K, D]] = js.undefined
+  var firstSelectedItem: js.UndefOr[Key[K, D]] = js.undefined
   var groupHeaderPosition: js.UndefOr[static | sticky] = js.undefined
-  var item: js.UndefOr[AnonFocusable[K, D]] = js.undefined
+  var item: js.UndefOr[Focusable[K, D]] = js.undefined
   var scrollPolicy: js.UndefOr[auto | loadMoreOnScroll] = js.undefined
-  var scrollPolicyOptions: js.UndefOr[AnonFetchSize] = js.undefined
-  var scrollPosition: js.UndefOr[AnonOffsetX[K]] = js.undefined
+  var scrollPolicyOptions: js.UndefOr[FetchSize] = js.undefined
+  var scrollPosition: js.UndefOr[OffsetX[K]] = js.undefined
   var selection: js.UndefOr[js.Array[K]] = js.undefined
   var selectionMode: js.UndefOr[none | single | multiple] = js.undefined
   var selectionRequired: js.UndefOr[Boolean] = js.undefined
-  var translations: js.UndefOr[AnonAccessibleNavigateSkipItems] = js.undefined
+  var translations: js.UndefOr[AccessibleNavigateSkipItems] = js.undefined
 }
 
 object ojListViewSettablePropertiesLenient {
   @scala.inline
   def apply[K, D](
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     as: String = null,
     currentItem: K = null,
     data: DataProvider[K, D] = null,
-    dnd: AnonDragDrop = null,
+    dnd: DragDrop = null,
     drillMode: collapsible | none = null,
     expanded: KeySet[K] = null,
-    firstSelectedItem: AnonKey[K, D] = null,
+    firstSelectedItem: Key[K, D] = null,
     groupHeaderPosition: static | sticky = null,
-    item: AnonFocusable[K, D] = null,
+    item: Focusable[K, D] = null,
     scrollPolicy: auto | loadMoreOnScroll = null,
-    scrollPolicyOptions: AnonFetchSize = null,
-    scrollPosition: AnonOffsetX[K] = null,
+    scrollPolicyOptions: FetchSize = null,
+    scrollPosition: OffsetX[K] = null,
     selection: js.Array[K] = null,
     selectionMode: none | single | multiple = null,
     selectionRequired: js.UndefOr[Boolean] = js.undefined,
-    translations: AnonAccessibleNavigateSkipItems = null
+    translations: AccessibleNavigateSkipItems = null
   ): ojListViewSettablePropertiesLenient[K, D] = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
@@ -79,7 +79,7 @@ object ojListViewSettablePropertiesLenient {
     if (scrollPosition != null) __obj.updateDynamic("scrollPosition")(scrollPosition.asInstanceOf[js.Any])
     if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
     if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectionRequired)) __obj.updateDynamic("selectionRequired")(selectionRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectionRequired)) __obj.updateDynamic("selectionRequired")(selectionRequired.get.asInstanceOf[js.Any])
     if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojListViewSettablePropertiesLenient[K, D]]
   }

@@ -25,10 +25,10 @@ object ReplaceOptions {
   ): ReplaceOptions = {
     val __obj = js.Dynamic.literal()
     if (invocationContext != null) __obj.updateDynamic("invocationContext")(invocationContext.asInstanceOf[js.Any])
-    if (!js.isUndefined(markDirty)) __obj.updateDynamic("markDirty")(markDirty.asInstanceOf[js.Any])
+    if (!js.isUndefined(markDirty)) __obj.updateDynamic("markDirty")(markDirty.get.asInstanceOf[js.Any])
     if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction1(onFailure))
     if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction1(onSuccess))
-    if (!js.isUndefined(push)) __obj.updateDynamic("push")(push.asInstanceOf[js.Any])
+    if (!js.isUndefined(push)) __obj.updateDynamic("push")(push.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceOptions]
   }
 }

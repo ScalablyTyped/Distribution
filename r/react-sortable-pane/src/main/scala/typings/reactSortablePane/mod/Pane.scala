@@ -1,6 +1,6 @@
 package typings.reactSortablePane.mod
 
-import typings.reactSortablePane.AnonClassName
+import typings.reactSortablePane.anon.ClassName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +14,6 @@ class Pane ()
 @JSImport("react-sortable-pane", "Pane")
 @js.native
 object Pane extends js.Object {
-  var defaultProps: AnonClassName = js.native
+  var defaultProps: ClassName = js.native
 }
 

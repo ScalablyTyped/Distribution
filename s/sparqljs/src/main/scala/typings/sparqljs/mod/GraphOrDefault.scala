@@ -16,7 +16,7 @@ object GraphOrDefault {
   def apply(`type`: graph, default: js.UndefOr[Boolean] = js.undefined, name: String = null): GraphOrDefault = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphOrDefault]
   }

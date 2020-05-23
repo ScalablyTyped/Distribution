@@ -6,13 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CKEDITOR.command")
 @js.native
-class command protected ()
+trait command
   extends event
      with commandDefinition {
-  // Methods
-  def this(editor: editor, commandDefinition: commandDefinition) = this()
   @JSName("fakeKeystroke")
   var fakeKeystroke_command: Double = js.native
   var previousState: Double = js.native

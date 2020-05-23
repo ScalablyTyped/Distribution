@@ -1,7 +1,7 @@
 package typings.prosemirrorView.mod
 
 import typings.prosemirrorModel.mod.Mark
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,22 +45,22 @@ trait WidgetDecorationSpec extends js.Object {
     * Can be used to control which DOM events, when they bubble out
     * of this widget, the editor view should ignore.
     */
-  var stopEvent: js.UndefOr[(js.Function1[/* event */ Event_, Boolean]) | Null] = js.undefined
+  var stopEvent: js.UndefOr[(js.Function1[/* event */ Event, Boolean]) | Null] = js.undefined
 }
 
 object WidgetDecorationSpec {
   @scala.inline
   def apply(
-    key: String = null,
-    marks: js.Array[Mark[_]] = null,
-    side: Int | Double = null,
-    stopEvent: /* event */ Event_ => Boolean = null
+    key: js.UndefOr[Null | String] = js.undefined,
+    marks: js.UndefOr[Null | js.Array[Mark[_]]] = js.undefined,
+    side: js.UndefOr[Null | Double] = js.undefined,
+    stopEvent: js.UndefOr[Null | (/* event */ Event => Boolean)] = js.undefined
   ): WidgetDecorationSpec = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (marks != null) __obj.updateDynamic("marks")(marks.asInstanceOf[js.Any])
-    if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
-    if (stopEvent != null) __obj.updateDynamic("stopEvent")(js.Any.fromFunction1(stopEvent))
+    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(marks)) __obj.updateDynamic("marks")(marks.asInstanceOf[js.Any])
+    if (!js.isUndefined(side)) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopEvent)) __obj.updateDynamic("stopEvent")(if (stopEvent != null) js.Any.fromFunction1(stopEvent.asInstanceOf[/* event */ Event => Boolean]) else null)
     __obj.asInstanceOf[WidgetDecorationSpec]
   }
 }

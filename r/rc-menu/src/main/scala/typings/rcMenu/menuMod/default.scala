@@ -1,6 +1,6 @@
 package typings.rcMenu.menuMod
 
-import typings.rcMenu.AnonBuiltinPlacements
+import typings.rcMenu.anon.BuiltinPlacements
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class default protected () extends Menu {
 @JSImport("rc-menu/lib/Menu", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonBuiltinPlacements = js.native
+  var defaultProps: BuiltinPlacements = js.native
 }
 

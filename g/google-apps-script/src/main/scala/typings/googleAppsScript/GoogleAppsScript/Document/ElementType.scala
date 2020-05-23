@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Document
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -90,77 +89,6 @@ object ElementType extends js.Object {
   
   @js.native
   sealed trait UNSUPPORTED extends ElementType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ElementType with Double] = js.native
-  /* 0 */ @js.native
-  object BODY_SECTION extends TopLevel[BODY_SECTION with Double]
-  
-  /* 1 */ @js.native
-  object COMMENT_SECTION extends TopLevel[COMMENT_SECTION with Double]
-  
-  /* 2 */ @js.native
-  object DOCUMENT extends TopLevel[DOCUMENT with Double]
-  
-  /* 3 */ @js.native
-  object EQUATION extends TopLevel[EQUATION with Double]
-  
-  /* 4 */ @js.native
-  object EQUATION_FUNCTION extends TopLevel[EQUATION_FUNCTION with Double]
-  
-  /* 5 */ @js.native
-  object EQUATION_FUNCTION_ARGUMENT_SEPARATOR extends TopLevel[EQUATION_FUNCTION_ARGUMENT_SEPARATOR with Double]
-  
-  /* 6 */ @js.native
-  object EQUATION_SYMBOL extends TopLevel[EQUATION_SYMBOL with Double]
-  
-  /* 7 */ @js.native
-  object FOOTER_SECTION extends TopLevel[FOOTER_SECTION with Double]
-  
-  /* 8 */ @js.native
-  object FOOTNOTE extends TopLevel[FOOTNOTE with Double]
-  
-  /* 9 */ @js.native
-  object FOOTNOTE_SECTION extends TopLevel[FOOTNOTE_SECTION with Double]
-  
-  /* 10 */ @js.native
-  object HEADER_SECTION extends TopLevel[HEADER_SECTION with Double]
-  
-  /* 11 */ @js.native
-  object HORIZONTAL_RULE extends TopLevel[HORIZONTAL_RULE with Double]
-  
-  /* 12 */ @js.native
-  object INLINE_DRAWING extends TopLevel[INLINE_DRAWING with Double]
-  
-  /* 13 */ @js.native
-  object INLINE_IMAGE extends TopLevel[INLINE_IMAGE with Double]
-  
-  /* 14 */ @js.native
-  object LIST_ITEM extends TopLevel[LIST_ITEM with Double]
-  
-  /* 15 */ @js.native
-  object PAGE_BREAK extends TopLevel[PAGE_BREAK with Double]
-  
-  /* 16 */ @js.native
-  object PARAGRAPH extends TopLevel[PARAGRAPH with Double]
-  
-  /* 17 */ @js.native
-  object TABLE extends TopLevel[TABLE with Double]
-  
-  /* 18 */ @js.native
-  object TABLE_CELL extends TopLevel[TABLE_CELL with Double]
-  
-  /* 19 */ @js.native
-  object TABLE_OF_CONTENTS extends TopLevel[TABLE_OF_CONTENTS with Double]
-  
-  /* 20 */ @js.native
-  object TABLE_ROW extends TopLevel[TABLE_ROW with Double]
-  
-  /* 21 */ @js.native
-  object TEXT extends TopLevel[TEXT with Double]
-  
-  /* 22 */ @js.native
-  object UNSUPPORTED extends TopLevel[UNSUPPORTED with Double]
   
 }
 

@@ -14,16 +14,16 @@ trait ChartSizeAxis extends js.Object {
 object ChartSizeAxis {
   @scala.inline
   def apply(
-    maxSize: Int | Double = null,
-    maxValue: Int | Double = null,
-    minSize: Int | Double = null,
-    minValue: Int | Double = null
+    maxSize: js.UndefOr[Double] = js.undefined,
+    maxValue: js.UndefOr[Double] = js.undefined,
+    minSize: js.UndefOr[Double] = js.undefined,
+    minValue: js.UndefOr[Double] = js.undefined
   ): ChartSizeAxis = {
     val __obj = js.Dynamic.literal()
-    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSize)) __obj.updateDynamic("maxSize")(maxSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSize)) __obj.updateDynamic("minSize")(minSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minValue)) __obj.updateDynamic("minValue")(minValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartSizeAxis]
   }
 }

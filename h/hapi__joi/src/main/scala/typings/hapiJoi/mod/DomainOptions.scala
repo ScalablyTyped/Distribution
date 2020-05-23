@@ -30,12 +30,12 @@ object DomainOptions {
   @scala.inline
   def apply(
     allowUnicode: js.UndefOr[Boolean] = js.undefined,
-    minDomainSegments: Int | Double = null,
+    minDomainSegments: js.UndefOr[Double] = js.undefined,
     tlds: TopLevelDomainOptions | `false` = null
   ): DomainOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowUnicode)) __obj.updateDynamic("allowUnicode")(allowUnicode.asInstanceOf[js.Any])
-    if (minDomainSegments != null) __obj.updateDynamic("minDomainSegments")(minDomainSegments.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowUnicode)) __obj.updateDynamic("allowUnicode")(allowUnicode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minDomainSegments)) __obj.updateDynamic("minDomainSegments")(minDomainSegments.get.asInstanceOf[js.Any])
     if (tlds != null) __obj.updateDynamic("tlds")(tlds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainOptions]
   }

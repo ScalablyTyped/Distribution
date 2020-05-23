@@ -17,14 +17,14 @@ trait AnalysisResultsUsage extends js.Object {
 object AnalysisResultsUsage {
   @scala.inline
   def apply(
-    features: Int | Double = null,
-    text_characters: Int | Double = null,
-    text_units: Int | Double = null
+    features: js.UndefOr[Double] = js.undefined,
+    text_characters: js.UndefOr[Double] = js.undefined,
+    text_units: js.UndefOr[Double] = js.undefined
   ): AnalysisResultsUsage = {
     val __obj = js.Dynamic.literal()
-    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
-    if (text_characters != null) __obj.updateDynamic("text_characters")(text_characters.asInstanceOf[js.Any])
-    if (text_units != null) __obj.updateDynamic("text_units")(text_units.asInstanceOf[js.Any])
+    if (!js.isUndefined(features)) __obj.updateDynamic("features")(features.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(text_characters)) __obj.updateDynamic("text_characters")(text_characters.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(text_units)) __obj.updateDynamic("text_units")(text_units.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalysisResultsUsage]
   }
 }

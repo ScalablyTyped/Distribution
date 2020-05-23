@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ProductCode extends js.Object {
   /**
-    * Product code information.
+    * The product code information.
     */
   var Code: js.UndefOr[String] = js.native
   /**
-    * Product code type.
+    * The product code type.
     */
   var ProductType: js.UndefOr[String] = js.native
 }

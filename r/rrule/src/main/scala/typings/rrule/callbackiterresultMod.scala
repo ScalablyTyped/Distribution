@@ -1,5 +1,6 @@
 package typings.rrule
 
+import typings.rrule.anon.PartialIterArgs
 import typings.rrule.rruleStrings.all
 import typings.rrule.rruleStrings.between
 import typings.std.Date

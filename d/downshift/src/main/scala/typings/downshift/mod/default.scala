@@ -1,6 +1,6 @@
 package typings.downshift.mod
 
-import typings.downshift.AnonBlurButton
+import typings.downshift.anon.BlurButton
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,6 +15,6 @@ class default[Item] ()
 @JSImport("downshift", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var stateChangeTypes: AnonBlurButton = js.native
+  var stateChangeTypes: BlurButton = js.native
 }
 

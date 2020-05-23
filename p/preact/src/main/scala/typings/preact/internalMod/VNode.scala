@@ -1,6 +1,6 @@
 package typings.preact.internalMod
 
-import typings.preact.AnonChildren
+import typings.preact.anon.Children
 import typings.preact.mod.ComponentType
 import typings.preact.mod.Key
 import typings.preact.mod.Ref
@@ -31,33 +31,25 @@ object VNode {
   @scala.inline
   def apply[P](
     key: Key,
-    props: P with AnonChildren,
+    props: P with Children,
     `type`: ComponentType[P] | String,
     _children: js.Array[VNode[_]] = null,
     _component: Component[js.Object, js.Object] = null,
-    _depth: Int | Double = null,
+    _depth: Double = null.asInstanceOf[Double],
     _dom: PreactElement | Text = null,
     _nextDom: PreactElement | Text = null,
-    _original: VNode[js.Object] = null,
+    _original: js.UndefOr[Null | VNode[js.Object]] = js.undefined,
     _parent: VNode[js.Object] = null,
-    constructor: js.UndefOr[scala.Nothing] = js.undefined,
-    endTime: Int | Double = null,
-    ref: Ref[_] = null,
-    startTime: Int | Double = null
+    endTime: js.UndefOr[Double] = js.undefined,
+    ref: js.UndefOr[Null | Ref[_]] = js.undefined,
+    startTime: js.UndefOr[Double] = js.undefined
   ): VNode[P] = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], _children = _children.asInstanceOf[js.Any], _component = _component.asInstanceOf[js.Any], _depth = _depth.asInstanceOf[js.Any], _dom = _dom.asInstanceOf[js.Any], _nextDom = _nextDom.asInstanceOf[js.Any], _parent = _parent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (_children != null) __obj.updateDynamic("_children")(_children.asInstanceOf[js.Any])
-    if (_component != null) __obj.updateDynamic("_component")(_component.asInstanceOf[js.Any])
-    if (_depth != null) __obj.updateDynamic("_depth")(_depth.asInstanceOf[js.Any])
-    if (_dom != null) __obj.updateDynamic("_dom")(_dom.asInstanceOf[js.Any])
-    if (_nextDom != null) __obj.updateDynamic("_nextDom")(_nextDom.asInstanceOf[js.Any])
-    if (_original != null) __obj.updateDynamic("_original")(_original.asInstanceOf[js.Any])
-    if (_parent != null) __obj.updateDynamic("_parent")(_parent.asInstanceOf[js.Any])
-    if (!js.isUndefined(constructor)) __obj.updateDynamic("constructor")(constructor.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(_original)) __obj.updateDynamic("_original")(_original.asInstanceOf[js.Any])
+    if (!js.isUndefined(endTime)) __obj.updateDynamic("endTime")(endTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(startTime)) __obj.updateDynamic("startTime")(startTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VNode[P]]
   }
 }

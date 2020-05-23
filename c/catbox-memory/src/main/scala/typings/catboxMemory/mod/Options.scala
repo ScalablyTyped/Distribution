@@ -38,14 +38,14 @@ object Options {
   def apply(
     allowMixedContent: js.UndefOr[Boolean] = js.undefined,
     cloneBuffersOnGet: js.UndefOr[Boolean] = js.undefined,
-    maxByteSize: Int | Double = null,
-    minCleanupIntervalMsec: Int | Double = null
+    maxByteSize: js.UndefOr[Double] = js.undefined,
+    minCleanupIntervalMsec: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowMixedContent)) __obj.updateDynamic("allowMixedContent")(allowMixedContent.asInstanceOf[js.Any])
-    if (!js.isUndefined(cloneBuffersOnGet)) __obj.updateDynamic("cloneBuffersOnGet")(cloneBuffersOnGet.asInstanceOf[js.Any])
-    if (maxByteSize != null) __obj.updateDynamic("maxByteSize")(maxByteSize.asInstanceOf[js.Any])
-    if (minCleanupIntervalMsec != null) __obj.updateDynamic("minCleanupIntervalMsec")(minCleanupIntervalMsec.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowMixedContent)) __obj.updateDynamic("allowMixedContent")(allowMixedContent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cloneBuffersOnGet)) __obj.updateDynamic("cloneBuffersOnGet")(cloneBuffersOnGet.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxByteSize)) __obj.updateDynamic("maxByteSize")(maxByteSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minCleanupIntervalMsec)) __obj.updateDynamic("minCleanupIntervalMsec")(minCleanupIntervalMsec.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

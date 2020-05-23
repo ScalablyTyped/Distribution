@@ -22,11 +22,15 @@ trait TemplateAlias extends js.Object {
 
 object TemplateAlias {
   @scala.inline
-  def apply(AliasName: AliasName = null, Arn: Arn = null, TemplateVersionNumber: Int | scala.Double = null): TemplateAlias = {
+  def apply(
+    AliasName: AliasName = null,
+    Arn: Arn = null,
+    TemplateVersionNumber: js.UndefOr[VersionNumber] = js.undefined
+  ): TemplateAlias = {
     val __obj = js.Dynamic.literal()
     if (AliasName != null) __obj.updateDynamic("AliasName")(AliasName.asInstanceOf[js.Any])
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (TemplateVersionNumber != null) __obj.updateDynamic("TemplateVersionNumber")(TemplateVersionNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(TemplateVersionNumber)) __obj.updateDynamic("TemplateVersionNumber")(TemplateVersionNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateAlias]
   }
 }

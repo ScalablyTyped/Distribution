@@ -56,7 +56,7 @@ trait EventParams
 object EventParams {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     dp: String = null,
     ea: String = null,
     ec: String = null,

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.MailingLabel")
 @js.native
-class MailingLabel protected () extends js.Object {
+trait MailingLabel extends js.Object {
   val Application: typings.activexWord.Word.Application = js.native
   val Creator: Double = js.native
   val CustomLabels: typings.activexWord.Word.CustomLabels = js.native

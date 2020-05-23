@@ -14,9 +14,9 @@ trait DetachClassicLinkVpcResult extends js.Object {
 
 object DetachClassicLinkVpcResult {
   @scala.inline
-  def apply(Return: js.UndefOr[scala.Boolean] = js.undefined): DetachClassicLinkVpcResult = {
+  def apply(Return: js.UndefOr[Boolean] = js.undefined): DetachClassicLinkVpcResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Return)) __obj.updateDynamic("Return")(Return.asInstanceOf[js.Any])
+    if (!js.isUndefined(Return)) __obj.updateDynamic("Return")(Return.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetachClassicLinkVpcResult]
   }
 }

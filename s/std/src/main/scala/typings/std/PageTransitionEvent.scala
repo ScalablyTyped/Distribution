@@ -1,14 +1,12 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** The PageTransitionEvent is fired when a document is being loaded or unloaded. */
 @js.native
-trait PageTransitionEvent extends Event_ {
+trait PageTransitionEvent extends Event {
   /**
     * For the pageshow event, returns false if the page is newly being loaded (and the load event will fire). Otherwise, returns true.
     * 
@@ -24,14 +22,4 @@ trait PageTransitionEvent extends Event_ {
     */
   val persisted: scala.Boolean = js.native
 }
-
-@JSGlobal("PageTransitionEvent")
-@js.native
-object PageTransitionEvent
-  extends Instantiable1[/* type */ java.lang.String, PageTransitionEvent]
-     with Instantiable2[
-      /* type */ java.lang.String, 
-      /* eventInitDict */ PageTransitionEventInit, 
-      PageTransitionEvent
-    ]
 

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Folder object */
-@JSGlobal("Scripting.Folder")
 @js.native
-class Folder protected () extends js.Object {
+trait Folder extends js.Object {
   /** Folder attributes */
   var Attributes: FileAttribute = js.native
   /** Date folder was created */

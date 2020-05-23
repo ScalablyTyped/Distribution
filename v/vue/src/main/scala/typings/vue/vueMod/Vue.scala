@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.std.Element
 import typings.std.Record
-import typings.vue.FnCall
-import typings.vue.FnCallObjectKey
+import typings.vue.anon.FnCall
+import typings.vue.anon.FnCallObjectKey
 import typings.vue.optionsMod.AsyncComponent
 import typings.vue.optionsMod.Component
 import typings.vue.optionsMod.ComponentOptions

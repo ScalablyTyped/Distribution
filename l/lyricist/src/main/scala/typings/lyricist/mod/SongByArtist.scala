@@ -1,6 +1,6 @@
 package typings.lyricist.mod
 
-import typings.lyricist.AnonHot
+import typings.lyricist.anon.Hot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait SongByArtist extends js.Object {
   var primary_artist: ArtistBrief
   var pyongs_count: Double
   var song_art_image_thumbnail_url: String
-  var stats: AnonHot
+  var stats: Hot
   var title: String
   var title_with_featured: String
   var url: String
@@ -40,7 +40,7 @@ object SongByArtist {
     primary_artist: ArtistBrief,
     pyongs_count: Double,
     song_art_image_thumbnail_url: String,
-    stats: AnonHot,
+    stats: Hot,
     title: String,
     title_with_featured: String,
     url: String

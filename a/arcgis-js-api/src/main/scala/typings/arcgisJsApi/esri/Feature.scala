@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -94,8 +93,4 @@ trait Feature extends Widget_ {
     */
   def previousMedia(contentElementIndex: Double): Unit = js.native
 }
-
-@JSGlobal("__esri.Feature")
-@js.native
-object Feature extends TopLevel[FeatureConstructor]
 

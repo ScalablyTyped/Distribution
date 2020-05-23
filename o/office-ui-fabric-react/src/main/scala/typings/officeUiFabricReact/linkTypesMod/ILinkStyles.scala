@@ -11,9 +11,9 @@ trait ILinkStyles extends js.Object {
 
 object ILinkStyles {
   @scala.inline
-  def apply(root: IStyle = null): ILinkStyles = {
+  def apply(root: js.UndefOr[Null | IStyle] = js.undefined): ILinkStyles = {
     val __obj = js.Dynamic.literal()
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILinkStyles]
   }
 }

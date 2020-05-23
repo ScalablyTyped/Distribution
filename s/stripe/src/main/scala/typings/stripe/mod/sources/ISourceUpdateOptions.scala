@@ -1,7 +1,7 @@
 package typings.stripe.mod.sources
 
-import typings.stripe.AnonCurrency
-import typings.stripe.AnonEmailName
+import typings.stripe.anon.Currency
+import typings.stripe.anon.EmailName
 import typings.stripe.mod.IDataOptionsWithMetadata
 import typings.stripe.mod.IOptionsMetadata
 import scala.scalajs.js
@@ -9,8 +9,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ISourceUpdateOptions extends IDataOptionsWithMetadata {
-  var mandate: js.UndefOr[AnonCurrency] = js.undefined
-  var owner: js.UndefOr[AnonEmailName] = js.undefined
+  var mandate: js.UndefOr[Currency] = js.undefined
+  var owner: js.UndefOr[EmailName] = js.undefined
 }
 
 object ISourceUpdateOptions {
@@ -18,9 +18,9 @@ object ISourceUpdateOptions {
   def apply(
     expand: js.Array[String] = null,
     include: js.Array[String] = null,
-    mandate: AnonCurrency = null,
+    mandate: Currency = null,
     metadata: IOptionsMetadata = null,
-    owner: AnonEmailName = null
+    owner: EmailName = null
   ): ISourceUpdateOptions = {
     val __obj = js.Dynamic.literal()
     if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])

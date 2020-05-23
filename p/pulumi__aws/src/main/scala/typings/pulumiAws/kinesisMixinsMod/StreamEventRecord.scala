@@ -1,6 +1,6 @@
 package typings.pulumiAws.kinesisMixinsMod
 
-import typings.pulumiAws.AnonKinesisSchemaVersion
+import typings.pulumiAws.anon.KinesisSchemaVersion
 import typings.pulumiAws.pulumiAwsStrings.awsColonkinesis
 import typings.pulumiAws.pulumiAwsStrings.awsColonkinesisColonrecord
 import scala.scalajs.js
@@ -16,7 +16,7 @@ trait StreamEventRecord extends js.Object {
   var eventSourceARN: String = js.native
   var eventVersion: String = js.native
   var invokeIdentityArn: String = js.native
-  var kinesis: AnonKinesisSchemaVersion = js.native
+  var kinesis: KinesisSchemaVersion = js.native
 }
 
 object StreamEventRecord {
@@ -29,7 +29,7 @@ object StreamEventRecord {
     eventSourceARN: String,
     eventVersion: String,
     invokeIdentityArn: String,
-    kinesis: AnonKinesisSchemaVersion
+    kinesis: KinesisSchemaVersion
   ): StreamEventRecord = {
     val __obj = js.Dynamic.literal(awsRegion = awsRegion.asInstanceOf[js.Any], eventID = eventID.asInstanceOf[js.Any], eventName = eventName.asInstanceOf[js.Any], eventSource = eventSource.asInstanceOf[js.Any], eventSourceARN = eventSourceARN.asInstanceOf[js.Any], eventVersion = eventVersion.asInstanceOf[js.Any], invokeIdentityArn = invokeIdentityArn.asInstanceOf[js.Any], kinesis = kinesis.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamEventRecord]

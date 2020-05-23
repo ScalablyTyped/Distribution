@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetMasterAccountResponse extends js.Object {
   /**
-    * Master account details.
+    * The master account details.
     */
   var Master: typings.awsSdk.guarddutyMod.Master = js.native
 }

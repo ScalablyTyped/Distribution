@@ -15,18 +15,18 @@ trait CoverflowEffectOptions extends js.Object {
 object CoverflowEffectOptions {
   @scala.inline
   def apply(
-    depth: Int | Double = null,
-    modifier: Int | Double = null,
-    rotate: Int | Double = null,
+    depth: js.UndefOr[Double] = js.undefined,
+    modifier: js.UndefOr[Double] = js.undefined,
+    rotate: js.UndefOr[Double] = js.undefined,
     slideShadows: js.UndefOr[Boolean] = js.undefined,
-    stretch: Int | Double = null
+    stretch: js.UndefOr[Double] = js.undefined
   ): CoverflowEffectOptions = {
     val __obj = js.Dynamic.literal()
-    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    if (modifier != null) __obj.updateDynamic("modifier")(modifier.asInstanceOf[js.Any])
-    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
-    if (!js.isUndefined(slideShadows)) __obj.updateDynamic("slideShadows")(slideShadows.asInstanceOf[js.Any])
-    if (stretch != null) __obj.updateDynamic("stretch")(stretch.asInstanceOf[js.Any])
+    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(modifier)) __obj.updateDynamic("modifier")(modifier.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotate)) __obj.updateDynamic("rotate")(rotate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(slideShadows)) __obj.updateDynamic("slideShadows")(slideShadows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stretch)) __obj.updateDynamic("stretch")(stretch.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoverflowEffectOptions]
   }
 }

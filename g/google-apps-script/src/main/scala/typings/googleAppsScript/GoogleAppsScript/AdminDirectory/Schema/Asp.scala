@@ -17,7 +17,7 @@ trait Asp extends js.Object {
 object Asp {
   @scala.inline
   def apply(
-    codeId: Int | Double = null,
+    codeId: js.UndefOr[Double] = js.undefined,
     creationTime: String = null,
     etag: String = null,
     kind: String = null,
@@ -26,7 +26,7 @@ object Asp {
     userKey: String = null
   ): Asp = {
     val __obj = js.Dynamic.literal()
-    if (codeId != null) __obj.updateDynamic("codeId")(codeId.asInstanceOf[js.Any])
+    if (!js.isUndefined(codeId)) __obj.updateDynamic("codeId")(codeId.get.asInstanceOf[js.Any])
     if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])

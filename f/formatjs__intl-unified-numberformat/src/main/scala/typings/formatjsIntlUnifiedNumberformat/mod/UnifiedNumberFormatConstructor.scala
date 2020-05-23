@@ -3,7 +3,7 @@ package typings.formatjsIntlUnifiedNumberformat.mod
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.formatjsIntlUnifiedNumberformat.PickUnifiedNumberFormatOp
+import typings.formatjsIntlUnifiedNumberformat.anon.PickUnifiedNumberFormatOp
 import typings.formatjsIntlUtils.numberTypesMod.NumberLocaleInternalData
 import typings.formatjsIntlUtils.numberTypesMod.RawNumberLocaleData
 import typings.std.Record

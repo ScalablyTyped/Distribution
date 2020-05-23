@@ -125,11 +125,11 @@ object Cluster {
   def apply(
     Applications: ApplicationList = null,
     AutoScalingRole: XmlString = null,
-    AutoTerminate: js.UndefOr[scala.Boolean] = js.undefined,
+    AutoTerminate: js.UndefOr[Boolean] = js.undefined,
     ClusterArn: ArnType = null,
     Configurations: ConfigurationList = null,
     CustomAmiId: XmlStringMaxLen256 = null,
-    EbsRootVolumeSize: Int | Double = null,
+    EbsRootVolumeSize: js.UndefOr[Integer] = js.undefined,
     Ec2InstanceAttributes: Ec2InstanceAttributes = null,
     Id: ClusterId = null,
     InstanceCollectionType: InstanceCollectionType = null,
@@ -137,7 +137,7 @@ object Cluster {
     LogUri: String = null,
     MasterPublicDnsName: String = null,
     Name: String = null,
-    NormalizedInstanceHours: Int | Double = null,
+    NormalizedInstanceHours: js.UndefOr[Integer] = js.undefined,
     OutpostArn: OptionalArnType = null,
     ReleaseLabel: String = null,
     RepoUpgradeOnBoot: RepoUpgradeOnBoot = null,
@@ -147,19 +147,19 @@ object Cluster {
     SecurityConfiguration: XmlString = null,
     ServiceRole: String = null,
     Status: ClusterStatus = null,
-    StepConcurrencyLevel: Int | Double = null,
+    StepConcurrencyLevel: js.UndefOr[Integer] = js.undefined,
     Tags: TagList = null,
-    TerminationProtected: js.UndefOr[scala.Boolean] = js.undefined,
-    VisibleToAllUsers: js.UndefOr[scala.Boolean] = js.undefined
+    TerminationProtected: js.UndefOr[Boolean] = js.undefined,
+    VisibleToAllUsers: js.UndefOr[Boolean] = js.undefined
   ): Cluster = {
     val __obj = js.Dynamic.literal()
     if (Applications != null) __obj.updateDynamic("Applications")(Applications.asInstanceOf[js.Any])
     if (AutoScalingRole != null) __obj.updateDynamic("AutoScalingRole")(AutoScalingRole.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoTerminate)) __obj.updateDynamic("AutoTerminate")(AutoTerminate.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoTerminate)) __obj.updateDynamic("AutoTerminate")(AutoTerminate.get.asInstanceOf[js.Any])
     if (ClusterArn != null) __obj.updateDynamic("ClusterArn")(ClusterArn.asInstanceOf[js.Any])
     if (Configurations != null) __obj.updateDynamic("Configurations")(Configurations.asInstanceOf[js.Any])
     if (CustomAmiId != null) __obj.updateDynamic("CustomAmiId")(CustomAmiId.asInstanceOf[js.Any])
-    if (EbsRootVolumeSize != null) __obj.updateDynamic("EbsRootVolumeSize")(EbsRootVolumeSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(EbsRootVolumeSize)) __obj.updateDynamic("EbsRootVolumeSize")(EbsRootVolumeSize.get.asInstanceOf[js.Any])
     if (Ec2InstanceAttributes != null) __obj.updateDynamic("Ec2InstanceAttributes")(Ec2InstanceAttributes.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     if (InstanceCollectionType != null) __obj.updateDynamic("InstanceCollectionType")(InstanceCollectionType.asInstanceOf[js.Any])
@@ -167,7 +167,7 @@ object Cluster {
     if (LogUri != null) __obj.updateDynamic("LogUri")(LogUri.asInstanceOf[js.Any])
     if (MasterPublicDnsName != null) __obj.updateDynamic("MasterPublicDnsName")(MasterPublicDnsName.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (NormalizedInstanceHours != null) __obj.updateDynamic("NormalizedInstanceHours")(NormalizedInstanceHours.asInstanceOf[js.Any])
+    if (!js.isUndefined(NormalizedInstanceHours)) __obj.updateDynamic("NormalizedInstanceHours")(NormalizedInstanceHours.get.asInstanceOf[js.Any])
     if (OutpostArn != null) __obj.updateDynamic("OutpostArn")(OutpostArn.asInstanceOf[js.Any])
     if (ReleaseLabel != null) __obj.updateDynamic("ReleaseLabel")(ReleaseLabel.asInstanceOf[js.Any])
     if (RepoUpgradeOnBoot != null) __obj.updateDynamic("RepoUpgradeOnBoot")(RepoUpgradeOnBoot.asInstanceOf[js.Any])
@@ -177,10 +177,10 @@ object Cluster {
     if (SecurityConfiguration != null) __obj.updateDynamic("SecurityConfiguration")(SecurityConfiguration.asInstanceOf[js.Any])
     if (ServiceRole != null) __obj.updateDynamic("ServiceRole")(ServiceRole.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StepConcurrencyLevel != null) __obj.updateDynamic("StepConcurrencyLevel")(StepConcurrencyLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(StepConcurrencyLevel)) __obj.updateDynamic("StepConcurrencyLevel")(StepConcurrencyLevel.get.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(TerminationProtected)) __obj.updateDynamic("TerminationProtected")(TerminationProtected.asInstanceOf[js.Any])
-    if (!js.isUndefined(VisibleToAllUsers)) __obj.updateDynamic("VisibleToAllUsers")(VisibleToAllUsers.asInstanceOf[js.Any])
+    if (!js.isUndefined(TerminationProtected)) __obj.updateDynamic("TerminationProtected")(TerminationProtected.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(VisibleToAllUsers)) __obj.updateDynamic("VisibleToAllUsers")(VisibleToAllUsers.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cluster]
   }
 }

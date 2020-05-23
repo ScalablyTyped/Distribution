@@ -30,10 +30,7 @@ object CardChecks {
     address_postal_code_check: pass | failed | unavailable | unchecked = null,
     cvc_check: pass | failed | unavailable | unchecked = null
   ): CardChecks = {
-    val __obj = js.Dynamic.literal()
-    if (address_line1_check != null) __obj.updateDynamic("address_line1_check")(address_line1_check.asInstanceOf[js.Any])
-    if (address_postal_code_check != null) __obj.updateDynamic("address_postal_code_check")(address_postal_code_check.asInstanceOf[js.Any])
-    if (cvc_check != null) __obj.updateDynamic("cvc_check")(cvc_check.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(address_line1_check = address_line1_check.asInstanceOf[js.Any], address_postal_code_check = address_postal_code_check.asInstanceOf[js.Any], cvc_check = cvc_check.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardChecks]
   }
 }

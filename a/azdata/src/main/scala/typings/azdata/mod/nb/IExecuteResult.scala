@@ -10,12 +10,12 @@ trait IExecuteResult
   extends IDisplayResult
      with Output {
   /**
-  			 * Number of times the cell was executed
-  			 */
+    * Number of times the cell was executed
+    */
   var execution_count: Double
   /**
-  			 * Type of cell output.
-  			 */
+    * Type of cell output.
+    */
   @JSName("output_type")
   var output_type_IExecuteResult: execute_result
 }

@@ -22,15 +22,15 @@ object OperationHistoryOptions {
     `type`: String,
     details: js.UndefOr[Boolean] = js.undefined,
     from: String | Date = null,
-    records: Int | Double = null,
+    records: js.UndefOr[Double] = js.undefined,
     start_record: String = null,
     till: String | Date = null
   ): OperationHistoryOptions = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(details)) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
+    if (!js.isUndefined(details)) __obj.updateDynamic("details")(details.get.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (records != null) __obj.updateDynamic("records")(records.asInstanceOf[js.Any])
+    if (!js.isUndefined(records)) __obj.updateDynamic("records")(records.get.asInstanceOf[js.Any])
     if (start_record != null) __obj.updateDynamic("start_record")(start_record.asInstanceOf[js.Any])
     if (till != null) __obj.updateDynamic("till")(till.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationHistoryOptions]

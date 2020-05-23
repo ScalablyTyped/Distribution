@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -60,7 +59,19 @@ trait Format extends js.Object {
   var viewModel: CoordinateConversionViewModel
 }
 
-@JSGlobal("__esri.Format")
-@js.native
-object Format extends TopLevel[Format]
+object Format {
+  @scala.inline
+  def apply(
+    conversionInfo: ConversionInfo,
+    coordinateSegments: js.Array[CoordinateSegment],
+    currentPattern: String,
+    defaultPattern: String,
+    name: String,
+    spatialReference: SpatialReference,
+    viewModel: CoordinateConversionViewModel
+  ): Format = {
+    val __obj = js.Dynamic.literal(conversionInfo = conversionInfo.asInstanceOf[js.Any], coordinateSegments = coordinateSegments.asInstanceOf[js.Any], currentPattern = currentPattern.asInstanceOf[js.Any], defaultPattern = defaultPattern.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], spatialReference = spatialReference.asInstanceOf[js.Any], viewModel = viewModel.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Format]
+  }
+}
 

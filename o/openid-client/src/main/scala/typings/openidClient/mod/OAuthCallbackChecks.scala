@@ -36,7 +36,7 @@ object OAuthCallbackChecks {
   ): OAuthCallbackChecks = {
     val __obj = js.Dynamic.literal()
     if (code_verifier != null) __obj.updateDynamic("code_verifier")(code_verifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(jarm)) __obj.updateDynamic("jarm")(jarm.asInstanceOf[js.Any])
+    if (!js.isUndefined(jarm)) __obj.updateDynamic("jarm")(jarm.get.asInstanceOf[js.Any])
     if (response_type != null) __obj.updateDynamic("response_type")(response_type.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[OAuthCallbackChecks]

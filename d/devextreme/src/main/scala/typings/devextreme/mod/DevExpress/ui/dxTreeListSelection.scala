@@ -20,9 +20,9 @@ object dxTreeListSelection {
     recursive: js.UndefOr[Boolean] = js.undefined
   ): dxTreeListSelection = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowSelectAll)) __obj.updateDynamic("allowSelectAll")(allowSelectAll.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSelectAll)) __obj.updateDynamic("allowSelectAll")(allowSelectAll.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.asInstanceOf[js.Any])
+    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxTreeListSelection]
   }
 }

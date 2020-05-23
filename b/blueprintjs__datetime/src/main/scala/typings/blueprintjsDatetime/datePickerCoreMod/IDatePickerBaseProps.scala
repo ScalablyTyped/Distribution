@@ -1,6 +1,6 @@
 package typings.blueprintjsDatetime.datePickerCoreMod
 
-import typings.blueprintjsDatetime.AnonFormatDate
+import typings.blueprintjsDatetime.anon.FormatDate
 import typings.blueprintjsDatetime.timePickerMod.ITimePickerProps
 import typings.blueprintjsDatetime.timePickerMod.TimePrecision
 import typings.std.Date
@@ -21,7 +21,7 @@ trait IDatePickerBaseProps extends js.Object {
   /**
     * Collection of functions that provide internationalization support.
     */
-  var localeUtils: js.UndefOr[AnonFormatDate] = js.undefined
+  var localeUtils: js.UndefOr[FormatDate] = js.undefined
   /**
     * The latest date the user can select.
     * @default Dec. 31st of this year.
@@ -49,8 +49,7 @@ trait IDatePickerBaseProps extends js.Object {
     * `onChange` and `value` are ignored in favor of the corresponding
     * top-level props on this component.
     *
-    * Passing any defined value to this prop (even `{}`) will cause the
-    * `TimePicker` to appear.
+    * Passing any non-empty object to this prop will cause the `TimePicker` to appear.
     */
   var timePickerProps: js.UndefOr[ITimePickerProps] = js.undefined
   /**
@@ -69,7 +68,7 @@ object IDatePickerBaseProps {
   def apply(
     initialMonth: Date = null,
     locale: String = null,
-    localeUtils: AnonFormatDate = null,
+    localeUtils: FormatDate = null,
     maxDate: Date = null,
     minDate: Date = null,
     modifiers: IDatePickerModifiers = null,
@@ -84,7 +83,7 @@ object IDatePickerBaseProps {
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverseMonthAndYearMenus)) __obj.updateDynamic("reverseMonthAndYearMenus")(reverseMonthAndYearMenus.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverseMonthAndYearMenus)) __obj.updateDynamic("reverseMonthAndYearMenus")(reverseMonthAndYearMenus.get.asInstanceOf[js.Any])
     if (timePickerProps != null) __obj.updateDynamic("timePickerProps")(timePickerProps.asInstanceOf[js.Any])
     if (timePrecision != null) __obj.updateDynamic("timePrecision")(timePrecision.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDatePickerBaseProps]

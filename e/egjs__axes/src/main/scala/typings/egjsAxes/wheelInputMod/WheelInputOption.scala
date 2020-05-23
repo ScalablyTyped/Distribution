@@ -11,10 +11,10 @@ trait WheelInputOption extends js.Object {
 
 object WheelInputOption {
   @scala.inline
-  def apply(scale: Int | Double = null, throttle: Int | Double = null): WheelInputOption = {
+  def apply(scale: js.UndefOr[Double] = js.undefined, throttle: js.UndefOr[Double] = js.undefined): WheelInputOption = {
     val __obj = js.Dynamic.literal()
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (throttle != null) __obj.updateDynamic("throttle")(throttle.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(throttle)) __obj.updateDynamic("throttle")(throttle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WheelInputOption]
   }
 }

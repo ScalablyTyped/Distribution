@@ -26,10 +26,10 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(cacheAdapter: ^[_] = null, maxTtl: Int | Double = null, resolver: Resolver = null): Options = {
+  def apply(cacheAdapter: ^[_] = null, maxTtl: js.UndefOr[Double] = js.undefined, resolver: Resolver = null): Options = {
     val __obj = js.Dynamic.literal()
     if (cacheAdapter != null) __obj.updateDynamic("cacheAdapter")(cacheAdapter.asInstanceOf[js.Any])
-    if (maxTtl != null) __obj.updateDynamic("maxTtl")(maxTtl.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTtl)) __obj.updateDynamic("maxTtl")(maxTtl.get.asInstanceOf[js.Any])
     if (resolver != null) __obj.updateDynamic("resolver")(resolver.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

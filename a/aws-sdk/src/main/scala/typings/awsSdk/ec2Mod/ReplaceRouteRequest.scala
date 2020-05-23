@@ -66,12 +66,12 @@ object ReplaceRouteRequest {
     RouteTableId: RouteTableId,
     DestinationCidrBlock: String = null,
     DestinationIpv6CidrBlock: String = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     EgressOnlyInternetGatewayId: EgressOnlyInternetGatewayId = null,
     GatewayId: RouteGatewayId = null,
     InstanceId: InstanceId = null,
     LocalGatewayId: LocalGatewayId = null,
-    LocalTarget: js.UndefOr[scala.Boolean] = js.undefined,
+    LocalTarget: js.UndefOr[Boolean] = js.undefined,
     NatGatewayId: NatGatewayId = null,
     NetworkInterfaceId: NetworkInterfaceId = null,
     TransitGatewayId: TransitGatewayId = null,
@@ -80,12 +80,12 @@ object ReplaceRouteRequest {
     val __obj = js.Dynamic.literal(RouteTableId = RouteTableId.asInstanceOf[js.Any])
     if (DestinationCidrBlock != null) __obj.updateDynamic("DestinationCidrBlock")(DestinationCidrBlock.asInstanceOf[js.Any])
     if (DestinationIpv6CidrBlock != null) __obj.updateDynamic("DestinationIpv6CidrBlock")(DestinationIpv6CidrBlock.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (EgressOnlyInternetGatewayId != null) __obj.updateDynamic("EgressOnlyInternetGatewayId")(EgressOnlyInternetGatewayId.asInstanceOf[js.Any])
     if (GatewayId != null) __obj.updateDynamic("GatewayId")(GatewayId.asInstanceOf[js.Any])
     if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
     if (LocalGatewayId != null) __obj.updateDynamic("LocalGatewayId")(LocalGatewayId.asInstanceOf[js.Any])
-    if (!js.isUndefined(LocalTarget)) __obj.updateDynamic("LocalTarget")(LocalTarget.asInstanceOf[js.Any])
+    if (!js.isUndefined(LocalTarget)) __obj.updateDynamic("LocalTarget")(LocalTarget.get.asInstanceOf[js.Any])
     if (NatGatewayId != null) __obj.updateDynamic("NatGatewayId")(NatGatewayId.asInstanceOf[js.Any])
     if (NetworkInterfaceId != null) __obj.updateDynamic("NetworkInterfaceId")(NetworkInterfaceId.asInstanceOf[js.Any])
     if (TransitGatewayId != null) __obj.updateDynamic("TransitGatewayId")(TransitGatewayId.asInstanceOf[js.Any])

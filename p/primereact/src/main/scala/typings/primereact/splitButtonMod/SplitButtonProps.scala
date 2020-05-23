@@ -1,7 +1,7 @@
 package typings.primereact.splitButtonMod
 
 import typings.primereact.tooltipOptionsMod.TooltipOptions
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +17,7 @@ trait SplitButtonProps extends js.Object {
   var menuClassName: js.UndefOr[String] = js.undefined
   var menuStyle: js.UndefOr[js.Object] = js.undefined
   var model: js.UndefOr[js.Array[_]] = js.undefined
-  var onClick: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
   var tabIndex: js.UndefOr[String] = js.undefined
   var tooltip: js.UndefOr[js.Any] = js.undefined
@@ -36,7 +36,7 @@ object SplitButtonProps {
     menuClassName: String = null,
     menuStyle: js.Object = null,
     model: js.Array[_] = null,
-    onClick: /* event */ Event_ => Unit = null,
+    onClick: /* event */ Event => Unit = null,
     style: js.Object = null,
     tabIndex: String = null,
     tooltip: js.Any = null,
@@ -45,7 +45,7 @@ object SplitButtonProps {
     val __obj = js.Dynamic.literal()
     if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])

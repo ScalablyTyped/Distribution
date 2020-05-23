@@ -5,17 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait MenuObject extends MenuSeparator {
-  var disabled: js.UndefOr[
-    Boolean | (js.Function1[/* component */ RowComponent | CellComponent | ColumnComponent, Boolean])
-  ] = js.native
-  var label: String | HTMLElement | (js.Function1[
-    /* component */ RowComponent | CellComponent | ColumnComponent, 
-    String | HTMLElement
-  ]) = js.native
-  def action(e: js.Any, component: CellComponent): js.Any = js.native
-  def action(e: js.Any, component: ColumnComponent): js.Any = js.native
-  def action(e: js.Any, component: RowComponent): js.Any = js.native
+trait MenuObject[T /* <: RowComponent | CellComponent | ColumnComponent */] extends js.Object {
+  var disabled: js.UndefOr[Boolean | (js.Function1[/* component */ T, Boolean])] = js.undefined
+  var label: String | HTMLElement | (js.Function1[/* component */ T, String | HTMLElement])
+  def action(e: js.Any, component: T): js.Any
+}
+
+object MenuObject {
+  @scala.inline
+  def apply[T](
+    action: (js.Any, T) => js.Any,
+    label: String | HTMLElement | (js.Function1[/* component */ T, String | HTMLElement]),
+    disabled: Boolean | (js.Function1[/* component */ T, Boolean]) = null
+  ): MenuObject[T] = {
+    val __obj = js.Dynamic.literal(action = js.Any.fromFunction2(action), label = label.asInstanceOf[js.Any])
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MenuObject[T]]
+  }
 }
 

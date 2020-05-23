@@ -7,17 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ClusterIcon")
 @js.native
-class ClusterIcon protected () extends OverlayView {
-  /**
-    * A cluster icon.
-    *
-    * @param cluster The cluster with which the icon is to be associated.
-    * @param [styles] An array of {@link ClusterIconStyle} defining the cluster icons
-    *       to use for various cluster sizes.
-    */
-  def this(cluster: Cluster, styles: js.Array[ClusterIconStyle]) = this()
+trait ClusterIcon extends OverlayView {
   /**
     * Creates the cssText style parameter based on the position of the icon.
     *

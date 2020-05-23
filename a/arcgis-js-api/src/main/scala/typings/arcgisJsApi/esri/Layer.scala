@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`base-dynamic`
 import typings.arcgisJsApi.arcgisJsApiStrings.`base-elevation`
@@ -42,11 +41,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.arcgisJsApi.esri.Evented because Inheritance from two classes. Inlined emit, emit, hasEventListener, on, on */ @js.native
+@js.native
 trait Layer
   extends Accessor
      with Loadable
+     with Evented
      with IntersectItem {
   /**
     * The full extent of the layer. By default, this is worldwide. This property may be used to set the extent of the view to match a layer's extent so that its features appear to fill the view. See the sample snippet below.
@@ -124,17 +123,6 @@ trait Layer
   def createLayerView(view: js.Any): js.Promise[LayerView] = js.native
   def createLayerView(view: js.Any, options: LayerCreateLayerViewOptions): js.Promise[LayerView] = js.native
   /**
-    * Emits an event on the instance. This method should only be used when creating subclasses of this class.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Evented.html#emit)
-    *
-    * @param type The name of the event.
-    * @param event The event payload.
-    *
-    */
-  def emit(`type`: String): Boolean = js.native
-  def emit(`type`: String, event: js.Any): Boolean = js.native
-  /**
     * Fetches custom attribution data for the layer when it becomes available.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#fetchAttributionData)
@@ -142,26 +130,6 @@ trait Layer
     *
     */
   def fetchAttributionData(): js.Promise[_] = js.native
-  /**
-    * Indicates whether there is an event listener on the instance that matches the provided event name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Evented.html#hasEventListener)
-    *
-    * @param type The name of the event.
-    *
-    */
-  def hasEventListener(`type`: String): Boolean = js.native
-  /**
-    * Registers an event handler on the instance. Call this method to hook an event with a listener.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Evented.html#on)
-    *
-    * @param type A event type, or an array of event types, to listen for.
-    * @param listener The function to call when the event is fired.
-    *
-    */
-  def on(`type`: String, listener: EventHandler): IHandle = js.native
-  def on(`type`: js.Array[String], listener: EventHandler): IHandle = js.native
   @JSName("on")
   def on_layerviewcreate(name: `layerview-create`, eventHandler: LayerLayerviewCreateEventHandler): IHandle = js.native
   @JSName("on")
@@ -169,8 +137,4 @@ trait Layer
   @JSName("on")
   def on_layerviewdestroy(name: `layerview-destroy`, eventHandler: LayerLayerviewDestroyEventHandler): IHandle = js.native
 }
-
-@JSGlobal("__esri.Layer")
-@js.native
-object Layer extends TopLevel[LayerConstructor]
 

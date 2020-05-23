@@ -23,14 +23,14 @@ object DrawQualitativeRangesEventArgs {
   @scala.inline
   def apply(
     Object: js.Any = null,
-    rangeEndValue: Int | Double = null,
-    rangeIndex: Int | Double = null,
+    rangeEndValue: js.UndefOr[Double] = js.undefined,
+    rangeIndex: js.UndefOr[Double] = js.undefined,
     rangeOptions: js.Any = null
   ): DrawQualitativeRangesEventArgs = {
     val __obj = js.Dynamic.literal()
     if (Object != null) __obj.updateDynamic("Object")(Object.asInstanceOf[js.Any])
-    if (rangeEndValue != null) __obj.updateDynamic("rangeEndValue")(rangeEndValue.asInstanceOf[js.Any])
-    if (rangeIndex != null) __obj.updateDynamic("rangeIndex")(rangeIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(rangeEndValue)) __obj.updateDynamic("rangeEndValue")(rangeEndValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rangeIndex)) __obj.updateDynamic("rangeIndex")(rangeIndex.get.asInstanceOf[js.Any])
     if (rangeOptions != null) __obj.updateDynamic("rangeOptions")(rangeOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawQualitativeRangesEventArgs]
   }

@@ -18,10 +18,13 @@ trait Lifecycle extends js.Object {
 
 object Lifecycle {
   @scala.inline
-  def apply(DeleteAfterDays: Int | Double = null, MoveToColdStorageAfterDays: Int | Double = null): Lifecycle = {
+  def apply(
+    DeleteAfterDays: js.UndefOr[Long_] = js.undefined,
+    MoveToColdStorageAfterDays: js.UndefOr[Long_] = js.undefined
+  ): Lifecycle = {
     val __obj = js.Dynamic.literal()
-    if (DeleteAfterDays != null) __obj.updateDynamic("DeleteAfterDays")(DeleteAfterDays.asInstanceOf[js.Any])
-    if (MoveToColdStorageAfterDays != null) __obj.updateDynamic("MoveToColdStorageAfterDays")(MoveToColdStorageAfterDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeleteAfterDays)) __obj.updateDynamic("DeleteAfterDays")(DeleteAfterDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MoveToColdStorageAfterDays)) __obj.updateDynamic("MoveToColdStorageAfterDays")(MoveToColdStorageAfterDays.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Lifecycle]
   }
 }

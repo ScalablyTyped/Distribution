@@ -14,9 +14,9 @@ trait InvokeAsyncResponse extends js.Object {
 
 object InvokeAsyncResponse {
   @scala.inline
-  def apply(Status: Int | Double = null): InvokeAsyncResponse = {
+  def apply(Status: js.UndefOr[HttpStatus] = js.undefined): InvokeAsyncResponse = {
     val __obj = js.Dynamic.literal()
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
+    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvokeAsyncResponse]
   }
 }

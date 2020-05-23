@@ -1,6 +1,5 @@
 package typings.clearbladejsServer.CbServer
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,20 +21,6 @@ object TriggerModule extends js.Object {
   
   @js.native
   sealed trait USER extends TriggerModule
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[TriggerModule with String] = js.native
-  /* "Device" */ @js.native
-  object DEVICE extends TopLevel[DEVICE with String]
-  
-  /* "Data" */ @js.native
-  object Data extends TopLevel[Data with String]
-  
-  /* "Messaging" */ @js.native
-  object MESSAGING extends TopLevel[MESSAGING with String]
-  
-  /* "User" */ @js.native
-  object USER extends TopLevel[USER with String]
   
 }
 

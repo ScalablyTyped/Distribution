@@ -27,10 +27,10 @@ object DocumentClientOptions {
     wrapNumbers: js.UndefOr[Boolean] = js.undefined
   ): DocumentClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(convertEmptyValues)) __obj.updateDynamic("convertEmptyValues")(convertEmptyValues.asInstanceOf[js.Any])
+    if (!js.isUndefined(convertEmptyValues)) __obj.updateDynamic("convertEmptyValues")(convertEmptyValues.get.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapNumbers)) __obj.updateDynamic("wrapNumbers")(wrapNumbers.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapNumbers)) __obj.updateDynamic("wrapNumbers")(wrapNumbers.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentClientOptions]
   }
 }

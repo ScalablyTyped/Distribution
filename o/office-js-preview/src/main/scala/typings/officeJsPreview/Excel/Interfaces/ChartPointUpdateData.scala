@@ -43,14 +43,14 @@ trait ChartPointUpdateData extends js.Object {
   var hasDataLabel: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * HTML color code representation of the marker background color of data point. E.g. #FF0000 represents Red.
+    * HTML color code representation of the marker background color of data point (e.g., #FF0000 represents Red).
     *
     * [Api set: ExcelApi 1.7]
     */
   var markerBackgroundColor: js.UndefOr[String] = js.undefined
   /**
     *
-    * HTML color code representation of the marker foreground color of data point. E.g. #FF0000 represents Red.
+    * HTML color code representation of the marker foreground color of data point (e.g., #FF0000 represents Red).
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -81,16 +81,16 @@ object ChartPointUpdateData {
     hasDataLabel: js.UndefOr[Boolean] = js.undefined,
     markerBackgroundColor: String = null,
     markerForegroundColor: String = null,
-    markerSize: Int | Double = null,
+    markerSize: js.UndefOr[Double] = js.undefined,
     markerStyle: ChartMarkerStyle | Invalid | Automatic | None | Square | Diamond | Triangle | X | Star | Dot | Dash | Circle | Plus | Picture = null
   ): ChartPointUpdateData = {
     val __obj = js.Dynamic.literal()
     if (dataLabel != null) __obj.updateDynamic("dataLabel")(dataLabel.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasDataLabel)) __obj.updateDynamic("hasDataLabel")(hasDataLabel.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasDataLabel)) __obj.updateDynamic("hasDataLabel")(hasDataLabel.get.asInstanceOf[js.Any])
     if (markerBackgroundColor != null) __obj.updateDynamic("markerBackgroundColor")(markerBackgroundColor.asInstanceOf[js.Any])
     if (markerForegroundColor != null) __obj.updateDynamic("markerForegroundColor")(markerForegroundColor.asInstanceOf[js.Any])
-    if (markerSize != null) __obj.updateDynamic("markerSize")(markerSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerSize)) __obj.updateDynamic("markerSize")(markerSize.get.asInstanceOf[js.Any])
     if (markerStyle != null) __obj.updateDynamic("markerStyle")(markerStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartPointUpdateData]
   }

@@ -28,14 +28,14 @@ object Font {
   def apply(
     decoration: `line-through` | underline | none = null,
     family: String = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     style: italic | normal | oblique = null,
     weight: bold | bolder | lighter | normal = null
   ): Font = {
     val __obj = js.Dynamic.literal()
     if (decoration != null) __obj.updateDynamic("decoration")(decoration.asInstanceOf[js.Any])
     if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[Font]

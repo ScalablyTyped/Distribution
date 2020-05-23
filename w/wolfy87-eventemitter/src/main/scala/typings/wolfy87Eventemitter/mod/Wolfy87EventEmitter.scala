@@ -2,7 +2,7 @@ package typings.wolfy87Eventemitter.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
-import typings.wolfy87Eventemitter.AnonListener
+import typings.wolfy87Eventemitter.anon.Listener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -172,7 +172,7 @@ object Wolfy87EventEmitter extends js.Object {
       * @param {Object[]} listeners Raw listener objects.
       * @return {Function[]} Just the listener functions.
       */
-    def flattenListeners(listeners: js.Array[AnonListener]): js.Array[js.Function] = js.native
+    def flattenListeners(listeners: js.Array[Listener]): js.Array[js.Function] = js.native
     /**
       * Returns the listener array for the specified event.
       * Will initialise the event object and listener arrays if required.

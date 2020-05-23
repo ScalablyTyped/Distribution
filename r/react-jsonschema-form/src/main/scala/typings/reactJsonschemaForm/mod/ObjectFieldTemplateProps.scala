@@ -2,21 +2,21 @@ package typings.reactJsonschemaForm.mod
 
 import typings.jsonSchema.mod.JSONSchema6
 import typings.react.mod.StatelessComponent
-import typings.reactJsonschemaForm.AnonContent
-import typings.reactJsonschemaForm.AnonDescription
-import typings.reactJsonschemaForm.AnonId
+import typings.reactJsonschemaForm.anon.Content
+import typings.reactJsonschemaForm.anon.Description
+import typings.reactJsonschemaForm.anon.Id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ObjectFieldTemplateProps[T] extends js.Object {
-  var DescriptionField: StatelessComponent[AnonDescription]
-  var TitleField: StatelessComponent[AnonId]
+  var DescriptionField: StatelessComponent[Description]
+  var TitleField: StatelessComponent[Id]
   var description: String
   var formContext: js.Any
   var formData: T
   var idSchema: IdSchema[_]
-  var properties: js.Array[AnonContent]
+  var properties: js.Array[Content]
   var required: Boolean
   var schema: JSONSchema6
   var title: String
@@ -26,13 +26,13 @@ trait ObjectFieldTemplateProps[T] extends js.Object {
 object ObjectFieldTemplateProps {
   @scala.inline
   def apply[T](
-    DescriptionField: StatelessComponent[AnonDescription],
-    TitleField: StatelessComponent[AnonId],
+    DescriptionField: StatelessComponent[Description],
+    TitleField: StatelessComponent[Id],
     description: String,
     formContext: js.Any,
     formData: T,
     idSchema: IdSchema[_],
-    properties: js.Array[AnonContent],
+    properties: js.Array[Content],
     required: Boolean,
     schema: JSONSchema6,
     title: String,

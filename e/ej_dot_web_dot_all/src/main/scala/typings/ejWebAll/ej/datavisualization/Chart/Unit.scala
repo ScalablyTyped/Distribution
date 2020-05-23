@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.Chart
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,14 +17,6 @@ object Unit extends js.Object {
   //string
   @js.native
   sealed trait Pixel extends Unit
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Unit with Double] = js.native
-  /* 0 */ @js.native
-  object Percentage extends TopLevel[Percentage with Double]
-  
-  /* 1 */ @js.native
-  object Pixel extends TopLevel[Pixel with Double]
   
 }
 

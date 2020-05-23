@@ -7,23 +7,20 @@ import scala.scalajs.js.annotation._
 
 trait IgGridAppendRowsOnDemandLocale
   extends /**
-	 * Option for IgGridAppendRowsOnDemandLocale
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   /**
-  	 * Specifies caption text for the "load more data" button.
-  	 *
-  	 */
+    * Specifies caption text for the "load more data" button.
+    *
+    */
   var loadMoreDataButtonText: js.UndefOr[String] = js.undefined
 }
 
 object IgGridAppendRowsOnDemandLocale {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for IgGridAppendRowsOnDemandLocale
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     loadMoreDataButtonText: String = null
   ): IgGridAppendRowsOnDemandLocale = {
     val __obj = js.Dynamic.literal()

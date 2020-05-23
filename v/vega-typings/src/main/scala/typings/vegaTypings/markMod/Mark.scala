@@ -60,6 +60,7 @@ object Mark {
   @scala.inline
   def TrailMark(
     `type`: trail,
+    aria: js.UndefOr[Boolean] = js.undefined,
     clip: Clip = null,
     description: String = null,
     encode: Encode[TrailEncodeEntry] = null,
@@ -72,10 +73,11 @@ object Mark {
     sort: Compare = null,
     style: String | js.Array[String] = null,
     transform: js.Array[Transforms] = null,
-    zindex: Int | Double = null
+    zindex: js.UndefOr[Double] = js.undefined
   ): Mark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(aria)) __obj.updateDynamic("aria")(aria.get.asInstanceOf[js.Any])
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (encode != null) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
@@ -88,12 +90,13 @@ object Mark {
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (zindex != null) __obj.updateDynamic("zindex")(zindex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zindex)) __obj.updateDynamic("zindex")(zindex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mark]
   }
   @scala.inline
   def GroupMark(
     `type`: group,
+    aria: js.UndefOr[Boolean] = js.undefined,
     axes: js.Array[Axis] = null,
     clip: Clip = null,
     data: js.Array[Data] = null,
@@ -116,10 +119,11 @@ object Mark {
     title: String | Title = null,
     transform: js.Array[Transforms] = null,
     usermeta: js.Object = null,
-    zindex: Int | Double = null
+    zindex: js.UndefOr[Double] = js.undefined
   ): Mark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(aria)) __obj.updateDynamic("aria")(aria.get.asInstanceOf[js.Any])
     if (axes != null) __obj.updateDynamic("axes")(axes.asInstanceOf[js.Any])
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
@@ -142,12 +146,13 @@ object Mark {
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     if (usermeta != null) __obj.updateDynamic("usermeta")(usermeta.asInstanceOf[js.Any])
-    if (zindex != null) __obj.updateDynamic("zindex")(zindex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zindex)) __obj.updateDynamic("zindex")(zindex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mark]
   }
   @scala.inline
   def RectMark(
     `type`: rect,
+    aria: js.UndefOr[Boolean] = js.undefined,
     clip: Clip = null,
     description: String = null,
     encode: Encode[RectEncodeEntry] = null,
@@ -160,10 +165,11 @@ object Mark {
     sort: Compare = null,
     style: String | js.Array[String] = null,
     transform: js.Array[Transforms] = null,
-    zindex: Int | Double = null
+    zindex: js.UndefOr[Double] = js.undefined
   ): Mark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(aria)) __obj.updateDynamic("aria")(aria.get.asInstanceOf[js.Any])
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (encode != null) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
@@ -176,12 +182,13 @@ object Mark {
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (zindex != null) __obj.updateDynamic("zindex")(zindex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zindex)) __obj.updateDynamic("zindex")(zindex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mark]
   }
   @scala.inline
   def TextMark(
     `type`: text,
+    aria: js.UndefOr[Boolean] = js.undefined,
     clip: Clip = null,
     description: String = null,
     encode: Encode[TextEncodeEntry] = null,
@@ -194,10 +201,11 @@ object Mark {
     sort: Compare = null,
     style: String | js.Array[String] = null,
     transform: js.Array[Transforms] = null,
-    zindex: Int | Double = null
+    zindex: js.UndefOr[Double] = js.undefined
   ): Mark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(aria)) __obj.updateDynamic("aria")(aria.get.asInstanceOf[js.Any])
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (encode != null) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
@@ -210,12 +218,13 @@ object Mark {
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (zindex != null) __obj.updateDynamic("zindex")(zindex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zindex)) __obj.updateDynamic("zindex")(zindex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mark]
   }
   @scala.inline
   def ImageMark(
     `type`: image,
+    aria: js.UndefOr[Boolean] = js.undefined,
     clip: Clip = null,
     description: String = null,
     encode: Encode[ImageEncodeEntry] = null,
@@ -228,10 +237,11 @@ object Mark {
     sort: Compare = null,
     style: String | js.Array[String] = null,
     transform: js.Array[Transforms] = null,
-    zindex: Int | Double = null
+    zindex: js.UndefOr[Double] = js.undefined
   ): Mark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(aria)) __obj.updateDynamic("aria")(aria.get.asInstanceOf[js.Any])
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (encode != null) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
@@ -244,12 +254,13 @@ object Mark {
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (zindex != null) __obj.updateDynamic("zindex")(zindex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zindex)) __obj.updateDynamic("zindex")(zindex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mark]
   }
   @scala.inline
   def LineMark(
     `type`: line,
+    aria: js.UndefOr[Boolean] = js.undefined,
     clip: Clip = null,
     description: String = null,
     encode: Encode[LineEncodeEntry] = null,
@@ -262,10 +273,11 @@ object Mark {
     sort: Compare = null,
     style: String | js.Array[String] = null,
     transform: js.Array[Transforms] = null,
-    zindex: Int | Double = null
+    zindex: js.UndefOr[Double] = js.undefined
   ): Mark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(aria)) __obj.updateDynamic("aria")(aria.get.asInstanceOf[js.Any])
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (encode != null) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
@@ -278,12 +290,13 @@ object Mark {
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (zindex != null) __obj.updateDynamic("zindex")(zindex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zindex)) __obj.updateDynamic("zindex")(zindex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mark]
   }
   @scala.inline
   def PathMark(
     `type`: path,
+    aria: js.UndefOr[Boolean] = js.undefined,
     clip: Clip = null,
     description: String = null,
     encode: Encode[PathEncodeEntry] = null,
@@ -296,10 +309,11 @@ object Mark {
     sort: Compare = null,
     style: String | js.Array[String] = null,
     transform: js.Array[Transforms] = null,
-    zindex: Int | Double = null
+    zindex: js.UndefOr[Double] = js.undefined
   ): Mark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(aria)) __obj.updateDynamic("aria")(aria.get.asInstanceOf[js.Any])
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (encode != null) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
@@ -312,12 +326,13 @@ object Mark {
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (zindex != null) __obj.updateDynamic("zindex")(zindex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zindex)) __obj.updateDynamic("zindex")(zindex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mark]
   }
   @scala.inline
   def SymbolMark(
     `type`: symbol,
+    aria: js.UndefOr[Boolean] = js.undefined,
     clip: Clip = null,
     description: String = null,
     encode: Encode[SymbolEncodeEntry] = null,
@@ -330,10 +345,11 @@ object Mark {
     sort: Compare = null,
     style: String | js.Array[String] = null,
     transform: js.Array[Transforms] = null,
-    zindex: Int | Double = null
+    zindex: js.UndefOr[Double] = js.undefined
   ): Mark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(aria)) __obj.updateDynamic("aria")(aria.get.asInstanceOf[js.Any])
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (encode != null) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
@@ -346,12 +362,13 @@ object Mark {
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (zindex != null) __obj.updateDynamic("zindex")(zindex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zindex)) __obj.updateDynamic("zindex")(zindex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mark]
   }
   @scala.inline
   def AreaMark(
     `type`: area,
+    aria: js.UndefOr[Boolean] = js.undefined,
     clip: Clip = null,
     description: String = null,
     encode: Encode[AreaEncodeEntry] = null,
@@ -364,10 +381,11 @@ object Mark {
     sort: Compare = null,
     style: String | js.Array[String] = null,
     transform: js.Array[Transforms] = null,
-    zindex: Int | Double = null
+    zindex: js.UndefOr[Double] = js.undefined
   ): Mark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(aria)) __obj.updateDynamic("aria")(aria.get.asInstanceOf[js.Any])
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (encode != null) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
@@ -380,12 +398,13 @@ object Mark {
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (zindex != null) __obj.updateDynamic("zindex")(zindex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zindex)) __obj.updateDynamic("zindex")(zindex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mark]
   }
   @scala.inline
   def ArcMark(
     `type`: arc,
+    aria: js.UndefOr[Boolean] = js.undefined,
     clip: Clip = null,
     description: String = null,
     encode: Encode[ArcEncodeEntry] = null,
@@ -398,10 +417,11 @@ object Mark {
     sort: Compare = null,
     style: String | js.Array[String] = null,
     transform: js.Array[Transforms] = null,
-    zindex: Int | Double = null
+    zindex: js.UndefOr[Double] = js.undefined
   ): Mark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(aria)) __obj.updateDynamic("aria")(aria.get.asInstanceOf[js.Any])
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (encode != null) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
@@ -414,12 +434,13 @@ object Mark {
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (zindex != null) __obj.updateDynamic("zindex")(zindex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zindex)) __obj.updateDynamic("zindex")(zindex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mark]
   }
   @scala.inline
   def RuleMark(
     `type`: rule,
+    aria: js.UndefOr[Boolean] = js.undefined,
     clip: Clip = null,
     description: String = null,
     encode: Encode[RuleEncodeEntry] = null,
@@ -432,10 +453,11 @@ object Mark {
     sort: Compare = null,
     style: String | js.Array[String] = null,
     transform: js.Array[Transforms] = null,
-    zindex: Int | Double = null
+    zindex: js.UndefOr[Double] = js.undefined
   ): Mark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(aria)) __obj.updateDynamic("aria")(aria.get.asInstanceOf[js.Any])
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (encode != null) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
@@ -448,12 +470,13 @@ object Mark {
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (zindex != null) __obj.updateDynamic("zindex")(zindex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zindex)) __obj.updateDynamic("zindex")(zindex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mark]
   }
   @scala.inline
   def ShapeMark(
     `type`: shape,
+    aria: js.UndefOr[Boolean] = js.undefined,
     clip: Clip = null,
     description: String = null,
     encode: Encode[ShapeEncodeEntry] = null,
@@ -466,10 +489,11 @@ object Mark {
     sort: Compare = null,
     style: String | js.Array[String] = null,
     transform: js.Array[Transforms] = null,
-    zindex: Int | Double = null
+    zindex: js.UndefOr[Double] = js.undefined
   ): Mark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(aria)) __obj.updateDynamic("aria")(aria.get.asInstanceOf[js.Any])
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (encode != null) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
@@ -482,7 +506,7 @@ object Mark {
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (zindex != null) __obj.updateDynamic("zindex")(zindex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zindex)) __obj.updateDynamic("zindex")(zindex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mark]
   }
 }

@@ -13,7 +13,7 @@ trait ListVocabulariesResponse extends js.Object {
   /**
     * The requested vocabulary state.
     */
-  var Status: js.UndefOr[TranscriptionJobStatus] = js.native
+  var Status: js.UndefOr[VocabularyState] = js.native
   /**
     * A list of objects that describe the vocabularies that match the search criteria in the request.
     */
@@ -22,11 +22,7 @@ trait ListVocabulariesResponse extends js.Object {
 
 object ListVocabulariesResponse {
   @scala.inline
-  def apply(
-    NextToken: NextToken = null,
-    Status: TranscriptionJobStatus = null,
-    Vocabularies: Vocabularies = null
-  ): ListVocabulariesResponse = {
+  def apply(NextToken: NextToken = null, Status: VocabularyState = null, Vocabularies: Vocabularies = null): ListVocabulariesResponse = {
     val __obj = js.Dynamic.literal()
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])

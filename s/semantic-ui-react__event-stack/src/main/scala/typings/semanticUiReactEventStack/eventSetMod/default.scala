@@ -1,7 +1,7 @@
 package typings.semanticUiReactEventStack.eventSetMod
 
 import typings.semanticUiReactEventStack.typesMod.EventListeners
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ class default protected () extends EventSet {
     * @see https://jsperf.com/suir-eventset-dispatchmultiple2
     */
   /* CompleteClass */
-  override def dispatchEvent(event: Event_, dispatchAll: Boolean): Unit = js.native
+  override def dispatchEvent(event: Event, dispatchAll: Boolean): Unit = js.native
   /* CompleteClass */
   override def hasHandlers(): Boolean = js.native
   /**

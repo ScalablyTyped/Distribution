@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.ChartLegendData
 import typings.officeJsPreview.Excel.Interfaces.ChartLegendLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.ChartLegendUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.Bottom
 import typings.officeJsPreview.officeJsPreviewStrings.Corner
 import typings.officeJsPreview.officeJsPreviewStrings.Custom
@@ -23,78 +23,77 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
-@JSGlobal("Excel.ChartLegend")
 @js.native
-class ChartLegend () extends ClientObject {
+trait ChartLegend extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_ChartLegend: RequestContext = js.native
   /**
     *
-    * Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.
+    * Represents the formatting of a chart legend, which includes fill and font formatting.
     *
     * [Api set: ExcelApi 1.1]
     */
   val format: ChartLegendFormat = js.native
   /**
     *
-    * Represents the height, in points, of the legend on the chart. Null if legend is not visible.
+    * Specifies the height, in points, of the legend on the chart. Null if legend is not visible.
     *
     * [Api set: ExcelApi 1.7]
     */
   var height: Double = js.native
   /**
     *
-    * Represents the left, in points, of a chart legend. Null if legend is not visible.
+    * Specifies the left, in points, of the legend on the chart. Null if legend is not visible.
     *
     * [Api set: ExcelApi 1.7]
     */
   var left: Double = js.native
   /**
     *
-    * Represents a collection of legendEntries in the legend. Read-only.
+    * Represents a collection of legendEntries in the legend.
     *
     * [Api set: ExcelApi 1.7]
     */
   val legendEntries: ChartLegendEntryCollection = js.native
   /**
     *
-    * Boolean value for whether the chart legend should overlap with the main body of the chart.
+    * Specifies if the chart legend should overlap with the main body of the chart.
     *
     * [Api set: ExcelApi 1.1]
     */
   var overlay: Boolean = js.native
   /**
     *
-    * Represents the position of the legend on the chart. See Excel.ChartLegendPosition for details.
+    * Specifies the position of the legend on the chart. See Excel.ChartLegendPosition for details.
     *
     * [Api set: ExcelApi 1.1]
     */
   var position: ChartLegendPosition | Invalid | Top | Bottom | Left | Right | Corner | Custom = js.native
   /**
     *
-    * Represents if the legend has a shadow on the chart.
+    * Specifies if the legend has a shadow on the chart.
     *
     * [Api set: ExcelApi 1.7]
     */
   var showShadow: Boolean = js.native
   /**
     *
-    * Represents the top of a chart legend.
+    * Specifies the top of a chart legend.
     *
     * [Api set: ExcelApi 1.7]
     */
   var top: Double = js.native
   /**
     *
-    * A boolean value the represents the visibility of a ChartLegend object.
+    * Specifies if the ChartLegend is visible.
     *
     * [Api set: ExcelApi 1.1]
     */
   var visible: Boolean = js.native
   /**
     *
-    * Represents the width, in points, of the legend on the chart. Null if legend is not visible.
+    * Specifies the width, in points, of the legend on the chart. Null if legend is not visible.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -106,7 +105,7 @@ class ChartLegend () extends ClientObject {
     */
   def load(): ChartLegend = js.native
   def load(options: ChartLegendLoadOptions): ChartLegend = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ChartLegend = js.native
+  def load(propertyNamesAndPaths: Expand): ChartLegend = js.native
   def load(propertyNames: String): ChartLegend = js.native
   def load(propertyNames: js.Array[String]): ChartLegend = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

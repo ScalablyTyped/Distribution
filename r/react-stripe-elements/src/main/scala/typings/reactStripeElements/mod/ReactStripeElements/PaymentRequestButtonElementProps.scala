@@ -1,8 +1,8 @@
 package typings.reactStripeElements.mod.ReactStripeElements
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.stripeV3.AnonBase
-import typings.stripeV3.AnonComplete
+import typings.stripeV3.anon.Base
+import typings.stripeV3.anon.Complete
 import typings.stripeV3.stripe.paymentRequest.StripePaymentRequest
 import typings.stripeV3.stripeV3Strings.default
 import typings.stripeV3.stripeV3Strings.solid
@@ -18,7 +18,7 @@ object PaymentRequestButtonElementProps {
   @scala.inline
   def apply(
     className: String = null,
-    classes: AnonBase = null,
+    classes: Base = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     elementRef: /* ref */ js.Any => Unit = null,
     hideIcon: js.UndefOr[Boolean] = js.undefined,
@@ -33,17 +33,17 @@ object PaymentRequestButtonElementProps {
     paymentRequest: StripePaymentRequest = null,
     placeholder: String = null,
     placeholderCountry: String = null,
-    style: AnonComplete = null,
+    style: Complete = null,
     supportedCountries: js.Array[String] = null,
     value: String | StringDictionary[String] = null
   ): PaymentRequestButtonElementProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (elementRef != null) __obj.updateDynamic("elementRef")(js.Any.fromFunction1(elementRef))
-    if (!js.isUndefined(hideIcon)) __obj.updateDynamic("hideIcon")(hideIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidePostalCode)) __obj.updateDynamic("hidePostalCode")(hidePostalCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideIcon)) __obj.updateDynamic("hideIcon")(hideIcon.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidePostalCode)) __obj.updateDynamic("hidePostalCode")(hidePostalCode.get.asInstanceOf[js.Any])
     if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))

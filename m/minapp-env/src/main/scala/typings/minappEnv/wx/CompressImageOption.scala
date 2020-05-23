@@ -23,13 +23,13 @@ object CompressImageOption {
     src: String,
     complete: /* res */ GeneralCallbackResult => Unit = null,
     fail: /* res */ GeneralCallbackResult => Unit = null,
-    quality: Int | Double = null,
+    quality: js.UndefOr[Double] = js.undefined,
     success: /* res */ GeneralCallbackResult => Unit = null
   ): CompressImageOption = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[CompressImageOption]
   }

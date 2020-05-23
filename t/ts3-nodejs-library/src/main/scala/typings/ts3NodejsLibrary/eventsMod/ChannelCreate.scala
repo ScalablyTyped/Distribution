@@ -1,6 +1,6 @@
 package typings.ts3NodejsLibrary.eventsMod
 
-import typings.ts3NodejsLibrary.PartialQueryResponseTypes
+import typings.ts3NodejsLibrary.anon.PartialQueryResponseTypes
 import typings.ts3NodejsLibrary.channelMod.TeamSpeakChannel
 import typings.ts3NodejsLibrary.clientMod.TeamSpeakClient
 import scala.scalajs.js

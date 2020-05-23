@@ -9,22 +9,22 @@ trait IPolarChart extends IAbstractChart {
   /** [Config Option] (Array) */
   var center: js.UndefOr[Array] = js.undefined
   /** [Method] Returns the value of center
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   var getCenter: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the value of radius
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getRadius: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Config Option] (Number) */
   var radius: js.UndefOr[Double] = js.undefined
   /** [Method] Sets the value of center
-  		* @param center Array The new value.
-  		*/
+    * @param center Array The new value.
+    */
   var setCenter: js.UndefOr[js.Function1[/* center */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Sets the value of radius
-  		* @param radius Number The new value.
-  		*/
+    * @param radius Number The new value.
+    */
   var setRadius: js.UndefOr[js.Function1[/* radius */ js.UndefOr[Double], Unit]] = js.undefined
 }
 
@@ -35,7 +35,7 @@ object IPolarChart {
     center: Array = null,
     getCenter: () => Array = null,
     getRadius: () => Double = null,
-    radius: Int | Double = null,
+    radius: js.UndefOr[Double] = js.undefined,
     setCenter: /* center */ js.UndefOr[Array] => Unit = null,
     setRadius: /* radius */ js.UndefOr[Double] => Unit = null
   ): IPolarChart = {
@@ -44,7 +44,7 @@ object IPolarChart {
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (getCenter != null) __obj.updateDynamic("getCenter")(js.Any.fromFunction0(getCenter))
     if (getRadius != null) __obj.updateDynamic("getRadius")(js.Any.fromFunction0(getRadius))
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     if (setCenter != null) __obj.updateDynamic("setCenter")(js.Any.fromFunction1(setCenter))
     if (setRadius != null) __obj.updateDynamic("setRadius")(js.Any.fromFunction1(setRadius))
     __obj.asInstanceOf[IPolarChart]

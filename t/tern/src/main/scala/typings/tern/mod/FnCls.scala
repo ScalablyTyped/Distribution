@@ -9,14 +9,7 @@ import scala.scalajs.js.annotation._
 class FnCls protected ()
   extends typings.tern.inferMod.Fn {
   def this(
-    name: js.UndefOr[scala.Nothing],
-    self: typings.tern.inferMod.AVal,
-    args: js.Array[typings.tern.inferMod.AVal],
-    argNames: js.Array[String],
-    retval: typings.tern.inferMod.AVal
-  ) = this()
-  def this(
-    name: String,
+    name: js.UndefOr[String],
     self: typings.tern.inferMod.AVal,
     args: js.Array[typings.tern.inferMod.AVal],
     argNames: js.Array[String],

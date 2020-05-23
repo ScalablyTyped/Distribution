@@ -1,7 +1,7 @@
 package typings.baseui.paginationMod
 
-import typings.baseui.AnonEventAny
-import typings.baseui.AnonNextPage
+import typings.baseui.anon.EventAny
+import typings.baseui.anon.NextPage
 import typings.baseui.baseuiStrings.change_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,9 +21,9 @@ object StatefulPaginationProps {
     numPages: Double,
     initialState: State = null,
     labels: Labels = null,
-    onNextClick: /* args */ AnonEventAny => _ = null,
-    onPageChange: /* args */ AnonNextPage => _ = null,
-    onPrevClick: /* args */ AnonEventAny => _ = null,
+    onNextClick: /* args */ EventAny => _ = null,
+    onPageChange: /* args */ NextPage => _ = null,
+    onPrevClick: /* args */ EventAny => _ = null,
     overrides: PaginationOverrides = null,
     stateReducer: (change_, /* changes */ State, /* currentState */ State) => State = null
   ): StatefulPaginationProps = {

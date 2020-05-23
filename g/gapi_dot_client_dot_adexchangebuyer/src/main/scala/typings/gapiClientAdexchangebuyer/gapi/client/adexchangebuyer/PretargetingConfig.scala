@@ -1,8 +1,8 @@
 package typings.gapiClientAdexchangebuyer.gapi.client.adexchangebuyer
 
-import typings.gapiClientAdexchangebuyer.AnonAspectRatio
-import typings.gapiClientAdexchangebuyer.AnonToken
-import typings.gapiClientAdexchangebuyer.AnonWidth
+import typings.gapiClientAdexchangebuyer.anon.AspectRatio
+import typings.gapiClientAdexchangebuyer.anon.Token
+import typings.gapiClientAdexchangebuyer.anon.Width
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,13 +17,13 @@ trait PretargetingConfig extends js.Object {
   /** List must contain exactly one of PRETARGETING_CREATIVE_TYPE_HTML or PRETARGETING_CREATIVE_TYPE_VIDEO. */
   var creativeType: js.UndefOr[js.Array[String]] = js.undefined
   /** Requests which allow one of these (width, height) pairs will match. All pairs must be supported ad dimensions. */
-  var dimensions: js.UndefOr[js.Array[AnonWidth]] = js.undefined
+  var dimensions: js.UndefOr[js.Array[Width]] = js.undefined
   /** Requests with any of these content labels will not match. Values are from content-labels.txt in the downloadable files section. */
   var excludedContentLabels: js.UndefOr[js.Array[String]] = js.undefined
   /** Requests containing any of these geo criteria ids will not match. */
   var excludedGeoCriteriaIds: js.UndefOr[js.Array[String]] = js.undefined
   /** Requests containing any of these placements will not match. */
-  var excludedPlacements: js.UndefOr[js.Array[AnonToken]] = js.undefined
+  var excludedPlacements: js.UndefOr[js.Array[Token]] = js.undefined
   /** Requests containing any of these users list ids will not match. */
   var excludedUserLists: js.UndefOr[js.Array[String]] = js.undefined
   /** Requests containing any of these vertical ids will not match. Values are from the publisher-verticals.txt file in the downloadable files section. */
@@ -48,7 +48,7 @@ trait PretargetingConfig extends js.Object {
   /** Requests containing any of these mobile operating system version ids will match. Values are from mobile-os.csv in the downloadable files section. */
   var mobileOperatingSystemVersions: js.UndefOr[js.Array[String]] = js.undefined
   /** Requests containing any of these placements will match. */
-  var placements: js.UndefOr[js.Array[AnonToken]] = js.undefined
+  var placements: js.UndefOr[js.Array[Token]] = js.undefined
   /**
     * Requests matching any of these platforms will match. Possible values are PRETARGETING_PLATFORM_MOBILE, PRETARGETING_PLATFORM_DESKTOP, and
     * PRETARGETING_PLATFORM_TABLET.
@@ -71,7 +71,7 @@ trait PretargetingConfig extends js.Object {
   /** Requests containing any of these vertical ids will match. */
   var verticals: js.UndefOr[js.Array[String]] = js.undefined
   /** Video requests satisfying any of these player size constraints will match. */
-  var videoPlayerSizes: js.UndefOr[js.Array[AnonAspectRatio]] = js.undefined
+  var videoPlayerSizes: js.UndefOr[js.Array[AspectRatio]] = js.undefined
 }
 
 object PretargetingConfig {
@@ -81,28 +81,28 @@ object PretargetingConfig {
     configId: String = null,
     configName: String = null,
     creativeType: js.Array[String] = null,
-    dimensions: js.Array[AnonWidth] = null,
+    dimensions: js.Array[Width] = null,
     excludedContentLabels: js.Array[String] = null,
     excludedGeoCriteriaIds: js.Array[String] = null,
-    excludedPlacements: js.Array[AnonToken] = null,
+    excludedPlacements: js.Array[Token] = null,
     excludedUserLists: js.Array[String] = null,
     excludedVerticals: js.Array[String] = null,
     geoCriteriaIds: js.Array[String] = null,
     isActive: js.UndefOr[Boolean] = js.undefined,
     kind: String = null,
     languages: js.Array[String] = null,
-    minimumViewabilityDecile: Int | Double = null,
+    minimumViewabilityDecile: js.UndefOr[Double] = js.undefined,
     mobileCarriers: js.Array[String] = null,
     mobileDevices: js.Array[String] = null,
     mobileOperatingSystemVersions: js.Array[String] = null,
-    placements: js.Array[AnonToken] = null,
+    placements: js.Array[Token] = null,
     platforms: js.Array[String] = null,
     supportedCreativeAttributes: js.Array[String] = null,
     userIdentifierDataRequired: js.Array[String] = null,
     userLists: js.Array[String] = null,
     vendorTypes: js.Array[String] = null,
     verticals: js.Array[String] = null,
-    videoPlayerSizes: js.Array[AnonAspectRatio] = null
+    videoPlayerSizes: js.Array[AspectRatio] = null
   ): PretargetingConfig = {
     val __obj = js.Dynamic.literal()
     if (billingId != null) __obj.updateDynamic("billingId")(billingId.asInstanceOf[js.Any])
@@ -116,10 +116,10 @@ object PretargetingConfig {
     if (excludedUserLists != null) __obj.updateDynamic("excludedUserLists")(excludedUserLists.asInstanceOf[js.Any])
     if (excludedVerticals != null) __obj.updateDynamic("excludedVerticals")(excludedVerticals.asInstanceOf[js.Any])
     if (geoCriteriaIds != null) __obj.updateDynamic("geoCriteriaIds")(geoCriteriaIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.asInstanceOf[js.Any])
+    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (languages != null) __obj.updateDynamic("languages")(languages.asInstanceOf[js.Any])
-    if (minimumViewabilityDecile != null) __obj.updateDynamic("minimumViewabilityDecile")(minimumViewabilityDecile.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumViewabilityDecile)) __obj.updateDynamic("minimumViewabilityDecile")(minimumViewabilityDecile.get.asInstanceOf[js.Any])
     if (mobileCarriers != null) __obj.updateDynamic("mobileCarriers")(mobileCarriers.asInstanceOf[js.Any])
     if (mobileDevices != null) __obj.updateDynamic("mobileDevices")(mobileDevices.asInstanceOf[js.Any])
     if (mobileOperatingSystemVersions != null) __obj.updateDynamic("mobileOperatingSystemVersions")(mobileOperatingSystemVersions.asInstanceOf[js.Any])

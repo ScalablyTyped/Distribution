@@ -35,13 +35,13 @@ object IPagerConfig {
   @scala.inline
   def apply(
     align: js.UndefOr[Boolean] = js.undefined,
-    itemsPerPage: Int | Double = null,
+    itemsPerPage: js.UndefOr[Double] = js.undefined,
     nextText: String = null,
     previousText: String = null
   ): IPagerConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(align)) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (itemsPerPage != null) __obj.updateDynamic("itemsPerPage")(itemsPerPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(align)) __obj.updateDynamic("align")(align.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemsPerPage)) __obj.updateDynamic("itemsPerPage")(itemsPerPage.get.asInstanceOf[js.Any])
     if (nextText != null) __obj.updateDynamic("nextText")(nextText.asInstanceOf[js.Any])
     if (previousText != null) __obj.updateDynamic("previousText")(previousText.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPagerConfig]

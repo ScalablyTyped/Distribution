@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("FirebaseFirestore.CollectionReference")
 @js.native
-class CollectionReference[T] protected () extends Query[T] {
+trait CollectionReference[T] extends Query[T] {
   /** The identifier of the collection. */
   val id: String = js.native
   /**

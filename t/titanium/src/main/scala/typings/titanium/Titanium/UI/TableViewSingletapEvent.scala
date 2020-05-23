@@ -6,33 +6,33 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the device detects a single tap against the view.
-		 */
+  * Fired when the device detects a single tap against the view.
+  */
 trait TableViewSingletapEvent extends TableViewBaseEvent {
   /**
-  			 * Row index.
-  			 */
+    * Row index.
+    */
   var index: Double
   /**
-  			 * Table view row object.
-  			 */
+    * Table view row object.
+    */
   var row: TableViewRow
   /**
-  			 * Properties of the row.
-  			 * When the row is created implicitly using a JavaScript dictionary object,
-  			 * use this property rather than `row` to access any custom row properties.
-  			 * Here's an example of creating a row implicitly, which is not the recommended way.
-  			 *     var data = [{title:'Row 1', hasChild:true, color:'red', selectedColor:'#fff', special:'special 1'},];
-  			 *     var table = Ti.UI.createTableView({data: data});
-  			 */
+    * Properties of the row.
+    * When the row is created implicitly using a JavaScript dictionary object,
+    * use this property rather than `row` to access any custom row properties.
+    * Here's an example of creating a row implicitly, which is not the recommended way.
+    *     var data = [{title:'Row 1', hasChild:true, color:'red', selectedColor:'#fff', special:'special 1'},];
+    *     var table = Ti.UI.createTableView({data: data});
+    */
   var rowData: Dictionary[TableViewRow]
   /**
-  			 * X coordinate of the event from the `source` view's coordinate system.
-  			 */
+    * X coordinate of the event from the `source` view's coordinate system.
+    */
   var x: Double
   /**
-  			 * Y coordinate of the event from the `source` view's coordinate system.
-  			 */
+    * Y coordinate of the event from the `source` view's coordinate system.
+    */
   var y: Double
 }
 

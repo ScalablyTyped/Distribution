@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.Grid
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object ClipMode extends js.Object {
   ///Shows ellipsis and tooltip for the overflown cell.
   @js.native
   sealed trait EllipsisWithTooltip extends ClipMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ClipMode with Double] = js.native
-  /* 1 */ @js.native
-  object Clip extends TopLevel[Clip with Double]
-  
-  /* 0 */ @js.native
-  object Ellipsis extends TopLevel[Ellipsis with Double]
-  
-  /* 2 */ @js.native
-  object EllipsisWithTooltip extends TopLevel[EllipsisWithTooltip with Double]
   
 }
 

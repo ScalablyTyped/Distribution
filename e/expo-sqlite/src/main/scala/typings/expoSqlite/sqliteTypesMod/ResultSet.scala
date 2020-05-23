@@ -13,9 +13,13 @@ trait ResultSet extends js.Object {
 
 object ResultSet {
   @scala.inline
-  def apply(rows: js.Array[StringDictionary[_]], rowsAffected: Double, insertId: Int | Double = null): ResultSet = {
+  def apply(
+    rows: js.Array[StringDictionary[_]],
+    rowsAffected: Double,
+    insertId: js.UndefOr[Double] = js.undefined
+  ): ResultSet = {
     val __obj = js.Dynamic.literal(rows = rows.asInstanceOf[js.Any], rowsAffected = rowsAffected.asInstanceOf[js.Any])
-    if (insertId != null) __obj.updateDynamic("insertId")(insertId.asInstanceOf[js.Any])
+    if (!js.isUndefined(insertId)) __obj.updateDynamic("insertId")(insertId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultSet]
   }
 }

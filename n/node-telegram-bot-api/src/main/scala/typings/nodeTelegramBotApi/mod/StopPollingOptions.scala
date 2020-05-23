@@ -13,7 +13,7 @@ object StopPollingOptions {
   @scala.inline
   def apply(cancel: js.UndefOr[Boolean] = js.undefined, reason: String = null): StopPollingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopPollingOptions]
   }

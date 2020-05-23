@@ -39,22 +39,22 @@ trait GenerateFrameNames extends js.Object {
 object GenerateFrameNames {
   @scala.inline
   def apply(
-    end: Int | Double = null,
+    end: js.UndefOr[integer] = js.undefined,
     frames: Boolean | js.Array[integer] = null,
     outputArray: js.Array[AnimationFrame] = null,
     prefix: String = null,
-    start: Int | Double = null,
+    start: js.UndefOr[integer] = js.undefined,
     suffix: String = null,
-    zeroPad: Int | Double = null
+    zeroPad: js.UndefOr[integer] = js.undefined
   ): GenerateFrameNames = {
     val __obj = js.Dynamic.literal()
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
     if (frames != null) __obj.updateDynamic("frames")(frames.asInstanceOf[js.Any])
     if (outputArray != null) __obj.updateDynamic("outputArray")(outputArray.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
-    if (zeroPad != null) __obj.updateDynamic("zeroPad")(zeroPad.asInstanceOf[js.Any])
+    if (!js.isUndefined(zeroPad)) __obj.updateDynamic("zeroPad")(zeroPad.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateFrameNames]
   }
 }

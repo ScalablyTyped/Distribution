@@ -54,18 +54,18 @@ object ExecuteStatementRequest {
     resourceArn: Arn,
     secretArn: Arn,
     sql: SqlStatement,
-    continueAfterTimeout: js.UndefOr[scala.Boolean] = js.undefined,
+    continueAfterTimeout: js.UndefOr[Boolean] = js.undefined,
     database: DbName = null,
-    includeResultMetadata: js.UndefOr[scala.Boolean] = js.undefined,
+    includeResultMetadata: js.UndefOr[Boolean] = js.undefined,
     parameters: SqlParametersList = null,
     resultSetOptions: ResultSetOptions = null,
     schema: DbName = null,
     transactionId: Id = null
   ): ExecuteStatementRequest = {
     val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any], secretArn = secretArn.asInstanceOf[js.Any], sql = sql.asInstanceOf[js.Any])
-    if (!js.isUndefined(continueAfterTimeout)) __obj.updateDynamic("continueAfterTimeout")(continueAfterTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(continueAfterTimeout)) __obj.updateDynamic("continueAfterTimeout")(continueAfterTimeout.get.asInstanceOf[js.Any])
     if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeResultMetadata)) __obj.updateDynamic("includeResultMetadata")(includeResultMetadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeResultMetadata)) __obj.updateDynamic("includeResultMetadata")(includeResultMetadata.get.asInstanceOf[js.Any])
     if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     if (resultSetOptions != null) __obj.updateDynamic("resultSetOptions")(resultSetOptions.asInstanceOf[js.Any])
     if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])

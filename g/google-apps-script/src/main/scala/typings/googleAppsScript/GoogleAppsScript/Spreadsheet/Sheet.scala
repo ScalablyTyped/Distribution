@@ -1,8 +1,8 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
-import typings.googleAppsScript.AnonContentsOnly
 import typings.googleAppsScript.GoogleAppsScript.Base.BlobSource
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import typings.googleAppsScript.anon.ContentsOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ trait Sheet extends js.Object {
   def autoResizeColumns(startColumn: Integer, numColumns: Integer): Sheet = js.native
   def autoResizeRows(startRow: Integer, numRows: Integer): Sheet = js.native
   def clear(): Sheet = js.native
-  def clear(options: AnonContentsOnly): Sheet = js.native
+  def clear(options: ContentsOnly): Sheet = js.native
   def clearConditionalFormatRules(): Unit = js.native
   def clearContents(): Sheet = js.native
   def clearFormats(): Sheet = js.native

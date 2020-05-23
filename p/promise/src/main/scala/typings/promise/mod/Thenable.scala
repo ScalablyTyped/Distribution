@@ -13,10 +13,6 @@ trait Thenable[T] extends js.Object {
     * @returns A ThenPromise for the completion of which ever callback is executed.
     */
   def `then`[TResult1, TResult2](): Thenable[TResult1 | TResult2] = js.native
-  def `then`[TResult1, TResult2](
-    onfulfilled: js.UndefOr[scala.Nothing],
-    onrejected: js.Function1[/* reason */ js.Any, TResult2 | Thenable[TResult2]]
-  ): Thenable[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | Thenable[TResult1]]): Thenable[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
     onfulfilled: js.Function1[/* value */ T, TResult1 | Thenable[TResult1]],

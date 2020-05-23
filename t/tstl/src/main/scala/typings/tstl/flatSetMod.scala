@@ -7,7 +7,6 @@ import typings.tstl.flatSetMod.FlatSet.ReverseIterator
 import typings.tstl.iforwarditeratorMod.IForwardIterator
 import typings.tstl.itreesetMod.ITreeSet
 import typings.tstl.tstlBooleans.`true`
-import typings.tstl.tstlStrings.experimental
 import typings.tstl.uniqueTreeSetMod.UniqueTreeSet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -107,7 +106,7 @@ object flatSetMod extends js.Object {
           ]
         ]
       ] = js.native
-    val __MODULE: experimental = js.native
+    val __MODULE: /* "experimental" */ String = js.native
     type Iterator[Key] = typings.tstl.setElementVectorMod.SetElementVector.Iterator[Key, `true`, FlatSet[Key]]
     type ReverseIterator[Key] = typings.tstl.setElementVectorMod.SetElementVector.ReverseIterator[Key, `true`, FlatSet[Key]]
   }

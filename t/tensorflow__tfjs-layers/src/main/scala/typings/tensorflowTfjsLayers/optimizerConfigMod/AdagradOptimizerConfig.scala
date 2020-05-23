@@ -11,9 +11,9 @@ trait AdagradOptimizerConfig extends js.Object {
 
 object AdagradOptimizerConfig {
   @scala.inline
-  def apply(learning_rate: Double, initial_accumulator_value: Int | Double = null): AdagradOptimizerConfig = {
+  def apply(learning_rate: Double, initial_accumulator_value: js.UndefOr[Double] = js.undefined): AdagradOptimizerConfig = {
     val __obj = js.Dynamic.literal(learning_rate = learning_rate.asInstanceOf[js.Any])
-    if (initial_accumulator_value != null) __obj.updateDynamic("initial_accumulator_value")(initial_accumulator_value.asInstanceOf[js.Any])
+    if (!js.isUndefined(initial_accumulator_value)) __obj.updateDynamic("initial_accumulator_value")(initial_accumulator_value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdagradOptimizerConfig]
   }
 }

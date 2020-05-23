@@ -49,8 +49,8 @@ object IDbColumn {
     dataTypeName: String,
     udtAssemblyQualifiedName: String,
     allowDBNull: js.UndefOr[Boolean] = js.undefined,
-    columnOrdinal: Int | Double = null,
-    columnSize: Int | Double = null,
+    columnOrdinal: js.UndefOr[Double] = js.undefined,
+    columnSize: js.UndefOr[Double] = js.undefined,
     isAliased: js.UndefOr[Boolean] = js.undefined,
     isAutoIncrement: js.UndefOr[Boolean] = js.undefined,
     isBytes: js.UndefOr[Boolean] = js.undefined,
@@ -66,30 +66,30 @@ object IDbColumn {
     isUdt: js.UndefOr[Boolean] = js.undefined,
     isUnique: js.UndefOr[Boolean] = js.undefined,
     isXml: js.UndefOr[Boolean] = js.undefined,
-    numericPrecision: Int | Double = null,
-    numericScale: Int | Double = null
+    numericPrecision: js.UndefOr[Double] = js.undefined,
+    numericScale: js.UndefOr[Double] = js.undefined
   ): IDbColumn = {
     val __obj = js.Dynamic.literal(baseCatalogName = baseCatalogName.asInstanceOf[js.Any], baseColumnName = baseColumnName.asInstanceOf[js.Any], baseSchemaName = baseSchemaName.asInstanceOf[js.Any], baseServerName = baseServerName.asInstanceOf[js.Any], baseTableName = baseTableName.asInstanceOf[js.Any], columnName = columnName.asInstanceOf[js.Any], dataType = dataType.asInstanceOf[js.Any], dataTypeName = dataTypeName.asInstanceOf[js.Any], udtAssemblyQualifiedName = udtAssemblyQualifiedName.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDBNull)) __obj.updateDynamic("allowDBNull")(allowDBNull.asInstanceOf[js.Any])
-    if (columnOrdinal != null) __obj.updateDynamic("columnOrdinal")(columnOrdinal.asInstanceOf[js.Any])
-    if (columnSize != null) __obj.updateDynamic("columnSize")(columnSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAliased)) __obj.updateDynamic("isAliased")(isAliased.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAutoIncrement)) __obj.updateDynamic("isAutoIncrement")(isAutoIncrement.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBytes)) __obj.updateDynamic("isBytes")(isBytes.asInstanceOf[js.Any])
-    if (!js.isUndefined(isChars)) __obj.updateDynamic("isChars")(isChars.asInstanceOf[js.Any])
-    if (!js.isUndefined(isExpression)) __obj.updateDynamic("isExpression")(isExpression.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHidden)) __obj.updateDynamic("isHidden")(isHidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(isIdentity)) __obj.updateDynamic("isIdentity")(isIdentity.asInstanceOf[js.Any])
-    if (!js.isUndefined(isJson)) __obj.updateDynamic("isJson")(isJson.asInstanceOf[js.Any])
-    if (!js.isUndefined(isKey)) __obj.updateDynamic("isKey")(isKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(isLong)) __obj.updateDynamic("isLong")(isLong.asInstanceOf[js.Any])
-    if (!js.isUndefined(isReadOnly)) __obj.updateDynamic("isReadOnly")(isReadOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSqlVariant)) __obj.updateDynamic("isSqlVariant")(isSqlVariant.asInstanceOf[js.Any])
-    if (!js.isUndefined(isUdt)) __obj.updateDynamic("isUdt")(isUdt.asInstanceOf[js.Any])
-    if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique.asInstanceOf[js.Any])
-    if (!js.isUndefined(isXml)) __obj.updateDynamic("isXml")(isXml.asInstanceOf[js.Any])
-    if (numericPrecision != null) __obj.updateDynamic("numericPrecision")(numericPrecision.asInstanceOf[js.Any])
-    if (numericScale != null) __obj.updateDynamic("numericScale")(numericScale.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDBNull)) __obj.updateDynamic("allowDBNull")(allowDBNull.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnOrdinal)) __obj.updateDynamic("columnOrdinal")(columnOrdinal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnSize)) __obj.updateDynamic("columnSize")(columnSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAliased)) __obj.updateDynamic("isAliased")(isAliased.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAutoIncrement)) __obj.updateDynamic("isAutoIncrement")(isAutoIncrement.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBytes)) __obj.updateDynamic("isBytes")(isBytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isChars)) __obj.updateDynamic("isChars")(isChars.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExpression)) __obj.updateDynamic("isExpression")(isExpression.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHidden)) __obj.updateDynamic("isHidden")(isHidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isIdentity)) __obj.updateDynamic("isIdentity")(isIdentity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isJson)) __obj.updateDynamic("isJson")(isJson.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isKey)) __obj.updateDynamic("isKey")(isKey.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLong)) __obj.updateDynamic("isLong")(isLong.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isReadOnly)) __obj.updateDynamic("isReadOnly")(isReadOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSqlVariant)) __obj.updateDynamic("isSqlVariant")(isSqlVariant.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isUdt)) __obj.updateDynamic("isUdt")(isUdt.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isXml)) __obj.updateDynamic("isXml")(isXml.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numericPrecision)) __obj.updateDynamic("numericPrecision")(numericPrecision.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numericScale)) __obj.updateDynamic("numericScale")(numericScale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDbColumn]
   }
 }

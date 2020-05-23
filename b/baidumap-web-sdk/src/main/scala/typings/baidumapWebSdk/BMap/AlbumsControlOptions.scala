@@ -14,14 +14,14 @@ trait AlbumsControlOptions extends js.Object {
 object AlbumsControlOptions {
   @scala.inline
   def apply(
-    anchor: Int | Double = null,
-    imageHeight: Int | Double = null,
+    anchor: js.UndefOr[ControlAnchor] = js.undefined,
+    imageHeight: js.UndefOr[Double] = js.undefined,
     maxWidth: Double | String = null,
     offset: Size = null
   ): AlbumsControlOptions = {
     val __obj = js.Dynamic.literal()
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (imageHeight != null) __obj.updateDynamic("imageHeight")(imageHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(anchor)) __obj.updateDynamic("anchor")(anchor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageHeight)) __obj.updateDynamic("imageHeight")(imageHeight.get.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlbumsControlOptions]

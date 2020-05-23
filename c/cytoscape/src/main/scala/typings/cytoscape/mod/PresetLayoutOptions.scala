@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.cytoscape.mod.LayoutOptions because Already inherited */ trait PresetLayoutOptions
   extends BaseLayoutOptions
      with AnimatedLayoutOptions {
@@ -28,27 +28,27 @@ object PresetLayoutOptions {
   def apply(
     name: preset,
     animate: js.UndefOr[Boolean] = js.undefined,
-    animationDuration: Int | Double = null,
+    animationDuration: js.UndefOr[Double] = js.undefined,
     animationEasing: js.UndefOr[Boolean] = js.undefined,
     fit: js.UndefOr[Boolean] = js.undefined,
-    padding: Int | Double = null,
-    pan: Int | Double = null,
+    padding: js.UndefOr[Double] = js.undefined,
+    pan: js.UndefOr[Double] = js.undefined,
     positions: NodePositionMap | NodePositionFunction = null,
     ready: /* e */ LayoutEventObject => Unit = null,
     stop: /* e */ LayoutEventObject => Unit = null,
-    zoom: Int | Double = null
+    zoom: js.UndefOr[Double] = js.undefined
   ): PresetLayoutOptions = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
-    if (!js.isUndefined(fit)) __obj.updateDynamic("fit")(fit.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (pan != null) __obj.updateDynamic("pan")(pan.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fit)) __obj.updateDynamic("fit")(fit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pan)) __obj.updateDynamic("pan")(pan.get.asInstanceOf[js.Any])
     if (positions != null) __obj.updateDynamic("positions")(positions.asInstanceOf[js.Any])
     if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
     if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction1(stop))
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PresetLayoutOptions]
   }
 }

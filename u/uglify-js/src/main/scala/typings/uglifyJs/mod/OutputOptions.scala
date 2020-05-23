@@ -35,7 +35,7 @@ object OutputOptions {
     beautify: js.UndefOr[Boolean] = js.undefined,
     braces: js.UndefOr[Boolean] = js.undefined,
     comments: Boolean | all | some | RegExp = null,
-    indent_level: Int | Double = null,
+    indent_level: js.UndefOr[Double] = js.undefined,
     indent_start: js.UndefOr[Boolean] = js.undefined,
     inline_script: js.UndefOr[Boolean] = js.undefined,
     keep_quoted_props: js.UndefOr[Boolean] = js.undefined,
@@ -47,28 +47,28 @@ object OutputOptions {
     semicolons: js.UndefOr[Boolean] = js.undefined,
     shebang: js.UndefOr[Boolean] = js.undefined,
     webkit: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null,
+    width: js.UndefOr[Double] = js.undefined,
     wrap_iife: js.UndefOr[Boolean] = js.undefined
   ): OutputOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ascii_only)) __obj.updateDynamic("ascii_only")(ascii_only.asInstanceOf[js.Any])
-    if (!js.isUndefined(beautify)) __obj.updateDynamic("beautify")(beautify.asInstanceOf[js.Any])
-    if (!js.isUndefined(braces)) __obj.updateDynamic("braces")(braces.asInstanceOf[js.Any])
+    if (!js.isUndefined(ascii_only)) __obj.updateDynamic("ascii_only")(ascii_only.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(beautify)) __obj.updateDynamic("beautify")(beautify.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(braces)) __obj.updateDynamic("braces")(braces.get.asInstanceOf[js.Any])
     if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
-    if (indent_level != null) __obj.updateDynamic("indent_level")(indent_level.asInstanceOf[js.Any])
-    if (!js.isUndefined(indent_start)) __obj.updateDynamic("indent_start")(indent_start.asInstanceOf[js.Any])
-    if (!js.isUndefined(inline_script)) __obj.updateDynamic("inline_script")(inline_script.asInstanceOf[js.Any])
-    if (!js.isUndefined(keep_quoted_props)) __obj.updateDynamic("keep_quoted_props")(keep_quoted_props.asInstanceOf[js.Any])
+    if (!js.isUndefined(indent_level)) __obj.updateDynamic("indent_level")(indent_level.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(indent_start)) __obj.updateDynamic("indent_start")(indent_start.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inline_script)) __obj.updateDynamic("inline_script")(inline_script.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keep_quoted_props)) __obj.updateDynamic("keep_quoted_props")(keep_quoted_props.get.asInstanceOf[js.Any])
     if (max_line_len != null) __obj.updateDynamic("max_line_len")(max_line_len.asInstanceOf[js.Any])
     if (preamble != null) __obj.updateDynamic("preamble")(preamble.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserve_line)) __obj.updateDynamic("preserve_line")(preserve_line.asInstanceOf[js.Any])
-    if (!js.isUndefined(quote_keys)) __obj.updateDynamic("quote_keys")(quote_keys.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserve_line)) __obj.updateDynamic("preserve_line")(preserve_line.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quote_keys)) __obj.updateDynamic("quote_keys")(quote_keys.get.asInstanceOf[js.Any])
     if (quote_style != null) __obj.updateDynamic("quote_style")(quote_style.asInstanceOf[js.Any])
-    if (!js.isUndefined(semicolons)) __obj.updateDynamic("semicolons")(semicolons.asInstanceOf[js.Any])
-    if (!js.isUndefined(shebang)) __obj.updateDynamic("shebang")(shebang.asInstanceOf[js.Any])
-    if (!js.isUndefined(webkit)) __obj.updateDynamic("webkit")(webkit.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrap_iife)) __obj.updateDynamic("wrap_iife")(wrap_iife.asInstanceOf[js.Any])
+    if (!js.isUndefined(semicolons)) __obj.updateDynamic("semicolons")(semicolons.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shebang)) __obj.updateDynamic("shebang")(shebang.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(webkit)) __obj.updateDynamic("webkit")(webkit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrap_iife)) __obj.updateDynamic("wrap_iife")(wrap_iife.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputOptions]
   }
 }

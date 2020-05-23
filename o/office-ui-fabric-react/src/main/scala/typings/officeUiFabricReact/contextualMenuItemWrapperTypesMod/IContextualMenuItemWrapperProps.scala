@@ -198,7 +198,7 @@ object IContextualMenuItemWrapperProps {
     onItemMouseMove: (/* item */ IContextualMenuItem, /* ev */ MouseEvent[HTMLElement, NativeMouseEvent], /* target */ HTMLElement) => Unit = null,
     onTap: /* ev */ TouchEvent[HTMLElement] | PointerEvent => Unit = null,
     openSubMenu: (/* item */ js.Any, /* target */ HTMLElement) => Unit = null,
-    ref: LegacyRef[IContextualMenuItem] = null
+    ref: js.UndefOr[Null | LegacyRef[IContextualMenuItem]] = js.undefined
   ): IContextualMenuItemWrapperProps = {
     val __obj = js.Dynamic.literal(classNames = classNames.asInstanceOf[js.Any], focusableElementIndex = focusableElementIndex.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], totalItemCount = totalItemCount.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
@@ -208,8 +208,8 @@ object IContextualMenuItemWrapperProps {
     if (executeItemClick != null) __obj.updateDynamic("executeItemClick")(js.Any.fromFunction2(executeItemClick))
     if (expandedMenuItemKey != null) __obj.updateDynamic("expandedMenuItemKey")(expandedMenuItemKey.asInstanceOf[js.Any])
     if (getSubMenuId != null) __obj.updateDynamic("getSubMenuId")(js.Any.fromFunction1(getSubMenuId))
-    if (!js.isUndefined(hasCheckmarks)) __obj.updateDynamic("hasCheckmarks")(hasCheckmarks.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasIcons)) __obj.updateDynamic("hasIcons")(hasIcons.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasCheckmarks)) __obj.updateDynamic("hasCheckmarks")(hasCheckmarks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasIcons)) __obj.updateDynamic("hasIcons")(hasIcons.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (onItemClick != null) __obj.updateDynamic("onItemClick")(js.Any.fromFunction2(onItemClick))
     if (onItemClickBase != null) __obj.updateDynamic("onItemClickBase")(js.Any.fromFunction3(onItemClickBase))
@@ -220,7 +220,7 @@ object IContextualMenuItemWrapperProps {
     if (onItemMouseMove != null) __obj.updateDynamic("onItemMouseMove")(js.Any.fromFunction3(onItemMouseMove))
     if (onTap != null) __obj.updateDynamic("onTap")(js.Any.fromFunction1(onTap))
     if (openSubMenu != null) __obj.updateDynamic("openSubMenu")(js.Any.fromFunction2(openSubMenu))
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContextualMenuItemWrapperProps]
   }
 }

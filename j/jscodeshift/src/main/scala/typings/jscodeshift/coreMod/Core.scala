@@ -1,6 +1,5 @@
 package typings.jscodeshift.coreMod
 
-import typings.jscodeshift.collectionMod.Collection
 import typings.jscodeshift.templateMod.Template
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,10 +20,10 @@ trait Core extends js.Object {
   /** template, bound to default parser */
   var template: Template = js.native
   var types: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof recast.default.types */ js.Any = js.native
-  def apply(source: ASTNode | ASTPath[ASTNode]): Collection[_] = js.native
-  def apply(source: String): Collection[_] = js.native
-  def apply(source: String, options: Options): Collection[_] = js.native
-  def apply(source: js.Array[ASTNode | ASTPath[ASTNode]]): Collection[_] = js.native
+  def apply(source: ASTNode | ASTPath[ASTNode]): typings.jscodeshift.collectionMod.Collection[_] = js.native
+  def apply(source: String): typings.jscodeshift.collectionMod.Collection[_] = js.native
+  def apply(source: String, options: Options): typings.jscodeshift.collectionMod.Collection[_] = js.native
+  def apply(source: js.Array[ASTNode | ASTPath[ASTNode]]): typings.jscodeshift.collectionMod.Collection[_] = js.native
   def `match`(path: ASTNode | ASTPath[ASTNode], filter: js.Function1[/* path */ ASTNode, Boolean]): Boolean = js.native
   def `match`(path: ASTNode | ASTPath[ASTNode], filter: ASTNode): Boolean = js.native
   def registerMethods(methods: js.Object): Unit = js.native

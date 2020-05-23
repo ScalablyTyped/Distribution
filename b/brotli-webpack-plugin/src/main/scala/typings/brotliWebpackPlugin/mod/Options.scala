@@ -39,16 +39,16 @@ object Options {
   def apply(
     asset: String = null,
     deleteOriginalAssets: js.UndefOr[Boolean] = js.undefined,
-    minRatio: Int | Double = null,
+    minRatio: js.UndefOr[Double] = js.undefined,
     test: RegExp = null,
-    threshold: Int | Double = null
+    threshold: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (asset != null) __obj.updateDynamic("asset")(asset.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleteOriginalAssets)) __obj.updateDynamic("deleteOriginalAssets")(deleteOriginalAssets.asInstanceOf[js.Any])
-    if (minRatio != null) __obj.updateDynamic("minRatio")(minRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleteOriginalAssets)) __obj.updateDynamic("deleteOriginalAssets")(deleteOriginalAssets.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minRatio)) __obj.updateDynamic("minRatio")(minRatio.get.asInstanceOf[js.Any])
     if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

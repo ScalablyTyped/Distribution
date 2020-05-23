@@ -13,10 +13,15 @@ trait DialogShowHideOptions extends js.Object {
 
 object DialogShowHideOptions {
   @scala.inline
-  def apply(effect: String, delay: Int | Double = null, duration: Int | Double = null, easing: String = null): DialogShowHideOptions = {
+  def apply(
+    effect: String,
+    delay: js.UndefOr[Double] = js.undefined,
+    duration: js.UndefOr[Double] = js.undefined,
+    easing: String = null
+  ): DialogShowHideOptions = {
     val __obj = js.Dynamic.literal(effect = effect.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogShowHideOptions]
   }

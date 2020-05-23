@@ -1,7 +1,7 @@
 package typings.ddTrace.mod.plugins
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ddTrace.Anon0
+import typings.ddTrace.anon.`0`
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ trait HttpClient extends Http_ {
   /**
     * Hooks to run before spans are finished.
     */
-  var hooks: js.UndefOr[Anon0] = js.undefined
+  var hooks: js.UndefOr[`0`] = js.undefined
   /**
     * Use the remote endpoint host as the service name instead of the default.
     *
@@ -28,7 +28,7 @@ object HttpClient {
     blacklist: String | RegExp | (js.Function1[/* url */ String, Boolean]) | (js.Array[String | RegExp | (js.Function1[/* url */ String, Boolean])]) = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     headers: js.Array[String] = null,
-    hooks: Anon0 = null,
+    hooks: `0` = null,
     service: String = null,
     splitByDomain: js.UndefOr[Boolean] = js.undefined,
     validateStatus: /* code */ Double => Boolean = null,
@@ -37,11 +37,11 @@ object HttpClient {
     val __obj = js.Dynamic.literal()
     if (analytics != null) __obj.updateDynamic("analytics")(analytics.asInstanceOf[js.Any])
     if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
     if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
-    if (!js.isUndefined(splitByDomain)) __obj.updateDynamic("splitByDomain")(splitByDomain.asInstanceOf[js.Any])
+    if (!js.isUndefined(splitByDomain)) __obj.updateDynamic("splitByDomain")(splitByDomain.get.asInstanceOf[js.Any])
     if (validateStatus != null) __obj.updateDynamic("validateStatus")(js.Any.fromFunction1(validateStatus))
     if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpClient]

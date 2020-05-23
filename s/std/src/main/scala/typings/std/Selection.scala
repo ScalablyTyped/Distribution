@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,8 +37,4 @@ trait Selection extends js.Object {
   def setPosition(node: Node): Unit = js.native
   def setPosition(node: Node, offset: Double): Unit = js.native
 }
-
-@JSGlobal("Selection")
-@js.native
-object Selection extends Instantiable0[Selection]
 

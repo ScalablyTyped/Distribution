@@ -1,13 +1,13 @@
 package typings.gapiClientClassroom.gapi.client.classroom
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientClassroom.AnonAccesstokenAlt
-import typings.gapiClientClassroom.AnonAlt
-import typings.gapiClientClassroom.AnonAltCallback
-import typings.gapiClientClassroom.AnonCourseWorkStates
-import typings.gapiClientClassroom.AnonFields
-import typings.gapiClientClassroom.AnonOauthtoken
-import typings.gapiClientClassroom.AnonXgafv
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientClassroom.anon.AccesstokenAlt
+import typings.gapiClientClassroom.anon.Alt
+import typings.gapiClientClassroom.anon.AltCallback
+import typings.gapiClientClassroom.anon.CourseWorkStates
+import typings.gapiClientClassroom.anon.Fields
+import typings.gapiClientClassroom.anon.Oauthtoken
+import typings.gapiClientClassroom.anon.Xgafv
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CourseWorkResource extends js.Object {
   var studentSubmissions: StudentSubmissionsResource = js.native
-  def create(request: AnonAlt, body: CourseWork): Request_[CourseWork] = js.native
+  def create(request: Alt, body: CourseWork): Request[CourseWork] = js.native
   /**
     * Creates course work.
     *
@@ -36,7 +36,7 @@ trait CourseWorkResource extends js.Object {
     * &#42; `FAILED_PRECONDITION` for the following request error:
     * &#42; AttachmentNotVisible
     */
-  def create(request: AnonXgafv): Request_[CourseWork] = js.native
+  def create(request: Xgafv): Request[CourseWork] = js.native
   /**
     * Deletes a course work.
     *
@@ -53,7 +53,8 @@ trait CourseWorkResource extends js.Object {
     * deleted.
     * &#42; `NOT_FOUND` if no course exists with the requested ID.
     */
-  def delete(request: AnonFields): Request_[js.Object] = js.native
+  def delete(): Request[js.Object] = js.native
+  def delete(request: Fields): Request[js.Object] = js.native
   /**
     * Returns course work.
     *
@@ -64,7 +65,8 @@ trait CourseWorkResource extends js.Object {
     * &#42; `INVALID_ARGUMENT` if the request is malformed.
     * &#42; `NOT_FOUND` if the requested course or course work does not exist.
     */
-  def get(request: AnonFields): Request_[CourseWork] = js.native
+  def get(): Request[CourseWork] = js.native
+  def get(request: Fields): Request[CourseWork] = js.native
   /**
     * Returns a list of course work that the requester is permitted to view.
     *
@@ -78,7 +80,8 @@ trait CourseWorkResource extends js.Object {
     * &#42; `INVALID_ARGUMENT` if the request is malformed.
     * &#42; `NOT_FOUND` if the requested course does not exist.
     */
-  def list(request: AnonCourseWorkStates): Request_[ListCourseWorkResponse] = js.native
+  def list(): Request[ListCourseWorkResponse] = js.native
+  def list(request: CourseWorkStates): Request[ListCourseWorkResponse] = js.native
   /**
     * Modifies assignee mode and options of a coursework.
     *
@@ -92,8 +95,8 @@ trait CourseWorkResource extends js.Object {
     * &#42; `INVALID_ARGUMENT` if the request is malformed.
     * &#42; `NOT_FOUND` if the requested course or course work does not exist.
     */
-  def modifyAssignees(request: AnonAccesstokenAlt): Request_[CourseWork] = js.native
-  def modifyAssignees(request: AnonFields, body: ModifyCourseWorkAssigneesRequest): Request_[CourseWork] = js.native
+  def modifyAssignees(request: AccesstokenAlt): Request[CourseWork] = js.native
+  def modifyAssignees(request: Fields, body: ModifyCourseWorkAssigneesRequest): Request[CourseWork] = js.native
   /**
     * Updates one or more fields of a course work.
     *
@@ -116,7 +119,7 @@ trait CourseWorkResource extends js.Object {
     * &#42; `NOT_FOUND` if the requested course, course work, or student submission
     * does not exist.
     */
-  def patch(request: AnonAltCallback): Request_[CourseWork] = js.native
-  def patch(request: AnonOauthtoken, body: CourseWork): Request_[CourseWork] = js.native
+  def patch(request: AltCallback): Request[CourseWork] = js.native
+  def patch(request: Oauthtoken, body: CourseWork): Request[CourseWork] = js.native
 }
 

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object stopRecord extends js.Object {
   /**
-  	 * 停止录音接口
-  	 */
+    * 停止录音接口
+    */
   def apply(params: IstopRecord): Unit = js.native
 }
 

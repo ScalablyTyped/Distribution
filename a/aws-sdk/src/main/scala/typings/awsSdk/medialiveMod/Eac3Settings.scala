@@ -92,19 +92,19 @@ object Eac3Settings {
   @scala.inline
   def apply(
     AttenuationControl: Eac3AttenuationControl = null,
-    Bitrate: Int | Double = null,
+    Bitrate: js.UndefOr[double] = js.undefined,
     BitstreamMode: Eac3BitstreamMode = null,
     CodingMode: Eac3CodingMode = null,
     DcFilter: Eac3DcFilter = null,
-    Dialnorm: Int | Double = null,
+    Dialnorm: js.UndefOr[integerMin1Max31] = js.undefined,
     DrcLine: Eac3DrcLine = null,
     DrcRf: Eac3DrcRf = null,
     LfeControl: Eac3LfeControl = null,
     LfeFilter: Eac3LfeFilter = null,
-    LoRoCenterMixLevel: Int | Double = null,
-    LoRoSurroundMixLevel: Int | Double = null,
-    LtRtCenterMixLevel: Int | Double = null,
-    LtRtSurroundMixLevel: Int | Double = null,
+    LoRoCenterMixLevel: js.UndefOr[double] = js.undefined,
+    LoRoSurroundMixLevel: js.UndefOr[double] = js.undefined,
+    LtRtCenterMixLevel: js.UndefOr[double] = js.undefined,
+    LtRtSurroundMixLevel: js.UndefOr[double] = js.undefined,
     MetadataControl: Eac3MetadataControl = null,
     PassthroughControl: Eac3PassthroughControl = null,
     PhaseControl: Eac3PhaseControl = null,
@@ -114,19 +114,19 @@ object Eac3Settings {
   ): Eac3Settings = {
     val __obj = js.Dynamic.literal()
     if (AttenuationControl != null) __obj.updateDynamic("AttenuationControl")(AttenuationControl.asInstanceOf[js.Any])
-    if (Bitrate != null) __obj.updateDynamic("Bitrate")(Bitrate.asInstanceOf[js.Any])
+    if (!js.isUndefined(Bitrate)) __obj.updateDynamic("Bitrate")(Bitrate.get.asInstanceOf[js.Any])
     if (BitstreamMode != null) __obj.updateDynamic("BitstreamMode")(BitstreamMode.asInstanceOf[js.Any])
     if (CodingMode != null) __obj.updateDynamic("CodingMode")(CodingMode.asInstanceOf[js.Any])
     if (DcFilter != null) __obj.updateDynamic("DcFilter")(DcFilter.asInstanceOf[js.Any])
-    if (Dialnorm != null) __obj.updateDynamic("Dialnorm")(Dialnorm.asInstanceOf[js.Any])
+    if (!js.isUndefined(Dialnorm)) __obj.updateDynamic("Dialnorm")(Dialnorm.get.asInstanceOf[js.Any])
     if (DrcLine != null) __obj.updateDynamic("DrcLine")(DrcLine.asInstanceOf[js.Any])
     if (DrcRf != null) __obj.updateDynamic("DrcRf")(DrcRf.asInstanceOf[js.Any])
     if (LfeControl != null) __obj.updateDynamic("LfeControl")(LfeControl.asInstanceOf[js.Any])
     if (LfeFilter != null) __obj.updateDynamic("LfeFilter")(LfeFilter.asInstanceOf[js.Any])
-    if (LoRoCenterMixLevel != null) __obj.updateDynamic("LoRoCenterMixLevel")(LoRoCenterMixLevel.asInstanceOf[js.Any])
-    if (LoRoSurroundMixLevel != null) __obj.updateDynamic("LoRoSurroundMixLevel")(LoRoSurroundMixLevel.asInstanceOf[js.Any])
-    if (LtRtCenterMixLevel != null) __obj.updateDynamic("LtRtCenterMixLevel")(LtRtCenterMixLevel.asInstanceOf[js.Any])
-    if (LtRtSurroundMixLevel != null) __obj.updateDynamic("LtRtSurroundMixLevel")(LtRtSurroundMixLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(LoRoCenterMixLevel)) __obj.updateDynamic("LoRoCenterMixLevel")(LoRoCenterMixLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(LoRoSurroundMixLevel)) __obj.updateDynamic("LoRoSurroundMixLevel")(LoRoSurroundMixLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(LtRtCenterMixLevel)) __obj.updateDynamic("LtRtCenterMixLevel")(LtRtCenterMixLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(LtRtSurroundMixLevel)) __obj.updateDynamic("LtRtSurroundMixLevel")(LtRtSurroundMixLevel.get.asInstanceOf[js.Any])
     if (MetadataControl != null) __obj.updateDynamic("MetadataControl")(MetadataControl.asInstanceOf[js.Any])
     if (PassthroughControl != null) __obj.updateDynamic("PassthroughControl")(PassthroughControl.asInstanceOf[js.Any])
     if (PhaseControl != null) __obj.updateDynamic("PhaseControl")(PhaseControl.asInstanceOf[js.Any])

@@ -20,7 +20,7 @@ object RuleTesterContext {
     only: js.UndefOr[Boolean] = js.undefined
   ): RuleTesterContext = {
     val __obj = js.Dynamic.literal(caseDescription = caseDescription.asInstanceOf[js.Any], comparisonCount = comparisonCount.asInstanceOf[js.Any], completeAssertionDescription = completeAssertionDescription.asInstanceOf[js.Any])
-    if (!js.isUndefined(only)) __obj.updateDynamic("only")(only.asInstanceOf[js.Any])
+    if (!js.isUndefined(only)) __obj.updateDynamic("only")(only.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleTesterContext]
   }
 }

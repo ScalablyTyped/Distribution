@@ -12,9 +12,9 @@ trait FillLayout
 
 object FillLayout {
   @scala.inline
-  def apply(`fill-sort-key`: Int | Double = null, visibility: Visibility = null): FillLayout = {
+  def apply(`fill-sort-key`: js.UndefOr[Double] = js.undefined, visibility: Visibility = null): FillLayout = {
     val __obj = js.Dynamic.literal()
-    if (`fill-sort-key` != null) __obj.updateDynamic("fill-sort-key")(`fill-sort-key`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`fill-sort-key`)) __obj.updateDynamic("fill-sort-key")(`fill-sort-key`.get.asInstanceOf[js.Any])
     if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[FillLayout]
   }

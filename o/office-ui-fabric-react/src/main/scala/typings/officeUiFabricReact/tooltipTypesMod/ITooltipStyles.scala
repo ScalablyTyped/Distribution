@@ -22,11 +22,15 @@ trait ITooltipStyles extends js.Object {
 
 object ITooltipStyles {
   @scala.inline
-  def apply(content: IStyle = null, root: IStyle = null, subText: IStyle = null): ITooltipStyles = {
+  def apply(
+    content: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined,
+    subText: js.UndefOr[Null | IStyle] = js.undefined
+  ): ITooltipStyles = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (subText != null) __obj.updateDynamic("subText")(subText.asInstanceOf[js.Any])
+    if (!js.isUndefined(content)) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(subText)) __obj.updateDynamic("subText")(subText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITooltipStyles]
   }
 }

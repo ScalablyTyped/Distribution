@@ -18,18 +18,18 @@ trait TrackSubtitleParams extends js.Object {
 object TrackSubtitleParams {
   @scala.inline
   def apply(
-    f_subtitle_length: Int | Double = null,
-    f_subtitle_length_max_deviation: Int | Double = null,
+    f_subtitle_length: js.UndefOr[Double] = js.undefined,
+    f_subtitle_length_max_deviation: js.UndefOr[Double] = js.undefined,
     subtitle_format: lrc | dfxp | stledu = null,
-    track_id: Int | Double = null,
-    track_mbid: Int | Double = null
+    track_id: js.UndefOr[Double] = js.undefined,
+    track_mbid: js.UndefOr[Double] = js.undefined
   ): TrackSubtitleParams = {
     val __obj = js.Dynamic.literal()
-    if (f_subtitle_length != null) __obj.updateDynamic("f_subtitle_length")(f_subtitle_length.asInstanceOf[js.Any])
-    if (f_subtitle_length_max_deviation != null) __obj.updateDynamic("f_subtitle_length_max_deviation")(f_subtitle_length_max_deviation.asInstanceOf[js.Any])
+    if (!js.isUndefined(f_subtitle_length)) __obj.updateDynamic("f_subtitle_length")(f_subtitle_length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(f_subtitle_length_max_deviation)) __obj.updateDynamic("f_subtitle_length_max_deviation")(f_subtitle_length_max_deviation.get.asInstanceOf[js.Any])
     if (subtitle_format != null) __obj.updateDynamic("subtitle_format")(subtitle_format.asInstanceOf[js.Any])
-    if (track_id != null) __obj.updateDynamic("track_id")(track_id.asInstanceOf[js.Any])
-    if (track_mbid != null) __obj.updateDynamic("track_mbid")(track_mbid.asInstanceOf[js.Any])
+    if (!js.isUndefined(track_id)) __obj.updateDynamic("track_id")(track_id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(track_mbid)) __obj.updateDynamic("track_mbid")(track_mbid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackSubtitleParams]
   }
 }

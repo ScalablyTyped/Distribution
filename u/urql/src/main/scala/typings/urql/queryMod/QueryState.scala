@@ -1,6 +1,6 @@
 package typings.urql.queryMod
 
-import typings.urql.PartialOperationContext
+import typings.urql.anon.PartialOperationContext
 import typings.urql.useQueryMod.UseQueryState
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,7 +1,7 @@
 package typings.wegameApi.wx.types
 
 import typings.std.ArrayBuffer
-import typings.wegameApi.AnonErrMsg
+import typings.wegameApi.anon.ErrMsg
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait WritefileParams extends js.Object {
   var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   var data: String | ArrayBuffer
   var encoding: js.UndefOr[FileContentEncoding] = js.undefined
-  var fail: js.UndefOr[js.Function1[/* res */ AnonErrMsg, Unit]] = js.undefined
+  var fail: js.UndefOr[js.Function1[/* res */ ErrMsg, Unit]] = js.undefined
   var filePath: String
   var success: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
@@ -22,7 +22,7 @@ object WritefileParams {
     filePath: String,
     complete: () => Unit = null,
     encoding: FileContentEncoding = null,
-    fail: /* res */ AnonErrMsg => Unit = null,
+    fail: /* res */ ErrMsg => Unit = null,
     success: () => Unit = null
   ): WritefileParams = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any])

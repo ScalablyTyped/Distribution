@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait IgTooltip
   extends /**
-	 * Option for igTooltip
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   var arrowLocation: js.UndefOr[String] = js.undefined
   var text: js.UndefOr[String] = js.undefined
@@ -17,10 +17,7 @@ trait IgTooltip
 object IgTooltip {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for igTooltip
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     arrowLocation: String = null,
     text: String = null
   ): IgTooltip = {

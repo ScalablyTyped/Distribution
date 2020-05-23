@@ -24,8 +24,8 @@ object DefinitionClientCapabilities {
     linkSupport: js.UndefOr[Boolean] = js.undefined
   ): DefinitionClientCapabilities = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration.asInstanceOf[js.Any])
-    if (!js.isUndefined(linkSupport)) __obj.updateDynamic("linkSupport")(linkSupport.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkSupport)) __obj.updateDynamic("linkSupport")(linkSupport.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefinitionClientCapabilities]
   }
 }

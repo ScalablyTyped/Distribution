@@ -1,13 +1,13 @@
 package typings.officeJs.Word
 
-import typings.officeJs.AnonExpand
-import typings.officeJs.AnonIgnorePunct
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.ClientResult
 import typings.officeJs.OfficeExtension.UpdateOptions
 import typings.officeJs.Word.Interfaces.TableRowData
 import typings.officeJs.Word.Interfaces.TableRowLoadOptions
 import typings.officeJs.Word.Interfaces.TableRowUpdateData
+import typings.officeJs.anon.Expand
+import typings.officeJs.anon.IgnorePunct
 import typings.officeJs.officeJsStrings.After
 import typings.officeJs.officeJsStrings.All
 import typings.officeJs.officeJsStrings.Before
@@ -38,9 +38,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: WordApi 1.3]
   */
-@JSGlobal("Word.TableRow")
 @js.native
-class TableRow () extends ClientObject {
+trait TableRow extends ClientObject {
   /**
     *
     * Gets the number of cells in the row. Read-only.
@@ -269,8 +268,8 @@ class TableRow () extends ClientObject {
   def load(): TableRow = js.native
   def load(option: String): TableRow = js.native
   def load(option: js.Array[String]): TableRow = js.native
-  def load(option: AnonExpand): TableRow = js.native
   def load(option: TableRowLoadOptions): TableRow = js.native
+  def load(option: Expand): TableRow = js.native
   /**
     *
     * Performs a search with the specified SearchOptions on the scope of the row. The search results are a collection of range objects.
@@ -281,8 +280,8 @@ class TableRow () extends ClientObject {
     * @param searchOptions Optional. Options for the search.
     */
   def search(searchText: String): RangeCollection = js.native
-  def search(searchText: String, searchOptions: AnonIgnorePunct): RangeCollection = js.native
   def search(searchText: String, searchOptions: SearchOptions): RangeCollection = js.native
+  def search(searchText: String, searchOptions: IgnorePunct): RangeCollection = js.native
   /**
     *
     * Selects the row and navigates the Word UI to it.

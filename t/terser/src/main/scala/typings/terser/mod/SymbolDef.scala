@@ -35,8 +35,7 @@ object SymbolDef {
     undeclared: Boolean,
     mangled_name: String = null
   ): SymbolDef = {
-    val __obj = js.Dynamic.literal(eliminated = eliminated.asInstanceOf[js.Any], export = export.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], orig = orig.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any], replaced = replaced.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], undeclared = undeclared.asInstanceOf[js.Any])
-    if (mangled_name != null) __obj.updateDynamic("mangled_name")(mangled_name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(eliminated = eliminated.asInstanceOf[js.Any], export = export.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], orig = orig.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any], replaced = replaced.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], undeclared = undeclared.asInstanceOf[js.Any], mangled_name = mangled_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SymbolDef]
   }
 }

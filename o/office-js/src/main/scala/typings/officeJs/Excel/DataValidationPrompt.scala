@@ -13,21 +13,21 @@ import scala.scalajs.js.annotation._
 trait DataValidationPrompt extends js.Object {
   /**
     *
-    * Represents the message of the prompt.
+    * Specifies the message of the prompt.
     *
     * [Api set: ExcelApi 1.8]
     */
   var message: String
   /**
     *
-    * Determines whether or not to show the prompt when user selects a cell with data validation.
+    * Specifies if a prompt is shown when a user selects a cell with data validation.
     *
     * [Api set: ExcelApi 1.8]
     */
   var showPrompt: Boolean
   /**
     *
-    * Represents the title for the prompt.
+    * Specifies the title for the prompt.
     *
     * [Api set: ExcelApi 1.8]
     */

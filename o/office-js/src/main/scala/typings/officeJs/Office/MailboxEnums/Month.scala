@@ -1,6 +1,5 @@
 package typings.officeJs.Office.MailboxEnums
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -91,44 +90,6 @@ object Month extends js.Object {
     */
   @js.native
   sealed trait Sep extends Month
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[Month with String] = js.native
-  /* "apr" */ @js.native
-  object Apr extends TopLevel[Apr with String]
-  
-  /* "aug" */ @js.native
-  object Aug extends TopLevel[Aug with String]
-  
-  /* "dec" */ @js.native
-  object Dec extends TopLevel[Dec with String]
-  
-  /* "feb" */ @js.native
-  object Feb extends TopLevel[Feb with String]
-  
-  /* "jan" */ @js.native
-  object Jan extends TopLevel[Jan with String]
-  
-  /* "jul" */ @js.native
-  object Jul extends TopLevel[Jul with String]
-  
-  /* "jun" */ @js.native
-  object Jun extends TopLevel[Jun with String]
-  
-  /* "mar" */ @js.native
-  object Mar extends TopLevel[Mar with String]
-  
-  /* "may" */ @js.native
-  object May extends TopLevel[May with String]
-  
-  /* "nov" */ @js.native
-  object Nov extends TopLevel[Nov with String]
-  
-  /* "oct" */ @js.native
-  object Oct extends TopLevel[Oct with String]
-  
-  /* "sep" */ @js.native
-  object Sep extends TopLevel[Sep with String]
   
 }
 

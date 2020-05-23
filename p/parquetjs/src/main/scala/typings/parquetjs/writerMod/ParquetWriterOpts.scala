@@ -21,27 +21,27 @@ object ParquetWriterOpts {
   @scala.inline
   def apply(
     autoClose: js.UndefOr[Boolean] = js.undefined,
-    bitWidth: Int | Double = null,
+    bitWidth: js.UndefOr[Double] = js.undefined,
     disableEnvelope: js.UndefOr[Boolean] = js.undefined,
     encoding: String = null,
-    fd: Int | Double = null,
+    fd: js.UndefOr[Double] = js.undefined,
     flags: String = null,
-    mode: Int | Double = null,
-    rowGroupSize: Int | Double = null,
-    start: Int | Double = null,
+    mode: js.UndefOr[Double] = js.undefined,
+    rowGroupSize: js.UndefOr[Double] = js.undefined,
+    start: js.UndefOr[Double] = js.undefined,
     useDataPageV2: js.UndefOr[Boolean] = js.undefined
   ): ParquetWriterOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose.asInstanceOf[js.Any])
-    if (bitWidth != null) __obj.updateDynamic("bitWidth")(bitWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableEnvelope)) __obj.updateDynamic("disableEnvelope")(disableEnvelope.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bitWidth)) __obj.updateDynamic("bitWidth")(bitWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableEnvelope)) __obj.updateDynamic("disableEnvelope")(disableEnvelope.get.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (fd != null) __obj.updateDynamic("fd")(fd.asInstanceOf[js.Any])
+    if (!js.isUndefined(fd)) __obj.updateDynamic("fd")(fd.get.asInstanceOf[js.Any])
     if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (rowGroupSize != null) __obj.updateDynamic("rowGroupSize")(rowGroupSize.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (!js.isUndefined(useDataPageV2)) __obj.updateDynamic("useDataPageV2")(useDataPageV2.asInstanceOf[js.Any])
+    if (!js.isUndefined(mode)) __obj.updateDynamic("mode")(mode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowGroupSize)) __obj.updateDynamic("rowGroupSize")(rowGroupSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useDataPageV2)) __obj.updateDynamic("useDataPageV2")(useDataPageV2.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParquetWriterOpts]
   }
 }

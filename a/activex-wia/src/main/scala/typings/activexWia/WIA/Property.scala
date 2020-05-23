@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation._
   * The Property object is a container for a property associated with a Device, DeviceInfo, Filter, ImageFile or Item object. See the Properties property
   * on any of these objects for details on accessing Property objects.
   */
-@JSGlobal("WIA.Property")
 @js.native
-class Property protected () extends js.Object {
+trait Property extends js.Object {
   /** Indicates whether the Property Value is read only */
   val IsReadOnly: Boolean = js.native
   /** Indicates whether the Property Value is a vector */

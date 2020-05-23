@@ -1,5 +1,6 @@
 package typings.pTry
 
+import typings.pTry.anon.Call
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +15,7 @@ object mod extends js.Object {
   // ): Promise<ValueType>;
   // export = pTry;
   @JSName("default")
-  var default_Original: AnonCall = js.native
+  var default_Original: Call = js.native
   /**
   	Start a promise chain.
   	@param fn - The function to run to start the promise chain.

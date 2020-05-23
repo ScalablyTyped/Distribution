@@ -8,15 +8,15 @@ trait FindObjectResponse[TObject] extends js.Object {
   /**
     * The found object.
     */
-  val `object`: TObject with ObjectWithObjectID
+  var `object`: TObject with ObjectWithObjectID
   /**
     * The page where the object was found.
     */
-  val page: Double
+  var page: Double
   /**
     * The position where the object was found.
     */
-  val position: Double
+  var position: Double
 }
 
 object FindObjectResponse {

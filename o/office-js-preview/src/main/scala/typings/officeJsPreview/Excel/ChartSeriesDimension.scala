@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,20 +44,6 @@ object ChartSeriesDimension extends js.Object {
     */
   @js.native
   sealed trait yvalues extends ChartSeriesDimension
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartSeriesDimension with String] = js.native
-  /* "Categories" */ @js.native
-  object categories extends TopLevel[categories with String]
-  
-  /* "Values" */ @js.native
-  object values extends TopLevel[values with String]
-  
-  /* "XValues" */ @js.native
-  object xvalues extends TopLevel[xvalues with String]
-  
-  /* "YValues" */ @js.native
-  object yvalues extends TopLevel[yvalues with String]
   
 }
 

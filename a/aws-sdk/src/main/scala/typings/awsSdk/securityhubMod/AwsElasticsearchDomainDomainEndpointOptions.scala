@@ -18,9 +18,9 @@ trait AwsElasticsearchDomainDomainEndpointOptions extends js.Object {
 
 object AwsElasticsearchDomainDomainEndpointOptions {
   @scala.inline
-  def apply(EnforceHTTPS: js.UndefOr[scala.Boolean] = js.undefined, TLSSecurityPolicy: NonEmptyString = null): AwsElasticsearchDomainDomainEndpointOptions = {
+  def apply(EnforceHTTPS: js.UndefOr[Boolean] = js.undefined, TLSSecurityPolicy: NonEmptyString = null): AwsElasticsearchDomainDomainEndpointOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(EnforceHTTPS)) __obj.updateDynamic("EnforceHTTPS")(EnforceHTTPS.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnforceHTTPS)) __obj.updateDynamic("EnforceHTTPS")(EnforceHTTPS.get.asInstanceOf[js.Any])
     if (TLSSecurityPolicy != null) __obj.updateDynamic("TLSSecurityPolicy")(TLSSecurityPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsElasticsearchDomainDomainEndpointOptions]
   }

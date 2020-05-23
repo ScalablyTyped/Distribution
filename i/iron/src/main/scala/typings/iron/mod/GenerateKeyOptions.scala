@@ -25,12 +25,12 @@ object GenerateKeyOptions {
     minPasswordlength: Double,
     iv: String = null,
     salt: String = null,
-    saltBits: Int | Double = null
+    saltBits: js.UndefOr[Double] = js.undefined
   ): GenerateKeyOptions = {
     val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], iterations = iterations.asInstanceOf[js.Any], minPasswordlength = minPasswordlength.asInstanceOf[js.Any])
     if (iv != null) __obj.updateDynamic("iv")(iv.asInstanceOf[js.Any])
     if (salt != null) __obj.updateDynamic("salt")(salt.asInstanceOf[js.Any])
-    if (saltBits != null) __obj.updateDynamic("saltBits")(saltBits.asInstanceOf[js.Any])
+    if (!js.isUndefined(saltBits)) __obj.updateDynamic("saltBits")(saltBits.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateKeyOptions]
   }
 }

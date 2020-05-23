@@ -46,10 +46,10 @@ object PlusBluetoothBluetoothcharacteristicProperties {
     write: js.UndefOr[Boolean] = js.undefined
   ): PlusBluetoothBluetoothcharacteristicProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(indicate)) __obj.updateDynamic("indicate")(indicate.asInstanceOf[js.Any])
-    if (!js.isUndefined(notify)) __obj.updateDynamic("notify")(notify.asInstanceOf[js.Any])
-    if (!js.isUndefined(read)) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
-    if (!js.isUndefined(write)) __obj.updateDynamic("write")(write.asInstanceOf[js.Any])
+    if (!js.isUndefined(indicate)) __obj.updateDynamic("indicate")(indicate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(notify)) __obj.updateDynamic("notify")(notify.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(read)) __obj.updateDynamic("read")(read.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(write)) __obj.updateDynamic("write")(write.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusBluetoothBluetoothcharacteristicProperties]
   }
 }

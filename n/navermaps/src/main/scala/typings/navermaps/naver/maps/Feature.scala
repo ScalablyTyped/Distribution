@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("naver.maps.Feature")
 @js.native
-class Feature protected () extends KVO {
-  def this(rawFeature: js.Any) = this()
+trait Feature extends KVO {
   def forEachOverlay(callback: forEachOverlayCallback): Unit = js.native
   def getBounds(): Bounds = js.native
   def getGeometries(): js.Array[Geometry] = js.native

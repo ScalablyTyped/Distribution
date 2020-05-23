@@ -1,7 +1,7 @@
 package typings.wordpressApiFetch.mod.Schema
 
 import typings.std.Record
-import typings.wordpressApiFetch.AnonDictk
+import typings.wordpressApiFetch.anon.Dictk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 // prettier-ignore
 /* Rewritten from type alias, can be one of: 
   - typings.wordpressApiFetch.mod.Schema.BaseTag
-  - typings.wordpressApiFetch.PickBaseTagTag
+  - typings.wordpressApiFetch.anon.PickBaseTagTag
 */
 trait Tag[T /* <: Context */] extends js.Object
 
 object Tag {
   @scala.inline
-  def BaseTag[T /* <: Context */](
-    _links: Record[String, js.Array[AnonDictk]],
+  def BaseTag[T](
+    _links: Record[String, js.Array[Dictk]],
     count: Double,
     description: String,
     id: Double,
@@ -32,8 +32,8 @@ object Tag {
     __obj.asInstanceOf[Tag[T]]
   }
   @scala.inline
-  def PickBaseTagTag[T /* <: Context */](
-    _links: Record[String, js.Array[AnonDictk]],
+  def PickBaseTagTag[T](
+    _links: Record[String, js.Array[Dictk]],
     id: Double,
     link: String,
     name: String,

@@ -7,22 +7,19 @@ import scala.scalajs.js.annotation._
 
 trait IgPivotViewDataSourceOptionsFlatDataOptionsMetadata
   extends /**
-	 * Option for IgPivotViewDataSourceOptionsFlatDataOptionsMetadata
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   /**
-  	 * Optional="false" Metadata used for the creation of the cube.
-  	 */
+    * Optional="false" Metadata used for the creation of the cube.
+    */
   var cube: js.UndefOr[IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCube] = js.undefined
 }
 
 object IgPivotViewDataSourceOptionsFlatDataOptionsMetadata {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for IgPivotViewDataSourceOptionsFlatDataOptionsMetadata
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     cube: IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCube = null
   ): IgPivotViewDataSourceOptionsFlatDataOptionsMetadata = {
     val __obj = js.Dynamic.literal()

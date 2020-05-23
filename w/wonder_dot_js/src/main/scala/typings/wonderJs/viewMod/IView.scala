@@ -1,7 +1,7 @@
 package typings.wonderJs.viewMod
 
 import typings.std.WebGLRenderingContext
-import typings.wonderJs.AnonY
+import typings.wonderJs.anon.Y
 import typings.wonderJs.mainDataMod.ContextConfigData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait IView extends js.Object {
   var dom: js.Any
   var height: Double
-  var offset: AnonY
+  var offset: Y
   var styleHeight: String
   var styleWidth: String
   var width: Double
@@ -27,7 +27,7 @@ object IView {
     getContext: ContextConfigData => WebGLRenderingContext,
     height: Double,
     initCanvas: () => Unit,
-    offset: AnonY,
+    offset: Y,
     styleHeight: String,
     styleWidth: String,
     width: Double,

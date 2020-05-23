@@ -1,14 +1,12 @@
 package typings.p2.mod
 
-import typings.p2.AnonBody
-import typings.p2.AnonBodyA
-import typings.p2.AnonBodyB
-import typings.p2.AnonContactEquations
-import typings.p2.AnonPairs
-import typings.p2.AnonRelaxation
-import typings.p2.AnonShapeA
-import typings.p2.AnonSpring
-import typings.p2.AnonType
+import typings.p2.anon.BodyA
+import typings.p2.anon.BodyB
+import typings.p2.anon.ContactEquations
+import typings.p2.anon.Pairs
+import typings.p2.anon.Relaxation
+import typings.p2.anon.ShapeA
+import typings.p2.anon.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,12 +17,12 @@ import scala.scalajs.js.annotation._
 class World () extends EventEmitter {
   def this(options: WorldOptions) = this()
   var accumulator: Double = js.native
-  var addBodyEvent: AnonBody = js.native
-  var addSpringEvent: AnonSpring = js.native
+  var addBodyEvent: typings.p2.anon.Body = js.native
+  var addSpringEvent: typings.p2.anon.Spring = js.native
   var applyDamping: Boolean = js.native
   var applyGravity: Boolean = js.native
   var applySpringForces: Boolean = js.native
-  var beginContactEvent: AnonBodyB = js.native
+  var beginContactEvent: BodyB = js.native
   var bodies: js.Array[Body] = js.native
   var broadphase: Broadphase = js.native
   var constraints: js.Array[Constraint] = js.native
@@ -33,19 +31,19 @@ class World () extends EventEmitter {
   var defaultMaterial: Material = js.native
   var doProfiling: Boolean = js.native
   var emitImpactEvent: Boolean = js.native
-  var endContactEvent: AnonShapeA = js.native
+  var endContactEvent: ShapeA = js.native
   var frictionGravity: Double = js.native
   var gravity: js.Tuple2[Double, Double] = js.native
-  var impactEvent: AnonBodyA = js.native
+  var impactEvent: BodyA = js.native
   var islandManager: IslandManager = js.native
   var islandSplit: Boolean = js.native
   var lastStepTime: Double = js.native
   var lastTimeStep: Double = js.native
   var narrowphase: Narrowphase = js.native
-  var postBroadphaseEvent: AnonPairs = js.native
-  var postStepEvent: AnonType = js.native
-  var preSolveEvent: AnonContactEquations = js.native
-  var removeBodyEvent: AnonBody = js.native
+  var postBroadphaseEvent: Pairs = js.native
+  var postStepEvent: Type = js.native
+  var preSolveEvent: ContactEquations = js.native
+  var removeBodyEvent: typings.p2.anon.Body = js.native
   var sleepMode: Double = js.native
   var solveConstraints: Boolean = js.native
   var solver: Solver = js.native
@@ -71,7 +69,7 @@ class World () extends EventEmitter {
   def removeConstraint(constraint: Constraint): Unit = js.native
   def removeContactMaterial(cm: ContactMaterial): Unit = js.native
   def removeSpring(spring: Spring): Unit = js.native
-  def setGlobalEquationParameters(parameters: AnonRelaxation): Unit = js.native
+  def setGlobalEquationParameters(parameters: Relaxation): Unit = js.native
   def setGlobalRelaxation(relaxation: Double): Unit = js.native
   def setGlobalStiffness(stiffness: Double): Unit = js.native
   def step(dt: Double): Unit = js.native

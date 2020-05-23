@@ -16,9 +16,9 @@ trait AtPixelOptions extends js.Object {
 
 object AtPixelOptions {
   @scala.inline
-  def apply(hitTolerance: Int | Double = null, layerFilter: /* layer */ Layer => Boolean = null): AtPixelOptions = {
+  def apply(hitTolerance: js.UndefOr[Double] = js.undefined, layerFilter: /* layer */ Layer => Boolean = null): AtPixelOptions = {
     val __obj = js.Dynamic.literal()
-    if (hitTolerance != null) __obj.updateDynamic("hitTolerance")(hitTolerance.asInstanceOf[js.Any])
+    if (!js.isUndefined(hitTolerance)) __obj.updateDynamic("hitTolerance")(hitTolerance.get.asInstanceOf[js.Any])
     if (layerFilter != null) __obj.updateDynamic("layerFilter")(js.Any.fromFunction1(layerFilter))
     __obj.asInstanceOf[AtPixelOptions]
   }

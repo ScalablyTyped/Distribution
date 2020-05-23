@@ -4,14 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.ViewManagement.AccessibilitySettings")
-@js.native
-class AccessibilitySettings () extends IAccessibilitySettings {
-  /* CompleteClass */
-  override var highContrast: Boolean = js.native
-  /* CompleteClass */
-  override var highContrastScheme: String = js.native
-  /* CompleteClass */
-  override var onhighcontrastchanged: js.Any = js.native
+trait AccessibilitySettings extends IAccessibilitySettings
+
+object AccessibilitySettings {
+  @scala.inline
+  def apply(highContrast: Boolean, highContrastScheme: String, onhighcontrastchanged: js.Any): AccessibilitySettings = {
+    val __obj = js.Dynamic.literal(highContrast = highContrast.asInstanceOf[js.Any], highContrastScheme = highContrastScheme.asInstanceOf[js.Any], onhighcontrastchanged = onhighcontrastchanged.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AccessibilitySettings]
+  }
 }
 

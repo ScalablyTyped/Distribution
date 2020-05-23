@@ -33,7 +33,7 @@ object Options {
   def apply(
     freq: Frequency,
     interval: Double,
-    byeaster: Int | Double = null,
+    byeaster: Double = null.asInstanceOf[Double],
     byhour: Double | js.Array[Double] = null,
     byminute: Double | js.Array[Double] = null,
     bymonth: Double | js.Array[Double] = null,
@@ -45,30 +45,13 @@ object Options {
     byweekday: ByWeekday | js.Array[ByWeekday] = null,
     byweekno: Double | js.Array[Double] = null,
     byyearday: Double | js.Array[Double] = null,
-    count: Int | Double = null,
+    count: Double = null.asInstanceOf[Double],
     dtstart: Date = null,
     tzid: String = null,
     until: Date = null,
     wkst: Weekday | Double = null
   ): Options = {
-    val __obj = js.Dynamic.literal(freq = freq.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any])
-    if (byeaster != null) __obj.updateDynamic("byeaster")(byeaster.asInstanceOf[js.Any])
-    if (byhour != null) __obj.updateDynamic("byhour")(byhour.asInstanceOf[js.Any])
-    if (byminute != null) __obj.updateDynamic("byminute")(byminute.asInstanceOf[js.Any])
-    if (bymonth != null) __obj.updateDynamic("bymonth")(bymonth.asInstanceOf[js.Any])
-    if (bymonthday != null) __obj.updateDynamic("bymonthday")(bymonthday.asInstanceOf[js.Any])
-    if (bynmonthday != null) __obj.updateDynamic("bynmonthday")(bynmonthday.asInstanceOf[js.Any])
-    if (bynweekday != null) __obj.updateDynamic("bynweekday")(bynweekday.asInstanceOf[js.Any])
-    if (bysecond != null) __obj.updateDynamic("bysecond")(bysecond.asInstanceOf[js.Any])
-    if (bysetpos != null) __obj.updateDynamic("bysetpos")(bysetpos.asInstanceOf[js.Any])
-    if (byweekday != null) __obj.updateDynamic("byweekday")(byweekday.asInstanceOf[js.Any])
-    if (byweekno != null) __obj.updateDynamic("byweekno")(byweekno.asInstanceOf[js.Any])
-    if (byyearday != null) __obj.updateDynamic("byyearday")(byyearday.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (dtstart != null) __obj.updateDynamic("dtstart")(dtstart.asInstanceOf[js.Any])
-    if (tzid != null) __obj.updateDynamic("tzid")(tzid.asInstanceOf[js.Any])
-    if (until != null) __obj.updateDynamic("until")(until.asInstanceOf[js.Any])
-    if (wkst != null) __obj.updateDynamic("wkst")(wkst.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(freq = freq.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], byeaster = byeaster.asInstanceOf[js.Any], byhour = byhour.asInstanceOf[js.Any], byminute = byminute.asInstanceOf[js.Any], bymonth = bymonth.asInstanceOf[js.Any], bymonthday = bymonthday.asInstanceOf[js.Any], bynmonthday = bynmonthday.asInstanceOf[js.Any], bynweekday = bynweekday.asInstanceOf[js.Any], bysecond = bysecond.asInstanceOf[js.Any], bysetpos = bysetpos.asInstanceOf[js.Any], byweekday = byweekday.asInstanceOf[js.Any], byweekno = byweekno.asInstanceOf[js.Any], byyearday = byyearday.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], dtstart = dtstart.asInstanceOf[js.Any], tzid = tzid.asInstanceOf[js.Any], until = until.asInstanceOf[js.Any], wkst = wkst.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

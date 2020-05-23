@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
   */
 trait LocationCoordinatesFloor extends js.Object {
   /**
-  	 * The logical floor of the building.
-  	 */
+    * The logical floor of the building.
+    */
   var level: js.UndefOr[Double] = js.undefined
 }
 
 object LocationCoordinatesFloor {
   @scala.inline
-  def apply(level: Int | Double = null): LocationCoordinatesFloor = {
+  def apply(level: js.UndefOr[Double] = js.undefined): LocationCoordinatesFloor = {
     val __obj = js.Dynamic.literal()
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationCoordinatesFloor]
   }
 }

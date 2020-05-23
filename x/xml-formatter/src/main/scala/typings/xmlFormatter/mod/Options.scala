@@ -20,10 +20,10 @@ object Options {
     stripComments: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collapseContent)) __obj.updateDynamic("collapseContent")(collapseContent.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapseContent)) __obj.updateDynamic("collapseContent")(collapseContent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (indentation != null) __obj.updateDynamic("indentation")(indentation.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripComments)) __obj.updateDynamic("stripComments")(stripComments.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripComments)) __obj.updateDynamic("stripComments")(stripComments.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

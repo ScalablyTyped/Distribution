@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("rxjs/internal/testing/ColdObservable", JSImport.Namespace)
 @js.native
 object coldObservableMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.rxjs.subscriptionLoggableMod.SubscriptionLoggable because Inheritance from two classes. Inlined subscriptions, scheduler, logSubscribedFrame, logUnsubscribedFrame */ @js.native
   class ColdObservable[T] protected () extends Observable[T] {
     def this(messages: js.Array[TestMessage], scheduler: Scheduler) = this()

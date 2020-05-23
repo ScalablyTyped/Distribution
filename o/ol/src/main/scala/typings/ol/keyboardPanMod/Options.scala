@@ -13,11 +13,15 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(condition: Condition = null, duration: Int | Double = null, pixelDelta: Int | Double = null): Options = {
+  def apply(
+    condition: Condition = null,
+    duration: js.UndefOr[Double] = js.undefined,
+    pixelDelta: js.UndefOr[Double] = js.undefined
+  ): Options = {
     val __obj = js.Dynamic.literal()
     if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (pixelDelta != null) __obj.updateDynamic("pixelDelta")(pixelDelta.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pixelDelta)) __obj.updateDynamic("pixelDelta")(pixelDelta.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

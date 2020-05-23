@@ -3,7 +3,7 @@ package typings.long.mod
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
-import typings.long.AnonHigh
+import typings.long.anon.High
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -89,7 +89,7 @@ Instantiable1[/* low */ Double, Long]
   def fromString(str: String, unsigned: Double, radix: Double): Long = js.native
   def fromValue(`val`: String): Long = js.native
   def fromValue(`val`: Double): Long = js.native
-  def fromValue(`val`: AnonHigh): Long = js.native
+  def fromValue(`val`: High): Long = js.native
   /**
     * Converts the specified value to a Long.
     */

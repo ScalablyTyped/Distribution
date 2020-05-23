@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,8 +52,4 @@ trait SVGElement
     options: EventListenerOptions
   ): Unit = js.native
 }
-
-@JSGlobal("SVGElement")
-@js.native
-object SVGElement extends Instantiable0[SVGElement]
 

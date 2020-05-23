@@ -1,5 +1,6 @@
 package typings.firebaseFirestore
 
+import typings.firebaseFirestore.anon.ChangedDocs
 import typings.firebaseFirestore.collectionsMod.DocumentKeySet_
 import typings.firebaseFirestore.collectionsMod.DocumentSizeEntries
 import typings.firebaseFirestore.collectionsMod.DocumentSizeEntry
@@ -10,11 +11,12 @@ import typings.firebaseFirestore.localSerializerMod.LocalSerializer
 import typings.firebaseFirestore.persistenceMod.PersistenceTransaction
 import typings.firebaseFirestore.persistencePromiseMod.PersistencePromise
 import typings.firebaseFirestore.remoteDocumentCacheMod.RemoteDocumentCache
+import typings.firebaseFirestore.snapshotVersionMod.SnapshotVersion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/indexeddb_remote_document_cache", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_remote_document_cache", JSImport.Namespace)
 @js.native
 object indexeddbRemoteDocumentCacheMod extends js.Object {
   @js.native
@@ -55,6 +57,16 @@ object indexeddbRemoteDocumentCacheMod extends js.Object {
       * cache's metadata.
       */
     var updateMetadata: js.Any = js.native
+    /**
+      * Returns the read time of the most recently read document in the cache, or
+      * SnapshotVersion.min() if not available.
+      */
+    def getLastReadTime(transaction: PersistenceTransaction): PersistencePromise[SnapshotVersion] = js.native
+    /**
+      * Returns the set of documents that have changed since the specified read
+      * time.
+      */
+    def getNewDocumentChanges(transaction: PersistenceTransaction, sinceReadTime: SnapshotVersion): PersistencePromise[ChangedDocs] = js.native
     /**
       * Looks up several entries in the cache.
       *

@@ -1,6 +1,6 @@
 package typings.marko.expressMod
 
-import typings.express.Typeofm
+import typings.express.anon.Typeofm
 import typings.expressServeStaticCore.mod.Handler
 import typings.serveStatic.mod.ServeStaticOptions
 import scala.scalajs.js

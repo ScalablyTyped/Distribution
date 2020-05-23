@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Usb
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object UsbTransferDirection extends js.Object {
   /** Indicates an OUT transfer from the host to the device. */
   @js.native
   sealed trait out extends UsbTransferDirection
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UsbTransferDirection with Double] = js.native
-  /* 1 */ @js.native
-  object in extends TopLevel[in with Double]
-  
-  /* 0 */ @js.native
-  object out extends TopLevel[out with Double]
   
 }
 

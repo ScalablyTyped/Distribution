@@ -43,7 +43,7 @@ trait JobRun extends js.Object {
     */
   var JobName: js.UndefOr[NameString] = js.native
   /**
-    * The current state of the job run.
+    * The current state of the job run. For more information about the statuses of jobs that have terminated abnormally, see AWS Glue Job Run Statuses.
     */
   var JobRunState: js.UndefOr[typings.awsSdk.glueMod.JobRunState] = js.native
   /**
@@ -99,50 +99,50 @@ trait JobRun extends js.Object {
 object JobRun {
   @scala.inline
   def apply(
-    AllocatedCapacity: Int | Double = null,
+    AllocatedCapacity: js.UndefOr[IntegerValue] = js.undefined,
     Arguments: GenericMap = null,
-    Attempt: Int | Double = null,
+    Attempt: js.UndefOr[AttemptCount] = js.undefined,
     CompletedOn: TimestampValue = null,
     ErrorMessage: ErrorString = null,
-    ExecutionTime: Int | Double = null,
+    ExecutionTime: js.UndefOr[ExecutionTime] = js.undefined,
     GlueVersion: GlueVersionString = null,
     Id: IdString = null,
     JobName: NameString = null,
     JobRunState: JobRunState = null,
     LastModifiedOn: TimestampValue = null,
     LogGroupName: GenericString = null,
-    MaxCapacity: Int | Double = null,
+    MaxCapacity: js.UndefOr[NullableDouble] = js.undefined,
     NotificationProperty: NotificationProperty = null,
-    NumberOfWorkers: Int | Double = null,
+    NumberOfWorkers: js.UndefOr[NullableInteger] = js.undefined,
     PredecessorRuns: PredecessorList = null,
     PreviousRunId: IdString = null,
     SecurityConfiguration: NameString = null,
     StartedOn: TimestampValue = null,
-    Timeout: Int | Double = null,
+    Timeout: js.UndefOr[Timeout] = js.undefined,
     TriggerName: NameString = null,
     WorkerType: WorkerType = null
   ): JobRun = {
     val __obj = js.Dynamic.literal()
-    if (AllocatedCapacity != null) __obj.updateDynamic("AllocatedCapacity")(AllocatedCapacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllocatedCapacity)) __obj.updateDynamic("AllocatedCapacity")(AllocatedCapacity.get.asInstanceOf[js.Any])
     if (Arguments != null) __obj.updateDynamic("Arguments")(Arguments.asInstanceOf[js.Any])
-    if (Attempt != null) __obj.updateDynamic("Attempt")(Attempt.asInstanceOf[js.Any])
+    if (!js.isUndefined(Attempt)) __obj.updateDynamic("Attempt")(Attempt.get.asInstanceOf[js.Any])
     if (CompletedOn != null) __obj.updateDynamic("CompletedOn")(CompletedOn.asInstanceOf[js.Any])
     if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage.asInstanceOf[js.Any])
-    if (ExecutionTime != null) __obj.updateDynamic("ExecutionTime")(ExecutionTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(ExecutionTime)) __obj.updateDynamic("ExecutionTime")(ExecutionTime.get.asInstanceOf[js.Any])
     if (GlueVersion != null) __obj.updateDynamic("GlueVersion")(GlueVersion.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     if (JobName != null) __obj.updateDynamic("JobName")(JobName.asInstanceOf[js.Any])
     if (JobRunState != null) __obj.updateDynamic("JobRunState")(JobRunState.asInstanceOf[js.Any])
     if (LastModifiedOn != null) __obj.updateDynamic("LastModifiedOn")(LastModifiedOn.asInstanceOf[js.Any])
     if (LogGroupName != null) __obj.updateDynamic("LogGroupName")(LogGroupName.asInstanceOf[js.Any])
-    if (MaxCapacity != null) __obj.updateDynamic("MaxCapacity")(MaxCapacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxCapacity)) __obj.updateDynamic("MaxCapacity")(MaxCapacity.get.asInstanceOf[js.Any])
     if (NotificationProperty != null) __obj.updateDynamic("NotificationProperty")(NotificationProperty.asInstanceOf[js.Any])
-    if (NumberOfWorkers != null) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfWorkers)) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers.get.asInstanceOf[js.Any])
     if (PredecessorRuns != null) __obj.updateDynamic("PredecessorRuns")(PredecessorRuns.asInstanceOf[js.Any])
     if (PreviousRunId != null) __obj.updateDynamic("PreviousRunId")(PreviousRunId.asInstanceOf[js.Any])
     if (SecurityConfiguration != null) __obj.updateDynamic("SecurityConfiguration")(SecurityConfiguration.asInstanceOf[js.Any])
     if (StartedOn != null) __obj.updateDynamic("StartedOn")(StartedOn.asInstanceOf[js.Any])
-    if (Timeout != null) __obj.updateDynamic("Timeout")(Timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(Timeout)) __obj.updateDynamic("Timeout")(Timeout.get.asInstanceOf[js.Any])
     if (TriggerName != null) __obj.updateDynamic("TriggerName")(TriggerName.asInstanceOf[js.Any])
     if (WorkerType != null) __obj.updateDynamic("WorkerType")(WorkerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobRun]

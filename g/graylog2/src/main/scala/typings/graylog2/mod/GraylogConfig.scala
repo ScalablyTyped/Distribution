@@ -1,6 +1,6 @@
 package typings.graylog2.mod
 
-import typings.graylog2.Readonlyhoststringportnum
+import typings.graylog2.anon.Readonlyhoststringportnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,13 +40,13 @@ object GraylogConfig {
   @scala.inline
   def apply(
     servers: js.Array[Readonlyhoststringportnum],
-    bufferSize: Int | Double = null,
+    bufferSize: js.UndefOr[Double] = js.undefined,
     deflate: GraylogDeflate = null,
     facility: String = null,
     hostname: String = null
   ): GraylogConfig = {
     val __obj = js.Dynamic.literal(servers = servers.asInstanceOf[js.Any])
-    if (bufferSize != null) __obj.updateDynamic("bufferSize")(bufferSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(bufferSize)) __obj.updateDynamic("bufferSize")(bufferSize.get.asInstanceOf[js.Any])
     if (deflate != null) __obj.updateDynamic("deflate")(deflate.asInstanceOf[js.Any])
     if (facility != null) __obj.updateDynamic("facility")(facility.asInstanceOf[js.Any])
     if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])

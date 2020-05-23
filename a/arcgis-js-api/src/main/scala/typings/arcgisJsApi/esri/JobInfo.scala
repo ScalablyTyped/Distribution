@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`job-cancelled`
 import typings.arcgisJsApi.arcgisJsApiStrings.`job-cancelling`
 import typings.arcgisJsApi.arcgisJsApiStrings.`job-deleted`
@@ -39,8 +38,4 @@ trait JobInfo
     */
   var messages: js.Array[GPMessage] = js.native
 }
-
-@JSGlobal("__esri.JobInfo")
-@js.native
-object JobInfo extends TopLevel[JobInfoConstructor]
 

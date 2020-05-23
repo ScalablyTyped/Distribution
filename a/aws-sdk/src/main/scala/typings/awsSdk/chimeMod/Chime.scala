@@ -721,6 +721,19 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetProxySessionResponse, Unit]
   ): Request[GetProxySessionResponse, AWSError] = js.native
   /**
+    * Gets the retention settings for the specified Amazon Chime Enterprise account. For more information about retention settings, see Managing Chat Retention Policies in the Amazon Chime Administration Guide.
+    */
+  def getRetentionSettings(): Request[GetRetentionSettingsResponse, AWSError] = js.native
+  def getRetentionSettings(callback: js.Function2[/* err */ AWSError, /* data */ GetRetentionSettingsResponse, Unit]): Request[GetRetentionSettingsResponse, AWSError] = js.native
+  /**
+    * Gets the retention settings for the specified Amazon Chime Enterprise account. For more information about retention settings, see Managing Chat Retention Policies in the Amazon Chime Administration Guide.
+    */
+  def getRetentionSettings(params: GetRetentionSettingsRequest): Request[GetRetentionSettingsResponse, AWSError] = js.native
+  def getRetentionSettings(
+    params: GetRetentionSettingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetRetentionSettingsResponse, Unit]
+  ): Request[GetRetentionSettingsResponse, AWSError] = js.native
+  /**
     * Retrieves room details, such as the room name, for a room in an Amazon Chime Enterprise account.
     */
   def getRoom(): Request[GetRoomResponse, AWSError] = js.native
@@ -1127,6 +1140,19 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PutEventsConfigurationResponse, Unit]
   ): Request[PutEventsConfigurationResponse, AWSError] = js.native
   /**
+    * Puts retention settings for the specified Amazon Chime Enterprise account. We recommend using AWS CloudTrail to monitor usage of this API for your account. For more information, see Logging Amazon Chime API Calls with AWS CloudTrail in the Amazon Chime Administration Guide. To turn off existing retention settings, remove the number of days from the corresponding RetentionDays field in the RetentionSettings object. For more information about retention settings, see Managing Chat Retention Policies in the Amazon Chime Administration Guide.
+    */
+  def putRetentionSettings(): Request[PutRetentionSettingsResponse, AWSError] = js.native
+  def putRetentionSettings(callback: js.Function2[/* err */ AWSError, /* data */ PutRetentionSettingsResponse, Unit]): Request[PutRetentionSettingsResponse, AWSError] = js.native
+  /**
+    * Puts retention settings for the specified Amazon Chime Enterprise account. We recommend using AWS CloudTrail to monitor usage of this API for your account. For more information, see Logging Amazon Chime API Calls with AWS CloudTrail in the Amazon Chime Administration Guide. To turn off existing retention settings, remove the number of days from the corresponding RetentionDays field in the RetentionSettings object. For more information about retention settings, see Managing Chat Retention Policies in the Amazon Chime Administration Guide.
+    */
+  def putRetentionSettings(params: PutRetentionSettingsRequest): Request[PutRetentionSettingsResponse, AWSError] = js.native
+  def putRetentionSettings(
+    params: PutRetentionSettingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutRetentionSettingsResponse, Unit]
+  ): Request[PutRetentionSettingsResponse, AWSError] = js.native
+  /**
     * Adds a logging configuration for the specified Amazon Chime Voice Connector. The logging configuration specifies whether SIP message logs are enabled for sending to Amazon CloudWatch Logs.
     */
   def putVoiceConnectorLoggingConfiguration(): Request[PutVoiceConnectorLoggingConfigurationResponse, AWSError] = js.native
@@ -1208,6 +1234,32 @@ trait Chime extends Service {
     params: PutVoiceConnectorTerminationCredentialsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  /**
+    * Redacts the specified message from the specified Amazon Chime conversation.
+    */
+  def redactConversationMessage(): Request[RedactConversationMessageResponse, AWSError] = js.native
+  def redactConversationMessage(callback: js.Function2[/* err */ AWSError, /* data */ RedactConversationMessageResponse, Unit]): Request[RedactConversationMessageResponse, AWSError] = js.native
+  /**
+    * Redacts the specified message from the specified Amazon Chime conversation.
+    */
+  def redactConversationMessage(params: RedactConversationMessageRequest): Request[RedactConversationMessageResponse, AWSError] = js.native
+  def redactConversationMessage(
+    params: RedactConversationMessageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RedactConversationMessageResponse, Unit]
+  ): Request[RedactConversationMessageResponse, AWSError] = js.native
+  /**
+    * Redacts the specified message from the specified Amazon Chime chat room.
+    */
+  def redactRoomMessage(): Request[RedactRoomMessageResponse, AWSError] = js.native
+  def redactRoomMessage(callback: js.Function2[/* err */ AWSError, /* data */ RedactRoomMessageResponse, Unit]): Request[RedactRoomMessageResponse, AWSError] = js.native
+  /**
+    * Redacts the specified message from the specified Amazon Chime chat room.
+    */
+  def redactRoomMessage(params: RedactRoomMessageRequest): Request[RedactRoomMessageResponse, AWSError] = js.native
+  def redactRoomMessage(
+    params: RedactRoomMessageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RedactRoomMessageResponse, Unit]
+  ): Request[RedactRoomMessageResponse, AWSError] = js.native
   /**
     * Regenerates the security token for a bot.
     */

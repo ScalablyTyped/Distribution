@@ -23,21 +23,21 @@ object PickerViewProps {
   @scala.inline
   def apply(
     cascade: js.UndefOr[Boolean] = js.undefined,
-    cols: Int | Double = null,
+    cols: js.UndefOr[Double] = js.undefined,
     data: js.Array[js.Array[PickerData] | PickerData] = null,
-    indicatorStyle: StyleProp[ViewStyle] = null,
-    itemStyle: StyleProp[ViewStyle] = null,
+    indicatorStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    itemStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     onChange: /* value */ js.UndefOr[js.Any] => Unit = null,
     onScrollChange: /* value */ js.UndefOr[js.Any] => Unit = null,
     styles: js.Any = null,
     value: js.Array[_] = null
   ): PickerViewProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cascade)) __obj.updateDynamic("cascade")(cascade.asInstanceOf[js.Any])
-    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
+    if (!js.isUndefined(cascade)) __obj.updateDynamic("cascade")(cascade.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cols)) __obj.updateDynamic("cols")(cols.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (indicatorStyle != null) __obj.updateDynamic("indicatorStyle")(indicatorStyle.asInstanceOf[js.Any])
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(indicatorStyle)) __obj.updateDynamic("indicatorStyle")(indicatorStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemStyle)) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onScrollChange != null) __obj.updateDynamic("onScrollChange")(js.Any.fromFunction1(onScrollChange))
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])

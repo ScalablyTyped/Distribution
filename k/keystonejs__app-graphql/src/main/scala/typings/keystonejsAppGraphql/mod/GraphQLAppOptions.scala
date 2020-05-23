@@ -1,13 +1,13 @@
 package typings.keystonejsAppGraphql.mod
 
-import typings.keystonejsAppGraphql.AnonIntrospection
+import typings.keystonejsAppGraphql.anon.Introspection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GraphQLAppOptions extends js.Object {
   var apiPath: js.UndefOr[String] = js.undefined
-  var apollo: js.UndefOr[AnonIntrospection] = js.undefined
+  var apollo: js.UndefOr[Introspection] = js.undefined
   var graphiqlPath: js.UndefOr[String] = js.undefined
   var schemaName: js.UndefOr[String] = js.undefined
 }
@@ -16,7 +16,7 @@ object GraphQLAppOptions {
   @scala.inline
   def apply(
     apiPath: String = null,
-    apollo: AnonIntrospection = null,
+    apollo: Introspection = null,
     graphiqlPath: String = null,
     schemaName: String = null
   ): GraphQLAppOptions = {

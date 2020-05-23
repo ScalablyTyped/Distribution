@@ -1,6 +1,6 @@
 package typings.gapiClientGamesmanagement.gapi.client.gamesmanagement
 
-import typings.gapiClientGamesmanagement.AnonFamilyName
+import typings.gapiClientGamesmanagement.anon.FamilyName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +24,7 @@ trait Player extends js.Object {
     */
   var lastPlayedWith: js.UndefOr[GamesPlayedResource] = js.undefined
   /** An object representation of the individual components of the player's name. For some players, these fields may not be present. */
-  var name: js.UndefOr[AnonFamilyName] = js.undefined
+  var name: js.UndefOr[FamilyName] = js.undefined
   /**
     * The player ID that was used for this player the first time they signed into the game in question. This is only populated for calls to player.get for
     * the requesting player, only if the player ID has subsequently changed, and only to clients that support remapping player IDs.
@@ -48,7 +48,7 @@ object Player {
     experienceInfo: GamesPlayerExperienceInfoResource = null,
     kind: String = null,
     lastPlayedWith: GamesPlayedResource = null,
-    name: AnonFamilyName = null,
+    name: FamilyName = null,
     originalPlayerId: String = null,
     playerId: String = null,
     profileSettings: ProfileSettings = null,

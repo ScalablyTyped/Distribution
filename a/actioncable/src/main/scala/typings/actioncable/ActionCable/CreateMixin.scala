@@ -15,7 +15,7 @@ trait CreateMixin
 object CreateMixin {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     connected: () => Unit = null,
     disconnected: () => Unit = null,
     received: /* obj */ js.Any => Unit = null

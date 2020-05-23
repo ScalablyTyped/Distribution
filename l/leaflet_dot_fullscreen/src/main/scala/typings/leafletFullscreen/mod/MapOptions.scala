@@ -17,7 +17,7 @@ object MapOptions {
     fullscreenControlOptions: FullscreenOptions = null
   ): MapOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fullscreenControl)) __obj.updateDynamic("fullscreenControl")(fullscreenControl.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullscreenControl)) __obj.updateDynamic("fullscreenControl")(fullscreenControl.get.asInstanceOf[js.Any])
     if (fullscreenControlOptions != null) __obj.updateDynamic("fullscreenControlOptions")(fullscreenControlOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapOptions]
   }

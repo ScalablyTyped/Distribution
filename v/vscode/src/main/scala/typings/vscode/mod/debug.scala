@@ -23,39 +23,25 @@ object debug extends js.Object {
   def registerDebugAdapterTrackerFactory(debugType: String, factory: DebugAdapterTrackerFactory): Disposable = js.native
   def registerDebugConfigurationProvider(debugType: String, provider: DebugConfigurationProvider): Disposable = js.native
   def removeBreakpoints(breakpoints: js.Array[Breakpoint]): Unit = js.native
-  def startDebugging(folder: js.UndefOr[scala.Nothing], nameOrConfiguration: String): Thenable[Boolean] = js.native
+  def startDebugging(folder: js.UndefOr[WorkspaceFolder], nameOrConfiguration: String): Thenable[Boolean] = js.native
   def startDebugging(
-    folder: js.UndefOr[scala.Nothing],
+    folder: js.UndefOr[WorkspaceFolder],
     nameOrConfiguration: String,
     parentSessionOrOptions: DebugSession
   ): Thenable[Boolean] = js.native
   def startDebugging(
-    folder: js.UndefOr[scala.Nothing],
+    folder: js.UndefOr[WorkspaceFolder],
     nameOrConfiguration: String,
     parentSessionOrOptions: DebugSessionOptions
   ): Thenable[Boolean] = js.native
-  def startDebugging(folder: js.UndefOr[scala.Nothing], nameOrConfiguration: DebugConfiguration): Thenable[Boolean] = js.native
+  def startDebugging(folder: js.UndefOr[WorkspaceFolder], nameOrConfiguration: DebugConfiguration): Thenable[Boolean] = js.native
   def startDebugging(
-    folder: js.UndefOr[scala.Nothing],
+    folder: js.UndefOr[WorkspaceFolder],
     nameOrConfiguration: DebugConfiguration,
     parentSessionOrOptions: DebugSession
   ): Thenable[Boolean] = js.native
   def startDebugging(
-    folder: js.UndefOr[scala.Nothing],
-    nameOrConfiguration: DebugConfiguration,
-    parentSessionOrOptions: DebugSessionOptions
-  ): Thenable[Boolean] = js.native
-  def startDebugging(folder: WorkspaceFolder, nameOrConfiguration: String): Thenable[Boolean] = js.native
-  def startDebugging(folder: WorkspaceFolder, nameOrConfiguration: String, parentSessionOrOptions: DebugSession): Thenable[Boolean] = js.native
-  def startDebugging(folder: WorkspaceFolder, nameOrConfiguration: String, parentSessionOrOptions: DebugSessionOptions): Thenable[Boolean] = js.native
-  def startDebugging(folder: WorkspaceFolder, nameOrConfiguration: DebugConfiguration): Thenable[Boolean] = js.native
-  def startDebugging(
-    folder: WorkspaceFolder,
-    nameOrConfiguration: DebugConfiguration,
-    parentSessionOrOptions: DebugSession
-  ): Thenable[Boolean] = js.native
-  def startDebugging(
-    folder: WorkspaceFolder,
+    folder: js.UndefOr[WorkspaceFolder],
     nameOrConfiguration: DebugConfiguration,
     parentSessionOrOptions: DebugSessionOptions
   ): Thenable[Boolean] = js.native

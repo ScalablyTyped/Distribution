@@ -47,15 +47,15 @@ object MessageRuleActions {
     val __obj = js.Dynamic.literal()
     if (assignCategories != null) __obj.updateDynamic("assignCategories")(assignCategories.asInstanceOf[js.Any])
     if (copyToFolder != null) __obj.updateDynamic("copyToFolder")(copyToFolder.asInstanceOf[js.Any])
-    if (!js.isUndefined(delete)) __obj.updateDynamic("delete")(delete.asInstanceOf[js.Any])
+    if (!js.isUndefined(delete)) __obj.updateDynamic("delete")(delete.get.asInstanceOf[js.Any])
     if (forwardAsAttachmentTo != null) __obj.updateDynamic("forwardAsAttachmentTo")(forwardAsAttachmentTo.asInstanceOf[js.Any])
     if (forwardTo != null) __obj.updateDynamic("forwardTo")(forwardTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(markAsRead)) __obj.updateDynamic("markAsRead")(markAsRead.asInstanceOf[js.Any])
+    if (!js.isUndefined(markAsRead)) __obj.updateDynamic("markAsRead")(markAsRead.get.asInstanceOf[js.Any])
     if (markImportance != null) __obj.updateDynamic("markImportance")(markImportance.asInstanceOf[js.Any])
     if (moveToFolder != null) __obj.updateDynamic("moveToFolder")(moveToFolder.asInstanceOf[js.Any])
-    if (!js.isUndefined(permanentDelete)) __obj.updateDynamic("permanentDelete")(permanentDelete.asInstanceOf[js.Any])
+    if (!js.isUndefined(permanentDelete)) __obj.updateDynamic("permanentDelete")(permanentDelete.get.asInstanceOf[js.Any])
     if (redirectTo != null) __obj.updateDynamic("redirectTo")(redirectTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopProcessingRules)) __obj.updateDynamic("stopProcessingRules")(stopProcessingRules.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopProcessingRules)) __obj.updateDynamic("stopProcessingRules")(stopProcessingRules.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageRuleActions]
   }
 }

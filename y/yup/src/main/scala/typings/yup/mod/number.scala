@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("yup", "number")
 @js.native
-class number () extends NumberSchema[Double]
+class number ()
+  extends NumberSchema[js.UndefOr[Double]]
 
 @JSImport("yup", "number")
 @js.native

@@ -1,6 +1,7 @@
 package typings.elasticElasticsearch.poolMod
 
-import typings.elasticElasticsearch.AnonInstantiable
+import typings.elasticElasticsearch.anon.Instantiable
+import typings.elasticElasticsearch.anon.Url
 import typings.elasticElasticsearch.connectionMod.AgentOptions
 import typings.elasticElasticsearch.connectionMod.default
 import typings.node.tlsMod.SecureContextOptions
@@ -12,11 +13,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class BaseConnectionPool () extends js.Object {
   def this(opts: BaseConnectionPoolOptions) = this()
-  var Connection: AnonInstantiable = js.native
+  var Connection: Instantiable = js.native
   var _agent: AgentOptions | Null = js.native
   var _ssl: SecureContextOptions | Null = js.native
   var auth: BasicAuth | ApiKeyAuth = js.native
   var connections: js.Array[default] = js.native
+  var size: Double = js.native
   /**
     * Adds a new connection to the pool.
     *
@@ -24,6 +26,8 @@ class BaseConnectionPool () extends js.Object {
     * @returns {ConnectionPool}
     */
   def addConnection(opts: js.Any): default = js.native
+  def emit(event: String, args: js.Any*): Boolean = js.native
+  def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
   /**
     * Empties the connection pool.
     *
@@ -32,7 +36,7 @@ class BaseConnectionPool () extends js.Object {
   def empty(): this.type = js.native
   /**
     * Returns an alive connection if present,
-    * otherwise returns null.
+    * otherwise returns a dead connection.
     * By default it filters the `master` only nodes.
     * It uses the selector to choose which
     * connection return.
@@ -85,6 +89,6 @@ class BaseConnectionPool () extends js.Object {
     * @param {string} url
     * @returns {object} host
     */
-  def urlToHost(url: String): js.Any = js.native
+  def urlToHost(url: String): Url = js.native
 }
 

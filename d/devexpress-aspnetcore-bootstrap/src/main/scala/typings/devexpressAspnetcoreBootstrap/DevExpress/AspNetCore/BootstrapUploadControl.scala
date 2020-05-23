@@ -13,9 +13,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapUploadControl")
 @js.native
-class BootstrapUploadControl () extends Control {
+trait BootstrapUploadControl extends Control {
   def addFileInput(): Unit = js.native
   def cancel(): Unit = js.native
   def clearText(): Unit = js.native

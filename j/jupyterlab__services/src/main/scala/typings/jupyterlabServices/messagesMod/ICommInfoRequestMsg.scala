@@ -1,6 +1,6 @@
 package typings.jupyterlabServices.messagesMod
 
-import typings.jupyterlabServices.AnonTargetname
+import typings.jupyterlabServices.anon.Targetname
 import typings.jupyterlabServices.jupyterlabServicesStrings.comm_info_request
 import typings.jupyterlabServices.jupyterlabServicesStrings.shell
 import typings.luminoCoreutils.jsonMod.JSONObject
@@ -14,14 +14,14 @@ trait ICommInfoRequestMsg
   extends IShellMessage[comm_info_request]
      with _Message {
   @JSName("content")
-  var content_ICommInfoRequestMsg: AnonTargetname
+  var content_ICommInfoRequestMsg: Targetname
 }
 
 object ICommInfoRequestMsg {
   @scala.inline
   def apply(
     channel: shell,
-    content: AnonTargetname,
+    content: Targetname,
     header: IHeader[comm_info_request],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,

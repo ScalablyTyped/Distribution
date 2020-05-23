@@ -25,11 +25,11 @@ object GetConnectionRequest {
   def apply(
     Name: NameString,
     CatalogId: CatalogIdString = null,
-    HidePassword: js.UndefOr[scala.Boolean] = js.undefined
+    HidePassword: js.UndefOr[Boolean] = js.undefined
   ): GetConnectionRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     if (CatalogId != null) __obj.updateDynamic("CatalogId")(CatalogId.asInstanceOf[js.Any])
-    if (!js.isUndefined(HidePassword)) __obj.updateDynamic("HidePassword")(HidePassword.asInstanceOf[js.Any])
+    if (!js.isUndefined(HidePassword)) __obj.updateDynamic("HidePassword")(HidePassword.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConnectionRequest]
   }
 }

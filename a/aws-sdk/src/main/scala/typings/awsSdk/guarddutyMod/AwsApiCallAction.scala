@@ -7,23 +7,23 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AwsApiCallAction extends js.Object {
   /**
-    * AWS API name.
+    * The AWS API name.
     */
   var Api: js.UndefOr[String] = js.native
   /**
-    * AWS API caller type.
+    * The AWS API caller type.
     */
   var CallerType: js.UndefOr[String] = js.native
   /**
-    * Domain information for the AWS API call.
+    * The domain information for the AWS API call.
     */
   var DomainDetails: js.UndefOr[typings.awsSdk.guarddutyMod.DomainDetails] = js.native
   /**
-    * Remote IP information of the connection.
+    * The remote IP information of the connection.
     */
   var RemoteIpDetails: js.UndefOr[typings.awsSdk.guarddutyMod.RemoteIpDetails] = js.native
   /**
-    * AWS service name whose API was invoked.
+    * The AWS service name whose API was invoked.
     */
   var ServiceName: js.UndefOr[String] = js.native
 }

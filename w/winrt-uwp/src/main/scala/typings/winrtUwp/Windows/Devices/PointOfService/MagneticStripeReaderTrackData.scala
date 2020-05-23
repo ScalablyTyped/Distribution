@@ -6,14 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains the track data obtained following a card swipe. */
-@JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderTrackData")
-@js.native
-abstract class MagneticStripeReaderTrackData () extends js.Object {
+trait MagneticStripeReaderTrackData extends js.Object {
   /** Gets the raw or decoded data from the swiped card. */
-  var data: IBuffer = js.native
+  var data: IBuffer
   /** Gets the discretionary data from the swiped card. */
-  var discretionaryData: IBuffer = js.native
+  var discretionaryData: IBuffer
   /** Gets the encrypted data from the swiped card. */
-  var encryptedData: IBuffer = js.native
+  var encryptedData: IBuffer
+}
+
+object MagneticStripeReaderTrackData {
+  @scala.inline
+  def apply(data: IBuffer, discretionaryData: IBuffer, encryptedData: IBuffer): MagneticStripeReaderTrackData = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], discretionaryData = discretionaryData.asInstanceOf[js.Any], encryptedData = encryptedData.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MagneticStripeReaderTrackData]
+  }
 }
 

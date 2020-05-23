@@ -26,7 +26,7 @@ object PushData {
     badge: String = null,
     channels: js.Array[String] = null,
     data: js.Any = null,
-    expiration_interval: Int | Double = null,
+    expiration_interval: js.UndefOr[Double] = js.undefined,
     expiration_time: Date = null,
     push_time: Date = null,
     sound: String = null,
@@ -38,7 +38,7 @@ object PushData {
     if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
     if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (expiration_interval != null) __obj.updateDynamic("expiration_interval")(expiration_interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(expiration_interval)) __obj.updateDynamic("expiration_interval")(expiration_interval.get.asInstanceOf[js.Any])
     if (expiration_time != null) __obj.updateDynamic("expiration_time")(expiration_time.asInstanceOf[js.Any])
     if (push_time != null) __obj.updateDynamic("push_time")(push_time.asInstanceOf[js.Any])
     if (sound != null) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])

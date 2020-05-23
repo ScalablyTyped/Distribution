@@ -1,10 +1,10 @@
 package typings.officeJsPreview.Word
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.Word.Interfaces.ListData
 import typings.officeJsPreview.Word.Interfaces.ListLoadOptions
+import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.After
 import typings.officeJsPreview.officeJsPreviewStrings.Arabic
 import typings.officeJsPreview.officeJsPreviewStrings.Arrow
@@ -39,9 +39,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: WordApi 1.3]
   */
-@JSGlobal("Word.List")
 @js.native
-class List () extends ClientObject {
+trait List extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_List: RequestContext = js.native
@@ -158,8 +157,8 @@ class List () extends ClientObject {
   def load(): List = js.native
   def load(option: String): List = js.native
   def load(option: js.Array[String]): List = js.native
-  def load(option: AnonExpand): List = js.native
   def load(option: ListLoadOptions): List = js.native
+  def load(option: Expand): List = js.native
   /**
     *
     * Resets the font of the bullet, number, or picture at the specified level in the list.

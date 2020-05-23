@@ -33,7 +33,7 @@ object CsvParams {
     if (columnNames != null) __obj.updateDynamic("columnNames")(columnNames.asInstanceOf[js.Any])
     if (columnTypes != null) __obj.updateDynamic("columnTypes")(columnTypes.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(firstLineAsColumnNames)) __obj.updateDynamic("firstLineAsColumnNames")(firstLineAsColumnNames.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstLineAsColumnNames)) __obj.updateDynamic("firstLineAsColumnNames")(firstLineAsColumnNames.get.asInstanceOf[js.Any])
     if (quoteChar != null) __obj.updateDynamic("quoteChar")(quoteChar.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[CsvParams]

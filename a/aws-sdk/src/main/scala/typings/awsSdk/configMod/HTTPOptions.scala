@@ -48,19 +48,19 @@ object HTTPOptions {
   @scala.inline
   def apply(
     agent: Agent | typings.node.httpsMod.Agent = null,
-    connectTimeout: Int | Double = null,
+    connectTimeout: js.UndefOr[Double] = js.undefined,
     proxy: String = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     xhrAsync: js.UndefOr[Boolean] = js.undefined,
     xhrWithCredentials: js.UndefOr[Boolean] = js.undefined
   ): HTTPOptions = {
     val __obj = js.Dynamic.literal()
     if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
-    if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectTimeout)) __obj.updateDynamic("connectTimeout")(connectTimeout.get.asInstanceOf[js.Any])
     if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(xhrAsync)) __obj.updateDynamic("xhrAsync")(xhrAsync.asInstanceOf[js.Any])
-    if (!js.isUndefined(xhrWithCredentials)) __obj.updateDynamic("xhrWithCredentials")(xhrWithCredentials.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xhrAsync)) __obj.updateDynamic("xhrAsync")(xhrAsync.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xhrWithCredentials)) __obj.updateDynamic("xhrWithCredentials")(xhrWithCredentials.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTTPOptions]
   }
 }

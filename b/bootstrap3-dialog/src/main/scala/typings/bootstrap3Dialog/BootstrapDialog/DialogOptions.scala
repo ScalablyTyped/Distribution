@@ -1,6 +1,6 @@
 package typings.bootstrap3Dialog.BootstrapDialog
 
-import typings.jquery.JQuery_
+import typings.jquery.JQuery
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -52,7 +52,7 @@ trait DialogOptions extends js.Object {
   var draggable: js.UndefOr[Boolean] = js.undefined
   /** Dialog message. Either string, JQuery element, or function that returns either string or JQuery element. */
   var message: js.UndefOr[
-    String | JQuery_[HTMLElement] | (js.Function1[/* dialog */ js.UndefOr[DialogContext], String | JQuery_[HTMLElement]])
+    String | JQuery[HTMLElement] | (js.Function1[/* dialog */ js.UndefOr[DialogContext], String | JQuery[HTMLElement]])
   ] = js.undefined
   /**
     * Automatically convert line breaking character to <br /> if it's set to true,
@@ -75,7 +75,7 @@ trait DialogOptions extends js.Object {
   /** Icon class name, for example 'glyphicon glyphicon-check'. */
   var spinicon: js.UndefOr[String] = js.undefined
   /** Dialog title. Either string or JQuery element. */
-  var title: js.UndefOr[String | JQuery_[HTMLElement]] = js.undefined
+  var title: js.UndefOr[String | JQuery[HTMLElement]] = js.undefined
   /** Dialog header type. See BootstrapDialog.TYPE_xxx constants. */
   var `type`: js.UndefOr[String] = js.undefined
 }
@@ -98,7 +98,7 @@ object DialogOptions {
     data: js.Any = null,
     description: String = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
-    message: String | JQuery_[HTMLElement] | (js.Function1[/* dialog */ js.UndefOr[DialogContext], String | JQuery_[HTMLElement]]) = null,
+    message: String | JQuery[HTMLElement] | (js.Function1[/* dialog */ js.UndefOr[DialogContext], String | JQuery[HTMLElement]]) = null,
     nl2br: js.UndefOr[Boolean] = js.undefined,
     onhidden: /* dialog */ js.UndefOr[DialogContext] => Unit = null,
     onhide: /* dialog */ js.UndefOr[DialogContext] => _ = null,
@@ -106,27 +106,27 @@ object DialogOptions {
     onshown: /* dialog */ js.UndefOr[DialogContext] => Unit = null,
     size: String = null,
     spinicon: String = null,
-    title: String | JQuery_[HTMLElement] = null,
+    title: String | JQuery[HTMLElement] = null,
     `type`: String = null
   ): DialogOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (!js.isUndefined(autodestroy)) __obj.updateDynamic("autodestroy")(autodestroy.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autodestroy)) __obj.updateDynamic("autodestroy")(autodestroy.get.asInstanceOf[js.Any])
     if (btnCancelLabel != null) __obj.updateDynamic("btnCancelLabel")(btnCancelLabel.asInstanceOf[js.Any])
     if (btnOKClass != null) __obj.updateDynamic("btnOKClass")(btnOKClass.asInstanceOf[js.Any])
     if (btnOKLabel != null) __obj.updateDynamic("btnOKLabel")(btnOKLabel.asInstanceOf[js.Any])
     if (buttonLabel != null) __obj.updateDynamic("buttonLabel")(buttonLabel.asInstanceOf[js.Any])
     if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
-    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeByBackdrop)) __obj.updateDynamic("closeByBackdrop")(closeByBackdrop.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeByKeyboard)) __obj.updateDynamic("closeByKeyboard")(closeByKeyboard.asInstanceOf[js.Any])
+    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeByBackdrop)) __obj.updateDynamic("closeByBackdrop")(closeByBackdrop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeByKeyboard)) __obj.updateDynamic("closeByKeyboard")(closeByKeyboard.get.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (!js.isUndefined(nl2br)) __obj.updateDynamic("nl2br")(nl2br.asInstanceOf[js.Any])
+    if (!js.isUndefined(nl2br)) __obj.updateDynamic("nl2br")(nl2br.get.asInstanceOf[js.Any])
     if (onhidden != null) __obj.updateDynamic("onhidden")(js.Any.fromFunction1(onhidden))
     if (onhide != null) __obj.updateDynamic("onhide")(js.Any.fromFunction1(onhide))
     if (onshow != null) __obj.updateDynamic("onshow")(js.Any.fromFunction1(onshow))

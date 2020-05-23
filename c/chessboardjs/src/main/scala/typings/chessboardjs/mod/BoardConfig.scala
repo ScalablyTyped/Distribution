@@ -57,7 +57,7 @@ object BoardConfig {
   ): BoardConfig = {
     val __obj = js.Dynamic.literal()
     if (appearSpeed != null) __obj.updateDynamic("appearSpeed")(appearSpeed.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
     if (dropOffBoard != null) __obj.updateDynamic("dropOffBoard")(dropOffBoard.asInstanceOf[js.Any])
     if (moveSpeed != null) __obj.updateDynamic("moveSpeed")(moveSpeed.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction0(onChange))
@@ -73,10 +73,10 @@ object BoardConfig {
     if (pieceTheme != null) __obj.updateDynamic("pieceTheme")(pieceTheme.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (showErrors != null) __obj.updateDynamic("showErrors")(showErrors.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNotation)) __obj.updateDynamic("showNotation")(showNotation.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNotation)) __obj.updateDynamic("showNotation")(showNotation.get.asInstanceOf[js.Any])
     if (snapSpeed != null) __obj.updateDynamic("snapSpeed")(snapSpeed.asInstanceOf[js.Any])
     if (snapbackSpeed != null) __obj.updateDynamic("snapbackSpeed")(snapbackSpeed.asInstanceOf[js.Any])
-    if (!js.isUndefined(sparePieces)) __obj.updateDynamic("sparePieces")(sparePieces.asInstanceOf[js.Any])
+    if (!js.isUndefined(sparePieces)) __obj.updateDynamic("sparePieces")(sparePieces.get.asInstanceOf[js.Any])
     if (trashSpeed != null) __obj.updateDynamic("trashSpeed")(trashSpeed.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoardConfig]
   }

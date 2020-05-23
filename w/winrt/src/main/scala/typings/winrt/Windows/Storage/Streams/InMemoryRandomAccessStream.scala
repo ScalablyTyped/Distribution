@@ -6,33 +6,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Storage.Streams.InMemoryRandomAccessStream")
-@js.native
-class InMemoryRandomAccessStream () extends IRandomAccessStream {
-  /* CompleteClass */
-  override var canRead: Boolean = js.native
-  /* CompleteClass */
-  override var canWrite: Boolean = js.native
-  /* CompleteClass */
-  override var position: Double = js.native
-  /* CompleteClass */
-  override var size: Double = js.native
-  /* CompleteClass */
-  override def cloneStream(): IRandomAccessStream = js.native
-  /* CompleteClass */
-  override def close(): Unit = js.native
-  def dispose(): Unit = js.native
-  /* CompleteClass */
-  override def flushAsync(): IAsyncOperation[Boolean] = js.native
-  /* CompleteClass */
-  override def getInputStreamAt(position: Double): IInputStream = js.native
-  /* CompleteClass */
-  override def getOutputStreamAt(position: Double): IOutputStream = js.native
-  /* CompleteClass */
-  override def readAsync(buffer: IBuffer, count: Double, options: InputStreamOptions): IAsyncOperationWithProgress[IBuffer, Double] = js.native
-  /* CompleteClass */
-  override def seek(position: Double): Unit = js.native
-  /* CompleteClass */
-  override def writeAsync(buffer: IBuffer): IAsyncOperationWithProgress[Double, Double] = js.native
+trait InMemoryRandomAccessStream extends IRandomAccessStream {
+  def dispose(): Unit
+}
+
+object InMemoryRandomAccessStream {
+  @scala.inline
+  def apply(
+    canRead: Boolean,
+    canWrite: Boolean,
+    cloneStream: () => IRandomAccessStream,
+    close: () => Unit,
+    dispose: () => Unit,
+    flushAsync: () => IAsyncOperation[Boolean],
+    getInputStreamAt: Double => IInputStream,
+    getOutputStreamAt: Double => IOutputStream,
+    position: Double,
+    readAsync: (IBuffer, Double, InputStreamOptions) => IAsyncOperationWithProgress[IBuffer, Double],
+    seek: Double => Unit,
+    size: Double,
+    writeAsync: IBuffer => IAsyncOperationWithProgress[Double, Double]
+  ): InMemoryRandomAccessStream = {
+    val __obj = js.Dynamic.literal(canRead = canRead.asInstanceOf[js.Any], canWrite = canWrite.asInstanceOf[js.Any], cloneStream = js.Any.fromFunction0(cloneStream), close = js.Any.fromFunction0(close), dispose = js.Any.fromFunction0(dispose), flushAsync = js.Any.fromFunction0(flushAsync), getInputStreamAt = js.Any.fromFunction1(getInputStreamAt), getOutputStreamAt = js.Any.fromFunction1(getOutputStreamAt), position = position.asInstanceOf[js.Any], readAsync = js.Any.fromFunction3(readAsync), seek = js.Any.fromFunction1(seek), size = size.asInstanceOf[js.Any], writeAsync = js.Any.fromFunction1(writeAsync))
+    __obj.asInstanceOf[InMemoryRandomAccessStream]
+  }
 }
 

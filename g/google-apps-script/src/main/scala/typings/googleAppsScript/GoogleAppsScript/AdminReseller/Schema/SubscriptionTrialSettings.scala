@@ -13,7 +13,7 @@ object SubscriptionTrialSettings {
   @scala.inline
   def apply(isInTrial: js.UndefOr[Boolean] = js.undefined, trialEndTime: String = null): SubscriptionTrialSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isInTrial)) __obj.updateDynamic("isInTrial")(isInTrial.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInTrial)) __obj.updateDynamic("isInTrial")(isInTrial.get.asInstanceOf[js.Any])
     if (trialEndTime != null) __obj.updateDynamic("trialEndTime")(trialEndTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionTrialSettings]
   }

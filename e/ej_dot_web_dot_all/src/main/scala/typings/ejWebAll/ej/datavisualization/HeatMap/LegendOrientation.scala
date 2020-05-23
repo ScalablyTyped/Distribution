@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.HeatMap
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,20 +17,6 @@ object LegendOrientation extends js.Object {
   //Used to align the image at the top left of diagram area
   @js.native
   sealed trait Vertical extends LegendOrientation
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[LegendOrientation with Double] = js.native
-  /* 0 */ @js.native
-  object Horizontal
-    extends TopLevel[
-          typings.ejWebAll.ej.datavisualization.HeatMap.LegendOrientation.Horizontal with Double
-        ]
-  
-  /* 1 */ @js.native
-  object Vertical
-    extends TopLevel[
-          typings.ejWebAll.ej.datavisualization.HeatMap.LegendOrientation.Vertical with Double
-        ]
   
 }
 

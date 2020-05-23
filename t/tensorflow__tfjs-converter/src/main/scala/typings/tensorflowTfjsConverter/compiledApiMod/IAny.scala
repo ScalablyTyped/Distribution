@@ -14,10 +14,13 @@ trait IAny extends js.Object {
 
 object IAny {
   @scala.inline
-  def apply(typeUrl: String = null, value: Uint8Array = null): IAny = {
+  def apply(
+    typeUrl: js.UndefOr[Null | String] = js.undefined,
+    value: js.UndefOr[Null | Uint8Array] = js.undefined
+  ): IAny = {
     val __obj = js.Dynamic.literal()
-    if (typeUrl != null) __obj.updateDynamic("typeUrl")(typeUrl.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(typeUrl)) __obj.updateDynamic("typeUrl")(typeUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAny]
   }
 }

@@ -22,11 +22,11 @@ trait GetListenerArgs extends js.Object {
 
 object GetListenerArgs {
   @scala.inline
-  def apply(arn: String = null, loadBalancerArn: String = null, port: Int | Double = null): GetListenerArgs = {
+  def apply(arn: String = null, loadBalancerArn: String = null, port: js.UndefOr[Double] = js.undefined): GetListenerArgs = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (loadBalancerArn != null) __obj.updateDynamic("loadBalancerArn")(loadBalancerArn.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetListenerArgs]
   }
 }

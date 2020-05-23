@@ -12,9 +12,9 @@ trait PreAuthTx extends js.Object {
 
 object PreAuthTx {
   @scala.inline
-  def apply(preAuthTx: Buffer, weight: Int | Double = null): PreAuthTx = {
+  def apply(preAuthTx: Buffer, weight: js.UndefOr[Double] = js.undefined): PreAuthTx = {
     val __obj = js.Dynamic.literal(preAuthTx = preAuthTx.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreAuthTx]
   }
 }

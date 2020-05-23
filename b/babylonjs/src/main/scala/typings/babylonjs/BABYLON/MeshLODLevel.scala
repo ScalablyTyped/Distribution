@@ -4,23 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.MeshLODLevel")
-@js.native
-class MeshLODLevel protected () extends js.Object {
-  /**
-    * Creates a new LOD level
-    * @param distance defines the distance where this level should star being displayed
-    * @param mesh defines the mesh to use to render this level
-    */
-  def this(
-    /** Defines the distance where this level should start being displayed */
-  distance: Double,
-    /** Defines the mesh to use to render this level */
-  mesh: Nullable[Mesh]
-  ) = this()
+trait MeshLODLevel extends js.Object {
   /** Defines the distance where this level should start being displayed */
-  var distance: Double = js.native
+  var distance: Double
   /** Defines the mesh to use to render this level */
-  var mesh: Nullable[Mesh] = js.native
+  var mesh: Nullable[Mesh]
+}
+
+object MeshLODLevel {
+  @scala.inline
+  def apply(distance: Double, mesh: Nullable[Mesh] = null): MeshLODLevel = {
+    val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], mesh = mesh.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MeshLODLevel]
+  }
 }
 

@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.carouselMod
 
-import typings.antDesignReactNative.AnonPagination
+import typings.antDesignReactNative.anon.Pagination
 import typings.antDesignReactNative.libStyleMod.Theme
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
@@ -14,7 +14,7 @@ trait PaginationProps extends js.Object {
   var current: Double
   var dotActiveStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   var dotStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  var styles: ReturnType[js.Function1[/* theme */ Theme, AnonPagination]]
+  var styles: ReturnType[js.Function1[/* theme */ Theme, Pagination]]
   var vertical: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -23,15 +23,15 @@ object PaginationProps {
   def apply(
     count: Double,
     current: Double,
-    styles: ReturnType[js.Function1[/* theme */ Theme, AnonPagination]],
-    dotActiveStyle: StyleProp[ViewStyle] = null,
-    dotStyle: StyleProp[ViewStyle] = null,
+    styles: ReturnType[js.Function1[/* theme */ Theme, Pagination]],
+    dotActiveStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    dotStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     vertical: js.UndefOr[Boolean] = js.undefined
   ): PaginationProps = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
-    if (dotActiveStyle != null) __obj.updateDynamic("dotActiveStyle")(dotActiveStyle.asInstanceOf[js.Any])
-    if (dotStyle != null) __obj.updateDynamic("dotStyle")(dotStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
+    if (!js.isUndefined(dotActiveStyle)) __obj.updateDynamic("dotActiveStyle")(dotActiveStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(dotStyle)) __obj.updateDynamic("dotStyle")(dotStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationProps]
   }
 }

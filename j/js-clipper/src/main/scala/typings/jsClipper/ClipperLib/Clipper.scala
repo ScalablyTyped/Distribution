@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ClipperLib.Clipper")
 @js.native
-class Clipper () extends ClipperBase {
+trait Clipper extends ClipperBase {
   var DoublePoint: js.Function = js.native
   var PolyOffsetBuilder: js.Function = js.native
   var m_ActiveEdges: TEdge = js.native

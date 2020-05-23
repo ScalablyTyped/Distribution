@@ -28,7 +28,7 @@ object OverlayProps {
   def apply(
     animation: js.Any = null,
     container: js.Any = null,
-    containerPadding: Int | Double = null,
+    containerPadding: js.UndefOr[Double] = js.undefined,
     onEnter: /* node */ HTMLElement => _ = null,
     onEntered: /* node */ HTMLElement => _ = null,
     onEntering: /* node */ HTMLElement => _ = null,
@@ -45,7 +45,7 @@ object OverlayProps {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (containerPadding != null) __obj.updateDynamic("containerPadding")(containerPadding.asInstanceOf[js.Any])
+    if (!js.isUndefined(containerPadding)) __obj.updateDynamic("containerPadding")(containerPadding.get.asInstanceOf[js.Any])
     if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction1(onEnter))
     if (onEntered != null) __obj.updateDynamic("onEntered")(js.Any.fromFunction1(onEntered))
     if (onEntering != null) __obj.updateDynamic("onEntering")(js.Any.fromFunction1(onEntering))
@@ -54,9 +54,9 @@ object OverlayProps {
     if (onExiting != null) __obj.updateDynamic("onExiting")(js.Any.fromFunction1(onExiting))
     if (onHide != null) __obj.updateDynamic("onHide")(onHide.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (!js.isUndefined(rootClose)) __obj.updateDynamic("rootClose")(rootClose.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldUpdatePosition)) __obj.updateDynamic("shouldUpdatePosition")(shouldUpdatePosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootClose)) __obj.updateDynamic("rootClose")(rootClose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldUpdatePosition)) __obj.updateDynamic("shouldUpdatePosition")(shouldUpdatePosition.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverlayProps]
   }

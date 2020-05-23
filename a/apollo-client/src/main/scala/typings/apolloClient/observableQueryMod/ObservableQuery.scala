@@ -1,6 +1,6 @@
 package typings.apolloClient.observableQueryMod
 
-import typings.apolloClient.AnonOptions
+import typings.apolloClient.anon.Options
 import typings.apolloClient.apolloErrorMod.ApolloError
 import typings.apolloClient.typesMod.ApolloQueryResult
 import typings.apolloClient.typesMod.OperationVariables
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 @JSImport("apollo-client/core/ObservableQuery", "ObservableQuery")
 @js.native
 class ObservableQuery[TData, TVariables] protected () extends Observable[ApolloQueryResult[TData]] {
-  def this(hasQueryManagerOptionsShouldSubscribe: AnonOptions[TVariables]) = this()
+  def this(hasQueryManagerOptionsShouldSubscribe: Options[TVariables]) = this()
   var isTornDown: js.Any = js.native
   var lastError: js.Any = js.native
   var lastResult: js.Any = js.native

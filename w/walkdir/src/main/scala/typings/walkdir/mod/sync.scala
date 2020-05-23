@@ -2,9 +2,9 @@ package typings.walkdir.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.fsMod.Stats
-import typings.walkdir.WalkOptionsreturnobjectbo
-import typings.walkdir.WalkOptionsreturnobjectfa
-import typings.walkdir.WalkOptionsreturnobjecttr
+import typings.walkdir.anon.WalkOptionsreturnobjectbo
+import typings.walkdir.anon.WalkOptionsreturnobjectfa
+import typings.walkdir.anon.WalkOptionsreturnobjecttr
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

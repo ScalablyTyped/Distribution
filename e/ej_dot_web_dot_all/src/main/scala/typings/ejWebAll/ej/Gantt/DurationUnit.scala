@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.Gantt
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object DurationUnit extends js.Object {
   ///Sets the Duration Unit as minute.
   @js.native
   sealed trait Minute extends DurationUnit
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DurationUnit with Double] = js.native
-  /* 0 */ @js.native
-  object Day extends TopLevel[Day with Double]
-  
-  /* 1 */ @js.native
-  object Hour extends TopLevel[Hour with Double]
-  
-  /* 2 */ @js.native
-  object Minute extends TopLevel[Minute with Double]
   
 }
 

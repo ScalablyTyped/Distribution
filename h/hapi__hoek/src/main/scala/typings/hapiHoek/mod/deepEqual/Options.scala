@@ -40,10 +40,10 @@ object Options {
     symbols: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deepFunction)) __obj.updateDynamic("deepFunction")(deepFunction.asInstanceOf[js.Any])
-    if (!js.isUndefined(part)) __obj.updateDynamic("part")(part.asInstanceOf[js.Any])
+    if (!js.isUndefined(deepFunction)) __obj.updateDynamic("deepFunction")(deepFunction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(part)) __obj.updateDynamic("part")(part.get.asInstanceOf[js.Any])
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbols)) __obj.updateDynamic("symbols")(symbols.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbols)) __obj.updateDynamic("symbols")(symbols.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

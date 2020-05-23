@@ -18,11 +18,11 @@ object InterfaceDeclaration {
     body: ObjectTypeAnnotation,
     `extends`: js.Array[InterfaceExtends],
     id: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Identifier */ js.Any,
-    typeParameters: TypeParameterDeclaration = null
+    typeParameters: js.UndefOr[Null | TypeParameterDeclaration] = js.undefined
   ): InterfaceDeclaration = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
+    if (!js.isUndefined(typeParameters)) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[InterfaceDeclaration]
   }
 }

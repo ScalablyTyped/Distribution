@@ -38,14 +38,14 @@ object RulesetInfo {
   @scala.inline
   def apply(
     authority: String = null,
-    maxLocationChange: Int | Double = null,
-    maxPollingSecs: Int | Double = null,
+    maxLocationChange: js.UndefOr[Double] = js.undefined,
+    maxPollingSecs: js.UndefOr[Double] = js.undefined,
     rulesetIds: js.Array[String] = null
   ): RulesetInfo = {
     val __obj = js.Dynamic.literal()
     if (authority != null) __obj.updateDynamic("authority")(authority.asInstanceOf[js.Any])
-    if (maxLocationChange != null) __obj.updateDynamic("maxLocationChange")(maxLocationChange.asInstanceOf[js.Any])
-    if (maxPollingSecs != null) __obj.updateDynamic("maxPollingSecs")(maxPollingSecs.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLocationChange)) __obj.updateDynamic("maxLocationChange")(maxLocationChange.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPollingSecs)) __obj.updateDynamic("maxPollingSecs")(maxPollingSecs.get.asInstanceOf[js.Any])
     if (rulesetIds != null) __obj.updateDynamic("rulesetIds")(rulesetIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[RulesetInfo]
   }

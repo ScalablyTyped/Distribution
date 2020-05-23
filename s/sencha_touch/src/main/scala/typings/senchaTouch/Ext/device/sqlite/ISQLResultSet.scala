@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 
 trait ISQLResultSet extends IBase {
   /** [Method] Returns the row ID of the last row that the SQL statement inserted into the database if the statement inserted any r
-  		* @returns Number The inserted row ID.
-  		*/
+    * @returns Number The inserted row ID.
+    */
   var getInsertId: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns a Ext device sqlite SQLResultSetRowList instance representing rows returned by the SQL statement
-  		* @returns Ext.device.sqlite.SQLResultSetRowList The rows.
-  		*/
+    * @returns Ext.device.sqlite.SQLResultSetRowList The rows.
+    */
   var getRows: js.UndefOr[js.Function0[ISQLResultSetRowList]] = js.undefined
   /** [Method] Returns the number of rows that were changed by the SQL statement
-  		* @returns Number The number of rows affected.
-  		*/
+    * @returns Number The number of rows affected.
+    */
   var getRowsAffected: js.UndefOr[js.Function0[Double]] = js.undefined
 }
 
@@ -64,7 +64,7 @@ object ISQLResultSet {
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISQLResultSet]

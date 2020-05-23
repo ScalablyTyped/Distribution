@@ -39,7 +39,7 @@ trait AnalyzedResource extends js.Object {
     */
   var resourceType: ResourceType = js.native
   /**
-    * Indicates how the access that generated the finding is granted.
+    * Indicates how the access that generated the finding is granted. This is populated for Amazon S3 bucket findings.
     */
   var sharedVia: js.UndefOr[SharedViaList] = js.native
   /**

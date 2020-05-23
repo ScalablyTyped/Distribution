@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DataSourceSchemaModelFieldValidation
-  extends /* rule */ StringDictionary[js.Any] {
+  extends /* index */ StringDictionary[js.Any] {
   var max: js.UndefOr[js.Any] = js.undefined
   var maxLength: js.UndefOr[js.Any] = js.undefined
   var min: js.UndefOr[js.Any] = js.undefined
@@ -17,7 +17,7 @@ trait DataSourceSchemaModelFieldValidation
 object DataSourceSchemaModelFieldValidation {
   @scala.inline
   def apply(
-    StringDictionary: /* rule */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     max: js.Any = null,
     maxLength: js.Any = null,
     min: js.Any = null,
@@ -30,7 +30,7 @@ object DataSourceSchemaModelFieldValidation {
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceSchemaModelFieldValidation]
   }
 }

@@ -1,16 +1,16 @@
 package typings.nextServer.dynamicMod
 
-import typings.nextServer.AnonError
-import typings.react.mod._Global_.JSX.Element
+import typings.nextServer.anon.Error
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined next-server.next-server/dist/lib/dynamic.LoadableBaseOptions<P> & {  render ? :(loader : any, props : any): react.react._Global_.JSX.Element} */
+/* Inlined next-server.next-server/dist/lib/dynamic.LoadableBaseOptions<P> & {  render ? :(loader : any, props : any): react.react.<global>.JSX.Element} */
 trait LoadableOptions[P] extends js.Object {
   var loadableGenerated: js.UndefOr[LoadableGeneratedOptions] = js.undefined
   var loader: js.UndefOr[Loader[P] | LoaderMap] = js.undefined
-  var loading: js.UndefOr[js.Function1[/* hasErrorIsLoadingPastDelay */ AnonError, Element | Null]] = js.undefined
+  var loading: js.UndefOr[js.Function1[/* hasErrorIsLoadingPastDelay */ Error, Element | Null]] = js.undefined
   var modules: js.UndefOr[js.Function0[LoaderMap]] = js.undefined
   var render: js.UndefOr[js.Function2[/* loader */ js.Any, /* props */ js.Any, Element]] = js.undefined
   var ssr: js.UndefOr[Boolean] = js.undefined
@@ -22,7 +22,7 @@ object LoadableOptions {
   def apply[P](
     loadableGenerated: LoadableGeneratedOptions = null,
     loader: Loader[P] | LoaderMap = null,
-    loading: /* hasErrorIsLoadingPastDelay */ AnonError => Element | Null = null,
+    loading: /* hasErrorIsLoadingPastDelay */ Error => Element | Null = null,
     modules: () => LoaderMap = null,
     render: (/* loader */ js.Any, /* props */ js.Any) => Element = null,
     ssr: js.UndefOr[Boolean] = js.undefined,
@@ -34,7 +34,7 @@ object LoadableOptions {
     if (loading != null) __obj.updateDynamic("loading")(js.Any.fromFunction1(loading))
     if (modules != null) __obj.updateDynamic("modules")(js.Any.fromFunction0(modules))
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction2(render))
-    if (!js.isUndefined(ssr)) __obj.updateDynamic("ssr")(ssr.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssr)) __obj.updateDynamic("ssr")(ssr.get.asInstanceOf[js.Any])
     if (webpack != null) __obj.updateDynamic("webpack")(js.Any.fromFunction0(webpack))
     __obj.asInstanceOf[LoadableOptions[P]]
   }

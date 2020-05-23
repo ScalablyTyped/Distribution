@@ -34,7 +34,7 @@ object IOptions {
   ): IOptions = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
     if (contentFactory != null) __obj.updateDynamic("contentFactory")(contentFactory.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateOnShow)) __obj.updateDynamic("updateOnShow")(updateOnShow.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateOnShow)) __obj.updateDynamic("updateOnShow")(updateOnShow.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

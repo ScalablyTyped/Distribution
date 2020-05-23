@@ -16,9 +16,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents an email mailbox located on a remote email server. */
-@JSGlobal("Windows.ApplicationModel.Email.EmailMailbox")
 @js.native
-abstract class EmailMailbox () extends js.Object {
+trait EmailMailbox extends js.Object {
   /** Gets the capabilities associated with the mailbox. */
   var capabilities: EmailMailboxCapabilities = js.native
   /** Gets the EmailMailboxChangeTracker for this mailbox. */

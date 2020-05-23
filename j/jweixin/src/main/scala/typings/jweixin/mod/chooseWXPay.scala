@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object chooseWXPay extends js.Object {
   /**
-  	 * 发起一个微信支付请求
-  	 */
+    * 发起一个微信支付请求
+    */
   def apply(params: IchooseWXPay): Unit = js.native
 }
 

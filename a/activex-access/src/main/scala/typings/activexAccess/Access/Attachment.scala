@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.Attachment")
 @js.native
-class Attachment protected () extends js.Object {
+trait Attachment extends js.Object {
   @JSName("Access.Attachment_typekey")
   var AccessDotAttachment_typekey: Attachment = js.native
   var AddColon: Boolean = js.native

@@ -64,13 +64,7 @@ Extract[
 
 object Session {
   @scala.inline
-  def apply[I /* <: IndexedModelClasses[
-    _, 
-    Extract[
-      /* keyof any */ String, 
-      /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
-    ]
-  ] */](
+  def apply[I](
     applyUpdate: UpdateSpec[js.Any] => js.Any,
     query: QuerySpec => QueryResult[js.Object],
     sessionBoundModels: js.Array[

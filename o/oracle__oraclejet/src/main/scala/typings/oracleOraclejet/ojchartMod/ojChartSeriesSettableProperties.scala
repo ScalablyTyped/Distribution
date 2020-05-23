@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojchartMod
 
-import typings.oracleOraclejet.AnonQ2Color
+import typings.oracleOraclejet.anon.Q2Color
 import typings.oracleOraclejet.mod.JetSettableProperties
 import typings.oracleOraclejet.oracleOraclejetStrings.area
 import typings.oracleOraclejet.oracleOraclejetStrings.auto
@@ -53,7 +53,7 @@ trait ojChartSeriesSettableProperties extends JetSettableProperties {
   var assignedToY2: js.UndefOr[on | off] = js.undefined
   var borderColor: js.UndefOr[String] = js.undefined
   var borderWidth: js.UndefOr[Double] = js.undefined
-  var boxPlot: js.UndefOr[AnonQ2Color] = js.undefined
+  var boxPlot: js.UndefOr[Q2Color] = js.undefined
   var categories: js.UndefOr[js.Array[String]] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var displayInLegend: js.UndefOr[on | off | auto] = js.undefined
@@ -95,24 +95,24 @@ object ojChartSeriesSettableProperties {
     areaSvgStyle: js.Object = null,
     assignedToY2: on | off = null,
     borderColor: String = null,
-    borderWidth: Int | Double = null,
-    boxPlot: AnonQ2Color = null,
+    borderWidth: js.UndefOr[Double] = js.undefined,
+    boxPlot: Q2Color = null,
     categories: js.Array[String] = null,
     color: String = null,
     displayInLegend: on | off | auto = null,
     drilling: on | off | inherit = null,
     lineStyle: dotted | dashed | solid = null,
     lineType: straight | curved | stepped | centeredStepped | segmented | centeredSegmented | none | auto = null,
-    lineWidth: Int | Double = null,
+    lineWidth: js.UndefOr[Double] = js.undefined,
     markerColor: String = null,
     markerDisplayed: on | off | auto = null,
     markerShape: circle | diamond | human | plus | square | star | triangleDown | triangleUp | auto | String = null,
-    markerSize: Int | Double = null,
+    markerSize: js.UndefOr[Double] = js.undefined,
     markerSvgClassName: String = null,
     markerSvgStyle: js.Object = null,
     name: String = null,
     pattern: smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | auto = null,
-    pieSliceExplode: Int | Double = null,
+    pieSliceExplode: js.UndefOr[Double] = js.undefined,
     shortDesc: String = null,
     source: String = null,
     sourceHover: String = null,
@@ -129,7 +129,7 @@ object ojChartSeriesSettableProperties {
     if (areaSvgStyle != null) __obj.updateDynamic("areaSvgStyle")(areaSvgStyle.asInstanceOf[js.Any])
     if (assignedToY2 != null) __obj.updateDynamic("assignedToY2")(assignedToY2.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
     if (boxPlot != null) __obj.updateDynamic("boxPlot")(boxPlot.asInstanceOf[js.Any])
     if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
@@ -137,16 +137,16 @@ object ojChartSeriesSettableProperties {
     if (drilling != null) __obj.updateDynamic("drilling")(drilling.asInstanceOf[js.Any])
     if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
     if (lineType != null) __obj.updateDynamic("lineType")(lineType.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
     if (markerColor != null) __obj.updateDynamic("markerColor")(markerColor.asInstanceOf[js.Any])
     if (markerDisplayed != null) __obj.updateDynamic("markerDisplayed")(markerDisplayed.asInstanceOf[js.Any])
     if (markerShape != null) __obj.updateDynamic("markerShape")(markerShape.asInstanceOf[js.Any])
-    if (markerSize != null) __obj.updateDynamic("markerSize")(markerSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerSize)) __obj.updateDynamic("markerSize")(markerSize.get.asInstanceOf[js.Any])
     if (markerSvgClassName != null) __obj.updateDynamic("markerSvgClassName")(markerSvgClassName.asInstanceOf[js.Any])
     if (markerSvgStyle != null) __obj.updateDynamic("markerSvgStyle")(markerSvgStyle.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (pieSliceExplode != null) __obj.updateDynamic("pieSliceExplode")(pieSliceExplode.asInstanceOf[js.Any])
+    if (!js.isUndefined(pieSliceExplode)) __obj.updateDynamic("pieSliceExplode")(pieSliceExplode.get.asInstanceOf[js.Any])
     if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (sourceHover != null) __obj.updateDynamic("sourceHover")(sourceHover.asInstanceOf[js.Any])

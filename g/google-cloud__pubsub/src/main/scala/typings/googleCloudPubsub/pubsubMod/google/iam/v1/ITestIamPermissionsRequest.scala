@@ -14,10 +14,13 @@ trait ITestIamPermissionsRequest extends js.Object {
 
 object ITestIamPermissionsRequest {
   @scala.inline
-  def apply(permissions: js.Array[String] = null, resource: String = null): ITestIamPermissionsRequest = {
+  def apply(
+    permissions: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    resource: js.UndefOr[Null | String] = js.undefined
+  ): ITestIamPermissionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
+    if (!js.isUndefined(permissions)) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
+    if (!js.isUndefined(resource)) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITestIamPermissionsRequest]
   }
 }

@@ -1,9 +1,9 @@
 package typings.gapiClientGenomics.gapi.client.genomics
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientGenomics.AnonAccesstoken
-import typings.gapiClientGenomics.AnonAlt
-import typings.gapiClientGenomics.AnonAnnotationId
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientGenomics.anon.Accesstoken
+import typings.gapiClientGenomics.anon.Alt
+import typings.gapiClientGenomics.anon.AnnotationId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ trait AnnotationsResource extends js.Object {
     * see
     * CreateAnnotation.
     */
-  def batchCreate(request: AnonAccesstoken): Request_[BatchCreateAnnotationsResponse]
+  def batchCreate(request: Accesstoken): Request[BatchCreateAnnotationsResponse]
   /**
     * Creates a new annotation. Caller must have WRITE permission
     * for the associated annotation set.
@@ -50,17 +50,17 @@ trait AnnotationsResource extends js.Object {
     * Annotation resource
     * for additional restrictions on each field.
     */
-  def create(request: AnonAccesstoken): Request_[Annotation]
+  def create(request: Accesstoken): Request[Annotation]
   /**
     * Deletes an annotation. Caller must have WRITE permission for
     * the associated annotation set.
     */
-  def delete(request: AnonAlt): Request_[js.Object]
+  def delete(request: Alt): Request[js.Object]
   /**
     * Gets an annotation. Caller must have READ permission
     * for the associated annotation set.
     */
-  def get(request: AnonAlt): Request_[Annotation]
+  def get(request: Alt): Request[Annotation]
   /**
     * Searches for annotations that match the given criteria. Results are
     * ordered by genomic coordinate (by reference sequence, then position).
@@ -70,23 +70,23 @@ trait AnnotationsResource extends js.Object {
     * across their respective streams of paginated responses. Caller must have
     * READ permission for the queried annotation sets.
     */
-  def search(request: AnonAccesstoken): Request_[SearchAnnotationsResponse]
+  def search(request: Accesstoken): Request[SearchAnnotationsResponse]
   /**
     * Updates an annotation. Caller must have
     * WRITE permission for the associated dataset.
     */
-  def update(request: AnonAnnotationId): Request_[Annotation]
+  def update(request: AnnotationId): Request[Annotation]
 }
 
 object AnnotationsResource {
   @scala.inline
   def apply(
-    batchCreate: AnonAccesstoken => Request_[BatchCreateAnnotationsResponse],
-    create: AnonAccesstoken => Request_[Annotation],
-    delete: AnonAlt => Request_[js.Object],
-    get: AnonAlt => Request_[Annotation],
-    search: AnonAccesstoken => Request_[SearchAnnotationsResponse],
-    update: AnonAnnotationId => Request_[Annotation]
+    batchCreate: Accesstoken => Request[BatchCreateAnnotationsResponse],
+    create: Accesstoken => Request[Annotation],
+    delete: Alt => Request[js.Object],
+    get: Alt => Request[Annotation],
+    search: Accesstoken => Request[SearchAnnotationsResponse],
+    update: AnnotationId => Request[Annotation]
   ): AnnotationsResource = {
     val __obj = js.Dynamic.literal(batchCreate = js.Any.fromFunction1(batchCreate), create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), search = js.Any.fromFunction1(search), update = js.Any.fromFunction1(update))
     __obj.asInstanceOf[AnnotationsResource]

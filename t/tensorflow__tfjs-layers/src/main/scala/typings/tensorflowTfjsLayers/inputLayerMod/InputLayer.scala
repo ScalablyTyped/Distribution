@@ -17,6 +17,6 @@ class InputLayer protected () extends Layer {
 @js.native
 object InputLayer extends js.Object {
   /** @nocollapse */
-  val className: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.InputLayer = js.native
+  val className: /* "InputLayer" */ String = js.native
 }
 

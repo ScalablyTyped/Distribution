@@ -18,10 +18,13 @@ trait CaptionSourceFramerate extends js.Object {
 
 object CaptionSourceFramerate {
   @scala.inline
-  def apply(FramerateDenominator: Int | Double = null, FramerateNumerator: Int | Double = null): CaptionSourceFramerate = {
+  def apply(
+    FramerateDenominator: js.UndefOr[integerMin1Max1001] = js.undefined,
+    FramerateNumerator: js.UndefOr[integerMin1Max60000] = js.undefined
+  ): CaptionSourceFramerate = {
     val __obj = js.Dynamic.literal()
-    if (FramerateDenominator != null) __obj.updateDynamic("FramerateDenominator")(FramerateDenominator.asInstanceOf[js.Any])
-    if (FramerateNumerator != null) __obj.updateDynamic("FramerateNumerator")(FramerateNumerator.asInstanceOf[js.Any])
+    if (!js.isUndefined(FramerateDenominator)) __obj.updateDynamic("FramerateDenominator")(FramerateDenominator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(FramerateNumerator)) __obj.updateDynamic("FramerateNumerator")(FramerateNumerator.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptionSourceFramerate]
   }
 }

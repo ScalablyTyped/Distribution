@@ -2,7 +2,7 @@ package typings.antdMobileRn.listPropsTypeMod
 
 import typings.antdMobileRn.antdMobileRnBooleans.`false`
 import typings.react.mod.ReactType
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

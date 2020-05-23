@@ -10,9 +10,9 @@ trait StaticContext extends js.Object {
 
 object StaticContext {
   @scala.inline
-  def apply(statusCode: Int | Double = null): StaticContext = {
+  def apply(statusCode: js.UndefOr[Double] = js.undefined): StaticContext = {
     val __obj = js.Dynamic.literal()
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusCode)) __obj.updateDynamic("statusCode")(statusCode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaticContext]
   }
 }

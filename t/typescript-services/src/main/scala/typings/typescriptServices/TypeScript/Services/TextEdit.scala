@@ -4,21 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.Services.TextEdit")
-@js.native
-class TextEdit protected () extends js.Object {
-  def this(minChar: Double, limChar: Double, text: String) = this()
-  var limChar: Double = js.native
-  var minChar: Double = js.native
-  var text: String = js.native
+trait TextEdit extends js.Object {
+  var limChar: Double
+  var minChar: Double
+  var text: String
 }
 
-/* static members */
-@JSGlobal("TypeScript.Services.TextEdit")
-@js.native
-object TextEdit extends js.Object {
-  def createDelete(minChar: Double, limChar: Double): TextEdit = js.native
-  def createInsert(pos: Double, text: String): TextEdit = js.native
-  def createReplace(minChar: Double, limChar: Double, text: String): TextEdit = js.native
+object TextEdit {
+  @scala.inline
+  def apply(limChar: Double, minChar: Double, text: String): TextEdit = {
+    val __obj = js.Dynamic.literal(limChar = limChar.asInstanceOf[js.Any], minChar = minChar.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TextEdit]
+  }
 }
 

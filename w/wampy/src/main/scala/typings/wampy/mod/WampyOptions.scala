@@ -29,7 +29,7 @@ object WampyOptions {
     authmethods: js.Array[String] = null,
     autoReconnect: js.UndefOr[Boolean] = js.undefined,
     helloCustomDetails: js.Any = null,
-    maxRetries: Int | Double = null,
+    maxRetries: js.UndefOr[Double] = js.undefined,
     onChallenge: (/* auth_method */ String, /* extra */ Dict) => String = null,
     onClose: () => Unit = null,
     onConnect: () => Unit = null,
@@ -37,16 +37,16 @@ object WampyOptions {
     onReconnect: () => Unit = null,
     onReconnectSuccess: () => Unit = null,
     realm: String = null,
-    reconnectInterval: Int | Double = null,
+    reconnectInterval: js.UndefOr[Double] = js.undefined,
     serializer: js.Any = null,
     ws: js.Any = null
   ): WampyOptions = {
     val __obj = js.Dynamic.literal()
     if (authid != null) __obj.updateDynamic("authid")(authid.asInstanceOf[js.Any])
     if (authmethods != null) __obj.updateDynamic("authmethods")(authmethods.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoReconnect)) __obj.updateDynamic("autoReconnect")(autoReconnect.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoReconnect)) __obj.updateDynamic("autoReconnect")(autoReconnect.get.asInstanceOf[js.Any])
     if (helloCustomDetails != null) __obj.updateDynamic("helloCustomDetails")(helloCustomDetails.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
     if (onChallenge != null) __obj.updateDynamic("onChallenge")(js.Any.fromFunction2(onChallenge))
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
     if (onConnect != null) __obj.updateDynamic("onConnect")(js.Any.fromFunction0(onConnect))
@@ -54,7 +54,7 @@ object WampyOptions {
     if (onReconnect != null) __obj.updateDynamic("onReconnect")(js.Any.fromFunction0(onReconnect))
     if (onReconnectSuccess != null) __obj.updateDynamic("onReconnectSuccess")(js.Any.fromFunction0(onReconnectSuccess))
     if (realm != null) __obj.updateDynamic("realm")(realm.asInstanceOf[js.Any])
-    if (reconnectInterval != null) __obj.updateDynamic("reconnectInterval")(reconnectInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(reconnectInterval)) __obj.updateDynamic("reconnectInterval")(reconnectInterval.get.asInstanceOf[js.Any])
     if (serializer != null) __obj.updateDynamic("serializer")(serializer.asInstanceOf[js.Any])
     if (ws != null) __obj.updateDynamic("ws")(ws.asInstanceOf[js.Any])
     __obj.asInstanceOf[WampyOptions]

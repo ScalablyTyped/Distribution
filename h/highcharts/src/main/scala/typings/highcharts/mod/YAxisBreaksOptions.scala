@@ -30,16 +30,16 @@ trait YAxisBreaksOptions extends js.Object {
 object YAxisBreaksOptions {
   @scala.inline
   def apply(
-    breakSize: Int | Double = null,
-    from: Int | Double = null,
-    repeat: Int | Double = null,
-    to: Int | Double = null
+    breakSize: js.UndefOr[Double] = js.undefined,
+    from: js.UndefOr[Double] = js.undefined,
+    repeat: js.UndefOr[Double] = js.undefined,
+    to: js.UndefOr[Double] = js.undefined
   ): YAxisBreaksOptions = {
     val __obj = js.Dynamic.literal()
-    if (breakSize != null) __obj.updateDynamic("breakSize")(breakSize.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (!js.isUndefined(breakSize)) __obj.updateDynamic("breakSize")(breakSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeat)) __obj.updateDynamic("repeat")(repeat.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(to)) __obj.updateDynamic("to")(to.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[YAxisBreaksOptions]
   }
 }

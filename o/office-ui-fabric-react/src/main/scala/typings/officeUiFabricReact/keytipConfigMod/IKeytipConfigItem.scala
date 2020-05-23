@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.keytipConfigMod
 
-import typings.officeUiFabricReact.PartialIKeytipProps
+import typings.officeUiFabricReact.anon.PartialIKeytipProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

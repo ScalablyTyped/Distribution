@@ -1,6 +1,6 @@
 package typings.gatsby.mod
 
-import typings.gatsby.AnonDel
+import typings.gatsby.anon.Del
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,11 @@ import scala.scalajs.js.annotation._
 trait WrapPageElementNodeArgs[DataType, PageContextType] extends NodePluginArgs {
   var element: js.Object
   var pathname: String
-  var props: PageProps[DataType, PageContextType]
+  var props: PageProps[
+    DataType, 
+    PageContextType, 
+    /* import warning: importer.ImportType#apply Failed type conversion: @reach/router.@reach/router.WindowLocation<history.history.LocationState>['state'] */ js.Any
+  ]
 }
 
 object WrapPageElementNodeArgs {
@@ -17,7 +21,7 @@ object WrapPageElementNodeArgs {
   def apply[DataType, PageContextType](
     actions: Actions,
     boundActionCreators: Actions,
-    cache: AnonDel,
+    cache: Del,
     createContentDigest: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof createContentDigest */ js.Any,
     createNodeId: js.Function,
     element: js.Object,
@@ -30,7 +34,11 @@ object WrapPageElementNodeArgs {
     loadNodeContent: js.Function,
     pathPrefix: String,
     pathname: String,
-    props: PageProps[DataType, PageContextType],
+    props: PageProps[
+      DataType, 
+      PageContextType, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @reach/router.@reach/router.WindowLocation<history.history.LocationState>['state'] */ js.Any
+    ],
     reporter: Reporter,
     schema: NodePluginSchema,
     store: Store,

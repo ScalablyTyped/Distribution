@@ -23,14 +23,14 @@ trait JourneyLimits extends js.Object {
 object JourneyLimits {
   @scala.inline
   def apply(
-    DailyCap: Int | Double = null,
-    EndpointReentryCap: Int | Double = null,
-    MessagesPerSecond: Int | Double = null
+    DailyCap: js.UndefOr[integer] = js.undefined,
+    EndpointReentryCap: js.UndefOr[integer] = js.undefined,
+    MessagesPerSecond: js.UndefOr[integer] = js.undefined
   ): JourneyLimits = {
     val __obj = js.Dynamic.literal()
-    if (DailyCap != null) __obj.updateDynamic("DailyCap")(DailyCap.asInstanceOf[js.Any])
-    if (EndpointReentryCap != null) __obj.updateDynamic("EndpointReentryCap")(EndpointReentryCap.asInstanceOf[js.Any])
-    if (MessagesPerSecond != null) __obj.updateDynamic("MessagesPerSecond")(MessagesPerSecond.asInstanceOf[js.Any])
+    if (!js.isUndefined(DailyCap)) __obj.updateDynamic("DailyCap")(DailyCap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EndpointReentryCap)) __obj.updateDynamic("EndpointReentryCap")(EndpointReentryCap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MessagesPerSecond)) __obj.updateDynamic("MessagesPerSecond")(MessagesPerSecond.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JourneyLimits]
   }
 }

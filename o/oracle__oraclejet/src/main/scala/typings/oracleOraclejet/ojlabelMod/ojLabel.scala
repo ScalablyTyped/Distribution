@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojlabelMod
 
-import typings.oracleOraclejet.AnonDefinitionSource
-import typings.oracleOraclejet.AnonTooltipHelp
+import typings.oracleOraclejet.anon.DefinitionSource
+import typings.oracleOraclejet.anon.TooltipHelp
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.baseComponent
 import typings.oracleOraclejet.oracleOraclejetStrings.`for`
@@ -21,15 +21,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ojLabel extends baseComponent[ojLabelSettableProperties] {
   var `for`: String | Null = js.native
-  var help: AnonDefinitionSource = js.native
+  var help: DefinitionSource = js.native
   var labelId: String | Null = js.native
   var onForChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
-  var onHelpChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonDefinitionSource], _]) | Null = js.native
+  var onHelpChanged: (js.Function1[/* event */ JetElementCustomEvent[DefinitionSource], _]) | Null = js.native
   var onLabelIdChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
   var onShowRequiredChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean | Null], _]) | Null = js.native
   var showRequired: Boolean | Null = js.native
   @JSName("translations")
-  var translations_ojLabel: AnonTooltipHelp = js.native
+  var translations_ojLabel: TooltipHelp = js.native
   @JSName("addEventListener")
   def addEventListener_forChanged(
     `type`: forChanged,
@@ -44,12 +44,12 @@ trait ojLabel extends baseComponent[ojLabelSettableProperties] {
   @JSName("addEventListener")
   def addEventListener_helpChanged(
     `type`: helpChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonDefinitionSource], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[DefinitionSource], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_helpChanged(
     `type`: helpChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonDefinitionSource], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[DefinitionSource], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -77,7 +77,7 @@ trait ojLabel extends baseComponent[ojLabelSettableProperties] {
   @JSName("getProperty")
   def getProperty_for(property: `for`): String | Null = js.native
   @JSName("getProperty")
-  def getProperty_help(property: help): AnonDefinitionSource = js.native
+  def getProperty_help(property: help): DefinitionSource = js.native
   @JSName("getProperty")
   def getProperty_labelId(property: labelId): String | Null = js.native
   @JSName("getProperty")
@@ -88,7 +88,7 @@ trait ojLabel extends baseComponent[ojLabelSettableProperties] {
   @JSName("setProperty")
   def setProperty_for(property: `for`, value: String): Unit = js.native
   @JSName("setProperty")
-  def setProperty_help(property: help, value: AnonDefinitionSource): Unit = js.native
+  def setProperty_help(property: help, value: DefinitionSource): Unit = js.native
   @JSName("setProperty")
   def setProperty_labelId(property: labelId): Unit = js.native
   @JSName("setProperty")
@@ -98,6 +98,6 @@ trait ojLabel extends baseComponent[ojLabelSettableProperties] {
   @JSName("setProperty")
   def setProperty_showRequired(property: showRequired, value: Boolean): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonTooltipHelp): Unit = js.native
+  def setProperty_translations(property: translations, value: TooltipHelp): Unit = js.native
 }
 

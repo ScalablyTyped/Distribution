@@ -1,6 +1,6 @@
 package typings.antd.editableMod
 
-import typings.antd.AnonCurrentString
+import typings.antd.anon.CurrentString
 import typings.react.mod.ChangeEventHandler
 import typings.react.mod.Component
 import typings.react.mod.FocusEventHandler
@@ -20,7 +20,7 @@ trait Editable
   var onKeyDown: KeyboardEventHandler[HTMLTextAreaElement] = js.native
   var onKeyUp: KeyboardEventHandler[HTMLTextAreaElement] = js.native
   @JSName("state")
-  var state_Editable: AnonCurrentString = js.native
+  var state_Editable: CurrentString = js.native
   var textarea: js.UndefOr[typings.antd.textAreaMod.default] = js.native
   @JSName("componentDidMount")
   def componentDidMount_MEditable(): Unit = js.native

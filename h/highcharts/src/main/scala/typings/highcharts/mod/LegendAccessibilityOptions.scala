@@ -24,7 +24,7 @@ object LegendAccessibilityOptions {
     keyboardNavigation: LegendAccessibilityKeyboardNavigationOptions = null
   ): LegendAccessibilityOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (keyboardNavigation != null) __obj.updateDynamic("keyboardNavigation")(keyboardNavigation.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendAccessibilityOptions]
   }

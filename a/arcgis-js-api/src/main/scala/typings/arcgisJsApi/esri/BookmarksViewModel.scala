@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,8 +54,4 @@ trait BookmarksViewModel
     */
   def goTo(Bookmark: Bookmark): js.Promise[_] = js.native
 }
-
-@JSGlobal("__esri.BookmarksViewModel")
-@js.native
-object BookmarksViewModel extends TopLevel[BookmarksViewModelConstructor]
 

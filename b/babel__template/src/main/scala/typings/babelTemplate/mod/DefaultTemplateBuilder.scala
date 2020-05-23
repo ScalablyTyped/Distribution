@@ -1,6 +1,6 @@
 package typings.babelTemplate.mod
 
-import typings.babelTemplate.FnCall
+import typings.babelTemplate.anon.FnCall
 import typings.babelTypes.mod.Expression
 import typings.babelTypes.mod.Program_
 import typings.babelTypes.mod.Statement

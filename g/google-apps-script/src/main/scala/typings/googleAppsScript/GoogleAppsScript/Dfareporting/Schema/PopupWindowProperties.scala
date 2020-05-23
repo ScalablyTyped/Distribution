@@ -33,11 +33,11 @@ object PopupWindowProperties {
     if (dimension != null) __obj.updateDynamic("dimension")(dimension.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (positionType != null) __obj.updateDynamic("positionType")(positionType.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAddressBar)) __obj.updateDynamic("showAddressBar")(showAddressBar.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMenuBar)) __obj.updateDynamic("showMenuBar")(showMenuBar.asInstanceOf[js.Any])
-    if (!js.isUndefined(showScrollBar)) __obj.updateDynamic("showScrollBar")(showScrollBar.asInstanceOf[js.Any])
-    if (!js.isUndefined(showStatusBar)) __obj.updateDynamic("showStatusBar")(showStatusBar.asInstanceOf[js.Any])
-    if (!js.isUndefined(showToolBar)) __obj.updateDynamic("showToolBar")(showToolBar.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAddressBar)) __obj.updateDynamic("showAddressBar")(showAddressBar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMenuBar)) __obj.updateDynamic("showMenuBar")(showMenuBar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showScrollBar)) __obj.updateDynamic("showScrollBar")(showScrollBar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showStatusBar)) __obj.updateDynamic("showStatusBar")(showStatusBar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showToolBar)) __obj.updateDynamic("showToolBar")(showToolBar.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupWindowProperties]
   }

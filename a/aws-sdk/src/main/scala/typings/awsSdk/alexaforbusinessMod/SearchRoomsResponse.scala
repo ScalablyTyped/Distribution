@@ -22,11 +22,15 @@ trait SearchRoomsResponse extends js.Object {
 
 object SearchRoomsResponse {
   @scala.inline
-  def apply(NextToken: NextToken = null, Rooms: RoomDataList = null, TotalCount: Int | Double = null): SearchRoomsResponse = {
+  def apply(
+    NextToken: NextToken = null,
+    Rooms: RoomDataList = null,
+    TotalCount: js.UndefOr[TotalCount] = js.undefined
+  ): SearchRoomsResponse = {
     val __obj = js.Dynamic.literal()
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (Rooms != null) __obj.updateDynamic("Rooms")(Rooms.asInstanceOf[js.Any])
-    if (TotalCount != null) __obj.updateDynamic("TotalCount")(TotalCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalCount)) __obj.updateDynamic("TotalCount")(TotalCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchRoomsResponse]
   }
 }

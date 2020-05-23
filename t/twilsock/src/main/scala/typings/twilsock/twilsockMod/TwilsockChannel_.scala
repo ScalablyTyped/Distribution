@@ -35,8 +35,6 @@ class TwilsockChannel_ protected () extends EventEmitter {
   var finalizeSocket: js.Any = js.native
   val fsm: js.Any = js.native
   var initRetry: js.Any = js.native
-  val isConnected: Boolean = js.native
-  val isTerminalState: Boolean = js.native
   var lastEmittedState: js.Any = js.native
   var modifyBackoff: js.Any = js.native
   var onCloseReceived: js.Any = js.native
@@ -49,8 +47,8 @@ class TwilsockChannel_ protected () extends EventEmitter {
   var sendUpdate: js.Any = js.native
   var setupSocket: js.Any = js.native
   var startDisconnectTimer: js.Any = js.native
-  val state: State = js.native
   val terminalStates: js.Any = js.native
+  var terminationReason: js.Any = js.native
   val tokenExpiredSasCode: js.Any = js.native
   var transport: js.Any = js.native
   var transportReady: js.Any = js.native
@@ -65,6 +63,10 @@ class TwilsockChannel_ protected () extends EventEmitter {
     * If already disconnected, it does nothing
     */
   def disconnect(): js.Promise[Unit] = js.native
+  def getTerminationReason: String = js.native
+  def isConnected: Boolean = js.native
+  def isTerminalState: Boolean = js.native
+  def state: State = js.native
   /**
     * Update fpa token for twilsock connection
     */

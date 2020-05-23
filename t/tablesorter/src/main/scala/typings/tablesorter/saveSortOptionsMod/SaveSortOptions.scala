@@ -43,7 +43,7 @@ object SaveSortOptions {
     storage_tableId: String = null
   ): SaveSortOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(saveSort)) __obj.updateDynamic("saveSort")(saveSort.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveSort)) __obj.updateDynamic("saveSort")(saveSort.get.asInstanceOf[js.Any])
     if (storage_fixedUrl != null) __obj.updateDynamic("storage_fixedUrl")(storage_fixedUrl.asInstanceOf[js.Any])
     if (storage_group != null) __obj.updateDynamic("storage_group")(storage_group.asInstanceOf[js.Any])
     if (storage_page != null) __obj.updateDynamic("storage_page")(storage_page.asInstanceOf[js.Any])

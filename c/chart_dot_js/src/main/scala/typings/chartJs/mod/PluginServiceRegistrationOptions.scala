@@ -1,6 +1,6 @@
 package typings.chartJs.mod
 
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait PluginServiceRegistrationOptions extends js.Object {
     js.Function3[/* chartInstance */ Chart, /* easing */ Easing, /* options */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   var afterEvent: js.UndefOr[
-    js.Function3[/* chartInstance */ Chart, /* event */ Event_, /* options */ js.UndefOr[js.Any], Unit]
+    js.Function3[/* chartInstance */ Chart, /* event */ Event, /* options */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   var afterInit: js.UndefOr[js.Function2[/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any], Unit]] = js.undefined
   var afterLayout: js.UndefOr[js.Function2[/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any], Unit]] = js.undefined
@@ -51,7 +51,7 @@ trait PluginServiceRegistrationOptions extends js.Object {
   ] = js.undefined
   // Called when an event occurs on the chart
   var beforeEvent: js.UndefOr[
-    js.Function3[/* chartInstance */ Chart, /* event */ Event_, /* options */ js.UndefOr[js.Any], Unit]
+    js.Function3[/* chartInstance */ Chart, /* event */ Event, /* options */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   var beforeInit: js.UndefOr[js.Function2[/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any], Unit]] = js.undefined
   var beforeLayout: js.UndefOr[js.Function2[/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any], Unit]] = js.undefined
@@ -88,7 +88,7 @@ object PluginServiceRegistrationOptions {
     afterDatasetsDraw: (/* chartInstance */ Chart, /* easing */ Easing, /* options */ js.UndefOr[js.Any]) => Unit = null,
     afterDatasetsUpdate: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit = null,
     afterDraw: (/* chartInstance */ Chart, /* easing */ Easing, /* options */ js.UndefOr[js.Any]) => Unit = null,
-    afterEvent: (/* chartInstance */ Chart, /* event */ Event_, /* options */ js.UndefOr[js.Any]) => Unit = null,
+    afterEvent: (/* chartInstance */ Chart, /* event */ Event, /* options */ js.UndefOr[js.Any]) => Unit = null,
     afterInit: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit = null,
     afterLayout: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit = null,
     afterRender: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit = null,
@@ -100,7 +100,7 @@ object PluginServiceRegistrationOptions {
     beforeDatasetsDraw: (/* chartInstance */ Chart, /* easing */ Easing, /* options */ js.UndefOr[js.Any]) => Unit = null,
     beforeDatasetsUpdate: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit = null,
     beforeDraw: (/* chartInstance */ Chart, /* easing */ Easing, /* options */ js.UndefOr[js.Any]) => Unit = null,
-    beforeEvent: (/* chartInstance */ Chart, /* event */ Event_, /* options */ js.UndefOr[js.Any]) => Unit = null,
+    beforeEvent: (/* chartInstance */ Chart, /* event */ Event, /* options */ js.UndefOr[js.Any]) => Unit = null,
     beforeInit: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit = null,
     beforeLayout: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit = null,
     beforeRender: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit = null,

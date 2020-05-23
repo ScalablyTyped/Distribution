@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -72,8 +71,4 @@ trait ScaleRangeSlider extends Widget_ {
     */
   var visibleElements: ScaleRangeSliderVisibleElements = js.native
 }
-
-@JSGlobal("__esri.ScaleRangeSlider")
-@js.native
-object ScaleRangeSlider extends TopLevel[ScaleRangeSliderConstructor]
 

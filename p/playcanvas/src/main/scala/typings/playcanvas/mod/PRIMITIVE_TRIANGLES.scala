@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.PRIMITIVE_TRIANGLES
-  * @type {number}
-  * @description Discrete list of triangles.
+  * Discrete list of triangles.
   */
 @JSImport("playcanvas", "PRIMITIVE_TRIANGLES")
 @js.native

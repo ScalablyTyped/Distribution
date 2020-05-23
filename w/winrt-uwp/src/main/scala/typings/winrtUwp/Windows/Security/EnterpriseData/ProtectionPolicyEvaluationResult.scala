@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Security.EnterpriseData
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object ProtectionPolicyEvaluationResult extends js.Object {
   /** Consent is required for access. */
   @js.native
   sealed trait consentRequired extends ProtectionPolicyEvaluationResult
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ProtectionPolicyEvaluationResult with Double] = js.native
-  /* 0 */ @js.native
-  object allowed extends TopLevel[allowed with Double]
-  
-  /* 1 */ @js.native
-  object blocked extends TopLevel[blocked with Double]
-  
-  /* 2 */ @js.native
-  object consentRequired extends TopLevel[consentRequired with Double]
   
 }
 

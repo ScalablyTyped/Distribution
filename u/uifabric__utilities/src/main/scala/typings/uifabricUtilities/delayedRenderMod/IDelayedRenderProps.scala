@@ -20,15 +20,15 @@ object IDelayedRenderProps {
   @scala.inline
   def apply(
     children: ReactNode = null,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     key: Key = null,
-    ref: LegacyRef[js.Object] = null
+    ref: js.UndefOr[Null | LegacyRef[js.Object]] = js.undefined
   ): IDelayedRenderProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDelayedRenderProps]
   }
 }

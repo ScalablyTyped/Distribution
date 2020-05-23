@@ -4,16 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.model.CompositeType")
 @js.native
-abstract class CompositeType protected () extends SimpleType {
-  /**
-    * Constructor for a new CompositeType.
-    * @param oFormatOptions options as provided by concrete subclasses
-    * @param oConstraints constraints as supported by concrete subclasses
-    */
-  def this(oFormatOptions: js.Any) = this()
-  def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
+trait CompositeType extends SimpleType {
   /**
     * Format the given set of values in model representation to an output value in the giveninternal type.
     * This happens according to the format options, if target type is 'string'.If aValues is not defined

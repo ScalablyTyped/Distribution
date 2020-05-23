@@ -16,56 +16,56 @@ trait IPullRefresh extends IComponent {
   /** [Config Option] (Boolean) */
   var autoSnapBack: js.UndefOr[Boolean] = js.undefined
   /** [Method] Returns the value of autoSnapBack
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getAutoSnapBack: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of lastUpdatedDateFormat
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getLastUpdatedDateFormat: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of lastUpdatedText
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getLastUpdatedText: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of list
-  		* @returns Ext.dataview.List
-  		*/
+    * @returns Ext.dataview.List
+    */
   var getList: js.UndefOr[js.Function0[IList]] = js.undefined
   /** [Method] Returns the value of loadedText
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getLoadedText: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of loadingText
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getLoadingText: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of overpullSnapBackDuration
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getOverpullSnapBackDuration: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of pullText
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getPullText: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of pullTpl
-  		* @returns Ext.XTemplate/String/Array
-  		*/
+    * @returns Ext.XTemplate/String/Array
+    */
   var getPullTpl: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of releaseText
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getReleaseText: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of scrollerAutoRefresh
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getScrollerAutoRefresh: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of snappingAnimationDuration
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getSnappingAnimationDuration: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of translatable
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getTranslatable: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Config Option] (String) */
   var lastUpdatedDateFormat: js.UndefOr[String] = js.undefined
@@ -92,68 +92,68 @@ trait IPullRefresh extends IComponent {
   /** [Config Option] (Boolean) */
   var scrollerAutoRefresh: js.UndefOr[Boolean] = js.undefined
   /** [Method] Sets the value of autoSnapBack
-  		* @param autoSnapBack Boolean The new value.
-  		*/
+    * @param autoSnapBack Boolean The new value.
+    */
   var setAutoSnapBack: js.UndefOr[js.Function1[/* autoSnapBack */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of lastUpdatedDateFormat
-  		* @param lastUpdatedDateFormat String The new value.
-  		*/
+    * @param lastUpdatedDateFormat String The new value.
+    */
   var setLastUpdatedDateFormat: js.UndefOr[js.Function1[/* lastUpdatedDateFormat */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of lastUpdatedText
-  		* @param lastUpdatedText String The new value.
-  		*/
+    * @param lastUpdatedText String The new value.
+    */
   var setLastUpdatedText: js.UndefOr[js.Function1[/* lastUpdatedText */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of list
-  		* @param list Ext.dataview.List The new value.
-  		*/
+    * @param list Ext.dataview.List The new value.
+    */
   var setList: js.UndefOr[js.Function1[/* list */ js.UndefOr[IList], Unit]] = js.undefined
   /** [Method] Sets the value of loadedText
-  		* @param loadedText String The new value.
-  		*/
+    * @param loadedText String The new value.
+    */
   var setLoadedText: js.UndefOr[js.Function1[/* loadedText */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of loadingText
-  		* @param loadingText String The new value.
-  		*/
+    * @param loadingText String The new value.
+    */
   var setLoadingText: js.UndefOr[js.Function1[/* loadingText */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of overpullSnapBackDuration
-  		* @param overpullSnapBackDuration Number The new value.
-  		*/
+    * @param overpullSnapBackDuration Number The new value.
+    */
   var setOverpullSnapBackDuration: js.UndefOr[js.Function1[/* overpullSnapBackDuration */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Updates the PullRefreshText
-  		* @param text String
-  		*/
+    * @param text String
+    */
   var setPullRefreshText: js.UndefOr[js.Function1[/* text */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of pullText
-  		* @param pullText String The new value.
-  		*/
+    * @param pullText String The new value.
+    */
   var setPullText: js.UndefOr[js.Function1[/* pullText */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of pullTpl
-  		* @param pullTpl Ext.XTemplate/String/Array The new value.
-  		*/
+    * @param pullTpl Ext.XTemplate/String/Array The new value.
+    */
   var setPullTpl: js.UndefOr[js.Function1[/* pullTpl */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Updates the ReleaseRefreshText
-  		* @param text String
-  		*/
+    * @param text String
+    */
   var setReleaseRefreshText: js.UndefOr[js.Function1[/* text */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of releaseText
-  		* @param releaseText String The new value.
-  		*/
+    * @param releaseText String The new value.
+    */
   var setReleaseText: js.UndefOr[js.Function1[/* releaseText */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of scrollerAutoRefresh
-  		* @param scrollerAutoRefresh Boolean The new value.
-  		*/
+    * @param scrollerAutoRefresh Boolean The new value.
+    */
   var setScrollerAutoRefresh: js.UndefOr[js.Function1[/* scrollerAutoRefresh */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of snappingAnimationDuration
-  		* @param snappingAnimationDuration Number The new value.
-  		*/
+    * @param snappingAnimationDuration Number The new value.
+    */
   var setSnappingAnimationDuration: js.UndefOr[js.Function1[/* snappingAnimationDuration */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of translatable
-  		* @param translatable Boolean The new value.
-  		*/
+    * @param translatable Boolean The new value.
+    */
   var setTranslatable: js.UndefOr[js.Function1[/* translatable */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Snaps the List back to the top after a pullrefresh is complete
-  		* @param force Boolean Force the snapback to occur regardless of state {optional}
-  		*/
+    * @param force Boolean Force the snapback to occur regardless of state {optional}
+    */
   var snapBack: js.UndefOr[js.Function1[/* force */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Config Option] (Number) */
   var snappingAnimationDuration: js.UndefOr[Double] = js.undefined
@@ -198,7 +198,7 @@ object IPullRefresh {
     extend: String = null,
     fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
     fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
-    flex: Int | Double = null,
+    flex: js.UndefOr[Double] = js.undefined,
     floating: js.UndefOr[Boolean] = js.undefined,
     floatingCls: String = null,
     fullscreen: js.UndefOr[Boolean] = js.undefined,
@@ -303,7 +303,7 @@ object IPullRefresh {
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    overpullSnapBackDuration: Int | Double = null,
+    overpullSnapBackDuration: js.UndefOr[Double] = js.undefined,
     padding: js.Any = null,
     platformConfig: js.Any = null,
     plugins: js.Any = null,
@@ -394,7 +394,7 @@ object IPullRefresh {
     showBy: (/* component */ js.UndefOr[IPullRefresh], /* alignment */ js.UndefOr[String]) => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     snapBack: /* force */ js.UndefOr[Boolean] => Unit = null,
-    snappingAnimationDuration: Int | Double = null,
+    snappingAnimationDuration: js.UndefOr[Double] = js.undefined,
     statics: js.Any = null,
     stopMaskTapEvent: js.UndefOr[Boolean] = js.undefined,
     style: js.Any = null,
@@ -414,7 +414,7 @@ object IPullRefresh {
     uses: Array = null,
     width: js.Any = null,
     xtype: String = null,
-    zIndex: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined
   ): IPullRefresh = {
     val __obj = js.Dynamic.literal()
     if (addAfterListener != null) __obj.updateDynamic("addAfterListener")(js.Any.fromFunction4(addAfterListener))
@@ -425,7 +425,7 @@ object IPullRefresh {
     if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5(addManagedListener))
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoSnapBack)) __obj.updateDynamic("autoSnapBack")(autoSnapBack.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoSnapBack)) __obj.updateDynamic("autoSnapBack")(autoSnapBack.get.asInstanceOf[js.Any])
     if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls.asInstanceOf[js.Any])
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
@@ -433,7 +433,7 @@ object IPullRefresh {
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
     if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
     if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered.asInstanceOf[js.Any])
+    if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered.get.asInstanceOf[js.Any])
     if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
     if (cls != null) __obj.updateDynamic("cls")(cls.asInstanceOf[js.Any])
     if (componentCls != null) __obj.updateDynamic("componentCls")(componentCls.asInstanceOf[js.Any])
@@ -442,7 +442,7 @@ object IPullRefresh {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (disable != null) __obj.updateDynamic("disable")(js.Any.fromFunction0(disable))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (disabledCls != null) __obj.updateDynamic("disabledCls")(disabledCls.asInstanceOf[js.Any])
     if (dock != null) __obj.updateDynamic("dock")(dock.asInstanceOf[js.Any])
     if (docked != null) __obj.updateDynamic("docked")(docked.asInstanceOf[js.Any])
@@ -453,10 +453,10 @@ object IPullRefresh {
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (fireAction != null) __obj.updateDynamic("fireAction")(js.Any.fromFunction4(fireAction))
     if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
-    if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
-    if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating.asInstanceOf[js.Any])
+    if (!js.isUndefined(flex)) __obj.updateDynamic("flex")(flex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating.get.asInstanceOf[js.Any])
     if (floatingCls != null) __obj.updateDynamic("floatingCls")(floatingCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.get.asInstanceOf[js.Any])
     if (getAlignmentInfo != null) __obj.updateDynamic("getAlignmentInfo")(js.Any.fromFunction2(getAlignmentInfo))
     if (getAutoSnapBack != null) __obj.updateDynamic("getAutoSnapBack")(js.Any.fromFunction0(getAutoSnapBack))
     if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
@@ -523,11 +523,11 @@ object IPullRefresh {
     if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
     if (hasParent != null) __obj.updateDynamic("hasParent")(js.Any.fromFunction0(hasParent))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (hiddenCls != null) __obj.updateDynamic("hiddenCls")(hiddenCls.asInstanceOf[js.Any])
     if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction1(hide))
     if (hideAnimation != null) __obj.updateDynamic("hideAnimation")(hideAnimation.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideOnMaskTap)) __obj.updateDynamic("hideOnMaskTap")(hideOnMaskTap.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideOnMaskTap)) __obj.updateDynamic("hideOnMaskTap")(hideOnMaskTap.get.asInstanceOf[js.Any])
     if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
@@ -539,7 +539,7 @@ object IPullRefresh {
     if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
     if (lastUpdatedDateFormat != null) __obj.updateDynamic("lastUpdatedDateFormat")(lastUpdatedDateFormat.asInstanceOf[js.Any])
     if (lastUpdatedText != null) __obj.updateDynamic("lastUpdatedText")(lastUpdatedText.asInstanceOf[js.Any])
-    if (!js.isUndefined(layoutOnOrientationChange)) __obj.updateDynamic("layoutOnOrientationChange")(layoutOnOrientationChange.asInstanceOf[js.Any])
+    if (!js.isUndefined(layoutOnOrientationChange)) __obj.updateDynamic("layoutOnOrientationChange")(layoutOnOrientationChange.get.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
@@ -551,14 +551,14 @@ object IPullRefresh {
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.get.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
-    if (!js.isUndefined(monitorOrientation)) __obj.updateDynamic("monitorOrientation")(monitorOrientation.asInstanceOf[js.Any])
+    if (!js.isUndefined(monitorOrientation)) __obj.updateDynamic("monitorOrientation")(monitorOrientation.get.asInstanceOf[js.Any])
     if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
     if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5(on))
     if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4(onAfter))
     if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4(onBefore))
-    if (overpullSnapBackDuration != null) __obj.updateDynamic("overpullSnapBackDuration")(overpullSnapBackDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(overpullSnapBackDuration)) __obj.updateDynamic("overpullSnapBackDuration")(overpullSnapBackDuration.get.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
@@ -580,7 +580,7 @@ object IPullRefresh {
     if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction1(resumeEvents))
     if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
     if (scroll != null) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollerAutoRefresh)) __obj.updateDynamic("scrollerAutoRefresh")(scrollerAutoRefresh.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollerAutoRefresh)) __obj.updateDynamic("scrollerAutoRefresh")(scrollerAutoRefresh.get.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setAutoSnapBack != null) __obj.updateDynamic("setAutoSnapBack")(js.Any.fromFunction1(setAutoSnapBack))
     if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
@@ -647,14 +647,14 @@ object IPullRefresh {
     if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
     if (showAnimation != null) __obj.updateDynamic("showAnimation")(showAnimation.asInstanceOf[js.Any])
     if (showBy != null) __obj.updateDynamic("showBy")(js.Any.fromFunction2(showBy))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (snapBack != null) __obj.updateDynamic("snapBack")(js.Any.fromFunction1(snapBack))
-    if (snappingAnimationDuration != null) __obj.updateDynamic("snappingAnimationDuration")(snappingAnimationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(snappingAnimationDuration)) __obj.updateDynamic("snappingAnimationDuration")(snappingAnimationDuration.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopMaskTapEvent)) __obj.updateDynamic("stopMaskTapEvent")(stopMaskTapEvent.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopMaskTapEvent)) __obj.updateDynamic("stopMaskTapEvent")(stopMaskTapEvent.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (styleHtmlCls != null) __obj.updateDynamic("styleHtmlCls")(styleHtmlCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(styleHtmlContent)) __obj.updateDynamic("styleHtmlContent")(styleHtmlContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(styleHtmlContent)) __obj.updateDynamic("styleHtmlContent")(styleHtmlContent.get.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (tpl != null) __obj.updateDynamic("tpl")(tpl.asInstanceOf[js.Any])
@@ -669,7 +669,7 @@ object IPullRefresh {
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (xtype != null) __obj.updateDynamic("xtype")(xtype.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPullRefresh]
   }
 }

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js/lib/core/user-agents/re-invite-user-agent-client", JSImport.Namespace)
 @js.native
 object reInviteUserAgentClientMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.sipJs.outgoingRequestMod.OutgoingRequest because Already inherited
   - typings.sipJs.inviteMod.OutgoingInviteRequest because var conflicts: delegate, message. Inlined  */ @js.native
   class ReInviteUserAgentClient protected () extends UserAgentClient {

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TlsValidationContextFileTrust extends js.Object {
   /**
-    * The certificate trust chain for a certificate stored on the file system of the virtual node that the proxy is running on.
+    * The certificate trust chain for a certificate stored on the file system of the virtual
+    node that the proxy is running on.
     */
   var certificateChain: FilePath = js.native
 }

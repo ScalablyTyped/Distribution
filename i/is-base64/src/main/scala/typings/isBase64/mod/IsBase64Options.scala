@@ -20,10 +20,10 @@ object IsBase64Options {
     paddingRequired: js.UndefOr[Boolean] = js.undefined
   ): IsBase64Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowEmpty)) __obj.updateDynamic("allowEmpty")(allowEmpty.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowMime)) __obj.updateDynamic("allowMime")(allowMime.asInstanceOf[js.Any])
-    if (!js.isUndefined(mimeRequired)) __obj.updateDynamic("mimeRequired")(mimeRequired.asInstanceOf[js.Any])
-    if (!js.isUndefined(paddingRequired)) __obj.updateDynamic("paddingRequired")(paddingRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowEmpty)) __obj.updateDynamic("allowEmpty")(allowEmpty.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowMime)) __obj.updateDynamic("allowMime")(allowMime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mimeRequired)) __obj.updateDynamic("mimeRequired")(mimeRequired.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingRequired)) __obj.updateDynamic("paddingRequired")(paddingRequired.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsBase64Options]
   }
 }

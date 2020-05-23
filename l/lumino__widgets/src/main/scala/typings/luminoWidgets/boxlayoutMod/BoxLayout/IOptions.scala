@@ -30,11 +30,15 @@ trait IOptions extends js.Object {
 
 object IOptions {
   @scala.inline
-  def apply(alignment: Alignment = null, direction: Direction = null, spacing: Int | Double = null): IOptions = {
+  def apply(
+    alignment: Alignment = null,
+    direction: Direction = null,
+    spacing: js.UndefOr[Double] = js.undefined
+  ): IOptions = {
     val __obj = js.Dynamic.literal()
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(spacing)) __obj.updateDynamic("spacing")(spacing.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

@@ -1,0 +1,14 @@
+package typings.winrt.global.Windows.Networking.Sockets
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("Windows.Networking.Sockets.MessageWebSocket")
+@js.native
+class MessageWebSocket ()
+  extends typings.winrt.Windows.Networking.Sockets.MessageWebSocket {
+  /* CompleteClass */
+  override def close(): Unit = js.native
+}
+

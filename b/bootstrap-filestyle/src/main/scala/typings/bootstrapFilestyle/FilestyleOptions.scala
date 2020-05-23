@@ -32,14 +32,14 @@ object FilestyleOptions {
     size: String = null
   ): FilestyleOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(badge)) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
-    if (!js.isUndefined(buttonBefore)) __obj.updateDynamic("buttonBefore")(buttonBefore.asInstanceOf[js.Any])
+    if (!js.isUndefined(badge)) __obj.updateDynamic("badge")(badge.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(buttonBefore)) __obj.updateDynamic("buttonBefore")(buttonBefore.get.asInstanceOf[js.Any])
     if (buttonName != null) __obj.updateDynamic("buttonName")(buttonName.asInstanceOf[js.Any])
     if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.get.asInstanceOf[js.Any])
     if (iconName != null) __obj.updateDynamic("iconName")(iconName.asInstanceOf[js.Any])
-    if (!js.isUndefined(input)) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (!js.isUndefined(input)) __obj.updateDynamic("input")(input.get.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilestyleOptions]

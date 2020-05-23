@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Defines behaviour and contraints on the ValueSet Expansion operation
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait ExpansionProfile extends DomainResource {
   /**
     * Contains extended information for property 'activeOnly'.
@@ -244,28 +244,28 @@ object ExpansionProfile {
     if (_status != null) __obj.updateDynamic("_status")(_status.asInstanceOf[js.Any])
     if (_url != null) __obj.updateDynamic("_url")(_url.asInstanceOf[js.Any])
     if (_version != null) __obj.updateDynamic("_version")(_version.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeOnly)) __obj.updateDynamic("activeOnly")(activeOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeOnly)) __obj.updateDynamic("activeOnly")(activeOnly.get.asInstanceOf[js.Any])
     if (contact != null) __obj.updateDynamic("contact")(contact.asInstanceOf[js.Any])
     if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (designation != null) __obj.updateDynamic("designation")(designation.asInstanceOf[js.Any])
     if (displayLanguage != null) __obj.updateDynamic("displayLanguage")(displayLanguage.asInstanceOf[js.Any])
-    if (!js.isUndefined(excludeNested)) __obj.updateDynamic("excludeNested")(excludeNested.asInstanceOf[js.Any])
-    if (!js.isUndefined(excludeNotForUI)) __obj.updateDynamic("excludeNotForUI")(excludeNotForUI.asInstanceOf[js.Any])
-    if (!js.isUndefined(excludePostCoordinated)) __obj.updateDynamic("excludePostCoordinated")(excludePostCoordinated.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludeNested)) __obj.updateDynamic("excludeNested")(excludeNested.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludeNotForUI)) __obj.updateDynamic("excludeNotForUI")(excludeNotForUI.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludePostCoordinated)) __obj.updateDynamic("excludePostCoordinated")(excludePostCoordinated.get.asInstanceOf[js.Any])
     if (excludedSystem != null) __obj.updateDynamic("excludedSystem")(excludedSystem.asInstanceOf[js.Any])
-    if (!js.isUndefined(experimental)) __obj.updateDynamic("experimental")(experimental.asInstanceOf[js.Any])
+    if (!js.isUndefined(experimental)) __obj.updateDynamic("experimental")(experimental.get.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (fixedVersion != null) __obj.updateDynamic("fixedVersion")(fixedVersion.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
     if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeDefinition)) __obj.updateDynamic("includeDefinition")(includeDefinition.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeDesignations)) __obj.updateDynamic("includeDesignations")(includeDesignations.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeDefinition)) __obj.updateDynamic("includeDefinition")(includeDefinition.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeDesignations)) __obj.updateDynamic("includeDesignations")(includeDesignations.get.asInstanceOf[js.Any])
     if (jurisdiction != null) __obj.updateDynamic("jurisdiction")(jurisdiction.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (!js.isUndefined(limitedExpansion)) __obj.updateDynamic("limitedExpansion")(limitedExpansion.asInstanceOf[js.Any])
+    if (!js.isUndefined(limitedExpansion)) __obj.updateDynamic("limitedExpansion")(limitedExpansion.get.asInstanceOf[js.Any])
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

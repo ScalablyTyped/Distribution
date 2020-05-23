@@ -1,8 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +16,28 @@ trait Response extends Body {
   val url: java.lang.String
 }
 
-@JSGlobal("Response")
-@js.native
-object Response
-  extends Instantiable0[Response]
-     with Instantiable1[/* body */ BodyInit, Response]
-     with Instantiable2[(/* body */ BodyInit) | (/* body */ Null), /* init */ ResponseInit, Response] {
-  def error(): Response = js.native
-  def redirect(url: java.lang.String): Response = js.native
-  def redirect(url: java.lang.String, status: Double): Response = js.native
+object Response {
+  @scala.inline
+  def apply(
+    arrayBuffer: () => js.Promise[ArrayBuffer],
+    blob: () => js.Promise[Blob],
+    bodyUsed: scala.Boolean,
+    formData: () => js.Promise[FormData],
+    headers: Headers,
+    json: () => js.Promise[_],
+    ok: scala.Boolean,
+    redirected: scala.Boolean,
+    status: Double,
+    statusText: java.lang.String,
+    text: () => js.Promise[java.lang.String],
+    trailer: js.Promise[Headers],
+    `type`: ResponseType,
+    url: java.lang.String,
+    body: ReadableStream[Uint8Array] = null
+  ): Response = {
+    val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed.asInstanceOf[js.Any], formData = js.Any.fromFunction0(formData), headers = headers.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), ok = ok.asInstanceOf[js.Any], redirected = redirected.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], text = js.Any.fromFunction0(text), trailer = trailer.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Response]
+  }
 }
 

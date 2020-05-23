@@ -1,5 +1,6 @@
 package typings.isScoped
 
+import typings.isScoped.anon.Call
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ object mod extends js.Object {
   // declare function isScoped(input: string): boolean;
   // export = isScoped;
   @JSName("default")
-  var default_Original: AnonCall = js.native
+  var default_Original: Call = js.native
   /**
   	Check if a string is a [scoped npm package name](https://docs.npmjs.com/misc/scope).
   	@example

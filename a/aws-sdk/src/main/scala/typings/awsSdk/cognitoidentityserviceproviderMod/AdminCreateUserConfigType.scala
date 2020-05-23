@@ -23,14 +23,14 @@ trait AdminCreateUserConfigType extends js.Object {
 object AdminCreateUserConfigType {
   @scala.inline
   def apply(
-    AllowAdminCreateUserOnly: js.UndefOr[Boolean] = js.undefined,
+    AllowAdminCreateUserOnly: js.UndefOr[BooleanType] = js.undefined,
     InviteMessageTemplate: MessageTemplateType = null,
-    UnusedAccountValidityDays: Int | Double = null
+    UnusedAccountValidityDays: js.UndefOr[AdminCreateUserUnusedAccountValidityDaysType] = js.undefined
   ): AdminCreateUserConfigType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllowAdminCreateUserOnly)) __obj.updateDynamic("AllowAdminCreateUserOnly")(AllowAdminCreateUserOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllowAdminCreateUserOnly)) __obj.updateDynamic("AllowAdminCreateUserOnly")(AllowAdminCreateUserOnly.get.asInstanceOf[js.Any])
     if (InviteMessageTemplate != null) __obj.updateDynamic("InviteMessageTemplate")(InviteMessageTemplate.asInstanceOf[js.Any])
-    if (UnusedAccountValidityDays != null) __obj.updateDynamic("UnusedAccountValidityDays")(UnusedAccountValidityDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(UnusedAccountValidityDays)) __obj.updateDynamic("UnusedAccountValidityDays")(UnusedAccountValidityDays.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminCreateUserConfigType]
   }
 }

@@ -37,10 +37,10 @@ object Options {
     header: js.UndefOr[Boolean] = js.undefined,
     `inline`: js.UndefOr[Boolean] = js.undefined,
     marksyConf: js.Object = null,
-    maxPropArrayLength: Int | Double = null,
-    maxPropObjectKeys: Int | Double = null,
-    maxPropStringLength: Int | Double = null,
-    maxPropsIntoLine: Int | Double = null,
+    maxPropArrayLength: js.UndefOr[Double] = js.undefined,
+    maxPropObjectKeys: js.UndefOr[Double] = js.undefined,
+    maxPropStringLength: js.UndefOr[Double] = js.undefined,
+    maxPropsIntoLine: js.UndefOr[Double] = js.undefined,
     propTables: js.Array[ComponentType[_]] | `false` = null,
     propTablesExclude: js.Array[ComponentType[_]] = null,
     source: js.UndefOr[Boolean] = js.undefined,
@@ -51,16 +51,16 @@ object Options {
     if (TableComponent != null) __obj.updateDynamic("TableComponent")(TableComponent.asInstanceOf[js.Any])
     if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
     if (excludedPropTypes != null) __obj.updateDynamic("excludedPropTypes")(excludedPropTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
     if (marksyConf != null) __obj.updateDynamic("marksyConf")(marksyConf.asInstanceOf[js.Any])
-    if (maxPropArrayLength != null) __obj.updateDynamic("maxPropArrayLength")(maxPropArrayLength.asInstanceOf[js.Any])
-    if (maxPropObjectKeys != null) __obj.updateDynamic("maxPropObjectKeys")(maxPropObjectKeys.asInstanceOf[js.Any])
-    if (maxPropStringLength != null) __obj.updateDynamic("maxPropStringLength")(maxPropStringLength.asInstanceOf[js.Any])
-    if (maxPropsIntoLine != null) __obj.updateDynamic("maxPropsIntoLine")(maxPropsIntoLine.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPropArrayLength)) __obj.updateDynamic("maxPropArrayLength")(maxPropArrayLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPropObjectKeys)) __obj.updateDynamic("maxPropObjectKeys")(maxPropObjectKeys.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPropStringLength)) __obj.updateDynamic("maxPropStringLength")(maxPropStringLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPropsIntoLine)) __obj.updateDynamic("maxPropsIntoLine")(maxPropsIntoLine.get.asInstanceOf[js.Any])
     if (propTables != null) __obj.updateDynamic("propTables")(propTables.asInstanceOf[js.Any])
     if (propTablesExclude != null) __obj.updateDynamic("propTablesExclude")(propTablesExclude.asInstanceOf[js.Any])
-    if (!js.isUndefined(source)) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (!js.isUndefined(source)) __obj.updateDynamic("source")(source.get.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

@@ -4,17 +4,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PIXI.spine.core.IkConstraintData")
-@js.native
-class IkConstraintData protected () extends ConstraintData {
-  def this(name: String) = this()
-  var bendDirection: Double = js.native
-  var bones: js.Array[BoneData] = js.native
-  var compress: Boolean = js.native
-  var mix: Double = js.native
-  var softness: Double = js.native
-  var stretch: Boolean = js.native
-  var target: BoneData = js.native
-  var uniform: Boolean = js.native
+trait IkConstraintData extends ConstraintData {
+  var bendDirection: Double
+  var bones: js.Array[BoneData]
+  var compress: Boolean
+  var mix: Double
+  var softness: Double
+  var stretch: Boolean
+  var target: BoneData
+  var uniform: Boolean
+}
+
+object IkConstraintData {
+  @scala.inline
+  def apply(
+    bendDirection: Double,
+    bones: js.Array[BoneData],
+    compress: Boolean,
+    mix: Double,
+    name: String,
+    order: Double,
+    skinRequired: Boolean,
+    softness: Double,
+    stretch: Boolean,
+    target: BoneData,
+    uniform: Boolean
+  ): IkConstraintData = {
+    val __obj = js.Dynamic.literal(bendDirection = bendDirection.asInstanceOf[js.Any], bones = bones.asInstanceOf[js.Any], compress = compress.asInstanceOf[js.Any], mix = mix.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], skinRequired = skinRequired.asInstanceOf[js.Any], softness = softness.asInstanceOf[js.Any], stretch = stretch.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], uniform = uniform.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IkConstraintData]
+  }
 }
 

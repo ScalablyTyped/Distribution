@@ -47,15 +47,15 @@ object NewsRepositoryInboxResponseArgs {
     destination: String = null,
     hashtag_follow: NewsRepositoryInboxResponseHashtagFollow = null,
     icon_url: String = null,
-    latest_reel_media: Int | Double = null,
+    latest_reel_media: js.UndefOr[Double] = js.undefined,
     links: js.Array[NewsRepositoryInboxResponseLinksItem] = null,
     media: js.Array[NewsRepositoryInboxResponseMediaItem] = null,
-    profile_id: Int | Double = null,
+    profile_id: js.UndefOr[Double] = js.undefined,
     profile_image: String = null,
     profile_image_destination: String = null,
     profile_name: String = null,
     rich_text: String = null,
-    second_profile_id: Int | Double = null,
+    second_profile_id: js.UndefOr[Double] = js.undefined,
     second_profile_image: String = null,
     text: String = null
   ): NewsRepositoryInboxResponseArgs = {
@@ -70,15 +70,15 @@ object NewsRepositoryInboxResponseArgs {
     if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
     if (hashtag_follow != null) __obj.updateDynamic("hashtag_follow")(hashtag_follow.asInstanceOf[js.Any])
     if (icon_url != null) __obj.updateDynamic("icon_url")(icon_url.asInstanceOf[js.Any])
-    if (latest_reel_media != null) __obj.updateDynamic("latest_reel_media")(latest_reel_media.asInstanceOf[js.Any])
+    if (!js.isUndefined(latest_reel_media)) __obj.updateDynamic("latest_reel_media")(latest_reel_media.get.asInstanceOf[js.Any])
     if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
     if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
-    if (profile_id != null) __obj.updateDynamic("profile_id")(profile_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(profile_id)) __obj.updateDynamic("profile_id")(profile_id.get.asInstanceOf[js.Any])
     if (profile_image != null) __obj.updateDynamic("profile_image")(profile_image.asInstanceOf[js.Any])
     if (profile_image_destination != null) __obj.updateDynamic("profile_image_destination")(profile_image_destination.asInstanceOf[js.Any])
     if (profile_name != null) __obj.updateDynamic("profile_name")(profile_name.asInstanceOf[js.Any])
     if (rich_text != null) __obj.updateDynamic("rich_text")(rich_text.asInstanceOf[js.Any])
-    if (second_profile_id != null) __obj.updateDynamic("second_profile_id")(second_profile_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(second_profile_id)) __obj.updateDynamic("second_profile_id")(second_profile_id.get.asInstanceOf[js.Any])
     if (second_profile_image != null) __obj.updateDynamic("second_profile_image")(second_profile_image.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewsRepositoryInboxResponseArgs]

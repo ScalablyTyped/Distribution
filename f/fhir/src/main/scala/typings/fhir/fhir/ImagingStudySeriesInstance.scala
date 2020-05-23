@@ -57,7 +57,7 @@ object ImagingStudySeriesInstance {
     fhir_comments: js.Array[String] = null,
     id: String = null,
     modifierExtension: js.Array[Extension] = null,
-    number: Int | Double = null,
+    number: js.UndefOr[unsignedInt] = js.undefined,
     title: String = null
   ): ImagingStudySeriesInstance = {
     val __obj = js.Dynamic.literal(sopClass = sopClass.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
@@ -71,7 +71,7 @@ object ImagingStudySeriesInstance {
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImagingStudySeriesInstance]
   }

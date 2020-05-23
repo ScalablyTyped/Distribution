@@ -1,6 +1,6 @@
 package typings.ionicCliFramework.helpMod
 
-import typings.ionicCliFramework.AnonValueString
+import typings.ionicCliFramework.anon.ValueString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait CommandHelpSchemaOption extends js.Object {
   val default: js.UndefOr[String | Boolean] = js.undefined
   val groups: js.Array[String]
   val name: String
-  val spec: AnonValueString
+  val spec: ValueString
   val summary: String
   val `type`: String
 }
@@ -21,7 +21,7 @@ object CommandHelpSchemaOption {
     aliases: js.Array[String],
     groups: js.Array[String],
     name: String,
-    spec: AnonValueString,
+    spec: ValueString,
     summary: String,
     `type`: String,
     default: String | Boolean = null

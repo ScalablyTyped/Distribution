@@ -30,16 +30,3 @@ trait Connection extends js.Object {
   def removeEventListener(`type`: String, listener: EventListenerOrEventListenerObject, useCapture: Boolean): Unit = js.native
 }
 
-@JSGlobal("Connection")
-@js.native
-object Connection extends js.Object {
-  var CELL: String = js.native
-  var CELL_2G: String = js.native
-  var CELL_3G: String = js.native
-  var CELL_4G: String = js.native
-  var ETHERNET: String = js.native
-  var NONE: String = js.native
-  var UNKNOWN: String = js.native
-  var WIFI: String = js.native
-}
-

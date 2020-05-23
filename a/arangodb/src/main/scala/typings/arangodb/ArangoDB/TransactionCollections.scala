@@ -19,7 +19,7 @@ object TransactionCollections {
     write: String | js.Array[String] = null
   ): TransactionCollections = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowImplicit)) __obj.updateDynamic("allowImplicit")(allowImplicit.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowImplicit)) __obj.updateDynamic("allowImplicit")(allowImplicit.get.asInstanceOf[js.Any])
     if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
     if (write != null) __obj.updateDynamic("write")(write.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionCollections]

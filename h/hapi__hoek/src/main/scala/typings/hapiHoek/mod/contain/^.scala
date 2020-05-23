@@ -1,6 +1,6 @@
 package typings.hapiHoek.mod.contain
 
-import typings.hapiHoek.OmitOptionsonce
+import typings.hapiHoek.anon.OmitOptionsonce
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

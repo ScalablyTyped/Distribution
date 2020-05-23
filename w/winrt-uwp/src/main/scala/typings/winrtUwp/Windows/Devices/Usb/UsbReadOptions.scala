@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Usb
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object UsbReadOptions extends js.Object {
   /** Bypasses queuing and error handling to boost performance for multiple read requests. Read operations must be done in multiples of MaxPacketSize . */
   @js.native
   sealed trait overrideAutomaticBufferManagement extends UsbReadOptions
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UsbReadOptions with Double] = js.native
-  /* 4 */ @js.native
-  object allowPartialReads extends TopLevel[allowPartialReads with Double]
-  
-  /* 1 */ @js.native
-  object autoClearStall extends TopLevel[autoClearStall with Double]
-  
-  /* 3 */ @js.native
-  object ignoreShortPacket extends TopLevel[ignoreShortPacket with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 2 */ @js.native
-  object overrideAutomaticBufferManagement extends TopLevel[overrideAutomaticBufferManagement with Double]
   
 }
 

@@ -25,17 +25,17 @@ object Time {
     minutes: Double,
     month: Double,
     year: Double,
-    dayOfWeek: Int | Double = null,
-    epoch: Int | Double = null,
-    milliseconds: Int | Double = null,
-    seconds: Int | Double = null,
+    dayOfWeek: js.UndefOr[Double] = js.undefined,
+    epoch: js.UndefOr[Double] = js.undefined,
+    milliseconds: js.UndefOr[Double] = js.undefined,
+    seconds: js.UndefOr[Double] = js.undefined,
     zone: TimeZoneOffset = null
   ): Time = {
     val __obj = js.Dynamic.literal(day = day.asInstanceOf[js.Any], hours = hours.asInstanceOf[js.Any], minutes = minutes.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
-    if (dayOfWeek != null) __obj.updateDynamic("dayOfWeek")(dayOfWeek.asInstanceOf[js.Any])
-    if (epoch != null) __obj.updateDynamic("epoch")(epoch.asInstanceOf[js.Any])
-    if (milliseconds != null) __obj.updateDynamic("milliseconds")(milliseconds.asInstanceOf[js.Any])
-    if (seconds != null) __obj.updateDynamic("seconds")(seconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(dayOfWeek)) __obj.updateDynamic("dayOfWeek")(dayOfWeek.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(epoch)) __obj.updateDynamic("epoch")(epoch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(milliseconds)) __obj.updateDynamic("milliseconds")(milliseconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(seconds)) __obj.updateDynamic("seconds")(seconds.get.asInstanceOf[js.Any])
     if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[Time]
   }

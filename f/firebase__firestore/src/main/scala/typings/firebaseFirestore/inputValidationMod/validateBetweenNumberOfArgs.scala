@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/util/input_validation", "validateBetweenNumberOfArgs")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/util/input_validation", "validateBetweenNumberOfArgs")
 @js.native
 object validateBetweenNumberOfArgs extends js.Object {
   def apply(functionName: String, args: IArguments, minNumberOfArgs: Double, maxNumberOfArgs: Double): Unit = js.native

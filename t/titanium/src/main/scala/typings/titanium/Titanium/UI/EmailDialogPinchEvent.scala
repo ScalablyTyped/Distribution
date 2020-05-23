@@ -5,67 +5,67 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the device detects a pinch gesture.
-		 */
+  * Fired when the device detects a pinch gesture.
+  */
 trait EmailDialogPinchEvent extends EmailDialogBaseEvent {
   /**
-  			 * The average distance between each of the pointers forming the gesture in progress through
-  			 * the focal point.
-  			 */
+    * The average distance between each of the pointers forming the gesture in progress through
+    * the focal point.
+    */
   var currentSpan: Double
   /**
-  			 * The average X distance between each of the pointers forming the gesture in progress through
-  			 * the focal point.
-  			 */
+    * The average X distance between each of the pointers forming the gesture in progress through
+    * the focal point.
+    */
   var currentSpanX: Double
   /**
-  			 * The average Y distance between each of the pointers forming the gesture in progress through
-  			 * the focal point.
-  			 */
+    * The average Y distance between each of the pointers forming the gesture in progress through
+    * the focal point.
+    */
   var currentSpanY: Double
   /**
-  			 * The X coordinate of the current gesture's focal point.
-  			 */
+    * The X coordinate of the current gesture's focal point.
+    */
   var focusX: Double
   /**
-  			 * The Y coordinate of the current gesture's focal point.
-  			 */
+    * The Y coordinate of the current gesture's focal point.
+    */
   var focusY: Double
   /**
-  			 * Returns `true` if a scale gesture is in progress, `false` otherwise.
-  			 */
+    * Returns `true` if a scale gesture is in progress, `false` otherwise.
+    */
   var inProgress: Boolean
   /**
-  			 * The previous average distance between each of the pointers forming the gesture in progress through
-  			 * the focal point.
-  			 */
+    * The previous average distance between each of the pointers forming the gesture in progress through
+    * the focal point.
+    */
   var previousSpan: Double
   /**
-  			 * The previous average X distance between each of the pointers forming the gesture in progress through
-  			 * the focal point.
-  			 */
+    * The previous average X distance between each of the pointers forming the gesture in progress through
+    * the focal point.
+    */
   var previousSpanX: Double
   /**
-  			 * The previous average Y distance between each of the pointers forming the gesture in progress through
-  			 * the focal point.
-  			 */
+    * The previous average Y distance between each of the pointers forming the gesture in progress through
+    * the focal point.
+    */
   var previousSpanY: Double
   /**
-  			 * The scale factor relative to the points of the two touches in screen coordinates.
-  			 */
+    * The scale factor relative to the points of the two touches in screen coordinates.
+    */
   var scale: Double
   /**
-  			 * The event time of the current event being processed.
-  			 */
+    * The event time of the current event being processed.
+    */
   var time: Double
   /**
-  			 * The time difference in milliseconds between the previous accepted scaling event and the
-  			 * current scaling event.
-  			 */
+    * The time difference in milliseconds between the previous accepted scaling event and the
+    * current scaling event.
+    */
   var timeDelta: Double
   /**
-  			 * The velocity of the pinch in scale factor per second.
-  			 */
+    * The velocity of the pinch in scale factor per second.
+    */
   var velocity: Double
 }
 

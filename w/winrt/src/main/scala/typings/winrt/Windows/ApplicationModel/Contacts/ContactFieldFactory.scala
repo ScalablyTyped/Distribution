@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.Contacts.ContactFieldFactory")
 @js.native
-class ContactFieldFactory ()
+trait ContactFieldFactory
   extends IContactFieldFactory
      with IContactLocationFieldFactory
      with IContactInstantMessageFieldFactory

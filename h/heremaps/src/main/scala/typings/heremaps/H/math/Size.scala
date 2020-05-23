@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
   * @property w {number} - The size's width value
   * @property h {number} - The size's height value
   */
-@JSGlobal("H.math.Size")
-@js.native
-class Size protected () extends js.Object {
-  /**
-    * Constructor
-    * @param width {number} - Width.
-    * @param height {number} - Height.
-    */
-  def this(width: Double, height: Double) = this()
-  var h: Double = js.native
-  var w: Double = js.native
+trait Size extends js.Object {
+  var h: Double
+  var w: Double
+}
+
+object Size {
+  @scala.inline
+  def apply(h: Double, w: Double): Size = {
+    val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Size]
+  }
 }
 

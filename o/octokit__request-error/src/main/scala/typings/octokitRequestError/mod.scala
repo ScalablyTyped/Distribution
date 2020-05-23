@@ -2,6 +2,8 @@ package typings.octokitRequestError
 
 import typings.octokitRequestError.octokitRequestErrorStrings.HttpError
 import typings.octokitRequestError.typesMod.RequestErrorOptions
+import typings.octokitTypes.requestOptionsMod.RequestOptions
+import typings.octokitTypes.responseHeadersMod.ResponseHeaders
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +24,7 @@ object mod extends js.Object {
     /**
       * error response headers
       */
-    var headers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResponseHeaders */ js.Any = js.native
+    var headers: ResponseHeaders = js.native
     /* CompleteClass */
     override var message: String = js.native
     /* CompleteClass */
@@ -32,7 +34,7 @@ object mod extends js.Object {
     /**
       * Request options that lead to the error.
       */
-    var request: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestOptions */ js.Any = js.native
+    var request: RequestOptions = js.native
     /**
       * http status code
       */

@@ -1,6 +1,6 @@
 package typings.boom.mod
 
-import typings.boom.AnonMessage
+import typings.boom.anon.Message
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,6 +16,6 @@ object boomify extends js.Object {
     * @see {@link https://github.com/hapijs/boom#boomifyerror-options}
     */
   def apply(error: Error): Boom[Null] = js.native
-  def apply(error: Error, options: AnonMessage): Boom[Null] = js.native
+  def apply(error: Error, options: Message): Boom[Null] = js.native
 }
 

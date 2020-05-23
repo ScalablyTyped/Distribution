@@ -10,11 +10,15 @@ trait PaginationCountryOptions
 
 object PaginationCountryOptions {
   @scala.inline
-  def apply(country: String = null, limit: Int | Double = null, offset: Int | Double = null): PaginationCountryOptions = {
+  def apply(
+    country: String = null,
+    limit: js.UndefOr[Double] = js.undefined,
+    offset: js.UndefOr[Double] = js.undefined
+  ): PaginationCountryOptions = {
     val __obj = js.Dynamic.literal()
     if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationCountryOptions]
   }
 }

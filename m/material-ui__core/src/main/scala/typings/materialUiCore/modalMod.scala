@@ -1,6 +1,7 @@
 package typings.materialUiCore
 
 import org.scalablytyped.runtime.TopLevel
+import typings.materialUiCore.anon.HandleContainerOverflow
 import typings.materialUiCore.modalModalMod.ModalProps
 import typings.react.mod.Component
 import typings.react.mod.ComponentState
@@ -15,7 +16,7 @@ object modalMod extends js.Object {
   @js.native
   class ModalManager ()
     extends typings.materialUiCore.modalManagerMod.default {
-    def this(opts: AnonHandleContainerOverflow) = this()
+    def this(opts: HandleContainerOverflow) = this()
   }
   
   @js.native

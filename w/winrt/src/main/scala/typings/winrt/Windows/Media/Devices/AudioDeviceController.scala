@@ -8,18 +8,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Media.Devices.AudioDeviceController")
-@js.native
-class AudioDeviceController () extends IAudioDeviceController {
-  /* CompleteClass */
-  override var muted: Boolean = js.native
-  /* CompleteClass */
-  override var volumePercent: Double = js.native
-  /* CompleteClass */
-  override def getAvailableMediaStreamProperties(mediaStreamType: MediaStreamType): IVectorView[IMediaEncodingProperties] = js.native
-  /* CompleteClass */
-  override def getMediaStreamProperties(mediaStreamType: MediaStreamType): IMediaEncodingProperties = js.native
-  /* CompleteClass */
-  override def setMediaStreamPropertiesAsync(mediaStreamType: MediaStreamType, mediaEncodingProperties: IMediaEncodingProperties): IAsyncAction = js.native
+trait AudioDeviceController extends IAudioDeviceController
+
+object AudioDeviceController {
+  @scala.inline
+  def apply(
+    getAvailableMediaStreamProperties: MediaStreamType => IVectorView[IMediaEncodingProperties],
+    getMediaStreamProperties: MediaStreamType => IMediaEncodingProperties,
+    muted: Boolean,
+    setMediaStreamPropertiesAsync: (MediaStreamType, IMediaEncodingProperties) => IAsyncAction,
+    volumePercent: Double
+  ): AudioDeviceController = {
+    val __obj = js.Dynamic.literal(getAvailableMediaStreamProperties = js.Any.fromFunction1(getAvailableMediaStreamProperties), getMediaStreamProperties = js.Any.fromFunction1(getMediaStreamProperties), muted = muted.asInstanceOf[js.Any], setMediaStreamPropertiesAsync = js.Any.fromFunction2(setMediaStreamPropertiesAsync), volumePercent = volumePercent.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AudioDeviceController]
+  }
 }
 

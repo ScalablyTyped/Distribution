@@ -14,12 +14,17 @@ trait IDocumentCardActionsStyles extends js.Object {
 
 object IDocumentCardActionsStyles {
   @scala.inline
-  def apply(action: IStyle = null, root: IStyle = null, views: IStyle = null, viewsIcon: IStyle = null): IDocumentCardActionsStyles = {
+  def apply(
+    action: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined,
+    views: js.UndefOr[Null | IStyle] = js.undefined,
+    viewsIcon: js.UndefOr[Null | IStyle] = js.undefined
+  ): IDocumentCardActionsStyles = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (views != null) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])
-    if (viewsIcon != null) __obj.updateDynamic("viewsIcon")(viewsIcon.asInstanceOf[js.Any])
+    if (!js.isUndefined(action)) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(views)) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewsIcon)) __obj.updateDynamic("viewsIcon")(viewsIcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDocumentCardActionsStyles]
   }
 }

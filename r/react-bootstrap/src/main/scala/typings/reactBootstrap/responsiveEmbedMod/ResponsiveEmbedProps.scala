@@ -26,8 +26,8 @@ object ResponsiveEmbedProps {
     val __obj = js.Dynamic.literal()
     if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
     if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(a16by9)) __obj.updateDynamic("a16by9")(a16by9.asInstanceOf[js.Any])
-    if (!js.isUndefined(a4by3)) __obj.updateDynamic("a4by3")(a4by3.asInstanceOf[js.Any])
+    if (!js.isUndefined(a16by9)) __obj.updateDynamic("a16by9")(a16by9.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(a4by3)) __obj.updateDynamic("a4by3")(a4by3.get.asInstanceOf[js.Any])
     if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponsiveEmbedProps]
   }

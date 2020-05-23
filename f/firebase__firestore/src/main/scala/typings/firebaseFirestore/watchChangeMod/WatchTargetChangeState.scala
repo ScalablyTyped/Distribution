@@ -20,16 +20,14 @@ trait WatchTargetChangeState extends js.Object
 
 object WatchTargetChangeState {
   @scala.inline
-  def Added: `1` = this.cast(1)
+  def Added: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def Current: `3` = this.cast(3)
+  def Current: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def NoChange: `0` = this.cast(0)
+  def NoChange: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def Removed: `2` = this.cast(2)
+  def Removed: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def Reset: `4` = this.cast(4)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Reset: `4` = 4.asInstanceOf[`4`]
 }
 

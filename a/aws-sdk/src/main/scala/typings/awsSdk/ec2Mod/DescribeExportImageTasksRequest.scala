@@ -31,17 +31,17 @@ trait DescribeExportImageTasksRequest extends js.Object {
 object DescribeExportImageTasksRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     ExportImageTaskIds: ExportImageTaskIdList = null,
     Filters: FilterList = null,
-    MaxResults: Int | scala.Double = null,
+    MaxResults: js.UndefOr[DescribeExportImageTasksMaxResults] = js.undefined,
     NextToken: NextToken = null
   ): DescribeExportImageTasksRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (ExportImageTaskIds != null) __obj.updateDynamic("ExportImageTaskIds")(ExportImageTaskIds.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeExportImageTasksRequest]
   }

@@ -1,6 +1,6 @@
 package typings.sinon.mod
 
-import typings.sinon.PartialSinonFakeTimersCon
+import typings.sinon.anon.PartialSinonFakeTimersCon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,8 +38,7 @@ object SinonSandboxConfig {
     useFakeTimers: Boolean | PartialSinonFakeTimersCon,
     injectInto: js.Object = null
   ): SinonSandboxConfig = {
-    val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], useFakeServer = useFakeServer.asInstanceOf[js.Any], useFakeTimers = useFakeTimers.asInstanceOf[js.Any])
-    if (injectInto != null) __obj.updateDynamic("injectInto")(injectInto.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], useFakeServer = useFakeServer.asInstanceOf[js.Any], useFakeTimers = useFakeTimers.asInstanceOf[js.Any], injectInto = injectInto.asInstanceOf[js.Any])
     __obj.asInstanceOf[SinonSandboxConfig]
   }
 }

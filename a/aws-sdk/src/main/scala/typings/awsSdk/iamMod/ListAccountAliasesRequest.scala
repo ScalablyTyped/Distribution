@@ -18,10 +18,10 @@ trait ListAccountAliasesRequest extends js.Object {
 
 object ListAccountAliasesRequest {
   @scala.inline
-  def apply(Marker: markerType = null, MaxItems: Int | Double = null): ListAccountAliasesRequest = {
+  def apply(Marker: markerType = null, MaxItems: js.UndefOr[maxItemsType] = js.undefined): ListAccountAliasesRequest = {
     val __obj = js.Dynamic.literal()
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAccountAliasesRequest]
   }
 }

@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 trait FormatProtectionData extends js.Object {
   /**
     *
-    * Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.
+    * Specifies if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.
     *
     * [Api set: ExcelApi 1.2]
     */
   var formulaHidden: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.
+    * Specifies if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.
     *
     * [Api set: ExcelApi 1.2]
     */
@@ -26,8 +26,8 @@ object FormatProtectionData {
   @scala.inline
   def apply(formulaHidden: js.UndefOr[Boolean] = js.undefined, locked: js.UndefOr[Boolean] = js.undefined): FormatProtectionData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(formulaHidden)) __obj.updateDynamic("formulaHidden")(formulaHidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.asInstanceOf[js.Any])
+    if (!js.isUndefined(formulaHidden)) __obj.updateDynamic("formulaHidden")(formulaHidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatProtectionData]
   }
 }

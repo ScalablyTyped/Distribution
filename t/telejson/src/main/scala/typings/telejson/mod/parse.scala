@@ -1,6 +1,6 @@
 package typings.telejson.mod
 
-import typings.telejson.PartialOptions
+import typings.telejson.anon.PartialOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

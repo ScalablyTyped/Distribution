@@ -1,6 +1,6 @@
 package typings.reactNativeScrollableTabView.mod
 
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
@@ -20,7 +20,7 @@ object ScrollableTabBarProps {
     backgroundColor: String = null,
     inactiveTextColor: String = null,
     renderTab: (/* name */ String, /* pageIndex */ Double, /* isTabActive */ Boolean, /* onPressHandler */ js.Function1[/* pageNumber */ Double, Unit], /* onLayoutHandler */ js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]]) => Element = null,
-    scrollOffset: Int | Double = null,
+    scrollOffset: js.UndefOr[Double] = js.undefined,
     style: ViewStyle = null,
     tabStyle: ViewStyle = null,
     tabsContainerStyle: ViewStyle = null,
@@ -32,7 +32,7 @@ object ScrollableTabBarProps {
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (inactiveTextColor != null) __obj.updateDynamic("inactiveTextColor")(inactiveTextColor.asInstanceOf[js.Any])
     if (renderTab != null) __obj.updateDynamic("renderTab")(js.Any.fromFunction5(renderTab))
-    if (scrollOffset != null) __obj.updateDynamic("scrollOffset")(scrollOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollOffset)) __obj.updateDynamic("scrollOffset")(scrollOffset.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (tabStyle != null) __obj.updateDynamic("tabStyle")(tabStyle.asInstanceOf[js.Any])
     if (tabsContainerStyle != null) __obj.updateDynamic("tabsContainerStyle")(tabsContainerStyle.asInstanceOf[js.Any])

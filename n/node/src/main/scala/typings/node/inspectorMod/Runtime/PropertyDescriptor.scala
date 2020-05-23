@@ -66,12 +66,12 @@ object PropertyDescriptor {
   ): PropertyDescriptor = {
     val __obj = js.Dynamic.literal(configurable = configurable.asInstanceOf[js.Any], enumerable = enumerable.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (get != null) __obj.updateDynamic("get")(get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOwn)) __obj.updateDynamic("isOwn")(isOwn.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOwn)) __obj.updateDynamic("isOwn")(isOwn.get.asInstanceOf[js.Any])
     if (set != null) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
     if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(wasThrown)) __obj.updateDynamic("wasThrown")(wasThrown.asInstanceOf[js.Any])
-    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable.asInstanceOf[js.Any])
+    if (!js.isUndefined(wasThrown)) __obj.updateDynamic("wasThrown")(wasThrown.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyDescriptor]
   }
 }

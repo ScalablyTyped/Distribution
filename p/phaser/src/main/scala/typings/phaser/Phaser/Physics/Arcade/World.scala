@@ -14,7 +14,6 @@ import typings.phaser.Phaser.Tilemaps.DynamicTilemapLayer
 import typings.phaser.Phaser.Tilemaps.StaticTilemapLayer
 import typings.phaser.Phaser.Tilemaps.Tile
 import typings.phaser.Phaser.Types.Physics.Arcade.ArcadeColliderType
-import typings.phaser.Phaser.Types.Physics.Arcade.ArcadeWorldConfig
 import typings.phaser.Phaser.Types.Physics.Arcade.ArcadeWorldDefaults
 import typings.phaser.Phaser.Types.Physics.Arcade.ArcadeWorldTreeMinMax
 import typings.phaser.Phaser.Types.Physics.Arcade.CheckCollisionObject
@@ -30,15 +29,8 @@ import scala.scalajs.js.annotation._
   * 
   * An instance of the World belongs to a Phaser.Scene and is accessed via the property `physics.world`.
   */
-@JSGlobal("Phaser.Physics.Arcade.World")
 @js.native
-class World protected () extends EventEmitter {
-  /**
-    * 
-    * @param scene The Scene to which this World instance belongs.
-    * @param config An Arcade Physics Configuration object.
-    */
-  def this(scene: Scene, config: ArcadeWorldConfig) = this()
+trait World extends EventEmitter {
   /**
     * The maximum absolute difference of a Body's per-step velocity and its overlap with another Body that will result in separation on *each axis*.
     * Larger values favor separation.
@@ -80,6 +72,11 @@ class World protected () extends EventEmitter {
     * Enables the debug display.
     */
   var drawDebug: Boolean = js.native
+  /**
+    * Should Physics use a fixed update time-step (true) or sync to the render fps (false)?. 
+    * False value of this property disables fps and timeScale properties.
+    */
+  var fixedStep: Boolean = js.native
   /**
     * Always separate overlapping Bodies horizontally before vertically.
     * False (the default) means Bodies are first separated on the axis of greater gravity, or the vertical axis if neither is greater.
@@ -241,7 +238,7 @@ class World protected () extends EventEmitter {
     * Performs a collision check and separation between the two physics enabled objects given, which can be single
     * Game Objects, arrays of Game Objects, Physics Groups, arrays of Physics Groups or normal Groups.
     * 
-    * If you don't require separation then use {@link #overlap} instead.
+    * If you don't require separation then use {@link Phaser.Physics.Arcade.World#overlap} instead.
     * 
     * If two Groups or arrays are passed, each member of one will be tested against each member of the other.
     * 
@@ -249,8 +246,9 @@ class World protected () extends EventEmitter {
     * 
     * If **only** one Array is passed, the array is iterated and every element in it is tested against the others.
     * 
-    * Two callbacks can be provided. The `collideCallback` is invoked if a collision occurs and the two colliding
-    * objects are passed to it.
+    * Two callbacks can be provided; they receive the colliding game objects as arguments.
+    * If an overlap is detected, the `processCallback` is called first. It can cancel the collision by returning false.
+    * Next the objects are separated and `collideCallback` is invoked.
     * 
     * Arcade Physics uses the Projection Method of collision resolution and separation. While it's fast and suitable
     * for 'arcade' style games it lacks stability when multiple objects are in close proximity or resting upon each other.
@@ -484,6 +482,8 @@ class World protected () extends EventEmitter {
   def intersects(body1: Body, body2: Body): Boolean = js.native
   /**
     * Tests if Game Objects overlap.
+    * 
+    * See details in {@link Phaser.Physics.Arcade.World#collide}.
     * @param object1 The first object or array of objects to check.
     * @param object2 The second object or array of objects to check, or `undefined`.
     * @param overlapCallback An optional callback function that is called if the objects overlap.

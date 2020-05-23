@@ -32,7 +32,7 @@ object Props {
   @scala.inline
   def apply(fallback: js.UndefOr[Boolean] = js.undefined, url: String = null): Props = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fallback)) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
+    if (!js.isUndefined(fallback)) __obj.updateDynamic("fallback")(fallback.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }

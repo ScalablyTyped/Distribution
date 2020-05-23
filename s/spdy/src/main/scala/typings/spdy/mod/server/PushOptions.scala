@@ -17,13 +17,13 @@ object PushOptions {
     method: String = null,
     request: js.Any = null,
     response: js.Any = null,
-    status: Int | Double = null
+    status: js.UndefOr[Double] = js.undefined
   ): PushOptions = {
     val __obj = js.Dynamic.literal()
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
     if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushOptions]
   }
 }

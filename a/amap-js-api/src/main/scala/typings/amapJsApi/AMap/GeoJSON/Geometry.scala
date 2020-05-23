@@ -12,34 +12,34 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.amapJsApi.AnonCoordinates
-  - typings.amapJsApi.AnonCoordinatesType
-  - typings.amapJsApi.AnonCoordinatesArray
-  - typings.amapJsApi.AnonGeometries
+  - typings.amapJsApi.anon.Coordinates
+  - typings.amapJsApi.anon.CoordinatesType
+  - typings.amapJsApi.anon.CoordinatesArray
+  - typings.amapJsApi.anon.Geometries
 */
 trait Geometry extends js.Object
 
 object Geometry {
   @scala.inline
-  def AnonCoordinates(coordinates: js.Tuple2[Double, Double], `type`: Point): Geometry = {
+  def Coordinates(coordinates: js.Tuple2[Double, Double], `type`: Point): Geometry = {
     val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Geometry]
   }
   @scala.inline
-  def AnonCoordinatesType(coordinates: js.Array[js.Tuple2[Double, Double]], `type`: MultiPoint | LineString | Polygon): Geometry = {
+  def CoordinatesType(coordinates: js.Array[js.Tuple2[Double, Double]], `type`: MultiPoint | LineString | Polygon): Geometry = {
     val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Geometry]
   }
   @scala.inline
-  def AnonCoordinatesArray(coordinates: js.Array[js.Array[js.Tuple2[Double, Double]]], `type`: MultiLineString | MultiPolygon): Geometry = {
+  def CoordinatesArray(coordinates: js.Array[js.Array[js.Tuple2[Double, Double]]], `type`: MultiLineString | MultiPolygon): Geometry = {
     val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Geometry]
   }
   @scala.inline
-  def AnonGeometries(
+  def Geometries(
     geometries: js.Array[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias amap-js-api.AMap.GeoJSON.Geometry */ js.Object
     ],

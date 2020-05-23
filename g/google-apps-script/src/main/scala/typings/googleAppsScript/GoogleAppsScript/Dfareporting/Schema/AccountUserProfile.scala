@@ -45,7 +45,7 @@ object AccountUserProfile {
   ): AccountUserProfile = {
     val __obj = js.Dynamic.literal()
     if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (advertiserFilter != null) __obj.updateDynamic("advertiserFilter")(advertiserFilter.asInstanceOf[js.Any])
     if (campaignFilter != null) __obj.updateDynamic("campaignFilter")(campaignFilter.asInstanceOf[js.Any])
     if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])

@@ -1,17 +1,13 @@
 package typings.materializeCss.M
 
-import typings.materializeCss.MElements
-import typings.materializeCss.PartialTimepickerOptions
 import typings.materializeCss.materializeCssStrings.hours
 import typings.materializeCss.materializeCssStrings.minutes
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("M.Timepicker")
 @js.native
-class Timepicker () extends Component[TimepickerOptions] {
+trait Timepicker extends Component[TimepickerOptions] {
   /**
     * If the picker is open.
     */
@@ -36,25 +32,5 @@ class Timepicker () extends Component[TimepickerOptions] {
   def showView_hours(view: hours): Unit = js.native
   @JSName("showView")
   def showView_minutes(view: minutes): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("M.Timepicker")
-@js.native
-object Timepicker extends js.Object {
-  /**
-    * Get Instance
-    */
-  def getInstance(elem: Element): Timepicker = js.native
-  /**
-    * Init Timepickers
-    */
-  def init(els: MElements): js.Array[Timepicker] = js.native
-  def init(els: MElements, options: PartialTimepickerOptions): js.Array[Timepicker] = js.native
-  /**
-    * Init Timepicker
-    */
-  def init(els: Element): Timepicker = js.native
-  def init(els: Element, options: PartialTimepickerOptions): Timepicker = js.native
 }
 

@@ -20,7 +20,7 @@ object textMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonComponent = js.native
+    var defaultProps: typings.antdMobile.anon.Component = js.native
   }
   
 }

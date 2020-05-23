@@ -5,7 +5,7 @@ import typings.node.childProcessMod.ChildProcess
 import typings.node.childProcessMod.SpawnOptions
 import typings.node.httpMod.RequestOptions
 import typings.node.urlMod.URL_
-import typings.seleniumStandalone.AnonArch
+import typings.seleniumStandalone.anon.Arch
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 trait StartOpts extends js.Object {
   var basePath: js.UndefOr[String] = js.undefined
   var cb: js.UndefOr[js.Function2[/* error */ Error, /* child */ ChildProcess, Unit]] = js.undefined
-  var drivers: js.UndefOr[StringDictionary[AnonArch]] = js.undefined
+  var drivers: js.UndefOr[StringDictionary[Arch]] = js.undefined
   var javaArgs: js.UndefOr[js.Array[String]] = js.undefined
   var javaPath: js.UndefOr[String] = js.undefined
   var requestOpts: js.UndefOr[RequestOptions | String | URL_] = js.undefined
@@ -29,7 +29,7 @@ object StartOpts {
   def apply(
     basePath: String = null,
     cb: (/* error */ Error, /* child */ ChildProcess) => Unit = null,
-    drivers: StringDictionary[AnonArch] = null,
+    drivers: StringDictionary[Arch] = null,
     javaArgs: js.Array[String] = null,
     javaPath: String = null,
     requestOpts: RequestOptions | String | URL_ = null,

@@ -33,12 +33,12 @@ object PurchaseReservedInstancesOfferingRequest {
   def apply(
     InstanceCount: Integer,
     ReservedInstancesOfferingId: ReservedInstancesOfferingId,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     LimitPrice: ReservedInstanceLimitPrice = null,
     PurchaseTime: DateTime = null
   ): PurchaseReservedInstancesOfferingRequest = {
     val __obj = js.Dynamic.literal(InstanceCount = InstanceCount.asInstanceOf[js.Any], ReservedInstancesOfferingId = ReservedInstancesOfferingId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (LimitPrice != null) __obj.updateDynamic("LimitPrice")(LimitPrice.asInstanceOf[js.Any])
     if (PurchaseTime != null) __obj.updateDynamic("PurchaseTime")(PurchaseTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[PurchaseReservedInstancesOfferingRequest]

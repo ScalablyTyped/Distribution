@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("FirebaseFirestore.WriteBatch")
 @js.native
-class WriteBatch protected () extends js.Object {
+trait WriteBatch extends js.Object {
   /**
     * Commits all of the writes in this write batch as a single atomic unit.
     *

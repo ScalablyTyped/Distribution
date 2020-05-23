@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
   */
 trait Point extends js.Object {
   /**
-  	 * The x-axis coordinate of this point.
-  	 */
+    * The x-axis coordinate of this point.
+    */
   var x: js.UndefOr[Double | java.lang.String] = js.undefined
   /**
-  	 * The y-axis coordinate of this point.
-  	 */
+    * The y-axis coordinate of this point.
+    */
   var y: js.UndefOr[Double | java.lang.String] = js.undefined
 }
 

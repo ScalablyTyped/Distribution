@@ -11,9 +11,9 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(delay: Int | Double = null): Options = {
+  def apply(delay: js.UndefOr[Double] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

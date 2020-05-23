@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -51,8 +50,4 @@ trait TextSymbol3DLayer
   @JSName("type")
   val type_TextSymbol3DLayer: text = js.native
 }
-
-@JSGlobal("__esri.TextSymbol3DLayer")
-@js.native
-object TextSymbol3DLayer extends TopLevel[TextSymbol3DLayerConstructor]
 

@@ -1,23 +1,20 @@
 package typings.vexflow.Vex.Flow
 
-import typings.std.HTMLElement
 import typings.std.SVGElement
 import typings.std.SVGRect
-import typings.vexflow.AnonY
 import typings.vexflow.Vex.IRenderContext
+import typings.vexflow.anon.Y
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Vex.Flow.SVGContext")
 @js.native
-class SVGContext protected () extends IRenderContext {
-  def this(element: HTMLElement) = this()
+trait SVGContext extends IRenderContext {
   var attributes: js.Any = js.native
   var lineWidth: Double = js.native
   var state: js.Any = js.native
   var svg: SVGElement = js.native
-  def ieMeasureTextFix(bbox: SVGRect, text: String): AnonY = js.native
+  def ieMeasureTextFix(bbox: SVGRect, text: String): Y = js.native
   def iePolyfill(): Boolean = js.native
   def rect(x: Double, y: Double, width: Double, height: Double): SVGContext = js.native
   def setFont(family: String, size: Double, weight: String): SVGContext = js.native

@@ -35,14 +35,14 @@ object CreateDataSourceResponse {
     CreationStatus: ResourceStatus = null,
     DataSourceId: ResourceId = null,
     RequestId: String = null,
-    Status: Int | scala.Double = null
+    Status: js.UndefOr[StatusCode] = js.undefined
   ): CreateDataSourceResponse = {
     val __obj = js.Dynamic.literal()
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
     if (CreationStatus != null) __obj.updateDynamic("CreationStatus")(CreationStatus.asInstanceOf[js.Any])
     if (DataSourceId != null) __obj.updateDynamic("DataSourceId")(DataSourceId.asInstanceOf[js.Any])
     if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
+    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDataSourceResponse]
   }
 }

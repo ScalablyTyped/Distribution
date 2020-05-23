@@ -1,6 +1,6 @@
 package typings.gatsbyImage.mod
 
-import typings.gatsbyImage.AnonWasCached
+import typings.gatsbyImage.anon.WasCached
 import typings.gatsbyImage.gatsbyImageStrings.`lazy`
 import typings.gatsbyImage.gatsbyImageStrings.auto
 import typings.gatsbyImage.gatsbyImageStrings.eager
@@ -25,7 +25,7 @@ trait GatsbyImageProps extends js.Object {
   var loading: js.UndefOr[auto | `lazy` | eager] = js.undefined
   var onError: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
   var onLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onStartLoad: js.UndefOr[js.Function1[/* param */ AnonWasCached, Unit]] = js.undefined
+  var onStartLoad: js.UndefOr[js.Function1[/* param */ WasCached, Unit]] = js.undefined
   var placeholderClassName: js.UndefOr[String] = js.undefined
   var placeholderStyle: js.UndefOr[js.Object] = js.undefined
   var resolutions: js.UndefOr[FixedObject] = js.undefined
@@ -44,7 +44,7 @@ object GatsbyImageProps {
     critical: js.UndefOr[Boolean] = js.undefined,
     crossOrigin: String | Boolean = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
-    durationFadeIn: Int | Double = null,
+    durationFadeIn: js.UndefOr[Double] = js.undefined,
     fadeIn: js.UndefOr[Boolean] = js.undefined,
     fixed: FixedObject | js.Array[FixedObject] = null,
     fluid: FluidObject | js.Array[FluidObject] = null,
@@ -53,7 +53,7 @@ object GatsbyImageProps {
     loading: auto | `lazy` | eager = null,
     onError: /* event */ js.Any => Unit = null,
     onLoad: () => Unit = null,
-    onStartLoad: /* param */ AnonWasCached => Unit = null,
+    onStartLoad: /* param */ WasCached => Unit = null,
     placeholderClassName: String = null,
     placeholderStyle: js.Object = null,
     resolutions: FixedObject = null,
@@ -66,11 +66,11 @@ object GatsbyImageProps {
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(critical)) __obj.updateDynamic("critical")(critical.asInstanceOf[js.Any])
+    if (!js.isUndefined(critical)) __obj.updateDynamic("critical")(critical.get.asInstanceOf[js.Any])
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (durationFadeIn != null) __obj.updateDynamic("durationFadeIn")(durationFadeIn.asInstanceOf[js.Any])
-    if (!js.isUndefined(fadeIn)) __obj.updateDynamic("fadeIn")(fadeIn.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(durationFadeIn)) __obj.updateDynamic("durationFadeIn")(durationFadeIn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fadeIn)) __obj.updateDynamic("fadeIn")(fadeIn.get.asInstanceOf[js.Any])
     if (fixed != null) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
     if (fluid != null) __obj.updateDynamic("fluid")(fluid.asInstanceOf[js.Any])
     if (imgStyle != null) __obj.updateDynamic("imgStyle")(imgStyle.asInstanceOf[js.Any])

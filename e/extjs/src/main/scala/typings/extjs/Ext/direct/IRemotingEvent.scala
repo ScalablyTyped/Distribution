@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 
 trait IRemotingEvent extends IEvent {
   /** [Method] Get the transaction associated with this event
-  		* @returns Ext.direct.Transaction The transaction
-  		*/
+    * @returns Ext.direct.Transaction The transaction
+    */
   var getTransaction: js.UndefOr[js.Function0[ITransaction]] = js.undefined
 }
 
@@ -53,7 +53,7 @@ object IRemotingEvent {
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRemotingEvent]

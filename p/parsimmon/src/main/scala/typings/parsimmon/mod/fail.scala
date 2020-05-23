@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object fail extends js.Object {
   /**
-  	 * fail paring with a message
-  	 */
+    * fail paring with a message
+    */
   def apply(message: String): Parser[scala.Nothing] = js.native
 }
 

@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.babylonjs.anon.CrossOrigin
 import typings.babylonjs.baseErrorMod.BaseError
 import typings.babylonjs.fileRequestMod.IFileRequest
 import typings.babylonjs.iofflineproviderMod.IOfflineProvider
@@ -278,8 +279,8 @@ object fileToolsMod extends js.Object {
       * @param url define the url we are trying
       * @param element define the dom element where to configure the cors policy
       */
-    def SetCorsBehavior(url: String, element: AnonCrossOrigin): Unit = js.native
-    def SetCorsBehavior(url: js.Array[String], element: AnonCrossOrigin): Unit = js.native
+    def SetCorsBehavior(url: String, element: CrossOrigin): Unit = js.native
+    def SetCorsBehavior(url: js.Array[String], element: CrossOrigin): Unit = js.native
   }
   
 }

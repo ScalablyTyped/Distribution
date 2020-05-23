@@ -6,28 +6,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CUI.Page.PageManager")
-@js.native
-class PageManager ()
+trait PageManager
   extends RootUser
      with ICommandHandler
      with IRootBuildClient {
-  def add_ribbonInited(value: js.Function0[Unit]): js.Any = js.native
-  /* CompleteClass */
-  override def canHandleCommand(commandId: String): Boolean = js.native
-  def get_commandDispatcher(): CommandDispatcher = js.native
-  def get_focusManager(): FocusManager = js.native
-  def get_undoManager(): UndoManager = js.native
-  /* CompleteClass */
-  override def handleCommand(commandId: String, properties: js.Any, sequenceNumber: Double): Boolean = js.native
+  def add_ribbonInited(value: js.Function0[Unit]): js.Any
+  def get_commandDispatcher(): CommandDispatcher
+  def get_focusManager(): FocusManager
+  def get_undoManager(): UndoManager
 }
 
-/* static members */
-@JSGlobal("CUI.Page.PageManager")
-@js.native
-object PageManager extends js.Object {
-  def createPageManager(): PageManager = js.native
-  def get_instance(): PageManager = js.native
-  def initialize(): Unit = js.native
+object PageManager {
+  @scala.inline
+  def apply(
+    add_ribbonInited: js.Function0[Unit] => js.Any,
+    canHandleCommand: String => Boolean,
+    get_commandDispatcher: () => CommandDispatcher,
+    get_focusManager: () => FocusManager,
+    get_undoManager: () => UndoManager,
+    handleCommand: (String, js.Any, Double) => Boolean
+  ): PageManager = {
+    val __obj = js.Dynamic.literal(add_ribbonInited = js.Any.fromFunction1(add_ribbonInited), canHandleCommand = js.Any.fromFunction1(canHandleCommand), get_commandDispatcher = js.Any.fromFunction0(get_commandDispatcher), get_focusManager = js.Any.fromFunction0(get_focusManager), get_undoManager = js.Any.fromFunction0(get_undoManager), handleCommand = js.Any.fromFunction3(handleCommand))
+    __obj.asInstanceOf[PageManager]
+  }
 }
 

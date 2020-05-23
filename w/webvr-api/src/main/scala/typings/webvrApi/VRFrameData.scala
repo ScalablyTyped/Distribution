@@ -1,6 +1,5 @@
 package typings.webvrApi
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.std.Float32Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +14,18 @@ trait VRFrameData extends js.Object {
   val timestamp: Double
 }
 
-@JSGlobal("VRFrameData")
-@js.native
-object VRFrameData extends Instantiable0[VRFrameData]
+object VRFrameData {
+  @scala.inline
+  def apply(
+    leftProjectionMatrix: Float32Array,
+    leftViewMatrix: Float32Array,
+    pose: VRPose,
+    rightProjectionMatrix: Float32Array,
+    rightViewMatrix: Float32Array,
+    timestamp: Double
+  ): VRFrameData = {
+    val __obj = js.Dynamic.literal(leftProjectionMatrix = leftProjectionMatrix.asInstanceOf[js.Any], leftViewMatrix = leftViewMatrix.asInstanceOf[js.Any], pose = pose.asInstanceOf[js.Any], rightProjectionMatrix = rightProjectionMatrix.asInstanceOf[js.Any], rightViewMatrix = rightViewMatrix.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VRFrameData]
+  }
+}
 

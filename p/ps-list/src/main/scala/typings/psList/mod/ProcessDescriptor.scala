@@ -33,15 +33,15 @@ object ProcessDescriptor {
     pid: Double,
     ppid: Double,
     cmd: String = null,
-    cpu: Int | Double = null,
-    memory: Int | Double = null,
-    uid: Int | Double = null
+    cpu: js.UndefOr[Double] = js.undefined,
+    memory: js.UndefOr[Double] = js.undefined,
+    uid: js.UndefOr[Double] = js.undefined
   ): ProcessDescriptor = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], ppid = ppid.asInstanceOf[js.Any])
     if (cmd != null) __obj.updateDynamic("cmd")(cmd.asInstanceOf[js.Any])
-    if (cpu != null) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])
-    if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
-    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
+    if (!js.isUndefined(cpu)) __obj.updateDynamic("cpu")(cpu.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(memory)) __obj.updateDynamic("memory")(memory.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(uid)) __obj.updateDynamic("uid")(uid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessDescriptor]
   }
 }

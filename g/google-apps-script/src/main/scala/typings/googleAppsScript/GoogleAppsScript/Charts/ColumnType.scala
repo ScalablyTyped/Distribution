@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Charts
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object ColumnType extends js.Object {
   
   @js.native
   sealed trait STRING extends ColumnType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ColumnType with Double] = js.native
-  /* 0 */ @js.native
-  object DATE extends TopLevel[DATE with Double]
-  
-  /* 1 */ @js.native
-  object NUMBER extends TopLevel[NUMBER with Double]
-  
-  /* 2 */ @js.native
-  object STRING extends TopLevel[STRING with Double]
   
 }
 

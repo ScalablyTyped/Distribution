@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait FileDeleteEvent extends js.Object {
   /**
-  		 * The files that got deleted.
-  		 */
+    * The files that got deleted.
+    */
   val files: js.Array[Uri]
 }
 

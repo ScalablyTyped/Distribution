@@ -23,7 +23,7 @@ object OpenExternalOptions {
   @scala.inline
   def apply(activate: js.UndefOr[Boolean] = js.undefined, workingDirectory: String = null): OpenExternalOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(activate)) __obj.updateDynamic("activate")(activate.asInstanceOf[js.Any])
+    if (!js.isUndefined(activate)) __obj.updateDynamic("activate")(activate.get.asInstanceOf[js.Any])
     if (workingDirectory != null) __obj.updateDynamic("workingDirectory")(workingDirectory.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenExternalOptions]
   }

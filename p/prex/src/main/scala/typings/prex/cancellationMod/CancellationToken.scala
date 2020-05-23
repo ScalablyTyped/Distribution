@@ -9,16 +9,15 @@ import scala.scalajs.js.annotation._
 @JSImport("prex/out/lib/cancellation", "CancellationToken")
 @js.native
 class CancellationToken () extends Cancelable {
-  var _signal: js.UndefOr[js.Any] = js.native
   var _source: js.Any = js.native
   /**
     * Gets a value indicating whether the underlying source can be canceled.
     */
-  val canBeCanceled: Boolean = js.native
+  def canBeCanceled: Boolean = js.native
   /**
     * Gets a value indicating whether cancellation has been requested.
     */
-  val cancellationRequested: Boolean = js.native
+  def cancellationRequested: Boolean = js.native
   /**
     * Registers a callback to execute when cancellation is requested.
     *

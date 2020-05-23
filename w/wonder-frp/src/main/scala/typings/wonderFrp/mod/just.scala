@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object just
   extends TopLevel[
-      js.Function1[/* returnValue */ js.Any, typings.wonderFrp.anonymousStreamMod.AnonymousStream]
+      js.Function1[/* stream */ js.Any, typings.wonderFrp.anonymousStreamMod.AnonymousStream]
     ]
 

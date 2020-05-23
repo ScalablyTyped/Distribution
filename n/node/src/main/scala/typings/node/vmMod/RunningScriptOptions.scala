@@ -28,19 +28,19 @@ object RunningScriptOptions {
   @scala.inline
   def apply(
     breakOnSigint: js.UndefOr[Boolean] = js.undefined,
-    columnOffset: Int | Double = null,
+    columnOffset: js.UndefOr[Double] = js.undefined,
     displayErrors: js.UndefOr[Boolean] = js.undefined,
     filename: String = null,
-    lineOffset: Int | Double = null,
-    timeout: Int | Double = null
+    lineOffset: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined
   ): RunningScriptOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(breakOnSigint)) __obj.updateDynamic("breakOnSigint")(breakOnSigint.asInstanceOf[js.Any])
-    if (columnOffset != null) __obj.updateDynamic("columnOffset")(columnOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayErrors)) __obj.updateDynamic("displayErrors")(displayErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(breakOnSigint)) __obj.updateDynamic("breakOnSigint")(breakOnSigint.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnOffset)) __obj.updateDynamic("columnOffset")(columnOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayErrors)) __obj.updateDynamic("displayErrors")(displayErrors.get.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (lineOffset != null) __obj.updateDynamic("lineOffset")(lineOffset.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineOffset)) __obj.updateDynamic("lineOffset")(lineOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunningScriptOptions]
   }
 }

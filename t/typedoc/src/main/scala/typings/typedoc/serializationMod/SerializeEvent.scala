@@ -1,6 +1,6 @@
 package typings.typedoc.serializationMod
 
-import typings.typedoc.PartialProjectReflection
+import typings.typedoc.anon.PartialProjectReflection
 import typings.typedoc.modelsMod.ProjectReflection
 import scala.scalajs.js
 import scala.scalajs.js.`|`

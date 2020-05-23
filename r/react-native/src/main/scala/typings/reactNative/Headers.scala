@@ -1,7 +1,5 @@
 package typings.reactNative
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,10 +14,4 @@ trait Headers extends js.Object {
   def has(name: String): Boolean = js.native
   def set(name: String, value: String): Unit = js.native
 }
-
-@JSGlobal("Headers")
-@js.native
-object Headers
-  extends Instantiable0[Headers]
-     with Instantiable1[/* init */ HeadersInit, Headers]
 

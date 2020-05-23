@@ -63,32 +63,32 @@ object GithubOptions {
   @scala.inline
   def apply(
     provider: github,
-    host: String = null,
-    owner: String = null,
-    `private`: js.UndefOr[Boolean] = js.undefined,
-    protocol: https | http = null,
+    host: js.UndefOr[Null | String] = js.undefined,
+    owner: js.UndefOr[Null | String] = js.undefined,
+    `private`: js.UndefOr[Null | Boolean] = js.undefined,
+    protocol: js.UndefOr[Null | https | http] = js.undefined,
     publishAutoUpdate: js.UndefOr[Boolean] = js.undefined,
-    publisherName: js.Array[String] = null,
-    releaseType: draft | prerelease | release = null,
-    repo: String = null,
+    publisherName: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    releaseType: js.UndefOr[Null | draft | prerelease | release] = js.undefined,
+    repo: js.UndefOr[Null | String] = js.undefined,
     requestHeaders: OutgoingHttpHeaders = null,
-    token: String = null,
-    updaterCacheDirName: String = null,
+    token: js.UndefOr[Null | String] = js.undefined,
+    updaterCacheDirName: js.UndefOr[Null | String] = js.undefined,
     vPrefixedTagName: js.UndefOr[Boolean] = js.undefined
   ): GithubOptions = {
     val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (!js.isUndefined(host)) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (!js.isUndefined(owner)) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.asInstanceOf[js.Any])
-    if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
-    if (releaseType != null) __obj.updateDynamic("releaseType")(releaseType.asInstanceOf[js.Any])
-    if (repo != null) __obj.updateDynamic("repo")(repo.asInstanceOf[js.Any])
+    if (!js.isUndefined(protocol)) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(publisherName)) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
+    if (!js.isUndefined(releaseType)) __obj.updateDynamic("releaseType")(releaseType.asInstanceOf[js.Any])
+    if (!js.isUndefined(repo)) __obj.updateDynamic("repo")(repo.asInstanceOf[js.Any])
     if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
-    if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
-    if (!js.isUndefined(vPrefixedTagName)) __obj.updateDynamic("vPrefixedTagName")(vPrefixedTagName.asInstanceOf[js.Any])
+    if (!js.isUndefined(token)) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (!js.isUndefined(updaterCacheDirName)) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
+    if (!js.isUndefined(vPrefixedTagName)) __obj.updateDynamic("vPrefixedTagName")(vPrefixedTagName.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GithubOptions]
   }
 }

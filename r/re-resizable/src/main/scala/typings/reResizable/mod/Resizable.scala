@@ -1,12 +1,11 @@
 package typings.reResizable.mod
 
-import typings.reResizable.AnonEnable
-import typings.reResizable.AnonHeight
-import typings.reResizable.AnonHeightWidth
-import typings.reResizable.AnonMaxHeight
-import typings.reResizable.AnonNewHeight
-import typings.reResizable.AnonWidth
-import typings.reResizable.mod._Global_.Window
+import typings.reResizable.anon.Height
+import typings.reResizable.anon.HeightWidth
+import typings.reResizable.anon.MaxHeight
+import typings.reResizable.anon.NewHeight
+import typings.reResizable.anon.Width
+import typings.reResizable.mod.global.Window
 import typings.reResizable.reResizableStrings.column
 import typings.reResizable.reResizableStrings.height
 import typings.reResizable.reResizableStrings.row
@@ -14,7 +13,7 @@ import typings.reResizable.reResizableStrings.width
 import typings.reResizable.resizerMod.Direction
 import typings.react.mod.Component
 import typings.react.mod.NativeMouseEvent
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.MouseEvent
@@ -39,11 +38,11 @@ class Resizable protected ()
   var targetTop: Double = js.native
   def base: js.UndefOr[HTMLElement] = js.native
   def bindEvents(): Unit = js.native
-  def calculateNewMaxFromBoundary(): AnonMaxHeight = js.native
-  def calculateNewMaxFromBoundary(maxWidth: Double): AnonMaxHeight = js.native
-  def calculateNewMaxFromBoundary(maxWidth: Double, maxHeight: Double): AnonMaxHeight = js.native
-  def calculateNewSizeFromAspectRatio(newWidth: Double, newHeight: Double, max: AnonHeightWidth, min: AnonHeightWidth): AnonNewHeight = js.native
-  def calculateNewSizeFromDirection(clientX: Double, clientY: Double): AnonNewHeight = js.native
+  def calculateNewMaxFromBoundary(): MaxHeight = js.native
+  def calculateNewMaxFromBoundary(maxWidth: Double): MaxHeight = js.native
+  def calculateNewMaxFromBoundary(maxWidth: Double, maxHeight: Double): MaxHeight = js.native
+  def calculateNewSizeFromAspectRatio(newWidth: Double, newHeight: Double, max: HeightWidth, min: HeightWidth): NewHeight = js.native
+  def calculateNewSizeFromDirection(clientX: Double, clientY: Double): NewHeight = js.native
   @JSName("componentDidMount")
   def componentDidMount_MResizable(): Unit = js.native
   @JSName("componentWillUnmount")
@@ -56,7 +55,7 @@ class Resizable protected ()
   def createSizeForCssProperty_width(newSize: String, kind: width): Double | String = js.native
   @JSName("createSizeForCssProperty")
   def createSizeForCssProperty_width(newSize: Double, kind: width): Double | String = js.native
-  def getParentSize(): AnonWidth = js.native
+  def getParentSize(): Width = js.native
   def onMouseMove(event: MouseEvent): Unit = js.native
   def onMouseMove(event: TouchEvent): Unit = js.native
   def onMouseUp(event: MouseEvent): Unit = js.native
@@ -70,7 +69,7 @@ class Resizable protected ()
   def renderResizer(): Element | Null = js.native
   def setBoundingClientRect(): Unit = js.native
   def size: NumberSize = js.native
-  def sizeStyle: AnonHeight = js.native
+  def sizeStyle: Height = js.native
   def unbindEvents(): Unit = js.native
   def updateSize(size: Size): Unit = js.native
   def window: Window | Null = js.native
@@ -80,6 +79,6 @@ class Resizable protected ()
 @JSImport("re-resizable", "Resizable")
 @js.native
 object Resizable extends js.Object {
-  var defaultProps: AnonEnable = js.native
+  var defaultProps: typings.reResizable.anon.Enable = js.native
 }
 

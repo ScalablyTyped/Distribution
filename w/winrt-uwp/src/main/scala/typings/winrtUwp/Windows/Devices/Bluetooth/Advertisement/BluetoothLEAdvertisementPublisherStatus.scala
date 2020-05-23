@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,26 +34,6 @@ object BluetoothLEAdvertisementPublisherStatus extends js.Object {
   /** The publisher is waiting to get service time. */
   @js.native
   sealed trait waiting extends BluetoothLEAdvertisementPublisherStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BluetoothLEAdvertisementPublisherStatus with Double] = js.native
-  /* 5 */ @js.native
-  object aborted extends TopLevel[aborted with Double]
-  
-  /* 0 */ @js.native
-  object created extends TopLevel[created with Double]
-  
-  /* 2 */ @js.native
-  object started extends TopLevel[started with Double]
-  
-  /* 4 */ @js.native
-  object stopped extends TopLevel[stopped with Double]
-  
-  /* 3 */ @js.native
-  object stopping extends TopLevel[stopping with Double]
-  
-  /* 1 */ @js.native
-  object waiting extends TopLevel[waiting with Double]
   
 }
 

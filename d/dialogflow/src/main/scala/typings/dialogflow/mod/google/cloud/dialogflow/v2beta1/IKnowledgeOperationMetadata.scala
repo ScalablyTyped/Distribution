@@ -16,10 +16,12 @@ trait IKnowledgeOperationMetadata extends js.Object {
 object IKnowledgeOperationMetadata {
   @scala.inline
   def apply(
-    state: State | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.State * / any */ String) = null
+    state: js.UndefOr[
+      Null | State | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.State * / any */ String)
+    ] = js.undefined
   ): IKnowledgeOperationMetadata = {
     val __obj = js.Dynamic.literal()
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (!js.isUndefined(state)) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKnowledgeOperationMetadata]
   }
 }

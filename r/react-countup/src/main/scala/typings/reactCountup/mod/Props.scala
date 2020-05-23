@@ -2,11 +2,11 @@ package typings.reactCountup.mod
 
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
-import typings.reactCountup.AnonPauseResume
-import typings.reactCountup.AnonPauseResumeReset
-import typings.reactCountup.AnonReset
-import typings.reactCountup.AnonStart
-import typings.reactCountup.AnonUpdate
+import typings.reactCountup.anon.PauseResume
+import typings.reactCountup.anon.PauseResumeReset
+import typings.reactCountup.anon.Reset
+import typings.reactCountup.anon.Start
+import typings.reactCountup.anon.Update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,23 +57,23 @@ trait Props extends js.Object {
   /**
     * Callback function on transition end.
     */
-  var onEnd: js.UndefOr[js.Function1[/* providedFn */ AnonPauseResume, Unit]] = js.undefined
+  var onEnd: js.UndefOr[js.Function1[/* providedFn */ PauseResume, Unit]] = js.undefined
   /**
     * Callback function on pause or resume.
     */
-  var onPauseResume: js.UndefOr[js.Function0[js.Function1[/* providedFn */ AnonStart, Unit]]] = js.undefined
+  var onPauseResume: js.UndefOr[js.Function0[js.Function1[/* providedFn */ Start, Unit]]] = js.undefined
   /**
     * Callback function on reset.
     */
-  var onReset: js.UndefOr[js.Function0[js.Function1[/* providedFn */ AnonUpdate, Unit]]] = js.undefined
+  var onReset: js.UndefOr[js.Function0[js.Function1[/* providedFn */ Update, Unit]]] = js.undefined
   /**
     * Callback function on transition start.
     */
-  var onStart: js.UndefOr[js.Function1[/* providedFn */ AnonReset, Unit]] = js.undefined
+  var onStart: js.UndefOr[js.Function1[/* providedFn */ Reset, Unit]] = js.undefined
   /**
     * Callback function on update.
     */
-  var onUpdate: js.UndefOr[js.Function1[/* providedFn */ AnonPauseResumeReset, Unit]] = js.undefined
+  var onUpdate: js.UndefOr[js.Function1[/* providedFn */ PauseResumeReset, Unit]] = js.undefined
   /**
     * Static text before the transitioning value.
     */
@@ -120,22 +120,22 @@ object Props {
     children: /* data */ RenderProps => ReactElement = null,
     className: String = null,
     decimal: String = null,
-    decimals: Int | Double = null,
-    delay: Int | Double = null,
-    duration: Int | Double = null,
+    decimals: js.UndefOr[Double] = js.undefined,
+    delay: js.UndefOr[Double] = js.undefined,
+    duration: js.UndefOr[Double] = js.undefined,
     easingFn: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Unit = null,
-    end: Int | Double = null,
+    end: js.UndefOr[Double] = js.undefined,
     formattingFn: /* value */ Double => String = null,
-    onEnd: /* providedFn */ AnonPauseResume => Unit = null,
-    onPauseResume: () => js.Function1[/* providedFn */ AnonStart, Unit] = null,
-    onReset: () => js.Function1[/* providedFn */ AnonUpdate, Unit] = null,
-    onStart: /* providedFn */ AnonReset => Unit = null,
-    onUpdate: /* providedFn */ AnonPauseResumeReset => Unit = null,
+    onEnd: /* providedFn */ PauseResume => Unit = null,
+    onPauseResume: () => js.Function1[/* providedFn */ Start, Unit] = null,
+    onReset: () => js.Function1[/* providedFn */ Update, Unit] = null,
+    onStart: /* providedFn */ Reset => Unit = null,
+    onUpdate: /* providedFn */ PauseResumeReset => Unit = null,
     prefix: String = null,
     preserveValue: js.UndefOr[Boolean] = js.undefined,
     redraw: js.UndefOr[Boolean] = js.undefined,
     separator: String = null,
-    start: Int | Double = null,
+    start: js.UndefOr[Double] = js.undefined,
     startOnMount: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
     suffix: String = null,
@@ -145,11 +145,11 @@ object Props {
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (decimal != null) __obj.updateDynamic("decimal")(decimal.asInstanceOf[js.Any])
-    if (decimals != null) __obj.updateDynamic("decimals")(decimals.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(decimals)) __obj.updateDynamic("decimals")(decimals.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easingFn != null) __obj.updateDynamic("easingFn")(js.Any.fromFunction4(easingFn))
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
     if (formattingFn != null) __obj.updateDynamic("formattingFn")(js.Any.fromFunction1(formattingFn))
     if (onEnd != null) __obj.updateDynamic("onEnd")(js.Any.fromFunction1(onEnd))
     if (onPauseResume != null) __obj.updateDynamic("onPauseResume")(js.Any.fromFunction0(onPauseResume))
@@ -157,14 +157,14 @@ object Props {
     if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction1(onStart))
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction1(onUpdate))
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveValue)) __obj.updateDynamic("preserveValue")(preserveValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(redraw)) __obj.updateDynamic("redraw")(redraw.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveValue)) __obj.updateDynamic("preserveValue")(preserveValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(redraw)) __obj.updateDynamic("redraw")(redraw.get.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (!js.isUndefined(startOnMount)) __obj.updateDynamic("startOnMount")(startOnMount.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startOnMount)) __obj.updateDynamic("startOnMount")(startOnMount.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
-    if (!js.isUndefined(useEasing)) __obj.updateDynamic("useEasing")(useEasing.asInstanceOf[js.Any])
+    if (!js.isUndefined(useEasing)) __obj.updateDynamic("useEasing")(useEasing.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

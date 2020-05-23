@@ -34,18 +34,18 @@ trait PlotMacdParamsOptions extends js.Object {
 object PlotMacdParamsOptions {
   @scala.inline
   def apply(
-    index: Int | Double = null,
-    longPeriod: Int | Double = null,
-    period: Int | Double = null,
-    shortPeriod: Int | Double = null,
-    signalPeriod: Int | Double = null
+    index: js.UndefOr[Double] = js.undefined,
+    longPeriod: js.UndefOr[Double] = js.undefined,
+    period: js.UndefOr[Double] = js.undefined,
+    shortPeriod: js.UndefOr[Double] = js.undefined,
+    signalPeriod: js.UndefOr[Double] = js.undefined
   ): PlotMacdParamsOptions = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (longPeriod != null) __obj.updateDynamic("longPeriod")(longPeriod.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (shortPeriod != null) __obj.updateDynamic("shortPeriod")(shortPeriod.asInstanceOf[js.Any])
-    if (signalPeriod != null) __obj.updateDynamic("signalPeriod")(signalPeriod.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(longPeriod)) __obj.updateDynamic("longPeriod")(longPeriod.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(period)) __obj.updateDynamic("period")(period.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shortPeriod)) __obj.updateDynamic("shortPeriod")(shortPeriod.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(signalPeriod)) __obj.updateDynamic("signalPeriod")(signalPeriod.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotMacdParamsOptions]
   }
 }

@@ -15,11 +15,15 @@ trait IClientPagingResponse extends js.Object {
 
 object IClientPagingResponse {
   @scala.inline
-  def apply(limit: Int | Double = null, next: String = null, start: String = null): IClientPagingResponse = {
+  def apply(
+    limit: js.UndefOr[Null | Double] = js.undefined,
+    next: js.UndefOr[Null | String] = js.undefined,
+    start: js.UndefOr[Null | String] = js.undefined
+  ): IClientPagingResponse = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(next)) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientPagingResponse]
   }
 }

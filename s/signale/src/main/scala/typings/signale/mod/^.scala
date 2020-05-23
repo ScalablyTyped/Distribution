@@ -1,7 +1,7 @@
 package typings.signale.mod
 
-import typings.signale.AnonLabel
-import typings.signale.SignaleDefaultMethods
+import typings.signale.anon.Label
+import typings.signale.anon.SignaleDefaultMethods
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -125,9 +125,9 @@ object ^ extends js.Object {
     * @param label Label corresponding to the timer, each timer has its own unique label.
     * @param span Total running time.
     */
-  def timeEnd(): AnonLabel = js.native
-  def timeEnd(label: String): AnonLabel = js.native
-  def timeEnd(label: String, span: Double): AnonLabel = js.native
+  def timeEnd(): Label = js.native
+  def timeEnd(label: String): Label = js.native
+  def timeEnd(label: String, span: Double): Label = js.native
   /** Clears the scope name of the logger. */
   def unscope(): Unit = js.native
   def warn(): Unit = js.native

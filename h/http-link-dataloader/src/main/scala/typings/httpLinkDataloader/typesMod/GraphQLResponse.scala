@@ -16,7 +16,7 @@ object GraphQLResponse {
   @scala.inline
   def apply(
     status: Double,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     data: js.Any = null,
     errors: js.Array[GraphQLError] = null
   ): GraphQLResponse = {

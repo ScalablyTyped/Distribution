@@ -20,16 +20,16 @@ object CustomArrowProps {
   @scala.inline
   def apply(
     className: String = null,
-    currentSlide: Int | Double = null,
+    currentSlide: js.UndefOr[Double] = js.undefined,
     onClick: MouseEvent[_, NativeMouseEvent] => Unit = null,
-    slideCount: Int | Double = null,
+    slideCount: js.UndefOr[Double] = js.undefined,
     style: CSSProperties = null
   ): CustomArrowProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (currentSlide != null) __obj.updateDynamic("currentSlide")(currentSlide.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentSlide)) __obj.updateDynamic("currentSlide")(currentSlide.get.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (slideCount != null) __obj.updateDynamic("slideCount")(slideCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(slideCount)) __obj.updateDynamic("slideCount")(slideCount.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomArrowProps]
   }

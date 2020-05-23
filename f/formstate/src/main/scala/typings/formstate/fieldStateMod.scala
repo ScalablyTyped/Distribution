@@ -1,5 +1,9 @@
 package typings.formstate
 
+import typings.formstate.anon.HasError
+import typings.formstate.anon.NewValue
+import typings.formstate.anon.OnReinit
+import typings.formstate.anon.Value
 import typings.formstate.typesMod.ComposibleValidatable
 import typings.formstate.typesMod.Validator
 import scala.scalajs.js
@@ -54,22 +58,22 @@ object fieldStateMod extends js.Object {
     /**
       * Allows you to take actions in your code based on `value` changes caused by user interactions
       */
-    /* protected */ def _onDidChange(config: AnonNewValue[TValue]): js.Any = js.native
+    /* protected */ def _onDidChange(config: NewValue[TValue]): js.Any = js.native
     /* protected */ def _onUpdate(state: FieldState[TValue]): js.Any = js.native
     /** Used by the parent to register listeners */
     /* CompleteClass */
-    override def _setCompositionParent(config: AnonOnReinit): Unit = js.native
+    override def _setCompositionParent(config: OnReinit): Unit = js.native
     /* CompleteClass */
     override def disableAutoValidation(): Unit = js.native
     /* CompleteClass */
     override def enableAutoValidation(): Unit = js.native
-    def enableAutoValidationAndValidate(): js.Promise[AnonHasError | AnonValue[TValue]] = js.native
-    /* protected */ def executeOnDidChange(config: AnonNewValue[TValue]): Unit = js.native
+    def enableAutoValidationAndValidate(): js.Promise[HasError | Value[TValue]] = js.native
+    /* protected */ def executeOnDidChange(config: NewValue[TValue]): Unit = js.native
     /* protected */ def executeOnUpdate(): Unit = js.native
     def getAutoValidationDefault(): Boolean = js.native
     /** On change on the component side */
     def onChange(value: TValue): Unit = js.native
-    def onDidChange(handler: js.Function1[/* config */ AnonNewValue[TValue], _]): this.type = js.native
+    def onDidChange(handler: js.Function1[/* config */ NewValue[TValue], _]): this.type = js.native
     /**
       * onUpdate is called whenever we change something in our local state that is significant
       * - value
@@ -100,7 +104,7 @@ object fieldStateMod extends js.Object {
       **/
     def setError(error: String): Unit = js.native
     /* CompleteClass */
-    override def validate(): js.Promise[AnonHasError | AnonValue[TValue]] = js.native
+    override def validate(): js.Promise[HasError | Value[TValue]] = js.native
     def validators(validators: Validator[TValue]*): this.type = js.native
   }
   

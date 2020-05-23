@@ -11,9 +11,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Electron.DownloadItem")
 @js.native
-class DownloadItem () extends EventEmitter {
+trait DownloadItem extends EventEmitter {
   var savePath: String = js.native
   def addListener(
     event: done,

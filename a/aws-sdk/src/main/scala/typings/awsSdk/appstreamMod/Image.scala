@@ -84,7 +84,7 @@ object Image {
     Description: String = null,
     DisplayName: String = null,
     ImageBuilderName: String = null,
-    ImageBuilderSupported: js.UndefOr[scala.Boolean] = js.undefined,
+    ImageBuilderSupported: js.UndefOr[Boolean] = js.undefined,
     ImagePermissions: ImagePermissions = null,
     Platform: PlatformType = null,
     PublicBaseImageReleasedDate: Timestamp = null,
@@ -101,7 +101,7 @@ object Image {
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
     if (ImageBuilderName != null) __obj.updateDynamic("ImageBuilderName")(ImageBuilderName.asInstanceOf[js.Any])
-    if (!js.isUndefined(ImageBuilderSupported)) __obj.updateDynamic("ImageBuilderSupported")(ImageBuilderSupported.asInstanceOf[js.Any])
+    if (!js.isUndefined(ImageBuilderSupported)) __obj.updateDynamic("ImageBuilderSupported")(ImageBuilderSupported.get.asInstanceOf[js.Any])
     if (ImagePermissions != null) __obj.updateDynamic("ImagePermissions")(ImagePermissions.asInstanceOf[js.Any])
     if (Platform != null) __obj.updateDynamic("Platform")(Platform.asInstanceOf[js.Any])
     if (PublicBaseImageReleasedDate != null) __obj.updateDynamic("PublicBaseImageReleasedDate")(PublicBaseImageReleasedDate.asInstanceOf[js.Any])

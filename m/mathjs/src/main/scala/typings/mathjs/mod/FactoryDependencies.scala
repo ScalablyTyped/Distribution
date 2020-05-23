@@ -1,6 +1,6 @@
 package typings.mathjs.mod
 
-import typings.mathjs.PartialMathJsStatic
+import typings.mathjs.anon.PartialMathJsStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

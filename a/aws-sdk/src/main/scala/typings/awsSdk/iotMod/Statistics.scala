@@ -43,24 +43,24 @@ trait Statistics extends js.Object {
 object Statistics {
   @scala.inline
   def apply(
-    average: Int | Double = null,
-    count: Int | Double = null,
-    maximum: Int | Double = null,
-    minimum: Int | Double = null,
-    stdDeviation: Int | Double = null,
-    sum: Int | Double = null,
-    sumOfSquares: Int | Double = null,
-    variance: Int | Double = null
+    average: js.UndefOr[Average] = js.undefined,
+    count: js.UndefOr[Count] = js.undefined,
+    maximum: js.UndefOr[Maximum] = js.undefined,
+    minimum: js.UndefOr[Minimum] = js.undefined,
+    stdDeviation: js.UndefOr[StdDeviation] = js.undefined,
+    sum: js.UndefOr[Sum] = js.undefined,
+    sumOfSquares: js.UndefOr[SumOfSquares] = js.undefined,
+    variance: js.UndefOr[Variance] = js.undefined
   ): Statistics = {
     val __obj = js.Dynamic.literal()
-    if (average != null) __obj.updateDynamic("average")(average.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
-    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
-    if (stdDeviation != null) __obj.updateDynamic("stdDeviation")(stdDeviation.asInstanceOf[js.Any])
-    if (sum != null) __obj.updateDynamic("sum")(sum.asInstanceOf[js.Any])
-    if (sumOfSquares != null) __obj.updateDynamic("sumOfSquares")(sumOfSquares.asInstanceOf[js.Any])
-    if (variance != null) __obj.updateDynamic("variance")(variance.asInstanceOf[js.Any])
+    if (!js.isUndefined(average)) __obj.updateDynamic("average")(average.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximum)) __obj.updateDynamic("maximum")(maximum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimum)) __obj.updateDynamic("minimum")(minimum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stdDeviation)) __obj.updateDynamic("stdDeviation")(stdDeviation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sum)) __obj.updateDynamic("sum")(sum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sumOfSquares)) __obj.updateDynamic("sumOfSquares")(sumOfSquares.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(variance)) __obj.updateDynamic("variance")(variance.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Statistics]
   }
 }

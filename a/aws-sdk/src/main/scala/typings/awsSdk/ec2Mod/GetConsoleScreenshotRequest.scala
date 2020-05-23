@@ -24,12 +24,12 @@ object GetConsoleScreenshotRequest {
   @scala.inline
   def apply(
     InstanceId: InstanceId,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
-    WakeUp: js.UndefOr[scala.Boolean] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined,
+    WakeUp: js.UndefOr[Boolean] = js.undefined
   ): GetConsoleScreenshotRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
-    if (!js.isUndefined(WakeUp)) __obj.updateDynamic("WakeUp")(WakeUp.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(WakeUp)) __obj.updateDynamic("WakeUp")(WakeUp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConsoleScreenshotRequest]
   }
 }

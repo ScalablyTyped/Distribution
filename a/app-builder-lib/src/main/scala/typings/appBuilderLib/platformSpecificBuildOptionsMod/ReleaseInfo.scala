@@ -27,15 +27,15 @@ object ReleaseInfo {
   @scala.inline
   def apply(
     releaseDate: String = null,
-    releaseName: String = null,
-    releaseNotes: String = null,
-    releaseNotesFile: String = null
+    releaseName: js.UndefOr[Null | String] = js.undefined,
+    releaseNotes: js.UndefOr[Null | String] = js.undefined,
+    releaseNotesFile: js.UndefOr[Null | String] = js.undefined
   ): ReleaseInfo = {
     val __obj = js.Dynamic.literal()
     if (releaseDate != null) __obj.updateDynamic("releaseDate")(releaseDate.asInstanceOf[js.Any])
-    if (releaseName != null) __obj.updateDynamic("releaseName")(releaseName.asInstanceOf[js.Any])
-    if (releaseNotes != null) __obj.updateDynamic("releaseNotes")(releaseNotes.asInstanceOf[js.Any])
-    if (releaseNotesFile != null) __obj.updateDynamic("releaseNotesFile")(releaseNotesFile.asInstanceOf[js.Any])
+    if (!js.isUndefined(releaseName)) __obj.updateDynamic("releaseName")(releaseName.asInstanceOf[js.Any])
+    if (!js.isUndefined(releaseNotes)) __obj.updateDynamic("releaseNotes")(releaseNotes.asInstanceOf[js.Any])
+    if (!js.isUndefined(releaseNotesFile)) __obj.updateDynamic("releaseNotesFile")(releaseNotesFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReleaseInfo]
   }
 }

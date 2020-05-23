@@ -65,7 +65,7 @@ object UpdateRouteRequest {
   def apply(
     ApiId: string,
     RouteId: string,
-    ApiKeyRequired: js.UndefOr[Boolean] = js.undefined,
+    ApiKeyRequired: js.UndefOr[boolean] = js.undefined,
     AuthorizationScopes: AuthorizationScopes = null,
     AuthorizationType: AuthorizationType = null,
     AuthorizerId: Id = null,
@@ -78,7 +78,7 @@ object UpdateRouteRequest {
     Target: StringWithLengthBetween1And128 = null
   ): UpdateRouteRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], RouteId = RouteId.asInstanceOf[js.Any])
-    if (!js.isUndefined(ApiKeyRequired)) __obj.updateDynamic("ApiKeyRequired")(ApiKeyRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(ApiKeyRequired)) __obj.updateDynamic("ApiKeyRequired")(ApiKeyRequired.get.asInstanceOf[js.Any])
     if (AuthorizationScopes != null) __obj.updateDynamic("AuthorizationScopes")(AuthorizationScopes.asInstanceOf[js.Any])
     if (AuthorizationType != null) __obj.updateDynamic("AuthorizationType")(AuthorizationType.asInstanceOf[js.Any])
     if (AuthorizerId != null) __obj.updateDynamic("AuthorizerId")(AuthorizerId.asInstanceOf[js.Any])

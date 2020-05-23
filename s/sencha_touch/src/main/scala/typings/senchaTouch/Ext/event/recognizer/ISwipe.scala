@@ -8,28 +8,28 @@ import scala.scalajs.js.annotation._
 
 trait ISwipe extends IRecognizer {
   /** [Method] Returns the value of maxDuration
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMaxDuration: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of maxOffset
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMaxOffset: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of minDistance
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMinDistance: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Sets the value of maxDuration
-  		* @param maxDuration Number The new value.
-  		*/
+    * @param maxDuration Number The new value.
+    */
   var setMaxDuration: js.UndefOr[js.Function1[/* maxDuration */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of maxOffset
-  		* @param maxOffset Number The new value.
-  		*/
+    * @param maxOffset Number The new value.
+    */
   var setMaxOffset: js.UndefOr[js.Function1[/* maxOffset */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of minDistance
-  		* @param minDistance Number The new value.
-  		*/
+    * @param minDistance Number The new value.
+    */
   var setMinDistance: js.UndefOr[js.Function1[/* minDistance */ js.UndefOr[Double], Unit]] = js.undefined
 }
 
@@ -95,7 +95,7 @@ object ISwipe {
     if (setMinDistance != null) __obj.updateDynamic("setMinDistance")(js.Any.fromFunction1(setMinDistance))
     if (setOnFailed != null) __obj.updateDynamic("setOnFailed")(js.Any.fromFunction1(setOnFailed))
     if (setOnRecognized != null) __obj.updateDynamic("setOnRecognized")(js.Any.fromFunction1(setOnRecognized))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISwipe]

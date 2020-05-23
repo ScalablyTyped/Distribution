@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait FileChangeEvent extends js.Object {
   /**
-  		 * The type of change.
-  		 */
+    * The type of change.
+    */
   val `type`: FileChangeType
   /**
-  		 * The uri of the file that has changed.
-  		 */
+    * The uri of the file that has changed.
+    */
   val uri: Uri
 }
 

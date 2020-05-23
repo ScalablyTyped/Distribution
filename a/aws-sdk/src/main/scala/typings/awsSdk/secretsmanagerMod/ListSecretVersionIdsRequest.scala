@@ -28,13 +28,13 @@ object ListSecretVersionIdsRequest {
   @scala.inline
   def apply(
     SecretId: SecretIdType,
-    IncludeDeprecated: js.UndefOr[Boolean] = js.undefined,
-    MaxResults: Int | Double = null,
+    IncludeDeprecated: js.UndefOr[BooleanType] = js.undefined,
+    MaxResults: js.UndefOr[MaxResultsType] = js.undefined,
     NextToken: NextTokenType = null
   ): ListSecretVersionIdsRequest = {
     val __obj = js.Dynamic.literal(SecretId = SecretId.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeDeprecated)) __obj.updateDynamic("IncludeDeprecated")(IncludeDeprecated.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeDeprecated)) __obj.updateDynamic("IncludeDeprecated")(IncludeDeprecated.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSecretVersionIdsRequest]
   }

@@ -19,10 +19,14 @@ trait ListVolumesInput extends js.Object {
 
 object ListVolumesInput {
   @scala.inline
-  def apply(GatewayARN: GatewayARN = null, Limit: Int | Double = null, Marker: Marker = null): ListVolumesInput = {
+  def apply(
+    GatewayARN: GatewayARN = null,
+    Limit: js.UndefOr[PositiveIntObject] = js.undefined,
+    Marker: Marker = null
+  ): ListVolumesInput = {
     val __obj = js.Dynamic.literal()
     if (GatewayARN != null) __obj.updateDynamic("GatewayARN")(GatewayARN.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListVolumesInput]
   }

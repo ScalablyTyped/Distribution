@@ -1,8 +1,8 @@
 package typings.jqueryFileupload
 
-import typings.jquery.JQuery_.Deferred.CallbackBase
-import typings.jquery.JQuery_.PromiseBase
-import typings.jquery.JQuery_.TypeOrArray
+import typings.jquery.JQuery.Deferred.CallbackBase
+import typings.jquery.JQuery.PromiseBase
+import typings.jquery.JQuery.TypeOrArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

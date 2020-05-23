@@ -1,25 +1,41 @@
 package typings.codemirror.mod
 
-import typings.codemirror.AnonFrom
+import typings.codemirror.anon.From
 import typings.codemirror.codemirrorStrings.beforeCursorEnter
 import typings.codemirror.codemirrorStrings.clear
 import typings.codemirror.codemirrorStrings.hide
 import typings.codemirror.codemirrorStrings.unhide
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Inlined parent std.Partial<codemirror.codemirror.TextMarkerOptions> */
 @js.native
 trait TextMarker extends js.Object {
+  var addToHistory: js.UndefOr[Boolean] = js.native
+  var atomic: js.UndefOr[Boolean] = js.native
+  var className: js.UndefOr[String] = js.native
+  var clearOnEnter: js.UndefOr[Boolean] = js.native
+  var clearWhenEmpty: js.UndefOr[Boolean] = js.native
+  var collapsed: js.UndefOr[Boolean] = js.native
+  var css: js.UndefOr[String] = js.native
+  var endStyle: js.UndefOr[String] = js.native
+  var handleMouseEvents: js.UndefOr[Boolean] = js.native
+  var inclusiveLeft: js.UndefOr[Boolean] = js.native
+  var inclusiveRight: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.native
+  var replacedWith: js.UndefOr[HTMLElement] = js.native
+  var shared: js.UndefOr[Boolean] = js.native
+  var startStyle: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.native
   /**  Called when you've done something that might change the size of the marker and want to cheaply update the display*/
   def changed(): Unit = js.native
   /** Remove the mark. */
   def clear(): Unit = js.native
   /** Returns a {from, to} object (both holding document positions), indicating the current position of the marked range,
     or undefined if the marker is no longer in the document. */
-  def find(): AnonFrom = js.native
-  /**  Returns an object representing the options for the marker. If copyWidget is given true, it will clone the value of the replacedWith option, if any. */
-  def getOptions(copyWidget: Boolean): TextMarkerOptions = js.native
+  def find(): From = js.native
   @JSName("off")
   def off_beforeCursorEnter(eventName: beforeCursorEnter, handler: js.Function0[Unit]): Unit = js.native
   @JSName("off")

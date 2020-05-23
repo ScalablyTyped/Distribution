@@ -69,7 +69,7 @@ object TickConfig {
   ): TickConfig = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mode = mode.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), values = values.asInstanceOf[js.Any])
     if (labelFormatFunction != null) __obj.updateDynamic("labelFormatFunction")(js.Any.fromFunction3(labelFormatFunction))
-    if (!js.isUndefined(labelsVisible)) __obj.updateDynamic("labelsVisible")(labelsVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelsVisible)) __obj.updateDynamic("labelsVisible")(labelsVisible.get.asInstanceOf[js.Any])
     if (tickCreatedFunction != null) __obj.updateDynamic("tickCreatedFunction")(js.Any.fromFunction3(tickCreatedFunction))
     __obj.asInstanceOf[TickConfig]
   }

@@ -1,9 +1,9 @@
 package typings.antdMobileRn.pickerStyleIndexNativeMod
 
-import typings.antdMobileRn.AnonAlignItemsBorderBottomColor
-import typings.antdMobileRn.AnonAlignItemsFlex
-import typings.antdMobileRn.AnonColorFontSizeTextAlign
-import typings.antdMobileRn.AnonFlexFlexDirectionJustifyContent
+import typings.antdMobileRn.anon.AlignItemsBorderBottomColor
+import typings.antdMobileRn.anon.AlignItemsFlex
+import typings.antdMobileRn.anon.ColorFontSizeTextAlign
+import typings.antdMobileRn.anon.FlexFlexDirectionJustifyContent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,10 +11,10 @@ import scala.scalajs.js.annotation._
 @JSImport("antd-mobile-rn/lib/picker/style/index.native", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var actionText: AnonColorFontSizeTextAlign = js.native
-  var header: AnonAlignItemsBorderBottomColor = js.native
-  var headerItem: AnonAlignItemsFlex = js.native
-  var modal: AnonFlexFlexDirectionJustifyContent = js.native
-  var title: AnonColorFontSizeTextAlign = js.native
+  var actionText: ColorFontSizeTextAlign = js.native
+  var header: AlignItemsBorderBottomColor = js.native
+  var headerItem: AlignItemsFlex = js.native
+  var modal: FlexFlexDirectionJustifyContent = js.native
+  var title: ColorFontSizeTextAlign = js.native
 }
 

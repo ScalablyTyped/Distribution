@@ -29,15 +29,15 @@ object IonSpinner {
   @scala.inline
   def apply(
     color: Color = null,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     name: SpinnerTypes = null,
     paused: js.UndefOr[Boolean] = js.undefined
   ): IonSpinner = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused.asInstanceOf[js.Any])
+    if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonSpinner]
   }
 }

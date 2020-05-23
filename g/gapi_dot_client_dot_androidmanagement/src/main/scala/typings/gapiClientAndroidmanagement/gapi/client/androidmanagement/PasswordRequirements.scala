@@ -38,29 +38,29 @@ trait PasswordRequirements extends js.Object {
 object PasswordRequirements {
   @scala.inline
   def apply(
-    maximumFailedPasswordsForWipe: Int | Double = null,
+    maximumFailedPasswordsForWipe: js.UndefOr[Double] = js.undefined,
     passwordExpirationTimeout: String = null,
-    passwordHistoryLength: Int | Double = null,
-    passwordMinimumLength: Int | Double = null,
-    passwordMinimumLetters: Int | Double = null,
-    passwordMinimumLowerCase: Int | Double = null,
-    passwordMinimumNonLetter: Int | Double = null,
-    passwordMinimumNumeric: Int | Double = null,
-    passwordMinimumSymbols: Int | Double = null,
-    passwordMinimumUpperCase: Int | Double = null,
+    passwordHistoryLength: js.UndefOr[Double] = js.undefined,
+    passwordMinimumLength: js.UndefOr[Double] = js.undefined,
+    passwordMinimumLetters: js.UndefOr[Double] = js.undefined,
+    passwordMinimumLowerCase: js.UndefOr[Double] = js.undefined,
+    passwordMinimumNonLetter: js.UndefOr[Double] = js.undefined,
+    passwordMinimumNumeric: js.UndefOr[Double] = js.undefined,
+    passwordMinimumSymbols: js.UndefOr[Double] = js.undefined,
+    passwordMinimumUpperCase: js.UndefOr[Double] = js.undefined,
     passwordQuality: String = null
   ): PasswordRequirements = {
     val __obj = js.Dynamic.literal()
-    if (maximumFailedPasswordsForWipe != null) __obj.updateDynamic("maximumFailedPasswordsForWipe")(maximumFailedPasswordsForWipe.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumFailedPasswordsForWipe)) __obj.updateDynamic("maximumFailedPasswordsForWipe")(maximumFailedPasswordsForWipe.get.asInstanceOf[js.Any])
     if (passwordExpirationTimeout != null) __obj.updateDynamic("passwordExpirationTimeout")(passwordExpirationTimeout.asInstanceOf[js.Any])
-    if (passwordHistoryLength != null) __obj.updateDynamic("passwordHistoryLength")(passwordHistoryLength.asInstanceOf[js.Any])
-    if (passwordMinimumLength != null) __obj.updateDynamic("passwordMinimumLength")(passwordMinimumLength.asInstanceOf[js.Any])
-    if (passwordMinimumLetters != null) __obj.updateDynamic("passwordMinimumLetters")(passwordMinimumLetters.asInstanceOf[js.Any])
-    if (passwordMinimumLowerCase != null) __obj.updateDynamic("passwordMinimumLowerCase")(passwordMinimumLowerCase.asInstanceOf[js.Any])
-    if (passwordMinimumNonLetter != null) __obj.updateDynamic("passwordMinimumNonLetter")(passwordMinimumNonLetter.asInstanceOf[js.Any])
-    if (passwordMinimumNumeric != null) __obj.updateDynamic("passwordMinimumNumeric")(passwordMinimumNumeric.asInstanceOf[js.Any])
-    if (passwordMinimumSymbols != null) __obj.updateDynamic("passwordMinimumSymbols")(passwordMinimumSymbols.asInstanceOf[js.Any])
-    if (passwordMinimumUpperCase != null) __obj.updateDynamic("passwordMinimumUpperCase")(passwordMinimumUpperCase.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordHistoryLength)) __obj.updateDynamic("passwordHistoryLength")(passwordHistoryLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordMinimumLength)) __obj.updateDynamic("passwordMinimumLength")(passwordMinimumLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordMinimumLetters)) __obj.updateDynamic("passwordMinimumLetters")(passwordMinimumLetters.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordMinimumLowerCase)) __obj.updateDynamic("passwordMinimumLowerCase")(passwordMinimumLowerCase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordMinimumNonLetter)) __obj.updateDynamic("passwordMinimumNonLetter")(passwordMinimumNonLetter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordMinimumNumeric)) __obj.updateDynamic("passwordMinimumNumeric")(passwordMinimumNumeric.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordMinimumSymbols)) __obj.updateDynamic("passwordMinimumSymbols")(passwordMinimumSymbols.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordMinimumUpperCase)) __obj.updateDynamic("passwordMinimumUpperCase")(passwordMinimumUpperCase.get.asInstanceOf[js.Any])
     if (passwordQuality != null) __obj.updateDynamic("passwordQuality")(passwordQuality.asInstanceOf[js.Any])
     __obj.asInstanceOf[PasswordRequirements]
   }

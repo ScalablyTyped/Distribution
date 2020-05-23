@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DeleteFilterRequest extends js.Object {
   /**
-    * The unique ID of the detector the filter is associated with.
+    * The unique ID of the detector that the filter is associated with.
     */
   var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
   /**
-    * The name of the filter you want to delete.
+    * The name of the filter that you want to delete.
     */
   var FilterName: String = js.native
 }

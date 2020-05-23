@@ -1,6 +1,6 @@
 package typings.gapiClientPlusdomains.gapi.client.plusdomains
 
-import typings.gapiClientPlusdomains.AnonTotalItems
+import typings.gapiClientPlusdomains.anon.TotalItems
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait Circle extends js.Object {
   /** Identifies this resource as a circle. Value: "plus#circle". */
   var kind: js.UndefOr[String] = js.undefined
   /** The people in this circle. */
-  var people: js.UndefOr[AnonTotalItems] = js.undefined
+  var people: js.UndefOr[TotalItems] = js.undefined
   /** Link to this circle resource */
   var selfLink: js.UndefOr[String] = js.undefined
 }
@@ -30,7 +30,7 @@ object Circle {
     etag: String = null,
     id: String = null,
     kind: String = null,
-    people: AnonTotalItems = null,
+    people: TotalItems = null,
     selfLink: String = null
   ): Circle = {
     val __obj = js.Dynamic.literal()

@@ -1,5 +1,6 @@
 package typings.jsData
 
+import typings.jsData.anon.Added
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -70,8 +71,8 @@ object recordMod extends js.Object {
       * instantiated or its {@link Record#commit} method was last called.
       * @since 3.0.0
       */
-    def changes(): AnonAdded = js.native
-    def changes(opts: js.Any): AnonAdded = js.native
+    def changes(): Added = js.native
+    def changes(opts: js.Any): Added = js.native
     /**
       * Make the record's current in-memory state it's only state, with any
       * previous property values being set to current values.

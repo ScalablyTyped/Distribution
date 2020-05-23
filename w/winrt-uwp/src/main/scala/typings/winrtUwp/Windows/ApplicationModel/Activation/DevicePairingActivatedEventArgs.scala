@@ -4,12 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.Activation.DevicePairingActivatedEventArgs")
-@js.native
-abstract class DevicePairingActivatedEventArgs () extends js.Object {
-  var deviceInformation: js.Any = js.native
-   /* unmapped type */ var kind: js.Any = js.native
-   /* unmapped type */ var previousExecutionState: js.Any = js.native
-   /* unmapped type */ var splashScreen: js.Any = js.native
+trait DevicePairingActivatedEventArgs extends js.Object {
+  var deviceInformation: js.Any
+   /* unmapped type */ var kind: js.Any
+   /* unmapped type */ var previousExecutionState: js.Any
+   /* unmapped type */ var splashScreen: js.Any
+}
+
+object DevicePairingActivatedEventArgs {
+  @scala.inline
+  def apply(deviceInformation: js.Any, kind: js.Any, previousExecutionState: js.Any, splashScreen: js.Any): DevicePairingActivatedEventArgs = {
+    val __obj = js.Dynamic.literal(deviceInformation = deviceInformation.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DevicePairingActivatedEventArgs]
+  }
 }
 

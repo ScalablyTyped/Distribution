@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.WorkbookConnection")
 @js.native
-class WorkbookConnection protected () extends js.Object {
+trait WorkbookConnection extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
   var Description: String = js.native

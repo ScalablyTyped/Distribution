@@ -1,7 +1,7 @@
 package typings.popmotionPose
 
+import typings.popmotion.actionTypesMod.ColdSubscription
 import typings.popmotion.mod.Action_
-import typings.popmotion.typesMod.ColdSubscription
 import typings.popmotionPose.libTypesMod.PoserConfig
 import typings.popmotionPose.typesMod.PopmotionPoserFactoryConfig
 import typings.popmotionPose.typesMod.TransitionDefinition
@@ -16,6 +16,9 @@ import scala.scalajs.js.annotation._
 object factoriesPoseMod extends js.Object {
   def default[P](
     hasTransformPoseAddListenerToValueExtendAPIReadValueFromSourcePosePrioritySetValueNative: PopmotionPoserFactoryConfig[P, TransitionDefinition]
-  ): js.Function1[/* config */ PoserConfig[Value], Poser[Value, Action_, ColdSubscription, P]] = js.native
+  ): js.Function1[
+    /* config */ PoserConfig[Value], 
+    Poser[Value, Action_[ColdSubscription], ColdSubscription, P]
+  ] = js.native
 }
 

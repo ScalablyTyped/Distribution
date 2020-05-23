@@ -11,10 +11,10 @@ trait DrawerMini extends js.Object {
 
 object DrawerMini {
   @scala.inline
-  def apply(template: String = null, width: Int | Double = null): DrawerMini = {
+  def apply(template: String = null, width: js.UndefOr[Double] = js.undefined): DrawerMini = {
     val __obj = js.Dynamic.literal()
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawerMini]
   }
 }

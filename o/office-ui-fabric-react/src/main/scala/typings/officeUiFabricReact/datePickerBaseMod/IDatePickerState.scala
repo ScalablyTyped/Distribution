@@ -23,7 +23,7 @@ object IDatePickerState {
     val __obj = js.Dynamic.literal()
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
     if (formattedDate != null) __obj.updateDynamic("formattedDate")(formattedDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDatePickerShown)) __obj.updateDynamic("isDatePickerShown")(isDatePickerShown.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDatePickerShown)) __obj.updateDynamic("isDatePickerShown")(isDatePickerShown.get.asInstanceOf[js.Any])
     if (selectedDate != null) __obj.updateDynamic("selectedDate")(selectedDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDatePickerState]
   }

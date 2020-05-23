@@ -1,9 +1,9 @@
 package typings.antdMobile.customKeyboardMod
 
-import typings.antdMobile.AnonArialabel
-import typings.antdMobile.AnonIconOnly
+import typings.antdMobile.anon.Arialabel
+import typings.antdMobile.anon.IconOnly
 import typings.react.mod.Component
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLTableDataCellElement
 import typings.std.MouseEvent
@@ -18,7 +18,7 @@ trait CustomKeyboard
   var confirmDisabled: Boolean = js.native
   var confirmKeyboardItem: HTMLTableDataCellElement | Null = js.native
   var linkedInput: js.Any = js.native
-  def getAriaAttr(label: String): AnonArialabel | AnonIconOnly = js.native
+  def getAriaAttr(label: String): Arialabel | IconOnly = js.native
   def onKeyboardClick(e: typings.react.mod.MouseEvent[HTMLTableDataCellElement, MouseEvent]): js.UndefOr[Null] = js.native
   def onKeyboardClick(e: typings.react.mod.MouseEvent[HTMLTableDataCellElement, MouseEvent], value: String): js.UndefOr[Null] = js.native
   def renderKeyboardItem(item: String, index: Double): Element = js.native

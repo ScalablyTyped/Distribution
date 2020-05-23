@@ -14,10 +14,14 @@ trait AnimatedProps extends js.Object {
 
 object AnimatedProps {
   @scala.inline
-  def apply(id: String, additional: js.Object = null, children: ReactNode | ReactNodeArray = null): AnimatedProps = {
+  def apply(
+    id: String,
+    additional: js.Object = null,
+    children: js.UndefOr[Null | ReactNode | ReactNodeArray] = js.undefined
+  ): AnimatedProps = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (additional != null) __obj.updateDynamic("additional")(additional.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(children)) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimatedProps]
   }
 }

@@ -13,14 +13,14 @@ trait LocalDataTrackOptions extends js.Object {
 object LocalDataTrackOptions {
   @scala.inline
   def apply(
-    maxPacketLifeTime: Int | Double = null,
-    maxRetransmits: Int | Double = null,
+    maxPacketLifeTime: js.UndefOr[Null | Double] = js.undefined,
+    maxRetransmits: js.UndefOr[Null | Double] = js.undefined,
     ordered: js.UndefOr[Boolean] = js.undefined
   ): LocalDataTrackOptions = {
     val __obj = js.Dynamic.literal()
-    if (maxPacketLifeTime != null) __obj.updateDynamic("maxPacketLifeTime")(maxPacketLifeTime.asInstanceOf[js.Any])
-    if (maxRetransmits != null) __obj.updateDynamic("maxRetransmits")(maxRetransmits.asInstanceOf[js.Any])
-    if (!js.isUndefined(ordered)) __obj.updateDynamic("ordered")(ordered.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPacketLifeTime)) __obj.updateDynamic("maxPacketLifeTime")(maxPacketLifeTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetransmits)) __obj.updateDynamic("maxRetransmits")(maxRetransmits.asInstanceOf[js.Any])
+    if (!js.isUndefined(ordered)) __obj.updateDynamic("ordered")(ordered.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalDataTrackOptions]
   }
 }

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -73,7 +72,14 @@ trait univariateColorSize extends js.Object {
   def createVisualVariables(params: univariateColorSizeCreateVisualVariablesParams): js.Promise[VisualVariablesResult]
 }
 
-@JSGlobal("__esri.univariateColorSize")
-@js.native
-object univariateColorSize extends TopLevel[univariateColorSize]
+object univariateColorSize {
+  @scala.inline
+  def apply(
+    createContinuousRenderer: univariateColorSizeCreateContinuousRendererParams => js.Promise[univariateColorSizeContinuousRendererResult],
+    createVisualVariables: univariateColorSizeCreateVisualVariablesParams => js.Promise[VisualVariablesResult]
+  ): univariateColorSize = {
+    val __obj = js.Dynamic.literal(createContinuousRenderer = js.Any.fromFunction1(createContinuousRenderer), createVisualVariables = js.Any.fromFunction1(createVisualVariables))
+    __obj.asInstanceOf[univariateColorSize]
+  }
+}
 

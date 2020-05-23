@@ -22,13 +22,13 @@ trait CommonSeriesOptionsBubbleOptions extends js.Object {
 object CommonSeriesOptionsBubbleOptions {
   @scala.inline
   def apply(
-    maxRadius: Int | Double = null,
-    minRadius: Int | Double = null,
+    maxRadius: js.UndefOr[Double] = js.undefined,
+    minRadius: js.UndefOr[Double] = js.undefined,
     radiusMode: RadiusMode | String = null
   ): CommonSeriesOptionsBubbleOptions = {
     val __obj = js.Dynamic.literal()
-    if (maxRadius != null) __obj.updateDynamic("maxRadius")(maxRadius.asInstanceOf[js.Any])
-    if (minRadius != null) __obj.updateDynamic("minRadius")(minRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRadius)) __obj.updateDynamic("maxRadius")(maxRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minRadius)) __obj.updateDynamic("minRadius")(minRadius.get.asInstanceOf[js.Any])
     if (radiusMode != null) __obj.updateDynamic("radiusMode")(radiusMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonSeriesOptionsBubbleOptions]
   }

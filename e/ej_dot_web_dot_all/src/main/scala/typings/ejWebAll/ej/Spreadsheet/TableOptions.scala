@@ -21,7 +21,7 @@ object TableOptions {
   def apply(formatName: String = null, header: js.UndefOr[Boolean] = js.undefined, name: String = null): TableOptions = {
     val __obj = js.Dynamic.literal()
     if (formatName != null) __obj.updateDynamic("formatName")(formatName.asInstanceOf[js.Any])
-    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableOptions]
   }

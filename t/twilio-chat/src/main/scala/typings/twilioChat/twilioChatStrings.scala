@@ -165,9 +165,6 @@ object twilioChatStrings {
     extends typings.twilioChat.pushnotificationMod.PushNotification.Type
   
   @js.native
-  sealed trait twilioDotchannelDotconsumption_update extends js.Object
-  
-  @js.native
   sealed trait twilioDotchannelDotinvited_to_channel
     extends typings.twilioChat.pushnotificationMod.PushNotification.Type
   
@@ -178,9 +175,6 @@ object twilioChatStrings {
   @js.native
   sealed trait twilioDotchannelDotremoved_from_channel
     extends typings.twilioChat.pushnotificationMod.PushNotification.Type
-  
-  @js.native
-  sealed trait twilioDotipmsgDottyping_indicator extends js.Object
   
   @js.native
   sealed trait uniqueName
@@ -280,15 +274,11 @@ object twilioChatStrings {
   @scala.inline
   def twilioDotchannelDotadded_to_channel: twilioDotchannelDotadded_to_channel = "twilio.channel.added_to_channel".asInstanceOf[twilioDotchannelDotadded_to_channel]
   @scala.inline
-  def twilioDotchannelDotconsumption_update: twilioDotchannelDotconsumption_update = "twilio.channel.consumption_update".asInstanceOf[twilioDotchannelDotconsumption_update]
-  @scala.inline
   def twilioDotchannelDotinvited_to_channel: twilioDotchannelDotinvited_to_channel = "twilio.channel.invited_to_channel".asInstanceOf[twilioDotchannelDotinvited_to_channel]
   @scala.inline
   def twilioDotchannelDotnew_message: twilioDotchannelDotnew_message = "twilio.channel.new_message".asInstanceOf[twilioDotchannelDotnew_message]
   @scala.inline
   def twilioDotchannelDotremoved_from_channel: twilioDotchannelDotremoved_from_channel = "twilio.channel.removed_from_channel".asInstanceOf[twilioDotchannelDotremoved_from_channel]
-  @scala.inline
-  def twilioDotipmsgDottyping_indicator: twilioDotipmsgDottyping_indicator = "twilio.ipmsg.typing_indicator".asInstanceOf[twilioDotipmsgDottyping_indicator]
   @scala.inline
   def uniqueName: uniqueName = "uniqueName".asInstanceOf[uniqueName]
   @scala.inline

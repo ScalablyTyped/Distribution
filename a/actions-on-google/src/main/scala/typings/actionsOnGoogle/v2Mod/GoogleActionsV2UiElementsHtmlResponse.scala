@@ -29,7 +29,7 @@ object GoogleActionsV2UiElementsHtmlResponse {
     url: String = null
   ): GoogleActionsV2UiElementsHtmlResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(suppressMic)) __obj.updateDynamic("suppressMic")(suppressMic.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressMic)) __obj.updateDynamic("suppressMic")(suppressMic.get.asInstanceOf[js.Any])
     if (updatedState != null) __obj.updateDynamic("updatedState")(updatedState.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2UiElementsHtmlResponse]

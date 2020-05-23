@@ -17,7 +17,7 @@ object getPlayer extends js.Object {
     *          An HTML element - `<video>`, `<audio>`, or `<video-js>` -
     *          or a string matching the `id` of such an element.
     *
-    * @return	A player instance or `undefined` if there is no player instance
+    * @return    A player instance or `undefined` if there is no player instance
     *          matching the argument.
     */
   def apply(id: String): typings.videoJs.mod.videojs.Player = js.native

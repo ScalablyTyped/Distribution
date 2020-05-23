@@ -25,10 +25,10 @@ trait Details extends js.Object {
 
 object Details {
   @scala.inline
-  def apply(tabId: Int | Double = null, windowId: Int | Double = null): Details = {
+  def apply(tabId: js.UndefOr[Double] = js.undefined, windowId: js.UndefOr[Double] = js.undefined): Details = {
     val __obj = js.Dynamic.literal()
-    if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
-    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabId)) __obj.updateDynamic("tabId")(tabId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowId)) __obj.updateDynamic("windowId")(windowId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Details]
   }
 }

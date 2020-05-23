@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 /**
   *
   * Represents a collection of all the rows that are part of the table.
-  
   Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
   a TableRow object represent the physical location of the table row, but not the data.
   That is, if the data is sorted or if new rows are added, a table row will continue
@@ -23,7 +22,7 @@ trait TableRowCollectionLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.
+    * For EACH ITEM in the collection: Returns the index number of the row within the rows collection of the table. Zero-indexed.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -45,9 +44,9 @@ object TableRowCollectionLoadOptions {
     values: js.UndefOr[Boolean] = js.undefined
   ): TableRowCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(values)) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(values)) __obj.updateDynamic("values")(values.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableRowCollectionLoadOptions]
   }
 }

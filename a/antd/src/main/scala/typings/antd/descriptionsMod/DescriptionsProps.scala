@@ -1,6 +1,6 @@
 package typings.antd.descriptionsMod
 
-import typings.antd.PartialRecordBreakpointnu
+import typings.antd.anon.PartialRecordBreakpointnu
 import typings.antd.antdStrings.horizontal
 import typings.antd.antdStrings.middle
 import typings.antd.antdStrings.small
@@ -39,10 +39,10 @@ object DescriptionsProps {
     title: ReactNode = null
   ): DescriptionsProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.asInstanceOf[js.Any])
+    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(colon)) __obj.updateDynamic("colon")(colon.asInstanceOf[js.Any])
+    if (!js.isUndefined(colon)) __obj.updateDynamic("colon")(colon.get.asInstanceOf[js.Any])
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])

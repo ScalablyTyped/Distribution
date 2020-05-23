@@ -1,6 +1,6 @@
 package typings.pizzip.mod
 
-import typings.pizzip.AnonLevel
+import typings.pizzip.anon.Level
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,7 +35,7 @@ trait FileOptions extends js.Object {
     * With `STORE` (no compression), this parameter is ignored.
     * With `DEFLATE`, you can give the compression level with `compressionOptions : {level:6}` (or any level between 1 (best speed) and 9 (best compression)).
     */
-  var compressionOptions: js.UndefOr[AnonLevel | Null] = js.undefined
+  var compressionOptions: js.UndefOr[Level | Null] = js.undefined
   /**
     * Set to true if folders in the file path should be automatically created,
     * otherwise there will only be virtual folders that represent the path to the file.
@@ -75,28 +75,28 @@ object FileOptions {
   def apply(
     base64: js.UndefOr[Boolean] = js.undefined,
     binary: js.UndefOr[Boolean] = js.undefined,
-    comment: String = null,
+    comment: js.UndefOr[Null | String] = js.undefined,
     compression: Compression = null,
-    compressionOptions: AnonLevel = null,
+    compressionOptions: js.UndefOr[Null | Level] = js.undefined,
     createFolders: js.UndefOr[Boolean] = js.undefined,
     date: Date = null,
     dir: js.UndefOr[Boolean] = js.undefined,
-    dosPermissions: Int | Double = null,
+    dosPermissions: js.UndefOr[Null | Double] = js.undefined,
     optimizedBinaryString: js.UndefOr[Boolean] = js.undefined,
-    unixPermissions: Double | String = null
+    unixPermissions: js.UndefOr[Null | Double | String] = js.undefined
   ): FileOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(base64)) __obj.updateDynamic("base64")(base64.asInstanceOf[js.Any])
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (!js.isUndefined(base64)) __obj.updateDynamic("base64")(base64.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(comment)) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
-    if (compressionOptions != null) __obj.updateDynamic("compressionOptions")(compressionOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(createFolders)) __obj.updateDynamic("createFolders")(createFolders.asInstanceOf[js.Any])
+    if (!js.isUndefined(compressionOptions)) __obj.updateDynamic("compressionOptions")(compressionOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(createFolders)) __obj.updateDynamic("createFolders")(createFolders.get.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (!js.isUndefined(dir)) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (dosPermissions != null) __obj.updateDynamic("dosPermissions")(dosPermissions.asInstanceOf[js.Any])
-    if (!js.isUndefined(optimizedBinaryString)) __obj.updateDynamic("optimizedBinaryString")(optimizedBinaryString.asInstanceOf[js.Any])
-    if (unixPermissions != null) __obj.updateDynamic("unixPermissions")(unixPermissions.asInstanceOf[js.Any])
+    if (!js.isUndefined(dir)) __obj.updateDynamic("dir")(dir.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dosPermissions)) __obj.updateDynamic("dosPermissions")(dosPermissions.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimizedBinaryString)) __obj.updateDynamic("optimizedBinaryString")(optimizedBinaryString.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unixPermissions)) __obj.updateDynamic("unixPermissions")(unixPermissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileOptions]
   }
 }

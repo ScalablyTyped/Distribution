@@ -23,7 +23,7 @@ object ContextMenuSettings {
   ): ContextMenuSettings = {
     val __obj = js.Dynamic.literal()
     if (contextMenuItems != null) __obj.updateDynamic("contextMenuItems")(contextMenuItems.asInstanceOf[js.Any])
-    if (!js.isUndefined(showContextMenu)) __obj.updateDynamic("showContextMenu")(showContextMenu.asInstanceOf[js.Any])
+    if (!js.isUndefined(showContextMenu)) __obj.updateDynamic("showContextMenu")(showContextMenu.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextMenuSettings]
   }
 }

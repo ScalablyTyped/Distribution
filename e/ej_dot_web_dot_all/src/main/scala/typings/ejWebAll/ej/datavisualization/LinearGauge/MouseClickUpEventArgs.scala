@@ -49,27 +49,27 @@ object MouseClickUpEventArgs {
     cancel: js.UndefOr[Boolean] = js.undefined,
     context: js.Any = null,
     markerPointerElement: js.Any = null,
-    markerPointerIndex: Int | Double = null,
-    markerPointerValue: Int | Double = null,
+    markerPointerIndex: js.UndefOr[Double] = js.undefined,
+    markerPointerValue: js.UndefOr[Double] = js.undefined,
     model: js.Any = null,
     `object`: js.Any = null,
     position: js.Any = null,
     scaleElement: js.Any = null,
-    scaleIndex: Int | Double = null,
+    scaleIndex: js.UndefOr[Double] = js.undefined,
     style: String = null,
     `type`: js.Any = null
   ): MouseClickUpEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (markerPointerElement != null) __obj.updateDynamic("markerPointerElement")(markerPointerElement.asInstanceOf[js.Any])
-    if (markerPointerIndex != null) __obj.updateDynamic("markerPointerIndex")(markerPointerIndex.asInstanceOf[js.Any])
-    if (markerPointerValue != null) __obj.updateDynamic("markerPointerValue")(markerPointerValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerPointerIndex)) __obj.updateDynamic("markerPointerIndex")(markerPointerIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerPointerValue)) __obj.updateDynamic("markerPointerValue")(markerPointerValue.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement.asInstanceOf[js.Any])
-    if (scaleIndex != null) __obj.updateDynamic("scaleIndex")(scaleIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleIndex)) __obj.updateDynamic("scaleIndex")(scaleIndex.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MouseClickUpEventArgs]

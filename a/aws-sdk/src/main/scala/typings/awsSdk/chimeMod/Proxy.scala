@@ -27,14 +27,14 @@ trait Proxy extends js.Object {
 object Proxy {
   @scala.inline
   def apply(
-    DefaultSessionExpiryMinutes: Int | Double = null,
-    Disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    DefaultSessionExpiryMinutes: js.UndefOr[Integer] = js.undefined,
+    Disabled: js.UndefOr[Boolean] = js.undefined,
     FallBackPhoneNumber: E164PhoneNumber = null,
     PhoneNumberCountries: StringList = null
   ): Proxy = {
     val __obj = js.Dynamic.literal()
-    if (DefaultSessionExpiryMinutes != null) __obj.updateDynamic("DefaultSessionExpiryMinutes")(DefaultSessionExpiryMinutes.asInstanceOf[js.Any])
-    if (!js.isUndefined(Disabled)) __obj.updateDynamic("Disabled")(Disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(DefaultSessionExpiryMinutes)) __obj.updateDynamic("DefaultSessionExpiryMinutes")(DefaultSessionExpiryMinutes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Disabled)) __obj.updateDynamic("Disabled")(Disabled.get.asInstanceOf[js.Any])
     if (FallBackPhoneNumber != null) __obj.updateDynamic("FallBackPhoneNumber")(FallBackPhoneNumber.asInstanceOf[js.Any])
     if (PhoneNumberCountries != null) __obj.updateDynamic("PhoneNumberCountries")(PhoneNumberCountries.asInstanceOf[js.Any])
     __obj.asInstanceOf[Proxy]

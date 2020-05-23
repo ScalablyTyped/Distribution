@@ -50,10 +50,7 @@ trait MediaObject
 object MediaObject {
   @scala.inline
   def apply(
-    StringDictionary: /**
-    * Properties that are not part of this type description will be retained; so, this can be viewed as a generic metadata storage mechanism as well.
-    */
-  /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     album: String = null,
     artist: String = null,
     artwork: js.Array[_] = null,

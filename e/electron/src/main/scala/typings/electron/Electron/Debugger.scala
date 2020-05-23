@@ -7,9 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Electron.Debugger")
 @js.native
-class Debugger () extends EventEmitter {
+trait Debugger extends EventEmitter {
   @JSName("addListener")
   def addListener_detach(event: detach, listener: js.Function2[/* event */ Event, /* reason */ String, Unit]): this.type = js.native
   @JSName("addListener")

@@ -17,10 +17,10 @@ trait ChooseImageSuccessCallbackResultFile extends js.Object {
 
 object ChooseImageSuccessCallbackResultFile {
   @scala.inline
-  def apply(path: String = null, size: Int | Double = null): ChooseImageSuccessCallbackResultFile = {
+  def apply(path: String = null, size: js.UndefOr[Double] = js.undefined): ChooseImageSuccessCallbackResultFile = {
     val __obj = js.Dynamic.literal()
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChooseImageSuccessCallbackResultFile]
   }
 }

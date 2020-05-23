@@ -20,9 +20,9 @@ object ObjectMergeOptions {
     resolve: Boolean | resolveFn[T] = null
   ): ObjectMergeOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep.asInstanceOf[js.Any])
-    if (!js.isUndefined(descriptor)) __obj.updateDynamic("descriptor")(descriptor.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(descriptor)) __obj.updateDynamic("descriptor")(descriptor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (resolve != null) __obj.updateDynamic("resolve")(resolve.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectMergeOptions[T]]
   }

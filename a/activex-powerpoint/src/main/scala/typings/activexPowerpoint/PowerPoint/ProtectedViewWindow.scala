@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.ProtectedViewWindow")
 @js.native
-class ProtectedViewWindow protected () extends js.Object {
+trait ProtectedViewWindow extends js.Object {
   val Active: MsoTriState = js.native
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   val Caption: String = js.native

@@ -19,18 +19,18 @@ object SurfaceProps {
   def apply(
     children: js.Array[ReactNode] | ReactNode = null,
     className: String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     style: js.Object = null,
     viewBox: ViewBox = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): SurfaceProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SurfaceProps]
   }
 }

@@ -14,16 +14,16 @@ trait PagingOptions extends js.Object {
 object PagingOptions {
   @scala.inline
   def apply(
-    pageNum: Int | Double = null,
-    pageSize: Int | Double = null,
-    totalPages: Int | Double = null,
-    totalRows: Int | Double = null
+    pageNum: js.UndefOr[Double] = js.undefined,
+    pageSize: js.UndefOr[Double] = js.undefined,
+    totalPages: js.UndefOr[Double] = js.undefined,
+    totalRows: js.UndefOr[Double] = js.undefined
   ): PagingOptions = {
     val __obj = js.Dynamic.literal()
-    if (pageNum != null) __obj.updateDynamic("pageNum")(pageNum.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (totalPages != null) __obj.updateDynamic("totalPages")(totalPages.asInstanceOf[js.Any])
-    if (totalRows != null) __obj.updateDynamic("totalRows")(totalRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageNum)) __obj.updateDynamic("pageNum")(pageNum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalPages)) __obj.updateDynamic("totalPages")(totalPages.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalRows)) __obj.updateDynamic("totalRows")(totalRows.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PagingOptions]
   }
 }

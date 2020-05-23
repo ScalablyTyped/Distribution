@@ -32,37 +32,37 @@ object AxisProps {
   @scala.inline
   def apply(
     children: ReactNode = null,
-    grid: AxisGrid = null,
+    grid: js.UndefOr[Null | AxisGrid] = js.undefined,
     key: Key = null,
-    label: AxisLabel = null,
-    line: line = null,
-    min: Int | Double = null,
+    label: js.UndefOr[Null | AxisLabel] = js.undefined,
+    line: js.UndefOr[Null | line] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
     name: String = null,
     position: PositionType = null,
-    ref: LegacyRef[js.Any] = null,
-    subTickCount: Int | Double = null,
+    ref: js.UndefOr[Null | LegacyRef[js.Any]] = js.undefined,
+    subTickCount: js.UndefOr[Double] = js.undefined,
     subTickLine: tickLine = null,
-    tickLine: tickLine = null,
-    title: typings.antvG2.mod.AxisTitle | Boolean = null,
+    tickLine: js.UndefOr[Null | tickLine] = js.undefined,
+    title: js.UndefOr[Null | typings.antvG2.mod.AxisTitle | Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
-    zIndex: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined
   ): AxisProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
+    if (!js.isUndefined(grid)) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(label)) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (!js.isUndefined(line)) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (subTickCount != null) __obj.updateDynamic("subTickCount")(subTickCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(subTickCount)) __obj.updateDynamic("subTickCount")(subTickCount.get.asInstanceOf[js.Any])
     if (subTickLine != null) __obj.updateDynamic("subTickLine")(subTickLine.asInstanceOf[js.Any])
-    if (tickLine != null) __obj.updateDynamic("tickLine")(tickLine.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(tickLine)) __obj.updateDynamic("tickLine")(tickLine.asInstanceOf[js.Any])
+    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AxisProps]
   }
 }

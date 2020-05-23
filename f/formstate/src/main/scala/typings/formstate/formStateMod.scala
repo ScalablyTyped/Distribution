@@ -1,6 +1,10 @@
 package typings.formstate
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.formstate.anon.HasError
+import typings.formstate.anon.HasErrorValue
+import typings.formstate.anon.OnReinit
+import typings.formstate.anon.Value
 import typings.formstate.formstateStrings.`object`
 import typings.formstate.formstateStrings.array
 import typings.formstate.formstateStrings.map
@@ -72,7 +76,7 @@ object formStateMod extends js.Object {
     override def _on$ValidationPass(): Unit = js.native
     /** Used by the parent to register listeners */
     /* CompleteClass */
-    override def _setCompositionParent(config: AnonOnReinit): Unit = js.native
+    override def _setCompositionParent(config: OnReinit): Unit = js.native
     /**
       * Call it when you are `reinit`ing child fields
       */
@@ -85,14 +89,14 @@ object formStateMod extends js.Object {
     override def disableAutoValidation(): Unit = js.native
     /* CompleteClass */
     override def enableAutoValidation(): Unit = js.native
-    def enableAutoValidationAndValidate(): js.Promise[AnonHasError | AnonHasErrorValue[TValue]] = js.native
+    def enableAutoValidationAndValidate(): js.Promise[HasError | HasErrorValue[TValue]] = js.native
     /** Get validatable objects from $ */
     /* protected */ def getValues(): js.Array[ComposibleValidatable[_]] = js.native
     /** Allows a convinient reset for all fields */
     /* CompleteClass */
     override def reset(): Unit = js.native
     /* CompleteClass */
-    override def validate(): js.Promise[AnonHasError | AnonValue[TValue]] = js.native
+    override def validate(): js.Promise[HasError | Value[TValue]] = js.native
     def validators(validators: Validator[TValue]*): this.type = js.native
   }
   

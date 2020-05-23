@@ -11,6 +11,10 @@ trait Parameter extends js.Object {
     */
   var ARN: js.UndefOr[String] = js.native
   /**
+    * The data type of the parameter, such as text or aws:ec2:image. The default is text.
+    */
+  var DataType: js.UndefOr[ParameterDataType] = js.native
+  /**
     * Date the parameter was last changed or updated and the parameter version was created.
     */
   var LastModifiedDate: js.UndefOr[DateTime] = js.native
@@ -27,7 +31,7 @@ trait Parameter extends js.Object {
     */
   var SourceResult: js.UndefOr[String] = js.native
   /**
-    * The type of parameter. Valid values include the following: String, String list, Secure string.
+    * The type of parameter. Valid values include the following: String, StringList, and SecureString.
     */
   var Type: js.UndefOr[ParameterType] = js.native
   /**
@@ -44,23 +48,25 @@ object Parameter {
   @scala.inline
   def apply(
     ARN: String = null,
+    DataType: ParameterDataType = null,
     LastModifiedDate: DateTime = null,
     Name: PSParameterName = null,
     Selector: PSParameterSelector = null,
     SourceResult: String = null,
     Type: ParameterType = null,
     Value: PSParameterValue = null,
-    Version: Int | Double = null
+    Version: js.UndefOr[PSParameterVersion] = js.undefined
   ): Parameter = {
     val __obj = js.Dynamic.literal()
     if (ARN != null) __obj.updateDynamic("ARN")(ARN.asInstanceOf[js.Any])
+    if (DataType != null) __obj.updateDynamic("DataType")(DataType.asInstanceOf[js.Any])
     if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (Selector != null) __obj.updateDynamic("Selector")(Selector.asInstanceOf[js.Any])
     if (SourceResult != null) __obj.updateDynamic("SourceResult")(SourceResult.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
-    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
+    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parameter]
   }
 }

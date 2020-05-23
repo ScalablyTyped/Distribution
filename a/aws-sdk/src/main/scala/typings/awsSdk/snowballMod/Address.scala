@@ -71,7 +71,7 @@ object Address {
     City: String = null,
     Company: String = null,
     Country: String = null,
-    IsRestricted: js.UndefOr[scala.Boolean] = js.undefined,
+    IsRestricted: js.UndefOr[Boolean] = js.undefined,
     Landmark: String = null,
     Name: String = null,
     PhoneNumber: String = null,
@@ -87,7 +87,7 @@ object Address {
     if (City != null) __obj.updateDynamic("City")(City.asInstanceOf[js.Any])
     if (Company != null) __obj.updateDynamic("Company")(Company.asInstanceOf[js.Any])
     if (Country != null) __obj.updateDynamic("Country")(Country.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsRestricted)) __obj.updateDynamic("IsRestricted")(IsRestricted.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsRestricted)) __obj.updateDynamic("IsRestricted")(IsRestricted.get.asInstanceOf[js.Any])
     if (Landmark != null) __obj.updateDynamic("Landmark")(Landmark.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (PhoneNumber != null) __obj.updateDynamic("PhoneNumber")(PhoneNumber.asInstanceOf[js.Any])

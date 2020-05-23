@@ -1,7 +1,7 @@
 package typings.rcMenu.subMenuMod
 
-import typings.rcMenu.AnonItem
-import typings.rcMenu.AnonMode
+import typings.rcMenu.anon.Item
+import typings.rcMenu.anon.Mode
 import typings.rcMenu.interfaceMod.MenuInfo
 import typings.rcMenu.interfaceMod.MenuMode
 import typings.rcMenu.interfaceMod.OpenEventHandler
@@ -13,7 +13,7 @@ import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.ReactNode
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import scala.scalajs.js
@@ -51,7 +51,7 @@ class SubMenu protected ()
   var onTitleMouseEnter: MouseEventHandler[HTMLElement] = js.native
   var onTitleMouseLeave: MouseEventHandler[HTMLElement] = js.native
   var subMenuTitle: HTMLElement = js.native
-  def addKeyPath(info: MenuInfo): AnonItem = js.native
+  def addKeyPath(info: MenuInfo): Item = js.native
   def adjustWidth(): Unit = js.native
   @JSName("componentDidMount")
   def componentDidMount_MSubMenu(): Unit = js.native
@@ -84,6 +84,6 @@ class SubMenu protected ()
 @JSImport("rc-menu/lib/SubMenu", "SubMenu")
 @js.native
 object SubMenu extends js.Object {
-  var defaultProps: AnonMode = js.native
+  var defaultProps: Mode = js.native
 }
 

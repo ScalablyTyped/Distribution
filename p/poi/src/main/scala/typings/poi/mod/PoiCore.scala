@@ -1,7 +1,7 @@
 package typings.poi.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.poi.AnonCacheDirectory
+import typings.poi.anon.CacheDirectory
 import typings.webpack.mod.Configuration
 import typings.webpack.mod.ICompiler
 import scala.scalajs.js
@@ -23,7 +23,7 @@ trait PoiCore extends js.Object {
   def createWebpackChain(): typings.webpackChain.mod.^ = js.native
   def createWebpackChain(opts: StringDictionary[js.Any]): typings.webpackChain.mod.^ = js.native
   def createWebpackCompiler(config: Configuration): ICompiler = js.native
-  def getCacheConfig(dir: String, keys: StringDictionary[String], files: js.Array[String]): AnonCacheDirectory = js.native
+  def getCacheConfig(dir: String, keys: StringDictionary[String], files: js.Array[String]): CacheDirectory = js.native
   /** Check if a package is included in the `dependencies` or `devDependencies` field your `package.json` */
   def hasDependency(name: String): Boolean = js.native
   def hasPlugin(name: String): Boolean = js.native

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +25,11 @@ trait Conversion extends js.Object {
   var position: ConversionPosition
 }
 
-@JSGlobal("__esri.Conversion")
-@js.native
-object Conversion extends TopLevel[Conversion]
+object Conversion {
+  @scala.inline
+  def apply(displayCoordinate: String, format: Format, position: ConversionPosition): Conversion = {
+    val __obj = js.Dynamic.literal(displayCoordinate = displayCoordinate.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Conversion]
+  }
+}
 

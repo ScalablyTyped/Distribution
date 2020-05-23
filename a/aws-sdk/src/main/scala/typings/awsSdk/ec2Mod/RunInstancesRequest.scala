@@ -163,9 +163,9 @@ object RunInstancesRequest {
     ClientToken: String = null,
     CpuOptions: CpuOptionsRequest = null,
     CreditSpecification: CreditSpecificationRequest = null,
-    DisableApiTermination: js.UndefOr[scala.Boolean] = js.undefined,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
-    EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined,
+    DisableApiTermination: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
+    EbsOptimized: js.UndefOr[Boolean] = js.undefined,
     ElasticGpuSpecification: ElasticGpuSpecifications = null,
     ElasticInferenceAccelerators: ElasticInferenceAccelerators = null,
     HibernationOptions: HibernationOptionsRequest = null,
@@ -174,7 +174,7 @@ object RunInstancesRequest {
     InstanceInitiatedShutdownBehavior: ShutdownBehavior = null,
     InstanceMarketOptions: InstanceMarketOptionsRequest = null,
     InstanceType: InstanceType = null,
-    Ipv6AddressCount: Int | scala.Double = null,
+    Ipv6AddressCount: js.UndefOr[Integer] = js.undefined,
     Ipv6Addresses: InstanceIpv6AddressList = null,
     KernelId: KernelId = null,
     KeyName: KeyPairName = null,
@@ -199,9 +199,9 @@ object RunInstancesRequest {
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
     if (CpuOptions != null) __obj.updateDynamic("CpuOptions")(CpuOptions.asInstanceOf[js.Any])
     if (CreditSpecification != null) __obj.updateDynamic("CreditSpecification")(CreditSpecification.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisableApiTermination)) __obj.updateDynamic("DisableApiTermination")(DisableApiTermination.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
-    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.asInstanceOf[js.Any])
+    if (!js.isUndefined(DisableApiTermination)) __obj.updateDynamic("DisableApiTermination")(DisableApiTermination.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.get.asInstanceOf[js.Any])
     if (ElasticGpuSpecification != null) __obj.updateDynamic("ElasticGpuSpecification")(ElasticGpuSpecification.asInstanceOf[js.Any])
     if (ElasticInferenceAccelerators != null) __obj.updateDynamic("ElasticInferenceAccelerators")(ElasticInferenceAccelerators.asInstanceOf[js.Any])
     if (HibernationOptions != null) __obj.updateDynamic("HibernationOptions")(HibernationOptions.asInstanceOf[js.Any])
@@ -210,7 +210,7 @@ object RunInstancesRequest {
     if (InstanceInitiatedShutdownBehavior != null) __obj.updateDynamic("InstanceInitiatedShutdownBehavior")(InstanceInitiatedShutdownBehavior.asInstanceOf[js.Any])
     if (InstanceMarketOptions != null) __obj.updateDynamic("InstanceMarketOptions")(InstanceMarketOptions.asInstanceOf[js.Any])
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (Ipv6AddressCount != null) __obj.updateDynamic("Ipv6AddressCount")(Ipv6AddressCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(Ipv6AddressCount)) __obj.updateDynamic("Ipv6AddressCount")(Ipv6AddressCount.get.asInstanceOf[js.Any])
     if (Ipv6Addresses != null) __obj.updateDynamic("Ipv6Addresses")(Ipv6Addresses.asInstanceOf[js.Any])
     if (KernelId != null) __obj.updateDynamic("KernelId")(KernelId.asInstanceOf[js.Any])
     if (KeyName != null) __obj.updateDynamic("KeyName")(KeyName.asInstanceOf[js.Any])

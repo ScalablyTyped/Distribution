@@ -27,16 +27,16 @@ trait BuildSchemaOptions extends GraphQLSchemaValidationOptions {
 object BuildSchemaOptions {
   @scala.inline
   def apply(
-    allowedLegacyNames: Maybe[js.Array[String]] = null,
+    allowedLegacyNames: js.UndefOr[Null | Maybe[js.Array[String]]] = js.undefined,
     assumeValid: js.UndefOr[Boolean] = js.undefined,
     assumeValidSDL: js.UndefOr[Boolean] = js.undefined,
     commentDescriptions: js.UndefOr[Boolean] = js.undefined
   ): BuildSchemaOptions = {
     val __obj = js.Dynamic.literal()
-    if (allowedLegacyNames != null) __obj.updateDynamic("allowedLegacyNames")(allowedLegacyNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(assumeValid)) __obj.updateDynamic("assumeValid")(assumeValid.asInstanceOf[js.Any])
-    if (!js.isUndefined(assumeValidSDL)) __obj.updateDynamic("assumeValidSDL")(assumeValidSDL.asInstanceOf[js.Any])
-    if (!js.isUndefined(commentDescriptions)) __obj.updateDynamic("commentDescriptions")(commentDescriptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowedLegacyNames)) __obj.updateDynamic("allowedLegacyNames")(allowedLegacyNames.asInstanceOf[js.Any])
+    if (!js.isUndefined(assumeValid)) __obj.updateDynamic("assumeValid")(assumeValid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(assumeValidSDL)) __obj.updateDynamic("assumeValidSDL")(assumeValidSDL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(commentDescriptions)) __obj.updateDynamic("commentDescriptions")(commentDescriptions.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildSchemaOptions]
   }
 }

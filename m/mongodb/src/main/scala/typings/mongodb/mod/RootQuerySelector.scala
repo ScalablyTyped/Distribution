@@ -1,7 +1,7 @@
 package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.mongodb.AnonCaseSensitive
+import typings.mongodb.anon.CaseSensitive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +24,7 @@ trait RootQuerySelector[T]
   var $or: js.UndefOr[js.Array[FilterQuery[T]]] = js.undefined
   /** https://docs.mongodb.com/manual/reference/operator/query/text */
   @JSName("$text")
-  var $text: js.UndefOr[AnonCaseSensitive] = js.undefined
+  var $text: js.UndefOr[CaseSensitive] = js.undefined
   /** https://docs.mongodb.com/manual/reference/operator/query/where/#op._S_where */
   @JSName("$where")
   var $where: js.UndefOr[String | js.Function] = js.undefined
@@ -37,11 +37,9 @@ object RootQuerySelector {
     $comment: String = null,
     $nor: js.Array[FilterQuery[T]] = null,
     $or: js.Array[FilterQuery[T]] = null,
-    $text: AnonCaseSensitive = null,
+    $text: CaseSensitive = null,
     $where: String | js.Function = null,
-    StringDictionary: // we could not find a proper TypeScript generic to support nested queries e.g. 'user.friends.name'
-  // this will mark all unrecognized properties as any (including nested queries)
-  /* key */ StringDictionary[js.Any] = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null
   ): RootQuerySelector[T] = {
     val __obj = js.Dynamic.literal()
     if ($and != null) __obj.updateDynamic("$and")($and.asInstanceOf[js.Any])

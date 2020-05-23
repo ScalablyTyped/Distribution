@@ -18,12 +18,12 @@ object FilterState {
   def apply[RecordType](
     column: ColumnType[RecordType],
     key: Key,
-    filteredKeys: js.Array[Key] = null,
+    filteredKeys: js.UndefOr[Null | js.Array[Key]] = js.undefined,
     forceFiltered: js.UndefOr[Boolean] = js.undefined
   ): FilterState[RecordType] = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-    if (filteredKeys != null) __obj.updateDynamic("filteredKeys")(filteredKeys.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceFiltered)) __obj.updateDynamic("forceFiltered")(forceFiltered.asInstanceOf[js.Any])
+    if (!js.isUndefined(filteredKeys)) __obj.updateDynamic("filteredKeys")(filteredKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceFiltered)) __obj.updateDynamic("forceFiltered")(forceFiltered.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterState[RecordType]]
   }
 }

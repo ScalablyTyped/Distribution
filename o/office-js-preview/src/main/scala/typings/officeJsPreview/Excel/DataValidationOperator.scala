@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,32 +39,6 @@ object DataValidationOperator extends js.Object {
   
   @js.native
   sealed trait notEqualTo extends DataValidationOperator
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[DataValidationOperator with String] = js.native
-  /* "Between" */ @js.native
-  object between extends TopLevel[between with String]
-  
-  /* "EqualTo" */ @js.native
-  object equalTo extends TopLevel[equalTo with String]
-  
-  /* "GreaterThan" */ @js.native
-  object greaterThan extends TopLevel[greaterThan with String]
-  
-  /* "GreaterThanOrEqualTo" */ @js.native
-  object greaterThanOrEqualTo extends TopLevel[greaterThanOrEqualTo with String]
-  
-  /* "LessThan" */ @js.native
-  object lessThan extends TopLevel[lessThan with String]
-  
-  /* "LessThanOrEqualTo" */ @js.native
-  object lessThanOrEqualTo extends TopLevel[lessThanOrEqualTo with String]
-  
-  /* "NotBetween" */ @js.native
-  object notBetween extends TopLevel[notBetween with String]
-  
-  /* "NotEqualTo" */ @js.native
-  object notEqualTo extends TopLevel[notEqualTo with String]
   
 }
 

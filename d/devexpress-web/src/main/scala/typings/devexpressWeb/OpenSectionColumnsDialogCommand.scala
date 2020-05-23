@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * A command to invoke the Columns dialog.
   */
-@JSGlobal("OpenSectionColumnsDialogCommand")
-@js.native
-class OpenSectionColumnsDialogCommand () extends CommandWithSimpleStateBase {
+trait OpenSectionColumnsDialogCommand extends CommandWithSimpleStateBase {
   /**
     * Executes the OpenSectionColumnsDialogCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
+}
+
+object OpenSectionColumnsDialogCommand {
+  @scala.inline
+  def apply(execute: () => Boolean, getState: () => SimpleCommandState): OpenSectionColumnsDialogCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
+    __obj.asInstanceOf[OpenSectionColumnsDialogCommand]
+  }
 }
 

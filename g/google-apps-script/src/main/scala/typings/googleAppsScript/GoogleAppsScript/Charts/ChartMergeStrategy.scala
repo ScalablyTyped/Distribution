@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Charts
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object ChartMergeStrategy extends js.Object {
   
   @js.native
   sealed trait MERGE_ROWS extends ChartMergeStrategy
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ChartMergeStrategy with Double] = js.native
-  /* 0 */ @js.native
-  object MERGE_COLUMNS extends TopLevel[MERGE_COLUMNS with Double]
-  
-  /* 1 */ @js.native
-  object MERGE_ROWS extends TopLevel[MERGE_ROWS with Double]
   
 }
 

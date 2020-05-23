@@ -30,6 +30,6 @@ class default protected () extends Figure {
 @js.native
 object default extends js.Object {
   var elements: js.Array[String] = js.native
-  def enter(hasSpecNodeClauseStack: Context): Unit = js.native
+  def enter(hasSpecNode: Context): Unit = js.native
 }
 

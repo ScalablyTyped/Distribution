@@ -1,6 +1,5 @@
 package typings.gdal.mod
 
-import typings.gdal.AnonUnit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,12 +12,12 @@ class SpatialReference () extends js.Object {
   def EPSGTreatsAsNorthingEasting(): Boolean = js.native
   def autoIdentifyEPSG(): Unit = js.native
   def cloneGeogCS(): SpatialReference = js.native
-  def getAngularUnits(): AnonUnit = js.native
+  def getAngularUnits(): typings.gdal.anon.Unit = js.native
   def getAttrValue(node_name: String): String = js.native
   def getAttrValue(node_name: String, attr_index: Double): String = js.native
   def getAuthorityCode(target_key: String): String = js.native
   def getAuthorityName(target_key: String): String = js.native
-  def getLinearUnits(): AnonUnit = js.native
+  def getLinearUnits(): typings.gdal.anon.Unit = js.native
   def isCompound(): Boolean = js.native
   def isGeocentric(): Boolean = js.native
   def isGeographic(): Boolean = js.native

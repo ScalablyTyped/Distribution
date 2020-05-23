@@ -28,6 +28,10 @@ trait PointOptionsObject extends js.Object {
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
   /**
+    * (Highcharts) The dash style of the box.
+    */
+  var boxDashStyle: js.UndefOr[DashStyleValue] = js.undefined
+  /**
     * (Highcharts, Gantt) An additional, individual class name for the data
     * point's graphic representation.
     */
@@ -194,6 +198,10 @@ trait PointOptionsObject extends js.Object {
     */
   var median: js.UndefOr[Double] = js.undefined
   /**
+    * (Highcharts) The dash style of the median.
+    */
+  var medianDashStyle: js.UndefOr[DashStyleValue] = js.undefined
+  /**
     * (Highcharts) The name of the point as shown in the legend, tooltip,
     * dataLabels, etc.
     */
@@ -253,6 +261,10 @@ trait PointOptionsObject extends js.Object {
     */
   var sliced: js.UndefOr[Boolean] = js.undefined
   /**
+    * (Highcharts) The dash style of the stem.
+    */
+  var stemDashStyle: js.UndefOr[DashStyleValue] = js.undefined
+  /**
     * (Highcharts) The target value of a point.
     */
   var target: js.UndefOr[Double] = js.undefined
@@ -286,6 +298,10 @@ trait PointOptionsObject extends js.Object {
     */
   var weight: js.UndefOr[Double] = js.undefined
   /**
+    * (Highcharts) The dash style of the whiskers.
+    */
+  var whiskerDashStyle: js.UndefOr[DashStyleValue] = js.undefined
+  /**
     * (Highcharts, Highstock) The x value of the point. For datetime axes, the
     * X value is the timestamp in milliseconds since 1970.
     */
@@ -312,120 +328,128 @@ object PointOptionsObject {
   def apply(
     accessibility: PointAccessibilityOptionsObject with typings.highcharts.accessibilityMod.highchartsAugmentingMod.PointAccessibilityOptionsObject = null,
     borderColor: ColorString | GradientColorObject | PatternObject = null,
-    borderWidth: Int | Double = null,
+    borderWidth: js.UndefOr[Double] = js.undefined,
+    boxDashStyle: DashStyleValue = null,
     className: String = null,
-    close: Int | Double = null,
+    close: js.UndefOr[Double] = js.undefined,
     color: ColorString | GradientColorObject | PatternObject = null,
-    colorIndex: Int | Double = null,
-    colorValue: Int | Double = null,
+    colorIndex: js.UndefOr[Double] = js.undefined,
+    colorValue: js.UndefOr[Double] = js.undefined,
     connectorColor: String = null,
-    connectorWidth: Int | Double = null,
+    connectorWidth: js.UndefOr[Double] = js.undefined,
     custom: Dictionary[_] = null,
     dashStyle: DashStyleValue = null,
     dataLabels: DataLabelsOptions | SeriesNetworkgraphDataLabelsOptionsObject | SeriesPackedBubbleDataLabelsOptionsObject | SeriesPieDataLabelsOptionsObject | SeriesSunburstDataLabelsOptionsObject | (js.Array[
       DataLabelsOptions | SeriesNetworkgraphDataLabelsOptionsObject | SeriesPackedBubbleDataLabelsOptionsObject | SeriesSunburstDataLabelsOptionsObject
     ]) = null,
     description: String = null,
-    direction: Int | Double = null,
+    direction: js.UndefOr[Double] = js.undefined,
     dragDrop: SeriesLineDataDragDropOptions = null,
     drilldown: String = null,
     events: PointEventsOptionsObject = null,
     fillColor: ColorString | GradientColorObject | PatternObject = null,
     from: String = null,
     gradientForSides: js.UndefOr[Boolean] = js.undefined,
-    high: Int | Double = null,
+    high: js.UndefOr[Double] = js.undefined,
     id: String = null,
     innerRadius: Double | String = null,
     isIntermediateSum: js.UndefOr[Boolean] = js.undefined,
     isSum: js.UndefOr[Boolean] = js.undefined,
     label: String = null,
-    labelrank: Int | Double = null,
-    legendIndex: Int | Double = null,
-    length: Int | Double = null,
-    low: Int | Double = null,
+    labelrank: js.UndefOr[Double] = js.undefined,
+    legendIndex: js.UndefOr[Double] = js.undefined,
+    length: js.UndefOr[Double] = js.undefined,
+    low: js.UndefOr[Double] = js.undefined,
     lowColor: ColorString | GradientColorObject | PatternObject = null,
     marker: PointMarkerOptionsObject = null,
-    median: Int | Double = null,
+    median: js.UndefOr[Double] = js.undefined,
+    medianDashStyle: DashStyleValue = null,
     name: Double | String = null,
-    open: Int | Double = null,
+    open: js.UndefOr[Double] = js.undefined,
     parent: String = null,
-    pointPadding: Int | Double = null,
-    pointWidth: Int | Double = null,
-    q1: Int | Double = null,
-    q3: Int | Double = null,
+    pointPadding: js.UndefOr[Double] = js.undefined,
+    pointWidth: js.UndefOr[Double] = js.undefined,
+    q1: js.UndefOr[Double] = js.undefined,
+    q3: js.UndefOr[Double] = js.undefined,
     radius: Double | String = null,
     selected: js.UndefOr[Boolean] = js.undefined,
     sets: js.Array[String] = null,
     sliced: js.UndefOr[Boolean] = js.undefined,
-    target: Int | Double = null,
+    stemDashStyle: DashStyleValue = null,
+    target: js.UndefOr[Double] = js.undefined,
     targetOptions: SeriesBulletDataTargetOptions = null,
     text: String = null,
     title: String = null,
     to: String = null,
-    value: Int | Double = null,
-    weight: Int | Double = null,
-    x: Int | Double = null,
-    x2: Int | Double = null,
-    y: Int | Double = null,
-    z: Int | Double = null
+    value: js.UndefOr[Null | Double] = js.undefined,
+    weight: js.UndefOr[Double] = js.undefined,
+    whiskerDashStyle: DashStyleValue = null,
+    x: js.UndefOr[Double] = js.undefined,
+    x2: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Null | Double] = js.undefined,
+    z: js.UndefOr[Null | Double] = js.undefined
   ): PointOptionsObject = {
     val __obj = js.Dynamic.literal()
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
+    if (boxDashStyle != null) __obj.updateDynamic("boxDashStyle")(boxDashStyle.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
+    if (!js.isUndefined(close)) __obj.updateDynamic("close")(close.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
-    if (colorValue != null) __obj.updateDynamic("colorValue")(colorValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorIndex)) __obj.updateDynamic("colorIndex")(colorIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorValue)) __obj.updateDynamic("colorValue")(colorValue.get.asInstanceOf[js.Any])
     if (connectorColor != null) __obj.updateDynamic("connectorColor")(connectorColor.asInstanceOf[js.Any])
-    if (connectorWidth != null) __obj.updateDynamic("connectorWidth")(connectorWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectorWidth)) __obj.updateDynamic("connectorWidth")(connectorWidth.get.asInstanceOf[js.Any])
     if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (!js.isUndefined(direction)) __obj.updateDynamic("direction")(direction.get.asInstanceOf[js.Any])
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop.asInstanceOf[js.Any])
     if (drilldown != null) __obj.updateDynamic("drilldown")(drilldown.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (!js.isUndefined(gradientForSides)) __obj.updateDynamic("gradientForSides")(gradientForSides.asInstanceOf[js.Any])
-    if (high != null) __obj.updateDynamic("high")(high.asInstanceOf[js.Any])
+    if (!js.isUndefined(gradientForSides)) __obj.updateDynamic("gradientForSides")(gradientForSides.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(high)) __obj.updateDynamic("high")(high.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (innerRadius != null) __obj.updateDynamic("innerRadius")(innerRadius.asInstanceOf[js.Any])
-    if (!js.isUndefined(isIntermediateSum)) __obj.updateDynamic("isIntermediateSum")(isIntermediateSum.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSum)) __obj.updateDynamic("isSum")(isSum.asInstanceOf[js.Any])
+    if (!js.isUndefined(isIntermediateSum)) __obj.updateDynamic("isIntermediateSum")(isIntermediateSum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSum)) __obj.updateDynamic("isSum")(isSum.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (labelrank != null) __obj.updateDynamic("labelrank")(labelrank.asInstanceOf[js.Any])
-    if (legendIndex != null) __obj.updateDynamic("legendIndex")(legendIndex.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (low != null) __obj.updateDynamic("low")(low.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelrank)) __obj.updateDynamic("labelrank")(labelrank.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(legendIndex)) __obj.updateDynamic("legendIndex")(legendIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(low)) __obj.updateDynamic("low")(low.get.asInstanceOf[js.Any])
     if (lowColor != null) __obj.updateDynamic("lowColor")(lowColor.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (median != null) __obj.updateDynamic("median")(median.asInstanceOf[js.Any])
+    if (!js.isUndefined(median)) __obj.updateDynamic("median")(median.get.asInstanceOf[js.Any])
+    if (medianDashStyle != null) __obj.updateDynamic("medianDashStyle")(medianDashStyle.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (open != null) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (pointPadding != null) __obj.updateDynamic("pointPadding")(pointPadding.asInstanceOf[js.Any])
-    if (pointWidth != null) __obj.updateDynamic("pointWidth")(pointWidth.asInstanceOf[js.Any])
-    if (q1 != null) __obj.updateDynamic("q1")(q1.asInstanceOf[js.Any])
-    if (q3 != null) __obj.updateDynamic("q3")(q3.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointPadding)) __obj.updateDynamic("pointPadding")(pointPadding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointWidth)) __obj.updateDynamic("pointWidth")(pointWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(q1)) __obj.updateDynamic("q1")(q1.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(q3)) __obj.updateDynamic("q3")(q3.get.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
     if (sets != null) __obj.updateDynamic("sets")(sets.asInstanceOf[js.Any])
-    if (!js.isUndefined(sliced)) __obj.updateDynamic("sliced")(sliced.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (!js.isUndefined(sliced)) __obj.updateDynamic("sliced")(sliced.get.asInstanceOf[js.Any])
+    if (stemDashStyle != null) __obj.updateDynamic("stemDashStyle")(stemDashStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(target)) __obj.updateDynamic("target")(target.get.asInstanceOf[js.Any])
     if (targetOptions != null) __obj.updateDynamic("targetOptions")(targetOptions.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (x2 != null) __obj.updateDynamic("x2")(x2.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
+    if (whiskerDashStyle != null) __obj.updateDynamic("whiskerDashStyle")(whiskerDashStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(x2)) __obj.updateDynamic("x2")(x2.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointOptionsObject]
   }
 }

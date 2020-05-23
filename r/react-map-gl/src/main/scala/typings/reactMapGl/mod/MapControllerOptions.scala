@@ -34,16 +34,16 @@ object MapControllerOptions {
     touchZoom: js.UndefOr[Boolean] = js.undefined
   ): MapControllerOptions = {
     val __obj = js.Dynamic.literal(isInteractive = isInteractive.asInstanceOf[js.Any])
-    if (!js.isUndefined(doubleClickZoom)) __obj.updateDynamic("doubleClickZoom")(doubleClickZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragPan)) __obj.updateDynamic("dragPan")(dragPan.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragRotate)) __obj.updateDynamic("dragRotate")(dragRotate.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleClickZoom)) __obj.updateDynamic("doubleClickZoom")(doubleClickZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragPan)) __obj.updateDynamic("dragPan")(dragPan.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragRotate)) __obj.updateDynamic("dragRotate")(dragRotate.get.asInstanceOf[js.Any])
     if (eventManager != null) __obj.updateDynamic("eventManager")(eventManager.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.get.asInstanceOf[js.Any])
     if (onStateChange != null) __obj.updateDynamic("onStateChange")(js.Any.fromFunction1(onStateChange))
     if (onViewportChange != null) __obj.updateDynamic("onViewportChange")(js.Any.fromFunction3(onViewportChange))
-    if (!js.isUndefined(scrollZoom)) __obj.updateDynamic("scrollZoom")(scrollZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchRotate)) __obj.updateDynamic("touchRotate")(touchRotate.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchZoom)) __obj.updateDynamic("touchZoom")(touchZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollZoom)) __obj.updateDynamic("scrollZoom")(scrollZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchRotate)) __obj.updateDynamic("touchRotate")(touchRotate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchZoom)) __obj.updateDynamic("touchZoom")(touchZoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapControllerOptions]
   }
 }

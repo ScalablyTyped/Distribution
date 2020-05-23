@@ -34,7 +34,7 @@ import typings.std.HTMLTableHeaderCellElement
 import typings.std.HTMLTableRowElement
 import typings.std.HTMLUListElement
 import typings.std.Partial
-import typings.themeUi.AnonAs
+import typings.themeUi.anon.As
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,13 +43,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class Styled protected ()
   extends Component[
-      (/* import warning: importer.ImportType#apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with AnonAs, 
+      (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with As, 
       ComponentState, 
       js.Any
     ] {
-  def this(props: (/* import warning: importer.ImportType#apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with AnonAs) = this()
+  def this(props: (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with As) = this()
   def this(
-    props: (/* import warning: importer.ImportType#apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with AnonAs,
+    props: (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with As,
     context: js.Any
   ) = this()
 }
@@ -58,18 +58,18 @@ class Styled protected ()
 @js.native
 object Styled
   extends Instantiable1[
-      /* props */ (/* import warning: importer.ImportType#apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with AnonAs, 
+      /* props */ (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with As, 
       Component[
-        (/* import warning: importer.ImportType#apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with AnonAs, 
+        (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with As, 
         ComponentState, 
         js.Any
       ]
     ]
      with Instantiable2[
-      /* props */ (/* import warning: importer.ImportType#apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with AnonAs, 
+      /* props */ (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with As, 
       /* context */ js.Any, 
       Component[
-        (/* import warning: importer.ImportType#apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with AnonAs, 
+        (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with As, 
         ComponentState, 
         js.Any
       ]
@@ -87,7 +87,7 @@ object Styled
   var contextTypes: js.UndefOr[ValidationMap[_]] = js.native
   var defaultProps: js.UndefOr[
     Partial[
-      (/* import warning: importer.ImportType#apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with AnonAs
+      (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with As
     ]
   ] = js.native
   var delete: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) with SxProps] = js.native
@@ -96,13 +96,13 @@ object Styled
   var em: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) with SxProps] = js.native
   var getDerivedStateFromError: js.UndefOr[
     GetDerivedStateFromError[
-      (/* import warning: importer.ImportType#apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with AnonAs, 
+      (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with As, 
       ComponentState
     ]
   ] = js.native
   var getDerivedStateFromProps: js.UndefOr[
     GetDerivedStateFromProps[
-      (/* import warning: importer.ImportType#apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with AnonAs, 
+      (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with As, 
       ComponentState
     ]
   ] = js.native
@@ -140,7 +140,7 @@ object Styled
   var pre: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLPreElement], HTMLPreElement]) with SxProps] = js.native
   var propTypes: js.UndefOr[
     WeakValidationMap[
-      (/* import warning: importer.ImportType#apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with AnonAs
+      (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with As
     ]
   ] = js.native
   var root: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) with SxProps] = js.native

@@ -19,14 +19,14 @@ object HistoryQuery {
   @scala.inline
   def apply(
     text: String,
-    endTime: Int | Double = null,
-    maxResults: Int | Double = null,
-    startTime: Int | Double = null
+    endTime: js.UndefOr[Double] = js.undefined,
+    maxResults: js.UndefOr[Double] = js.undefined,
+    startTime: js.UndefOr[Double] = js.undefined
   ): HistoryQuery = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(endTime)) __obj.updateDynamic("endTime")(endTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startTime)) __obj.updateDynamic("startTime")(startTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryQuery]
   }
 }

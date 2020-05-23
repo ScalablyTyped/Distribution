@@ -38,14 +38,14 @@ object GetLifecyclePolicyPreviewRequest {
     repositoryName: RepositoryName,
     filter: LifecyclePolicyPreviewFilter = null,
     imageIds: ImageIdentifierList = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[LifecyclePreviewMaxResults] = js.undefined,
     nextToken: NextToken = null,
     registryId: RegistryId = null
   ): GetLifecyclePolicyPreviewRequest = {
     val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (imageIds != null) __obj.updateDynamic("imageIds")(imageIds.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (registryId != null) __obj.updateDynamic("registryId")(registryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLifecyclePolicyPreviewRequest]

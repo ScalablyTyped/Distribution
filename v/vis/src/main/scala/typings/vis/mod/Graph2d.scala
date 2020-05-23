@@ -1,10 +1,10 @@
 package typings.vis.mod
 
 import typings.std.Date
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
-import typings.vis.AnonEnd
-import typings.vis.AnonGroups
+import typings.vis.anon.End
+import typings.vis.anon.Groups
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,13 +34,13 @@ class Graph2d protected () extends js.Object {
   def getCurrentTime(): Date = js.native
   def getCustomTime(): Date = js.native
   def getCustomTime(id: IdType): Date = js.native
-  def getEventProperties(event: Event_): TimelineEventPropertiesResult = js.native
+  def getEventProperties(event: Event): TimelineEventPropertiesResult = js.native
   def getItemRange(): js.Any = js.native
   def getLegend(): TimelineWindow = js.native
    // TODO
   def getSelection(): js.Array[IdType] = js.native
   def getVisibleItems(): js.Array[IdType] = js.native
-  def getWindow(): AnonEnd = js.native
+  def getWindow(): End = js.native
   @JSName("getWindow")
   def getWindow_TimelineWindow(): TimelineWindow = js.native
   def moveTo(time: DateType): Unit = js.native
@@ -57,7 +57,7 @@ class Graph2d protected () extends js.Object {
   def setCustomTime(time: DateType, id: IdType): Unit = js.native
   def setCustomTimeTitle(title: String): Unit = js.native
   def setCustomTimeTitle(title: String, id: IdType): Unit = js.native
-  def setData(data: AnonGroups): Unit = js.native
+  def setData(data: Groups): Unit = js.native
   def setGroups(): Unit = js.native
   def setGroups(groups: js.Array[TimelineGroup]): Unit = js.native
   def setGroups(groups: DataGroupCollectionType): Unit = js.native

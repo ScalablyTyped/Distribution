@@ -3,7 +3,7 @@ package typings.graphqlCompose.enumTypeComposerMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.graphql.definitionMod.GraphQLList
 import typings.graphql.definitionMod.GraphQLNonNull
-import typings.graphqlCompose.PartialComposeEnumValueCo
+import typings.graphqlCompose.anon.PartialComposeEnumValueCo
 import typings.graphqlCompose.definitionsMod.DirectiveArgs
 import typings.graphqlCompose.definitionsMod.Extensions
 import typings.graphqlCompose.definitionsMod.ExtensionsDirective

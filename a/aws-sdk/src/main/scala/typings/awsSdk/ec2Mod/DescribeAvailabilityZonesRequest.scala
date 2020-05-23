@@ -31,15 +31,15 @@ trait DescribeAvailabilityZonesRequest extends js.Object {
 object DescribeAvailabilityZonesRequest {
   @scala.inline
   def apply(
-    AllAvailabilityZones: js.UndefOr[scala.Boolean] = js.undefined,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    AllAvailabilityZones: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     Filters: FilterList = null,
     ZoneIds: ZoneIdStringList = null,
     ZoneNames: ZoneNameStringList = null
   ): DescribeAvailabilityZonesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllAvailabilityZones)) __obj.updateDynamic("AllAvailabilityZones")(AllAvailabilityZones.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllAvailabilityZones)) __obj.updateDynamic("AllAvailabilityZones")(AllAvailabilityZones.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
     if (ZoneIds != null) __obj.updateDynamic("ZoneIds")(ZoneIds.asInstanceOf[js.Any])
     if (ZoneNames != null) __obj.updateDynamic("ZoneNames")(ZoneNames.asInstanceOf[js.Any])

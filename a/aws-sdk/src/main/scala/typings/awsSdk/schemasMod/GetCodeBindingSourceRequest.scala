@@ -6,9 +6,21 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait GetCodeBindingSourceRequest extends js.Object {
+  /**
+    * The language of the code binding.
+    */
   var Language: string = js.native
+  /**
+    * The name of the registry.
+    */
   var RegistryName: string = js.native
+  /**
+    * The name of the schema.
+    */
   var SchemaName: string = js.native
+  /**
+    * Specifying this limits the results to only this schema version.
+    */
   var SchemaVersion: js.UndefOr[string] = js.native
 }
 

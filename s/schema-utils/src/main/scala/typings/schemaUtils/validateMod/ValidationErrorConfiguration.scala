@@ -1,6 +1,6 @@
 package typings.schemaUtils.validateMod
 
-import typings.schemaUtils.ErrorObjectchildrenArrayE
+import typings.schemaUtils.anon.ErrorObjectchildrenArrayE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

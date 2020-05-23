@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojpopupMod
 
-import typings.oracleOraclejet.AnonAriaCloseSkipLink
+import typings.oracleOraclejet.anon.AriaCloseSkipLink
 import typings.oracleOraclejet.mod.baseComponentSettableProperties
 import typings.oracleOraclejet.ojpopupMod.ojPopup.Position
 import typings.oracleOraclejet.oracleOraclejetStrings.auto
@@ -24,7 +24,7 @@ trait ojPopupSettableProperties extends baseComponentSettableProperties {
   var position: Position
   var tail: none | simple
   @JSName("translations")
-  var translations_ojPopupSettableProperties: AnonAriaCloseSkipLink
+  var translations_ojPopupSettableProperties: AriaCloseSkipLink
 }
 
 object ojPopupSettableProperties {
@@ -36,7 +36,7 @@ object ojPopupSettableProperties {
     modality: modeless | modal,
     position: Position,
     tail: none | simple,
-    translations: AnonAriaCloseSkipLink
+    translations: AriaCloseSkipLink
   ): ojPopupSettableProperties = {
     val __obj = js.Dynamic.literal(autoDismiss = autoDismiss.asInstanceOf[js.Any], chrome = chrome.asInstanceOf[js.Any], initialFocus = initialFocus.asInstanceOf[js.Any], modality = modality.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], tail = tail.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojPopupSettableProperties]

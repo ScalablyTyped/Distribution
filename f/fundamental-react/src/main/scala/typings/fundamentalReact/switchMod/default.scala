@@ -1,7 +1,7 @@
 package typings.fundamentalReact.switchMod
 
-import typings.fundamentalReact.PartialSwitchProps
-import typings.fundamentalReact.WeakValidationMapSwitchPr
+import typings.fundamentalReact.anon.PartialSwitchProps
+import typings.fundamentalReact.anon.WeakValidationMapSwitchPr
 import typings.fundamentalReact.fundamentalReactStrings.Switch
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement

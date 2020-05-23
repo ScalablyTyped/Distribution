@@ -47,9 +47,9 @@ object ProductImage {
     attachment: String = null,
     created_at: String = null,
     filename: String = null,
-    id: Int | Double = null,
-    position: Int | Double = null,
-    product_id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
+    position: js.UndefOr[Double] = js.undefined,
+    product_id: js.UndefOr[Double] = js.undefined,
     src: String = null,
     updated_at: String = null,
     variant_ids: js.Array[Double] = null
@@ -59,9 +59,9 @@ object ProductImage {
     if (attachment != null) __obj.updateDynamic("attachment")(attachment.asInstanceOf[js.Any])
     if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (product_id != null) __obj.updateDynamic("product_id")(product_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(product_id)) __obj.updateDynamic("product_id")(product_id.get.asInstanceOf[js.Any])
     if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
     if (variant_ids != null) __obj.updateDynamic("variant_ids")(variant_ids.asInstanceOf[js.Any])

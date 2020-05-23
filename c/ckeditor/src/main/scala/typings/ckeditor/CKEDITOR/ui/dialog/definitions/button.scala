@@ -13,7 +13,7 @@ object button {
   @scala.inline
   def apply(label: String, disabled: js.UndefOr[Boolean] = js.undefined): button = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[button]
   }
 }

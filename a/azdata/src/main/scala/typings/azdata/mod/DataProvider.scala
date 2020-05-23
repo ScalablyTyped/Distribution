@@ -11,9 +11,9 @@ trait DataProvider extends js.Object {
 
 object DataProvider {
   @scala.inline
-  def apply(providerId: String, handle: Int | Double = null): DataProvider = {
+  def apply(providerId: String, handle: js.UndefOr[Double] = js.undefined): DataProvider = {
     val __obj = js.Dynamic.literal(providerId = providerId.asInstanceOf[js.Any])
-    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
+    if (!js.isUndefined(handle)) __obj.updateDynamic("handle")(handle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataProvider]
   }
 }

@@ -1,5 +1,19 @@
 package typings.dateFns
 
+import typings.dateFns.anon.AdditionalDigits
+import typings.dateFns.anon.Delimiter
+import typings.dateFns.anon.Format
+import typings.dateFns.anon.FractionDigits
+import typings.dateFns.anon.Hours
+import typings.dateFns.anon.IncludeSeconds
+import typings.dateFns.anon.Inclusive
+import typings.dateFns.anon.LocaleLocale
+import typings.dateFns.anon.NearestTo
+import typings.dateFns.anon.Step
+import typings.dateFns.anon.Unit
+import typings.dateFns.anon.UseAdditionalDayOfYearTokens
+import typings.dateFns.anon.UseAdditionalWeekYearTokensWeekStartsOn
+import typings.dateFns.anon.WeekStartsOn
 import typings.dateFns.dateFnsNumbers.`0`
 import typings.dateFns.dateFnsNumbers.`1`
 import typings.dateFns.dateFnsNumbers.`2`
@@ -42,7 +56,7 @@ trait dateFns extends js.Object {
   def addYears(date: Double, amount: Double): Date = js.native
   def addYears(date: Date, amount: Double): Date = js.native
   def areIntervalsOverlapping(intervalLeft: Interval, intervalRight: Interval): Boolean = js.native
-  def areIntervalsOverlapping(intervalLeft: Interval, intervalRight: Interval, options: AnonInclusive): Boolean = js.native
+  def areIntervalsOverlapping(intervalLeft: Interval, intervalRight: Interval, options: Inclusive): Boolean = js.native
   def closestIndexTo(dateToCompare: Double, datesArray: js.Array[Date | Double]): Double = js.native
   def closestIndexTo(dateToCompare: Date, datesArray: js.Array[Date | Double]): Double = js.native
   def closestTo(dateToCompare: Double, datesArray: js.Array[Date | Double]): Date = js.native
@@ -80,13 +94,13 @@ trait dateFns extends js.Object {
   def differenceInCalendarQuarters(dateLeft: Date, dateRight: Double): Double = js.native
   def differenceInCalendarQuarters(dateLeft: Date, dateRight: Date): Double = js.native
   def differenceInCalendarWeeks(dateLeft: Double, dateRight: Double): Double = js.native
-  def differenceInCalendarWeeks(dateLeft: Double, dateRight: Double, options: AnonWeekStartsOn): Double = js.native
+  def differenceInCalendarWeeks(dateLeft: Double, dateRight: Double, options: WeekStartsOn): Double = js.native
   def differenceInCalendarWeeks(dateLeft: Double, dateRight: Date): Double = js.native
-  def differenceInCalendarWeeks(dateLeft: Double, dateRight: Date, options: AnonWeekStartsOn): Double = js.native
+  def differenceInCalendarWeeks(dateLeft: Double, dateRight: Date, options: WeekStartsOn): Double = js.native
   def differenceInCalendarWeeks(dateLeft: Date, dateRight: Double): Double = js.native
-  def differenceInCalendarWeeks(dateLeft: Date, dateRight: Double, options: AnonWeekStartsOn): Double = js.native
+  def differenceInCalendarWeeks(dateLeft: Date, dateRight: Double, options: WeekStartsOn): Double = js.native
   def differenceInCalendarWeeks(dateLeft: Date, dateRight: Date): Double = js.native
-  def differenceInCalendarWeeks(dateLeft: Date, dateRight: Date, options: AnonWeekStartsOn): Double = js.native
+  def differenceInCalendarWeeks(dateLeft: Date, dateRight: Date, options: WeekStartsOn): Double = js.native
   def differenceInCalendarYears(dateLeft: Double, dateRight: Double): Double = js.native
   def differenceInCalendarYears(dateLeft: Double, dateRight: Date): Double = js.native
   def differenceInCalendarYears(dateLeft: Date, dateRight: Double): Double = js.native
@@ -132,10 +146,13 @@ trait dateFns extends js.Object {
   def differenceInYears(dateLeft: Date, dateRight: Double): Double = js.native
   def differenceInYears(dateLeft: Date, dateRight: Date): Double = js.native
   def eachDayOfInterval(interval: Interval): js.Array[Date] = js.native
-  def eachDayOfInterval(interval: Interval, options: AnonStep): js.Array[Date] = js.native
+  def eachDayOfInterval(interval: Interval, options: Step): js.Array[Date] = js.native
+  def eachHourOfInterval(interval: Interval): js.Array[Date] = js.native
+  def eachHourOfInterval(interval: Interval, options: Step): js.Array[Date] = js.native
   def eachMonthOfInterval(interval: Interval): js.Array[Date] = js.native
+  def eachQuarterOfInterval(interval: Interval): js.Array[Date] = js.native
   def eachWeekOfInterval(interval: Interval): js.Array[Date] = js.native
-  def eachWeekOfInterval(interval: Interval, options: AnonWeekStartsOn): js.Array[Date] = js.native
+  def eachWeekOfInterval(interval: Interval, options: WeekStartsOn): js.Array[Date] = js.native
   def eachWeekendOfInterval(interval: Interval): js.Array[Date] = js.native
   def eachWeekendOfMonth(date: Double): js.Array[Date] = js.native
   def eachWeekendOfMonth(date: Date): js.Array[Date] = js.native
@@ -145,9 +162,9 @@ trait dateFns extends js.Object {
   def endOfDay(date: Double): Date = js.native
   def endOfDay(date: Date): Date = js.native
   def endOfDecade(date: Double): Date = js.native
-  def endOfDecade(date: Double, options: AnonAdditionalDigits): Date = js.native
+  def endOfDecade(date: Double, options: AdditionalDigits): Date = js.native
   def endOfDecade(date: Date): Date = js.native
-  def endOfDecade(date: Date, options: AnonAdditionalDigits): Date = js.native
+  def endOfDecade(date: Date, options: AdditionalDigits): Date = js.native
   def endOfHour(date: Double): Date = js.native
   def endOfHour(date: Date): Date = js.native
   def endOfISOWeek(date: Double): Date = js.native
@@ -165,62 +182,65 @@ trait dateFns extends js.Object {
   def endOfToday(): Date = js.native
   def endOfTomorrow(): Date = js.native
   def endOfWeek(date: Double): Date = js.native
-  def endOfWeek(date: Double, options: AnonWeekStartsOn): Date = js.native
+  def endOfWeek(date: Double, options: WeekStartsOn): Date = js.native
   def endOfWeek(date: Date): Date = js.native
-  def endOfWeek(date: Date, options: AnonWeekStartsOn): Date = js.native
+  def endOfWeek(date: Date, options: WeekStartsOn): Date = js.native
   def endOfYear(date: Double): Date = js.native
   def endOfYear(date: Date): Date = js.native
   def endOfYesterday(): Date = js.native
   def format(date: Double, format: String): String = js.native
-  def format(date: Double, format: String, options: AnonUseAdditionalDayOfYearTokens): String = js.native
+  def format(date: Double, format: String, options: UseAdditionalDayOfYearTokens): String = js.native
   def format(date: Date, format: String): String = js.native
-  def format(date: Date, format: String, options: AnonUseAdditionalDayOfYearTokens): String = js.native
+  def format(date: Date, format: String, options: UseAdditionalDayOfYearTokens): String = js.native
   def formatDistance(date: Double, baseDate: Double): String = js.native
-  def formatDistance(date: Double, baseDate: Double, options: AnonIncludeSeconds): String = js.native
+  def formatDistance(date: Double, baseDate: Double, options: IncludeSeconds): String = js.native
   def formatDistance(date: Double, baseDate: Date): String = js.native
-  def formatDistance(date: Double, baseDate: Date, options: AnonIncludeSeconds): String = js.native
+  def formatDistance(date: Double, baseDate: Date, options: IncludeSeconds): String = js.native
   def formatDistance(date: Date, baseDate: Double): String = js.native
-  def formatDistance(date: Date, baseDate: Double, options: AnonIncludeSeconds): String = js.native
+  def formatDistance(date: Date, baseDate: Double, options: IncludeSeconds): String = js.native
   def formatDistance(date: Date, baseDate: Date): String = js.native
-  def formatDistance(date: Date, baseDate: Date, options: AnonIncludeSeconds): String = js.native
+  def formatDistance(date: Date, baseDate: Date, options: IncludeSeconds): String = js.native
   def formatDistanceStrict(date: Double, baseDate: Double): String = js.native
-  def formatDistanceStrict(date: Double, baseDate: Double, options: AnonUnit): String = js.native
+  def formatDistanceStrict(date: Double, baseDate: Double, options: Unit): String = js.native
   def formatDistanceStrict(date: Double, baseDate: Date): String = js.native
-  def formatDistanceStrict(date: Double, baseDate: Date, options: AnonUnit): String = js.native
+  def formatDistanceStrict(date: Double, baseDate: Date, options: Unit): String = js.native
   def formatDistanceStrict(date: Date, baseDate: Double): String = js.native
-  def formatDistanceStrict(date: Date, baseDate: Double, options: AnonUnit): String = js.native
+  def formatDistanceStrict(date: Date, baseDate: Double, options: Unit): String = js.native
   def formatDistanceStrict(date: Date, baseDate: Date): String = js.native
-  def formatDistanceStrict(date: Date, baseDate: Date, options: AnonUnit): String = js.native
+  def formatDistanceStrict(date: Date, baseDate: Date, options: Unit): String = js.native
   def formatDistanceToNow(date: Double): String = js.native
-  def formatDistanceToNow(date: Double, options: AnonIncludeSeconds): String = js.native
+  def formatDistanceToNow(date: Double, options: IncludeSeconds): String = js.native
   def formatDistanceToNow(date: Date): String = js.native
-  def formatDistanceToNow(date: Date, options: AnonIncludeSeconds): String = js.native
+  def formatDistanceToNow(date: Date, options: IncludeSeconds): String = js.native
   def formatDistanceToNowStrict(date: Double): String = js.native
-  def formatDistanceToNowStrict(date: Double, options: AnonUnit): String = js.native
+  def formatDistanceToNowStrict(date: Double, options: Unit): String = js.native
   def formatDistanceToNowStrict(date: Date): String = js.native
-  def formatDistanceToNowStrict(date: Date, options: AnonUnit): String = js.native
+  def formatDistanceToNowStrict(date: Date, options: Unit): String = js.native
+  def formatDuration(duration: Duration): String = js.native
+  def formatDuration(duration: Duration, options: Delimiter): String = js.native
   def formatISO(date: Double): String = js.native
-  def formatISO(date: Double, options: AnonFormat): String = js.native
+  def formatISO(date: Double, options: Format): String = js.native
   def formatISO(date: Date): String = js.native
-  def formatISO(date: Date, options: AnonFormat): String = js.native
+  def formatISO(date: Date, options: Format): String = js.native
   def formatISO9075(date: Double): String = js.native
-  def formatISO9075(date: Double, options: AnonFormat): String = js.native
+  def formatISO9075(date: Double, options: Format): String = js.native
   def formatISO9075(date: Date): String = js.native
-  def formatISO9075(date: Date, options: AnonFormat): String = js.native
+  def formatISO9075(date: Date, options: Format): String = js.native
+  def formatISODuration(duration: Duration): String = js.native
   def formatRFC3339(date: Double): String = js.native
-  def formatRFC3339(date: Double, options: AnonFractionDigits): String = js.native
+  def formatRFC3339(date: Double, options: FractionDigits): String = js.native
   def formatRFC3339(date: Date): String = js.native
-  def formatRFC3339(date: Date, options: AnonFractionDigits): String = js.native
+  def formatRFC3339(date: Date, options: FractionDigits): String = js.native
   def formatRFC7231(date: Double): String = js.native
   def formatRFC7231(date: Date): String = js.native
   def formatRelative(date: Double, baseDate: Double): String = js.native
-  def formatRelative(date: Double, baseDate: Double, options: AnonWeekStartsOn): String = js.native
+  def formatRelative(date: Double, baseDate: Double, options: WeekStartsOn): String = js.native
   def formatRelative(date: Double, baseDate: Date): String = js.native
-  def formatRelative(date: Double, baseDate: Date, options: AnonWeekStartsOn): String = js.native
+  def formatRelative(date: Double, baseDate: Date, options: WeekStartsOn): String = js.native
   def formatRelative(date: Date, baseDate: Double): String = js.native
-  def formatRelative(date: Date, baseDate: Double, options: AnonWeekStartsOn): String = js.native
+  def formatRelative(date: Date, baseDate: Double, options: WeekStartsOn): String = js.native
   def formatRelative(date: Date, baseDate: Date): String = js.native
-  def formatRelative(date: Date, baseDate: Date, options: AnonWeekStartsOn): String = js.native
+  def formatRelative(date: Date, baseDate: Date, options: WeekStartsOn): String = js.native
   def fromUnixTime(unixTime: Double): Date = js.native
   def getDate(date: Double): Double = js.native
   def getDate(date: Date): Double = js.native
@@ -260,23 +280,24 @@ trait dateFns extends js.Object {
   def getUnixTime(date: Double): Double = js.native
   def getUnixTime(date: Date): Double = js.native
   def getWeek(date: Double): Double = js.native
-  def getWeek(date: Double, options: AnonLocaleLocale): Double = js.native
+  def getWeek(date: Double, options: LocaleLocale): Double = js.native
   def getWeek(date: Date): Double = js.native
-  def getWeek(date: Date, options: AnonLocaleLocale): Double = js.native
+  def getWeek(date: Date, options: LocaleLocale): Double = js.native
   def getWeekOfMonth(date: Double): Double = js.native
-  def getWeekOfMonth(date: Double, options: AnonWeekStartsOn): Double = js.native
+  def getWeekOfMonth(date: Double, options: WeekStartsOn): Double = js.native
   def getWeekOfMonth(date: Date): Double = js.native
-  def getWeekOfMonth(date: Date, options: AnonWeekStartsOn): Double = js.native
+  def getWeekOfMonth(date: Date, options: WeekStartsOn): Double = js.native
   def getWeekYear(date: Double): Double = js.native
-  def getWeekYear(date: Double, options: AnonLocaleLocale): Double = js.native
+  def getWeekYear(date: Double, options: LocaleLocale): Double = js.native
   def getWeekYear(date: Date): Double = js.native
-  def getWeekYear(date: Date, options: AnonLocaleLocale): Double = js.native
+  def getWeekYear(date: Date, options: LocaleLocale): Double = js.native
   def getWeeksInMonth(date: Double): Double = js.native
-  def getWeeksInMonth(date: Double, options: AnonWeekStartsOn): Double = js.native
+  def getWeeksInMonth(date: Double, options: WeekStartsOn): Double = js.native
   def getWeeksInMonth(date: Date): Double = js.native
-  def getWeeksInMonth(date: Date, options: AnonWeekStartsOn): Double = js.native
+  def getWeeksInMonth(date: Date, options: WeekStartsOn): Double = js.native
   def getYear(date: Double): Double = js.native
   def getYear(date: Date): Double = js.native
+  def intervalToDuration(interval: Interval): Duration = js.native
   def isAfter(date: Double, dateToCompare: Double): Boolean = js.native
   def isAfter(date: Double, dateToCompare: Date): Boolean = js.native
   def isAfter(date: Date, dateToCompare: Double): Boolean = js.native
@@ -338,13 +359,13 @@ trait dateFns extends js.Object {
   def isSameSecond(dateLeft: Date, dateRight: Double): Boolean = js.native
   def isSameSecond(dateLeft: Date, dateRight: Date): Boolean = js.native
   def isSameWeek(dateLeft: Double, dateRight: Double): Boolean = js.native
-  def isSameWeek(dateLeft: Double, dateRight: Double, options: AnonWeekStartsOn): Boolean = js.native
+  def isSameWeek(dateLeft: Double, dateRight: Double, options: WeekStartsOn): Boolean = js.native
   def isSameWeek(dateLeft: Double, dateRight: Date): Boolean = js.native
-  def isSameWeek(dateLeft: Double, dateRight: Date, options: AnonWeekStartsOn): Boolean = js.native
+  def isSameWeek(dateLeft: Double, dateRight: Date, options: WeekStartsOn): Boolean = js.native
   def isSameWeek(dateLeft: Date, dateRight: Double): Boolean = js.native
-  def isSameWeek(dateLeft: Date, dateRight: Double, options: AnonWeekStartsOn): Boolean = js.native
+  def isSameWeek(dateLeft: Date, dateRight: Double, options: WeekStartsOn): Boolean = js.native
   def isSameWeek(dateLeft: Date, dateRight: Date): Boolean = js.native
-  def isSameWeek(dateLeft: Date, dateRight: Date, options: AnonWeekStartsOn): Boolean = js.native
+  def isSameWeek(dateLeft: Date, dateRight: Date, options: WeekStartsOn): Boolean = js.native
   def isSameYear(dateLeft: Double, dateRight: Double): Boolean = js.native
   def isSameYear(dateLeft: Double, dateRight: Date): Boolean = js.native
   def isSameYear(dateLeft: Date, dateRight: Double): Boolean = js.native
@@ -366,9 +387,9 @@ trait dateFns extends js.Object {
   def isThisSecond(date: Double): Boolean = js.native
   def isThisSecond(date: Date): Boolean = js.native
   def isThisWeek(date: Double): Boolean = js.native
-  def isThisWeek(date: Double, options: AnonWeekStartsOn): Boolean = js.native
+  def isThisWeek(date: Double, options: WeekStartsOn): Boolean = js.native
   def isThisWeek(date: Date): Boolean = js.native
-  def isThisWeek(date: Date, options: AnonWeekStartsOn): Boolean = js.native
+  def isThisWeek(date: Date, options: WeekStartsOn): Boolean = js.native
   def isThisYear(date: Double): Boolean = js.native
   def isThisYear(date: Date): Boolean = js.native
   def isThursday(date: Double): Boolean = js.native
@@ -397,13 +418,13 @@ trait dateFns extends js.Object {
   def lastDayOfMonth(date: Double): Date = js.native
   def lastDayOfMonth(date: Date): Date = js.native
   def lastDayOfQuarter(date: Double): Date = js.native
-  def lastDayOfQuarter(date: Double, options: AnonAdditionalDigits): Date = js.native
+  def lastDayOfQuarter(date: Double, options: AdditionalDigits): Date = js.native
   def lastDayOfQuarter(date: Date): Date = js.native
-  def lastDayOfQuarter(date: Date, options: AnonAdditionalDigits): Date = js.native
+  def lastDayOfQuarter(date: Date, options: AdditionalDigits): Date = js.native
   def lastDayOfWeek(date: Double): Date = js.native
-  def lastDayOfWeek(date: Double, options: AnonWeekStartsOn): Date = js.native
+  def lastDayOfWeek(date: Double, options: WeekStartsOn): Date = js.native
   def lastDayOfWeek(date: Date): Date = js.native
-  def lastDayOfWeek(date: Date, options: AnonWeekStartsOn): Date = js.native
+  def lastDayOfWeek(date: Date, options: WeekStartsOn): Date = js.native
   def lastDayOfYear(date: Double): Date = js.native
   def lastDayOfYear(date: Date): Date = js.native
   def lightFormat(date: Double, format: String): String = js.native
@@ -415,32 +436,32 @@ trait dateFns extends js.Object {
     dateString: String,
     formatString: String,
     referenceDate: Double,
-    options: AnonUseAdditionalWeekYearTokensWeekStartsOn
+    options: UseAdditionalWeekYearTokensWeekStartsOn
   ): Date = js.native
   def parse(dateString: String, formatString: String, referenceDate: Date): Date = js.native
   def parse(
     dateString: String,
     formatString: String,
     referenceDate: Date,
-    options: AnonUseAdditionalWeekYearTokensWeekStartsOn
+    options: UseAdditionalWeekYearTokensWeekStartsOn
   ): Date = js.native
   def parseISO(argument: String): Date = js.native
-  def parseISO(argument: String, options: AnonAdditionalDigits): Date = js.native
+  def parseISO(argument: String, options: AdditionalDigits): Date = js.native
   def parseJSON(argument: String): Date = js.native
   def parseJSON(argument: Double): Date = js.native
   def parseJSON(argument: Date): Date = js.native
   def roundToNearestMinutes(date: Double): Date = js.native
-  def roundToNearestMinutes(date: Double, options: AnonNearestTo): Date = js.native
+  def roundToNearestMinutes(date: Double, options: NearestTo): Date = js.native
   def roundToNearestMinutes(date: Date): Date = js.native
-  def roundToNearestMinutes(date: Date, options: AnonNearestTo): Date = js.native
-  def set(date: Double, values: AnonHours): Date = js.native
-  def set(date: Date, values: AnonHours): Date = js.native
+  def roundToNearestMinutes(date: Date, options: NearestTo): Date = js.native
+  def set(date: Double, values: Hours): Date = js.native
+  def set(date: Date, values: Hours): Date = js.native
   def setDate(date: Double, dayOfMonth: Double): Date = js.native
   def setDate(date: Date, dayOfMonth: Double): Date = js.native
   def setDay(date: Double, day: Double): Date = js.native
-  def setDay(date: Double, day: Double, options: AnonWeekStartsOn): Date = js.native
+  def setDay(date: Double, day: Double, options: WeekStartsOn): Date = js.native
   def setDay(date: Date, day: Double): Date = js.native
-  def setDay(date: Date, day: Double, options: AnonWeekStartsOn): Date = js.native
+  def setDay(date: Date, day: Double, options: WeekStartsOn): Date = js.native
   def setDayOfYear(date: Double, dayOfYear: Double): Date = js.native
   def setDayOfYear(date: Date, dayOfYear: Double): Date = js.native
   def setHours(date: Double, hours: Double): Date = js.native
@@ -462,13 +483,13 @@ trait dateFns extends js.Object {
   def setSeconds(date: Double, seconds: Double): Date = js.native
   def setSeconds(date: Date, seconds: Double): Date = js.native
   def setWeek(date: Double, week: Double): Date = js.native
-  def setWeek(date: Double, week: Double, options: AnonLocaleLocale): Date = js.native
+  def setWeek(date: Double, week: Double, options: LocaleLocale): Date = js.native
   def setWeek(date: Date, week: Double): Date = js.native
-  def setWeek(date: Date, week: Double, options: AnonLocaleLocale): Date = js.native
+  def setWeek(date: Date, week: Double, options: LocaleLocale): Date = js.native
   def setWeekYear(date: Double, weekYear: Double): Date = js.native
-  def setWeekYear(date: Double, weekYear: Double, options: AnonLocaleLocale): Date = js.native
+  def setWeekYear(date: Double, weekYear: Double, options: LocaleLocale): Date = js.native
   def setWeekYear(date: Date, weekYear: Double): Date = js.native
-  def setWeekYear(date: Date, weekYear: Double, options: AnonLocaleLocale): Date = js.native
+  def setWeekYear(date: Date, weekYear: Double, options: LocaleLocale): Date = js.native
   def setYear(date: Double, year: Double): Date = js.native
   def setYear(date: Date, year: Double): Date = js.native
   def startOfDay(date: Double): Date = js.native
@@ -492,13 +513,13 @@ trait dateFns extends js.Object {
   def startOfToday(): Date = js.native
   def startOfTomorrow(): Date = js.native
   def startOfWeek(date: Double): Date = js.native
-  def startOfWeek(date: Double, options: AnonWeekStartsOn): Date = js.native
+  def startOfWeek(date: Double, options: WeekStartsOn): Date = js.native
   def startOfWeek(date: Date): Date = js.native
-  def startOfWeek(date: Date, options: AnonWeekStartsOn): Date = js.native
+  def startOfWeek(date: Date, options: WeekStartsOn): Date = js.native
   def startOfWeekYear(date: Double): Date = js.native
-  def startOfWeekYear(date: Double, options: AnonLocaleLocale): Date = js.native
+  def startOfWeekYear(date: Double, options: LocaleLocale): Date = js.native
   def startOfWeekYear(date: Date): Date = js.native
-  def startOfWeekYear(date: Date, options: AnonLocaleLocale): Date = js.native
+  def startOfWeekYear(date: Date, options: LocaleLocale): Date = js.native
   def startOfYear(date: Double): Date = js.native
   def startOfYear(date: Date): Date = js.native
   def startOfYesterday(): Date = js.native

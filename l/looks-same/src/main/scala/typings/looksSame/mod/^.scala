@@ -15,6 +15,7 @@ object ^ extends js.Object {
     * @param callback Call when finish compare
     */
   def apply(image1: String, image2: String, callback: LooksSameCallback): Unit = js.native
+  def apply(image1: String, image2: String, options: js.Object, callback: LooksSameCallback): Unit = js.native
   /**
     * Compare two images with options
     * @param image1 The first image
@@ -24,20 +25,28 @@ object ^ extends js.Object {
     */
   def apply(image1: String, image2: String, options: LooksSameOptions, callback: LooksSameCallback): Unit = js.native
   def apply(image1: String, image2: BoundedImage, callback: LooksSameCallback): Unit = js.native
+  def apply(image1: String, image2: BoundedImage, options: js.Object, callback: LooksSameCallback): Unit = js.native
   def apply(image1: String, image2: BoundedImage, options: LooksSameOptions, callback: LooksSameCallback): Unit = js.native
   def apply(image1: String, image2: Buffer, callback: LooksSameCallback): Unit = js.native
+  def apply(image1: String, image2: Buffer, options: js.Object, callback: LooksSameCallback): Unit = js.native
   def apply(image1: String, image2: Buffer, options: LooksSameOptions, callback: LooksSameCallback): Unit = js.native
   def apply(image1: BoundedImage, image2: String, callback: LooksSameCallback): Unit = js.native
+  def apply(image1: BoundedImage, image2: String, options: js.Object, callback: LooksSameCallback): Unit = js.native
   def apply(image1: BoundedImage, image2: String, options: LooksSameOptions, callback: LooksSameCallback): Unit = js.native
   def apply(image1: BoundedImage, image2: BoundedImage, callback: LooksSameCallback): Unit = js.native
+  def apply(image1: BoundedImage, image2: BoundedImage, options: js.Object, callback: LooksSameCallback): Unit = js.native
   def apply(image1: BoundedImage, image2: BoundedImage, options: LooksSameOptions, callback: LooksSameCallback): Unit = js.native
   def apply(image1: BoundedImage, image2: Buffer, callback: LooksSameCallback): Unit = js.native
+  def apply(image1: BoundedImage, image2: Buffer, options: js.Object, callback: LooksSameCallback): Unit = js.native
   def apply(image1: BoundedImage, image2: Buffer, options: LooksSameOptions, callback: LooksSameCallback): Unit = js.native
   def apply(image1: Buffer, image2: String, callback: LooksSameCallback): Unit = js.native
+  def apply(image1: Buffer, image2: String, options: js.Object, callback: LooksSameCallback): Unit = js.native
   def apply(image1: Buffer, image2: String, options: LooksSameOptions, callback: LooksSameCallback): Unit = js.native
   def apply(image1: Buffer, image2: BoundedImage, callback: LooksSameCallback): Unit = js.native
+  def apply(image1: Buffer, image2: BoundedImage, options: js.Object, callback: LooksSameCallback): Unit = js.native
   def apply(image1: Buffer, image2: BoundedImage, options: LooksSameOptions, callback: LooksSameCallback): Unit = js.native
   def apply(image1: Buffer, image2: Buffer, callback: LooksSameCallback): Unit = js.native
+  def apply(image1: Buffer, image2: Buffer, options: js.Object, callback: LooksSameCallback): Unit = js.native
   def apply(image1: Buffer, image2: Buffer, options: LooksSameOptions, callback: LooksSameCallback): Unit = js.native
 }
 

@@ -14,16 +14,16 @@ trait options extends js.Object {
 object options {
   @scala.inline
   def apply(
-    bar: Int | Double = null,
+    bar: js.UndefOr[Double] = js.undefined,
     plates: js.Array[Double] = null,
     program: String = null,
-    warmup_round_to: Int | Double = null
+    warmup_round_to: js.UndefOr[Double] = js.undefined
   ): options = {
     val __obj = js.Dynamic.literal()
-    if (bar != null) __obj.updateDynamic("bar")(bar.asInstanceOf[js.Any])
+    if (!js.isUndefined(bar)) __obj.updateDynamic("bar")(bar.get.asInstanceOf[js.Any])
     if (plates != null) __obj.updateDynamic("plates")(plates.asInstanceOf[js.Any])
     if (program != null) __obj.updateDynamic("program")(program.asInstanceOf[js.Any])
-    if (warmup_round_to != null) __obj.updateDynamic("warmup_round_to")(warmup_round_to.asInstanceOf[js.Any])
+    if (!js.isUndefined(warmup_round_to)) __obj.updateDynamic("warmup_round_to")(warmup_round_to.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[options]
   }
 }

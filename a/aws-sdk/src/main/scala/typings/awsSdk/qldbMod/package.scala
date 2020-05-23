@@ -6,9 +6,16 @@ import scala.scalajs.js.annotation._
 
 package object qldbMod {
   type Arn = java.lang.String
+  type Boolean = scala.Boolean
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.qldbMod.ClientApiVersions
   type DeletionProtection = scala.Boolean
   type Digest = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.qldbMod.Blob | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.KINESIS_STREAM_NOT_FOUND
+    - typings.awsSdk.awsSdkStrings.IAM_PERMISSION_REVOKED
+    - java.lang.String
+  */
+  type ErrorCause = typings.awsSdk.qldbMod._ErrorCause | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.IN_PROGRESS
     - typings.awsSdk.awsSdkStrings.COMPLETED
@@ -17,6 +24,7 @@ package object qldbMod {
   */
   type ExportStatus = typings.awsSdk.qldbMod._ExportStatus | java.lang.String
   type IonText = java.lang.String
+  type JournalKinesisStreamDescriptionList = js.Array[typings.awsSdk.qldbMod.JournalKinesisStreamDescription]
   type JournalS3ExportList = js.Array[typings.awsSdk.qldbMod.JournalS3ExportDescription]
   type LedgerList = js.Array[typings.awsSdk.qldbMod.LedgerSummary]
   type LedgerName = java.lang.String
@@ -40,6 +48,16 @@ package object qldbMod {
   */
   type S3ObjectEncryptionType = typings.awsSdk.qldbMod._S3ObjectEncryptionType | java.lang.String
   type S3Prefix = java.lang.String
+  type StreamName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ACTIVE
+    - typings.awsSdk.awsSdkStrings.COMPLETED
+    - typings.awsSdk.awsSdkStrings.CANCELED
+    - typings.awsSdk.awsSdkStrings.FAILED
+    - typings.awsSdk.awsSdkStrings.IMPAIRED
+    - java.lang.String
+  */
+  type StreamStatus = typings.awsSdk.qldbMod._StreamStatus | java.lang.String
   type TagKey = java.lang.String
   type TagKeyList = js.Array[typings.awsSdk.qldbMod.TagKey]
   type TagValue = java.lang.String

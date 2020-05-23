@@ -38,29 +38,31 @@ object Headers {
   @scala.inline
   def apply(
     name: String,
-    devmajor: Int | Double = null,
-    devminor: Int | Double = null,
-    gid: Int | Double = null,
+    devmajor: js.UndefOr[Double] = js.undefined,
+    devminor: js.UndefOr[Double] = js.undefined,
+    gid: js.UndefOr[Double] = js.undefined,
     gname: String = null,
-    linkname: String = null,
-    mode: Int | Double = null,
+    linkname: js.UndefOr[Null | String] = js.undefined,
+    mode: js.UndefOr[Double] = js.undefined,
     mtime: Date = null,
-    size: Int | Double = null,
-    `type`: file | link | symlink | `character-device` | `block-device` | directory | fifo | `contiguous-file` | `pax-header` | `pax-global-header` | `gnu-long-link-path` | `gnu-long-path` = null,
-    uid: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
+    `type`: js.UndefOr[
+      Null | file | link | symlink | `character-device` | `block-device` | directory | fifo | `contiguous-file` | `pax-header` | `pax-global-header` | `gnu-long-link-path` | `gnu-long-path`
+    ] = js.undefined,
+    uid: js.UndefOr[Double] = js.undefined,
     uname: String = null
   ): Headers = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (devmajor != null) __obj.updateDynamic("devmajor")(devmajor.asInstanceOf[js.Any])
-    if (devminor != null) __obj.updateDynamic("devminor")(devminor.asInstanceOf[js.Any])
-    if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
+    if (!js.isUndefined(devmajor)) __obj.updateDynamic("devmajor")(devmajor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(devminor)) __obj.updateDynamic("devminor")(devminor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gid)) __obj.updateDynamic("gid")(gid.get.asInstanceOf[js.Any])
     if (gname != null) __obj.updateDynamic("gname")(gname.asInstanceOf[js.Any])
-    if (linkname != null) __obj.updateDynamic("linkname")(linkname.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkname)) __obj.updateDynamic("linkname")(linkname.asInstanceOf[js.Any])
+    if (!js.isUndefined(mode)) __obj.updateDynamic("mode")(mode.get.asInstanceOf[js.Any])
     if (mtime != null) __obj.updateDynamic("mtime")(mtime.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(uid)) __obj.updateDynamic("uid")(uid.get.asInstanceOf[js.Any])
     if (uname != null) __obj.updateDynamic("uname")(uname.asInstanceOf[js.Any])
     __obj.asInstanceOf[Headers]
   }

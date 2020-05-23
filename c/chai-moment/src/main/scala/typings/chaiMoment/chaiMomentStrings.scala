@@ -1,6 +1,6 @@
 package typings.chaiMoment
 
-import typings.chaiMoment.mod._Global_.ChaiMoment.Granularity
+import typings.chaiMoment.mod.global.ChaiMoment.Granularity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

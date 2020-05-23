@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 trait ChartAxisFormatData extends js.Object {
   /**
     *
-    * Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.
+    * Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
     *
     * [Api set: ExcelApi 1.1]
     */
   var font: js.UndefOr[ChartFontData] = js.undefined
   /**
     *
-    * Represents chart line formatting. Read-only.
+    * Specifies chart line formatting.
     *
     * [Api set: ExcelApi 1.1]
     */

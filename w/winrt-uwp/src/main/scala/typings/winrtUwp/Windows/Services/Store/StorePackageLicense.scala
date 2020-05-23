@@ -8,9 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides license info for a downloadable content (DLC) package for the current app. */
-@JSGlobal("Windows.Services.Store.StorePackageLicense")
 @js.native
-abstract class StorePackageLicense () extends js.Object {
+trait StorePackageLicense extends js.Object {
   /** Gets the downloadable content (DLC) package that is associated with the license. */
   @JSName("package")
   var _package: Package = js.native

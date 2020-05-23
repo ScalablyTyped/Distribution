@@ -1,7 +1,7 @@
 
 # Scala.js typings for material-ui__types
 
-Typings are for version 5.0.1
+Typings are for version 5.1.0
 
 ## Library description:
 Material-UI Types - Utility types for Material-UI.

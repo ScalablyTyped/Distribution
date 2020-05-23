@@ -13,7 +13,7 @@ trait Fragment extends js.Object {
   /**
     * The unique identifier of the fragment. This value monotonically increases based on the ingestion order.
     */
-  var FragmentNumber: js.UndefOr[String] = js.native
+  var FragmentNumber: js.UndefOr[FragmentNumberString] = js.native
   /**
     * The total fragment size, including information about the fragment and contained media data.
     */
@@ -31,16 +31,16 @@ trait Fragment extends js.Object {
 object Fragment {
   @scala.inline
   def apply(
-    FragmentLengthInMilliseconds: Int | Double = null,
-    FragmentNumber: String = null,
-    FragmentSizeInBytes: Int | Double = null,
+    FragmentLengthInMilliseconds: js.UndefOr[Long] = js.undefined,
+    FragmentNumber: FragmentNumberString = null,
+    FragmentSizeInBytes: js.UndefOr[Long] = js.undefined,
     ProducerTimestamp: Timestamp = null,
     ServerTimestamp: Timestamp = null
   ): Fragment = {
     val __obj = js.Dynamic.literal()
-    if (FragmentLengthInMilliseconds != null) __obj.updateDynamic("FragmentLengthInMilliseconds")(FragmentLengthInMilliseconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(FragmentLengthInMilliseconds)) __obj.updateDynamic("FragmentLengthInMilliseconds")(FragmentLengthInMilliseconds.get.asInstanceOf[js.Any])
     if (FragmentNumber != null) __obj.updateDynamic("FragmentNumber")(FragmentNumber.asInstanceOf[js.Any])
-    if (FragmentSizeInBytes != null) __obj.updateDynamic("FragmentSizeInBytes")(FragmentSizeInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(FragmentSizeInBytes)) __obj.updateDynamic("FragmentSizeInBytes")(FragmentSizeInBytes.get.asInstanceOf[js.Any])
     if (ProducerTimestamp != null) __obj.updateDynamic("ProducerTimestamp")(ProducerTimestamp.asInstanceOf[js.Any])
     if (ServerTimestamp != null) __obj.updateDynamic("ServerTimestamp")(ServerTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fragment]

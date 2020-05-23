@@ -13,11 +13,16 @@ trait Token extends js.Object {
 
 object Token {
   @scala.inline
-  def apply(`type`: String, value: String, index: Int | Double = null, start: Int | Double = null): Token = {
+  def apply(
+    `type`: String,
+    value: String,
+    index: js.UndefOr[Double] = js.undefined,
+    start: js.UndefOr[Double] = js.undefined
+  ): Token = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
 }

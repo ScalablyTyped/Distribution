@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-pipe
 
-Typings are for version 3.0.0
+Typings are for version 3.1.0
 
 ## Library description:
 Compose promise-returning & async functions into a reusable pipeline

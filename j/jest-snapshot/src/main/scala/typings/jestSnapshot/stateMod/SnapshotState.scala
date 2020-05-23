@@ -1,7 +1,7 @@
 package typings.jestSnapshot.stateMod
 
-import typings.jestSnapshot.AnonActual
-import typings.jestSnapshot.AnonDeleted
+import typings.jestSnapshot.anon.Actual
+import typings.jestSnapshot.anon.Deleted
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,8 +31,8 @@ trait SnapshotState extends js.Object {
   def getUncheckedCount(): Double = js.native
   def getUncheckedKeys(): js.Array[String] = js.native
   def markSnapshotsAsCheckedForTest(testName: String): Unit = js.native
-  def `match`(hasTestNameReceivedKeyInlineSnapshotError: SnapshotMatchOptions): AnonActual = js.native
+  def `match`(hasTestNameReceivedKeyInlineSnapshotError: SnapshotMatchOptions): Actual = js.native
   def removeUncheckedKeys(): Unit = js.native
-  def save(): AnonDeleted = js.native
+  def save(): Deleted = js.native
 }
 

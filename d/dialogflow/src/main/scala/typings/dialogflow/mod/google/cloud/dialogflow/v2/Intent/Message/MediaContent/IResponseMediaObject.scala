@@ -22,18 +22,18 @@ trait IResponseMediaObject extends js.Object {
 object IResponseMediaObject {
   @scala.inline
   def apply(
-    contentUrl: String = null,
-    description: String = null,
-    icon: IImage = null,
-    largeImage: IImage = null,
-    name: String = null
+    contentUrl: js.UndefOr[Null | String] = js.undefined,
+    description: js.UndefOr[Null | String] = js.undefined,
+    icon: js.UndefOr[Null | IImage] = js.undefined,
+    largeImage: js.UndefOr[Null | IImage] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined
   ): IResponseMediaObject = {
     val __obj = js.Dynamic.literal()
-    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (largeImage != null) __obj.updateDynamic("largeImage")(largeImage.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentUrl)) __obj.updateDynamic("contentUrl")(contentUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(largeImage)) __obj.updateDynamic("largeImage")(largeImage.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IResponseMediaObject]
   }
 }

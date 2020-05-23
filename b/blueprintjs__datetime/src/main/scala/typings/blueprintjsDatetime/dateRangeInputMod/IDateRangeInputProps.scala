@@ -3,17 +3,18 @@ package typings.blueprintjsDatetime.dateRangeInputMod
 import typings.blueprintjsCore.inputGroupMod.IInputGroupProps
 import typings.blueprintjsCore.propsMod.HTMLInputProps
 import typings.blueprintjsCore.propsMod.IProps
-import typings.blueprintjsDatetime.PartialIPopoverProps
+import typings.blueprintjsDatetime.anon.PartialIPopoverProps
 import typings.blueprintjsDatetime.blueprintjsDatetimeBooleans.`false`
 import typings.blueprintjsDatetime.datePickerCoreMod.IDatePickerBaseProps
-import typings.blueprintjsDatetime.dateUtilsMod.DateRange
+import typings.blueprintjsDatetime.dateRangeMod.DateRange
 import typings.blueprintjsDatetime.shortcutsMod.IDateRangeShortcut
+import typings.reactDayPicker.propsMod.DayPickerProps
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.blueprintjsDatetime.dateFormatMod.IDateFormatProps because var conflicts: locale. Inlined invalidDateMessage, outOfRangeMessage, placeholder, formatDate, formatDate, parseDate, parseDate */ @js.native
 trait IDateRangeInputProps
   extends IDatePickerBaseProps
@@ -44,9 +45,7 @@ trait IDateRangeInputProps
     * `canChangeMonth`, `captionElement`, `numberOfMonths`, `fromMonth` (use
     * `minDate`), `month` (use `initialMonth`), `toMonth` (use `maxDate`).
     */
-  var dayPickerProps: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DayPickerProps */ js.Any
-  ] = js.native
+  var dayPickerProps: js.UndefOr[DayPickerProps] = js.native
   /**
     * The default date range to be used in the component when uncontrolled.
     * This will be ignored if `value` is set.

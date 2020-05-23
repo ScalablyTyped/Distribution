@@ -4,13 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.Background.SystemTrigger")
-@js.native
-class SystemTrigger protected () extends ISystemTrigger {
-  def this(triggerType: SystemTriggerType, oneShot: Boolean) = this()
-  /* CompleteClass */
-  override var oneShot: Boolean = js.native
-  /* CompleteClass */
-  override var triggerType: SystemTriggerType = js.native
+trait SystemTrigger extends ISystemTrigger
+
+object SystemTrigger {
+  @scala.inline
+  def apply(oneShot: Boolean, triggerType: SystemTriggerType): SystemTrigger = {
+    val __obj = js.Dynamic.literal(oneShot = oneShot.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SystemTrigger]
+  }
 }
 

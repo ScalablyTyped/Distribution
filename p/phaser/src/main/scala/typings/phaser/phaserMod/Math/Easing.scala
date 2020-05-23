@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 @JSImport("phaser", "Math.Easing")
 @js.native
 object Easing extends js.Object {
+  /**
+    * Linear easing (no variation).
+    * @param v The value to be tweened.
+    */
+  def Linear(v: Double): Double = js.native
   @js.native
   object Back extends js.Object {
     /**
@@ -140,15 +145,6 @@ object Easing extends js.Object {
   }
   
   @js.native
-  object Linear extends js.Object {
-    /**
-      * Linear easing (no variation).
-      * @param v The value to be tweened.
-      */
-    def Linear(v: Double): Double = js.native
-  }
-  
-  @js.native
   object Quadratic extends js.Object {
     /**
       * Quadratic ease-in.
@@ -231,8 +227,8 @@ object Easing extends js.Object {
       * @param v The value to be tweened.
       * @param steps The number of steps in the ease. Default 1.
       */
-    def Stepped(v: Double): Double = js.native
-    def Stepped(v: Double, steps: Double): Double = js.native
+    def apply(v: Double): Double = js.native
+    def apply(v: Double, steps: Double): Double = js.native
   }
   
 }

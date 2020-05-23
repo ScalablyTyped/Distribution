@@ -2,8 +2,8 @@ package typings.googleCloudPaginator.resourceStreamMod
 
 import typings.googleCloudPaginator.googleCloudPaginatorStrings.data
 import typings.googleCloudPaginator.mod.ParsedArguments
-import typings.node.AnonEnd
 import typings.node.NodeJS.WritableStream
+import typings.node.anon.End
 import typings.node.streamMod.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,7 +39,7 @@ class ResourceStream[T] protected ()
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T): T = js.native
   /* InferMemberOverrides */
-  override def pipe[T /* <: WritableStream */](destination: T, options: AnonEnd): T = js.native
+  override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
   /* CompleteClass */
   @JSName("prependListener")
   override def prependListener_data(event: data, listener: js.Function1[T, Unit]): this.type = js.native

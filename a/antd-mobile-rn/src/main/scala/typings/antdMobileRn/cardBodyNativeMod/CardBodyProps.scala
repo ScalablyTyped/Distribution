@@ -13,9 +13,9 @@ trait CardBodyProps extends js.Object {
 
 object CardBodyProps {
   @scala.inline
-  def apply(style: StyleProp[ViewStyle] = null, styles: js.Any = null): CardBodyProps = {
+  def apply(style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined, styles: js.Any = null): CardBodyProps = {
     val __obj = js.Dynamic.literal()
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardBodyProps]
   }

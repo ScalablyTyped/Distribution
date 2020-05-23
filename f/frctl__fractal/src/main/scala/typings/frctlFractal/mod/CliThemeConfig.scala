@@ -1,13 +1,13 @@
 package typings.frctlFractal.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.frctlFractal.AnonFormat
+import typings.frctlFractal.anon.Format
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CliThemeConfig extends js.Object {
-  var delimiter: js.UndefOr[AnonFormat] = js.undefined
+  var delimiter: js.UndefOr[Format] = js.undefined
   @JSName("delimiter.format")
   var delimiterDotformat: js.UndefOr[js.Function1[/* str */ String, String]] = js.undefined
   @JSName("delimiter.text")
@@ -18,7 +18,7 @@ trait CliThemeConfig extends js.Object {
 object CliThemeConfig {
   @scala.inline
   def apply(
-    delimiter: AnonFormat = null,
+    delimiter: Format = null,
     delimiterDotformat: /* str */ String => String = null,
     delimiterDottext: String = null,
     styles: StringDictionary[js.Any] = null

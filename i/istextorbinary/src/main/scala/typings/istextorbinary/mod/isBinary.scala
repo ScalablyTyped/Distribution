@@ -15,9 +15,8 @@ object isBinary extends js.Object {
   ): Unit = js.native
   def apply(
     filename: String,
-    buffer: js.UndefOr[scala.Nothing],
+    buffer: js.UndefOr[Buffer],
     next: js.Function2[/* err */ Null, /* result */ Boolean, Unit]
   ): Unit = js.native
-  def apply(filename: String, buffer: Buffer, next: js.Function2[/* err */ Null, /* result */ Boolean, Unit]): Unit = js.native
 }
 

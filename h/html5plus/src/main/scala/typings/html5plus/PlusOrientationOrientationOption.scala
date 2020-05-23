@@ -21,9 +21,9 @@ trait PlusOrientationOrientationOption extends js.Object {
 
 object PlusOrientationOrientationOption {
   @scala.inline
-  def apply(frequency: Int | Double = null): PlusOrientationOrientationOption = {
+  def apply(frequency: js.UndefOr[Double] = js.undefined): PlusOrientationOrientationOption = {
     val __obj = js.Dynamic.literal()
-    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
+    if (!js.isUndefined(frequency)) __obj.updateDynamic("frequency")(frequency.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusOrientationOrientationOption]
   }
 }

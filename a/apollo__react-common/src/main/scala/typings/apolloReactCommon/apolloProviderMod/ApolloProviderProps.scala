@@ -13,9 +13,12 @@ trait ApolloProviderProps[TCache] extends js.Object {
 
 object ApolloProviderProps {
   @scala.inline
-  def apply[TCache](client: default[TCache], children: ReactNode | js.Array[ReactNode] = null): ApolloProviderProps[TCache] = {
+  def apply[TCache](
+    client: default[TCache],
+    children: js.UndefOr[Null | ReactNode | js.Array[ReactNode]] = js.undefined
+  ): ApolloProviderProps[TCache] = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(children)) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApolloProviderProps[TCache]]
   }
 }

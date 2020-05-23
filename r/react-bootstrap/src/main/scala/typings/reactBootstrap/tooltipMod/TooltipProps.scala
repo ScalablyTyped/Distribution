@@ -32,8 +32,8 @@ object TooltipProps {
     bsSize: Sizes = null,
     bsStyle: String = null,
     placement: String = null,
-    positionLeft: Int | Double = null,
-    positionTop: Int | Double = null
+    positionLeft: js.UndefOr[Double] = js.undefined,
+    positionTop: js.UndefOr[Double] = js.undefined
   ): TooltipProps = {
     val __obj = js.Dynamic.literal()
     if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
@@ -44,8 +44,8 @@ object TooltipProps {
     if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize.asInstanceOf[js.Any])
     if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (positionLeft != null) __obj.updateDynamic("positionLeft")(positionLeft.asInstanceOf[js.Any])
-    if (positionTop != null) __obj.updateDynamic("positionTop")(positionTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(positionLeft)) __obj.updateDynamic("positionLeft")(positionLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(positionTop)) __obj.updateDynamic("positionTop")(positionTop.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipProps]
   }
 }

@@ -23,13 +23,13 @@ trait AdvancedSecurityOptionsInput extends js.Object {
 object AdvancedSecurityOptionsInput {
   @scala.inline
   def apply(
-    Enabled: js.UndefOr[scala.Boolean] = js.undefined,
-    InternalUserDatabaseEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    Enabled: js.UndefOr[Boolean] = js.undefined,
+    InternalUserDatabaseEnabled: js.UndefOr[Boolean] = js.undefined,
     MasterUserOptions: MasterUserOptions = null
   ): AdvancedSecurityOptionsInput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(InternalUserDatabaseEnabled)) __obj.updateDynamic("InternalUserDatabaseEnabled")(InternalUserDatabaseEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(InternalUserDatabaseEnabled)) __obj.updateDynamic("InternalUserDatabaseEnabled")(InternalUserDatabaseEnabled.get.asInstanceOf[js.Any])
     if (MasterUserOptions != null) __obj.updateDynamic("MasterUserOptions")(MasterUserOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdvancedSecurityOptionsInput]
   }

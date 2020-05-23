@@ -13,9 +13,9 @@ trait Capacity extends js.Object {
 
 object Capacity {
   @scala.inline
-  def apply(CapacityUnits: Int | Double = null): Capacity = {
+  def apply(CapacityUnits: js.UndefOr[Double] = js.undefined): Capacity = {
     val __obj = js.Dynamic.literal()
-    if (CapacityUnits != null) __obj.updateDynamic("CapacityUnits")(CapacityUnits.asInstanceOf[js.Any])
+    if (!js.isUndefined(CapacityUnits)) __obj.updateDynamic("CapacityUnits")(CapacityUnits.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Capacity]
   }
 }

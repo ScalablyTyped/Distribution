@@ -28,15 +28,15 @@ object ClassifierMetadata {
   @scala.inline
   def apply(
     EvaluationMetrics: ClassifierEvaluationMetrics = null,
-    NumberOfLabels: Int | scala.Double = null,
-    NumberOfTestDocuments: Int | scala.Double = null,
-    NumberOfTrainedDocuments: Int | scala.Double = null
+    NumberOfLabels: js.UndefOr[Integer] = js.undefined,
+    NumberOfTestDocuments: js.UndefOr[Integer] = js.undefined,
+    NumberOfTrainedDocuments: js.UndefOr[Integer] = js.undefined
   ): ClassifierMetadata = {
     val __obj = js.Dynamic.literal()
     if (EvaluationMetrics != null) __obj.updateDynamic("EvaluationMetrics")(EvaluationMetrics.asInstanceOf[js.Any])
-    if (NumberOfLabels != null) __obj.updateDynamic("NumberOfLabels")(NumberOfLabels.asInstanceOf[js.Any])
-    if (NumberOfTestDocuments != null) __obj.updateDynamic("NumberOfTestDocuments")(NumberOfTestDocuments.asInstanceOf[js.Any])
-    if (NumberOfTrainedDocuments != null) __obj.updateDynamic("NumberOfTrainedDocuments")(NumberOfTrainedDocuments.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfLabels)) __obj.updateDynamic("NumberOfLabels")(NumberOfLabels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfTestDocuments)) __obj.updateDynamic("NumberOfTestDocuments")(NumberOfTestDocuments.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfTrainedDocuments)) __obj.updateDynamic("NumberOfTrainedDocuments")(NumberOfTrainedDocuments.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassifierMetadata]
   }
 }

@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.AnonUpdatableBoolean
+import typings.babylonjs.anon.UpdatableBoolean
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ class PointsCloudSystem protected ()
     name: String,
     pointSize: Double,
     scene: typings.babylonjs.sceneMod.Scene,
-    options: AnonUpdatableBoolean
+    options: UpdatableBoolean
   ) = this()
 }
 

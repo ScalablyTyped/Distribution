@@ -1,6 +1,6 @@
 package typings.hapiJoi.mod
 
-import typings.hapiJoi.AnonArrays
+import typings.hapiJoi.anon.Arrays
 import typings.hapiJoi.hapiJoiStrings.date
 import typings.hapiJoi.hapiJoiStrings.iso
 import typings.hapiJoi.hapiJoiStrings.string
@@ -32,23 +32,23 @@ object ErrorValidationOptions {
     nonEnumerables: js.UndefOr[Boolean] = js.undefined,
     presence: PresenceMode = null,
     skipFunctions: js.UndefOr[Boolean] = js.undefined,
-    stripUnknown: Boolean | AnonArrays = null
+    stripUnknown: Boolean | Arrays = null
   ): ErrorValidationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(abortEarly)) __obj.updateDynamic("abortEarly")(abortEarly.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowUnknown)) __obj.updateDynamic("allowUnknown")(allowUnknown.asInstanceOf[js.Any])
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (!js.isUndefined(abortEarly)) __obj.updateDynamic("abortEarly")(abortEarly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowUnknown)) __obj.updateDynamic("allowUnknown")(allowUnknown.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.get.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (!js.isUndefined(convert)) __obj.updateDynamic("convert")(convert.asInstanceOf[js.Any])
+    if (!js.isUndefined(convert)) __obj.updateDynamic("convert")(convert.get.asInstanceOf[js.Any])
     if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
-    if (!js.isUndefined(externals)) __obj.updateDynamic("externals")(externals.asInstanceOf[js.Any])
+    if (!js.isUndefined(externals)) __obj.updateDynamic("externals")(externals.get.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (!js.isUndefined(noDefaults)) __obj.updateDynamic("noDefaults")(noDefaults.asInstanceOf[js.Any])
-    if (!js.isUndefined(nonEnumerables)) __obj.updateDynamic("nonEnumerables")(nonEnumerables.asInstanceOf[js.Any])
+    if (!js.isUndefined(noDefaults)) __obj.updateDynamic("noDefaults")(noDefaults.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nonEnumerables)) __obj.updateDynamic("nonEnumerables")(nonEnumerables.get.asInstanceOf[js.Any])
     if (presence != null) __obj.updateDynamic("presence")(presence.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipFunctions)) __obj.updateDynamic("skipFunctions")(skipFunctions.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipFunctions)) __obj.updateDynamic("skipFunctions")(skipFunctions.get.asInstanceOf[js.Any])
     if (stripUnknown != null) __obj.updateDynamic("stripUnknown")(stripUnknown.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorValidationOptions]
   }

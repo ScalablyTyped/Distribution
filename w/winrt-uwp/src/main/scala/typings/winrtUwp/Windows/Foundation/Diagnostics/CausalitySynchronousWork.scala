@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Foundation.Diagnostics
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object CausalitySynchronousWork extends js.Object {
   /** The work item being scheduled is running due to reaching a milestone within the asynchronous operation. */
   @js.native
   sealed trait progressNotification extends CausalitySynchronousWork
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CausalitySynchronousWork with Double] = js.native
-  /* 0 */ @js.native
-  object completionNotification extends TopLevel[completionNotification with Double]
-  
-  /* 2 */ @js.native
-  object execution extends TopLevel[execution with Double]
-  
-  /* 1 */ @js.native
-  object progressNotification extends TopLevel[progressNotification with Double]
   
 }
 

@@ -1,6 +1,6 @@
 package typings.primereact.ratingMod
 
-import typings.primereact.AnonOriginalEventTargetValue
+import typings.primereact.anon.OriginalEventTargetValue
 import typings.primereact.tooltipOptionsMod.TooltipOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ trait RatingProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ AnonOriginalEventTargetValue, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ OriginalEventTargetValue, Unit]] = js.undefined
   var readonly: js.UndefOr[Boolean] = js.undefined
   var stars: js.UndefOr[Double] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
@@ -27,26 +27,26 @@ object RatingProps {
     className: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
-    onChange: /* e */ AnonOriginalEventTargetValue => Unit = null,
+    onChange: /* e */ OriginalEventTargetValue => Unit = null,
     readonly: js.UndefOr[Boolean] = js.undefined,
-    stars: Int | Double = null,
+    stars: js.UndefOr[Double] = js.undefined,
     style: js.Object = null,
     tooltip: js.Any = null,
     tooltipOptions: TooltipOptions = null,
-    value: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined
   ): RatingProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
-    if (stars != null) __obj.updateDynamic("stars")(stars.asInstanceOf[js.Any])
+    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stars)) __obj.updateDynamic("stars")(stars.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (tooltipOptions != null) __obj.updateDynamic("tooltipOptions")(tooltipOptions.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RatingProps]
   }
 }

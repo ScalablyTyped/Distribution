@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapGridBase")
 @js.native
-class BootstrapGridBase () extends Control {
+trait BootstrapGridBase extends Control {
   def getToolbar(index: Double): BootstrapMenu | Null = js.native
   def getToolbarByName(name: String): BootstrapMenu | Null = js.native
   @JSName("off")

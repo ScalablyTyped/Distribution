@@ -31,16 +31,16 @@ trait SamplingTargetDocument extends js.Object {
 object SamplingTargetDocument {
   @scala.inline
   def apply(
-    FixedRate: Int | Double = null,
-    Interval: Int | Double = null,
-    ReservoirQuota: Int | Double = null,
+    FixedRate: js.UndefOr[Double] = js.undefined,
+    Interval: js.UndefOr[Double] = js.undefined,
+    ReservoirQuota: js.UndefOr[Double] = js.undefined,
     ReservoirQuotaTTL: Date | String | Double = null,
     RuleName: String = null
   ): SamplingTargetDocument = {
     val __obj = js.Dynamic.literal()
-    if (FixedRate != null) __obj.updateDynamic("FixedRate")(FixedRate.asInstanceOf[js.Any])
-    if (Interval != null) __obj.updateDynamic("Interval")(Interval.asInstanceOf[js.Any])
-    if (ReservoirQuota != null) __obj.updateDynamic("ReservoirQuota")(ReservoirQuota.asInstanceOf[js.Any])
+    if (!js.isUndefined(FixedRate)) __obj.updateDynamic("FixedRate")(FixedRate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Interval)) __obj.updateDynamic("Interval")(Interval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReservoirQuota)) __obj.updateDynamic("ReservoirQuota")(ReservoirQuota.get.asInstanceOf[js.Any])
     if (ReservoirQuotaTTL != null) __obj.updateDynamic("ReservoirQuotaTTL")(ReservoirQuotaTTL.asInstanceOf[js.Any])
     if (RuleName != null) __obj.updateDynamic("RuleName")(RuleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SamplingTargetDocument]

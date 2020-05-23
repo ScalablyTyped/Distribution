@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side equivalent of the ASPxDockPanel object.
   */
-@JSGlobal("ASPxClientDockPanel")
 @js.native
-class ASPxClientDockPanel () extends ASPxClientPopupControlBase {
+trait ASPxClientDockPanel extends ASPxClientPopupControlBase {
   /**
     * Fires on the client side after a panel is docked in a zone.
     */
@@ -70,16 +69,5 @@ class ASPxClientDockPanel () extends ASPxClientPopupControlBase {
     * @param visibleIndex An integer value specifying the zero-based index of the panel amongst visible panels in the zone.
     */
   def SetVisibleIndex(visibleIndex: Double): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("ASPxClientDockPanel")
-@js.native
-object ASPxClientDockPanel extends js.Object {
-  /**
-    * Converts the specified object to the ASPxClientDockPanel type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): ASPxClientDockPanel = js.native
 }
 

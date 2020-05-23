@@ -56,12 +56,12 @@ trait DescribeTaskExecutionResponse extends js.Object {
 object DescribeTaskExecutionResponse {
   @scala.inline
   def apply(
-    BytesTransferred: Int | Double = null,
-    BytesWritten: Int | Double = null,
-    EstimatedBytesToTransfer: Int | Double = null,
-    EstimatedFilesToTransfer: Int | Double = null,
+    BytesTransferred: js.UndefOr[long] = js.undefined,
+    BytesWritten: js.UndefOr[long] = js.undefined,
+    EstimatedBytesToTransfer: js.UndefOr[long] = js.undefined,
+    EstimatedFilesToTransfer: js.UndefOr[long] = js.undefined,
     Excludes: FilterList = null,
-    FilesTransferred: Int | Double = null,
+    FilesTransferred: js.UndefOr[long] = js.undefined,
     Includes: FilterList = null,
     Options: Options = null,
     Result: TaskExecutionResultDetail = null,
@@ -70,12 +70,12 @@ object DescribeTaskExecutionResponse {
     TaskExecutionArn: TaskExecutionArn = null
   ): DescribeTaskExecutionResponse = {
     val __obj = js.Dynamic.literal()
-    if (BytesTransferred != null) __obj.updateDynamic("BytesTransferred")(BytesTransferred.asInstanceOf[js.Any])
-    if (BytesWritten != null) __obj.updateDynamic("BytesWritten")(BytesWritten.asInstanceOf[js.Any])
-    if (EstimatedBytesToTransfer != null) __obj.updateDynamic("EstimatedBytesToTransfer")(EstimatedBytesToTransfer.asInstanceOf[js.Any])
-    if (EstimatedFilesToTransfer != null) __obj.updateDynamic("EstimatedFilesToTransfer")(EstimatedFilesToTransfer.asInstanceOf[js.Any])
+    if (!js.isUndefined(BytesTransferred)) __obj.updateDynamic("BytesTransferred")(BytesTransferred.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(BytesWritten)) __obj.updateDynamic("BytesWritten")(BytesWritten.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EstimatedBytesToTransfer)) __obj.updateDynamic("EstimatedBytesToTransfer")(EstimatedBytesToTransfer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EstimatedFilesToTransfer)) __obj.updateDynamic("EstimatedFilesToTransfer")(EstimatedFilesToTransfer.get.asInstanceOf[js.Any])
     if (Excludes != null) __obj.updateDynamic("Excludes")(Excludes.asInstanceOf[js.Any])
-    if (FilesTransferred != null) __obj.updateDynamic("FilesTransferred")(FilesTransferred.asInstanceOf[js.Any])
+    if (!js.isUndefined(FilesTransferred)) __obj.updateDynamic("FilesTransferred")(FilesTransferred.get.asInstanceOf[js.Any])
     if (Includes != null) __obj.updateDynamic("Includes")(Includes.asInstanceOf[js.Any])
     if (Options != null) __obj.updateDynamic("Options")(Options.asInstanceOf[js.Any])
     if (Result != null) __obj.updateDynamic("Result")(Result.asInstanceOf[js.Any])

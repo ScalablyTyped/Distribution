@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.SerialCommunication
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object SerialPinChange extends js.Object {
   /** Change in the ring indicator state. */
   @js.native
   sealed trait ringIndicator extends SerialPinChange
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SerialPinChange with Double] = js.native
-  /* 0 */ @js.native
-  object breakSignal extends TopLevel[breakSignal with Double]
-  
-  /* 1 */ @js.native
-  object carrierDetect extends TopLevel[carrierDetect with Double]
-  
-  /* 2 */ @js.native
-  object clearToSend extends TopLevel[clearToSend with Double]
-  
-  /* 3 */ @js.native
-  object dataSetReady extends TopLevel[dataSetReady with Double]
-  
-  /* 4 */ @js.native
-  object ringIndicator extends TopLevel[ringIndicator with Double]
   
 }
 

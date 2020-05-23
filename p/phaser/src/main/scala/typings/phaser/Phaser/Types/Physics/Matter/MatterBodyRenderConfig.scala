@@ -52,28 +52,28 @@ trait MatterBodyRenderConfig extends js.Object {
 object MatterBodyRenderConfig {
   @scala.inline
   def apply(
-    fillColor: Int | Double = null,
-    fillOpacity: Int | Double = null,
-    lineColor: Int | Double = null,
-    lineOpacity: Int | Double = null,
-    lineThickness: Int | Double = null,
-    opacity: Int | Double = null,
+    fillColor: js.UndefOr[Double] = js.undefined,
+    fillOpacity: js.UndefOr[Double] = js.undefined,
+    lineColor: js.UndefOr[Double] = js.undefined,
+    lineOpacity: js.UndefOr[Double] = js.undefined,
+    lineThickness: js.UndefOr[Double] = js.undefined,
+    opacity: js.UndefOr[Double] = js.undefined,
     sprite: js.Object = null,
-    spriteDotxOffset: Int | Double = null,
-    spriteDotyOffset: Int | Double = null,
+    spriteDotxOffset: js.UndefOr[Double] = js.undefined,
+    spriteDotyOffset: js.UndefOr[Double] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined
   ): MatterBodyRenderConfig = {
     val __obj = js.Dynamic.literal()
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
-    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
-    if (lineOpacity != null) __obj.updateDynamic("lineOpacity")(lineOpacity.asInstanceOf[js.Any])
-    if (lineThickness != null) __obj.updateDynamic("lineThickness")(lineThickness.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(fillColor)) __obj.updateDynamic("fillColor")(fillColor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fillOpacity)) __obj.updateDynamic("fillOpacity")(fillOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineColor)) __obj.updateDynamic("lineColor")(lineColor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineOpacity)) __obj.updateDynamic("lineOpacity")(lineOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineThickness)) __obj.updateDynamic("lineThickness")(lineThickness.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (sprite != null) __obj.updateDynamic("sprite")(sprite.asInstanceOf[js.Any])
-    if (spriteDotxOffset != null) __obj.updateDynamic("sprite.xOffset")(spriteDotxOffset.asInstanceOf[js.Any])
-    if (spriteDotyOffset != null) __obj.updateDynamic("sprite.yOffset")(spriteDotyOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(spriteDotxOffset)) __obj.updateDynamic("sprite.xOffset")(spriteDotxOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spriteDotyOffset)) __obj.updateDynamic("sprite.yOffset")(spriteDotyOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatterBodyRenderConfig]
   }
 }

@@ -17,7 +17,9 @@ import scala.scalajs.js.annotation._
 @JSImport("jest-jasmine2/build/jasmine/ReportDispatcher", JSImport.Default)
 @js.native
 class default protected () extends ReportDispatcher {
-  def this(methods: js.Array[jasmineDone | jasmineStarted | specDone | specStarted | suiteDone | suiteStarted]) = this()
+  def this(methods: js.Array[
+        /* keyof jest-jasmine2.jest-jasmine2/build/types.Reporter */ jasmineDone | jasmineStarted | specDone | specStarted | suiteDone | suiteStarted
+      ]) = this()
   /* CompleteClass */
   override def addReporter(reporter: Reporter): Unit = js.native
   /* CompleteClass */

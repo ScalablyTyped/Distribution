@@ -22,10 +22,14 @@ trait ListTagsForStreamInput extends js.Object {
 
 object ListTagsForStreamInput {
   @scala.inline
-  def apply(StreamName: StreamName, ExclusiveStartTagKey: TagKey = null, Limit: Int | Double = null): ListTagsForStreamInput = {
+  def apply(
+    StreamName: StreamName,
+    ExclusiveStartTagKey: TagKey = null,
+    Limit: js.UndefOr[ListTagsForStreamInputLimit] = js.undefined
+  ): ListTagsForStreamInput = {
     val __obj = js.Dynamic.literal(StreamName = StreamName.asInstanceOf[js.Any])
     if (ExclusiveStartTagKey != null) __obj.updateDynamic("ExclusiveStartTagKey")(ExclusiveStartTagKey.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagsForStreamInput]
   }
 }

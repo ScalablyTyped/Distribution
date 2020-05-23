@@ -22,10 +22,10 @@ trait GetLayerVersionArgs extends js.Object {
 
 object GetLayerVersionArgs {
   @scala.inline
-  def apply(layerName: String, compatibleRuntime: String = null, version: Int | Double = null): GetLayerVersionArgs = {
+  def apply(layerName: String, compatibleRuntime: String = null, version: js.UndefOr[Double] = js.undefined): GetLayerVersionArgs = {
     val __obj = js.Dynamic.literal(layerName = layerName.asInstanceOf[js.Any])
     if (compatibleRuntime != null) __obj.updateDynamic("compatibleRuntime")(compatibleRuntime.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLayerVersionArgs]
   }
 }

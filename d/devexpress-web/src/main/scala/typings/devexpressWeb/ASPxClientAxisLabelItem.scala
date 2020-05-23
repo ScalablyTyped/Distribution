@@ -7,24 +7,36 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the client-side equivalent of the AxisLabelItem class.
   */
-@JSGlobal("ASPxClientAxisLabelItem")
-@js.native
-class ASPxClientAxisLabelItem () extends ASPxClientWebChartElement {
+trait ASPxClientAxisLabelItem extends ASPxClientWebChartElement {
   /**
     * Gets the axis to which an axis label item belongs.
     */
-  var axis: ASPxClientAxisBase = js.native
+  var axis: ASPxClientAxisBase
   /**
     * Gets the axis value to which an axis label item corresponds.
     */
-  var axisValue: js.Any = js.native
+  var axisValue: js.Any
   /**
     * Gets the internal representation of the axis value to which an axis label item corresponds.
     */
-  var axisValueInternal: Double = js.native
+  var axisValueInternal: Double
   /**
     * Gets the text of an axis label item.
     */
-  var text: String = js.native
+  var text: String
+}
+
+object ASPxClientAxisLabelItem {
+  @scala.inline
+  def apply(
+    axis: ASPxClientAxisBase,
+    axisValue: js.Any,
+    axisValueInternal: Double,
+    chart: ASPxClientWebChart,
+    text: String
+  ): ASPxClientAxisLabelItem = {
+    val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], axisValue = axisValue.asInstanceOf[js.Any], axisValueInternal = axisValueInternal.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientAxisLabelItem]
+  }
 }
 

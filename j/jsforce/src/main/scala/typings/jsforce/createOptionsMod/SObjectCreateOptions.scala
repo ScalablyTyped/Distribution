@@ -52,8 +52,8 @@ object SObjectCreateOptions {
     AccountSource: String = null,
     BillingCity: String = null,
     BillingCountry: String = null,
-    BillingLatitude: Int | Double = null,
-    BillingLongitude: Int | Double = null,
+    BillingLatitude: js.UndefOr[Double] = js.undefined,
+    BillingLongitude: js.UndefOr[Double] = js.undefined,
     BillingPostalCode: String = null,
     BillingState: String = null,
     BillingStreet: String = null,
@@ -73,14 +73,14 @@ object SObjectCreateOptions {
     LastViewedDate: Date = null,
     MasterRecordId: SalesforceId = null,
     Name: String = null,
-    NumberOfEmployees: Int | Double = null,
+    NumberOfEmployees: js.UndefOr[Double] = js.undefined,
     OwnerId: SalesforceId = null,
     ParentId: SalesforceId = null,
     Phone: String = null,
     ShippingCity: String = null,
     ShippingCountry: String = null,
-    ShippingLatitude: Int | Double = null,
-    ShippingLongitude: Int | Double = null,
+    ShippingLatitude: js.UndefOr[Double] = js.undefined,
+    ShippingLongitude: js.UndefOr[Double] = js.undefined,
     ShippingPostalCode: String = null,
     ShippingState: String = null,
     ShippingStreet: String = null,
@@ -93,8 +93,8 @@ object SObjectCreateOptions {
     if (AccountSource != null) __obj.updateDynamic("AccountSource")(AccountSource.asInstanceOf[js.Any])
     if (BillingCity != null) __obj.updateDynamic("BillingCity")(BillingCity.asInstanceOf[js.Any])
     if (BillingCountry != null) __obj.updateDynamic("BillingCountry")(BillingCountry.asInstanceOf[js.Any])
-    if (BillingLatitude != null) __obj.updateDynamic("BillingLatitude")(BillingLatitude.asInstanceOf[js.Any])
-    if (BillingLongitude != null) __obj.updateDynamic("BillingLongitude")(BillingLongitude.asInstanceOf[js.Any])
+    if (!js.isUndefined(BillingLatitude)) __obj.updateDynamic("BillingLatitude")(BillingLatitude.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(BillingLongitude)) __obj.updateDynamic("BillingLongitude")(BillingLongitude.get.asInstanceOf[js.Any])
     if (BillingPostalCode != null) __obj.updateDynamic("BillingPostalCode")(BillingPostalCode.asInstanceOf[js.Any])
     if (BillingState != null) __obj.updateDynamic("BillingState")(BillingState.asInstanceOf[js.Any])
     if (BillingStreet != null) __obj.updateDynamic("BillingStreet")(BillingStreet.asInstanceOf[js.Any])
@@ -104,7 +104,7 @@ object SObjectCreateOptions {
     if (ExtId__c != null) __obj.updateDynamic("ExtId__c")(ExtId__c.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     if (Industry != null) __obj.updateDynamic("Industry")(Industry.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsDeleted)) __obj.updateDynamic("IsDeleted")(IsDeleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsDeleted)) __obj.updateDynamic("IsDeleted")(IsDeleted.get.asInstanceOf[js.Any])
     if (Jigsaw != null) __obj.updateDynamic("Jigsaw")(Jigsaw.asInstanceOf[js.Any])
     if (JigsawCompanyId != null) __obj.updateDynamic("JigsawCompanyId")(JigsawCompanyId.asInstanceOf[js.Any])
     if (LastActivityDate != null) __obj.updateDynamic("LastActivityDate")(LastActivityDate.asInstanceOf[js.Any])
@@ -114,14 +114,14 @@ object SObjectCreateOptions {
     if (LastViewedDate != null) __obj.updateDynamic("LastViewedDate")(LastViewedDate.asInstanceOf[js.Any])
     if (MasterRecordId != null) __obj.updateDynamic("MasterRecordId")(MasterRecordId.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (NumberOfEmployees != null) __obj.updateDynamic("NumberOfEmployees")(NumberOfEmployees.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfEmployees)) __obj.updateDynamic("NumberOfEmployees")(NumberOfEmployees.get.asInstanceOf[js.Any])
     if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
     if (ParentId != null) __obj.updateDynamic("ParentId")(ParentId.asInstanceOf[js.Any])
     if (Phone != null) __obj.updateDynamic("Phone")(Phone.asInstanceOf[js.Any])
     if (ShippingCity != null) __obj.updateDynamic("ShippingCity")(ShippingCity.asInstanceOf[js.Any])
     if (ShippingCountry != null) __obj.updateDynamic("ShippingCountry")(ShippingCountry.asInstanceOf[js.Any])
-    if (ShippingLatitude != null) __obj.updateDynamic("ShippingLatitude")(ShippingLatitude.asInstanceOf[js.Any])
-    if (ShippingLongitude != null) __obj.updateDynamic("ShippingLongitude")(ShippingLongitude.asInstanceOf[js.Any])
+    if (!js.isUndefined(ShippingLatitude)) __obj.updateDynamic("ShippingLatitude")(ShippingLatitude.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ShippingLongitude)) __obj.updateDynamic("ShippingLongitude")(ShippingLongitude.get.asInstanceOf[js.Any])
     if (ShippingPostalCode != null) __obj.updateDynamic("ShippingPostalCode")(ShippingPostalCode.asInstanceOf[js.Any])
     if (ShippingState != null) __obj.updateDynamic("ShippingState")(ShippingState.asInstanceOf[js.Any])
     if (ShippingStreet != null) __obj.updateDynamic("ShippingStreet")(ShippingStreet.asInstanceOf[js.Any])

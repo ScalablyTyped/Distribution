@@ -1,13 +1,13 @@
 package typings.weappApi.mod.wx
 
-import typings.weappApi.AnonScale
+import typings.weappApi.anon.Scale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetScaleOptions extends CommonCallbackOptions {
   @JSName("success")
-  var success_GetScaleOptions: js.UndefOr[js.Function1[/* callback */ js.Function1[/* res */ AnonScale, Unit], Unit]] = js.undefined
+  var success_GetScaleOptions: js.UndefOr[js.Function1[/* callback */ js.Function1[/* res */ Scale, Unit], Unit]] = js.undefined
 }
 
 object GetScaleOptions {
@@ -15,7 +15,7 @@ object GetScaleOptions {
   def apply(
     complete: /* res */ js.Any => Unit = null,
     fail: /* res */ js.Any => Unit = null,
-    success: /* callback */ js.Function1[/* res */ AnonScale, Unit] => Unit = null
+    success: /* callback */ js.Function1[/* res */ Scale, Unit] => Unit = null
   ): GetScaleOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))

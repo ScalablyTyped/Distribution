@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Interface for open file options.
-		 */
+  * Interface for open file options.
+  */
 trait OpenFileOptions extends js.Object {
   /**
-  			 * Specify whether to open or save the file
-  			 * Values:
-  			 *   1 - open
-  			 *   2 - save
-  			 */
+    * Specify whether to open or save the file
+    * Values:
+    *   1 - open
+    *   2 - save
+    */
   var openMode: OpenFileMode
 }
 

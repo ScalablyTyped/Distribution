@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.Series")
 @js.native
-class Series protected () extends js.Object {
+trait Series extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   var ApplyPictToEnd: Boolean = js.native
   var ApplyPictToFront: Boolean = js.native

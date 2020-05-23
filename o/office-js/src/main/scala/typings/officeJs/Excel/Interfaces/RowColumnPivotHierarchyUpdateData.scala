@@ -24,10 +24,10 @@ trait RowColumnPivotHierarchyUpdateData extends js.Object {
 
 object RowColumnPivotHierarchyUpdateData {
   @scala.inline
-  def apply(name: String = null, position: Int | Double = null): RowColumnPivotHierarchyUpdateData = {
+  def apply(name: String = null, position: js.UndefOr[Double] = js.undefined): RowColumnPivotHierarchyUpdateData = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowColumnPivotHierarchyUpdateData]
   }
 }

@@ -1,6 +1,6 @@
 package typings.ionic.libServeMod
 
-import typings.ionic.PartialCommandMetadata
+import typings.ionic.anon.PartialCommandMetadata
 import typings.ionic.definitionsMod.DevAppDetails
 import typings.ionic.definitionsMod.LabServeDetails
 import typings.ionic.definitionsMod.Runner

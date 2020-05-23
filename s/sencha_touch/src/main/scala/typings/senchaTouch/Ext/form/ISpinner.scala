@@ -13,25 +13,25 @@ trait ISpinner
   /** [Config Option] (Number) */
   var defaultValue: js.UndefOr[Double] = js.undefined
   /** [Method] Returns the value of accelerateOnTapHold
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getAccelerateOnTapHold: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of cls
-  		* @returns String
-  		*/
+    * @returns String
+    */
   @JSName("getCls")
   var getCls_ISpinner: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of cycle
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getCycle: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of defaultValue
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getDefaultValue: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of groupButtons
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getGroupButtons: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Config Option] (Boolean) */
   var groupButtons: js.UndefOr[Boolean] = js.undefined
@@ -40,29 +40,29 @@ trait ISpinner
   /** [Config Option] (String) */
   var incrementValue: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of accelerateOnTapHold
-  		* @param accelerateOnTapHold Boolean The new value.
-  		*/
+    * @param accelerateOnTapHold Boolean The new value.
+    */
   var setAccelerateOnTapHold: js.UndefOr[js.Function1[/* accelerateOnTapHold */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of cls
-  		* @param cls String The new value.
-  		*/
+    * @param cls String The new value.
+    */
   @JSName("setCls")
   var setCls_ISpinner: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of cycle
-  		* @param cycle Boolean The new value.
-  		*/
+    * @param cycle Boolean The new value.
+    */
   var setCycle: js.UndefOr[js.Function1[/* cycle */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of defaultValue
-  		* @param defaultValue Number The new value.
-  		*/
+    * @param defaultValue Number The new value.
+    */
   var setDefaultValue: js.UndefOr[js.Function1[/* defaultValue */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of groupButtons
-  		* @param groupButtons Boolean The new value.
-  		*/
+    * @param groupButtons Boolean The new value.
+    */
   var setGroupButtons: js.UndefOr[js.Function1[/* groupButtons */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Updates the component configuration
-  		* @param newComponent Object
-  		*/
+    * @param newComponent Object
+    */
   var updateComponent: js.UndefOr[js.Function1[/* newComponent */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -72,7 +72,7 @@ object ISpinner {
     INumber: typings.senchaTouch.Ext.field.INumber = null,
     accelerateOnTapHold: js.UndefOr[Boolean] = js.undefined,
     cycle: js.UndefOr[Boolean] = js.undefined,
-    defaultValue: Int | Double = null,
+    defaultValue: js.UndefOr[Double] = js.undefined,
     getAccelerateOnTapHold: () => Boolean = null,
     getCls: () => String = null,
     getCycle: () => Boolean = null,
@@ -90,15 +90,15 @@ object ISpinner {
   ): ISpinner = {
     val __obj = js.Dynamic.literal()
     if (INumber != null) js.Dynamic.global.Object.assign(__obj, INumber)
-    if (!js.isUndefined(accelerateOnTapHold)) __obj.updateDynamic("accelerateOnTapHold")(accelerateOnTapHold.asInstanceOf[js.Any])
-    if (!js.isUndefined(cycle)) __obj.updateDynamic("cycle")(cycle.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(accelerateOnTapHold)) __obj.updateDynamic("accelerateOnTapHold")(accelerateOnTapHold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cycle)) __obj.updateDynamic("cycle")(cycle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.get.asInstanceOf[js.Any])
     if (getAccelerateOnTapHold != null) __obj.updateDynamic("getAccelerateOnTapHold")(js.Any.fromFunction0(getAccelerateOnTapHold))
     if (getCls != null) __obj.updateDynamic("getCls")(js.Any.fromFunction0(getCls))
     if (getCycle != null) __obj.updateDynamic("getCycle")(js.Any.fromFunction0(getCycle))
     if (getDefaultValue != null) __obj.updateDynamic("getDefaultValue")(js.Any.fromFunction0(getDefaultValue))
     if (getGroupButtons != null) __obj.updateDynamic("getGroupButtons")(js.Any.fromFunction0(getGroupButtons))
-    if (!js.isUndefined(groupButtons)) __obj.updateDynamic("groupButtons")(groupButtons.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupButtons)) __obj.updateDynamic("groupButtons")(groupButtons.get.asInstanceOf[js.Any])
     if (increment != null) __obj.updateDynamic("increment")(increment.asInstanceOf[js.Any])
     if (incrementValue != null) __obj.updateDynamic("incrementValue")(incrementValue.asInstanceOf[js.Any])
     if (setAccelerateOnTapHold != null) __obj.updateDynamic("setAccelerateOnTapHold")(js.Any.fromFunction1(setAccelerateOnTapHold))

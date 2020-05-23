@@ -19,21 +19,21 @@ object MeterHTMLAttributes {
   def apply[T](
     HTMLAttributes: HTMLAttributes[T] = null,
     form: String = null,
-    high: Int | Double = null,
-    low: Int | Double = null,
+    high: js.UndefOr[Double] = js.undefined,
+    low: js.UndefOr[Double] = js.undefined,
     max: Double | String = null,
     min: Double | String = null,
-    optimum: Int | Double = null,
+    optimum: js.UndefOr[Double] = js.undefined,
     value: String | js.Array[String] | Double = null
   ): MeterHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     if (HTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
     if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
-    if (high != null) __obj.updateDynamic("high")(high.asInstanceOf[js.Any])
-    if (low != null) __obj.updateDynamic("low")(low.asInstanceOf[js.Any])
+    if (!js.isUndefined(high)) __obj.updateDynamic("high")(high.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(low)) __obj.updateDynamic("low")(low.get.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (optimum != null) __obj.updateDynamic("optimum")(optimum.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimum)) __obj.updateDynamic("optimum")(optimum.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeterHTMLAttributes[T]]
   }

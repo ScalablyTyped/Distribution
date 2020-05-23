@@ -17,12 +17,12 @@ object Comment {
   def apply(
     `type`: Line | Block,
     value: String,
-    loc: SourceLocation = null,
+    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
     range: js.Tuple2[Double, Double] = null
   ): Comment = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[Comment]
   }

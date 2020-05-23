@@ -38,7 +38,7 @@ object Options {
   def apply(
     autoIndex: js.UndefOr[Boolean] = js.undefined,
     before: js.Array[HandleFunction] = null,
-    cache: Int | Double = null,
+    cache: js.UndefOr[Double] = js.undefined,
     contentType: String = null,
     cors: js.UndefOr[Boolean] = js.undefined,
     corsHeaders: String = null,
@@ -54,22 +54,22 @@ object Options {
     showDotfiles: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoIndex)) __obj.updateDynamic("autoIndex")(autoIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoIndex)) __obj.updateDynamic("autoIndex")(autoIndex.get.asInstanceOf[js.Any])
     if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.get.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(cors)) __obj.updateDynamic("cors")(cors.asInstanceOf[js.Any])
+    if (!js.isUndefined(cors)) __obj.updateDynamic("cors")(cors.get.asInstanceOf[js.Any])
     if (corsHeaders != null) __obj.updateDynamic("corsHeaders")(corsHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(ext)) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
-    if (!js.isUndefined(gzip)) __obj.updateDynamic("gzip")(gzip.asInstanceOf[js.Any])
+    if (!js.isUndefined(ext)) __obj.updateDynamic("ext")(ext.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gzip)) __obj.updateDynamic("gzip")(gzip.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (https != null) __obj.updateDynamic("https")(https.asInstanceOf[js.Any])
     if (logFn != null) __obj.updateDynamic("logFn")(js.Any.fromFunction3(logFn))
     if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     if (robots != null) __obj.updateDynamic("robots")(robots.asInstanceOf[js.Any])
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDir)) __obj.updateDynamic("showDir")(showDir.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDotfiles)) __obj.updateDynamic("showDotfiles")(showDotfiles.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDir)) __obj.updateDynamic("showDir")(showDir.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDotfiles)) __obj.updateDynamic("showDotfiles")(showDotfiles.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

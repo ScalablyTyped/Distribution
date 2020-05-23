@@ -14,11 +14,15 @@ trait GetRtmpUrlOptions extends js.Object {
 
 object GetRtmpUrlOptions {
   @scala.inline
-  def apply(expires: Int | Double = null, params: js.Object = null, timeout: Int | Double = null): GetRtmpUrlOptions = {
+  def apply(
+    expires: js.UndefOr[Double] = js.undefined,
+    params: js.Object = null,
+    timeout: js.UndefOr[Double] = js.undefined
+  ): GetRtmpUrlOptions = {
     val __obj = js.Dynamic.literal()
-    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    if (!js.isUndefined(expires)) __obj.updateDynamic("expires")(expires.get.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRtmpUrlOptions]
   }
 }

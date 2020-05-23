@@ -13,10 +13,13 @@ trait IBatchHeader extends js.Object {
 
 object IBatchHeader {
   @scala.inline
-  def apply(signerPublicKey: String = null, transactionIds: js.Array[String] = null): IBatchHeader = {
+  def apply(
+    signerPublicKey: js.UndefOr[Null | String] = js.undefined,
+    transactionIds: js.UndefOr[Null | js.Array[String]] = js.undefined
+  ): IBatchHeader = {
     val __obj = js.Dynamic.literal()
-    if (signerPublicKey != null) __obj.updateDynamic("signerPublicKey")(signerPublicKey.asInstanceOf[js.Any])
-    if (transactionIds != null) __obj.updateDynamic("transactionIds")(transactionIds.asInstanceOf[js.Any])
+    if (!js.isUndefined(signerPublicKey)) __obj.updateDynamic("signerPublicKey")(signerPublicKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(transactionIds)) __obj.updateDynamic("transactionIds")(transactionIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBatchHeader]
   }
 }

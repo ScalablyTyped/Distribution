@@ -19,18 +19,18 @@ object Coordinates {
   def apply(
     latitude: Double,
     longitude: Double,
-    accuracy: Int | Double = null,
-    altitude: Int | Double = null,
-    altitudeAccuracy: Int | Double = null,
-    heading: Int | Double = null,
-    speed: Int | Double = null
+    accuracy: js.UndefOr[Double] = js.undefined,
+    altitude: js.UndefOr[Double] = js.undefined,
+    altitudeAccuracy: js.UndefOr[Double] = js.undefined,
+    heading: js.UndefOr[Double] = js.undefined,
+    speed: js.UndefOr[Double] = js.undefined
   ): Coordinates = {
     val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
-    if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy.asInstanceOf[js.Any])
-    if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
-    if (altitudeAccuracy != null) __obj.updateDynamic("altitudeAccuracy")(altitudeAccuracy.asInstanceOf[js.Any])
-    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
+    if (!js.isUndefined(accuracy)) __obj.updateDynamic("accuracy")(accuracy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(altitudeAccuracy)) __obj.updateDynamic("altitudeAccuracy")(altitudeAccuracy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(heading)) __obj.updateDynamic("heading")(heading.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Coordinates]
   }
 }

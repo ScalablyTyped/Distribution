@@ -38,18 +38,20 @@ trait SchemaSpec[N /* <: String */, M /* <: String */] extends js.Object {
 
 object SchemaSpec {
   @scala.inline
-  def apply[N /* <: String */, M /* <: String */](
+  def apply[N, M](
     nodes: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ name in N ]: prosemirror-model.prosemirror-model.NodeSpec}
     */ typings.prosemirrorModel.prosemirrorModelStrings.SchemaSpec with TopLevel[js.Any]) | ^[NodeSpec],
-    marks: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    marks: js.UndefOr[
+      Null | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ name in M ]: prosemirror-model.prosemirror-model.MarkSpec}
-    */ typings.prosemirrorModel.prosemirrorModelStrings.SchemaSpec with TopLevel[js.Any]) | ^[MarkSpec] = null,
-    topNode: String = null
+    */ typings.prosemirrorModel.prosemirrorModelStrings.SchemaSpec with TopLevel[js.Any]) | ^[MarkSpec]
+    ] = js.undefined,
+    topNode: js.UndefOr[Null | String] = js.undefined
   ): SchemaSpec[N, M] = {
     val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any])
-    if (marks != null) __obj.updateDynamic("marks")(marks.asInstanceOf[js.Any])
-    if (topNode != null) __obj.updateDynamic("topNode")(topNode.asInstanceOf[js.Any])
+    if (!js.isUndefined(marks)) __obj.updateDynamic("marks")(marks.asInstanceOf[js.Any])
+    if (!js.isUndefined(topNode)) __obj.updateDynamic("topNode")(topNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSpec[N, M]]
   }
 }

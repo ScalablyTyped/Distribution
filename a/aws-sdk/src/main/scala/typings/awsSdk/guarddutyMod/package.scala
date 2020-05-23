@@ -8,6 +8,13 @@ package object guarddutyMod {
   type AccountDetails = js.Array[typings.awsSdk.guarddutyMod.AccountDetail]
   type AccountId = java.lang.String
   type AccountIds = js.Array[typings.awsSdk.guarddutyMod.AccountId]
+  type AdminAccounts = js.Array[typings.awsSdk.guarddutyMod.AdminAccount]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ENABLED
+    - typings.awsSdk.awsSdkStrings.DISABLE_IN_PROGRESS
+    - java.lang.String
+  */
+  type AdminStatus = typings.awsSdk.guarddutyMod._AdminStatus | java.lang.String
   type Boolean = scala.Boolean
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.guarddutyMod.ClientApiVersions
   type ClientToken = java.lang.String

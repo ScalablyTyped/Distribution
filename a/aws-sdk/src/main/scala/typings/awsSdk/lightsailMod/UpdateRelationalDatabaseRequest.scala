@@ -63,15 +63,15 @@ object UpdateRelationalDatabaseRequest {
     rotateMasterUserPassword: js.UndefOr[Boolean] = js.undefined
   ): UpdateRelationalDatabaseRequest = {
     val __obj = js.Dynamic.literal(relationalDatabaseName = relationalDatabaseName.asInstanceOf[js.Any])
-    if (!js.isUndefined(applyImmediately)) __obj.updateDynamic("applyImmediately")(applyImmediately.asInstanceOf[js.Any])
+    if (!js.isUndefined(applyImmediately)) __obj.updateDynamic("applyImmediately")(applyImmediately.get.asInstanceOf[js.Any])
     if (caCertificateIdentifier != null) __obj.updateDynamic("caCertificateIdentifier")(caCertificateIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableBackupRetention)) __obj.updateDynamic("disableBackupRetention")(disableBackupRetention.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableBackupRetention)) __obj.updateDynamic("enableBackupRetention")(enableBackupRetention.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableBackupRetention)) __obj.updateDynamic("disableBackupRetention")(disableBackupRetention.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableBackupRetention)) __obj.updateDynamic("enableBackupRetention")(enableBackupRetention.get.asInstanceOf[js.Any])
     if (masterUserPassword != null) __obj.updateDynamic("masterUserPassword")(masterUserPassword.asInstanceOf[js.Any])
     if (preferredBackupWindow != null) __obj.updateDynamic("preferredBackupWindow")(preferredBackupWindow.asInstanceOf[js.Any])
     if (preferredMaintenanceWindow != null) __obj.updateDynamic("preferredMaintenanceWindow")(preferredMaintenanceWindow.asInstanceOf[js.Any])
-    if (!js.isUndefined(publiclyAccessible)) __obj.updateDynamic("publiclyAccessible")(publiclyAccessible.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotateMasterUserPassword)) __obj.updateDynamic("rotateMasterUserPassword")(rotateMasterUserPassword.asInstanceOf[js.Any])
+    if (!js.isUndefined(publiclyAccessible)) __obj.updateDynamic("publiclyAccessible")(publiclyAccessible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotateMasterUserPassword)) __obj.updateDynamic("rotateMasterUserPassword")(rotateMasterUserPassword.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRelationalDatabaseRequest]
   }
 }

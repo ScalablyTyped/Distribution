@@ -1,7 +1,7 @@
 package typings.babylonjs.legacyMod
 
-import typings.babylonjs.AnonRatio
-import typings.babylonjs.AnonWidth
+import typings.babylonjs.anon.Ratio
+import typings.babylonjs.anon.Width
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +26,11 @@ class MirrorTexture protected ()
     * @param generateDepthBuffer
     */
   def this(name: String, size: Double, scene: typings.babylonjs.sceneMod.Scene) = this()
-  def this(name: String, size: AnonRatio, scene: typings.babylonjs.sceneMod.Scene) = this()
-  def this(name: String, size: AnonWidth, scene: typings.babylonjs.sceneMod.Scene) = this()
+  def this(name: String, size: Ratio, scene: typings.babylonjs.sceneMod.Scene) = this()
+  def this(name: String, size: Width, scene: typings.babylonjs.sceneMod.Scene) = this()
   def this(name: String, size: Double, scene: typings.babylonjs.sceneMod.Scene, generateMipMaps: Boolean) = this()
-  def this(name: String, size: AnonRatio, scene: typings.babylonjs.sceneMod.Scene, generateMipMaps: Boolean) = this()
-  def this(name: String, size: AnonWidth, scene: typings.babylonjs.sceneMod.Scene, generateMipMaps: Boolean) = this()
+  def this(name: String, size: Ratio, scene: typings.babylonjs.sceneMod.Scene, generateMipMaps: Boolean) = this()
+  def this(name: String, size: Width, scene: typings.babylonjs.sceneMod.Scene, generateMipMaps: Boolean) = this()
   def this(
     name: String,
     size: Double,
@@ -40,14 +40,14 @@ class MirrorTexture protected ()
   ) = this()
   def this(
     name: String,
-    size: AnonRatio,
+    size: Ratio,
     scene: typings.babylonjs.sceneMod.Scene,
     generateMipMaps: Boolean,
     `type`: Double
   ) = this()
   def this(
     name: String,
-    size: AnonWidth,
+    size: Width,
     scene: typings.babylonjs.sceneMod.Scene,
     generateMipMaps: Boolean,
     `type`: Double
@@ -62,7 +62,7 @@ class MirrorTexture protected ()
   ) = this()
   def this(
     name: String,
-    size: AnonRatio,
+    size: Ratio,
     scene: typings.babylonjs.sceneMod.Scene,
     generateMipMaps: Boolean,
     `type`: Double,
@@ -70,7 +70,7 @@ class MirrorTexture protected ()
   ) = this()
   def this(
     name: String,
-    size: AnonWidth,
+    size: Width,
     scene: typings.babylonjs.sceneMod.Scene,
     generateMipMaps: Boolean,
     `type`: Double,
@@ -87,7 +87,7 @@ class MirrorTexture protected ()
   ) = this()
   def this(
     name: String,
-    size: AnonRatio,
+    size: Ratio,
     scene: typings.babylonjs.sceneMod.Scene,
     generateMipMaps: Boolean,
     `type`: Double,
@@ -96,7 +96,7 @@ class MirrorTexture protected ()
   ) = this()
   def this(
     name: String,
-    size: AnonWidth,
+    size: Width,
     scene: typings.babylonjs.sceneMod.Scene,
     generateMipMaps: Boolean,
     `type`: Double,

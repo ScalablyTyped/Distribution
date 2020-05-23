@@ -12,5 +12,5 @@ package object mod {
     /* depTrace */ java.lang.String, 
     scala.Unit
   ]
-  type Source = java.lang.String | typings.cssModulesLoaderCore.AnonToString
+  type Source = java.lang.String | typings.cssModulesLoaderCore.anon.ToString
 }

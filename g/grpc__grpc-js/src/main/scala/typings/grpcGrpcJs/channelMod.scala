@@ -36,10 +36,21 @@ object channelMod extends js.Object {
       *     that indicates what information to propagate from parentCall.
       */
     def createCall(method: String): Call = js.native
+    def createCall(method: String, deadline: Null, host: String): Call = js.native
+    def createCall(method: String, deadline: Null, host: String, parentCall: Null, propagateFlags: Double): Call = js.native
+    def createCall(method: String, deadline: Null, host: String, parentCall: Call): Call = js.native
+    def createCall(method: String, deadline: Null, host: String, parentCall: Call, propagateFlags: Double): Call = js.native
+    def createCall(method: String, deadline: Null, host: Null, parentCall: Null, propagateFlags: Double): Call = js.native
+    def createCall(method: String, deadline: Null, host: Null, parentCall: Call): Call = js.native
+    def createCall(method: String, deadline: Null, host: Null, parentCall: Call, propagateFlags: Double): Call = js.native
     def createCall(method: String, deadline: Deadline): Call = js.native
     def createCall(method: String, deadline: Deadline, host: String): Call = js.native
+    def createCall(method: String, deadline: Deadline, host: String, parentCall: Null, propagateFlags: Double): Call = js.native
     def createCall(method: String, deadline: Deadline, host: String, parentCall: Call): Call = js.native
     def createCall(method: String, deadline: Deadline, host: String, parentCall: Call, propagateFlags: Double): Call = js.native
+    def createCall(method: String, deadline: Deadline, host: Null, parentCall: Null, propagateFlags: Double): Call = js.native
+    def createCall(method: String, deadline: Deadline, host: Null, parentCall: Call): Call = js.native
+    def createCall(method: String, deadline: Deadline, host: Null, parentCall: Call, propagateFlags: Double): Call = js.native
     /**
       * Get the channel's current connectivity state. This method is here mainly
       * because it is in the existing internal Channel class, and there isn't
@@ -100,7 +111,6 @@ object channelMod extends js.Object {
     var tryPick: js.Any = js.native
     var updateState: js.Any = js.native
     def _startCallStream(stream: Http2CallStream, metadata: Metadata): Unit = js.native
-    def getConnectivityState(): ConnectivityState = js.native
   }
   
   @js.native

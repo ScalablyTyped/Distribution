@@ -13,7 +13,7 @@ object GridInlineEditing {
   @scala.inline
   def apply(managementColumn: js.UndefOr[Boolean] = js.undefined, mode: String = null): GridInlineEditing = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(managementColumn)) __obj.updateDynamic("managementColumn")(managementColumn.asInstanceOf[js.Any])
+    if (!js.isUndefined(managementColumn)) __obj.updateDynamic("managementColumn")(managementColumn.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridInlineEditing]
   }

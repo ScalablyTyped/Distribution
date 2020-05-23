@@ -11,10 +11,10 @@ trait StorageEstimate extends js.Object {
 
 object StorageEstimate {
   @scala.inline
-  def apply(quota: Int | Double = null, usage: Int | Double = null): StorageEstimate = {
+  def apply(quota: js.UndefOr[Double] = js.undefined, usage: js.UndefOr[Double] = js.undefined): StorageEstimate = {
     val __obj = js.Dynamic.literal()
-    if (quota != null) __obj.updateDynamic("quota")(quota.asInstanceOf[js.Any])
-    if (usage != null) __obj.updateDynamic("usage")(usage.asInstanceOf[js.Any])
+    if (!js.isUndefined(quota)) __obj.updateDynamic("quota")(quota.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(usage)) __obj.updateDynamic("usage")(usage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorageEstimate]
   }
 }

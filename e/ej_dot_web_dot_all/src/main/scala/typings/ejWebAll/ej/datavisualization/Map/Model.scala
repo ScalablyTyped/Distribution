@@ -126,7 +126,7 @@ object Model {
   def apply(
     Click: /* e */ ClickEventArgs => Unit = null,
     background: String = null,
-    baseMapIndex: Int | Double = null,
+    baseMapIndex: js.UndefOr[Double] = js.undefined,
     bubbleRendering: /* e */ BubbleRenderingEventArgs => Unit = null,
     centerPosition: js.Any = null,
     displayTextRendering: /* e */ DisplayTextRenderingEventArgs => Unit = null,
@@ -162,18 +162,18 @@ object Model {
     val __obj = js.Dynamic.literal()
     if (Click != null) __obj.updateDynamic("Click")(js.Any.fromFunction1(Click))
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (baseMapIndex != null) __obj.updateDynamic("baseMapIndex")(baseMapIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(baseMapIndex)) __obj.updateDynamic("baseMapIndex")(baseMapIndex.get.asInstanceOf[js.Any])
     if (bubbleRendering != null) __obj.updateDynamic("bubbleRendering")(js.Any.fromFunction1(bubbleRendering))
     if (centerPosition != null) __obj.updateDynamic("centerPosition")(centerPosition.asInstanceOf[js.Any])
     if (displayTextRendering != null) __obj.updateDynamic("displayTextRendering")(js.Any.fromFunction1(displayTextRendering))
     if (doubleClick != null) __obj.updateDynamic("doubleClick")(js.Any.fromFunction1(doubleClick))
-    if (!js.isUndefined(draggingOnSelection)) __obj.updateDynamic("draggingOnSelection")(draggingOnSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLayerChangeAnimation)) __obj.updateDynamic("enableLayerChangeAnimation")(enableLayerChangeAnimation.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePan)) __obj.updateDynamic("enablePan")(enablePan.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableResize)) __obj.updateDynamic("enableResize")(enableResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggingOnSelection)) __obj.updateDynamic("draggingOnSelection")(draggingOnSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableLayerChangeAnimation)) __obj.updateDynamic("enableLayerChangeAnimation")(enableLayerChangeAnimation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePan)) __obj.updateDynamic("enablePan")(enablePan.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableResize)) __obj.updateDynamic("enableResize")(enableResize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.get.asInstanceOf[js.Any])
     if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
     if (legendItemClick != null) __obj.updateDynamic("legendItemClick")(js.Any.fromFunction1(legendItemClick))
     if (legendItemRendering != null) __obj.updateDynamic("legendItemRendering")(js.Any.fromFunction1(legendItemRendering))

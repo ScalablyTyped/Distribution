@@ -18,10 +18,13 @@ trait ThingConnectivity extends js.Object {
 
 object ThingConnectivity {
   @scala.inline
-  def apply(connected: js.UndefOr[scala.Boolean] = js.undefined, timestamp: Int | Double = null): ThingConnectivity = {
+  def apply(
+    connected: js.UndefOr[Boolean] = js.undefined,
+    timestamp: js.UndefOr[ConnectivityTimestamp] = js.undefined
+  ): ThingConnectivity = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(connected)) __obj.updateDynamic("connected")(connected.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(connected)) __obj.updateDynamic("connected")(connected.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThingConnectivity]
   }
 }

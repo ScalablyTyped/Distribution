@@ -36,16 +36,16 @@ object RequestCaptureOptions {
   def apply(
     dumpDefault: js.UndefOr[Boolean] = js.undefined,
     level: LogLevel = null,
-    maxRecords: Int | Double = null,
-    maxRequestIds: Int | Double = null,
+    maxRecords: js.UndefOr[Double] = js.undefined,
+    maxRequestIds: js.UndefOr[Double] = js.undefined,
     stream: Stream = null,
     streams: js.Array[Stream] = null
   ): RequestCaptureOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dumpDefault)) __obj.updateDynamic("dumpDefault")(dumpDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(dumpDefault)) __obj.updateDynamic("dumpDefault")(dumpDefault.get.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (maxRecords != null) __obj.updateDynamic("maxRecords")(maxRecords.asInstanceOf[js.Any])
-    if (maxRequestIds != null) __obj.updateDynamic("maxRequestIds")(maxRequestIds.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRecords)) __obj.updateDynamic("maxRecords")(maxRecords.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRequestIds)) __obj.updateDynamic("maxRequestIds")(maxRequestIds.get.asInstanceOf[js.Any])
     if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
     if (streams != null) __obj.updateDynamic("streams")(streams.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestCaptureOptions]

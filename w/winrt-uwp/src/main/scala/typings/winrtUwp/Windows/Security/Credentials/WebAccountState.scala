@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Security.Credentials
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object WebAccountState extends js.Object {
   /** The account is currently not connected. */
   @js.native
   sealed trait none extends WebAccountState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WebAccountState with Double] = js.native
-  /* 1 */ @js.native
-  object connected extends TopLevel[connected with Double]
-  
-  /* 2 */ @js.native
-  object error extends TopLevel[error with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
   
 }
 

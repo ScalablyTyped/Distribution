@@ -4,31 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CSG.Properties")
-@js.native
-class Properties () extends js.Object {
-  var center: js.Any = js.native
-  var cube: Properties = js.native
-  var cylinder: Properties = js.native
-  var end: js.Any = js.native
-  var facecenters: js.Array[_] = js.native
-  var facepoint: js.Any = js.native
-  var facepointH: js.Any = js.native
-  var facepointH90: js.Any = js.native
-  var roundedCube: Properties = js.native
-  var roundedCylinder: js.Any = js.native
-  var sphere: Properties = js.native
-  var start: js.Any = js.native
-  def _merge(otherproperties: Properties): Properties = js.native
-  def _transform(matrix4x4: Matrix4x4): Properties = js.native
+trait Properties extends js.Object {
+  var center: js.Any
+  var cube: Properties
+  var cylinder: Properties
+  var end: js.Any
+  var facecenters: js.Array[_]
+  var facepoint: js.Any
+  var facepointH: js.Any
+  var facepointH90: js.Any
+  var roundedCube: Properties
+  var roundedCylinder: js.Any
+  var sphere: Properties
+  var start: js.Any
+  def _merge(otherproperties: Properties): Properties
+  def _transform(matrix4x4: Matrix4x4): Properties
 }
 
-/* static members */
-@JSGlobal("CSG.Properties")
-@js.native
-object Properties extends js.Object {
-  def addFrom(result: js.Any, otherproperties: Properties): Unit = js.native
-  def cloneObj(source: js.Any, result: js.Any): Unit = js.native
-  def transformObj(source: js.Any, result: js.Any, matrix4x4: Matrix4x4): Unit = js.native
+object Properties {
+  @scala.inline
+  def apply(
+    _merge: Properties => Properties,
+    _transform: Matrix4x4 => Properties,
+    center: js.Any,
+    cube: Properties,
+    cylinder: Properties,
+    end: js.Any,
+    facecenters: js.Array[_],
+    facepoint: js.Any,
+    facepointH: js.Any,
+    facepointH90: js.Any,
+    roundedCube: Properties,
+    roundedCylinder: js.Any,
+    sphere: Properties,
+    start: js.Any
+  ): Properties = {
+    val __obj = js.Dynamic.literal(_merge = js.Any.fromFunction1(_merge), _transform = js.Any.fromFunction1(_transform), center = center.asInstanceOf[js.Any], cube = cube.asInstanceOf[js.Any], cylinder = cylinder.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], facecenters = facecenters.asInstanceOf[js.Any], facepoint = facepoint.asInstanceOf[js.Any], facepointH = facepointH.asInstanceOf[js.Any], facepointH90 = facepointH90.asInstanceOf[js.Any], roundedCube = roundedCube.asInstanceOf[js.Any], roundedCylinder = roundedCylinder.asInstanceOf[js.Any], sphere = sphere.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Properties]
+  }
 }
 

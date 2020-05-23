@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Taxonomy.ChangedTerm")
 @js.native
-class ChangedTerm () extends ChangedItem {
+trait ChangedTerm extends ChangedItem {
   def get_changedCustomProperties(): js.Array[String] = js.native
   def get_changedLocalCustomProperties(): js.Array[String] = js.native
   def get_groupId(): Guid = js.native

@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** 
+/**
   * interface for a base64 result
   */
 trait Base64Result extends js.Object {

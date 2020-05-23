@@ -34,12 +34,12 @@ object UpdateComponentConfigurationRequest {
     ComponentName: ComponentName,
     ResourceGroupName: ResourceGroupName,
     ComponentConfiguration: ComponentConfiguration = null,
-    Monitor: js.UndefOr[Boolean] = js.undefined,
+    Monitor: js.UndefOr[Monitor] = js.undefined,
     Tier: Tier = null
   ): UpdateComponentConfigurationRequest = {
     val __obj = js.Dynamic.literal(ComponentName = ComponentName.asInstanceOf[js.Any], ResourceGroupName = ResourceGroupName.asInstanceOf[js.Any])
     if (ComponentConfiguration != null) __obj.updateDynamic("ComponentConfiguration")(ComponentConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(Monitor)) __obj.updateDynamic("Monitor")(Monitor.asInstanceOf[js.Any])
+    if (!js.isUndefined(Monitor)) __obj.updateDynamic("Monitor")(Monitor.get.asInstanceOf[js.Any])
     if (Tier != null) __obj.updateDynamic("Tier")(Tier.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateComponentConfigurationRequest]
   }

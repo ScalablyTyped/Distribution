@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 
 trait IIdGenerator extends IBase {
   /** [Method] Generates and returns the next id
-  		* @returns String The next id.
-  		*/
+    * @returns String The next id.
+    */
   var generate: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (String) */
   var id: js.UndefOr[String] = js.undefined
@@ -54,11 +54,11 @@ object IIdGenerator {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(isGenerator)) __obj.updateDynamic("isGenerator")(isGenerator.asInstanceOf[js.Any])
+    if (!js.isUndefined(isGenerator)) __obj.updateDynamic("isGenerator")(isGenerator.get.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IIdGenerator]

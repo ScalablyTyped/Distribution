@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojdialogMod
 
-import typings.oracleOraclejet.AnonLabelCloseIcon
+import typings.oracleOraclejet.anon.LabelCloseIcon
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.baseComponent
 import typings.oracleOraclejet.ojdialogMod.ojDialog.Position
@@ -74,7 +74,7 @@ trait ojDialog_ extends baseComponent[ojDialogSettableProperties] {
   var resizeBehavior: resizable | none = js.native
   var role: String = js.native
   @JSName("translations")
-  var translations_ojDialog_ : AnonLabelCloseIcon = js.native
+  var translations_ojDialog_ : LabelCloseIcon = js.native
   def addEventListener(
     `type`: cancelBehaviorChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[icon | escape | none], _]
@@ -303,6 +303,6 @@ trait ojDialog_ extends baseComponent[ojDialogSettableProperties] {
   @JSName("setProperty")
   def setProperty_role(property: role, value: String): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonLabelCloseIcon): Unit = js.native
+  def setProperty_translations(property: translations, value: LabelCloseIcon): Unit = js.native
 }
 

@@ -14,9 +14,9 @@ trait ComputeResponse extends js.Object {
 
 object ComputeResponse {
   @scala.inline
-  def apply(simulationUnitLimit: Int | Double = null): ComputeResponse = {
+  def apply(simulationUnitLimit: js.UndefOr[SimulationUnit] = js.undefined): ComputeResponse = {
     val __obj = js.Dynamic.literal()
-    if (simulationUnitLimit != null) __obj.updateDynamic("simulationUnitLimit")(simulationUnitLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(simulationUnitLimit)) __obj.updateDynamic("simulationUnitLimit")(simulationUnitLimit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComputeResponse]
   }
 }

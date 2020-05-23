@@ -23,15 +23,15 @@ object AndroidRoboTest {
     appInitialActivity: String = null,
     bootstrapPackageId: String = null,
     bootstrapRunnerClass: String = null,
-    maxDepth: Int | Double = null,
-    maxSteps: Int | Double = null
+    maxDepth: js.UndefOr[Double] = js.undefined,
+    maxSteps: js.UndefOr[Double] = js.undefined
   ): AndroidRoboTest = {
     val __obj = js.Dynamic.literal()
     if (appInitialActivity != null) __obj.updateDynamic("appInitialActivity")(appInitialActivity.asInstanceOf[js.Any])
     if (bootstrapPackageId != null) __obj.updateDynamic("bootstrapPackageId")(bootstrapPackageId.asInstanceOf[js.Any])
     if (bootstrapRunnerClass != null) __obj.updateDynamic("bootstrapRunnerClass")(bootstrapRunnerClass.asInstanceOf[js.Any])
-    if (maxDepth != null) __obj.updateDynamic("maxDepth")(maxDepth.asInstanceOf[js.Any])
-    if (maxSteps != null) __obj.updateDynamic("maxSteps")(maxSteps.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDepth)) __obj.updateDynamic("maxDepth")(maxDepth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSteps)) __obj.updateDynamic("maxSteps")(maxSteps.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidRoboTest]
   }
 }

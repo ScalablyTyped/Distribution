@@ -24,11 +24,11 @@ object DescribeStandardsControlsRequest {
   @scala.inline
   def apply(
     StandardsSubscriptionArn: NonEmptyString,
-    MaxResults: Int | scala.Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: NextToken = null
   ): DescribeStandardsControlsRequest = {
     val __obj = js.Dynamic.literal(StandardsSubscriptionArn = StandardsSubscriptionArn.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStandardsControlsRequest]
   }

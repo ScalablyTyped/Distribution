@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.RandomNumberBlock")
 @js.native
-class RandomNumberBlock protected () extends NodeMaterialBlock {
-  /**
-    * Creates a new RandomNumberBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait RandomNumberBlock extends NodeMaterialBlock {
   /**
     * Gets the output component
     */

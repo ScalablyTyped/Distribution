@@ -1,0 +1,12 @@
+package typings.webix.global.webix
+
+import org.scalablytyped.runtime.TopLevel
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("webix.UIManager")
+@js.native
+object UIManager
+  extends TopLevel[typings.webix.webix.UIManager]
+

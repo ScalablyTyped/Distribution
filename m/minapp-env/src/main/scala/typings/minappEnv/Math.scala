@@ -1,6 +1,5 @@
 package typings.minappEnv
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -209,9 +208,4 @@ trait Math extends js.Object {
     */
   def trunc(x: Double): Double = js.native
 }
-
-/** An intrinsic object that provides basic mathematics functionality and constants. */
-@JSGlobal("Math")
-@js.native
-object Math extends TopLevel[Math]
 

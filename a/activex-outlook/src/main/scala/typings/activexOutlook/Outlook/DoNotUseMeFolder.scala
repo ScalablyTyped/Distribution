@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Outlook.DoNotUseMeFolder")
 @js.native
-class DoNotUseMeFolder protected () extends js.Object {
+trait DoNotUseMeFolder extends js.Object {
   var AddressBookName: String = js.native
   val Application: typings.activexOutlook.Outlook.Application = js.native
   val Class: OlObjectClass = js.native

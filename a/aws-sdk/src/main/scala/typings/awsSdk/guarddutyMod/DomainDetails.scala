@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DomainDetails extends js.Object {
   /**
-    * Domain information for the AWS API call.
+    * The domain information for the AWS API call.
     */
   var Domain: js.UndefOr[String] = js.native
 }

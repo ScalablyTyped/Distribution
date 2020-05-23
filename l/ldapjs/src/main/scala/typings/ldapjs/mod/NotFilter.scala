@@ -1,6 +1,5 @@
 package typings.ldapjs.mod
 
-import typings.ldapjs.AnonFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ldapjs", "NotFilter")
 @js.native
 class NotFilter protected () extends Filter {
-  def this(options: AnonFilter) = this()
+  def this(options: typings.ldapjs.anon.Filter) = this()
   /* CompleteClass */
   override var `type`: String = js.native
   /* CompleteClass */

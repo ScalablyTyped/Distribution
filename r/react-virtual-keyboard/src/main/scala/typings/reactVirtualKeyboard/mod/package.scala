@@ -11,7 +11,7 @@ package object mod {
     js.Any
   ]
   type kbEvents = js.Function3[
-    /* event */ js.UndefOr[java.lang.String | typings.std.Event_], 
+    /* event */ js.UndefOr[java.lang.String | typings.std.Event], 
     /* keyboard */ js.UndefOr[typings.std.Element], 
     /* el */ js.UndefOr[typings.std.Element], 
     scala.Unit

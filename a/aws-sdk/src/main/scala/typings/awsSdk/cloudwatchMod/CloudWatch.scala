@@ -1,6 +1,6 @@
 package typings.awsSdk.cloudwatchMod
 
-import typings.awsSdk.DescribeAlarmsInputwaiter
+import typings.awsSdk.anon.DescribeAlarmsInputwaiter
 import typings.awsSdk.awsSdkStrings.alarmExists
 import typings.awsSdk.awsSdkStrings.compositeAlarmExists
 import typings.awsSdk.configMod.ConfigBase

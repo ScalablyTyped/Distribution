@@ -74,6 +74,9 @@ object sharpStrings {
   sealed trait `hard-light` extends Blend
   
   @js.native
+  sealed trait iiif extends TileLayout
+  
+  @js.native
   sealed trait in extends Blend
   
   @js.native
@@ -174,6 +177,8 @@ object sharpStrings {
   def google: google = "google".asInstanceOf[google]
   @scala.inline
   def `hard-light`: `hard-light` = "hard-light".asInstanceOf[`hard-light`]
+  @scala.inline
+  def iiif: iiif = "iiif".asInstanceOf[iiif]
   @scala.inline
   def in: in = "in".asInstanceOf[in]
   @scala.inline

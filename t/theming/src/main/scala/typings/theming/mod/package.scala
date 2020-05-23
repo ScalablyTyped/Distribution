@@ -9,9 +9,9 @@ package object mod {
   type ThemeProviderFactory[Theme] = typings.react.mod.ComponentType[typings.theming.mod.ThemeProviderProps[Theme]]
   type UseThemeFactory[Theme] = js.Function0[Theme]
   type WithThemeFactory[Theme] = js.Function1[
-    /* comp */ typings.react.mod.ComponentType[typings.theming.AnonTheme[Theme]], 
+    /* comp */ typings.react.mod.ComponentType[typings.theming.anon.ThemeNonNullable[Theme]], 
     typings.react.mod.ComponentType[
-      typings.theming.AnonTheme[Theme] with typings.theming.AnonThemeNonNullable[Theme]
+      typings.theming.anon.ThemeNonNullable[Theme] with typings.theming.anon.`0`[Theme]
     ]
   ]
 }

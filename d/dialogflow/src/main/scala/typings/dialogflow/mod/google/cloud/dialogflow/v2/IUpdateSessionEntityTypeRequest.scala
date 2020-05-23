@@ -15,10 +15,13 @@ trait IUpdateSessionEntityTypeRequest extends js.Object {
 
 object IUpdateSessionEntityTypeRequest {
   @scala.inline
-  def apply(sessionEntityType: ISessionEntityType = null, updateMask: IFieldMask = null): IUpdateSessionEntityTypeRequest = {
+  def apply(
+    sessionEntityType: js.UndefOr[Null | ISessionEntityType] = js.undefined,
+    updateMask: js.UndefOr[Null | IFieldMask] = js.undefined
+  ): IUpdateSessionEntityTypeRequest = {
     val __obj = js.Dynamic.literal()
-    if (sessionEntityType != null) __obj.updateDynamic("sessionEntityType")(sessionEntityType.asInstanceOf[js.Any])
-    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
+    if (!js.isUndefined(sessionEntityType)) __obj.updateDynamic("sessionEntityType")(sessionEntityType.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateMask)) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUpdateSessionEntityTypeRequest]
   }
 }

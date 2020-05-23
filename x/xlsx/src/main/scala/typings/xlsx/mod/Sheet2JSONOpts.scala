@@ -29,12 +29,12 @@ object Sheet2JSONOpts {
     raw: js.UndefOr[Boolean] = js.undefined
   ): Sheet2JSONOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(blankrows)) __obj.updateDynamic("blankrows")(blankrows.asInstanceOf[js.Any])
+    if (!js.isUndefined(blankrows)) __obj.updateDynamic("blankrows")(blankrows.get.asInstanceOf[js.Any])
     if (dateNF != null) __obj.updateDynamic("dateNF")(dateNF.asInstanceOf[js.Any])
     if (defval != null) __obj.updateDynamic("defval")(defval.asInstanceOf[js.Any])
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sheet2JSONOpts]
   }
 }

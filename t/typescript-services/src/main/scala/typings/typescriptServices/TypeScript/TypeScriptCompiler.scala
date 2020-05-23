@@ -4,11 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.TypeScriptCompiler")
 @js.native
-class TypeScriptCompiler () extends js.Object {
-  def this(logger: ILogger) = this()
-  def this(logger: ILogger, _settings: ImmutableCompilationSettings) = this()
+trait TypeScriptCompiler extends js.Object {
   var _settings: js.Any = js.native
   var logger: ILogger = js.native
   var semanticInfoChain: js.Any = js.native
@@ -98,16 +95,5 @@ class TypeScriptCompiler () extends js.Object {
     textChangeRange: TextChangeRange
   ): Unit = js.native
   /* private */ def writeByteOrderMarkForDocument(document: js.Any): js.Any = js.native
-}
-
-/* static members */
-@JSGlobal("TypeScript.TypeScriptCompiler")
-@js.native
-object TypeScriptCompiler extends js.Object {
-  def getFullDiagnosticText(diagnostic: Diagnostic, resolvePath: js.Function1[/* path */ String, String]): String = js.native
-  /* private */ def getLocationText(location: js.Any, resolvePath: js.Any): js.Any = js.native
-  def mapToDTSFileName(fileName: String, wholeFileNameReplaced: Boolean): String = js.native
-  def mapToFileNameExtension(extension: String, fileName: String, wholeFileNameReplaced: Boolean): String = js.native
-  def mapToJSFileName(fileName: String, wholeFileNameReplaced: Boolean): String = js.native
 }
 

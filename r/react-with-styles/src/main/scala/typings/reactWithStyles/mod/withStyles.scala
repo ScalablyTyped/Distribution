@@ -17,7 +17,7 @@ object withStyles extends js.Object {
     ComponentClass[
       Omit[
         ElementConfig[ComponentType[_]], 
-        typings.reactWithStyles.reactWithStylesStrings.css | styles | theme
+        /* keyof react-with-styles.react-with-styles.WithStylesProps<T> */ typings.reactWithStyles.reactWithStylesStrings.css | styles | theme
       ], 
       ComponentState
     ]
@@ -27,7 +27,7 @@ object withStyles extends js.Object {
     ComponentClass[
       Omit[
         ElementConfig[ComponentType[_]], 
-        typings.reactWithStyles.reactWithStylesStrings.css | styles | theme
+        /* keyof react-with-styles.react-with-styles.WithStylesProps<T> */ typings.reactWithStyles.reactWithStylesStrings.css | styles | theme
       ], 
       ComponentState
     ]
@@ -37,7 +37,7 @@ object withStyles extends js.Object {
     ComponentClass[
       Omit[
         ElementConfig[ComponentType[_]], 
-        typings.reactWithStyles.reactWithStylesStrings.css | styles | theme
+        /* keyof react-with-styles.react-with-styles.WithStylesProps<T> */ typings.reactWithStyles.reactWithStylesStrings.css | styles | theme
       ], 
       ComponentState
     ]
@@ -47,7 +47,7 @@ object withStyles extends js.Object {
     ComponentClass[
       Omit[
         ElementConfig[ComponentType[_]], 
-        typings.reactWithStyles.reactWithStylesStrings.css | styles | theme
+        /* keyof react-with-styles.react-with-styles.WithStylesProps<T> */ typings.reactWithStyles.reactWithStylesStrings.css | styles | theme
       ], 
       ComponentState
     ]

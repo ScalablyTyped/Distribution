@@ -18,10 +18,13 @@ trait PlanRuleLifecycle extends js.Object {
 
 object PlanRuleLifecycle {
   @scala.inline
-  def apply(coldStorageAfter: Int | Double = null, deleteAfter: Int | Double = null): PlanRuleLifecycle = {
+  def apply(
+    coldStorageAfter: js.UndefOr[Double] = js.undefined,
+    deleteAfter: js.UndefOr[Double] = js.undefined
+  ): PlanRuleLifecycle = {
     val __obj = js.Dynamic.literal()
-    if (coldStorageAfter != null) __obj.updateDynamic("coldStorageAfter")(coldStorageAfter.asInstanceOf[js.Any])
-    if (deleteAfter != null) __obj.updateDynamic("deleteAfter")(deleteAfter.asInstanceOf[js.Any])
+    if (!js.isUndefined(coldStorageAfter)) __obj.updateDynamic("coldStorageAfter")(coldStorageAfter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleteAfter)) __obj.updateDynamic("deleteAfter")(deleteAfter.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlanRuleLifecycle]
   }
 }

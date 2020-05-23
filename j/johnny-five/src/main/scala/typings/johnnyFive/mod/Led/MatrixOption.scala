@@ -11,9 +11,9 @@ trait MatrixOption extends js.Object {
 
 object MatrixOption {
   @scala.inline
-  def apply(pins: js.Any, devices: Int | Double = null): MatrixOption = {
+  def apply(pins: js.Any, devices: js.UndefOr[Double] = js.undefined): MatrixOption = {
     val __obj = js.Dynamic.literal(pins = pins.asInstanceOf[js.Any])
-    if (devices != null) __obj.updateDynamic("devices")(devices.asInstanceOf[js.Any])
+    if (!js.isUndefined(devices)) __obj.updateDynamic("devices")(devices.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatrixOption]
   }
 }

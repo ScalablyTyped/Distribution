@@ -1,7 +1,7 @@
 package typings.viewportMercatorProject.mod
 
-import typings.viewportMercatorProject.AnonLngLat
-import typings.viewportMercatorProject.AnonOffset
+import typings.viewportMercatorProject.anon.LngLat
+import typings.viewportMercatorProject.anon.Offset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,8 +18,8 @@ class WebMercatorViewport () extends Viewport {
   var pitch: Double = js.native
   var zoom: Double = js.native
   def fitBounds(bounds: Bounds): WebMercatorViewport = js.native
-  def fitBounds(bounds: Bounds, opts: AnonOffset): WebMercatorViewport = js.native
-  def getMapCenterByLngLatPosition(opts: AnonLngLat): Coordinates = js.native
+  def fitBounds(bounds: Bounds, opts: Offset): WebMercatorViewport = js.native
+  def getMapCenterByLngLatPosition(opts: LngLat): Coordinates = js.native
   def projectFlat(lngLat: Coordinates): Coordinates = js.native
   def projectFlat(lngLat: Coordinates, scale: Double): Coordinates = js.native
   def unprojectFlat(xy: Coordinates): Coordinates = js.native

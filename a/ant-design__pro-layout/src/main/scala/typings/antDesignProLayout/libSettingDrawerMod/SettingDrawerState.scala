@@ -1,6 +1,6 @@
 package typings.antDesignProLayout.libSettingDrawerMod
 
-import typings.antDesignProLayout.AnonDefaultOpenAll
+import typings.antDesignProLayout.anon.DefaultOpenAll
 import typings.antDesignProLayout.antDesignProLayoutStrings.realDark
 import typings.antDesignProLayout.antDesignProLayoutStrings.sidemenu
 import typings.antDesignProLayout.antDesignProLayoutStrings.topmenu
@@ -19,7 +19,7 @@ trait SettingDrawerState extends js.Object {
   var iconfontUrl: js.UndefOr[String] = js.undefined
   var language: js.UndefOr[String] = js.undefined
   var layout: js.UndefOr[sidemenu | topmenu] = js.undefined
-  var menu: js.UndefOr[AnonDefaultOpenAll] = js.undefined
+  var menu: js.UndefOr[DefaultOpenAll] = js.undefined
   var navTheme: js.UndefOr[
     (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any) | realDark
   ] = js.undefined
@@ -38,17 +38,17 @@ object SettingDrawerState {
     iconfontUrl: String = null,
     language: String = null,
     layout: sidemenu | topmenu = null,
-    menu: AnonDefaultOpenAll = null,
+    menu: DefaultOpenAll = null,
     navTheme: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any) | realDark = null,
     primaryColor: String = null,
     title: String = null
   ): SettingDrawerState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collapse)) __obj.updateDynamic("collapse")(collapse.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorWeak)) __obj.updateDynamic("colorWeak")(colorWeak.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapse)) __obj.updateDynamic("collapse")(collapse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorWeak)) __obj.updateDynamic("colorWeak")(colorWeak.get.asInstanceOf[js.Any])
     if (contentWidth != null) __obj.updateDynamic("contentWidth")(contentWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixSiderbar)) __obj.updateDynamic("fixSiderbar")(fixSiderbar.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixSiderbar)) __obj.updateDynamic("fixSiderbar")(fixSiderbar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader.get.asInstanceOf[js.Any])
     if (iconfontUrl != null) __obj.updateDynamic("iconfontUrl")(iconfontUrl.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])

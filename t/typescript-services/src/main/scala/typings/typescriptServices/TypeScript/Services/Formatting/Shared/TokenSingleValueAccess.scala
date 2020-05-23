@@ -5,14 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.Services.Formatting.Shared.TokenSingleValueAccess")
-@js.native
-class TokenSingleValueAccess protected () extends ITokenAccess {
-  def this(token: SyntaxKind) = this()
-  var token: SyntaxKind = js.native
-  /* CompleteClass */
-  override def Contains(token: SyntaxKind): Boolean = js.native
-  /* CompleteClass */
-  override def GetTokens(): js.Array[SyntaxKind] = js.native
+trait TokenSingleValueAccess extends ITokenAccess {
+  var token: SyntaxKind
+}
+
+object TokenSingleValueAccess {
+  @scala.inline
+  def apply(Contains: SyntaxKind => Boolean, GetTokens: () => js.Array[SyntaxKind], token: SyntaxKind): TokenSingleValueAccess = {
+    val __obj = js.Dynamic.literal(Contains = js.Any.fromFunction1(Contains), GetTokens = js.Any.fromFunction0(GetTokens), token = token.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TokenSingleValueAccess]
+  }
 }
 

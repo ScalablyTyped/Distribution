@@ -40,7 +40,7 @@ object ObjectLayerConfig {
   def apply(
     name: String = null,
     objects: js.Array[_] = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     properties: js.Any = null,
     propertytypes: js.Any = null,
     `type`: String = null,
@@ -49,11 +49,11 @@ object ObjectLayerConfig {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (objects != null) __obj.updateDynamic("objects")(objects.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (propertytypes != null) __obj.updateDynamic("propertytypes")(propertytypes.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectLayerConfig]
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo-asset
 
-Typings are for version 8.1.4
+Typings are for version 8.1.5
 
 ## Library description:
 An Expo universal module to download assets and pass them into other APIs

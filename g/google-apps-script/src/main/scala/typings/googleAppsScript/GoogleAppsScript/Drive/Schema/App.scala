@@ -60,13 +60,13 @@ object App {
     useByDefault: js.UndefOr[Boolean] = js.undefined
   ): App = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(authorized)) __obj.updateDynamic("authorized")(authorized.asInstanceOf[js.Any])
+    if (!js.isUndefined(authorized)) __obj.updateDynamic("authorized")(authorized.get.asInstanceOf[js.Any])
     if (createInFolderTemplate != null) __obj.updateDynamic("createInFolderTemplate")(createInFolderTemplate.asInstanceOf[js.Any])
     if (createUrl != null) __obj.updateDynamic("createUrl")(createUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasDriveWideScope)) __obj.updateDynamic("hasDriveWideScope")(hasDriveWideScope.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasDriveWideScope)) __obj.updateDynamic("hasDriveWideScope")(hasDriveWideScope.get.asInstanceOf[js.Any])
     if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(installed)) __obj.updateDynamic("installed")(installed.asInstanceOf[js.Any])
+    if (!js.isUndefined(installed)) __obj.updateDynamic("installed")(installed.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (longDescription != null) __obj.updateDynamic("longDescription")(longDescription.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
@@ -79,11 +79,11 @@ object App {
     if (secondaryFileExtensions != null) __obj.updateDynamic("secondaryFileExtensions")(secondaryFileExtensions.asInstanceOf[js.Any])
     if (secondaryMimeTypes != null) __obj.updateDynamic("secondaryMimeTypes")(secondaryMimeTypes.asInstanceOf[js.Any])
     if (shortDescription != null) __obj.updateDynamic("shortDescription")(shortDescription.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsCreate)) __obj.updateDynamic("supportsCreate")(supportsCreate.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsImport)) __obj.updateDynamic("supportsImport")(supportsImport.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsMultiOpen)) __obj.updateDynamic("supportsMultiOpen")(supportsMultiOpen.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsOfflineCreate)) __obj.updateDynamic("supportsOfflineCreate")(supportsOfflineCreate.asInstanceOf[js.Any])
-    if (!js.isUndefined(useByDefault)) __obj.updateDynamic("useByDefault")(useByDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsCreate)) __obj.updateDynamic("supportsCreate")(supportsCreate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsImport)) __obj.updateDynamic("supportsImport")(supportsImport.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsMultiOpen)) __obj.updateDynamic("supportsMultiOpen")(supportsMultiOpen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsOfflineCreate)) __obj.updateDynamic("supportsOfflineCreate")(supportsOfflineCreate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useByDefault)) __obj.updateDynamic("useByDefault")(useByDefault.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[App]
   }
 }

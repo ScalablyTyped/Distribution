@@ -1,6 +1,5 @@
 package typings.yui
 
-import org.scalablytyped.runtime.TopLevel
 import typings.yui.Y.IConfig
 import typings.yui.YUITest.IAssert
 import typings.yui.YUITest.YUITestStatic
@@ -95,8 +94,4 @@ trait YUI extends js.Object {
     merge: Boolean
   ): js.Any = js.native
 }
-
-@JSGlobal("YUI")
-@js.native
-object YUI extends TopLevel[YUI]
 

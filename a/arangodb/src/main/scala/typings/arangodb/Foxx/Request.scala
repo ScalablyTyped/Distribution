@@ -1,9 +1,9 @@
 package typings.arangodb.Foxx
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.arangodb.AnonAlgorithm
-import typings.arangodb.AnonBasic
 import typings.arangodb.ArangoDB.HttpMethod
+import typings.arangodb.anon.Algorithm
+import typings.arangodb.anon.Basic
 import typings.arangodb.arangodbBooleans.`false`
 import typings.node.Buffer
 import scala.scalajs.js
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 trait Request extends js.Object {
   var arangoUser: String | Null = js.native
   var arangoVersion: Double = js.native
-  var auth: Null | AnonBasic = js.native
+  var auth: Null | Basic = js.native
   var baseUrl: String = js.native
   var body: js.Any = js.native
   var context: Context = js.native
@@ -48,7 +48,7 @@ trait Request extends js.Object {
   def acceptsLanguages(languages: String*): String | `false` = js.native
   def acceptsLanguages(languages: js.Array[String]): String | `false` = js.native
   def cookie(name: String): String | Null = js.native
-  def cookie(name: String, options: AnonAlgorithm): String | Null = js.native
+  def cookie(name: String, options: Algorithm): String | Null = js.native
   def get(name: String): js.UndefOr[String] = js.native
   def header(name: String): js.UndefOr[String] = js.native
   def is(types: String*): String = js.native

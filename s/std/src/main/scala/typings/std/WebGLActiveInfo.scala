@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +11,12 @@ trait WebGLActiveInfo extends js.Object {
   val `type`: GLenum
 }
 
-@JSGlobal("WebGLActiveInfo")
-@js.native
-object WebGLActiveInfo extends Instantiable0[WebGLActiveInfo]
+object WebGLActiveInfo {
+  @scala.inline
+  def apply(name: java.lang.String, size: GLint, `type`: GLenum): WebGLActiveInfo = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebGLActiveInfo]
+  }
+}
 

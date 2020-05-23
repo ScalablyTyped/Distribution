@@ -1,7 +1,7 @@
 package typings.reactCalendarTimeline.mod
 
-import typings.reactCalendarTimeline.AnonCollisionLeft
-import typings.reactCalendarTimeline.AnonX
+import typings.reactCalendarTimeline.anon.CollisionLeft
+import typings.reactCalendarTimeline.anon.X
 import typings.reactCalendarTimeline.reactCalendarTimelineStrings.left
 import typings.reactCalendarTimeline.reactCalendarTimelineStrings.right
 import scala.scalajs.js
@@ -12,9 +12,9 @@ trait ItemContext extends js.Object {
   var canMove: Boolean
   var canResizeLeft: Boolean
   var canResizeRight: Boolean
-  var dimensions: AnonCollisionLeft
+  var dimensions: CollisionLeft
   var dragGroupDelta: Double
-  var dragStart: AnonX
+  var dragStart: X
   var dragTime: Double
   var dragging: Boolean
   var resizeEdge: left | right
@@ -33,9 +33,9 @@ object ItemContext {
     canMove: Boolean,
     canResizeLeft: Boolean,
     canResizeRight: Boolean,
-    dimensions: AnonCollisionLeft,
+    dimensions: CollisionLeft,
     dragGroupDelta: Double,
-    dragStart: AnonX,
+    dragStart: X,
     dragTime: Double,
     dragging: Boolean,
     resizeEdge: left | right,

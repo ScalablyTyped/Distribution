@@ -14,9 +14,9 @@ trait LoggerOptions extends js.Object {
 
 object LoggerOptions {
   @scala.inline
-  def apply(charsAroundDiff: Int | Double = null): LoggerOptions = {
+  def apply(charsAroundDiff: js.UndefOr[Double] = js.undefined): LoggerOptions = {
     val __obj = js.Dynamic.literal()
-    if (charsAroundDiff != null) __obj.updateDynamic("charsAroundDiff")(charsAroundDiff.asInstanceOf[js.Any])
+    if (!js.isUndefined(charsAroundDiff)) __obj.updateDynamic("charsAroundDiff")(charsAroundDiff.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggerOptions]
   }
 }

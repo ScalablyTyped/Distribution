@@ -1,7 +1,7 @@
 package typings.shopifyPrime.priceRuleMod
 
-import typings.shopifyPrime.AnonGreaterthanorequalto
-import typings.shopifyPrime.AnonLessthanorequalto
+import typings.shopifyPrime.anon.Greaterthanorequalto
+import typings.shopifyPrime.anon.Lessthanorequalto
 import typings.shopifyPrime.baseMod.ShopifyObject
 import typings.shopifyPrime.shopifyPrimeStrings.across
 import typings.shopifyPrime.shopifyPrimeStrings.all
@@ -71,11 +71,11 @@ trait PriceRule extends ShopifyObject {
   /**
     * Prerequisite shipping cost range.Can only be used when target_type is shipping_line.
     */
-  var prerequisite_shipping_price_range: js.UndefOr[AnonLessthanorequalto] = js.undefined
+  var prerequisite_shipping_price_range: js.UndefOr[Lessthanorequalto] = js.undefined
   /**
     * Prerequisite cart subtotal range.
     */
-  var prerequisite_subtotal_range: js.UndefOr[AnonGreaterthanorequalto] = js.undefined
+  var prerequisite_subtotal_range: js.UndefOr[Greaterthanorequalto] = js.undefined
   /**
     * The date and time when the price rule starts.
     */
@@ -131,12 +131,12 @@ object PriceRule {
     entitled_country_ids: js.Array[Double] = null,
     entitled_product_ids: js.Array[Double] = null,
     entitled_variant_ids: js.Array[Double] = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     prerequisite_saved_search_ids: js.Array[Double] = null,
-    prerequisite_shipping_price_range: AnonLessthanorequalto = null,
-    prerequisite_subtotal_range: AnonGreaterthanorequalto = null,
+    prerequisite_shipping_price_range: Lessthanorequalto = null,
+    prerequisite_subtotal_range: Greaterthanorequalto = null,
     updated_at: String = null,
-    usage_limit: Int | Double = null
+    usage_limit: js.UndefOr[Double] = js.undefined
   ): PriceRule = {
     val __obj = js.Dynamic.literal(allocation_method = allocation_method.asInstanceOf[js.Any], customer_selection = customer_selection.asInstanceOf[js.Any], once_per_customer = once_per_customer.asInstanceOf[js.Any], starts_at = starts_at.asInstanceOf[js.Any], target_selection = target_selection.asInstanceOf[js.Any], target_type = target_type.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], value_type = value_type.asInstanceOf[js.Any])
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
@@ -146,12 +146,12 @@ object PriceRule {
     if (entitled_country_ids != null) __obj.updateDynamic("entitled_country_ids")(entitled_country_ids.asInstanceOf[js.Any])
     if (entitled_product_ids != null) __obj.updateDynamic("entitled_product_ids")(entitled_product_ids.asInstanceOf[js.Any])
     if (entitled_variant_ids != null) __obj.updateDynamic("entitled_variant_ids")(entitled_variant_ids.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (prerequisite_saved_search_ids != null) __obj.updateDynamic("prerequisite_saved_search_ids")(prerequisite_saved_search_ids.asInstanceOf[js.Any])
     if (prerequisite_shipping_price_range != null) __obj.updateDynamic("prerequisite_shipping_price_range")(prerequisite_shipping_price_range.asInstanceOf[js.Any])
     if (prerequisite_subtotal_range != null) __obj.updateDynamic("prerequisite_subtotal_range")(prerequisite_subtotal_range.asInstanceOf[js.Any])
     if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
-    if (usage_limit != null) __obj.updateDynamic("usage_limit")(usage_limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(usage_limit)) __obj.updateDynamic("usage_limit")(usage_limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PriceRule]
   }
 }

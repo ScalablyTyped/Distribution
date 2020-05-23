@@ -17,16 +17,16 @@ trait CacheOptions extends js.Object {
 object CacheOptions {
   @scala.inline
   def apply(
-    defaultTtl: Int | Double = null,
+    defaultTtl: js.UndefOr[Double] = js.undefined,
     resource: String = null,
     scope: global | application | exclusive = null,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): CacheOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultTtl != null) __obj.updateDynamic("defaultTtl")(defaultTtl.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultTtl)) __obj.updateDynamic("defaultTtl")(defaultTtl.get.asInstanceOf[js.Any])
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheOptions]
   }
 }

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.WiFi
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,29 +38,6 @@ object WiFiConnectionStatus extends js.Object {
   /** Connection failed because the authentication protocol is not supported. */
   @js.native
   sealed trait unsupportedAuthenticationProtocol extends WiFiConnectionStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WiFiConnectionStatus with Double] = js.native
-  /* 2 */ @js.native
-  object accessRevoked extends TopLevel[accessRevoked with Double]
-  
-  /* 3 */ @js.native
-  object invalidCredential extends TopLevel[invalidCredential with Double]
-  
-  /* 4 */ @js.native
-  object networkNotAvailable extends TopLevel[networkNotAvailable with Double]
-  
-  /* 1 */ @js.native
-  object success extends TopLevel[success with Double]
-  
-  /* 5 */ @js.native
-  object timeout extends TopLevel[timeout with Double]
-  
-  /* 0 */ @js.native
-  object unspecifiedFailure extends TopLevel[unspecifiedFailure with Double]
-  
-  /* 6 */ @js.native
-  object unsupportedAuthenticationProtocol extends TopLevel[unsupportedAuthenticationProtocol with Double]
   
 }
 

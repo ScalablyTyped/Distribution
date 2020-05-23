@@ -21,8 +21,8 @@ object ReactToggledProps {
     onToggle: (/* on */ Boolean, /* object */ TogglerStateAndHelpers) => Unit = null
   ): ReactToggledProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-    if (!js.isUndefined(defaultOn)) __obj.updateDynamic("defaultOn")(defaultOn.asInstanceOf[js.Any])
-    if (!js.isUndefined(on)) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultOn)) __obj.updateDynamic("defaultOn")(defaultOn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(on)) __obj.updateDynamic("on")(on.get.asInstanceOf[js.Any])
     if (onToggle != null) __obj.updateDynamic("onToggle")(js.Any.fromFunction2(onToggle))
     __obj.asInstanceOf[ReactToggledProps]
   }

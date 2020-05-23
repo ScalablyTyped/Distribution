@@ -30,11 +30,11 @@ object FetchOptions {
   ): FetchOptions[T] = {
     val __obj = js.Dynamic.literal()
     if (debugLabel != null) __obj.updateDynamic("debugLabel")(debugLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.asInstanceOf[js.Any])
+    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.get.asInstanceOf[js.Any])
     if (deferFn != null) __obj.updateDynamic("deferFn")(js.Any.fromFunction3(deferFn))
     if (dispatcher != null) __obj.updateDynamic("dispatcher")(js.Any.fromFunction3(dispatcher))
     if (initialValue != null) __obj.updateDynamic("initialValue")(initialValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
+    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.get.asInstanceOf[js.Any])
     if (onReject != null) __obj.updateDynamic("onReject")(js.Any.fromFunction1(onReject))
     if (onResolve != null) __obj.updateDynamic("onResolve")(js.Any.fromFunction1(onResolve))
     if (promise != null) __obj.updateDynamic("promise")(promise.asInstanceOf[js.Any])

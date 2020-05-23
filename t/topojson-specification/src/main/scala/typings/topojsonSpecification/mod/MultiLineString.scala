@@ -15,7 +15,7 @@ trait MultiLineString[P /* <: Properties */]
 
 object MultiLineString {
   @scala.inline
-  def apply[P /* <: Properties */](
+  def apply[P](
     arcs: js.Array[ArcIndexes],
     `type`: typings.topojsonSpecification.topojsonSpecificationStrings.MultiLineString,
     bbox: BBox = null,

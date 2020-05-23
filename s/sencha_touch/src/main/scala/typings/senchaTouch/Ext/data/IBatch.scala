@@ -9,24 +9,24 @@ import scala.scalajs.js.annotation._
 
 trait IBatch extends IObservable {
   /** [Method] Adds a new operation to this batch
-  		* @param operation Object The Operation object.
-  		*/
+    * @param operation Object The Operation object.
+    */
   var add: js.UndefOr[js.Function1[/* operation */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Boolean) */
   var autoStart: js.UndefOr[Boolean] = js.undefined
   /** [Property] (Number) */
   var current: js.UndefOr[Double] = js.undefined
   /** [Method] Returns the value of autoStart
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getAutoStart: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of pauseOnException
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getPauseOnException: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of proxy
-  		* @returns Ext.data.Proxy
-  		*/
+    * @returns Ext.data.Proxy
+    */
   var getProxy: js.UndefOr[js.Function0[IProxy]] = js.undefined
   /** [Property] (Boolean) */
   var hasException: js.UndefOr[Boolean] = js.undefined
@@ -43,29 +43,29 @@ trait IBatch extends IObservable {
   /** [Config Option] (Ext.data.Proxy) */
   var proxy: js.UndefOr[IProxy] = js.undefined
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
-  		* @param object Object The Observable whose events this object is to relay.
-  		* @param events String/Array/Object Array of event names to relay.
-  		* @returns Ext.mixin.Observable this
-  		*/
+    * @param object Object The Observable whose events this object is to relay.
+    * @param events String/Array/Object Array of event names to relay.
+    * @returns Ext.mixin.Observable this
+    */
   @JSName("relayEvents")
   var relayEvents_IBatch: js.UndefOr[
     js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
   ] = js.undefined
   /** [Method] Executes a operation by its numeric index
-  		* @param index Number The operation index to run.
-  		*/
+    * @param index Number The operation index to run.
+    */
   var runOperation: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of autoStart
-  		* @param autoStart Boolean The new value.
-  		*/
+    * @param autoStart Boolean The new value.
+    */
   var setAutoStart: js.UndefOr[js.Function1[/* autoStart */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of pauseOnException
-  		* @param pauseOnException Boolean The new value.
-  		*/
+    * @param pauseOnException Boolean The new value.
+    */
   var setPauseOnException: js.UndefOr[js.Function1[/* pauseOnException */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of proxy
-  		* @param proxy Ext.data.Proxy The new value.
-  		*/
+    * @param proxy Ext.data.Proxy The new value.
+    */
   var setProxy: js.UndefOr[js.Function1[/* proxy */ js.UndefOr[IProxy], Unit]] = js.undefined
   /** [Method] Kicks off the execution of the batch continuing from the next operation if the previous operation encountered an exc  */
   var start: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -91,7 +91,7 @@ object IBatch {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     clearListeners: () => Unit = null,
     config: js.Any = null,
-    current: Int | Double = null,
+    current: js.UndefOr[Double] = js.undefined,
     destroy: () => Unit = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
     extend: String = null,
@@ -139,7 +139,7 @@ object IBatch {
     start: () => Unit = null,
     statics: js.Any = null,
     suspendEvents: () => Unit = null,
-    total: Int | Double = null,
+    total: js.UndefOr[Double] = js.undefined,
     un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
@@ -154,14 +154,14 @@ object IBatch {
     if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5(addManagedListener))
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.get.asInstanceOf[js.Any])
     if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents.asInstanceOf[js.Any])
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
     if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
     if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
+    if (!js.isUndefined(current)) __obj.updateDynamic("current")(current.get.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
@@ -174,12 +174,12 @@ object IBatch {
     if (getListeners != null) __obj.updateDynamic("getListeners")(js.Any.fromFunction0(getListeners))
     if (getPauseOnException != null) __obj.updateDynamic("getPauseOnException")(js.Any.fromFunction0(getPauseOnException))
     if (getProxy != null) __obj.updateDynamic("getProxy")(js.Any.fromFunction0(getProxy))
-    if (!js.isUndefined(hasException)) __obj.updateDynamic("hasException")(hasException.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasException)) __obj.updateDynamic("hasException")(hasException.get.asInstanceOf[js.Any])
     if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(isComplete)) __obj.updateDynamic("isComplete")(isComplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRunning)) __obj.updateDynamic("isRunning")(isRunning.asInstanceOf[js.Any])
+    if (!js.isUndefined(isComplete)) __obj.updateDynamic("isComplete")(isComplete.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRunning)) __obj.updateDynamic("isRunning")(isRunning.get.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
@@ -189,7 +189,7 @@ object IBatch {
     if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4(onBefore))
     if (operations != null) __obj.updateDynamic("operations")(operations.asInstanceOf[js.Any])
     if (pause != null) __obj.updateDynamic("pause")(js.Any.fromFunction0(pause))
-    if (!js.isUndefined(pauseOnException)) __obj.updateDynamic("pauseOnException")(pauseOnException.asInstanceOf[js.Any])
+    if (!js.isUndefined(pauseOnException)) __obj.updateDynamic("pauseOnException")(pauseOnException.get.asInstanceOf[js.Any])
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction2(relayEvents))
@@ -205,11 +205,11 @@ object IBatch {
     if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
     if (setPauseOnException != null) __obj.updateDynamic("setPauseOnException")(js.Any.fromFunction1(setPauseOnException))
     if (setProxy != null) __obj.updateDynamic("setProxy")(js.Any.fromFunction1(setProxy))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction0(start))
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total.get.asInstanceOf[js.Any])
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
     if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
     if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))

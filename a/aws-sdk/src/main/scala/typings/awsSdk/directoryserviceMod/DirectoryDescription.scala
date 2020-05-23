@@ -111,7 +111,7 @@ object DirectoryDescription {
     Alias: AliasName = null,
     ConnectSettings: DirectoryConnectSettingsDescription = null,
     Description: Description = null,
-    DesiredNumberOfDomainControllers: Int | Double = null,
+    DesiredNumberOfDomainControllers: js.UndefOr[DesiredNumberOfDomainControllers] = js.undefined,
     DirectoryId: DirectoryId = null,
     DnsIpAddrs: DnsIpAddrs = null,
     Edition: DirectoryEdition = null,
@@ -125,7 +125,7 @@ object DirectoryDescription {
     ShareStatus: ShareStatus = null,
     ShortName: DirectoryShortName = null,
     Size: DirectorySize = null,
-    SsoEnabled: js.UndefOr[Boolean] = js.undefined,
+    SsoEnabled: js.UndefOr[SsoEnabled] = js.undefined,
     Stage: DirectoryStage = null,
     StageLastUpdatedDateTime: LastUpdatedDateTime = null,
     StageReason: StageReason = null,
@@ -137,7 +137,7 @@ object DirectoryDescription {
     if (Alias != null) __obj.updateDynamic("Alias")(Alias.asInstanceOf[js.Any])
     if (ConnectSettings != null) __obj.updateDynamic("ConnectSettings")(ConnectSettings.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (DesiredNumberOfDomainControllers != null) __obj.updateDynamic("DesiredNumberOfDomainControllers")(DesiredNumberOfDomainControllers.asInstanceOf[js.Any])
+    if (!js.isUndefined(DesiredNumberOfDomainControllers)) __obj.updateDynamic("DesiredNumberOfDomainControllers")(DesiredNumberOfDomainControllers.get.asInstanceOf[js.Any])
     if (DirectoryId != null) __obj.updateDynamic("DirectoryId")(DirectoryId.asInstanceOf[js.Any])
     if (DnsIpAddrs != null) __obj.updateDynamic("DnsIpAddrs")(DnsIpAddrs.asInstanceOf[js.Any])
     if (Edition != null) __obj.updateDynamic("Edition")(Edition.asInstanceOf[js.Any])
@@ -151,7 +151,7 @@ object DirectoryDescription {
     if (ShareStatus != null) __obj.updateDynamic("ShareStatus")(ShareStatus.asInstanceOf[js.Any])
     if (ShortName != null) __obj.updateDynamic("ShortName")(ShortName.asInstanceOf[js.Any])
     if (Size != null) __obj.updateDynamic("Size")(Size.asInstanceOf[js.Any])
-    if (!js.isUndefined(SsoEnabled)) __obj.updateDynamic("SsoEnabled")(SsoEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(SsoEnabled)) __obj.updateDynamic("SsoEnabled")(SsoEnabled.get.asInstanceOf[js.Any])
     if (Stage != null) __obj.updateDynamic("Stage")(Stage.asInstanceOf[js.Any])
     if (StageLastUpdatedDateTime != null) __obj.updateDynamic("StageLastUpdatedDateTime")(StageLastUpdatedDateTime.asInstanceOf[js.Any])
     if (StageReason != null) __obj.updateDynamic("StageReason")(StageReason.asInstanceOf[js.Any])

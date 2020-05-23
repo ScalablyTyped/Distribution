@@ -52,8 +52,8 @@ object SettingType {
     output: (/* item */ TItem, /* trigger */ js.UndefOr[String]) => TextToReplaceType | String = null
   ): SettingType[TItem] = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], dataProvider = js.Any.fromFunction1(dataProvider))
-    if (!js.isUndefined(afterWhitespace)) __obj.updateDynamic("afterWhitespace")(afterWhitespace.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowWhitespace)) __obj.updateDynamic("allowWhitespace")(allowWhitespace.asInstanceOf[js.Any])
+    if (!js.isUndefined(afterWhitespace)) __obj.updateDynamic("afterWhitespace")(afterWhitespace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowWhitespace)) __obj.updateDynamic("allowWhitespace")(allowWhitespace.get.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(js.Any.fromFunction2(output))
     __obj.asInstanceOf[SettingType[TItem]]
   }

@@ -29,6 +29,8 @@ trait Options extends js.Object {
     */
   var once: js.UndefOr[Boolean] = js.undefined
   /**
+    * This designates anything inside parentheses, which includes standard functions,but also Sass maps and other non-standard constructs.
+    * `parentheticals` is a broader category than `functionArguments`
     * @default 'check'
     */
   var parentheticals: js.UndefOr[SyntaxFeatureOption] = js.undefined
@@ -65,7 +67,7 @@ object Options {
     if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
     if (functionArguments != null) __obj.updateDynamic("functionArguments")(functionArguments.asInstanceOf[js.Any])
     if (functionNames != null) __obj.updateDynamic("functionNames")(functionNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.asInstanceOf[js.Any])
+    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.get.asInstanceOf[js.Any])
     if (parentheticals != null) __obj.updateDynamic("parentheticals")(parentheticals.asInstanceOf[js.Any])
     if (strings != null) __obj.updateDynamic("strings")(strings.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

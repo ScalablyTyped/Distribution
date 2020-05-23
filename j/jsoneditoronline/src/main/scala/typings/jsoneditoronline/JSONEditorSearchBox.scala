@@ -1,23 +1,37 @@
 package typings.jsoneditoronline
 
-import typings.std.Event_
-import typings.std.HTMLElement
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("JSONEditorSearchBox")
-@js.native
-class JSONEditorSearchBox protected () extends js.Object {
-  def this(editor: JSONEditor, container: HTMLElement) = this()
-  def clearDelay(): Unit = js.native
-  def focusActiveResult(): Unit = js.native
-  def next(): Unit = js.native
-  def onDelayedSearch(event: Event_): Unit = js.native
-  def onKeyDown(event: Event_): Unit = js.native
-  def onKeyUp(event: Event_): Unit = js.native
-  def onSearch(event: Event_, forcedSearch: Boolean): Unit = js.native
-  def previous(): Unit = js.native
-  def setActiveResult(index: Double): Unit = js.native
+trait JSONEditorSearchBox extends js.Object {
+  def clearDelay(): Unit
+  def focusActiveResult(): Unit
+  def next(): Unit
+  def onDelayedSearch(event: Event): Unit
+  def onKeyDown(event: Event): Unit
+  def onKeyUp(event: Event): Unit
+  def onSearch(event: Event, forcedSearch: Boolean): Unit
+  def previous(): Unit
+  def setActiveResult(index: Double): Unit
+}
+
+object JSONEditorSearchBox {
+  @scala.inline
+  def apply(
+    clearDelay: () => Unit,
+    focusActiveResult: () => Unit,
+    next: () => Unit,
+    onDelayedSearch: Event => Unit,
+    onKeyDown: Event => Unit,
+    onKeyUp: Event => Unit,
+    onSearch: (Event, Boolean) => Unit,
+    previous: () => Unit,
+    setActiveResult: Double => Unit
+  ): JSONEditorSearchBox = {
+    val __obj = js.Dynamic.literal(clearDelay = js.Any.fromFunction0(clearDelay), focusActiveResult = js.Any.fromFunction0(focusActiveResult), next = js.Any.fromFunction0(next), onDelayedSearch = js.Any.fromFunction1(onDelayedSearch), onKeyDown = js.Any.fromFunction1(onKeyDown), onKeyUp = js.Any.fromFunction1(onKeyUp), onSearch = js.Any.fromFunction2(onSearch), previous = js.Any.fromFunction0(previous), setActiveResult = js.Any.fromFunction1(setActiveResult))
+    __obj.asInstanceOf[JSONEditorSearchBox]
+  }
 }
 

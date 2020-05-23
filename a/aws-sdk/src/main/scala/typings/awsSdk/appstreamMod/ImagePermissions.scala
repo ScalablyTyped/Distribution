@@ -19,12 +19,12 @@ trait ImagePermissions extends js.Object {
 object ImagePermissions {
   @scala.inline
   def apply(
-    allowFleet: js.UndefOr[scala.Boolean] = js.undefined,
-    allowImageBuilder: js.UndefOr[scala.Boolean] = js.undefined
+    allowFleet: js.UndefOr[BooleanObject] = js.undefined,
+    allowImageBuilder: js.UndefOr[BooleanObject] = js.undefined
   ): ImagePermissions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowFleet)) __obj.updateDynamic("allowFleet")(allowFleet.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowImageBuilder)) __obj.updateDynamic("allowImageBuilder")(allowImageBuilder.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFleet)) __obj.updateDynamic("allowFleet")(allowFleet.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowImageBuilder)) __obj.updateDynamic("allowImageBuilder")(allowImageBuilder.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImagePermissions]
   }
 }

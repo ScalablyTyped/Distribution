@@ -13,7 +13,6 @@ import scala.scalajs.js.annotation._
 /**
   *
   * Represents a collection of all the rows that are part of the table.
-  
   Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
   a TableRow object represent the physical location of the table row, but not the data.
   That is, if the data is sorted or if new rows are added, a table row will continue
@@ -21,15 +20,14 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
-@JSGlobal("Excel.TableRowCollection")
 @js.native
-class TableRowCollection () extends ClientObject {
+trait TableRowCollection extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_TableRowCollection: RequestContext = js.native
   /**
     *
-    * Returns the number of rows in the table. Read-only.
+    * Returns the number of rows in the table.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -38,7 +36,6 @@ class TableRowCollection () extends ClientObject {
   val items: js.Array[TableRow] = js.native
   /**
     * Adds one or more rows to the table. The return object will be the top of the newly added row(s).
-    
     Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
     a TableRow object represent the physical location of the table row, but not the data.
     That is, if the data is sorted or if new rows are added, a table row will continue
@@ -63,7 +60,6 @@ class TableRowCollection () extends ClientObject {
   def getCount(): ClientResult[Double] = js.native
   /**
     * Gets a row based on its position in the collection.
-    
     Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
     a TableRow object represent the physical location of the table row, but not the data.
     That is, if the data is sorted or if new rows are added, a table row will continue

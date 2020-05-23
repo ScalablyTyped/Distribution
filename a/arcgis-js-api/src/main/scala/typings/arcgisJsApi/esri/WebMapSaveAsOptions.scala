@@ -32,7 +32,7 @@ object WebMapSaveAsOptions {
   ): WebMapSaveAsOptions = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (folder != null) __obj.updateDynamic("folder")(folder.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUnsupported)) __obj.updateDynamic("ignoreUnsupported")(ignoreUnsupported.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUnsupported)) __obj.updateDynamic("ignoreUnsupported")(ignoreUnsupported.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebMapSaveAsOptions]
   }
 }

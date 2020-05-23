@@ -36,7 +36,7 @@ object AuthOptions {
     accessUrl: String = null,
     clientId: String = null,
     clientSecret: String = null,
-    expires: Int | Double = null,
+    expires: js.UndefOr[Double] = js.undefined,
     pass: String = null,
     privateKey: String = null,
     refreshToken: String = null,
@@ -49,7 +49,7 @@ object AuthOptions {
     if (accessUrl != null) __obj.updateDynamic("accessUrl")(accessUrl.asInstanceOf[js.Any])
     if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
     if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret.asInstanceOf[js.Any])
-    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    if (!js.isUndefined(expires)) __obj.updateDynamic("expires")(expires.get.asInstanceOf[js.Any])
     if (pass != null) __obj.updateDynamic("pass")(pass.asInstanceOf[js.Any])
     if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
     if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken.asInstanceOf[js.Any])

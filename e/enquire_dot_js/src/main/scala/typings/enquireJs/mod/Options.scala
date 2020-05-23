@@ -37,7 +37,7 @@ object Options {
     unmatch: () => Unit = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deferSetup)) __obj.updateDynamic("deferSetup")(deferSetup.asInstanceOf[js.Any])
+    if (!js.isUndefined(deferSetup)) __obj.updateDynamic("deferSetup")(deferSetup.get.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (`match` != null) __obj.updateDynamic("match")(js.Any.fromFunction0(`match`))
     if (setup != null) __obj.updateDynamic("setup")(js.Any.fromFunction0(setup))

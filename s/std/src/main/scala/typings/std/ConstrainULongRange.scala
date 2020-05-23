@@ -12,16 +12,16 @@ trait ConstrainULongRange extends ULongRange {
 object ConstrainULongRange {
   @scala.inline
   def apply(
-    exact: Int | Double = null,
-    ideal: Int | Double = null,
-    max: Int | Double = null,
-    min: Int | Double = null
+    exact: js.UndefOr[Double] = js.undefined,
+    ideal: js.UndefOr[Double] = js.undefined,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined
   ): ConstrainULongRange = {
     val __obj = js.Dynamic.literal()
-    if (exact != null) __obj.updateDynamic("exact")(exact.asInstanceOf[js.Any])
-    if (ideal != null) __obj.updateDynamic("ideal")(ideal.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ideal)) __obj.updateDynamic("ideal")(ideal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstrainULongRange]
   }
 }

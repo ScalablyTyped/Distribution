@@ -26,7 +26,7 @@ import typings.agGrid.iDatasourceMod.IDatasource
 import typings.agGrid.iServerSideDatasourceMod.IServerSideDatasource
 import typings.agGrid.iViewportDatasourceMod.IViewportDatasource
 import typings.agGrid.rowNodeMod.RowNode
-import typings.std.Document_
+import typings.std.Document
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.Node
@@ -89,7 +89,7 @@ class GridOptionsWrapper () extends js.Object {
   def getDefaultExportParams(): BaseExportParams = js.native
   def getDefaultGroupSortComparator(): js.Function2[/* nodeA */ RowNode, /* nodeB */ RowNode, Double] = js.native
   /* private */ def getDefaultRowHeight(): js.Any = js.native
-  def getDocument(): Document_ = js.native
+  def getDocument(): Document = js.native
   def getDoesDataFlowerFunc(): js.Function1[/* data */ js.Any, Boolean] = js.native
   def getDomData(element: Node, key: String): js.Any = js.native
   def getFloatingFiltersHeight(): Double = js.native

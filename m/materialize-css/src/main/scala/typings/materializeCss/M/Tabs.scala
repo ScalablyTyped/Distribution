@@ -1,47 +1,38 @@
 package typings.materializeCss.M
 
-import typings.materializeCss.MElements
-import typings.materializeCss.PartialTabsOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("M.Tabs")
-@js.native
-class Tabs () extends Component[TabsOptions] {
+trait Tabs extends Component[TabsOptions] {
   /**
     * The index of tab that is currently shown
     */
-  var index: Double = js.native
+  var index: Double
   /**
     * Show tab content that corresponds to the tab with the id
     * @param tabId The id of the tab that you want to switch to
     */
-  def select(tabId: String): Unit = js.native
+  def select(tabId: String): Unit
   /**
     * Recalculate tab indicator position. This is useful when the indicator position is not correct
     */
-  def updateTabIndicator(): Unit = js.native
+  def updateTabIndicator(): Unit
 }
 
-/* static members */
-@JSGlobal("M.Tabs")
-@js.native
-object Tabs extends js.Object {
-  /**
-    * Get Instance
-    */
-  def getInstance(elem: Element): Tabs = js.native
-  /**
-    * Init Tabses
-    */
-  def init(els: MElements): js.Array[Tabs] = js.native
-  def init(els: MElements, options: PartialTabsOptions): js.Array[Tabs] = js.native
-  /**
-    * Init Tabs
-    */
-  def init(els: Element): Tabs = js.native
-  def init(els: Element, options: PartialTabsOptions): Tabs = js.native
+object Tabs {
+  @scala.inline
+  def apply(
+    destroy: () => Unit,
+    el: Element,
+    index: Double,
+    options: TabsOptions,
+    select: String => Unit,
+    updateTabIndicator: () => Unit
+  ): Tabs = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), el = el.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], select = js.Any.fromFunction1(select), updateTabIndicator = js.Any.fromFunction0(updateTabIndicator))
+    __obj.asInstanceOf[Tabs]
+  }
 }
 

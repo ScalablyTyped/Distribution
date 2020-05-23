@@ -22,20 +22,20 @@ trait DeviceOperatingSystemSummary extends js.Object {
 object DeviceOperatingSystemSummary {
   @scala.inline
   def apply(
-    androidCount: Int | Double = null,
-    iosCount: Int | Double = null,
-    macOSCount: Int | Double = null,
-    unknownCount: Int | Double = null,
-    windowsCount: Int | Double = null,
-    windowsMobileCount: Int | Double = null
+    androidCount: js.UndefOr[Double] = js.undefined,
+    iosCount: js.UndefOr[Double] = js.undefined,
+    macOSCount: js.UndefOr[Double] = js.undefined,
+    unknownCount: js.UndefOr[Double] = js.undefined,
+    windowsCount: js.UndefOr[Double] = js.undefined,
+    windowsMobileCount: js.UndefOr[Double] = js.undefined
   ): DeviceOperatingSystemSummary = {
     val __obj = js.Dynamic.literal()
-    if (androidCount != null) __obj.updateDynamic("androidCount")(androidCount.asInstanceOf[js.Any])
-    if (iosCount != null) __obj.updateDynamic("iosCount")(iosCount.asInstanceOf[js.Any])
-    if (macOSCount != null) __obj.updateDynamic("macOSCount")(macOSCount.asInstanceOf[js.Any])
-    if (unknownCount != null) __obj.updateDynamic("unknownCount")(unknownCount.asInstanceOf[js.Any])
-    if (windowsCount != null) __obj.updateDynamic("windowsCount")(windowsCount.asInstanceOf[js.Any])
-    if (windowsMobileCount != null) __obj.updateDynamic("windowsMobileCount")(windowsMobileCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(androidCount)) __obj.updateDynamic("androidCount")(androidCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(iosCount)) __obj.updateDynamic("iosCount")(iosCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(macOSCount)) __obj.updateDynamic("macOSCount")(macOSCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unknownCount)) __obj.updateDynamic("unknownCount")(unknownCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowsCount)) __obj.updateDynamic("windowsCount")(windowsCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowsMobileCount)) __obj.updateDynamic("windowsMobileCount")(windowsMobileCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceOperatingSystemSummary]
   }
 }

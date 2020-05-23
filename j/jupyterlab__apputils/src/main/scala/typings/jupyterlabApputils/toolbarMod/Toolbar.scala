@@ -4,7 +4,7 @@ import typings.jupyterlabApputils.sessioncontextMod.ISessionContext
 import typings.jupyterlabApputils.sessioncontextMod.ISessionContext.IDialogs
 import typings.luminoAlgorithm.iterMod.IIterator
 import typings.luminoWidgets.mod.Widget
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +35,7 @@ class Toolbar[T /* <: Widget */] () extends Widget {
   /**
     * Handle a DOM click event.
     */
-  /* protected */ def handleClick(event: Event_): Unit = js.native
+  /* protected */ def handleClick(event: Event): Unit = js.native
   /**
     * Handle the DOM events for the widget.
     *
@@ -46,7 +46,7 @@ class Toolbar[T /* <: Widget */] () extends Widget {
     * called in response to events on the dock panel's node. It should
     * not be called directly by user code.
     */
-  def handleEvent(event: Event_): Unit = js.native
+  def handleEvent(event: Event): Unit = js.native
   /**
     * Insert an item into the toolbar at the after a target item.
     *

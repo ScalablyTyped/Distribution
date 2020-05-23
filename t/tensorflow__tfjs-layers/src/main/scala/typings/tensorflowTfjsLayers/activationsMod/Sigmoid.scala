@@ -1,6 +1,5 @@
 package typings.tensorflowTfjsLayers.activationsMod
 
-import typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.sigmoid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +13,6 @@ class Sigmoid () extends Activation
 @js.native
 object Sigmoid extends js.Object {
   /** @nocollapse */
-  val className: sigmoid = js.native
+  val className: /* "sigmoid" */ String = js.native
 }
 

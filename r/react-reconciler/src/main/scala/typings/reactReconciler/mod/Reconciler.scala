@@ -29,41 +29,15 @@ trait Reconciler[Instance, TextInstance, Container, PublicInstance] extends js.O
   def updateContainer(
     element: ReactNodeList,
     container: OpaqueRoot,
-    parentComponent: js.UndefOr[scala.Nothing],
-    callback: js.Function0[js.UndefOr[Unit | Null]]
-  ): ExpirationTime = js.native
-  def updateContainer(
-    element: ReactNodeList,
-    container: OpaqueRoot,
-    parentComponent: Null,
-    callback: js.Function0[js.UndefOr[Unit | Null]]
-  ): ExpirationTime = js.native
-  def updateContainer(
-    element: ReactNodeList,
-    container: OpaqueRoot,
-    parentComponent: Component[_, _, _],
-    callback: js.Function0[js.UndefOr[Unit | Null]]
+    parentComponent: js.UndefOr[(Component[_, _, _]) | Null],
+    callback: js.Function0[js.UndefOr[Null | Unit]]
   ): ExpirationTime = js.native
   def updateContainerAtExpirationTime(
     element: ReactNodeList,
     container: OpaqueRoot,
-    parentComponent: js.UndefOr[scala.Nothing],
+    parentComponent: js.UndefOr[(Component[_, _, _]) | Null],
     expirationTime: ExpirationTime,
-    callback: js.Function0[js.UndefOr[Unit | Null]]
-  ): ExpirationTime = js.native
-  def updateContainerAtExpirationTime(
-    element: ReactNodeList,
-    container: OpaqueRoot,
-    parentComponent: Null,
-    expirationTime: ExpirationTime,
-    callback: js.Function0[js.UndefOr[Unit | Null]]
-  ): ExpirationTime = js.native
-  def updateContainerAtExpirationTime(
-    element: ReactNodeList,
-    container: OpaqueRoot,
-    parentComponent: Component[_, _, _],
-    expirationTime: ExpirationTime,
-    callback: js.Function0[js.UndefOr[Unit | Null]]
+    callback: js.Function0[js.UndefOr[Null | Unit]]
   ): ExpirationTime = js.native
 }
 

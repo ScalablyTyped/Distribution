@@ -19,7 +19,7 @@ object AnimateOptions {
   def apply(
     center: CenterOptions = null,
     complete: () => Unit = null,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     easing: TransitionTimingFunction = null,
     fit: AnimationFitOptions = null,
     pan: Position = null,
@@ -31,12 +31,12 @@ object AnimateOptions {
     val __obj = js.Dynamic.literal()
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (fit != null) __obj.updateDynamic("fit")(fit.asInstanceOf[js.Any])
     if (pan != null) __obj.updateDynamic("pan")(pan.asInstanceOf[js.Any])
     if (panBy != null) __obj.updateDynamic("panBy")(panBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(queue)) __obj.updateDynamic("queue")(queue.asInstanceOf[js.Any])
+    if (!js.isUndefined(queue)) __obj.updateDynamic("queue")(queue.get.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(js.Any.fromFunction0(step))
     if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimateOptions]

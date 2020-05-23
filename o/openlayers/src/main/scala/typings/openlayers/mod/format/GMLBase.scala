@@ -3,7 +3,7 @@ package typings.openlayers.mod.format
 import typings.openlayers.mod.GlobalObject
 import typings.openlayers.mod.olx.format.GMLOptions
 import typings.openlayers.mod.olx.format.ReadOptions
-import typings.std.Document_
+import typings.std.Document
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -49,8 +49,8 @@ class GMLBase () extends XMLFeature {
     * @return Features.
     * @api stable
     */
-  def readFeatures(source: Document_): js.Array[typings.openlayers.mod.Feature] = js.native
-  def readFeatures(source: Document_, opt_options: ReadOptions): js.Array[typings.openlayers.mod.Feature] = js.native
+  def readFeatures(source: Document): js.Array[typings.openlayers.mod.Feature] = js.native
+  def readFeatures(source: Document, opt_options: ReadOptions): js.Array[typings.openlayers.mod.Feature] = js.native
   def readFeatures(source: Node): js.Array[typings.openlayers.mod.Feature] = js.native
   def readFeatures(source: Node, opt_options: ReadOptions): js.Array[typings.openlayers.mod.Feature] = js.native
 }

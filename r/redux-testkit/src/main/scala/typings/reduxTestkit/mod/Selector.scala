@@ -1,6 +1,6 @@
 package typings.reduxTestkit.mod
 
-import typings.reduxTestkit.AnonExecute
+import typings.reduxTestkit.anon.Execute
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("redux-testkit", "Selector")
 @js.native
 object Selector extends js.Object {
-  def apply(selector: js.Function2[/* state */ js.Any, /* action */ js.Any, _]): AnonExecute = js.native
+  def apply(selector: js.Function2[/* state */ js.Any, /* action */ js.Any, _]): Execute = js.native
 }
 

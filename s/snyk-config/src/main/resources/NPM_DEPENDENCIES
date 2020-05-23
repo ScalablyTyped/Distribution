@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "snyk-config" : "3.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "snyk-config" : "3.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

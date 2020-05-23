@@ -1,6 +1,6 @@
 package typings.bugsnagJs.sessionMod
 
-import typings.bugsnagJs.AnonHandled
+import typings.bugsnagJs.anon.Handled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends Session {
   /* CompleteClass */
-  override var events: AnonHandled = js.native
+  override var events: Handled = js.native
   /* CompleteClass */
   override var id: String = js.native
   /* CompleteClass */

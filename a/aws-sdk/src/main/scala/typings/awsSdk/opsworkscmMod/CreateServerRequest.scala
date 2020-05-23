@@ -99,13 +99,13 @@ object CreateServerRequest {
     InstanceType: String,
     ServerName: ServerName,
     ServiceRoleArn: ServiceRoleArn,
-    AssociatePublicIpAddress: js.UndefOr[scala.Boolean] = js.undefined,
+    AssociatePublicIpAddress: js.UndefOr[Boolean] = js.undefined,
     BackupId: BackupId = null,
-    BackupRetentionCount: Int | Double = null,
+    BackupRetentionCount: js.UndefOr[BackupRetentionCountDefinition] = js.undefined,
     CustomCertificate: CustomCertificate = null,
     CustomDomain: CustomDomain = null,
     CustomPrivateKey: CustomPrivateKey = null,
-    DisableAutomatedBackup: js.UndefOr[scala.Boolean] = js.undefined,
+    DisableAutomatedBackup: js.UndefOr[Boolean] = js.undefined,
     Engine: String = null,
     EngineAttributes: EngineAttributes = null,
     EngineModel: String = null,
@@ -118,13 +118,13 @@ object CreateServerRequest {
     Tags: TagList = null
   ): CreateServerRequest = {
     val __obj = js.Dynamic.literal(InstanceProfileArn = InstanceProfileArn.asInstanceOf[js.Any], InstanceType = InstanceType.asInstanceOf[js.Any], ServerName = ServerName.asInstanceOf[js.Any], ServiceRoleArn = ServiceRoleArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(AssociatePublicIpAddress)) __obj.updateDynamic("AssociatePublicIpAddress")(AssociatePublicIpAddress.asInstanceOf[js.Any])
+    if (!js.isUndefined(AssociatePublicIpAddress)) __obj.updateDynamic("AssociatePublicIpAddress")(AssociatePublicIpAddress.get.asInstanceOf[js.Any])
     if (BackupId != null) __obj.updateDynamic("BackupId")(BackupId.asInstanceOf[js.Any])
-    if (BackupRetentionCount != null) __obj.updateDynamic("BackupRetentionCount")(BackupRetentionCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(BackupRetentionCount)) __obj.updateDynamic("BackupRetentionCount")(BackupRetentionCount.get.asInstanceOf[js.Any])
     if (CustomCertificate != null) __obj.updateDynamic("CustomCertificate")(CustomCertificate.asInstanceOf[js.Any])
     if (CustomDomain != null) __obj.updateDynamic("CustomDomain")(CustomDomain.asInstanceOf[js.Any])
     if (CustomPrivateKey != null) __obj.updateDynamic("CustomPrivateKey")(CustomPrivateKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisableAutomatedBackup)) __obj.updateDynamic("DisableAutomatedBackup")(DisableAutomatedBackup.asInstanceOf[js.Any])
+    if (!js.isUndefined(DisableAutomatedBackup)) __obj.updateDynamic("DisableAutomatedBackup")(DisableAutomatedBackup.get.asInstanceOf[js.Any])
     if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
     if (EngineAttributes != null) __obj.updateDynamic("EngineAttributes")(EngineAttributes.asInstanceOf[js.Any])
     if (EngineModel != null) __obj.updateDynamic("EngineModel")(EngineModel.asInstanceOf[js.Any])

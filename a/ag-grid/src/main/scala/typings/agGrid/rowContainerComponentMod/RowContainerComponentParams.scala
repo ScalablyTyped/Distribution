@@ -20,7 +20,7 @@ object RowContainerComponentParams {
   ): RowContainerComponentParams = {
     val __obj = js.Dynamic.literal(eContainer = eContainer.asInstanceOf[js.Any])
     if (eViewport != null) __obj.updateDynamic("eViewport")(eViewport.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideWhenNoChildren)) __obj.updateDynamic("hideWhenNoChildren")(hideWhenNoChildren.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideWhenNoChildren)) __obj.updateDynamic("hideWhenNoChildren")(hideWhenNoChildren.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowContainerComponentParams]
   }
 }

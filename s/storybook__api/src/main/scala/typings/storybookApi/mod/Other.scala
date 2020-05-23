@@ -13,7 +13,7 @@ trait Other
 
 object Other {
   @scala.inline
-  def apply(customQueryParams: QueryParams, StringDictionary: /* key */ StringDictionary[js.Any] = null): Other = {
+  def apply(customQueryParams: QueryParams, StringDictionary: /* name */ StringDictionary[js.Any] = null): Other = {
     val __obj = js.Dynamic.literal(customQueryParams = customQueryParams.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Other]

@@ -119,6 +119,7 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var ioteventsdata: js.UndefOr[typings.awsSdk.ioteventsdataMod.ClientConfiguration] = js.native
   var iotjobsdataplane: js.UndefOr[typings.awsSdk.iotjobsdataplaneMod.ClientConfiguration] = js.native
   var iotsecuretunneling: js.UndefOr[typings.awsSdk.iotsecuretunnelingMod.ClientConfiguration] = js.native
+  var iotsitewise: js.UndefOr[typings.awsSdk.iotsitewiseMod.ClientConfiguration] = js.native
   var iotthingsgraph: js.UndefOr[typings.awsSdk.iotthingsgraphMod.ClientConfiguration] = js.native
   var kafka: js.UndefOr[typings.awsSdk.kafkaMod.ClientConfiguration] = js.native
   var kendra: js.UndefOr[typings.awsSdk.kendraMod.ClientConfiguration] = js.native
@@ -138,6 +139,7 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var lightsail: js.UndefOr[typings.awsSdk.lightsailMod.ClientConfiguration] = js.native
   var machinelearning: js.UndefOr[typings.awsSdk.machinelearningMod.ClientConfiguration] = js.native
   var macie: js.UndefOr[typings.awsSdk.macieMod.ClientConfiguration] = js.native
+  var macie2: js.UndefOr[typings.awsSdk.macie2Mod.ClientConfiguration] = js.native
   var managedblockchain: js.UndefOr[typings.awsSdk.managedblockchainMod.ClientConfiguration] = js.native
   var marketplacecatalog: js.UndefOr[typings.awsSdk.marketplacecatalogMod.ClientConfiguration] = js.native
   var marketplacecommerceanalytics: js.UndefOr[typings.awsSdk.marketplacecommerceanalyticsMod.ClientConfiguration] = js.native
@@ -215,6 +217,7 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var sts: js.UndefOr[typings.awsSdk.stsMod.ClientConfiguration] = js.native
   var support: js.UndefOr[typings.awsSdk.supportMod.ClientConfiguration] = js.native
   var swf: js.UndefOr[typings.awsSdk.swfMod.ClientConfiguration] = js.native
+  var synthetics: js.UndefOr[typings.awsSdk.syntheticsMod.ClientConfiguration] = js.native
   var textract: js.UndefOr[typings.awsSdk.textractMod.ClientConfiguration] = js.native
   var transcribeservice: js.UndefOr[typings.awsSdk.transcribeserviceMod.ClientConfiguration] = js.native
   var transfer: js.UndefOr[typings.awsSdk.transferMod.ClientConfiguration] = js.native

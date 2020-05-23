@@ -1,5 +1,6 @@
 package typings.framesync
 
+import typings.framesync.anon.Delta
 import typings.framesync.typesMod.Process
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("framesync", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  def getFrameData(): AnonDelta = js.native
+  def getFrameData(): Delta = js.native
   /* import warning: parser.TsParser#tsDeclVar Dropped IArray(cancelSync) */ @js.native
   object default extends js.Object {
     def fixedUpdate(process: Process): Process = js.native

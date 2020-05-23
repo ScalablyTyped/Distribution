@@ -1,6 +1,5 @@
 package typings.winjs.WinJS.UI
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,14 +24,6 @@ object FetchError extends js.Object {
     **/
   @js.native
   sealed trait noResponse extends FetchError
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FetchError with Double] = js.native
-  /* 1 */ @js.native
-  object doesNotExist extends TopLevel[doesNotExist with Double]
-  
-  /* 0 */ @js.native
-  object noResponse extends TopLevel[noResponse with Double]
   
 }
 

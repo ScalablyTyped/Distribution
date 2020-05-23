@@ -65,20 +65,20 @@ object PlotScatterClusterOptions {
     events: PlotScatterClusterEventsOptions = null,
     layoutAlgorithm: PlotScatterClusterLayoutAlgorithmOptions = null,
     marker: PointMarkerOptionsObject = null,
-    minimumClusterSize: Int | Double = null,
+    minimumClusterSize: js.UndefOr[Double] = js.undefined,
     states: PlotScatterClusterStatesOptions = null,
     zones: js.Array[PlotScatterClusterZonesOptions] = null
   ): PlotScatterClusterOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowOverlap)) __obj.updateDynamic("allowOverlap")(allowOverlap.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowOverlap)) __obj.updateDynamic("allowOverlap")(allowOverlap.get.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(drillToCluster)) __obj.updateDynamic("drillToCluster")(drillToCluster.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(drillToCluster)) __obj.updateDynamic("drillToCluster")(drillToCluster.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (layoutAlgorithm != null) __obj.updateDynamic("layoutAlgorithm")(layoutAlgorithm.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (minimumClusterSize != null) __obj.updateDynamic("minimumClusterSize")(minimumClusterSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumClusterSize)) __obj.updateDynamic("minimumClusterSize")(minimumClusterSize.get.asInstanceOf[js.Any])
     if (states != null) __obj.updateDynamic("states")(states.asInstanceOf[js.Any])
     if (zones != null) __obj.updateDynamic("zones")(zones.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotScatterClusterOptions]

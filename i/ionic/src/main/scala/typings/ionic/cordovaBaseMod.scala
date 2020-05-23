@@ -1,5 +1,7 @@
 package typings.ionic
 
+import typings.ionic.anon.PromptToInstall
+import typings.ionic.anon.RequiredProjectIntegratio
 import typings.ionic.commandMod.Command
 import typings.ionic.definitionsMod.CommandInstanceInfo
 import typings.ionic.definitionsMod.CommandMetadataOption
@@ -16,7 +18,7 @@ object cordovaBaseMod extends js.Object {
     var _integration: js.UndefOr[js.Any] = js.native
     /* protected */ def checkCordova(runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native
     /* protected */ def checkForPlatformInstallation(platform: String): js.Promise[Unit] = js.native
-    /* protected */ def checkForPlatformInstallation(platform: String, hasPromptToInstallPromptToInstallRefusalMsg: AnonPromptToInstall): js.Promise[Unit] = js.native
+    /* protected */ def checkForPlatformInstallation(platform: String, hasPromptToInstallPromptToInstallRefusalMsg: PromptToInstall): js.Promise[Unit] = js.native
     /* protected */ def integration: RequiredProjectIntegratio = js.native
     /* protected */ def preRunChecks(runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native
     /* protected */ def runCordova(argList: js.Array[String]): js.Promise[Unit] = js.native

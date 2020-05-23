@@ -38,7 +38,7 @@ trait Visibility[SingularType /* <: NodeSingular | EdgeSingular */] extends js.O
 
 object Visibility {
   @scala.inline
-  def apply[SingularType /* <: NodeSingular | EdgeSingular */](
+  def apply[SingularType](
     display: PropertyValue[SingularType, none | displayed],
     opacity: PropertyValue[SingularType, Double],
     visibility: PropertyValue[SingularType, none | visible],

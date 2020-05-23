@@ -28,21 +28,21 @@ object ColumnHeaders {
   @scala.inline
   def apply(
     cell_id: String = null,
-    column_index_begin: Int | Double = null,
-    column_index_end: Int | Double = null,
+    column_index_begin: js.UndefOr[Double] = js.undefined,
+    column_index_end: js.UndefOr[Double] = js.undefined,
     location: js.Object = null,
-    row_index_begin: Int | Double = null,
-    row_index_end: Int | Double = null,
+    row_index_begin: js.UndefOr[Double] = js.undefined,
+    row_index_end: js.UndefOr[Double] = js.undefined,
     text: String = null,
     text_normalized: String = null
   ): ColumnHeaders = {
     val __obj = js.Dynamic.literal()
     if (cell_id != null) __obj.updateDynamic("cell_id")(cell_id.asInstanceOf[js.Any])
-    if (column_index_begin != null) __obj.updateDynamic("column_index_begin")(column_index_begin.asInstanceOf[js.Any])
-    if (column_index_end != null) __obj.updateDynamic("column_index_end")(column_index_end.asInstanceOf[js.Any])
+    if (!js.isUndefined(column_index_begin)) __obj.updateDynamic("column_index_begin")(column_index_begin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(column_index_end)) __obj.updateDynamic("column_index_end")(column_index_end.get.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (row_index_begin != null) __obj.updateDynamic("row_index_begin")(row_index_begin.asInstanceOf[js.Any])
-    if (row_index_end != null) __obj.updateDynamic("row_index_end")(row_index_end.asInstanceOf[js.Any])
+    if (!js.isUndefined(row_index_begin)) __obj.updateDynamic("row_index_begin")(row_index_begin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(row_index_end)) __obj.updateDynamic("row_index_end")(row_index_end.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (text_normalized != null) __obj.updateDynamic("text_normalized")(text_normalized.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnHeaders]

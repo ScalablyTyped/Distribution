@@ -43,24 +43,24 @@ object RowDragEventArgs {
     canDrop: js.UndefOr[Boolean] = js.undefined,
     cancel: js.UndefOr[Boolean] = js.undefined,
     draggedRow: js.Any = null,
-    draggedRowIndex: Int | Double = null,
+    draggedRowIndex: js.UndefOr[Double] = js.undefined,
     dropPosition: String = null,
     model: js.Any = null,
     requestType: String = null,
     targetRow: js.Any = null,
-    targetRowIndex: Int | Double = null,
+    targetRowIndex: js.UndefOr[Double] = js.undefined,
     `type`: String = null
   ): RowDragEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canDrop)) __obj.updateDynamic("canDrop")(canDrop.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(canDrop)) __obj.updateDynamic("canDrop")(canDrop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (draggedRow != null) __obj.updateDynamic("draggedRow")(draggedRow.asInstanceOf[js.Any])
-    if (draggedRowIndex != null) __obj.updateDynamic("draggedRowIndex")(draggedRowIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggedRowIndex)) __obj.updateDynamic("draggedRowIndex")(draggedRowIndex.get.asInstanceOf[js.Any])
     if (dropPosition != null) __obj.updateDynamic("dropPosition")(dropPosition.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (requestType != null) __obj.updateDynamic("requestType")(requestType.asInstanceOf[js.Any])
     if (targetRow != null) __obj.updateDynamic("targetRow")(targetRow.asInstanceOf[js.Any])
-    if (targetRowIndex != null) __obj.updateDynamic("targetRowIndex")(targetRowIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetRowIndex)) __obj.updateDynamic("targetRowIndex")(targetRowIndex.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowDragEventArgs]
   }

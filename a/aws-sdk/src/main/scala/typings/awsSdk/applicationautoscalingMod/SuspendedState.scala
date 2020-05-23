@@ -23,14 +23,14 @@ trait SuspendedState extends js.Object {
 object SuspendedState {
   @scala.inline
   def apply(
-    DynamicScalingInSuspended: js.UndefOr[Boolean] = js.undefined,
-    DynamicScalingOutSuspended: js.UndefOr[Boolean] = js.undefined,
-    ScheduledScalingSuspended: js.UndefOr[Boolean] = js.undefined
+    DynamicScalingInSuspended: js.UndefOr[ScalingSuspended] = js.undefined,
+    DynamicScalingOutSuspended: js.UndefOr[ScalingSuspended] = js.undefined,
+    ScheduledScalingSuspended: js.UndefOr[ScalingSuspended] = js.undefined
   ): SuspendedState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DynamicScalingInSuspended)) __obj.updateDynamic("DynamicScalingInSuspended")(DynamicScalingInSuspended.asInstanceOf[js.Any])
-    if (!js.isUndefined(DynamicScalingOutSuspended)) __obj.updateDynamic("DynamicScalingOutSuspended")(DynamicScalingOutSuspended.asInstanceOf[js.Any])
-    if (!js.isUndefined(ScheduledScalingSuspended)) __obj.updateDynamic("ScheduledScalingSuspended")(ScheduledScalingSuspended.asInstanceOf[js.Any])
+    if (!js.isUndefined(DynamicScalingInSuspended)) __obj.updateDynamic("DynamicScalingInSuspended")(DynamicScalingInSuspended.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DynamicScalingOutSuspended)) __obj.updateDynamic("DynamicScalingOutSuspended")(DynamicScalingOutSuspended.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ScheduledScalingSuspended)) __obj.updateDynamic("ScheduledScalingSuspended")(ScheduledScalingSuspended.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuspendedState]
   }
 }

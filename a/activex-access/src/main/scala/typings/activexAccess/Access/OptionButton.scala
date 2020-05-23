@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.OptionButton")
 @js.native
-class OptionButton protected () extends js.Object {
+trait OptionButton extends js.Object {
   @JSName("Access.OptionButton_typekey")
   var AccessDotOptionButton_typekey: OptionButton = js.native
   var AddColon: Boolean = js.native

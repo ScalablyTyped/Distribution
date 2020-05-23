@@ -1,7 +1,6 @@
 package typings.heremaps.H.service.venues
 
 import typings.heremaps.H.map.Group
-import typings.heremaps.H.map.provider.ObjectProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,15 +10,8 @@ import scala.scalajs.js.annotation._
   * Building objects hold floor objects (see H.service.venues.Floor) and inherit from H.map.Group as well. Leaf objects are spaces (see H.service.venues.Space) that are spatial map objects
   * and reside inside floor containers.
   */
-@JSGlobal("H.service.venues.Venue")
 @js.native
-class Venue protected () extends Group {
-  /**
-    * Constructor
-    * @param provider {H.map.provider.ObjectProvider} - The object provider of this venue
-    * @param uid {string} - The unique identifier of this venue
-    */
-  def this(provider: ObjectProvider, uid: String) = this()
+trait Venue extends Group {
   /**
     * Method returns the building object, that belongs to the venue, with the given ID . The method doesn't attempt to fetch building data.
     * @param id {string} - the ID of the building

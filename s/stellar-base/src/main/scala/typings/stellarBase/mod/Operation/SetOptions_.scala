@@ -24,28 +24,28 @@ trait SetOptions_[T /* <: SignerOptions */] extends BaseOperation[SetOptions] {
 
 object SetOptions_ {
   @scala.inline
-  def apply[T /* <: SignerOptions */](
+  def apply[T](
     signer: PreAuthTx | Sha256Hash | Ed25519PublicKey,
     `type`: SetOptions,
     clearFlags: AuthFlag = null,
-    highThreshold: Int | Double = null,
+    highThreshold: js.UndefOr[Double] = js.undefined,
     homeDomain: String = null,
     inflationDest: String = null,
-    lowThreshold: Int | Double = null,
-    masterWeight: Int | Double = null,
-    medThreshold: Int | Double = null,
+    lowThreshold: js.UndefOr[Double] = js.undefined,
+    masterWeight: js.UndefOr[Double] = js.undefined,
+    medThreshold: js.UndefOr[Double] = js.undefined,
     setFlags: AuthFlag = null,
     source: String = null
   ): SetOptions_[T] = {
     val __obj = js.Dynamic.literal(signer = signer.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (clearFlags != null) __obj.updateDynamic("clearFlags")(clearFlags.asInstanceOf[js.Any])
-    if (highThreshold != null) __obj.updateDynamic("highThreshold")(highThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(highThreshold)) __obj.updateDynamic("highThreshold")(highThreshold.get.asInstanceOf[js.Any])
     if (homeDomain != null) __obj.updateDynamic("homeDomain")(homeDomain.asInstanceOf[js.Any])
     if (inflationDest != null) __obj.updateDynamic("inflationDest")(inflationDest.asInstanceOf[js.Any])
-    if (lowThreshold != null) __obj.updateDynamic("lowThreshold")(lowThreshold.asInstanceOf[js.Any])
-    if (masterWeight != null) __obj.updateDynamic("masterWeight")(masterWeight.asInstanceOf[js.Any])
-    if (medThreshold != null) __obj.updateDynamic("medThreshold")(medThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(lowThreshold)) __obj.updateDynamic("lowThreshold")(lowThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(masterWeight)) __obj.updateDynamic("masterWeight")(masterWeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(medThreshold)) __obj.updateDynamic("medThreshold")(medThreshold.get.asInstanceOf[js.Any])
     if (setFlags != null) __obj.updateDynamic("setFlags")(setFlags.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetOptions_[T]]

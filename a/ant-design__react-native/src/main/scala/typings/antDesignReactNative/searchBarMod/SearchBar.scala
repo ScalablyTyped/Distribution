@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.searchBarMod
 
-import typings.antDesignReactNative.AnonNativeEvent
+import typings.antDesignReactNative.anon.NativeEvent
 import typings.antDesignReactNative.searchBarPropsTypeMod.SearchBarState
 import typings.react.mod.Component
 import typings.reactNative.mod.NativeSyntheticEvent
@@ -20,6 +20,6 @@ trait SearchBar
   def onCancel(): Unit = js.native
   def onChangeText(value: String): Unit = js.native
   def onFocus(e: NativeSyntheticEvent[TextInputFocusEventData]): Unit = js.native
-  def onSubmit(_underscore: AnonNativeEvent): Unit = js.native
+  def onSubmit(_underscore: NativeEvent): Unit = js.native
 }
 

@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.ClientObject")
 @js.native
-class ClientObject protected () extends js.Object {
-  def this(context: ClientRuntimeContext, objectPath: ObjectPath) = this()
+trait ClientObject extends js.Object {
   def checkUninitializedProperty(propName: String): Unit = js.native
   def customFromJson(initValue: js.Any): Boolean = js.native
   def fromJson(initValue: js.Any): Unit = js.native

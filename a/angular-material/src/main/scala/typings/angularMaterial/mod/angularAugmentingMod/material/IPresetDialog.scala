@@ -5,9 +5,9 @@ import typings.angular.JQuery
 import typings.angular.mod.IControllerConstructor
 import typings.angular.mod.IScope
 import typings.angular.mod.Injectable
-import typings.angularMaterial.AnonLeft
+import typings.angularMaterial.anon.Left
 import typings.std.Element
-import typings.std.Event_
+import typings.std.Event
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,7 +23,7 @@ trait IPresetDialog[T] extends js.Object {
   def clickOutsideToClose(): T = js.native
   def clickOutsideToClose(clickOutsideToClose: Boolean): T = js.native
   def closeTo(to: String): T = js.native
-  def closeTo(to: AnonLeft): T = js.native
+  def closeTo(to: Left): T = js.native
   def closeTo(to: Element): T = js.native
    // default: true
   def controller(): T = js.native
@@ -49,9 +49,9 @@ trait IPresetDialog[T] extends js.Object {
   def multiple(multiple: Boolean): T = js.native
   def ok(ok: String): T = js.native
   def openFrom(from: String): T = js.native
-  def openFrom(from: AnonLeft): T = js.native
+  def openFrom(from: Left): T = js.native
   def openFrom(from: Element): T = js.native
-  def openFrom(from: Event_): T = js.native
+  def openFrom(from: Event): T = js.native
   def parent(): T = js.native
   def parent(parent: String): T = js.native
   def parent(parent: JQuery): T = js.native

@@ -17,11 +17,16 @@ trait ContractOptions extends js.Object {
 
 object ContractOptions {
   @scala.inline
-  def apply(data: String = null, from: String = null, gas: Int | Double = null, gasPrice: String = null): ContractOptions = {
+  def apply(
+    data: String = null,
+    from: String = null,
+    gas: js.UndefOr[Double] = js.undefined,
+    gasPrice: String = null
+  ): ContractOptions = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (gas != null) __obj.updateDynamic("gas")(gas.asInstanceOf[js.Any])
+    if (!js.isUndefined(gas)) __obj.updateDynamic("gas")(gas.get.asInstanceOf[js.Any])
     if (gasPrice != null) __obj.updateDynamic("gasPrice")(gasPrice.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContractOptions]
   }

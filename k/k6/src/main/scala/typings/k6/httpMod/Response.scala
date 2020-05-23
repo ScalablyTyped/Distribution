@@ -1,11 +1,10 @@
 package typings.k6.httpMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.k6.AnonBlocked
-import typings.k6.AnonBody
-import typings.k6.AnonFields
-import typings.k6.AnonNextupdate
-import typings.k6.AnonParams
+import typings.k6.anon.Blocked
+import typings.k6.anon.Body
+import typings.k6.anon.Fields
+import typings.k6.anon.Nextupdate
 import typings.k6.htmlMod.Selection
 import typings.k6.mod.JSONValue
 import scala.scalajs.js
@@ -25,7 +24,7 @@ trait Response extends js.Object {
   /** Response headers. */
   var headers: StringDictionary[String] = js.native
   /** Online Certificate Status Protocol response. */
-  var ocsp: AnonNextupdate = js.native
+  var ocsp: Nextupdate = js.native
   /** Protocol used to perform the transfer. */
   var proto: Protocol = js.native
   /** Server IP address. */
@@ -33,11 +32,11 @@ trait Response extends js.Object {
   /** Remote port connected to. */
   var remote_port: Double = js.native
   /** Inciting request details. */
-  var request: AnonBody = js.native
+  var request: Body = js.native
   /** HTTP status code. */
   var status: Double = js.native
   /** Performance timing information. */
-  var timings: AnonBlocked = js.native
+  var timings: Blocked = js.native
   /** TLS cipher suite used. */
   var tls_cipher_suite: CipherSuite = js.native
   /** TLS/SSL version used. One of `TLS_*` `SSL_*` constants. */
@@ -52,7 +51,7 @@ trait Response extends js.Object {
     * @returns Link click response.
     */
   def clickLink[RT /* <: js.UndefOr[ResponseType] */](): RefinedResponse[RT] = js.native
-  def clickLink[RT /* <: js.UndefOr[ResponseType] */](args: AnonParams[RT]): RefinedResponse[RT] = js.native
+  def clickLink[RT /* <: js.UndefOr[ResponseType] */](args: typings.k6.anon.Params[RT]): RefinedResponse[RT] = js.native
   /**
     * Parse body as HTML. Optionally filter by selector.
     * https://docs.k6.io/docs/response-k6http
@@ -79,6 +78,6 @@ trait Response extends js.Object {
     * @returns Form submission response.
     */
   def submitForm[RT /* <: js.UndefOr[ResponseType] */](): RefinedResponse[RT] = js.native
-  def submitForm[RT /* <: js.UndefOr[ResponseType] */](args: AnonFields[RT]): RefinedResponse[RT] = js.native
+  def submitForm[RT /* <: js.UndefOr[ResponseType] */](args: Fields[RT]): RefinedResponse[RT] = js.native
 }
 

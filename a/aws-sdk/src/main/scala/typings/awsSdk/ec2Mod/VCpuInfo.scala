@@ -31,16 +31,16 @@ trait VCpuInfo extends js.Object {
 object VCpuInfo {
   @scala.inline
   def apply(
-    DefaultCores: Int | scala.Double = null,
-    DefaultThreadsPerCore: Int | scala.Double = null,
-    DefaultVCpus: Int | scala.Double = null,
+    DefaultCores: js.UndefOr[CoreCount] = js.undefined,
+    DefaultThreadsPerCore: js.UndefOr[ThreadsPerCore] = js.undefined,
+    DefaultVCpus: js.UndefOr[VCpuCount] = js.undefined,
     ValidCores: CoreCountList = null,
     ValidThreadsPerCore: ThreadsPerCoreList = null
   ): VCpuInfo = {
     val __obj = js.Dynamic.literal()
-    if (DefaultCores != null) __obj.updateDynamic("DefaultCores")(DefaultCores.asInstanceOf[js.Any])
-    if (DefaultThreadsPerCore != null) __obj.updateDynamic("DefaultThreadsPerCore")(DefaultThreadsPerCore.asInstanceOf[js.Any])
-    if (DefaultVCpus != null) __obj.updateDynamic("DefaultVCpus")(DefaultVCpus.asInstanceOf[js.Any])
+    if (!js.isUndefined(DefaultCores)) __obj.updateDynamic("DefaultCores")(DefaultCores.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DefaultThreadsPerCore)) __obj.updateDynamic("DefaultThreadsPerCore")(DefaultThreadsPerCore.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DefaultVCpus)) __obj.updateDynamic("DefaultVCpus")(DefaultVCpus.get.asInstanceOf[js.Any])
     if (ValidCores != null) __obj.updateDynamic("ValidCores")(ValidCores.asInstanceOf[js.Any])
     if (ValidThreadsPerCore != null) __obj.updateDynamic("ValidThreadsPerCore")(ValidThreadsPerCore.asInstanceOf[js.Any])
     __obj.asInstanceOf[VCpuInfo]

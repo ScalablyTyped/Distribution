@@ -17,11 +17,15 @@ trait IEvent extends js.Object {
 
 object IEvent {
   @scala.inline
-  def apply(attributes: js.Array[IAttribute] = null, data: Uint8Array = null, eventType: String = null): IEvent = {
+  def apply(
+    attributes: js.UndefOr[Null | js.Array[IAttribute]] = js.undefined,
+    data: js.UndefOr[Null | Uint8Array] = js.undefined,
+    eventType: js.UndefOr[Null | String] = js.undefined
+  ): IEvent = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (eventType != null) __obj.updateDynamic("eventType")(eventType.asInstanceOf[js.Any])
+    if (!js.isUndefined(attributes)) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(data)) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(eventType)) __obj.updateDynamic("eventType")(eventType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEvent]
   }
 }

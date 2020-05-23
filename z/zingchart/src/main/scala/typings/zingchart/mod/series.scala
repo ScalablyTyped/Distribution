@@ -1,25 +1,25 @@
 package typings.zingchart.mod
 
-import typings.zingchart.AnonAlphaBackgroundcolor
-import typings.zingchart.AnonAlphaarea
-import typings.zingchart.AnonBordercolorBorderradius
-import typings.zingchart.AnonBorderradiusbottomleft
-import typings.zingchart.AnonBorderwidth
-import typings.zingchart.AnonCalloutposition
-import typings.zingchart.AnonCursor
-import typings.zingchart.AnonDelay
-import typings.zingchart.AnonFilloffsety
-import typings.zingchart.AnonFilltype
-import typings.zingchart.AnonFontsize
-import typings.zingchart.AnonGradientcolors
-import typings.zingchart.AnonGradientstops
-import typings.zingchart.AnonLinegapsize
-import typings.zingchart.AnonLinewidth
-import typings.zingchart.AnonOffsetx
-import typings.zingchart.AnonRtlrighttoleft
-import typings.zingchart.AnonRule
-import typings.zingchart.AnonShadow
-import typings.zingchart.AnonType
+import typings.zingchart.anon.AlphaBackgroundcolor
+import typings.zingchart.anon.Alphaarea
+import typings.zingchart.anon.BordercolorBorderradius
+import typings.zingchart.anon.Borderradiusbottomleft
+import typings.zingchart.anon.Borderwidth
+import typings.zingchart.anon.Calloutposition
+import typings.zingchart.anon.Cursor
+import typings.zingchart.anon.Delay
+import typings.zingchart.anon.Filloffsety
+import typings.zingchart.anon.Filltype
+import typings.zingchart.anon.Fontsize
+import typings.zingchart.anon.Gradientcolors
+import typings.zingchart.anon.Gradientstops
+import typings.zingchart.anon.Linegapsize
+import typings.zingchart.anon.Linewidth
+import typings.zingchart.anon.Offsetx
+import typings.zingchart.anon.Rtlrighttoleft
+import typings.zingchart.anon.Rule
+import typings.zingchart.anon.Shadow
+import typings.zingchart.anon.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +30,7 @@ trait series extends js.Object {
     * ransparent and 1.0 being completely opaque. Note that values require the leading zero before the decimal point. 0.3 | 0.9 | ...
     */
   var alpha: js.UndefOr[Double] = js.undefined
-  var animation: js.UndefOr[AnonDelay] = js.undefined
+  var animation: js.UndefOr[Delay] = js.undefined
   /**
     * Modifies how data points appear on a chart. Refer to the applicable chart types page for more information. Options by Chart Type:
     * "segmented" | "spline" | "stepped" | "jumped" | "cone" | "histogram" | ...
@@ -61,7 +61,7 @@ trait series extends js.Object {
     * Sets a background image for the object. Value can be a local file or a web image's location. "image.png" | ...
     */
   var `background-image`: js.UndefOr[String] = js.undefined
-  var `background-marker`: js.UndefOr[AnonFilloffsety] = js.undefined
+  var `background-marker`: js.UndefOr[Filloffsety] = js.undefined
   /**
     * Sets the position of the background when the "background-repeat" value is "no-repeat". "0 0" | "50 100" | "80% 60%" | ...
     */
@@ -70,7 +70,7 @@ trait series extends js.Object {
     * Sets the repeating mode for the background image. "no-repeat" | "repeat" | "repeat-x" | "repeat-y"
     */
   var `background-repeat`: js.UndefOr[String] = js.undefined
-  var `background-state`: js.UndefOr[AnonFilltype] = js.undefined
+  var `background-state`: js.UndefOr[Filltype] = js.undefined
   /**
     * Nested Pie Charts Only: This attribute is used to set the space between band in nested pie charts ("type":"nestedpie"). 5 | 10 | .
     * ..
@@ -197,7 +197,7 @@ trait series extends js.Object {
     * Text" | ...
     */
   var description: js.UndefOr[String] = js.undefined
-  var error: js.UndefOr[AnonLinegapsize] = js.undefined
+  var error: js.UndefOr[Linegapsize] = js.undefined
   var errors: js.UndefOr[js.Array[js.Object]] = js.undefined
   /**
     * By default ZingChart uses sampling when rendering charts. This helps improve rendering speeds and typically does not effect the ap
@@ -229,7 +229,7 @@ trait series extends js.Object {
     * Sets the background gradient fill type to either linear or radial. "linear" | "radial"
     */
   var `fill-type`: js.UndefOr[String] = js.undefined
-  var goal: js.UndefOr[AnonBordercolorBorderradius] = js.undefined
+  var goal: js.UndefOr[BordercolorBorderradius] = js.undefined
   /**
     * Bullet Charts Only: Accepts numerical values. Determines where goals are set for all plots. The "goals": [ ] values can also be se
     * t individually within each value set. [45, 70, 60]
@@ -250,17 +250,17 @@ trait series extends js.Object {
     * be set. true | false | 1 | 0
     */
   var `group-selections`: js.UndefOr[Boolean] = js.undefined
-  var `guide-label`: js.UndefOr[AnonFontsize] = js.undefined
-  var `highlight-marker`: js.UndefOr[AnonBorderwidth] = js.undefined
-  var `highlight-state`: js.UndefOr[AnonLinewidth] = js.undefined
-  var `hover-marker`: js.UndefOr[AnonGradientcolors] = js.undefined
-  var `hover-state`: js.UndefOr[AnonAlphaarea] = js.undefined
+  var `guide-label`: js.UndefOr[Fontsize] = js.undefined
+  var `highlight-marker`: js.UndefOr[Borderwidth] = js.undefined
+  var `highlight-state`: js.UndefOr[Linewidth] = js.undefined
+  var `hover-marker`: js.UndefOr[Gradientcolors] = js.undefined
+  var `hover-state`: js.UndefOr[Alphaarea] = js.undefined
   /**
     * Venn Diagrams Only: This attribute allow you to set the values for the area to be shared between each node. [30]
     */
   var join: js.UndefOr[js.Any] = js.undefined
-  var `legend-item`: js.UndefOr[AnonBorderradiusbottomleft] = js.undefined
-  var `legend-marker`: js.UndefOr[AnonCursor] = js.undefined
+  var `legend-item`: js.UndefOr[Borderradiusbottomleft] = js.undefined
+  var `legend-marker`: js.UndefOr[Cursor] = js.undefined
   /**
     * The "legend-text": attribute is typically used within "series": [ ] value sets. Using this attribute allows you to associate both
     * a "text":" " and "legend-text":" " to each value set "Some Text" | ...
@@ -289,7 +289,7 @@ trait series extends js.Object {
     * Sets the line width of the object, applicable on non-closed shapes. See also "border-width" for closed shapes. 4 | "6px" | ...
     */
   var `line-width`: js.UndefOr[js.Any] = js.undefined
-  var marker: js.UndefOr[AnonGradientstops] = js.undefined
+  var marker: js.UndefOr[Gradientstops] = js.undefined
   /**
     * Applies to charts such as line and area which have markers. When there are too many markers for the chart ZingChart does not displ
     * ay all markers. Example 1000 nodes on a 300px wide chart. Setting max-nodes will override the default setting and force nodes to b
@@ -347,7 +347,7 @@ trait series extends js.Object {
     * Sets a Y offset to apply when positioning the object/shape. 4 | "6px" | ...
     */
   var `offset-y`: js.UndefOr[js.Any] = js.undefined
-  var preview: js.UndefOr[AnonType] = js.undefined
+  var preview: js.UndefOr[Type] = js.undefined
   /**
     * Bar, Line and Area Charts only Include object in any series to override style displayed in the preview window. {...}
     */
@@ -361,7 +361,7 @@ trait series extends js.Object {
     * otal" | "chart-max" | "chart-total"
     */
   var reference: js.UndefOr[String] = js.undefined
-  var rules: js.UndefOr[js.Array[AnonRule]] = js.undefined
+  var rules: js.UndefOr[js.Array[Rule]] = js.undefined
   /**
     * By default ZingChart uses sampling when rendering large datasets. If you are trying to render 10000 data points on a chart which i
     * s only 500px wide there is not enough space for each data point. ZingChart will automatically determine which data points to show.
@@ -391,8 +391,8 @@ trait series extends js.Object {
     * arkers only. true (default) | false
     */
   var `segment-trackers`: js.UndefOr[Boolean] = js.undefined
-  var `selected-marker`: js.UndefOr[AnonOffsetx] = js.undefined
-  var `selected-state`: js.UndefOr[AnonShadow] = js.undefined
+  var `selected-marker`: js.UndefOr[Offsetx] = js.undefined
+  var `selected-state`: js.UndefOr[Shadow] = js.undefined
   /**
     * Sets whether the object's shadow is visible or not. Has limited effect on HTML5 implementation. true | false | 1 | 0
     */
@@ -472,20 +472,20 @@ trait series extends js.Object {
     * ata. Objects such as "scale-y": { }, "scale-x": { }, etc..., will need to be set separately. "." | "," | ...
     */
   var `thousands-separator`: js.UndefOr[String] = js.undefined
-  var tooltip: js.UndefOr[AnonCalloutposition] = js.undefined
+  var tooltip: js.UndefOr[Calloutposition] = js.undefined
   /**
     * Using the "tooltip-text":" " attribute allows you to set text for tooltips. This can also be done using a variety of other tokens
     * "Some Text" | ...
     */
   var `tooltip-text`: js.UndefOr[String] = js.undefined
-  var `trend-down`: js.UndefOr[AnonAlphaBackgroundcolor] = js.undefined
-  var `trend-equal`: js.UndefOr[AnonAlphaBackgroundcolor] = js.undefined
-  var `trend-up`: js.UndefOr[AnonAlphaBackgroundcolor] = js.undefined
+  var `trend-down`: js.UndefOr[AlphaBackgroundcolor] = js.undefined
+  var `trend-equal`: js.UndefOr[AlphaBackgroundcolor] = js.undefined
+  var `trend-up`: js.UndefOr[AlphaBackgroundcolor] = js.undefined
   /**
     * Sets the URL for the link associated with the object. "http://www.domain.com/link.php" | "link.asp" | ...
     */
   var url: js.UndefOr[String] = js.undefined
-  var `value-box`: js.UndefOr[AnonRtlrighttoleft] = js.undefined
+  var `value-box`: js.UndefOr[Rtlrighttoleft] = js.undefined
   var values: js.UndefOr[js.Any] = js.undefined
   /**
     * Sets the visibility of the object. Allows you to turn off the object without removing lines of JSON. true | false | 1 | 0
@@ -504,24 +504,24 @@ trait series extends js.Object {
 object series {
   @scala.inline
   def apply(
-    alpha: Int | Double = null,
-    animation: AnonDelay = null,
+    alpha: js.UndefOr[Double] = js.undefined,
+    animation: Delay = null,
     aspect: String = null,
     `background-color`: String = null,
     `background-color-1`: String = null,
     `background-color-2`: String = null,
     `background-fit`: String = null,
     `background-image`: String = null,
-    `background-marker`: AnonFilloffsety = null,
+    `background-marker`: Filloffsety = null,
     `background-position`: String = null,
     `background-repeat`: String = null,
-    `background-state`: AnonFilltype = null,
-    `band-space`: Int | Double = null,
-    `bar-space`: Int | Double = null,
-    `bar-width`: Int | Double = null,
-    `bars-overlap`: Int | Double = null,
-    `bars-space-left`: Int | Double = null,
-    `bars-space-right`: Int | Double = null,
+    `background-state`: Filltype = null,
+    `band-space`: js.UndefOr[Double] = js.undefined,
+    `bar-space`: js.UndefOr[Double] = js.undefined,
+    `bar-width`: js.UndefOr[Double] = js.undefined,
+    `bars-overlap`: js.UndefOr[Double] = js.undefined,
+    `bars-space-left`: js.UndefOr[Double] = js.undefined,
+    `bars-space-right`: js.UndefOr[Double] = js.undefined,
     `border-color`: String = null,
     `border-radius`: js.Any = null,
     `border-radius-bottom-left`: js.Any = null,
@@ -540,93 +540,93 @@ object series {
     cursor: String = null,
     `data-DotDotDot`: String = null,
     `data-dragging`: js.UndefOr[Boolean] = js.undefined,
-    decimals: Int | Double = null,
+    decimals: js.UndefOr[Double] = js.undefined,
     `decimals-separator`: String = null,
     description: String = null,
-    error: AnonLinegapsize = null,
+    error: Linegapsize = null,
     errors: js.Array[js.Object] = null,
     exact: js.UndefOr[Boolean] = js.undefined,
     exponent: js.UndefOr[Boolean] = js.undefined,
-    `exponent-decimals`: Int | Double = null,
-    `fill-angle`: Int | Double = null,
+    `exponent-decimals`: js.UndefOr[Double] = js.undefined,
+    `fill-angle`: js.UndefOr[Double] = js.undefined,
     `fill-offset-x`: js.Any = null,
     `fill-offset-y`: js.Any = null,
     `fill-type`: String = null,
-    goal: AnonBordercolorBorderradius = null,
+    goal: BordercolorBorderradius = null,
     goals: js.Any = null,
     `gradient-colors`: String = null,
     `gradient-stops`: String = null,
     `group-selections`: js.UndefOr[Boolean] = js.undefined,
-    `guide-label`: AnonFontsize = null,
-    `highlight-marker`: AnonBorderwidth = null,
-    `highlight-state`: AnonLinewidth = null,
-    `hover-marker`: AnonGradientcolors = null,
-    `hover-state`: AnonAlphaarea = null,
+    `guide-label`: Fontsize = null,
+    `highlight-marker`: Borderwidth = null,
+    `highlight-state`: Linewidth = null,
+    `hover-marker`: Gradientcolors = null,
+    `hover-state`: Alphaarea = null,
     join: js.Any = null,
-    `legend-item`: AnonBorderradiusbottomleft = null,
-    `legend-marker`: AnonCursor = null,
+    `legend-item`: Borderradiusbottomleft = null,
+    `legend-marker`: Cursor = null,
     `legend-text`: String = null,
     `line-color`: String = null,
     `line-gap-size`: js.Any = null,
     `line-segment-size`: js.Any = null,
     `line-style`: String = null,
     `line-width`: js.Any = null,
-    marker: AnonGradientstops = null,
-    `max-nodes`: Int | Double = null,
-    `max-ratio`: Int | Double = null,
-    `max-size`: Int | Double = null,
-    `max-trackers`: Int | Double = null,
+    marker: Gradientstops = null,
+    `max-nodes`: js.UndefOr[Double] = js.undefined,
+    `max-ratio`: js.UndefOr[Double] = js.undefined,
+    `max-size`: js.UndefOr[Double] = js.undefined,
+    `max-trackers`: js.UndefOr[Double] = js.undefined,
     `mid-point`: js.UndefOr[Boolean] = js.undefined,
-    `min-ratio`: Int | Double = null,
-    `min-size`: Int | Double = null,
+    `min-ratio`: js.UndefOr[Double] = js.undefined,
+    `min-size`: js.UndefOr[Double] = js.undefined,
     monotone: js.UndefOr[Boolean] = js.undefined,
     multiplier: js.UndefOr[Boolean] = js.undefined,
     negation: String = null,
     `offset-x`: js.Any = null,
     `offset-y`: js.Any = null,
-    preview: AnonType = null,
+    preview: Type = null,
     `preview-state`: js.Any = null,
-    `ref-angle`: Int | Double = null,
+    `ref-angle`: js.UndefOr[Double] = js.undefined,
     reference: String = null,
-    rules: js.Array[AnonRule] = null,
-    `sampling-step`: Int | Double = null,
+    rules: js.Array[Rule] = null,
+    `sampling-step`: js.UndefOr[Double] = js.undefined,
     scales: String = null,
     scaling: String = null,
-    `scroll-step-multiplier`: Int | Double = null,
+    `scroll-step-multiplier`: js.UndefOr[Double] = js.undefined,
     `segment-trackers`: js.UndefOr[Boolean] = js.undefined,
-    `selected-marker`: AnonOffsetx = null,
-    `selected-state`: AnonShadow = null,
+    `selected-marker`: Offsetx = null,
+    `selected-state`: Shadow = null,
     shadow: js.UndefOr[Boolean] = js.undefined,
-    `shadow-alpha`: Int | Double = null,
-    `shadow-angle`: Int | Double = null,
+    `shadow-alpha`: js.UndefOr[Double] = js.undefined,
+    `shadow-angle`: js.UndefOr[Double] = js.undefined,
     `shadow-blur`: js.Any = null,
     `shadow-color`: String = null,
     `shadow-distance`: js.Any = null,
     short: js.UndefOr[Boolean] = js.undefined,
     `short-unit`: String = null,
     `show-zero`: js.UndefOr[Boolean] = js.undefined,
-    `size-factor`: Int | Double = null,
-    `slice-start`: Int | Double = null,
-    stack: Int | Double = null,
+    `size-factor`: js.UndefOr[Double] = js.undefined,
+    `slice-start`: js.UndefOr[Double] = js.undefined,
+    stack: js.UndefOr[Double] = js.undefined,
     stacked: js.UndefOr[Boolean] = js.undefined,
     `step-start`: String = null,
     target: String = null,
-    thickness: Int | Double = null,
+    thickness: js.UndefOr[Double] = js.undefined,
     `thousands-separator`: String = null,
-    tooltip: AnonCalloutposition = null,
+    tooltip: Calloutposition = null,
     `tooltip-text`: String = null,
-    `trend-down`: AnonAlphaBackgroundcolor = null,
-    `trend-equal`: AnonAlphaBackgroundcolor = null,
-    `trend-up`: AnonAlphaBackgroundcolor = null,
+    `trend-down`: AlphaBackgroundcolor = null,
+    `trend-equal`: AlphaBackgroundcolor = null,
+    `trend-up`: AlphaBackgroundcolor = null,
     url: String = null,
-    `value-box`: AnonRtlrighttoleft = null,
+    `value-box`: Rtlrighttoleft = null,
     values: js.Any = null,
     visible: js.UndefOr[Boolean] = js.undefined,
-    `z-end`: Int | Double = null,
-    `z-start`: Int | Double = null
+    `z-end`: js.UndefOr[Double] = js.undefined,
+    `z-start`: js.UndefOr[Double] = js.undefined
   ): series = {
     val __obj = js.Dynamic.literal()
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (aspect != null) __obj.updateDynamic("aspect")(aspect.asInstanceOf[js.Any])
     if (`background-color` != null) __obj.updateDynamic("background-color")(`background-color`.asInstanceOf[js.Any])
@@ -638,12 +638,12 @@ object series {
     if (`background-position` != null) __obj.updateDynamic("background-position")(`background-position`.asInstanceOf[js.Any])
     if (`background-repeat` != null) __obj.updateDynamic("background-repeat")(`background-repeat`.asInstanceOf[js.Any])
     if (`background-state` != null) __obj.updateDynamic("background-state")(`background-state`.asInstanceOf[js.Any])
-    if (`band-space` != null) __obj.updateDynamic("band-space")(`band-space`.asInstanceOf[js.Any])
-    if (`bar-space` != null) __obj.updateDynamic("bar-space")(`bar-space`.asInstanceOf[js.Any])
-    if (`bar-width` != null) __obj.updateDynamic("bar-width")(`bar-width`.asInstanceOf[js.Any])
-    if (`bars-overlap` != null) __obj.updateDynamic("bars-overlap")(`bars-overlap`.asInstanceOf[js.Any])
-    if (`bars-space-left` != null) __obj.updateDynamic("bars-space-left")(`bars-space-left`.asInstanceOf[js.Any])
-    if (`bars-space-right` != null) __obj.updateDynamic("bars-space-right")(`bars-space-right`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`band-space`)) __obj.updateDynamic("band-space")(`band-space`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`bar-space`)) __obj.updateDynamic("bar-space")(`bar-space`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`bar-width`)) __obj.updateDynamic("bar-width")(`bar-width`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`bars-overlap`)) __obj.updateDynamic("bars-overlap")(`bars-overlap`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`bars-space-left`)) __obj.updateDynamic("bars-space-left")(`bars-space-left`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`bars-space-right`)) __obj.updateDynamic("bars-space-right")(`bars-space-right`.get.asInstanceOf[js.Any])
     if (`border-color` != null) __obj.updateDynamic("border-color")(`border-color`.asInstanceOf[js.Any])
     if (`border-radius` != null) __obj.updateDynamic("border-radius")(`border-radius`.asInstanceOf[js.Any])
     if (`border-radius-bottom-left` != null) __obj.updateDynamic("border-radius-bottom-left")(`border-radius-bottom-left`.asInstanceOf[js.Any])
@@ -651,26 +651,26 @@ object series {
     if (`border-radius-top-left` != null) __obj.updateDynamic("border-radius-top-left")(`border-radius-top-left`.asInstanceOf[js.Any])
     if (`border-radius-top-right` != null) __obj.updateDynamic("border-radius-top-right")(`border-radius-top-right`.asInstanceOf[js.Any])
     if (`border-width` != null) __obj.updateDynamic("border-width")(`border-width`.asInstanceOf[js.Any])
-    if (!js.isUndefined(callout)) __obj.updateDynamic("callout")(callout.asInstanceOf[js.Any])
+    if (!js.isUndefined(callout)) __obj.updateDynamic("callout")(callout.get.asInstanceOf[js.Any])
     if (`callout-height` != null) __obj.updateDynamic("callout-height")(`callout-height`.asInstanceOf[js.Any])
     if (`callout-hook` != null) __obj.updateDynamic("callout-hook")(`callout-hook`.asInstanceOf[js.Any])
     if (`callout-offset` != null) __obj.updateDynamic("callout-offset")(`callout-offset`.asInstanceOf[js.Any])
     if (`callout-position` != null) __obj.updateDynamic("callout-position")(`callout-position`.asInstanceOf[js.Any])
     if (`callout-width` != null) __obj.updateDynamic("callout-width")(`callout-width`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`connect-nulls`)) __obj.updateDynamic("connect-nulls")(`connect-nulls`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`contour-on-top`)) __obj.updateDynamic("contour-on-top")(`contour-on-top`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`connect-nulls`)) __obj.updateDynamic("connect-nulls")(`connect-nulls`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`contour-on-top`)) __obj.updateDynamic("contour-on-top")(`contour-on-top`.get.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (`data-DotDotDot` != null) __obj.updateDynamic("data-...")(`data-DotDotDot`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`data-dragging`)) __obj.updateDynamic("data-dragging")(`data-dragging`.asInstanceOf[js.Any])
-    if (decimals != null) __obj.updateDynamic("decimals")(decimals.asInstanceOf[js.Any])
+    if (!js.isUndefined(`data-dragging`)) __obj.updateDynamic("data-dragging")(`data-dragging`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(decimals)) __obj.updateDynamic("decimals")(decimals.get.asInstanceOf[js.Any])
     if (`decimals-separator` != null) __obj.updateDynamic("decimals-separator")(`decimals-separator`.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
-    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact.asInstanceOf[js.Any])
-    if (!js.isUndefined(exponent)) __obj.updateDynamic("exponent")(exponent.asInstanceOf[js.Any])
-    if (`exponent-decimals` != null) __obj.updateDynamic("exponent-decimals")(`exponent-decimals`.asInstanceOf[js.Any])
-    if (`fill-angle` != null) __obj.updateDynamic("fill-angle")(`fill-angle`.asInstanceOf[js.Any])
+    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exponent)) __obj.updateDynamic("exponent")(exponent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`exponent-decimals`)) __obj.updateDynamic("exponent-decimals")(`exponent-decimals`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`fill-angle`)) __obj.updateDynamic("fill-angle")(`fill-angle`.get.asInstanceOf[js.Any])
     if (`fill-offset-x` != null) __obj.updateDynamic("fill-offset-x")(`fill-offset-x`.asInstanceOf[js.Any])
     if (`fill-offset-y` != null) __obj.updateDynamic("fill-offset-y")(`fill-offset-y`.asInstanceOf[js.Any])
     if (`fill-type` != null) __obj.updateDynamic("fill-type")(`fill-type`.asInstanceOf[js.Any])
@@ -678,7 +678,7 @@ object series {
     if (goals != null) __obj.updateDynamic("goals")(goals.asInstanceOf[js.Any])
     if (`gradient-colors` != null) __obj.updateDynamic("gradient-colors")(`gradient-colors`.asInstanceOf[js.Any])
     if (`gradient-stops` != null) __obj.updateDynamic("gradient-stops")(`gradient-stops`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`group-selections`)) __obj.updateDynamic("group-selections")(`group-selections`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`group-selections`)) __obj.updateDynamic("group-selections")(`group-selections`.get.asInstanceOf[js.Any])
     if (`guide-label` != null) __obj.updateDynamic("guide-label")(`guide-label`.asInstanceOf[js.Any])
     if (`highlight-marker` != null) __obj.updateDynamic("highlight-marker")(`highlight-marker`.asInstanceOf[js.Any])
     if (`highlight-state` != null) __obj.updateDynamic("highlight-state")(`highlight-state`.asInstanceOf[js.Any])
@@ -694,46 +694,46 @@ object series {
     if (`line-style` != null) __obj.updateDynamic("line-style")(`line-style`.asInstanceOf[js.Any])
     if (`line-width` != null) __obj.updateDynamic("line-width")(`line-width`.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (`max-nodes` != null) __obj.updateDynamic("max-nodes")(`max-nodes`.asInstanceOf[js.Any])
-    if (`max-ratio` != null) __obj.updateDynamic("max-ratio")(`max-ratio`.asInstanceOf[js.Any])
-    if (`max-size` != null) __obj.updateDynamic("max-size")(`max-size`.asInstanceOf[js.Any])
-    if (`max-trackers` != null) __obj.updateDynamic("max-trackers")(`max-trackers`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`mid-point`)) __obj.updateDynamic("mid-point")(`mid-point`.asInstanceOf[js.Any])
-    if (`min-ratio` != null) __obj.updateDynamic("min-ratio")(`min-ratio`.asInstanceOf[js.Any])
-    if (`min-size` != null) __obj.updateDynamic("min-size")(`min-size`.asInstanceOf[js.Any])
-    if (!js.isUndefined(monotone)) __obj.updateDynamic("monotone")(monotone.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiplier)) __obj.updateDynamic("multiplier")(multiplier.asInstanceOf[js.Any])
+    if (!js.isUndefined(`max-nodes`)) __obj.updateDynamic("max-nodes")(`max-nodes`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`max-ratio`)) __obj.updateDynamic("max-ratio")(`max-ratio`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`max-size`)) __obj.updateDynamic("max-size")(`max-size`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`max-trackers`)) __obj.updateDynamic("max-trackers")(`max-trackers`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`mid-point`)) __obj.updateDynamic("mid-point")(`mid-point`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`min-ratio`)) __obj.updateDynamic("min-ratio")(`min-ratio`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`min-size`)) __obj.updateDynamic("min-size")(`min-size`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(monotone)) __obj.updateDynamic("monotone")(monotone.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiplier)) __obj.updateDynamic("multiplier")(multiplier.get.asInstanceOf[js.Any])
     if (negation != null) __obj.updateDynamic("negation")(negation.asInstanceOf[js.Any])
     if (`offset-x` != null) __obj.updateDynamic("offset-x")(`offset-x`.asInstanceOf[js.Any])
     if (`offset-y` != null) __obj.updateDynamic("offset-y")(`offset-y`.asInstanceOf[js.Any])
     if (preview != null) __obj.updateDynamic("preview")(preview.asInstanceOf[js.Any])
     if (`preview-state` != null) __obj.updateDynamic("preview-state")(`preview-state`.asInstanceOf[js.Any])
-    if (`ref-angle` != null) __obj.updateDynamic("ref-angle")(`ref-angle`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`ref-angle`)) __obj.updateDynamic("ref-angle")(`ref-angle`.get.asInstanceOf[js.Any])
     if (reference != null) __obj.updateDynamic("reference")(reference.asInstanceOf[js.Any])
     if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
-    if (`sampling-step` != null) __obj.updateDynamic("sampling-step")(`sampling-step`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`sampling-step`)) __obj.updateDynamic("sampling-step")(`sampling-step`.get.asInstanceOf[js.Any])
     if (scales != null) __obj.updateDynamic("scales")(scales.asInstanceOf[js.Any])
     if (scaling != null) __obj.updateDynamic("scaling")(scaling.asInstanceOf[js.Any])
-    if (`scroll-step-multiplier` != null) __obj.updateDynamic("scroll-step-multiplier")(`scroll-step-multiplier`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`segment-trackers`)) __obj.updateDynamic("segment-trackers")(`segment-trackers`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`scroll-step-multiplier`)) __obj.updateDynamic("scroll-step-multiplier")(`scroll-step-multiplier`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`segment-trackers`)) __obj.updateDynamic("segment-trackers")(`segment-trackers`.get.asInstanceOf[js.Any])
     if (`selected-marker` != null) __obj.updateDynamic("selected-marker")(`selected-marker`.asInstanceOf[js.Any])
     if (`selected-state` != null) __obj.updateDynamic("selected-state")(`selected-state`.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
-    if (`shadow-alpha` != null) __obj.updateDynamic("shadow-alpha")(`shadow-alpha`.asInstanceOf[js.Any])
-    if (`shadow-angle` != null) __obj.updateDynamic("shadow-angle")(`shadow-angle`.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`shadow-alpha`)) __obj.updateDynamic("shadow-alpha")(`shadow-alpha`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`shadow-angle`)) __obj.updateDynamic("shadow-angle")(`shadow-angle`.get.asInstanceOf[js.Any])
     if (`shadow-blur` != null) __obj.updateDynamic("shadow-blur")(`shadow-blur`.asInstanceOf[js.Any])
     if (`shadow-color` != null) __obj.updateDynamic("shadow-color")(`shadow-color`.asInstanceOf[js.Any])
     if (`shadow-distance` != null) __obj.updateDynamic("shadow-distance")(`shadow-distance`.asInstanceOf[js.Any])
-    if (!js.isUndefined(short)) __obj.updateDynamic("short")(short.asInstanceOf[js.Any])
+    if (!js.isUndefined(short)) __obj.updateDynamic("short")(short.get.asInstanceOf[js.Any])
     if (`short-unit` != null) __obj.updateDynamic("short-unit")(`short-unit`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`show-zero`)) __obj.updateDynamic("show-zero")(`show-zero`.asInstanceOf[js.Any])
-    if (`size-factor` != null) __obj.updateDynamic("size-factor")(`size-factor`.asInstanceOf[js.Any])
-    if (`slice-start` != null) __obj.updateDynamic("slice-start")(`slice-start`.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    if (!js.isUndefined(stacked)) __obj.updateDynamic("stacked")(stacked.asInstanceOf[js.Any])
+    if (!js.isUndefined(`show-zero`)) __obj.updateDynamic("show-zero")(`show-zero`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`size-factor`)) __obj.updateDynamic("size-factor")(`size-factor`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`slice-start`)) __obj.updateDynamic("slice-start")(`slice-start`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stack)) __obj.updateDynamic("stack")(stack.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stacked)) __obj.updateDynamic("stacked")(stacked.get.asInstanceOf[js.Any])
     if (`step-start` != null) __obj.updateDynamic("step-start")(`step-start`.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (thickness != null) __obj.updateDynamic("thickness")(thickness.asInstanceOf[js.Any])
+    if (!js.isUndefined(thickness)) __obj.updateDynamic("thickness")(thickness.get.asInstanceOf[js.Any])
     if (`thousands-separator` != null) __obj.updateDynamic("thousands-separator")(`thousands-separator`.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (`tooltip-text` != null) __obj.updateDynamic("tooltip-text")(`tooltip-text`.asInstanceOf[js.Any])
@@ -743,9 +743,9 @@ object series {
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (`value-box` != null) __obj.updateDynamic("value-box")(`value-box`.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (`z-end` != null) __obj.updateDynamic("z-end")(`z-end`.asInstanceOf[js.Any])
-    if (`z-start` != null) __obj.updateDynamic("z-start")(`z-start`.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`z-end`)) __obj.updateDynamic("z-end")(`z-end`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`z-start`)) __obj.updateDynamic("z-start")(`z-start`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[series]
   }
 }

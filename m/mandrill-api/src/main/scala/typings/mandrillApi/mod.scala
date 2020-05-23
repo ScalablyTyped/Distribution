@@ -1,5 +1,6 @@
 package typings.mandrillApi
 
+import typings.mandrillApi.anon.Id
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -1171,9 +1172,9 @@ object mod extends js.Object {
       * @param {Function} onsuccess an optional callback to execute when the API call is successfully made
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
-    def delete(params: AnonId): Unit = js.native
-    def delete(params: AnonId, onsuccess: ICallback): Unit = js.native
-    def delete(params: AnonId, onsuccess: ICallback, onerror: ICallback): Unit = js.native
+    def delete(params: Id): Unit = js.native
+    def delete(params: Id, onsuccess: ICallback): Unit = js.native
+    def delete(params: Id, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     /**
       * Given the ID of an existing webhook, return the data about it
       * @param {Object} params the hash of the parameters to pass to the request

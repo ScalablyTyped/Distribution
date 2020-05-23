@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,8 +12,4 @@ trait SVGStyleElement extends SVGElement {
   var title: java.lang.String = js.native
   var `type`: java.lang.String = js.native
 }
-
-@JSGlobal("SVGStyleElement")
-@js.native
-object SVGStyleElement extends Instantiable0[SVGStyleElement]
 

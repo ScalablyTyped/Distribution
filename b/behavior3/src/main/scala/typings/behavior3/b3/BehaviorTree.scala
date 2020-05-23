@@ -62,12 +62,8 @@ import scala.scalajs.js.annotation._
   *     })
   *
   */
-@JSGlobal("b3.BehaviorTree")
 @js.native
-/**
-  * Initialization method.
-  */
-class BehaviorTree () extends js.Object {
+trait BehaviorTree extends js.Object {
   /**
     * This method dump the current BT into a data structure.
     *

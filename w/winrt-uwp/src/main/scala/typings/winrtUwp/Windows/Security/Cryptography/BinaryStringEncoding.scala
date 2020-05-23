@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Security.Cryptography
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object BinaryStringEncoding extends js.Object {
   /** Eight bit Unicode Transformation Format. The process encodes each Unicode code point into one to four 8-bit bytes. Code points represented by lower numerical values are encoded using fewer bytes. In particular, the first 128 characters correspond exactly to the ASCII character set and are encoded by using a single octet. */
   @js.native
   sealed trait utf8 extends BinaryStringEncoding
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BinaryStringEncoding with Double] = js.native
-  /* 2 */ @js.native
-  object utf16BE extends TopLevel[utf16BE with Double]
-  
-  /* 1 */ @js.native
-  object utf16LE extends TopLevel[utf16LE with Double]
-  
-  /* 0 */ @js.native
-  object utf8 extends TopLevel[utf8 with Double]
   
 }
 

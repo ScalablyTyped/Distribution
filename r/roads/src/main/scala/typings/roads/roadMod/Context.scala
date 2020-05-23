@@ -17,7 +17,7 @@ object Context {
   def apply(
     Response: ResponseConstructor,
     request: js.Function,
-    StringDictionary: /* x */ StringDictionary[js.Any] = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null
   ): Context = {
     val __obj = js.Dynamic.literal(Response = Response.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

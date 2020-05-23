@@ -30,10 +30,10 @@ trait HtmlResponseOptions[TData /* <: JsonObject */] extends js.Object {
 
 object HtmlResponseOptions {
   @scala.inline
-  def apply[TData /* <: JsonObject */](data: TData = null, suppress: js.UndefOr[Boolean] = js.undefined, url: String = null): HtmlResponseOptions[TData] = {
+  def apply[TData](data: TData = null, suppress: js.UndefOr[Boolean] = js.undefined, url: String = null): HtmlResponseOptions[TData] = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppress)) __obj.updateDynamic("suppress")(suppress.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppress)) __obj.updateDynamic("suppress")(suppress.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[HtmlResponseOptions[TData]]
   }

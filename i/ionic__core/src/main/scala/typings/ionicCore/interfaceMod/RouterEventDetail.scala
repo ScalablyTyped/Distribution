@@ -13,9 +13,7 @@ trait RouterEventDetail extends js.Object {
 object RouterEventDetail {
   @scala.inline
   def apply(to: String, from: String = null, redirectedFrom: String = null): RouterEventDetail = {
-    val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (redirectedFrom != null) __obj.updateDynamic("redirectedFrom")(redirectedFrom.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], redirectedFrom = redirectedFrom.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouterEventDetail]
   }
 }

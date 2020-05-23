@@ -24,7 +24,6 @@ object TargetType {
   def `flow-legacy`: typings.apolloCodegen.apolloCodegenStrings.`flow-legacy` = "flow-legacy".asInstanceOf[typings.apolloCodegen.apolloCodegenStrings.`flow-legacy`]
   @scala.inline
   def json: typings.apolloCodegen.apolloCodegenStrings.json = "json".asInstanceOf[typings.apolloCodegen.apolloCodegenStrings.json]
-  @JSName("scala")
   @scala.inline
   def scala_ : typings.apolloCodegen.apolloCodegenStrings.scala_ = "scala".asInstanceOf[typings.apolloCodegen.apolloCodegenStrings.scala_]
   @scala.inline

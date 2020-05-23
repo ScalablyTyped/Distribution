@@ -9,6 +9,18 @@ import scala.scalajs.js.annotation._
 class TextChangeRange protected ()
   extends typings.typescriptServices.TypeScript.TextChangeRange {
   def this(span: typings.typescriptServices.TypeScript.TextSpan, newLength: Double) = this()
+  /* CompleteClass */
+  override var _newLength: js.Any = js.native
+  /* CompleteClass */
+  override var _span: js.Any = js.native
+  /* CompleteClass */
+  override def isUnchanged(): Boolean = js.native
+  /* CompleteClass */
+  override def newLength(): Double = js.native
+  /* CompleteClass */
+  override def newSpan(): typings.typescriptServices.TypeScript.TextSpan = js.native
+  /* CompleteClass */
+  override def span(): typings.typescriptServices.TypeScript.TextSpan = js.native
 }
 
 /* static members */

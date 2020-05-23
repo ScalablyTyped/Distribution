@@ -1,6 +1,6 @@
 package typings.meteorUniverseI18n.mod.i18n
 
-import typings.meteorUniverseI18n.Partiali18nOptions
+import typings.meteorUniverseI18n.anon.Partiali18nOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

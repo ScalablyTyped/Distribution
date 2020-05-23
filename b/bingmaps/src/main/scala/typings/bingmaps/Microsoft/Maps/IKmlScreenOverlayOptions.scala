@@ -18,8 +18,8 @@ object IKmlScreenOverlayOptions {
     visible: js.UndefOr[Boolean] = js.undefined
   ): IKmlScreenOverlayOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(belowNavigationBar)) __obj.updateDynamic("belowNavigationBar")(belowNavigationBar.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(belowNavigationBar)) __obj.updateDynamic("belowNavigationBar")(belowNavigationBar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKmlScreenOverlayOptions]
   }
 }

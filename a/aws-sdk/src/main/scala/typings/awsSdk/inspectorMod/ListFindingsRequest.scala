@@ -29,13 +29,13 @@ object ListFindingsRequest {
   def apply(
     assessmentRunArns: ListParentArnList = null,
     filter: FindingFilter = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[ListMaxResults] = js.undefined,
     nextToken: PaginationToken = null
   ): ListFindingsRequest = {
     val __obj = js.Dynamic.literal()
     if (assessmentRunArns != null) __obj.updateDynamic("assessmentRunArns")(assessmentRunArns.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListFindingsRequest]
   }

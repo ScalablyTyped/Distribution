@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/core/query", "Query")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/core/query", "Query")
 @js.native
 class Query protected () extends js.Object {
   /**
@@ -72,7 +72,7 @@ class Query protected () extends js.Object {
     * could remove results.
     */
   def matchesAllDocuments(): Boolean = js.native
-  def orderBy(): js.Array[OrderBy] = js.native
+  def orderBy: js.Array[OrderBy] = js.native
   /**
     * Converts this `Query` instance to it's corresponding `Target`
     * representation.
@@ -87,7 +87,7 @@ class Query protected () extends js.Object {
 }
 
 /* static members */
-@JSImport("@firebase/firestore/dist/lib/src/core/query", "Query")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/core/query", "Query")
 @js.native
 object Query extends js.Object {
   def atPath(path: ResourcePath): Query = js.native

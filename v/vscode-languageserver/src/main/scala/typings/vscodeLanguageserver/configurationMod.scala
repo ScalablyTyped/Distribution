@@ -12,10 +12,10 @@ import scala.scalajs.js.annotation._
 object configurationMod extends js.Object {
   @js.native
   trait Configuration extends js.Object {
-    def getConfiguration(): Thenable[_] = js.native
-    def getConfiguration(items: js.Array[ConfigurationItem]): Thenable[js.Array[_]] = js.native
-    def getConfiguration(item: ConfigurationItem): Thenable[_] = js.native
-    def getConfiguration(section: String): Thenable[_] = js.native
+    def getConfiguration(): js.Promise[_] = js.native
+    def getConfiguration(items: js.Array[ConfigurationItem]): js.Promise[js.Array[_]] = js.native
+    def getConfiguration(item: ConfigurationItem): js.Promise[_] = js.native
+    def getConfiguration(section: String): js.Promise[_] = js.native
   }
   
   val ConfigurationFeature: Feature[_RemoteWorkspace, Configuration] = js.native

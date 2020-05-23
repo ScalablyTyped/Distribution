@@ -36,6 +36,6 @@ object Schema extends js.Object {
     * @return A promise that is resolved with the result when
     * the query completes.
     */
-  def all(): js.Promise[js.Array[typings.parse.mod._Global_.Parse.Schema]] = js.native
+  def all(): js.Promise[js.Array[typings.parse.mod.global.Parse.Schema]] = js.native
 }
 

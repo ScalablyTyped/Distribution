@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("createjs.MovieClipPlugin")
 @js.native
-class MovieClipPlugin () extends js.Object {
+trait MovieClipPlugin extends js.Object {
   // methods
   def tween(
     tween: Tween,

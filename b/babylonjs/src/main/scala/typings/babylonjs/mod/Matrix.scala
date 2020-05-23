@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.AnonDownDegrees
+import typings.babylonjs.anon.DownDegrees
 import typings.babylonjs.mathLikeMod.IPlaneLike
 import typings.babylonjs.typesMod.DeepImmutable
 import typings.std.ArrayLike
@@ -545,9 +545,9 @@ object Matrix extends js.Object {
     * @param result defines the target matrix
     * @param rightHanded defines if the matrix must be in right-handed mode (false by default)
     */
-  def PerspectiveFovWebVRToRef(fov: AnonDownDegrees, znear: Double, zfar: Double, result: typings.babylonjs.mathVectorMod.Matrix): Unit = js.native
+  def PerspectiveFovWebVRToRef(fov: DownDegrees, znear: Double, zfar: Double, result: typings.babylonjs.mathVectorMod.Matrix): Unit = js.native
   def PerspectiveFovWebVRToRef(
-    fov: AnonDownDegrees,
+    fov: DownDegrees,
     znear: Double,
     zfar: Double,
     result: typings.babylonjs.mathVectorMod.Matrix,

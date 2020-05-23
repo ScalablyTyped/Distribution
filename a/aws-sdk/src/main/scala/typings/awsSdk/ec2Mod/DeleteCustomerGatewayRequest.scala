@@ -18,9 +18,9 @@ trait DeleteCustomerGatewayRequest extends js.Object {
 
 object DeleteCustomerGatewayRequest {
   @scala.inline
-  def apply(CustomerGatewayId: CustomerGatewayId, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeleteCustomerGatewayRequest = {
+  def apply(CustomerGatewayId: CustomerGatewayId, DryRun: js.UndefOr[Boolean] = js.undefined): DeleteCustomerGatewayRequest = {
     val __obj = js.Dynamic.literal(CustomerGatewayId = CustomerGatewayId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCustomerGatewayRequest]
   }
 }

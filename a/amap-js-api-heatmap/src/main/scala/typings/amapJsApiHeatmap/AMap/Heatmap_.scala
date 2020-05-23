@@ -3,21 +3,13 @@ package typings.amapJsApiHeatmap.AMap
 import typings.amapJsApi.AMap.Map
 import typings.amapJsApiHeatmap.AMap.Heatmap.DataSet
 import typings.amapJsApiHeatmap.AMap.Heatmap.Options
-import typings.amapJsApiHeatmap.AnonData
+import typings.amapJsApiHeatmap.anon.Data
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.Heatmap")
 @js.native
-class Heatmap_ protected () extends js.Object {
-  /**
-    * 热力图
-    * @param map 地图对象
-    * @param opts 热力图选项
-    */
-  def this(map: Map) = this()
-  def this(map: Map, opts: Options) = this()
+trait Heatmap_ extends js.Object {
   /**
     * 向热力图数据集中添加坐标点，count不填写时默认：1
     * @param lng 经度
@@ -35,7 +27,7 @@ class Heatmap_ protected () extends js.Object {
     */
   def getMap(): Map = js.native
   /**
-    * 	获取热力图的属性信息
+    *     获取热力图的属性信息
     */
   def getOptions(): Options = js.native
   def getzIndex(): Double = js.native
@@ -49,7 +41,7 @@ class Heatmap_ protected () extends js.Object {
     * @param dataset 数据集
     */
   def setDataSet(dataset: DataSet): Unit = js.native
-  def setDataSet(dataset: AnonData): Unit = js.native
+  def setDataSet(dataset: Data): Unit = js.native
   /**
     * 设置热力图要叠加的地图对象
     * @param map 地图对象

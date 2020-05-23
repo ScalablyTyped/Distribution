@@ -1,7 +1,5 @@
 package typings.antdMobileRn
 
-import typings.antdMobileRn.antdMobileRnStrings.ActionSheet
-import typings.antdMobileRn.antdMobileRnStrings.`ActionSheet example`
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +20,7 @@ object basicDotnativeMod extends js.Object {
     def this(props: js.Any) = this()
   }
   
-  val description: `ActionSheet example` = js.native
-  val title: ActionSheet = js.native
+  val description: /* "ActionSheet example" */ String = js.native
+  val title: /* "ActionSheet" */ String = js.native
 }
 

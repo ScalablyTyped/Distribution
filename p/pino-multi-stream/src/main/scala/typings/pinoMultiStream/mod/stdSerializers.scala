@@ -2,8 +2,8 @@ package typings.pinoMultiStream.mod
 
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.pinoStdSerializers.AnonReq
-import typings.pinoStdSerializers.AnonRes
+import typings.pinoStdSerializers.anon.Req
+import typings.pinoStdSerializers.anon.Res
 import typings.pinoStdSerializers.mod.CustomErrorSerializer
 import typings.pinoStdSerializers.mod.CustomRequestSerializer
 import typings.pinoStdSerializers.mod.CustomResponseSerializer
@@ -36,7 +36,7 @@ object stdSerializers extends js.Object {
     * @return An object
     */
   @JSName("mapHttpRequest")
-  var mapHttpRequest_Original: js.Function1[/* req */ IncomingMessage, AnonReq] = js.native
+  var mapHttpRequest_Original: js.Function1[/* req */ IncomingMessage, Req] = js.native
   /**
     * Returns an object:
     * ```
@@ -49,7 +49,7 @@ object stdSerializers extends js.Object {
     * @return An object.
     */
   @JSName("mapHttpResponse")
-  var mapHttpResponse_Original: js.Function1[/* res */ ServerResponse, AnonRes] = js.native
+  var mapHttpResponse_Original: js.Function1[/* res */ ServerResponse, Res] = js.native
   /**
     * Generates a JSONifiable object from the HTTP `request` object passed to the `createServer` callback of Node's HTTP server.
     */
@@ -111,7 +111,7 @@ object stdSerializers extends js.Object {
     * @param req The request to serialize
     * @return An object
     */
-  def mapHttpRequest(req: IncomingMessage): AnonReq = js.native
+  def mapHttpRequest(req: IncomingMessage): Req = js.native
   /**
     * Returns an object:
     * ```
@@ -123,7 +123,7 @@ object stdSerializers extends js.Object {
     * @param res The response to serialize.
     * @return An object.
     */
-  def mapHttpResponse(res: ServerResponse): AnonRes = js.native
+  def mapHttpResponse(res: ServerResponse): Res = js.native
   /**
     * Generates a JSONifiable object from the HTTP `request` object passed to the `createServer` callback of Node's HTTP server.
     */

@@ -9,14 +9,8 @@ import scala.scalajs.js.annotation._
   * A Global Plugin is installed just once into the Game owned Plugin Manager.
   * It can listen for Game events and respond to them.
   */
-@JSGlobal("Phaser.Plugins.BasePlugin")
 @js.native
-class BasePlugin protected () extends js.Object {
-  /**
-    * 
-    * @param pluginManager A reference to the Plugin Manager.
-    */
-  def this(pluginManager: PluginManager) = this()
+trait BasePlugin extends js.Object {
   /**
     * A reference to the Game instance this plugin is running under.
     */

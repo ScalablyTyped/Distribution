@@ -78,7 +78,7 @@ object Image {
     arn: ImageBuilderArn = null,
     dateCreated: DateTime = null,
     distributionConfiguration: DistributionConfiguration = null,
-    enhancedImageMetadataEnabled: js.UndefOr[Boolean] = js.undefined,
+    enhancedImageMetadataEnabled: js.UndefOr[NullableBoolean] = js.undefined,
     imageRecipe: ImageRecipe = null,
     imageTestsConfiguration: ImageTestsConfiguration = null,
     infrastructureConfiguration: InfrastructureConfiguration = null,
@@ -96,7 +96,7 @@ object Image {
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (dateCreated != null) __obj.updateDynamic("dateCreated")(dateCreated.asInstanceOf[js.Any])
     if (distributionConfiguration != null) __obj.updateDynamic("distributionConfiguration")(distributionConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(enhancedImageMetadataEnabled)) __obj.updateDynamic("enhancedImageMetadataEnabled")(enhancedImageMetadataEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enhancedImageMetadataEnabled)) __obj.updateDynamic("enhancedImageMetadataEnabled")(enhancedImageMetadataEnabled.get.asInstanceOf[js.Any])
     if (imageRecipe != null) __obj.updateDynamic("imageRecipe")(imageRecipe.asInstanceOf[js.Any])
     if (imageTestsConfiguration != null) __obj.updateDynamic("imageTestsConfiguration")(imageTestsConfiguration.asInstanceOf[js.Any])
     if (infrastructureConfiguration != null) __obj.updateDynamic("infrastructureConfiguration")(infrastructureConfiguration.asInstanceOf[js.Any])

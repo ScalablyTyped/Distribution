@@ -1,6 +1,6 @@
 package typings.babelGenerator.mod
 
-import typings.babelGenerator.AnonCompact
+import typings.babelGenerator.anon.Compact
 import typings.babelGenerator.babelGeneratorStrings.auto
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,7 +39,7 @@ trait GeneratorOptions extends js.Object {
   /**
     * Options for outputting jsesc representation.
     */
-  var jsescOption: js.UndefOr[AnonCompact] = js.undefined
+  var jsescOption: js.UndefOr[Compact] = js.undefined
   /**
     * Set to true to run jsesc with "json": true to print "\\u00A9" vs. "©";
     */
@@ -89,7 +89,7 @@ object GeneratorOptions {
     concise: js.UndefOr[Boolean] = js.undefined,
     decoratorsBeforeExport: js.UndefOr[Boolean] = js.undefined,
     filename: String = null,
-    jsescOption: AnonCompact = null,
+    jsescOption: Compact = null,
     jsonCompatibleStrings: js.UndefOr[Boolean] = js.undefined,
     minified: js.UndefOr[Boolean] = js.undefined,
     retainFunctionParens: js.UndefOr[Boolean] = js.undefined,
@@ -102,19 +102,19 @@ object GeneratorOptions {
     val __obj = js.Dynamic.literal()
     if (auxiliaryCommentAfter != null) __obj.updateDynamic("auxiliaryCommentAfter")(auxiliaryCommentAfter.asInstanceOf[js.Any])
     if (auxiliaryCommentBefore != null) __obj.updateDynamic("auxiliaryCommentBefore")(auxiliaryCommentBefore.asInstanceOf[js.Any])
-    if (!js.isUndefined(comments)) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (!js.isUndefined(comments)) __obj.updateDynamic("comments")(comments.get.asInstanceOf[js.Any])
     if (compact != null) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
-    if (!js.isUndefined(concise)) __obj.updateDynamic("concise")(concise.asInstanceOf[js.Any])
-    if (!js.isUndefined(decoratorsBeforeExport)) __obj.updateDynamic("decoratorsBeforeExport")(decoratorsBeforeExport.asInstanceOf[js.Any])
+    if (!js.isUndefined(concise)) __obj.updateDynamic("concise")(concise.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(decoratorsBeforeExport)) __obj.updateDynamic("decoratorsBeforeExport")(decoratorsBeforeExport.get.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (jsescOption != null) __obj.updateDynamic("jsescOption")(jsescOption.asInstanceOf[js.Any])
-    if (!js.isUndefined(jsonCompatibleStrings)) __obj.updateDynamic("jsonCompatibleStrings")(jsonCompatibleStrings.asInstanceOf[js.Any])
-    if (!js.isUndefined(minified)) __obj.updateDynamic("minified")(minified.asInstanceOf[js.Any])
-    if (!js.isUndefined(retainFunctionParens)) __obj.updateDynamic("retainFunctionParens")(retainFunctionParens.asInstanceOf[js.Any])
-    if (!js.isUndefined(retainLines)) __obj.updateDynamic("retainLines")(retainLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(jsonCompatibleStrings)) __obj.updateDynamic("jsonCompatibleStrings")(jsonCompatibleStrings.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minified)) __obj.updateDynamic("minified")(minified.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retainFunctionParens)) __obj.updateDynamic("retainFunctionParens")(retainFunctionParens.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retainLines)) __obj.updateDynamic("retainLines")(retainLines.get.asInstanceOf[js.Any])
     if (shouldPrintComment != null) __obj.updateDynamic("shouldPrintComment")(js.Any.fromFunction1(shouldPrintComment))
     if (sourceFileName != null) __obj.updateDynamic("sourceFileName")(sourceFileName.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceMaps)) __obj.updateDynamic("sourceMaps")(sourceMaps.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceMaps)) __obj.updateDynamic("sourceMaps")(sourceMaps.get.asInstanceOf[js.Any])
     if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeneratorOptions]
   }

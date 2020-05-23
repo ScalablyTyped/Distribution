@@ -20,12 +20,10 @@ object Pagination {
     page: Double,
     pages: Double,
     total: Double,
-    next: Int | Double = null,
-    prev: Int | Double = null
+    next: Nullable[Double] = null.asInstanceOf[Nullable[Double]],
+    prev: Nullable[Double] = null.asInstanceOf[Nullable[Double]]
   ): Pagination = {
-    val __obj = js.Dynamic.literal(limit = limit.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
-    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
-    if (prev != null) __obj.updateDynamic("prev")(prev.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(limit = limit.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pagination]
   }
 }

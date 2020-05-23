@@ -26,7 +26,7 @@ package object NodeJS {
     /* listener */ js.Function1[/* repeated */ js.Any, scala.Unit], 
     scala.Unit
   ]
-  // Alias for compability
+  // Alias for compatibility
   type ProcessEnv = typings.node.NodeJS.Dict[java.lang.String]
   type ReadOnlyDict[T] = org.scalablytyped.runtime.StringDictionary[js.UndefOr[T]]
   type RejectionHandledListener = js.Function1[/* promise */ js.Promise[js.Any], scala.Unit]

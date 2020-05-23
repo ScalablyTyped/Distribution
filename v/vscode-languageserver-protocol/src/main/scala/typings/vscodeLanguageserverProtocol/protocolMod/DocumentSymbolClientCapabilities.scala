@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
-import typings.vscodeLanguageserverProtocol.Anon1
+import typings.vscodeLanguageserverProtocol.anon.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait DocumentSymbolClientCapabilities extends js.Object {
   /**
     * Specific capabilities for the `SymbolKind`.
     */
-  var symbolKind: js.UndefOr[Anon1] = js.undefined
+  var symbolKind: js.UndefOr[`1`] = js.undefined
 }
 
 object DocumentSymbolClientCapabilities {
@@ -25,11 +25,11 @@ object DocumentSymbolClientCapabilities {
   def apply(
     dynamicRegistration: js.UndefOr[Boolean] = js.undefined,
     hierarchicalDocumentSymbolSupport: js.UndefOr[Boolean] = js.undefined,
-    symbolKind: Anon1 = null
+    symbolKind: `1` = null
   ): DocumentSymbolClientCapabilities = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration.asInstanceOf[js.Any])
-    if (!js.isUndefined(hierarchicalDocumentSymbolSupport)) __obj.updateDynamic("hierarchicalDocumentSymbolSupport")(hierarchicalDocumentSymbolSupport.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hierarchicalDocumentSymbolSupport)) __obj.updateDynamic("hierarchicalDocumentSymbolSupport")(hierarchicalDocumentSymbolSupport.get.asInstanceOf[js.Any])
     if (symbolKind != null) __obj.updateDynamic("symbolKind")(symbolKind.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentSymbolClientCapabilities]
   }

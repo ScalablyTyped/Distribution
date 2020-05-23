@@ -19,11 +19,15 @@ trait ListHITsResponse extends js.Object {
 
 object ListHITsResponse {
   @scala.inline
-  def apply(HITs: HITList = null, NextToken: PaginationToken = null, NumResults: Int | Double = null): ListHITsResponse = {
+  def apply(
+    HITs: HITList = null,
+    NextToken: PaginationToken = null,
+    NumResults: js.UndefOr[Integer] = js.undefined
+  ): ListHITsResponse = {
     val __obj = js.Dynamic.literal()
     if (HITs != null) __obj.updateDynamic("HITs")(HITs.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (NumResults != null) __obj.updateDynamic("NumResults")(NumResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumResults)) __obj.updateDynamic("NumResults")(NumResults.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListHITsResponse]
   }
 }

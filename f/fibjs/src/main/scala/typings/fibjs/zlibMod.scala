@@ -1,25 +1,21 @@
 package typings.fibjs
 
-import typings.fibjs.fibjsNumbers.`-1`
-import typings.fibjs.fibjsNumbers.`0`
-import typings.fibjs.fibjsNumbers.`1`
-import typings.fibjs.fibjsNumbers.`9`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** module Or Internal Object */
 /**
-	* @brief zlib 压缩解压模块
-	* @detail 使用方法：,```JavaScript,var zlib = require('zlib');,```
-	*/
+  * @brief zlib 压缩解压模块
+  * @detail 使用方法：,```JavaScript,var zlib = require('zlib');,```
+  */
 @JSImport("zlib", JSImport.Namespace)
 @js.native
 object zlibMod extends js.Object {
-  val BEST_COMPRESSION: `9` = js.native
-  val BEST_SPEED: `1` = js.native
-  val DEFAULT_COMPRESSION: `-1` = js.native
-  val NO_COMPRESSION: `0` = js.native
+  val BEST_COMPRESSION: /* 9 */ Double = js.native
+  val BEST_SPEED: /* 1 */ Double = js.native
+  val DEFAULT_COMPRESSION: /* -1 */ Double = js.native
+  val NO_COMPRESSION: /* 0 */ Double = js.native
   def createDeflate(to: ClassStream): ClassStream = js.native
   def createDeflateRaw(to: ClassStream): ClassStream = js.native
   def createGunzip(to: ClassStream): ClassStream = js.native

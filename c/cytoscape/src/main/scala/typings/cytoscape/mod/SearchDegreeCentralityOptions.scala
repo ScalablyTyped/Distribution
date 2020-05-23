@@ -34,13 +34,13 @@ object SearchDegreeCentralityOptions {
   @scala.inline
   def apply(
     root: NodeSingular | Selector,
-    alpha: Int | Double = null,
+    alpha: js.UndefOr[Double] = js.undefined,
     directed: js.UndefOr[Boolean] = js.undefined,
     weight: /* edge */ EdgeSingular => Double = null
   ): SearchDegreeCentralityOptions = {
     val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed.asInstanceOf[js.Any])
+    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed.get.asInstanceOf[js.Any])
     if (weight != null) __obj.updateDynamic("weight")(js.Any.fromFunction1(weight))
     __obj.asInstanceOf[SearchDegreeCentralityOptions]
   }

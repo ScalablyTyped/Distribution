@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation._
 
 trait RequestErrorEventUIParam extends js.Object {
   /**
-  	 * Gets the processed error message sent by the server
-  	 */
+    * Gets the processed error message sent by the server
+    */
   var message: js.UndefOr[String] = js.undefined
   /**
-  	 * Gets a reference to the grid.
-  	 */
+    * Gets a reference to the grid.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Gets a reference to the whole response object
-  	 */
+    * Gets a reference to the whole response object
+    */
   var response: js.UndefOr[js.Any] = js.undefined
 }
 

@@ -1,7 +1,7 @@
 package typings.faviconsWebpackPlugin.mod
 
-import typings.faviconsWebpackPlugin.PartialConfiguration
-import typings.faviconsWebpackPlugin.optionsOptions
+import typings.faviconsWebpackPlugin.anon.PartialConfiguration
+import typings.faviconsWebpackPlugin.anon.optionsOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +32,7 @@ object Options {
     publicPath: String = null
   ): Options = {
     val __obj = js.Dynamic.literal(logo = logo.asInstanceOf[js.Any])
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.get.asInstanceOf[js.Any])
     if (devMode != null) __obj.updateDynamic("devMode")(devMode.asInstanceOf[js.Any])
     if (favicons != null) __obj.updateDynamic("favicons")(favicons.asInstanceOf[js.Any])
     if (inject != null) __obj.updateDynamic("inject")(inject.asInstanceOf[js.Any])

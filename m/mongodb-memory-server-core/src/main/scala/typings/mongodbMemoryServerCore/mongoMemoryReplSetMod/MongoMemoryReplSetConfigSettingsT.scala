@@ -15,18 +15,18 @@ trait MongoMemoryReplSetConfigSettingsT extends js.Object {
 object MongoMemoryReplSetConfigSettingsT {
   @scala.inline
   def apply(
-    catchUpTimeoutMillis: Int | Double = null,
+    catchUpTimeoutMillis: js.UndefOr[Double] = js.undefined,
     chainingAllowed: js.UndefOr[Boolean] = js.undefined,
-    electionTimeoutMillis: Int | Double = null,
-    heartbeatIntervalMillis: Int | Double = null,
-    heartbeatTimeoutSecs: Int | Double = null
+    electionTimeoutMillis: js.UndefOr[Double] = js.undefined,
+    heartbeatIntervalMillis: js.UndefOr[Double] = js.undefined,
+    heartbeatTimeoutSecs: js.UndefOr[Double] = js.undefined
   ): MongoMemoryReplSetConfigSettingsT = {
     val __obj = js.Dynamic.literal()
-    if (catchUpTimeoutMillis != null) __obj.updateDynamic("catchUpTimeoutMillis")(catchUpTimeoutMillis.asInstanceOf[js.Any])
-    if (!js.isUndefined(chainingAllowed)) __obj.updateDynamic("chainingAllowed")(chainingAllowed.asInstanceOf[js.Any])
-    if (electionTimeoutMillis != null) __obj.updateDynamic("electionTimeoutMillis")(electionTimeoutMillis.asInstanceOf[js.Any])
-    if (heartbeatIntervalMillis != null) __obj.updateDynamic("heartbeatIntervalMillis")(heartbeatIntervalMillis.asInstanceOf[js.Any])
-    if (heartbeatTimeoutSecs != null) __obj.updateDynamic("heartbeatTimeoutSecs")(heartbeatTimeoutSecs.asInstanceOf[js.Any])
+    if (!js.isUndefined(catchUpTimeoutMillis)) __obj.updateDynamic("catchUpTimeoutMillis")(catchUpTimeoutMillis.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(chainingAllowed)) __obj.updateDynamic("chainingAllowed")(chainingAllowed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(electionTimeoutMillis)) __obj.updateDynamic("electionTimeoutMillis")(electionTimeoutMillis.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(heartbeatIntervalMillis)) __obj.updateDynamic("heartbeatIntervalMillis")(heartbeatIntervalMillis.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(heartbeatTimeoutSecs)) __obj.updateDynamic("heartbeatTimeoutSecs")(heartbeatTimeoutSecs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MongoMemoryReplSetConfigSettingsT]
   }
 }

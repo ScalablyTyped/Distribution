@@ -42,7 +42,7 @@ object RegionOptions {
     axis: AxisName = null,
     `class`: String = null,
     end: String | Double | Date = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     start: String | Double | Date = null,
     style: dashed = null
   ): RegionOptions = {
@@ -50,7 +50,7 @@ object RegionOptions {
     if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
     if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegionOptions]

@@ -44,12 +44,12 @@ object PerformanceEntry {
     entryType: EntryType,
     name: String,
     startTime: Double,
-    flags: Int | Double = null,
-    kind: Int | Double = null
+    flags: js.UndefOr[Double] = js.undefined,
+    kind: js.UndefOr[Double] = js.undefined
   ): PerformanceEntry = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], entryType = entryType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
-    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (!js.isUndefined(flags)) __obj.updateDynamic("flags")(flags.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(kind)) __obj.updateDynamic("kind")(kind.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerformanceEntry]
   }
 }

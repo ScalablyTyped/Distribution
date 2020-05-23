@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.ShapeLineFormatData
 import typings.officeJs.Excel.Interfaces.ShapeLineFormatLoadOptions
 import typings.officeJs.Excel.Interfaces.ShapeLineFormatUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.Dash
 import typings.officeJs.officeJsStrings.DashDot
 import typings.officeJs.officeJsStrings.DashDotDot
@@ -33,12 +33,11 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
-@JSGlobal("Excel.ShapeLineFormat")
 @js.native
-class ShapeLineFormat () extends ClientObject {
+trait ShapeLineFormat extends ClientObject {
   /**
     *
-    * Represents the line color in HTML color format, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+    * Represents the line color in HTML color format, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -69,7 +68,7 @@ class ShapeLineFormat () extends ClientObject {
   var transparency: Double = js.native
   /**
     *
-    * Represents whether or not the line formatting of a shape element is visible. Returns null when the shape has inconsistent visibilities.
+    * Specifies if the line formatting of a shape element is visible. Returns null when the shape has inconsistent visibilities.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -88,7 +87,7 @@ class ShapeLineFormat () extends ClientObject {
     */
   def load(): ShapeLineFormat = js.native
   def load(options: ShapeLineFormatLoadOptions): ShapeLineFormat = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ShapeLineFormat = js.native
+  def load(propertyNamesAndPaths: Expand): ShapeLineFormat = js.native
   def load(propertyNames: String): ShapeLineFormat = js.native
   def load(propertyNames: js.Array[String]): ShapeLineFormat = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.

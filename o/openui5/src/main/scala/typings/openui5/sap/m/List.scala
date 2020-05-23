@@ -4,19 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.m.List")
 @js.native
-class List protected () extends ListBase {
-  /**
-    * Constructor for a new List.Accepts an object literal <code>mSettings</code> that defines
-    * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
-    * sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the settings
-    * object.
-    * @param sId Id for the new control, generated automatically if no id is given
-    * @param mSettings Initial settings for the new control
-    */
-  def this(sId: String) = this()
-  def this(sId: String, mSettings: js.Any) = this()
+trait List extends ListBase {
   /**
     * Adds some column to the aggregation <code>columns</code>.
     * @param oColumn the column to add; if empty, nothing is inserted

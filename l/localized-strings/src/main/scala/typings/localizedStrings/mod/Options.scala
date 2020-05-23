@@ -21,9 +21,9 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (customLanguageInterface != null) __obj.updateDynamic("customLanguageInterface")(js.Any.fromFunction0(customLanguageInterface))
-    if (!js.isUndefined(logsEnabled)) __obj.updateDynamic("logsEnabled")(logsEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(pseudo)) __obj.updateDynamic("pseudo")(pseudo.asInstanceOf[js.Any])
-    if (!js.isUndefined(pseudoMultipleLanguages)) __obj.updateDynamic("pseudoMultipleLanguages")(pseudoMultipleLanguages.asInstanceOf[js.Any])
+    if (!js.isUndefined(logsEnabled)) __obj.updateDynamic("logsEnabled")(logsEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pseudo)) __obj.updateDynamic("pseudo")(pseudo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pseudoMultipleLanguages)) __obj.updateDynamic("pseudoMultipleLanguages")(pseudoMultipleLanguages.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

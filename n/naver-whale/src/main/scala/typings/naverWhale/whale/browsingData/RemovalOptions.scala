@@ -17,10 +17,13 @@ trait RemovalOptions extends js.Object {
 
 object RemovalOptions {
   @scala.inline
-  def apply(originTypes: typings.chrome.chrome.browsingData.OriginTypes = null, since: Int | Double = null): RemovalOptions = {
+  def apply(
+    originTypes: typings.chrome.chrome.browsingData.OriginTypes = null,
+    since: js.UndefOr[Double] = js.undefined
+  ): RemovalOptions = {
     val __obj = js.Dynamic.literal()
     if (originTypes != null) __obj.updateDynamic("originTypes")(originTypes.asInstanceOf[js.Any])
-    if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
+    if (!js.isUndefined(since)) __obj.updateDynamic("since")(since.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemovalOptions]
   }
 }

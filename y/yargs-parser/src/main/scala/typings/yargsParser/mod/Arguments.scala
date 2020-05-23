@@ -21,8 +21,7 @@ object Arguments {
   def apply(
     $0: String,
     _underscore: js.Array[String],
-    StringDictionary: /** All remaining options */
-  /* argName */ StringDictionary[js.Any] = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null
   ): Arguments = {
     val __obj = js.Dynamic.literal($0 = $0.asInstanceOf[js.Any])
     __obj.updateDynamic("_")(_underscore.asInstanceOf[js.Any])

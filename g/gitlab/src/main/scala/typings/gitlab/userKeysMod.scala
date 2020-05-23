@@ -1,5 +1,7 @@
 package typings.gitlab
 
+import typings.gitlab.anon.userIdnumberBaseRequestOp
+import typings.gitlab.anon.userIdnumberPaginatedRequ
 import typings.gitlab.infrastructureMod.BaseService
 import typings.gitlab.requestHelperMod.BaseRequestOptions
 import typings.gitlab.requestHelperMod.GetResponse

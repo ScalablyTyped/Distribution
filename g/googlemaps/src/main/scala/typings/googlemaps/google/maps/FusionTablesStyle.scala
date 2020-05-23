@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// TODO find source documentation
 trait FusionTablesStyle extends js.Object {
   var markerOptions: js.UndefOr[FusionTablesMarkerOptions] = js.undefined
   var polygonOptions: js.UndefOr[FusionTablesPolygonOptions] = js.undefined

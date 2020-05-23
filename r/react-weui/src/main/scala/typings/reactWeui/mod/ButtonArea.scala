@@ -1,6 +1,6 @@
 package typings.reactWeui.mod
 
-import typings.reactWeui.AnonDirection
+import typings.reactWeui.anon.Direction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ class ButtonArea protected () extends js.Object {
 @JSImport("react-weui", "ButtonArea")
 @js.native
 object ButtonArea extends js.Object {
-  var defaultProps: AnonDirection = js.native
+  var defaultProps: Direction = js.native
   @js.native
   object propTypes extends js.Object {
     @js.native

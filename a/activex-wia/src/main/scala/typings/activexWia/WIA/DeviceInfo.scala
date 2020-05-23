@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation._
   * The DeviceInfo object is a container that describes the unchanging (static) properties of an imaging device that is currently connected to the
   * computer.
   */
-@JSGlobal("WIA.DeviceInfo")
 @js.native
-class DeviceInfo protected () extends js.Object {
+trait DeviceInfo extends js.Object {
   /** Returns the DeviceID for this Device */
   val DeviceID: String = js.native
   /** A collection of all properties for this imaging device that are applicable when the device is not connected */

@@ -1,6 +1,6 @@
 package typings.ionicCore.componentsMod.Components
 
-import typings.ionicCore.componentsMod._Global_.HTMLIonTabElement
+import typings.ionicCore.componentsMod.global.HTMLIonTabElement
 import typings.ionicCore.interfaceMod.RouteID
 import typings.ionicCore.interfaceMod.RouteWrite
 import scala.scalajs.js

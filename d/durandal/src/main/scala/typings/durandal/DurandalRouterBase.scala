@@ -1,5 +1,6 @@
 package typings.durandal
 
+import typings.durandal.anon.Callback
 import typings.knockout.KnockoutComputed
 import typings.knockout.KnockoutObservable
 import typings.knockout.KnockoutObservableArray
@@ -37,7 +38,7 @@ trait DurandalRouterBase[T] extends DurandalEventSupport[T] {
   /**
     * The route handlers that are registered. Each handler consists of a `routePattern` and a `callback`.
     */
-  var handlers: js.Array[AnonCallback] = js.native
+  var handlers: js.Array[Callback] = js.native
   /**
     * Indicates that the router (or a child router) is currently in the process of navigating.
     */

@@ -1,6 +1,5 @@
 package typings.minappEnv
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,8 +49,4 @@ trait Function extends js.Object {
     */
   def call(thisArg: js.Any, argArray: js.Any*): js.Any = js.native
 }
-
-@JSGlobal("Function")
-@js.native
-object Function extends TopLevel[FunctionConstructor]
 

@@ -33,7 +33,7 @@ object IStepProps {
     prefixCls: String = null,
     progressDot: Boolean | js.Function = null,
     status: String = null,
-    stepNumber: Int | Double = null,
+    stepNumber: js.UndefOr[Double] = js.undefined,
     style: js.Any = null,
     title: js.Any = null,
     wrapperStyle: js.Any = null
@@ -48,7 +48,7 @@ object IStepProps {
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (progressDot != null) __obj.updateDynamic("progressDot")(progressDot.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (stepNumber != null) __obj.updateDynamic("stepNumber")(stepNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(stepNumber)) __obj.updateDynamic("stepNumber")(stepNumber.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (wrapperStyle != null) __obj.updateDynamic("wrapperStyle")(wrapperStyle.asInstanceOf[js.Any])

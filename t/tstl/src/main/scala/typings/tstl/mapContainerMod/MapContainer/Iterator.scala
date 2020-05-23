@@ -24,7 +24,7 @@ trait Iterator[Key, T, Unique /* <: Boolean */, SourceT /* <: typings.tstl.mapCo
 
 object Iterator {
   @scala.inline
-  def apply[Key, T, Unique /* <: Boolean */, SourceT /* <: typings.tstl.mapContainerMod.MapContainer[Key, T, Unique, SourceT, IteratorT, ReverseT] */, IteratorT /* <: Iterator[Key, T, Unique, SourceT, IteratorT, ReverseT] */, ReverseT /* <: ReverseIterator[Key, T, Unique, SourceT, IteratorT, ReverseT] */](
+  def apply[Key, T, Unique, SourceT, IteratorT, ReverseT](
     first: Key,
     next: () => IteratorT,
     prev: () => IteratorT,

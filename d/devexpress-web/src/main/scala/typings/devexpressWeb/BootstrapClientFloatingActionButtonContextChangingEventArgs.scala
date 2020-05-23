@@ -4,11 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BootstrapClientFloatingActionButtonContextChangingEventArgs")
-@js.native
-class BootstrapClientFloatingActionButtonContextChangingEventArgs protected () extends ASPxClientFloatingActionButtonContextChangingEventArgs {
-  def this(action: BootstrapClientFABAction) = this()
+trait BootstrapClientFloatingActionButtonContextChangingEventArgs extends ASPxClientFloatingActionButtonContextChangingEventArgs {
   @JSName("action")
-  var action_BootstrapClientFloatingActionButtonContextChangingEventArgs: BootstrapClientFABAction = js.native
+  var action_BootstrapClientFloatingActionButtonContextChangingEventArgs: BootstrapClientFABAction
+}
+
+object BootstrapClientFloatingActionButtonContextChangingEventArgs {
+  @scala.inline
+  def apply(action: BootstrapClientFABAction): BootstrapClientFloatingActionButtonContextChangingEventArgs = {
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BootstrapClientFloatingActionButtonContextChangingEventArgs]
+  }
 }
 

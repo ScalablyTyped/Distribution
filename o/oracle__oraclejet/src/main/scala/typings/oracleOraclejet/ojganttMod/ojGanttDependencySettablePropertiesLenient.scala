@@ -23,7 +23,7 @@ trait ojGanttDependencySettablePropertiesLenient
 object ojGanttDependencySettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     predecessorTaskId: js.Any = null,
     shortDesc: String = null,
     successorTaskId: js.Any = null,

@@ -22,9 +22,13 @@ trait ListAssociationsForLicenseConfigurationRequest extends js.Object {
 
 object ListAssociationsForLicenseConfigurationRequest {
   @scala.inline
-  def apply(LicenseConfigurationArn: String, MaxResults: Int | Double = null, NextToken: String = null): ListAssociationsForLicenseConfigurationRequest = {
+  def apply(
+    LicenseConfigurationArn: String,
+    MaxResults: js.UndefOr[BoxInteger] = js.undefined,
+    NextToken: String = null
+  ): ListAssociationsForLicenseConfigurationRequest = {
     val __obj = js.Dynamic.literal(LicenseConfigurationArn = LicenseConfigurationArn.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAssociationsForLicenseConfigurationRequest]
   }

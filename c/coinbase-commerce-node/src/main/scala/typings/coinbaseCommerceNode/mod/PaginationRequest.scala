@@ -40,16 +40,16 @@ trait PaginationRequest extends js.Object {
 object PaginationRequest {
   @scala.inline
   def apply(
-    ending_before: String = null,
-    limit: Int | Double = null,
+    ending_before: js.UndefOr[Null | String] = js.undefined,
+    limit: js.UndefOr[Double] = js.undefined,
     order: asc | desc = null,
-    starting_after: String = null
+    starting_after: js.UndefOr[Null | String] = js.undefined
   ): PaginationRequest = {
     val __obj = js.Dynamic.literal()
-    if (ending_before != null) __obj.updateDynamic("ending_before")(ending_before.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(ending_before)) __obj.updateDynamic("ending_before")(ending_before.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (starting_after != null) __obj.updateDynamic("starting_after")(starting_after.asInstanceOf[js.Any])
+    if (!js.isUndefined(starting_after)) __obj.updateDynamic("starting_after")(starting_after.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationRequest]
   }
 }

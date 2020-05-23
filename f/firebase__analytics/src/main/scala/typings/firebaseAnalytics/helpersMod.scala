@@ -1,6 +1,7 @@
 package typings.firebaseAnalytics
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.firebaseAnalytics.anon.GtagCore
 import typings.firebaseAnalyticsTypes.mod.DataLayer
 import typings.firebaseAnalyticsTypes.mod.Gtag
 import typings.firebaseAppTypes.mod.FirebaseApp
@@ -21,6 +22,6 @@ object helpersMod extends js.Object {
     initializedIdPromisesMap: StringDictionary[js.Promise[Unit]],
     dataLayerName: String,
     gtagFunctionName: String
-  ): AnonGtagCore = js.native
+  ): GtagCore = js.native
 }
 

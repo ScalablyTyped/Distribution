@@ -43,7 +43,7 @@ trait InputConfiguration extends js.Object {
 object InputConfiguration {
   @scala.inline
   def apply(
-    alphaTolerance: Int | Double = null,
+    alphaTolerance: js.UndefOr[integer] = js.undefined,
     cursor: String = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
     dropZone: js.UndefOr[Boolean] = js.undefined,
@@ -53,14 +53,14 @@ object InputConfiguration {
     useHandCursor: js.UndefOr[Boolean] = js.undefined
   ): InputConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (alphaTolerance != null) __obj.updateDynamic("alphaTolerance")(alphaTolerance.asInstanceOf[js.Any])
+    if (!js.isUndefined(alphaTolerance)) __obj.updateDynamic("alphaTolerance")(alphaTolerance.get.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropZone)) __obj.updateDynamic("dropZone")(dropZone.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropZone)) __obj.updateDynamic("dropZone")(dropZone.get.asInstanceOf[js.Any])
     if (hitArea != null) __obj.updateDynamic("hitArea")(hitArea.asInstanceOf[js.Any])
     if (hitAreaCallback != null) __obj.updateDynamic("hitAreaCallback")(hitAreaCallback.asInstanceOf[js.Any])
-    if (!js.isUndefined(pixelPerfect)) __obj.updateDynamic("pixelPerfect")(pixelPerfect.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHandCursor)) __obj.updateDynamic("useHandCursor")(useHandCursor.asInstanceOf[js.Any])
+    if (!js.isUndefined(pixelPerfect)) __obj.updateDynamic("pixelPerfect")(pixelPerfect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useHandCursor)) __obj.updateDynamic("useHandCursor")(useHandCursor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputConfiguration]
   }
 }

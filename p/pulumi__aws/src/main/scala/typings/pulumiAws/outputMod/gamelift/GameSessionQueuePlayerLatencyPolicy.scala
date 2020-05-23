@@ -18,9 +18,12 @@ trait GameSessionQueuePlayerLatencyPolicy extends js.Object {
 
 object GameSessionQueuePlayerLatencyPolicy {
   @scala.inline
-  def apply(maximumIndividualPlayerLatencyMilliseconds: Double, policyDurationSeconds: Int | Double = null): GameSessionQueuePlayerLatencyPolicy = {
+  def apply(
+    maximumIndividualPlayerLatencyMilliseconds: Double,
+    policyDurationSeconds: js.UndefOr[Double] = js.undefined
+  ): GameSessionQueuePlayerLatencyPolicy = {
     val __obj = js.Dynamic.literal(maximumIndividualPlayerLatencyMilliseconds = maximumIndividualPlayerLatencyMilliseconds.asInstanceOf[js.Any])
-    if (policyDurationSeconds != null) __obj.updateDynamic("policyDurationSeconds")(policyDurationSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(policyDurationSeconds)) __obj.updateDynamic("policyDurationSeconds")(policyDurationSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameSessionQueuePlayerLatencyPolicy]
   }
 }

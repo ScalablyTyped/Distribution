@@ -19,9 +19,9 @@ trait PlusAudioRecordOptions extends js.Object {
   /**
     * 录音声道
     * 可取值：
-    * 		"mono" - 单声道录音；
-    * 		"stereo" - 立体声道录音。
-    * 	默认值为"mono"。
+    *         "mono" - 单声道录音；
+    *         "stereo" - 立体声道录音。
+    *     默认值为"mono"。
     * - mono: 单声道录音
     * - stereo: 立体声录音
     * 
@@ -31,7 +31,7 @@ trait PlusAudioRecordOptions extends js.Object {
   /**
     * 保存录音文件的路径
     * 可设置具体文件名，也可只设置路径，如果以“/”结尾则表明是路径，文件名由录音程序自动生成。
-    * 	如未设置则使用默认目录生成随机文件名称，默认目录为应用%APPID%下的documents目录。
+    *     如未设置则使用默认目录生成随机文件名称，默认目录为应用%APPID%下的documents目录。
     * - _www/: 应用资源目录
     * - _doc/: 应用私有文档目录
     * - _documents/: 共享文档目录

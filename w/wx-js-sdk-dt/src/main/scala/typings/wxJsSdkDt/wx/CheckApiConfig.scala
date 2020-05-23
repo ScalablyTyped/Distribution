@@ -1,6 +1,6 @@
 package typings.wxJsSdkDt.wx
 
-import typings.wxJsSdkDt.AnonCheckResult
+import typings.wxJsSdkDt.anon.CheckResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,14 +18,14 @@ trait CheckApiConfig extends WxBaseRequestConfig {
     * 如：{"checkResult":{"chooseImage":true},"errMsg":"checkJsApi:ok"}
     */
   @JSName("success")
-  def success_MCheckApiConfig(res: AnonCheckResult): Unit
+  def success_MCheckApiConfig(res: CheckResult): Unit
 }
 
 object CheckApiConfig {
   @scala.inline
   def apply(
     jsApiList: js.Array[String],
-    success: AnonCheckResult => Unit,
+    success: CheckResult => Unit,
     cancel: () => Unit = null,
     complete: /* res */ js.UndefOr[js.Any] => Unit = null,
     fail: /* error */ js.UndefOr[js.Any] => Unit = null

@@ -20,7 +20,7 @@ object Options {
   @scala.inline
   def apply(hashFuncNames: js.Array[String], enabled: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal(hashFuncNames = hashFuncNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -20,10 +20,10 @@ trait DeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption extends js.O
 
 object DeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption {
   @scala.inline
-  def apply(actionOnTimeout: String = null, waitTimeInMinutes: Int | Double = null): DeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption = {
+  def apply(actionOnTimeout: String = null, waitTimeInMinutes: js.UndefOr[Double] = js.undefined): DeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption = {
     val __obj = js.Dynamic.literal()
     if (actionOnTimeout != null) __obj.updateDynamic("actionOnTimeout")(actionOnTimeout.asInstanceOf[js.Any])
-    if (waitTimeInMinutes != null) __obj.updateDynamic("waitTimeInMinutes")(waitTimeInMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitTimeInMinutes)) __obj.updateDynamic("waitTimeInMinutes")(waitTimeInMinutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption]
   }
 }

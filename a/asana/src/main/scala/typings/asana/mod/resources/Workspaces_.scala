@@ -1,6 +1,6 @@
 package typings.asana.mod.resources
 
-import typings.asana.AnonName
+import typings.asana.anon.Name
 import typings.asana.mod.resources.Users.Type
 import typings.asana.mod.resources.Workspaces.ShortType
 import typings.asana.mod.resources.Workspaces.TypeaheadParams
@@ -132,7 +132,7 @@ trait Workspaces_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def update(workspace: Double, data: AnonName): typings.bluebird.mod.^[typings.asana.mod.resources.Workspaces.Type] = js.native
-  def update(workspace: Double, data: AnonName, dispatchOptions: js.Any): typings.bluebird.mod.^[typings.asana.mod.resources.Workspaces.Type] = js.native
+  def update(workspace: Double, data: Name): typings.bluebird.mod.^[typings.asana.mod.resources.Workspaces.Type] = js.native
+  def update(workspace: Double, data: Name, dispatchOptions: js.Any): typings.bluebird.mod.^[typings.asana.mod.resources.Workspaces.Type] = js.native
 }
 

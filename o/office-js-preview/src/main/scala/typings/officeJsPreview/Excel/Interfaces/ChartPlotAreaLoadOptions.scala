@@ -18,70 +18,70 @@ trait ChartPlotAreaLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the formatting of a chart plotArea.
+    * Specifies the formatting of a chart plotArea.
     *
     * [Api set: ExcelApi 1.8]
     */
   var format: js.UndefOr[ChartPlotAreaFormatLoadOptions] = js.undefined
   /**
     *
-    * Represents the height value of plotArea.
+    * Specifies the height value of plotArea.
     *
     * [Api set: ExcelApi 1.8]
     */
   var height: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the insideHeight value of plotArea.
+    * Specifies the insideHeight value of plotArea.
     *
     * [Api set: ExcelApi 1.8]
     */
   var insideHeight: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the insideLeft value of plotArea.
+    * Specifies the insideLeft value of plotArea.
     *
     * [Api set: ExcelApi 1.8]
     */
   var insideLeft: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the insideTop value of plotArea.
+    * Specifies the insideTop value of plotArea.
     *
     * [Api set: ExcelApi 1.8]
     */
   var insideTop: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the insideWidth value of plotArea.
+    * Specifies the insideWidth value of plotArea.
     *
     * [Api set: ExcelApi 1.8]
     */
   var insideWidth: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the left value of plotArea.
+    * Specifies the left value of plotArea.
     *
     * [Api set: ExcelApi 1.8]
     */
   var left: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the position of plotArea.
+    * Specifies the position of plotArea.
     *
     * [Api set: ExcelApi 1.8]
     */
   var position: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the top value of plotArea.
+    * Specifies the top value of plotArea.
     *
     * [Api set: ExcelApi 1.8]
     */
   var top: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the width value of plotArea.
+    * Specifies the width value of plotArea.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -104,17 +104,17 @@ object ChartPlotAreaLoadOptions {
     width: js.UndefOr[Boolean] = js.undefined
   ): ChartPlotAreaLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(insideHeight)) __obj.updateDynamic("insideHeight")(insideHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(insideLeft)) __obj.updateDynamic("insideLeft")(insideLeft.asInstanceOf[js.Any])
-    if (!js.isUndefined(insideTop)) __obj.updateDynamic("insideTop")(insideTop.asInstanceOf[js.Any])
-    if (!js.isUndefined(insideWidth)) __obj.updateDynamic("insideWidth")(insideWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(insideHeight)) __obj.updateDynamic("insideHeight")(insideHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(insideLeft)) __obj.updateDynamic("insideLeft")(insideLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(insideTop)) __obj.updateDynamic("insideTop")(insideTop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(insideWidth)) __obj.updateDynamic("insideWidth")(insideWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartPlotAreaLoadOptions]
   }
 }

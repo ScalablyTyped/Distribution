@@ -7,7 +7,11 @@ import scala.scalajs.js.annotation._
 @JSImport("gsap", "Linear")
 @js.native
 class Linear ()
-  extends typings.gsap.gsap.Linear
+  extends typings.gsap.gsap.Ease {
+  /** Translates the tween's progress ratio into the corresponding ease ratio. */
+  /* CompleteClass */
+  override def getRatio(p: Double): Double = js.native
+}
 
 /* static members */
 @JSImport("gsap", "Linear")

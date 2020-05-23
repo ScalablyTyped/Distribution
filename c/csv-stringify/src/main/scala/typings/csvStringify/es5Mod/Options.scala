@@ -1,6 +1,5 @@
 package typings.csvStringify.es5Mod
 
-import typings.csvStringify.AnonBoolean
 import typings.node.Buffer
 import typings.std.RegExp
 import scala.scalajs.js
@@ -9,9 +8,13 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   /**
+    * Prepend the byte order mark (BOM) to the output stream.
+    */
+  var bom: js.UndefOr[Boolean] = js.undefined
+  /**
     * Key-value object which defines custom cast for certain data types
     */
-  var cast: js.UndefOr[AnonBoolean] = js.undefined
+  var cast: js.UndefOr[typings.csvStringify.anon.Boolean] = js.undefined
   /**
     * List of fields, applied when `transform` returns an object
     * order matters
@@ -68,7 +71,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    cast: AnonBoolean = null,
+    bom: js.UndefOr[Boolean] = js.undefined,
+    cast: typings.csvStringify.anon.Boolean = null,
     columns: (js.Array[ColumnOption | String]) | PlainObject[String] = null,
     delimiter: String | Buffer = null,
     eof: js.UndefOr[Boolean] = js.undefined,
@@ -82,17 +86,18 @@ object Options {
     record_delimiter: RecordDelimiter = null
   ): Options = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(bom)) __obj.updateDynamic("bom")(bom.get.asInstanceOf[js.Any])
     if (cast != null) __obj.updateDynamic("cast")(cast.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (!js.isUndefined(eof)) __obj.updateDynamic("eof")(eof.asInstanceOf[js.Any])
+    if (!js.isUndefined(eof)) __obj.updateDynamic("eof")(eof.get.asInstanceOf[js.Any])
     if (escape != null) __obj.updateDynamic("escape")(escape.asInstanceOf[js.Any])
-    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.get.asInstanceOf[js.Any])
     if (quote != null) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
-    if (!js.isUndefined(quoted)) __obj.updateDynamic("quoted")(quoted.asInstanceOf[js.Any])
-    if (!js.isUndefined(quoted_empty)) __obj.updateDynamic("quoted_empty")(quoted_empty.asInstanceOf[js.Any])
+    if (!js.isUndefined(quoted)) __obj.updateDynamic("quoted")(quoted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quoted_empty)) __obj.updateDynamic("quoted_empty")(quoted_empty.get.asInstanceOf[js.Any])
     if (quoted_match != null) __obj.updateDynamic("quoted_match")(quoted_match.asInstanceOf[js.Any])
-    if (!js.isUndefined(quoted_string)) __obj.updateDynamic("quoted_string")(quoted_string.asInstanceOf[js.Any])
+    if (!js.isUndefined(quoted_string)) __obj.updateDynamic("quoted_string")(quoted_string.get.asInstanceOf[js.Any])
     if (record_delimiter != null) __obj.updateDynamic("record_delimiter")(record_delimiter.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

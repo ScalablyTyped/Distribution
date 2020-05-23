@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.SharedWorkspace")
 @js.native
-class SharedWorkspace protected () extends js.Object {
+trait SharedWorkspace extends js.Object {
   val Application: js.Any = js.native
   val Connected: Boolean = js.native
   val Creator: Double = js.native

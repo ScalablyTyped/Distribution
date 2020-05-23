@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonNumberOfLevelZeroTilesY
+import typings.cesium.anon.NumberOfLevelZeroTilesY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "WebMercatorTilingScheme")
 @js.native
 class WebMercatorTilingScheme () extends js.Object {
-  def this(options: AnonNumberOfLevelZeroTilesY) = this()
+  def this(options: NumberOfLevelZeroTilesY) = this()
   var ellipsoid: Ellipsoid = js.native
   var projection: MapProjection = js.native
   var rectangle: Rectangle = js.native

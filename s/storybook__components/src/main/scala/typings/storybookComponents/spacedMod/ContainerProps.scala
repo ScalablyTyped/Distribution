@@ -13,11 +13,15 @@ trait ContainerProps extends js.Object {
 
 object ContainerProps {
   @scala.inline
-  def apply(col: Int | Double = null, outer: Int | Double = null, row: Int | Double = null): ContainerProps = {
+  def apply(
+    col: js.UndefOr[Double] = js.undefined,
+    outer: js.UndefOr[Double] = js.undefined,
+    row: js.UndefOr[Double] = js.undefined
+  ): ContainerProps = {
     val __obj = js.Dynamic.literal()
-    if (col != null) __obj.updateDynamic("col")(col.asInstanceOf[js.Any])
-    if (outer != null) __obj.updateDynamic("outer")(outer.asInstanceOf[js.Any])
-    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
+    if (!js.isUndefined(col)) __obj.updateDynamic("col")(col.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(outer)) __obj.updateDynamic("outer")(outer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(row)) __obj.updateDynamic("row")(row.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerProps]
   }
 }

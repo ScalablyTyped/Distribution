@@ -28,16 +28,16 @@ trait GoogleTypeTimeOfDay extends js.Object {
 object GoogleTypeTimeOfDay {
   @scala.inline
   def apply(
-    hours: Int | Double = null,
-    minutes: Int | Double = null,
-    nanos: Int | Double = null,
-    seconds: Int | Double = null
+    hours: js.UndefOr[Double] = js.undefined,
+    minutes: js.UndefOr[Double] = js.undefined,
+    nanos: js.UndefOr[Double] = js.undefined,
+    seconds: js.UndefOr[Double] = js.undefined
   ): GoogleTypeTimeOfDay = {
     val __obj = js.Dynamic.literal()
-    if (hours != null) __obj.updateDynamic("hours")(hours.asInstanceOf[js.Any])
-    if (minutes != null) __obj.updateDynamic("minutes")(minutes.asInstanceOf[js.Any])
-    if (nanos != null) __obj.updateDynamic("nanos")(nanos.asInstanceOf[js.Any])
-    if (seconds != null) __obj.updateDynamic("seconds")(seconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(hours)) __obj.updateDynamic("hours")(hours.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minutes)) __obj.updateDynamic("minutes")(minutes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nanos)) __obj.updateDynamic("nanos")(nanos.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(seconds)) __obj.updateDynamic("seconds")(seconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleTypeTimeOfDay]
   }
 }

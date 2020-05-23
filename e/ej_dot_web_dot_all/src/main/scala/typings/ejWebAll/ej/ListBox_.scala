@@ -1,18 +1,11 @@
 package typings.ejWebAll.ej
 
-import typings.ejWebAll.JQuery
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.ListBox")
 @js.native
-class ListBox_ protected () extends Widget_ {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.ListBox.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.ListBox.Model) = this()
+trait ListBox_ extends Widget_ {
   var defaults: typings.ejWebAll.ej.ListBox.Model = js.native
   @JSName("model")
   var model_ListBox_ : typings.ejWebAll.ej.ListBox.Model = js.native

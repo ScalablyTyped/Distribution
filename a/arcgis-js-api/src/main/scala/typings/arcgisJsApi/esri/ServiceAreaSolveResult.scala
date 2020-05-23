@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,8 +51,4 @@ trait ServiceAreaSolveResult
     */
   var serviceAreaPolylines: js.Array[Graphic] = js.native
 }
-
-@JSGlobal("__esri.ServiceAreaSolveResult")
-@js.native
-object ServiceAreaSolveResult extends TopLevel[ServiceAreaSolveResultConstructor]
 

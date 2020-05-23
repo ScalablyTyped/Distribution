@@ -71,37 +71,37 @@ trait RecordProxy[T] extends js.Object {
     name: K,
     args: Variables
   ): RecordProxy[T] = js.native
-  def setLinkedRecords(records: js.UndefOr[scala.Nothing], name: String): RecordProxy[T] = js.native
-  def setLinkedRecords(records: js.UndefOr[scala.Nothing], name: String, args: Variables): RecordProxy[T] = js.native
-  def setLinkedRecords(records: js.Array[RecordProxy[js.Object] | Null], name: String): RecordProxy[T] = js.native
-  def setLinkedRecords(records: js.Array[RecordProxy[js.Object] | Null], name: String, args: Variables): RecordProxy[T] = js.native
-  def setLinkedRecords(records: Null, name: String): RecordProxy[T] = js.native
-  def setLinkedRecords(records: Null, name: String, args: Variables): RecordProxy[T] = js.native
-  def setLinkedRecords[K /* <: /* keyof T */ String */](records: js.UndefOr[scala.Nothing], name: K): RecordProxy[T] = js.native
-  def setLinkedRecords[K /* <: /* keyof T */ String */](records: js.UndefOr[scala.Nothing], name: K, args: Variables): RecordProxy[T] = js.native
+  def setLinkedRecords(records: js.UndefOr[(js.Array[RecordProxy[js.Object] | Null]) | Null], name: String): RecordProxy[T] = js.native
+  def setLinkedRecords(
+    records: js.UndefOr[(js.Array[RecordProxy[js.Object] | Null]) | Null],
+    name: String,
+    args: Variables
+  ): RecordProxy[T] = js.native
   def setLinkedRecords[K /* <: /* keyof T */ String */](
-    records: js.Array[
-      (RecordProxy[
-        Unarray[
-          /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
-        ]
+    records: js.UndefOr[
+      (js.Array[
+        (RecordProxy[
+          Unarray[
+            /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+          ]
+        ]) | Null
       ]) | Null
     ],
     name: K
   ): RecordProxy[T] = js.native
   def setLinkedRecords[K /* <: /* keyof T */ String */](
-    records: js.Array[
-      (RecordProxy[
-        Unarray[
-          /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
-        ]
+    records: js.UndefOr[
+      (js.Array[
+        (RecordProxy[
+          Unarray[
+            /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+          ]
+        ]) | Null
       ]) | Null
     ],
     name: K,
     args: Variables
   ): RecordProxy[T] = js.native
-  def setLinkedRecords[K /* <: /* keyof T */ String */](records: Null, name: K): RecordProxy[T] = js.native
-  def setLinkedRecords[K /* <: /* keyof T */ String */](records: Null, name: K, args: Variables): RecordProxy[T] = js.native
   def setValue(value: js.Array[Primitive], name: String): RecordProxy[js.Object] = js.native
   def setValue(value: js.Array[Primitive], name: String, args: Variables): RecordProxy[js.Object] = js.native
   def setValue(value: Primitive, name: String): RecordProxy[js.Object] = js.native

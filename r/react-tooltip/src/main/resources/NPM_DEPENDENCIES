@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-tooltip" : "4.2.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-tooltip" : "4.2.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

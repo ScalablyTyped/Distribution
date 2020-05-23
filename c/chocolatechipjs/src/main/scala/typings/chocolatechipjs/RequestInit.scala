@@ -10,9 +10,9 @@ trait RequestInit extends js.Object {
 
 object RequestInit {
   @scala.inline
-  def apply(timeout: Int | Double = null): RequestInit = {
+  def apply(timeout: js.UndefOr[Double] = js.undefined): RequestInit = {
     val __obj = js.Dynamic.literal()
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestInit]
   }
 }

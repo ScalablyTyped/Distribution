@@ -1,6 +1,7 @@
 package typings.wiiu
 
 import typings.std.CustomEvent
+import typings.wiiu.anon.Typeofwiiu
 import typings.wiiu.wiiuStrings.wiiu_imageview_change_content
 import typings.wiiu.wiiuStrings.wiiu_imageview_change_viewmode
 import typings.wiiu.wiiuStrings.wiiu_imageview_end

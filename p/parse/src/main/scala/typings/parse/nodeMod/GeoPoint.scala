@@ -1,6 +1,6 @@
 package typings.parse.nodeMod
 
-import typings.parse.AnonLatitude
+import typings.parse.anon.Latitude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation._
 class GeoPoint ()
   extends typings.parse.mod.GeoPoint {
   def this(coords: js.Tuple2[Double, Double]) = this()
-  def this(coords: AnonLatitude) = this()
+  def this(coords: Latitude) = this()
   def this(latitude: Double, longitude: Double) = this()
 }
 

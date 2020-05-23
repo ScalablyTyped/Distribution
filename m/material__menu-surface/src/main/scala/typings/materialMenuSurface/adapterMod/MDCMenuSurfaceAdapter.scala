@@ -1,6 +1,6 @@
 package typings.materialMenuSurface.adapterMod
 
-import typings.materialMenuSurface.PartialMDCMenuDistance
+import typings.materialMenuSurface.anon.PartialMDCMenuDistance
 import typings.materialMenuSurface.typesMod.MDCMenuDimensions
 import typings.materialMenuSurface.typesMod.MDCMenuPoint
 import typings.std.ClientRect

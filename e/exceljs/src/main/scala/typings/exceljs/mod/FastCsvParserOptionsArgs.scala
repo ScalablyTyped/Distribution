@@ -10,7 +10,7 @@ trait FastCsvParserOptionsArgs extends js.Object {
   var discardUnmappedColumns: Boolean
   var encoding: String
   var escape: String
-  var headers: Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HeaderTransformFunction */ js.Any)
+  var headers: Boolean | HeaderTransformFunction | HeaderArray
   var ignoreEmpty: Boolean
   var ltrim: Boolean
   var maxRows: Double
@@ -32,7 +32,7 @@ object FastCsvParserOptionsArgs {
     discardUnmappedColumns: Boolean,
     encoding: String,
     escape: String,
-    headers: Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HeaderTransformFunction */ js.Any),
+    headers: Boolean | HeaderTransformFunction | HeaderArray,
     ignoreEmpty: Boolean,
     ltrim: Boolean,
     maxRows: Double,
@@ -45,8 +45,7 @@ object FastCsvParserOptionsArgs {
     trim: Boolean,
     quote: String = null
   ): FastCsvParserOptionsArgs = {
-    val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], delimiter = delimiter.asInstanceOf[js.Any], discardUnmappedColumns = discardUnmappedColumns.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], escape = escape.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], ignoreEmpty = ignoreEmpty.asInstanceOf[js.Any], ltrim = ltrim.asInstanceOf[js.Any], maxRows = maxRows.asInstanceOf[js.Any], objectMode = objectMode.asInstanceOf[js.Any], renameHeaders = renameHeaders.asInstanceOf[js.Any], rtrim = rtrim.asInstanceOf[js.Any], skipLines = skipLines.asInstanceOf[js.Any], skipRows = skipRows.asInstanceOf[js.Any], strictColumnHandling = strictColumnHandling.asInstanceOf[js.Any], trim = trim.asInstanceOf[js.Any])
-    if (quote != null) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], delimiter = delimiter.asInstanceOf[js.Any], discardUnmappedColumns = discardUnmappedColumns.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], escape = escape.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], ignoreEmpty = ignoreEmpty.asInstanceOf[js.Any], ltrim = ltrim.asInstanceOf[js.Any], maxRows = maxRows.asInstanceOf[js.Any], objectMode = objectMode.asInstanceOf[js.Any], renameHeaders = renameHeaders.asInstanceOf[js.Any], rtrim = rtrim.asInstanceOf[js.Any], skipLines = skipLines.asInstanceOf[js.Any], skipRows = skipRows.asInstanceOf[js.Any], strictColumnHandling = strictColumnHandling.asInstanceOf[js.Any], trim = trim.asInstanceOf[js.Any], quote = quote.asInstanceOf[js.Any])
     __obj.asInstanceOf[FastCsvParserOptionsArgs]
   }
 }

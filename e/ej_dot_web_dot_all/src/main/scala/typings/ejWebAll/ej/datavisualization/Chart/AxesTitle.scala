@@ -43,21 +43,21 @@ object AxesTitle {
     alignment: TextAlignment | String = null,
     enableTrim: js.UndefOr[Boolean] = js.undefined,
     font: AxesTitleFont = null,
-    maximumTitleWidth: Int | Double = null,
-    offset: Int | Double = null,
+    maximumTitleWidth: js.UndefOr[Double] = js.undefined,
+    offset: js.UndefOr[Double] = js.undefined,
     position: LabelPosition | String = null,
     text: String = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): AxesTitle = {
     val __obj = js.Dynamic.literal()
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTrim)) __obj.updateDynamic("enableTrim")(enableTrim.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTrim)) __obj.updateDynamic("enableTrim")(enableTrim.get.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (maximumTitleWidth != null) __obj.updateDynamic("maximumTitleWidth")(maximumTitleWidth.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumTitleWidth)) __obj.updateDynamic("maximumTitleWidth")(maximumTitleWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AxesTitle]
   }
 }

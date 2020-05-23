@@ -65,7 +65,7 @@ object ComponentOptions {
     val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any])
     if (assetsDir != null) __obj.updateDynamic("assetsDir")(assetsDir.asInstanceOf[js.Any])
     if (assetsDirs != null) __obj.updateDynamic("assetsDirs")(assetsDirs.asInstanceOf[js.Any])
-    if (!js.isUndefined(scoped)) __obj.updateDynamic("scoped")(scoped.asInstanceOf[js.Any])
+    if (!js.isUndefined(scoped)) __obj.updateDynamic("scoped")(scoped.get.asInstanceOf[js.Any])
     if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
     if (styleUrl != null) __obj.updateDynamic("styleUrl")(styleUrl.asInstanceOf[js.Any])
     if (styleUrls != null) __obj.updateDynamic("styleUrls")(styleUrls.asInstanceOf[js.Any])

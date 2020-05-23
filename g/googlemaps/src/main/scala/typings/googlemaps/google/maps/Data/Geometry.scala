@@ -5,10 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.maps.Data.Geometry")
-@js.native
-class Geometry () extends js.Object {
-  def forEachLatLng(callback: js.Function1[/* latLng */ LatLng, Unit]): Unit = js.native
-  def getType(): String = js.native
+trait Geometry extends js.Object {
+  def forEachLatLng(callback: js.Function1[/* latLng */ LatLng, Unit]): Unit
+  def getType(): String
+}
+
+object Geometry {
+  @scala.inline
+  def apply(forEachLatLng: js.Function1[/* latLng */ LatLng, Unit] => Unit, getType: () => String): Geometry = {
+    val __obj = js.Dynamic.literal(forEachLatLng = js.Any.fromFunction1(forEachLatLng), getType = js.Any.fromFunction0(getType))
+    __obj.asInstanceOf[Geometry]
+  }
 }
 

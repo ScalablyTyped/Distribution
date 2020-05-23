@@ -12,9 +12,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a conversation in a chat client. */
-@JSGlobal("Windows.ApplicationModel.Chat.ChatConversation")
 @js.native
-abstract class ChatConversation () extends js.Object {
+trait ChatConversation extends js.Object {
   /** Gets or sets a boolean that indicates whether participants can be modified or not. */
   var canModifyParticipants: Boolean = js.native
   /** Gets a Boolean value indicating if there are unread messages in the ChatConversation . */

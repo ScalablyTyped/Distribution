@@ -12,7 +12,7 @@ object IColumnHeaderCellState {
   @scala.inline
   def apply(isActive: js.UndefOr[Boolean] = js.undefined): IColumnHeaderCellState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.asInstanceOf[js.Any])
+    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColumnHeaderCellState]
   }
 }

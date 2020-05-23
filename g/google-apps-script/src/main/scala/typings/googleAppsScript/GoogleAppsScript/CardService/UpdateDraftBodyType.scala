@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.CardService
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,11 +15,6 @@ sealed trait UpdateDraftBodyType extends js.Object
 object UpdateDraftBodyType extends js.Object {
   @js.native
   sealed trait IN_PLACE_INSERT extends UpdateDraftBodyType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UpdateDraftBodyType with Double] = js.native
-  /* 0 */ @js.native
-  object IN_PLACE_INSERT extends TopLevel[IN_PLACE_INSERT with Double]
   
 }
 

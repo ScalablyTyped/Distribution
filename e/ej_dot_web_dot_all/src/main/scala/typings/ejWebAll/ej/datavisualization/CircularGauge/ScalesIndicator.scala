@@ -34,20 +34,20 @@ trait ScalesIndicator extends js.Object {
 object ScalesIndicator {
   @scala.inline
   def apply(
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     imageUrl: String = null,
     position: ScalesIndicatorsPosition = null,
     stateRanges: js.Array[ScalesIndicatorsStateRange] = null,
     `type`: IndicatorTypes | String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): ScalesIndicator = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (stateRanges != null) __obj.updateDynamic("stateRanges")(stateRanges.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalesIndicator]
   }
 }

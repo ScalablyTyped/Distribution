@@ -29,11 +29,11 @@ object EndpointSettings {
     DriverOpts: StringDictionary[String] = null,
     EndpointID: String = null,
     Gateway: String = null,
-    GlobalIPV6PrefixLen: Int | Double = null,
+    GlobalIPV6PrefixLen: js.UndefOr[Double] = js.undefined,
     GlobalIPv6Address: String = null,
     IPAMConfig: IPAMConfig = null,
     IPAddress: String = null,
-    IPPrefixLen: Int | Double = null,
+    IPPrefixLen: js.UndefOr[Double] = js.undefined,
     IPv6Gateway: String = null,
     Links: js.Array[String] = null,
     MacAddress: String = null,
@@ -44,11 +44,11 @@ object EndpointSettings {
     if (DriverOpts != null) __obj.updateDynamic("DriverOpts")(DriverOpts.asInstanceOf[js.Any])
     if (EndpointID != null) __obj.updateDynamic("EndpointID")(EndpointID.asInstanceOf[js.Any])
     if (Gateway != null) __obj.updateDynamic("Gateway")(Gateway.asInstanceOf[js.Any])
-    if (GlobalIPV6PrefixLen != null) __obj.updateDynamic("GlobalIPV6PrefixLen")(GlobalIPV6PrefixLen.asInstanceOf[js.Any])
+    if (!js.isUndefined(GlobalIPV6PrefixLen)) __obj.updateDynamic("GlobalIPV6PrefixLen")(GlobalIPV6PrefixLen.get.asInstanceOf[js.Any])
     if (GlobalIPv6Address != null) __obj.updateDynamic("GlobalIPv6Address")(GlobalIPv6Address.asInstanceOf[js.Any])
     if (IPAMConfig != null) __obj.updateDynamic("IPAMConfig")(IPAMConfig.asInstanceOf[js.Any])
     if (IPAddress != null) __obj.updateDynamic("IPAddress")(IPAddress.asInstanceOf[js.Any])
-    if (IPPrefixLen != null) __obj.updateDynamic("IPPrefixLen")(IPPrefixLen.asInstanceOf[js.Any])
+    if (!js.isUndefined(IPPrefixLen)) __obj.updateDynamic("IPPrefixLen")(IPPrefixLen.get.asInstanceOf[js.Any])
     if (IPv6Gateway != null) __obj.updateDynamic("IPv6Gateway")(IPv6Gateway.asInstanceOf[js.Any])
     if (Links != null) __obj.updateDynamic("Links")(Links.asInstanceOf[js.Any])
     if (MacAddress != null) __obj.updateDynamic("MacAddress")(MacAddress.asInstanceOf[js.Any])

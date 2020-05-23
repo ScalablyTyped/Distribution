@@ -13,17 +13,15 @@ object stringMod extends js.Object {
     var capitalize: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof capitalize */ js.Any = js.native
     var deburr: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof deburr */ js.Any = js.native
     var endsWith: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof endsWith */ js.Any = js.native
+    var escape: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof escape */ js.Any = js.native
     var escapeRegExp: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof escapeRegExp */ js.Any = js.native
-    @JSName("escape")
-    var escape_Original: js.Function1[/* string */ String, String] = js.native
     var kebabCase: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof kebabCase */ js.Any = js.native
     var lowerCase: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof lowerCase */ js.Any = js.native
     var lowerFirst: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof lowerFirst */ js.Any = js.native
     var pad: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pad */ js.Any = js.native
     var padEnd: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof padEnd */ js.Any = js.native
     var padStart: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof padStart */ js.Any = js.native
-    @JSName("parseInt")
-    var parseInt_Original: FnCall = js.native
+    var parseInt: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof parseInt */ js.Any = js.native
     var repeat: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof repeat */ js.Any = js.native
     var replace: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof replace */ js.Any = js.native
     var snakeCase: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof snakeCase */ js.Any = js.native
@@ -38,15 +36,10 @@ object stringMod extends js.Object {
     var trimEnd: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof trimEnd */ js.Any = js.native
     var trimStart: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof trimStart */ js.Any = js.native
     var truncate: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof truncate */ js.Any = js.native
-    @JSName("unescape")
-    var unescape_Original: js.Function1[/* string */ String, String] = js.native
+    var unescape: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof unescape */ js.Any = js.native
     var upperCase: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof upperCase */ js.Any = js.native
     var upperFirst: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof upperFirst */ js.Any = js.native
     var words: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof words */ js.Any = js.native
-    def escape(string: String): String = js.native
-    def parseInt(s: String): Double = js.native
-    def parseInt(s: String, radix: Double): Double = js.native
-    def unescape(string: String): String = js.native
   }
   
 }

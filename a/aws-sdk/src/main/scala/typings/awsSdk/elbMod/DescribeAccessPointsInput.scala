@@ -22,11 +22,15 @@ trait DescribeAccessPointsInput extends js.Object {
 
 object DescribeAccessPointsInput {
   @scala.inline
-  def apply(LoadBalancerNames: LoadBalancerNames = null, Marker: Marker = null, PageSize: Int | Double = null): DescribeAccessPointsInput = {
+  def apply(
+    LoadBalancerNames: LoadBalancerNames = null,
+    Marker: Marker = null,
+    PageSize: js.UndefOr[PageSize] = js.undefined
+  ): DescribeAccessPointsInput = {
     val __obj = js.Dynamic.literal()
     if (LoadBalancerNames != null) __obj.updateDynamic("LoadBalancerNames")(LoadBalancerNames.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAccessPointsInput]
   }
 }

@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation._
 
 trait ConnectionSummary extends js.Object {
   /**
-  		 * database name
-  		 */
+    * database name
+    */
   var databaseName: String
   /**
-  		 * server name
-  		 */
+    * server name
+    */
   var serverName: String
   /**
-  		 * user name
-  		 */
+    * user name
+    */
   var userName: String
 }
 

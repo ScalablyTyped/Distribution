@@ -35,7 +35,7 @@ object LabelTransform {
     avoidBaseMark: Boolean | SignalRef = null,
     avoidMarks: js.Array[String] = null,
     lineAnchor: begin | end | SignalRef = null,
-    markIndex: Int | Double = null,
+    markIndex: js.UndefOr[Double] = js.undefined,
     offset: js.Array[Double] | Double | SignalRef = null,
     padding: Double | SignalRef = null,
     sort: Compare = null
@@ -47,7 +47,7 @@ object LabelTransform {
     if (avoidBaseMark != null) __obj.updateDynamic("avoidBaseMark")(avoidBaseMark.asInstanceOf[js.Any])
     if (avoidMarks != null) __obj.updateDynamic("avoidMarks")(avoidMarks.asInstanceOf[js.Any])
     if (lineAnchor != null) __obj.updateDynamic("lineAnchor")(lineAnchor.asInstanceOf[js.Any])
-    if (markIndex != null) __obj.updateDynamic("markIndex")(markIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(markIndex)) __obj.updateDynamic("markIndex")(markIndex.get.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])

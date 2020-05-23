@@ -1,6 +1,5 @@
 package typings.officeJs.OneNote
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object InsertLocation extends js.Object {
   
   @js.native
   sealed trait before extends InsertLocation
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[InsertLocation with String] = js.native
-  /* "After" */ @js.native
-  object after extends TopLevel[after with String]
-  
-  /* "Before" */ @js.native
-  object before extends TopLevel[before with String]
   
 }
 

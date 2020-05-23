@@ -15,7 +15,7 @@ object DateOptions {
   @scala.inline
   def apply(endOfDay: js.UndefOr[Boolean] = js.undefined): DateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(endOfDay)) __obj.updateDynamic("endOfDay")(endOfDay.asInstanceOf[js.Any])
+    if (!js.isUndefined(endOfDay)) __obj.updateDynamic("endOfDay")(endOfDay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateOptions]
   }
 }

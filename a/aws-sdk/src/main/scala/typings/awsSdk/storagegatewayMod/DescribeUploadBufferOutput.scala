@@ -26,14 +26,14 @@ object DescribeUploadBufferOutput {
   def apply(
     DiskIds: DiskIds = null,
     GatewayARN: GatewayARN = null,
-    UploadBufferAllocatedInBytes: Int | Double = null,
-    UploadBufferUsedInBytes: Int | Double = null
+    UploadBufferAllocatedInBytes: js.UndefOr[long] = js.undefined,
+    UploadBufferUsedInBytes: js.UndefOr[long] = js.undefined
   ): DescribeUploadBufferOutput = {
     val __obj = js.Dynamic.literal()
     if (DiskIds != null) __obj.updateDynamic("DiskIds")(DiskIds.asInstanceOf[js.Any])
     if (GatewayARN != null) __obj.updateDynamic("GatewayARN")(GatewayARN.asInstanceOf[js.Any])
-    if (UploadBufferAllocatedInBytes != null) __obj.updateDynamic("UploadBufferAllocatedInBytes")(UploadBufferAllocatedInBytes.asInstanceOf[js.Any])
-    if (UploadBufferUsedInBytes != null) __obj.updateDynamic("UploadBufferUsedInBytes")(UploadBufferUsedInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(UploadBufferAllocatedInBytes)) __obj.updateDynamic("UploadBufferAllocatedInBytes")(UploadBufferAllocatedInBytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(UploadBufferUsedInBytes)) __obj.updateDynamic("UploadBufferUsedInBytes")(UploadBufferUsedInBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeUploadBufferOutput]
   }
 }

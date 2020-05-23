@@ -14,7 +14,7 @@ object SendParams {
   @scala.inline
   def apply(Messages: js.Array[SendParamsMessage], SandboxMode: js.UndefOr[Boolean] = js.undefined): SendParams = {
     val __obj = js.Dynamic.literal(Messages = Messages.asInstanceOf[js.Any])
-    if (!js.isUndefined(SandboxMode)) __obj.updateDynamic("SandboxMode")(SandboxMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(SandboxMode)) __obj.updateDynamic("SandboxMode")(SandboxMode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendParams]
   }
 }

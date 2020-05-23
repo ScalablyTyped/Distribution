@@ -33,24 +33,24 @@ object barrierMod extends js.Object {
     var _resolveNextPhase: js.Any = js.native
     var _waiters: js.Any = js.native
     /**
-      * Gets the number of the Barrier's current phase.
-      */
-    val currentPhaseNumber: Double = js.native
-    /**
-      * Gets the total number of participants in the barrier.
-      */
-    val participantCount: Double = js.native
-    /**
-      * Gets the number of participants in the barrier that haven't yet signaled in the current phase.
-      */
-    val remainingParticipants: Double = js.native
-    /**
       * Notifies the Barrier there will be additional participants.
       *
       * @param participantCount The number of additional participants.
       */
     def add(): Unit = js.native
     def add(participantCount: Double): Unit = js.native
+    /**
+      * Gets the number of the Barrier's current phase.
+      */
+    def currentPhaseNumber: Double = js.native
+    /**
+      * Gets the total number of participants in the barrier.
+      */
+    def participantCount: Double = js.native
+    /**
+      * Gets the number of participants in the barrier that haven't yet signaled in the current phase.
+      */
+    def remainingParticipants: Double = js.native
     /**
       * Notifies the Barrier there will be fewer participants.
       *

@@ -26,7 +26,7 @@ object GroupOptions {
     color1: String = null,
     color2: String = null,
     color3: String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     mode: `1` | `3` | `4` = null,
     no_cover: NumericBoolean = null,
     wide: NumericBoolean = null,
@@ -36,7 +36,7 @@ object GroupOptions {
     if (color1 != null) __obj.updateDynamic("color1")(color1.asInstanceOf[js.Any])
     if (color2 != null) __obj.updateDynamic("color2")(color2.asInstanceOf[js.Any])
     if (color3 != null) __obj.updateDynamic("color3")(color3.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (no_cover != null) __obj.updateDynamic("no_cover")(no_cover.asInstanceOf[js.Any])
     if (wide != null) __obj.updateDynamic("wide")(wide.asInstanceOf[js.Any])

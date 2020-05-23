@@ -134,7 +134,7 @@ trait ScaleThemeProperties extends js.Object {
   /**
     * | Prop              | CSS Property                   | Theme Field |
     * | :---------------- | :----------------------------- | :---------- |
-    * | m, margin	       | margin                         | space       |
+    * | m, margin           | margin                         | space       |
     * | mt, marginTop     | margin-top                     | space       |
     * | mr, marginRight   | margin-right                   | space       |
     * | mb, marginBottom  | margin-bottom                  | space       |

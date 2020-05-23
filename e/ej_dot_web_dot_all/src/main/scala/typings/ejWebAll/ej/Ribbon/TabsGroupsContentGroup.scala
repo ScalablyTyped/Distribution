@@ -98,14 +98,14 @@ object TabsGroupsContentGroup {
   @scala.inline
   def apply(
     buttonSettings: js.Any = null,
-    columns: Int | Double = null,
+    columns: js.UndefOr[Double] = js.undefined,
     contentID: String = null,
     cssClass: String = null,
     customGalleryItems: js.Array[TabsGroupsContentGroupsCustomGalleryItem] = null,
     customToolTip: TabsGroupsContentGroupsCustomToolTip = null,
     dropdownSettings: js.Any = null,
     enableSeparator: js.UndefOr[Boolean] = js.undefined,
-    expandedColumns: Int | Double = null,
+    expandedColumns: js.UndefOr[Double] = js.undefined,
     galleryItems: js.Array[TabsGroupsContentGroupsGalleryItem] = null,
     id: String = null,
     isBig: js.UndefOr[Boolean] = js.undefined,
@@ -121,18 +121,18 @@ object TabsGroupsContentGroup {
   ): TabsGroupsContentGroup = {
     val __obj = js.Dynamic.literal()
     if (buttonSettings != null) __obj.updateDynamic("buttonSettings")(buttonSettings.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns.get.asInstanceOf[js.Any])
     if (contentID != null) __obj.updateDynamic("contentID")(contentID.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (customGalleryItems != null) __obj.updateDynamic("customGalleryItems")(customGalleryItems.asInstanceOf[js.Any])
     if (customToolTip != null) __obj.updateDynamic("customToolTip")(customToolTip.asInstanceOf[js.Any])
     if (dropdownSettings != null) __obj.updateDynamic("dropdownSettings")(dropdownSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSeparator)) __obj.updateDynamic("enableSeparator")(enableSeparator.asInstanceOf[js.Any])
-    if (expandedColumns != null) __obj.updateDynamic("expandedColumns")(expandedColumns.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSeparator)) __obj.updateDynamic("enableSeparator")(enableSeparator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandedColumns)) __obj.updateDynamic("expandedColumns")(expandedColumns.get.asInstanceOf[js.Any])
     if (galleryItems != null) __obj.updateDynamic("galleryItems")(galleryItems.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBig)) __obj.updateDynamic("isBig")(isBig.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMobileOnly)) __obj.updateDynamic("isMobileOnly")(isMobileOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBig)) __obj.updateDynamic("isBig")(isBig.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMobileOnly)) __obj.updateDynamic("isMobileOnly")(isMobileOnly.get.asInstanceOf[js.Any])
     if (itemHeight != null) __obj.updateDynamic("itemHeight")(itemHeight.asInstanceOf[js.Any])
     if (itemWidth != null) __obj.updateDynamic("itemWidth")(itemWidth.asInstanceOf[js.Any])
     if (quickAccessMode != null) __obj.updateDynamic("quickAccessMode")(quickAccessMode.asInstanceOf[js.Any])

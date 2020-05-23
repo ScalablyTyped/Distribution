@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.EventEmitter")
 @js.native
-abstract class EventEmitter () extends js.Object {
+trait EventEmitter extends js.Object {
   /**
     * 触发事件
     * @param eventName 事件名称

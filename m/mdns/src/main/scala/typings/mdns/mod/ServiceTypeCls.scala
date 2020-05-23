@@ -1,6 +1,6 @@
 package typings.mdns.mod
 
-import typings.mdns.AnonName
+import typings.mdns.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class ServiceTypeCls protected () extends ServiceType {
   def this(serviceTypeIdentifier: String) = this()
   def this(serviceTypeIdentifier: js.Array[String]) = this()
-  def this(serviceTypeIdentifier: AnonName) = this()
+  def this(serviceTypeIdentifier: Name) = this()
   def this(serviceType: ServiceType) = this()
   def this(name: String, protocol: String, subtypes: String*) = this()
 }

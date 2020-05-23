@@ -1,6 +1,6 @@
 package typings.dc.mod
 
-import typings.dc.AnonKey
+import typings.dc.anon.Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SelectMenu extends BaseMixin[SelectMenu] {
   @JSName("filterDisplayed")
-  var filterDisplayed_Original: IGetSet[js.Function2[/* a */ AnonKey, /* index */ Double, Boolean], SelectMenu] = js.native
+  var filterDisplayed_Original: IGetSet[js.Function2[/* a */ Key, /* index */ Double, Boolean], SelectMenu] = js.native
   @JSName("multiple")
   var multiple_Original: IGetSet[Boolean, SelectMenu] = js.native
   @JSName("numberVisible")
@@ -19,8 +19,8 @@ trait SelectMenu extends BaseMixin[SelectMenu] {
   var promptText_Original: IGetSet[String, SelectMenu] = js.native
   @JSName("promptValue")
   var promptValue_Original: IGetSet[_, SelectMenu] = js.native
-  def filterDisplayed(): js.Function2[/* a */ AnonKey, /* index */ Double, Boolean] = js.native
-  def filterDisplayed(t: js.Function2[/* a */ AnonKey, /* index */ Double, Boolean]): SelectMenu = js.native
+  def filterDisplayed(): js.Function2[/* a */ Key, /* index */ Double, Boolean] = js.native
+  def filterDisplayed(t: js.Function2[/* a */ Key, /* index */ Double, Boolean]): SelectMenu = js.native
   def multiple(): Boolean = js.native
   def multiple(t: Boolean): SelectMenu = js.native
   def numberVisible(): Double = js.native

@@ -8,7 +8,8 @@ trait App extends js.Object {
   var association: js.UndefOr[Null | AppAssociation] = js.undefined
   var id: String
   var name: String
-  var org: Null | Org
+  @JSName("org")
+  var org_ : Null | Org
   var repo_url: js.UndefOr[String] = js.undefined
   var slug: String
 }
@@ -19,13 +20,13 @@ object App {
     id: String,
     name: String,
     slug: String,
-    association: AppAssociation = null,
-    org: Org = null,
+    association: js.UndefOr[Null | AppAssociation] = js.undefined,
+    org_ : Org = null,
     repo_url: String = null
   ): App = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
-    if (association != null) __obj.updateDynamic("association")(association.asInstanceOf[js.Any])
-    if (org != null) __obj.updateDynamic("org")(org.asInstanceOf[js.Any])
+    if (!js.isUndefined(association)) __obj.updateDynamic("association")(association.asInstanceOf[js.Any])
+    __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     if (repo_url != null) __obj.updateDynamic("repo_url")(repo_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[App]
   }

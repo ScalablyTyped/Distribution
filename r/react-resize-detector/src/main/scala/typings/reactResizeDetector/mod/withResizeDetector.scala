@@ -1,7 +1,7 @@
 package typings.reactResizeDetector.mod
 
 import typings.react.mod.ComponentType
-import typings.reactResizeDetector.PartialReactResizeDetecto
+import typings.reactResizeDetector.anon.PartialReactResizeDetecto
 import typings.reactResizeDetector.reactResizeDetectorStrings.height
 import typings.reactResizeDetector.reactResizeDetectorStrings.width
 import scala.scalajs.js

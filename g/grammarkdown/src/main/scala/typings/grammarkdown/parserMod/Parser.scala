@@ -1,5 +1,6 @@
 package typings.grammarkdown.parserMod
 
+import typings.esfxCancelable.distMod.Cancelable
 import typings.grammarkdown.nodesMod.SourceFile
 import typings.prex.mod.CancellationToken
 import scala.scalajs.js
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Parser () extends js.Object {
   var canBeIdentifier: js.Any = js.native
-  var cancellationToken: js.Any = js.native
+  var cancelToken: js.UndefOr[js.Any] = js.native
   var diagnostics: js.Any = js.native
   var finishNode: js.Any = js.native
   var imports: js.Any = js.native
@@ -86,13 +87,13 @@ class Parser () extends js.Object {
   var speculate: js.Any = js.native
   var tags: js.Any = js.native
   var tryMoveToNextElement: js.Any = js.native
-  var tryParse: js.Any = js.native
   var tryParseArgumentList: js.Any = js.native
   var tryParseConstraints: js.Any = js.native
   var tryParseParameterList: js.Any = js.native
   var tryParseSymbolSpan: js.Any = js.native
   var tryStopParsingList: js.Any = js.native
   def parseSourceFile(filename: String, text: String): SourceFile = js.native
-  def parseSourceFile(filename: String, text: String, cancellationToken: CancellationToken): SourceFile = js.native
+  def parseSourceFile(filename: String, text: String, cancelable: Cancelable): SourceFile = js.native
+  def parseSourceFile(filename: String, text: String, cancelable: CancellationToken): SourceFile = js.native
 }
 

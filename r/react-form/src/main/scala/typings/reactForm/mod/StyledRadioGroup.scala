@@ -2,7 +2,7 @@ package typings.reactForm.mod
 
 import typings.react.mod.ChildContextProvider
 import typings.react.mod.Component
-import typings.reactForm.StyledPropschildrenpropsF
+import typings.reactForm.anon.StyledPropschildrenpropsF
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

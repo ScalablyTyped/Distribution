@@ -1,7 +1,7 @@
 package typings.antDesignReactNative.mod
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.antDesignReactNative.AnonDirection
+import typings.antDesignReactNative.anon.Direction
 import typings.antDesignReactNative.stepsMod.StepsProps
 import typings.antDesignReactNative.stepsMod.default
 import scala.scalajs.js
@@ -19,6 +19,6 @@ class Steps protected () extends default {
 @js.native
 object Steps extends js.Object {
   var Step: Instantiable0[typings.antDesignReactNative.stepsItemMod.default] = js.native
-  var defaultProps: AnonDirection = js.native
+  var defaultProps: Direction = js.native
 }
 

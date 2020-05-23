@@ -26,7 +26,7 @@ object AxesOptions {
     y2: YAxisConfiguration = null
   ): AxesOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(rotated)) __obj.updateDynamic("rotated")(rotated.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotated)) __obj.updateDynamic("rotated")(rotated.get.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     if (y2 != null) __obj.updateDynamic("y2")(y2.asInstanceOf[js.Any])

@@ -11,11 +11,11 @@ trait CreatePublishingDestinationRequest extends js.Object {
     */
   var ClientToken: js.UndefOr[typings.awsSdk.guarddutyMod.ClientToken] = js.native
   /**
-    * Properties of the publishing destination, including the ARNs for the destination and the KMS key used for encryption.
+    * The properties of the publishing destination, including the ARNs for the destination and the KMS key used for encryption.
     */
   var DestinationProperties: typings.awsSdk.guarddutyMod.DestinationProperties = js.native
   /**
-    * The type of resource for the publishing destination. Currently only S3 is supported.
+    * The type of resource for the publishing destination. Currently only Amazon S3 buckets are supported.
     */
   var DestinationType: typings.awsSdk.guarddutyMod.DestinationType = js.native
   /**

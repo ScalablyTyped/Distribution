@@ -15,7 +15,7 @@ object FindOpts {
   @scala.inline
   def apply(remote: js.UndefOr[Boolean] = js.undefined): FindOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(remote)) __obj.updateDynamic("remote")(remote.asInstanceOf[js.Any])
+    if (!js.isUndefined(remote)) __obj.updateDynamic("remote")(remote.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindOpts]
   }
 }

@@ -1,6 +1,6 @@
 package typings.bunyanPrettystream.mod
 
-import typings.bunyanPrettystream.AnonMode
+import typings.bunyanPrettystream.anon.Mode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +14,6 @@ import scala.scalajs.js.annotation._
   *                         defaults to `true`.
   */
 class ^ () extends PrettyStream {
-  def this(options: AnonMode) = this()
+  def this(options: Mode) = this()
 }
 

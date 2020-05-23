@@ -1,9 +1,9 @@
 package typings.vsoNodeApi.identitiesInterfacesMod
 
-import typings.vsoNodeApi.AnonEnumValuesAnonAggregateIdentity
-import typings.vsoNodeApi.AnonEnumValuesAnonDirect
-import typings.vsoNodeApi.AnonEnumValuesAnonFilterIllegalMemberships
-import typings.vsoNodeApi.AnonEnumValuesAnonGeneric
+import typings.vsoNodeApi.anon.EnumValuesAggregateIdentity
+import typings.vsoNodeApi.anon.EnumValuesDirect
+import typings.vsoNodeApi.anon.EnumValuesFilterIllegalMemberships
+import typings.vsoNodeApi.anon.EnumValuesGeneric
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,12 +13,12 @@ import scala.scalajs.js.annotation._
 object TypeInfo extends js.Object {
   var CreateScopeInfo: js.Any = js.native
   var FrameworkIdentityInfo: js.Any = js.native
-  var FrameworkIdentityType: AnonEnumValuesAnonAggregateIdentity = js.native
-  var GroupScopeType: AnonEnumValuesAnonGeneric = js.native
+  var FrameworkIdentityType: EnumValuesAggregateIdentity = js.native
+  var GroupScopeType: EnumValuesGeneric = js.native
   var IdentityBatchInfo: js.Any = js.native
   var IdentityScope: js.Any = js.native
   var IdentitySnapshot: js.Any = js.native
-  var QueryMembership: AnonEnumValuesAnonDirect = js.native
-  var ReadIdentitiesOptions: AnonEnumValuesAnonFilterIllegalMemberships = js.native
+  var QueryMembership: EnumValuesDirect = js.native
+  var ReadIdentitiesOptions: EnumValuesFilterIllegalMemberships = js.native
 }
 

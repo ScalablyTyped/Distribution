@@ -1,8 +1,8 @@
 package typings.phonon
 
-import typings.phonon.Phonon_.PhononAjaxErrorFlag
-import typings.phonon.Phonon_.PhononColor
-import typings.phonon.Phonon_.PhononPopoverDirection
+import typings.phonon.Phonon.PhononAjaxErrorFlag
+import typings.phonon.Phonon.PhononColor
+import typings.phonon.Phonon.PhononPopoverDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

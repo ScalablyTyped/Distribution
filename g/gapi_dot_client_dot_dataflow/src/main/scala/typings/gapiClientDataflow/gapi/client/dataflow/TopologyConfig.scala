@@ -23,15 +23,15 @@ object TopologyConfig {
   def apply(
     computations: js.Array[ComputationTopology] = null,
     dataDiskAssignments: js.Array[DataDiskAssignment] = null,
-    forwardingKeyBits: Int | Double = null,
-    persistentStateVersion: Int | Double = null,
+    forwardingKeyBits: js.UndefOr[Double] = js.undefined,
+    persistentStateVersion: js.UndefOr[Double] = js.undefined,
     userStageToComputationNameMap: Record[String, String] = null
   ): TopologyConfig = {
     val __obj = js.Dynamic.literal()
     if (computations != null) __obj.updateDynamic("computations")(computations.asInstanceOf[js.Any])
     if (dataDiskAssignments != null) __obj.updateDynamic("dataDiskAssignments")(dataDiskAssignments.asInstanceOf[js.Any])
-    if (forwardingKeyBits != null) __obj.updateDynamic("forwardingKeyBits")(forwardingKeyBits.asInstanceOf[js.Any])
-    if (persistentStateVersion != null) __obj.updateDynamic("persistentStateVersion")(persistentStateVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(forwardingKeyBits)) __obj.updateDynamic("forwardingKeyBits")(forwardingKeyBits.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistentStateVersion)) __obj.updateDynamic("persistentStateVersion")(persistentStateVersion.get.asInstanceOf[js.Any])
     if (userStageToComputationNameMap != null) __obj.updateDynamic("userStageToComputationNameMap")(userStageToComputationNameMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopologyConfig]
   }

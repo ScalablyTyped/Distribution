@@ -1,6 +1,6 @@
 package typings.jestMessageUtil.mod
 
-import typings.jestMessageUtil.PickProjectConfigrootDirt
+import typings.jestMessageUtil.anon.PickProjectConfigrootDirt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

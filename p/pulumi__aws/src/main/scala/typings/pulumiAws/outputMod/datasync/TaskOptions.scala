@@ -48,7 +48,7 @@ object TaskOptions {
   @scala.inline
   def apply(
     atime: String = null,
-    bytesPerSecond: Int | Double = null,
+    bytesPerSecond: js.UndefOr[Double] = js.undefined,
     gid: String = null,
     mtime: String = null,
     posixPermissions: String = null,
@@ -59,7 +59,7 @@ object TaskOptions {
   ): TaskOptions = {
     val __obj = js.Dynamic.literal()
     if (atime != null) __obj.updateDynamic("atime")(atime.asInstanceOf[js.Any])
-    if (bytesPerSecond != null) __obj.updateDynamic("bytesPerSecond")(bytesPerSecond.asInstanceOf[js.Any])
+    if (!js.isUndefined(bytesPerSecond)) __obj.updateDynamic("bytesPerSecond")(bytesPerSecond.get.asInstanceOf[js.Any])
     if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
     if (mtime != null) __obj.updateDynamic("mtime")(mtime.asInstanceOf[js.Any])
     if (posixPermissions != null) __obj.updateDynamic("posixPermissions")(posixPermissions.asInstanceOf[js.Any])

@@ -1,24 +1,12 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.AnonInput
+import typings.babylonjs.anon.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.NodeMaterialBlock")
 @js.native
-class NodeMaterialBlock protected () extends js.Object {
-  /**
-    * Creates a new NodeMaterialBlock
-    * @param name defines the block name
-    * @param target defines the target of that block (Vertex by default)
-    * @param isFinalMerger defines a boolean indicating that this block is an end block (e.g. it is generating a system value). Default is false
-    * @param isInput defines a boolean indicating that this block is an input (e.g. it sends data to the shader). Default is false
-    */
-  def this(name: String) = this()
-  def this(name: String, target: NodeMaterialBlockTargets) = this()
-  def this(name: String, target: NodeMaterialBlockTargets, isFinalMerger: Boolean) = this()
-  def this(name: String, target: NodeMaterialBlockTargets, isFinalMerger: Boolean, isInput: Boolean) = this()
+trait NodeMaterialBlock extends js.Object {
   var _buildId: js.Any = js.native
   var _buildTarget: js.Any = js.native
   /** @hidden */
@@ -102,7 +90,7 @@ class NodeMaterialBlock protected () extends js.Object {
     * @returns the current block
     */
   def connectTo(other: NodeMaterialBlock): js.UndefOr[this.type] = js.native
-  def connectTo(other: NodeMaterialBlock, options: AnonInput): js.UndefOr[this.type] = js.native
+  def connectTo(other: NodeMaterialBlock, options: Input): js.UndefOr[this.type] = js.native
   /**
     * Release resources
     */

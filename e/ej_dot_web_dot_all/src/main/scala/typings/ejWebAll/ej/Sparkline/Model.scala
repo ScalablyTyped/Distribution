@@ -162,8 +162,8 @@ object Model {
     lowPointColor: String = null,
     markerSettings: MarkerSettings = null,
     negativePointColor: String = null,
-    opacity: Int | Double = null,
-    padding: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
+    padding: js.UndefOr[Double] = js.undefined,
     palette: String = null,
     pointRegionMouseClick: /* e */ PointRegionMouseClickEventArgs => Unit = null,
     pointRegionMouseMove: /* e */ PointRegionMouseMoveEventArgs => Unit = null,
@@ -179,7 +179,7 @@ object Model {
     tooltip: Tooltip = null,
     tooltipInitialize: /* e */ TooltipInitializeEventArgs => Unit = null,
     `type`: typings.ejWebAll.ej.datavisualization.Sparkline.Type | String = null,
-    width: Int | Double = null,
+    width: js.UndefOr[Double] = js.undefined,
     xName: String = null,
     yName: String = null
   ): Model = {
@@ -190,20 +190,20 @@ object Model {
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
     if (doubleClick != null) __obj.updateDynamic("doubleClick")(js.Any.fromFunction1(doubleClick))
-    if (!js.isUndefined(enableCanvasRendering)) __obj.updateDynamic("enableCanvasRendering")(enableCanvasRendering.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGroupSeparator)) __obj.updateDynamic("enableGroupSeparator")(enableGroupSeparator.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCanvasRendering)) __obj.updateDynamic("enableCanvasRendering")(enableCanvasRendering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGroupSeparator)) __obj.updateDynamic("enableGroupSeparator")(enableGroupSeparator.get.asInstanceOf[js.Any])
     if (endPointColor != null) __obj.updateDynamic("endPointColor")(endPointColor.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (highPointColor != null) __obj.updateDynamic("highPointColor")(highPointColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.get.asInstanceOf[js.Any])
     if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
     if (loaded != null) __obj.updateDynamic("loaded")(js.Any.fromFunction1(loaded))
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (lowPointColor != null) __obj.updateDynamic("lowPointColor")(lowPointColor.asInstanceOf[js.Any])
     if (markerSettings != null) __obj.updateDynamic("markerSettings")(markerSettings.asInstanceOf[js.Any])
     if (negativePointColor != null) __obj.updateDynamic("negativePointColor")(negativePointColor.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
     if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
     if (pointRegionMouseClick != null) __obj.updateDynamic("pointRegionMouseClick")(js.Any.fromFunction1(pointRegionMouseClick))
     if (pointRegionMouseMove != null) __obj.updateDynamic("pointRegionMouseMove")(js.Any.fromFunction1(pointRegionMouseMove))
@@ -219,7 +219,7 @@ object Model {
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (tooltipInitialize != null) __obj.updateDynamic("tooltipInitialize")(js.Any.fromFunction1(tooltipInitialize))
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     if (xName != null) __obj.updateDynamic("xName")(xName.asInstanceOf[js.Any])
     if (yName != null) __obj.updateDynamic("yName")(yName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]

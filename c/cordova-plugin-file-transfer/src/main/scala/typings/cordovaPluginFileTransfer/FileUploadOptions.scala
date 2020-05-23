@@ -34,7 +34,7 @@ object FileUploadOptions {
     params: js.Object = null
   ): FileUploadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(chunkedMode)) __obj.updateDynamic("chunkedMode")(chunkedMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(chunkedMode)) __obj.updateDynamic("chunkedMode")(chunkedMode.get.asInstanceOf[js.Any])
     if (fileKey != null) __obj.updateDynamic("fileKey")(fileKey.asInstanceOf[js.Any])
     if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])

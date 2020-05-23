@@ -29,7 +29,7 @@ object Contact {
     imageUrls: js.Array[String] = null,
     kind: String = null,
     phoneNumber: String = null,
-    priority: Int | Double = null,
+    priority: js.UndefOr[Double] = js.undefined,
     sharingFeatures: js.Array[String] = null,
     source: String = null,
     speakableName: String = null,
@@ -43,7 +43,7 @@ object Contact {
     if (imageUrls != null) __obj.updateDynamic("imageUrls")(imageUrls.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     if (sharingFeatures != null) __obj.updateDynamic("sharingFeatures")(sharingFeatures.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (speakableName != null) __obj.updateDynamic("speakableName")(speakableName.asInstanceOf[js.Any])

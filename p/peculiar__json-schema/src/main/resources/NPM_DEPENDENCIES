@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@peculiar/json-schema" : "1.1.10"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@peculiar/json-schema" : "1.1.10"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

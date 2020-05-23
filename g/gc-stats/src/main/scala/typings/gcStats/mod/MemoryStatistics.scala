@@ -29,16 +29,16 @@ object MemoryStatistics {
     totalHeapSize: Double,
     totalPhysicalSize: Double,
     usedHeapSize: Double,
-    mallocedMemory: Int | Double = null,
-    numberOfDetachedContexts: Int | Double = null,
-    numberOfNativeContexts: Int | Double = null,
-    peakMallocedMemory: Int | Double = null
+    mallocedMemory: js.UndefOr[Double] = js.undefined,
+    numberOfDetachedContexts: js.UndefOr[Double] = js.undefined,
+    numberOfNativeContexts: js.UndefOr[Double] = js.undefined,
+    peakMallocedMemory: js.UndefOr[Double] = js.undefined
   ): MemoryStatistics = {
     val __obj = js.Dynamic.literal(heapSizeLimit = heapSizeLimit.asInstanceOf[js.Any], totalAvailableSize = totalAvailableSize.asInstanceOf[js.Any], totalHeapExecutableSize = totalHeapExecutableSize.asInstanceOf[js.Any], totalHeapSize = totalHeapSize.asInstanceOf[js.Any], totalPhysicalSize = totalPhysicalSize.asInstanceOf[js.Any], usedHeapSize = usedHeapSize.asInstanceOf[js.Any])
-    if (mallocedMemory != null) __obj.updateDynamic("mallocedMemory")(mallocedMemory.asInstanceOf[js.Any])
-    if (numberOfDetachedContexts != null) __obj.updateDynamic("numberOfDetachedContexts")(numberOfDetachedContexts.asInstanceOf[js.Any])
-    if (numberOfNativeContexts != null) __obj.updateDynamic("numberOfNativeContexts")(numberOfNativeContexts.asInstanceOf[js.Any])
-    if (peakMallocedMemory != null) __obj.updateDynamic("peakMallocedMemory")(peakMallocedMemory.asInstanceOf[js.Any])
+    if (!js.isUndefined(mallocedMemory)) __obj.updateDynamic("mallocedMemory")(mallocedMemory.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfDetachedContexts)) __obj.updateDynamic("numberOfDetachedContexts")(numberOfDetachedContexts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfNativeContexts)) __obj.updateDynamic("numberOfNativeContexts")(numberOfNativeContexts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(peakMallocedMemory)) __obj.updateDynamic("peakMallocedMemory")(peakMallocedMemory.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemoryStatistics]
   }
 }

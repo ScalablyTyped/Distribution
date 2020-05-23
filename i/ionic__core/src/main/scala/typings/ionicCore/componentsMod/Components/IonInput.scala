@@ -1,14 +1,20 @@
 package typings.ionicCore.componentsMod.Components
 
 import typings.ionicCore.ionicCoreStrings.decimal
+import typings.ionicCore.ionicCoreStrings.done
 import typings.ionicCore.ionicCoreStrings.email
+import typings.ionicCore.ionicCoreStrings.enter
+import typings.ionicCore.ionicCoreStrings.go
 import typings.ionicCore.ionicCoreStrings.ios
 import typings.ionicCore.ionicCoreStrings.md
+import typings.ionicCore.ionicCoreStrings.next
 import typings.ionicCore.ionicCoreStrings.none
 import typings.ionicCore.ionicCoreStrings.numeric
 import typings.ionicCore.ionicCoreStrings.off
 import typings.ionicCore.ionicCoreStrings.on
+import typings.ionicCore.ionicCoreStrings.previous
 import typings.ionicCore.ionicCoreStrings.search
+import typings.ionicCore.ionicCoreStrings.send
 import typings.ionicCore.ionicCoreStrings.tel
 import typings.ionicCore.ionicCoreStrings.text
 import typings.ionicCore.ionicCoreStrings.url
@@ -61,6 +67,10 @@ trait IonInput extends js.Object {
     */
   var disabled: Boolean
   /**
+    * A hint to the browser for which enter key to display. Possible values: `"enter"`, `"done"`, `"go"`, `"next"`, `"previous"`, `"search"`, and `"send"`.
+    */
+  var enterkeyhint: js.UndefOr[enter | done | go | next | previous | search | send] = js.undefined
+  /**
     * A hint to the browser for which keyboard to display. Possible values: `"none"`, `"text"`, `"tel"`, `"url"`, `"email"`, `"numeric"`, `"decimal"`, and `"search"`.
     */
   var inputmode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
@@ -93,7 +103,7 @@ trait IonInput extends js.Object {
     */
   var name: String
   /**
-    * A regular expression that the value is checked against. The pattern must match the entire value, not just some subset. Use the title attribute to describe the pattern to help the user. This attribute applies when the value of the type attribute is `"text"`, `"search"`, `"tel"`, `"url"`, `"email"`, or `"password"`, otherwise it is ignored.
+    * A regular expression that the value is checked against. The pattern must match the entire value, not just some subset. Use the title attribute to describe the pattern to help the user. This attribute applies when the value of the type attribute is `"text"`, `"search"`, `"tel"`, `"url"`, `"email"`, `"date"`, or `"password"`, otherwise it is ignored. When the type attribute is `"date"`, `pattern` will only be used in browsers that do not support the `"date"` input type natively. See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date for more information.
     */
   var pattern: js.UndefOr[String] = js.undefined
   /**
@@ -158,36 +168,38 @@ object IonInput {
     accept: String = null,
     clearOnEdit: js.UndefOr[Boolean] = js.undefined,
     color: Color = null,
+    enterkeyhint: enter | done | go | next | previous | search | send = null,
     inputmode: none | text | tel | url | email | numeric | decimal | search = null,
     max: String = null,
-    maxlength: Int | Double = null,
+    maxlength: js.UndefOr[Double] = js.undefined,
     min: String = null,
-    minlength: Int | Double = null,
+    minlength: js.UndefOr[Double] = js.undefined,
     mode: ios | md = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
     pattern: String = null,
-    placeholder: String = null,
-    size: Int | Double = null,
+    placeholder: js.UndefOr[Null | String] = js.undefined,
+    size: js.UndefOr[Double] = js.undefined,
     step: String = null,
-    value: String | Double = null
+    value: js.UndefOr[Null | String | Double] = js.undefined
   ): IonInput = {
     val __obj = js.Dynamic.literal(autocapitalize = autocapitalize.asInstanceOf[js.Any], autocomplete = autocomplete.asInstanceOf[js.Any], autocorrect = autocorrect.asInstanceOf[js.Any], autofocus = autofocus.asInstanceOf[js.Any], clearInput = clearInput.asInstanceOf[js.Any], debounce = debounce.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], getInputElement = js.Any.fromFunction0(getInputElement), name = name.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], setFocus = js.Any.fromFunction0(setFocus), spellcheck = spellcheck.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearOnEdit)) __obj.updateDynamic("clearOnEdit")(clearOnEdit.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearOnEdit)) __obj.updateDynamic("clearOnEdit")(clearOnEdit.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (enterkeyhint != null) __obj.updateDynamic("enterkeyhint")(enterkeyhint.asInstanceOf[js.Any])
     if (inputmode != null) __obj.updateDynamic("inputmode")(inputmode.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (maxlength != null) __obj.updateDynamic("maxlength")(maxlength.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxlength)) __obj.updateDynamic("maxlength")(maxlength.get.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minlength != null) __obj.updateDynamic("minlength")(minlength.asInstanceOf[js.Any])
+    if (!js.isUndefined(minlength)) __obj.updateDynamic("minlength")(minlength.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(placeholder)) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonInput]
   }
 }

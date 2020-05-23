@@ -55,6 +55,10 @@ trait RunJobFlowInput extends js.Object {
     */
   var LogUri: js.UndefOr[XmlString] = js.native
   /**
+    *  The specified managed scaling policy for an Amazon EMR cluster. 
+    */
+  var ManagedScalingPolicy: js.UndefOr[typings.awsSdk.emrMod.ManagedScalingPolicy] = js.native
+  /**
     * The name of the job flow.
     */
   var Name: XmlStringMaxLen256 = js.native
@@ -116,21 +120,22 @@ object RunJobFlowInput {
     BootstrapActions: BootstrapActionConfigList = null,
     Configurations: ConfigurationList = null,
     CustomAmiId: XmlStringMaxLen256 = null,
-    EbsRootVolumeSize: Int | Double = null,
+    EbsRootVolumeSize: js.UndefOr[Integer] = js.undefined,
     JobFlowRole: XmlString = null,
     KerberosAttributes: KerberosAttributes = null,
     LogUri: XmlString = null,
+    ManagedScalingPolicy: ManagedScalingPolicy = null,
     NewSupportedProducts: NewSupportedProductsList = null,
     ReleaseLabel: XmlStringMaxLen256 = null,
     RepoUpgradeOnBoot: RepoUpgradeOnBoot = null,
     ScaleDownBehavior: ScaleDownBehavior = null,
     SecurityConfiguration: XmlString = null,
     ServiceRole: XmlString = null,
-    StepConcurrencyLevel: Int | Double = null,
+    StepConcurrencyLevel: js.UndefOr[Integer] = js.undefined,
     Steps: StepConfigList = null,
     SupportedProducts: SupportedProductsList = null,
     Tags: TagList = null,
-    VisibleToAllUsers: js.UndefOr[scala.Boolean] = js.undefined
+    VisibleToAllUsers: js.UndefOr[Boolean] = js.undefined
   ): RunJobFlowInput = {
     val __obj = js.Dynamic.literal(Instances = Instances.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     if (AdditionalInfo != null) __obj.updateDynamic("AdditionalInfo")(AdditionalInfo.asInstanceOf[js.Any])
@@ -140,21 +145,22 @@ object RunJobFlowInput {
     if (BootstrapActions != null) __obj.updateDynamic("BootstrapActions")(BootstrapActions.asInstanceOf[js.Any])
     if (Configurations != null) __obj.updateDynamic("Configurations")(Configurations.asInstanceOf[js.Any])
     if (CustomAmiId != null) __obj.updateDynamic("CustomAmiId")(CustomAmiId.asInstanceOf[js.Any])
-    if (EbsRootVolumeSize != null) __obj.updateDynamic("EbsRootVolumeSize")(EbsRootVolumeSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(EbsRootVolumeSize)) __obj.updateDynamic("EbsRootVolumeSize")(EbsRootVolumeSize.get.asInstanceOf[js.Any])
     if (JobFlowRole != null) __obj.updateDynamic("JobFlowRole")(JobFlowRole.asInstanceOf[js.Any])
     if (KerberosAttributes != null) __obj.updateDynamic("KerberosAttributes")(KerberosAttributes.asInstanceOf[js.Any])
     if (LogUri != null) __obj.updateDynamic("LogUri")(LogUri.asInstanceOf[js.Any])
+    if (ManagedScalingPolicy != null) __obj.updateDynamic("ManagedScalingPolicy")(ManagedScalingPolicy.asInstanceOf[js.Any])
     if (NewSupportedProducts != null) __obj.updateDynamic("NewSupportedProducts")(NewSupportedProducts.asInstanceOf[js.Any])
     if (ReleaseLabel != null) __obj.updateDynamic("ReleaseLabel")(ReleaseLabel.asInstanceOf[js.Any])
     if (RepoUpgradeOnBoot != null) __obj.updateDynamic("RepoUpgradeOnBoot")(RepoUpgradeOnBoot.asInstanceOf[js.Any])
     if (ScaleDownBehavior != null) __obj.updateDynamic("ScaleDownBehavior")(ScaleDownBehavior.asInstanceOf[js.Any])
     if (SecurityConfiguration != null) __obj.updateDynamic("SecurityConfiguration")(SecurityConfiguration.asInstanceOf[js.Any])
     if (ServiceRole != null) __obj.updateDynamic("ServiceRole")(ServiceRole.asInstanceOf[js.Any])
-    if (StepConcurrencyLevel != null) __obj.updateDynamic("StepConcurrencyLevel")(StepConcurrencyLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(StepConcurrencyLevel)) __obj.updateDynamic("StepConcurrencyLevel")(StepConcurrencyLevel.get.asInstanceOf[js.Any])
     if (Steps != null) __obj.updateDynamic("Steps")(Steps.asInstanceOf[js.Any])
     if (SupportedProducts != null) __obj.updateDynamic("SupportedProducts")(SupportedProducts.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(VisibleToAllUsers)) __obj.updateDynamic("VisibleToAllUsers")(VisibleToAllUsers.asInstanceOf[js.Any])
+    if (!js.isUndefined(VisibleToAllUsers)) __obj.updateDynamic("VisibleToAllUsers")(VisibleToAllUsers.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunJobFlowInput]
   }
 }

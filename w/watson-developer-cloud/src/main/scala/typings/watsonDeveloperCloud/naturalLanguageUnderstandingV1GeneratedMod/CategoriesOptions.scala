@@ -14,9 +14,9 @@ trait CategoriesOptions extends js.Object {
 
 object CategoriesOptions {
   @scala.inline
-  def apply(limit: Int | Double = null, model: String = null): CategoriesOptions = {
+  def apply(limit: js.UndefOr[Double] = js.undefined, model: String = null): CategoriesOptions = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     __obj.asInstanceOf[CategoriesOptions]
   }

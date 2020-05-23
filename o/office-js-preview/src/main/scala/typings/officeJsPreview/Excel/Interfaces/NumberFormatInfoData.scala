@@ -10,16 +10,14 @@ trait NumberFormatInfoData extends js.Object {
     *
     * Gets the string used as the decimal separator for numeric values. This is based on current system settings.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.11]
     */
   var numberDecimalSeparator: js.UndefOr[String] = js.undefined
   /**
     *
     * Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on current system settings.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.11]
     */
   var numberGroupSeparator: js.UndefOr[String] = js.undefined
 }

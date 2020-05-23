@@ -1,7 +1,7 @@
 package typings.gapiClientAnalytics.gapi.client.analytics
 
-import typings.gapiClientAnalytics.AnonEffective
-import typings.gapiClientAnalytics.AnonHref
+import typings.gapiClientAnalytics.anon.Effective
+import typings.gapiClientAnalytics.anon.Href
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait Webproperty extends js.Object {
   /** Account ID to which this web property belongs. */
   var accountId: js.UndefOr[String] = js.undefined
   /** Child link for this web property. Points to the list of views (profiles) for this web property. */
-  var childLink: js.UndefOr[AnonHref] = js.undefined
+  var childLink: js.UndefOr[Href] = js.undefined
   /** Time this web property was created. */
   var created: js.UndefOr[String] = js.undefined
   /** Default view (profile) ID. */
@@ -28,9 +28,9 @@ trait Webproperty extends js.Object {
   /** Name of this web property. */
   var name: js.UndefOr[String] = js.undefined
   /** Parent link for this web property. Points to the account to which this web property belongs. */
-  var parentLink: js.UndefOr[AnonHref] = js.undefined
+  var parentLink: js.UndefOr[Href] = js.undefined
   /** Permissions the user has for this web property. */
-  var permissions: js.UndefOr[AnonEffective] = js.undefined
+  var permissions: js.UndefOr[Effective] = js.undefined
   /** View (Profile) count for this web property. */
   var profileCount: js.UndefOr[Double] = js.undefined
   /** Link for this web property. */
@@ -47,7 +47,7 @@ object Webproperty {
   @scala.inline
   def apply(
     accountId: String = null,
-    childLink: AnonHref = null,
+    childLink: Href = null,
     created: String = null,
     defaultProfileId: String = null,
     id: String = null,
@@ -56,9 +56,9 @@ object Webproperty {
     kind: String = null,
     level: String = null,
     name: String = null,
-    parentLink: AnonHref = null,
-    permissions: AnonEffective = null,
-    profileCount: Int | Double = null,
+    parentLink: Href = null,
+    permissions: Effective = null,
+    profileCount: js.UndefOr[Double] = js.undefined,
     selfLink: String = null,
     starred: js.UndefOr[Boolean] = js.undefined,
     updated: String = null,
@@ -77,9 +77,9 @@ object Webproperty {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (parentLink != null) __obj.updateDynamic("parentLink")(parentLink.asInstanceOf[js.Any])
     if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
-    if (profileCount != null) __obj.updateDynamic("profileCount")(profileCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(profileCount)) __obj.updateDynamic("profileCount")(profileCount.get.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (!js.isUndefined(starred)) __obj.updateDynamic("starred")(starred.asInstanceOf[js.Any])
+    if (!js.isUndefined(starred)) __obj.updateDynamic("starred")(starred.get.asInstanceOf[js.Any])
     if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Webproperty]

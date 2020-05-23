@@ -1,13 +1,13 @@
 package typings.scrollbooster.mod
 
-import typings.scrollbooster.AnonBottom
-import typings.scrollbooster.RequiredPosition
+import typings.scrollbooster.anon.Bottom
+import typings.scrollbooster.anon.RequiredPosition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ScrollingState extends js.Object {
-  var borderCollision: AnonBottom
+  var borderCollision: Bottom
   var dragOffset: Double
   var isDragging: Boolean
   var isMoving: Boolean
@@ -17,7 +17,7 @@ trait ScrollingState extends js.Object {
 object ScrollingState {
   @scala.inline
   def apply(
-    borderCollision: AnonBottom,
+    borderCollision: Bottom,
     dragOffset: Double,
     isDragging: Boolean,
     isMoving: Boolean,

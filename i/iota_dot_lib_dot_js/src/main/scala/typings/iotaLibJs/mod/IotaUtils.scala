@@ -1,6 +1,6 @@
 package typings.iotaLibJs.mod
 
-import typings.iotaLibJs.AnonReceived
+import typings.iotaLibJs.anon.Received
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait IotaUtils extends js.Object {
   def addChecksum(inputValue: js.Array[String]): js.Array[String] = js.native
   def addChecksum(inputValue: js.Array[String], checksumLength: Double): js.Array[String] = js.native
   def addChecksum(inputValue: js.Array[String], checksumLength: Double, isAddress: Boolean): js.Array[String] = js.native
-  def categorizeTransfers(transfers: js.Array[TransactionObject], addresses: js.Array[String]): AnonReceived = js.native
+  def categorizeTransfers(transfers: js.Array[TransactionObject], addresses: js.Array[String]): Received = js.native
   def convertUnits(value: Double, fromUnit: IOTAUnit, toUnit: IOTAUnit): Double = js.native
   def extractJson(bundle: js.Array[TransactionObject]): String = js.native
   def fromTrytes(trytes: String): String = js.native

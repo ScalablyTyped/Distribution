@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   * when updating a SAML provider's configuration via
   * {@link https://firebase.google.com/docs/reference/admin/node/admin.auth.Auth#updateProviderConfig `updateProviderConfig()`}.
   */
-trait SAMLUpdateAuthProviderRequest extends UpdateAuthProviderRequest {
+trait SAMLUpdateAuthProviderRequest extends js.Object {
   /**
     * The SAML provider's callback URL. If not provided, the existing
     * configuration's value is not modified.
@@ -61,7 +61,7 @@ object SAMLUpdateAuthProviderRequest {
     val __obj = js.Dynamic.literal()
     if (callbackURL != null) __obj.updateDynamic("callbackURL")(callbackURL.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (idpEntityId != null) __obj.updateDynamic("idpEntityId")(idpEntityId.asInstanceOf[js.Any])
     if (rpEntityId != null) __obj.updateDynamic("rpEntityId")(rpEntityId.asInstanceOf[js.Any])
     if (ssoURL != null) __obj.updateDynamic("ssoURL")(ssoURL.asInstanceOf[js.Any])

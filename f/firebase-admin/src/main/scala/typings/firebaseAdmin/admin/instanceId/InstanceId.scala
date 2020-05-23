@@ -1,12 +1,11 @@
 package typings.firebaseAdmin.admin.instanceId
 
-import typings.firebaseAdmin.admin.app.App
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Gets the {@link admin.instanceId.InstanceId `InstanceId`} service for the
+  * Gets the {@link InstanceId `InstanceId`} service for the
   * current app.
   *
   * @example
@@ -20,7 +19,7 @@ import scala.scalajs.js.annotation._
   *   current app.
   */
 trait InstanceId extends js.Object {
-  var app: App
+  var app: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _admin.app.App */ js.Any
   /**
     * Deletes the specified instance ID and the associated data from Firebase.
     *
@@ -39,7 +38,10 @@ trait InstanceId extends js.Object {
 
 object InstanceId {
   @scala.inline
-  def apply(app: App, deleteInstanceId: String => js.Promise[Unit]): InstanceId = {
+  def apply(
+    app: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _admin.app.App */ js.Any,
+    deleteInstanceId: String => js.Promise[Unit]
+  ): InstanceId = {
     val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], deleteInstanceId = js.Any.fromFunction1(deleteInstanceId))
     __obj.asInstanceOf[InstanceId]
   }

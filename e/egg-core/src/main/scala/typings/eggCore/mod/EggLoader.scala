@@ -1,8 +1,8 @@
 package typings.eggCore.mod
 
-import typings.eggCore.AnonType
-import typings.eggCore.PartialContextLoaderOptio
-import typings.eggCore.PartialFileLoaderOption
+import typings.eggCore.anon.PartialContextLoaderOptio
+import typings.eggCore.anon.PartialFileLoaderOption
+import typings.eggCore.anon.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,7 +56,7 @@ class EggLoader[T, Config] protected () extends js.Object {
     * @return {Array} loadUnits
     * @since 1.0.0
     */
-  def getLoadUnits(): js.Array[AnonType] = js.native
+  def getLoadUnits(): js.Array[Type] = js.native
   def getTypeFiles(filename: String): js.Array[String] = js.native
   /* protected */ def loadAgentExtend(): Unit = js.native
   /* protected */ def loadApplicationExtend(): Unit = js.native

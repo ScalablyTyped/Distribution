@@ -1,8 +1,8 @@
 package typings.jupyterlabUiComponents.labiconMod
 
-import typings.jupyterlabUiComponents.AnonTitle
-import typings.jupyterlabUiComponents.IOptionsloadingboolean
-import typings.jupyterlabUiComponents.PartialIRenderer
+import typings.jupyterlabUiComponents.anon.IOptionsloadingboolean
+import typings.jupyterlabUiComponents.anon.PartialIRenderer
+import typings.jupyterlabUiComponents.anon.Title
 import typings.jupyterlabUiComponents.labiconMod.LabIcon.IIcon
 import typings.jupyterlabUiComponents.labiconMod.LabIcon.IProps
 import typings.jupyterlabUiComponents.labiconMod.LabIcon.IReact
@@ -96,7 +96,7 @@ class LabIcon_ protected ()
   /* protected */ def _initReact(displayName: String): ForwardRefExoticComponent[IProps with RefAttributes[SVGElement]] = js.native
   /* protected */ def _initRender(hasRenderUnrender: PartialIRenderer): Unit = js.native
   /* protected */ def _initSvg(): HTMLElement | Null = js.native
-  /* protected */ def _initSvg(hasTitleUuid: AnonTitle): HTMLElement | Null = js.native
+  /* protected */ def _initSvg(hasTitleUuid: Title): HTMLElement | Null = js.native
   /**
     * Get a view of this icon that is bound to the specified icon/style props
     *

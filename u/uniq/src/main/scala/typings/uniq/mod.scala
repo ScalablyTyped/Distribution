@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("uniq", JSImport.Namespace)
 @js.native
-object mod extends TopLevel[Uniq_]
+object mod extends TopLevel[Uniq]
 

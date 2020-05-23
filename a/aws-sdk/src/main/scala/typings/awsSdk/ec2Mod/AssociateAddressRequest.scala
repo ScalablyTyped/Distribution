@@ -40,8 +40,8 @@ object AssociateAddressRequest {
   @scala.inline
   def apply(
     AllocationId: AllocationId = null,
-    AllowReassociation: js.UndefOr[scala.Boolean] = js.undefined,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    AllowReassociation: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     InstanceId: InstanceId = null,
     NetworkInterfaceId: NetworkInterfaceId = null,
     PrivateIpAddress: String = null,
@@ -49,8 +49,8 @@ object AssociateAddressRequest {
   ): AssociateAddressRequest = {
     val __obj = js.Dynamic.literal()
     if (AllocationId != null) __obj.updateDynamic("AllocationId")(AllocationId.asInstanceOf[js.Any])
-    if (!js.isUndefined(AllowReassociation)) __obj.updateDynamic("AllowReassociation")(AllowReassociation.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllowReassociation)) __obj.updateDynamic("AllowReassociation")(AllowReassociation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
     if (NetworkInterfaceId != null) __obj.updateDynamic("NetworkInterfaceId")(NetworkInterfaceId.asInstanceOf[js.Any])
     if (PrivateIpAddress != null) __obj.updateDynamic("PrivateIpAddress")(PrivateIpAddress.asInstanceOf[js.Any])

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`max-change`
 import typings.arcgisJsApi.arcgisJsApiStrings.`min-change`
@@ -178,8 +177,4 @@ trait SmartMappingSliderBase extends Widget_ {
   @JSName("on")
   def on_thumbdrag(name: `thumb-drag`, eventHandler: SmartMappingSliderBaseThumbDragEventHandler): IHandle = js.native
 }
-
-@JSGlobal("__esri.SmartMappingSliderBase")
-@js.native
-object SmartMappingSliderBase extends TopLevel[SmartMappingSliderBaseConstructor]
 

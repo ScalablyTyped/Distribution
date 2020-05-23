@@ -22,8 +22,8 @@ trait IFileUploadField extends ITrigger {
   /** [Config Option] (Boolean) */
   var clearOnSubmit: js.UndefOr[Boolean] = js.undefined
   /** [Method] Only relevant if the instance s isFileUpload method returns true
-  		* @returns HTMLElement
-  		*/
+    * @returns HTMLElement
+    */
   @JSName("extractFileInput")
   var extractFileInput_IFileUploadField: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
   /** [Property] (Ext.Element) */
@@ -31,8 +31,8 @@ trait IFileUploadField extends ITrigger {
   /** [Method] Gets the markup to be inserted into the subTplMarkup  */
   var getTriggerMarkup: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Returns whether this Field is a file upload field if it returns true forms will use special techniques for submitti
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   @JSName("isFileUpload")
   var isFileUpload_IFileUploadField: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Allows addition of behavior to the show operation  */
@@ -49,7 +49,7 @@ object IFileUploadField {
     ITrigger: ITrigger = null,
     button: IButton = null,
     buttonConfig: js.Any = null,
-    buttonMargin: Int | Double = null,
+    buttonMargin: js.UndefOr[Double] = js.undefined,
     buttonOnly: js.UndefOr[Boolean] = js.undefined,
     buttonText: String = null,
     clearOnSubmit: js.UndefOr[Boolean] = js.undefined,
@@ -64,10 +64,10 @@ object IFileUploadField {
     if (ITrigger != null) js.Dynamic.global.Object.assign(__obj, ITrigger)
     if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
     if (buttonConfig != null) __obj.updateDynamic("buttonConfig")(buttonConfig.asInstanceOf[js.Any])
-    if (buttonMargin != null) __obj.updateDynamic("buttonMargin")(buttonMargin.asInstanceOf[js.Any])
-    if (!js.isUndefined(buttonOnly)) __obj.updateDynamic("buttonOnly")(buttonOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(buttonMargin)) __obj.updateDynamic("buttonMargin")(buttonMargin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(buttonOnly)) __obj.updateDynamic("buttonOnly")(buttonOnly.get.asInstanceOf[js.Any])
     if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearOnSubmit)) __obj.updateDynamic("clearOnSubmit")(clearOnSubmit.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearOnSubmit)) __obj.updateDynamic("clearOnSubmit")(clearOnSubmit.get.asInstanceOf[js.Any])
     if (extractFileInput != null) __obj.updateDynamic("extractFileInput")(js.Any.fromFunction0(extractFileInput))
     if (fileInputEl != null) __obj.updateDynamic("fileInputEl")(fileInputEl.asInstanceOf[js.Any])
     if (getTriggerMarkup != null) __obj.updateDynamic("getTriggerMarkup")(js.Any.fromFunction0(getTriggerMarkup))

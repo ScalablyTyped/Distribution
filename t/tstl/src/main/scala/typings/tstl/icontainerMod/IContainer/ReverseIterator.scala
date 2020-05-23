@@ -25,7 +25,7 @@ trait ReverseIterator[T /* <: Elem */, Source /* <: typings.tstl.icontainerMod.I
 
 object ReverseIterator {
   @scala.inline
-  def apply[T /* <: Elem */, Source /* <: typings.tstl.icontainerMod.IContainer[T, Source, IteratorT, ReverseT, Elem] */, IteratorT /* <: Iterator[T, Source, IteratorT, ReverseT, Elem] */, ReverseT /* <: ReverseIterator[T, Source, IteratorT, ReverseT, Elem] */, Elem](base: () => IteratorT, next: () => ReverseT, prev: () => ReverseT, source: () => Source, value: T): ReverseIterator[T, Source, IteratorT, ReverseT, Elem] = {
+  def apply[T, Source, IteratorT, ReverseT, Elem](base: () => IteratorT, next: () => ReverseT, prev: () => ReverseT, source: () => Source, value: T): ReverseIterator[T, Source, IteratorT, ReverseT, Elem] = {
     val __obj = js.Dynamic.literal(base = js.Any.fromFunction0(base), next = js.Any.fromFunction0(next), prev = js.Any.fromFunction0(prev), source = js.Any.fromFunction0(source), value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReverseIterator[T, Source, IteratorT, ReverseT, Elem]]
   }

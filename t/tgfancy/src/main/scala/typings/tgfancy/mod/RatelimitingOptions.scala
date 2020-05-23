@@ -15,16 +15,16 @@ trait RatelimitingOptions extends js.Object {
 object RatelimitingOptions {
   @scala.inline
   def apply(
-    maxBackoff: Int | Double = null,
-    maxRetries: Int | Double = null,
+    maxBackoff: js.UndefOr[Double] = js.undefined,
+    maxRetries: js.UndefOr[Double] = js.undefined,
     notify: (/* methodName */ String, /* repeated */ js.Any) => Unit = null,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): RatelimitingOptions = {
     val __obj = js.Dynamic.literal()
-    if (maxBackoff != null) __obj.updateDynamic("maxBackoff")(maxBackoff.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxBackoff)) __obj.updateDynamic("maxBackoff")(maxBackoff.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
     if (notify != null) __obj.updateDynamic("notify")(js.Any.fromFunction2(notify))
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RatelimitingOptions]
   }
 }

@@ -5,10 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides data for the SelectionRequested event. */
-@JSGlobal("Windows.UI.Text.Core.CoreTextSelectionRequestedEventArgs")
-@js.native
-abstract class CoreTextSelectionRequestedEventArgs () extends js.Object {
+trait CoreTextSelectionRequestedEventArgs extends js.Object {
   /** Gets information about a SelectionRequested event. */
-  var request: CoreTextSelectionRequest = js.native
+  var request: CoreTextSelectionRequest
+}
+
+object CoreTextSelectionRequestedEventArgs {
+  @scala.inline
+  def apply(request: CoreTextSelectionRequest): CoreTextSelectionRequestedEventArgs = {
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CoreTextSelectionRequestedEventArgs]
+  }
 }
 

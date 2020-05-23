@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.ClampBlock")
 @js.native
-class ClampBlock protected () extends NodeMaterialBlock {
-  /**
-    * Creates a new ClampBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait ClampBlock extends NodeMaterialBlock {
   /** Gets or sets the maximum range */
   var maximum: Double = js.native
   /** Gets or sets the minimum range */

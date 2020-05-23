@@ -22,9 +22,13 @@ trait ListNodegroupsRequest extends js.Object {
 
 object ListNodegroupsRequest {
   @scala.inline
-  def apply(clusterName: String, maxResults: Int | Double = null, nextToken: String = null): ListNodegroupsRequest = {
+  def apply(
+    clusterName: String,
+    maxResults: js.UndefOr[ListNodegroupsRequestMaxResults] = js.undefined,
+    nextToken: String = null
+  ): ListNodegroupsRequest = {
     val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListNodegroupsRequest]
   }

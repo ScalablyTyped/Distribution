@@ -4,19 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("gsap.Ease")
-@js.native
-class Ease () extends js.Object {
-  def this(func: js.Function1[/* repeated */ js.Any, Unit]) = this()
-  def this(func: js.Function1[/* repeated */ js.Any, Unit], extraParams: js.Array[_]) = this()
-  def this(func: js.Function1[/* repeated */ js.Any, Unit], extraParams: js.Array[_], `type`: Double) = this()
-  def this(
-    func: js.Function1[/* repeated */ js.Any, Unit],
-    extraParams: js.Array[_],
-    `type`: Double,
-    power: Double
-  ) = this()
+trait Ease extends js.Object {
   /** Translates the tween's progress ratio into the corresponding ease ratio. */
-  def getRatio(p: Double): Double = js.native
+  def getRatio(p: Double): Double
+}
+
+object Ease {
+  @scala.inline
+  def apply(getRatio: Double => Double): Ease = {
+    val __obj = js.Dynamic.literal(getRatio = js.Any.fromFunction1(getRatio))
+    __obj.asInstanceOf[Ease]
+  }
 }
 

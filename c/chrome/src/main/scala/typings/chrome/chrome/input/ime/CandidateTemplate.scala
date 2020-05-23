@@ -38,13 +38,13 @@ object CandidateTemplate {
     id: Double,
     annotation: String = null,
     label: String = null,
-    parentId: Int | Double = null,
+    parentId: js.UndefOr[Double] = js.undefined,
     usage: CandidateUsage = null
   ): CandidateTemplate = {
     val __obj = js.Dynamic.literal(candidate = candidate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     if (annotation != null) __obj.updateDynamic("annotation")(annotation.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
+    if (!js.isUndefined(parentId)) __obj.updateDynamic("parentId")(parentId.get.asInstanceOf[js.Any])
     if (usage != null) __obj.updateDynamic("usage")(usage.asInstanceOf[js.Any])
     __obj.asInstanceOf[CandidateTemplate]
   }

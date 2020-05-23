@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/indexeddb_schema", "DbTargetDocument")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbTargetDocument")
 @js.native
 class DbTargetDocument protected () extends js.Object {
   def this(
@@ -52,7 +52,7 @@ class DbTargetDocument protected () extends js.Object {
 }
 
 /* static members */
-@JSImport("@firebase/firestore/dist/lib/src/local/indexeddb_schema", "DbTargetDocument")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbTargetDocument")
 @js.native
 object DbTargetDocument extends js.Object {
   /** The index name for the reverse index. */

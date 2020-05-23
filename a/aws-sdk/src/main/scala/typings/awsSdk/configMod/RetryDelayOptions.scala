@@ -22,11 +22,11 @@ trait RetryDelayOptions extends js.Object {
 object RetryDelayOptions {
   @scala.inline
   def apply(
-    base: Int | Double = null,
+    base: js.UndefOr[Double] = js.undefined,
     customBackoff: (/* retryCount */ Double, /* err */ js.UndefOr[Error]) => Double = null
   ): RetryDelayOptions = {
     val __obj = js.Dynamic.literal()
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (!js.isUndefined(base)) __obj.updateDynamic("base")(base.get.asInstanceOf[js.Any])
     if (customBackoff != null) __obj.updateDynamic("customBackoff")(js.Any.fromFunction2(customBackoff))
     __obj.asInstanceOf[RetryDelayOptions]
   }

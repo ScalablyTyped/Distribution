@@ -87,14 +87,14 @@ object ComponentProps {
     if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
     if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(canDragIn)) __obj.updateDynamic("canDragIn")(canDragIn.asInstanceOf[js.Any])
+    if (!js.isUndefined(canDragIn)) __obj.updateDynamic("canDragIn")(canDragIn.get.asInstanceOf[js.Any])
     if (gaeaData != null) __obj.updateDynamic("gaeaData")(gaeaData.asInstanceOf[js.Any])
     if (gaeaEdit != null) __obj.updateDynamic("gaeaEdit")(gaeaEdit.asInstanceOf[js.Any])
     if (gaeaEvent != null) __obj.updateDynamic("gaeaEvent")(gaeaEvent.asInstanceOf[js.Any])
     if (gaeaEventData != null) __obj.updateDynamic("gaeaEventData")(gaeaEventData.asInstanceOf[js.Any])
     if (gaeaIcon != null) __obj.updateDynamic("gaeaIcon")(gaeaIcon.asInstanceOf[js.Any])
     if (gaeaNativeEventData != null) __obj.updateDynamic("gaeaNativeEventData")(gaeaNativeEventData.asInstanceOf[js.Any])
-    if (!js.isUndefined(gaeaPreview)) __obj.updateDynamic("gaeaPreview")(gaeaPreview.asInstanceOf[js.Any])
+    if (!js.isUndefined(gaeaPreview)) __obj.updateDynamic("gaeaPreview")(gaeaPreview.get.asInstanceOf[js.Any])
     if (gaeaVariables != null) __obj.updateDynamic("gaeaVariables")(gaeaVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentProps]
   }

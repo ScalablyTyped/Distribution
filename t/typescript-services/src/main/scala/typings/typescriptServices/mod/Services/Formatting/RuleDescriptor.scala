@@ -11,6 +11,10 @@ import scala.scalajs.js.annotation._
 class RuleDescriptor protected ()
   extends typings.typescriptServices.TypeScript.Services.Formatting.RuleDescriptor {
   def this(LeftTokenRange: TokenRange, RightTokenRange: TokenRange) = this()
+  /* CompleteClass */
+  override var LeftTokenRange: TokenRange = js.native
+  /* CompleteClass */
+  override var RightTokenRange: TokenRange = js.native
 }
 
 /* static members */

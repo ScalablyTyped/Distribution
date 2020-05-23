@@ -35,14 +35,14 @@ object Sku {
   @scala.inline
   def apply(
     name: String,
-    capacity: Int | Double = null,
+    capacity: js.UndefOr[Double] = js.undefined,
     family: String = null,
     model: String = null,
     size: String = null,
     tier: String = null
   ): Sku = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (capacity != null) __obj.updateDynamic("capacity")(capacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(capacity)) __obj.updateDynamic("capacity")(capacity.get.asInstanceOf[js.Any])
     if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

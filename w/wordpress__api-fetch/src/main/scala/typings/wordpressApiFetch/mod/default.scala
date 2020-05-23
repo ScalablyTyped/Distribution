@@ -2,7 +2,7 @@ package typings.wordpressApiFetch.mod
 
 import typings.std.Record
 import typings.std.Response
-import typings.wordpressApiFetch.APIFetchOptionsparsefalse
+import typings.wordpressApiFetch.anon.APIFetchOptionsparsefalse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

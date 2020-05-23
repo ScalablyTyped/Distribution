@@ -6,41 +6,41 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when a table row is clicked by the user.
-		 */
+  * Fired when a table row is clicked by the user.
+  */
 trait TableViewRowClickEvent extends TableViewRowBaseEvent {
   /**
-  			 * Indicates whether the detail button was clicked. Only `true` if `row.hasDetail` is
-  			 * `true` and the detail button was clicked.
-  			 */
+    * Indicates whether the detail button was clicked. Only `true` if `row.hasDetail` is
+    * `true` and the detail button was clicked.
+    */
   var detail: Boolean
   /**
-  			 * Row index.
-  			 */
+    * Row index.
+    */
   var index: Double
   /**
-  			 * Table view row object.
-  			 */
+    * Table view row object.
+    */
   var row: TableViewRow
   /**
-  			 * Dictionary containing the properties set on the row.
-  			 */
+    * Dictionary containing the properties set on the row.
+    */
   var rowData: Dictionary[TableViewRow]
   /**
-  			 * Boolean to indicate if the table is in search mode.
-  			 */
+    * Boolean to indicate if the table is in search mode.
+    */
   var searchMode: Boolean
   /**
-  			 * Table view section object, if the clicked row is contained in a section.
-  			 */
+    * Table view section object, if the clicked row is contained in a section.
+    */
   var section: TableViewSection
   /**
-  			 * X coordinate of the event from the `source` view's coordinate system.
-  			 */
+    * X coordinate of the event from the `source` view's coordinate system.
+    */
   var x: Double
   /**
-  			 * Y coordinate of the event from the `source` view's coordinate system.
-  			 */
+    * Y coordinate of the event from the `source` view's coordinate system.
+    */
   var y: Double
 }
 

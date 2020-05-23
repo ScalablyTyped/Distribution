@@ -50,7 +50,6 @@ object R3Identifiers extends js.Object {
   var classMapInterpolateV: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var classProp: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var componentHostSyntheticListener: typings.angularCompiler.outputAstMod.ExternalReference = js.native
-  var containerCreate: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var contentQuery: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var defaultStyleSanitizer: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var defineComponent: typings.angularCompiler.outputAstMod.ExternalReference = js.native

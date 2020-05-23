@@ -31,11 +31,11 @@ object SyncOptions {
     env: ProcessEnv = null,
     execPath: String = null,
     extendEnv: js.UndefOr[Boolean] = js.undefined,
-    gid: Int | Double = null,
+    gid: js.UndefOr[Double] = js.undefined,
     input: String | Buffer = null,
     killSignal: String | Double = null,
     localDir: String = null,
-    maxBuffer: Int | Double = null,
+    maxBuffer: js.UndefOr[Double] = js.undefined,
     preferLocal: js.UndefOr[Boolean] = js.undefined,
     reject: js.UndefOr[Boolean] = js.undefined,
     serialization: json | advanced = null,
@@ -45,40 +45,40 @@ object SyncOptions {
     stdio: pipe | ignore | inherit | js.Array[StdioOption] = null,
     stdout: StdioOption = null,
     stripFinalNewline: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null,
-    uid: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
+    uid: js.UndefOr[Double] = js.undefined,
     windowsHide: js.UndefOr[Boolean] = js.undefined,
     windowsVerbatimArguments: js.UndefOr[Boolean] = js.undefined
   ): SyncOptions[EncodingType] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
+    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all.get.asInstanceOf[js.Any])
     if (argv0 != null) __obj.updateDynamic("argv0")(argv0.asInstanceOf[js.Any])
-    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
-    if (!js.isUndefined(cleanup)) __obj.updateDynamic("cleanup")(cleanup.asInstanceOf[js.Any])
+    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cleanup)) __obj.updateDynamic("cleanup")(cleanup.get.asInstanceOf[js.Any])
     if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
-    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached.asInstanceOf[js.Any])
+    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached.get.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (execPath != null) __obj.updateDynamic("execPath")(execPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(extendEnv)) __obj.updateDynamic("extendEnv")(extendEnv.asInstanceOf[js.Any])
-    if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
+    if (!js.isUndefined(extendEnv)) __obj.updateDynamic("extendEnv")(extendEnv.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gid)) __obj.updateDynamic("gid")(gid.get.asInstanceOf[js.Any])
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
     if (killSignal != null) __obj.updateDynamic("killSignal")(killSignal.asInstanceOf[js.Any])
     if (localDir != null) __obj.updateDynamic("localDir")(localDir.asInstanceOf[js.Any])
-    if (maxBuffer != null) __obj.updateDynamic("maxBuffer")(maxBuffer.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferLocal)) __obj.updateDynamic("preferLocal")(preferLocal.asInstanceOf[js.Any])
-    if (!js.isUndefined(reject)) __obj.updateDynamic("reject")(reject.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxBuffer)) __obj.updateDynamic("maxBuffer")(maxBuffer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferLocal)) __obj.updateDynamic("preferLocal")(preferLocal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reject)) __obj.updateDynamic("reject")(reject.get.asInstanceOf[js.Any])
     if (serialization != null) __obj.updateDynamic("serialization")(serialization.asInstanceOf[js.Any])
     if (shell != null) __obj.updateDynamic("shell")(shell.asInstanceOf[js.Any])
     if (stderr != null) __obj.updateDynamic("stderr")(stderr.asInstanceOf[js.Any])
     if (stdin != null) __obj.updateDynamic("stdin")(stdin.asInstanceOf[js.Any])
     if (stdio != null) __obj.updateDynamic("stdio")(stdio.asInstanceOf[js.Any])
     if (stdout != null) __obj.updateDynamic("stdout")(stdout.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripFinalNewline)) __obj.updateDynamic("stripFinalNewline")(stripFinalNewline.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowsHide)) __obj.updateDynamic("windowsHide")(windowsHide.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowsVerbatimArguments)) __obj.updateDynamic("windowsVerbatimArguments")(windowsVerbatimArguments.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripFinalNewline)) __obj.updateDynamic("stripFinalNewline")(stripFinalNewline.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(uid)) __obj.updateDynamic("uid")(uid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowsHide)) __obj.updateDynamic("windowsHide")(windowsHide.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowsVerbatimArguments)) __obj.updateDynamic("windowsVerbatimArguments")(windowsVerbatimArguments.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyncOptions[EncodingType]]
   }
 }

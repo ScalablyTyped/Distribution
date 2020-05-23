@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait StopDiscovererRequest extends js.Object {
+  /**
+    * The ID of the discoverer.
+    */
   var DiscovererId: string = js.native
 }
 

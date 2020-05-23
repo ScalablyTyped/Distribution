@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the index bar is clicked by the user.
-		 */
+  * Fired when the index bar is clicked by the user.
+  */
 trait TableViewIndexclickEvent extends TableViewBaseEvent {
   /**
-  			 * The index number clicked.
-  			 */
+    * The index number clicked.
+    */
   var index: Double
   /**
-  			 * The title of the index clicked.
-  			 */
+    * The title of the index clicked.
+    */
   var title: String
 }
 

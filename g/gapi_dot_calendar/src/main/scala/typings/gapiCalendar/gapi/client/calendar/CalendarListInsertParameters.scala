@@ -16,7 +16,7 @@ object CalendarListInsertParameters {
   @scala.inline
   def apply(resource: CalendarListInput, colorRgbFormat: js.UndefOr[Boolean] = js.undefined): CalendarListInsertParameters = {
     val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorRgbFormat)) __obj.updateDynamic("colorRgbFormat")(colorRgbFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorRgbFormat)) __obj.updateDynamic("colorRgbFormat")(colorRgbFormat.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarListInsertParameters]
   }
 }

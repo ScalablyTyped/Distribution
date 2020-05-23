@@ -1,6 +1,6 @@
 package typings.natsHemera.mod
 
-import typings.natsHemera.AnonMaxMessages
+import typings.natsHemera.anon.MaxMessages
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait AddDefinition extends js.Object {
   var pattern: ServerPattern = js.native
   var schema: js.Object = js.native
   var sid: Double = js.native
-  var transport: AnonMaxMessages = js.native
+  var transport: MaxMessages = js.native
   def end(action: js.Function1[/* request */ ServerPattern, js.Promise[_]]): Unit = js.native
   def end(action: js.Function2[/* request */ ServerPattern, /* cb */ NodeCallback, Unit]): Unit = js.native
   def use(

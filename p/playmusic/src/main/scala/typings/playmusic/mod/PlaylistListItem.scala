@@ -38,9 +38,9 @@ object PlaylistListItem {
     `type`: String = null
   ): PlaylistListItem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(accessControlled)) __obj.updateDynamic("accessControlled")(accessControlled.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessControlled)) __obj.updateDynamic("accessControlled")(accessControlled.get.asInstanceOf[js.Any])
     if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])

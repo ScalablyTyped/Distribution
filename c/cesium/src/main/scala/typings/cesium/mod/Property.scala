@@ -11,6 +11,7 @@ abstract class Property () extends js.Object {
   val isConstant: Boolean = js.native
   def equals(): Boolean = js.native
   def equals(other: Property): Boolean = js.native
+  def getValue(): js.Any = js.native
   def getValue(time: JulianDate): js.Any = js.native
   def getValue(time: JulianDate, result: js.Any): js.Any = js.native
 }

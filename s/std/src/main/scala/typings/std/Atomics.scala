@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.stdStrings.`not-equal`
 import typings.std.stdStrings.`timed-out`
 import typings.std.stdStrings.ok
@@ -129,8 +128,4 @@ trait Atomics extends js.Object {
   def xor(typedArray: Uint32Array, index: Double, value: Double): Double = js.native
   def xor(typedArray: Uint8Array, index: Double, value: Double): Double = js.native
 }
-
-@JSGlobal("Atomics")
-@js.native
-object Atomics extends TopLevel[Atomics]
 

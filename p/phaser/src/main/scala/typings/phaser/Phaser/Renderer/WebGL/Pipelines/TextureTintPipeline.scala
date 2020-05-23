@@ -28,14 +28,8 @@ import scala.scalajs.js.annotation._
   * - vertexCapacity: The amount of vertices that shall be allocated
   * - vertexSize: The size of a single vertex in bytes.
   */
-@JSGlobal("Phaser.Renderer.WebGL.Pipelines.TextureTintPipeline")
 @js.native
-class TextureTintPipeline protected () extends WebGLPipeline {
-  /**
-    * 
-    * @param config The configuration options for this Texture Tint Pipeline, as described above.
-    */
-  def this(config: js.Object) = this()
+trait TextureTintPipeline extends WebGLPipeline {
   /**
     * Collection of batch information
     */

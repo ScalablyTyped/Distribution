@@ -1,18 +1,18 @@
 package typings.antdMobileRn.tagStyleIndexNativeMod
 
-import typings.antdMobileRn.AnonBackgroundColorBorderWidth
-import typings.antdMobileRn.AnonBackgroundColorPosition
-import typings.antdMobileRn.AnonBorderColor
-import typings.antdMobileRn.AnonBorderRadiusBorderStyle
-import typings.antdMobileRn.AnonBorderRadiusFlexDirection
-import typings.antdMobileRn.AnonBorderRadiusHeight
-import typings.antdMobileRn.AnonColorString
-import typings.antdMobileRn.AnonFontSizeLineHeight
-import typings.antdMobileRn.AnonFontSizeNumber
-import typings.antdMobileRn.AnonFontSizeNumberTextAlignString
-import typings.antdMobileRn.AnonHeightLeft
-import typings.antdMobileRn.AnonPaddingHorizontalPaddingVertical
-import typings.antdMobileRn.AnonTransformArray
+import typings.antdMobileRn.anon.BackgroundColorBorderWidth
+import typings.antdMobileRn.anon.BackgroundColorPosition
+import typings.antdMobileRn.anon.BorderColor
+import typings.antdMobileRn.anon.BorderRadiusBorderStyle
+import typings.antdMobileRn.anon.BorderRadiusFlexDirection
+import typings.antdMobileRn.anon.BorderRadiusHeight
+import typings.antdMobileRn.anon.ColorString
+import typings.antdMobileRn.anon.FontSizeLineHeight
+import typings.antdMobileRn.anon.FontSizeNumber
+import typings.antdMobileRn.anon.FontSizeNumberTextAlignString
+import typings.antdMobileRn.anon.HeightLeft
+import typings.antdMobileRn.anon.PaddingHorizontalPaddingVertical
+import typings.antdMobileRn.anon.TransformArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,21 +20,21 @@ import scala.scalajs.js.annotation._
 @JSImport("antd-mobile-rn/lib/tag/style/index.native", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var activeText: AnonColorString = js.native
-  var activeWrap: AnonBorderColor = js.native
-  var close: AnonBackgroundColorPosition = js.native
-  var closeAndroid: AnonHeightLeft = js.native
-  var closeIOS: AnonBorderRadiusHeight = js.native
-  var closeText: AnonFontSizeLineHeight = js.native
-  var closeTransform: AnonTransformArray = js.native
-  var disabledText: AnonColorString = js.native
-  var disabledWrap: AnonBackgroundColorBorderWidth = js.native
-  var normalText: AnonColorString = js.native
-  var normalWrap: AnonBorderColor = js.native
-  var tag: AnonBorderRadiusFlexDirection = js.native
-  var text: AnonFontSizeNumberTextAlignString = js.native
-  var textSmall: AnonFontSizeNumber = js.native
-  var wrap: AnonBorderRadiusBorderStyle = js.native
-  var wrapSmall: AnonPaddingHorizontalPaddingVertical = js.native
+  var activeText: ColorString = js.native
+  var activeWrap: BorderColor = js.native
+  var close: BackgroundColorPosition = js.native
+  var closeAndroid: HeightLeft = js.native
+  var closeIOS: BorderRadiusHeight = js.native
+  var closeText: FontSizeLineHeight = js.native
+  var closeTransform: TransformArray = js.native
+  var disabledText: ColorString = js.native
+  var disabledWrap: BackgroundColorBorderWidth = js.native
+  var normalText: ColorString = js.native
+  var normalWrap: BorderColor = js.native
+  var tag: BorderRadiusFlexDirection = js.native
+  var text: FontSizeNumberTextAlignString = js.native
+  var textSmall: FontSizeNumber = js.native
+  var wrap: BorderRadiusBorderStyle = js.native
+  var wrapSmall: PaddingHorizontalPaddingVertical = js.native
 }
 

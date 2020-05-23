@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.Image")
 @js.native
-class Image protected () extends js.Object {
+trait Image extends js.Object {
   @JSName("Access.Image_typekey")
   var AccessDotImage_typekey: Image = js.native
   val Application: typings.activexAccess.Access.Application = js.native

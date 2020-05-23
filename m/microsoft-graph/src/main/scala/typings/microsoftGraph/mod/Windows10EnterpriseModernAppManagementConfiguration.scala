@@ -24,7 +24,7 @@ object Windows10EnterpriseModernAppManagementConfiguration {
     uninstallBuiltInApps: js.UndefOr[Boolean] = js.undefined,
     userStatusOverview: DeviceConfigurationUserOverview = null,
     userStatuses: js.Array[DeviceConfigurationUserStatus] = null,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): Windows10EnterpriseModernAppManagementConfiguration = {
     val __obj = js.Dynamic.literal()
     if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
@@ -36,10 +36,10 @@ object Windows10EnterpriseModernAppManagementConfiguration {
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(uninstallBuiltInApps)) __obj.updateDynamic("uninstallBuiltInApps")(uninstallBuiltInApps.asInstanceOf[js.Any])
+    if (!js.isUndefined(uninstallBuiltInApps)) __obj.updateDynamic("uninstallBuiltInApps")(uninstallBuiltInApps.get.asInstanceOf[js.Any])
     if (userStatusOverview != null) __obj.updateDynamic("userStatusOverview")(userStatusOverview.asInstanceOf[js.Any])
     if (userStatuses != null) __obj.updateDynamic("userStatuses")(userStatuses.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Windows10EnterpriseModernAppManagementConfiguration]
   }
 }

@@ -32,14 +32,14 @@ object ComparedFace {
   @scala.inline
   def apply(
     BoundingBox: BoundingBox = null,
-    Confidence: Int | Double = null,
+    Confidence: js.UndefOr[Percent] = js.undefined,
     Landmarks: Landmarks = null,
     Pose: Pose = null,
     Quality: ImageQuality = null
   ): ComparedFace = {
     val __obj = js.Dynamic.literal()
     if (BoundingBox != null) __obj.updateDynamic("BoundingBox")(BoundingBox.asInstanceOf[js.Any])
-    if (Confidence != null) __obj.updateDynamic("Confidence")(Confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence.get.asInstanceOf[js.Any])
     if (Landmarks != null) __obj.updateDynamic("Landmarks")(Landmarks.asInstanceOf[js.Any])
     if (Pose != null) __obj.updateDynamic("Pose")(Pose.asInstanceOf[js.Any])
     if (Quality != null) __obj.updateDynamic("Quality")(Quality.asInstanceOf[js.Any])

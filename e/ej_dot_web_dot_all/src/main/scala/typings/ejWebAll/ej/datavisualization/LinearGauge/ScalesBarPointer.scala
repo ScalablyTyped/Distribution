@@ -40,20 +40,20 @@ object ScalesBarPointer {
   def apply(
     backgroundColor: String = null,
     border: ScalesBarPointersBorder = null,
-    distanceFromScale: Int | Double = null,
+    distanceFromScale: js.UndefOr[Double] = js.undefined,
     gradients: js.Any = null,
-    opacity: Int | Double = null,
-    value: Int | Double = null,
-    width: Int | Double = null
+    opacity: js.UndefOr[Double] = js.undefined,
+    value: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): ScalesBarPointer = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (distanceFromScale != null) __obj.updateDynamic("distanceFromScale")(distanceFromScale.asInstanceOf[js.Any])
+    if (!js.isUndefined(distanceFromScale)) __obj.updateDynamic("distanceFromScale")(distanceFromScale.get.asInstanceOf[js.Any])
     if (gradients != null) __obj.updateDynamic("gradients")(gradients.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalesBarPointer]
   }
 }

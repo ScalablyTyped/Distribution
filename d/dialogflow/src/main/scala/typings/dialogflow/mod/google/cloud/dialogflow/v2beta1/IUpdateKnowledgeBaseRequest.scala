@@ -15,10 +15,13 @@ trait IUpdateKnowledgeBaseRequest extends js.Object {
 
 object IUpdateKnowledgeBaseRequest {
   @scala.inline
-  def apply(knowledgeBase: IKnowledgeBase = null, updateMask: IFieldMask = null): IUpdateKnowledgeBaseRequest = {
+  def apply(
+    knowledgeBase: js.UndefOr[Null | IKnowledgeBase] = js.undefined,
+    updateMask: js.UndefOr[Null | IFieldMask] = js.undefined
+  ): IUpdateKnowledgeBaseRequest = {
     val __obj = js.Dynamic.literal()
-    if (knowledgeBase != null) __obj.updateDynamic("knowledgeBase")(knowledgeBase.asInstanceOf[js.Any])
-    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
+    if (!js.isUndefined(knowledgeBase)) __obj.updateDynamic("knowledgeBase")(knowledgeBase.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateMask)) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUpdateKnowledgeBaseRequest]
   }
 }

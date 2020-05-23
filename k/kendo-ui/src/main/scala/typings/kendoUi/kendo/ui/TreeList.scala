@@ -10,11 +10,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.TreeList")
 @js.native
-class TreeList protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: TreeListOptions) = this()
+trait TreeList extends Widget {
   var columns: js.Any = js.native
   var content: JQuery = js.native
   var dataSource: DataSource = js.native
@@ -73,13 +70,5 @@ class TreeList protected () extends Widget {
   def showColumn(column: Double): Unit = js.native
   def unlockColumn(column: String): Unit = js.native
   def unlockColumn(column: Double): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.TreeList")
-@js.native
-object TreeList extends js.Object {
-  var fn: TreeList = js.native
-  def extend(proto: js.Object): TreeList = js.native
 }
 

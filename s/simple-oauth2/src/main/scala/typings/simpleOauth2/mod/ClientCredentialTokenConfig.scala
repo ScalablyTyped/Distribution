@@ -14,7 +14,7 @@ trait ClientCredentialTokenConfig
 object ClientCredentialTokenConfig {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     scope: String | js.Array[String] = null
   ): ClientCredentialTokenConfig = {
     val __obj = js.Dynamic.literal()

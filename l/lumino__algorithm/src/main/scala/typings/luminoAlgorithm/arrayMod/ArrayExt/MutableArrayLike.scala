@@ -14,7 +14,7 @@ trait MutableArrayLike[T] extends /* index */ NumberDictionary[T] {
 
 object MutableArrayLike {
   @scala.inline
-  def apply[T](length: Double, NumberDictionary: /* index */ NumberDictionary[T] = null): MutableArrayLike[T] = {
+  def apply[T](length: Double, NumberDictionary: /* n */ NumberDictionary[T] = null): MutableArrayLike[T] = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
     if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[MutableArrayLike[T]]

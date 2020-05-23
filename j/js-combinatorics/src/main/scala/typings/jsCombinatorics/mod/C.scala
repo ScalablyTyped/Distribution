@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object C extends js.Object {
   /**
-  	 * Calculates m C n
-  	 */
+    * Calculates m C n
+    */
   def apply(m: Double, n: Double): Double = js.native
 }
 

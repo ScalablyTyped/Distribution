@@ -15,11 +15,15 @@ trait TruncatedNormalArgs extends js.Object {
 
 object TruncatedNormalArgs {
   @scala.inline
-  def apply(mean: Int | Double = null, seed: Int | Double = null, stddev: Int | Double = null): TruncatedNormalArgs = {
+  def apply(
+    mean: js.UndefOr[Double] = js.undefined,
+    seed: js.UndefOr[Double] = js.undefined,
+    stddev: js.UndefOr[Double] = js.undefined
+  ): TruncatedNormalArgs = {
     val __obj = js.Dynamic.literal()
-    if (mean != null) __obj.updateDynamic("mean")(mean.asInstanceOf[js.Any])
-    if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
-    if (stddev != null) __obj.updateDynamic("stddev")(stddev.asInstanceOf[js.Any])
+    if (!js.isUndefined(mean)) __obj.updateDynamic("mean")(mean.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(seed)) __obj.updateDynamic("seed")(seed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stddev)) __obj.updateDynamic("stddev")(stddev.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TruncatedNormalArgs]
   }
 }

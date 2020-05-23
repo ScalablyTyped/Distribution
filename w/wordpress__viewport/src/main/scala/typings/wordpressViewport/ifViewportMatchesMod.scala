@@ -1,5 +1,6 @@
 package typings.wordpressViewport
 
+import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,16 +17,13 @@ object ifViewportMatchesMod extends js.Object {
     * @example
     * ```jsx
     * function MyMobileComponent() {
-    * 	return <div>I'm only rendered on mobile viewports!</div>;
+    *     return <div>I'm only rendered on mobile viewports!</div>;
     * }
     *
     * MyMobileComponent = ifViewportMatches( '< small' )( MyMobileComponent );
     * ```
     */
   // prettier-ignore
-  def default(query: String): js.Function1[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<any> */ /* component */ js.Any, 
-    _
-  ] = js.native
+  def default(query: String): js.Function1[/* component */ ComponentType[_], ComponentType[_]] = js.native
 }
 

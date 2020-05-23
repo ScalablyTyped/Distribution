@@ -1,13 +1,13 @@
 package typings.gapiClientStorage.gapi.client.storage
 
-import typings.gapiClientStorage.AnonDefaultKmsKeyName
-import typings.gapiClientStorage.AnonEnabled
-import typings.gapiClientStorage.AnonEntity
-import typings.gapiClientStorage.AnonLogBucket
-import typings.gapiClientStorage.AnonMainPageSuffix
-import typings.gapiClientStorage.AnonMaxAgeSeconds
-import typings.gapiClientStorage.AnonRequesterPays
-import typings.gapiClientStorage.AnonRule
+import typings.gapiClientStorage.anon.DefaultKmsKeyName
+import typings.gapiClientStorage.anon.Enabled
+import typings.gapiClientStorage.anon.Entity
+import typings.gapiClientStorage.anon.LogBucket
+import typings.gapiClientStorage.anon.MainPageSuffix
+import typings.gapiClientStorage.anon.MaxAgeSeconds
+import typings.gapiClientStorage.anon.RequesterPays
+import typings.gapiClientStorage.anon.Rule
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,13 +17,13 @@ trait Bucket extends js.Object {
   /** Access controls on the bucket. */
   var acl: js.UndefOr[js.Array[BucketAccessControl]] = js.undefined
   /** The bucket's billing configuration. */
-  var billing: js.UndefOr[AnonRequesterPays] = js.undefined
+  var billing: js.UndefOr[RequesterPays] = js.undefined
   /** The bucket's Cross-Origin Resource Sharing (CORS) configuration. */
-  var cors: js.UndefOr[js.Array[AnonMaxAgeSeconds]] = js.undefined
+  var cors: js.UndefOr[js.Array[MaxAgeSeconds]] = js.undefined
   /** Default access controls to apply to new objects when no ACL is provided. */
   var defaultObjectAcl: js.UndefOr[js.Array[ObjectAccessControl]] = js.undefined
   /** Encryption configuration used by default for newly inserted objects, when no encryption config is specified. */
-  var encryption: js.UndefOr[AnonDefaultKmsKeyName] = js.undefined
+  var encryption: js.UndefOr[DefaultKmsKeyName] = js.undefined
   /** HTTP 1.1 Entity tag for the bucket. */
   var etag: js.UndefOr[String] = js.undefined
   /** The ID of the bucket. For buckets, the id and name properities are the same. */
@@ -33,20 +33,20 @@ trait Bucket extends js.Object {
   /** User-provided labels, in key/value pairs. */
   var labels: js.UndefOr[Record[String, String]] = js.undefined
   /** The bucket's lifecycle configuration. See lifecycle management for more information. */
-  var lifecycle: js.UndefOr[AnonRule] = js.undefined
+  var lifecycle: js.UndefOr[Rule] = js.undefined
   /**
     * The location of the bucket. Object data for objects in the bucket resides in physical storage within this region. Defaults to US. See the developer's
     * guide for the authoritative list.
     */
   var location: js.UndefOr[String] = js.undefined
   /** The bucket's logging configuration, which defines the destination bucket and optional name prefix for the current bucket's logs. */
-  var logging: js.UndefOr[AnonLogBucket] = js.undefined
+  var logging: js.UndefOr[LogBucket] = js.undefined
   /** The metadata generation of this bucket. */
   var metageneration: js.UndefOr[String] = js.undefined
   /** The name of the bucket. */
   var name: js.UndefOr[String] = js.undefined
   /** The owner of the bucket. This is always the project team's owner group. */
-  var owner: js.UndefOr[AnonEntity] = js.undefined
+  var owner: js.UndefOr[Entity] = js.undefined
   /** The project number of the project the bucket belongs to. */
   var projectNumber: js.UndefOr[String] = js.undefined
   /** The URI of this bucket. */
@@ -63,39 +63,39 @@ trait Bucket extends js.Object {
   /** The modification time of the bucket in RFC 3339 format. */
   var updated: js.UndefOr[String] = js.undefined
   /** The bucket's versioning configuration. */
-  var versioning: js.UndefOr[AnonEnabled] = js.undefined
+  var versioning: js.UndefOr[Enabled] = js.undefined
   /**
     * The bucket's website configuration, controlling how the service behaves when accessing bucket contents as a web site. See the Static Website Examples
     * for more information.
     */
-  var website: js.UndefOr[AnonMainPageSuffix] = js.undefined
+  var website: js.UndefOr[MainPageSuffix] = js.undefined
 }
 
 object Bucket {
   @scala.inline
   def apply(
     acl: js.Array[BucketAccessControl] = null,
-    billing: AnonRequesterPays = null,
-    cors: js.Array[AnonMaxAgeSeconds] = null,
+    billing: RequesterPays = null,
+    cors: js.Array[MaxAgeSeconds] = null,
     defaultObjectAcl: js.Array[ObjectAccessControl] = null,
-    encryption: AnonDefaultKmsKeyName = null,
+    encryption: DefaultKmsKeyName = null,
     etag: String = null,
     id: String = null,
     kind: String = null,
     labels: Record[String, String] = null,
-    lifecycle: AnonRule = null,
+    lifecycle: Rule = null,
     location: String = null,
-    logging: AnonLogBucket = null,
+    logging: LogBucket = null,
     metageneration: String = null,
     name: String = null,
-    owner: AnonEntity = null,
+    owner: Entity = null,
     projectNumber: String = null,
     selfLink: String = null,
     storageClass: String = null,
     timeCreated: String = null,
     updated: String = null,
-    versioning: AnonEnabled = null,
-    website: AnonMainPageSuffix = null
+    versioning: Enabled = null,
+    website: MainPageSuffix = null
   ): Bucket = {
     val __obj = js.Dynamic.literal()
     if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])

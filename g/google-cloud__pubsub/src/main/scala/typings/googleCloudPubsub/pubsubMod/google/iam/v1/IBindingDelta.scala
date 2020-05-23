@@ -20,12 +20,17 @@ trait IBindingDelta extends js.Object {
 
 object IBindingDelta {
   @scala.inline
-  def apply(action: Action = null, condition: IExpr = null, member: String = null, role: String = null): IBindingDelta = {
+  def apply(
+    action: js.UndefOr[Null | Action] = js.undefined,
+    condition: js.UndefOr[Null | IExpr] = js.undefined,
+    member: js.UndefOr[Null | String] = js.undefined,
+    role: js.UndefOr[Null | String] = js.undefined
+  ): IBindingDelta = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
-    if (member != null) __obj.updateDynamic("member")(member.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (!js.isUndefined(action)) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (!js.isUndefined(condition)) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
+    if (!js.isUndefined(member)) __obj.updateDynamic("member")(member.asInstanceOf[js.Any])
+    if (!js.isUndefined(role)) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBindingDelta]
   }
 }

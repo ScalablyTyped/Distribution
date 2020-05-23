@@ -45,16 +45,16 @@ object VictoryAnimationProps {
   def apply(
     children: /* style */ AnimationStyle => ReactElement = null,
     data: AnimationData = null,
-    delay: Int | Double = null,
-    duration: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
+    duration: js.UndefOr[Double] = js.undefined,
     easing: AnimationEasing = null,
     onEnd: () => Unit = null
   ): VictoryAnimationProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (onEnd != null) __obj.updateDynamic("onEnd")(js.Any.fromFunction0(onEnd))
     __obj.asInstanceOf[VictoryAnimationProps]

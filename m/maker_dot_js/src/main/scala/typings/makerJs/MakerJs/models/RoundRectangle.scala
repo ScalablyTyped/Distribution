@@ -1,44 +1,41 @@
 package typings.makerJs.MakerJs.models
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.makerJs.MakerJs.IModel
+import typings.makerJs.MakerJs.IModelMap
 import typings.makerJs.MakerJs.IPathMap
 import typings.makerJs.MakerJs.IPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MakerJs.models.RoundRectangle")
-@js.native
-class RoundRectangle protected () extends IModel {
-  /**
-    * Create a round rectangle which will surround a model.
-    *
-    * Example:
-    * ```
-    * var b = new makerjs.models.BoltRectangle(30, 20, 1); //draw a bolt rectangle so we have something to surround
-    * var r = new makerjs.models.RoundRectangle(b, 2.5);   //surround it
-    * ```
-    *
-    * @param modelToSurround IModel object.
-    * @param margin Distance from the model. This will also become the corner radius.
-    */
-  def this(modelToSurround: IModel, margin: Double) = this()
-  /**
-    * Create a round rectangle from width, height, and corner radius.
-    *
-    * Example:
-    * ```
-    * var r = new makerjs.models.RoundRectangle(100, 50, 5);
-    * ```
-    *
-    * @param width Width of the rectangle.
-    * @param height Height of the rectangle.
-    * @param radius Corner radius.
-    */
-  def this(width: Double, height: Double, radius: Double) = this()
+trait RoundRectangle extends IModel {
   @JSName("origin")
-  var origin_RoundRectangle: IPoint = js.native
+  var origin_RoundRectangle: IPoint
   @JSName("paths")
-  var paths_RoundRectangle: IPathMap = js.native
+  var paths_RoundRectangle: IPathMap
+}
+
+object RoundRectangle {
+  @scala.inline
+  def apply(
+    origin: IPoint,
+    paths: IPathMap,
+    exporterOptions: StringDictionary[js.Any] = null,
+    layer: String = null,
+    models: IModelMap = null,
+    notes: String = null,
+    `type`: String = null,
+    units: String = null
+  ): RoundRectangle = {
+    val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any])
+    if (exporterOptions != null) __obj.updateDynamic("exporterOptions")(exporterOptions.asInstanceOf[js.Any])
+    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
+    if (models != null) __obj.updateDynamic("models")(models.asInstanceOf[js.Any])
+    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RoundRectangle]
+  }
 }
 

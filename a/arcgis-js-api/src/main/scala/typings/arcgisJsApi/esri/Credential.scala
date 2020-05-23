@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`token-change`
 import typings.arcgisJsApi.arcgisJsApiStrings.destroy
@@ -65,8 +64,4 @@ trait Credential extends Accessor {
     */
   def refreshToken(): Unit = js.native
 }
-
-@JSGlobal("__esri.Credential")
-@js.native
-object Credential extends TopLevel[CredentialConstructor]
 

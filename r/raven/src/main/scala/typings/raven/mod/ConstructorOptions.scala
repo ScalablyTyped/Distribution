@@ -34,31 +34,31 @@ object ConstructorOptions {
     environment: String = null,
     extra: StringDictionary[js.Any] = null,
     logger: String = null,
-    maxBreadcrumbs: Int | Double = null,
-    maxReqQueueCount: Int | Double = null,
+    maxBreadcrumbs: js.UndefOr[Double] = js.undefined,
+    maxReqQueueCount: js.UndefOr[Double] = js.undefined,
     name: String = null,
     parseUser: Boolean | js.Array[String] | parseUserCallback = null,
     release: String = null,
-    sampleRate: Int | Double = null,
-    sendTimeout: Int | Double = null,
+    sampleRate: js.UndefOr[Double] = js.undefined,
+    sendTimeout: js.UndefOr[Double] = js.undefined,
     shouldSendCallback: /* data */ StringDictionary[js.Any] => Boolean = null,
     tags: StringDictionary[String] = null,
     transport: Transport = null
   ): ConstructorOptions = {
     val __obj = js.Dynamic.literal()
     if (autoBreadcrumbs != null) __obj.updateDynamic("autoBreadcrumbs")(autoBreadcrumbs.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureUnhandledRejections)) __obj.updateDynamic("captureUnhandledRejections")(captureUnhandledRejections.asInstanceOf[js.Any])
+    if (!js.isUndefined(captureUnhandledRejections)) __obj.updateDynamic("captureUnhandledRejections")(captureUnhandledRejections.get.asInstanceOf[js.Any])
     if (dataCallback != null) __obj.updateDynamic("dataCallback")(js.Any.fromFunction1(dataCallback))
     if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
-    if (maxBreadcrumbs != null) __obj.updateDynamic("maxBreadcrumbs")(maxBreadcrumbs.asInstanceOf[js.Any])
-    if (maxReqQueueCount != null) __obj.updateDynamic("maxReqQueueCount")(maxReqQueueCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxBreadcrumbs)) __obj.updateDynamic("maxBreadcrumbs")(maxBreadcrumbs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxReqQueueCount)) __obj.updateDynamic("maxReqQueueCount")(maxReqQueueCount.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (parseUser != null) __obj.updateDynamic("parseUser")(parseUser.asInstanceOf[js.Any])
     if (release != null) __obj.updateDynamic("release")(release.asInstanceOf[js.Any])
-    if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
-    if (sendTimeout != null) __obj.updateDynamic("sendTimeout")(sendTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampleRate)) __obj.updateDynamic("sampleRate")(sampleRate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendTimeout)) __obj.updateDynamic("sendTimeout")(sendTimeout.get.asInstanceOf[js.Any])
     if (shouldSendCallback != null) __obj.updateDynamic("shouldSendCallback")(js.Any.fromFunction1(shouldSendCallback))
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (transport != null) __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])

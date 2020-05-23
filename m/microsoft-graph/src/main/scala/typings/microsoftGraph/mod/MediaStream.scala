@@ -25,7 +25,7 @@ object MediaStream {
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
-    if (!js.isUndefined(serverMuted)) __obj.updateDynamic("serverMuted")(serverMuted.asInstanceOf[js.Any])
+    if (!js.isUndefined(serverMuted)) __obj.updateDynamic("serverMuted")(serverMuted.get.asInstanceOf[js.Any])
     if (sourceId != null) __obj.updateDynamic("sourceId")(sourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaStream]
   }

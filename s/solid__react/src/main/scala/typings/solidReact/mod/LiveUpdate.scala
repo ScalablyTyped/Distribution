@@ -1,7 +1,7 @@
 package typings.solidReact.mod
 
 import typings.react.mod.Component
-import typings.solidReact.AnonSubscribe
+import typings.solidReact.anon.Subscribe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@solid/react", "LiveUpdate")
 @js.native
 class LiveUpdate ()
-  extends Component[AnonSubscribe, js.Object, js.Any]
+  extends Component[Subscribe, js.Object, js.Any]
 

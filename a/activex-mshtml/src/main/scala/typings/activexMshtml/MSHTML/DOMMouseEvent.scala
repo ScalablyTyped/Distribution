@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.DOMMouseEvent")
 @js.native
-class DOMMouseEvent protected () extends js.Object {
+trait DOMMouseEvent extends js.Object {
   @JSName("MSHTML.DOMMouseEvent_typekey")
   var MSHTMLDotDOMMouseEvent_typekey: DOMMouseEvent = js.native
   val altKey: Boolean = js.native

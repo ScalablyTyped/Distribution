@@ -1,9 +1,9 @@
 package typings.blueprintjsCore.tagInputMod
 
-import typings.blueprintjsCore.PartialITagInputProps
-import typings.blueprintjsCore.PartialITagInputState
-import typings.blueprintjsCore.ReadonlyITagInputProps
-import typings.blueprintjsCore.ReadonlyITagInputState
+import typings.blueprintjsCore.anon.PartialITagInputProps
+import typings.blueprintjsCore.anon.PartialITagInputState
+import typings.blueprintjsCore.anon.ReadonlyITagInputProps
+import typings.blueprintjsCore.anon.ReadonlyITagInputState
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import scala.scalajs.js
 import scala.scalajs.js.`|`

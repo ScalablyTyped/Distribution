@@ -27,15 +27,15 @@ trait SCBrokerOptions
 object SCBrokerOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* additionalOptions */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     instanceId: String = null,
-    ipcAckTimeout: Int | Double = null,
+    ipcAckTimeout: js.UndefOr[Double] = js.undefined,
     secretKey: String = null
   ): SCBrokerOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
-    if (ipcAckTimeout != null) __obj.updateDynamic("ipcAckTimeout")(ipcAckTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(ipcAckTimeout)) __obj.updateDynamic("ipcAckTimeout")(ipcAckTimeout.get.asInstanceOf[js.Any])
     if (secretKey != null) __obj.updateDynamic("secretKey")(secretKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SCBrokerOptions]
   }

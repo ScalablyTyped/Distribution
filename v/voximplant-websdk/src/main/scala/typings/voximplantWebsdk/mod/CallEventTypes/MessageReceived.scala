@@ -7,16 +7,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		*	Event dispatched when text message is received
-		*/
+  *    Event dispatched when text message is received
+  */
 trait MessageReceived extends VoxImplantCallEvent {
   /**
-  			*	Call that dispatched the event
-  			*/
+    *    Call that dispatched the event
+    */
   var call: Call
   /**
-  			*	Content of the message
-  			*/
+    *    Content of the message
+    */
   var text: String
 }
 

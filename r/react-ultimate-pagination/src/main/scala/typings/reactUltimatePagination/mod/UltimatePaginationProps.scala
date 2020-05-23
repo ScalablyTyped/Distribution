@@ -48,22 +48,22 @@ object UltimatePaginationProps {
   def apply(
     currentPage: Double,
     totalPages: Double,
-    boundaryPagesRange: Int | Double = null,
+    boundaryPagesRange: js.UndefOr[Double] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     hideEllipsis: js.UndefOr[Boolean] = js.undefined,
     hideFirstAndLastPageLinks: js.UndefOr[Boolean] = js.undefined,
     hidePreviousAndNextPageLinks: js.UndefOr[Boolean] = js.undefined,
     onChange: /* newPage */ Double => Unit = null,
-    siblingPagesRange: Int | Double = null
+    siblingPagesRange: js.UndefOr[Double] = js.undefined
   ): UltimatePaginationProps = {
     val __obj = js.Dynamic.literal(currentPage = currentPage.asInstanceOf[js.Any], totalPages = totalPages.asInstanceOf[js.Any])
-    if (boundaryPagesRange != null) __obj.updateDynamic("boundaryPagesRange")(boundaryPagesRange.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideEllipsis)) __obj.updateDynamic("hideEllipsis")(hideEllipsis.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideFirstAndLastPageLinks)) __obj.updateDynamic("hideFirstAndLastPageLinks")(hideFirstAndLastPageLinks.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidePreviousAndNextPageLinks)) __obj.updateDynamic("hidePreviousAndNextPageLinks")(hidePreviousAndNextPageLinks.asInstanceOf[js.Any])
+    if (!js.isUndefined(boundaryPagesRange)) __obj.updateDynamic("boundaryPagesRange")(boundaryPagesRange.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideEllipsis)) __obj.updateDynamic("hideEllipsis")(hideEllipsis.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideFirstAndLastPageLinks)) __obj.updateDynamic("hideFirstAndLastPageLinks")(hideFirstAndLastPageLinks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidePreviousAndNextPageLinks)) __obj.updateDynamic("hidePreviousAndNextPageLinks")(hidePreviousAndNextPageLinks.get.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (siblingPagesRange != null) __obj.updateDynamic("siblingPagesRange")(siblingPagesRange.asInstanceOf[js.Any])
+    if (!js.isUndefined(siblingPagesRange)) __obj.updateDynamic("siblingPagesRange")(siblingPagesRange.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UltimatePaginationProps]
   }
 }

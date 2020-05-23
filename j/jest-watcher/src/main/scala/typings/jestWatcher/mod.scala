@@ -1,17 +1,18 @@
 package typings.jestWatcher
 
+import typings.jestWatcher.anon.Stdin
 import typings.jestWatcher.baseWatchPluginMod.default
 import typings.node.NodeJS.WritableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("jest-watcher", JSImport.Namespace)
+@JSImport("jest-watcher/build", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
   @js.native
   class BaseWatchPlugin protected () extends default {
-    def this(hasStdinStdout: AnonStdin) = this()
+    def this(hasStdinStdout: Stdin) = this()
   }
   
   @js.native

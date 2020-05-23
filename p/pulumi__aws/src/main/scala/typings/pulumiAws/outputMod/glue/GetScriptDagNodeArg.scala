@@ -24,7 +24,7 @@ object GetScriptDagNodeArg {
   @scala.inline
   def apply(name: String, value: String, param: js.UndefOr[Boolean] = js.undefined): GetScriptDagNodeArg = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (!js.isUndefined(param)) __obj.updateDynamic("param")(param.asInstanceOf[js.Any])
+    if (!js.isUndefined(param)) __obj.updateDynamic("param")(param.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetScriptDagNodeArg]
   }
 }

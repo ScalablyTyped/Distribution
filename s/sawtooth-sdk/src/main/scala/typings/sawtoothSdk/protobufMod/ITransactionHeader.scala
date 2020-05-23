@@ -28,26 +28,26 @@ trait ITransactionHeader extends js.Object {
 object ITransactionHeader {
   @scala.inline
   def apply(
-    batcherPublicKey: String = null,
-    dependencies: js.Array[String] = null,
-    familyName: String = null,
-    familyVersion: String = null,
-    inputs: js.Array[String] = null,
-    nonce: String = null,
-    outputs: js.Array[String] = null,
-    payloadSha512: String = null,
-    signerPublicKey: String = null
+    batcherPublicKey: js.UndefOr[Null | String] = js.undefined,
+    dependencies: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    familyName: js.UndefOr[Null | String] = js.undefined,
+    familyVersion: js.UndefOr[Null | String] = js.undefined,
+    inputs: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    nonce: js.UndefOr[Null | String] = js.undefined,
+    outputs: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    payloadSha512: js.UndefOr[Null | String] = js.undefined,
+    signerPublicKey: js.UndefOr[Null | String] = js.undefined
   ): ITransactionHeader = {
     val __obj = js.Dynamic.literal()
-    if (batcherPublicKey != null) __obj.updateDynamic("batcherPublicKey")(batcherPublicKey.asInstanceOf[js.Any])
-    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
-    if (familyName != null) __obj.updateDynamic("familyName")(familyName.asInstanceOf[js.Any])
-    if (familyVersion != null) __obj.updateDynamic("familyVersion")(familyVersion.asInstanceOf[js.Any])
-    if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
-    if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
-    if (payloadSha512 != null) __obj.updateDynamic("payloadSha512")(payloadSha512.asInstanceOf[js.Any])
-    if (signerPublicKey != null) __obj.updateDynamic("signerPublicKey")(signerPublicKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(batcherPublicKey)) __obj.updateDynamic("batcherPublicKey")(batcherPublicKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(dependencies)) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
+    if (!js.isUndefined(familyName)) __obj.updateDynamic("familyName")(familyName.asInstanceOf[js.Any])
+    if (!js.isUndefined(familyVersion)) __obj.updateDynamic("familyVersion")(familyVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputs)) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
+    if (!js.isUndefined(nonce)) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputs)) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
+    if (!js.isUndefined(payloadSha512)) __obj.updateDynamic("payloadSha512")(payloadSha512.asInstanceOf[js.Any])
+    if (!js.isUndefined(signerPublicKey)) __obj.updateDynamic("signerPublicKey")(signerPublicKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITransactionHeader]
   }
 }

@@ -27,15 +27,15 @@ object FrequencyRange {
   @scala.inline
   def apply(
     channelId: String = null,
-    maxPowerDBm: Int | Double = null,
-    startHz: Int | Double = null,
-    stopHz: Int | Double = null
+    maxPowerDBm: js.UndefOr[Double] = js.undefined,
+    startHz: js.UndefOr[Double] = js.undefined,
+    stopHz: js.UndefOr[Double] = js.undefined
   ): FrequencyRange = {
     val __obj = js.Dynamic.literal()
     if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
-    if (maxPowerDBm != null) __obj.updateDynamic("maxPowerDBm")(maxPowerDBm.asInstanceOf[js.Any])
-    if (startHz != null) __obj.updateDynamic("startHz")(startHz.asInstanceOf[js.Any])
-    if (stopHz != null) __obj.updateDynamic("stopHz")(stopHz.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPowerDBm)) __obj.updateDynamic("maxPowerDBm")(maxPowerDBm.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startHz)) __obj.updateDynamic("startHz")(startHz.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopHz)) __obj.updateDynamic("stopHz")(stopHz.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrequencyRange]
   }
 }

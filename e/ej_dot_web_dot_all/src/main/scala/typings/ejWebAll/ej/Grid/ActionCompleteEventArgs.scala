@@ -100,55 +100,55 @@ object ActionCompleteEventArgs {
     columnType: String = null,
     currentFilterObject: js.Any = null,
     currentFilteringColumn: String = null,
-    currentPage: Int | Double = null,
+    currentPage: js.UndefOr[Double] = js.undefined,
     data: js.Any = null,
     dataSource: js.Any = null,
-    endIndex: Int | Double = null,
+    endIndex: js.UndefOr[Double] = js.undefined,
     filterCollection: js.Any = null,
     filtermodel: js.Any = null,
     foreignKeyData: js.Any = null,
     isCustomFilter: js.UndefOr[Boolean] = js.undefined,
     model: js.Any = null,
     originalEventType: String = null,
-    previousPage: Int | Double = null,
+    previousPage: js.UndefOr[Double] = js.undefined,
     primaryKey: String = null,
     primaryKeyValue: String = null,
     requestType: String = null,
     row: js.Any = null,
     rowData: js.Any = null,
-    rowIndex: Int | Double = null,
-    selectedRow: Int | Double = null,
-    startIndex: Int | Double = null,
+    rowIndex: js.UndefOr[Double] = js.undefined,
+    selectedRow: js.UndefOr[Double] = js.undefined,
+    startIndex: js.UndefOr[Double] = js.undefined,
     target: js.Any = null,
     tr: js.Any = null,
     `type`: String = null
   ): ActionCompleteEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (columnName != null) __obj.updateDynamic("columnName")(columnName.asInstanceOf[js.Any])
     if (columnSortDirection != null) __obj.updateDynamic("columnSortDirection")(columnSortDirection.asInstanceOf[js.Any])
     if (columnType != null) __obj.updateDynamic("columnType")(columnType.asInstanceOf[js.Any])
     if (currentFilterObject != null) __obj.updateDynamic("currentFilterObject")(currentFilterObject.asInstanceOf[js.Any])
     if (currentFilteringColumn != null) __obj.updateDynamic("currentFilteringColumn")(currentFilteringColumn.asInstanceOf[js.Any])
-    if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentPage)) __obj.updateDynamic("currentPage")(currentPage.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (endIndex != null) __obj.updateDynamic("endIndex")(endIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(endIndex)) __obj.updateDynamic("endIndex")(endIndex.get.asInstanceOf[js.Any])
     if (filterCollection != null) __obj.updateDynamic("filterCollection")(filterCollection.asInstanceOf[js.Any])
     if (filtermodel != null) __obj.updateDynamic("filtermodel")(filtermodel.asInstanceOf[js.Any])
     if (foreignKeyData != null) __obj.updateDynamic("foreignKeyData")(foreignKeyData.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCustomFilter)) __obj.updateDynamic("isCustomFilter")(isCustomFilter.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCustomFilter)) __obj.updateDynamic("isCustomFilter")(isCustomFilter.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (originalEventType != null) __obj.updateDynamic("originalEventType")(originalEventType.asInstanceOf[js.Any])
-    if (previousPage != null) __obj.updateDynamic("previousPage")(previousPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(previousPage)) __obj.updateDynamic("previousPage")(previousPage.get.asInstanceOf[js.Any])
     if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey.asInstanceOf[js.Any])
     if (primaryKeyValue != null) __obj.updateDynamic("primaryKeyValue")(primaryKeyValue.asInstanceOf[js.Any])
     if (requestType != null) __obj.updateDynamic("requestType")(requestType.asInstanceOf[js.Any])
     if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
     if (rowData != null) __obj.updateDynamic("rowData")(rowData.asInstanceOf[js.Any])
-    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
-    if (selectedRow != null) __obj.updateDynamic("selectedRow")(selectedRow.asInstanceOf[js.Any])
-    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedRow)) __obj.updateDynamic("selectedRow")(selectedRow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (tr != null) __obj.updateDynamic("tr")(tr.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

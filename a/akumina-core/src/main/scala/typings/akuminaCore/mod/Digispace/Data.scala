@@ -38,11 +38,11 @@ object Data extends js.Object {
       * @param itemid
       */
     def DeleteListItem(listName: String, itemid: String): JQueryDeferred[_] = js.native
-    def GetAllList(): JQueryDeferred[_] = js.native
     /**
       * Get All lists from the site. By default it fetechs from root site
       * @param useRoot
       */
+    def GetAllList(): JQueryDeferred[_] = js.native
     def GetAllList(useRoot: Boolean): JQueryDeferred[_] = js.native
     /**
       * Get all user groups for site

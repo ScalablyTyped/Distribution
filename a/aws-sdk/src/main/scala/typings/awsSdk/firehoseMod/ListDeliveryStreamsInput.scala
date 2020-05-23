@@ -25,12 +25,12 @@ object ListDeliveryStreamsInput {
   def apply(
     DeliveryStreamType: DeliveryStreamType = null,
     ExclusiveStartDeliveryStreamName: DeliveryStreamName = null,
-    Limit: Int | Double = null
+    Limit: js.UndefOr[ListDeliveryStreamsInputLimit] = js.undefined
   ): ListDeliveryStreamsInput = {
     val __obj = js.Dynamic.literal()
     if (DeliveryStreamType != null) __obj.updateDynamic("DeliveryStreamType")(DeliveryStreamType.asInstanceOf[js.Any])
     if (ExclusiveStartDeliveryStreamName != null) __obj.updateDynamic("ExclusiveStartDeliveryStreamName")(ExclusiveStartDeliveryStreamName.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDeliveryStreamsInput]
   }
 }

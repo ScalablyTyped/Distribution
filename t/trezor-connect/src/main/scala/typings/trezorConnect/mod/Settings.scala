@@ -44,7 +44,7 @@ object Settings {
     pendingTransportEvent: js.UndefOr[Boolean] = js.undefined,
     popup: js.UndefOr[Boolean] = js.undefined,
     popupSrc: String = null,
-    priority: Int | Double = null,
+    priority: js.UndefOr[Double] = js.undefined,
     supportedBrowser: js.UndefOr[Boolean] = js.undefined,
     transportReconnect: js.UndefOr[Boolean] = js.undefined,
     trustedHost: js.UndefOr[Boolean] = js.undefined,
@@ -61,14 +61,14 @@ object Settings {
     if (lazyLoad != null) __obj.updateDynamic("lazyLoad")(lazyLoad.asInstanceOf[js.Any])
     if (manifest != null) __obj.updateDynamic("manifest")(manifest.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (!js.isUndefined(pendingTransportEvent)) __obj.updateDynamic("pendingTransportEvent")(pendingTransportEvent.asInstanceOf[js.Any])
-    if (!js.isUndefined(popup)) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
+    if (!js.isUndefined(pendingTransportEvent)) __obj.updateDynamic("pendingTransportEvent")(pendingTransportEvent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(popup)) __obj.updateDynamic("popup")(popup.get.asInstanceOf[js.Any])
     if (popupSrc != null) __obj.updateDynamic("popupSrc")(popupSrc.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportedBrowser)) __obj.updateDynamic("supportedBrowser")(supportedBrowser.asInstanceOf[js.Any])
-    if (!js.isUndefined(transportReconnect)) __obj.updateDynamic("transportReconnect")(transportReconnect.asInstanceOf[js.Any])
-    if (!js.isUndefined(trustedHost)) __obj.updateDynamic("trustedHost")(trustedHost.asInstanceOf[js.Any])
-    if (!js.isUndefined(webusb)) __obj.updateDynamic("webusb")(webusb.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportedBrowser)) __obj.updateDynamic("supportedBrowser")(supportedBrowser.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transportReconnect)) __obj.updateDynamic("transportReconnect")(transportReconnect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trustedHost)) __obj.updateDynamic("trustedHost")(trustedHost.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(webusb)) __obj.updateDynamic("webusb")(webusb.get.asInstanceOf[js.Any])
     if (webusbSrc != null) __obj.updateDynamic("webusbSrc")(webusbSrc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }

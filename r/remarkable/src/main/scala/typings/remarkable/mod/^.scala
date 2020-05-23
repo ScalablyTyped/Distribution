@@ -1,6 +1,6 @@
 package typings.remarkable.mod
 
-import typings.remarkable.TypeofUtils
+import typings.remarkable.anon.TypeofUtils
 import typings.remarkable.libMod.Options
 import typings.remarkable.remarkableStrings.commonmark
 import typings.remarkable.remarkableStrings.full

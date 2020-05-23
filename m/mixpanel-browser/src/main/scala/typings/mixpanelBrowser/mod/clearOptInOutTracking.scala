@@ -1,6 +1,6 @@
 package typings.mixpanelBrowser.mod
 
-import typings.mixpanelBrowser.PartialClearOptOutInOutOp
+import typings.mixpanelBrowser.anon.PartialClearOptOutInOutOp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

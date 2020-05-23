@@ -55,10 +55,10 @@ trait MaintenanceWindowIdentity extends js.Object {
 object MaintenanceWindowIdentity {
   @scala.inline
   def apply(
-    Cutoff: Int | Double = null,
+    Cutoff: js.UndefOr[MaintenanceWindowCutoff] = js.undefined,
     Description: MaintenanceWindowDescription = null,
-    Duration: Int | Double = null,
-    Enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    Duration: js.UndefOr[MaintenanceWindowDurationHours] = js.undefined,
+    Enabled: js.UndefOr[MaintenanceWindowEnabled] = js.undefined,
     EndDate: MaintenanceWindowStringDateTime = null,
     Name: MaintenanceWindowName = null,
     NextExecutionTime: MaintenanceWindowStringDateTime = null,
@@ -68,10 +68,10 @@ object MaintenanceWindowIdentity {
     WindowId: MaintenanceWindowId = null
   ): MaintenanceWindowIdentity = {
     val __obj = js.Dynamic.literal()
-    if (Cutoff != null) __obj.updateDynamic("Cutoff")(Cutoff.asInstanceOf[js.Any])
+    if (!js.isUndefined(Cutoff)) __obj.updateDynamic("Cutoff")(Cutoff.get.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     if (EndDate != null) __obj.updateDynamic("EndDate")(EndDate.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (NextExecutionTime != null) __obj.updateDynamic("NextExecutionTime")(NextExecutionTime.asInstanceOf[js.Any])

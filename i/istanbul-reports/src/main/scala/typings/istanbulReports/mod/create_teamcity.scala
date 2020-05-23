@@ -2,7 +2,7 @@ package typings.istanbulReports.mod
 
 import typings.istanbulLibReport.mod.Node
 import typings.istanbulLibReport.mod.Visitor
-import typings.istanbulReports.OptionsblockNamestring
+import typings.istanbulReports.anon.OptionsblockNamestring
 import typings.istanbulReports.istanbulReportsStrings.teamcity
 import typings.std.Partial
 import scala.scalajs.js

@@ -16,11 +16,15 @@ trait ISearchAgentsRequest extends js.Object {
 
 object ISearchAgentsRequest {
   @scala.inline
-  def apply(pageSize: Int | Double = null, pageToken: String = null, parent: String = null): ISearchAgentsRequest = {
+  def apply(
+    pageSize: js.UndefOr[Null | Double] = js.undefined,
+    pageToken: js.UndefOr[Null | String] = js.undefined,
+    parent: js.UndefOr[Null | String] = js.undefined
+  ): ISearchAgentsRequest = {
     val __obj = js.Dynamic.literal()
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageToken)) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISearchAgentsRequest]
   }
 }

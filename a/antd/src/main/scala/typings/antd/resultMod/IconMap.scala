@@ -1,6 +1,6 @@
 package typings.antd.resultMod
 
-import typings.antd.PickAntdIconPropschildren
+import typings.antd.anon.PickAntdIconPropschildren
 import typings.react.mod.ForwardRefExoticComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

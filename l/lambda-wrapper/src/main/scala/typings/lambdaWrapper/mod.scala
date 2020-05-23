@@ -2,6 +2,9 @@ package typings.lambdaWrapper
 
 import org.scalablytyped.runtime.TopLevel
 import typings.awsLambda.handlerMod.Callback
+import typings.lambdaWrapper.anon.Handler
+import typings.lambdaWrapper.anon.LambdaFunction
+import typings.lambdaWrapper.anon.PartialContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,8 +28,8 @@ object mod extends js.Object {
   def init(mod: js.Any, options: js.Any): Unit = js.native
   def run(event: js.Any, callback: Callback[_]): js.Promise[_] = js.native
   def run(event: js.Any, context: PartialContext, callback: Callback[_]): js.Promise[_] = js.native
-  def wrap(mod: AnonLambdaFunction): Wrapped[_, _] = js.native
-  def wrap(mod: AnonLambdaFunction, options: js.Object): Wrapped[_, _] = js.native
+  def wrap(mod: LambdaFunction): Wrapped[_, _] = js.native
+  def wrap(mod: LambdaFunction, options: js.Object): Wrapped[_, _] = js.native
   def wrap[TEvent, TResult, THandlerName /* <: String */](
     mod: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ name in THandlerName ]: aws-lambda.aws-lambda/handler.Handler<TEvent, TResult>}
@@ -36,7 +39,7 @@ object mod extends js.Object {
     mod: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ name in THandlerName ]: aws-lambda.aws-lambda/handler.Handler<TEvent, TResult>}
     */ typings.lambdaWrapper.lambdaWrapperStrings.wrap with TopLevel[js.Any],
-    options: AnonHandler[THandlerName]
+    options: Handler[THandlerName]
   ): Wrapped[TEvent, TResult] = js.native
 }
 

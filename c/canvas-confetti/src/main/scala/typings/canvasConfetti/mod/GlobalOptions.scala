@@ -21,8 +21,8 @@ object GlobalOptions {
   @scala.inline
   def apply(resize: js.UndefOr[Boolean] = js.undefined, useWorker: js.UndefOr[Boolean] = js.undefined): GlobalOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize.asInstanceOf[js.Any])
-    if (!js.isUndefined(useWorker)) __obj.updateDynamic("useWorker")(useWorker.asInstanceOf[js.Any])
+    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useWorker)) __obj.updateDynamic("useWorker")(useWorker.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalOptions]
   }
 }

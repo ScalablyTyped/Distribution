@@ -101,7 +101,7 @@ object UpdateDialogNodeParams {
     if (new_title != null) __obj.updateDynamic("new_title")(new_title.asInstanceOf[js.Any])
     if (new_user_label != null) __obj.updateDynamic("new_user_label")(new_user_label.asInstanceOf[js.Any])
     if (new_variable != null) __obj.updateDynamic("new_variable")(new_variable.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDialogNodeParams]
   }
 }

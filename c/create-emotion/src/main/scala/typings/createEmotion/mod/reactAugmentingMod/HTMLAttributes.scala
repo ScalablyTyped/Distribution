@@ -11,9 +11,9 @@ trait HTMLAttributes[T] extends js.Object {
 
 object HTMLAttributes {
   @scala.inline
-  def apply[T](css: Interpolation = null): HTMLAttributes[T] = {
+  def apply[T](css: js.UndefOr[Null | Interpolation] = js.undefined): HTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
-    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
+    if (!js.isUndefined(css)) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLAttributes[T]]
   }
 }

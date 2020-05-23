@@ -12,14 +12,14 @@ trait IDefault extends IAbstract {
   /** [Config Option] (Ext.fx.layout.Card) */
   var animation: js.UndefOr[typings.senchaTouch.Ext.fx.layout.ICard] = js.undefined
   /** [Method] Returns the value of animation
-  		* @returns Ext.fx.layout.Card
-  		*/
+    * @returns Ext.fx.layout.Card
+    */
   var getAnimation: js.UndefOr[js.Function0[typings.senchaTouch.Ext.fx.layout.ICard]] = js.undefined
   /** [Method]
-  		* @param item Ext.Component
-  		* @param isInner Boolean
-  		* @param destroying Boolean
-  		*/
+    * @param item Ext.Component
+    * @param isInner Boolean
+    * @param destroying Boolean
+    */
   var onItemInnerStateChange: js.UndefOr[
     js.Function3[
       /* item */ js.UndefOr[IComponent], 
@@ -29,8 +29,8 @@ trait IDefault extends IAbstract {
     ]
   ] = js.undefined
   /** [Method] Sets the value of animation
-  		* @param animation Ext.fx.layout.Card The new value.
-  		*/
+    * @param animation Ext.fx.layout.Card The new value.
+    */
   var setAnimation: js.UndefOr[
     js.Function1[/* animation */ js.UndefOr[typings.senchaTouch.Ext.fx.layout.ICard], Unit]
   ] = js.undefined
@@ -140,7 +140,7 @@ object IDefault {
     if (setAnimation != null) __obj.updateDynamic("setAnimation")(js.Any.fromFunction1(setAnimation))
     if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(js.Any.fromFunction1(setBubbleEvents))
     if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))

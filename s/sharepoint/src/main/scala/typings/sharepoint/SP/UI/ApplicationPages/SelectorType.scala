@@ -1,6 +1,5 @@
 package typings.sharepoint.SP.UI.ApplicationPages
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,23 +24,6 @@ object SelectorType extends js.Object {
   
   @js.native
   sealed trait resource extends SelectorType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SelectorType with Double] = js.native
-  /* 4 */ @js.native
-  object event extends TopLevel[event with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 2 */ @js.native
-  object people extends TopLevel[people with Double]
-  
-  /* 3 */ @js.native
-  object people_And_Resource extends TopLevel[people_And_Resource with Double]
-  
-  /* 1 */ @js.native
-  object resource extends TopLevel[resource with Double]
   
 }
 

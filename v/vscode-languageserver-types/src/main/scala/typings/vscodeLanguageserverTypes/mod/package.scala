@@ -12,6 +12,6 @@ package object mod {
   type Definition = typings.vscodeLanguageserverTypes.mod.Location | js.Array[typings.vscodeLanguageserverTypes.mod.Location]
   type DefinitionLink = typings.vscodeLanguageserverTypes.mod.LocationLink
   type DocumentUri = java.lang.String
-  type MarkedString = java.lang.String | typings.vscodeLanguageserverTypes.AnonLanguage
+  type MarkedString = java.lang.String | typings.vscodeLanguageserverTypes.anon.Language
   type SymbolTag = typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`1`
 }

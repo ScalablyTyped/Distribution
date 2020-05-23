@@ -2,24 +2,17 @@ package typings.amapJsApiTransfer.AMap
 
 import typings.amapJsApi.AMap.EventEmitter
 import typings.amapJsApi.AMap.LocationValue
-import typings.amapJsApiTransfer.AMap.Transfer.Options
 import typings.amapJsApiTransfer.AMap.Transfer.SearchPoint
 import typings.amapJsApiTransfer.AMap.Transfer.SearchResultBase
 import typings.amapJsApiTransfer.AMap.Transfer.SearchResultExt
 import typings.amapJsApiTransfer.AMap.Transfer.SearchStatus
-import typings.amapJsApiTransfer.AnonDestination
+import typings.amapJsApiTransfer.anon.Destination
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.Transfer")
 @js.native
-class Transfer_ protected () extends EventEmitter {
-  /**
-    * 公交换乘服务
-    * @param options 构造函数选项
-    */
-  def this(options: Options) = this()
+trait Transfer_ extends EventEmitter {
   /**
     * 清除结果显示
     */
@@ -61,7 +54,7 @@ class Transfer_ protected () extends EventEmitter {
     * 唤起高德地图客户端公交路径规划
     * @param obj 唤起参数
     */
-  def searchOnAMAP(obj: AnonDestination): Unit = js.native
+  def searchOnAMAP(obj: Destination): Unit = js.native
   /**
     * 设置公交换乘查询的城市
     * @param city  城市名称、城市区号、电话区号

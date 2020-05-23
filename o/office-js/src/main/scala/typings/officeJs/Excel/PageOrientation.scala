@@ -1,6 +1,5 @@
 package typings.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object PageOrientation extends js.Object {
   
   @js.native
   sealed trait portrait extends PageOrientation
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[PageOrientation with String] = js.native
-  /* "Landscape" */ @js.native
-  object landscape extends TopLevel[landscape with String]
-  
-  /* "Portrait" */ @js.native
-  object portrait extends TopLevel[portrait with String]
   
 }
 

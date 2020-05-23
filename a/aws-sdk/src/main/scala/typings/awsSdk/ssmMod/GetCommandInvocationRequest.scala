@@ -11,7 +11,7 @@ trait GetCommandInvocationRequest extends js.Object {
     */
   var CommandId: typings.awsSdk.ssmMod.CommandId = js.native
   /**
-    * (Required) The ID of the managed instance targeted by the command. A managed instance can be an Amazon EC2 instance or an instance in your hybrid environment that is configured for Systems Manager.
+    * (Required) The ID of the managed instance targeted by the command. A managed instance can be an EC2 instance or an instance in your hybrid environment that is configured for Systems Manager.
     */
   var InstanceId: typings.awsSdk.ssmMod.InstanceId = js.native
   /**

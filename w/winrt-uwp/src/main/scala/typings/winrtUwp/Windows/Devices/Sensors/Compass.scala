@@ -10,9 +10,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a compass sensor. */
-@JSGlobal("Windows.Devices.Sensors.Compass")
 @js.native
-abstract class Compass () extends js.Object {
+trait Compass extends js.Object {
   /** Gets the device identifier. */
   var deviceId: String = js.native
   /** Gets the minimum report interval supported by the compass. */
@@ -37,16 +36,5 @@ abstract class Compass () extends js.Object {
   def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readingchanged(`type`: readingchanged, listener: TypedEventHandler[Compass, CompassReadingChangedEventArgs]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Devices.Sensors.Compass")
-@js.native
-object Compass extends js.Object {
-  /**
-    * Returns the default compass.
-    * @return The default compass or null if no integrated compasses are found.
-    */
-  def getDefault(): Compass = js.native
 }
 

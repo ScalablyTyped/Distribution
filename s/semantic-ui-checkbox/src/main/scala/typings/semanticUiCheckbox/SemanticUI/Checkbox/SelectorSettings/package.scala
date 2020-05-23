@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object SelectorSettings {
-  type Param = (typings.semanticUiCheckbox.PickImplinput | typings.semanticUiCheckbox.PickImpllabel) with typings.semanticUiCheckbox.PartialPickImplkeyofImplInput
+  type Param = (typings.semanticUiCheckbox.anon.PickImplinput | typings.semanticUiCheckbox.anon.PickImpllabel) with typings.semanticUiCheckbox.anon.PartialPickImplkeyofImplInput
 }

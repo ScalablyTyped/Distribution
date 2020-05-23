@@ -1,10 +1,10 @@
 package typings.officeJs.OneNote
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.ClientResult
 import typings.officeJs.OneNote.Interfaces.SectionGroupData
 import typings.officeJs.OneNote.Interfaces.SectionGroupLoadOptions
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,9 +15,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: OneNoteApi 1.1]
   */
-@JSGlobal("OneNote.SectionGroup")
 @js.native
-class SectionGroup () extends ClientObject {
+trait SectionGroup extends ClientObject {
   /**
     *
     * The client url of the section group. Read only
@@ -120,8 +119,8 @@ class SectionGroup () extends ClientObject {
   def load(): SectionGroup = js.native
   def load(option: String): SectionGroup = js.native
   def load(option: js.Array[String]): SectionGroup = js.native
-  def load(option: AnonExpand): SectionGroup = js.native
   def load(option: SectionGroupLoadOptions): SectionGroup = js.native
+  def load(option: Expand): SectionGroup = js.native
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original OneNote.SectionGroup object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.SectionGroupData`) that contains shallow copies of any loaded child properties from the original object.

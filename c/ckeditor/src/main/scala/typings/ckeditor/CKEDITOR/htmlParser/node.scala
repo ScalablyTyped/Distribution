@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CKEDITOR.htmlParser.node")
 @js.native
-class node () extends js.Object {
+trait node extends js.Object {
   def getAscendant(condition: String): element = js.native
   def getAscendant(condition: js.Function1[/* node */ element, Boolean]): element = js.native
   def getAscendant(condition: StringDictionary[String]): element = js.native

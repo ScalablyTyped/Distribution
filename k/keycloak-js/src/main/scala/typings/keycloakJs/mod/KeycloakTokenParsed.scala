@@ -17,8 +17,8 @@ trait KeycloakTokenParsed extends js.Object {
 object KeycloakTokenParsed {
   @scala.inline
   def apply(
-    exp: Int | Double = null,
-    iat: Int | Double = null,
+    exp: js.UndefOr[Double] = js.undefined,
+    iat: js.UndefOr[Double] = js.undefined,
     nonce: String = null,
     realm_access: KeycloakRoles = null,
     resource_access: KeycloakResourceAccess = null,
@@ -26,8 +26,8 @@ object KeycloakTokenParsed {
     sub: String = null
   ): KeycloakTokenParsed = {
     val __obj = js.Dynamic.literal()
-    if (exp != null) __obj.updateDynamic("exp")(exp.asInstanceOf[js.Any])
-    if (iat != null) __obj.updateDynamic("iat")(iat.asInstanceOf[js.Any])
+    if (!js.isUndefined(exp)) __obj.updateDynamic("exp")(exp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(iat)) __obj.updateDynamic("iat")(iat.get.asInstanceOf[js.Any])
     if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
     if (realm_access != null) __obj.updateDynamic("realm_access")(realm_access.asInstanceOf[js.Any])
     if (resource_access != null) __obj.updateDynamic("resource_access")(resource_access.asInstanceOf[js.Any])

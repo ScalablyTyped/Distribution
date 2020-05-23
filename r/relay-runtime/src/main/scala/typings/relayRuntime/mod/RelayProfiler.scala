@@ -1,7 +1,7 @@
 package typings.relayRuntime.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.relayRuntime.AnonStop
+import typings.relayRuntime.anon.Stop
 import typings.relayRuntime.relayProfilerMod.Handler
 import typings.relayRuntime.relayProfilerMod.ProfileHandler
 import scala.scalajs.js
@@ -83,7 +83,7 @@ object RelayProfiler extends js.Object {
     * Arbitrary state can also be passed into `profile` as a second argument. The
     * attached profile handlers will receive this as the second argument.
     */
-  def profile(name: String): AnonStop = js.native
-  def profile(name: String, state: js.Any): AnonStop = js.native
+  def profile(name: String): Stop = js.native
+  def profile(name: String, state: js.Any): Stop = js.native
 }
 

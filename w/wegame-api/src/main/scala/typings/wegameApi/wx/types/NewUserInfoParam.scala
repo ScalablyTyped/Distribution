@@ -1,6 +1,6 @@
 package typings.wegameApi.wx.types
 
-import typings.wegameApi.AnonDataReadonlyArray
+import typings.wegameApi.anon.DataReadonlyArray
 import typings.wegameApi.wegameApiStrings.en
 import typings.wegameApi.wegameApiStrings.zh_CN
 import typings.wegameApi.wegameApiStrings.zh_TW
@@ -22,7 +22,7 @@ trait NewUserInfoParam extends js.Object {
     * 要获取信息的用户的 openId 数组，如果要获取当前用户信息，则将数组中的一个元素设为 'selfOpenId'
     */
   var openIdList: js.UndefOr[js.Array[String]] = js.undefined
-  var success: js.UndefOr[js.Function1[/* res */ AnonDataReadonlyArray, Unit]] = js.undefined
+  var success: js.UndefOr[js.Function1[/* res */ DataReadonlyArray, Unit]] = js.undefined
 }
 
 object NewUserInfoParam {
@@ -32,7 +32,7 @@ object NewUserInfoParam {
     fail: () => Unit = null,
     lang: en | zh_CN | zh_TW = null,
     openIdList: js.Array[String] = null,
-    success: /* res */ AnonDataReadonlyArray => Unit = null
+    success: /* res */ DataReadonlyArray => Unit = null
   ): NewUserInfoParam = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))

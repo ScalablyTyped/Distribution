@@ -17,7 +17,7 @@ class Select[T] ()
   var handlePopoverOpened: js.Any = js.native
   var handlePopoverOpening: js.Any = js.native
   var handleTargetKeyDown: js.Any = js.native
-  var input: js.Any = js.native
+  var inputEl: js.Any = js.native
   var maybeRenderClearButton: js.Any = js.native
   var previousFocusedElement: js.Any = js.native
   var queryList: js.Any = js.native

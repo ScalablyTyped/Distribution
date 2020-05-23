@@ -1,7 +1,7 @@
 package typings.reactIntl.relativeMod
 
-import typings.reactIntl.PartialStateCurrentValueInSeconds
-import typings.reactIntl.PickPropsunitvalue
+import typings.reactIntl.anon.PartialStateCurrentValueInSeconds
+import typings.reactIntl.anon.PickPropsunitvalue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

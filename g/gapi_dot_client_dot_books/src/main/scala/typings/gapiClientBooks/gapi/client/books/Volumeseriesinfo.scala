@@ -1,6 +1,6 @@
 package typings.gapiClientBooks.gapi.client.books
 
-import typings.gapiClientBooks.AnonIssue
+import typings.gapiClientBooks.anon.Issue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait Volumeseriesinfo extends js.Object {
   var kind: js.UndefOr[String] = js.undefined
   /** Short book title in the context of the series. */
   var shortSeriesBookTitle: js.UndefOr[String] = js.undefined
-  var volumeSeries: js.UndefOr[js.Array[AnonIssue]] = js.undefined
+  var volumeSeries: js.UndefOr[js.Array[Issue]] = js.undefined
 }
 
 object Volumeseriesinfo {
@@ -21,7 +21,7 @@ object Volumeseriesinfo {
     bookDisplayNumber: String = null,
     kind: String = null,
     shortSeriesBookTitle: String = null,
-    volumeSeries: js.Array[AnonIssue] = null
+    volumeSeries: js.Array[Issue] = null
   ): Volumeseriesinfo = {
     val __obj = js.Dynamic.literal()
     if (bookDisplayNumber != null) __obj.updateDynamic("bookDisplayNumber")(bookDisplayNumber.asInstanceOf[js.Any])

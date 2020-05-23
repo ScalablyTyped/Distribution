@@ -13,10 +13,13 @@ trait IEventSubscription extends js.Object {
 
 object IEventSubscription {
   @scala.inline
-  def apply(eventType: String = null, filters: js.Array[IEventFilter] = null): IEventSubscription = {
+  def apply(
+    eventType: js.UndefOr[Null | String] = js.undefined,
+    filters: js.UndefOr[Null | js.Array[IEventFilter]] = js.undefined
+  ): IEventSubscription = {
     val __obj = js.Dynamic.literal()
-    if (eventType != null) __obj.updateDynamic("eventType")(eventType.asInstanceOf[js.Any])
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (!js.isUndefined(eventType)) __obj.updateDynamic("eventType")(eventType.asInstanceOf[js.Any])
+    if (!js.isUndefined(filters)) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEventSubscription]
   }
 }

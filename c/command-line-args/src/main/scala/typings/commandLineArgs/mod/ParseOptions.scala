@@ -34,9 +34,9 @@ object ParseOptions {
   ): ParseOptions = {
     val __obj = js.Dynamic.literal()
     if (argv != null) __obj.updateDynamic("argv")(argv.asInstanceOf[js.Any])
-    if (!js.isUndefined(camelCase)) __obj.updateDynamic("camelCase")(camelCase.asInstanceOf[js.Any])
-    if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopAtFirstUnknown)) __obj.updateDynamic("stopAtFirstUnknown")(stopAtFirstUnknown.asInstanceOf[js.Any])
+    if (!js.isUndefined(camelCase)) __obj.updateDynamic("camelCase")(camelCase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopAtFirstUnknown)) __obj.updateDynamic("stopAtFirstUnknown")(stopAtFirstUnknown.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseOptions]
   }
 }

@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation._
   * Helper used internally for source map parsing in order to provide helpful
   * JavaScript stack-traces.
   */
-@JSGlobal("SourceMap")
-@js.native
-class SourceMap protected () extends js.Object {
-  /**
-    * Constructs a source map from JSON.
-    *
-    * @param json String containing the source map encoded as JSON.
-    */
-  def this(json: String) = this()
+trait SourceMap extends js.Object {
   /**
     * Attempts to map a generated source position back to the original.
     *
     * @param generatedPosition Position in generated code.
     */
-  def resolve(generatedPosition: GeneratedSourcePosition): OriginalSourcePosition | Null = js.native
+  def resolve(generatedPosition: GeneratedSourcePosition): OriginalSourcePosition | Null
+}
+
+object SourceMap {
+  @scala.inline
+  def apply(resolve: GeneratedSourcePosition => OriginalSourcePosition | Null): SourceMap = {
+    val __obj = js.Dynamic.literal(resolve = js.Any.fromFunction1(resolve))
+    __obj.asInstanceOf[SourceMap]
+  }
 }
 

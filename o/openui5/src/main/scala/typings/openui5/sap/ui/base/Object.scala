@@ -4,12 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.base.Object")
 @js.native
-/**
-  * Constructor for a sap.ui.base.Object.
-  */
-abstract class Object () extends js.Object {
+trait Object extends js.Object {
   /**
     * Creates metadata for a given class and attaches it to the constructor and prototype of that
     * class.After creation, metadata can be retrieved with getMetadata().The static info can at least

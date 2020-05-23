@@ -1,6 +1,8 @@
 package typings.meteor
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.meteor.anon.Bare
+import typings.meteor.anon.Unordered
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,14 +15,14 @@ trait PackageAPI extends Instantiable0[PackageAPI] {
   def addAssets(filenames: js.Array[String], architecture: js.Array[String]): Unit = js.native
   def addFiles(filenames: String): Unit = js.native
   def addFiles(filenames: String, architecture: String): Unit = js.native
-  def addFiles(filenames: String, architecture: String, options: AnonBare): Unit = js.native
+  def addFiles(filenames: String, architecture: String, options: Bare): Unit = js.native
   def addFiles(filenames: String, architecture: js.Array[String]): Unit = js.native
-  def addFiles(filenames: String, architecture: js.Array[String], options: AnonBare): Unit = js.native
+  def addFiles(filenames: String, architecture: js.Array[String], options: Bare): Unit = js.native
   def addFiles(filenames: js.Array[String]): Unit = js.native
   def addFiles(filenames: js.Array[String], architecture: String): Unit = js.native
-  def addFiles(filenames: js.Array[String], architecture: String, options: AnonBare): Unit = js.native
+  def addFiles(filenames: js.Array[String], architecture: String, options: Bare): Unit = js.native
   def addFiles(filenames: js.Array[String], architecture: js.Array[String]): Unit = js.native
-  def addFiles(filenames: js.Array[String], architecture: js.Array[String], options: AnonBare): Unit = js.native
+  def addFiles(filenames: js.Array[String], architecture: js.Array[String], options: Bare): Unit = js.native
   def export(exportedObjects: String): Unit = js.native
   def export(exportedObjects: String, architecture: String): Unit = js.native
   def export(exportedObjects: String, architecture: String, exportOptions: js.Object): Unit = js.native
@@ -58,14 +60,14 @@ trait PackageAPI extends Instantiable0[PackageAPI] {
   def imply(packageNames: js.Array[String], architecture: js.Array[String]): Unit = js.native
   def use(packageNames: String): Unit = js.native
   def use(packageNames: String, architecture: String): Unit = js.native
-  def use(packageNames: String, architecture: String, options: AnonUnordered): Unit = js.native
+  def use(packageNames: String, architecture: String, options: Unordered): Unit = js.native
   def use(packageNames: String, architecture: js.Array[String]): Unit = js.native
-  def use(packageNames: String, architecture: js.Array[String], options: AnonUnordered): Unit = js.native
+  def use(packageNames: String, architecture: js.Array[String], options: Unordered): Unit = js.native
   def use(packageNames: js.Array[String]): Unit = js.native
   def use(packageNames: js.Array[String], architecture: String): Unit = js.native
-  def use(packageNames: js.Array[String], architecture: String, options: AnonUnordered): Unit = js.native
+  def use(packageNames: js.Array[String], architecture: String, options: Unordered): Unit = js.native
   def use(packageNames: js.Array[String], architecture: js.Array[String]): Unit = js.native
-  def use(packageNames: js.Array[String], architecture: js.Array[String], options: AnonUnordered): Unit = js.native
+  def use(packageNames: js.Array[String], architecture: js.Array[String], options: Unordered): Unit = js.native
   def versionsFrom(meteorRelease: String): Unit = js.native
   def versionsFrom(meteorRelease: js.Array[String]): Unit = js.native
 }

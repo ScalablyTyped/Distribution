@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.colorboard")
 @js.native
-class colorboard () extends baseview {
+trait colorboard extends baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
   @JSName("config")

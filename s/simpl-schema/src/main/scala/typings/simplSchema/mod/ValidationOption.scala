@@ -24,12 +24,12 @@ object ValidationOption {
     upsertextendedCustomContext: js.UndefOr[Boolean] = js.undefined
   ): ValidationOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clean)) __obj.updateDynamic("clean")(clean.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (!js.isUndefined(clean)) __obj.updateDynamic("clean")(clean.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.get.asInstanceOf[js.Any])
     if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifier)) __obj.updateDynamic("modifier")(modifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(upsert)) __obj.updateDynamic("upsert")(upsert.asInstanceOf[js.Any])
-    if (!js.isUndefined(upsertextendedCustomContext)) __obj.updateDynamic("upsertextendedCustomContext")(upsertextendedCustomContext.asInstanceOf[js.Any])
+    if (!js.isUndefined(modifier)) __obj.updateDynamic("modifier")(modifier.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(upsert)) __obj.updateDynamic("upsert")(upsert.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(upsertextendedCustomContext)) __obj.updateDynamic("upsertextendedCustomContext")(upsertextendedCustomContext.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationOption]
   }
 }

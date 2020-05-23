@@ -1,38 +1,37 @@
 package typings.gapiClientCompute.gapi.client.compute
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientCompute.AnonAlt
-import typings.gapiClientCompute.AnonAltFields
-import typings.gapiClientCompute.AnonQuotaUserTargetHttpsProxy
-import typings.gapiClientCompute.AnonTargetHttpsProxy
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientCompute.anon.Alt
+import typings.gapiClientCompute.anon.AltFields
+import typings.gapiClientCompute.anon.QuotaUserTargetHttpsProxy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TargetHttpsProxiesResource extends js.Object {
   /** Deletes the specified TargetHttpsProxy resource. */
-  def delete(request: AnonTargetHttpsProxy): Request_[Operation]
+  def delete(request: typings.gapiClientCompute.anon.TargetHttpsProxy): Request[Operation]
   /** Returns the specified TargetHttpsProxy resource. Get a list of available target HTTPS proxies by making a list() request. */
-  def get(request: AnonQuotaUserTargetHttpsProxy): Request_[TargetHttpsProxy]
+  def get(request: QuotaUserTargetHttpsProxy): Request[TargetHttpsProxy]
   /** Creates a TargetHttpsProxy resource in the specified project using the data included in the request. */
-  def insert(request: AnonAltFields): Request_[Operation]
+  def insert(request: AltFields): Request[Operation]
   /** Retrieves the list of TargetHttpsProxy resources available to the specified project. */
-  def list(request: AnonAlt): Request_[TargetHttpsProxyList]
+  def list(request: Alt): Request[TargetHttpsProxyList]
   /** Replaces SslCertificates for TargetHttpsProxy. */
-  def setSslCertificates(request: AnonTargetHttpsProxy): Request_[Operation]
+  def setSslCertificates(request: typings.gapiClientCompute.anon.TargetHttpsProxy): Request[Operation]
   /** Changes the URL map for TargetHttpsProxy. */
-  def setUrlMap(request: AnonTargetHttpsProxy): Request_[Operation]
+  def setUrlMap(request: typings.gapiClientCompute.anon.TargetHttpsProxy): Request[Operation]
 }
 
 object TargetHttpsProxiesResource {
   @scala.inline
   def apply(
-    delete: AnonTargetHttpsProxy => Request_[Operation],
-    get: AnonQuotaUserTargetHttpsProxy => Request_[TargetHttpsProxy],
-    insert: AnonAltFields => Request_[Operation],
-    list: AnonAlt => Request_[TargetHttpsProxyList],
-    setSslCertificates: AnonTargetHttpsProxy => Request_[Operation],
-    setUrlMap: AnonTargetHttpsProxy => Request_[Operation]
+    delete: typings.gapiClientCompute.anon.TargetHttpsProxy => Request[Operation],
+    get: QuotaUserTargetHttpsProxy => Request[TargetHttpsProxy],
+    insert: AltFields => Request[Operation],
+    list: Alt => Request[TargetHttpsProxyList],
+    setSslCertificates: typings.gapiClientCompute.anon.TargetHttpsProxy => Request[Operation],
+    setUrlMap: typings.gapiClientCompute.anon.TargetHttpsProxy => Request[Operation]
   ): TargetHttpsProxiesResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), setSslCertificates = js.Any.fromFunction1(setSslCertificates), setUrlMap = js.Any.fromFunction1(setUrlMap))
     __obj.asInstanceOf[TargetHttpsProxiesResource]

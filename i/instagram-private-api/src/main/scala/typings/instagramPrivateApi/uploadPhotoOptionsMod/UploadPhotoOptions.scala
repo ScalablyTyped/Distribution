@@ -21,7 +21,7 @@ object UploadPhotoOptions {
     waterfallId: String = null
   ): UploadPhotoOptions = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSidecar)) __obj.updateDynamic("isSidecar")(isSidecar.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSidecar)) __obj.updateDynamic("isSidecar")(isSidecar.get.asInstanceOf[js.Any])
     if (uploadId != null) __obj.updateDynamic("uploadId")(uploadId.asInstanceOf[js.Any])
     if (waterfallId != null) __obj.updateDynamic("waterfallId")(waterfallId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadPhotoOptions]

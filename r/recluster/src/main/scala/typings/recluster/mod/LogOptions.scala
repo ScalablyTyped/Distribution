@@ -12,7 +12,7 @@ object LogOptions {
   @scala.inline
   def apply(respawns: js.UndefOr[Boolean] = js.undefined): LogOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(respawns)) __obj.updateDynamic("respawns")(respawns.asInstanceOf[js.Any])
+    if (!js.isUndefined(respawns)) __obj.updateDynamic("respawns")(respawns.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogOptions]
   }
 }

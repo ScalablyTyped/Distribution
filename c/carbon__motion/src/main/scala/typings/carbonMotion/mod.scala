@@ -1,5 +1,6 @@
 package typings.carbonMotion
 
+import typings.carbonMotion.anon.Expressive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,9 +10,9 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   @js.native
   object easings extends js.Object {
-    var entrance: AnonExpressive = js.native
-    var exit: AnonExpressive = js.native
-    var standard: AnonExpressive = js.native
+    var entrance: Expressive = js.native
+    var exit: Expressive = js.native
+    var standard: Expressive = js.native
   }
   
   @js.native

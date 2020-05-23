@@ -37,7 +37,7 @@ object AspectRatioBoxProps {
     alignItems: Responsive[AlignItems] = null,
     alignSelf: Responsive[AlignSelf] = null,
     as: ElementType[_] = null,
-    aspectRatio: Int | Double = null,
+    aspectRatio: js.UndefOr[Double] = js.undefined,
     backgroundColor: Responsive[String] = null,
     bottom: Responsive[Scale] = null,
     children: ReactNode = null,
@@ -90,7 +90,7 @@ object AspectRatioBoxProps {
     placeItems: Responsive[String] = null,
     placeSelf: Responsive[String] = null,
     position: Responsive[Position] = null,
-    ref: Ref[_] = null,
+    ref: js.UndefOr[Null | Ref[_]] = js.undefined,
     right: Responsive[Scale] = null,
     src: String = null,
     top: Responsive[Scale] = null,
@@ -102,7 +102,7 @@ object AspectRatioBoxProps {
     if (alignItems != null) __obj.updateDynamic("alignItems")(alignItems.asInstanceOf[js.Any])
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(aspectRatio)) __obj.updateDynamic("aspectRatio")(aspectRatio.get.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
@@ -155,7 +155,7 @@ object AspectRatioBoxProps {
     if (placeItems != null) __obj.updateDynamic("placeItems")(placeItems.asInstanceOf[js.Any])
     if (placeSelf != null) __obj.updateDynamic("placeSelf")(placeSelf.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
     if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])

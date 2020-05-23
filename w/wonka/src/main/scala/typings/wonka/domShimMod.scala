@@ -1,6 +1,6 @@
 package typings.wonka
 
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object domShimMod extends js.Object {
   type element = HTMLElement
-  type event = Event_
+  type event = Event
 }
 

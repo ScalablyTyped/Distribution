@@ -1,6 +1,5 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1
 
-import typings.jsrsasign.StringParamtypegen
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,10 +11,8 @@ import scala.scalajs.js.annotation._
   * var t1 = new KJUR.asn1.x509.Time{'str': '130508235959Z'} // UTCTime by default
   * var t2 = new KJUR.asn1.x509.Time{'type': 'gen',  'str': '20130508235959Z'} // GeneralizedTime
   */
-@JSGlobal("jsrsasign.KJUR.asn1.Time")
 @js.native
-class Time () extends ASN1Object {
-  def this(params: StringParamtypegen) = this()
+trait Time extends ASN1Object {
   def setTimeParams(timeParams: String): Unit = js.native
   def setTimeParams(timeParams: DateParam): Unit = js.native
   def setTimeParams(timeParams: HexParam): Unit = js.native

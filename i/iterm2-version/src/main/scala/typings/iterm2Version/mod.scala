@@ -1,5 +1,6 @@
 package typings.iterm2Version
 
+import typings.iterm2Version.anon.Call
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ object mod extends js.Object {
   // declare function iterm2Version(): string | undefined;
   // export = iterm2Version;
   @JSName("default")
-  var default_Original: AnonCall = js.native
+  var default_Original: Call = js.native
   /**
   	Get the [iTerm2](https://www.iterm2.com) version.
   	@returns iTerm2 version. If you're running this on a different terminal or operating system, it will return `undefined`.

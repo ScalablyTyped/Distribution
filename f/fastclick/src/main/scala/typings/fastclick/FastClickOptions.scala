@@ -11,10 +11,10 @@ trait FastClickOptions extends js.Object {
 
 object FastClickOptions {
   @scala.inline
-  def apply(tapDelay: Int | Double = null, touchBoundary: Int | Double = null): FastClickOptions = {
+  def apply(tapDelay: js.UndefOr[Double] = js.undefined, touchBoundary: js.UndefOr[Double] = js.undefined): FastClickOptions = {
     val __obj = js.Dynamic.literal()
-    if (tapDelay != null) __obj.updateDynamic("tapDelay")(tapDelay.asInstanceOf[js.Any])
-    if (touchBoundary != null) __obj.updateDynamic("touchBoundary")(touchBoundary.asInstanceOf[js.Any])
+    if (!js.isUndefined(tapDelay)) __obj.updateDynamic("tapDelay")(tapDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchBoundary)) __obj.updateDynamic("touchBoundary")(touchBoundary.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FastClickOptions]
   }
 }

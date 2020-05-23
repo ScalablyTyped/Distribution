@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "devextreme" : "19.2.7"
+      "devextreme" : "19.2.8"
     }
   ],
   "test-dependencies" : [
     {
-      "devextreme" : "19.2.7"
+      "devextreme" : "19.2.8"
     }
   ],
   "compile-devDependencies" : [

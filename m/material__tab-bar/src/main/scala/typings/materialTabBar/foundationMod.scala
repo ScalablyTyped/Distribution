@@ -2,6 +2,9 @@ package typings.materialTabBar
 
 import typings.materialBase.foundationMod.MDCFoundation
 import typings.materialTabBar.adapterMod.MDCTabBarAdapter
+import typings.materialTabBar.anon.ARROWLEFTKEY
+import typings.materialTabBar.anon.ARROWLEFTKEYCODE
+import typings.materialTabBar.anon.PartialMDCTabBarAdapter
 import typings.std.KeyboardEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -48,16 +51,16 @@ object foundationMod extends js.Object {
   @js.native
   object MDCTabBarFoundation extends js.Object {
     val defaultAdapter: MDCTabBarAdapter = js.native
-    val numbers: AnonARROWLEFTKEYCODE = js.native
-    val strings: AnonARROWLEFTKEY = js.native
+    val numbers: ARROWLEFTKEYCODE = js.native
+    val strings: ARROWLEFTKEY = js.native
   }
   
   /* static members */
   @js.native
   object default extends js.Object {
     val defaultAdapter: MDCTabBarAdapter = js.native
-    val numbers: AnonARROWLEFTKEYCODE = js.native
-    val strings: AnonARROWLEFTKEY = js.native
+    val numbers: ARROWLEFTKEYCODE = js.native
+    val strings: ARROWLEFTKEY = js.native
   }
   
 }

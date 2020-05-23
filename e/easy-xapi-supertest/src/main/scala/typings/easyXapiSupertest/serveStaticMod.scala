@@ -1,5 +1,6 @@
 package typings.easyXapiSupertest
 
+import typings.easyXapiSupertest.anon.Dotfiles
 import typings.easyXapiSupertest.expressMod.Handler
 import typings.easyXapiSupertest.mimeMod.Charsets_
 import scala.scalajs.js
@@ -15,7 +16,7 @@ object serveStaticMod extends js.Object {
     * When a file is not found, instead of sending a 404 response, this module will instead call next() to move on to the next middleware, allowing for stacking and fall-backs.
     */
   def apply(root: String): Handler = js.native
-  def apply(root: String, options: AnonDotfiles): Handler = js.native
+  def apply(root: String, options: Dotfiles): Handler = js.native
   @js.native
   object mime extends js.Object {
     var charsets: Charsets_ = js.native

@@ -44,10 +44,10 @@ object TableStyleProperties {
     theme: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 61 */ js.Any = null
   ): TableStyleProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(showColumnStripes)) __obj.updateDynamic("showColumnStripes")(showColumnStripes.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFirstColumn)) __obj.updateDynamic("showFirstColumn")(showFirstColumn.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLastColumn)) __obj.updateDynamic("showLastColumn")(showLastColumn.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRowStripes)) __obj.updateDynamic("showRowStripes")(showRowStripes.asInstanceOf[js.Any])
+    if (!js.isUndefined(showColumnStripes)) __obj.updateDynamic("showColumnStripes")(showColumnStripes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFirstColumn)) __obj.updateDynamic("showFirstColumn")(showFirstColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLastColumn)) __obj.updateDynamic("showLastColumn")(showLastColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRowStripes)) __obj.updateDynamic("showRowStripes")(showRowStripes.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableStyleProperties]
   }

@@ -30,11 +30,11 @@ object ActivityTaskCanceledEventAttributes {
     scheduledEventId: EventId,
     startedEventId: EventId,
     details: Data = null,
-    latestCancelRequestedEventId: Int | Double = null
+    latestCancelRequestedEventId: js.UndefOr[EventId] = js.undefined
   ): ActivityTaskCanceledEventAttributes = {
     val __obj = js.Dynamic.literal(scheduledEventId = scheduledEventId.asInstanceOf[js.Any], startedEventId = startedEventId.asInstanceOf[js.Any])
     if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
-    if (latestCancelRequestedEventId != null) __obj.updateDynamic("latestCancelRequestedEventId")(latestCancelRequestedEventId.asInstanceOf[js.Any])
+    if (!js.isUndefined(latestCancelRequestedEventId)) __obj.updateDynamic("latestCancelRequestedEventId")(latestCancelRequestedEventId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityTaskCanceledEventAttributes]
   }
 }

@@ -77,7 +77,7 @@ object Windows10TeamGeneralConfiguration {
     id: String = null,
     lastModifiedDateTime: String = null,
     maintenanceWindowBlocked: js.UndefOr[Boolean] = js.undefined,
-    maintenanceWindowDurationInHours: Int | Double = null,
+    maintenanceWindowDurationInHours: js.UndefOr[Double] = js.undefined,
     maintenanceWindowStartTime: String = null,
     miracastBlocked: js.UndefOr[Boolean] = js.undefined,
     miracastChannel: MiracastChannel = null,
@@ -85,23 +85,23 @@ object Windows10TeamGeneralConfiguration {
     settingsBlockMyMeetingsAndFiles: js.UndefOr[Boolean] = js.undefined,
     settingsBlockSessionResume: js.UndefOr[Boolean] = js.undefined,
     settingsBlockSigninSuggestions: js.UndefOr[Boolean] = js.undefined,
-    settingsDefaultVolume: Int | Double = null,
-    settingsScreenTimeoutInMinutes: Int | Double = null,
-    settingsSessionTimeoutInMinutes: Int | Double = null,
-    settingsSleepTimeoutInMinutes: Int | Double = null,
+    settingsDefaultVolume: js.UndefOr[Double] = js.undefined,
+    settingsScreenTimeoutInMinutes: js.UndefOr[Double] = js.undefined,
+    settingsSessionTimeoutInMinutes: js.UndefOr[Double] = js.undefined,
+    settingsSleepTimeoutInMinutes: js.UndefOr[Double] = js.undefined,
     userStatusOverview: DeviceConfigurationUserOverview = null,
     userStatuses: js.Array[DeviceConfigurationUserStatus] = null,
-    version: Int | Double = null,
+    version: js.UndefOr[Double] = js.undefined,
     welcomeScreenBackgroundImageUrl: String = null,
     welcomeScreenBlockAutomaticWakeUp: js.UndefOr[Boolean] = js.undefined,
     welcomeScreenMeetingInformation: WelcomeScreenMeetingInformation = null
   ): Windows10TeamGeneralConfiguration = {
     val __obj = js.Dynamic.literal()
     if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
-    if (!js.isUndefined(azureOperationalInsightsBlockTelemetry)) __obj.updateDynamic("azureOperationalInsightsBlockTelemetry")(azureOperationalInsightsBlockTelemetry.asInstanceOf[js.Any])
+    if (!js.isUndefined(azureOperationalInsightsBlockTelemetry)) __obj.updateDynamic("azureOperationalInsightsBlockTelemetry")(azureOperationalInsightsBlockTelemetry.get.asInstanceOf[js.Any])
     if (azureOperationalInsightsWorkspaceId != null) __obj.updateDynamic("azureOperationalInsightsWorkspaceId")(azureOperationalInsightsWorkspaceId.asInstanceOf[js.Any])
     if (azureOperationalInsightsWorkspaceKey != null) __obj.updateDynamic("azureOperationalInsightsWorkspaceKey")(azureOperationalInsightsWorkspaceKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(connectAppBlockAutoLaunch)) __obj.updateDynamic("connectAppBlockAutoLaunch")(connectAppBlockAutoLaunch.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectAppBlockAutoLaunch)) __obj.updateDynamic("connectAppBlockAutoLaunch")(connectAppBlockAutoLaunch.get.asInstanceOf[js.Any])
     if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (deviceSettingStateSummaries != null) __obj.updateDynamic("deviceSettingStateSummaries")(deviceSettingStateSummaries.asInstanceOf[js.Any])
@@ -110,24 +110,24 @@ object Windows10TeamGeneralConfiguration {
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(maintenanceWindowBlocked)) __obj.updateDynamic("maintenanceWindowBlocked")(maintenanceWindowBlocked.asInstanceOf[js.Any])
-    if (maintenanceWindowDurationInHours != null) __obj.updateDynamic("maintenanceWindowDurationInHours")(maintenanceWindowDurationInHours.asInstanceOf[js.Any])
+    if (!js.isUndefined(maintenanceWindowBlocked)) __obj.updateDynamic("maintenanceWindowBlocked")(maintenanceWindowBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maintenanceWindowDurationInHours)) __obj.updateDynamic("maintenanceWindowDurationInHours")(maintenanceWindowDurationInHours.get.asInstanceOf[js.Any])
     if (maintenanceWindowStartTime != null) __obj.updateDynamic("maintenanceWindowStartTime")(maintenanceWindowStartTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(miracastBlocked)) __obj.updateDynamic("miracastBlocked")(miracastBlocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(miracastBlocked)) __obj.updateDynamic("miracastBlocked")(miracastBlocked.get.asInstanceOf[js.Any])
     if (miracastChannel != null) __obj.updateDynamic("miracastChannel")(miracastChannel.asInstanceOf[js.Any])
-    if (!js.isUndefined(miracastRequirePin)) __obj.updateDynamic("miracastRequirePin")(miracastRequirePin.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsBlockMyMeetingsAndFiles)) __obj.updateDynamic("settingsBlockMyMeetingsAndFiles")(settingsBlockMyMeetingsAndFiles.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsBlockSessionResume)) __obj.updateDynamic("settingsBlockSessionResume")(settingsBlockSessionResume.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsBlockSigninSuggestions)) __obj.updateDynamic("settingsBlockSigninSuggestions")(settingsBlockSigninSuggestions.asInstanceOf[js.Any])
-    if (settingsDefaultVolume != null) __obj.updateDynamic("settingsDefaultVolume")(settingsDefaultVolume.asInstanceOf[js.Any])
-    if (settingsScreenTimeoutInMinutes != null) __obj.updateDynamic("settingsScreenTimeoutInMinutes")(settingsScreenTimeoutInMinutes.asInstanceOf[js.Any])
-    if (settingsSessionTimeoutInMinutes != null) __obj.updateDynamic("settingsSessionTimeoutInMinutes")(settingsSessionTimeoutInMinutes.asInstanceOf[js.Any])
-    if (settingsSleepTimeoutInMinutes != null) __obj.updateDynamic("settingsSleepTimeoutInMinutes")(settingsSleepTimeoutInMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(miracastRequirePin)) __obj.updateDynamic("miracastRequirePin")(miracastRequirePin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(settingsBlockMyMeetingsAndFiles)) __obj.updateDynamic("settingsBlockMyMeetingsAndFiles")(settingsBlockMyMeetingsAndFiles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(settingsBlockSessionResume)) __obj.updateDynamic("settingsBlockSessionResume")(settingsBlockSessionResume.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(settingsBlockSigninSuggestions)) __obj.updateDynamic("settingsBlockSigninSuggestions")(settingsBlockSigninSuggestions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(settingsDefaultVolume)) __obj.updateDynamic("settingsDefaultVolume")(settingsDefaultVolume.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(settingsScreenTimeoutInMinutes)) __obj.updateDynamic("settingsScreenTimeoutInMinutes")(settingsScreenTimeoutInMinutes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(settingsSessionTimeoutInMinutes)) __obj.updateDynamic("settingsSessionTimeoutInMinutes")(settingsSessionTimeoutInMinutes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(settingsSleepTimeoutInMinutes)) __obj.updateDynamic("settingsSleepTimeoutInMinutes")(settingsSleepTimeoutInMinutes.get.asInstanceOf[js.Any])
     if (userStatusOverview != null) __obj.updateDynamic("userStatusOverview")(userStatusOverview.asInstanceOf[js.Any])
     if (userStatuses != null) __obj.updateDynamic("userStatuses")(userStatuses.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     if (welcomeScreenBackgroundImageUrl != null) __obj.updateDynamic("welcomeScreenBackgroundImageUrl")(welcomeScreenBackgroundImageUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(welcomeScreenBlockAutomaticWakeUp)) __obj.updateDynamic("welcomeScreenBlockAutomaticWakeUp")(welcomeScreenBlockAutomaticWakeUp.asInstanceOf[js.Any])
+    if (!js.isUndefined(welcomeScreenBlockAutomaticWakeUp)) __obj.updateDynamic("welcomeScreenBlockAutomaticWakeUp")(welcomeScreenBlockAutomaticWakeUp.get.asInstanceOf[js.Any])
     if (welcomeScreenMeetingInformation != null) __obj.updateDynamic("welcomeScreenMeetingInformation")(welcomeScreenMeetingInformation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Windows10TeamGeneralConfiguration]
   }

@@ -1,6 +1,6 @@
 package typings.angularCompiler.outputAstMod
 
-import typings.angularCompiler.AnonCooked
+import typings.angularCompiler.anon.Cooked
 import typings.angularCompiler.metaMod.I18nMeta
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import scala.scalajs.js
@@ -35,7 +35,7 @@ class LocalizedString_ protected () extends Expression {
     * @param meta The metadata to serialize
     * @param messagePart The first part of the tagged string
     */
-  def serializeI18nHead(): AnonCooked = js.native
+  def serializeI18nHead(): Cooked = js.native
   /**
     * Serialize the given `placeholderName` and `messagePart` into "cooked" and "raw" strings that
     * can be used in a `$localize` tagged string.
@@ -43,6 +43,6 @@ class LocalizedString_ protected () extends Expression {
     * @param placeholderName The placeholder name to serialize
     * @param messagePart The following message string after this placeholder
     */
-  def serializeI18nTemplatePart(partIndex: Double): AnonCooked = js.native
+  def serializeI18nTemplatePart(partIndex: Double): Cooked = js.native
 }
 

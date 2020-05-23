@@ -9,17 +9,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Security.Cryptography.DataProtection.DataProtectionProvider")
-@js.native
-class DataProtectionProvider () extends IDataProtectionProvider {
-  def this(protectionDescriptor: String) = this()
-  /* CompleteClass */
-  override def protectAsync(data: IBuffer): IAsyncOperation[IBuffer] = js.native
-  /* CompleteClass */
-  override def protectStreamAsync(src: IInputStream, dest: IOutputStream): IAsyncAction = js.native
-  /* CompleteClass */
-  override def unprotectAsync(data: IBuffer): IAsyncOperation[IBuffer] = js.native
-  /* CompleteClass */
-  override def unprotectStreamAsync(src: IInputStream, dest: IOutputStream): IAsyncAction = js.native
+trait DataProtectionProvider extends IDataProtectionProvider
+
+object DataProtectionProvider {
+  @scala.inline
+  def apply(
+    protectAsync: IBuffer => IAsyncOperation[IBuffer],
+    protectStreamAsync: (IInputStream, IOutputStream) => IAsyncAction,
+    unprotectAsync: IBuffer => IAsyncOperation[IBuffer],
+    unprotectStreamAsync: (IInputStream, IOutputStream) => IAsyncAction
+  ): DataProtectionProvider = {
+    val __obj = js.Dynamic.literal(protectAsync = js.Any.fromFunction1(protectAsync), protectStreamAsync = js.Any.fromFunction2(protectStreamAsync), unprotectAsync = js.Any.fromFunction1(unprotectAsync), unprotectStreamAsync = js.Any.fromFunction2(unprotectStreamAsync))
+    __obj.asInstanceOf[DataProtectionProvider]
+  }
 }
 

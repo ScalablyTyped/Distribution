@@ -12,28 +12,28 @@ sealed trait IndentAction extends js.Object
 @js.native
 object IndentAction extends js.Object {
   /**
-  		 * Insert new line and indent once (relative to the previous line's indentation).
-  		 */
+    * Insert new line and indent once (relative to the previous line's indentation).
+    */
   @js.native
   sealed trait Indent extends IndentAction
   
   /**
-  		 * Insert two new lines:
-  		 *  - the first one indented which will hold the cursor
-  		 *  - the second one at the same indentation level
-  		 */
+    * Insert two new lines:
+    *  - the first one indented which will hold the cursor
+    *  - the second one at the same indentation level
+    */
   @js.native
   sealed trait IndentOutdent extends IndentAction
   
   /**
-  		 * Insert new line and copy the previous line's indentation.
-  		 */
+    * Insert new line and copy the previous line's indentation.
+    */
   @js.native
   sealed trait None extends IndentAction
   
   /**
-  		 * Insert new line and outdent once (relative to the previous line's indentation).
-  		 */
+    * Insert new line and outdent once (relative to the previous line's indentation).
+    */
   @js.native
   sealed trait Outdent extends IndentAction
   

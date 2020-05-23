@@ -43,27 +43,27 @@ object GridPdf {
     proxyTarget: String = null,
     proxyURL: String = null,
     repeatHeaders: js.UndefOr[Boolean] = js.undefined,
-    scale: Int | Double = null,
+    scale: js.UndefOr[Double] = js.undefined,
     subject: String = null,
     template: String = null,
     title: String = null
   ): GridPdf = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allPages)) __obj.updateDynamic("allPages")(allPages.asInstanceOf[js.Any])
+    if (!js.isUndefined(allPages)) __obj.updateDynamic("allPages")(allPages.get.asInstanceOf[js.Any])
     if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
     if (avoidLinks != null) __obj.updateDynamic("avoidLinks")(avoidLinks.asInstanceOf[js.Any])
     if (creator != null) __obj.updateDynamic("creator")(creator.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceProxy)) __obj.updateDynamic("forceProxy")(forceProxy.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceProxy)) __obj.updateDynamic("forceProxy")(forceProxy.get.asInstanceOf[js.Any])
     if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
-    if (!js.isUndefined(landscape)) __obj.updateDynamic("landscape")(landscape.asInstanceOf[js.Any])
+    if (!js.isUndefined(landscape)) __obj.updateDynamic("landscape")(landscape.get.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (paperSize != null) __obj.updateDynamic("paperSize")(paperSize.asInstanceOf[js.Any])
     if (proxyTarget != null) __obj.updateDynamic("proxyTarget")(proxyTarget.asInstanceOf[js.Any])
     if (proxyURL != null) __obj.updateDynamic("proxyURL")(proxyURL.asInstanceOf[js.Any])
-    if (!js.isUndefined(repeatHeaders)) __obj.updateDynamic("repeatHeaders")(repeatHeaders.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeatHeaders)) __obj.updateDynamic("repeatHeaders")(repeatHeaders.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

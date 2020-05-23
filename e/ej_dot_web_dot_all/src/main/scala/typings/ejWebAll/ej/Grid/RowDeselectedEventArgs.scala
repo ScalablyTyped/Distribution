@@ -31,7 +31,7 @@ object RowDeselectedEventArgs {
     data: js.Any = null,
     model: js.Any = null,
     row: js.Any = null,
-    rowIndex: Int | Double = null,
+    rowIndex: js.UndefOr[Double] = js.undefined,
     selectedData: js.Any = null,
     `type`: String = null
   ): RowDeselectedEventArgs = {
@@ -39,7 +39,7 @@ object RowDeselectedEventArgs {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
-    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.get.asInstanceOf[js.Any])
     if (selectedData != null) __obj.updateDynamic("selectedData")(selectedData.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowDeselectedEventArgs]

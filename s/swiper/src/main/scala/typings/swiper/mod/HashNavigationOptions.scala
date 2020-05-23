@@ -9,7 +9,7 @@ trait HashNavigationOptions extends js.Object {
     * Works in addition to hashnav to replace current url state with the
     * new one instead of adding it to history
     *
-    * @default 	false
+    * @default     false
     */
   var replaceState: js.UndefOr[Boolean] = js.undefined
   /**
@@ -25,8 +25,8 @@ object HashNavigationOptions {
   @scala.inline
   def apply(replaceState: js.UndefOr[Boolean] = js.undefined, watchState: js.UndefOr[Boolean] = js.undefined): HashNavigationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(replaceState)) __obj.updateDynamic("replaceState")(replaceState.asInstanceOf[js.Any])
-    if (!js.isUndefined(watchState)) __obj.updateDynamic("watchState")(watchState.asInstanceOf[js.Any])
+    if (!js.isUndefined(replaceState)) __obj.updateDynamic("replaceState")(replaceState.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(watchState)) __obj.updateDynamic("watchState")(watchState.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HashNavigationOptions]
   }
 }

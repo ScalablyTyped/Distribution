@@ -47,26 +47,26 @@ trait DescribePatchGroupStateResult extends js.Object {
 object DescribePatchGroupStateResult {
   @scala.inline
   def apply(
-    Instances: Int | Double = null,
-    InstancesWithFailedPatches: Int | Double = null,
-    InstancesWithInstalledOtherPatches: Int | Double = null,
-    InstancesWithInstalledPatches: Int | Double = null,
-    InstancesWithInstalledPendingRebootPatches: Int | Double = null,
-    InstancesWithInstalledRejectedPatches: Int | Double = null,
-    InstancesWithMissingPatches: Int | Double = null,
-    InstancesWithNotApplicablePatches: Int | Double = null,
-    InstancesWithUnreportedNotApplicablePatches: Int | Double = null
+    Instances: js.UndefOr[Integer] = js.undefined,
+    InstancesWithFailedPatches: js.UndefOr[Integer] = js.undefined,
+    InstancesWithInstalledOtherPatches: js.UndefOr[Integer] = js.undefined,
+    InstancesWithInstalledPatches: js.UndefOr[Integer] = js.undefined,
+    InstancesWithInstalledPendingRebootPatches: js.UndefOr[InstancesCount] = js.undefined,
+    InstancesWithInstalledRejectedPatches: js.UndefOr[InstancesCount] = js.undefined,
+    InstancesWithMissingPatches: js.UndefOr[Integer] = js.undefined,
+    InstancesWithNotApplicablePatches: js.UndefOr[Integer] = js.undefined,
+    InstancesWithUnreportedNotApplicablePatches: js.UndefOr[Integer] = js.undefined
   ): DescribePatchGroupStateResult = {
     val __obj = js.Dynamic.literal()
-    if (Instances != null) __obj.updateDynamic("Instances")(Instances.asInstanceOf[js.Any])
-    if (InstancesWithFailedPatches != null) __obj.updateDynamic("InstancesWithFailedPatches")(InstancesWithFailedPatches.asInstanceOf[js.Any])
-    if (InstancesWithInstalledOtherPatches != null) __obj.updateDynamic("InstancesWithInstalledOtherPatches")(InstancesWithInstalledOtherPatches.asInstanceOf[js.Any])
-    if (InstancesWithInstalledPatches != null) __obj.updateDynamic("InstancesWithInstalledPatches")(InstancesWithInstalledPatches.asInstanceOf[js.Any])
-    if (InstancesWithInstalledPendingRebootPatches != null) __obj.updateDynamic("InstancesWithInstalledPendingRebootPatches")(InstancesWithInstalledPendingRebootPatches.asInstanceOf[js.Any])
-    if (InstancesWithInstalledRejectedPatches != null) __obj.updateDynamic("InstancesWithInstalledRejectedPatches")(InstancesWithInstalledRejectedPatches.asInstanceOf[js.Any])
-    if (InstancesWithMissingPatches != null) __obj.updateDynamic("InstancesWithMissingPatches")(InstancesWithMissingPatches.asInstanceOf[js.Any])
-    if (InstancesWithNotApplicablePatches != null) __obj.updateDynamic("InstancesWithNotApplicablePatches")(InstancesWithNotApplicablePatches.asInstanceOf[js.Any])
-    if (InstancesWithUnreportedNotApplicablePatches != null) __obj.updateDynamic("InstancesWithUnreportedNotApplicablePatches")(InstancesWithUnreportedNotApplicablePatches.asInstanceOf[js.Any])
+    if (!js.isUndefined(Instances)) __obj.updateDynamic("Instances")(Instances.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstancesWithFailedPatches)) __obj.updateDynamic("InstancesWithFailedPatches")(InstancesWithFailedPatches.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstancesWithInstalledOtherPatches)) __obj.updateDynamic("InstancesWithInstalledOtherPatches")(InstancesWithInstalledOtherPatches.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstancesWithInstalledPatches)) __obj.updateDynamic("InstancesWithInstalledPatches")(InstancesWithInstalledPatches.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstancesWithInstalledPendingRebootPatches)) __obj.updateDynamic("InstancesWithInstalledPendingRebootPatches")(InstancesWithInstalledPendingRebootPatches.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstancesWithInstalledRejectedPatches)) __obj.updateDynamic("InstancesWithInstalledRejectedPatches")(InstancesWithInstalledRejectedPatches.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstancesWithMissingPatches)) __obj.updateDynamic("InstancesWithMissingPatches")(InstancesWithMissingPatches.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstancesWithNotApplicablePatches)) __obj.updateDynamic("InstancesWithNotApplicablePatches")(InstancesWithNotApplicablePatches.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstancesWithUnreportedNotApplicablePatches)) __obj.updateDynamic("InstancesWithUnreportedNotApplicablePatches")(InstancesWithUnreportedNotApplicablePatches.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePatchGroupStateResult]
   }
 }

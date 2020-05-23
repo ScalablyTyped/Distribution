@@ -12,7 +12,10 @@ import scala.scalajs.js.annotation._
 trait Options extends js.Object {
   /** if set, will be used as the extra attributes of the script tag. */
   var attributes: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  /** if set, will be used as the output fileName */
+  /**
+    * if set, will be used as the output fileName
+    * @default '[name].js'
+    */
   var fileName: js.UndefOr[String] = js.undefined
   /**
     * supported path patterns:
@@ -24,22 +27,32 @@ trait Options extends js.Object {
   /**
     * how to auto inject to html-webpack-plugin
     * (only if html-webpack-plugin set inject option not to be false)
+    * @default 'prepend'
     */
   var injectType: js.UndefOr[prepend | append | none] = js.undefined
-  /** it's useful when you want to inject to html-webpack-plugin manully */
+  /**
+    * it's useful when you want to inject to html-webpack-plugin manually
+    * @default 'result'
+    */
   var name: js.UndefOr[String] = js.undefined
-  /** if set, will be used as the output directory of the file. */
+  /**
+    * if set, will be used as the output directory of the file.
+    */
   var outputPath: js.UndefOr[String] = js.undefined
   /**
     * if set, will be used as the public path of the script tag.
     * if set to false, will use relativePath.
     */
   var publicPath: js.UndefOr[String | Boolean] = js.undefined
-  /** if true, will output sourcemap */
+  /**
+    * if true, will output sourcemap
+    * @default false
+    */
   var sourceMap: js.UndefOr[Boolean] = js.undefined
   /**
     * if true the output file will be uglified
     * or set uglifyjs options to customize the output
+    * @default false
     */
   var uglify: js.UndefOr[Boolean | MinifyOptions] = js.undefined
 }
@@ -64,7 +77,7 @@ object Options {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (outputPath != null) __obj.updateDynamic("outputPath")(outputPath.asInstanceOf[js.Any])
     if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap.get.asInstanceOf[js.Any])
     if (uglify != null) __obj.updateDynamic("uglify")(uglify.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

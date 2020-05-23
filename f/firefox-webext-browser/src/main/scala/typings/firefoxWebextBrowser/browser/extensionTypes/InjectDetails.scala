@@ -45,17 +45,17 @@ object InjectDetails {
     code: String = null,
     cssOrigin: CSSOrigin = null,
     file: String = null,
-    frameId: Int | Double = null,
+    frameId: js.UndefOr[Double] = js.undefined,
     matchAboutBlank: js.UndefOr[Boolean] = js.undefined,
     runAt: RunAt = null
   ): InjectDetails = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allFrames)) __obj.updateDynamic("allFrames")(allFrames.asInstanceOf[js.Any])
+    if (!js.isUndefined(allFrames)) __obj.updateDynamic("allFrames")(allFrames.get.asInstanceOf[js.Any])
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (cssOrigin != null) __obj.updateDynamic("cssOrigin")(cssOrigin.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (frameId != null) __obj.updateDynamic("frameId")(frameId.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchAboutBlank)) __obj.updateDynamic("matchAboutBlank")(matchAboutBlank.asInstanceOf[js.Any])
+    if (!js.isUndefined(frameId)) __obj.updateDynamic("frameId")(frameId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchAboutBlank)) __obj.updateDynamic("matchAboutBlank")(matchAboutBlank.get.asInstanceOf[js.Any])
     if (runAt != null) __obj.updateDynamic("runAt")(runAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[InjectDetails]
   }

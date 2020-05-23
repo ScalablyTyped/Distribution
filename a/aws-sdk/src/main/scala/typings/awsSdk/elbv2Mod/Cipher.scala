@@ -18,10 +18,10 @@ trait Cipher extends js.Object {
 
 object Cipher {
   @scala.inline
-  def apply(Name: CipherName = null, Priority: Int | Double = null): Cipher = {
+  def apply(Name: CipherName = null, Priority: js.UndefOr[CipherPriority] = js.undefined): Cipher = {
     val __obj = js.Dynamic.literal()
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cipher]
   }
 }

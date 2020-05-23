@@ -14,9 +14,9 @@ trait NoiseReducerFilterSettings extends js.Object {
 
 object NoiseReducerFilterSettings {
   @scala.inline
-  def apply(Strength: Int | Double = null): NoiseReducerFilterSettings = {
+  def apply(Strength: js.UndefOr[integerMin0Max3] = js.undefined): NoiseReducerFilterSettings = {
     val __obj = js.Dynamic.literal()
-    if (Strength != null) __obj.updateDynamic("Strength")(Strength.asInstanceOf[js.Any])
+    if (!js.isUndefined(Strength)) __obj.updateDynamic("Strength")(Strength.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoiseReducerFilterSettings]
   }
 }

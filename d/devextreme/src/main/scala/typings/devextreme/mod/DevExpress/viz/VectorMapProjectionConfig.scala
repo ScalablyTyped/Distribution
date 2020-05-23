@@ -16,12 +16,12 @@ trait VectorMapProjectionConfig extends js.Object {
 object VectorMapProjectionConfig {
   @scala.inline
   def apply(
-    aspectRatio: Int | Double = null,
+    aspectRatio: js.UndefOr[Double] = js.undefined,
     from: /* coordinates */ js.Array[Double] => js.Array[Double] = null,
     to: /* coordinates */ js.Array[Double] => js.Array[Double] = null
   ): VectorMapProjectionConfig = {
     val __obj = js.Dynamic.literal()
-    if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(aspectRatio)) __obj.updateDynamic("aspectRatio")(aspectRatio.get.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(js.Any.fromFunction1(from))
     if (to != null) __obj.updateDynamic("to")(js.Any.fromFunction1(to))
     __obj.asInstanceOf[VectorMapProjectionConfig]

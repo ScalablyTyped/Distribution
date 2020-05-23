@@ -22,11 +22,11 @@ object RefreshHints {
     isFilterUnchanged: js.UndefOr[Boolean] = js.undefined
   ): RefreshHints = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreDiffsAfter)) __obj.updateDynamic("ignoreDiffsAfter")(ignoreDiffsAfter.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreDiffsBefore)) __obj.updateDynamic("ignoreDiffsBefore")(ignoreDiffsBefore.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFilterExpanding)) __obj.updateDynamic("isFilterExpanding")(isFilterExpanding.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFilterNarrowing)) __obj.updateDynamic("isFilterNarrowing")(isFilterNarrowing.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFilterUnchanged)) __obj.updateDynamic("isFilterUnchanged")(isFilterUnchanged.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreDiffsAfter)) __obj.updateDynamic("ignoreDiffsAfter")(ignoreDiffsAfter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreDiffsBefore)) __obj.updateDynamic("ignoreDiffsBefore")(ignoreDiffsBefore.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFilterExpanding)) __obj.updateDynamic("isFilterExpanding")(isFilterExpanding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFilterNarrowing)) __obj.updateDynamic("isFilterNarrowing")(isFilterNarrowing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFilterUnchanged)) __obj.updateDynamic("isFilterUnchanged")(isFilterUnchanged.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefreshHints]
   }
 }

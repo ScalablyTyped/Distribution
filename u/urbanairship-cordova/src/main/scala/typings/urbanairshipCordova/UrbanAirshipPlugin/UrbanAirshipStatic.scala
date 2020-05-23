@@ -1,6 +1,6 @@
 package typings.urbanairshipCordova.UrbanAirshipPlugin
 
-import typings.urbanairshipCordova.AnonAlert
+import typings.urbanairshipCordova.anon.Alert
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait UrbanAirshipStatic extends js.Object {
   /**
     * The enumeration values for use with setNotificationTypes().
     */
-  var notificationType: AnonAlert
+  var notificationType: Alert
   /**
     * (Android Only)
     *
@@ -327,7 +327,7 @@ object UrbanAirshipStatic {
     isSoundEnabled: js.Function1[/* enabled */ Boolean, Unit] => Unit,
     isUserNotificationsEnabled: js.Function1[/* enabled */ Boolean, Unit] => Unit,
     isVibrateEnabled: js.Function1[/* enabled */ Boolean, Unit] => Unit,
-    notificationType: AnonAlert,
+    notificationType: Alert,
     recordCurrentLocation: js.Function0[Unit] => Unit,
     resetBadge: js.Function0[Unit] => Unit,
     runAction: (String, String, js.Function1[/* result */ RunActionResult, Unit]) => Unit,

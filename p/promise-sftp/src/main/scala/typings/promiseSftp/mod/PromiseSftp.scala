@@ -3,9 +3,8 @@ package typings.promiseSftp.mod
 import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
-import typings.promiseSftp.AnonAttrs
-import typings.promiseSftp.AnonAutoClose
-import typings.promiseSftp.AnonBuffer
+import typings.promiseSftp.anon.Attrs
+import typings.promiseSftp.anon.AutoClose
 import typings.ssh2.mod.SFTPWrapper
 import typings.ssh2Streams.mod.Attributes
 import typings.ssh2Streams.mod.InputAttributes
@@ -59,7 +58,7 @@ trait PromiseSftp extends js.Object {
     */
   def createReadStream(path: String): typings.bluebird.mod.^[ReadableStream] = js.native
   def createReadStream(path: String, options: String): typings.bluebird.mod.^[ReadableStream] = js.native
-  def createReadStream(path: String, options: AnonAutoClose): typings.bluebird.mod.^[ReadableStream] = js.native
+  def createReadStream(path: String, options: AutoClose): typings.bluebird.mod.^[ReadableStream] = js.native
   /**
     * Creates a write stream to a file on the server.
     * @param path - The path of the file to create a write stream to.
@@ -67,7 +66,7 @@ trait PromiseSftp extends js.Object {
     */
   def createWriteStream(path: String): typings.bluebird.mod.^[WritableStream] = js.native
   def createWriteStream(path: String, options: String): typings.bluebird.mod.^[WritableStream] = js.native
-  def createWriteStream(path: String, options: AnonAutoClose): typings.bluebird.mod.^[WritableStream] = js.native
+  def createWriteStream(path: String, options: AutoClose): typings.bluebird.mod.^[WritableStream] = js.native
   /**
     * Closes the connection to the server immediately.
     * @returns whether the connection was connected prior to the call to **destroy()**.
@@ -241,13 +240,13 @@ trait PromiseSftp extends js.Object {
     * @param length - The number of bytes to read from the buffer.
     * @param position - The position of the file to begin writing to.
     */
-  def read(handle: Buffer, buffer: Buffer, offset: Double, length: Double, position: Double): typings.bluebird.mod.^[AnonBuffer] = js.native
-  def readdir(location: String): typings.bluebird.mod.^[AnonAttrs] = js.native
+  def read(handle: Buffer, buffer: Buffer, offset: Double, length: Double, position: Double): typings.bluebird.mod.^[typings.promiseSftp.anon.Buffer] = js.native
+  def readdir(location: String): typings.bluebird.mod.^[Attrs] = js.native
   /**
     * Read a directory on the server.
     * @param location - The path of the directory to read or a handle returned from `#opendir()`.
     */
-  def readdir(location: Buffer): typings.bluebird.mod.^[AnonAttrs] = js.native
+  def readdir(location: Buffer): typings.bluebird.mod.^[Attrs] = js.native
   /**
     * Read the target of a symlink on the server.
     * @param path - The path of the symlink to read the target of.

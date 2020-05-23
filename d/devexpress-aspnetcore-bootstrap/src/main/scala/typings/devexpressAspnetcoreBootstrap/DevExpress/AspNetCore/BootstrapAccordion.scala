@@ -11,9 +11,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapAccordion")
 @js.native
-class BootstrapAccordion () extends Control {
+trait BootstrapAccordion extends Control {
   def collapseAll(): Unit = js.native
   def expandAll(): Unit = js.native
   def getActiveGroup(): BootstrapAccordionGroup | Null = js.native

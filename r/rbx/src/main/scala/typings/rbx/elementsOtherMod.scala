@@ -1,5 +1,6 @@
 package typings.rbx
 
+import typings.rbx.anon.PreferHelpersPropsOverrid
 import typings.rbx.deleteMod.DeleteProps
 import typings.rbx.exoticMod.ForwardRefAsExoticComponent
 import typings.react.mod.ElementType

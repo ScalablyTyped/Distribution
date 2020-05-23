@@ -8,17 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object search extends js.Object {
   @js.native
-  class OpenSearchProvider protected () extends SearchProvider {
-    /**
-      * Constructor for a new search/OpenSearchProvider.Accepts an object literal <code>mSettings</code>
-      * that defines initialproperty values, aggregated and associated objects as well as event handlers.See
-      * {@link sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the
-      * settings object.
-      * @param sId id for the new control, generated automatically if no id is given
-      * @param mSettings initial settings for the new control
-      */
-    def this(sId: String) = this()
-    def this(sId: String, mSettings: js.Any) = this()
+  trait OpenSearchProvider extends SearchProvider {
     /**
       * Gets current value of property <code>suggestType</code>.The type of data which is provided by the
       * given suggestUrl: either 'json' or 'xml'.Default value is <code>json</code>.
@@ -53,17 +43,7 @@ object search extends js.Object {
   }
   
   @js.native
-  class SearchProvider protected () extends Element {
-    /**
-      * Constructor for a new search/SearchProvider.Accepts an object literal <code>mSettings</code> that
-      * defines initialproperty values, aggregated and associated objects as well as event handlers.See
-      * {@link sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the
-      * settings object.
-      * @param sId id for the new control, generated automatically if no id is given
-      * @param mSettings initial settings for the new control
-      */
-    def this(sId: String) = this()
-    def this(sId: String, mSettings: js.Any) = this()
+  trait SearchProvider extends Element {
     /**
       * Gets current value of property <code>icon</code>.Icon of the Search Provider
       * @returns Value of property <code>icon</code>

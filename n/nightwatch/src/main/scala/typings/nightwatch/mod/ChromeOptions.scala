@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ChromeOptions extends js.Object {
   /**
-    * 	List of command-line arguments to use when starting Chrome. Arguments with an associated value should be separated by a '=' sign
+    *     List of command-line arguments to use when starting Chrome. Arguments with an associated value should be separated by a '=' sign
     * (e.g., ['start-maximized', 'user-data-dir=/tmp/temp_profile']).
     */
   var args: js.UndefOr[js.Array[String]] = js.undefined
@@ -88,7 +88,7 @@ object ChromeOptions {
     if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     if (binary != null) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
     if (debuggerAddress != null) __obj.updateDynamic("debuggerAddress")(debuggerAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(detach)) __obj.updateDynamic("detach")(detach.asInstanceOf[js.Any])
+    if (!js.isUndefined(detach)) __obj.updateDynamic("detach")(detach.get.asInstanceOf[js.Any])
     if (excludeSwitches != null) __obj.updateDynamic("excludeSwitches")(excludeSwitches.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (localState != null) __obj.updateDynamic("localState")(localState.asInstanceOf[js.Any])
@@ -96,7 +96,7 @@ object ChromeOptions {
     if (mobileEmulation != null) __obj.updateDynamic("mobileEmulation")(mobileEmulation.asInstanceOf[js.Any])
     if (perfLoggingPrefs != null) __obj.updateDynamic("perfLoggingPrefs")(perfLoggingPrefs.asInstanceOf[js.Any])
     if (prefs != null) __obj.updateDynamic("prefs")(prefs.asInstanceOf[js.Any])
-    if (!js.isUndefined(w3c)) __obj.updateDynamic("w3c")(w3c.asInstanceOf[js.Any])
+    if (!js.isUndefined(w3c)) __obj.updateDynamic("w3c")(w3c.get.asInstanceOf[js.Any])
     if (windowTypes != null) __obj.updateDynamic("windowTypes")(windowTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChromeOptions]
   }

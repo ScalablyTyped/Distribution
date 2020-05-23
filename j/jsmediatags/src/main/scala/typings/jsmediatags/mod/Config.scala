@@ -1,8 +1,8 @@
 package typings.jsmediatags.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.jsmediatags.TypeofMediaFileReader
-import typings.jsmediatags.TypeofMediaTagReader
+import typings.jsmediatags.anon.TypeofMediaFileReader
+import typings.jsmediatags.anon.TypeofMediaTagReader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

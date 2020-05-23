@@ -10,8 +10,30 @@ import scala.scalajs.js.annotation._
 
 trait EncodeEntry
   extends /* k */ StringDictionary[js.UndefOr[ProductionRule[ArbitraryValueRef]]] {
+  /**
+    * A boolean flag indicating if [ARIA attributes](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) should be included (SVG output only).
+    * If `false`, the "aria-hidden" attribute will be set on the output SVG element, removing the mark item from the ARIA accessibility tree.
+    */
+  var aria: js.UndefOr[ProductionRule[BooleanValueRef]] = js.undefined
+  /**
+    * Sets the type of user interface element of the mark item for [ARIA accessibility](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) (SVG output only).
+    * If specified, this property determines the "role" attribute.
+    * Warning: this property is experimental and may be changed in the future.
+    */
+  var ariaRole: js.UndefOr[ProductionRule[StringValueRef]] = js.undefined
+  /**
+    * A human-readable, author-localized description for the role of the mark item for [ARIA accessibility](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) (SVG output only).
+    * If specified, this property determines the "aria-roledescription" attribute.
+    * Warning: this property is experimental and may be changed in the future.
+    */
+  var ariaRoleDescription: js.UndefOr[ProductionRule[StringValueRef]] = js.undefined
   var blend: js.UndefOr[ProductionRule[ScaledValueRef[Blend]]] = js.undefined
   var cursor: js.UndefOr[ProductionRule[ScaledValueRef[Cursor]]] = js.undefined
+  /**
+    * A text description of the mark item for [ARIA accessibility](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) (SVG output only).
+    * If specified, this property determines the ["aria-label" attribute](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute).
+    */
+  var description: js.UndefOr[ProductionRule[StringValueRef]] = js.undefined
   var fill: js.UndefOr[ProductionRule[ColorValueRef]] = js.undefined
   var fillOpacity: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
   var height: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
@@ -39,8 +61,12 @@ object EncodeEntry {
   @scala.inline
   def apply(
     StringDictionary: /* k */ StringDictionary[js.UndefOr[ProductionRule[ArbitraryValueRef]]] = null,
+    aria: ProductionRule[BooleanValueRef] = null,
+    ariaRole: ProductionRule[StringValueRef] = null,
+    ariaRoleDescription: ProductionRule[StringValueRef] = null,
     blend: ProductionRule[ScaledValueRef[Blend]] = null,
     cursor: ProductionRule[ScaledValueRef[Cursor]] = null,
+    description: ProductionRule[StringValueRef] = null,
     fill: ProductionRule[ColorValueRef] = null,
     fillOpacity: ProductionRule[NumericValueRef] = null,
     height: ProductionRule[NumericValueRef] = null,
@@ -65,8 +91,12 @@ object EncodeEntry {
   ): EncodeEntry = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (aria != null) __obj.updateDynamic("aria")(aria.asInstanceOf[js.Any])
+    if (ariaRole != null) __obj.updateDynamic("ariaRole")(ariaRole.asInstanceOf[js.Any])
+    if (ariaRoleDescription != null) __obj.updateDynamic("ariaRoleDescription")(ariaRoleDescription.asInstanceOf[js.Any])
     if (blend != null) __obj.updateDynamic("blend")(blend.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])

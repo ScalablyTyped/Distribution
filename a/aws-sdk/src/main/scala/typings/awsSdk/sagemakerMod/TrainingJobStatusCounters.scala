@@ -31,18 +31,18 @@ trait TrainingJobStatusCounters extends js.Object {
 object TrainingJobStatusCounters {
   @scala.inline
   def apply(
-    Completed: Int | Double = null,
-    InProgress: Int | Double = null,
-    NonRetryableError: Int | Double = null,
-    RetryableError: Int | Double = null,
-    Stopped: Int | Double = null
+    Completed: js.UndefOr[TrainingJobStatusCounter] = js.undefined,
+    InProgress: js.UndefOr[TrainingJobStatusCounter] = js.undefined,
+    NonRetryableError: js.UndefOr[TrainingJobStatusCounter] = js.undefined,
+    RetryableError: js.UndefOr[TrainingJobStatusCounter] = js.undefined,
+    Stopped: js.UndefOr[TrainingJobStatusCounter] = js.undefined
   ): TrainingJobStatusCounters = {
     val __obj = js.Dynamic.literal()
-    if (Completed != null) __obj.updateDynamic("Completed")(Completed.asInstanceOf[js.Any])
-    if (InProgress != null) __obj.updateDynamic("InProgress")(InProgress.asInstanceOf[js.Any])
-    if (NonRetryableError != null) __obj.updateDynamic("NonRetryableError")(NonRetryableError.asInstanceOf[js.Any])
-    if (RetryableError != null) __obj.updateDynamic("RetryableError")(RetryableError.asInstanceOf[js.Any])
-    if (Stopped != null) __obj.updateDynamic("Stopped")(Stopped.asInstanceOf[js.Any])
+    if (!js.isUndefined(Completed)) __obj.updateDynamic("Completed")(Completed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(InProgress)) __obj.updateDynamic("InProgress")(InProgress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(NonRetryableError)) __obj.updateDynamic("NonRetryableError")(NonRetryableError.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RetryableError)) __obj.updateDynamic("RetryableError")(RetryableError.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Stopped)) __obj.updateDynamic("Stopped")(Stopped.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrainingJobStatusCounters]
   }
 }

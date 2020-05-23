@@ -2,7 +2,7 @@ package typings.reactFilepond.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ReactElement
-import typings.reactFilepond.AnonFetch
+import typings.reactFilepond.anon.Fetch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -62,8 +62,8 @@ object FilePondProps {
     labelTapToRetry: String = null,
     labelTapToUndo: String = null,
     labelThousandsSeparator: String = null,
-    maxFiles: Int | Double = null,
-    maxParallelUploads: Int | Double = null,
+    maxFiles: js.UndefOr[Double] = js.undefined,
+    maxParallelUploads: js.UndefOr[Double] = js.undefined,
     metadata: StringDictionary[js.Any] = null,
     name: String = null,
     onaddfile: (/* error */ FilePondErrorDescription, /* file */ File) => Unit = null,
@@ -81,23 +81,23 @@ object FilePondProps {
     onupdatefiles: /* fileItems */ js.Array[File] => Unit = null,
     onwarning: (/* error */ js.Any, /* file */ js.UndefOr[File], /* status */ js.UndefOr[js.Any]) => Unit = null,
     required: js.UndefOr[Boolean] = js.undefined,
-    server: String | AnonFetch = null
+    server: String | Fetch = null
   ): FilePondProps = {
     val __obj = js.Dynamic.literal()
     if (acceptedFileTypes != null) __obj.updateDynamic("acceptedFileTypes")(acceptedFileTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowBrowse)) __obj.updateDynamic("allowBrowse")(allowBrowse.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDrop)) __obj.updateDynamic("allowDrop")(allowDrop.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowMultiple)) __obj.updateDynamic("allowMultiple")(allowMultiple.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowPaste)) __obj.updateDynamic("allowPaste")(allowPaste.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowReplace)) __obj.updateDynamic("allowReplace")(allowReplace.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowRevert)) __obj.updateDynamic("allowRevert")(allowRevert.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowBrowse)) __obj.updateDynamic("allowBrowse")(allowBrowse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDrop)) __obj.updateDynamic("allowDrop")(allowDrop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowMultiple)) __obj.updateDynamic("allowMultiple")(allowMultiple.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowPaste)) __obj.updateDynamic("allowPaste")(allowPaste.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowReplace)) __obj.updateDynamic("allowReplace")(allowReplace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowRevert)) __obj.updateDynamic("allowRevert")(allowRevert.get.asInstanceOf[js.Any])
     if (beforeRemoveFile != null) __obj.updateDynamic("beforeRemoveFile")(js.Any.fromFunction1(beforeRemoveFile))
     if (captureMethod != null) __obj.updateDynamic("captureMethod")(captureMethod.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropOnElement)) __obj.updateDynamic("dropOnElement")(dropOnElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropOnPage)) __obj.updateDynamic("dropOnPage")(dropOnPage.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropValidation)) __obj.updateDynamic("dropValidation")(dropValidation.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropOnElement)) __obj.updateDynamic("dropOnElement")(dropOnElement.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropOnPage)) __obj.updateDynamic("dropOnPage")(dropOnPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropValidation)) __obj.updateDynamic("dropValidation")(dropValidation.get.asInstanceOf[js.Any])
     if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
     if (iconProcess != null) __obj.updateDynamic("iconProcess")(iconProcess.asInstanceOf[js.Any])
     if (iconRemove != null) __obj.updateDynamic("iconRemove")(iconRemove.asInstanceOf[js.Any])
@@ -105,7 +105,7 @@ object FilePondProps {
     if (iconUndo != null) __obj.updateDynamic("iconUndo")(iconUndo.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (ignoredFiles != null) __obj.updateDynamic("ignoredFiles")(ignoredFiles.asInstanceOf[js.Any])
-    if (!js.isUndefined(instantUpload)) __obj.updateDynamic("instantUpload")(instantUpload.asInstanceOf[js.Any])
+    if (!js.isUndefined(instantUpload)) __obj.updateDynamic("instantUpload")(instantUpload.get.asInstanceOf[js.Any])
     if (labelButtonAbortItemLoad != null) __obj.updateDynamic("labelButtonAbortItemLoad")(labelButtonAbortItemLoad.asInstanceOf[js.Any])
     if (labelButtonAbortItemProcessing != null) __obj.updateDynamic("labelButtonAbortItemProcessing")(labelButtonAbortItemProcessing.asInstanceOf[js.Any])
     if (labelButtonProcessItem != null) __obj.updateDynamic("labelButtonProcessItem")(labelButtonProcessItem.asInstanceOf[js.Any])
@@ -127,8 +127,8 @@ object FilePondProps {
     if (labelTapToRetry != null) __obj.updateDynamic("labelTapToRetry")(labelTapToRetry.asInstanceOf[js.Any])
     if (labelTapToUndo != null) __obj.updateDynamic("labelTapToUndo")(labelTapToUndo.asInstanceOf[js.Any])
     if (labelThousandsSeparator != null) __obj.updateDynamic("labelThousandsSeparator")(labelThousandsSeparator.asInstanceOf[js.Any])
-    if (maxFiles != null) __obj.updateDynamic("maxFiles")(maxFiles.asInstanceOf[js.Any])
-    if (maxParallelUploads != null) __obj.updateDynamic("maxParallelUploads")(maxParallelUploads.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFiles)) __obj.updateDynamic("maxFiles")(maxFiles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxParallelUploads)) __obj.updateDynamic("maxParallelUploads")(maxParallelUploads.get.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onaddfile != null) __obj.updateDynamic("onaddfile")(js.Any.fromFunction2(onaddfile))
@@ -145,7 +145,7 @@ object FilePondProps {
     if (onremovefile != null) __obj.updateDynamic("onremovefile")(js.Any.fromFunction1(onremovefile))
     if (onupdatefiles != null) __obj.updateDynamic("onupdatefiles")(js.Any.fromFunction1(onupdatefiles))
     if (onwarning != null) __obj.updateDynamic("onwarning")(js.Any.fromFunction3(onwarning))
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
     if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilePondProps]
   }

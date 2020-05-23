@@ -23,8 +23,8 @@ object WorkbookSheet {
     columns: js.Array[WorkbookSheetColumn] = null,
     filter: WorkbookSheetFilter = null,
     freezePane: WorkbookSheetFreezePane = null,
-    frozenColumns: Int | Double = null,
-    frozenRows: Int | Double = null,
+    frozenColumns: js.UndefOr[Double] = js.undefined,
+    frozenRows: js.UndefOr[Double] = js.undefined,
     mergedCells: js.Any = null,
     name: String = null,
     rows: js.Array[WorkbookSheetRow] = null,
@@ -35,12 +35,12 @@ object WorkbookSheet {
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (freezePane != null) __obj.updateDynamic("freezePane")(freezePane.asInstanceOf[js.Any])
-    if (frozenColumns != null) __obj.updateDynamic("frozenColumns")(frozenColumns.asInstanceOf[js.Any])
-    if (frozenRows != null) __obj.updateDynamic("frozenRows")(frozenRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(frozenColumns)) __obj.updateDynamic("frozenColumns")(frozenColumns.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(frozenRows)) __obj.updateDynamic("frozenRows")(frozenRows.get.asInstanceOf[js.Any])
     if (mergedCells != null) __obj.updateDynamic("mergedCells")(mergedCells.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (!js.isUndefined(showGridLines)) __obj.updateDynamic("showGridLines")(showGridLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(showGridLines)) __obj.updateDynamic("showGridLines")(showGridLines.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookSheet]
   }

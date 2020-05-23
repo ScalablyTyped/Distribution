@@ -5,11 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.JsGrid.EventArgs.CellEditBegin")
-@js.native
-class CellEditBegin protected () extends IEventArgs {
-  def this(recordKey: Double, fieldKey: String) = this()
-  var fieldKey: String = js.native
-  var recordKey: Double = js.native
+trait CellEditBegin extends IEventArgs {
+  var fieldKey: String
+  var recordKey: Double
+}
+
+object CellEditBegin {
+  @scala.inline
+  def apply(fieldKey: String, recordKey: Double): CellEditBegin = {
+    val __obj = js.Dynamic.literal(fieldKey = fieldKey.asInstanceOf[js.Any], recordKey = recordKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CellEditBegin]
+  }
 }
 

@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type ElementList = typings.std.Element | js.Array[typings.std.Element] | typings.std.NodeList | typings.std.HTMLCollection
+  type ElementList = typings.std.HTMLCollection | typings.std.HTMLElement | js.Array[typings.std.HTMLElement]
 }

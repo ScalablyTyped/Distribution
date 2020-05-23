@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/shared_client_state", "WebStorageSharedClientState")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/shared_client_state", "WebStorageSharedClientState")
 @js.native
 class WebStorageSharedClientState protected () extends SharedClientState {
   def this(
@@ -17,7 +17,7 @@ class WebStorageSharedClientState protected () extends SharedClientState {
     localClientId: ClientId,
     initialUser: User
   ) = this()
-  val activeClients: js.Any = js.native
+  var activeClients: js.Any = js.native
   val clientStateKeyRe: js.Any = js.native
   var currentUser: js.Any = js.native
   /**
@@ -25,6 +25,7 @@ class WebStorageSharedClientState protected () extends SharedClientState {
     * events are replayed once `WebStorageSharedClientState` is started.
     */
   var earlyEvents: js.Any = js.native
+  var extractActiveQueryTargets: js.Any = js.native
   /**
     * Parses a client state in WebStorage. Returns 'null' if the value could not
     * be parsed.
@@ -75,11 +76,11 @@ class WebStorageSharedClientState protected () extends SharedClientState {
   var started: js.Any = js.native
   val storage: js.Any = js.native
   val storageListener: js.Any = js.native
-  /* private */ def localClientState(): js.Any = js.native
+  /* private */ def localClientState: js.Any = js.native
 }
 
 /* static members */
-@JSImport("@firebase/firestore/dist/lib/src/local/shared_client_state", "WebStorageSharedClientState")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/shared_client_state", "WebStorageSharedClientState")
 @js.native
 object WebStorageSharedClientState extends js.Object {
   /** Returns 'true' if WebStorage is available in the current environment. */

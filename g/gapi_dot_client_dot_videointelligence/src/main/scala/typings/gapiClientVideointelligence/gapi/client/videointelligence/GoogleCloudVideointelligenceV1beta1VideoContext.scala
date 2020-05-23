@@ -55,7 +55,7 @@ object GoogleCloudVideointelligenceV1beta1VideoContext {
     if (safeSearchDetectionModel != null) __obj.updateDynamic("safeSearchDetectionModel")(safeSearchDetectionModel.asInstanceOf[js.Any])
     if (segments != null) __obj.updateDynamic("segments")(segments.asInstanceOf[js.Any])
     if (shotChangeDetectionModel != null) __obj.updateDynamic("shotChangeDetectionModel")(shotChangeDetectionModel.asInstanceOf[js.Any])
-    if (!js.isUndefined(stationaryCamera)) __obj.updateDynamic("stationaryCamera")(stationaryCamera.asInstanceOf[js.Any])
+    if (!js.isUndefined(stationaryCamera)) __obj.updateDynamic("stationaryCamera")(stationaryCamera.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta1VideoContext]
   }
 }

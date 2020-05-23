@@ -6,12 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains a Windows.Media.VideoFrame with the depth frame data. */
-@JSGlobal("Windows.Devices.Perception.PerceptionDepthFrame")
-@js.native
-abstract class PerceptionDepthFrame () extends js.Object {
+trait PerceptionDepthFrame extends js.Object {
   /** Gets a Windows.Media.VideoFrame with the depth frame data. */
-  var videoFrame: VideoFrame = js.native
+  var videoFrame: VideoFrame
   /** Releases system resources that are exposed by a Windows Runtime object. */
-  def close(): Unit = js.native
+  def close(): Unit
+}
+
+object PerceptionDepthFrame {
+  @scala.inline
+  def apply(close: () => Unit, videoFrame: VideoFrame): PerceptionDepthFrame = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), videoFrame = videoFrame.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PerceptionDepthFrame]
+  }
 }
 

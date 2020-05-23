@@ -33,7 +33,7 @@ object Operation {
   ): Operation = {
     val __obj = js.Dynamic.literal(http = http.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (authtype != null) __obj.updateDynamic("authtype")(authtype.asInstanceOf[js.Any])
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
+    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.get.asInstanceOf[js.Any])
     if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
     if (documentationUrl != null) __obj.updateDynamic("documentationUrl")(documentationUrl.asInstanceOf[js.Any])
     if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])

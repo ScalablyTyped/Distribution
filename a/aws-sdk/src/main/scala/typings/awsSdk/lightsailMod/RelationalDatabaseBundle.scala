@@ -48,25 +48,25 @@ object RelationalDatabaseBundle {
   @scala.inline
   def apply(
     bundleId: String = null,
-    cpuCount: Int | Double = null,
-    diskSizeInGb: Int | Double = null,
+    cpuCount: js.UndefOr[integer] = js.undefined,
+    diskSizeInGb: js.UndefOr[integer] = js.undefined,
     isActive: js.UndefOr[Boolean] = js.undefined,
     isEncrypted: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
-    price: Int | Double = null,
-    ramSizeInGb: Int | Double = null,
-    transferPerMonthInGb: Int | Double = null
+    price: js.UndefOr[float] = js.undefined,
+    ramSizeInGb: js.UndefOr[float] = js.undefined,
+    transferPerMonthInGb: js.UndefOr[integer] = js.undefined
   ): RelationalDatabaseBundle = {
     val __obj = js.Dynamic.literal()
     if (bundleId != null) __obj.updateDynamic("bundleId")(bundleId.asInstanceOf[js.Any])
-    if (cpuCount != null) __obj.updateDynamic("cpuCount")(cpuCount.asInstanceOf[js.Any])
-    if (diskSizeInGb != null) __obj.updateDynamic("diskSizeInGb")(diskSizeInGb.asInstanceOf[js.Any])
-    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEncrypted)) __obj.updateDynamic("isEncrypted")(isEncrypted.asInstanceOf[js.Any])
+    if (!js.isUndefined(cpuCount)) __obj.updateDynamic("cpuCount")(cpuCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(diskSizeInGb)) __obj.updateDynamic("diskSizeInGb")(diskSizeInGb.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEncrypted)) __obj.updateDynamic("isEncrypted")(isEncrypted.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
-    if (ramSizeInGb != null) __obj.updateDynamic("ramSizeInGb")(ramSizeInGb.asInstanceOf[js.Any])
-    if (transferPerMonthInGb != null) __obj.updateDynamic("transferPerMonthInGb")(transferPerMonthInGb.asInstanceOf[js.Any])
+    if (!js.isUndefined(price)) __obj.updateDynamic("price")(price.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ramSizeInGb)) __obj.updateDynamic("ramSizeInGb")(ramSizeInGb.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transferPerMonthInGb)) __obj.updateDynamic("transferPerMonthInGb")(transferPerMonthInGb.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelationalDatabaseBundle]
   }
 }

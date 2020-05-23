@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.NumberDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,8 +27,4 @@ trait HTMLAllCollection extends /* index */ NumberDictionary[Element] {
     */
   def namedItem(name: java.lang.String): HTMLCollection | Element | Null = js.native
 }
-
-@JSGlobal("HTMLAllCollection")
-@js.native
-object HTMLAllCollection extends Instantiable0[HTMLAllCollection]
 

@@ -50,7 +50,7 @@ object WebRequest {
   def apply(
     body: ArtifactContent = null,
     headers: StringDictionary[String] = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     method: String = null,
     parameters: StringDictionary[String] = null,
     properties: PropertyBag = null,
@@ -61,7 +61,7 @@ object WebRequest {
     val __obj = js.Dynamic.literal()
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])

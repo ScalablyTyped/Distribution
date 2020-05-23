@@ -41,7 +41,7 @@ object HiddenProps {
     classes: Partial[ClassNameMap[scala.Nothing]] = null,
     implementation: js_ | css = null,
     initialWidth: Breakpoint = null,
-    innerRef: Ref[_] | RefObject[_] = null,
+    innerRef: js.UndefOr[Null | Ref[_] | RefObject[_]] = js.undefined,
     lgDown: js.UndefOr[Boolean] = js.undefined,
     lgUp: js.UndefOr[Boolean] = js.undefined,
     mdDown: js.UndefOr[Boolean] = js.undefined,
@@ -60,19 +60,19 @@ object HiddenProps {
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (implementation != null) __obj.updateDynamic("implementation")(implementation.asInstanceOf[js.Any])
     if (initialWidth != null) __obj.updateDynamic("initialWidth")(initialWidth.asInstanceOf[js.Any])
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(lgDown)) __obj.updateDynamic("lgDown")(lgDown.asInstanceOf[js.Any])
-    if (!js.isUndefined(lgUp)) __obj.updateDynamic("lgUp")(lgUp.asInstanceOf[js.Any])
-    if (!js.isUndefined(mdDown)) __obj.updateDynamic("mdDown")(mdDown.asInstanceOf[js.Any])
-    if (!js.isUndefined(mdUp)) __obj.updateDynamic("mdUp")(mdUp.asInstanceOf[js.Any])
+    if (!js.isUndefined(innerRef)) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(lgDown)) __obj.updateDynamic("lgDown")(lgDown.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lgUp)) __obj.updateDynamic("lgUp")(lgUp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mdDown)) __obj.updateDynamic("mdDown")(mdDown.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mdUp)) __obj.updateDynamic("mdUp")(mdUp.get.asInstanceOf[js.Any])
     if (only != null) __obj.updateDynamic("only")(only.asInstanceOf[js.Any])
-    if (!js.isUndefined(smDown)) __obj.updateDynamic("smDown")(smDown.asInstanceOf[js.Any])
-    if (!js.isUndefined(smUp)) __obj.updateDynamic("smUp")(smUp.asInstanceOf[js.Any])
+    if (!js.isUndefined(smDown)) __obj.updateDynamic("smDown")(smDown.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(smUp)) __obj.updateDynamic("smUp")(smUp.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(xlDown)) __obj.updateDynamic("xlDown")(xlDown.asInstanceOf[js.Any])
-    if (!js.isUndefined(xlUp)) __obj.updateDynamic("xlUp")(xlUp.asInstanceOf[js.Any])
-    if (!js.isUndefined(xsDown)) __obj.updateDynamic("xsDown")(xsDown.asInstanceOf[js.Any])
-    if (!js.isUndefined(xsUp)) __obj.updateDynamic("xsUp")(xsUp.asInstanceOf[js.Any])
+    if (!js.isUndefined(xlDown)) __obj.updateDynamic("xlDown")(xlDown.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xlUp)) __obj.updateDynamic("xlUp")(xlUp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xsDown)) __obj.updateDynamic("xsDown")(xsDown.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xsUp)) __obj.updateDynamic("xsUp")(xsUp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HiddenProps]
   }
 }

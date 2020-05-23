@@ -162,7 +162,7 @@ object CarePlanActivityDetail {
     if (performer != null) __obj.updateDynamic("performer")(performer.asInstanceOf[js.Any])
     if (productCodeableConcept != null) __obj.updateDynamic("productCodeableConcept")(productCodeableConcept.asInstanceOf[js.Any])
     if (productReference != null) __obj.updateDynamic("productReference")(productReference.asInstanceOf[js.Any])
-    if (!js.isUndefined(prohibited)) __obj.updateDynamic("prohibited")(prohibited.asInstanceOf[js.Any])
+    if (!js.isUndefined(prohibited)) __obj.updateDynamic("prohibited")(prohibited.get.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     if (reasonCode != null) __obj.updateDynamic("reasonCode")(reasonCode.asInstanceOf[js.Any])
     if (reasonReference != null) __obj.updateDynamic("reasonReference")(reasonReference.asInstanceOf[js.Any])

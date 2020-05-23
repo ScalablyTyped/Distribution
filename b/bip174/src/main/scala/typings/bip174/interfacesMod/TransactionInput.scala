@@ -13,9 +13,9 @@ trait TransactionInput extends js.Object {
 
 object TransactionInput {
   @scala.inline
-  def apply(hash: String | Buffer, index: Double, sequence: Int | Double = null): TransactionInput = {
+  def apply(hash: String | Buffer, index: Double, sequence: js.UndefOr[Double] = js.undefined): TransactionInput = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
-    if (sequence != null) __obj.updateDynamic("sequence")(sequence.asInstanceOf[js.Any])
+    if (!js.isUndefined(sequence)) __obj.updateDynamic("sequence")(sequence.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionInput]
   }
 }

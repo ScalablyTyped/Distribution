@@ -15,7 +15,7 @@ trait JQuery extends js.Object {
   def animateAsObservable(properties: js.Any, duration: Double, easing: String): Observable[_] = js.native
   def bindAsObservable[T /* <: BaseJQueryEventObject */](eventType: String): Observable[T] = js.native
   def bindAsObservable[T /* <: BaseJQueryEventObject */](eventType: String, eventData: js.Any): Observable[T] = js.native
-  //liveAsObservable<T extends BaseJQueryEventObject>(eventType: string, eventData?: any): Rx.Observable<T>;	// removed in jquery 1.9
+  //liveAsObservable<T extends BaseJQueryEventObject>(eventType: string, eventData?: any): Rx.Observable<T>;    // removed in jquery 1.9
   def changeAsObservable(): Observable[JQueryInputEventObject] = js.native
   def changeAsObservable(eventData: js.Any): Observable[JQueryInputEventObject] = js.native
   def clickAsObservable(): Observable[JQueryMouseEventObject] = js.native

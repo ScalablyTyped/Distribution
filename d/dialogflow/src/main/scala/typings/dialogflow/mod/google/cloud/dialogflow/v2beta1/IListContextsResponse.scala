@@ -14,10 +14,13 @@ trait IListContextsResponse extends js.Object {
 
 object IListContextsResponse {
   @scala.inline
-  def apply(contexts: js.Array[IContext] = null, nextPageToken: String = null): IListContextsResponse = {
+  def apply(
+    contexts: js.UndefOr[Null | js.Array[IContext]] = js.undefined,
+    nextPageToken: js.UndefOr[Null | String] = js.undefined
+  ): IListContextsResponse = {
     val __obj = js.Dynamic.literal()
-    if (contexts != null) __obj.updateDynamic("contexts")(contexts.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(contexts)) __obj.updateDynamic("contexts")(contexts.asInstanceOf[js.Any])
+    if (!js.isUndefined(nextPageToken)) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListContextsResponse]
   }
 }

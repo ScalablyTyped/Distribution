@@ -11,33 +11,33 @@ import scala.scalajs.js.annotation._
 
 trait IBoxLayout extends IContainer {
   /** [Method] This method is called to re cache our understanding of flexes
-  		* @param ownerContext Object
-  		*/
+    * @param ownerContext Object
+    */
   var cacheFlexes: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Called to perform the calculations for this layout
-  		* @param ownerContext Object
-  		*/
+    * @param ownerContext Object
+    */
   @JSName("calculate")
   var calculate_IBoxLayout: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] This method if implemented is called at the end of the cycle in which this layout completes by not setting done to
-  		* @param ownerContext Object
-  		*/
+    * @param ownerContext Object
+    */
   @JSName("completeLayout")
   var completeLayout_IBoxLayout: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Object) */
   var defaultMargins: js.UndefOr[js.Any] = js.undefined
   /** [Method] This method is called after all layouts are complete and their calculations flushed to the DOM
-  		* @param ownerContext Object
-  		*/
+    * @param ownerContext Object
+    */
   @JSName("finishedLayout")
   var finishedLayout_IBoxLayout: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Number) */
   var flex: js.UndefOr[Double] = js.undefined
   /** [Method] Returns an object describing how this layout manages the size of the given component
-  		* @param item Object
-  		* @param ownerSizeModel Object
-  		* @returns Ext.layout.SizePolicy An object describing the sizing done by the layout for this item.
-  		*/
+    * @param item Object
+    * @param ownerSizeModel Object
+    * @returns Ext.layout.SizePolicy An object describing the sizing done by the layout for this item.
+    */
   @JSName("getItemSizePolicy")
   var getItemSizePolicy_IBoxLayout: js.UndefOr[
     js.Function2[/* item */ js.UndefOr[js.Any], /* ownerSizeModel */ js.UndefOr[js.Any], ISizePolicy]
@@ -73,7 +73,7 @@ object IBoxLayout {
     extend: String = null,
     finalizeLayout: /* ownerContext */ js.UndefOr[IContextItem] => Unit = null,
     finishedLayout: /* ownerContext */ js.UndefOr[js.Any] => Unit = null,
-    flex: Int | Double = null,
+    flex: js.UndefOr[Double] = js.undefined,
     getContainerSize: (/* ownerContext */ js.UndefOr[IContextItem], /* inDom */ js.UndefOr[Boolean]) => _ = null,
     getElementTarget: () => IElement = null,
     getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
@@ -121,11 +121,11 @@ object IBoxLayout {
     if (configureItem != null) __obj.updateDynamic("configureItem")(js.Any.fromFunction1(configureItem))
     if (defaultMargins != null) __obj.updateDynamic("defaultMargins")(defaultMargins.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (!js.isUndefined(done)) __obj.updateDynamic("done")(done.asInstanceOf[js.Any])
+    if (!js.isUndefined(done)) __obj.updateDynamic("done")(done.get.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (finalizeLayout != null) __obj.updateDynamic("finalizeLayout")(js.Any.fromFunction1(finalizeLayout))
     if (finishedLayout != null) __obj.updateDynamic("finishedLayout")(js.Any.fromFunction1(finishedLayout))
-    if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
+    if (!js.isUndefined(flex)) __obj.updateDynamic("flex")(flex.get.asInstanceOf[js.Any])
     if (getContainerSize != null) __obj.updateDynamic("getContainerSize")(js.Any.fromFunction2(getContainerSize))
     if (getElementTarget != null) __obj.updateDynamic("getElementTarget")(js.Any.fromFunction0(getElementTarget))
     if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
@@ -138,7 +138,7 @@ object IBoxLayout {
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (initLayout != null) __obj.updateDynamic("initLayout")(js.Any.fromFunction0(initLayout))
-    if (!js.isUndefined(isLayout)) __obj.updateDynamic("isLayout")(isLayout.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLayout)) __obj.updateDynamic("isLayout")(isLayout.get.asInstanceOf[js.Any])
     if (isValidParent != null) __obj.updateDynamic("isValidParent")(js.Any.fromFunction3(isValidParent))
     if (itemCls != null) __obj.updateDynamic("itemCls")(itemCls.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
@@ -151,7 +151,7 @@ object IBoxLayout {
     if (renderItems != null) __obj.updateDynamic("renderItems")(js.Any.fromFunction2(renderItems))
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (stretchMaxPartner != null) __obj.updateDynamic("stretchMaxPartner")(stretchMaxPartner.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])

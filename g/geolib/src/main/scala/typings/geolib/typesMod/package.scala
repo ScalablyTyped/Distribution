@@ -17,7 +17,7 @@ package object typesMod {
     js.UndefOr[typings.geolib.typesMod.GeolibAltitudeInputValue]
   ]
   type GeolibInputCoordinates = typings.geolib.typesMod.UserInputCoordinates | typings.geolib.typesMod.GeolibGeoJSONPoint
-  type GeolibInputCoordinatesWithTime = typings.geolib.typesMod.GeolibInputCoordinates with typings.geolib.AnonTime
+  type GeolibInputCoordinatesWithTime = typings.geolib.typesMod.GeolibInputCoordinates with typings.geolib.anon.Time
   type GeolibLatitudeInputValue = scala.Double | java.lang.String
   type GeolibLongitudeInputValue = scala.Double | java.lang.String
   type Timestamp = scala.Double

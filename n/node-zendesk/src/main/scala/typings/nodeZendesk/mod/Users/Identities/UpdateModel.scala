@@ -14,7 +14,7 @@ object UpdateModel {
   def apply(value: String = null, verified: js.UndefOr[Boolean] = js.undefined): UpdateModel = {
     val __obj = js.Dynamic.literal()
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(verified)) __obj.updateDynamic("verified")(verified.asInstanceOf[js.Any])
+    if (!js.isUndefined(verified)) __obj.updateDynamic("verified")(verified.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateModel]
   }
 }

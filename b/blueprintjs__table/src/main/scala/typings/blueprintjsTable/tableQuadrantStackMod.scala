@@ -2,13 +2,14 @@ package typings.blueprintjsTable
 
 import typings.blueprintjsCore.mod.AbstractComponent2
 import typings.blueprintjsCore.propsMod.IProps
+import typings.blueprintjsTable.anon.PartialITableQuadrantStac
 import typings.blueprintjsTable.esmRegionsMod.TableLoadingOption
 import typings.blueprintjsTable.gridMod.Grid
 import typings.blueprintjsTable.tableQuadrantMod.QuadrantType
 import typings.react.mod.EventHandler
 import typings.react.mod.SyntheticEvent
-import typings.react.mod._Global_.JSX.Element
-import typings.std.Event_
+import typings.react.mod.global.JSX.Element
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -142,7 +143,7 @@ object tableQuadrantStackMod extends js.Object {
     /**
       * An optional callback invoked the quadrants are scrolled.
       */
-    var onScroll: js.UndefOr[EventHandler[SyntheticEvent[HTMLElement, Event_]]] = js.native
+    var onScroll: js.UndefOr[EventHandler[SyntheticEvent[HTMLElement, Event]]] = js.native
     /**
       * A callback that receives a `ref` to the main-quadrant element.
       */

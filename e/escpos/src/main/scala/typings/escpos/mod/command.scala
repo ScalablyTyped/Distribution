@@ -1,9 +1,9 @@
 package typings.escpos.mod
 
-import typings.escpos.Anon1
-import typings.escpos.Anon2
-import typings.escpos.Anon3
-import typings.escpos.AnonBARCODEHEIGHTDEFAULT
+import typings.escpos.anon.BARCODEHEIGHTDEFAULT
+import typings.escpos.anon.`1`
+import typings.escpos.anon.`2`
+import typings.escpos.anon.`3`
 import typings.escpos.escposStrings.Backspace
 import typings.escpos.escposStrings.Cancel
 import typings.escpos.escposStrings.Carriagereturn
@@ -148,7 +148,7 @@ object command extends js.Object {
     var BARCODE_UPC_E: InformationseparatorthreekStartofheading = js.native
      // Barcode Height [1-255]
     // Barcode Width  [2-6]
-    var BARCODE_WIDTH: Anon3 = js.native
+    var BARCODE_WIDTH: `3` = js.native
      // Barcode height default=100
     var BARCODE_WIDTH_DEFAULT: InformationseparatorthreewStartofheading = js.native
      // Font type B for HRI barcode chars
@@ -258,7 +258,7 @@ object command extends js.Object {
   
   @js.native
   object MODEL extends js.Object {
-    var QSPRINTER: AnonBARCODEHEIGHTDEFAULT = js.native
+    var QSPRINTER: BARCODEHEIGHTDEFAULT = js.native
   }
   
   @js.native
@@ -342,7 +342,7 @@ object command extends js.Object {
     var TXT_FONT_B: EscapeMStartofheading = js.native
      // Font type B
     var TXT_FONT_C: EscapeMStartoftext = js.native
-    var TXT_HEIGHT: Anon1 = js.native
+    var TXT_HEIGHT: `1` = js.native
      // Bold font ON
     var TXT_ITALIC_OFF: Escape5 = js.native
      // Italic font ON
@@ -353,7 +353,7 @@ object command extends js.Object {
     var TXT_UNDERL_OFF: `Escape-Null` = js.native
      // Underline font OFF
     var TXT_UNDERL_ON: `Escape-Startofheading` = js.native
-    var TXT_WIDTH: Anon2 = js.native
+    var TXT_WIDTH: `2` = js.native
      // Double width & height text
     def TXT_CUSTOM_SIZE(width: js.Any, height: js.Any): js.Any = js.native
   }

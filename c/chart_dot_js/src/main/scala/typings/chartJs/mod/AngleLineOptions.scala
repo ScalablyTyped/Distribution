@@ -16,17 +16,17 @@ object AngleLineOptions {
   @scala.inline
   def apply(
     borderDash: js.Array[Double] = null,
-    borderDashOffset: Int | Double = null,
+    borderDashOffset: js.UndefOr[Double] = js.undefined,
     color: ChartColor = null,
     display: js.UndefOr[Boolean] = js.undefined,
-    lineWidth: Int | Double = null
+    lineWidth: js.UndefOr[Double] = js.undefined
   ): AngleLineOptions = {
     val __obj = js.Dynamic.literal()
     if (borderDash != null) __obj.updateDynamic("borderDash")(borderDash.asInstanceOf[js.Any])
-    if (borderDashOffset != null) __obj.updateDynamic("borderDashOffset")(borderDashOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderDashOffset)) __obj.updateDynamic("borderDashOffset")(borderDashOffset.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AngleLineOptions]
   }
 }

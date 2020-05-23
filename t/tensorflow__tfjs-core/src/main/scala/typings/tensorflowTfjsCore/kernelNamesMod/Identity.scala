@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@tensorflow/tfjs-core/dist/kernel_names", "Identity")
 @js.native
-object Identity
-  extends TopLevel[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Identity]
+object Identity extends TopLevel[/* "Identity" */ String]
 

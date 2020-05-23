@@ -28,14 +28,14 @@ object DeleteDBInstanceMessage {
   @scala.inline
   def apply(
     DBInstanceIdentifier: String,
-    DeleteAutomatedBackups: js.UndefOr[scala.Boolean] = js.undefined,
+    DeleteAutomatedBackups: js.UndefOr[BooleanOptional] = js.undefined,
     FinalDBSnapshotIdentifier: String = null,
-    SkipFinalSnapshot: js.UndefOr[scala.Boolean] = js.undefined
+    SkipFinalSnapshot: js.UndefOr[Boolean] = js.undefined
   ): DeleteDBInstanceMessage = {
     val __obj = js.Dynamic.literal(DBInstanceIdentifier = DBInstanceIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeleteAutomatedBackups)) __obj.updateDynamic("DeleteAutomatedBackups")(DeleteAutomatedBackups.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeleteAutomatedBackups)) __obj.updateDynamic("DeleteAutomatedBackups")(DeleteAutomatedBackups.get.asInstanceOf[js.Any])
     if (FinalDBSnapshotIdentifier != null) __obj.updateDynamic("FinalDBSnapshotIdentifier")(FinalDBSnapshotIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(SkipFinalSnapshot)) __obj.updateDynamic("SkipFinalSnapshot")(SkipFinalSnapshot.asInstanceOf[js.Any])
+    if (!js.isUndefined(SkipFinalSnapshot)) __obj.updateDynamic("SkipFinalSnapshot")(SkipFinalSnapshot.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDBInstanceMessage]
   }
 }

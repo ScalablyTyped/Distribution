@@ -14,9 +14,9 @@ trait ImportClientVpnClientCertificateRevocationListResult extends js.Object {
 
 object ImportClientVpnClientCertificateRevocationListResult {
   @scala.inline
-  def apply(Return: js.UndefOr[scala.Boolean] = js.undefined): ImportClientVpnClientCertificateRevocationListResult = {
+  def apply(Return: js.UndefOr[Boolean] = js.undefined): ImportClientVpnClientCertificateRevocationListResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Return)) __obj.updateDynamic("Return")(Return.asInstanceOf[js.Any])
+    if (!js.isUndefined(Return)) __obj.updateDynamic("Return")(Return.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportClientVpnClientCertificateRevocationListResult]
   }
 }

@@ -17,20 +17,20 @@ trait GetParams extends js.Object {
 object GetParams {
   @scala.inline
   def apply(
-    FromTS: Int | Double = null,
-    Limit: Int | Double = null,
-    Offset: Int | Double = null,
+    FromTS: js.UndefOr[Double] = js.undefined,
+    Limit: js.UndefOr[Double] = js.undefined,
+    Offset: js.UndefOr[Double] = js.undefined,
     StatusCode: js.Array[Double] = null,
     To: String = null,
-    ToTS: Int | Double = null
+    ToTS: js.UndefOr[Double] = js.undefined
   ): GetParams = {
     val __obj = js.Dynamic.literal()
-    if (FromTS != null) __obj.updateDynamic("FromTS")(FromTS.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
-    if (Offset != null) __obj.updateDynamic("Offset")(Offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(FromTS)) __obj.updateDynamic("FromTS")(FromTS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Offset)) __obj.updateDynamic("Offset")(Offset.get.asInstanceOf[js.Any])
     if (StatusCode != null) __obj.updateDynamic("StatusCode")(StatusCode.asInstanceOf[js.Any])
     if (To != null) __obj.updateDynamic("To")(To.asInstanceOf[js.Any])
-    if (ToTS != null) __obj.updateDynamic("ToTS")(ToTS.asInstanceOf[js.Any])
+    if (!js.isUndefined(ToTS)) __obj.updateDynamic("ToTS")(ToTS.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetParams]
   }
 }

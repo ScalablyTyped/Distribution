@@ -28,16 +28,16 @@ object Device {
     path: String = null,
     product: String = null,
     serialNumber: String = null,
-    usage: Int | Double = null,
-    usagePage: Int | Double = null
+    usage: js.UndefOr[Double] = js.undefined,
+    usagePage: js.UndefOr[Double] = js.undefined
   ): Device = {
     val __obj = js.Dynamic.literal(interface = interface.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any], vendorId = vendorId.asInstanceOf[js.Any])
     if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
     if (serialNumber != null) __obj.updateDynamic("serialNumber")(serialNumber.asInstanceOf[js.Any])
-    if (usage != null) __obj.updateDynamic("usage")(usage.asInstanceOf[js.Any])
-    if (usagePage != null) __obj.updateDynamic("usagePage")(usagePage.asInstanceOf[js.Any])
+    if (!js.isUndefined(usage)) __obj.updateDynamic("usage")(usage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(usagePage)) __obj.updateDynamic("usagePage")(usagePage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Device]
   }
 }

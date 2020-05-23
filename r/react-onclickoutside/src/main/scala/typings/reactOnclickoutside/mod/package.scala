@@ -12,7 +12,7 @@ package object mod {
     P, 
     typings.std.Exclude[
       /* keyof P */ java.lang.String, 
-      typings.reactOnclickoutside.reactOnclickoutsideStrings.disableOnClickOutside | typings.reactOnclickoutside.reactOnclickoutsideStrings.enableOnClickOutside
+      /* keyof react-onclickoutside.react-onclickoutside.InjectedOnClickOutProps */ typings.reactOnclickoutside.reactOnclickoutsideStrings.disableOnClickOutside | typings.reactOnclickoutside.reactOnclickoutsideStrings.enableOnClickOutside
     ]
   ]
 }

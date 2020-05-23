@@ -14,9 +14,12 @@ trait ITableCardRow extends js.Object {
 
 object ITableCardRow {
   @scala.inline
-  def apply(cells: js.Array[ITableCardCell] = null, dividerAfter: js.UndefOr[Boolean] = js.undefined): ITableCardRow = {
+  def apply(
+    cells: js.UndefOr[Null | js.Array[ITableCardCell]] = js.undefined,
+    dividerAfter: js.UndefOr[Null | Boolean] = js.undefined
+  ): ITableCardRow = {
     val __obj = js.Dynamic.literal()
-    if (cells != null) __obj.updateDynamic("cells")(cells.asInstanceOf[js.Any])
+    if (!js.isUndefined(cells)) __obj.updateDynamic("cells")(cells.asInstanceOf[js.Any])
     if (!js.isUndefined(dividerAfter)) __obj.updateDynamic("dividerAfter")(dividerAfter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITableCardRow]
   }

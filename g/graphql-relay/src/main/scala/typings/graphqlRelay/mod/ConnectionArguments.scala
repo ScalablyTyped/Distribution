@@ -14,16 +14,16 @@ trait ConnectionArguments extends js.Object {
 object ConnectionArguments {
   @scala.inline
   def apply(
-    after: ConnectionCursor = null,
-    before: ConnectionCursor = null,
-    first: Int | Double = null,
-    last: Int | Double = null
+    after: js.UndefOr[Null | ConnectionCursor] = js.undefined,
+    before: js.UndefOr[Null | ConnectionCursor] = js.undefined,
+    first: js.UndefOr[Null | Double] = js.undefined,
+    last: js.UndefOr[Null | Double] = js.undefined
   ): ConnectionArguments = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (first != null) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
-    if (last != null) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
+    if (!js.isUndefined(after)) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
+    if (!js.isUndefined(before)) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
+    if (!js.isUndefined(first)) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
+    if (!js.isUndefined(last)) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionArguments]
   }
 }

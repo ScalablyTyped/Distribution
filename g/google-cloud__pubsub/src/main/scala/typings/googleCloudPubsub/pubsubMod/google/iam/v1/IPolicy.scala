@@ -17,11 +17,15 @@ trait IPolicy extends js.Object {
 
 object IPolicy {
   @scala.inline
-  def apply(bindings: js.Array[IBinding] = null, etag: Uint8Array = null, version: Int | Double = null): IPolicy = {
+  def apply(
+    bindings: js.UndefOr[Null | js.Array[IBinding]] = js.undefined,
+    etag: js.UndefOr[Null | Uint8Array] = js.undefined,
+    version: js.UndefOr[Null | Double] = js.undefined
+  ): IPolicy = {
     val __obj = js.Dynamic.literal()
-    if (bindings != null) __obj.updateDynamic("bindings")(bindings.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(bindings)) __obj.updateDynamic("bindings")(bindings.asInstanceOf[js.Any])
+    if (!js.isUndefined(etag)) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPolicy]
   }
 }

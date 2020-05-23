@@ -30,7 +30,7 @@ object PaceAjaxOptions {
     val __obj = js.Dynamic.literal()
     if (ignoreURLs != null) __obj.updateDynamic("ignoreURLs")(ignoreURLs.asInstanceOf[js.Any])
     if (trackMethods != null) __obj.updateDynamic("trackMethods")(trackMethods.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackWebSockets)) __obj.updateDynamic("trackWebSockets")(trackWebSockets.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackWebSockets)) __obj.updateDynamic("trackWebSockets")(trackWebSockets.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaceAjaxOptions]
   }
 }

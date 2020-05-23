@@ -12,9 +12,9 @@ trait PsbtOptsOptional extends js.Object {
 
 object PsbtOptsOptional {
   @scala.inline
-  def apply(maximumFeeRate: Int | Double = null, network: Network = null): PsbtOptsOptional = {
+  def apply(maximumFeeRate: js.UndefOr[Double] = js.undefined, network: Network = null): PsbtOptsOptional = {
     val __obj = js.Dynamic.literal()
-    if (maximumFeeRate != null) __obj.updateDynamic("maximumFeeRate")(maximumFeeRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumFeeRate)) __obj.updateDynamic("maximumFeeRate")(maximumFeeRate.get.asInstanceOf[js.Any])
     if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
     __obj.asInstanceOf[PsbtOptsOptional]
   }

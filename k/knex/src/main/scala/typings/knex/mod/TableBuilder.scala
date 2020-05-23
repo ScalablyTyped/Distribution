@@ -1,6 +1,6 @@
 package typings.knex.mod
 
-import typings.knex.ReadonlyuseTzbooleanpreci
+import typings.knex.anon.ReadonlyuseTzbooleanpreci
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

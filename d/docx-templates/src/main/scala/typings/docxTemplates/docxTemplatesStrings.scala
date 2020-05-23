@@ -11,9 +11,19 @@ object docxTemplatesStrings {
   @js.native
   sealed trait XML extends js.Object
   
+  @js.native
+  sealed trait errors extends js.Object
+  
+  @js.native
+  sealed trait success extends js.Object
+  
   @scala.inline
   def JS: JS = "JS".asInstanceOf[JS]
   @scala.inline
   def XML: XML = "XML".asInstanceOf[XML]
+  @scala.inline
+  def errors: errors = "errors".asInstanceOf[errors]
+  @scala.inline
+  def success: success = "success".asInstanceOf[success]
 }
 

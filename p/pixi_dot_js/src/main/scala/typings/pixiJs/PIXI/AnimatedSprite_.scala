@@ -1,6 +1,5 @@
 package typings.pixiJs.PIXI
 
-import typings.pixiJs.PIXI.AnimatedSprite.FrameObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,11 +37,8 @@ import scala.scalajs.js.annotation._
   * @extends PIXI.Sprite
   * @memberof PIXI
   */
-@JSGlobal("PIXI.AnimatedSprite")
 @js.native
-class AnimatedSprite_ protected () extends Sprite {
-  def this(textures: js.Array[FrameObject | Texture]) = this()
-  def this(textures: js.Array[FrameObject | Texture], autoUpdate: Boolean) = this()
+trait AnimatedSprite_ extends Sprite {
   /**
     * The speed that the AnimatedSprite will play at. Higher is faster, lower is slower.
     *
@@ -50,6 +46,12 @@ class AnimatedSprite_ protected () extends Sprite {
     * @default 1
     */
   var animationSpeed: Double = js.native
+  /**
+    * Whether to use PIXI.Ticker.shared to auto update animation time
+    *
+    * @member {boolean}
+    */
+  var autoUpdate: Boolean = js.native
   /**
     * The AnimatedSprites current frame index.
     *
@@ -67,7 +69,7 @@ class AnimatedSprite_ protected () extends Sprite {
   /**
     * Indicates if the AnimatedSprite is currently playing.
     *
-    * @member {boolean} PIXI.AnimatedSprite#playing
+    * @member {boolean}
     * @readonly
     */
   val playing: Boolean = js.native
@@ -139,5 +141,11 @@ class AnimatedSprite_ protected () extends Sprite {
     *
     */
   def stop(): Unit = js.native
+  /**
+    * Updates the object transform for rendering.
+    *
+    * @param {number} deltaTime - Time since last tick.
+    */
+  def update(deltaTime: Double): Unit = js.native
 }
 

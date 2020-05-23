@@ -1,5 +1,6 @@
 package typings.ionic
 
+import typings.ionic.anon.PartialCommandMetadata
 import typings.ionic.definitionsMod.BaseBuildOptions
 import typings.ionic.definitionsMod.BuildOptions
 import typings.ionic.definitionsMod.CommandMetadataOption
@@ -9,12 +10,6 @@ import typings.ionic.definitionsMod.IProject
 import typings.ionic.definitionsMod.IShell
 import typings.ionic.definitionsMod.NpmClient
 import typings.ionic.definitionsMod.Runner
-import typings.ionic.ionicBooleans.`true`
-import typings.ionic.ionicStrings.Yarn
-import typings.ionic.ionicStrings.`npm CLI`
-import typings.ionic.ionicStrings.ionicColonbuild
-import typings.ionic.ionicStrings.npm
-import typings.ionic.ionicStrings.yarn_
 import typings.ionicCliFramework.definitionsMod.CommandLineInputs
 import typings.ionicCliFramework.definitionsMod.CommandLineOptions
 import typings.ionicCliFrameworkPrompts.mod.PromptModule
@@ -104,36 +99,20 @@ object libBuildMod extends js.Object {
   }
   
   @js.native
-  class NpmBuildCLI () extends PkgManagerBuildCLI {
-    @JSName("name")
-    val name_NpmBuildCLI: `npm CLI` = js.native
-    @JSName("pkg")
-    val pkg_NpmBuildCLI: npm = js.native
-    @JSName("program")
-    val program_NpmBuildCLI: npm = js.native
-  }
+  class NpmBuildCLI () extends PkgManagerBuildCLI
   
   @js.native
   trait PkgManagerBuildCLI extends BuildCLI[BaseBuildOptions] {
-    @JSName("global")
-    val global_PkgManagerBuildCLI: `true` = js.native
     @JSName("program")
     val program_PkgManagerBuildCLI: NpmClient = js.native
     @JSName("script")
-    val script_PkgManagerBuildCLI: ionicColonbuild = js.native
+    val script_PkgManagerBuildCLI: /* "ionic:build" */ String = js.native
   }
   
   @js.native
-  class YarnBuildCLI () extends PkgManagerBuildCLI {
-    @JSName("name")
-    val name_YarnBuildCLI: Yarn = js.native
-    @JSName("pkg")
-    val pkg_YarnBuildCLI: yarn_ = js.native
-    @JSName("program")
-    val program_YarnBuildCLI: yarn_ = js.native
-  }
+  class YarnBuildCLI () extends PkgManagerBuildCLI
   
-  val BUILD_SCRIPT: ionicColonbuild = js.native
+  val BUILD_SCRIPT: /* "ionic:build" */ String = js.native
   val COMMON_BUILD_COMMAND_OPTIONS: js.Array[CommandMetadataOption] = js.native
 }
 

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "j5-io-types" : "2.5.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "j5-io-types" : "2.5.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

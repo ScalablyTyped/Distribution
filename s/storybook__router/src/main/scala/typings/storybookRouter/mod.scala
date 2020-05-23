@@ -3,7 +3,9 @@ package typings.storybookRouter
 import typings.reachRouter.mod.LocationProviderProps
 import typings.reachRouter.mod.NavigateFn
 import typings.react.mod.Component
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
+import typings.storybookRouter.anon.Path
+import typings.storybookRouter.anon.Search
 import typings.storybookRouter.routerMod.QueryLinkProps
 import typings.storybookRouter.routerMod.QueryLocationProps
 import typings.storybookRouter.routerMod.QueryMatchProps
@@ -22,11 +24,11 @@ object mod extends js.Object {
     extends Component[LocationProviderProps, js.Object, js.Any]
   
   val navigate: NavigateFn = js.native
-  def getMatch(current: String, target: String): AnonPath = js.native
-  def getMatch(current: String, target: String, startsWith: js.Any): AnonPath = js.native
+  def getMatch(current: String, target: String): Path = js.native
+  def getMatch(current: String, target: String, startsWith: js.Any): Path = js.native
   def parsePath(): StoryData = js.native
   def parsePath(path: String): StoryData = js.native
-  def queryFromLocation(location: AnonSearch): Query = js.native
+  def queryFromLocation(location: Search): Query = js.native
   def queryFromString(s: String): Query = js.native
   def stringifyQuery(query: Query): js.Any = js.native
   /* import warning: parser.TsParser#tsDeclVar Dropped IArray(parseKind, sanitize, storyNameFromExport) */ def toId(kind: String, name: String): String = js.native

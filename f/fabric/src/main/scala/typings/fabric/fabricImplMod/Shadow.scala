@@ -14,15 +14,15 @@ class Shadow () extends IShadowOptions {
   def initialize(options: String): Shadow = js.native
   def initialize(options: IShadowOptions): Shadow = js.native
   /**
-  	 * Returns object representation of a shadow
-  	 * @return {Object} Object representation of a shadow instance
-  	 */
+    * Returns object representation of a shadow
+    * @return {Object} Object representation of a shadow instance
+    */
   def toObject(): js.Any = js.native
   /**
-  	 * Returns SVG representation of a shadow
-  	 * @param {fabric.Object} object
-  	 * @return {String} SVG representation of a shadow
-  	 */
+    * Returns SVG representation of a shadow
+    * @param {fabric.Object} object
+    * @return {String} SVG representation of a shadow
+    */
   def toSVG(`object`: Object): String = js.native
 }
 
@@ -31,11 +31,11 @@ class Shadow () extends IShadowOptions {
 @js.native
 object Shadow extends js.Object {
   /**
-  	 * Regex matching shadow offsetX, offsetY and blur (ex: "2px 2px 10px rgba(0,0,0,0.2)", "rgb(0,255,0) 2px 2px")
-  	 * @static
-  	 * @field
-  	 * @memberOf fabric.Shadow
-  	 */
+    * Regex matching shadow offsetX, offsetY and blur (ex: "2px 2px 10px rgba(0,0,0,0.2)", "rgb(0,255,0) 2px 2px")
+    * @static
+    * @field
+    * @memberOf fabric.Shadow
+    */
   var reOffsetsAndBlur: RegExp = js.native
 }
 

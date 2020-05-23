@@ -5,25 +5,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Interface for alert dialog options.
-		 */
+  * Interface for alert dialog options.
+  */
 trait AlertDialogOptions extends js.Object {
   /**
-  			 * Height of the alert dialog in pixels.
-  			 */
+    * Height of the alert dialog in pixels.
+    */
   var height: js.UndefOr[Double] = js.undefined
   /**
-  			 * Width of the alert dialog pixels.
-  			 */
+    * Width of the alert dialog pixels.
+    */
   var width: js.UndefOr[Double] = js.undefined
 }
 
 object AlertDialogOptions {
   @scala.inline
-  def apply(height: Int | Double = null, width: Int | Double = null): AlertDialogOptions = {
+  def apply(height: js.UndefOr[Double] = js.undefined, width: js.UndefOr[Double] = js.undefined): AlertDialogOptions = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlertDialogOptions]
   }
 }

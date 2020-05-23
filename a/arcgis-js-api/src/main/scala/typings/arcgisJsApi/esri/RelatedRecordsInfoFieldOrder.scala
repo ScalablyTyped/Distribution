@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.asc_
 import typings.arcgisJsApi.arcgisJsApiStrings.desc_
 import scala.scalajs.js
@@ -24,8 +23,4 @@ trait RelatedRecordsInfoFieldOrder
     */
   var order: asc_ | desc_ = js.native
 }
-
-@JSGlobal("__esri.RelatedRecordsInfoFieldOrder")
-@js.native
-object RelatedRecordsInfoFieldOrder extends TopLevel[RelatedRecordsInfoFieldOrderConstructor]
 

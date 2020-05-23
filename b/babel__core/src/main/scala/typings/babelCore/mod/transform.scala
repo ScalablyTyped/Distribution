@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
 object transform extends js.Object {
   def apply(code: String): BabelFileResult | Null = js.native
   def apply(code: String, callback: FileResultCallback): Unit = js.native
-  def apply(code: String, opts: js.UndefOr[scala.Nothing], callback: FileResultCallback): Unit = js.native
+  def apply(code: String, opts: js.UndefOr[TransformOptions], callback: FileResultCallback): Unit = js.native
   def apply(code: String, opts: TransformOptions): BabelFileResult | Null = js.native
-  def apply(code: String, opts: TransformOptions, callback: FileResultCallback): Unit = js.native
 }
 

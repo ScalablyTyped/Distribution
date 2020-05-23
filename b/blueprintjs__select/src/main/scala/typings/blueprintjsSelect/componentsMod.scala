@@ -1,6 +1,9 @@
 package typings.blueprintjsSelect
 
 import org.scalablytyped.runtime.Instantiable1
+import typings.blueprintjsSelect.anon.Disabled
+import typings.blueprintjsSelect.anon.Fill
+import typings.blueprintjsSelect.anon.PartialISuggestPropsany
 import typings.blueprintjsSelect.listItemsUtilsMod.ICreateNewItem
 import typings.blueprintjsSelect.multiSelectMod.IMultiSelectProps
 import typings.blueprintjsSelect.omnibarMod.IOmnibarProps
@@ -56,7 +59,7 @@ object componentsMod extends js.Object {
   /* static members */
   @js.native
   object MultiSelect extends js.Object {
-    var defaultProps: AnonFill = js.native
+    var defaultProps: Fill = js.native
     var displayName: String = js.native
     def ofType[T](): Instantiable1[
         /* props */ IMultiSelectProps[T], 
@@ -74,7 +77,7 @@ object componentsMod extends js.Object {
   /* static members */
   @js.native
   object QueryList extends js.Object {
-    var defaultProps: AnonDisabled = js.native
+    var defaultProps: Disabled = js.native
     var displayName: String = js.native
     def ofType[T](): Instantiable1[
         /* props */ IQueryListProps[T], 

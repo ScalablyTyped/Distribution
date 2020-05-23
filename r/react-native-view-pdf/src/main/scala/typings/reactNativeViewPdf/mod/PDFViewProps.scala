@@ -31,8 +31,8 @@ object PDFViewProps {
   @scala.inline
   def apply(
     resource: String,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    fadeInDuration: Int | Double = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    fadeInDuration: js.UndefOr[Double] = js.undefined,
     fileFrom: bundle | documentsDirectory = null,
     onError: /* error */ Error => Unit = null,
     onLoad: () => Unit = null,
@@ -44,7 +44,7 @@ object PDFViewProps {
   ): PDFViewProps = {
     val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (fadeInDuration != null) __obj.updateDynamic("fadeInDuration")(fadeInDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(fadeInDuration)) __obj.updateDynamic("fadeInDuration")(fadeInDuration.get.asInstanceOf[js.Any])
     if (fileFrom != null) __obj.updateDynamic("fileFrom")(fileFrom.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction0(onLoad))

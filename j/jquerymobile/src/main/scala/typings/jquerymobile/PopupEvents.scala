@@ -1,6 +1,6 @@
 package typings.jquerymobile
 
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,9 +14,9 @@ trait PopupEvents extends js.Object {
 object PopupEvents {
   @scala.inline
   def apply(
-    popupafterclose: (/* event */ Event_, /* ui */ js.Any) => Unit = null,
-    popupafteropen: (/* event */ Event_, /* ui */ js.Any) => Unit = null,
-    popupbeforeposition: (/* event */ Event_, /* ui */ js.Any) => Unit = null
+    popupafterclose: (/* event */ Event, /* ui */ js.Any) => Unit = null,
+    popupafteropen: (/* event */ Event, /* ui */ js.Any) => Unit = null,
+    popupbeforeposition: (/* event */ Event, /* ui */ js.Any) => Unit = null
   ): PopupEvents = {
     val __obj = js.Dynamic.literal()
     if (popupafterclose != null) __obj.updateDynamic("popupafterclose")(js.Any.fromFunction2(popupafterclose))

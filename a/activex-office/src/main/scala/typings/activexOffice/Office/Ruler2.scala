@@ -9,9 +9,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.Ruler2")
 @js.native
-class Ruler2 protected () extends js.Object {
+trait Ruler2 extends js.Object {
   val Application: js.Any = js.native
   val Creator: Double = js.native
   @JSName("Levels")

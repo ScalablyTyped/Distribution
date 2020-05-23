@@ -1,5 +1,7 @@
 package typings.geodesy
 
+import typings.geodesy.anon.Distance
+import typings.geodesy.anon.FinalBearing
 import typings.geodesy.dmsMod.Precision
 import typings.geodesy.mod.Dp
 import typings.geodesy.mod.Format
@@ -19,12 +21,12 @@ object latlonEllipsoidalVincentyMod extends js.Object {
   trait LatLonEllipsoidalVincenty
     extends typings.geodesy.latlonEllipsoidalMod.default {
     def destinationPoint(distance: Double, initialBearing: Double): LatLonEllipsoidalVincenty = js.native
-    def direct(distance: Double, initialBearing: Double): AnonFinalBearing = js.native
+    def direct(distance: Double, initialBearing: Double): FinalBearing = js.native
     def distanceTo(point: LatLonEllipsoidalVincenty): Double = js.native
     def finalBearingOn(distance: Double, initialBearing: Double): Double = js.native
     def finalBearingTo(point: LatLonEllipsoidalVincenty): Double = js.native
     def initialBearingTo(point: LatLonEllipsoidalVincenty): Double = js.native
-    def inverse(point: LatLonEllipsoidalVincenty): AnonDistance = js.native
+    def inverse(point: LatLonEllipsoidalVincenty): Distance = js.native
   }
   
   @js.native

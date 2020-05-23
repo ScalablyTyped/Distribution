@@ -27,7 +27,7 @@ object ChartSeriesItemErrorBars {
   ): ChartSeriesItemErrorBars = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(endCaps)) __obj.updateDynamic("endCaps")(endCaps.asInstanceOf[js.Any])
+    if (!js.isUndefined(endCaps)) __obj.updateDynamic("endCaps")(endCaps.get.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (visual != null) __obj.updateDynamic("visual")(visual.asInstanceOf[js.Any])

@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,11 @@ trait VREyeParameters extends js.Object {
   val renderWidth: Double
 }
 
-@JSGlobal("VREyeParameters")
-@js.native
-object VREyeParameters extends Instantiable0[VREyeParameters]
+object VREyeParameters {
+  @scala.inline
+  def apply(fieldOfView: VRFieldOfView, offset: Float32Array, renderHeight: Double, renderWidth: Double): VREyeParameters = {
+    val __obj = js.Dynamic.literal(fieldOfView = fieldOfView.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], renderHeight = renderHeight.asInstanceOf[js.Any], renderWidth = renderWidth.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VREyeParameters]
+  }
+}
 

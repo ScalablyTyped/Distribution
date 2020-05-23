@@ -14,9 +14,9 @@ trait SlotMigration extends js.Object {
 
 object SlotMigration {
   @scala.inline
-  def apply(ProgressPercentage: Int | scala.Double = null): SlotMigration = {
+  def apply(ProgressPercentage: js.UndefOr[Double] = js.undefined): SlotMigration = {
     val __obj = js.Dynamic.literal()
-    if (ProgressPercentage != null) __obj.updateDynamic("ProgressPercentage")(ProgressPercentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(ProgressPercentage)) __obj.updateDynamic("ProgressPercentage")(ProgressPercentage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlotMigration]
   }
 }

@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.choiceGroupOptionTypesMod
 
-import typings.officeUiFabricReact.AnonHeightWidth
+import typings.officeUiFabricReact.anon.HeightWidth
 import typings.uifabricStyling.ithemeMod.ITheme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,7 +23,7 @@ trait IChoiceGroupOptionStyleProps extends js.Object {
     * Image sizes used when `hasImage` or `hasIcon` style props are enabled.
     * @defaultvalue \{height: 32, width: 32\}
     */
-  var imageSize: js.UndefOr[AnonHeightWidth] = js.undefined
+  var imageSize: js.UndefOr[HeightWidth] = js.undefined
   /** Theme provided by High-Order Component. */
   var theme: ITheme
 }
@@ -38,15 +38,15 @@ object IChoiceGroupOptionStyleProps {
     hasIcon: js.UndefOr[Boolean] = js.undefined,
     hasImage: js.UndefOr[Boolean] = js.undefined,
     imageIsLarge: js.UndefOr[Boolean] = js.undefined,
-    imageSize: AnonHeightWidth = null
+    imageSize: HeightWidth = null
   ): IChoiceGroupOptionStyleProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasIcon)) __obj.updateDynamic("hasIcon")(hasIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasImage)) __obj.updateDynamic("hasImage")(hasImage.asInstanceOf[js.Any])
-    if (!js.isUndefined(imageIsLarge)) __obj.updateDynamic("imageIsLarge")(imageIsLarge.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasIcon)) __obj.updateDynamic("hasIcon")(hasIcon.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasImage)) __obj.updateDynamic("hasImage")(hasImage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageIsLarge)) __obj.updateDynamic("imageIsLarge")(imageIsLarge.get.asInstanceOf[js.Any])
     if (imageSize != null) __obj.updateDynamic("imageSize")(imageSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChoiceGroupOptionStyleProps]
   }

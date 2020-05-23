@@ -1,8 +1,8 @@
 package typings.reactAddonsTestUtils.mod
 
 import typings.std.Date
+import typings.std.Event
 import typings.std.EventTarget
-import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait OptionalEventProperties extends js.Object {
   var defaultPrevented: js.UndefOr[Boolean] = js.undefined
   var eventPhase: js.UndefOr[Double] = js.undefined
   var isTrusted: js.UndefOr[Boolean] = js.undefined
-  var nativeEvent: js.UndefOr[Event_] = js.undefined
+  var nativeEvent: js.UndefOr[Event] = js.undefined
   var preventDefault: js.UndefOr[js.Function0[Unit]] = js.undefined
   var stopPropagation: js.UndefOr[js.Function0[Unit]] = js.undefined
   var target: js.UndefOr[EventTarget] = js.undefined
@@ -29,9 +29,9 @@ object OptionalEventProperties {
     cancelable: js.UndefOr[Boolean] = js.undefined,
     currentTarget: EventTarget = null,
     defaultPrevented: js.UndefOr[Boolean] = js.undefined,
-    eventPhase: Int | Double = null,
+    eventPhase: js.UndefOr[Double] = js.undefined,
     isTrusted: js.UndefOr[Boolean] = js.undefined,
-    nativeEvent: Event_ = null,
+    nativeEvent: Event = null,
     preventDefault: () => Unit = null,
     stopPropagation: () => Unit = null,
     target: EventTarget = null,
@@ -39,12 +39,12 @@ object OptionalEventProperties {
     `type`: String = null
   ): OptionalEventProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
+    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.get.asInstanceOf[js.Any])
     if (currentTarget != null) __obj.updateDynamic("currentTarget")(currentTarget.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultPrevented)) __obj.updateDynamic("defaultPrevented")(defaultPrevented.asInstanceOf[js.Any])
-    if (eventPhase != null) __obj.updateDynamic("eventPhase")(eventPhase.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTrusted)) __obj.updateDynamic("isTrusted")(isTrusted.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultPrevented)) __obj.updateDynamic("defaultPrevented")(defaultPrevented.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(eventPhase)) __obj.updateDynamic("eventPhase")(eventPhase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTrusted)) __obj.updateDynamic("isTrusted")(isTrusted.get.asInstanceOf[js.Any])
     if (nativeEvent != null) __obj.updateDynamic("nativeEvent")(nativeEvent.asInstanceOf[js.Any])
     if (preventDefault != null) __obj.updateDynamic("preventDefault")(js.Any.fromFunction0(preventDefault))
     if (stopPropagation != null) __obj.updateDynamic("stopPropagation")(js.Any.fromFunction0(stopPropagation))

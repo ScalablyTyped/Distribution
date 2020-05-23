@@ -20,7 +20,7 @@ trait ExpandChoiceOptions[T /* <: Answers */] extends ChoiceOptions[T] {
 
 object ExpandChoiceOptions {
   @scala.inline
-  def apply[T /* <: Answers */](
+  def apply[T](
     extra: js.Any = null,
     key: String = null,
     name: String = null,

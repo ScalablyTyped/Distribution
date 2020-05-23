@@ -1,6 +1,6 @@
 package typings.connectRedis.mod
 
-import typings.expressSession.mod._Global_.Express.SessionData
+import typings.expressSession.mod.global.Express.SessionData
 import typings.ioredis.mod.Redis
 import typings.redis.mod.RedisClient
 import typings.std.JSON
@@ -32,15 +32,15 @@ object RedisStoreOptions {
   @scala.inline
   def apply(
     client: RedisClient | Redis = null,
-    db: Int | Double = null,
+    db: js.UndefOr[Double] = js.undefined,
     disableTTL: js.UndefOr[Boolean] = js.undefined,
     disableTouch: js.UndefOr[Boolean] = js.undefined,
     host: String = null,
     logErrors: Boolean | (js.Function1[/* error */ String, Unit]) = null,
     pass: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     prefix: String = null,
-    scanCount: Int | Double = null,
+    scanCount: js.UndefOr[Double] = js.undefined,
     serializer: Serializer | JSON = null,
     socket: String = null,
     ttl: Double | String | (js.Function3[/* store */ RedisStore, /* sess */ SessionData, /* sid */ String, Double]) = null,
@@ -49,19 +49,19 @@ object RedisStoreOptions {
   ): RedisStoreOptions = {
     val __obj = js.Dynamic.literal()
     if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
-    if (db != null) __obj.updateDynamic("db")(db.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableTTL)) __obj.updateDynamic("disableTTL")(disableTTL.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableTouch)) __obj.updateDynamic("disableTouch")(disableTouch.asInstanceOf[js.Any])
+    if (!js.isUndefined(db)) __obj.updateDynamic("db")(db.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableTTL)) __obj.updateDynamic("disableTTL")(disableTTL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableTouch)) __obj.updateDynamic("disableTouch")(disableTouch.get.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (logErrors != null) __obj.updateDynamic("logErrors")(logErrors.asInstanceOf[js.Any])
     if (pass != null) __obj.updateDynamic("pass")(pass.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (scanCount != null) __obj.updateDynamic("scanCount")(scanCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(scanCount)) __obj.updateDynamic("scanCount")(scanCount.get.asInstanceOf[js.Any])
     if (serializer != null) __obj.updateDynamic("serializer")(serializer.asInstanceOf[js.Any])
     if (socket != null) __obj.updateDynamic("socket")(socket.asInstanceOf[js.Any])
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
-    if (!js.isUndefined(unref)) __obj.updateDynamic("unref")(unref.asInstanceOf[js.Any])
+    if (!js.isUndefined(unref)) __obj.updateDynamic("unref")(unref.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedisStoreOptions]
   }

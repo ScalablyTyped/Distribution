@@ -5,10 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides data for an app navigation event. */
-@JSGlobal("Windows.UI.WebUI.WebUINavigatedEventArgs")
-@js.native
-abstract class WebUINavigatedEventArgs () extends js.Object {
+trait WebUINavigatedEventArgs extends js.Object {
   /** Gets the app navigation operation. */
-  var navigatedOperation: WebUINavigatedOperation = js.native
+  var navigatedOperation: WebUINavigatedOperation
+}
+
+object WebUINavigatedEventArgs {
+  @scala.inline
+  def apply(navigatedOperation: WebUINavigatedOperation): WebUINavigatedEventArgs = {
+    val __obj = js.Dynamic.literal(navigatedOperation = navigatedOperation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebUINavigatedEventArgs]
+  }
 }
 

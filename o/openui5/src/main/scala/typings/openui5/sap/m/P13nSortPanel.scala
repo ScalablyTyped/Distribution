@@ -4,19 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.m.P13nSortPanel")
 @js.native
-class P13nSortPanel protected () extends P13nPanel {
-  /**
-    * Constructor for a new P13nSortPanel.Accepts an object literal <code>mSettings</code> that defines
-    * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
-    * sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the settings
-    * object.
-    * @param sId id for the new control, generated automatically if no id is given
-    * @param mSettings initial settings for the new control
-    */
-  def this(sId: String) = this()
-  def this(sId: String, mSettings: js.Any) = this()
+trait P13nSortPanel extends P13nPanel {
   /**
     * Adds some sortItem to the aggregation <code>sortItems</code>.
     * @since 1.26

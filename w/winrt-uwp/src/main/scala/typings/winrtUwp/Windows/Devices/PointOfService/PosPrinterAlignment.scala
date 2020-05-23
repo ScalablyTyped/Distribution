@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.PointOfService
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object PosPrinterAlignment extends js.Object {
   /** Text is right-aligned. */
   @js.native
   sealed trait right extends PosPrinterAlignment
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PosPrinterAlignment with Double] = js.native
-  /* 1 */ @js.native
-  object center extends TopLevel[center with Double]
-  
-  /* 0 */ @js.native
-  object left extends TopLevel[left with Double]
-  
-  /* 2 */ @js.native
-  object right extends TopLevel[right with Double]
   
 }
 

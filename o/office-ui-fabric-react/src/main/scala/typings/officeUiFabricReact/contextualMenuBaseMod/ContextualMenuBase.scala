@@ -15,6 +15,7 @@ class ContextualMenuBase protected ()
   var _async: js.Any = js.native
   var _cancelSubMenuTimer: js.Any = js.native
   var _classNames: js.Any = js.native
+  var _defaultMenuItemRenderer: js.Any = js.native
   var _enterTimerId: js.Any = js.native
   var _events: js.Any = js.native
   var _executeItemClick: js.Any = js.native
@@ -25,6 +26,7 @@ class ContextualMenuBase protected ()
     * @param items - The items to look for the key
     */
   var _findItemByKeyFromItems: js.Any = js.native
+  var _focusingPreviousElement: js.Any = js.native
   /**
     * Gets the focusZoneDirection by using the arrowDirection if specified,
     * the direction specificed in the focusZoneProps, or defaults to FocusZoneDirection.vertical
@@ -39,7 +41,6 @@ class ContextualMenuBase protected ()
     * Returns true if the key for the event is alt (Mac option) or meta (Mac command).
     */
   var _isAltOrMeta: js.Any = js.native
-  var _isFocusingPreviousElement: js.Any = js.native
   /**
     * Return whether the contextual menu is hidden.
     * Undefined value for hidden is equivalent to hidden being false.
@@ -95,6 +96,10 @@ class ContextualMenuBase protected ()
   var _renderButtonItem: js.Any = js.native
   var _renderHeaderMenuItem: js.Any = js.native
   var _renderListItem: js.Any = js.native
+  /**
+    * !!!IMPORTANT!!! Avoid mutating `item: IContextualMenuItem` argument. It will
+    * cause the menu items to always re-render because the component update is based on shallow comparison.
+    */
   var _renderMenuItem: js.Any = js.native
   var _renderNormalItem: js.Any = js.native
   var _renderSectionItem: js.Any = js.native

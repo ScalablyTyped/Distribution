@@ -1,12 +1,12 @@
 package typings.sendmail.mod
 
-import typings.sendmail.AnonContent
+import typings.sendmail.anon.Content
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MailInput extends js.Object {
-  var attachments: js.UndefOr[js.Array[AnonContent]] = js.undefined
+  var attachments: js.UndefOr[js.Array[Content]] = js.undefined
   var bcc: js.UndefOr[String] = js.undefined
   var cc: js.UndefOr[String] = js.undefined
   var charset: js.UndefOr[String] = js.undefined
@@ -29,7 +29,7 @@ object MailInput {
     from: String,
     subject: String,
     to: String,
-    attachments: js.Array[AnonContent] = null,
+    attachments: js.Array[Content] = null,
     bcc: String = null,
     cc: String = null,
     charset: String = null,

@@ -15,8 +15,8 @@ trait ISorter extends IBase {
   /** [Config Option] (String) */
   var root: js.UndefOr[String] = js.undefined
   /** [Method] Set the sorting direction for this sorter
-  		* @param direction String The direction to sort in. Should be either 'ASC' or 'DESC'.
-  		*/
+    * @param direction String The direction to sort in. Should be either 'ASC' or 'DESC'.
+    */
   var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (Function) */
   var sorterFn: js.UndefOr[js.Any] = js.undefined
@@ -25,8 +25,8 @@ trait ISorter extends IBase {
   /** [Config Option] (Function) */
   var transform: js.UndefOr[js.Any] = js.undefined
   /** [Method] Update the sort function for this sorter
-  		* @param fn Function A new sorter function for this sorter. If not specified it will use the default sorting function.
-  		*/
+    * @param fn Function A new sorter function for this sorter. If not specified it will use the default sorting function.
+    */
   var updateSortFunction: js.UndefOr[js.Function1[/* fn */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -76,7 +76,7 @@ object ISorter {
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setDirection != null) __obj.updateDynamic("setDirection")(js.Any.fromFunction1(setDirection))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (sorterFn != null) __obj.updateDynamic("sorterFn")(sorterFn.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (toggle != null) __obj.updateDynamic("toggle")(js.Any.fromFunction0(toggle))

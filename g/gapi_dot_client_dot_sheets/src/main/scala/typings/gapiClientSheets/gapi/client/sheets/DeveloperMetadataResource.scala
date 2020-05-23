@@ -1,9 +1,8 @@
 package typings.gapiClientSheets.gapi.client.sheets
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientSheets.AnonAccesstoken
-import typings.gapiClientSheets.AnonAlt
-import typings.gapiClientSheets.AnonCallback
+import typings.gapiClientSheets.anon.Accesstoken
+import typings.gapiClientSheets.anon.Alt
+import typings.gapiClientSheets.anon.Callback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,8 +14,8 @@ trait DeveloperMetadataResource extends js.Object {
     * The caller must specify the spreadsheet ID and the developer metadata's
     * unique metadataId.
     */
-  def get(): Request_[DeveloperMetadata] = js.native
-  def get(request: AnonAccesstoken): Request_[DeveloperMetadata] = js.native
+  def get(): typings.gapiClient.gapi.client.Request[DeveloperMetadata] = js.native
+  def get(request: Accesstoken): typings.gapiClient.gapi.client.Request[DeveloperMetadata] = js.native
   /**
     * Returns all developer metadata matching the specified DataFilter.
     * If the provided DataFilter represents a DeveloperMetadataLookup object,
@@ -24,7 +23,7 @@ trait DeveloperMetadataResource extends js.Object {
     * DataFilter represents a location in a spreadsheet, this will return all
     * developer metadata associated with locations intersecting that region.
     */
-  def search(request: AnonAlt): Request_[SearchDeveloperMetadataResponse] = js.native
-  def search(request: AnonCallback, body: SearchDeveloperMetadataRequest): Request_[SearchDeveloperMetadataResponse] = js.native
+  def search(request: Alt): typings.gapiClient.gapi.client.Request[SearchDeveloperMetadataResponse] = js.native
+  def search(request: Callback, body: SearchDeveloperMetadataRequest): typings.gapiClient.gapi.client.Request[SearchDeveloperMetadataResponse] = js.native
 }
 

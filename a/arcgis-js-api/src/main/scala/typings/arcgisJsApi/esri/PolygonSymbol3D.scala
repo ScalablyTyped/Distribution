@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`polygon-3d`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,8 +20,4 @@ trait PolygonSymbol3D
   @JSName("type")
   val type_PolygonSymbol3D: `polygon-3d` = js.native
 }
-
-@JSGlobal("__esri.PolygonSymbol3D")
-@js.native
-object PolygonSymbol3D extends TopLevel[PolygonSymbol3DConstructor]
 

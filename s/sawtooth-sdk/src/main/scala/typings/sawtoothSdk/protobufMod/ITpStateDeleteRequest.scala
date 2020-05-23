@@ -13,10 +13,13 @@ trait ITpStateDeleteRequest extends js.Object {
 
 object ITpStateDeleteRequest {
   @scala.inline
-  def apply(addresses: js.Array[String] = null, contextId: String = null): ITpStateDeleteRequest = {
+  def apply(
+    addresses: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    contextId: js.UndefOr[Null | String] = js.undefined
+  ): ITpStateDeleteRequest = {
     val __obj = js.Dynamic.literal()
-    if (addresses != null) __obj.updateDynamic("addresses")(addresses.asInstanceOf[js.Any])
-    if (contextId != null) __obj.updateDynamic("contextId")(contextId.asInstanceOf[js.Any])
+    if (!js.isUndefined(addresses)) __obj.updateDynamic("addresses")(addresses.asInstanceOf[js.Any])
+    if (!js.isUndefined(contextId)) __obj.updateDynamic("contextId")(contextId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITpStateDeleteRequest]
   }
 }

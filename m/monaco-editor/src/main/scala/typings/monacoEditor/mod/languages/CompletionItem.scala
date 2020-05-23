@@ -1,6 +1,6 @@
 package typings.monacoEditor.mod.languages
 
-import typings.monacoEditor.AnonInsert
+import typings.monacoEditor.anon.Insert
 import typings.monacoEditor.mod.IMarkdownString
 import typings.monacoEditor.mod.IRange
 import typings.monacoEditor.mod.editor.ISingleEditOperation
@@ -77,7 +77,7 @@ trait CompletionItem extends js.Object {
     * *Note:* The range must be a [single line](#Range.isSingleLine) and it must
     * [contain](#Range.contains) the position at which completion has been [requested](#CompletionItemProvider.provideCompletionItems).
     */
-  var range: IRange | AnonInsert
+  var range: IRange | Insert
   /**
     * A string that should be used when comparing this item
     * with other items. When `falsy` the [label](#CompletionItem.label)
@@ -97,7 +97,7 @@ object CompletionItem {
     insertText: String,
     kind: CompletionItemKind,
     label: String | CompletionItemLabel,
-    range: IRange | AnonInsert,
+    range: IRange | Insert,
     additionalTextEdits: js.Array[ISingleEditOperation] = null,
     command: Command = null,
     commitCharacters: js.Array[String] = null,
@@ -117,7 +117,7 @@ object CompletionItem {
     if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
     if (filterText != null) __obj.updateDynamic("filterText")(filterText.asInstanceOf[js.Any])
     if (insertTextRules != null) __obj.updateDynamic("insertTextRules")(insertTextRules.asInstanceOf[js.Any])
-    if (!js.isUndefined(preselect)) __obj.updateDynamic("preselect")(preselect.asInstanceOf[js.Any])
+    if (!js.isUndefined(preselect)) __obj.updateDynamic("preselect")(preselect.get.asInstanceOf[js.Any])
     if (sortText != null) __obj.updateDynamic("sortText")(sortText.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletionItem]

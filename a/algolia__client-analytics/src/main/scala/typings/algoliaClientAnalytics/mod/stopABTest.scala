@@ -1,6 +1,6 @@
 package typings.algoliaClientAnalytics.mod
 
-import typings.algoliaClientAnalytics.ReadonlyPromiseStopABTest
+import typings.algoliaClientAnalytics.anon.ReadonlyPromiseStopABTest
 import typings.algoliaTransporter.mod.RequestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

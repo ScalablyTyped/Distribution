@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,7 +30,34 @@ trait PerformanceTiming extends js.Object {
   def toJSON(): js.Any
 }
 
-@JSGlobal("PerformanceTiming")
-@js.native
-object PerformanceTiming extends Instantiable0[PerformanceTiming]
+object PerformanceTiming {
+  @scala.inline
+  def apply(
+    connectEnd: Double,
+    connectStart: Double,
+    domComplete: Double,
+    domContentLoadedEventEnd: Double,
+    domContentLoadedEventStart: Double,
+    domInteractive: Double,
+    domLoading: Double,
+    domainLookupEnd: Double,
+    domainLookupStart: Double,
+    fetchStart: Double,
+    loadEventEnd: Double,
+    loadEventStart: Double,
+    navigationStart: Double,
+    redirectEnd: Double,
+    redirectStart: Double,
+    requestStart: Double,
+    responseEnd: Double,
+    responseStart: Double,
+    secureConnectionStart: Double,
+    toJSON: () => js.Any,
+    unloadEventEnd: Double,
+    unloadEventStart: Double
+  ): PerformanceTiming = {
+    val __obj = js.Dynamic.literal(connectEnd = connectEnd.asInstanceOf[js.Any], connectStart = connectStart.asInstanceOf[js.Any], domComplete = domComplete.asInstanceOf[js.Any], domContentLoadedEventEnd = domContentLoadedEventEnd.asInstanceOf[js.Any], domContentLoadedEventStart = domContentLoadedEventStart.asInstanceOf[js.Any], domInteractive = domInteractive.asInstanceOf[js.Any], domLoading = domLoading.asInstanceOf[js.Any], domainLookupEnd = domainLookupEnd.asInstanceOf[js.Any], domainLookupStart = domainLookupStart.asInstanceOf[js.Any], fetchStart = fetchStart.asInstanceOf[js.Any], loadEventEnd = loadEventEnd.asInstanceOf[js.Any], loadEventStart = loadEventStart.asInstanceOf[js.Any], navigationStart = navigationStart.asInstanceOf[js.Any], redirectEnd = redirectEnd.asInstanceOf[js.Any], redirectStart = redirectStart.asInstanceOf[js.Any], requestStart = requestStart.asInstanceOf[js.Any], responseEnd = responseEnd.asInstanceOf[js.Any], responseStart = responseStart.asInstanceOf[js.Any], secureConnectionStart = secureConnectionStart.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), unloadEventEnd = unloadEventEnd.asInstanceOf[js.Any], unloadEventStart = unloadEventStart.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PerformanceTiming]
+  }
+}
 

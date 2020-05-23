@@ -217,14 +217,18 @@ class SVGRenderer protected () extends js.Object {
     * Make a straight line crisper by not spilling out to neighbour pixels.
     *
     * @param points
-    *        The original points on the format `['M', 0, 0, 'L', 100, 0]`.
+    *        The original points on the format `[['M', 0, 0], ['L', 100, 0]]`.
     *
     * @param width
     *        The width of the line.
     *
+    * @param roundingFunction
+    *        The rounding function name on the `Math` object, can be one of
+    *        `round`, `floor` or `ceil`.
+    *
     * @return The original points array, but modified to render crisply.
     */
-  def crispLine(points: SVGPathArray, width: Double): SVGPathArray = js.native
+  def crispLine(points: SVGPathArray, width: Double, roundingFunction: String): SVGPathArray = js.native
   /**
     * General method for adding a definition to the SVG `defs` tag. Can be used
     * for gradients, fills, filters etc. Styled mode only. A hook for adding
@@ -440,6 +444,17 @@ class SVGRenderer protected () extends js.Object {
   def path(): SVGElement = js.native
   def path(attribs: SVGAttributes): SVGElement = js.native
   def path(path: SVGPathArray): SVGElement = js.native
+  /**
+    * Compatibility function to convert the legacy one-dimensional path array
+    * into an array of segments.
+    *
+    * It is used in maps to parse the `path` option, and in SVGRenderer.dSetter
+    * to support legacy paths from demos.
+    *
+    * @param path
+    *        @private
+    */
+  def pathToSegments(path: js.Any): SVGPathArray = js.native
   /**
     * Draw and return a rectangle.
     *

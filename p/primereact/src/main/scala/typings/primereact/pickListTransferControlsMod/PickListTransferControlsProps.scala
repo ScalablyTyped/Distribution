@@ -1,12 +1,12 @@
 package typings.primereact.pickListTransferControlsMod
 
-import typings.primereact.AnonDirectionOriginalEvent
+import typings.primereact.anon.DirectionOriginalEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PickListTransferControlsProps extends js.Object {
-  var onTransfer: js.UndefOr[js.Function1[/* e */ AnonDirectionOriginalEvent, Unit]] = js.undefined
+  var onTransfer: js.UndefOr[js.Function1[/* e */ DirectionOriginalEvent, Unit]] = js.undefined
   var source: js.UndefOr[js.Array[_]] = js.undefined
   var sourceSelection: js.UndefOr[js.Array[_]] = js.undefined
   var target: js.UndefOr[js.Array[_]] = js.undefined
@@ -16,7 +16,7 @@ trait PickListTransferControlsProps extends js.Object {
 object PickListTransferControlsProps {
   @scala.inline
   def apply(
-    onTransfer: /* e */ AnonDirectionOriginalEvent => Unit = null,
+    onTransfer: /* e */ DirectionOriginalEvent => Unit = null,
     source: js.Array[_] = null,
     sourceSelection: js.Array[_] = null,
     target: js.Array[_] = null,

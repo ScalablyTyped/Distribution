@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object streamMod {
   type EventSource = (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/stream.EventStream['source'] */ js.Any) with js.Object
-  type EventStream = typings.vegaTypings.streamMod.StreamParameters with (typings.vegaTypings.AnonSource | typings.vegaTypings.AnonType)
+  type EventStream = typings.vegaTypings.streamMod.StreamParameters with (typings.vegaTypings.anon.Source | typings.vegaTypings.anon.Type)
   /* Rewritten from type alias, can be one of: 
     - typings.vegaTypings.streamMod.EventStream
     - typings.vegaTypings.streamMod.DerivedStream

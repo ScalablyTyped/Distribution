@@ -17,7 +17,7 @@ object EnterpriseProjectIntegration {
   def apply(
     appId: String = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
-    keyId: Int | Double = null,
+    keyId: js.UndefOr[Double] = js.undefined,
     orgId: String = null,
     productKey: String = null,
     registries: js.Array[String] = null,
@@ -25,8 +25,8 @@ object EnterpriseProjectIntegration {
   ): EnterpriseProjectIntegration = {
     val __obj = js.Dynamic.literal()
     if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (keyId != null) __obj.updateDynamic("keyId")(keyId.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyId)) __obj.updateDynamic("keyId")(keyId.get.asInstanceOf[js.Any])
     if (orgId != null) __obj.updateDynamic("orgId")(orgId.asInstanceOf[js.Any])
     if (productKey != null) __obj.updateDynamic("productKey")(productKey.asInstanceOf[js.Any])
     if (registries != null) __obj.updateDynamic("registries")(registries.asInstanceOf[js.Any])

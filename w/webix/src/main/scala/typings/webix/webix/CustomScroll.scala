@@ -1,6 +1,5 @@
 package typings.webix.webix
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.HTMLElement
 import typings.webix.webix.ui.baseview
 import scala.scalajs.js
@@ -15,8 +14,4 @@ trait CustomScroll extends js.Object {
   def init(): Unit = js.native
   def resize(): Unit = js.native
 }
-
-@JSGlobal("webix.CustomScroll")
-@js.native
-object CustomScroll extends TopLevel[CustomScroll]
 

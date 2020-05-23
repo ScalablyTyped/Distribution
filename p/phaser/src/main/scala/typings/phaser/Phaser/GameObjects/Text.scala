@@ -16,8 +16,6 @@ import typings.phaser.Phaser.GameObjects.Components.Transform
 import typings.phaser.Phaser.GameObjects.Components.Visible
 import typings.phaser.Phaser.Renderer.Canvas.CanvasRenderer
 import typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer
-import typings.phaser.Phaser.Scene
-import typings.phaser.Phaser.Types.GameObjects.Text.TextMetrics
 import typings.phaser.Phaser.Types.GameObjects.Text.TextPadding
 import typings.phaser.TextStyleWordWrapCallback
 import typings.phaser.integer
@@ -38,19 +36,16 @@ import scala.scalajs.js.annotation._
   * applying gradient fills to the text, or strokes, shadows and more. You can also use custom fonts
   * loaded externally, such as Google or TypeKit Web fonts.
   * 
-  * **Important:** If the font you wish to use has a space or digit in its name, such as
-  * 'Press Start 2P' or 'Roboto Condensed', then you _must_ put the font name in quotes, either
-  * when creating the Text object, or when setting the font via `setFont` or `setFontFamily`. I.e.:
+  * **Important:** The font name must be quoted if it contains certain combinations of digits or
+  * special characters, either when creating the Text object, or when setting the font via `setFont`
+  * or `setFontFamily`, e.g.:
   * 
   * ```javascript
-  * this.add.text(0, 0, 'Hello World', { fontFamily: '"Roboto Condensed"' });
+  * this.add.text(0, 0, 'Hello World', { fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif' });
   * ```
   * 
-  * Equally, if you wish to provide a list of fallback fonts, then you should ensure they are all
-  * quoted properly, too:
-  * 
   * ```javascript
-  * this.add.text(0, 0, 'Hello World', { fontFamily: 'Verdana, "Times New Roman", Tahoma, serif' });
+  * this.add.text(0, 0, 'Hello World', { font: '"Press Start 2P"' });
   * ```
   * 
   * You can only display fonts that are currently loaded and available to the browser: therefore fonts must
@@ -66,9 +61,8 @@ import scala.scalajs.js.annotation._
   * Text objects in your game. If you run into performance issues you would be better off using Bitmap Text
   * instead, as it benefits from batching and avoids expensive Canvas API calls.
   */
-@JSGlobal("Phaser.GameObjects.Text")
 @js.native
-class Text protected ()
+trait Text
   extends GameObject
      with Alpha
      with BlendMode
@@ -85,28 +79,6 @@ class Text protected ()
      with Transform
      with Visible {
   /**
-    * 
-    * @param scene The Scene to which this Game Object belongs. A Game Object can only belong to one Scene at a time.
-    * @param x The horizontal position of this Game Object in the world.
-    * @param y The vertical position of this Game Object in the world.
-    * @param text The text this Text object will display.
-    * @param style The text style configuration object.
-    */
-  def this(
-    scene: Scene,
-    x: Double,
-    y: Double,
-    text: String,
-    style: typings.phaser.Phaser.Types.GameObjects.Text.TextStyle
-  ) = this()
-  def this(
-    scene: Scene,
-    x: Double,
-    y: Double,
-    text: js.Array[String],
-    style: typings.phaser.Phaser.Types.GameObjects.Text.TextStyle
-  ) = this()
-  /**
     * Whether to automatically round line positions.
     */
   var autoRound: Boolean = js.native
@@ -119,67 +91,9 @@ class Text protected ()
     */
   var context: CanvasRenderingContext2D = js.native
   /**
-    * The depth of this Game Object within the Scene.
-    * 
-    * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
-    * of Game Objects, without actually moving their position in the display list.
-    * 
-    * The depth starts from zero (the default value) and increases from that point. A Game Object with a higher depth
-    * value will always render in front of one with a lower value.
-    * 
-    * Setting the depth will queue a depth sort event within the Scene.
-    */
-  /* CompleteClass */
-  override var depth: Double = js.native
-  /**
     * Whether the text or its settings have changed and need updating.
     */
   var dirty: Boolean = js.native
-  /**
-    * The displayed height of this Game Object.
-    * 
-    * This value takes into account the scale factor.
-    * 
-    * Setting this value will adjust the Game Object's scale property.
-    */
-  /* CompleteClass */
-  override var displayHeight: Double = js.native
-  /**
-    * The displayed width of this Game Object.
-    * 
-    * This value takes into account the scale factor.
-    * 
-    * Setting this value will adjust the Game Object's scale property.
-    */
-  /* CompleteClass */
-  override var displayWidth: Double = js.native
-  /**
-    * The horizontally flipped state of the Game Object.
-    * 
-    * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
-    * Flipping always takes place from the middle of the texture and does not impact the scale value.
-    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-    */
-  /* CompleteClass */
-  override var flipX: Boolean = js.native
-  /**
-    * The vertically flipped state of the Game Object.
-    * 
-    * A Game Object that is flipped vertically will render inversed on the vertical axis (i.e. upside down)
-    * Flipping always takes place from the middle of the texture and does not impact the scale value.
-    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-    */
-  /* CompleteClass */
-  override var flipY: Boolean = js.native
-  /**
-    * The native (un-scaled) height of this Game Object.
-    * 
-    * Changing this value will not change the size that the Game Object is rendered in-game.
-    * For that you need to either set the scale of the Game Object (`setScale`) or use
-    * the `displayHeight` property.
-    */
-  /* CompleteClass */
-  override var height: Double = js.native
   /**
     * The line spacing value.
     * This value is added to the font height to calculate the overall line height.
@@ -214,22 +128,6 @@ class Text protected ()
     * The text string being rendered by this Text Game Object.
     */
   var text: String = js.native
-  /**
-    * The visible state of the Game Object.
-    * 
-    * An invisible Game Object will skip rendering, but will still process update logic.
-    */
-  /* CompleteClass */
-  override var visible: Boolean = js.native
-  /**
-    * The native (un-scaled) width of this Game Object.
-    * 
-    * Changing this value will not change the size that the Game Object is rendered in-game.
-    * For that you need to either set the scale of the Game Object (`setScale`) or use
-    * the `displayWidth` property.
-    */
-  /* CompleteClass */
-  override var width: Double = js.native
   /**
     * Advanced wrapping algorithm that will wrap words as the line grows longer than its horizontal
     * bounds. Consecutive spaces will be collapsed and replaced with a single space. Lines will be
@@ -267,11 +165,6 @@ class Text protected ()
     */
   /* protected */ def preDestroy(): Unit = js.native
   /**
-    * Resets the horizontal and vertical flipped state of this Game Object back to their default un-flipped state.
-    */
-  /* CompleteClass */
-  override def resetFlip(): this.type = js.native
-  /**
     * Greedy wrapping algorithm that will wrap words as the line grows longer than its horizontal
     * bounds.
     * @param text The text to perform word wrap detection against.
@@ -285,41 +178,18 @@ class Text protected ()
     * Alignment only works if the Text object has more than one line of text.
     * @param align The text alignment for multi-line text. Default 'left'.
     */
-  def setAlign(): Text = js.native
-  def setAlign(align: String): Text = js.native
+  def setAlign(): this.type = js.native
+  def setAlign(align: String): this.type = js.native
   /**
     * Set the background color.
     * @param color The background color.
     */
-  def setBackgroundColor(color: String): Text = js.native
+  def setBackgroundColor(color: String): this.type = js.native
   /**
     * Set the text fill color.
     * @param color The text fill color.
     */
-  def setColor(color: String): Text = js.native
-  /**
-    * The depth of this Game Object within the Scene.
-    * 
-    * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
-    * of Game Objects, without actually moving their position in the display list.
-    * 
-    * The depth starts from zero (the default value) and increases from that point. A Game Object with a higher depth
-    * value will always render in front of one with a lower value.
-    * 
-    * Setting the depth will queue a depth sort event within the Scene.
-    * @param value The depth of this Game Object.
-    */
-  /* CompleteClass */
-  override def setDepth(value: integer): this.type = js.native
-  /**
-    * Sets the display size of this Game Object.
-    * 
-    * Calling this will adjust the scale.
-    * @param width The width of this Game Object.
-    * @param height The height of this Game Object.
-    */
-  /* CompleteClass */
-  override def setDisplaySize(width: Double, height: Double): this.type = js.native
+  def setColor(color: String): this.type = js.native
   /**
     * Set the fill style to be used by the Text object.
     * 
@@ -329,8 +199,8 @@ class Text protected ()
     * See the [MDN fillStyle docs](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillStyle) for more details.
     * @param color The text fill style. Can be any valid CanvasRenderingContext `fillStyle` value.
     */
-  def setFill(color: String): Text = js.native
-  def setFill(color: js.Any): Text = js.native
+  def setFill(color: String): this.type = js.native
+  def setFill(color: js.Any): this.type = js.native
   /**
     * Set a fixed width and height for the text.
     * 
@@ -338,34 +208,7 @@ class Text protected ()
     * @param width The fixed width to set. `0` disables fixed width.
     * @param height The fixed height to set. `0` disables fixed height.
     */
-  def setFixedSize(width: Double, height: Double): Text = js.native
-  /**
-    * Sets the horizontal and vertical flipped state of this Game Object.
-    * 
-    * A Game Object that is flipped will render inversed on the flipped axis.
-    * Flipping always takes place from the middle of the texture and does not impact the scale value.
-    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-    * @param x The horizontal flipped state. `false` for no flip, or `true` to be flipped.
-    * @param y The horizontal flipped state. `false` for no flip, or `true` to be flipped.
-    */
-  /* CompleteClass */
-  override def setFlip(x: Boolean, y: Boolean): this.type = js.native
-  /**
-    * Sets the horizontal flipped state of this Game Object.
-    * 
-    * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
-    * Flipping always takes place from the middle of the texture and does not impact the scale value.
-    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-    * @param value The flipped state. `false` for no flip, or `true` to be flipped.
-    */
-  /* CompleteClass */
-  override def setFlipX(value: Boolean): this.type = js.native
-  /**
-    * Sets the vertical flipped state of this Game Object.
-    * @param value The flipped state. `false` for no flip, or `true` to be flipped.
-    */
-  /* CompleteClass */
-  override def setFlipY(value: Boolean): this.type = js.native
+  def setFixedSize(width: Double, height: Double): this.type = js.native
   /**
     * Set the font.
     * 
@@ -374,51 +217,51 @@ class Text protected ()
     * If an object is given, the `fontFamily`, `fontSize` and `fontStyle`
     * properties of that object are set.
     * 
-    * **Important:** If the font you wish to use has a space or digit in its name, such as
-    * 'Press Start 2P' or 'Roboto Condensed', then you _must_ put the font name in quotes:
+    * **Important:** The font name must be quoted if it contains certain combinations of digits or
+    * special characters:
     * 
     * ```javascript
-    * Text.setFont('"Roboto Condensed"');
+    * Text.setFont('"Press Start 2P"');
     * ```
     * 
     * Equally, if you wish to provide a list of fallback fonts, then you should ensure they are all
     * quoted properly, too:
     * 
     * ```javascript
-    * Text.setFont('Verdana, "Times New Roman", Tahoma, serif');
+    * Text.setFont('Georgia, "Goudy Bookletter 1911", Times, serif');
     * ```
     * @param font The font family or font settings to set.
     */
-  def setFont(font: String): Text = js.native
+  def setFont(font: String): this.type = js.native
   /**
     * Set the font family.
     * 
-    * **Important:** If the font you wish to use has a space or digit in its name, such as
-    * 'Press Start 2P' or 'Roboto Condensed', then you _must_ put the font name in quotes:
+    * **Important:** The font name must be quoted if it contains certain combinations of digits or
+    * special characters:
     * 
     * ```javascript
-    * Text.setFont('"Roboto Condensed"');
+    * Text.setFont('"Press Start 2P"');
     * ```
     * 
     * Equally, if you wish to provide a list of fallback fonts, then you should ensure they are all
     * quoted properly, too:
     * 
     * ```javascript
-    * Text.setFont('Verdana, "Times New Roman", Tahoma, serif');
+    * Text.setFont('Georgia, "Goudy Bookletter 1911", Times, serif');
     * ```
     * @param family The font family.
     */
-  def setFontFamily(family: String): Text = js.native
+  def setFontFamily(family: String): this.type = js.native
   /**
     * Set the font size.
     * @param size The font size.
     */
-  def setFontSize(size: Double): Text = js.native
+  def setFontSize(size: Double): this.type = js.native
   /**
     * Set the font style.
     * @param style The font style.
     */
-  def setFontStyle(style: String): Text = js.native
+  def setFontStyle(style: String): this.type = js.native
   /**
     * Sets the line spacing value.
     * 
@@ -426,13 +269,13 @@ class Text protected ()
     * This only has an effect if this Text object consists of multiple lines of text.
     * @param value The amount to add to the font height to achieve the overall line height.
     */
-  def setLineSpacing(value: Double): Text = js.native
+  def setLineSpacing(value: Double): this.type = js.native
   /**
     * Set the maximum number of lines to draw.
     * @param max The maximum number of lines to draw. Default 0.
     */
-  def setMaxLines(): Text = js.native
-  def setMaxLines(max: integer): Text = js.native
+  def setMaxLines(): this.type = js.native
+  def setMaxLines(max: integer): this.type = js.native
   /**
     * Set the text padding.
     * 
@@ -444,8 +287,8 @@ class Text protected ()
     * @param right The right padding value.
     * @param bottom The bottom padding value.
     */
-  def setPadding(left: Double, top: Double, right: Double, bottom: Double): Text = js.native
-  def setPadding(left: TextPadding, top: Double, right: Double, bottom: Double): Text = js.native
+  def setPadding(left: Double, top: Double, right: Double, bottom: Double): this.type = js.native
+  def setPadding(left: TextPadding, top: Double, right: Double, bottom: Double): this.type = js.native
   /**
     * Set the resolution used by this Text object.
     * 
@@ -458,7 +301,7 @@ class Text protected ()
     * Therefore, please use with caution, as the more high res Text you have, the more memory it uses.
     * @param value The resolution for this Text object to use.
     */
-  def setResolution(value: Double): Text = js.native
+  def setResolution(value: Double): this.type = js.native
   /**
     * Set the shadow settings.
     * @param x The horizontal shadow offset. Default 0.
@@ -475,75 +318,52 @@ class Text protected ()
     blur: js.UndefOr[Double],
     shadowStroke: js.UndefOr[Boolean],
     shadowFill: js.UndefOr[Boolean]
-  ): Text = js.native
+  ): this.type = js.native
   /**
     * Set the shadow blur radius.
     * @param blur The shadow blur radius.
     */
-  def setShadowBlur(blur: Double): Text = js.native
+  def setShadowBlur(blur: Double): this.type = js.native
   /**
     * Set the shadow color.
     * @param color The shadow color.
     */
-  def setShadowColor(color: String): Text = js.native
+  def setShadowColor(color: String): this.type = js.native
   /**
     * Enable or disable shadow fill.
     * @param enabled Whether shadow fill is enabled or not.
     */
-  def setShadowFill(enabled: Boolean): Text = js.native
+  def setShadowFill(enabled: Boolean): this.type = js.native
   /**
     * Set the shadow offset.
     * @param x The horizontal shadow offset.
     * @param y The vertical shadow offset.
     */
-  def setShadowOffset(x: Double, y: Double): Text = js.native
+  def setShadowOffset(x: Double, y: Double): this.type = js.native
   /**
     * Enable or disable shadow stroke.
     * @param enabled Whether shadow stroke is enabled or not.
     */
-  def setShadowStroke(enabled: Boolean): Text = js.native
-  /**
-    * Sets the internal size of this Game Object, as used for frame or physics body creation.
-    * 
-    * This will not change the size that the Game Object is rendered in-game.
-    * For that you need to either set the scale of the Game Object (`setScale`) or call the
-    * `setDisplaySize` method, which is the same thing as changing the scale but allows you
-    * to do so by giving pixel values.
-    * 
-    * If you have enabled this Game Object for input, changing the size will _not_ change the
-    * size of the hit area. To do this you should adjust the `input.hitArea` object directly.
-    * @param width The width of this Game Object.
-    * @param height The height of this Game Object.
-    */
-  /* CompleteClass */
-  override def setSize(width: Double, height: Double): this.type = js.native
+  def setShadowStroke(enabled: Boolean): this.type = js.native
   /**
     * Set the stroke settings.
     * @param color The stroke color.
     * @param thickness The stroke thickness.
     */
-  def setStroke(color: String, thickness: Double): Text = js.native
+  def setStroke(color: String, thickness: Double): this.type = js.native
   /**
     * Set the text style.
     * @param style The style settings to set.
     */
-  def setStyle(style: js.Object): Text = js.native
+  def setStyle(style: js.Object): this.type = js.native
   /**
     * Set the text to display.
     * 
     * An array of strings will be joined with `\n` line breaks.
     * @param value The string, or array of strings, to be set as the content of this Text object.
     */
-  def setText(value: String): Text = js.native
-  def setText(value: js.Array[String]): Text = js.native
-  /**
-    * Sets the visibility of this Game Object.
-    * 
-    * An invisible Game Object will skip rendering, but will still process update logic.
-    * @param value The visible state of the Game Object.
-    */
-  /* CompleteClass */
-  override def setVisible(value: Boolean): this.type = js.native
+  def setText(value: String): this.type = js.native
+  def setText(value: js.Array[String]): this.type = js.native
   /**
     * Set a custom callback for wrapping lines. Pass in null to remove wrapping by callback.
     * @param callback A custom function that will be responsible for wrapping the
@@ -552,8 +372,8 @@ class Text protected ()
     * newline characters in place to indicate where breaks should happen.
     * @param scope The scope that will be applied when the callback is invoked. Default null.
     */
-  def setWordWrapCallback(callback: TextStyleWordWrapCallback): Text = js.native
-  def setWordWrapCallback(callback: TextStyleWordWrapCallback, scope: js.Object): Text = js.native
+  def setWordWrapCallback(callback: TextStyleWordWrapCallback): this.type = js.native
+  def setWordWrapCallback(callback: TextStyleWordWrapCallback, scope: js.Object): this.type = js.native
   /**
     * Set the width (in pixels) to use for wrapping lines. Pass in null to remove wrapping by width.
     * @param width The maximum width of a line in pixels. Set to null to remove wrapping.
@@ -561,43 +381,11 @@ class Text protected ()
     * algorithm. If true, spaces are collapsed and whitespace is trimmed from lines. If false,
     * spaces and whitespace are left as is. Default false.
     */
-  def setWordWrapWidth(width: Double): Text = js.native
-  def setWordWrapWidth(width: Double, useAdvancedWrap: Boolean): Text = js.native
-  /**
-    * Toggles the horizontal flipped state of this Game Object.
-    * 
-    * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
-    * Flipping always takes place from the middle of the texture and does not impact the scale value.
-    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-    */
-  /* CompleteClass */
-  override def toggleFlipX(): this.type = js.native
-  /**
-    * Toggles the vertical flipped state of this Game Object.
-    */
-  /* CompleteClass */
-  override def toggleFlipY(): this.type = js.native
+  def setWordWrapWidth(width: Double): this.type = js.native
+  def setWordWrapWidth(width: Double, useAdvancedWrap: Boolean): this.type = js.native
   /**
     * Update the displayed text.
     */
-  def updateText(): Text = js.native
-}
-
-/* static members */
-@JSGlobal("Phaser.GameObjects.Text")
-@js.native
-object Text extends js.Object {
-  /**
-    * Returns an object containing dimensions of the Text object.
-    * @param text The Text object to calculate the size from.
-    * @param size The Text metrics to use when calculating the size.
-    * @param lines The lines of text to calculate the size from.
-    */
-  def GetTextSize(text: Text, size: TextMetrics, lines: js.Array[_]): js.Object = js.native
-  /**
-    * Calculates the ascent, descent and fontSize of a given font style.
-    * @param textStyle The TextStyle object to measure.
-    */
-  def MeasureText(textStyle: TextStyle): TextMetrics = js.native
+  def updateText(): this.type = js.native
 }
 

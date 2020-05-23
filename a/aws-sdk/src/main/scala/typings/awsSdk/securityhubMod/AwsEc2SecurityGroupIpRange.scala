@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AwsEc2SecurityGroupIpRange extends js.Object {
   /**
-    * The IPv4 CIDR range. You can either specify either a CIDR range or a source security group, but not both. To specify a single IPv4 address, use the /32 prefix length.
+    * The IPv4 CIDR range. You can specify either a CIDR range or a source security group, but not both. To specify a single IPv4 address, use the /32 prefix length.
     */
   var CidrIp: js.UndefOr[NonEmptyString] = js.native
 }

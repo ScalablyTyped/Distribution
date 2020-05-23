@@ -3,7 +3,6 @@ package typings.sammy.Sammy
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,8 +23,4 @@ trait DataLocationProxy
   def setLocation(new_location: String): String = js.native
   def unbind(): Unit = js.native
 }
-
-@JSGlobal("Sammy.DataLocationProxy")
-@js.native
-object DataLocationProxy extends TopLevel[DataLocationProxy]
 

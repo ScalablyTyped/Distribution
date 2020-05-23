@@ -34,11 +34,11 @@ object ImportSourceCredentialsInput {
     authType: AuthType,
     serverType: ServerType,
     token: SensitiveNonEmptyString,
-    shouldOverwrite: js.UndefOr[scala.Boolean] = js.undefined,
+    shouldOverwrite: js.UndefOr[WrapperBoolean] = js.undefined,
     username: NonEmptyString = null
   ): ImportSourceCredentialsInput = {
     val __obj = js.Dynamic.literal(authType = authType.asInstanceOf[js.Any], serverType = serverType.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldOverwrite)) __obj.updateDynamic("shouldOverwrite")(shouldOverwrite.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldOverwrite)) __obj.updateDynamic("shouldOverwrite")(shouldOverwrite.get.asInstanceOf[js.Any])
     if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportSourceCredentialsInput]
   }

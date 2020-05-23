@@ -28,8 +28,8 @@ object FilterSettings {
     filterType: FilterType_ | String = null
   ): FilterSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowSearchOnTyping)) __obj.updateDynamic("allowSearchOnTyping")(allowSearchOnTyping.asInstanceOf[js.Any])
-    if (!js.isUndefined(caseSensitiveSearch)) __obj.updateDynamic("caseSensitiveSearch")(caseSensitiveSearch.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSearchOnTyping)) __obj.updateDynamic("allowSearchOnTyping")(allowSearchOnTyping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(caseSensitiveSearch)) __obj.updateDynamic("caseSensitiveSearch")(caseSensitiveSearch.get.asInstanceOf[js.Any])
     if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterSettings]
   }

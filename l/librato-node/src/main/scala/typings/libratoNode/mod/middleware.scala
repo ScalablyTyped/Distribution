@@ -1,6 +1,6 @@
 package typings.libratoNode.mod
 
-import typings.libratoNode.AnonRequestCountKey
+import typings.libratoNode.anon.RequestCountKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ object middleware extends js.Object {
     /* next */ js.Function0[Unit | js.Promise[Unit]], 
     Unit
   ] = js.native
-  def apply(config: AnonRequestCountKey): js.Function3[
+  def apply(config: RequestCountKey): js.Function3[
     /* req */ js.Object, 
     /* res */ js.Object, 
     /* next */ js.Function0[Unit | js.Promise[Unit]], 

@@ -29,7 +29,7 @@ object CertificateField {
     if (shortName != null) __obj.updateDynamic("shortName")(shortName.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(valueConstructed)) __obj.updateDynamic("valueConstructed")(valueConstructed.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueConstructed)) __obj.updateDynamic("valueConstructed")(valueConstructed.get.asInstanceOf[js.Any])
     if (valueTagClass != null) __obj.updateDynamic("valueTagClass")(valueTagClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateField]
   }

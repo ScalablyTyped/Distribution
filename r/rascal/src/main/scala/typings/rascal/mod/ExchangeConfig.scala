@@ -25,8 +25,8 @@ object ExchangeConfig {
     `type`: direct | fanout | headers | topic = null
   ): ExchangeConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(assert)) __obj.updateDynamic("assert")(assert.asInstanceOf[js.Any])
-    if (!js.isUndefined(check)) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
+    if (!js.isUndefined(assert)) __obj.updateDynamic("assert")(assert.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(check)) __obj.updateDynamic("check")(check.get.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExchangeConfig]

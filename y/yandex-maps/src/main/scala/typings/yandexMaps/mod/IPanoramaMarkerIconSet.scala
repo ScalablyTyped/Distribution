@@ -19,11 +19,7 @@ object IPanoramaMarkerIconSet {
     expandedHovered: IPanoramaMarkerIcon = null,
     hovered: IPanoramaMarkerIcon = null
   ): IPanoramaMarkerIconSet = {
-    val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (expanded != null) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
-    if (expandedHovered != null) __obj.updateDynamic("expandedHovered")(expandedHovered.asInstanceOf[js.Any])
-    if (hovered != null) __obj.updateDynamic("hovered")(hovered.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any], expandedHovered = expandedHovered.asInstanceOf[js.Any], hovered = hovered.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPanoramaMarkerIconSet]
   }
 }

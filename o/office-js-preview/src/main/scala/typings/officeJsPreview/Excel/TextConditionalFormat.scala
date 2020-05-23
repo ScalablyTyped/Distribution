@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.TextConditionalFormatData
 import typings.officeJsPreview.Excel.Interfaces.TextConditionalFormatLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.TextConditionalFormatUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,15 +16,14 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.6]
   */
-@JSGlobal("Excel.TextConditionalFormat")
 @js.native
-class TextConditionalFormat () extends ClientObject {
+trait TextConditionalFormat extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_TextConditionalFormat: RequestContext = js.native
   /**
     *
-    * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
+    * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -43,7 +42,7 @@ class TextConditionalFormat () extends ClientObject {
     */
   def load(): TextConditionalFormat = js.native
   def load(options: TextConditionalFormatLoadOptions): TextConditionalFormat = js.native
-  def load(propertyNamesAndPaths: AnonExpand): TextConditionalFormat = js.native
+  def load(propertyNamesAndPaths: Expand): TextConditionalFormat = js.native
   def load(propertyNames: String): TextConditionalFormat = js.native
   def load(propertyNames: js.Array[String]): TextConditionalFormat = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.

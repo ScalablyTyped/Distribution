@@ -1,23 +1,23 @@
 package typings.jweixin.mod
 
-import typings.jweixin.AnonCardExt
-import typings.jweixin.AnonCardList
+import typings.jweixin.anon.CardExt
+import typings.jweixin.anon.CardList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IaddCard extends BaseParams {
-  var cardList: js.Array[AnonCardExt]
+  var cardList: js.Array[CardExt]
    // 需要添加的卡券列表
   @JSName("success")
-  def success_MIaddCard(res: AnonCardList): Unit
+  def success_MIaddCard(res: CardList): Unit
 }
 
 object IaddCard {
   @scala.inline
   def apply(
-    cardList: js.Array[AnonCardExt],
-    success: AnonCardList => Unit,
+    cardList: js.Array[CardExt],
+    success: CardList => Unit,
     complete: /* repeated */ js.Any => Unit = null,
     fail: /* repeated */ js.Any => Unit = null
   ): IaddCard = {

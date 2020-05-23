@@ -14,9 +14,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Notifies listeners of dynamic changes to a map of ResourceQualifier objects, such as when items get added or removed, and allows qualifier values to change. */
-@JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceQualifierObservableMap")
 @js.native
-abstract class ResourceQualifierObservableMap () extends js.Object {
+trait ResourceQualifierObservableMap extends js.Object {
   /** Occurs when the map changes. */
   @JSName("onmapchanged")
   var onmapchanged_Original: MapChangedEventHandler[String, String] = js.native

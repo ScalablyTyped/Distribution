@@ -1,7 +1,7 @@
 package typings.gapiClientDiscovery.gapi.client.discovery
 
-import typings.gapiClientDiscovery.AnonOauth2
-import typings.gapiClientDiscovery.AnonX16
+import typings.gapiClientDiscovery.anon.Oauth2
+import typings.gapiClientDiscovery.anon.X16
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait RestDescription extends js.Object {
   /** Authentication information. */
-  var auth: js.UndefOr[AnonOauth2] = js.undefined
+  var auth: js.UndefOr[Oauth2] = js.undefined
   /** [DEPRECATED] The base path for REST requests. */
   var basePath: js.UndefOr[String] = js.undefined
   /** [DEPRECATED] The base URL for REST requests. */
@@ -31,7 +31,7 @@ trait RestDescription extends js.Object {
   /** A list of supported features for this API. */
   var features: js.UndefOr[js.Array[String]] = js.undefined
   /** Links to 16x16 and 32x32 icons representing the API. */
-  var icons: js.UndefOr[AnonX16] = js.undefined
+  var icons: js.UndefOr[X16] = js.undefined
   /** The ID of this API. */
   var id: js.UndefOr[String] = js.undefined
   /** The kind for this response. */
@@ -75,7 +75,7 @@ trait RestDescription extends js.Object {
 object RestDescription {
   @scala.inline
   def apply(
-    auth: AnonOauth2 = null,
+    auth: Oauth2 = null,
     basePath: String = null,
     baseUrl: String = null,
     batchPath: String = null,
@@ -86,7 +86,7 @@ object RestDescription {
     etag: String = null,
     exponentialBackoffDefault: js.UndefOr[Boolean] = js.undefined,
     features: js.Array[String] = null,
-    icons: AnonX16 = null,
+    icons: X16 = null,
     id: String = null,
     kind: String = null,
     labels: js.Array[String] = null,
@@ -116,7 +116,7 @@ object RestDescription {
     if (discoveryVersion != null) __obj.updateDynamic("discoveryVersion")(discoveryVersion.asInstanceOf[js.Any])
     if (documentationLink != null) __obj.updateDynamic("documentationLink")(documentationLink.asInstanceOf[js.Any])
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (!js.isUndefined(exponentialBackoffDefault)) __obj.updateDynamic("exponentialBackoffDefault")(exponentialBackoffDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(exponentialBackoffDefault)) __obj.updateDynamic("exponentialBackoffDefault")(exponentialBackoffDefault.get.asInstanceOf[js.Any])
     if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
     if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
@@ -136,7 +136,7 @@ object RestDescription {
     if (servicePath != null) __obj.updateDynamic("servicePath")(servicePath.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (!js.isUndefined(version_module)) __obj.updateDynamic("version_module")(version_module.asInstanceOf[js.Any])
+    if (!js.isUndefined(version_module)) __obj.updateDynamic("version_module")(version_module.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestDescription]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait InstanceDetails extends js.Object {
   /**
-    * The availability zone of the EC2 instance.
+    * The Availability Zone of the EC2 instance.
     */
   var AvailabilityZone: js.UndefOr[String] = js.native
   /**
@@ -39,7 +39,7 @@ trait InstanceDetails extends js.Object {
     */
   var LaunchTime: js.UndefOr[String] = js.native
   /**
-    * The network interface information of the EC2 instance.
+    * The elastic network interface information of the EC2 instance.
     */
   var NetworkInterfaces: js.UndefOr[typings.awsSdk.guarddutyMod.NetworkInterfaces] = js.native
   /**

@@ -40,13 +40,13 @@ object QualificationRequirement {
     ActionsGuarded: HITAccessActions = null,
     IntegerValues: IntegerList = null,
     LocaleValues: LocaleList = null,
-    RequiredToPreview: js.UndefOr[scala.Boolean] = js.undefined
+    RequiredToPreview: js.UndefOr[Boolean] = js.undefined
   ): QualificationRequirement = {
     val __obj = js.Dynamic.literal(Comparator = Comparator.asInstanceOf[js.Any], QualificationTypeId = QualificationTypeId.asInstanceOf[js.Any])
     if (ActionsGuarded != null) __obj.updateDynamic("ActionsGuarded")(ActionsGuarded.asInstanceOf[js.Any])
     if (IntegerValues != null) __obj.updateDynamic("IntegerValues")(IntegerValues.asInstanceOf[js.Any])
     if (LocaleValues != null) __obj.updateDynamic("LocaleValues")(LocaleValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequiredToPreview)) __obj.updateDynamic("RequiredToPreview")(RequiredToPreview.asInstanceOf[js.Any])
+    if (!js.isUndefined(RequiredToPreview)) __obj.updateDynamic("RequiredToPreview")(RequiredToPreview.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QualificationRequirement]
   }
 }

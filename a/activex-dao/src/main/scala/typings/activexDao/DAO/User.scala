@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DAO.User")
 @js.native
-class User protected () extends js.Object {
+trait User extends js.Object {
   @JSName("DAO.User_typekey")
   var DAODotUser_typekey: User = js.native
   @JSName("Groups")

@@ -12,28 +12,28 @@ import scala.scalajs.js.annotation._
 trait RangeData extends js.Object {
   /**
     *
-    * Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. "Sheet1!A1:B4"). Read-only.
+    * Specifies the range reference in A1-style. Address value will contain the Sheet reference (e.g., "Sheet1!A1:B4").
     *
     * [Api set: ExcelApi 1.1]
     */
   var address: js.UndefOr[String] = js.undefined
   /**
     *
-    * Represents range reference for the specified range in the language of the user. Read-only.
+    * Specifies the range reference for the specified range in the language of the user.
     *
     * [Api set: ExcelApi 1.1]
     */
   var addressLocal: js.UndefOr[String] = js.undefined
   /**
     *
-    * Number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
+    * Specifies the number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647).
     *
     * [Api set: ExcelApi 1.1]
     */
   var cellCount: js.UndefOr[Double] = js.undefined
   /**
     *
-    * Represents the total number of columns in the range. Read-only.
+    * Specifies the total number of columns in the range.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -47,14 +47,14 @@ trait RangeData extends js.Object {
   var columnHidden: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the column number of the first cell in the range. Zero-indexed. Read-only.
+    * Specifies the column number of the first cell in the range. Zero-indexed.
     *
     * [Api set: ExcelApi 1.1]
     */
   var columnIndex: js.UndefOr[Double] = js.undefined
   /**
     *
-    * Collection of ConditionalFormats that intersect the range. Read-only.
+    * The collection of ConditionalFormats that intersect the range.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -68,7 +68,7 @@ trait RangeData extends js.Object {
   var dataValidation: js.UndefOr[DataValidationData] = js.undefined
   /**
     *
-    * Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties. Read-only.
+    * Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -106,14 +106,14 @@ trait RangeData extends js.Object {
   var hasSpill: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range. Read-only.
+    * Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range.
     *
     * [Api set: ExcelApi 1.10]
     */
   var height: js.UndefOr[Double] = js.undefined
   /**
     *
-    * Represents if all cells of the current range are hidden. Read-only.
+    * Represents if all cells of the current range are hidden.
     *
     * [Api set: ExcelApi 1.2]
     */
@@ -127,28 +127,28 @@ trait RangeData extends js.Object {
   var hyperlink: js.UndefOr[RangeHyperlink] = js.undefined
   /**
     *
-    * Represents if the current range is an entire column. Read-only.
+    * Represents if the current range is an entire column.
     *
     * [Api set: ExcelApi 1.7]
     */
   var isEntireColumn: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents if the current range is an entire row. Read-only.
+    * Represents if the current range is an entire row.
     *
     * [Api set: ExcelApi 1.7]
     */
   var isEntireRow: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns the distance in points, for 100% zoom, from left edge of the worksheet to left edge of the range. Read-only.
+    * Returns the distance in points, for 100% zoom, from left edge of the worksheet to left edge of the range.
     *
     * [Api set: ExcelApi 1.10]
     */
   var left: js.UndefOr[Double] = js.undefined
   /**
     *
-    * Represents the data type state of each cell. Read-only.
+    * Represents the data type state of each cell.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -162,7 +162,7 @@ trait RangeData extends js.Object {
   var numberFormat: js.UndefOr[js.Array[js.Array[_]]] = js.undefined
   /**
     *
-    * Represents the category of number format of each cell. Read-only.
+    * Represents the category of number format of each cell.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -179,7 +179,7 @@ trait RangeData extends js.Object {
   var numberFormatLocal: js.UndefOr[js.Array[js.Array[_]]] = js.undefined
   /**
     *
-    * Returns the total number of rows in the range. Read-only.
+    * Returns the total number of rows in the range.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -193,7 +193,7 @@ trait RangeData extends js.Object {
   var rowHidden: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns the row number of the first cell in the range. Zero-indexed. Read-only.
+    * Returns the row number of the first cell in the range. Zero-indexed.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -219,21 +219,21 @@ trait RangeData extends js.Object {
   var style: js.UndefOr[String] = js.undefined
   /**
     *
-    * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.
+    * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API.
     *
     * [Api set: ExcelApi 1.1]
     */
   var text: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
   /**
     *
-    * Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range. Read-only.
+    * Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range.
     *
     * [Api set: ExcelApi 1.10]
     */
   var top: js.UndefOr[Double] = js.undefined
   /**
     *
-    * Represents the type of data of each cell. Read-only.
+    * Specifies the type of data in each cell.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -247,7 +247,7 @@ trait RangeData extends js.Object {
   var values: js.UndefOr[js.Array[js.Array[_]]] = js.undefined
   /**
     *
-    * Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range. Read-only.
+    * Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range.
     *
     * [Api set: ExcelApi 1.10]
     */
@@ -259,10 +259,10 @@ object RangeData {
   def apply(
     address: String = null,
     addressLocal: String = null,
-    cellCount: Int | Double = null,
-    columnCount: Int | Double = null,
+    cellCount: js.UndefOr[Double] = js.undefined,
+    columnCount: js.UndefOr[Double] = js.undefined,
     columnHidden: js.UndefOr[Boolean] = js.undefined,
-    columnIndex: Int | Double = null,
+    columnIndex: js.UndefOr[Double] = js.undefined,
     conditionalFormats: js.Array[ConditionalFormatData] = null,
     dataValidation: DataValidationData = null,
     format: RangeFormatData = null,
@@ -270,61 +270,61 @@ object RangeData {
     formulasLocal: js.Array[js.Array[_]] = null,
     formulasR1C1: js.Array[js.Array[_]] = null,
     hasSpill: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     hidden: js.UndefOr[Boolean] = js.undefined,
     hyperlink: RangeHyperlink = null,
     isEntireColumn: js.UndefOr[Boolean] = js.undefined,
     isEntireRow: js.UndefOr[Boolean] = js.undefined,
-    left: Int | Double = null,
+    left: js.UndefOr[Double] = js.undefined,
     linkedDataTypeState: js.Array[js.Array[LinkedDataTypeState]] = null,
     numberFormat: js.Array[js.Array[_]] = null,
     numberFormatCategories: js.Array[js.Array[NumberFormatCategory]] = null,
     numberFormatLocal: js.Array[js.Array[_]] = null,
-    rowCount: Int | Double = null,
+    rowCount: js.UndefOr[Double] = js.undefined,
     rowHidden: js.UndefOr[Boolean] = js.undefined,
-    rowIndex: Int | Double = null,
+    rowIndex: js.UndefOr[Double] = js.undefined,
     savedAsArray: js.UndefOr[Boolean] = js.undefined,
     style: String = null,
     text: js.Array[js.Array[String]] = null,
-    top: Int | Double = null,
+    top: js.UndefOr[Double] = js.undefined,
     valueTypes: js.Array[js.Array[RangeValueType]] = null,
     values: js.Array[js.Array[_]] = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): RangeData = {
     val __obj = js.Dynamic.literal()
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     if (addressLocal != null) __obj.updateDynamic("addressLocal")(addressLocal.asInstanceOf[js.Any])
-    if (cellCount != null) __obj.updateDynamic("cellCount")(cellCount.asInstanceOf[js.Any])
-    if (columnCount != null) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnHidden)) __obj.updateDynamic("columnHidden")(columnHidden.asInstanceOf[js.Any])
-    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellCount)) __obj.updateDynamic("cellCount")(cellCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnCount)) __obj.updateDynamic("columnCount")(columnCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnHidden)) __obj.updateDynamic("columnHidden")(columnHidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnIndex)) __obj.updateDynamic("columnIndex")(columnIndex.get.asInstanceOf[js.Any])
     if (conditionalFormats != null) __obj.updateDynamic("conditionalFormats")(conditionalFormats.asInstanceOf[js.Any])
     if (dataValidation != null) __obj.updateDynamic("dataValidation")(dataValidation.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (formulas != null) __obj.updateDynamic("formulas")(formulas.asInstanceOf[js.Any])
     if (formulasLocal != null) __obj.updateDynamic("formulasLocal")(formulasLocal.asInstanceOf[js.Any])
     if (formulasR1C1 != null) __obj.updateDynamic("formulasR1C1")(formulasR1C1.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasSpill)) __obj.updateDynamic("hasSpill")(hasSpill.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasSpill)) __obj.updateDynamic("hasSpill")(hasSpill.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEntireColumn)) __obj.updateDynamic("isEntireColumn")(isEntireColumn.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEntireRow)) __obj.updateDynamic("isEntireRow")(isEntireRow.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEntireColumn)) __obj.updateDynamic("isEntireColumn")(isEntireColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEntireRow)) __obj.updateDynamic("isEntireRow")(isEntireRow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.get.asInstanceOf[js.Any])
     if (linkedDataTypeState != null) __obj.updateDynamic("linkedDataTypeState")(linkedDataTypeState.asInstanceOf[js.Any])
     if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
     if (numberFormatCategories != null) __obj.updateDynamic("numberFormatCategories")(numberFormatCategories.asInstanceOf[js.Any])
     if (numberFormatLocal != null) __obj.updateDynamic("numberFormatLocal")(numberFormatLocal.asInstanceOf[js.Any])
-    if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowHidden)) __obj.updateDynamic("rowHidden")(rowHidden.asInstanceOf[js.Any])
-    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(savedAsArray)) __obj.updateDynamic("savedAsArray")(savedAsArray.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowHidden)) __obj.updateDynamic("rowHidden")(rowHidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(savedAsArray)) __obj.updateDynamic("savedAsArray")(savedAsArray.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
     if (valueTypes != null) __obj.updateDynamic("valueTypes")(valueTypes.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeData]
   }
 }

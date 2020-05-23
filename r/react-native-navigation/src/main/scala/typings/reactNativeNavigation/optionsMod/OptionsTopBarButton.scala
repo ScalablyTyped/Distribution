@@ -1,7 +1,7 @@
 package typings.reactNativeNavigation.optionsMod
 
 import typings.reactNative.mod.ImageRequireSource
-import typings.reactNativeNavigation.AnonId
+import typings.reactNativeNavigation.anon.Height
 import typings.reactNativeNavigation.reactNativeNavigationStrings.always
 import typings.reactNativeNavigation.reactNativeNavigationStrings.ifRoom
 import typings.reactNativeNavigation.reactNativeNavigationStrings.never
@@ -22,7 +22,7 @@ trait OptionsTopBarButton extends js.Object {
   /**
     * Set the button as a custom component
     */
-  var component: js.UndefOr[AnonId] = js.undefined
+  var component: js.UndefOr[Height] = js.undefined
   /**
     * Disable icon tinting
     */
@@ -82,13 +82,13 @@ object OptionsTopBarButton {
     id: String,
     accessibilityLabel: String = null,
     color: Color = null,
-    component: AnonId = null,
+    component: Height = null,
     disableIconTint: js.UndefOr[Boolean] = js.undefined,
     disabledColor: Color = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     fontFamily: String = null,
     fontWeight: FontWeight = null,
-    icon: Int | Double = null,
+    icon: js.UndefOr[ImageRequireSource] = js.undefined,
     iconInsets: IconInsets = null,
     showAsAction: ifRoom | withText | always | never = null,
     systemItem: SystemItemIcon = null,
@@ -99,12 +99,12 @@ object OptionsTopBarButton {
     if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableIconTint)) __obj.updateDynamic("disableIconTint")(disableIconTint.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableIconTint)) __obj.updateDynamic("disableIconTint")(disableIconTint.get.asInstanceOf[js.Any])
     if (disabledColor != null) __obj.updateDynamic("disabledColor")(disabledColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.get.asInstanceOf[js.Any])
     if (iconInsets != null) __obj.updateDynamic("iconInsets")(iconInsets.asInstanceOf[js.Any])
     if (showAsAction != null) __obj.updateDynamic("showAsAction")(showAsAction.asInstanceOf[js.Any])
     if (systemItem != null) __obj.updateDynamic("systemItem")(systemItem.asInstanceOf[js.Any])

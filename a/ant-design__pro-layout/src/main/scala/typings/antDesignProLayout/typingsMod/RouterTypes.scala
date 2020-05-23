@@ -1,6 +1,6 @@
 package typings.antDesignProLayout.typingsMod
 
-import typings.antDesignProLayout.AnonPathname
+import typings.antDesignProLayout.anon.Pathname
 import typings.history.mod.History
 import typings.history.mod.Location
 import typings.history.mod.LocationState
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 trait RouterTypes[P] extends js.Object {
   var computedMatch: js.UndefOr[`match`[P]] = js.undefined
   var history: History[LocationState]
-  var location: Location[LocationState] | AnonPathname
+  var location: Location[LocationState] | Pathname
   var `match`: typings.reactRouter.mod.`match`[js.Object]
   var route: js.UndefOr[Route] = js.undefined
   var staticContext: js.UndefOr[StaticContext] = js.undefined
@@ -24,7 +24,7 @@ object RouterTypes {
   @scala.inline
   def apply[P](
     history: History[LocationState],
-    location: Location[LocationState] | AnonPathname,
+    location: Location[LocationState] | Pathname,
     `match`: `match`[js.Object],
     computedMatch: `match`[P] = null,
     route: Route = null,

@@ -17,12 +17,12 @@ object Options {
   @scala.inline
   def apply(
     fork: (/* fork */ forkFn, /* compiler */ Compiler_, /* webpackBin */ String) => Unit = null,
-    minModules: Int | Double = null,
+    minModules: js.UndefOr[Double] = js.undefined,
     numWorkers: Double | js.Function0[Double] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (fork != null) __obj.updateDynamic("fork")(js.Any.fromFunction3(fork))
-    if (minModules != null) __obj.updateDynamic("minModules")(minModules.asInstanceOf[js.Any])
+    if (!js.isUndefined(minModules)) __obj.updateDynamic("minModules")(minModules.get.asInstanceOf[js.Any])
     if (numWorkers != null) __obj.updateDynamic("numWorkers")(numWorkers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

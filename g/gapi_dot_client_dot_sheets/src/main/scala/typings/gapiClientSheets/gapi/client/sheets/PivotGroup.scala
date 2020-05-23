@@ -55,8 +55,8 @@ trait PivotGroup extends js.Object {
     * The column offset of the source range that this grouping is based on.
     *
     * For example, if the source was `C10:E15`, a `sourceColumnOffset` of `0`
-    * means this group refers to column `C`, whereas the offset `1` would refer
-    * to column `D`.
+    * means this group refers to column `C`, whereas the offset `1` would
+    * refer to column `D`.
     */
   var sourceColumnOffset: js.UndefOr[Double] = js.undefined
   /**
@@ -76,17 +76,17 @@ object PivotGroup {
     repeatHeadings: js.UndefOr[Boolean] = js.undefined,
     showTotals: js.UndefOr[Boolean] = js.undefined,
     sortOrder: String = null,
-    sourceColumnOffset: Int | Double = null,
+    sourceColumnOffset: js.UndefOr[Double] = js.undefined,
     valueBucket: PivotGroupSortValueBucket = null,
     valueMetadata: js.Array[PivotGroupValueMetadata] = null
   ): PivotGroup = {
     val __obj = js.Dynamic.literal()
     if (groupRule != null) __obj.updateDynamic("groupRule")(groupRule.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(repeatHeadings)) __obj.updateDynamic("repeatHeadings")(repeatHeadings.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTotals)) __obj.updateDynamic("showTotals")(showTotals.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeatHeadings)) __obj.updateDynamic("repeatHeadings")(repeatHeadings.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTotals)) __obj.updateDynamic("showTotals")(showTotals.get.asInstanceOf[js.Any])
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
-    if (sourceColumnOffset != null) __obj.updateDynamic("sourceColumnOffset")(sourceColumnOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceColumnOffset)) __obj.updateDynamic("sourceColumnOffset")(sourceColumnOffset.get.asInstanceOf[js.Any])
     if (valueBucket != null) __obj.updateDynamic("valueBucket")(valueBucket.asInstanceOf[js.Any])
     if (valueMetadata != null) __obj.updateDynamic("valueMetadata")(valueMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotGroup]

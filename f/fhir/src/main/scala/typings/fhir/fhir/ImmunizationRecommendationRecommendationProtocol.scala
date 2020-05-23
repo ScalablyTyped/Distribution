@@ -48,7 +48,7 @@ object ImmunizationRecommendationRecommendationProtocol {
     _series: Element = null,
     authority: Reference = null,
     description: String = null,
-    doseSequence: Int | Double = null,
+    doseSequence: js.UndefOr[positiveInt] = js.undefined,
     extension: js.Array[Extension] = null,
     fhir_comments: js.Array[String] = null,
     id: String = null,
@@ -63,7 +63,7 @@ object ImmunizationRecommendationRecommendationProtocol {
     if (_series != null) __obj.updateDynamic("_series")(_series.asInstanceOf[js.Any])
     if (authority != null) __obj.updateDynamic("authority")(authority.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (doseSequence != null) __obj.updateDynamic("doseSequence")(doseSequence.asInstanceOf[js.Any])
+    if (!js.isUndefined(doseSequence)) __obj.updateDynamic("doseSequence")(doseSequence.get.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

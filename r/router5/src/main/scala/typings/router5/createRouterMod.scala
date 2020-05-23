@@ -1,6 +1,7 @@
 package typings.router5
 
 import typings.routeNode.mod.RouteNode
+import typings.router5.anon.PartialOptions
 import typings.router5.routerMod.Route
 import typings.router5.routerMod.Router
 import typings.std.Record

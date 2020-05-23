@@ -9,21 +9,21 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   /**
-    	 * @default null
-    	 * @description A callback to add more content to the resulting hash
-    	 */
+    * @default null
+    * @description A callback to add more content to the resulting hash
+    */
   var additionalHashContent: js.UndefOr[js.Function1[/* chunk */ js.Any, String]] = js.undefined
   /**
-    	 * @default 'md5'
-    	 * @description The hash algorithm to use
-    	 * @see {@link https://nodejs.org/api/crypto.html#crypto_crypto_createhash_algorithm_options}
-    	 */
+    * @default 'md5'
+    * @description The hash algorithm to use
+    * @see {@link https://nodejs.org/api/crypto.html#crypto_crypto_createhash_algorithm_options}
+    */
   var algorithm: js.UndefOr[String] = js.undefined
   /**
-    	 * @default 'hex'
-    	 * @description The digest enconding to use
-    	 * @see {@link https://nodejs.org/api/crypto.html#crypto_crypto_createhash_algorithm_options}
-    	 */
+    * @default 'hex'
+    * @description The digest enconding to use
+    * @see {@link https://nodejs.org/api/crypto.html#crypto_crypto_createhash_algorithm_options}
+    */
   var digest: js.UndefOr[hex | latin1 | base64] = js.undefined
 }
 

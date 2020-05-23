@@ -24,6 +24,14 @@ package object accessanalyzerMod {
   type FilterCriteriaMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.accessanalyzerMod.Criterion]
   type FindingId = java.lang.String
   type FindingIdList = js.Array[typings.awsSdk.accessanalyzerMod.FindingId]
+  type FindingSourceList = js.Array[typings.awsSdk.accessanalyzerMod.FindingSource]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.BUCKET_ACL
+    - typings.awsSdk.awsSdkStrings.POLICY
+    - typings.awsSdk.awsSdkStrings.S3_ACCESS_POINT
+    - java.lang.String
+  */
+  type FindingSourceType = typings.awsSdk.accessanalyzerMod._FindingSourceType | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.ACTIVE
     - typings.awsSdk.awsSdkStrings.ARCHIVED

@@ -13,9 +13,9 @@ trait IKnowledgeAnswers extends js.Object {
 
 object IKnowledgeAnswers {
   @scala.inline
-  def apply(answers: js.Array[IAnswer] = null): IKnowledgeAnswers = {
+  def apply(answers: js.UndefOr[Null | js.Array[IAnswer]] = js.undefined): IKnowledgeAnswers = {
     val __obj = js.Dynamic.literal()
-    if (answers != null) __obj.updateDynamic("answers")(answers.asInstanceOf[js.Any])
+    if (!js.isUndefined(answers)) __obj.updateDynamic("answers")(answers.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKnowledgeAnswers]
   }
 }

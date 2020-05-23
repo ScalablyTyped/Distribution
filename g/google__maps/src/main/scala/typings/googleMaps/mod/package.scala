@@ -24,6 +24,7 @@ package object mod {
   type LatLng = typings.googleMaps.mod._LatLng | typings.googleMaps.mod.LatLngArray | typings.googleMaps.mod.LatLngString
   type LatLngArray = js.Tuple2[scala.Double, scala.Double]
   type LatLngString = java.lang.String
+  type PlaceDetailsAddressComponentType = typings.googleMaps.googleMapsStrings.street_number
   type PlacePhotoResponse = java.lang.String
   type ResponseCallback[T] = js.Function2[
     /* err */ typings.googleMaps.googleMapsStrings.timeout | typings.googleMaps.mod.ClientResponse[T], 

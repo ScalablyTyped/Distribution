@@ -25,11 +25,15 @@ trait ResizeOptions extends js.Object {
 
 object ResizeOptions {
   @scala.inline
-  def apply(height: Int | Double = null, quality: String = null, width: Int | Double = null): ResizeOptions = {
+  def apply(
+    height: js.UndefOr[Double] = js.undefined,
+    quality: String = null,
+    width: js.UndefOr[Double] = js.undefined
+  ): ResizeOptions = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResizeOptions]
   }
 }

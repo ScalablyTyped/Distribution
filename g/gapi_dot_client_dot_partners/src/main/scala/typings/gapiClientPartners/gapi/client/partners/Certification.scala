@@ -27,11 +27,11 @@ object Certification {
     warning: js.UndefOr[Boolean] = js.undefined
   ): Certification = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(achieved)) __obj.updateDynamic("achieved")(achieved.asInstanceOf[js.Any])
+    if (!js.isUndefined(achieved)) __obj.updateDynamic("achieved")(achieved.get.asInstanceOf[js.Any])
     if (certificationType != null) __obj.updateDynamic("certificationType")(certificationType.asInstanceOf[js.Any])
     if (expiration != null) __obj.updateDynamic("expiration")(expiration.asInstanceOf[js.Any])
     if (lastAchieved != null) __obj.updateDynamic("lastAchieved")(lastAchieved.asInstanceOf[js.Any])
-    if (!js.isUndefined(warning)) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
+    if (!js.isUndefined(warning)) __obj.updateDynamic("warning")(warning.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Certification]
   }
 }

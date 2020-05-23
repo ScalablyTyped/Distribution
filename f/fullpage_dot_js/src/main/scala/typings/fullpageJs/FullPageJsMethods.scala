@@ -1,5 +1,6 @@
 package typings.fullpageJs
 
+import typings.fullpageJs.anon.ToSections
 import typings.fullpageJs.fullpageJsStrings.all
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait FullPageJsMethods extends js.Object {
-  var responsiveSlides: AnonToSections = js.native
+  var responsiveSlides: ToSections = js.native
   def apply(): js.Any = js.native
   def apply(options: FullPageJsOptions): js.Any = js.native
   /**

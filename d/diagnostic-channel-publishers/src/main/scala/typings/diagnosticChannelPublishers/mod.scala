@@ -10,6 +10,13 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   def enable(): Unit = js.native
   @js.native
+  object azuresdk extends js.Object {
+    val AzureMonitorSymbol: /* "Azure_Monitor_Tracer" */ String = js.native
+    val azureCoreTracing: IModulePatcher = js.native
+    def enable(): Unit = js.native
+  }
+  
+  @js.native
   object bunyan extends js.Object {
     val bunyan: IModulePatcher = js.native
     def enable(): Unit = js.native
@@ -57,6 +64,12 @@ object mod extends js.Object {
   @js.native
   object redis extends js.Object {
     val redis: IModulePatcher = js.native
+    def enable(): Unit = js.native
+  }
+  
+  @js.native
+  object tedious extends js.Object {
+    val tedious: IModulePatcher = js.native
     def enable(): Unit = js.native
   }
   

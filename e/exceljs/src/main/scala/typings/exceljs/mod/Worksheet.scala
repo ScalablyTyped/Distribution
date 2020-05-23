@@ -1,13 +1,13 @@
 package typings.exceljs.mod
 
-import typings.exceljs.AnonImageId
-import typings.exceljs.AnonIncludeEmpty
-import typings.exceljs.PartialColumn
-import typings.exceljs.PartialColumnAlignment
-import typings.exceljs.PartialPageSetup
-import typings.exceljs.PartialWorksheetProtectio
-import typings.exceljs.editAsstringhyperlinksIma
-import typings.exceljs.editAsstringhyperlinksImaEditAs
+import typings.exceljs.anon.ImageId
+import typings.exceljs.anon.IncludeEmpty
+import typings.exceljs.anon.PartialColumn
+import typings.exceljs.anon.PartialColumnAlignment
+import typings.exceljs.anon.PartialPageSetup
+import typings.exceljs.anon.PartialWorksheetProtectio
+import typings.exceljs.anon.editAsstringhyperlinksIma
+import typings.exceljs.anon.editAsstringhyperlinksImaEditAs
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -77,6 +77,10 @@ trait Worksheet extends js.Object {
   	 */
   def addBackgroundImage(imageId: Double): Unit = js.native
   /**
+  	 * add conditionalFormattingOptions
+  	 */
+  def addConditionalFormatting(cf: ConditionalFormattingOptions): Unit = js.native
+  /**
   	 * Using the image id from `Workbook.addImage`,
   	 * embed an image within the worksheet to cover a range
   	 */
@@ -100,6 +104,10 @@ trait Worksheet extends js.Object {
   def commit(): Unit = js.native
   def deleteColumnKey(key: String): Unit = js.native
   def destroy(): Unit = js.native
+  /**
+  	 * Duplicate rows and insert new rows
+  	 */
+  def duplicateRow(rowNum: Double, count: Double, insert: Boolean): Unit = js.native
   def eachColumnKey(callback: js.Function2[/* col */ PartialColumnAlignment, /* index */ Double, Unit]): Unit = js.native
   /**
   	 * Iterate over all rows that have values in a worksheet
@@ -108,7 +116,7 @@ trait Worksheet extends js.Object {
   /**
   	 * Iterate over all rows (including empty rows) in a worksheet
   	 */
-  def eachRow(opt: AnonIncludeEmpty, callback: js.Function2[/* row */ Row, /* rowNumber */ Double, Unit]): Unit = js.native
+  def eachRow(opt: IncludeEmpty, callback: js.Function2[/* row */ Row, /* rowNumber */ Double, Unit]): Unit = js.native
   def fillFormula(range: String, formula: String): Unit = js.native
   def fillFormula(range: String, formula: String, results: js.Array[js.Array[Double] | Double]): Unit = js.native
   def fillFormula(
@@ -154,7 +162,7 @@ trait Worksheet extends js.Object {
   	 */
   def getColumn(indexOrKey: Double): PartialColumn = js.native
   def getColumnKey(key: String): PartialColumn = js.native
-  def getImages(): js.Array[AnonImageId] = js.native
+  def getImages(): js.Array[ImageId] = js.native
   /**
   	 * Get or create row by 1-based index
   	 */
@@ -167,6 +175,10 @@ trait Worksheet extends js.Object {
   	 * fetch table by name or id
   	 */
   def getTable(name: String): Table = js.native
+  /**
+  	 *  fetch table
+  	 */
+  def getTables(): js.Array[js.Tuple2[Table, Unit]] = js.native
   /**
   	 * Merge cells, either:
   	 *
@@ -204,6 +216,14 @@ trait Worksheet extends js.Object {
   	 * Worksheet protection
   	 */
   def protect(password: String, options: PartialWorksheetProtectio): js.Promise[Unit] = js.native
+  /**
+  	 * delete conditionalFormattingOptions
+  	 */
+  def removeConditionalFormatting(filter: js.Any): Unit = js.native
+  /**
+  	 * delete table by name or id
+  	 */
+  def removeTable(name: String): Unit = js.native
   def setColumnKey(key: String, value: PartialColumn): Unit = js.native
   /**
   	 * Cut one or more columns (columns to the right are shifted left)

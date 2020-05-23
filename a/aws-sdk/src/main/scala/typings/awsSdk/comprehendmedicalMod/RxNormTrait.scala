@@ -18,10 +18,10 @@ trait RxNormTrait extends js.Object {
 
 object RxNormTrait {
   @scala.inline
-  def apply(Name: RxNormTraitName = null, Score: Int | Double = null): RxNormTrait = {
+  def apply(Name: RxNormTraitName = null, Score: js.UndefOr[Float] = js.undefined): RxNormTrait = {
     val __obj = js.Dynamic.literal()
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Score != null) __obj.updateDynamic("Score")(Score.asInstanceOf[js.Any])
+    if (!js.isUndefined(Score)) __obj.updateDynamic("Score")(Score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RxNormTrait]
   }
 }

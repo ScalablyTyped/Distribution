@@ -12,7 +12,7 @@ trait ApiParams
 
 object ApiParams {
   @scala.inline
-  def apply(v: String, StringDictionary: /* key */ StringDictionary[js.Any] = null): ApiParams = {
+  def apply(v: String, StringDictionary: /* name */ StringDictionary[js.Any] = null): ApiParams = {
     val __obj = js.Dynamic.literal(v = v.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ApiParams]

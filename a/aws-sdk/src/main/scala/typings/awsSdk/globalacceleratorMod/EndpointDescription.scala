@@ -31,18 +31,18 @@ trait EndpointDescription extends js.Object {
 object EndpointDescription {
   @scala.inline
   def apply(
-    ClientIPPreservationEnabled: js.UndefOr[Boolean] = js.undefined,
+    ClientIPPreservationEnabled: js.UndefOr[GenericBoolean] = js.undefined,
     EndpointId: GenericString = null,
     HealthReason: GenericString = null,
     HealthState: HealthState = null,
-    Weight: Int | Double = null
+    Weight: js.UndefOr[EndpointWeight] = js.undefined
   ): EndpointDescription = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ClientIPPreservationEnabled)) __obj.updateDynamic("ClientIPPreservationEnabled")(ClientIPPreservationEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(ClientIPPreservationEnabled)) __obj.updateDynamic("ClientIPPreservationEnabled")(ClientIPPreservationEnabled.get.asInstanceOf[js.Any])
     if (EndpointId != null) __obj.updateDynamic("EndpointId")(EndpointId.asInstanceOf[js.Any])
     if (HealthReason != null) __obj.updateDynamic("HealthReason")(HealthReason.asInstanceOf[js.Any])
     if (HealthState != null) __obj.updateDynamic("HealthState")(HealthState.asInstanceOf[js.Any])
-    if (Weight != null) __obj.updateDynamic("Weight")(Weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(Weight)) __obj.updateDynamic("Weight")(Weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointDescription]
   }
 }

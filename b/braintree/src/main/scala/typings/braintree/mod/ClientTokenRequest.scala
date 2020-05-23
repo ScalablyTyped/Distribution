@@ -1,6 +1,6 @@
 package typings.braintree.mod
 
-import typings.braintree.AnonFailOnDuplicatePaymentMethod
+import typings.braintree.anon.FailOnDuplicatePaymentMethod
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ClientTokenRequest extends js.Object {
   var customerId: js.UndefOr[String] = js.undefined
   var merchantAccountId: js.UndefOr[String] = js.undefined
-  var options: js.UndefOr[AnonFailOnDuplicatePaymentMethod] = js.undefined
+  var options: js.UndefOr[FailOnDuplicatePaymentMethod] = js.undefined
   var version: js.UndefOr[String] = js.undefined
 }
 
@@ -17,7 +17,7 @@ object ClientTokenRequest {
   def apply(
     customerId: String = null,
     merchantAccountId: String = null,
-    options: AnonFailOnDuplicatePaymentMethod = null,
+    options: FailOnDuplicatePaymentMethod = null,
     version: String = null
   ): ClientTokenRequest = {
     val __obj = js.Dynamic.literal()

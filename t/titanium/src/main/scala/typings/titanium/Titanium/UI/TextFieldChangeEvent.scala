@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the field value changes.
-		 */
+  * Fired when the field value changes.
+  */
 trait TextFieldChangeEvent extends TextFieldBaseEvent {
   /**
-  			 * New value of the field.
-  			 */
+    * New value of the field.
+    */
   var value: String
 }
 

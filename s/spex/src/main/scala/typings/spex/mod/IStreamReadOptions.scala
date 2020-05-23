@@ -15,12 +15,12 @@ object IStreamReadOptions {
   def apply(
     closable: js.UndefOr[Boolean] = js.undefined,
     readChunks: js.UndefOr[Boolean] = js.undefined,
-    readSize: Int | Double = null
+    readSize: js.UndefOr[Double] = js.undefined
   ): IStreamReadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.asInstanceOf[js.Any])
-    if (!js.isUndefined(readChunks)) __obj.updateDynamic("readChunks")(readChunks.asInstanceOf[js.Any])
-    if (readSize != null) __obj.updateDynamic("readSize")(readSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(readChunks)) __obj.updateDynamic("readChunks")(readChunks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(readSize)) __obj.updateDynamic("readSize")(readSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStreamReadOptions]
   }
 }

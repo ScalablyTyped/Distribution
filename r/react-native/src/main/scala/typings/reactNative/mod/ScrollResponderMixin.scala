@@ -1,7 +1,6 @@
 package typings.reactNative.mod
 
-import typings.reactNative.AnonAnimated
-import typings.reactNative.AnonAnimatedHeight
+import typings.reactNative.anon.AnimatedHeight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -226,9 +225,9 @@ trait ScrollResponderMixin extends SubscribableMixin {
   def scrollResponderScrollTo(x: Double): Unit = js.native
   def scrollResponderScrollTo(x: Double, y: Double): Unit = js.native
   def scrollResponderScrollTo(x: Double, y: Double, animated: Boolean): Unit = js.native
-  def scrollResponderScrollTo(x: AnonAnimated): Unit = js.native
-  def scrollResponderScrollTo(x: AnonAnimated, y: Double): Unit = js.native
-  def scrollResponderScrollTo(x: AnonAnimated, y: Double, animated: Boolean): Unit = js.native
+  def scrollResponderScrollTo(x: typings.reactNative.anon.Animated): Unit = js.native
+  def scrollResponderScrollTo(x: typings.reactNative.anon.Animated, y: Double): Unit = js.native
+  def scrollResponderScrollTo(x: typings.reactNative.anon.Animated, y: Double, animated: Boolean): Unit = js.native
   def scrollResponderTextInputFocusError(e: ScrollResponderEvent): Unit = js.native
   /**
     * A helper function to zoom to a specific rect in the scrollview. The argument has the shape
@@ -236,11 +235,8 @@ trait ScrollResponderMixin extends SubscribableMixin {
     *
     * @platform ios
     */
-  def scrollResponderZoomTo(rect: AnonAnimatedHeight): Unit = js.native
-  def scrollResponderZoomTo(
-    rect: AnonAnimatedHeight,
-     // deprecated, put this inside the rect argument instead
-  animated: Boolean
-  ): Unit = js.native
+  def scrollResponderZoomTo(rect: AnimatedHeight): Unit = js.native
+  def scrollResponderZoomTo(rect: AnimatedHeight,  // deprecated, put this inside the rect argument instead
+  animated: Boolean): Unit = js.native
 }
 

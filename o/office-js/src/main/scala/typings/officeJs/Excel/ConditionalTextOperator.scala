@@ -1,6 +1,5 @@
 package typings.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object ConditionalTextOperator extends js.Object {
   
   @js.native
   sealed trait notContains extends ConditionalTextOperator
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ConditionalTextOperator with String] = js.native
-  /* "BeginsWith" */ @js.native
-  object beginsWith extends TopLevel[beginsWith with String]
-  
-  /* "Contains" */ @js.native
-  object contains extends TopLevel[contains with String]
-  
-  /* "EndsWith" */ @js.native
-  object endsWith extends TopLevel[endsWith with String]
-  
-  /* "Invalid" */ @js.native
-  object invalid extends TopLevel[invalid with String]
-  
-  /* "NotContains" */ @js.native
-  object notContains extends TopLevel[notContains with String]
   
 }
 

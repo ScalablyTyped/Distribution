@@ -25,8 +25,7 @@ trait ICompletableAttributes extends js.Object {
 object ICompletableAttributes {
   @scala.inline
   def apply(connector: IDataConnector[IReply, Unit, IRequest, String], editor: IEditor = null): ICompletableAttributes = {
-    val __obj = js.Dynamic.literal(connector = connector.asInstanceOf[js.Any])
-    if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(connector = connector.asInstanceOf[js.Any], editor = editor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICompletableAttributes]
   }
 }

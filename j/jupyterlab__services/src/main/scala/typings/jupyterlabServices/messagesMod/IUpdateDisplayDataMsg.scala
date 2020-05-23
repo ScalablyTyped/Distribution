@@ -1,7 +1,7 @@
 package typings.jupyterlabServices.messagesMod
 
-import typings.jupyterlabServices.AnonMetadata
-import typings.jupyterlabServices.AnonTransientAnonDisplayidString
+import typings.jupyterlabServices.anon.Metadata
+import typings.jupyterlabServices.anon.TransientDisplayidString
 import typings.jupyterlabServices.jupyterlabServicesStrings.iopub
 import typings.jupyterlabServices.jupyterlabServicesStrings.update_display_data
 import typings.luminoCoreutils.jsonMod.JSONObject
@@ -15,14 +15,14 @@ trait IUpdateDisplayDataMsg
   extends IIOPubMessage[update_display_data]
      with _Message {
   @JSName("content")
-  var content_IUpdateDisplayDataMsg: AnonMetadata with AnonTransientAnonDisplayidString
+  var content_IUpdateDisplayDataMsg: Metadata with TransientDisplayidString
 }
 
 object IUpdateDisplayDataMsg {
   @scala.inline
   def apply(
     channel: iopub,
-    content: AnonMetadata with AnonTransientAnonDisplayidString,
+    content: Metadata with TransientDisplayidString,
     header: IHeader[update_display_data],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,

@@ -22,9 +22,9 @@ trait SuggestModel extends js.Object {
 
 object SuggestModel {
   @scala.inline
-  def apply(found: Int | scala.Double = null, query: String = null, suggestions: Suggestions = null): SuggestModel = {
+  def apply(found: js.UndefOr[Long] = js.undefined, query: String = null, suggestions: Suggestions = null): SuggestModel = {
     val __obj = js.Dynamic.literal()
-    if (found != null) __obj.updateDynamic("found")(found.asInstanceOf[js.Any])
+    if (!js.isUndefined(found)) __obj.updateDynamic("found")(found.get.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuggestModel]

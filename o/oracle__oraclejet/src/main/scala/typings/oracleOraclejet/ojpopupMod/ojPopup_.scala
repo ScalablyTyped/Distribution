@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojpopupMod
 
-import typings.oracleOraclejet.AnonAriaCloseSkipLink
+import typings.oracleOraclejet.anon.AriaCloseSkipLink
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.baseComponent
 import typings.oracleOraclejet.ojpopupMod.ojPopup.Position
@@ -61,7 +61,7 @@ trait ojPopup_ extends baseComponent[ojPopupSettableProperties] {
   var position: Position = js.native
   var tail: none | simple = js.native
   @JSName("translations")
-  var translations_ojPopup_ : AnonAriaCloseSkipLink = js.native
+  var translations_ojPopup_ : AriaCloseSkipLink = js.native
   def addEventListener(
     `type`: autoDismissChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | focusLoss], _]
@@ -237,6 +237,6 @@ trait ojPopup_ extends baseComponent[ojPopupSettableProperties] {
   @JSName("setProperty")
   def setProperty_position(property: position, value: Position): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonAriaCloseSkipLink): Unit = js.native
+  def setProperty_translations(property: translations, value: AriaCloseSkipLink): Unit = js.native
 }
 

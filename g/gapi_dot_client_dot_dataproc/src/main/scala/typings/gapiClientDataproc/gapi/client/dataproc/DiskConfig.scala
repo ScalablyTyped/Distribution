@@ -17,10 +17,10 @@ trait DiskConfig extends js.Object {
 
 object DiskConfig {
   @scala.inline
-  def apply(bootDiskSizeGb: Int | Double = null, numLocalSsds: Int | Double = null): DiskConfig = {
+  def apply(bootDiskSizeGb: js.UndefOr[Double] = js.undefined, numLocalSsds: js.UndefOr[Double] = js.undefined): DiskConfig = {
     val __obj = js.Dynamic.literal()
-    if (bootDiskSizeGb != null) __obj.updateDynamic("bootDiskSizeGb")(bootDiskSizeGb.asInstanceOf[js.Any])
-    if (numLocalSsds != null) __obj.updateDynamic("numLocalSsds")(numLocalSsds.asInstanceOf[js.Any])
+    if (!js.isUndefined(bootDiskSizeGb)) __obj.updateDynamic("bootDiskSizeGb")(bootDiskSizeGb.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numLocalSsds)) __obj.updateDynamic("numLocalSsds")(numLocalSsds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiskConfig]
   }
 }

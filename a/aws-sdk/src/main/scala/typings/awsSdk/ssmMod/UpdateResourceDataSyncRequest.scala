@@ -15,7 +15,7 @@ trait UpdateResourceDataSyncRequest extends js.Object {
     */
   var SyncSource: ResourceDataSyncSource = js.native
   /**
-    * The type of resource data sync. If SyncType is SyncToDestination, then the resource data sync synchronizes data to an Amazon S3 bucket. If the SyncType is SyncFromSource then the resource data sync synchronizes data from AWS Organizations or from multiple AWS Regions.
+    * The type of resource data sync. The supported SyncType is SyncFromSource.
     */
   var SyncType: ResourceDataSyncType = js.native
 }

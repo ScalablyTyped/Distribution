@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js/lib/Constants", "C.REFER")
 @js.native
 object REFER
-  extends TopLevel[typings.sipJs.sipJsStrings.REFER]
+  extends TopLevel[/* "0.15.11" */ String]
 

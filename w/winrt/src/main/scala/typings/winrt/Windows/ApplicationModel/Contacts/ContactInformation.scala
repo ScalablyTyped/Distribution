@@ -7,24 +7,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.Contacts.ContactInformation")
-@js.native
-class ContactInformation () extends IContactInformation {
-  /* CompleteClass */
-  override var customFields: IVectorView[ContactField] = js.native
-  /* CompleteClass */
-  override var emails: IVectorView[ContactField] = js.native
-  /* CompleteClass */
-  override var instantMessages: IVectorView[ContactInstantMessageField] = js.native
-  /* CompleteClass */
-  override var locations: IVectorView[ContactLocationField] = js.native
-  /* CompleteClass */
-  override var name: String = js.native
-  /* CompleteClass */
-  override var phoneNumbers: IVectorView[ContactField] = js.native
-  /* CompleteClass */
-  override def getThumbnailAsync(): IAsyncOperation[IRandomAccessStreamWithContentType] = js.native
-  /* CompleteClass */
-  override def queryCustomFields(customName: String): IVectorView[ContactField] = js.native
+trait ContactInformation extends IContactInformation
+
+object ContactInformation {
+  @scala.inline
+  def apply(
+    customFields: IVectorView[ContactField],
+    emails: IVectorView[ContactField],
+    getThumbnailAsync: () => IAsyncOperation[IRandomAccessStreamWithContentType],
+    instantMessages: IVectorView[ContactInstantMessageField],
+    locations: IVectorView[ContactLocationField],
+    name: String,
+    phoneNumbers: IVectorView[ContactField],
+    queryCustomFields: String => IVectorView[ContactField]
+  ): ContactInformation = {
+    val __obj = js.Dynamic.literal(customFields = customFields.asInstanceOf[js.Any], emails = emails.asInstanceOf[js.Any], getThumbnailAsync = js.Any.fromFunction0(getThumbnailAsync), instantMessages = instantMessages.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], phoneNumbers = phoneNumbers.asInstanceOf[js.Any], queryCustomFields = js.Any.fromFunction1(queryCustomFields))
+    __obj.asInstanceOf[ContactInformation]
+  }
 }
 

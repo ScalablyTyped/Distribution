@@ -1,5 +1,6 @@
 package typings.jpm
 
+import typings.jpm.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +12,6 @@ import scala.scalajs.js.annotation._
 @JSImport("sdk/ui/frame", JSImport.Namespace)
 @js.native
 object frameMod extends js.Object {
-  def Frame(options: AnonName): typings.jpm.FFAddonSDK.Frame = js.native
+  def Frame(options: Name): typings.jpm.FFAddonSDK.Frame = js.native
 }
 

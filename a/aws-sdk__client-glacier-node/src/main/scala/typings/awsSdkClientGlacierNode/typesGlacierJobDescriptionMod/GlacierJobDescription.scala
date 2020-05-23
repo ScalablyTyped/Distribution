@@ -106,12 +106,12 @@ object GlacierJobDescription {
     Action: ArchiveRetrieval | InventoryRetrieval | Select | String = null,
     ArchiveId: String = null,
     ArchiveSHA256TreeHash: String = null,
-    ArchiveSizeInBytes: Int | Double = null,
+    ArchiveSizeInBytes: js.UndefOr[Double] = js.undefined,
     Completed: js.UndefOr[Boolean] = js.undefined,
     CompletionDate: String = null,
     CreationDate: String = null,
     InventoryRetrievalParameters: InventoryRetrievalJobDescription = null,
-    InventorySizeInBytes: Int | Double = null,
+    InventorySizeInBytes: js.UndefOr[Double] = js.undefined,
     JobDescription: String = null,
     JobId: String = null,
     JobOutputPath: String = null,
@@ -129,12 +129,12 @@ object GlacierJobDescription {
     if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
     if (ArchiveId != null) __obj.updateDynamic("ArchiveId")(ArchiveId.asInstanceOf[js.Any])
     if (ArchiveSHA256TreeHash != null) __obj.updateDynamic("ArchiveSHA256TreeHash")(ArchiveSHA256TreeHash.asInstanceOf[js.Any])
-    if (ArchiveSizeInBytes != null) __obj.updateDynamic("ArchiveSizeInBytes")(ArchiveSizeInBytes.asInstanceOf[js.Any])
-    if (!js.isUndefined(Completed)) __obj.updateDynamic("Completed")(Completed.asInstanceOf[js.Any])
+    if (!js.isUndefined(ArchiveSizeInBytes)) __obj.updateDynamic("ArchiveSizeInBytes")(ArchiveSizeInBytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Completed)) __obj.updateDynamic("Completed")(Completed.get.asInstanceOf[js.Any])
     if (CompletionDate != null) __obj.updateDynamic("CompletionDate")(CompletionDate.asInstanceOf[js.Any])
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
     if (InventoryRetrievalParameters != null) __obj.updateDynamic("InventoryRetrievalParameters")(InventoryRetrievalParameters.asInstanceOf[js.Any])
-    if (InventorySizeInBytes != null) __obj.updateDynamic("InventorySizeInBytes")(InventorySizeInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(InventorySizeInBytes)) __obj.updateDynamic("InventorySizeInBytes")(InventorySizeInBytes.get.asInstanceOf[js.Any])
     if (JobDescription != null) __obj.updateDynamic("JobDescription")(JobDescription.asInstanceOf[js.Any])
     if (JobId != null) __obj.updateDynamic("JobId")(JobId.asInstanceOf[js.Any])
     if (JobOutputPath != null) __obj.updateDynamic("JobOutputPath")(JobOutputPath.asInstanceOf[js.Any])

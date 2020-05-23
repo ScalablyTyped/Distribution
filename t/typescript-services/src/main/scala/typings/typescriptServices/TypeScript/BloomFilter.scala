@@ -4,26 +4,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.BloomFilter")
-@js.native
-class BloomFilter protected () extends js.Object {
-  def this(expectedCount: Double) = this()
-  var bitArray: js.Any = js.native
-  var hashFunctionCount: js.Any = js.native
-  def add(value: String): Unit = js.native
-  def addKeys(keys: IIndexable[_]): Unit = js.native
-  /* private */ def computeHash(key: js.Any, seed: js.Any): js.Any = js.native
-  def isEquivalent(filter: BloomFilter): Boolean = js.native
-  def probablyContains(value: String): Boolean = js.native
+trait BloomFilter extends js.Object {
+  var bitArray: js.Any
+  var hashFunctionCount: js.Any
+  def add(value: String): Unit
+  def addKeys(keys: IIndexable[_]): Unit
+  /* private */ def computeHash(key: js.Any, seed: js.Any): js.Any
+  def isEquivalent(filter: BloomFilter): Boolean
+  def probablyContains(value: String): Boolean
 }
 
-/* static members */
-@JSGlobal("TypeScript.BloomFilter")
-@js.native
-object BloomFilter extends js.Object {
-  var falsePositiveProbability: Double = js.native
-  def computeK(expectedCount: Double): Double = js.native
-  def computeM(expectedCount: Double): Double = js.native
-  def isEquivalent(array1: js.Array[Boolean], array2: js.Array[Boolean]): Boolean = js.native
+object BloomFilter {
+  @scala.inline
+  def apply(
+    add: String => Unit,
+    addKeys: IIndexable[_] => Unit,
+    bitArray: js.Any,
+    computeHash: (js.Any, js.Any) => js.Any,
+    hashFunctionCount: js.Any,
+    isEquivalent: BloomFilter => Boolean,
+    probablyContains: String => Boolean
+  ): BloomFilter = {
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), addKeys = js.Any.fromFunction1(addKeys), bitArray = bitArray.asInstanceOf[js.Any], computeHash = js.Any.fromFunction2(computeHash), hashFunctionCount = hashFunctionCount.asInstanceOf[js.Any], isEquivalent = js.Any.fromFunction1(isEquivalent), probablyContains = js.Any.fromFunction1(probablyContains))
+    __obj.asInstanceOf[BloomFilter]
+  }
 }
 

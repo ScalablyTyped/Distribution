@@ -12,13 +12,13 @@ object options {
   @scala.inline
   def apply(
     message: String,
-    duration: Int | Double = null,
-    progress: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
+    progress: js.UndefOr[Double] = js.undefined,
     `type`: `type` = null
   ): options = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(progress)) __obj.updateDynamic("progress")(progress.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[options]
   }

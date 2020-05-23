@@ -61,7 +61,7 @@ object DataSet {
   def apply(
     Arn: Arn = null,
     ColumnGroups: ColumnGroupList = null,
-    ConsumedSpiceCapacityInBytes: Int | scala.Double = null,
+    ConsumedSpiceCapacityInBytes: js.UndefOr[Long_] = js.undefined,
     CreatedTime: Timestamp_ = null,
     DataSetId: ResourceId = null,
     ImportMode: DataSetImportMode = null,
@@ -75,7 +75,7 @@ object DataSet {
     val __obj = js.Dynamic.literal()
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
     if (ColumnGroups != null) __obj.updateDynamic("ColumnGroups")(ColumnGroups.asInstanceOf[js.Any])
-    if (ConsumedSpiceCapacityInBytes != null) __obj.updateDynamic("ConsumedSpiceCapacityInBytes")(ConsumedSpiceCapacityInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConsumedSpiceCapacityInBytes)) __obj.updateDynamic("ConsumedSpiceCapacityInBytes")(ConsumedSpiceCapacityInBytes.get.asInstanceOf[js.Any])
     if (CreatedTime != null) __obj.updateDynamic("CreatedTime")(CreatedTime.asInstanceOf[js.Any])
     if (DataSetId != null) __obj.updateDynamic("DataSetId")(DataSetId.asInstanceOf[js.Any])
     if (ImportMode != null) __obj.updateDynamic("ImportMode")(ImportMode.asInstanceOf[js.Any])

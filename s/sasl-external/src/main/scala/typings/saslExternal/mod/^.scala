@@ -1,7 +1,7 @@
 package typings.saslExternal.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.saslExternal.TypeofExternalMechanism
+import typings.saslExternal.anon.TypeofExternalMechanism
 import typings.saslExternal.saslExternalBooleans.`true`
 import typings.saslExternal.saslExternalStrings.EXTERNAL
 import scala.scalajs.js

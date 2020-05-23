@@ -30,24 +30,24 @@ trait IHTTP extends js.Object {
 object IHTTP {
   @scala.inline
   def apply(
-    host: String = null,
-    method: Method = null,
-    path: String = null,
-    protocol: String = null,
-    requestHeaders: StringDictionary[IValues] = null,
-    responseHeaders: StringDictionary[IValues] = null,
-    secure: js.UndefOr[Boolean] = js.undefined,
-    statusCode: Int | Double = null
+    host: js.UndefOr[Null | String] = js.undefined,
+    method: js.UndefOr[Null | Method] = js.undefined,
+    path: js.UndefOr[Null | String] = js.undefined,
+    protocol: js.UndefOr[Null | String] = js.undefined,
+    requestHeaders: js.UndefOr[Null | StringDictionary[IValues]] = js.undefined,
+    responseHeaders: js.UndefOr[Null | StringDictionary[IValues]] = js.undefined,
+    secure: js.UndefOr[Null | Boolean] = js.undefined,
+    statusCode: js.UndefOr[Null | Double] = js.undefined
   ): IHTTP = {
     val __obj = js.Dynamic.literal()
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
-    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders.asInstanceOf[js.Any])
+    if (!js.isUndefined(host)) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (!js.isUndefined(method)) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (!js.isUndefined(path)) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (!js.isUndefined(protocol)) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestHeaders)) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
+    if (!js.isUndefined(responseHeaders)) __obj.updateDynamic("responseHeaders")(responseHeaders.asInstanceOf[js.Any])
     if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusCode)) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHTTP]
   }
 }

@@ -96,19 +96,19 @@ object Options {
     fontname: String = null,
     image: String = null,
     label: String = null,
-    left: Int | Double = null,
-    mPosX: Int | Double = null,
-    mPosY: Int | Double = null,
-    mSize: Int | Double = null,
-    maxVersion: Int | Double = null,
-    minVersion: Int | Double = null,
+    left: js.UndefOr[Double] = js.undefined,
+    mPosX: js.UndefOr[Double] = js.undefined,
+    mPosY: js.UndefOr[Double] = js.undefined,
+    mSize: js.UndefOr[Double] = js.undefined,
+    maxVersion: js.UndefOr[Double] = js.undefined,
+    minVersion: js.UndefOr[Double] = js.undefined,
     mode: Mode = null,
-    quiet: Int | Double = null,
-    radius: Int | Double = null,
+    quiet: js.UndefOr[Double] = js.undefined,
+    radius: js.UndefOr[Double] = js.undefined,
     render: String = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     text: String = null,
-    top: Int | Double = null
+    top: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
@@ -118,19 +118,19 @@ object Options {
     if (fontname != null) __obj.updateDynamic("fontname")(fontname.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (mPosX != null) __obj.updateDynamic("mPosX")(mPosX.asInstanceOf[js.Any])
-    if (mPosY != null) __obj.updateDynamic("mPosY")(mPosY.asInstanceOf[js.Any])
-    if (mSize != null) __obj.updateDynamic("mSize")(mSize.asInstanceOf[js.Any])
-    if (maxVersion != null) __obj.updateDynamic("maxVersion")(maxVersion.asInstanceOf[js.Any])
-    if (minVersion != null) __obj.updateDynamic("minVersion")(minVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mPosX)) __obj.updateDynamic("mPosX")(mPosX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mPosY)) __obj.updateDynamic("mPosY")(mPosY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mSize)) __obj.updateDynamic("mSize")(mSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxVersion)) __obj.updateDynamic("maxVersion")(maxVersion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minVersion)) __obj.updateDynamic("minVersion")(minVersion.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (quiet != null) __obj.updateDynamic("quiet")(quiet.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

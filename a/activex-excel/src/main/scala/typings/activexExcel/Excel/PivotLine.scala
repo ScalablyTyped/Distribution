@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.PivotLine")
 @js.native
-class PivotLine protected () extends js.Object {
+trait PivotLine extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
   @JSName("Excel.PivotLine_typekey")

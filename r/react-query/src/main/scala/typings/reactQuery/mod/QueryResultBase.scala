@@ -1,6 +1,6 @@
 package typings.reactQuery.mod
 
-import typings.reactQuery.AnonForce
+import typings.reactQuery.anon.Force
 import typings.reactQuery.reactQueryStrings.error
 import typings.reactQuery.reactQueryStrings.loading
 import typings.reactQuery.reactQueryStrings.success
@@ -15,6 +15,6 @@ trait QueryResultBase[TResult] extends js.Object {
   var isFetching: Boolean = js.native
   var status: loading | error | success = js.native
   def refetch(): js.Promise[TResult] = js.native
-  def refetch(hasForceThrowOnError: AnonForce): js.Promise[TResult] = js.native
+  def refetch(hasForceThrowOnError: Force): js.Promise[TResult] = js.native
 }
 

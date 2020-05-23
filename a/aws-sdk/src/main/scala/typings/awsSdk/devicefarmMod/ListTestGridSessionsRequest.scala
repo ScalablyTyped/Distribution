@@ -48,7 +48,7 @@ object ListTestGridSessionsRequest {
     creationTimeBefore: DateTime = null,
     endTimeAfter: DateTime = null,
     endTimeBefore: DateTime = null,
-    maxResult: Int | scala.Double = null,
+    maxResult: js.UndefOr[MaxPageSize] = js.undefined,
     nextToken: PaginationToken = null,
     status: TestGridSessionStatus = null
   ): ListTestGridSessionsRequest = {
@@ -57,7 +57,7 @@ object ListTestGridSessionsRequest {
     if (creationTimeBefore != null) __obj.updateDynamic("creationTimeBefore")(creationTimeBefore.asInstanceOf[js.Any])
     if (endTimeAfter != null) __obj.updateDynamic("endTimeAfter")(endTimeAfter.asInstanceOf[js.Any])
     if (endTimeBefore != null) __obj.updateDynamic("endTimeBefore")(endTimeBefore.asInstanceOf[js.Any])
-    if (maxResult != null) __obj.updateDynamic("maxResult")(maxResult.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResult)) __obj.updateDynamic("maxResult")(maxResult.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTestGridSessionsRequest]

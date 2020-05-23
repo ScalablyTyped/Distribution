@@ -1,6 +1,6 @@
 package typings.knex.mod
 
-import typings.knex.ReadonlyObject
+import typings.knex.anon.ReadonlyObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -69,7 +69,7 @@ object ListNotebookInstancesInput {
     DefaultCodeRepositoryContains: CodeRepositoryContains = null,
     LastModifiedTimeAfter: LastModifiedTime = null,
     LastModifiedTimeBefore: LastModifiedTime = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NameContains: NotebookInstanceNameContains = null,
     NextToken: NextToken = null,
     NotebookInstanceLifecycleConfigNameContains: NotebookInstanceLifecycleConfigName = null,
@@ -84,7 +84,7 @@ object ListNotebookInstancesInput {
     if (DefaultCodeRepositoryContains != null) __obj.updateDynamic("DefaultCodeRepositoryContains")(DefaultCodeRepositoryContains.asInstanceOf[js.Any])
     if (LastModifiedTimeAfter != null) __obj.updateDynamic("LastModifiedTimeAfter")(LastModifiedTimeAfter.asInstanceOf[js.Any])
     if (LastModifiedTimeBefore != null) __obj.updateDynamic("LastModifiedTimeBefore")(LastModifiedTimeBefore.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NameContains != null) __obj.updateDynamic("NameContains")(NameContains.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (NotebookInstanceLifecycleConfigNameContains != null) __obj.updateDynamic("NotebookInstanceLifecycleConfigNameContains")(NotebookInstanceLifecycleConfigNameContains.asInstanceOf[js.Any])

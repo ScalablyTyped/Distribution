@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Core
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object TimedTextUnit extends js.Object {
   /** The style value is expressed in pixels. */
   @js.native
   sealed trait pixels extends TimedTextUnit
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TimedTextUnit with Double] = js.native
-  /* 1 */ @js.native
-  object percentage extends TopLevel[percentage with Double]
-  
-  /* 0 */ @js.native
-  object pixels extends TopLevel[pixels with Double]
   
 }
 

@@ -38,18 +38,18 @@ object AnnotationsPitchforkTypeInnerBackgroundOptions {
   def apply(
     dashStyle: DashStyleValue = null,
     fill: String = null,
-    snap: Int | Double = null,
+    snap: js.UndefOr[Double] = js.undefined,
     src: String = null,
     stroke: ColorString = null,
-    strokeWidth: Int | Double = null
+    strokeWidth: js.UndefOr[Double] = js.undefined
   ): AnnotationsPitchforkTypeInnerBackgroundOptions = {
     val __obj = js.Dynamic.literal()
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (snap != null) __obj.updateDynamic("snap")(snap.asInstanceOf[js.Any])
+    if (!js.isUndefined(snap)) __obj.updateDynamic("snap")(snap.get.asInstanceOf[js.Any])
     if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(strokeWidth)) __obj.updateDynamic("strokeWidth")(strokeWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsPitchforkTypeInnerBackgroundOptions]
   }
 }

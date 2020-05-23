@@ -1,6 +1,6 @@
 package typings.maquette.interfacesMod
 
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.Node
 import scala.scalajs.js
@@ -31,7 +31,7 @@ object ProjectionOptions {
   def apply(
     eventHandlerInterceptor: (/* propertyName */ String, /* eventHandler */ js.Function, /* domNode */ Node, /* properties */ VNodeProperties) => js.UndefOr[js.Function] = null,
     namespace: String = null,
-    performanceLogger: (/* eventType */ PerformanceLoggerEvent, /* trigger */ js.UndefOr[Event_]) => Unit = null,
+    performanceLogger: (/* eventType */ PerformanceLoggerEvent, /* trigger */ js.UndefOr[Event]) => Unit = null,
     styleApplyer: (/* domNode */ HTMLElement, /* styleName */ String, /* value */ String) => Unit = null
   ): ProjectionOptions = {
     val __obj = js.Dynamic.literal()

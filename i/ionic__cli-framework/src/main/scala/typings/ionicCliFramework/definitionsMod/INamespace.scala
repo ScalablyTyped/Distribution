@@ -1,6 +1,6 @@
 package typings.ionicCliFramework.definitionsMod
 
-import typings.ionicCliFramework.AnonCommands
+import typings.ionicCliFramework.anon.Commands
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait INamespace[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M,
   def getMetadata(): js.Promise[NamespaceMetadata] = js.native
   def getNamespaces(): js.Promise[INamespaceMap[C, N, M, I, O]] = js.native
   def groupCommandsByNamespace(commands: js.Array[HydratedCommandMetadata[C, N, M, I, O]]): js.Promise[
-    js.Array[(HydratedNamespaceMetadata[C, N, M, I, O]) with (AnonCommands[C, N, M, I, O])]
+    js.Array[(HydratedNamespaceMetadata[C, N, M, I, O]) with (Commands[C, N, M, I, O])]
   ] = js.native
   def locate(argv: js.Array[String]): js.Promise[NamespaceLocateResult[C, N, M, I, O]] = js.native
   def locate(argv: js.Array[String], options: NamespaceLocateOptions): js.Promise[NamespaceLocateResult[C, N, M, I, O]] = js.native

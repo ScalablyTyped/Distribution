@@ -11,10 +11,10 @@ trait PinchRotateOptions extends js.Object {
 
 object PinchRotateOptions {
   @scala.inline
-  def apply(duration: Int | Double = null, threshold: Int | Double = null): PinchRotateOptions = {
+  def apply(duration: js.UndefOr[Double] = js.undefined, threshold: js.UndefOr[Double] = js.undefined): PinchRotateOptions = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PinchRotateOptions]
   }
 }

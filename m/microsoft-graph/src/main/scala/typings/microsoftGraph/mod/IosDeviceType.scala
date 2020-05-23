@@ -15,8 +15,8 @@ object IosDeviceType {
   @scala.inline
   def apply(iPad: js.UndefOr[Boolean] = js.undefined, iPhoneAndIPod: js.UndefOr[Boolean] = js.undefined): IosDeviceType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(iPad)) __obj.updateDynamic("iPad")(iPad.asInstanceOf[js.Any])
-    if (!js.isUndefined(iPhoneAndIPod)) __obj.updateDynamic("iPhoneAndIPod")(iPhoneAndIPod.asInstanceOf[js.Any])
+    if (!js.isUndefined(iPad)) __obj.updateDynamic("iPad")(iPad.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(iPhoneAndIPod)) __obj.updateDynamic("iPhoneAndIPod")(iPhoneAndIPod.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IosDeviceType]
   }
 }

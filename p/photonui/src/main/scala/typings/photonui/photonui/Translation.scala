@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("photonui.Translation")
 @js.native
-class Translation () extends Base {
+trait Translation extends Base {
   var locale: String = js.native
   def addCatalogs(catalogs: StringDictionary[js.Any]): Unit = js.native
   def enableDomScan(enable: Boolean): Unit = js.native

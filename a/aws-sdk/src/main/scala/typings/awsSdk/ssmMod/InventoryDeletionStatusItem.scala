@@ -15,7 +15,7 @@ trait InventoryDeletionStatusItem extends js.Object {
     */
   var DeletionStartTime: js.UndefOr[InventoryDeletionStartTime] = js.native
   /**
-    * Information about the delete operation. For more information about this summary, see Understanding the Delete Inventory Summary in the AWS Systems Manager User Guide.
+    * Information about the delete operation. For more information about this summary, see Understanding the delete inventory summary in the AWS Systems Manager User Guide.
     */
   var DeletionSummary: js.UndefOr[InventoryDeletionSummary] = js.native
   /**

@@ -1,7 +1,7 @@
 package typings.nodeHueApi.mod
 
-import typings.nodeHueApi.AnonDescription
-import typings.nodeHueApi.AnonMajor
+import typings.nodeHueApi.anon.Description
+import typings.nodeHueApi.anon.Major
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation._
 trait IBridgeDescription extends js.Object {
   var icons: js.UndefOr[js.Array[IBridgeIcon]] = js.undefined
   var manufacturer: String
-  var model: AnonDescription
+  var model: Description
   var name: String
   var url: String
-  var version: AnonMajor
+  var version: Major
 }
 
 object IBridgeDescription {
   @scala.inline
   def apply(
     manufacturer: String,
-    model: AnonDescription,
+    model: Description,
     name: String,
     url: String,
-    version: AnonMajor,
+    version: Major,
     icons: js.Array[IBridgeIcon] = null
   ): IBridgeDescription = {
     val __obj = js.Dynamic.literal(manufacturer = manufacturer.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])

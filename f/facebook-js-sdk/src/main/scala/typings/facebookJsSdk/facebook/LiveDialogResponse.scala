@@ -18,11 +18,11 @@ object LiveDialogResponse {
     secure_stream_url: String,
     status: String,
     stream_url: String,
-    error_code: Int | Double = null,
+    error_code: js.UndefOr[Double] = js.undefined,
     error_message: String = null
   ): LiveDialogResponse = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], secure_stream_url = secure_stream_url.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], stream_url = stream_url.asInstanceOf[js.Any])
-    if (error_code != null) __obj.updateDynamic("error_code")(error_code.asInstanceOf[js.Any])
+    if (!js.isUndefined(error_code)) __obj.updateDynamic("error_code")(error_code.get.asInstanceOf[js.Any])
     if (error_message != null) __obj.updateDynamic("error_message")(error_message.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveDialogResponse]
   }

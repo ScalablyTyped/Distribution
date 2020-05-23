@@ -19,5 +19,15 @@ class GradientStop ()
   extends typings.paper.paper.GradientStop {
   def this(color: Color) = this()
   def this(color: Color, offset: Double) = this()
+  /** 
+    * The color of the gradient stop.
+    */
+  /* CompleteClass */
+  override var color: Color = js.native
+  /** 
+    * The ramp-point of the gradient stop as a value between `0` and `1`.
+    */
+  /* CompleteClass */
+  override var offset: Double = js.native
 }
 

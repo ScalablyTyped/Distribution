@@ -15,10 +15,13 @@ trait ITimestamp extends js.Object {
 
 object ITimestamp {
   @scala.inline
-  def apply(nanos: Int | Double = null, seconds: Double | Long | String = null): ITimestamp = {
+  def apply(
+    nanos: js.UndefOr[Null | Double] = js.undefined,
+    seconds: js.UndefOr[Null | Double | Long | String] = js.undefined
+  ): ITimestamp = {
     val __obj = js.Dynamic.literal()
-    if (nanos != null) __obj.updateDynamic("nanos")(nanos.asInstanceOf[js.Any])
-    if (seconds != null) __obj.updateDynamic("seconds")(seconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(nanos)) __obj.updateDynamic("nanos")(nanos.asInstanceOf[js.Any])
+    if (!js.isUndefined(seconds)) __obj.updateDynamic("seconds")(seconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITimestamp]
   }
 }

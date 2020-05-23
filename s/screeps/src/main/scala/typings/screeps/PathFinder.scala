@@ -1,6 +1,6 @@
 package typings.screeps
 
-import org.scalablytyped.runtime.TopLevel
+import typings.screeps.anon.Range
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,10 +15,8 @@ trait PathFinder extends js.Object {
     * Container for custom navigation cost data.
     */
   var CostMatrix: typings.screeps.CostMatrix = js.native
-  def search(origin: RoomPosition, goal: js.Array[RoomPosition | AnonPosRange]): PathFinderPath = js.native
-  def search(origin: RoomPosition, goal: js.Array[RoomPosition | AnonPosRange], opts: PathFinderOpts): PathFinderPath = js.native
-  def search(origin: RoomPosition, goal: AnonPosRange): PathFinderPath = js.native
-  def search(origin: RoomPosition, goal: AnonPosRange, opts: PathFinderOpts): PathFinderPath = js.native
+  def search(origin: RoomPosition, goal: js.Array[RoomPosition | Range]): PathFinderPath = js.native
+  def search(origin: RoomPosition, goal: js.Array[RoomPosition | Range], opts: PathFinderOpts): PathFinderPath = js.native
   /**
     * Find an optimal path between origin and goal.
     *
@@ -28,6 +26,8 @@ trait PathFinder extends js.Object {
     */
   def search(origin: RoomPosition, goal: RoomPosition): PathFinderPath = js.native
   def search(origin: RoomPosition, goal: RoomPosition, opts: PathFinderOpts): PathFinderPath = js.native
+  def search(origin: RoomPosition, goal: Range): PathFinderPath = js.native
+  def search(origin: RoomPosition, goal: Range, opts: PathFinderOpts): PathFinderPath = js.native
   /**
     * Specify whether to use this new experimental pathfinder in game objects methods.
     * This method should be invoked every tick. It affects the following methods behavior:
@@ -41,8 +41,4 @@ trait PathFinder extends js.Object {
     */
   def use(isEnabled: Boolean): js.UndefOr[scala.Nothing] = js.native
 }
-
-@JSGlobal("PathFinder")
-@js.native
-object PathFinder extends TopLevel[PathFinder]
 
